@@ -1,4 +1,3 @@
-import { logger } from "@/logger";
 import { ResponseBody } from "@api/contracts/ResponseBody";
 import { Middleware } from "@api/middleware/Middleware";
 import e from "express";

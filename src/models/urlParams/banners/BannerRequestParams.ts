@@ -1,4 +1,3 @@
-import { logger } from "@/logger";
 import { URLRequestParams } from "@models/urlParams/URLRequestParams";
 import { BannerURLParams } from "@services/bannerDataFetcher/contracts/BannerURLParams";
 

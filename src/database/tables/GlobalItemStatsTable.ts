@@ -1,4 +1,3 @@
-import { GlobalItemStatsEntity } from "@database/entities/GlobalItemStatsEntity";
 import { GlobalItemStatsRecord } from "@database/records/GlobalItemStatsRecord";
 import { Table } from "@database/tables/Table";
 import { Prisma, PrismaClient } from "@prisma/client";

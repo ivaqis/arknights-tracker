@@ -1,4 +1,3 @@
-import { GlobalBannerStatsRecord } from "@database/records/GlobalBannerStatsRecord";
 import { GlobalBannerTimelineRecord } from "@database/records/GlobalBannerTimelineRecord";
 import { GlobalItemStatsRecord } from "@database/records/GlobalItemStatsRecord";
 import { GlobalPityDistributionRecord } from "@database/records/GlobalPityDistributionRecord";

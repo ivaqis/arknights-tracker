@@ -1,4 +1,3 @@
-import { logger } from "@/logger";
 import { UserBannerTypeStatEntity } from "@database/entities/UserBannerTypeStatEntity";
 import { UserBannerStatRecord } from "@database/records/UserBannerStatRecord";
 import { Table } from "@database/tables/Table";

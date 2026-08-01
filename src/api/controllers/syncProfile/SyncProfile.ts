@@ -6,9 +6,7 @@ import { SyncProfileRequest } from "@api/contracts/syncProfile/SyncProfileReques
 import { SyncProfileResponse } from "@api/contracts/syncProfile/SyncProfileResponse";
 import { Controller } from "@api/controllers/Controller";
 import { Database } from "@database/Database";
-import { UserContractLeaderboardRecord } from "@database/records/UserContractLeaderboardRecord";
 import { UserGameProfileRecord } from "@database/records/UserGameProfileRecord";
-import { UserMonumentLeaderboardRecord } from "@database/records/UserMonumentLeaderboardRecord";
 import { ContractRecord } from "@models/contingencyContract/ContractRecord";
 import { ContractStatus } from "@models/contingencyContract/ContractStatus";
 import { Character } from "@models/gameProfile/Character";

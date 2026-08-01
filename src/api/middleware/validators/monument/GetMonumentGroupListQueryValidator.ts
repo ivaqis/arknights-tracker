@@ -1,5 +1,4 @@
 import { GetMonumentGroupListQuery } from "@api/contracts/monument/GetMonumentGroupListQuery";
-import { GetMonumentListQuery } from "@api/contracts/monument/GetMonumentListQuery";
 import { GetMonumentListQueryValidator } from "@api/middleware/validators/monument/GetMonumentListQueryValidator";
 import { GameServerId } from "@models/GameServerId";
 import { MonumentLeaderboardSortField } from "@models/monumentLeaderboard/MonumentLeaderboardSortField";

@@ -1,4 +1,3 @@
-import { logger } from "@/logger";
 import { ResponseBody } from "@api/contracts/ResponseBody";
 import { CreateUserProfileQuery } from "@api/contracts/userProfile/CreateUserProfileQuery";
 import { CreateUserProfileRequest } from "@api/contracts/userProfile/CreateUserProfileRequest";

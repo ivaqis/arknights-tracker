@@ -1,13 +1,11 @@
 import { logger } from "@/logger";
 import { Database } from "@database/Database";
-import { GlobalBannerStatsRecord } from "@database/records/GlobalBannerStatsRecord";
 import { GlobalBannerTimelineRecord } from "@database/records/GlobalBannerTimelineRecord";
 import { GlobalItemStatsRecord } from "@database/records/GlobalItemStatsRecord";
 import { GlobalPityDistributionRecord } from "@database/records/GlobalPityDistributionRecord";
 import { UserCharBannerData } from "@database/repositories/interfaces/UserCharBannerData";
 import { UserCharBannerTypeData } from "@database/repositories/interfaces/UserCharBannerTypeData";
 import { UserWeaponBannerData } from "@database/repositories/interfaces/UserWeaponBannerData";
-import { UserWeaponBannerTypeData } from "@database/repositories/interfaces/UserWeaponBannerTypeData";
 import { Banner } from "@models/banners/Banner";
 import { DbBannerType } from "@models/banners/DbBannerType";
 import { BannersPulls } from "@models/pulls/BannersPulls";

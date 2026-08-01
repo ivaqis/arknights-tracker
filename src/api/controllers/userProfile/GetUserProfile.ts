@@ -1,4 +1,3 @@
-import { logger } from "@/logger";
 import { database, firebase } from "@/serviceInstances";
 import { ResponseBody } from "@api/contracts/ResponseBody";
 import { GetUserProfileQuery } from "@api/contracts/userProfile/GetUserProfileQuery";
