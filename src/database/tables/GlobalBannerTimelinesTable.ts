@@ -31,12 +31,14 @@ export class GlobalBannerTimelinesTable extends Table<Prisma.GlobalBannerTimelin
     }
 
     public async getAllByBannerId(bannerId: string): Promise<GlobalBannerTimelineRecord[]> {
-        const entities = await this.table
-            .findMany({
-                where: {
-                    bannerId
-                }
-            });
+        const entities = await this.table.findMany({
+            where: {
+                bannerId
+            },
+            orderBy: {
+                date: "asc"
+            }
+        });
 
         return entities.map(entity => new GlobalBannerTimelineRecord(entity));
     }

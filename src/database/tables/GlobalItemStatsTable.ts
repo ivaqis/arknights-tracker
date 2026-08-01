@@ -42,12 +42,14 @@ export class GlobalItemStatsTable extends Table<Prisma.GlobalItemStatsDelegate> 
     }
 
     public async getAllByBannerId(bannerId: string): Promise<GlobalItemStatsRecord[]> {
-        const entities = await this.table
-            .findMany({
-                where: {
-                    bannerId
-                }
-            });
+        const entities = await this.table.findMany({
+            where: {
+                bannerId
+            },
+            orderBy: {
+                count: "desc"
+            }
+        });
 
         return entities.map(entity => new GlobalItemStatsRecord(entity));
     }

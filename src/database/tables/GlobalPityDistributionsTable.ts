@@ -31,12 +31,14 @@ export class GlobalPityDistributionsTable extends Table<Prisma.GlobalPityDistrib
     }
 
     public async getAllByBannerId(bannerId: string): Promise<GlobalPityDistributionRecord[]> {
-        const entities = await this.table
-            .findMany({
-                where: {
-                    bannerId
-                }
-            });
+        const entities = await this.table.findMany({
+            where: {
+                bannerId
+            },
+            orderBy: {
+                pity: "asc"
+            }
+        });
 
         return entities.map(entity => new GlobalPityDistributionRecord(entity));
     }
