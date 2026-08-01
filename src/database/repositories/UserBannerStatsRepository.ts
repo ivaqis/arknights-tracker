@@ -11,7 +11,7 @@ import { UserCharBannerPullsTable } from "@database/tables/UserCharBannerPullsTa
 import { UserCharBannerTypePullsTable } from "@database/tables/UserCharBannerTypePullsTable";
 import { UserWeaponBannerPullsTable } from "@database/tables/UserWeaponBannerPullsTable";
 import { DbBannerType } from "@models/banners/DbBannerType";
-import { Range } from "@models/Range";
+import { IncludeRange } from "@models/IncludeRange";
 import { PrismaClient } from "@prisma/client";
 
 export class UserBannerStatsRepository extends Repository {
@@ -127,19 +127,19 @@ export class UserBannerStatsRepository extends Repository {
         return lastChar > lastWeapon ? lastChar : lastWeapon;
     }
 
-    public async countTotalPullsByBannerType(bannerType: DbBannerType | null, pullsCount: Range = {}): Promise<number> {
+    public async countTotalPullsByBannerType(bannerType: DbBannerType | null, pullsCount: IncludeRange = {}): Promise<number> {
         return this._userBannerTypeStatsTable.countTotalPullsByBannerType(bannerType, pullsCount);
     }
 
-    public async countWinRateByBannerType(bannerType: DbBannerType | null, winRate: Range = {}): Promise<number> {
+    public async countWinRateByBannerType(bannerType: DbBannerType | null, winRate: IncludeRange = {}): Promise<number> {
         return this._userBannerTypeStatsTable.countWinRateByBannerType(bannerType, winRate);
     }
 
-    public async countLuck6ByBannerType(bannerType: DbBannerType | null, luckRate: Range = {}): Promise<number> {
+    public async countLuck6ByBannerType(bannerType: DbBannerType | null, luckRate: IncludeRange = {}): Promise<number> {
         return this._userBannerTypeStatsTable.countLuck6ByBannerType(bannerType, luckRate);
     }
 
-    public async countLuck5ByBannerType(bannerType: DbBannerType | null, luckRate: Range = {}): Promise<number> {
+    public async countLuck5ByBannerType(bannerType: DbBannerType | null, luckRate: IncludeRange = {}): Promise<number> {
         return this._userBannerTypeStatsTable.countLuck5ByBannerType(bannerType, luckRate);
     }
 }

@@ -1,6 +1,6 @@
 import { UserBannerTypeStatRecord } from "@database/records/UserBannerTypeStatRecord";
 import { Table } from "@database/tables/Table";
-import { Range } from "@models/Range";
+import { IncludeRange } from "@models/IncludeRange";
 import { Prisma, PrismaClient } from "@prisma/client";
 
 export class UserBannerTypeStatsTable extends Table<Prisma.UserBannerTypeStatDelegate> {
@@ -60,7 +60,7 @@ export class UserBannerTypeStatsTable extends Table<Prisma.UserBannerTypeStatDel
         return entities.map(entity => new UserBannerTypeStatRecord(entity));
     }
 
-    public async countTotalPullsByBannerType(bannerType: string | null, pullsCount: Range): Promise<number> {
+    public async countTotalPullsByBannerType(bannerType: string | null, pullsCount: IncludeRange): Promise<number> {
         const query = Prisma.sql`
             SELECT count(*)
             FROM "UserBannerTypeStat" T
@@ -74,7 +74,7 @@ export class UserBannerTypeStatsTable extends Table<Prisma.UserBannerTypeStatDel
         return Number(result[0].count);
     }
 
-    public async countWinRateByBannerType(bannerType: string | null, winRate: Range): Promise<number> {
+    public async countWinRateByBannerType(bannerType: string | null, winRate: IncludeRange): Promise<number> {
         const query = Prisma.sql`
             SELECT count(*)
             FROM "UserBannerTypeStat" T
@@ -88,7 +88,7 @@ export class UserBannerTypeStatsTable extends Table<Prisma.UserBannerTypeStatDel
         return Number(result[0].count);
     }
 
-    public async countLuck6ByBannerType(bannerType: string | null, luckRate: Range): Promise<number> {
+    public async countLuck6ByBannerType(bannerType: string | null, luckRate: IncludeRange): Promise<number> {
         const query = Prisma.sql`
             SELECT count(*)
             FROM "UserBannerTypeStat" T
@@ -102,7 +102,7 @@ export class UserBannerTypeStatsTable extends Table<Prisma.UserBannerTypeStatDel
         return Number(result[0].count);
     }
 
-    public async countLuck5ByBannerType(bannerType: string | null, luckRate: Range): Promise<number> {
+    public async countLuck5ByBannerType(bannerType: string | null, luckRate: IncludeRange): Promise<number> {
         const query = Prisma.sql`
             SELECT count(*)
             FROM "UserBannerTypeStat" T
