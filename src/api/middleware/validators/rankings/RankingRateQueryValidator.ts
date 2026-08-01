@@ -74,7 +74,7 @@ export class RankingRateQueryValidator extends Validator<RankingRateQuery> {
         return new ValidationRule(
             item => typeof item.total6Pulls === "string"
                 && (item.total6Pulls === "null" || this.NUMBER_REGEX.test(item.total6Pulls)),
-            "total5Pulls must be a number or null"
+            "total6Pulls must be a number or null"
         );
     }
 }
