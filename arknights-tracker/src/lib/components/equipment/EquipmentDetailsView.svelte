@@ -14,9 +14,12 @@
     import NotFound from "$lib/components/NotFound.svelte";
     import { parseRichText, hyperlinkAction } from "$lib/utils/richText.js";
 
+    import Modal from "$lib/components/modals/Modal.svelte";
+
     export let id = "";
     export let showBackButton = true;
     export let onSelectEquipment = undefined;
+    export let onZoomImage = undefined;
 
     function tOrFallback(key, fallback) {
         const translated = $t(key);
@@ -118,6 +121,12 @@
             return formatCostValue(minCost);
         }
         return `${formatCostValue(minCost)}-${formatCostValue(maxCost)}`;
+    }
+
+    function getItemMinCraftCost(item) {
+        if (!item || !item.materials || item.materials.length === 0) return Infinity;
+        const costs = item.materials.map(r => r[0]?.amount || 0).filter(v => v > 0);
+        return costs.length > 0 ? Math.min(...costs) : Infinity;
     }
 
     $: neededMaterials = (equipData.materials && equipData.materials[0])
@@ -225,29 +234,31 @@
                 usefulness[food.id] = 0;
                 continue;
             }
-            const matchAttr = foodNonDefAttrs[0];
-            const attrType = matchAttr.attrType;
-            const matchIsPercent = isPct(matchAttr.values);
-            const isInverted = attrType.toLowerCase().includes("damagetakenscalar");
-            const foodValues = matchAttr.values.filter((v) => v !== undefined && v !== null);
-            const foodBest = foodValues.length > 0
-                ? (isInverted ? Math.min(...foodValues.map(Math.abs)) : Math.max(...foodValues.map(Math.abs)))
-                : 0;
 
             let matchesCount = 0;
-            for (const target of slotItems) {
-                if (target.id === food.id) continue;
-                const targetAttrs = target.displayAttr || [];
-                const targetAttr = targetAttrs.find((a) => a.attrType === attrType && isPct(a.values) === matchIsPercent);
-                if (!targetAttr) continue;
-                const targetValues = targetAttr.values.filter((v) => v !== undefined && v !== null);
-                const targetBest = targetValues.length > 0
-                    ? (isInverted ? Math.min(...targetValues.map(Math.abs)) : Math.max(...targetValues.map(Math.abs)))
+            for (const matchAttr of foodNonDefAttrs) {
+                const attrType = matchAttr.attrType;
+                const matchIsPercent = isPct(matchAttr.values);
+                const isInverted = attrType.toLowerCase().includes("damagetakenscalar");
+                const foodValues = matchAttr.values.filter((v) => v !== undefined && v !== null);
+                const foodBest = foodValues.length > 0
+                    ? (isInverted ? Math.min(...foodValues.map(Math.abs)) : Math.max(...foodValues.map(Math.abs)))
                     : 0;
 
-                const isBetter = isInverted ? foodBest < targetBest : foodBest > targetBest;
-                if (isBetter) {
-                    matchesCount++;
+                for (const target of slotItems) {
+                    if (target.id === food.id) continue;
+                    const targetAttrs = target.displayAttr || [];
+                    const targetAttr = targetAttrs.find((a) => a.attrType === attrType && isPct(a.values) === matchIsPercent);
+                    if (!targetAttr) continue;
+                    const targetValues = targetAttr.values.filter((v) => v !== undefined && v !== null);
+                    const targetBest = targetValues.length > 0
+                        ? (isInverted ? Math.min(...targetValues.map(Math.abs)) : Math.max(...targetValues.map(Math.abs)))
+                        : 0;
+
+                    const isBetter = isInverted ? foodBest < targetBest : foodBest > targetBest;
+                    if (isBetter) {
+                        matchesCount++;
+                    }
                 }
             }
             usefulness[food.id] = matchesCount;
@@ -340,7 +351,7 @@
                     const isFirstStat =
                         foodNonDefAttrs.length > 0 &&
                         matchesTargetAttr(foodNonDefAttrs[0]);
-                    const craftCost = (food.materials && food.materials.length > 0 && food.materials[0].length > 0) ? food.materials[0][0].amount : Infinity;
+                    const craftCost = getItemMinCraftCost(food);
 
                     return { ...food, isGoodMatch: isHigherStat && isFirstStat, foodMax: foodBest, isHigherStat, craftCost };
                 });
@@ -369,14 +380,23 @@
                     return { ...match, isRecommended };
                 })
                 .sort((a, b) => {
+                    if (a.isRecommended !== b.isRecommended) {
+                        return a.isRecommended ? -1 : 1;
+                    }
+                    if (a.isGoodMatch !== b.isGoodMatch) {
+                        return a.isGoodMatch ? -1 : 1;
+                    }
+                    if (a.craftCost !== b.craftCost) {
+                        return a.craftCost - b.craftCost;
+                    }
+                    const useA = usefulnessMap[a.id] || 0;
+                    const useB = usefulnessMap[b.id] || 0;
+                    if (useB !== useA) {
+                        return useB - useA;
+                    }
                     if (b.foodMax !== a.foodMax) {
                         return isInverted ? a.foodMax - b.foodMax : b.foodMax - a.foodMax;
                     }
-                    if (a.isRecommended && !b.isRecommended) return -1;
-                    if (!a.isRecommended && b.isRecommended) return 1;
-                    if (a.isGoodMatch && !b.isGoodMatch) return -1;
-                    if (!a.isGoodMatch && b.isGoodMatch) return 1;
-                    if (a.craftCost !== b.craftCost) return a.craftCost - b.craftCost; 
                     return a.id.localeCompare(b.id);
                 });
 
@@ -1030,39 +1050,31 @@
                             <button
                                 type="button"
                                 class="absolute top-4 right-4 z-10 flex items-center justify-center w-11 h-11 rounded-xl bg-black/45 hover:bg-black/65 text-white transition-all duration-300 backdrop-blur-sm shadow-md cursor-pointer pointer-events-auto"
-                                on:click={() => showZoomModal = true}
+                                on:click={() => onZoomImage ? onZoomImage(code) : (showZoomModal = true)}
                             >
                                 <Icon name="zoom-in" class="w-7 h-7 text-white" />
                             </button>
                         </div>
                     </div>
 
-                    {#if showZoomModal}
-                        <div
-                            class="md:ml-[var(--sb-w)] fixed inset-0 z-[100] bg-black/85 backdrop-blur-md flex items-center justify-center p-4 transition-opacity duration-300 cursor-default"
-                            on:click={() => showZoomModal = false}
-                            role="button"
-                            tabindex="0"
-                            on:keydown={(e) => e.key === 'Escape' && (showZoomModal = false)}
-                        >
-                            <div class="relative max-w-[90vw] max-h-[90vh] flex items-center justify-center group pointer-events-none">
-                                <img
-                                    src="https://cdn.opendfieldmap.org/_dev/endfield/atlos/seo/og/r2/{code}.jpg"
-                                    alt="Blueprint location map full screen"
-                                    class="max-w-full max-h-[85vh] object-contain rounded-2xl shadow-2xl border border-white/10 pointer-events-auto select-none"
-                                    referrerpolicy="no-referrer"
-                                />
-                                
-                                <button
-                                    type="button"
-                                    class="absolute -top-12 right-0 md:-right-12 flex items-center justify-center w-10 h-10 rounded-xl bg-white/10 hover:bg-white/20 text-white transition-all cursor-pointer pointer-events-auto"
-                                    on:click={() => showZoomModal = false}
-                                >
-                                    <Icon name="close" class="w-6 h-6 text-white" />
-                                </button>
-                            </div>
+                    <Modal isOpen={showZoomModal} on:close={() => showZoomModal = false}>
+                        <div class="relative max-w-[90vw] max-h-[90vh] flex items-center justify-center group pointer-events-auto">
+                            <img
+                                src="https://cdn.opendfieldmap.org/_dev/endfield/atlos/seo/og/r2/{code}.jpg"
+                                alt="Blueprint location map full screen"
+                                class="max-w-full max-h-[85vh] object-contain rounded-2xl shadow-2xl border border-white/10 select-none"
+                                referrerpolicy="no-referrer"
+                            />
+                            
+                            <button
+                                type="button"
+                                class="absolute -top-12 right-0 md:-right-12 flex items-center justify-center w-10 h-10 rounded-xl bg-white/10 hover:bg-white/20 text-white transition-all cursor-pointer"
+                                on:click={() => showZoomModal = false}
+                            >
+                                <Icon name="close" class="w-6 h-6 text-white" />
+                            </button>
                         </div>
-                    {/if}
+                    </Modal>
                 {/if}
             {/if}
         </div>

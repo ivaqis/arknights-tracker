@@ -12,6 +12,7 @@
     import { splitEquipmentView } from "$lib/stores/settings.js";
     import BottomSheet from "$lib/components/BottomSheet.svelte";
     import EquipmentDetailsView from "$lib/components/equipment/EquipmentDetailsView.svelte";
+    import Modal from "$lib/components/modals/Modal.svelte";
     import WeaponCard from "$lib/components/cards/WeaponCard.svelte";
     import DataToolbar from "$lib/components/dataToolbarV2/DataToolbar.svelte";
     import EquipmentFilterDropdown from "$lib/components/dataToolbarV2/filterDropdowns/EquipmentFilterDropdown.svelte";
@@ -30,7 +31,7 @@
     import { currentLocale } from "$lib/stores/locale";
     import { manualPotentials } from "$lib/stores/potentials";
     import { filterCheck, filterCheckLowerCase } from "$lib/utils/filterUtils.js";
-    import { onDestroy } from "svelte";
+    import { onDestroy, onMount } from "svelte";
 
     $: selectedFilters = $equipmentFilters;
     $: searchQuery = $equipmentSearch;
@@ -42,6 +43,7 @@
     }));
 
     let isBottomSheetOpen = false;
+    let zoomImageUrl = null;
 
     $: queryId = $page.url.searchParams.get("id");
     let selectedEquipmentId = "";
@@ -56,8 +58,16 @@
         }
     }
 
-    function selectEquipment(eqId) {
-        if (!eqId || selectedEquipmentId === eqId) {
+    onMount(() => {
+        if (queryId && allEquipment.some(e => e.id === queryId)) {
+            if (!$splitEquipmentView) {
+                goto(`/equipment/${queryId}`, { replaceState: true });
+            }
+        }
+    });
+
+    function selectEquipment(eqId, forceSelect = false) {
+        if (!eqId || (!forceSelect && selectedEquipmentId === eqId)) {
             selectedEquipmentId = "";
             isBottomSheetOpen = false;
             if ($splitEquipmentView) {
@@ -776,7 +786,8 @@
                     <EquipmentDetailsView
                         id={selectedEquipmentId}
                         showBackButton={false}
-                        onSelectEquipment={selectEquipment}
+                        onSelectEquipment={(id) => selectEquipment(id, true)}
+                        onZoomImage={(code) => zoomImageUrl = code}
                     />
                 {:else}
                     <div class="text-center py-20 px-6 text-gray-400 italic bg-white dark:bg-[#2b2b2b] rounded-3xl border border-gray-200 dark:border-[#444] shadow-sm flex flex-col items-center justify-center h-full xl:h-[calc(100vh-64px)] w-full">
@@ -804,3 +815,24 @@
         <Icon name="inbox" class="w-6 h-6 text-black" />
     </button>
 {/if}
+
+<Modal isOpen={!!zoomImageUrl} on:close={() => zoomImageUrl = null}>
+    {#if zoomImageUrl}
+        <div class="relative max-w-[90vw] max-h-[90vh] flex items-center justify-center group pointer-events-auto">
+            <img
+                src="https://cdn.opendfieldmap.org/_dev/endfield/atlos/seo/og/r2/{zoomImageUrl}.jpg"
+                alt="Blueprint location map full screen"
+                class="max-w-full max-h-[85vh] object-contain rounded-2xl shadow-2xl border border-white/10 select-none"
+                referrerpolicy="no-referrer"
+            />
+            
+            <button
+                type="button"
+                class="absolute -top-12 right-0 md:-right-12 flex items-center justify-center w-10 h-10 rounded-xl bg-white/10 hover:bg-white/20 text-white transition-all cursor-pointer"
+                on:click={() => zoomImageUrl = null}
+            >
+                <Icon name="close" class="w-6 h-6 text-white" />
+            </button>
+        </div>
+    {/if}
+</Modal>
