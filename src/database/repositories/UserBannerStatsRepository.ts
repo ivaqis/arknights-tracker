@@ -115,22 +115,18 @@ export class UserBannerStatsRepository extends Repository {
     }
 
     public async countTotalPullsByBannerType(bannerType: DbBannerType | null, pullsCount: IncludeRange = {}): Promise<number> {
-        // return this._userBannerTypeStatsTable.countTotalPullsByBannerType(bannerType, pullsCount);
-        return 0; // todo
+        return this._userBannerStatsTable.countTotalPullsByBannerType(bannerType, pullsCount);
     }
 
     public async countWinRateByBannerType(bannerType: DbBannerType | null, winRate: IncludeRange = {}): Promise<number> {
-        // return this._userBannerTypeStatsTable.countWinRateByBannerType(bannerType, winRate);
-        return 0; // todo
+        return this._userBannerStatsTable.countWinRateByBannerType(bannerType, winRate);
     }
 
     public async countLuck6ByBannerType(bannerType: DbBannerType | null, luckRate: IncludeRange = {}): Promise<number> {
-        // return this._userBannerTypeStatsTable.countLuck6ByBannerType(bannerType, luckRate);
-        return 0; // todo
+        return this._userBannerStatsTable.countLuck6ByBannerType(bannerType, luckRate);
     }
 
     public async countLuck5ByBannerType(bannerType: DbBannerType | null, luckRate: IncludeRange = {}): Promise<number> {
-        // return this._userBannerTypeStatsTable.countLuck5ByBannerType(bannerType, luckRate);
-        return 0; // todo
+        return this._userBannerStatsTable.countLuck5ByBannerType(bannerType, luckRate);
     }
 }

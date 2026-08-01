@@ -1,4 +1,5 @@
 import { DbBannerType } from "@models/banners/DbBannerType";
+import { BooleanString } from "@models/validation/BooleanStringValidationRule";
 
 export interface RankingRateQuery {
     bannerType: DbBannerType | "all";
@@ -7,4 +8,5 @@ export interface RankingRateQuery {
     won5050: string | "null";
     total5Pulls: string | "null";
     total6Pulls: string | "null";
+    countMe: BooleanString;
 }

@@ -24,6 +24,7 @@ export class RankingRate extends Controller<
     private readonly _won5050: number | null;
     private readonly _total5Pulls: number | null;
     private readonly _total6Pulls: number | null;
+    private readonly _countMe: boolean;
 
     public constructor(req: e.Request<{}, ResponseBody<RankingRateResponse>, undefined, RankingRateQuery>, res: e.Response<ResponseBody<RankingRateResponse>>) {
         super(req, res);
@@ -34,16 +35,7 @@ export class RankingRate extends Controller<
         this._won5050 = req.query.won5050 === "null" ? null : parseInt(req.query.won5050);
         this._total5Pulls = req.query.total5Pulls === "null" ? null : parseInt(req.query.total5Pulls);
         this._total6Pulls = req.query.total6Pulls === "null" ? null : parseInt(req.query.total6Pulls);
-    }
-
-    private static getRate(allCount: number, gteCount: number, lteCount: number): ExcludeRange {
-        const gtCount = allCount - lteCount;
-        const ltCount = allCount - gteCount;
-
-        return {
-            from: ltCount / allCount,
-            to: 1 - (gtCount / allCount)
-        };
+        this._countMe = req.query.countMe === "true"
     }
 
     protected async execute(): Promise<void> {
@@ -82,11 +74,26 @@ export class RankingRate extends Controller<
         };
     }
 
+    private getRate(allCount: number, gteCount: number, lteCount: number): ExcludeRange {
+        const gtCount = allCount - lteCount;
+        const ltCount = allCount - gteCount;
+
+        return this._countMe
+            ? {
+                from: ltCount / (allCount + 1),
+                to: 1 - (gtCount / (allCount + 1))
+            }
+            : {
+                from: ltCount / allCount,
+                to: 1 - (gtCount / allCount)
+            };
+    }
+
     private async getPullsRate(all: number): Promise<ExcludeRange> {
         const gte = await this._database.userBannerStats.countTotalPullsByBannerType(this._bannerType, { min: this._totalPulls });
         const lte = await this._database.userBannerStats.countTotalPullsByBannerType(this._bannerType, { max: this._totalPulls });
 
-        return RankingRate.getRate(all, gte, lte);
+        return this.getRate(all, gte, lte);
     }
 
     private async getWinRate(): Promise<ExcludeRange | null> {
@@ -100,7 +107,7 @@ export class RankingRate extends Controller<
         const gte = await this._database.userBannerStats.countWinRateByBannerType(this._bannerType, { min: winRate });
         const lte = await this._database.userBannerStats.countWinRateByBannerType(this._bannerType, { max: winRate });
 
-        return RankingRate.getRate(all, gte, lte);
+        return this.getRate(all, gte, lte);
     }
 
     private async getLuck5Rate(all: number): Promise<ExcludeRange | null> {
@@ -113,7 +120,7 @@ export class RankingRate extends Controller<
         const gte = await this._database.userBannerStats.countLuck5ByBannerType(this._bannerType, { min: winRate });
         const lte = await this._database.userBannerStats.countLuck5ByBannerType(this._bannerType, { max: winRate });
 
-        return RankingRate.getRate(all, gte, lte);
+        return this.getRate(all, gte, lte);
     }
 
     private async getLuck6Rate(all: number): Promise<ExcludeRange | null> {
@@ -126,6 +133,6 @@ export class RankingRate extends Controller<
         const gte = await this._database.userBannerStats.countLuck6ByBannerType(this._bannerType, { min: winRate });
         const lte = await this._database.userBannerStats.countLuck6ByBannerType(this._bannerType, { max: winRate });
 
-        return RankingRate.getRate(all, gte, lte);
+        return this.getRate(all, gte, lte);
     }
 }

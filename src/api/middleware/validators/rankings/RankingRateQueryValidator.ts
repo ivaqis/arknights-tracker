@@ -1,5 +1,6 @@
 import { RankingRateQuery } from "@api/contracts/rankings/RankingRateQuery";
 import { DbBannerType } from "@models/banners/DbBannerType";
+import { BooleanStringValidationRule } from "@models/validation/BooleanStringValidationRule";
 import { ValidationRule } from "@models/validation/ValidationRule";
 import { Validator } from "@models/validation/Validator";
 
@@ -18,7 +19,8 @@ export class RankingRateQueryValidator extends Validator<RankingRateQuery> {
             this.getWon5050Rule(),
             this.get5050Rule(),
             this.getTotal5PullsRule(),
-            this.getTotal6PullsRule()
+            this.getTotal6PullsRule(),
+            this.getCountMeRule()
         ];
     }
 
@@ -75,6 +77,15 @@ export class RankingRateQueryValidator extends Validator<RankingRateQuery> {
             item => typeof item.total6Pulls === "string"
                 && (item.total6Pulls === "null" || this.NUMBER_REGEX.test(item.total6Pulls)),
             "total6Pulls must be a number or null"
+        );
+    }
+
+    private static getCountMeRule(): ValidationRule<RankingRateQuery> {
+        const rule = new BooleanStringValidationRule();
+
+        return new ValidationRule(
+            item => rule.isValid(item.countMe),
+            "countMe must be a boolean"
         );
     }
 }
