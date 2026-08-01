@@ -1,5 +1,6 @@
 import { UserBannerTypeStatRecord } from "@database/records/UserBannerTypeStatRecord";
 import { Table } from "@database/tables/Table";
+import { Range } from "@models/Range";
 import { Prisma, PrismaClient } from "@prisma/client";
 
 export class UserBannerTypeStatsTable extends Table<Prisma.UserBannerTypeStatDelegate> {
@@ -59,51 +60,56 @@ export class UserBannerTypeStatsTable extends Table<Prisma.UserBannerTypeStatDel
         return entities.map(entity => new UserBannerTypeStatRecord(entity));
     }
 
-    public async countTotalPullsByBannerType(bannerType: string | null, minPullsCount: number = 1): Promise<number> {
+    public async countTotalPullsByBannerType(bannerType: string | null, pullsCount: Range): Promise<number> {
         const query = Prisma.sql`
             SELECT count(*)
             FROM "UserBannerTypeStat" T
-            WHERE T."unfreePulls" + T."freePulls" >= ${minPullsCount} 
-                ${bannerType ? Prisma.sql`AND T."bannerType" = ${bannerType}` : Prisma.sql``}`;
+            WHERE (T."unfreePulls" > 0 OR T."freePulls" > 0)
+              ${bannerType ? Prisma.sql`AND T."bannerType" = ${bannerType}` : Prisma.sql``}
+              ${pullsCount.min ? Prisma.sql`AND T."unfreePulls" + T."freePulls" >= ${pullsCount.min}` : Prisma.sql``}
+              ${pullsCount.max ? Prisma.sql`AND T."unfreePulls" + T."freePulls" <= ${pullsCount.max}` : Prisma.sql``}`;
 
         const result = await this.prisma.$queryRaw<{ count: bigint }[]>(query);
 
         return Number(result[0].count);
     }
 
-    public async countWinRateByBannerType(bannerType: string | null, minWinRate: number = 0): Promise<number> {
+    public async countWinRateByBannerType(bannerType: string | null, winRate: Range): Promise<number> {
         const query = Prisma.sql`
             SELECT count(*)
             FROM "UserBannerTypeStat" T
             WHERE T."total5050" > 0
               ${bannerType ? Prisma.sql`AND T."bannerType" = ${bannerType}` : Prisma.sql``}
-              AND 1.0 * T.won5050 / T.total5050 >= ${minWinRate}`;
+              ${winRate.min ? Prisma.sql`AND 1.0 * T.won5050 / T.total5050 >= ${winRate.min}` : Prisma.sql``}
+              ${winRate.max ? Prisma.sql`AND 1.0 * T.won5050 / T.total5050 <= ${winRate.max}` : Prisma.sql``}`;
 
         const result = await this.prisma.$queryRaw<{ count: bigint }[]>(query);
 
         return Number(result[0].count);
     }
 
-    public async countLuck6ByBannerType(bannerType: string | null, minLuckRate: number = 0): Promise<number> {
+    public async countLuck6ByBannerType(bannerType: string | null, luckRate: Range): Promise<number> {
         const query = Prisma.sql`
             SELECT count(*)
             FROM "UserBannerTypeStat" T
-            WHERE T."unfreePulls" + T."freePulls" > 0
+            WHERE (T."unfreePulls" > 0 OR T."freePulls" > 0)
               ${bannerType ? Prisma.sql`AND T."bannerType" = ${bannerType}` : Prisma.sql``}
-              AND 1.0 * T.total6 / (T."unfreePulls" + T."freePulls") >= ${minLuckRate}`;
+              ${luckRate.min ? Prisma.sql`AND 1.0 * T.total6 / (T."unfreePulls" + T."freePulls") >= ${luckRate.min}` : Prisma.sql``}
+              ${luckRate.max ? Prisma.sql`AND 1.0 * T.total6 / (T."unfreePulls" + T."freePulls") <= ${luckRate.max}` : Prisma.sql``}`;
 
         const result = await this.prisma.$queryRaw<{ count: bigint }[]>(query);
 
         return Number(result[0].count);
     }
 
-    public async countLuck5ByBannerType(bannerType: string | null, minLuckRate: number = 0): Promise<number> {
+    public async countLuck5ByBannerType(bannerType: string | null, luckRate: Range): Promise<number> {
         const query = Prisma.sql`
             SELECT count(*)
             FROM "UserBannerTypeStat" T
-            WHERE T."unfreePulls" + T."freePulls" > 0
+            WHERE (T."unfreePulls" > 0 OR T."freePulls" > 0)
               ${bannerType ? Prisma.sql`AND T."bannerType" = ${bannerType}` : Prisma.sql``}
-              AND 1.0 * T.total5 / (T."unfreePulls" + T."freePulls") >= ${minLuckRate}`;
+              ${luckRate.min ? Prisma.sql`AND 1.0 * T.total5 / (T."unfreePulls" + T."freePulls") >= ${luckRate.min}` : Prisma.sql``}
+              ${luckRate.max ? Prisma.sql`AND 1.0 * T.total5 / (T."unfreePulls" + T."freePulls") <= ${luckRate.max}` : Prisma.sql``}`;
 
         const result = await this.prisma.$queryRaw<{ count: bigint }[]>(query);
 

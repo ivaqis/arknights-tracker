@@ -11,6 +11,7 @@ import { UserCharBannerPullsTable } from "@database/tables/UserCharBannerPullsTa
 import { UserCharBannerTypePullsTable } from "@database/tables/UserCharBannerTypePullsTable";
 import { UserWeaponBannerPullsTable } from "@database/tables/UserWeaponBannerPullsTable";
 import { DbBannerType } from "@models/banners/DbBannerType";
+import { Range } from "@models/Range";
 import { PrismaClient } from "@prisma/client";
 
 export class UserBannerStatsRepository extends Repository {
@@ -126,19 +127,19 @@ export class UserBannerStatsRepository extends Repository {
         return lastChar > lastWeapon ? lastChar : lastWeapon;
     }
 
-    public async countTotalPullsByBannerType(bannerType: DbBannerType | null, minPullsCount: number = 1): Promise<number> {
-        return this._userBannerTypeStatsTable.countTotalPullsByBannerType(bannerType, minPullsCount);
+    public async countTotalPullsByBannerType(bannerType: DbBannerType | null, pullsCount: Range = {}): Promise<number> {
+        return this._userBannerTypeStatsTable.countTotalPullsByBannerType(bannerType, pullsCount);
     }
 
-    public async countWinRateByBannerType(bannerType: DbBannerType | null, minWinRate: number = 0): Promise<number> {
-        return this._userBannerTypeStatsTable.countWinRateByBannerType(bannerType, minWinRate);
+    public async countWinRateByBannerType(bannerType: DbBannerType | null, winRate: Range = {}): Promise<number> {
+        return this._userBannerTypeStatsTable.countWinRateByBannerType(bannerType, winRate);
     }
 
-    public async countLuck6ByBannerType(bannerType: DbBannerType | null, minLuckRate: number = 0): Promise<number> {
-        return this._userBannerTypeStatsTable.countLuck6ByBannerType(bannerType, minLuckRate);
+    public async countLuck6ByBannerType(bannerType: DbBannerType | null, luckRate: Range = {}): Promise<number> {
+        return this._userBannerTypeStatsTable.countLuck6ByBannerType(bannerType, luckRate);
     }
 
-    public async countLuck5ByBannerType(bannerType: DbBannerType | null, minLuckRate: number = 0): Promise<number> {
-        return this._userBannerTypeStatsTable.countLuck5ByBannerType(bannerType, minLuckRate);
+    public async countLuck5ByBannerType(bannerType: DbBannerType | null, luckRate: Range = {}): Promise<number> {
+        return this._userBannerTypeStatsTable.countLuck5ByBannerType(bannerType, luckRate);
     }
 }
