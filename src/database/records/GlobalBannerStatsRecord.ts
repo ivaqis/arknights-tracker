@@ -1,12 +1,11 @@
 import { GlobalBannerStatsEntity } from "@database/entities/GlobalBannerStatsEntity";
-import { BigIntRecordField } from "@database/records/recordFields/BigIntRecordField";
 import { NumberRecordField } from "@database/records/recordFields/NumberRecordField";
 
 export class GlobalBannerStatsRecord {
     private readonly _bannerId: string;
 
     private readonly _totalUsers: NumberRecordField;
-    private readonly _unfreePulls: BigIntRecordField;
+    private readonly _unfreePulls: NumberRecordField;
     private readonly _total6: NumberRecordField;
     private readonly _total5: NumberRecordField;
     private readonly _won5050: NumberRecordField;
@@ -20,7 +19,7 @@ export class GlobalBannerStatsRecord {
         this._bannerId = entity.bannerId;
 
         this._totalUsers = new NumberRecordField(entity.totalUsers);
-        this._unfreePulls = new BigIntRecordField(entity.unfreePulls);
+        this._unfreePulls = new NumberRecordField(entity.unfreePulls);
         this._total6 = new NumberRecordField(entity.total6);
         this._total5 = new NumberRecordField(entity.total5);
         this._won5050 = new NumberRecordField(entity.won5050);
@@ -39,7 +38,7 @@ export class GlobalBannerStatsRecord {
         return this._totalUsers;
     }
 
-    public get unfreePulls(): BigIntRecordField {
+    public get unfreePulls(): NumberRecordField {
         return this._unfreePulls;
     }
 

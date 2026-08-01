@@ -1,3 +1,4 @@
+import { GlobalBannerStatsEntity } from "@database/entities/GlobalBannerStatsEntity";
 import { UserBannerTypeStatEntity } from "@database/entities/UserBannerTypeStatEntity";
 import { UserBannerStatRecord } from "@database/records/UserBannerStatRecord";
 import { Table } from "@database/tables/Table";
@@ -99,6 +100,46 @@ export class UserBannerStatsTable extends Table<Prisma.UserBannerStatDelegate> {
             });
 
         return entities.map(entity => new UserBannerStatRecord(entity));
+    }
+
+    public async getGlobalBannerStats(bannerId: string): Promise<GlobalBannerStatsEntity> {
+        const entity = await this.table.aggregate({
+            where: {
+                bannerId
+            },
+            _count: {
+                profileId: true
+            },
+            _sum: {
+                unfreePulls: true,
+                total6: true,
+                total5: true,
+                won5050: true,
+                total5050: true,
+                freePulls: true,
+                free6: true,
+                free5: true,
+                freeWin5050: true
+            },
+            _max: {
+                updatedAt: true
+            }
+        });
+
+        return {
+            bannerId,
+            totalUsers: entity._count.profileId,
+            unfreePulls: entity._sum.unfreePulls ?? 0,
+            total6: entity._sum.total6 ?? 0,
+            total5: entity._sum.total5 ?? 0,
+            won5050: entity._sum.won5050 ?? 0,
+            total5050: entity._sum.total5050 ?? 0,
+            freePulls: entity._sum.freePulls ?? 0,
+            free6: entity._sum.free6 ?? 0,
+            free5: entity._sum.free5 ?? 0,
+            freeWin5050: entity._sum.freeWin5050 ?? 0,
+            updatedAt: entity._max.updatedAt ?? new Date()
+        };
     }
 
     public async countTotalPullsByBannerType(bannerType: string | null, pullsCount: IncludeRange): Promise<number> {
