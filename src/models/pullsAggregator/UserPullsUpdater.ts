@@ -120,7 +120,7 @@ export class UserPullsUpdater {
         if (pull.rarity === 5) {
             bannerData.stat.total5.value++;
 
-            const pity = bannerTypeData.stat.unfreePulls - bannerTypeData.pulls.last5Pull.value;
+            const pity = bannerTypeData.stat.unfreePulls - Math.max(bannerTypeData.pulls.last5Pull.value, bannerTypeData.pulls.last6Pull.value);
             const pityRecord = await this.getPityDistributionRecord(bannerId, pity, 5);
             pityRecord.count.value++;
 
