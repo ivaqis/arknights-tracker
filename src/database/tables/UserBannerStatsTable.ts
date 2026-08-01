@@ -105,7 +105,15 @@ export class UserBannerStatsTable extends Table<Prisma.UserBannerStatDelegate> {
     public async getGlobalBannerStats(bannerId: string): Promise<GlobalBannerStatsEntity> {
         const entity = await this.table.aggregate({
             where: {
-                bannerId
+                bannerId,
+                OR: [
+                    {
+                        unfreePulls: { gt: 0 }
+                    },
+                    {
+                        freePulls: { gt: 0 }
+                    }
+                ]
             },
             _count: {
                 profileId: true

@@ -1,3 +1,4 @@
+import { GlobalBannerStatsEntity } from "@database/entities/GlobalBannerStatsEntity";
 import { UserBannerStatRecord } from "@database/records/UserBannerStatRecord";
 import { UserCharBannerData } from "@database/repositories/interfaces/UserCharBannerData";
 import { UserCharBannerTypeData } from "@database/repositories/interfaces/UserCharBannerTypeData";
@@ -128,5 +129,9 @@ export class UserBannerStatsRepository extends Repository {
 
     public async countLuck5ByBannerType(bannerType: DbBannerType | null, luckRate: IncludeRange = {}): Promise<number> {
         return this._userBannerStatsTable.countLuck5ByBannerType(bannerType, luckRate);
+    }
+
+    public async getGlobalBannerStats(bannerId: string): Promise<GlobalBannerStatsEntity> {
+        return this._userBannerStatsTable.getGlobalBannerStats(bannerId);
     }
 }
