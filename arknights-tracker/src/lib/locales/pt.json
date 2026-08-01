@@ -280,6 +280,8 @@
     "tracker_backup_warning": "Antes de importar dados de sites rastreadores, é altamente recomendável fazer um backup de seus dados atuais (Vá para Configurações e clique em <strong>&ldquo;Exportar dados&rdquo;</strong> na seção <strong>&ldquo;Backup&rdquo;</strong>)."
   },
   "emptyState": {
+    "nothingSelected": "Nada selecionado",
+    "clickEquipmentHint": "Clique no equipamento à esquerda para mostrar seus detalhes.",
     "noData": "Sem entradas"
   },
   "buttons": {
@@ -894,6 +896,7 @@
     "toggleCtrlForZoom": "Segure Ctrl para dar zoom",
     "preferredSkillModeList": "Lista",
     "preferredSkillModeTable": "Tabela",
+    "splitEquipmentView": "Mostrar detalhes do equipamento na tela dividida",
     "account": {
       "title": "Selecionar Conta",
       "add": "Adicionar",

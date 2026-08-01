@@ -280,6 +280,8 @@
     "tracker_backup_warning": "トラッカーサイトからデータをインポートする前に、現在のデータのバックアップを作成することを強くお勧めします（設定に移動し、<strong>&ldquo;バックアップ&rdquo;</strong>セクションの<strong>&ldquo;データエクスポート&rdquo;</strong>をクリックします）。"
   },
   "emptyState": {
+    "nothingSelected": "何も選択されていません",
+    "clickEquipmentHint": "左側の装備をクリックして詳細を表示します。",
     "noData": "エントリーなし"
   },
   "buttons": {
@@ -894,6 +896,7 @@
     "toggleCtrlForZoom": "Ctrlキーを押したままズーム",
     "preferredSkillModeList": "リスト",
     "preferredSkillModeTable": "テーブル",
+    "splitEquipmentView": "装備の詳細を分割画面で表示する",
     "account": {
       "title": "アカウント選択",
       "add": "追加",

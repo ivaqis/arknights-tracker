@@ -280,6 +280,8 @@
     "tracker_backup_warning": "Avant d'importer des données depuis des sites de suivi, il est fortement recommandé de sauvegarder vos données actuelles (Allez dans les paramètres et cliquez sur <strong>&ldquo;Exporter les données&rdquo;</strong> dans la section <strong>&ldquo;Sauvegarde&rdquo;</strong>)."
   },
   "emptyState": {
+    "nothingSelected": "Rien n'est sélectionné",
+    "clickEquipmentHint": "Cliquez sur l'équipement à gauche pour afficher ses détails.",
     "noData": "Aucune entrée"
   },
   "buttons": {
@@ -894,6 +896,7 @@
     "preferredSkillMode": "Mode d'affichage préféré pour les compétences de combat",
     "preferredSkillModeList": "Liste",
     "preferredSkillModeTable": "Tableau",
+    "splitEquipmentView": "Afficher les détails de l'équipement sur l'écran partagé",
     "account": {
       "title": "Choisir Compte",
       "add": "Ajouter",

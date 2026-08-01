@@ -280,6 +280,8 @@
     "tracker_backup_warning": "Bevor du Daten von Tracker-Seiten importierst, wird dringend empfohlen, ein Backup deiner aktuellen Daten zu erstellen (Gehe zu den Einstellungen und klicke im Bereich <strong>&ldquo;Backup&rdquo;</strong> auf <strong>&ldquo;Daten exportieren&rdquo;</strong>)."
   },
   "emptyState": {
+    "nothingSelected": "Nichts ausgewählt",
+    "clickEquipmentHint": "Klicken Sie auf die Ausrüstung links, um deren Details anzuzeigen.",
     "noData": "Keine Einträge"
   },
   "buttons": {
@@ -894,6 +896,7 @@
     "toggleCtrlForZoom": "Halte Ctrl gedrückt, um zu zoomen",
     "preferredSkillModeList": "Liste",
     "preferredSkillModeTable": "Tabelle",
+    "splitEquipmentView": "Ausrüstungsdetails auf dem geteilten Bildschirm anzeigen",
     "account": {
       "title": "Konto auswählen",
       "add": "Hinzufügen",

@@ -261,6 +261,8 @@
     "tracker_backup_warning": "Sebelum mengimport data dari tapak penjejak, anda amat disyorkan untuk membuat sandaran data semasa anda (Pergi ke Tetapan dan klik <strong>&ldquo;Eksport data&rdquo;</strong> dalam bahagian <strong>&ldquo;Sandaran&rdquo;</strong>)."
   },
   "emptyState": {
+    "nothingSelected": "Tiada yang dipilih",
+    "clickEquipmentHint": "Klik peralatan di sebelah kiri untuk menunjukkan butirannya.",
     "noData": "Tiada entri"
   },
   "buttons": {
@@ -525,6 +527,7 @@
     "preferredSkillMode": "Mod paparan pilihan untuk kemahiran tempur",
     "preferredSkillModeList": "Senarai",
     "preferredSkillModeTable": "Jadual",
+    "splitEquipmentView": "Paparkan butiran peralatan pada skrin pisah",
     "account": {
       "title": "Pilih Akaun",
       "add": "Tambah",

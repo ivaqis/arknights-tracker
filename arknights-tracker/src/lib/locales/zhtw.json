@@ -284,6 +284,8 @@
     "tracker_backup_warning": "從追蹤器網站匯入數據前，強烈建議先備份當前數據（前往設定並在 <strong>&ldquo;備份&rdquo;</strong> 區塊點擊 <strong>&ldquo;匯出數據&rdquo;</strong>）。"
   },
   "emptyState": {
+    "nothingSelected": "未選擇任何內容",
+    "clickEquipmentHint": "點擊左側的裝備以顯示其詳細資訊。",
     "noData": "無記錄"
   },
   "buttons": {
@@ -937,6 +939,7 @@
     "preferredSkillMode": "戰鬥技能的首選顯示模式",
     "preferredSkillModeList": "列表",
     "preferredSkillModeTable": "表格",
+    "splitEquipmentView": "在分割畫面上顯示裝備詳情",
     "account": {
       "title": "選擇帳號",
       "add": "新增",

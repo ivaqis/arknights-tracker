@@ -7,6 +7,11 @@
 </script>
 
 <script>
+    import { page } from "$app/stores";
+    import { goto } from "$app/navigation";
+    import { splitEquipmentView } from "$lib/stores/settings.js";
+    import BottomSheet from "$lib/components/BottomSheet.svelte";
+    import EquipmentDetailsView from "$lib/components/equipment/EquipmentDetailsView.svelte";
     import WeaponCard from "$lib/components/cards/WeaponCard.svelte";
     import DataToolbar from "$lib/components/dataToolbarV2/DataToolbar.svelte";
     import EquipmentFilterDropdown from "$lib/components/dataToolbarV2/filterDropdowns/EquipmentFilterDropdown.svelte";
@@ -35,6 +40,42 @@
         id,
         ...data,
     }));
+
+    let isBottomSheetOpen = false;
+
+    $: queryId = $page.url.searchParams.get("id");
+    let selectedEquipmentId = "";
+
+    $: {
+        if (queryId && allEquipment.some(e => e.id === queryId)) {
+            selectedEquipmentId = queryId;
+            isBottomSheetOpen = true;
+        } else if (!queryId) {
+            selectedEquipmentId = "";
+            isBottomSheetOpen = false;
+        }
+    }
+
+    function selectEquipment(eqId) {
+        if (!eqId || selectedEquipmentId === eqId) {
+            selectedEquipmentId = "";
+            isBottomSheetOpen = false;
+            if ($splitEquipmentView) {
+                const url = new URL(window.location.href);
+                url.searchParams.delete("id");
+                goto(url.pathname, { replaceState: true, noScroll: true, keepFocus: true });
+            }
+            return;
+        }
+
+        selectedEquipmentId = eqId;
+        isBottomSheetOpen = true;
+        if ($splitEquipmentView) {
+            const url = new URL(window.location.href);
+            url.searchParams.set("id", eqId);
+            goto(url.search, { replaceState: true, noScroll: true, keepFocus: true });
+        }
+    }
 
     let sortField = savedSortField;
     let sortDirection = savedSortDirection;
@@ -592,108 +633,174 @@
 
 <svelte:window on:scroll={checkScroll} on:resize={checkScroll} />
 
-<div class="max-w-[100%] max-h-[100%] justify-start min-h-screen">
-    <div class="flex items-baseline flex-wrap gap-2 md:gap-3 mb-8 font-sdk">
-        <h2
-            class="text-3xl md:text-5xl tracking-wide text-[#21272C] dark:text-[#FDFDFD]"
-        >
-            {$t("pages.equipment") || "Equipment"}
-        </h2>
-        <span class="text-gray-400 text-xl md:text-3xl font-normal">
-            / {filteredEquipment.length}
-        </span>
-    </div>
-
-    <div class="w-full xl:w-[70%] mb-3">
-
-        <DataToolbar
-            showSortDropdownButton={true}
-            showSortDirectionButton={true}
-            showFilterDropdownButton={true}
-            showSearchInput={true}
-            showGroupButton={true}
-            showExportExcelButton={true}
-            isFilterActive={isFilterActive}
-            onFilterReset={resetFilters}
-            onExportExcel={exportEquipmentExcel}
-            bind:searchString={$equipmentSearch}
-            bind:isGrouped={$equipmentGroupMode}
-            bind:sortDirection={sortDirection}
-        >
-
-            <SortSelectorDropdown
-                slot="sortDropdown"
-                optionList={getEquipmentSortOptions()}
-                bind:selectedOption={sortField}
-            />
-
-            <EquipmentFilterDropdown
-                slot="filterDropdown"
-                filters={allFilters}
-                bind:selectedFilters={$equipmentFilters}
-                bind:selectedAttrType={selectedAttrType}
-            />
-
-        </DataToolbar>
-
-    </div>
-
-    <div class="w-full xl:w-[69%] pb-12 flex flex-col gap-5 relative">
-        {#if isGrouped}
-            {#each displayedGroups as group}
-                <div class="flex flex-col gap-1 animate-fadeIn">
-                    <div class="flex items-center gap-3 pb-2">
-                        <h3
-                            class="text-xl font-bold text-[#21272C] dark:text-[#E4E4E4] font-sdk"
-                        >
-                            {$t(`packs.${group.pack}`) || group.pack}
-                        </h3>
-                    </div>
-
-                    <div
-                        class="grid grid-cols-[repeat(auto-fill,minmax(100px,1fr))] md:grid-cols-[repeat(auto-fill,100px)] gap-5 justify-start"
-                    >
-                        {#each group.items as eq (eq.id)}
-                            <div
-                                class="flex justify-center transition-transform"
-                            >
-                                <WeaponCard weapon={eq} isEquipment={true} />
-                            </div>
-                        {/each}
-                    </div>
-                </div>
-            {/each}
-        {:else}
-            <div
-                class="grid grid-cols-[repeat(auto-fill,minmax(110px,1fr))] md:grid-cols-[repeat(auto-fill,110px)] gap-5 justify-start animate-fadeIn"
+<div class="max-w-[100%] max-h-[100%] min-h-screen h-full {$splitEquipmentView ? 'flex flex-col xl:flex-row justify-between items-start' : ''}">
+    <div class="w-full {$splitEquipmentView ? 'xl:w-[calc(100%-min(770px,45%))] xl:mr-6' : ''}">
+        <div class="flex items-baseline flex-wrap gap-2 md:gap-3 mb-8 font-sdk">
+            <h2
+                class="text-3xl md:text-5xl tracking-wide text-[#21272C] dark:text-[#FDFDFD]"
             >
-                {#each displayedFlat as eq (eq.id)}
-                    <div class="flex justify-center transition-transform">
-                        <WeaponCard weapon={eq} isEquipment={true} />
+                {$t("pages.equipment") || "Equipment"}
+            </h2>
+            <span class="text-gray-400 text-xl md:text-3xl font-normal">
+                / {filteredEquipment.length}
+            </span>
+        </div>
+
+        <div class="w-full {$splitEquipmentView ? '' : 'xl:w-[70%]'} mb-3">
+            <DataToolbar
+                showSortDropdownButton={true}
+                showSortDirectionButton={true}
+                showFilterDropdownButton={true}
+                showSearchInput={true}
+                showGroupButton={true}
+                showExportExcelButton={true}
+                isFilterActive={isFilterActive}
+                onFilterReset={resetFilters}
+                onExportExcel={exportEquipmentExcel}
+                bind:searchString={$equipmentSearch}
+                bind:isGrouped={$equipmentGroupMode}
+                bind:sortDirection={sortDirection}
+            >
+                <SortSelectorDropdown
+                    slot="sortDropdown"
+                    optionList={getEquipmentSortOptions()}
+                    bind:selectedOption={sortField}
+                />
+
+                <EquipmentFilterDropdown
+                    slot="filterDropdown"
+                    filters={allFilters}
+                    bind:selectedFilters={$equipmentFilters}
+                    bind:selectedAttrType={selectedAttrType}
+                />
+            </DataToolbar>
+        </div>
+
+        <div class="w-full {$splitEquipmentView ? '' : 'xl:w-[69%]'} pb-12 flex flex-col gap-5 relative">
+            {#if isGrouped}
+                {#each displayedGroups as group}
+                    <div class="flex flex-col gap-1 animate-fadeIn">
+                        <div class="flex items-center gap-3 pb-2">
+                            <h3
+                                class="text-xl font-bold text-[#21272C] dark:text-[#E4E4E4] font-sdk"
+                            >
+                                {$t(`packs.${group.pack}`) || group.pack}
+                            </h3>
+                        </div>
+
+                        <div
+                            class="grid grid-cols-[repeat(auto-fill,minmax(110px,1fr))] md:grid-cols-[repeat(auto-fill,110px)] gap-3 justify-start"
+                        >
+                            {#each group.items as eq (eq.id)}
+                                {#if $splitEquipmentView}
+                                    <button
+                                        tabindex="0"
+                                        type="button"
+                                        class="relative w-[110px] h-[110px] rounded-[6px] cursor-pointer text-left aspect-square transition-all duration-300"
+                                        on:click|preventDefault|stopPropagation={() => selectEquipment(eq.id)}
+                                    >
+                                        <WeaponCard weapon={eq} isEquipment={true} asLink={false} className="w-full h-full" />
+                                        {#if selectedEquipmentId === eq.id}
+                                            <div
+                                                class="absolute inset-[-3px] border-[3px] border-[#F9B90C] rounded-[9px] z-30 pointer-events-none"
+                                            ></div>
+                                        {/if}
+                                    </button>
+                                {:else}
+                                    <div class="flex justify-center">
+                                        <WeaponCard weapon={eq} isEquipment={true} />
+                                    </div>
+                                {/if}
+                            {/each}
+                        </div>
                     </div>
                 {/each}
-            </div>
-        {/if}
-
-        {#if (isGrouped && displayLimit < groupedArray.length) || (!isGrouped && flatDisplayLimit < filteredEquipment.length)}
-            <div
-                class="w-full h-24 mt-4 flex items-center justify-center opacity-50"
-            >
-                <div class="w-8 h-8 animate-spin dark:text-white">
-                    <Icon name="loading" class="w-8 h-8 opacity-100" />
+            {:else}
+                <div
+                    class="grid grid-cols-[repeat(auto-fill,minmax(110px,1fr))] md:grid-cols-[repeat(auto-fill,110px)] gap-3 justify-start animate-fadeIn"
+                >
+                    {#each displayedFlat as eq (eq.id)}
+                        {#if $splitEquipmentView}
+                            <button
+                                tabindex="0"
+                                type="button"
+                                class="relative w-[110px] h-[110px] rounded-[6px] cursor-pointer text-left aspect-square transition-all duration-300"
+                                on:click|preventDefault|stopPropagation={() => selectEquipment(eq.id)}
+                            >
+                                <WeaponCard weapon={eq} isEquipment={true} asLink={false} className="w-full h-full" />
+                                {#if selectedEquipmentId === eq.id}
+                                    <div
+                                        class="absolute inset-[-3px] border-[3px] border-[#F9B90C] rounded-[9px] z-30 pointer-events-none"
+                                    ></div>
+                                {/if}
+                            </button>
+                        {:else}
+                            <div class="flex justify-center">
+                                <WeaponCard weapon={eq} isEquipment={true} />
+                            </div>
+                        {/if}
+                    {/each}
                 </div>
-            </div>
-        {/if}
+            {/if}
 
-        {#if filteredEquipment.length === 0}
-            <div
-                class="text-center py-20 text-gray-400 italic flex flex-col items-center justify-center bg-gray-50 dark:bg-[#2C2C2C] rounded-2xl border border-dashed border-gray-200 dark:border-[#444]"
-            >
-                <Icon name="noData" class="w-10 h-10 mb-3 opacity-30" />
-                <p class="text-sm font-medium">
-                    {$t("emptyState.noData") || "No equipment found"}
-                </p>
-            </div>
-        {/if}
+            {#if (isGrouped && displayLimit < groupedArray.length) || (!isGrouped && flatDisplayLimit < filteredEquipment.length)}
+                <div
+                    class="w-full h-24 mt-4 flex items-center justify-center opacity-50"
+                >
+                    <div class="w-8 h-8 animate-spin dark:text-white">
+                        <Icon name="loading" class="w-8 h-8 opacity-100" />
+                    </div>
+                </div>
+            {/if}
+
+            {#if filteredEquipment.length === 0}
+                <div
+                    class="text-center py-20 text-gray-400 italic flex flex-col items-center justify-center bg-gray-50 dark:bg-[#2C2C2C] rounded-2xl border border-dashed border-gray-200 dark:border-[#444]"
+                >
+                    <Icon name="noData" class="w-10 h-10 mb-3 opacity-30" />
+                    <p class="text-sm font-medium">
+                        {$t("emptyState.noData") || "No equipment found"}
+                    </p>
+                </div>
+            {/if}
+        </div>
     </div>
+
+    {#if $splitEquipmentView}
+        <BottomSheet
+            bind:isOpen={isBottomSheetOpen}
+            className="xl:sticky xl:top-6 xl:w-[770px] xl:max-w-[770px] shrink-0"
+        >
+            <div class="w-full min-h-[50vh] h-full xl:h-auto xl:max-h-[calc(100vh-48px)] overflow-y-auto custom-scrollbar pb-8">
+                {#if selectedEquipmentId}
+                    <EquipmentDetailsView
+                        id={selectedEquipmentId}
+                        showBackButton={false}
+                        onSelectEquipment={selectEquipment}
+                    />
+                {:else}
+                    <div class="text-center py-20 px-6 text-gray-400 italic bg-white dark:bg-[#2b2b2b] rounded-3xl border border-gray-200 dark:border-[#444] shadow-sm flex flex-col items-center justify-center h-full xl:h-[calc(100vh-64px)] w-full">
+                        <Icon name="noData" class="w-12 h-12 mb-3 opacity-30 mx-auto" />
+                        <h3 class="text-lg font-bold text-[#21272C] dark:text-[#E4E4E4] not-italic mb-1 font-sdk">
+                            {$t("emptyState.nothingSelected") || "Nothing selected"}
+                        </h3>
+                        <p class="text-sm font-medium text-gray-500 dark:text-gray-400 not-italic max-w-[320px]">
+                            {$t("emptyState.clickEquipmentHint") || "Click on an equipment on the left to display its details."}
+                        </p>
+                    </div>
+                {/if}
+            </div>
+        </BottomSheet>
+    {/if}
 </div>
+
+{#if $splitEquipmentView && !isBottomSheetOpen && selectedEquipmentId}
+    <button
+        type="button"
+        class="xl:hidden fixed bottom-6 right-6 z-40 w-14 h-14 bg-[#F9B90C] hover:bg-[#FFC01E] text-black rounded-full shadow-lg flex items-center justify-center transition-all active:scale-95 border border-white dark:border-[#1A1A1A] cursor-pointer"
+        on:click={() => (isBottomSheetOpen = true)}
+        title="Details"
+    >
+        <Icon name="inbox" class="w-6 h-6 text-black" />
+    </button>
+{/if}

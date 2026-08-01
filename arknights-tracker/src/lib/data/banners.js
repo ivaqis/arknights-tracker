@@ -506,7 +506,7 @@ export const banners = [
     isServerTime: true, 
     timezone: "UTC+8",
     icon: "weponbox_1_3_2.png",
-    miniIcon: "weponbox_1_3_2.png",
+    miniIcon: "weponbox_1_3_2.webp",
     url: "https://x.com/AKEndfield/status/2069997764076085726?s=20",
     layer: 14,
     color: "#A61C1C",

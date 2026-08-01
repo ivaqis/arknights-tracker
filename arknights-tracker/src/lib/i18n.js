@@ -12,7 +12,7 @@ export const isI18nReady = writable(false);
 
 const getNestedValue = (obj, path) => {
     if (!obj) return null;
-    return path.split('.').reduce((acc, part) => acc && acc[part], obj);
+    return path.split('.').reduce((acc, part) => acc?.[part], obj);
 };
 
 const formatString = (str, vars) => {

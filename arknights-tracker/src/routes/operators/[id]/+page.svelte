@@ -11,6 +11,7 @@
     import { accountStore } from "$lib/stores/accounts";
     import { levels as levelUpTable } from "$lib/data/levelUpTable.js";
     import { parseRichText, hyperlinkAction } from "$lib/utils/richText.js";
+    import { getRarityColor } from "$lib/utils/colorUtils.js";
 
     import Icon from "$lib/components/Icon.svelte";
     import Tooltip from "$lib/components/Tooltip.svelte";
@@ -246,12 +247,7 @@
         },
     };
 
-    function getRarityColor(rarity) {
-        if (rarity === 6) return "#F4700C";
-        if (rarity === 5) return "#F9B90C";
-        if (rarity === 4) return "#9253F1";
-        return "#888";
-    }
+
 
     $: rarityColor = getRarityColor(char.rarity || 1);
 

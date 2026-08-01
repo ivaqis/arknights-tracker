@@ -284,6 +284,8 @@
     "tracker_backup_warning": "Trước khi nhập dữ liệu từ các trang web theo dõi, bạn nên sao lưu dữ liệu hiện tại của mình (Đi tới Cài đặt và nhấp vào <strong>&ldquo;Xuất dữ liệu&rdquo;</strong> trong phần <strong>&ldquo;Sao lưu&rdquo;</strong>)."
   },
   "emptyState": {
+    "nothingSelected": "Chưa chọn gì",
+    "clickEquipmentHint": "Nhấp vào trang bị bên trái để hiển thị chi tiết.",
     "noData": "Không có dữ liệu"
   },
   "buttons": {
@@ -937,6 +939,7 @@
     "preferredSkillMode": "Chế độ hiển thị ưa thích cho kỹ năng chiến đấu",
     "preferredSkillModeList": "Danh sách",
     "preferredSkillModeTable": "Bảng",
+    "splitEquipmentView": "Hiển thị chi tiết trang bị trên màn hình chia nhỏ",
     "account": {
       "title": "Chọn Tài khoản",
       "add": "Thêm",

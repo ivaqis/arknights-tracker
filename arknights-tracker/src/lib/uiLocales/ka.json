@@ -261,6 +261,8 @@
     "tracker_backup_warning": "ტრეკერების საიტებიდან მონაცემების იმპორტამდე სასურველია მიმდინარე მონაცემების სარეზერვო ასლის გაკეთება (გადადით პარამეტრებში და დააჭირეთ <strong>&ldquo;მონაცემების ექსპორტს&rdquo;</strong> სექციაში <strong>&ldquo;სარეზერვო ასლი&rdquo;</strong>)."
   },
   "emptyState": {
+    "nothingSelected": "არაფერია არჩეული",
+    "clickEquipmentHint": "დააწკაპუნეთ აღჭურვილობაზე მარცხნივ დეტალების სანახავად.",
     "noData": "ჩანაწერები არ არის"
   },
   "buttons": {
@@ -525,6 +527,7 @@
     "preferredSkillMode": "საბრძოლო უნარების ჩვენების სასურველი რეჟიმი",
     "preferredSkillModeList": "სია",
     "preferredSkillModeTable": "ცხრილი",
+    "splitEquipmentView": "აღჭურვილობის დეტალების გაყოფილ ეკრანზე ჩვენება",
     "account": {
       "title": "აირჩიეთ ანგარიში",
       "add": "დამატება",

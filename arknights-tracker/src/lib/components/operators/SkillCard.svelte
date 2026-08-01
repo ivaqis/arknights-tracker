@@ -8,6 +8,7 @@
     import Button from "$lib/components/Button.svelte";
     import Image from "$lib/components/Image.svelte";
     import { parseRichText, hyperlinkAction } from "$lib/utils/richText.js";
+    import { getHexColorByElement } from "$lib/utils/colorUtils.js";
 
     export let charId = "";
     export let skillKey = "";
@@ -21,16 +22,8 @@
     export let charLevel = 100;
     export let charDetails = {};
 
-    const elementColors = {
-        physical: "#5E5D5D",
-        cryo: "#21C4CE",
-        nature: "#AABD00",
-        electric: "#FFBF00",
-        heat: "#FF613D",
-    }; //Поменять
-
     $: currentElement = skillValues.elementType || element;
-    $: currentColor = elementColors[currentElement] || "#5E5D5D";
+    $: currentColor = getHexColorByElement(currentElement);
     $: isUltimate = skillKey === "ultimate";
     $: skillImageId = (() => {
         if (
@@ -92,10 +85,18 @@
             .sort((a, b) => (a.id === "t_creds" ? -1 : a.rarity - b.rarity));
     })();
 
-    function getValue(key, lvl) {
-        let valObj = skillValues[key];
+    function getValue(key, lvl, conditionKey = null) {
+        let valObj = null;
 
-        if (!valObj) {
+        if (conditionKey && skillValues && skillValues[conditionKey] && skillValues[conditionKey][key]) {
+            valObj = skillValues[conditionKey][key];
+        }
+
+        if (!valObj && skillValues) {
+            valObj = skillValues[key];
+        }
+
+        if (!valObj && skillValues) {
             for (const k of Object.keys(skillValues)) {
                 if (k.startsWith("condition") && skillValues[k] && typeof skillValues[k] === "object") {
                     if (skillValues[k][key]) {
@@ -281,6 +282,7 @@
 
                     conditionGroups.push({
                         index: condIndex,
+                        conditionKey: k,
                         name: condName,
                         keys: matchingKeys
                     });
@@ -310,8 +312,13 @@
 
     let isTableCopied = false;
 
-    function getLocalizedLabel(key) {
+    function getLocalizedLabel(key, conditionKey = null) {
         if (!skillData) return null;
+        if (conditionKey) {
+            if (skillData[conditionKey] && skillData[conditionKey][key]) return skillData[conditionKey][key];
+            const subData = skillData[skillKey];
+            if (subData && subData[conditionKey] && subData[conditionKey][key]) return subData[conditionKey][key];
+        }
         const subData = skillData[skillKey];
         if (subData) {
             if (subData[key]) return subData[key];
@@ -347,8 +354,8 @@
         return null;
     }
 
-    function getLabel(key) {
-        const localized = getLocalizedLabel(key);
+    function getLabel(key, conditionKey = null) {
+        const localized = getLocalizedLabel(key, conditionKey);
         if (localized) return localized;
         const translated = $t(`stats.${key}`);
         if (translated && translated !== `stats.${key}`) return translated;
@@ -362,13 +369,24 @@
         ];
         let textData = headers.join("\t") + "\n";
 
-        for (const key of multiplierKeys) {
+        for (const key of groupedMultipliers.base) {
             const rowLabel = getLabel(key);
             const row = [rowLabel];
             for (let i = 1; i <= 12; i++) {
                 row.push(getValue(key, i));
             }
             textData += row.join("\t") + "\n";
+        }
+
+        for (const group of groupedMultipliers.conditions) {
+            for (const key of group.keys) {
+                const rowLabel = `${group.name} - ${getLabel(key, group.conditionKey)}`;
+                const row = [rowLabel];
+                for (let i = 1; i <= 12; i++) {
+                    row.push(getValue(key, i, group.conditionKey));
+                }
+                textData += row.join("\t") + "\n";
+            }
         }
 
         try {
@@ -640,12 +658,12 @@
                                     <span
                                         class="font-bold text-gray-600 dark:text-[#E4E4E4]"
                                     >
-                                        {getLabel(key)}
+                                        {getLabel(key, group.conditionKey)}
                                     </span>
                                     <span
                                         class="font-nums font-bold text-[#21272C] dark:text-[#E4E4E4]"
                                     >
-                                        {getValue(key, level)}
+                                        {getValue(key, level, group.conditionKey)}
                                     </span>
                                 </div>
                             {/each}
@@ -719,7 +737,7 @@
                                         <td
                                             class="static md:sticky md:left-0 md:z-10 bg-white dark:bg-[#383838] pl-4 pr-2 py-2 font-bold text-gray-600 dark:text-[#B7B6B3] border-r border-gray-100 dark:border-[#444444]/30 md:shadow-[2px_0_5px_-2px_rgba(0,0,0,0.05)] max-w-[200px] break-words whitespace-normal"
                                         >
-                                            {getLabel(key)}
+                                            {getLabel(key, group.conditionKey)}
                                         </td>
                                         {#each Array(12) as _, i}
                                             {@const lvl = i + 1}
@@ -730,7 +748,7 @@
                                                     : ''}"
                                                 on:click={() => (level = lvl)}
                                             >
-                                                {getValue(key, lvl)}
+                                                {getValue(key, lvl, group.conditionKey)}
                                             </td>
                                         {/each}
                                     </tr>

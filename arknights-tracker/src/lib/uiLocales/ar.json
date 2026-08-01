@@ -261,6 +261,8 @@
     "tracker_backup_warning": "قبل استيراد البيانات من مواقع التتبع، يوصى بشدة بعمل نسخة احتياطية من بياناتك الحالية (انتقل إلى الإعدادات وانقر على <strong>&ldquo;تصدير البيانات&rdquo;</strong> في قسم <strong>&ldquo;النسخ الاحتياطي&rdquo;</strong>)."
   },
   "emptyState": {
+    "nothingSelected": "لم يتم تحديد شيء",
+    "clickEquipmentHint": "انقر على المعدات على اليسار لعرض تفاصيلها.",
     "noData": "لا توجد إدخالات"
   },
   "buttons": {
@@ -525,6 +527,7 @@
     "preferredSkillMode": "وضع العرض المفضل لمهارات القتال",
     "preferredSkillModeList": "قائمة",
     "preferredSkillModeTable": "جدول",
+    "splitEquipmentView": "عرض تفاصيل المعدات على الشاشة المقسمة",
     "account": {
       "title": "اختر الحساب",
       "add": "إضافة",

@@ -176,7 +176,7 @@
     </div>
 
     <div class="w-full xl:w-[85%] pb-8">
-        <div class="grid grid-cols-[repeat(auto-fill,minmax(100px,1fr))] md:grid-cols-[repeat(auto-fill,100px)] gap-5 justify-start">
+        <div class="grid grid-cols-[repeat(auto-fill,minmax(110px,1fr))] md:grid-cols-[repeat(auto-fill,110px)] gap-3 justify-start">
             {#each displayedWeapons as wp (wp.id)}
                 <div class="flex justify-center">
                     <WeaponCard weapon={wp} isNew={wp.isNew}/>

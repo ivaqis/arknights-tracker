@@ -280,6 +280,8 @@
     "tracker_backup_warning": "Prima di importare dati da siti di monitoraggio, si consiglia vivamente di fare un backup dei dati attuali (Vai su Impostazioni e fai clic su <strong>&ldquo;Esporta dati&rdquo;</strong> nella sezione <strong>&ldquo;Backup&rdquo;</strong>)."
   },
   "emptyState": {
+    "nothingSelected": "Nessuna selezione",
+    "clickEquipmentHint": "Fai clic sull'equipaggiamento a sinistra per visualizzare i dettagli.",
     "noData": "Nessuna voce"
   },
   "buttons": {
@@ -894,6 +896,7 @@
     "toggleCtrlForZoom": "Tieni premuto Ctrl per zoomare",
     "preferredSkillModeList": "Elenco",
     "preferredSkillModeTable": "Tabella",
+    "splitEquipmentView": "Mostra i dettagli dell'equipaggiamento nello schermo diviso",
     "account": {
       "title": "Seleziona Account",
       "add": "Aggiungi",

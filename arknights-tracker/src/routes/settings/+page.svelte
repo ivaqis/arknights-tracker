@@ -10,7 +10,7 @@
     import { currentUid } from "$lib/stores/auth";
     import { fade } from "svelte/transition";
     import { onDestroy } from "svelte";
-    import { disableDarkening, preferredSkillMode } from "$lib/stores/settings";
+    import { disableDarkening, preferredSkillMode, splitEquipmentView } from "$lib/stores/settings";
     import { addNotification } from "$lib/stores/notifications";
     import { currentLocale, currentUiLocale } from "$lib/stores/locale";
     import { ctrlForZoom } from "$lib/stores/dragPlateSettings.js";
@@ -57,6 +57,10 @@
 
     function toggleDragPlateMode() {
         ctrlForZoom.update((v) => !v);
+    }
+
+    function toggleSplitEquipmentView() {
+        splitEquipmentView.update((v) => !v);
     }
 
     import {
@@ -948,6 +952,28 @@
                     {$t("settings.toggleCtrlForZoom")}
                 </span>
 
+        </div>
+
+        <div class="flex items-center gap-3 mt-4">
+            <button
+                type="button"
+                role="switch"
+                aria-label="switch"
+                aria-checked={$splitEquipmentView}
+                class="shrink-0 relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none {$splitEquipmentView
+                    ? 'bg-[#F9B90C]'
+                    : 'bg-gray-200 dark:bg-[#555]'}"
+                on:click={toggleSplitEquipmentView}
+            >
+                <span
+                    class="inline-block h-4 w-4 transform rounded-full bg-white transition-transform {$splitEquipmentView
+                        ? 'translate-x-6'
+                        : 'translate-x-1'} shadow-sm"
+                ></span>
+            </button>
+            <span class="text-sm font-bold dark:text-[#E0E0E0] text-gray-800">
+                {$t("settings.splitEquipmentView") || "Show equipment details on split screen"}
+            </span>
         </div>
 
         <div class="mt-4 flex flex-col items-start gap-2">

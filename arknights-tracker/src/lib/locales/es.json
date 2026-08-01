@@ -282,6 +282,8 @@
     "tracker_backup_warning": "Antes de importar datos de sitios de rastreo, es muy recomendable hacer una copia de seguridad de tus datos actuales (Ve a Ajustes y haz clic en <strong>&ldquo;Exportar datos&rdquo;</strong> en la sección <strong>&ldquo;Copia de seguridad&rdquo;</strong>)."
   },
   "emptyState": {
+    "nothingSelected": "Nada seleccionado",
+    "clickEquipmentHint": "Haz clic en el equipamiento de la izquierda para ver sus detalles.",
     "noData": "Sin entradas"
   },
   "buttons": {
@@ -896,6 +898,7 @@
     "preferredSkillMode": "Modo de visualización preferido para habilidades de combate",
     "preferredSkillModeList": "Lista",
     "preferredSkillModeTable": "Tabla",
+    "splitEquipmentView": "Mostrar detalles del equipamiento en la pantalla dividida",
     "account": {
       "title": "Seleccionar Cuenta",
       "add": "Añadir",

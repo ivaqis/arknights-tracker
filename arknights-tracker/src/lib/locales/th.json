@@ -280,6 +280,8 @@
     "tracker_backup_warning": "ก่อนนำเข้าข้อมูลจากไซต์ติดตาม ขอแนะนำให้สำรองข้อมูลปัจจุบันของคุณ (ไปที่ตั้งค่าและคลิก <strong>&ldquo;ส่งออกข้อมูล&rdquo;</strong> ในส่วน <strong>&ldquo;สำรองข้อมูล&rdquo;</strong>)"
   },
   "emptyState": {
+    "nothingSelected": "ไม่ได้เลือกสิ่งใด",
+    "clickEquipmentHint": "คลิกอุปกรณ์ทางด้านซ้ายเพื่อแสดงรายละเอียด",
     "noData": "ไม่มีข้อมูล"
   },
   "buttons": {
@@ -894,6 +896,7 @@
     "toggleCtrlForZoom": "กด Ctrl ค้างไว้เพื่อซูม",
     "preferredSkillModeList": "รายการ",
     "preferredSkillModeTable": "ตาราง",
+    "splitEquipmentView": "แสดงรายละเอียดอุปกรณ์บนหน้าจอแยก",
     "account": {
       "title": "เลือกบัญชี",
       "add": "เพิ่ม",

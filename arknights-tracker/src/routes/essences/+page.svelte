@@ -26,6 +26,7 @@
     import { manualPotentials } from "$lib/stores/potentials";
     import { pullData } from "$lib/stores/pulls";
     import { filterCheck, filterCheckLowerCase } from "$lib/utils/filterUtils.js";
+    import { getRarityColor } from "$lib/utils/colorUtils.js";
     import { fade, scale } from "svelte/transition";
     import { weaponEssences } from "$lib/stores/weaponEssences.js";
 
@@ -249,13 +250,7 @@
         setInvAttr(3, skill);
     }
 
-    const rarityColors = {
-        6: "#F4700C", // Красный/Оранжевый
-        5: "#F9B90C", // Золотой
-        4: "#9253F1", // Фиолетовый
-        3: "#25B9F9", // Синий/Бирюзовый
-        2: "#8F8F8F", // Зеленый
-    };
+
 
     function setInvAttr(group, skillId) {
         if (group === 1) invAttr1 = invAttr1 === skillId ? null : skillId;
@@ -1302,9 +1297,9 @@
                                             <a
                                                 href={`/weapons/${match.weapon.id}`}
                                                 class="block w-full h-full rounded border border-gray-300 dark:border-[#333] border-b-[3px] scale-110 overflow-hidden bg-gradient-to-br from-gray-50 to-gray-200 dark:from-[#3a3a3a] dark:to-[#1a1a1a] flex items-center justify-center shadow-sm transition-all duration-300 hover:ring-2 hover:ring-white dark:hover:ring-white hover:border-white"
-                                                style="border-bottom-color: {rarityColors[
+                                                style="border-bottom-color: {getRarityColor(
                                                     match.weapon.rarity
-                                                ] || '#B7B6B3'};"
+                                                )};"
                                             >
                                                 <Image
                                                     id={match.weapon.id}
@@ -1528,11 +1523,10 @@
                                                                         >
                                                                             <div
                                                                                 class="relative w-10 h-full flex items-center justify-center dark:border-[#333] bg-gradient-to-br from-gray-50 to-gray-200 dark:from-[#3a3a3a] dark:to-[#1a1a1a] flex-shrink-0"
-                                                                                style="border-left: 3px solid {rarityColors[
+                                                                                style="border-left: 3px solid {getRarityColor(
                                                                                     wp
                                                                                         .rarity
-                                                                                ] ||
-                                                                                    '#B7B6B3'};"
+                                                                                )};"
                                                                             >
                                                                                 <a
                                                                                     href={`/weapons/${wp.id}`}

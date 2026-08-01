@@ -26,6 +26,7 @@
     export let isEnemy = false;
     export let hideRarity = false;
     export let isStatic = false;
+    export let onClick = undefined;
 
     $: computedIsNew =
         isNew !== undefined
@@ -188,6 +189,12 @@
         href={asLink ? itemUrl : undefined}
         role={asLink ? "link" : "presentation"}
         class="{rootClass} no-underline focus:outline-none focus:ring-2 focus:ring-[#F9B90C] rounded-[6px]"
+        on:click={(e) => {
+            if (onClick) {
+                e.preventDefault();
+                onClick(e);
+            }
+        }}
         on:mouseenter={() => (isHovered = true)}
         on:mouseleave={() => (isHovered = false)}
     >

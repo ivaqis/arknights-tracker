@@ -717,6 +717,14 @@
             second: "2-digit",
         });
     }
+
+    $: bannerTitle = (() => {
+        const typeTrans = $t(`bannerTypes.${bannerType}`);
+        if (typeTrans !== `bannerTypes.${bannerType}`) return typeTrans;
+        const bannerTrans = $t(`banners.${bannerType}`);
+        if (bannerTrans !== `banners.${bannerType}`) return bannerTrans;
+        return typeTrans;
+    })();
 </script>
 
 <div class="max-w-[1600px] justify-start min-h-screen">
@@ -737,7 +745,7 @@
             </span>
 
             <span class="text-gray-400 text-lg md:text-3xl font-normal whitespace-nowrap">
-                / {$t(`bannerTypes.${bannerType}`)}
+                / {bannerTitle}
             </span>
         </h2>
     </div>

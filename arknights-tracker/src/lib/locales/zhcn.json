@@ -284,6 +284,8 @@
     "tracker_backup_warning": "从追踪器网站导入数据前，强烈建议先备份当前数据（前往设置并在 <strong>&ldquo;备份&rdquo;</strong> 部分点击 <strong>&ldquo;导出数据&rdquo;</strong>）。"
   },
   "emptyState": {
+    "nothingSelected": "未选择任何内容",
+    "clickEquipmentHint": "点击左侧的装备以显示其详细信息。",
     "noData": "无记录"
   },
   "buttons": {
@@ -937,6 +939,7 @@
     "preferredSkillMode": "战斗技能的首选显示模式",
     "preferredSkillModeList": "列表",
     "preferredSkillModeTable": "表格",
+    "splitEquipmentView": "在分屏上显示装备详情",
     "account": {
       "title": "选择账号",
       "add": "添加",

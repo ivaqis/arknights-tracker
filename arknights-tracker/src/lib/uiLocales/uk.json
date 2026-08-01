@@ -261,6 +261,8 @@
     "tracker_backup_warning": "Перед імпортом даних з сайтів-трекерів наполегливо рекомендується зробити резервну копію поточних даних (Перейдіть до Налаштувань і натисніть <strong>&ldquo;Експорт даних&rdquo;</strong> у розділі <strong>&ldquo;Резервна копія&rdquo;</strong>)."
   },
   "emptyState": {
+    "nothingSelected": "Нічого не вибрано",
+    "clickEquipmentHint": "Натисніть на спорядження зліва, щоб відобразити його деталі.",
     "noData": "Немає записів"
   },
   "buttons": {
@@ -525,6 +527,7 @@
     "preferredSkillMode": "Бажаний режим відображення бойових навичок",
     "preferredSkillModeList": "Список",
     "preferredSkillModeTable": "Таблиця",
+    "splitEquipmentView": "Відображати деталі спорядження на другій частині екрана",
     "account": {
       "title": "Виберіть акаунт",
       "add": "Додати",

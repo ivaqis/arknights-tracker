@@ -261,6 +261,8 @@
     "tracker_backup_warning": "Przed zaimportowaniem danych z witryn śledzących zaleca się wykonanie kopii zapasowej bieżących danych (Przejdź do Ustawień i kliknij <strong>&ldquo;Eksportuj dane&rdquo;</strong> w sekcji <strong>&ldquo;Kopia zapasowa&rdquo;</strong>)."
   },
   "emptyState": {
+    "nothingSelected": "Nic nie wybrano",
+    "clickEquipmentHint": "Kliknij wyposażenie po lewej stronie, aby wyświetlić jego szczegóły.",
     "noData": "Brak wpisów"
   },
   "buttons": {
@@ -525,6 +527,7 @@
     "preferredSkillMode": "Preferowany tryb wyświetlania umiejętności bojowych",
     "preferredSkillModeList": "Lista",
     "preferredSkillModeTable": "Tabela",
+    "splitEquipmentView": "Wyświetl szczegóły wyposażenia na podzielonym ekranie",
     "account": {
       "title": "Wybierz Konto",
       "add": "Dodaj",

@@ -286,7 +286,9 @@
     "tracker_backup_warning": "Before importing data from tracker sites, it is highly recommended to make a backup of your current data (Go to Settings and click <strong>&ldquo;Export data&rdquo;</strong> in the <strong>&ldquo;Backup&rdquo;</strong> section)."
   },
   "emptyState": {
-    "noData": "No entries"
+    "noData": "No entries",
+    "nothingSelected": "Nothing selected",
+    "clickEquipmentHint": "Click on an equipment on the left to display its details."
   },
   "buttons": {
     "saveBtn": "Save"
@@ -1027,6 +1029,7 @@
     "title": "Settings",
     "other": "Other",
     "disableDarkening": "Disable weapon and operator card darkening",
+    "splitEquipmentView": "Show equipment details on split screen",
     "toggleCtrlForZoom": "Hold Ctrl to zoom",
     "preferredSkillMode": "Preferred display mode for combat skills",
     "preferredSkillModeList": "List",

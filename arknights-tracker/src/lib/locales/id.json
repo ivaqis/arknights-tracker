@@ -280,6 +280,8 @@
     "tracker_backup_warning": "Sebelum mengimpor data dari situs pelacak, sangat disarankan untuk mencadangkan data Anda saat ini (Buka Pengaturan dan klik <strong>&ldquo;Ekspor data&rdquo;</strong> di bagian <strong>&ldquo;Cadangan&rdquo;</strong>)."
   },
   "emptyState": {
+    "nothingSelected": "Tidak ada yang dipilih",
+    "clickEquipmentHint": "Klik perlengkapan di sebelah kiri untuk menampilkan detailnya.",
     "noData": "Tidak ada entri"
   },
   "buttons": {
@@ -894,6 +896,7 @@
     "toggleCtrlForZoom": "Tahan Ctrl untuk memperbesar",
     "preferredSkillModeList": "Daftar",
     "preferredSkillModeTable": "Tabel",
+    "splitEquipmentView": "Tampilkan detail perlengkapan di layar terpisah",
     "account": {
       "title": "Pilih Akun",
       "add": "Tambah",

@@ -56,7 +56,7 @@ function compressDataForCloud(fullBackup) {
 function countAllLocalPulls() {
     if (typeof window === 'undefined') return 0;
     let accounts = [];
-    try { const raw = localStorage.getItem("ark_tracker_accounts"); if (raw) accounts = JSON.parse(raw).accounts; } catch (e) { }
+    try { const raw = localStorage.getItem("ark_tracker_accounts"); if (raw) accounts = JSON.parse(raw).accounts; } catch (e) { console.error(e); }
     if (!accounts || !accounts.length) accounts = [{ id: 'main' }];
     let total = 0;
     accounts.forEach(acc => {
@@ -67,7 +67,7 @@ function countAllLocalPulls() {
                 Object.values(data).forEach(catData => {
                     if (catData?.pulls) total += catData.pulls.length;
                 });
-            } catch (e) { }
+            } catch (e) { console.error(e); }
         }
     });
     return total;
@@ -105,10 +105,10 @@ export async function checkSync(currentUser, freshSnapshot = null) {
         try {
             if (accountStore.accounts) accounts = get(accountStore.accounts);
             if (accountStore.selectedId) selectedId = get(accountStore.selectedId);
-        } catch (e) { }
+        } catch (e) { console.error(e); }
 
         if (!accounts || !accounts.length) {
-            try { const raw = localStorage.getItem("ark_tracker_accounts"); if (raw) { const p = JSON.parse(raw); accounts = p.accounts; selectedId = p.selectedId; } } catch (e) { }
+            try { const raw = localStorage.getItem("ark_tracker_accounts"); if (raw) { const p = JSON.parse(raw); accounts = p.accounts; selectedId = p.selectedId; } } catch (e) { console.error(e); }
         }
         if (!accounts || !accounts.length) accounts = [{ id: 'main' }];
 
@@ -125,7 +125,7 @@ export async function checkSync(currentUser, freshSnapshot = null) {
                         Object.values(data).forEach(catData => {
                             if (catData?.pulls) localTotal += catData.pulls.length;
                         });
-                    } catch (e) { }
+                    } catch (e) { console.error(e); }
                 }
             }
         });
@@ -139,7 +139,7 @@ export async function checkSync(currentUser, freshSnapshot = null) {
             const cloudLastUpdated = cloudData.lastUpdated?.toMillis() || 0;
             const cloudTotal = cloudData.stats?.totalPulls || 0;
             let cloudFullBackup = null;
-            try { cloudFullBackup = JSON.parse(cloudData.jsonData); } catch (e) { }
+            try { cloudFullBackup = JSON.parse(cloudData.jsonData); } catch (e) { console.error(e); }
 
             console.log(`[Firebase] Check: Local(${localTotal}) vs Cloud(${cloudTotal}).`);
 
@@ -203,7 +203,7 @@ export function applyCloudData() {
             try {
                 if (accountStore.accounts) accountStore.accounts.set(meta.accounts);
                 if (accountStore.selectAccount && meta.selectedId) accountStore.selectAccount(meta.selectedId);
-            } catch (err) { }
+            } catch (err) { console.error(err); }
         }
         if (data) {
             Object.entries(data).forEach(([accId, accData]) => {
@@ -235,11 +235,11 @@ export function applyCloudData() {
         }
         if (potentials) {
             localStorage.setItem("operatorPotentialsByAccount", JSON.stringify(potentials));
-            try { manualPotentials.set(potentials); } catch (err) { }
+            try { manualPotentials.set(potentials); } catch (err) { console.error(err); }
         }
         if (essences) {
             localStorage.setItem("weaponEssencesByAccount", JSON.stringify(essences));
-            try { weaponEssences.set(essences); } catch (err) { }
+            try { weaponEssences.set(essences); } catch (err) { console.error(err); }
         }
         localStorage.setItem("ark_last_sync", buffer.timestamp.toString());
         syncStatus.set("synced");
@@ -261,7 +261,7 @@ export async function uploadLocalData(freshSnapshot = null) {
         try {
             if (accountStore.accounts) accounts = get(accountStore.accounts);
             if (accountStore.selectedId) selectedId = get(accountStore.selectedId);
-        } catch (e) { }
+        } catch (e) { console.error(e); }
 
         if (!accounts || !accounts.length) {
             const raw = localStorage.getItem("ark_tracker_accounts");

@@ -209,7 +209,7 @@
                         </h3>
                     </div>
 
-                    <div class="grid grid-cols-[repeat(auto-fill,minmax(100px,1fr))] md:grid-cols-[repeat(auto-fill,100px)] gap-5 justify-start">
+                    <div class="grid grid-cols-[repeat(auto-fill,minmax(110px,1fr))] md:grid-cols-[repeat(auto-fill,110px)] gap-3 justify-start">
                         {#each group.items as enemy (enemy.id)}
                             <div class="flex justify-center transition-transform">
                                 <WeaponCard weapon={enemy} isEnemy={true} hideDarkness={true} hidePot={false}/>
@@ -219,7 +219,7 @@
                 </div>
             {/each}
         {:else}
-            <div class="grid grid-cols-[repeat(auto-fill,minmax(100px,1fr))] md:grid-cols-[repeat(auto-fill,100px)] gap-5 justify-start animate-fadeIn">
+            <div class="grid grid-cols-[repeat(auto-fill,minmax(110px,1fr))] md:grid-cols-[repeat(auto-fill,110px)] gap-3 justify-start animate-fadeIn">
                 {#each displayedFlat as enemy (enemy.id)}
                     <div class="flex justify-center transition-transform">
                         <WeaponCard weapon={enemy} isEnemy={true} hideDarkness={true} hidePot={false} isNew={enemy.isNew} />

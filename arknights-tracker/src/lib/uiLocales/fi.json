@@ -261,6 +261,8 @@
     "tracker_backup_warning": "Ennen kuin tuot tietoja seurantasivustoilta, on erittäin suositeltavaa varmuuskopioida nykyiset tietosi (Mene asetuksiin ja napsauta <strong>&ldquo;Vie tiedot&rdquo;</strong> <strong>&ldquo;Varmuuskopiointi&rdquo;</strong> -osiossa)."
   },
   "emptyState": {
+    "nothingSelected": "Mitään ei ole valittu",
+    "clickEquipmentHint": "Napsauta vasemmalla olevaa varustetta nähdäksesi sen tiedot.",
     "noData": "Ei merkintöjä"
   },
   "buttons": {
@@ -525,6 +527,7 @@
     "preferredSkillMode": "Ensisijainen näyttötila taistelutaidoille",
     "preferredSkillModeList": "Luettelo",
     "preferredSkillModeTable": "Taulukko",
+    "splitEquipmentView": "Näytä varusteen tiedot jaetulla näytöllä",
     "account": {
       "title": "Valitse tili",
       "add": "Lisää",

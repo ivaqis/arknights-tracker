@@ -280,6 +280,8 @@
     "tracker_backup_warning": "트래커 사이트에서 데이터를 가져오기 전에 현재 데이터를 백업하는 것이 좋습니다 (설정으로 이동하여 <strong>&ldquo;백업&rdquo;</strong> 섹션의 <strong>&ldquo;데이터 내보내기&rdquo;</strong>를 클릭하세요)."
   },
   "emptyState": {
+    "nothingSelected": "선택된 항목 없음",
+    "clickEquipmentHint": "왼쪽의 장비를 클릭하여 세부 정보를 표시합니다.",
     "noData": "데이터 없음"
   },
   "buttons": {
@@ -894,6 +896,7 @@
     "toggleCtrlForZoom": "Ctrl을 누른 상태로 확대/축소",
     "preferredSkillModeList": "목록",
     "preferredSkillModeTable": "표",
+    "splitEquipmentView": "분할 화면에 장비 세부 정보 표시",
     "account": {
       "title": "계정 선택",
       "add": "추가",
