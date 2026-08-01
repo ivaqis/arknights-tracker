@@ -4,7 +4,6 @@ import { GlobalItemStatsRecord } from "@database/records/GlobalItemStatsRecord";
 import { GlobalPityDistributionRecord } from "@database/records/GlobalPityDistributionRecord";
 
 export interface GlobalBannerData {
-    stats: GlobalBannerStatsRecord,
     timeline: GlobalBannerTimelineRecord[],
     pityDistribution: GlobalPityDistributionRecord[],
     itemStats: GlobalItemStatsRecord[]

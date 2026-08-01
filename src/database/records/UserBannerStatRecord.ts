@@ -4,6 +4,7 @@ import { NumberRecordField } from "@database/records/recordFields/NumberRecordFi
 export class UserBannerStatRecord {
     private readonly _profileId: bigint;
     private readonly _bannerId: string;
+    private readonly _bannerType: string;
     private readonly _updatedAt: Date;
 
     private readonly _unfreePulls: NumberRecordField;
@@ -19,6 +20,7 @@ export class UserBannerStatRecord {
     public constructor(entity: UserBannerStatEntity) {
         this._profileId = entity.profileId;
         this._bannerId = entity.bannerId;
+        this._bannerType = entity.bannerType;
         this._updatedAt = entity.updatedAt;
 
         this._unfreePulls = new NumberRecordField(entity.unfreePulls);

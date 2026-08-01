@@ -140,7 +140,7 @@ model UserBannerProfile {
     userGameProfile UserGameProfile? @relation(fields: [gameUid], references: [gameUid], onDelete: SetNull)
 
     userBannerStats         UserBannerStat[]
-    userBannerTypeStats     UserBannerTypeStat[]
+    // userBannerTypeStats     UserBannerTypeStat[]
     userCharBannerTypePulls UserCharBannerTypePulls[]
     userCharBannerPulls     UserCharBannerPulls[]
     userWeaponBannerPulls   UserWeaponBannerPulls[]
@@ -171,28 +171,6 @@ model BannerPullsId {
 model UserBannerStat {
     profileId   BigInt
     bannerId    String
-    unfreePulls Int      @default(0)
-    total6      Int      @default(0)
-    total5      Int      @default(0)
-    won5050     Int      @default(0)
-    total5050   Int      @default(0)
-    freePulls   Int      @default(0)
-    free6       Int      @default(0)
-    free5       Int      @default(0)
-    freeWin5050 Int      @default(0)
-    updatedAt   DateTime @updatedAt
-
-    bannerProfile UserBannerProfile @relation(fields: [profileId], references: [profileId])
-
-    userCharBannerPulls   UserCharBannerPulls?
-    userWeaponBannerPulls UserWeaponBannerPulls?
-
-    @@id([profileId, bannerId])
-    @@index([bannerId])
-}
-
-model UserBannerTypeStat {
-    profileId   BigInt
     bannerType  String
     unfreePulls Int      @default(0)
     total6      Int      @default(0)
@@ -205,12 +183,36 @@ model UserBannerTypeStat {
     freeWin5050 Int      @default(0)
     updatedAt   DateTime @updatedAt
 
-    bannerProfile           UserBannerProfile        @relation(fields: [profileId], references: [profileId])
-    userCharBannerTypePulls UserCharBannerTypePulls?
+    bannerProfile         UserBannerProfile        @relation(fields: [profileId], references: [profileId])
+    charBannerTypePulls   UserCharBannerTypePulls? @relation(fields: [profileId, bannerType], references: [profileId, bannerType])
+    userCharBannerPulls   UserCharBannerPulls?
+    userWeaponBannerPulls UserWeaponBannerPulls?
 
-    @@id([profileId, bannerType])
-    @@index([bannerType])
+    @@id([profileId, bannerId])
+    @@index([bannerId])
+    @@index([bannerType, profileId])
 }
+
+// model UserBannerTypeStat {
+//     profileId   BigInt
+//     bannerType  String
+//     unfreePulls Int      @default(0)
+//     total6      Int      @default(0)
+//     total5      Int      @default(0)
+//     won5050     Int      @default(0)
+//     total5050   Int      @default(0)
+//     freePulls   Int      @default(0)
+//     free6       Int      @default(0)
+//     free5       Int      @default(0)
+//     freeWin5050 Int      @default(0)
+//     updatedAt   DateTime @updatedAt
+//
+//     bannerProfile           UserBannerProfile        @relation(fields: [profileId], references: [profileId])
+//     userCharBannerTypePulls UserCharBannerTypePulls?
+//
+//     @@id([profileId, bannerType])
+//     @@index([bannerType])
+// }
 
 model UserCharBannerTypePulls {
     profileId       BigInt
@@ -221,8 +223,10 @@ model UserCharBannerTypePulls {
     lastPullTimeTs  BigInt   @default(0)
     updatedAt       DateTime @updatedAt
 
-    bannerProfile  UserBannerProfile  @relation(fields: [profileId], references: [profileId])
-    bannerTypeStat UserBannerTypeStat @relation(fields: [profileId, bannerType], references: [profileId, bannerType])
+    bannerProfile UserBannerProfile @relation(fields: [profileId], references: [profileId])
+    // bannerTypeStat UserBannerTypeStat @relation(fields: [profileId, bannerType], references: [profileId, bannerType])
+
+    userBannerStats UserBannerStat[]
 
     @@id([profileId, bannerType])
 }
@@ -254,20 +258,20 @@ model UserWeaponBannerPulls {
     @@id([profileId, bannerId])
 }
 
-model GlobalBannerStats {
-    bannerId    String   @id
-    totalUsers  Int      @default(0)
-    unfreePulls BigInt   @default(0)
-    total6      Int      @default(0)
-    total5      Int      @default(0)
-    won5050     Int      @default(0)
-    total5050   Int      @default(0)
-    freePulls   Int      @default(0)
-    free6       Int      @default(0)
-    free5       Int      @default(0)
-    freeWin5050 Int      @default(0)
-    updatedAt   DateTime @updatedAt
-}
+// model GlobalBannerStats {
+//     bannerId    String   @id
+//     totalUsers  Int      @default(0)
+//     unfreePulls BigInt   @default(0)
+//     total6      Int      @default(0)
+//     total5      Int      @default(0)
+//     won5050     Int      @default(0)
+//     total5050   Int      @default(0)
+//     freePulls   Int      @default(0)
+//     free6       Int      @default(0)
+//     free5       Int      @default(0)
+//     freeWin5050 Int      @default(0)
+//     updatedAt   DateTime @updatedAt
+// }
 
 model GlobalBannerTimeline {
     bannerId        String

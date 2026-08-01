@@ -24,8 +24,6 @@ export class UserPullsUpdater {
     private readonly _charBannerMap: Map<string, UserCharBannerData> = new Map();
     private readonly _charBannerTypeMap: Map<string, UserCharBannerTypeData> = new Map();
     private readonly _weaponBannerMap: Map<string, UserWeaponBannerData> = new Map();
-    private readonly _weaponBannerTypeMap: Map<string, UserWeaponBannerTypeData> = new Map();
-    private readonly _globalBannerMap: Map<string, GlobalBannerStatsRecord> = new Map();
     private readonly _timelineMap: Map<TimelineIndex, GlobalBannerTimelineRecord> = new Map();
     private readonly _pityDistributionMap: Map<PityDistributionIndex, GlobalPityDistributionRecord> = new Map();
     private readonly _itemStatMap: Map<ItemStatIndex, GlobalItemStatsRecord> = new Map();
@@ -76,8 +74,7 @@ export class UserPullsUpdater {
             return;
         }
 
-        const bannerData = await this.getCharBannerData(bannerId);
-        // const globalStats = await this.getGlobalBannerStats(bannerId);
+        const bannerData = await this.getCharBannerData(bannerId, bannerType);
         const timeline = await this.getTimelineRecord(bannerId, TimelineDate.createFromTs(ts));
 
         if (!pull.charId) {
@@ -94,7 +91,6 @@ export class UserPullsUpdater {
 
         if (pull.isFree) {
             bannerData.stat.freePulls.value++;
-            bannerTypeData.stat.freePulls.value++;
             timeline.freePullsCount.value++;
 
             if (pull.rarity === 5 || pull.rarity === 6) {
@@ -106,24 +102,14 @@ export class UserPullsUpdater {
                 bannerData.stat.free5.value++;
                 bannerData.stat.total5.value++;
 
-                bannerTypeData.stat.free5.value++;
-                bannerTypeData.stat.total5.value++;
-
             } else if (pull.rarity === 6) {
                 bannerData.stat.free6.value++;
                 bannerData.stat.total6.value++;
                 bannerData.stat.total5050.value++;
 
-                bannerTypeData.stat.free6.value++;
-                bannerTypeData.stat.total6.value++;
-                bannerTypeData.stat.total5050.value++;
-
                 if (UserPullsUpdater.isFeatured(bannerId, pull.charId)) {
                     bannerData.stat.freeWin5050.value++;
                     bannerData.stat.won5050.value++;
-
-                    bannerTypeData.stat.freeWin5050.value++;
-                    bannerTypeData.stat.won5050.value++;
                 }
             }
 
@@ -131,29 +117,25 @@ export class UserPullsUpdater {
         }
 
         bannerData.stat.unfreePulls.value++;
-        bannerTypeData.stat.unfreePulls.value++;
+        bannerTypeData.stat.unfreePulls++;
 
         if (pull.rarity === 5) {
             bannerData.stat.total5.value++;
 
-            bannerTypeData.stat.total5.value++;
-
-            const pity = bannerTypeData.stat.unfreePulls.value - bannerTypeData.pulls.last5Pull.value;
+            const pity = bannerTypeData.stat.unfreePulls - bannerTypeData.pulls.last5Pull.value;
             const pityRecord = await this.getPityDistributionRecord(bannerId, pity, 5);
             pityRecord.count.value++;
 
-            bannerTypeData.pulls.last5Pull.value = bannerTypeData.stat.unfreePulls.value;
+            bannerTypeData.pulls.last5Pull.value = bannerTypeData.stat.unfreePulls;
 
         } else if (pull.rarity === 6) {
             bannerData.stat.total6.value++;
 
-            bannerTypeData.stat.total6.value++;
-
-            const pity = bannerTypeData.stat.unfreePulls.value - bannerTypeData.pulls.last6Pull.value;
+            const pity = bannerTypeData.stat.unfreePulls - bannerTypeData.pulls.last6Pull.value;
             const pityRecord = await this.getPityDistributionRecord(bannerId, pity, 6);
             pityRecord.count.value++;
 
-            bannerTypeData.pulls.last6Pull.value = bannerTypeData.stat.unfreePulls.value;
+            bannerTypeData.pulls.last6Pull.value = bannerTypeData.stat.unfreePulls;
 
             const isFeatured = UserPullsUpdater.isFeatured(bannerId, pull.charId);
             const isGuaranteed = isFeatured
@@ -168,15 +150,10 @@ export class UserPullsUpdater {
                     bannerData.stat.total5050.value++;
                     bannerData.stat.won5050.value++;
 
-                    bannerTypeData.stat.total5050.value++;
-                    bannerTypeData.stat.won5050.value++;
-
-                    bannerTypeData.pulls.lastWin5050Pull.value = bannerTypeData.stat.unfreePulls.value;
+                    bannerTypeData.pulls.lastWin5050Pull.value = bannerTypeData.stat.unfreePulls;
                 }
             } else {
                 bannerData.stat.total5050.value++;
-
-                bannerTypeData.stat.total5050.value++;
             }
         }
     }
@@ -191,12 +168,6 @@ export class UserPullsUpdater {
         const bannerId = pull.bannerId;
         const ts = pull.gachaTsNumber;
 
-        const bannerData = await this.getWeaponBannerData(bannerId);
-
-        if (ts <= bannerData.pulls.lastPullTimeTs.initValue) {
-            return;
-        }
-
         const banner = Banner.get(bannerId);
 
         if (!banner) {
@@ -205,7 +176,12 @@ export class UserPullsUpdater {
 
         const bannerType = banner.dbType as DbBannerType.WEAPON;
 
-        const bannerTypeData = await this.getWeaponBannerTypeData(bannerType);
+        const bannerData = await this.getWeaponBannerData(bannerId, bannerType);
+
+        if (ts <= bannerData.pulls.lastPullTimeTs.initValue) {
+            return;
+        }
+
         const timeline = await this.getTimelineRecord(bannerId, TimelineDate.createFromTs(ts));
         const item = await this.getItemStatRecord(bannerId, pull.weaponId, pull.rarity);
 
@@ -216,12 +192,9 @@ export class UserPullsUpdater {
         item.count.value++;
 
         bannerData.stat.unfreePulls.value++;
-        bannerTypeData.stat.unfreePulls.value++;
 
         if (pull.rarity === 5) {
             bannerData.stat.total5.value++;
-
-            bannerTypeData.stat.total5.value++;
 
             const pity = bannerData.stat.unfreePulls.value - bannerData.pulls.last5Pull.value;
             const pityRecord = await this.getPityDistributionRecord(bannerId, pity, 5);
@@ -231,8 +204,6 @@ export class UserPullsUpdater {
 
         } else if (pull.rarity === 6) {
             bannerData.stat.total6.value++;
-
-            bannerTypeData.stat.total6.value++;
 
             const pity = bannerData.stat.unfreePulls.value - bannerData.pulls.last6Pull.value;
             const pityRecord = await this.getPityDistributionRecord(bannerId, pity, 6);
@@ -252,23 +223,18 @@ export class UserPullsUpdater {
                 if (!isGuaranteed) {
                     bannerData.stat.total5050.value++;
                     bannerData.stat.won5050.value++;
-
-                    bannerTypeData.stat.total5050.value++;
-                    bannerTypeData.stat.won5050.value++;
                 }
             } else {
                 bannerData.stat.total5050.value++;
-
-                bannerTypeData.stat.total5050.value++;
             }
         }
     }
 
-    private async getCharBannerData(bannerId: string): Promise<UserCharBannerData> {
+    private async getCharBannerData(bannerId: string, bannerType: DbBannerType.CHAR): Promise<UserCharBannerData> {
         let result = this._charBannerMap.get(bannerId);
 
         if (!result) {
-            result = await this._database.userBannerStats.getCharBannerData(this._profileId, bannerId);
+            result = await this._database.userBannerStats.getCharBannerData(this._profileId, bannerId, bannerType);
 
             this._charBannerMap.set(bannerId, result);
         }
@@ -288,37 +254,13 @@ export class UserPullsUpdater {
         return result;
     }
 
-    private async getWeaponBannerData(bannerId: string): Promise<UserWeaponBannerData> {
+    private async getWeaponBannerData(bannerId: string, bannerType: DbBannerType.WEAPON): Promise<UserWeaponBannerData> {
         let result = this._weaponBannerMap.get(bannerId);
 
         if (!result) {
-            result = await this._database.userBannerStats.getWeaponBannerData(this._profileId, bannerId);
+            result = await this._database.userBannerStats.getWeaponBannerData(this._profileId, bannerId, bannerType);
 
             this._weaponBannerMap.set(bannerId, result);
-        }
-
-        return result;
-    }
-
-    private async getWeaponBannerTypeData(bannerType: DbBannerType.WEAPON): Promise<UserWeaponBannerTypeData> {
-        let result = this._weaponBannerTypeMap.get(bannerType);
-
-        if (!result) {
-            result = await this._database.userBannerStats.getWeaponBannerTypeData(this._profileId, bannerType);
-
-            this._weaponBannerTypeMap.set(bannerType, result);
-        }
-
-        return result;
-    }
-
-    private async getGlobalBannerStats(bannerId: string): Promise<GlobalBannerStatsRecord> {
-        let result = this._globalBannerMap.get(bannerId);
-
-        if (!result) {
-            result = await this._database.globalBannerStats.getBannerStats(bannerId);
-
-            this._globalBannerMap.set(bannerId, result);
         }
 
         return result;
@@ -381,7 +323,6 @@ export class UserPullsUpdater {
         await this.writeCharBannerData();
         await this.writeCharBannerTypeData();
         await this.writeWeaponBannerData();
-        await this.writeWeaponBannerTypeData();
         await this.writeTimelineData();
         await this.writePityDistributionData();
         await this.writeItemStatData();
@@ -402,12 +343,6 @@ export class UserPullsUpdater {
     private async writeWeaponBannerData() {
         for (const data of this._weaponBannerMap.values()) {
             await this._database.userBannerStats.updateWeaponBannerData(data);
-        }
-    }
-
-    private async writeWeaponBannerTypeData() {
-        for (const data of this._weaponBannerTypeMap.values()) {
-            await this._database.userBannerStats.updateWeaponBannerTypeData(data);
         }
     }
 
