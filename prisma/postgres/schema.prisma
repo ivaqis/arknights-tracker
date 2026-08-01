@@ -140,7 +140,6 @@ model UserBannerProfile {
     userGameProfile UserGameProfile? @relation(fields: [gameUid], references: [gameUid], onDelete: SetNull)
 
     userBannerStats         UserBannerStat[]
-    // userBannerTypeStats     UserBannerTypeStat[]
     userCharBannerTypePulls UserCharBannerTypePulls[]
     userCharBannerPulls     UserCharBannerPulls[]
     userWeaponBannerPulls   UserWeaponBannerPulls[]
@@ -183,8 +182,7 @@ model UserBannerStat {
     freeWin5050 Int      @default(0)
     updatedAt   DateTime @updatedAt
 
-    bannerProfile         UserBannerProfile        @relation(fields: [profileId], references: [profileId])
-    charBannerTypePulls   UserCharBannerTypePulls? @relation(fields: [profileId, bannerType], references: [profileId, bannerType])
+    bannerProfile         UserBannerProfile      @relation(fields: [profileId], references: [profileId])
     userCharBannerPulls   UserCharBannerPulls?
     userWeaponBannerPulls UserWeaponBannerPulls?
 
@@ -224,9 +222,6 @@ model UserCharBannerTypePulls {
     updatedAt       DateTime @updatedAt
 
     bannerProfile UserBannerProfile @relation(fields: [profileId], references: [profileId])
-    // bannerTypeStat UserBannerTypeStat @relation(fields: [profileId, bannerType], references: [profileId, bannerType])
-
-    userBannerStats UserBannerStat[]
 
     @@id([profileId, bannerType])
 }
