@@ -6,10 +6,10 @@ import { RequireService } from "@api/middleware/RequireService";
 import { RequestValidator } from "@api/middleware/validators/RequestValidator";
 import { UserExistRequestValidator } from "@api/middleware/validators/userExist/UserExistRequestValidator";
 import { UserListRequestValidator } from "@api/middleware/validators/userList/UserListRequestValidator";
-import { gameAccountRouter } from "@api/routes/api/user/gameAccount/router";
-import { profileRouter } from "@api/routes/api/user/profile/router";
-import { syncRouter } from "@api/routes/api/user/sync/router";
-import { avatarRouter } from "@api/routes/api/user/avatar/router";
+import { gameAccountRouter } from "@api/routes/api/v2/user/gameAccount/router";
+import { profileRouter } from "@api/routes/api/v2/user/profile/router";
+import { syncRouter } from "@api/routes/api/v2/user/sync/router";
+import { avatarRouter } from "@api/routes/api/v2/user/avatar/router";
 import { Router } from "express";
 
 export const userRouter = Router();
