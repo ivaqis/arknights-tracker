@@ -82,8 +82,7 @@ export class BannerDataFetcher {
     private async testToken(): Promise<boolean> {
         const fetcher = new PullsFetcher(
             BannerDataFetcher.CHAR_API_URL,
-            this.getCharRequestParams(BannerType.CHAR_SPECIAL),
-            0n
+            this.getCharRequestParams(BannerType.CHAR_SPECIAL)
         );
 
         return await fetcher.test();
@@ -93,7 +92,7 @@ export class BannerDataFetcher {
         const bannerData = await BannerDataFetcher.getBannerData<CharPullData, CharBannerRequestParams>(
             BannerDataFetcher.CHAR_API_URL,
             this.getCharRequestParams(bannerType),
-            BigInt(this._lastPullTs),
+            this._lastPullTs,
             (count) => this._callbackFn?.(bannerType, count)
         );
 
@@ -109,7 +108,7 @@ export class BannerDataFetcher {
         const bannerData = await BannerDataFetcher.getBannerData<WeaponPullData, WeaponBannerRequestParams>(
             BannerDataFetcher.WEAPON_API_URL,
             this.getWeaponRequestParams(),
-            BigInt(this._lastPullTs),
+            this._lastPullTs,
             (count) => this._callbackFn?.(BannerType.WEAPON, count)
         );
 
@@ -121,9 +120,14 @@ export class BannerDataFetcher {
         return bannerData.list.filter(p => p.weaponId);
     }
 
-    private static getBannerData<T extends PullData, U extends BannerRequestParams>(url: string, urlParams: U, lastPullTimeMs: bigint, callbackFn?: (count: number) => void) {
-        const fetcher = new PullsFetcher<T, U>(url, urlParams, lastPullTimeMs, callbackFn);
+    private static async getBannerData<T extends PullData, U extends BannerRequestParams>(url: string, urlParams: U, lastPullTimeMs: number, callbackFn?: (count: number) => void) {
+        const fetcher = new PullsFetcher<T, U>(url, urlParams, callbackFn);
 
-        return fetcher.getPullsList();
+        await fetcher.fetch(lastPullTimeMs);
+
+        return {
+            list: fetcher.pullsList,
+            error: fetcher.error
+        };
     }
 }

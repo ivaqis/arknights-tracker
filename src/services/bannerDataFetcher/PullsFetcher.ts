@@ -10,24 +10,36 @@ import axios, { AxiosRequestConfig, AxiosResponse } from "axios";
 export class PullsFetcher<T extends PullData, U extends BannerRequestParams> {
     public static readonly INVALID_TOKEN_CODE = 40100;
     public static readonly PAGE_COUNT_LIMIT = 2000;
-    public static readonly LAST_PULL_TIME_CUTOFF = 7200000n; // 2 hours
+    public static readonly LAST_PULL_TIME_CUTOFF = 7200000; // 2 hours
+
+    private readonly _pullsList: T[] = [];
 
     private readonly _url: string;
     private readonly _urlParams: U;
-    private readonly _lastPullTimeMs: bigint;
     private readonly _callbackFn?: (count: number) => void;
+    private _lastProcessedPullTs: number = 0;
+    private _hasMore: boolean = true;
+    private _pageCount: number = 0;
 
-    constructor(url: string, urlParams: U, lastPullTimeMs: bigint = 0n, callbackFn?: (count: number) => void) {
+    constructor(url: string, urlParams: U, callbackFn?: (count: number) => void) {
         this._url = url;
         this._urlParams = urlParams;
-
-        this._lastPullTimeMs = lastPullTimeMs;
 
         this._callbackFn = callbackFn;
     }
 
-    private get safeLastPullTimeMs() {
-        return Math.max(0, Number(this._lastPullTimeMs - PullsFetcher.LAST_PULL_TIME_CUTOFF));
+    private static getSafeLastPullTimeMs(lastPullTimeMs: number): number {
+        return Math.max(lastPullTimeMs - this.LAST_PULL_TIME_CUTOFF, 0);
+    }
+
+    private _error: string | null = null;
+
+    public get error(): string | null {
+        return this._error;
+    }
+
+    public get pullsList(): T[] {
+        return this._pullsList;
     }
 
     private static getDefaultRequestConfig(): AxiosRequestConfig {
@@ -69,15 +81,29 @@ export class PullsFetcher<T extends PullData, U extends BannerRequestParams> {
         return false;
     }
 
-    public async getPullsList(): Promise<{ list: T[]; error: null | string }> {
-        const list: T[] = [];
-        let errorMsg: string | null = null;
+    public async fetch(lastPullTimeMs: number = 0): Promise<void> {
+        if (PullsFetcher.getSafeLastPullTimeMs(lastPullTimeMs) > this._lastProcessedPullTs) {
+            return;
+        }
 
-        let hasMore = true;
-        let pageCount = 0;
+        for await (const page of this.getPageStream()) {
+            this._pullsList.push(...page);
 
-        while (hasMore && pageCount < PullsFetcher.PAGE_COUNT_LIMIT) {
-            pageCount++;
+            this._callbackFn?.(this._pullsList.length);
+
+            logger.debug(this._hasMore);
+
+            if (PullsFetcher.getSafeLastPullTimeMs(lastPullTimeMs) > this._lastProcessedPullTs) {
+                return;
+            }
+
+            await sleep(50);
+        }
+    }
+
+    private async* getPageStream(): AsyncGenerator<T[], void, unknown> {
+        while (this._hasMore && this._pageCount < PullsFetcher.PAGE_COUNT_LIMIT) {
+            this._pageCount++;
 
             let url = this.getFullUrl();
             let resp: BannerResponse<T>;
@@ -85,11 +111,12 @@ export class PullsFetcher<T extends PullData, U extends BannerRequestParams> {
             try {
                 resp = await this.getResponseData(url);
             } catch (e) {
-                hasMore = false;
+                this._hasMore = false;
                 logger.error(`Error while fetching pulls: ${e}`);
 
                 if (e instanceof Error) {
-                    errorMsg = e.message;
+                    logger.error(e.stack);
+                    this._error = e.message;
                 }
 
                 break;
@@ -98,51 +125,23 @@ export class PullsFetcher<T extends PullData, U extends BannerRequestParams> {
             let resolvedData = this.resolveResponseData(resp);
 
             if (resolvedData.errorMsg) {
-                hasMore = false;
-                errorMsg = resolvedData.errorMsg;
+                this._hasMore = false;
+                this._error = resolvedData.errorMsg;
                 break;
             }
 
-            hasMore = resolvedData.hasMore;
+            this._hasMore = resolvedData.hasMore;
 
-            let isEnded = this.addPullsToList(list, resolvedData.list);
-            let temp = list.at(-1);
+            let temp = resolvedData.list.at(-1);
             if (temp) {
                 this._urlParams.seqId = temp.seqId;
+                this._lastProcessedPullTs = Number(temp.gachaTs);
+            } else {
+                this._hasMore = false;
             }
 
-            this._callbackFn?.(list.length);
-
-            if (isEnded) {
-                hasMore = false;
-                logger.info("[Optimization] Reached known history");
-                break;
-            }
-
-            await sleep(50);
+            yield resolvedData.list;
         }
-
-        return {
-            list: list,
-            error: errorMsg
-        };
-    }
-
-    private addPullsToList(list: T[], newPulls: T[]): boolean {
-        if (newPulls.length === 0) {
-            return true;
-        }
-
-        for (let pull of newPulls) {
-
-            if (Number(pull.gachaTs) < this.safeLastPullTimeMs) {
-                return true;
-            }
-
-            list.push(pull);
-        }
-
-        return false;
     }
 
     private resolveResponseData(resp: BannerResponse<T>) {
