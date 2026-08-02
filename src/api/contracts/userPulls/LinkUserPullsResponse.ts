@@ -1,3 +1,4 @@
 export interface LinkUserPullsResponse {
-    profileId: string | null; // removed profile link
+    unlinkedProfileId: string | null; // removed profile link
+    unlinkedGameUid: string | null;
 }

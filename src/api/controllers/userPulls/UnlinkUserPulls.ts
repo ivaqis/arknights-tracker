@@ -66,7 +66,7 @@ export class UnlinkUserPulls extends Controller<
         }
 
         this.data = {
-            profileId: currentBannerProfile?.publicId ?? null
+            unlinkedProfileId: currentBannerProfile?.publicId ?? null
         };
     }
 }

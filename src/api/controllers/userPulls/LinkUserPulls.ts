@@ -90,7 +90,8 @@ export class LinkUserPulls extends Controller<
         await this._database.gameProfiles.upsert(gameProfile);
 
         this.data = {
-            profileId: currentBannerProfile?.publicId ?? null
+            unlinkedProfileId: currentBannerProfile?.publicId ?? null,
+            unlinkedGameUid: bannerGameProfile?.gameUid ?? null
         };
     }
 }

@@ -1,3 +1,3 @@
 export interface UnlinkUserPullsResponse {
-    profileId: string | null; // removed profile link
+    unlinkedProfileId: string | null; // removed profile link
 }
