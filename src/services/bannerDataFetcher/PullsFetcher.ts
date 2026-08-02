@@ -91,8 +91,6 @@ export class PullsFetcher<T extends PullData, U extends BannerRequestParams> {
 
             this._callbackFn?.(this._pullsList.length);
 
-            logger.debug(this._hasMore);
-
             if (PullsFetcher.getSafeLastPullTimeMs(lastPullTimeMs) > this._lastProcessedPullTs) {
                 return;
             }
