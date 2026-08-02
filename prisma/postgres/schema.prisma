@@ -36,20 +36,22 @@ model User {
 }
 
 model UserGameProfile {
-    gameUid  String @id
-    serverId String
-    uid      BigInt
-    level    Int
-    data     String // json
+    gameUid         String  @id
+    serverId        String
+    uid             BigInt
+    level           Int
+    data            String // json
+    bannerProfileId BigInt? @unique
 
-    user User @relation(fields: [uid], references: [uid], onDelete: Cascade)
+    user              User               @relation(fields: [uid], references: [uid], onDelete: Cascade)
+    userBannerProfile UserBannerProfile? @relation(fields: [bannerProfileId], references: [profileId])
 
-    userBannerProfile        UserBannerProfile?
     userContractLeaderboards UserContractLeaderboard[]
     userMonumentLeaderboards UserMonumentLeaderboard[]
     userMonumentGroups       UserMonumentGroup[]
 
     @@index([uid, serverId])
+    @@index([bannerProfileId])
 }
 
 model UserContractLeaderboard {
@@ -133,11 +135,10 @@ model UserMonumentCharacter {
 model UserBannerProfile {
     profileId BigInt   @id @default(autoincrement())
     publicId  String   @unique @default(uuid())
-    gameUid   String?  @unique
     createdAt DateTime @default(now())
     updatedAt DateTime @updatedAt
 
-    userGameProfile UserGameProfile? @relation(fields: [gameUid], references: [gameUid], onDelete: SetNull)
+    userGameProfile UserGameProfile?
 
     userBannerStats         UserBannerStat[]
     userCharBannerTypePulls UserCharBannerTypePulls[]
@@ -146,7 +147,6 @@ model UserBannerProfile {
     bannerTokenIds          BannerTokenId[]
     bannerPullsIds          BannerPullsId[]
 
-    @@index([gameUid])
     @@index([publicId])
 }
 

@@ -1,4 +1,6 @@
 import { UserGameProfileEntity } from "@database/entities/UserGameProfileEntity";
+import { NullableBigIntRecordField } from "@database/records/recordFields/NullableBigIntRecordField";
+import { NullableStringRecordField } from "@database/records/recordFields/NullableStringRecordField";
 import { NumberRecordField } from "@database/records/recordFields/NumberRecordField";
 import { GameProfile } from "@models/gameProfile/GameProfile";
 
@@ -7,14 +9,16 @@ export class UserGameProfileRecord {
     private readonly _serverId: string;
     private readonly _uid: bigint;
     private readonly _level: NumberRecordField;
+    private readonly _bannerProfileId: NullableBigIntRecordField;
 
     private _data: GameProfile;
 
-    private constructor(gameUid: string, serverId: string, uid: bigint, level: NumberRecordField, data: GameProfile) {
+    private constructor(gameUid: string, serverId: string, uid: bigint, level: NumberRecordField, bannerProfileId: NullableBigIntRecordField, data: GameProfile) {
         this._gameUid = gameUid;
         this._serverId = serverId;
         this._uid = uid;
         this._level = level;
+        this._bannerProfileId = bannerProfileId;
         this._data = data;
     }
 
@@ -24,6 +28,7 @@ export class UserGameProfileRecord {
             serverId,
             uid,
             new NumberRecordField(data.base.level),
+            new NullableBigIntRecordField(null),
             data
         );
     }
@@ -34,6 +39,7 @@ export class UserGameProfileRecord {
             entity.serverId,
             entity.uid,
             new NumberRecordField(entity.level),
+            new NullableBigIntRecordField(entity.bannerProfileId),
             GameProfile.getFromEntity(JSON.parse(entity.data))
         );
     }
@@ -52,6 +58,10 @@ export class UserGameProfileRecord {
 
     public get level(): NumberRecordField {
         return this._level;
+    }
+
+    public get bannerProfileId(): NullableBigIntRecordField {
+        return this._bannerProfileId;
     }
 
     public get data(): GameProfile {

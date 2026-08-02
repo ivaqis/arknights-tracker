@@ -3,5 +3,6 @@ export interface UserGameProfileEntity {
     serverId: string,
     uid: bigint,
     level: number,
-    data: string
+    data: string,
+    bannerProfileId: bigint | null
 }

@@ -19,18 +19,6 @@ export class UserBannerProfilesTable extends Table<Prisma.UserBannerProfileDeleg
         return new UserBannerProfileRecord(entity);
     }
 
-    public async findByGameUid(gameUid: string): Promise<UserBannerProfileRecord | null> {
-        const entity = await this.table.findUnique({
-            where: { gameUid: gameUid },
-        });
-
-        if (!entity) {
-            return null;
-        }
-
-        return new UserBannerProfileRecord(entity);
-    }
-
     public async findByPublicId(publicId: string): Promise<UserBannerProfileRecord | null> {
         const entity = await this.table.findUnique({
             where: {
@@ -53,17 +41,6 @@ export class UserBannerProfilesTable extends Table<Prisma.UserBannerProfileDeleg
         });
 
         return new UserBannerProfileRecord(entity);
-    }
-
-    public async update(record: UserBannerProfileRecord) {
-        await this.table.update({
-            where: {
-                profileId: record.profileId
-            },
-            data: {
-                gameUid: record.gameUid.value
-            }
-        });
     }
 
     private async getEntity(profileId: bigint): Promise<UserBannerProfileEntity | null> {

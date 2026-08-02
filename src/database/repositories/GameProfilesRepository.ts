@@ -24,6 +24,10 @@ export class GameProfilesRepository extends Repository {
         return this._gameProfilesTable.findByUid(uid, serverId);
     }
 
+    public async findByBannerProfileId(profileId: bigint): Promise<UserGameProfileRecord | null> {
+        return this._gameProfilesTable.findByBannerProfileId(profileId);
+    }
+
     public async upsert(record: UserGameProfileRecord): Promise<void> {
         return this._gameProfilesTable.upsert(record);
     }

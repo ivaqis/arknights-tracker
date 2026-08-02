@@ -74,14 +74,6 @@ export class Database implements IService {
     }
 
     public async deleteUser(uid: bigint): Promise<void> {
-        const gameProfiles = await this.gameProfiles.findByUid(uid);
-
-        for (const gameProfile of gameProfiles) {
-            let gameUid = gameProfile.gameUid;
-
-            await this.userBannerProfiles.removeGameUidLink(gameUid);
-        }
-
         await this.users.deleteUser(uid);
     }
 

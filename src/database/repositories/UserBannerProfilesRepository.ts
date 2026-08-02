@@ -24,31 +24,8 @@ export class UserBannerProfilesRepository extends Repository {
         return this._userBannerProfilesTable.find(profileId);
     }
 
-    public async findUserBannerProfileByGameUid(gameUid: string): Promise<UserBannerProfileRecord | null> {
-        return this._userBannerProfilesTable.findByGameUid(gameUid);
-    }
-
     public async findUserBannerProfileByPublicId(publicId: string): Promise<UserBannerProfileRecord | null> {
         return this._userBannerProfilesTable.findByPublicId(publicId);
-    }
-
-    /**
-     * Returns true if gameUid was found and removed.
-     * Else if gameUid not found, returns false.
-     * @param gameUid
-     */
-    public async removeGameUidLink(gameUid: string): Promise<boolean> {
-        const record = await this.findUserBannerProfileByGameUid(gameUid);
-
-        if (!record) {
-            return false;
-        }
-
-        record.gameUid.value = null;
-
-        await this._userBannerProfilesTable.update(record);
-
-        return true;
     }
 
     public async createUserBannerProfile(): Promise<UserBannerProfileRecord> {

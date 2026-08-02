@@ -44,6 +44,20 @@ export class UserGameProfilesTable extends Table<Prisma.UserGameProfileDelegate>
         return entities.map(UserGameProfileRecord.createFromEntity);
     }
 
+    public async findByBannerProfileId(profileId: bigint): Promise<UserGameProfileRecord | null> {
+        const entity = await this.table.findUnique({
+            where: {
+                bannerProfileId: profileId
+            }
+        });
+
+        if (!entity) {
+            return null;
+        }
+
+        return UserGameProfileRecord.createFromEntity(entity);
+    }
+
     public async upsert(record: UserGameProfileRecord): Promise<void> {
         await this.table.upsert({
             where: {
@@ -54,11 +68,14 @@ export class UserGameProfilesTable extends Table<Prisma.UserGameProfileDelegate>
                 serverId: record.serverId,
                 uid: record.uid,
                 level: record.level.value,
-                data: JSON.stringify(record.data.getEntity())
+                data: JSON.stringify(record.data.getEntity()),
+                bannerProfileId: record.bannerProfileId.value
             },
             update: {
                 uid: record.uid,
-                data: record.getStringData()
+                level: record.level.value,
+                data: record.getStringData(),
+                bannerProfileId: record.bannerProfileId.value
             }
         });
     }
