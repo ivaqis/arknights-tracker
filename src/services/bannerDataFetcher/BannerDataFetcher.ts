@@ -1,14 +1,11 @@
-import { logger } from "@/logger";
 import { BannerType } from "@models/banners/BannerType";
 import { BannersPulls } from "@models/pulls/BannersPulls";
-import { BannerRequestParams } from "@models/urlParams/banners/BannerRequestParams";
 import { CharBannerRequestParams } from "@models/urlParams/banners/CharBannerRequestParams";
 import { WeaponBannerRequestParams } from "@models/urlParams/banners/WeaponBannerRequestParams";
 import { BannerURLParams } from "@services/bannerDataFetcher/contracts/BannerURLParams";
 import { CharBannerURLParams } from "@services/bannerDataFetcher/contracts/CharBannerURLParams";
 import { WeaponBannerURLParams } from "@services/bannerDataFetcher/contracts/WeaponBannerURLParams";
 import { CharPullData } from "@services/bannerDataFetcher/entities/CharPullData";
-import { PullData } from "@services/bannerDataFetcher/entities/PullData";
 import { WeaponPullData } from "@services/bannerDataFetcher/entities/WeaponPullData";
 import { PullsFetcher } from "@services/bannerDataFetcher/PullsFetcher";
 
@@ -19,37 +16,51 @@ export class BannerDataFetcher {
 
     private readonly _token: string;
     private readonly _serverId: string;
-    private readonly _lastPullTs: number;
     private readonly _callbackFn?: (type: BannerType, count: number) => void;
 
-    public constructor(token: string, serverId: string, lastPullTs: number, callbackFn?: (type: BannerType, count: number) => void) {
+    private readonly _standardFetcher: PullsFetcher<CharPullData, CharBannerRequestParams>;
+    private readonly _beginnerFetcher: PullsFetcher<CharPullData, CharBannerRequestParams>;
+    private readonly _specialFetcher: PullsFetcher<CharPullData, CharBannerRequestParams>;
+    private readonly _jointFetcher: PullsFetcher<CharPullData, CharBannerRequestParams>;
+    private readonly _weaponFetcher: PullsFetcher<WeaponPullData, WeaponBannerRequestParams>;
+
+    public constructor(token: string, serverId: string, callbackFn?: (type: BannerType, count: number) => void) {
         this._token = token;
         this._serverId = serverId;
-        this._lastPullTs = lastPullTs;
         this._callbackFn = callbackFn;
+
+        this._standardFetcher = new PullsFetcher(BannerDataFetcher.CHAR_API_URL, this.getCharRequestParams(BannerType.CHAR_STANDARD), this.getCallbackFn(BannerType.CHAR_STANDARD));
+        this._beginnerFetcher = new PullsFetcher(BannerDataFetcher.CHAR_API_URL, this.getCharRequestParams(BannerType.CHAR_BEGINNER), this.getCallbackFn(BannerType.CHAR_BEGINNER));
+        this._specialFetcher = new PullsFetcher(BannerDataFetcher.CHAR_API_URL, this.getCharRequestParams(BannerType.CHAR_SPECIAL), this.getCallbackFn(BannerType.CHAR_SPECIAL));
+        this._jointFetcher = new PullsFetcher(BannerDataFetcher.CHAR_API_URL, this.getCharRequestParams(BannerType.CHAR_JOINT), this.getCallbackFn(BannerType.CHAR_JOINT));
+        this._weaponFetcher = new PullsFetcher(BannerDataFetcher.WEAPON_API_URL, this.getWeaponRequestParams(), this.getCallbackFn(BannerType.WEAPON));
     }
 
-    public async getAllBannersData(): Promise<BannersPulls | null> {
+    private getCallbackFn(bannerType: BannerType): (count: number) => void | undefined {
+        return (count: number) => this._callbackFn?.(bannerType, count);
+    }
+
+    public async getAllBannersData(lastPullTimeMs: number = 0): Promise<BannersPulls | null> {
         const isTokenValid = await this.testToken();
 
         if (!isTokenValid) {
             return null;
         }
 
-        const [standardPulls, beginnerPulls, specialPulls, jointPulls, weaponPulls] = await Promise.all([
-            this.getCharPulls(BannerType.CHAR_STANDARD),
-            this.getCharPulls(BannerType.CHAR_BEGINNER),
-            this.getCharPulls(BannerType.CHAR_SPECIAL),
-            this.getCharPulls(BannerType.CHAR_JOINT),
-            this.getWeaponPulls()
+        await Promise.all([
+            this._standardFetcher.fetch(lastPullTimeMs),
+            this._beginnerFetcher.fetch(lastPullTimeMs),
+            this._specialFetcher.fetch(lastPullTimeMs),
+            this._jointFetcher.fetch(lastPullTimeMs),
+            this._weaponFetcher.fetch(lastPullTimeMs)
         ]);
 
         return BannersPulls.createFromData({
-            [BannerType.CHAR_STANDARD]: standardPulls,
-            [BannerType.CHAR_BEGINNER]: beginnerPulls,
-            [BannerType.CHAR_SPECIAL]: specialPulls,
-            [BannerType.CHAR_JOINT]: jointPulls,
-            [BannerType.WEAPON]: weaponPulls
+            [BannerType.CHAR_STANDARD]: this._standardFetcher.pullsList,
+            [BannerType.CHAR_BEGINNER]: this._beginnerFetcher.pullsList,
+            [BannerType.CHAR_SPECIAL]: this._specialFetcher.pullsList,
+            [BannerType.CHAR_JOINT]: this._jointFetcher.pullsList,
+            [BannerType.WEAPON]: this._weaponFetcher.pullsList
         });
     }
 
@@ -86,48 +97,5 @@ export class BannerDataFetcher {
         );
 
         return await fetcher.test();
-    }
-
-    private async getCharPulls(bannerType: BannerType): Promise<CharPullData[]> {
-        const bannerData = await BannerDataFetcher.getBannerData<CharPullData, CharBannerRequestParams>(
-            BannerDataFetcher.CHAR_API_URL,
-            this.getCharRequestParams(bannerType),
-            this._lastPullTs,
-            (count) => this._callbackFn?.(bannerType, count)
-        );
-
-        if (bannerData.error) {
-            logger.error(bannerData.error);
-            return [];
-        }
-
-        return bannerData.list.filter(p => p.charId);
-    }
-
-    private async getWeaponPulls(): Promise<WeaponPullData[]> {
-        const bannerData = await BannerDataFetcher.getBannerData<WeaponPullData, WeaponBannerRequestParams>(
-            BannerDataFetcher.WEAPON_API_URL,
-            this.getWeaponRequestParams(),
-            this._lastPullTs,
-            (count) => this._callbackFn?.(BannerType.WEAPON, count)
-        );
-
-        if (bannerData.error) {
-            logger.error(bannerData.error);
-            return [];
-        }
-
-        return bannerData.list.filter(p => p.weaponId);
-    }
-
-    private static async getBannerData<T extends PullData, U extends BannerRequestParams>(url: string, urlParams: U, lastPullTimeMs: number, callbackFn?: (count: number) => void) {
-        const fetcher = new PullsFetcher<T, U>(url, urlParams, callbackFn);
-
-        await fetcher.fetch(lastPullTimeMs);
-
-        return {
-            list: fetcher.pullsList,
-            error: fetcher.error
-        };
     }
 }

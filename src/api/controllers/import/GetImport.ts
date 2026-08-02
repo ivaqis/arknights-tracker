@@ -71,8 +71,8 @@ export class GetImport extends StreamController<
     }
 
     private async fetch(token: string, serverId: string, callbackFn: (type: BannerType, count: number) => void): Promise<BannersPulls | null> {
-        const fetcher = new BannerDataFetcher(token, serverId, this._lastPullTs, callbackFn);
+        const fetcher = new BannerDataFetcher(token, serverId, callbackFn);
 
-        return await fetcher.getAllBannersData();
+        return await fetcher.getAllBannersData(this._lastPullTs);
     }
 }
