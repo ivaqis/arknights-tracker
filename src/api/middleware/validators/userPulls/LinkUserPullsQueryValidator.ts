@@ -1,0 +1,37 @@
+import { LinkUserPullsQuery } from "@api/contracts/userPulls/LinkUserPullsQuery";
+import { StringValidationRule } from "@models/validation/StringValidationRule";
+import { UsernameValidationRule } from "@models/validation/UsernameValidationRule";
+import { ValidationRule } from "@models/validation/ValidationRule";
+import { Validator } from "@models/validation/Validator";
+
+export class LinkUserPullsQueryValidator extends Validator<LinkUserPullsQuery> {
+
+    public constructor(item: LinkUserPullsQuery) {
+        super(item, LinkUserPullsQueryValidator.getRules());
+    }
+
+    private static getRules(): ValidationRule<LinkUserPullsQuery>[] {
+        return [
+            this.getFirebaseTokenRule(),
+            this.getUidRule()
+        ];
+    }
+
+    private static getFirebaseTokenRule(): ValidationRule<LinkUserPullsQuery> {
+        const rule = new StringValidationRule(true);
+
+        return new ValidationRule(
+            item => rule.isValid(item.firebaseToken),
+            "firebaseToken must be a string"
+        );
+    }
+
+    private static getUidRule(): ValidationRule<LinkUserPullsQuery> {
+        const rule = new UsernameValidationRule(true);
+
+        return new ValidationRule(
+            item => rule.isValid(item.uid),
+            "uid must be a string matches \\w"
+        );
+    }
+}

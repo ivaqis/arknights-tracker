@@ -8,6 +8,7 @@ import { UserExistRequestValidator } from "@api/middleware/validators/userExist/
 import { UserListRequestValidator } from "@api/middleware/validators/userList/UserListRequestValidator";
 import { gameAccountRouter } from "@api/routes/api/v2/user/gameAccount/router";
 import { profileRouter } from "@api/routes/api/v2/user/profile/router";
+import { userPullsRouter } from "@api/routes/api/v2/user/pulls/router";
 import { syncRouter } from "@api/routes/api/v2/user/sync/router";
 import { avatarRouter } from "@api/routes/api/v2/user/avatar/router";
 import { Router } from "express";
@@ -20,6 +21,7 @@ userRouter.use("/game-account", gameAccountRouter);
 userRouter.use("/profile", profileRouter);
 userRouter.use("/sync", syncRouter);
 userRouter.use("/avatar", avatarRouter);
+userRouter.use("/pulls", userPullsRouter);
 
 userRouter.get("/exist",
     RequestValidator.with(UserExistRequestValidator),
