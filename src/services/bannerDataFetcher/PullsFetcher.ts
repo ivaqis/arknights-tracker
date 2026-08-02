@@ -59,7 +59,7 @@ export class PullsFetcher<T extends PullData, U extends BannerRequestParams> {
         try {
             resp = await this.getResponseData(url);
         } catch (e) {
-            logger.error(`Error while fetching pulls: ${e}`);
+            logger.error(`[PullsFetcher] Error while fetching pulls: ${e}`);
 
             if (e instanceof Error) {
                 logger.error(e.stack);
@@ -71,12 +71,12 @@ export class PullsFetcher<T extends PullData, U extends BannerRequestParams> {
         const code = resp.code;
 
         if (code === 0) {
-            logger.debug(`Token approved ${this._urlParams.serverId} ${this._urlParams.token}`);
+            logger.debug(`[PullsFetcher] Token approved ${this._urlParams.serverId} ${this._urlParams.token}`);
 
             return true;
         }
 
-        logger.debug(`Token test failed ${this._urlParams.serverId} ${this._urlParams.token}`);
+        logger.debug(`[PullsFetcher] Token test failed ${this._urlParams.serverId} ${this._urlParams.token}`);
 
         return false;
     }
@@ -110,7 +110,7 @@ export class PullsFetcher<T extends PullData, U extends BannerRequestParams> {
                 resp = await this.getResponseData(url);
             } catch (e) {
                 this._hasMore = false;
-                logger.error(`Error while fetching pulls: ${e}`);
+                logger.error(`[PullsFetcher] Error while fetching pulls: ${e}`);
 
                 if (e instanceof Error) {
                     logger.error(e.stack);
@@ -174,7 +174,7 @@ export class PullsFetcher<T extends PullData, U extends BannerRequestParams> {
     }
 
     private async getResponseData(url: string) {
-        logger.info(`PullsFetcher: Getting response data: ${this._urlParams.seqId} ${this.getBannerType()}`);
+        logger.info(`[PullsFetcher] Getting response data: ${this._urlParams.seqId} ${this.getBannerType()}`);
 
         let resp: AxiosResponse<BannerResponse<T>>;
 
@@ -184,7 +184,7 @@ export class PullsFetcher<T extends PullData, U extends BannerRequestParams> {
             throw e;
         }
 
-        logger.info("PullsFetcher: Response data received");
+        logger.info("[PullsFetcher] Response data received");
 
         return resp.data;
     }
