@@ -1,3 +1,4 @@
+import { logger } from "@/logger";
 import { database } from "@/serviceInstances";
 import { syncPullsSigner } from "@/signers";
 import { SyncPullsCacheRecord } from "@api/cache/records/SyncPullsCacheRecord";
@@ -8,6 +9,7 @@ import { PostImportQuery } from "@api/contracts/import/PostImportQuery";
 import { PostImportRequest } from "@api/contracts/import/PostImportRequest";
 import { StreamController } from "@api/controllers/StreamController";
 import { Database } from "@database/Database";
+import { BannerPullsIdRecord } from "@database/records/BannerPullsIdRecord";
 import { UserBannerProfileRecord } from "@database/records/UserBannerProfileRecord";
 import { BannerType } from "@models/banners/BannerType";
 import { BannerTokenId } from "@models/bannerTokenId/BannerTokenId";
@@ -69,6 +71,10 @@ export class PostImport extends StreamController<
         return requestedProfile;
     }
 
+    private static getLastPullWithOffset(lastPullTimeTs: number): number {
+        return Math.max(getMondayTs(lastPullTimeTs - WEEK_MS), 0);
+    }
+
     protected async execute(): Promise<void> {
         let requestedProfile: UserBannerProfileRecord | null = null;
 
@@ -103,12 +109,15 @@ export class PostImport extends StreamController<
             }
         }
 
-        const lastPullWithOffset = Math.max(getMondayTs(lastPullTimeTs - WEEK_MS), 0);
+        const lastPullWithOffset = PostImport.getLastPullWithOffset(lastPullTimeTs);
 
         let pulls: BannersPulls | null = null;
         let serverId: string | null = null;
+        let fetcher: BannerDataFetcher | null = null;
         for (const id of this._serverIds) {
-            pulls = await this.fetch(id, lastPullWithOffset, callback);
+            fetcher = new BannerDataFetcher(this._token, id, callback);
+
+            pulls = await fetcher.getAllBannersData(lastPullWithOffset);
 
             if (pulls !== null) {
                 serverId = id;
@@ -117,7 +126,7 @@ export class PostImport extends StreamController<
             }
         }
 
-        if (!pulls || !serverId) {
+        if (!pulls || !serverId || !fetcher) {
             this.sendError("Invalid token");
 
             return;
@@ -126,24 +135,65 @@ export class PostImport extends StreamController<
         const tokenId = BannerTokenId.create(this._token);
         const tokenProfile = await this._database.userBannerProfiles.findTokenIdIncludeBannerProfile(tokenId.id);
 
-        const border = getWeek(lastPullWithOffset);
+        let pullIds = PostImport.getPullIds(pulls, lastPullWithOffset);
 
-        const pullIds = pulls
-            .getStablePullPeriods()
-            .map(p => p.getId())
-            .filter(i => i !== null && i.period >= border) as StablePullId[];
-
-        const pullProfile = await this._database.userBannerProfiles.findFirstPullsIdIncludeBannerProfile(pullIds.map(i => i.id));
+        let pullProfile = await this.getPullProfile(pullIds);
 
         const limit = Date.now() - PostImport.PULL_STORAGE_LIMIT_MS;
-        const reachedLimit = limit > lastPullWithOffset;
+        const isLimitReached = limit > lastPullWithOffset;
+
+        logger.debug(`${limit} ${lastPullWithOffset}`);
 
         let writeOn: string | null = PostImport.writeOnProfile(
             this._profileId,
             tokenProfile?.profile.publicId ?? null,
             pullProfile?.profile.publicId ?? null,
-            reachedLimit
+            isLimitReached
         );
+
+        logger.debug(`${isLimitReached} ${this._profileId} ${writeOn}`);
+
+        if (!isLimitReached && this._profileId !== null && writeOn !== this._profileId) {
+            logger.debug(`Wrong profileId provided: ${this._profileId}\nSearching for: ${writeOn}`);
+
+            let lastPullTsWithOffset;
+
+            if (writeOn === null) {
+                logger.debug("Set new lastPullTsWithOffset");
+
+                lastPullTsWithOffset = 0;
+
+            } else if (tokenProfile && writeOn === tokenProfile.profile.publicId) {
+                logger.debug(`Set lastPullTsWithOffset by tokenId`);
+
+                const lastPullTs = await this._database.userBannerStats.getLastPullTimeTs(tokenProfile.profile.profileId) as bigint;
+                lastPullTsWithOffset = PostImport.getLastPullWithOffset(Number(lastPullTs));
+
+            } else if (pullProfile && writeOn === pullProfile.profile.publicId) {
+                logger.debug(`Set lastPullTsWithOffset by pullId`);
+
+                const lastPullTs = await this._database.userBannerStats.getLastPullTimeTs(pullProfile.profile.profileId) as bigint;
+                lastPullTsWithOffset = PostImport.getLastPullWithOffset(Number(lastPullTs));
+
+            } else {
+                lastPullTsWithOffset = 0;
+            }
+
+            pulls = await fetcher.getAllBannersData(lastPullTsWithOffset) as BannersPulls;
+
+            pullIds = PostImport.getPullIds(pulls, lastPullTsWithOffset);
+            pullProfile = await this.getPullProfile(pullIds);
+
+            const limit = Date.now() - PostImport.PULL_STORAGE_LIMIT_MS;
+            const isLimitReached = limit > lastPullWithOffset;
+
+            writeOn = PostImport.writeOnProfile(
+                this._profileId,
+                tokenProfile?.profile.publicId ?? null,
+                pullProfile?.profile.publicId ?? null,
+                isLimitReached
+            );
+        }
 
         const sign = this._signer.sign({ id: randomUUID() }, PostImport.SIGN_LIFETIME);
 
@@ -166,6 +216,22 @@ export class PostImport extends StreamController<
                 pulls: pulls.getEntity(),
             }
         });
+    }
+
+    private static getPullIds(pulls: BannersPulls, lastPullWithOffset: number): StablePullId[] {
+        const border = getWeek(lastPullWithOffset);
+
+        return pulls
+            .getStablePullPeriods()
+            .map(p => p.getId())
+            .filter(i => i !== null && i.period >= border) as StablePullId[];
+    }
+
+    private async getPullProfile(pullIds: StablePullId[]): Promise<{
+        pullsId: BannerPullsIdRecord;
+        profile: UserBannerProfileRecord
+    } | null> {
+        return await this._database.userBannerProfiles.findFirstPullsIdIncludeBannerProfile(pullIds.map(i => i.id));
     }
 
     private async fetch(serverId: string, lastPullTs: number, callbackFn: (type: BannerType, count: number) => void): Promise<BannersPulls | null> {

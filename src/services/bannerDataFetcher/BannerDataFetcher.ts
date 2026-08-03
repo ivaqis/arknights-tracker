@@ -56,11 +56,11 @@ export class BannerDataFetcher {
         ]);
 
         return BannersPulls.createFromData({
-            [BannerType.CHAR_STANDARD]: this._standardFetcher.pullsList,
-            [BannerType.CHAR_BEGINNER]: this._beginnerFetcher.pullsList,
-            [BannerType.CHAR_SPECIAL]: this._specialFetcher.pullsList,
-            [BannerType.CHAR_JOINT]: this._jointFetcher.pullsList,
-            [BannerType.WEAPON]: this._weaponFetcher.pullsList
+            [BannerType.CHAR_STANDARD]: this._standardFetcher.pullsList.filter(p => p.charId),
+            [BannerType.CHAR_BEGINNER]: this._beginnerFetcher.pullsList.filter(p => p.charId),
+            [BannerType.CHAR_SPECIAL]: this._specialFetcher.pullsList.filter(p => p.charId),
+            [BannerType.CHAR_JOINT]: this._jointFetcher.pullsList.filter(p => p.charId),
+            [BannerType.WEAPON]: this._weaponFetcher.pullsList.filter(p => p.weaponId)
         });
     }
 
