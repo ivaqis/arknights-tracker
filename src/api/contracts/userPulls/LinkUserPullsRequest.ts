@@ -1,3 +1,3 @@
 export interface LinkUserPullsRequest {
-    profileId: string;
+    privateId: string;
 }

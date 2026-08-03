@@ -4,12 +4,14 @@ import { NullableStringRecordField } from "@database/records/recordFields/Nullab
 export class UserBannerProfileRecord {
     private readonly _profileId: bigint;
     private readonly _publicId: string;
+    private readonly _privateId: string;
     private readonly _createdAt: Date;
     private readonly _updatedAt: Date;
 
     public constructor(entity: UserBannerProfileEntity) {
         this._profileId = entity.profileId;
         this._publicId = entity.publicId;
+        this._privateId = entity.privateId;
         this._createdAt = entity.createdAt;
         this._updatedAt = entity.updatedAt;
     }
@@ -24,6 +26,10 @@ export class UserBannerProfileRecord {
 
     public get publicId(): string {
         return this._publicId;
+    }
+
+    public get privateId(): string {
+        return this._privateId;
     }
 
     public get updatedAt(): Date {

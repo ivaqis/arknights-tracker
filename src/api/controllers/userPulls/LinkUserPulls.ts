@@ -21,14 +21,14 @@ export class LinkUserPulls extends Controller<
 
     private readonly _firebaseToken: string;
     private readonly _gameUid: string;
-    private readonly _profileId: string;
+    private readonly _privateId: string;
 
     public constructor(req: e.Request<{}, ResponseBody<LinkUserPullsResponse>, LinkUserPullsRequest, LinkUserPullsQuery>, res: e.Response<ResponseBody<LinkUserPullsResponse>>) {
         super(req, res);
 
         this._firebaseToken = req.query.firebaseToken;
         this._gameUid = req.query.gameUid;
-        this._profileId = req.body.profileId;
+        this._privateId = req.body.privateId;
     }
 
     protected async execute(): Promise<void> {
@@ -59,7 +59,7 @@ export class LinkUserPulls extends Controller<
             return;
         }
 
-        const bannerProfile = await this._database.userBannerProfiles.findUserBannerProfileByPublicId(this._profileId);
+        const bannerProfile = await this._database.userBannerProfiles.findUserBannerProfileByPrivateId(this._privateId);
 
         if (!bannerProfile) {
             this.status = 404;

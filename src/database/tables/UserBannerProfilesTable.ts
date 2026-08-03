@@ -33,6 +33,20 @@ export class UserBannerProfilesTable extends Table<Prisma.UserBannerProfileDeleg
         return new UserBannerProfileRecord(entity);
     }
 
+    public async findByPrivateId(privateId: string): Promise<UserBannerProfileRecord | null> {
+        const entity = await this.table.findUnique({
+            where: {
+                privateId
+            }
+        });
+
+        if (!entity) {
+            return null;
+        }
+
+        return new UserBannerProfileRecord(entity);
+    }
+
     public async create(): Promise<UserBannerProfileRecord> {
         const entity = await this.table.create({
             data: {

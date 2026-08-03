@@ -41,14 +41,14 @@ export class PostImport extends StreamController<
 
     private readonly _token: string;
     private readonly _serverIds: string[];
-    private readonly _profileId: string | null;
+    private readonly _privateId: string | null;
 
     public constructor(req: e.Request<{}, {}, PostImportRequest, PostImportQuery>, res: e.Response<{}>) {
         super(req, res);
 
         this._token = req.query.token;
         this._serverIds = getUniqueElements(req.query.serverIds, ",");
-        this._profileId = req.body.profileId;
+        this._privateId = req.body.privateId;
     }
 
     private static writeOnProfile(requestedProfile: string | null, tokenProfile: string | null, pullsProfile: string | null, reachedLimit: boolean): string | null {
@@ -78,8 +78,8 @@ export class PostImport extends StreamController<
     protected async execute(): Promise<void> {
         let requestedProfile: UserBannerProfileRecord | null = null;
 
-        if (this._profileId) {
-            requestedProfile = await this._database.userBannerProfiles.findUserBannerProfileByPublicId(this._profileId);
+        if (this._privateId) {
+            requestedProfile = await this._database.userBannerProfiles.findUserBannerProfileByPrivateId(this._privateId);
 
             if (!requestedProfile) {
                 this.sendError("Profile not found");
@@ -145,16 +145,16 @@ export class PostImport extends StreamController<
         logger.debug(`${limit} ${lastPullWithOffset}`);
 
         let writeOn: string | null = PostImport.writeOnProfile(
-            this._profileId,
+            this._privateId,
             tokenProfile?.profile.publicId ?? null,
             pullProfile?.profile.publicId ?? null,
             isLimitReached
         );
 
-        logger.debug(`${isLimitReached} ${this._profileId} ${writeOn}`);
+        logger.debug(`${isLimitReached} ${this._privateId} ${writeOn}`);
 
-        if (!isLimitReached && this._profileId !== null && writeOn !== this._profileId) {
-            logger.debug(`Wrong profileId provided: ${this._profileId}\nSearching for: ${writeOn}`);
+        if (!isLimitReached && this._privateId !== null && writeOn !== this._privateId) {
+            logger.debug(`Wrong profileId provided: ${this._privateId}\nSearching for: ${writeOn}`);
 
             let lastPullTsWithOffset;
 
@@ -188,7 +188,7 @@ export class PostImport extends StreamController<
             const isLimitReached = limit > lastPullWithOffset;
 
             writeOn = PostImport.writeOnProfile(
-                this._profileId,
+                this._privateId,
                 tokenProfile?.profile.publicId ?? null,
                 pullProfile?.profile.publicId ?? null,
                 isLimitReached

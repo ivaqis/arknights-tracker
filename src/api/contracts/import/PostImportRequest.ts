@@ -1,3 +1,3 @@
 export interface PostImportRequest {
-    profileId: string | null;
+    privateId: string | null;
 }

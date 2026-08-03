@@ -28,6 +28,10 @@ export class UserBannerProfilesRepository extends Repository {
         return this._userBannerProfilesTable.findByPublicId(publicId);
     }
 
+    public async findUserBannerProfileByPrivateId(privateId: string): Promise<UserBannerProfileRecord | null> {
+        return this._userBannerProfilesTable.findByPrivateId(privateId);
+    }
+
     public async createUserBannerProfile(): Promise<UserBannerProfileRecord> {
         return this._userBannerProfilesTable.create();
     }

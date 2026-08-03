@@ -19,8 +19,8 @@ export class LinkUserPullsBodyValidator extends Validator<LinkUserPullsRequest> 
         const rule = new StringValidationRule(true);
 
         return new ValidationRule(
-            item => rule.isValid(item.profileId),
-            "profileId must be a string"
+            item => rule.isValid(item.privateId),
+            "privateId must be a string"
         );
     }
 }

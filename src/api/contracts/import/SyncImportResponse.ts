@@ -1,3 +1,6 @@
 export interface SyncImportResponse {
-    profileId: string | null;
+    profile: {
+        publicId: string;
+        privateId: string;
+    } | null;
 }

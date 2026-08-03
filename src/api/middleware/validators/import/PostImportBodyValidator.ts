@@ -19,8 +19,8 @@ export class PostImportBodyValidator extends Validator<PostImportRequest> {
         const rule = new StringValidationRule(true);
 
         return new ValidationRule(
-            item => item.profileId === null || rule.isValid(item.profileId),
-            "profileId must be a string or null"
+            item => item.privateId === null || rule.isValid(item.privateId),
+            "privateId must be a string or null"
         );
     }
 }

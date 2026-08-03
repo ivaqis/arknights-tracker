@@ -69,7 +69,7 @@ export class SyncImport extends Controller<
 
             this.status = 200;
             this.data = {
-                profileId: null
+                profile: null
             };
 
             return;
@@ -107,7 +107,10 @@ export class SyncImport extends Controller<
 
         this.status = 200;
         this.data = {
-            profileId: profile.publicId
+            profile: {
+                publicId: profile.publicId,
+                privateId: profile.privateId
+            }
         };
     }
 
