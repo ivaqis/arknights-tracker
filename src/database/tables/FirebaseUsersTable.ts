@@ -15,7 +15,7 @@ export class FirebaseUsersTable extends Table<Prisma.FirebaseUserDelegate> {
     }
 
     public async delete(firebaseUid: string): Promise<void> {
-        this.table.delete({
+        await this.table.delete({
             where: {
                 firebaseUid: firebaseUid
             }
