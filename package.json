@@ -11,11 +11,8 @@
     "rebuild": "npm run clean && npm run build",
     "start": "node dist/src/main.js",
     "migrate:pg": "prisma migrate deploy --schema prisma/postgres/schema.prisma",
-    "migrate:sqlite": "prisma migrate deploy --schema prisma/sqlite/schema.prisma",
     "generate:pg": "prisma generate --schema prisma/postgres/schema.prisma",
-    "generate:sqlite": "prisma generate --schema prisma/sqlite/schema.prisma",
-    "create-migration:pg": "prisma migrate dev --create-only --name init --schema ./prisma/postgres/schema.prisma",
-    "create-migration:sqlite": "prisma migrate dev --create-only --name init --schema ./prisma/sqlite/schema.prisma"
+    "create-migration:pg": "prisma migrate dev --create-only --name dev --schema ./prisma/postgres/schema.prisma"
   },
   "keywords": [],
   "author": "",
