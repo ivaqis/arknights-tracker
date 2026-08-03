@@ -193,27 +193,6 @@ model UserBannerStat {
     @@index([bannerType, profileId])
 }
 
-// model UserBannerTypeStat {
-//     profileId   BigInt
-//     bannerType  String
-//     unfreePulls Int      @default(0)
-//     total6      Int      @default(0)
-//     total5      Int      @default(0)
-//     won5050     Int      @default(0)
-//     total5050   Int      @default(0)
-//     freePulls   Int      @default(0)
-//     free6       Int      @default(0)
-//     free5       Int      @default(0)
-//     freeWin5050 Int      @default(0)
-//     updatedAt   DateTime @updatedAt
-//
-//     bannerProfile           UserBannerProfile        @relation(fields: [profileId], references: [profileId])
-//     userCharBannerTypePulls UserCharBannerTypePulls?
-//
-//     @@id([profileId, bannerType])
-//     @@index([bannerType])
-// }
-
 model UserCharBannerTypePulls {
     profileId       BigInt
     bannerType      String
@@ -254,21 +233,6 @@ model UserWeaponBannerPulls {
 
     @@id([profileId, bannerId])
 }
-
-// model GlobalBannerStats {
-//     bannerId    String   @id
-//     totalUsers  Int      @default(0)
-//     unfreePulls BigInt   @default(0)
-//     total6      Int      @default(0)
-//     total5      Int      @default(0)
-//     won5050     Int      @default(0)
-//     total5050   Int      @default(0)
-//     freePulls   Int      @default(0)
-//     free6       Int      @default(0)
-//     free5       Int      @default(0)
-//     freeWin5050 Int      @default(0)
-//     updatedAt   DateTime @updatedAt
-// }
 
 model GlobalBannerTimeline {
     bannerId        String
