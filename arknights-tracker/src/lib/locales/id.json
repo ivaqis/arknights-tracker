@@ -1058,6 +1058,7 @@
     "arcane": "Arcane"
   },
   "weaponsList": {
+    "custom_weapon": "Senjata Kustom",
     "industry01": "Industry 0.1",
     "exemplar": "Exemplar",
     "longRoad": "Long Road",
@@ -1371,6 +1372,8 @@
     "simultaneousFarming": "Farming Bersamaan (3/3)",
     "ifLock": "Jika Anda mengunci",
     "addAttr1": "Tambahkan Atribut 1",
+    "addCustomWeapon": "Tambah senjata kustom",
+    "editCustomWeapon": "Edit senjata kustom",
     "attrAlreadySelected": "Akan difarming bersamaan"
   },
   "equipment": {

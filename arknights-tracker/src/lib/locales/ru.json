@@ -1198,6 +1198,7 @@
     "arcane": "Премудрость"
   },
   "weaponsList": {
+    "custom_weapon": "Кастомное оружие",
     "industry01": "Индустрия 0.1",
     "exemplar": "Эталон",
     "longRoad": "Долгий путь",
@@ -1511,7 +1512,9 @@
     "simultaneousFarming": "Одновременный фарм (3/3)",
     "ifLock": "Если заблокировать",
     "addAttr1": "Добавьте Атрибут 1",
-    "attrAlreadySelected": "Будут фармиться одновременно:"
+    "attrAlreadySelected": "Будут фармиться одновременно:",
+    "addCustomWeapon": "Добавить кастомное оружие",
+    "editCustomWeapon": "Редактировать кастомное оружие"
   },
   "equipment": {
     "item_equip_t0_parts_tundra01_body_01": "Базовая броня",

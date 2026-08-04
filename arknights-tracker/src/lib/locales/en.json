@@ -1195,6 +1195,7 @@
     "arcane": "Arcane"
   },
   "weaponsList": {
+    "custom_weapon": "Custom Weapon",
     "industry01": "Industry 0.1",
     "exemplar": "Exemplar",
     "longRoad": "Long Road",
@@ -1508,7 +1509,9 @@
     "simultaneousFarming": "Simultaneous Farming (3/3)",
     "ifLock": "If you lock",
     "addAttr1": "Add Attribute 1",
-    "attrAlreadySelected": "Will be farmed simultaneously:"
+    "attrAlreadySelected": "Will be farmed simultaneously:",
+    "addCustomWeapon": "Add custom weapon",
+    "editCustomWeapon": "Edit custom weapon"
   },
   "equipment": {
     "item_equip_t0_parts_tundra01_body_01": "Basic Armor",

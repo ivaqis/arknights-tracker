@@ -690,6 +690,8 @@
     "simultaneousFarming": "Farming Serentak (3/3)",
     "ifLock": "Jika anda kunci",
     "addAttr1": "Tambah Atribut 1",
+    "addCustomWeapon": "Tambah senjata tersuai",
+    "editCustomWeapon": "Edit senjata tersuai",
     "attrAlreadySelected": "Akan di-farm secara serentak:"
   },
   "packs": {

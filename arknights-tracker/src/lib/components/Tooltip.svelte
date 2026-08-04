@@ -90,9 +90,10 @@
   });
 </script>
 
-<button
+<span
   bind:this={triggerEl}
-  type="button"
+  role="button"
+  tabindex="-1"
   on:mouseenter={show}
   on:mouseleave={hide}
   on:focus={show}
@@ -100,7 +101,7 @@
   class="inline-flex cursor-default bg-transparent p-0 border-0 focus:outline-none {className}"
 >
   <slot />
-</button>
+</span>
 
 {#if open && (tooltipText || $$slots.content)}
   <span

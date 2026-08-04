@@ -690,6 +690,8 @@
     "simultaneousFarming": "ერთდროული ფარმინგი (3/3)",
     "ifLock": "თუ ჩაკეტავთ",
     "addAttr1": "ატრიბუტი 1-ის დამატება",
+    "addCustomWeapon": "მორგებული იარაღის დამატება",
+    "editCustomWeapon": "მორგებული იარაღის რედაქტირება",
     "attrAlreadySelected": "ერთდროულად დაიფარმება:"
   },
   "packs": {

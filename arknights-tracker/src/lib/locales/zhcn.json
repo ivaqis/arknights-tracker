@@ -1101,6 +1101,7 @@
     "arcane": "诀"
   },
   "weaponsList": {
+    "custom_weapon": "自定义武器",
     "industry01": "工业零点一",
     "exemplar": "典范",
     "longRoad": "长路",
@@ -1414,6 +1415,8 @@
     "simultaneousFarming": "同时刷取 (3/3)",
     "ifLock": "如果锁定",
     "addAttr1": "添加属性 1",
+    "addCustomWeapon": "添加自定义武器",
+    "editCustomWeapon": "编辑自定义武器",
     "attrAlreadySelected": "将同时刷取"
   },
   "equipment": {

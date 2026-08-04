@@ -211,7 +211,7 @@
             fixed top-0 bottom-0 left-0 h-full
             bg-white dark:bg-[#343434] dark:border-[#3F3F3F] border-r border-gray-100
             flex flex-col justify-between
-            py-8
+            py-5
             z-[10000] shadow-2xl md:shadow-none
             
             {ready ? 'transition-all duration-300 ease-in-out' : ''}
@@ -224,7 +224,7 @@
         "
         >
             <div
-                class="mb-5 flex items-center min-h-[40px] px-4 {visuallyCollapsed
+                class="mb-3.5 flex items-center min-h-[40px] px-4 {visuallyCollapsed
                     ? 'justify-center'
                     : 'justify-between'}"
             >
@@ -258,7 +258,7 @@
                 </button>
             </div>
             <div class="flex-1 overflow-y-auto overflow-x-hidden">
-                <nav class="flex flex-col gap-2 px-3">
+                <nav class="flex flex-col gap-2 {visuallyCollapsed ? 'pl-4 pr-2' : 'px-3'}">
                     {#each [
                         { path: "/", label: "sidebar.home", icon: "mainPage" },
                         { path: "/records", label: "sidebar.records", icon: "records" },

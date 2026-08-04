@@ -1058,6 +1058,7 @@
     "arcane": "ปริศนา"
   },
   "weaponsList": {
+    "custom_weapon": "อาวุธแบบกำหนดเอง",
     "industry01": "อิน​ดัส​ทรี​ 0.1",
     "exemplar": "เอ็ก​เซม​พลา​ร์",
     "longRoad": "เส้นทาง​ยาว​ไกล",
@@ -1371,6 +1372,8 @@
     "simultaneousFarming": "ฟาร์มพร้อมกัน (3/3)",
     "ifLock": "หากล็อค",
     "addAttr1": "เพิ่มคุณสมบัติ 1",
+    "addCustomWeapon": "เพิ่มอาวุธแบบกำหนดเอง",
+    "editCustomWeapon": "แก้ไขอาวุธแบบกำหนดเอง",
     "attrAlreadySelected": "จะถูกฟาร์มพร้อมกัน"
   },
   "equipment": {

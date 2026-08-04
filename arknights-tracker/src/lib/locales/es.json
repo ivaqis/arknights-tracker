@@ -1060,6 +1060,7 @@
     "arcane": "Arcane"
   },
   "weaponsList": {
+    "custom_weapon": "Arma personalizada",
     "industry01": "Industria 0.1",
     "rapidAscent": "Ascenso Rápido",
     "aspirant": "Aspirante",
@@ -1373,6 +1374,8 @@
     "simultaneousFarming": "Farmeo simultáneo (3/3)",
     "ifLock": "Si bloqueas",
     "addAttr1": "Añade Atributo 1",
+    "addCustomWeapon": "Añadir arma personalizada",
+    "editCustomWeapon": "Editar arma personalizada",
     "attrAlreadySelected": "Se farmeará simultáneamente"
   },
   "equipment": {

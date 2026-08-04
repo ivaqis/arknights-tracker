@@ -1058,6 +1058,7 @@
     "arcane": "オクギ"
   },
   "weaponsList": {
+    "custom_weapon": "カスタム武器",
     "industry01": "工業零点一",
     "exemplar": "鑑",
     "longRoad": "長路",
@@ -1371,6 +1372,8 @@
     "simultaneousFarming": "同時周回 (3/3)",
     "ifLock": "固定する場合",
     "addAttr1": "属性 1 を追加",
+    "addCustomWeapon": "カスタム武器を追加",
+    "editCustomWeapon": "カスタム武器を編集",
     "attrAlreadySelected": "同時に周回できます"
   },
   "equipment": {

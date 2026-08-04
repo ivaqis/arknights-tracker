@@ -690,6 +690,8 @@
     "simultaneousFarming": "Бір мезгілде фармдау (3/3)",
     "ifLock": "Егер құлыптасаңыз",
     "addAttr1": "1-атрибут қосу",
+    "addCustomWeapon": "Кастомды қару қосу",
+    "editCustomWeapon": "Кастомды қаруды өңдеу",
     "attrAlreadySelected": "Бір уақытта фармдалады:"
   },
   "packs": {

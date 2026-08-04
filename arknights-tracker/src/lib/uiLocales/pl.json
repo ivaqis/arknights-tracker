@@ -690,6 +690,8 @@
     "simultaneousFarming": "Jednoczesne farmienie (3/3)",
     "ifLock": "Jeśli zablokujesz",
     "addAttr1": "Dodaj Atrybut 1",
+    "addCustomWeapon": "Dodaj niestandardową broń",
+    "editCustomWeapon": "Edytuj niestandardową broń",
     "attrAlreadySelected": "Będą farmione jednocześnie:"
   },
   "packs": {

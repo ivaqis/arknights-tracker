@@ -1057,6 +1057,7 @@
     "arcane": "Arkan"
   },
   "weaponsList": {
+    "custom_weapon": "Benutzerdefinierte Waffe",
     "industry01": "Industrie 0.1",
     "exemplar": "Mustermodell",
     "longRoad": "Langer Weg",
@@ -1370,6 +1371,8 @@
     "simultaneousFarming": "Gleichzeitiges Farmen (3/3)",
     "ifLock": "Wenn du sperrst",
     "addAttr1": "Füge Attribut 1 hinzu",
+    "addCustomWeapon": "Benutzerdefinierte Waffe hinzufügen",
+    "editCustomWeapon": "Benutzerdefinierte Waffe bearbeiten",
     "attrAlreadySelected": "Wird gleichzeitig gefarmt"
   },
   "equipment": {

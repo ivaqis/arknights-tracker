@@ -690,6 +690,8 @@
     "simultaneousFarming": "Одночасний фарм (3/3)",
     "ifLock": "Якщо заблокувати",
     "addAttr1": "Додати атрибут 1",
+    "addCustomWeapon": "Додати кастомну зброю",
+    "editCustomWeapon": "Редагувати кастомну зброю",
     "attrAlreadySelected": "Будуть фармитися одночасно:"
   },
   "packs": {

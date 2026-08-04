@@ -690,6 +690,8 @@
     "simultaneousFarming": "الزراعة المتزامنة (3/3)",
     "ifLock": "إذا قمت بالقفل",
     "addAttr1": "إضافة السمة 1",
+    "addCustomWeapon": "إضافة سلاح مخصص",
+    "editCustomWeapon": "تعديل سلاح مخصص",
     "attrAlreadySelected": "سيتم زراعتها في نفس الوقت:"
   },
   "packs": {

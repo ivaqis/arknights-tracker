@@ -1058,6 +1058,7 @@
     "arcane": "결"
   },
   "weaponsList": {
+    "custom_weapon": "커스텀 무기",
     "industry01": "공업 0.1",
     "exemplar": "모범",
     "longRoad": "끝없는 여정",
@@ -1371,6 +1372,8 @@
     "simultaneousFarming": "동시 파밍 (3/3)",
     "ifLock": "고정할 경우",
     "addAttr1": "속성 1 추가",
+    "addCustomWeapon": "커스텀 무기 추가",
+    "editCustomWeapon": "커스텀 무기 편집",
     "attrAlreadySelected": "동시에 파밍됩니다"
   },
   "equipment": {

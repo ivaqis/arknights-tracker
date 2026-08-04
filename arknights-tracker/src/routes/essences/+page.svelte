@@ -27,6 +27,7 @@
     import { pullData } from "$lib/stores/pulls";
     import { filterCheck, filterCheckLowerCase } from "$lib/utils/filterUtils.js";
     import { getRarityColor } from "$lib/utils/colorUtils.js";
+    import { browser } from "$app/environment";
     import { fade, scale } from "svelte/transition";
     import { weaponEssences } from "$lib/stores/weaponEssences.js";
 
@@ -34,7 +35,68 @@
     $: searchQuery = $essenceWeaponSearch;
     $: showOwnedOnly = $essenceWeaponOwnedOnly;
 
-    const allWeapons = Object.values(weapons || {}).filter((wp) => wp && wp.id);
+    const baseWeapons = Object.values(weapons || {}).filter((wp) => wp && wp.id);
+    let customWeapon = (() => {
+        if (browser) {
+            try {
+                const stored = localStorage.getItem("custom_weapon_essence");
+                if (stored) return JSON.parse(stored);
+            } catch (e) {}
+        }
+        return null;
+    })();
+
+    $: allWeapons = customWeapon ? [...baseWeapons, customWeapon] : baseWeapons;
+
+    let isCustomModalOpen = false;
+    let modalAttr1Set = new Set();
+    let modalAttr2Set = new Set();
+    let modalAttr3Set = new Set();
+
+    $: modalAttr1 = modalAttr1Set.size > 0 ? Array.from(modalAttr1Set)[0] : null;
+    $: modalAttr2 = modalAttr2Set.size > 0 ? Array.from(modalAttr2Set)[0] : null;
+    $: modalAttr3 = modalAttr3Set.size > 0 ? Array.from(modalAttr3Set)[0] : null;
+
+    function openCustomModal() {
+        if (customWeapon && customWeapon.skills) {
+            modalAttr1Set = new Set(customWeapon.skills[0] ? [customWeapon.skills[0]] : []);
+            modalAttr2Set = new Set(customWeapon.skills[1] ? [customWeapon.skills[1]] : []);
+            modalAttr3Set = new Set(customWeapon.skills[2] ? [customWeapon.skills[2]] : []);
+        } else {
+            modalAttr1Set = new Set();
+            modalAttr2Set = new Set();
+            modalAttr3Set = new Set();
+        }
+        isCustomModalOpen = true;
+    }
+
+    function closeCustomModal() {
+        isCustomModalOpen = false;
+    }
+
+    function saveCustomWeapon() {
+        if (!modalAttr1 || !modalAttr2 || !modalAttr3) return;
+        const isNewCustom = !customWeapon;
+        customWeapon = {
+            id: "custom_weapon",
+            name: "Custom weapon",
+            rarity: 1,
+            weapon: "sword",
+            skills: [modalAttr1, modalAttr2, modalAttr3]
+        };
+        if (browser) {
+            try {
+                localStorage.setItem("custom_weapon_essence", JSON.stringify(customWeapon));
+            } catch (e) {}
+        }
+        if (isNewCustom) {
+            selectedWeaponIds.add("custom_weapon");
+            if (!primaryWeaponId) primaryWeaponId = "custom_weapon";
+            selectedWeaponIds = new Set(selectedWeaponIds);
+            isBottomSheetOpen = true;
+        }
+        isCustomModalOpen = false;
+    }
 
     let sortField = "rarity";
     let sortDirection = "desc";
@@ -108,7 +170,7 @@
     const { selectedId } = accountStore;
     $: accountEssences = $weaponEssences[$selectedId] || {};
 
-    $: filteredWeapons = allWeapons
+    $: filteredWeapons = baseWeapons
         .filter((wp) => {
             if (showOwnedOnly) {
                 const activeId = $selectedId;
@@ -279,6 +341,7 @@
     $: invSelectedCount = [invAttr1, invAttr2, invAttr3].filter(Boolean).length;
 
     $: invMatches = allWeapons
+        .filter((wp) => wp.id !== "custom_weapon")
         .map((wp) => {
             const selectedStats = [invAttr1, invAttr2, invAttr3].filter(
                 Boolean,
@@ -626,6 +689,7 @@
 
                         weaponsList.forEach((wp) => {
                             if (selectedIds.has(wp.id)) return;
+                            if (wp.id === "custom_weapon") return;
 
                             const wAttr23 = wp.skills.filter(
                                 (s) =>
@@ -989,6 +1053,79 @@
                         {/if}
                     </div>
                 {/each}
+
+                {#if !customWeapon}
+                    <div class="relative w-full h-full aspect-square">
+                        <Tooltip text={$t("essencesPage.addCustomWeapon")} class="w-full h-full block">
+                            <button
+                                type="button"
+                                class="w-full h-full aspect-square rounded-[6px] border-2 border-dashed border-gray-400 dark:border-[#555] hover:border-[#F8B80C] dark:hover:border-[#F8B80C] hover:text-[#F8B80C] dark:hover:text-[#F8B80C] transition-colors flex items-center justify-center text-gray-400 dark:text-gray-500 bg-transparent cursor-pointer"
+                                on:click={openCustomModal}
+                            >
+                                <span class="text-3xl font-bold select-none">+</span>
+                            </button>
+                        </Tooltip>
+                    </div>
+                {:else}
+                    {@const isSelected = selectedWeaponIds.has(customWeapon.id)}
+                    {@const isPrimary = primaryWeaponId === customWeapon.id}
+
+                    <div
+                        role="button"
+                        tabindex="0"
+                        class="relative w-full h-full rounded-[6px] cursor-pointer text-left aspect-square transition-all duration-300"
+                        on:click|preventDefault|stopPropagation={() => toggleWeaponSelection(customWeapon.id)}
+                        on:keydown={(e) => e.key === "Enter" && toggleWeaponSelection(customWeapon.id)}
+                    >
+                        <div class="relative w-full h-full rounded-[6px] overflow-hidden bg-white dark:bg-[#2a2a2a] group border border-gray-300 dark:border-[#333]">
+                            <div class="absolute inset-0 bg-gradient-to-br from-[#4F4F4F] to-[#323232] dark:from-[#3a3a3a] dark:to-[#1a1a1a]"></div>
+
+                            <div class="absolute inset-0 flex items-center justify-center z-0 bottom-[6px]">
+                                <Icon name="sword" class="w-10 h-10 text-white/50 drop-shadow-md" />
+                            </div>
+
+                            <div class="absolute bottom-[8px] left-0 right-0 z-20 flex justify-center px-1">
+                                <span
+                                    class="text-white text-[11px] mb-0.5 font-bold text-center leading-tight line-clamp-2 w-full block"
+                                    style="text-shadow: 0 1px 3px rgba(0,0,0,0.95), 0 1px 1px rgba(0,0,0,0.95), 0 0 2px rgba(0,0,0,0.8);"
+                                >
+                                    {$t("weaponsList.custom_weapon")}
+                                </span>
+                            </div>
+
+                            <div
+                                class="absolute bottom-0 left-0 w-full h-[6px] z-10"
+                                style="background-color: {getRarityColor(customWeapon.rarity)};"
+                            ></div>
+                        </div>
+
+                        <Tooltip text={$t("essencesPage.editCustomWeapon")} class="absolute -top-2.5 -left-2.5 z-40">
+                            <div
+                                role="button"
+                                tabindex="0"
+                                class="w-8 h-8 rounded-full flex items-center justify-center shadow-lg transition-colors border-2 bg-[#2A2A2A] border-[#444] text-gray-400 hover:bg-[#333] hover:text-white hover:border-gray-300 cursor-pointer"
+                                on:click|preventDefault|stopPropagation={openCustomModal}
+                                on:keydown={(e) => e.key === "Enter" && openCustomModal()}
+                            >
+                                <Icon name="pen" class="w-4 h-4" />
+                            </div>
+                        </Tooltip>
+
+                        {#if isSelected}
+                            <div class="absolute inset-[-3px] border-[3px] border-[#F9B90C] rounded-[9px] z-30 pointer-events-none"></div>
+
+                            <button
+                                class="absolute -top-2.5 -right-2.5 w-8 h-8 rounded-full flex items-center justify-center shadow-lg z-30 transition-colors border-2 {isPrimary
+                                    ? 'bg-[#F9B90C] border-[#F9B90C] text-black'
+                                    : 'bg-[#2A2A2A] border-[#444] text-gray-400 hover:bg-[#333] hover:text-white'}"
+                                on:click|preventDefault|stopPropagation={() => setPrimaryWeapon(customWeapon.id)}
+                                title={isPrimary ? $t("essencesPage.primaryWeapon") : $t("essencesPage.makePrimary")}
+                            >
+                                <Icon name="favorite" class="w-5 h-5" />
+                            </button>
+                        {/if}
+                    </div>
+                {/if}
             </div>
 
             {#if displayLimit < filteredWeapons.length}
@@ -1294,21 +1431,29 @@
                                         <div
                                             class="relative w-12 h-12 flex-shrink-0 group/icon"
                                         >
-                                            <a
-                                                href={`/weapons/${match.weapon.id}`}
-                                                class="block w-full h-full rounded border border-gray-300 dark:border-[#333] border-b-[3px] scale-110 overflow-hidden bg-gradient-to-br from-gray-50 to-gray-200 dark:from-[#3a3a3a] dark:to-[#1a1a1a] flex items-center justify-center shadow-sm transition-all duration-300 hover:ring-2 hover:ring-white dark:hover:ring-white hover:border-white"
-                                                style="border-bottom-color: {getRarityColor(
-                                                    match.weapon.rarity
-                                                )};"
-                                            >
-                                                <Image
-                                                    id={match.weapon.id}
-                                                    interactive={true}
-                                                    variant="weapon-icon"
-                                                    className="w-full h-full scale-110 pt-1 pr-0.5 object-contain drop-shadow-md rotate-[0.01deg] transition-transform duration-300 group-hover/icon:scale-110"
-                                                    alt={match.weapon.name}
-                                                />
-                                            </a>
+                                            {#if match.weapon.id === "custom_weapon"}
+                                                <div
+                                                    class="block w-full h-full rounded border border-gray-300 dark:border-[#333] border-b-[3px] border-b-[#F4700C] scale-110 overflow-hidden bg-gradient-to-br from-gray-50 to-gray-200 dark:from-[#3a3a3a] dark:to-[#1a1a1a] flex items-center justify-center shadow-sm"
+                                                >
+                                                    <Icon name="sword" class="w-5 h-5 text-gray-400 dark:text-gray-300" />
+                                                </div>
+                                            {:else}
+                                                <a
+                                                    href={`/weapons/${match.weapon.id}`}
+                                                    class="block w-full h-full rounded border border-gray-300 dark:border-[#333] border-b-[3px] scale-110 overflow-hidden bg-gradient-to-br from-gray-50 to-gray-200 dark:from-[#3a3a3a] dark:to-[#1a1a1a] flex items-center justify-center shadow-sm transition-all duration-300 hover:ring-2 hover:ring-white dark:hover:ring-white hover:border-white"
+                                                    style="border-bottom-color: {getRarityColor(
+                                                        match.weapon.rarity
+                                                    )};"
+                                                >
+                                                    <Image
+                                                        id={match.weapon.id}
+                                                        interactive={true}
+                                                        variant="weapon-icon"
+                                                        className="w-full h-full scale-110 pt-1 pr-0.5 object-contain drop-shadow-md rotate-[0.01deg] transition-transform duration-300 group-hover/icon:scale-110"
+                                                        alt={match.weapon.name}
+                                                    />
+                                                </a>
+                                            {/if}
                                             {#if isPrimary}
                                                 <div
                                                     class="absolute -top-1.5 -right-1.5 bg-[#F9B90C] text-black w-5 h-5 rounded-full flex items-center justify-center shadow-md border-2 border-white dark:border-[#252525] z-10 pointer-events-none"
@@ -1528,17 +1673,23 @@
                                                                                         .rarity
                                                                                 )};"
                                                                             >
-                                                                                <a
-                                                                                    href={`/weapons/${wp.id}`}
-                                                                                    class="hover:ring-2 hover:ring-white/70 ring-inset duration-300"
-                                                                                >
-                                                                                <Image
-                                                                                    id={wp.id}
-                                                                                    interactive={true}
-                                                                                    variant="weapon-icon"
-                                                                                    className="w-[90%] h-[90%] object-contain drop-shadow-sm scale-110"
-                                                                                />
-                                                                                </a>
+                                                                                {#if wp.id === "custom_weapon"}
+                                                                                    <div class="w-full h-full flex items-center justify-center">
+                                                                                        <Icon name="sword" class="w-4 h-4 text-gray-400 dark:text-gray-300" />
+                                                                                    </div>
+                                                                                {:else}
+                                                                                    <a
+                                                                                        href={`/weapons/${wp.id}`}
+                                                                                        class="hover:ring-2 hover:ring-white/70 ring-inset duration-300"
+                                                                                    >
+                                                                                        <Image
+                                                                                            id={wp.id}
+                                                                                            interactive={true}
+                                                                                            variant="weapon-icon"
+                                                                                            className="w-[90%] h-[90%] object-contain drop-shadow-sm scale-110"
+                                                                                        />
+                                                                                    </a>
+                                                                                {/if}
                                                                             </div>
 
                                                                             <span
@@ -1818,3 +1969,76 @@
     </div>
   </Modal>
 {/if}
+
+<Modal isOpen={isCustomModalOpen} on:close={closeCustomModal}>
+    <div class="bg-white dark:bg-[#1f1f1f] text-gray-900 dark:text-white rounded-2xl p-6 w-full max-w-lg shadow-xl border border-gray-200 dark:border-[#333] flex flex-col gap-6">
+        <div class="flex items-center justify-between border-b border-gray-200 dark:border-[#333] pb-4">
+            <h2 class="text-xl font-bold">
+                {$t("weaponsList.custom_weapon")}
+            </h2>
+            <button
+                type="button"
+                class="text-gray-400 hover:text-gray-600 dark:hover:text-gray-200 transition-colors p-1 cursor-pointer"
+                on:click={closeCustomModal}
+            >
+                <Icon name="close" class="w-5 h-5" />
+            </button>
+        </div>
+
+        <div class="flex flex-col gap-6 max-h-[60vh] overflow-y-auto pr-1">
+            <div class="flex flex-col gap-2">
+                <GroupTitle>
+                    {$t("essencesPage.attr1")}
+                </GroupTitle>
+                <SelectableParamList
+                    paramBox={SkillParamBox}
+                    paramList={attr1Skills}
+                    maxSelectedParams={1}
+                    bind:selectedParamSet={modalAttr1Set}
+                />
+            </div>
+
+            <div class="flex flex-col gap-2">
+                <GroupTitle>
+                    {$t("essencesPage.attr2")}
+                </GroupTitle>
+                <SelectableParamList
+                    paramBox={SkillParamBox}
+                    paramList={attr2Skills}
+                    maxSelectedParams={1}
+                    bind:selectedParamSet={modalAttr2Set}
+                />
+            </div>
+
+            <div class="flex flex-col gap-2">
+                <GroupTitle>
+                    {$t("essencesPage.attr3")}
+                </GroupTitle>
+                <SelectableParamList
+                    paramBox={SkillParamBox}
+                    paramList={attr3Skills}
+                    maxSelectedParams={1}
+                    bind:selectedParamSet={modalAttr3Set}
+                />
+            </div>
+        </div>
+
+        <div class="flex items-center justify-end gap-3 pt-4 border-t border-gray-200 dark:border-[#333]">
+            <Button
+                variant="roundSmall"
+                color="gray"
+                onClick={closeCustomModal}
+            >
+                {$t("settings.account.cancel")}
+            </Button>
+            <Button
+                variant="roundSmall"
+                color="yellow"
+                onClick={saveCustomWeapon}
+                disabled={!modalAttr1 || !modalAttr2 || !modalAttr3}
+            >
+                {$t("buttons.saveBtn")}
+            </Button>
+        </div>
+    </div>
+</Modal>

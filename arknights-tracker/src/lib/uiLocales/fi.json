@@ -690,6 +690,8 @@
     "simultaneousFarming": "Samanaikainen farmailu (3/3)",
     "ifLock": "Jos lukitset",
     "addAttr1": "Lisää attribuutti 1",
+    "addCustomWeapon": "Lisää mukautettu ase",
+    "editCustomWeapon": "Muokkaa mukautettua asetta",
     "attrAlreadySelected": "Farmataan samanaikaisesti:"
   },
   "packs": {

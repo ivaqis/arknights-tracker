@@ -1101,6 +1101,7 @@
     "arcane": "Arcane"
   },
   "weaponsList": {
+    "custom_weapon": "Vũ Khí Tùy Chỉnh",
     "industry01": "Công Nghiệp 0.1",
     "exemplar": "Bảo Kiếm Khó Sánh",
     "longRoad": "Trường Lộ",
@@ -1414,6 +1415,8 @@
     "simultaneousFarming": "Cày cuốc Đồng thời (3/3)",
     "ifLock": "Nếu khóa",
     "addAttr1": "Thêm Thuộc tính 1",
+    "addCustomWeapon": "Thêm vũ khí tùy chỉnh",
+    "editCustomWeapon": "Chỉnh sửa vũ khí tùy chỉnh",
     "attrAlreadySelected": "Sẽ được cày cuốc đồng thời"
   },
   "equipment": {

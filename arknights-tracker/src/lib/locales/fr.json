@@ -1058,6 +1058,7 @@
     "arcane": "Arcane"
   },
   "weaponsList": {
+    "custom_weapon": "Arme personnalisée",
     "industry01": "Industrie 0.1",
     "exemplar": "Exemplaire",
     "longRoad": "Longue route",
@@ -1371,6 +1372,8 @@
     "simultaneousFarming": "Farm simultané (3/3)",
     "ifLock": "Si vous verrouillez",
     "addAttr1": "Ajouter l'Attribut 1",
+    "addCustomWeapon": "Ajouter une arme personnalisée",
+    "editCustomWeapon": "Modifier l'arme personnalisée",
     "attrAlreadySelected": "Sera farmé simultanément"
   },
   "equipment": {

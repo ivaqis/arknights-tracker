@@ -4,6 +4,7 @@
   export let color = "gray";
   export let className = "";
   export let active = false;
+  export let disabled = false;
 
   const colors = {
     gray: {
@@ -45,7 +46,7 @@
   ].filter(Boolean).join(" ");
 </script>
 
-<button on:click={onClick} class={buttonClasses}>
+<button on:click={disabled ? null : onClick} {disabled} class="{buttonClasses} {disabled ? 'opacity-40 pointer-events-none cursor-not-allowed' : ''}">
   {#if variant === "yellow"}
     <div class="absolute inset-0 bg-[#FFE145] hover:bg-[#FFF055] transition-colors duration-200 z-0"></div>
     <div class="absolute left-0 top-0 bottom-0 w-1.5 bg-[#D4B929] hover:bg-[#E5C22D] transition-colors duration-200 z-20"></div>
