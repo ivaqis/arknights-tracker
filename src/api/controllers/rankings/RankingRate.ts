@@ -6,6 +6,9 @@ import { Controller } from "@api/controllers/Controller";
 import { Database } from "@database/Database";
 import { DbBannerType } from "@models/banners/DbBannerType";
 import { ExcludeRange } from "@models/ExcludeRange";
+import { BannerTypeStatEntity } from "@models/pullProfile/entities/BannerTypeStatEntity";
+import { EventBannerTypeStatEntity } from "@models/pullProfile/entities/EventBannerTypeStatEntity";
+import { PullProfileSearcher } from "@models/pullProfile/PullProfileSearcher";
 import e from "express";
 
 export class RankingRate extends Controller<
@@ -39,6 +42,13 @@ export class RankingRate extends Controller<
     }
 
     protected async execute(): Promise<void> {
+        if (this._totalPulls <= 0) {
+            this.status = 400;
+            this.message = "totalPulls must be greater than 0";
+
+            return;
+        }
+
         if (this._total5050 !== null && this._won5050 !== null && this._won5050 > this._total5050) {
             this.status = 400;
             this.message = "won5050 must be less or equal to total5050";
@@ -58,12 +68,29 @@ export class RankingRate extends Controller<
             this.message = "total6Pulls must be less or equal to totalPulls";
         }
 
-        const all = await this._database.userBannerStats.countTotalPullsByBannerType(this._bannerType);
+        let totalPullsRate: ExcludeRange;
+        let luck6Rate: ExcludeRange | null;
+        let luck5Rate: ExcludeRange | null;
+        let win5050Rate: ExcludeRange | null = null;
 
-        const totalPullsRate = await this.getPullsRate(all);
-        const win5050Rate = await this.getWinRate();
-        const luck6Rate = await this.getLuck6Rate(all);
-        const luck5Rate = await this.getLuck5Rate(all);
+
+        const searcher = new PullProfileSearcher(this._database);
+
+        if (this._bannerType === null || DbBannerType.isEvent(this._bannerType)) {
+            const rating = await searcher.getEventBannerTypeStats(this._bannerType, this._totalPulls, this._total5050 ?? 0, this._won5050 ?? 0, this._total6Pulls ?? 0, this._total5Pulls ?? 0, this._countMe) as EventBannerTypeStatEntity;
+
+            totalPullsRate = rating.totalPulls.rating;
+            luck6Rate = this._total6Pulls === null ? null : rating.luck6?.rating ?? null;
+            luck5Rate = this._total5Pulls === null ? null : rating.luck5?.rating ?? null;
+            win5050Rate = this._total5050 === null ? null : rating.luck5050?.rating ?? null;
+
+        } else {
+            const rating = await searcher.getBannerTypeStats(this._bannerType, this._totalPulls, this._total6Pulls ?? 0, this._total5Pulls ?? 0, this._countMe) as BannerTypeStatEntity;
+
+            totalPullsRate = rating.totalPulls.rating;
+            luck6Rate = this._total6Pulls === null ? null : rating.luck6?.rating ?? null;
+            luck5Rate = this._total5Pulls === null ? null : rating.luck5?.rating ?? null;
+        }
 
         this.status = 200;
         this.data = {
@@ -72,67 +99,5 @@ export class RankingRate extends Controller<
             luck6Rate,
             luck5Rate
         };
-    }
-
-    private getRate(allCount: number, gteCount: number, lteCount: number): ExcludeRange {
-        const gtCount = allCount - lteCount;
-        const ltCount = allCount - gteCount;
-
-        return this._countMe
-            ? {
-                from: ltCount / (allCount + 1),
-                to: 1 - (gtCount / (allCount + 1))
-            }
-            : {
-                from: ltCount / allCount,
-                to: 1 - (gtCount / allCount)
-            };
-    }
-
-    private async getPullsRate(all: number): Promise<ExcludeRange> {
-        const gte = await this._database.userBannerStats.countTotalPullsByBannerType(this._bannerType, { min: this._totalPulls });
-        const lte = await this._database.userBannerStats.countTotalPullsByBannerType(this._bannerType, { max: this._totalPulls });
-
-        return this.getRate(all, gte, lte);
-    }
-
-    private async getWinRate(): Promise<ExcludeRange | null> {
-        if (this._total5050 === null || this._won5050 === null) {
-            return null;
-        }
-
-        const winRate = this._won5050 / this._total5050;
-
-        const all = await this._database.userBannerStats.countWinRateByBannerType(this._bannerType);
-        const gte = await this._database.userBannerStats.countWinRateByBannerType(this._bannerType, { min: winRate });
-        const lte = await this._database.userBannerStats.countWinRateByBannerType(this._bannerType, { max: winRate });
-
-        return this.getRate(all, gte, lte);
-    }
-
-    private async getLuck5Rate(all: number): Promise<ExcludeRange | null> {
-        if (this._total5Pulls === null) {
-            return null;
-        }
-
-        const winRate = this._total5Pulls / this._totalPulls;
-
-        const gte = await this._database.userBannerStats.countLuck5ByBannerType(this._bannerType, { min: winRate });
-        const lte = await this._database.userBannerStats.countLuck5ByBannerType(this._bannerType, { max: winRate });
-
-        return this.getRate(all, gte, lte);
-    }
-
-    private async getLuck6Rate(all: number): Promise<ExcludeRange | null> {
-        if (this._total6Pulls === null) {
-            return null;
-        }
-
-        const winRate = this._total6Pulls / this._totalPulls;
-
-        const gte = await this._database.userBannerStats.countLuck6ByBannerType(this._bannerType, { min: winRate });
-        const lte = await this._database.userBannerStats.countLuck6ByBannerType(this._bannerType, { max: winRate });
-
-        return this.getRate(all, gte, lte);
     }
 }
