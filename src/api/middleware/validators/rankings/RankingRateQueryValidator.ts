@@ -43,16 +43,18 @@ export class RankingRateQueryValidator extends Validator<RankingRateQuery> {
     private static getTotal5050Rule(): ValidationRule<RankingRateQuery> {
         return new ValidationRule(
             item => typeof item.total5050 === "string"
-                && (item.total5050 === "null" || this.NUMBER_REGEX.test(item.total5050)),
-            "total5050 must be a number or null"
+                && this.NUMBER_REGEX.test(item.total5050)
+                || item.total5050 === undefined,
+            "total5050 must be a number or undefined"
         );
     }
 
     private static getWon5050Rule(): ValidationRule<RankingRateQuery> {
         return new ValidationRule(
             item => typeof item.won5050 === "string"
-                && (item.won5050 === "null" || this.NUMBER_REGEX.test(item.won5050)),
-            "won5050 must be a number or null"
+                && this.NUMBER_REGEX.test(item.won5050)
+                || item.won5050 === undefined,
+            "won5050 must be a number or undefined"
         );
     }
 
@@ -60,7 +62,7 @@ export class RankingRateQueryValidator extends Validator<RankingRateQuery> {
         return new ValidationRule(
             item => typeof item.bannerType === "string"
                 && ((item.bannerType === "all" || DbBannerType.isEvent(item.bannerType))
-                    ? item.total5050 !== "null" && item.won5050 !== "null"
+                    ? item.total5050 !== undefined && item.won5050 !== undefined
                     : true),
             "if bannerType is 'all' or EVENT type, total5050 and won5050 must be provided"
         );

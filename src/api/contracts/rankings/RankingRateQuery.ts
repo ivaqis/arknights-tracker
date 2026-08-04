@@ -6,7 +6,7 @@ export interface RankingRateQuery {
     totalPulls: string;
     total5Pulls: string;
     total6Pulls: string;
-    total5050: string | "null";
-    won5050: string | "null";
+    total5050?: string;
+    won5050?: string;
     countMe: BooleanString;
 }

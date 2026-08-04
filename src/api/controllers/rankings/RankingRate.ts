@@ -33,8 +33,8 @@ export class RankingRate extends Controller<
 
         this._bannerType = req.query.bannerType === "all" ? null : req.query.bannerType;
         this._totalPulls = parseInt(req.query.totalPulls);
-        this._total5050 = req.query.total5050 === "null" ? null : parseInt(req.query.total5050);
-        this._won5050 = req.query.won5050 === "null" ? null : parseInt(req.query.won5050);
+        this._total5050 = req.query.total5050 === undefined ? null : parseInt(req.query.total5050);
+        this._won5050 = req.query.won5050 === undefined ? null : parseInt(req.query.won5050);
         this._total5Pulls = parseInt(req.query.total5Pulls);
         this._total6Pulls = parseInt(req.query.total6Pulls);
         this._countMe = req.query.countMe === "true"
