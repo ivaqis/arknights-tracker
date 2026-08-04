@@ -1,4 +1,5 @@
 import { GlobalBannerStatsEntity } from "@database/entities/GlobalBannerStatsEntity";
+import { UserBannerTypeStatEntity } from "@database/entities/UserBannerTypeStatEntity";
 import { UserBannerStatRecord } from "@database/records/UserBannerStatRecord";
 import { UserCharBannerData } from "@database/repositories/interfaces/UserCharBannerData";
 import { UserCharBannerTypeData } from "@database/repositories/interfaces/UserCharBannerTypeData";
@@ -87,6 +88,10 @@ export class UserBannerStatsRepository extends Repository {
         };
     }
 
+    public async getBannerTypeStats(profileId: bigint, bannerType: DbBannerType): Promise<UserBannerTypeStatEntity> {
+        return this._userBannerStatsTable.getTypeStats(profileId, bannerType);
+    }
+
     public async updateWeaponBannerData(bannerData: UserWeaponBannerData) {
         await this._userBannerStatsTable.update(bannerData.stat);
         await this._userWeaponBannerPullsTable.update(bannerData.pulls);
@@ -129,6 +134,26 @@ export class UserBannerStatsRepository extends Repository {
 
     public async countLuck5ByBannerType(bannerType: DbBannerType | null, luckRate: IncludeRange = {}): Promise<number> {
         return this._userBannerStatsTable.countLuck5ByBannerType(bannerType, luckRate);
+    }
+
+    public async getRatingStats(bannerType: DbBannerType | null,
+                                totalPulls: number,
+                                luck6Ratio: number,
+                                luck5Ratio: number,
+                                win5050Ratio: number
+    ): Promise<{
+        totalUsers: number;
+        gteTotalPulls: number;
+        lteTotalPulls: number;
+        gteLuck6Ratio: number;
+        lteLuck6Ratio: number;
+        gteLuck5Ratio: number;
+        lteLuck5Ratio: number;
+        total5050Users: number;
+        gteWin5050Ratio: number;
+        lteWin5050Ratio: number
+    }> {
+        return this._userBannerStatsTable.getRatingStats(bannerType, totalPulls, luck6Ratio, luck5Ratio, win5050Ratio);
     }
 
     public async getGlobalBannerStats(bannerId: string): Promise<GlobalBannerStatsEntity> {
