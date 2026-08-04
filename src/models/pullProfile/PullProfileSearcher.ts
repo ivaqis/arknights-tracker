@@ -104,7 +104,7 @@ export class PullProfileSearcher {
         const winRate6 = total6 / totalPulls;
         const winRate5 = total5 / totalPulls;
 
-        const ratingStats = await this._database.userBannerStats.getRatingStats(bannerType, totalPulls, winRate6, winRate5, 0);
+        const ratingStats = await this._database.userBannerStats.getRatingStats(bannerType, totalPulls, total6, total5, 0, 0);
 
         let allUsers = ratingStats.totalUsers;
         if (countMe) {
@@ -151,7 +151,7 @@ export class PullProfileSearcher {
         const winRate5 = total5 / totalPulls;
         const winRate5050 = total5050 > 0 ? won5050 / total5050 : null;
 
-        const ratingStats = await this._database.userBannerStats.getRatingStats(bannerType, totalPulls, winRate6, winRate5, winRate5050 ?? 0);
+        const ratingStats = await this._database.userBannerStats.getRatingStats(bannerType, totalPulls, total6, total5, total5050, won5050);
 
         let allUsers = ratingStats.totalUsers;
         if (countMe) {

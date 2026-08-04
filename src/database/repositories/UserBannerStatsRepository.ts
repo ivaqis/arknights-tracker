@@ -138,9 +138,10 @@ export class UserBannerStatsRepository extends Repository {
 
     public async getRatingStats(bannerType: DbBannerType | null,
                                 totalPulls: number,
-                                luck6Ratio: number,
-                                luck5Ratio: number,
-                                win5050Ratio: number
+                                total6Count: number,
+                                total5Count: number,
+                                total5050Count: number,
+                                won5050Count: number
     ): Promise<{
         totalUsers: number;
         gteTotalPulls: number;
@@ -153,7 +154,7 @@ export class UserBannerStatsRepository extends Repository {
         gteWin5050Ratio: number;
         lteWin5050Ratio: number
     }> {
-        return this._userBannerStatsTable.getRatingStats(bannerType, totalPulls, luck6Ratio, luck5Ratio, win5050Ratio);
+        return this._userBannerStatsTable.getRatingStats(bannerType, totalPulls, total6Count, total5Count, total5050Count, won5050Count);
     }
 
     public async getGlobalBannerStats(bannerId: string): Promise<GlobalBannerStatsEntity> {

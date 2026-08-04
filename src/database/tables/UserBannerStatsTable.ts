@@ -216,9 +216,10 @@ export class UserBannerStatsTable extends Table<Prisma.UserBannerStatDelegate> {
 
     public async getRatingStats(bannerType: string | null,
                                 totalPulls: number,
-                                luck6Ratio: number,
-                                luck5Ratio: number,
-                                win5050Ratio: number
+                                total6Count: number,
+                                total5Count: number,
+                                total5050Count: number,
+                                won5050Count: number
     ): Promise<{
         totalUsers: number;
         gteTotalPulls: number;
@@ -243,16 +244,16 @@ export class UserBannerStatsTable extends Table<Prisma.UserBannerStatDelegate> {
                                   AND ${bannerType ? Prisma.sql`S."bannerType" = ${bannerType}` : Prisma.sql`TRUE`}
                                 GROUP BY S."profileId")
 
-            SELECT count(*)                                                    AS total_users,
-                   count(*) FILTER ( WHERE total_pulls >= ${totalPulls} )      AS gte_total_pulls,
-                   count(*) FILTER ( WHERE total_pulls <= ${totalPulls} )      AS lte_total_pulls,
-                   count(*) FILTER ( WHERE luck_6_ratio >= ${luck6Ratio} )     AS gte_luck_6_ratio,
-                   count(*) FILTER ( WHERE luck_6_ratio <= ${luck6Ratio} )     AS lte_luck_6_ratio,
-                   count(*) FILTER ( WHERE luck_5_ratio >= ${luck5Ratio} )     AS gte_luck_5_ratio,
-                   count(*) FILTER ( WHERE luck_5_ratio <= ${luck5Ratio} )     AS lte_luck_5_ratio,
-                   count(*) FILTER ( WHERE total_5050 > 0 )                    AS total_5050_users,
-                   count(*) FILTER ( WHERE win_5050_ratio >= ${win5050Ratio} ) AS gte_win_5050_ratio,
-                   count(*) FILTER ( WHERE win_5050_ratio <= ${win5050Ratio} ) AS lte_win_5050_ratio
+            SELECT count(*)                                                                                         AS total_users,
+                   count(*) FILTER ( WHERE total_pulls >= ${totalPulls} )                                           AS gte_total_pulls,
+                   count(*) FILTER ( WHERE total_pulls <= ${totalPulls} )                                           AS lte_total_pulls,
+                   count(*) FILTER ( WHERE luck_6_ratio >= 1.0 * ${total6Count} / ${totalPulls} )                   AS gte_luck_6_ratio,
+                   count(*) FILTER ( WHERE luck_6_ratio <= 1.0 * ${total6Count} / ${totalPulls} )                   AS lte_luck_6_ratio,
+                   count(*) FILTER ( WHERE luck_5_ratio >= 1.0 * ${total5Count} / ${totalPulls} )                   AS gte_luck_5_ratio,
+                   count(*) FILTER ( WHERE luck_5_ratio <= 1.0 * ${total5Count} / ${totalPulls} )                   AS lte_luck_5_ratio,
+                   count(*) FILTER ( WHERE total_5050 > 0 )                                                         AS total_5050_users,
+                   count(*) FILTER ( WHERE win_5050_ratio >= 1.0 * ${won5050Count} / nullif(${total5050Count}, 0) ) AS gte_win_5050_ratio,
+                   count(*) FILTER ( WHERE win_5050_ratio <= 1.0 * ${won5050Count} / nullif(${total5050Count}, 0) ) AS lte_win_5050_ratio
             FROM pull_stats`;
 
         const result = await this.prisma.$queryRaw<{
