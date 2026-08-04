@@ -7,7 +7,6 @@ import { Controller } from "@api/controllers/Controller";
 import { GetUserProfile } from "@api/controllers/userProfile/GetUserProfile";
 import { Database } from "@database/Database";
 import { ContractRecord } from "@models/contingencyContract/ContractRecord";
-import { GameProfileEntity } from "@models/gameProfile/entities/GameProfileEntity";
 import { FirebaseAuthenticator } from "@services/firebaseAuth/FirebaseAuthenticator";
 import { bannedWords, crisisContractRecords } from "@staticModels/instances";
 import e from "express";
@@ -103,19 +102,15 @@ export class UpdateUserProfile
         }
 
         const newProfile = await this._database.users.updateUser(profile);
-        const gameProfiles = await this.getGameProfiles(newProfile.uid);
-        const gameUids = gameProfiles.map(profile => profile.base.roleId);
+        const gameProfiles = await this._database.gameProfiles.findByUid(profile.uid);
+        const gameProfilesData = gameProfiles.map(profile => profile.data.getEntity());
+        const gameUids = gameProfilesData.map(profile => profile.base.roleId);
         const bestRecords = await this.getBestRecords(gameUids);
+        const pullStats = await GetUserProfile.getPullsStats(this._database, gameProfiles);
 
-        this.data = GetUserProfile.getRespData(newProfile, gameProfiles, bestRecords);
+        this.data = GetUserProfile.getRespData(newProfile, gameProfilesData, bestRecords, pullStats);
 
         return;
-    }
-
-    private async getGameProfiles(uid: bigint): Promise<GameProfileEntity[]> {
-        const profiles = await this._database.gameProfiles.findByUid(uid);
-
-        return profiles.map(profile => profile.data.getEntity());
     }
 
     private async getBestRecords(gameUids: string[]): Promise<Record<string, ContractRecord | null>> {

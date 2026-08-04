@@ -122,7 +122,7 @@ export class CreateUserProfile extends Controller<
 
         const newProfile = await this._database.users.updateUser(profile);
 
-        this.data = GetUserProfile.getRespData(newProfile, [], {});
+        this.data = GetUserProfile.getRespData(newProfile, [], {}, {});
 
         return;
     }
