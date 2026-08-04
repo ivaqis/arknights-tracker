@@ -4,9 +4,9 @@ import { BooleanString } from "@models/validation/BooleanStringValidationRule";
 export interface RankingRateQuery {
     bannerType: DbBannerType | "all";
     totalPulls: string;
+    total5Pulls: string;
+    total6Pulls: string;
     total5050: string | "null";
     won5050: string | "null";
-    total5Pulls: string | "null";
-    total6Pulls: string | "null";
     countMe: BooleanString;
 }

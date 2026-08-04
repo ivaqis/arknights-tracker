@@ -58,25 +58,27 @@ export class RankingRateQueryValidator extends Validator<RankingRateQuery> {
 
     private static get5050Rule(): ValidationRule<RankingRateQuery> {
         return new ValidationRule(
-            item => item.total5050 === "null" && item.won5050 === "null"
-                || item.total5050 !== "null" && item.won5050 !== "null",
-            "if total5050 or won5050 provided, won5050 and total5050 both must be provided"
+            item => typeof item.bannerType === "string"
+                && ((item.bannerType === "all" || DbBannerType.isEvent(item.bannerType))
+                    ? item.total5050 !== "null" && item.won5050 !== "null"
+                    : true),
+            "if bannerType is 'all' or EVENT type, total5050 and won5050 must be provided"
         );
     }
 
     private static getTotal5PullsRule(): ValidationRule<RankingRateQuery> {
         return new ValidationRule(
             item => typeof item.total5Pulls === "string"
-                && (item.total5Pulls === "null" || this.NUMBER_REGEX.test(item.total5Pulls)),
-            "total5Pulls must be a number or null"
+                && this.NUMBER_REGEX.test(item.total5Pulls),
+            "total5Pulls must be a number"
         );
     }
 
     private static getTotal6PullsRule(): ValidationRule<RankingRateQuery> {
         return new ValidationRule(
             item => typeof item.total6Pulls === "string"
-                && (item.total6Pulls === "null" || this.NUMBER_REGEX.test(item.total6Pulls)),
-            "total6Pulls must be a number or null"
+                && this.NUMBER_REGEX.test(item.total6Pulls),
+            "total6Pulls must be a number"
         );
     }
 

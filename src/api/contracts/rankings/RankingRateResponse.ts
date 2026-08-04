@@ -1,8 +1,9 @@
-import { ExcludeRange } from "@models/ExcludeRange";
+import { BannerTypeStatEntity } from "@models/pullProfile/entities/BannerTypeStatEntity";
+import { EventBannerTypeStatEntity } from "@models/pullProfile/entities/EventBannerTypeStatEntity";
 
 export interface RankingRateResponse {
-    totalPullsRate: ExcludeRange;
-    win5050Rate: ExcludeRange | null;
-    luck6Rate: ExcludeRange | null;
-    luck5Rate: ExcludeRange | null;
+    stats:
+        | EventBannerTypeStatEntity
+        | BannerTypeStatEntity
+        | null;
 }
