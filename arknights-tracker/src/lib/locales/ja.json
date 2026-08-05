@@ -855,7 +855,9 @@
   },
   "common": {
     "copy": "コピー",
-    "copied": "コピーしました！"
+    "copied": "コピーしました！",
+    "previous": "前へ",
+    "next": "次へ"
   },
   "global": {
     "title": "全体統計",

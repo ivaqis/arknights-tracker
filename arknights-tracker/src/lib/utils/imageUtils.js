@@ -10,7 +10,7 @@ const extractIds = (list) => {
 };
 
 const apiIdToCharId = Object.values(characters || {}).reduce((acc, char) => {
-    if (char && char.apiId) {
+    if (char?.apiId) {
         acc[char.apiId] = char.id;
     }
     return acc;
@@ -28,7 +28,7 @@ export function normalizeId(str) {
     if (apiIdToCharId[clean]) {
         return apiIdToCharId[clean];
     }
-    return clean.replace(/\s+/g, "_").replace(/[^a-zA-Z0-9_\-\.]/g, "");
+    return clean.replace(/\s+/g, "_").replace(/[^a-zA-Z0-9_\-.]/g, "");
 }
 
 export function getImagePath(idOrName, variant = 'operator-icon') {
@@ -36,7 +36,13 @@ export function getImagePath(idOrName, variant = 'operator-icon') {
     if (idOrName.toString().startsWith("http")) return idOrName;
 
     const name = normalizeId(idOrName);
-    const withExt = (n, defaultExt = 'png') => IMAGE_EXT_REGEX.test(n) ? n : `${n}.${defaultExt}`;
+    const withExt = (n, defaultExt = 'png') => {
+        if (!IMAGE_EXT_REGEX.test(n)) return `${n}.${defaultExt}`;
+        if (defaultExt === 'webp') {
+            return n.replace(IMAGE_EXT_REGEX, '.webp');
+        }
+        return n;
+    };
 
     switch (variant) {
         case 'operator-splash':

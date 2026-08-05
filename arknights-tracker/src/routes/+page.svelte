@@ -444,6 +444,7 @@
                   id={activeBanners[currentBannerIndex].icon}
                   interactive={true}
                   variant="banner-icon"
+                  priority={true}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
                 <div
@@ -470,6 +471,7 @@
             {/key}
             <button
               type="button"
+              aria-label={$t("common.previous")}
               class="absolute left-2 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center bg-black/30 hover:bg-[#FACC15] text-white hover:text-[#21272C] backdrop-blur-sm rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 z-10 hover:scale-110"
               on:click|stopPropagation={() => {
                 currentBannerIndex =
@@ -481,6 +483,7 @@
             </button>
             <button
               type="button"
+              aria-label={$t("common.next")}
               class="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center bg-black/30 hover:bg-[#FACC15] text-white hover:text-[#21272C] backdrop-blur-sm rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 z-10 hover:scale-110"
               on:click|stopPropagation={() => {
                 currentBannerIndex =

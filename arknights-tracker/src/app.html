@@ -6,7 +6,10 @@
     <link rel="icon" href="%sveltekit.assets%/favicon.png" />
     <link rel="apple-touch-icon" href="%sveltekit.assets%/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script src="%sveltekit.assets%/config.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;800&display=swap" />
+    <script src="%sveltekit.assets%/config.js" defer></script>
     
     <script>
         var isDark = localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches);

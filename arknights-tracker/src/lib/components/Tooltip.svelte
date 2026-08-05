@@ -92,8 +92,7 @@
 
 <span
   bind:this={triggerEl}
-  role="button"
-  tabindex="-1"
+  role="presentation"
   on:mouseenter={show}
   on:mouseleave={hide}
   on:focus={show}

@@ -897,7 +897,9 @@
   },
   "common": {
     "copy": "複製",
-    "copied": "已複製！"
+    "copied": "已複製！",
+    "previous": "上一頁",
+    "next": "下一頁"
   },
   "global": {
     "title": "全服統計",

@@ -13,7 +13,6 @@
   export let customGameUid = undefined;
   export let isProfile = false;
   export let hideBorders = false;
-  $: console.log({hideBorders: hideBorders ? 'border-gray-100/20' : 'border-gray-100'})
 
   const { accounts, selectedId } = accountStore;
   

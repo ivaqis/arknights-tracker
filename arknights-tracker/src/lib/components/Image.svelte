@@ -1,3 +1,7 @@
+<script context="module">
+    const loadedCache = new Set();
+</script>
+
 <script>
     import { getImagePath } from "$lib/utils/imageUtils";
 
@@ -11,6 +15,9 @@
     export let className = ""; 
     export let style = "";
     export let interactive = false;
+    export let priority = false;
+    export let loading = "lazy";
+    export let fetchpriority = "auto";
 
     $: rawId = id || (item?.icon) || (item?.id) || (item?.name);
     $: initialSrc = getImagePath(rawId, variant);
@@ -41,17 +48,20 @@
     let currentSrc = "";
     let hasError = false;
     let isVisible = false;
+    let isInstant = false;
 
     $: {
         candidates = getCandidates(initialSrc);
         candidateIndex = 0;
         currentSrc = candidates[0] || "";
         hasError = false;
-        isVisible = false;
+        isInstant = loadedCache.has(currentSrc);
+        isVisible = isInstant;
     }
 
     function imageHandler(node) {
         function handleLoad() {
+            if (currentSrc) loadedCache.add(currentSrc);
             isVisible = true;
             hasError = false;
         }
@@ -71,6 +81,7 @@
         node.addEventListener('error', handleErr);
 
         if (node.complete && node.naturalWidth > 0) {
+            isInstant = true;
             handleLoad();
         }
 
@@ -89,7 +100,7 @@
         : "image-rendering: -webkit-optimize-contrast; transform: translateZ(0); backface-visibility: hidden;";
     $: hasObjectFit = (className || "").split(' ').some(c => c.startsWith('object-'));
 </script>
- 
+
 {#if hasError}
     <div 
         class="{className} flex items-center justify-center bg-gray-100 dark:bg-[#3d3d3d] text-gray-400 dark:text-[#7A7A7A]"
@@ -104,11 +115,12 @@
         src={currentSrc}
         use:imageHandler
         alt={alt || rawId}
-        loading="lazy"
+        loading={priority ? "eager" : loading}
+        fetchpriority={priority ? "high" : fetchpriority}
         decoding="async"
         referrerpolicy="no-referrer"
         draggable={interactive ? "true" : "false"}
-        class="{className} {hasObjectFit ? '' : 'object-cover'} antialiased transition-opacity duration-300 {interactive ? '' : 'pointer-events-none select-none'} {isVisible ? 'opacity-100' : 'opacity-0'}"
+        class="{className} {hasObjectFit ? '' : 'object-cover'} antialiased {isInstant ? '' : 'transition-opacity duration-300'} {interactive ? '' : 'pointer-events-none select-none'} {isVisible ? 'opacity-100' : 'opacity-0'}"
         style="{smoothImageStyles} {sizeStyle} {style}"
     />
 {/if}

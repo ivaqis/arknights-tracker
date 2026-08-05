@@ -235,6 +235,7 @@
                         >
                             <a
                                 href="/"
+                                aria-label="Goyfield - Arknights Endfield Pull Tracker"
                                 class="block hover:opacity-80 transition-opacity"
                             >
                                 <Icon name="siteLogo" class="w-full h-auto" />

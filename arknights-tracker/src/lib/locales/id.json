@@ -855,7 +855,9 @@
   },
   "common": {
     "copy": "Salin",
-    "copied": "Disalin!"
+    "copied": "Disalin!",
+    "previous": "Sebelumnya",
+    "next": "Selanjutnya"
   },
   "global": {
     "title": "Statistik Global",

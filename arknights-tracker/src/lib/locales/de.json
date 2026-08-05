@@ -855,7 +855,9 @@
   },
   "common": {
     "copy": "Kopieren",
-    "copied": "Kopiert!"
+    "copied": "Kopiert!",
+    "previous": "Zurück",
+    "next": "Weiter"
   },
   "global": {
     "title": "Globale Statistik",

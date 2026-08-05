@@ -897,7 +897,9 @@
   },
   "common": {
     "copy": "Sao chép",
-    "copied": "Đã chép!"
+    "copied": "Đã chép!",
+    "previous": "Trước",
+    "next": "Tiếp"
   },
   "global": {
     "title": "Thống kê Toàn cầu",
