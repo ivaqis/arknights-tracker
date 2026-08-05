@@ -25,7 +25,7 @@ export class Authenticator implements IService {
             return false;
         }
 
-        const creds = this.getAuthCredentials(authHeader);
+        const creds = this.getCredentials(authHeader);
 
         if (!creds) {
             return false;
@@ -44,7 +44,17 @@ export class Authenticator implements IService {
         return false;
     }
 
-    public static getAuthCredentials(authHeader: string): { type: string; cred: string } | null {
+    public static getAuthCredentials(req: e.Request<core.ParamsDictionary, any, any, any>): { type: string; cred: string } | null {
+        const header = req.get("Authorization");
+
+        if (!header) {
+            return null;
+        }
+
+        return this.getCredentials(header);
+    }
+
+    private static getCredentials(authHeader: string): { type: string; cred: string } | null {
         const parts = authHeader.split(" ").filter(Boolean);
 
         if (parts.length !== 2) {
@@ -73,12 +83,8 @@ export class Authenticator implements IService {
 
         const profile = await this._database.users.findUserByFirebaseUid(firebaseUid);
 
-        if (!profile) {
-            return null;
-        }
-
         return {
-            uid: profile.uid,
+            uid: profile?.uid ?? null,
             firebaseUid
         };
     }

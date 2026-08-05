@@ -1,12 +1,12 @@
-import { avatarUploader, database, firebase, sightengine } from "@/serviceInstances";
+import { authenticator, avatarUploader, database, sightengine } from "@/serviceInstances";
 import { ResponseBody } from "@api/contracts/ResponseBody";
 import { UploadAvatarQuery } from "@api/contracts/uploadAvatar/UploadAvatarQuery";
 import { UploadAvatarRequest } from "@api/contracts/uploadAvatar/UploadAvatarRequest";
 import { UploadAvatarResponse } from "@api/contracts/uploadAvatar/UploadAvatarResponse";
 import { Controller } from "@api/controllers/Controller";
 import { Database } from "@database/Database";
+import { Authenticator } from "@services/auth/Authenticator";
 import { AvatarUploader } from "@services/avatarUploader/AvatarUploader";
-import { FirebaseAuthenticator } from "@services/firebaseAuth/FirebaseAuthenticator";
 import { ImageValidator } from "@services/imageValidator/ImageValidator";
 import { SightengineNsfwValidator } from "@services/sightengineNsfwValidator/SightengineNsfwValidator";
 import e from "express";
@@ -22,12 +22,11 @@ export class UploadAvatar extends Controller<
     public readonly name = "UploadAvatar";
 
     private readonly _database: Database = database;
-    private readonly _firebase: FirebaseAuthenticator = firebase;
+    private readonly _auth: Authenticator = authenticator;
     private readonly _uploader: AvatarUploader = avatarUploader;
     private readonly _sightengine: SightengineNsfwValidator = sightengine;
 
     private readonly _uid: string;
-    private readonly _firebaseToken: string;
     private readonly _image: string;
     private readonly _filename: string | null;
 
@@ -35,7 +34,6 @@ export class UploadAvatar extends Controller<
         super(req, res);
 
         this._uid = req.query.uid;
-        this._firebaseToken = req.query.uid;
         this._image = req.body.image;
         this._filename = req.body.filename ?? null;
     }
@@ -56,14 +54,17 @@ export class UploadAvatar extends Controller<
             return;
         }
 
-        const firebaseUid = await this._firebase.getFirebaseUid(this._firebaseToken);
+        const cred = Authenticator.getAuthCredentials(this.req)!;
+        const authData = await this._auth.authByFirebase(cred.cred);
 
-        if (!firebaseUid) {
+        if (!authData) {
             this.status = 401;
             this.message = "Unauthorized";
 
             return;
         }
+
+        const firebaseUid = authData.firebaseUid;
 
         const profile = await this._database.users.findUserByPublicUid(this._uid);
 

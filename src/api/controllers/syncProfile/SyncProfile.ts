@@ -1,4 +1,4 @@
-import { database, firebase } from "@/serviceInstances";
+import { authenticator, database } from "@/serviceInstances";
 import { lastGameProfileSyncCache } from "@api/cache/lastGameProfileSyncCache";
 import { ResponseBody } from "@api/contracts/ResponseBody";
 import { SyncProfileQuery } from "@api/contracts/syncProfile/SyncProfileQuery";
@@ -13,8 +13,8 @@ import { Character } from "@models/gameProfile/Character";
 import { GameProfile } from "@models/gameProfile/GameProfile";
 import { MonumentGroup } from "@models/monument/MonumentGroup";
 import { MonumentRecord } from "@models/monument/MonumentRecord";
+import { Authenticator } from "@services/auth/Authenticator";
 import { EndfieldDataFetcher } from "@services/endfieldDataFetcher/EndfieldDataFetcher";
-import { FirebaseAuthenticator } from "@services/firebaseAuth/FirebaseAuthenticator";
 import e from "express";
 import { LRUCache } from "lru-cache";
 
@@ -29,11 +29,10 @@ export class SyncProfile extends Controller<
     public readonly name = "SyncProfile";
 
     private readonly _database: Database = database;
-    private readonly _firebase: FirebaseAuthenticator = firebase;
+    private readonly _auth: Authenticator = authenticator;
     private readonly _cache: LRUCache<string, Date, unknown> = lastGameProfileSyncCache;
 
     private readonly _uid: string;
-    private readonly _firebaseToken: string;
     private readonly _serverIds: string[];
     private readonly _token: string;
 
@@ -41,7 +40,6 @@ export class SyncProfile extends Controller<
         super(req, res);
 
         this._uid = req.query.uid;
-        this._firebaseToken = req.query.firebaseToken;
         this._serverIds = req.body.serverIds;
         this._token = req.body.token;
     }
@@ -53,14 +51,17 @@ export class SyncProfile extends Controller<
     }
 
     protected async execute(): Promise<void> {
-        const firebaseUid = await this._firebase.getFirebaseUid(this._firebaseToken);
+        const cred = Authenticator.getAuthCredentials(this.req)!;
+        const authData = await this._auth.authByFirebase(cred.cred);
 
-        if (!firebaseUid) {
+        if (!authData) {
             this.status = 401;
             this.message = "Unauthorized";
 
             return;
         }
+
+        const firebaseUid = authData.firebaseUid;
 
         const cachedDate = this._cache.get(firebaseUid);
         if (cachedDate) {

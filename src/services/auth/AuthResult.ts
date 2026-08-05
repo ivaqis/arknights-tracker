@@ -1,3 +1,3 @@
 export interface AuthResult {
-    uid: bigint;
+    uid: bigint | null;
 }

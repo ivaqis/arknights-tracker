@@ -11,18 +11,8 @@ export class UpdateUserProfileQueryValidator extends Validator<UpdateUserProfile
 
     private static getRules(): ValidationRule<UpdateUserProfileQuery>[] {
         return [
-            this.getFirebaseTokenRule(),
             this.getUidRule(),
         ];
-    }
-
-    private static getFirebaseTokenRule(): ValidationRule<UpdateUserProfileQuery> {
-        const rule = new StringValidationRule(true);
-
-        return new ValidationRule(
-            item => rule.isValid(item.firebaseToken),
-            "firebaseToken must be a string"
-        );
     }
 
     private static getUidRule(): ValidationRule<UpdateUserProfileQuery> {

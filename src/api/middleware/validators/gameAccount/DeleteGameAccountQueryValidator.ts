@@ -1,6 +1,5 @@
 import { DeleteGameAccountQuery } from "@api/contracts/gameAccount/DeleteGameAccountQuery";
 import { GameUidValidationRule } from "@models/validation/GameUidValidationRule";
-import { StringValidationRule } from "@models/validation/StringValidationRule";
 import { UsernameValidationRule } from "@models/validation/UsernameValidationRule";
 import { ValidationRule } from "@models/validation/ValidationRule";
 import { Validator } from "@models/validation/Validator";
@@ -15,7 +14,6 @@ export class DeleteGameAccountQueryValidator extends Validator<DeleteGameAccount
         return [
             this.getUidRule(),
             this.getGameUidRule(),
-            this.getFirebaseTokenRule()
         ];
     }
 
@@ -25,15 +23,6 @@ export class DeleteGameAccountQueryValidator extends Validator<DeleteGameAccount
         return new ValidationRule(
             item => rule.isValid(item.uid),
             "uid must be a string of digits"
-        );
-    }
-
-    private static getFirebaseTokenRule(): ValidationRule<DeleteGameAccountQuery> {
-        const rule = new StringValidationRule(true);
-
-        return new ValidationRule(
-            item => rule.isValid(item.firebaseToken),
-            "firebaseToken must be a string"
         );
     }
 

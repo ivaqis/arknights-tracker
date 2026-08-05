@@ -1,4 +1,4 @@
-import { database, firebase } from "@/serviceInstances";
+import { authenticator, database, firebase } from "@/serviceInstances";
 import { ResponseBody } from "@api/contracts/ResponseBody";
 import { UpdateUserProfileQuery } from "@api/contracts/userProfile/UpdateUserProfileQuery";
 import { UpdateUserProfileRequest } from "@api/contracts/userProfile/UpdateUserProfileRequest";
@@ -7,6 +7,7 @@ import { Controller } from "@api/controllers/Controller";
 import { GetUserProfile } from "@api/controllers/userProfile/GetUserProfile";
 import { Database } from "@database/Database";
 import { ContractRecord } from "@models/contingencyContract/ContractRecord";
+import { Authenticator } from "@services/auth/Authenticator";
 import { FirebaseAuthenticator } from "@services/firebaseAuth/FirebaseAuthenticator";
 import { bannedWords, crisisContractRecords } from "@staticModels/instances";
 import e from "express";
@@ -21,9 +22,8 @@ export class UpdateUserProfile
     public readonly name = "UpdateUserProfile";
 
     private readonly _database: Database = database;
-    private readonly _firebase: FirebaseAuthenticator = firebase;
+    private readonly _auth: Authenticator = authenticator;
 
-    private readonly _firebaseToken: string;
     private readonly _uid: string;
     private readonly _newUid?: string;
     private readonly _isPrivate?: boolean;
@@ -32,7 +32,6 @@ export class UpdateUserProfile
     private constructor(req: e.Request<{}, ResponseBody<UpdateUserProfileResponse>, UpdateUserProfileRequest, UpdateUserProfileQuery>, res: e.Response<ResponseBody<UpdateUserProfileResponse>>) {
         super(req, res);
 
-        this._firebaseToken = req.query.firebaseToken;
         this._uid = req.query.uid;
         this._newUid = req.body.newUid;
         this._isPrivate = req.body.isPrivate;
@@ -46,14 +45,17 @@ export class UpdateUserProfile
     }
 
     protected async execute(): Promise<void> {
-        const firebaseUid = await this._firebase.getFirebaseUid(this._firebaseToken);
+        const cred = Authenticator.getAuthCredentials(this.req)!;
+        const authData = await this._auth.authByFirebase(cred.cred);
 
-        if (!firebaseUid) {
+        if (!authData) {
             this.status = 401;
             this.message = "Unauthorized";
 
             return;
         }
+
+        const firebaseUid = authData.firebaseUid;
 
         const profile = await this._database.users.findUserByPublicUid(this._uid);
 

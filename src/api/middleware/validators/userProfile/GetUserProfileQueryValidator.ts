@@ -11,7 +11,6 @@ export class GetUserProfileQueryValidator extends Validator<GetUserProfileQuery>
     private static getRules(): ValidationRule<GetUserProfileQuery>[] {
         return [
             this.getUidRule(),
-            this.getFirebaseTokenRule()
         ];
     }
 
@@ -21,15 +20,6 @@ export class GetUserProfileQueryValidator extends Validator<GetUserProfileQuery>
         return new ValidationRule(
             item => rule.isValid(item.uid),
             "uid must be a not-empty string matches \\w"
-        );
-    }
-
-    private static getFirebaseTokenRule(): ValidationRule<GetUserProfileQuery> {
-        const rule = new StringValidationRule();
-
-        return new ValidationRule(
-            item => rule.isValid(item.firebaseToken),
-            "firebaseToken must be a string"
         );
     }
 }

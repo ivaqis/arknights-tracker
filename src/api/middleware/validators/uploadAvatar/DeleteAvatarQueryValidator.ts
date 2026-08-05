@@ -1,5 +1,4 @@
 import { DeleteAvatarQuery } from "@api/contracts/uploadAvatar/DeleteAvatarQuery";
-import { StringValidationRule } from "@models/validation/StringValidationRule";
 import { UsernameValidationRule } from "@models/validation/UsernameValidationRule";
 import { ValidationRule } from "@models/validation/ValidationRule";
 import { Validator } from "@models/validation/Validator";
@@ -12,18 +11,8 @@ export class DeleteAvatarQueryValidator extends Validator<DeleteAvatarQuery> {
 
     private static getRules(): ValidationRule<DeleteAvatarQuery>[] {
         return [
-            this.getFirebaseTokenRule(),
             this.getUidRule()
         ];
-    }
-
-    private static getFirebaseTokenRule(): ValidationRule<DeleteAvatarQuery> {
-        const rule = new StringValidationRule(true);
-
-        return new ValidationRule(
-            item => rule.isValid(item.firebaseToken),
-            "firebaseToken must be a string"
-        );
     }
 
     private static getUidRule(): ValidationRule<DeleteAvatarQuery> {

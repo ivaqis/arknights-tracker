@@ -1,10 +1,11 @@
-import { database, firebase } from "@/serviceInstances";
+import { authenticator, database, firebase } from "@/serviceInstances";
 import { ResponseBody } from "@api/contracts/ResponseBody";
 import { LinkUserPullsQuery } from "@api/contracts/userPulls/LinkUserPullsQuery";
 import { LinkUserPullsRequest } from "@api/contracts/userPulls/LinkUserPullsRequest";
 import { LinkUserPullsResponse } from "@api/contracts/userPulls/LinkUserPullsResponse";
 import { Controller } from "@api/controllers/Controller";
 import { Database } from "@database/Database";
+import { Authenticator } from "@services/auth/Authenticator";
 import { FirebaseAuthenticator } from "@services/firebaseAuth/FirebaseAuthenticator";
 import e from "express";
 
@@ -17,29 +18,30 @@ export class LinkUserPulls extends Controller<
     public readonly name = "LinkUserPulls";
 
     private readonly _database: Database = database;
-    private readonly _firebase: FirebaseAuthenticator = firebase;
+    private readonly _auth: Authenticator = authenticator;
 
-    private readonly _firebaseToken: string;
     private readonly _gameUid: string;
     private readonly _privateId: string;
 
     public constructor(req: e.Request<{}, ResponseBody<LinkUserPullsResponse>, LinkUserPullsRequest, LinkUserPullsQuery>, res: e.Response<ResponseBody<LinkUserPullsResponse>>) {
         super(req, res);
 
-        this._firebaseToken = req.query.firebaseToken;
         this._gameUid = req.query.gameUid;
         this._privateId = req.body.privateId;
     }
 
     protected async execute(): Promise<void> {
-        const firebaseUid = await this._firebase.getFirebaseUid(this._firebaseToken);
+        const cred = Authenticator.getAuthCredentials(this.req)!;
+        const authData = await this._auth.authByFirebase(cred.cred);
 
-        if (!firebaseUid) {
+        if (!authData) {
             this.status = 401;
             this.message = "Unauthorized";
 
             return;
         }
+
+        const firebaseUid = authData.firebaseUid;
 
         const gameProfile = await this._database.gameProfiles.find(this._gameUid);
 

@@ -1,13 +1,12 @@
-import { avatarUploader, database, firebase, sightengine } from "@/serviceInstances";
+import { authenticator, avatarUploader, database, sightengine } from "@/serviceInstances";
 import { ResponseBody } from "@api/contracts/ResponseBody";
-import { CreateUserProfileQuery } from "@api/contracts/userProfile/CreateUserProfileQuery";
 import { CreateUserProfileRequest } from "@api/contracts/userProfile/CreateUserProfileRequest";
 import { CreateUserProfileResponse } from "@api/contracts/userProfile/CreateUserProfileResponse";
 import { Controller } from "@api/controllers/Controller";
 import { GetUserProfile } from "@api/controllers/userProfile/GetUserProfile";
 import { Database } from "@database/Database";
+import { Authenticator } from "@services/auth/Authenticator";
 import { AvatarUploader } from "@services/avatarUploader/AvatarUploader";
-import { FirebaseAuthenticator } from "@services/firebaseAuth/FirebaseAuthenticator";
 import { ImageValidator } from "@services/imageValidator/ImageValidator";
 import { SightengineNsfwValidator } from "@services/sightengineNsfwValidator/SightengineNsfwValidator";
 import { bannedWords } from "@staticModels/instances";
@@ -17,26 +16,24 @@ export class CreateUserProfile extends Controller<
     {},
     CreateUserProfileResponse,
     CreateUserProfileRequest,
-    CreateUserProfileQuery
+    undefined
 > {
     public readonly name = "CreateUserProfile";
 
     private readonly _database: Database = database;
-    private readonly _firebase: FirebaseAuthenticator = firebase;
+    private readonly _auth: Authenticator = authenticator;
     private readonly _uploader: AvatarUploader = avatarUploader;
     private readonly _sightengine: SightengineNsfwValidator = sightengine;
 
-    private readonly _firebaseToken: string;
     private readonly _uid: string;
     private readonly _isPrivate: boolean;
     private readonly _avatarImage: string | null;
     private readonly _filename: string | null;
     private readonly _backgroundId: string | null;
 
-    private constructor(req: e.Request<{}, ResponseBody<CreateUserProfileResponse>, CreateUserProfileRequest, CreateUserProfileQuery>, res: e.Response<ResponseBody<CreateUserProfileResponse>>) {
+    private constructor(req: e.Request<{}, ResponseBody<CreateUserProfileResponse>, CreateUserProfileRequest, undefined>, res: e.Response<ResponseBody<CreateUserProfileResponse>>) {
         super(req, res);
 
-        this._firebaseToken = req.query.firebaseToken;
         this._uid = req.body.publicUid;
         this._isPrivate = req.body.isPrivate;
         this._avatarImage = req.body.avatarImage;
@@ -44,21 +41,24 @@ export class CreateUserProfile extends Controller<
         this._backgroundId = req.body.backgroundId;
     }
 
-    public static async post(req: e.Request<{}, ResponseBody<CreateUserProfileResponse>, CreateUserProfileRequest, CreateUserProfileQuery>, res: e.Response<ResponseBody<CreateUserProfileResponse>>) {
+    public static async post(req: e.Request<{}, ResponseBody<CreateUserProfileResponse>, CreateUserProfileRequest, undefined>, res: e.Response<ResponseBody<CreateUserProfileResponse>>) {
         const controller = new CreateUserProfile(req, res);
 
         await controller.safeExecute();
     }
 
     protected async execute(): Promise<void> {
-        const firebaseUid = await this._firebase.getFirebaseUid(this._firebaseToken);
+        const cred = Authenticator.getAuthCredentials(this.req)!;
+        const authData = await this._auth.authByFirebase(cred.cred);
 
-        if (!firebaseUid) {
+        if (!authData) {
             this.status = 401;
             this.message = "Unauthorized";
 
             return;
         }
+
+        const firebaseUid = authData.firebaseUid;
 
         const profiles = await this._database.users.findManyUsersByFirebaseUid(firebaseUid);
 

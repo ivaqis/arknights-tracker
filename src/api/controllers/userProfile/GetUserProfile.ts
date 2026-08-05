@@ -1,4 +1,4 @@
-import { database, firebase } from "@/serviceInstances";
+import { authenticator, database, firebase } from "@/serviceInstances";
 import { ResponseBody } from "@api/contracts/ResponseBody";
 import { GetUserProfileQuery } from "@api/contracts/userProfile/GetUserProfileQuery";
 import { GetUserProfileResponse } from "@api/contracts/userProfile/GetUserProfileResponse";
@@ -11,6 +11,7 @@ import { ContractRecord } from "@models/contingencyContract/ContractRecord";
 import { GameProfileEntity } from "@models/gameProfile/entities/GameProfileEntity";
 import { PullProfileEntity } from "@models/pullProfile/entities/PullProfileEntity";
 import { PullProfileSearcher } from "@models/pullProfile/PullProfileSearcher";
+import { Authenticator } from "@services/auth/Authenticator";
 import { FirebaseAuthenticator } from "@services/firebaseAuth/FirebaseAuthenticator";
 import { crisisContractRecords } from "@staticModels/instances";
 import e from "express";
@@ -24,20 +25,18 @@ export class GetUserProfile extends Controller<
     public readonly name = "GetUserProfile";
 
     private readonly _database: Database = database;
-    private readonly _firebase: FirebaseAuthenticator = firebase;
+    private readonly _auth: Authenticator = authenticator;
 
     private readonly _publicUid: string;
-    private readonly _firebaseToken?: string;
 
     private constructor(req: e.Request<{}, ResponseBody<GetUserProfileResponse>, {}, GetUserProfileQuery>,
                         res: e.Response<ResponseBody<GetUserProfileResponse>>
     ) {
         super(req, res);
 
-        const { uid, firebaseToken } = req.query;
+        const { uid } = req.query;
 
         this._publicUid = uid;
-        this._firebaseToken = firebaseToken;
     }
 
     public static async get(req: e.Request<{}, ResponseBody<GetUserProfileResponse>, {}, GetUserProfileQuery>,
@@ -103,7 +102,10 @@ export class GetUserProfile extends Controller<
     }
 
     protected async execute() {
-        const firebaseUid = await this._firebase.getFirebaseUid(this._firebaseToken);
+        const cred = Authenticator.getAuthCredentials(this.req);
+        const authData = cred ? await this._auth.authByFirebase(cred.cred) : null;
+
+        const firebaseUid = authData?.firebaseUid ?? null;
 
         const profile = await this.getProfile();
 

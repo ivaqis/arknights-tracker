@@ -11,18 +11,8 @@ export class LinkUserPullsQueryValidator extends Validator<LinkUserPullsQuery> {
 
     private static getRules(): ValidationRule<LinkUserPullsQuery>[] {
         return [
-            this.getFirebaseTokenRule(),
             this.getUidRule()
         ];
-    }
-
-    private static getFirebaseTokenRule(): ValidationRule<LinkUserPullsQuery> {
-        const rule = new StringValidationRule(true);
-
-        return new ValidationRule(
-            item => rule.isValid(item.firebaseToken),
-            "firebaseToken must be a string"
-        );
     }
 
     private static getUidRule(): ValidationRule<LinkUserPullsQuery> {
