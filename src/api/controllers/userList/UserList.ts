@@ -36,7 +36,7 @@ export class UserList extends Controller<
             return;
         }
 
-        const profiles = await this._database.users.findUsersByFirebaseUid(firebaseUid);
+        const profiles = await this._database.users.findManyUsersByFirebaseUid(firebaseUid);
 
         const uids = profiles.map(profile => profile.publicUid.initValue);
 

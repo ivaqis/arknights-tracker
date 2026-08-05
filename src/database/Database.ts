@@ -78,7 +78,7 @@ export class Database implements IService {
     }
 
     public async deleteFirebaseUser(firebaseUid: string): Promise<void> {
-        const users = await this.users.findUsersByFirebaseUid(firebaseUid);
+        const users = await this.users.findManyUsersByFirebaseUid(firebaseUid);
 
         for (const user of users) {
             await this.deleteUser(user.uid);

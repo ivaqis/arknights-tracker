@@ -54,7 +54,21 @@ export class UsersTable extends Table<Prisma.UserDelegate> {
         return new UserRecord(entity);
     }
 
-    public async findByFirebaseUid(firebaseUid: string): Promise<UserRecord[]> {
+    public async findByFirebaseUid(firebaseUid: string): Promise<UserRecord | null> {
+        const entity = await this.table.findUnique({
+            where: {
+                firebaseUid
+            }
+        });
+
+        if (!entity) {
+            return null;
+        }
+
+        return new UserRecord(entity);
+    }
+
+    public async findManyByFirebaseUid(firebaseUid: string): Promise<UserRecord[]> {
         const entities = await this.table.findMany({
             where: { firebaseUid: firebaseUid }
         });

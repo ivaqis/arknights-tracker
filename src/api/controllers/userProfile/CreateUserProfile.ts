@@ -60,7 +60,7 @@ export class CreateUserProfile extends Controller<
             return;
         }
 
-        const profiles = await this._database.users.findUsersByFirebaseUid(firebaseUid);
+        const profiles = await this._database.users.findManyUsersByFirebaseUid(firebaseUid);
 
         if (profiles.length > 0) {
             this.status = 400;

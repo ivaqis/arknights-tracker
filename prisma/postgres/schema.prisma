@@ -11,13 +11,13 @@ model FirebaseUser {
     firebaseUid String   @id
     createdAt   DateTime @default(now())
 
-    users User[]
+    user User?
 }
 
 model User {
     uid             BigInt   @id @default(autoincrement())
     publicUid       String   @unique
-    firebaseUid     String?
+    firebaseUid     String?  @unique
     isPrivate       Boolean  @default(false)
     avatarId        String?
     backgroundId    String?

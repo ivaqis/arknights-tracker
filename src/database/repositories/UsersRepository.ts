@@ -38,8 +38,12 @@ export class UsersRepository extends Repository {
         return this._usersTable.findByPublicUid(publicUid);
     }
 
-    public async findUsersByFirebaseUid(firebaseUid: string): Promise<UserRecord[]> {
+    public async findUserByFirebaseUid(firebaseUid: string): Promise<UserRecord | null> {
         return this._usersTable.findByFirebaseUid(firebaseUid);
+    }
+
+    public async findManyUsersByFirebaseUid(firebaseUid: string): Promise<UserRecord[]> {
+        return this._usersTable.findManyByFirebaseUid(firebaseUid);
     }
 
     public async isUserExist(publicUid: string): Promise<boolean> {
