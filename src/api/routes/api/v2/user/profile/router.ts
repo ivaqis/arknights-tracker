@@ -3,6 +3,7 @@ import { CreateUserProfile } from "@api/controllers/userProfile/CreateUserProfil
 import { DeleteUserProfile } from "@api/controllers/userProfile/DeleteUserProfile";
 import { GetUserProfile } from "@api/controllers/userProfile/GetUserProfile";
 import { UpdateUserProfile } from "@api/controllers/userProfile/UpdateUserProfile";
+import { RequireAuth } from "@api/middleware/RequireAuth";
 import { RequireService } from "@api/middleware/RequireService";
 import { JsonRequestValidator } from "@api/middleware/validators/JsonRequestValidator";
 import {
@@ -15,6 +16,7 @@ import { GetUserProfileRequestValidator } from "@api/middleware/validators/userP
 import {
     UpdateUserProfileRequestValidator
 } from "@api/middleware/validators/userProfile/UpdateUserProfileRequestValidator";
+import { AuthType } from "@services/auth/AuthType";
 import { Router } from "express";
 
 export const profileRouter = Router();
@@ -25,17 +27,20 @@ profileRouter.get("/get",
 );
 profileRouter.post("/update",
     JsonRequestValidator.isJson,
+    RequireAuth.require(AuthType.FIREBASE),
     UpdateUserProfileRequestValidator.validate,
     UpdateUserProfile.post
 );
 profileRouter.post("/create",
     // RequireService.require(sightengine, avatarUploader), // todo ВКЛЮЧИТЬ
+    RequireAuth.require(AuthType.FIREBASE),
     JsonRequestValidator.isJson,
     CreateUserProfileRequestValidator.validate,
     CreateUserProfile.post
 );
 profileRouter.delete("/delete",
     RequireService.require(avatarUploader),
+    RequireAuth.require(AuthType.FIREBASE),
     DeleteUserProfileRequestValidator.validate,
     DeleteUserProfile.delete
 );
