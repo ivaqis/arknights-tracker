@@ -1,11 +1,11 @@
-import { database, firebase } from "@/serviceInstances";
+import { authenticator, database } from "@/serviceInstances";
 import { GetMonumentRunQuery } from "@api/contracts/monument/GetMonumentRunQuery";
 import { GetMonumentRunResponse } from "@api/contracts/monument/GetMonumentRunResponse";
 import { ResponseBody } from "@api/contracts/ResponseBody";
 import { Controller } from "@api/controllers/Controller";
 import { Database } from "@database/Database";
 import { MonumentLeaderboardRun } from "@models/monumentLeaderboard/MonumentLeaderboardRun";
-import { FirebaseAuthenticator } from "@services/firebaseAuth/FirebaseAuthenticator";
+import { Authenticator } from "@services/auth/Authenticator";
 import e from "express";
 
 export class GetMonumentRun extends Controller<
@@ -17,15 +17,13 @@ export class GetMonumentRun extends Controller<
     public readonly name = "GetMonumentRun";
 
     private readonly _database: Database = database;
-    private readonly _firebase: FirebaseAuthenticator = firebase;
+    private readonly _auth: Authenticator = authenticator;
 
-    private readonly _firebaseToken: string;
     private readonly _recordId: string;
 
     public constructor(req: e.Request<{}, ResponseBody<GetMonumentRunResponse>, undefined, GetMonumentRunQuery>, res: e.Response<ResponseBody<GetMonumentRunResponse>>) {
         super(req, res);
 
-        this._firebaseToken = req.query.firebaseToken;
         this._recordId = req.query.recordId;
     }
 
@@ -39,7 +37,10 @@ export class GetMonumentRun extends Controller<
             return;
         }
 
-        const firebaseUid = await this._firebase.getFirebaseUid(this._firebaseToken);
+        const cred = Authenticator.getAuthCredentials(this.req);
+        const authData = cred ? await this._auth.authByFirebase(cred.cred) : null;
+
+        const firebaseUid = authData?.firebaseUid ?? null;
 
         const record = records.record;
         const gameProfile = records.gameProfile;

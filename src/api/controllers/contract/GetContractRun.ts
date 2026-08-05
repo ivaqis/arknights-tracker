@@ -1,4 +1,4 @@
-import { database, firebase } from "@/serviceInstances";
+import { authenticator, database } from "@/serviceInstances";
 import { GetContractRunQuery } from "@api/contracts/contract/GetContractRunQuery";
 import { GetContractRunResponse } from "@api/contracts/contract/GetContractRunResponse";
 import { ResponseBody } from "@api/contracts/ResponseBody";
@@ -6,7 +6,7 @@ import { Controller } from "@api/controllers/Controller";
 import { Database } from "@database/Database";
 import { UserContractLeaderboardRecord } from "@database/records/UserContractLeaderboardRecord";
 import { ContractRecordEntity } from "@models/contingencyContract/entities/ContractRecordEntity";
-import { FirebaseAuthenticator } from "@services/firebaseAuth/FirebaseAuthenticator";
+import { Authenticator } from "@services/auth/Authenticator";
 import e from "express";
 
 export class GetContractRun extends Controller<
@@ -18,15 +18,13 @@ export class GetContractRun extends Controller<
     public readonly name = "GetContractRun";
 
     private readonly _database: Database = database;
-    private readonly _firebase: FirebaseAuthenticator = firebase;
+    private readonly _auth: Authenticator = authenticator;
 
-    private readonly _firebaseToken: string;
     private readonly _recordId: string;
 
     public constructor(req: e.Request<{}, ResponseBody<GetContractRunResponse>, undefined, GetContractRunQuery>, res: e.Response<ResponseBody<GetContractRunResponse>>) {
         super(req, res);
 
-        this._firebaseToken = req.query.firebaseToken;
         this._recordId = req.query.recordId;
     }
 
@@ -46,7 +44,10 @@ export class GetContractRun extends Controller<
             return;
         }
 
-        const firebaseUid = await this._firebase.getFirebaseUid(this._firebaseToken);
+        const cred = Authenticator.getAuthCredentials(this.req);
+        const authData = cred ? await this._auth.authByFirebase(cred.cred) : null;
+
+        const firebaseUid = authData?.firebaseUid ?? null;
 
         const gameProfile = await this._database.gameProfiles.find(record.gameUid);
 

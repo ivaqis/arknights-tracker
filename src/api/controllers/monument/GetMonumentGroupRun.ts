@@ -1,11 +1,11 @@
-import { database, firebase } from "@/serviceInstances";
+import { authenticator, database } from "@/serviceInstances";
 import { GetMonumentGroupRunQuery } from "@api/contracts/monument/GetMonumentGroupRunQuery";
 import { GetMonumentGroupRunResponse } from "@api/contracts/monument/GetMonumentGroupRunResponse";
 import { ResponseBody } from "@api/contracts/ResponseBody";
 import { Controller } from "@api/controllers/Controller";
 import { Database } from "@database/Database";
 import { MonumentLeaderboardRun } from "@models/monumentLeaderboard/MonumentLeaderboardRun";
-import { FirebaseAuthenticator } from "@services/firebaseAuth/FirebaseAuthenticator";
+import { Authenticator } from "@services/auth/Authenticator";
 import e from "express";
 
 export class GetMonumentGroupRun extends Controller<
@@ -17,15 +17,13 @@ export class GetMonumentGroupRun extends Controller<
     public readonly name = "GetMonumentGroupRun";
 
     private readonly _database: Database = database;
-    private readonly _firebase: FirebaseAuthenticator = firebase;
+    private readonly _auth: Authenticator = authenticator;
 
-    private readonly _firebaseToken: string;
     private readonly _groupId: string;
 
     public constructor(req: e.Request<{}, ResponseBody<GetMonumentGroupRunResponse>, undefined, GetMonumentGroupRunQuery>, res: e.Response<ResponseBody<GetMonumentGroupRunResponse>>) {
         super(req, res);
 
-        this._firebaseToken = req.query.firebaseToken;
         this._groupId = req.query.groupId;
     }
 
@@ -39,7 +37,11 @@ export class GetMonumentGroupRun extends Controller<
             return;
         }
 
-        const firebaseUid = await this._firebase.getFirebaseUid(this._firebaseToken);
+        const cred = Authenticator.getAuthCredentials(this.req);
+        const authData = cred ? await this._auth.authByFirebase(cred.cred) : null;
+
+        const firebaseUid = authData?.firebaseUid ?? null;
+
         const gameUid = records[0].gameUid;
 
         const gameProfile = await this._database.gameProfiles.find(gameUid);

@@ -1,40 +1,38 @@
-import { database, firebase } from "@/serviceInstances";
+import { authenticator, database } from "@/serviceInstances";
 import { ResponseBody } from "@api/contracts/ResponseBody";
-import { UserListQuery } from "@api/contracts/userList/UserListQuery";
 import { UserListResponse } from "@api/contracts/userList/UserListResponse";
 import { Controller } from "@api/controllers/Controller";
 import { Database } from "@database/Database";
-import { FirebaseAuthenticator } from "@services/firebaseAuth/FirebaseAuthenticator";
+import { Authenticator } from "@services/auth/Authenticator";
 import e from "express";
 
 export class UserList extends Controller<
     {},
     UserListResponse,
     undefined,
-    UserListQuery
+    undefined
 > {
     public readonly name = "UserList";
 
     private readonly _database: Database = database;
-    private readonly _firebase: FirebaseAuthenticator = firebase;
+    private readonly _auth: Authenticator = authenticator;
 
-    private readonly _firebaseToken: string;
-
-    public constructor(req: e.Request<{}, ResponseBody<UserListResponse>, undefined, UserListQuery>, res: e.Response<ResponseBody<UserListResponse>>) {
+    public constructor(req: e.Request<{}, ResponseBody<UserListResponse>, undefined, undefined>, res: e.Response<ResponseBody<UserListResponse>>) {
         super(req, res);
-
-        this._firebaseToken = req.query.firebaseToken;
     }
 
     protected async execute(): Promise<void> {
-        const firebaseUid = await this._firebase.getFirebaseUid(this._firebaseToken);
+        const cred = Authenticator.getAuthCredentials(this.req)!;
+        const authData = await this._auth.authByFirebase(cred.cred);
 
-        if (!firebaseUid) {
+        if (!authData) {
             this.status = 401;
             this.message = "Unauthorized";
 
             return;
         }
+
+        const firebaseUid = authData.firebaseUid;
 
         const profiles = await this._database.users.findManyUsersByFirebaseUid(firebaseUid);
 

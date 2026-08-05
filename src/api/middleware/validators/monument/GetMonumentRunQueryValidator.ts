@@ -11,18 +11,8 @@ export class GetMonumentRunQueryValidator extends Validator<GetMonumentRunQuery>
 
     private static getRules(): ValidationRule<GetMonumentRunQuery>[] {
         return [
-            this.getFirebaseTokenRule(),
             this.getRecordIdRule()
         ];
-    }
-
-    private static getFirebaseTokenRule(): ValidationRule<GetMonumentRunQuery> {
-        const rule = new StringValidationRule();
-
-        return new ValidationRule(
-            item => rule.isValid(item.firebaseToken),
-            "firebaseToken must be a string",
-        );
     }
 
     private static getRecordIdRule(): ValidationRule<GetMonumentRunQuery> {

@@ -6,7 +6,6 @@ import { RequireAuth } from "@api/middleware/RequireAuth";
 import { RequireService } from "@api/middleware/RequireService";
 import { RequestValidator } from "@api/middleware/validators/RequestValidator";
 import { UserExistRequestValidator } from "@api/middleware/validators/userExist/UserExistRequestValidator";
-import { UserListRequestValidator } from "@api/middleware/validators/userList/UserListRequestValidator";
 import { gameAccountRouter } from "@api/routes/api/v2/user/gameAccount/router";
 import { profileRouter } from "@api/routes/api/v2/user/profile/router";
 import { userPullsRouter } from "@api/routes/api/v2/user/pulls/router";
@@ -31,6 +30,5 @@ userRouter.get("/exist",
 );
 userRouter.get("/list",
     RequireAuth.require(AuthType.FIREBASE),
-    RequestValidator.with(UserListRequestValidator),
     Controller.with(UserList)
 );
