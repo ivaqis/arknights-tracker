@@ -12,7 +12,7 @@ export class GetMonumentRunQueryValidator extends Validator<GetMonumentRunQuery>
     private static getRules(): ValidationRule<GetMonumentRunQuery>[] {
         return [
             this.getFirebaseTokenRule(),
-
+            this.getRecordIdRule()
         ];
     }
 

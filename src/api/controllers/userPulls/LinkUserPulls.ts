@@ -1,4 +1,4 @@
-import { authenticator, database, firebase } from "@/serviceInstances";
+import { authenticator, database } from "@/serviceInstances";
 import { ResponseBody } from "@api/contracts/ResponseBody";
 import { LinkUserPullsQuery } from "@api/contracts/userPulls/LinkUserPullsQuery";
 import { LinkUserPullsRequest } from "@api/contracts/userPulls/LinkUserPullsRequest";
@@ -6,7 +6,6 @@ import { LinkUserPullsResponse } from "@api/contracts/userPulls/LinkUserPullsRes
 import { Controller } from "@api/controllers/Controller";
 import { Database } from "@database/Database";
 import { Authenticator } from "@services/auth/Authenticator";
-import { FirebaseAuthenticator } from "@services/firebaseAuth/FirebaseAuthenticator";
 import e from "express";
 
 export class LinkUserPulls extends Controller<

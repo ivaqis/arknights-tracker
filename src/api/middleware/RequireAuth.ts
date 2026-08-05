@@ -1,4 +1,3 @@
-import { authenticator } from "@/serviceInstances";
 import { ResponseBody } from "@api/contracts/ResponseBody";
 import { Middleware } from "@api/middleware/Middleware";
 import { Authenticator } from "@services/auth/Authenticator";
@@ -13,8 +12,6 @@ export class RequireAuth extends Middleware<
     unknown
 > {
     public readonly name = "RequireAuth";
-
-    private readonly _authenticator: Authenticator = authenticator;
 
     private readonly _authTypeList: AuthType[];
 

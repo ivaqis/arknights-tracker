@@ -1,4 +1,4 @@
-import { authenticator, database, firebase } from "@/serviceInstances";
+import { authenticator, database } from "@/serviceInstances";
 import { ResponseBody } from "@api/contracts/ResponseBody";
 import { UpdateUserProfileQuery } from "@api/contracts/userProfile/UpdateUserProfileQuery";
 import { UpdateUserProfileRequest } from "@api/contracts/userProfile/UpdateUserProfileRequest";
@@ -8,7 +8,6 @@ import { GetUserProfile } from "@api/controllers/userProfile/GetUserProfile";
 import { Database } from "@database/Database";
 import { ContractRecord } from "@models/contingencyContract/ContractRecord";
 import { Authenticator } from "@services/auth/Authenticator";
-import { FirebaseAuthenticator } from "@services/firebaseAuth/FirebaseAuthenticator";
 import { bannedWords, crisisContractRecords } from "@staticModels/instances";
 import e from "express";
 

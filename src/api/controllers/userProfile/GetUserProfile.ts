@@ -1,4 +1,4 @@
-import { authenticator, database, firebase } from "@/serviceInstances";
+import { authenticator, database } from "@/serviceInstances";
 import { ResponseBody } from "@api/contracts/ResponseBody";
 import { GetUserProfileQuery } from "@api/contracts/userProfile/GetUserProfileQuery";
 import { GetUserProfileResponse } from "@api/contracts/userProfile/GetUserProfileResponse";
@@ -12,7 +12,6 @@ import { GameProfileEntity } from "@models/gameProfile/entities/GameProfileEntit
 import { PullProfileEntity } from "@models/pullProfile/entities/PullProfileEntity";
 import { PullProfileSearcher } from "@models/pullProfile/PullProfileSearcher";
 import { Authenticator } from "@services/auth/Authenticator";
-import { FirebaseAuthenticator } from "@services/firebaseAuth/FirebaseAuthenticator";
 import { crisisContractRecords } from "@staticModels/instances";
 import e from "express";
 

@@ -1,5 +1,4 @@
 import { UpdateUserProfileQuery } from "@api/contracts/userProfile/UpdateUserProfileQuery";
-import { StringValidationRule } from "@models/validation/StringValidationRule";
 import { UsernameValidationRule } from "@models/validation/UsernameValidationRule";
 import { ValidationRule } from "@models/validation/ValidationRule";
 import { Validator } from "@models/validation/Validator";

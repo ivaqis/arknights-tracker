@@ -244,10 +244,4 @@ export class PostImport extends StreamController<
     } | null> {
         return await this._database.userBannerProfiles.findFirstPullsIdIncludeBannerProfile(pullIds.map(i => i.id));
     }
-
-    private async fetch(serverId: string, lastPullTs: number, callbackFn: (type: BannerType, count: number) => void): Promise<BannersPulls | null> {
-        const fetcher = new BannerDataFetcher(this._token, serverId, callbackFn);
-
-        return await fetcher.getAllBannersData(lastPullTs);
-    }
 }
