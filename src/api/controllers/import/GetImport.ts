@@ -1,10 +1,12 @@
 import { GetImportCompleteResponse } from "@api/contracts/import/GetImportCompleteResponse";
-import { ImportProgressResponse } from "@api/contracts/import/ImportProgressResponse";
 import { GetImportQuery } from "@api/contracts/import/GetImportQuery";
+import { ImportProgressResponse } from "@api/contracts/import/ImportProgressResponse";
 import { StreamController } from "@api/controllers/StreamController";
+import { ImportError } from "@errors/ImportError";
 import { BannerType } from "@models/banners/BannerType";
 import { BannersPulls } from "@models/pulls/BannersPulls";
 import { BannerDataFetcher } from "@services/bannerDataFetcher/BannerDataFetcher";
+import { importErrorCallback } from "@utils/errorCallbacks";
 import { getUniqueElements } from "@utils/generalUtils";
 import e from "express";
 
@@ -20,8 +22,15 @@ export class GetImport extends StreamController<
     private readonly _serverIds: string[];
     private readonly _lastPullTs: number;
 
+    private _currentServerId?: string;
+
     public constructor(req: e.Request<{}, {}, undefined, GetImportQuery>, res: e.Response<{}>) {
-        super(req, res);
+        const cb = async (e: Error) => {
+            const err = new ImportError(e.stack ?? e.message, this._token, this._currentServerId);
+            await importErrorCallback(err);
+        };
+
+        super(req, res, cb);
 
         this._token = req.query.token;
         this._serverIds = getUniqueElements(req.query.serverIds, ",");
@@ -57,6 +66,8 @@ export class GetImport extends StreamController<
 
             return;
         }
+
+        this._currentServerId = serverId;
 
         const pullsEntity = pulls.getEntity();
 

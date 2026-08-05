@@ -11,6 +11,7 @@ import { StreamController } from "@api/controllers/StreamController";
 import { Database } from "@database/Database";
 import { BannerPullsIdRecord } from "@database/records/BannerPullsIdRecord";
 import { UserBannerProfileRecord } from "@database/records/UserBannerProfileRecord";
+import { ImportError } from "@errors/ImportError";
 import { BannerType } from "@models/banners/BannerType";
 import { BannerTokenId } from "@models/bannerTokenId/BannerTokenId";
 import { BannersPulls } from "@models/pulls/BannersPulls";
@@ -18,6 +19,7 @@ import { SyncPullsSigner } from "@models/signers/syncPullsSigner/SyncPullsSigner
 import { StablePullId } from "@models/stablePullId/StablePullId";
 import { BannerDataFetcher } from "@services/bannerDataFetcher/BannerDataFetcher";
 import { DAY_MS, getMondayTs, getWeek, WEEK_MS } from "@utils/dateUtils";
+import { importErrorCallback } from "@utils/errorCallbacks";
 import { getUniqueElements } from "@utils/generalUtils";
 import e from "express";
 import { StringValue } from "ms";
@@ -43,8 +45,15 @@ export class PostImport extends StreamController<
     private readonly _serverIds: string[];
     private readonly _privateId: string | null;
 
+    private _currentServerId?: string;
+
     public constructor(req: e.Request<{}, {}, PostImportRequest, PostImportQuery>, res: e.Response<{}>) {
-        super(req, res);
+        const cb = async (e: Error) => {
+            const err = new ImportError(e.stack ?? e.message, this._token, this._currentServerId);
+            await importErrorCallback(err);
+        };
+
+        super(req, res, cb);
 
         this._token = req.query.token;
         this._serverIds = getUniqueElements(req.query.serverIds, ",");
@@ -131,6 +140,8 @@ export class PostImport extends StreamController<
 
             return;
         }
+
+        this._currentServerId = serverId;
 
         const tokenId = BannerTokenId.create(this._token);
         const tokenProfile = await this._database.userBannerProfiles.findTokenIdIncludeBannerProfile(tokenId.id);

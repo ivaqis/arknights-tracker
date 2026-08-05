@@ -12,12 +12,14 @@ export abstract class StreamController<
 > {
     private readonly _req: e.Request<Params, {}, ReqBody, ReqQuery>;
     private readonly _res: e.Response<{}>;
+    private readonly _errorCallbackFn?: (e: Error) => Promise<void>;
 
     private readonly _url: URL;
 
-    protected constructor(req: e.Request<Params, {}, ReqBody, ReqQuery>, res: e.Response<{}>) {
+    protected constructor(req: e.Request<Params, {}, ReqBody, ReqQuery>, res: e.Response<{}>, errorCallbackFn?: (e: Error) => Promise<void>) {
         this._req = req;
         this._res = res;
+        this._errorCallbackFn = errorCallbackFn;
 
         this._url = new URL(`http://localhost${this._req.originalUrl}`);
     }
@@ -108,6 +110,8 @@ export abstract class StreamController<
 
             if (e instanceof Error) {
                 logger.error(e.stack);
+
+                await this._errorCallbackFn?.(e);
             }
 
             this.sendError("Internal Server Error");

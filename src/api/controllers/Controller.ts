@@ -11,6 +11,7 @@ export abstract class Controller<
 > {
     private readonly _req: e.Request<Params, ResponseBody<ResBody>, ReqBody, ReqQuery>;
     private readonly _res: e.Response<ResponseBody<ResBody>>;
+    private readonly _errorCallbackFn?: (e: Error) => Promise<void>;
 
     private readonly _url: URL;
 
@@ -18,9 +19,10 @@ export abstract class Controller<
     private _message: string = "";
     private _data: ResBody | null = null;
 
-    protected constructor(req: e.Request<Params, ResponseBody<ResBody>, ReqBody, ReqQuery>, res: e.Response<ResponseBody<ResBody>>) {
+    protected constructor(req: e.Request<Params, ResponseBody<ResBody>, ReqBody, ReqQuery>, res: e.Response<ResponseBody<ResBody>>, errorCallbackFn?: (e: Error) => Promise<void>) {
         this._req = req;
         this._res = res;
+        this._errorCallbackFn = errorCallbackFn;
 
         this._url = new URL(`http://localhost${this._req.originalUrl}`);
     }
@@ -127,6 +129,8 @@ export abstract class Controller<
 
             if (e instanceof Error) {
                 logger.error(e.stack);
+
+                await this._errorCallbackFn?.(e);
             }
 
             this.status = 500;
