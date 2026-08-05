@@ -34,7 +34,7 @@ export class RequireAuth extends Middleware<
 
         if (!containsAuth) {
             this.status = 401;
-            this.message = "Not authorized";
+            this.message = "Auth required";
 
             return;
         }
