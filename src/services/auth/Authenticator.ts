@@ -1,9 +1,11 @@
+import { ResponseBody } from "@api/contracts/ResponseBody";
 import { Database } from "@database/Database";
 import { AuthType } from "@services/auth/AuthType";
 import { FirebaseAuthResult } from "@services/auth/FirebaseAuthResult";
 import { FirebaseAuthenticator } from "@services/firebaseAuth/FirebaseAuthenticator";
 import { IService } from "@services/IService";
 import e from "express";
+import * as core from "express-serve-static-core";
 
 export class Authenticator implements IService {
     public readonly name = "Authenticator";
@@ -16,7 +18,7 @@ export class Authenticator implements IService {
         this._firebase = firebase;
     }
 
-    public static containsAuthHeader(req: e.Request, ...authTypes: AuthType[]): boolean {
+    public static containsAuthHeader(req: e.Request<core.ParamsDictionary, ResponseBody<unknown>, unknown, unknown>, ...authTypes: AuthType[]): boolean {
         const authHeader = req.get("Authorization");
 
         if (!authHeader) {
