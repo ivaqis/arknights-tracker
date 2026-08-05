@@ -1,7 +1,9 @@
 import { Database } from "@database/Database";
+import { AuthType } from "@services/auth/AuthType";
 import { FirebaseAuthResult } from "@services/auth/FirebaseAuthResult";
 import { FirebaseAuthenticator } from "@services/firebaseAuth/FirebaseAuthenticator";
 import { IService } from "@services/IService";
+import e from "express";
 
 export class Authenticator implements IService {
     public readonly name = "Authenticator";
@@ -12,6 +14,48 @@ export class Authenticator implements IService {
     public constructor(database: Database, firebase: FirebaseAuthenticator) {
         this._database = database;
         this._firebase = firebase;
+    }
+
+    public static containsAuthHeader(req: e.Request, ...authTypes: AuthType[]): boolean {
+        const authHeader = req.get("Authorization");
+
+        if (!authHeader) {
+            return false;
+        }
+
+        const creds = this.getAuthCredentials(authHeader);
+
+        if (!creds) {
+            return false;
+        }
+
+        if (authTypes.length === 0) {
+            return true;
+        }
+
+        for (const authType of authTypes) {
+            if (creds.type === authType) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    public static getAuthCredentials(authHeader: string): { type: string; cred: string } | null {
+        const parts = authHeader.split(" ").filter(Boolean);
+
+        if (parts.length !== 2) {
+            return null;
+        }
+
+        const authType = parts[0];
+        const cred = parts[1];
+
+        return {
+            type: authType,
+            cred
+        };
     }
 
     public async authByFirebase(firebaseToken: string | null): Promise<FirebaseAuthResult | null> {
