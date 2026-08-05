@@ -1,3 +1,4 @@
+import { config } from "@/config";
 import { ResponseBody } from "@api/contracts/ResponseBody";
 import { Database } from "@database/Database";
 import { AuthType } from "@services/auth/AuthType";
@@ -54,7 +55,7 @@ export class Authenticator implements IService {
         return this.getCredentials(header);
     }
 
-    private static getCredentials(authHeader: string): { type: string; cred: string } | null {
+    public static getCredentials(authHeader: string): { type: string; cred: string } | null {
         const parts = authHeader.split(" ").filter(Boolean);
 
         if (parts.length !== 2) {
@@ -68,6 +69,20 @@ export class Authenticator implements IService {
             type: authType,
             cred
         };
+    }
+
+    public async authByFirebaseCred(authHeader: string | null): Promise<FirebaseAuthResult | null> {
+        if (!authHeader) {
+            return null;
+        }
+
+        const cred = Authenticator.getCredentials(authHeader);
+
+        if (!cred || cred.type !== AuthType.FIREBASE) {
+            return null;
+        }
+
+        return await this.authByFirebase(cred.cred);
     }
 
     public async authByFirebase(firebaseToken: string | null): Promise<FirebaseAuthResult | null> {
@@ -87,6 +102,28 @@ export class Authenticator implements IService {
             uid: profile?.uid ?? null,
             firebaseUid
         };
+    }
+
+    public authByAdminSecretCred(authHeader: string | null): boolean {
+        if (!authHeader) {
+            return false;
+        }
+
+        const cred = Authenticator.getCredentials(authHeader);
+
+        if (!cred || cred.type !== AuthType.ADMIN_SECRET) {
+            return false;
+        }
+
+        return this.authByAdminSecret(cred.cred);
+    }
+
+    public authByAdminSecret(adminSecret: string | null): boolean {
+        if (!adminSecret) {
+            return false;
+        }
+
+        return adminSecret === config.adminSecret;
     }
 
     public isActive(): boolean {

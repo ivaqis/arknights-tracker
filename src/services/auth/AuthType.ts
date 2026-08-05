@@ -1,3 +1,4 @@
 export enum AuthType {
-    FIREBASE = "Firebase"
+    FIREBASE = "Firebase",
+    ADMIN_SECRET = "Admin-Secret"
 }

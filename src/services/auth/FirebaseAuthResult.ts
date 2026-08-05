@@ -1,5 +1,5 @@
-import { AuthResult } from "@services/auth/AuthResult";
+import { UserAuthResult } from "@services/auth/UserAuthResult";
 
-export interface FirebaseAuthResult extends AuthResult {
+export interface FirebaseAuthResult extends UserAuthResult {
     firebaseUid: string;
 }
