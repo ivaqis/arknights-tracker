@@ -1,6 +1,5 @@
 import { UserGameProfileEntity } from "@database/entities/UserGameProfileEntity";
 import { NullableBigIntRecordField } from "@database/records/recordFields/NullableBigIntRecordField";
-import { NullableStringRecordField } from "@database/records/recordFields/NullableStringRecordField";
 import { NumberRecordField } from "@database/records/recordFields/NumberRecordField";
 import { GameProfile } from "@models/gameProfile/GameProfile";
 

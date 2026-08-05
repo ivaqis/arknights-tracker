@@ -1,5 +1,4 @@
 import { UserBannerProfileEntity } from "@database/entities/UserBannerProfileEntity";
-import { NullableStringRecordField } from "@database/records/recordFields/NullableStringRecordField";
 
 export class UserBannerProfileRecord {
     private readonly _profileId: bigint;

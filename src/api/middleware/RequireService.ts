@@ -36,7 +36,7 @@ export class RequireService extends Middleware<
         for (const service of this._requiredServices) {
             if (!service.isActive()) {
                 this.status = 503;
-                this.message = `Required service unavailable: ${service.name}`
+                this.message = `Required service unavailable: ${service.name}`;
 
                 return;
             }
