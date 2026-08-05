@@ -2,6 +2,7 @@ import { config } from "@/config";
 import { ResponseBody } from "@api/contracts/ResponseBody";
 import { Database } from "@database/Database";
 import { AuthType } from "@services/auth/AuthType";
+import { Credentials } from "@services/auth/Credentials";
 import { FirebaseAuthResult } from "@services/auth/FirebaseAuthResult";
 import { FirebaseAuthenticator } from "@services/firebaseAuth/FirebaseAuthenticator";
 import { IService } from "@services/IService";
@@ -45,7 +46,7 @@ export class Authenticator implements IService {
         return false;
     }
 
-    public static getAuthCredentials(req: e.Request<core.ParamsDictionary, any, any, any>): { type: string; cred: string } | null {
+    public static getAuthCredentials(req: e.Request<core.ParamsDictionary, any, any, any>): Credentials | null {
         const header = req.get("Authorization");
 
         if (!header) {
@@ -55,7 +56,7 @@ export class Authenticator implements IService {
         return this.getCredentials(header);
     }
 
-    public static getCredentials(authHeader: string): { type: string; cred: string } | null {
+    public static getCredentials(authHeader: string): Credentials | null {
         const parts = authHeader.split(" ").filter(Boolean);
 
         if (parts.length !== 2) {
@@ -71,18 +72,12 @@ export class Authenticator implements IService {
         };
     }
 
-    public async authByFirebaseCred(authHeader: string | null): Promise<FirebaseAuthResult | null> {
-        if (!authHeader) {
+    public async authByFirebaseCred(credentials: Credentials): Promise<FirebaseAuthResult | null> {
+        if (credentials.type !== AuthType.FIREBASE) {
             return null;
         }
 
-        const cred = Authenticator.getCredentials(authHeader);
-
-        if (!cred || cred.type !== AuthType.FIREBASE) {
-            return null;
-        }
-
-        return await this.authByFirebase(cred.cred);
+        return await this.authByFirebase(credentials.cred);
     }
 
     public async authByFirebase(firebaseToken: string | null): Promise<FirebaseAuthResult | null> {
@@ -104,18 +99,12 @@ export class Authenticator implements IService {
         };
     }
 
-    public authByAdminSecretCred(authHeader: string | null): boolean {
-        if (!authHeader) {
+    public authByAdminSecretCred(credentials: Credentials): boolean {
+        if (credentials.type !== AuthType.ADMIN_SECRET) {
             return false;
         }
 
-        const cred = Authenticator.getCredentials(authHeader);
-
-        if (!cred || cred.type !== AuthType.ADMIN_SECRET) {
-            return false;
-        }
-
-        return this.authByAdminSecret(cred.cred);
+        return this.authByAdminSecret(credentials.cred);
     }
 
     public authByAdminSecret(adminSecret: string | null): boolean {

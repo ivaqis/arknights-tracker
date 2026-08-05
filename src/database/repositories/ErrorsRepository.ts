@@ -1,3 +1,4 @@
+import { ImportErrorEntity } from "@database/entities/ImportErrorEntity";
 import { Repository } from "@database/repositories/Repository";
 import { ImportErrorsTable } from "@database/tables/ImportErrorsTable";
 import { ImportError } from "@errors/ImportError";
@@ -10,6 +11,10 @@ export class ErrorsRepository extends Repository {
         super(prisma);
 
         this._importErrorsTable = new ImportErrorsTable(prisma);
+    }
+
+    public async findManyImportErrors(take?: number, skip?: number): Promise<ImportErrorEntity[]> {
+        return this._importErrorsTable.findMany(take, skip);
     }
 
     public async createImportError(error: ImportError): Promise<void> {
