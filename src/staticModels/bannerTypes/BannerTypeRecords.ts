@@ -1,4 +1,5 @@
 import { BannerType } from "@models/banners/BannerType";
+import { DbBannerType } from "@models/banners/DbBannerType";
 import { ShortBannerType } from "@models/banners/ShortBannerType";
 import { BannerTypeEntity } from "@staticModels/bannerTypes/BannerTypeEntity";
 import { RecordsModel } from "@staticModels/RecordsModel";
@@ -7,6 +8,12 @@ export class BannerTypeRecords extends RecordsModel<BannerTypeEntity> {
 
     public constructor(list: BannerTypeEntity[]) {
         super(list, (entity) => entity.type, "BannerTypeRecords");
+    }
+
+    public getByDbBannerType(dbBannerType: DbBannerType): BannerTypeEntity {
+        const bannerType = BannerType.getBannerTypeByDbBannerType(dbBannerType);
+
+        return this.getByBannerType(bannerType);
     }
 
     public getByBannerType(bannerType: BannerType): BannerTypeEntity {

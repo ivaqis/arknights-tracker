@@ -7,6 +7,7 @@ import { UserCharBannerData } from "@database/repositories/interfaces/UserCharBa
 import { UserCharBannerTypeData } from "@database/repositories/interfaces/UserCharBannerTypeData";
 import { UserWeaponBannerData } from "@database/repositories/interfaces/UserWeaponBannerData";
 import { Banner } from "@models/banners/Banner";
+import { BannerType } from "@models/banners/BannerType";
 import { DbBannerType } from "@models/banners/DbBannerType";
 import { BannersPulls } from "@models/pulls/BannersPulls";
 import { CharPull } from "@models/pulls/CharPull";
@@ -15,6 +16,8 @@ import { ItemStatIndex } from "@models/pullsAggregator/ItemStatIndex";
 import { PityDistributionIndex } from "@models/pullsAggregator/PityDistributionIndex";
 import { TimelineIndex } from "@models/pullsAggregator/TimelineIndex";
 import { TimelineDate } from "@models/TimelineDate";
+import { BannerTypeEntity } from "@staticModels/bannerTypes/BannerTypeEntity";
+import { bannerTypeRecords } from "@staticModels/instances";
 
 export class UserPullsUpdater {
     private readonly _database: Database;
@@ -35,16 +38,25 @@ export class UserPullsUpdater {
         this._pulls = pulls;
     }
 
-    private static isFeatured(bannerId: string, itemId: string): boolean {
+    private static getBannerInfo(bannerId: string): Banner {
         const banner = Banner.get(bannerId);
 
         if (!banner) {
             throw new Error(`Banner id not found: ${bannerId}`);
         }
 
-        return banner.isFeatured(itemId);
+        return banner;
     }
 
+    // private static isFeatured(bannerId: string, itemId: string): boolean {
+    //     const banner = Banner.get(bannerId);
+    //
+    //     if (!banner) {
+    //         throw new Error(`Banner id not found: ${bannerId}`);
+    //     }
+    //
+    //     return banner.isFeatured(itemId);
+    // }
 
     public async execute(): Promise<void> {
         await this.updateCharPulls(DbBannerType.CHAR_SPECIAL, this._pulls.specialPulls);
@@ -105,7 +117,10 @@ export class UserPullsUpdater {
                 bannerData.stat.total6.value++;
                 bannerData.stat.total5050.value++;
 
-                if (UserPullsUpdater.isFeatured(bannerId, pull.charId)) {
+                const bannerInfo = UserPullsUpdater.getBannerInfo(bannerId);
+                const isFeatured = bannerInfo.isFeatured(pull.charId);
+
+                if (isFeatured) {
                     bannerData.stat.freeWin5050.value++;
                     bannerData.stat.won5050.value++;
                 }
@@ -135,10 +150,16 @@ export class UserPullsUpdater {
 
             bannerTypeData.pulls.last6Pull.value = bannerTypeData.stat.unfreePulls;
 
-            const isFeatured = UserPullsUpdater.isFeatured(bannerId, pull.charId);
-            const isGuaranteed = isFeatured
+            const bannerTypeInfo = bannerTypeRecords.getByDbBannerType(bannerType);
+            const hardGuarantee = bannerTypeInfo.hardGuarantee;
+
+            const bannerInfo = UserPullsUpdater.getBannerInfo(bannerId);
+            const isFeatured = bannerInfo.isFeatured(pull.charId);
+            const isHardGuaranteed = bannerInfo.isHardGuaranteed(pull.charId);
+
+            const isGuaranteed = isHardGuaranteed
                 ? (bannerData.pulls.last6LimitedPull.value === 0
-                    && bannerData.stat.unfreePulls.value === 120)
+                    && bannerData.stat.unfreePulls.value === hardGuarantee)
                 : false;
 
             if (isFeatured) {
@@ -209,10 +230,16 @@ export class UserPullsUpdater {
 
             bannerData.pulls.last6Pull.value = bannerData.stat.unfreePulls.value;
 
-            const isFeatured = UserPullsUpdater.isFeatured(bannerId, pull.weaponId);
-            const isGuaranteed = isFeatured
+            const bannerTypeInfo = bannerTypeRecords.getByDbBannerType(bannerType);
+            const hardGuarantee = bannerTypeInfo.hardGuarantee;
+
+            const bannerInfo = UserPullsUpdater.getBannerInfo(bannerId);
+            const isFeatured = bannerInfo.isFeatured(pull.weaponId);
+            const isHardGuaranteed = bannerInfo.isHardGuaranteed(pull.weaponId);
+
+            const isGuaranteed = isHardGuaranteed
                 ? (bannerData.pulls.lastWin5050Pull.value === 0
-                    && bannerData.stat.unfreePulls.value === 80)
+                    && bannerData.stat.unfreePulls.value === hardGuarantee)
                 : false;
 
             if (isFeatured) {
