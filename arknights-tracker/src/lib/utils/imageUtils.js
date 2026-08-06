@@ -72,7 +72,7 @@ export function getImagePath(idOrName, variant = 'operator-icon') {
             return `/images/items/icon-bg/${withExt(name)}`;
 
         case 'banner-icon':
-            return `/images/banners/icon/${withExt(name)}`;
+            return `/images/banners/icon/${withExt(name, 'webp')}`;
 
         case 'banner-mini':
             return `/images/banners/miniIcon/${withExt(name, 'webp')}`;
