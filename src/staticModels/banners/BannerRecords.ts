@@ -1,7 +1,5 @@
-import { InvalidBannerEntityError } from "@errors/InvalidBannerEntityError";
 import { Banner } from "@models/banners/Banner";
 import { BannerEntity } from "@staticModels/banners/BannerEntity";
-import { BannerEntityValidator } from "@staticModels/banners/BannerEntityValidator";
 import { RecordsModel } from "@staticModels/RecordsModel";
 
 export class BannerRecords extends RecordsModel<BannerEntity> {
@@ -21,12 +19,6 @@ export class BannerRecords extends RecordsModel<BannerEntity> {
     }
 
     protected isValid(obj: BannerEntity): boolean {
-        let validator = new BannerEntityValidator(obj);
-
-        if (validator.messages.length > 0) {
-            throw new InvalidBannerEntityError(obj, ...validator.messages);
-        }
-
-        return validator.isValid;
+        return true;
     }
 }
