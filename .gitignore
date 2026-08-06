@@ -3,5 +3,6 @@ generated
 node_modules
 
 .env
-.env.dev
+.env.*
+!.env.example
 tsconfig.tsbuildinfo
