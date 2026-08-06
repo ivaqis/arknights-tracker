@@ -27,7 +27,7 @@ export class RecordsModel<T extends object> {
 
     protected get namePrefix(): string {
         if (this.name) {
-            return `${this.name}: `;
+            return `[${this.name}] `;
         }
 
         return "";

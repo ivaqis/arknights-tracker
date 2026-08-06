@@ -23,7 +23,7 @@ export class ItemNameRecords {
 
     private get namePrefix() {
         if (this._name) {
-            return `${this._name}: `;
+            return `[${this._name}] `;
         }
 
         return "";
