@@ -1,4 +1,3 @@
-import { UserBannerProfileEntity } from "@database/entities/UserBannerProfileEntity";
 import { UserBannerProfileRecord } from "@database/records/UserBannerProfileRecord";
 import { Table } from "@database/tables/Table";
 import { Prisma, PrismaClient } from "@prisma/client";
@@ -10,7 +9,9 @@ export class UserBannerProfilesTable extends Table<Prisma.UserBannerProfileDeleg
     }
 
     public async find(profileId: bigint): Promise<UserBannerProfileRecord | null> {
-        const entity = await this.getEntity(profileId);
+        const entity = await this.table.findUnique({
+            where: { profileId }
+        });
 
         if (!entity) {
             return null;
@@ -47,6 +48,17 @@ export class UserBannerProfilesTable extends Table<Prisma.UserBannerProfileDeleg
         return new UserBannerProfileRecord(entity);
     }
 
+    public async update(record: UserBannerProfileRecord): Promise<void> {
+        await this.table.update({
+            where: {
+                profileId: record.profileId
+            },
+            data: {
+                version: record.version.value
+            }
+        });
+    }
+
     public async create(): Promise<UserBannerProfileRecord> {
         const entity = await this.table.create({
             data: {
@@ -55,12 +67,5 @@ export class UserBannerProfilesTable extends Table<Prisma.UserBannerProfileDeleg
         });
 
         return new UserBannerProfileRecord(entity);
-    }
-
-    private async getEntity(profileId: bigint): Promise<UserBannerProfileEntity | null> {
-        return this.table
-            .findUnique({
-                where: { profileId }
-            });
     }
 }

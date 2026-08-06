@@ -136,6 +136,7 @@ model UserBannerProfile {
     profileId BigInt   @id @default(autoincrement())
     publicId  String   @unique @default(uuid())
     privateId String   @unique @default(uuid())
+    version   Int      @default(2)
     createdAt DateTime @default(now())
     updatedAt DateTime @updatedAt
 

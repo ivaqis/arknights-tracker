@@ -11,6 +11,7 @@ import { UserBannerProfileRecord } from "@database/records/UserBannerProfileReco
 import { PullsAggregator } from "@models/pullsAggregator/PullsAggregator";
 import { SyncPullsSigner } from "@models/signers/syncPullsSigner/SyncPullsSigner";
 import { StablePullId } from "@models/stablePullId/StablePullId";
+import { UserBannerProfileVersion } from "@models/UserBannerProfileVersion";
 import e from "express";
 
 export class SyncImport extends Controller<
@@ -101,6 +102,12 @@ export class SyncImport extends Controller<
         await this._database.userBannerProfiles.setTokenId(tokenId.id, profile.profileId);
         if (lastId) {
             await this._database.userBannerProfiles.setPullsId(lastId.id, lastId.period, profile.profileId);
+        }
+
+        if (profile.version.initValue !== UserBannerProfileVersion.V_2) {
+            profile.version.value = UserBannerProfileVersion.V_2;
+
+            await this._database.userBannerProfiles.updateUserBannerProfile(profile);
         }
 
         this.setTokenAsUsed();

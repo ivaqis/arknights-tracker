@@ -17,6 +17,7 @@ import { BannerTokenId } from "@models/bannerTokenId/BannerTokenId";
 import { BannersPulls } from "@models/pulls/BannersPulls";
 import { SyncPullsSigner } from "@models/signers/syncPullsSigner/SyncPullsSigner";
 import { StablePullId } from "@models/stablePullId/StablePullId";
+import { UserBannerProfileVersion } from "@models/UserBannerProfileVersion";
 import { BannerDataFetcher } from "@services/bannerDataFetcher/BannerDataFetcher";
 import { DAY_MS, getMondayTs, getWeek, WEEK_MS } from "@utils/dateUtils";
 import { importErrorCallback } from "@utils/errorCallbacks";
@@ -60,9 +61,18 @@ export class PostImport extends StreamController<
         this._privateId = req.body.privateId;
     }
 
-    private static writeOnProfile(requestedProfile: string | null, tokenProfile: string | null, pullsProfile: string | null, reachedLimit: boolean): string | null {
+    private static writeOnProfile(requestedProfile: string | null,
+                                  tokenProfile: string | null,
+                                  pullsProfile: string | null,
+                                  reachedLimit: boolean,
+                                  requestedProfileVersion: number | null
+    ): string | null {
         if (tokenProfile && pullsProfile && tokenProfile !== pullsProfile) {
             throw new Error(`Profile by tokenId and by pullsId must be equal\nrequested profile: ${requestedProfile}\ntoken profile: ${tokenProfile}\npulls profile: ${pullsProfile}`);
+        }
+
+        if (requestedProfileVersion !== null && requestedProfileVersion !== UserBannerProfileVersion.V_2) {
+            return requestedProfile;
         }
 
         if (tokenProfile) {
@@ -153,13 +163,16 @@ export class PostImport extends StreamController<
         const limit = Date.now() - PostImport.PULL_STORAGE_LIMIT_MS;
         const isLimitReached = limit > lastPullWithOffset;
 
+        const requestedProfileVersion = requestedProfile?.version.initValue ?? null;
+
         logger.debug(`${limit} ${lastPullWithOffset}`);
 
         let writeOn: string | null = PostImport.writeOnProfile(
             this._privateId,
             tokenProfile?.profile.publicId ?? null,
             pullProfile?.profile.publicId ?? null,
-            isLimitReached
+            isLimitReached,
+            requestedProfileVersion
         );
 
         logger.debug(`${isLimitReached} ${this._privateId} ${writeOn}`);
@@ -202,7 +215,8 @@ export class PostImport extends StreamController<
                 this._privateId,
                 tokenProfile?.profile.publicId ?? null,
                 pullProfile?.profile.publicId ?? null,
-                isLimitReached
+                isLimitReached,
+                requestedProfileVersion
             );
         }
 

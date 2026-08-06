@@ -32,6 +32,10 @@ export class UserBannerProfilesRepository extends Repository {
         return this._userBannerProfilesTable.findByPrivateId(privateId);
     }
 
+    public async updateUserBannerProfile(record: UserBannerProfileRecord): Promise<void> {
+        return this._userBannerProfilesTable.update(record);
+    }
+
     public async createUserBannerProfile(): Promise<UserBannerProfileRecord> {
         return this._userBannerProfilesTable.create();
     }
