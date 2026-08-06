@@ -6,7 +6,7 @@ import { Repository } from "@database/repositories/Repository";
 import { GlobalBannerTimelinesTable } from "@database/tables/GlobalBannerTimelinesTable";
 import { GlobalItemStatsTable } from "@database/tables/GlobalItemStatsTable";
 import { GlobalPityDistributionsTable } from "@database/tables/GlobalPityDistributionsTable";
-import { PrismaClient } from "@prisma/client";
+import { PrismaClient } from "@generated/prisma-v2";
 
 export class GlobalBannerStatsRepository extends Repository {
     private readonly _globalBannerTimelinesTable: GlobalBannerTimelinesTable;

@@ -23,6 +23,7 @@
     "baseUrl": ".",
     "paths": {
       "@static/*": ["static/*"],
+      "@generated/*": ["generated/*"],
       "@utils/*": ["src/utils/*"],
       "@database/*": ["src/database/*"],
       "@staticModels/*": ["src/staticModels/*"],

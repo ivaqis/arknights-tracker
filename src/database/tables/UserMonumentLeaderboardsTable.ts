@@ -3,10 +3,10 @@ import { UserGameProfileRecord } from "@database/records/UserGameProfileRecord";
 import { UserMonumentLeaderboardRecord } from "@database/records/UserMonumentLeaderboardRecord";
 import { UserRecord } from "@database/records/UserRecord";
 import { Table } from "@database/tables/Table";
+import { Prisma, PrismaClient } from "@generated/prisma-v2";
 import { MonumentRecord } from "@models/monument/MonumentRecord";
 import { MonumentLeaderboardSortField } from "@models/monumentLeaderboard/MonumentLeaderboardSortField";
 import { SortOrder } from "@models/SortOrder";
-import { Prisma, PrismaClient } from "@prisma/client";
 
 export class UserMonumentLeaderboardsTable extends Table<Prisma.UserMonumentLeaderboardDelegate> {
     public constructor(prisma: PrismaClient) {

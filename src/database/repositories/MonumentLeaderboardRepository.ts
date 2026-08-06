@@ -9,11 +9,11 @@ import { Repository } from "@database/repositories/Repository";
 import { UserMonumentCharactersTable } from "@database/tables/UserMonumentCharactersTable";
 import { UserMonumentGroupsTable } from "@database/tables/UserMonumentGroupsTable";
 import { UserMonumentLeaderboardsTable } from "@database/tables/UserMonumentLeaderboardsTable";
+import { PrismaClient } from "@generated/prisma-v2";
 import { Amount } from "@models/Amount";
 import { MonumentRecord } from "@models/monument/MonumentRecord";
 import { MonumentLeaderboardSortField } from "@models/monumentLeaderboard/MonumentLeaderboardSortField";
 import { SortOrder } from "@models/SortOrder";
-import { PrismaClient } from "@prisma/client";
 
 export class MonumentLeaderboardRepository extends Repository {
     private readonly _monumentGroupsTable: UserMonumentGroupsTable;

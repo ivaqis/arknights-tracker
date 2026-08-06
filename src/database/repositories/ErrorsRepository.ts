@@ -2,7 +2,7 @@ import { ImportErrorEntity } from "@database/entities/ImportErrorEntity";
 import { Repository } from "@database/repositories/Repository";
 import { ImportErrorsTable } from "@database/tables/ImportErrorsTable";
 import { ImportError } from "@errors/ImportError";
-import { PrismaClient } from "@prisma/client";
+import { PrismaClient } from "@generated/prisma-v2";
 
 export class ErrorsRepository extends Repository {
     private readonly _importErrorsTable: ImportErrorsTable;

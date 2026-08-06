@@ -1,6 +1,6 @@
 import { UserGameProfileRecord } from "@database/records/UserGameProfileRecord";
 import { Table } from "@database/tables/Table";
-import { Prisma, PrismaClient } from "@prisma/client";
+import { Prisma, PrismaClient } from "@generated/prisma-v2";
 
 export class UserGameProfilesTable extends Table<Prisma.UserGameProfileDelegate> {
     public constructor(prisma: PrismaClient) {

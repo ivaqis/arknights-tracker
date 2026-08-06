@@ -2,10 +2,10 @@ import { UserContractLeaderboardRecord } from "@database/records/UserContractLea
 import { UserGameProfileRecord } from "@database/records/UserGameProfileRecord";
 import { UserRecord } from "@database/records/UserRecord";
 import { Table } from "@database/tables/Table";
+import { Prisma, PrismaClient } from "@generated/prisma-v2";
 import { ContractRecord } from "@models/contingencyContract/ContractRecord";
 import { ContractLeaderboardSortField } from "@models/contractLeaderboard/ContractLeaderboardSortField";
 import { SortOrder } from "@models/SortOrder";
-import { Prisma, PrismaClient } from "@prisma/client";
 
 export class UserContractLeaderboardsTable extends Table<Prisma.UserContractLeaderboardDelegate> {
     public constructor(prisma: PrismaClient) {

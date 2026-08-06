@@ -1,7 +1,7 @@
 import { UserWeaponBannerPullsEntity } from "@database/entities/UserWeaponBannerPullsEntity";
 import { UserWeaponBannerPullsRecord } from "@database/records/UserWeaponBannerPullsRecord";
 import { Table } from "@database/tables/Table";
-import { Prisma, PrismaClient } from "@prisma/client";
+import { Prisma, PrismaClient } from "@generated/prisma-v2";
 
 export class UserWeaponBannerPullsTable extends Table<Prisma.UserWeaponBannerPullsDelegate> {
 

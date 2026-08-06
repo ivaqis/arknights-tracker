@@ -3,7 +3,7 @@ import { UserRecord } from "@database/records/UserRecord";
 import { Repository } from "@database/repositories/Repository";
 import { FirebaseUsersTable } from "@database/tables/FirebaseUsersTable";
 import { UsersTable } from "@database/tables/UsersTable";
-import { PrismaClient } from "@prisma/client";
+import { PrismaClient } from "@generated/prisma-v2";
 
 export class UsersRepository extends Repository {
     private readonly _usersTable: UsersTable;

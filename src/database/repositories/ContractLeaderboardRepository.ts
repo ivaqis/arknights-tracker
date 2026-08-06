@@ -6,10 +6,10 @@ import { UserRecord } from "@database/records/UserRecord";
 import { Repository } from "@database/repositories/Repository";
 import { UserContractCharactersTable } from "@database/tables/UserContractCharactersTable";
 import { UserContractLeaderboardsTable } from "@database/tables/UserContractLeaderboardsTable";
+import { PrismaClient } from "@generated/prisma-v2";
 import { ContractRecord } from "@models/contingencyContract/ContractRecord";
 import { ContractLeaderboardSortField } from "@models/contractLeaderboard/ContractLeaderboardSortField";
 import { SortOrder } from "@models/SortOrder";
-import { PrismaClient } from "@prisma/client";
 
 export class ContractLeaderboardRepository extends Repository {
     private readonly _userContractLeaderboardsTable: UserContractLeaderboardsTable;

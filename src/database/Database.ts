@@ -7,7 +7,7 @@ import { MonumentLeaderboardRepository } from "@database/repositories/MonumentLe
 import { UserBannerProfilesRepository } from "@database/repositories/UserBannerProfilesRepository";
 import { UserBannerStatsRepository } from "@database/repositories/UserBannerStatsRepository";
 import { UsersRepository } from "@database/repositories/UsersRepository";
-import { PrismaClient } from "@prisma/client";
+import { PrismaClient } from "@generated/prisma-v2";
 import { IService } from "@services/IService";
 
 export class Database implements IService {

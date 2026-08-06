@@ -1,7 +1,7 @@
 import { UserCharBannerTypePullsEntity } from "@database/entities/UserCharBannerTypePullsEntity";
 import { UserCharBannerTypePullsRecord } from "@database/records/UserCharBannerTypePullsRecord";
 import { Table } from "@database/tables/Table";
-import { Prisma, PrismaClient } from "@prisma/client";
+import { Prisma, PrismaClient } from "@generated/prisma-v2";
 
 export class UserCharBannerTypePullsTable extends Table<Prisma.UserCharBannerTypePullsDelegate> {
 

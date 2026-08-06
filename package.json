@@ -10,9 +10,15 @@
     "clean": "rimraf dist tsconfig.tsbuildinfo",
     "rebuild": "npm run clean && npm run build",
     "start": "node dist/src/main.js",
-    "migrate:pg": "prisma migrate deploy --schema prisma/v2/schema.prisma",
-    "generate:pg": "prisma generate --schema prisma/v2/schema.prisma",
-    "create-migration:pg": "prisma migrate dev --create-only --name dev --schema prisma/v2/schema.prisma"
+    "prisma:generate:v2": "prisma generate --schema prisma/v2/schema.prisma",
+    "prisma:migrate:v2": "prisma migrate deploy --schema prisma/v2/schema.prisma",
+    "prisma:create-migration:v2": "prisma migrate dev --create-only --name dev --schema prisma/v2/schema.prisma",
+    "prisma:generate:v1:pg": "prisma generate --schema prisma/v1/postgres/schema.prisma",
+    "prisma:migrate:v1:pg": "prisma migrate deploy --schema prisma/v1/postgres/schema.prisma",
+    "prisma:create-migration:v1:pg": "prisma migrate dev --create-only --name dev --schema prisma/v1/postgres/schema.prisma",
+    "prisma:generate:v1:sqlite": "prisma generate --schema prisma/v1/sqlite/schema.prisma",
+    "prisma:migrate:v1:sqlite": "prisma migrate deploy --schema prisma/v1/sqlite/schema.prisma",
+    "prisma:create-migration:v1:sqlite": "prisma migrate dev --create-only --name dev --schema prisma/v1/sqlite/schema.prisma"
   },
   "keywords": [],
   "author": "",

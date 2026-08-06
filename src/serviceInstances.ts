@@ -1,6 +1,6 @@
 import { config } from "@/config";
 import { Database } from "@database/Database";
-import { PrismaClient } from "@prisma/client";
+import { PrismaClient } from "@generated/prisma-v2";
 import { Authenticator } from "@services/auth/Authenticator";
 import { AvatarUploader } from "@services/avatarUploader/AvatarUploader";
 import { FirebaseAuthenticator } from "@services/firebaseAuth/FirebaseAuthenticator";

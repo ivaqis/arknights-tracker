@@ -2,9 +2,9 @@ import { GlobalBannerStatsEntity } from "@database/entities/GlobalBannerStatsEnt
 import { UserBannerTypeStatEntity } from "@database/entities/UserBannerTypeStatEntity";
 import { UserBannerStatRecord } from "@database/records/UserBannerStatRecord";
 import { Table } from "@database/tables/Table";
+import { Prisma, PrismaClient } from "@generated/prisma-v2";
 import { DbBannerType } from "@models/banners/DbBannerType";
 import { IncludeRange } from "@models/IncludeRange";
-import { Prisma, PrismaClient } from "@prisma/client";
 
 export class UserBannerStatsTable extends Table<Prisma.UserBannerStatDelegate> {
 

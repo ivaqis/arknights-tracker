@@ -1,7 +1,7 @@
 import { FirebaseUserEntity } from "@database/entities/FirebaseUserEntity";
 import { FirebaseUserRecord } from "@database/records/FirebaseUserRecord";
 import { Table } from "@database/tables/Table";
-import { Prisma, PrismaClient } from "@prisma/client";
+import { Prisma, PrismaClient } from "@generated/prisma-v2";
 
 export class FirebaseUsersTable extends Table<Prisma.FirebaseUserDelegate> {
     public constructor(prisma: PrismaClient) {

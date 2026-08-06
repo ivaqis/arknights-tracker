@@ -5,7 +5,7 @@ import { Repository } from "@database/repositories/Repository";
 import { BannerPullsIdsTable } from "@database/tables/BannerPullsIdsTable";
 import { BannerTokenIdsTable } from "@database/tables/BannerTokenIdsTable";
 import { UserBannerProfilesTable } from "@database/tables/UserBannerProfilesTable";
-import { PrismaClient } from "@prisma/client";
+import { PrismaClient } from "@generated/prisma-v2";
 
 export class UserBannerProfilesRepository extends Repository {
     private readonly _userBannerProfilesTable: UserBannerProfilesTable;

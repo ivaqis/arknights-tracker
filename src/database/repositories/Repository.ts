@@ -1,4 +1,4 @@
-import { PrismaClient } from "@prisma/client";
+import { PrismaClient } from "@generated/prisma-v2";
 
 export abstract class Repository {
     private readonly _prisma: PrismaClient;

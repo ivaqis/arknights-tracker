@@ -1,7 +1,7 @@
 import { GlobalPityDistributionEntity } from "@database/entities/GlobalPityDistributionEntity";
 import { GlobalPityDistributionRecord } from "@database/records/GlobalPityDistributionRecord";
 import { Table } from "@database/tables/Table";
-import { Prisma, PrismaClient } from "@prisma/client";
+import { Prisma, PrismaClient } from "@generated/prisma-v2";
 
 export class GlobalPityDistributionsTable extends Table<Prisma.GlobalPityDistributionDelegate> {
 

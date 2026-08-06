@@ -1,4 +1,4 @@
-import { PrismaClient } from "@prisma/client";
+import { PrismaClient } from "@generated/prisma-v2";
 
 export abstract class Table<Delegate> {
     private readonly _prismaClient: PrismaClient;

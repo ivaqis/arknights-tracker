@@ -10,9 +10,9 @@ import { UserBannerStatsTable } from "@database/tables/UserBannerStatsTable";
 import { UserCharBannerPullsTable } from "@database/tables/UserCharBannerPullsTable";
 import { UserCharBannerTypePullsTable } from "@database/tables/UserCharBannerTypePullsTable";
 import { UserWeaponBannerPullsTable } from "@database/tables/UserWeaponBannerPullsTable";
+import { PrismaClient } from "@generated/prisma-v2";
 import { DbBannerType } from "@models/banners/DbBannerType";
 import { IncludeRange } from "@models/IncludeRange";
-import { PrismaClient } from "@prisma/client";
 
 export class UserBannerStatsRepository extends Repository {
     private readonly _userBannerStatsTable: UserBannerStatsTable;
