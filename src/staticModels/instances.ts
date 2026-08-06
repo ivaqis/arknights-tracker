@@ -1,4 +1,5 @@
 import banners from "@static/banners.json";
+import bannerTypes from "@static/bannerTypes.json";
 import charNames from "@static/charNames.json";
 import crisisContracts from "@static/crisisContracts.json";
 import equipNames from "@static/equipNames.json";
@@ -9,6 +10,7 @@ import contractNames from "@static/contractNames.json";
 import monumentNames from "@static/monumentNames.json";
 import monumentGroups from "@static/monumentGroups.json";
 import { BannerRecords } from "@staticModels/banners/BannerRecords";
+import { BannerTypeRecords } from "@staticModels/bannerTypes/BannerTypeRecords";
 import { BannedWords } from "@staticModels/banwords/BannedWords";
 import { CrisisContractRecords } from "@staticModels/crisisContracts/CrisisContractRecords";
 import { ItemNameRecords } from "@staticModels/itemNames/ItemNameRecords";
@@ -16,6 +18,7 @@ import { MonumentGroupRecords } from "@staticModels/monument/MonumentGroupRecord
 import { TextList } from "@staticModels/TextList";
 
 export const bannerRecords = new BannerRecords(banners);
+export const bannerTypeRecords = new BannerTypeRecords(bannerTypes);
 
 export const charNameRecords = new ItemNameRecords(charNames, "CharNameRecords");
 export const weaponNameRecords = new ItemNameRecords(weaponNames, "WeaponNameRecords");

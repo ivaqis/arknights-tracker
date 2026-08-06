@@ -1,4 +1,6 @@
 import { Banner } from "@models/banners/Banner";
+import { DbBannerType } from "@models/banners/DbBannerType";
+import { ShortBannerType } from "@models/banners/ShortBannerType";
 import { BannerEntity } from "@staticModels/banners/BannerEntity";
 import { RecordsModel } from "@staticModels/RecordsModel";
 
@@ -19,6 +21,7 @@ export class BannerRecords extends RecordsModel<BannerEntity> {
     }
 
     protected isValid(obj: BannerEntity): boolean {
-        return true;
+        return ShortBannerType.isShortBannerType(obj.type)
+            && DbBannerType.isDbBannerType(obj.dbType);
     }
 }

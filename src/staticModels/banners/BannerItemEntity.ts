@@ -1,4 +1,4 @@
 export interface BannerItemEntity {
-    itemId: string;
-    rarity: number;
+    readonly itemId: string;
+    readonly rarity: number;
 }

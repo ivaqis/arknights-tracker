@@ -1,15 +1,15 @@
 import { BannerItemEntity } from "@staticModels/banners/BannerItemEntity";
 
 export interface BannerEntity {
-    id: string,
-    name: string,
-    type: string,
-    dbType: string,
-    startTime: string,
-    endTime: string | null,
-    startTimeAsia: string,
-    endTimeAsia: string | null,
-    featured: string[],
-    hardGuaranteed: string[],
-    allowed: BannerItemEntity[]
+    readonly id: string,
+    readonly name: string,
+    readonly type: string,
+    readonly dbType: string,
+    readonly startTime: string,
+    readonly endTime: string | null,
+    readonly startTimeAsia: string,
+    readonly endTimeAsia: string | null,
+    readonly featured: string[],
+    readonly hardGuaranteed: string[],
+    readonly allowed: BannerItemEntity[]
 }

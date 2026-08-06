@@ -1,4 +1,5 @@
 import { DbBannerType } from "@models/banners/DbBannerType";
+import { ShortBannerType } from "@models/banners/ShortBannerType";
 
 export enum BannerType {
     CHAR_BEGINNER = "E_CharacterGachaPoolType_Beginner",
@@ -15,13 +16,13 @@ export namespace BannerType {
         | BannerType.CHAR_SPECIAL
         | BannerType.CHAR_JOINT;
 
-    export function getShortBannerTypeName(bannerType: BannerType): string {
+    export function getShortBannerTypeName(bannerType: BannerType): ShortBannerType {
         switch (bannerType) {
-            case BannerType.CHAR_BEGINNER: return "new-player";
-            case BannerType.CHAR_STANDARD: return "standard";
-            case BannerType.CHAR_SPECIAL: return "special";
-            case BannerType.CHAR_JOINT: return "joint";
-            case BannerType.WEAPON: return "weapon";
+            case BannerType.CHAR_BEGINNER: return ShortBannerType.CHAR_BEGINNER;
+            case BannerType.CHAR_STANDARD: return ShortBannerType.CHAR_STANDARD;
+            case BannerType.CHAR_SPECIAL: return ShortBannerType.CHAR_SPECIAL;
+            case BannerType.CHAR_JOINT: return ShortBannerType.CHAR_JOINT;
+            case BannerType.WEAPON: return ShortBannerType.WEAPON;
         }
     }
 
