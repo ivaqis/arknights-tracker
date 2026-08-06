@@ -1,0 +1,7 @@
+.idea
+generated
+node_modules
+
+.env
+.env.dev
+tsconfig.tsbuildinfo
