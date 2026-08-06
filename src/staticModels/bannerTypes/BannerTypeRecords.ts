@@ -20,6 +20,12 @@ export class BannerTypeRecords extends RecordsModel<BannerTypeEntity> {
     }
 
     protected isValid(obj: BannerTypeEntity): boolean {
-        return ShortBannerType.isShortBannerType(obj.type);
+        const isValid = ShortBannerType.isShortBannerType(obj.type);
+
+        if (!isValid) {
+            throw new Error(`${this.namePrefix}Invalid banner type entity: ${JSON.stringify(obj)}`);
+        }
+
+        return true;
     }
 }
