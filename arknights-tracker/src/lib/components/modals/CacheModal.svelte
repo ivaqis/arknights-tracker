@@ -133,6 +133,15 @@
           }
         }
       }
+
+      if (imageCacheSize === 0 && typeof window !== "undefined" && "performance" in window) {
+        const resources = performance.getEntriesByType("resource");
+        for (const res of resources) {
+          if (res.initiatorType === "img" || (res.name && res.name.match(/\.(webp|png|jpg|jpeg|svg|gif)($|\?)/i))) {
+            imageCacheSize += res.transferSize || res.encodedBodySize || res.decodedBodySize || 0;
+          }
+        }
+      }
     } catch (err) {
       console.error(err);
     }
