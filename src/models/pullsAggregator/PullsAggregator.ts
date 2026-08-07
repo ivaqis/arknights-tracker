@@ -1,6 +1,6 @@
-import { Database } from "@database/Database";
-import { BannersPulls } from "@models/pulls/BannersPulls";
-import { UserPullsUpdater } from "@models/pullsAggregator/UserPullsUpdater";
+import { Database } from "@database/Database.js";
+import { BannersPulls } from "@models/pulls/BannersPulls.js";
+import { UserPullsUpdater } from "@models/pullsAggregator/UserPullsUpdater.js";
 
 export class PullsAggregator {
     private readonly _database: Database;

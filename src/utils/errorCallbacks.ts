@@ -1,5 +1,5 @@
-import { database } from "@/serviceInstances";
-import { ImportError } from "@errors/ImportError";
+import { database } from "@/serviceInstances.js";
+import { ImportError } from "@errors/ImportError.js";
 
 export async function importErrorCallback(error: ImportError): Promise<void> {
     if (!database.isActive()) {

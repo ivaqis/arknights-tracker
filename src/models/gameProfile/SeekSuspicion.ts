@@ -1,5 +1,5 @@
-import { SeekSuspicionEntity } from "@models/gameProfile/entities/SeekSuspicionEntity";
-import { IEntityClass } from "@models/IEntityClass";
+import { SeekSuspicionEntity } from "@models/gameProfile/entities/SeekSuspicionEntity.js";
+import { IEntityClass } from "@models/IEntityClass.js";
 
 export class SeekSuspicion implements IEntityClass<SeekSuspicionEntity> {
     private readonly _count: number;

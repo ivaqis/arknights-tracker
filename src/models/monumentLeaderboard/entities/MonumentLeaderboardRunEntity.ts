@@ -1,4 +1,4 @@
-import { MonumentLeaderboardCharEntity } from "@models/monumentLeaderboard/entities/MonumentLeaderboardCharEntity";
+import { MonumentLeaderboardCharEntity } from "@models/monumentLeaderboard/entities/MonumentLeaderboardCharEntity.js";
 
 export interface MonumentLeaderboardRunEntity {
     recordId: string;

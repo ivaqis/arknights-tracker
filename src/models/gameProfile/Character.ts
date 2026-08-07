@@ -1,17 +1,17 @@
-import { logger } from "@/logger";
-import { CharacterGender } from "@models/CharacterGender";
-import { CharSkill } from "@models/gameProfile/CharSkill";
-import { CharacterEntity } from "@models/gameProfile/entities/CharacterEntity";
-import { CharSkillEntity } from "@models/gameProfile/entities/CharSkillEntity";
-import { Equip } from "@models/gameProfile/Equip";
-import { TacticalItem } from "@models/gameProfile/TacticalItem";
-import { Talent } from "@models/gameProfile/Talent";
-import { Weapon } from "@models/gameProfile/Weapon";
-import { IEntityClass } from "@models/IEntityClass";
-import { CharData } from "@services/skportDetailFetcher/contracts/CharData";
-import { SkillData } from "@services/skportDetailFetcher/contracts/SkillData";
-import { UserSkillData } from "@services/skportDetailFetcher/contracts/UserSkillData";
-import { charNameRecords } from "@staticModels/instances";
+import { logger } from "@/logger.js";
+import { CharacterGender } from "@models/CharacterGender.js";
+import { CharSkill } from "@models/gameProfile/CharSkill.js";
+import { CharacterEntity } from "@models/gameProfile/entities/CharacterEntity.js";
+import { CharSkillEntity } from "@models/gameProfile/entities/CharSkillEntity.js";
+import { Equip } from "@models/gameProfile/Equip.js";
+import { TacticalItem } from "@models/gameProfile/TacticalItem.js";
+import { Talent } from "@models/gameProfile/Talent.js";
+import { Weapon } from "@models/gameProfile/Weapon.js";
+import { IEntityClass } from "@models/IEntityClass.js";
+import { CharData } from "@services/skportDetailFetcher/contracts/CharData.js";
+import { SkillData } from "@services/skportDetailFetcher/contracts/SkillData.js";
+import { UserSkillData } from "@services/skportDetailFetcher/contracts/UserSkillData.js";
+import { charNameRecords } from "@staticModels/instances.js";
 
 export class Character implements IEntityClass<CharacterEntity> {
     private readonly _id: string;

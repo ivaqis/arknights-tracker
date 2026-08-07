@@ -1,6 +1,6 @@
-import { GameServerId } from "@models/GameServerId";
-import { MonumentLeaderboardSortField } from "@models/monumentLeaderboard/MonumentLeaderboardSortField";
-import { SortOrder } from "@models/SortOrder";
+import { GameServerId } from "@models/GameServerId.js";
+import { MonumentLeaderboardSortField } from "@models/monumentLeaderboard/MonumentLeaderboardSortField.js";
+import { SortOrder } from "@models/SortOrder.js";
 
 export interface GetMonumentListQuery {
     dungeonId: string;

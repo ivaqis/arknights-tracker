@@ -1,16 +1,16 @@
-import { logger } from "@/logger";
-import { Base } from "@models/gameProfile/Base";
-import { BpSystem } from "@models/gameProfile/BpSystem";
-import { Character } from "@models/gameProfile/Character";
-import { DailyMission } from "@models/gameProfile/DailyMission";
-import { Dungeon } from "@models/gameProfile/Dungeon";
-import { CharacterEntity } from "@models/gameProfile/entities/CharacterEntity";
-import { GameProfileEntity } from "@models/gameProfile/entities/GameProfileEntity";
-import { SeekSuspicion } from "@models/gameProfile/SeekSuspicion";
-import { WeeklyMission } from "@models/gameProfile/WeeklyMission";
-import { IEntityClass } from "@models/IEntityClass";
-import { CharData } from "@services/skportDetailFetcher/contracts/CharData";
-import { DetailData } from "@services/skportDetailFetcher/contracts/DetailData";
+import { logger } from "@/logger.js";
+import { Base } from "@models/gameProfile/Base.js";
+import { BpSystem } from "@models/gameProfile/BpSystem.js";
+import { Character } from "@models/gameProfile/Character.js";
+import { DailyMission } from "@models/gameProfile/DailyMission.js";
+import { Dungeon } from "@models/gameProfile/Dungeon.js";
+import { CharacterEntity } from "@models/gameProfile/entities/CharacterEntity.js";
+import { GameProfileEntity } from "@models/gameProfile/entities/GameProfileEntity.js";
+import { SeekSuspicion } from "@models/gameProfile/SeekSuspicion.js";
+import { WeeklyMission } from "@models/gameProfile/WeeklyMission.js";
+import { IEntityClass } from "@models/IEntityClass.js";
+import { CharData } from "@services/skportDetailFetcher/contracts/CharData.js";
+import { DetailData } from "@services/skportDetailFetcher/contracts/DetailData.js";
 
 export class GameProfile implements IEntityClass<GameProfileEntity> {
     private readonly _base: Base;

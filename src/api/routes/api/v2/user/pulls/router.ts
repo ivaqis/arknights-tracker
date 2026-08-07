@@ -1,11 +1,11 @@
-import { Controller } from "@api/controllers/Controller";
-import { LinkUserPulls } from "@api/controllers/userPulls/LinkUserPulls";
-import { UnlinkUserPulls } from "@api/controllers/userPulls/UnlinkUserPulls";
-import { RequireAuth } from "@api/middleware/RequireAuth";
-import { RequestValidator } from "@api/middleware/validators/RequestValidator";
-import { LinkUserPullsRequestValidator } from "@api/middleware/validators/userPulls/LinkUserPullsRequestValidator";
-import { UnlinkUserPullsRequestValidator } from "@api/middleware/validators/userPulls/UnlinkUserPullsRequestValidator";
-import { AuthType } from "@services/auth/AuthType";
+import { Controller } from "@api/controllers/Controller.js";
+import { LinkUserPulls } from "@api/controllers/userPulls/LinkUserPulls.js";
+import { UnlinkUserPulls } from "@api/controllers/userPulls/UnlinkUserPulls.js";
+import { RequireAuth } from "@api/middleware/RequireAuth.js";
+import { RequestValidator } from "@api/middleware/validators/RequestValidator.js";
+import { LinkUserPullsRequestValidator } from "@api/middleware/validators/userPulls/LinkUserPullsRequestValidator.js";
+import { UnlinkUserPullsRequestValidator } from "@api/middleware/validators/userPulls/UnlinkUserPullsRequestValidator.js";
+import { AuthType } from "@services/auth/AuthType.js";
 import { Router } from "express";
 
 export const userPullsRouter = Router();

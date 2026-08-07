@@ -1,5 +1,5 @@
-import { logger } from "@/logger";
-import { ItemNameEntity } from "@staticModels/itemNames/ItemNameEntity";
+import { logger } from "@/logger.js";
+import { ItemNameEntity } from "@staticModels/itemNames/ItemNameEntity.js";
 
 export class ItemNameRecords {
     private readonly _id2Name = new Map<string, string>();

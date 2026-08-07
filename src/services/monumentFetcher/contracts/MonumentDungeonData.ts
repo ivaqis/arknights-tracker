@@ -1,5 +1,5 @@
-import { MonumentEnemyData } from "@services/monumentFetcher/contracts/MonumentEnemyData";
-import { MonumentRecordData } from "@services/monumentFetcher/contracts/MonumentRecordData";
+import { MonumentEnemyData } from "@services/monumentFetcher/contracts/MonumentEnemyData.js";
+import { MonumentRecordData } from "@services/monumentFetcher/contracts/MonumentRecordData.js";
 
 export interface MonumentDungeonData {
     id: string;

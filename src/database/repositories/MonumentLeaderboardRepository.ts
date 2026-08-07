@@ -1,19 +1,19 @@
-import { UserMonumentCharacterEntity } from "@database/entities/UserMonumentCharacterEntity";
-import { MonumentFilters } from "@database/MonumentFilters";
-import { UserGameProfileRecord } from "@database/records/UserGameProfileRecord";
-import { UserMonumentCharacterRecord } from "@database/records/UserMonumentCharacterRecord";
-import { UserMonumentGroupRecord } from "@database/records/UserMonumentGroupRecord";
-import { UserMonumentLeaderboardRecord } from "@database/records/UserMonumentLeaderboardRecord";
-import { UserRecord } from "@database/records/UserRecord";
-import { Repository } from "@database/repositories/Repository";
-import { UserMonumentCharactersTable } from "@database/tables/UserMonumentCharactersTable";
-import { UserMonumentGroupsTable } from "@database/tables/UserMonumentGroupsTable";
-import { UserMonumentLeaderboardsTable } from "@database/tables/UserMonumentLeaderboardsTable";
-import { PrismaClient } from "@generated/prisma-v2";
-import { Amount } from "@models/Amount";
-import { MonumentRecord } from "@models/monument/MonumentRecord";
-import { MonumentLeaderboardSortField } from "@models/monumentLeaderboard/MonumentLeaderboardSortField";
-import { SortOrder } from "@models/SortOrder";
+import { UserMonumentCharacterEntity } from "@database/entities/UserMonumentCharacterEntity.js";
+import { MonumentFilters } from "@database/MonumentFilters.js";
+import { UserGameProfileRecord } from "@database/records/UserGameProfileRecord.js";
+import { UserMonumentCharacterRecord } from "@database/records/UserMonumentCharacterRecord.js";
+import { UserMonumentGroupRecord } from "@database/records/UserMonumentGroupRecord.js";
+import { UserMonumentLeaderboardRecord } from "@database/records/UserMonumentLeaderboardRecord.js";
+import { UserRecord } from "@database/records/UserRecord.js";
+import { Repository } from "@database/repositories/Repository.js";
+import { UserMonumentCharactersTable } from "@database/tables/UserMonumentCharactersTable.js";
+import { UserMonumentGroupsTable } from "@database/tables/UserMonumentGroupsTable.js";
+import { UserMonumentLeaderboardsTable } from "@database/tables/UserMonumentLeaderboardsTable.js";
+import { PrismaClient } from "@generated/prisma-v2/index.js";
+import { Amount } from "@models/Amount.js";
+import { MonumentRecord } from "@models/monument/MonumentRecord.js";
+import { MonumentLeaderboardSortField } from "@models/monumentLeaderboard/MonumentLeaderboardSortField.js";
+import { SortOrder } from "@models/SortOrder.js";
 
 export class MonumentLeaderboardRepository extends Repository {
     private readonly _monumentGroupsTable: UserMonumentGroupsTable;

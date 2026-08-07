@@ -1,4 +1,4 @@
-import { MonumentDungeonGroupData } from "@services/monumentFetcher/contracts/MonumentDungeonGroupData";
+import { MonumentDungeonGroupData } from "@services/monumentFetcher/contracts/MonumentDungeonGroupData.js";
 
 export interface MonumentGroupData {
     id: string;

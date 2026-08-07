@@ -1,6 +1,6 @@
-import { Indicator } from "@staticModels/crisisContracts/Indicator";
-import { IndicatorEntity } from "@staticModels/crisisContracts/IndicatorEntity";
-import { RecordsModel } from "@staticModels/RecordsModel";
+import { Indicator } from "@staticModels/crisisContracts/Indicator.js";
+import { IndicatorEntity } from "@staticModels/crisisContracts/IndicatorEntity.js";
+import { RecordsModel } from "@staticModels/RecordsModel.js";
 
 export class IndicatorRecords {
     private readonly _byId: RecordsModel<Indicator>;

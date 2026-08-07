@@ -1,7 +1,7 @@
-import { UserExistQuery } from "@api/contracts/userExist/UserExistQuery";
-import { UsernameValidationRule } from "@models/validation/UsernameValidationRule";
-import { ValidationRule } from "@models/validation/ValidationRule";
-import { Validator } from "@models/validation/Validator";
+import { UserExistQuery } from "@api/contracts/userExist/UserExistQuery.js";
+import { UsernameValidationRule } from "@models/validation/UsernameValidationRule.js";
+import { ValidationRule } from "@models/validation/ValidationRule.js";
+import { Validator } from "@models/validation/Validator.js";
 
 export class UserExistQueryValidator extends Validator<UserExistQuery> {
 

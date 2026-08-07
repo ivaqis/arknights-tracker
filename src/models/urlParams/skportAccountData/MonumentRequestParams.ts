@@ -1,5 +1,5 @@
-import { DetailRequestParams } from "@models/urlParams/skportAccountData/DetailRequestParams";
-import { MonumentURLParams } from "@services/monumentFetcher/contracts/MonumentURLParams";
+import { DetailRequestParams } from "@models/urlParams/skportAccountData/DetailRequestParams.js";
+import { MonumentURLParams } from "@services/monumentFetcher/contracts/MonumentURLParams.js";
 
 export class MonumentRequestParams extends DetailRequestParams {
     private readonly _userId: string;

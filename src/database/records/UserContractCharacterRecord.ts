@@ -1,4 +1,4 @@
-import { UserContractCharacterEntity } from "@database/entities/UserContractCharacterEntity";
+import { UserContractCharacterEntity } from "@database/entities/UserContractCharacterEntity.js";
 
 export class UserContractCharacterRecord {
     private readonly _userRecordId: string;

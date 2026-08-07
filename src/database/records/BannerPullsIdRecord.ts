@@ -1,4 +1,4 @@
-import { BannerPullsIdEntity } from "@database/entities/BannerPullsIdEntity";
+import { BannerPullsIdEntity } from "@database/entities/BannerPullsIdEntity.js";
 
 export class BannerPullsIdRecord {
     private readonly _id: string;

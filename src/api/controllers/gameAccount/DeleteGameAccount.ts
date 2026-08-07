@@ -1,10 +1,10 @@
-import { authenticator, database } from "@/serviceInstances";
-import { DeleteGameAccountQuery } from "@api/contracts/gameAccount/DeleteGameAccountQuery";
-import { DeleteGameAccountResponse } from "@api/contracts/gameAccount/DeleteGameAccountResponse";
-import { ResponseBody } from "@api/contracts/ResponseBody";
-import { Controller } from "@api/controllers/Controller";
-import { Database } from "@database/Database";
-import { Authenticator } from "@services/auth/Authenticator";
+import { authenticator, database } from "@/serviceInstances.js";
+import { DeleteGameAccountQuery } from "@api/contracts/gameAccount/DeleteGameAccountQuery.js";
+import { DeleteGameAccountResponse } from "@api/contracts/gameAccount/DeleteGameAccountResponse.js";
+import { ResponseBody } from "@api/contracts/ResponseBody.js";
+import { Controller } from "@api/controllers/Controller.js";
+import { Database } from "@database/Database.js";
+import { Authenticator } from "@services/auth/Authenticator.js";
 import e from "express";
 
 export class DeleteGameAccount extends Controller<

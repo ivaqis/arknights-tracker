@@ -1,7 +1,7 @@
-import { GlobalStatsQuery } from "@api/contracts/globalStats/GlobalStatsQuery";
-import { StringValidationRule } from "@models/validation/StringValidationRule";
-import { ValidationRule } from "@models/validation/ValidationRule";
-import { Validator } from "@models/validation/Validator";
+import { GlobalStatsQuery } from "@api/contracts/globalStats/GlobalStatsQuery.js";
+import { StringValidationRule } from "@models/validation/StringValidationRule.js";
+import { ValidationRule } from "@models/validation/ValidationRule.js";
+import { Validator } from "@models/validation/Validator.js";
 
 export class GlobalStatsQueryValidator extends Validator<GlobalStatsQuery> {
 

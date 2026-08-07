@@ -1,10 +1,10 @@
-import { config } from "@/config";
-import { logger } from "@/logger";
-import { CredData } from "@services/skportAuth/contracts/CredData";
-import { BindingResponse } from "@services/skportBindingFetcher/contracts/BindingResponse";
-import { GameData } from "@services/skportBindingFetcher/contracts/GameData";
-import { RoleData } from "@services/skportBindingFetcher/contracts/RoleData";
-import { generateSign } from "@utils/skportUtils";
+import { config } from "@/config.js";
+import { logger } from "@/logger.js";
+import { CredData } from "@services/skportAuth/contracts/CredData.js";
+import { BindingResponse } from "@services/skportBindingFetcher/contracts/BindingResponse.js";
+import { GameData } from "@services/skportBindingFetcher/contracts/GameData.js";
+import { RoleData } from "@services/skportBindingFetcher/contracts/RoleData.js";
+import { generateSign } from "@utils/skportUtils.js";
 import axios, { AxiosResponse } from "axios";
 
 export class SkportBindingFetcher {

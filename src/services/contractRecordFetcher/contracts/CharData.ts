@@ -1,5 +1,5 @@
-import { EquipData } from "@services/contractRecordFetcher/contracts/EquipData";
-import { WeaponData } from "@services/contractRecordFetcher/contracts/WeaponData";
+import { EquipData } from "@services/contractRecordFetcher/contracts/EquipData.js";
+import { WeaponData } from "@services/contractRecordFetcher/contracts/WeaponData.js";
 
 export interface CharData {
     charId: string;

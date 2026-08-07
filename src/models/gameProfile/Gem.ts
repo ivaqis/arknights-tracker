@@ -1,8 +1,8 @@
-import { logger } from "@/logger";
-import { GemEntity } from "@models/gameProfile/entities/GemEntity";
-import { IEntityClass } from "@models/IEntityClass";
-import { GemData } from "@services/skportDetailFetcher/contracts/GemData";
-import { gemPresetNameRecords } from "@staticModels/instances";
+import { logger } from "@/logger.js";
+import { GemEntity } from "@models/gameProfile/entities/GemEntity.js";
+import { IEntityClass } from "@models/IEntityClass.js";
+import { GemData } from "@services/skportDetailFetcher/contracts/GemData.js";
+import { gemPresetNameRecords } from "@staticModels/instances.js";
 
 export class Gem implements IEntityClass<GemEntity> {
     private readonly _id: string;

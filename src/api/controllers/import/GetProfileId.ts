@@ -1,9 +1,9 @@
-import { database } from "@/serviceInstances";
-import { GetProfileIdQuery } from "@api/contracts/import/GetProfileIdQuery";
-import { GetProfileIdResponse } from "@api/contracts/import/GetProfileIdResponse";
-import { ResponseBody } from "@api/contracts/ResponseBody";
-import { Controller } from "@api/controllers/Controller";
-import { Database } from "@database/Database";
+import { database } from "@/serviceInstances.js";
+import { GetProfileIdQuery } from "@api/contracts/import/GetProfileIdQuery.js";
+import { GetProfileIdResponse } from "@api/contracts/import/GetProfileIdResponse.js";
+import { ResponseBody } from "@api/contracts/ResponseBody.js";
+import { Controller } from "@api/controllers/Controller.js";
+import { Database } from "@database/Database.js";
 import e from "express";
 
 export class GetProfileId extends Controller<

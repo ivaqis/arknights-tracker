@@ -1,4 +1,4 @@
-import { AccountData } from "@services/skportBindingFetcher/contracts/AccountData";
+import { AccountData } from "@services/skportBindingFetcher/contracts/AccountData.js";
 
 export interface GameData {
     appCode: string,

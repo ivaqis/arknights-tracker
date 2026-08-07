@@ -1,14 +1,14 @@
-import { config } from "@/config";
-import { ContractLeaderboardRepository } from "@database/repositories/ContractLeaderboardRepository";
-import { ErrorsRepository } from "@database/repositories/ErrorsRepository";
-import { GlobalBannerStatsRepository } from "@database/repositories/GlobalBannerStatsRepository";
-import { GameProfilesRepository } from "@database/repositories/GameProfilesRepository";
-import { MonumentLeaderboardRepository } from "@database/repositories/MonumentLeaderboardRepository";
-import { UserBannerProfilesRepository } from "@database/repositories/UserBannerProfilesRepository";
-import { UserBannerStatsRepository } from "@database/repositories/UserBannerStatsRepository";
-import { UsersRepository } from "@database/repositories/UsersRepository";
-import { PrismaClient } from "@generated/prisma-v2";
-import { IService } from "@services/IService";
+import { config } from "@/config.js";
+import { ContractLeaderboardRepository } from "@database/repositories/ContractLeaderboardRepository.js";
+import { ErrorsRepository } from "@database/repositories/ErrorsRepository.js";
+import { GlobalBannerStatsRepository } from "@database/repositories/GlobalBannerStatsRepository.js";
+import { GameProfilesRepository } from "@database/repositories/GameProfilesRepository.js";
+import { MonumentLeaderboardRepository } from "@database/repositories/MonumentLeaderboardRepository.js";
+import { UserBannerProfilesRepository } from "@database/repositories/UserBannerProfilesRepository.js";
+import { UserBannerStatsRepository } from "@database/repositories/UserBannerStatsRepository.js";
+import { UsersRepository } from "@database/repositories/UsersRepository.js";
+import { PrismaClient } from "@generated/prisma-v2/index.js";
+import { IService } from "@services/IService.js";
 
 export class Database implements IService {
     public readonly name: string = "Database";

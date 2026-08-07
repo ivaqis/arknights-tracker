@@ -1,5 +1,5 @@
-import { GlobalPityDistributionEntity } from "@database/entities/GlobalPityDistributionEntity";
-import { NumberRecordField } from "@database/records/recordFields/NumberRecordField";
+import { GlobalPityDistributionEntity } from "@database/entities/GlobalPityDistributionEntity.js";
+import { NumberRecordField } from "@database/records/recordFields/NumberRecordField.js";
 
 export class GlobalPityDistributionRecord {
     private readonly _bannerId: string;

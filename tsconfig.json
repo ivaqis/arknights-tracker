@@ -1,8 +1,9 @@
 {
   "compilerOptions": {
-    "target": "ES2022",
-    "module": "commonjs",
-    "lib": ["ES2022"],
+    "target": "esnext",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "lib": ["ESNext"],
     "outDir": "./dist",
     "rootDir": ".",
     "tsBuildInfoFile": "./tsconfig.tsbuildinfo",
@@ -10,7 +11,6 @@
     "strict": true,
     "noImplicitReturns": true,
 
-    "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
@@ -38,6 +38,9 @@
   "exclude": ["node_modules", "dist"],
   "tsc-alias": {
     "resolveFullPaths": true,
-    "resolveFullExtension": ".js"
+    "resolveFullExtension": ".js",
+    "fileExtensions": {
+
+    }
   }
 }

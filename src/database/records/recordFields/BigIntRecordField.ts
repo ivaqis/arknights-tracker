@@ -1,4 +1,4 @@
-import { RecordField } from "@database/records/recordFields/RecordField";
+import { RecordField } from "@database/records/recordFields/RecordField.js";
 
 export class BigIntRecordField extends RecordField<bigint> {
     public constructor(number: bigint) {

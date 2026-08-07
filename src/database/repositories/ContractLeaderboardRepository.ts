@@ -1,15 +1,15 @@
-import { UserContractCharacterEntity } from "@database/entities/UserContractCharacterEntity";
-import { UserContractCharacterRecord } from "@database/records/UserContractCharacterRecord";
-import { UserContractLeaderboardRecord } from "@database/records/UserContractLeaderboardRecord";
-import { UserGameProfileRecord } from "@database/records/UserGameProfileRecord";
-import { UserRecord } from "@database/records/UserRecord";
-import { Repository } from "@database/repositories/Repository";
-import { UserContractCharactersTable } from "@database/tables/UserContractCharactersTable";
-import { UserContractLeaderboardsTable } from "@database/tables/UserContractLeaderboardsTable";
-import { PrismaClient } from "@generated/prisma-v2";
-import { ContractRecord } from "@models/contingencyContract/ContractRecord";
-import { ContractLeaderboardSortField } from "@models/contractLeaderboard/ContractLeaderboardSortField";
-import { SortOrder } from "@models/SortOrder";
+import { UserContractCharacterEntity } from "@database/entities/UserContractCharacterEntity.js";
+import { UserContractCharacterRecord } from "@database/records/UserContractCharacterRecord.js";
+import { UserContractLeaderboardRecord } from "@database/records/UserContractLeaderboardRecord.js";
+import { UserGameProfileRecord } from "@database/records/UserGameProfileRecord.js";
+import { UserRecord } from "@database/records/UserRecord.js";
+import { Repository } from "@database/repositories/Repository.js";
+import { UserContractCharactersTable } from "@database/tables/UserContractCharactersTable.js";
+import { UserContractLeaderboardsTable } from "@database/tables/UserContractLeaderboardsTable.js";
+import { PrismaClient } from "@generated/prisma-v2/index.js";
+import { ContractRecord } from "@models/contingencyContract/ContractRecord.js";
+import { ContractLeaderboardSortField } from "@models/contractLeaderboard/ContractLeaderboardSortField.js";
+import { SortOrder } from "@models/SortOrder.js";
 
 export class ContractLeaderboardRepository extends Repository {
     private readonly _userContractLeaderboardsTable: UserContractLeaderboardsTable;

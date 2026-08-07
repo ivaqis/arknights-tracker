@@ -1,6 +1,6 @@
-import { logger } from "@/logger";
-import { ErrorStreamResponse } from "@api/contracts/ErrorStreamResponse";
-import { StreamResponse } from "@api/contracts/StreamResponse";
+import { logger } from "@/logger.js";
+import { ErrorStreamResponse } from "@api/contracts/ErrorStreamResponse.js";
+import { StreamResponse } from "@api/contracts/StreamResponse.js";
 import e from "express";
 import * as core from "express-serve-static-core";
 

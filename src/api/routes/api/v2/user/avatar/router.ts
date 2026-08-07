@@ -1,12 +1,12 @@
-import { avatarUploader, sightengine } from "@/serviceInstances";
-import { DeleteAvatar } from "@api/controllers/uploadAvatar/DeleteAvatar";
-import { UploadAvatar } from "@api/controllers/uploadAvatar/UploadAvatar";
-import { RequireAuth } from "@api/middleware/RequireAuth";
-import { RequireService } from "@api/middleware/RequireService";
-import { JsonRequestValidator } from "@api/middleware/validators/JsonRequestValidator";
-import { DeleteAvatarRequestValidator } from "@api/middleware/validators/uploadAvatar/DeleteAvatarRequestValidator";
-import { UploadAvatarRequestValidator } from "@api/middleware/validators/uploadAvatar/UploadAvatarRequestValidator";
-import { AuthType } from "@services/auth/AuthType";
+import { avatarUploader, sightengine } from "@/serviceInstances.js";
+import { DeleteAvatar } from "@api/controllers/uploadAvatar/DeleteAvatar.js";
+import { UploadAvatar } from "@api/controllers/uploadAvatar/UploadAvatar.js";
+import { RequireAuth } from "@api/middleware/RequireAuth.js";
+import { RequireService } from "@api/middleware/RequireService.js";
+import { JsonRequestValidator } from "@api/middleware/validators/JsonRequestValidator.js";
+import { DeleteAvatarRequestValidator } from "@api/middleware/validators/uploadAvatar/DeleteAvatarRequestValidator.js";
+import { UploadAvatarRequestValidator } from "@api/middleware/validators/uploadAvatar/UploadAvatarRequestValidator.js";
+import { AuthType } from "@services/auth/AuthType.js";
 import { Router } from "express";
 
 export const avatarRouter = Router();

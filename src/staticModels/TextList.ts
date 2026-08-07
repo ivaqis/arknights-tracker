@@ -1,4 +1,4 @@
-import { logger } from "@/logger";
+import { logger } from "@/logger.js";
 import * as fs from "node:fs";
 import path from "node:path";
 

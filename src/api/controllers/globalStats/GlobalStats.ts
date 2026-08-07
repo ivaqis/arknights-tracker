@@ -1,12 +1,12 @@
-import { database } from "@/serviceInstances";
-import { GlobalStatsQuery } from "@api/contracts/globalStats/GlobalStatsQuery";
-import { GlobalStatsResponse } from "@api/contracts/globalStats/GlobalStatsResponse";
-import { ResponseBody } from "@api/contracts/ResponseBody";
-import { Controller } from "@api/controllers/Controller";
-import { Database } from "@database/Database";
-import { GlobalItemData } from "@models/globalBannerStats/GlobalItemData";
-import { GlobalPityData } from "@models/globalBannerStats/GlobalPityData";
-import { GlobalTimelineData } from "@models/globalBannerStats/GlobalTimelineData";
+import { database } from "@/serviceInstances.js";
+import { GlobalStatsQuery } from "@api/contracts/globalStats/GlobalStatsQuery.js";
+import { GlobalStatsResponse } from "@api/contracts/globalStats/GlobalStatsResponse.js";
+import { ResponseBody } from "@api/contracts/ResponseBody.js";
+import { Controller } from "@api/controllers/Controller.js";
+import { Database } from "@database/Database.js";
+import { GlobalItemData } from "@models/globalBannerStats/GlobalItemData.js";
+import { GlobalPityData } from "@models/globalBannerStats/GlobalPityData.js";
+import { GlobalTimelineData } from "@models/globalBannerStats/GlobalTimelineData.js";
 import e from "express";
 
 export class GlobalStats extends Controller<

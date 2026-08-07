@@ -1,11 +1,11 @@
-import { authenticator, database } from "@/serviceInstances";
-import { ResponseBody } from "@api/contracts/ResponseBody";
-import { LinkUserPullsQuery } from "@api/contracts/userPulls/LinkUserPullsQuery";
-import { LinkUserPullsRequest } from "@api/contracts/userPulls/LinkUserPullsRequest";
-import { LinkUserPullsResponse } from "@api/contracts/userPulls/LinkUserPullsResponse";
-import { Controller } from "@api/controllers/Controller";
-import { Database } from "@database/Database";
-import { Authenticator } from "@services/auth/Authenticator";
+import { authenticator, database } from "@/serviceInstances.js";
+import { ResponseBody } from "@api/contracts/ResponseBody.js";
+import { LinkUserPullsQuery } from "@api/contracts/userPulls/LinkUserPullsQuery.js";
+import { LinkUserPullsRequest } from "@api/contracts/userPulls/LinkUserPullsRequest.js";
+import { LinkUserPullsResponse } from "@api/contracts/userPulls/LinkUserPullsResponse.js";
+import { Controller } from "@api/controllers/Controller.js";
+import { Database } from "@database/Database.js";
+import { Authenticator } from "@services/auth/Authenticator.js";
 import e from "express";
 
 export class LinkUserPulls extends Controller<

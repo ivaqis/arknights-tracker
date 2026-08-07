@@ -1,6 +1,6 @@
-import { UserBannerTypeStatEntity } from "@database/entities/UserBannerTypeStatEntity";
-import { UserCharBannerTypePullsRecord } from "@database/records/UserCharBannerTypePullsRecord";
-import { DbBannerType } from "@models/banners/DbBannerType";
+import { UserBannerTypeStatEntity } from "@database/entities/UserBannerTypeStatEntity.js";
+import { UserCharBannerTypePullsRecord } from "@database/records/UserCharBannerTypePullsRecord.js";
+import { DbBannerType } from "@models/banners/DbBannerType.js";
 
 export interface UserCharBannerTypeData {
     profileId: bigint;

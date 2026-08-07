@@ -1,5 +1,5 @@
-import { BannerRequestParams } from "@models/urlParams/banners/BannerRequestParams";
-import { CharBannerURLParams } from "@services/bannerDataFetcher/contracts/CharBannerURLParams";
+import { BannerRequestParams } from "@models/urlParams/banners/BannerRequestParams.js";
+import { CharBannerURLParams } from "@services/bannerDataFetcher/contracts/CharBannerURLParams.js";
 
 
 export class CharBannerRequestParams extends BannerRequestParams {

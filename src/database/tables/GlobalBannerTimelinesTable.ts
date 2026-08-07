@@ -1,7 +1,7 @@
-import { GlobalBannerTimelineEntity } from "@database/entities/GlobalBannerTimelineEntity";
-import { GlobalBannerTimelineRecord } from "@database/records/GlobalBannerTimelineRecord";
-import { Table } from "@database/tables/Table";
-import { Prisma, PrismaClient } from "@generated/prisma-v2";
+import { GlobalBannerTimelineEntity } from "@database/entities/GlobalBannerTimelineEntity.js";
+import { GlobalBannerTimelineRecord } from "@database/records/GlobalBannerTimelineRecord.js";
+import { Table } from "@database/tables/Table.js";
+import { Prisma, PrismaClient } from "@generated/prisma-v2/index.js";
 
 export class GlobalBannerTimelinesTable extends Table<Prisma.GlobalBannerTimelineDelegate> {
 

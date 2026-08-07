@@ -1,6 +1,6 @@
-import { GlobalItemData } from "@models/globalBannerStats/GlobalItemData";
-import { GlobalPityData } from "@models/globalBannerStats/GlobalPityData";
-import { GlobalTimelineData } from "@models/globalBannerStats/GlobalTimelineData";
+import { GlobalItemData } from "@models/globalBannerStats/GlobalItemData.js";
+import { GlobalPityData } from "@models/globalBannerStats/GlobalPityData.js";
+import { GlobalTimelineData } from "@models/globalBannerStats/GlobalTimelineData.js";
 
 export interface GlobalStatsResponse {
     bannerId: string;

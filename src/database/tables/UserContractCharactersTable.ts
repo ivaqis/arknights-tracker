@@ -1,7 +1,7 @@
-import { UserContractCharacterEntity } from "@database/entities/UserContractCharacterEntity";
-import { UserContractCharacterRecord } from "@database/records/UserContractCharacterRecord";
-import { Table } from "@database/tables/Table";
-import { Prisma, PrismaClient } from "@generated/prisma-v2";
+import { UserContractCharacterEntity } from "@database/entities/UserContractCharacterEntity.js";
+import { UserContractCharacterRecord } from "@database/records/UserContractCharacterRecord.js";
+import { Table } from "@database/tables/Table.js";
+import { Prisma, PrismaClient } from "@generated/prisma-v2/index.js";
 
 export class UserContractCharactersTable extends Table<Prisma.UserContractCharacterDelegate> {
 

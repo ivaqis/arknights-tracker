@@ -1,5 +1,5 @@
-import { DungeonEntity } from "@models/gameProfile/entities/DungeonEntity";
-import { IEntityClass } from "@models/IEntityClass";
+import { DungeonEntity } from "@models/gameProfile/entities/DungeonEntity.js";
+import { IEntityClass } from "@models/IEntityClass.js";
 
 export class Dungeon implements IEntityClass<DungeonEntity> {
     private readonly _curStamina: string;

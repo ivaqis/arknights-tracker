@@ -1,7 +1,7 @@
-import { GetContractRunQuery } from "@api/contracts/contract/GetContractRunQuery";
-import { StringValidationRule } from "@models/validation/StringValidationRule";
-import { ValidationRule } from "@models/validation/ValidationRule";
-import { Validator } from "@models/validation/Validator";
+import { GetContractRunQuery } from "@api/contracts/contract/GetContractRunQuery.js";
+import { StringValidationRule } from "@models/validation/StringValidationRule.js";
+import { ValidationRule } from "@models/validation/ValidationRule.js";
+import { Validator } from "@models/validation/Validator.js";
 
 export class GetContractRunQueryValidator extends Validator<GetContractRunQuery> {
 

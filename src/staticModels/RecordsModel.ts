@@ -1,4 +1,4 @@
-import { logger } from "@/logger";
+import { logger } from "@/logger.js";
 
 export class RecordsModel<T extends object> {
     protected readonly _records = new Map<string, T>();

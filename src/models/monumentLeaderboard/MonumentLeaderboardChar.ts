@@ -1,6 +1,6 @@
-import { IEntityClass } from "@models/IEntityClass";
-import { MonumentCharacter } from "@models/monument/MonumentCharacter";
-import { MonumentLeaderboardCharEntity } from "@models/monumentLeaderboard/entities/MonumentLeaderboardCharEntity";
+import { IEntityClass } from "@models/IEntityClass.js";
+import { MonumentCharacter } from "@models/monument/MonumentCharacter.js";
+import { MonumentLeaderboardCharEntity } from "@models/monumentLeaderboard/entities/MonumentLeaderboardCharEntity.js";
 
 export class MonumentLeaderboardChar implements IEntityClass<MonumentLeaderboardCharEntity> {
     private readonly _id: string;

@@ -1,6 +1,6 @@
-import { logger } from "@/logger";
-import { Pull } from "@models/pulls/Pull";
-import { StablePull } from "@models/stablePullId/StablePull";
+import { logger } from "@/logger.js";
+import { Pull } from "@models/pulls/Pull.js";
+import { StablePull } from "@models/stablePullId/StablePull.js";
 import { createHash } from "node:crypto";
 
 export class StablePullId {

@@ -1,13 +1,13 @@
-import { database } from "@/serviceInstances";
-import { GetContractListQuery } from "@api/contracts/contract/GetContractListQuery";
-import { GetContractListResponse } from "@api/contracts/contract/GetContractListResponse";
-import { ResponseBody } from "@api/contracts/ResponseBody";
-import { Controller } from "@api/controllers/Controller";
-import { Database } from "@database/Database";
-import { ContractLeaderboardSearcher } from "@models/contractLeaderboard/ContractLeaderboardSearcher";
-import { ContractLeaderboardSortField } from "@models/contractLeaderboard/ContractLeaderboardSortField";
-import { GameServerId } from "@models/GameServerId";
-import { SortOrder } from "@models/SortOrder";
+import { database } from "@/serviceInstances.js";
+import { GetContractListQuery } from "@api/contracts/contract/GetContractListQuery.js";
+import { GetContractListResponse } from "@api/contracts/contract/GetContractListResponse.js";
+import { ResponseBody } from "@api/contracts/ResponseBody.js";
+import { Controller } from "@api/controllers/Controller.js";
+import { Database } from "@database/Database.js";
+import { ContractLeaderboardSearcher } from "@models/contractLeaderboard/ContractLeaderboardSearcher.js";
+import { ContractLeaderboardSortField } from "@models/contractLeaderboard/ContractLeaderboardSortField.js";
+import { GameServerId } from "@models/GameServerId.js";
+import { SortOrder } from "@models/SortOrder.js";
 import e from "express";
 
 export class GetContractList extends Controller<

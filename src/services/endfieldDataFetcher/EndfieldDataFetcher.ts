@@ -1,16 +1,16 @@
-import { ContractFetcher } from "@services/contractFetcher/ContractFetcher";
-import { ContractData } from "@services/contractFetcher/contracts/ContractData";
-import { ContractRecordFetcher } from "@services/contractRecordFetcher/ContractRecordFetcher";
-import { ContractRecordDetailData } from "@services/contractRecordFetcher/contracts/ContractRecordDetailData";
-import { MonumentGroupData } from "@services/monumentFetcher/contracts/MonumentGroupData";
-import { MonumentFetcher } from "@services/monumentFetcher/MonumentFetcher";
-import { CredData } from "@services/skportAuth/contracts/CredData";
-import { GryphlineAuthenticator } from "@services/skportAuth/GryphlineAuthenticator";
-import { SkportAuthenticator } from "@services/skportAuth/SkportAuthenticator";
-import { RoleData } from "@services/skportBindingFetcher/contracts/RoleData";
-import { SkportBindingFetcher } from "@services/skportBindingFetcher/SkportBindingFetcher";
-import { DetailData } from "@services/skportDetailFetcher/contracts/DetailData";
-import { SkportDetailFetcher } from "@services/skportDetailFetcher/SkportDetailFetcher";
+import { ContractFetcher } from "@services/contractFetcher/ContractFetcher.js";
+import { ContractData } from "@services/contractFetcher/contracts/ContractData.js";
+import { ContractRecordFetcher } from "@services/contractRecordFetcher/ContractRecordFetcher.js";
+import { ContractRecordDetailData } from "@services/contractRecordFetcher/contracts/ContractRecordDetailData.js";
+import { MonumentGroupData } from "@services/monumentFetcher/contracts/MonumentGroupData.js";
+import { MonumentFetcher } from "@services/monumentFetcher/MonumentFetcher.js";
+import { CredData } from "@services/skportAuth/contracts/CredData.js";
+import { GryphlineAuthenticator } from "@services/skportAuth/GryphlineAuthenticator.js";
+import { SkportAuthenticator } from "@services/skportAuth/SkportAuthenticator.js";
+import { RoleData } from "@services/skportBindingFetcher/contracts/RoleData.js";
+import { SkportBindingFetcher } from "@services/skportBindingFetcher/SkportBindingFetcher.js";
+import { DetailData } from "@services/skportDetailFetcher/contracts/DetailData.js";
+import { SkportDetailFetcher } from "@services/skportDetailFetcher/SkportDetailFetcher.js";
 
 export class EndfieldDataFetcher {
     private readonly _authToken: string;

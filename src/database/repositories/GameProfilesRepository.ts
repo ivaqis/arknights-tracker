@@ -1,7 +1,7 @@
-import { UserGameProfileRecord } from "@database/records/UserGameProfileRecord";
-import { Repository } from "@database/repositories/Repository";
-import { UserGameProfilesTable } from "@database/tables/UserGameProfilesTable";
-import { PrismaClient } from "@generated/prisma-v2";
+import { UserGameProfileRecord } from "@database/records/UserGameProfileRecord.js";
+import { Repository } from "@database/repositories/Repository.js";
+import { UserGameProfilesTable } from "@database/tables/UserGameProfilesTable.js";
+import { PrismaClient } from "@generated/prisma-v2/index.js";
 
 export class GameProfilesRepository extends Repository {
     private readonly _gameProfilesTable: UserGameProfilesTable;

@@ -1,5 +1,5 @@
-import { UserBannerProfileEntity } from "@database/entities/UserBannerProfileEntity";
-import { NumberRecordField } from "@database/records/recordFields/NumberRecordField";
+import { UserBannerProfileEntity } from "@database/entities/UserBannerProfileEntity.js";
+import { NumberRecordField } from "@database/records/recordFields/NumberRecordField.js";
 
 export class UserBannerProfileRecord {
     private readonly _profileId: bigint;

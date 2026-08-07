@@ -1,9 +1,9 @@
-import { logger } from "@/logger";
-import { WeaponEntity } from "@models/gameProfile/entities/WeaponEntity";
-import { Gem } from "@models/gameProfile/Gem";
-import { IEntityClass } from "@models/IEntityClass";
-import { WeaponData } from "@services/skportDetailFetcher/contracts/WeaponData";
-import { weaponNameRecords } from "@staticModels/instances";
+import { logger } from "@/logger.js";
+import { WeaponEntity } from "@models/gameProfile/entities/WeaponEntity.js";
+import { Gem } from "@models/gameProfile/Gem.js";
+import { IEntityClass } from "@models/IEntityClass.js";
+import { WeaponData } from "@services/skportDetailFetcher/contracts/WeaponData.js";
+import { weaponNameRecords } from "@staticModels/instances.js";
 
 export class Weapon implements IEntityClass<WeaponEntity> {
     private readonly _id: string;

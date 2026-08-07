@@ -1,11 +1,11 @@
-import { logger } from "@/logger";
-import { Character } from "@models/gameProfile/Character";
-import { IEntityClass } from "@models/IEntityClass";
-import { MonumentRecordEntity } from "@models/monument/entities/MonumentRecordEntity";
-import { MonumentCharacter } from "@models/monument/MonumentCharacter";
-import { MonumentCharData } from "@services/monumentFetcher/contracts/MonumentCharData";
-import { MonumentDungeonData } from "@services/monumentFetcher/contracts/MonumentDungeonData";
-import { monumentGroupRecords, monumentNameRecords } from "@staticModels/instances";
+import { logger } from "@/logger.js";
+import { Character } from "@models/gameProfile/Character.js";
+import { IEntityClass } from "@models/IEntityClass.js";
+import { MonumentRecordEntity } from "@models/monument/entities/MonumentRecordEntity.js";
+import { MonumentCharacter } from "@models/monument/MonumentCharacter.js";
+import { MonumentCharData } from "@services/monumentFetcher/contracts/MonumentCharData.js";
+import { MonumentDungeonData } from "@services/monumentFetcher/contracts/MonumentDungeonData.js";
+import { monumentGroupRecords, monumentNameRecords } from "@staticModels/instances.js";
 
 export class MonumentRecord implements IEntityClass<MonumentRecordEntity> {
     private readonly _dungeonId: string;

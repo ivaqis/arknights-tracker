@@ -1,13 +1,13 @@
-import { GetImportCompleteResponse } from "@api/contracts/import/GetImportCompleteResponse";
-import { GetImportQuery } from "@api/contracts/import/GetImportQuery";
-import { ImportProgressResponse } from "@api/contracts/import/ImportProgressResponse";
-import { StreamController } from "@api/controllers/StreamController";
-import { ImportError } from "@errors/ImportError";
-import { BannerType } from "@models/banners/BannerType";
-import { BannersPulls } from "@models/pulls/BannersPulls";
-import { BannerDataFetcher } from "@services/bannerDataFetcher/BannerDataFetcher";
-import { importErrorCallback } from "@utils/errorCallbacks";
-import { getUniqueElements } from "@utils/generalUtils";
+import { GetImportCompleteResponse } from "@api/contracts/import/GetImportCompleteResponse.js";
+import { GetImportQuery } from "@api/contracts/import/GetImportQuery.js";
+import { ImportProgressResponse } from "@api/contracts/import/ImportProgressResponse.js";
+import { StreamController } from "@api/controllers/StreamController.js";
+import { ImportError } from "@errors/ImportError.js";
+import { BannerType } from "@models/banners/BannerType.js";
+import { BannersPulls } from "@models/pulls/BannersPulls.js";
+import { BannerDataFetcher } from "@services/bannerDataFetcher/BannerDataFetcher.js";
+import { importErrorCallback } from "@utils/errorCallbacks.js";
+import { getUniqueElements } from "@utils/generalUtils.js";
 import e from "express";
 
 export class GetImport extends StreamController<

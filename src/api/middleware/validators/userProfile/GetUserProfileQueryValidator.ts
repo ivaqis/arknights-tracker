@@ -1,7 +1,7 @@
-import { GetUserProfileQuery } from "@api/contracts/userProfile/GetUserProfileQuery";
-import { StringValidationRule } from "@models/validation/StringValidationRule";
-import { ValidationRule } from "@models/validation/ValidationRule";
-import { Validator } from "@models/validation/Validator";
+import { GetUserProfileQuery } from "@api/contracts/userProfile/GetUserProfileQuery.js";
+import { StringValidationRule } from "@models/validation/StringValidationRule.js";
+import { ValidationRule } from "@models/validation/ValidationRule.js";
+import { Validator } from "@models/validation/Validator.js";
 
 export class GetUserProfileQueryValidator extends Validator<GetUserProfileQuery> {
     public constructor(item: GetUserProfileQuery) {

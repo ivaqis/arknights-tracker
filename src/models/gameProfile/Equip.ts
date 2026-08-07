@@ -1,8 +1,8 @@
-import { logger } from "@/logger";
-import { EquipEntity } from "@models/gameProfile/entities/EquipEntity";
-import { IEntityClass } from "@models/IEntityClass";
-import { EquipData } from "@services/skportDetailFetcher/contracts/EquipData";
-import { equipNameRecords } from "@staticModels/instances";
+import { logger } from "@/logger.js";
+import { EquipEntity } from "@models/gameProfile/entities/EquipEntity.js";
+import { IEntityClass } from "@models/IEntityClass.js";
+import { EquipData } from "@services/skportDetailFetcher/contracts/EquipData.js";
+import { equipNameRecords } from "@staticModels/instances.js";
 
 export class Equip implements IEntityClass<EquipEntity> {
     private readonly _id: string;

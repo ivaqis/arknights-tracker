@@ -1,4 +1,4 @@
-import { AuthData } from "@services/skportAuth/contracts/AuthData";
+import { AuthData } from "@services/skportAuth/contracts/AuthData.js";
 
 export interface AuthResponse {
     status: number,

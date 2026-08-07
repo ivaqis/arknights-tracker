@@ -1,5 +1,5 @@
-import { DbBannerType } from "@models/banners/DbBannerType";
-import { BooleanString } from "@models/validation/BooleanStringValidationRule";
+import { DbBannerType } from "@models/banners/DbBannerType.js";
+import { BooleanString } from "@models/validation/BooleanStringValidationRule.js";
 
 export interface RankingRateQuery {
     bannerType: DbBannerType | "all";

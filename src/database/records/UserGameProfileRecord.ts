@@ -1,7 +1,7 @@
-import { UserGameProfileEntity } from "@database/entities/UserGameProfileEntity";
-import { NullableBigIntRecordField } from "@database/records/recordFields/NullableBigIntRecordField";
-import { NumberRecordField } from "@database/records/recordFields/NumberRecordField";
-import { GameProfile } from "@models/gameProfile/GameProfile";
+import { UserGameProfileEntity } from "@database/entities/UserGameProfileEntity.js";
+import { NullableBigIntRecordField } from "@database/records/recordFields/NullableBigIntRecordField.js";
+import { NumberRecordField } from "@database/records/recordFields/NumberRecordField.js";
+import { GameProfile } from "@models/gameProfile/GameProfile.js";
 
 export class UserGameProfileRecord {
     private readonly _gameUid: string;

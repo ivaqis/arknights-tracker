@@ -1,9 +1,9 @@
-import { UpdateUserProfileRequest } from "@api/contracts/userProfile/UpdateUserProfileRequest";
-import { OptionalValidationRule } from "@models/validation/OptionalValidationRule";
-import { StringValidationRule } from "@models/validation/StringValidationRule";
-import { UsernameValidationRule } from "@models/validation/UsernameValidationRule";
-import { ValidationRule } from "@models/validation/ValidationRule";
-import { Validator } from "@models/validation/Validator";
+import { UpdateUserProfileRequest } from "@api/contracts/userProfile/UpdateUserProfileRequest.js";
+import { OptionalValidationRule } from "@models/validation/OptionalValidationRule.js";
+import { StringValidationRule } from "@models/validation/StringValidationRule.js";
+import { UsernameValidationRule } from "@models/validation/UsernameValidationRule.js";
+import { ValidationRule } from "@models/validation/ValidationRule.js";
+import { Validator } from "@models/validation/Validator.js";
 
 export class UpdateUserProfileBodyValidator extends Validator<UpdateUserProfileRequest> {
     public constructor(item: UpdateUserProfileRequest) {

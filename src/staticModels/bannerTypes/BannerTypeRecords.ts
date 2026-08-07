@@ -1,8 +1,8 @@
-import { BannerType } from "@models/banners/BannerType";
-import { DbBannerType } from "@models/banners/DbBannerType";
-import { ShortBannerType } from "@models/banners/ShortBannerType";
-import { BannerTypeEntity } from "@staticModels/bannerTypes/BannerTypeEntity";
-import { RecordsModel } from "@staticModels/RecordsModel";
+import { BannerType } from "@models/banners/BannerType.js";
+import { DbBannerType } from "@models/banners/DbBannerType.js";
+import { ShortBannerType } from "@models/banners/ShortBannerType.js";
+import { BannerTypeEntity } from "@staticModels/bannerTypes/BannerTypeEntity.js";
+import { RecordsModel } from "@staticModels/RecordsModel.js";
 
 export class BannerTypeRecords extends RecordsModel<BannerTypeEntity> {
 

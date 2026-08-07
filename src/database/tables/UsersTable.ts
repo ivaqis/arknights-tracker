@@ -1,6 +1,6 @@
-import { UserRecord } from "@database/records/UserRecord";
-import { Table } from "@database/tables/Table";
-import { Prisma, PrismaClient } from "@generated/prisma-v2";
+import { UserRecord } from "@database/records/UserRecord.js";
+import { Table } from "@database/tables/Table.js";
+import { Prisma, PrismaClient } from "@generated/prisma-v2/index.js";
 
 export class UsersTable extends Table<Prisma.UserDelegate> {
     public constructor(prisma: PrismaClient) {

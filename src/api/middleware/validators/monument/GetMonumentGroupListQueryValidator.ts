@@ -1,12 +1,12 @@
-import { GetMonumentGroupListQuery } from "@api/contracts/monument/GetMonumentGroupListQuery";
-import { GetMonumentListQueryValidator } from "@api/middleware/validators/monument/GetMonumentListQueryValidator";
-import { GameServerId } from "@models/GameServerId";
-import { MonumentLeaderboardSortField } from "@models/monumentLeaderboard/MonumentLeaderboardSortField";
-import { SortOrder } from "@models/SortOrder";
-import { BooleanStringValidationRule } from "@models/validation/BooleanStringValidationRule";
-import { StringValidationRule } from "@models/validation/StringValidationRule";
-import { ValidationRule } from "@models/validation/ValidationRule";
-import { Validator } from "@models/validation/Validator";
+import { GetMonumentGroupListQuery } from "@api/contracts/monument/GetMonumentGroupListQuery.js";
+import { GetMonumentListQueryValidator } from "@api/middleware/validators/monument/GetMonumentListQueryValidator.js";
+import { GameServerId } from "@models/GameServerId.js";
+import { MonumentLeaderboardSortField } from "@models/monumentLeaderboard/MonumentLeaderboardSortField.js";
+import { SortOrder } from "@models/SortOrder.js";
+import { BooleanStringValidationRule } from "@models/validation/BooleanStringValidationRule.js";
+import { StringValidationRule } from "@models/validation/StringValidationRule.js";
+import { ValidationRule } from "@models/validation/ValidationRule.js";
+import { Validator } from "@models/validation/Validator.js";
 
 export class GetMonumentGroupListQueryValidator extends Validator<GetMonumentGroupListQuery> {
     private static readonly recordsOnPageSet = new Set(GetMonumentListQueryValidator.recordsOnPage);

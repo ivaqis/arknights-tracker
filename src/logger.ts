@@ -1,4 +1,4 @@
-import { config } from "@/config";
+import { config } from "@/config.js";
 import winston, { format } from "winston";
 
 const newLineSpaced = "\n" + " ".repeat("YYYY-MM-DD HH:mm:ss.SSS [error] ".length);

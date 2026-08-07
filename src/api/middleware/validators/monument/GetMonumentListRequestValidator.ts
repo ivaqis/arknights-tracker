@@ -1,7 +1,7 @@
-import { GetMonumentListQuery } from "@api/contracts/monument/GetMonumentListQuery";
-import { ResponseBody } from "@api/contracts/ResponseBody";
-import { GetMonumentListQueryValidator } from "@api/middleware/validators/monument/GetMonumentListQueryValidator";
-import { RequestValidator } from "@api/middleware/validators/RequestValidator";
+import { GetMonumentListQuery } from "@api/contracts/monument/GetMonumentListQuery.js";
+import { ResponseBody } from "@api/contracts/ResponseBody.js";
+import { GetMonumentListQueryValidator } from "@api/middleware/validators/monument/GetMonumentListQueryValidator.js";
+import { RequestValidator } from "@api/middleware/validators/RequestValidator.js";
 import e from "express";
 
 export class GetMonumentListRequestValidator extends RequestValidator<{}, undefined, GetMonumentListQuery> {

@@ -1,4 +1,4 @@
-import { logger } from "@/logger";
+import { logger } from "@/logger.js";
 
 export class BannedWords {
     private readonly _words: Set<string>;

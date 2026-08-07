@@ -1,7 +1,7 @@
-import { IEntityClass } from "@models/IEntityClass";
-import { MonumentRecord } from "@models/monument/MonumentRecord";
-import { MonumentLeaderboardRunEntity } from "@models/monumentLeaderboard/entities/MonumentLeaderboardRunEntity";
-import { MonumentLeaderboardChar } from "@models/monumentLeaderboard/MonumentLeaderboardChar";
+import { IEntityClass } from "@models/IEntityClass.js";
+import { MonumentRecord } from "@models/monument/MonumentRecord.js";
+import { MonumentLeaderboardRunEntity } from "@models/monumentLeaderboard/entities/MonumentLeaderboardRunEntity.js";
+import { MonumentLeaderboardChar } from "@models/monumentLeaderboard/MonumentLeaderboardChar.js";
 
 export class MonumentLeaderboardRun implements IEntityClass<MonumentLeaderboardRunEntity> {
     private readonly _recordId: string;

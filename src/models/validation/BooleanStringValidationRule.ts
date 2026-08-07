@@ -1,4 +1,4 @@
-import { ValidationRule } from "@models/validation/ValidationRule";
+import { ValidationRule } from "@models/validation/ValidationRule.js";
 
 export class BooleanStringValidationRule extends ValidationRule<unknown> {
 

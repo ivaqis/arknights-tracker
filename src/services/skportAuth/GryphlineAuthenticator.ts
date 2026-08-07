@@ -1,7 +1,7 @@
-import { config } from "@/config";
-import { logger } from "@/logger";
-import { AuthData } from "@services/skportAuth/contracts/AuthData";
-import { AuthResponse } from "@services/skportAuth/contracts/AuthResponse";
+import { config } from "@/config.js";
+import { logger } from "@/logger.js";
+import { AuthData } from "@services/skportAuth/contracts/AuthData.js";
+import { AuthResponse } from "@services/skportAuth/contracts/AuthResponse.js";
 import axios, { AxiosResponse } from "axios";
 
 export class GryphlineAuthenticator {

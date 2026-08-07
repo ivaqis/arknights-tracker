@@ -1,9 +1,9 @@
-import { SyncProfileRequest } from "@api/contracts/syncProfile/SyncProfileRequest";
-import { GameServerId } from "@models/GameServerId";
-import { ListValidationRule } from "@models/validation/ListValidationRule";
-import { StringValidationRule } from "@models/validation/StringValidationRule";
-import { ValidationRule } from "@models/validation/ValidationRule";
-import { Validator } from "@models/validation/Validator";
+import { SyncProfileRequest } from "@api/contracts/syncProfile/SyncProfileRequest.js";
+import { GameServerId } from "@models/GameServerId.js";
+import { ListValidationRule } from "@models/validation/ListValidationRule.js";
+import { StringValidationRule } from "@models/validation/StringValidationRule.js";
+import { ValidationRule } from "@models/validation/ValidationRule.js";
+import { Validator } from "@models/validation/Validator.js";
 
 export class SyncProfileBodyValidator extends Validator<SyncProfileRequest> {
 

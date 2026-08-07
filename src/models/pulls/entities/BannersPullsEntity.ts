@@ -1,6 +1,6 @@
-import { BannerType } from "@models/banners/BannerType";
-import { CharPullEntity } from "@models/pulls/entities/CharPullEntity";
-import { WeaponPullEntity } from "@models/pulls/entities/WeaponPullEntity";
+import { BannerType } from "@models/banners/BannerType.js";
+import { CharPullEntity } from "@models/pulls/entities/CharPullEntity.js";
+import { WeaponPullEntity } from "@models/pulls/entities/WeaponPullEntity.js";
 
 export interface BannersPullsEntity {
     [BannerType.CHAR_STANDARD]: CharPullEntity[],

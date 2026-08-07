@@ -1,8 +1,8 @@
-import { CreateUserProfileRequest } from "@api/contracts/userProfile/CreateUserProfileRequest";
-import { StringValidationRule } from "@models/validation/StringValidationRule";
-import { UsernameValidationRule } from "@models/validation/UsernameValidationRule";
-import { ValidationRule } from "@models/validation/ValidationRule";
-import { Validator } from "@models/validation/Validator";
+import { CreateUserProfileRequest } from "@api/contracts/userProfile/CreateUserProfileRequest.js";
+import { StringValidationRule } from "@models/validation/StringValidationRule.js";
+import { UsernameValidationRule } from "@models/validation/UsernameValidationRule.js";
+import { ValidationRule } from "@models/validation/ValidationRule.js";
+import { Validator } from "@models/validation/Validator.js";
 
 export class CreateUserProfileBodyValidator extends Validator<CreateUserProfileRequest> {
 

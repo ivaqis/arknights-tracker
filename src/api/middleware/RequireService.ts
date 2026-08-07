@@ -1,6 +1,6 @@
-import { ResponseBody } from "@api/contracts/ResponseBody";
-import { Middleware } from "@api/middleware/Middleware";
-import { IService } from "@services/IService";
+import { ResponseBody } from "@api/contracts/ResponseBody.js";
+import { Middleware } from "@api/middleware/Middleware.js";
+import { IService } from "@services/IService.js";
 import e from "express";
 import * as core from "express-serve-static-core";
 

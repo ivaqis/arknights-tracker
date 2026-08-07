@@ -1,11 +1,11 @@
-import { config } from "@/config";
-import { logger } from "@/logger";
-import { BadResponseDataCodeError } from "@errors/BadResponseDataCodeError";
-import { DetailRequestParams } from "@models/urlParams/skportAccountData/DetailRequestParams";
-import { CredData } from "@services/skportAuth/contracts/CredData";
-import { DetailData } from "@services/skportDetailFetcher/contracts/DetailData";
-import { SkportDetailResponse } from "@services/skportDetailFetcher/contracts/SkportDetailResponse";
-import { generateSign, getTimestampNow } from "@utils/skportUtils";
+import { config } from "@/config.js";
+import { logger } from "@/logger.js";
+import { BadResponseDataCodeError } from "@errors/BadResponseDataCodeError.js";
+import { DetailRequestParams } from "@models/urlParams/skportAccountData/DetailRequestParams.js";
+import { CredData } from "@services/skportAuth/contracts/CredData.js";
+import { DetailData } from "@services/skportDetailFetcher/contracts/DetailData.js";
+import { SkportDetailResponse } from "@services/skportDetailFetcher/contracts/SkportDetailResponse.js";
+import { generateSign, getTimestampNow } from "@utils/skportUtils.js";
 import axios, { AxiosResponse } from "axios";
 
 export class SkportDetailFetcher {

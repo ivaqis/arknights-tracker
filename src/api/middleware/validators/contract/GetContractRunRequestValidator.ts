@@ -1,7 +1,7 @@
-import { GetContractRunQuery } from "@api/contracts/contract/GetContractRunQuery";
-import { ResponseBody } from "@api/contracts/ResponseBody";
-import { GetContractRunQueryValidator } from "@api/middleware/validators/contract/GetContractRunQueryValidator";
-import { RequestValidator } from "@api/middleware/validators/RequestValidator";
+import { GetContractRunQuery } from "@api/contracts/contract/GetContractRunQuery.js";
+import { ResponseBody } from "@api/contracts/ResponseBody.js";
+import { GetContractRunQueryValidator } from "@api/middleware/validators/contract/GetContractRunQueryValidator.js";
+import { RequestValidator } from "@api/middleware/validators/RequestValidator.js";
 import e from "express";
 
 export class GetContractRunRequestValidator extends RequestValidator<{}, undefined, GetContractRunQuery> {

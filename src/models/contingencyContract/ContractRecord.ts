@@ -1,12 +1,12 @@
-import { logger } from "@/logger";
-import { ContractCharacter } from "@models/contingencyContract/ContractCharacter";
-import { ContractRecordEntity } from "@models/contingencyContract/entities/ContractRecordEntity";
-import { Character } from "@models/gameProfile/Character";
-import { IEntityClass } from "@models/IEntityClass";
-import { CharData } from "@services/contractRecordFetcher/contracts/CharData";
-import { ContractRecordDetailData } from "@services/contractRecordFetcher/contracts/ContractRecordDetailData";
-import { IndicatorData } from "@services/contractRecordFetcher/contracts/IndicatorData";
-import { crisisContractRecords } from "@staticModels/instances";
+import { logger } from "@/logger.js";
+import { ContractCharacter } from "@models/contingencyContract/ContractCharacter.js";
+import { ContractRecordEntity } from "@models/contingencyContract/entities/ContractRecordEntity.js";
+import { Character } from "@models/gameProfile/Character.js";
+import { IEntityClass } from "@models/IEntityClass.js";
+import { CharData } from "@services/contractRecordFetcher/contracts/CharData.js";
+import { ContractRecordDetailData } from "@services/contractRecordFetcher/contracts/ContractRecordDetailData.js";
+import { IndicatorData } from "@services/contractRecordFetcher/contracts/IndicatorData.js";
+import { crisisContractRecords } from "@staticModels/instances.js";
 
 export class ContractRecord implements IEntityClass<ContractRecordEntity> {
     private readonly _id: string;

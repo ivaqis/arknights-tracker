@@ -1,4 +1,4 @@
-import { MonumentGroupData } from "@services/monumentFetcher/contracts/MonumentGroupData";
+import { MonumentGroupData } from "@services/monumentFetcher/contracts/MonumentGroupData.js";
 
 export interface MonumentResponse {
     code: number;

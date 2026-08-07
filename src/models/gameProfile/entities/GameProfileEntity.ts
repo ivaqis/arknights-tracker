@@ -1,10 +1,10 @@
-import { BaseEntity } from "@models/gameProfile/entities/BaseEntity";
-import { BpSystemEntity } from "@models/gameProfile/entities/BpSystemEntity";
-import { CharacterEntity } from "@models/gameProfile/entities/CharacterEntity";
-import { DailyMissionEntity } from "@models/gameProfile/entities/DailyMissionEntity";
-import { DungeonEntity } from "@models/gameProfile/entities/DungeonEntity";
-import { SeekSuspicionEntity } from "@models/gameProfile/entities/SeekSuspicionEntity";
-import { WeeklyMissionEntity } from "@models/gameProfile/entities/WeeklyMissionEntity";
+import { BaseEntity } from "@models/gameProfile/entities/BaseEntity.js";
+import { BpSystemEntity } from "@models/gameProfile/entities/BpSystemEntity.js";
+import { CharacterEntity } from "@models/gameProfile/entities/CharacterEntity.js";
+import { DailyMissionEntity } from "@models/gameProfile/entities/DailyMissionEntity.js";
+import { DungeonEntity } from "@models/gameProfile/entities/DungeonEntity.js";
+import { SeekSuspicionEntity } from "@models/gameProfile/entities/SeekSuspicionEntity.js";
+import { WeeklyMissionEntity } from "@models/gameProfile/entities/WeeklyMissionEntity.js";
 
 export interface GameProfileEntity {
     base: BaseEntity;

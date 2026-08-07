@@ -1,11 +1,11 @@
-import { GetContractListQuery } from "@api/contracts/contract/GetContractListQuery";
-import { ContractLeaderboardSortField } from "@models/contractLeaderboard/ContractLeaderboardSortField";
-import { GameServerId } from "@models/GameServerId";
-import { SortOrder } from "@models/SortOrder";
-import { StringValidationRule } from "@models/validation/StringValidationRule";
-import { ValidationRule } from "@models/validation/ValidationRule";
-import { Validator } from "@models/validation/Validator";
-import { crisisContractRecords } from "@staticModels/instances";
+import { GetContractListQuery } from "@api/contracts/contract/GetContractListQuery.js";
+import { ContractLeaderboardSortField } from "@models/contractLeaderboard/ContractLeaderboardSortField.js";
+import { GameServerId } from "@models/GameServerId.js";
+import { SortOrder } from "@models/SortOrder.js";
+import { StringValidationRule } from "@models/validation/StringValidationRule.js";
+import { ValidationRule } from "@models/validation/ValidationRule.js";
+import { Validator } from "@models/validation/Validator.js";
+import { crisisContractRecords } from "@staticModels/instances.js";
 
 export class GetContractListQueryValidator extends Validator<GetContractListQuery> {
     public static readonly recordsOnPage = ["40", "60", "80", "100"] as const;

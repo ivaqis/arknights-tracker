@@ -1,5 +1,5 @@
-import { BannerRequestParams } from "@models/urlParams/banners/BannerRequestParams";
-import { WeaponBannerURLParams } from "@services/bannerDataFetcher/contracts/WeaponBannerURLParams";
+import { BannerRequestParams } from "@models/urlParams/banners/BannerRequestParams.js";
+import { WeaponBannerURLParams } from "@services/bannerDataFetcher/contracts/WeaponBannerURLParams.js";
 
 export class WeaponBannerRequestParams extends BannerRequestParams {
     private readonly _poolId?: string;

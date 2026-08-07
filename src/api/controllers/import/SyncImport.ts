@@ -1,17 +1,17 @@
-import { database } from "@/serviceInstances";
-import { syncPullsSigner } from "@/signers";
-import { syncPullsCache, usedSyncPullsTokens } from "@api/cache/syncPullsCache";
-import { SyncImportQuery } from "@api/contracts/import/SyncImportQuery";
-import { SyncImportRequest } from "@api/contracts/import/SyncImportRequest";
-import { SyncImportResponse } from "@api/contracts/import/SyncImportResponse";
-import { ResponseBody } from "@api/contracts/ResponseBody";
-import { Controller } from "@api/controllers/Controller";
-import { Database } from "@database/Database";
-import { UserBannerProfileRecord } from "@database/records/UserBannerProfileRecord";
-import { PullsAggregator } from "@models/pullsAggregator/PullsAggregator";
-import { SyncPullsSigner } from "@models/signers/syncPullsSigner/SyncPullsSigner";
-import { StablePullId } from "@models/stablePullId/StablePullId";
-import { UserBannerProfileVersion } from "@models/UserBannerProfileVersion";
+import { database } from "@/serviceInstances.js";
+import { syncPullsSigner } from "@/signers.js";
+import { syncPullsCache, usedSyncPullsTokens } from "@api/cache/syncPullsCache.js";
+import { SyncImportQuery } from "@api/contracts/import/SyncImportQuery.js";
+import { SyncImportRequest } from "@api/contracts/import/SyncImportRequest.js";
+import { SyncImportResponse } from "@api/contracts/import/SyncImportResponse.js";
+import { ResponseBody } from "@api/contracts/ResponseBody.js";
+import { Controller } from "@api/controllers/Controller.js";
+import { Database } from "@database/Database.js";
+import { UserBannerProfileRecord } from "@database/records/UserBannerProfileRecord.js";
+import { PullsAggregator } from "@models/pullsAggregator/PullsAggregator.js";
+import { SyncPullsSigner } from "@models/signers/syncPullsSigner/SyncPullsSigner.js";
+import { StablePullId } from "@models/stablePullId/StablePullId.js";
+import { UserBannerProfileVersion } from "@models/UserBannerProfileVersion.js";
 import e from "express";
 
 export class SyncImport extends Controller<

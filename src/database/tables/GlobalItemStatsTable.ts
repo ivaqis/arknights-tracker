@@ -1,6 +1,6 @@
-import { GlobalItemStatsRecord } from "@database/records/GlobalItemStatsRecord";
-import { Table } from "@database/tables/Table";
-import { Prisma, PrismaClient } from "@generated/prisma-v2";
+import { GlobalItemStatsRecord } from "@database/records/GlobalItemStatsRecord.js";
+import { Table } from "@database/tables/Table.js";
+import { Prisma, PrismaClient } from "@generated/prisma-v2/index.js";
 
 export class GlobalItemStatsTable extends Table<Prisma.GlobalItemStatsDelegate> {
 

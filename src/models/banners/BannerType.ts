@@ -1,5 +1,5 @@
-import { DbBannerType } from "@models/banners/DbBannerType";
-import { ShortBannerType } from "@models/banners/ShortBannerType";
+import { DbBannerType } from "@models/banners/DbBannerType.js";
+import { ShortBannerType } from "@models/banners/ShortBannerType.js";
 
 export enum BannerType {
     CHAR_BEGINNER = "E_CharacterGachaPoolType_Beginner",

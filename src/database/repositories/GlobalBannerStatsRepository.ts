@@ -1,12 +1,12 @@
-import { GlobalBannerTimelineRecord } from "@database/records/GlobalBannerTimelineRecord";
-import { GlobalItemStatsRecord } from "@database/records/GlobalItemStatsRecord";
-import { GlobalPityDistributionRecord } from "@database/records/GlobalPityDistributionRecord";
-import { GlobalBannerData } from "@database/repositories/interfaces/GlobalBannerData";
-import { Repository } from "@database/repositories/Repository";
-import { GlobalBannerTimelinesTable } from "@database/tables/GlobalBannerTimelinesTable";
-import { GlobalItemStatsTable } from "@database/tables/GlobalItemStatsTable";
-import { GlobalPityDistributionsTable } from "@database/tables/GlobalPityDistributionsTable";
-import { PrismaClient } from "@generated/prisma-v2";
+import { GlobalBannerTimelineRecord } from "@database/records/GlobalBannerTimelineRecord.js";
+import { GlobalItemStatsRecord } from "@database/records/GlobalItemStatsRecord.js";
+import { GlobalPityDistributionRecord } from "@database/records/GlobalPityDistributionRecord.js";
+import { GlobalBannerData } from "@database/repositories/interfaces/GlobalBannerData.js";
+import { Repository } from "@database/repositories/Repository.js";
+import { GlobalBannerTimelinesTable } from "@database/tables/GlobalBannerTimelinesTable.js";
+import { GlobalItemStatsTable } from "@database/tables/GlobalItemStatsTable.js";
+import { GlobalPityDistributionsTable } from "@database/tables/GlobalPityDistributionsTable.js";
+import { PrismaClient } from "@generated/prisma-v2/index.js";
 
 export class GlobalBannerStatsRepository extends Repository {
     private readonly _globalBannerTimelinesTable: GlobalBannerTimelinesTable;

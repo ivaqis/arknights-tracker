@@ -1,9 +1,9 @@
-import { ResponseBody } from "@api/contracts/ResponseBody";
-import { SyncProfileQuery } from "@api/contracts/syncProfile/SyncProfileQuery";
-import { SyncProfileRequest } from "@api/contracts/syncProfile/SyncProfileRequest";
-import { RequestValidator } from "@api/middleware/validators/RequestValidator";
-import { SyncProfileBodyValidator } from "@api/middleware/validators/syncProfile/SyncProfileBodyValidator";
-import { SyncProfileQueryValidator } from "@api/middleware/validators/syncProfile/SyncProfileQueryValidator";
+import { ResponseBody } from "@api/contracts/ResponseBody.js";
+import { SyncProfileQuery } from "@api/contracts/syncProfile/SyncProfileQuery.js";
+import { SyncProfileRequest } from "@api/contracts/syncProfile/SyncProfileRequest.js";
+import { RequestValidator } from "@api/middleware/validators/RequestValidator.js";
+import { SyncProfileBodyValidator } from "@api/middleware/validators/syncProfile/SyncProfileBodyValidator.js";
+import { SyncProfileQueryValidator } from "@api/middleware/validators/syncProfile/SyncProfileQueryValidator.js";
 import e from "express";
 
 export class SyncProfileRequestValidator extends RequestValidator<{}, SyncProfileRequest, SyncProfileQuery> {

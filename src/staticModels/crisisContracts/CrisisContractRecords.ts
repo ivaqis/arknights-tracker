@@ -1,6 +1,6 @@
-import { CrisisContract } from "@staticModels/crisisContracts/CrisisContract";
-import { CrisisContractEntity } from "@staticModels/crisisContracts/CrisisContractEntity";
-import { RecordsModel } from "@staticModels/RecordsModel";
+import { CrisisContract } from "@staticModels/crisisContracts/CrisisContract.js";
+import { CrisisContractEntity } from "@staticModels/crisisContracts/CrisisContractEntity.js";
+import { RecordsModel } from "@staticModels/RecordsModel.js";
 
 export class CrisisContractRecords {
     private readonly _byId: RecordsModel<CrisisContract>;

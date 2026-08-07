@@ -1,5 +1,5 @@
-import { CrisisContractEntity } from "@staticModels/crisisContracts/CrisisContractEntity";
-import { IndicatorRecords } from "@staticModels/crisisContracts/IndicatorRecords";
+import { CrisisContractEntity } from "@staticModels/crisisContracts/CrisisContractEntity.js";
+import { IndicatorRecords } from "@staticModels/crisisContracts/IndicatorRecords.js";
 
 export class CrisisContract {
     private readonly _entity: CrisisContractEntity;

@@ -1,5 +1,5 @@
-import { URLRequestParams } from "@models/urlParams/URLRequestParams";
-import { BannerURLParams } from "@services/bannerDataFetcher/contracts/BannerURLParams";
+import { URLRequestParams } from "@models/urlParams/URLRequestParams.js";
+import { BannerURLParams } from "@services/bannerDataFetcher/contracts/BannerURLParams.js";
 
 export class BannerRequestParams extends URLRequestParams {
     private readonly _token: string;

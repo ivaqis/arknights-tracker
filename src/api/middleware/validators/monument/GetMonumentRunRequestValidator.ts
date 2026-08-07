@@ -1,7 +1,7 @@
-import { GetMonumentRunQuery } from "@api/contracts/monument/GetMonumentRunQuery";
-import { ResponseBody } from "@api/contracts/ResponseBody";
-import { GetMonumentRunQueryValidator } from "@api/middleware/validators/monument/GetMonumentRunQueryValidator";
-import { RequestValidator } from "@api/middleware/validators/RequestValidator";
+import { GetMonumentRunQuery } from "@api/contracts/monument/GetMonumentRunQuery.js";
+import { ResponseBody } from "@api/contracts/ResponseBody.js";
+import { GetMonumentRunQueryValidator } from "@api/middleware/validators/monument/GetMonumentRunQueryValidator.js";
+import { RequestValidator } from "@api/middleware/validators/RequestValidator.js";
 import e from "express";
 
 export class GetMonumentRunRequestValidator extends RequestValidator<{}, undefined, GetMonumentRunQuery> {

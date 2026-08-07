@@ -1,7 +1,7 @@
-import { GlobalPityDistributionEntity } from "@database/entities/GlobalPityDistributionEntity";
-import { GlobalPityDistributionRecord } from "@database/records/GlobalPityDistributionRecord";
-import { Table } from "@database/tables/Table";
-import { Prisma, PrismaClient } from "@generated/prisma-v2";
+import { GlobalPityDistributionEntity } from "@database/entities/GlobalPityDistributionEntity.js";
+import { GlobalPityDistributionRecord } from "@database/records/GlobalPityDistributionRecord.js";
+import { Table } from "@database/tables/Table.js";
+import { Prisma, PrismaClient } from "@generated/prisma-v2/index.js";
 
 export class GlobalPityDistributionsTable extends Table<Prisma.GlobalPityDistributionDelegate> {
 

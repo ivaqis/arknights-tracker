@@ -1,8 +1,8 @@
-import { SyncImportQuery } from "@api/contracts/import/SyncImportQuery";
-import { StringValidationRule } from "@models/validation/StringValidationRule";
-import { ValidationRule } from "@models/validation/ValidationRule";
-import { Validator } from "@models/validation/Validator";
-import { JWT_REGEX } from "@utils/validationUtils";
+import { SyncImportQuery } from "@api/contracts/import/SyncImportQuery.js";
+import { StringValidationRule } from "@models/validation/StringValidationRule.js";
+import { ValidationRule } from "@models/validation/ValidationRule.js";
+import { Validator } from "@models/validation/Validator.js";
+import { JWT_REGEX } from "@utils/validationUtils.js";
 
 export class SyncImportQueryValidator extends Validator<SyncImportQuery> {
 

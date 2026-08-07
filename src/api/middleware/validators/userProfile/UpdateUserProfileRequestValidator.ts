@@ -1,11 +1,11 @@
-import { ResponseBody } from "@api/contracts/ResponseBody";
-import { UpdateUserProfileQuery } from "@api/contracts/userProfile/UpdateUserProfileQuery";
-import { UpdateUserProfileRequest } from "@api/contracts/userProfile/UpdateUserProfileRequest";
-import { RequestValidator } from "@api/middleware/validators/RequestValidator";
-import { UpdateUserProfileBodyValidator } from "@api/middleware/validators/userProfile/UpdateUserProfileBodyValidator";
+import { ResponseBody } from "@api/contracts/ResponseBody.js";
+import { UpdateUserProfileQuery } from "@api/contracts/userProfile/UpdateUserProfileQuery.js";
+import { UpdateUserProfileRequest } from "@api/contracts/userProfile/UpdateUserProfileRequest.js";
+import { RequestValidator } from "@api/middleware/validators/RequestValidator.js";
+import { UpdateUserProfileBodyValidator } from "@api/middleware/validators/userProfile/UpdateUserProfileBodyValidator.js";
 import {
     UpdateUserProfileQueryValidator
-} from "@api/middleware/validators/userProfile/UpdateUserProfileQueryValidator";
+} from "@api/middleware/validators/userProfile/UpdateUserProfileQueryValidator.js";
 import e from "express";
 
 export class UpdateUserProfileRequestValidator

@@ -1,4 +1,4 @@
-import { ContractRecordEntity } from "@models/contingencyContract/entities/ContractRecordEntity";
+import { ContractRecordEntity } from "@models/contingencyContract/entities/ContractRecordEntity.js";
 
 export interface GetContractRunResponse {
     uid: string;

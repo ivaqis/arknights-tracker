@@ -1,11 +1,11 @@
-import { authenticator, database } from "@/serviceInstances";
-import { GetMonumentGroupRunQuery } from "@api/contracts/monument/GetMonumentGroupRunQuery";
-import { GetMonumentGroupRunResponse } from "@api/contracts/monument/GetMonumentGroupRunResponse";
-import { ResponseBody } from "@api/contracts/ResponseBody";
-import { Controller } from "@api/controllers/Controller";
-import { Database } from "@database/Database";
-import { MonumentLeaderboardRun } from "@models/monumentLeaderboard/MonumentLeaderboardRun";
-import { Authenticator } from "@services/auth/Authenticator";
+import { authenticator, database } from "@/serviceInstances.js";
+import { GetMonumentGroupRunQuery } from "@api/contracts/monument/GetMonumentGroupRunQuery.js";
+import { GetMonumentGroupRunResponse } from "@api/contracts/monument/GetMonumentGroupRunResponse.js";
+import { ResponseBody } from "@api/contracts/ResponseBody.js";
+import { Controller } from "@api/controllers/Controller.js";
+import { Database } from "@database/Database.js";
+import { MonumentLeaderboardRun } from "@models/monumentLeaderboard/MonumentLeaderboardRun.js";
+import { Authenticator } from "@services/auth/Authenticator.js";
 import e from "express";
 
 export class GetMonumentGroupRun extends Controller<

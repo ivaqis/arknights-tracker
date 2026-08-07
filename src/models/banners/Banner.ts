@@ -1,8 +1,8 @@
-import { BannerType } from "@models/banners/BannerType";
-import { DbBannerType } from "@models/banners/DbBannerType";
-import { BannerEntity } from "@staticModels/banners/BannerEntity";
-import { BannerItemEntity } from "@staticModels/banners/BannerItemEntity";
-import { bannerRecords } from "@staticModels/instances";
+import { BannerType } from "@models/banners/BannerType.js";
+import { DbBannerType } from "@models/banners/DbBannerType.js";
+import { BannerEntity } from "@staticModels/banners/BannerEntity.js";
+import { BannerItemEntity } from "@staticModels/banners/BannerItemEntity.js";
+import { bannerRecords } from "@staticModels/instances.js";
 
 export class Banner {
     private readonly _id: string;

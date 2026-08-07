@@ -1,4 +1,4 @@
-import { MonumentCharData } from "@services/monumentFetcher/contracts/MonumentCharData";
+import { MonumentCharData } from "@services/monumentFetcher/contracts/MonumentCharData.js";
 
 export interface MonumentRecordData {
     ts: string;

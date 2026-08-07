@@ -1,6 +1,6 @@
-import { DbBannerType } from "@models/banners/DbBannerType";
-import { BannerTypeStatEntity } from "@models/pullProfile/entities/BannerTypeStatEntity";
-import { EventBannerTypeStatEntity } from "@models/pullProfile/entities/EventBannerTypeStatEntity";
+import { DbBannerType } from "@models/banners/DbBannerType.js";
+import { BannerTypeStatEntity } from "@models/pullProfile/entities/BannerTypeStatEntity.js";
+import { EventBannerTypeStatEntity } from "@models/pullProfile/entities/EventBannerTypeStatEntity.js";
 
 export interface PullProfileEntity {
     profileId: string;

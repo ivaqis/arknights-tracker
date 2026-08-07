@@ -1,5 +1,5 @@
-import { UserContractLeaderboardEntity } from "@database/entities/UserContractLeaderboardEntity";
-import { ContractRecord } from "@models/contingencyContract/ContractRecord";
+import { UserContractLeaderboardEntity } from "@database/entities/UserContractLeaderboardEntity.js";
+import { ContractRecord } from "@models/contingencyContract/ContractRecord.js";
 
 export class UserContractLeaderboardRecord {
     private readonly _id: string;

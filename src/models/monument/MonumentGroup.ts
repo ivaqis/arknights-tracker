@@ -1,8 +1,8 @@
-import { Character } from "@models/gameProfile/Character";
-import { MonumentDungeonGroup } from "@models/monument/MonumentDungeonGroup";
-import { MonumentRecord } from "@models/monument/MonumentRecord";
-import { MonumentDungeonGroupData } from "@services/monumentFetcher/contracts/MonumentDungeonGroupData";
-import { MonumentGroupData } from "@services/monumentFetcher/contracts/MonumentGroupData";
+import { Character } from "@models/gameProfile/Character.js";
+import { MonumentDungeonGroup } from "@models/monument/MonumentDungeonGroup.js";
+import { MonumentRecord } from "@models/monument/MonumentRecord.js";
+import { MonumentDungeonGroupData } from "@services/monumentFetcher/contracts/MonumentDungeonGroupData.js";
+import { MonumentGroupData } from "@services/monumentFetcher/contracts/MonumentGroupData.js";
 
 export class MonumentGroup {
     private readonly _dungeonGroups: MonumentDungeonGroup[];

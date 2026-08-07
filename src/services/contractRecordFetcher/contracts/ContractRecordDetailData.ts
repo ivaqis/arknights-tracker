@@ -1,5 +1,5 @@
-import { CharData } from "@services/contractRecordFetcher/contracts/CharData";
-import { IndicatorData } from "@services/contractRecordFetcher/contracts/IndicatorData";
+import { CharData } from "@services/contractRecordFetcher/contracts/CharData.js";
+import { IndicatorData } from "@services/contractRecordFetcher/contracts/IndicatorData.js";
 
 export interface ContractRecordDetailData {
     id: string;

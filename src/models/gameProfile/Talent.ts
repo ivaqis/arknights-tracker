@@ -1,5 +1,5 @@
-import { TalentEntity } from "@models/gameProfile/entities/TalentEntity";
-import { IEntityClass } from "@models/IEntityClass";
+import { TalentEntity } from "@models/gameProfile/entities/TalentEntity.js";
+import { IEntityClass } from "@models/IEntityClass.js";
 
 export class Talent implements IEntityClass<TalentEntity> {
     private readonly _attrNodes: string[];

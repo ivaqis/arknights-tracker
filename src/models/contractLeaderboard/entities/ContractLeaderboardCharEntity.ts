@@ -1,4 +1,4 @@
-import { ContractLeaderboardWeaponEntity } from "@models/contractLeaderboard/entities/ContractLeaderboardWeaponEntity";
+import { ContractLeaderboardWeaponEntity } from "@models/contractLeaderboard/entities/ContractLeaderboardWeaponEntity.js";
 
 export interface ContractLeaderboardCharEntity {
     id: string;

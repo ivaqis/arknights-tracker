@@ -1,4 +1,4 @@
-import { BannerItemEntity } from "@staticModels/banners/BannerItemEntity";
+import { BannerItemEntity } from "@staticModels/banners/BannerItemEntity.js";
 
 export interface BannerEntity {
     readonly id: string,

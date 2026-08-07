@@ -1,7 +1,7 @@
-import { LinkUserPullsQuery } from "@api/contracts/userPulls/LinkUserPullsQuery";
-import { StringValidationRule } from "@models/validation/StringValidationRule";
-import { ValidationRule } from "@models/validation/ValidationRule";
-import { Validator } from "@models/validation/Validator";
+import { LinkUserPullsQuery } from "@api/contracts/userPulls/LinkUserPullsQuery.js";
+import { StringValidationRule } from "@models/validation/StringValidationRule.js";
+import { ValidationRule } from "@models/validation/ValidationRule.js";
+import { Validator } from "@models/validation/Validator.js";
 
 export class LinkUserPullsQueryValidator extends Validator<LinkUserPullsQuery> {
 

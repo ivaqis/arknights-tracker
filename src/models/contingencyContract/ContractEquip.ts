@@ -1,6 +1,6 @@
-import { ContractEquipEntity } from "@models/contingencyContract/entities/ContractEquipEntity";
-import { IEntityClass } from "@models/IEntityClass";
-import { EquipData } from "@services/contractRecordFetcher/contracts/EquipData";
+import { ContractEquipEntity } from "@models/contingencyContract/entities/ContractEquipEntity.js";
+import { IEntityClass } from "@models/IEntityClass.js";
+import { EquipData } from "@services/contractRecordFetcher/contracts/EquipData.js";
 
 export class ContractEquip implements IEntityClass<ContractEquipEntity> {
     private readonly _id: string;

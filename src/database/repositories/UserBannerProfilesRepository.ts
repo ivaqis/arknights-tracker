@@ -1,11 +1,11 @@
-import { BannerPullsIdRecord } from "@database/records/BannerPullsIdRecord";
-import { BannerTokenIdRecord } from "@database/records/BannerTokenIdRecord";
-import { UserBannerProfileRecord } from "@database/records/UserBannerProfileRecord";
-import { Repository } from "@database/repositories/Repository";
-import { BannerPullsIdsTable } from "@database/tables/BannerPullsIdsTable";
-import { BannerTokenIdsTable } from "@database/tables/BannerTokenIdsTable";
-import { UserBannerProfilesTable } from "@database/tables/UserBannerProfilesTable";
-import { PrismaClient } from "@generated/prisma-v2";
+import { BannerPullsIdRecord } from "@database/records/BannerPullsIdRecord.js";
+import { BannerTokenIdRecord } from "@database/records/BannerTokenIdRecord.js";
+import { UserBannerProfileRecord } from "@database/records/UserBannerProfileRecord.js";
+import { Repository } from "@database/repositories/Repository.js";
+import { BannerPullsIdsTable } from "@database/tables/BannerPullsIdsTable.js";
+import { BannerTokenIdsTable } from "@database/tables/BannerTokenIdsTable.js";
+import { UserBannerProfilesTable } from "@database/tables/UserBannerProfilesTable.js";
+import { PrismaClient } from "@generated/prisma-v2/index.js";
 
 export class UserBannerProfilesRepository extends Repository {
     private readonly _userBannerProfilesTable: UserBannerProfilesTable;

@@ -1,4 +1,4 @@
-import { ContractURLParams } from "@services/contractFetcher/contracts/ContractURLParams";
+import { ContractURLParams } from "@services/contractFetcher/contracts/ContractURLParams.js";
 
 export interface ContractRecordURLParams extends ContractURLParams {
     recordId: string;

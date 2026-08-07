@@ -1,8 +1,8 @@
-import { UploadAvatarRequest } from "@api/contracts/uploadAvatar/UploadAvatarRequest";
-import { OptionalValidationRule } from "@models/validation/OptionalValidationRule";
-import { StringValidationRule } from "@models/validation/StringValidationRule";
-import { ValidationRule } from "@models/validation/ValidationRule";
-import { Validator } from "@models/validation/Validator";
+import { UploadAvatarRequest } from "@api/contracts/uploadAvatar/UploadAvatarRequest.js";
+import { OptionalValidationRule } from "@models/validation/OptionalValidationRule.js";
+import { StringValidationRule } from "@models/validation/StringValidationRule.js";
+import { ValidationRule } from "@models/validation/ValidationRule.js";
+import { Validator } from "@models/validation/Validator.js";
 
 export class UploadAvatarBodyValidator extends Validator<UploadAvatarRequest> {
     public constructor(item: UploadAvatarRequest) {

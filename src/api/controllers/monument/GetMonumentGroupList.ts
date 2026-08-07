@@ -1,17 +1,17 @@
-import { database } from "@/serviceInstances";
-import { GetMonumentGroupListQuery } from "@api/contracts/monument/GetMonumentGroupListQuery";
-import { GetMonumentGroupListResponse } from "@api/contracts/monument/GetMonumentGroupListResponse";
-import { ResponseBody } from "@api/contracts/ResponseBody";
-import { Controller } from "@api/controllers/Controller";
-import { Database } from "@database/Database";
-import { MonumentFilters } from "@database/MonumentFilters";
-import { GameServerId } from "@models/GameServerId";
+import { database } from "@/serviceInstances.js";
+import { GetMonumentGroupListQuery } from "@api/contracts/monument/GetMonumentGroupListQuery.js";
+import { GetMonumentGroupListResponse } from "@api/contracts/monument/GetMonumentGroupListResponse.js";
+import { ResponseBody } from "@api/contracts/ResponseBody.js";
+import { Controller } from "@api/controllers/Controller.js";
+import { Database } from "@database/Database.js";
+import { MonumentFilters } from "@database/MonumentFilters.js";
+import { GameServerId } from "@models/GameServerId.js";
 import {
     MonumentLeaderboardGroupRunRecordEntity
-} from "@models/monumentLeaderboard/entities/MonumentLeaderboardGroupRunRecordEntity";
-import { MonumentLeaderboardSearcher } from "@models/monumentLeaderboard/MonumentLeaderboardSearcher";
-import { MonumentLeaderboardSortField } from "@models/monumentLeaderboard/MonumentLeaderboardSortField";
-import { SortOrder } from "@models/SortOrder";
+} from "@models/monumentLeaderboard/entities/MonumentLeaderboardGroupRunRecordEntity.js";
+import { MonumentLeaderboardSearcher } from "@models/monumentLeaderboard/MonumentLeaderboardSearcher.js";
+import { MonumentLeaderboardSortField } from "@models/monumentLeaderboard/MonumentLeaderboardSortField.js";
+import { SortOrder } from "@models/SortOrder.js";
 import e from "express";
 
 export class GetMonumentGroupList extends Controller<

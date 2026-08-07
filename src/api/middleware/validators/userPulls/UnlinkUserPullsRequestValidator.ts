@@ -1,7 +1,7 @@
-import { ResponseBody } from "@api/contracts/ResponseBody";
-import { UnlinkUserPullsQuery } from "@api/contracts/userPulls/UnlinkUserPullsQuery";
-import { RequestValidator } from "@api/middleware/validators/RequestValidator";
-import { UnlinkUserPullsQueryValidator } from "@api/middleware/validators/userPulls/UnlinkUserPullsQueryValidator";
+import { ResponseBody } from "@api/contracts/ResponseBody.js";
+import { UnlinkUserPullsQuery } from "@api/contracts/userPulls/UnlinkUserPullsQuery.js";
+import { RequestValidator } from "@api/middleware/validators/RequestValidator.js";
+import { UnlinkUserPullsQueryValidator } from "@api/middleware/validators/userPulls/UnlinkUserPullsQueryValidator.js";
 import e from "express";
 
 export class UnlinkUserPullsRequestValidator extends RequestValidator<{}, undefined, UnlinkUserPullsQuery> {

@@ -1,7 +1,7 @@
-import { BannerTokenIdRecord } from "@database/records/BannerTokenIdRecord";
-import { UserBannerProfileRecord } from "@database/records/UserBannerProfileRecord";
-import { Table } from "@database/tables/Table";
-import { Prisma, PrismaClient } from "@generated/prisma-v2";
+import { BannerTokenIdRecord } from "@database/records/BannerTokenIdRecord.js";
+import { UserBannerProfileRecord } from "@database/records/UserBannerProfileRecord.js";
+import { Table } from "@database/tables/Table.js";
+import { Prisma, PrismaClient } from "@generated/prisma-v2/index.js";
 
 export class BannerTokenIdsTable extends Table<Prisma.BannerTokenIdDelegate> {
 

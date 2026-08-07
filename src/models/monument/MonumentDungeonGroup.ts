@@ -1,6 +1,6 @@
-import { Character } from "@models/gameProfile/Character";
-import { MonumentRecord } from "@models/monument/MonumentRecord";
-import { MonumentDungeonGroupData } from "@services/monumentFetcher/contracts/MonumentDungeonGroupData";
+import { Character } from "@models/gameProfile/Character.js";
+import { MonumentRecord } from "@models/monument/MonumentRecord.js";
+import { MonumentDungeonGroupData } from "@services/monumentFetcher/contracts/MonumentDungeonGroupData.js";
 
 export class MonumentDungeonGroup {
     private readonly _normalDungeon: MonumentRecord | null;

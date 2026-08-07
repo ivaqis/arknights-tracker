@@ -1,7 +1,7 @@
-import { SyncProfileQuery } from "@api/contracts/syncProfile/SyncProfileQuery";
-import { UsernameValidationRule } from "@models/validation/UsernameValidationRule";
-import { ValidationRule } from "@models/validation/ValidationRule";
-import { Validator } from "@models/validation/Validator";
+import { SyncProfileQuery } from "@api/contracts/syncProfile/SyncProfileQuery.js";
+import { UsernameValidationRule } from "@models/validation/UsernameValidationRule.js";
+import { ValidationRule } from "@models/validation/ValidationRule.js";
+import { Validator } from "@models/validation/Validator.js";
 
 export class SyncProfileQueryValidator extends Validator<SyncProfileQuery> {
 

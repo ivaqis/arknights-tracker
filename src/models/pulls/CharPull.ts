@@ -1,8 +1,8 @@
-import { IEntityClass } from "@models/IEntityClass";
-import { CharPullEntity } from "@models/pulls/entities/CharPullEntity";
-import { Pull } from "@models/pulls/Pull";
-import { StablePull } from "@models/stablePullId/StablePull";
-import { CharPullData } from "@services/bannerDataFetcher/entities/CharPullData";
+import { IEntityClass } from "@models/IEntityClass.js";
+import { CharPullEntity } from "@models/pulls/entities/CharPullEntity.js";
+import { Pull } from "@models/pulls/Pull.js";
+import { StablePull } from "@models/stablePullId/StablePull.js";
+import { CharPullData } from "@services/bannerDataFetcher/entities/CharPullData.js";
 
 export class CharPull extends Pull implements IEntityClass<CharPullEntity> {
     private readonly _charId: string;

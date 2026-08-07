@@ -1,7 +1,7 @@
-import { config } from "@/config";
-import { logger } from "@/logger";
-import { FirebaseAuthData } from "@services/firebaseAuth/FirebaseAuthData";
-import { IService } from "@services/IService";
+import { config } from "@/config.js";
+import { logger } from "@/logger.js";
+import { FirebaseAuthData } from "@services/firebaseAuth/FirebaseAuthData.js";
+import { IService } from "@services/IService.js";
 import axios, { AxiosResponse } from "axios";
 import crypto from "node:crypto";
 

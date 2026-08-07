@@ -1,5 +1,5 @@
-import { BpSystemEntity } from "@models/gameProfile/entities/BpSystemEntity";
-import { IEntityClass } from "@models/IEntityClass";
+import { BpSystemEntity } from "@models/gameProfile/entities/BpSystemEntity.js";
+import { IEntityClass } from "@models/IEntityClass.js";
 
 export class BpSystem implements IEntityClass<BpSystemEntity> {
     private readonly _curLevel: number;

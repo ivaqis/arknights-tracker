@@ -1,7 +1,7 @@
-import { UploadAvatarQuery } from "@api/contracts/uploadAvatar/UploadAvatarQuery";
-import { UsernameValidationRule } from "@models/validation/UsernameValidationRule";
-import { ValidationRule } from "@models/validation/ValidationRule";
-import { Validator } from "@models/validation/Validator";
+import { UploadAvatarQuery } from "@api/contracts/uploadAvatar/UploadAvatarQuery.js";
+import { UsernameValidationRule } from "@models/validation/UsernameValidationRule.js";
+import { ValidationRule } from "@models/validation/ValidationRule.js";
+import { Validator } from "@models/validation/Validator.js";
 
 export class UploadAvatarQueryValidator extends Validator<UploadAvatarQuery> {
 

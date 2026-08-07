@@ -1,10 +1,10 @@
-import { config } from "@/config";
-import { Database } from "@database/Database";
-import { PrismaClient } from "@generated/prisma-v2";
-import { Authenticator } from "@services/auth/Authenticator";
-import { AvatarUploader } from "@services/avatarUploader/AvatarUploader";
-import { FirebaseAuthenticator } from "@services/firebaseAuth/FirebaseAuthenticator";
-import { SightengineNsfwValidator } from "@services/sightengineNsfwValidator/SightengineNsfwValidator";
+import { config } from "@/config.js";
+import { Database } from "@database/Database.js";
+import { PrismaClient } from "@generated/prisma-v2/index.js";
+import { Authenticator } from "@services/auth/Authenticator.js";
+import { AvatarUploader } from "@services/avatarUploader/AvatarUploader.js";
+import { FirebaseAuthenticator } from "@services/firebaseAuth/FirebaseAuthenticator.js";
+import { SightengineNsfwValidator } from "@services/sightengineNsfwValidator/SightengineNsfwValidator.js";
 
 const prisma = new PrismaClient();
 export const database = new Database(prisma);

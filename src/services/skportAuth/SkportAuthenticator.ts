@@ -1,7 +1,7 @@
-import { config } from "@/config";
-import { logger } from "@/logger";
-import { CredData } from "@services/skportAuth/contracts/CredData";
-import { CredResponse } from "@services/skportAuth/contracts/CredResponse";
+import { config } from "@/config.js";
+import { logger } from "@/logger.js";
+import { CredData } from "@services/skportAuth/contracts/CredData.js";
+import { CredResponse } from "@services/skportAuth/contracts/CredResponse.js";
 import axios, { AxiosResponse } from "axios";
 
 export class SkportAuthenticator {

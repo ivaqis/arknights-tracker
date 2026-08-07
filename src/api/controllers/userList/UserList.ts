@@ -1,9 +1,9 @@
-import { authenticator, database } from "@/serviceInstances";
-import { ResponseBody } from "@api/contracts/ResponseBody";
-import { UserListResponse } from "@api/contracts/userList/UserListResponse";
-import { Controller } from "@api/controllers/Controller";
-import { Database } from "@database/Database";
-import { Authenticator } from "@services/auth/Authenticator";
+import { authenticator, database } from "@/serviceInstances.js";
+import { ResponseBody } from "@api/contracts/ResponseBody.js";
+import { UserListResponse } from "@api/contracts/userList/UserListResponse.js";
+import { Controller } from "@api/controllers/Controller.js";
+import { Database } from "@database/Database.js";
+import { Authenticator } from "@services/auth/Authenticator.js";
 import e from "express";
 
 export class UserList extends Controller<

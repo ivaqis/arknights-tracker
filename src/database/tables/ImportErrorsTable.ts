@@ -1,7 +1,7 @@
-import { ImportErrorEntity } from "@database/entities/ImportErrorEntity";
-import { Table } from "@database/tables/Table";
-import { ImportError } from "@errors/ImportError";
-import { Prisma, PrismaClient } from "@generated/prisma-v2";
+import { ImportErrorEntity } from "@database/entities/ImportErrorEntity.js";
+import { Table } from "@database/tables/Table.js";
+import { ImportError } from "@errors/ImportError.js";
+import { Prisma, PrismaClient } from "@generated/prisma-v2/index.js";
 
 export class ImportErrorsTable extends Table<Prisma.ImportErrorDelegate> {
 

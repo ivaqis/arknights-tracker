@@ -1,5 +1,5 @@
-import { NudityData } from "@services/sightengineNsfwValidator/contracts/NudityData";
-import { RequestData } from "@services/sightengineNsfwValidator/contracts/RequestData";
+import { NudityData } from "@services/sightengineNsfwValidator/contracts/NudityData.js";
+import { RequestData } from "@services/sightengineNsfwValidator/contracts/RequestData.js";
 
 /**
  * Response for nudity 2.0

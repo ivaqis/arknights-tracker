@@ -1,6 +1,6 @@
-import { BaseEntity } from "@models/gameProfile/entities/BaseEntity";
-import { IEntityClass } from "@models/IEntityClass";
-import { BaseData } from "@services/skportDetailFetcher/contracts/BaseData";
+import { BaseEntity } from "@models/gameProfile/entities/BaseEntity.js";
+import { IEntityClass } from "@models/IEntityClass.js";
+import { BaseData } from "@services/skportDetailFetcher/contracts/BaseData.js";
 
 export class Base implements IEntityClass<BaseEntity> {
     private readonly _serverId: string;

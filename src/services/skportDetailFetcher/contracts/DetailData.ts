@@ -1,7 +1,7 @@
-import { BaseData } from "@services/skportDetailFetcher/contracts/BaseData";
-import { CharData } from "@services/skportDetailFetcher/contracts/CharData";
-import { ContractStatusData } from "@services/skportDetailFetcher/contracts/ContractStatusData";
-import { MonumentData } from "@services/skportDetailFetcher/contracts/MonumentData";
+import { BaseData } from "@services/skportDetailFetcher/contracts/BaseData.js";
+import { CharData } from "@services/skportDetailFetcher/contracts/CharData.js";
+import { ContractStatusData } from "@services/skportDetailFetcher/contracts/ContractStatusData.js";
+import { MonumentData } from "@services/skportDetailFetcher/contracts/MonumentData.js";
 
 export interface DetailData {
     base: BaseData;

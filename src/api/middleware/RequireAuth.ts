@@ -1,7 +1,7 @@
-import { ResponseBody } from "@api/contracts/ResponseBody";
-import { Middleware } from "@api/middleware/Middleware";
-import { Authenticator } from "@services/auth/Authenticator";
-import { AuthType } from "@services/auth/AuthType";
+import { ResponseBody } from "@api/contracts/ResponseBody.js";
+import { Middleware } from "@api/middleware/Middleware.js";
+import { Authenticator } from "@services/auth/Authenticator.js";
+import { AuthType } from "@services/auth/AuthType.js";
 import e from "express";
 import * as core from "express-serve-static-core";
 

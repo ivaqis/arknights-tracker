@@ -1,4 +1,4 @@
-import { CharData } from "@services/contractFetcher/contracts/CharData";
+import { CharData } from "@services/contractFetcher/contracts/CharData.js";
 
 export interface ContractRecordData {
     id: string;

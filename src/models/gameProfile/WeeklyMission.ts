@@ -1,5 +1,5 @@
-import { WeeklyMissionEntity } from "@models/gameProfile/entities/WeeklyMissionEntity";
-import { IEntityClass } from "@models/IEntityClass";
+import { WeeklyMissionEntity } from "@models/gameProfile/entities/WeeklyMissionEntity.js";
+import { IEntityClass } from "@models/IEntityClass.js";
 
 export class WeeklyMission implements IEntityClass<WeeklyMissionEntity> {
     private readonly _score: number;

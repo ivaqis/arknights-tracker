@@ -1,4 +1,4 @@
-import { GemData } from "@services/skportDetailFetcher/contracts/GemData";
+import { GemData } from "@services/skportDetailFetcher/contracts/GemData.js";
 
 export interface WeaponData {
     weaponData: {

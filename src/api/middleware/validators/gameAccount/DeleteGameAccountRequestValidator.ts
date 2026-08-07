@@ -1,9 +1,9 @@
-import { DeleteGameAccountQuery } from "@api/contracts/gameAccount/DeleteGameAccountQuery";
-import { ResponseBody } from "@api/contracts/ResponseBody";
+import { DeleteGameAccountQuery } from "@api/contracts/gameAccount/DeleteGameAccountQuery.js";
+import { ResponseBody } from "@api/contracts/ResponseBody.js";
 import {
     DeleteGameAccountQueryValidator
-} from "@api/middleware/validators/gameAccount/DeleteGameAccountQueryValidator";
-import { RequestValidator } from "@api/middleware/validators/RequestValidator";
+} from "@api/middleware/validators/gameAccount/DeleteGameAccountQueryValidator.js";
+import { RequestValidator } from "@api/middleware/validators/RequestValidator.js";
 import e from "express";
 
 export class DeleteGameAccountRequestValidator extends RequestValidator<{}, {}, DeleteGameAccountQuery> {

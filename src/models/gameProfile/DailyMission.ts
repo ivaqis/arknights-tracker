@@ -1,5 +1,5 @@
-import { DailyMissionEntity } from "@models/gameProfile/entities/DailyMissionEntity";
-import { IEntityClass } from "@models/IEntityClass";
+import { DailyMissionEntity } from "@models/gameProfile/entities/DailyMissionEntity.js";
+import { IEntityClass } from "@models/IEntityClass.js";
 
 export class DailyMission implements IEntityClass<DailyMissionEntity> {
     private readonly _dailyActivation: number;

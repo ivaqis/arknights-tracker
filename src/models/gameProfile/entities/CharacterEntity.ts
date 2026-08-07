@@ -1,8 +1,8 @@
-import { CharSkillEntity } from "@models/gameProfile/entities/CharSkillEntity";
-import { EquipEntity } from "@models/gameProfile/entities/EquipEntity";
-import { TacticalItemEntity } from "@models/gameProfile/entities/TacticalItemEntity";
-import { TalentEntity } from "@models/gameProfile/entities/TalentEntity";
-import { WeaponEntity } from "@models/gameProfile/entities/WeaponEntity";
+import { CharSkillEntity } from "@models/gameProfile/entities/CharSkillEntity.js";
+import { EquipEntity } from "@models/gameProfile/entities/EquipEntity.js";
+import { TacticalItemEntity } from "@models/gameProfile/entities/TacticalItemEntity.js";
+import { TalentEntity } from "@models/gameProfile/entities/TalentEntity.js";
+import { WeaponEntity } from "@models/gameProfile/entities/WeaponEntity.js";
 
 export interface CharacterEntity {
     id: string;

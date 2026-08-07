@@ -1,4 +1,4 @@
-import { GemEntity } from "@models/gameProfile/entities/GemEntity";
+import { GemEntity } from "@models/gameProfile/entities/GemEntity.js";
 
 export interface WeaponEntity {
     id: string;

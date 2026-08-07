@@ -1,11 +1,11 @@
-import { authenticator, avatarUploader, database } from "@/serviceInstances";
-import { ResponseBody } from "@api/contracts/ResponseBody";
-import { DeleteUserProfileQuery } from "@api/contracts/userProfile/DeleteUserProfileQuery";
-import { DeleteUserProfileResponse } from "@api/contracts/userProfile/DeleteUserProfileResponse";
-import { Controller } from "@api/controllers/Controller";
-import { Database } from "@database/Database";
-import { Authenticator } from "@services/auth/Authenticator";
-import { AvatarUploader } from "@services/avatarUploader/AvatarUploader";
+import { authenticator, avatarUploader, database } from "@/serviceInstances.js";
+import { ResponseBody } from "@api/contracts/ResponseBody.js";
+import { DeleteUserProfileQuery } from "@api/contracts/userProfile/DeleteUserProfileQuery.js";
+import { DeleteUserProfileResponse } from "@api/contracts/userProfile/DeleteUserProfileResponse.js";
+import { Controller } from "@api/controllers/Controller.js";
+import { Database } from "@database/Database.js";
+import { Authenticator } from "@services/auth/Authenticator.js";
+import { AvatarUploader } from "@services/avatarUploader/AvatarUploader.js";
 import e from "express";
 
 export class DeleteUserProfile extends Controller<

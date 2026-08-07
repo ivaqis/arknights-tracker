@@ -1,8 +1,8 @@
-import { UserMonumentCharacterEntity } from "@database/entities/UserMonumentCharacterEntity";
-import { UserMonumentCharacterRecord } from "@database/records/UserMonumentCharacterRecord";
-import { Table } from "@database/tables/Table";
-import { Prisma, PrismaClient } from "@generated/prisma-v2";
-import { Amount } from "@models/Amount";
+import { UserMonumentCharacterEntity } from "@database/entities/UserMonumentCharacterEntity.js";
+import { UserMonumentCharacterRecord } from "@database/records/UserMonumentCharacterRecord.js";
+import { Table } from "@database/tables/Table.js";
+import { Prisma, PrismaClient } from "@generated/prisma-v2/index.js";
+import { Amount } from "@models/Amount.js";
 
 export class UserMonumentCharactersTable extends Table<Prisma.UserMonumentCharacterDelegate> {
 

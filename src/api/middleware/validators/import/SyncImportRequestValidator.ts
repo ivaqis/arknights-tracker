@@ -1,9 +1,9 @@
-import { SyncImportQuery } from "@api/contracts/import/SyncImportQuery";
-import { SyncImportRequest } from "@api/contracts/import/SyncImportRequest";
-import { ResponseBody } from "@api/contracts/ResponseBody";
-import { SyncImportBodyValidator } from "@api/middleware/validators/import/SyncImportBodyValidator";
-import { SyncImportQueryValidator } from "@api/middleware/validators/import/SyncImportQueryValidator";
-import { RequestValidator } from "@api/middleware/validators/RequestValidator";
+import { SyncImportQuery } from "@api/contracts/import/SyncImportQuery.js";
+import { SyncImportRequest } from "@api/contracts/import/SyncImportRequest.js";
+import { ResponseBody } from "@api/contracts/ResponseBody.js";
+import { SyncImportBodyValidator } from "@api/middleware/validators/import/SyncImportBodyValidator.js";
+import { SyncImportQueryValidator } from "@api/middleware/validators/import/SyncImportQueryValidator.js";
+import { RequestValidator } from "@api/middleware/validators/RequestValidator.js";
 import e from "express";
 
 export class SyncImportRequestValidator extends RequestValidator<{}, SyncImportRequest, SyncImportQuery> {

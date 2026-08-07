@@ -1,14 +1,14 @@
-import { database } from "@/serviceInstances";
-import { GetMonumentListQuery } from "@api/contracts/monument/GetMonumentListQuery";
-import { GetMonumentListResponse } from "@api/contracts/monument/GetMonumentListResponse";
-import { ResponseBody } from "@api/contracts/ResponseBody";
-import { Controller } from "@api/controllers/Controller";
-import { Database } from "@database/Database";
-import { MonumentFilters } from "@database/MonumentFilters";
-import { GameServerId } from "@models/GameServerId";
-import { MonumentLeaderboardSearcher } from "@models/monumentLeaderboard/MonumentLeaderboardSearcher";
-import { MonumentLeaderboardSortField } from "@models/monumentLeaderboard/MonumentLeaderboardSortField";
-import { SortOrder } from "@models/SortOrder";
+import { database } from "@/serviceInstances.js";
+import { GetMonumentListQuery } from "@api/contracts/monument/GetMonumentListQuery.js";
+import { GetMonumentListResponse } from "@api/contracts/monument/GetMonumentListResponse.js";
+import { ResponseBody } from "@api/contracts/ResponseBody.js";
+import { Controller } from "@api/controllers/Controller.js";
+import { Database } from "@database/Database.js";
+import { MonumentFilters } from "@database/MonumentFilters.js";
+import { GameServerId } from "@models/GameServerId.js";
+import { MonumentLeaderboardSearcher } from "@models/monumentLeaderboard/MonumentLeaderboardSearcher.js";
+import { MonumentLeaderboardSortField } from "@models/monumentLeaderboard/MonumentLeaderboardSortField.js";
+import { SortOrder } from "@models/SortOrder.js";
 import e from "express";
 
 export class GetMonumentList extends Controller<

@@ -1,9 +1,9 @@
-import { GetContractList } from "@api/controllers/contract/GetContractList";
-import { GetContractRun } from "@api/controllers/contract/GetContractRun";
-import { Controller } from "@api/controllers/Controller";
-import { GetContractListRequestValidator } from "@api/middleware/validators/contract/GetContractListRequestValidator";
-import { GetContractRunRequestValidator } from "@api/middleware/validators/contract/GetContractRunRequestValidator";
-import { RequestValidator } from "@api/middleware/validators/RequestValidator";
+import { GetContractList } from "@api/controllers/contract/GetContractList.js";
+import { GetContractRun } from "@api/controllers/contract/GetContractRun.js";
+import { Controller } from "@api/controllers/Controller.js";
+import { GetContractListRequestValidator } from "@api/middleware/validators/contract/GetContractListRequestValidator.js";
+import { GetContractRunRequestValidator } from "@api/middleware/validators/contract/GetContractRunRequestValidator.js";
+import { RequestValidator } from "@api/middleware/validators/RequestValidator.js";
 import { Router } from "express";
 
 export const contractRouter = Router();

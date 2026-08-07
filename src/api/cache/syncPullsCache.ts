@@ -1,4 +1,4 @@
-import { SyncPullsCacheRecord } from "@api/cache/records/SyncPullsCacheRecord";
+import { SyncPullsCacheRecord } from "@api/cache/records/SyncPullsCacheRecord.js";
 import { LRUCache } from "lru-cache";
 
 export const syncPullsCache = new LRUCache<string, SyncPullsCacheRecord>({

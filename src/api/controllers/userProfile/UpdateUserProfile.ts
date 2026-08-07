@@ -1,14 +1,14 @@
-import { authenticator, database } from "@/serviceInstances";
-import { ResponseBody } from "@api/contracts/ResponseBody";
-import { UpdateUserProfileQuery } from "@api/contracts/userProfile/UpdateUserProfileQuery";
-import { UpdateUserProfileRequest } from "@api/contracts/userProfile/UpdateUserProfileRequest";
-import { UpdateUserProfileResponse } from "@api/contracts/userProfile/UpdateUserProfileResponse";
-import { Controller } from "@api/controllers/Controller";
-import { GetUserProfile } from "@api/controllers/userProfile/GetUserProfile";
-import { Database } from "@database/Database";
-import { ContractRecord } from "@models/contingencyContract/ContractRecord";
-import { Authenticator } from "@services/auth/Authenticator";
-import { bannedWords, crisisContractRecords } from "@staticModels/instances";
+import { authenticator, database } from "@/serviceInstances.js";
+import { ResponseBody } from "@api/contracts/ResponseBody.js";
+import { UpdateUserProfileQuery } from "@api/contracts/userProfile/UpdateUserProfileQuery.js";
+import { UpdateUserProfileRequest } from "@api/contracts/userProfile/UpdateUserProfileRequest.js";
+import { UpdateUserProfileResponse } from "@api/contracts/userProfile/UpdateUserProfileResponse.js";
+import { Controller } from "@api/controllers/Controller.js";
+import { GetUserProfile } from "@api/controllers/userProfile/GetUserProfile.js";
+import { Database } from "@database/Database.js";
+import { ContractRecord } from "@models/contingencyContract/ContractRecord.js";
+import { Authenticator } from "@services/auth/Authenticator.js";
+import { bannedWords, crisisContractRecords } from "@staticModels/instances.js";
 import e from "express";
 
 export class UpdateUserProfile

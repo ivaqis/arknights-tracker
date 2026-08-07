@@ -1,4 +1,4 @@
-import { PullData } from "@services/bannerDataFetcher/entities/PullData";
+import { PullData } from "@services/bannerDataFetcher/entities/PullData.js";
 
 export interface BannerResponse<T extends PullData> {
     code: number,

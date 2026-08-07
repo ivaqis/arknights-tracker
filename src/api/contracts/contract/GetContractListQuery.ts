@@ -1,6 +1,6 @@
-import { ContractLeaderboardSortField } from "@models/contractLeaderboard/ContractLeaderboardSortField";
-import { GameServerId } from "@models/GameServerId";
-import { SortOrder } from "@models/SortOrder";
+import { ContractLeaderboardSortField } from "@models/contractLeaderboard/ContractLeaderboardSortField.js";
+import { GameServerId } from "@models/GameServerId.js";
+import { SortOrder } from "@models/SortOrder.js";
 
 export interface GetContractListQuery {
     contractId: string;

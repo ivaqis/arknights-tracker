@@ -1,7 +1,7 @@
-import { DeleteAvatarQuery } from "@api/contracts/uploadAvatar/DeleteAvatarQuery";
-import { UsernameValidationRule } from "@models/validation/UsernameValidationRule";
-import { ValidationRule } from "@models/validation/ValidationRule";
-import { Validator } from "@models/validation/Validator";
+import { DeleteAvatarQuery } from "@api/contracts/uploadAvatar/DeleteAvatarQuery.js";
+import { UsernameValidationRule } from "@models/validation/UsernameValidationRule.js";
+import { ValidationRule } from "@models/validation/ValidationRule.js";
+import { Validator } from "@models/validation/Validator.js";
 
 export class DeleteAvatarQueryValidator extends Validator<DeleteAvatarQuery> {
 

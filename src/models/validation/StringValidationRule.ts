@@ -1,4 +1,4 @@
-import { ValidationRule } from "@models/validation/ValidationRule";
+import { ValidationRule } from "@models/validation/ValidationRule.js";
 
 export class StringValidationRule extends ValidationRule<unknown> {
     public constructor(notEmpty: boolean = false, invalidMsg?: string, validMsg?: string) {

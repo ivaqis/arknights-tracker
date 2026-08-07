@@ -1,7 +1,7 @@
-import { ResponseBody } from "@api/contracts/ResponseBody";
-import { UserExistQuery } from "@api/contracts/userExist/UserExistQuery";
-import { RequestValidator } from "@api/middleware/validators/RequestValidator";
-import { UserExistQueryValidator } from "@api/middleware/validators/userExist/UserExistQueryValidator";
+import { ResponseBody } from "@api/contracts/ResponseBody.js";
+import { UserExistQuery } from "@api/contracts/userExist/UserExistQuery.js";
+import { RequestValidator } from "@api/middleware/validators/RequestValidator.js";
+import { UserExistQueryValidator } from "@api/middleware/validators/userExist/UserExistQueryValidator.js";
 import e from "express";
 
 export class UserExistRequestValidator extends RequestValidator<{}, undefined, UserExistQuery> {

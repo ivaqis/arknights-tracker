@@ -1,5 +1,5 @@
-import { URLRequestParams } from "@models/urlParams/URLRequestParams";
-import { SkportDetailURLParams } from "@services/skportDetailFetcher/contracts/SkportDetailURLParams";
+import { URLRequestParams } from "@models/urlParams/URLRequestParams.js";
+import { SkportDetailURLParams } from "@services/skportDetailFetcher/contracts/SkportDetailURLParams.js";
 
 export class DetailRequestParams extends URLRequestParams {
     private readonly _roleId: string;

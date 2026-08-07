@@ -1,5 +1,5 @@
-import { UserBannerStatRecord } from "@database/records/UserBannerStatRecord";
-import { UserWeaponBannerPullsRecord } from "@database/records/UserWeaponBannerPullsRecord";
+import { UserBannerStatRecord } from "@database/records/UserBannerStatRecord.js";
+import { UserWeaponBannerPullsRecord } from "@database/records/UserWeaponBannerPullsRecord.js";
 
 export interface UserWeaponBannerData {
     profileId: bigint;

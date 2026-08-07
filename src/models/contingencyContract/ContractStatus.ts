@@ -1,6 +1,6 @@
-import { logger } from "@/logger";
-import { ContractStatusData } from "@services/skportDetailFetcher/contracts/ContractStatusData";
-import { contractNameRecords } from "@staticModels/instances";
+import { logger } from "@/logger.js";
+import { ContractStatusData } from "@services/skportDetailFetcher/contracts/ContractStatusData.js";
+import { contractNameRecords } from "@staticModels/instances.js";
 
 export class ContractStatus {
     private readonly _id: string;

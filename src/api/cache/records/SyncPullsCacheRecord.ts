@@ -1,6 +1,6 @@
-import { BannerTokenId } from "@models/bannerTokenId/BannerTokenId";
-import { BannersPulls } from "@models/pulls/BannersPulls";
-import { StablePullId } from "@models/stablePullId/StablePullId";
+import { BannerTokenId } from "@models/bannerTokenId/BannerTokenId.js";
+import { BannersPulls } from "@models/pulls/BannersPulls.js";
+import { StablePullId } from "@models/stablePullId/StablePullId.js";
 
 export interface SyncPullsCacheRecord {
     profileId: string | null;

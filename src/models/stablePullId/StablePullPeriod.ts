@@ -1,12 +1,12 @@
-import { BannerType } from "@models/banners/BannerType";
-import { CharPull } from "@models/pulls/CharPull";
-import { Pull } from "@models/pulls/Pull";
-import { WeaponPull } from "@models/pulls/WeaponPull";
-import { GroupedPullsByDate } from "@models/stablePullId/GroupedPullsByDate";
-import { GroupedPullsByPeriod } from "@models/stablePullId/GroupedPullsByPeriod";
-import { PeriodPulls } from "@models/stablePullId/PeriodPulls";
-import { StablePullId } from "@models/stablePullId/StablePullId";
-import { getDayOfWeekStartsWithMonday, getWeek } from "@utils/dateUtils";
+import { BannerType } from "@models/banners/BannerType.js";
+import { CharPull } from "@models/pulls/CharPull.js";
+import { Pull } from "@models/pulls/Pull.js";
+import { WeaponPull } from "@models/pulls/WeaponPull.js";
+import { GroupedPullsByDate } from "@models/stablePullId/GroupedPullsByDate.js";
+import { GroupedPullsByPeriod } from "@models/stablePullId/GroupedPullsByPeriod.js";
+import { PeriodPulls } from "@models/stablePullId/PeriodPulls.js";
+import { StablePullId } from "@models/stablePullId/StablePullId.js";
+import { getDayOfWeekStartsWithMonday, getWeek } from "@utils/dateUtils.js";
 
 export class StablePullPeriod {
     private readonly _periodNumber: number;

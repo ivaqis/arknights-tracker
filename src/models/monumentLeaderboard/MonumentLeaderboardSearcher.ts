@@ -1,12 +1,12 @@
-import { database } from "@/serviceInstances";
-import { Database } from "@database/Database";
-import { MonumentFilters } from "@database/MonumentFilters";
-import { UserMonumentLeaderboardRecord } from "@database/records/UserMonumentLeaderboardRecord";
-import { MonumentLeaderboardGroupRecord } from "@models/monumentLeaderboard/MonumentLeaderboardGroupRecord";
-import { MonumentLeaderboardRecord } from "@models/monumentLeaderboard/MonumentLeaderboardRecord";
-import { MonumentLeaderboardSortField } from "@models/monumentLeaderboard/MonumentLeaderboardSortField";
-import { SortOrder } from "@models/SortOrder";
-import { monumentGroupRecords } from "@staticModels/instances";
+import { database } from "@/serviceInstances.js";
+import { Database } from "@database/Database.js";
+import { MonumentFilters } from "@database/MonumentFilters.js";
+import { UserMonumentLeaderboardRecord } from "@database/records/UserMonumentLeaderboardRecord.js";
+import { MonumentLeaderboardGroupRecord } from "@models/monumentLeaderboard/MonumentLeaderboardGroupRecord.js";
+import { MonumentLeaderboardRecord } from "@models/monumentLeaderboard/MonumentLeaderboardRecord.js";
+import { MonumentLeaderboardSortField } from "@models/monumentLeaderboard/MonumentLeaderboardSortField.js";
+import { SortOrder } from "@models/SortOrder.js";
+import { monumentGroupRecords } from "@staticModels/instances.js";
 
 export class MonumentLeaderboardSearcher {
     private readonly _database: Database = database;

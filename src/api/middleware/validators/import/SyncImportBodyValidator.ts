@@ -1,6 +1,6 @@
-import { SyncImportRequest } from "@api/contracts/import/SyncImportRequest";
-import { ValidationRule } from "@models/validation/ValidationRule";
-import { Validator } from "@models/validation/Validator";
+import { SyncImportRequest } from "@api/contracts/import/SyncImportRequest.js";
+import { ValidationRule } from "@models/validation/ValidationRule.js";
+import { Validator } from "@models/validation/Validator.js";
 
 export class SyncImportBodyValidator extends Validator<SyncImportRequest> {
 

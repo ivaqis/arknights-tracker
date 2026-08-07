@@ -1,6 +1,6 @@
-import { BannerType } from "@models/banners/BannerType";
-import { CharPullData } from "@services/bannerDataFetcher/entities/CharPullData";
-import { WeaponPullData } from "@services/bannerDataFetcher/entities/WeaponPullData";
+import { BannerType } from "@models/banners/BannerType.js";
+import { CharPullData } from "@services/bannerDataFetcher/entities/CharPullData.js";
+import { WeaponPullData } from "@services/bannerDataFetcher/entities/WeaponPullData.js";
 
 export interface BannersPullsData {
     [BannerType.CHAR_STANDARD]: CharPullData[],

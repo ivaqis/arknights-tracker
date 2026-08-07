@@ -1,4 +1,4 @@
-import { logger } from "@/logger";
+import { logger } from "@/logger.js";
 import { createHash } from "node:crypto";
 
 export class BannerTokenId {

@@ -1,9 +1,9 @@
-import { UserEntity } from "@database/entities/UserEntity";
-import { BooleanRecordField } from "@database/records/recordFields/BooleanRecordField";
-import { DateRecordField } from "@database/records/recordFields/DateRecordField";
-import { NullableStringRecordField } from "@database/records/recordFields/NullableStringRecordField";
-import { NumberRecordField } from "@database/records/recordFields/NumberRecordField";
-import { StringRecordField } from "@database/records/recordFields/StringRecordField";
+import { UserEntity } from "@database/entities/UserEntity.js";
+import { BooleanRecordField } from "@database/records/recordFields/BooleanRecordField.js";
+import { DateRecordField } from "@database/records/recordFields/DateRecordField.js";
+import { NullableStringRecordField } from "@database/records/recordFields/NullableStringRecordField.js";
+import { NumberRecordField } from "@database/records/recordFields/NumberRecordField.js";
+import { StringRecordField } from "@database/records/recordFields/StringRecordField.js";
 
 export class UserRecord {
     private readonly _uid: bigint;

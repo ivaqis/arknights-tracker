@@ -1,4 +1,4 @@
-import { RoleData } from "@services/skportBindingFetcher/contracts/RoleData";
+import { RoleData } from "@services/skportBindingFetcher/contracts/RoleData.js";
 
 export interface AccountData {
     uid: string;

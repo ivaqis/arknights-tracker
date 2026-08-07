@@ -1,4 +1,4 @@
-import { RecordEntity } from "src/database/entities/RecordEntity";
+import { RecordEntity } from "@database/entities/RecordEntity.js";
 
 export interface UserBannerProfileEntity extends RecordEntity {
     profileId: bigint,

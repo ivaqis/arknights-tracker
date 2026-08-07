@@ -1,7 +1,7 @@
-import { BannerPullsIdRecord } from "@database/records/BannerPullsIdRecord";
-import { UserBannerProfileRecord } from "@database/records/UserBannerProfileRecord";
-import { Table } from "@database/tables/Table";
-import { Prisma, PrismaClient } from "@generated/prisma-v2";
+import { BannerPullsIdRecord } from "@database/records/BannerPullsIdRecord.js";
+import { UserBannerProfileRecord } from "@database/records/UserBannerProfileRecord.js";
+import { Table } from "@database/tables/Table.js";
+import { Prisma, PrismaClient } from "@generated/prisma-v2/index.js";
 
 export class BannerPullsIdsTable extends Table<Prisma.BannerPullsIdDelegate> {
 

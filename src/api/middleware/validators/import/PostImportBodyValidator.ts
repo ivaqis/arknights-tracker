@@ -1,7 +1,7 @@
-import { PostImportRequest } from "@api/contracts/import/PostImportRequest";
-import { StringValidationRule } from "@models/validation/StringValidationRule";
-import { ValidationRule } from "@models/validation/ValidationRule";
-import { Validator } from "@models/validation/Validator";
+import { PostImportRequest } from "@api/contracts/import/PostImportRequest.js";
+import { StringValidationRule } from "@models/validation/StringValidationRule.js";
+import { ValidationRule } from "@models/validation/ValidationRule.js";
+import { Validator } from "@models/validation/Validator.js";
 
 export class PostImportBodyValidator extends Validator<PostImportRequest> {
 

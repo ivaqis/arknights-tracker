@@ -1,18 +1,18 @@
-import { authenticator, database } from "@/serviceInstances";
-import { ResponseBody } from "@api/contracts/ResponseBody";
-import { GetUserProfileQuery } from "@api/contracts/userProfile/GetUserProfileQuery";
-import { GetUserProfileResponse } from "@api/contracts/userProfile/GetUserProfileResponse";
-import { IGameProfile } from "@api/contracts/userProfile/IGameProfile";
-import { Controller } from "@api/controllers/Controller";
-import { Database } from "@database/Database";
-import { UserGameProfileRecord } from "@database/records/UserGameProfileRecord";
-import { UserRecord } from "@database/records/UserRecord";
-import { ContractRecord } from "@models/contingencyContract/ContractRecord";
-import { GameProfileEntity } from "@models/gameProfile/entities/GameProfileEntity";
-import { PullProfileEntity } from "@models/pullProfile/entities/PullProfileEntity";
-import { PullProfileSearcher } from "@models/pullProfile/PullProfileSearcher";
-import { Authenticator } from "@services/auth/Authenticator";
-import { crisisContractRecords } from "@staticModels/instances";
+import { authenticator, database } from "@/serviceInstances.js";
+import { ResponseBody } from "@api/contracts/ResponseBody.js";
+import { GetUserProfileQuery } from "@api/contracts/userProfile/GetUserProfileQuery.js";
+import { GetUserProfileResponse } from "@api/contracts/userProfile/GetUserProfileResponse.js";
+import { IGameProfile } from "@api/contracts/userProfile/IGameProfile.js";
+import { Controller } from "@api/controllers/Controller.js";
+import { Database } from "@database/Database.js";
+import { UserGameProfileRecord } from "@database/records/UserGameProfileRecord.js";
+import { UserRecord } from "@database/records/UserRecord.js";
+import { ContractRecord } from "@models/contingencyContract/ContractRecord.js";
+import { GameProfileEntity } from "@models/gameProfile/entities/GameProfileEntity.js";
+import { PullProfileEntity } from "@models/pullProfile/entities/PullProfileEntity.js";
+import { PullProfileSearcher } from "@models/pullProfile/PullProfileSearcher.js";
+import { Authenticator } from "@services/auth/Authenticator.js";
+import { crisisContractRecords } from "@staticModels/instances.js";
 import e from "express";
 
 export class GetUserProfile extends Controller<

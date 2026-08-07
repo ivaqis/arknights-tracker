@@ -1,4 +1,4 @@
-import { Validator } from "@models/validation/Validator";
+import { Validator } from "@models/validation/Validator.js";
 
 export interface RequestValidatorConstructors<
     Params = {},

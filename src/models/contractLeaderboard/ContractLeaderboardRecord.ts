@@ -1,7 +1,7 @@
-import { UserContractLeaderboardRecord } from "@database/records/UserContractLeaderboardRecord";
-import { ContractLeaderboardChar } from "@models/contractLeaderboard/ContractLeaderboardChar";
-import { ContractLeaderboardRecordEntity } from "@models/contractLeaderboard/entities/ContractLeaderboardRecordEntity";
-import { IEntityClass } from "@models/IEntityClass";
+import { UserContractLeaderboardRecord } from "@database/records/UserContractLeaderboardRecord.js";
+import { ContractLeaderboardChar } from "@models/contractLeaderboard/ContractLeaderboardChar.js";
+import { ContractLeaderboardRecordEntity } from "@models/contractLeaderboard/entities/ContractLeaderboardRecordEntity.js";
+import { IEntityClass } from "@models/IEntityClass.js";
 
 export class ContractLeaderboardRecord implements IEntityClass<ContractLeaderboardRecordEntity> {
     private readonly _recordId: string;

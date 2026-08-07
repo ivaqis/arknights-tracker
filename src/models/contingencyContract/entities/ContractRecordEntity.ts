@@ -1,4 +1,4 @@
-import { ContractCharEntity } from "@models/contingencyContract/entities/ContractCharEntity";
+import { ContractCharEntity } from "@models/contingencyContract/entities/ContractCharEntity.js";
 
 export interface ContractRecordEntity {
     recordId: string;

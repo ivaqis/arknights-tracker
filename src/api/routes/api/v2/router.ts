@@ -1,9 +1,9 @@
-import { adminRouter } from "@api/routes/api/v2/admin/router";
-import { globalRouter } from "@api/routes/api/v2/global/router";
-import { importRouter } from "@api/routes/api/v2/import/router";
-import { leaderboardRouter } from "@api/routes/api/v2/leaderboard/router";
-import { rankingsRouter } from "@api/routes/api/v2/rankings/router";
-import { userRouter } from "@api/routes/api/v2/user/router";
+import { adminRouter } from "@api/routes/api/v2/admin/router.js";
+import { globalRouter } from "@api/routes/api/v2/global/router.js";
+import { importRouter } from "@api/routes/api/v2/import/router.js";
+import { leaderboardRouter } from "@api/routes/api/v2/leaderboard/router.js";
+import { rankingsRouter } from "@api/routes/api/v2/rankings/router.js";
+import { userRouter } from "@api/routes/api/v2/user/router.js";
 import { Router } from "express";
 
 export const apiV2Router = Router();

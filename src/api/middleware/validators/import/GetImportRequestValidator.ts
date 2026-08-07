@@ -1,7 +1,7 @@
-import { GetImportQuery } from "@api/contracts/import/GetImportQuery";
-import { ResponseBody } from "@api/contracts/ResponseBody";
-import { GetImportQueryValidator } from "@api/middleware/validators/import/GetImportQueryValidator";
-import { RequestValidator } from "@api/middleware/validators/RequestValidator";
+import { GetImportQuery } from "@api/contracts/import/GetImportQuery.js";
+import { ResponseBody } from "@api/contracts/ResponseBody.js";
+import { GetImportQueryValidator } from "@api/middleware/validators/import/GetImportQueryValidator.js";
+import { RequestValidator } from "@api/middleware/validators/RequestValidator.js";
 import e from "express";
 
 export class GetImportRequestValidator extends RequestValidator<{}, undefined, GetImportQuery> {

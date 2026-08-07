@@ -1,7 +1,7 @@
-import { Amount } from "@models/Amount";
+import { Amount } from "@models/Amount.js";
 import {
     MonumentLeaderboardGroupRunRecordEntity
-} from "@models/monumentLeaderboard/entities/MonumentLeaderboardGroupRunRecordEntity";
+} from "@models/monumentLeaderboard/entities/MonumentLeaderboardGroupRunRecordEntity.js";
 
 export interface GetMonumentGroupListResponse {
     list: MonumentLeaderboardGroupRunRecordEntity[];

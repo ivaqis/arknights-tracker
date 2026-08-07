@@ -1,7 +1,7 @@
-import { ContractCharacter } from "@models/contingencyContract/ContractCharacter";
-import { ContractLeaderboardWeapon } from "@models/contractLeaderboard/ContractLeaderboardWeapon";
-import { ContractLeaderboardCharEntity } from "@models/contractLeaderboard/entities/ContractLeaderboardCharEntity";
-import { IEntityClass } from "@models/IEntityClass";
+import { ContractCharacter } from "@models/contingencyContract/ContractCharacter.js";
+import { ContractLeaderboardWeapon } from "@models/contractLeaderboard/ContractLeaderboardWeapon.js";
+import { ContractLeaderboardCharEntity } from "@models/contractLeaderboard/entities/ContractLeaderboardCharEntity.js";
+import { IEntityClass } from "@models/IEntityClass.js";
 
 export class ContractLeaderboardChar implements IEntityClass<ContractLeaderboardCharEntity> {
     private readonly _id: string;

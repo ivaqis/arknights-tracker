@@ -1,7 +1,7 @@
-import { CharSkillEntity } from "@models/gameProfile/entities/CharSkillEntity";
-import { IEntityClass } from "@models/IEntityClass";
-import { SkillData } from "@services/skportDetailFetcher/contracts/SkillData";
-import { UserSkillData } from "@services/skportDetailFetcher/contracts/UserSkillData";
+import { CharSkillEntity } from "@models/gameProfile/entities/CharSkillEntity.js";
+import { IEntityClass } from "@models/IEntityClass.js";
+import { SkillData } from "@services/skportDetailFetcher/contracts/SkillData.js";
+import { UserSkillData } from "@services/skportDetailFetcher/contracts/UserSkillData.js";
 
 export class CharSkill implements IEntityClass<CharSkillEntity> {
     private readonly _type: string;

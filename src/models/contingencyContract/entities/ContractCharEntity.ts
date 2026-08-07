@@ -1,5 +1,5 @@
-import { ContractEquipEntity } from "@models/contingencyContract/entities/ContractEquipEntity";
-import { ContractWeaponEntity } from "@models/contingencyContract/entities/ContractWeaponEntity";
+import { ContractEquipEntity } from "@models/contingencyContract/entities/ContractEquipEntity.js";
+import { ContractWeaponEntity } from "@models/contingencyContract/entities/ContractWeaponEntity.js";
 
 export interface ContractCharEntity {
     id: string;

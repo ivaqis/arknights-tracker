@@ -1,7 +1,7 @@
-import { ResponseBody } from "@api/contracts/ResponseBody";
-import { CreateUserProfileRequest } from "@api/contracts/userProfile/CreateUserProfileRequest";
-import { RequestValidator } from "@api/middleware/validators/RequestValidator";
-import { CreateUserProfileBodyValidator } from "@api/middleware/validators/userProfile/CreateUserProfileBodyValidator";
+import { ResponseBody } from "@api/contracts/ResponseBody.js";
+import { CreateUserProfileRequest } from "@api/contracts/userProfile/CreateUserProfileRequest.js";
+import { RequestValidator } from "@api/middleware/validators/RequestValidator.js";
+import { CreateUserProfileBodyValidator } from "@api/middleware/validators/userProfile/CreateUserProfileBodyValidator.js";
 import e from "express";
 
 export class CreateUserProfileRequestValidator extends RequestValidator<

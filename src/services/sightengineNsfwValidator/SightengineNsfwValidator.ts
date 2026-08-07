@@ -1,8 +1,8 @@
-import { logger } from "@/logger";
-import { ImageValidator } from "@services/imageValidator/ImageValidator";
-import { IService } from "@services/IService";
-import { SightengineResponse } from "@services/sightengineNsfwValidator/contracts/SightengineResponse";
-import { NsfwCheckResult } from "@services/sightengineNsfwValidator/NsfwCheckResult";
+import { logger } from "@/logger.js";
+import { ImageValidator } from "@services/imageValidator/ImageValidator.js";
+import { IService } from "@services/IService.js";
+import { SightengineResponse } from "@services/sightengineNsfwValidator/contracts/SightengineResponse.js";
+import { NsfwCheckResult } from "@services/sightengineNsfwValidator/NsfwCheckResult.js";
 import axios, { AxiosRequestConfig, AxiosResponse } from "axios";
 import { Blob } from "node:buffer";
 

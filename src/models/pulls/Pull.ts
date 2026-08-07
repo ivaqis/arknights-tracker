@@ -1,4 +1,4 @@
-import { StablePull } from "@models/stablePullId/StablePull";
+import { StablePull } from "@models/stablePullId/StablePull.js";
 
 export abstract class Pull {
     private readonly _bannerId: string;

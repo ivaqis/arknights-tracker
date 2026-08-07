@@ -1,13 +1,13 @@
-import { BannerType } from "@models/banners/BannerType";
-import { BannersPulls } from "@models/pulls/BannersPulls";
-import { CharBannerRequestParams } from "@models/urlParams/banners/CharBannerRequestParams";
-import { WeaponBannerRequestParams } from "@models/urlParams/banners/WeaponBannerRequestParams";
-import { BannerURLParams } from "@services/bannerDataFetcher/contracts/BannerURLParams";
-import { CharBannerURLParams } from "@services/bannerDataFetcher/contracts/CharBannerURLParams";
-import { WeaponBannerURLParams } from "@services/bannerDataFetcher/contracts/WeaponBannerURLParams";
-import { CharPullData } from "@services/bannerDataFetcher/entities/CharPullData";
-import { WeaponPullData } from "@services/bannerDataFetcher/entities/WeaponPullData";
-import { PullsFetcher } from "@services/bannerDataFetcher/PullsFetcher";
+import { BannerType } from "@models/banners/BannerType.js";
+import { BannersPulls } from "@models/pulls/BannersPulls.js";
+import { CharBannerRequestParams } from "@models/urlParams/banners/CharBannerRequestParams.js";
+import { WeaponBannerRequestParams } from "@models/urlParams/banners/WeaponBannerRequestParams.js";
+import { BannerURLParams } from "@services/bannerDataFetcher/contracts/BannerURLParams.js";
+import { CharBannerURLParams } from "@services/bannerDataFetcher/contracts/CharBannerURLParams.js";
+import { WeaponBannerURLParams } from "@services/bannerDataFetcher/contracts/WeaponBannerURLParams.js";
+import { CharPullData } from "@services/bannerDataFetcher/entities/CharPullData.js";
+import { WeaponPullData } from "@services/bannerDataFetcher/entities/WeaponPullData.js";
+import { PullsFetcher } from "@services/bannerDataFetcher/PullsFetcher.js";
 
 export class BannerDataFetcher {
     public static readonly LANG = "en-us";

@@ -1,8 +1,8 @@
-import { DeleteGameAccountQuery } from "@api/contracts/gameAccount/DeleteGameAccountQuery";
-import { GameUidValidationRule } from "@models/validation/GameUidValidationRule";
-import { UsernameValidationRule } from "@models/validation/UsernameValidationRule";
-import { ValidationRule } from "@models/validation/ValidationRule";
-import { Validator } from "@models/validation/Validator";
+import { DeleteGameAccountQuery } from "@api/contracts/gameAccount/DeleteGameAccountQuery.js";
+import { GameUidValidationRule } from "@models/validation/GameUidValidationRule.js";
+import { UsernameValidationRule } from "@models/validation/UsernameValidationRule.js";
+import { ValidationRule } from "@models/validation/ValidationRule.js";
+import { Validator } from "@models/validation/Validator.js";
 
 export class DeleteGameAccountQueryValidator extends Validator<DeleteGameAccountQuery> {
 

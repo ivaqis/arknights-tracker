@@ -1,7 +1,7 @@
-import { GlobalStatsQuery } from "@api/contracts/globalStats/GlobalStatsQuery";
-import { ResponseBody } from "@api/contracts/ResponseBody";
-import { GlobalStatsQueryValidator } from "@api/middleware/validators/globalStats/GlobalStatsQueryValidator";
-import { RequestValidator } from "@api/middleware/validators/RequestValidator";
+import { GlobalStatsQuery } from "@api/contracts/globalStats/GlobalStatsQuery.js";
+import { ResponseBody } from "@api/contracts/ResponseBody.js";
+import { GlobalStatsQueryValidator } from "@api/middleware/validators/globalStats/GlobalStatsQueryValidator.js";
+import { RequestValidator } from "@api/middleware/validators/RequestValidator.js";
 import e from "express";
 
 export class GlobalStatsRequestValidator extends RequestValidator<{}, undefined, GlobalStatsQuery> {

@@ -1,8 +1,8 @@
-import { EquipData } from "@services/skportDetailFetcher/contracts/EquipData";
-import { SkillData } from "@services/skportDetailFetcher/contracts/SkillData";
-import { UserSkillData } from "@services/skportDetailFetcher/contracts/UserSkillData";
-import { TacticalItemData } from "@services/skportDetailFetcher/contracts/TacticalItemData";
-import { WeaponData } from "@services/skportDetailFetcher/contracts/WeaponData";
+import { EquipData } from "@services/skportDetailFetcher/contracts/EquipData.js";
+import { SkillData } from "@services/skportDetailFetcher/contracts/SkillData.js";
+import { UserSkillData } from "@services/skportDetailFetcher/contracts/UserSkillData.js";
+import { TacticalItemData } from "@services/skportDetailFetcher/contracts/TacticalItemData.js";
+import { WeaponData } from "@services/skportDetailFetcher/contracts/WeaponData.js";
 
 export interface CharData {
     charData: {

@@ -1,8 +1,8 @@
-import { logger } from "@/logger";
-import { TacticalItemEntity } from "@models/gameProfile/entities/TacticalItemEntity";
-import { IEntityClass } from "@models/IEntityClass";
-import { TacticalItemData } from "@services/skportDetailFetcher/contracts/TacticalItemData";
-import { tacticalItemNameRecords } from "@staticModels/instances";
+import { logger } from "@/logger.js";
+import { TacticalItemEntity } from "@models/gameProfile/entities/TacticalItemEntity.js";
+import { IEntityClass } from "@models/IEntityClass.js";
+import { TacticalItemData } from "@services/skportDetailFetcher/contracts/TacticalItemData.js";
+import { tacticalItemNameRecords } from "@staticModels/instances.js";
 
 export class TacticalItem implements IEntityClass<TacticalItemEntity> {
     private readonly _id: string;

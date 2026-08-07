@@ -1,5 +1,5 @@
-import { UserBannerStatRecord } from "@database/records/UserBannerStatRecord";
-import { UserCharBannerPullsRecord } from "@database/records/UserCharBannerPullsRecord";
+import { UserBannerStatRecord } from "@database/records/UserBannerStatRecord.js";
+import { UserCharBannerPullsRecord } from "@database/records/UserCharBannerPullsRecord.js";
 
 export interface UserCharBannerData {
     profileId: bigint;

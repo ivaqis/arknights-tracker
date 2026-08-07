@@ -1,7 +1,7 @@
-import { ResponseBody } from "@api/contracts/ResponseBody";
-import { DeleteAvatarQuery } from "@api/contracts/uploadAvatar/DeleteAvatarQuery";
-import { RequestValidator } from "@api/middleware/validators/RequestValidator";
-import { DeleteAvatarQueryValidator } from "@api/middleware/validators/uploadAvatar/DeleteAvatarQueryValidator";
+import { ResponseBody } from "@api/contracts/ResponseBody.js";
+import { DeleteAvatarQuery } from "@api/contracts/uploadAvatar/DeleteAvatarQuery.js";
+import { RequestValidator } from "@api/middleware/validators/RequestValidator.js";
+import { DeleteAvatarQueryValidator } from "@api/middleware/validators/uploadAvatar/DeleteAvatarQueryValidator.js";
 import e from "express";
 
 export class DeleteAvatarRequestValidator extends RequestValidator<{}, {}, DeleteAvatarQuery> {

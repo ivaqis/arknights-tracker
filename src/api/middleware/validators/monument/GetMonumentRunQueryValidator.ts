@@ -1,7 +1,7 @@
-import { GetMonumentRunQuery } from "@api/contracts/monument/GetMonumentRunQuery";
-import { StringValidationRule } from "@models/validation/StringValidationRule";
-import { ValidationRule } from "@models/validation/ValidationRule";
-import { Validator } from "@models/validation/Validator";
+import { GetMonumentRunQuery } from "@api/contracts/monument/GetMonumentRunQuery.js";
+import { StringValidationRule } from "@models/validation/StringValidationRule.js";
+import { ValidationRule } from "@models/validation/ValidationRule.js";
+import { Validator } from "@models/validation/Validator.js";
 
 export class GetMonumentRunQueryValidator extends Validator<GetMonumentRunQuery> {
 

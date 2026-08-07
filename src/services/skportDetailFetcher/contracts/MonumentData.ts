@@ -1,4 +1,4 @@
-import { MonumentDungeonGroupData } from "@services/skportDetailFetcher/contracts/MonumentDungeonGroupData";
+import { MonumentDungeonGroupData } from "@services/skportDetailFetcher/contracts/MonumentDungeonGroupData.js";
 
 export interface MonumentData {
     id: string;

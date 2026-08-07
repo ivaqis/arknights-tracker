@@ -1,11 +1,11 @@
-import { config } from "@/config";
-import { ResponseBody } from "@api/contracts/ResponseBody";
-import { Database } from "@database/Database";
-import { AuthType } from "@services/auth/AuthType";
-import { Credentials } from "@services/auth/Credentials";
-import { FirebaseAuthResult } from "@services/auth/FirebaseAuthResult";
-import { FirebaseAuthenticator } from "@services/firebaseAuth/FirebaseAuthenticator";
-import { IService } from "@services/IService";
+import { config } from "@/config.js";
+import { ResponseBody } from "@api/contracts/ResponseBody.js";
+import { Database } from "@database/Database.js";
+import { AuthType } from "@services/auth/AuthType.js";
+import { Credentials } from "@services/auth/Credentials.js";
+import { FirebaseAuthResult } from "@services/auth/FirebaseAuthResult.js";
+import { FirebaseAuthenticator } from "@services/firebaseAuth/FirebaseAuthenticator.js";
+import { IService } from "@services/IService.js";
 import e from "express";
 import * as core from "express-serve-static-core";
 

@@ -1,4 +1,4 @@
-import { UserMonumentCharacterEntity } from "@database/entities/UserMonumentCharacterEntity";
+import { UserMonumentCharacterEntity } from "@database/entities/UserMonumentCharacterEntity.js";
 
 export class UserMonumentCharacterRecord {
     private readonly _recordId: string;

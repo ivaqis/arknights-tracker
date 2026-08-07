@@ -1,4 +1,4 @@
-import { IGameProfile } from "@api/contracts/userProfile/IGameProfile";
+import { IGameProfile } from "@api/contracts/userProfile/IGameProfile.js";
 
 export interface UpdateUserProfileResponse {
     publicUid: string;

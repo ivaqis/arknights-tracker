@@ -1,5 +1,5 @@
-import { UserMonumentLeaderboardEntity } from "@database/entities/UserMonumentLeaderboardEntity";
-import { MonumentRecord } from "@models/monument/MonumentRecord";
+import { UserMonumentLeaderboardEntity } from "@database/entities/UserMonumentLeaderboardEntity.js";
+import { MonumentRecord } from "@models/monument/MonumentRecord.js";
 
 export class UserMonumentLeaderboardRecord {
     private readonly _id: string;

@@ -1,4 +1,4 @@
-import { ContractLeaderboardCharEntity } from "@models/contractLeaderboard/entities/ContractLeaderboardCharEntity";
+import { ContractLeaderboardCharEntity } from "@models/contractLeaderboard/entities/ContractLeaderboardCharEntity.js";
 
 export interface ContractLeaderboardRecordEntity {
     recordId: string;

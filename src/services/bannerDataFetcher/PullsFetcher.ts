@@ -1,10 +1,10 @@
-import { logger } from "@/logger";
-import { BannerType } from "@models/banners/BannerType";
-import { BannerRequestParams } from "@models/urlParams/banners/BannerRequestParams";
-import { CharBannerRequestParams } from "@models/urlParams/banners/CharBannerRequestParams";
-import { BannerResponse } from "@services/bannerDataFetcher/contracts/BannerResponse";
-import { PullData } from "@services/bannerDataFetcher/entities/PullData";
-import { sleep } from "@utils/asyncUtils";
+import { logger } from "@/logger.js";
+import { BannerType } from "@models/banners/BannerType.js";
+import { BannerRequestParams } from "@models/urlParams/banners/BannerRequestParams.js";
+import { CharBannerRequestParams } from "@models/urlParams/banners/CharBannerRequestParams.js";
+import { BannerResponse } from "@services/bannerDataFetcher/contracts/BannerResponse.js";
+import { PullData } from "@services/bannerDataFetcher/entities/PullData.js";
+import { sleep } from "@utils/asyncUtils.js";
 import axios, { AxiosRequestConfig, AxiosResponse } from "axios";
 
 export class PullsFetcher<T extends PullData, U extends BannerRequestParams> {

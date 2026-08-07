@@ -1,13 +1,13 @@
-import { database } from "@/serviceInstances";
-import { RankingRateQuery } from "@api/contracts/rankings/RankingRateQuery";
-import { RankingRateResponse } from "@api/contracts/rankings/RankingRateResponse";
-import { ResponseBody } from "@api/contracts/ResponseBody";
-import { Controller } from "@api/controllers/Controller";
-import { Database } from "@database/Database";
-import { DbBannerType } from "@models/banners/DbBannerType";
-import { BannerTypeStatEntity } from "@models/pullProfile/entities/BannerTypeStatEntity";
-import { EventBannerTypeStatEntity } from "@models/pullProfile/entities/EventBannerTypeStatEntity";
-import { PullProfileSearcher } from "@models/pullProfile/PullProfileSearcher";
+import { database } from "@/serviceInstances.js";
+import { RankingRateQuery } from "@api/contracts/rankings/RankingRateQuery.js";
+import { RankingRateResponse } from "@api/contracts/rankings/RankingRateResponse.js";
+import { ResponseBody } from "@api/contracts/ResponseBody.js";
+import { Controller } from "@api/controllers/Controller.js";
+import { Database } from "@database/Database.js";
+import { DbBannerType } from "@models/banners/DbBannerType.js";
+import { BannerTypeStatEntity } from "@models/pullProfile/entities/BannerTypeStatEntity.js";
+import { EventBannerTypeStatEntity } from "@models/pullProfile/entities/EventBannerTypeStatEntity.js";
+import { PullProfileSearcher } from "@models/pullProfile/PullProfileSearcher.js";
 import e from "express";
 
 export class RankingRate extends Controller<

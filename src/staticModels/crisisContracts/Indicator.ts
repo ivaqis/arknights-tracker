@@ -1,4 +1,4 @@
-import { IndicatorEntity } from "@staticModels/crisisContracts/IndicatorEntity";
+import { IndicatorEntity } from "@staticModels/crisisContracts/IndicatorEntity.js";
 
 export class Indicator {
     private readonly _id: string;

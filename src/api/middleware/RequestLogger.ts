@@ -1,6 +1,6 @@
-import { logger } from "@/logger";
-import { ResponseBody } from "@api/contracts/ResponseBody";
-import { Middleware } from "@api/middleware/Middleware";
+import { logger } from "@/logger.js";
+import { ResponseBody } from "@api/contracts/ResponseBody.js";
+import { Middleware } from "@api/middleware/Middleware.js";
 import e from "express";
 import * as core from "express-serve-static-core";
 

@@ -1,4 +1,4 @@
-import { ExcludeRange } from "@models/ExcludeRange";
+import { ExcludeRange } from "@models/ExcludeRange.js";
 
 export interface BannerTypeStatEntity {
     totalPulls: {

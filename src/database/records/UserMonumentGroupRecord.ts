@@ -1,4 +1,4 @@
-import { UserMonumentGroupEntity } from "@database/entities/UserMonumentGroupEntity";
+import { UserMonumentGroupEntity } from "@database/entities/UserMonumentGroupEntity.js";
 
 export class UserMonumentGroupRecord {
     private readonly _id: string;

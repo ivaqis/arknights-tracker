@@ -1,4 +1,4 @@
-import { Pull } from "@models/pulls/Pull";
+import { Pull } from "@models/pulls/Pull.js";
 
 export interface PeriodPulls<T extends Pull> {
     0: T[]; // monday

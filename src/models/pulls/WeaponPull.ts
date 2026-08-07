@@ -1,8 +1,8 @@
-import { IEntityClass } from "@models/IEntityClass";
-import { WeaponPullEntity } from "@models/pulls/entities/WeaponPullEntity";
-import { Pull } from "@models/pulls/Pull";
-import { StablePull } from "@models/stablePullId/StablePull";
-import { WeaponPullData } from "@services/bannerDataFetcher/entities/WeaponPullData";
+import { IEntityClass } from "@models/IEntityClass.js";
+import { WeaponPullEntity } from "@models/pulls/entities/WeaponPullEntity.js";
+import { Pull } from "@models/pulls/Pull.js";
+import { StablePull } from "@models/stablePullId/StablePull.js";
+import { WeaponPullData } from "@services/bannerDataFetcher/entities/WeaponPullData.js";
 
 export class WeaponPull extends Pull implements IEntityClass<WeaponPullEntity> {
     private readonly _weaponId: string;

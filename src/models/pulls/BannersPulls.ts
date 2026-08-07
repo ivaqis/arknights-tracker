@@ -1,11 +1,11 @@
-import { BannerType } from "@models/banners/BannerType";
-import { IEntityClass } from "@models/IEntityClass";
-import { CharPull } from "@models/pulls/CharPull";
-import { BannersPullsEntity } from "@models/pulls/entities/BannersPullsEntity";
-import { Pull } from "@models/pulls/Pull";
-import { WeaponPull } from "@models/pulls/WeaponPull";
-import { StablePullPeriod } from "@models/stablePullId/StablePullPeriod";
-import { BannersPullsData } from "@services/bannerDataFetcher/BannersPullsData";
+import { BannerType } from "@models/banners/BannerType.js";
+import { IEntityClass } from "@models/IEntityClass.js";
+import { CharPull } from "@models/pulls/CharPull.js";
+import { BannersPullsEntity } from "@models/pulls/entities/BannersPullsEntity.js";
+import { Pull } from "@models/pulls/Pull.js";
+import { WeaponPull } from "@models/pulls/WeaponPull.js";
+import { StablePullPeriod } from "@models/stablePullId/StablePullPeriod.js";
+import { BannersPullsData } from "@services/bannerDataFetcher/BannersPullsData.js";
 
 export class BannersPulls implements IEntityClass<BannersPullsEntity> {
     private readonly _specialPulls: CharPull[];

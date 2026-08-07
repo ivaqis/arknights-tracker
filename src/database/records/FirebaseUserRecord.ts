@@ -1,4 +1,4 @@
-import { FirebaseUserEntity } from "@database/entities/FirebaseUserEntity";
+import { FirebaseUserEntity } from "@database/entities/FirebaseUserEntity.js";
 
 export class FirebaseUserRecord {
     private readonly _firebaseUid: string;

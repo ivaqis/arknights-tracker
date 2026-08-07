@@ -1,4 +1,4 @@
-import { ValidationRule } from "@models/validation/ValidationRule";
+import { ValidationRule } from "@models/validation/ValidationRule.js";
 
 export class ListValidationRule<T> extends ValidationRule<T[]> {
     public constructor(rule: ValidationRule<T>, invalidMsg?: string, validMsg?: string) {

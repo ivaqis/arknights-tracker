@@ -1,6 +1,6 @@
-import { logger } from "@/logger";
-import { ImageValidator } from "@services/imageValidator/ImageValidator";
-import { IService } from "@services/IService";
+import { logger } from "@/logger.js";
+import { ImageValidator } from "@services/imageValidator/ImageValidator.js";
+import { IService } from "@services/IService.js";
 import { randomUUID, UUID } from "node:crypto";
 import * as fs from "node:fs";
 import path from "node:path";

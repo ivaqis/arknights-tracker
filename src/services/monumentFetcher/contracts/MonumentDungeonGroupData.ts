@@ -1,4 +1,4 @@
-import { MonumentDungeonData } from "@services/monumentFetcher/contracts/MonumentDungeonData";
+import { MonumentDungeonData } from "@services/monumentFetcher/contracts/MonumentDungeonData.js";
 
 export interface MonumentDungeonGroupData {
     normalDungeon: MonumentDungeonData;

@@ -1,5 +1,5 @@
-import { GlobalBannerTimelineEntity } from "@database/entities/GlobalBannerTimelineEntity";
-import { NumberRecordField } from "@database/records/recordFields/NumberRecordField";
+import { GlobalBannerTimelineEntity } from "@database/entities/GlobalBannerTimelineEntity.js";
+import { NumberRecordField } from "@database/records/recordFields/NumberRecordField.js";
 
 export class GlobalBannerTimelineRecord {
     private readonly _bannerId: string;

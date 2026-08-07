@@ -1,7 +1,7 @@
-import { ContractRecordData } from "@services/contractFetcher/contracts/ContractRecordData";
-import { EnemyData } from "@services/contractFetcher/contracts/EnemyData";
-import { IndicatorData } from "@services/contractFetcher/contracts/IndicatorData";
-import { ContractStatusData } from "@services/skportDetailFetcher/contracts/ContractStatusData";
+import { ContractRecordData } from "@services/contractFetcher/contracts/ContractRecordData.js";
+import { EnemyData } from "@services/contractFetcher/contracts/EnemyData.js";
+import { IndicatorData } from "@services/contractFetcher/contracts/IndicatorData.js";
+import { ContractStatusData } from "@services/skportDetailFetcher/contracts/ContractStatusData.js";
 
 export interface ContractData {
     status: ContractStatusData;

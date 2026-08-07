@@ -1,9 +1,9 @@
-import { ContractEquip } from "@models/contingencyContract/ContractEquip";
-import { ContractWeapon } from "@models/contingencyContract/ContractWeapon";
-import { ContractCharEntity } from "@models/contingencyContract/entities/ContractCharEntity";
-import { Character } from "@models/gameProfile/Character";
-import { IEntityClass } from "@models/IEntityClass";
-import { CharData } from "@services/contractRecordFetcher/contracts/CharData";
+import { ContractEquip } from "@models/contingencyContract/ContractEquip.js";
+import { ContractWeapon } from "@models/contingencyContract/ContractWeapon.js";
+import { ContractCharEntity } from "@models/contingencyContract/entities/ContractCharEntity.js";
+import { Character } from "@models/gameProfile/Character.js";
+import { IEntityClass } from "@models/IEntityClass.js";
+import { CharData } from "@services/contractRecordFetcher/contracts/CharData.js";
 
 
 export class ContractCharacter implements IEntityClass<ContractCharEntity> {

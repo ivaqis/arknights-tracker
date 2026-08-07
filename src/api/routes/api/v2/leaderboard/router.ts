@@ -1,7 +1,7 @@
-import { authenticator, database, firebase } from "@/serviceInstances";
-import { RequireService } from "@api/middleware/RequireService";
-import { contractRouter } from "@api/routes/api/v2/leaderboard/contract/router";
-import { monumentRouter } from "@api/routes/api/v2/leaderboard/monument/router";
+import { authenticator, database, firebase } from "@/serviceInstances.js";
+import { RequireService } from "@api/middleware/RequireService.js";
+import { contractRouter } from "@api/routes/api/v2/leaderboard/contract/router.js";
+import { monumentRouter } from "@api/routes/api/v2/leaderboard/monument/router.js";
 import { Router } from "express";
 
 export const leaderboardRouter = Router();

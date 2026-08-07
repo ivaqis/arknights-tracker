@@ -1,7 +1,7 @@
-import { BannerType } from "@models/banners/BannerType";
-import { CharPull } from "@models/pulls/CharPull";
-import { WeaponPull } from "@models/pulls/WeaponPull";
-import { PeriodPulls } from "@models/stablePullId/PeriodPulls";
+import { BannerType } from "@models/banners/BannerType.js";
+import { CharPull } from "@models/pulls/CharPull.js";
+import { WeaponPull } from "@models/pulls/WeaponPull.js";
+import { PeriodPulls } from "@models/stablePullId/PeriodPulls.js";
 
 export interface GroupedPullsByPeriod {
     [BannerType.CHAR_STANDARD]: PeriodPulls<CharPull>,

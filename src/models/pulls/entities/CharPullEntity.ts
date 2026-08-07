@@ -1,4 +1,4 @@
-import { PullEntity } from "@models/pulls/entities/PullEntity";
+import { PullEntity } from "@models/pulls/entities/PullEntity.js";
 
 export interface CharPullEntity extends PullEntity {
     charId: string;

@@ -1,17 +1,17 @@
-import { Controller } from "@api/controllers/Controller";
-import { GetMonumentGroupList } from "@api/controllers/monument/GetMonumentGroupList";
-import { GetMonumentGroupRun } from "@api/controllers/monument/GetMonumentGroupRun";
-import { GetMonumentList } from "@api/controllers/monument/GetMonumentList";
-import { GetMonumentRun } from "@api/controllers/monument/GetMonumentRun";
+import { Controller } from "@api/controllers/Controller.js";
+import { GetMonumentGroupList } from "@api/controllers/monument/GetMonumentGroupList.js";
+import { GetMonumentGroupRun } from "@api/controllers/monument/GetMonumentGroupRun.js";
+import { GetMonumentList } from "@api/controllers/monument/GetMonumentList.js";
+import { GetMonumentRun } from "@api/controllers/monument/GetMonumentRun.js";
 import {
     GetMonumentGroupListRequestValidator
-} from "@api/middleware/validators/monument/GetMonumentGroupListRequestValidator";
+} from "@api/middleware/validators/monument/GetMonumentGroupListRequestValidator.js";
 import {
     GetMonumentGroupRunResponseValidator
-} from "@api/middleware/validators/monument/GetMonumentGroupRunResponseValidator";
-import { GetMonumentListRequestValidator } from "@api/middleware/validators/monument/GetMonumentListRequestValidator";
-import { GetMonumentRunRequestValidator } from "@api/middleware/validators/monument/GetMonumentRunRequestValidator";
-import { RequestValidator } from "@api/middleware/validators/RequestValidator";
+} from "@api/middleware/validators/monument/GetMonumentGroupRunResponseValidator.js";
+import { GetMonumentListRequestValidator } from "@api/middleware/validators/monument/GetMonumentListRequestValidator.js";
+import { GetMonumentRunRequestValidator } from "@api/middleware/validators/monument/GetMonumentRunRequestValidator.js";
+import { RequestValidator } from "@api/middleware/validators/RequestValidator.js";
 import { Router } from "express";
 
 export const monumentRouter = Router();

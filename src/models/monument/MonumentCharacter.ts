@@ -1,7 +1,7 @@
-import { Character } from "@models/gameProfile/Character";
-import { IEntityClass } from "@models/IEntityClass";
-import { MonumentCharacterEntity } from "@models/monument/entities/MonumentCharacterEntity";
-import { MonumentCharData } from "@services/monumentFetcher/contracts/MonumentCharData";
+import { Character } from "@models/gameProfile/Character.js";
+import { IEntityClass } from "@models/IEntityClass.js";
+import { MonumentCharacterEntity } from "@models/monument/entities/MonumentCharacterEntity.js";
+import { MonumentCharData } from "@services/monumentFetcher/contracts/MonumentCharData.js";
 
 export class MonumentCharacter implements IEntityClass<MonumentCharacterEntity> {
     private readonly _id: string;

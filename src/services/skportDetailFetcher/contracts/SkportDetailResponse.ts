@@ -1,4 +1,4 @@
-import { DetailData } from "@services/skportDetailFetcher/contracts/DetailData";
+import { DetailData } from "@services/skportDetailFetcher/contracts/DetailData.js";
 
 export interface SkportDetailResponse {
     code: number;

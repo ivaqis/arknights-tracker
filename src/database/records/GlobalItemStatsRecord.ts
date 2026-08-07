@@ -1,5 +1,5 @@
-import { GlobalItemStatsEntity } from "@database/entities/GlobalItemStatsEntity";
-import { NumberRecordField } from "@database/records/recordFields/NumberRecordField";
+import { GlobalItemStatsEntity } from "@database/entities/GlobalItemStatsEntity.js";
+import { NumberRecordField } from "@database/records/recordFields/NumberRecordField.js";
 
 export class GlobalItemStatsRecord {
     private readonly _bannerId: string;

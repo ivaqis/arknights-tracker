@@ -1,7 +1,7 @@
-import { Database } from "@database/Database";
-import { ContractLeaderboardRecord } from "@models/contractLeaderboard/ContractLeaderboardRecord";
-import { ContractLeaderboardSortField } from "@models/contractLeaderboard/ContractLeaderboardSortField";
-import { SortOrder } from "@models/SortOrder";
+import { Database } from "@database/Database.js";
+import { ContractLeaderboardRecord } from "@models/contractLeaderboard/ContractLeaderboardRecord.js";
+import { ContractLeaderboardSortField } from "@models/contractLeaderboard/ContractLeaderboardSortField.js";
+import { SortOrder } from "@models/SortOrder.js";
 
 export class ContractLeaderboardSearcher {
     private readonly _database: Database;

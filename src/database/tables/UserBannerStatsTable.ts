@@ -1,10 +1,10 @@
-import { GlobalBannerStatsEntity } from "@database/entities/GlobalBannerStatsEntity";
-import { UserBannerTypeStatEntity } from "@database/entities/UserBannerTypeStatEntity";
-import { UserBannerStatRecord } from "@database/records/UserBannerStatRecord";
-import { Table } from "@database/tables/Table";
-import { Prisma, PrismaClient } from "@generated/prisma-v2";
-import { DbBannerType } from "@models/banners/DbBannerType";
-import { IncludeRange } from "@models/IncludeRange";
+import { GlobalBannerStatsEntity } from "@database/entities/GlobalBannerStatsEntity.js";
+import { UserBannerTypeStatEntity } from "@database/entities/UserBannerTypeStatEntity.js";
+import { UserBannerStatRecord } from "@database/records/UserBannerStatRecord.js";
+import { Table } from "@database/tables/Table.js";
+import { Prisma, PrismaClient } from "@generated/prisma-v2/index.js";
+import { DbBannerType } from "@models/banners/DbBannerType.js";
+import { IncludeRange } from "@models/IncludeRange.js";
 
 export class UserBannerStatsTable extends Table<Prisma.UserBannerStatDelegate> {
 

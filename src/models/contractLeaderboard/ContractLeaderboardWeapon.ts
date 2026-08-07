@@ -1,6 +1,6 @@
-import { ContractWeapon } from "@models/contingencyContract/ContractWeapon";
-import { ContractLeaderboardWeaponEntity } from "@models/contractLeaderboard/entities/ContractLeaderboardWeaponEntity";
-import { IEntityClass } from "@models/IEntityClass";
+import { ContractWeapon } from "@models/contingencyContract/ContractWeapon.js";
+import { ContractLeaderboardWeaponEntity } from "@models/contractLeaderboard/entities/ContractLeaderboardWeaponEntity.js";
+import { IEntityClass } from "@models/IEntityClass.js";
 
 export class ContractLeaderboardWeapon implements IEntityClass<ContractLeaderboardWeaponEntity> {
     private readonly _id: string;

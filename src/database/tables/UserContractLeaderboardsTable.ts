@@ -1,11 +1,11 @@
-import { UserContractLeaderboardRecord } from "@database/records/UserContractLeaderboardRecord";
-import { UserGameProfileRecord } from "@database/records/UserGameProfileRecord";
-import { UserRecord } from "@database/records/UserRecord";
-import { Table } from "@database/tables/Table";
-import { Prisma, PrismaClient } from "@generated/prisma-v2";
-import { ContractRecord } from "@models/contingencyContract/ContractRecord";
-import { ContractLeaderboardSortField } from "@models/contractLeaderboard/ContractLeaderboardSortField";
-import { SortOrder } from "@models/SortOrder";
+import { UserContractLeaderboardRecord } from "@database/records/UserContractLeaderboardRecord.js";
+import { UserGameProfileRecord } from "@database/records/UserGameProfileRecord.js";
+import { UserRecord } from "@database/records/UserRecord.js";
+import { Table } from "@database/tables/Table.js";
+import { Prisma, PrismaClient } from "@generated/prisma-v2/index.js";
+import { ContractRecord } from "@models/contingencyContract/ContractRecord.js";
+import { ContractLeaderboardSortField } from "@models/contractLeaderboard/ContractLeaderboardSortField.js";
+import { SortOrder } from "@models/SortOrder.js";
 
 export class UserContractLeaderboardsTable extends Table<Prisma.UserContractLeaderboardDelegate> {
     public constructor(prisma: PrismaClient) {

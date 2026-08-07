@@ -1,9 +1,9 @@
-import { authenticator, database } from "@/serviceInstances";
-import { GetImportErrorsResponse } from "@api/contracts/importErrors/GetImportErrorsResponse";
-import { ResponseBody } from "@api/contracts/ResponseBody";
-import { Controller } from "@api/controllers/Controller";
-import { Database } from "@database/Database";
-import { Authenticator } from "@services/auth/Authenticator";
+import { authenticator, database } from "@/serviceInstances.js";
+import { GetImportErrorsResponse } from "@api/contracts/importErrors/GetImportErrorsResponse.js";
+import { ResponseBody } from "@api/contracts/ResponseBody.js";
+import { Controller } from "@api/controllers/Controller.js";
+import { Database } from "@database/Database.js";
+import { Authenticator } from "@services/auth/Authenticator.js";
 import e from "express";
 
 export class GetImportErrors extends Controller<

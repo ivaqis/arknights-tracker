@@ -1,8 +1,8 @@
-import { RankingRateQuery } from "@api/contracts/rankings/RankingRateQuery";
-import { DbBannerType } from "@models/banners/DbBannerType";
-import { BooleanStringValidationRule } from "@models/validation/BooleanStringValidationRule";
-import { ValidationRule } from "@models/validation/ValidationRule";
-import { Validator } from "@models/validation/Validator";
+import { RankingRateQuery } from "@api/contracts/rankings/RankingRateQuery.js";
+import { DbBannerType } from "@models/banners/DbBannerType.js";
+import { BooleanStringValidationRule } from "@models/validation/BooleanStringValidationRule.js";
+import { ValidationRule } from "@models/validation/ValidationRule.js";
+import { Validator } from "@models/validation/Validator.js";
 
 export class RankingRateQueryValidator extends Validator<RankingRateQuery> {
     private static readonly NUMBER_REGEX = /^\d+$/;

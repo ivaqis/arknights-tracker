@@ -1,5 +1,5 @@
-import { MonumentGroupEntity } from "@staticModels/monument/MonumentGroupEntity";
-import { RecordsModel } from "@staticModels/RecordsModel";
+import { MonumentGroupEntity } from "@staticModels/monument/MonumentGroupEntity.js";
+import { RecordsModel } from "@staticModels/RecordsModel.js";
 
 export class MonumentGroupRecords extends RecordsModel<MonumentGroupEntity> {
     private readonly _hardDungeon2GroupMap: Map<string, string>;

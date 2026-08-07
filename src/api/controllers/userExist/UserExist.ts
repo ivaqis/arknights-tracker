@@ -1,9 +1,9 @@
-import { database } from "@/serviceInstances";
-import { ResponseBody } from "@api/contracts/ResponseBody";
-import { UserExistQuery } from "@api/contracts/userExist/UserExistQuery";
-import { UserExistResponse } from "@api/contracts/userExist/UserExistResponse";
-import { Controller } from "@api/controllers/Controller";
-import { Database } from "@database/Database";
+import { database } from "@/serviceInstances.js";
+import { ResponseBody } from "@api/contracts/ResponseBody.js";
+import { UserExistQuery } from "@api/contracts/userExist/UserExistQuery.js";
+import { UserExistResponse } from "@api/contracts/userExist/UserExistResponse.js";
+import { Controller } from "@api/controllers/Controller.js";
+import { Database } from "@database/Database.js";
 import e from "express";
 
 export class UserExist extends Controller<

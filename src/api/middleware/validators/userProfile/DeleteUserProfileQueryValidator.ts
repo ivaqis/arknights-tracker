@@ -1,7 +1,7 @@
-import { DeleteUserProfileQuery } from "@api/contracts/userProfile/DeleteUserProfileQuery";
-import { UsernameValidationRule } from "@models/validation/UsernameValidationRule";
-import { ValidationRule } from "@models/validation/ValidationRule";
-import { Validator } from "@models/validation/Validator";
+import { DeleteUserProfileQuery } from "@api/contracts/userProfile/DeleteUserProfileQuery.js";
+import { UsernameValidationRule } from "@models/validation/UsernameValidationRule.js";
+import { ValidationRule } from "@models/validation/ValidationRule.js";
+import { Validator } from "@models/validation/Validator.js";
 
 export class DeleteUserProfileQueryValidator extends Validator<DeleteUserProfileQuery> {
 

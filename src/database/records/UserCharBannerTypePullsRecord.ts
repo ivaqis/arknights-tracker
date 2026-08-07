@@ -1,6 +1,6 @@
-import { UserCharBannerTypePullsEntity } from "@database/entities/UserCharBannerTypePullsEntity";
-import { BigIntRecordField } from "@database/records/recordFields/BigIntRecordField";
-import { NumberRecordField } from "@database/records/recordFields/NumberRecordField";
+import { UserCharBannerTypePullsEntity } from "@database/entities/UserCharBannerTypePullsEntity.js";
+import { BigIntRecordField } from "@database/records/recordFields/BigIntRecordField.js";
+import { NumberRecordField } from "@database/records/recordFields/NumberRecordField.js";
 
 export class UserCharBannerTypePullsRecord {
     private readonly _profileId: bigint;

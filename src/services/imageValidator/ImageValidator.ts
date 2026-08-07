@@ -1,4 +1,4 @@
-import { ImageValidatorParams } from "@services/imageValidator/ImageValidatorParams";
+import { ImageValidatorParams } from "@services/imageValidator/ImageValidatorParams.js";
 import { Metadata } from "sharp";
 
 export class ImageValidator {

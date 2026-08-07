@@ -1,11 +1,11 @@
-import { config } from "@/config";
-import { logger } from "@/logger";
-import { BadResponseDataCodeError } from "@errors/BadResponseDataCodeError";
-import { MonumentRequestParams } from "@models/urlParams/skportAccountData/MonumentRequestParams";
-import { MonumentGroupData } from "@services/monumentFetcher/contracts/MonumentGroupData";
-import { MonumentResponse } from "@services/monumentFetcher/contracts/MonumentResponse";
-import { CredData } from "@services/skportAuth/contracts/CredData";
-import { generateSign, getTimestampNow } from "@utils/skportUtils";
+import { config } from "@/config.js";
+import { logger } from "@/logger.js";
+import { BadResponseDataCodeError } from "@errors/BadResponseDataCodeError.js";
+import { MonumentRequestParams } from "@models/urlParams/skportAccountData/MonumentRequestParams.js";
+import { MonumentGroupData } from "@services/monumentFetcher/contracts/MonumentGroupData.js";
+import { MonumentResponse } from "@services/monumentFetcher/contracts/MonumentResponse.js";
+import { CredData } from "@services/skportAuth/contracts/CredData.js";
+import { generateSign, getTimestampNow } from "@utils/skportUtils.js";
 import axios, { AxiosResponse } from "axios";
 
 export class MonumentFetcher {

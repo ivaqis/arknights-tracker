@@ -1,10 +1,10 @@
-import { GetMonumentListQuery } from "@api/contracts/monument/GetMonumentListQuery";
-import { GameServerId } from "@models/GameServerId";
-import { MonumentLeaderboardSortField } from "@models/monumentLeaderboard/MonumentLeaderboardSortField";
-import { SortOrder } from "@models/SortOrder";
-import { StringValidationRule } from "@models/validation/StringValidationRule";
-import { ValidationRule } from "@models/validation/ValidationRule";
-import { Validator } from "@models/validation/Validator";
+import { GetMonumentListQuery } from "@api/contracts/monument/GetMonumentListQuery.js";
+import { GameServerId } from "@models/GameServerId.js";
+import { MonumentLeaderboardSortField } from "@models/monumentLeaderboard/MonumentLeaderboardSortField.js";
+import { SortOrder } from "@models/SortOrder.js";
+import { StringValidationRule } from "@models/validation/StringValidationRule.js";
+import { ValidationRule } from "@models/validation/ValidationRule.js";
+import { Validator } from "@models/validation/Validator.js";
 
 export class GetMonumentListQueryValidator extends Validator<GetMonumentListQuery> {
     public static readonly recordsOnPage = ["40", "60", "80", "100"] as const;

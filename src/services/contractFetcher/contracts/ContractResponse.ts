@@ -1,4 +1,4 @@
-import { ContractData } from "@services/contractFetcher/contracts/ContractData";
+import { ContractData } from "@services/contractFetcher/contracts/ContractData.js";
 
 export interface ContractResponse {
     code: number;

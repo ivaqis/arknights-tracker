@@ -1,11 +1,11 @@
-import { Database } from "@database/Database";
-import { UserBannerTypeStatEntity } from "@database/entities/UserBannerTypeStatEntity";
-import { BannerStats } from "@models/banners/BannerStats";
-import { DbBannerType } from "@models/banners/DbBannerType";
-import { ExcludeRange } from "@models/ExcludeRange";
-import { BannerTypeStatEntity } from "@models/pullProfile/entities/BannerTypeStatEntity";
-import { EventBannerTypeStatEntity } from "@models/pullProfile/entities/EventBannerTypeStatEntity";
-import { PullProfileEntity } from "@models/pullProfile/entities/PullProfileEntity";
+import { Database } from "@database/Database.js";
+import { UserBannerTypeStatEntity } from "@database/entities/UserBannerTypeStatEntity.js";
+import { BannerStats } from "@models/banners/BannerStats.js";
+import { DbBannerType } from "@models/banners/DbBannerType.js";
+import { ExcludeRange } from "@models/ExcludeRange.js";
+import { BannerTypeStatEntity } from "@models/pullProfile/entities/BannerTypeStatEntity.js";
+import { EventBannerTypeStatEntity } from "@models/pullProfile/entities/EventBannerTypeStatEntity.js";
+import { PullProfileEntity } from "@models/pullProfile/entities/PullProfileEntity.js";
 
 export class PullProfileSearcher {
     private readonly _database: Database;

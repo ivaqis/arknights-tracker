@@ -1,12 +1,12 @@
-import { authenticator, database } from "@/serviceInstances";
-import { GetContractRunQuery } from "@api/contracts/contract/GetContractRunQuery";
-import { GetContractRunResponse } from "@api/contracts/contract/GetContractRunResponse";
-import { ResponseBody } from "@api/contracts/ResponseBody";
-import { Controller } from "@api/controllers/Controller";
-import { Database } from "@database/Database";
-import { UserContractLeaderboardRecord } from "@database/records/UserContractLeaderboardRecord";
-import { ContractRecordEntity } from "@models/contingencyContract/entities/ContractRecordEntity";
-import { Authenticator } from "@services/auth/Authenticator";
+import { authenticator, database } from "@/serviceInstances.js";
+import { GetContractRunQuery } from "@api/contracts/contract/GetContractRunQuery.js";
+import { GetContractRunResponse } from "@api/contracts/contract/GetContractRunResponse.js";
+import { ResponseBody } from "@api/contracts/ResponseBody.js";
+import { Controller } from "@api/controllers/Controller.js";
+import { Database } from "@database/Database.js";
+import { UserContractLeaderboardRecord } from "@database/records/UserContractLeaderboardRecord.js";
+import { ContractRecordEntity } from "@models/contingencyContract/entities/ContractRecordEntity.js";
+import { Authenticator } from "@services/auth/Authenticator.js";
 import e from "express";
 
 export class GetContractRun extends Controller<

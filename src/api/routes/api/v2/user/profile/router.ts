@@ -1,22 +1,22 @@
-import { avatarUploader, sightengine } from "@/serviceInstances";
-import { CreateUserProfile } from "@api/controllers/userProfile/CreateUserProfile";
-import { DeleteUserProfile } from "@api/controllers/userProfile/DeleteUserProfile";
-import { GetUserProfile } from "@api/controllers/userProfile/GetUserProfile";
-import { UpdateUserProfile } from "@api/controllers/userProfile/UpdateUserProfile";
-import { RequireAuth } from "@api/middleware/RequireAuth";
-import { RequireService } from "@api/middleware/RequireService";
-import { JsonRequestValidator } from "@api/middleware/validators/JsonRequestValidator";
+import { avatarUploader, sightengine } from "@/serviceInstances.js";
+import { CreateUserProfile } from "@api/controllers/userProfile/CreateUserProfile.js";
+import { DeleteUserProfile } from "@api/controllers/userProfile/DeleteUserProfile.js";
+import { GetUserProfile } from "@api/controllers/userProfile/GetUserProfile.js";
+import { UpdateUserProfile } from "@api/controllers/userProfile/UpdateUserProfile.js";
+import { RequireAuth } from "@api/middleware/RequireAuth.js";
+import { RequireService } from "@api/middleware/RequireService.js";
+import { JsonRequestValidator } from "@api/middleware/validators/JsonRequestValidator.js";
 import {
     CreateUserProfileRequestValidator
-} from "@api/middleware/validators/userProfile/CreateUserProfileRequestValidator";
+} from "@api/middleware/validators/userProfile/CreateUserProfileRequestValidator.js";
 import {
     DeleteUserProfileRequestValidator
-} from "@api/middleware/validators/userProfile/DeleteUserProfileRequestValidator";
-import { GetUserProfileRequestValidator } from "@api/middleware/validators/userProfile/GetUserProfileRequestValidator";
+} from "@api/middleware/validators/userProfile/DeleteUserProfileRequestValidator.js";
+import { GetUserProfileRequestValidator } from "@api/middleware/validators/userProfile/GetUserProfileRequestValidator.js";
 import {
     UpdateUserProfileRequestValidator
-} from "@api/middleware/validators/userProfile/UpdateUserProfileRequestValidator";
-import { AuthType } from "@services/auth/AuthType";
+} from "@api/middleware/validators/userProfile/UpdateUserProfileRequestValidator.js";
+import { AuthType } from "@services/auth/AuthType.js";
 import { Router } from "express";
 
 export const profileRouter = Router();

@@ -1,4 +1,4 @@
-import { BannersPullsEntity } from "@models/pulls/entities/BannersPullsEntity";
+import { BannersPullsEntity } from "@models/pulls/entities/BannersPullsEntity.js";
 
 export interface PostImportCompleteResponse {
     profileId: string | null;

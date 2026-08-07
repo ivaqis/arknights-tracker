@@ -1,4 +1,4 @@
-import { root } from "@api/routes/root";
+import { root } from "@api/routes/root.js";
 import cors from "cors";
 import e, { Express } from "express";
 

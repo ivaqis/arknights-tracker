@@ -1,9 +1,9 @@
-import { ResponseBody } from "@api/contracts/ResponseBody";
-import { UploadAvatarQuery } from "@api/contracts/uploadAvatar/UploadAvatarQuery";
-import { UploadAvatarRequest } from "@api/contracts/uploadAvatar/UploadAvatarRequest";
-import { RequestValidator } from "@api/middleware/validators/RequestValidator";
-import { UploadAvatarBodyValidator } from "@api/middleware/validators/uploadAvatar/UploadAvatarBodyValidator";
-import { UploadAvatarQueryValidator } from "@api/middleware/validators/uploadAvatar/UploadAvatarQueryValidator";
+import { ResponseBody } from "@api/contracts/ResponseBody.js";
+import { UploadAvatarQuery } from "@api/contracts/uploadAvatar/UploadAvatarQuery.js";
+import { UploadAvatarRequest } from "@api/contracts/uploadAvatar/UploadAvatarRequest.js";
+import { RequestValidator } from "@api/middleware/validators/RequestValidator.js";
+import { UploadAvatarBodyValidator } from "@api/middleware/validators/uploadAvatar/UploadAvatarBodyValidator.js";
+import { UploadAvatarQueryValidator } from "@api/middleware/validators/uploadAvatar/UploadAvatarQueryValidator.js";
 import e from "express";
 
 export class UploadAvatarRequestValidator extends RequestValidator<{}, UploadAvatarRequest, UploadAvatarQuery> {

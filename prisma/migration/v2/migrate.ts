@@ -1,0 +1,5 @@
+migrate();
+
+async function migrate() {
+
+}

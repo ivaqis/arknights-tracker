@@ -1,9 +1,9 @@
-import { FirebaseUserRecord } from "@database/records/FirebaseUserRecord";
-import { UserRecord } from "@database/records/UserRecord";
-import { Repository } from "@database/repositories/Repository";
-import { FirebaseUsersTable } from "@database/tables/FirebaseUsersTable";
-import { UsersTable } from "@database/tables/UsersTable";
-import { PrismaClient } from "@generated/prisma-v2";
+import { FirebaseUserRecord } from "@database/records/FirebaseUserRecord.js";
+import { UserRecord } from "@database/records/UserRecord.js";
+import { Repository } from "@database/repositories/Repository.js";
+import { FirebaseUsersTable } from "@database/tables/FirebaseUsersTable.js";
+import { UsersTable } from "@database/tables/UsersTable.js";
+import { PrismaClient } from "@generated/prisma-v2/index.js";
 
 export class UsersRepository extends Repository {
     private readonly _usersTable: UsersTable;

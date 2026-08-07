@@ -1,15 +1,15 @@
-import { authenticator, avatarUploader, database, sightengine } from "@/serviceInstances";
-import { ResponseBody } from "@api/contracts/ResponseBody";
-import { CreateUserProfileRequest } from "@api/contracts/userProfile/CreateUserProfileRequest";
-import { CreateUserProfileResponse } from "@api/contracts/userProfile/CreateUserProfileResponse";
-import { Controller } from "@api/controllers/Controller";
-import { GetUserProfile } from "@api/controllers/userProfile/GetUserProfile";
-import { Database } from "@database/Database";
-import { Authenticator } from "@services/auth/Authenticator";
-import { AvatarUploader } from "@services/avatarUploader/AvatarUploader";
-import { ImageValidator } from "@services/imageValidator/ImageValidator";
-import { SightengineNsfwValidator } from "@services/sightengineNsfwValidator/SightengineNsfwValidator";
-import { bannedWords } from "@staticModels/instances";
+import { authenticator, avatarUploader, database, sightengine } from "@/serviceInstances.js";
+import { ResponseBody } from "@api/contracts/ResponseBody.js";
+import { CreateUserProfileRequest } from "@api/contracts/userProfile/CreateUserProfileRequest.js";
+import { CreateUserProfileResponse } from "@api/contracts/userProfile/CreateUserProfileResponse.js";
+import { Controller } from "@api/controllers/Controller.js";
+import { GetUserProfile } from "@api/controllers/userProfile/GetUserProfile.js";
+import { Database } from "@database/Database.js";
+import { Authenticator } from "@services/auth/Authenticator.js";
+import { AvatarUploader } from "@services/avatarUploader/AvatarUploader.js";
+import { ImageValidator } from "@services/imageValidator/ImageValidator.js";
+import { SightengineNsfwValidator } from "@services/sightengineNsfwValidator/SightengineNsfwValidator.js";
+import { bannedWords } from "@staticModels/instances.js";
 import e from "express";
 
 export class CreateUserProfile extends Controller<

@@ -1,18 +1,18 @@
-import { GlobalBannerStatsEntity } from "@database/entities/GlobalBannerStatsEntity";
-import { UserBannerTypeStatEntity } from "@database/entities/UserBannerTypeStatEntity";
-import { UserBannerStatRecord } from "@database/records/UserBannerStatRecord";
-import { UserCharBannerData } from "@database/repositories/interfaces/UserCharBannerData";
-import { UserCharBannerTypeData } from "@database/repositories/interfaces/UserCharBannerTypeData";
-import { UserWeaponBannerData } from "@database/repositories/interfaces/UserWeaponBannerData";
-import { UserWeaponBannerTypeData } from "@database/repositories/interfaces/UserWeaponBannerTypeData";
-import { Repository } from "@database/repositories/Repository";
-import { UserBannerStatsTable } from "@database/tables/UserBannerStatsTable";
-import { UserCharBannerPullsTable } from "@database/tables/UserCharBannerPullsTable";
-import { UserCharBannerTypePullsTable } from "@database/tables/UserCharBannerTypePullsTable";
-import { UserWeaponBannerPullsTable } from "@database/tables/UserWeaponBannerPullsTable";
-import { PrismaClient } from "@generated/prisma-v2";
-import { DbBannerType } from "@models/banners/DbBannerType";
-import { IncludeRange } from "@models/IncludeRange";
+import { GlobalBannerStatsEntity } from "@database/entities/GlobalBannerStatsEntity.js";
+import { UserBannerTypeStatEntity } from "@database/entities/UserBannerTypeStatEntity.js";
+import { UserBannerStatRecord } from "@database/records/UserBannerStatRecord.js";
+import { UserCharBannerData } from "@database/repositories/interfaces/UserCharBannerData.js";
+import { UserCharBannerTypeData } from "@database/repositories/interfaces/UserCharBannerTypeData.js";
+import { UserWeaponBannerData } from "@database/repositories/interfaces/UserWeaponBannerData.js";
+import { UserWeaponBannerTypeData } from "@database/repositories/interfaces/UserWeaponBannerTypeData.js";
+import { Repository } from "@database/repositories/Repository.js";
+import { UserBannerStatsTable } from "@database/tables/UserBannerStatsTable.js";
+import { UserCharBannerPullsTable } from "@database/tables/UserCharBannerPullsTable.js";
+import { UserCharBannerTypePullsTable } from "@database/tables/UserCharBannerTypePullsTable.js";
+import { UserWeaponBannerPullsTable } from "@database/tables/UserWeaponBannerPullsTable.js";
+import { PrismaClient } from "@generated/prisma-v2/index.js";
+import { DbBannerType } from "@models/banners/DbBannerType.js";
+import { IncludeRange } from "@models/IncludeRange.js";
 
 export class UserBannerStatsRepository extends Repository {
     private readonly _userBannerStatsTable: UserBannerStatsTable;

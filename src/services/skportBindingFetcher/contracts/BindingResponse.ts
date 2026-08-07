@@ -1,4 +1,4 @@
-import { GameData } from "@services/skportBindingFetcher/contracts/GameData";
+import { GameData } from "@services/skportBindingFetcher/contracts/GameData.js";
 
 export interface BindingResponse {
     code: number,

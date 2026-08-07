@@ -1,14 +1,14 @@
-import { authenticator, avatarUploader, database, sightengine } from "@/serviceInstances";
-import { ResponseBody } from "@api/contracts/ResponseBody";
-import { UploadAvatarQuery } from "@api/contracts/uploadAvatar/UploadAvatarQuery";
-import { UploadAvatarRequest } from "@api/contracts/uploadAvatar/UploadAvatarRequest";
-import { UploadAvatarResponse } from "@api/contracts/uploadAvatar/UploadAvatarResponse";
-import { Controller } from "@api/controllers/Controller";
-import { Database } from "@database/Database";
-import { Authenticator } from "@services/auth/Authenticator";
-import { AvatarUploader } from "@services/avatarUploader/AvatarUploader";
-import { ImageValidator } from "@services/imageValidator/ImageValidator";
-import { SightengineNsfwValidator } from "@services/sightengineNsfwValidator/SightengineNsfwValidator";
+import { authenticator, avatarUploader, database, sightengine } from "@/serviceInstances.js";
+import { ResponseBody } from "@api/contracts/ResponseBody.js";
+import { UploadAvatarQuery } from "@api/contracts/uploadAvatar/UploadAvatarQuery.js";
+import { UploadAvatarRequest } from "@api/contracts/uploadAvatar/UploadAvatarRequest.js";
+import { UploadAvatarResponse } from "@api/contracts/uploadAvatar/UploadAvatarResponse.js";
+import { Controller } from "@api/controllers/Controller.js";
+import { Database } from "@database/Database.js";
+import { Authenticator } from "@services/auth/Authenticator.js";
+import { AvatarUploader } from "@services/avatarUploader/AvatarUploader.js";
+import { ImageValidator } from "@services/imageValidator/ImageValidator.js";
+import { SightengineNsfwValidator } from "@services/sightengineNsfwValidator/SightengineNsfwValidator.js";
 import e from "express";
 
 export class UploadAvatar extends Controller<

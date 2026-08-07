@@ -1,9 +1,9 @@
-import { ResponseBody } from "@api/contracts/ResponseBody";
-import { DeleteUserProfileQuery } from "@api/contracts/userProfile/DeleteUserProfileQuery";
-import { RequestValidator } from "@api/middleware/validators/RequestValidator";
+import { ResponseBody } from "@api/contracts/ResponseBody.js";
+import { DeleteUserProfileQuery } from "@api/contracts/userProfile/DeleteUserProfileQuery.js";
+import { RequestValidator } from "@api/middleware/validators/RequestValidator.js";
 import {
     DeleteUserProfileQueryValidator
-} from "@api/middleware/validators/userProfile/DeleteUserProfileQueryValidator";
+} from "@api/middleware/validators/userProfile/DeleteUserProfileQueryValidator.js";
 import e from "express";
 
 export class DeleteUserProfileRequestValidator extends RequestValidator<{}, {}, DeleteUserProfileQuery> {

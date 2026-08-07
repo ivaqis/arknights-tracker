@@ -1,12 +1,12 @@
-import { MonumentFilters } from "@database/MonumentFilters";
-import { UserGameProfileRecord } from "@database/records/UserGameProfileRecord";
-import { UserMonumentLeaderboardRecord } from "@database/records/UserMonumentLeaderboardRecord";
-import { UserRecord } from "@database/records/UserRecord";
-import { Table } from "@database/tables/Table";
-import { Prisma, PrismaClient } from "@generated/prisma-v2";
-import { MonumentRecord } from "@models/monument/MonumentRecord";
-import { MonumentLeaderboardSortField } from "@models/monumentLeaderboard/MonumentLeaderboardSortField";
-import { SortOrder } from "@models/SortOrder";
+import { MonumentFilters } from "@database/MonumentFilters.js";
+import { UserGameProfileRecord } from "@database/records/UserGameProfileRecord.js";
+import { UserMonumentLeaderboardRecord } from "@database/records/UserMonumentLeaderboardRecord.js";
+import { UserRecord } from "@database/records/UserRecord.js";
+import { Table } from "@database/tables/Table.js";
+import { Prisma, PrismaClient } from "@generated/prisma-v2/index.js";
+import { MonumentRecord } from "@models/monument/MonumentRecord.js";
+import { MonumentLeaderboardSortField } from "@models/monumentLeaderboard/MonumentLeaderboardSortField.js";
+import { SortOrder } from "@models/SortOrder.js";
 
 export class UserMonumentLeaderboardsTable extends Table<Prisma.UserMonumentLeaderboardDelegate> {
     public constructor(prisma: PrismaClient) {

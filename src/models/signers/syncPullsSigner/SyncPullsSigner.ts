@@ -1,6 +1,6 @@
-import { SyncPullsSignInput } from "@models/signers/syncPullsSigner/interfaces/SyncPullsSignInput";
-import { SyncPullsSignOutput } from "@models/signers/syncPullsSigner/interfaces/SyncPullsSignOutput";
-import { JwtPayload, sign, verify } from "jsonwebtoken";
+import { SyncPullsSignInput } from "@models/signers/syncPullsSigner/interfaces/SyncPullsSignInput.js";
+import { SyncPullsSignOutput } from "@models/signers/syncPullsSigner/interfaces/SyncPullsSignOutput.js";
+import jwt from "jsonwebtoken";
 import { StringValue } from "ms";
 
 export class SyncPullsSigner {
@@ -13,7 +13,7 @@ export class SyncPullsSigner {
     }
 
     public sign(data: SyncPullsSignInput, lifeTime: number | StringValue): string {
-        return sign(
+        return jwt.sign(
             data,
             this._secret,
             {
@@ -25,9 +25,9 @@ export class SyncPullsSigner {
     }
 
     public verify(token: string): SyncPullsSignOutput | null {
-        let data: JwtPayload | string;
+        let data: jwt.JwtPayload | string;
         try {
-            data = verify(
+            data = jwt.verify(
                 token,
                 this._secret,
                 {

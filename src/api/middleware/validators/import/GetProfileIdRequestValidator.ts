@@ -1,7 +1,7 @@
-import { GetProfileIdQuery } from "@api/contracts/import/GetProfileIdQuery";
-import { ResponseBody } from "@api/contracts/ResponseBody";
-import { GetProfileIdQueryValidator } from "@api/middleware/validators/import/GetProfileIdQueryValidator";
-import { RequestValidator } from "@api/middleware/validators/RequestValidator";
+import { GetProfileIdQuery } from "@api/contracts/import/GetProfileIdQuery.js";
+import { ResponseBody } from "@api/contracts/ResponseBody.js";
+import { GetProfileIdQueryValidator } from "@api/middleware/validators/import/GetProfileIdQueryValidator.js";
+import { RequestValidator } from "@api/middleware/validators/RequestValidator.js";
 import e from "express";
 
 export class GetProfileIdRequestValidator extends RequestValidator<{}, undefined, GetProfileIdQuery> {
