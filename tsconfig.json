@@ -39,8 +39,5 @@
   "tsc-alias": {
     "resolveFullPaths": true,
     "resolveFullExtension": ".js",
-    "fileExtensions": {
-
-    }
   }
 }
