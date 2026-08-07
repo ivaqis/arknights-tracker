@@ -197,7 +197,7 @@
           {:else}
               <div class="flex items-center gap-2 opacity-50 justify-end">
                   <span class="text-sm font-medium text-gray-700 dark:text-[#B7B6B3]">{$t("page.rating.noData") || "No Data"}</span>
-                  <Icon name="noData" class="w-4 h-4" />
+                  <Icon name="noData" class="w-4 h-4 text-[#A0A0A0]" />
               </div>
           {/if}
         </div>
@@ -235,7 +235,7 @@
           {:else}
               <div class="flex items-center gap-2 opacity-50 justify-end">
                   <span class="text-sm font-medium text-gray-700 dark:text-[#B7B6B3]">{$t("page.rating.noData") || "No Data"}</span>
-                  <Icon name="noData" class="w-4 h-4" />
+                  <Icon name="noData" class="w-4 h-4 text-[#A0A0A0]" />
               </div>
           {/if}
         </div>
@@ -268,7 +268,7 @@
         {:else}
             <div class="flex items-center gap-2 opacity-50 justify-end">
                 <span class="text-sm font-medium text-gray-700 dark:text-[#B7B6B3]">{$t("page.rating.noData") || "No Data"}</span>
-                <Icon name="noData" class="w-4 h-4" />
+                <Icon name="noData" class="w-4 h-4 text-[#A0A0A0]" />
             </div>
         {/if}
       </div>
@@ -300,7 +300,7 @@
         {:else}
             <div class="flex items-center gap-2 opacity-50 justify-end">
                 <span class="text-sm font-medium text-gray-700 dark:text-[#B7B6B3]">{$t("page.rating.noData") || "No Data"}</span>
-                <Icon name="noData" class="w-4 h-4" />
+                <Icon name="noData" class="w-4 h-4 text-[#A0A0A0]" />
             </div>
         {/if}
       </div>

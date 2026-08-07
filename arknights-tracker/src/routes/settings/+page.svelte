@@ -24,7 +24,9 @@
     import Button from "$lib/components/Button.svelte";
     import ConfirmationModal from "$lib/components/modals/ConfirmationModal.svelte";
     import SyncModal from "$lib/components/modals/SyncModal.svelte";
+    import CacheModal from "$lib/components/modals/CacheModal.svelte";
 
+    let showCacheModal = false;
     let isEmailVisible = false;
     let emailTimer;
 
@@ -900,7 +902,7 @@
             </a>
         </div>
     </section>
-    <section class="mb-10 ml-2">
+    <section class="mb-5 ml-2">
         <h2
             class="font-sdk dark:text-[#FDFDFD] text-2xl font-bold text-[#21272C] mb-4"
         >
@@ -990,7 +992,32 @@
             </div>
         </div>
     </section>
+
+    <section class="mb-10 ml-2">
+        <h2
+            class="font-sdk dark:text-[#FDFDFD] text-2xl font-bold text-[#21272C] mb-2"
+        >
+            {$t("settings.cache.title")}
+        </h2>
+        <p class="text-sm text-gray-500 dark:text-[#B7B6B3] mb-4">
+            {$t("settings.cache.desc")}
+        </p>
+        <div class="w-auto inline-block">
+            <Button
+                variant="round"
+                color="yellow"
+                onClick={() => (showCacheModal = true)}
+            >
+                {$t("settings.cache.openModal")}
+            </Button>
+        </div>
+    </section>
 </div>
+
+<CacheModal
+    isOpen={showCacheModal}
+    on:close={() => (showCacheModal = false)}
+/>
 
 <ConfirmationModal
     isOpen={showClearModal}

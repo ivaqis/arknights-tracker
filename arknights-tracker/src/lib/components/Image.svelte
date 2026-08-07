@@ -77,15 +77,25 @@
             }
         }
 
+        function checkComplete() {
+            if (node.complete) {
+                if (node.naturalWidth > 0) {
+                    handleLoad();
+                } else if (node.naturalWidth === 0 && node.src) {
+                    handleErr();
+                }
+            }
+        }
+
         node.addEventListener('load', handleLoad);
         node.addEventListener('error', handleErr);
 
-        if (node.complete && node.naturalWidth > 0) {
-            isInstant = true;
-            handleLoad();
-        }
+        checkComplete();
 
         return {
+            update() {
+                checkComplete();
+            },
             destroy() {
                 node.removeEventListener('load', handleLoad);
                 node.removeEventListener('error', handleErr);
@@ -111,9 +121,17 @@
         {/if}
     </div>
 {:else}
+    {#if !isVisible}
+        <div 
+            class="flex items-center justify-center bg-gray-100/10 dark:bg-[#3d3d3d]/10 pointer-events-none z-10"
+            style="position: absolute; inset: 0; {sizeStyle}"
+        >
+            <Icon name="loading" class="w-6 h-6 max-w-[18px] max-h-[18px] text-[#A0A0A0] animate-spin" />
+        </div>
+    {/if}
     <img
         src={currentSrc}
-        use:imageHandler
+        use:imageHandler={currentSrc}
         alt={alt || rawId}
         loading={priority ? "eager" : loading}
         fetchpriority={priority ? "high" : fetchpriority}

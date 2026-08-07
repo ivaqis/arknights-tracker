@@ -1971,8 +1971,8 @@
 {/if}
 
 <Modal isOpen={isCustomModalOpen} on:close={closeCustomModal}>
-    <div class="bg-white dark:bg-[#1f1f1f] text-gray-900 dark:text-white rounded-2xl p-6 w-full max-w-lg shadow-xl border border-gray-200 dark:border-[#333] flex flex-col gap-6">
-        <div class="flex items-center justify-between border-b border-gray-200 dark:border-[#333] pb-4">
+    <div class="bg-white dark:bg-[#383838] dark:border-[#444444] text-gray-900 dark:text-white rounded-2xl p-6 w-full max-w-lg shadow-xl border border-gray-200 flex flex-col gap-6">
+        <div class="flex items-center justify-between border-b border-gray-100 dark:border-[#444] pb-4">
             <h2 class="text-xl font-bold">
                 {$t("weaponsList.custom_weapon")}
             </h2>
@@ -2023,7 +2023,7 @@
             </div>
         </div>
 
-        <div class="flex items-center justify-end gap-3 pt-4 border-t border-gray-200 dark:border-[#333]">
+        <div class="flex items-center justify-end gap-3 pt-4 border-t border-gray-100 dark:border-[#444]">
             <Button
                 variant="roundSmall"
                 color="gray"
