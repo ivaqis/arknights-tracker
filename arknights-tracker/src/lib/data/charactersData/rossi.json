@@ -2681,5 +2681,22 @@
             "potential_5": 1,
             "potential_5_critical_damage": 0.3
         }
+    },
+    "rWpns": {
+        "skill": [
+            "wpn_sword_0022",
+            "wpn_sword_0011",
+            "wpn_sword_0017"
+        ],
+        "attr": [
+            "wpn_sword_0011",
+            "wpn_sword_0005"
+        ]
+    },
+    "cv": {
+        "en": "Giada Sabellico",
+        "cn": "Misty",
+        "jp": "Hidaka Rina",
+        "kr": "Lee Joo-eun"
     }
 }

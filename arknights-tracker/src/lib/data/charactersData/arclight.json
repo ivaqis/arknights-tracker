@@ -2272,5 +2272,21 @@
         "potential5": {
             "count": 2
         }
+    },
+    "rWpns": {
+        "skill": [
+            "wpn_sword_0014",
+            "wpn_sword_0012"
+        ],
+        "attr": [
+            "wpn_sword_0018",
+            "wpn_sword_0019"
+        ]
+    },
+    "cv": {
+        "en": "Andrea Gatchalian",
+        "cn": "ZhongKe",
+        "jp": "Fujiwara Natsumi",
+        "kr": "Kim A-rong"
     }
 }

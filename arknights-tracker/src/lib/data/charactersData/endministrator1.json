@@ -2098,5 +2098,21 @@
         "potential5": {
             "cd_minus": 2
         }
+    },
+    "rWpns": {
+        "skill": [
+            "wpn_sword_0021",
+            "wpn_sword_0013"
+        ],
+        "attr": [
+            "wpn_sword_0011",
+            "wpn_sword_0005"
+        ]
+    },
+    "cv": {
+        "en": "Chloe Eves",
+        "cn": "Muyaruilin",
+        "jp": "Tachibana Azusa",
+        "kr": "Kang Sae-bom"
     }
 }

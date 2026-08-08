@@ -2535,5 +2535,21 @@
             "max_duration": 7,
             "ratio": 1.2
         }
+    },
+    "rWpns": {
+        "skill": [
+            "wpn_sword_0006",
+            "wpn_sword_0010",
+            "wpn_sword_0014"
+        ],
+        "attr": [
+            "wpn_sword_0007"
+        ]
+    },
+    "cv": {
+        "en": "Kira Buckland",
+        "cn": "Yan Meme",
+        "jp": "Horie Yui",
+        "kr": "Kum You-rim"
     }
 }

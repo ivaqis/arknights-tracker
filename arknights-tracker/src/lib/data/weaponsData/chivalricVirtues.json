@@ -498,5 +498,14 @@
                 9
             ]
         }
+    },
+    "rOps": {
+        "skill": [
+            "xaihi",
+            "ardelia"
+        ],
+        "attr": [
+            "gilberta"
+        ]
     }
 }

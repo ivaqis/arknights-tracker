@@ -509,5 +509,13 @@
                 3
             ]
         }
+    },
+    "rOps": {
+        "skill": [
+            "gilberta"
+        ],
+        "attr": [
+            "xaihi"
+        ]
     }
 }

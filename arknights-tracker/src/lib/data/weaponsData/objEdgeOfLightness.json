@@ -498,5 +498,14 @@
                 3
             ]
         }
+    },
+    "rOps": {
+        "skill": [
+            "akekuri",
+            "alesh"
+        ],
+        "attr": [
+            "arclight"
+        ]
     }
 }

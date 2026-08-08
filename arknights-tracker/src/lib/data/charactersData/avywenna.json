@@ -2279,5 +2279,20 @@
         "potential5": {
             "potential_5_rate": 1.15
         }
+    },
+    "rWpns": {
+        "skill": [
+            "wpn_lance_0011",
+            "wpn_lance_0006"
+        ],
+        "attr": [
+            "wpn_lance_0008"
+        ]
+    },
+    "cv": {
+        "en": "Sheena May",
+        "cn": "Cai Na",
+        "jp": "Kitamura Eri",
+        "kr": "Kang Eun-ae"
     }
 }

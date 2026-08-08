@@ -509,5 +509,11 @@
                 5
             ]
         }
+    },
+    "rOps": {
+        "skill": [
+            "pogranichnik"
+        ],
+        "attr": []
     }
 }

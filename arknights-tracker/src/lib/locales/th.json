@@ -321,7 +321,8 @@
     "allBanners": "แบนเนอร์ทั้งหมด",
     "emptyPageMsg": "ที่นี่ว่างเปล่าจัง",
     "equipmentType": "ประเภทอุปกรณ์",
-    "gearTemplate": "เทม​เพล​ต​อุปกรณ์"
+    "gearTemplate": "เทม​เพล​ต​อุปกรณ์",
+    "blueprintLocation": "ตำแหน่งพิมพ์เขียวอุปกรณ์"
   },
   "status": {
     "won": "ชนะ 50:50",
@@ -576,7 +577,8 @@
     "basicAttack": "การ​โจมตี​พื้นฐาน",
     "battleSkill": "ทักษะ​การต่อสู้",
     "comboSkill": "ทักษะ​คอม​โบ",
-    "ultimate": "อัล​ติ​เมท"
+    "ultimate": "อัล​ติ​เมท",
+    "matchingWeapon": "อาวุธ​เดียวกัน"
   },
   "bio": {
     "faction": "สังกัด",
@@ -626,7 +628,21 @@
     "essence": "แก่นแท้",
     "none": "ไม่มีแก่นแท้",
     "addEssence": "เพิ่มแก่นแท้",
-    "usefulnessTooltip": "จำนวนอุปกรณ์ประเภทนี้ที่อุปกรณ์นี้เป็นคู่ที่ดี"
+    "usefulnessTooltip": "จำนวนอุปกรณ์ประเภทนี้ที่อุปกรณ์นี้เป็นคู่ที่ดี",
+    "matchingSkills": "ทักษะ​เดียวกัน",
+    "matchingStats": "ค่า​สถานะ​เดียวกัน",
+    "voiceOver": "เสียง​พากย์",
+    "basicInfo": "ข้อมูล​พื้นฐาน",
+    "humanResourcesSummary": "ข้อมูล​สรุป​จาก​ฝ่าย​ทรัพยากร​บุคคล",
+    "file1": "ไฟล์​ 1",
+    "file2": "ไฟล์​ 2",
+    "file3": "ไฟล์​ 3",
+    "file4": "ไฟล์​ 4",
+    "profile": "โพร​ไฟล์",
+    "hobbies": "งานอดิเรก",
+    "goToEssences": "ไปยังเอสเซนส์",
+    "essenceLocations": "ตำแหน่งเอสเซนส์",
+    "recommendedOperators": "โอเปอเรเตอร์ที่แนะนำ"
   },
   "bioValues": {
     "Unknown": "ไม่ทราบ"

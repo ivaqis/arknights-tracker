@@ -509,5 +509,11 @@
                 9
             ]
         }
+    },
+    "rOps": {
+        "skill": [
+            "wulfgard"
+        ],
+        "attr": []
     }
 }

@@ -498,5 +498,13 @@
                 2
             ]
         }
+    },
+    "rOps": {
+        "skill": [
+            "laevatain"
+        ],
+        "attr": [
+            "alesh"
+        ]
     }
 }

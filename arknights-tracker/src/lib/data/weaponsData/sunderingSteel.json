@@ -509,5 +509,14 @@
                 0.1
             ]
         }
+    },
+    "rOps": {
+        "skill": [],
+        "attr": [
+            "endministrator2",
+            "endministrator1",
+            "rossi",
+            "pogranichnik"
+        ]
     }
 }

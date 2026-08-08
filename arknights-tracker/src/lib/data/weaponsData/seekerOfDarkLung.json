@@ -509,5 +509,14 @@
                 0.1
             ]
         }
+    },
+    "rOps": {
+        "skill": [
+            "lastRite"
+        ],
+        "attr": [
+            "daPan",
+            "catcher"
+        ]
     }
 }

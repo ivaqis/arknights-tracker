@@ -2311,5 +2311,21 @@
         "potential5": {
             "potential_5_atb": 10
         }
+    },
+    "rWpns": {
+        "skill": [
+            "wpn_claym_0006",
+            "wpn_claym_0013"
+        ],
+        "attr": [
+            "wpn_claym_0008",
+            "wpn_claym_0004"
+        ]
+    },
+    "cv": {
+        "en": "Stephanie Southerland",
+        "cn": "LSS",
+        "jp": "Akesaka Satomi",
+        "kr": "Yu Yeong"
     }
 }

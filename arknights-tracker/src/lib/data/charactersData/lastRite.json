@@ -2320,5 +2320,20 @@
             "atb": 5,
             "atk_scale": 1.2
         }
+    },
+    "rWpns": {
+        "skill": [
+            "wpn_claym_0013",
+            "wpn_claym_0011"
+        ],
+        "attr": [
+            "wpn_claym_0008"
+        ]
+    },
+    "cv": {
+        "en": "Amber Hood",
+        "cn": "Wu Tong",
+        "jp": "Shiraishi Haruka",
+        "kr": "Lee I-ro"
     }
 }

@@ -321,7 +321,8 @@
     "allBanners": "모든 배너",
     "emptyPageMsg": "여기 정말 텅 비었네",
     "equipmentType": "장비 유형",
-    "gearTemplate": "장비 제작 템플릿"
+    "gearTemplate": "장비 제작 템플릿",
+    "blueprintLocation": "장비 도안 위치"
   },
   "status": {
     "won": "승리 50:50",
@@ -576,7 +577,8 @@
     "basicAttack": "일반 공격",
     "battleSkill": "배틀 스킬",
     "comboSkill": "연계 스킬",
-    "ultimate": "궁극기"
+    "ultimate": "궁극기",
+    "matchingWeapon": "무기 추천"
   },
   "bio": {
     "faction": "진영",
@@ -626,7 +628,21 @@
     "essence": "기질",
     "none": "기질 없음",
     "addEssence": "기질 추가",
-    "usefulnessTooltip": "이 부위에서 이 장비가 좋은 조합인 다른 장비의 수"
+    "usefulnessTooltip": "이 부위에서 이 장비가 좋은 조합인 다른 장비의 수",
+    "matchingSkills": "스킬 조합",
+    "matchingStats": "속성 조합",
+    "voiceOver": "게임 음성",
+    "basicInfo": "기본 파일",
+    "humanResourcesSummary": "인사 요약서",
+    "file1": "파일 자료 1",
+    "file2": "파일 자료 2",
+    "file3": "파일 자료 3",
+    "file4": "파일 자료 4",
+    "profile": "개인 명함",
+    "hobbies": "취미",
+    "goToEssences": "에센스로 이동",
+    "essenceLocations": "에센스 위치",
+    "recommendedOperators": "추천 오퍼레이터"
   },
   "bioValues": {
     "Unknown": "알 수 없음"

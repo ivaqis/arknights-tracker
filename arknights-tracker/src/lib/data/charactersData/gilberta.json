@@ -2220,5 +2220,21 @@
             "coolDown": -2,
             "atk_scale": 1.3
         }
+    },
+    "rWpns": {
+        "skill": [
+            "wpn_funnel_0011",
+            "wpn_funnel_0006"
+        ],
+        "attr": [
+            "wpn_funnel_0010",
+            "wpn_funnel_0007"
+        ]
+    },
+    "cv": {
+        "en": "Anna Devlin",
+        "cn": "Wang Xiaotong",
+        "jp": "Ohashi Ayaka",
+        "kr": "Bang Si-u"
     }
 }

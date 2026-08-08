@@ -509,5 +509,12 @@
                 15
             ]
         }
+    },
+    "rOps": {
+        "skill": [
+            "snowshine",
+            "lastRite"
+        ],
+        "attr": []
     }
 }

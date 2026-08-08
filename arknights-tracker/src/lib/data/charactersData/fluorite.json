@@ -2308,5 +2308,20 @@
             "CD": 1,
             "reduce": 1
         }
+    },
+    "rWpns": {
+        "skill": [
+            "wpn_pistol_0005",
+            "wpn_pistol_0006"
+        ],
+        "attr": [
+            "wpn_pistol_0012"
+        ]
+    },
+    "cv": {
+        "en": "Katiana Sarkissian",
+        "cn": "Cao Yawen",
+        "jp": "Taichi You",
+        "kr": "Jang Mi"
     }
 }

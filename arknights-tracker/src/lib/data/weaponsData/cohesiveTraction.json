@@ -498,5 +498,13 @@
                 3
             ]
         }
+    },
+    "rOps": {
+        "skill": [
+            "avywenna"
+        ],
+        "attr": [
+            "estella"
+        ]
     }
 }

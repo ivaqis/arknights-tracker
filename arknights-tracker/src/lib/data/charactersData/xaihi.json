@@ -2217,5 +2217,21 @@
             "wisd_up": 1.1,
             "wisd_max": 1.1
         }
+    },
+    "rWpns": {
+        "skill": [
+            "wpn_funnel_0010",
+            "wpn_funnel_0012"
+        ],
+        "attr": [
+            "wpn_funnel_0011",
+            "wpn_funnel_0007"
+        ]
+    },
+    "cv": {
+        "en": "Elsie Lovelock",
+        "cn": "Pan Danni",
+        "jp": "Miyamoto Yume",
+        "kr": "Jang Ye-na"
     }
 }

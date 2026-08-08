@@ -2054,5 +2054,21 @@
         "potential5": {
             "crit": 0.3
         }
+    },
+    "rWpns": {
+        "skill": [
+            "wpn_funnel_0009",
+            "wpn_funnel_0008"
+        ],
+        "attr": [
+            "wpn_funnel_0004",
+            "wpn_funnel_0005"
+        ]
+    },
+    "cv": {
+        "en": "Jane Jackson",
+        "cn": "Chen Tingting",
+        "jp": "Wakayama Shion",
+        "kr": "Yu Hye-ji"
     }
 }

@@ -487,5 +487,17 @@
                 8
             ]
         }
+    },
+    "rOps": {
+        "skill": [
+            "ember",
+            "daPan"
+        ],
+        "attr": [
+            "snowshine",
+            "catcher",
+            "lastRite",
+            "mifu"
+        ]
     }
 }

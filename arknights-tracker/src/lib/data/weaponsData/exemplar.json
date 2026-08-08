@@ -498,5 +498,15 @@
                 3
             ]
         }
+    },
+    "rOps": {
+        "skill": [
+            "daPan",
+            "mifu"
+        ],
+        "attr": [
+            "ember",
+            "snowshine"
+        ]
     }
 }

@@ -321,7 +321,8 @@
     "allBanners": "すべてのガチャ",
     "emptyPageMsg": "ここはなんて空っぽなんだろう",
     "equipmentType": "装備タイプ",
-    "gearTemplate": "装備設計図"
+    "gearTemplate": "装備設計図",
+    "blueprintLocation": "装備設計図の場所"
   },
   "status": {
     "won": "勝利 50:50",
@@ -576,7 +577,8 @@
     "basicAttack": "通常攻撃",
     "battleSkill": "戦技",
     "comboSkill": "連携技",
-    "ultimate": "必殺技"
+    "ultimate": "必殺技",
+    "matchingWeapon": "推奨武器"
   },
   "bio": {
     "faction": "陣営",
@@ -626,7 +628,21 @@
     "essence": "基質",
     "none": "基質なし",
     "addEssence": "基質を追加",
-    "usefulnessTooltip": "この部位でこの装備が適している他の装備의 수"
+    "usefulnessTooltip": "この部位でこの装備が適している他の装備의 수",
+    "matchingSkills": "スキル適合",
+    "matchingStats": "ステータス適合",
+    "voiceOver": "音声言語",
+    "basicInfo": "基礎情報",
+    "humanResourcesSummary": "人事評価",
+    "file1": "第一資料",
+    "file2": "第二資料",
+    "file3": "第三資料",
+    "file4": "第四資料",
+    "profile": "個人情報",
+    "hobbies": "趣味",
+    "goToEssences": "エッセンスへ移動",
+    "essenceLocations": "エッセンスの場所",
+    "recommendedOperators": "おすすめオペレーター"
   },
   "bioValues": {
     "Unknown": "不明"

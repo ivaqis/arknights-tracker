@@ -509,5 +509,13 @@
                 15
             ]
         }
+    },
+    "rOps": {
+        "skill": [
+            "avywenna",
+            "estella",
+            "camille"
+        ],
+        "attr": []
     }
 }

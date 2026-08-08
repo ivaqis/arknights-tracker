@@ -498,5 +498,12 @@
                 15
             ]
         }
+    },
+    "rOps": {
+        "skill": [
+            "arclight",
+            "laevatain"
+        ],
+        "attr": []
     }
 }

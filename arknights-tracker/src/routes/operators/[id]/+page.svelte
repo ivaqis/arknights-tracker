@@ -6,6 +6,7 @@
     import { progression } from "$lib/data/items/progression.js";
     import { currencies } from "$lib/data/items/currencies.js";
     import { characters } from "$lib/data/characters.js";
+    import { weapons } from "$lib/data/weapons.js";
     import { manualPotentials } from "$lib/stores/potentials";
     import { pullData } from "$lib/stores/pulls";
     import { accountStore } from "$lib/stores/accounts";
@@ -23,6 +24,7 @@
     import PotentialIcon from "$lib/components/operators/PotentialIcon.svelte";
     import NotFound from "$lib/components/NotFound.svelte";
     import TableModal from "$lib/components/modals/TableModal.svelte";
+    import WeaponCard from "$lib/components/cards/WeaponCard.svelte";
 
     function formatBirthDate(raw, lang) {
         if (typeof raw !== "string" || !/^\d{1,2}-\d{1,2}$/.test(raw))
@@ -264,10 +266,52 @@
         { id: "skills", label: "menu.combatSkills" },
         { id: "talents", label: "menu.talents" },
         { id: "potentials", label: "menu.potentials" },
+        { id: "guides", label: "menu.matchingWeapon" },
         { id: "artwork", label: "menu.artwork" },
         { id: "files", label: "menu.files" },
         //{ id: "audio", label: "menu.audio" },
     ];
+
+    function getWeaponObj(wpnId) {
+        if (!wpnId) return null;
+        const found = Object.values(weapons || {}).find(
+            (w) => w.gameId === wpnId || w.id === wpnId,
+        );
+        return found || { id: wpnId, gameId: wpnId };
+    }
+
+    $: skillWeapons = (charDetails?.rWpns?.skill || [])
+        .map(getWeaponObj)
+        .filter(Boolean);
+    $: attrWeapons = (charDetails?.rWpns?.attr || [])
+        .map(getWeaponObj)
+        .filter(Boolean);
+
+    const fileTitleMap = {
+        main: "stats.basicInfo",
+        humanResources: "stats.humanResourcesSummary",
+        file1: "stats.file1",
+        file2: "stats.file2",
+        file3: "stats.file3",
+        file4: "stats.file4",
+    };
+
+    function formatFileTitle(fileKey) {
+        const key = fileTitleMap[fileKey];
+        const raw = key ? $t(key) : fileKey;
+        if (!raw) return "";
+        return raw.charAt(0).toUpperCase() + raw.slice(1).toLowerCase();
+    }
+
+    $: expertTags = Object.entries(skillsLocale?.tags || {}).filter(([k]) =>
+        k.startsWith("expert"),
+    );
+    $: hobbyTags = Object.entries(skillsLocale?.tags || {}).filter(([k]) =>
+        k.startsWith("hobby"),
+    );
+    $: hasFiles =
+        skillsLocale?.files && Object.keys(skillsLocale.files).length > 0;
+    $: hasTags = expertTags.length > 0 || hobbyTags.length > 0;
 
     function calculateStat(statArray, currentLvl) {
         if (!statArray || statArray.length === 0) return "0";
@@ -600,7 +644,7 @@
         class="relative z-20 w-full max-w-[1600px] mx-auto flex flex-col 2xl:flex-row justify-between gap-8 h-full"
     >
         <div
-            class="flex flex-col gap-6 2xl:sticky 2xl:top-8 2xl:self-start z-30 w-full 2xl:w-[380px] shrink-0"
+            class="flex flex-col gap-4 2xl:sticky 2xl:top-8 2xl:self-start z-30 w-full 2xl:w-[380px] shrink-0"
         >
             <div class="flex flex-col gap-1">
                 <div class="mb-2">
@@ -815,7 +859,7 @@
                     {/if}
                 </div>
 
-                <div class="flex flex-col items-start gap-2 mt-3 w-fit">
+                <div class="flex flex-col items-start gap-2 mt-2 w-fit">
                     {#each [{ label: "bio.faction", localizedVal: baseInfoLocale.blocTag, rawVal: char.faction }, { label: "bio.race", localizedVal: baseInfoLocale.raceTag, rawVal: char.race }, { label: "bio.birth", type: "date", localizedVal: null, rawVal: char.birthDate }] as item}
                         <div
                             class="flex items-stretch min-h-[32px] rounded-lg overflow-hidden shadow-sm text-sm"
@@ -846,6 +890,28 @@
                             </div>
                         </div>
                     {/each}
+
+                    {#if charDetails?.cv && Object.keys(charDetails.cv).length > 0}
+                        <div
+                            class="flex items-stretch min-h-[32px] rounded-lg overflow-hidden shadow-sm text-sm"
+                        >
+                            <div
+                                class="bg-[#333] text-white px-2 flex items-center justify-center font-bold whitespace-nowrap min-w-[100px]"
+                            >
+                                {$t("stats.voiceOver")}
+                            </div>
+
+                            <div
+                                class="bg-[#E5E5E5] text-[#333] px-3 py-1.5 flex flex-col justify-center gap-0.5 font-medium text-sm"
+                            >
+                                {#each Object.entries(charDetails.cv) as [langKey, name]}
+                                    {#if name}
+                                        <div class="leading-tight whitespace-nowrap"><strong class="uppercase text-gray-700">{langKey}:</strong> {name}</div>
+                                    {/if}
+                                {/each}
+                            </div>
+                        </div>
+                    {/if}
                 </div>
             </div>
 
@@ -1292,32 +1358,88 @@
                             <h2
                                 class="text-3xl dark:text-[#FDFDFD] font-bold text-[#21272C] mb-4 drop-shadow-sm font-sdk text-left 2xl:text-right"
                             >
-                                {$t("menu.files") || "Files"}
+                                {$t("menu.files")}
                             </h2>
 
-                            {#if skillsLocale?.files}
-                                {#each Object.entries(skillsLocale.files) as [fileKey, fileContent]}
+                            {#if hasTags || hasFiles}
+                                {#each expertTags as [tagKey, tagData], index}
                                     <div
                                         class="bg-white/90 backdrop-blur-md dark:bg-[#383838]/90 p-6 rounded-2xl dark:border-[#444444] shadow-xl border border-white/50 flex flex-col gap-3"
                                     >
-                                        <h3
-                                            class="font-bold text-lg text-[#21272C] dark:text-[#E4E4E4] capitalize border-b border-gray-100 dark:border-[#444444] pb-1"
-                                        >
-                                            {fileKey}
-                                        </h3>
-                                        <div
-                                            class="text-gray-700 dark:text-[#E4E4E4] whitespace-pre-wrap text-sm leading-relaxed font-medium"
-                                            use:hyperlinkAction
-                                        >
-                                            {@html parseRichText(fileContent)}
+                                        <div class="flex items-center justify-between gap-3 border-b border-gray-100 dark:border-[#444444] pb-1.5 flex-wrap">
+                                            <h3
+                                                class="font-bold text-lg text-[#21272C] dark:text-[#E4E4E4]"
+                                            >
+                                                {$t("stats.profile")}: {index + 1}
+                                            </h3>
+                                            {#if tagData?.name}
+                                                <span class="px-3 py-0.5 bg-gray-100 dark:bg-[#444] rounded-full text-xs font-semibold text-gray-700 dark:text-gray-200 border border-gray-200 dark:border-[#555]">
+                                                    {tagData.name}
+                                                </span>
+                                            {/if}
                                         </div>
+                                        {#if tagData?.description}
+                                            <div
+                                                class="text-gray-700 dark:text-[#E4E4E4] whitespace-pre-wrap text-sm leading-relaxed font-medium"
+                                                use:hyperlinkAction
+                                            >
+                                                {@html parseRichText(tagData.description)}
+                                            </div>
+                                        {/if}
                                     </div>
                                 {/each}
+
+                                {#each hobbyTags as [tagKey, tagData], index}
+                                    <div
+                                        class="bg-white/90 backdrop-blur-md dark:bg-[#383838]/90 p-6 rounded-2xl dark:border-[#444444] shadow-xl border border-white/50 flex flex-col gap-3"
+                                    >
+                                        <div class="flex items-center justify-between gap-3 border-b border-gray-100 dark:border-[#444444] pb-1.5 flex-wrap">
+                                            <h3
+                                                class="font-bold text-lg text-[#21272C] dark:text-[#E4E4E4]"
+                                            >
+                                                {$t("stats.hobbies")}: {index + 1}
+                                            </h3>
+                                            {#if tagData?.name}
+                                                <span class="px-3 py-0.5 bg-gray-100 dark:bg-[#444] rounded-full text-xs font-semibold text-gray-700 dark:text-gray-200 border border-gray-200 dark:border-[#555]">
+                                                    {tagData.name}
+                                                </span>
+                                            {/if}
+                                        </div>
+                                        {#if tagData?.description}
+                                            <div
+                                                class="text-gray-700 dark:text-[#E4E4E4] whitespace-pre-wrap text-sm leading-relaxed font-medium"
+                                                use:hyperlinkAction
+                                            >
+                                                {@html parseRichText(tagData.description)}
+                                            </div>
+                                        {/if}
+                                    </div>
+                                {/each}
+
+                                {#if skillsLocale?.files}
+                                    {#each Object.entries(skillsLocale.files) as [fileKey, fileContent]}
+                                        <div
+                                            class="bg-white/90 backdrop-blur-md dark:bg-[#383838]/90 p-6 rounded-2xl dark:border-[#444444] shadow-xl border border-white/50 flex flex-col gap-3"
+                                        >
+                                            <h3
+                                                class="font-bold text-lg text-[#21272C] dark:text-[#E4E4E4] border-b border-gray-100 dark:border-[#444444] pb-1"
+                                            >
+                                                {formatFileTitle(fileKey)}
+                                            </h3>
+                                            <div
+                                                class="text-gray-700 dark:text-[#E4E4E4] whitespace-pre-wrap text-sm leading-relaxed font-medium"
+                                                use:hyperlinkAction
+                                            >
+                                                {@html parseRichText(fileContent)}
+                                            </div>
+                                        </div>
+                                    {/each}
+                                {/if}
                             {:else}
                                 <div
                                     class="text-gray-500 text-center italic mt-10"
                                 >
-                                    {$t("global.noData") || "No Data"}
+                                    {$t("global.noData")}
                                 </div>
                             {/if}
                         </div>
@@ -1379,6 +1501,58 @@
                                     {$t("global.noData") || "No Data"}
                                 </div>
                             {/if}
+                        </div>
+                    {:else if activeTab === "guides"}
+                        <div class="flex flex-col gap-5 animate-fadeIn w-full">
+                            <h2
+                                class="text-3xl dark:text-[#FDFDFD] font-bold text-[#21272C] mb-4 drop-shadow-sm font-sdk text-left 2xl:text-right"
+                            >
+                                {$t("menu.matchingWeapon")}
+                            </h2>
+
+                            <div class="flex flex-col gap-5 w-full">
+                                <div
+                                    class="bg-white/90 backdrop-blur-md dark:bg-[#383838]/90 p-6 rounded-2xl dark:border-[#444444] shadow-xl border border-white/50 flex flex-col gap-4"
+                                >
+                                    <h3
+                                        class="font-bold text-lg text-[#21272C] dark:text-[#E4E4E4] border-b border-gray-100 dark:border-[#444444] pb-2"
+                                    >
+                                        {$t("stats.matchingSkills")}
+                                    </h3>
+                                    {#if skillWeapons.length > 0}
+                                        <div class="flex flex-wrap gap-4">
+                                            {#each skillWeapons as weaponObj}
+                                                <WeaponCard weapon={weaponObj} />
+                                            {/each}
+                                        </div>
+                                    {:else}
+                                        <div class="text-gray-500 italic text-sm">
+                                            {$t("global.noData")}
+                                        </div>
+                                    {/if}
+                                </div>
+
+                                <div
+                                    class="bg-white/90 backdrop-blur-md dark:bg-[#383838]/90 p-6 rounded-2xl dark:border-[#444444] shadow-xl border border-white/50 flex flex-col gap-4"
+                                >
+                                    <h3
+                                        class="font-bold text-lg text-[#21272C] dark:text-[#E4E4E4] border-b border-gray-100 dark:border-[#444444] pb-2"
+                                    >
+                                        {$t("stats.matchingStats")}
+                                    </h3>
+                                    {#if attrWeapons.length > 0}
+                                        <div class="flex flex-wrap gap-4">
+                                            {#each attrWeapons as weaponObj}
+                                                <WeaponCard weapon={weaponObj} />
+                                            {/each}
+                                        </div>
+                                    {:else}
+                                        <div class="text-gray-500 italic text-sm">
+                                            {$t("global.noData")}
+                                        </div>
+                                    {/if}
+                                </div>
+                            </div>
                         </div>
                     {:else if activeTab === "artwork"}
                         <div class="flex flex-col gap-5 animate-fadeIn w-full">

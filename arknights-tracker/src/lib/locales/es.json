@@ -323,7 +323,8 @@
     "allBanners": "Todos los Banners",
     "emptyPageMsg": "Qué vacío está aquí",
     "equipmentType": "Tipo de equipamiento",
-    "gearTemplate": "Molde de equipamiento"
+    "gearTemplate": "Molde de equipamiento",
+    "blueprintLocation": "Ubicación de plantilla de equipamiento"
   },
   "status": {
     "won": "Ganado 50:50",
@@ -578,7 +579,8 @@
     "basicAttack": "Ataque básico",
     "battleSkill": "Habilidad de batalla",
     "comboSkill": "Habilidad de combo",
-    "ultimate": "Máxima"
+    "ultimate": "Máxima",
+    "matchingWeapon": "Arma compatible"
   },
   "bio": {
     "faction": "Facción",
@@ -628,7 +630,21 @@
     "essence": "Esencia",
     "none": "Sin Esencia",
     "addEssence": "Añadir Esencia",
-    "usefulnessTooltip": "Número de objetos de este tipo para los cuales este equipamiento es una buena opción"
+    "usefulnessTooltip": "Número de objetos de este tipo para los cuales este equipamiento es una buena opción",
+    "matchingSkills": "Habilidades compatibles",
+    "matchingStats": "Estadísticas compatibles",
+    "voiceOver": "Narración",
+    "basicInfo": "INFORMACIÓN BÁSICA",
+    "humanResourcesSummary": "RESUMEN DE RECURSOS HUMANOS",
+    "file1": "ARCHIVO 1",
+    "file2": "ARCHIVO 2",
+    "file3": "ARCHIVO 3",
+    "file4": "ARCHIVO 4",
+    "profile": "Perfil",
+    "hobbies": "Pasatiempo",
+    "goToEssences": "Ir a Esencias",
+    "essenceLocations": "Ubicaciones de esencias",
+    "recommendedOperators": "Operadores recomendados"
   },
   "bioValues": {
     "Unknown": "Desconocido"

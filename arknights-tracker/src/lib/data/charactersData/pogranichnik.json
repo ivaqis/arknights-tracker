@@ -2714,5 +2714,20 @@
             "coolDown": -2,
             "atb_ratio": 1.2
         }
+    },
+    "rWpns": {
+        "skill": [
+            "wpn_sword_0016",
+            "wpn_sword_0012"
+        ],
+        "attr": [
+            "wpn_sword_0005"
+        ]
+    },
+    "cv": {
+        "en": "Sergey Ponomaryov",
+        "cn": "Liu Ruoban",
+        "jp": "Hayami Show",
+        "kr": "Kwon Sung-hyuck"
     }
 }

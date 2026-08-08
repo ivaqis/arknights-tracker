@@ -325,7 +325,8 @@
     "allBanners": "所有卡池",
     "emptyPageMsg": "这里好空啊",
     "equipmentType": "装备类型",
-    "gearTemplate": "装备制造模板"
+    "gearTemplate": "装备制造模板",
+    "blueprintLocation": "装备图纸位置"
   },
   "status": {
     "won": "胜出 50:50",
@@ -618,7 +619,8 @@
     "basicAttack": "普攻",
     "battleSkill": "战技",
     "comboSkill": "连携技",
-    "ultimate": "终结技"
+    "ultimate": "终结技",
+    "matchingWeapon": "武器推荐"
   },
   "bio": {
     "faction": "阵营",
@@ -668,7 +670,21 @@
     "essence": "基质",
     "none": "无基质",
     "addEssence": "添加基质",
-    "usefulnessTooltip": "该部位中此装备属于较好适配的装备数量"
+    "usefulnessTooltip": "该部位中此装备属于较好适配的装备数量",
+    "matchingSkills": "技能适配",
+    "matchingStats": "属性适配",
+    "voiceOver": "游戏语音",
+    "basicInfo": "基础档案",
+    "humanResourcesSummary": "人事简述",
+    "file1": "档案资料·一",
+    "file2": "档案资料·二",
+    "file3": "档案资料·三",
+    "file4": "档案资料·四",
+    "profile": "个人名片",
+    "hobbies": "爱好",
+    "goToEssences": "前往基质",
+    "essenceLocations": "基质位置",
+    "recommendedOperators": "推荐干员"
   },
   "bioValues": {
     "Unknown": "未知"

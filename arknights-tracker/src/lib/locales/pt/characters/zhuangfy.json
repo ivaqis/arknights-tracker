@@ -24,52 +24,44 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Multiplicador SEQ 1 ATQB",
-        "batkSeq2Multiplier": "Multiplicador SEQ 2 ATQB",
-        "batkSeq3Multiplier": "Multiplicador SEQ 3 ATQB",
-        "batkSeq4Multiplier": "Multiplicador SEQ 4 ATQB",
-        "batkSeq5Multiplier": "Multiplicador SEQ 5 ATQB",
-        "finisherAtkMultiplier": "Multiplicador ATQ Finalizador",
-        "diveAtkMultiplier": "Multiplicador ATQ Mergulho"
-      },
       "name": "Artes Chocantes",
-      "description": "ATAQUE BÁSICO: \nAtaque em até 5 sequências que causa <@ba.pulse>DNO Elétrico</>. Como operador controlado, o <#ba.lastcombo>Golpe Final</> também causa <@ba.poise>{poise:0}</> de Desorientação. \n\nATAQUE DE MERGULHO: \nO ataque básico realizado no ar se torna um ataque de mergulho que causa <@ba.pulse>DNO Elétrico</> aos inimigos nas proximidades. \n\nFINALIZADOR: \nO ataque básico realizado próximo a um inimigo Desorientado torna-se um finalizador que causa uma enorme quantidade de <@ba.pulse>DNO Elétrico</> e recupera PH."
+      "description": "ATAQUE BÁSICO: \nAtaque em até 5 sequências que causa <@ba.pulse>DNO Elétrico</>. Como operador controlado, o <#ba.lastcombo>Golpe Final</> também causa <@ba.poise>{poise:0}</> de Desorientação. \n\nATAQUE DE MERGULHO: \nO ataque básico realizado no ar se torna um ataque de mergulho que causa <@ba.pulse>DNO Elétrico</> aos inimigos nas proximidades. \n\nFINALIZADOR: \nO ataque básico realizado próximo a um inimigo Desorientado torna-se um finalizador que causa uma enorme quantidade de <@ba.pulse>DNO Elétrico</> e recupera PH.",
+      "batkSeq1Multiplier": "Multiplicador SEQ 1 ATQB",
+      "batkSeq2Multiplier": "Multiplicador SEQ 2 ATQB",
+      "batkSeq3Multiplier": "Multiplicador SEQ 3 ATQB",
+      "batkSeq4Multiplier": "Multiplicador SEQ 4 ATQB",
+      "batkSeq5Multiplier": "Multiplicador SEQ 5 ATQB",
+      "finisherAtkMultiplier": "Multiplicador ATQ Finalizador",
+      "diveAtkMultiplier": "Multiplicador ATQ Mergulho"
     },
     "battleSkill": {
-      "battleSkill": {
-        "thunderStrikeDmgMultiplier": "Multiplicador DNO do Golpe do Trovão",
-        "totalStagger": "Desorientação Total",
-        "bonusDmgMultiplierPerStatusLevelOfElectrificationConsumed": "Multiplicador DNO Bônus por Nível de Status de Eletrificação Consumida",
-        "bonusUltimateEnergyPerThunderStrike": "Energia Suprema de Bônus por Golpe do Trovão",
-        "sunderbladeLimit": "Limite da Lâmina Relampejante",
-        "sunderbladeDurationS": "Duração da Lâmina Relampejante (s)",
-        "duringUltimateThunderStrikeDmgMultiplier": "Durante a Habilidade Suprema: Multiplicador DNO do Golpe do Trovão",
-        "duringUltimateBonusDmgMultiplierPerStatusLevelOfElectrificationConsumed": "Durante a Habilidade Suprema: Multiplicador DNO Bônus por Nível de Status de Eletrificação Consumida"
-      },
       "name": "Mantra da Ruptura",
-      "description": "<#ba.consume>Consome</> a <#ba.conduct>Eletrificação</> do alvo para aumentar o Multiplicador DNO desta habilidade de batalha e criar <@ba.key>Lâminas Relampejantes</> [<#ba.statuslevel>Nível de Status</> de <#ba.conduct>Eletrificação</> <#ba.consume>consumida</> <@ba.key>+ 1</>]. Se o campo de batalha tiver menos de {free_sword_limit:0} <@ba.key>Lâminas Relampejantes</>, o Mantra da Ruptura ainda poderá criar 1 <@ba.key>Lâmina Relampejante</>, mesmo se ele não <#ba.consume>consumir</> a <#ba.conduct>Eletrificação</> de nenhum alvo.\nZhuang Fangyi então canaliza todas as <@ba.key>Lâminas Relampejantes</> por perto para desferir Golpes do Trovão sucessivos no alvo, causando <@ba.pulse>DNO Elétrico</> e concedendo Energia Suprema de bônus, além de fazer com que o Golpe do Trovão final cause {final_rate:0} vezes o DNO.\n<@ba.info>Uma única conjuração de habilidade de batalha pode criar no máximo {max_conduct_sword:0} Lâminas Relampejantes.</>"
+      "description": "<#ba.consume>Consome</> a <#ba.conduct>Eletrificação</> do alvo para aumentar o Multiplicador DNO desta habilidade de batalha e criar <@ba.key>Lâminas Relampejantes</> [<#ba.statuslevel>Nível de Status</> de <#ba.conduct>Eletrificação</> <#ba.consume>consumida</> <@ba.key>+ 1</>]. Se o campo de batalha tiver menos de {free_sword_limit:0} <@ba.key>Lâminas Relampejantes</>, o Mantra da Ruptura ainda poderá criar 1 <@ba.key>Lâmina Relampejante</>, mesmo se ele não <#ba.consume>consumir</> a <#ba.conduct>Eletrificação</> de nenhum alvo.\nZhuang Fangyi então canaliza todas as <@ba.key>Lâminas Relampejantes</> por perto para desferir Golpes do Trovão sucessivos no alvo, causando <@ba.pulse>DNO Elétrico</> e concedendo Energia Suprema de bônus, além de fazer com que o Golpe do Trovão final cause {final_rate:0} vezes o DNO.\n<@ba.info>Uma única conjuração de habilidade de batalha pode criar no máximo {max_conduct_sword:0} Lâminas Relampejantes.</>",
+      "thunderStrikeDmgMultiplier": "Multiplicador DNO do Golpe do Trovão",
+      "totalStagger": "Desorientação Total",
+      "bonusDmgMultiplierPerStatusLevelOfElectrificationConsumed": "Multiplicador DNO Bônus por Nível de Status de Eletrificação Consumida",
+      "bonusUltimateEnergyPerThunderStrike": "Energia Suprema de Bônus por Golpe do Trovão",
+      "sunderbladeLimit": "Limite da Lâmina Relampejante",
+      "sunderbladeDurationS": "Duração da Lâmina Relampejante (s)",
+      "duringUltimateThunderStrikeDmgMultiplier": "Durante a Habilidade Suprema: Multiplicador DNO do Golpe do Trovão",
+      "duringUltimateBonusDmgMultiplierPerStatusLevelOfElectrificationConsumed": "Durante a Habilidade Suprema: Multiplicador DNO Bônus por Nível de Status de Eletrificação Consumida"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Multiplicador DNO",
-        "stagger": "Desorientação",
-        "ultimateEnergyGain": "Ganho de Energia Suprema",
-        "additionalUltimateEnergyPerInflictionStack": "Energia Suprema Adicional por Acúmulo de Inflição",
-        "duringUltimateDmgMultiplier": "Durante a Habilidade Suprema: Multiplicador DNO"
-      },
       "name": "Sopro da Transformação",
-      "description": "ACIONADOR DO COMBO: Quando o <#ba.lastcombo>Golpe Final</> ou Finalizador do operador controlado atinge um inimigo com <#ba.pulseinflict>Inflição Elétrica</>.\nZhuang Fangyi cria Relâmpagos de Xiranita que atacam o inimigo e causam <@ba.pulse>DNO Elétrico</>. Se o Conjunto atingir um inimigo com acúmulos de <#ba.pulseinflict>Inflição Elétrica</>, ele <#ba.consume>consumirá</> esses acúmulos de <#ba.pulseinflict>Inflição Elétrica</>, aplicará <#ba.conduct>Eletrificação</> à força e concederá Energia Suprema com base no número de acúmulos <#ba.consume>consumidos</>.\nSe a <#ba.conduct>Eletrificação</> for aplicada à força a um inimigo que já tem <#ba.conduct>Eletrificação</>, então aplicará <#ba.statuslevel>Nível de Status</> + 1 à <#ba.conduct>Eletrificação</> do inimigo."
+      "description": "ACIONADOR DO COMBO: Quando o <#ba.lastcombo>Golpe Final</> ou Finalizador do operador controlado atinge um inimigo com <#ba.pulseinflict>Inflição Elétrica</>.\nZhuang Fangyi cria Relâmpagos de Xiranita que atacam o inimigo e causam <@ba.pulse>DNO Elétrico</>. Se o Conjunto atingir um inimigo com acúmulos de <#ba.pulseinflict>Inflição Elétrica</>, ele <#ba.consume>consumirá</> esses acúmulos de <#ba.pulseinflict>Inflição Elétrica</>, aplicará <#ba.conduct>Eletrificação</> à força e concederá Energia Suprema com base no número de acúmulos <#ba.consume>consumidos</>.\nSe a <#ba.conduct>Eletrificação</> for aplicada à força a um inimigo que já tem <#ba.conduct>Eletrificação</>, então aplicará <#ba.statuslevel>Nível de Status</> + 1 à <#ba.conduct>Eletrificação</> do inimigo.",
+      "dmgMultiplier": "Multiplicador DNO",
+      "stagger": "Desorientação",
+      "ultimateEnergyGain": "Ganho de Energia Suprema",
+      "additionalUltimateEnergyPerInflictionStack": "Energia Suprema Adicional por Acúmulo de Inflição",
+      "duringUltimateDmgMultiplier": "Durante a Habilidade Suprema: Multiplicador DNO"
     },
     "ultimate": {
-      "ultimate": {
-        "durationS": "Duração (s)",
-        "duringUltimateBatkSeq1Multiplier": "Durante a Habilidade Suprema: Multiplicador SEQ 1 ATQB",
-        "duringUltimateBatkSeq2Multiplier": "Durante a Habilidade Suprema: Multiplicador SEQ 2 ATQB",
-        "duringUltimateBatkSeq3Multiplier": "Durante a Habilidade Suprema: Multiplicador SEQ 3 ATQB"
-      },
       "name": "Tempestade Devastadora",
-      "description": "Transforma-se no <@ba.key>Empíreo da Verdade</> que concede estas melhorias:\nOs ataques básicos de Zhuang Fangyi são aprimorados e suas ações são mais difíceis de interromper.\nA habilidade de batalha <@ba.key>Mantra da Ruptura</> ganha um Multiplicador DNO maior e maior alcance de efeito. O Golpe do Trovão final também aplica <#ba.pulseinflict>Inflição Elétrica</> ao alvo atingido.\nO combo de habilidades <@ba.key>Sopro da Transformação</> ganha um Multiplicador DNO maior, o tempo de recarga torna-se {combo_cd_rate:0} vezes mais rápido e os efeitos são aplicados a inimigos dentro de uma pequena área.\nA primeira conjuração da habilidade de batalha <@ba.key>Mantra da Ruptura</> em um alvo disponível não consome PH nem <#ba.conduct>Eletrificação</> e tem a garantia de criar 3 <@ba.key>Lâminas Separadoras</> mesmo se o alvo não tiver <#ba.conduct>Eletrificação</>."
+      "description": "Transforma-se no <@ba.key>Empíreo da Verdade</> que concede estas melhorias:\nOs ataques básicos de Zhuang Fangyi são aprimorados e suas ações são mais difíceis de interromper.\nA habilidade de batalha <@ba.key>Mantra da Ruptura</> ganha um Multiplicador DNO maior e maior alcance de efeito. O Golpe do Trovão final também aplica <#ba.pulseinflict>Inflição Elétrica</> ao alvo atingido.\nO combo de habilidades <@ba.key>Sopro da Transformação</> ganha um Multiplicador DNO maior, o tempo de recarga torna-se {combo_cd_rate:0} vezes mais rápido e os efeitos são aplicados a inimigos dentro de uma pequena área.\nA primeira conjuração da habilidade de batalha <@ba.key>Mantra da Ruptura</> não consome PH nem <#ba.conduct>Eletrificação</> e, se houver um alvo disponível, a habilidade de batalha tem a garantia de criar 3 <@ba.key>Lâminas Relampejantes</> mesmo se o alvo não tiver <#ba.conduct>Eletrificação</>.",
+      "durationS": "Duração (s)",
+      "duringUltimateBatkSeq1Multiplier": "Durante a Habilidade Suprema: Multiplicador SEQ 1 ATQB",
+      "duringUltimateBatkSeq2Multiplier": "Durante a Habilidade Suprema: Multiplicador SEQ 2 ATQB",
+      "duringUltimateBatkSeq3Multiplier": "Durante a Habilidade Suprema: Multiplicador SEQ 3 ATQB"
     },
     "indicator": {
       "levels": [
@@ -89,8 +81,8 @@
     },
     "talent2": {
       "levels": [
-        "Ganha <@ba.vup>{base_rate:0%}</> de chance de imunidade contra DNO recebido, e cada <@ba.key>Lâmina Relampejante</> por perto aumenta essa chance em <@ba.vup>+{sword_rate:0%}</>.\nApós a Imunidade a DNO ser ativada, Zhuang Fangyi também é restaurada para <@ba.heal>{heal:0%}</> de PV Máximo. O efeito de restauração de PV só é acionado uma vez a cada <@ba.vup>{duration:0}</> s.",
-        "Ganha <@ba.vup>{base_rate:0%}</> de chance de imunidade contra DNO recebido, e cada <@ba.key>Lâmina Relampejante</> por perto aumenta essa chance em <@ba.vup>+{sword_rate:0%}</>.\nApós a Imunidade a DNO ser ativada, Zhuang Fangyi também é restaurada para <@ba.heal>{heal:0%}</> de PV Máximo. O efeito de restauração de PV só é acionado uma vez a cada <@ba.vup>{duration:0}</> s."
+        "Ganha <@ba.vup>{base_rate:0%}</> de chance de imunidade contra DNO recebido, e cada <@ba.key>Lâmina Relampejante</> por perto aumenta essa chance em <@ba.vup>+ {sword_rate:0%}</>.\nApós a Imunidade a DNO ser ativada, Zhuang Fangyi também é restaurada para <@ba.heal>{heal:0%}</> de PV Máximo. O efeito de restauração de PV só é acionado uma vez a cada <@ba.vup>{duration:0}</> s.",
+        "Ganha <@ba.vup>{base_rate:0%}</> de chance de imunidade contra DNO recebido, e cada <@ba.key>Lâmina Relampejante</> por perto aumenta essa chance em <@ba.vup>+ {sword_rate:0%}</>.\nApós a Imunidade a DNO ser ativada, Zhuang Fangyi também é restaurada para <@ba.heal>{heal:0%}</> de PV Máximo. O efeito de restauração de PV só é acionado uma vez a cada <@ba.vup>{duration:0}</> s."
       ],
       "name": "Ordenado pelo Paraíso"
     },
@@ -115,6 +107,24 @@
       "file2": "<@profile.key>\"Gosto muito de Tianshi Zhuang, mas parece que não a conheço bem.\" Todos os operadores que trabalharam com ela sentem o mesmo. \nO passado de Tianshi Zhuang é fácil de rastrear. Qualquer visitante da Cidade de Wuling pode obter informações básicas com um guia turístico ou recepcionista local. Para aqueles que desejam saber mais, basta aprofundar-se nos arquivos da Academia do Escritório Tianshi para examinar suas publicações, embora ler todas elas exija uma certa dedicação. E aqueles que conseguirem fazer tudo isso terão uma imagem clara da Tianshi — uma cientista profundamente imersa em seu trabalho, uma Vice-Rainha que serviu Wuling com dedicação por uma década. \nSe quiser deixar de lado os títulos de Tianshi Zhuang e conhecê-la pessoalmente, busque uma oportunidade para ser seu colega de trabalho. A maioria das pessoas descreve sua primeira impressão dela como a brisa suave da Cidade de Wuling em março: gentil, reconfortante e revigorante. Como colega de trabalho, Zhuang poderia desvendar até mesmo os problemas mais difíceis. Ela seria como a brisa fresca do meio do verão que dissipa a frustração e restaura o equilíbrio. A paz reconfortante duraria até que seu experimento encontrasse um obstáculo. E então você sentiria uma tempestade se formando silenciosamente sob sua aparência serena. \nSua fala mudaria. Passaria a ser rápida e implacável, como uma chuva forte e repentina que poucos conseguem acompanhar. Seu passo se aceleraria. Cada passo, uma rajada violenta, fazendo relatórios voarem e caírem das mesas. E, finalmente, sua resolução de problemas se transformaria. Como um ataque relâmpago, ela atacaria diretamente a origem do problema para destruí-lo completamente, um lampejo de luz guiando em meio à desgraça e à escuridão. \nEm pouco tempo, o problema desaparece. A tempestade passa. \nVocê pode achar que conhece Tianshi Zhuang depois de várias rodadas tumultuosas de colaboração. Mas, ao recuperar o fôlego, você perceberá que só viu com mais clareza o lado acadêmico de Sua Vice-Rainha. E então a ficha cai: ela nunca fala de si mesma. Nem com você, nem com ninguém. \nVocê havia entrado no olho do furacão — e não encontrou nada além de quietude. \n\nDOCUMENTO: Notícias Noturnas de Hongshan Vol. 8 \nObituário \nO cirurgião Zhuang Hanqing, 42 anos, um distinto acadêmico da Academia de Ciências de Hongshan, faleceu no último domingo, às 6h23, em decorrência de uma doença, no Primeiro Hospital de Hongshan. \nUma cerimônia memorial e de despedida para a família será realizada nesta quinta-feira no salão principal da Funerária de Hongshan. \nContatos: Seu irmão Zhuang Changqing e irmã Zhuang Daiqing \n\nLog de Comunicações \nZhuang Changqing: Alguém viu Fangyi? Estive ocupado o dia todo. Só agora percebi que ela não está no salão de velório. \nZhuang Daiqing: Não se preocupe. Estou com ela agora. \nZhuang Changqing: Que alívio ouvir isso... Fico feliz que você esteja aqui. Ela é apenas uma criança, e essa é uma perda muito grande. \nZhuang Changqing: Desde que Hanqing faleceu... ela não disse uma palavra. Você conhece a garota melhor do que eu. Ela falou alguma coisa com você? \nZhuang Daiqing: Não... Ela também não fala comigo.</>",
       "file3": "<@profile.key>Logo após o incidente na Estação Científica de Wuling, Tianshi Zhuang foi encarregada de gerenciar diversos abrigos temporários. Sob seu comando, uma sólida linha de defesa entre o local do desastre e a zona segura foi rapidamente estabelecida. Ela também forneceu apoio essencial ao deslocamento de pessoal, à recuperação do local do desastre e à distribuição de suprimentos. \nSeu desempenho excepcional durante o desastre impressionou a liderança da ACH. Apesar de haver muitos outros candidatos qualificados, eles insistiram em confiar a ela a reconstrução da Estação Científica de Wuling. \nSob tamanha pressão, Tianshi Zhuang mergulhou completamente na pesquisa sobre Xiranita. Às vezes, ela até se pegava desejando ser uma máquina que nunca precisasse descansar. \nDe certa forma, ela já era uma. O relógio do laboratório, com a contagem regressiva para as simulações de ruptura da Praga, controlava cada movimento seu, cada tique-taque intensificando sua concentração. Quando a crise diminuía, a tensão dava lugar à atividade enquanto ela se movia entre o laboratório e o Centro de Monitoramento como uma boneca de pilha totalmente carregada. \nFoi um período em que ela sacrificou muito... e perdeu ainda mais. \nEntão, um dia, algo inesperado mudou sua perspectiva. Ela tirou os olhos do trabalho, talvez apenas para se espreguiçar, e ouviu uma conversa. \n\"Estou morrendo de fome, queria muito tomar um ensopado...\" disse um Tianshi recém-chegado, com acne ainda marcando seu rosto jovem. Outro Tianshi respondeu indiferentemente: \"Pare de pensar em comida. Você está aqui para fazer pesquisa.\" \nO jovem Tianshi engoliu o café de um só gole, deu um tapinha nas bochechas e murmurou: \"Certo. Este não é meu lar. Devo manter o foco na missão.\" \nA própria Tianshi Zhuang recordou como se sentiu tonta e atordoada com o incidente, como se tivesse sido atingida por um raio feroz de Lei Fa (Artes do Trovão) Tianshi. \nQuando a tontura passou, ela percebeu claramente o que havia negligenciado: as pilhas de latas de comida, o ar viciado, os rostos exaustos, alguns colegas encolhidos nos cantos, dormindo, e outro do outro lado da mesa, com as costas curvadas depois de passar longas horas na bancada do laboratório. Desesperadamente, procurou por algo verde, mas encontrou apenas o brilho da tela do seu terminal. \nEla saiu correndo em busca de algo verde vivo, mas as pereiras ao longo do caminho estavam quase perdendo suas flores murchas. A rotina diária de trabalho a mantinha tão presa que ela nunca as havia notado em plena floração. \nEm um momento de torpor, ela teve uma lembrança. Houve um tempo em que todos se reuniam ao seu redor enquanto ela desenhava linhas retas e curvas suaves para esboçar uma cidade numa folha de papel. \nO que ela disse então? \nQue a Cidade de Wuling seria um lar para todos. \nEntão, por que ela havia esquecido? \nEla não tinha resposta para isso. \nMas ela sabia de uma coisa: antes tarde do que nunca. \nNaquela noite, todos os Tianshi da Academia ouviram o chamado de Tianshi Zhuang. Ela percorreu todos os prédios departamentais como se estivesse possuída, gritando para que todos saíssem dos laboratórios e admirassem as pétalas de pereira caindo. Muitos foram pegos de surpresa e não sabiam como responder, então ela foi de porta em porta, instigando todos a aproveitarem o que restava da primavera. E quando nem isso funcionou, ela escancarou as janelas e deixou as pétalas caírem nos escritórios. \nQuando as pessoas depois falaram daquele dia, algumas riam e diziam que Tianshi Zhuang tinha se esforçado tanto que ficou louca. Ela simplesmente sorriria e diria que havia se esforçado tanto que chegou à lucidez.</>",
       "file4": "<@profile.key>[Discurso de Formatura] \n\"Hummm... Saudações a todos. Sou Zhuang Fangyi, da turma de ██. É uma verdadeira honra estar aqui hoje em nome dos meus colegas formandos.\" \n\"Sou a mais nova entre vocês. Mesmo os colegas que acabaram de se matricular são dois anos mais velhos. Por isso, gostaria de começar agradecendo a todos pelo carinho e apoio ao longo desses anos.\" \n\"Obrigada por me ajudarem a alcançar as prateleiras mais altas quando eu não conseguia. Obrigada por sempre guardar um lugar na primeira fila para mim nas aulas. Obrigada por conter sua frustração mesmo quando os experimentos emperravam...\" \n\"Acima de tudo, embora todos me mimassem com demonstrações de carinho geralmente reservadas a irmãos mais novos, nenhuma das minhas ideias ou sugestões jamais foi descartada como infantil. Pulei muitos anos na escola e perdi a chance de fazer amizade com colegas da minha idade. Mas, em contrapartida, ganhei amizades inestimáveis com pessoas mais velhas. Perdi um tipo de companheirismo, mas recebi orientação, mentoria e confiança de outro.\" \n\"Agora, meu próximo passo é continuar meus estudos na Academia de Ciências de Hongshan. Os colegas que encontrarei lá provavelmente serão ainda mais experientes... Também espero aprender com eles e construir novas amizades...\" \n\n[Elogio] \n\"Tenho plena consciência de que muitos entre vocês são muito mais qualificados do que eu para estar aqui hoje e proferir este elogio póstumo àqueles que perdemos. Na presença de pais, filhos e filhas, companheiros de longa data e entes queridos... eu não passo de uma jovem.\" \n\"Eu era a membro mais jovem da Estação Científica. O motivo pelo qual pude transmitir nosso anseio em nome de todos foi graças à sua paciência, orientação e cuidado...\" \n\"Minha jornada foi abençoada com o apoio de todos os lados. Muitas vezes perguntei aos meus colegas mais experientes como poderia retribuir a confiança e a sinceridade que me demonstraram. Eles sempre sorriam e me diziam que fazer meu trabalho e honrar as expectativas depositadas em mim eram as melhores formas de retribuição.\" \n\"Embora não estejam mais entre nós, a confiança que depositaram em mim não diminuiu, nem a fé que tinham no projeto Xiranita. Compreendo que este é o momento de retribuir integralmente a todos...\" \n\"E carregarei fielmente essas esperanças e expectativas sobre meus ombros.\" \n\nDiscurso de Orientação \n\"Saudações a todos. É uma grande honra recebê-los em Wuling, onde vocês escolheram dedicar seus anos mais preciosos aos laboratórios, a este lugar e à linha de frente da nossa luta contra a Praga e a Fenda.\" \n\"Sei que muitos de vocês escolheram Wuling por causa de seus pais e anciãos que sacrificaram tudo pela Estação Científica... Ver seus rostos jovens e ansiosos traz de volta memórias — eu me sentei onde vocês estão sentados agora e ouvi seus pais e anciãos que me guiaram por este caminho.\" \n\"Antes eu pensava que o maior presente que me deram eram as conquistas científicas a que eles dedicaram suas vidas para criar. Agora percebo que o presente inclui vocês, que chegaram a Wuling — que atenderam ao chamado deles para seguir seus passos.\" \n\"Antes eu acreditava que a melhor maneira de honrar suas memórias era permanecer nesse caminho e alcançar, sem hesitar, o futuro ideal com que eles sonhavam. Agora entendo que também devo liderar aqueles que vêm depois, guiá-los por esse caminho e ajudá-los a vislumbrar o futuro...\" \n\"Obrigada\". \n\"Obrigada por escolherem trilhar esse caminho comigo.\" \n\nGravação: Festa de Boas-Vindas para Novos Operadores \n\"Já estou meio tonta? Talvez um pouco... Mas isso não está certo. Eu só bebi um pouquinho...\" \n\"Este é o nono? Humm... talvez seja um pouco demais.\" \n\"Sabe, a última vez que me senti tão feliz foi quando cheguei à Estação Científica. Eles até fizeram uma festa de boas-vindas para mim.\" \n\"Eu era muito jovem naquela época, então só bebia suco. Mas mesmo assim me senti meio tonta, observando-os brindar copo após copo e rir sem preocupação. O clima era perfeito.\" \n\"Hoje... sinto exatamente a mesma coisa. O futuro está diante de mim, esperando que eu dê um passo à frente.\" \n\"O que mais há para dizer? Nada... Simplesmente ser feliz já basta.\"</>"
+    },
+    "tags": {
+      "expert1": {
+        "name": "Erudito",
+        "description": "Erudito: Prodígio \nSeu conhecimento é enorme e sua experiência é ampla. Frequentemente, ela é a primeira a descobrir uma solução em situações difíceis."
+      },
+      "expert2": {
+        "name": "Gerenciamento de Equipes",
+        "description": "Gerenciamento de Equipes: Empática \nEla é atenta a cada detalhe ao receber convidados e lidar com diversas tarefas. Trabalhar com ela é como desfrutar de uma brisa primaveril."
+      },
+      "hobby1": {
+        "name": "Caridade",
+        "description": "Caridade: Guardiã \nUm único coração bate dentro dela, mas com espaço suficiente para toda a cidade e seus habitantes."
+      },
+      "hobby2": {
+        "name": "Cultura",
+        "description": "Cultura: Indústria do Amanhecer \nEla tem planos para o futuro de Wuling, e eles vão muito além da tecnologia de Xiranita."
+      }
     }
   },
   "potentials": {
@@ -127,7 +137,7 @@
       "name": "Precisão nos Detalhes"
     },
     "potential3": {
-      "description": "Habilidade de batalha <@ba.key>Mantra da Ruptura</> aprimorada: após <#ba.consume>consumir</> a <#ba.conduct>Eletrificação</>, a habilidade de batalha <#ba.return>restaura</> <@ba.vup>{atb_return:0}</> de PH. Duração da <@ba.key>Lâmina Separadora</> <@ba.vup>+ {sword_duration:0}</> s.",
+      "description": "Habilidade de batalha <@ba.key>Mantra da Ruptura</> aprimorada: após <#ba.consume>consumir</> a <#ba.conduct>Eletrificação</>, a habilidade de batalha <#ba.return>restaura</> <@ba.vup>{atb_return:0}</> de PH. Duração da <@ba.key>Lâmina Relampejante</> <@ba.vup>+ {sword_duration:0}</> s.",
       "name": "Sentido e Resposta"
     },
     "potential4": {
@@ -135,7 +145,7 @@
       "name": "Serenidade Absoluta"
     },
     "potential5": {
-      "description": "<@ba.vup>Durante a transformação do <@ba.key>Empíreo da Verdade</>, o DNO Causado por Zhuang Fangyi ignora {100*ignore_pulse_resist:0}</> da <@ba.pulse>Resistência Elétrica</> do inimigo.",
+      "description": "Durante a transformação do <@ba.key>Empíreo da Verdade</>, o DNO Causado por Zhuang Fangyi ignora <@ba.vup>{-ignore_pulse_resist:0}</> da <@ba.pulse>Resistência Elétrica</> do inimigo.",
       "name": "Tempestade de Transformação"
     }
   },

@@ -2485,5 +2485,21 @@
             "hp_tar": 0.5,
             "atk_up": 1.5
         }
+    },
+    "rWpns": {
+        "skill": [
+            "wpn_sword_0020",
+            "wpn_sword_0019",
+            "wpn_sword_0012"
+        ],
+        "attr": [
+            "wpn_sword_0010"
+        ]
+    },
+    "cv": {
+        "en": "Heitor Assali",
+        "cn": "Cao Zhen",
+        "jp": "Matsukaze Masaya",
+        "kr": "Im Chae-bin"
     }
 }

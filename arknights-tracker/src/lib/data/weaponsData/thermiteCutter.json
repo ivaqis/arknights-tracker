@@ -509,5 +509,14 @@
                 9
             ]
         }
+    },
+    "rOps": {
+        "skill": [
+            "arclight",
+            "akekuri",
+            "alesh",
+            "pogranichnik"
+        ],
+        "attr": []
     }
 }

@@ -712,7 +712,8 @@
     "basicAttack": "Basic Attack",
     "battleSkill": "Battle Skill",
     "comboSkill": "Combo Skill",
-    "ultimate": "Ultimate"
+    "ultimate": "Ultimate",
+    "matchingWeapon": "Matching Weapon"
   },
   "bio": {
     "faction": "Faction",
@@ -762,7 +763,22 @@
     "essence": "Essence",
     "none": "No Essence",
     "addEssence": "Add Essence",
-    "usefulnessTooltip": "Number of items of this type for which this gear is a Good Match"
+    "usefulnessTooltip": "Number of items of this type for which this gear is a Good Match",
+    "matchingSkills": "Matching Skills",
+    "matchingStats": "Matching Stats",
+    "recommendedOperators": "Recommended Operators",
+    "essenceLocations": "Essence Locations",
+    "goToEssences": "Go to Essences",
+    "enemies": "Enemies",
+    "voiceOver": "Voice-Over",
+    "basicInfo": "BASIC INFO",
+    "humanResourcesSummary": "HUMAN RESOURCES SUMMARY",
+    "file1": "FILE 1",
+    "file2": "FILE 2",
+    "file3": "FILE 3",
+    "file4": "FILE 4",
+    "profile": "Profile",
+    "hobbies": "Hobbies"
   },
   "bioValues": {
     "Unknown": "Unknown"

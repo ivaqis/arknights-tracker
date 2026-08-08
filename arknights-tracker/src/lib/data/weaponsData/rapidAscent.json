@@ -476,5 +476,16 @@
                 0.98
             ]
         }
+    },
+    "rOps": {
+        "skill": [
+            "chenQianyu",
+            "rossi"
+        ],
+        "attr": [
+            "endministrator2",
+            "endministrator1",
+            "rossi"
+        ]
     }
 }

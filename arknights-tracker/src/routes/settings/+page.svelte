@@ -999,9 +999,6 @@
         >
             {$t("settings.cache.title")}
         </h2>
-        <p class="text-sm text-gray-500 dark:text-[#B7B6B3] mb-4">
-            {$t("settings.cache.desc")}
-        </p>
         <div class="w-auto inline-block">
             <Button
                 variant="round"

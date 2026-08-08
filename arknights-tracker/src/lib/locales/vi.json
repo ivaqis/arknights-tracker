@@ -325,7 +325,8 @@
     "allBanners": "Tất cả Banner",
     "emptyPageMsg": "Ở đây trống trải quá",
     "equipmentType": "Loại thiết bị",
-    "gearTemplate": "Mẫu Trang Bị"
+    "gearTemplate": "Mẫu Trang Bị",
+    "blueprintLocation": "Vị trí bản thiết kế trang bị"
   },
   "status": {
     "won": "Thắng 50:50",
@@ -618,7 +619,8 @@
     "basicAttack": "Đòn Đánh Thường",
     "battleSkill": "KN Chiến Đấu",
     "comboSkill": "KN Liên Hoàn",
-    "ultimate": "Tuyệt kỹ"
+    "ultimate": "Tuyệt kỹ",
+    "matchingWeapon": "Vũ Khí Phù Hợp"
   },
   "bio": {
     "faction": "Phe phái",
@@ -668,7 +670,21 @@
     "essence": "Tinh Chất",
     "none": "Không có Tinh Chất",
     "addEssence": "Thêm Tinh Chất",
-    "usefulnessTooltip": "Số lượng trang bị thuộc loại này mà trang bị này là lựa chọn tốt"
+    "usefulnessTooltip": "Số lượng trang bị thuộc loại này mà trang bị này là lựa chọn tốt",
+    "matchingSkills": "Kỹ Năng Phù Hợp",
+    "matchingStats": "Chỉ Số Phù Hợp",
+    "voiceOver": "Thuyết minh",
+    "basicInfo": "THÔNG TIN CƠ BẢN",
+    "humanResourcesSummary": "TÓM TẮT NHÂN SỰ",
+    "file1": "HỒ SƠ 1",
+    "file2": "HỒ SƠ 2",
+    "file3": "HỒ SƠ 3",
+    "file4": "HỒ SƠ 4",
+    "profile": "Hồ Sơ",
+    "hobbies": "Sở thích",
+    "goToEssences": "Đi đến Tinh hoa",
+    "essenceLocations": "Vị trí Tinh hoa",
+    "recommendedOperators": "Toán thủ đề xuất"
   },
   "bioValues": {
     "Unknown": "Không rõ"

@@ -2316,5 +2316,22 @@
             "atk_scale": 1.1,
             "atk_scale2": 1.1
         }
+    },
+    "rWpns": {
+        "skill": [
+            "wpn_claym_0017",
+            "wpn_claym_0016",
+            "wpn_claym_0004"
+        ],
+        "attr": [
+            "wpn_claym_0014",
+            "wpn_claym_0008"
+        ]
+    },
+    "cv": {
+        "en": "Rao Zijun",
+        "cn": "Zhang RuoYu",
+        "jp": "Watanabe Akeno",
+        "kr": "Min Ah"
     }
 }

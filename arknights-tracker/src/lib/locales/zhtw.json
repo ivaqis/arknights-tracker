@@ -325,7 +325,8 @@
     "allBanners": "所有卡池",
     "emptyPageMsg": "這裡好空啊",
     "equipmentType": "裝備類型",
-    "gearTemplate": "裝備製造模板"
+    "gearTemplate": "裝備製造模板",
+    "blueprintLocation": "裝備圖紙位置"
   },
   "status": {
     "won": "勝出 50:50",
@@ -618,7 +619,8 @@
     "basicAttack": "普攻",
     "battleSkill": "戰技",
     "comboSkill": "連攜技",
-    "ultimate": "終結技"
+    "ultimate": "終結技",
+    "matchingWeapon": "武器推薦"
   },
   "bio": {
     "faction": "陣營",
@@ -668,7 +670,21 @@
     "essence": "基質",
     "none": "無基質",
     "addEssence": "添加基質",
-    "usefulnessTooltip": "該部位中此裝備屬於較好適配的裝備數量"
+    "usefulnessTooltip": "該部位中此裝備屬於較好適配的裝備數量",
+    "matchingSkills": "技能適用",
+    "matchingStats": "屬性適用",
+    "voiceOver": "遊戲語音",
+    "basicInfo": "基礎檔案",
+    "humanResourcesSummary": "人事簡述",
+    "file1": "檔案資料·一",
+    "file2": "檔案資料·二",
+    "file3": "檔案資料·三",
+    "file4": "檔案資料·四",
+    "profile": "個人名片",
+    "hobbies": "愛好",
+    "goToEssences": "前往基質",
+    "essenceLocations": "基質位置",
+    "recommendedOperators": "推薦幹員"
   },
   "bioValues": {
     "Unknown": "未知"

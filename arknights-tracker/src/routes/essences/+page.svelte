@@ -1,4 +1,5 @@
 <script>
+    import { page } from "$app/stores";
     import BottomSheet from "$lib/components/BottomSheet.svelte";
     import Button from "$lib/components/Button.svelte";
     import WeaponCard from "$lib/components/cards/WeaponCard.svelte";
@@ -368,6 +369,22 @@
         .sort((a, b) => b.weapon.rarity - a.weapon.rarity);
     let selectedWeaponIds = new Set();
     let primaryWeaponId = null;
+    let hasLoadedUrlParam = false;
+
+    $: if (browser && $page?.url && !hasLoadedUrlParam) {
+        const wpParam =
+            $page.url.searchParams.get("weapons") ||
+            $page.url.searchParams.get("weapon");
+        if (wpParam) {
+            hasLoadedUrlParam = true;
+            if (!selectedWeaponIds.has(wpParam)) {
+                selectedWeaponIds.add(wpParam);
+                if (!primaryWeaponId) primaryWeaponId = wpParam;
+                selectedWeaponIds = new Set(selectedWeaponIds);
+                isBottomSheetOpen = true;
+            }
+        }
+    }
 
     function toggleWeaponSelection(wpId) {
         if (selectedWeaponIds.has(wpId)) {

@@ -2088,5 +2088,21 @@
         "potential5": {
             "potential_5_duration": 5
         }
+    },
+    "rWpns": {
+        "skill": [
+            "wpn_sword_0012",
+            "wpn_sword_0019"
+        ],
+        "attr": [
+            "wpn_sword_0013",
+            "wpn_sword_0021"
+        ]
+    },
+    "cv": {
+        "en": "Shu Uchida",
+        "cn": "Kiyo",
+        "jp": "Nagatsuki Aoi",
+        "kr": "Kim I-an"
     }
 }

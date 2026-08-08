@@ -476,5 +476,13 @@
                 70
             ]
         }
+    },
+    "rOps": {
+        "skill": [],
+        "attr": [
+            "xaihi",
+            "gilberta",
+            "zhuangfy"
+        ]
     }
 }

@@ -2141,5 +2141,20 @@
         "potential5": {
             "usp": 5
         }
+    },
+    "rWpns": {
+        "skill": [
+            "wpn_lance_0011",
+            "wpn_lance_0013"
+        ],
+        "attr": [
+            "wpn_lance_0006"
+        ]
+    },
+    "cv": {
+        "en": "Risa Mei",
+        "cn": "Vila",
+        "jp": "Takahashi Karin",
+        "kr": "Lee Eun-jo"
     }
 }

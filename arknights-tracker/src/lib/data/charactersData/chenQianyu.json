@@ -2133,5 +2133,21 @@
             "coolDown": -3,
             "potential5": 1
         }
+    },
+    "rWpns": {
+        "skill": [
+            "wpn_sword_0011",
+            "wpn_sword_0015"
+        ],
+        "attr": [
+            "wpn_sword_0021",
+            "wpn_sword_0013"
+        ]
+    },
+    "cv": {
+        "en": "Rebecca Hanssen",
+        "cn": "MAO",
+        "jp": "Suzushiro Sayumi",
+        "kr": "Jeong Hae-eun"
     }
 }

@@ -2243,5 +2243,22 @@
             "potential5_dmg_rate": 1.2,
             "coolDown": -2
         }
+    },
+    "rWpns": {
+        "skill": [
+            "wpn_funnel_0013",
+            "wpn_funnel_0010",
+            "wpn_funnel_0006"
+        ],
+        "attr": [
+            "wpn_funnel_0005",
+            "wpn_funnel_0014"
+        ]
+    },
+    "cv": {
+        "en": "Lindsay Sheppard",
+        "cn": "Cool",
+        "jp": "Kanemoto Hisako",
+        "kr": "Kim Ha-ru"
     }
 }

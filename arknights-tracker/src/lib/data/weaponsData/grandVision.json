@@ -487,5 +487,15 @@
                 20
             ]
         }
+    },
+    "rOps": {
+        "skill": [
+            "endministrator2",
+            "endministrator1"
+        ],
+        "attr": [
+            "chenQianyu",
+            "akekuri"
+        ]
     }
 }

@@ -321,7 +321,8 @@
     "allBanners": "Semua Banner",
     "emptyPageMsg": "Kosong sekali di sini",
     "equipmentType": "Tipe Peralatan",
-    "gearTemplate": "Templat Gear"
+    "gearTemplate": "Templat Gear",
+    "blueprintLocation": "Lokasi Templat Perlengkapan"
   },
   "status": {
     "won": "Menang 50:50",
@@ -576,7 +577,8 @@
     "basicAttack": "Serangan Dasar",
     "battleSkill": "Skill Tarung",
     "comboSkill": "Skill Kombo",
-    "ultimate": "Ultimate"
+    "ultimate": "Ultimate",
+    "matchingWeapon": "Senjata yang Cocok"
   },
   "bio": {
     "faction": "Faksi",
@@ -626,7 +628,21 @@
     "essence": "Esensi",
     "none": "Tanpa Esensi",
     "addEssence": "Tambahkan Esensi",
-    "usefulnessTooltip": "Jumlah item tipe ini yang mana perlengkapan ini adalah pasangan yang bagus"
+    "usefulnessTooltip": "Jumlah item tipe ini yang mana perlengkapan ini adalah pasangan yang bagus",
+    "matchingSkills": "Skill yang Cocok",
+    "matchingStats": "Stat yang Cocok",
+    "voiceOver": "Pengisian Suara",
+    "basicInfo": "INFO DASAR",
+    "humanResourcesSummary": "RINGKASAN SUMBER DAYA MANUSIA",
+    "file1": "FILE 1",
+    "file2": "FILE 2",
+    "file3": "FILE 3",
+    "file4": "FILE 4",
+    "profile": "Profil",
+    "hobbies": "Hobi",
+    "goToEssences": "Buka Esensi",
+    "essenceLocations": "Lokasi Esensi",
+    "recommendedOperators": "Operator yang Direkomendasikan"
   },
   "bioValues": {
     "Unknown": "Tidak Diketahui"

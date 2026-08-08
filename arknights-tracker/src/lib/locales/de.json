@@ -321,7 +321,8 @@
     "allBanners": "Alle Banner",
     "emptyPageMsg": "Wie leer es hier ist",
     "equipmentType": "Ausrüstungstyp",
-    "gearTemplate": "Ausrüstungsvorlage"
+    "gearTemplate": "Ausrüstungsvorlage",
+    "blueprintLocation": "Ausrüstungsvorlagen-Standort"
   },
   "status": {
     "won": "Gewonnen 50:50",
@@ -576,7 +577,8 @@
     "basicAttack": "Standardangriff",
     "battleSkill": "Kampffertigkeit",
     "comboSkill": "Kombofertigkeit",
-    "ultimate": "Ultimative Fertigkeit"
+    "ultimate": "Ultimative Fertigkeit",
+    "matchingWeapon": "Passende Waffe"
   },
   "bio": {
     "faction": "Fraktion",
@@ -626,7 +628,21 @@
     "essence": "Essenz",
     "none": "Ohne Essenz",
     "addEssence": "Essenz hinzufügen",
-    "usefulnessTooltip": "Anzahl der Gegenstände dieses Typs, für die diese Ausrüstung eine gute Übereinstimmung ist"
+    "usefulnessTooltip": "Anzahl der Gegenstände dieses Typs, für die diese Ausrüstung eine gute Übereinstimmung ist",
+    "matchingSkills": "Passende Fertigkeiten",
+    "matchingStats": "Passende Werte",
+    "voiceOver": "Sprachausgabe",
+    "basicInfo": "GRUNDLEGENDE INFO",
+    "humanResourcesSummary": "ZUSAMMENFASSUNG DER PERSONALABTEILUNG",
+    "file1": "1. DATEI",
+    "file2": "2. DATEI",
+    "file3": "3. DATEI",
+    "file4": "4. DATEI",
+    "profile": "Profil",
+    "hobbies": "Hobbys",
+    "goToEssences": "Zu den Essenzen",
+    "essenceLocations": "Essenzen-Standorte",
+    "recommendedOperators": "Empfohlene Operatoren"
   },
   "bioValues": {
     "Unknown": "Unbekannt"

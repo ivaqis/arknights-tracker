@@ -9,6 +9,7 @@
   import Icon from "$lib/components/Icon.svelte";
   import Modal from "$lib/components/modals/Modal.svelte";
   import ConfirmationModal from "$lib/components/modals/ConfirmationModal.svelte";
+  import Tooltip from "$lib/components/Tooltip.svelte";
 
   export let isOpen = false;
 
@@ -346,14 +347,17 @@
                     </span>
                   {/if}
                   {#if cat.size > 0}
-                    <button
-                      type="button"
-                      on:click={() => promptClearCategory(cat)}
-                      class="p-1 rounded-lg text-gray-400 hover:text-red-500 hover:bg-red-500/10 dark:hover:bg-red-500/20 transition-all"
-                      title={$t("settings.cache.confirmClearCategory").replace("{name}", cat.title)}
+                    <Tooltip
+                      text={$t("settings.cache.confirmClearCategory").replace("{name}", cat.title)}
                     >
-                      <Icon name="trash" class="w-4 h-4" />
-                    </button>
+                      <button
+                        type="button"
+                        on:click={() => promptClearCategory(cat)}
+                        class="p-1 rounded-lg text-gray-400 hover:text-red-500 hover:bg-red-500/10 dark:hover:bg-red-500/20 transition-all"
+                      >
+                        <Icon name="trash" class="w-4 h-4" />
+                      </button>
+                    </Tooltip>
                   {/if}
                 </div>
               </div>

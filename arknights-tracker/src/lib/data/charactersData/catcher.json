@@ -2407,5 +2407,21 @@
         "potential5": {
             "potential5_atb": 10
         }
+    },
+    "rWpns": {
+        "skill": [
+            "wpn_claym_0006",
+            "wpn_claym_0015"
+        ],
+        "attr": [
+            "wpn_claym_0008",
+            "wpn_claym_0011"
+        ]
+    },
+    "cv": {
+        "en": "Kevin Andrew Rivera",
+        "cn": "Yu Kailong",
+        "jp": "Kijima Ryuichi",
+        "kr": "Kim Hye-sung"
     }
 }

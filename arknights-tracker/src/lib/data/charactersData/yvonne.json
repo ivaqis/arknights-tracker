@@ -2521,5 +2521,21 @@
             "atk_up": 0.1,
             "crit_dmg_up": 0.3
         }
+    },
+    "rWpns": {
+        "skill": [
+            "wpn_pistol_0010",
+            "wpn_pistol_0006"
+        ],
+        "attr": [
+            "wpn_pistol_0008",
+            "wpn_pistol_0005"
+        ]
+    },
+    "cv": {
+        "en": "Clare Louise Connolly",
+        "cn": "Hou Xiaofei",
+        "jp": "Amamiya Sora",
+        "kr": "Yeo Yun-mi"
     }
 }

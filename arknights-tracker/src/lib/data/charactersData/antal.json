@@ -2108,5 +2108,21 @@
             "delay_time": 20,
             "potential_5_rate": 0.04
         }
+    },
+    "rWpns": {
+        "skill": [
+            "wpn_funnel_0008",
+            "wpn_funnel_0014"
+        ],
+        "attr": [
+            "wpn_funnel_0009",
+            "wpn_funnel_0005"
+        ]
+    },
+    "cv": {
+        "en": "Jacob Craner",
+        "cn": "Liu Yuxuan",
+        "jp": "Takeuchi Shunsuke",
+        "kr": "Lee Gyu-chang"
     }
 }

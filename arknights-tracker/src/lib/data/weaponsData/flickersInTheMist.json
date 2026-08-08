@@ -498,5 +498,11 @@
                 3
             ]
         }
+    },
+    "rOps": {
+        "skill": [
+            "zhuangfy"
+        ],
+        "attr": []
     }
 }

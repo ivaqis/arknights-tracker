@@ -321,7 +321,8 @@
     "allBanners": "Tutti i Banner",
     "emptyPageMsg": "Com'è vuoto qui",
     "equipmentType": "Tipo di equipaggiamento",
-    "gearTemplate": "Schema per l'equipaggiamento"
+    "gearTemplate": "Schema per l'equipaggiamento",
+    "blueprintLocation": "Posizione modello equipaggiamento"
   },
   "status": {
     "won": "Vinto 50:50",
@@ -576,7 +577,8 @@
     "basicAttack": "Attacco base",
     "battleSkill": "Abilità di combattimento",
     "comboSkill": "Abilità combo",
-    "ultimate": "Abilità suprema"
+    "ultimate": "Abilità suprema",
+    "matchingWeapon": "Arma corrispondente"
   },
   "bio": {
     "faction": "Fazione",
@@ -626,7 +628,21 @@
     "essence": "Essenza",
     "none": "Senza Essenza",
     "addEssence": "Aggiungi Essenza",
-    "usefulnessTooltip": "Numero di oggetti di questo tipo per i quali questo equipaggiamento è una buona corrispondenza"
+    "usefulnessTooltip": "Numero di oggetti di questo tipo per i quali questo equipaggiamento è una buona corrispondenza",
+    "matchingSkills": "Abilità corrispondenti",
+    "matchingStats": "Statistiche corrispondenti",
+    "voiceOver": "Dialoghi",
+    "basicInfo": "INFO BASE",
+    "humanResourcesSummary": "RAPPORTO DELLE RISORSE UMANE",
+    "file1": "DOCUMENTO 1",
+    "file2": "DOCUMENTO 2",
+    "file3": "DOCUMENTO 3",
+    "file4": "DOCUMENTO 4",
+    "profile": "Profilo",
+    "hobbies": "Interessi",
+    "goToEssences": "Vai alle Essenze",
+    "essenceLocations": "Posizioni delle essenze",
+    "recommendedOperators": "Operatori consigliati"
   },
   "bioValues": {
     "Unknown": "Sconosciuto"

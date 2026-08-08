@@ -2455,5 +2455,21 @@
         "potential5": {
             "ignore_pulse_resist": -15
         }
+    },
+    "rWpns": {
+        "skill": [
+            "wpn_funnel_0015",
+            "wpn_funnel_0017",
+            "wpn_funnel_0009"
+        ],
+        "attr": [
+            "wpn_funnel_0007"
+        ]
+    },
+    "cv": {
+        "en": "Molly Zhang",
+        "cn": "Ziyi Qin",
+        "jp": "Kuwashima Houko",
+        "kr": "Song Ha-rim"
     }
 }

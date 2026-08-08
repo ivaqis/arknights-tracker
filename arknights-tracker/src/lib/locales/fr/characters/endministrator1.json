@@ -83,6 +83,16 @@
       "main": "<@profile.key>NOM DE CODE : Endministrator\nSEXE : ■■\nAUTHENTIFICATION : ■■\nDATE DE NAISSANCE : ■■\nRACE : ■■\n\nVous ne vous souvenez de rien.\nVotre mémoire est en lambeaux, tels des rêves réduits en poussière, disparaissant à la moindre pensée.\nIl arrive que cela vous perturbe, ou vous mette mal à l'aise, mais cela vous offre un moment de calme pendant lequel vous pouvez vous poser et réfléchir.\nLa plupart du temps, cependant, vous ne pouvez vous permettre de douter. Vous vous contentez de faire confiance à ceux qui vous entourent, et vous allez de l'avant.\nPeut-être avez-vous dissimulé ces souvenirs, rien qu'un moment...\nAinsi, vous ne vous souvenez de rien.</>",
       "humanResources": "<@profile.key>Vous avez vécu toute l'histoire de Talos-II...</>",
       "file1": "<@profile.key>Mais... qu'allez-vous faire de son avenir ?</>"
+    },
+    "tags": {
+      "expert1": {
+        "name": "???",
+        "description": ""
+      },
+      "hobby1": {
+        "name": "???",
+        "description": ""
+      }
     }
   },
   "potentials": {

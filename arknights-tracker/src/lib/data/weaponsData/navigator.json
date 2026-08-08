@@ -498,5 +498,14 @@
                 15
             ]
         }
+    },
+    "rOps": {
+        "skill": [
+            "fluorite",
+            "tangtang"
+        ],
+        "attr": [
+            "yvonne"
+        ]
     }
 }

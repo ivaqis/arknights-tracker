@@ -321,7 +321,8 @@
     "allBanners": "Todos os Banners",
     "emptyPageMsg": "Como está vazio aqui",
     "equipmentType": "Tipo de equipamento",
-    "gearTemplate": "Gabarito de Equipamento"
+    "gearTemplate": "Gabarito de Equipamento",
+    "blueprintLocation": "Localização do modelo de equipamento"
   },
   "status": {
     "won": "Ganho 50:50",
@@ -576,7 +577,8 @@
     "basicAttack": "Ataque Básico",
     "battleSkill": "Habilidade de Batalha",
     "comboSkill": "Combo de Habilidades",
-    "ultimate": "Habilidade Suprema"
+    "ultimate": "Habilidade Suprema",
+    "matchingWeapon": "Arma Correspondente"
   },
   "bio": {
     "faction": "Facção",
@@ -626,7 +628,21 @@
     "essence": "Essência",
     "none": "Sem Essência",
     "addEssence": "Adicionar Essência",
-    "usefulnessTooltip": "Número de itens deste tipo para os quais este equipamento é uma boa opção"
+    "usefulnessTooltip": "Número de itens deste tipo para os quais este equipamento é uma boa opção",
+    "matchingSkills": "Habilidades Correspondentes",
+    "matchingStats": "Atributos Correspondentes",
+    "voiceOver": "Dublagem",
+    "basicInfo": "INFORMAÇÕES BÁSICAS",
+    "humanResourcesSummary": "RESUMO DE RECURSOS HUMANOS",
+    "file1": "ARQUIVO 1",
+    "file2": "ARQUIVO 2",
+    "file3": "ARQUIVO 3",
+    "file4": "ARQUIVO 4",
+    "profile": "Perfil",
+    "hobbies": "Hobbies",
+    "goToEssences": "Ir para Essências",
+    "essenceLocations": "Localizações das essências",
+    "recommendedOperators": "Operadores recomendados"
   },
   "bioValues": {
     "Unknown": "Desconhecido"

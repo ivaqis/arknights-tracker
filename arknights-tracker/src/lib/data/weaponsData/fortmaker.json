@@ -476,5 +476,11 @@
                 70
             ]
         }
+    },
+    "rOps": {
+        "skill": [],
+        "attr": [
+            "laevatain"
+        ]
     }
 }

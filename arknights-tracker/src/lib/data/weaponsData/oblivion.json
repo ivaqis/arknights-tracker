@@ -509,5 +509,15 @@
                 15
             ]
         }
+    },
+    "rOps": {
+        "skill": [
+            "perlica",
+            "zhuangfy",
+            "arcane"
+        ],
+        "attr": [
+            "antal"
+        ]
     }
 }

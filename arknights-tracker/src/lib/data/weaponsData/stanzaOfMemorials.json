@@ -498,5 +498,14 @@
                 9
             ]
         }
+    },
+    "rOps": {
+        "skill": [],
+        "attr": [
+            "perlica",
+            "antal",
+            "ardelia",
+            "arcane"
+        ]
     }
 }

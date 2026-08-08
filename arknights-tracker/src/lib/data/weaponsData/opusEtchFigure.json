@@ -509,5 +509,12 @@
                 3
             ]
         }
+    },
+    "rOps": {
+        "skill": [
+            "gilberta",
+            "ardelia"
+        ],
+        "attr": []
     }
 }

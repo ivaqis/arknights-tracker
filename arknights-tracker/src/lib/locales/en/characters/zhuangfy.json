@@ -24,52 +24,44 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "BATK SEQ 1 Multiplier",
-        "batkSeq2Multiplier": "BATK SEQ 2 Multiplier",
-        "batkSeq3Multiplier": "BATK SEQ 3 Multiplier",
-        "batkSeq4Multiplier": "BATK SEQ 4 Multiplier",
-        "batkSeq5Multiplier": "BATK SEQ 5 Multiplier",
-        "finisherAtkMultiplier": "Finisher ATK Multiplier",
-        "diveAtkMultiplier": "Dive ATK Multiplier"
-      },
       "name": "Jolting Arts",
-      "description": "BASIC ATTACK: \nAn attack with up to 5 sequences that deals <@ba.pulse>Electric DMG</>. As the controlled operator, <#ba.lastcombo>Final Strike</> also deals <@ba.poise>{poise:0}</> Stagger. \n\nDIVE ATTACK: \nBasic attack performed in mid-air becomes a dive attack that deals <@ba.pulse>Electric DMG</> to nearby enemies. \n\nFINISHER: \nBasic attack performed near a Staggered enemy becomes a finisher that deals massive <@ba.pulse>Electric DMG</> and recovers some SP."
+      "description": "BASIC ATTACK: \nAn attack with up to 5 sequences that deals <@ba.pulse>Electric DMG</>. As the controlled operator, <#ba.lastcombo>Final Strike</> also deals <@ba.poise>{poise:0}</> Stagger. \n\nDIVE ATTACK: \nBasic attack performed in mid-air becomes a dive attack that deals <@ba.pulse>Electric DMG</> to nearby enemies. \n\nFINISHER: \nBasic attack performed near a Staggered enemy becomes a finisher that deals massive <@ba.pulse>Electric DMG</> and recovers some SP.",
+      "batkSeq1Multiplier": "BATK SEQ 1 Multiplier",
+      "batkSeq2Multiplier": "BATK SEQ 2 Multiplier",
+      "batkSeq3Multiplier": "BATK SEQ 3 Multiplier",
+      "batkSeq4Multiplier": "BATK SEQ 4 Multiplier",
+      "batkSeq5Multiplier": "BATK SEQ 5 Multiplier",
+      "finisherAtkMultiplier": "Finisher ATK Multiplier",
+      "diveAtkMultiplier": "Dive ATK Multiplier"
     },
     "battleSkill": {
-      "battleSkill": {
-        "thunderStrikeDmgMultiplier": "Thunder Strike DMG Multiplier",
-        "totalStagger": "Total Stagger",
-        "bonusDmgMultiplierPerStatusLevelOfElectrificationConsumed": "Bonus DMG Multiplier per Status Level of Electrification Consumed",
-        "bonusUltimateEnergyPerThunderStrike": "Bonus Ultimate Energy per Thunder Strike",
-        "sunderbladeLimit": "Sunderblade Limit",
-        "sunderbladeDurationS": "Sunderblade Duration (s)",
-        "duringUltimateThunderStrikeDmgMultiplier": "During Ultimate: Thunder Strike DMG Multiplier",
-        "duringUltimateBonusDmgMultiplierPerStatusLevelOfElectrificationConsumed": "During Ultimate: Bonus DMG Multiplier per Status Level of Electrification Consumed"
-      },
       "name": "Mantra of Sundering",
-      "description": "<#ba.consume>Consumes</> the target's <#ba.conduct>Electrification</> to increase the DMG multiplier of this battle skill and create [<#ba.statuslevel>Status Level</> of <#ba.conduct>Electrification</> <#ba.consume>consumed</> <@ba.key>+1</>] <@ba.key>Sunderblades</>. If the battlefield has fewer than {free_sword_limit:0} <@ba.key>Sunderblades</>, Mantra of Sundering can still create 1 <@ba.key>Sunderblade</>, even if it does not <#ba.consume>consume</> any target's <#ba.conduct>Electrification</>.\nZhuang Fangyi then channels all <@ba.key>Sunderblades</> nearby to successively unleash Thunder Strikes on the target, dealing <@ba.pulse>Electric DMG</> and giving bonus Ultimate Energy, with the final Thunder Strike dealing {final_rate:0} times the DMG.\n<@ba.info>A single battle skill casting can only create a max of {max_conduct_sword:0} Sunderblades.</>"
+      "description": "<#ba.consume>Consumes</> the target's <#ba.conduct>Electrification</> to increase the DMG multiplier of this battle skill and create [<#ba.statuslevel>Status Level</> of <#ba.conduct>Electrification</> <#ba.consume>consumed</> <@ba.key>+1</>] <@ba.key>Sunderblades</>. If the battlefield has fewer than {free_sword_limit:0} <@ba.key>Sunderblades</>, Mantra of Sundering can still create 1 <@ba.key>Sunderblade</>, even if it does not <#ba.consume>consume</> any target's <#ba.conduct>Electrification</>.\nZhuang Fangyi then channels all <@ba.key>Sunderblades</> nearby to successively unleash Thunder Strikes on the target, dealing <@ba.pulse>Electric DMG</> and giving bonus Ultimate Energy, with the final Thunder Strike dealing {final_rate:0} times the DMG.\n<@ba.info>A single battle skill casting can only create a max of {max_conduct_sword:0} Sunderblades.</>",
+      "thunderStrikeDmgMultiplier": "Thunder Strike DMG Multiplier",
+      "totalStagger": "Total Stagger",
+      "bonusDmgMultiplierPerStatusLevelOfElectrificationConsumed": "Bonus DMG Multiplier per Status Level of Electrification Consumed",
+      "bonusUltimateEnergyPerThunderStrike": "Bonus Ultimate Energy per Thunder Strike",
+      "sunderbladeLimit": "Sunderblade Limit",
+      "sunderbladeDurationS": "Sunderblade Duration (s)",
+      "duringUltimateThunderStrikeDmgMultiplier": "During Ultimate: Thunder Strike DMG Multiplier",
+      "duringUltimateBonusDmgMultiplierPerStatusLevelOfElectrificationConsumed": "During Ultimate: Bonus DMG Multiplier per Status Level of Electrification Consumed"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "DMG Multiplier",
-        "stagger": "Stagger",
-        "ultimateEnergyGain": "Ultimate Energy Gain",
-        "additionalUltimateEnergyPerInflictionStack": "Additional Ultimate Energy per Infliction Stack",
-        "duringUltimateDmgMultiplier": "During Ultimate: DMG Multiplier"
-      },
       "name": "Breath of Transformation",
-      "description": "COMBO TRIGGER: When the controlled operator's <#ba.lastcombo>Final Strike</> or Finisher hits an enemy with <#ba.pulseinflict>Electric Infliction</>.\nZhuang Fangyi creates a Xiranblitz Array that attacks the enemy and deals <@ba.pulse>Electric DMG</>. If the Array hits an enemy that has <#ba.pulseinflict>Electric Infliction</> stack(s), then it will <#ba.consume>consume</> the said <#ba.pulseinflict>Electric Infliction</> stack(s), forcibly apply <#ba.conduct>Electrification</>, and give Ultimate Energy based on the number of stacks <#ba.consume>consumed</>.\nIf <#ba.conduct>Electrification</> is forcibly applied to an enemy that already has <#ba.conduct>Electrification</>, then apply <#ba.statuslevel>Status Level</> +1 to the enemy's <#ba.conduct>Electrification</>."
+      "description": "COMBO TRIGGER: When the controlled operator's <#ba.lastcombo>Final Strike</> or Finisher hits an enemy with <#ba.pulseinflict>Electric Infliction</>.\nZhuang Fangyi creates a Xiranblitz Array that attacks the enemy and deals <@ba.pulse>Electric DMG</>. If the Array hits an enemy that has <#ba.pulseinflict>Electric Infliction</> stack(s), then it will <#ba.consume>consume</> the said <#ba.pulseinflict>Electric Infliction</> stack(s), forcibly apply <#ba.conduct>Electrification</>, and give Ultimate Energy based on the number of stacks <#ba.consume>consumed</>.\nIf <#ba.conduct>Electrification</> is forcibly applied to an enemy that already has <#ba.conduct>Electrification</>, then apply <#ba.statuslevel>Status Level</> +1 to the enemy's <#ba.conduct>Electrification</>.",
+      "dmgMultiplier": "DMG Multiplier",
+      "stagger": "Stagger",
+      "ultimateEnergyGain": "Ultimate Energy Gain",
+      "additionalUltimateEnergyPerInflictionStack": "Additional Ultimate Energy per Infliction Stack",
+      "duringUltimateDmgMultiplier": "During Ultimate: DMG Multiplier"
     },
     "ultimate": {
-      "ultimate": {
-        "durationS": "Duration (s)",
-        "duringUltimateBatkSeq1Multiplier": "During Ultimate: BATK SEQ 1 Multiplier",
-        "duringUltimateBatkSeq2Multiplier": "During Ultimate: BATK SEQ 2 Multiplier",
-        "duringUltimateBatkSeq3Multiplier": "During Ultimate: BATK SEQ 3 Multiplier"
-      },
       "name": "Smiting Tempest",
-      "description": "Transforms into the <@ba.key>Empyrean of Truth</> that grants these enhancements:\nZhuang Fangyi's basic attacks are enhanced and her actions are harder to interrupt;\nBattle skill <@ba.key>Mantra of Sundering</> gains a higher DMG multiplier and an increased effect range, and the final Thunder Strike also applies <#ba.pulseinflict>Electric Infliction</> to the target hit.\nCombo skill <@ba.key>Breath of Transformation</> gains a higher DMG multiplier, cooldown becomes {combo_cd_rate:0} times faster, and effects are applied to enemies within a small area.\nThe first casting of the battle skill <@ba.key>Mantra of Sundering</> on an available target does not consume SP nor <#ba.conduct>Electrification</>, and is guaranteed to create 3 <@ba.key>Sunderblades</> even if the target has no <#ba.conduct>Electrification</>."
+      "description": "Transforms into the <@ba.key>Empyrean of Truth</> that grants these enhancements:\nZhuang Fangyi's basic attacks are enhanced and her actions are harder to interrupt;\nBattle skill <@ba.key>Mantra of Sundering</> gains a higher DMG multiplier and an increased effect range, and the final Thunder Strike also applies <#ba.pulseinflict>Electric Infliction</> to the target hit.\nCombo skill <@ba.key>Breath of Transformation</> gains a higher DMG multiplier, cooldown becomes {combo_cd_rate:0} times faster, and effects are applied to enemies within a small area.\nThe first casting of the battle skill <@ba.key>Mantra of Sundering</> does not consume SP nor <#ba.conduct>Electrification</>, and if a target is available, the battle skill is guaranteed to create 3 <@ba.key>Sunderblades</> even if the target has no <#ba.conduct>Electrification</>.",
+      "durationS": "Duration (s)",
+      "duringUltimateBatkSeq1Multiplier": "During Ultimate: BATK SEQ 1 Multiplier",
+      "duringUltimateBatkSeq2Multiplier": "During Ultimate: BATK SEQ 2 Multiplier",
+      "duringUltimateBatkSeq3Multiplier": "During Ultimate: BATK SEQ 3 Multiplier"
     },
     "indicator": {
       "levels": [
@@ -89,8 +81,8 @@
     },
     "talent2": {
       "levels": [
-        "Gains a <@ba.vup>{base_rate:0%}</> chance of immunity against DMG taken, with each <@ba.key>Sunderblade</> nearby increasing this chance by <@ba.vup>+{sword_rate:0%}</>.\nAfter DMG Immunity is triggered, Zhuang Fangyi is also restored for <@ba.heal>{heal:0%}</> Max HP. The HP restoration effect only triggers once every <@ba.vup>{duration:0}</>s.",
-        "Gains a <@ba.vup>{base_rate:0%}</> chance of immunity against DMG taken, with each <@ba.key>Sunderblade</> nearby increasing this chance by <@ba.vup>+{sword_rate:0%}</>.\nAfter DMG Immunity is triggered, Zhuang Fangyi is also restored for <@ba.heal>{heal:0%}</> Max HP. The HP restoration effect only triggers once every <@ba.vup>{duration:0}</>s."
+        "Gains a <@ba.vup>{base_rate:0%}</> chance of immunity against DMG taken, with each <@ba.key>Sunderblade</> nearby increasing this chance by <@ba.vup>+{sword_rate:0%}</>.\nAfter DMG Immunity is triggered, Zhuang Fangyi is also restored for <@ba.heal>{heal:0%}</> Max HP. The HP restoration effect can only trigger once every <@ba.vup>{duration:0}</>s.",
+        "Gains a <@ba.vup>{base_rate:0%}</> chance of immunity against DMG taken, with each <@ba.key>Sunderblade</> nearby increasing this chance by <@ba.vup>+{sword_rate:0%}</>.\nAfter DMG Immunity is triggered, Zhuang Fangyi is also restored for <@ba.heal>{heal:0%}</> Max HP. The HP restoration effect can only trigger once every <@ba.vup>{duration:0}</>s."
       ],
       "name": "Ordained by Heaven"
     },
@@ -115,6 +107,24 @@
       "file2": "<@profile.key>\"I really like Tianshi Zhuang, but I don't seem to know her well.\" Every operator who worked with her feels this way. \nTianshi Zhuang's past is easy to trace. Any visitor to Wuling City can get the basics from a local tour guide or receptionist. For those who wish to know more, simply dig deeper into the archives of the Tianshi Bureau Academy to peruse her publications, though reading them all takes some dedication. And those who manage to do all that would have a clear picture of the Tianshi — A scientist deeply immersed in her work, a Viceroy who has dutifully served Wuling for a decade. \nIf you wish to set aside Tianshi Zhuang's titles and know her personally, seek out an opportunity to be her coworker. Most people describe their first impression of her as the soothing gusts of Wuling City in March: gentle, comforting, and refreshing. As a coworker, Zhuang could unravel even the most recalcitrant of problems. She would be the cool midsummer breeze that takes away frustration and restores balance. The comfortable peace would last until your experiment hits a bottleneck. And then you'd sense a storm quietly brewing beneath her composed exterior. \nHer speech would change. It becomes quick and relentless, like a sudden downpour of which few can keep pace. Her stride would quicken. Every step a violent gust, sending reports flapping and fluttering off the tabletops. And finally, her problem-solving would transform. Like a blitz, she strikes directly at the source of the issue to completely shatter it, a guiding flash of light in the face of doom and gloom. \nSoon enough, the problem is no more. The storm subsides. \nYou might think you know Tianshi Zhuang after several tumultuous rounds of collaboration. But as you catch your breath, you would realize that you only saw her scholarly side of Her Viceroyalty more clearly. And then it hits you: she never talks about herself. Not to you, not to anyone. \nYou had stepped into the eye of the storm — and found nothing but stillness. \n\nDOCUMENT: Hongshan Evening News Vol. 8 \nObituary \nSurgeon Zhuang Hanqing, a distinguished scholar at Hongshan Academy of Sciences, passed away due to illness last Sunday at 6:23 AM at Hongshan First Hospital, aged 42. \nA family memorial and farewell service will be held this Thursday in the main hall of Hongshan Funeral Home. \nContacts: Her brother Zhuang Changqing; sister Zhuang Daiqing \n\nCommunication Log \nZhuang Changqing: Has anyone seen Fangyi? I've been busy all day. Just realized she's not in the mourning hall. \nZhuang Daiqing: Don't worry. I'm with her now. \nZhuang Changqing: That's a relief to hear... I'm glad you're here. She's just a child, and this is such a heavy loss. \nZhuang Changqing: Ever since Hanqing passed ... she hasn't said a word. You know the girl better than me. Has she said anything to you? \nZhuang Daiqing: No... She won't speak to me either.</>",
       "file3": "<@profile.key>Shortly after the Wuling Science Station incident, Tianshi Zhuang was entrusted with managing several temporary shelters. Under her command, a strong line of defense between the disaster site and the safe zone was quickly established. She also provided essential support to personnel deployment, disaster site remediation, and supply distribution. \nHer exceptional performance during the disaster impressed the HAS leadership. Despite many other qualified candidates, they insisted on entrusting her with the rebuilding of Wuling Science Station. \nUnder such pressure, Tianshi Zhuang immersed herself completely in research on Xiranite. At times, she even caught herself wishing she were a machine that never needed rest. \nIn a sense, she already was one. The lab's countdown clock for Blight rupture simulations governed her every move, each tick tightening her focus. When the crisis eased, tension gave way to activity as she buzzed between the lab and the Monitoring Center like a fully wound-up clockwork doll. \nIt was a period when she sacrificed much ... and missed even more. \nThen one day, something unexpected shifted her perspective. She looked up from her work, perhaps just to stretch, and overheard a conversation. \n\"I'm starving, I really want hot pot...\" said a newly joined Tianshi, acne still dotting his youthful face. Another Tianshi responded indifferently, \"Stop thinking about food. You're here to do research.\" \nThe young Tianshi gulped his coffee, patted his cheeks, and muttered, \"Right. This isn't home. I should keep my mind on the mission.\" \nTianshi Zhuang herself recalled how she felt dizzy and stunned by this incident, as though struck by a fierce bolt of Tianshi Lei Fa (Thunder Arts). \nWhen the dizziness faded, she clearly realized what she had neglected — the piles of food tins, stale air, exhausted faces, some colleagues curled up in corners asleep, and another opposite her with a back crooked after spending long hours at the lab bench. Desperately she searched for something green, only to find the glow of her terminal screen. \nShe rushed outside in search of living green, but the pear trees along the path were close to shedding their wilted flowers. The daily routine of work kept her so trapped that she never noticed them in full bloom. \nIn a lapse of stupor she had a flash back. There was a time when everyone gathered around her as she drew straight lines and gentle curves to draft a city upon a sheet of paper. \nWhat did she say then? \nShe said Wuling City would be a home for everyone. \nSo why had she forgotten? \nShe had no answer for that. \nBut she knew one thing: Better late than never. \nThat evening, every Tianshi in the Academy heard Tianshi Zhuang's call. She raced through every departmental buildings as though possessed, loudly calling out for everyone to leave the labs and admire the falling pear blossoms. Many were taken by surprise and did not know how to respond, so she went door to door and urged everyone to seize what remained of spring. And when even that failed, she threw open the windows and let the petals drift into the offices. \nWhen people later spoke of that day, some laughed and said Tianshi Zhuang had worked herself out of her mind. She would only smile and say that she had worked herself to clarity.</>",
       "file4": "<@profile.key>[Graduation Speech] \n\"Hmmm... Greetings, everyone. I am Zhuang Fangyi from the Class of ██. It is truly an honor to stand here today on behalf of my fellow graduates. \n\"I'm the youngest amongst you. Even fellow students who just enrolled are two years ahead of me. So I'd like to begin by thanking everyone for your care and support throughout these years. \n\"Thank you for helping me reach the top shelves when I couldn't. Thank you for always saving me a front-row seat for the lectures. Thank you for holding back your frustration even when experiments stalled... \n\"Most of all, although everyone spoiled me with loving exceptions usually reserved to a younger sibling, none of my ideas or suggestions were ever brushed off as childish. I skipped many years in school and lost the chance to befriend peers of my age. But in return, I gained invaluable friendships with those older than me. I missed out on one kind of companionship, but received guidance, mentorship, and trust from another. \n\"Now, my next step is to continue my studies at the Hongshan Academy of Sciences. The colleagues I meet there are likely to be even more experienced... I also hope to learn from them and build new friendships...\" \n\n[Eulogy] \n\"I am keenly aware that many among you are far more suited than I to stand here today and deliver this eulogy for those we have lost. In the presence of parents, sons and daughters, lifelong companions, and loved ones ... I am but a mere youth. \n\"I was the youngest member at the Science Station. The reason I could convey our longing on behalf of everyone is a result of your patience, guidance, and care... \n\"I have made a journey blessed with support from all sides. I often asked my experienced peers how I might repay the trust and sincerity they showed me. They would always smile and tell me that doing my work and honoring the expectations placed upon me were the best means of repayment. \n\"Though they are no longer with us, the trust they invested in me has not waned, nor has their faith in the Xiranite project. I understand that this is the moment to repay them in full... \n\"And faithfully I shall bear those hopes and expectations upon my shoulders.\" \n\nOrientation Speech \n\"Greetings, everyone. It is a great honor to welcome you to Wuling, where you have chosen to commit your most beautiful years to the laboratories, to this place, and to the forefront of our fight against the Blight and the Rift. \n\"I know many of you chose Wuling because your parents and elders who sacrificed everything for the Science Station... Seeing your young, eager faces brings back memories — I sat where you are seated right now, and listened to your parents and elders who led me onto this path. \n\"I once thought their greatest gift to me was the scientific achievements they had spent their lives creating. Now I realize the gift includes you who arrived at Wuling — who answered their call to follow their footsteps. \n\"I once believed that the best way to honor their memories was to stay on that path and reach, without hesitation, the ideal future they dreamed of. Now I understand that I must also lead those who follow, to guide them onto that path and help them envision the future... \n\"Thank you. \n\"Thank you for choosing to walk this path with me.\" \n\nRecording: New Operator Welcome Party \n\"Am I tipsy already? Maybe a bit... But this isn't right. I only had a little.. \n\"Is this the ninth? Hmm ... maybe it's a bit too much. \n\"You know, the last time I felt this happy was when I first arrived at the Science Station. They threw me a welcome party too. \n\"I was very young back then so I only had juice. But I felt tipsy just the same, watching them toast cup after cup and laugh without worry. The mood was perfect. \n\"Today ... feels just like that again. The future is laid out before me, waiting for me to step forward. \n\"What more is there to say? Nothing... Just being happy is enough.\"</>"
+    },
+    "tags": {
+      "expert1": {
+        "name": "Erudite",
+        "description": "Erudite: Prodigy \nHer knowledge is vast and her experience extensive. She is often the first to figure out a solution in difficult times."
+      },
+      "expert2": {
+        "name": "Team Management",
+        "description": "Team Management: Empathizer \nShe is attentive to every detail when welcoming guests and handling various tasks. Working with her is like basking in the spring breeze."
+      },
+      "hobby1": {
+        "name": "Charity",
+        "description": "Charity: Guardian \nA single heart beats within her, yet it alone has space enough for the entire city and everyone living in it."
+      },
+      "hobby2": {
+        "name": "Culture",
+        "description": "Culture: Sunrise Industry \nShe has plans for the future of Wuling, and they go far beyond Xiranite technology."
+      }
     }
   },
   "potentials": {
@@ -135,7 +145,7 @@
       "name": "Absolute Composure"
     },
     "potential5": {
-      "description": "<@ba.vup>During the <@ba.key>Empyrean of Truth</> transformation, DMG Dealt by Zhuang Fangyi ignores {100*ignore_pulse_resist:0}</> of the enemy's <@ba.pulse>Electric Resistance</>.",
+      "description": "During the <@ba.key>Empyrean of Truth</> transformation, DMG Dealt by Zhuang Fangyi ignores <@ba.vup>{-ignore_pulse_resist:0}</> of the enemy's <@ba.pulse>Electric Resistance</>.",
       "name": "Storm of Transformation"
     }
   },

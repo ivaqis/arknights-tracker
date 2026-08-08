@@ -487,5 +487,13 @@
                 15
             ]
         }
+    },
+    "rOps": {
+        "skill": [
+            "catcher"
+        ],
+        "attr": [
+            "daPan"
+        ]
     }
 }

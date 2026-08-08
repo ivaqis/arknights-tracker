@@ -498,5 +498,11 @@
                 2
             ]
         }
+    },
+    "rOps": {
+        "skill": [],
+        "attr": [
+            "arclight"
+        ]
     }
 }

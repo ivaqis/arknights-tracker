@@ -2184,5 +2184,21 @@
         "potential5": {
             "potential_5": 1
         }
+    },
+    "rWpns": {
+        "skill": [
+            "wpn_pistol_0009",
+            "wpn_pistol_0008"
+        ],
+        "attr": [
+            "wpn_pistol_0004",
+            "wpn_pistol_0003"
+        ]
+    },
+    "cv": {
+        "en": "Jacopo Calatroni",
+        "cn": "Liang Dawei",
+        "jp": "Maeno Tomoaki",
+        "kr": "Im Hyeok"
     }
 }

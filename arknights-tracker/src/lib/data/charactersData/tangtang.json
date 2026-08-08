@@ -2523,5 +2523,21 @@
             "atk_scale_3": 1.15,
             "dmg_up_water_ult": 0.8
         }
+    },
+    "rWpns": {
+        "skill": [
+            "wpn_pistol_0011",
+            "wpn_pistol_0007",
+            "wpn_pistol_0005"
+        ],
+        "attr": [
+            "wpn_pistol_0006"
+        ]
+    },
+    "cv": {
+        "en": "Jing Chen",
+        "cn": "Jing Chen",
+        "jp": "Fairouz Ai",
+        "kr": "Kim Chae-rin"
     }
 }

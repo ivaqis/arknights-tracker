@@ -1,5 +1,6 @@
 <script>
     import { page } from "$app/stores";
+    import { goto } from "$app/navigation";
     import { t } from "$lib/i18n";
     import { onMount } from "svelte";
     import { browser } from "$app/environment";
@@ -7,6 +8,7 @@
     import { currentLocale } from "$lib/stores/locale";
     import { progression } from "$lib/data/items/progression.js";
     import { currencies } from "$lib/data/items/currencies.js";
+    import { characters } from "$lib/data/characters.js";
     import { weapons } from "$lib/data/weapons.js";
     import { manualPotentials } from "$lib/stores/potentials";
     import { weaponEssences } from "$lib/stores/weaponEssences.js";
@@ -21,6 +23,13 @@
     import Image from "$lib/components/Image.svelte";
     import NotFound from "$lib/components/NotFound.svelte";
     import TableModal from "$lib/components/modals/TableModal.svelte";
+    import Modal from "$lib/components/modals/Modal.svelte";
+    import MapPreview from "$lib/components/MapPreview.svelte";
+    import OperatorCard from "$lib/components/cards/OperatorCard.svelte";
+    import WeaponCard from "$lib/components/cards/WeaponCard.svelte";
+    import { essences } from "$lib/data/items/essences.js";
+    import { locations } from "$lib/data/locations.js";
+    import { enemies } from "$lib/data/enemies.js";
     import { parseRichText, hyperlinkAction } from "$lib/utils/richText.js";
 
     let showPotHint = false;
@@ -513,6 +522,71 @@
             });
     })();
 
+    function getOperatorObj(opId) {
+        if (!opId) return null;
+        const found = Object.values(characters || {}).find(
+            (c) => c.id === opId || c.gameId === opId,
+        );
+        return found || { id: opId, name: opId, rarity: 4 };
+    }
+
+    $: skillOps = (weaponData?.rOps?.skill || [])
+        .map(getOperatorObj)
+        .filter(Boolean);
+    $: attrOps = (weaponData?.rOps?.attr || [])
+        .map(getOperatorObj)
+        .filter(Boolean);
+
+    function getCleanEnemyId(enemyId) {
+        if (!enemyId) return "";
+        return enemyId.replace(/_(sluggish|yujidian|notele)$/, "");
+    }
+
+    function getEnemyObj(rawEnemyId) {
+        const cleanId = getCleanEnemyId(rawEnemyId);
+        const found = enemies[cleanId] || enemies[rawEnemyId];
+        return {
+            id: cleanId,
+            rarity: found?.rarity || 4,
+        };
+    }
+
+    function getSortedEnemies(enemyIds) {
+        if (!enemyIds || enemyIds.length === 0) return [];
+        return enemyIds
+            .map((rawId) => getEnemyObj(rawId))
+            .sort((a, b) => (b.rarity || 0) - (a.rarity || 0));
+    }
+
+    const regionColors = {
+        theBase: "#BCE200",
+        wuling: "#00B4A8",
+        default: "#00B4A8",
+    };
+
+    function getRegionColor(regionId) {
+        return regionColors[regionId] || regionColors["default"];
+    }
+
+    $: essenceLocationsList = (() => {
+        if (!weaponBase?.skills || weaponBase.skills.length === 0) return [];
+        const foundLocs = [];
+        Object.entries(locations || {}).forEach(([locId, locData]) => {
+            const dungeonEssences = Object.values(essences || {}).filter(
+                (e) => e.obtain && e.obtain.includes(locId),
+            );
+            const allCovered = weaponBase.skills.every((skillId) =>
+                dungeonEssences.some((e) =>
+                    e.skills.some((es) => es.id === skillId),
+                ),
+            );
+            if (allCovered) {
+                foundLocs.push({ id: locId, ...locData });
+            }
+        });
+        return foundLocs;
+    })();
+
     $: rarityColor = getRarityColor(weaponBase.rarity);
 
     function interpolateBlackboard(text, bb) {
@@ -639,11 +713,9 @@
         </Button>
     </div>
 
-    <div
-        class="w-full max-w-[1500px] mx-auto grid grid-cols-1 xl:grid-cols-12 gap-8 items-start"
-    >
+    {#snippet weaponCardSnippet()}
         <div
-            class="col-span-1 xl:col-span-7 bg-white dark:bg-[#2b2b2b] rounded-3xl flex flex-col overflow-hidden border border-gray-200 dark:border-[#444] transition-colors md:min-w-[500px]"
+            class="bg-white dark:bg-[#2b2b2b] rounded-3xl flex flex-col overflow-hidden border border-gray-200 dark:border-[#444] transition-colors"
         >
             <div
                 class="relative min-h-[210px] flex p-6 overflow-hidden bg-white dark:bg-[#2b2b2b]"
@@ -1135,11 +1207,120 @@
                 </p>
             </div>
         </div>
+    {/snippet}
 
-        <div class="col-span-1 xl:col-span-5 flex flex-col gap-6">
-            <div
-                class="bg-white dark:bg-[#2b2b2b] p-6 rounded-3xl border border-gray-200 dark:border-[#444] flex flex-col gap-4 transition-colors"
-            >
+    {#snippet recOpsCardSnippet()}
+        <div
+            class="bg-white dark:bg-[#2b2b2b] p-6 rounded-3xl border border-gray-200 dark:border-[#444] flex flex-col gap-4 transition-colors"
+        >
+                <h2
+                    class="text-2xl font-bold text-[#21272C] dark:text-[#FDFDFD] font-sdk border-b border-gray-100 dark:border-[#444] pb-3"
+                >
+                    {$t("stats.recommendedOperators")}
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
+                    <div class="flex flex-col gap-3">
+                        <div class="flex items-center gap-2 text-sm font-bold text-gray-700 dark:text-gray-300">
+                            <span>{$t("stats.matchingSkills")}</span>
+                        </div>
+                        {#if skillOps.length > 0}
+                            <div class="flex flex-wrap gap-3">
+                                {#each skillOps as opObj}
+                                    <OperatorCard operator={opObj} variant="small" />
+                                {/each}
+                            </div>
+                        {:else}
+                            <div class="text-gray-400 text-xs italic">
+                                {$t("global.noData")}
+                            </div>
+                        {/if}
+                    </div>
+
+                    <div class="flex flex-col gap-3 md:border-l md:border-gray-200 md:dark:border-[#444] md:pl-6">
+                        <div class="flex items-center gap-2 text-sm font-bold text-gray-700 dark:text-gray-300">
+                            <span>{$t("stats.matchingStats")}</span>
+                        </div>
+                        {#if attrOps.length > 0}
+                            <div class="flex flex-wrap gap-3">
+                                {#each attrOps as opObj}
+                                    <OperatorCard operator={opObj} variant="small" />
+                                {/each}
+                            </div>
+                        {:else}
+                            <div class="text-gray-400 text-xs italic">
+                                {$t("global.noData")}
+                            </div>
+                        {/if}
+                    </div>
+                </div>
+            </div>
+    {/snippet}
+
+    {#snippet essenceLocsCardSnippet()}
+        <div
+            class="bg-white dark:bg-[#2b2b2b] p-6 rounded-3xl border border-gray-200 dark:border-[#444] flex flex-col gap-4 transition-colors"
+        >
+                <div class="flex items-center justify-between border-b border-gray-100 dark:border-[#444] pb-3 gap-3 flex-wrap">
+                    <h2 class="text-2xl font-bold text-[#21272C] dark:text-[#FDFDFD] font-sdk">
+                        {$t("stats.essenceLocations")} (3/3)
+                    </h2>
+                    <button
+                        on:click={() => goto(`/essences?weapons=${id}`)}
+                        class="text-[11px] font-bold text-gray-500 hover:text-[#FACC15] dark:text-gray-400 dark:hover:text-[#FACC15] transition-colors flex items-center gap-1 group mr-2 cursor-pointer"
+                    >
+                        <span>{$t("stats.goToEssences")}</span>
+                        <span>→</span>
+                    </button>
+                </div>
+
+                <div class="flex flex-col gap-3 pt-1">
+                    {#each essenceLocationsList as loc (loc.id)}
+                        {@const rColor = getRegionColor(loc.region)}
+                        {@const locTitle = $t(`energyPoints.${loc.id}`)}
+                        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 p-4 rounded-2xl bg-gray-50/70 dark:bg-[#333]/50 border border-gray-100 dark:border-[#444]/60">
+                            <div class="flex flex-col gap-2.5 min-w-0 flex-1">
+                                <div class="flex items-center gap-2.5">
+                                    <Icon
+                                        name={loc.region || "theHub"}
+                                        class="w-6 h-6 shrink-0"
+                                        style="color: {rColor};"
+                                    />
+                                    <span class="font-bold text-base text-gray-900 dark:text-white leading-snug break-words">
+                                        {locTitle}
+                                    </span>
+                                </div>
+
+                                {#if loc.enemyIds && loc.enemyIds.length > 0}
+                                    <div class="flex flex-col gap-1.5 pl-0.5 pt-1">
+                                        <span class="text-xs font-semibold text-gray-500 dark:text-gray-400 shrink-0">
+                                            {$t("pages.enemies")}:
+                                        </span>
+                                        <div class="flex items-center gap-2 flex-wrap">
+                                            {#each getSortedEnemies(loc.enemyIds) as enemyObj}
+                                                <WeaponCard
+                                                    weapon={enemyObj}
+                                                    isEnemy={true}
+                                                    variant="small"
+                                                    hidePot={true}
+                                                    hideDarkness={true}
+                                                />
+                                            {/each}
+                                        </div>
+                                    </div>
+                                {/if}
+                            </div>
+                            <MapPreview url={loc.url} title={locTitle} variant="mini" />
+                        </div>
+                    {/each}
+                </div>
+            </div>
+    {/snippet}
+
+    {#snippet materialsCardSnippet()}
+        <div
+            class="bg-white dark:bg-[#2b2b2b] p-6 rounded-3xl border border-gray-200 dark:border-[#444] flex flex-col gap-4 transition-colors"
+        >
                 <div class="flex flex-col md:flex-row md:items-center justify-between border-b border-gray-100 dark:border-[#444] pb-3 gap-4">
                     <div class="flex items-center gap-2">
                         <h2 class="text-2xl font-bold text-[#21272C] dark:text-[#FDFDFD] font-sdk">
@@ -1173,10 +1354,12 @@
                     {/if}
                 </div>
             </div>
+    {/snippet}
 
-            <div
-                class="bg-white dark:bg-[#2b2b2b] p-6 rounded-3xl border border-gray-200 dark:border-[#444] flex flex-col gap-4 transition-colors"
-            >
+    {#snippet imagesCardSnippet()}
+        <div
+            class="bg-white dark:bg-[#2b2b2b] p-6 rounded-3xl border border-gray-200 dark:border-[#444] flex flex-col gap-4 transition-colors"
+        >
                 <h2
                     class="text-2xl font-bold text-[#21272C] dark:text-[#FDFDFD] font-sdk border-b border-gray-100 dark:border-[#444] pb-3"
                 >
@@ -1349,24 +1532,57 @@
                     </div>
                 </div>
             </div>
+    {/snippet}
 
-            <div
-                class="bg-white dark:bg-[#2b2b2b] p-6 rounded-3xl border border-gray-200 dark:border-[#444] flex flex-col gap-4 transition-colors"
+    {#snippet descCardSnippet()}
+        <div
+            class="bg-white dark:bg-[#2b2b2b] p-6 rounded-3xl border border-gray-200 dark:border-[#444] flex flex-col gap-4 transition-colors"
+        >
+            <h2
+                class="text-2xl font-bold text-[#21272C] dark:text-[#FDFDFD] font-sdk border-b border-gray-100 dark:border-[#444] pb-3"
             >
-                <h2
-                    class="text-2xl font-bold text-[#21272C] dark:text-[#FDFDFD] font-sdk border-b border-gray-100 dark:border-[#444] pb-3"
-                >
-                    {tOrFallback("menu.description", "Описание")}
-                </h2>
-                <div
-                    class="text-gray-700 dark:text-[#A0A0A0] whitespace-pre-wrap text-[14.5px] leading-relaxed"
-                >
-                    {weaponLocale.description}
-                </div>
+                {tOrFallback("menu.description", "Описание")}
+            </h2>
+            <div
+                class="text-gray-700 dark:text-[#A0A0A0] whitespace-pre-wrap text-[14.5px] leading-relaxed"
+            >
+                {weaponLocale.description}
             </div>
+        </div>
+    {/snippet}
+
+    <div class="w-full max-w-[1500px] mx-auto flex flex-col gap-6 xl:hidden">
+        {@render weaponCardSnippet()}
+        {@render materialsCardSnippet()}
+        {#if skillOps.length > 0 || attrOps.length > 0}
+            {@render recOpsCardSnippet()}
+        {/if}
+        {#if essenceLocationsList.length > 0}
+            {@render essenceLocsCardSnippet()}
+        {/if}
+        {@render imagesCardSnippet()}
+        {@render descCardSnippet()}
+    </div>
+
+    <div class="w-full max-w-[1500px] mx-auto hidden xl:grid xl:grid-cols-12 gap-8 items-start">
+        <div class="col-span-7 flex flex-col gap-6 md:min-w-[500px]">
+            {@render weaponCardSnippet()}
+            {#if skillOps.length > 0 || attrOps.length > 0}
+                {@render recOpsCardSnippet()}
+            {/if}
+            {#if essenceLocationsList.length > 0}
+                {@render essenceLocsCardSnippet()}
+            {/if}
+        </div>
+
+        <div class="col-span-5 flex flex-col gap-6">
+            {@render materialsCardSnippet()}
+            {@render imagesCardSnippet()}
+            {@render descCardSnippet()}
         </div>
     </div>
 </div>
+{/if}
 
 <TableModal
     bind:isOpen={showStatsTable}
@@ -1449,8 +1665,6 @@
             </button>
         </div>
     </div>
-{/if}
-
 {/if}
 
 <style>
