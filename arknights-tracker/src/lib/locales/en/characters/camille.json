@@ -131,326 +131,407 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0033_camille_chrbark_squad_01",
         "title": "Operation Prep 1",
         "text": "I do not intend to wait any longer."
       },
       {
+        "voId": "chr_0033_camille_chrbark_squad_02",
         "title": "Operation Prep 2",
         "text": "Shall I join you? I am at your disposal."
       },
       {
+        "voId": "chr_0033_camille_chrbark_join_01",
         "title": "Adding to Team 1",
         "text": "Lead, and I shall follow. Or let it be the reverse."
       },
       {
+        "voId": "chr_0033_camille_chrbark_join_02",
         "title": "Adding to Team 2",
         "text": "I expected as much. Let us depart."
       },
       {
+        "voId": "chr_0033_camille_chrbark_weap_01",
         "title": "Switching Weapon",
         "text": "This sharp instrument could impale even the blood sea. I shall wield it with care."
       },
       {
+        "voId": "chr_0033_camille_chrbark_gear_01",
         "title": "Switching Gear",
         "text": "The Keepers' outfitting logic revolves around Sarkaz witchcraft. But I place my trust in your choices."
       },
       {
+        "voId": "chr_0033_camille_chrup_skill_01",
         "title": "Ability Matrix Activation",
         "text": "The impurities have been stripped away. The blood is purer now."
       },
       {
+        "voId": "chr_0033_camille_chrup_level_01",
         "title": "Watching Combat Records",
         "text": "These tactical insights are of great value. They will aid the Keepers in their duties."
       },
       {
+        "voId": "chr_0033_camille_chrup_promt01_01",
         "title": "Operator Promotion 1",
         "text": "An official recognition from Endfield, or your personal trust?"
       },
       {
+        "voId": "chr_0033_camille_chrup_promt02_01",
         "title": "Operator Promotion 2",
         "text": "Thank you for the commendation, Endministrator. My responsibilities have grown, but at this moment, I feel only joy for being worthy of your trust."
       },
       {
+        "voId": "chr_0033_camille_chrup_promt03_01",
         "title": "Operator Promotion 3",
         "text": "Empty honors no longer matter, my friend. My blood is always with you."
       },
       {
+        "voId": "chr_0033_camille_chrup_promt04_01",
         "title": "Operator Promotion 4",
         "text": "Immense forces vie for dominance on this world, leaving us to eke out a living in the cracks. Yet you showed me that change, however small, bears meaning. And I ... I am more than willing to walk with you in this pursuit."
       },
       {
+        "voId": "chr_0033_camille_introduce_01",
         "title": "Operator Reporting for Duty",
         "text": "Camille Arno, Agaš'mekanaz of Seš'qa. I seek a dangerous Sarkaz criminal who wields witchcraft as a weapon. For this, I require the strength of Endfield... And in return, I vow to offer you my own."
       },
       {
+        "voId": "chr_0033_camille_mono_switch_01",
         "title": "Standing by 1",
         "text": "Birthed in blood, concluded in blood."
       },
       {
+        "voId": "chr_0033_camille_mono_switch_02",
         "title": "Standing by 2",
         "text": "I leave no shadow ... for the guilty to hide in."
       },
       {
+        "voId": "chr_0033_camille_sim_assign_work_01",
         "title": "Assigning to Facility",
         "text": "I work alone. Eliminating the need to communicate raises efficiency."
       },
       {
+        "voId": "chr_0033_camille_sim_hello_lower_01",
         "title": "Greeting 1",
         "text": "Any orders?"
       },
       {
+        "voId": "chr_0033_camille_sim_hello_max_01",
         "title": "Greeting 2",
         "text": "Endmin, this meeting was no coincidence. I've been waiting."
       },
       {
+        "voId": "chr_0033_camille_sim_talk_lv01_01",
         "title": "Dijiang Idle Chatter 1",
         "text": "The vertical space on Dijiang is vast. Occasionally, for efficiency, I traverse the ceiling... No, it is not to avoid greeting others."
       },
       {
+        "voId": "chr_0033_camille_sim_talk_lv02_01",
         "title": "Dijiang Idle Chatter 2",
         "text": "I can hear the currents flowing through the cables of Dijiang. Whenever Engineering adjust ship parameters, the electrical hums change and I must readjust... They do irk me, but I bear no resentment. They prove that people are striving to keep the ship steadily on course."
       },
       {
+        "voId": "chr_0033_camille_sim_talk_lv02_02",
         "title": "Dijiang Idle Chatter 3",
         "text": "I am fond of puzzles. There is a certain satisfaction in gathering scattered fragments and restoring them to a whole. Furthermore, it is a pastime that requires only one person."
       },
       {
+        "voId": "chr_0033_camille_sim_talk_max_01",
         "title": "Dijiang Idle Chatter 4",
         "text": "I do not expect Seš'qa to send operator Last Rite to Endfield... You enjoy a sincere partnership, one that proves the solidarity of the two organizations and the alignment of our visions. As in the old days ... nothing has changed."
       },
       {
+        "voId": "chr_0033_camille_sim_talk_max_02",
         "title": "Dijiang Idle Chatter 5",
         "text": "Two wings in the sky, yet two different homes. Seš'qa's tranquility sprung out of our kindred. But Dijiang ... perhaps the presence of a particular individual exerts the same assuring effect."
       },
       {
+        "voId": "chr_0033_camille_sim_talk_max_03",
         "title": "Dijiang Idle Chatter 6",
         "text": "Few understand their own hearts, yet everyone aboard Dijiang move toward a clear goal. For long I have sought the reason, and I found it in you, Endmin. You are quite the leader."
       },
       {
+        "voId": "chr_0033_camille_sim_gift_give_01",
         "title": "Offering Gifts",
         "text": "I have something for you from Seš'qa. Take it. The other gifts from our leadership have been delivered to your office."
       },
       {
+        "voId": "chr_0033_camille_sim_gift_recv_01",
         "title": "Accepting Gifts",
         "text": "It is not a parting gift, I hope...? Very well, I shall take it."
       },
       {
+        "voId": "chr_0033_camille_mono_self_line01",
         "title": "Trust Dialog 1",
         "text": "Over the decades, I've glimpsed you a few times from afar. I remember my first impression of you was that of a \"Savior\". But now you feel more like a confidante. I do not concern with the preferences of others, but I do find more comfort in the person before me now. You are no longer weathered by the elements, and your body is freed from scars."
       },
       {
+        "voId": "chr_0033_camille_mono_self_line02",
         "title": "Trust Dialog 2",
         "text": "I constantly dream of my family in a garden, surrounded by riotous torch-bearing Landbreakers. No matter how I run, I would remain stuck in place and could never get close. During the worst of my days ... the dreams happened every night. But after arriving at Endfield, the nightmares have started to fade."
       },
       {
+        "voId": "chr_0033_camille_mono_self_line03",
         "title": "Trust Dialog 3",
         "text": "To keep Char alive, I gave him my blood ... a full half of my existence. Thus I am his brother as well as his sire. The greatest fear of a Vampire is the corruption and sullying of our blood. He used mine to injure others ... and so I must stop such foolishness. I have to do it."
       },
       {
+        "voId": "chr_0033_camille_mono_self_line04",
         "title": "Trust Dialog 4",
         "text": "Long ago, I used to wish memory could be bled away to free myself from the aching pain. But after meeting you ... I realized it was these untouchable, unforgettable, and unretractable elements that have shaped who I am today. So, Endmin, I shall help you recover what you've lost."
       },
       {
+        "voId": "chr_0033_camille_mono_self_line05",
         "title": "Trust Dialog 5",
         "text": "I sacrificed half my lifeblood, and so I am left with but a single wing... The missing other throbs with constant pain, as though my blood thirsts for what I lost. Yet, the new memories we've created together are filling that void. Maybe in time ... the pain of that scar will trouble me no more."
       },
       {
+        "voId": "chr_0033_camille_mono_chat_line01",
         "title": "Chat 1",
         "text": "Our family garden once held a plant known as the Devil's Licorice. Mother told us that the Sarkaz carried this thread of memory from Terra. It is a sign for our hope to coexist with this planet — All life, people or plant, will find a way in distant lands. Of course, my younger self mainly used it as an ingredient for witchcraft sweets... The flavor is unusual, but not in a bad way."
       },
       {
+        "voId": "chr_0033_camille_mono_chat_line02",
         "title": "Chat 2",
         "text": "There is a unique tavern on Seš'qa, constructed entirely out of mirrored glass. Countless artificial gems glowing with witchcraft hang from the ceilings. The whole building radiates light. During open tours, the Sankta would host parties there. They are a loud, rowdy bunch that keep people awake. Still, such liveliness is good for Seš'qa. It proves — our efforts are working, taking down many barriers between the races."
       },
       {
+        "voId": "chr_0033_camille_mono_chat_line03",
         "title": "Chat 3",
         "text": "The person in the Witching Hour catalog...? Fine, it is I. They send me samples in exchange for promotional photos. Years ago, I wandered into a witchcraft shop and the counter clerk treated me like a rare specimen. I was held, physically, so as to sign a contract on the spot. I do feel awkward if acquaintances see the picture, but the samples are rare... Endmin, may I ask where you might be going with that booklet?"
       },
       {
+        "voId": "chr_0033_camille_mono_chat_line04",
         "title": "Chat 4",
         "text": "I would constantly lose my house keys as a child. It led to a fight with Char, and I accidentally broke his music box. After I apologized, he used its core component and made me a new key... He told me it was a charm that would always lead me back home. Now that my family is gone and our Seš'qa estate sold ... it no longer opens any doors nor holds any meaning."
       },
       {
+        "voId": "chr_0033_camille_mono_chat_line05",
         "title": "Chat 5",
         "text": "The crimson \"demon lances\" are my Originium Arts. I can encapsulate objects with my blood to shape them into weapons. I usually use my own blood as the enemy's may be impure. The blood of my companions is ... something I do not wish to exploit, even with your agreement."
       },
       {
+        "voId": "chr_0033_camille_mono_about_line01",
         "title": "Topic: Seš'qa",
         "text": "A hundred years ago, no one would have imagined that today, the sight of the Sarkazian city floating in the skies would stir not irritation, but a longing to visit and witness its witchcraft tricks. Seš'qa is a drifting feather with countless people carefully steering the winds. It is their wish that the cruising city serves as a tether for our land-dwelling kin and gives them hope."
       },
       {
+        "voId": "chr_0033_camille_mono_about_line02",
         "title": "Topic: Warlord of the Wilds",
         "text": "Jakub the Warlord of the Wilds... Yes, I saw him in person. Very few would mention his name nowadays. Personal hatred aside, I do not agree with his plan to shatter the Civilization Band. Yet I cannot deny his skills and extraordinary leadership. If Jakub Meissen did not fall, his Landbreakers might succeed in carving a bloody piece out of Talos-II."
       },
       {
+        "voId": "chr_0033_camille_mono_about_line03",
         "title": "Topic: Sibling",
         "text": "I am nothing like Char. But there were brief mental lapses when I saw his face in the mirror... I tried to mimic his nonchalant, cynical smirk, yet I still fail to understand his reasoning — how could he ignore the blood feud and join the bandits who killed our parents? The riddle gnaws at me, and I thirst for the truth."
       },
       {
+        "voId": "chr_0033_camille_mono_about_line04",
         "title": "Topic: Keepers of Wisdom",
         "text": "Few bear the title of \"Agaš'mekanaz\" — Char was the one who presented me a chance of becoming a Keeper. Crimes involving Sarkazian witchcraft are more easily solved by a kin... I am the one most privy to Char's Arts; and I alone can commit decades without rest to track him down. Making an enemy out of a loved one brings pain, yet we Keepers remain loyal to our charge. I am no exception."
       },
       {
+        "voId": "chr_0033_camille_mono_about_line05",
         "title": "Topic: Parents",
         "text": "Led by the legendary Speaker, my parents arrived at Talos-II with many Sarkaz. They were the first members of Seš'qa and built the Lifebone... The Warlord of the Wilds killed them. I remember Mother being a gentle soul committed to fostering peace between the races... But Char claims he saw a different side of her that I do not know... No matter what the past holds, betrayal... is still betrayal."
       },
       {
+        "voId": "chr_0033_camille_explore_point_common_01",
         "title": "Resource/Collectible Detected 1",
         "text": "Follow those traces over there."
       },
       {
+        "voId": "chr_0033_camille_explore_point_valub_01",
         "title": "Resource/Collectible Detected 2",
         "text": "Those items are of significant value. Bringing them along will benefit our operation."
       },
       {
+        "voId": "chr_0033_camille_explore_find_locked_01",
         "title": "Unexplored Area Detected",
         "text": "First rule for a Keeper, always take note of uncharted territory."
       },
       {
+        "voId": "chr_0033_camille_explore_find_danger_01",
         "title": "Powerful Enemy Discovered",
         "text": "Stay alert. That one carries the scent of blood."
       },
       {
+        "voId": "chr_0033_camille_interact_mine_valub_01",
         "title": "Mining 1",
         "text": "These minerals give off quite a delightful ring."
       },
       {
+        "voId": "chr_0033_camille_interact_mine_valub_echo2_01",
         "title": "Mining 2",
         "text": "Allow me. It will speed things up."
       },
       {
+        "voId": "chr_0033_camille_interact_treasure_valub_01",
         "title": "Opening a Crate",
         "text": "With action comes results."
       },
       {
+        "voId": "chr_0033_camille_interact_etherium_01",
         "title": "Acquiring Aurylene",
         "text": "Aurylenes ... they too are pretty good at running away."
       },
       {
+        "voId": "chr_0033_camille_interact_blight_break_01",
         "title": "Eliminating the Blight",
         "text": "The blemish on this land has been cleared."
       },
       {
+        "voId": "chr_0033_camille_interact_rest_01",
         "title": "Rest",
         "text": "Out of the deepest shadows, a drop of blood is drawn once more."
       },
       {
+        "voId": "chr_0033_camille_combat_suppuse_using_01",
         "title": "Tactical Use 1",
         "text": "Use these!"
       },
       {
+        "voId": "chr_0033_camille_combat_suppuse_getheal_01",
         "title": "Tactical Use 2",
         "text": "Life returns to the blood."
       },
       {
+        "voId": "chr_0033_camille_combat_remind_danger_01",
         "title": "Danger Warning",
         "text": "Watch out!"
       },
       {
+        "voId": "chr_0033_camille_combat_hurt_lowhp_01",
         "title": "Injured",
         "text": "Till my last drop of blood..."
       },
       {
+        "voId": "chr_0033_camille_combat_dead_01",
         "title": "0 HP",
         "text": "The sea of blood... whispers its grief..."
       },
       {
+        "voId": "chr_0033_camille_combat_remind_praise_01",
         "title": "Team Encouragement 1",
         "text": "A brilliant move."
       },
       {
+        "voId": "chr_0033_camille_combat_remind_praise_02",
         "title": "Team Encouragement 2",
         "text": "Magnificent. My blood rises at the sight."
       },
       {
+        "voId": "chr_0033_camille_combat_remind_praise_echo2_01",
         "title": "Encouragement Response 1",
         "text": "Just doing my duty."
       },
       {
+        "voId": "chr_0033_camille_combat_remind_praise_echo2_02",
         "title": "Encouragement Response 2",
         "text": "We achieved this together."
       },
       {
+        "voId": "chr_0033_camille_combat_intobattle_01",
         "title": "Combat Begins 1",
         "text": "Struggle as you will."
       },
       {
+        "voId": "chr_0033_camille_combat_intobattle_echo2_01",
         "title": "Combat Begins 2",
         "text": "The only way is forward."
       },
       {
+        "voId": "chr_0033_camille_combat_outbattle_nor_01",
         "title": "Combat Victory 1",
         "text": "The breeze carries away the iron tang of blood. Everything goes as planned."
       },
       {
+        "voId": "chr_0033_camille_combat_outbattle_nor_02",
         "title": "Combat Victory 2",
         "text": "A fine pursuit. Well executed."
       },
       {
+        "voId": "chr_0033_camille_combat_outbattle_nor_echo2_01",
         "title": "Combat Victory 3",
         "text": "Teamwork is not my strength. But this day marks an exception."
       },
       {
+        "voId": "chr_0033_camille_combat_outbattle_hard_01",
         "title": "Combat Victory 4",
         "text": "Our blood was spilled, but the enemy paid for it tenfold. Completing the task ... is victory enough."
       },
       {
+        "voId": "chr_0033_camille_combat_battle_defeat_01",
         "title": "Combat Defeat",
         "text": "Bitter as this is, it is not the conclusion. A debt of blood must be repaid ... and our goal is still ahead."
       },
       {
+        "voId": "chr_0033_camille_mono_attack_last_01",
         "title": "Final Strike 1",
         "text": "Too weak!"
       },
       {
+        "voId": "chr_0033_camille_mono_attack_last_02",
         "title": "Final Strike 2",
         "text": "Pierce them!"
       },
       {
+        "voId": "chr_0033_camille_mono_skill_nor_01",
         "title": "Battle Skill 1",
         "text": "Final mercy."
       },
       {
+        "voId": "chr_0033_camille_mono_skill_nor_02",
         "title": "Battle Skill 2",
         "text": "Death awaits."
       },
       {
+        "voId": "chr_0033_camille_mono_skill_nor_03",
         "title": "Battle Skill 3",
         "text": "Writhe in pain."
       },
       {
+        "voId": "chr_0033_camille_combat_skill_comb_ready_01",
         "title": "Combo Skill Ready 1",
         "text": "Witchcraft is ready."
       },
       {
+        "voId": "chr_0033_camille_combat_skill_comb_ready_02",
         "title": "Combo Skill Ready 2",
         "text": "Corner them."
       },
       {
+        "voId": "chr_0033_camille_mono_skill_comb_release_01",
         "title": "Combo Casting 1",
         "text": "There is no escape."
       },
       {
+        "voId": "chr_0033_camille_mono_skill_comb_release_02",
         "title": "Combo Casting 2",
         "text": "Bleed forth, impurity."
       },
       {
+        "voId": "chr_0033_camille_mono_attack_extra_01",
         "title": "Finisher 1",
         "text": "Embrace your end."
       },
       {
+        "voId": "chr_0033_camille_mono_attack_extra_02",
         "title": "Finisher 2",
         "text": "Pathetic fool."
       },
       {
+        "voId": "chr_0033_camille_mono_skill_ultimate_01",
         "title": "Ultimate 1",
         "text": "O rain of crimson red..."
       },
       {
+        "voId": "chr_0033_camille_mono_skill_ultimate_02",
         "title": "Ultimate 2",
         "text": "Drown in endless night."
       },
       {
+        "voId": "chr_0033_camille_mono_skill_ultimate_03",
         "title": "Ultimate 3",
         "text": "Sin ends with the pyre."
       }

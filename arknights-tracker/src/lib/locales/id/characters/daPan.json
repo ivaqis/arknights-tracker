@@ -120,330 +120,412 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0018_dapan_chrbark_squad_01",
         "title": "Persiapan Operasi 1",
         "text": "Oh, Endmin! Sudah selesai siap-siap?"
       },
       {
+        "voId": "chr_0018_dapan_chrbark_squad_02",
         "title": "Persiapan Operasi 2",
         "text": "Jangan buang-buang makanan begitu—YO! Senang melihatmu!"
       },
       {
+        "voId": "chr_0018_dapan_chrbark_join_01",
         "title": "Menambahkan ke Tim 1",
         "text": "Akhirnya ada tempat untuk meregangkan badan! Mau lihat keahlianku?"
       },
       {
+        "voId": "chr_0018_dapan_chrbark_join_02",
         "title": "Menambahkan ke Tim 2",
         "text": "Kalau kaulah yang memutuskan, aku siap bantu."
       },
       {
+        "voId": "chr_0018_dapan_chrbark_weap_01",
         "title": "Berganti Senjata",
         "text": "Hooo. Senjata ini benar-benar seimbang. Kau pasti bayar mahal untuk ini."
       },
       {
+        "voId": "chr_0018_dapan_chrbark_gear_01",
         "title": "Berganti Gear",
         "text": "Sudah agak lama aku tak pakai senjata lengkap. HGNH! AHH! Nah, bagaimana menurutmu? Lumayan keren, ‘kan?"
       },
       {
+        "voId": "chr_0018_dapan_chrup_skill_01",
         "title": "Aktivasi Matriks Kemampuan",
         "text": "Kalau belum mahir masak hidangan tertentu, sering-seringlah memasaknya! Aku memasak bukan untuk pamer. Aku memasak untuk menghasilkan hidangan yang indah dan lezat!"
       },
       {
+        "voId": "chr_0018_dapan_chrup_level_01",
         "title": "Menonton Rekaman Pertarungan",
         "text": "Tak ada kata terlambat untuk belajar. Rahasianya adalah menjaga agar tubuh selalu prima!"
       },
       {
+        "voId": "chr_0018_dapan_chrup_promt01_01",
         "title": "Promosi Operator 1",
         "text": "Aku bukan pilihan terbaik, bukan kesatria terbaik pula, dan kebaikanmu membuatku sangat tersanjung. Aku tak punya anggur, jadi akan kusuguhkan saja teh ini sebagai tanda terima kasihku!"
       },
       {
+        "voId": "chr_0018_dapan_chrup_promt02_01",
         "title": "Promosi Operator 2",
         "text": "Bakatku memang terbatas, tapi aku selalu siap menjalankan tugas. Jadi, akan kuterima promosi ini. Panggil saja aku kalau ada tugas untukku. Aku tak akan mengecewakanmu."
       },
       {
+        "voId": "chr_0018_dapan_chrup_promt03_01",
         "title": "Promosi Operator 3",
         "text": "Kau baik sekali, tapi ini berarti tokoku di Wuling harus ditutup sementara. Kalau kau punya waktu, kita kembali ke sana, adakan pesta untukmu ... lalu akan kuminta kerabatku untuk mengurus bisnisku."
       },
       {
+        "voId": "chr_0018_dapan_chrup_promt04_01",
         "title": "Promosi Operator 4",
         "text": "Saat terakhir berkunjung ke Hongshan, Suhuku mati-matian membujukku untuk ikut suatu proyek di Akademi. Dia akhirnya berhenti membujuk setelah kubilang bahwa sekarang aku kerja di Endfield. Jujur saja, Endmin, mendapatkan posisi resmi di Dijiang adalah kehormatan BESAR bagiku—Eh, kenapa kau jadi malu begitu?"
       },
       {
+        "voId": "chr_0018_dapan_introduce_01",
         "title": "Operator Siap Bertugas",
         "text": "Oh, kita bertemu lagi, Endmin. Ada masalah teknis? Tunjukkan saja, biar langsung kuperbaiki! Oh ya, aku bakalan lebih senang LAGI kalau ada tugas kantin untukku!"
       },
       {
+        "voId": "chr_0018_dapan_mono_switch_01",
         "title": "Siaga 1",
         "text": "Berikutnya ke mana, Endmin?"
       },
       {
+        "voId": "chr_0018_dapan_mono_switch_02",
         "title": "Siaga 2",
         "text": "Ada tugas untukku? Biar kutangani."
       },
       {
+        "voId": "chr_0018_dapan_sim_assign_work_01",
         "title": "Menugaskan ke Fasilitas",
         "text": "Jangan khawatir. Istirahatlah saja. Setelah selesai pakai seragam, aku akan langsung bertugas."
       },
       {
+        "voId": "chr_0018_dapan_sim_hello_lower_01",
         "title": "Menyapa 1",
         "text": "Kalau kau punya waktu, akan kuadakan pesta untukmu!"
       },
       {
+        "voId": "chr_0018_dapan_sim_hello_max_01",
         "title": "Menyapa 2",
         "text": "Kau ingin makan hidangan yang tak ada di kafetaria Dijiang? Biar kuurus."
       },
       {
+        "voId": "chr_0018_dapan_sim_talk_lv01_01",
         "title": "Obrolan Santai di Dijiang 1",
         "text": "Berat badanmu turun lagi. Tolong jaga kesehatanmu lebih baik lagi, ya. Mau kumasakkan sesuatu?"
       },
       {
+        "voId": "chr_0018_dapan_sim_talk_lv02_01",
         "title": "Obrolan Santai di Dijiang 2",
         "text": "Hrrmph. Kafetaria Dijiang memang kurang sip. Jangan buru-buru protes. Cicipi dulu yang ini. Aku sendiri yang memasaknya!"
       },
       {
+        "voId": "chr_0018_dapan_sim_talk_lv02_02",
         "title": "Obrolan Santai di Dijiang 3",
         "text": "Kudengar kau menegur anak-anak muda yang tak sependapat denganku. Tak apa. Aku tak peduli mereka itu Tianshi atau chef. Memang tak semua orang di Dijiang punya waktu untuk mengobrol dengan panda tua ini."
       },
       {
+        "voId": "chr_0018_dapan_sim_talk_max_01",
         "title": "Obrolan Santai di Dijiang 4",
         "text": "Kulihat ada banyak teknologi Akademi di Dijiang. Hasil kerja keras para pakar teknologi orbital HAS—Susah dibayangkan memang, walau isinya orang-orang tua, mereka bawel dan gampang sekali marah-marah! Mereka bahkan tak ragu menyulut perang hanya gara-gara berdebat soal tempat untuk meletakkan modul diagnostik kecil!"
       },
       {
+        "voId": "chr_0018_dapan_sim_talk_max_02",
         "title": "Obrolan Santai di Dijiang 5",
         "text": "Ruang asrama di Endfield memang kurang besar! Bukannya bermaksud protes ya, tapi saat senam kecil tadi pagi, siku dan lututku membentur sana-sini. TOLONG! Atasi masalah ini!"
       },
       {
+        "voId": "chr_0018_dapan_sim_talk_max_03",
         "title": "Obrolan Santai di Dijiang 6",
         "text": "Kalau lihat Andre, tolong beri tahu Burung Hantu Besar itu—dia harus berikan ide terbaru kepada Panda Tua ini! DAN ingatkan dia untuk berhenti bersembunyi dariku!"
       },
       {
+        "voId": "chr_0018_dapan_sim_gift_give_01",
         "title": "Menawarkan Hadiah",
         "text": "Ketemu kau, Endmin! Ini! Hadiah spesial dari Hongshan!"
       },
       {
+        "voId": "chr_0018_dapan_sim_gift_recv_01",
         "title": "Menerima Hadiah",
         "text": "Ini sungguh kehormatan besar bagiku!"
       },
       {
+        "voId": "chr_0018_dapan_mono_self_line01",
         "title": "Dialog Kepercayaan 1",
         "text": "Aku tahu ada banyak tugas lab yang harus kaukerjakan, jadi beri saja aku tugas agar bebanmu berkurang! Aku pernah kerja sebagai chef ahli, tukang listrik, tukang kayu, sopir, dan wiraswastawan jalanan. Pokoknya, pekerjaan APA PUN pasti bisa kulakukan. Oh, kau ingin tanya tentang botol minum “Pekerja Garda Depan” ini? Heheh, isinya cuma teh, kok."
       },
       {
+        "voId": "chr_0018_dapan_mono_self_line02",
         "title": "Dialog Kepercayaan 2",
         "text": "Endmin, berkunjunglah ke markas besar Hongshan Academy of Sciences. Kalaupun kau tak suka berkunjung ke tempat baru, acara debat siswa di sana lumayan seru, lho. Mungkin kau tak ingat, tapi banyak proyek rintisan menyebut karyamu—Sebentar. Aku ... juga pernah mengutip makalahmu."
       },
       {
+        "voId": "chr_0018_dapan_mono_self_line03",
         "title": "Dialog Kepercayaan 3",
         "text": "Wajan besi hitam ini sanggup membendung hujan, api, dan bahkan tembakan peluru ukir. Kalau perlu, kupasang saja wajan ini di punggungku untuk melindungi tubuhku! Begitulah, Endmin, kalau mau berusaha lebih keras, kita akan sedikit lebih unggul saat terdesak. Ini barang bagus, nih. Menurutku, ambil saja."
       },
       {
+        "voId": "chr_0018_dapan_mono_self_line04",
         "title": "Dialog Kepercayaan 4",
         "text": "Aku? Pan Yuan si panda tua yang ramah? HAH! Dulu, tak satu pun orang HAS berani menentangku. Si Hebat Pan Yuan sanggup MENGAKHIRI debat ilmiah dalam sekejap, dan—Huh. Yah, kadang kalau kita bersikeras mempertahankan fakta kuat dan nyata, bisa saja tanpa sadar kita malah menghancurkan karier orang lain yang dibangunnya dengan susah payah. Aku memang berusaha menebus kesalahanku itu, tapi tetap saja aku masih menyesali kekeraskepalaanku .... Begitulah, jangan telan mentah-mentah ceritaku ini."
       },
       {
+        "voId": "chr_0018_dapan_mono_self_line05",
         "title": "Dialog Kepercayaan 5",
         "text": "Kalau urusanmu di sini sudah beres, aku akan sangat senang kalau kau mau berkunjung ke Hongshan. Tenang saja, kau pasti akan punya waktu untuk berkunjung ke toko-toko setempat, dan aku bisa memasak hidangan Hongshan apa pun di rumahku! Mampir saja ke Akademi bersamaku. Aku punya proyek yang belum selesai, dan aku sangat ingin menjajal barang baru itu bersamamu! Dan mumpung kau ada di sini, aku tak akan menyerah sampai berhasil mengatasi kemacetan proyekku!"
       },
       {
+        "voId": "chr_0018_dapan_mono_chat_line01",
         "title": "Obrolan 1",
         "text": "TAK ada jalan pintas untuk memasak makanan enak. Kita harus terus mencoba dan belajar dari kesalahan kita sendiri. Itu satu-satunya cara untuk menemukan paduan rasa yang sempurna. Iya, ‘kan?"
       },
       {
+        "voId": "chr_0018_dapan_mono_chat_line02",
         "title": "Obrolan 2",
         "text": "Kau berhasil mengatasinya! Masalah teknis tak bisa diatasi dengan diskusi bertele-tele. Fokus saja pada masalahnya, rundingkan perbedaan pendapat, lalu setelah itu kita bisa kembali akrab. Iya, ‘kan? Jangan dipendam sendirian. Huh. Kapan-kapan saja kuceritakan soal ini. Aku masih tak enak hati gara-gara kejadian itu."
       },
       {
+        "voId": "chr_0018_dapan_mono_chat_line03",
         "title": "Obrolan 3",
         "text": "Kota Wuling. Bicara soal kota ini, berarti kita juga harus menyebut pemandangan alamnya yang indah, atau tokoku, atau main Mahyong walau ada Ombak Hawar yang sedang pasang. Iya, iya, aku bisa mengoceh tanpa henti soal ini, tapi aku sungguh kangen tempat itu! Sepertinya gaya hidup Wuling terlalu memanjakanku setelah aku pensiun. Oy, jangan tertawa terus. Oh ya, karena aku sudah telanjur menyebutnya, apa kau mau main ... Mahyong?"
       },
       {
+        "voId": "chr_0018_dapan_mono_chat_line04",
         "title": "Obrolan 4",
         "text": "Aku berkelana ke banyak kota dan belajar dari banyak chef. Setiap chef dengan senang hati menceritakan metode mereka untuk memasak berbagai hidangan. Tapi, untuk menguasai seni kuliner ... itu tergantung pada keahlian kita."
       },
       {
+        "voId": "chr_0018_dapan_mono_chat_line05",
         "title": "Obrolan 5",
         "text": "Kukira masa pensiunku bakalan santai, mengisi waktu dengan memasak, menyeduh teh, dan berleha-leha saja .... Tapi, kau malah muncul dan menimbuniku dengan tugas tanpa henti. Apa pendapatku soal itu? HAH! Menurutku sih malah menyenangkan!"
       },
       {
+        "voId": "chr_0018_dapan_mono_about_line01",
         "title": "Topik: Yang Terinfeksi",
         "text": "“Terinfeksi” kini tak lagi dianggap sebagai vonis mati. Kebanyakan orang hanya akan merasa kurang beruntung, lalu terus menjalani hidup .... Tapi, kalau kaudatangi desa-desa dan kota-kota di luar Sentrapolis, pandanganmu tentang orang-orang yang Positif Oripati akan berubah."
       },
       {
+        "voId": "chr_0018_dapan_mono_about_line02",
         "title": "Topik: Celah",
         "text": "Sudah bertahun-tahun kami meneliti Celah Raksasa di bawah Kota Wuling itu. Kalau kau ingin tahu dimensi persis celah itu, aku bisa pakai wajanku untuk mengukurnya. Tapi, solusi permanennya ... masih sulit ditemukan ...."
       },
       {
+        "voId": "chr_0018_dapan_mono_about_line03",
         "title": "Topik: Zhuang Fangyi",
         "text": "Oh. Lihat Gubernur Jenderal Zhuang, tidak? Dia masih seperti dulu. Masih saja memaksa diri untuk bertindak dan tampak tangguh, walau sebenarnya dia lembut dan sensitif. Dia jadi tersiksa, tak disukai orang, dan—Uh. Kita lanjutkan kapan-kapan saja."
       },
       {
+        "voId": "chr_0018_dapan_mono_about_line04",
         "title": "Topik: Hongshan Academy of Sciences (HAS)",
         "text": "KONYOL! Kata siapa HAS cuma mau menerima kandidat berdarah Yan? Tak ada kandidat yang ditolak hanya gara-gara latar belakang keturunan. Kami menerima siapa pun yang bisa bekerja sama dengan kedua faksi lainnya, dan siapa pun yang bisa telaten menjalankan pekerjaan ilmiah."
       },
       {
+        "voId": "chr_0018_dapan_mono_about_line05",
         "title": "Topik: Lifeng",
         "text": "Lifeng terlalu serius. Melihatnya saja aku sudah lelah, jadi aku berusaha sebisaku untuk membantunya bersikap santai sedikit. Untungnya, bocah itu mau bersenang-senang dengan panda tua ini. Pikirannya tajam dan dia bisa mengatasi segala masalah sendirian, tapi aku tak yakin apa itu hal yang bagus ...."
       },
       {
+        "voId": "chr_0018_dapan_mono_about_line06",
         "title": "Topik: Lembah IV",
         "text": "Pabrik AIC akan membuat hidup kaum nomad jadi lebih baik. Tapi, semua orang punya ide sendiri-sendiri, dan usaha besar pun tetap saja harus menghadapi banyak tantangan. Kita hanya perlu sabar menghadapinya. Si panda tua ini hanya berusaha sebaik mungkin dan tak akan membesar-besarkan perannya dalam pencapaian di Lembah IV!"
       },
       {
+        "voId": "chr_0018_dapan_explore_point_common_01",
         "title": "Sumber Daya/Barang Koleksi Terdeteksi 1",
         "text": "Tak mudah menemukannya. Isilah kantongmu sampai penuh."
       },
       {
+        "voId": "chr_0018_dapan_explore_point_valub_01",
         "title": "Sumber Daya/Barang Koleksi Terdeteksi 2",
         "text": "Temuan yang sangat langka. Saatnya berikan tugas pengumpulan."
       },
       {
+        "voId": "chr_0018_dapan_explore_find_locked_01",
         "title": "Area yang Belum Dijelajahi Terdeteksi",
         "text": "Tempat ini terasa aneh. Hati-hati."
       },
       {
+        "voId": "chr_0018_dapan_explore_find_danger_01",
         "title": "Musuh Kuat Ditemukan",
         "text": "Hati-hati. Yang ini sepertinya kuat."
       },
       {
+        "voId": "chr_0018_dapan_interact_mine_valub_01",
         "title": "Penambangan 1",
         "text": "Bijih berkualitas bagus!"
       },
       {
+        "voId": "chr_0018_dapan_interact_mine_valub_echo2_01",
         "title": "Penambangan 2",
         "text": "Terima kasih banyak atas kerja keras kalian!"
       },
       {
+        "voId": "chr_0018_dapan_interact_treasure_valub_01",
         "title": "Membuka Kerat",
         "text": "Jackpot emas! Hah! Cuma bercanda!"
       },
       {
+        "voId": "chr_0018_dapan_interact_etherium_01",
         "title": "Mendapatkan Aurylene",
         "text": "Akan kusimpan Aurylene ini untukmu."
       },
       {
+        "voId": "chr_0018_dapan_interact_blight_break_01",
         "title": "Menyingkirkan Hawar",
         "text": "Hawar berhasil dinetralkan! Hurrr. Sungguh melelahkan."
       },
       {
+        "voId": "chr_0018_dapan_interact_rest_01",
         "title": "Istirahat",
         "text": "Sudah makan, sudah tidur. Ayo lanjutkan."
       },
       {
+        "voId": "chr_0018_dapan_combat_suppuse_using_01",
         "title": "Penggunaan Taktis 1",
         "text": "Jangan panik! Biar kubantu!"
       },
       {
+        "voId": "chr_0018_dapan_combat_suppuse_getheal_01",
         "title": "Penggunaan Taktis 2",
         "text": "Sudah baikan."
       },
       {
+        "voId": "chr_0018_dapan_combat_remind_danger_01",
         "title": "Peringatan Bahaya",
         "text": "Awas! Jangan sampai kau kena!"
       },
       {
+        "voId": "chr_0018_dapan_combat_hurt_lowhp_01",
         "title": "Cedera",
         "text": "Hrraak .... Kondisiku tak terlalu bagus."
       },
       {
+        "voId": "chr_0018_dapan_combat_dead_01",
         "title": "0 HP",
         "text": "Maaf ... tapi, aku harus istirahat dulu!"
       },
       {
+        "voId": "chr_0018_dapan_combat_remind_praise_01",
         "title": "Penyemangat Tim 1",
         "text": "Jurusmu sangat profesional!"
       },
       {
+        "voId": "chr_0018_dapan_combat_remind_praise_02",
         "title": "Penyemangat Tim 2",
         "text": "Kerja sama kita hebat!"
       },
       {
+        "voId": "chr_0018_dapan_combat_remind_praise_echo2_01",
         "title": "Respons Penyemangat 1",
         "text": "Terima kasih kembali!"
       },
       {
+        "voId": "chr_0018_dapan_combat_remind_praise_echo2_02",
         "title": "Respons Penyemangat 2",
         "text": "Bagus, Teman-teman!"
       },
       {
+        "voId": "chr_0018_dapan_combat_intobattle_01",
         "title": "Mulai Pertarungan 1",
         "text": "Mau melawan panda? MAJU SINI!"
       },
       {
+        "voId": "chr_0018_dapan_combat_intobattle_echo2_01",
         "title": "Mulai Pertarungan 2",
         "text": "Lakukan saja! Biar kuurus sisanya!"
       },
       {
+        "voId": "chr_0018_dapan_combat_outbattle_nor_01",
         "title": "Menang Pertarungan 1",
         "text": "Kau memang layak jadi bos!"
       },
       {
+        "voId": "chr_0018_dapan_combat_outbattle_nor_02",
         "title": "Menang Pertarungan 2",
         "text": "Pertarungan tadi SERU—Ah, sekarang saatnya makan."
       },
       {
+        "voId": "chr_0018_dapan_combat_outbattle_nor_echo2_01",
         "title": "Menang Pertarungan 3",
         "text": "Memang! Seru, dan kita menang!"
       },
       {
+        "voId": "chr_0018_dapan_combat_outbattle_hard_01",
         "title": "Menang Pertarungan 4",
         "text": "Nyaris saja. Hampir saja wajan besiku hancur gara-gara mereka."
       },
       {
+        "voId": "chr_0018_dapan_combat_battle_defeat_01",
         "title": "Kalah Bertarung",
         "text": "Tenanglah. Akan kubuatkan makanan untuk tim, lalu kita tebus kekalahan ini!"
       },
       {
+        "voId": "chr_0018_dapan_mono_attack_last_01",
         "title": "Final Strike 1",
         "text": "Ini dia!"
       },
       {
+        "voId": "chr_0018_dapan_mono_attack_last_02",
         "title": "Final Strike 2",
         "text": "RASAKAN!"
       },
       {
+        "voId": "chr_0018_dapan_mono_skill_nor_01",
         "title": "Skill Tarung 1",
         "text": "FLIP DA WOK!"
       },
       {
+        "voId": "chr_0018_dapan_mono_skill_nor_02",
         "title": "Skill Tarung 2",
         "text": "MAKAN INI!"
       },
       {
+        "voId": "chr_0018_dapan_mono_skill_nor_03",
         "title": "Skill Tarung 3",
         "text": "MELAYANGLAH!"
       },
       {
+        "voId": "chr_0018_dapan_combat_skill_comb_ready_01",
         "title": "Skill Kombo Siap 1",
         "text": "Butuh bantuan?"
       },
       {
+        "voId": "chr_0018_dapan_combat_skill_comb_ready_02",
         "title": "Skill Kombo Siap 2",
         "text": "Lihat aksiku, nih!"
       },
       {
+        "voId": "chr_0018_dapan_mono_skill_comb_release_01",
         "title": "Penggunaan Kombo 1",
         "text": "Tetap fokus!"
       },
       {
+        "voId": "chr_0018_dapan_mono_skill_comb_release_02",
         "title": "Penggunaan Kombo 2",
         "text": "Tumbanglah!"
       },
       {
+        "voId": "chr_0018_dapan_mono_attack_extra_01",
         "title": "Penuntas 1",
         "text": "JANGAN SAMPAI aku melihatmu lagi!"
       },
       {
+        "voId": "chr_0018_dapan_mono_attack_extra_02",
         "title": "Penuntas 2",
         "text": "YANG INI GRATIS!"
       },
       {
+        "voId": "chr_0018_dapan_mono_skill_ultimate_01",
         "title": "Ultimate 1",
         "text": "SERANGAN WAJAN ULTRA!"
       },
       {
+        "voId": "chr_0018_dapan_mono_skill_ultimate_02",
         "title": "Ultimate 2",
         "text": "RASAKAN MENU SPESIAL PANDAKU!"
       },
       {
+        "voId": "chr_0018_dapan_mono_skill_ultimate_03",
         "title": "Ultimate 3",
         "text": "Sudah saatnya ... MAKAN TANPA SISA!"
       }

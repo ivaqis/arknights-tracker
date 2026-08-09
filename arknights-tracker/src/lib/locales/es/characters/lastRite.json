@@ -128,330 +128,412 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0026_lastrite_chrbark_squad_01",
         "title": "Preparación de la operación 1",
         "text": "¿Ya nos vamos? Ah, yo, eh... Solo espérenme un segundo..."
       },
       {
+        "voId": "chr_0026_lastrite_chrbark_squad_02",
         "title": "Preparación de la operación 2",
         "text": "Recuerdo que el Manual Operativo decía que... ¡Ah, y-ya casi termino!"
       },
       {
+        "voId": "chr_0026_lastrite_chrbark_join_01",
         "title": "Añadir al equipo 1",
         "text": "¿Ya... me toca?"
       },
       {
+        "voId": "chr_0026_lastrite_chrbark_join_02",
         "title": "Añadir al equipo 2",
         "text": "Last Rite, ¡prepárate para atacar...! Hmm... ¿Vamos a atacar, verdad?"
       },
       {
+        "voId": "chr_0026_lastrite_chrbark_weap_01",
         "title": "Cambiar de arma",
         "text": "No hay problema. Siempre y cuando sea lo suficientemente resistente."
       },
       {
+        "voId": "chr_0026_lastrite_chrbark_gear_01",
         "title": "Cambiar de equipamiento",
         "text": "Wow... Nunca había visto este modelo antes... Déjame r-r-revisar otra vez la guía del usu-usuario..."
       },
       {
+        "voId": "chr_0026_lastrite_chrup_skill_01",
         "title": "Activación de la matriz de habilidades",
         "text": "Seguiré luchando... ¡a mi manera!"
       },
       {
+        "voId": "chr_0026_lastrite_chrup_level_01",
         "title": "Viendo los registros de combate",
         "text": "¡KYAAA...! ¡L-lo-lamento mucho! Esa escena fue un poco... aterradora..."
       },
       {
+        "voId": "chr_0026_lastrite_chrup_promt01_01",
         "title": "Ascenso de operador 1",
         "text": "¿A... ascenso? *Jadeo* ¡¿En serio?! ¿Pa-para mí?"
       },
       {
+        "voId": "chr_0026_lastrite_chrup_promt02_01",
         "title": "Ascenso de operador 2",
         "text": "Mamá... Papá... Yo... Finalmente lo logré..."
       },
       {
+        "voId": "chr_0026_lastrite_chrup_promt03_01",
         "title": "Ascenso de operador 3",
         "text": "Entendido. Forjaré un camino entre fuego y sangre en tu nombre, y no flaquearé ante... Eh... ¿Por qué me miras así... tan tenso?"
       },
       {
+        "voId": "chr_0026_lastrite_chrup_promt04_01",
         "title": "Ascenso de operador 4",
         "text": "Me di cuenta de que puedo ser mucho más útil para todos si me quedo. Si mi contrato con Seš'qa se termina, puedes contactarme... ¡O-oh no! ¡No se suponía que dijera eso! Por favor... No le digas a nadie sobre esto..."
       },
       {
+        "voId": "chr_0026_lastrite_introduce_01",
         "title": "Operador reportándose para el deber",
         "text": "Representante de Seš'qa, reportándose para el deber... Mi nombre... Q-quiero decir, mi nombre clave es Last Rite... Solo llámame así..."
       },
       {
+        "voId": "chr_0026_lastrite_mono_switch_01",
         "title": "En espera 1",
         "text": "El entrenamiento debe continuar. Debo dominar este poder..."
       },
       {
+        "voId": "chr_0026_lastrite_mono_switch_02",
         "title": "En espera 2",
         "text": "Y espero que nuestras batallas traigan paz."
       },
       {
+        "voId": "chr_0026_lastrite_sim_assign_work_01",
         "title": "Asignando a una instalación",
         "text": "¡Entendido! ¡Me esforzaré diez veces más...! No, quise decir... ¡ciento veinte veces más!"
       },
       {
+        "voId": "chr_0026_lastrite_sim_hello_lower_01",
         "title": "Saludo 1",
         "text": "¡¿Endministrator...?! ¿Có-cómo estás...?"
       },
       {
+        "voId": "chr_0026_lastrite_sim_hello_max_01",
         "title": "Saludo 2",
         "text": "¿Necesitas ayuda con algo, Endmin?"
       },
       {
+        "voId": "chr_0026_lastrite_sim_talk_lv01_01",
         "title": "Charla casual en la Dijiang 1",
         "text": "Puedo hacerlo. Es solo una línea. Sí, ten confianza. ¡Oye, Endmin...! El po-po-postre... e-e-estuvo... bu-b-bue-buenísimo hoy, ¿verdad?"
       },
       {
+        "voId": "chr_0026_lastrite_sim_talk_lv02_01",
         "title": "Charla casual en la Dijiang 2",
         "text": "Ay, no... Hay demasiada gente... ¿Y-y si alguien se me acerca? Debería ir a esconderme en una caja..."
       },
       {
+        "voId": "chr_0026_lastrite_sim_talk_lv02_02",
         "title": "Charla casual en la Dijiang 3",
         "text": "¿S-s-sabes dónde se reportan daños? Yo... eh... rompí la cabina de entrenamiento... otra vez..."
       },
       {
+        "voId": "chr_0026_lastrite_sim_talk_max_01",
         "title": "Charla casual en la Dijiang 4",
         "text": "Hngh... ¿P-puedo apoyarme un segundo en ti...? Solo quiero agarrar unas galletas saladas... E-estoy bien... Solo un poco... hambrienta..."
       },
       {
+        "voId": "chr_0026_lastrite_sim_talk_max_02",
         "title": "Charla casual en la Dijiang 5",
         "text": "Reproductor personal, kit de herramientas omni, Unidad de las Artes básica... Ah, es solo una lista de compras. Estas cosas son muy difíciles de conseguir en mi pueblo. Por suerte, unos colegas de la Oficina de Logística se ofrecieron a comprarlas por el camino. ¡Son tan amables conmigo!"
       },
       {
+        "voId": "chr_0026_lastrite_sim_talk_max_03",
         "title": "Charla casual en la Dijiang 6",
         "text": "Endmin... ¿puedo... pegar unos volantes en la Dijiang? Seš'qa me encargó un montón de trabajo de promoción. Si no llego a mis indicadores de rendimiento, me arrastrarán de regreso a un entrenamiento especial..."
       },
       {
+        "voId": "chr_0026_lastrite_sim_gift_give_01",
         "title": "Ofreciendo regalos",
         "text": "E-e-en-en-Endmin, ¡por favor, acepta este humilde obsequio como muestra de mi eterna e infinita g-grr-g-gratitud! Yo... Lo siento mucho... No sé qué decir..."
       },
       {
+        "voId": "chr_0026_lastrite_sim_gift_recv_01",
         "title": "Aceptando regalos",
         "text": "¿¿E-esto es... para mí?? ¿¿De verdad estás seguro, Endmin?? Oh cielos... Creo que... voy a desmayarme..."
       },
       {
+        "voId": "chr_0026_lastrite_mono_self_line01",
         "title": "Diálogo de confianza 1",
         "text": "Je, je, je... Endmin, ¿es cierto que en Nueva Wrankwood hay una casa hecha toda de dulces? ¿Puedo... tomarme unos días libres para quedarme ahí? ¡Y no te preocupes, masticaré lo suficiente para que nos salga rentable! Oh... ¿Solo era... un anuncio?"
       },
       {
+        "voId": "chr_0026_lastrite_mono_self_line02",
         "title": "Diálogo de confianza 2",
         "text": "¿Ojeras? Ah, es que estoy tomando cursos de primeros auxilios y prevención básica de enfermedades de cosecha... así que empecé a dormir menos... ¡Pero son muy útiles! ¡Cortar cosas en pedacitos con una espada no arregla todos nuestros problemas! ¡Eso es un no definitivo! El único problema es que... las lecciones sobre Artes de Restauración son muy difíciles..."
       },
       {
+        "voId": "chr_0026_lastrite_mono_self_line03",
         "title": "Diálogo de confianza 3",
         "text": "Last Rite. Hora de brujas me puso ese nombre clave. Como soy Nachzehrer y trabajaba como funeraria en mi pueblo, querían un nombre que “resaltara las características del producto”... Pero ¡yo no soy el producto! ¡Es este uniforme! ¡Y los Last Rites son ceremonias sombrías para los difuntos! ¿Por qué lo usarían de una manera tan ridícula...? Endmin... ¿podrías escribirme otra carta de protesta? ¿Por favor?"
       },
       {
+        "voId": "chr_0026_lastrite_mono_self_line04",
         "title": "Diálogo de confianza 4",
         "text": "La gente sigue bromeando con que me dejo “morir de hambre”, y más o menos entiendo por qué. Pero usar mis habilidades innatas de Nachzehrer perturbaría a los muertos. Las probabilidades son bajas, pero lo prohíbo... No he logrado comprenderlo todo, dadas las complejidades de nuestra hechicería. Así que opté por no usar mis poderes. ¡Es la medida más segura!"
       },
       {
+        "voId": "chr_0026_lastrite_mono_self_line05",
         "title": "Diálogo de confianza 5",
         "text": "Hay algo que debo compartir contigo, Endmin. No me importa lo que pase después de hacerlo. Bueno, d-debes saber que... ¡Seš'qa empacó como si fuera un producto de lujo! ¡Me nombraron “Princesa de la Corte de Batalla” sin consultarme! Nunca quise mentirte... Lo siento de verdad. Tal vez debería renunciar... E-espera... ¡¿Tú ya lo sabías todo este tiempo?! ¿Y estás... bien con eso?"
       },
       {
+        "voId": "chr_0026_lastrite_mono_chat_line01",
         "title": "Charla 1",
         "text": "Me encantaría poder usar mi espada como los demás operadores. Todos tienen posturas hermosas, cortes elegantes y defensas firmes. Intenté copiar sus movimientos, pero... siempre terminaba arrojando la espada sin querer. Supongo que solo puedo luchar con golpes instintivos, salvajes... Espera. ¿Mis golpes también son hermosos? Yo... No sé si eso sea verdad, pero... supongo que es muy lindo de tu parte decirlo."
       },
       {
+        "voId": "chr_0026_lastrite_mono_chat_line02",
         "title": "Charla 2",
         "text": "Muchas razas mencionan algún tipo de “espíritu” que permanece después de la muerte. Mis padres me enseñaron muchos rituales de oración, y solía realizar cada uno de ellos en el cementerio de mi pueblo, todos los días. ¿Mmm? Ah, sí, he oído hablar de una clase de Sarkaz llamada “Espectros”. Se decía que podían meterse en todo tipo de cadáveres y reanimarlos... Espera. ¿Estás intentando contarme una historia de terror? ¡NONONONONO! ¡NO TE OIGO!"
       },
       {
+        "voId": "chr_0026_lastrite_mono_chat_line03",
         "title": "Charla 3",
         "text": "¿Por qué todos me hacen bromas? Los niños de mi pueblo me decían “Ñamñam” o “Señorita Despistada”. Y los veteranos Endfielders también me ponían apodos raros. Tengo que encontrar la forma de parecer más autoritaria... ¡Oh! Tengo una idea. ¡Podría usar una máscara como el Endmin! ¿Y si hablo así con la máscara puesta? ¿Cómo me veo? ¿Qué? ¿Da mucho miedo? Oh... Está bien..."
       },
       {
+        "voId": "chr_0026_lastrite_mono_chat_line04",
         "title": "Charla 4",
         "text": "Hice el examen estándar para operadores. La parte física la pasé sin problemas, pero lo técnico... e-eh... ¡digamos que la Supervisora Perlica me aprobó de todos modos! ¡Desde entonces he estado siguiendo entrenamiento correctivo! Ah, y sobre ese viejito que me dio el contrato en la ciudad flotante... Perlica dijo que estaba intentando protegerme. No entendí muy bien qué quiso decir, pero ¡Perlica siempre tiene la razón!"
       },
       {
+        "voId": "chr_0026_lastrite_mono_chat_line05",
         "title": "Charla 5",
         "text": "Seš'qa siempre ha protegido el conocimiento Sarkaz y los dispositivos de hechicería, pero hay muy pocos Nachzehrers en Talos-II. Muchas técnicas de guerra que se pasaban de generación en generación se perdieron con el tiempo. Según nuestros estudiosos, muchos Nachzehrers lucharon en los campos de batalla de Terra... y sostenían la guerra absorbiendo el poder de sus camaradas caídos... Pero ya no tenemos que hacer eso, ¿verdad? Tengo un aura gélida que apenas puedo contener. Si no tengo cuidado, el frío se escapa de mí. Aun así, es un poder que... me hace sentir más cómoda."
       },
       {
+        "voId": "chr_0026_lastrite_mono_about_line01",
         "title": "Tema: Talento y poder",
         "text": "Los instructores de Seš'qamam decían que un Nachzehrer adecuado usa la hechicería para dominar el hielo. Y que yo no lo era, porque mi frialdad siempre se me escapa... Bueno, soy muy buena resistiendo el impulso de absorber a los muertos. La desventaja es que... me da hambre muy fácil... No te preocupes. Consumo comida muy rápido. De hecho, he estado comiendo bocadillos de medianoche desde hace un tiempo, pero de alguna forma sigo bajando de peso... Eeh... Endmin... ¿todos me estaban mirando hace rato?"
       },
       {
+        "voId": "chr_0026_lastrite_mono_about_line02",
         "title": "Tema: Equipamiento de combate",
         "text": "¿Dices que casi no se ven atuendos como el mío? Es un uniforme prototipo de Hora de brujas. Quieren que lo use durante el combate para recolectar... ehm... ¿datos de prueba, supongo? Pero no se me da muy bien pelear... No sé por qué me contrataron para esto... ¡Aunque el uniforme es fabuloso! ¡Es ligero, resistente y hasta te seca el cabello después de bañarte! Pero el manual de uso para el modo combate es un libro gordo y es difícil memorizar todo..."
       },
       {
+        "voId": "chr_0026_lastrite_mono_about_line03",
         "title": "Tema: Los muertos",
         "text": "Recuerdo a todas las personas enterradas en el cementerio que cuidaba mi familia: los ancianos, el bebé que no tuvo suerte, el mercenario de otro pueblo, el forastero con enfermedad de piedra... Cada uno tenía un último deseo. Durante los ritos, los que venían a despedirse lo pronunciaban en voz alta. Y bajo sus palabras... Yo podía sentir lo que los difuntos realmente anhelaban. No pedían que se cumplieran sus deseos... Solo querían ser escuchados. Recordar sus deseos era lo único que podía hacer. Como decía mi mamá, un deseo que permanece es prueba de que una vez vivieron."
       },
       {
+        "voId": "chr_0026_lastrite_mono_about_line04",
         "title": "Tema: Seš'qa",
         "text": "Hora de brujas tiene que ajustar mi traje de combate de vez en cuando, así que suelo ir a la ciudad flotante. Cuando Seš'qa se aleja lo suficiente de otras ciudades, repliegan las instalaciones móviles y el lugar se queda en silencio absoluto. El caravanero que me presentó a Endfield decía que Seš'qa recorre Talos-II llevando tripulaciones de mercenarios y hechiceros. Su objetivo es conectar y apoyar a las comunidades Sarkaz de todo el mundo. Pero... si soy sincera, se sienten menos como una caridad y más como un negocio con fines de lucro..."
       },
       {
+        "voId": "chr_0026_lastrite_mono_about_line05",
         "title": "Tema: Destino",
         "text": "Papá decía que la C.G.C.T. cavó varios pozos en nuestro pueblo hace muchos años. ¡Pero un veterano Endfielder me dijo que fue Endfield quien lideró todo el proyecto! Después de eso, varias familias se mudaron allí, ya que por fin tuvimos acceso al agua. Y entonces empezaron a llegar los caravaneros. Uno de ellos me dijo que podía intentar suerte en Seš'qa, y así fue como conocí a todos en Endfield. ¿Tal vez fue cosa del destino?"
       },
       {
+        "voId": "chr_0026_lastrite_mono_about_line06",
         "title": "Tema: “Amigos”",
         "text": "Todo comenzó cuando era una niña muy pequeña. A veces escuchaba una voz que me hablaba. Sonaba cansada y agotada, y probablemente dormía casi todo el tiempo. Ninguno de sus hijos descansaba en nuestro cementerio. Creo que estaban más al norte... Y cuando yo tenía hambre, ella me abrazaba y me consolaba. Pero en los últimos años, dormía cada vez más tiempo... y su voz sonaba más débil que antes. Realmente espero poder hacer algo para ayudarla..."
       },
       {
+        "voId": "chr_0026_lastrite_explore_point_common_01",
         "title": "Recurso/Coleccionable detectado 1",
         "text": "Veo recursos por allá... ¿Vamos a recolectarlos?"
       },
       {
+        "voId": "chr_0026_lastrite_explore_point_valub_01",
         "title": "Recurso/Coleccionable detectado 2",
         "text": "Eso parece algo bueno... Si no estoy viendo mal..."
       },
       {
+        "voId": "chr_0026_lastrite_explore_find_locked_01",
         "title": "Zona inexplorada detectada",
         "text": "Mi traje de combate está reaccionando a algo. ¿Hay una anomalía por ahí?"
       },
       {
+        "voId": "chr_0026_lastrite_explore_find_danger_01",
         "title": "Enemigo poderoso descubierto",
         "text": "¡Con cuidado! ¡Ese enemigo se ve muy poderoso!"
       },
       {
+        "voId": "chr_0026_lastrite_interact_mine_valub_01",
         "title": "Minería 1",
         "text": "El per-per-personal del Arsenal... no se va a enojar por esto, ¿verdad?"
       },
       {
+        "voId": "chr_0026_lastrite_interact_mine_valub_echo2_01",
         "title": "Minería 2",
         "text": "Déjamelo a mí. Soy fuerte."
       },
       {
+        "voId": "chr_0026_lastrite_interact_treasure_valub_01",
         "title": "Abriendo una caja",
         "text": "Guaaaau... Nunca había visto cosas tan lindas como estas..."
       },
       {
+        "voId": "chr_0026_lastrite_interact_etherium_01",
         "title": "Adquiriendo Aurileno",
         "text": "Es tan hermoso... ¡Ay, perdón! ¡Ya terminé de recolectarlo!"
       },
       {
+        "voId": "chr_0026_lastrite_interact_blight_break_01",
         "title": "Eliminar la Plaga",
         "text": "Espero no haber derramado ese moco sucio por todos lados..."
       },
       {
+        "voId": "chr_0026_lastrite_interact_rest_01",
         "title": "Descanso",
         "text": "¿A-a-alguien quiere algo frío de tomar? Puedo enfriárselos..."
       },
       {
+        "voId": "chr_0026_lastrite_combat_suppuse_using_01",
         "title": "Uso táctico 1",
         "text": "¡Déjenme ayudarte!"
       },
       {
+        "voId": "chr_0026_lastrite_combat_suppuse_getheal_01",
         "title": "Uso táctico 2",
         "text": "Yo... Me siento mejor..."
       },
       {
+        "voId": "chr_0026_lastrite_combat_remind_danger_01",
         "title": "Advertencia de peligro",
         "text": "¡Ten cuidado! ¡Peligro!"
       },
       {
+        "voId": "chr_0026_lastrite_combat_hurt_lowhp_01",
         "title": "Herida",
         "text": "¡Mantente despierto...! No puedo caer aquí..."
       },
       {
+        "voId": "chr_0026_lastrite_combat_dead_01",
         "title": "0 PV",
         "text": "Debo protegerlos..."
       },
       {
+        "voId": "chr_0026_lastrite_combat_remind_praise_01",
         "title": "Ánimo del equipo 1",
         "text": "E-e-es... tan genial..."
       },
       {
+        "voId": "chr_0026_lastrite_combat_remind_praise_02",
         "title": "Ánimo del equipo 2",
         "text": "¡Todos son tan increíbles!"
       },
       {
+        "voId": "chr_0026_lastrite_combat_remind_praise_echo2_01",
         "title": "Respuesta al ánimo 1",
         "text": "¡M-me halagas!"
       },
       {
+        "voId": "chr_0026_lastrite_combat_remind_praise_echo2_02",
         "title": "Respuesta al ánimo 2",
         "text": "¡T-t-todos lo logramos juntos!"
       },
       {
+        "voId": "chr_0026_lastrite_combat_intobattle_01",
         "title": "Comienza el combate 1",
         "text": "¡Déjenme ir adelante!"
       },
       {
+        "voId": "chr_0026_lastrite_combat_intobattle_echo2_01",
         "title": "Comienza el combate 2",
         "text": "¡Vamos a darlo todo, gente!"
       },
       {
+        "voId": "chr_0026_lastrite_combat_outbattle_nor_01",
         "title": "Victoria en el combate 1",
         "text": "Espero no haber roto mi traje de combate..."
       },
       {
+        "voId": "chr_0026_lastrite_combat_outbattle_nor_02",
         "title": "Victoria en el combate 2",
         "text": "¡Hecho posible gracias a la más reciente tecnología de Seš'qa! Ah... No puedo quitarme este hábito..."
       },
       {
+        "voId": "chr_0026_lastrite_combat_outbattle_nor_echo2_01",
         "title": "Victoria en el combate 3",
         "text": "¡L-lo hicimos bien todos!"
       },
       {
+        "voId": "chr_0026_lastrite_combat_outbattle_hard_01",
         "title": "Victoria en el combate 4",
         "text": "¿Todos están bien...? Oh... se siente bien estar viva..."
       },
       {
+        "voId": "chr_0026_lastrite_combat_battle_defeat_01",
         "title": "Derrota en el combate",
         "text": "¡L-lo-lamento mucho! ¡Fue toda mi culpa! Yo voy a... Voy a arreglar lo que salió mal. ¿Qué tal si... lo intentamos otra vez?"
       },
       {
+        "voId": "chr_0026_lastrite_mono_attack_last_01",
         "title": "Golpe final 1",
         "text": "¡Último... golpe!"
       },
       {
+        "voId": "chr_0026_lastrite_mono_attack_last_02",
         "title": "Golpe final 2",
         "text": "¡Te trituraré!"
       },
       {
+        "voId": "chr_0026_lastrite_mono_skill_nor_01",
         "title": "Habilidad de batalla 1",
         "text": "Hace un poco de frío."
       },
       {
+        "voId": "chr_0026_lastrite_mono_skill_nor_02",
         "title": "Habilidad de batalla 2",
         "text": "Deja que la nieve se congele."
       },
       {
+        "voId": "chr_0026_lastrite_mono_skill_nor_03",
         "title": "Habilidad de batalla 3",
         "text": "Escúchame, escarcha."
       },
       {
+        "voId": "chr_0026_lastrite_combat_skill_comb_ready_01",
         "title": "Habilidad de combo preparada 1",
         "text": "¡Yo me encargo de limpiar esto!"
       },
       {
+        "voId": "chr_0026_lastrite_combat_skill_comb_ready_02",
         "title": "Habilidad de combo preparada 2",
         "text": "¡Estoy lista!"
       },
       {
+        "voId": "chr_0026_lastrite_mono_skill_comb_release_01",
         "title": "Lanzando combo 1",
         "text": "¡Ahora muerde el hielo!"
       },
       {
+        "voId": "chr_0026_lastrite_mono_skill_comb_release_02",
         "title": "Lanzando combo 2",
         "text": "¡Esto se sentirá frío!"
       },
       {
+        "voId": "chr_0026_lastrite_mono_attack_extra_01",
         "title": "Remate 1",
         "text": "Por favor, dejen de pelear..."
       },
       {
+        "voId": "chr_0026_lastrite_mono_attack_extra_02",
         "title": "Remate 2",
         "text": "¡Vas a caer!"
       },
       {
+        "voId": "chr_0026_lastrite_mono_skill_ultimate_01",
         "title": "Habilidad máxima 1",
         "text": "¡Potencia máxima, actívate!"
       },
       {
+        "voId": "chr_0026_lastrite_mono_skill_ultimate_02",
         "title": "Habilidad máxima 2",
         "text": "¡Tu tumba ya está cavada!"
       },
       {
+        "voId": "chr_0026_lastrite_mono_skill_ultimate_03",
         "title": "Habilidad máxima 3",
         "text": "Eh, ¿alguna última palabra?"
       }

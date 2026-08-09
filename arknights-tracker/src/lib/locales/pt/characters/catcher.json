@@ -130,322 +130,402 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0020_meurs_chrbark_squad_01",
         "title": "Prep Operação 1",
         "text": "Humm? Uma nova missão?"
       },
       {
+        "voId": "chr_0020_meurs_chrbark_squad_02",
         "title": "Prep Operação 2",
         "text": "Estou pronto para ir."
       },
       {
+        "voId": "chr_0020_meurs_chrbark_join_01",
         "title": "Adicionando à equipe 1",
         "text": "Se precisar de cobertura e logística, pode deixar comigo."
       },
       {
+        "voId": "chr_0020_meurs_chrbark_join_02",
         "title": "Adicionando à equipe 2",
         "text": "Espero que esta missão seja bem planejada e envolva menos riscos."
       },
       {
+        "voId": "chr_0020_meurs_chrbark_weap_01",
         "title": "Trocando de arma",
         "text": "Prático e versátil, ele nos acompanhará em operações de assalto em diversos cenários."
       },
       {
+        "voId": "chr_0020_meurs_chrbark_gear_01",
         "title": "Trocando de equipamento",
         "text": "Equipamentos padronizados... Só lemos sobre eles nos manuais de treinamento... Os equipamentos de verdade são mais bem usinados do que eu esperava."
       },
       {
+        "voId": "chr_0020_meurs_chrup_skill_01",
         "title": "Ativação da Matriz de Capacidade",
         "text": "Eu normalmente preparo planos de contingência extras. Eles... sempre são úteis."
       },
       {
+        "voId": "chr_0020_meurs_chrup_level_01",
         "title": "Assistindo a Registros de Combate",
         "text": "OK... Anotei todos os pontos-chave... A Capitã receberá meu resumo em sua mesa."
       },
       {
+        "voId": "chr_0020_meurs_chrup_promt01_01",
         "title": "Promoção do Operador 1",
         "text": "Obrigado. Pode contar com o melhor de mim em nossas futuras missões."
       },
       {
+        "voId": "chr_0020_meurs_chrup_promt02_01",
         "title": "Promoção do Operador 2",
         "text": "Agora você pode me dar as atribuições mais difíceis. Acredito que agora consigo realizá-las."
       },
       {
+        "voId": "chr_0020_meurs_chrup_promt03_01",
         "title": "Promoção do Operador 3",
         "text": "Agradeço muito a sua aprovação, Endmin. Em troca, concluí a preparação de missões para os... próximos noventa dias. Você pode revisá-la a qualquer momento."
       },
       {
+        "voId": "chr_0020_meurs_chrup_promt04_01",
         "title": "Promoção do Operador 4",
         "text": "Às vezes penso no que poderia ter acontecido se eu tivesse seguido os desejos da minha família. Talvez eu estivesse vivendo uma vida diferente. Uma mais simples, porém mais confortável... Mas eu já tinha me decidido quando peguei a espada e saí de casa naquela manhã. Não pretendo olhar para trás."
       },
       {
+        "voId": "chr_0020_meurs_introduce_01",
         "title": "Operador se apresentando para o trabalho",
         "text": "Catcher, Equipe Op Z7. Minha função é dar cobertura e apoio logístico à equipe. Sou especialista em operações defensivas e sou bom com a lâmina... E espero ser uma adição eficaz à sua equipe."
       },
       {
+        "voId": "chr_0020_meurs_mono_switch_01",
         "title": "Em espera 1",
         "text": "Precisa de cobertura defensiva? Vou te dar o meu melhor."
       },
       {
+        "voId": "chr_0020_meurs_mono_switch_02",
         "title": "Em espera 2",
         "text": "Acho que deveríamos estar mais bem preparados."
       },
       {
+        "voId": "chr_0020_meurs_sim_assign_work_01",
         "title": "Atribuindo a Instalação",
         "text": "Ordens recebidas. Eu as identifiquei como minhas principais prioridades de missão."
       },
       {
+        "voId": "chr_0020_meurs_sim_hello_lower_01",
         "title": "Saudação 1",
         "text": "Saudações, Endmin. Alguma outra atribuição?"
       },
       {
+        "voId": "chr_0020_meurs_sim_hello_max_01",
         "title": "Saudação 2",
         "text": "Endmin, compilei dez pastas de resumos pós-batalha para a Equipe Z7. Você gostaria de revisá-los?"
       },
       {
+        "voId": "chr_0020_meurs_sim_talk_lv01_01",
         "title": "Conversa Ociosa da Dijiang 1",
         "text": "Você está me procurando, Endmin? Bem, tenho trinta minutos antes de cinco sessões consecutivas de esgrima... E estarei livre pelo resto do tempo."
       },
       {
+        "voId": "chr_0020_meurs_sim_talk_lv02_01",
         "title": "Conversa Ociosa da Dijiang 2",
         "text": "Recentemente, revisei as sugestões de todos e melhorei minha receita de ensopado das terras selvagens... Sinta-se à vontade para experimentar se estiver curioso, Endmin."
       },
       {
+        "voId": "chr_0020_meurs_sim_talk_lv02_02",
         "title": "Conversa Ociosa da Dijiang 3",
         "text": "Sempre que volto para a Dijiang, sinto uma sensação de conforto e relaxamento que mal consigo descrever... Antal insiste que foi o aconchego dos colchões do alojamento... É claro que não pretendo discordar dele."
       },
       {
+        "voId": "chr_0020_meurs_sim_talk_max_01",
         "title": "Conversa Ociosa da Dijiang 4",
         "text": "Tenho plena confiança nos meus companheiros de equipe durante as missões. No entanto, não tenho a mínima fé de que eles obedecerão às ordens da Capitã e terão o merecido descanso depois. Um deles ficava acordado a noite toda na biblioteca, e outro pregava peças em recrutas inexperientes na sala de jogos... Esse absurdo só pode acabar quando eu pessoalmente os \"escoltar\" de volta para suas cabines."
       },
       {
+        "voId": "chr_0020_meurs_sim_talk_max_02",
         "title": "Conversa Ociosa da Dijiang 5",
         "text": "Visitei minha família há dois dias. Eles não gostaram muito da minha escolha de carreira, mas contei a eles como era a Equipe Z7 de verdade. Eles não comentaram muito, exceto que me deram alguns sacos com especiarias locais. A Z7 levaria seis meses para usar isso tudo... Endmin, acho que você também deveria ficar com metade."
       },
       {
+        "voId": "chr_0020_meurs_sim_talk_max_03",
         "title": "Conversa Ociosa da Dijiang 6",
         "text": "A vida é muito gratificante. Eu me sinto realmente útil e todos realmente apreciam isso... É isso que ser um Endfielder significa para mim. Há ocasiões em que fico exausto demais para dormir, mas levo isso na esportiva. Significa apenas que conquistei a aprovação de alguém."
       },
       {
+        "voId": "chr_0020_meurs_sim_gift_give_01",
         "title": "Oferta de presentes",
         "text": "São apenas algumas lembrancinhas, Endmin... Mas espero que você possa aceitá-las."
       },
       {
+        "voId": "chr_0020_meurs_sim_gift_recv_01",
         "title": "Aceitando presentes",
         "text": "Para mim? Muito obrigado, Endmin. Guardarei em um cofre adequado."
       },
       {
+        "voId": "chr_0020_meurs_mono_self_line01",
         "title": "Diálogo de Confiança 1",
         "text": "Ah, desculpe, Endmin! Eu estava pensando em como me preparar para a próxima missão. Espere! Tenho uma pergunta para você. Qual destes você acha mais útil: um soldador portátil, um modulador antigravidade ou uma máscara antipoeira de Originium? Humm... Vou levar tudo."
       },
       {
+        "voId": "chr_0020_meurs_mono_self_line02",
         "title": "Diálogo de Confiança 2",
         "text": "Nasci em uma família comum. Meus pais eram soldados. Meu irmão é instrutor militar na CGCT, enquanto minha irmã é escolta armada a serviço dos Seš'qanos. Eu era o caçula e eles me protegeram. Todos queriam que eu tivesse uma vida tranquila em vez de seguir seus passos e ingressar nas forças armadas... Mas a proteção familiar não dura para sempre, especialmente em Talos-II."
       },
       {
+        "voId": "chr_0020_meurs_mono_self_line03",
         "title": "Diálogo de Confiança 3",
         "text": "Não sinto falta da minha infância antes dos nove anos. Ela me fez detestar o cheiro de iodo e água oxigenada... Naquela época, eu não conseguia nem levantar um cantil de água. Os médicos também diziam para minha família me manter dentro de casa. Eu só podia me divertir ao ar livre em raras ocasiões... Mesmo agora, ainda me lembro da minha recuperação e da minha primeira caminhada em plena luz do dia. Foi como se eu tivesse sido trazido de volta à vida."
       },
       {
+        "voId": "chr_0020_meurs_mono_self_line04",
         "title": "Diálogo de Confiança 4",
         "text": "Alguns podem achar a Z7 uma equipe de operações nada impressionante. Eles não estão totalmente errados. A Capitã Akekuri é um pouco jovem demais, a mordida de Fluorite é um pouco forte demais, enquanto Estella e Antal precisam de um pouco mais de bom senso. Mesmo assim, estou mais do que disposto a ficar na Z7... Aliás, eu não me importaria de ser um membro permanente da equipe."
       },
       {
+        "voId": "chr_0020_meurs_mono_self_line05",
         "title": "Diálogo de Confiança 5",
         "text": "Quando entrei para a Endfield, duvidei se teria o que era preciso para ganhar a confiança dos meus superiores... Mas toda a equipe Z7 e até você, Endmin, sempre deixaram isso claro para mim: eu poderia conseguir muito mais do que acreditava e atender às expectativas de todos."
       },
       {
+        "voId": "chr_0020_meurs_mono_chat_line01",
         "title": "Chat 1",
         "text": "O treinamento foi bem padrão. Apenas alguns cursos básicos de combate com um pouco de sobrevivência em campo. Quase ninguém espera que o treinamento básico ensine coisas que sejam realmente úteis em batalhas reais... Eu posso ser a exceção, pois passei uma sessão inteira de exercícios debatendo com meu instrutor como suas demonstrações se desviavam das posições padrão descritas no manual. O que aconteceu depois? Bem, eu o convenci antes mesmo da terceira sessão de treinamento começar."
       },
       {
+        "voId": "chr_0020_meurs_mono_chat_line02",
         "title": "Chat 2",
         "text": "Na verdade, sou o soldado menos talentoso da família. Minha força física e técnica de combate estão muito aquém do padrão da família... Mesmo assim, nunca desisti e simplesmente me dediquei a um treinamento mais intenso — acordava duas horas antes do meu irmão e treinava três vezes mais que minha irmã... E continuo assim até hoje."
       },
       {
+        "voId": "chr_0020_meurs_mono_chat_line03",
         "title": "Chat 3",
         "text": "Por que comecei a aprender a cozinhar? Não tenho um motivo específico. Quando entrei para a Z7, experimentei a comida preparada por outros membros da equipe. No segundo dia, pedi ajuda ao instrutor Lil' Dodge. E foi assim que recebi várias semanas de treinamento de sobrevivência na natureza."
       },
       {
+        "voId": "chr_0020_meurs_mono_chat_line04",
         "title": "Chat 4",
         "text": "Fiz estágio com algumas EMPs antes de entrar na Endfield, mas todos queriam que eu fosse mais \"profissional\"... Em termos leigos, queriam que eu recebesse o pagamento e parasse de fazer perguntas. Eles deixaram claro seu ponto de vista e foram bastante enfáticos quanto a isso. Infelizmente, não consegui me fazer obedecer."
       },
       {
+        "voId": "chr_0020_meurs_mono_chat_line05",
         "title": "Chat 5",
         "text": "Só espero que ninguém dê mais ideias estranhas para a próxima atribuição a Antal e seus amigos. Já causamos problemas demais para o nosso Engenheiro de Arsenal este mês... É, você adivinhou. A Capitã tem uma pilha de relatórios de feedback que não conseguiu terminar, e eles estão todos no meu beliche. Não se preocupe. Se eu não tiver tarefas no dia seguinte, vou virar a noite e dar uma olhada em tudo."
       },
       {
+        "voId": "chr_0020_meurs_mono_about_line01",
         "title": "Tópico: Akekuri",
         "text": "Temos uma Capitã responsável que se importa profundamente com todos na Z7... mas seria muito bom se ela se cuidasse melhor. Mesmo nas reuniões de equipe, ela sempre prioriza o gosto dos outros. *Suspiro* Sinceramente, eu queria que ela simplesmente admitisse que adora salgadinhos de Higashi. Assim eu não teria que ficar fingindo que os fiz por \"coincidência\"."
       },
       {
+        "voId": "chr_0020_meurs_mono_about_line02",
         "title": "Tópico: Fluorite",
         "text": "Eu conheci mercenários do Cinturão como ela. Almas astutas, gananciosas e reservadas cujos sorrisos eram mais assustadores do que seus rosnados... Mas Fluorite começou a discutir técnicas de arremesso de Lesmas do Originium com Antal... Então, acho que poderíamos... dar a ela um tempo antes de começar a julgá-la."
       },
       {
+        "voId": "chr_0020_meurs_mono_about_line03",
         "title": "Tópico: Estella",
         "text": "Não sei por que, mas Estella sempre parece... chocada quando lê meus relatórios. Eu simplesmente descrevi tudo o que aconteceu na missão... e só adicionei algumas ideias imaturas em certas seções... Nada nos meus relatórios deve ser considerado surpreendente. São todos bem comuns, especialmente quando comparados às suas... composições criativas."
       },
       {
+        "voId": "chr_0020_meurs_mono_about_line04",
         "title": "Tópico: Antal",
         "text": "Antal é bem informado e responde com prazer a perguntas. O problema é que ele fica ansioso demais para responder. Estella mencionou casualmente: \"Por que orelhas longas têm orelhas tão compridas?\". Então, Antal decidiu passar o resto do dia nos dando uma palestra sobre ecobiologia. A palestra só terminou quando voltamos para a Dijiang — e ele disse que só apresentou um resumo e que omitiu setenta por cento do conteúdo principal."
       },
       {
+        "voId": "chr_0020_meurs_explore_point_common_01",
         "title": "Recurso/Colecionável detectado 1",
         "text": "A experiência me diz que há itens colecionáveis ali."
       },
       {
+        "voId": "chr_0020_meurs_explore_point_valub_01",
         "title": "Recurso/Colecionável detectado 2",
         "text": "Tem alguma coisa ali... Vale a pena investigar, mesmo que precisemos fazer um desvio."
       },
       {
+        "voId": "chr_0020_meurs_explore_find_locked_01",
         "title": "Área não explorada detectada",
         "text": "Nível de ameaça indisponível. Devemos ser cautelosos."
       },
       {
+        "voId": "chr_0020_meurs_explore_find_danger_01",
         "title": "Inimigo poderoso descoberto",
         "text": "Se for necessário combater, vou preparar nosso plano de saída com antecedência."
       },
       {
+        "voId": "chr_0020_meurs_interact_mine_valub_01",
         "title": "Mineração 1",
         "text": "Um material raro. Precisamos coletá-lo rapidamente."
       },
       {
+        "voId": "chr_0020_meurs_interact_mine_valub_echo2_01",
         "title": "Mineração 2",
         "text": "Somos sempre mais eficientes trabalhando em equipe... Vamos explorar isso juntos."
       },
       {
+        "voId": "chr_0020_meurs_interact_treasure_valub_01",
         "title": "Abrindo um caixote",
         "text": "Ótimo. Coletamos muitos suprimentos úteis."
       },
       {
+        "voId": "chr_0020_meurs_interact_etherium_01",
         "title": "Adquirindo Aurileno",
         "text": "Este deve ser o Aurileno mencionado no manual..."
       },
       {
+        "voId": "chr_0020_meurs_interact_blight_break_01",
         "title": "Eliminando a Praga",
         "text": "A Praga é mais perigosa do que se pensa. Devemos lidar com ela com cuidado."
       },
       {
+        "voId": "chr_0020_meurs_interact_rest_01",
         "title": "Descansar",
         "text": "O descanso adequado contribui para a conclusão da missão. É o que diz o manual de trabalho."
       },
       {
+        "voId": "chr_0020_meurs_combat_suppuse_using_01",
         "title": "Uso Tático 1",
         "text": "Leve isto. Ainda temos bastante."
       },
       {
+        "voId": "chr_0020_meurs_combat_suppuse_getheal_01",
         "title": "Uso Tático 2",
         "text": "...Calculei errado."
       },
       {
+        "voId": "chr_0020_meurs_combat_remind_danger_01",
         "title": "Aviso de Perigo",
         "text": "Cuidado. Não se esforce demais."
       },
       {
+        "voId": "chr_0020_meurs_combat_hurt_lowhp_01",
         "title": "Ferido",
         "text": "Minha lâmina ainda está intacta."
       },
       {
+        "voId": "chr_0020_meurs_combat_dead_01",
         "title": "0 PV",
         "text": "Desculpe... Eu decepcionei todo mundo de novo..."
       },
       {
+        "voId": "chr_0020_meurs_combat_remind_praise_01",
         "title": "Encorajamento da Equipe 1",
         "text": "Manobra impressionante."
       },
       {
+        "voId": "chr_0020_meurs_combat_remind_praise_02",
         "title": "Encorajamento da Equipe 2",
         "text": "Um trabalho em equipe como esse merece uma comemoração."
       },
       {
+        "voId": "chr_0020_meurs_combat_remind_praise_echo2_01",
         "title": "Resposta a Encorajamento 1",
         "text": "Você... me deixa lisonjeado."
       },
       {
+        "voId": "chr_0020_meurs_combat_remind_praise_echo2_02",
         "title": "Resposta a Encorajamento 2",
         "text": "Bem, todos ajudaram."
       },
       {
+        "voId": "chr_0020_meurs_combat_intobattle_01",
         "title": "Início do Combate 1",
         "text": "Devemos agir com cautela e ter cuidado."
       },
       {
+        "voId": "chr_0020_meurs_combat_intobattle_echo2_01",
         "title": "Início do Combate 2",
         "text": "Cumprirei meu papel de apoio."
       },
       {
+        "voId": "chr_0020_meurs_combat_outbattle_nor_01",
         "title": "Vitória em Combate 1",
         "text": "Área neutralizada? Melhor verificar de novo."
       },
       {
+        "voId": "chr_0020_meurs_combat_outbattle_nor_02",
         "title": "Vitória em Combate 2",
         "text": "Conseguimos um resultado ideal."
       },
       {
+        "voId": "chr_0020_meurs_combat_outbattle_nor_echo2_01",
         "title": "Vitória em Combate 3",
         "text": "Impressionante... Só você conseguiria fazer isso."
       },
       {
+        "voId": "chr_0020_meurs_combat_outbattle_hard_01",
         "title": "Vitória em Combate 4",
         "text": "De qualquer forma, ainda cumprimos os objetivos da missão."
       },
       {
+        "voId": "chr_0020_meurs_combat_battle_defeat_01",
         "title": "Derrota em Combate",
         "text": "A maioria das minhas experiências de vida me ensinou uma coisa: aceite suas derrotas e encontre uma maneira de superá-las."
       },
       {
+        "voId": "chr_0020_meurs_mono_attack_last_01",
         "title": "Golpe Final 1",
         "text": "Cai fora."
       },
       {
+        "voId": "chr_0020_meurs_mono_attack_last_02",
         "title": "Golpe Final 2",
         "text": "Sua vez."
       },
       {
+        "voId": "chr_0020_meurs_mono_skill_nor_strike_01",
         "title": "Habilidade de Batalha 1",
         "text": "Para trás!"
       },
       {
+        "voId": "chr_0020_meurs_mono_skill_nor_strike_02",
         "title": "Habilidade de Batalha 2",
         "text": "Pare!"
       },
       {
+        "voId": "chr_0020_meurs_mono_skill_nor_strike_03",
         "title": "Habilidade de Batalha 3",
         "text": "Protejam-se!"
       },
       {
+        "voId": "chr_0020_meurs_combat_skill_comb_ready_01",
         "title": "Combo de Habilidades Pronto 1",
         "text": "A espera acabou."
       },
       {
+        "voId": "chr_0020_meurs_combat_skill_comb_ready_02",
         "title": "Combo de Habilidades Pronto 2",
         "text": "Minha vez."
       },
       {
+        "voId": "chr_0020_meurs_mono_skill_comb_release_01",
         "title": "Conjuração de Combo 1",
         "text": "Aguente isto!"
       },
       {
+        "voId": "chr_0020_meurs_mono_skill_comb_release_02",
         "title": "Conjuração de Combo 2",
         "text": "Experimente isto!"
       },
       {
+        "voId": "chr_0020_meurs_mono_attack_extra_01",
         "title": "Finalizador 1",
         "text": "Não há escapatória."
       },
       {
+        "voId": "chr_0020_meurs_mono_attack_extra_02",
         "title": "Finalizador 2",
         "text": "Acabou."
       },
       {
+        "voId": "chr_0020_meurs_mono_skill_ultimate_01",
         "title": "Habilidade Suprema 1",
         "text": "Vou acabar com você!"
       },
       {
+        "voId": "chr_0020_meurs_mono_skill_ultimate_02",
         "title": "Habilidade Suprema 2",
         "text": "Ninguém vai passar por mim!"
       },
       {
+        "voId": "chr_0020_meurs_mono_skill_ultimate_03",
         "title": "Habilidade Suprema 3",
         "text": "SAIAM DO MEU CAMINHO!"
       }

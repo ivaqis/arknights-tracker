@@ -131,326 +131,407 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0027_tangtang_chrbark_squad_01",
         "title": "Einsatzvorbereitung 1",
         "text": "Hey, Finstermaske! Wo willst du hin? Geh nicht ohne mich!"
       },
       {
+        "voId": "chr_0027_tangtang_chrbark_squad_02",
         "title": "Einsatzvorbereitung 2",
         "text": "Geht’s endlich los? Ich war kurz davor, vor Langeweile einzugehen!"
       },
       {
+        "voId": "chr_0027_tangtang_chrbark_join_01",
         "title": "Wird zum Team hinzugefügt 1",
         "text": "Der Oberhäuptling ist da! Du, du und du, ihr untersteht alle meinem Kommando!"
       },
       {
+        "voId": "chr_0027_tangtang_chrbark_join_02",
         "title": "Wird zum Team hinzugefügt 2",
         "text": "Mach dir keine Sorgen, ich hab alles im Griff."
       },
       {
+        "voId": "chr_0027_tangtang_chrbark_weap_01",
         "title": "Waffe wird gewechselt",
         "text": "Dieses Teil ist echt super! Damit kann ich jetzt noch besser zielen!"
       },
       {
+        "voId": "chr_0027_tangtang_chrbark_gear_01",
         "title": "Ausrüstung wird gewechselt",
         "text": "Die ganze Ausrüstung ist für mich? Alter, coole Sachen teilt man! Das hier gehört dir und das hier mir."
       },
       {
+        "voId": "chr_0027_tangtang_chrup_skill_01",
         "title": "Fähigkeitsmatrix-Aktivierung",
         "text": "Jetzt bin ich noch stärker! Okay, es ist an der Zeit, das Teil an dieser verrückten Frau auszuprobieren!"
       },
       {
+        "voId": "chr_0027_tangtang_chrup_level_01",
         "title": "Kampfaufzeichnungen ansehen",
         "text": "Schlag links! Und rechts! Ja, genau so … Hey, die Leutchen sind echt nicht schlecht. Hol sie mir ins Team!"
       },
       {
+        "voId": "chr_0027_tangtang_chrup_promt01_01",
         "title": "Operator-Beförderung 1",
         "text": "Hast du mich nur hergerufen, um mir ein Lob auszusprechen? Na, dann leg noch eins drauf! Ich liebe es, die Wahrheit zu hören!"
       },
       {
+        "voId": "chr_0027_tangtang_chrup_promt02_01",
         "title": "Operator-Beförderung 2",
         "text": "Schon wieder eine Beförderung für mich? Ich wusste doch, dass ich dein Liebling bin!"
       },
       {
+        "voId": "chr_0027_tangtang_chrup_promt03_01",
         "title": "Operator-Beförderung 3",
         "text": "Wir sind kampferprobt! Keine Formalitäten nötig. Wenn ich einen Schluck Suppe bekomme, bekommst du ein Stück Fleisch. Was, es sollte andersherum sein? Nein, so läuft das eben."
       },
       {
+        "voId": "chr_0027_tangtang_chrup_promt04_01",
         "title": "Operator-Beförderung 4",
         "text": "Noch eine Beförderung? Ich hab doch nur ein Auge … ich kann nicht so viele Berichte lesen! Kümmere dich erst einmal um die Baupläne … Was? Ich bin nicht faul! Das ist eine strategische Verzögerungstaktik. Ich werde trainieren und stärker zurückkommen!"
       },
       {
+        "voId": "chr_0027_tangtang_introduce_01",
         "title": "Operator meldet sich zum Dienst",
         "text": "Tangtang, Häuptling der Qingbo-Palisade, zu Diensten! Überlass Endfield einfach mir. Ich mache es zum härtesten Ort auf Talos-II! Einen Vorschlag einreichen? Komm schon, seit wann macht ein Häuptling Papierkram? Wir kriegen das schon gemeinsam hin!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_switch_01",
         "title": "Warten 1",
         "text": "Woah, mein Schatz! Ha! Versuch, dich jetzt von mir wegzuschleichen!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_switch_02",
         "title": "Warten 2",
         "text": "Grrr – Finstermaske! Endlich bist du da! Wo warst du so lange?"
       },
       {
+        "voId": "chr_0027_tangtang_sim_assign_work_01",
         "title": "Zuweisung zur Anlage",
         "text": "Okay, okay, ich hab schon verstanden. Drück das hier … und dann tipp da drauf. Wenn etwas schiefgeht, wird Finstermaske das schon wieder richten!"
       },
       {
+        "voId": "chr_0027_tangtang_sim_hello_lower_01",
         "title": "Gruß 1",
         "text": "Finstermaske! Hier drüben!"
       },
       {
+        "voId": "chr_0027_tangtang_sim_hello_max_01",
         "title": "Gruß 2",
         "text": "Sag mir Bescheid, wenn etwas Cooles ansteht. Ich will nichts verpassen!"
       },
       {
+        "voId": "chr_0027_tangtang_sim_talk_lv01_01",
         "title": "Dijiang-Geplauder 1",
         "text": "Deine Crew ist zwar hart im Nehmen, aber ich habe noch nie einen richtigen Sparringkampf verloren! Na ja … Die einzigen, mit denen ich nicht klarkomme, sind diese … Ärzte in ihren weißen Kitteln! Die behaupten immer, sie würden meine Oripathie behandeln, und versuchen, mir Nadeln in den Hintern zu stecken. Aah! Da kommen sie schon! Finstermaske, ich muss mich verstecken!"
       },
       {
+        "voId": "chr_0027_tangtang_sim_talk_lv02_01",
         "title": "Dijiang-Geplauder 2",
         "text": "Du hast echt zu viele talentierte Leute auf dieser Dijiang. Wenn du mir doch nur ein paar für mein Team überlassen könntest … Heh, Finstermaske, ich bin nicht gierig. Gib mir einfach Blasse Schreiberin und Grünschuppe! Nein? Wie wär’s dann mit dem dreiköpfigen, super gesprächigen Eisengesicht? Er hat doch keine Angst vor mir. Wir sind beste Freunde!"
       },
       {
+        "voId": "chr_0027_tangtang_sim_talk_lv02_02",
         "title": "Dijiang-Geplauder 3",
         "text": "Wenn ich gestresst bin, gehe ich ans Wasser und schreie ein paar Mal. Danach fühle ich mich immer viel besser. Jemand, der so beschäftigt ist wie du und sich um so viele Dinge kümmern muss, sollte sich auch einen Ort zum Schreien suchen. Wie wär’s mit der Plattform dort drüben? Oder dem großen Fenster? Was meinst du damit, das könnte Probleme geben? Das eigentliche Problem ist, alles in sich hineinzufressen!"
       },
       {
+        "voId": "chr_0027_tangtang_sim_talk_max_01",
         "title": "Dijiang-Geplauder 4",
         "text": "Von den Fenstern der Dijiang aus kann man unzählige Sterne sehen. Das erinnert mich an alte Zeiten, als ich neben der Ahnenquelle lag und die Sterne beobachtete, die sich darin spiegelten. Ein Raumschiff ist schließlich auch ein Schiff und die Galaxie ist wie ein Fluss … Wenn man darüber nachdenkt, sind die Dijiang und die Qingbo-Palisade gar nicht so verschieden. Beide sind tolle Orte!"
       },
       {
+        "voId": "chr_0027_tangtang_sim_talk_max_02",
         "title": "Dijiang-Geplauder 5",
         "text": "Der Schaden … war nicht meine Schuld! Schuld ist dieser grünhaarige Streifenpolizist. Er hätte mir einfach meine Brieftasche zurückgeben können. Stattdessen hat er mich quer durch die Basis gejagt. Ich dachte, er will mich verhaften! Während ich ihm auswich, bin ich vielleicht … ein paar Kisten in die Quere gekommen. Nicht, dass ich schuldig wäre oder so! Das sind nur alte Gewohnheiten von mir aus Wuling, als ich noch Wachen ausgewichen bin."
       },
       {
+        "voId": "chr_0027_tangtang_sim_talk_max_03",
         "title": "Dijiang-Geplauder 6",
         "text": "Endmin, Endmin, Endmin – hmpf! Ich habe mit Grünschuppe eine Wette am Laufen. Wenn ich’s schaffe, dich einen ganzen Tag lang Endmin zu nennen, kauft sie mir einen Haufen Snacks. Diesmal gewinne ich auf jeden Fall! Warte nur, bis sie das Geld rausrückt, Finsterm– Argh! Das habe ich nicht gesagt! Du hast dich verhört! Das zählt nicht!"
       },
       {
+        "voId": "chr_0027_tangtang_sim_gift_give_01",
         "title": "Geschenke anbieten",
         "text": "Frag nicht, woher das kommt. Nimm es einfach an. Meine Regel ist es, gute Arbeit zu belohnen, und du … du bist ziemlich gut."
       },
       {
+        "voId": "chr_0027_tangtang_sim_gift_recv_01",
         "title": "Geschenke annehmen",
         "text": "Ach, das wär doch nicht nötig gewesen … Hast du noch mehr davon? Wie wär’s mit noch einem?"
       },
       {
+        "voId": "chr_0027_tangtang_mono_self_line01",
         "title": "Vertrauensgespräch 1",
         "text": "Wenn es um die kulinarischen Köstlichkeiten von Wuling geht, empfehlen alle nur die üblichen Mainstream-Gerichte. Ich verrate dir einen echten Geheimtipp! Probier das Gefängnisessen in Wuling City: Es gibt drei Gerichte, eine Suppe und sogar Obst. Ich habe heimlich nachgeprüft und festgestellt, dass die Insassen genau das gleiche Essen wie das Wachpersonal bekommen. Es schmeckt alles super. Oh, und ich verrate dir auch noch einen coolen Ort. Wenn du durch die unterirdischen Tunnel in Richtung Wuling kriechst, gibt es eine Stelle, an der Licht hereinscheint und in deren Nähe jede Menge Blumen wachsen … Es ist so schön dort. Schade, dass diese verrückte Mi Fu den Ort sperren lassen hat."
       },
       {
+        "voId": "chr_0027_tangtang_mono_self_line02",
         "title": "Vertrauensgespräch 2",
         "text": "Weißt du, es gibt eine Sache, die ich mich schon immer gefragt habe. Wer waren meine echten Eltern, und warum haben sie mich ins Wasser gelegt? Alle sagen, ich sei die „Tochter des Flusses“, aber ein Fluss kann schließlich keine Felin zur Welt bringen … Mein Vater hat mir erzählt, dass er mich in einer Schüssel angeschwemmt gefunden hat. Ich war fest eingewickelt und mit einer Schleife verziert … Wenn ich sie jemals treffen würde, würde ich sie fragen, ob sie mich nicht behalten haben, weil sie mich nicht mochten. Ich meine … wer bindet schon eine Schleife um Müll, den er wegwirft?"
       },
       {
+        "voId": "chr_0027_tangtang_mono_self_line03",
         "title": "Vertrauensgespräch 3",
         "text": "Bleib stehen! Du hättest meinen Bambusstreifen fast zerbrochen! Ähm … Die Sonne ist in letzter Zeit ziemlich stark, deshalb wollte ich dir einen Hut flechten, der dir Schatten spendet. Ich habe nur deinen Kopf ausgemessen … Was, du traust meinen Fähigkeiten nicht? Die Bambuskörbe, Kisten und Regale in der Palisade habe ich zwar nicht gemacht, aber Qingwu sagt, handgemachte Sachen hätten mehr Bedeutung. Wie auch immer, wenn der Häuptling dir ein Geschenk macht, dann nimmst du es an, egal wie es aussieht!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_self_line04",
         "title": "Vertrauensgespräch 4",
         "text": "Ich weiß, dass die Leute aus der Palisade mich „Häuptling“ nennen, aber in ihren Herzen folgen sie eigentlich meinem Bruder. Sie haben ihm Waffen gegeben und ihm das Lesen beigebracht … Mir haben sie hingegen nur Spielzeug und Klamotten gegeben und mich beim Training einfach nur geduldet. Selbst jetzt kenne ich kaum Schriftzeichen. Sie haben mich gut behandelt und immer versucht, mich bei Laune zu halten. Keine Fehler, keine Schuld. Ich kann mich nur selbst ohrfeigen, dass ich mich nicht mehr engagiert habe. Aber jetzt ist alles anders. Ich werde ein guter Anführer sein – nicht nur für die Palisade oder mich selbst, sondern für alle, die an mich glauben."
       },
       {
+        "voId": "chr_0027_tangtang_mono_self_line05",
         "title": "Vertrauensgespräch 5",
         "text": "Finstermaske, du bist in jeder Hinsicht super – außer in einer: Deine Haltung ist viel zu steif! Ich kann mich nicht einmal richtig an dich heranschleichen, um dir auf die Schulter zu klopfen oder dir durch die Haare zu wuscheln … Warum? Weil ich dich belohnen will natürlich! Das ist ein Zeichen des Vertrauens zwischen uns … Hey, denk nicht mal daran, mir durch die Haare zu wuscheln! Ich bin der Boss, und der Kopf des Bosses ist tabu!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_chat_line01",
         "title": "Geplauder 1",
         "text": "Schwimmen, Stocherkahn fahren, Steine flitschen – alles, was mit Wasser zu tun hat, liegt mir total! Die Palisadenbewohner sagen, ich sei ein von der Ahnenquelle gesegnetes Kind, und das Wasser liebe mich einfach. Aber mal ganz unter uns? Die Wahrheit ist, dass ich mit einem Auge nicht gut sehen kann und deshalb beim Schwimmen immer hinterherhinkte. Ich wollte mich damit nicht abfinden und habe deshalb jeden Tag trainiert … bis ich es endlich geschafft hatte, mit einem Auge zu sehen und alle hinter mir zu lassen! Wie heißt es doch so schön? Richtig: Harte Arbeit zahlt sich aus!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_chat_line02",
         "title": "Geplauder 2",
         "text": "Meine Handfeuerwaffe hat mir mein Vater hinterlassen, meine Kleidung hat Qingwu genäht, meine Haare hat mein Bruder geschnitten und die Verbände hat Shui Ling gefertigt … So läuft das bei uns in der Palisade. Es gibt keine festen Berufe. Jeder muss ein bisschen von allem können und sich gegenseitig helfen … Ach ja, und ich kann viel besser Haare schneiden als mein Bruder! Willst du es mal probieren? Deine Frisur? Zwei Kugeln sollten reichen. Hey, Finstermaske, hör auf wegzulaufen!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_chat_line03",
         "title": "Geplauder 3",
         "text": "Im Winter haben wir die gefangenen Flössler auf Bambusgestellen getrocknet, um Trockenfisch herzustellen. In diesen paar Monaten roch die ganze Qingbo-Palisade so übel, dass ich mir fast gewünscht hätte, Mi Fu würde mich einfach nach Wuling mitnehmen. Aber als sie dann komplett getrocknet waren, mit Gemüse gebraten und auf Reis serviert wurden … Einfach lecker! Weißt du, es ist irgendwie wie im Leben: Erst ist es bitter, dann wird es süß. Am Ende klappt immer alles!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_chat_line04",
         "title": "Geplauder 4",
         "text": "Hier, noch ein Tangtang-Zerti für dich. Du hast mir gestern in der Kantine geholfen, deshalb bin ich dir etwas schuldig. Hmpf! Aber diese Maschine, die kleine Flaschen ausspuckt, wenn man sie tritt? Ich war definitiv nicht derjenige, der sie kaputtgemacht hat … Egal, vergiss das einfach. Du hast jetzt viel zu viele Tangtang-Zertis. Ich muss die Regeln ändern! Ab jetzt brauchst du, Finstermaske, 500, um sie einzulösen … Hehe, meine Zertis, meine Regeln!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_chat_line05",
         "title": "Geplauder 5",
         "text": "Ich verdecke dieses Auge nicht, weil die Oripathie es lichtempfindlich gemacht hat … sondern, weil ich dadurch diese Originium-Techniken nutzen kann. Früher konnte ich sie nicht kontrollieren und habe bei einem Kampf einer verrückten Frau wehgetan, die noch heute eine Narbe davon hat … Ich hatte Angst, noch jemanden zu verletzen, deshalb trage ich seitdem die Augenklappe. Aber hey, alle sagen, dass ich damit mehr wie ein Häuptling wirke. Deshalb trage ich sie auch heute noch!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_about_line01",
         "title": "Thema: Qingbo-Palisade.",
         "text": "Weißt du, vor über 100 Jahren hatten unsere Vorfahren in der Qingbo-Palisade die Nase voll von all den Kämpfen und Rivalitäten. Sie verließen diesen konfliktreichen Ort und ließen sich an der Ahnenquelle nieder. Doch nachdem die Leute aus Wuling angekommen waren, fingen wir wieder an, uns zu streiten. Es scheint, als könne man dem Groll und dem Streit nirgendwo entkommen. Denn diese Dinge sind tief in den Herzen aller Menschen verwurzelt. Wenn ich dieses Haus jedoch gut führe, werden sich diese Konflikte nicht wiederholen … Nein, mehr als das. Ich werde hier in Endfield zusammen mit euch allen noch Größeres erreichen!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_about_line02",
         "title": "Thema: Mi Fu",
         "text": "Weißt du, Mi Fu war früher eine von uns in der Palisade. Eines Tages hat sie dann einfach die Nerven verloren und musste diesen Zhuang als ihren Boss anerkennen. Das hat mich fast um den Verstand gebracht. Ich habe ihr immer wieder gesagt, dass ich ein viel besserer Anführer wäre als Zhuang, aber sie hat nie zurückgeblickt … Quatsch! All die Male, die ich nach Wuling City gefahren bin? Da wollte ich sie nicht bitten, nach Hause zu kommen. Ich wollte sie verprügeln!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_about_line03",
         "title": "Thema: Zhuang Fangyi",
         "text": "Diese Blitzableiterin-Tianshi? Sie verkompliziert die einfachsten Sachen immer total, wenn sie sie erklärt. Ich schwöre, jedes Wort fühlt sich wie eine Falle an, und ich brauche ewig, um sie zu entwirren. Wir sind einfach zwei verschiedene Arten von Wasser, die in entgegengesetzte Richtungen fließen … Aber um der Palisade willen muss ich ihr trotzdem zuhören. Finstermaske, hilf mir mal bei diesem Vorschlag. Was zum Teufel soll das Wort „Flächenverhältnis“ bedeuten …?"
       },
       {
+        "voId": "chr_0027_tangtang_mono_about_line04",
         "title": "Thema: Bambus-Wasserglockenspiel",
         "text": "Wenn wir jemanden in der Palisade verlieren, lassen wir ein Bambus-Wasserglockenspiel ins Wasser … Das erste, das ich jemals steigen ließ, war für meinen Vater. Mein Bruder meinte, das Klingeln sei Papa, der von der Ahnenquelle zu uns spricht. Danach bin ich immer zum Wasser gegangen, wenn ich mich verloren gefühlt habe, und es hat mir eine Antwort gegeben. Aber wenn ich nach meinem Bruder gefragt habe, blieb es immer still. Ich habe lange, lange gewartet, bis mir die Augen zufielen … Vielleicht dachte Papa, dass ich das alleine herausfinden musste."
       },
       {
+        "voId": "chr_0027_tangtang_mono_about_line05",
         "title": "Thema: Lesen",
         "text": "Normalerweise lese ich nicht so gern, aber die Bücher, die mir Grünschuppe letztes Mal gegeben hat, waren echt gut. Sie meinte, sie kämen aus Hongshan und seien für Kinder, die noch nicht lesen können. Aber ehrlich gesagt sind die Lektionen in den Büchern wirklich gut erklärt. Das schaffen viele Erwachsene nicht, obwohl sie alle Wörter kennen. Als ich sie der Crew gezeigt habe, haben sich zumindest alle auf die Knie geklopft und gesagt: „Macht Sinn!“ Würden die Menschen in dieser Welt so klar reden wie in diesen Büchern, gäbe es dann nicht viel weniger Probleme und Missverständnisse?"
       },
       {
+        "voId": "chr_0027_tangtang_explore_point_common_01",
         "title": "Ressource/Sammelobjekt entdeckt 1",
         "text": "Augen auf, hier gibt’s glänzende Sachen!"
       },
       {
+        "voId": "chr_0027_tangtang_explore_point_valub_01",
         "title": "Ressource/Sammelobjekt entdeckt 2",
         "text": "Da drüben ist ein Schatz! Hilf mir mal!"
       },
       {
+        "voId": "chr_0027_tangtang_explore_find_locked_01",
         "title": "Unerforschter Bereich entdeckt",
         "text": "Dieser Bereich ist noch unberührt – lass uns ihn erkunden!"
       },
       {
+        "voId": "chr_0027_tangtang_explore_find_danger_01",
         "title": "Starker Gegner entdeckt",
         "text": "Dein Boss ist da! … Moment mal, der sieht aber streng aus …"
       },
       {
+        "voId": "chr_0027_tangtang_interact_mine_valub_01",
         "title": "Abbau 1",
         "text": "Was für hübsche Steine! Grabt, grabt, grabt!"
       },
       {
+        "voId": "chr_0027_tangtang_interact_mine_valub_echo2_01",
         "title": "Abbau 2",
         "text": "Funkelnde Sachen. Teilen wir sie auf!"
       },
       {
+        "voId": "chr_0027_tangtang_interact_treasure_valub_01",
         "title": "Kiste öffnen",
         "text": "Moment mal … will das denn niemand haben? Dann nehme ich sie eben!"
       },
       {
+        "voId": "chr_0027_tangtang_interact_etherium_01",
         "title": "Aurylen erhalten",
         "text": "Kann ich das gegen Bares verkaufen?"
       },
       {
+        "voId": "chr_0027_tangtang_interact_blight_break_01",
         "title": "Eliminierung der Verderbnis",
         "text": "Cooooool! Jetzt können wir ein paar nervige Umwege vermeiden."
       },
       {
+        "voId": "chr_0027_tangtang_interact_rest_01",
         "title": "Ausruhen",
         "text": "Puh … Ich bin total fertig … Ob ich nicht mehr weiterkann? Ha! Das Wort „nicht“ gibt es in meinem Wörterbuch nicht! Los, wir machen weiter!"
       },
       {
+        "voId": "chr_0027_tangtang_combat_suppuse_using_01",
         "title": "Taktische Nutzung 1",
         "text": "Ich hab dir doch gesagt, dass ich dich schütze!"
       },
       {
+        "voId": "chr_0027_tangtang_combat_suppuse_getheal_01",
         "title": "Taktische Nutzung 2",
         "text": "Ah, viel besser!"
       },
       {
+        "voId": "chr_0027_tangtang_combat_remind_danger_01",
         "title": "Gefahrenwarnung",
         "text": "Hör auf zu glotzen! Geh zurück!"
       },
       {
+        "voId": "chr_0027_tangtang_combat_hurt_lowhp_01",
         "title": "Verletzt",
         "text": "So … müde … muss … durchhalten …"
       },
       {
+        "voId": "chr_0027_tangtang_combat_dead_01",
         "title": "0 LP",
         "text": "Ich lass dich heute noch mal davonkommen …"
       },
       {
+        "voId": "chr_0027_tangtang_combat_remind_praise_01",
         "title": "Teammotivation 1",
         "text": "Das ist mein Superstar-Kumpel!"
       },
       {
+        "voId": "chr_0027_tangtang_combat_remind_praise_02",
         "title": "Teammotivation 2",
         "text": "Unsere kleine Truppe hier hat echt was drauf!"
       },
       {
+        "voId": "chr_0027_tangtang_combat_remind_praise_echo2_01",
         "title": "Motivationsreaktion 1",
         "text": "Cool, cool!"
       },
       {
+        "voId": "chr_0027_tangtang_combat_remind_praise_echo2_02",
         "title": "Motivationsreaktion 2",
         "text": "Sollen wir beim nächsten Mal etwas noch Größeres machen?"
       },
       {
+        "voId": "chr_0027_tangtang_combat_intobattle_01",
         "title": "Kampf beginnt 1",
         "text": "Wer ist der Schlaumeier, der Streit sucht?"
       },
       {
+        "voId": "chr_0027_tangtang_combat_intobattle_echo2_01",
         "title": "Kampf beginnt 2",
         "text": "Man muss sie einfach so erschrecken!"
       },
       {
+        "voId": "chr_0027_tangtang_combat_outbattle_nor_01",
         "title": "Kampfsieg 1",
         "text": "Das war mal ein richtig guter Kampf!"
       },
       {
+        "voId": "chr_0027_tangtang_combat_outbattle_nor_02",
         "title": "Kampfsieg 2",
         "text": "Ha, das ist alles meinem genialen Kommando zu verdanken!"
       },
       {
+        "voId": "chr_0027_tangtang_combat_outbattle_nor_echo2_01",
         "title": "Kampfsieg 3",
         "text": "Das hör ich doch gern!"
       },
       {
+        "voId": "chr_0027_tangtang_combat_outbattle_hard_01",
         "title": "Kampfsieg 4",
         "text": "Super Arbeit! Jetzt ruht euch aus. Beim nächsten Mal sind wir vorsichtiger!"
       },
       {
+        "voId": "chr_0027_tangtang_combat_battle_defeat_01",
         "title": "Niederlage im Kampf",
         "text": "Ich kann es nicht ertragen, euch alle so leiden zu sehen … Ich schwöre euch, ich werde mich für euch alle rächen!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_attack_last_01",
         "title": "Abschlussangriff 1",
         "text": "Peng!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_attack_last_02",
         "title": "Abschlussangriff 2",
         "text": "Bämm!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_skill_nor_01",
         "title": "Kampffertigkeit 1",
         "text": "Jetzt kannst du nicht mehr raus!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_skill_nor_02",
         "title": "Kampffertigkeit 2",
         "text": "Eins mit dem Strom!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_skill_nor_03",
         "title": "Kampffertigkeit 3",
         "text": "Mal sehen, wer schneller ist!"
       },
       {
+        "voId": "chr_0027_tangtang_combat_skill_comb_ready_01",
         "title": "Kombofertigkeit bereit 1",
         "text": "Wann bin ich dran?!"
       },
       {
+        "voId": "chr_0027_tangtang_combat_skill_comb_ready_02",
         "title": "Kombofertigkeit bereit 2",
         "text": "Zeit, dass der Häuptling mal zeigt, was er kann!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_skill_comb_release_01",
         "title": "Kombo wirken 1",
         "text": "Lücke in der Verteidigung entdeckt!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_skill_comb_release_02",
         "title": "Kombo wirken 2",
         "text": "Vorsicht, Rutschgefahr!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_attack_extra_01",
         "title": "Wuchtschlag 1",
         "text": "Jetzt bist du mir ausgeliefert!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_attack_extra_02",
         "title": "Wuchtschlag 2",
         "text": "Hab dich reingelegt! Ha!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_skill_ultimate_01",
         "title": "Ultimative Fertigkeit 1",
         "text": "Ich seh dich!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_skill_ultimate_02",
         "title": "Ultimative Fertigkeit 2",
         "text": "Der heißt – Stopp!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_skill_ultimate_03",
         "title": "Ultimative Fertigkeit 3",
         "text": "Verschwinde mit dem Strom!"
       }

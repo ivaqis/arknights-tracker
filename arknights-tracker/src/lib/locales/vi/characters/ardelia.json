@@ -123,326 +123,407 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0025_ardelia_chrbark_squad_01",
         "title": "Chuẩn Bị Tác Chiến 1",
         "text": "Xin hãy làm điều ngài cần làm, Giáo sư. Tôi sẽ làm tất cả những gì có thể để hỗ trợ."
       },
       {
+        "voId": "chr_0025_ardelia_chrbark_squad_02",
         "title": "Chuẩn Bị Tác Chiến 2",
         "text": "Để tôi xem nào. Lần này tôi nên thu thập dữ liệu ở đâu đây?"
       },
       {
+        "voId": "chr_0025_ardelia_chrbark_join_01",
         "title": "Đang thêm vào đội 1",
         "text": "Tôi đã chuẩn bị xong dụng cụ thăm dò rồi, Giáo sư. Chúng ta có thể lên đường bất cứ lúc nào."
       },
       {
+        "voId": "chr_0025_ardelia_chrbark_join_02",
         "title": "Đang thêm vào đội 2",
         "text": "Tôi cảm thấy an tâm hơn rất nhiều khi có Giáo sư ở bên cạnh."
       },
       {
+        "voId": "chr_0025_ardelia_chrbark_weap_01",
         "title": "Đang đổi vũ khí",
         "text": "Ngài có thể đứng xa một chút được không, Giáo sư? Tôi, ừm... Tôi không muốn lỡ tay làm ngài bị thương."
       },
       {
+        "voId": "chr_0025_ardelia_chrbark_gear_01",
         "title": "Đang đổi trang bị",
         "text": "Nghiên cứu thực địa có thể rất nguy hiểm. Chúng ta phải chắc chắn rằng mình đã được bảo hộ đầy đủ."
       },
       {
+        "voId": "chr_0025_ardelia_chrup_skill_01",
         "title": "Kích hoạt Ma Trận Năng Lực",
         "text": "Nhật ký của tôi giống như những vòng tuổi trên thân cây cổ thụ. Nó ghi lại từng bài học tôi đã trải qua trong quá trình trưởng thành."
       },
       {
+        "voId": "chr_0025_ardelia_chrup_level_01",
         "title": "Xem Hồ Sơ Chiến Đấu",
         "text": "Kẻ địch đã làm gì để biến vùng đất này thành... hoang tàn phế tích vậy?"
       },
       {
+        "voId": "chr_0025_ardelia_chrup_promt01_01",
         "title": "Thăng Bậc Cán Viên 1",
         "text": "Được rồi, Ardelia! Tập trung vào một con đường thôi! Tiếp tục khám phá, tiếp tục hoàn thiện!"
       },
       {
+        "voId": "chr_0025_ardelia_chrup_promt02_01",
         "title": "Thăng Bậc Cán Viên 2",
         "text": "Tôi thật sự biết ơn sự công nhận của ngài, Giáo sư! Tôi sẽ nỗ lực hơn nữa và đạt được nhiều thành tựu hơn tại Endfield!"
       },
       {
+        "voId": "chr_0025_ardelia_chrup_promt03_01",
         "title": "Thăng Bậc Cán Viên 3",
         "text": "Đừng lo cho tôi, Giáo sư. Tôi thật sự không làm việc quá sức đâu. Hmm? Quầng thâm dưới mắt tôi à? À ừm... là do cuốn sách đó hấp dẫn quá. Tôi không thể rời mắt."
       },
       {
+        "voId": "chr_0025_ardelia_chrup_promt04_01",
         "title": "Thăng Bậc Cán Viên 4",
         "text": "Thế giới này vẫn còn vô số điều kỳ bí chờ được khám phá. Chúng ta nên hiểu rõ nó hơn, cũng giống như... như việc chúng ta cần hiểu rõ chính mình vậy. Ngài có nghĩ vậy không, Giáo sư?"
       },
       {
+        "voId": "chr_0025_ardelia_introduce_01",
         "title": "Cán Viên đang báo cáo nhiệm vụ",
         "text": "Xin chào, Endministrator. Tôi là Ardelia, một nhà địa chất học đến từ Rhodes Island. Hiện tôi đang tập trung nghiên cứu mối liên hệ giữa các thảm họa địa chất và hiện tượng Ætherside. Tôi đã nghe về ngài từ khá lâu rồi, Endmin. Tôi có rất nhiều câu hỏi muốn hỏi ngài. À, còn một điều nữa... Tôi có thể gọi ngài là Giáo sư của tôi được không?"
       },
       {
+        "voId": "chr_0025_ardelia_mono_switch_01",
         "title": "Chờ Lệnh 1",
         "text": "Chúc ngài có một ngày thật rạng rỡ, Giáo sư."
       },
       {
+        "voId": "chr_0025_ardelia_mono_switch_02",
         "title": "Chờ Lệnh 2",
         "text": "Tôi nghe thấy tiếng bước chân của ngài rồi, Giáo sư."
       },
       {
+        "voId": "chr_0025_ardelia_sim_assign_work_01",
         "title": "Phân Công Vào Công Trình",
         "text": "Giáo sư cứ để tôi lo. Tôi cũng đang muốn thử điều gì đó mới mẻ."
       },
       {
+        "voId": "chr_0025_ardelia_sim_hello_lower_01",
         "title": "Lời Chào 1",
         "text": "Giáo sư, ngài có muốn chia chiếc bánh mille crêpe này với tôi không?"
       },
       {
+        "voId": "chr_0025_ardelia_sim_hello_max_01",
         "title": "Lời Chào 2",
         "text": "Ôi, tôi vừa định đi tìm ngài đấy, Giáo sư."
       },
       {
+        "voId": "chr_0025_ardelia_sim_talk_lv01_01",
         "title": "Trò Chuyện Nhàn Rỗi Dijiang 1",
         "text": "Cẩn thận khi đi lại trong Dijiang nhé, Giáo sư... Trên tàu có đủ loại biển cảnh báo và... tôi cứ vấp phải chúng suốt. Khi đầu óc đang mãi nghĩ ngợi, tôi chẳng để ý được gì cả."
       },
       {
+        "voId": "chr_0025_ardelia_sim_talk_lv02_01",
         "title": "Trò Chuyện Nhàn Rỗi Dijiang 2",
         "text": "Từ trên Dijiang, tôi có thể thấy rất nhiều nơi mà chính tôi từng đi thăm dò... Từ đây nhìn xuống hoang địa, thảo nguyên, cả phương bắc thật nhỏ bé. Tầm nhìn từ quỹ đạo bao trọn những chuyến đi thực địa dài ngày trước kia... Phải nói là... ở trên này thấy phấn khích thật đấy!"
       },
       {
+        "voId": "chr_0025_ardelia_sim_talk_lv02_02",
         "title": "Trò Chuyện Nhàn Rỗi Dijiang 3",
         "text": "Giáo sư có hứng thú tham gia nhóm đọc sách tôi tổ chức ngày mai không? Chúng ta sẽ chia sẻ gì ư? À, bất cứ thứ gì ngài thích đọc đều được! Nói mới nhớ, anh Krad từng mang một cuốn tạp chí ảnh về các ngọn núi lửa trên Talos-II. Nếu ngài muốn, tôi sẽ mang nó đến buổi đọc sách!"
       },
       {
+        "voId": "chr_0025_ardelia_sim_talk_max_01",
         "title": "Trò Chuyện Nhàn Rỗi Dijiang 4",
         "text": "Chắc là Giáo sư đói rồi sau cả ngày làm việc rồi! Thử xem. Là món ăn vặt kiểu Higashi mà cô Akekuri đã tặng tôi. Ờm, tôi thì không cần đâu, vì... Tôi, tôi đã ăn một ít rồi. Sao hộp này chưa mở? À, ừm... Cô Akekuri... tặng tôi thêm một hộp nữa!"
       },
       {
+        "voId": "chr_0025_ardelia_sim_talk_max_02",
         "title": "Trò Chuyện Nhàn Rỗi Dijiang 5",
         "text": "Ngài có nhận ra không, Giáo sư? Ngài lúc nào cũng đi trước, như thể đang cố che chắn bọn tôi khỏi nguy hiểm phía trước vậy. Có lúc tôi còn phải chạy để bắt kịp ngài. Có lẽ... ngài không cần phải đi nhanh đến thế đâu. Bọn tôi ở ngay đây và cũng muốn giúp đỡ ngài nữa."
       },
       {
+        "voId": "chr_0025_ardelia_sim_talk_max_03",
         "title": "Trò Chuyện Nhàn Rỗi Dijiang 6",
         "text": "Mỗi lần trở lại Dijiang đều thật thư thái. Khi không kể chuyện hành trình cho đồng nghiệp, tôi sẽ ghé thăm các Buồng Phát Triển xem cây non thế nào rồi. Nếu có thời gian, tôi còn chăm sóc chúng thật nhẹ nhàng nữa. Đó là thú vui nho nhỏ của tôi. Nhìn chúng lớn lên khiến tôi cảm thấy rất mãn nguyện."
       },
       {
+        "voId": "chr_0025_ardelia_sim_gift_give_01",
         "title": "Tặng Quà",
         "text": "Xin chút thời gian của ngài được không, Endmin? Tôi đã thu thập được vài món lưu niệm trong các chuyến thăm dò. Lông chim trang trí từ Trường Địa Hannabit, trang sức ngọc từ Hongshan, và cả huân chương từ Hội Lời Thề Thép... Tất cả là dành cho ngài. Hi vọng ngài sẽ thích."
       },
       {
+        "voId": "chr_0025_ardelia_sim_gift_recv_01",
         "title": "Nhận quà",
         "text": "Một món quà ư? Cho tôi ư? Ôi, cảm ơn ngài! Để tôi xem bên trong là gì nào... *Khúc khích* Giáo sư trông còn hồi hộp hơn cả tôi nữa ấy."
       },
       {
+        "voId": "chr_0025_ardelia_mono_self_line01",
         "title": "Đối Thoại Tín Nhiệm 1",
         "text": "Giáo sư, ngài ổn chứ? Trông cậu rất mệt mỏi. Đừng nói với tôi là ngài lại thức trắng đêm nữa nhé. Coi nào, ngài biết như thế không tốt cho sức khỏe mà... Không không! Không được cãi, bây giờ là giờ nghỉ rồi!"
       },
       {
+        "voId": "chr_0025_ardelia_mono_self_line02",
         "title": "Đối Thoại Tín Nhiệm 2",
         "text": "Ôi, đừng có cắn vạt áo của Giáo sư nữa, Ngài Dolly...! Ui. Tôi xin lỗi. Họ nghịch ngợm lắm luôn. Hmm? Ngài không thấy họ à? Ồ... Ngài Dolly chỉ hiện ra khi họ muốn được nhìn thấy thôi... Ngài Dolly là Đấng Tối Cao ư? Không đâu, Ngài Dolly không phải tên riêng cho ai cả, vì họ là cả một đàn mà... Nào, ra đây mà tự nói chuyện với Giáo sư đi chứ! Ngài Dolly, tôi biết là anh biết nói mà!"
       },
       {
+        "voId": "chr_0025_ardelia_mono_self_line03",
         "title": "Đối Thoại Tín Nhiệm 3",
         "text": "Hôm nay tôi lại leo thêm một ngọn núi nữa. Chiếc la bàn địa chất giúp tôi xác định phương hướng và độ nghiêng của các tầng địa chất, còn chiếc búa thì giúp tôi lấy mẫu đá trầm tích để nghiên cứu quang học và kết cấu... Tôi không mệt chút nào đâu, Giáo sư. Tôi hoàn toàn có thể leo thêm núi nữa, đi thêm nhiều nơi hơn và thu thập thêm dữ liệu địa chất. Giải mã những bí ẩn của hành tinh này khiến tôi hạnh phúc lắm... Hạnh phúc đến mức tôi chẳng thể diễn tả nổi!"
       },
       {
+        "voId": "chr_0025_ardelia_mono_self_line04",
         "title": "Đối Thoại Tín Nhiệm 4",
         "text": "Có bạn bè ở bên trong những dịp lễ hội thế này thật tuyệt! Điều đó làm tôi nhớ lại lúc lần đầu tiên đặt chân đến Endfield. Mọi người tổ chức một buổi tiệc chào đón tôi, đầy những thứ tôi thích. Ồ, có bánh ngọt, có hoa, và cả những khúc nhạc rộn ràng, vui tươi. Cô Yvonne thậm chí còn nắm tay tôi, chúng tôi đã cùng khiêu vũ theo giai điệu pop mới nhất! Những cú xoay và nhịp nhảy làm tôi hơi chóng mặt, nhưng tôi đã cố gắng nhớ lấy từng nụ cười của mọi người."
       },
       {
+        "voId": "chr_0025_ardelia_mono_self_line05",
         "title": "Đối Thoại Tín Nhiệm 5",
         "text": "Ætherside là gì? Câu hỏi này cứ quanh quẩn trong tâm trí tôi. Nếu vũ trụ này thật sự tàn nhẫn đến thế, thì liệu tôi có thể làm gì để giúp mọi người...? Giáo sư cũng đang nghĩ như vậy sao? Hmm, vậy có nghĩa là... chúng ta không cô đơn."
       },
       {
+        "voId": "chr_0025_ardelia_mono_chat_line01",
         "title": "Trò Chuyện 1",
         "text": "Giọng nói của ngài thật dịu dàng, Giáo sư. Ấy, tôi, tôi không có ý gì đâu! Chỉ là... ngài biết đấy, giống như lúc mới tỉnh khỏi giấc mơ, âm thanh luôn đến trước hình ảnh? Trước khi mắt tôi nhìn thấy gương mặt ngài, thì chính bước chân và giọng nói của ngài đã chạm đến tai tôi trước rồi... Đúng vậy. Hầu hết sinh vật sống đều tạo ra giọng nói riêng của mình, dù là côn trùng, dã thú, cây cối hay thực vật. Những âm thanh đó khiến tôi rung động. Và cũng là lý do tôi quyết định bảo vệ thế giới này theo cách đặc biệt của riêng tôi."
       },
       {
+        "voId": "chr_0025_ardelia_mono_chat_line02",
         "title": "Trò Chuyện 2",
         "text": "Mọi người ở Endfield đều thật tử tế. Cô Yvonne luôn chia sẻ những phát hiện khoa học mới nhất và cả những đĩa than mới với tôi. Cô Akekuri thường rủ tôi đến quán quen để uống trà chiều. Và dĩ nhiên còn có cả anh Antal, anh ấy nói có thể cải tiến cây quyền trượng của tôi thành một dụng cụ thăm dò cầm tay cực kỳ tiện dụng *và* tích hợp thêm hàng loạt tính năng kỳ diệu nữa. Nếu cô Akekuri không kéo anh ấy đi sau ba tiếng đồng hồ, chắc anh ấy còn nói đến hết cả ngày mất!"
       },
       {
+        "voId": "chr_0025_ardelia_mono_chat_line03",
         "title": "Trò Chuyện 3",
         "text": "Làm khảo sát địa chất thực địa thì tự do lắm, nhưng thiếu kinh phí thật sự là điều rất khó chịu. Để xin được tài trợ, tôi từng tổ chức các buổi thuyết trình, hội thảo tại nhiều công ty, hy vọng niềm tin và tầm nhìn của mình có thể đủ thuyết phục. Hầu hết các công ty, trừ Endfield, đều không mấy quan tâm đến hệ thống cảnh báo sớm cho thảm họa địa chất. Nhưng khi Tập đoàn Siesta biết đến nghiên cứu của tôi, họ đã tài trợ vô điều kiện. Tôi nghĩ mình hiểu lý do vì sao họ hào phóng đến thế... Có lẽ cuộc gặp gỡ định mệnh này là một phần truyền thừa trong tôi."
       },
       {
+        "voId": "chr_0025_ardelia_mono_chat_line04",
         "title": "Trò Chuyện 4",
         "text": "Tôi từng đồng hành với một Đạo Sư đến từ Trường Địa Hannabit. Cô ấy hát những câu ca dao tuyệt đẹp và kể tôi nghe về vị Đạo Sư đã từng dẫn dắt cô ấy. Mọi người trong Trường Địa đều sống dựa vào đất đai, nên họ rất tôn trọng những ai nghiên cứu về nó, giống như chúng ta. Hehe, tôi vui lắm khi cô ấy nói vậy. Nhưng thật ra, chính nhờ câu ca dao của cô ấy mà tôi tìm thấy mục tiêu và động lực của mình. Đúng vậy, Giáo sư. Đó là chuyến đi trước khi tôi tìm được chân lý của mình ở Talos-II."
       },
       {
+        "voId": "chr_0025_ardelia_mono_chat_line05",
         "title": "Trò Chuyện 5",
         "text": "Đồ lại rách à? À, không sao đâu, thật đó. Tôi có thể vá lại mà. Làm khảo sát thực địa thì quần áo rách là chuyện bình thường thôi... Tôi phải leo lên các đỉnh núi để thu thập mẫu khoáng sản quý hiếm, mà đá nhọn thì chẳng bao giờ biết nương tay. Nhưng cảm giác khi đến gần mục tiêu đôi khi khiến tôi quên mất mỗi bước chân đều mang rủi ro. Xin đừng lo lắng, Giáo sư. Lần tới tôi sẽ cẩn thận hơn."
       },
       {
+        "voId": "chr_0025_ardelia_mono_about_line01",
         "title": "Chủ đề: Ætherside",
         "text": "Ætherside là thứ hoàn toàn mới mà chúng ta phải đối mặt tại Talos-II. Có lý thuyết xem nó như hiện tượng vật lý đặc biệt, có người lại cho rằng đó là một không gian thời gian dị thường. Nhưng tôi có cảm giác nó giống như... một căn phòng cũ kỹ, bị lãng quên, đầy những thứ xưa cũ mà không ai buồn quan tâm nữa. Giáo sư, có khi nào Ætherside có liên quan đến nguồn gốc của chúng ta?"
       },
       {
+        "voId": "chr_0025_ardelia_mono_about_line02",
         "title": "Chủ đề: Rhodes Island",
         "text": "Tôi đến từ Rhodes Island, nơi đã đào tạo và dạy tôi những điều giúp tôi trở thành chính mình. Tôi không có máu mủ, không có tuổi thơ, cũng chẳng có quá khứ. Nhưng Rhodes Island đã dạy tôi cách sống, cách hiểu bản thân. Giáo sư, Rhodes Island là nhà của tôi... và mọi người đều bảo rằng nó cũng là nhà của ngài."
       },
       {
+        "voId": "chr_0025_ardelia_mono_about_line03",
         "title": "Chủ đề: Dolly",
         "text": "Ngài Dolly thật ra rất tinh nghịch. Tôi vẫn không hiểu vì sao anh ấy không chịu xuất hiện trước người khác. Hiện giờ ngài không thấy được, nhưng anh ấy rất thích chơi đùa cùng ngài. Ngài Dolly đang làm gì à? À thì đang cố ngồi lên vai ngài... Trời ạ! Ngài Dolly! Dừng lại ngay! Đừng nghịch ngợm với Giáo sư như thế nữa...! Hô. Đấy, đúng là Ngài Dolly rồi. Chúng tôi gặp nhau vào một ngày rất đỗi bình thường, rồi anh ấy quyết định bám theo tôi mãi."
       },
       {
+        "voId": "chr_0025_ardelia_mono_about_line04",
         "title": "Chủ đề: Yvonne",
         "text": "Cô Yvonne là một nhà khoa học tuyệt vời. Lúc tôi mới đến Endfield, cô ấy đã chia sẻ rất nhiều thông tin quan trọng để giúp tôi nhanh chóng làm quen với Ætherside. Cô ấy còn chia sẻ cả kết quả nghiên cứu của mình, hy vọng có thể hỗ trợ những người nghiên cứu cùng lĩnh vực. Mà trên hết, chúng tôi đều yêu âm nhạc! Dù tôi thích những giai điệu nhẹ nhàng còn cô ấy thì chuộng tiết tấu nhanh, mạnh, nhưng cô vẫn tặng tôi vài album nhạc pop La Fantoma. Cô ấy thật tuyệt vời."
       },
       {
+        "voId": "chr_0025_ardelia_mono_about_line05",
         "title": "Chủ đề: Talos-II",
         "text": "Tôi từng tận mắt chứng kiến một cụm Originium khổng lồ bị Nhiễm Khuẩn nuốt trọn, tan rã như thủy triều dâng. Tất cả những gì còn lại chỉ là một thung lũng cằn cỗi. Một con Thú Ngà sống sót sau thảm họa đã trở về tổ, đơn độc và bối rối... Ætherside và Nhiễm Khuẩn giống như hai mặt đối lập, còn chúng ta thì đang chênh vênh giữa ranh giới sống còn. Tôi sinh ra từ Originium, và đó là lý do tôi buộc phải tìm hiểu về Æther. Điều ước duy nhất của tôi là biến thế giới này thành mái nhà an toàn cho tất cả mọi người."
       },
       {
+        "voId": "chr_0025_ardelia_explore_point_common_01",
         "title": "Phát hiện Tài Nguyên/Có Thể Thu Thập 1",
         "text": "Những tài nguyên kia trông rất hữu ích. Đừng quên nhặt chúng nhé."
       },
       {
+        "voId": "chr_0025_ardelia_explore_point_valub_01",
         "title": "Phát hiện Tài Nguyên/Có Thể Thu Thập 2",
         "text": "Những tài nguyên này thực sự quan trọng. Hãy cố thu thập thêm nữa."
       },
       {
+        "voId": "chr_0025_ardelia_explore_find_locked_01",
         "title": "Phát Hiện Khu Vực Chưa Khám Phá",
         "text": "Phía trước có điều gì đó bất ổn. Để tôi đi trinh sát cho!"
       },
       {
+        "voId": "chr_0025_ardelia_explore_find_danger_01",
         "title": "Phát hiện Kẻ Địch Mạnh",
         "text": "Phía trước có vẻ nguy hiểm. Chúng ta nên chuẩn bị thật kỹ."
       },
       {
+        "voId": "chr_0025_ardelia_interact_mine_valub_01",
         "title": "Khai thác 1",
         "text": "Tôi sẽ phân loại và nhận dạng mấy loại khoáng chất này sau."
       },
       {
+        "voId": "chr_0025_ardelia_interact_mine_valub_echo2_01",
         "title": "Khai thác 2",
         "text": "Để tôi giúp với nhé!"
       },
       {
+        "voId": "chr_0025_ardelia_interact_treasure_valub_01",
         "title": "Mở Thùng",
         "text": "Phần thưởng dành cho những khó khăn mà chúng ta đã vượt qua!"
       },
       {
+        "voId": "chr_0025_ardelia_interact_etherium_01",
         "title": "Nhận Aurylene",
         "text": "Khác với Nhiễm Khuẩn và Khe Nứt, Aurylene không nguy hiểm đến vậy."
       },
       {
+        "voId": "chr_0025_ardelia_interact_blight_break_01",
         "title": "Xua Tan Nhiễm Khuẩn",
         "text": "Rất tốt. Giờ nó sẽ không làm hại ai nữa."
       },
       {
+        "voId": "chr_0025_ardelia_interact_rest_01",
         "title": "Nghỉ ngơi",
         "text": "Chúng ta đã đi xa như vậy... chắc mọi người cũng mệt rồi. Đã đến lúc nghỉ ngơi."
       },
       {
+        "voId": "chr_0025_ardelia_combat_suppuse_using_01",
         "title": "Sử Dụng Vật Phẩm Chiến Thuật 1",
         "text": "Ngài làm được mà, ngài còn có tôi!"
       },
       {
+        "voId": "chr_0025_ardelia_combat_suppuse_getheal_01",
         "title": "Sử Dụng Vật Phẩm Chiến Thuật 2",
         "text": "Phù... Tôi thấy khá hơn rồi."
       },
       {
+        "voId": "chr_0025_ardelia_combat_remind_danger_01",
         "title": "Cảnh Báo Nguy Hiểm",
         "text": "Cẩn thận!"
       },
       {
+        "voId": "chr_0025_ardelia_combat_hurt_lowhp_01",
         "title": "Bị Thương",
         "text": "Tôi ổn! Tôi vẫn có thể tiếp tục!"
       },
       {
+        "voId": "chr_0025_ardelia_combat_dead_01",
         "title": "0 HP",
         "text": "Tôi không thể... khiến Giáo sư thất vọng..."
       },
       {
+        "voId": "chr_0025_ardelia_combat_remind_praise_01",
         "title": "Cổ Vũ Đội 1",
         "text": "Chiêu đó tuyệt vời!"
       },
       {
+        "voId": "chr_0025_ardelia_combat_remind_praise_02",
         "title": "Cổ Vũ Đội 2",
         "text": "Mọi người đều đang góp sức!"
       },
       {
+        "voId": "chr_0025_ardelia_combat_remind_praise_echo2_01",
         "title": "Đáp Lại Lời Cổ Vũ 1",
         "text": "Cảm ơn đã tán thưởng!"
       },
       {
+        "voId": "chr_0025_ardelia_combat_remind_praise_echo2_02",
         "title": "Đáp Lại Lời Cổ Vũ 2",
         "text": "Cảm ơn tất cả mọi người!"
       },
       {
+        "voId": "chr_0025_ardelia_combat_intobattle_01",
         "title": "Bắt Đầu Chiến Đấu 1",
         "text": "Đi đứng cẩn thận nhé, mọi người."
       },
       {
+        "voId": "chr_0025_ardelia_combat_intobattle_echo2_01",
         "title": "Bắt Đầu Chiến Đấu 2",
         "text": "Chúng ta sẽ cùng nhau vượt qua!"
       },
       {
+        "voId": "chr_0025_ardelia_combat_outbattle_nor_01",
         "title": "Thắng Trận 1",
         "text": "Không gian khổ nào cản được bước chân ta."
       },
       {
+        "voId": "chr_0025_ardelia_combat_outbattle_nor_02",
         "title": "Thắng Trận 2",
         "text": "Chúng ta làm được rồi. Ngài Dolly, hy vọng ngài không mệt."
       },
       {
+        "voId": "chr_0025_ardelia_combat_outbattle_nor_echo2_01",
         "title": "Thắng Trận 3",
         "text": "Tôi biết là chúng ta có thể làm được."
       },
       {
+        "voId": "chr_0025_ardelia_combat_outbattle_hard_01",
         "title": "Thắng Trận 4",
         "text": "Cuối cùng cũng hoàn thành rồi... Và đó là vì tất cả chúng ta đã đồng lòng."
       },
       {
+        "voId": "chr_0025_ardelia_combat_battle_defeat_01",
         "title": "Bại Trận",
         "text": "Thua không phải là kết thúc. Học hỏi kinh nghiệm, lần sau ta sẽ làm tốt hơn."
       },
       {
+        "voId": "chr_0025_ardelia_mono_attack_last_01",
         "title": "Đòn Dứt Điểm 1",
         "text": "Tránh ra!"
       },
       {
+        "voId": "chr_0025_ardelia_mono_attack_last_02",
         "title": "Đòn Dứt Điểm 2",
         "text": "Bộc phát!"
       },
       {
+        "voId": "chr_0025_ardelia_mono_skill_nor_01",
         "title": "KN Chiến Đấu 1",
         "text": "Toàn lực xung kích!"
       },
       {
+        "voId": "chr_0025_ardelia_mono_skill_nor_02",
         "title": "KN Chiến Đấu 2",
         "text": "Dừng ngay đi!"
       },
       {
+        "voId": "chr_0025_ardelia_mono_skill_nor_03",
         "title": "KN Chiến Đấu 3",
         "text": "Bắt đầu thôi!"
       },
       {
+        "voId": "chr_0025_ardelia_combat_skill_comb_ready_01",
         "title": "Chuẩn Bị KN Liên Hoàn 1",
         "text": "Tôi cũng sẽ giúp!"
       },
       {
+        "voId": "chr_0025_ardelia_combat_skill_comb_ready_02",
         "title": "Chuẩn Bị KN Liên Hoàn 2",
         "text": "Để tôi thử một tay!"
       },
       {
+        "voId": "chr_0025_ardelia_mono_skill_comb_release_01",
         "title": "Thi Triển Liên Hoàn 1",
         "text": "Sẽ đau đấy nhé!"
       },
       {
+        "voId": "chr_0025_ardelia_mono_skill_comb_release_02",
         "title": "Thi Triển Liên Hoàn 2",
         "text": "Bung lụa đi!"
       },
       {
+        "voId": "chr_0025_ardelia_mono_attack_extra_01",
         "title": "Kết Liễu 1",
         "text": "Đây chính là lúc!"
       },
       {
+        "voId": "chr_0025_ardelia_mono_attack_extra_02",
         "title": "Kết Liễu 2",
         "text": "Cứ đi đi!"
       },
       {
+        "voId": "chr_0025_ardelia_mono_skill_ultimate_01",
         "title": "Tuyệt Kỹ 1",
         "text": "Giúp tôi với, Ngài Dolly!"
       },
       {
+        "voId": "chr_0025_ardelia_mono_skill_ultimate_02",
         "title": "Tuyệt Kỹ 2",
         "text": "Đừng đi xa quá nhé, Ngài Dolly."
       },
       {
+        "voId": "chr_0025_ardelia_mono_skill_ultimate_03",
         "title": "Tuyệt Kỹ 3",
         "text": "Nhẹ nhàng thôi, Ngài Dolly."
       }

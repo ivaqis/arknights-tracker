@@ -131,326 +131,407 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0027_tangtang_chrbark_squad_01",
         "title": "Preparazione all'operazione 1",
         "text": "Ehi, Voltoscuro, dove vai? Non andartene senza di me!"
       },
       {
+        "voId": "chr_0027_tangtang_chrbark_squad_02",
         "title": "Preparazione all'operazione 2",
         "text": "Ce ne andiamo finalmente? Stavo per morire dalla noia!"
       },
       {
+        "voId": "chr_0027_tangtang_chrbark_join_01",
         "title": "Aggiunta alla squadra 1",
         "text": "La capa suprema è qui! Tu, tu e tu siete sotto il mio comando!"
       },
       {
+        "voId": "chr_0027_tangtang_chrbark_join_02",
         "title": "Aggiunta alla squadra 2",
         "text": "Niente paura, ci penso io."
       },
       {
+        "voId": "chr_0027_tangtang_chrbark_weap_01",
         "title": "Cambio arma",
         "text": "È davvero maneggevole! Il mirino è ancora più preciso!"
       },
       {
+        "voId": "chr_0027_tangtang_chrbark_gear_01",
         "title": "Cambio equipaggiamento",
         "text": "Questo equipaggiamento è tutto per me? Non scherziamo, le cose belle vanno condivise! Questo è tuo e questo è mio!"
       },
       {
+        "voId": "chr_0027_tangtang_chrup_skill_01",
         "title": "Attivazione matrice delle abilità",
         "text": "Ancora più forte! D'accordo, andiamo a provare che effetto ha su quella squilibrata!"
       },
       {
+        "voId": "chr_0027_tangtang_chrup_level_01",
         "title": "Visione delle registrazioni di combattimenti",
         "text": "Un colpo a sinistra! E uno a destra! Sì, così... Ehi, quei tizi non sono niente male, reclutali per me!"
       },
       {
+        "voId": "chr_0027_tangtang_chrup_promt01_01",
         "title": "Promozione operatore 1",
         "text": "Mi hai chiamata solo per farmi i complimenti? Beh, allora esagera. Adoro ascoltare la verità!"
       },
       {
+        "voId": "chr_0027_tangtang_chrup_promt02_01",
         "title": "Promozione operatore 2",
         "text": "Un'altra promozione? Sapevo di essere la tua preferita!"
       },
       {
+        "voId": "chr_0027_tangtang_chrup_promt03_01",
         "title": "Promozione operatore 3",
         "text": "La battaglia ci ha forgiato! Non c'è bisogno di tante formalità. Se io mangio un cucchiaio di zuppa, tu mangi un boccone di carne. Aspetta, dovrebbe essere il contrario? Nah, è così che funziona."
       },
       {
+        "voId": "chr_0027_tangtang_chrup_promt04_01",
         "title": "Promozione operatore 4",
         "text": "Un'altra promozione?! Con un occhio solo non riesco a leggere tutti quei rapporti! Al momento ti occupi dei piani di costruzione... Eh? Non me la sto prendendo comoda! È un ritardo strategico. Mi allenerò e tornerò più forte di prima!"
       },
       {
+        "voId": "chr_0027_tangtang_introduce_01",
         "title": "Operatore a rapporto",
         "text": "La capa della Palizzata di Qingbo, Tangtang, mantiene la parola! Ora puoi affidare la Endfield a me, la renderò il luogo più tosto di Talos-II! Presentare una proposta? Suvvia, da quando una capa deve compilare scartoffie? Affronteremo la situazione insieme!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_switch_01",
         "title": "Attesa 1",
         "text": "Ehi, tesorino! Ah ah, nessuno può sfuggirmi!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_switch_02",
         "title": "Attesa 2",
         "text": "Grrr... Voltoscuro! Eccoti, finalmente! Perché ci hai messo tanto?"
       },
       {
+        "voId": "chr_0027_tangtang_sim_assign_work_01",
         "title": "Assegnazione a una struttura",
         "text": "Va bene, va bene, ho capito. Premi questo... poi tocca quello. Se qualcosa va storto, se ne occuperà Voltoscuro!"
       },
       {
+        "voId": "chr_0027_tangtang_sim_hello_lower_01",
         "title": "Saluto 1",
         "text": "Voltoscuro, di qua!"
       },
       {
+        "voId": "chr_0027_tangtang_sim_hello_max_01",
         "title": "Saluto 2",
         "text": "Avvisami se succede qualcosa di divertente. Non voglio mancare!"
       },
       {
+        "voId": "chr_0027_tangtang_sim_talk_lv01_01",
         "title": "Chiacchiere sulla Dijiang 1",
         "text": "Il tuo equipaggio è bello tosto, ma non ho mai perso un vero combattimento! Beh... ehm... gli unici che non reggo sono... quei medici con il camice bianco! Continuano a dire che cureranno la mia Oripatia e provano sempre a infilzarmi qualche ago nel sedere. Ah! Stanno arrivando! Voltoscuro, fammi nascondere!"
       },
       {
+        "voId": "chr_0027_tangtang_sim_talk_lv02_01",
         "title": "Chiacchiere sulla Dijiang 2",
         "text": "Hai troppe persone piene di talento sulla Dijiang. Se solo potessi rubartene qualcuna... Eh eh, Voltoscuro, io so accontentarmi. Dammi soltanto Biancascriba e Verdiscaglie! No? Che ne dici di Faccia di Ferro, quel chiacchierone con tre teste? Dai, non ha paura di me! Siamo migliori amici!"
       },
       {
+        "voId": "chr_0027_tangtang_sim_talk_lv02_02",
         "title": "Chiacchiere sulla Dijiang 3",
         "text": "Quando sono stressata, vado a gridare vicino all'acqua un paio di volte e mi sento sempre molto meglio. Con tutto il lavoro e i pensieri per la testa che hai, anche tu dovresti trovarti un angolino. Che ne pensi di quella piattaforma là? O quella grossa finestra? Pfft, perché dici che potrebbe causare problemi? Il vero problema è tenersi tutto dentro!"
       },
       {
+        "voId": "chr_0027_tangtang_sim_talk_max_01",
         "title": "Chiacchiere sulla Dijiang 4",
         "text": "Si possono vedere così tante stelle dalle finestre della Dijiang. Mi ricorda un po' i vecchi tempi, quando mi sdraiavo vicino alla fonte ancestrale e guardavo il riflesso delle stelle sull'acqua. Un'astronave è anche una nave, una galassia è anche un fiume... Se ci pensi, la Dijiang e la Palizzata di Qingbo non sono poi così diverse. Sono entrambe bei posti!"
       },
       {
+        "voId": "chr_0027_tangtang_sim_talk_max_02",
         "title": "Chiacchiere sulla Dijiang 5",
         "text": "Tutti questi danni... non sono colpa mia! Prenditela con quel novellino di pattuglia con i capelli verdi. Poteva semplicemente restituirmi il portafoglio, invece mi ha inseguita per metà della base! Pensavo che stesse cercando di arrestarmi! Mentre cercavo di schivarlo, beh... potrei aver inciampato contro alcune casse. Non che io abbia niente da nascondere! È solo una vecchia abitudine che mi è rimasta da Wuling, quella di schivare le guardie."
       },
       {
+        "voId": "chr_0027_tangtang_sim_talk_max_03",
         "title": "Chiacchiere sulla Dijiang 6",
         "text": "Endmin, Endmin, Endmin! Umpf! Ho scommesso con Verdiscaglie che se riesco a chiamarti Endmin per un giorno intero mi compra un mucchio di snack! Questa volta vinco io! Vedrai che dovrà tirare fuori i soldi, Voltosc... Ah! Non l'ho detto! Hai sentito male! Questa non conta!"
       },
       {
+        "voId": "chr_0027_tangtang_sim_gift_give_01",
         "title": "Offerta regali",
         "text": "Non chiederti da dove provenga, accetta semplicemente questo dono. È la mia regola: premiare il buon lavoro e tu... hai lavorato bene!"
       },
       {
+        "voId": "chr_0027_tangtang_sim_gift_recv_01",
         "title": "Accettazione regali",
         "text": "Oh, non dovevi... Hai altro da darmi? Giusto un'altra cosina?"
       },
       {
+        "voId": "chr_0027_tangtang_mono_self_line01",
         "title": "Dialogo fiducia 1",
         "text": "Quando si tratta di prelibatezze di Wuling, tutti consigliano la solita vecchia roba tradizionale. Lascia che ti sveli una vera chicca! Prova il cibo della prigione di Wuling City: tre portate, una zuppa e persino la frutta. Ho controllato di nascosto, i prigionieri mangiano gli stessi identici piatti delle guardie ed è tutto delizioso. Oh, e ti svelo anche un posto carino: quando strisci lungo i tunnel sotterranei che conducono a Wuling, c'è un posto in cui filtra la luce con tantissimi fiori che crescono lì vicino... È molto bello. Peccato che quella squilibrata di Mi Fu l'abbia fatto chiudere."
       },
       {
+        "voId": "chr_0027_tangtang_mono_self_line02",
         "title": "Dialogo fiducia 2",
         "text": "Sai, c'è una cosa che mi sono sempre chiesta... Chi erano i miei genitori e perché mi affidarono alle acque? Tutti dicono che sono la \"figlia del fiume\", ma un fiume non può semplicemente dare vita a una Felinar... Mio padre mi disse che arrivai galleggiando in una bacinella, tutta avvolta in fasce con un fiocco in cima... Se mai dovessi incontrarli, vorrei chiedere loro se davvero volessero abbandonarmi perché mi odiavano. Ecco... chi mette un fiocco sulla spazzatura di cui vuole sbarazzarsi?"
       },
       {
+        "voId": "chr_0027_tangtang_mono_self_line03",
         "title": "Dialogo fiducia 3",
         "text": "Non muoverti! Hai quasi spezzato la mia striscia di bambù! Ehm, il sole è stato cocente negli ultimi tempi, quindi ho pensato di regalarti un cappello fatto a mano per proteggerti. Stavo misurando la tua testa... Cosa? Non ti fidi delle mie abilità? I cesti, le casse e gli scaffali di bambù alla Palizzata... E va bene, non li ho fatti io, ma Qingwu dice che le cose fatte a mano hanno un significato speciale... Comunque, quando la capa ti fa un regalo, lo accetti a prescindere dal suo aspetto!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_self_line04",
         "title": "Dialogo fiducia 4",
         "text": "So che la gente della Palizzata mi chiama capa, ma nei loro cuori in realtà puntavano su mio fratello. Gli diedero delle armi, gli insegnarono a leggere... mentre a me diedero giocattoli e vestiti. Non facevano sul serio con me. Anche ora, so leggere a malapena. Mi trattarono bene, cercavano sempre di farmi felice. Non ho nessuno da incolpare se non me stessa per non essermi imposta... Ma ora è diverso. Sarò una vera leader, non per la Palizzata o per me stessa... ma per tutti coloro che credono in me."
       },
       {
+        "voId": "chr_0027_tangtang_mono_self_line05",
         "title": "Dialogo fiducia 5",
         "text": "Voltoscuro, sei eccezionale in tutto tranne che in una cosa: la tua postura è troppo rigida! Non riesco nemmeno a coglierti di sorpresa come si deve, è difficile darti una pacca sulla spalla o scompigliarti i capelli... Perché? Come premio, ovviamente! È una dimostrazione di fiducia tra noi... Ehi! Non pensare nemmeno di toccarmi la testa! Io sono la capa e la testa della capa non si tocca!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_chat_line01",
         "title": "Chiacchierata 1",
         "text": "Nuotare, navigare, lanciare i sassi, ho un talento innato per tutto ciò che ha a che fare con l'acqua! La gente alla Palizzata dice che la fonte ancestrale mi ha resa una bambina prodigio e che l'acqua mi adora... Ma detto tra noi, la verità è che poiché non riuscivo a vedere bene con questo occhio, rimanevo sempre indietro quando nuotavo con gli altri. Rifiutavo di accettarlo, mi allenavo ogni giorno... finché non sono diventata brava a vedere con un occhio e li ho superati tutti! Come dice il detto? ... Giusto, che il duro lavoro ripaga!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_chat_line02",
         "title": "Chiacchierata 2",
         "text": "Le pistole pesanti le ho ereditate da mio padre, i vestiti me li ha fatti Qingwu, i capelli me li ha tagliati mio fratello, le bende me le ha cucite Shui Ling... È così che funziona alla Palizzata. Non ci sono professioni specifiche, tutti devono saper fare un po' di tutto e aiutare gli altri... Oh, e io sono molto più brava di mio fratello a tagliare i capelli! Vuoi provare? La tua acconciatura? Un paio di proiettili dovrebbero bastare... Ehi, Voltoscuro, non scappare!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_chat_line03",
         "title": "Chiacchierata 3",
         "text": "D'inverno, abbiamo essiccato le pinne che abbiamo catturato nei graticci di bambù per preparare della carne secca. In quei mesi, l'intera Palizzata di Qingbo puzzava così tanto che ho quasi sperato che Mi Fu mi trascinasse via a Wuling. Ma una volta essiccate, saltate con le verdure e messe sopra al riso? Da leccarsi i baffi. Sai, è come la vita: all'inizio è amara, poi diventa dolce. Alla fine, si sistema sempre tutto!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_chat_line04",
         "title": "Chiacchierata 4",
         "text": "Ecco qui, un altro Certificato di Tangtang per te. Mi hai dato una mano alla mensa ieri, ti sono debitrice. Umpf! Ma quella macchinetta? Quella che butta fuori delle bottigliette quando viene calciata? Di sicuro non sono stata io a romperla... Comunque, lascia stare. Hai ottenuto fin troppi Certificati di Tangtang, è ora che io cambi le regole! D'ora in poi, tu, Voltoscuro, dovrai aiutarmi 500 volte per riscattarne uno... Eh eh, i miei certificati, le mie regole!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_chat_line05",
         "title": "Chiacchierata 5",
         "text": "Copro quest'occhio non perché l'Oripatia lo abbia reso sensibile alla luce... ma perché mi permette di usare quella cosa chiamata Arti di Originium. Prima non riuscivo a controllarla e ho colpito quella squilibrata durante un combattimento. Porta ancora la cicatrice... Avevo paura di colpire qualcun altro per sbaglio, e da allora non ho mai tolto la benda. Ma ehi, tutti dicono che mi dà un'aria da capa, quindi anche dopo aver imparato a controllare le Arti di Originum, non ho mai pensato di toglierla!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_about_line01",
         "title": "Argomento: Palizzata di Qingbo",
         "text": "Sai, più di cento anni fa, i nostri antenati alla Palizzata di Qingbo si stancarono di tutte le lotte e le rivalità tra le persone. Lasciarono quei posti dilaniati dai conflitti e si stabilirono presso la fonte ancestrale. Ma dopo l'arrivo della gente di Wuling, iniziammo a lottare di nuovo. Non importa dove tu vada, le persone non riescono a evitare il rancore e le liti... Perché queste cose si radicano dritte nel cuore di tutti. Ma se gestisco bene questa casa, i conflitti non si ripeteranno più... No, farò ancora di più. Farò cose ancora più grandi qui alla Endfield, insieme a tutti voi!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_about_line02",
         "title": "Argomento: Mi Fu",
         "text": "Sai, un tempo Mi Fu era una di noi, alla Palizzata. Poi un giorno ha dato di matto e ha riconosciuto quella Zhuang come sua boss! Mi ha fatto imbestialire da morire! Gliel'ho detto mille volte, sarei stata una leader decisamente migliore di quella Zhuang, ma non ha mai avuto ripensamenti... Assurdo! Tutte le volte che sono tornata a Wuling City non è mai stato per pregarla di tornare a casa... ma per picchiarla!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_about_line03",
         "title": "Argomento: Zhuang Fangyi",
         "text": "Quella parafulmine di una Tianshi? Anche le cose più semplici diventano ingarbugliate quando le spiega lei. Te lo giuro, ogni parola sembra un rompicapo e ci metto una vita a sbrogliarla. Siamo solo due tipi diversi di acqua, scorriamo in direzioni opposte... Ma, per il bene della Palizzata, devo darle ascolto comunque... Voltoscuro, aiutami con questa proposta. Che accidenti è un \"indice di edificabilità\"?"
       },
       {
+        "voId": "chr_0027_tangtang_mono_about_line04",
         "title": "Argomento: Fontanelle d'acqua di bambù",
         "text": "Quando perdiamo qualcuno alla Palizzata, lasciamo andare una fontanella d'acqua di bambù. La prima che lasciai andare... fu per mio padre. Mio fratello disse che il rumore che proveniva dalla fonte era nostro padre che ci parlava. Da allora, andavo sempre verso l'acqua quando mi sentivo persa e avevo bisogno di una risposta. Ma quando chiesi di mio fratello, rimase in silenzio. Aspettai a lungo, fino ad addormentarmi... Forse mio padre pensava che avrei dovuto trovare una risposta da sola."
       },
       {
+        "voId": "chr_0027_tangtang_mono_about_line05",
         "title": "Argomento: lettura",
         "text": "Di solito non mi piace leggere, ma quei libri che mi ha dato Verdiscaglie l'ultima volta non erano niente male. Mi ha detto che venivano da Hongshan e che erano pensati per i bambini che non sanno ancora leggere. Ma onestamente le lezioni sono spiegate benissimo. Tanti adulti non riescono a farlo così bene, anche se conoscono tutte le parole. Se non altro, quando li ho mostrati all'equipaggio, tutti battevano le mani sulle ginocchia dicendo \"Ha senso!\". Se le persone in questo mondo parlassero con la stessa chiarezza di quei libri, quanti meno problemi e fraintendimenti ci sarebbero?"
       },
       {
+        "voId": "chr_0027_tangtang_explore_point_common_01",
         "title": "Individuazione risorsa/collezionabile 1",
         "text": "Occhi aperti, c'è roba scintillante in giro!"
       },
       {
+        "voId": "chr_0027_tangtang_explore_point_valub_01",
         "title": "Individuazione risorsa/collezionabile 2",
         "text": "C'è un tesoro da questa parte! Dammi una mano!"
       },
       {
+        "voId": "chr_0027_tangtang_explore_find_locked_01",
         "title": "Individuazione zona non esplorata",
         "text": "Quell'area non è ancora stata esplorata. Andiamo a vedere!"
       },
       {
+        "voId": "chr_0027_tangtang_explore_find_danger_01",
         "title": "Individuazione nemico potente",
         "text": "La tua boss è qui! ... Aspetta, sembra roba tosta..."
       },
       {
+        "voId": "chr_0027_tangtang_interact_mine_valub_01",
         "title": "Estrazione 1",
         "text": "Belle queste pietre! Scava, scava, scava!"
       },
       {
+        "voId": "chr_0027_tangtang_interact_mine_valub_echo2_01",
         "title": "Estrazione 2",
         "text": "Roba che luccica! Dividiamocela!"
       },
       {
+        "voId": "chr_0027_tangtang_interact_treasure_valub_01",
         "title": "Apertura di una cassa",
         "text": "Aspetta... Nessuno vuole queste cose?! Allora, ehm, le prendo io!"
       },
       {
+        "voId": "chr_0027_tangtang_interact_etherium_01",
         "title": "Acquisizione di Aurylene",
         "text": "Si può vendere in cambio di denaro?"
       },
       {
+        "voId": "chr_0027_tangtang_interact_blight_break_01",
         "title": "Eliminazione Contaminazione",
         "text": "Beeene! Ora possiamo evitare alcune fastidiose deviazioni!"
       },
       {
+        "voId": "chr_0027_tangtang_interact_rest_01",
         "title": "Riposo",
         "text": "Uff... Sono esausta... Fermarsi? Ah ah! La parola \"fermarsi\" non è nel mio dizionario! Forza, andiamo avanti!"
       },
       {
+        "voId": "chr_0027_tangtang_combat_suppuse_using_01",
         "title": "Utilizzo di gadget 1",
         "text": "Ti ho detto che ti avrei coperto!"
       },
       {
+        "voId": "chr_0027_tangtang_combat_suppuse_getheal_01",
         "title": "Utilizzo di gadget 2",
         "text": "Ah, molto meglio!"
       },
       {
+        "voId": "chr_0027_tangtang_combat_remind_danger_01",
         "title": "Avviso di pericolo",
         "text": "Cosa fai lì?! Sta' indietro!"
       },
       {
+        "voId": "chr_0027_tangtang_combat_hurt_lowhp_01",
         "title": "Ferita",
         "text": "Ho tanto... sonno... Devo... resistere..."
       },
       {
+        "voId": "chr_0027_tangtang_combat_dead_01",
         "title": "Esaurimento PS",
         "text": "Ti risparmierò... per oggi..."
       },
       {
+        "voId": "chr_0027_tangtang_combat_remind_praise_01",
         "title": "Incoraggiamento alla squadra 1",
         "text": "Ecco il pezzo forte della gang!"
       },
       {
+        "voId": "chr_0027_tangtang_combat_remind_praise_02",
         "title": "Incoraggiamento alla squadra 2",
         "text": "La nostra piccola gang non scherza!"
       },
       {
+        "voId": "chr_0027_tangtang_combat_remind_praise_echo2_01",
         "title": "Risposta all'incoraggiamento 1",
         "text": "Bello, bello!"
       },
       {
+        "voId": "chr_0027_tangtang_combat_remind_praise_echo2_02",
         "title": "Risposta all'incoraggiamento 2",
         "text": "La prossima volta facciamo qualcosa di ancora più tosto?"
       },
       {
+        "voId": "chr_0027_tangtang_combat_intobattle_01",
         "title": "Inizio combattimento 1",
         "text": "Chi è il furbetto in cerca di una lotta?"
       },
       {
+        "voId": "chr_0027_tangtang_combat_intobattle_echo2_01",
         "title": "Inizio combattimento 2",
         "text": "Bisogna spaventarli all'improvviso!"
       },
       {
+        "voId": "chr_0027_tangtang_combat_outbattle_nor_01",
         "title": "Vittoria in combattimento 1",
         "text": "Questa sì che è stata una bella lotta!"
       },
       {
+        "voId": "chr_0027_tangtang_combat_outbattle_nor_02",
         "title": "Vittoria in combattimento 2",
         "text": "Eh eh, tutto grazie al mio fantastico comando!"
       },
       {
+        "voId": "chr_0027_tangtang_combat_outbattle_nor_echo2_01",
         "title": "Vittoria in combattimento 3",
         "text": "Volevo sentire proprio questo!"
       },
       {
+        "voId": "chr_0027_tangtang_combat_outbattle_hard_01",
         "title": "Vittoria in combattimento 4",
         "text": "Abbiamo fatto un ottimo lavoro. Ora riposiamoci, la prossima volta faremo più attenzione!"
       },
       {
+        "voId": "chr_0027_tangtang_combat_battle_defeat_01",
         "title": "Sconfitta in combattimento",
         "text": "Non posso restare a guardare mentre soffrite così... Giuro che mi vendicherò per voi!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_attack_last_01",
         "title": "Colpo finale 1",
         "text": "Sbam!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_attack_last_02",
         "title": "Colpo finale 2",
         "text": "Sbem!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_skill_nor_01",
         "title": "Abilità di combattimento 1",
         "text": "Non si scappa!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_skill_nor_02",
         "title": "Abilità di combattimento 2",
         "text": "Sulla cresta dell'onda!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_skill_nor_03",
         "title": "Abilità di combattimento 3",
         "text": "Facciamo a gara!"
       },
       {
+        "voId": "chr_0027_tangtang_combat_skill_comb_ready_01",
         "title": "Abilità combo pronta 1",
         "text": "Quando è il mio turno?!"
       },
       {
+        "voId": "chr_0027_tangtang_combat_skill_comb_ready_02",
         "title": "Abilità combo pronta 2",
         "text": "Ora tocca alla capa!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_skill_comb_release_01",
         "title": "Esecuzione combo 1",
         "text": "Vedo un varco!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_skill_comb_release_02",
         "title": "Esecuzione combo 2",
         "text": "Occhio a non scivolare!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_attack_extra_01",
         "title": "Mossa letale 1",
         "text": "Non c'è scampo!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_attack_extra_02",
         "title": "Mossa letale 2",
         "text": "Ho vinto io! Ah ah!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_skill_ultimate_01",
         "title": "Abilità suprema 1",
         "text": "Nessuno può sfuggirmi..."
       },
       {
+        "voId": "chr_0027_tangtang_mono_skill_ultimate_02",
         "title": "Abilità suprema 2",
         "text": "Questa si chiama... Altolà!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_skill_ultimate_03",
         "title": "Abilità suprema 3",
         "text": "Le onde spazzeranno via tutto!"
       }

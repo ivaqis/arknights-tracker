@@ -126,318 +126,397 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0014_aurora_chrbark_squad_01",
         "title": "Préparation de l'opération 1",
         "text": "J'attends vos ordres, Endministrator."
       },
       {
+        "voId": "chr_0014_aurora_chrbark_squad_02",
         "title": "Préparation de l'opération 2",
         "text": "Endmin ! Vous voilà !"
       },
       {
+        "voId": "chr_0014_aurora_chrbark_join_01",
         "title": "Intégration à l'équipe 1",
         "text": "Une nouvelle mission sur le terrain ? C'est parti !"
       },
       {
+        "voId": "chr_0014_aurora_chrbark_join_02",
         "title": "Intégration à l'équipe 2",
         "text": "Je protègerai tout le monde !"
       },
       {
+        "voId": "chr_0014_aurora_chrbark_weap_01",
         "title": "Changement d'arme",
         "text": "Magnifique performance ! En plus, on peut s'en servir dans des environnements extrêmes !"
       },
       {
+        "voId": "chr_0014_aurora_chrbark_gear_01",
         "title": "Changement d'équipement",
         "text": "La personne qui l'a conçue n'a pas fait les choses à moitié."
       },
       {
+        "voId": "chr_0014_aurora_chrup_skill_01",
         "title": "Activation de la matrice de capacités",
         "text": "J'ai vraiment travaillé dur ! Faut bien se préparer à toutes sortes d'urgences, non ?"
       },
       {
+        "voId": "chr_0014_aurora_chrup_level_01",
         "title": "Visionnage d'archives de combat",
         "text": "Ces enregistrements sont vraiment très utiles ! Ça me donne plein d'idées pour les prochaines opérations de R&S !"
       },
       {
+        "voId": "chr_0014_aurora_chrup_promt01_01",
         "title": "Promotion d'opérateur 1",
         "text": "Hum ! Le travail, ça paie toujours ! Je ne décevrai ni Endfield ni personne !"
       },
       {
+        "voId": "chr_0014_aurora_chrup_promt02_01",
         "title": "Promotion d'opérateur 2",
         "text": "C'est censé élargir mon champ d'action, hein ? Ne vous inquiétez pas ! Vous pouvez compter sur moi si vous avez besoin d'un sauvetage d'urgence, d'un échantillonnage de données, d'un soutien logistique ou de tout autre type de mission sur le terrain !"
       },
       {
+        "voId": "chr_0014_aurora_chrup_promt03_01",
         "title": "Promotion d'opérateur 3",
         "text": "J'ai amélioré toutes mes unités des Arts de R&S spécialisées en gel cette fois-ci, Endministrator ! Regardez ! J'ai construit un igloo temporaire ! Allez donc faire un somme à l'intérieur !"
       },
       {
+        "voId": "chr_0014_aurora_chrup_promt04_01",
         "title": "Promotion d'opérateur 4",
         "text": "J'ai appris beaucoup de nouvelles choses chez Endfield et j'en ai gardé de merveilleux souvenirs... Merci de m'accorder votre confiance, Endministrator. À partir de maintenant, je continuerai à gravir des sommets jamais atteints... et à sauver autant de personnes que possible."
       },
       {
+        "voId": "chr_0014_aurora_introduce_01",
         "title": "Opératrice au rapport",
         "text": "Salutations ! Je suis votre opératrice de chez Rhodes Island. Nom de code : Snowshine. Je suis experte en Recherche et Sauvetage, spécialisée dans les opérations à basse température. Si vous avez une mission dans les champs de glace ou les montagnes enneigées, prenez-moi dans votre équipe."
       },
       {
+        "voId": "chr_0014_aurora_mono_switch_01",
         "title": "En attente 1",
         "text": "Ça vous dit de faire du snowboard avec moi, Endministrator ?"
       },
       {
+        "voId": "chr_0014_aurora_mono_switch_02",
         "title": "En attente 2",
         "text": "Vitesse du vent correcte. Bonne visibilité. C'est le temps idéal pour faire du snowboard !"
       },
       {
+        "voId": "chr_0014_aurora_sim_assign_work_01",
         "title": "Affectation à une installation",
         "text": "Aucun problème ! J'ai déjà occupé tous les postes ici ! Et ils sont bien plus simples que de construire des fortifications !"
       },
       {
+        "voId": "chr_0014_aurora_sim_hello_lower_01",
         "title": "Salutation 1",
         "text": "Salutations, Endmin."
       },
       {
+        "voId": "chr_0014_aurora_sim_hello_max_01",
         "title": "Salutation 2",
         "text": "Besoin d'un coup de main, Endministrator ? Je peux être votre défenseuse !"
       },
       {
+        "voId": "chr_0014_aurora_sim_talk_lv01_01",
         "title": "Bavardage sur le Dijiang 1",
         "text": "Chaque fois que je monte à bord du Dijiang, j'apprends des tas de nouvelles choses : des technologies et des machines que je n'ai jamais vues auparavant, des techniques de combat spéciales, des plans de surveillance audacieux... Ah, j'arrive à peine à suivre le rythme ! Sincèrement, Endfield, c'est vraiment génial !"
       },
       {
+        "voId": "chr_0014_aurora_sim_talk_lv02_01",
         "title": "Bavardage sur le Dijiang 2",
         "text": "Comment ? Il y a un buffet à volonté dans la cantine du Dijiang ?! Ah, désolée. J'étais un peu surprise... Non, bien sûr que non ! Je ne vais pas tout dévorer ! Je vous le jure !"
       },
       {
+        "voId": "chr_0014_aurora_sim_talk_lv02_02",
         "title": "Bavardage sur le Dijiang 3",
         "text": "Endministrator ! Vous tombez à point nommé ! Je viens de recevoir mon colis et je me demandais si ça vous intéresserait d'essayer ma fondue spéciale au fromage. Le goût... ? Je dirais qu'il est assez... spécial !? La plupart de mes collègues disent que c'est une « expérience inoubliable »..."
       },
       {
+        "voId": "chr_0014_aurora_sim_talk_max_01",
         "title": "Bavardage sur le Dijiang 4",
         "text": "Aaaahhh ! Les étirements permettent d'assouplir les articulations. Ces exercices sont utiles pour éviter les déchirures musculaires et l'hypothermie dans les environnements polaires. Vous voulez essayer ? Ne vous inquiétez pas. Comme j'ai été assistante du coach pendant les séances d'entraînement, je saurai vous conseiller sur votre posture !... Vous voyez ? C'est facile, non ?"
       },
       {
+        "voId": "chr_0014_aurora_sim_talk_max_02",
         "title": "Bavardage sur le Dijiang 5",
         "text": "Chaque fois que je vois P'tit Squive, ça me fait penser à notre capitaine. C'est un Perro, lui aussi. Il est super sympa, mais dès qu'une mission de R&S commence, il se montre très autoritaire. Il nous fait même vérifier plusieurs fois le calibre de la mèche à eau chaude... Ce que j'ai appris de lui, c'est que « le moindre détail compte en R&S » !"
       },
       {
+        "voId": "chr_0014_aurora_sim_talk_max_03",
         "title": "Bavardage sur le Dijiang 6",
         "text": "La lumière qui se réfléchit sur les nuages de Talos-II est si belle. Elle me rappelle les aurores que je connais... et les visions dans mes rêves. Je les vois souvent depuis les plus hauts sommets des montagnes enneigées du Nord. Je sais que la lumière est une forme d'énergie æthérique dangereuse, mais j'ai toujours l'impression de revoir une vieille amie... Elle m'observe... et me protège de loin..."
       },
       {
+        "voId": "chr_0014_aurora_sim_gift_give_01",
         "title": "Cadeaux offerts",
         "text": "Endministrator, tenez. Je vous ai rapporté un petit quelque chose des champs de neige."
       },
       {
+        "voId": "chr_0014_aurora_sim_gift_recv_01",
         "title": "Cadeaux acceptés",
         "text": "C'est pour moi ? Oh, merci beaucoup ! Ça me réchauffe le cœur... Je garderai ce cadeau bien précieusement !"
       },
       {
+        "voId": "chr_0014_aurora_mono_self_line01",
         "title": "Dialogue à cœur ouvert 1",
         "text": "Regardez, Endministrator ! J'utilise mes Arts de l'originium pour créer cette barrière de glace ! C'est super solide, hein ? Ne vous inquiétez pas ! Mettez plus de force en frappant ! Elle n'aura pas une seule égratignure !"
       },
       {
+        "voId": "chr_0014_aurora_mono_self_line02",
         "title": "Dialogue à cœur ouvert 2",
         "text": "Alors, vous avez pris une pause bien méritée, Endministrator ? Je vous vois toujours courir dans tous les sens sans jamais vous arrêter... Hmm, vous devriez vraiment faire attention à l'équilibre entre vie professionnelle et vie privée. Vous vous souvenez de notre dernier entraînement de R&S ? J'étais sacrément surprise quand j'ai dû vous porter sur mon dos... Un veau qui vient de naître serait plus lourd que vous. C'était surprenant !"
       },
       {
+        "voId": "chr_0014_aurora_mono_self_line03",
         "title": "Dialogue à cœur ouvert 3",
         "text": "Les opérations de R&S ne sont pas forcément toutes un succès... Les changements brusques de météo ou de terrain peuvent survenir plus rapidement qu'on ne le croit. C'est pour cette raison que je vérifie trois fois mon équipement avant de partir en mission. Les drones, les caméras thermiques... chaque pièce d'équipement est un assistant précieux pour les opérateurs de R&S. C'est grâce à eux, que nous pouvons lancer des plans de sauvetage audacieux sans crainte."
       },
       {
+        "voId": "chr_0014_aurora_mono_self_line04",
         "title": "Dialogue à cœur ouvert 4",
         "text": "Une fois, j'ai sauvé un père et sa fille d'une avalanche... Ils s'étaient vraisemblablement disputés et avaient décidé de s'ignorer l'un l'autre dans l'abri temporaire que j'avais construit. Malgré la tempête de neige, le père ne manquait jamais de garder de la nourriture pour sa fille. Cette dernière, pour sa part, faisait de son mieux pour prendre soin de son père âgé. Leur évacuation s'est déroulée sans encombre, mais ils ne se parlaient toujours pas. Je me suis demandé si c'était ça, la famille. Même quand les mots font défaut, elle se soutient toujours dans les moments difficiles."
       },
       {
+        "voId": "chr_0014_aurora_mono_self_line05",
         "title": "Dialogue à cœur ouvert 5",
         "text": "Sauver des vies est loin d'être simple. Je n'ai jamais imaginé pouvoir sauver tout le monde sans faire de sacrifices. Je suis la seule survivante de mon équipe de R&S. Les ravages de la Gangrène ont rendu certaines personnes infirmes, d'autres ont perdu la raison lors des nuits glaciales et enneigées... J'ai connu des moments de confusion, et d'autres où j'ai ressenti la peur. Mais vous, les Endfielders, vous êtes tellement forts et impressionnants ! Je suis sûre que nous réussirons à aller plus loin et plus haut, grâce à votre soutien, Endministrator !"
       },
       {
+        "voId": "chr_0014_aurora_mono_chat_line01",
         "title": "Discussion 1",
         "text": "Ce snowboard ? C'est un cadeau que Dame Warfarin m'a offert quand j'ai quitté Rhodes Island. La planche a été construite avec les mêmes matériaux rares que mon armure et elle est ultra polyvalente en mission ! Hum... Endministrator, vous aimez le snowboard ? Je peux vous apprendre, si vous voulez !"
       },
       {
+        "voId": "chr_0014_aurora_mono_chat_line02",
         "title": "Discussion 2",
         "text": "Le groupe de Recherche et Sauvetage dépend de la Fédération de Sauvetage du Corridor du Nord. Nos missions impliquent généralement de sauver des messagers qui travaillent dans le nord, des marchands ambulants et des éclaireurs militaires qui se sont perdus après être tombés dans une embuscade tendue par des Aggeloi ou des bêtes sauvages. Mes collègues secouristes viennent des quatre coins du monde, et la plupart d'entre nous sont bénévoles. Nos interventions de sauvetage étaient un combat permanent contre la glace, la neige et les terrains accidentés, mais elles m'ont permis de rencontrer des personnes de tous horizons."
       },
       {
+        "voId": "chr_0014_aurora_mono_chat_line03",
         "title": "Discussion 3",
         "text": "Un opérateur m'a récemment demandé comment rejoindre l'équipe. En vérité, ce n'est pas difficile ! Il suffit de s'entraîner assidûment à l'alpinisme, de participer à des opérations de sauvetage qui durent des heures, de maîtriser certaines techniques de survie en milieu polaire, d'apprendre à éviter les Ankhors et les grosses bêtes, et de suivre une formation complète en secourisme, au moins à un niveau qui permette d'agir en cas d'oripathie soudaine ! Pour finir, il faut réussir l'épreuve spéciale conçue par notre capitaine, et le tour est joué : vous êtes officiellement membre de l'équipe de R&S !"
       },
       {
+        "voId": "chr_0014_aurora_mono_chat_line04",
         "title": "Discussion 4",
         "text": "J'aime l'hiver, les montagnes enneigées et la beauté scintillante qu'on ne voit que dans le froid glacial... C'est pour ça que je ne veux pas que les gens en gardent des souvenirs douloureux. Quand ils voient les montagnes enneigées, la première chose qui leur vient à l'esprit, c'est la vue époustouflante qu'on a au sommet. Et quand la neige tombe, j'espère qu'ils voient des cristaux purs et des fleurs de glace... Pffeu. Ce serait si triste que tout le monde ne pense qu'à la catastrophe. Endministrator, je continuerai à me battre pour atteindre mes objectifs."
       },
       {
+        "voId": "chr_0014_aurora_mono_chat_line05",
         "title": "Discussion 5",
         "text": "Vous me cherchiez hier, Endministrator ? Je suis vraiment désolée de ne pas m'en être aperçue sur le moment. Je faisais une bonne sieste pour rattraper mon manque de sommeil. Oui, en rentrant d'une mission de sauvetage, la première chose que je fais, c'est une sieste... mais parfois, je dors un peu plus longtemps que prévu... Si c'est urgent, n'hésitez pas à me réveiller ! Je me lèverai dès que j'entendrai votre voix, Endministrator !"
       },
       {
+        "voId": "chr_0014_aurora_mono_about_line01",
         "title": "Thème : l'entraînement de sauvetage d'urgence",
         "text": "Absolument ! L'entraînement de R&S est extrêmement important ! Grâce à ça, quand une catastrophe naturelle survient, comme une avalanche, les gens peuvent vite se mettre à l'abri dans des endroits sûrs et stables... Ça améliore vraiment leurs chances de survie ! Par contre, il faut qu'ils soient vraiment sensibilisés aux risques. Alors, Endministrator, on compte sur votre présence au prochain entraînement de R&S, d'accord ?"
       },
       {
+        "voId": "chr_0014_aurora_mono_about_line02",
         "title": "Thème : Gilberta",
         "text": "Est-ce que mademoiselle Gilberta est aussi à bord du Dijiang ? Oh, en fait, elle nous a vraiment tirés d'affaire à plusieurs reprises lors de nos missions de sauvetage. Elle nous a livré des denrées essentielles, elle a héliporté les blessés et même localisé un signal SOS lancé au milieu d'une terrible tempête de neige ! L'équipe de R&S a voulu lui offrir un cadeau en guise de remerciement, mais elle a refusé à chaque fois. Finalement, elle a demandé qu'on lui envoie quelques photos de beaux panoramas pris au sommet des montagnes enneigées. Hé hé. Que pensez-vous de celle-ci ? J'ai fait le cadre moi-même !"
       },
       {
+        "voId": "chr_0014_aurora_mono_about_line03",
         "title": "Thème : la survie en région polaire",
         "text": "Il n'est pas aisé de survivre dans les régions polaires... Il faut savoir se protéger du froid pendant la nuit afin d'éviter l'hypothermie lors des tempêtes de neige, trouver de la nourriture dans les champs de glace gangrénés, repérer des points d'ancrage solides pour traverser les glaciers... et, surtout, planifier un itinéraire sûr pour atteindre son objectif. Autrement dit, il faut apprendre à éviter les Aggeloi, les bêtes affamées et les autres dangers qui peuplent les zones sinistrées."
       },
       {
+        "voId": "chr_0014_aurora_explore_point_common_01",
         "title": "Détection de ressource/objet à collecter 1",
         "text": "On devrait récupérer ces ressources ! Elles pourront nous être utiles pendant nos opérations de sauvetage."
       },
       {
+        "voId": "chr_0014_aurora_explore_point_valub_01",
         "title": "Détection de ressource/objet à collecter 2",
         "text": "Voilà une extraordinaire découverte. Ça nous sera peut-être utile pour des opérations futures !"
       },
       {
+        "voId": "chr_0014_aurora_explore_find_locked_01",
         "title": "Zone inexplorée détectée",
         "text": "Nos drones n'ont pas examiné cette zone. Il faut être vigilant."
       },
       {
+        "voId": "chr_0014_aurora_explore_find_danger_01",
         "title": "Découverte d'un ennemi puissant",
         "text": "Faites tous bien attention ! Cet ennemi a l'air très dangereux !"
       },
       {
+        "voId": "chr_0014_aurora_interact_mine_valub_01",
         "title": "Extraction 1",
         "text": "Des minerais de grande qualité. On peut sans doute s'en servir pour construire des abris temporaires..."
       },
       {
+        "voId": "chr_0014_aurora_interact_mine_valub_echo2_01",
         "title": "Extraction 2",
         "text": "On ira beaucoup plus vite si on s'y met tous."
       },
       {
+        "voId": "chr_0014_aurora_interact_treasure_valub_01",
         "title": "Ouverture de caisse",
         "text": "Ajoutons ça à notre réserve d'urgence !"
       },
       {
+        "voId": "chr_0014_aurora_interact_etherium_01",
         "title": "Obtention d'aurylène",
         "text": "C'est de l'aurylène ? C'est joli... On devrait l'entreposer dans le coffre !"
       },
       {
+        "voId": "chr_0014_aurora_interact_blight_break_01",
         "title": "Élimination de la Gangrène",
         "text": "Élimination réussie ! Vérifiez que votre armure anti-gangrène n'est pas endommagée !"
       },
       {
+        "voId": "chr_0014_aurora_interact_rest_01",
         "title": "Repos",
         "text": "Vous voulez du fromage ? C'est très bon pour la vigueur !"
       },
       {
+        "voId": "chr_0014_aurora_combat_suppuse_using_01",
         "title": "Utilisation de tactique 1",
         "text": "Traitement d'urgence administré !"
       },
       {
+        "voId": "chr_0014_aurora_combat_suppuse_getheal_01",
         "title": "Utilisation de tactique 2",
         "text": "Désolée... ! J'ai besoin de récupérer."
       },
       {
+        "voId": "chr_0014_aurora_combat_remind_danger_01",
         "title": "Avertissement de danger",
         "text": "Évitez de vous faire toucher !"
       },
       {
+        "voId": "chr_0014_aurora_combat_hurt_lowhp_01",
         "title": "Blessure",
         "text": "Ça va. Je tiens le coup..."
       },
       {
+        "voId": "chr_0014_aurora_combat_dead_01",
         "title": "0 PV",
         "text": "Désolée... Je n'ai pas pu surmonter cette tempête..."
       },
       {
+        "voId": "chr_0014_aurora_combat_remind_praise_01",
         "title": "Encouragement de l'équipe 1",
         "text": "Quel excellent travail d'équipe !"
       },
       {
+        "voId": "chr_0014_aurora_combat_remind_praise_02",
         "title": "Encouragement de l'équipe 2",
         "text": "Quel travail fabuleux !"
       },
       {
+        "voId": "chr_0014_aurora_combat_remind_praise_echo2_01",
         "title": "Réaction face aux encouragements 1",
         "text": "Continuons sur notre lancée !"
       },
       {
+        "voId": "chr_0014_aurora_combat_remind_praise_echo2_02",
         "title": "Réaction face aux encouragements 2",
         "text": "Merci du soutien !"
       },
       {
+        "voId": "chr_0014_aurora_combat_intobattle_01",
         "title": "Début du combat 1",
         "text": "Faites place au sauvetage !"
       },
       {
+        "voId": "chr_0014_aurora_combat_intobattle_echo2_01",
         "title": "Début du combat 2",
         "text": "Oui ! Gelez-les !"
       },
       {
+        "voId": "chr_0014_aurora_combat_outbattle_nor_01",
         "title": "Victoire au combat 1",
         "text": "Ohh. Le combat est terminé. Profitons-en pour faire une pause."
       },
       {
+        "voId": "chr_0014_aurora_combat_outbattle_nor_02",
         "title": "Victoire au combat 2",
         "text": "Tout le monde se donne à fond. Je dois mettre les bouchées doubles, moi aussi !"
       },
       {
+        "voId": "chr_0014_aurora_combat_outbattle_nor_echo2_01",
         "title": "Victoire au combat 3",
         "text": "Beau travail d'équipe, tout le monde !"
       },
       {
+        "voId": "chr_0014_aurora_combat_outbattle_hard_01",
         "title": "Victoire au combat 4",
         "text": "Ne vous découragez pas. Résistons à la tempête et atteignons notre objectif ! Gardons nos forces, et nous atteindrons la zone de sécurité plus tôt que prévu !"
       },
       {
+        "voId": "chr_0014_aurora_combat_battle_defeat_01",
         "title": "Défaite au combat",
         "text": "N'abandonnez pas ! Armons-nous et préparons-nous ! Ensuite, on y retourne !"
       },
       {
+        "voId": "chr_0014_aurora_mono_attack_last_01",
         "title": "Coup final 1",
         "text": "Coup givré !"
       },
       {
+        "voId": "chr_0014_aurora_mono_attack_last_02",
         "title": "Coup final 2",
         "text": "Tornade glaciale !"
       },
       {
+        "voId": "chr_0014_aurora_mono_skill_nor_strike_01",
         "title": "Compétence de combat 1",
         "text": "En arrière !"
       },
       {
+        "voId": "chr_0014_aurora_mono_skill_nor_strike_02",
         "title": "Compétence de combat 2",
         "text": "Accès refusé !"
       },
       {
+        "voId": "chr_0014_aurora_mono_skill_nor_strike_03",
         "title": "Compétence de combat 3",
         "text": "Snowshine vous protège !"
       },
       {
+        "voId": "chr_0014_aurora_combat_skill_comb_ready_01",
         "title": "Compétence de combo prête 1",
         "text": "Prête à partir !"
       },
       {
+        "voId": "chr_0014_aurora_combat_skill_comb_ready_02",
         "title": "Compétence de combo prête 2",
         "text": "En route pour le sauvetage !"
       },
       {
+        "voId": "chr_0014_aurora_mono_skill_comb_release_01",
         "title": "Utilisation de combo 1",
         "text": "Respire avec moi !"
       },
       {
+        "voId": "chr_0014_aurora_mono_skill_comb_release_02",
         "title": "Utilisation de combo 2",
         "text": "Les urgences sont arrivées !"
       },
       {
+        "voId": "chr_0014_aurora_mono_attack_extra_01",
         "title": "Coup fatal 1",
         "text": "ADIOS !"
       },
       {
+        "voId": "chr_0014_aurora_mono_attack_extra_02",
         "title": "Coup fatal 2",
         "text": "Tu vas tomber !"
       },
       {
+        "voId": "chr_0014_aurora_mono_skill_ultimate_01",
         "title": "Ultime 1",
         "text": "Tempête de givre !"
       },
       {
+        "voId": "chr_0014_aurora_mono_skill_ultimate_02",
         "title": "Ultime 2",
         "text": "Bouclier de glace !"
       },
       {
+        "voId": "chr_0014_aurora_mono_skill_ultimate_03",
         "title": "Ultime 3",
         "text": "Par la glace et la neige ! Gèle !"
       }

@@ -132,330 +132,412 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0028_wulfa_chrbark_squad_01",
         "title": "行動準備1",
         "text": "這是在管理員面前表現的機會！"
       },
       {
+        "voId": "chr_0028_wulfa_chrbark_squad_02",
         "title": "行動準備2",
         "text": "我不會辜負大家的期待的！"
       },
       {
+        "voId": "chr_0028_wulfa_chrbark_join_01",
         "title": "編入隊伍1",
         "text": "狼群的洛西，管、管理員，有什麼任務要交給我？"
       },
       {
+        "voId": "chr_0028_wulfa_chrbark_join_02",
         "title": "編入隊伍2",
         "text": "我會努力做到最好的，管理員！"
       },
       {
+        "voId": "chr_0028_wulfa_chrbark_weap_01",
         "title": "更換武器",
         "text": "好帥氣的武器！我在氏族裡都沒有看過這樣的！"
       },
       {
+        "voId": "chr_0028_wulfa_chrbark_gear_01",
         "title": "更換裝備",
         "text": "穿上這身有點不太好移動……嗯？是管理員幫我挑選的嗎？那，就要它吧！肯定有什麼深意……"
       },
       {
+        "voId": "chr_0028_wulfa_chrup_skill_01",
         "title": "解鎖天賦陣列",
         "text": "我是群狼的後裔！"
       },
       {
+        "voId": "chr_0028_wulfa_chrup_level_01",
         "title": "觀看作戰紀錄",
         "text": "成熟的戰士是這樣戰鬥的嗎……嗯……這樣……這樣……然後再那樣……好，我學會了！"
       },
       {
+        "voId": "chr_0028_wulfa_chrup_promt01_01",
         "title": "精英化晉升1",
         "text": "晉……升？啊，我懂了，氏族裡也有類似的儀式！不過我一次都沒有體驗過，感覺……還不賴？"
       },
       {
+        "voId": "chr_0028_wulfa_chrup_promt02_01",
         "title": "精英化晉升2",
         "text": "嘿嘿，我做得還不錯吧？不這樣可承擔不了氏族的重任，我可是還要帶領狼群名揚塔衛二呢。"
       },
       {
+        "voId": "chr_0028_wulfa_chrup_promt03_01",
         "title": "精英化晉升3",
         "text": "哼哼，對於我來說，晉升簡直再簡單不過了！下次晉升是什麼時候？我已經做好準備了！要等待機會？那好吧……"
       },
       {
+        "voId": "chr_0028_wulfa_chrup_promt04_01",
         "title": "精英化晉升4",
         "text": "這就證明我是最出色的幹員了吧？不知道卡特洛有沒有這麼順利。下次再見到那傢伙，我可要好好炫耀一下！"
       },
       {
+        "voId": "chr_0028_wulfa_introduce_01",
         "title": "幹員報到",
         "text": "我是洛西娜，授名是狼珀，寓意是狼群的瑰寶！要乖乖記好了喔！啊……管理員用自己喜歡的方式稱呼我就好……"
       },
       {
+        "voId": "chr_0028_wulfa_mono_switch_01",
         "title": "待命1",
         "text": "嗜血的時刻已至！我是說……用餐時間到了！"
       },
       {
+        "voId": "chr_0028_wulfa_mono_switch_02",
         "title": "待命2",
         "text": "我是狼群的爪牙！……好像不太對？反正……嗷嗚！"
       },
       {
+        "voId": "chr_0028_wulfa_sim_assign_work_01",
         "title": "進駐設施",
         "text": "對於精銳來說小事一樁！"
       },
       {
+        "voId": "chr_0028_wulfa_sim_hello_lower_01",
         "title": "打招呼1",
         "text": "管、管理員！今天有什麼任務要交給我嗎？"
       },
       {
+        "voId": "chr_0028_wulfa_sim_hello_max_01",
         "title": "打招呼2",
         "text": "管理員，可以傳授我一點作為領導者的經驗嗎？"
       },
       {
+        "voId": "chr_0028_wulfa_sim_talk_lv01_01",
         "title": "帝江號閒聊1",
         "text": "終末地是怎麼管理這麼多幹員的？什麼……系統……什麼……中控來著？搞不懂……不過很值得學習。"
       },
       {
+        "voId": "chr_0028_wulfa_sim_talk_lv02_01",
         "title": "帝江號閒聊2",
         "text": "氏族的老狼讓我多來帝江號上看看，他們說在這裡能學習到作為領導者的知識和經驗，尤其是在管理員身邊。可是能抓到管理員的機會太少了！"
       },
       {
+        "voId": "chr_0028_wulfa_sim_talk_lv02_02",
         "title": "帝江號閒聊3",
         "text": "帝江號上的哥哥姐姐們總是把我當小孩子看待！但我已經是狼群的精銳了，下次要跟他們說清楚才行，不能再這樣了！不過他們給的小點心都很好吃……"
       },
       {
+        "voId": "chr_0028_wulfa_sim_talk_max_01",
         "title": "帝江號閒聊4",
         "text": "氏族事務優先！不過，如果終末地有什麼突發情況，我一定會第一時間趕到的。只是不知道管理員需不需要我的幫助……管理員那麼優秀，就算沒有我也能輕鬆解決危機的吧，但我還是想幫到管理員……怎麼辦呢……"
       },
       {
+        "voId": "chr_0028_wulfa_sim_talk_max_02",
         "title": "帝江號閒聊5",
         "text": "我聽說在帝江號上能找到卡特洛，可是他在這怎麼也是神出鬼沒？嗯……該說是本性難移嗎？再找不到他，羅贊爺爺可就要生氣了！我才不想看到他發火的樣子……管理員，您知道在哪裡能找到卡特洛嗎？"
       },
       {
+        "voId": "chr_0028_wulfa_sim_talk_max_03",
         "title": "帝江號閒聊6",
         "text": "帝江號上為什麼也查詢不到管理員的相關紀錄呢？我好不容易才學會使用這個什麼情報檔案庫……查到的全是些沒用的資訊，或者就是說我權限不夠……嗚……管理員，您有時間親自跟我說說您的那些英勇事蹟嗎？"
       },
       {
+        "voId": "chr_0028_wulfa_sim_gift_give_01",
         "title": "贈送禮物",
         "text": "管理員，這是我得到的戰利品！全都送給您！別擔心，我還會弄到更多的！"
       },
       {
+        "voId": "chr_0028_wulfa_sim_gift_recv_01",
         "title": "接收禮物",
         "text": "這是……給我的？我真的可以收下嗎？謝謝您，我會好好領會管理員的用意的！"
       },
       {
+        "voId": "chr_0028_wulfa_mono_self_line01",
         "title": "信賴對話1",
         "text": "這個？這個……我只是在記錄管理員您的言行，我覺得這些細節也有值得我學習的地方。啊……不能給您看，這是私人物品！"
       },
       {
+        "voId": "chr_0028_wulfa_mono_self_line02",
         "title": "信賴對話2",
         "text": "我我我、我聽過好多好多管理員的傳說。一直在想您會是個怎麼樣的人！直到真正見到您，才覺得您比傳說中更令人欽佩。具體哪一點？嗯……行事方式、領導力，我、我也不知道該怎麼形容……"
       },
       {
+        "voId": "chr_0028_wulfa_mono_self_line03",
         "title": "信賴對話3",
         "text": "狼群的孩子會在十三歲時參加成人禮。族人們會聚在一起，為新的「狼」選出授名。卡特洛的授名是「狼衛」，而我則是「狼珀」。我喜歡氏族賦予我的名字，每當唸出它時，我就能感受到狼群的血在我的身體裡流淌……管理員覺得這個名字怎麼樣？"
       },
       {
+        "voId": "chr_0028_wulfa_mono_self_line04",
         "title": "信賴對話4",
         "text": "管理員，我最近的任務表現還算不錯吧？那個……可以找您要一點獎勵嗎？啊……不用太費心，多和我聊聊天就可以了！……可以嗎？"
       },
       {
+        "voId": "chr_0028_wulfa_mono_self_line05",
         "title": "信賴對話5",
         "text": "我知道自己的能力還不足以勝任狼群的領袖，但元老們堅持讓我代理氏族事務……所以、所以我想在管理員身邊學到更多，學習怎麼成為一個值得信賴的人。還有佩麗卡姐姐、M3姐姐……我會讓大家刮目相看的！"
       },
       {
+        "voId": "chr_0028_wulfa_mono_chat_line01",
         "title": "交談1",
         "text": "終末地的哥哥姐姐們教了我好多東西，佩麗卡姐姐為我講了協議同步器的用法，艾維文娜姐姐帶我去逛了商會的服裝店和首飾店，還有、還有……賽希姐姐說要與我探討平方時間複雜度……那是什麼？"
       },
       {
+        "voId": "chr_0028_wulfa_mono_chat_line02",
         "title": "交談2",
         "text": "這裡的哥哥姐姐們都很照顧我，還會給我小禮物。但，我也是通過了狼群試煉的，名副其實的狼！成熟的狼不能喜歡孩子氣的東西，應該喜歡匕首和錢幣！所以我收集了很多。等我再長高一點，大家就可以放心把那些最危險的任務交給我來處理了！"
       },
       {
+        "voId": "chr_0028_wulfa_mono_chat_line03",
         "title": "交談3",
         "text": "我一直以為羅贊爺爺就是世界上最強大的人，但他卻總告訴我天外有天，還總是提到管理員。後來我還在別處聽說了許多您的傳奇事蹟，哇，世界上居然還有這樣的人！我一直想來看看您真實的樣子，自從聽說您甦醒了，我就在計劃什麼時候來個突然襲擊了……嘿嘿。"
       },
       {
+        "voId": "chr_0028_wulfa_mono_chat_line04",
         "title": "交談4",
         "text": "我的第一把匕首是一次緊急狩獵後的獎勵！裝著它的盒子金光燦燦的，我現在還保管得好好的呢。這也是我最喜歡的一把，總是帶在身邊，不過它不夠鋒利，只能用來切一切水果。如果管理員也喜歡的話，嗯……等我帶上盒子一起送給您！"
       },
       {
+        "voId": "chr_0028_wulfa_mono_chat_line05",
         "title": "交談5",
         "text": "小時候的事嗎……狼群總是處於和碾骨氏族的鬥爭中，是哥哥帶著我四處求醫問診，也是族人們幫忙……啊……不應該在管理員面前說這些的！到此為止、到此為止，管理員，我們還是說一說關於您的事吧，我聽說……"
       },
       {
+        "voId": "chr_0028_wulfa_mono_about_line01",
         "title": "話題：管理員",
         "text": "「源石會開闢道路。」啊……我、我只是試著說一下，完了完了……不會被管理員討厭吧？我知道學習管理員不是一味地模仿這麼簡單，我只是覺得……這樣確實很帥氣……"
       },
       {
+        "voId": "chr_0028_wulfa_mono_about_line02",
         "title": "話題：代號",
         "text": "我也可以像哥哥一樣使用狼群的授名作為代號，但……我還沒怎麼被氏族以外的人那麼叫過，有點不好意思。直接用「洛西娜」的話又會顯得太小孩子氣，我才不要！所以，我就用了「洛西」作為自己的代號，那代表著我斗篷的顏色。"
       },
       {
+        "voId": "chr_0028_wulfa_mono_about_line03",
         "title": "話題：碾骨氏族",
         "text": "我不會放過哪怕一個碾骨氏族的暴虐之徒！這是狼群和碾骨之間的世仇。為了救下我，有太多狼……太多家人死在了碾骨手下。這是狼群的仇恨，也是我的仇恨。狼群是這個世界上最記仇的氏族，終有一天，我們會算清這筆帳！"
       },
       {
+        "voId": "chr_0028_wulfa_mono_about_line04",
         "title": "話題：斗篷",
         "text": "那上面沾染著族人的鮮血……但對我來說，每當觸碰到它時，我就會感到無比的安心，彷彿那些族人們不曾離我遠去。這件斗篷刺痛著我，提醒我絕不忘記仇恨，但它也給予了我勇氣，還有家人的溫暖……嗯，他們一直陪伴著我。"
       },
       {
+        "voId": "chr_0028_wulfa_mono_about_line05",
         "title": "話題：收集品",
         "text": "我之前把收集來的匕首跟錢幣都放進了一個特製的寶箱裡，結果因為搬家弄丟了……裡面還有些不能見人的東西……是小時候做的手工。我費了好大功夫才把寶箱找回來。現在我可以把東西都存放在帝江號上啦！也可以用存東西當理由來找哥哥姐姐們玩。啊，不對……是來學習！"
       },
       {
+        "voId": "chr_0028_wulfa_mono_about_line06",
         "title": "話題：荒野上的人",
         "text": "荒野上的人所做的一切都是為了活下去，有時還能看到和我一樣大的孩子在做壞事……哪怕是那些裂地者，有時鋌而走險也只是為了生存。我覺得任何人都應該按自己的想法活著，但是……管理員，終末地是不是能改變這一切，讓那些孩子也能和我一樣去做自己想做的事呢？"
       },
       {
+        "voId": "chr_0028_wulfa_explore_point_common_01",
         "title": "發現資源1",
         "text": "相信我，那邊肯定有好東西！"
       },
       {
+        "voId": "chr_0028_wulfa_explore_point_valub_01",
         "title": "發現資源2",
         "text": "狼群不會遺漏任何荒野中的資源，注意那邊！"
       },
       {
+        "voId": "chr_0028_wulfa_explore_find_locked_01",
         "title": "發現未探索區域",
         "text": "那邊有奇怪的氣味，去看看吧！"
       },
       {
+        "voId": "chr_0028_wulfa_explore_find_danger_01",
         "title": "發現強敵",
         "text": "有危險的味道，要上嗎？"
       },
       {
+        "voId": "chr_0028_wulfa_interact_mine_valub_01",
         "title": "採集礦物1",
         "text": "能分給我幾塊這樣的石頭嗎？我想把它們鑲嵌在匕首上。"
       },
       {
+        "voId": "chr_0028_wulfa_interact_mine_valub_echo2_01",
         "title": "採集礦物2",
         "text": "大家一起來，工作很快就結束了！"
       },
       {
+        "voId": "chr_0028_wulfa_interact_treasure_valub_01",
         "title": "打開儲藏箱",
         "text": "嗯……我本來想著如果打不開的話，可以試試咬一口。"
       },
       {
+        "voId": "chr_0028_wulfa_interact_etherium_01",
         "title": "獲得醚質",
         "text": "為什麼有的醚質總會飛來飛去，有的卻靜止不動呢？真神奇。"
       },
       {
+        "voId": "chr_0028_wulfa_interact_blight_break_01",
         "title": "消除侵蝕",
         "text": "搞定啦！再也沒有這些煩人的侵蝕啦！"
       },
       {
+        "voId": "chr_0028_wulfa_interact_rest_01",
         "title": "休整",
         "text": "好好吃飯，好好睡覺，好好休息。這是群狼的智慧！"
       },
       {
+        "voId": "chr_0028_wulfa_combat_suppuse_using_01",
         "title": "使用戰術物品1",
         "text": "快，用這些來恢復！"
       },
       {
+        "voId": "chr_0028_wulfa_combat_suppuse_getheal_01",
         "title": "使用戰術物品2",
         "text": "真有效，我好多了！"
       },
       {
+        "voId": "chr_0028_wulfa_combat_remind_danger_01",
         "title": "危險提醒",
         "text": "小心！有點不對勁！"
       },
       {
+        "voId": "chr_0028_wulfa_combat_hurt_lowhp_01",
         "title": "負傷",
         "text": "不行……沒時間舔傷口了……"
       },
       {
+        "voId": "chr_0028_wulfa_combat_dead_01",
         "title": "力竭",
         "text": "狼群……不會就此作罷的……"
       },
       {
+        "voId": "chr_0028_wulfa_combat_remind_praise_01",
         "title": "小隊激勵1",
         "text": "漂亮的一擊！"
       },
       {
+        "voId": "chr_0028_wulfa_combat_remind_praise_02",
         "title": "小隊激勵2",
         "text": "哇！完美的配合！"
       },
       {
+        "voId": "chr_0028_wulfa_combat_remind_praise_echo2_01",
         "title": "回應激勵1",
         "text": "嘿嘿嘿，還有更厲害的呢！"
       },
       {
+        "voId": "chr_0028_wulfa_combat_remind_praise_echo2_02",
         "title": "回應激勵2",
         "text": "這就是我們要的成果！"
       },
       {
+        "voId": "chr_0028_wulfa_combat_intobattle_01",
         "title": "作戰開始1",
         "text": "群狼的血液在沸騰！"
       },
       {
+        "voId": "chr_0028_wulfa_combat_intobattle_echo2_01",
         "title": "作戰開始2",
         "text": "我可不想錯過這次狩獵！"
       },
       {
+        "voId": "chr_0028_wulfa_combat_outbattle_nor_01",
         "title": "作戰勝利1",
         "text": "狼群之名終將響徹大地！"
       },
       {
+        "voId": "chr_0028_wulfa_combat_outbattle_nor_02",
         "title": "作戰勝利2",
         "text": "給我記好了，這就是招惹狼群的下場！"
       },
       {
+        "voId": "chr_0028_wulfa_combat_outbattle_nor_echo2_01",
         "title": "作戰勝利3",
         "text": "哼哼哼，因為我也在嘛！"
       },
       {
+        "voId": "chr_0028_wulfa_combat_outbattle_hard_01",
         "title": "作戰勝利4",
         "text": "狼群從不畏懼留下傷痕！"
       },
       {
+        "voId": "chr_0028_wulfa_combat_battle_defeat_01",
         "title": "作戰失敗",
         "text": "這點失敗不算什麼，洛西娜……我是不會放棄的！"
       },
       {
+        "voId": "chr_0028_wulfa_mono_attack_last_01",
         "title": "重擊1",
         "text": "扯碎你！"
       },
       {
+        "voId": "chr_0028_wulfa_mono_attack_last_02",
         "title": "重擊2",
         "text": "顫抖吧！"
       },
       {
+        "voId": "chr_0028_wulfa_mono_skill_nor_01",
         "title": "戰技1",
         "text": "撕咬吧，狼魂！"
       },
       {
+        "voId": "chr_0028_wulfa_mono_skill_nor_02",
         "title": "戰技2",
         "text": "獵殺時刻！"
       },
       {
+        "voId": "chr_0028_wulfa_mono_skill_nor_03",
         "title": "戰技3",
         "text": "灼熱的爪痕！"
       },
       {
+        "voId": "chr_0028_wulfa_combat_skill_comb_ready_01",
         "title": "連攜技就緒1",
         "text": "你逃不出狼的追殺！"
       },
       {
+        "voId": "chr_0028_wulfa_combat_skill_comb_ready_02",
         "title": "連攜技就緒2",
         "text": "讓我看見你的恐懼！"
       },
       {
+        "voId": "chr_0028_wulfa_mono_skill_comb_release_01",
         "title": "連攜技1",
         "text": "想往哪跑？"
       },
       {
+        "voId": "chr_0028_wulfa_mono_skill_comb_release_02",
         "title": "連攜技2",
         "text": "逮到你了！"
       },
       {
+        "voId": "chr_0028_wulfa_mono_attack_extra_01",
         "title": "處決1",
         "text": "倒下吧！"
       },
       {
+        "voId": "chr_0028_wulfa_mono_attack_extra_02",
         "title": "處決2",
         "text": "嗷嗚！"
       },
       {
+        "voId": "chr_0028_wulfa_mono_skill_ultimate_01",
         "title": "終結技1",
         "text": "蒸騰吧，群狼之血！"
       },
       {
+        "voId": "chr_0028_wulfa_mono_skill_ultimate_02",
         "title": "終結技2",
         "text": "我是利刃的化身！"
       },
       {
+        "voId": "chr_0028_wulfa_mono_skill_ultimate_03",
         "title": "終結技3",
         "text": "群狼之魂，與我同在。"
       }

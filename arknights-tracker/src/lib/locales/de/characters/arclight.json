@@ -125,326 +125,407 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0007_ikut_chrbark_squad_01",
         "title": "Einsatzvorbereitung 1",
         "text": "Bist du bereit? Die Wildnis ist voller Gefahren."
       },
       {
+        "voId": "chr_0007_ikut_chrbark_squad_02",
         "title": "Einsatzvorbereitung 2",
         "text": "Der Wind hört niemals auf. Und ich auch nicht."
       },
       {
+        "voId": "chr_0007_ikut_chrbark_join_01",
         "title": "Wird zum Team hinzugefügt 1",
         "text": "Endlich etwas frischer Wind. Ich hatte den Geruch von Erde fast vergessen."
       },
       {
+        "voId": "chr_0007_ikut_chrbark_join_02",
         "title": "Wird zum Team hinzugefügt 2",
         "text": "Geh, so schnell du kannst. Keine Sorge. Ich kann immer mithalten."
       },
       {
+        "voId": "chr_0007_ikut_chrbark_weap_01",
         "title": "Waffe wird gewechselt",
         "text": "Ich spüre den Atem der Waffe und dass sie wie für mich geschaffen ist."
       },
       {
+        "voId": "chr_0007_ikut_chrbark_gear_01",
         "title": "Ausrüstung wird gewechselt",
         "text": "Beeindruckende Handwerkskunst … Diese Präzision ist selten, sogar unter den mir bekannten Aldertones."
       },
       {
+        "voId": "chr_0007_ikut_chrup_skill_01",
         "title": "Fähigkeitsmatrix wird aktiviert",
         "text": "Mein Aldertone hat mir etwas anderes beigebracht, aber du strebst nach den gleichen Zielen. Ich wurde erleuchtet."
       },
       {
+        "voId": "chr_0007_ikut_chrup_level_01",
         "title": "Kampfaufzeichnungen ansehen",
         "text": "Das Leben in der Wildnis ist lehrreich … Und durch diese Lektionen wird eine scharfe Klinge geschmiedet."
       },
       {
+        "voId": "chr_0007_ikut_chrup_promt01_01",
         "title": "Operator-Beförderung 1",
         "text": "Beförderung …? Das heißt, ich habe deine Zustimmung? Dann … freue ich mich über die Zustimmung."
       },
       {
+        "voId": "chr_0007_ikut_chrup_promt02_01",
         "title": "Operator-Beförderung 2",
         "text": "Ehre gibt es nicht ohne Pflicht. All dies dient als Erinnerung daran, mehr Leuten zu helfen."
       },
       {
+        "voId": "chr_0007_ikut_chrup_promt03_01",
         "title": "Operator-Beförderung 3",
         "text": "Die Natur lehrt uns nicht das Überleben. Sie hinterlässt uns lediglich einen Pfad. Früher habe ich mein Bestes getan, mich anzupassen … Jetzt … fange ich an zu verstehen, wie dies alles funktioniert."
       },
       {
+        "voId": "chr_0007_ikut_chrup_promt04_01",
         "title": "Operator-Beförderung 4",
         "text": "Ich habe auf meinen Reisen mit dir viel gelernt. Ich fange an zu verstehen, warum mich die Hanna-Verse hierher an deine Seite geführt haben. Ich werde das Wissen gut nutzen."
       },
       {
+        "voId": "chr_0007_ikut_introduce_01",
         "title": "Operator meldet sich zum Dienst",
         "text": "Ich bin Ekut. Mein Rufzeichen ist Arclight. Ich bin keine geübte Wortweberin, aber ich wünsche euch alles Gute – möget ihr wie ein ansteigender Fluss fließen, Endfielder."
       },
       {
+        "voId": "chr_0007_ikut_mono_switch_01",
         "title": "Warten 1",
         "text": "Der Weg vor mir wurde offenbart."
       },
       {
+        "voId": "chr_0007_ikut_mono_switch_02",
         "title": "Warten 2",
         "text": "Ich bin auf optimale Leistung vorbereitet."
       },
       {
+        "voId": "chr_0007_ikut_sim_assign_work_01",
         "title": "Zuweisung zur Anlage",
         "text": "Bin dabei. Wir Liedsucher ruhen nie."
       },
       {
+        "voId": "chr_0007_ikut_sim_hello_lower_01",
         "title": "Gruß 1",
         "text": "Woher wehen die Winde heute, Endmin?"
       },
       {
+        "voId": "chr_0007_ikut_sim_hello_max_01",
         "title": "Gruß 2",
         "text": "Kommst du von einer Reise an die Oberfläche zurück, Endmin? Du riechst nach Wildnis."
       },
       {
+        "voId": "chr_0007_ikut_sim_talk_lv01_01",
         "title": "Dijiang-Geplauder 1",
         "text": "Die Reparatur eines eisernen Rosses ist wie die Behandlung eines Zystbiests. Man muss genau zuhören, bevor man die Behandlung durchführt."
       },
       {
+        "voId": "chr_0007_ikut_sim_talk_lv02_01",
         "title": "Dijiang-Geplauder 2",
         "text": "Die Sterne hier unterscheiden sich von denen, die wir in der Wildnis sehen … Aber beide Anblicke sind gleichermaßen faszinierend."
       },
       {
+        "voId": "chr_0007_ikut_sim_talk_lv02_02",
         "title": "Dijiang-Geplauder 3",
         "text": "Ich beobachte diese Wolken. Ihre scharfen Kanten kündigen einen Sturm an. Sei vorsichtig, wenn dich deine nächste Mission nach dort unten führt."
       },
       {
+        "voId": "chr_0007_ikut_sim_talk_max_01",
         "title": "Dijiang-Geplauder 4",
         "text": "Dein Haar ist bezaubernd, wie ein vom Tau der Morgendämmerung benetztes Tierfell. Du hast es noch nie gesehen? Na, es ist einfach wunderschön."
       },
       {
+        "voId": "chr_0007_ikut_sim_talk_max_02",
         "title": "Dijiang-Geplauder 5",
         "text": "Hast du schon mal die Präriewanderungen gesehen? Eine Armee aus Tieren und Wagen, die Regen und Wolken hinterherjagen. Das sind die Dinge, die ich beschützen möchte."
       },
       {
+        "voId": "chr_0007_ikut_sim_talk_max_03",
         "title": "Dijiang-Geplauder 6",
         "text": "Man verliert sich oft im Anblick dieser Welt. Ich glaube, ich weiß, wie es dir geht. Unser Herz sehnt sich immer nach Orten, die uns am Herzen liegen – egal, wie weit sie entfernt sind."
       },
       {
+        "voId": "chr_0007_ikut_sim_gift_give_01",
         "title": "Geschenke anbieten",
         "text": "Ich habe dir etwas mitgebracht. Ein Geschenk aus der Wildnis. Hoffentlich gefällt es dir."
       },
       {
+        "voId": "chr_0007_ikut_sim_gift_recv_01",
         "title": "Geschenke annehmen",
         "text": "Für mich? In der Wildnis sind Geschenke wichtig … Ich werde es in Ehren halten."
       },
       {
+        "voId": "chr_0007_ikut_mono_self_line01",
         "title": "Vertrauensgespräch 1",
         "text": "Du solltest die Grundlagen des Überlebens in der Wildnis erlernen, Endmin. Das Herstellen von Langohrfallen ist ein guter Anfang. Das kann ich dir beibringen."
       },
       {
+        "voId": "chr_0007_ikut_mono_self_line02",
         "title": "Vertrauensgespräch 2",
         "text": "Das Leben in der Wildnis ist hart, aber auch schön. Wie der klare Himmel am Ende eines langen Monsuns, wie eine brütende Vogelbestie unter dem Mond."
       },
       {
+        "voId": "chr_0007_ikut_mono_self_line03",
         "title": "Vertrauensgespräch 3",
         "text": "Es ist kein Geheimnis, dass alte Geräte besser funktionieren, wenn sie miteinander kombiniert werden. Spanne zwei fremde Monsterbestien vor einen Wagen und gib ihnen Zeit. Sie werden schließlich zu einem guten Team."
       },
       {
+        "voId": "chr_0007_ikut_mono_self_line04",
         "title": "Vertrauensgespräch 4",
         "text": "Ich begann meine Wanderung auf der Suche nach Antworten. Die Wildnis ist aus dem Gleichgewicht geraten, und ich muss etwas unternehmen. Ich lauschte dem Plätschern der Seen und dem Flüstern der Wälder. Und jetzt möchte ich deine Stimme hören."
       },
       {
+        "voId": "chr_0007_ikut_mono_self_line05",
         "title": "Vertrauensgespräch 5",
         "text": "Ich werde diese Geschichten in die Hanna unserer Reise einflechten. Das wird einige Zeit dauern, denn zu viele Dinge sind eines Liedes würdig. Sobald die Hanna fertig ist, wirst du sie zuerst hören."
       },
       {
+        "voId": "chr_0007_ikut_mono_chat_line01",
         "title": "Geplauder 1",
         "text": "Wer leben will, wird sich Gehör verschaffen. Und die wandernden Liedsucher werden immer hören. Das ist der Zweck des Hannabit-Zirkels."
       },
       {
+        "voId": "chr_0007_ikut_mono_chat_line02",
         "title": "Geplauder 2",
         "text": "Mit den Wildling-Stämmen befreundet zu sein, ist einfach. Wir konzentrieren uns auf das Wesentliche: das Wetter, die Nahrung und die Gefahren. Allein diese Dinge nehmen einen Großteil unserer Zeit in Anspruch."
       },
       {
+        "voId": "chr_0007_ikut_mono_chat_line03",
         "title": "Geplauder 3",
         "text": "Alle Liedsucher des Hannabit-Zirkels kennen die Hannas auswendig. Sie sind nicht schwer. Die Verse decken jeden Aspekt unseres Lebens ab. Ebenso sind wir in die Verse verwoben."
       },
       {
+        "voId": "chr_0007_ikut_mono_chat_line04",
         "title": "Geplauder 4",
         "text": "Mein Aldertone hat mir von Terra und Städten erzählt, die sich bewegen, um Katastrophen zu vermeiden. Es scheint, als hätten wir unsere alten Methoden geerbt, nur in anderer Form."
       },
       {
+        "voId": "chr_0007_ikut_mono_chat_line05",
         "title": "Geplauder 5",
         "text": "Auf manchen Wildnisbasaren kann man gebrauchte Waren tauschen, aber man muss Geduld haben, um ein gutes Angebot zu finden. Ich habe ein altes Kjersch-Gerät für meinen Kommunikator modifiziert. Dort werden Dinge hergestellt, die auch unter extremen Bedingungen zuverlässig funktionieren."
       },
       {
+        "voId": "chr_0007_ikut_mono_about_line01",
         "title": "Thema: Städte",
         "text": "Talos-II ist größer als gedacht. Früher glaubte ich, jede Stadt sei nur eine Ansammlung von Stahl, Straßen und Lichtern. Doch als ich sie tatsächlich besuchte, erkannte ich, dass jede Stadt ihren eigenen Puls und ihre eigene Atmosphäre hat. Die Unterschiede sind deutlicher als bei zwei Weiden mit unterschiedlichem Gras."
       },
       {
+        "voId": "chr_0007_ikut_mono_about_line02",
         "title": "Thema: Der Endministrator",
         "text": "Ich bin viel herumgekommen, und selbst die entlegensten Stämme erzählen Geschichten über dich. So unterschiedlich diese Geschichten auch sein mögen, eines bleibt immer gleich: Mit deinem Namen ist stets Hoffnung verbunden."
       },
       {
+        "voId": "chr_0007_ikut_mono_about_line03",
         "title": "Thema: Hanna-Lieder",
         "text": "Ein sterbender Nomade sang unsere allererste Hanna, die nur aus drei Zeilen bestand. Diese Verse gaben dem Hannabit-Zirkel ihren Namen. Und vom ersten Aldertone an führte die Hanna die wandernden Liedsucher an, bis auch sie Teil des Liedes wurden."
       },
       {
+        "voId": "chr_0007_ikut_mono_about_line04",
         "title": "Thema: Aldertones",
         "text": "Die Aldertones sprechen nur selten direkt. Orisha sagte, die Hanna beinhalte alles Wissen, das wir brauchen. Sie lehrte mich durch ihre Taten. Wir müssen einander helfen, um in dieser Welt zu überleben."
       },
       {
+        "voId": "chr_0007_ikut_mono_about_line05",
         "title": "Thema: Ihr Stamm",
         "text": "Ich bin in einem kleinen Stamm mit nicht mehr als hundert Seelen aufgewachsen. Das war alles, was ich kannte, bevor ich meine Reise antrat. Ich lernte, die Zystbiester zu melken, mein eisernes Ross zu reiten und in der Wildnis zu überleben. Ich habe den Ort nie verlassen. Ich habe ihn einfach mitgenommen."
       },
       {
+        "voId": "chr_0007_ikut_explore_point_common_01",
         "title": "Ressource/Sammelobjekt entdeckt 1",
         "text": "Wenn es beim Überleben hilft, greif zu."
       },
       {
+        "voId": "chr_0007_ikut_explore_point_valub_01",
         "title": "Ressource/Sammelobjekt entdeckt 2",
         "text": "Das wird meinen Aldertone interessieren."
       },
       {
+        "voId": "chr_0007_ikut_explore_find_locked_01",
         "title": "Unerforschter Bereich entdeckt",
         "text": "Weiter so. Wir müssen näher ran."
       },
       {
+        "voId": "chr_0007_ikut_explore_find_danger_01",
         "title": "Starker Gegner entdeckt",
         "text": "Ich spüre eine Gefahr. Das wird nicht einfach."
       },
       {
+        "voId": "chr_0007_ikut_interact_mine_valub_01",
         "title": "Abbau 1",
         "text": "Die Gaben des Landes."
       },
       {
+        "voId": "chr_0007_ikut_interact_mine_valub_echo2_01",
         "title": "Abbau 2",
         "text": "Ich übernehme das. Mit körperlicher Arbeit kenne ich mich aus."
       },
       {
+        "voId": "chr_0007_ikut_interact_treasure_valub_01",
         "title": "Kiste öffnen",
         "text": "Eine Seltenheit in der Wildnis. Das wird uns von Nutzen sein."
       },
       {
+        "voId": "chr_0007_ikut_interact_etherium_01",
         "title": "Aurylen erhalten",
         "text": "Wir füllen sie normalerweise in eine Flasche, um Licht zu spenden."
       },
       {
+        "voId": "chr_0007_ikut_interact_blight_break_01",
         "title": "Eliminierung der Verderbnis",
         "text": "Wir sollten der Natur ihren Lauf lassen."
       },
       {
+        "voId": "chr_0007_ikut_interact_rest_01",
         "title": "Ausruhen",
         "text": "Das erinnert mich an Lagerfeuer in der Wildnis. Beide scheinen dieselbe Wärme zu spenden."
       },
       {
+        "voId": "chr_0007_ikut_combat_suppuse_using_01",
         "title": "Taktische Nutzung 1",
         "text": "Atme ruhig."
       },
       {
+        "voId": "chr_0007_ikut_combat_suppuse_getheal_01",
         "title": "Taktische Nutzung 2",
         "text": "Meine Stärke kehrt zurück."
       },
       {
+        "voId": "chr_0007_ikut_combat_remind_danger_01",
         "title": "Gefahrenwarnung",
         "text": "Bleib nicht stehen. Geh weiter."
       },
       {
+        "voId": "chr_0007_ikut_combat_hurt_lowhp_01",
         "title": "Verletzt",
         "text": "Bin noch im Kampf, nur etwas langsamer."
       },
       {
+        "voId": "chr_0007_ikut_combat_dead_01",
         "title": "0 LP",
         "text": "Tut mir leid … Ich hätte dir gerne mehr geholfen …"
       },
       {
+        "voId": "chr_0007_ikut_combat_remind_praise_01",
         "title": "Teammotivation 1",
         "text": "Deine Reflexe sind blitzschnell!"
       },
       {
+        "voId": "chr_0007_ikut_combat_remind_praise_02",
         "title": "Teammotivation 2",
         "text": "Wie der Wind und der Donner haben wir ihnen einen Sturm gegeben."
       },
       {
+        "voId": "chr_0007_ikut_combat_remind_praise_echo2_01",
         "title": "Motivationsreaktion 1",
         "text": "Genau das wird von mir erwartet."
       },
       {
+        "voId": "chr_0007_ikut_combat_remind_praise_echo2_02",
         "title": "Motivationsreaktion 2",
         "text": "Ich bin nur ein Teil des Teams."
       },
       {
+        "voId": "chr_0007_ikut_combat_intobattle_01",
         "title": "Kampf beginnt 1",
         "text": "Ich bin im Fluss."
       },
       {
+        "voId": "chr_0007_ikut_combat_intobattle_echo2_01",
         "title": "Kampf beginnt 2",
         "text": "Diese Seite überlasse ich dir."
       },
       {
+        "voId": "chr_0007_ikut_combat_outbattle_nor_01",
         "title": "Kampfsieg 1",
         "text": "Jetzt werden sie ewige Ruhe finden."
       },
       {
+        "voId": "chr_0007_ikut_combat_outbattle_nor_02",
         "title": "Kampfsieg 2",
         "text": "Ich bete, dass das Land euch alle aufnimmt."
       },
       {
+        "voId": "chr_0007_ikut_combat_outbattle_nor_echo2_01",
         "title": "Kampfsieg 3",
         "text": "Das ist der Wille der Natur."
       },
       {
+        "voId": "chr_0007_ikut_combat_outbattle_hard_01",
         "title": "Kampfsieg 4",
         "text": "Jedes Lebewesen in der Wildnis muss Härte ertragen, um zu wachsen."
       },
       {
+        "voId": "chr_0007_ikut_combat_battle_defeat_01",
         "title": "Niederlage im Kampf",
         "text": "Selbst dem erfahrensten Reißbiestrudel gelingt es manchmal nicht, seine Beute zu erlegen. Immerhin haben wir aus dieser Jagd etwas gelernt."
       },
       {
+        "voId": "chr_0007_ikut_mono_attack_last_01",
         "title": "Abschlussangriff 1",
         "text": "Bruch!"
       },
       {
+        "voId": "chr_0007_ikut_mono_attack_last_02",
         "title": "Abschlussangriff 2",
         "text": "Zersplittere!"
       },
       {
+        "voId": "chr_0007_ikut_mono_skill_nor_01",
         "title": "Kampffertigkeit 1",
         "text": "Wütender Wind!"
       },
       {
+        "voId": "chr_0007_ikut_mono_skill_nor_02",
         "title": "Kampffertigkeit 2",
         "text": "Donnergrollen!"
       },
       {
+        "voId": "chr_0007_ikut_mono_skill_nor_03",
         "title": "Kampffertigkeit 3",
         "text": "Lichtbogenblitz!"
       },
       {
+        "voId": "chr_0007_ikut_combat_skill_comb_ready_01",
         "title": "Kombofertigkeit bereit 1",
         "text": "Dieser Wind ist perfekt!"
       },
       {
+        "voId": "chr_0007_ikut_combat_skill_comb_ready_02",
         "title": "Kombofertigkeit bereit 2",
         "text": "Den Rest kann ich fertigmachen."
       },
       {
+        "voId": "chr_0007_ikut_mono_skill_comb_release_01",
         "title": "Kombo wirken 1",
         "text": "Das ist der optimale Weg."
       },
       {
+        "voId": "chr_0007_ikut_mono_skill_comb_release_02",
         "title": "Kombo wirken 2",
         "text": "Ich sehe eine Lücke!"
       },
       {
+        "voId": "chr_0007_ikut_mono_attack_extra_01",
         "title": "Wuchtschlag 1",
         "text": "Es ist vorbei."
       },
       {
+        "voId": "chr_0007_ikut_mono_attack_extra_02",
         "title": "Wuchtschlag 2",
         "text": "Das ist die Gelegenheit."
       },
       {
+        "voId": "chr_0007_ikut_mono_skill_ultimate_01",
         "title": "Ultimative Fertigkeit 1",
         "text": "Dem kannst du nicht entkommen."
       },
       {
+        "voId": "chr_0007_ikut_mono_skill_ultimate_02",
         "title": "Ultimative Fertigkeit 2",
         "text": "Der Sturm zerstört alles."
       },
       {
+        "voId": "chr_0007_ikut_mono_skill_ultimate_03",
         "title": "Ultimative Fertigkeit 3",
         "text": "Wie ein Blitz aus heiterem Himmel."
       }

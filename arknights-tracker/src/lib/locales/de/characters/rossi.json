@@ -132,330 +132,412 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0028_wulfa_chrbark_squad_01",
         "title": "Einsatzvorbereitung 1",
         "text": "Das ist meine Chance, dem Endmin zu zeigen, was ich draufhabe!"
       },
       {
+        "voId": "chr_0028_wulfa_chrbark_squad_02",
         "title": "Einsatzvorbereitung 2",
         "text": "Ich werde niemanden enttäuschen!"
       },
       {
+        "voId": "chr_0028_wulfa_chrbark_join_01",
         "title": "Wird zum Team hinzugefügt 1",
         "text": "Rossi aus dem Rudel. E-Endmin … was ist unsere Mission?"
       },
       {
+        "voId": "chr_0028_wulfa_chrbark_join_02",
         "title": "Wird zum Team hinzugefügt 2",
         "text": "Ich geb mein Bestes, Endmin!"
       },
       {
+        "voId": "chr_0028_wulfa_chrbark_weap_01",
         "title": "Waffe wird gewechselt",
         "text": "Ah, diese Waffe ist echt cool! So etwas habe ich in meinem Klan noch nie gesehen!"
       },
       {
+        "voId": "chr_0028_wulfa_chrbark_gear_01",
         "title": "Ausrüstung wird gewechselt",
         "text": "Es ist etwas schwierig, sich darin zu bewegen … Oh? Hast du das für mich ausgesucht, Endmin? Dann nehme ich es! Hmmm … Dahinter muss eine tiefere Bedeutung stecken."
       },
       {
+        "voId": "chr_0028_wulfa_chrup_skill_01",
         "title": "Fähigkeitsmatrix-Aktivierung",
         "text": "Ich bin ein Nachkomme des Rudels!"
       },
       {
+        "voId": "chr_0028_wulfa_chrup_level_01",
         "title": "Kampfaufzeichnungen ansehen",
         "text": "So kämpfen also erfahrene Krieger. Hmm … so … und dann so … Okay, jetzt habe ich’s verstanden!"
       },
       {
+        "voId": "chr_0028_wulfa_chrup_promt01_01",
         "title": "Operator-Beförderung 1",
         "text": "Be… Beförderung? Ah, ich verstehe! In unserem Klan gibt es ähnliche Zeremonien, auch wenn ich selbst noch nie bei einer dabei war. Weißt du was? Das ist … gar nicht so schlecht."
       },
       {
+        "voId": "chr_0028_wulfa_chrup_promt02_01",
         "title": "Operator-Beförderung 2",
         "text": "Hehe, ich mach mich ganz gut, oder? Ich muss schließlich gut sein, um die Verantwortung für den Klan zu übernehmen. Schließlich werde ich dafür sorgen, dass jeder auf Talos-II das Rudel kennen wird!"
       },
       {
+        "voId": "chr_0028_wulfa_chrup_promt03_01",
         "title": "Operator-Beförderung 3",
         "text": "Für jemanden wie mich sind Beförderungen ein Kinderspiel! Wann kommt die nächste? Ich bin bereit! Muss ich auf die richtige Gelegenheit warten? Na gut …"
       },
       {
+        "voId": "chr_0028_wulfa_chrup_promt04_01",
         "title": "Operator-Beförderung 4",
         "text": "Das beweist doch, dass ich jetzt der beste Operator bin! Ob Catello es auch so leicht hatte? Wenn ich ihn das nächste Mal sehe, werde ich es ihm ordentlich unter die Nase reiben!"
       },
       {
+        "voId": "chr_0028_wulfa_introduce_01",
         "title": "Operator meldet sich zum Dienst",
         "text": "Ich bin Rossina und mein richtiger Name ist Wulfperl. Das bedeutet „Schatz des Rudels“. Das solltest du dir besser merken! Ach … Endmin, du kannst mich nennen, wie du willst …"
       },
       {
+        "voId": "chr_0028_wulfa_mono_switch_01",
         "title": "Warten 1",
         "text": "Die Stunde des Blutvergießens hat geschlagen. Wird Zeit, dass wir jagen … ähm, essen, meine ich."
       },
       {
+        "voId": "chr_0028_wulfa_mono_switch_02",
         "title": "Warten 2",
         "text": "Beute, Achtung! Ich bin die Pfoten des Rudels! Hm. Das klingt irgendwie nicht richtig? Jedenfalls … *heuuul*"
       },
       {
+        "voId": "chr_0028_wulfa_sim_assign_work_01",
         "title": "Zuweisung zur Anlage",
         "text": "Ein Kinderspiel für jemanden wie mich!"
       },
       {
+        "voId": "chr_0028_wulfa_sim_hello_lower_01",
         "title": "Gruß 1",
         "text": "E-Endmin! Hast du heute irgendwelche Missionen für mich?"
       },
       {
+        "voId": "chr_0028_wulfa_sim_hello_max_01",
         "title": "Gruß 2",
         "text": "Endmin! Teilst etwas von deiner Führungserfahrung mit mir?"
       },
       {
+        "voId": "chr_0028_wulfa_sim_talk_lv01_01",
         "title": "Dijiang-Geplauder 1",
         "text": "Wie schafft es Endfield, so viele Operatoren zu managen? Hat das etwas mit … Systemen zu tun? Und mit einer Art … zentraler Steuerung? Ich verstehe es nicht ganz … Aber es lohnt sich auf jeden Fall, das zu lernen."
       },
       {
+        "voId": "chr_0028_wulfa_sim_talk_lv02_01",
         "title": "Dijiang-Geplauder 2",
         "text": "Die älteren Wölfe aus dem Klan haben mir geraten, öfter die Dijiang zu besuchen. Sie meinten, ich könnte hier etwas über Führungsqualitäten lernen – vor allem an deiner Seite. Aber dich zu erwischen, ist echt schwer!"
       },
       {
+        "voId": "chr_0028_wulfa_sim_talk_lv02_02",
         "title": "Dijiang-Geplauder 3",
         "text": "Die großen Brüder und Schwestern auf der Dijiang behandeln mich immer noch wie ein Kind! Dabei bin ich doch schon ein Elite-Mitglied des Rudels! Das nächste Mal werde ich ihnen klarmachen, dass das aufhören muss! … Obwohl die Snacks, die sie mir geben, echt lecker sind …"
       },
       {
+        "voId": "chr_0028_wulfa_sim_talk_max_01",
         "title": "Dijiang-Geplauder 4",
         "text": "Klanangelegenheiten haben Vorrang! Wenn in Endfield jedoch etwas Dringendes passiert, bin ich sofort zur Stelle. Ich … bin mir nur nicht sicher, ob du meine Hilfe wirklich brauchst. Du bist so kompetent, dass du Krisen wahrscheinlich auch ohne mich meistern würdest. Aber ich möchte trotzdem helfen. Was soll ich nur tun …?"
       },
       {
+        "voId": "chr_0028_wulfa_sim_talk_max_02",
         "title": "Dijiang-Geplauder 5",
         "text": "Ich habe gehört, dass Catello auf der Dijiang sein soll. Warum ist er hier aber auch so schwer zu finden? Hm … Alte Gewohnheiten lassen sich wohl nur schwer ablegen. Wenn ich ihn nicht bald finde, wird Nonno Rozzan sauer sein. Ich will ihn echt nicht wütend sehen. Weißt du vielleicht, wo ich Catello finden könnte, Endmin?"
       },
       {
+        "voId": "chr_0028_wulfa_sim_talk_max_03",
         "title": "Dijiang-Geplauder 6",
         "text": "Warum finde ich auch auf der Dijiang keine Informationen über dich? Ich habe endlich herausgefunden, wie man dieses sogenannte Informationsarchiv benutzt, aber ich erhalte nur nutzlose Ergebnisse oder die Meldung „Nicht autorisiert“. Ach … Endmin, hast du Zeit, mir selbst von deinen Heldentaten zu erzählen?"
       },
       {
+        "voId": "chr_0028_wulfa_sim_gift_give_01",
         "title": "Geschenke anbieten",
         "text": "Endmin, das ist die Beute, die ich gesammelt habe! Alles ist für dich! Keine Sorge, ich hole noch mehr!"
       },
       {
+        "voId": "chr_0028_wulfa_sim_gift_recv_01",
         "title": "Geschenke annehmen",
         "text": "Für … mich? Kann ich das wirklich haben? Danke! Ich werde versuchen, die Bedeutung deines Geschenks zu verstehen!"
       },
       {
+        "voId": "chr_0028_wulfa_mono_self_line01",
         "title": "Vertrauensgespräch 1",
         "text": "Das hier? Na ja … ich mache mir nur Notizen zu deinen Worten und Taten, Endmin. Ich finde, dass man sogar aus den Details etwas lernen kann. Ah … bitte nicht lesen! Das sind persönliche Notizen!"
       },
       {
+        "voId": "chr_0028_wulfa_mono_self_line02",
         "title": "Vertrauensgespräch 2",
         "text": "Ich habe schon so viele Geschichten über dich gehört. Ich habe mich immer gefragt, was für ein Mensch du bist. Aber jetzt, wo ich dich persönlich kennengelernt habe, finde ich dich noch beeindruckender als in den Geschichten. Was genau? Na ja … deine Methoden, deine Führungsqualitäten … Ich weiß gar nicht, wie ich es in Worte fassen soll …"
       },
       {
+        "voId": "chr_0028_wulfa_mono_self_line03",
         "title": "Vertrauensgespräch 3",
         "text": "Die Kinder des Rudels nehmen mit 13 an einem Initiationsritus teil. Der Klan trifft sich, um einen Namen für den neuen „Wolf“ auszuwählen. Catellos Name ist „Wulfgard“ und meiner ist „Wulfperl“. Ich liebe den Namen, den mir der Klan gegeben hat. Jedes Mal, wenn ich ihn ausspreche, spüre ich, wie das Blut des Rudels durch mich fließt … Was hältst du davon, Endmin?"
       },
       {
+        "voId": "chr_0028_wulfa_mono_self_line04",
         "title": "Vertrauensgespräch 4",
         "text": "Endmin, ich habe in letzter Zeit bei den Missionen ziemlich gute Arbeit geleistet, oder? Also … könnte ich vielleicht um eine kleine Belohnung bitten? Äh … nichts Besonderes, es würde mir schon reichen, wenn du ein bisschen mehr mit mir quatschen würdest! … Ist das okay?"
       },
       {
+        "voId": "chr_0028_wulfa_mono_self_line05",
         "title": "Vertrauensgespräch 5",
         "text": "Ich weiß, dass ich noch nicht gut genug bin, um das Rudel anzuführen. Die Ältesten bestehen jedoch darauf, dass ich mich um die Angelegenheiten des Klans kümmere … Deshalb möchte ich an deiner Seite lernen, Endmin. Ich will lernen, wie man jemand wird, dem man vertrauen kann, wie du und Perlica und M3 … Ich werde dafür sorgen, dass mich alle mit anderen Augen sehen!"
       },
       {
+        "voId": "chr_0028_wulfa_mono_chat_line01",
         "title": "Geplauder 1",
         "text": "Die großen Brüder und Schwestern in Endfield haben mir wirklich viel beigebracht! Perlica hat mir erklärt, wie Protokollsynchronisierer funktionieren und Avywenna hat mich zu den Kleider- und Schmuckläden der TAHK mitgenommen. Xaihi wollte mit mir über quadratische Zeitkomplexität sprechen … Ich habe keine Ahnung, was das überhaupt bedeutet."
       },
       {
+        "voId": "chr_0028_wulfa_mono_chat_line02",
         "title": "Geplauder 2",
         "text": "Alle großen Brüder und Schwestern hier kümmern sich super um mich. Sie geben mir sogar Geschenke. Aber ich habe die Prüfungen des Rudels bestanden! Ich bin ein echter Wolf! Ein erwachsener Wolf sollte keine kindischen Sachen mögen. Er sollte Dolche und Münzen bevorzugen. Also habe ich jede Menge davon gesammelt. Sobald ich ein bisschen größer bin, kann mir endlich jeder die gefährlichsten Missionen anvertrauen!"
       },
       {
+        "voId": "chr_0028_wulfa_mono_chat_line03",
         "title": "Geplauder 3",
         "text": "Ich dachte immer, Nonno Rozzan wäre der stärkste Mensch auf der Welt. Aber er hat immer wieder gesagt: „Es gibt immer jemanden, der noch stärker ist“, und dabei hat er ständig dich erwähnt, Endmin. Später hab ich an anderer Stelle dann jede Menge legendäre Geschichten über dich gehört. Und da hab ich mich gefragt: „Gibt es tatsächlich jemanden wie dich?“ Ich wollte schon immer mal sehen, wie du wirklich bist. Seit ich gehört habe, dass du aufgewacht bist, habe ich vor, dich eines Tages zu überraschen. Hehe."
       },
       {
+        "voId": "chr_0028_wulfa_mono_chat_line04",
         "title": "Geplauder 4",
         "text": "Mein erster Dolch war eine Belohnung nach einer Notjagd. Die Schachtel, in der er lag, glänzte golden, und ich bewahre sie seitdem gut auf. Dieser hier ist auch mein Lieblingsdolch. Ich habe ihn immer dabei, auch wenn er nicht besonders scharf ist und sich hauptsächlich zum Obstschneiden eignet. Wenn du ihn haben willst, Endmin … na ja … Ich gebe ihn dir, sobald ich die Schachtel mitgebracht habe!"
       },
       {
+        "voId": "chr_0028_wulfa_mono_chat_line05",
         "title": "Geplauder 5",
         "text": "Über meine Kindheit … Das Rudel war ständig mit den Knochenbrechern verfeindet. Mein Bruder hat mich und die anderen Klanmitglieder zu Ärzten gebracht, um medizinische Hilfe zu bekommen. Oh! Ach … ich sollte vor dir nicht darüber reden! Vergiss es, Endmin. Lass uns lieber über dich reden! Ich habe gehört, dass …"
       },
       {
+        "voId": "chr_0028_wulfa_mono_about_line01",
         "title": "Thema: Der Endministrator",
         "text": "„Originium wird uns den Weg ebnen.“ Ah … i-ich habe nur geübt. Oh nein, nein … hasst du mich deswegen jetzt? Ich weiß, dass es beim Lernen nicht nur ums Nachahmen geht … Ich dachte nur … es klang echt cool …"
       },
       {
+        "voId": "chr_0028_wulfa_mono_about_line02",
         "title": "Thema: Deckname",
         "text": "Als Mitglied des Rudels könnte ich meinen Namen wie mein Bruder als Codenamen benutzen. Außerhalb des Klans hat mich noch niemand so genannt, weshalb mir das irgendwie peinlich wäre. Und „Rossina“ klingt zu kindisch … den nehme ich auf keinen Fall! Letztendlich habe ich mich für „Rossi“ als Codenamen entschieden – nach der Farbe meines Umhangs."
       },
       {
+        "voId": "chr_0028_wulfa_mono_about_line03",
         "title": "Thema: Der Knochenbrecher-Klan",
         "text": "Ich werde keinen dieser Knochenbrecher-Rohlinge davonkommen lassen! Das ist eine Blutfehde zwischen dem Rudel und den Knochenbrechern. Zu viele Wölfe und Familienmitglieder sind durch sie gestorben, nur um mich zu retten. Das ist die Rache des Rudels – und auch meine. Wir sind der Klan, der den längsten Groll hegt, und eines Tages werden wir diese Rechnung begleichen!"
       },
       {
+        "voId": "chr_0028_wulfa_mono_about_line04",
         "title": "Thema: Umhang",
         "text": "Er ist mit dem Blut meiner Verwandten befleckt … Aber jedes Mal, wenn ich ihn berühre, spüre ich ein unglaubliches Gefühl des Friedens, als wären sie nie wirklich gegangen. Dieser Umhang schmerzt, denn er erinnert mich daran, die Vendetta niemals zu vergessen. Aber er gibt mir auch Mut und vermittelt mir das Gefühl der Wärme einer Familie … Ja, sie sind immer bei mir."
       },
       {
+        "voId": "chr_0028_wulfa_mono_about_line05",
         "title": "Thema: Sammelobjekte",
         "text": "Früher habe ich alle Dolche und Münzen, die ich gesammelt habe, in einer speziellen Schatzkiste aufbewahrt. Beim Umzug habe ich die Kiste jedoch verloren. Am schlimmsten ist, dass sich darin echt peinliche Sachen befanden, zum Beispiel Basteleien, die ich als Kind gemacht habe. Ich habe ewig gebraucht, um die Kiste wiederzufinden. Jetzt kann ich alles sicher auf der Dijiang lagern! Und noch besser: Ich kann das Lagern als Ausrede nutzen, um mit den älteren Brüdern und Schwestern hier abzuhängen. Nein … ich meine, um hier zu lernen!"
       },
       {
+        "voId": "chr_0028_wulfa_mono_about_line06",
         "title": "Thema: Bewohner der Wildnis",
         "text": "Alles, was die Leute in der Wildnis tun, dient nur dem Überleben. Manchmal habe ich Kinder in meinem Alter gesehen, die Schlimmes getan haben, nur um zu überleben. Selbst Landbrecher sind manchmal verzweifelte Risiken eingegangen, nur um am Leben zu bleiben. Ich finde, jeder sollte nach seinen eigenen Entscheidungen leben können. Endmin, kann Endfield all das ändern, damit diese Kinder ihre Träume verfolgen können, so wie ich?"
       },
       {
+        "voId": "chr_0028_wulfa_explore_point_common_01",
         "title": "Ressource/Sammelobjekt entdeckt 1",
         "text": "Glaub mir, da drüben gibt’s was Tolles!"
       },
       {
+        "voId": "chr_0028_wulfa_explore_point_valub_01",
         "title": "Ressource/Sammelobjekt entdeckt 2",
         "text": "Das Rudel übersieht in der Wildnis nie irgendwelche Ressourcen. Behalte diesen Bereich im Auge!"
       },
       {
+        "voId": "chr_0028_wulfa_explore_find_locked_01",
         "title": "Unerforschter Bereich entdeckt",
         "text": "Da drüben riecht es komisch. Schauen wir doch mal nach!"
       },
       {
+        "voId": "chr_0028_wulfa_explore_find_danger_01",
         "title": "Starker Gegner entdeckt",
         "text": "Riecht nach Gefahr. Sollen wir uns einmischen?"
       },
       {
+        "voId": "chr_0028_wulfa_interact_mine_valub_01",
         "title": "Abbau 1",
         "text": "Kannst du mir ein paar dieser Steine geben? Ich möchte sie in meinen Dolch einarbeiten."
       },
       {
+        "voId": "chr_0028_wulfa_interact_mine_valub_echo2_01",
         "title": "Abbau 2",
         "text": "Lass uns das gemeinsam erledigen! Wir werden diese Arbeit im Handumdrehen erledigen!"
       },
       {
+        "voId": "chr_0028_wulfa_interact_treasure_valub_01",
         "title": "Kiste öffnen",
         "text": "Hm … Wenn es sich nicht öffnen lässt, könnte ich es vielleicht mit einem Biss öffnen."
       },
       {
+        "voId": "chr_0028_wulfa_interact_etherium_01",
         "title": "Aurylen erhalten",
         "text": "Warum treiben manche Aurylene im Wasser herum, während sich andere nicht bewegen? Ein Wunder!"
       },
       {
+        "voId": "chr_0028_wulfa_interact_blight_break_01",
         "title": "Eliminierung der Verderbnis",
         "text": "Alles erledigt! Schluss mit der nervigen Verderbnis!"
       },
       {
+        "voId": "chr_0028_wulfa_interact_rest_01",
         "title": "Ausruhen",
         "text": "Gut essen, gut schlafen, gut ausruhen. Das ist die Weisheit des Rudels!"
       },
       {
+        "voId": "chr_0028_wulfa_combat_suppuse_using_01",
         "title": "Taktische Nutzung 1",
         "text": "Schnell, nimm die hier, um dich zu erholen!"
       },
       {
+        "voId": "chr_0028_wulfa_combat_suppuse_getheal_01",
         "title": "Taktische Nutzung 2",
         "text": "Jetzt geht’s mir viel besser!"
       },
       {
+        "voId": "chr_0028_wulfa_combat_remind_danger_01",
         "title": "Gefahrenwarnung",
         "text": "Vorsicht! Da kommt was auf uns zu!"
       },
       {
+        "voId": "chr_0028_wulfa_combat_hurt_lowhp_01",
         "title": "Verletzt",
         "text": "Ich habe keine Zeit … jetzt meine Wunden zu lecken …"
       },
       {
+        "voId": "chr_0028_wulfa_combat_dead_01",
         "title": "0 LP",
         "text": "Das Rudel … wird das nicht vergessen …"
       },
       {
+        "voId": "chr_0028_wulfa_combat_remind_praise_01",
         "title": "Teammotivation 1",
         "text": "Guter Treffer!"
       },
       {
+        "voId": "chr_0028_wulfa_combat_remind_praise_02",
         "title": "Teammotivation 2",
         "text": "Wow! Perfekte Teamarbeit!"
       },
       {
+        "voId": "chr_0028_wulfa_combat_remind_praise_echo2_01",
         "title": "Motivationsreaktion 1",
         "text": "Hehehe, ich hab noch bessere Tricks auf Lager!"
       },
       {
+        "voId": "chr_0028_wulfa_combat_remind_praise_echo2_02",
         "title": "Motivationsreaktion 2",
         "text": "So einen Kampf haben wir uns gewünscht!"
       },
       {
+        "voId": "chr_0028_wulfa_combat_intobattle_01",
         "title": "Kampf beginnt 1",
         "text": "Das Blut des Rudels kocht!"
       },
       {
+        "voId": "chr_0028_wulfa_combat_intobattle_echo2_01",
         "title": "Kampf beginnt 2",
         "text": "Diese Jagd möchte ich auf keinen Fall verpassen!"
       },
       {
+        "voId": "chr_0028_wulfa_combat_outbattle_nor_01",
         "title": "Kampfsieg 1",
         "text": "Das ganze Land wird den Namen dieses Rudels kennen!"
       },
       {
+        "voId": "chr_0028_wulfa_combat_outbattle_nor_02",
         "title": "Kampfsieg 2",
         "text": "Hast du deine Lektion gelernt? Das kommt davon, wenn man sich mit dem Rudel anlegt!"
       },
       {
+        "voId": "chr_0028_wulfa_combat_outbattle_nor_echo2_01",
         "title": "Kampfsieg 3",
         "text": "Hehehe. Mit mir ist der Sieg garantiert!"
       },
       {
+        "voId": "chr_0028_wulfa_combat_outbattle_hard_01",
         "title": "Kampfsieg 4",
         "text": "Die Bisse waren wirklich heftig, aber das Rudel hat keine Angst vor weiteren Narben!"
       },
       {
+        "voId": "chr_0028_wulfa_combat_battle_defeat_01",
         "title": "Niederlage im Kampf",
         "text": "Dieser kleine Rückschlag ist kein Problem … Ich, Rossina, gebe nicht auf!"
       },
       {
+        "voId": "chr_0028_wulfa_mono_attack_last_01",
         "title": "Abschlussangriff 1",
         "text": "Ich zerreiß dich!"
       },
       {
+        "voId": "chr_0028_wulfa_mono_attack_last_02",
         "title": "Abschlussangriff 2",
         "text": "Erzittere!"
       },
       {
+        "voId": "chr_0028_wulfa_mono_skill_nor_01",
         "title": "Kampffertigkeit 1",
         "text": "Reiß sie in Stücke!"
       },
       {
+        "voId": "chr_0028_wulfa_mono_skill_nor_02",
         "title": "Kampffertigkeit 2",
         "text": "Zeit für die Jagd!"
       },
       {
+        "voId": "chr_0028_wulfa_mono_skill_nor_03",
         "title": "Kampffertigkeit 3",
         "text": "Sengende Klauen!"
       },
       {
+        "voId": "chr_0028_wulfa_combat_skill_comb_ready_01",
         "title": "Kombofertigkeit bereit 1",
         "text": "Wir kriegen sie schon!"
       },
       {
+        "voId": "chr_0028_wulfa_combat_skill_comb_ready_02",
         "title": "Kombofertigkeit bereit 2",
         "text": "Ich werde ihnen Angst einjagen!"
       },
       {
+        "voId": "chr_0028_wulfa_mono_skill_comb_release_01",
         "title": "Kombo wirken 1",
         "text": "Es gibt kein Entkommen!"
       },
       {
+        "voId": "chr_0028_wulfa_mono_skill_comb_release_02",
         "title": "Kombo wirken 2",
         "text": "Hab dich!"
       },
       {
+        "voId": "chr_0028_wulfa_mono_attack_extra_01",
         "title": "Wuchtschlag 1",
         "text": "Fall um!"
       },
       {
+        "voId": "chr_0028_wulfa_mono_attack_extra_02",
         "title": "Wuchtschlag 2",
         "text": "*heuuul*"
       },
       {
+        "voId": "chr_0028_wulfa_mono_skill_ultimate_01",
         "title": "Ultimative Fertigkeit 1",
         "text": "Walle, Blut des Rudels!"
       },
       {
+        "voId": "chr_0028_wulfa_mono_skill_ultimate_02",
         "title": "Ultimative Fertigkeit 2",
         "text": "Ich bin die Klinge!"
       },
       {
+        "voId": "chr_0028_wulfa_mono_skill_ultimate_03",
         "title": "Ultimative Fertigkeit 3",
         "text": "Wolfgeister, zu mir!"
       }

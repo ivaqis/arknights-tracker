@@ -125,322 +125,402 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0022_bounda_chrbark_squad_01",
         "title": "Persiapan Operasi 1",
         "text": "Oh, kita sudah siap main, nih?"
       },
       {
+        "voId": "chr_0022_bounda_chrbark_squad_02",
         "title": "Persiapan Operasi 2",
         "text": "Sebentar, bagaimana kalau ada yang belum siap?"
       },
       {
+        "voId": "chr_0022_bounda_chrbark_join_01",
         "title": "Menambahkan ke Tim 1",
         "text": "Salam dan senyum, hadirin sekalian."
       },
       {
+        "voId": "chr_0022_bounda_chrbark_join_02",
         "title": "Menambahkan ke Tim 2",
         "text": "Wow, sepertinya aku memang sosok idaman."
       },
       {
+        "voId": "chr_0022_bounda_chrbark_weap_01",
         "title": "Berganti Senjata",
         "text": "Boleh juga .... Boleh kuutak-atik sedikit?"
       },
       {
+        "voId": "chr_0022_bounda_chrbark_gear_01",
         "title": "Berganti Gear",
         "text": "Makin canggih gear-nya, makin rumit, ‘kan?"
       },
       {
+        "voId": "chr_0022_bounda_chrup_skill_01",
         "title": "Aktivasi Matriks Kemampuan",
         "text": "Tak ada yang mau latih tanding denganku? Wah, sayang sekali."
       },
       {
+        "voId": "chr_0022_bounda_chrup_level_01",
         "title": "Menonton Rekaman Pertarungan",
         "text": "Banyak sekali rekaman pertarungannya .... Endfield memang benar-benar cocok disebut “Industries”."
       },
       {
+        "voId": "chr_0022_bounda_chrup_promt01_01",
         "title": "Promosi Operator 1",
         "text": "Kelihatannya tugas sungguhannya baru saja dimulai."
       },
       {
+        "voId": "chr_0022_bounda_chrup_promt02_01",
         "title": "Promosi Operator 2",
         "text": "Aku benar-benar merasa tersanjung ... tapi sepertinya ini berarti jam kerjaku dalam misi medan bakalan lebih lama, ya?"
       },
       {
+        "voId": "chr_0022_bounda_chrup_promt03_01",
         "title": "Promosi Operator 3",
         "text": "Lain kali boleh, lho, diberi medali. Belum pernah dapat sebelumnya."
       },
       {
+        "voId": "chr_0022_bounda_chrup_promt04_01",
         "title": "Promosi Operator 4",
         "text": "Kalau Pinggiran Sentrapolis adalah bagian dari “dunia yang lebih baik” yang sedang kita coba bangun, berarti masih banyak yang harus kita kerjakan, ‘kan?"
       },
       {
+        "voId": "chr_0022_bounda_introduce_01",
         "title": "Operator Siap Bertugas",
         "text": "Petembak Op Z7, Fluorite. Ada laporan? Tak ada? Bagaimana kalau kita pulang saja?"
       },
       {
+        "voId": "chr_0022_bounda_mono_switch_01",
         "title": "Siaga 1",
         "text": "Siapa yang bakal bernasib sial kali ini?"
       },
       {
+        "voId": "chr_0022_bounda_mono_switch_02",
         "title": "Siaga 2",
         "text": "Alihkan perhatian mereka? Lumpuhkan mereka? Atau ... hancurkan saja mereka?"
       },
       {
+        "voId": "chr_0022_bounda_sim_assign_work_01",
         "title": "Menugaskan ke Fasilitas",
         "text": "Tenang saja, akan kulakukan dengan benar."
       },
       {
+        "voId": "chr_0022_bounda_sim_hello_lower_01",
         "title": "Menyapa 1",
         "text": "Hari ini sibuk, ya, Pahlawan Hebat?"
       },
       {
+        "voId": "chr_0022_bounda_sim_hello_max_01",
         "title": "Menyapa 2",
         "text": "Kapan terakhir kali kau istirahat?"
       },
       {
+        "voId": "chr_0022_bounda_sim_talk_lv01_01",
         "title": "Obrolan Santai di Dijiang 1",
         "text": "Hmm ... tumben. Tak ada tugas untukku hari ini?"
       },
       {
+        "voId": "chr_0022_bounda_sim_talk_lv02_01",
         "title": "Obrolan Santai di Dijiang 2",
         "text": "Akekuri baru saja masuk ke ruang latihan sambil menyeringai ... dan bawa pedang? Sebaiknya aku jauh-jauh dari dia dulu untuk sementara ...."
       },
       {
+        "voId": "chr_0022_bounda_sim_talk_lv02_02",
         "title": "Obrolan Santai di Dijiang 3",
         "text": "Pertama kalinya pegang senapan, aku bahkan tak tahu cara buka tempat pelurunya. Tapi, saat segerombolan orang menyerbuku, aku tak punya pilihan lain .... Jujur saja, latihan ini tak ada apa-apanya dibandingkan kericuhan di perbatasan."
       },
       {
+        "voId": "chr_0022_bounda_sim_talk_max_01",
         "title": "Obrolan Santai di Dijiang 4",
         "text": "Kalau saja kita masuk tim yang sama bukan gara-gara kebetulan semata, masalah kita bakalan dua kali lipat lebih besar. Tapi, jangan khawatir, biar kutangani."
       },
       {
+        "voId": "chr_0022_bounda_sim_talk_max_02",
         "title": "Obrolan Santai di Dijiang 5",
         "text": "Saat masih kecil, kami biasa tidur seharian di atas burdenbeast, berjemur agar tak merasa lapar .... Bukannya mengeluhkan fasilitasnya, cuma menurutku sayang sekali kalau tak sekalian berjemur di ketinggian seperti ini."
       },
       {
+        "voId": "chr_0022_bounda_sim_talk_max_03",
         "title": "Obrolan Santai di Dijiang 6",
         "text": "Kau ini seperti Pengawas Perlica, ya—tak ada yang bisa membencimu. Para petinggi di perbatasan memang suka berpegang teguh pada status dan gengsi mereka. Tapi, dengan atau tanpa itu pun, pemimpin sejati pasti akan dipatuhi."
       },
       {
+        "voId": "chr_0022_bounda_sim_gift_give_01",
         "title": "Menawarkan Hadiah",
         "text": "Nih, ada gawai kecil untukmu. Santai saja, tak ada aneh-anehnya, kok."
       },
       {
+        "voId": "chr_0022_bounda_sim_gift_recv_01",
         "title": "Menerima Hadiah",
         "text": "Hmm, “kolegaku” pernah dapat hadiah dan akhirnya malah kena getahnya .... Lho, kenapa kau geleng-geleng kepala begitu?"
       },
       {
+        "voId": "chr_0022_bounda_mono_self_line01",
         "title": "Dialog Kepercayaan 1",
         "text": "Keterampilan negosiasi? Aduh, jangan sanjung para berandal jalanan itu. Mereka memang suka menggonggong, tapi begitu bos mereka menyiapkan makanan, mereka bakal berlari pulang. Mereka cuma alat—tak punya nyali, tak punya rencana. Tentu saja mereka suka berbuat onar, tapi sumber kejahatan sesungguhnya? Para bos yang memegang semua kekuasaan dan sumber daya, memeras kita semua hingga kering."
       },
       {
+        "voId": "chr_0022_bounda_mono_self_line02",
         "title": "Dialog Kepercayaan 2",
         "text": "Dulu, aku sempat kena masalah sebelum bergabung ke sini. Akekuri menolongku. Skuadnya sibuk menyelamatkan kota dan mengusir Landbreaker. Sedangkan penduduk setempat? Seperti burung pemakan bangkai, mereka malah sibuk mengincar suplai Endfield .... Nah, katakan, apa yang akan kaulakukan dalam situasi seperti itu?"
       },
       {
+        "voId": "chr_0022_bounda_mono_self_line03",
         "title": "Dialog Kepercayaan 3",
         "text": "Aku punya enam paman, delapan bibi, dan dua puluh dua saudara ... ya, kami memang sangat mirip dengan Cautus. Tak semuanya dari kami punya hubungan darah, hanya sekumpulan orang yang kabur denganku dan ibuku. Beberapa datang belakangan, beberapa lenyap entah kapan. Tapi, kami tetap bersama meski hanya untuk sementara. Bagiku, itu sudah cukup untuk disebut keluarga."
       },
       {
+        "voId": "chr_0022_bounda_mono_self_line04",
         "title": "Dialog Kepercayaan 4",
         "text": "Beberapa orang lupa bahwa kita punya dua kaki dan dua tangan, bukan cuma dua kaki untuk menyeret badan. Kalau terus membungkuk cukup lama, kita tak bakal kelihatan seperti manusia lagi. Banyak orang seperti itu di perbatasan. Tapi, kalau kita punya keberanian untuk menatap ke atas? Mungkin kita punya kesempatan untuk sesuatu yang lebih baik."
       },
       {
+        "voId": "chr_0022_bounda_mono_self_line05",
         "title": "Dialog Kepercayaan 5",
         "text": "Ambillah surat ini. Bakar saja di alam liar kalau aku tak kembali. Kau boleh baca suratnya kalau mau, cuma sekumpulan hal sepele. Orang yang mestinya menerima surat ini sudah tiada. Sepertinya akulah yang harus mencari jawaban yang mereka cari itu. Aku yakin pahlawan besar Talos-II pasti akan membantuku, ‘kan?"
       },
       {
+        "voId": "chr_0022_bounda_mono_chat_line01",
         "title": "Obrolan 1",
         "text": "Ini salah satu bom andalanku. Cukup atur permukaan perekatnya, lalu bom ini akan meledak tepat di tempat yang diinginkan. Oh, tak usah khawatir soal kekuatannya. Ini lebih efektif untuk melumpuhkan target daripada cuma meledakkan sesuatu."
       },
       {
+        "voId": "chr_0022_bounda_mono_chat_line02",
         "title": "Obrolan 2",
         "text": "Setelah memeriksa berkasku, Pengawas Perlica memberiku nama sandi “Fluorite”. Meski beracun, material itu memang sempurna untuk membuat segala jenis produk industri. Aku paham maksudnya setelah membaca sekilas di buku. Hah .... Yang benar saja, deh? Iseng juga dia."
       },
       {
+        "voId": "chr_0022_bounda_mono_chat_line03",
         "title": "Obrolan 3",
         "text": "Saat masih kecil, aku dan ibuku selalu kabur dari satu tempat ke tempat lain. Akhirnya, aku harus bertahan hidup sendiri di perbatasan. Di beberapa tempat, kami memang dapat jatah gandum, sementara di tempat lain, ada berbagai macam pungutan liar. Semua tempat terasa seperti rumah, tapi tak ada yang benar-benar seperti rumah. Permukiman di perbatasan tak pernah bertahan lama, dan makna “rumah” tak pernah benar-benar terasa."
       },
       {
+        "voId": "chr_0022_bounda_mono_chat_line04",
         "title": "Obrolan 4",
         "text": "Keindahan selalu jadi ciri khas alam liar. Kawanan hewan yang tergusur oleh Hawar tak pernah benar-benar pergi—hanya berpindah tempat setiap tahunnya. Rumput merambat kembali begitu Hawar menyingkir. Alam punya ritme sendiri, tapi ketahanannya pun ada batasnya .... Kadang aku bertanya-tanya, apa kita sungguh pantas hidup dalam keseimbangan itu."
       },
       {
+        "voId": "chr_0022_bounda_mono_chat_line05",
         "title": "Obrolan 5",
         "text": "Di wilayah kumuh yang pernah kutinggali, yang paling sering menindas orang-orang justru pihak penguasa. Mereka tahu betapa rapuhnya segala hal—dengan sepercik kekacauan saja, seluruh tempat itu bisa runtuh. Jadi, mereka pun menciptakan keseimbangan semu dengan membuat warga hidup bagaikan sandera. Kalau tak berani berusaha melawan, situasi tak akan berubah."
       },
       {
+        "voId": "chr_0022_bounda_mono_about_line01",
         "title": "Topik: Akekuri",
         "text": "Coba tebak, menurutmu siapa yang memasukkan telinga-telinga itu ke kantong barang bukti? Ya, bahkan Kapten kita yang baik hati pun tahu bahwa tak ada pilihan yang lebih baik di Talos-II. Dan raut wajahnya, berkaca-kaca tapi ditahan? Uh, gemasnya."
       },
       {
+        "voId": "chr_0022_bounda_mono_about_line02",
         "title": "Topik: Catcher",
         "text": "Dia mungkin kelihatan senang, tapi jangan terlalu berharap. Orang yang sangat siap biasanya malah yang paling takut gagal. Tak ada orang yang sempurna .... Apa aku harus berhenti minta bantuannya? Pfft, kenapa pula? Tenang saja—dia akan tetap berusaha meski ketakutan. Dia selalu begitu."
       },
       {
+        "voId": "chr_0022_bounda_mono_about_line03",
         "title": "Topik: Estella",
         "text": "Jangan sentuh daftar lagu Estella atau membiarkannya menantang bahaya. Kaukira dia bisa tangani semuanya? Yah, siap-siap bersih-bersih saja, Sayang."
       },
       {
+        "voId": "chr_0022_bounda_mono_about_line04",
         "title": "Topik: Antal",
         "text": "Kadal besar itu sangat dingin seperti es, bahkan di tengah panasnya pertarungan—bahkan mungkin tak sadar bahwa dia dalam bahaya. Itu membuat Kapten naik pitam ... tapi, memang begitulah dia. Aku dan dia? Hmm .... Kami baik-baik saja ... asalkan dia tak memandangi ekorku."
       },
       {
+        "voId": "chr_0022_bounda_explore_point_common_01",
         "title": "Sumber Daya/Barang Koleksi Terdeteksi 1",
         "text": "Dapat temuan keren. Boleh kuambil semua?"
       },
       {
+        "voId": "chr_0022_bounda_explore_point_valub_01",
         "title": "Sumber Daya/Barang Koleksi Terdeteksi 2",
         "text": "Lihat di sebelah sana itu, tidak? Oh, sudahlah. Anggap saja aku tak bilang apa-apa."
       },
       {
+        "voId": "chr_0022_bounda_explore_find_locked_01",
         "title": "Area yang Belum Dijelajahi Terdeteksi",
         "text": "Ketemu tempat bagus. Hmm ... sepertinya seru."
       },
       {
+        "voId": "chr_0022_bounda_explore_find_danger_01",
         "title": "Musuh Kuat Ditemukan",
         "text": "Teman-teman, ada teman baru untuk diajak main."
       },
       {
+        "voId": "chr_0022_bounda_interact_mine_valub_01",
         "title": "Penambangan 1",
         "text": "Ah, karya buatan sendiri yang seru. Seperti saat masa-masa sulit itu."
       },
       {
+        "voId": "chr_0022_bounda_interact_mine_valub_echo2_01",
         "title": "Penambangan 2",
         "text": "*Menguap* Iya, iya, aku datang. Kalian ini sangat produktif."
       },
       {
+        "voId": "chr_0022_bounda_interact_treasure_valub_01",
         "title": "Membuka Kerat",
         "text": "Wow, temuan bagus. Tak ada label namanya? Hmm ...."
       },
       {
+        "voId": "chr_0022_bounda_interact_etherium_01",
         "title": "Mendapatkan Aurylene",
         "text": "Dulu aku punya yang seperti ini .... Yang terjadi setelahnya bukan kejadian bagus."
       },
       {
+        "voId": "chr_0022_bounda_interact_blight_break_01",
         "title": "Menyingkirkan Hawar",
         "text": "Kalau saja dulu Hawar itu bisa kusingkirkan ...."
       },
       {
+        "voId": "chr_0022_bounda_interact_rest_01",
         "title": "Istirahat",
         "text": "Akhirnya, saatnya mengisi ulang stok bom."
       },
       {
+        "voId": "chr_0022_bounda_combat_suppuse_using_01",
         "title": "Penggunaan Taktis 1",
         "text": "Lihat? Sudah kuduga bakal berguna."
       },
       {
+        "voId": "chr_0022_bounda_combat_suppuse_getheal_01",
         "title": "Penggunaan Taktis 2",
         "text": "Tadi itu cuma apes. Sekali lagi."
       },
       {
+        "voId": "chr_0022_bounda_combat_remind_danger_01",
         "title": "Peringatan Bahaya",
         "text": "Hati-hati, jangan sampai kena sial."
       },
       {
+        "voId": "chr_0022_bounda_combat_hurt_lowhp_01",
         "title": "Cedera",
         "text": "... Aku terpeleset."
       },
       {
+        "voId": "chr_0022_bounda_combat_dead_01",
         "title": "0 HP",
         "text": "Harusnya ... aku tak lengah."
       },
       {
+        "voId": "chr_0022_bounda_combat_remind_praise_01",
         "title": "Penyemangat Tim 1",
         "text": "Wah, hebat juga."
       },
       {
+        "voId": "chr_0022_bounda_combat_remind_praise_02",
         "title": "Penyemangat Tim 2",
         "text": "Lumayan. Sayang sekali tak ada yang merekamnya."
       },
       {
+        "voId": "chr_0022_bounda_combat_remind_praise_echo2_01",
         "title": "Respons Penyemangat 1",
         "text": "Kata-katamu manis sekali, tapi simpan saja napasmu."
       },
       {
+        "voId": "chr_0022_bounda_combat_remind_praise_echo2_02",
         "title": "Respons Penyemangat 2",
         "text": "Kita kan memang tim elite."
       },
       {
+        "voId": "chr_0022_bounda_combat_intobattle_01",
         "title": "Mulai Pertarungan 1",
         "text": "Kembali beraksi seperti dulu, ya?"
       },
       {
+        "voId": "chr_0022_bounda_combat_intobattle_echo2_01",
         "title": "Mulai Pertarungan 2",
         "text": "Kita ini sangat berdedikasi, ya! Semoga dapat bonus."
       },
       {
+        "voId": "chr_0022_bounda_combat_outbattle_nor_01",
         "title": "Menang Pertarungan 1",
         "text": "Bagus, satu masalah teratasi."
       },
       {
+        "voId": "chr_0022_bounda_combat_outbattle_nor_02",
         "title": "Menang Pertarungan 2",
         "text": "Sayang sekali, padahal mereka hampir berhasil."
       },
       {
+        "voId": "chr_0022_bounda_combat_outbattle_nor_echo2_01",
         "title": "Menang Pertarungan 3",
         "text": "Bagus, bagus. Tanpa bantuanmu, tak mungkin kita bisa berhasil."
       },
       {
+        "voId": "chr_0022_bounda_combat_outbattle_hard_01",
         "title": "Menang Pertarungan 4",
         "text": "Huh. Lumayan juga, tapi belum cukup hebat."
       },
       {
+        "voId": "chr_0022_bounda_combat_battle_defeat_01",
         "title": "Kalah Bertarung",
         "text": "Tak ada gunanya meratap, bertindaklah. Ayo, pertarungan belum berakhir."
       },
       {
+        "voId": "chr_0022_bounda_mono_attack_last_01",
         "title": "Final Strike 1",
         "text": "*Bersiul* Tangkap!"
       },
       {
+        "voId": "chr_0022_bounda_mono_attack_last_02",
         "title": "Final Strike 2",
         "text": "Perhatian."
       },
       {
+        "voId": "chr_0022_bounda_mono_skill_nor_01",
         "title": "Skill Tarung 1",
         "text": "Makan, nih."
       },
       {
+        "voId": "chr_0022_bounda_mono_skill_nor_02",
         "title": "Skill Tarung 2",
         "text": "Semoga suka, ya!"
       },
       {
+        "voId": "chr_0022_bounda_mono_skill_nor_03",
         "title": "Skill Tarung 3",
         "text": "Tik tok!"
       },
       {
+        "voId": "chr_0022_bounda_combat_skill_comb_ready_01",
         "title": "Skill Kombo Siap 1",
         "text": "Huh. Saatnya beraksi."
       },
       {
+        "voId": "chr_0022_bounda_combat_skill_comb_ready_02",
         "title": "Skill Kombo Siap 2",
         "text": "Lubangnya lebih banyak daripada keju."
       },
       {
+        "voId": "chr_0022_bounda_mono_skill_comb_release_01",
         "title": "Penggunaan Kombo 1",
         "text": "Nikmatilah."
       },
       {
+        "voId": "chr_0022_bounda_mono_skill_comb_release_02",
         "title": "Penggunaan Kombo 2",
         "text": "Kau pasti suka."
       },
       {
+        "voId": "chr_0022_bounda_mono_attack_extra_01",
         "title": "Penuntas 1",
         "text": "Kejutan."
       },
       {
+        "voId": "chr_0022_bounda_mono_attack_extra_02",
         "title": "Penuntas 2",
         "text": "Saatnya tidur, Sayang."
       },
       {
+        "voId": "chr_0022_bounda_mono_skill_ultimate_01",
         "title": "Ultimate 1",
         "text": "Sepertinya kau sudah hidup cukup lama, ya?"
       },
       {
+        "voId": "chr_0022_bounda_mono_skill_ultimate_02",
         "title": "Ultimate 2",
         "text": "Suaranya pasti keras."
       },
       {
+        "voId": "chr_0022_bounda_mono_skill_ultimate_03",
         "title": "Ultimate 3",
         "text": "Kau tak bisa ke mana-mana lagi, Kawan."
       }

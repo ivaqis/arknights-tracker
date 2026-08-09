@@ -125,322 +125,402 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0022_bounda_chrbark_squad_01",
         "title": "Préparation de l'opération 1",
         "text": "Oh, tout le monde est prêt à s'y mettre ?"
       },
       {
+        "voId": "chr_0022_bounda_chrbark_squad_02",
         "title": "Préparation de l'opération 2",
         "text": "Attends, et si jamais quelqu'un n'était pas prêt ?"
       },
       {
+        "voId": "chr_0022_bounda_chrbark_join_01",
         "title": "Intégration à l'équipe 1",
         "text": "Paix et amour sur vous tous."
       },
       {
+        "voId": "chr_0022_bounda_chrbark_join_02",
         "title": "Intégration à l'équipe 2",
         "text": "Eh beh, j'ai la cote, on dirait."
       },
       {
+        "voId": "chr_0022_bounda_chrbark_weap_01",
         "title": "Changement d'arme",
         "text": "Pas mal... Je peux la bidouiller un peu ?"
       },
       {
+        "voId": "chr_0022_bounda_chrbark_gear_01",
         "title": "Changement d'équipement",
         "text": "Plus c'est sophistiqué, plus c'est compliqué, pas vrai ?"
       },
       {
+        "voId": "chr_0022_bounda_chrup_skill_01",
         "title": "Activation de la matrice de capacités",
         "text": "Personne ne veut s'entraîner avec moi ? Quel dommage."
       },
       {
+        "voId": "chr_0022_bounda_chrup_level_01",
         "title": "Visionnage d'archives de combat",
         "text": "Tous ces records de combat... Endfield mérite bien son nom d'« Industrie »."
       },
       {
+        "voId": "chr_0022_bounda_chrup_promt01_01",
         "title": "Promotion d'opérateur 1",
         "text": "Maintenant, les choses sérieuses vont commencer."
       },
       {
+        "voId": "chr_0022_bounda_chrup_promt02_01",
         "title": "Promotion d'opérateur 2",
         "text": "Je suis très honorée... mais j'imagine que ça signifie encore plus d'heures passées en mission, hein ?"
       },
       {
+        "voId": "chr_0022_bounda_chrup_promt03_01",
         "title": "Promotion d'opérateur 3",
         "text": "Je veux bien une petite médaille la prochaine fois. J'en ai jamais eu."
       },
       {
+        "voId": "chr_0022_bounda_chrup_promt04_01",
         "title": "Promotion d'opérateur 4",
         "text": "Si la Bordure de la Ceinture fait partie de ce « monde meilleur » qu'on essaie de bâtir, on a encore du pain sur la planche, pas vrai ?"
       },
       {
+        "voId": "chr_0022_bounda_introduce_01",
         "title": "Opératrice au rapport",
         "text": "Fluorite, escarmoucheuse de l'OP Z7. Tu as quelque chose à dire ? Non ? Alors restons-en là pour le moment."
       },
       {
+        "voId": "chr_0022_bounda_mono_switch_01",
         "title": "En attente 1",
         "text": "Faut toujours que ça tombe sur moi !"
       },
       {
+        "voId": "chr_0022_bounda_mono_switch_02",
         "title": "En attente 2",
         "text": "Les distraire ? Les neutraliser ? Ou simplement... les détruire ?"
       },
       {
+        "voId": "chr_0022_bounda_sim_assign_work_01",
         "title": "Affectation à une installation",
         "text": "Détends-toi, je ferai ce qu'on me demande."
       },
       {
+        "voId": "chr_0022_bounda_sim_hello_lower_01",
         "title": "Salutation 1",
         "text": "Rude journée pour les légendes, hein ?"
       },
       {
+        "voId": "chr_0022_bounda_sim_hello_max_01",
         "title": "Salutation 2",
         "text": "De quand date ta dernière vraie pause ?"
       },
       {
+        "voId": "chr_0022_bounda_sim_talk_lv01_01",
         "title": "Bavardage sur le Dijiang 1",
         "text": "Alors ça, c'est nouveau. Pas de tâches pour moi aujourd'hui ?"
       },
       {
+        "voId": "chr_0022_bounda_sim_talk_lv02_01",
         "title": "Bavardage sur le Dijiang 2",
         "text": "Akekuri est entrée dans la salle d'entraînement en souriant... et avec une épée ? Je vais essayer de l'éviter encore un peu..."
       },
       {
+        "voId": "chr_0022_bounda_sim_talk_lv02_02",
         "title": "Bavardage sur le Dijiang 3",
         "text": "La première fois que j'ai ramassé un pistolet, je ne savais même pas ouvrir la culasse. Mais je me faisais attaquer, alors j'ai pas eu trop le choix... Franchement, cet entraînement est une promenade de santé comparée au chaos qu'on vit dans les Confins."
       },
       {
+        "voId": "chr_0022_bounda_sim_talk_max_01",
         "title": "Bavardage sur le Dijiang 4",
         "text": "Si on avait pas eu la chance de se retrouver dans la même équipe, ce serait encore plus compliqué. Mais ne t'inquiète pas, je les surveille."
       },
       {
+        "voId": "chr_0022_bounda_sim_talk_max_02",
         "title": "Bavardage sur le Dijiang 5",
         "text": "Quand j'étais petite, on passait la journée à somnoler sur les bêtes de somme, à prendre le soleil à défaut de prendre un repas... Je ne me plains pas, mais ce serait dommage de ne pas profiter du soleil à cette altitude."
       },
       {
+        "voId": "chr_0022_bounda_sim_talk_max_03",
         "title": "Bavardage sur le Dijiang 6",
         "text": "Tu es comme la superviseuse Perlica, on ne peut pas vraiment te détester. Les cadors des Confins adorent mettre en avant leur statut et leur fierté, mais un véritable leader n'a pas besoin de ça pour inspirer la confiance autour de lui."
       },
       {
+        "voId": "chr_0022_bounda_sim_gift_give_01",
         "title": "Cadeaux offerts",
         "text": "Tiens, un petit gadget pour toi. Rassure-toi, il ne va rien en sortir de bizarre."
       },
       {
+        "voId": "chr_0022_bounda_sim_gift_recv_01",
         "title": "Cadeaux acceptés",
         "text": "Hmm, un jour une « collègue » a accepté un cadeau et a fini par s'en mordre les doigts... Pourquoi est-ce que tu secoues la tête comme ça ?"
       },
       {
+        "voId": "chr_0022_bounda_mono_self_line01",
         "title": "Dialogue à cœur ouvert 1",
         "text": "Des talents de négociatrice ? Je t'en prie, ne flatte pas ces petits voyous. C'est vrai qu'ils aboient fort, mais ils se ramènent en trottinant dès que leur chef secoue la gamelle. Ce sont de simples outils, ils n'ont pas d'idées, pas de moelle. Ils sèment le chaos, c'est sûr, mais les vraies pourritures, ce sont ceux qui passent leur journée assis sur les ressources et l'énergie et qui nous usent jusqu'au trognon."
       },
       {
+        "voId": "chr_0022_bounda_mono_self_line02",
         "title": "Dialogue à cœur ouvert 2",
         "text": "J'ai eu quelques ennuis avant d'arriver ici. C'est Akekuri qui m'a tirée d'affaire. Son escouade était en train de sauver la ville, ils chassaient les Brise-Terres. Les habitants ? Ils étaient bien trop occupés à lorgner comme des vautours sur les provisions d'Endfield... Qu'est-ce que tu aurais fait, toi ?"
       },
       {
+        "voId": "chr_0022_bounda_mono_self_line03",
         "title": "Dialogue à cœur ouvert 3",
         "text": "J'ai six oncles, huit tantes et vingt-deux frères et sœurs... On est un peu comme les Cautus. On n'est pas tous liés par le sang, ce sont juste des gens qui nous ont suivies, ma mère et moi. Certains sont arrivés plus tard, d'autres sont partis au bout d'un moment. Mais on a fait un bout de chemin ensemble. Pour moi, c'est suffisant pour les appeler ma famille."
       },
       {
+        "voId": "chr_0022_bounda_mono_self_line04",
         "title": "Dialogue à cœur ouvert 4",
         "text": "Certaines personnes oublient qu'on a quatre membres, et pas seulement deux. Si tu passes ton temps courbé en deux, tu cesses de ressembler à une personne. On croise des tas de gens comme ça dans les Confins. Mais si tu as le courage de relever la tête ? Ça peut être le premier pas vers un avenir meilleur."
       },
       {
+        "voId": "chr_0022_bounda_mono_self_line05",
         "title": "Dialogue à cœur ouvert 5",
         "text": "Tiens, prends cette lettre. Brûle-la dans les terres sauvages si jamais je ne reviens pas. Tu peux la lire, ce sont juste quelques mots. La personne à qui je la destinais est morte. À moi de trouver les réponses qu'elle cherchait. Je suis sûre que la légende de Talos-II pourra m'aider, pas vrai ?"
       },
       {
+        "voId": "chr_0022_bounda_mono_chat_line01",
         "title": "Discussion 1",
         "text": "C'est une de mes bombes préférées. Tu bidouilles la surface adhésive et ça explose pile quand tu veux. Oh, ne t'en fais pas pour sa puissance. Le but n'est pas vraiment de tout faire sauter, mais de ralentir la cible."
       },
       {
+        "voId": "chr_0022_bounda_mono_chat_line02",
         "title": "Discussion 2",
         "text": "Après avoir parcouru mon dossier, la superviseuse Perlica m'a donné le nom de code « Fluorite ». C'est un agent toxique naturel, idéal pour créer toutes sortes de produits industriels. J'ai compris ce qu'elle voulait dire en feuilletant le livre, mais quand même, elle a eu un sacré culot."
       },
       {
+        "voId": "chr_0022_bounda_mono_chat_line03",
         "title": "Discussion 3",
         "text": "Quand j'étais petite, ma mère et moi, on passait sans cesse d'un endroit à l'autre. Finalement, j'ai dû survivre seule dans les Confins. Dans certains points de chute, on nous offrait du grain, dans d'autres, on nous forçait à payer je ne sais quel tribut. On se sentait chez nous partout, et nulle part à la fois. Les colonies ne duraient jamais longtemps dans les Confins, alors l'idée d'un « chez-soi » n'avait pas vraiment de sens."
       },
       {
+        "voId": "chr_0022_bounda_mono_chat_line04",
         "title": "Discussion 4",
         "text": "Les terres sauvages sont tellement belles. Les animaux chassés par la Gangrène ne sont jamais loin, ils se contentent de modifier leurs itinéraires chaque année. L'herbe repousse dès que la Gangrène disparait. La nature suit son propre rythme, et il y a une limite à ce qu'elle peut supporter... Parfois, je me demande si on fait vraiment partie de cet équilibre."
       },
       {
+        "voId": "chr_0022_bounda_mono_chat_line05",
         "title": "Discussion 5",
         "text": "Dans les coins reculés où j'ai vécu, il y a toujours des gros bras pour mener la vie dure aux habitants. Ils savent combien tout est fragile. Une seule étincelle de chaos et tout leur monde pourrait s'écrouler. Ils instaurent donc un équilibre malsain en prenant en otage ces pauvres gens. Et à moins d'être assez près pour les saisir par la gorge, il n'y a rien que ces gens puissent faire."
       },
       {
+        "voId": "chr_0022_bounda_mono_about_line01",
         "title": "Thème : Akekuri",
         "text": "À ton avis, qui a mis ces oreilles dans le sac de preuves ? Oui, même notre douce capitaine savait qu'il n'y avait pas meilleur choix sur Talos-II. La tête qu'elle faisait en le tenant, retenant ses larmes... Trop mignon."
       },
       {
+        "voId": "chr_0022_bounda_mono_about_line02",
         "title": "Thème : Catcher",
         "text": "Tu as peut-être l'impression qu'il aime ça, mais vas-y doucement avec lui. Les gens les mieux préparés sont souvent ceux qui ont le plus peur de se rater. Personne n'est infaillible... Quoi ? Il faudrait que j'arrête de lui demander des services ? Et pourquoi ça ? Ne t'inquiète pas, il s'en sortira, malgré ses peurs. Il s'en sort toujours."
       },
       {
+        "voId": "chr_0022_bounda_mono_about_line03",
         "title": "Thème : Estella",
         "text": "Ne touche pas à la playlist d'Estella ou tu vas avoir des ennuis. Tu crois qu'elle gère en permanence ? Détrompe-toi. Et prépare-toi à nettoyer les dégâts, trésor."
       },
       {
+        "voId": "chr_0022_bounda_mono_about_line04",
         "title": "Thème : Antal",
         "text": "Ce gros lézard est froid comme la glace, même en plein combat. Je parie qu'il n'a pas conscience du danger. Ça rend dingue la capitaine, mais... il est comme ça. Lui et moi ? Hmm... Tout va bien... du moment qu'il ne fixe pas ma queue."
       },
       {
+        "voId": "chr_0022_bounda_explore_point_common_01",
         "title": "Détection de ressource/objet à collecter 1",
         "text": "J'ai trouvé un truc sympa là, je peux tout prendre ?"
       },
       {
+        "voId": "chr_0022_bounda_explore_point_valub_01",
         "title": "Détection de ressource/objet à collecter 2",
         "text": "Tu as vu ce truc là-bas ? En fait, non, oublie ce que je viens de dire."
       },
       {
+        "voId": "chr_0022_bounda_explore_find_locked_01",
         "title": "Zone inexplorée détectée",
         "text": "J'ai trouvé un coin sympa. Hmm... ça pourrait être marrant."
       },
       {
+        "voId": "chr_0022_bounda_explore_find_danger_01",
         "title": "Découverte d'un ennemi puissant",
         "text": "Hé, tout le monde, j'ai trouvé un nouveau copain de jeu."
       },
       {
+        "voId": "chr_0022_bounda_interact_mine_valub_01",
         "title": "Extraction 1",
         "text": "Ah, les bonnes vieilles méthodes artisanales. Comme à la grande époque."
       },
       {
+        "voId": "chr_0022_bounda_interact_mine_valub_echo2_01",
         "title": "Extraction 2",
         "text": "*Bâille* J'arrive. Tout le monde est si productif, ici."
       },
       {
+        "voId": "chr_0022_bounda_interact_treasure_valub_01",
         "title": "Ouverture de caisse",
         "text": "Ouah, belle trouvaille. Personne n'a mis son nom dessus ? Hmm..."
       },
       {
+        "voId": "chr_0022_bounda_interact_etherium_01",
         "title": "Obtention d'aurylène",
         "text": "Moi aussi, j'ai eu un truc dans le genre autrefois... Je préfère oublier ce qui s'est passé après."
       },
       {
+        "voId": "chr_0022_bounda_interact_blight_break_01",
         "title": "Élimination de la Gangrène",
         "text": "Si seulement j'avais pu vaincre la Gangrène à l'époque..."
       },
       {
+        "voId": "chr_0022_bounda_interact_rest_01",
         "title": "Repos",
         "text": "Allez, il est temps de se réapprovisionner en bombes."
       },
       {
+        "voId": "chr_0022_bounda_combat_suppuse_using_01",
         "title": "Utilisation de tactique 1",
         "text": "Tu vois ? Je savais que ça me serait utile."
       },
       {
+        "voId": "chr_0022_bounda_combat_suppuse_getheal_01",
         "title": "Utilisation de tactique 2",
         "text": "J'ai manqué de chance. On y retourne."
       },
       {
+        "voId": "chr_0022_bounda_combat_remind_danger_01",
         "title": "Avertissement de danger",
         "text": "Fais gaffe à toi."
       },
       {
+        "voId": "chr_0022_bounda_combat_hurt_lowhp_01",
         "title": "Blessure",
         "text": "... J'ai dérapé."
       },
       {
+        "voId": "chr_0022_bounda_combat_dead_01",
         "title": "0 PV",
         "text": "J'aurais dû... m'en sortir."
       },
       {
+        "voId": "chr_0022_bounda_combat_remind_praise_01",
         "title": "Encouragement de l'équipe 1",
         "text": "Eh beh, c'était quelque chose."
       },
       {
+        "voId": "chr_0022_bounda_combat_remind_praise_02",
         "title": "Encouragement de l'équipe 2",
         "text": "Pas mal. Dommage que personne n'ait filmé ça."
       },
       {
+        "voId": "chr_0022_bounda_combat_remind_praise_echo2_01",
         "title": "Réaction face aux encouragements 1",
         "text": "C'est bien gentil, mais tu ferais mieux d'économiser ta salive."
       },
       {
+        "voId": "chr_0022_bounda_combat_remind_praise_echo2_02",
         "title": "Réaction face aux encouragements 2",
         "text": "Eh bien, on forme une troupe d'élite, après tout."
       },
       {
+        "voId": "chr_0022_bounda_combat_intobattle_01",
         "title": "Début du combat 1",
         "text": "C'est l'heure de s'y remettre, hein ?"
       },
       {
+        "voId": "chr_0022_bounda_combat_intobattle_echo2_01",
         "title": "Début du combat 2",
         "text": "On est à fond dedans ! Je croise les doigts pour un bonus."
       },
       {
+        "voId": "chr_0022_bounda_combat_outbattle_nor_01",
         "title": "Victoire au combat 1",
         "text": "Bien, ça fait un problème de moins."
       },
       {
+        "voId": "chr_0022_bounda_combat_outbattle_nor_02",
         "title": "Victoire au combat 2",
         "text": "Dommage, ils étaient pas loin d'avoir leur chance."
       },
       {
+        "voId": "chr_0022_bounda_combat_outbattle_nor_echo2_01",
         "title": "Victoire au combat 3",
         "text": "Ouais, ouais. Sans toi, on n'aurait rien pu faire."
       },
       {
+        "voId": "chr_0022_bounda_combat_outbattle_hard_01",
         "title": "Victoire au combat 4",
         "text": "Hmpf. Pas mal, mais pas suffisant."
       },
       {
+        "voId": "chr_0022_bounda_combat_battle_defeat_01",
         "title": "Défaite au combat",
         "text": "Ça ne sert à rien de pleurer. Ce qu'il faut, c'est agir. Allez, c'est pas encore fini."
       },
       {
+        "voId": "chr_0022_bounda_mono_attack_last_01",
         "title": "Coup final 1",
         "text": "*Siffle* Attrape !"
       },
       {
+        "voId": "chr_0022_bounda_mono_attack_last_02",
         "title": "Coup final 2",
         "text": "Votre attention, s'il vous plaît !"
       },
       {
+        "voId": "chr_0022_bounda_mono_skill_nor_01",
         "title": "Compétence de combat 1",
         "text": "Voilà pour toi."
       },
       {
+        "voId": "chr_0022_bounda_mono_skill_nor_02",
         "title": "Compétence de combat 2",
         "text": "J'espère que ça t'a plu !"
       },
       {
+        "voId": "chr_0022_bounda_mono_skill_nor_03",
         "title": "Compétence de combat 3",
         "text": "Tic tac !"
       },
       {
+        "voId": "chr_0022_bounda_combat_skill_comb_ready_01",
         "title": "Compétence de combo prête 1",
         "text": "Pff, que le spectacle commence."
       },
       {
+        "voId": "chr_0022_bounda_combat_skill_comb_ready_02",
         "title": "Compétence de combo prête 2",
         "text": "Il y a plus de trous que dans un gruyère."
       },
       {
+        "voId": "chr_0022_bounda_mono_skill_comb_release_01",
         "title": "Utilisation de combo 1",
         "text": "Mange ça."
       },
       {
+        "voId": "chr_0022_bounda_mono_skill_comb_release_02",
         "title": "Utilisation de combo 2",
         "text": "Ça t'a plu, hein ?"
       },
       {
+        "voId": "chr_0022_bounda_mono_attack_extra_01",
         "title": "Coup fatal 1",
         "text": "Surprise."
       },
       {
+        "voId": "chr_0022_bounda_mono_attack_extra_02",
         "title": "Coup fatal 2",
         "text": "C'est l'heure d'aller au lit."
       },
       {
+        "voId": "chr_0022_bounda_mono_skill_ultimate_01",
         "title": "Ultime 1",
         "text": "T'as déjà bien vécu, non ?"
       },
       {
+        "voId": "chr_0022_bounda_mono_skill_ultimate_02",
         "title": "Ultime 2",
         "text": "Ça va faire du bruit."
       },
       {
+        "voId": "chr_0022_bounda_mono_skill_ultimate_03",
         "title": "Ultime 3",
         "text": "Fin de parcours, l'ami."
       }

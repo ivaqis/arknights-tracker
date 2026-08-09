@@ -96,222 +96,277 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0003_endminf_chrbark_squad_01",
         "title": "Persiapan Operasi 1",
         "text": "Kudengar Originium bernyanyi."
       },
       {
+        "voId": "chr_0003_endminf_chrbark_squad_02",
         "title": "Persiapan Operasi 2",
         "text": "Endfield akan terus maju."
       },
       {
+        "voId": "chr_0003_endminf_chrbark_join_01",
         "title": "Menambahkan ke Tim 1",
         "text": "Aku sudah di posisi, Dijiang."
       },
       {
+        "voId": "chr_0003_endminf_chrbark_join_02",
         "title": "Menambahkan ke Tim 2",
         "text": "Sudah hampir saatnya."
       },
       {
+        "voId": "chr_0003_endminf_chrbark_weap_01",
         "title": "Berganti Senjata",
         "text": "Boleh juga."
       },
       {
+        "voId": "chr_0003_endminf_chrbark_gear_01",
         "title": "Berganti Gear",
         "text": "Produk bagus hasil manufaktur industri."
       },
       {
+        "voId": "chr_0003_endminf_chrup_skill_01",
         "title": "Aktivasi Matriks Kemampuan",
         "text": "Aku tahu perasaan ini ...."
       },
       {
+        "voId": "chr_0003_endminf_chrup_level_01",
         "title": "Menonton Rekaman Pertarungan",
         "text": "Tak akan pernah kulupakan saat aku melihat mereka."
       },
       {
+        "voId": "chr_0003_endminf_chrup_promt01_01",
         "title": "Promosi Operator 1",
         "text": "Maju selangkah lagi ...."
       },
       {
+        "voId": "chr_0003_endminf_chrup_promt02_01",
         "title": "Promosi Operator 2",
         "text": "Aku akan melindungi Endfield. Selalu."
       },
       {
+        "voId": "chr_0003_endminf_chrup_promt03_01",
         "title": "Promosi Operator 3",
         "text": "Masa lalu dan masa kini harus jadi satu."
       },
       {
+        "voId": "chr_0003_endminf_chrup_promt04_01",
         "title": "Promosi Operator 4",
         "text": "Kudengar suaranya, bergema bagaikan bisikan dalam mimpi. Berkali-kali, aku memimpikan laut tak berujung—laut yang membawa duka, membangkitkan kenangan ... dan memperkuat tekadku."
       },
       {
+        "voId": "chr_0003_endminf_mono_switch_01",
         "title": "Siaga 1",
         "text": "Masih menunggu yang lain?"
       },
       {
+        "voId": "chr_0003_endminf_mono_switch_02",
         "title": "Siaga 2",
         "text": "Originium akan membuka jalan untuk kita."
       },
       {
+        "voId": "chr_0003_endminf_sim_gift_recv_01",
         "title": "Menerima Hadiah",
         "text": "Trims banyak!"
       },
       {
+        "voId": "chr_0003_endminf_explore_point_common_01",
         "title": "Sumber Daya/Barang Koleksi Terdeteksi 1",
         "text": "Lihat, di sana ...."
       },
       {
+        "voId": "chr_0003_endminf_explore_point_valub_01",
         "title": "Sumber Daya/Barang Koleksi Terdeteksi 2",
         "text": "Ada benda penting di sana!"
       },
       {
+        "voId": "chr_0003_endminf_explore_find_locked_01",
         "title": "Area yang Belum Dijelajahi Terdeteksi",
         "text": "Area sekitar ini harus disurvei dengan cermat."
       },
       {
+        "voId": "chr_0003_endminf_explore_find_danger_01",
         "title": "Musuh Kuat Ditemukan",
         "text": "Musuh ancaman tinggi. Dekati dengan hati-hati."
       },
       {
+        "voId": "chr_0003_endminf_interact_mine_valub_01",
         "title": "Penambangan 1",
         "text": "Mineral ini mungkin berguna."
       },
       {
+        "voId": "chr_0003_endminf_interact_mine_valub_echo2_01",
         "title": "Penambangan 2",
         "text": "Biar kubantu."
       },
       {
+        "voId": "chr_0003_endminf_interact_treasure_valub_01",
         "title": "Membuka Kerat",
         "text": "Perjalanan ini sungguh memuaskan."
       },
       {
+        "voId": "chr_0003_endminf_interact_etherium_01",
         "title": "Mendapatkan Aurylene",
         "text": "Rasanya tak asing lagi."
       },
       {
+        "voId": "chr_0003_endminf_interact_blight_break_01",
         "title": "Menyingkirkan Hawar",
         "text": "Hawar berhasil disingkirkan."
       },
       {
+        "voId": "chr_0003_endminf_interact_rest_01",
         "title": "Istirahat",
         "text": "Semua sudah istirahat."
       },
       {
+        "voId": "chr_0003_endminf_combat_suppuse_using_01",
         "title": "Penggunaan Taktis 1",
         "text": "Sudah baikan?"
       },
       {
+        "voId": "chr_0003_endminf_combat_suppuse_getheal_01",
         "title": "Penggunaan Taktis 2",
         "text": "Sekarang rasanya jauh lebih baik."
       },
       {
+        "voId": "chr_0003_endminf_combat_remind_danger_01",
         "title": "Peringatan Bahaya",
         "text": "Serangan datang! Awas!"
       },
       {
+        "voId": "chr_0003_endminf_combat_hurt_lowhp_01",
         "title": "Cedera",
         "text": "Aku masih bisa bertarung ...."
       },
       {
+        "voId": "chr_0003_endminf_combat_dead_01",
         "title": "0 HP",
         "text": "Maaf .... Sekarang, semua terserah kau ...."
       },
       {
+        "voId": "chr_0003_endminf_combat_remind_praise_01",
         "title": "Penyemangat Tim 1",
         "text": "Jurusmu mulus sekali."
       },
       {
+        "voId": "chr_0003_endminf_combat_remind_praise_02",
         "title": "Penyemangat Tim 2",
         "text": "Kita kompak sekali."
       },
       {
+        "voId": "chr_0003_endminf_combat_remind_praise_echo2_01",
         "title": "Respons Penyemangat 1",
         "text": "Aku merasa tersanjung."
       },
       {
+        "voId": "chr_0003_endminf_combat_remind_praise_echo2_02",
         "title": "Respons Penyemangat 2",
         "text": "Kerja sama tim kita makin kompak saja."
       },
       {
+        "voId": "chr_0003_endminf_combat_intobattle_01",
         "title": "Mulai Pertarungan 1",
         "text": "Saatnya bertarung."
       },
       {
+        "voId": "chr_0003_endminf_combat_intobattle_echo2_01",
         "title": "Mulai Pertarungan 2",
         "text": "Aku siap membantumu."
       },
       {
+        "voId": "chr_0003_endminf_combat_outbattle_nor_01",
         "title": "Menang Pertarungan 1",
         "text": "Kita berhasil maju selangkah lagi, Endfielder."
       },
       {
+        "voId": "chr_0003_endminf_combat_outbattle_nor_02",
         "title": "Menang Pertarungan 2",
         "text": "Bagus, Teman-teman."
       },
       {
+        "voId": "chr_0003_endminf_combat_outbattle_nor_echo2_01",
         "title": "Menang Pertarungan 3",
         "text": "Kita berhasil bertarung dengan baik!"
       },
       {
+        "voId": "chr_0003_endminf_combat_outbattle_hard_01",
         "title": "Menang Pertarungan 4",
         "text": "Kalian semua baik-baik saja?"
       },
       {
+        "voId": "chr_0003_endminf_combat_battle_defeat_01",
         "title": "Kalah Bertarung",
         "text": "Tak usah khawatir. Kita berkumpul lagi saja dan cari solusinya."
       },
       {
+        "voId": "chr_0003_endminf_mono_attack_last_01",
         "title": "Final Strike 1",
         "text": "Rasakan, nih!"
       },
       {
+        "voId": "chr_0003_endminf_mono_attack_last_02",
         "title": "Final Strike 2",
         "text": "Lihat, nih!"
       },
       {
+        "voId": "chr_0003_endminf_mono_skill_nor_01",
         "title": "Skill Tarung 1",
         "text": "Serang!"
       },
       {
+        "voId": "chr_0003_endminf_mono_skill_nor_02",
         "title": "Skill Tarung 2",
         "text": "Remuklah!"
       },
       {
+        "voId": "chr_0003_endminf_mono_skill_nor_03",
         "title": "Skill Tarung 3",
         "text": "Taklukkan mereka!"
       },
       {
+        "voId": "chr_0003_endminf_combat_skill_comb_ready_01",
         "title": "Skill Kombo Siap 1",
         "text": "Siap menyerang."
       },
       {
+        "voId": "chr_0003_endminf_combat_skill_comb_ready_02",
         "title": "Skill Kombo Siap 2",
         "text": "Percayalah kepadaku."
       },
       {
+        "voId": "chr_0003_endminf_mono_skill_comb_release_01",
         "title": "Penggunaan Kombo 1",
         "text": "Mengkristallah!"
       },
       {
+        "voId": "chr_0003_endminf_mono_skill_comb_release_02",
         "title": "Penggunaan Kombo 2",
         "text": "Hadapilah ajalmu!"
       },
       {
+        "voId": "chr_0003_endminf_mono_attack_extra_01",
         "title": "Penuntas 1",
         "text": "Sekarang, tamatlah kau!"
       },
       {
+        "voId": "chr_0003_endminf_mono_attack_extra_02",
         "title": "Penuntas 2",
         "text": "Kena!"
       },
       {
+        "voId": "chr_0003_endminf_mono_skill_ultimate_01",
         "title": "Ultimate 1",
         "text": "Tak ada kesempatan kedua."
       },
       {
+        "voId": "chr_0003_endminf_mono_skill_ultimate_02",
         "title": "Ultimate 2",
         "text": "Ajal sudah menantimu."
       },
       {
+        "voId": "chr_0003_endminf_mono_skill_ultimate_03",
         "title": "Ultimate 3",
         "text": "Selesai sudah."
       }

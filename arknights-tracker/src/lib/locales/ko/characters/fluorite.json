@@ -125,322 +125,402 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0022_bounda_chrbark_squad_01",
         "title": "작전 준비 1",
         "text": "뭐야, 일이야?"
       },
       {
+        "voId": "chr_0022_bounda_chrbark_squad_02",
         "title": "작전 준비 2",
         "text": "아직 준비 못 한 사람이라도 있으면 어쩌려고 그러나 몰라?"
       },
       {
+        "voId": "chr_0022_bounda_chrbark_join_01",
         "title": "팀 가입 1",
         "text": "잘 지내보자고, 신사숙녀 여러분?"
       },
       {
+        "voId": "chr_0022_bounda_chrbark_join_02",
         "title": "팀 가입 2",
         "text": "으흠, 내가 생각보다 대단한가 봐?"
       },
       {
+        "voId": "chr_0022_bounda_chrbark_weap_01",
         "title": "무기 변경",
         "text": "그럭저럭 괜찮네... 내가 손 좀 봐도 되지?"
       },
       {
+        "voId": "chr_0022_bounda_chrbark_gear_01",
         "title": "장비 변경",
         "text": "이렇게 좋은 물건을 주다니, 꽤 까다로운 일인가 봐?"
       },
       {
+        "voId": "chr_0022_bounda_chrup_skill_01",
         "title": "재능 배열 활성화",
         "text": "나랑 연습할 사람 없어? 아쉬운걸?"
       },
       {
+        "voId": "chr_0022_bounda_chrup_level_01",
         "title": "작전 기록 관찰",
         "text": "작전 기록이 이렇게나 많아? 역시 엔드필드 '공.업'이네."
       },
       {
+        "voId": "chr_0022_bounda_chrup_promt01_01",
         "title": "정예화 돌파 1",
         "text": "이제부터는 일이 좀 힘들어질 거라는 소리인가?"
       },
       {
+        "voId": "chr_0022_bounda_chrup_promt02_01",
         "title": "정예화 돌파 2",
         "text": "근무 시간이 또 길어지겠네, 영광이야."
       },
       {
+        "voId": "chr_0022_bounda_chrup_promt03_01",
         "title": "정예화 돌파 3",
         "text": "다음에는 훈장이라도 하나 주는 건 어때? 그런 거 받아본 적 없거든."
       },
       {
+        "voId": "chr_0022_bounda_chrup_promt04_01",
         "title": "정예화 돌파 4",
         "text": "만약 문명 밴드 가장자리도 엔드필드가 꿈꾸는 '이상적인 세계'에 포함된다면... 우리가 할 일은 정말 많아질 거야, 안 그래?"
       },
       {
+        "voId": "chr_0022_bounda_introduce_01",
         "title": "오퍼레이터 첫인사",
         "text": "Z7 작전팀, 플루라이트야. 공격을 맡고 있어. 뭐, 할 말 없어? 그래, 그럼... 나 간다."
       },
       {
+        "voId": "chr_0022_bounda_mono_switch_01",
         "title": "명령 대기 1",
         "text": "오늘의 희생양은 누구일까나?"
       },
       {
+        "voId": "chr_0022_bounda_mono_switch_02",
         "title": "명령 대기 2",
         "text": "교란? 견제? 아니면... 한 방에 끝내버릴까?"
       },
       {
+        "voId": "chr_0022_bounda_sim_assign_work_01",
         "title": "시설 배치",
         "text": "걱정하지 마, 내가 알아서 잘해놓을 테니까."
       },
       {
+        "voId": "chr_0022_bounda_sim_hello_lower_01",
         "title": "인사 1",
         "text": "바빠 보이네? 우리 영웅님."
       },
       {
+        "voId": "chr_0022_bounda_sim_hello_max_01",
         "title": "인사 2",
         "text": "이번엔 또 얼마나 못 쉬었던 거야?"
       },
       {
+        "voId": "chr_0022_bounda_sim_talk_lv01_01",
         "title": "제강호 잡담 1",
         "text": "흠... 일 때문에 온 건 아닌가 보네? 이런 경우는 너무 드물어서 말이야."
       },
       {
+        "voId": "chr_0022_bounda_sim_talk_lv02_01",
         "title": "제강호 잡담 2",
         "text": "아케쿠리가 웃으면서 훈련장에 들어갔다는 거지? 검까지 들고? 음, 그럼 좀 더 숨어 있어야겠네..."
       },
       {
+        "voId": "chr_0022_bounda_sim_talk_lv02_02",
         "title": "제강호 잡담 3",
         "text": "처음 총을 잡았을 때, 난 탄창을 갈아 끼우는 방법도 몰랐어. 근데 그 순간에도 나한테 달려드는 사람은 한둘이 아니었거든. 그런 개척 지역이랑 비교하면... 여기에서의 훈련은 참 쉬운 편이지."
       },
       {
+        "voId": "chr_0022_bounda_sim_talk_max_01",
         "title": "제강호 잡담 4",
         "text": "우리 팀원들이 다 같이 모여 있어서 다행이야. 아니면 귀찮은 일이 몇 배는 더 많아졌을 테니까. 걱정하지 마, 내가 잘 관리하고 있을게."
       },
       {
+        "voId": "chr_0022_bounda_sim_talk_max_02",
         "title": "제강호 잡담 5",
         "text": "어릴 때 우리는 버든비스트 수레 위에서 햇볕을 쬐면서 하루 종일 잠만 잤어. 그래야 배가 좀 늦게 꺼졌거든... 아, 지금 그렇다는 건 아니고. 그냥... 이렇게 높이 날고 있는데, 햇볕을 좀 더 쬐지 않으면 아깝지 않겠냐는 거지."
       },
       {
+        "voId": "chr_0022_bounda_sim_talk_max_03",
         "title": "제강호 잡담 6",
         "text": "넌 펠리카처럼 싫어할 수가 없는 사람이야. 개척 지역의 '높으신 분들'은 겉치레나 체면을 엄청 신경 쓰거든. 근데 사실 진정한 리더라면 그딴 거 없이도 다들 따르고 싶어 하잖아, 안 그래?"
       },
       {
+        "voId": "chr_0022_bounda_sim_gift_give_01",
         "title": "선물 증정",
         "text": "선물이야. 걱정하지 마, 이번에는 무서운 거 아니니까."
       },
       {
+        "voId": "chr_0022_bounda_sim_gift_recv_01",
         "title": "선물 수락",
         "text": "전에 '동료'가 선물을 잘못 받았다가 죄를 뒤집어쓴 적이 있는데... 뭐야? 뭘 그렇게 필사적으로 고개를 젓고 그래?"
       },
       {
+        "voId": "chr_0022_bounda_mono_self_line01",
         "title": "신뢰 대화 1",
         "text": "교섭해 본 경험이 있냐고? 하... 그딴 양아치들한테 너무 신경 써주지 않는 게 좋아. 그놈들은 그냥 정보 수집이나 단순히 몸 쓰는 일을 담당하는 졸개에 불과하거든. 주인이 밥그릇을 흔들면 바로 꼬리를 흔들고 따라가는 것들이라고. 멍청한 녀석들은 널렸지만, 기껏해야 소란 좀 피우는 정도야. 진짜 한 지역을 죽음으로 몰고 가는 건, 자원과 권력을 움켜쥐고 독점하는 놈들이지."
       },
       {
+        "voId": "chr_0022_bounda_mono_self_line02",
         "title": "신뢰 대화 2",
         "text": "이쪽에 합류하기 전에 내가 사고를 좀 치는 바람에 아케쿠리가 보증서를 써준 적이 있어. 그때 아케쿠리가 이끌던 팀은 마을을 지키겠다고 최선을 다해 랜드브레이커들을 몰아냈는데, 웃긴 건 마을 사람들은 엔드필드의 물자에 눈독을 들였다는 거야. 너였다면... 어떻게 할 것 같아?"
       },
       {
+        "voId": "chr_0022_bounda_mono_self_line03",
         "title": "신뢰 대화 3",
         "text": "난 삼촌이 여섯 명, 숙모가 여덟 명, 형제자매가 스물두 명 있어... 꼭 카우투스 가족같달까. 전부 나랑 엄마 같이 피난 온 동료들이야, 우린 서로를 잘 챙겨줬거든. 중간에 합류한 사람도 있고, 언제부터인가 사라져 버린 사람도 있어. 지금은 우리 모두 흩어졌지만... 나한테는 '가족'이 있었던 몇 안 되는 시간이었지."
       },
       {
+        "voId": "chr_0022_bounda_mono_self_line04",
         "title": "신뢰 대화 4",
         "text": "우리는 팔과 다리가 있는데도 걸을 땐 두 다리만 사용해. 만약 어떻게 일어서는지조차 잊어버린다면, 우리가 짐승들이랑 다를 게 뭐지? 개척 지역에 있는 사람들은 대부분 그래. 평생을 고개를 숙인 채 가축처럼 살아간다고. 사람답게 살아갈 기회는... 고개를 든 자들에게만 주어지는 거야."
       },
       {
+        "voId": "chr_0022_bounda_mono_self_line05",
         "title": "신뢰 대화 5",
         "text": "이 편지, 갖고 있어. 만약 내가 돌아오지 못하면 황무지로 가서 편지를 태워줘. 읽어보고 싶으면 읽어봐도 돼. 별거 아니니까. 사실 이 편지를 받을 사람은 이미 이 세상에 없어. 하지만 그 사람이 듣고 싶어 했던 소식은 내가 모두 찾아서 적어놨거든. 그때가 오면 날 도와주겠어? 탈로스 II의 영웅님?"
       },
       {
+        "voId": "chr_0022_bounda_mono_chat_line01",
         "title": "대화 1",
         "text": "이건 내가 자주 쓰는 소형 폭탄이야. 부착 면의 점성을 조절하는 걸로 폭발 위치를 정할 수 있지. 위력이 어떠냐고? 이 녀석은 목표의 행동을 지연시키는 게 목적이야. 직접 박살 내는 것보다 훨씬 효과적이지."
       },
       {
+        "voId": "chr_0022_bounda_mono_chat_line02",
         "title": "대화 2",
         "text": "펠리카가 내 경력을 보더니 '플루라이트'라는 코드네임을 줬어. 자연 상태에서는 유독 물질이지만, 공업에서는 쓸데가 많은 녀석이라나? 책을 찾아본 뒤에야 무슨 뜻인지 대충 알게됐지. 근데... 좀 심술 궂지 않아?"
       },
       {
+        "voId": "chr_0022_bounda_mono_chat_line03",
         "title": "대화 3",
         "text": "어릴 때 난 엄마랑 여기저기를 떠돌았어. 나중에는 나 혼자서 개척 지역을 돌아다니며 살게 됐고. 유랑자들한테 식량을 나눠주는 거주지도 있었지만, 이상한 명목으로 잡다한 세금을 뜯어가는 자유 도시도 있었어. 그 모든 곳이 내 고향이기도 하지만, 아니기도 해. 개척 지역의 거주지 모두 '오래가진' 못했거든. '고향'이라는 건 참... 어려운 것 같아."
       },
       {
+        "voId": "chr_0022_bounda_mono_chat_line04",
         "title": "대화 4",
         "text": "사실, 황무지는 항상 아름다워. 침식 때문에 쫓겨난 짐승들은 그냥 사라져 버리는 게 아니거든. 항상 새로운 길을 찾아서 이동하지. 재해 지역 가장자리에는 늘 야생 풀이 가득해. 침식이 조금만 물러나도 금세 노란색과 초록색으로 그 빈자리를 채워버려. 자연은 그냥 내버려둬도 잘 돌아가, 그냥 더 이상 감당할 수 없을 뿐이야... 어쩌면, 거기서 가장 필요 없는 존재가 바로 '사람'이 아니었을까?"
       },
       {
+        "voId": "chr_0022_bounda_mono_chat_line05",
         "title": "대화 5",
         "text": "내가 머물렀던 외딴 지역에는 사람들을 악랄하게 착취하는 놈들이 있었어. 바로 그 지역의 질서를 유지하는 녀석들이었지. 그놈들은 주민들이 변화를 원하지 않을 거라는 걸 인질 삼아 역겹도록 기막힌 균형을 유지했어. 상황을 바꿔봐. 네가 움직이지 않는다면 이런 일은 영원히 반복될 테니까."
       },
       {
+        "voId": "chr_0022_bounda_mono_about_line01",
         "title": "아케쿠리에 관하여",
         "text": "내가 보여줬던 그 귀들 말이야, 누가 증거물 봉투에 담아줬는지 알아? 착하고 순진한 팀장이지만, 탈로스 II에서는 다른 선택권이 없다는 걸 잘 알고 있거든. 물론... 눈물 꾹 참고 있는 그 표정, 난 되게 마음에 들어."
       },
       {
+        "voId": "chr_0022_bounda_mono_about_line02",
         "title": "카치르에 관하여",
         "text": "그 녀석... 본인이 좋아서 하는 거 같긴 하지만, 그래도 너무 막 부려 먹진 마. 철저하게 준비하는 사람일수록 뭔가 잘못될까 봐 더 두려워하거든. 뭐, 영원히 실수를 안 할 순 없으니까... 나부터 잘하라고? 싫어, 귀찮아. 그리고 그 녀석은 아무리 무서워도 결국 어떻게든 다 버텨낼 거야."
       },
       {
+        "voId": "chr_0022_bounda_mono_about_line03",
         "title": "에스텔라에 관하여",
         "text": "에스텔라가 듣는 음악을 함부로 따라 듣지 마. 자극적인 걸 찾게 두지도 말고. 걔가 그걸 언제까지 조절할 수 있겠어? 내 생각엔 쉽지 않을 거야. 뒤처리할 준비나 미리 잘 해두라고. 우리의 지휘관님?"
       },
       {
+        "voId": "chr_0022_bounda_mono_about_line04",
         "title": "안탈에 관하여",
         "text": "그 도마뱀은 싸울 때도 항상 태연해. 아마 뭐가 위험한지도 모를걸? 그래도 팀장이 이것 때문에 화낼 필요는 없다고 생각해, 각자 살아가는 방식이 있으니까. 음... 난 딱히 불만 없어. 근데 남의 꼬리는 그만 쳐다봤으면 좋겠네."
       },
       {
+        "voId": "chr_0022_bounda_explore_point_common_01",
         "title": "자원 발견 1",
         "text": "좋은 거 찾았네, 내가 다 가져도 돼?"
       },
       {
+        "voId": "chr_0022_bounda_explore_point_valub_01",
         "title": "자원 발견 2",
         "text": "설마 저기에 있는 거 못 봤어? 아... 아무것도 아냐."
       },
       {
+        "voId": "chr_0022_bounda_explore_find_locked_01",
         "title": "미탐색 구역 발견",
         "text": "좋은 게 있네. 음... 좀 재밌겠는걸?"
       },
       {
+        "voId": "chr_0022_bounda_explore_find_danger_01",
         "title": "강한 적 발견",
         "text": "자, 새로운 장난감이 나타났다고."
       },
       {
+        "voId": "chr_0022_bounda_interact_mine_valub_01",
         "title": "광물 채집 1",
         "text": "직접 하니까, 옛날 생각이 좀 나는데?"
       },
       {
+        "voId": "chr_0022_bounda_interact_mine_valub_echo2_01",
         "title": "광물 채집 2",
         "text": "뭐야, 다들 참 부지런하네."
       },
       {
+        "voId": "chr_0022_bounda_interact_treasure_valub_01",
         "title": "보물 상자 열기",
         "text": "이런 좋은 물건도 있네? 주인은 없어서 다행이야."
       },
       {
+        "voId": "chr_0022_bounda_interact_etherium_01",
         "title": "오리렌 획득",
         "text": "나도 하나 있었어. 음... 근데 그뒤로 일어난 일들은 별로 재미가 없어서 말이야."
       },
       {
+        "voId": "chr_0022_bounda_interact_blight_break_01",
         "title": "침식 제거",
         "text": "그때도 침식을 제거할 수 있었다면..."
       },
       {
+        "voId": "chr_0022_bounda_interact_rest_01",
         "title": "휴식",
         "text": "이제야 폭탄을 보충할 시간이 생겼네..."
       },
       {
+        "voId": "chr_0022_bounda_combat_suppuse_using_01",
         "title": "전술 아이템 사용 1",
         "text": "쓸모가 있을 줄 알았어."
       },
       {
+        "voId": "chr_0022_bounda_combat_suppuse_getheal_01",
         "title": "전술 아이템 사용 2",
         "text": "...방금은 운이 좀 없었던 거야, 다시 가자고."
       },
       {
+        "voId": "chr_0022_bounda_combat_remind_danger_01",
         "title": "위험 경고",
         "text": "조심해, 괜히 '당첨'되지 말고."
       },
       {
+        "voId": "chr_0022_bounda_combat_hurt_lowhp_01",
         "title": "부상",
         "text": "하... 방심했어."
       },
       {
+        "voId": "chr_0022_bounda_combat_dead_01",
         "title": "탈진",
         "text": "이걸... 제대로 못 봤네..."
       },
       {
+        "voId": "chr_0022_bounda_combat_remind_praise_01",
         "title": "팀 격려 1",
         "text": "꽤 하는데."
       },
       {
+        "voId": "chr_0022_bounda_combat_remind_praise_02",
         "title": "팀 격려 2",
         "text": "되게 열심히네. 어디서 뭐 카메라로 찍고 있어?"
       },
       {
+        "voId": "chr_0022_bounda_combat_remind_praise_echo2_01",
         "title": "격려 응답 1",
         "text": "아부해도 뭐 없어."
       },
       {
+        "voId": "chr_0022_bounda_combat_remind_praise_echo2_02",
         "title": "격려 응답 2",
         "text": "어쨌든 우린 '정.예' 팀이니까."
       },
       {
+        "voId": "chr_0022_bounda_combat_intobattle_01",
         "title": "작전 시작 1",
         "text": "흐음... 손은 진작에 씻었는데."
       },
       {
+        "voId": "chr_0022_bounda_combat_intobattle_echo2_01",
         "title": "작전 시작 2",
         "text": "완전 프로 같네, 상이라도 주나 봐?"
       },
       {
+        "voId": "chr_0022_bounda_combat_outbattle_nor_01",
         "title": "작전 승리 1",
         "text": "좋아, 귀찮은 거 또 하나 줄었네."
       },
       {
+        "voId": "chr_0022_bounda_combat_outbattle_nor_02",
         "title": "작전 승리 2",
         "text": "참 안됐네, 나만 없었으면 기회가 있었을 텐데."
       },
       {
+        "voId": "chr_0022_bounda_combat_outbattle_nor_echo2_01",
         "title": "작전 승리 3",
         "text": "그래, 그래. 너 없었으면 졌을 거야."
       },
       {
+        "voId": "chr_0022_bounda_combat_outbattle_hard_01",
         "title": "작전 승리 4",
         "text": "흥... 아쉽네, 조금만 더 노력해 보라고."
       },
       {
+        "voId": "chr_0022_bounda_combat_battle_defeat_01",
         "title": "작전 실패",
         "text": "...실망만 하고 있지 말고, 일단 움직여. 아직 안 끝났으니까."
       },
       {
+        "voId": "chr_0022_bounda_mono_attack_last_01",
         "title": "강력한 일격 1",
         "text": "받아랏!"
       },
       {
+        "voId": "chr_0022_bounda_mono_attack_last_02",
         "title": "강력한 일격 2",
         "text": "어딜 보는 거야?"
       },
       {
+        "voId": "chr_0022_bounda_mono_skill_nor_01",
         "title": "배틀 스킬 1",
         "text": "감사는 됐어."
       },
       {
+        "voId": "chr_0022_bounda_mono_skill_nor_02",
         "title": "배틀 스킬 2",
         "text": "이거 맘에 들어?"
       },
       {
+        "voId": "chr_0022_bounda_mono_skill_nor_03",
         "title": "배틀 스킬 3",
         "text": "카운트다운, 시작."
       },
       {
+        "voId": "chr_0022_bounda_combat_skill_comb_ready_01",
         "title": "연계 스킬 준비 완료 1",
         "text": "기다렸다고!"
       },
       {
+        "voId": "chr_0022_bounda_combat_skill_comb_ready_02",
         "title": "연계 스킬 준비 완료 2",
         "text": "온통 허점이네."
       },
       {
+        "voId": "chr_0022_bounda_mono_skill_comb_release_01",
         "title": "연계 스킬 1",
         "text": "맛 좀 보겠어?"
       },
       {
+        "voId": "chr_0022_bounda_mono_skill_comb_release_02",
         "title": "연계 스킬 2",
         "text": "이걸 견딜 수 있을까?"
       },
       {
+        "voId": "chr_0022_bounda_mono_attack_extra_01",
         "title": "처형 1",
         "text": "방심하지 말라고."
       },
       {
+        "voId": "chr_0022_bounda_mono_attack_extra_02",
         "title": "처형 2",
         "text": "얌전히 누워 있어."
       },
       {
+        "voId": "chr_0022_bounda_mono_skill_ultimate_01",
         "title": "궁극기 1",
         "text": "이 정도 살았으면 됐잖아."
       },
       {
+        "voId": "chr_0022_bounda_mono_skill_ultimate_02",
         "title": "궁극기 2",
         "text": "조금만 참아봐."
       },
       {
+        "voId": "chr_0022_bounda_mono_skill_ultimate_03",
         "title": "궁극기 3",
         "text": "도망치려고?"
       }

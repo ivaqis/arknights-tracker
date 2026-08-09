@@ -135,326 +135,407 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0017_yvonne_chrbark_squad_01",
         "title": "Einsatzvorbereitung 1",
         "text": "Also, wo amüsieren wir uns heute, Endmin?"
       },
       {
+        "voId": "chr_0017_yvonne_chrbark_squad_02",
         "title": "Einsatzvorbereitung 2",
         "text": "Daten synchronisiert. Ich kann jederzeit loslegen!"
       },
       {
+        "voId": "chr_0017_yvonne_chrbark_join_01",
         "title": "Wird zum Team hinzugefügt 1",
         "text": "Du hast dich also endlich entschieden, mich mitzunehmen? Hehe. Ich wette, du steckst in einer schwierigen Lage."
       },
       {
+        "voId": "chr_0017_yvonne_chrbark_join_02",
         "title": "Wird zum Team hinzugefügt 2",
         "text": "Ich bin da. Wenn du Probleme mit der Ausrüstung hast, gib mir einfach Bescheid."
       },
       {
+        "voId": "chr_0017_yvonne_chrbark_weap_01",
         "title": "Waffe wird gewechselt",
         "text": "Dieses Handfeuerwaffen-Paar fühlt sich genau richtig an. Hm … Ich habe einige Verbesserungsmöglichkeiten beim Design entdeckt. Ich werde es wohl zu einem Yvonne-Spezialmodell umbauen!"
       },
       {
+        "voId": "chr_0017_yvonne_chrbark_gear_01",
         "title": "Ausrüstung wird gewechselt",
         "text": "Darf ich eine neue Schicht Lack auf meine Ausrüstung auftragen? Die Farbe passt nicht so gut zu meinen Haaren."
       },
       {
+        "voId": "chr_0017_yvonne_chrup_skill_01",
         "title": "Fähigkeitsmatrix wird aktiviert",
         "text": "Zu einfach! Gib mir eine richtige Herausforderung!"
       },
       {
+        "voId": "chr_0017_yvonne_chrup_level_01",
         "title": "Kampfaufzeichnungen ansehen",
         "text": "Ich habe alles einfach vorgespult. Ich lerne so schnell, das macht keinen Unterschied."
       },
       {
+        "voId": "chr_0017_yvonne_chrup_promt01_01",
         "title": "Operator-Beförderung 1",
         "text": "Ich werde befördert? Wow, du hast echt ein Auge für Talent, Endmin!"
       },
       {
+        "voId": "chr_0017_yvonne_chrup_promt02_01",
         "title": "Operator-Beförderung 2",
         "text": "Bedeutet diese Beförderung … dass ich ein größeres Labor bekomme?"
       },
       {
+        "voId": "chr_0017_yvonne_chrup_promt03_01",
         "title": "Operator-Beförderung 3",
         "text": "In einer echten Schlacht zu kämpfen, ist etwas ganz anderes, als sich Kampfvideos anzuschauen … Ich habe mich *wirklich* verbessert. Schließlich habe ich all diese Ausflüge ins Grenzgebiet überlebt. Oder nicht?"
       },
       {
+        "voId": "chr_0017_yvonne_chrup_promt04_01",
         "title": "Operator-Beförderung 4",
         "text": "Assistent? NICHTS DA! Den brauche ich nicht! Meine Nas-E-Weis kann alles. Datenorganisation und Aufräumen im Labor sind nur zwei ihrer grundlegenden Funktionen. Außerdem würde sie sich nie über meinen Tagesplan beschweren."
       },
       {
+        "voId": "chr_0017_yvonne_introduce_01",
         "title": "Operatorin meldet sich zum Dienst",
         "text": "Hey, Endmin! Wir sehen uns also wieder. Du kannst mich Yvonne nennen. Es ist echt lange her, dass ich das letzte Mal draußen war. Ich freue mich auf die Zusammenarbeit!"
       },
       {
+        "voId": "chr_0017_yvonne_mono_switch_01",
         "title": "Warten 1",
         "text": "Benimm dich, Frost-Bytee! Wir gehen mit Endmin spazieren!"
       },
       {
+        "voId": "chr_0017_yvonne_mono_switch_02",
         "title": "Warten 2",
         "text": "Hier drüben, Endmin! Oh, ich habe ziemlich viel dabei …"
       },
       {
+        "voId": "chr_0017_yvonne_sim_assign_work_01",
         "title": "Zuweisung zur Anlage",
         "text": "Okay, okay. Ich kenne mich damit super aus. Lehn dich also einfach zurück und entspann dich!"
       },
       {
+        "voId": "chr_0017_yvonne_sim_hello_lower_01",
         "title": "Gruß 1",
         "text": "Endmin! Ich reserviere die Ausrüstungstestkammer. Vielen Dank!"
       },
       {
+        "voId": "chr_0017_yvonne_sim_hello_max_01",
         "title": "Gruß 2",
         "text": "Die neueste Monatsausgabe von „MARTHE“ ist gerade angekommen. Möchtest du sie mit mir lesen?"
       },
       {
+        "voId": "chr_0017_yvonne_sim_talk_lv01_01",
         "title": "Dijiang-Geplauder 1",
         "text": "*seufz* … Jedes Mal, wenn ich mich mit dem Automatisierten Industriekomplex beschäftige, komme ich nicht umhin, ihn für pure Perfektion zu halten! Die PAK-gesteuerte Produktion ist keine kalte, repetitive Plackerei mehr … sondern ein lebendiges, atmendes System aus miteinander verflochtenen Prozessschleifen! Absolut genial! Endmin, das muss ich ausprobieren! Komm schon, bitteeeee?"
       },
       {
+        "voId": "chr_0017_yvonne_sim_talk_lv02_01",
         "title": "Dijiang-Geplauder 2",
         "text": "Ich will ehrlich sein, Endmin. Ich mag deinen Stil, aber findest du nicht, dass es Zeit für ein neues Outfit ist? Komm schon, wir suchen dir etwas Auffälligeres und Bunteres! Dein neuer Look wird der letzte Schrei sein. Garantiert!"
       },
       {
+        "voId": "chr_0017_yvonne_sim_talk_lv02_02",
         "title": "Dijiang-Geplauder 3",
         "text": "Perlica lässt mich meine Tweety-Bomben nicht mitnehmen, weil sie angeblich zu gefährlich sind. Aber ich kann einfach nicht ohne sie leben! *seufz* Letztendlich habe ich mich gefügt und die Sprengmodule vor dem Boarding auseinandergebaut."
       },
       {
+        "voId": "chr_0017_yvonne_sim_talk_max_01",
         "title": "Dijiang-Geplauder 4",
         "text": "Ich plane einen Ausflug nach La Fantoma. Ich vermisse die Strände und die Meeresbrise irgendwie … Kommst du mit, Endmin? Wir könnten uns auch die neuesten Küstenschutzmaßnahmen anschauen. Ich habe gehört, dass sie dort kürzlich eine neue Beschichtung gegen die Verderbnis entwickelt haben."
       },
       {
+        "voId": "chr_0017_yvonne_sim_talk_max_02",
         "title": "Dijiang-Geplauder 5",
         "text": "Endmin, ich glaube, wir haben noch keine Fotos zusammen! Wie wäre es mit einem Selfie? Ich werde es zu Yvonnes Sammlung „Jahresmomente“ hinzufügen. Wenn es nicht gut wird, ist das die Schuld der schlechten Beleuchtung der Dijiang, nicht meine!"
       },
       {
+        "voId": "chr_0017_yvonne_sim_talk_max_03",
         "title": "Dijiang-Geplauder 6",
         "text": "Wir scheinen einen ähnlichen Musikgeschmack zu haben, Endmin! Du kannst mich gerne in meinem Labor besuchen und dir meine neueste Schallplatte anhören, sobald sie angekommen ist. Gute Musik klingt schließlich in guter Gesellschaft noch besser!"
       },
       {
+        "voId": "chr_0017_yvonne_sim_gift_give_01",
         "title": "Geschenke anbieten",
         "text": "Ich habe etwas für dich. Öffne es, wenn du wieder zu Hause bist. Hehe. Es wird dir bestimmt gefallen. Ich habe extra mehrere „Profis“ gefragt, um sicherzugehen!"
       },
       {
+        "voId": "chr_0017_yvonne_sim_gift_recv_01",
         "title": "Geschenke annehmen",
         "text": "Ach, danke! Keine Sorge, auch wenn es ein bisschen komisch ist, werde ich es trotzdem für immer aufbewahren … weil es von dir ist!"
       },
       {
+        "voId": "chr_0017_yvonne_mono_self_line01",
         "title": "Vertrauensgespräch 1",
         "text": "Es ging nie darum, die Leistung der Maschinen zu maximieren. Nö. Mein Ziel ist es, den Nutzern ein stressfreies und idiotensicheres Erlebnis zu bieten. Wenn sie dabei noch lachen können, ist es das Tüpfelchen auf dem i. Schließlich sollen Tools das Leben einfacher machen und nicht schwieriger."
       },
       {
+        "voId": "chr_0017_yvonne_mono_self_line02",
         "title": "Vertrauensgespräch 2",
         "text": "Endmin, könntest du mir bitte deine Originium-Techniken leihen? Mit einer präzisen Steuerung der Originium-Schaltkreise hätte ich jede Menge Designmöglichkeiten. Ich wollte Frost-Bytee zum Beispiel schon immer ein Heizmodul geben. Oh, das klingt super! Moment mal. Wenn es Dinge aufheizt, ist es ja gar nicht mal mehr so frostig …"
       },
       {
+        "voId": "chr_0017_yvonne_mono_self_line03",
         "title": "Vertrauensgespräch 3",
         "text": "Als ich drei Jahre alt war, habe ich zum ersten Mal in einem beliebten Wissenschaftsbuch über dich gelesen. Darin stand, dass du eine Legende mit *haufenweise* Verantwortung bist. Aber in Wirklichkeit bist du überraschend … süß? *kicher* Oh, du willst wahrscheinlich nicht wissen, wie du in diesen nicht lizenzierten Kopien abgebildet warst. Das bleibt besser ein Geheimnis …"
       },
       {
+        "voId": "chr_0017_yvonne_mono_self_line04",
         "title": "Vertrauensgespräch 4",
         "text": "Als ich das Projekt „Baby-Bot“ übernahm, war der Prototyp einfach riesig! Er passte nicht einmal in den Fahrzeug-Hangar. Offensichtlich brauchte der GBT eine schwere Industrieanlage auf Rädern, um große Verderbnis-Klumpen zu neutralisieren. Aber was ist mit den Leuten, die sich mit der Verderbnis in ihren eigenen vier Wänden herumschlagen müssen? Sollen sie einfach warten und beten, dass die riesige Maschine auftaucht? Jemand musste sich um die Miniaturisierung kümmern. Also habe ich Monate im Wissenschaftspark damit verbracht, daran zu arbeiten … Die Ergebnisse sprechen für sich. Die folgenden Ereignisse haben gezeigt, dass meine Entscheidung *unglaublich* klug war!"
       },
       {
+        "voId": "chr_0017_yvonne_mono_self_line05",
         "title": "Vertrauensgespräch 5",
         "text": "Tolle Musik, coole Konzerte, schicke Mode und die wunderschönen Sonnenauf- und -untergänge über dem talosianischen Horizont – eigentlich weiß ich, dass all das, was ich liebe, kurz vor dem Untergang steht. Das ist der Grund, warum ich Endfielder geworden bin. Ich will etwas tun und dafür sorgen, dass die zerbrechliche Schönheit unserer Welt weiterlebt. Ich habe noch nicht genug Spaß gehabt, also werde ich diese Welt nicht untergehen lassen – nicht mit mir!"
       },
       {
+        "voId": "chr_0017_yvonne_mono_chat_line01",
         "title": "Geplauder 1",
         "text": "Wenn du mich fragst, würde ich wegen der Lebensqualität eine TAHK-Stadt im Gürtel wählen. Aber zum Arbeiten? AUF KEINEN FALL! Laut ihrer Unternehmenspraxis müssen die Mitarbeiter sechsmal am Tag ein- und ausstempeln. Kannst du dir das vorstellen?!"
       },
       {
+        "voId": "chr_0017_yvonne_mono_chat_line02",
         "title": "Geplauder 2",
         "text": "Das hier stammt aus der Zauberstunde. Ich LIEBE ihren Stil einfach. Sie holen sich ihre Designelemente aus den unterschiedlichsten Quellen. Sogar die Textur und Maserung von Aggeloi-Panzern! Gefahr ist einfach so viel … *verlockender*. Findest du nicht auch, Endmin?"
       },
       {
+        "voId": "chr_0017_yvonne_mono_chat_line03",
         "title": "Geplauder 3",
         "text": "Yvonne ist ein gallischer Name. Mein Vater hat mir erzählt, dass wir ein tolles Erbe erhalten haben, auf das alle in der Familie sehr stolz sind. Aber ich sehe das nicht so. Terra ist weit genug weg, und dieses alte Reich gibt es schon lange nicht mehr. Was ist überhaupt so wichtig an Stammbäumen oder Blutlinien? Und dann ist da noch dieser Typ namens Corsi-irgendwas der Erste. War der wirklich so toll?"
       },
       {
+        "voId": "chr_0017_yvonne_mono_chat_line04",
         "title": "Geplauder 4",
         "text": "Ah, das hier? Also … Ich habe gerade den Anschluss für den Thermo-Ofen im Labor ausgetauscht. Dass er auch als Instant-Nudelkocher genutzt werden kann, ist reiner *Zufall*. Ich sage dir, das ist echte technische V&V. Schau mich nicht so an, als wäre ich ein Faulpelz … Na gut! Ich gebe dir ein bisschen davon ab … Und … du sagst Perlica nichts davon, oder?"
       },
       {
+        "voId": "chr_0017_yvonne_mono_chat_line05",
         "title": "Geplauder 5",
         "text": "Ich habe bereits Praktika bei der TAHK, der HAW und dem GBT absolviert. Die Personalabteilung von Endfield hat mir jedoch ein Angebot gemacht, das ich nicht ausschlagen konnte: uneingeschränkten Zugriff auf die Endfield-Datenbank zu allem, was mit Ætherside zu tun hat! Sie haben sogar folgenden Satz besonders hervorgehoben: „Das Autoritätslevel entspricht dem des Endministrators.“"
       },
       {
+        "voId": "chr_0017_yvonne_mono_about_line01",
         "title": "Thema: Ætherside",
         "text": "Über die Ætherside ist kaum etwas bekannt. Vielleicht ist es ein völlig dunkler Ort … oder ein Reich des absoluten Chaos. Bisher können wir nur die Verderbnis-Phänomene beobachten. Die gibt es in allen möglichen komischen Farben, als ob die üblichen Gesetze des optischen Spektrums dort nicht gelten würden. Ehrlich gesagt finde ich sie irgendwie … ziemlich faszinierend, nachdem ich mich so lange damit beschäftigt habe."
       },
       {
+        "voId": "chr_0017_yvonne_mono_about_line02",
         "title": "Thema: TAHK-Städte",
         "text": "Ich besuche jedes Jahr einige TAHK-Städte. In Alloycarrot hole ich mir mein Material und meine Ausrüstung und beim Filmfestival in New Wrankwood schaue ich mir jede Menge Filme an. Wenn ich aber meine absolute Lieblingsstadt benennen soll, dann ist das definitiv Kjersch. Überraschend, oder? Ich liebe den Schnee, den weiten Himmel und die ruhige Gelassenheit dort."
       },
       {
+        "voId": "chr_0017_yvonne_mono_about_line03",
         "title": "Thema: Popkultur",
         "text": "Terra-Oldies haben meine Großeltern in ihrer Jugend gehört. Was gerade angesagt ist, ist Neo-Talos. Ich LIEEEBE den Song STEREO! Wir sind Talosianer, so geboren und so aufgewachsen – natürlich hauen wir Musik raus, die Talos-II auch gerecht wird."
       },
       {
+        "voId": "chr_0017_yvonne_mono_about_line04",
         "title": "Thema: Kindheit",
         "text": "Als ich klein war, waren meine Eltern immer sehr beschäftigt, und es war sonst niemand da. Also gaben sie mir eine Vogelbestie als Spielgefährten. Sie war laut, schlecht gelaunt und hat ständig mein Zimmer verwüstet … Aber ich habe das Tier wirklich geliebt. Du hast wahrscheinlich schon erraten, dass es die Inspiration für meine Tweety-Bomben war. Sie machen zwar viel weniger Lärm, haben aber das schlechte Temperament dieses süßen Federknäuels geerbt."
       },
       {
+        "voId": "chr_0017_yvonne_mono_about_line05",
         "title": "Thema: Tal IV",
         "text": "Als ich vor drei Jahren hier ankam, hatte ich eigentlich nicht vor, in Tal IV zu bleiben. Doch dann hat Professor Crowe mir einige Rissdaten vom Æther-Testgelände gezeigt, und ich war sofort Feuer und Flamme! Schade, dass wir uns danach auf nichts einigen konnten. Die Forschung ist komplett im Eimer. Und weil der alte Crowe mich nicht besiegen konnte, hat er mich zu André geschickt. Und was soll ich sagen? Dank der tollen technischen Unterstützung von Endfield hat mein Projekt sofort solide Ergebnisse geliefert! Drei Jahre lang habe ich einen Artikel nach dem anderen geschrieben. Oh, Tal IV ist wirklich mein Glücksort."
       },
       {
+        "voId": "chr_0017_yvonne_explore_point_common_01",
         "title": "Ressource/Sammelobjekt entdeckt 1",
         "text": "Ohhhh! Das muss ich für mein Studium mitnehmen."
       },
       {
+        "voId": "chr_0017_yvonne_explore_point_valub_01",
         "title": "Ressource/Sammelobjekt entdeckt 2",
         "text": "Psst. Ich verrate dir ein Geheimnis. Das Zeug da drüben ist echt der Hammer!"
       },
       {
+        "voId": "chr_0017_yvonne_explore_find_locked_01",
         "title": "Unerforschter Bereich entdeckt",
         "text": "Da war ich noch nie. Lass es uns genauer anschauen!"
       },
       {
+        "voId": "chr_0017_yvonne_explore_find_danger_01",
         "title": "Starker Gegner entdeckt",
         "text": "Tweety-Bombe sieht ein bisschen nervös aus. Der Mistkerl da ist bestimmt ein ganz Frecher!"
       },
       {
+        "voId": "chr_0017_yvonne_interact_mine_valub_01",
         "title": "Abbau 1",
         "text": "Ich hätte meine Peng-Pengs mit einem speziellen Abbaumodul ausstatten sollen."
       },
       {
+        "voId": "chr_0017_yvonne_interact_mine_valub_echo2_01",
         "title": "Abbau 2",
         "text": "Ich will auch helfen! Ich bin zufällig ein echter Abrissprofi!"
       },
       {
+        "voId": "chr_0017_yvonne_interact_treasure_valub_01",
         "title": "Kiste öffnen",
         "text": "Wow, das ist aber ein schickes Glitzerdings."
       },
       {
+        "voId": "chr_0017_yvonne_interact_etherium_01",
         "title": "Aurylen erhalten",
         "text": "Ein wunderbar flüssiger, spritziger Glitzer. So was wollte ich schon immer als Nagellack haben."
       },
       {
+        "voId": "chr_0017_yvonne_interact_blight_break_01",
         "title": "Eliminierung der Verderbnis",
         "text": "Absolute Neutralisierung! Oder was meinst du?"
       },
       {
+        "voId": "chr_0017_yvonne_interact_rest_01",
         "title": "Ausruhen",
         "text": "Puh. Ich habe ewig auf diese Pause gewartet. Jetzt muss ich erst einmal meine wilden Haare bändigen …"
       },
       {
+        "voId": "chr_0017_yvonne_combat_suppuse_using_01",
         "title": "Taktische Nutzung 1",
         "text": "Keine Angst. Versuch’s mal hiermit."
       },
       {
+        "voId": "chr_0017_yvonne_combat_suppuse_getheal_01",
         "title": "Taktische Nutzung 2",
         "text": "Ahhh … Jetzt geht’s mir viel besser!"
       },
       {
+        "voId": "chr_0017_yvonne_combat_remind_danger_01",
         "title": "Gefahrenwarnung",
         "text": "Weich aus! Ich geb dir Deckung!"
       },
       {
+        "voId": "chr_0017_yvonne_combat_hurt_lowhp_01",
         "title": "Verletzt",
         "text": "Argh … Das tut weh … Die haben mich übel zugerichtet …"
       },
       {
+        "voId": "chr_0017_yvonne_combat_dead_01",
         "title": "0 LP",
         "text": "Verdammt … ich bin raus …"
       },
       {
+        "voId": "chr_0017_yvonne_combat_remind_praise_01",
         "title": "Teammotivation 1",
         "text": "Spektakulär!"
       },
       {
+        "voId": "chr_0017_yvonne_combat_remind_praise_02",
         "title": "Teammotivation 2",
         "text": "Ihr seid einfach großartig, Team!"
       },
       {
+        "voId": "chr_0017_yvonne_combat_remind_praise_echo2_01",
         "title": "Motivationsreaktion 1",
         "text": "Japp. Großartigkeit ist eben irgendwie mein Ding!"
       },
       {
+        "voId": "chr_0017_yvonne_combat_remind_praise_echo2_02",
         "title": "Motivationsreaktion 2",
         "text": "Wunderschöne Teamarbeit."
       },
       {
+        "voId": "chr_0017_yvonne_combat_intobattle_01",
         "title": "Kampf beginnt 1",
         "text": "Alle Ausrüstungsstücke sind aufgeladen und einsatzbereit."
       },
       {
+        "voId": "chr_0017_yvonne_combat_intobattle_echo2_01",
         "title": "Kampf beginnt 2",
         "text": "Bereit zum Feuern!"
       },
       {
+        "voId": "chr_0017_yvonne_combat_outbattle_nor_01",
         "title": "Kampfsieg 1",
         "text": "Der Sieg ist unser! Zeit für ein Selfie."
       },
       {
+        "voId": "chr_0017_yvonne_combat_outbattle_nor_02",
         "title": "Kampfsieg 2",
         "text": "Übrigens, ich bin auch ein ziemlicher Kampfprofi."
       },
       {
+        "voId": "chr_0017_yvonne_combat_outbattle_nor_echo2_01",
         "title": "Kampfsieg 3",
         "text": "Hmpf. Dieser Triumph verlangt nach einer richtigen Partäy!"
       },
       {
+        "voId": "chr_0017_yvonne_combat_outbattle_hard_01",
         "title": "Kampfsieg 4",
         "text": "Sogar für Nas-E-Weis sind Kämpfe schwer vorherzusagen … *ABER* nächstes Mal machen wir es auf jeden Fall besser."
       },
       {
+        "voId": "chr_0017_yvonne_combat_battle_defeat_01",
         "title": "Niederlage im Kampf",
         "text": "Verdammte Verderbnis! Ich erhöhe die Leistung von Frost-Bytee um 5.000 Prozent! Mal sehen, wie die das schlagen wollen!"
       },
       {
+        "voId": "chr_0017_yvonne_mono_attack_last_01",
         "title": "Abschlussangriff 1",
         "text": "Energieschuss!"
       },
       {
+        "voId": "chr_0017_yvonne_mono_attack_last_02",
         "title": "Abschlussangriff 2",
         "text": "Noch ein Schluck!"
       },
       {
+        "voId": "chr_0017_yvonne_mono_skill_nor_01",
         "title": "Kampffertigkeit 1",
         "text": "Spür die Kälte!"
       },
       {
+        "voId": "chr_0017_yvonne_mono_skill_nor_02",
         "title": "Kampffertigkeit 2",
         "text": "Bleib cool!"
       },
       {
+        "voId": "chr_0017_yvonne_mono_skill_nor_03",
         "title": "Kampffertigkeit 3",
         "text": "Eiskalt erwischt!"
       },
       {
+        "voId": "chr_0017_yvonne_combat_skill_comb_ready_01",
         "title": "Kombofertigkeit bereit 1",
         "text": "Bereit zum Schießen!"
       },
       {
+        "voId": "chr_0017_yvonne_combat_skill_comb_ready_02",
         "title": "Kombofertigkeit bereit 2",
         "text": "Voll aufgeladen."
       },
       {
+        "voId": "chr_0017_yvonne_mono_skill_comb_release_01",
         "title": "Kombo wirken 1",
         "text": "Los! Frost-Bytee!"
       },
       {
+        "voId": "chr_0017_yvonne_mono_skill_comb_release_02",
         "title": "Kombo wirken 2",
         "text": "Ice, ice, baby!"
       },
       {
+        "voId": "chr_0017_yvonne_mono_attack_extra_01",
         "title": "Wuchtschlag 1",
         "text": "KABUMM!"
       },
       {
+        "voId": "chr_0017_yvonne_mono_attack_extra_02",
         "title": "Wuchtschlag 2",
         "text": "Perfekter Schuss!"
       },
       {
+        "voId": "chr_0017_yvonne_mono_skill_ultimate_01",
         "title": "Ultimative Fertigkeit 1",
         "text": "Tanzen wir!"
       },
       {
+        "voId": "chr_0017_yvonne_mono_skill_ultimate_02",
         "title": "Ultimative Fertigkeit 2",
         "text": "Leidenschaft pur!"
       },
       {
+        "voId": "chr_0017_yvonne_mono_skill_ultimate_03",
         "title": "Ultimative Fertigkeit 3",
         "text": "Ein Feuerwerk für dich!"
       }

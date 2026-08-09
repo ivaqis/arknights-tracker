@@ -136,326 +136,407 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0016_laevat_chrbark_squad_01",
         "title": "Prep Operação 1",
         "text": "Odeio problemas, mas o tédio consegue ser pior."
       },
       {
+        "voId": "chr_0016_laevat_chrbark_squad_02",
         "title": "Prep Operação 2",
         "text": "Seja lá o que vier a seguir, é melhor que seja memorável."
       },
       {
+        "voId": "chr_0016_laevat_chrbark_join_01",
         "title": "Adicionando à equipe 1",
         "text": "Posso fazer isso. Sozinha."
       },
       {
+        "voId": "chr_0016_laevat_chrbark_join_02",
         "title": "Adicionando à equipe 2",
         "text": "Eu sou a espada. Eu sou o fogo encarnado."
       },
       {
+        "voId": "chr_0016_laevat_chrbark_weap_01",
         "title": "Trocando de arma",
         "text": "Bela lâmina. Espero que ela aguente o calor do meu fogo."
       },
       {
+        "voId": "chr_0016_laevat_chrbark_gear_01",
         "title": "Trocando de equipamento",
         "text": "O peso não vai desacelerar meus ataques. Revestimento resistente a chamas? Pfft."
       },
       {
+        "voId": "chr_0016_laevat_chrup_skill_01",
         "title": "Ativação da Matriz de Capacidade",
         "text": "Então, o que você acha do meu poder real?"
       },
       {
+        "voId": "chr_0016_laevat_chrup_level_01",
         "title": "Assistindo a Registros de Combate",
         "text": "Humm, boa referência."
       },
       {
+        "voId": "chr_0016_laevat_chrup_promt01_01",
         "title": "Promoção do Operador 1",
         "text": "O que isso quer dizer? Incentivo? Aprovação? Não preciso disso. Tudo o que fiz foi esbarrar em um monte de bichinhos e transformá-los em cinzas."
       },
       {
+        "voId": "chr_0016_laevat_chrup_promt02_01",
         "title": "Promoção do Operador 2",
         "text": "Agora que fui promovida, meu novo nível de autoridade deve me proporcionar uma reunião anual de avaliação individual, certo? Ótimo. Vamos dar uma volta. Preciso de um pouco de ar."
       },
       {
+        "voId": "chr_0016_laevat_chrup_promt03_01",
         "title": "Promoção do Operador 3",
         "text": "De volta? Não preciso de nenhum reconhecimento por ter feito um trabalho bem feito. Mas, se você insistir, vou guardá-la como um símbolo e uma prova... de todas as memórias que construímos juntos."
       },
       {
+        "voId": "chr_0016_laevat_chrup_promt04_01",
         "title": "Promoção do Operador 4",
         "text": "Vocês, Endfielders, parecem estar cada vez mais dependentes de mim. Acho que não me deixam outra escolha a não ser aceitar esta honra. Agora podem me chamar de Operadora da Endfield Laevatain... Ei! Que cara é essa?"
       },
       {
+        "voId": "chr_0016_laevat_introduce_01",
         "title": "Operador se apresentando para o trabalho",
         "text": "Já não nos conhecemos? Humpf. Não importa. Você vai se lembrar de mim por esta espada e a chama."
       },
       {
+        "voId": "chr_0016_laevat_mono_switch_01",
         "title": "Em espera 1",
         "text": "Detesto tolos que gostam de microgerenciar. Ainda bem que você não é um deles."
       },
       {
+        "voId": "chr_0016_laevat_mono_switch_02",
         "title": "Em espera 2",
         "text": "Procurando por mim? Você finalmente se lembrou de alguma coisa?"
       },
       {
+        "voId": "chr_0016_laevat_sim_assign_work_01",
         "title": "Atribuindo a Instalação",
         "text": "Hmm, parece um bom lugar para perder meu tempo..."
       },
       {
+        "voId": "chr_0016_laevat_sim_hello_lower_01",
         "title": "Saudação 1",
         "text": "Ah, aqui está você."
       },
       {
+        "voId": "chr_0016_laevat_sim_hello_max_01",
         "title": "Saudação 2",
         "text": "É você... Ah, eu não estava esperando você especificamente."
       },
       {
+        "voId": "chr_0016_laevat_sim_talk_lv01_01",
         "title": "Conversa Ociosa da Dijiang 1",
         "text": "O que está fazendo aí, de bobeira? Venha, vamos até a ponte. Depois você poderá me contar tudo sobre os lugares que visitou no passado e os destinos que tem reservado para o futuro."
       },
       {
+        "voId": "chr_0016_laevat_sim_talk_lv02_01",
         "title": "Conversa Ociosa da Dijiang 2",
         "text": "Mmmm... Agradeço imensamente à Divisão de Logística pelo rodízio de sorvetes. Quer que eu pegue algumas bolas para você?"
       },
       {
+        "voId": "chr_0016_laevat_sim_talk_lv02_02",
         "title": "Conversa Ociosa da Dijiang 3",
         "text": "Tenho uma missão. Quer vir comigo? Não, não precisa de teleprotocolo. Prefiro o pod de descida. Vou lançar um uivo de fogo ensurdecedor, bem em cima das cabeças deles."
       },
       {
+        "voId": "chr_0016_laevat_sim_talk_max_01",
         "title": "Conversa Ociosa da Dijiang 4",
         "text": "Frio? Eu disse para baixarem o termostato porque algum idiota construiu esta nave e esqueceu de deixar um lugar para respirar ar fresco. Se você não aguenta o frio, fique um pouco mais perto."
       },
       {
+        "voId": "chr_0016_laevat_sim_talk_max_02",
         "title": "Conversa Ociosa da Dijiang 5",
         "text": "Quando não tenho nada para fazer, eu simplesmente tomo sorvete e aprecio a vista lá fora. Posso fazer isso o dia todo. Minha mente está repleta de incontáveis fragmentos de memórias em pedaços. No entanto, nenhuma delas me deu uma visão do mundo ou das noites estreladas deste ângulo."
       },
       {
+        "voId": "chr_0016_laevat_sim_talk_max_03",
         "title": "Conversa Ociosa da Dijiang 6",
         "text": "Ainda pensando nas suas memórias? Humpf. Se elas se foram, se foram. Lembre-se do que acontecerá daqui em diante."
       },
       {
+        "voId": "chr_0016_laevat_sim_gift_give_01",
         "title": "Oferta de presentes",
         "text": "Aqui está. É seu. Obrigada por lembrar de mim. Hein? Ser capaz de lembrar de alguém que você gosta já é um presente suficiente...? Pfft..."
       },
       {
+        "voId": "chr_0016_laevat_sim_gift_recv_01",
         "title": "Aceitando presentes",
         "text": "Humm, eu não gosto muito de receber presentes, porque sempre acabo esquecendo. Mas este é seu... então será uma exceção."
       },
       {
+        "voId": "chr_0016_laevat_mono_self_line01",
         "title": "Diálogo de Confiança 1",
         "text": "Laevatain? É. Eu mesma escolhi. Tirei a ideia da espada. Alguns não o aceitam como meu nome verdadeiro? Hmph, eu domei a coisa, então o nome dela é meu. Assim como essas memórias — pretendo governá-las, não ser governada por elas."
       },
       {
+        "voId": "chr_0016_laevat_mono_self_line02",
         "title": "Diálogo de Confiança 2",
         "text": "Minha mente ainda está repleta de diversas memórias fragmentadas. Elas não desapareceram simplesmente. Eu apenas escolhi não estudá-las. Talvez, quando terminar de cuidar dessas tarefas mundanas, eu siga essas memórias e comece uma nova jornada."
       },
       {
+        "voId": "chr_0016_laevat_mono_self_line03",
         "title": "Diálogo de Confiança 3",
         "text": "Surtr... Toda a sua raiva, sua sensação de perda e sua confusão... permanecem em minhas memórias. Parecem tão reais e permanentes. No entanto, quando me lembro da decisão que ela tomou por si mesma no final, encontro algum consolo."
       },
       {
+        "voId": "chr_0016_laevat_mono_self_line04",
         "title": "Diálogo de Confiança 4",
         "text": "O dever dos reconvocadores? Não me importo com isso. Provavelmente é algo guardado nas minhas memórias. Só concordei em lutar ao seu lado por causa das pessoas que conheci, dos caminhos que percorri, dos conveses em que cochilei e dos invasores de terras que arrebentei... É por causa das memórias que são verdadeiramente minhas, criadas neste lugar."
       },
       {
+        "voId": "chr_0016_laevat_mono_self_line05",
         "title": "Diálogo de Confiança 5",
         "text": "Houve um tempo em que eu não conseguia entender por que você simplesmente não deixava o passado para trás. Só entendi quando cheguei a Endfield. Você é Endministrator, um receptáculo das expectativas de todos e uma projeção do ideal sobre a pessoa que deve salvar o mundo. Mas ninguém deve permitir que sua imagem seja moldada pelos desejos dos outros. E é por isso que você deve usar suas memórias para redescobrir seu verdadeiro eu. Se precisar de uma companheira nesta jornada, é só me chamar. Não me importa para onde você esteja indo."
       },
       {
+        "voId": "chr_0016_laevat_mono_chat_line01",
         "title": "Chat 1",
         "text": "Meu \"Anel\" quebrado? Trate-o como meu bichinho de estimação e \"Unidade de Artes\". Os Engenheiros de Arsenal de Endfield tentaram descobrir como ele funciona. Eles também tentaram consertá-lo... Mas o Anel agiu sozinho e pôs fim a isso."
       },
       {
+        "voId": "chr_0016_laevat_mono_chat_line02",
         "title": "Chat 2",
         "text": "Você está aqui? Venha ver isso para mim. Warfarin me enviou um quebra-cabeça. Ela disse que ele apresenta o cenário, os povos e as histórias da Terra... É enorme. Passei séculos nisso e ainda não está pronto... Ei, pare de ficar olhando para as bordas rasgadas. Além disso, não tenho nada a ver com os lugares queimados. Era assim que estava quando o recebi."
       },
       {
+        "voId": "chr_0016_laevat_mono_chat_line03",
         "title": "Chat 3",
         "text": "Ao realizar missões em Talos-II, eu sonhava com a Dijiang, bem como com as pessoas e os eventos da Endfield à noite. Espero pacientemente que minha mente esqueça cada fragmento do passado que não seja meu para então preencher as lacunas com as memórias que eu mesma forjei."
       },
       {
+        "voId": "chr_0016_laevat_mono_chat_line04",
         "title": "Chat 4",
         "text": "Por que eu luto? Porque chegará o dia em que estarei no topo de uma montanha e contemplarei um mundo consumido pelo fogo... Por que está me olhando assim? Eu estava só descrevendo um pesadelo que me incomoda há algum tempo. Deixe suas preocupações de lado. Não permitirei que a visão se concretize, não importa a hora ou o lugar."
       },
       {
+        "voId": "chr_0016_laevat_mono_chat_line05",
         "title": "Chat 5",
         "text": "Às vezes, eu via refugiados vagando pelas terras selvagens, ou açougueiros devastando cidades inteiras. Em um instante, eu estava podando flores no jardim; no outro, estava me engasgando com produtos químicos no laboratório. Lutei contra figuras sombrias cujos rostos eu não conseguia ver, e nunca soube por que estávamos lutando... Ei, pare de cochilar. Eu mal comecei."
       },
       {
+        "voId": "chr_0016_laevat_mono_about_line01",
         "title": "Tópico: Seš'qa",
         "text": "Minha casa? Já estive em um lugar chamado Seš'qa. Eles tinham prédios, língua, festivais e bruxaria que... pareciam familiares o suficiente para serem um \"lar\". Mas não voltarei àquele lugar a menos que haja um bom motivo — o povo deles era muito caloroso e apaixonado. Alguns até me chamaram de Diαblo... Argh. Digamos que isso me irritou e eu baguncei o lugar... só um pouquinho..."
       },
       {
+        "voId": "chr_0016_laevat_mono_about_line02",
         "title": "Tópico: Yvonne",
         "text": "Aquela Vouivre de cabelo rosa sempre me pede para testar o seu Frost-e-Bytee. Nunca conseguiu apagar minha chama. Mas... ela faz sorvetes lindos e chiques, e o sabor não é nada mau."
       },
       {
+        "voId": "chr_0016_laevat_mono_about_line03",
         "title": "Tópico: Circuito Hannabit",
         "text": "Uma Caçadora de Músicas do Circuito Hannabit me disse uma vez: \"O fogo é um demônio nas mãos do vento, mas um amigo nas mãos da humanidade\". A Caçadora de Músicas não demonstrou medo de fogo. Ela até me ensinou a criar linhas de fogo do outro lado das terras selvagens. Consegui conter um incêndio florestal que se alastrava. Os aldeões que sobreviveram ao desastre nos chamaram de heróis, mas minha mente permaneceu fixa no cabragato que salvamos. Deixei que ela ficasse com o pequeno. Que pena."
       },
       {
+        "voId": "chr_0016_laevat_mono_about_line04",
         "title": "Tópico: CGCT",
         "text": "Preciso resolver uma coisa. A divisão de RH me pediu para encaminhar esse assunto a você pessoalmente. Aqui está. Um cartaz de procurado. Não é grande coisa. Aconteceu logo após eu deixar a Rhodes Island. Um lugar chamado Rotatória de Asfalto me acusou de incêndio criminoso. Eles deveriam culpar a si mesmos. Um negócio sujo cheio de lixo inflamável deveria pelo menos esperar alguns incêndios."
       },
       {
+        "voId": "chr_0016_laevat_mono_about_line05",
         "title": "Tópico: Sami",
         "text": "Vou repetir. Nunca estive em Terra. Pessoalmente. Então, não me fale sobre os pontos turísticos, as pessoas ou a cultura daquele lugar... A menos, é claro, que você esteja falando dos Sami. Ouvi dizer que o \"lar\" deles os levou para Talos-II. Se tivermos uma missão naquele lugar, me ligue."
       },
       {
+        "voId": "chr_0016_laevat_explore_point_common_01",
         "title": "Recurso/Colecionável detectado 1",
         "text": "Vejo algo ali. Se não servir para nada, podemos usá-lo para testar nossas lâminas."
       },
       {
+        "voId": "chr_0016_laevat_explore_point_valub_01",
         "title": "Recurso/Colecionável detectado 2",
         "text": "Algo que vale a pena lembrar aí."
       },
       {
+        "voId": "chr_0016_laevat_explore_find_locked_01",
         "title": "Área não explorada detectada",
         "text": "Podemos dar uma olhada. Sem problemas. Só fique perto de mim."
       },
       {
+        "voId": "chr_0016_laevat_explore_find_danger_01",
         "title": "Inimigo poderoso descoberto",
         "text": "Está vendo aquele? Quer que eu dê uma arrumada nele?"
       },
       {
+        "voId": "chr_0016_laevat_interact_mine_valub_01",
         "title": "Mineração 1",
         "text": "Somente verdadeiros itens de valor sobrevivem à chama."
       },
       {
+        "voId": "chr_0016_laevat_interact_mine_valub_echo2_01",
         "title": "Mineração 2",
         "text": "Muito lento. Detesto ficar parada sem nada para fazer."
       },
       {
+        "voId": "chr_0016_laevat_interact_treasure_valub_01",
         "title": "Abrindo um caixote",
         "text": "Lembro que você meio que gosta disso."
       },
       {
+        "voId": "chr_0016_laevat_interact_etherium_01",
         "title": "Adquirindo Aurileno",
         "text": "Aurileno... Uma coisa tão pouco confiável quanto minhas memórias."
       },
       {
+        "voId": "chr_0016_laevat_interact_blight_break_01",
         "title": "Eliminando a Praga",
         "text": "Tenha cuidado. Isso é muito mais perigoso que fogo."
       },
       {
+        "voId": "chr_0016_laevat_interact_rest_01",
         "title": "Descansar",
         "text": "Tente se aproximar de mim se ainda estiver com frio."
       },
       {
+        "voId": "chr_0016_laevat_combat_suppuse_using_01",
         "title": "Uso Tático 1",
         "text": "Vamos lá, me poupe do teatro."
       },
       {
+        "voId": "chr_0016_laevat_combat_suppuse_getheal_01",
         "title": "Uso Tático 2",
         "text": "Humpf. Estou melhor agora."
       },
       {
+        "voId": "chr_0016_laevat_combat_remind_danger_01",
         "title": "Aviso de Perigo",
         "text": "Não fique aí de bobeira, ande!"
       },
       {
+        "voId": "chr_0016_laevat_combat_hurt_lowhp_01",
         "title": "Ferido",
         "text": "Tsk... Isso não vai me matar."
       },
       {
+        "voId": "chr_0016_laevat_combat_dead_01",
         "title": "0 PV",
         "text": "Maldita seja essa... lembrança da derrota..."
       },
       {
+        "voId": "chr_0016_laevat_combat_remind_praise_01",
         "title": "Encorajamento da Equipe 1",
         "text": "Humpf. Vou me lembrar disso."
       },
       {
+        "voId": "chr_0016_laevat_combat_remind_praise_02",
         "title": "Encorajamento da Equipe 2",
         "text": "Nada mal. Eu cuido do próximo."
       },
       {
+        "voId": "chr_0016_laevat_combat_remind_praise_echo2_01",
         "title": "Resposta a Encorajamento 1",
         "text": "Eu sei."
       },
       {
+        "voId": "chr_0016_laevat_combat_remind_praise_echo2_02",
         "title": "Resposta a Encorajamento 2",
         "text": "É apenas parte do meu trabalho."
       },
       {
+        "voId": "chr_0016_laevat_combat_intobattle_01",
         "title": "Início do Combate 1",
         "text": "Agora é hora de trazer a dor."
       },
       {
+        "voId": "chr_0016_laevat_combat_intobattle_echo2_01",
         "title": "Início do Combate 2",
         "text": "Até que enfim."
       },
       {
+        "voId": "chr_0016_laevat_combat_outbattle_nor_01",
         "title": "Vitória em Combate 1",
         "text": "Isso não serve nem para aquecer."
       },
       {
+        "voId": "chr_0016_laevat_combat_outbattle_nor_02",
         "title": "Vitória em Combate 2",
         "text": "A vitória é óbvia."
       },
       {
+        "voId": "chr_0016_laevat_combat_outbattle_nor_echo2_01",
         "title": "Vitória em Combate 3",
         "text": "Acho que vou me juntar às suas comemorações."
       },
       {
+        "voId": "chr_0016_laevat_combat_outbattle_hard_01",
         "title": "Vitória em Combate 4",
         "text": "Você se saiu bem. Da próxima vez, deixe a luta difícil comigo."
       },
       {
+        "voId": "chr_0016_laevat_combat_battle_defeat_01",
         "title": "Derrota em Combate",
         "text": "Não permitirei que isso aconteça novamente."
       },
       {
+        "voId": "chr_0016_laevat_mono_attack_last_01",
         "title": "Golpe Final 1",
         "text": "Bata!"
       },
       {
+        "voId": "chr_0016_laevat_mono_attack_last_02",
         "title": "Golpe Final 2",
         "text": "Morra!"
       },
       {
+        "voId": "chr_0016_laevat_mono_skill_nor_01",
         "title": "Habilidade de Batalha 1",
         "text": "Chama da fusão!"
       },
       {
+        "voId": "chr_0016_laevat_mono_skill_nor_02",
         "title": "Habilidade de Batalha 2",
         "text": "Incinere!"
       },
       {
+        "voId": "chr_0016_laevat_mono_skill_nor_03",
         "title": "Habilidade de Batalha 3",
         "text": "Queime!"
       },
       {
+        "voId": "chr_0016_laevat_combat_skill_comb_ready_01",
         "title": "Combo de Habilidades Pronto 1",
         "text": "Deixe comigo!"
       },
       {
+        "voId": "chr_0016_laevat_combat_skill_comb_ready_02",
         "title": "Combo de Habilidades Pronto 2",
         "text": "O inferno está esperando!"
       },
       {
+        "voId": "chr_0016_laevat_mono_skill_comb_release_01",
         "title": "Conjuração de Combo 1",
         "text": "Queime até virar cinzas!"
       },
       {
+        "voId": "chr_0016_laevat_mono_skill_comb_release_02",
         "title": "Conjuração de Combo 2",
         "text": "Vire cinzas!"
       },
       {
+        "voId": "chr_0016_laevat_mono_attack_extra_01",
         "title": "Finalizador 1",
         "text": "Não há escapatória!"
       },
       {
+        "voId": "chr_0016_laevat_mono_attack_extra_02",
         "title": "Finalizador 2",
         "text": "Você vai morrer!"
       },
       {
+        "voId": "chr_0016_laevat_mono_skill_ultimate_01",
         "title": "Habilidade Suprema 1",
         "text": "Deixe esse crepúsculo queimar!"
       },
       {
+        "voId": "chr_0016_laevat_mono_skill_ultimate_02",
         "title": "Habilidade Suprema 2",
         "text": "Eu cremarei a escuridão!"
       },
       {
+        "voId": "chr_0016_laevat_mono_skill_ultimate_03",
         "title": "Habilidade Suprema 3",
         "text": "Seu fim está próximo!"
       }

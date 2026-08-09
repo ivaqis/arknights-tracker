@@ -129,322 +129,402 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0024_deepfin_chrbark_squad_01",
         "title": "作戦準備1",
         "text": "もうオレの出番かよ？"
       },
       {
+        "voId": "chr_0024_deepfin_chrbark_squad_02",
         "title": "作戦準備2",
         "text": "あんたがいたら、さすがにボウズってことはねーよな。"
       },
       {
+        "voId": "chr_0024_deepfin_chrbark_join_01",
         "title": "編成1",
         "text": "実は昨日足ひねっちまって……あーあとは腰も首も微妙に痛ぇっつーか……"
       },
       {
+        "voId": "chr_0024_deepfin_chrbark_join_02",
         "title": "編成2",
         "text": "ここ、強えーヤツばっかじゃん？オレがいなくても変わんね―って。"
       },
       {
+        "voId": "chr_0024_deepfin_chrbark_weap_01",
         "title": "武器取替",
         "text": "まあ、竹竿よりはマシってか？ポッキリ折れたりはしねーだろ。"
       },
       {
+        "voId": "chr_0024_deepfin_chrbark_gear_01",
         "title": "装備取替",
         "text": "これでケガしねーで済むな。"
       },
       {
+        "voId": "chr_0024_deepfin_chrup_skill_01",
         "title": "素質・配属スキル解放",
         "text": "これが1週間特訓した成果ってヤツか？オレがここまでやるって、奇跡だって。"
       },
       {
+        "voId": "chr_0024_deepfin_chrup_level_01",
         "title": "経験値素材を使用",
         "text": "テレビよりずっとおもしれーし、毎回内容も違うしで飽きねぇな。"
       },
       {
+        "voId": "chr_0024_deepfin_chrup_promt01_01",
         "title": "昇進1",
         "text": "すげー大げさだな……さすがのオレも戸惑うって。よくわかんねーけど、礼言っとけばいいだろ？"
       },
       {
+        "voId": "chr_0024_deepfin_chrup_promt02_01",
         "title": "昇進2",
         "text": "そんな褒めんなって、管理人。オレ、褒められるとすぐダメんなるから。"
       },
       {
+        "voId": "chr_0024_deepfin_chrup_promt03_01",
         "title": "昇進3",
         "text": "1人で全部抱えんのは普通にしんどいだろ。しゃあねえ、オレが手伝ってやるよ。"
       },
       {
+        "voId": "chr_0024_deepfin_chrup_promt04_01",
         "title": "昇進4",
         "text": "昇進したのはオレなのに、あんたのほうが嬉しそうじゃねーか？じゃ、焼肉いくか。最高級のヤツな。もちろん、あんたの奢り。"
       },
       {
+        "voId": "chr_0024_deepfin_introduce_01",
         "title": "入職会話",
         "text": "あー、場所ってここで合ってんのか？オレはアレッシュ。趣味は読書、特技は目閉じたまま鱗獣釣ること。ま、よろしく。"
       },
       {
+        "voId": "chr_0024_deepfin_mono_switch_01",
         "title": "待機1",
         "text": "あったけーな。サイコーの昼寝日和ってヤツ？"
       },
       {
+        "voId": "chr_0024_deepfin_mono_switch_02",
         "title": "待機2",
         "text": "知らねーうちに財布すっからかん……"
       },
       {
+        "voId": "chr_0024_deepfin_sim_assign_work_01",
         "title": "船室配属",
         "text": "なんつーか、任務って聞くとやる気出ねぇっつーか……ちょっと休んでから行くわ。"
       },
       {
+        "voId": "chr_0024_deepfin_sim_hello_lower_01",
         "title": "挨拶1",
         "text": "おう、また会ったな。今日の任務はどんな感じだったんだ？"
       },
       {
+        "voId": "chr_0024_deepfin_sim_hello_max_01",
         "title": "挨拶2",
         "text": "疲れねーのか？オレみてーにテキトーにサボるのも大事だぜ。"
       },
       {
+        "voId": "chr_0024_deepfin_sim_talk_lv01_01",
         "title": "帝江号雑談1",
         "text": "もうやることねーよな？このあと釣り番組の再放送あんだよ。早く行かねーと。"
       },
       {
+        "voId": "chr_0024_deepfin_sim_talk_lv02_01",
         "title": "帝江号雑談2",
         "text": "あの雪と氷に覆われた場所が北地だろ？こんな景色、エンドフィールドに来なきゃ、永遠に拝むことなかっただろうな。帝江号に来たばっかのときは、窓から外見るだけでビビってた。でも慣れちまうと、空からタロⅡを眺めるこの感じ、悪くねーもんだな。"
       },
       {
+        "voId": "chr_0024_deepfin_sim_talk_lv02_02",
         "title": "帝江号雑談3",
         "text": "実力？ま、剣をテキトーに振り回してるだけの我流だって。3メートルある牙獣とか、動き回る蔓とか、鋼のアンゲロスとか、あとは金貸してんのにトンズラする「マブタチ」――あたりをぶった斬っとけば、おまえもこれくらいは余裕だろ。"
       },
       {
+        "voId": "chr_0024_deepfin_sim_talk_max_01",
         "title": "帝江号雑談4",
         "text": "このトシにもなれば、興味持つことなんてどんどんなくなっちまう。ま、釣りくれぇじゃね？現実逃避ってヤツできんの……って、オレが若いってか？何言ってんだよ。あんたのがずっと――あー、管理人。あんた、いくつだ？"
       },
       {
+        "voId": "chr_0024_deepfin_sim_talk_max_02",
         "title": "帝江号雑談5",
         "text": "今読んでる本、全然大したことねーヤツらの話ばっかでさ。ぶっちゃけ、生きがいとか心の葛藤とかは興味ねーんだけど、本書いたやつはマジでこんな体験してんだよな。柄にもなく感動し……って、なんだよその顔。尊敬してるって話だっつの。"
       },
       {
+        "voId": "chr_0024_deepfin_sim_talk_max_03",
         "title": "帝江号雑談6",
         "text": "オレの取り柄はしぶとさくらいだよ。どんだけボロボロなっても、簡単にはくたばらねーよ。オレには大切なヤツらがたくさんいる――昔の仲間に大家のジイさん、あとはあんたたちも。どんなだったとしても、オレが立ち上がって戦ってやるから。"
       },
       {
+        "voId": "chr_0024_deepfin_sim_gift_give_01",
         "title": "プレゼントを贈る",
         "text": "これ、やるよ。2つで半額だったし、ついでに買ってきてやった。「お買い得」だろ？"
       },
       {
+        "voId": "chr_0024_deepfin_sim_gift_recv_01",
         "title": "プレゼントを受け取る",
         "text": "オレにか？借金の督促状か脅迫状以外、まともなプレゼントなんて貰えるわけねーって思ってたわ。"
       },
       {
+        "voId": "chr_0024_deepfin_mono_self_line01",
         "title": "信頼上昇後会話1",
         "text": "気分でも悪ぃのか？わけーんだからよ、気抜いていーんだって。今キツいったって、この先もっと面倒でツラいこともある。なら今なんてマシ、そー思わねえ？"
       },
       {
+        "voId": "chr_0024_deepfin_mono_self_line02",
         "title": "信頼上昇後会話2",
         "text": "エンドフィールドに来たきっかけ？工業団引退した大家のジイさんだよ。クソこえー顔したな。オレの店が全然ダメで、家賃滞納しまくってたら勝手に仕事探してきたんだよ。履歴書に何書いたか知らねーが、まさか通るなんてな。"
       },
       {
+        "voId": "chr_0024_deepfin_mono_self_line03",
         "title": "信頼上昇後会話3",
         "text": "それ、何持ってんだ？「ラ・エストラーダ2代目当主」……写真のヤツがオレに似てるって？それ知って、どうなんの？誰にだって消しちまいたい過去の1つや2つ、あんだろ。大事なのは、今をちゃんと生きることなんだって。まさか、そんなつまんねー過去のことで、オレを避けたりしねえ、そーだろ？……ん？なんでペリカに保安局の連絡先なんて聞こうとしてんだ？"
       },
       {
+        "voId": "chr_0024_deepfin_mono_self_line04",
         "title": "信頼上昇後会話4",
         "text": "「エストラーダ・ウルサナ」とか「ラ・エストラーダ」って言うヤツもいる――オレがいた組織だ。このバカでけー都市じゃ、人目を避けて、オレたちみてーな「ちっぽけなヤツら」が必ず湧いてくんだよ。薄汚ねえとこで育って、仲間もできて、もっとデカい組織に取り込まれて……気づきゃボスんなってた。んで、よくわかんねーままバラバラになっちまった……今じゃ鱗獣を売って食い扶持稼いでる。こんなんなら、20年前に鱗獣の加工場にでも入っとくんだったな。"
       },
       {
+        "voId": "chr_0024_deepfin_mono_self_line05",
         "title": "信頼上昇後会話5",
         "text": "じーっと見てっけど、傷、気になるか？オレみてーなヤツは、昔話はしねーんだ。過ぎたことをいつまでも引きずったって意味ねーからよ……おい、管理人、待てって！別に隠すほどのことじゃねえよ。命を預けた仲間を守るために、もう1人の仲間に斬られた。それから、オレの見える世界は半分になった。ただそれだけだ。それだけの、つまんねー話だよ。"
       },
       {
+        "voId": "chr_0024_deepfin_mono_chat_line01",
         "title": "会話1",
         "text": "釣り竿は投げても糸で巻き取れっけど、人は渦に巻き込まれたら抜け出せねえ。釣りと人はちげーんだよ。だから、せめて楽しく生きろ。管理人、これが経験者からのアドバイスってヤツだよ。"
       },
       {
+        "voId": "chr_0024_deepfin_mono_chat_line02",
         "title": "会話2",
         "text": "店はどんどんヤバくはなってる。エンドフィールドの給料がなきゃ、店の家賃も払えねえ。ま、端から金儲けする気もねーし、値切りもツケも言うままだしよ。大漁の日は、周りのヤツらにも配るしな……大変なのはどこも変わらねえから。そーいや、前ドロボーが入ったのに金目のものがねーからって手紙残してったんだ。「こんなビンボー臭えとこは初めてだ！」ってな。"
       },
       {
+        "voId": "chr_0024_deepfin_mono_chat_line03",
         "title": "会話3",
         "text": "オレのモットーは「小せーことは我慢、デカい問題は回避」……どーしてもムリならやるしかねーけど……そうなりゃ、二度と立ち上がれねーくらいにブチのめす。"
       },
       {
+        "voId": "chr_0024_deepfin_mono_chat_line04",
         "title": "会話4",
         "text": "目が気になるか？不便っちゃそうだけど。さっきもあんたが声をかけてきたのはオレの死角だった。なーんて言ったってもう気にしてねーよ。全部見えちまうより、見えないことを想像するほうが唆るだろ？"
       },
       {
+        "voId": "chr_0024_deepfin_mono_chat_line05",
         "title": "会話5",
         "text": "昨日の占い番組、「今日の運勢はサイコー！」って。でも家出て速攻で下水道落ちた。全然当てになんねーじゃんって思ったら、ダイヤの指輪拾っちまって。あーこれが運ってヤツかって。ま、落としたヤツがかわいそーだし、持ち主探して返したよ。運もまた巡って戻ってくるかもしんねーしな。"
       },
       {
+        "voId": "chr_0024_deepfin_mono_about_line01",
         "title": "組織について",
         "text": "オレは無法地帯みてーな開拓エリアの出身だ。子どもは孤児か、じゃなくてもろくでもねえ家のヤツだ。オレは孤児で、学校にも通えねーし、住む場所さえなかったよ。ただ生き延びるためだけに街でケンカばっかしてた。でも、地獄みてーな場所だと妙な連帯感ってのが生まれたりもする。反りが合わねーヤツら同士が寄り添って、家族みてーになった。混沌とした街でも自分たちのルール作って、必死に生きてきたんだよ。"
       },
       {
+        "voId": "chr_0024_deepfin_mono_about_line02",
         "title": "大家について",
         "text": "大家のジイさんから手紙来てよ。家賃の催促じゃねえ、近況教えろって。「どうせ面倒だってロクでもねー生活してんだろ」……ジイさん、若い頃は結構なお偉いさんだったみてーだけど、なんでこんな気かけてくれんのかわかんねえ。息子代わりに老後の面倒見てもらおうってか？……ま、どうでもいいな。膝痛えっつってたし、マッサージ機でも送るか。オレよりまず、自分の心配しろっつんだよ。んで、直接来りゃいいのに。"
       },
       {
+        "voId": "chr_0024_deepfin_mono_about_line03",
         "title": "タロスシティについて",
         "text": "タロスシティは、タロⅡにとっちゃ特別な意味がある。悔恥戦争のあと、三巨頭が『文明地帯公約』を結び、テラ人の生存の地としてタロⅡで初めての中立都市を築いた――歴史書はこんなんだけど、100年経っても完成しねー都市……オレに言わせりゃ「ジジイが槍握って、山の先の夕日を目指してる」ってとこか？どうだ？カッコよくねえ？ま、ウルサス文学もダテに読んでねーしな。"
       },
       {
+        "voId": "chr_0024_deepfin_mono_about_line04",
         "title": "鱗獣について",
         "text": "あのヘンな鱗獣をどこで釣ったかって？長ぇ話なるけど……オレ、昔は武器をぶん回してケンカしまくってた。「源石アーツ」ってさえまともに言えなかったよ。で、片目潰してぼーっとしてたら、死角に何か見える感覚があって。すげー鬱陶しくて釣りんとき思いっきり竿を振り上げたら――「バシャンッ！」――そのあとはあんたも知ってる通りだ。ジイさんの話だと、アーツの素質があったらしーけどな。ま、いいことか悪ぃことかってのは、全然わかんねえよ。"
       },
       {
+        "voId": "chr_0024_deepfin_explore_point_common_01",
         "title": "発見：資源1",
         "text": "見に行かねーか？値打ちもんかもだろ。"
       },
       {
+        "voId": "chr_0024_deepfin_explore_point_valub_01",
         "title": "発見：資源2",
         "text": "高値で売れんじゃねー？ツイてんなあ。"
       },
       {
+        "voId": "chr_0024_deepfin_explore_find_locked_01",
         "title": "発見：未探索エリア",
         "text": "何かヤベえ雰囲気だな……気ぃつけろ。"
       },
       {
+        "voId": "chr_0024_deepfin_explore_find_danger_01",
         "title": "発見：強敵",
         "text": "面倒なヤツがいる。油断すんなよ。"
       },
       {
+        "voId": "chr_0024_deepfin_interact_mine_valub_01",
         "title": "鉱物採集1",
         "text": "これって、売れんのか？"
       },
       {
+        "voId": "chr_0024_deepfin_interact_mine_valub_echo2_01",
         "title": "鉱物採集2",
         "text": "イイもんばっかじゃね？ガッツリ持って帰ろーぜ。"
       },
       {
+        "voId": "chr_0024_deepfin_interact_treasure_valub_01",
         "title": "資源箱開封",
         "text": "っぱツイてんな。占い番組もバカにできねーな。"
       },
       {
+        "voId": "chr_0024_deepfin_interact_etherium_01",
         "title": "オーリレン入手",
         "text": "ん……やたら不思議な……もっかい見ていいか？"
       },
       {
+        "voId": "chr_0024_deepfin_interact_blight_break_01",
         "title": "侵蝕排除",
         "text": "っし、これでいーだろ。"
       },
       {
+        "voId": "chr_0024_deepfin_interact_rest_01",
         "title": "回復",
         "text": "っと、久々バッチリ休めたし……気合、入れてくか。"
       },
       {
+        "voId": "chr_0024_deepfin_combat_suppuse_using_01",
         "title": "戦闘補助アイテム使用1",
         "text": "ほらよ、受け取れ。"
       },
       {
+        "voId": "chr_0024_deepfin_combat_suppuse_getheal_01",
         "title": "戦闘補助アイテム使用2",
         "text": "あぶねー、ブッ倒れるとこだった。"
       },
       {
+        "voId": "chr_0024_deepfin_combat_remind_danger_01",
         "title": "警告",
         "text": "おい、避けろって！"
       },
       {
+        "voId": "chr_0024_deepfin_combat_hurt_lowhp_01",
         "title": "負傷",
         "text": "こんぐれーじゃ倒れねえ。"
       },
       {
+        "voId": "chr_0024_deepfin_combat_dead_01",
         "title": "戦闘不能",
         "text": "絶対……何がなんでも……"
       },
       {
+        "voId": "chr_0024_deepfin_combat_remind_praise_01",
         "title": "激励1",
         "text": "やる気、すげーな！"
       },
       {
+        "voId": "chr_0024_deepfin_combat_remind_praise_02",
         "title": "激励2",
         "text": "人多いと、っぱ助かるな。"
       },
       {
+        "voId": "chr_0024_deepfin_combat_remind_praise_echo2_01",
         "title": "激励応答1",
         "text": "大したことねー。"
       },
       {
+        "voId": "chr_0024_deepfin_combat_remind_praise_echo2_02",
         "title": "激励応答2",
         "text": "おめーらのおかげ……だな。"
       },
       {
+        "voId": "chr_0024_deepfin_combat_intobattle_01",
         "title": "作戦開始1",
         "text": "そろそろマジでやってみっか？"
       },
       {
+        "voId": "chr_0024_deepfin_combat_intobattle_echo2_01",
         "title": "作戦開始2",
         "text": "テキトーにやっていいぜ、オレが守るし。"
       },
       {
+        "voId": "chr_0024_deepfin_combat_outbattle_nor_01",
         "title": "作戦終了1",
         "text": "ヤバかったけど、締めはバッチリだったな。"
       },
       {
+        "voId": "chr_0024_deepfin_combat_outbattle_nor_02",
         "title": "作戦終了2",
         "text": "まあまあ、楽にいけたな。"
       },
       {
+        "voId": "chr_0024_deepfin_combat_outbattle_nor_echo2_01",
         "title": "作戦終了3",
         "text": "っし、おめーら、良かったぜ。"
       },
       {
+        "voId": "chr_0024_deepfin_combat_outbattle_hard_01",
         "title": "作戦終了4",
         "text": "結果オーライ。細けーこと気にすんなって。"
       },
       {
+        "voId": "chr_0024_deepfin_combat_battle_defeat_01",
         "title": "作戦失敗",
         "text": "もう終わったことだろ。くよくよすんな。次やれればいーんだって。"
       },
       {
+        "voId": "chr_0024_deepfin_mono_attack_last_01",
         "title": "重攻撃1",
         "text": "行くぞ！"
       },
       {
+        "voId": "chr_0024_deepfin_mono_attack_last_02",
         "title": "重攻撃2",
         "text": "ブッ飛ばす！"
       },
       {
+        "voId": "chr_0024_deepfin_mono_skill_nor_01",
         "title": "戦技1",
         "text": "試してみるか？"
       },
       {
+        "voId": "chr_0024_deepfin_mono_skill_nor_02",
         "title": "戦技2",
         "text": "頭冷やせよ。"
       },
       {
+        "voId": "chr_0024_deepfin_mono_skill_nor_03",
         "title": "戦技3",
         "text": "さみーな。"
       },
       {
+        "voId": "chr_0024_deepfin_combat_skill_comb_ready_01",
         "title": "連携技準備完了1",
         "text": "反撃すっか。"
       },
       {
+        "voId": "chr_0024_deepfin_combat_skill_comb_ready_02",
         "title": "連携技準備完了2",
         "text": "いつでもいけるぜ。"
       },
       {
+        "voId": "chr_0024_deepfin_mono_skill_comb_release_01",
         "title": "連携技1",
         "text": "何が釣れるんだろーなあ？"
       },
       {
+        "voId": "chr_0024_deepfin_mono_skill_comb_release_02",
         "title": "連携技2",
         "text": "邪魔すんなよなあ！"
       },
       {
+        "voId": "chr_0024_deepfin_mono_attack_extra_01",
         "title": "終撃1",
         "text": "鱗獣も怒るぜ！"
       },
       {
+        "voId": "chr_0024_deepfin_mono_attack_extra_02",
         "title": "終撃2",
         "text": "エサ撒いたばっかだぜ？"
       },
       {
+        "voId": "chr_0024_deepfin_mono_skill_ultimate_01",
         "title": "必殺技1",
         "text": "かかった！"
       },
       {
+        "voId": "chr_0024_deepfin_mono_skill_ultimate_02",
         "title": "必殺技2",
         "text": "エサはお前だっつーの！"
       },
       {
+        "voId": "chr_0024_deepfin_mono_skill_ultimate_03",
         "title": "必殺技3",
         "text": "いっぱい食べていいぞ？"
       }

@@ -120,322 +120,402 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0023_antal_chrbark_squad_01",
         "title": "Preparación de la operación 1",
         "text": "Mmm. Otro turno comienza."
       },
       {
+        "voId": "chr_0023_antal_chrbark_squad_02",
         "title": "Preparación de la operación 2",
         "text": "¿Quién será el sujeto de pruebas esta vez?"
       },
       {
+        "voId": "chr_0023_antal_chrbark_join_01",
         "title": "Añadir al equipo 1",
         "text": "¿Una misión para mí? Bien. Justo estoy buscando oportunidades para probar en campo los orbitadores modificados."
       },
       {
+        "voId": "chr_0023_antal_chrbark_join_02",
         "title": "Añadir al equipo 2",
         "text": "Si tienes un plan, solo da las órdenes. Confío en tu juicio."
       },
       {
+        "voId": "chr_0023_antal_chrbark_weap_01",
         "title": "Cambiar de arma",
         "text": "Un arma nueva y sin calibrar. Debo someterla a una ronda de evaluaciones de rendimiento."
       },
       {
+        "voId": "chr_0023_antal_chrbark_gear_01",
         "title": "Cambiar de equipamiento",
         "text": "El nuevo equipamiento muestra mejoras significativas. Sin embargo, se atasca con mis escamas dérmicas."
       },
       {
+        "voId": "chr_0023_antal_chrup_skill_01",
         "title": "Activación de la matriz de habilidades",
         "text": "Mmm... Agradezco las instrucciones. Han inspirado una nueva ilación."
       },
       {
+        "voId": "chr_0023_antal_chrup_level_01",
         "title": "Viendo los registros de combate",
         "text": "Un plan de batalla impresionante, Endministrator. Me alegra formar parte de tus operaciones."
       },
       {
+        "voId": "chr_0023_antal_chrup_promt01_01",
         "title": "Ascenso de operador 1",
         "text": "¿Un aumento? Agradezco los fondos adicionales para adquirir más dispositivos de Originio y Unidades de las artes. Mi investigación y mi reserva personal crecerán."
       },
       {
+        "voId": "chr_0023_antal_chrup_promt02_01",
         "title": "Ascenso de operador 2",
         "text": "¿Un ascenso, pero con más trabajo en el futuro? Entendido. Entonces, ¿hay alguna nueva misión para mí?"
       },
       {
+        "voId": "chr_0023_antal_chrup_promt03_01",
         "title": "Ascenso de operador 3",
         "text": "¿Es esto un incentivo para mi sed de conocimiento? Acabo de terminar un informe sobre el Núcleo de automatización de protocolos. Puedes revisarlo por si se me ha pasado algo por alto."
       },
       {
+        "voId": "chr_0023_antal_chrup_promt04_01",
         "title": "Ascenso de operador 4",
         "text": "La vida en Endfield es muy distinta a mis días en la Academia. En aquel entonces obtenía mi promedio de calificaciones sin dificultad con mi investigación, pero ahora eso ya no parece tan importante. Debo aprender a confiar en mis compañeros y a lograr resultados como equipo."
       },
       {
+        "voId": "chr_0023_antal_introduce_01",
         "title": "Operador reportándose para el deber",
         "text": "Antal del Op Z7, reportándose para el deber. He estudiado automatización con Originio y ocasionalmente ayudo a modificar o reparar dispositivos de Originio. Puedes acercarte a mí para esas tareas... Y tengo una pregunta para ti. ¿De qué material está hecha tu máscara? ¿Fibra de carbono?"
       },
       {
+        "voId": "chr_0023_antal_mono_switch_01",
         "title": "En espera 1",
         "text": "¿Tienes algo que conversar conmigo?"
       },
       {
+        "voId": "chr_0023_antal_mono_switch_02",
         "title": "En espera 2",
         "text": "Estoy tratando de escribir un mal chiste para ti."
       },
       {
+        "voId": "chr_0023_antal_sim_assign_work_01",
         "title": "Asignando a una instalación",
         "text": "¿Una nueva asignación de trabajo? Afirmativo."
       },
       {
+        "voId": "chr_0023_antal_sim_hello_lower_01",
         "title": "Saludo 1",
         "text": "Estoy disponible para responder preguntas sobre dispositivos de Originio, entre otras cosas."
       },
       {
+        "voId": "chr_0023_antal_sim_hello_max_01",
         "title": "Saludo 2",
         "text": "Curiosamente, tu presencia aumenta mucho mi deseo de compartir mis vastos conocimientos."
       },
       {
+        "voId": "chr_0023_antal_sim_talk_lv01_01",
         "title": "Charla casual en la Dijiang 1",
         "text": "¿Puedo inspeccionar tu armamento, Endmin? Mmm. El único problema que veo es el desgaste de ciertos componentes. Reemplazar un componente de precisión de Originio lo solucionará. Esta reparación no será un gran problema. Ofrezco este servicio a todos los integrantes del Equipo Z7."
       },
       {
+        "voId": "chr_0023_antal_sim_talk_lv02_01",
         "title": "Charla casual en la Dijiang 2",
         "text": "Mis estudios sobre la Dijiang revelan que es el pináculo de la ingeniería. El Control central, el Nodo de red de protoplataformas, los Sistemas de soporte vital y otras partes de la nave ofrecen muchas oportunidades de aprendizaje. Me ha brindado los fundamentos para mi próxima tesis."
       },
       {
+        "voId": "chr_0023_antal_sim_talk_lv02_02",
         "title": "Charla casual en la Dijiang 3",
         "text": "Tengo un chiste basado en experiencias personales de Fluorite. ¿Cómo se debe responder a un mensaje amenazante de un antagonista? Respuesta: darse de baja. Te has reído. Este chiste ha sido comprobado como gracioso. Pero ¿por qué los demás no se rieron como tú?"
       },
       {
+        "voId": "chr_0023_antal_sim_talk_max_01",
         "title": "Charla casual en la Dijiang 4",
         "text": "Si tus emociones son frías, acompáñame al exterior. La radiación solar induce la secreción de serotonina cerebral que alivia emociones negativas. Había un parque con fuente cerca de mi Academia, uno que ofrecía serenidad y bastante exposición solar. Durante mis estudios en la Academia, ese parque era mi lugar de descanso cuando estaba exhausto."
       },
       {
+        "voId": "chr_0023_antal_sim_talk_max_02",
         "title": "Charla casual en la Dijiang 5",
         "text": "La carta de respuesta de mi abuela llegó ayer. Parece bastante interesada en cierta persona que mencioné repetidamente en mis cartas. Transmitiré su mensaje a la persona en cuestión, que resultas ser tú, Endmin: “Ya deberías saber que cierto joven Savra puede ser bastante terco, aunque de buen corazón. Tenle paciencia. Me gustaría compartir una taza de té contigo y contarte más sobre cómo crié a ese pequeño escamoso.”"
       },
       {
+        "voId": "chr_0023_antal_sim_talk_max_03",
         "title": "Charla casual en la Dijiang 6",
         "text": "Muchas personas observan Talos-II desde las cubiertas de la Dijiang. Yo hice lo mismo, y aunque ofrecía una perspectiva novedosa, no compartí la nostalgia que ellos sentían. Tal vez sea culpa de mi abuela. Ella me enseñó: “No te obsesiones con el pasado. Busca y amplía tu futuro.”"
       },
       {
+        "voId": "chr_0023_antal_sim_gift_give_01",
         "title": "Ofreciendo regalos",
         "text": "Las convenciones sociales dictan que las personas intercambien regalos para expresar sus sentimientos. He preparado este obsequio para ti, destinatario."
       },
       {
+        "voId": "chr_0023_antal_sim_gift_recv_01",
         "title": "Aceptando regalos",
         "text": "Estoy agradecido. Comprendo el significado de ofrecer un regalo y atesoraré este presente."
       },
       {
+        "voId": "chr_0023_antal_mono_self_line01",
         "title": "Diálogo de confianza 1",
         "text": "Unirme a Endfield no fue una decisión difícil. Ofrece tecnologías nuevas que están ausentes en la Academia. La sociedad científica puede ser excesivamente conservadora en el avance de ciertos campos. Endfield, en cambio, muestra un admirable espíritu de exploración, innovación y aplicación práctica."
       },
       {
+        "voId": "chr_0023_antal_mono_self_line02",
         "title": "Diálogo de confianza 2",
         "text": "¿Mi libro? Efectivamente es la Selección de desafíos extremos de sudoku. Los acertijos aritméticos me ayudan a modular mis emociones durante el tiempo que estoy inactivo. He compartido este pasatiempo con los miembros de Z7, pero su recepción fue negativa. ¿Quizás puedas intentarlo, Endmin?"
       },
       {
+        "voId": "chr_0023_antal_mono_self_line03",
         "title": "Diálogo de confianza 3",
         "text": "¿Un mal chiste para mí? Estoy dispuesto a escucharlo. “¿Por qué un Savra solo cuenta chistes cursis durante el día? Porque salió el sol, ¡y hasta la vergüenza merece un poco de vitamina D!”... Hrra-Hrra-Hrra. No fue mi intención ofenderte, Endmin. Ese es el sonido de la risa genuina de un Savra."
       },
       {
+        "voId": "chr_0023_antal_mono_self_line04",
         "title": "Diálogo de confianza 4",
         "text": "He modificado muchos dispositivos de Originio. Pero el que más extraño es el bastón que me dio mi abuela cuando era joven. Aún recuerdo sus palabras: “Te acompañará mientras transformas este mundo.”"
       },
       {
+        "voId": "chr_0023_antal_mono_self_line05",
         "title": "Diálogo de confianza 5",
         "text": "Mi abuela solía decir que pasar la vida resolviendo una pregunta científica puede ser romántico... pero una vida sin amigos es solitaria. No entendí a qué se refería. Hasta que un día quise compartir la alegría de un nuevo hallazgo, pero tú no estabas. Ese momento me enseñó lo que es la soledad."
       },
       {
+        "voId": "chr_0023_antal_mono_chat_line01",
         "title": "Charla 1",
         "text": "Fluorite me enseñó un juego de cartas para pasar el tiempo. También dijo que quien pierda debe hacer lo que el ganador diga. Jugamos cinco partidas. Ahora está obligada a darme cinco sesiones individuales sobre “cómo convertirse rápidamente en un compañero alegre para conversar”."
       },
       {
+        "voId": "chr_0023_antal_mono_chat_line02",
         "title": "Charla 2",
         "text": "¿Cenar? No. No puedo ir. Cacé un Aggelos sin reportarlo a mi capitana. Ella me castigó negándome los privilegios para alimentarme de noche en la cantina."
       },
       {
+        "voId": "chr_0023_antal_mono_chat_line03",
         "title": "Charla 3",
         "text": "¿Por qué elegí Z7 en vez de un proyecto de I+D? El Centro de I+D era mi interés inicial, pero la capitana Akekuri fue quien me entrevistó. Él cree que los dispositivos de Originio modificados deben salir del laboratorio y probarse en combate real. Así es más fácil identificar sus fallos. Estoy de acuerdo; por eso me uní a su equipo."
       },
       {
+        "voId": "chr_0023_antal_mono_chat_line04",
         "title": "Charla 4",
         "text": "¿Por qué me obsesionan los chistes malos? Durante mi etapa escolar, la gente se quejaba de mi falta de sentido del humor. Estoy de acuerdo con ellos. Mi defecto debe ser corregido."
       },
       {
+        "voId": "chr_0023_antal_mono_chat_line05",
         "title": "Charla 5",
         "text": "Mi abuela me dijo que estaba feliz de que dejara el hogar para unirme a Endfield. Ella consideró esto como una oportunidad para alejarme de los libros y los dispositivos de Originio. Esperaba que aprendiera a convivir con mis compañeros de equipo e incluso... hiciera un amigo."
       },
       {
+        "voId": "chr_0023_antal_mono_about_line01",
         "title": "Tema: Akekuri",
         "text": "¿La capitana Akekuri? Ella me reclutó y es muy amable. Sigo todas sus instrucciones al pie de la letra. Aunque dice que nuestro equipo va bien, suele perder el sueño y caminar por los pasillos a medianoche. Se niega a revelar las razones. Espero que tú puedas decirme por qué, Endmin."
       },
       {
+        "voId": "chr_0023_antal_mono_about_line02",
         "title": "Tema: Catcher",
         "text": "Catcher se encarga de preparar las raciones durante las operaciones en campo. Maneja los utensilios de cocina mejor de lo que yo manejo mis orbitadores. Sin embargo, cuando llueve, se niega a hablar, aunque tampoco objeta mi presencia. Esto me resulta confuso."
       },
       {
+        "voId": "chr_0023_antal_mono_about_line03",
         "title": "Tema: Fluorite",
         "text": "Considero a Fluorite como una amiga escamosa, de cierto modo. Encuentro atractiva su cola fuerte y poderosa, pero me prohibió hacer evaluaciones táctiles. Fluorite también es una conversadora ingeniosa. Puedo aprender mucho de ella."
       },
       {
+        "voId": "chr_0023_antal_mono_about_line04",
         "title": "Tema: Estella",
         "text": "Cuando entramos en combate, debo considerar defender a Estella. Ambos compartimos piel reflectante y llamativa. Es un problema serio, pues nos expone peligrosamente en combate."
       },
       {
+        "voId": "chr_0023_antal_explore_point_common_01",
         "title": "Recurso/Coleccionable detectado 1",
         "text": "Bien. Se ha hecho un nuevo descubrimiento."
       },
       {
+        "voId": "chr_0023_antal_explore_point_valub_01",
         "title": "Recurso/Coleccionable detectado 2",
         "text": "Deberíamos examinar ese hallazgo clave."
       },
       {
+        "voId": "chr_0023_antal_explore_find_locked_01",
         "title": "Zona inexplorada detectada",
         "text": "Permíteme investigar este misterio."
       },
       {
+        "voId": "chr_0023_antal_explore_find_danger_01",
         "title": "Enemigo poderoso descubierto",
         "text": "Unidad hostil de élite detectada."
       },
       {
+        "voId": "chr_0023_antal_interact_mine_valub_01",
         "title": "Minería 1",
         "text": "Los minerales tienen múltiples usos. Deberíamos recolectar algunos."
       },
       {
+        "voId": "chr_0023_antal_interact_mine_valub_echo2_01",
         "title": "Minería 2",
         "text": "Esto mejorará nuestra eficiencia."
       },
       {
+        "voId": "chr_0023_antal_interact_treasure_valub_01",
         "title": "Abriendo una caja",
         "text": "Se ha encontrado una reserva rica en recursos. Deberíamos revisarla para identificar materiales útiles para el mantenimiento de equipamiento."
       },
       {
+        "voId": "chr_0023_antal_interact_etherium_01",
         "title": "Adquiriendo Aurileno",
         "text": "Algunos Aurilenos se alejan de repente cuando nos acercamos. ¿Por qué? ¿Podrá ser algún tipo de repulsión basada en energía?"
       },
       {
+        "voId": "chr_0023_antal_interact_blight_break_01",
         "title": "Eliminar la Plaga",
         "text": "¿Significa esto que hemos comprendido mejor la naturaleza de la Plaga...?"
       },
       {
+        "voId": "chr_0023_antal_interact_rest_01",
         "title": "Descanso",
         "text": "Las personas no son máquinas; deben tomarse tiempo para descansar."
       },
       {
+        "voId": "chr_0023_antal_combat_suppuse_using_01",
         "title": "Uso táctico 1",
         "text": "Iniciando tratamiento de emergencia."
       },
       {
+        "voId": "chr_0023_antal_combat_suppuse_getheal_01",
         "title": "Uso táctico 2",
         "text": "Condiciones nominales restauradas."
       },
       {
+        "voId": "chr_0023_antal_combat_remind_danger_01",
         "title": "Advertencia de peligro",
         "text": "Orden de ataque hostil detectada."
       },
       {
+        "voId": "chr_0023_antal_combat_hurt_lowhp_01",
         "title": "Herido",
         "text": "Condiciones subóptimas, pero funcionales."
       },
       {
+        "voId": "chr_0023_antal_combat_dead_01",
         "title": "0 PV",
         "text": "Tren de pensamiento descarrilado. Soporte... no disponible."
       },
       {
+        "voId": "chr_0023_antal_combat_remind_praise_01",
         "title": "Ánimo del equipo 1",
         "text": "Una actuación sobresaliente."
       },
       {
+        "voId": "chr_0023_antal_combat_remind_praise_02",
         "title": "Ánimo del equipo 2",
         "text": "Logramos una sinergia tácita."
       },
       {
+        "voId": "chr_0023_antal_combat_remind_praise_echo2_01",
         "title": "Respuesta al ánimo 1",
         "text": "Gracias, aunque podría haberlo hecho mejor."
       },
       {
+        "voId": "chr_0023_antal_combat_remind_praise_echo2_02",
         "title": "Respuesta al ánimo 2",
         "text": "Un resultado definitivo."
       },
       {
+        "voId": "chr_0023_antal_combat_intobattle_01",
         "title": "Comienza el combate 1",
         "text": "Unidad de las Artes en estado óptimo."
       },
       {
+        "voId": "chr_0023_antal_combat_intobattle_echo2_01",
         "title": "Comienza el combate 2",
         "text": "Hay que concentrarse en el combate. Proporcionaré fuego de cobertura."
       },
       {
+        "voId": "chr_0023_antal_combat_outbattle_nor_01",
         "title": "Victoria en el combate 1",
         "text": "Conocimiento nuevo adquirido."
       },
       {
+        "voId": "chr_0023_antal_combat_outbattle_nor_02",
         "title": "Victoria en el combate 2",
         "text": "Misión cumplida. Fue pan comido."
       },
       {
+        "voId": "chr_0023_antal_combat_outbattle_nor_echo2_01",
         "title": "Victoria en el combate 3",
         "text": "Todos han sido indispensables para el equipo."
       },
       {
+        "voId": "chr_0023_antal_combat_outbattle_hard_01",
         "title": "Victoria en el combate 4",
         "text": "Nuestros resultados son óptimos, pese a las variables inesperadas del combate."
       },
       {
+        "voId": "chr_0023_antal_combat_battle_defeat_01",
         "title": "Derrota en el combate",
         "text": "Las tabulaciones de pérdidas indican que la extracción fue la mejor solución para el equipo."
       },
       {
+        "voId": "chr_0023_antal_mono_attack_last_01",
         "title": "Golpe final 1",
         "text": "¡Falla detectada!"
       },
       {
+        "voId": "chr_0023_antal_mono_attack_last_02",
         "title": "Golpe final 2",
         "text": "¡Hmf! ¡Paralizar!"
       },
       {
+        "voId": "chr_0023_antal_mono_skill_nor_01",
         "title": "Habilidad de batalla 1",
         "text": "Dirección establecida."
       },
       {
+        "voId": "chr_0023_antal_mono_skill_nor_02",
         "title": "Habilidad de batalla 2",
         "text": "Objetivo fijado."
       },
       {
+        "voId": "chr_0023_antal_mono_skill_nor_03",
         "title": "Habilidad de batalla 3",
         "text": "Potencia de salida máxima."
       },
       {
+        "voId": "chr_0023_antal_combat_skill_comb_ready_01",
         "title": "Habilidad de combo preparada 1",
         "text": "Totalmente energizada."
       },
       {
+        "voId": "chr_0023_antal_combat_skill_comb_ready_02",
         "title": "Habilidad de combo preparada 2",
         "text": "Unidad preparada y activa."
       },
       {
+        "voId": "chr_0023_antal_mono_skill_comb_release_01",
         "title": "Lanzando combo 1",
         "text": "Ataque relampagueante crítico."
       },
       {
+        "voId": "chr_0023_antal_mono_skill_comb_release_02",
         "title": "Lanzando combo 2",
         "text": "¡Acelera la victoria!"
       },
       {
+        "voId": "chr_0023_antal_mono_attack_extra_01",
         "title": "Remate 1",
         "text": "Ráfaga de iones."
       },
       {
+        "voId": "chr_0023_antal_mono_attack_extra_02",
         "title": "Remate 2",
         "text": "Oleada voltaica."
       },
       {
+        "voId": "chr_0023_antal_mono_skill_ultimate_01",
         "title": "Habilidad máxima 1",
         "text": "Victoria electrificada."
       },
       {
+        "voId": "chr_0023_antal_mono_skill_ultimate_02",
         "title": "Habilidad máxima 2",
         "text": "Circuito amplificado."
       },
       {
+        "voId": "chr_0023_antal_mono_skill_ultimate_03",
         "title": "Habilidad máxima 3",
         "text": "Hora de subir la potencia."
       }

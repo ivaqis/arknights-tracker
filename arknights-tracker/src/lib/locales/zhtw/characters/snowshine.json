@@ -126,318 +126,397 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0014_aurora_chrbark_squad_01",
         "title": "行動準備1",
         "text": "聽候你的指示，管理員。"
       },
       {
+        "voId": "chr_0014_aurora_chrbark_squad_02",
         "title": "行動準備2",
         "text": "管理員，你來啦！"
       },
       {
+        "voId": "chr_0014_aurora_chrbark_join_01",
         "title": "編入隊伍1",
         "text": "是新的外勤任務嗎？我準備好啦！"
       },
       {
+        "voId": "chr_0014_aurora_chrbark_join_02",
         "title": "編入隊伍2",
         "text": "我會保護好大家的！"
       },
       {
+        "voId": "chr_0014_aurora_chrbark_weap_01",
         "title": "更換武器",
         "text": "很棒的效能，能適應各種極端環境！"
       },
       {
+        "voId": "chr_0014_aurora_chrbark_gear_01",
         "title": "更換裝備",
         "text": "這套裝備充滿了工匠的巧思呢。"
       },
       {
+        "voId": "chr_0014_aurora_chrup_skill_01",
         "title": "解鎖天賦陣列",
         "text": "我有在努力鍛鍊身體呢！為了應對各種突發狀況！"
       },
       {
+        "voId": "chr_0014_aurora_chrup_level_01",
         "title": "觀看作戰紀錄",
         "text": "這份紀錄也很有參考價值，很多思路都可以用在救援行動裡！"
       },
       {
+        "voId": "chr_0014_aurora_chrup_promt01_01",
         "title": "精英化晉升1",
         "text": "嗯，我會繼續努力的！一定不會辜負終末地和大家的信任！"
       },
       {
+        "voId": "chr_0014_aurora_chrup_promt02_01",
         "title": "精英化晉升2",
         "text": "接下來就能去更遠的地方完成任務了？放心吧，野外急救、數據採樣、後勤支援之類的工作都可以交給我喔！"
       },
       {
+        "voId": "chr_0014_aurora_chrup_promt03_01",
         "title": "精英化晉升3",
         "text": "這一次我把救援用的製冰施術單元都升級了一下！管理員，這是我新蓋的臨時庇護所！要不要進來住一晚？"
       },
       {
+        "voId": "chr_0014_aurora_chrup_promt04_01",
         "title": "精英化晉升4",
         "text": "在終末地的這段時光，我學到了很多新知識，也收穫了很多美好回憶……這都多虧了你們的信任，管理員。今後，我也會繼續嘗試攀越更高的山峰，去幫助更多身處險境的人們。"
       },
       {
+        "voId": "chr_0014_aurora_introduce_01",
         "title": "幹員報到",
         "text": "你好，我是羅德島的特派幹員，代號晝雪，擅長極寒地帶的救援工作。如果有需要前往冰原或雪山的任務，請一定要帶上我！"
       },
       {
+        "voId": "chr_0014_aurora_mono_switch_01",
         "title": "待命1",
         "text": "要來和我一起滑一段嗎，管理員？"
       },
       {
+        "voId": "chr_0014_aurora_mono_switch_02",
         "title": "待命2",
         "text": "風速適中，能見度良好，是滑雪的好天氣。"
       },
       {
+        "voId": "chr_0014_aurora_sim_assign_work_01",
         "title": "進駐設施",
         "text": "沒問題！這裡的工作我都試過！比搭建工事輕鬆多了！"
       },
       {
+        "voId": "chr_0014_aurora_sim_hello_lower_01",
         "title": "打招呼1",
         "text": "你好啊，管理員。"
       },
       {
+        "voId": "chr_0014_aurora_sim_hello_max_01",
         "title": "打招呼2",
         "text": "需要幫忙嗎，管理員？我可以當你的護衛。"
       },
       {
+        "voId": "chr_0014_aurora_sim_talk_lv01_01",
         "title": "帝江號閒聊1",
         "text": "每次來帝江號都能學到很多新東西，有沒看過的技術設備、特別的作戰思路、大膽的監測方案……真的是數都數不過來！嗯，終末地果然好厲害！"
       },
       {
+        "voId": "chr_0014_aurora_sim_talk_lv02_01",
         "title": "帝江號閒聊2",
         "text": "什麼？帝江號餐廳的點心是不限量供應的嗎？！啊，抱歉，我只是稍微有點吃驚……沒、沒打算一口氣全吃完的！真的！"
       },
       {
+        "voId": "chr_0014_aurora_sim_talk_lv02_02",
         "title": "帝江號閒聊3",
         "text": "管理員你來得正好！我剛好收到了之前採購的食材，要不要來試試我親手做的起司火鍋啊？……嗯，口味應該算比較特別的吧？好多吃了的同事都說是種「終生難忘的味道」……"
       },
       {
+        "voId": "chr_0014_aurora_sim_talk_max_01",
         "title": "帝江號閒聊4",
         "text": "嘿咻！伸展四肢，活動關節。這套熱身運動不僅有助於預防拉傷，在極地環境下也能降低失溫風險喔，管理員，來一起試試吧？沒關係，我當過訓練課的助教，會幫你調整姿勢的！——你看，很簡單吧？"
       },
       {
+        "voId": "chr_0014_aurora_sim_talk_max_02",
         "title": "帝江號閒聊5",
         "text": "每次遇到小道奇教官，我就會想起我們的隊長。他也是個佩洛，雖然平常很好說話，但到了救援行動的時候，他總是要求最嚴格的那個，連熱水鑽頭的直徑都會反覆確認……「救援無小事」的道理就是他教給我的。"
       },
       {
+        "voId": "chr_0014_aurora_sim_talk_max_03",
         "title": "帝江號閒聊6",
         "text": "塔衛二雲層上的光真的很漂亮，很像我印象裡的「極光」……如同夢中的景色。我常在北方雪峰的最高處望見它們，雖然知道那是危險的超域能量，卻總覺得像遇到了一個老朋友，在遙遠的地方注視著我，守護著我……"
       },
       {
+        "voId": "chr_0014_aurora_sim_gift_give_01",
         "title": "贈送禮物",
         "text": "管理員，我從冰原帶回來了一點小東西，請收下吧。"
       },
       {
+        "voId": "chr_0014_aurora_sim_gift_recv_01",
         "title": "接收禮物",
         "text": "這是給我的嗎？謝謝，有種很溫暖的感覺……我會好好珍藏的！"
       },
       {
+        "voId": "chr_0014_aurora_mono_self_line01",
         "title": "信賴對話1",
         "text": "管理員，你看，這是我用源石技藝新做的冰牆！是不是很結實？別擔心，就算再用力點也沒關係！不會裂開的！"
       },
       {
+        "voId": "chr_0014_aurora_mono_self_line02",
         "title": "信賴對話2",
         "text": "最近有好好休息嗎，管理員？總是看到你到處跑來跑去，就沒怎麼停下來過……要注意休息噢！上次救援訓練，我背你的時候真的被嚇了一跳……簡直比剛出生的小馱獸還輕……"
       },
       {
+        "voId": "chr_0014_aurora_mono_self_line03",
         "title": "信賴對話3",
         "text": "救援工作也不是每次都那麼順利……突發天氣或是地形變化總會來得比預想中更快。所以每次出發前，我都會多檢查兩遍我們的救援設備，從無人機到體溫感測儀……它們也是救援隊員重要的夥伴，是我們敢於大膽行動的底氣來源。"
       },
       {
+        "voId": "chr_0014_aurora_mono_self_line04",
         "title": "信賴對話4",
         "text": "我曾在一場雪難裡救下過一對父女……他們那時好像在鬧彆扭，待在我搭的臨時庇護所裡也互不理睬。但當風雪來襲的時候，爸爸總會把食物留給女兒，女兒也總是關心著爸爸……等到獲救後，兩個人還是不和對方說話。那時我就在想，這會不會就是那種叫做「親情」的牽絆呢？即使說不出口，關鍵時刻也會為彼此挺身而出……"
       },
       {
+        "voId": "chr_0014_aurora_mono_self_line05",
         "title": "信賴對話5",
         "text": "拯救生命是一項艱苦的工作，而我也沒妄想過能不付出任何代價就幫助所有人。我入隊時的同期，已經沒人留在隊裡了。他們有些在侵蝕災害中落下了殘疾，有些在冰冷的雪夜失去了理性……我的確感到過茫然，甚至有點膽怯。但是，終末地的大家都很厲害，也很堅強！在管理員的幫助下，相信我們所有人都能走得更遠一點！"
       },
       {
+        "voId": "chr_0014_aurora_mono_chat_line01",
         "title": "交談1",
         "text": "這塊滑雪板嗎？它是我離開羅德島時，華法琳女士送我的禮物。和我的盾牌一樣，它也是用稀有的材料打造的，在救援行動時特別有用！嗯？難道管理員對滑雪感興趣？我可以教你！"
       },
       {
+        "voId": "chr_0014_aurora_mono_chat_line02",
         "title": "交談2",
         "text": "救援隊隸屬於北方走廊救助聯合會，我們遇到的救援對象常常是那些因公前往北方的信使、來往貿易的商人，偶爾還有遭到天使或野獸襲擊後迷路的軍隊斥候。而我們的成員同樣來自天南海北，大多數是志工。雖然總是在和冰天雪地打交道，但其實也結識了很多不一樣的人呢。"
       },
       {
+        "voId": "chr_0014_aurora_mono_chat_line03",
         "title": "交談3",
         "text": "最近也有幹員問過我，要怎樣才能加入救援隊。其實不難的！只要平時經常做高地徒步訓練，能撐住數個小時無休的搜救，學過一些極地生存技巧，知道怎麼躲避錨點與大型野獸，再接受完整的急救訓練課程——至少到能處理突發礦石病的程度，最後通過我們隊長專門設計的實地測試，就能正式加入啦！"
       },
       {
+        "voId": "chr_0014_aurora_mono_chat_line04",
         "title": "交談4",
         "text": "我喜歡冰雪，喜歡雪山，喜歡這些嚴寒下依然璀璨的事物……所以我才更不希望它們給人帶來痛苦的回憶。我想要讓更多人在看到雪山時，最先想到的是山頂美麗的風景；想要讓更多人看到冰雪時，最先想到的是純淨的冰晶與漂亮的雪花……而不是那些因雪災帶來的不幸。為了這個目標，我想我會一直努力下去的。"
       },
       {
+        "voId": "chr_0014_aurora_mono_chat_line05",
         "title": "交談5",
         "text": "昨天你有來找我嗎，管理員？抱歉，我那時一定是在補覺，所以才沒發現。對，現在每次救援行動回來，我都會先好好睡一覺……有時一不小心就睡過頭了，要過好久才能自然醒。不過要是有什麼急事，直接來叫我就好啦！要是聽到管理員的聲音，我一定馬上就醒過來了！"
       },
       {
+        "voId": "chr_0014_aurora_mono_about_line01",
         "title": "話題：緊急救援訓練",
         "text": "救援訓練當然很重要啊！尤其是面對雪崩這樣的自然災害，如果大家都有很強的避險意識，可以在最短時間裡找到身邊堅固的躲藏地，往往就能大幅提高生存的可能性……所以管理員，下次的訓練你一定會來的，對吧？"
       },
       {
+        "voId": "chr_0014_aurora_mono_about_line02",
         "title": "話題：潔爾佩塔",
         "text": "潔爾佩塔小姐現在也在帝江號上嗎？啊，之前的救援行動中，她幫我們做了很多額外的工作，像是物資搬運和傷患運送，甚至還在暴雪中精準定位到了高空中的求救訊號。後來救援隊本想送她點什麼作為謝禮，她卻全都拒絕了，說是拍點雪山的風景給她就好了。嘿嘿，管理員你看，這些照片怎麼樣？相框也是我親手製作的喔！"
       },
       {
+        "voId": "chr_0014_aurora_mono_about_line03",
         "title": "話題：極地生存",
         "text": "想在極地生存可不是件容易的事……你要懂得怎麼在暴雪中的帳篷裡過夜才不至於失溫，要學會從存在侵蝕的冰原上找到能入口的食材，要能判斷冰川上哪裡才適合落腳。最重要的是，要知道怎麼在沒有嚮導的時候，找出一條前往目的地的安全路線——避開天使、飢餓的動物還有那些危險的受災地帶。"
       },
       {
+        "voId": "chr_0014_aurora_explore_point_common_01",
         "title": "發現資源1",
         "text": "這些物資最好都收集起來，救援時說不定能用到！"
       },
       {
+        "voId": "chr_0014_aurora_explore_point_valub_01",
         "title": "發現資源2",
         "text": "好像找到了不得了的東西呢，或許能在以後的行動中發揮很大作用！"
       },
       {
+        "voId": "chr_0014_aurora_explore_find_locked_01",
         "title": "發現未探索區域",
         "text": "是無人機還沒探測到的地帶，大家多注意防範。"
       },
       {
+        "voId": "chr_0014_aurora_explore_find_danger_01",
         "title": "發現強敵",
         "text": "前面的敵人很危險！各位小心！"
       },
       {
+        "voId": "chr_0014_aurora_interact_mine_valub_01",
         "title": "採集礦物1",
         "text": "高品質的礦物，也許能用在臨時庇護所的建造上……"
       },
       {
+        "voId": "chr_0014_aurora_interact_mine_valub_echo2_01",
         "title": "採集礦物2",
         "text": "大家一起來？一定很快就能採完啦！"
       },
       {
+        "voId": "chr_0014_aurora_interact_treasure_valub_01",
         "title": "打開儲藏箱",
         "text": "作為救援物資儲備起來吧！"
       },
       {
+        "voId": "chr_0014_aurora_interact_etherium_01",
         "title": "獲得醚質",
         "text": "這就是醚質吧？好漂亮！趕快收好吧！"
       },
       {
+        "voId": "chr_0014_aurora_interact_blight_break_01",
         "title": "消除侵蝕",
         "text": "破壞成功！記得檢查一下防侵蝕塗層的受損程度喔！"
       },
       {
+        "voId": "chr_0014_aurora_interact_rest_01",
         "title": "休整",
         "text": "要不要來一片起司？有助於體力恢復喔！"
       },
       {
+        "voId": "chr_0014_aurora_combat_suppuse_using_01",
         "title": "使用戰術物品1",
         "text": "已進行緊急處理！"
       },
       {
+        "voId": "chr_0014_aurora_combat_suppuse_getheal_01",
         "title": "使用戰術物品2",
         "text": "抱歉，讓我先喘口氣！"
       },
       {
+        "voId": "chr_0014_aurora_combat_remind_danger_01",
         "title": "危險提醒",
         "text": "這個不能硬扛的！"
       },
       {
+        "voId": "chr_0014_aurora_combat_hurt_lowhp_01",
         "title": "負傷",
         "text": "沒問題，我還忍得住……"
       },
       {
+        "voId": "chr_0014_aurora_combat_dead_01",
         "title": "力竭",
         "text": "抱歉……沒能穿過這場暴雪……"
       },
       {
+        "voId": "chr_0014_aurora_combat_remind_praise_01",
         "title": "小隊激勵1",
         "text": "精彩的配合！"
       },
       {
+        "voId": "chr_0014_aurora_combat_remind_praise_02",
         "title": "小隊激勵2",
         "text": "做得好！"
       },
       {
+        "voId": "chr_0014_aurora_combat_remind_praise_echo2_01",
         "title": "回應激勵1",
         "text": "要再接再厲呀！"
       },
       {
+        "voId": "chr_0014_aurora_combat_remind_praise_echo2_02",
         "title": "回應激勵2",
         "text": "謝謝大家的支持！"
       },
       {
+        "voId": "chr_0014_aurora_combat_intobattle_01",
         "title": "作戰開始1",
         "text": "開始清掃救援障礙！"
       },
       {
+        "voId": "chr_0014_aurora_combat_intobattle_echo2_01",
         "title": "作戰開始2",
         "text": "凍結他們！"
       },
       {
+        "voId": "chr_0014_aurora_combat_outbattle_nor_01",
         "title": "作戰勝利1",
         "text": "呼，打完了，把握時間休息一下吧。"
       },
       {
+        "voId": "chr_0014_aurora_combat_outbattle_nor_02",
         "title": "作戰勝利2",
         "text": "大家都在努力，我也要變得更強才可以！"
       },
       {
+        "voId": "chr_0014_aurora_combat_outbattle_nor_echo2_01",
         "title": "作戰勝利3",
         "text": "謝謝大家的配合！辛苦啦！"
       },
       {
+        "voId": "chr_0014_aurora_combat_outbattle_hard_01",
         "title": "作戰勝利4",
         "text": "別氣餒，撐過了這場風雪就離目的地更近了！所以先保存體力，爭取能早點抵達安全地帶！"
       },
       {
+        "voId": "chr_0014_aurora_combat_battle_defeat_01",
         "title": "作戰失敗",
         "text": "不要輕易放棄！等大家重新做好準備，再嘗試一次吧！"
       },
       {
+        "voId": "chr_0014_aurora_mono_attack_last_01",
         "title": "重擊1",
         "text": "霜凍！"
       },
       {
+        "voId": "chr_0014_aurora_mono_attack_last_02",
         "title": "重擊2",
         "text": "寒風！"
       },
       {
+        "voId": "chr_0014_aurora_mono_skill_nor_strike_01",
         "title": "戰技1",
         "text": "給我退下！"
       },
       {
+        "voId": "chr_0014_aurora_mono_skill_nor_strike_02",
         "title": "戰技2",
         "text": "休想過去！"
       },
       {
+        "voId": "chr_0014_aurora_mono_skill_nor_strike_03",
         "title": "戰技3",
         "text": "我來守護！"
       },
       {
+        "voId": "chr_0014_aurora_combat_skill_comb_ready_01",
         "title": "連攜技就緒1",
         "text": "準備完畢！"
       },
       {
+        "voId": "chr_0014_aurora_combat_skill_comb_ready_02",
         "title": "連攜技就緒2",
         "text": "我來援助！"
       },
       {
+        "voId": "chr_0014_aurora_mono_skill_comb_release_01",
         "title": "連攜技1",
         "text": "稍微喘口氣！"
       },
       {
+        "voId": "chr_0014_aurora_mono_skill_comb_release_02",
         "title": "連攜技2",
         "text": "援護已就位！"
       },
       {
+        "voId": "chr_0014_aurora_mono_attack_extra_01",
         "title": "處決1",
         "text": "別想靠近！"
       },
       {
+        "voId": "chr_0014_aurora_mono_attack_extra_02",
         "title": "處決2",
         "text": "倒下吧！"
       },
       {
+        "voId": "chr_0014_aurora_mono_skill_ultimate_01",
         "title": "終結技1",
         "text": "凜冽寒風！"
       },
       {
+        "voId": "chr_0014_aurora_mono_skill_ultimate_02",
         "title": "終結技2",
         "text": "冰晶之盾！"
       },
       {
+        "voId": "chr_0014_aurora_mono_skill_ultimate_03",
         "title": "終結技3",
         "text": "在霜寒前，停下！"
       }

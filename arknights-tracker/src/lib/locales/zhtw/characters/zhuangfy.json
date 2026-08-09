@@ -128,326 +128,407 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0030_zhuangfy_chrbark_squad_01",
         "title": "行動準備1",
         "text": "迎敵或是迎客，都得整裝後再出發。"
       },
       {
+        "voId": "chr_0030_zhuangfy_chrbark_squad_02",
         "title": "行動準備2",
         "text": "出門前，要不要先喝杯茶提提神？"
       },
       {
+        "voId": "chr_0030_zhuangfy_chrbark_join_01",
         "title": "編入隊伍1",
         "text": "你找我幫忙，想必是遇到棘手的問題了，直說就好。"
       },
       {
+        "voId": "chr_0030_zhuangfy_chrbark_join_02",
         "title": "編入隊伍2",
         "text": "上次外出執行任務……都是好幾年前了，但願別生疏。"
       },
       {
+        "voId": "chr_0030_zhuangfy_chrbark_weap_01",
         "title": "更換武器",
         "text": "再好的武器，也得朝夕相處磨合個幾天。等用慣了，我再跟你說說感受，好嗎？"
       },
       {
+        "voId": "chr_0030_zhuangfy_chrbark_gear_01",
         "title": "更換裝備",
         "text": "新的是更厲害點，可是舊的用慣了，確實……也不捨得。"
       },
       {
+        "voId": "chr_0030_zhuangfy_chrup_skill_01",
         "title": "解鎖天賦陣列",
         "text": "學得越多，就越是清楚，自己學到的不過滄海一粟。"
       },
       {
+        "voId": "chr_0030_zhuangfy_chrup_level_01",
         "title": "觀看作戰紀錄",
         "text": "不行。唉，看到螢幕裡的自己，怎麼看都覺得呆呆傻傻。不如，你來和我切磋切磋？"
       },
       {
+        "voId": "chr_0030_zhuangfy_chrup_promt01_01",
         "title": "精英化晉升1",
         "text": "都是分內事……不用了吧？"
       },
       {
+        "voId": "chr_0030_zhuangfy_chrup_promt02_01",
         "title": "精英化晉升2",
         "text": "好了好了，不要再誇了。你要是有時間，來幫我看看正在研究的課題？"
       },
       {
+        "voId": "chr_0030_zhuangfy_chrup_promt03_01",
         "title": "精英化晉升3",
         "text": "這是幹什麼？欸，真的不用……下次你請我吃頓飯好了？或者，等你下次去海邊，幫我帶一株當地特產的耐鹽植物？"
       },
       {
+        "voId": "chr_0030_zhuangfy_chrup_promt04_01",
         "title": "精英化晉升4",
         "text": "……好意我心領了，不過我也得問一句，你在武陵的榮譽市民獎章什麼時候來拿？到時候可別悄悄就帶走了，我們都等著幫你好好辦場典禮呢。"
       },
       {
+        "voId": "chr_0030_zhuangfy_introduce_01",
         "title": "幹員報到",
         "text": "管理員，正式加入前，我想再補充一下。身為管代，我處理起行政工作來算是得心應手，不過……我來終末地，更希望以普通天師的身分，將精力用在研究上。"
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_switch_01",
         "title": "待命1",
         "text": "你剛剛……叫我名字了？"
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_switch_02",
         "title": "待命2",
         "text": "我為天師儀新增了一個模組，要一起看看效果嗎？"
       },
       {
+        "voId": "chr_0030_zhuangfy_sim_assign_work_01",
         "title": "進駐設施",
         "text": "你要是信我，可以直接放手讓我做。都是小事，我一個人就夠。"
       },
       {
+        "voId": "chr_0030_zhuangfy_sim_hello_lower_01",
         "title": "打招呼1",
         "text": "我剛好要去實驗室，順路的話一起走？"
       },
       {
+        "voId": "chr_0030_zhuangfy_sim_hello_max_01",
         "title": "打招呼2",
         "text": "真巧，剛還說要去找你呢。"
       },
       {
+        "voId": "chr_0030_zhuangfy_sim_talk_lv01_01",
         "title": "帝江號閒聊1",
         "text": "我確實是第一次來帝江號，不過……我的全像投影肯定來這裡開過會。"
       },
       {
+        "voId": "chr_0030_zhuangfy_sim_talk_lv02_01",
         "title": "帝江號閒聊2",
         "text": "嗯……你說想要的巨型龍泡泡雕像，我細細想了想，也不是送不上來。但擺在哪裡，就該你好好想想了。"
       },
       {
+        "voId": "chr_0030_zhuangfy_sim_talk_lv02_02",
         "title": "帝江號閒聊3",
         "text": "與終末地的……說順嘴了，不好意思。與武陵的合作專案已經有結果了，實驗報告已經上傳，你這幾天要是有時間，記得看一下。"
       },
       {
+        "voId": "chr_0030_zhuangfy_sim_talk_max_01",
         "title": "帝江號閒聊4",
         "text": "我這次來帝江號不是為了正事……因為武陵的梨樹結果了，想順路來送點給大家。"
       },
       {
+        "voId": "chr_0030_zhuangfy_sim_talk_max_02",
         "title": "帝江號閒聊5",
         "text": "小時候在宏山，最喜歡跟著老師去天文台，她數著天空中的星星，說其中一顆是帝江號，我看著，覺得還真是個遙遠的地方。現在帝江號就在眼前，遙遠的，反而是那段回憶了。"
       },
       {
+        "voId": "chr_0030_zhuangfy_sim_talk_max_03",
         "title": "帝江號閒聊6",
         "text": "都說是讀書萬卷，行路萬里。我讀過的書有很多，但去的地方的確不多，宏山、武陵，還有帝江號，算下來，也就三個。確實，我是很容易就留在一個地方，十年、二十年……說不好，一輩子也不是不可能。"
       },
       {
+        "voId": "chr_0030_zhuangfy_sim_gift_give_01",
         "title": "贈送禮物",
         "text": "我從宏山述職回來，帶了些禮物給你，不是很貴重，但……都是精心挑選過的，希望你能喜歡。"
       },
       {
+        "voId": "chr_0030_zhuangfy_sim_gift_recv_01",
         "title": "接收禮物",
         "text": "論禮數，我該好好收藏才是，可要是算上私心，不如就放在手邊，放在眼前。"
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_self_line01",
         "title": "信賴對話1",
         "text": "幫我扶一下，別讓它倒了，我來填土。如果當時不來武陵，我可能會在宏山做個職農或者農業天師，我家裡的長輩，平常都喜歡照料花草，家裡生機盎然的，誰來了都神清氣爽。所以當年做武陵城的規劃時，我第一時間就想好了，如果別人來到這裡，會聞到怎樣的氣味，感受怎樣的氣息。"
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_self_line02",
         "title": "信賴對話2",
         "text": "緊張什麼？我這次可不是來抓你去學院的，方興衢裡開了一家新的爛肉麵，我是來找你一起去嚐嚐的。不過，我確實也該反省下自己了，怎麼我一出現，你第一個想到的，竟然是工作。"
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_self_line03",
         "title": "信賴對話3",
         "text": "武陵城裡要舉辦「雙人同行」長跑比賽，我想問問你，願不願意和我一起報名參加？從城東到城西，再從城北到城南，只要日出日落間能跑完，就算完成。你擔心跑不動？放心，我是去年的冠軍，實在不行的話，可以公主抱著你跑……放心，能拿名次。"
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_self_line04",
         "title": "信賴對話4",
         "text": "你在看什麼？有關我的報導？是關於我們之前發布的論文？啊……原來是講這些……我家裡的事，你直接問我不就好了。父母走後，是舅舅和小姨悉心撫養我長大，只不過，他們每個人都有自己的工作，不能時時刻刻陪著我。所以從小到大，我很渴望身邊能多點朋友，但真的有了朋友，卻又覺得還是一個人更清淨。"
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_self_line05",
         "title": "信賴對話5",
         "text": "武陵城的風波雖已平息，但也不難預見，之後會有怎樣的挫折困頓等在前方。別緊張，管理員，多難多苦，我們都會一直陪在你身邊。冬天總會過去，春天總會再來。人說踏雪凌霜行千里，定不負，來年春曉——下個春天的好風景，我們一起去看。"
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_chat_line01",
         "title": "交談1",
         "text": "你提的方向和我們之前的設想很是契合，但在技術上一直未能突破。既然有了全新的解決思路……噢，我只是突然被窗外的花香味吸引了。今年的花開得很早呢，真好……管理員，既然良景如此，我們不如移步室外去聊？"
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_chat_line02",
         "title": "交談2",
         "text": "武陵城裡有很多植物都是天師們從自己家鄉帶來的，剛把它們移栽進土裡時，我總覺得是他們扯下了一片家的模樣，貼在了武陵，以後想家了，就來這裡看看。後來，我才明白，他們是把自己的家打包進了種子，在武陵生根，武陵就是家了。"
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_chat_line03",
         "title": "交談3",
         "text": "加入溶液五毫升……嗯，顏色變化正常，沒有沉澱或者渾濁。還有催化劑，輔助釋放風味物質……得控制一下溫度，防止焦化……緩緩加入，溶解速率良好……欸，管理員？沒有沒有，我沒在做實驗，我正在……做飯？弭弗以前總抱怨我吃得不健康，不是速食就是外送，現在閒下來，就想自己學著做點什麼吃，你要嚐嚐嗎？"
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_chat_line04",
         "title": "交談4",
         "text": "呼……稍、稍等，我剛晨跑完，讓我喘口氣。對、對啊，我知道現在是凌晨五點。這也沒什麼吧？四點起來，五點結束運動，五點半開始工作，十幾年都是這樣子。沒，我不愛睡長覺的，說原因嘛，就當我太貪心了吧。想做的、想要的都太多，只好拿時間來換了。不過話說回來，你又為什麼一個人在實驗室？"
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_chat_line05",
         "title": "交談5",
         "text": "算一算日子，也快到前輩們的忌日了。管理員，你要是有空，可以陪我去一趟安思園嗎？很可惜，當年我不能為他們收殮屍骨，送回各自的家鄉。我很清楚，斯人已逝，不論在武陵設立幾座紀念館，幾塊紀念碑，都於事無補，但終歸……還能讓他們留在大家的記憶中，多一分，多一秒。"
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_about_line01",
         "title": "話題：武陵城",
         "text": "是啊，武陵城建在裂隙旁有多危險，我何嘗不知道呢？但當年建城時，我們沒有任何人想過要離開。武陵城繼承了科研站的使命，天師們不會後退，這座城……也不會後退。"
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_about_line02",
         "title": "話題：武陵科研站",
         "text": "比起自己的安危，前輩們更在乎如何讓自己的研究成果在災難中保存下來。即使在我看來，失去他們才是更大的損失。息壤可以再造，但人卻不能再生。可是管理員，我也清楚，科研路上，重來的機會少得可憐。但願意在這條道路上繼續鑽研的後來者，卻源源不斷。我想……前輩們正是知道這一點，才做出那樣的決定。"
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_about_line03",
         "title": "話題：弭弗",
         "text": "弭弗她……真的很有意思，當時武陵城初建，一件件事堆過來，我常會一個人跑到城外的山上靜心……算了，不怕你笑話，說是靜靜，其實是躲起來擦眼淚了。當時弭弗還是清波寨的人，見到我，總是揮著拳頭就來了，但唯獨那次碰到我，她卻什麼也沒說，陪我坐了一夜。"
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_about_line04",
         "title": "話題：息壤",
         "text": "我現在面前確實有兩條路，一條是繼續息壤的研究，一條是放棄息壤，開始其他的計劃。我能預見，即使現在放手，息壤研究在天師府同僚手中，也會按照預定的道路推進下去。我也是時候，在更需要我的領域，盡些力氣。可是……一想到這計劃有可能是前輩們唯一留下的東西，我又怎麼能放得下呢。"
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_about_line05",
         "title": "話題：龍泡泡",
         "text": "快，快點坐下來幫我拆盒玩，研究院裡的息壤爐被拆掉後，廠家和我商量，決定在十週年紀念款龍泡泡中加入息壤元素……的確，他們是說要送我一套，但要不是自己拆出來，樂趣何在呢？更何況，十二個裡面抽一個，盒玩抽中的機率已經很高了，真正難的是研究出成果，花一輩子……也未必等得到那一天。"
       },
       {
+        "voId": "chr_0030_zhuangfy_explore_point_common_01",
         "title": "發現資源1",
         "text": "有些好東西，我們不算白來。"
       },
       {
+        "voId": "chr_0030_zhuangfy_explore_point_valub_01",
         "title": "發現資源2",
         "text": "真是片風水寶地……也不知道有什麼寶貝藏在這裡。"
       },
       {
+        "voId": "chr_0030_zhuangfy_explore_find_locked_01",
         "title": "發現未探索區域",
         "text": "「未知」……這個詞真的能誘惑到我。"
       },
       {
+        "voId": "chr_0030_zhuangfy_explore_find_danger_01",
         "title": "發現強敵",
         "text": "小心，來者不善，別莽撞。"
       },
       {
+        "voId": "chr_0030_zhuangfy_interact_mine_valub_01",
         "title": "採集礦物1",
         "text": "我當學生時，採集礦物的效率可不輸你。"
       },
       {
+        "voId": "chr_0030_zhuangfy_interact_mine_valub_echo2_01",
         "title": "採集礦物2",
         "text": "別急，我來幫你。"
       },
       {
+        "voId": "chr_0030_zhuangfy_interact_treasure_valub_01",
         "title": "打開儲藏箱",
         "text": "這東西可了不得，在哪裡都能派得上用場。"
       },
       {
+        "voId": "chr_0030_zhuangfy_interact_etherium_01",
         "title": "獲得醚質",
         "text": "收集它的方式值得我們好好研究一番。"
       },
       {
+        "voId": "chr_0030_zhuangfy_interact_blight_break_01",
         "title": "消除侵蝕",
         "text": "或許，侵蝕的清除效率還能進一步提升。"
       },
       {
+        "voId": "chr_0030_zhuangfy_interact_rest_01",
         "title": "休整",
         "text": "暫且歇歇吧，留著精力，更難的還在後面呢。"
       },
       {
+        "voId": "chr_0030_zhuangfy_combat_suppuse_using_01",
         "title": "使用戰術物品1",
         "text": "這有些藥，你拿去。"
       },
       {
+        "voId": "chr_0030_zhuangfy_combat_suppuse_getheal_01",
         "title": "使用戰術物品2",
         "text": "是好點了。"
       },
       {
+        "voId": "chr_0030_zhuangfy_combat_remind_danger_01",
         "title": "危險提醒",
         "text": "小心！"
       },
       {
+        "voId": "chr_0030_zhuangfy_combat_hurt_lowhp_01",
         "title": "負傷",
         "text": "沒事，不用管我。"
       },
       {
+        "voId": "chr_0030_zhuangfy_combat_dead_01",
         "title": "力竭",
         "text": "管理員……抱歉。"
       },
       {
+        "voId": "chr_0030_zhuangfy_combat_remind_praise_01",
         "title": "小隊激勵1",
         "text": "乾淨俐落，真漂亮。"
       },
       {
+        "voId": "chr_0030_zhuangfy_combat_remind_praise_02",
         "title": "小隊激勵2",
         "text": "堪稱……天衣無縫。"
       },
       {
+        "voId": "chr_0030_zhuangfy_combat_remind_praise_echo2_01",
         "title": "回應激勵1",
         "text": "過獎了。"
       },
       {
+        "voId": "chr_0030_zhuangfy_combat_remind_praise_echo2_02",
         "title": "回應激勵2",
         "text": "哪裡，都是大家的功勞。"
       },
       {
+        "voId": "chr_0030_zhuangfy_combat_intobattle_01",
         "title": "作戰開始1",
         "text": "不怕苦戰，只怕無謂之戰。"
       },
       {
+        "voId": "chr_0030_zhuangfy_combat_intobattle_echo2_01",
         "title": "作戰開始2",
         "text": "我馬上就來。"
       },
       {
+        "voId": "chr_0030_zhuangfy_combat_outbattle_nor_01",
         "title": "作戰勝利1",
         "text": "贏這一次，其實不算很難。"
       },
       {
+        "voId": "chr_0030_zhuangfy_combat_outbattle_nor_02",
         "title": "作戰勝利2",
         "text": "你信嗎，管理員？下一次，我們也會贏。"
       },
       {
+        "voId": "chr_0030_zhuangfy_combat_outbattle_nor_echo2_01",
         "title": "作戰勝利3",
         "text": "辛苦諸位了。"
       },
       {
+        "voId": "chr_0030_zhuangfy_combat_outbattle_hard_01",
         "title": "作戰勝利4",
         "text": "能咬牙堅持下來，就不算輸。"
       },
       {
+        "voId": "chr_0030_zhuangfy_combat_battle_defeat_01",
         "title": "作戰失敗",
         "text": "人還在，那就什麼都在。"
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_attack_last_01",
         "title": "重擊1",
         "text": "滅。"
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_attack_last_02",
         "title": "重擊2",
         "text": "無用。"
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_skill_nor_01",
         "title": "戰技1",
         "text": "落青霆！"
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_skill_nor_02",
         "title": "戰技2",
         "text": "釋劍去！"
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_skill_nor_03",
         "title": "戰技3",
         "text": "風雷動！"
       },
       {
+        "voId": "chr_0030_zhuangfy_combat_skill_comb_ready_01",
         "title": "連攜技就緒1",
         "text": "嗯，就等你了！"
       },
       {
+        "voId": "chr_0030_zhuangfy_combat_skill_comb_ready_02",
         "title": "連攜技就緒2",
         "text": "這就來！"
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_skill_comb_release_01",
         "title": "連攜技1",
         "text": "還不服軟？"
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_skill_comb_release_02",
         "title": "連攜技2",
         "text": "何苦胡攪蠻纏！"
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_attack_extra_01",
         "title": "處決1",
         "text": "破綻百出。"
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_attack_extra_02",
         "title": "處決2",
         "text": "不成氣候。"
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_skill_ultimate_01",
         "title": "終結技1",
         "text": "驚霆無聲，流電掣雨。"
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_skill_ultimate_02",
         "title": "終結技2",
         "text": "雷雨並作，化育萬物。"
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_skill_ultimate_03",
         "title": "終結技3",
         "text": "青霄碧落，烏雲盡掃。"
       }

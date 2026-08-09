@@ -139,326 +139,407 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0035_liino_chrbark_squad_01",
         "title": "Operation Prep 1",
         "text": "Hm? Time to hit the stage?"
       },
       {
+        "voId": "chr_0035_liino_chrbark_squad_02",
         "title": "Operation Prep 2",
         "text": "Twinkle-twinkle! My latest performance is about to start!"
       },
       {
+        "voId": "chr_0035_liino_chrbark_join_01",
         "title": "Adding to Team 1",
         "text": "Singing, dancing, and thinking on my feet, I'm a straight-A idol in every category!"
       },
       {
+        "voId": "chr_0035_liino_chrbark_join_02",
         "title": "Adding to Team 2",
         "text": "Wherever we go, I want to be the star that catches everyone's eye!"
       },
       {
+        "voId": "chr_0035_liino_chrbark_weap_01",
         "title": "Switching Weapon",
         "text": "Would you choose one for me? Something easy enough for a total combat novice like me!"
       },
       {
+        "voId": "chr_0035_liino_chrbark_gear_01",
         "title": "Switching Gear",
         "text": "It's my first time wearing this stage gear... Hmm. Maybe I should come up with a few dance moves to go with it?"
       },
       {
+        "voId": "chr_0035_liino_chrup_skill_01",
         "title": "Ability Matrix Activation",
         "text": "I understood it in a flash! Just like a star igniting my soul... I'm becoming quite the luminary, aren't I?"
       },
       {
+        "voId": "chr_0035_liino_chrup_level_01",
         "title": "Watching Combat Records",
         "text": "What a stage entry — You sure I can't use it for my next concert? Ugh, what a missed opportunity..."
       },
       {
+        "voId": "chr_0035_liino_chrup_promt01_01",
         "title": "Operator Promotion 1",
         "text": "Oh that's sweet! How should I thank you... I've got it! I'll just keep showering you with concert tickets until we're even, how's that?"
       },
       {
+        "voId": "chr_0035_liino_chrup_promt02_01",
         "title": "Operator Promotion 2",
         "text": "Eh? That's all you needed from me? I expected a list of demands as long as my renewal contract... This is actually ... quite fresh..."
       },
       {
+        "voId": "chr_0035_liino_chrup_promt03_01",
         "title": "Operator Promotion 3",
         "text": "Mm-hmm, so you're finally under my spell? I knew you'd come around—eh? What's that? \"You'll help carry the Endfield ads\"? Is that all you focus on?!"
       },
       {
+        "voId": "chr_0035_liino_chrup_promt04_01",
         "title": "Operator Promotion 4",
         "text": "Endmin, it's official: you're now my permanent VIP! I'm making sure you're missing none of my \"dazzling moments\"! You're starstruck, right? You better watch closely! If I see your mind wandering off... Heehee!"
       },
       {
+        "voId": "chr_0035_liino_introduce_01",
         "title": "Operator Reporting for Duty",
         "text": "Endmin, missed me? As the brightest and cutest super idol of Talos-II, is there any special treatment for me? No...? Aw, you are still so blunt and direct, and yet somehow, still endearing... Guess it can't be helped."
       },
       {
+        "voId": "chr_0035_liino_mono_switch_01",
         "title": "Standing by 1",
         "text": "Hehe! How's this for a cute pose?"
       },
       {
+        "voId": "chr_0035_liino_mono_switch_02",
         "title": "Standing by 2",
         "text": "La—lala—! Mic check complete! I'm ready to go!"
       },
       {
+        "voId": "chr_0035_liino_sim_assign_work_01",
         "title": "Assigning to Facility",
         "text": "How about two sets of speakers? One could work too! I just need to see how my voice carries in here..."
       },
       {
+        "voId": "chr_0035_liino_sim_hello_lower_01",
         "title": "Greeting 1",
         "text": "Endmin! Care to join me? I'm about to scout some venues."
       },
       {
+        "voId": "chr_0035_liino_sim_hello_max_01",
         "title": "Greeting 2",
         "text": "There you are, Endmin! Come listen to my new demo!"
       },
       {
+        "voId": "chr_0035_liino_sim_talk_lv01_01",
         "title": "Dijiang Idle Chatter 1",
         "text": "Hi, Endmin! Here to watch my rehearsal? I just perfected two tricky gliding stunts I've designed! Hehe, don't worry! I already reserved the best seats for you!"
       },
       {
+        "voId": "chr_0035_liino_sim_talk_lv02_01",
         "title": "Dijiang Idle Chatter 2",
         "text": "Dijiang is HUUGE! The place actually scared me at first! Then I thought — If I could have a space-themed concert here, that'd be SOOO amazing! Don't you agree, Endmin?"
       },
       {
+        "voId": "chr_0035_liino_sim_talk_lv02_02",
         "title": "Dijiang Idle Chatter 3",
         "text": "Hehe, another deal signed and sealed! I'm thinking of a new setup... A circular stage. Scrap the audience seating and add everyone to the show! Super clever and interesting, don't you think?"
       },
       {
+        "voId": "chr_0035_liino_sim_talk_max_01",
         "title": "Dijiang Idle Chatter 4",
         "text": "Sheesh, people should STAHHP making up ridiculous stories about Djalls. One smile and people will screech: \"SHUT UP AND TAKE MY WALLET!\" Really? Oh, puh-lease. If that were true... Endmin, keep still and look at my face! Now ... feeling any uncontrollable urge to gimme all your cash?"
       },
       {
+        "voId": "chr_0035_liino_sim_talk_max_02",
         "title": "Dijiang Idle Chatter 5",
         "text": "On the eve of my debut, I suffered a whole week without proper sleep. I spent all night rehearsing and double-checking every performance detail. The thought of a single slip got me scared. But — seeing how happy the audience was, I knew everything I did was ... worth every agony."
       },
       {
+        "voId": "chr_0035_liino_sim_talk_max_03",
         "title": "Dijiang Idle Chatter 6",
         "text": "Gimme advice for my next performance venue, Endmin! New Wrankwood has an interesting floating stage, Neo Tsukushi concert hall is neat. La Fantoma... what about a mid-ocean performance? That'd be blockbusting! Hmm? Why only TGCC cities? Tsk, 'cos they are where the money is!"
       },
       {
+        "voId": "chr_0035_liino_sim_gift_give_01",
         "title": "Offering Gifts",
         "text": "Ehehe, found this little souvenir while I was scouting the venues! Take it and let it make your day."
       },
       {
+        "voId": "chr_0035_liino_sim_gift_recv_01",
         "title": "Accepting Gifts",
         "text": "*GASP* My thanks! Heehee! I get all kinds of presents, but those from you ... always mean a little more to me."
       },
       {
+        "voId": "chr_0035_liino_mono_self_line01",
         "title": "Trust Dialog 1",
         "text": "The buzz from a great performance sticks with me for days! Yeah, it feels like a smith who perfects a weapon, except ... a sharp blade is only used to break hearts, while a great show is the perfect mirror for the soul."
       },
       {
+        "voId": "chr_0035_liino_mono_self_line02",
         "title": "Trust Dialog 2",
         "text": "\"Sincerity\". It's the perfume I wear and I love its aroma. Lilac with a dash of rose give it a spectacular and dreamy top note, but it fades into a base note of bitter cedar... And that's why it's super memorable, wouldn't you say?"
       },
       {
+        "voId": "chr_0035_liino_mono_self_line03",
         "title": "Trust Dialog 3",
         "text": "Because I'm a Djall, they've made all sorts of over-the-top stories about me, like, how my songs are imbued with mind-control arts or how I'd use witchcraft instruments to manipulate my audience... But Endmin, the witchcraft in my earrings and hairpins actually suppresses my Djall powers. I won't permit a single \"flaw\" on my stage that isn't part of the show ... even if that flaw is my innate power."
       },
       {
+        "voId": "chr_0035_liino_mono_self_line04",
         "title": "Trust Dialog 4",
         "text": "When I was a girl, I would dream of a lovely purple rose. With a cloud-white ship we flew across the boundless skies, and the rose told me stories about the stars... One day, the red storm appeared. The ship capsized with the rose, dragged into a dark whirlpool. After that? Well, I woke up all by myself ... and I never, ever dreamed again."
       },
       {
+        "voId": "chr_0035_liino_mono_self_line05",
         "title": "Trust Dialog 5",
         "text": "I always treated the world as a massive stage, one that needed a bit more \"heart\" to master. Everyone, me included, is putting on our best show for an applause. But sometimes ... just sometimes ... even I wanted a break. So, Endmin, can I stay here a little longer? Being around you feels like the only time when I can breathe easy... Strange, isn't it?"
       },
       {
+        "voId": "chr_0035_liino_mono_chat_line01",
         "title": "Chat 1",
         "text": "More scripts to memorize for \"surprise\" interviews... Ugh. People just can't stop asking how I got started. I never went on any talent shows. I was directly scouted. My debut was an instant success, and I worked my heart out to get to where I am. Can't these variety show producers understand?! Is it really that hard to believe?"
       },
       {
+        "voId": "chr_0035_liino_mono_chat_line02",
         "title": "Chat 2",
         "text": "Interacting with fans, performing on stage... I give my absolute all to everything I do. Especially for my fans. I refuse to let them down. They deserve a dream with a happiness that lasts well after they wake. It doesn't matter if I get so tired I could fall asleep on my feet. I'll wait till the last fan leaves before I even take a sip of water... That's the duty of a real idol."
       },
       {
+        "voId": "chr_0035_liino_mono_chat_line03",
         "title": "Chat 3",
         "text": "I did receive training about \"strictly taboo topics\". But I think ... I'll be okay if I talk about them with you. Like, my daily schedule is a super mess. I stay up late. I eat at random times. And I'm a real pain to my staff 'cos I demand perfection for my performance. Wow, admitting all that is quite embarrassing... So, to make it even, you should tell me a personal secret, Endmin."
       },
       {
+        "voId": "chr_0035_liino_mono_chat_line04",
         "title": "Chat 4",
         "text": "My favorite way to unwind? If you're the press, I'd say \"music\" to be safe. But truth be told, I love sleeping. I can sleep for a dozen hours after hitting the pillow. It scared a new assistant witless 'cos she couldn't wake me...! Fortunately my manager was there and screamed: \"Ten seconds to curtain!\" I was up before she could countdown to nine."
       },
       {
+        "voId": "chr_0035_liino_mono_chat_line05",
         "title": "Chat 5",
         "text": "A former staff member wrote to me this month. He felt guilty for staying silent while a sponsor flat-out accused me of something I never did. But I never blamed him... He chose silence because he needed the money for his family — like so many others struggling to get by. Who are we to blame them?"
       },
       {
+        "voId": "chr_0035_liino_mono_about_line01",
         "title": "Topic: TGCC",
         "text": "I used to be fine with all those TGCC practices and rules. But experience and learning that there isn't a single truth to life, I realized that — even TGCC people can choose to live their own way. Even for traditional stageshows, an idol can still deliver the performance with their own style."
       },
       {
+        "voId": "chr_0035_liino_mono_about_line02",
         "title": "Topic: Idol Singer",
         "text": "Endmin, what do you think an \"idol\" really is? I suppose everyone has their own answer. For me, an \"idol\" is a ship that carries hope, and she must sail high enough to earn the right to fulfill her \"duty\"... And \"my\" dream has always been to sail Liino the Ship and reach the highest peak of Talos-II. There, I'll do my absolute best to illuminate every wish she carries."
       },
       {
+        "voId": "chr_0035_liino_mono_about_line03",
         "title": "Topic: Music Games",
         "text": "Eh? Don't you think music games are a great way to de-stress? Even when I'm at my busiest, I still love squeezing in a few ultra-hard challenges in the brief moments of free time. I can't perfectly hit every note, but completing a stage just feels great! I'm not great at vertical scrollers, though. Single-tracks like Diro Master or Rhythm Party are what I like!"
       },
       {
+        "voId": "chr_0035_liino_mono_about_line04",
         "title": "Topic: Djall",
         "text": "Mother warned me as a girl. The minds of others can be very enticing for Djalls. While whipping their hearts, I must never neglect to whip my own... Reading a hidden secret from people is just as easy as taking a drink of water for us. We don't even have to work for it. And that's why we often forget that people don't feel happy about having their souls laid bare."
       },
       {
+        "voId": "chr_0035_liino_mono_about_line05",
         "title": "Topic: La Fantoma",
         "text": "Day one of that Obsidian Festival was the last time I went out with my parents. The beautiful sunset dyed the city's fringes red. I pointed to a girl holding a mic on the most visible poster on a skyscraper and asked my mom: \"Mama, can I ever become someone like her?\" Mom smiled, patted my head, and encouraged me for the first time. \"It'll happen. If little Liino puts her heart into it, she'll become the most radiant star of La Fantoma.\""
       },
       {
+        "voId": "chr_0035_liino_explore_point_common_01",
         "title": "Resource/Collectible Detected 1",
         "text": "There's something over there... I can't take my eyes off it!"
       },
       {
+        "voId": "chr_0035_liino_explore_point_valub_01",
         "title": "Resource/Collectible Detected 2",
         "text": "Eh? That looks expensive... Maybe we're about to strike it rich?"
       },
       {
+        "voId": "chr_0035_liino_explore_find_locked_01",
         "title": "Unexplored Area Detected",
         "text": "A brand new place! Fingers crossed. Hope we get surprised with something interesting."
       },
       {
+        "voId": "chr_0035_liino_explore_find_danger_01",
         "title": "Powerful Enemy Discovered",
         "text": "Oh my, looks like an uninvited big meanie just barged in!"
       },
       {
+        "voId": "chr_0035_liino_interact_mine_valub_01",
         "title": "Mining 1",
         "text": "Whoa. I only saw these minerals in encyclopedias..."
       },
       {
+        "voId": "chr_0035_liino_interact_mine_valub_echo2_01",
         "title": "Mining 2",
         "text": "Hee hee. Time to collect some special mo-cap data!"
       },
       {
+        "voId": "chr_0035_liino_interact_treasure_valub_01",
         "title": "Opening a Crate",
         "text": "What a find! I'd say this earns a ten-spotlight solo!"
       },
       {
+        "voId": "chr_0035_liino_interact_etherium_01",
         "title": "Acquiring Aurylene",
         "text": "Whoa. Aurylenes are actually super sparkly! Bet it's worth a fortune..."
       },
       {
+        "voId": "chr_0035_liino_interact_blight_break_01",
         "title": "Eliminating the Blight",
         "text": "Everything around here feels ... revolting. I refuse to perform in a place like this!"
       },
       {
+        "voId": "chr_0035_liino_interact_rest_01",
         "title": "Rest",
         "text": "Is it break time yet? Whew, I need some water! Give me a moment!"
       },
       {
+        "voId": "chr_0035_liino_combat_suppuse_using_01",
         "title": "Tactical Use 1",
         "text": "I got your back!"
       },
       {
+        "voId": "chr_0035_liino_combat_suppuse_getheal_01",
         "title": "Tactical Use 2",
         "text": "So warm and cozy..."
       },
       {
+        "voId": "chr_0035_liino_combat_remind_danger_01",
         "title": "Warning Teammate",
         "text": "Get down! Don't force yourself!"
       },
       {
+        "voId": "chr_0035_liino_combat_hurt_lowhp_01",
         "title": "Injured",
         "text": "Ngh... Such a clumsy flaw..."
       },
       {
+        "voId": "chr_0035_liino_combat_dead_01",
         "title": "0 HP",
         "text": "Not fair... I was so close..."
       },
       {
+        "voId": "chr_0035_liino_combat_remind_praise_01",
         "title": "Team Encouragement 1",
         "text": "Whoa! I have to see that again!"
       },
       {
+        "voId": "chr_0035_liino_combat_remind_praise_02",
         "title": "Team Encouragement 2",
         "text": "When will I be able to move like you all?"
       },
       {
+        "voId": "chr_0035_liino_combat_remind_praise_echo2_01",
         "title": "Encouragement Response 1",
         "text": "Join me on stage for the next concert!"
       },
       {
+        "voId": "chr_0035_liino_combat_remind_praise_echo2_02",
         "title": "Encouragement Response 2",
         "text": "I'm in sync with the team!"
       },
       {
+        "voId": "chr_0035_liino_combat_intobattle_01",
         "title": "Combat Begins 1",
         "text": "Okay, let's do this! Twinkle-twinkle!"
       },
       {
+        "voId": "chr_0035_liino_combat_intobattle_echo2_01",
         "title": "Combat Begins 2",
         "text": "Let's cross-out these sour notes!"
       },
       {
+        "voId": "chr_0035_liino_combat_outbattle_nor_01",
         "title": "Combat Victory 1",
         "text": "Told you I'm bad at fighting... Wait? We actually won?"
       },
       {
+        "voId": "chr_0035_liino_combat_outbattle_nor_02",
         "title": "Combat Victory 2",
         "text": "A flawless curtain call! I knew we had this in the bag."
       },
       {
+        "voId": "chr_0035_liino_combat_outbattle_nor_echo2_01",
         "title": "Combat Victory 3",
         "text": "Not bad! You actually kept up with my tempo!"
       },
       {
+        "voId": "chr_0035_liino_combat_outbattle_hard_01",
         "title": "Combat Victory 4",
         "text": "Take a proper break for the next performance! No worries. I'll whip everyone into a riot!"
       },
       {
+        "voId": "chr_0035_liino_combat_battle_defeat_01",
         "title": "Combat Defeat",
         "text": "Was I not bright enough? No... I won't allow such a dismal finale..."
       },
       {
+        "voId": "chr_0035_liino_mono_attack_last_01",
         "title": "Final Strike 1",
         "text": "Buh-byez!"
       },
       {
+        "voId": "chr_0035_liino_mono_attack_last_02",
         "title": "Final Strike 2",
         "text": "Fall!"
       },
       {
+        "voId": "chr_0035_liino_mono_skill_nor_01",
         "title": "Battle Skill 1",
         "text": "This is for you all!"
       },
       {
+        "voId": "chr_0035_liino_mono_skill_nor_02",
         "title": "Battle Skill 2",
         "text": "Ears on me!"
       },
       {
+        "voId": "chr_0035_liino_mono_skill_nor_03",
         "title": "Battle Skill 3",
         "text": "Here's my verse!"
       },
       {
+        "voId": "chr_0035_liino_combat_skill_comb_ready_01",
         "title": "Combo Skill Ready 1",
         "text": "Time for me to give back!"
       },
       {
+        "voId": "chr_0035_liino_combat_skill_comb_ready_02",
         "title": "Combo Skill Ready 2",
         "text": "The stage is calling!"
       },
       {
+        "voId": "chr_0035_liino_mono_skill_comb_release_01",
         "title": "Combo Casting 1",
         "text": "Return of the Morning Star!"
       },
       {
+        "voId": "chr_0035_liino_mono_skill_comb_release_02",
         "title": "Combo Casting 2",
         "text": "The show goes on!"
       },
       {
+        "voId": "chr_0035_liino_mono_attack_extra_01",
         "title": "Finisher 1",
         "text": "You missed a beat!"
       },
       {
+        "voId": "chr_0035_liino_mono_attack_extra_02",
         "title": "Finisher 2",
         "text": "Your show's over!"
       },
       {
+        "voId": "chr_0035_liino_mono_skill_ultimate_01",
         "title": "Ultimate 1",
         "text": "Time to spark joy in every heart!"
       },
       {
+        "voId": "chr_0035_liino_mono_skill_ultimate_02",
         "title": "Ultimate 2",
         "text": "Don't blink! The star is rising!"
       },
       {
+        "voId": "chr_0035_liino_mono_skill_ultimate_03",
         "title": "Ultimate 3",
         "text": "Let's fill the world with shine!"
       }

@@ -140,330 +140,412 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0029_pograni_chrbark_squad_01",
         "title": "Einsatzvorbereitung 1",
         "text": "In Position, erwarte Befehle."
       },
       {
+        "voId": "chr_0029_pograni_chrbark_squad_02",
         "title": "Einsatzvorbereitung 2",
         "text": "Bereit, das Camp aufzulösen."
       },
       {
+        "voId": "chr_0029_pograni_chrbark_join_01",
         "title": "Wird zum Team hinzugefügt 1",
         "text": "Ein Soldat ist zum Kämpfen geboren."
       },
       {
+        "voId": "chr_0029_pograni_chrbark_join_02",
         "title": "Wird zum Team hinzugefügt 2",
         "text": "Überleben hat einen Preis. Wir müssen ihn zahlen."
       },
       {
+        "voId": "chr_0029_pograni_chrbark_weap_01",
         "title": "Waffe wird gewechselt",
         "text": "Man muss lernen, Gewalt anzuwenden – nicht, um Gutes oder Böses zu tun, sondern zum Überleben."
       },
       {
+        "voId": "chr_0029_pograni_chrbark_gear_01",
         "title": "Ausrüstung wird gewechselt",
         "text": "Für einen Quartiermeister ist die richtige Ausrüstung der erste Schritt zum Sieg."
       },
       {
+        "voId": "chr_0029_pograni_chrup_skill_01",
         "title": "Fähigkeitsmatrix wird aktiviert",
         "text": "Unachtsamkeit und Nachlässigkeit sind die tödlichste Bedrohung auf dem Schlachtfeld."
       },
       {
+        "voId": "chr_0029_pograni_chrup_level_01",
         "title": "Kampfaufzeichnungen ansehen",
         "text": "Eine wichtige Schlacht … Mein Kampfgeist ist erwacht."
       },
       {
+        "voId": "chr_0029_pograni_chrup_promt01_01",
         "title": "Operator-Beförderung 1",
         "text": "Es braucht keine Orden und Zeremonien. Die Bedeutung dieser Geste ist mir bewusst … Danke für dein Vertrauen, Endministrator von Endfield Industries."
       },
       {
+        "voId": "chr_0029_pograni_chrup_promt02_01",
         "title": "Operator-Beförderung 2",
         "text": "Wäre das in der Festung der Eidwächter geschehen, hätte ich heute Nacht ein Bankett ausrichten müssen."
       },
       {
+        "voId": "chr_0029_pograni_chrup_promt03_01",
         "title": "Operator-Beförderung 3",
         "text": "Ob auf dem Schlachtfeld oder abseits davon, es ist mir eine Ehre. Danke für dein Vertrauen, Endministrator. Ich werde durch Taten an der Front beweisen, dass ich es verdiene."
       },
       {
+        "voId": "chr_0029_pograni_chrup_promt04_01",
         "title": "Operator-Beförderung 4",
         "text": "Krieg ist auch auf Talos-II ein brutales Geschäft. Viele Seelen sind in den Norden marschiert und dort im Kampf gefallen, damit der Rest dieser Welt leben kann. Endmin, ich bin sicher, dass deine Taten diesen Kreislauf aus Krieg und Opfer endgültig durchbrechen werden."
       },
       {
+        "voId": "chr_0029_pograni_introduce_01",
         "title": "Operator meldet sich zum Dienst",
         "text": "Pogranichnik, Operator von Rhodes Island und Offizier im Dienste des Ordens des Stahlschwurs, melde mich zum Dienst. Die Situation ist ernst. Ich bitte respektvoll darum, schnellstmöglich in den Schlachtplan eingeweiht zu werden."
       },
       {
+        "voId": "chr_0029_pograni_mono_switch_01",
         "title": "Warten 1",
         "text": "Lass uns den Schlachtplan noch einmal durchgehen, ja?"
       },
       {
+        "voId": "chr_0029_pograni_mono_switch_02",
         "title": "Warten 2",
         "text": "Jedes noch so kleine Versäumnis bestimmt, wer überlebt … und wer im Kampf fällt."
       },
       {
+        "voId": "chr_0029_pograni_sim_assign_work_01",
         "title": "Zuweisung zur Anlage",
         "text": "So eine Arbeit habe ich noch nie ausgeführt … aber strategisch betrachtet ist es wohl einen Versuch wert."
       },
       {
+        "voId": "chr_0029_pograni_sim_hello_lower_01",
         "title": "Gruß 1",
         "text": "Ich grüße dich, Endministrator. Machst du einen weiteren Kontrollrundgang?"
       },
       {
+        "voId": "chr_0029_pograni_sim_hello_max_01",
         "title": "Gruß 2",
         "text": "Meine Grüße, Endministrator."
       },
       {
+        "voId": "chr_0029_pograni_sim_talk_lv01_01",
         "title": "Dijiang-Geplauder 1",
         "text": "Die Dijiang ist sehr viel größer als erwartet, aber ich habe kaum Zeit gebraucht, um mich mit ihrem Aufbau vertraut zu machen. Dank des genialen, perfekten Entwurfs ihres Schöpfers. Sie ist ein guter Ausgangspunkt für einen großen Traum, Endmin, und ich kann es kaum erwarten, diesen wahr werden zu sehen."
       },
       {
+        "voId": "chr_0029_pograni_sim_talk_lv02_01",
         "title": "Dijiang-Geplauder 2",
         "text": "Der Automatisierte Industriekomplex übertrifft all meine Erwartungen. Mit dem Protokoll-Automationskern erhalten die Rüstungsmaschinen des Militärs von Terra endlich ein starkes Herz, das die Versorgung jedes Winkels in Not auf dem Planeten sicherstellen kann. Endmin, deine Arbeit wird unzählige Leben retten. Das verspreche ich dir hoch und heilig."
       },
       {
+        "voId": "chr_0029_pograni_sim_talk_lv02_02",
         "title": "Dijiang-Geplauder 3",
         "text": "Die Waffeningenieure von Endfield sind wirklich beeindruckend. Sie haben trotz des engen Zeitplans die Inspektion der Waffen sämtlichen Personals beendet … Solche Effizienz findet man selten, selbst an der Nordfront. Allerdings muss ich zugeben, erwartet zu haben, dass der Hauptverantwortliche für das Arsenal etwas älter ist."
       },
       {
+        "voId": "chr_0029_pograni_sim_talk_max_01",
         "title": "Dijiang-Geplauder 4",
         "text": "Ich habe Ausbilder Flinx’ Trainingsprogramm für dich überprüft. Die Inhalte sind zweckmäßig und die Steigerungskurve gut ausbalanciert. Ich habe nicht vor, Änderungen daran vorzunehmen, habe aber die ein oder andere kleine Zusatzprüfung hinzugefügt … Ich bin sicher, dass das kein Problem für dich sein wird, Endministrator."
       },
       {
+        "voId": "chr_0029_pograni_sim_talk_max_02",
         "title": "Dijiang-Geplauder 5",
         "text": "Vor deinem Aufwachen war ich seit Jahren nicht mehr direkt an Endfield-Operationen beteiligt gewesen. Für mich macht es keinen Unterschied, ob ich Rhodes Island, Endfield oder dem Orden des Stahlschwurs diene. Ich möchte schützen, was ich als schützenswert erachte. Und dieses Mal werde ich nur vorrücken und mich niemals zurückziehen."
       },
       {
+        "voId": "chr_0029_pograni_sim_talk_max_03",
         "title": "Dijiang-Geplauder 6",
         "text": "Immer wenn ich Talos-II sehe, fühle ich mich inspiriert. Riesige Schwärme von Ungeheuern, die den gesamten Planeten überrennen könnten, werden in Kesseln in der Aurora-Zone im Norden zurückgehalten. Einfache Soldaten aus Fleisch und Blut bildeten die Steine und den Mörtel der Mauer, die den Gegner in Schach hält. Dies ist die größte militärische Errungenschaft der Eidwächter und der unumstößliche Beweis, dass wir würdig sind … die große Verantwortung der Bewahrung der Zivilisation zu schultern."
       },
       {
+        "voId": "chr_0029_pograni_sim_gift_give_01",
         "title": "Geschenke anbieten",
         "text": "Das habe ich im Norden gefunden … es könnte dir nützlich sein, Endministrator."
       },
       {
+        "voId": "chr_0029_pograni_sim_gift_recv_01",
         "title": "Geschenke annehmen",
         "text": "Danke für dein Geschenk, Endministrator. Ich verstehe es zugleich als Belobigung … Bitte akzeptiere dieses Zeichen meines Dankes."
       },
       {
+        "voId": "chr_0029_pograni_mono_self_line01",
         "title": "Vertrauensgespräch 1",
         "text": "Nachdem ich Rhodes Island verlassen habe, besuchte ich zunächst das Industrie-Mutterschiff des GBT. Aus irgendeinem Grund wollte ich sehen, welche Früchte ein bestimmtes Kapitel der Geschichte in diesem Land getragen hatte. Der Anblick dieser unbezwingbaren Stadt hat mich tief bewegt. Wenn die Kinder von Ursus die Vergangenheit hinter sich lassen und solche ehrenvolle und ruhmreiche Werke vollbringen können, besteht auch für mich, Khorsyn, kein Grund mehr, zu zögern."
       },
       {
+        "voId": "chr_0029_pograni_mono_self_line02",
         "title": "Vertrauensgespräch 2",
         "text": "Beim Militär der Eidwächter habe ich drei Dinge gelernt. Erstens: Vertraue deinen Kameraden. Zweitens: Gib niemals einfach so auf. Und drittens: Stelle dein Glück nicht auf die Probe. Im Norden konnte es einem selbst oder den Kameraden schlecht ergehen, wenn man diese Prinzipien missachtete."
       },
       {
+        "voId": "chr_0029_pograni_mono_self_line03",
         "title": "Vertrauensgespräch 3",
         "text": "Während meiner Zeit bei den Eidwächtern habe ich die Schildwächter neu organisiert und trainiert. Die Idee kam mir in der Nacht, ehe ich die Bastion der Eidwächter erreichte. Riesige Bauten erhoben sich im Schatten der Berge. Samis Düsterwald erstreckte sich im Dunkeln wie ein dunkelgrünes Flammenmeer entlang des Flussufers. Unzählige Reihen von Grabmälern bildeten eine Mauer, die den Gegner aus dem Norden zurückhielt. Die Eidwächter sind ein Schild, der den Zivilisationsgürtel schützt, und ich habe einen weiteren Schild für sie geschmiedet. Ich bin überzeugt, dass diese Soldaten niemals brechen werden."
       },
       {
+        "voId": "chr_0029_pograni_mono_self_line04",
         "title": "Vertrauensgespräch 4",
         "text": "Hellagur ist eher mein Mentor und mein Freund. Ich verstehe inzwischen seine Reue und seine Schuld, und ich habe von seinen Überlegungen und seinen Fertigkeiten gelernt. Hier gibt es Hellagur den General der Ursus nicht – nur Khorsyn von Rhodes Island und Endfield. Manchmal bin ich froh, keine Vergangenheit zu haben, die mich runterzieht. Aber manchmal spüre ich auch … den Schmerz der Einsamkeit. Sollte das, was ich beschütze, sich als ein weiteres leeres Ideal herausstellen, ist es nichts anderes als der leere Ruhm des Ursus-Imperiums. Endministrator … ich hoffe, du wirst mir die Antwort zeigen."
       },
       {
+        "voId": "chr_0029_pograni_mono_self_line05",
         "title": "Vertrauensgespräch 5",
         "text": "Endmin, mein einziger Wunsch ist es, deine Vision in Erfüllung gehen zu sehen. Dass alle bei Rhodes Island zu einem friedlichen Leben voller geteilter Freuden zurückkehren können. Dass die Eidwächter ihre Schwerter endlich niederlegen, zum Pflug greifen, sich an ihren Liebsten erfreuen können und dass das Leben endlich tiefe Wurzeln auf diesem alten Planeten schlagen kann. Ich freue mich darauf, jeden Sieg mit dir und deinen Freunden zu feiern. Selbst im Falle einer vernichtenden Niederlage hoffe ich, dass du alles tun wirst, um zu überleben. Wenn dir das gelingt, hatte alles, was ich getan habe, einen Sinn."
       },
       {
+        "voId": "chr_0029_pograni_mono_chat_line01",
         "title": "Geplauder 1",
         "text": "Die jungen Leute aus Einsatzteam Z7 sind wirklich beeindruckend. Sie haben lediglich eine militärische Grundausbildung erhalten, dennoch reicht ihre Kampffertigkeit an die von militärischen Einheiten heran. Solch eine Leistung sieht man selten, sie ist lobenswert."
       },
       {
+        "voId": "chr_0029_pograni_mono_chat_line02",
         "title": "Geplauder 2",
         "text": "Ich habe im Norden alle möglichen Rollen innegehabt. Neben einem Kommandanten war ich auch Quartiermeister und Drillausbilder. Ich habe Waffen geschmiedet, Zystbiester gemolken und sogar Traubenwein gekeltert …"
       },
       {
+        "voId": "chr_0029_pograni_mono_chat_line03",
         "title": "Geplauder 3",
         "text": "Was macht die Ehre eines Soldaten aus? Ich fürchte, darauf kann ich keine endgültige Antwort geben. Aber solltest du jemals die Festung der Eidwächter im Norden besuchen, sieh dir unsere Gedenkstätte an … Jeder, dessen Namen dort eingraviert wurde, hätte diese Frage einst beantworten können."
       },
       {
+        "voId": "chr_0029_pograni_mono_chat_line04",
         "title": "Geplauder 4",
         "text": "Der Große Schatzmeister verwaltet ein riesiges Archiv voller Vermächtnisse. Dort befinden sich nicht nur Relikte aus Legenden der Eidwächter, sondern auch Technologien aus Terra, die derzeit nicht wiederhergestellt werden können, und rätselhafte Artefakte der Vorgänger. Mir wurde einmal angeboten, eines der Relikte auszuwählen und zu führen, aber ich habe abgelehnt. Der Ruhm einer alten Legende hat bereits auf mich abgefärbt. Den Rest meines Lebens will ich damit verbringen, meine eigene ruhmreiche Legende zu schreiben."
       },
       {
+        "voId": "chr_0029_pograni_mono_chat_line05",
         "title": "Geplauder 5",
         "text": "Meistens bekämpfen die Eidwächter Aggeloi, Ankhors und die durch Aktivitäten der Ætherside ausgelösten Katastrophen. Aber gelegentlich sind wir auch auf unerklärliche Phänomene gestoßen: Spuren von riesigen Kreaturen, Berichte über eigenartige Personen … Aus diesem Grund habe ich sofort beantragt, zu Endfield zurückkehren zu dürfen, als ich hörte, dass der Endmin erwacht war."
       },
       {
+        "voId": "chr_0029_pograni_mono_about_line01",
         "title": "Thema: Orden des Stahlschwurs",
         "text": "Der Norden unterscheidet sich stark von der Vorstellung der meisten Personen. Ein Jahrhundert der Entwicklung hat aus der Festung der Eidwächter ein lebhaftes Zentrum des Handels und der Unterhaltung gemacht. Die Leute haben sich an den andauernden Krieg gewöhnt und sprühen vor Leben. Die Samifjod haben Siedlungen im Düsterwald errichtet, um ihr altes Wissen und ihre Kultur zu bewahren. Ihre Karawanen reisen oft zwischen dem Wald und der Festung hin und her. Endmin, du solltest den Norden einmal besuchen. Es ist ein wunderschöner Ort, und ich werde dich gerne begleiten, wenn dies dein Wunsch ist."
       },
       {
+        "voId": "chr_0029_pograni_mono_about_line02",
         "title": "Thema: Der GBT",
         "text": "Das Industrie-Mutterschiff, die größte Stadt des GBT, hat inzwischen viele Namen. Aber ich weiß, dass sie auf Terra als Simonch bekannt war. Sie ist unter der tyrannischen Herrschaft des Ursus-Imperiums in einen See gesunken. Ich weiß bis heute nicht, warum das Imperium sie danach wieder geborgen hat oder warum die untergegangene Stadt zu einer Enklave in einer fremden Welt wurde. Jedenfalls ist sie jetzt die größte Nomadenstadt auf Talos-II und ein spirituelles Symbol für viele."
       },
       {
+        "voId": "chr_0029_pograni_mono_about_line03",
         "title": "Thema: Schildwächter",
         "text": "Als ich meine ersten Schildwächter auswählte, sah ich mich einem Haufen Rekruten gegenüber, die noch jünger waren als ich. Meine Aufgabe war es, ihnen die Aggression zu nehmen, denn sie sollten Wächter sein, keine Angreifer. Danach habe ich sie in jeder Strategie unterwiesen, die ich kenne, damit sie sich nicht nur verteidigen, sondern eine lebende Front bilden können. Zuletzt habe ich ihnen beigebracht, wie man überlebt … aber in diesem Punkt fürchte ich, sie nicht ausreichend unterwiesen zu haben. Es ist niemals das Ziel, sich zu opfern. Ein Opfer ist ein allerletztes Mittel, um weitere Opfer zu vermeiden."
       },
       {
+        "voId": "chr_0029_pograni_mono_about_line04",
         "title": "Thema: Ember",
         "text": "Ich habe Geschichten über Fräulein Ember gehört, sie ist eine bemerkenswerte Kriegerin. Sie wurde nicht nur in den Süden versetzt, um ihre Gruppe wieder aufzubauen. Ihr Kommandant wollte ihr eine Chance auf ein normales Leben geben. Das ist dir sicherlich bereits aufgefallen, Endmin. Leider glaube ich nicht, dass sie die Bedeutung hinter dieser Großzügigkeit versteht. Ein Soldat, der mit seiner Vergangenheit Frieden geschlossen hat, würde niemals so weit gehen wie sie."
       },
       {
+        "voId": "chr_0029_pograni_mono_about_line05",
         "title": "Thema: Samifjod",
         "text": "Die Samifjod sind keinesfalls fremdenfeindlich, auch, wenn das oft behauptet wird. Sie haben tatsächlich über ein Jahrhundert lang im verbleibenden Schutz ihres Ahnenvaters gelebt. Dennoch bieten sie allen Reisenden, die die Traditionen der Sami respektieren, großzügig Hilfe an. Die Zyklopen haben Samis Zähne einst den Seš’qariern zum Geschenk gemacht, um die fliegende Bastion anzutreiben. Auch die Schneepriester sind gerne bereit, ihre Techniken mit den Eidwächtern zu teilen. Die Samifjod haben eindeutig einen Weg gefunden, das neue Leben auf Talos-II anzunehmen und dabei ihr Erbe zu bewahren."
       },
       {
+        "voId": "chr_0029_pograni_explore_point_common_01",
         "title": "Ressource/Sammelobjekt entdeckt 1",
         "text": "Das hier könnte dir nützlich sein."
       },
       {
+        "voId": "chr_0029_pograni_explore_point_valub_01",
         "title": "Ressource/Sammelobjekt entdeckt 2",
         "text": "Behalte dieses Gebiet im Auge, um keine wichtigen Ressourcen zu verpassen."
       },
       {
+        "voId": "chr_0029_pograni_explore_find_locked_01",
         "title": "Unerforschter Bereich entdeckt",
         "text": "Haltet die Formation, besonders in unerforschten Gebieten."
       },
       {
+        "voId": "chr_0029_pograni_explore_find_danger_01",
         "title": "Starker Gegner entdeckt",
         "text": "Bleibt wachsam, die Gegner hier sind stark."
       },
       {
+        "voId": "chr_0029_pograni_interact_mine_valub_01",
         "title": "Abbau 1",
         "text": "Das sieht gut aus – perfekt zum Angriff und für die Verteidigung geeignet."
       },
       {
+        "voId": "chr_0029_pograni_interact_mine_valub_echo2_01",
         "title": "Abbau 2",
         "text": "Wenn wir unsere Stärke bündeln, ist keine Aufgabe zu schwer."
       },
       {
+        "voId": "chr_0029_pograni_interact_treasure_valub_01",
         "title": "Kiste öffnen",
         "text": "Strategische Reserven wie diese können das Blatt im Kampf wenden."
       },
       {
+        "voId": "chr_0029_pograni_interact_etherium_01",
         "title": "Aurylen erhalten",
         "text": "Die strategische Signifikanz ist wohl höher als der Wert für den Einsatz."
       },
       {
+        "voId": "chr_0029_pograni_interact_blight_break_01",
         "title": "Eliminierung der Verderbnis",
         "text": "Nachteilige Faktoren sollten in den frühesten Phasen eines Krieges beseitigt werden."
       },
       {
+        "voId": "chr_0029_pograni_interact_rest_01",
         "title": "Ausruhen",
         "text": "Jede Chance für eine Pause zählt. Das könnte unsere einzige Gelegenheit sein, uns auf den nächsten Kampf vorzubereiten."
       },
       {
+        "voId": "chr_0029_pograni_combat_suppuse_using_01",
         "title": "Taktische Nutzung 1",
         "text": "Halte durch. Nichts überstürzen."
       },
       {
+        "voId": "chr_0029_pograni_combat_suppuse_getheal_01",
         "title": "Taktische Nutzung 2",
         "text": "Das war fahrlässig."
       },
       {
+        "voId": "chr_0029_pograni_combat_remind_danger_01",
         "title": "Gefahrenwarnung",
         "text": "Alle Einheiten! Gegner nähern sich!"
       },
       {
+        "voId": "chr_0029_pograni_combat_hurt_lowhp_01",
         "title": "Verletzt",
         "text": "Es ist längst nicht aussichtslos."
       },
       {
+        "voId": "chr_0029_pograni_combat_dead_01",
         "title": "0 LP",
         "text": "Mein Krieg darf … hier nicht enden …"
       },
       {
+        "voId": "chr_0029_pograni_combat_remind_praise_01",
         "title": "Teammotivation 1",
         "text": "Eine brillante Strategie."
       },
       {
+        "voId": "chr_0029_pograni_combat_remind_praise_02",
         "title": "Teammotivation 2",
         "text": "Ein Manöver wie aus dem Lehrbuch."
       },
       {
+        "voId": "chr_0029_pograni_combat_remind_praise_echo2_01",
         "title": "Motivationsreaktion 1",
         "text": "Du schmeichelst mir."
       },
       {
+        "voId": "chr_0029_pograni_combat_remind_praise_echo2_02",
         "title": "Motivationsreaktion 2",
         "text": "Wir haben die Macht der Einigkeit demonstriert."
       },
       {
+        "voId": "chr_0029_pograni_combat_intobattle_01",
         "title": "Kampf beginnt 1",
         "text": "Im Krieg geht es nicht um Gnade."
       },
       {
+        "voId": "chr_0029_pograni_combat_intobattle_echo2_01",
         "title": "Kampf beginnt 2",
         "text": "Angriff."
       },
       {
+        "voId": "chr_0029_pograni_combat_outbattle_nor_01",
         "title": "Kampfsieg 1",
         "text": "Unser Schlachtplan hat seinen Wert gezeigt."
       },
       {
+        "voId": "chr_0029_pograni_combat_outbattle_nor_02",
         "title": "Kampfsieg 2",
         "text": "Die Ergebnisse sprechen für sich."
       },
       {
+        "voId": "chr_0029_pograni_combat_outbattle_nor_echo2_01",
         "title": "Kampfsieg 3",
         "text": "Das sollten wir feiern."
       },
       {
+        "voId": "chr_0029_pograni_combat_outbattle_hard_01",
         "title": "Kampfsieg 4",
         "text": "Jeder Sieg hat seinen Preis … bewahre, was du gelernt hast und vergiss nicht, was es dich gekostet hat."
       },
       {
+        "voId": "chr_0029_pograni_combat_battle_defeat_01",
         "title": "Niederlage im Kampf",
         "text": "Lass dich vom Versagen nicht runterziehen. Stehe dazu und nutze es als Trittstein für größere Taten."
       },
       {
+        "voId": "chr_0029_pograni_mono_attack_last_01",
         "title": "Abschlussangriff 1",
         "text": "Tritt beiseite!"
       },
       {
+        "voId": "chr_0029_pograni_mono_attack_last_02",
         "title": "Abschlussangriff 2",
         "text": "Erbärmlich!"
       },
       {
+        "voId": "chr_0029_pograni_mono_skill_nor_01",
         "title": "Kampffertigkeit 1",
         "text": "Fordere das Schicksal nicht heraus!"
       },
       {
+        "voId": "chr_0029_pograni_mono_skill_nor_02",
         "title": "Kampffertigkeit 2",
         "text": "Keine Furcht!"
       },
       {
+        "voId": "chr_0029_pograni_mono_skill_nor_03",
         "title": "Kampffertigkeit 3",
         "text": "Kein Rückzug!"
       },
       {
+        "voId": "chr_0029_pograni_combat_skill_comb_ready_01",
         "title": "Kombofertigkeit bereit 1",
         "text": "Stehe zu Diensten."
       },
       {
+        "voId": "chr_0029_pograni_combat_skill_comb_ready_02",
         "title": "Kombofertigkeit bereit 2",
         "text": "Ich werde sie ausschalten."
       },
       {
+        "voId": "chr_0029_pograni_mono_skill_comb_release_01",
         "title": "Kombo wirken 1",
         "text": "Mondsichel!"
       },
       {
+        "voId": "chr_0029_pograni_mono_skill_comb_release_02",
         "title": "Kombo wirken 2",
         "text": "Halbmond!"
       },
       {
+        "voId": "chr_0029_pograni_mono_skill_comb_release_03",
         "title": "Kombo wirken 3",
         "text": "Vollmond!"
       },
       {
+        "voId": "chr_0029_pograni_mono_attack_extra_01",
         "title": "Wuchtschlag 1",
         "text": "Ruhe still."
       },
       {
+        "voId": "chr_0029_pograni_mono_attack_extra_02",
         "title": "Wuchtschlag 2",
         "text": "Der Tod erwartet dich."
       },
       {
+        "voId": "chr_0029_pograni_mono_skill_ultimate_01",
         "title": "Ultimative Fertigkeit 1",
         "text": "AUF MEIN KOMMANDO!"
       },
       {
+        "voId": "chr_0029_pograni_mono_skill_ultimate_02",
         "title": "Ultimative Fertigkeit 2",
         "text": "Soldaten! VORRÜCKEN!"
       },
       {
+        "voId": "chr_0029_pograni_mono_skill_ultimate_03",
         "title": "Ultimative Fertigkeit 3",
         "text": "Schildwächter! FORMATION!"
       }

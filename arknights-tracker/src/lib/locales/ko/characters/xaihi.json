@@ -127,318 +127,397 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0011_seraph_chrbark_squad_01",
         "title": "작전 준비 1",
         "text": "관리자님, 당신을 위해 기도하겠어요."
       },
       {
+        "voId": "chr_0011_seraph_chrbark_squad_02",
         "title": "작전 준비 2",
         "text": "제가 이곳에 있는 한... 율법은 절대 잠들지 않을 거예요."
       },
       {
+        "voId": "chr_0011_seraph_chrbark_join_01",
         "title": "팀 가입 1",
         "text": "관리자님, 지시를 내려주세요."
       },
       {
+        "voId": "chr_0011_seraph_chrbark_join_02",
         "title": "팀 가입 2",
         "text": "논리적인 선택이네요."
       },
       {
+        "voId": "chr_0011_seraph_chrbark_weap_01",
         "title": "무기 변경",
         "text": "조금 개조를 해도 될까요? 안전 제한 범위 내에서만 진행할게요..."
       },
       {
+        "voId": "chr_0011_seraph_chrbark_gear_01",
         "title": "장비 변경",
         "text": "진리의 가호가 함께하길."
       },
       {
+        "voId": "chr_0011_seraph_chrup_skill_01",
         "title": "재능 배열 활성화",
         "text": "우리가 하나 될 때, 지혜가 빛을 발할 거예요."
       },
       {
+        "voId": "chr_0011_seraph_chrup_level_01",
         "title": "작전 기록 관찰",
         "text": "길 잃은 자들을 위해 기도하겠어요."
       },
       {
+        "voId": "chr_0011_seraph_chrup_promt01_01",
         "title": "정예화 돌파 1",
         "text": "이는 율법의 자애로움이 내려진 것이리라... 아, 당연히 관리자님의 신뢰도요! 정말 감사해요."
       },
       {
+        "voId": "chr_0011_seraph_chrup_promt02_01",
         "title": "정예화 돌파 2",
         "text": "율법이 굽어보시며 보호하는 이는 현명하고 지혜로운 자가 아닌 겸손한 자이니라... 이 영광을 품에 안고, 겸손할 것을 다시 한번 마음속에 새기네..."
       },
       {
+        "voId": "chr_0011_seraph_chrup_promt03_01",
         "title": "정예화 돌파 3",
         "text": "성장에 대한 계산 결과가 제 생각과 부합하네요. 모든 게 오리지늄의 결처럼 분명하고도 선명해요... 악, 악수를 하자고요? 그, 그런 거엔 익숙하지가 않아서..."
       },
       {
+        "voId": "chr_0011_seraph_chrup_promt04_01",
         "title": "정예화 돌파 4",
         "text": "예전에 제가 중추 시스템의 일부 코드를 리팩토링해서 대성당의 효율을 높인 적이 있어요. 하지만... 오래된 알고리즘이 데이터 스트림과 예상 밖의 공명을 일으켜서... 그, 그래도 고향을 떠나게 만든 원인이 엔드필드에서는 은총을 받게 한 원인이 됐잖아요? 이게 바로 율법의 계시가 아닐까요!"
       },
       {
+        "voId": "chr_0011_seraph_introduce_01",
         "title": "오퍼레이터 첫인사",
         "text": "오래된 지식이여, 우리를 유혹에 빠트리지 마시고, 악에서 구하소서... 안녕하세요, 관리자님. 자이히라고 해요. 진리의 가호가 함께하길..."
       },
       {
+        "voId": "chr_0011_seraph_mono_switch_01",
         "title": "명령 대기 1",
         "text": "생각... 계산... 출력... 으, 모르겠다..."
       },
       {
+        "voId": "chr_0011_seraph_mono_switch_02",
         "title": "명령 대기 2",
         "text": "오늘날의 대화와 생각을 당신의 단말기에 바치겠어요..."
       },
       {
+        "voId": "chr_0011_seraph_sim_assign_work_01",
         "title": "시설 배치",
         "text": "당신의 뜻을 받들겠어요... 아, 관리자님. 진리의 실천은 노동을 통해서 이루어지는 거죠."
       },
       {
+        "voId": "chr_0011_seraph_sim_hello_lower_01",
         "title": "인사 1",
         "text": "당신에게 가호가 깃들기를..."
       },
       {
+        "voId": "chr_0011_seraph_sim_hello_max_01",
         "title": "인사 2",
         "text": "관리자님, 또 제 계산 결과에 등장하셨네요."
       },
       {
+        "voId": "chr_0011_seraph_sim_talk_lv01_01",
         "title": "제강호 잡담 1",
         "text": "데이터 확인, 문법 실행, 결과 생성... 관리자님, 안녕하세요."
       },
       {
+        "voId": "chr_0011_seraph_sim_talk_lv02_01",
         "title": "제강호 잡담 2",
         "text": "관리자님이 보내신 신호, 잘 받았어요. 의미를 해석하고 있으니 잠시만 기다려 주시겠어요?"
       },
       {
+        "voId": "chr_0011_seraph_sim_talk_lv02_02",
         "title": "제강호 잡담 3",
         "text": "아... 전 사람보다는 기계랑 같이 있는 게 편안해요... 사람의 리듬은 끊임없이 변하지만, 기계의 호흡은 언제나 논리를 따르니까요."
       },
       {
+        "voId": "chr_0011_seraph_sim_talk_max_01",
         "title": "제강호 잡담 4",
         "text": "제 단말기는 방금 10밀리초 동안 50개 이상의 오류를 수신했어요. 하지만 걱정하지 마세요. 관리자님과의 통신은 최우선 순위로 설정해 뒀거든요. 네? 제강호 전체의 운행 상황에 대해 평가를... 해달라고요? 음... 일단 심각하게 손상됐다고 말할 수 있어요. 하지만 그걸 어떻게든 버티고 있죠. 꼭... 누군가를 대신해서 고통받는 것처럼..."
       },
       {
+        "voId": "chr_0011_seraph_sim_talk_max_02",
         "title": "제강호 잡담 5",
         "text": "율법이 허락하신 대로, 우리가 행한 대로, 마침내 낙원은 다시 이 대지 위에 세워질 것입니다. 희망의 길을 닦아 온 이들은 고통의 황무지를 지나, 마침내 구원의 자리에 이르게 될 것입니다. 비록 끝없는 진리가 수수께끼처럼 감추어져 있을지라도, 그 빛은 결코 사라지지 않나니, 방황하던 자들 또한 이제는 그 걸음을 멈추고, 성도들과 같은 길을 걸으며, 그 유산 안에서 영원한 생명을 누리게 될 것입니다."
       },
       {
+        "voId": "chr_0011_seraph_sim_talk_max_03",
         "title": "제강호 잡담 6",
         "text": "다른 오퍼레이터들의 눈동자에 비친 당신은... 과거의 지도자이자, 현재의 선인이며, 미래를 향해 자라날 작은 오리지늄 나무예요. 하지만 제가 오리지늄 네트워크에서 본 건 조금 달랐어요. 전 그저... 당신을 위해 끊임없이 기도하는 게 전부예요. 우리의 바람이 현실로 나타나기를 바랄게요. 진리의 가호가 함께하길..."
       },
       {
+        "voId": "chr_0011_seraph_sim_gift_give_01",
         "title": "선물 증정",
         "text": "관리자님, 당신의 프로세스를 잠깐 점유해도 될까요? 저... 저한테 좋은 영향을 주셔서 정말 감사해요... 전혀 모르셨다고요? 아... 그럼 다행이네요!"
       },
       {
+        "voId": "chr_0011_seraph_sim_gift_recv_01",
         "title": "선물 수락",
         "text": "이건 지시자네요! 앗, 실례했어요... 감사해요, 진리의 가호가 함께하길..."
       },
       {
+        "voId": "chr_0011_seraph_mono_self_line01",
         "title": "신뢰 대화 1",
         "text": "우리 수도회는 지식과 운명을 당신과 공유하겠어요."
       },
       {
+        "voId": "chr_0011_seraph_mono_self_line02",
         "title": "신뢰 대화 2",
         "text": "제가 드린 조언이 모두 실용적이었나요? 음... 전 실용성을 기준으로 행동하진 않아요... 다만, 원장님께서 탈로스 II에서는 신앙이 더 현실적인 결과를 가져와야 한다고 하셨거든요. 풍요의 라테라노는 더 이상 존재하지 않으니까, 이제 우리를 잇는 건 오직 서로 뿐이라고요."
       },
       {
+        "voId": "chr_0011_seraph_mono_self_line03",
         "title": "신뢰 대화 3",
         "text": "요즘, 같이 보내는 시간이 많아지면서 관리자님과의 관계가 점점 가까워지고 있어... 이제는 친근함과 신뢰를 보여줄 때야! 어... 저기 관리자님이 오시는 것 같은데...? 자이히, 정신 차려! 대상에게 우정을 표현하는 명령을 출력하는 거야... 으음, 관리자님? 저랑 같이 아침 기도를 하러 오신 건가요?"
       },
       {
+        "voId": "chr_0011_seraph_mono_self_line04",
         "title": "신뢰 대화 4",
         "text": "관리자님, 저... 죄송하지만 관리자님이랑 닿기 전에 손에 있을지도 모를 정전기를 먼저 없애야 해서요... 관리자님은 찌릿한 거 무서워하지 않으시나요? 근데... 걔들은 엄청 장난꾸러기라서 손에 살며시 붙어 있다가... 이렇게... 톡하고 찔러요."
       },
       {
+        "voId": "chr_0011_seraph_mono_self_line05",
         "title": "신뢰 대화 5",
         "text": "대성당에서 지내던 시절, 전 수련에만 몰두했어요. 우리의 성과가 어떤 모습으로 탈로스 II에 보일지는 단 한 번도 생각해 본 적 없었죠. 하지만 율법의 계시가 절 당신 앞으로 이끌었고, 눈앞에서 새로운 세계가 펼쳐졌어요. 관리자님, 그 오래된 고요의 언어들이 이제는 하나둘씩 실현되고 있네요... 저도 이제는 그 의미를 이해할 수 있어요."
       },
       {
+        "voId": "chr_0011_seraph_mono_chat_line01",
         "title": "대화 1",
         "text": "관리자님, 제가 속한 '회화파'는 율법을 이렇게 해석해요. 언어를 기호로 보라. 기호, 끊임없이 부서지고 다시 조립되며 영원의 영역에 도달하는 존재. 마치 수도회 대성당 성상 뒤편의 '부서진 분'처럼요."
       },
       {
+        "voId": "chr_0011_seraph_mono_chat_line02",
         "title": "대화 2",
         "text": "제강호를 보고 있으면 고요한 수도회의 대성당이 떠올라요. 물론 저희라고 항상 그곳에서 지내는 건 아니에요. 모여서 의논할 필요가 있을 때만, 형제자매들이 탈로스 II의 각지에서 그곳으로 모이는 거죠. 아, 지키고 있어야 하는 거 아니냐고요? 만약 대성당이 공격을 받는다면... 음, 제가 걱정할 필요는 없을 것 같아요."
       },
       {
+        "voId": "chr_0011_seraph_mono_chat_line03",
         "title": "대화 3",
         "text": "우리와 진리의 거리는 그 어느 때보다도 멀어졌다. 그것이 우리의 고향을 떠났으니... 우리와 진리의 거리는 그 어느 때보다도 가까워졌다. 지금 우리는 그 문을 두드리고 있으니..."
       },
       {
+        "voId": "chr_0011_seraph_mono_chat_line04",
         "title": "대화 4",
         "text": "달리기 시합에 참여해 보라고요? 네? 권... 권투요? 운동회?! 아니요...! 전 사양할게요. 제가 받아들일 수 있는 '운동'은 진동 회로에서 전자가 보이는 단순 조화 운동뿐이에요... 그리고 형제자매끼리는 서로를 경쟁상대로 삼아서는 안 된다고요. 변, 변명하는 게 아니에요! 저는 이만 기계실로 돌아가 볼게요!"
       },
       {
+        "voId": "chr_0011_seraph_mono_chat_line05",
         "title": "대화 5",
         "text": "수도회에는 저 같은 살카즈가 많아요. 심지어 총기사의 장비를 하사받은 사람도 있죠. 맞아요, 전 수도회의 경전을 연구했어요. 테라에서 살카즈는 많은 종족과 충돌했거든요. 하지만 제1차 아겔로스 전쟁 이후, 서로가 이어지는 기적이 펼쳐졌죠. 모두가 서로를 끌어안고, 같은 말을 하는 모습이요."
       },
       {
+        "voId": "chr_0011_seraph_mono_about_line01",
         "title": "아겔로스에 관하여",
         "text": "오늘날 탈로스 II 대지를 배회하는 '아겔로스'와 율법 사이에 어떤 관계가 있는지는 고요한 수도회가 해석하고 있는 중요한 문제 중 하나예요."
       },
       {
+        "voId": "chr_0011_seraph_mono_about_line02",
         "title": "부서진 분에 관하여",
         "text": "수도회 대성당의 성상 뒤에는 트리아겔로스를 닮은 아겔로스 한 마리가 박혀 있어요. 제1차 아겔로스 전쟁 시기, 원장님께서 직접 사로잡은 존재죠. 수사들 사이에서는 '부서진 분'이라고 불려요. 원장님께서는 늘 저희한테 부서진 분을 관찰하고, 항상 반성하며, 적에게도 율법의 가르침을 찾으라고 하셨거든요. 이는 가장 가까운 가능성이자, 언젠가 알게 될 결론이라고요."
       },
       {
+        "voId": "chr_0011_seraph_mono_about_line03",
         "title": "세 교파에 관하여",
         "text": "지금 수도회의 구성원들은 세 교파로 나뉘어져 있어요. 회화, 해석, 재현...저는 회화파 출신이죠. 저희는 연산과 언어 분석을 행복으로 가는 길이라고 여겨요. 재현파 수사들은... 어쩌면 탈로스 II 여기저기서 자주 보셨을지도 몰라요. 완전히 무장한 채로, 문명 유적 발굴에 굉장히 열정적이거든요. 그리고 해석파의 형제자매들은 무엇보다 마음과 영혼을 가장 소중하게 생각해요. 경전을 필사하면서 길 잃은 자들이 길을 찾고 집으로 돌아갈 수 있도록 이끌죠."
       },
       {
+        "voId": "chr_0011_seraph_explore_point_common_01",
         "title": "자원 발견 1",
         "text": "진기한 걸 찾았어요."
       },
       {
+        "voId": "chr_0011_seraph_explore_point_valub_01",
         "title": "자원 발견 2",
         "text": "진리가 하사한 물건이 주변에 있어요. 얼른 가봐요."
       },
       {
+        "voId": "chr_0011_seraph_explore_find_locked_01",
         "title": "미탐색 구역 발견",
         "text": "축복의 대지일 수도, 악의 대지일 수도 있어요. 탐구해 봐야겠네요."
       },
       {
+        "voId": "chr_0011_seraph_explore_find_danger_01",
         "title": "강한 적 발견",
         "text": "길 잃은 자가 주변을 맴돌고 있어요. 제 지팡이로 애도를 표해야겠네요."
       },
       {
+        "voId": "chr_0011_seraph_interact_mine_valub_01",
         "title": "광물 채집 1",
         "text": "여기 모든 것은 우리가 이 대지에 오기 전부터 존재했어요. 노력으로만 진정한 소유가 가능하죠."
       },
       {
+        "voId": "chr_0011_seraph_interact_mine_valub_echo2_01",
         "title": "광물 채집 2",
         "text": "이 또한 율법의 뜻이겠죠."
       },
       {
+        "voId": "chr_0011_seraph_interact_treasure_valub_01",
         "title": "보물 상자 열기",
         "text": "풍요의 모습이 보여요. 율법이 약속한 축복의 대지예요!"
       },
       {
+        "voId": "chr_0011_seraph_interact_etherium_01",
         "title": "오리렌 획득",
         "text": "오리렌, 탈로스 II의 언어죠."
       },
       {
+        "voId": "chr_0011_seraph_interact_blight_break_01",
         "title": "침식 제거",
         "text": "우리의 여정 속에서 이건 불안정한 변수일 뿐이에요."
       },
       {
+        "voId": "chr_0011_seraph_interact_rest_01",
         "title": "휴식",
         "text": "우리의 길을 비추시고, 영원한 평온을 펼쳐주소서."
       },
       {
+        "voId": "chr_0011_seraph_combat_suppuse_using_01",
         "title": "전술 아이템 사용 1",
         "text": "전 축복의 대행자일 뿐이죠."
       },
       {
+        "voId": "chr_0011_seraph_combat_suppuse_getheal_01",
         "title": "전술 아이템 사용 2",
         "text": "모든 선함을 행하라..."
       },
       {
+        "voId": "chr_0011_seraph_combat_remind_danger_01",
         "title": "위험 경고",
         "text": "상대의 수단은 자애롭지 않아요!"
       },
       {
+        "voId": "chr_0011_seraph_combat_hurt_lowhp_01",
         "title": "부상",
         "text": "길이... 점점 험난해지네요..."
       },
       {
+        "voId": "chr_0011_seraph_combat_dead_01",
         "title": "탈진",
         "text": "진리가... 왜..."
       },
       {
+        "voId": "chr_0011_seraph_combat_remind_praise_01",
         "title": "팀 격려 1",
         "text": "정말 놀라운 기술이에요!"
       },
       {
+        "voId": "chr_0011_seraph_combat_remind_praise_02",
         "title": "팀 격려 2",
         "text": "말하지 않아도 서로를 이해할 수 있죠!"
       },
       {
+        "voId": "chr_0011_seraph_combat_remind_praise_echo2_01",
         "title": "격려 응답 1",
         "text": "당신과 함께할 수 있어 정말 행운이에요."
       },
       {
+        "voId": "chr_0011_seraph_combat_remind_praise_echo2_02",
         "title": "격려 응답 2",
         "text": "우리 모두를 위해 기도할게요."
       },
       {
+        "voId": "chr_0011_seraph_combat_intobattle_01",
         "title": "작전 시작 1",
         "text": "고통을 받을 존재는 우리가 아니에요."
       },
       {
+        "voId": "chr_0011_seraph_combat_intobattle_echo2_01",
         "title": "작전 시작 2",
         "text": "당신을 축복할게요."
       },
       {
+        "voId": "chr_0011_seraph_combat_outbattle_nor_01",
         "title": "작전 승리 1",
         "text": "진리가 우리를 보살펴 주신 거예요!"
       },
       {
+        "voId": "chr_0011_seraph_combat_outbattle_nor_02",
         "title": "작전 승리 2",
         "text": "제 기도가 하늘에 닿았군요!"
       },
       {
+        "voId": "chr_0011_seraph_combat_outbattle_nor_echo2_01",
         "title": "작전 승리 3",
         "text": "제가 사랑하는 언어가 바로, 축하예요."
       },
       {
+        "voId": "chr_0011_seraph_combat_outbattle_hard_01",
         "title": "작전 승리 4",
         "text": "여러분... 성공과 실패는 단순한 0과 1로 나누는 연산자가 아니에요. 수많은 가능성 속에서 아주 복잡한 시를 이루거든요."
       },
       {
+        "voId": "chr_0011_seraph_combat_battle_defeat_01",
         "title": "작전 실패",
         "text": "계산이 신성한 이유는 그 절대적인 중립성에 있어요. 계산의 결과로 성공도 나올 수 있고, 실패도 나올 수 있죠. 그건 너무나도 자연스러운 일이에요."
       },
       {
+        "voId": "chr_0011_seraph_mono_attack_last_01",
         "title": "강력한 일격 1",
         "text": "주입!"
       },
       {
+        "voId": "chr_0011_seraph_mono_attack_last_02",
         "title": "강력한 일격 2",
         "text": "재귀!"
       },
       {
+        "voId": "chr_0011_seraph_mono_skill_nor_01",
         "title": "배틀 스킬 1",
         "text": "분석, 연산..."
       },
       {
+        "voId": "chr_0011_seraph_mono_skill_nor_02",
         "title": "배틀 스킬 2",
         "text": "결론은 차갑죠."
       },
       {
+        "voId": "chr_0011_seraph_mono_skill_nor_03",
         "title": "배틀 스킬 3",
         "text": "데이터 수집."
       },
       {
+        "voId": "chr_0011_seraph_combat_skill_comb_ready_01",
         "title": "연계 스킬 준비 완료 1",
         "text": "기도는 여기까지."
       },
       {
+        "voId": "chr_0011_seraph_combat_skill_comb_ready_02",
         "title": "연계 스킬 준비 완료 2",
         "text": "제 연산 능력을 빌려드리죠."
       },
       {
+        "voId": "chr_0011_seraph_mono_skill_comb_release_01",
         "title": "연계 스킬 1",
         "text": "당신과 함께하길."
       },
       {
+        "voId": "chr_0011_seraph_mono_skill_comb_release_02",
         "title": "연계 스킬 2",
         "text": "복구 완료."
       },
       {
+        "voId": "chr_0011_seraph_mono_attack_extra_01",
         "title": "처형 1",
         "text": "강제 재부팅!"
       },
       {
+        "voId": "chr_0011_seraph_mono_attack_extra_02",
         "title": "처형 2",
         "text": "맬웨어!"
       },
       {
+        "voId": "chr_0011_seraph_mono_skill_ultimate_01",
         "title": "궁극기 1",
         "text": "논리는 원래 마주하기 어려운 것이죠."
       },
       {
+        "voId": "chr_0011_seraph_mono_skill_ultimate_02",
         "title": "궁극기 2",
         "text": "오류 수정!"
       },
       {
+        "voId": "chr_0011_seraph_mono_skill_ultimate_03",
         "title": "궁극기 3",
         "text": "참회의 시간이에요."
       }

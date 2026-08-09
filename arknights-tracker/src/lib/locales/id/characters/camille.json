@@ -131,326 +131,407 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0033_camille_chrbark_squad_01",
         "title": "Persiapan Operasi 1",
         "text": "Aku tak mau tunggu lebih lama lagi."
       },
       {
+        "voId": "chr_0033_camille_chrbark_squad_02",
         "title": "Persiapan Operasi 2",
         "text": "Perlu kutemani? Aku siap menerima perintahmu."
       },
       {
+        "voId": "chr_0033_camille_chrbark_join_01",
         "title": "Menambahkan ke Tim 1",
         "text": "Pimpinlah jalannya, akan kuikuti. Atau bisa juga sebaliknya."
       },
       {
+        "voId": "chr_0033_camille_chrbark_join_02",
         "title": "Menambahkan ke Tim 2",
         "text": "Seperti yang kuduga. Ayo kita berangkat."
       },
       {
+        "voId": "chr_0033_camille_chrbark_weap_01",
         "title": "Berganti Senjata",
         "text": "Benda tajam ini bisa menembus lautan darah sekalipun. Akan kupakai dengan hati-hati."
       },
       {
+        "voId": "chr_0033_camille_chrbark_gear_01",
         "title": "Berganti Gear",
         "text": "Logika perlengkapan Penjaga berpusat pada ilmu sihir Sarkaz. Tapi, aku percaya pilihanmu."
       },
       {
+        "voId": "chr_0033_camille_chrup_skill_01",
         "title": "Aktivasi Matriks Kemampuan",
         "text": "Semua kotoran sudah dibersihkan. Sekarang, darah ini sudah lebih murni."
       },
       {
+        "voId": "chr_0033_camille_chrup_level_01",
         "title": "Menonton Rekaman Pertarungan",
         "text": "Wawasan taktis ini sangat berharga. Ini akan membantu tugas para Penjaga."
       },
       {
+        "voId": "chr_0033_camille_chrup_promt01_01",
         "title": "Promosi Operator 1",
         "text": "Pengakuan resmi dari Endfield, atau kepercayaan pribadimu?"
       },
       {
+        "voId": "chr_0033_camille_chrup_promt02_01",
         "title": "Promosi Operator 2",
         "text": "Terima kasih atas pujiannya, Endministrator. Tanggung jawabku makin bertambah, tapi saat ini, hanya rasa senang yang kurasakan karena aku pantas mendapatkan kepercayaanmu."
       },
       {
+        "voId": "chr_0033_camille_chrup_promt03_01",
         "title": "Promosi Operator 3",
         "text": "Gelar kehormatan belaka tak ada artinya lagi, Temanku. Darahku selalu bersamamu."
       },
       {
+        "voId": "chr_0033_camille_chrup_promt04_01",
         "title": "Promosi Operator 4",
         "text": "Kekuatan-kekuatan besar bersaing untuk menguasai dunia ini, memaksa kita bertahan di celah-celahnya. Tapi, kau menunjukkan bahwa perubahan, sekecil apa pun itu, memiliki makna. Dan aku ... aku sangat bersedia berjalan bersamamu dalam pencarian ini."
       },
       {
+        "voId": "chr_0033_camille_introduce_01",
         "title": "Operator Siap Bertugas",
         "text": "Camille Arno, Agaš’mekanaz dari Seš’qa. Aku mencari penjahat Sarkaz berbahaya yang menggunakan ilmu sihir sebagai senjata. Untuk itu, aku butuh kekuatan Endfield .... Dan sebagai gantinya, aku bersumpah akan menawarkan kekuatanku sendiri kepada kalian."
       },
       {
+        "voId": "chr_0033_camille_mono_switch_01",
         "title": "Siaga 1",
         "text": "Lahir dalam darah, berakhir dalam darah."
       },
       {
+        "voId": "chr_0033_camille_mono_switch_02",
         "title": "Siaga 2",
         "text": "Aku tak menyisakan bayangan ... yang bisa menyembunyikan orang-orang bersalah."
       },
       {
+        "voId": "chr_0033_camille_sim_assign_work_01",
         "title": "Menugaskan ke Fasilitas",
         "text": "Aku bekerja sendiri. Tak perlu berkomunikasi bisa meningkatkan efisiensi."
       },
       {
+        "voId": "chr_0033_camille_sim_hello_lower_01",
         "title": "Menyapa 1",
         "text": "Ada perintah?"
       },
       {
+        "voId": "chr_0033_camille_sim_hello_max_01",
         "title": "Menyapa 2",
         "text": "Endmin, pertemuan ini bukanlah suatu kebetulan. Aku sudah menantikannya."
       },
       {
+        "voId": "chr_0033_camille_sim_talk_lv01_01",
         "title": "Obrolan Santai di Dijiang 1",
         "text": "Ruang vertikal di Dijiang sangat luas. Terkadang, demi efisiensi, aku melintasi langit-langitnya .... Tidak, bukan untuk menghindari menyapa orang lain."
       },
       {
+        "voId": "chr_0033_camille_sim_talk_lv02_01",
         "title": "Obrolan Santai di Dijiang 2",
         "text": "Aku bisa dengar arus listrik yang mengalir melalui kabel-kabel di Dijiang. Setiap kali Ahli Mesin menyesuaikan parameter pesawat, dengung listriknya berubah dan aku harus menyesuaikan diri lagi .... Itu memang menggangguku, tapi aku tak menyimpan dendam. Itu bukti bahwa orang-orang berusaha untuk menjaga agar pesawat tetap pada jalurnya."
       },
       {
+        "voId": "chr_0033_camille_sim_talk_lv02_02",
         "title": "Obrolan Santai di Dijiang 3",
         "text": "Aku suka teka-teki. Ada kepuasan tersendiri dalam mengumpulkan kepingan-kepingan yang berserakan dan menyatukannya kembali. Terlebih lagi, hiburan ini cukup dilakukan oleh satu orang saja."
       },
       {
+        "voId": "chr_0033_camille_sim_talk_max_01",
         "title": "Obrolan Santai di Dijiang 4",
         "text": "Aku tak menyangka Seš’qa akan menugaskan operator Last Rite ke Endfield .... Kalian menyukai kemitraan yang tulus, yang menjadi bukti solidaritas kedua organisasi dan keselarasan visi kita. Sama seperti dulu ... tak ada yang berubah."
       },
       {
+        "voId": "chr_0033_camille_sim_talk_max_02",
         "title": "Obrolan Santai di Dijiang 5",
         "text": "Dua sayap di langit, tapi dari dua rumah yang berbeda. Seš’qa mendapatkan ketenangan dari kekerabatan kita. Tapi Dijiang ... mungkin hadirnya sosok tertentu bisa memberikan efek menenangkan yang sama."
       },
       {
+        "voId": "chr_0033_camille_sim_talk_max_03",
         "title": "Obrolan Santai di Dijiang 6",
         "text": "Hanya sedikit orang bisa memahami hatinya sendiri, tapi semua orang di Dijiang bergerak menuju tujuan yang jelas. Sudah lama aku mencari alasannya, dan kutemukan itu dalam dirimu, Endmin. Kau adalah pemimpin yang hebat."
       },
       {
+        "voId": "chr_0033_camille_sim_gift_give_01",
         "title": "Menawarkan Hadiah",
         "text": "Aku punya sesuatu untukmu dari Seš’qa. Terimalah. Hadiah lain dari pimpinan kami sudah dikirimkan ke kantormu."
       },
       {
+        "voId": "chr_0033_camille_sim_gift_recv_01",
         "title": "Menerima Hadiah",
         "text": "Kuharap ini bukan hadiah perpisahan. Benar, ‘kan ...? Baiklah, kuterima."
       },
       {
+        "voId": "chr_0033_camille_mono_self_line01",
         "title": "Dialog Kepercayaan 1",
         "text": "Selama beberapa dekade, aku melihatmu beberapa kali dari kejauhan. Aku ingat kesan pertama yang kudapat tentangmu adalah seorang “Penyelamat”. Tapi, sekarang kau lebih terasa seperti orang kepercayaan. Aku tak peduli dengan pandangan orang lain, tapi aku merasa lebih nyaman dengan dirimu yang sekarang. Kau tak lagi tergerus oleh cuaca, dan tubuhmu bebas dari bekas luka."
       },
       {
+        "voId": "chr_0033_camille_mono_self_line02",
         "title": "Dialog Kepercayaan 2",
         "text": "Aku terus bermimpi tentang keluargaku di sebuah taman, dikelilingi oleh Landbreaker perusuh yang membawa obor. Sekencang apa pun aku berlari, aku akan tetap terjebak di tempat yang sama dan tak pernah bisa mendekat. Pada masa-masa terburukku ... mimpi itu muncul setiap malam. Tapi setelah tiba di Endfield, mimpi buruk itu mulai memudar."
       },
       {
+        "voId": "chr_0033_camille_mono_self_line03",
         "title": "Dialog Kepercayaan 3",
         "text": "Untuk menyelamatkan nyawa Char, aku memberinya darahku ... separuh dari kehidupanku. Karena itu, aku adalah saudara laki-laki sekaligus penciptanya. Ketakutan terbesar seorang Vampir adalah jika darah kami tercemar. Dia menggunakan darahku untuk melukai orang lain ... dan aku harus menghentikan kebodohan ini. Aku harus melakukannya."
       },
       {
+        "voId": "chr_0033_camille_mono_self_line04",
         "title": "Dialog Kepercayaan 4",
         "text": "Dulu sekali, aku sering berharap ingatan bisa terkuras habis bersama darah agar aku bisa membebaskan diri dari rasa sakit yang menyiksa. Tapi, setelah bertemu denganmu ... aku sadar bahwa elemen-elemen yang tak tersentuh, tak terlupakan, dan tak bisa ditarik kembali telah membentuk diriku yang sekarang. Jadi, Endmin, aku akan membantumu mendapatkan kembali apa yang hilang darimu."
       },
       {
+        "voId": "chr_0033_camille_mono_self_line05",
         "title": "Dialog Kepercayaan 5",
         "text": "Aku mengorbankan separuh darah kehidupanku, sehingga aku hanya punya satu sayap .... Sayap yang hilang itu berdenyut dan terus terasa sakit, seolah-olah darahku haus akan apa yang telah hilang. Tapi, memori baru yang kita ciptakan bersama mengisi kekosongan itu. Mungkin seiring berjalannya waktu ... rasa sakit dari bekas luka itu tak akan menggangguku lagi."
       },
       {
+        "voId": "chr_0033_camille_mono_chat_line01",
         "title": "Obrolan 1",
         "text": "Taman keluarga kami pernah punya tanaman yang dikenal sebagai Akar Manis Iblis. Kata Ibu, Sarkaz membawa untaian ingatan ini dari Terra. Ini adalah tanda harapan kami untuk hidup berdampingan dengan planet ini. Semua bentuk kehidupan, manusia ataupun tanaman, akan menemukan jalan di negeri yang jauh. Tentu saja, semasa kecil, aku sering menggunakannya sebagai bahan manisan ilmu sihir .... Rasanya agak aneh, tapi bukannya tak enak."
       },
       {
+        "voId": "chr_0033_camille_mono_chat_line02",
         "title": "Obrolan 2",
         "text": "Ada kedai minum unik di Seš’qa, yang seluruhnya terbuat dari cermin. Di langit-langitnya tergantung begitu banyak permata buatan yang bersinar dengan ilmu sihir. Seluruh bangunan ini memancarkan cahaya. Selama tur terbuka, kaum Sankta akan mengadakan pesta di sana. Mereka berisik dan gaduh, sampai membuat orang-orang terjaga. Walau begitu, keramaian seperti ini bagus untuk Seš’qa. Ini membuktikan upaya kami berhasil, meruntuhkan banyak penghalang antarras."
       },
       {
+        "voId": "chr_0033_camille_mono_chat_line03",
         "title": "Obrolan 3",
         "text": "Orang yang ada di dalam katalog Witching Hour ...? Baiklah, itu aku. Mereka mengirimiku sampel sebagai imbalan untuk foto promosi. Beberapa tahun yang lalu, aku berjalan-jalan ke toko ilmu sihir dan pramuniaga di sana memperlakukanku seperti spesimen langka. Fisikku ditahan agar menandatangani sebuah kontrak di tempat. Aku memang merasa canggung jika ada kenalan yang melihat foto itu, tapi sampel itu langka .... Endmin, tunggu, kau mau bawa buklet itu ke mana?"
       },
       {
+        "voId": "chr_0033_camille_mono_chat_line04",
         "title": "Obrolan 4",
         "text": "Semasa kecil, aku sering kehilangan kunci rumahku. Gara-gara itu, aku bertengkar dengan Char dan tak sengaja merusak kotak musiknya. Setelah aku minta maaf, dia menggunakan komponen intinya dan membuatkanku kunci baru .... Dia bilang itu jimat yang akan selalu menuntunku pulang. Sekarang, setelah keluargaku tiada dan tanah kami di Seš’qa dijual ... kunci itu tak lagi bisa membuka pintu apa pun atau punya arti apa pun."
       },
       {
+        "voId": "chr_0033_camille_mono_chat_line05",
         "title": "Obrolan 5",
         "text": "“Tombak iblis” merah darah itu adalah Originium Arts milikku. Aku bisa membungkus objek dengan darahku untuk membentuknya menjadi senjata. Aku biasanya menggunakan darahku sendiri karena darah musuh mungkin tidak murni. Sedangkan darah rekanku ... adalah sesuatu yang tak akan kueksploitasi, bahkan walaupun kau mengizinkan."
       },
       {
+        "voId": "chr_0033_camille_mono_about_line01",
         "title": "Topik: Seš’qa",
         "text": "Seratus tahun yang lalu, tak ada yang membayangkan bahwa hari ini, pemandangan kota Sarkaz yang melayang di langit tak menimbulkan kekesalan, melainkan kerinduan untuk berkunjung dan menyaksikan trik ilmu sihir mereka. Seš’qa adalah sehelai bulu melayang, mengikuti angin yang diarahkan oleh banyak sekali orang dengan hati-hati. Mereka berharap kota yang berlayar ini menjadi tambatan bagi kerabat kita yang tinggal di darat dan memberi mereka harapan."
       },
       {
+        "voId": "chr_0033_camille_mono_about_line02",
         "title": "Topik: Panglima Perang Alam Liar",
         "text": "Jakub sang Panglima Perang Alam Liar .... Ya, aku melihatnya secara langsung. Namanya sudah sangat jarang disebut sekarang. Terlepas dari kebencian pribadiku, aku tak setuju dengan niatnya untuk menghancurkan Sentrapolis. Tapi, aku tak bisa memungkiri kemampuan dan kepemimpinannya yang luar biasa. Andaikata Jakub Meissen tak gugur, kelompok Landbreaker-nya mungkin sudah berhasil merebut sebagian wilayah Talos-II."
       },
       {
+        "voId": "chr_0033_camille_mono_about_line03",
         "title": "Topik: Saudara",
         "text": "Aku sangat berbeda dari Char. Tapi, pikiranku sedikit goyah saat aku melihat wajahnya di cermin .... Aku mencoba meniru seringainya yang dingin dan sinis, tapi aku tetap tak bisa memahami alasannya. Bagaimana bisa dia mengabaikan dendam berdarah itu dan bergabung dengan bandit yang menghabisi orang tua kami? Teka-teki ini menggerogotiku, dan aku sangat ingin mengetahui kebenarannya."
       },
       {
+        "voId": "chr_0033_camille_mono_about_line04",
         "title": "Topik: Penjaga Kebijaksanaan",
         "text": "Hanya sedikit yang menyandang gelar “Agaš’mekanaz”, dan Char adalah orang yang memberiku kesempatan untuk menjadi seorang Penjaga. Kejahatan yang melibatkan ilmu sihir Sarkaz lebih mudah diselesaikan oleh kerabat .... Aku adalah orang yang paling mengetahui rahasia Arts milik Char, dan hanya aku sendirilah yang bisa menghabiskan puluhan tahun tanpa istirahat untuk melacaknya. Bermusuhan dengan orang yang kita sayangi memang membawa penderitaan, tapi kami, para Penjaga, tetap setia pada tugas kami. Tak terkecuali aku."
       },
       {
+        "voId": "chr_0033_camille_mono_about_line05",
         "title": "Topik: Orang Tua",
         "text": "Dipimpin oleh sang Pembicara legendaris, orang tuaku tiba di Talos-II bersama banyak Sarkaz. Mereka menjadi anggota pertama Seš’qa dan membangun Lifebone .... Panglima Perang Alam Liar menghabisi mereka. Aku ingat Ibu berjiwa lembut dan berkomitmen untuk mendorong perdamaian antarras .... Tapi, Char mengaku pernah melihat sisi lain Ibu yang tak kuketahui .... Apa pun yang terjadi pada masa lalu, pengkhianatan ... tetaplah pengkhianatan."
       },
       {
+        "voId": "chr_0033_camille_explore_point_common_01",
         "title": "Sumber Daya/Barang Koleksi Terdeteksi 1",
         "text": "Ikuti jejak-jejak di sana."
       },
       {
+        "voId": "chr_0033_camille_explore_point_valub_01",
         "title": "Sumber Daya/Barang Koleksi Terdeteksi 2",
         "text": "Item-item itu sangat berharga. Pasti akan bermanfaat kalau dibawa."
       },
       {
+        "voId": "chr_0033_camille_explore_find_locked_01",
         "title": "Area yang Belum Dijelajahi Terdeteksi",
         "text": "Aturan pertama bagi seorang Penjaga, selalu perhatikan wilayah yang belum dipetakan."
       },
       {
+        "voId": "chr_0033_camille_explore_find_danger_01",
         "title": "Musuh Kuat Ditemukan",
         "text": "Tetap waspada. Tercium bau darah dari yang satu itu."
       },
       {
+        "voId": "chr_0033_camille_interact_mine_valub_01",
         "title": "Penambangan 1",
         "text": "Dentingan dari mineral ini cukup menyenangkan."
       },
       {
+        "voId": "chr_0033_camille_interact_mine_valub_echo2_01",
         "title": "Penambangan 2",
         "text": "Biar aku saja. Agar lebih cepat."
       },
       {
+        "voId": "chr_0033_camille_interact_treasure_valub_01",
         "title": "Membuka Kerat",
         "text": "Hasil tak akan mengkhianati usaha."
       },
       {
+        "voId": "chr_0033_camille_interact_etherium_01",
         "title": "Mendapatkan Aurylene",
         "text": "Aurylene ... ternyata juga pandai melarikan diri."
       },
       {
+        "voId": "chr_0033_camille_interact_blight_break_01",
         "title": "Menyingkirkan Hawar",
         "text": "Noda di tanah ini sudah dibersihkan."
       },
       {
+        "voId": "chr_0033_camille_interact_rest_01",
         "title": "Istirahat",
         "text": "Dari bayang-bayang terdalam, setetes darah kembali tertumpah."
       },
       {
+        "voId": "chr_0033_camille_combat_suppuse_using_01",
         "title": "Penggunaan Taktis 1",
         "text": "Pakai ini!"
       },
       {
+        "voId": "chr_0033_camille_combat_suppuse_getheal_01",
         "title": "Penggunaan Taktis 2",
         "text": "Kehidupan kembali ke dalam darah."
       },
       {
+        "voId": "chr_0033_camille_combat_remind_danger_01",
         "title": "Peringatan Bahaya",
         "text": "Awas!"
       },
       {
+        "voId": "chr_0033_camille_combat_hurt_lowhp_01",
         "title": "Cedera",
         "text": "Hingga tetes darah terakhirku ...."
       },
       {
+        "voId": "chr_0033_camille_combat_dead_01",
         "title": "0 HP",
         "text": "Lautan darah ... membisikkan kesedihannya ...."
       },
       {
+        "voId": "chr_0033_camille_combat_remind_praise_01",
         "title": "Penyemangat Tim 1",
         "text": "Langkah yang brilian."
       },
       {
+        "voId": "chr_0033_camille_combat_remind_praise_02",
         "title": "Penyemangat Tim 2",
         "text": "Luar biasa. Darahku mendidih melihatnya."
       },
       {
+        "voId": "chr_0033_camille_combat_remind_praise_echo2_01",
         "title": "Respons Penyemangat 1",
         "text": "Ini memang sudah tugasku."
       },
       {
+        "voId": "chr_0033_camille_combat_remind_praise_echo2_02",
         "title": "Respons Penyemangat 2",
         "text": "Ini semua berkat kerja sama kita."
       },
       {
+        "voId": "chr_0033_camille_combat_intobattle_01",
         "title": "Mulai Pertarungan 1",
         "text": "Melawanlah sesukamu."
       },
       {
+        "voId": "chr_0033_camille_combat_intobattle_echo2_01",
         "title": "Mulai Pertarungan 2",
         "text": "Kita hanya bisa terus maju."
       },
       {
+        "voId": "chr_0033_camille_combat_outbattle_nor_01",
         "title": "Menang Pertarungan 1",
         "text": "Angin sepoi-sepoi membawa pergi bau besi dari darah. Semuanya berjalan sesuai rencana."
       },
       {
+        "voId": "chr_0033_camille_combat_outbattle_nor_02",
         "title": "Menang Pertarungan 2",
         "text": "Usaha bagus. Eksekusinya juga bagus."
       },
       {
+        "voId": "chr_0033_camille_combat_outbattle_nor_echo2_01",
         "title": "Menang Pertarungan 3",
         "text": "Kerja sama tim bukan keahlianku. Tapi, hari ini akan jadi pengecualian."
       },
       {
+        "voId": "chr_0033_camille_combat_outbattle_hard_01",
         "title": "Menang Pertarungan 4",
         "text": "Darah kita telah tertumpah, tapi musuh membayarnya sepuluh kali lipat. Tugas yang tuntas ... bisa dianggap kemenangan."
       },
       {
+        "voId": "chr_0033_camille_combat_battle_defeat_01",
         "title": "Kalah Bertarung",
         "text": "Walau pahit, ini bukanlah akhirnya. Utang darah harus dibayar ... dan tujuan kita belum tercapai."
       },
       {
+        "voId": "chr_0033_camille_mono_attack_last_01",
         "title": "Final Strike 1",
         "text": "Terlalu lemah!"
       },
       {
+        "voId": "chr_0033_camille_mono_attack_last_02",
         "title": "Final Strike 2",
         "text": "Tembus mereka!"
       },
       {
+        "voId": "chr_0033_camille_mono_skill_nor_01",
         "title": "Skill Tarung 1",
         "text": "Belas kasihan terakhir."
       },
       {
+        "voId": "chr_0033_camille_mono_skill_nor_02",
         "title": "Skill Tarung 2",
         "text": "Kematian menanti."
       },
       {
+        "voId": "chr_0033_camille_mono_skill_nor_03",
         "title": "Skill Tarung 3",
         "text": "Merintihlah dalam kesakitan."
       },
       {
+        "voId": "chr_0033_camille_combat_skill_comb_ready_01",
         "title": "Skill Kombo Siap 1",
         "text": "Ilmu sihir sudah siap."
       },
       {
+        "voId": "chr_0033_camille_combat_skill_comb_ready_02",
         "title": "Skill Kombo Siap 2",
         "text": "Pojokkan mereka."
       },
       {
+        "voId": "chr_0033_camille_mono_skill_comb_release_01",
         "title": "Penggunaan Kombo 1",
         "text": "Kau tak akan bisa lolos."
       },
       {
+        "voId": "chr_0033_camille_mono_skill_comb_release_02",
         "title": "Penggunaan Kombo 2",
         "text": "Tumpahlah, wahai ketidakmurnian."
       },
       {
+        "voId": "chr_0033_camille_mono_attack_extra_01",
         "title": "Penuntas 1",
         "text": "Sambutlah ajalmu."
       },
       {
+        "voId": "chr_0033_camille_mono_attack_extra_02",
         "title": "Penuntas 2",
         "text": "Dasar bodoh dan menyedihkan."
       },
       {
+        "voId": "chr_0033_camille_mono_skill_ultimate_01",
         "title": "Ultimate 1",
         "text": "Wahai hujan merah darah ...."
       },
       {
+        "voId": "chr_0033_camille_mono_skill_ultimate_02",
         "title": "Ultimate 2",
         "text": "Tenggelamlah dalam malam abadi."
       },
       {
+        "voId": "chr_0033_camille_mono_skill_ultimate_03",
         "title": "Ultimate 3",
         "text": "Dosa berakhir di atas kobaran api."
       }

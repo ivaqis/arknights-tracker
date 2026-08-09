@@ -123,326 +123,407 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0009_azrila_chrbark_squad_01",
         "title": "行動準備1",
         "text": "隨時可以行動，請下令。"
       },
       {
+        "voId": "chr_0009_azrila_chrbark_squad_02",
         "title": "行動準備2",
         "text": "又有新任務了？"
       },
       {
+        "voId": "chr_0009_azrila_chrbark_join_01",
         "title": "編入隊伍1",
         "text": "我來組織作戰會議。"
       },
       {
+        "voId": "chr_0009_azrila_chrbark_join_02",
         "title": "編入隊伍2",
         "text": "出發吧，戰爭沒有終點，也沒有退路。"
       },
       {
+        "voId": "chr_0009_azrila_chrbark_weap_01",
         "title": "更換武器",
         "text": "做工精良，我會好好使用的。"
       },
       {
+        "voId": "chr_0009_azrila_chrbark_gear_01",
         "title": "更換裝備",
         "text": "這樣規格的武裝……久違了。"
       },
       {
+        "voId": "chr_0009_azrila_chrup_skill_01",
         "title": "解鎖天賦陣列",
         "text": "力量在恢復……但還不夠。"
       },
       {
+        "voId": "chr_0009_azrila_chrup_level_01",
         "title": "觀看作戰紀錄",
         "text": "出色的戰術配合……謝謝，我學到了很多。"
       },
       {
+        "voId": "chr_0009_azrila_chrup_promt01_01",
         "title": "精英化晉升1",
         "text": "感謝賞識，我不會辜負您的期望。"
       },
       {
+        "voId": "chr_0009_azrila_chrup_promt02_01",
         "title": "精英化晉升2",
         "text": "遵命。既然承蒙重任，請允許我對作戰規劃提出一些建議。"
       },
       {
+        "voId": "chr_0009_azrila_chrup_promt03_01",
         "title": "精英化晉升3",
         "text": "在鐵誓軍，這種時候，長官會授予我們新的勛章……不，現在這樣就好，我在這裡得到的，不應是榮譽。"
       },
       {
+        "voId": "chr_0009_azrila_chrup_promt04_01",
         "title": "精英化晉升4",
         "text": "我不知道這場「遠征」會在何時結束，但我已經越發明白為何要嚴肅對待它……管理員，希望您能和我一起見證那一天的到來。"
       },
       {
+        "voId": "chr_0009_azrila_introduce_01",
         "title": "幹員報到",
         "text": "鐵誓軍戰士「餘燼」向您報到。根據引薦調令，抵達「遠征」終點之前，我將聽從你們的指示。"
       },
       {
+        "voId": "chr_0009_azrila_mono_switch_01",
         "title": "待命1",
         "text": "我的「遠征」尚未結束……"
       },
       {
+        "voId": "chr_0009_azrila_mono_switch_02",
         "title": "待命2",
         "text": "戰場從不寬恕錯誤，我們必須深自砥礪。"
       },
       {
+        "voId": "chr_0009_azrila_sim_assign_work_01",
         "title": "進駐設施",
         "text": "專項任務？嗯……瞭解，我會努力執行。"
       },
       {
+        "voId": "chr_0009_azrila_sim_hello_lower_01",
         "title": "打招呼1",
         "text": "有需要我的作戰任務嗎？"
       },
       {
+        "voId": "chr_0009_azrila_sim_hello_max_01",
         "title": "打招呼2",
         "text": "歡迎回來，管理員。下一場戰鬥在哪裡？"
       },
       {
+        "voId": "chr_0009_azrila_sim_talk_lv01_01",
         "title": "帝江號閒聊1",
         "text": "帝江號的各項功能都很完善，但終究不是戰艦……沒有日常備戰的流程，多少讓我有點不習慣。"
       },
       {
+        "voId": "chr_0009_azrila_sim_talk_lv02_01",
         "title": "帝江號閒聊2",
         "text": "鐵誓軍的日常訓練？嗯……當時我能獨自處理一個「歐墨薩隆」集群，所以長官直接讓新兵們組隊挑戰我。"
       },
       {
+        "voId": "chr_0009_azrila_sim_talk_lv02_02",
         "title": "帝江號閒聊3",
         "text": "那片極光下方，就是鐵誓軍的防線。戰事發生時，天使常常遮天蔽日，我們的飛行母艦和護航機群也——等等，這個山脈的走向……抱歉，我……我好像認錯位置了。"
       },
       {
+        "voId": "chr_0009_azrila_sim_talk_max_01",
         "title": "帝江號閒聊4",
         "text": "我所在的陷陣旗隊經常從高空跳進戰區，為此還會進行針對性訓練。不過到了這個高度，連距離的概念都變模糊了。"
       },
       {
+        "voId": "chr_0009_azrila_sim_talk_max_02",
         "title": "帝江號閒聊5",
         "text": "這裡的幹員們是很好的切磋對象，各位不僅重視戰場協作，在策略制定上也很有創新意識，讓我獲益良多。鐵誓軍不會停止自我改進，我不能掉隊。"
       },
       {
+        "voId": "chr_0009_azrila_sim_talk_max_03",
         "title": "帝江號閒聊6",
         "text": "情報辦公室向我開放了一些終末地的行動紀錄。就算不在正面戰場，同樣有這麼多人為理念奉獻了生命……或許他們不曾有過怨言，但我還是忍不住會想，該怎麼做才能讓這樣的「英雄」更少一點？"
       },
       {
+        "voId": "chr_0009_azrila_sim_gift_give_01",
         "title": "贈送禮物",
         "text": "管理員，請收下這個。"
       },
       {
+        "voId": "chr_0009_azrila_sim_gift_recv_01",
         "title": "接收禮物",
         "text": "謝謝，我將把它視作一種肯定。"
       },
       {
+        "voId": "chr_0009_azrila_mono_self_line01",
         "title": "信賴對話1",
         "text": "這套護甲的結構有點複雜，我們鐵誓軍戰士必須掌握維護它所需的工程技術。即便如此，最終讓我們在那片戰場上活下來的，是意志、思考和行動，而不是這些身外之物。"
       },
       {
+        "voId": "chr_0009_azrila_mono_self_line02",
         "title": "信賴對話2",
         "text": "抱歉，請讓我來承擔那位預備組幹員的治療費用……鐵誓軍從來不缺有犧牲覺悟的人，如果不能把它轉變成尋找勝機的執著，那只會害死整支隊伍。一想到這裡，我就沒有控制好出手力度……實在是對不起。"
       },
       {
+        "voId": "chr_0009_azrila_mono_self_line03",
         "title": "信賴對話3",
         "text": "鐵誓軍有一個慣例：如果一支旗隊已經殘缺到無法繼續戰鬥，必須有人返回後方，為隊伍補充新血液。沒錯，這就是一種「遠征」。我們必須為戰友找到足夠優秀的繼任者，不會吝嗇為此多花時間。但……我的這場「遠征」還是太過漫長了。"
       },
       {
+        "voId": "chr_0009_azrila_mono_self_line04",
         "title": "信賴對話4",
         "text": "把遺物和骨灰交出去時，我見到了他們的父母、兄弟、戀人，還親手阻止了戰友的一位摯友前往北方復仇……我成了最常安慰別人，勸他們不能衝動的那個人。也許，這就是當初長官執意讓我即刻開始「遠征」的原因吧。"
       },
       {
+        "voId": "chr_0009_azrila_mono_self_line05",
         "title": "信賴對話5",
         "text": "這是克萊爾，這幾位是趙、尼拉、盧西昂，眼神很凌厲的是費揚古，一個新人……其實他們都不喝酒，難得有記者來，我們陪著做做樣子。他們實在是太優秀，才會在那時選擇完成任務。如果他們的繼任者也同樣優秀……我無法說服自己把這樣的人親手送去北方。不該是這樣的，管理員，我到底還缺了什麼？"
       },
       {
+        "voId": "chr_0009_azrila_mono_chat_line01",
         "title": "交談1",
         "text": "「餘燼」，這個代號是我自己選的。我不打算逃避現實，現在的我沒有資格重返北方戰場。即便如此，只要還有燃燒的可能，「餘燼」都會重新點起火焰——管理員，希望終末地能為我指點迷津。"
       },
       {
+        "voId": "chr_0009_azrila_mono_chat_line02",
         "title": "交談2",
         "text": "一般的保全隊伍就能處理「克利俄松」，但如果附近還有「提利索隆」，形勢就會完全不同。在鐵誓軍，我們這樣的陷陣旗隊通常負責快速分割戰場，擊破錨點，阻止天使形成威脅更大的複合型集群。這種任務很危險，但我們以此為榮。"
       },
       {
+        "voId": "chr_0009_azrila_mono_chat_line03",
         "title": "交談3",
         "text": "返回後方重組旗隊，屬於鐵誓軍的一種特別徵募方式。那些來挑戰我的人只是想利用這個方式入伍，並不存在個人恩怨。當然，不是「能打贏就好」，力量和技巧固然重要，但戰鬥能讓我瞭解對方是個怎樣的人，這才是最關鍵的。"
       },
       {
+        "voId": "chr_0009_azrila_mono_chat_line04",
         "title": "交談4",
         "text": "想看看我的守護銃？抱歉，它還在鐵誓軍的堡壘裡。我的戰鬥方式不依靠遠程武器，它對我來說更像是自己的一部分。我把守護銃留在那裡，就是用來提醒自己，一定會有回去的那一天。"
       },
       {
+        "voId": "chr_0009_azrila_mono_chat_line05",
         "title": "交談5",
         "text": "離開前線時，長官沒有給我設定任何期限。其實，一些前輩名義上和我一樣「在後方尋找候補隊員」，但他們再也沒有返回堡壘，這大概算一種……體面的說法。但我不會允許自己也這麼做，長官這才把我引薦給了你們。他似乎覺得終末地能讓我明白自己欠缺了哪些東西，我衷心希望他是正確的。"
       },
       {
+        "voId": "chr_0009_azrila_mono_about_line01",
         "title": "話題：鐵誓軍",
         "text": "第一次天使戰爭時期，為了突入北地，各方勢力湊出了一支精銳聯軍。他們帶著決死不歸的誓言踏上戰場，開始了漫長的拉鋸戰。這就是第一支鐵誓軍的由來……真奇妙，長官說過，當初是管理員您幫助我們恢復了與後方的聯繫，現在卻是我在向您介紹這些歷史。"
       },
       {
+        "voId": "chr_0009_azrila_mono_about_line02",
         "title": "話題：天使戰爭",
         "text": "我們可以靠技術和策略在對抗天使的戰鬥中取得優勢，可一旦戰鬥變成了戰爭，生命的消耗就再也無法避免。第一次天使戰爭結束時，錨點和天使的活動規模大幅下降。然而多年之後，在我服役期間，戰線上的對抗強度已經逐步回升……也許真正的考驗才剛剛開始。"
       },
       {
+        "voId": "chr_0009_azrila_mono_about_line03",
         "title": "話題：北方防線",
         "text": "「北方防線」並不是一個完全固定的區域，我們每天都在和天使爭奪前線的每一寸土地。如果戰況極端激烈，戰士們進軍時會直接背上建材物資，爭取第一時間搶占要地，建起新的堡壘——我們不會離開防線，我們就是防線。"
       },
       {
+        "voId": "chr_0009_azrila_mono_about_line04",
         "title": "話題：源石技藝",
         "text": "和普通火焰一樣，我的源石技藝可以點燃物質、灼傷敵人。不過，只要謹慎控制強度，它也可以被用來消毒清創、維持體溫。這些小技巧在戰鬥時很有用，但畢竟不是正規醫療法術，還是儘快將傷患送往醫治最妥當。"
       },
       {
+        "voId": "chr_0009_azrila_mono_about_line05",
         "title": "話題：文明環帶",
         "text": "前線戰況最激烈的時候，礦石病抑制劑的供應也沒有斷過。作為一個感染者，雖然明白其中的道理，但我還是很難想像泰拉上的那個歷史階段……這裡沒有源石天災，沒有對感染者的集體迫害。也許，我們已經向前邁進了一步？"
       },
       {
+        "voId": "chr_0009_azrila_explore_point_common_01",
         "title": "發現資源1",
         "text": "發現可用物資，準備回收。"
       },
       {
+        "voId": "chr_0009_azrila_explore_point_valub_01",
         "title": "發現資源2",
         "text": "發現高價值目標，請求優先回收。"
       },
       {
+        "voId": "chr_0009_azrila_explore_find_locked_01",
         "title": "發現未探索區域",
         "text": "前方異常反應，不像是錨點活動……要去看看嗎？"
       },
       {
+        "voId": "chr_0009_azrila_explore_find_danger_01",
         "title": "發現強敵",
         "text": "發現高威脅目標，保持警戒。"
       },
       {
+        "voId": "chr_0009_azrila_interact_mine_valub_01",
         "title": "採集礦物1",
         "text": "把握每個補充資源的機會，才不會在關鍵時刻功虧一簣。"
       },
       {
+        "voId": "chr_0009_azrila_interact_mine_valub_echo2_01",
         "title": "採集礦物2",
         "text": "收集礦物嗎？我也來幫忙。"
       },
       {
+        "voId": "chr_0009_azrila_interact_treasure_valub_01",
         "title": "打開儲藏箱",
         "text": "希望能派上用場。"
       },
       {
+        "voId": "chr_0009_azrila_interact_etherium_01",
         "title": "獲得醚質",
         "text": "要收集這個嗎？瞭解，我會繼續留意。"
       },
       {
+        "voId": "chr_0009_azrila_interact_blight_break_01",
         "title": "消除侵蝕",
         "text": "現在，這些汙穢擋不住我們了。"
       },
       {
+        "voId": "chr_0009_azrila_interact_rest_01",
         "title": "休整",
         "text": "休整完畢，繼續推進作戰任務。"
       },
       {
+        "voId": "chr_0009_azrila_combat_suppuse_using_01",
         "title": "使用戰術物品1",
         "text": "準備戰術支援。"
       },
       {
+        "voId": "chr_0009_azrila_combat_suppuse_getheal_01",
         "title": "使用戰術物品2",
         "text": "調整完畢，繼續戰鬥。"
       },
       {
+        "voId": "chr_0009_azrila_combat_remind_danger_01",
         "title": "危險提醒",
         "text": "抗衝擊準備！"
       },
       {
+        "voId": "chr_0009_azrila_combat_hurt_lowhp_01",
         "title": "負傷",
         "text": "我會堅守至最後一刻。"
       },
       {
+        "voId": "chr_0009_azrila_combat_dead_01",
         "title": "力竭",
         "text": "「遠征」還……不能結束……"
       },
       {
+        "voId": "chr_0009_azrila_combat_remind_praise_01",
         "title": "小隊激勵1",
         "text": "你的表現很出色。"
       },
       {
+        "voId": "chr_0009_azrila_combat_remind_praise_02",
         "title": "小隊激勵2",
         "text": "優秀的作戰範例。"
       },
       {
+        "voId": "chr_0009_azrila_combat_remind_praise_echo2_01",
         "title": "回應激勵1",
         "text": "榮譽屬於每個人。"
       },
       {
+        "voId": "chr_0009_azrila_combat_remind_praise_echo2_02",
         "title": "回應激勵2",
         "text": "謝謝各位的配合。"
       },
       {
+        "voId": "chr_0009_azrila_combat_intobattle_01",
         "title": "作戰開始1",
         "text": "來吧，我當你們的對手。"
       },
       {
+        "voId": "chr_0009_azrila_combat_intobattle_echo2_01",
         "title": "作戰開始2",
         "text": "瞭解，開始交戰。"
       },
       {
+        "voId": "chr_0009_azrila_combat_outbattle_nor_01",
         "title": "作戰勝利1",
         "text": "應得的勝利。"
       },
       {
+        "voId": "chr_0009_azrila_combat_outbattle_nor_02",
         "title": "作戰勝利2",
         "text": "不畏強敵，不損己命……出色的戰鬥。"
       },
       {
+        "voId": "chr_0009_azrila_combat_outbattle_nor_echo2_01",
         "title": "作戰勝利3",
         "text": "我們一起鑄就了這場勝利。"
       },
       {
+        "voId": "chr_0009_azrila_combat_outbattle_hard_01",
         "title": "作戰勝利4",
         "text": "剛才我做得不夠好……請各位放心，我會吸取經驗，加以改進。"
       },
       {
+        "voId": "chr_0009_azrila_combat_battle_defeat_01",
         "title": "作戰失敗",
         "text": "又重蹈覆轍了嗎……"
       },
       {
+        "voId": "chr_0009_azrila_mono_attack_last_01",
         "title": "重擊1",
         "text": "看招！"
       },
       {
+        "voId": "chr_0009_azrila_mono_attack_last_02",
         "title": "重擊2",
         "text": "倒下吧！"
       },
       {
+        "voId": "chr_0009_azrila_mono_skill_nor_01",
         "title": "戰技1",
         "text": "別想阻擋我！"
       },
       {
+        "voId": "chr_0009_azrila_mono_skill_nor_02",
         "title": "戰技2",
         "text": "壓制！"
       },
       {
+        "voId": "chr_0009_azrila_mono_skill_nor_03",
         "title": "戰技3",
         "text": "征伐！"
       },
       {
+        "voId": "chr_0009_azrila_combat_skill_comb_ready_01",
         "title": "連攜技就緒1",
         "text": "準備援護！"
       },
       {
+        "voId": "chr_0009_azrila_combat_skill_comb_ready_02",
         "title": "連攜技就緒2",
         "text": "已就位！"
       },
       {
+        "voId": "chr_0009_azrila_mono_skill_comb_release_01",
         "title": "連攜技1",
         "text": "就憑你們？！"
       },
       {
+        "voId": "chr_0009_azrila_mono_skill_comb_release_02",
         "title": "連攜技2",
         "text": "止步於此！"
       },
       {
+        "voId": "chr_0009_azrila_mono_attack_extra_01",
         "title": "處決1",
         "text": "潰散吧！"
       },
       {
+        "voId": "chr_0009_azrila_mono_attack_extra_02",
         "title": "處決2",
         "text": "不堪一擊！"
       },
       {
+        "voId": "chr_0009_azrila_mono_skill_ultimate_01",
         "title": "終結技1",
         "text": "守誓之焰！"
       },
       {
+        "voId": "chr_0009_azrila_mono_skill_ultimate_02",
         "title": "終結技2",
         "text": "我將照耀！"
       },
       {
+        "voId": "chr_0009_azrila_mono_skill_ultimate_03",
         "title": "終結技3",
         "text": "光明於此延續！"
       }

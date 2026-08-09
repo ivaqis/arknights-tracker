@@ -187,330 +187,412 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0032_lizhiyan_chrbark_squad_01",
         "title": "Chuẩn Bị Tác Chiến 1",
         "text": "Từ giờ, quyền chỉ huy là của ngài."
       },
       {
+        "voId": "chr_0032_lizhiyan_chrbark_squad_02",
         "title": "Chuẩn Bị Tác Chiến 2",
         "text": "Tôi sẽ bảo vệ danh dự của Đội Đặc Nhiệm."
       },
       {
+        "voId": "chr_0032_lizhiyan_chrbark_join_01",
         "title": "Đang thêm vào Đội 1",
         "text": "Tôi đặt niềm tin vào ngài."
       },
       {
+        "voId": "chr_0032_lizhiyan_chrbark_join_02",
         "title": "Đang thêm vào Đội 2",
         "text": "Xin hãy ra chỉ thị."
       },
       {
+        "voId": "chr_0032_lizhiyan_chrbark_weap_01",
         "title": "Đang Đổi Vũ Khí",
         "text": "Vũ khí mạnh nhất chính là trái tim người điều khiển."
       },
       {
+        "voId": "chr_0032_lizhiyan_chrbark_gear_01",
         "title": "Đang Đổi Trang Bị",
         "text": "Chất lượng của Endfield thật không làm người ta thất vọng."
       },
       {
+        "voId": "chr_0032_lizhiyan_chrup_skill_01",
         "title": "Kích Hoạt Ma Trận Năng Lực",
         "text": "Rèn giũa bản thân đến đỉnh cao hoàn mỹ, rồi sẽ bình tĩnh mà chiến thắng trong mọi tình thế."
       },
       {
+        "voId": "chr_0032_lizhiyan_chrup_level_01",
         "title": "Xem Hồ Sơ Chiến Đấu",
         "text": "Hồ sơ chiến đấu... Trước đây tôi từng thức trắng đêm nghiên cứu các báo cáo tổng kết sau nhiệm vụ."
       },
       {
+        "voId": "chr_0032_lizhiyan_chrup_promt01_01",
         "title": "Thăng Bậc Cán Viên 1",
         "text": "Cảm ơn vì vinh dự này... Là Trưởng Nhóm, tôi không mấy khi gặp tình huống như thế này, nên cũng thấy... hơi mới lạ."
       },
       {
+        "voId": "chr_0032_lizhiyan_chrup_promt02_01",
         "title": "Thăng Bậc Cán Viên 2",
         "text": "Liệu có phải dấu hiệu cho sự hợp tác chặt chẽ hơn giữa Endfield và Học viện Khoa học Hongshan không? Lần sau, tôi có thể đưa ngài tham quan Tổng Bộ Đội Đặc Nhiệm Yinglung ở Hongshan."
       },
       {
+        "voId": "chr_0032_lizhiyan_chrup_promt03_01",
         "title": "Thăng Bậc Cán Viên 3",
         "text": "Dù rất cảm kích trước những lời khen nhưng tôi vẫn muốn tiếp tục bận rộn làm nhiều nhiệm vụ hơn. Nhiệm vụ nào cũng được. Còn rảnh rỗi thì không... Tôi muốn giúp ích cho ngài nhiều hơn nữa."
       },
       {
+        "voId": "chr_0032_lizhiyan_chrup_promt04_01",
         "title": "Thăng Bậc Cán Viên 4",
         "text": "Hửm? À... tôi chỉ chợt nhớ đến lúc được bổ nhiệm làm Trưởng Nhóm ở Đèo Yinglung. Sau khi mọi chuyện ở Võ Lăng kết thúc... ngọn lửa giận dữ cố chấp trong tâm tôi cũng nguội dần. Nếu ngày đó biết sẽ có lúc được chính tay ngài trao thưởng... mà thôi, không có gì đâu."
       },
       {
+        "voId": "chr_0032_lizhiyan_introduce_01",
         "title": "Cán Viên Đang Báo Cáo Nhiệm Vụ",
         "text": "Trưởng Nhóm ĐĐNY, Arcane, báo danh với Endfield... Đang chờ chỉ thị của Chỉ Huy."
       },
       {
+        "voId": "chr_0032_lizhiyan_mono_switch_01",
         "title": "Chờ Lệnh 1",
         "text": "Ý chí sắt đá, hành động dứt khoát. Yinglung lấy thế mà thắng."
       },
       {
+        "voId": "chr_0032_lizhiyan_mono_switch_02",
         "title": "Chờ Lệnh 2",
         "text": "Cần tôi đánh vào đâu, cứ chỉ lệnh. Tôi sẽ ra đòn."
       },
       {
+        "voId": "chr_0032_lizhiyan_sim_assign_work_01",
         "title": "Phân Công Đến Cơ Sở",
         "text": "Đội Đặc Nhiệm chưa bao giờ kén chọn nhiệm vụ. Bổn phận của tôi là hoàn thành đến cùng."
       },
       {
+        "voId": "chr_0032_lizhiyan_sim_hello_lower_01",
         "title": "Lời Chào 1",
         "text": "Cuối cùng cũng rảnh chút à, Endmin?"
       },
       {
+        "voId": "chr_0032_lizhiyan_sim_hello_max_01",
         "title": "Lời Chào 2",
         "text": "Từ xa đã thấy ngài rồi. Có tin mới không?"
       },
       {
+        "voId": "chr_0032_lizhiyan_sim_talk_lv01_01",
         "title": "Tán Gẫu Ở Dijiang 1",
         "text": "Tôi từng nghĩ Toái Thể không thích mình cho lắm. Nhưng sau khi chúng tôi trở về từ Khu Cấm Bắc Võ Lăng, cô ấy bắt đầu đối xử ân cần hơn. Tôi nghĩ mình hiểu lý do rồi... Có lẽ trước đây, cô ấy chỉ xem tôi là một kẻ cứng nhắc và tẻ nhạt. Nếu có cơ hội gặp Cô Si trên Dijiang... tôi muốn trực tiếp cảm ơn cô ấy."
       },
       {
+        "voId": "chr_0032_lizhiyan_sim_talk_lv02_01",
         "title": "Tán Gẫu Ở Dijiang 2",
         "text": "Những hoang mạc cằn cỗi, những cánh đồng tuyết tận cùng phương bắc... Đứng trên boong tàu Dijiang, tôi càng nhìn rõ hơn bao giờ hết những vùng đất đang chờ được cứu giúp. Hành trình của tôi không kết thúc ở Khe Nứt Cực Lớn... Tôi sẽ giành lại từng tấc đất bị các khe nứt khác tàn phá."
       },
       {
+        "voId": "chr_0032_lizhiyan_sim_talk_lv02_02",
         "title": "Tán Gẫu Ở Dijiang 3",
         "text": "Tôi đã được nhìn ngắm núi sông Võ Lăng, cũng đã thưởng thức đủ món ngon nơi đây. Mọi thứ đều mới mẻ, còn những thử thách thì luôn đến theo cách chẳng thể ngờ. Ngài đã kéo tôi ra khỏi thị trấn bị vùi lấp ấy... và đó chẳng khác nào một cuộc đời thứ hai."
       },
       {
+        "voId": "chr_0032_lizhiyan_sim_talk_max_01",
         "title": "Tán Gẫu Ở Dijiang 4",
         "text": "Tôi vẫn luôn gặp ác mộng. Nhưng sau khi nhắm mắt trong đêm đầu tiên trên Dijiang, những tiếng kêu đau đớn và các mệnh lệnh khắc nghiệt ấy đã biến mất. Thay vào đó, tôi mơ thấy bản thân mình trống rỗng, cùng một giọng nói bảo rằng tôi đang gánh trên vai hy vọng của... E hèm. Xin lỗi vì đã kể lể."
       },
       {
+        "voId": "chr_0032_lizhiyan_sim_talk_max_02",
         "title": "Tán Gẫu Ở Dijiang 5",
         "text": "Đứng trên boong tàu này, vầng aurora phủ trên Talos-II khiến tôi nhớ đến Khu Cấm Bắc Võ Lăng. Khung cảnh rực rỡ che lấp bao vết thương nhuốm máu... Tôi sẽ không để bất kỳ khe nứt nào gây hại cho vùng đất này thêm lần nữa."
       },
       {
+        "voId": "chr_0032_lizhiyan_sim_talk_max_03",
         "title": "Tán Gẫu Ở Dijiang 6",
         "text": "Các cán viên của Endfield đến từ khắp mọi nơi trên thế giới. Có rất nhiều chiến binh mạnh mẽ, nhưng đáng quý hơn cả là những con người bình thường luôn hết lòng vì an nguy của người khác. Như người ta hay nói, đứng trên cao nhìn xuống, tầm mắt sẽ nhìn rộng hơn khi chỉ kiễng chân dưới mặt đất... Quyết tâm của tôi mạnh mẽ hơn nhiều khi ở đây, Endmin."
       },
       {
+        "voId": "chr_0032_lizhiyan_sim_gift_give_01",
         "title": "Tặng Quà",
         "text": "Chỉ là vài món đặc sản địa phương thôi. Tôi không cố ý chuẩn bị gì quá đâu. Chỉ là... hừm, lỡ có hơi nhiều quá."
       },
       {
+        "voId": "chr_0032_lizhiyan_sim_gift_recv_01",
         "title": "Nhận quà",
         "text": "Cảm ơn. Tôi sẽ chuẩn bị thứ gì đó để đáp lễ. Chỉ là... tôi không giỏi chọn quà lắm... nên đừng kỳ vọng quá nhé."
       },
       {
+        "voId": "chr_0032_lizhiyan_mono_self_line01",
         "title": "Đối Thoại Tín Nhiệm 1",
         "text": "Ở đây mọi thứ đều ổn, nhưng giá mà có thêm vài người bạn nhỏ lanh lợi bên cạnh... Blitzcrash từng ở bên tôi trong những ngày huấn luyện gian khổ nhất. Từ một con quái gầm rú bé xíu rồi lớn lên thành một đồng đội đáng tin cậy... Chúng tôi không ở bên nhau quá lâu, nhưng đôi khi tôi vẫn nhớ... Đám thú cuộn tròn ở Võ Lăng cũng hay hay nữa... Không biết Dijiang có cho phép nuôi thú cưng không? Tôi sẽ huấn luyện chúng theo đúng chuẩn quân ngũ."
       },
       {
+        "voId": "chr_0032_lizhiyan_mono_self_line02",
         "title": "Đối Thoại Tín Nhiệm 2",
         "text": "Summit và Phrase đều có thế mạnh riêng. Summit giỏi chỉ huy, còn Phrase có thiên phú chiến đấu. Hai người họ bổ trợ cho nhau rất tốt. Có lẽ một ngày nào đó, một trong hai người sẽ có thể tiếp nhận vị trí Trưởng Nhóm... Sao tôi lại đột nhiên nói đến chuyện này nhỉ? Hừm... Nhìn sang Chen làm tôi tự hỏi liệu có con đường rộng mở hơn cho mình hay không... Chỉ là... một suy nghĩ thoáng qua thôi."
       },
       {
+        "voId": "chr_0032_lizhiyan_mono_self_line03",
         "title": "Đối Thoại Tín Nhiệm 3",
         "text": "Hử? Trùng hợp thật đấy, Endmin... Lúc rảnh, tôi thường ở một mình. Nơi yên tĩnh làm tôi nhớ đến mọi người ở quê nhà, những hình nhân luyện tập ở Đàm Kiếm Đường, cả món bánh gạo phủ đường nữa... Nhưng ký ức càng đẹp thì càng dễ khiến người ta chậm bước, lơi lỏng cảnh giác, rồi bị giữ chân trong đó... Tôi không muốn bất kỳ ai nhìn thấy mình như vậy. Còn ngài thì... Nghĩ kỹ lại, hình như do ngài mà tôi trở nên mềm lòng hơn. Vậy, giữ bí mật giây phút \"nghỉ ngơi\" này nhé."
       },
       {
+        "voId": "chr_0032_lizhiyan_mono_self_line04",
         "title": "Đối Thoại Tín Nhiệm 4",
         "text": "Mẹ từng tết tóc cho tôi bằng đủ loại ruy băng. Mà tôi chẳng bao giờ thích. Lần nào về nhà, người tôi cũng lấm lem bùn đất, tóc tai thì rối bù cả lên. Cha từng lấy những cành cây nhỏ để dạy tôi trận pháp Thiên Sư. Dù chẳng hiểu gì, hai cha con vẫn thường chơi đến tận khuya, hoặc ngồi đếm hoa lê dưới ánh trăng cho đến khi mẹ tìm thấy... Lạ thật. Tôi gần như chẳng còn nhớ gì về tuổi thơ của mình, vậy mà những khoảnh khắc bé nhỏ như thế này lại vẫn rõ ràng đến vậy."
       },
       {
+        "voId": "chr_0032_lizhiyan_mono_self_line05",
         "title": "Đối Thoại Tín Nhiệm 5",
         "text": "Ngài có thể... buộc tóc giúp tôi không? Ngài biết nên dùng dải ruy băng nào mà. Tôi muốn đọc nốt cuốn sách này. Ở Đèo Yinglung, sách là một trong số ít cách để giết thời gian... Lần cuối tôi nhờ ai đó buộc tóc giúp là khi nào nhỉ...? Ừm... Không nhớ nữa. Tôi từng nghĩ đến chuyện cắt đi, nhưng cuối cùng vẫn không nỡ. Mm... Cảm ơn ngài. Buộc gọn lắm... Ngài vẫn luôn để ý cách tôi buộc tóc sao? Hử? Sao lại nhìn tôi như thế?"
       },
       {
+        "voId": "chr_0032_lizhiyan_mono_chat_line01",
         "title": "Trò Chuyện 1",
         "text": "Tôi thật sự không rành mấy... trào lưu mà mọi người đang hào hứng. Cũng chẳng có thời gian để nghĩ đến. Nhưng... Thiên Sư Zhuang từng nói tôi nên quan tâm đến bản thân nhiều hơn, chẳng hạn như tìm một sở thích gì đó. Nói đến sở thích thì... luyện tập chắc chắn không tính rồi. Có lẽ nên nhờ Chú Pan dạy mình một kỹ năng nào đó. Nhưng tôi không thể lúc nào cũng tích cực như Chen được. Đúng là trường hợp hiếm có. Xem ra nuôi dưỡng một sở thích cũng là một thử thách mới."
       },
       {
+        "voId": "chr_0032_lizhiyan_mono_chat_line02",
         "title": "Trò Chuyện 2",
         "text": "Dù không còn ở trong Đội Đặc Nhiệm, tôi vẫn luôn rèn luyện bản thân theo tiêu chuẩn của Yinglung. Như vậy, nếu có nhiệm vụ khẩn cấp phát sinh, tôi vẫn có thể lập tức hỗ trợ. Tôi cũng vẫn giữ liên lạc thường xuyên với Đội Đặc Nhiệm, và tôi tin họ sẽ hoàn thành nhiệm vụ, ngay cả khi tôi không có mặt."
       },
       {
+        "voId": "chr_0032_lizhiyan_mono_chat_line03",
         "title": "Trò Chuyện 3",
         "text": "Chen lại muốn đấu tập với tôi... Trước đây, phần lớn là tôi thắng, nhưng cô ấy tiến bộ rất nhanh — nhanh đến mức từng khiến những người khác trong Đội Đặc Nhiệm thấy nản lòng. Đáng tiếc, tôi còn nhanh hơn. Nhưng... sau khi trở thành Trưởng Nhóm, tôi dành nhiều thời gian cho những việc khác hơn là rèn luyện cá nhân. Nên giờ tôi cũng không chắc nữa. Có lẽ chúng tôi cần một trận đấu thật sự để xem ai mạnh hơn... He. Cũng đáng mong chờ đấy."
       },
       {
+        "voId": "chr_0032_lizhiyan_mono_chat_line04",
         "title": "Trò Chuyện 4",
         "text": "Thiên Sư Zhuang đã gửi cho tôi một bản kế hoạch tái thiết Khu Vực... Cô ấy biết chuyện này có ý nghĩa với tôi đến nhường nào. Nhưng dù ở Võ Lăng hay Endfield, tôi vẫn mang trách nhiệm của một Trưởng Nhóm... Với tư cách một người Dân Võ Lăng, chỉ riêng việc có thể phong ấn Khe Nứt và giành lại quê hương đã đủ khiến tôi mãn nguyện rồi. Có Nhà Máy Khu Phức Hợp, tôi tin chắc các Thiên Sư sẽ khôi phục những con phố ấy về dáng vẻ ngày xưa. Nếu có cơ hội... tôi sẽ trở về và tận mắt nhìn thấy điều đó."
       },
       {
+        "voId": "chr_0032_lizhiyan_mono_chat_line05",
         "title": "Trò Chuyện 5",
         "text": "Có chuyện này hơi khó xử, Endmin. Hồi còn ở Võ Lăng, có vài cụ ông cụ bà đã luôn quan tâm, chăm sóc tôi. Khi đó, tôi nghĩ mình là một người lính có thể bỏ mạng bất cứ lúc nào, không nên để bản thân quá gắn bó với ai, cũng không nên khiến người khác phải buồn... nên tôi vẫn luôn giữ khoảng cách với họ. Nhưng giờ nghĩ lại, tôi lại thấy hơi áy náy... Vậy phải làm sao để bù đắp chuyện này đây? Hỏi Chen sao? Tôi thật sự không mở lời với cô ấy nổi. Endmin, ngài có chút thời gian giúp tôi không?"
       },
       {
+        "voId": "chr_0032_lizhiyan_mono_about_line01",
         "title": "Chủ đề: Chen Qianyu",
         "text": "Từ sau khi Chen rời đi, thỉnh thoảng tôi vẫn nghĩ đến cô ấy. Kể từ đó, tôi chưa từng gặp ai nói được làm được trọn vẹn như cô ấy. Dù không phải kiểu người phù hợp để trở thành người của Yinglung, nhưng... người ta sẽ dễ đặt niềm tin vào cô ấy hơn. Có những người buộc phải sống sót trong bóng tối, cũng có những người phải đứng ngoài ánh sáng. Tôi không hối hận về bất kỳ quyết định nào mình đã đưa ra trong quá khứ. Dù là làm lại từ đầu, tôi vẫn sẽ lựa chọn như vậy."
       },
       {
+        "voId": "chr_0032_lizhiyan_mono_about_line02",
         "title": "Chủ đề: Dải Ruy Băng Buộc Tóc",
         "text": "Không, tôi chưa từng thử kiểu nào khác... Có vài người từng gợi ý cho tôi. Cũng cảm kích lắm nhưng tôi vẫn thích dải ruy băng hiện tại hơn. Ngài biết nó có ý nghĩa thế nào với tôi mà. Nhưng... có lẽ nên thử một màu mới... Endmin, ngài nghĩ màu nào sẽ đại diện rõ nhất cho tất cả những gì chúng ta đã cùng nhau chứng kiến?"
       },
       {
+        "voId": "chr_0032_lizhiyan_mono_about_line03",
         "title": "Chủ đề: Bóng Nhiễm Khuẩn",
         "text": "Khi Æther nuốt chửng sự sống, những gì đọng lại là tiếng vọng chói tai của nỗi tuyệt vọng và kinh hoàng... Nhưng nếu hy vọng vẫn tồn tại cùng lòng nhân ái và sự hy sinh quên mình, thì không một \"Nhà Sáng Tạo\" tự xưng nào có thể đánh bại chúng ta. Đó là ý nghĩa sự tồn tại của chúng ta, và điều ấy... thật sâu sắc với tôi."
       },
       {
+        "voId": "chr_0032_lizhiyan_mono_about_line04",
         "title": "Chủ đề: Alleikhreos",
         "text": "Một kẻ địch đáng gờm thật sự, kéo theo càng nhiều bí ẩn hơn. Những lời hắn nói không lay chuyển được niềm tin của tôi về ngài hay Endfield, nhưng cũng chẳng thể phủ nhận thực thể này là hiểm họa lớn đối với Vành Đai Văn Minh. Nếu những kẻ thù vô danh từ Cuộc Chiến Aggeloi có ngày trở lại... hứa với tôi, để tôi làm lưỡi kiếm đầu tiên tiêu diệt chúng."
       },
       {
+        "voId": "chr_0032_lizhiyan_mono_about_line05",
         "title": "Chủ đề: Khu Cấm Bắc Võ Lăng",
         "text": "Thời gian không thể ngăn người Dân Võ Lăng khắc khoải hướng về quê nhà. Nỗi niềm ấy cứ lặng lẽ lớn dần theo năm tháng, thôi thúc từng bước chân tiến gần hơn đến chốn cũ từng buộc phải rời xa... Khu Cấm không còn là nơi cấm địa nữa, nhưng cũng đã hoàn toàn đổi khác, và có rất nhiều điều không thể vãn hồi. Dẫu vậy... chúng ta vẫn phải sống vì ngày mai. Chẳng phải đó là điều ngài đã nói sao?"
       },
       {
+        "voId": "chr_0032_lizhiyan_mono_about_line06",
         "title": "Chủ đề: Si",
         "text": "Cô Si thật sự phi thường, theo đúng nghĩa đen. Từ rất lâu trước đây, cô ấy đã chia sẻ sức mạnh của mình với Hongshan và góp phần thành lập Đội Đặc Nhiệm Yinglung. Thế nhưng cô ấy không giữ bất kỳ chức vụ chỉ huy chính thức nào trong Đội... cũng không có danh hiệu nào ở Học viện Khoa học Hongshan. Chỉ đơn giản là dẫn dắt Đội Đặc Nhiệm với tư cách là một \"đối tác\" đồng hành. Nhiều người trong chúng tôi, ngay cả sau khi rời ngũ, cũng chưa từng được tận mắt gặp cô ấy. Vậy mà trong chiến dịch lần này, cô ấy lại can dự rất sâu..."
       },
       {
+        "voId": "chr_0032_lizhiyan_explore_point_common_01",
         "title": "Phát hiện Tài Nguyên/Đồ Sưu Tập 1",
         "text": "Có vật dụng bất thường ở đằng kia. Kiểm tra xem có an toàn không trước đã."
       },
       {
+        "voId": "chr_0032_lizhiyan_explore_point_valub_01",
         "title": "Phát hiện Tài Nguyên/Đồ Sưu Tập 2",
         "text": "Phát hiện vật dụng chiến lược tại vị trí mục tiêu. Đang chờ chỉ thị."
       },
       {
+        "voId": "chr_0032_lizhiyan_explore_find_locked_01",
         "title": "Phát Hiện Khu Vực Chưa Khám Phá",
         "text": "Phía trước là khu vực chiến đấu chưa xác định."
       },
       {
+        "voId": "chr_0032_lizhiyan_explore_find_danger_01",
         "title": "Phát hiện Kẻ Địch Mạnh",
         "text": "Phát hiện kẻ địch có mối đe dọa cao. Đang duy trì quan sát. Chờ chỉ thị giao chiến."
       },
       {
+        "voId": "chr_0032_lizhiyan_interact_mine_valub_01",
         "title": "Khai thác 1",
         "text": "Ưu tiên thu hồi quặng trước đã."
       },
       {
+        "voId": "chr_0032_lizhiyan_interact_mine_valub_echo2_01",
         "title": "Khai thác 2",
         "text": "Tất cả đều nhằm duy trì nguồn tiếp tế cho các chiến dịch của chúng ta."
       },
       {
+        "voId": "chr_0032_lizhiyan_interact_treasure_valub_01",
         "title": "Mở Thùng",
         "text": "Đã lấy được vật tư chất lượng cao."
       },
       {
+        "voId": "chr_0032_lizhiyan_interact_etherium_01",
         "title": "Nhận Aurylene",
         "text": "Aurylene... Thu giữ thực thể đó. Sau này sẽ bảo quản trong thiết bị chuyên dụng."
       },
       {
+        "voId": "chr_0032_lizhiyan_interact_blight_break_01",
         "title": "Loại Bỏ Nhiễm Khuẩn",
         "text": "Đã tiêu diệt Nhiễm Khuẩn. Đường đã thông thoáng."
       },
       {
+        "voId": "chr_0032_lizhiyan_interact_rest_01",
         "title": "Nghỉ ngơi",
         "text": "Đã nghỉ ngơi đủ. Xuất phát thôi."
       },
       {
+        "voId": "chr_0032_lizhiyan_combat_suppuse_using_01",
         "title": "Sử Dụng Vật Phẩm Chiến Thuật 1",
         "text": "Chuẩn bị dùng vật phẩm chiến thuật!"
       },
       {
+        "voId": "chr_0032_lizhiyan_combat_suppuse_getheal_01",
         "title": "Sử Dụng Vật Phẩm Chiến Thuật 2",
         "text": "Chữa trị kịp thời."
       },
       {
+        "voId": "chr_0032_lizhiyan_combat_remind_danger_01",
         "title": "Cảnh Báo Đồng Đội",
         "text": "Cẩn thận! Đang đến!"
       },
       {
+        "voId": "chr_0032_lizhiyan_combat_hurt_lowhp_01",
         "title": "Bị thương",
         "text": "Chưa đâu... Vẫn còn chiến được."
       },
       {
+        "voId": "chr_0032_lizhiyan_combat_dead_01",
         "title": "0 HP",
         "text": "Chưa thể... gục ngã ở đây được..."
       },
       {
+        "voId": "chr_0032_lizhiyan_combat_remind_praise_01",
         "title": "Cổ Vũ Đội 1",
         "text": "Tuyệt vời."
       },
       {
+        "voId": "chr_0032_lizhiyan_combat_remind_praise_02",
         "title": "Cổ Vũ Đội 2",
         "text": "Xuất sắc lắm. Tiếp tục phát huy."
       },
       {
+        "voId": "chr_0032_lizhiyan_combat_remind_praise_echo2_01",
         "title": "Đáp Lại Lời Cổ Vũ 1",
         "text": "Chuyện thường tình ở Yinglung ấy mà."
       },
       {
+        "voId": "chr_0032_lizhiyan_combat_remind_praise_echo2_02",
         "title": "Đáp Lại Lời Cổ Vũ 2",
         "text": "Phải dốc hết mình đối diện với khủng hoảng."
       },
       {
+        "voId": "chr_0032_lizhiyan_combat_intobattle_01",
         "title": "Bắt Đầu Chiến Đấu 1",
         "text": "Đã xác nhận mục tiêu. Kiểm soát khu vực tác chiến."
       },
       {
+        "voId": "chr_0032_lizhiyan_combat_intobattle_echo2_01",
         "title": "Bắt Đầu Chiến Đấu 2",
         "text": "Đã đến vị trí. Giữ liên lạc."
       },
       {
+        "voId": "chr_0032_lizhiyan_combat_outbattle_nor_01",
         "title": "Thắng Trận 1",
         "text": "Đội ta ngang tầm Đội Đặc Nhiệm rồi. Ấn tượng đấy."
       },
       {
+        "voId": "chr_0032_lizhiyan_combat_outbattle_nor_02",
         "title": "Thắng Trận 2",
         "text": "Chúng ta lại tiến thêm một bước."
       },
       {
+        "voId": "chr_0032_lizhiyan_combat_outbattle_nor_echo2_01",
         "title": "Thắng Trận 3",
         "text": "Hãy duy trì phong độ này."
       },
       {
+        "voId": "chr_0032_lizhiyan_combat_outbattle_hard_01",
         "title": "Thắng Trận 4",
         "text": "Tổn thất vẫn nằm trong dự tính. Làm tốt lắm, cả đội."
       },
       {
+        "voId": "chr_0032_lizhiyan_combat_battle_defeat_01",
         "title": "Bại Trận",
         "text": "Chỉ là chút trở ngại nhỏ thôi. Thắng bại đều là một phần của nhiệm vụ."
       },
       {
+        "voId": "chr_0032_lizhiyan_mono_attack_last_01",
         "title": "Đòn Dứt Điểm 1",
         "text": "Phá hủy!"
       },
       {
+        "voId": "chr_0032_lizhiyan_mono_attack_last_02",
         "title": "Đòn Dứt Điểm 2",
         "text": "Phá Giáp!"
       },
       {
+        "voId": "chr_0032_lizhiyan_mono_skill_nor_01",
         "title": "KN Chiến Đấu 1",
         "text": "Phá vỡ phòng tuyến!"
       },
       {
+        "voId": "chr_0032_lizhiyan_mono_skill_nor_02",
         "title": "KN Chiến Đấu 2",
         "text": "Đã phong ấn Khu Vực!"
       },
       {
+        "voId": "chr_0032_lizhiyan_mono_skill_nor_03",
         "title": "KN Chiến Đấu 3",
         "text": "Triển khai đội hình."
       },
       {
+        "voId": "chr_0032_lizhiyan_combat_skill_comb_ready_01",
         "title": "Chuẩn Bị KN Liên Hoàn 1",
         "text": "Đội hình đã vào vị trí."
       },
       {
+        "voId": "chr_0032_lizhiyan_combat_skill_comb_ready_02",
         "title": "Chuẩn Bị KN Liên Hoàn 2",
         "text": "Để tôi yểm trợ!"
       },
       {
+        "voId": "chr_0032_lizhiyan_mono_skill_comb_release_01",
         "title": "Thi Triển Liên Hoàn 1",
         "text": "Tấn công và áp chế!"
       },
       {
+        "voId": "chr_0032_lizhiyan_mono_skill_comb_release_02",
         "title": "Thi Triển Liên Hoàn 2",
         "text": "Chờ chết đi."
       },
       {
+        "voId": "chr_0032_lizhiyan_mono_attack_extra_01",
         "title": "Kết Liễu 1",
         "text": "Một đòn nữa!"
       },
       {
+        "voId": "chr_0032_lizhiyan_mono_attack_extra_02",
         "title": "Kết Liễu 2",
         "text": "Lộ điểm yếu rồi!"
       },
       {
+        "voId": "chr_0032_lizhiyan_mono_skill_ultimate_01",
         "title": "Tuyệt Kỹ 1",
         "text": "Thủy triều lên xuống, nghe theo hiệu lệnh của ta!"
       },
       {
+        "voId": "chr_0032_lizhiyan_mono_skill_ultimate_02",
         "title": "Tuyệt Kỹ 2",
         "text": "Vì một mặt đất ngập tràn nắng ấm và sự sống!"
       },
       {
+        "voId": "chr_0032_lizhiyan_mono_skill_ultimate_03",
         "title": "Tuyệt Kỹ 3",
         "text": "Hỗn loạn rồi sẽ được dẹp yên!"
       }

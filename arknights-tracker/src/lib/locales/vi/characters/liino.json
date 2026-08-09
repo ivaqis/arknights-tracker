@@ -139,326 +139,407 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0035_liino_chrbark_squad_01",
         "title": "Chuẩn Bị Tác Chiến 1",
         "text": "Hử? Đến lúc lên sân khấu rồi sao?"
       },
       {
+        "voId": "chr_0035_liino_chrbark_squad_02",
         "title": "Chuẩn Bị Tác Chiến 2",
         "text": "Lấp la lấp lánh! Màn trình diễn mới nhất sắp bắt đầu đây!"
       },
       {
+        "voId": "chr_0035_liino_chrbark_join_01",
         "title": "Đang thêm vào Đội 1",
         "text": "Ca hát, nhảy múa, ứng biến nhanh... gì thì cũng không làm khó được idol hạng A này!"
       },
       {
+        "voId": "chr_0035_liino_chrbark_join_02",
         "title": "Đang thêm vào Đội 2",
         "text": "Dù đi đến đâu, tôi cũng muốn trở thành ngôi sao thu hút mọi ánh nhìn!"
       },
       {
+        "voId": "chr_0035_liino_chrbark_weap_01",
         "title": "Đang Đổi Vũ Khí",
         "text": "Chọn giúp tôi một món được không? Món nào dễ dùng cho một tay mơ chiến đấu như tôi ấy!"
       },
       {
+        "voId": "chr_0035_liino_chrbark_gear_01",
         "title": "Đang Đổi Trang Bị",
         "text": "Đây là lần đầu tôi mặc bộ đồ diễn này... Hmm. Có lẽ nên sáng tạo vài động tác vũ đạo cho hợp nhỉ?"
       },
       {
+        "voId": "chr_0035_liino_chrup_skill_01",
         "title": "Kích Hoạt Ma Trận Năng Lực",
         "text": "Tôi hiểu ngay trong chớp mắt! Như một vì sao bừng sáng trong tâm hồn vậy... Tôi cũng ra dáng một ngôi sao sáng giá rồi, đúng không?"
       },
       {
+        "voId": "chr_0035_liino_chrup_level_01",
         "title": "Xem Hồ Sơ Chiến Đấu",
         "text": "Màn xuất hiện hoành tráng thật đấy - Chắc chắn không dùng nó cho buổi diễn tiếp theo được sao? Ư, tiếc quá đi mất..."
       },
       {
+        "voId": "chr_0035_liino_chrup_promt01_01",
         "title": "Thăng Bậc Cán Viên 1",
         "text": "Ôi, ngọt ngào quá! Tôi nên cảm ơn thế nào mới phải đây... Nghĩ ra rồi! Tôi sẽ tặng vé buổi diễn cho bạn tới khi nào huề thì thôi, được không?"
       },
       {
+        "voId": "chr_0035_liino_chrup_promt02_01",
         "title": "Thăng Bậc Cán Viên 2",
         "text": "Hả? Chỉ cần tôi làm vậy thôi sao? Tôi còn tưởng yêu cầu sẽ dài như hợp đồng gia hạn của tôi cơ... Chuyện này đúng là... lạ thật đấy..."
       },
       {
+        "voId": "chr_0035_liino_chrup_promt03_01",
         "title": "Thăng Bậc Cán Viên 3",
         "text": "Ừm hứm, vậy là cuối cùng em cũng mê hoặc được ngài nhỉ? Biết sớm muộn gì ngài cũng xiêu lòng mà - Hả? Gì cơ? \"Ngài sẽ giúp em quảng bá cho Endfield\"?  Ngài để tâm mỗi chuyện đó thôi sao?"
       },
       {
+        "voId": "chr_0035_liino_chrup_promt04_01",
         "title": "Thăng Bậc Cán Viên 4",
         "text": "Endmin, chính thức nè: từ giờ ngài là VIP vĩnh viễn của em! Đảm bảo sẽ không bị bỏ lỡ bất kỳ \"khoảnh khắc lấp lánh\" nào đâu! Đồ Rê Mi Si mê em rồi, đúng không? Vậy thì phải xem cho kỹ đấy! Ngài mà lơ đãng thì... Heehee!"
       },
       {
+        "voId": "chr_0035_liino_introduce_01",
         "title": "Cán Viên Đang Báo Cáo Nhiệm Vụ",
         "text": "Endmin, ngài có nhớ em không? Với tư cách là siêu thần tượng sáng chói và đáng yêu nhất Talos-II, chẳng lẽ em không được đối xử đặc biệt một chút sao? Không à...? Ôi, ngài vẫn thẳng thắn và trực tiếp như vậy, mà chẳng hiểu sao vẫn khiến người ta thấy mến... Đành chịu thôi."
       },
       {
+        "voId": "chr_0035_liino_mono_switch_01",
         "title": "Chờ Lệnh 1",
         "text": "He he! Tư thế siêu đáng yêu, thế nào?"
       },
       {
+        "voId": "chr_0035_liino_mono_switch_02",
         "title": "Chờ Lệnh 2",
         "text": "La là la! \"Check\" mic xong! Sẵn sàng rồi!"
       },
       {
+        "voId": "chr_0035_liino_sim_assign_work_01",
         "title": "Phân Công Đến Cơ Sở",
         "text": "Hai bộ loa thì sao nhỉ? Một cũng được! Tôi chỉ cần xem giọng mình vang trong này thế nào thôi..."
       },
       {
+        "voId": "chr_0035_liino_sim_hello_lower_01",
         "title": "Lời Chào 1",
         "text": "Endmin! Ngài có muốn đi cùng không? Em chuẩn bị đi khảo sát vài địa điểm biểu diễn."
       },
       {
+        "voId": "chr_0035_liino_sim_hello_max_01",
         "title": "Lời Chào 2",
         "text": "Endmin đây rồi! Lại nghe bản demo mới của tôi đi!"
       },
       {
+        "voId": "chr_0035_liino_sim_talk_lv01_01",
         "title": "Tán Gẫu Ở Dijiang 1",
         "text": "Chào Endmin! Đến xem em diễn tập sao? Vừa hoàn thiện hai pha lướt cực khó do chính em nghĩ ra đấy! Hehe, đừng lo! Em đã giữ sẵn chỗ đẹp nhất cho ngài rồi!"
       },
       {
+        "voId": "chr_0035_liino_sim_talk_lv02_01",
         "title": "Tán Gẫu Ở Dijiang 2",
         "text": "Dijiang TOOO lắm luôn! Ban đầu nơi này còn làm em hơi sợ nữa cơ! Rồi em chợt nghĩ - nếu có thể tổ chức một concert chủ đề không gian ở đây thì sẽ TUYỆT VỜI biết bao! Phải vậy không, Endmin?"
       },
       {
+        "voId": "chr_0035_liino_sim_talk_lv02_02",
         "title": "Tán Gẫu Ở Dijiang 3",
         "text": "He he, lại thêm một hợp đồng chốt đẹp! Tôi đang nghĩ đến một kiểu sân khấu mới... Sân khấu hình tròn. Bỏ luôn ghế khán giả, cho tất cả mọi người cùng tham gia màn trình diễn! Siêu thông minh và hay ho, đúng không?"
       },
       {
+        "voId": "chr_0035_liino_sim_talk_max_01",
         "title": "Tán Gẫu Ở Dijiang 4",
         "text": "Trời ạ, mọi người làm ơn ĐỪỪỪNG bịa mấy câu chuyện vớ vẩn về Djall nữa đi. Chỉ cần cười một cái là họ lại hét lên: “IM ĐI VÀ CẦM LẤY TIỀN CỦA TÔI!” Thật luôn đó hả? Ôi, xin đi mà. Nếu đúng là vậy... Endmin, đứng yên và nhìn vào mặt tôi nào! Rồi... đã thấy muốn giao hết tiền cho tôi mà không thể cưỡng lại chưa?"
       },
       {
+        "voId": "chr_0035_liino_sim_talk_max_02",
         "title": "Tán Gẫu Ở Dijiang 5",
         "text": "Trước đêm debut, tôi đã mất ngủ gần như cả tuần. Đêm nào cũng tập luyện và kiểm tra đi kiểm tra lại từng chi tiết của màn trình diễn. Chỉ nghĩ đến việc mắc một sai sót nhỏ thôi là đã thấy sợ rồi. Nhưng khi nhìn thấy khán giả vui đến vậy, tôi biết mọi thứ đều... xứng đáng."
       },
       {
+        "voId": "chr_0035_liino_sim_talk_max_03",
         "title": "Tán Gẫu Ở Dijiang 6",
         "text": "Endmin, cho em lời khuyên về địa điểm biểu diễn tiếp theo đi! Tân Wrankwood có một sân khấu nổi thú vị lắm, còn nhà hát concert Neo Tsukushi thì cũng rất ổn. La Fantoma... hay là làm một buổi diễn giữa đại dương nhỉ? Chắc chắn siêu bùng nổ luôn! Hửm? Sao toàn là thành phố của Phòng Thương Mại Tổng Hợp à? Chậc, vì đó là nơi có tiền chứ sao!"
       },
       {
+        "voId": "chr_0035_liino_sim_gift_give_01",
         "title": "Tặng Quà",
         "text": "E he he, em tìm được món quà lưu niệm nhỏ này trong lúc đi khảo sát địa điểm đấy! Nhận lấy đi, mong là sẽ làm ngày hôm nay của ngài thật vui."
       },
       {
+        "voId": "chr_0035_liino_sim_gift_recv_01",
         "title": "Nhận quà",
         "text": "*NGẠC NHIÊN*... Cảm ơn nhiều! Heehee! Đủ loại quà trao tay tôi, nhưng quà từ bạn... lúc nào cũng có ý nghĩa đặc biệt hơn một chút với tôi."
       },
       {
+        "voId": "chr_0035_liino_mono_self_line01",
         "title": "Đối Thoại Tín Nhiệm 1",
         "text": "Dư âm của mỗi buổi diễn tuyệt vời cứ ở trong đầu em suốt mấy ngày liền! Ừ, cảm giác ấy giống như một người thợ rèn hoàn thiện vũ khí của mình vậy, chỉ là... lưỡi dao sắc chỉ gây tổn thương trái tim, còn một màn trình diễn tuyệt vời lại là tấm gương hoàn hảo soi chiếu tâm hồn."
       },
       {
+        "voId": "chr_0035_liino_mono_self_line02",
         "title": "Đối Thoại Tín Nhiệm 2",
         "text": "\"Sincerity\". Đó là loại nước hoa em dùng, và em rất thích hương thơm này. Hương tử đinh hương điểm thêm chút hoa hồng tạo nên tầng hương đầu rực rỡ, mơ màng, nhưng rồi sau đó lắng xuống tầng hương nền của gỗ tuyết tùng đắng... Cũng vì vậy mà mới khó quên đến thế, công nhận không? "
       },
       {
+        "voId": "chr_0035_liino_mono_self_line03",
         "title": "Đối Thoại Tín Nhiệm 3",
         "text": "Vì em là Djall, người ta đã thêu dệt đủ kiểu chuyện phóng đại về em. Nào là bài hát của em có Thuật Pháp điều khiển tâm trí, nào là dùng pháp cụ vu thuật để thao túng khán giả... Nhưng Endmin, vu thuật trên hoa tai và kẹp tóc của em thật ra là để áp chế sức mạnh Djall. Em không cho phép bất kỳ \"khiếm khuyết\" nào xuất hiện trên sân khấu của mình nếu không thuộc màn trình diễn... kể cả khi đó là sức mạnh bẩm sinh của chính em."
       },
       {
+        "voId": "chr_0035_liino_mono_self_line04",
         "title": "Đối Thoại Tín Nhiệm 4",
         "text": "Khi còn nhỏ, em từng mơ thấy một đóa hồng tím rất xinh đẹp. Trên con tàu trắng như mây, chúng em bay qua bầu trời vô tận, và đóa hồng kể cho em nghe những câu chuyện về các vì sao... Rồi một ngày, cơn bão đỏ xuất hiện. Con tàu lật úp cùng đóa hồng, bị kéo vào một xoáy nước đen ngòm. Sau đó ư? Chà, em tỉnh dậy chỉ còn một mình... và từ đó về sau, em không bao giờ mơ nữa."
       },
       {
+        "voId": "chr_0035_liino_mono_self_line05",
         "title": "Đối Thoại Tín Nhiệm 5",
         "text": "Tôi vẫn luôn xem thế giới này như một sân khấu khổng lồ, và chỉ cần đặt vào chút \"trái tim\" là có thể làm chủ tất cả. Ai cũng vậy, kể cả tôi, đều đang dốc hết sức cho màn trình diễn đẹp nhất của mình, chỉ để đổi lấy một tràng pháo tay. Nhưng đôi khi... chỉ đôi khi thôi... ngay cả tôi cũng muốn được nghỉ một chút. Vậy nên Endmin, tôi có thể ở lại đây thêm một lúc không? Ở bên bạn là lúc duy nhất tôi cảm thấy nhẹ nhõm... Lạ thật, đúng không?"
       },
       {
+        "voId": "chr_0035_liino_mono_chat_line01",
         "title": "Trò Chuyện 1",
         "text": "Lại thêm kịch bản phải học thuộc cho mấy buổi phỏng vấn \"bất ngờ\" nữa... Ư. Sao cứ hỏi hoài chuyện em bắt đầu sự nghiệp thế nào vậy chứ? Em có tham gia show tìm kiếm tài năng nào đâu. Người ta phát hiện ra em mà. Debut một phát là thành công ngay, rồi em đã dốc hết sức mới đi được đến ngày hôm nay. Mấy nhà sản xuất show giải trí đó không chịu hiểu sao? Chuyện này khó tin đến thế à?"
       },
       {
+        "voId": "chr_0035_liino_mono_chat_line02",
         "title": "Trò Chuyện 2",
         "text": "Giao lưu với fan, biểu diễn trên sân khấu... Dù làm gì, em cũng dốc hết sức. Đặc biệt là vì fan của em. Em tuyệt đối không muốn khiến họ thất vọng. Họ xứng đáng có một giấc mơ mà dư âm hạnh phúc vẫn còn đọng lại rất lâu sau khi tỉnh giấc. Dù có mệt đến mức đứng cũng ngủ gật được, em vẫn sẽ chờ đến khi fan cuối cùng rời đi rồi mới uống một ngụm nước... Đó mới là trách nhiệm của một thần tượng thật sự."
       },
       {
+        "voId": "chr_0035_liino_mono_chat_line03",
         "title": "Trò Chuyện 3",
         "text": "Em từng được đào tạo về những \"chủ đề tuyệt đối không được nhắc đến\". Nhưng... nếu là nói với ngài thì chắc sẽ ổn thôi. Chẳng hạn như lịch trình hằng ngày của em thật sự rối tung rối mù. Em hay thức khuya. Bữa ăn thì chẳng đúng giờ. Mà các nhân viên còn nhức đầu vì em nữa, tại lúc nào cũng đòi hỏi mọi màn trình diễn phải thật hoàn hảo. Quao, tự thú hết mấy chuyện này cũng ngại thật đấy... Vậy nên để công bằng, Endmin cũng phải kể cho em một bí mật về mình nhé."
       },
       {
+        "voId": "chr_0035_liino_mono_chat_line04",
         "title": "Trò Chuyện 4",
         "text": "Cách thư giãn yêu thích nhất à? Nếu bạn là phóng viên, tôi sẽ trả lời cho an toàn là \"âm nhạc\". Nhưng nói thật nhé, tôi thích ngủ lắm. Đặt lưng xuống là tôi có thể ngủ liền mười mấy tiếng. Có lần còn dọa một trợ lý mới sợ xanh mặt vì gọi mãi tôi không dậy...! May mà quản lý của tôi ở đó và hét lên: \"Mười giây nữa lên sân khấu!\" Chị ấy còn chưa đếm đến chín là tôi đã bật dậy rồi."
       },
       {
+        "voId": "chr_0035_liino_mono_chat_line05",
         "title": "Trò Chuyện 5",
         "text": "Tháng này, một cựu nhân viên đã viết thư cho em. Anh ấy thấy có lỗi vì ngày trước đã im lặng khi một nhà tài trợ thẳng thừng buộc tội em về một chuyện em chưa từng làm. Nhưng em chưa bao giờ trách anh ấy... Anh ấy chọn im lặng vì cần tiền cho gia đình, cũng như rất nhiều người khác đang chật vật mưu sinh. Chúng ta lấy tư cách gì để trách họ đây?"
       },
       {
+        "voId": "chr_0035_liino_mono_about_line01",
         "title": "Chủ đề: Phòng Thương Mại Tổng Hợp Talos-II",
         "text": "Trước đây, em từng thấy những thông lệ và quy tắc của Phòng Thương Mại Tổng Hợp đều ổn. Nhưng sau nhiều trải nghiệm, và sau khi hiểu ra rằng cuộc đời không chỉ có một chân lý duy nhất, em nhận ra rằng - ngay cả người của Phòng Thương Mại Tổng Hợp cũng có thể chọn sống theo cách của riêng mình. Dù là những sân khấu biểu diễn truyền thống đi nữa, một thần tượng vẫn có thể mang đến màn trình diễn ghi đậm dấu ấn của chính mình."
       },
       {
+        "voId": "chr_0035_liino_mono_about_line02",
         "title": "Chủ đề: Ca Sĩ Thần Tượng",
         "text": "Endmin nghĩ \"idol\" thật sự là gì? Tôi nghĩ mỗi người đều có câu trả lời của riêng mình. Còn với em, \"idol\" như con tàu mang theo hy vọng, và con tàu ấy phải đi đủ xa để xứng đáng hoàn thành \"sứ mệnh\" của mình... Còn giấc mơ \"của em\" từ trước đến nay vẫn luôn là chèo lái con tàu mang tên Liino, chạm tới đỉnh cao nhất của Talos-II. Ở nơi đó, em sẽ dốc hết tất cả để thắp sáng từng điều ước mà con tàu ấy mang theo."
       },
       {
+        "voId": "chr_0035_liino_mono_about_line03",
         "title": "Chủ đề: Trò Chơi Âm Nhạc",
         "text": "Hả? Ngài không thấy trò chơi âm nhạc là cách xả stress tuyệt vời sao? Dù bận đến mấy, em vẫn thích tranh thủ chút thời gian rảnh hiếm hoi để thử vài màn siêu khó. Em không thể bấm chuẩn hoàn hảo từng nốt, nhưng chỉ cần qua được một màn thôi là đã thấy vui lắm rồi! Có điều, em không giỏi mấy trò chơi cuộn dọc lắm. Em thích kiểu một làn như Cao Thủ Nhịp Trống hay Đại Tiệc Nhịp Điệu hơn!"
       },
       {
+        "voId": "chr_0035_liino_mono_about_line04",
         "title": "Chủ đề: Djall",
         "text": "Hồi còn nhỏ, mẹ từng dặn em rằng tâm trí của người khác có sức cám dỗ rất lớn đối với Djall. Khi lay động trái tim họ, em cũng không bao giờ được quên kiểm soát trái tim của chính mình... Với chúng em, đọc ra một bí mật được chôn giấu trong lòng người khác dễ như ăn bánh. Thậm chí chẳng cần phải cố gắng. Cũng chính vì thế mà chúng em thường quên mất rằng, con người chẳng hề vui vẻ gì khi tâm hồn mình bị phơi bày trần trụi."
       },
       {
+        "voId": "chr_0035_liino_mono_about_line05",
         "title": "Chủ đề: La Fantoma",
         "text": "Ngày đầu tiên của Lễ Hội Hắc Thạch là lần cuối cùng em được ra ngoài cùng bố mẹ. Ánh hoàng hôn rực rỡ nhuộm đỏ rìa thành phố. Em chỉ vào cô gái cầm mic trên tấm áp phích nổi bật nhất treo ở một tòa nhà cao tầng, rồi hỏi mẹ: \"Mẹ ơi, sau này con có thể trở nên giống như cô ấy không?\" Mẹ mỉm cười, xoa đầu em, và lần đầu tiên bà cổ vũ em. \"Được chứ. Nếu Liino bé nhỏ đặt cả trái tim vào đó, con nhất định sẽ trở thành ngôi sao rực rỡ nhất La Fantoma\"."
       },
       {
+        "voId": "chr_0035_liino_explore_point_common_01",
         "title": "Phát hiện Tài Nguyên/Đồ Sưu Tập 1",
         "text": "Đằng kia có gì đó... Không thể rời mắt khỏi nó được!"
       },
       {
+        "voId": "chr_0035_liino_explore_point_valub_01",
         "title": "Phát hiện Tài Nguyên/Đồ Sưu Tập 2",
         "text": "Ế? Trông đắt tiền đấy... Chẳng lẽ trúng mánh rồi sao?"
       },
       {
+        "voId": "chr_0035_liino_explore_find_locked_01",
         "title": "Phát Hiện Khu Vực Chưa Khám Phá",
         "text": "Một nơi hoàn toàn mới! Cầu may nào. Hy vọng sẽ có bất ngờ thú vị."
       },
       {
+        "voId": "chr_0035_liino_explore_find_danger_01",
         "title": "Phát hiện Kẻ Địch Mạnh",
         "text": "Ôi trời, hình như có một gã to xác khó ưa không mời mà đến kìa!"
       },
       {
+        "voId": "chr_0035_liino_interact_mine_valub_01",
         "title": "Khai thác 1",
         "text": "Chà. Mới chỉ thấy mấy loại khoáng vật này trong sách bách khoa thôi..."
       },
       {
+        "voId": "chr_0035_liino_interact_mine_valub_echo2_01",
         "title": "Khai thác 2",
         "text": "He he. Đến lúc thu thập chút dữ liệu ghi lại chuyển động đặc biệt rồi!"
       },
       {
+        "voId": "chr_0035_liino_interact_treasure_valub_01",
         "title": "Mở Thùng",
         "text": "Phát hiện tuyệt quá! Cỡ này xứng đáng có hẳn một màn solo mười spotlight luôn!"
       },
       {
+        "voId": "chr_0035_liino_interact_etherium_01",
         "title": "Nhận Aurylene",
         "text": "Chà. Aurylene lấp lánh thật đấy! Chắc phải đáng cả gia tài..."
       },
       {
+        "voId": "chr_0035_liino_interact_blight_break_01",
         "title": "Loại Bỏ Nhiễm Khuẩn",
         "text": "Xung quanh đây... khiến tôi thấy khó chịu quá. Tôi từ chối biểu diễn ở một nơi như thế này!"
       },
       {
+        "voId": "chr_0035_liino_interact_rest_01",
         "title": "Nghỉ ngơi",
         "text": "Đến giờ nghỉ chưa vậy? Phù, tôi cần uống nước! Chờ một chút nhé!"
       },
       {
+        "voId": "chr_0035_liino_combat_suppuse_using_01",
         "title": "Sử Dụng Vật Phẩm Chiến Thuật 1",
         "text": "Để tôi hỗ trợ!"
       },
       {
+        "voId": "chr_0035_liino_combat_suppuse_getheal_01",
         "title": "Sử Dụng Vật Phẩm Chiến Thuật 2",
         "text": "Ấm áp và dễ chịu quá..."
       },
       {
+        "voId": "chr_0035_liino_combat_remind_danger_01",
         "title": "Cảnh Báo Đồng Đội",
         "text": "Nằm xuống! Đừng cố quá!"
       },
       {
+        "voId": "chr_0035_liino_combat_hurt_lowhp_01",
         "title": "Bị thương",
         "text": "Ngh... Sơ suất vụng về quá..."
       },
       {
+        "voId": "chr_0035_liino_combat_dead_01",
         "title": "0 HP",
         "text": "Thật không công bằng... Tôi đã suýt làm được rồi..."
       },
       {
+        "voId": "chr_0035_liino_combat_remind_praise_01",
         "title": "Cổ Vũ Đội 1",
         "text": "Ui cha! Phải xem lại mới được!"
       },
       {
+        "voId": "chr_0035_liino_combat_remind_praise_02",
         "title": "Cổ Vũ Đội 2",
         "text": "Đến bao giờ mới có thể di chuyển được như mọi người đây?"
       },
       {
+        "voId": "chr_0035_liino_combat_remind_praise_echo2_01",
         "title": "Đáp Lại Lời Cổ Vũ 1",
         "text": "Lên sân khấu với tôi trong concert tiếp theo nhé!"
       },
       {
+        "voId": "chr_0035_liino_combat_remind_praise_echo2_02",
         "title": "Đáp Lại Lời Cổ Vũ 2",
         "text": "Tôi đã bắt nhịp với cả đội rồi!"
       },
       {
+        "voId": "chr_0035_liino_combat_intobattle_01",
         "title": "Bắt Đầu Chiến Đấu 1",
         "text": "Rồi, bắt đầu thôi! Lấp la lấp lánh!"
       },
       {
+        "voId": "chr_0035_liino_combat_intobattle_echo2_01",
         "title": "Bắt Đầu Chiến Đấu 2",
         "text": "Dẹp hết mấy nốt chênh phô này thôi!"
       },
       {
+        "voId": "chr_0035_liino_combat_outbattle_nor_01",
         "title": "Thắng Trận 1",
         "text": "Đã bảo tôi đánh dở mà... Khoan? Chúng ta thắng thật sao?"
       },
       {
+        "voId": "chr_0035_liino_combat_outbattle_nor_02",
         "title": "Thắng Trận 2",
         "text": "Hạ màn hoàn hảo! Tôi biết chắc ta nắm phần thắng mà."
       },
       {
+        "voId": "chr_0035_liino_combat_outbattle_nor_echo2_01",
         "title": "Thắng Trận 3",
         "text": "Không tệ đâu! Thật sự là bắt kịp nhịp của tôi cơ đấy!"
       },
       {
+        "voId": "chr_0035_liino_combat_outbattle_hard_01",
         "title": "Thắng Trận 4",
         "text": "Nghỉ ngơi cho đàng hoàng để chuẩn bị cho tiết mục tiếp theo nhé! Đừng lo. Tôi sẽ khuấy động!"
       },
       {
+        "voId": "chr_0035_liino_combat_battle_defeat_01",
         "title": "Bại Trận",
         "text": "Tôi vẫn chưa đủ rực rỡ sao? Không... Không chịu màn kết buồn tẻ thế này đâu..."
       },
       {
+        "voId": "chr_0035_liino_mono_attack_last_01",
         "title": "Đòn Dứt Điểm 1",
         "text": "Bai-bai nhé!"
       },
       {
+        "voId": "chr_0035_liino_mono_attack_last_02",
         "title": "Đòn Dứt Điểm 2",
         "text": "Gục này!"
       },
       {
+        "voId": "chr_0035_liino_mono_skill_nor_01",
         "title": "KN Chiến Đấu 1",
         "text": "Nhận hết đi này!"
       },
       {
+        "voId": "chr_0035_liino_mono_skill_nor_02",
         "title": "KN Chiến Đấu 2",
         "text": "Nghe đây!"
       },
       {
+        "voId": "chr_0035_liino_mono_skill_nor_03",
         "title": "KN Chiến Đấu 3",
         "text": "Đến đoạn của tôi rồi!"
       },
       {
+        "voId": "chr_0035_liino_combat_skill_comb_ready_01",
         "title": "Chuẩn Bị KN Liên Hoàn 1",
         "text": "Đến lúc \"đáp lại\" rồi!"
       },
       {
+        "voId": "chr_0035_liino_combat_skill_comb_ready_02",
         "title": "Chuẩn Bị KN Liên Hoàn 2",
         "text": "Sân khấu đang gọi tên tôi!"
       },
       {
+        "voId": "chr_0035_liino_mono_skill_comb_release_01",
         "title": "Thi Triển Liên Hoàn 1",
         "text": "Sao Mai trở lại!"
       },
       {
+        "voId": "chr_0035_liino_mono_skill_comb_release_02",
         "title": "Thi Triển Liên Hoàn 2",
         "text": "Màn diễn vẫn tiếp tục!"
       },
       {
+        "voId": "chr_0035_liino_mono_attack_extra_01",
         "title": "Kết Liễu 1",
         "text": "Lệch nhịp rồi nhé!"
       },
       {
+        "voId": "chr_0035_liino_mono_attack_extra_02",
         "title": "Kết Liễu 2",
         "text": "Màn diễn của ngươi kết thúc rồi!"
       },
       {
+        "voId": "chr_0035_liino_mono_skill_ultimate_01",
         "title": "Tuyệt Kỹ 1",
         "text": "Đến lúc thắp lên niềm vui trong mọi trái tim!"
       },
       {
+        "voId": "chr_0035_liino_mono_skill_ultimate_02",
         "title": "Tuyệt Kỹ 2",
         "text": "Đừng chớp mắt! Ngôi sao đang lên!"
       },
       {
+        "voId": "chr_0035_liino_mono_skill_ultimate_03",
         "title": "Tuyệt Kỹ 3",
         "text": "Cùng tỏa sáng cả thế giới nào!"
       }

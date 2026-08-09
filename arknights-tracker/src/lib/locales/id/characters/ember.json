@@ -123,326 +123,407 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0009_azrila_chrbark_squad_01",
         "title": "Persiapan Operasi 1",
         "text": "Sudah siap. Menunggu perintah darimu."
       },
       {
+        "voId": "chr_0009_azrila_chrbark_squad_02",
         "title": "Persiapan Operasi 2",
         "text": "Misi baru?"
       },
       {
+        "voId": "chr_0009_azrila_chrbark_join_01",
         "title": "Menambahkan ke Tim 1",
         "text": "Biar kupimpin briefing taktisnya."
       },
       {
+        "voId": "chr_0009_azrila_chrbark_join_02",
         "title": "Menambahkan ke Tim 2",
         "text": "Ayo maju. Perang tak pernah berakhir. Kita hanya bisa terus maju."
       },
       {
+        "voId": "chr_0009_azrila_chrbark_weap_01",
         "title": "Berganti Senjata",
         "text": "Ini hasil karya luar biasa. Akan kumanfaatkan sebaik mungkin."
       },
       {
+        "voId": "chr_0009_azrila_chrbark_gear_01",
         "title": "Berganti Gear",
         "text": "Sudah cukup lama ... aku tak lihat peralatan sekaliber ini."
       },
       {
+        "voId": "chr_0009_azrila_chrup_skill_01",
         "title": "Aktivasi Matriks Kemampuan",
         "text": "Kekuatanku mulai pulih ... tapi masih belum cukup."
       },
       {
+        "voId": "chr_0009_azrila_chrup_level_01",
         "title": "Menonton Rekaman Pertarungan",
         "text": "Kerja sama tim kita bagus sekali .... Terima kasih. Aku belajar banyak."
       },
       {
+        "voId": "chr_0009_azrila_chrup_promt01_01",
         "title": "Promosi Operator 1",
         "text": "Terima kasih atas kepercayaanmu. Aku tak akan mengecewakanmu."
       },
       {
+        "voId": "chr_0009_azrila_chrup_promt02_01",
         "title": "Promosi Operator 2",
         "text": "Dipahami. Karena aku sudah diberi tugas yang lebih kritis, apa aku boleh berikan saran untuk rencana tempur kita?"
       },
       {
+        "voId": "chr_0009_azrila_chrup_promt03_01",
         "title": "Promosi Operator 3",
         "text": "Semasa di Ordo, komandan kami biasanya memberi kami lencana pada momen-momen seperti ini .... Tidak, tak usah. Biar begini saja, karena yang kucari di sini bukanlah penghargaan."
       },
       {
+        "voId": "chr_0009_azrila_chrup_promt04_01",
         "title": "Promosi Operator 4",
         "text": "Aku tak tahu kapan Perang Suci ini akan berakhir, tapi aku makin yakin bahwa situasi ini harus dihadapi seserius mungkin .... Kuharap kau mengizinkanku bertarung bersamamu."
       },
       {
+        "voId": "chr_0009_azrila_introduce_01",
         "title": "Operator Siap Bertugas",
         "text": "Ember, Kesatria Order of Steel Oath, siap bertugas. Sesuai sumpahku, aku akan mematuhi perintahmu hingga Perang Suci ini selesai."
       },
       {
+        "voId": "chr_0009_azrila_mono_switch_01",
         "title": "Siaga 1",
         "text": "Perang Suciku sama sekali belum usai ...."
       },
       {
+        "voId": "chr_0009_azrila_mono_switch_02",
         "title": "Siaga 2",
         "text": "Di medan pertarungan, tak ada ampun bagi kesalahan. Kita harus asah keahlian kita segigih mungkin."
       },
       {
+        "voId": "chr_0009_azrila_sim_assign_work_01",
         "title": "Menugaskan ke Fasilitas",
         "text": "Misi khusus? Dipahami .... Akan kujalankan sebaik mungkin."
       },
       {
+        "voId": "chr_0009_azrila_sim_hello_lower_01",
         "title": "Menyapa 1",
         "text": "Kau punya misi pertarungan yang butuh aku?"
       },
       {
+        "voId": "chr_0009_azrila_sim_hello_max_01",
         "title": "Menyapa 2",
         "text": "Selamat datang kembali, Endmin. Berikutnya, kita akan bertarung di mana?"
       },
       {
+        "voId": "chr_0009_azrila_sim_talk_lv01_01",
         "title": "Obrolan Santai di Dijiang 1",
         "text": "Dijiang memang dilengkapi berbagai fasilitas, tapi pesawat ini dirancang bukan untuk perang. Kesiapan operasionalnya tak menentu, dan aku masih berusaha menyesuaikan diri dengan hal itu."
       },
       {
+        "voId": "chr_0009_azrila_sim_talk_lv02_01",
         "title": "Obrolan Santai di Dijiang 2",
         "text": "Latihan di Ordo? Hmm .... Dulu, aku bisa menghadapi satu gugus Homoiossaron sendirian, jadi biasanya komandanku mengerahkan beberapa skuad rekrutan baru untuk melawanku sekaligus."
       },
       {
+        "voId": "chr_0009_azrila_sim_talk_lv02_02",
         "title": "Obrolan Santai di Dijiang 3",
         "text": "Di bawah aurora, terbentang baris pertahanan Oathkeeper. Saat pertarungan dimulai, langit akan dipenuhi kawanan Aggelos terbang. Tentu saja, kereta tempur dan pesawat pengawal kami juga akan—sebentar, kenapa barisan pegunungannya mengarah ke sini .... Maaf, sepertinya aku ... salah mengidentifikasi lokasinya."
       },
       {
+        "voId": "chr_0009_azrila_sim_talk_max_01",
         "title": "Obrolan Santai di Dijiang 4",
         "text": "Terjun dari ketinggian ke zona perang memang aksi standar di unitku. Tapi, di sini, konsep ketinggian itu sendiri mulai pudar."
       },
       {
+        "voId": "chr_0009_azrila_sim_talk_max_02",
         "title": "Obrolan Santai di Dijiang 5",
         "text": "Para operator di sini sangat cocok jadi partner latih tanding. Mereka menghargai koordinasi di medan pertarungan dan sangat kreatif dalam menyusun strategi. Aku belajar banyak dari mereka. Sebagai Oathkeeper, aku harus terus berlatih dan selalu meningkatkan kemampuanku."
       },
       {
+        "voId": "chr_0009_azrila_sim_talk_max_03",
         "title": "Obrolan Santai di Dijiang 6",
         "text": "Kantor Intel memberiku akses ke beberapa log misi. Begitu banyak orang harus kehilangan nyawa demi membela keyakinan mereka, bahkan walaupun mereka sama sekali tak pernah terjun ke medan pertarungan. Mungkin mereka sama sekali tak menyesalinya, tapi tetap saja aku jadi bertanya-tanya: apa yang bisa kita lakukan agar pengorbanan seperti itu tak terlalu banyak terjadi?"
       },
       {
+        "voId": "chr_0009_azrila_sim_gift_give_01",
         "title": "Menawarkan Hadiah",
         "text": "Terimalah ini, Endmin."
       },
       {
+        "voId": "chr_0009_azrila_sim_gift_recv_01",
         "title": "Menerima Hadiah",
         "text": "Terima kasih banyak. Kuanggap ini tanda pengakuan darimu."
       },
       {
+        "voId": "chr_0009_azrila_mono_self_line01",
         "title": "Dialog Kepercayaan 1",
         "text": "Desain setelan armor ini memang rumit, dan sebagai Oathkeeper, kami harus mempelajari keahlian teknik agar setelan ini selalu berfungsi. Tapi, pada akhirnya, yang membuat kami bisa bertahan hidup dalam pertarungan bukanlah armor ini. Kami bisa bertahan berkat tekad, kecerdasan strategi, dan keberanian untuk bertindak."
       },
       {
+        "voId": "chr_0009_azrila_mono_self_line02",
         "title": "Dialog Kepercayaan 2",
         "text": "Izinkan aku menanggung biaya perawatan untuk operator cadangan itu. Banyak Oathkeeper siap mengorbankan nyawa, tapi tanpa fokus yang jelas demi meraih kemenangan, tekad seperti itu hanya akan menimbulkan risiko bagi semua orang. *Berdesah* Aku kehilangan fokus dan jadi menghantamnya terlalu keras .... Aku sungguh minta maaf."
       },
       {
+        "voId": "chr_0009_azrila_mono_self_line03",
         "title": "Dialog Kepercayaan 3",
         "text": "Ada tradisi tertentu di kalangan Oathkeeper: Saat ada skuad yang sudah tak sanggup melanjutkan pertarungan, salah seorang Oathkeeper harus mundur untuk merekrut anggota baru. Bisa dibilang, ini semacam Perang Suci. Kami mencari calon penerus yang layak dengan cermat, dan tak pernah terburu-buru dalam melakukannya. Tapi ... sepertinya Perang Suciku sudah berlangsung terlalu lama."
       },
       {
+        "voId": "chr_0009_azrila_mono_self_line04",
         "title": "Dialog Kepercayaan 4",
         "text": "Saat mengantarkan barang-barang peninggalan dan abu rekan-rekanku yang wafat, aku bertemu orang tua, saudara, dan orang-orang terkasih mereka. Aku bahkan menghentikan sahabat salah satu prajurit yang berniat pergi ke utara untuk balas dendam. Entah bagaimana, justru akulah yang paling sering menghibur orang lain dan meyakinkan mereka untuk tak bertindak gegabah. Mungkin karena itulah komandanku bersikeras menyuruhku memulai Perang Suci sesegera mungkin."
       },
       {
+        "voId": "chr_0009_azrila_mono_self_line05",
         "title": "Dialog Kepercayaan 5",
         "text": "Ini Claire, lalu yang ini Zhao, Nilla, dan Lucion. Yang matanya tajam itu Fiyanggu, anggota anyaran. Mereka semua tidak minum. Kami pura-pura bersulang begitu karena ada jurnalis yang berkunjung. Mereka semua prajurit hebat, dan karena itulah mereka memilih hari itu untuk menuntaskan misi. Kalau penerus mereka juga sama luar biasanya seperti mereka ... kurasa aku tak akan tega memerintahkan mereka ke utara. Kenapa aku begini, Endmin? Apa yang kurang dariku?"
       },
       {
+        "voId": "chr_0009_azrila_mono_chat_line01",
         "title": "Obrolan 1",
         "text": "Ember, nama sandi ini pilihanku sendiri. Aku tak berniat lari dari kenyataan: aku masih belum siap kembali ke front utara. Tapi, asalkan masih ada peluang untuk membara, api Ember akan menyala kembali. Endmin, aku yakin Endfield akan membantuku menemukan jalan hidupku."
       },
       {
+        "voId": "chr_0009_azrila_mono_chat_line02",
         "title": "Obrolan 2",
         "text": "Unit keamanan standar bisa menghadapi Kriosson, tapi situasi langsung berubah drastis kalau ada Thrylissoron. Di Oathkeeper, skuad taktis seperti kami ditugaskan mengacaukan formasi musuh dengan cepat, menetralkan Ankhor, dan mencegah kemunculan gugus Aggelos yang lebih berbahaya. Misi ini memang sangat berisiko, tapi kami bangga bisa menjalankannya."
       },
       {
+        "voId": "chr_0009_azrila_mono_chat_line03",
         "title": "Obrolan 3",
         "text": "Skuad yang anggotanya menipis akan ditarik mundur untuk merekrut prajurit baru, jadi tugasnya jadi semacam saluran rekrutmen bagi Oathkeeper. Orang-orang yang menantangku sebenarnya hanya ingin bergabung dengan kami; bukan karena mereka punya dendam pribadi kepadaku. Tentu saja, kalaupun mereka menang, bukan berarti mereka akan langsung direkrut. Kekuatan dan keahlian memang penting, tapi yang terpenting adalah kepribadian si penantang, yang akan tampak saat mereka bertarung."
       },
       {
+        "voId": "chr_0009_azrila_mono_chat_line04",
         "title": "Obrolan 4",
         "text": "Penasaran tentang Senapan Penjagaku? Sayangnya, aku meninggalkannya di benteng Oathkeeper. Aku tak biasa bertarung dengan senjata jarak jauh. Senapanku terasa lebih seperti bagian dari diriku. Dengan meninggalkannya di sana, aku jadi selalu ingat bahwa suatu hari nanti aku akan kembali ke sana."
       },
       {
+        "voId": "chr_0009_azrila_mono_chat_line05",
         "title": "Obrolan 5",
         "text": "Saat aku ditarik dari baris depan, komandanku tak menentukan tanggal berapa aku akan kembali. Justru, kudengar banyak veteran lain juga diberi mendapatkan perintah yang sama. Mereka ditarik mundur untuk merekrut anggota baru, tapi tak pernah kembali ke benteng. Mungkin itu cara halus untuk menyatakan bahwa mereka diam-diam dipensiunkan. Tapi, aku tak berniat mengikuti jalan itu, dan karena itulah komandanku merekomendasikanku kepadamu. Menurutnya, Endfield mungkin bisa membantuku mengenali kekuranganku. Semoga dia memang benar."
       },
       {
+        "voId": "chr_0009_azrila_mono_about_line01",
         "title": "Topik: Order of Steel Oath",
         "text": "Saat Perang Aggelos Pertama, koalisi pasukan elite dibentuk untuk mendesak masuk ke Utara. Mereka bersumpah akan bertarung hingga titik darah penghabisan, dan dengan itu, dimulailah perang panjang dan keji yang melelahkan. Inilah asal mula para Oathkeeper pertama .... Sebenarnya, komandanku bilang bahwa kaulah, Endmin, yang membantu mereka hingga bisa berkomunikasi lagi dengan barisan belakang. Dan sekarang, di sinilah aku, menceritakan ulang kisah ini kepadamu. Rasanya seperti mimpi."
       },
       {
+        "voId": "chr_0009_azrila_mono_about_line02",
         "title": "Topik: Perang Aggelos",
         "text": "Taktik dan teknologi mungkin bisa membuat kita unggul saat melawan Aggelos, tapi begitu pertarungan berubah menjadi peperangan, korban jiwa pun tak bisa dihindari. Saat Perang Aggelos Pertama berakhir, aktivitas Ankhor dan Aggelos sudah berkurang banyak. Tapi, bertahun-tahun kemudian, saat aku masih bertugas sebagai prajurit, pertarungan di baris depan jadi makin sengit .... Mungkin, perang yang sesungguhnya justru baru saja mulai."
       },
       {
+        "voId": "chr_0009_azrila_mono_about_line03",
         "title": "Topik: Baris Pertahanan Utara",
         "text": "Baris Pertahanan Utara bukan perbatasan yang sifatnya permanen. Setiap hari, kami bertarung mempertahankan setiap jengkal area itu melawan Aggelos. Saat pertarungan makin sengit, para prajurit kami bahkan kadang membawa material bangunan sambil bertarung, dan buru-buru membangun gardu benteng baru di titik-titik strategis yang baru saja berhasil kami rebut. Kami tak pernah mundur dari baris pertahanan, karena kami sendirilah yang jadi baris pertahanan."
       },
       {
+        "voId": "chr_0009_azrila_mono_about_line04",
         "title": "Topik: Originium Arts",
         "text": "Seperti halnya api pada umumnya, Originium Arts-ku bisa menyalakan material dan membakar musuh. Dengan kontrol presisi, kemampuan ini bahkan bisa digunakan untuk mendisinfeksi luka dan mengatur suhu tubuh. Teknik ini mungkin memang bermanfaat dalam pertarungan, tapi tetap saja tak bisa menggantikan arts medis sungguhan. Langkah terbaik adalah mengevakuasi prajurit yang cedera dan segera memberi mereka penanganan yang memadai."
       },
       {
+        "voId": "chr_0009_azrila_mono_about_line05",
         "title": "Topik: Sentrapolis",
         "text": "Saat pertarungan memuncak pun, suplai Supresan Oripati ke barisan pasukan tak pernah terhenti. Sebagai orang yang Terinfeksi, aku sepenuhnya paham betapa pentingnya suplai itu. Sulit rasanya membayangkan kehidupan orang-orang pada Zaman Terra .... Petaka akibat Originium tak pernah sampai menyebar ke sini, dan orang-orang yang Terinfeksi tak lagi dimusuhi habis-habisan. Mungkin ini bukti bahwa kita sudah lebih baik daripada dulu?"
       },
       {
+        "voId": "chr_0009_azrila_explore_point_common_01",
         "title": "Sumber Daya/Barang Koleksi Terdeteksi 1",
         "text": "Lokasi sumber daya bermanfaat ditemukan. Bersiaplah memungutnya."
       },
       {
+        "voId": "chr_0009_azrila_explore_point_valub_01",
         "title": "Sumber Daya/Barang Koleksi Terdeteksi 2",
         "text": "Objek bernilai tinggi teridentifikasi. Meminta izin untuk mengambilnya."
       },
       {
+        "voId": "chr_0009_azrila_explore_find_locked_01",
         "title": "Area yang Belum Dijelajahi Terdeteksi",
         "text": "Sinyal aneh terdeteksi di depan sana. Bukan pola Ankhor yang sudah diketahui. Perlu kita selidiki, tidak?"
       },
       {
+        "voId": "chr_0009_azrila_explore_find_danger_01",
         "title": "Musuh Kuat Ditemukan",
         "text": "Musuh dengan tingkat ancaman tinggi terdeteksi. Tetap waspada."
       },
       {
+        "voId": "chr_0009_azrila_interact_mine_valub_01",
         "title": "Penambangan 1",
         "text": "Kapan pun memungkinkan, selalu isi ulang suplai. Jangan sampai kehabisan suplai saat kondisi kritis."
       },
       {
+        "voId": "chr_0009_azrila_interact_mine_valub_echo2_01",
         "title": "Penambangan 2",
         "text": "Mengumpulkan mineral? Biar kubantu."
       },
       {
+        "voId": "chr_0009_azrila_interact_treasure_valub_01",
         "title": "Membuka Kerat",
         "text": "Semoga ini berguna."
       },
       {
+        "voId": "chr_0009_azrila_interact_etherium_01",
         "title": "Mendapatkan Aurylene",
         "text": "Apa ini harus kita kumpulkan? Baiklah, aku akan ikut mencari."
       },
       {
+        "voId": "chr_0009_azrila_interact_blight_break_01",
         "title": "Menyingkirkan Hawar",
         "text": "Sekarang, rintangan menyebalkan ini tak akan menghalangi kita lagi."
       },
       {
+        "voId": "chr_0009_azrila_interact_rest_01",
         "title": "Istirahat",
         "text": "Istirahat selesai. Ayo kita lanjutkan misi."
       },
       {
+        "voId": "chr_0009_azrila_combat_suppuse_using_01",
         "title": "Penggunaan Taktis 1",
         "text": "Menyiapkan dukungan taktis."
       },
       {
+        "voId": "chr_0009_azrila_combat_suppuse_getheal_01",
         "title": "Penggunaan Taktis 2",
         "text": "Semua siap. Kembali bertarung."
       },
       {
+        "voId": "chr_0009_azrila_combat_remind_danger_01",
         "title": "Peringatan Bahaya",
         "text": "Siap-siap terhantam!"
       },
       {
+        "voId": "chr_0009_azrila_combat_hurt_lowhp_01",
         "title": "Cedera",
         "text": "Aku akan terus berusaha hingga akhir."
       },
       {
+        "voId": "chr_0009_azrila_combat_dead_01",
         "title": "0 HP",
         "text": "Perang Suci ... tak boleh berakhir di sini ...."
       },
       {
+        "voId": "chr_0009_azrila_combat_remind_praise_01",
         "title": "Penyemangat Tim 1",
         "text": "Performa menakjubkan."
       },
       {
+        "voId": "chr_0009_azrila_combat_remind_praise_02",
         "title": "Penyemangat Tim 2",
         "text": "Manuver tempur luar biasa."
       },
       {
+        "voId": "chr_0009_azrila_combat_remind_praise_echo2_01",
         "title": "Respons Penyemangat 1",
         "text": "Semua berhak merayakan kemenangan ini."
       },
       {
+        "voId": "chr_0009_azrila_combat_remind_praise_echo2_02",
         "title": "Respons Penyemangat 2",
         "text": "Semua ini berkat kerja sama tim kita yang luar biasa."
       },
       {
+        "voId": "chr_0009_azrila_combat_intobattle_01",
         "title": "Mulai Pertarungan 1",
         "text": "Majulah! Hadapi aku!"
       },
       {
+        "voId": "chr_0009_azrila_combat_intobattle_echo2_01",
         "title": "Mulai Pertarungan 2",
         "text": "Roger. Mendekati musuh."
       },
       {
+        "voId": "chr_0009_azrila_combat_outbattle_nor_01",
         "title": "Menang Pertarungan 1",
         "text": "Kemenangan ini memang sepadan."
       },
       {
+        "voId": "chr_0009_azrila_combat_outbattle_nor_02",
         "title": "Menang Pertarungan 2",
         "text": "Kita bertarung dengan berani dan hati-hati. Bagus sekali, Teman-teman."
       },
       {
+        "voId": "chr_0009_azrila_combat_outbattle_nor_echo2_01",
         "title": "Menang Pertarungan 3",
         "text": "Kemenangan ini berhasil kita raih karena kita berusaha bersama."
       },
       {
+        "voId": "chr_0009_azrila_combat_outbattle_hard_01",
         "title": "Menang Pertarungan 4",
         "text": "Performaku kurang bagus .... Tapi, aku akan belajar dan terus mengasah kemampuan. Aku janji."
       },
       {
+        "voId": "chr_0009_azrila_combat_battle_defeat_01",
         "title": "Kalah Bertarung",
         "text": "Jangan-jangan aku mengulangi kesalahan yang sama ...?"
       },
       {
+        "voId": "chr_0009_azrila_mono_attack_last_01",
         "title": "Final Strike 1",
         "text": "Rasakan, nih!"
       },
       {
+        "voId": "chr_0009_azrila_mono_attack_last_02",
         "title": "Final Strike 2",
         "text": "Jangan melawan lagi!"
       },
       {
+        "voId": "chr_0009_azrila_mono_skill_nor_01",
         "title": "Skill Tarung 1",
         "text": "Kau tak akan bisa menghentikanku!"
       },
       {
+        "voId": "chr_0009_azrila_mono_skill_nor_02",
         "title": "Skill Tarung 2",
         "text": "Tundukkan mereka!"
       },
       {
+        "voId": "chr_0009_azrila_mono_skill_nor_03",
         "title": "Skill Tarung 3",
         "text": "Desak maju!"
       },
       {
+        "voId": "chr_0009_azrila_combat_skill_comb_ready_01",
         "title": "Skill Kombo Siap 1",
         "text": "Siap membantu!"
       },
       {
+        "voId": "chr_0009_azrila_combat_skill_comb_ready_02",
         "title": "Skill Kombo Siap 2",
         "text": "Sudah di posisi!"
       },
       {
+        "voId": "chr_0009_azrila_mono_skill_comb_release_01",
         "title": "Penggunaan Kombo 1",
         "text": "Tak akan kubiarkan!"
       },
       {
+        "voId": "chr_0009_azrila_mono_skill_comb_release_02",
         "title": "Penggunaan Kombo 2",
         "text": "Hadapilah ajalmu!"
       },
       {
+        "voId": "chr_0009_azrila_mono_attack_extra_01",
         "title": "Penuntas 1",
         "text": "Pecahkan sekarang!"
       },
       {
+        "voId": "chr_0009_azrila_mono_attack_extra_02",
         "title": "Penuntas 2",
         "text": "Payah!"
       },
       {
+        "voId": "chr_0009_azrila_mono_skill_ultimate_01",
         "title": "Ultimate 1",
         "text": "Api Oathkeeper!"
       },
       {
+        "voId": "chr_0009_azrila_mono_skill_ultimate_02",
         "title": "Ultimate 2",
         "text": "Akulah perwujudan Terang!"
       },
       {
+        "voId": "chr_0009_azrila_mono_skill_ultimate_03",
         "title": "Ultimate 3",
         "text": "Di sini, cahaya akan menyala selamanya!"
       }

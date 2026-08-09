@@ -120,322 +120,402 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0023_antal_chrbark_squad_01",
         "title": "Einsatzvorbereitung 1",
         "text": "Hmm. Eine weitere Schicht beginnt."
       },
       {
+        "voId": "chr_0023_antal_chrbark_squad_02",
         "title": "Einsatzvorbereitung 2",
         "text": "Wer ist dieses Mal das Testsubjekt?"
       },
       {
+        "voId": "chr_0023_antal_chrbark_join_01",
         "title": "Wird zum Team hinzugefügt 1",
         "text": "Eine Mission für mich? Gut. Ich bin gerade auf der Suche nach Möglichkeiten zum Testen modifizierter Persönlicher Barrieren-Orbiter."
       },
       {
+        "voId": "chr_0023_antal_chrbark_join_02",
         "title": "Wird zum Team hinzugefügt 2",
         "text": "Wenn du einen Plan hast, gib einfach deine Befehle. Ich vertraue auf dein Urteil."
       },
       {
+        "voId": "chr_0023_antal_chrbark_weap_01",
         "title": "Waffe wird gewechselt",
         "text": "Eine neue und unkalibrierte Waffe. Ich muss sie einer Reihe von Leistungsbewertungen unterziehen."
       },
       {
+        "voId": "chr_0023_antal_chrbark_gear_01",
         "title": "Ausrüstung wird gewechselt",
         "text": "Die neue Ausrüstung stellt eine deutliche Verbesserung dar. Allerdings stößt sie an meine Hautschuppen."
       },
       {
+        "voId": "chr_0023_antal_chrup_skill_01",
         "title": "Fähigkeitsmatrix wird aktiviert",
         "text": "Hmm … Danke für die Anweisungen. Sie haben mich zu einem ganz neuen Gedankengang inspiriert."
       },
       {
+        "voId": "chr_0023_antal_chrup_level_01",
         "title": "Kampfaufzeichnungen ansehen",
         "text": "Ein sehr beeindruckender Schlachtplan, Endministrator. Ich freue mich, an deinen Einsätzen teilnehmen zu dürfen."
       },
       {
+        "voId": "chr_0023_antal_chrup_promt01_01",
         "title": "Operator-Beförderung 1",
         "text": "Eine Gehaltserhöhung? Ich freue mich über zusätzliche Mittel für die Beschaffung weiterer Originium-Geräte und Tech-Einheiten. Meine Forschung und meine persönlichen Finanzen werden wachsen."
       },
       {
+        "voId": "chr_0023_antal_chrup_promt02_01",
         "title": "Operator-Beförderung 2",
         "text": "Eine Beförderung, die aber in Zukunft zusätzliche Arbeit mit sich bringt? Verstehe. Es gibt also eine neue Mission für mich?"
       },
       {
+        "voId": "chr_0023_antal_chrup_promt03_01",
         "title": "Operator-Beförderung 3",
         "text": "Ist das eine Ermutigung für meinen Wissensdurst? Ich habe gerade einen Bericht über den Protokoll-Automationskern fertiggestellt. Du kann ihn dir gerne noch mal ansehen, vielleicht habe ich ja etwas übersehen."
       },
       {
+        "voId": "chr_0023_antal_chrup_promt04_01",
         "title": "Operator-Beförderung 4",
         "text": "Das Leben in Endfield unterscheidet sich grundlegend von meiner Zeit an der Akademie. Damals habe ich mit meiner Forschung problemlos meinen Notendurchschnitt erreicht, aber das scheint mir heute nicht mehr so wichtig. Ich muss lernen, den anderen Teammitgliedern zu vertrauen und gemeinsam Ergebnisse zu erzielen."
       },
       {
+        "voId": "chr_0023_antal_introduce_01",
         "title": "Operator meldet sich zum Dienst",
         "text": "Antal vom Team Z7 meldet sich zum Dienst. Ich habe mich mit Originium-Automatisierung beschäftigt und helfe gelegentlich bei der Modifikation oder Reparatur von Originium-Anlagen. Du kannst mich für solche Aufgaben kontaktieren … Und ich habe eine Frage an dich: Aus welchem Material besteht deine Maske? Carbonfaser?"
       },
       {
+        "voId": "chr_0023_antal_mono_switch_01",
         "title": "Warten 1",
         "text": "Möchtest du etwas mit mir besprechen?"
       },
       {
+        "voId": "chr_0023_antal_mono_switch_02",
         "title": "Warten 2",
         "text": "Ich versuche, mir einen schlechten Witz für dich auszudenken."
       },
       {
+        "voId": "chr_0023_antal_sim_assign_work_01",
         "title": "Zuweisung zur Anlage",
         "text": "Ein neuer Auftrag? Verstanden."
       },
       {
+        "voId": "chr_0023_antal_sim_hello_lower_01",
         "title": "Gruß 1",
         "text": "Ich bin für Fragen Über Originium-Anlagen und anderes offen."
       },
       {
+        "voId": "chr_0023_antal_sim_hello_max_01",
         "title": "Gruß 2",
         "text": "Seltsamerweise verstärkt deine Anwesenheit meinen Eifer, mein umfangreiches Wissen zu teilen, enorm."
       },
       {
+        "voId": "chr_0023_antal_sim_talk_lv01_01",
         "title": "Dijiang-Geplauder 1",
         "text": "Darf ich mir deine Waffen ansehen, Endmin? Hmm. Das einzige Problem, das ich sehe, ist der Verschleiß bestimmter Komponenten. Der Austausch einer einzigen Originium-Präzisionskomponente wird das Problem beheben. Diese Reparatur wird nicht viel Mühe machen. Ich biete diesen Service jedem Mitglied von Team Z7 an."
       },
       {
+        "voId": "chr_0023_antal_sim_talk_lv02_01",
         "title": "Dijiang-Geplauder 2",
         "text": "Meine Studien über die Dijiang haben gezeigt, dass sie ein Meisterwerk der Ingenieurskunst ist. Die zentrale Steuerung, der Protorig-Netzwerkknoten, die Lebenserhaltungssysteme und verschiedene Teile des Schiffes bieten reichlich Lernmöglichkeiten. Sie alle haben mir die Grundlage für meine nächste wissenschaftliche Arbeit gegeben."
       },
       {
+        "voId": "chr_0023_antal_sim_talk_lv02_02",
         "title": "Dijiang-Geplauder 3",
         "text": "Ich kenne einen Witz, der auf Fluorites persönlichen Erfahrungen basiert. Wie sollte man auf die Drohbotschaft eines Gegners reagieren? Antwort: Abbestellen. Du lachst. Dieser Witz ist nachweislich humorvoll. Aber warum haben die anderen nicht so gelacht wie du?"
       },
       {
+        "voId": "chr_0023_antal_sim_talk_max_01",
         "title": "Dijiang-Geplauder 4",
         "text": "Wenn du dich emotional schlecht fühlst, begleite mich in die Natur. Sonnenstrahlung regt die Serotoninausschüttung im Gehirn an, die negative Emotionen lindert. In der Nähe meiner Akademie gab es einen Springbrunnenpark, der Ruhe und viel Sonne bot. Während meines Studiums an der Akademie war der Park mein Ruhepol in Momenten der Erschöpfung."
       },
       {
+        "voId": "chr_0023_antal_sim_talk_max_02",
         "title": "Dijiang-Geplauder 5",
         "text": "Die Antwort meiner Großmutter ist gestern angekommen. Sie scheint sich sehr für eine bestimmte Person zu interessieren, die ich in meinen Briefen wiederholt erwähnt habe. Ich werde ihre Nachricht an diese Person weiterleiten, nämlich an dich, Endmin: „Du solltest inzwischen wissen, dass ein gewisser junger Savra ziemlich stur sein kann, wenn auch auf gutmütige Art. Bitte hab etwas Geduld mit ihm. Ich hoffe, irgendwann Tee mit dir trinken und dir mehr darüber erzählen zu können, wie ich dieses kleine schuppige Kind großgezogen habe.“"
       },
       {
+        "voId": "chr_0023_antal_sim_talk_max_03",
         "title": "Dijiang-Geplauder 6",
         "text": "Viele Leute betrachten Talos-II von den Decks der Dijiang aus. Ich tat dasselbe, und obwohl es eine neue Perspektive bot, teilte ich nicht die Nostalgie, die andere empfanden. Vielleicht ist meine Großmutter schuld. Sie lehrte mich: „Verliere dich nicht in der Vergangenheit. Suche und erweitere deine Zukunft.“"
       },
       {
+        "voId": "chr_0023_antal_sim_gift_give_01",
         "title": "Geschenke anbieten",
         "text": "Soziale Konventionen schreiben vor, dass Leute Geschenke austauschen, um ihre Gefühle auszudrücken. Ich habe dieses besondere Geschenk für dich vorbereitet."
       },
       {
+        "voId": "chr_0023_antal_sim_gift_recv_01",
         "title": "Geschenke annehmen",
         "text": "Ich bin dankbar. Ich weiß, was es bedeutet, ein Geschenk zu machen, und ich werde dieses Geschenk in Ehren halten."
       },
       {
+        "voId": "chr_0023_antal_mono_self_line01",
         "title": "Vertrauensgespräch 1",
         "text": "Die Entscheidung, Endfield beizutreten, ist mir nicht schwergefallen. Endfield bietet neue Technologien an, die an der Akademie fehlen. Die wissenschaftliche Gesellschaft kann bei der Weiterentwicklung bestimmter Bereiche übermäßig konservativ sein. Endfield hingegen bietet einen bewundernswerten Entdeckergeist, Innovationen und praktische Anwendungsmöglichkeiten."
       },
       {
+        "voId": "chr_0023_antal_mono_self_line02",
         "title": "Vertrauensgespräch 2",
         "text": "Mein Buch? Das ist tatsächlich eine Auswahl extremer Sudoku-Herausforderungen. Rechenrätsel helfen mir, meine Emotionen in der Freizeit zu regulieren. Ich habe anderen Mitgliedern von Z7 dieses Hobby nähergebracht, aber die Resonanz war negativ. Vielleicht möchtest du es ja mal versuchen, Endmin?"
       },
       {
+        "voId": "chr_0023_antal_mono_self_line03",
         "title": "Vertrauensgespräch 3",
         "text": "Ein schlechter Witz für mich? Lass hören. „Warum macht ein Savra tagsüber nur platte Witze? Weil die Sonne scheint und auch das Fremdschämen ein bisschen Vitamin D verdient.“ … Hrra-Hrra-Hrra. Ich wollte dich nicht beleidigen, Endmin. So klingt das echte Lachen eines Savra."
       },
       {
+        "voId": "chr_0023_antal_mono_self_line04",
         "title": "Vertrauensgespräch 4",
         "text": "Ich habe viele Originium-Anlagen modifiziert. Aber am meisten vermisse ich den Stab, den mir meine Großmutter als Kind geschenkt hat. Ich erinnere mich noch heute an ihren Spruch: „Er wird dich begleiten, wenn du diese Welt veränderst.“"
       },
       {
+        "voId": "chr_0023_antal_mono_self_line05",
         "title": "Vertrauensgespräch 5",
         "text": "Meine Großmutter sagte mir, ein Leben lang einer wissenschaftlichen Frage nachzugehen, sei zwar romantisch, aber auch einsam. Ich verstand nicht, was sie meinte. Dann kam eine Zeit, in der ich die Freude über eine neue Entdeckung teilen wollte, aber du warst nicht da. Dieser Vorfall hat mich etwas über Einsamkeit gelehrt."
       },
       {
+        "voId": "chr_0023_antal_mono_chat_line01",
         "title": "Geplauder 1",
         "text": "Fluorite hat mir zum Zeitvertreib ein Kartenspiel beigebracht. Sie hat mir auch erklärt, dass der Verlierer alles für den Gewinner tun müsse. Wir haben fünf Partien gespielt. Sie muss mir nun fünf Einzelsitzungen zum Thema „Schnell ein angenehmer Gesprächspartner werden“ geben."
       },
       {
+        "voId": "chr_0023_antal_mono_chat_line02",
         "title": "Geplauder 2",
         "text": "Abendessen? Nein. Ich kann nicht. Ich habe einen Aggelos gejagt, ohne mich bei meiner Hauptfrau zu melden. Sie hat mich bestraft, indem sie mir das abendliche Essen in der Kantine verweigert hat."
       },
       {
+        "voId": "chr_0023_antal_mono_chat_line03",
         "title": "Geplauder 3",
         "text": "Warum habe ich mich für Z7 und nicht für ein Forschungs- und Entwicklungsprojekt entschieden? Ursprünglich hatte ich mich für das Forschungs- und Entwicklungszentrum interessiert, aber Hauptfrau Akekuri hat das Vorstellungsgespräch mit mir geführt. Sie ist der Meinung, dass modifizierte Originium-Anlagen aus dem Labor genommen und echten Kampfszenarien ausgesetzt werden sollten. So lassen sich ihre Probleme besser identifizieren. Ich stimme dem zu und bin deshalb ihrem Team beigetreten."
       },
       {
+        "voId": "chr_0023_antal_mono_chat_line04",
         "title": "Geplauder 4",
         "text": "Warum ich so von schlechten Witzen besessen bin? Schon in der Schule beschwerten sich die Leute über meinen Mangel an Humor. Ich stimme ihnen zu. Mein Fehler muss korrigiert werden."
       },
       {
+        "voId": "chr_0023_antal_mono_chat_line05",
         "title": "Geplauder 5",
         "text": "Meine Großmutter sagte mir, sie sei froh, dass ich von zu Hause weggegangen und Endfield beigetreten sei. Sie sah darin eine Gelegenheit, mich vom Lesen und den Originium-Anlagen wegzubringen. Sie hoffte, ich würde lernen, mit meinen Teamkollegen auszukommen und sogar … Freunde zu finden."
       },
       {
+        "voId": "chr_0023_antal_mono_about_line01",
         "title": "Thema: Akekuri",
         "text": "Hauptfrau Akekuri? Sie hat mich rekrutiert und ist sehr freundlich. Ich befolge alle ihre Anweisungen. Obwohl sie sagt, dass es unserem Team gut geht, schläft sie oft nicht richtig und läuft mitten in der Nacht umher. Sie weigert sich, die Gründe zu verraten. Ich hoffe, du kannst mir sagen, was es damit auf sich hat, Endmin."
       },
       {
+        "voId": "chr_0023_antal_mono_about_line02",
         "title": "Thema: Catcher",
         "text": "Catcher ist für die Zubereitung der Verpflegung in Außeneinsätzen zuständig. Er beherrscht Küchengeschirr besser als ich meine Persönlichen Barrieren-Orbiter. Bei Regen weigert er sich jedoch zu reden, hat aber auch nichts gegen meine Anwesenheit einzuwenden. Das finde ich ziemlich verwirrend."
       },
       {
+        "voId": "chr_0023_antal_mono_about_line03",
         "title": "Thema: Fluorite",
         "text": "Ich betrachte Fluorite in gewisser Weise als meine schuppige Freundin. Ich finde ihren starken, kräftigen Schwanz attraktiv, aber sie hat mir taktile Analysen verboten. Fluorite ist außerdem eine geschickte Gesprächspartnerin. Ich kann viel von ihr lernen."
       },
       {
+        "voId": "chr_0023_antal_mono_about_line04",
         "title": "Thema: Estella",
         "text": "Zu Beginn eines Gefechts muss ich immer daran denken, dass ich Estella verteidige. Wir haben beide eine reflektierende und auffällige Hautfarbe. Das ist ein zentrales Problem, das uns im Kampf gefährlich anfällig macht."
       },
       {
+        "voId": "chr_0023_antal_explore_point_common_01",
         "title": "Ressource/Sammelobjekt entdeckt 1",
         "text": "Gut. Eine neue Entdeckung wurde gemacht."
       },
       {
+        "voId": "chr_0023_antal_explore_point_valub_01",
         "title": "Ressource/Sammelobjekt entdeckt 2",
         "text": "Wir sollten uns diese wichtige Entdeckung ansehen."
       },
       {
+        "voId": "chr_0023_antal_explore_find_locked_01",
         "title": "Unerforschter Bereich entdeckt",
         "text": "Erlaube mir, dieses Geheimnis zu lüften."
       },
       {
+        "voId": "chr_0023_antal_explore_find_danger_01",
         "title": "Starker Gegner entdeckt",
         "text": "Feindliche Elite-Einheit gesichtet."
       },
       {
+        "voId": "chr_0023_antal_interact_mine_valub_01",
         "title": "Abbau 1",
         "text": "Mineralien dienen verschiedenen Zwecken. Wir sollten welche sammeln."
       },
       {
+        "voId": "chr_0023_antal_interact_mine_valub_echo2_01",
         "title": "Abbau 2",
         "text": "Das wird unsere Effizienz verbessern."
       },
       {
+        "voId": "chr_0023_antal_interact_treasure_valub_01",
         "title": "Kiste öffnen",
         "text": "Großes Ressourcenlager gefunden. Wir sollten es nach Materialien zur Ausrüstungswartung durchsuchen."
       },
       {
+        "voId": "chr_0023_antal_interact_etherium_01",
         "title": "Aurylen erhalten",
         "text": "Manche Aurylene entfernen sich plötzlich, wenn wir uns nähern. Warum? Könnte es sich um eine Form energetischer Abstoßung handeln?"
       },
       {
+        "voId": "chr_0023_antal_interact_blight_break_01",
         "title": "Eliminierung der Verderbnis",
         "text": "Bedeutet das, dass wir die Verderbnis jetzt besser verstehen …?"
       },
       {
+        "voId": "chr_0023_antal_interact_rest_01",
         "title": "Ausruhen",
         "text": "Lebewesen sind keine Maschinen und müssen sich Zeit zum Ausruhen nehmen."
       },
       {
+        "voId": "chr_0023_antal_combat_suppuse_using_01",
         "title": "Taktische Nutzung 1",
         "text": "Initiiere Notfallbehandlung."
       },
       {
+        "voId": "chr_0023_antal_combat_suppuse_getheal_01",
         "title": "Taktische Nutzung 2",
         "text": "Standardbedingungen wiederhergestellt."
       },
       {
+        "voId": "chr_0023_antal_combat_remind_danger_01",
         "title": "Gefahrenwarnung",
         "text": "Feindliche Angriffsaufstellung gesichtet."
       },
       {
+        "voId": "chr_0023_antal_combat_hurt_lowhp_01",
         "title": "Verletzt",
         "text": "Bedingungen suboptimal, aber noch funktionsfähig."
       },
       {
+        "voId": "chr_0023_antal_combat_dead_01",
         "title": "0 LP",
         "text": "Gedankengang unterbrochen. Unterstützung … nicht verfügbar."
       },
       {
+        "voId": "chr_0023_antal_combat_remind_praise_01",
         "title": "Teammotivation 1",
         "text": "Eine hervorragende Leistung."
       },
       {
+        "voId": "chr_0023_antal_combat_remind_praise_02",
         "title": "Teammotivation 2",
         "text": "Wir haben stillschweigende Synergien erzielt."
       },
       {
+        "voId": "chr_0023_antal_combat_remind_praise_echo2_01",
         "title": "Motivationsreaktion 1",
         "text": "Danke, aber ich hätte noch besser sein können."
       },
       {
+        "voId": "chr_0023_antal_combat_remind_praise_echo2_02",
         "title": "Motivationsreaktion 2",
         "text": "Ein klares Ergebnis."
       },
       {
+        "voId": "chr_0023_antal_combat_intobattle_01",
         "title": "Kampf beginnt 1",
         "text": "Tech-Einheit optimal."
       },
       {
+        "voId": "chr_0023_antal_combat_intobattle_echo2_01",
         "title": "Kampf beginnt 2",
         "text": "Konzentriere dich auf den Kampf. Ich gebe Deckungsfeuer."
       },
       {
+        "voId": "chr_0023_antal_combat_outbattle_nor_01",
         "title": "Kampfsieg 1",
         "text": "Neues Wissen erhalten."
       },
       {
+        "voId": "chr_0023_antal_combat_outbattle_nor_02",
         "title": "Kampfsieg 2",
         "text": "Mission abgeschlossen. Das war ein Kinderspielgeburtstag."
       },
       {
+        "voId": "chr_0023_antal_combat_outbattle_nor_echo2_01",
         "title": "Kampfsieg 3",
         "text": "Jeder und jede einzelne war für das Team unverzichtbar."
       },
       {
+        "voId": "chr_0023_antal_combat_outbattle_hard_01",
         "title": "Kampfsieg 4",
         "text": "Unsere Ergebnisse sind trotz der unerwarteten Variablen des Kampfes optimal."
       },
       {
+        "voId": "chr_0023_antal_combat_battle_defeat_01",
         "title": "Niederlage im Kampf",
         "text": "Eine Aufstellung der entstandenen Verluste hat gezeigt, dass die Extraktion für das Team die beste Lösung war."
       },
       {
+        "voId": "chr_0023_antal_mono_attack_last_01",
         "title": "Abschlussangriff 1",
         "text": "Makel entdeckt!"
       },
       {
+        "voId": "chr_0023_antal_mono_attack_last_02",
         "title": "Abschlussangriff 2",
         "text": "Hmpf! Lähmen!"
       },
       {
+        "voId": "chr_0023_antal_mono_skill_nor_01",
         "title": "Kampffertigkeit 1",
         "text": "Richtung festgelegt."
       },
       {
+        "voId": "chr_0023_antal_mono_skill_nor_02",
         "title": "Kampffertigkeit 2",
         "text": "Ziel anvisiert."
       },
       {
+        "voId": "chr_0023_antal_mono_skill_nor_03",
         "title": "Kampffertigkeit 3",
         "text": "Maximale Ausgabe."
       },
       {
+        "voId": "chr_0023_antal_combat_skill_comb_ready_01",
         "title": "Kombofertigkeit bereit 1",
         "text": "Voll aufgeladen."
       },
       {
+        "voId": "chr_0023_antal_combat_skill_comb_ready_02",
         "title": "Kombofertigkeit bereit 2",
         "text": "Einheit sofort einsatzbereit."
       },
       {
+        "voId": "chr_0023_antal_mono_skill_comb_release_01",
         "title": "Kombo wirken 1",
         "text": "Kritischer Stromschlag."
       },
       {
+        "voId": "chr_0023_antal_mono_skill_comb_release_02",
         "title": "Kombo wirken 2",
         "text": "Sieg wird beschleunigt!"
       },
       {
+        "voId": "chr_0023_antal_mono_attack_extra_01",
         "title": "Wuchtschlag 1",
         "text": "Ionen-Explosion."
       },
       {
+        "voId": "chr_0023_antal_mono_attack_extra_02",
         "title": "Wuchtschlag 2",
         "text": "Voltaische Woge."
       },
       {
+        "voId": "chr_0023_antal_mono_skill_ultimate_01",
         "title": "Ultimative Fertigkeit 1",
         "text": "Sieg elektrifiziert."
       },
       {
+        "voId": "chr_0023_antal_mono_skill_ultimate_02",
         "title": "Ultimative Fertigkeit 2",
         "text": "Schaltkreis verstärkt."
       },
       {
+        "voId": "chr_0023_antal_mono_skill_ultimate_03",
         "title": "Ultimative Fertigkeit 3",
         "text": "Zeit zum Verstärken."
       }

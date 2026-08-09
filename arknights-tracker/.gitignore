@@ -24,3 +24,7 @@ vite.config.ts.timestamp-*
 
 # Backups
 src/lib/locales/*.json.bak
+
+# Large media assets
+static/audio
+

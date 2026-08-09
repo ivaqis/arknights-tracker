@@ -123,326 +123,407 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0009_azrila_chrbark_squad_01",
         "title": "Prep Operação 1",
         "text": "Tudo pronto. Esperando seu comando."
       },
       {
+        "voId": "chr_0009_azrila_chrbark_squad_02",
         "title": "Prep Operação 2",
         "text": "Uma nova missão?"
       },
       {
+        "voId": "chr_0009_azrila_chrbark_join_01",
         "title": "Adicionando à equipe 1",
         "text": "Vou liderar o briefing tático."
       },
       {
+        "voId": "chr_0009_azrila_chrbark_join_02",
         "title": "Adicionando à equipe 2",
         "text": "Vamos em frente. A guerra nunca acaba. Só nos resta marchar adiante."
       },
       {
+        "voId": "chr_0009_azrila_chrbark_weap_01",
         "title": "Trocando de arma",
         "text": "Uma bela peça de trabalho de um mestre. Vou usá-lo para o bem."
       },
       {
+        "voId": "chr_0009_azrila_chrbark_gear_01",
         "title": "Trocando de equipamento",
         "text": "Não vejo um equipamento desse calibre há... bastante tempo."
       },
       {
+        "voId": "chr_0009_azrila_chrup_skill_01",
         "title": "Ativação da Matriz de Capacidade",
         "text": "Minha força está se recuperando... mas ainda não é o suficiente."
       },
       {
+        "voId": "chr_0009_azrila_chrup_level_01",
         "title": "Assistindo a Registros de Combate",
         "text": "Excelente trabalho em equipe... Obrigado. Aprendi muito."
       },
       {
+        "voId": "chr_0009_azrila_chrup_promt01_01",
         "title": "Promoção do Operador 1",
         "text": "Sua confiança é bem-vinda. Não vou decepcionar você."
       },
       {
+        "voId": "chr_0009_azrila_chrup_promt02_01",
         "title": "Promoção do Operador 2",
         "text": "Entendido. Agora que tarefas mais críticas foram atribuídas a mim, posso dar minha opinião sobre o plano de combate?"
       },
       {
+        "voId": "chr_0009_azrila_chrup_promt03_01",
         "title": "Promoção do Operador 3",
         "text": "Na Ordem, o comandante nos dava insígnias por momentos como este... Não, não é necessário. Que continue assim, pois o que busco aqui não é honra."
       },
       {
+        "voId": "chr_0009_azrila_chrup_promt04_01",
         "title": "Promoção do Operador 4",
         "text": "Não posso dizer quando esta Cruzada terminará, mas estou cada vez mais ciente de que ela deve ser levada com a maior seriedade... Espero que você me conceda a honra de ir até o fim ao seu lado."
       },
       {
+        "voId": "chr_0009_azrila_introduce_01",
         "title": "Operador se apresentando para o trabalho",
         "text": "Ember, Cavaleira da Ordem do Juramento de Aço, apresentando-se para o serviço. Conforme o pacto, obedecerei às suas ordens até o fim da Cruzada."
       },
       {
+        "voId": "chr_0009_azrila_mono_switch_01",
         "title": "Em espera 1",
         "text": "Minha Cruzada está longe de terminar..."
       },
       {
+        "voId": "chr_0009_azrila_mono_switch_02",
         "title": "Em espera 2",
         "text": "O campo de batalha não é piedoso com erros. Devemos aprimorar nossas habilidades com devoção verdadeira."
       },
       {
+        "voId": "chr_0009_azrila_sim_assign_work_01",
         "title": "Atribuindo a Instalação",
         "text": "Uma missão especial? Entendido... Vou cumpri-la com esforço inabalável."
       },
       {
+        "voId": "chr_0009_azrila_sim_hello_lower_01",
         "title": "Saudação 1",
         "text": "Você tem alguma missão de combate que requer minha presença?"
       },
       {
+        "voId": "chr_0009_azrila_sim_hello_max_01",
         "title": "Saudação 2",
         "text": "Bem-vindo de volta, Endmin. Aonde a próxima batalha nos levará?"
       },
       {
+        "voId": "chr_0009_azrila_sim_talk_lv01_01",
         "title": "Conversa Ociosa da Dijiang 1",
         "text": "A Dijiang é uma nave equipada com diversas comodidades, mas não foi construída para a guerra. Sua falta de prontidão operacional constante é algo com o qual ainda estou me adaptando."
       },
       {
+        "voId": "chr_0009_azrila_sim_talk_lv02_01",
         "title": "Conversa Ociosa da Dijiang 2",
         "text": "Treinamento na Ordem? Hmm... Naquela época, eu conseguia enfrentar sozinha um grupo inteiro de Homoiossaron, então meu comandante enviava esquadrões completos de novos recrutas para lutar comigo."
       },
       {
+        "voId": "chr_0009_azrila_sim_talk_lv02_02",
         "title": "Conversa Ociosa da Dijiang 3",
         "text": "Sob a aurora, encontram-se as linhas de defesa dos Guardiões do Juramento. Quando a batalha começasse, os céus seriam cobertos por enxames de Aggeloi pairando. É claro que nossos porta-aviões e aeronaves de escolta também — espere, por que a cordilheira está correndo para cá... Desculpe, posso ter... identificado errado o local."
       },
       {
+        "voId": "chr_0009_azrila_sim_talk_max_01",
         "title": "Conversa Ociosa da Dijiang 4",
         "text": "Descidas de grandes altitudes em zonas de guerra são comuns na minha unidade. No entanto, aqui em cima, a própria ideia de altitude começa a desaparecer."
       },
       {
+        "voId": "chr_0009_azrila_sim_talk_max_02",
         "title": "Conversa Ociosa da Dijiang 5",
         "text": "Os operadores aqui são excelentes parceiros de treino. Eles valorizam a coordenação no campo de batalha e demonstram grande criatividade no desenvolvimento de estratégias. Aprendi muito com eles. Como Guardiã do Juramento, preciso manter o ritmo e nunca parar de me aprimorar."
       },
       {
+        "voId": "chr_0009_azrila_sim_talk_max_03",
         "title": "Conversa Ociosa da Dijiang 6",
         "text": "O Escritório de Inteligência me concedeu acesso a alguns logs da missão. Muitos deram a vida por aquilo em que acreditavam, mesmo sem nunca terem pisado no campo de batalha. Talvez não se arrependessem, mas me vejo pensando: o que podemos fazer para evitar que tais sacrifícios aconteçam com tanta frequência?"
       },
       {
+        "voId": "chr_0009_azrila_sim_gift_give_01",
         "title": "Oferta de Presentes",
         "text": "Aceite isto, Endmin."
       },
       {
+        "voId": "chr_0009_azrila_sim_gift_recv_01",
         "title": "Aceitando presentes",
         "text": "Obrigada. Considerarei isso um símbolo da sua aprovação."
       },
       {
+        "voId": "chr_0009_azrila_mono_self_line01",
         "title": "Diálogo de Confiança 1",
         "text": "Esta armadura é elaborada de forma complexa e, como Guardiões do Juramento, precisamos aprender as habilidades de engenharia necessárias para mantê-la operacional. Mas, no fim das contas, não é a armadura que mantém você vivo na batalha. É a sua determinação para resistir, sua mente para criar estratégias e sua bravura para agir."
       },
       {
+        "voId": "chr_0009_azrila_mono_self_line02",
         "title": "Diálogo de Confiança 2",
         "text": "Permita-me cobrir os custos do tratamento daquele operador da reserva. Entre os Guardiões do Juramento, muitos estão prontos para sacrificar suas vidas, mas sem um foco claro na vitória, essa determinação só coloca todos em risco. *Suspiro* Eu estava perdida em pensamentos e bati com mais força do que pretendia... Sinto muito mesmo."
       },
       {
+        "voId": "chr_0009_azrila_mono_self_line03",
         "title": "Diálogo de Confiança 3",
         "text": "Há uma tradição entre os Guardiões do Juramento: quando um esquadrão está muito esgotado para continuar, um Guardião do Juramento deve recuar para recrutar novos aliados. Você poderia considerar isso uma forma de Cruzada. Demoramos o necessário para encontrar sucessores dignos e nunca apressamos o processo. No entanto... parece que minha Cruzada já está durando tempo demais."
       },
       {
+        "voId": "chr_0009_azrila_mono_self_line04",
         "title": "Diálogo de Confiança 4",
         "text": "Quando eu entregava lembranças e cinzas de companheiros caídos, conheci seus pais, irmãos e entes queridos. Cheguei a impedir o melhor amigo de um soldado de ir para o norte em busca de vingança. De alguma forma, tornei-me aquela que mais consolava os outros, convencendo-os a não agir impulsivamente. Talvez seja por isso que o comandante insistiu que eu iniciasse a Cruzada sem demora."
       },
       {
+        "voId": "chr_0009_azrila_mono_self_line05",
         "title": "Diálogo de Confiança 5",
         "text": "Esta é Claire e estes são Zhao, Nilla e Lucion. Aquele de olhar aguçado é Fiyanggu, um novato. Nenhum deles bebeu de verdade. Só fingimos brindar porque um jornalista estava de visita. Todos eram soldados extraordinários, e foi por isso que escolheram aquele dia para completar a missão. Se seus sucessores forem tão excepcionais... Acho que não consigo mandá-los para o norte. Por que estou pensando assim, Endmin? O que me falta?"
       },
       {
+        "voId": "chr_0009_azrila_mono_chat_line01",
         "title": "Chat 1",
         "text": "Ember, o codinome, é uma escolha minha. Não pretendo fugir da verdade: ainda não estou pronta para retornar à frente norte. Mas enquanto houver uma chance de queimar, Ember reacenderá as chamas. Endmin, confio que a Endfield me ajudará a encontrar meu caminho."
       },
       {
+        "voId": "chr_0009_azrila_mono_chat_line02",
         "title": "Chat 2",
         "text": "As unidades de segurança padrão podem lidar com Kriossons, mas a situação muda completamente quando Thrylissorons estão presentes. Nos Guardiões do Juramento, esquadrões táticos como os nossos são encarregados de interromper rapidamente as formações inimigas, neutralizar Ankhors e impedir o surgimento de grupos Aggeloi mais perigosos. Essas missões são altamente arriscadas, mas nos orgulhamos de realizá-las."
       },
       {
+        "voId": "chr_0009_azrila_mono_chat_line03",
         "title": "Chat 3",
         "text": "Um esquadrão desgastado deve ser recolhido para a retaguarda para recrutar novos soldados, servindo como um canal especial de recrutamento para os Guardiões do Juramento. Aqueles que vem me desafiar simplesmente desejam se juntar a nós; eles não guardam nenhum ressentimento pessoal contra mim. É claro que a vitória por si só não garante o alistamento. Força e habilidade são essenciais, mas o que realmente importa é o que a luta revela sobre o caráter do desafiante."
       },
       {
+        "voId": "chr_0009_azrila_mono_chat_line04",
         "title": "Chat 4",
         "text": "Curioso sobre a minha Arma do Guardião? Receio tê-la deixado na fortaleza dos Guardiões do Juramento. Eu não luto com armas de longo alcance. Minha arma é mais como uma parte de quem eu sou. Deixá-la lá serve como um lembrete de que um dia retornarei."
       },
       {
+        "voId": "chr_0009_azrila_mono_chat_line05",
         "title": "Chat 5",
         "text": "Quando fui retirada da linha de frente, o comandante não definiu uma data de retorno. Aliás, ouvi falar de outros veteranos que receberam a mesma ordem. Eles foram enviados para a retaguarda para recrutar, mas nunca retornaram à fortaleza. Talvez seja uma maneira respeitosa de dizer que foram discretamente aposentados. Mas não pretendo seguir esse caminho, e é por isso que o comandante me indicou você. Ele acredita que a Endfield pode me ajudar a descobrir o que ainda me falta. Espero sinceramente que ele esteja certo."
       },
       {
+        "voId": "chr_0009_azrila_mono_about_line01",
         "title": "Tópico: Ordem do Juramento de Aço",
         "text": "Durante a Primeira Guerra dos Aggeloi, uma coalizão de forças de elite foi formada para avançar para o Norte. Eles juraram lutar até o fim, iniciando uma longa e extenuante guerra de atrito. Isso marcou a origem dos primeiros Guardiões do Juramento... Na verdade, o comandante me disse uma vez que foi você, Endmin, quem os ajudou a restabelecer a comunicação com a retaguarda. E agora, aqui estou eu, contando essa história para você. Parece quase surreal."
       },
       {
+        "voId": "chr_0009_azrila_mono_about_line02",
         "title": "Tópico: Guerra dos Aggeloi",
         "text": "Táticas e tecnologia podem nos dar uma vantagem contra os Aggeloi, mas quando uma batalha se transforma em guerra, a perda de vidas torna-se inevitável. Quando a Primeira Guerra dos Aggeloi terminou, Ankhor e a atividade Aggeloi haviam diminuído significativamente. No entanto, muitos anos depois, quando eu servia como soldado, os confrontos na frente de batalha já haviam começado a se intensificar... Talvez a verdadeira guerra esteja apenas começando."
       },
       {
+        "voId": "chr_0009_azrila_mono_about_line03",
         "title": "Tópico: Linha de Defesa do Norte",
         "text": "A Linha de Defesa do Norte nunca é uma fronteira fixa. A cada dia, lutamos por cada centímetro de terreno contra os Aggeloi. Quando a luta se torna ferozmente intensa, nossos soldados podem até carregar materiais de construção para a batalha, apressando-se a construir novas fortalezas em pontos estratégicos recém-conquistados. Nunca recuamos da linha de defesa, pois a linha de defesa somos nós."
       },
       {
+        "voId": "chr_0009_azrila_mono_about_line04",
         "title": "Tópico: Artes de Originium",
         "text": "Assim como o fogo comum, minhas Artes de Originium podem incendiar materiais e queimar inimigos. Com controle preciso, podem até ser usadas para desinfetar ferimentos e regular a temperatura corporal. Essas técnicas podem ser úteis em combate, mas não substituem as artes médicas de verdade. É sempre melhor evacuar os feridos e tratá-los adequadamente o mais rápido possível."
       },
       {
+        "voId": "chr_0009_azrila_mono_about_line05",
         "title": "Tópico: Cinturão da Civilização",
         "text": "Mesmo no auge da batalha, o suprimento de Supressor de Oripatia para a linha de frente nunca foi interrompido. Como infectada, entendo perfeitamente a importância dele. É difícil imaginar como as pessoas viviam durante a Era da Terra... Catástrofes induzidas por Originium nunca acontecem aqui, e os infectados não são mais perseguidos em larga escala. Será isso uma prova de que evoluímos muito?"
       },
       {
+        "voId": "chr_0009_azrila_explore_point_common_01",
         "title": "Recurso/Colecionável detectado 1",
         "text": "Recursos úteis localizados. Prepare-se para o salvamento."
       },
       {
+        "voId": "chr_0009_azrila_explore_point_valub_01",
         "title": "Recurso/Colecionável detectado 2",
         "text": "Objeto de alto valor identificado. Solicitando aprovação para operação de recuperação."
       },
       {
+        "voId": "chr_0009_azrila_explore_find_locked_01",
         "title": "Área não explorada detectada",
         "text": "Sinais incomuns detectados à frente. Eles não correspondem aos padrões de Ankhor conhecidos. Vamos investigar?"
       },
       {
+        "voId": "chr_0009_azrila_explore_find_danger_01",
         "title": "Inimigo poderoso descoberto",
         "text": "Hostil altamente ameaçador detectado. Fique alerta."
       },
       {
+        "voId": "chr_0009_azrila_interact_mine_valub_01",
         "title": "Mineração 1",
         "text": "Sempre reabasteça quando puder. Você não quer ficar sem estoque em momentos críticos."
       },
       {
+        "voId": "chr_0009_azrila_interact_mine_valub_echo2_01",
         "title": "Mineração 2",
         "text": "Coletando minerais? Deixe-me ajudar."
       },
       {
+        "voId": "chr_0009_azrila_interact_treasure_valub_01",
         "title": "Abrindo um caixote",
         "text": "Espero que seja útil."
       },
       {
+        "voId": "chr_0009_azrila_interact_etherium_01",
         "title": "Adquirindo Aurileno",
         "text": "Estamos coletando isto? Entendi, vou ficar de olho."
       },
       {
+        "voId": "chr_0009_azrila_interact_blight_break_01",
         "title": "Eliminando a Praga",
         "text": "Agora esses obstáculos imundos não impedem mais nosso avanço."
       },
       {
+        "voId": "chr_0009_azrila_interact_rest_01",
         "title": "Descansar",
         "text": "O descanso acabou. Vamos continuar com a missão."
       },
       {
+        "voId": "chr_0009_azrila_combat_suppuse_using_01",
         "title": "Uso Tático 1",
         "text": "Preparando suporte tático."
       },
       {
+        "voId": "chr_0009_azrila_combat_suppuse_getheal_01",
         "title": "Uso Tático 2",
         "text": "Tudo pronto. De volta à luta."
       },
       {
+        "voId": "chr_0009_azrila_combat_remind_danger_01",
         "title": "Aviso de Perigo",
         "text": "Preparem-se para o impacto!"
       },
       {
+        "voId": "chr_0009_azrila_combat_hurt_lowhp_01",
         "title": "Ferida",
         "text": "Vou aguentar até o fim."
       },
       {
+        "voId": "chr_0009_azrila_combat_dead_01",
         "title": "0 PV",
         "text": "A Cruzada... não pode terminar aqui..."
       },
       {
+        "voId": "chr_0009_azrila_combat_remind_praise_01",
         "title": "Encorajamento da Equipe 1",
         "text": "Um desempenho excepcional."
       },
       {
+        "voId": "chr_0009_azrila_combat_remind_praise_02",
         "title": "Encorajamento da Equipe 2",
         "text": "Manobra de combate exemplar."
       },
       {
+        "voId": "chr_0009_azrila_combat_remind_praise_echo2_01",
         "title": "Resposta a Encorajamento 1",
         "text": "Todos ganharam sua parcela de glória."
       },
       {
+        "voId": "chr_0009_azrila_combat_remind_praise_echo2_02",
         "title": "Resposta a Encorajamento 2",
         "text": "Tudo isso graças ao nosso sólido trabalho em equipe."
       },
       {
+        "voId": "chr_0009_azrila_combat_intobattle_01",
         "title": "Início do Combate 1",
         "text": "Pode vir! Você está lutando comigo!"
       },
       {
+        "voId": "chr_0009_azrila_combat_intobattle_echo2_01",
         "title": "Início do Combate 2",
         "text": "Positivo. Enfrentando o inimigo."
       },
       {
+        "voId": "chr_0009_azrila_combat_outbattle_nor_01",
         "title": "Vitória em Combate 1",
         "text": "Uma vitória bem merecida."
       },
       {
+        "voId": "chr_0009_azrila_combat_outbattle_nor_02",
         "title": "Vitória em Combate 2",
         "text": "Lutamos com coragem e prudência. Excelente trabalho, pessoal."
       },
       {
+        "voId": "chr_0009_azrila_combat_outbattle_nor_echo2_01",
         "title": "Vitória em Combate 3",
         "text": "Juntos fizemos essa vitória acontecer."
       },
       {
+        "voId": "chr_0009_azrila_combat_outbattle_hard_01",
         "title": "Vitória em Combate 4",
         "text": "Meu desempenho não foi muito bom... Mas vou aplicar o que aprendi e aprimorar. Prometo."
       },
       {
+        "voId": "chr_0009_azrila_combat_battle_defeat_01",
         "title": "Derrota em Combate",
         "text": "Cometi os mesmos erros de novo...?"
       },
       {
+        "voId": "chr_0009_azrila_mono_attack_last_01",
         "title": "Golpe Final 1",
         "text": "Tome isto!"
       },
       {
+        "voId": "chr_0009_azrila_mono_attack_last_02",
         "title": "Golpe Final 2",
         "text": "Pare de resistir!"
       },
       {
+        "voId": "chr_0009_azrila_mono_skill_nor_01",
         "title": "Habilidade de Batalha 1",
         "text": "Você não pode me parar!"
       },
       {
+        "voId": "chr_0009_azrila_mono_skill_nor_02",
         "title": "Habilidade de Batalha 2",
         "text": "Derrube-os!"
       },
       {
+        "voId": "chr_0009_azrila_mono_skill_nor_03",
         "title": "Habilidade de Batalha 3",
         "text": "Avançar!"
       },
       {
+        "voId": "chr_0009_azrila_combat_skill_comb_ready_01",
         "title": "Combo de Habilidades Pronto 1",
         "text": "Pronto para apoiar!"
       },
       {
+        "voId": "chr_0009_azrila_combat_skill_comb_ready_02",
         "title": "Combo de Habilidades Pronto 2",
         "text": "Em posição!"
       },
       {
+        "voId": "chr_0009_azrila_mono_skill_comb_release_01",
         "title": "Conjuração de Combo 1",
         "text": "Não no meu turno!"
       },
       {
+        "voId": "chr_0009_azrila_mono_skill_comb_release_02",
         "title": "Conjuração de Combo 2",
         "text": "Enfrente seu fim!"
       },
       {
+        "voId": "chr_0009_azrila_mono_attack_extra_01",
         "title": "Finalizador 1",
         "text": "Quebre agora!"
       },
       {
+        "voId": "chr_0009_azrila_mono_attack_extra_02",
         "title": "Finalizador 2",
         "text": "Patético!"
       },
       {
+        "voId": "chr_0009_azrila_mono_skill_ultimate_01",
         "title": "Habilidade Suprema 1",
         "text": "Fogo do Guardião do Juramento!"
       },
       {
+        "voId": "chr_0009_azrila_mono_skill_ultimate_02",
         "title": "Habilidade Suprema 2",
         "text": "Serei a avatar da Radiância!"
       },
       {
+        "voId": "chr_0009_azrila_mono_skill_ultimate_03",
         "title": "Habilidade Suprema 3",
         "text": "Aqui, a luz queimará por toda a eternidade!"
       }

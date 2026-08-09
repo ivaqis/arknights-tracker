@@ -126,322 +126,402 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0012_avywen_chrbark_squad_01",
         "title": "Preparación de la operación 1",
         "text": "Vaya, vaya, Endmin, parece que el destino te trajo directo a mí."
       },
       {
+        "voId": "chr_0012_avywen_chrbark_squad_02",
         "title": "Preparación de la operación 2",
         "text": "Ah-ah, no parpadees o podría desaparecer frente a tus ojos."
       },
       {
+        "voId": "chr_0012_avywen_chrbark_join_01",
         "title": "Añadir al equipo 1",
         "text": "¿Así que confías lo suficiente en mí como para gastar tanto? Me halagas."
       },
       {
+        "voId": "chr_0012_avywen_chrbark_join_02",
         "title": "Añadir al equipo 2",
         "text": "¿Podrías acercarte un poquito más al frente? No me gusta que haya tanta distancia entre nosotros."
       },
       {
+        "voId": "chr_0012_avywen_chrbark_weap_01",
         "title": "Cambiar de arma",
         "text": "En mi familia decimos que nuestras armas son parte de nosotros. ¡Y la mía además me da un poco de altura extra!"
       },
       {
+        "voId": "chr_0012_avywen_chrbark_gear_01",
         "title": "Cambiar de equipamiento",
         "text": "Un gran viaje no se trata solo del destino: son los zapatos los que te llevan hasta allá. Por eso nunca tengo reparos en gastar en mí cuando se trata de consentirme."
       },
       {
+        "voId": "chr_0012_avywen_chrup_skill_01",
         "title": "Activación de la matriz de habilidades",
         "text": "¡No puedo creer hasta dónde he llegado! Mi hogar y esos días ya se sienten ahora como de otro mundo."
       },
       {
+        "voId": "chr_0012_avywen_chrup_level_01",
         "title": "Viendo los registros de combate",
         "text": "¿Será que otras personas pueden ver estas peleas? Tal vez algunos reconozcan mi lanza. Probablemente sea mejor que no conozcan mi nombre..."
       },
       {
+        "voId": "chr_0012_avywen_chrup_promt01_01",
         "title": "Ascenso de operador 1",
         "text": "No te preocupes. Confía en mí, soy una profesional."
       },
       {
+        "voId": "chr_0012_avywen_chrup_promt02_01",
         "title": "Ascenso de operador 2",
         "text": "¡Ja! ¡Sabía que acabarías contagiándote de esta sensación! Bueno, ¿qué sigue para mí?"
       },
       {
+        "voId": "chr_0012_avywen_chrup_promt03_01",
         "title": "Ascenso de operador 3",
         "text": "Dado que tiene sentido tanto a nivel profesional como personal, no está mal que nos acerquemos un poco más, ¿cierto? ¡Anda, no te sonrojes! ¡Sé perfectamente a lo que te refieres!"
       },
       {
+        "voId": "chr_0012_avywen_chrup_promt04_01",
         "title": "Ascenso de operador 4",
         "text": "Pasé toda mi infancia compitiendo con mis hermanos por el primer lugar, así que estar al frente es lo mío. Pero la cosa es así, Endmin, prométeme que siempre pensarás en mí primero, ¿sí?"
       },
       {
+        "voId": "chr_0012_avywen_introduce_01",
         "title": "Operador reportándose para el deber",
         "text": "Vaya, vaya, miren quién llegó: Endministrator, la leyenda. Escuché algunos rumores mientras venía para acá. ¿Te da curiosidad saber cuál es el más acertado? Como aún no me conoces bien, aquí va una propuesta: ¿qué tal si te cuento un secreto a cambio de que me cuentes algo sobre ti? ¿Qué te parece?"
       },
       {
+        "voId": "chr_0012_avywen_mono_switch_01",
         "title": "En espera 1",
         "text": "¿A dónde vamos?"
       },
       {
+        "voId": "chr_0012_avywen_mono_switch_02",
         "title": "En espera 2",
         "text": "¿Me veo bien desde este ángulo?"
       },
       {
+        "voId": "chr_0012_avywen_sim_assign_work_01",
         "title": "Asignando a una instalación",
         "text": "¡Vámonos, que no hay tiempo que perder!"
       },
       {
+        "voId": "chr_0012_avywen_sim_hello_lower_01",
         "title": "Saludo 1",
         "text": "¡Oye, Endmin! ¿Cómo va todo?"
       },
       {
+        "voId": "chr_0012_avywen_sim_hello_max_01",
         "title": "Saludo 2",
         "text": "¡Endmin, amigo mío! ¡Me alegro de verte! No me estás evitando, ¿verdad?"
       },
       {
+        "voId": "chr_0012_avywen_sim_talk_lv01_01",
         "title": "Charla casual en la Dijiang 1",
         "text": "Ey, Endmin, me da gusto verte otra vez. Y sí, sigues teniendo ese encanto... justo como hace cinco minutos, ¿eh?"
       },
       {
+        "voId": "chr_0012_avywen_sim_talk_lv02_01",
         "title": "Charla casual en la Dijiang 2",
         "text": "Debo decir que has puesto todo tu corazón en la construcción de la Dijiang. Es increíble... flotando aquí arriba por un momento y ya recorrió la distancia que a mí me tomó años viajar."
       },
       {
+        "voId": "chr_0012_avywen_sim_talk_lv02_02",
         "title": "Charla casual en la Dijiang 3",
         "text": "¿Qué tienes en la cara? No, no, del otro lado... ja, ja, solo bromeo contigo. ¡Es raro ver que te agites así!"
       },
       {
+        "voId": "chr_0012_avywen_sim_talk_max_01",
         "title": "Charla casual en la Dijiang 4",
         "text": "¿Sabes? Desde aquí arriba en el Puente, Talos-II se ve como una esfera enorme. Supongo que eso significa que, sin importar a dónde vayamos, siempre volveremos a encontrarnos."
       },
       {
+        "voId": "chr_0012_avywen_sim_talk_max_02",
         "title": "Charla casual en la Dijiang 5",
         "text": "¡Me voy a otra aventura! ¿Necesitas algo? ¡Habla ahora o tendrás que esperar hasta la próxima vez!"
       },
       {
+        "voId": "chr_0012_avywen_sim_talk_max_03",
         "title": "Charla casual en la Dijiang 6",
         "text": "¿Todavía de pie después de la película de terror de anoche? Pff, supongo que tendré que subir la apuesta la próxima vez. No te preocupes, ¡te arrastraré a la próxima también!"
       },
       {
+        "voId": "chr_0012_avywen_sim_gift_give_01",
         "title": "Ofreciendo regalos",
         "text": "Me costó bastante conseguir esto para ti. ¿Te trae algún recuerdo?"
       },
       {
+        "voId": "chr_0012_avywen_sim_gift_recv_01",
         "title": "Aceptando regalos",
         "text": "Una chica guapa como yo ha recibido muchos regalos, pero este que me diste tú es... especial."
       },
       {
+        "voId": "chr_0012_avywen_mono_self_line01",
         "title": "Diálogo de confianza 1",
         "text": "A veces, la gente puede ser muy complicada. En ese entonces, no tenía que pensar mucho. Mi trabajo era llevar cosas del punto A al punto B. Pero cuando irrumpí en ese circo, las cosas se pusieron... *suspiro* Te contaré toda la historia en otra ocasión, ¿sí?"
       },
       {
+        "voId": "chr_0012_avywen_mono_self_line02",
         "title": "Diálogo de confianza 2",
         "text": "En mi trabajo anterior, ¡mi sueldo era prácticamente una fortuna comparado con lo que gano ahora! *Risa* En mi familia, nunca aceptamos menos de lo justo. Estoy segura de que sabes perfectamente qué compensó esa diferencia. Solo que... la timidez no te deja admitirlo."
       },
       {
+        "voId": "chr_0012_avywen_mono_self_line03",
         "title": "Diálogo de confianza 3",
         "text": "Viajé desde la Franja, soporté el frío de la frontera, pasé noches blancas en las cabañas del Circuito Hannabit, vi la nave del Seš'qamam flotar por el cielo y escuché la lluvia interminable junto a la fortaleza de los Guardianes del Juramento. Y en todo ese trayecto, Endmin, tu nombre resonaba."
       },
       {
+        "voId": "chr_0012_avywen_mono_self_line04",
         "title": "Diálogo de confianza 4",
         "text": "Solo llámame Lamp. Avywenna en realidad es mi apellido. Ey, para mí no es un chiste, así que no te rías. Guarda este secreto entre nosotros, ¿sí? No quiero que alguien malo venga tras de ti. A menos que... ¿Oh? ¿Te ofreces a cuidarme?"
       },
       {
+        "voId": "chr_0012_avywen_mono_self_line05",
         "title": "Diálogo de confianza 5",
         "text": "Endmin, Talos-II es enorme. ¿Cuántos lugares has visitado realmente? Ah, claro... ¿y cuántos de ellos aún recuerdas? No puedo esperar a que los recuerdes todos. Cuantos más recuerdos compartamos, mejor, ¿no crees?"
       },
       {
+        "voId": "chr_0012_avywen_mono_chat_line01",
         "title": "Charla 1",
         "text": "Mi familia son Banders, y ser Mensajeros ha sido nuestra vocación por generaciones. Y tú, Endmin, ¿cómo es tu familia?"
       },
       {
+        "voId": "chr_0012_avywen_mono_chat_line02",
         "title": "Charla 2",
         "text": "¡Voilà! Este es mi rinconcito. No es que vuelva mucho por aquí, pero me gusta mantenerlo delicado y acogedor. Una trotamundos como yo necesita un lugar donde descansar, ¿no?"
       },
       {
+        "voId": "chr_0012_avywen_mono_chat_line03",
         "title": "Charla 3",
         "text": "Los Mensajeros armados tienen que entregar montones de secretos con total seguridad, y cada uno tiene un precio bien alto. Pero hay algo aún más caro que la entrega en sí, y eso es... mi silencio sobre estos asuntos."
       },
       {
+        "voId": "chr_0012_avywen_mono_chat_line04",
         "title": "Charla 4",
         "text": "A nadie le gusta el rechazo... así que si podemos resolver las cosas, prefiero eso a tener que usar la fuerza. Pero para que quede claro, no me gusta que me rechacen."
       },
       {
+        "voId": "chr_0012_avywen_mono_chat_line05",
         "title": "Charla 5",
         "text": "¿Recuerdas al viejo Laine, verdad? Ese gruñón jamás me sonrió. Pero escuché que era un empleado retirado muy respetado, y cuando se fue, todos lloraban a mares. Mmm, hasta me llamó “alborotadora” antes de mandarme para acá. Bueno, si soy un problema, ¡al menos estoy preparada para enfrentar problemas!"
       },
       {
+        "voId": "chr_0012_avywen_mono_about_line01",
         "title": "Tema: Endfield",
         "text": "Endfield es ahora el lugar donde más tiempo he estado, aparte de Alloycarrot, donde crecí. Supongo que ya me estoy acostumbrando a eso de quedarme en un solo sitio."
       },
       {
+        "voId": "chr_0012_avywen_mono_about_line02",
         "title": "Tema: El negocio familiar",
         "text": "Mis antepasados conducían camiones cuando la Puerta cósmica aún estaba abierta. Los gigantescos camiones formaban una brillante estela de metal que se deslizaba por el horizonte. Después de eso, mi bisabuela, mi abuela y mi mamá trabajaron duro para la compañía Seguridad Sloan en la Franja. Esas viejas muchachas me dieron un montón de problemas cuando decidí renunciar... Ejem. Para que lo sepas, no... entré sin más en tu bonito y pequeño hogar, Endmin."
       },
       {
+        "voId": "chr_0012_avywen_mono_about_line03",
         "title": "Tema: Moda",
         "text": "¿Mi ropa? ¡Todo se trata de estilo y practicidad! Recuerda esto si estás en el campo: mantén tu equipo en buen estado y mantén la cabeza fría."
       },
       {
+        "voId": "chr_0012_avywen_mono_about_line04",
         "title": "Tema: Alloycarrot",
         "text": "¡Caray, no puedo creer que nunca hayas visitado Alloycarrot! Bueno, no es por presumir, pero he estado en muchos lugares de Talos-II, y nada se compara con el encanto de nuestros túneles mineros. Los niños crecen rodeados de amiguitos y juegan mucho. ¡Siempre decimos que lo único más poderoso que un gran taladro es nuestra amistad!"
       },
       {
+        "voId": "chr_0012_avywen_explore_point_common_01",
         "title": "Recurso/Coleccionable detectado 1",
         "text": "Mi dispositivo está sonando. Tal vez haya algo bueno cerca."
       },
       {
+        "voId": "chr_0012_avywen_explore_point_valub_01",
         "title": "Recurso/Coleccionable detectado 2",
         "text": "¡Sígueme! ¡Dejé una marca del tesoro aquí la última vez que estuve por estos rumbos!"
       },
       {
+        "voId": "chr_0012_avywen_explore_find_locked_01",
         "title": "Zona inexplorada detectada",
         "text": "¡Ay, no puedo creer que haya lugares que no he visitado aún!"
       },
       {
+        "voId": "chr_0012_avywen_explore_find_danger_01",
         "title": "Enemigo poderoso descubierto",
         "text": "Parece que ese tipo cerró toda posibilidad de negociar."
       },
       {
+        "voId": "chr_0012_avywen_interact_mine_valub_01",
         "title": "Minería 1",
         "text": "¡Se testigo de las habilidades que heredé de mis ancestros de Rim Billiton!"
       },
       {
+        "voId": "chr_0012_avywen_interact_mine_valub_echo2_01",
         "title": "Minería 2",
         "text": "¡Los Rim Billies siempre se cuidan unos a otros!"
       },
       {
+        "voId": "chr_0012_avywen_interact_treasure_valub_01",
         "title": "Abriendo una caja",
         "text": "¡Shhhh! Normalmente enterramos estos buenos hallazgos antes de que alguien más los vea..."
       },
       {
+        "voId": "chr_0012_avywen_interact_etherium_01",
         "title": "Adquiriendo Aurileno",
         "text": "¡¿Aurileno?! ¿Cómo supiste que me encantan las cosas brillantes?"
       },
       {
+        "voId": "chr_0012_avywen_interact_blight_break_01",
         "title": "Eliminar la Plaga",
         "text": "La verdad, lo veo como una forma de protegerme de cierta gente."
       },
       {
+        "voId": "chr_0012_avywen_interact_rest_01",
         "title": "Descanso",
         "text": "Ay, esta sensación cálida y acogedora es perfecta. Después de andar toda empapada y sucia, encontrar un lugar limpio y calentito como este es un regalito del cielo."
       },
       {
+        "voId": "chr_0012_avywen_combat_suppuse_using_01",
         "title": "Uso táctico 1",
         "text": "Qué bueno que empaqué esto."
       },
       {
+        "voId": "chr_0012_avywen_combat_suppuse_getheal_01",
         "title": "Uso táctico 2",
         "text": "A veces me tengo que consentir."
       },
       {
+        "voId": "chr_0012_avywen_combat_remind_danger_01",
         "title": "Advertencia de peligro",
         "text": "¡Busca un lugar seguro!"
       },
       {
+        "voId": "chr_0012_avywen_combat_hurt_lowhp_01",
         "title": "Herida",
         "text": "No te preocupes, estoy bien."
       },
       {
+        "voId": "chr_0012_avywen_combat_dead_01",
         "title": "0 PV",
         "text": "Déjame mirar hacia mi hogar... una última vez."
       },
       {
+        "voId": "chr_0012_avywen_combat_remind_praise_01",
         "title": "Ánimo del equipo 1",
         "text": "¡Bien hecho! ¿Alguna vez pensaste en tomar mi trabajo?"
       },
       {
+        "voId": "chr_0012_avywen_combat_remind_praise_02",
         "title": "Ánimo del equipo 2",
         "text": "¡Míranos, trabajando juntos como una verdadera familia!"
       },
       {
+        "voId": "chr_0012_avywen_combat_remind_praise_echo2_01",
         "title": "Respuesta al ánimo 1",
         "text": "Sip, así de genial soy."
       },
       {
+        "voId": "chr_0012_avywen_combat_remind_praise_echo2_02",
         "title": "Respuesta al ánimo 2",
         "text": "Esto me hace sentir como en casa."
       },
       {
+        "voId": "chr_0012_avywen_combat_intobattle_01",
         "title": "Comienza el combate 1",
         "text": "El primer paso siempre es el más difícil."
       },
       {
+        "voId": "chr_0012_avywen_combat_intobattle_echo2_01",
         "title": "Comienza el combate 2",
         "text": "¡Vamos a mostrarles de qué estamos hechos!"
       },
       {
+        "voId": "chr_0012_avywen_combat_outbattle_nor_01",
         "title": "Victoria en el combate 1",
         "text": "Hablar es fácil, colega. Hay que esforzarse al máximo."
       },
       {
+        "voId": "chr_0012_avywen_combat_outbattle_nor_02",
         "title": "Victoria en el combate 2",
         "text": "No pasa nada, todo esto es parte de nuestro trabajo."
       },
       {
+        "voId": "chr_0012_avywen_combat_outbattle_nor_echo2_01",
         "title": "Victoria en el combate 3",
         "text": "¡Así se habla, mantén ese espíritu!"
       },
       {
+        "voId": "chr_0012_avywen_combat_outbattle_hard_01",
         "title": "Victoria en el combate 4",
         "text": "Hay un viejo dicho entre los mensajeros: para seguir el camino correcto, no te fijes en dónde pisas... Mantén la vista en el horizonte."
       },
       {
+        "voId": "chr_0012_avywen_combat_battle_defeat_01",
         "title": "Derrota en el combate",
         "text": "Guardemos este pago para cuando tomemos venganza."
       },
       {
+        "voId": "chr_0012_avywen_mono_attack_last_01",
         "title": "Golpe final 1",
         "text": "¡No parpadees!"
       },
       {
+        "voId": "chr_0012_avywen_mono_attack_last_02",
         "title": "Golpe final 2",
         "text": "¡Aquí viene!"
       },
       {
+        "voId": "chr_0012_avywen_mono_skill_nor_01",
         "title": "Habilidad de batalla 1",
         "text": "¡Alerta de ataque!"
       },
       {
+        "voId": "chr_0012_avywen_mono_skill_nor_02",
         "title": "Habilidad de batalla 2",
         "text": "Abran paso."
       },
       {
+        "voId": "chr_0012_avywen_mono_skill_nor_03",
         "title": "Habilidad de batalla 3",
         "text": "¿A dónde te escapas?"
       },
       {
+        "voId": "chr_0012_avywen_combat_skill_comb_ready_01",
         "title": "Habilidad de combo preparada 1",
         "text": "¡No te olvides de mí!"
       },
       {
+        "voId": "chr_0012_avywen_combat_skill_comb_ready_02",
         "title": "Habilidad de combo preparada 2",
         "text": "¡De verdad me hiciste esperar!"
       },
       {
+        "voId": "chr_0012_avywen_mono_skill_comb_release_01",
         "title": "Lanzando combo 1",
         "text": "¡Improvisa!"
       },
       {
+        "voId": "chr_0012_avywen_mono_skill_comb_release_02",
         "title": "Lanzando combo 2",
         "text": "Con la mirada en el objetivo."
       },
       {
+        "voId": "chr_0012_avywen_mono_attack_extra_01",
         "title": "Remate 1",
         "text": "¡Punto débil a la vista!"
       },
       {
+        "voId": "chr_0012_avywen_mono_attack_extra_02",
         "title": "Remate 2",
         "text": "Te atrapé."
       },
       {
+        "voId": "chr_0012_avywen_mono_skill_ultimate_01",
         "title": "Habilidad máxima 1",
         "text": "No soy del tipo amable."
       },
       {
+        "voId": "chr_0012_avywen_mono_skill_ultimate_02",
         "title": "Habilidad máxima 2",
         "text": "¡Se viene una mala noticia!"
       },
       {
+        "voId": "chr_0012_avywen_mono_skill_ultimate_03",
         "title": "Habilidad máxima 3",
         "text": "¡Tiembla ante mi ataque!"
       }

@@ -132,330 +132,412 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0028_wulfa_chrbark_squad_01",
         "title": "Prep Operação 1",
         "text": "Esta é a minha chance de mostrar a Endmin do que sou capaz!"
       },
       {
+        "voId": "chr_0028_wulfa_chrbark_squad_02",
         "title": "Prep Operação 2",
         "text": "Não vou decepcionar ninguém!"
       },
       {
+        "voId": "chr_0028_wulfa_chrbark_join_01",
         "title": "Adicionando à equipe 1",
         "text": "Rossi da Matilha. E-Endmin... Qual é a nossa missão?"
       },
       {
+        "voId": "chr_0028_wulfa_chrbark_join_02",
         "title": "Adicionando à equipe 2",
         "text": "Farei o meu melhor, Endmin!"
       },
       {
+        "voId": "chr_0028_wulfa_chrbark_weap_01",
         "title": "Trocando de arma",
         "text": "Ah! Essa arma é incrível! Nunca vi nada parecido no clã!"
       },
       {
+        "voId": "chr_0028_wulfa_chrbark_gear_01",
         "title": "Trocando de equipamento",
         "text": "É um pouco difícil se mover aqui... Oh? Você escolheu isso para mim, Endmin? Então eu aceito! Humm... Deve haver algum significado mais profundo por trás disso..."
       },
       {
+        "voId": "chr_0028_wulfa_chrup_skill_01",
         "title": "Ativação da Matriz de Capacidade",
         "text": "Sou descendente da Matilha!"
       },
       {
+        "voId": "chr_0028_wulfa_chrup_level_01",
         "title": "Assistindo a Registros de Combate",
         "text": "Então é assim que guerreiros experientes lutam... Hum... assim... e depois daquele jeito... Ok, acho que entendi agora!"
       },
       {
+        "voId": "chr_0028_wulfa_chrup_promt01_01",
         "title": "Promoção do Operador 1",
         "text": "Pro...moção? Ah, entendi! Temos cerimônias semelhantes no clã, embora eu nunca tenha participado de uma. Sabe de uma coisa? Isso não é... tão ruim assim."
       },
       {
+        "voId": "chr_0028_wulfa_chrup_promt02_01",
         "title": "Promoção do Operador 2",
         "text": "Hehe, estou indo muito bem, né? Preciso ser boa assim para assumir as responsabilidades do clã. Afinal, vou tornar a Matilha famosa em todo Talos-II!"
       },
       {
+        "voId": "chr_0028_wulfa_chrup_promt03_01",
         "title": "Promoção do Operador 3",
         "text": "Promoções são moleza para alguém como eu! Quando será a próxima? Estou totalmente pronto! Preciso esperar a oportunidade certa? Bom... então tá."
       },
       {
+        "voId": "chr_0028_wulfa_chrup_promt04_01",
         "title": "Promoção do Operador 4",
         "text": "Isso não prova que agora sou a melhor operadora? Será que Catello teve tanta facilidade assim? Da próxima vez que eu o vir, vou esfregar isso na cara dele!"
       },
       {
+        "voId": "chr_0028_wulfa_introduce_01",
         "title": "Operador se apresentando para o trabalho",
         "text": "Sou Rossina, nome concedido Wulfperl, o que significa o tesouro da Matilha! É melhor você se lembrar disso! Ah... Endmin, pode me chamar do que preferir..."
       },
       {
+        "voId": "chr_0028_wulfa_mono_switch_01",
         "title": "Em espera 1",
         "text": "A hora do derramamento de sangue está chegando. É hora de caçar. Quero dizer... é hora de comer."
       },
       {
+        "voId": "chr_0028_wulfa_mono_switch_02",
         "title": "Em espera 2",
         "text": "Presas, cuidado! Eu sou as garras da Matilha! ... Espere, isso não soa bem? Enfim... Awoo!"
       },
       {
+        "voId": "chr_0028_wulfa_sim_assign_work_01",
         "title": "Atribuindo a Instalação",
         "text": "Moleza para alguém da elite como eu!"
       },
       {
+        "voId": "chr_0028_wulfa_sim_hello_lower_01",
         "title": "Saudação 1",
         "text": "E-Endmin! Você tem alguma missão para mim hoje?"
       },
       {
+        "voId": "chr_0028_wulfa_sim_hello_max_01",
         "title": "Saudação 2",
         "text": "Endmin, você poderia compartilhar um pouco da sua experiência de liderança comigo?"
       },
       {
+        "voId": "chr_0028_wulfa_sim_talk_lv01_01",
         "title": "Conversa Ociosa da Dijiang 1",
         "text": "Como a Endfield consegue gerenciar tantos operadores? Algo relacionado a... sistemas? E algum tipo de... controle central? Não consigo entender... mas definitivamente vale a pena aprender."
       },
       {
+        "voId": "chr_0028_wulfa_sim_talk_lv02_01",
         "title": "Conversa Ociosa da Dijiang 2",
         "text": "Os lobos mais velhos do clã me disseram para visitar a Dijiang com mais frequência. Disseram que eu poderia aprender sobre liderança aqui, especialmente ao seu lado. Mas é tão difícil conseguir falar com você!"
       },
       {
+        "voId": "chr_0028_wulfa_sim_talk_lv02_02",
         "title": "Conversa Ociosa da Dijiang 3",
         "text": "Os irmãos e irmãs mais velhos da Dijiang sempre me tratam como uma criança! Mas eu já sou da elite da Matilha. Da próxima vez, vou deixar bem claro para eles que isso tem que parar! Mas os petiscos que eles me dão são realmente muito bons..."
       },
       {
+        "voId": "chr_0028_wulfa_sim_talk_max_01",
         "title": "Conversa Ociosa da Dijiang 4",
         "text": "Os assuntos do clã vêm em primeiro lugar! Mas se algo urgente acontecer na Endfield, com certeza irei correndo para lá. É que... não tenho certeza se você realmente precisa da minha ajuda... Você é tão capaz, provavelmente conseguiria lidar com crises facilmente, mesmo sem mim. Mas ainda quero ajudar... O que devo fazer...?"
       },
       {
+        "voId": "chr_0028_wulfa_sim_talk_max_02",
         "title": "Conversa Ociosa da Dijiang 5",
         "text": "Ouvi dizer que Catello poderia ser encontrado em Dijiang, mas por que ele é tão esquivo aqui também? Humm... acho que velhos hábitos são difíceis de mudar. Se eu não o encontrar logo, Nonno Rozzan ficará furioso. Eu realmente não quero vê-lo zangado... Endmin, você sabe onde posso encontrar Catello?"
       },
       {
+        "voId": "chr_0028_wulfa_sim_talk_max_03",
         "title": "Conversa Ociosa da Dijiang 6",
         "text": "Por que não consigo encontrar nenhum registro seu na Dijiang? Finalmente aprendi a usar esse tal de Arquivo de Informações, mas só encontro resultados inúteis ou mensagens de \"Sem Autoridade\"... Ugh... Endmin, você teria um tempinho para me contar sobre seus feitos heroicos?"
       },
       {
+        "voId": "chr_0028_wulfa_sim_gift_give_01",
         "title": "Oferta de presentes",
         "text": "Endmin, estes são os espólios que coletei! São todos seus! Não se preocupe, conseguirei ainda mais!"
       },
       {
+        "voId": "chr_0028_wulfa_sim_gift_recv_01",
         "title": "Aceitando presentes",
         "text": "Isso é... para mim? Posso mesmo ficar com ele? Obrigada! Vou fazer tudo para entender o significado do seu presente!"
       },
       {
+        "voId": "chr_0028_wulfa_mono_self_line01",
         "title": "Diálogo de Confiança 1",
         "text": "Isso? Bem... estou apenas anotando suas palavras e ações, Endmin. Acho que até os detalhes são importantes para aprendermos algo. Ah... por favor, não olhe! São anotações pessoais!"
       },
       {
+        "voId": "chr_0028_wulfa_mono_self_line02",
         "title": "Diálogo de Confiança 2",
         "text": "Já ouvi tantas lendas sobre você. Sempre me perguntei que tipo de pessoa você seria! Mas agora que finalmente te conheci, sinto que você é ainda mais admirável do que as histórias dizem. O quê exatamente? Bem... seus métodos, sua liderança... nem sei como expressar em palavras..."
       },
       {
+        "voId": "chr_0028_wulfa_mono_self_line03",
         "title": "Diálogo de Confiança 3",
         "text": "Os filhos da Matilha participam da cerimônia de maioridade aos treze anos. O clã se reúne para escolher um nome para o novo \"lobo\". O nome de Catello é \"Wulfgard\" e o meu é \"Wulfperl\". Eu adoro o nome que o clã me deu. Toda vez que o pronuncio, sinto o sangue da Matilha correndo em minhas veias... O que você acha, Endmin?"
       },
       {
+        "voId": "chr_0028_wulfa_mono_self_line04",
         "title": "Diálogo de Confiança 4",
         "text": "Endmin, tenho me saído muito bem nas missões ultimamente, não é? Então... será que eu poderia pedir uma pequena recompensa? Ah... nada muito extravagante, só conversar mais comigo já seria o suficiente! Pode ser?"
       },
       {
+        "voId": "chr_0028_wulfa_mono_self_line05",
         "title": "Diálogo de Confiança 5",
         "text": "Eu sei que ainda não sou habilidoso o suficiente para liderar a Matilha, mas os anciãos insistem que eu cuide dos assuntos do clã... Então, quero aprender mais ao seu lado, Endmin. Quero aprender a me tornar alguém confiável como você, Perlica e M3... Vou fazer com que todos me vejam com outros olhos!"
       },
       {
+        "voId": "chr_0028_wulfa_mono_chat_line01",
         "title": "Chat 1",
         "text": "Meus irmãos e irmãs da Endfield me ensinaram muito! Perlica me explicou como os SincProts funcionam, Avywenna me levou às lojas de roupas e joias da CGCT, e... e Xaihi disse que quer discutir complexidade de tempo quadrática comigo... Eu nem sei o que isso significa."
       },
       {
+        "voId": "chr_0028_wulfa_mono_chat_line02",
         "title": "Chat 2",
         "text": "Meus irmãos e irmãs mais velhos aqui cuidam muito bem de mim. Eles até me dão presentes. Mas eu passei nos testes da Matilha! Sou uma loba de verdade! Uma loba madura não deve gostar de coisas de criança. Ela deve preferir adagas e moedas! Então, eu juntei um monte delas. Quando eu crescer um pouco mais, todos finalmente poderão confiar em mim para as missões mais perigosas!"
       },
       {
+        "voId": "chr_0028_wulfa_mono_chat_line03",
         "title": "Chat 3",
         "text": "Eu sempre achei que o Nonno Rozzan fosse a pessoa mais forte do mundo, mas ele ficava dizendo \"sempre existe alguém maior\" e mencionava você o tempo todo, Endmin. Depois, ouvi várias histórias lendárias sobre você em outros lugares. E eu pensei: \"Nossa, será que existe alguém como você por aí?!\" Sempre quis ver como você é de verdade. Desde que soube que você acordou, venho planejando te surpreender um dia... hehe."
       },
       {
+        "voId": "chr_0028_wulfa_mono_chat_line04",
         "title": "Chat 4",
         "text": "Minha primeira adaga foi uma recompensa depois de uma caçada de emergência! A caixa em que veio era toda brilhante e dourada, e eu a guardei com carinho desde então. Esta também é a minha favorita. Sempre a carrego comigo, embora não seja muito afiada. Mas serve para cortar frutas. Se você quiser, Endmin... bem... eu te dou assim que eu trouxer a caixa também!"
       },
       {
+        "voId": "chr_0028_wulfa_mono_chat_line05",
         "title": "Chat 5",
         "text": "Sobre minha infância... A Matilha sempre estava envolvida em conflitos com os Quebra-Ossos. Foi meu irmão que me levou para procurar ajuda médica, e os membros do clã também... Oh! Ah... Eu não deveria estar falando sobre isso na sua frente! Esqueça, Endmin. Vamos falar sobre você! Ouvi dizer que..."
       },
       {
+        "voId": "chr_0028_wulfa_mono_about_line01",
         "title": "Tópico: Endministrator",
         "text": "\"Originium abrirá um caminho para nós.\" Ah... Eu só estava praticando... Oh, não, não... Você vai me odiar por isso? Eu sei que aprender com você não é apenas copiar... Eu só achei... que soava muito legal..."
       },
       {
+        "voId": "chr_0028_wulfa_mono_about_line02",
         "title": "Tópico: Nome do código",
         "text": "Como membro da Matilha, eu poderia usar meu nome concedido como codinome, assim como meu irmão faz, mas... ninguém de fora do clã ainda me chama assim, então seria um pouco constrangedor. E \"Rossina\" soa infantil demais... de jeito nenhum vou usar isso! Acabei escolhendo \"Rossi\" como codinome, por causa da cor vermelha da minha capa."
       },
       {
+        "voId": "chr_0028_wulfa_mono_about_line03",
         "title": "Tópico: O Clã Quebra-Ossos",
         "text": "Não deixarei nenhum daqueles brutamontes Quebra-Ossos escapar! Esta é uma rixa sangrenta entre a Matilha e os Quebra-Ossos. Muitos lobos, muitos membros da família, morreram pelas mãos deles só para me salvar. Esta é a vingança da Matilha, e a minha também. Somos o clã que guarda rancor por mais tempo neste mundo, e um dia, acertaremos as contas!"
       },
       {
+        "voId": "chr_0028_wulfa_mono_about_line04",
         "title": "Tópico: Capa",
         "text": "Está manchado com o sangue dos meus parentes... mas, para mim, toda vez que o toco, sinto uma incrível sensação de paz, como se eles nunca tivessem realmente partido. Este manto queima, lembrando-me de nunca esquecer a vingança, mas também me dá coragem e o calor da família... Sim, eles estão sempre comigo."
       },
       {
+        "voId": "chr_0028_wulfa_mono_about_line05",
         "title": "Tópico: Colecionáveis",
         "text": "Eu costumava guardar todas as adagas e moedas que colecionava em um baú especial, mas o perdi durante a mudança… Pior ainda, tinha algumas coisas bem constrangedoras dentro — artesanatos que eu fazia quando criança. Levei uma eternidade para encontrar o baú de novo. Agora posso guardar tudo em segurança na Dijiang! Melhor ainda, posso usar o armazenamento como desculpa para passar um tempo com os irmãos e irmãs mais velhos daqui. Não... quer dizer, para estudar aqui!"
       },
       {
+        "voId": "chr_0028_wulfa_mono_about_line06",
         "title": "Tópico: Aglomerado da Área Selvagem",
         "text": "Tudo o que as pessoas fazem nas terras selvagens é apenas para sobreviver. Às vezes, eu via crianças da minha idade fazendo coisas terríveis só para não perecer... Às vezes, até mesmo os Invasores de Terras corriam riscos desesperados simplesmente para se manter vivos. Acho que todos deveriam poder viver de acordo com suas próprias escolhas. Endmin, será que Endfield pode mudar tudo isso, para que essas crianças possam perseguir seus sonhos como eu?"
       },
       {
+        "voId": "chr_0028_wulfa_explore_point_common_01",
         "title": "Recurso/Colecionável detectado 1",
         "text": "Acreditem em mim, tem algo bom ali!"
       },
       {
+        "voId": "chr_0028_wulfa_explore_point_valub_01",
         "title": "Recurso/Colecionável detectado 2",
         "text": "A Matilha nunca ignora nenhum recurso na natureza. Fique de olho naquela área!"
       },
       {
+        "voId": "chr_0028_wulfa_explore_find_locked_01",
         "title": "Área não explorada detectada",
         "text": "Tem um cheiro estranho ali. Vamos dar uma olhada!"
       },
       {
+        "voId": "chr_0028_wulfa_explore_find_danger_01",
         "title": "Inimigo poderoso descoberto",
         "text": "Cheira a perigo. Devemos intervir?"
       },
       {
+        "voId": "chr_0028_wulfa_interact_mine_valub_01",
         "title": "Mineração 1",
         "text": "Você poderia me ceder algumas dessas pedras? Quero incrustá-las na minha adaga."
       },
       {
+        "voId": "chr_0028_wulfa_interact_mine_valub_echo2_01",
         "title": "Mineração 2",
         "text": "Vamos fazer isso juntos. Terminaremos este trabalho rapidinho!"
       },
       {
+        "voId": "chr_0028_wulfa_interact_treasure_valub_01",
         "title": "Abrindo um caixote",
         "text": "Hum... Estava pensando que, se não abrir, talvez eu possa tentar mordê-la."
       },
       {
+        "voId": "chr_0028_wulfa_interact_etherium_01",
         "title": "Adquirindo Aurileno",
         "text": "Por que algumas Aurileno flutuam enquanto outras permanecem imóveis? Fantástico."
       },
       {
+        "voId": "chr_0028_wulfa_interact_blight_break_01",
         "title": "Eliminando a Praga",
         "text": "Pronto! Adeus àquela maldita Praga!"
       },
       {
+        "voId": "chr_0028_wulfa_interact_rest_01",
         "title": "Descansar",
         "text": "Coma bem, durma bem, descanse bem. Essa é a sabedoria da Matilha!"
       },
       {
+        "voId": "chr_0028_wulfa_combat_suppuse_using_01",
         "title": "Uso Tático 1",
         "text": "Rápido, use isso para se recuperar!"
       },
       {
+        "voId": "chr_0028_wulfa_combat_suppuse_getheal_01",
         "title": "Uso Tático 2",
         "text": "Estou me sentindo bem melhor!"
       },
       {
+        "voId": "chr_0028_wulfa_combat_remind_danger_01",
         "title": "Aviso de Perigo",
         "text": "Cuidado! Algo está vindo!"
       },
       {
+        "voId": "chr_0028_wulfa_combat_hurt_lowhp_01",
         "title": "Ferido",
         "text": "Não tenho tempo... para lamber minhas feridas agora..."
       },
       {
+        "voId": "chr_0028_wulfa_combat_dead_01",
         "title": "0 PV",
         "text": "A Matilha... não vai deixar isso passar..."
       },
       {
+        "voId": "chr_0028_wulfa_combat_remind_praise_01",
         "title": "Encorajamento da Equipe 1",
         "text": "Bom golpe!"
       },
       {
+        "voId": "chr_0028_wulfa_combat_remind_praise_02",
         "title": "Encorajamento da Equipe 2",
         "text": "Uau! Trabalho em equipe perfeito!"
       },
       {
+        "voId": "chr_0028_wulfa_combat_remind_praise_echo2_01",
         "title": "Resposta a Encorajamento 1",
         "text": "Hehehe, tenho truques melhores na manga!"
       },
       {
+        "voId": "chr_0028_wulfa_combat_remind_praise_echo2_02",
         "title": "Resposta a Encorajamento 2",
         "text": "É essa a luta que queremos!"
       },
       {
+        "voId": "chr_0028_wulfa_combat_intobattle_01",
         "title": "Início do Combate 1",
         "text": "O sangue da Matilha está fervendo!"
       },
       {
+        "voId": "chr_0028_wulfa_combat_intobattle_echo2_01",
         "title": "Início do Combate 2",
         "text": "Eu não gostaria de perder essa caçada!"
       },
       {
+        "voId": "chr_0028_wulfa_combat_outbattle_nor_01",
         "title": "Vitória em Combate 1",
         "text": "O nome da Matilha ecoará por toda a terra!"
       },
       {
+        "voId": "chr_0028_wulfa_combat_outbattle_nor_02",
         "title": "Vitória em Combate 2",
         "text": "Aprendeu a lição? É isso que acontece quando se mexe com a Matilha!"
       },
       {
+        "voId": "chr_0028_wulfa_combat_outbattle_nor_echo2_01",
         "title": "Vitória em Combate 3",
         "text": "Heh-heh-heh. Comigo por perto, a vitória é garantida!"
       },
       {
+        "voId": "chr_0028_wulfa_combat_outbattle_hard_01",
         "title": "Vitória em Combate 4",
         "text": "Eles mordem muito fundo, mas a Matilha não tem medo de mais cicatrizes!"
       },
       {
+        "voId": "chr_0028_wulfa_combat_battle_defeat_01",
         "title": "Derrota em Combate",
         "text": "Este pequeno contratempo não significa nada... Eu, Rossina, não vou desistir!"
       },
       {
+        "voId": "chr_0028_wulfa_mono_attack_last_01",
         "title": "Golpe Final 1",
         "text": "Acabe com ele!"
       },
       {
+        "voId": "chr_0028_wulfa_mono_attack_last_02",
         "title": "Golpe Final 2",
         "text": "Tremam!"
       },
       {
+        "voId": "chr_0028_wulfa_mono_skill_nor_01",
         "title": "Habilidade de Batalha 1",
         "text": "Destrua-os!"
       },
       {
+        "voId": "chr_0028_wulfa_mono_skill_nor_02",
         "title": "Habilidade de Batalha 2",
         "text": "Hora da Caçada!"
       },
       {
+        "voId": "chr_0028_wulfa_mono_skill_nor_03",
         "title": "Habilidade de Batalha 3",
         "text": "Garras escaldantes!"
       },
       {
+        "voId": "chr_0028_wulfa_combat_skill_comb_ready_01",
         "title": "Combo de Habilidades Pronto 1",
         "text": "Vamos caçá-los!"
       },
       {
+        "voId": "chr_0028_wulfa_combat_skill_comb_ready_02",
         "title": "Combo de Habilidades Pronto 2",
         "text": "Eu os farei ter medo!"
       },
       {
+        "voId": "chr_0028_wulfa_mono_skill_comb_release_01",
         "title": "Conjuração de Combo 1",
         "text": "Não há escapatória!"
       },
       {
+        "voId": "chr_0028_wulfa_mono_skill_comb_release_02",
         "title": "Conjuração de Combo 2",
         "text": "Te peguei!"
       },
       {
+        "voId": "chr_0028_wulfa_mono_attack_extra_01",
         "title": "Finalizador 1",
         "text": "Abaixe-se!"
       },
       {
+        "voId": "chr_0028_wulfa_mono_attack_extra_02",
         "title": "Finalizador 2",
         "text": "Awoo!"
       },
       {
+        "voId": "chr_0028_wulfa_mono_skill_ultimate_01",
         "title": "Habilidade Suprema 1",
         "text": "Ferva, Sangue da Matilha!"
       },
       {
+        "voId": "chr_0028_wulfa_mono_skill_ultimate_02",
         "title": "Habilidade Suprema 2",
         "text": "A lâmina sou eu!"
       },
       {
+        "voId": "chr_0028_wulfa_mono_skill_ultimate_03",
         "title": "Habilidade Suprema 3",
         "text": "Espíritos dos Lobos, fiquem comigo."
       }

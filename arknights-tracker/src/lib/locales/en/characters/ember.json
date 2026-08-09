@@ -123,326 +123,407 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0009_azrila_chrbark_squad_01",
         "title": "Operation Prep 1",
         "text": "All set and ready. Awaiting your command."
       },
       {
+        "voId": "chr_0009_azrila_chrbark_squad_02",
         "title": "Operation Prep 2",
         "text": "A new mission?"
       },
       {
+        "voId": "chr_0009_azrila_chrbark_join_01",
         "title": "Adding to Team 1",
         "text": "I'll lead the tactical briefing."
       },
       {
+        "voId": "chr_0009_azrila_chrbark_join_02",
         "title": "Adding to Team 2",
         "text": "Let's move. War never ends. We can only march on."
       },
       {
+        "voId": "chr_0009_azrila_chrbark_weap_01",
         "title": "Switching Weapon",
         "text": "A fine piece of master-grade work. I'll put it to good use."
       },
       {
+        "voId": "chr_0009_azrila_chrbark_gear_01",
         "title": "Switching Gear",
         "text": "I haven't seen equipment of this caliber for ... quite a while."
       },
       {
+        "voId": "chr_0009_azrila_chrup_skill_01",
         "title": "Ability Matrix Activation",
         "text": "My strength is recovering ... but it's still not enough."
       },
       {
+        "voId": "chr_0009_azrila_chrup_level_01",
         "title": "Watching Combat Records",
         "text": "Excellent teamwork... Thank you. I've learned a lot."
       },
       {
+        "voId": "chr_0009_azrila_chrup_promt01_01",
         "title": "Operator Promotion 1",
         "text": "Trust appreciated. I will not fail you."
       },
       {
+        "voId": "chr_0009_azrila_chrup_promt02_01",
         "title": "Operator Promotion 2",
         "text": "Understood. Now that I've been assigned more critical duties, may I offer my input on the combat plan?"
       },
       {
+        "voId": "chr_0009_azrila_chrup_promt03_01",
         "title": "Operator Promotion 3",
         "text": "Back in the Order, the commander would award us badges for moments like this... No, that's not necessary. Let it stay this way, as what I seek here isn't about honor."
       },
       {
+        "voId": "chr_0009_azrila_chrup_promt04_01",
         "title": "Operator Promotion 4",
         "text": "I cannot say when this Crusade will end, but I'm increasingly aware that it must be taken with the utmost seriousness... I hope you'll grant me the honor of seeing it through by your side."
       },
       {
+        "voId": "chr_0009_azrila_introduce_01",
         "title": "Operator Reporting for Duty",
         "text": "Ember, Knight of the Order of Steel Oath, reporting for duty. As bound by the pact, I shall obey your command until the Crusade concludes."
       },
       {
+        "voId": "chr_0009_azrila_mono_switch_01",
         "title": "Standing by 1",
         "text": "My Crusade is far from over..."
       },
       {
+        "voId": "chr_0009_azrila_mono_switch_02",
         "title": "Standing by 2",
         "text": "The battlefield shows no mercy for mistakes. We must hone our skills with true devotion."
       },
       {
+        "voId": "chr_0009_azrila_sim_assign_work_01",
         "title": "Assigning to Facility",
         "text": "A special mission? Understood... I shall carry it out with unwavering effort."
       },
       {
+        "voId": "chr_0009_azrila_sim_hello_lower_01",
         "title": "Greeting 1",
         "text": "Do you have a combat mission that requires my presence?"
       },
       {
+        "voId": "chr_0009_azrila_sim_hello_max_01",
         "title": "Greeting 2",
         "text": "Welcome back, Endmin. Where will the next battle take us?"
       },
       {
+        "voId": "chr_0009_azrila_sim_talk_lv01_01",
         "title": "Dijiang Idle Chatter 1",
         "text": "Dijiang is a vessel furnished with various amenities, but she's not built for war. Her absence of constant operational readiness is something I'm still adjusting to."
       },
       {
+        "voId": "chr_0009_azrila_sim_talk_lv02_01",
         "title": "Dijiang Idle Chatter 2",
         "text": "Training at the Order? Hmm... Back then, I could take on an entire Homoiossaron cluster alone, so my commander would send full squads of new recruits to fight me."
       },
       {
+        "voId": "chr_0009_azrila_sim_talk_lv02_02",
         "title": "Dijiang Idle Chatter 3",
         "text": "Beneath the aurora lie the defense lines of the Oathkeepers. When battle erupted, the skies would be blanketed with swarms of hovering Aggeloi. Of course, our battlecarriers and escort aircraft would also — wait, why is the mountain range running this way... Sorry, I might have ... misidentified the location."
       },
       {
+        "voId": "chr_0009_azrila_sim_talk_max_01",
         "title": "Dijiang Idle Chatter 4",
         "text": "High-altitude drops into warzones are standard for my unit. Yet, up here, the very idea of altitude starts to fade."
       },
       {
+        "voId": "chr_0009_azrila_sim_talk_max_02",
         "title": "Dijiang Idle Chatter 5",
         "text": "The operators here make excellent sparring partners. They value battlefield coordination and show great creativity in developing strategies. I've learned a lot from them. As an Oathkeeper, I must keep pace and never stop improving myself."
       },
       {
+        "voId": "chr_0009_azrila_sim_talk_max_03",
         "title": "Dijiang Idle Chatter 6",
         "text": "The Intel Office granted me access to some mission logs. So many gave their lives for what they believed in, even without ever setting foot on the battlefield. Maybe they had no regrets, but I find myself pondering: what can we do to prevent such sacrifices from happening so often?"
       },
       {
+        "voId": "chr_0009_azrila_sim_gift_give_01",
         "title": "Offering Gifts",
         "text": "Please accept this, Endmin."
       },
       {
+        "voId": "chr_0009_azrila_sim_gift_recv_01",
         "title": "Accepting Gifts",
         "text": "My thanks. I will treat this as a token of your approval."
       },
       {
+        "voId": "chr_0009_azrila_mono_self_line01",
         "title": "Trust Dialog 1",
         "text": "This armor suit is intricately designed, and as Oathkeepers, we must learn the engineering skills to keep it operational. But in the end, it's not the suit that keeps you alive in battle. It's your resolve to stand, your mind to strategize, and your bravery to act."
       },
       {
+        "voId": "chr_0009_azrila_mono_self_line02",
         "title": "Trust Dialog 2",
         "text": "Please allow me to cover the treatment costs for that reserve operator. Among the Oathkeepers, many are ready to lay down their lives, but without a clear focus on victory, that resolve only puts everyone at risk. *Sigh* I was lost in thought and struck harder than I intended... I'm truly sorry."
       },
       {
+        "voId": "chr_0009_azrila_mono_self_line03",
         "title": "Trust Dialog 3",
         "text": "There's a tradition among the Oathkeepers: When a squad is too depleted to continue, an Oathkeeper must retreat to recruit new allies. You could consider this a form of Crusade. We take our time finding worthy successors and never rush the process. However ... it seems my Crusade has gone on for far too long."
       },
       {
+        "voId": "chr_0009_azrila_mono_self_line04",
         "title": "Trust Dialog 4",
         "text": "When I delivered fallen comrades' keepsakes and ashes, I met their parents, brothers, and loved ones. I even stopped a soldier's best friend from heading north for revenge. Somehow, I became the one who consoled others the most, convincing them not to act impulsively. Perhaps that's why the commander insisted I begin the Crusade without delay."
       },
       {
+        "voId": "chr_0009_azrila_mono_self_line05",
         "title": "Trust Dialog 5",
         "text": "This is Claire, these are Zhao, Nilla, and Lucion. That sharp-eyed one is Fiyanggu, a rookie. None of them actually drank. We only pretended to toast because a journalist was visiting. They were all remarkable soldiers, and that's why they chose that day to complete the mission. If their successors are just as exceptional ... I don't think I can bring myself to send them to the north. Why am I thinking this way, Endmin? What am I lacking?"
       },
       {
+        "voId": "chr_0009_azrila_mono_chat_line01",
         "title": "Chat 1",
         "text": "Ember, the codename is my own choice. I don't intend to run from the truth: I'm still not ready to return to the northern front. But as long as there's a chance to burn, Ember will reignite the flames. Endmin, I trust that Endfield will help me find my path."
       },
       {
+        "voId": "chr_0009_azrila_mono_chat_line02",
         "title": "Chat 2",
         "text": "Standard security units can handle Kriossons, but the situation changes entirely when Thrylissorons are present. In the Oathkeepers, tactical squads like ours are tasked with swiftly disrupting enemy formations, neutralizing Ankhors, and preventing the emergence of more dangerous Aggeloi clusters. These missions are highly risky, but we take pride in carrying them out."
       },
       {
+        "voId": "chr_0009_azrila_mono_chat_line03",
         "title": "Chat 3",
         "text": "A depleted squad shall be withdrawn to the rear to recruit new soldiers, serving as a special recruitment channel for the Oathkeepers. Those who come to challenge me simply wish to join us; they hold no personal grudge against me. Of course, victory alone doesn't guarantee enlistment. Strength and skill are essential, but what truly matters is what the fight reveals about a challenger's character."
       },
       {
+        "voId": "chr_0009_azrila_mono_chat_line04",
         "title": "Chat 4",
         "text": "Curious about my Guardian Gun? I'm afraid I left it at the Oathkeepers' fortress. I don't really fight with ranged weapons. My gun is more like a part of who I am. Leaving it there serves as a reminder that one day I will return."
       },
       {
+        "voId": "chr_0009_azrila_mono_chat_line05",
         "title": "Chat 5",
         "text": "When I was pulled from the front lines, the commander didn't set a return date. In fact, I've heard of other veterans who got the same order. They were sent to the rear to recruit, but never returned to the fortress. Perhaps that's a respectful way of saying they were quietly retired. But I don't intend to follow that path, which is why the commander referred me to you. He believes Endfield might help me discover what I'm still lacking. I sincerely hope he's right."
       },
       {
+        "voId": "chr_0009_azrila_mono_about_line01",
         "title": "Topic: Order of Steel Oath",
         "text": "During the First Aggeloi War, a coalition of elite forces was formed to push into the North. They vowed to fight to the bitter end, beginning a long, grueling war of attrition. This marked the origin of the first Oathkeepers... Actually, the commander once told me that it was you, Endmin, who helped them re-establish communication with the rear. And now, here I am, recounting this story to you. Feels almost surreal."
       },
       {
+        "voId": "chr_0009_azrila_mono_about_line02",
         "title": "Topic: Aggeloi War",
         "text": "Tactics and technology may give us an edge against the Aggeloi, but once a battle escalates into war, the loss of life becomes inevitable. When the First Aggeloi War ended, Ankhor and Aggeloi activity had significantly waned. Yet, many years later, when I was serving as a soldier, the clashes on the front had already started intensifying... Perhaps the true war is only just beginning."
       },
       {
+        "voId": "chr_0009_azrila_mono_about_line03",
         "title": "Topic: Northern Defense Line",
         "text": "The Northern Defense Line is never a fixed boundary. Each day, we fight for every inch of ground against the Aggeloi. When the fighting grows fiercely intense, our soldiers may even carry building materials into battle, rushing to construct new strongholds on freshly seized strategic points. We never retreat from the defense line, for we ourselves are the defense line."
       },
       {
+        "voId": "chr_0009_azrila_mono_about_line04",
         "title": "Topic: Originium Arts",
         "text": "Like ordinary fire, my Originium Arts can ignite materials and burn enemies. With precise control, they can even be used to disinfect wounds and regulate body temperature. These techniques may prove useful in battle, but they are no substitute for real medical arts. It's always best to evacuate the wounded and get them proper treatment ASAP."
       },
       {
+        "voId": "chr_0009_azrila_mono_about_line05",
         "title": "Topic: Civilization Band",
         "text": "Even at the height of battle, the supply of Oripathy Suppressant to the front was never interrupted. As an Infected, I fully understand how crucial that is. It's hard to imagine how people lived during the Age of Terra... Originium-induced Catastrophes never transpire here, and the Infected are no longer persecuted on a large scale. Perhaps, this is proof that we've come a long way?"
       },
       {
+        "voId": "chr_0009_azrila_explore_point_common_01",
         "title": "Resource/Collectible Detected 1",
         "text": "Useful resources located. Prepare for salvage."
       },
       {
+        "voId": "chr_0009_azrila_explore_point_valub_01",
         "title": "Resource/Collectible Detected 2",
         "text": "High-value object identified. Requesting approval for retrieval."
       },
       {
+        "voId": "chr_0009_azrila_explore_find_locked_01",
         "title": "Unexplored Area Detected",
         "text": "Unusual signals detected ahead. Not matching known Ankhor patterns. Shall we investigate?"
       },
       {
+        "voId": "chr_0009_azrila_explore_find_danger_01",
         "title": "Powerful Enemy Discovered",
         "text": "High-threat hostile detected. Stay alert."
       },
       {
+        "voId": "chr_0009_azrila_interact_mine_valub_01",
         "title": "Mining 1",
         "text": "Always resupply when you can. You don't want to run short at critical moments."
       },
       {
+        "voId": "chr_0009_azrila_interact_mine_valub_echo2_01",
         "title": "Mining 2",
         "text": "Collecting minerals? Allow me to assist."
       },
       {
+        "voId": "chr_0009_azrila_interact_treasure_valub_01",
         "title": "Opening a Crate",
         "text": "Hope it's useful."
       },
       {
+        "voId": "chr_0009_azrila_interact_etherium_01",
         "title": "Acquiring Aurylene",
         "text": "Are we collecting this? Understood, I'll keep an eye out."
       },
       {
+        "voId": "chr_0009_azrila_interact_blight_break_01",
         "title": "Eliminating the Blight",
         "text": "Now these filthy obstacles no longer hinder our advance."
       },
       {
+        "voId": "chr_0009_azrila_interact_rest_01",
         "title": "Rest",
         "text": "Rest is complete. Let's proceed with the mission."
       },
       {
+        "voId": "chr_0009_azrila_combat_suppuse_using_01",
         "title": "Tactical Use 1",
         "text": "Preparing tactical support."
       },
       {
+        "voId": "chr_0009_azrila_combat_suppuse_getheal_01",
         "title": "Tactical Use 2",
         "text": "All set. Back to the fight."
       },
       {
+        "voId": "chr_0009_azrila_combat_remind_danger_01",
         "title": "Danger Warning",
         "text": "Brace for impact!"
       },
       {
+        "voId": "chr_0009_azrila_combat_hurt_lowhp_01",
         "title": "Injured",
         "text": "I'll hold to the end."
       },
       {
+        "voId": "chr_0009_azrila_combat_dead_01",
         "title": "0 HP",
         "text": "The Crusade ... cannot end here..."
       },
       {
+        "voId": "chr_0009_azrila_combat_remind_praise_01",
         "title": "Team Encouragement 1",
         "text": "Outstanding performance."
       },
       {
+        "voId": "chr_0009_azrila_combat_remind_praise_02",
         "title": "Team Encouragement 2",
         "text": "Exemplary combat maneuver."
       },
       {
+        "voId": "chr_0009_azrila_combat_remind_praise_echo2_01",
         "title": "Encouragement Response 1",
         "text": "Everyone has earned their share of glory."
       },
       {
+        "voId": "chr_0009_azrila_combat_remind_praise_echo2_02",
         "title": "Encouragement Response 2",
         "text": "It's all thanks to our solid teamwork."
       },
       {
+        "voId": "chr_0009_azrila_combat_intobattle_01",
         "title": "Combat Begins 1",
         "text": "Bring it on! You're fighting me!"
       },
       {
+        "voId": "chr_0009_azrila_combat_intobattle_echo2_01",
         "title": "Combat Begins 2",
         "text": "Roger. Engaging the enemy."
       },
       {
+        "voId": "chr_0009_azrila_combat_outbattle_nor_01",
         "title": "Combat Victory 1",
         "text": "A well-deserved victory."
       },
       {
+        "voId": "chr_0009_azrila_combat_outbattle_nor_02",
         "title": "Combat Victory 2",
         "text": "We fought with both courage and prudence. Excellent work, everyone."
       },
       {
+        "voId": "chr_0009_azrila_combat_outbattle_nor_echo2_01",
         "title": "Combat Victory 3",
         "text": "Together we made this victory happen."
       },
       {
+        "voId": "chr_0009_azrila_combat_outbattle_hard_01",
         "title": "Combat Victory 4",
         "text": "I didn't perform well... But I'll take what I've learned and sharpen up. I promise."
       },
       {
+        "voId": "chr_0009_azrila_combat_battle_defeat_01",
         "title": "Combat Defeat",
         "text": "Have I made the same mistakes again...?"
       },
       {
+        "voId": "chr_0009_azrila_mono_attack_last_01",
         "title": "Final Strike 1",
         "text": "Take this!"
       },
       {
+        "voId": "chr_0009_azrila_mono_attack_last_02",
         "title": "Final Strike 2",
         "text": "Stop struggling!"
       },
       {
+        "voId": "chr_0009_azrila_mono_skill_nor_01",
         "title": "Battle Skill 1",
         "text": "You can't stop me!"
       },
       {
+        "voId": "chr_0009_azrila_mono_skill_nor_02",
         "title": "Battle Skill 2",
         "text": "Bring them down!"
       },
       {
+        "voId": "chr_0009_azrila_mono_skill_nor_03",
         "title": "Battle Skill 3",
         "text": "Push forward!"
       },
       {
+        "voId": "chr_0009_azrila_combat_skill_comb_ready_01",
         "title": "Combo Skill Ready 1",
         "text": "Ready to support!"
       },
       {
+        "voId": "chr_0009_azrila_combat_skill_comb_ready_02",
         "title": "Combo Skill Ready 2",
         "text": "In position!"
       },
       {
+        "voId": "chr_0009_azrila_mono_skill_comb_release_01",
         "title": "Combo Casting 1",
         "text": "Not on my watch!"
       },
       {
+        "voId": "chr_0009_azrila_mono_skill_comb_release_02",
         "title": "Combo Casting 2",
         "text": "Face your end!"
       },
       {
+        "voId": "chr_0009_azrila_mono_attack_extra_01",
         "title": "Finisher 1",
         "text": "Shatter now!"
       },
       {
+        "voId": "chr_0009_azrila_mono_attack_extra_02",
         "title": "Finisher 2",
         "text": "Pathetic!"
       },
       {
+        "voId": "chr_0009_azrila_mono_skill_ultimate_01",
         "title": "Ultimate 1",
         "text": "Fire of the Oathkeeper!"
       },
       {
+        "voId": "chr_0009_azrila_mono_skill_ultimate_02",
         "title": "Ultimate 2",
         "text": "I shall be the avatar of Radiance!"
       },
       {
+        "voId": "chr_0009_azrila_mono_skill_ultimate_03",
         "title": "Ultimate 3",
         "text": "Herein, the light shall burn for all eternity!"
       }

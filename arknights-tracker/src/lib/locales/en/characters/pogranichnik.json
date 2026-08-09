@@ -140,330 +140,412 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0029_pograni_chrbark_squad_01",
         "title": "Operation Prep 1",
         "text": "In position and standing by."
       },
       {
+        "voId": "chr_0029_pograni_chrbark_squad_02",
         "title": "Operation Prep 2",
         "text": "Ready to break camp on command."
       },
       {
+        "voId": "chr_0029_pograni_chrbark_join_01",
         "title": "Adding to Team 1",
         "text": "A soldier is born to fight."
       },
       {
+        "voId": "chr_0029_pograni_chrbark_join_02",
         "title": "Adding to Team 2",
         "text": "Survival is never free. We always have to pay."
       },
       {
+        "voId": "chr_0029_pograni_chrbark_weap_01",
         "title": "Switching Weapon",
         "text": "One must learn to wield violence — not for good nor malice, but for the sake of survival."
       },
       {
+        "voId": "chr_0029_pograni_chrbark_gear_01",
         "title": "Switching Gear",
         "text": "To a quartermaster, proper armament is the first step toward victory."
       },
       {
+        "voId": "chr_0029_pograni_chrup_skill_01",
         "title": "Ability Matrix Activation",
         "text": "Remissness and negligence pose the deadliest threat on the battlefield."
       },
       {
+        "voId": "chr_0029_pograni_chrup_level_01",
         "title": "Watching Combat Records",
         "text": "A valuable battle ... My fighting spirit has been stirred."
       },
       {
+        "voId": "chr_0029_pograni_chrup_promt01_01",
         "title": "Operator Promotion 1",
         "text": "No badge or ceremony is needed. I fully appreciate the significance of this... Thank you for your trust, Endministrator of Endfield Industries."
       },
       {
+        "voId": "chr_0029_pograni_chrup_promt02_01",
         "title": "Operator Promotion 2",
         "text": "If this happened at the Oathkeepers' fortress, I'd have to play the host at tonight's feast."
       },
       {
+        "voId": "chr_0029_pograni_chrup_promt03_01",
         "title": "Operator Promotion 3",
         "text": "Whether on the battlefield or elsewhere, this is an honor. Thank you for your trust, Endministrator. I'll prove that this trust is well placed through my actions on the frontlines."
       },
       {
+        "voId": "chr_0029_pograni_chrup_promt04_01",
         "title": "Operator Promotion 4",
         "text": "War remains a brutal affair on Talos-II. Numerous souls have marched into the north, fighting and falling so that the rest of this world may live. Endmin, I have no doubt that your actions will put a solemn end to this cruel cycle of war and sacrifice."
       },
       {
+        "voId": "chr_0029_pograni_introduce_01",
         "title": "Operator Reporting for Duty",
         "text": "Pogranichnik, Rhodes Island operator, and officer serving the Order of Steel Oath, reporting for duty. The situation is urgent. I respectfully request a brief on your battle plan, at your earliest convenience."
       },
       {
+        "voId": "chr_0029_pograni_mono_switch_01",
         "title": "Standing by 1",
         "text": "Let's go over the battle plan once more, shall we?"
       },
       {
+        "voId": "chr_0029_pograni_mono_switch_02",
         "title": "Standing by 2",
         "text": "The slightest slip of mind decides who lives ... and who dies in battle."
       },
       {
+        "voId": "chr_0029_pograni_sim_assign_work_01",
         "title": "Assigning to Facility",
         "text": "I've never tried this sort of work... But from a strategic perspective, it may be worth a try."
       },
       {
+        "voId": "chr_0029_pograni_sim_hello_lower_01",
         "title": "Greeting 1",
         "text": "Greetings, Endministrator. Here for another inspection tour?"
       },
       {
+        "voId": "chr_0029_pograni_sim_hello_max_01",
         "title": "Greeting 2",
         "text": "Salutations, Endministrator."
       },
       {
+        "voId": "chr_0029_pograni_sim_talk_lv01_01",
         "title": "Dijiang Idle Chatter 1",
         "text": "Dijiang is much larger than I expected, but I hardly spent any time familiarizing myself with its entire layout. That's thanks to the ingenious and impeccable designs by its creator. It's a great starting point for a great dream, Endmin, and I'm eager to see how that dream unfolds."
       },
       {
+        "voId": "chr_0029_pograni_sim_talk_lv02_01",
         "title": "Dijiang Idle Chatter 2",
         "text": "The Automated Industry Complex is far beyond what I imagined. With the Protocol Automation-Core, the suite of Terran military-industrial machines will finally have a potent heart, one that sustains stable deliveries of essential resources to every imperiled corner of the planet. Endmin, your work will save countless lives. On that I give you my sincere promise."
       },
       {
+        "voId": "chr_0029_pograni_sim_talk_lv02_02",
         "title": "Dijiang Idle Chatter 3",
         "text": "The Arsenal Engineers of Endfield are truly impressive. They managed to complete weapon maintenance for every personnel despite the tight schedules... Such efficiency is rare, even on the Northern Front. Though I must admit, I didn't expect someone that young to be in charge of your Arsenal."
       },
       {
+        "voId": "chr_0029_pograni_sim_talk_max_01",
         "title": "Dijiang Idle Chatter 4",
         "text": "I've reviewed Instructor Lil' Dodge's training program for you. The content is practical and the difficulty curve is well-balanced. I don't intend to make any changes to it, though I added one or two extra minor trials based on my experience... But I trust that won't be a problem for you, Endministrator."
       },
       {
+        "voId": "chr_0029_pograni_sim_talk_max_02",
         "title": "Dijiang Idle Chatter 5",
         "text": "Before you were awakened, I hadn't taken part directly in Endfield operations for years. To me, whether I serve at Rhodes Island, Endfield, or the Order of Steel Oath makes no difference. I only want to protect what I believe is worth protecting. And this time, I shall advance, and never retreat."
       },
       {
+        "voId": "chr_0029_pograni_sim_talk_max_03",
         "title": "Dijiang Idle Chatter 6",
         "text": "Every time I look out over Talos-II, I feel a surge of inspiration. Massive swarms of abominations, capable of engulfing the entire planet, are forced into cauldrons in the auroral north. Mere soldiers of flesh and blood were the brick and mortar that held the enemy in check. This is one of the Oathkeeper's greatest military feats, an undeniable proof that we are worthy ... of the immense responsibility of preserving civilization."
       },
       {
+        "voId": "chr_0029_pograni_sim_gift_give_01",
         "title": "Offering Gifts",
         "text": "I stumbled upon this in the north... It might prove useful to you, Endministrator."
       },
       {
+        "voId": "chr_0029_pograni_sim_gift_recv_01",
         "title": "Accepting Gifts",
         "text": "Thank you for your gift, Endministrator. I take it as a commendation as well... And please accept this as my token of gratitude."
       },
       {
+        "voId": "chr_0029_pograni_mono_self_line01",
         "title": "Trust Dialog 1",
         "text": "After leaving Rhodes Island, I first visited the Industrial Mothership of the UWST. For some reason, I wanted to see what fruits a certain chapter of history had borne in this land. When I laid eyes on that indomitable city, I was deeply moved. If the children of Ursus can leave the past behind, start things anew, and achieve their own feats of honor and glory, then I, Khorsyn, have no reason to hesitate any longer."
       },
       {
+        "voId": "chr_0029_pograni_mono_self_line02",
         "title": "Trust Dialog 2",
         "text": "Military life with the Oathkeepers has taught me three lessons: First, trust your comrades; second, never back down easily; third, never push your luck. In the north, violating any of these principles could bring misfortune to you or your comrades."
       },
       {
+        "voId": "chr_0029_pograni_mono_self_line03",
         "title": "Trust Dialog 3",
         "text": "During my time with the Oathkeepers, I reorganized and trained the Shieldguards. The idea took shape on the night before I reached the Oathkeepers' bastion complex. Massive structures rose in the shadow of the mountains. Sami's Myrkwood stretched out in the darkness, as if dark green flames creeping along the riverbanks. Countless tombstones stood in rows, forming a wall that held back the enemies from the north. The Oathkeepers is a shield protecting the Civilization Band, and I've forged another shield for them. I believe these soldiers will never break."
       },
       {
+        "voId": "chr_0029_pograni_mono_self_line04",
         "title": "Trust Dialog 4",
         "text": "Hellagur is more like a mentor and friend. I've come to understand his regrets and guilt, and I've learned from his thoughts and skills. There is no Hellagur the Ursine General here — only Khorsyn of Rhodes Island and Endfield. At times, I feel grateful I have no past to weigh me down. Other times, I feel ... the ache of solitude. If what I'm protecting turns out to be another empty ideal, then it's no different from the hollow glory of the Ursus Empire. Endministrator, I hope that ... you'll be one to give me an answer."
       },
       {
+        "voId": "chr_0029_pograni_mono_self_line05",
         "title": "Trust Dialog 5",
         "text": "Endmin, it is my solemn wish that your vision is fulfilled; that everyone at Rhodes Island can return to a life of peace and common joys; that the Oathkeepers can finally beat their swords to plowshares and enjoy the company of their loved ones; and that life can finally sink its roots deep into this ancient planet. I look forward to celebrating every victory with you and your friends. Even in the face of a devastating defeat, I pray that you will survive by any means necessary. If you do, then everything I've done will be worth it."
       },
       {
+        "voId": "chr_0029_pograni_mono_chat_line01",
         "title": "Chat 1",
         "text": "The youths of Op Team Z7 are truly impressive. They've only received basic military training, but managed to develop combat awareness on par with that of standard military combatants. Such achievement is rare, and commendable."
       },
       {
+        "voId": "chr_0029_pograni_mono_chat_line02",
         "title": "Chat 2",
         "text": "I worked all kinds of jobs in the north. Besides being a commander, I also doubled as a quartermaster and drill instructor. I forged weapons, milked new breeds of cystybeasts, and even made grape wine..."
       },
       {
+        "voId": "chr_0029_pograni_mono_chat_line03",
         "title": "Chat 3",
         "text": "What is a soldier's honor? I'm afraid even I cannot give a definitive answer. But should you ever visit the Oathkeepers' fortress in the north, I urge you to visit our memorial... Every name engraved upon the monument once held an answer to that question."
       },
       {
+        "voId": "chr_0029_pograni_mono_chat_line04",
         "title": "Chat 4",
         "text": "The Grand Treasurer manages a massive vault of legacies. They include not only relics of Oathkeeper legends, but also currently unrestorable Terra technologies, and mysterious artifacts of the Precursors. I was once given the chance to choose a relic to wield, but I refused. I had already drawn on the glory of a past legend. For the rest of my life, I will leave behind my own glorious legacy."
       },
       {
+        "voId": "chr_0029_pograni_mono_chat_line05",
         "title": "Chat 5",
         "text": "Most of the time, Oathkeepers are fighting Aggeloi, Ankhors, and the disasters caused by Ætherside activities. But there have been extremely rare occasions where we faced inexplicable phenomena: traces of giant creatures, witness reports of peculiar individuals... This is why I immediately requested to return to Endfield when I heard the Endmin had been awakened."
       },
       {
+        "voId": "chr_0029_pograni_mono_about_line01",
         "title": "Topic: Order of Steel Oath",
         "text": "The north is actually quite different from what most people imagine. After a century of development, the Oathkeepers' fortresses have become bustling hubs of commerce and entertainment. People became accustomed to constant war, and have created a rather vibrant way of life. Outside the fortresses, the Samifjod built settlements in Myrkwood to preserve their ancient knowledge and culture. Their caravans would often travel between the fortresses and the forest. Endmin, you should pay the north a visit. It's a beautiful place, and I'll gladly accompany you if that is your wish."
       },
       {
+        "voId": "chr_0029_pograni_mono_about_line02",
         "title": "Topic: the UWST",
         "text": "Industrial Mothership, the largest city of the UWST, now goes by many names and aliases. But I know her name was Simonch when she was still in Terra. She sank in a lake under the tyrannical rule of the Ursus Empire. I still don't know why the Empire salvaged her afterwards, nor why they repurposed that ruined city into an exclave in a foreign world. Nevertheless, she is now the largest nomadic city on Talos-II, and a spiritual symbol for many."
       },
       {
+        "voId": "chr_0029_pograni_mono_about_line03",
         "title": "Topic: Shieldguards",
         "text": "When I first chose my Shieldguards, I saw a motley of trainees even younger than me. My first task was to strip away their aggression, for they are guards and not attackers. Next, I taught them every tactic I knew so they not only defend, but become the living frontline itself. Finally, I made sure that they mastered survival... But in that regard, I've always felt that I haven't done enough. Sacrifice is never the objective. It is a last resort for the sole purpose of avoiding more sacrifices."
       },
       {
+        "voId": "chr_0029_pograni_mono_about_line04",
         "title": "Topic: Ember",
         "text": "I've heard stories about Miss Ember, a most remarkable warrior. Her assignment to the south wasn't just about rebuilding her squad. Her commander wanted to give her a chance to lead a normal life. I believe you have noticed this already, Endmin. Sadly, she is unlikely to appreciate the meaning of this generosity. A soldier who could make peace with their past would never have gone so far as she has."
       },
       {
+        "voId": "chr_0029_pograni_mono_about_line05",
         "title": "Topic: Samifjod",
         "text": "Contrary to what people say, the Samifjod are not xenophobes. It is true that for more than a century, they've been living under the lingering protection left behind by their All-Father. Yet, they generously offer help to travelers who respect Sami traditions. The Cyclops once gifted Sami's Teeth to the Seš'qamam to power the floating bastion. The Snowpriests are also more than willing to share their Arts with the Oathkeepers. It is clear that the Samifjod have found their own way of embracing a new life on Talos-II while preserving their heritage."
       },
       {
+        "voId": "chr_0029_pograni_explore_point_common_01",
         "title": "Resource/Collectible Detected 1",
         "text": "You might find that useful."
       },
       {
+        "voId": "chr_0029_pograni_explore_point_valub_01",
         "title": "Resource/Collectible Detected 2",
         "text": "Keep an eye on that area, if you don't want to miss key supplies."
       },
       {
+        "voId": "chr_0029_pograni_explore_find_locked_01",
         "title": "Unexplored Area Detected",
         "text": "Maintain formation, especially in uncharted territories."
       },
       {
+        "voId": "chr_0029_pograni_explore_find_danger_01",
         "title": "Powerful Enemy Discovered",
         "text": "Stay alert, the enemy there is strong."
       },
       {
+        "voId": "chr_0029_pograni_interact_mine_valub_01",
         "title": "Mining 1",
         "text": "This'll shape up nicely — perfect for both offense and defense."
       },
       {
+        "voId": "chr_0029_pograni_interact_mine_valub_echo2_01",
         "title": "Mining 2",
         "text": "When we pool our strength, no task is beyond us."
       },
       {
+        "voId": "chr_0029_pograni_interact_treasure_valub_01",
         "title": "Opening a Crate",
         "text": "Strategic reserves like these can shift the tide of battle."
       },
       {
+        "voId": "chr_0029_pograni_interact_etherium_01",
         "title": "Acquiring Aurylene",
         "text": "Its strategic significance probably exceeds its operational value."
       },
       {
+        "voId": "chr_0029_pograni_interact_blight_break_01",
         "title": "Eliminating the Blight",
         "text": "Adverse variables are best taken out during the earliest phases of war."
       },
       {
+        "voId": "chr_0029_pograni_interact_rest_01",
         "title": "Rest",
         "text": "Every chance of recuperation counts. It might be your only chance to prepare for the next battle."
       },
       {
+        "voId": "chr_0029_pograni_combat_suppuse_using_01",
         "title": "Tactical Use 1",
         "text": "Hang in there. No rush."
       },
       {
+        "voId": "chr_0029_pograni_combat_suppuse_getheal_01",
         "title": "Tactical Use 2",
         "text": "That was an oversight."
       },
       {
+        "voId": "chr_0029_pograni_combat_remind_danger_01",
         "title": "Danger Warning",
         "text": "All units! Incoming!"
       },
       {
+        "voId": "chr_0029_pograni_combat_hurt_lowhp_01",
         "title": "Injured",
         "text": "This is far from desperate."
       },
       {
+        "voId": "chr_0029_pograni_combat_dead_01",
         "title": "0 HP",
         "text": "This is no place ... for my war to end..."
       },
       {
+        "voId": "chr_0029_pograni_combat_remind_praise_01",
         "title": "Team Encouragement 1",
         "text": "A brilliant strategy."
       },
       {
+        "voId": "chr_0029_pograni_combat_remind_praise_02",
         "title": "Team Encouragement 2",
         "text": "A textbook maneuver."
       },
       {
+        "voId": "chr_0029_pograni_combat_remind_praise_echo2_01",
         "title": "Encouragement Response 1",
         "text": "You flatter me."
       },
       {
+        "voId": "chr_0029_pograni_combat_remind_praise_echo2_02",
         "title": "Encouragement Response 2",
         "text": "We have proven the power of unity."
       },
       {
+        "voId": "chr_0029_pograni_combat_intobattle_01",
         "title": "Combat Begins 1",
         "text": "War is never about mercy."
       },
       {
+        "voId": "chr_0029_pograni_combat_intobattle_echo2_01",
         "title": "Combat Begins 2",
         "text": "Engage."
       },
       {
+        "voId": "chr_0029_pograni_combat_outbattle_nor_01",
         "title": "Combat Victory 1",
         "text": "Our battle plan proved its worth."
       },
       {
+        "voId": "chr_0029_pograni_combat_outbattle_nor_02",
         "title": "Combat Victory 2",
         "text": "The results speak for themselves."
       },
       {
+        "voId": "chr_0029_pograni_combat_outbattle_nor_echo2_01",
         "title": "Combat Victory 3",
         "text": "It is worth a celebration."
       },
       {
+        "voId": "chr_0029_pograni_combat_outbattle_hard_01",
         "title": "Combat Victory 4",
         "text": "Every victory bears its price... Hold dear what you've learned, but don't forget what we've paid."
       },
       {
+        "voId": "chr_0029_pograni_combat_battle_defeat_01",
         "title": "Combat Defeat",
         "text": "Don't let failure weigh you down. Own it, and let it propel you to greater heights."
       },
       {
+        "voId": "chr_0029_pograni_mono_attack_last_01",
         "title": "Final Strike 1",
         "text": "Move aside!"
       },
       {
+        "voId": "chr_0029_pograni_mono_attack_last_02",
         "title": "Final Strike 2",
         "text": "Pathetic!"
       },
       {
+        "voId": "chr_0029_pograni_mono_skill_nor_01",
         "title": "Battle Skill 1",
         "text": "Never tempt fate!"
       },
       {
+        "voId": "chr_0029_pograni_mono_skill_nor_02",
         "title": "Battle Skill 2",
         "text": "Never fear!"
       },
       {
+        "voId": "chr_0029_pograni_mono_skill_nor_03",
         "title": "Battle Skill 3",
         "text": "Never retreat!"
       },
       {
+        "voId": "chr_0029_pograni_combat_skill_comb_ready_01",
         "title": "Combo Skill Ready 1",
         "text": "At your command."
       },
       {
+        "voId": "chr_0029_pograni_combat_skill_comb_ready_02",
         "title": "Combo Skill Ready 2",
         "text": "They're mine to end."
       },
       {
+        "voId": "chr_0029_pograni_mono_skill_comb_release_01",
         "title": "Combo Casting 1",
         "text": "Crescent moon!"
       },
       {
+        "voId": "chr_0029_pograni_mono_skill_comb_release_02",
         "title": "Combo Casting 2",
         "text": "Half moon!"
       },
       {
+        "voId": "chr_0029_pograni_mono_skill_comb_release_03",
         "title": "Combo Casting 3",
         "text": "Full moon!"
       },
       {
+        "voId": "chr_0029_pograni_mono_attack_extra_01",
         "title": "Finisher 1",
         "text": "Rest in silence."
       },
       {
+        "voId": "chr_0029_pograni_mono_attack_extra_02",
         "title": "Finisher 2",
         "text": "Your death awaits."
       },
       {
+        "voId": "chr_0029_pograni_mono_skill_ultimate_01",
         "title": "Ultimate 1",
         "text": "AT MY COMMAND!"
       },
       {
+        "voId": "chr_0029_pograni_mono_skill_ultimate_02",
         "title": "Ultimate 2",
         "text": "Soldiers, ADVANCE!"
       },
       {
+        "voId": "chr_0029_pograni_mono_skill_ultimate_03",
         "title": "Ultimate 3",
         "text": "Shieldguards! FORMATION!"
       }

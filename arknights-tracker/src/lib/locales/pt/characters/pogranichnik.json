@@ -140,330 +140,412 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0029_pograni_chrbark_squad_01",
         "title": "Prep Operação 1",
         "text": "Em posição e aguardando."
       },
       {
+        "voId": "chr_0029_pograni_chrbark_squad_02",
         "title": "Prep Operação 2",
         "text": "Pronto para levantar acampamento quando ordenado."
       },
       {
+        "voId": "chr_0029_pograni_chrbark_join_01",
         "title": "Adicionando à equipe 1",
         "text": "Um soldado nasce para lutar."
       },
       {
+        "voId": "chr_0029_pograni_chrbark_join_02",
         "title": "Adicionando à equipe 2",
         "text": "A sobrevivência nunca é de graça. Sempre há um preço a pagar."
       },
       {
+        "voId": "chr_0029_pograni_chrbark_weap_01",
         "title": "Trocando de arma",
         "text": "É preciso aprender a usar a violência — não por bem nem por maldade, mas em prol da sobrevivência."
       },
       {
+        "voId": "chr_0029_pograni_chrbark_gear_01",
         "title": "Trocando de equipamento",
         "text": "Para um intendente, o armamento adequado é o primeiro passo para a vitória."
       },
       {
+        "voId": "chr_0029_pograni_chrup_skill_01",
         "title": "Ativação da Matriz de Capacidade",
         "text": "A displicência e a negligência representam a ameaça mais mortal no campo de batalha."
       },
       {
+        "voId": "chr_0029_pograni_chrup_level_01",
         "title": "Assistindo a Registros de Combate",
         "text": "Uma batalha valiosa... Meu espírito de luta foi despertado."
       },
       {
+        "voId": "chr_0029_pograni_chrup_promt01_01",
         "title": "Promoção do Operador 1",
         "text": "Não é necessário nenhuma insígnia ou cerimônia. Eu compreendo perfeitamente a importância disso... Obrigado pela sua confiança, Endministrator da Endfield Industries."
       },
       {
+        "voId": "chr_0029_pograni_chrup_promt02_01",
         "title": "Promoção do Operador 2",
         "text": "Se isso acontecesse na fortaleza dos Guardiões do Juramento, eu teria que ser o anfitrião do banquete desta noite."
       },
       {
+        "voId": "chr_0029_pograni_chrup_promt03_01",
         "title": "Promoção do Operador 3",
         "text": "Seja no campo de batalha ou em qualquer outro lugar, é uma honra. Obrigado pela confiança, Endministrator. Provarei que essa confiança é bem depositada por meio das minhas ações na linha de frente."
       },
       {
+        "voId": "chr_0029_pograni_chrup_promt04_01",
         "title": "Promoção do Operador 4",
         "text": "A guerra continua sendo um assunto brutal em Talos-II. Inúmeras almas marcharam para o norte, lutando e caindo para que o resto deste mundo possa sobreviver. Endmin, não tenho dúvidas de que suas ações porão um fim solene a este ciclo cruel de guerra e sacrifício."
       },
       {
+        "voId": "chr_0029_pograni_introduce_01",
         "title": "Operador se apresentando para o trabalho",
         "text": "Pogranichnik, operador da Rhodes Island e oficial da Ordem do Juramento de Aço, apresentando-se para o serviço. A situação é urgente. Solicito respeitosamente um resumo do seu plano de batalha, o mais breve possível."
       },
       {
+        "voId": "chr_0029_pograni_mono_switch_01",
         "title": "Em espera 1",
         "text": "Vamos revisar o plano de batalha mais uma vez, certo?"
       },
       {
+        "voId": "chr_0029_pograni_mono_switch_02",
         "title": "Em espera 2",
         "text": "O menor deslize de mente decide quem vive... e quem morre em batalha."
       },
       {
+        "voId": "chr_0029_pograni_sim_assign_work_01",
         "title": "Atribuindo a Instalação",
         "text": "Nunca tentei esse tipo de trabalho... Mas, de uma perspectiva estratégica, pode valer a pena tentar."
       },
       {
+        "voId": "chr_0029_pograni_sim_hello_lower_01",
         "title": "Saudação 1",
         "text": "Saudações, Endministrator. Você está aqui para mais uma visita de inspeção?"
       },
       {
+        "voId": "chr_0029_pograni_sim_hello_max_01",
         "title": "Saudação 2",
         "text": "Saudações, Endministrator."
       },
       {
+        "voId": "chr_0029_pograni_sim_talk_lv01_01",
         "title": "Conversa Ociosa da Dijiang 1",
         "text": "A Dijiang é muito maior do que eu esperava, mas quase não me dediquei a me familiarizar com todo o seu layout. Isso graças aos designs engenhosos e impecáveis ​​de seu criador. É um ótimo ponto de partida para um grande sonho, Endmin, e estou ansioso para ver como esse sonho se concretiza."
       },
       {
+        "voId": "chr_0029_pograni_sim_talk_lv02_01",
         "title": "Conversa Ociosa da Dijiang 2",
         "text": "O Complexo Automatizado Industrial se estende além do que eu imaginava. Com o Núcleo de Automação do Protocolo, o conjunto de máquinas militares-industriais terranas finalmente terá um coração potente, capaz de sustentar entregas estáveis ​​de recursos essenciais para todos os cantos ameaçados do planeta. Endmin, seu trabalho salvará inúmeras vidas. Quanto a isso, prometo a você sinceramente."
       },
       {
+        "voId": "chr_0029_pograni_sim_talk_lv02_02",
         "title": "Conversa Ociosa da Dijiang 3",
         "text": "Os Engenheiros de Arsenal da Endfield são realmente impressionantes. Eles conseguiram concluir a manutenção das armas de todos os funcionários, apesar dos cronogramas apertados... Tal eficiência é rara, mesmo na Frente Norte. Embora eu deva admitir, não esperava que alguém tão jovem estivesse no comando do seu Arsenal."
       },
       {
+        "voId": "chr_0029_pograni_sim_talk_max_01",
         "title": "Conversa Ociosa da Dijiang 4",
         "text": "Analisei o programa de treinamento do Instrutor Lil' Dodge para você. O conteúdo é prático e a curva de dificuldade é bem equilibrada. Não pretendo fazer nenhuma alteração, embora tenha adicionado um ou dois testes menores extras com base na minha experiência... Mas acredito que isso não será um problema para você, Endministrator."
       },
       {
+        "voId": "chr_0029_pograni_sim_talk_max_02",
         "title": "Conversa Ociosa da Dijiang 5",
         "text": "Antes de você despertar, eu não participava diretamente das operações da Endfield havia anos. Para mim, não importa se sirvo na Rhodes Island, na Endfield ou na Ordem do Juramento de Aço. Só quero proteger o que acredito que vale a pena proteger. E desta vez, avançarei, e nunca recuarei."
       },
       {
+        "voId": "chr_0029_pograni_sim_talk_max_03",
         "title": "Conversa Ociosa da Dijiang 6",
         "text": "Cada vez que olho para Talos-II, sinto uma onda de inspiração. Enxames gigantescos de abominações, capazes de engolir o planeta inteiro, são forçados a se amontoar em caldeirões no norte auroral. Meros soldados de carne e osso foram os tijolos e a argamassa que mantiveram o inimigo sob controle. Este é um dos maiores feitos militares dos Guardiões do Juramento, uma prova inegável de que somos dignos... da imensa responsabilidade de preservar a civilização."
       },
       {
+        "voId": "chr_0029_pograni_sim_gift_give_01",
         "title": "Oferta de presentes",
         "text": "Eu tropecei nisso no norte... Pode ser útil para você, Endministrator."
       },
       {
+        "voId": "chr_0029_pograni_sim_gift_recv_01",
         "title": "Aceitando presentes",
         "text": "Obrigado pelo seu presente, Endministrator. Considero-o também um elogio... E, por favor, aceite isso como meu símbolo de gratidão."
       },
       {
+        "voId": "chr_0029_pograni_mono_self_line01",
         "title": "Diálogo de Confiança 1",
         "text": "Depois de deixar a Rhodes Island, visitei primeiro a Nave-Mãe Industrial do STUT. Por algum motivo, eu queria ver os frutos que um certo capítulo da história havia produzido nesta terra. Quando vi aquela cidade indomável, fiquei profundamente comovido. Se os filhos de Ursus conseguem deixar o passado para trás, recomeçar as coisas e realizar seus próprios feitos de honra e glória, então eu, Khorsyn, não tenho mais motivos para hesitar."
       },
       {
+        "voId": "chr_0029_pograni_mono_self_line02",
         "title": "Diálogo de Confiança 2",
         "text": "A vida militar com os Guardiões do Juramento me ensinou três lições: primeiro, confie em seus companheiros; segundo, nunca recue facilmente; terceiro, nunca abuse da sorte. No norte, violar qualquer um desses princípios pode trazer infortúnio para você ou seus companheiros."
       },
       {
+        "voId": "chr_0029_pograni_mono_self_line03",
         "title": "Diálogo de Confiança 3",
         "text": "Durante meu tempo com os Guardiões do Juramento, reorganizei e treinei os Escudeiros. A ideia tomou forma na noite anterior à minha chegada ao complexo de bastiões dos Guardiões do Juramento. Estruturas imponentes se erguiam à sombra das montanhas. A Floresta de Murta de Sami se estendia na escuridão, como chamas verde-escuras percorrendo as margens do rio. Inúmeras lápides se enfileiravam, formando uma muralha que continha os inimigos do norte. Os Guardiões do Juramento são um escudo que protege o Cinturão da Civilização, e eu forjei outro escudo para eles. Acredito que esses soldados jamais se quebrarão."
       },
       {
+        "voId": "chr_0029_pograni_mono_self_line04",
         "title": "Diálogo de Confiança 4",
         "text": "Hellagur é mais como um mentor e amigo. Passei a entender seus arrependimentos e culpa, e aprendi com seus pensamentos e habilidades. Não há Hellagur, o General Ursino, aqui — apenas Khorsyn da Rhodes Island e da Endfield. Às vezes, sinto-me grato por não ter um passado para me oprimir. Outras vezes, sinto... a dor da solidão. Se o que estou protegendo se revelar mais um ideal vazio, então não será diferente da glória oca do Império Ursus. Endministrator, espero que... você seja quem vai me dar uma resposta."
       },
       {
+        "voId": "chr_0029_pograni_mono_self_line05",
         "title": "Diálogo de Confiança 5",
         "text": "Endmin, é meu desejo solene que sua visão se realize; que todos na Rhodes Island possam retornar a uma vida de paz e alegrias em comum; que os Guardiões do Juramento possam finalmente transformar suas espadas em arados e desfrutar da companhia de seus entes queridos; e que a vida possa finalmente fincar raízes profundas neste planeta muito antigo. Anseio por celebrar cada vitória com você e seus amigos. Mesmo diante de uma derrota devastadora, rezo para que você sobreviva por todos os meios necessários. Se sobreviver, tudo o que fiz valerá a pena."
       },
       {
+        "voId": "chr_0029_pograni_mono_chat_line01",
         "title": "Chat 1",
         "text": "Os jovens da Equipe Op Z7 são realmente impressionantes. Eles receberam apenas treinamento militar básico, mas conseguiram desenvolver uma consciência de combate comparável à de combatentes militares comuns. Tal conquista é rara e louvável."
       },
       {
+        "voId": "chr_0029_pograni_mono_chat_line02",
         "title": "Chat 2",
         "text": "Trabalhei em todos os tipos de empregos no norte. Além de comandante, também fui intendente e instrutor de treinamento. Forjei armas, ordenhei novas raças de bestas císticas e até fiz vinho de uva..."
       },
       {
+        "voId": "chr_0029_pograni_mono_chat_line03",
         "title": "Chat 3",
         "text": "O que é a honra de um soldado? Receio que nem eu possa dar uma resposta definitiva. Mas se algum dia você visitar a fortaleza dos Guardiões do Juramento, no norte, recomendo que visite nosso memorial... Cada nome gravado no monumento já continha uma resposta para essa pergunta."
       },
       {
+        "voId": "chr_0029_pograni_mono_chat_line04",
         "title": "Chat 4",
         "text": "O Grande Tesoureiro gerencia um enorme cofre de legados. Eles incluem não apenas relíquias de lendas dos Guardiões do Juramento, mas também tecnologias da Terra atualmente irrecuperáveis ​​e artefatos misteriosos dos Precursores. Certa vez, tive a chance de escolher uma relíquia para empunhar, mas recusei. Eu já havia me inspirado na glória de uma lenda do passado. Pelo resto da minha vida, deixarei meu próprio legado glorioso."
       },
       {
+        "voId": "chr_0029_pograni_mono_chat_line05",
         "title": "Chat 5",
         "text": "Na maioria das vezes, os Guardiões do Juramento lutam contra Aggeloi, Ankhors e os desastres causados ​​pelas atividades do Ætherside. Mas houve ocasiões raríssimas em que nos deparamos com fenômenos inexplicáveis: vestígios de criaturas gigantes, relatos de testemunhas sobre indivíduos peculiares... Foi por isso que imediatamente pedi para retornar à Endfield quando soube que os Endmin haviam sido despertados."
       },
       {
+        "voId": "chr_0029_pograni_mono_about_line01",
         "title": "Tópico: Ordem do Juramento de Aço",
         "text": "O norte é, na verdade, bem diferente do que a maioria das pessoas imagina. Após um século de desenvolvimento, as fortalezas dos Guardiões do Juramento tornaram-se centros movimentados de comércio e entretenimento. As pessoas se acostumaram à guerra constante e criaram um modo de vida bastante vibrante. Fora das fortalezas, os Samifjod construíram assentamentos na Floresta de Murta para preservar seu conhecimento e cultura antigos. Suas caravanas costumavam viajar entre as fortalezas e a floresta. Endmin, você deveria visitar o norte. É um lugar lindo, e terei prazer em acompanhar você, se esse for o seu desejo."
       },
       {
+        "voId": "chr_0029_pograni_mono_about_line02",
         "title": "Tópico: o STUT",
         "text": "A Nave-Mãe Industrial, a maior cidade do STUT, agora tem muitos nomes e pseudônimos. Mas eu sei que seu nome era Simonch quando ainda estava em Terra. Ela afundou em um lago sob o domínio tirânico do Império Ursus. Ainda não sei por que o Império a salvou depois, nem por que transformaram aquela cidade em ruínas em um enclave em um mundo estrangeiro. Mesmo assim, ela é agora a maior cidade nômade de Talos-II e um símbolo espiritual para muitos."
       },
       {
+        "voId": "chr_0029_pograni_mono_about_line03",
         "title": "Tópico: Escudeiros",
         "text": "Quando escolhi meus Escudeiros pela primeira vez, vi um grupo de aprendizes ainda mais jovens do que eu. Minha primeira tarefa foi eliminar a agressividade deles, pois são guardas e não atacantes. Em seguida, ensinei-lhes todas as táticas que conhecia para que não apenas se defendessem, mas se tornassem a própria linha de frente viva. Por fim, garanti que dominassem a sobrevivência... Mas, nesse aspecto, sempre senti que não fiz o suficiente. Sacrifício nunca é o objetivo. É um último recurso com o único propósito de evitar mais sacrifícios."
       },
       {
+        "voId": "chr_0029_pograni_mono_about_line04",
         "title": "Tópico: Ember",
         "text": "Ouvi histórias sobre a Srta. Ember, uma guerreira extraordinária. Sua atribuição no sul não se resumia apenas a reconstruir seu esquadrão. Seu comandante queria dar a ela a chance de levar uma vida normal. Acredito que você já tenha percebido isso, Endmin. Infelizmente, é improvável que ela aprecie o significado dessa generosidade. Qualquer soldado que conseguisse fazer as pazes com o passado jamais teria chegado tão longe quanto ela."
       },
       {
+        "voId": "chr_0029_pograni_mono_about_line05",
         "title": "Tópico: Samifjod",
         "text": "Ao contrário do que se diz, os Samifjod não são xenófobos. É verdade que, por mais de um século, eles vivem sob a proteção persistente deixada por seu Pai de Todos. No entanto, eles generosamente oferecem ajuda aos viajantes que respeitam as tradições Sami. Os Ciclopes certa vez presentearam os Dentes de Sami aos Seš'qanos para energizar o bastião flutuante. Os Sacerdotes da Neve também estão mais do que dispostos a compartilhar suas Artes com os Guardiões do Juramento. É evidente que os Samifjod encontraram sua própria maneira de abraçar uma nova vida em Talos-II, preservando sua herança."
       },
       {
+        "voId": "chr_0029_pograni_explore_point_common_01",
         "title": "Recurso/Colecionável detectado 1",
         "text": "Talvez você ache isso útil."
       },
       {
+        "voId": "chr_0029_pograni_explore_point_valub_01",
         "title": "Recurso/Colecionável detectado 2",
         "text": "Fique de olho nessa área se não quiser perder suprimentos importantes."
       },
       {
+        "voId": "chr_0029_pograni_explore_find_locked_01",
         "title": "Área não explorada detectada",
         "text": "Mantenham a formação, especialmente em territórios desconhecidos."
       },
       {
+        "voId": "chr_0029_pograni_explore_find_danger_01",
         "title": "Inimigo poderoso descoberto",
         "text": "Fiquem alertas, o inimigo ali é forte."
       },
       {
+        "voId": "chr_0029_pograni_interact_mine_valub_01",
         "title": "Mineração 1",
         "text": "Isso vai ficar ótimo, perfeito tanto para ataque quanto para defesa."
       },
       {
+        "voId": "chr_0029_pograni_interact_mine_valub_echo2_01",
         "title": "Mineração 2",
         "text": "Quando unimos nossas forças, nenhuma tarefa está além do nosso alcance."
       },
       {
+        "voId": "chr_0029_pograni_interact_treasure_valub_01",
         "title": "Abrindo um caixote",
         "text": "Reservas estratégicas como essas podem mudar o rumo da batalha."
       },
       {
+        "voId": "chr_0029_pograni_interact_etherium_01",
         "title": "Adquirindo Aurileno",
         "text": "Sua importância estratégica provavelmente excede seu valor operacional."
       },
       {
+        "voId": "chr_0029_pograni_interact_blight_break_01",
         "title": "Eliminando a Praga",
         "text": "As variáveis adversas são eliminadas melhor durante as fases iniciais da guerra."
       },
       {
+        "voId": "chr_0029_pograni_interact_rest_01",
         "title": "Descansar",
         "text": "Toda chance de recuperação conta. Pode ser sua única chance de se preparar para a próxima batalha."
       },
       {
+        "voId": "chr_0029_pograni_combat_suppuse_using_01",
         "title": "Uso Tático 1",
         "text": "Aguente firme. Sem pressa."
       },
       {
+        "voId": "chr_0029_pograni_combat_suppuse_getheal_01",
         "title": "Uso Tático 2",
         "text": "Isso foi um descuido."
       },
       {
+        "voId": "chr_0029_pograni_combat_remind_danger_01",
         "title": "Aviso de Perigo",
         "text": "Todas as unidades! Chegando!"
       },
       {
+        "voId": "chr_0029_pograni_combat_hurt_lowhp_01",
         "title": "Ferido",
         "text": "Isso está longe de ser desesperador."
       },
       {
+        "voId": "chr_0029_pograni_combat_dead_01",
         "title": "0 PV",
         "text": "Este não é o lugar... para minha guerra acabar..."
       },
       {
+        "voId": "chr_0029_pograni_combat_remind_praise_01",
         "title": "Encorajamento da Equipe 1",
         "text": "Uma estratégia brilhante."
       },
       {
+        "voId": "chr_0029_pograni_combat_remind_praise_02",
         "title": "Encorajamento da Equipe 2",
         "text": "Uma manobra clássica."
       },
       {
+        "voId": "chr_0029_pograni_combat_remind_praise_echo2_01",
         "title": "Resposta a Encorajamento 1",
         "text": "Você me deixa lisonjeado."
       },
       {
+        "voId": "chr_0029_pograni_combat_remind_praise_echo2_02",
         "title": "Resposta a Encorajamento 2",
         "text": "Mostramos que a união faz a força."
       },
       {
+        "voId": "chr_0029_pograni_combat_intobattle_01",
         "title": "Início do Combate 1",
         "text": "Uma guerra nunca é sobre misericórdia."
       },
       {
+        "voId": "chr_0029_pograni_combat_intobattle_echo2_01",
         "title": "Início do Combate 2",
         "text": "Ataque."
       },
       {
+        "voId": "chr_0029_pograni_combat_outbattle_nor_01",
         "title": "Vitória em Combate 1",
         "text": "Nosso plano de batalha provou seu valor."
       },
       {
+        "voId": "chr_0029_pograni_combat_outbattle_nor_02",
         "title": "Vitória em Combate 2",
         "text": "Os resultados falam por si."
       },
       {
+        "voId": "chr_0029_pograni_combat_outbattle_nor_echo2_01",
         "title": "Vitória em Combate 3",
         "text": "Vale a pena comemorar."
       },
       {
+        "voId": "chr_0029_pograni_combat_outbattle_hard_01",
         "title": "Vitória em Combate 4",
         "text": "Toda vitória tem seu preço... Guarde com carinho o que aprendeu, mas não se esqueça do que pagamos."
       },
       {
+        "voId": "chr_0029_pograni_combat_battle_defeat_01",
         "title": "Derrota em Combate",
         "text": "Não deixe o fracasso te abater. Assuma-o e deixe que ele leve você a patamares mais altos."
       },
       {
+        "voId": "chr_0029_pograni_mono_attack_last_01",
         "title": "Golpe Final 1",
         "text": "Saia da frente!"
       },
       {
+        "voId": "chr_0029_pograni_mono_attack_last_02",
         "title": "Golpe Final 2",
         "text": "Patético!"
       },
       {
+        "voId": "chr_0029_pograni_mono_skill_nor_01",
         "title": "Habilidade de Batalha 1",
         "text": "Nunca tente o destino!"
       },
       {
+        "voId": "chr_0029_pograni_mono_skill_nor_02",
         "title": "Habilidade de Batalha 2",
         "text": "Nunca tema!"
       },
       {
+        "voId": "chr_0029_pograni_mono_skill_nor_03",
         "title": "Habilidade de Batalha 3",
         "text": "Nunca recue!"
       },
       {
+        "voId": "chr_0029_pograni_combat_skill_comb_ready_01",
         "title": "Combo de Habilidades Pronto 1",
         "text": "Ao seu comando."
       },
       {
+        "voId": "chr_0029_pograni_combat_skill_comb_ready_02",
         "title": "Combo de Habilidades Pronto 2",
         "text": "Eles são meus para terminar."
       },
       {
+        "voId": "chr_0029_pograni_mono_skill_comb_release_01",
         "title": "Conjuração de Combo 1",
         "text": "Lua crescente!"
       },
       {
+        "voId": "chr_0029_pograni_mono_skill_comb_release_02",
         "title": "Conjuração de Combo 2",
         "text": "Meia-lua!"
       },
       {
+        "voId": "chr_0029_pograni_mono_skill_comb_release_03",
         "title": "Conjuração de Combo 3",
         "text": "Lua cheia!"
       },
       {
+        "voId": "chr_0029_pograni_mono_attack_extra_01",
         "title": "Finalizador 1",
         "text": "Descanse em silêncio."
       },
       {
+        "voId": "chr_0029_pograni_mono_attack_extra_02",
         "title": "Finalizador 2",
         "text": "Sua morte te espera."
       },
       {
+        "voId": "chr_0029_pograni_mono_skill_ultimate_01",
         "title": "Habilidade Suprema 1",
         "text": "AO MEU COMANDO!"
       },
       {
+        "voId": "chr_0029_pograni_mono_skill_ultimate_02",
         "title": "Habilidade Suprema 2",
         "text": "Soldados, AVANÇAR!"
       },
       {
+        "voId": "chr_0029_pograni_mono_skill_ultimate_03",
         "title": "Habilidade Suprema 3",
         "text": "Escudeiros! EM FORMAÇÃO!"
       }

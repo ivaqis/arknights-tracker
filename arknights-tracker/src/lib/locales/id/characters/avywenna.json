@@ -126,322 +126,402 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0012_avywen_chrbark_squad_01",
         "title": "Persiapan Operasi 1",
         "text": "Wah, wah, Endmin, sepertinya takdir menuntunmu langsung kepadaku."
       },
       {
+        "voId": "chr_0012_avywen_chrbark_squad_02",
         "title": "Persiapan Operasi 2",
         "text": "Ah-ah, kalau berkedip, mungkin saja aku akan hilang dari pandanganmu."
       },
       {
+        "voId": "chr_0012_avywen_chrbark_join_01",
         "title": "Menambahkan ke Tim 1",
         "text": "Oh, rupanya kau percaya kepadaku sampai-sampai rela menghabiskan uang sebanyak itu? Aku merasa tersanjung."
       },
       {
+        "voId": "chr_0012_avywen_chrbark_join_02",
         "title": "Menambahkan ke Tim 2",
         "text": "Bisa maju sedikit lagi? Aku tak suka jauh-jauhan begini."
       },
       {
+        "voId": "chr_0012_avywen_chrbark_weap_01",
         "title": "Berganti Senjata",
         "text": "Di keluargaku, senjata kami bisa dibilang adalah bagian dari kami. Kebetulan saja senjataku membuatku sedikit lebih tinggi!"
       },
       {
+        "voId": "chr_0012_avywen_chrbark_gear_01",
         "title": "Berganti Gear",
         "text": "Perjalanan yang hebat bukan ditentukan oleh tujuannya semata, tapi oleh sepatu yang kaupakai. Makanya, untuk urusan peralatan, aku tak pernah pelit."
       },
       {
+        "voId": "chr_0012_avywen_chrup_skill_01",
         "title": "Aktivasi Matriks Kemampuan",
         "text": "Tak kusangka ternyata aku sudah bepergian sejauh ini! Kampung halaman dan hari-hariku di sana kini terasa jauh sekali."
       },
       {
+        "voId": "chr_0012_avywen_chrup_level_01",
         "title": "Menonton Rekaman Pertarungan",
         "text": "Apa orang-orang lain akan lihat pertarungan ini? Mungkin saja ada yang mengenali tombakku. Jangan sampai mereka mengenaliku ...."
       },
       {
+        "voId": "chr_0012_avywen_chrup_promt01_01",
         "title": "Promosi Operator 1",
         "text": "Tak usah khawatir. Percayalah, aku ini pro."
       },
       {
+        "voId": "chr_0012_avywen_chrup_promt02_01",
         "title": "Promosi Operator 2",
         "text": "Ha! Sudah kuduga pada akhirnya kau akan merasa seperti itu! Nah, apa tugas berikutnya untukku?"
       },
       {
+        "voId": "chr_0012_avywen_chrup_promt03_01",
         "title": "Promosi Operator 3",
         "text": "Karena ini memang masuk akal dari segi profesional dan personal, aku sih tak keberatan kalau kita lebih akrab lagi, iya ‘kan? Aih, jangan malu begitu, dong! Aku paham maksudmu, kok!"
       },
       {
+        "voId": "chr_0012_avywen_chrup_promt04_01",
         "title": "Promosi Operator 4",
         "text": "Seluruh masa kecilku kuisi dengan berkelahi agar bisa mengungguli saudara-saudaraku, jadi aku memang harus selalu berusaha agar lebih unggul. Tapi, ini yang penting, Endmin—berjanjilah, kau akan selalu mengingatku lebih dulu, ya?"
       },
       {
+        "voId": "chr_0012_avywen_introduce_01",
         "title": "Operator Siap Bertugas",
         "text": "Wah, wah, coba lihat siapa ini—Endministrator, sang legenda. Sepanjang jalan ke sini, kudengar bisik-bisik orang tentangmu. Aku penasaran mana yang paling akurat. Karena kau belum begitu mengenalku, aku punya tawaran: akan kuceritakan suatu rahasia, tapi sebagai gantinya, kau juga harus ceritakan sedikit tentang dirimu. Bagaimana?"
       },
       {
+        "voId": "chr_0012_avywen_mono_switch_01",
         "title": "Siaga 1",
         "text": "Kita mau ke mana?"
       },
       {
+        "voId": "chr_0012_avywen_mono_switch_02",
         "title": "Siaga 2",
         "text": "Apa aku terlihat oke dari sudut ini?"
       },
       {
+        "voId": "chr_0012_avywen_sim_assign_work_01",
         "title": "Menugaskan ke Fasilitas",
         "text": "Saatnya berangkat, jangan buang-buang waktu!"
       },
       {
+        "voId": "chr_0012_avywen_sim_hello_lower_01",
         "title": "Menyapa 1",
         "text": "Hai, Endmin! Apa kabar?"
       },
       {
+        "voId": "chr_0012_avywen_sim_hello_max_01",
         "title": "Menyapa 2",
         "text": "Endmin, kawanku! Senang melihatmu! Kau tak berniat menghindariku, ‘kan?"
       },
       {
+        "voId": "chr_0012_avywen_sim_talk_lv01_01",
         "title": "Obrolan Santai di Dijiang 1",
         "text": "Hai, Endmin, senang bertemu denganmu lagi. Yak, kau tetap kelihatan keren—sama seperti lima menit yang lalu, ya?"
       },
       {
+        "voId": "chr_0012_avywen_sim_talk_lv02_01",
         "title": "Obrolan Santai di Dijiang 2",
         "text": "Harus kuakui, kau benar-benar sepenuh hati merakit Dijiang. Luar biasa—baru saja terbang sebentar, pesawat ini sudah membawa kita melintasi jarak yang dulu butuh bertahun-tahun untuk kutempuh."
       },
       {
+        "voId": "chr_0012_avywen_sim_talk_lv02_02",
         "title": "Obrolan Santai di Dijiang 3",
         "text": "Ada apa di mukamu, tuh? Eh-eh, sebelah satunya .... Haha, aku cuma bercanda. Jarang sekali bisa melihatmu malu-malu begitu!"
       },
       {
+        "voId": "chr_0012_avywen_sim_talk_max_01",
         "title": "Obrolan Santai di Dijiang 4",
         "text": "Tahu tidak, dari Anjungan Komando ini, Talos-II sungguh terlihat seperti bola raksasa. Artinya, ke mana pun kita pergi, kita akan selalu berputar hingga akhirnya bertemu kembali."
       },
       {
+        "voId": "chr_0012_avywen_sim_talk_max_02",
         "title": "Obrolan Santai di Dijiang 5",
         "text": "Aku mau bertualang lagi! Butuh sesuatu? Cepat bilang. Kalau tidak, kau harus tunggu sampai kesempatan berikutnya!"
       },
       {
+        "voId": "chr_0012_avywen_sim_talk_max_03",
         "title": "Obrolan Santai di Dijiang 6",
         "text": "Masih segar setelah nonton film horor semalam? Ckck, sepertinya lain kali aku harus pilih film yang lebih seram. Tenang saja, kau akan kuseret ikut nonton lagi!"
       },
       {
+        "voId": "chr_0012_avywen_sim_gift_give_01",
         "title": "Menawarkan Hadiah",
         "text": "Aku harus bersusah payah demi membawakan benda ini untukmu. Jadi ingat sesuatu, tidak?"
       },
       {
+        "voId": "chr_0012_avywen_sim_gift_recv_01",
         "title": "Menerima Hadiah",
         "text": "Gadis cantik sepertiku tentu saja dapat banyak hadiah, tapi hadiah darimu ini ... istimewa."
       },
       {
+        "voId": "chr_0012_avywen_mono_self_line01",
         "title": "Dialog Kepercayaan 1",
         "text": "Orang-orang kadang memang sulit dipahami. Dulu, aku tak perlu berpikir terlalu keras. Tugasku sekadar bekerja dari A ke B. Tapi, saat tak sengaja terseret dalam masalah itu, situasi jadi .... *Berdesah* Kapan-kapan saja kuceritakan selengkapnya, ya?"
       },
       {
+        "voId": "chr_0012_avywen_mono_self_line02",
         "title": "Dialog Kepercayaan 2",
         "text": "Dibandingkan sekarang, gaji dari pekerjaan lamaku setara gaji anak raja! *Tertawa kecil* Keluargaku tak pernah mau terima bayaran di bawah standar. Aku yakin kau pasti tahu apa yang menutupi selisih itu. Hanya saja ... kau terlalu malu untuk mengakuinya."
       },
       {
+        "voId": "chr_0012_avywen_mono_self_line03",
         "title": "Dialog Kepercayaan 3",
         "text": "Aku mengembara dari Sentrapolis, bertahan melawan dinginnya wilayah perbatasan lama, menghabiskan malam-malam terang di gubuk Hannabit Circuit, memandangi kapal udara Seš’qamam melayang di langit, dan mendengarkan suara hujan yang tak ada habisnya di dekat benteng Oathkeeper. Dan dalam itu semua, Endmin, namamu bergaung."
       },
       {
+        "voId": "chr_0012_avywen_mono_self_line04",
         "title": "Dialog Kepercayaan 4",
         "text": "Panggil saja aku Lamp. Avywenna sebenarnya nama keluargaku. Eh, ini sungguhan, jadi jangan tertawa. Cukup kita berdua saja yang tahu, ya? Aku tak mau kau jadi incaran orang-orang jahat. Kecuali .... Oh? Kau siap melindungiku?"
       },
       {
+        "voId": "chr_0012_avywen_mono_self_line05",
         "title": "Dialog Kepercayaan 5",
         "text": "Endmin, Talos-II ini luas. Berapa banyak tempat yang sudah kaukunjungi? Oh, baiklah ... kalau begitu, berapa banyak yang masih kauingat? Aku tak sabar menunggumu ingat semuanya. Makin banyak kenangan yang saling kita ceritakan, makin baik, ‘kan?"
       },
       {
+        "voId": "chr_0012_avywen_mono_chat_line01",
         "title": "Obrolan 1",
         "text": "Keluargaku orang Sentrapolis, dan pekerjaan sebagai Kurir sudah jadi panggilan hidup kami sejak zaman leluhur kami. Nah, keluargamu sendiri seperti apa, Endmin?"
       },
       {
+        "voId": "chr_0012_avywen_mono_chat_line02",
         "title": "Obrolan 2",
         "text": "Ta-da! Ini tempat istirahat kecilku. Aku memang jarang menempatinya, tapi aku ingin tempat ini selalu lembut dan rapi. Orang yang sering bepergian sepertiku pun tetap butuh tempat untuk tidur, ‘kan?"
       },
       {
+        "voId": "chr_0012_avywen_mono_chat_line03",
         "title": "Obrolan 3",
         "text": "Kurir harus mengantarkan banyak rahasia dengan aman, dan setiap kiriman itu mahal. Tapi, ada satu hal yang lebih mahal daripada jasa pengiriman itu sendiri, yaitu ... tugasku untuk menjaga rahasia-rahasia itu."
       },
       {
+        "voId": "chr_0012_avywen_mono_chat_line04",
         "title": "Obrolan 4",
         "text": "Tak ada orang yang suka penolakan ... jadi, aku lebih pilih membicarakannya baik-baik daripada harus adu otot. Tapi, sekadar kutekankan saja, aku tak suka ditolak."
       },
       {
+        "voId": "chr_0012_avywen_mono_chat_line05",
         "title": "Obrolan 5",
         "text": "Kau masih ingat si tua Laine, ‘kan? Pria galak itu sama sekali tak pernah tersenyum kepadaku. Tapi, kudengar dia pensiunan yang dihormati, dan saat dia pensiun, orang-orang menangis habis-habisan. Hmph, dia bahkan menyebutku “si pembuat onar” sebelum menyuruhku ke sini. Yah, kalau aku memang begitu, setidaknya aku pembuat onar yang mahir!"
       },
       {
+        "voId": "chr_0012_avywen_mono_about_line01",
         "title": "Topik: Endfield",
         "text": "Selain Alloycarrot, tempatku tumbuh besar, tempat yang paling lama kudiami sekarang adalah Endfield. Sepertinya aku sudah mulai terbiasa menetap."
       },
       {
+        "voId": "chr_0012_avywen_mono_about_line02",
         "title": "Topik: Bisnis Keluarga",
         "text": "Dulu, semasa Gerbang Kosmis masih terbuka, leluhurku bekerja sebagai sopir truk. Rig-rig raksasa itu dulu tampak seperti jalur logam berkilauan yang membentang sepanjang cakrawala. Setelah itu, nenek buyutku, nenekku, dan ibuku bekerja keras di Sloan Security di Sentrapolis! Mereka kecewa berat saat aku memutuskan berhenti .... Ehem. Asal tahu saja, aku tidak begitu saja memutuskan untuk ... mendatangimu ke sini, Endmin."
       },
       {
+        "voId": "chr_0012_avywen_mono_about_line03",
         "title": "Topik: Fesyen",
         "text": "Pakaianku? Intinya adalah gaya dan kepraktisan! Ingat ini saat kau bertugas di lapangan: selalu siagakan perlengkapanmu, dan jangan pernah lengah."
       },
       {
+        "voId": "chr_0012_avywen_mono_about_line04",
         "title": "Topik: Alloycarrot",
         "text": "Astaga, kau belum pernah ke Alloycarrot? Yah, aku tak suka pamer, sih, tapi aku sendiri sudah bepergian ke banyak tempat di Talos-II, dan tak ada yang bisa menandingi terowongan tambang kami. Anak-anak tumbuh di lingkungan yang akrab dan penuh obrolan hangat. Kami selalu bilang: yang bisa menandingi kuatnya bor besar hanyalah persahabatan kami!"
       },
       {
+        "voId": "chr_0012_avywen_explore_point_common_01",
         "title": "Sumber Daya/Barang Koleksi Terdeteksi 1",
         "text": "Perangkatku bereaksi. Mungkin ada sesuatu di sekitar sini."
       },
       {
+        "voId": "chr_0012_avywen_explore_point_valub_01",
         "title": "Sumber Daya/Barang Koleksi Terdeteksi 2",
         "text": "Ikuti aku! Terakhir kali ke sini, aku meninggalkan penanda jejak!"
       },
       {
+        "voId": "chr_0012_avywen_explore_find_locked_01",
         "title": "Area yang Belum Dijelajahi Terdeteksi",
         "text": "Oh, tak bisa kupercaya, ternyata ada tempat yang belum pernah kudatangi!"
       },
       {
+        "voId": "chr_0012_avywen_explore_find_danger_01",
         "title": "Musuh Kuat Ditemukan",
         "text": "Sepertinya dia sama sekali tak mau berunding."
       },
       {
+        "voId": "chr_0012_avywen_interact_mine_valub_01",
         "title": "Penambangan 1",
         "text": "Saksikanlah keahlian warisan para leluhurku dari Rim Billiton!"
       },
       {
+        "voId": "chr_0012_avywen_interact_mine_valub_echo2_01",
         "title": "Penambangan 2",
         "text": "Orang Rim Billiton selalu saling melindungi!"
       },
       {
+        "voId": "chr_0012_avywen_interact_treasure_valub_01",
         "title": "Membuka Kerat",
         "text": "Psssst! Biasanya, temuan sebagus ini kami kubur dulu supaya tak ditemukan orang lain ...."
       },
       {
+        "voId": "chr_0012_avywen_interact_etherium_01",
         "title": "Mendapatkan Aurylene",
         "text": "Aurylene?! Kok kau tahu aku suka benda-benda yang berkilau?"
       },
       {
+        "voId": "chr_0012_avywen_interact_blight_break_01",
         "title": "Menyingkirkan Hawar",
         "text": "Jujur saja, menurutku ini justru cara untuk melindungi diriku dari orang-orang tertentu."
       },
       {
+        "voId": "chr_0012_avywen_interact_rest_01",
         "title": "Istirahat",
         "text": "Aihh, suasana hangat dan nyaman ini benar-benar sempurna. Setelah harus berkotor-kotor dan berbasah-basahan, tempat bersih dan hangat seperti ini terasa bagaikan surga."
       },
       {
+        "voId": "chr_0012_avywen_combat_suppuse_using_01",
         "title": "Penggunaan Taktis 1",
         "text": "Untung aku bawa ini."
       },
       {
+        "voId": "chr_0012_avywen_combat_suppuse_getheal_01",
         "title": "Penggunaan Taktis 2",
         "text": "Kadang aku pun butuh dirawat."
       },
       {
+        "voId": "chr_0012_avywen_combat_remind_danger_01",
         "title": "Peringatan Bahaya",
         "text": "Cari tempat aman!"
       },
       {
+        "voId": "chr_0012_avywen_combat_hurt_lowhp_01",
         "title": "Cedera",
         "text": "Jangan khawatir, aku tak apa."
       },
       {
+        "voId": "chr_0012_avywen_combat_dead_01",
         "title": "0 HP",
         "text": "Biarkan aku pulang ... untuk terakhir kalinya."
       },
       {
+        "voId": "chr_0012_avywen_combat_remind_praise_01",
         "title": "Penyemangat Tim 1",
         "text": "Bagus! Kau tak mau ambil alih pekerjaanku, nih?"
       },
       {
+        "voId": "chr_0012_avywen_combat_remind_praise_02",
         "title": "Penyemangat Tim 2",
         "text": "Wah, kerja sama kita sudah seperti saudara saja, nih!"
       },
       {
+        "voId": "chr_0012_avywen_combat_remind_praise_echo2_01",
         "title": "Respons Penyemangat 1",
         "text": "Yap, memang sekeren itulah aku."
       },
       {
+        "voId": "chr_0012_avywen_combat_remind_praise_echo2_02",
         "title": "Respons Penyemangat 2",
         "text": "Aku jadi merasa seperti di rumah sendiri."
       },
       {
+        "voId": "chr_0012_avywen_combat_intobattle_01",
         "title": "Mulai Pertarungan 1",
         "text": "Langkah pertama memang selalu paling sulit."
       },
       {
+        "voId": "chr_0012_avywen_combat_intobattle_echo2_01",
         "title": "Mulai Pertarungan 2",
         "text": "Ayo tunjukkan kemampuan kita!"
       },
       {
+        "voId": "chr_0012_avywen_combat_outbattle_nor_01",
         "title": "Menang Pertarungan 1",
         "text": "Ngomong saja memang gampang, Bung. Kita juga harus berusaha keras."
       },
       {
+        "voId": "chr_0012_avywen_combat_outbattle_nor_02",
         "title": "Menang Pertarungan 2",
         "text": "Tenang saja, ini memang sudah tugas kami."
       },
       {
+        "voId": "chr_0012_avywen_combat_outbattle_nor_echo2_01",
         "title": "Menang Pertarungan 3",
         "text": "Nah, begitu, pertahankan semangatnya!"
       },
       {
+        "voId": "chr_0012_avywen_combat_outbattle_hard_01",
         "title": "Menang Pertarungan 4",
         "text": "Ada pepatah tua di kalangan Kurir: Agar jalanmu benar, jangan terpaku pada arah langkahmu, tapi perhatikanlah cakrawala."
       },
       {
+        "voId": "chr_0012_avywen_combat_battle_defeat_01",
         "title": "Kalah Bertarung",
         "text": "Kita simpan saja bayaran ini sampai kita bisa balas dendam."
       },
       {
+        "voId": "chr_0012_avywen_mono_attack_last_01",
         "title": "Final Strike 1",
         "text": "Jangan berkedip!"
       },
       {
+        "voId": "chr_0012_avywen_mono_attack_last_02",
         "title": "Final Strike 2",
         "text": "Ini dia!"
       },
       {
+        "voId": "chr_0012_avywen_mono_skill_nor_01",
         "title": "Skill Tarung 1",
         "text": "Awas tersetrum!"
       },
       {
+        "voId": "chr_0012_avywen_mono_skill_nor_02",
         "title": "Skill Tarung 2",
         "text": "Minggir."
       },
       {
+        "voId": "chr_0012_avywen_mono_skill_nor_03",
         "title": "Skill Tarung 3",
         "text": "Mau lari ke mana, hah?"
       },
       {
+        "voId": "chr_0012_avywen_combat_skill_comb_ready_01",
         "title": "Skill Kombo Siap 1",
         "text": "Masih ada aku, lho!"
       },
       {
+        "voId": "chr_0012_avywen_combat_skill_comb_ready_02",
         "title": "Skill Kombo Siap 2",
         "text": "Kau benar-benar membuatku menunggu lama!"
       },
       {
+        "voId": "chr_0012_avywen_mono_skill_comb_release_01",
         "title": "Penggunaan Kombo 1",
         "text": "Ikuti saja!"
       },
       {
+        "voId": "chr_0012_avywen_mono_skill_comb_release_02",
         "title": "Penggunaan Kombo 2",
         "text": "Jangan hilang fokus."
       },
       {
+        "voId": "chr_0012_avywen_mono_attack_extra_01",
         "title": "Penuntas 1",
         "text": "Titik lemahnya ketemu!"
       },
       {
+        "voId": "chr_0012_avywen_mono_attack_extra_02",
         "title": "Penuntas 2",
         "text": "Kena kau."
       },
       {
+        "voId": "chr_0012_avywen_mono_skill_ultimate_01",
         "title": "Ultimate 1",
         "text": "Aku tak suka main lembut."
       },
       {
+        "voId": "chr_0012_avywen_mono_skill_ultimate_02",
         "title": "Ultimate 2",
         "text": "Ada kabar buruk untuk kalian!"
       },
       {
+        "voId": "chr_0012_avywen_mono_skill_ultimate_03",
         "title": "Ultimate 3",
         "text": "Kau bakal gemetaran gara-gara seranganku!"
       }

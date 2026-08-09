@@ -123,322 +123,402 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0021_whiten_chrbark_squad_01",
         "title": "行动准备1",
         "text": "休息时间……要结束了吗？"
       },
       {
+        "voId": "chr_0021_whiten_chrbark_squad_02",
         "title": "行动准备2",
         "text": "再给我两分钟就出发……"
       },
       {
+        "voId": "chr_0021_whiten_chrbark_join_01",
         "title": "编入队伍1",
         "text": "又要出任务了吗？呼……趁我的体能还没耗尽……"
       },
       {
+        "voId": "chr_0021_whiten_chrbark_join_02",
         "title": "编入队伍2",
         "text": "该去探索哪些……不为人知的秘辛呢？哼哼……"
       },
       {
+        "voId": "chr_0021_whiten_chrbark_weap_01",
         "title": "更换武器",
         "text": "啊啊……无法匹敌的力量……呼呃……好沉……"
       },
       {
+        "voId": "chr_0021_whiten_chrbark_gear_01",
         "title": "更换装备",
         "text": "武库的工程师们显然高估了我的持续作战能力……不过……就这样吧。"
       },
       {
+        "voId": "chr_0021_whiten_chrup_skill_01",
         "title": "激活天赋阵列",
         "text": "提升能力就能减少工作了吗？好耶……"
       },
       {
+        "voId": "chr_0021_whiten_chrup_level_01",
         "title": "观看作战记录",
         "text": "除了身体机能以外的部分都成长了……嗯，看来我已经没救了。"
       },
       {
+        "voId": "chr_0021_whiten_chrup_promt01_01",
         "title": "精英化晋升1",
         "text": "真是突如其来的晋升机会……本以为还需要花更多时间的……"
       },
       {
+        "voId": "chr_0021_whiten_chrup_promt02_01",
         "title": "精英化晋升2",
         "text": "看来我的工作比我预想中完成得还要出色……管理员……我需要请两天假犒劳一下自己……"
       },
       {
+        "voId": "chr_0021_whiten_chrup_promt03_01",
         "title": "精英化晋升3",
         "text": "让我晋升这么快真的好吗……还是说这是什么试探下属的管理方式吗？我得好好琢磨一下……"
       },
       {
+        "voId": "chr_0021_whiten_chrup_promt04_01",
         "title": "精英化晋升4",
         "text": "喔喔！这是不是意味着我可以去指挥秋栗做事了？哼哼……等下就去试试。"
       },
       {
+        "voId": "chr_0021_whiten_introduce_01",
         "title": "干员报到",
         "text": "又是这个环节吗？你好……管理员，我的名字是埃特拉，还请不要分配太多重体力工作给我。"
       },
       {
+        "voId": "chr_0021_whiten_mono_switch_01",
         "title": "待命1",
         "text": "哈……活过来了。我暂时不想再去做任何事了……"
       },
       {
+        "voId": "chr_0021_whiten_mono_switch_02",
         "title": "待命2",
         "text": "又过度劳动了……嗯……忙里偷闲的时光可要好好珍惜。"
       },
       {
+        "voId": "chr_0021_whiten_sim_assign_work_01",
         "title": "进驻设施",
         "text": "又是什么新的工作吗？我还是蛮期待的……真的哦。"
       },
       {
+        "voId": "chr_0021_whiten_sim_hello_lower_01",
         "title": "打招呼1",
         "text": "管理员……休息得怎么样？"
       },
       {
+        "voId": "chr_0021_whiten_sim_hello_max_01",
         "title": "打招呼2",
         "text": "难得看到管理员这么有空。"
       },
       {
+        "voId": "chr_0021_whiten_sim_talk_lv01_01",
         "title": "帝江号闲聊1",
         "text": "自从我告诉安塔尔我不喜欢他的那些数字游戏后……他就再也不向我推荐了。嗯……其他人也应该这么做的。"
       },
       {
+        "voId": "chr_0021_whiten_sim_talk_lv02_01",
         "title": "帝江号闲聊2",
         "text": "武库的工程师总是向我抱怨我的枪破损率太高……那也没办法……我能挥舞起这么重的家伙已经是不小的奇迹了。"
       },
       {
+        "voId": "chr_0021_whiten_sim_talk_lv02_02",
         "title": "帝江号闲聊3",
         "text": "安德烈先生……他的脑袋能做到一百八十度旋转吗？嗯……下次我会去问问他的。"
       },
       {
+        "voId": "chr_0021_whiten_sim_talk_max_01",
         "title": "帝江号闲聊4",
         "text": "秋栗很喜欢长耳兽，所以我专门收集了许多长耳兽的料理食谱送给她……不知为何在那之后她整整一个星期没和我说话……真奇怪……"
       },
       {
+        "voId": "chr_0021_whiten_sim_talk_max_02",
         "title": "帝江号闲聊5",
         "text": "我已经习惯孤军深入的战术行动了……虽然很麻烦，但总得有人去做这些事。毕竟……我比其他人更耐得住寂寞。"
       },
       {
+        "voId": "chr_0021_whiten_sim_talk_max_03",
         "title": "帝江号闲聊6",
         "text": "噪音和金属乐更能让我变得平静……停住那些声音很容易，但我喜欢嘈杂声中的些许迷失感，会有些……忘我？"
       },
       {
+        "voId": "chr_0021_whiten_sim_gift_give_01",
         "title": "赠送礼物",
         "text": "管理员，你愿意收下这个吗？放心……不是什么奇怪的东西。"
       },
       {
+        "voId": "chr_0021_whiten_sim_gift_recv_01",
         "title": "接收礼物",
         "text": "送给我的……？嗯……很感谢……很少有小队以外的人送给我礼物。"
       },
       {
+        "voId": "chr_0021_whiten_mono_self_line01",
         "title": "信赖对话1",
         "text": "为什么不加入攻坚小组？不了不了，我对自己体能的不足可是很有自信的……不能给他人增加负担。"
       },
       {
+        "voId": "chr_0021_whiten_mono_self_line02",
         "title": "信赖对话2",
         "text": "有位同行曾说过我对信息的利用率太低……嗯……不过我根本没考虑过怎么去利用那些秘密，太麻烦了……收集它们只是我的爱好……"
       },
       {
+        "voId": "chr_0021_whiten_mono_self_line03",
         "title": "信赖对话3",
         "text": "运气差？我的父母倒是时不时会怀念过去的生活，认为生活的落差是运气差所致……但是，嗯……我觉得无论什么样的经历都有它存在的意义，正如我由此认识了Z7小队的伙伴……"
       },
       {
+        "voId": "chr_0021_whiten_mono_self_line04",
         "title": "信赖对话4",
         "text": "遇到Z7小队前我正处于人生的最低谷……啊……真是灾难。钱被骗光，饥肠辘辘……秋栗和萤石起初把我和被救出的难民们安置在一起，直到我告诉她们裂地者换班的细节和组织情报……萤石一脸惊异地问我怎么做到的……嗯，那时她的表情我依然还记得。"
       },
       {
+        "voId": "chr_0021_whiten_mono_self_line05",
         "title": "信赖对话5",
         "text": "我想过随遇而安的生活……我曾以为霉运缠身的我有这样的想法很奢侈。直到我来到了终末地……加入了Z7小队，遇见了管理员……谢谢你们一直在包容我……"
       },
       {
+        "voId": "chr_0021_whiten_mono_chat_line01",
         "title": "交谈1",
         "text": "我的过去没有那么跌宕起伏，我只记得自己跟着家人辗转各地……嗯，很累、很辛苦，和塔卫二上的大多数人一样。所以我想生活得更轻松一些……"
       },
       {
+        "voId": "chr_0021_whiten_mono_chat_line02",
         "title": "交谈2",
         "text": "在空旷的环境……去感受失真的吉他声给耳朵带来的轻微刺痛感……嗯……我很喜欢……"
       },
       {
+        "voId": "chr_0021_whiten_mono_chat_line03",
         "title": "交谈3",
         "text": "我并不觉得敌后的工作艰苦，相反……不知何时将至的威胁有些微妙的刺激感……嗯，只要准备足够充分，没什么应付不了的。"
       },
       {
+        "voId": "chr_0021_whiten_mono_chat_line04",
         "title": "交谈4",
         "text": "管理员会有觉得被我冒犯到的时候吗？抱歉……人事部门提醒过我这一点……Z7小队的大家让我不用太介意，理由是他们已经习惯了……"
       },
       {
+        "voId": "chr_0021_whiten_mono_chat_line05",
         "title": "交谈5",
         "text": "该怎么利用情报去猜测人的内心？我只负责收集，萤石负责剖析……嗯，我也很想知道她是怎么做到的。不过……她只是告诉我说“经验之谈”。"
       },
       {
+        "voId": "chr_0021_whiten_mono_about_line01",
         "title": "话题：秋栗",
         "text": "嗯……作为超额劳动的报复，我要把秋栗与纸杯蛋糕的秘密公之于众……呵呵，我真是太恶毒了。"
       },
       {
+        "voId": "chr_0021_whiten_mono_about_line02",
         "title": "话题：卡契尔",
         "text": "卡契尔是个毫无秘密的人……嗯，他的一切似乎都已经写在述职报告里了……世界上居然还存在这样的人？"
       },
       {
+        "voId": "chr_0021_whiten_mono_about_line03",
         "title": "话题：萤石",
         "text": "萤石和我搭档的次数最多，她总是因为我说了什么而笑个不停，还会让我多说点话……嗯……人内心的想法真是难以捉摸。"
       },
       {
+        "voId": "chr_0021_whiten_mono_about_line04",
         "title": "话题：安塔尔",
         "text": "那位萨弗拉是个很认真的人……有时候是不是有点认真过头了？工作本就如此辛苦……不过他讲的笑话非常有意思，总能把我和萤石逗笑。"
       },
       {
+        "voId": "chr_0021_whiten_explore_point_common_01",
         "title": "发现资源1",
         "text": "那个看起来还不错……嗯，找个机会带回去吧。"
       },
       {
+        "voId": "chr_0021_whiten_explore_point_valub_01",
         "title": "发现资源2",
         "text": "那边那个……就算再累也有跑一趟的价值。"
       },
       {
+        "voId": "chr_0021_whiten_explore_find_locked_01",
         "title": "发现未探索区域",
         "text": "呼……得去那边探索一番了。"
       },
       {
+        "voId": "chr_0021_whiten_explore_find_danger_01",
         "title": "发现强敌",
         "text": "是强敌……我可以只负责支援吗？"
       },
       {
+        "voId": "chr_0021_whiten_interact_mine_valub_01",
         "title": "采集矿物1",
         "text": "多希望这种场合能用上自动矿机……"
       },
       {
+        "voId": "chr_0021_whiten_interact_mine_valub_echo2_01",
         "title": "采集矿物2",
         "text": "我来帮忙了……不过……别对我有太多期望……"
       },
       {
+        "voId": "chr_0021_whiten_interact_treasure_valub_01",
         "title": "打开储藏箱",
         "text": "这下不算白跑一趟了。"
       },
       {
+        "voId": "chr_0021_whiten_interact_etherium_01",
         "title": "获得醚质",
         "text": "啊，我曾经见过这个……"
       },
       {
+        "voId": "chr_0021_whiten_interact_blight_break_01",
         "title": "消除侵蚀",
         "text": "太好了，这下不用多绕路了。"
       },
       {
+        "voId": "chr_0021_whiten_interact_rest_01",
         "title": "休整",
         "text": "多少恢复了些体力……能再多休息会儿就更好了。"
       },
       {
+        "voId": "chr_0021_whiten_combat_suppuse_using_01",
         "title": "使用战术物品1",
         "text": "试试这个……或许能帮到你……"
       },
       {
+        "voId": "chr_0021_whiten_combat_suppuse_getheal_01",
         "title": "使用战术物品2",
         "text": "之前的准备派上用场了……"
       },
       {
+        "voId": "chr_0021_whiten_combat_remind_danger_01",
         "title": "危险提醒",
         "text": "当心……这时候不能硬撑。"
       },
       {
+        "voId": "chr_0021_whiten_combat_hurt_lowhp_01",
         "title": "负伤",
         "text": "呼……武器好沉……"
       },
       {
+        "voId": "chr_0021_whiten_combat_dead_01",
         "title": "力竭",
         "text": "抱歉……是我拖累了大家……"
       },
       {
+        "voId": "chr_0021_whiten_combat_remind_praise_01",
         "title": "小队激励1",
         "text": "喔哦……刚才的动作我可不行。"
       },
       {
+        "voId": "chr_0021_whiten_combat_remind_praise_02",
         "title": "小队激励2",
         "text": "没错……就应该多依靠团队协作。"
       },
       {
+        "voId": "chr_0021_whiten_combat_remind_praise_echo2_01",
         "title": "回应激励1",
         "text": "但我不想多来几次了……"
       },
       {
+        "voId": "chr_0021_whiten_combat_remind_praise_echo2_02",
         "title": "回应激励2",
         "text": "嗯……每个人都出了份力。"
       },
       {
+        "voId": "chr_0021_whiten_combat_intobattle_01",
         "title": "作战开始1",
         "text": "我不擅长持久战……加速解决吧。"
       },
       {
+        "voId": "chr_0021_whiten_combat_intobattle_echo2_01",
         "title": "作战开始2",
         "text": "到了不得不战斗的时候了吗？上吧。"
       },
       {
+        "voId": "chr_0021_whiten_combat_outbattle_nor_01",
         "title": "作战胜利1",
         "text": "总算结束了……哈，我表现得还不错吧……"
       },
       {
+        "voId": "chr_0021_whiten_combat_outbattle_nor_02",
         "title": "作战胜利2",
         "text": "呼……幸好在体力槽见底前结束了。"
       },
       {
+        "voId": "chr_0021_whiten_combat_outbattle_nor_echo2_01",
         "title": "作战胜利3",
         "text": "还好……没有拖太久……"
       },
       {
+        "voId": "chr_0021_whiten_combat_outbattle_hard_01",
         "title": "作战胜利4",
         "text": "多亏了……大家……还好坚持下来了……"
       },
       {
+        "voId": "chr_0021_whiten_combat_battle_defeat_01",
         "title": "作战失败",
         "text": "下一次……下一次我会更加全力以赴的……不能就这么结束……"
       },
       {
+        "voId": "chr_0021_whiten_mono_attack_last_01",
         "title": "重击1",
         "text": "别乱跑！"
       },
       {
+        "voId": "chr_0021_whiten_mono_attack_last_02",
         "title": "重击2",
         "text": "……这里！"
       },
       {
+        "voId": "chr_0021_whiten_mono_skill_nor_01",
         "title": "战技1",
         "text": "将声波……冻结！"
       },
       {
+        "voId": "chr_0021_whiten_mono_skill_nor_02",
         "title": "战技2",
         "text": "破碎……之声！"
       },
       {
+        "voId": "chr_0021_whiten_mono_skill_nor_03",
         "title": "战技3",
         "text": "哈啊……撕裂吧！"
       },
       {
+        "voId": "chr_0021_whiten_combat_skill_comb_ready_01",
         "title": "连携技就绪1",
         "text": "总算……准备就绪了。"
       },
       {
+        "voId": "chr_0021_whiten_combat_skill_comb_ready_02",
         "title": "连携技就绪2",
         "text": "让你们久等了……"
       },
       {
+        "voId": "chr_0021_whiten_mono_skill_comb_release_01",
         "title": "连携技1",
         "text": "唔……嘿咻！"
       },
       {
+        "voId": "chr_0021_whiten_mono_skill_comb_release_02",
         "title": "连携技2",
         "text": "别急，这就来！"
       },
       {
+        "voId": "chr_0021_whiten_mono_attack_extra_01",
         "title": "处决1",
         "text": "瞄准……弱点！"
       },
       {
+        "voId": "chr_0021_whiten_mono_attack_extra_02",
         "title": "处决2",
         "text": "快点……倒下吧！"
       },
       {
+        "voId": "chr_0021_whiten_mono_skill_ultimate_01",
         "title": "终结技1",
         "text": "音爆……轰击！"
       },
       {
+        "voId": "chr_0021_whiten_mono_skill_ultimate_02",
         "title": "终结技2",
         "text": "汇聚……释放！"
       },
       {
+        "voId": "chr_0021_whiten_mono_skill_ultimate_03",
         "title": "终结技3",
         "text": "将声音凝结！"
       }

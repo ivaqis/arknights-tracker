@@ -123,326 +123,407 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0009_azrila_chrbark_squad_01",
         "title": "Einsatzvorbereitung 1",
         "text": "Alles ist bereit. Ich warte auf deinen Befehl."
       },
       {
+        "voId": "chr_0009_azrila_chrbark_squad_02",
         "title": "Einsatzvorbereitung 2",
         "text": "Eine neue Mission?"
       },
       {
+        "voId": "chr_0009_azrila_chrbark_join_01",
         "title": "Wird zum Team hinzugefügt 1",
         "text": "Ich übernehme die taktische Besprechung."
       },
       {
+        "voId": "chr_0009_azrila_chrbark_join_02",
         "title": "Wird zum Team hinzugefügt 2",
         "text": "Auf geht’s. Der Krieg hört nie auf. Wir können nur weitermachen."
       },
       {
+        "voId": "chr_0009_azrila_chrbark_weap_01",
         "title": "Waffe wird gewechselt",
         "text": "Ein echtes Meisterwerk. Das kann ich sehr gut gebrauchen."
       },
       {
+        "voId": "chr_0009_azrila_chrbark_gear_01",
         "title": "Ausrüstung wird gewechselt",
         "text": "So eine gute Ausrüstung habe ich … schon ewig nicht mehr gesehen."
       },
       {
+        "voId": "chr_0009_azrila_chrup_skill_01",
         "title": "Fähigkeitsmatrix wird aktiviert",
         "text": "Meine Stärke kehrt langsam zurück … aber ich brauche noch mehr."
       },
       {
+        "voId": "chr_0009_azrila_chrup_level_01",
         "title": "Kampfaufzeichnungen ansehen",
         "text": "Ausgezeichnete Teamarbeit … Danke! Ich habe wirklich viel gelernt."
       },
       {
+        "voId": "chr_0009_azrila_chrup_promt01_01",
         "title": "Operator-Beförderung 1",
         "text": "Ich weiß dein Vertrauen zu schätzen. Ich werde dich nicht enttäuschen."
       },
       {
+        "voId": "chr_0009_azrila_chrup_promt02_01",
         "title": "Operator-Beförderung 2",
         "text": "Verstanden. Jetzt, wo ich noch wichtigere Aufgaben übernehme, kann ich vielleicht auch meinen Input beim Kampfplan geben?"
       },
       {
+        "voId": "chr_0009_azrila_chrup_promt03_01",
         "title": "Operator-Beförderung 3",
         "text": "Früher hätte der Kommandant uns im Orden für Momente wie diesen Abzeichen verliehen … Nein, das ist nicht nötig. Alles kann so bleiben, wie es ist. Ich bin nicht hier, um Ehre zu erlangen."
       },
       {
+        "voId": "chr_0009_azrila_chrup_promt04_01",
         "title": "Operator-Beförderung 4",
         "text": "Ich kann nicht sagen, wann dieser Kreuzzug enden wird, aber mir wird immer klarer, dass er mit größter Ernsthaftigkeit geführt werden muss … Ich hoffe, du gewährst mir die Ehre, ihn an deiner Seite zu Ende zu führen."
       },
       {
+        "voId": "chr_0009_azrila_introduce_01",
         "title": "Operatorin meldet sich zum Dienst",
         "text": "Ember, Ritterin des Ordens des Stahlschwurs, meldet sich zum Dienst. Wie im Pakt versprochen, werde ich deinen Befehlen bis zum Ende des Kreuzzugs folgen."
       },
       {
+        "voId": "chr_0009_azrila_mono_switch_01",
         "title": "Warten 1",
         "text": "Mein Kreuzzug ist noch lange nicht vorbei …"
       },
       {
+        "voId": "chr_0009_azrila_mono_switch_02",
         "title": "Warten 2",
         "text": "Auf dem Schlachtfeld gibt’s keine Gnade für Fehler. Deshalb müssen wir unsere Fertigkeiten mit echter Hingabe verbessern."
       },
       {
+        "voId": "chr_0009_azrila_sim_assign_work_01",
         "title": "Zuweisung zur Anlage",
         "text": "Eine besondere Mission? Verstanden … Ich werde sie mit unerschütterlicher Entschlossenheit erfüllen."
       },
       {
+        "voId": "chr_0009_azrila_sim_hello_lower_01",
         "title": "Gruß 1",
         "text": "Hast du einen Kampfeinsatz, bei dem ich dabei euch unterstützen kann?"
       },
       {
+        "voId": "chr_0009_azrila_sim_hello_max_01",
         "title": "Gruß 2",
         "text": "Willkommen zurück, Endmin. Wohin wird uns die nächste Schlacht führen?"
       },
       {
+        "voId": "chr_0009_azrila_sim_talk_lv01_01",
         "title": "Dijiang-Geplauder 1",
         "text": "Die Dijiang ist ein Schiff mit allem Drum und Dran, aber sie ist nicht für den Krieg gebaut. Es wird eine Weile dauern, bis ich mich daran gewöhnt habe, dass sie nicht immer einsatzbereit ist."
       },
       {
+        "voId": "chr_0009_azrila_sim_talk_lv02_01",
         "title": "Dijiang-Geplauder 2",
         "text": "Meine Ausbildung beim Orden? Hm … Damals konnte ich es mit einem ganzen Homoiossaron-Cluster allein aufnehmen. Also schickte mein Kommandant mir ganze Gruppen neuer Rekruten, um gegen mich zu kämpfen."
       },
       {
+        "voId": "chr_0009_azrila_sim_talk_lv02_02",
         "title": "Dijiang-Geplauder 3",
         "text": "Unter der Aurora befinden sich die Verteidigungslinien der Eidwächter. Als die Schlacht begann, war der Himmel von schwebenden Aggeloi-Schwärmen bedeckt. Natürlich waren auch unsere Kampfhubschrauber und Begleitflugzeuge dabei … Moment mal, warum verläuft die Bergkette so …? Entschuldige … ich habe mich wohl geirrt."
       },
       {
+        "voId": "chr_0009_azrila_sim_talk_max_01",
         "title": "Dijiang-Geplauder 4",
         "text": "Für meine Einheit sind Sprünge aus großer Höhe in Kriegsgebiete ganz normal. Aber hier oben verliert der Begriff „Höhe“ langsam seine Bedeutung."
       },
       {
+        "voId": "chr_0009_azrila_sim_talk_max_02",
         "title": "Dijiang-Geplauder 5",
         "text": "Die Operatoren hier sind wirklich ausgezeichnete Sparring-Partner. Gute Zusammenarbeit im Einsatz ist ihnen wichtig, und sie sind sehr kreativ, wenn es um die Entwicklung von Strategien geht. Ich habe viel von ihnen gelernt. Als Eidwächter muss ich mithalten und mich ständig verbessern."
       },
       {
+        "voId": "chr_0009_azrila_sim_talk_max_03",
         "title": "Dijiang-Geplauder 6",
         "text": "Der Geheimdienst hat mir einige Missionsprotokolle gezeigt. So viele Menschen haben ihr Leben für ihre Überzeugungen gegeben, ohne jemals auf dem Schlachtfeld gewesen zu sein. Vielleicht haben sie es nicht bereut, aber ich frage mich: Was können wir tun, damit solche Opfer nicht so häufig gebracht werden müssen?"
       },
       {
+        "voId": "chr_0009_azrila_sim_gift_give_01",
         "title": "Geschenke anbieten",
         "text": "Nimm das hier bitte an, Endmin."
       },
       {
+        "voId": "chr_0009_azrila_sim_gift_recv_01",
         "title": "Geschenke annehmen",
         "text": "Danke. Ich nehme das als Zeichen deiner Anerkennung."
       },
       {
+        "voId": "chr_0009_azrila_mono_self_line01",
         "title": "Vertrauensgespräch 1",
         "text": "Dieser Rüstungsanzug ist sehr kompliziert konstruiert. Als Eidwächter müssen wir die entsprechenden technischen Fertigkeiten erlernen, um ihn funktionsfähig zu halten. Doch letztlich ist es nicht der Anzug, der dich im Kampf am Leben hält. Sondern deine Entschlossenheit, standzuhalten, dein Verstand, Strategien zu entwickeln, und dein Mut, zu handeln."
       },
       {
+        "voId": "chr_0009_azrila_mono_self_line02",
         "title": "Vertrauensgespräch 2",
         "text": "Bitte lass mich die Behandlungskosten für diesen Reservisten übernehmen. Unter den Eidwächtern gibt es viele, die bereit sind, ihr Leben zu opfern. Aber ohne ein klares Ziel vor Augen bringt diese Entschlossenheit nur alle in Gefahr. *seufz* Ich war in Gedanken versunken und habe härter zugeschlagen als beabsichtigt … Es tut mir wirklich leid."
       },
       {
+        "voId": "chr_0009_azrila_mono_self_line03",
         "title": "Vertrauensgespräch 3",
         "text": "Bei den Eidwächtern gibt es eine Tradition: Wenn ein Hilfstrupp zu stark dezimiert ist, um weiterzumachen, muss sich ein Eidwächter zurückziehen, um neue Leute zu rekrutieren. Man könnte das als eine Art Kreuzzug betrachten. Wir nehmen uns Zeit, um würdige Nachfolger zu finden, und überstürzen nichts. Aber … es scheint, als hätte mein Kreuzzug schon viel zu lange gedauert."
       },
       {
+        "voId": "chr_0009_azrila_mono_self_line04",
         "title": "Vertrauensgespräch 4",
         "text": "Als ich die Andenken und die Asche gefallener Kameraden überbrachte, traf ich ihre Eltern, Brüder und andere Angehörige. Ich hielt sogar den besten Freund eines Soldaten davon ab, in den Norden zu ziehen, um Rache zu nehmen. Irgendwie wurde ich zu der Person, die die anderen am meisten tröstete und davon überzeugte, nicht impulsiv zu handeln. Vielleicht hat der Kommandant deshalb darauf bestanden, dass ich den Kreuzzug ohne Verzögerung beginnen sollte."
       },
       {
+        "voId": "chr_0009_azrila_mono_self_line05",
         "title": "Vertrauensgespräch 5",
         "text": "Das ist Claire, das sind Zhao, Nilla und Lucion. Der mit den scharfen Augen ist Fiyanggu, ein Neuling. Keiner von ihnen hat wirklich getrunken. Wir haben nur so getan, als würden wir anstoßen, weil ein Journalist zu Besuch war. Sie waren allesamt bemerkenswerte Soldaten und haben deshalb diesen Tag gewählt, um ihre Mission zu erfüllen. Wenn ihre Nachfolger genauso außergewöhnlich sind … Ich glaube nicht, dass ich mich dazu durchringen kann, sie in den Norden zu schicken. Warum denke ich so, Endmin? Was fehlt mir?"
       },
       {
+        "voId": "chr_0009_azrila_mono_chat_line01",
         "title": "Geplauder 1",
         "text": "Ember ist mein eigener Deckname. Ich will nicht vor der Wahrheit weglaufen: Ich bin noch nicht bereit, an die Nordfront zurückzukehren. Solange jedoch noch die Chance auf ein Feuer besteht, wird Ember die Flammen wieder entfachen. Endmin, ich vertraue darauf, dass Endfield mir dabei helfen wird, meinen Weg zu finden."
       },
       {
+        "voId": "chr_0009_azrila_mono_chat_line02",
         "title": "Geplauder 2",
         "text": "Normale Sicherheitskräfte können mit Kriossons zurechtkommen, aber wenn Thrylissorons auftauchen, sieht die Sache ganz anders aus. Unsere Aufgabe als taktische Hilfstrupps der Eidwächter ist es, feindliche Formationen schnell zu zerstören, Ankhors unschädlich zu machen und zu verhindern, dass noch gefährlichere Aggeloi-Cluster entstehen. Diese Missionen sind sehr riskant, aber wir sind stolz darauf, sie zu erfüllen."
       },
       {
+        "voId": "chr_0009_azrila_mono_chat_line03",
         "title": "Geplauder 3",
         "text": "Ein dezimierter Hilfstrupp wird nach hinten abgezogen, um neue Soldaten zu rekrutieren. Es dient als spezieller Rekrutierungskanal für die Eidwächter. Diejenigen, die mich herausfordern, wollen sich uns anschließen und hegen keinen persönlichen Groll gegen mich. Natürlich garantiert allein der Sieg noch keine Aufnahme in unsere Reihen. Stärke und Fertigkeiten sind zwar wichtig, aber was wirklich zählt, ist, was der Kampf über den Charakter eines Herausforderers verrät."
       },
       {
+        "voId": "chr_0009_azrila_mono_chat_line04",
         "title": "Geplauder 4",
         "text": "Neugierig auf meine Wächterwaffe? Leider habe ich sie in der Festung der Eidwächter liegen lassen. Ich kämpfe normalerweise nicht mit Fernkampfwaffen. Meine Waffe ist vielmehr ein Teil von mir. Wenn ich sie dort lasse, erinnert sie mich daran, dass ich eines Tages zurückkehren werde."
       },
       {
+        "voId": "chr_0009_azrila_mono_chat_line05",
         "title": "Geplauder 5",
         "text": "Als ich von der Front abgezogen wurde, hat der Kommandant kein Datum für meine Rückkehr genannt. Ich habe sogar von anderen Veteranen gehört, die denselben Befehl erhalten haben. Sie wurden zwar zur Rekrutierung an die Front geschickt, sind aber nie in die Festung zurückgekehrt. Vielleicht ist das die respektvolle Art zu sagen, dass sie stillschweigend in den Ruhestand versetzt wurden. Aber ich habe nicht vor, diesen Weg zu gehen. Deshalb hat mich der Kommandant an dich verwiesen. Er glaubt, dass Endfield mir dabei helfen könnte, herauszufinden, was mir noch fehlt. Ich hoffe aufrichtig, dass er recht hat."
       },
       {
+        "voId": "chr_0009_azrila_mono_about_line01",
         "title": "Thema: Orden des Stahlschwurs",
         "text": "Während des Ersten Aggeloi-Kriegs wurde eine Koalition aus Elitetruppen gebildet, um in den Norden vorzustoßen. Sie schworen, bis zum bitteren Ende zu kämpfen, und begannen einen langen, aufreibenden Zermürbungskrieg. Dies war der Beginn der ersten Eidwächter. Der Kommandant hat mir übrigens einmal erzählt, dass du, Endmin, ihnen dabei geholfen hast, die Kommunikation mit dem Hinterland wiederherzustellen. Und jetzt bin ich hier und erzähle dir diese Geschichte. Es fühlt sich schon beinahe unwirklich an."
       },
       {
+        "voId": "chr_0009_azrila_mono_about_line02",
         "title": "Thema: Aggeloi-Krieg",
         "text": "Taktik und Technologie mögen uns einen Vorteil gegenüber den Aggeloi verschaffen, doch sobald ein Kampf zu einem Krieg eskaliert, sind Verluste an Menschenleben unvermeidlich. Als der Erste Aggeloi-Krieg endete, hatten die Aktivitäten der Ankhor und der Aggeloi deutlich nachgelassen. Doch viele Jahre später, als ich selbst Soldat war, hatten die Kämpfe an der Front bereits wieder an Intensität zugenommen … Vielleicht hat der wahre Krieg gerade erst begonnen."
       },
       {
+        "voId": "chr_0009_azrila_mono_about_line03",
         "title": "Thema: Nördliche Verteidigungslinie",
         "text": "Die nördliche Verteidigungslinie war nie eine feste Grenze. Jeden Tag kämpfen wir gegen die Aggeloi um jeden Zentimeter Boden. Wenn die Kämpfe besonders heftig werden, schleppen unsere Soldaten sogar Baumaterialien in die Schlacht, um an frisch eroberten strategischen Punkten schnell neue Festungen zu errichten. Wir ziehen uns nie von der Verteidigungslinie zurück – wir sind die Verteidigungslinie."
       },
       {
+        "voId": "chr_0009_azrila_mono_about_line04",
         "title": "Thema: Originium-Techniken",
         "text": "Genau wie normales Feuer kann ich mit meinen Originium-Techniken Dinge anzünden und Gegner verbrennen. Mit präziser Kontrolle kann ich damit sogar Wunden reinigen und die Körpertemperatur regulieren. Diese Fähigkeiten können im Kampf nützlich sein, ersetzen aber keine echten Heiltechniken. Am besten ist es immer noch, Verletzte schnell wegzubringen und sie richtig versorgen zu lassen."
       },
       {
+        "voId": "chr_0009_azrila_mono_about_line05",
         "title": "Thema: Zivilisationsgürtel",
         "text": "Selbst mitten in den schlimmsten Kämpfen wurde die Versorgung der Front mit Oripathie-Hemmer nie unterbrochen. Als Infizierte weiß ich genau, wie wichtig das ist. Es ist kaum vorstellbar, wie die Menschen im Terra-Zeitalter gelebt haben … Originium-Katastrophen gibt es hier nicht mehr, und Infizierte werden nicht mehr massenhaft verfolgt. Vielleicht ist das ein Zeichen dafür, dass wir weit gekommen sind?"
       },
       {
+        "voId": "chr_0009_azrila_explore_point_common_01",
         "title": "Ressource/Sammelobjekt entdeckt 1",
         "text": "Nützliche Ressourcen gefunden. Für die Bergung vorbereiten."
       },
       {
+        "voId": "chr_0009_azrila_explore_point_valub_01",
         "title": "Ressource/Sammelobjekt entdeckt 2",
         "text": "Wertvolles Objekt identifiziert. Erbitte Genehmigung zur Bergung."
       },
       {
+        "voId": "chr_0009_azrila_explore_find_locked_01",
         "title": "Unerforschter Bereich entdeckt",
         "text": "Vor uns sind merkwürdige Zeichen aufgetaucht. Sie passen nicht zu den bekannten Ankhor-Mustern. Sollen wir mal nachsehen?"
       },
       {
+        "voId": "chr_0009_azrila_explore_find_danger_01",
         "title": "Starker Gegner entdeckt",
         "text": "Gefährlicher Feind gesichtet. Bleibt auf der Hut."
       },
       {
+        "voId": "chr_0009_azrila_interact_mine_valub_01",
         "title": "Abbau 1",
         "text": "Stocke deine Reserven auf, wann immer sich dir die Gelegenheit dazu bietet. Du willst schließlich nicht, dass dir in wichtigen Momenten etwas fehlt."
       },
       {
+        "voId": "chr_0009_azrila_interact_mine_valub_echo2_01",
         "title": "Abbau 2",
         "text": "Bist du auf Mineraliensuche? Lass mich dir helfen."
       },
       {
+        "voId": "chr_0009_azrila_interact_treasure_valub_01",
         "title": "Kiste öffnen",
         "text": "Hoffentlich hilft dir das weiter."
       },
       {
+        "voId": "chr_0009_azrila_interact_etherium_01",
         "title": "Aurylen erhalten",
         "text": "Sammeln wir das hier? Verstanden, ich halte die Augen danach auf."
       },
       {
+        "voId": "chr_0009_azrila_interact_blight_break_01",
         "title": "Eliminierung der Verderbnis",
         "text": "Diese ekelhaften Hindernisse stehen unserem Vorankommen jetzt nicht mehr im Weg."
       },
       {
+        "voId": "chr_0009_azrila_interact_rest_01",
         "title": "Ausruhen",
         "text": "Genug ausgeruht. Lass uns mit der Mission weitermachen!"
       },
       {
+        "voId": "chr_0009_azrila_combat_suppuse_using_01",
         "title": "Taktische Nutzung 1",
         "text": "Bereite taktische Unterstützung vor."
       },
       {
+        "voId": "chr_0009_azrila_combat_suppuse_getheal_01",
         "title": "Taktische Nutzung 2",
         "text": "Fertig. Zurück zum Kampfgeschehen."
       },
       {
+        "voId": "chr_0009_azrila_combat_remind_danger_01",
         "title": "Gefahrenwarnung",
         "text": "Bereitet euch auf den Aufprall vor!"
       },
       {
+        "voId": "chr_0009_azrila_combat_hurt_lowhp_01",
         "title": "Verletzt",
         "text": "Bis zum bitteren Ende!"
       },
       {
+        "voId": "chr_0009_azrila_combat_dead_01",
         "title": "0 LP",
         "text": "Der Kreuzzug … darf hier nicht enden …"
       },
       {
+        "voId": "chr_0009_azrila_combat_remind_praise_01",
         "title": "Teammotivation 1",
         "text": "Hervorragende Leistung."
       },
       {
+        "voId": "chr_0009_azrila_combat_remind_praise_02",
         "title": "Teammotivation 2",
         "text": "Fantastisches Kampfmanöver."
       },
       {
+        "voId": "chr_0009_azrila_combat_remind_praise_echo2_01",
         "title": "Motivationsreaktion 1",
         "text": "Jeder hat seinen Teil zum Erfolg beigetragen."
       },
       {
+        "voId": "chr_0009_azrila_combat_remind_praise_echo2_02",
         "title": "Motivationsreaktion 2",
         "text": "Das ist alles unserer soliden Teamarbeit zu verdanken."
       },
       {
+        "voId": "chr_0009_azrila_combat_intobattle_01",
         "title": "Kampf beginnt 1",
         "text": "Trau dich! Ich bin dein Gegner!"
       },
       {
+        "voId": "chr_0009_azrila_combat_intobattle_echo2_01",
         "title": "Kampf beginnt 2",
         "text": "Alles klar. Feind wird angegriffen."
       },
       {
+        "voId": "chr_0009_azrila_combat_outbattle_nor_01",
         "title": "Kampfsieg 1",
         "text": "Ein wohlverdienter Sieg."
       },
       {
+        "voId": "chr_0009_azrila_combat_outbattle_nor_02",
         "title": "Kampfsieg 2",
         "text": "Wir haben mit Mut und Umsicht gekämpft. Super Arbeit, Leute!"
       },
       {
+        "voId": "chr_0009_azrila_combat_outbattle_nor_echo2_01",
         "title": "Kampfsieg 3",
         "text": "Wir haben diesen Sieg gemeinsam geschafft."
       },
       {
+        "voId": "chr_0009_azrila_combat_outbattle_hard_01",
         "title": "Kampfsieg 4",
         "text": "Meine Leistung war enttäuschend … Aber ich nehme mir das Gelernte zu Herzen und werde mich verbessern. Versprochen!"
       },
       {
+        "voId": "chr_0009_azrila_combat_battle_defeat_01",
         "title": "Niederlage im Kampf",
         "text": "Habe ich etwa schon wieder die gleichen Fehler gemacht …?"
       },
       {
+        "voId": "chr_0009_azrila_mono_attack_last_01",
         "title": "Abschlussangriff 1",
         "text": "Nimm das!"
       },
       {
+        "voId": "chr_0009_azrila_mono_attack_last_02",
         "title": "Abschlussangriff 2",
         "text": "Jetzt stirb endlich!"
       },
       {
+        "voId": "chr_0009_azrila_mono_skill_nor_01",
         "title": "Kampffertigkeit 1",
         "text": "Du kannst mich nicht aufhalten!"
       },
       {
+        "voId": "chr_0009_azrila_mono_skill_nor_02",
         "title": "Kampffertigkeit 2",
         "text": "Vernichte sie!"
       },
       {
+        "voId": "chr_0009_azrila_mono_skill_nor_03",
         "title": "Kampffertigkeit 3",
         "text": "Weiter so!"
       },
       {
+        "voId": "chr_0009_azrila_combat_skill_comb_ready_01",
         "title": "Kombofertigkeit bereit 1",
         "text": "Bereit zur Unterstützung!"
       },
       {
+        "voId": "chr_0009_azrila_combat_skill_comb_ready_02",
         "title": "Kombofertigkeit bereit 2",
         "text": "In Position!"
       },
       {
+        "voId": "chr_0009_azrila_mono_skill_comb_release_01",
         "title": "Kombo wirken 1",
         "text": "Nicht mit mir!"
       },
       {
+        "voId": "chr_0009_azrila_mono_skill_comb_release_02",
         "title": "Kombo wirken 2",
         "text": "Das ist dein Ende!"
       },
       {
+        "voId": "chr_0009_azrila_mono_attack_extra_01",
         "title": "Wuchtschlag 1",
         "text": "Zersplittere!"
       },
       {
+        "voId": "chr_0009_azrila_mono_attack_extra_02",
         "title": "Wuchtschlag 2",
         "text": "Erbärmlich!"
       },
       {
+        "voId": "chr_0009_azrila_mono_skill_ultimate_01",
         "title": "Ultimative Fertigkeit 1",
         "text": "Feier des Eidwächters!"
       },
       {
+        "voId": "chr_0009_azrila_mono_skill_ultimate_02",
         "title": "Ultimative Fertigkeit 2",
         "text": "Ich werde der Avatar des Lichts sein!"
       },
       {
+        "voId": "chr_0009_azrila_mono_skill_ultimate_03",
         "title": "Ultimative Fertigkeit 3",
         "text": "Hier wird das Licht für immer leuchten!"
       }

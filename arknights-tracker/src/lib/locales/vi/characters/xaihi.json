@@ -127,318 +127,397 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0011_seraph_chrbark_squad_01",
         "title": "Chuẩn Bị Tác Chiến 1",
         "text": "Tôi sẽ cầu nguyện cho ngài, Endministrator."
       },
       {
+        "voId": "chr_0011_seraph_chrbark_squad_02",
         "title": "Chuẩn Bị Tác Chiến 2",
         "text": "Tôi đứng nơi đây tỉnh thức, khi Luật Pháp dõi theo tôi."
       },
       {
+        "voId": "chr_0011_seraph_chrbark_join_01",
         "title": "Đang thêm vào đội 1",
         "text": "Tôi đã sẵn sàng tiếp nhận mệnh lệnh của ngài, Endministrator."
       },
       {
+        "voId": "chr_0011_seraph_chrbark_join_02",
         "title": "Đang thêm vào đội 2",
         "text": "Một lựa chọn hợp lý."
       },
       {
+        "voId": "chr_0011_seraph_chrbark_weap_01",
         "title": "Đang đổi vũ khí",
         "text": "Tôi có thể điều chỉnh đôi chút không? Tôi cam đoan, mọi chỉnh sửa đều trong giới hạn an toàn."
       },
       {
+        "voId": "chr_0011_seraph_chrbark_gear_01",
         "title": "Đang đổi trang bị",
         "text": "Chân Lý được bảo toàn bởi chính sự thiêng liêng của nó."
       },
       {
+        "voId": "chr_0011_seraph_chrup_skill_01",
         "title": "Kích hoạt Ma Trận Năng Lực",
         "text": "Một khi ta đoàn kết, cơ mưu sẽ sinh khởi."
       },
       {
+        "voId": "chr_0011_seraph_chrup_level_01",
         "title": "Xem Hồ Sơ Chiến Đấu",
         "text": "Và tôi sẽ cầu nguyện để nâng đỡ những kẻ đã lầm lạc."
       },
       {
+        "voId": "chr_0011_seraph_chrup_promt01_01",
         "title": "Thăng Bậc Cán Viên 1",
         "text": "Hãy nhìn xem, ân huệ của Luật Pháp đã hiển hiện… À, và cùng với đó là niềm tín nhiệm từ Endministrator! Lẽ nào tôi lại không dâng lời cảm tạ người sao?"
       },
       {
+        "voId": "chr_0011_seraph_chrup_promt02_01",
         "title": "Thăng Bậc Cán Viên 2",
         "text": "Luật Pháp dõi theo và che chở những kẻ khiêm nhu, chứ không phải kẻ thông tuệ, khôn ngoan hay giàu có. Dẫu nhờ vinh quang ấy đưa tôi lên vị trí này, tôi vẫn khiêm nhường và dâng lời cảm tạ đến người."
       },
       {
+        "voId": "chr_0011_seraph_chrup_promt03_01",
         "title": "Thăng Bậc Cán Viên 3",
         "text": "Mọi thứ rõ ràng như những đường Mạch Originium. Thăng bậc lần này trùng khớp với kết quả đã dự đoán. Hửm? Bắt... bắt tay sao? Tôi... Tôi không giỏi khoản đó lắm..."
       },
       {
+        "voId": "chr_0011_seraph_chrup_promt04_01",
         "title": "Thăng Bậc Cán Viên 4",
         "text": "Tôi từng tái cấu trúc mái vòm mã hóa của Giáo Đường để nâng cao hiệu suất vận hành. Nhưng rồi sự cộng hưởng bất ngờ xảy ra khi giải thuật cổ đại đang xử lý luồng dữ liệu. Kết quả... phức tạp vô cùng. Thế nhưng, điều từng khiến tôi bị ruồng bỏ khỏi cố hương... lại trở thành ân huệ tại Endfield. Có lẽ đây chính là điều mà Luật Pháp muốn hé lộ cho tôi!"
       },
       {
+        "voId": "chr_0011_seraph_introduce_01",
         "title": "Cán Viên đang báo cáo nhiệm vụ",
         "text": "Ôi Tri thức cổ xưa, xin chớ dẫn dắt ta vào mê lộ, hãy cứu ta khỏi những dòng mã hiểm độc... Tôi là Xaihi, Endministrator. Mong ngài được khai sáng."
       },
       {
+        "voId": "chr_0011_seraph_mono_switch_01",
         "title": "Chờ Lệnh 1",
         "text": "Chiêm nghiệm... Tính toán... Tuyên ngôn... Từ bỏ."
       },
       {
+        "voId": "chr_0011_seraph_mono_switch_02",
         "title": "Chờ Lệnh 2",
         "text": "Tôi dâng cuộc đối thoại và suy tưởng hôm nay cho thiết bị của ngài, với lòng kính ngưỡng..."
       },
       {
+        "voId": "chr_0011_seraph_sim_assign_work_01",
         "title": "Phân Công Vào Công Trình",
         "text": "Xin mệnh lệnh của ngài được thực thi. Endministrator, thông qua phụng sự, con đường của chúng ta sẽ dần hiện rõ."
       },
       {
+        "voId": "chr_0011_seraph_sim_hello_lower_01",
         "title": "Lời Chào 1",
         "text": "Mong ngài luôn được bình an và an toàn."
       },
       {
+        "voId": "chr_0011_seraph_sim_hello_max_01",
         "title": "Lời Chào 2",
         "text": "Endministrator, một lần nữa ngài lại xuất hiện trong kết quả tính toán của tôi."
       },
       {
+        "voId": "chr_0011_seraph_sim_talk_lv01_01",
         "title": "Trò Chuyện Nhàn Rỗi Dijiang 1",
         "text": "Đang xác thực dữ liệu, phân tích cú pháp, tạo lập kết quả... Xin chào, Endministrator."
       },
       {
+        "voId": "chr_0011_seraph_sim_talk_lv02_01",
         "title": "Trò Chuyện Nhàn Rỗi Dijiang 2",
         "text": "Endministrator, tôi đã nhận được tín hiệu của ngài. Tôi đang tiến hành giải mã ý nghĩa của nó. Xin chờ trong chốc lát..."
       },
       {
+        "voId": "chr_0011_seraph_sim_talk_lv02_02",
         "title": "Trò Chuyện Nhàn Rỗi Dijiang 3",
         "text": "À... Tôi nhận ra mình thích sự hiện diện của máy móc hơn con người. Dòng chảy sinh học của con người bất định và khó đo lường, trong khi máy móc lại thở bằng nhịp điệu logic và nhất quán."
       },
       {
+        "voId": "chr_0011_seraph_sim_talk_max_01",
         "title": "Trò Chuyện Nhàn Rỗi Dijiang 4",
         "text": "Thiết bị đầu cuối của tôi vừa ghi nhận hơn năm mươi lỗi chỉ trong mười mili giây. Nhưng xin hãy yên tâm, tôi đã ưu tiên thiết lập kết nối giữa chúng ta. Hmm? Đánh giá của tôi với hiệu suất tổng thể của Dijiang...? Tôi cho rằng, giữa muôn vàn vấn đề, con tàu vẫn kiên cường vượt qua mọi thử thách như thể đang gánh chịu vì một ai đó khác vậy."
       },
       {
+        "voId": "chr_0011_seraph_sim_talk_max_02",
         "title": "Trò Chuyện Nhàn Rỗi Dijiang 5",
         "text": "Khi Luật Pháp cho phép, ta sẽ hành động: Thiên đường sẽ được phục hồi trên thế giới này. Kẻ mở đường sẽ băng qua hoang địa và chạm đến hạnh phúc. Bởi Chân Lý ẩn mình trong những điều bí ẩn, để kẻ lạc lối thôi hoang mang mà sánh bước cùng những Bậc Tôn Nghiêm, sẻ chia một mục đích vĩnh hằng."
       },
       {
+        "voId": "chr_0011_seraph_sim_talk_max_03",
         "title": "Trò Chuyện Nhàn Rỗi Dijiang 6",
         "text": "Trong mắt những cán viên khác, ngài là người dẫn đường từ quá khứ, một biểu tượng trong hiện tại, và là chồi Originium đang lớn dần về phía tương lai. Nhưng ở tầng sâu của Mạng Lưới Protorig, tôi đã chứng kiến một ngài rất khác... Tôi chỉ có thể cầu nguyện rằng ký hiệu và hàm ý sẽ trở thành một thể thống nhất. Mong ngài bước đi trong ơn phước, Endministrator."
       },
       {
+        "voId": "chr_0011_seraph_sim_gift_give_01",
         "title": "Tặng Quà",
         "text": "Endministrator, tôi có thể mượn công suất xử lý của ngài một lát không? Tôi... Tôi muốn bày tỏ lòng biết ơn cho những cải thiện mà ngài đã ban cho tôi. Ồ... ngài không nhận ra sao? Phù, tôi nhẹ cả người..."
       },
       {
+        "voId": "chr_0011_seraph_sim_gift_recv_01",
         "title": "Nhận quà",
         "text": "Đây là một chỉ thị! À, xin tha thứ cho sự thiếu nhã nhặn của tôi... Chân Lý công nhận những nỗ lực của ngài."
       },
       {
+        "voId": "chr_0011_seraph_mono_self_line01",
         "title": "Đối Thoại Tín Nhiệm 1",
         "text": "Tu Hội đã chia sẻ tri thức và vận mệnh của họ với ngài, Endministrator."
       },
       {
+        "voId": "chr_0011_seraph_mono_self_line02",
         "title": "Đối Thoại Tín Nhiệm 2",
         "text": "Mọi đề xuất của tôi đều khá thực tiễn và hữu ích...? Không, tôi không đi theo con đường của chủ nghĩa thực dụng... Viện Trưởng từng cảnh báo chúng tôi rằng, tại Talos-II, đức tin của chúng ta cần mang lại những kết quả cụ thể và thiết thực hơn. Sự thịnh vượng nơi Lateran giờ chỉ còn là ký ức xa xăm. Chỉ có mối liên kết giữa chúng ta là điều sót lại."
       },
       {
+        "voId": "chr_0011_seraph_mono_self_line03",
         "title": "Đối Thoại Tín Nhiệm 3",
         "text": "Sau chừng ấy thời gian, tôi cảm thấy mình đã đến gần hơn với Endministrator. Giờ hẳn là lúc thích hợp để thể hiện sự ấm áp, lòng tin tưởng và thiện chí... A, Endministrator đang lại gần. Nhanh lên nào, Xaihi, hãy thực hiện một cử chỉ thân thiện... À thì... Endministrator, ngài có muốn cùng tôi cầu nguyện buổi sớm không?"
       },
       {
+        "voId": "chr_0011_seraph_mono_self_line04",
         "title": "Đối Thoại Tín Nhiệm 4",
         "text": "Xin thứ lỗi cho tôi, Endministrator… Trước khi bất khả kháng mà phải chạm vào ngài, tôi phải xả hết lượng tĩnh điện tích tụ trên đầu ngón tay đã… Ồ? Ngài không sợ những thứ đó sao? Nhưng… bọn tiểu quái này luôn lén bám vào tay người ta… và chích một cái khi ngài ít ngờ tới nhất… như thế này."
       },
       {
+        "voId": "chr_0011_seraph_mono_self_line05",
         "title": "Đối Thoại Tín Nhiệm 5",
         "text": "Suốt bao năm ở Giáo Đường, tôi mải mê nghiên cứu, chẳng mảy may nghĩ đến việc những thành quả tốt đẹp ấy có thể khai sáng cho Talos-II ra sao. Thế nhưng, Luật Pháp đã tiết lộ thiên cơ, dẫn tôi đến trước mặt ngài, để rồi mở ra một thế giới mới trước mắt tôi. Từng lời cổ xưa, tĩnh lặng, lần lượt trở thành hiện thực… và giờ đây tôi đã thấu hiểu trọn vẹn những giáo huấn ấy, thưa Endministrator."
       },
       {
+        "voId": "chr_0011_seraph_mono_chat_line01",
         "title": "Trò Chuyện 1",
         "text": "Endministrator, chúng tôi, những Hội Luận, diễn giải Luật Pháp bằng cách nhìn ngôn ngữ như biểu tượng. Bằng việc phá bỏ các tổ hợp biểu tượng cũ và tạo nên những tổ hợp mới, chúng tôi ngày càng tiến gần đến miền vĩnh hằng. Hành vi này phản ánh chính bản chất của Shatterus, thực thể được thờ phụng phía sau pho tượng thiêng liêng tại Giáo Đường."
       },
       {
+        "voId": "chr_0011_seraph_mono_chat_line02",
         "title": "Trò Chuyện 2",
         "text": "Dijiang luôn khiến tôi nhớ đến Giáo Đường. Tuy nhiên, chúng tôi sẽ không ở mãi nơi đó. Giáo đoàn chỉ tụ họp để hóa giải những thời khắc chia rẽ. Khi điều đó xảy ra, các con chiên từ mọi ngóc ngách của Talos-II sẽ trở về ngôi đền ấy. Hmm? Giáo Đường được bảo vệ như thế nào ư? Nếu nó bị tấn công thì sao...? Tôi tin nó có thể làm người bảo hộ cho chính mình."
       },
       {
+        "voId": "chr_0011_seraph_mono_chat_line03",
         "title": "Trò Chuyện 3",
         "text": "Chưa bao giờ chúng tôi cách xa Chân Lý đến thế, vì nó đã lìa xa nơi chúng tôi gọi là nhà. Chưa bao giờ chúng tôi lại gần Chân Lý đến vậy, vì giờ đây chúng tôi đã gõ cửa nơi mà nó đang chờ."
       },
       {
+        "voId": "chr_0011_seraph_mono_chat_line04",
         "title": "Trò Chuyện 4",
         "text": "Đua tốc độ? Bằng chân? Đấm bốc? Bằng nắm đấm? Và ngài muốn tôi tham gia lễ hội thể thao?! Tôi e là... Tôi phải từ chối. Dạng \"vận động thể chất\" duy nhất tôi công nhận... là độ dao động tuần hoàn của các electron trong mạch dao động. Tôi không thể cạnh tranh với các huynh đệ và tỷ muội của mình được! Không... Tôi không viện cớ đâu. Tôi, tôi cần quay lại phòng điều phối trung tâm. Ngay lập tức."
       },
       {
+        "voId": "chr_0011_seraph_mono_chat_line05",
         "title": "Trò Chuyện 5",
         "text": "Vâng, trong Tu Hội có nhiều người Sarkaz giống tôi. Có người còn được giao phó những di vật từng thuộc về các Kỵ Sĩ Hỏa Khí. Tôi đã nghiên cứu các thánh kinh của Tu Hội. Tôi biết ở Terra, người Sarkaz từng xung đột dữ dội với nhiều chủng tộc khác. Tuy nhiên, sau khi Cuộc Chiến Aggeloi Đầu Tiên kết thúc, một kỳ tích chưa từng có đã xảy ra: Mọi linh hồn đều dang tay đón nhận nhau, và mọi đôi môi cùng ngân vang một ngôn từ."
       },
       {
+        "voId": "chr_0011_seraph_mono_about_line01",
         "title": "Chủ đề: Aggeloi",
         "text": "Mối quan hệ giữa Luật Pháp và lũ Aggeloi đang tràn lan khắp Talos-II là một trong những chủ đề cốt lõi mà Tu Hội muốn giải nghĩa."
       },
       {
+        "voId": "chr_0011_seraph_mono_about_line02",
         "title": "Chủ đề: Shatterus",
         "text": "Có một Aggeloi gợi nhớ đến Triaggelos đang ngự phía sau pho tượng thiêng của Giáo Đường. Chúng tôi bí mật gọi nó là Shatterus khi không trong giờ hành lễ. Thực thể này được Viện Trưởng Mumu thu giữ từ Cuộc Chiến Aggeloi Đầu Tiên. Viện Trưởng khuyến khích chúng tôi quan sát Shatterus và suy ngẫm, vì lời dạy của Luật Pháp đôi khi cũng có thể tìm thấy nơi kẻ thù. Shatterus vừa là sự mô phỏng gần như hoàn chỉnh, vừa là một kết luận chưa được giải mã."
       },
       {
+        "voId": "chr_0011_seraph_mono_about_line03",
         "title": "Chủ đề: Ba nhánh của Tu Hội",
         "text": "Tu Hội hiện có ba nhánh: Hội Luận, Chân Lý và Tái Khởi. Tôi thuộc nhóm Hội Luận. Chúng tôi tin tính toán và phân tích ngôn ngữ là con đường dẫn đến phúc lành. Tái Khởi rải rác khắp Talos-II, là những tín đồ vũ trang háo hức khám phá tàn tích của nền văn minh cổ. Còn Chân Lý chuyên nghiên cứu linh hồn và trái tim. Họ chạm khắc tượng, sao chép kinh sách và dẫn dắt linh hồn lạc lối quay về."
       },
       {
+        "voId": "chr_0011_seraph_explore_point_common_01",
         "title": "Phát hiện Tài Nguyên/Có Thể Thu Thập 1",
         "text": "Tôi đã cảm nhận được các vật phẩm hiếm."
       },
       {
+        "voId": "chr_0011_seraph_explore_point_valub_01",
         "title": "Phát hiện Tài Nguyên/Có Thể Thu Thập 2",
         "text": "Nếu có tặng phẩm Chân Lý ở gần đây, vậy thì ta sẽ thu nhận nó."
       },
       {
+        "voId": "chr_0011_seraph_explore_find_locked_01",
         "title": "Phát Hiện Khu Vực Chưa Khám Phá",
         "text": "Dù là ân phúc hay lời nguyền, vùng đất này là để chúng ta khám phá."
       },
       {
+        "voId": "chr_0011_seraph_explore_find_danger_01",
         "title": "Phát hiện Kẻ Địch Mạnh",
         "text": "Có một kẻ lạc lối và sa ngã đang lang thang gần đây... Trượng của ta sẽ khóc than cho linh hồn họ."
       },
       {
+        "voId": "chr_0011_seraph_interact_mine_valub_01",
         "title": "Khai thác 1",
         "text": "Tất cả đã được đặt lên mảnh đất này trước ta. Và chúng ta sẽ giành được bằng chính đôi tay này."
       },
       {
+        "voId": "chr_0011_seraph_interact_mine_valub_echo2_01",
         "title": "Khai thác 2",
         "text": "Một món quà từ Luật Pháp."
       },
       {
+        "voId": "chr_0011_seraph_interact_treasure_valub_01",
         "title": "Mở Thùng",
         "text": "Ta lại được thấy cảnh phồn vinh — đó là phước lành mà Luật Pháp đã ban!"
       },
       {
+        "voId": "chr_0011_seraph_interact_etherium_01",
         "title": "Nhận Aurylene",
         "text": "Aurylene... một thứ ngôn ngữ khác của Talos-II."
       },
       {
+        "voId": "chr_0011_seraph_interact_blight_break_01",
         "title": "Xua Tan Nhiễm Khuẩn",
         "text": "Vật chất vô định hình này cũng chỉ là một biến số trên hành trình của chúng ta thôi."
       },
       {
+        "voId": "chr_0011_seraph_interact_rest_01",
         "title": "Nghỉ ngơi",
         "text": "Xin hãy dẫn dắt chúng ta đến sự tĩnh lặng vĩnh cửu được khai mở."
       },
       {
+        "voId": "chr_0011_seraph_combat_suppuse_using_01",
         "title": "Sử Dụng Vật Phẩm Chiến Thuật 1",
         "text": "Ta đến đây để ban phúc lành."
       },
       {
+        "voId": "chr_0011_seraph_combat_suppuse_getheal_01",
         "title": "Sử Dụng Vật Phẩm Chiến Thuật 2",
         "text": "Việc thiện sẽ được ngợi ca."
       },
       {
+        "voId": "chr_0011_seraph_combat_remind_danger_01",
         "title": "Cảnh Báo Nguy Hiểm",
         "text": "Chúng mang theo sát ý!"
       },
       {
+        "voId": "chr_0011_seraph_combat_hurt_lowhp_01",
         "title": "Bị Thương",
         "text": "Hành trình đang trở nên... gian khó hơn..."
       },
       {
+        "voId": "chr_0011_seraph_combat_dead_01",
         "title": "0 HP",
         "text": "Chân Lý... Tại sao...?"
       },
       {
+        "voId": "chr_0011_seraph_combat_remind_praise_01",
         "title": "Cổ Vũ Đội 1",
         "text": "Thuật Pháp của ngài đã mở ra cho ta một chân trời mới!"
       },
       {
+        "voId": "chr_0011_seraph_combat_remind_praise_02",
         "title": "Cổ Vũ Đội 2",
         "text": "Chúng ta đã hòa làm một mà chẳng cần nói thành lời!"
       },
       {
+        "voId": "chr_0011_seraph_combat_remind_praise_echo2_01",
         "title": "Đáp Lại Lời Cổ Vũ 1",
         "text": "Thật may mắn khi ta được đồng hành cùng ngài."
       },
       {
+        "voId": "chr_0011_seraph_combat_remind_praise_echo2_02",
         "title": "Đáp Lại Lời Cổ Vũ 2",
         "text": "Ta sẽ cầu nguyện cho tất cả."
       },
       {
+        "voId": "chr_0011_seraph_combat_intobattle_01",
         "title": "Bắt Đầu Chiến Đấu 1",
         "text": "Kẻ hôm nay chịu đau khổ không phải là chúng ta."
       },
       {
+        "voId": "chr_0011_seraph_combat_intobattle_echo2_01",
         "title": "Bắt Đầu Chiến Đấu 2",
         "text": "Ta cầu mong ngài được may mắn."
       },
       {
+        "voId": "chr_0011_seraph_combat_outbattle_nor_01",
         "title": "Thắng Trận 1",
         "text": "Chân Lý đã chạm vào chiến địa này!"
       },
       {
+        "voId": "chr_0011_seraph_combat_outbattle_nor_02",
         "title": "Thắng Trận 2",
         "text": "Lời khẩn cầu của ta đã được đáp lại."
       },
       {
+        "voId": "chr_0011_seraph_combat_outbattle_nor_echo2_01",
         "title": "Thắng Trận 3",
         "text": "Ta tìm thấy niềm vui trong sự chúc mừng."
       },
       {
+        "voId": "chr_0011_seraph_combat_outbattle_hard_01",
         "title": "Thắng Trận 4",
         "text": "Hỡi những người bạn... thành công và thất bại không chỉ là số 0 và 1 tuyệt đối. Giữa chúng còn là một quang phổ vô vàn sắc thái."
       },
       {
+        "voId": "chr_0011_seraph_combat_battle_defeat_01",
         "title": "Bại Trận",
         "text": "Sự thiêng liêng của tính toán nằm ở sự trung lập hoàn hảo. Các thuật toán có thể dự đoán cả thành công lẫn thất bại. Hãy giữ vững niềm tin và tiếp tục tiến bước."
       },
       {
+        "voId": "chr_0011_seraph_mono_attack_last_01",
         "title": "Đòn Dứt Điểm 1",
         "text": "Tiêm Nhiễm!"
       },
       {
+        "voId": "chr_0011_seraph_mono_attack_last_02",
         "title": "Đòn Dứt Điểm 2",
         "text": "Đệ Quy!"
       },
       {
+        "voId": "chr_0011_seraph_mono_skill_nor_01",
         "title": "KN Chiến Đấu 1",
         "text": "Đang phân tích."
       },
       {
+        "voId": "chr_0011_seraph_mono_skill_nor_02",
         "title": "KN Chiến Đấu 2",
         "text": "Kết xuất băng giá."
       },
       {
+        "voId": "chr_0011_seraph_mono_skill_nor_03",
         "title": "KN Chiến Đấu 3",
         "text": "Thu thập dữ liệu."
       },
       {
+        "voId": "chr_0011_seraph_combat_skill_comb_ready_01",
         "title": "Chuẩn Bị KN Liên Hoàn 1",
         "text": "Lời cầu nguyện đã kết thúc."
       },
       {
+        "voId": "chr_0011_seraph_combat_skill_comb_ready_02",
         "title": "Chuẩn Bị KN Liên Hoàn 2",
         "text": "Ta dâng hiến năng lực tính toán."
       },
       {
+        "voId": "chr_0011_seraph_mono_skill_comb_release_01",
         "title": "Thi Triển Liên Hoàn 1",
         "text": "Nguyện Chân Lý ở bên ngài."
       },
       {
+        "voId": "chr_0011_seraph_mono_skill_comb_release_02",
         "title": "Thi Triển Liên Hoàn 2",
         "text": "Tất cả sẽ được chữa lành."
       },
       {
+        "voId": "chr_0011_seraph_mono_attack_extra_01",
         "title": "Kết Liễu 1",
         "text": "Tái khởi động thật lực!"
       },
       {
+        "voId": "chr_0011_seraph_mono_attack_extra_02",
         "title": "Kết Liễu 2",
         "text": "Tiến hành hủy diệt!"
       },
       {
+        "voId": "chr_0011_seraph_mono_skill_ultimate_01",
         "title": "Tuyệt Kỹ 1",
         "text": "Không ai lấp liếm được lý lẽ."
       },
       {
+        "voId": "chr_0011_seraph_mono_skill_ultimate_02",
         "title": "Tuyệt Kỹ 2",
         "text": "Thanh lọc mọi mục ruỗng!"
       },
       {
+        "voId": "chr_0011_seraph_mono_skill_ultimate_03",
         "title": "Tuyệt Kỹ 3",
         "text": "Liệt kê các vi phạm."
       }

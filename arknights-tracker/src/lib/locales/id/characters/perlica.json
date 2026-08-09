@@ -120,338 +120,422 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0004_pelica_chrbark_squad_01",
         "title": "Persiapan Operasi 1",
         "text": "Semua Operator siap. Tim siap menerima misi."
       },
       {
+        "voId": "chr_0004_pelica_chrbark_squad_02",
         "title": "Persiapan Operasi 2",
         "text": "Tim Krisis Endfield siap beraksi."
       },
       {
+        "voId": "chr_0004_pelica_chrbark_join_01",
         "title": "Menambahkan ke Tim 1",
         "text": "Memindahkan otoritas komando, Endministrator."
       },
       {
+        "voId": "chr_0004_pelica_chrbark_join_02",
         "title": "Menambahkan ke Tim 2",
         "text": "Pimpinlah langkah kami berikutnya, Endministrator."
       },
       {
+        "voId": "chr_0004_pelica_chrbark_weap_01",
         "title": "Berganti Senjata",
         "text": "Saatnya menyusun taktik terbaik untuk menggunakan senjata ini."
       },
       {
+        "voId": "chr_0004_pelica_chrbark_gear_01",
         "title": "Berganti Gear",
         "text": "Buah karya Area Industri Cerdas."
       },
       {
+        "voId": "chr_0004_pelica_chrup_skill_01",
         "title": "Aktivasi Matriks Kemampuan",
         "text": "Sekarang, aku tinggal setel ini saja ... untuk memaksimalkan hasil kemenangan kita."
       },
       {
+        "voId": "chr_0004_pelica_chrup_level_01",
         "title": "Menonton Rekaman Pertarungan",
         "text": "Kami pernah terus berjuang dan tak mau menyerah ... karena ingin menyaksikan kepulanganmu."
       },
       {
+        "voId": "chr_0004_pelica_chrup_promt01_01",
         "title": "Promosi Operator 1",
         "text": "Pengakuanmu sangat kuhargai, Endministrator. Aku akan terus berusaha lebih keras."
       },
       {
+        "voId": "chr_0004_pelica_chrup_promt02_01",
         "title": "Promosi Operator 2",
         "text": "Meskipun masih muda dan belum teruji, tekadku sudah bulat. Aku akan menjalankan tugasku sebagai Pengawas di Endfield Industries."
       },
       {
+        "voId": "chr_0004_pelica_chrup_promt03_01",
         "title": "Promosi Operator 3",
         "text": "Kau telah sekali lagi memberikan kepercayaanmu kepadaku, Endministrator .... Aku tak akan mengecewakanmu."
       },
       {
+        "voId": "chr_0004_pelica_chrup_promt04_01",
         "title": "Promosi Operator 4",
         "text": "Aku tak apa-apa. Setelah dengar kata-kata penyemangat darimu, aku jadi ... ingat masa lalu. Dulu, itu satu-satunya alasan yang membuatku terus maju. Sekarang, aku senang karena bisa memimpin Endfield Industries dan berdiri di sisimu."
       },
       {
+        "voId": "chr_0004_pelica_introduce_01",
         "title": "Operator Siap Bertugas",
         "text": "Aku selalu percaya bahwa kau akan sekali lagi memimpin kami melalui jalan yang benar. Selamat datang di Endfield Industries, Endministrator."
       },
       {
+        "voId": "chr_0004_pelica_mono_switch_01",
         "title": "Siaga 1",
         "text": "Siap sedia."
       },
       {
+        "voId": "chr_0004_pelica_mono_switch_02",
         "title": "Siaga 2",
         "text": "Operator Perlica siap siaga."
       },
       {
+        "voId": "chr_0004_pelica_sim_assign_work_01",
         "title": "Menugaskan ke Fasilitas",
         "text": "Penugasan yang efisien. Akan kulakukan sebaik mungkin."
       },
       {
+        "voId": "chr_0004_pelica_sim_hello_lower_01",
         "title": "Menyapa 1",
         "text": "Bagaimana kabarmu, Endministrator?"
       },
       {
+        "voId": "chr_0004_pelica_sim_hello_max_01",
         "title": "Menyapa 2",
         "text": "Jangan terlalu memaksakan diri, Endministrator. Istirahatlah yang cukup."
       },
       {
+        "voId": "chr_0004_pelica_sim_talk_lv01_01",
         "title": "Obrolan Santai di Dijiang 1",
         "text": "Sejak kebangkitanmu, makin lama Dijiang makin dipenuhi semangat .... Aku pun jadi optimis menyongsong masa depan, Endministrator."
       },
       {
+        "voId": "chr_0004_pelica_sim_talk_lv02_01",
         "title": "Obrolan Santai di Dijiang 2",
         "text": "Kau tampak lebih mendingan, Endmin. Kalau butuh sesuatu, beri tahu saja aku."
       },
       {
+        "voId": "chr_0004_pelica_sim_talk_lv02_02",
         "title": "Obrolan Santai di Dijiang 3",
         "text": "Kebutuhanmu adalah prioritas utama kami, Endmin. Demi memenuhinya, aku rela menunda tugas lain ... atau meminta Fiona untuk mengurusnya."
       },
       {
+        "voId": "chr_0004_pelica_sim_talk_max_01",
         "title": "Obrolan Santai di Dijiang 4",
         "text": "Ring Pusat memang sesibuk ini. Ring ini adalah simbol kewajiban kita terhadap dunia ini. Selama lebih dari satu abad, beberapa generasi Endfielder telah mengabdikan diri untuk menghidupkan kembali Sentrapolis. Mungkin suatu hari nanti, Dijiang akhirnya bisa mendarat dan beristirahat dengan tenang di bandar yang telah kita bangun."
       },
       {
+        "voId": "chr_0004_pelica_sim_talk_max_02",
         "title": "Obrolan Santai di Dijiang 5",
         "text": "Banyak operator tak mau menghabiskan terlalu banyak waktu di Dijiang, terutama para elite kami. Mereka lebih dibutuhkan oleh Sentrapolis yang sering diintai bahaya, bukan oleh pengungsian orbital ini. Yah, kau juga akan segera bertemu mereka. Kalau sudah saatnya, nanti kuperkenalkan."
       },
       {
+        "voId": "chr_0004_pelica_sim_talk_max_03",
         "title": "Obrolan Santai di Dijiang 6",
         "text": "Terakhir kali aku berbincang seperti ini, aku hanyalah seorang gadis muda yang tingginya cuma separuh tinggiku sekarang. Zaman sudah berubah. Dijiang sudah banyak dimodifikasi dan aku sudah dewasa .... Tapi kau, Endministrator .... Kau masih sama seperti dulu."
       },
       {
+        "voId": "chr_0004_pelica_sim_gift_give_01",
         "title": "Menawarkan Hadiah",
         "text": "Aku sudah meminta satu set perlengkapan untukmu, Endmin. Semoga berguna. Kadang-kadang kau ini bekerja terlalu keras. Ingat: tak ada salahnya minta bantuanku dan Endfield Industries."
       },
       {
+        "voId": "chr_0004_pelica_sim_gift_recv_01",
         "title": "Menerima Hadiah",
         "text": "Aku sungguh menghargainya, Endmin. Akan kusimpan baik-baik."
       },
       {
+        "voId": "chr_0004_pelica_mono_self_line01",
         "title": "Dialog Kepercayaan 1",
         "text": "Endmin, jangan sampai melewatkan pemeriksaan fisikmu, dan jangan kerja terlalu keras. Yang terpenting, jangan pernah menyalahgunakan Originium Arts-mu—Kalau ada operator yang minta bantuanmu untuk memperbaiki Bot Delta lagi ... tolak saja, ya!"
       },
       {
+        "voId": "chr_0004_pelica_mono_self_line02",
         "title": "Dialog Kepercayaan 2",
         "text": "Saat masih kecil, aku menjelajahi setiap sudut Dijiang dan menamai setiap kabin dengan julukan tertentu. Saat itu, aku yakin aku tak akan bisa lagi menginjakkan kaki di permukaan .... Saat itu, aku merasa Dijiang adalah rumahku. Tapi, agar bisa mendukungmu dengan lebih baik, aku meninggalkan pesawat itu dan menjelajahi banyak tempat di Talos-II. Dijiang kini tampak makin sempit daripada yang kuingat ... tapi bagiku, pesawat ini masih mampu menyimpan seluruh kenanganku."
       },
       {
+        "voId": "chr_0004_pelica_mono_self_line03",
         "title": "Dialog Kepercayaan 3",
         "text": "Chen sebenarnya operator pertama yang kurekrut secara pribadi sejak menjadi Pengawas Endfield Industries. Dia juga sahabatku. Kami bertemu secara tak terduga dalam proyek bersama dengan HAS .... Hehe. Dia terus berkomentar bahwa wajahku tampak kaku dan memutuskan membantu karena dia terlalu mengkhawatirkanku. Mungkin memang benar. Saat itu, aku belum berpengalaman sebagai Pengawas, dan masih banyak sekali yang harus kupelajari. Aku hampir tak punya waktu untuk memperhatikan orang dan hal di sekitarku. Senyum dan kepribadiannya yang terus terang mungkin membantuku mengambil keputusan yang tepat."
       },
       {
+        "voId": "chr_0004_pelica_mono_self_line04",
         "title": "Dialog Kepercayaan 4",
         "text": "Jangan khawatir, Endmin. Abaikan saja kalau Chen sedang menggodaku, tentu saja aku punya hari libur. Apa yang kulakukan saat libur? Hmm, biasanya membaca—sastra dan teori sains, karena relevan untuk pekerjaan mendatang. Kalau melakukan sesuatu demi pekerjaan, berarti namanya bukan libur? Kalau begitu ... aku suka balapan melintasi tanah perbatasan, sendirian dengan sepedaku. Endmin ... hanya kaulah yang kuberi tahu tentang ini. Operator lain pasti khawatir kalau tahu rahasiaku ini. Aku paham alasannya, tapi sebagian dari diriku ingin mendengar angin yang berembus di planet ini."
       },
       {
+        "voId": "chr_0004_pelica_mono_self_line05",
         "title": "Dialog Kepercayaan 5",
         "text": "Kau sudah bangun, Endmin? Kalau merasa lelah, kau harus tidur lebih awal hari ini. Sekilas kulihat kau mengantuk .... Sebenarnya, sudah satu dekade ini kupandangi wajah mengantukmu itu. Aku dulu mengunjungi Sarkofagusmu bersama anak-anak lain, hanya untuk melihatmu tidur dengan damai. Tapi, seiring waktu, hanya aku yang tersisa. Aku sering mampir—setelah lulus uji coba operator, setelah menjadi Pengawas .... Tak perlu merasa bersalah, Endmin. Aku sebenarnya berniat menceritakan semuanya kepadamu setelah ingatanmu kembali."
       },
       {
+        "voId": "chr_0004_pelica_mono_chat_line01",
         "title": "Obrolan 1",
         "text": "Endfield Industries bekerja sama dengan berbagai organisasi di negeri ini. Para Penanda Tangan, sudah pasti. TGCC adalah penyedia logistik dan perlengkapan modern terbaik, dan UWST adalah teman paling andal di perbatasan. HAS selalu ada di ambang terobosan teknologi terkini, dan kami secara terbuka saling berbagi penemuan ilmiah. Rekan seperti mereka akan menjamin bahwa kita mampu berdiri tegak dan kuat di rumah baru yang kejam ini."
       },
       {
+        "voId": "chr_0004_pelica_mono_chat_line02",
         "title": "Obrolan 2",
         "text": "Belum pernah bertemu Fiona? Ah .... Kondisinya agak ... unik. Dia bilang dia senang mengudara dan terhubung dengan semua orang melalui komunikasi tempur. Fiona juga sedikit khawatir kalau kalian ... bertemu langsung dengannya, kalian mungkin akan mulai memperlakukannya dengan cara berbeda."
       },
       {
+        "voId": "chr_0004_pelica_mono_chat_line03",
         "title": "Obrolan 3",
         "text": "Apa aku tampak seperti maestra dalam pertarungan? Kebiasaan itu muncul dari latihan tempur .... Konon, orang Leithanien pada Zaman Terra memadukan musik dengan bakat Arts bawaan mereka. Instruktur Arts-ku juga kebetulan seorang musisi berbakat. Bakat bertarungku tak terlalu menonjol, tapi aku bisa menguasai teknik-teknik itu dengan cepat dengan memahami aliran Arts sebagai not dan tempo musik."
       },
       {
+        "voId": "chr_0004_pelica_mono_chat_line04",
         "title": "Obrolan 4",
         "text": "Aurora juga terlihat dari Dijiang. Seperti bunga aneh yang mekar di atas Talos-II. Cadar Utara itu diselimuti Æther sehingga Auroranya tampak seperti tembok yang menghalangi kita. Di sisi lain tembok itu, pernah ada utopia bagi banyak jiwa .... Meskipun kini yang tersisa hanyalah kehancuran ... dan musuh yang menduduki reruntuhannya."
       },
       {
+        "voId": "chr_0004_pelica_mono_chat_line05",
         "title": "Obrolan 5",
         "text": "Vendor apa yang sebaiknya ditambahkan ke Dijiang? Punya ide, Endmin? Oh, cuma survei rutin dari Kantor Bisnis. Dijiang tak punya ruang santai yang besar, kru yang tinggal di sini juga tidak banyak .... Mesin penjual otomatis sebenarnya cukup, tapi tak punya sentuhan manusia .... Bagaimana kalau kafe, Endmin? Mau minum secangkir kopi saat istirahat?"
       },
       {
+        "voId": "chr_0004_pelica_mono_about_line01",
         "title": "Topik: Pertemuan Pertama",
         "text": "Maaf, Endministrator .... Aku tahu ini egois, tapi sebaiknya jangan mengungkit masa lalu kita dulu. Semoga kau bisa menemukan ingatan-ingatan itu sendiri. Ini bukan permintaan dari Pengawas Endfield Industries—ini permintaanku."
       },
       {
+        "voId": "chr_0004_pelica_mono_about_line02",
         "title": "Topik: Dijiang",
         "text": "Menakjubkan, bukan? Bayangkan Tekno-Protokol sebagai Jaringan Originium, dan Dijiang sebagai server induk Protorig. Dijiang juga adalah perwujudan Peradaban Terra yang menempuh perjalanan melalui Gerbang Kosmis, serta melalui semua peristiwa yang mengikuti perjalanan kami. Dijiang telah mengalami perang dan kekacauan, dan kini berlayar di lautan antariksa. Mungkin suatu hari nanti, manusia akan terbebas dari belenggu gravitasi ... dan berjalan di antara bintang-bintang seperti yang diimpikan oleh para leluhur."
       },
       {
+        "voId": "chr_0004_pelica_mono_about_line03",
         "title": "Topik: M3",
         "text": "Aku pernah menganggap M3 sebagai kakak perempuanku. Tapi, dia menghentikannya setelah aku jadi operator Endfield. Sejujurnya, aku merasa dia benar-benar kakakku. Baik hati, lembut, optimis, dan terampil dalam segala hal. Aku jarang menjumpainya di Dijiang akhir-akhir ini. Aku tahu dia sedang menjalankan misinya sendiri .... Kalau memungkinkan, aku berharap Endfield bisa meringankan bebannya."
       },
       {
+        "voId": "chr_0004_pelica_mono_about_line04",
         "title": "Topik: Talos-II dan Terra",
         "text": "Hanya segelintir orang yang tahu bahwa Talos-II yang jauh ini sebenarnya adalah tempat asal kita semua. Meski tahu hal ini, hampir tak ada yang bisa melepaskan nostalgia tentang Terra. Berpindah dari Terra ke Talos-II terasa seperti bayi yang berpindah dari buaiannya yang lembut dan nyaman ke pelukan ibunya .... Tapi, aku merasakan yang sebaliknya. Aku bergabung ke Endfield dan bertemu Endministrator di Talos-II. Terra kini tak lebih dari simbol misiku."
       },
       {
+        "voId": "chr_0004_pelica_mono_about_line05",
         "title": "Topik: Arahan Zeroth",
         "text": "Peserta Arahan Zeroth bukan cuma aku. Tapi, tak ada di antara kami yang tahu misi peserta lainnya. Dulu, kau selalu bersiap matang-matang, bahkan sebelum tahu situasimu. Untuk kebangkitan ini, aku sudah berkali-kali berlatih untuk menjalankan Arahan Zeroth .... Tapi, saat aku bertemu denganmu lagi secara langsung, semua kata-kata itu mengalir begitu saja dariku dengan sangat mudah."
       },
       {
+        "voId": "chr_0004_pelica_mono_about_line06",
         "title": "Topik: Area Industri Cerdas",
         "text": "Endfield Industries menghabiskan beberapa tahun terakhir untuk fokus pada Area Industri Cerdas. Tujuan AIC terlihat dari namanya, dan aku yakin kau sudah merasakannya langsung. Tentu saja, obsesi kami pada Tekno-Protokol bukan hanya tentang ini. Originium adalah informasi, manifestasi kristal dari setiap ide fana. Perwujudan akhirnya ... membuat kita bisa “memproduksi” dan “membangun” lebih dari sekadar produk industri."
       },
       {
+        "voId": "chr_0004_pelica_mono_about_line07",
         "title": "Topik: Tim Krisis Endfield",
         "text": "Kaulah yang membentuk Tim Krisis, Endmin. Kau memimpin sendiri tim operasi khusus ini, yang berisi para elite yang sudah dikenal di seluruh Talos-II. Kepemimpinannya kemudian dialihkan kepada Pendiri dan M3, tapi tujuan dan fungsinya masih tetap sama. Saat menjadi Pengawas dan mengambil alih kepemimpinan tim ini, aku merasakan tekanan besar karena memimpin tim berisi para pahlawan ... juga karena semangat mereka yang membara saat sedang bertarung demi tujuan dan gagasan tanpa pamrih kita."
       },
       {
+        "voId": "chr_0004_pelica_mono_about_line08",
         "title": "Topik: Pengawas Endfield Industries",
         "text": "Kudengar M3 bilang bahwa dulu Endfield tak punya Pengawas. Endministrator memimpin seluruh perusahaan ini, dibantu oleh M3, Pendiri, dan para operator elite. Kami menyebut organisasi pengambil keputusan ini Provenance. Provenance mengelola tiga nexus besar dan telah menjalankan Endfield hingga sekarang .... Endfield terpaksa berubah selama kau tidur, tapi semua perubahan itulah yang membuat kami bisa bertahan .... Karena itu jugalah aku bisa berada di sampingmu."
       },
       {
+        "voId": "chr_0004_pelica_explore_point_common_01",
         "title": "Sumber Daya/Barang Koleksi Terdeteksi 1",
         "text": "Sepertinya ada yang harus diamati lebih dekat ...."
       },
       {
+        "voId": "chr_0004_pelica_explore_point_valub_01",
         "title": "Sumber Daya/Barang Koleksi Terdeteksi 2",
         "text": "Tampaknya ada suplai bernilai tinggi di sekitar sini. Ayo kita cari."
       },
       {
+        "voId": "chr_0004_pelica_explore_find_locked_01",
         "title": "Area yang Belum Dijelajahi Terdeteksi",
         "text": "Satu lagi area yang belum terjamah manusia."
       },
       {
+        "voId": "chr_0004_pelica_explore_find_danger_01",
         "title": "Musuh Kuat Ditemukan",
         "text": "Tetap waspada. Lawan ini tampaknya cukup berbahaya."
       },
       {
+        "voId": "chr_0004_pelica_interact_mine_valub_01",
         "title": "Penambangan 1",
         "text": "Bijih mineral adalah fondasi industri. Kita harus kumpulkan lebih banyak."
       },
       {
+        "voId": "chr_0004_pelica_interact_mine_valub_echo2_01",
         "title": "Penambangan 2",
         "text": "Biar kubantu."
       },
       {
+        "voId": "chr_0004_pelica_interact_treasure_valub_01",
         "title": "Membuka Kerat",
         "text": "Perolehan yang mengesankan."
       },
       {
+        "voId": "chr_0004_pelica_interact_etherium_01",
         "title": "Mendapatkan Aurylene",
         "text": "Aurylene adalah serpihan dari semesta yang hancur. Yang satu ini telah menempuh jarak yang sangat jauh untuk sampai ke sini, tepat di hadapan kita."
       },
       {
+        "voId": "chr_0004_pelica_interact_blight_break_01",
         "title": "Menyingkirkan Hawar",
         "text": "Hawar ini tak lagi menjadi ancaman bagi Endfield pada masa kini."
       },
       {
+        "voId": "chr_0004_pelica_interact_rest_01",
         "title": "Istirahat",
         "text": "Istirahat selesai. Teman-teman, bersiaplah melanjutkan operasi kita."
       },
       {
+        "voId": "chr_0004_pelica_combat_suppuse_using_01",
         "title": "Penggunaan Taktis 1",
         "text": "Sedang ditangani. Tetap waspada."
       },
       {
+        "voId": "chr_0004_pelica_combat_suppuse_getheal_01",
         "title": "Penggunaan Taktis 2",
         "text": "Kondisi sudah stabil."
       },
       {
+        "voId": "chr_0004_pelica_combat_remind_danger_01",
         "title": "Peringatan Bahaya",
         "text": "Awas! Ada bahaya tak dikenal!"
       },
       {
+        "voId": "chr_0004_pelica_combat_hurt_lowhp_01",
         "title": "Cedera",
         "text": "Aku tak apa .... Fokuslah pada target ...."
       },
       {
+        "voId": "chr_0004_pelica_combat_dead_01",
         "title": "0 HP",
         "text": "Lindungi dirimu ... Endmin ...."
       },
       {
+        "voId": "chr_0004_pelica_combat_remind_praise_01",
         "title": "Penyemangat Tim 1",
         "text": "Teknik luar biasa. Mengesankan."
       },
       {
+        "voId": "chr_0004_pelica_combat_remind_praise_02",
         "title": "Penyemangat Tim 2",
         "text": "Bersatu kita teguh!"
       },
       {
+        "voId": "chr_0004_pelica_combat_remind_praise_echo2_01",
         "title": "Respons Penyemangat 1",
         "text": "Kita berhasil berkat kerja sama."
       },
       {
+        "voId": "chr_0004_pelica_combat_remind_praise_echo2_02",
         "title": "Respons Penyemangat 2",
         "text": "Inilah kekuatan Endfield."
       },
       {
+        "voId": "chr_0004_pelica_combat_intobattle_01",
         "title": "Mulai Pertarungan 1",
         "text": "Mulai menyerang. Jaga diri kalian, Teman-teman."
       },
       {
+        "voId": "chr_0004_pelica_combat_intobattle_echo2_01",
         "title": "Mulai Pertarungan 2",
         "text": "Semua variabel dalam rentang wajar."
       },
       {
+        "voId": "chr_0004_pelica_combat_outbattle_nor_01",
         "title": "Menang Pertarungan 1",
         "text": "Hasil mutlak ini adalah berkat kerja sama tim yang kompak."
       },
       {
+        "voId": "chr_0004_pelica_combat_outbattle_nor_02",
         "title": "Menang Pertarungan 2",
         "text": "Verifikasi dan laporkan status kalian masing-masing, Teman-teman."
       },
       {
+        "voId": "chr_0004_pelica_combat_outbattle_nor_echo2_01",
         "title": "Menang Pertarungan 3",
         "text": "Kekerasan bukanlah tujuan kita. Ayo desak terus."
       },
       {
+        "voId": "chr_0004_pelica_combat_outbattle_hard_01",
         "title": "Menang Pertarungan 4",
         "text": "Periksa semua orang yang cedera. Bentuk formasi bertahan dan pulihkan kesiapan tempur."
       },
       {
+        "voId": "chr_0004_pelica_combat_battle_defeat_01",
         "title": "Kalah Bertarung",
         "text": "Jangan sampai ini terulang ...."
       },
       {
+        "voId": "chr_0004_pelica_mono_attack_last_01",
         "title": "Final Strike 1",
         "text": "Konserto!"
       },
       {
+        "voId": "chr_0004_pelica_mono_attack_last_02",
         "title": "Final Strike 2",
         "text": "Deret melodi!"
       },
       {
+        "voId": "chr_0004_pelica_mono_skill_nor_01",
         "title": "Skill Tarung 1",
         "text": "Target terkunci!"
       },
       {
+        "voId": "chr_0004_pelica_mono_skill_nor_02",
         "title": "Skill Tarung 2",
         "text": "Perintah serang!"
       },
       {
+        "voId": "chr_0004_pelica_mono_skill_nor_03",
         "title": "Skill Tarung 3",
         "text": "Matikan!"
       },
       {
+        "voId": "chr_0004_pelica_combat_skill_comb_ready_01",
         "title": "Skill Kombo Siap 1",
         "text": "Unit Arts siap!"
       },
       {
+        "voId": "chr_0004_pelica_combat_skill_comb_ready_02",
         "title": "Skill Kombo Siap 2",
         "text": "Dukungan Arts siap!"
       },
       {
+        "voId": "chr_0004_pelica_mono_skill_comb_release_01",
         "title": "Penggunaan Kombo 1",
         "text": "Desak maju!"
       },
       {
+        "voId": "chr_0004_pelica_mono_skill_comb_release_02",
         "title": "Penggunaan Kombo 2",
         "text": "Ini peluang kita!"
       },
       {
+        "voId": "chr_0004_pelica_mono_attack_extra_01",
         "title": "Penuntas 1",
         "text": "Sekarang, fugue!"
       },
       {
+        "voId": "chr_0004_pelica_mono_attack_extra_02",
         "title": "Penuntas 2",
         "text": "Coda dan penutup!"
       },
       {
+        "voId": "chr_0004_pelica_mono_skill_ultimate_01",
         "title": "Ultimate 1",
         "text": "Jalankan pemusnahan AL-7!"
       },
       {
+        "voId": "chr_0004_pelica_mono_skill_ultimate_02",
         "title": "Ultimate 2",
         "text": "Target terkunci. Tembak!"
       },
       {
+        "voId": "chr_0004_pelica_mono_skill_ultimate_03",
         "title": "Ultimate 3",
         "text": "Sterilkan area ini!"
       }

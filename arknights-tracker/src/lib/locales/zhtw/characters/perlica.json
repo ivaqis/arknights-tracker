@@ -120,338 +120,422 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0004_pelica_chrbark_squad_01",
         "title": "行動準備1",
         "text": "全員待命，隨時可以出發。"
       },
       {
+        "voId": "chr_0004_pelica_chrbark_squad_02",
         "title": "行動準備2",
         "text": "終末地危機處理小組已就緒。"
       },
       {
+        "voId": "chr_0004_pelica_chrbark_join_01",
         "title": "編入隊伍1",
         "text": "指揮權限暫時交給你了，管理員。"
       },
       {
+        "voId": "chr_0004_pelica_chrbark_join_02",
         "title": "編入隊伍2",
         "text": "帶領我們更進一步吧，管理員。"
       },
       {
+        "voId": "chr_0004_pelica_chrbark_weap_01",
         "title": "更換武器",
         "text": "該研究一下適合這件武器的作戰方式了。"
       },
       {
+        "voId": "chr_0004_pelica_chrbark_gear_01",
         "title": "更換裝備",
         "text": "這也是集成工業系統的成果。"
       },
       {
+        "voId": "chr_0004_pelica_chrup_skill_01",
         "title": "解鎖天賦陣列",
         "text": "只需略微調整……這便於取得更多戰果。"
       },
       {
+        "voId": "chr_0004_pelica_chrup_level_01",
         "title": "觀看作戰紀錄",
         "text": "我們曾這樣不斷抵抗……期待著你能再一次歸來。"
       },
       {
+        "voId": "chr_0004_pelica_chrup_promt01_01",
         "title": "精英化晉升1",
         "text": "感謝你的認可，管理員。我會繼續努力的。"
       },
       {
+        "voId": "chr_0004_pelica_chrup_promt02_01",
         "title": "精英化晉升2",
         "text": "作為監督，我還有很多不成熟的地方，但我已經下定了決心，責無旁貸。"
       },
       {
+        "voId": "chr_0004_pelica_chrup_promt03_01",
         "title": "精英化晉升3",
         "text": "你又一次選擇了信任我……管理員。我絕對不會辜負你的期待。"
       },
       {
+        "voId": "chr_0004_pelica_chrup_promt04_01",
         "title": "精英化晉升4",
         "text": "沒什麼，只是得到你的誇讚……讓我有點懷念過去。那曾是我努力的唯一理由，而現在，我很慶幸能夠帶領著終末地，站在你的身旁。"
       },
       {
+        "voId": "chr_0004_pelica_introduce_01",
         "title": "幹員報到",
         "text": "我一直堅信，你會再一次為我們指明前進的方向。歡迎回歸終末地，管理員。"
       },
       {
+        "voId": "chr_0004_pelica_mono_switch_01",
         "title": "待命1",
         "text": "隨時準備。"
       },
       {
+        "voId": "chr_0004_pelica_mono_switch_02",
         "title": "待命2",
         "text": "幹員佩麗卡，待命中。"
       },
       {
+        "voId": "chr_0004_pelica_sim_assign_work_01",
         "title": "進駐設施",
         "text": "高效的規劃，我會努力的。"
       },
       {
+        "voId": "chr_0004_pelica_sim_hello_lower_01",
         "title": "打招呼1",
         "text": "適應得還好嗎，管理員？"
       },
       {
+        "voId": "chr_0004_pelica_sim_hello_max_01",
         "title": "打招呼2",
         "text": "管理員，注意休息，不要太勉強自己。"
       },
       {
+        "voId": "chr_0004_pelica_sim_talk_lv01_01",
         "title": "帝江號閒聊1",
         "text": "自從管理員醒來以後，帝江號每天都在變得更有活力……我很期待未來的日子，管理員。"
       },
       {
+        "voId": "chr_0004_pelica_sim_talk_lv02_01",
         "title": "帝江號閒聊2",
         "text": "管理員，你的氣色好多了。如果還有什麼需要，可以隨時找我。"
       },
       {
+        "voId": "chr_0004_pelica_sim_talk_lv02_02",
         "title": "帝江號閒聊3",
         "text": "管理員，你的需求是最優先的。我可以把其他事情先放下……或是交給菲奧娜去辦。"
       },
       {
+        "voId": "chr_0004_pelica_sim_talk_max_01",
         "title": "帝江號閒聊4",
         "text": "中央環廳總是這麼繁忙，這意味著一種責任。百餘年來，一代又一代的終末地幹員都在為復興文明環帶而努力。也許有一天，帝江號會落回到地上，在我們親手建設的樂土中小憩片刻吧。"
       },
       {
+        "voId": "chr_0004_pelica_sim_talk_max_02",
         "title": "帝江號閒聊5",
         "text": "有很多幹員並不會停留在帝江號，特別是精英幹員們。比起逗留在天空之上的安全地帶，危機四伏的文明環帶更需要他們。沒關係，你們遲早會見面的。到時候，我會好好向管理員介紹大家。"
       },
       {
+        "voId": "chr_0004_pelica_sim_talk_max_03",
         "title": "帝江號閒聊6",
         "text": "曾經我們在帝江號上這樣交談的時候，我還是個只有現在一半高的孩子。如今物換星移，我長大了，帝江號也有許多變化，管理員你卻……依舊如初。"
       },
       {
+        "voId": "chr_0004_pelica_sim_gift_give_01",
         "title": "贈送禮物",
         "text": "管理員，我為你申請了一些補給，應該能幫上你的忙。你有時候太過努力了，但其實，依賴一下我和終末地也沒什麼不好。"
       },
       {
+        "voId": "chr_0004_pelica_sim_gift_recv_01",
         "title": "接收禮物",
         "text": "非常感謝，管理員，我一定會珍惜的。"
       },
       {
+        "voId": "chr_0004_pelica_mono_self_line01",
         "title": "信賴對話1",
         "text": "管理員，你需要定期檢查身體，別太勉強自己。特別是，不要太濫用自己的源石技藝——如果還有幹員請你維修Delta型機器人……請拒絕！"
       },
       {
+        "voId": "chr_0004_pelica_mono_self_line02",
         "title": "信賴對話2",
         "text": "小時候，我走遍了帝江號的每一個角落，在心裡為每一個房間都取了綽號。我以為我不會再回到地面上了，我覺得這艘船就是我的家。可是之後，為了能幫到管理員，我還是離開了帝江號，去了塔衛二的很多地方。帝江號看起來變得狹窄了，但我始終覺得……它能裝得下我的所有回憶。"
       },
       {
+        "voId": "chr_0004_pelica_mono_self_line03",
         "title": "信賴對話3",
         "text": "陳其實是我作為監督親自招募的第一位幹員，也是我最好的朋友之一。我在宏科院的合作案現場偶遇了陳千語……呵呵，她總說那時候我不苟言笑，擔心我，所以才主動幫了我的忙。也許真的是這樣。剛成為監督的時候，有太多東西要學習，讓我甚至無暇去關注身邊的人和事。如果不是她的灑脫和笑容，恐怕我會走不少彎路吧。"
       },
       {
+        "voId": "chr_0004_pelica_mono_self_line04",
         "title": "信賴對話4",
         "text": "不用擔心，管理員。我當然也是有休息時間的，不要聽陳亂講。放假的時候會做什麼？會看書。嗯，文學和理論類的都看，為了能在未來的工作中——抱著這種想法就不算休息了？那……其實我會一個人騎著摩托車在開拓區馳騁。我、我只告訴了管理員，其他幹員要是知道了會擔心的。我能理解他們，但我只是想聽聽這顆星球的風聲。"
       },
       {
+        "voId": "chr_0004_pelica_mono_self_line05",
         "title": "信賴對話5",
         "text": "醒了嗎，管理員？累的話，就早點休息吧。睡臉？管理員的睡臉我已經看了十年了。嗯？當然了，以前我總是會和其他孩子一起去探望石棺中沉睡的管理員。後來，就只剩我一個人了。通過幹員測試的時候，當上監督的時候……我都會去探望沉睡中的管理員。你不必愧疚，畢竟我本來就打算等管理員恢復記憶之後，全部說給你聽的。"
       },
       {
+        "voId": "chr_0004_pelica_mono_chat_line01",
         "title": "交談1",
         "text": "終末地與這片大地上的許多組織都有合作。公約陣營自不必說，環塔商會是現代物流和物資供應的保障，聯盟工團則是開拓區最有力的盟友，宏科院始終站在技術前沿與我們互通有無。正因為有這樣的盟友，我們才能在這個殘酷的新家園站穩腳跟。"
       },
       {
+        "voId": "chr_0004_pelica_mono_chat_line02",
         "title": "交談2",
         "text": "從來沒當面看過菲奧娜？啊……菲奧娜稍微有點特殊。她說過，她很喜歡現在這樣在作戰通訊中和大家溝通的感覺。但是對於管理員你，菲奧娜很擔心……看到她本人以後，你對她的態度會有很大的改變。"
       },
       {
+        "voId": "chr_0004_pelica_mono_chat_line03",
         "title": "交談3",
         "text": "我作戰的樣子看起來像是一位指揮家？這是我接受作戰訓練的時候留下的習慣……傳說在泰拉時期，萊塔尼亞人會將音樂和法術天賦連結起來，而教我使用法術戰鬥的老師也是一位和音樂有關的奇才。我的戰鬥天賦不算出眾，但只要把法術的流向理解為韻律和節奏，我很快就能抓住訣竅。"
       },
       {
+        "voId": "chr_0004_pelica_mono_chat_line04",
         "title": "交談4",
         "text": "在帝江號上也能看見的那片極光，就像是塔衛二這顆星球開出的一朵詭異的花。北方的天幕被超域能量籠罩，極光像是一面牆阻攔在我們的面前。牆的那一邊，曾經是無數人類的理想之地。如今，那裡只剩下一片廢墟，和占據了那片廢墟的……敵人。"
       },
       {
+        "voId": "chr_0004_pelica_mono_chat_line05",
         "title": "交談5",
         "text": "管理員，你覺得帝江號的商店應該新增什麼種類？沒什麼，只是商務辦公室定期會做調查報告。帝江號的生活區並不大，常駐幹員也不算很多，不過，只靠自動販賣機確實是缺乏了點人情味……咖啡廳怎麼樣？管理員，你會想在休息的時候去買一杯咖啡嗎？"
       },
       {
+        "voId": "chr_0004_pelica_mono_about_line01",
         "title": "話題：相遇",
         "text": "……抱歉，管理員。這是我的私心……但是我不希望在現在的管理員面前主動提起我們相遇的過去。我希望——不是作為終末地的監督，只是作為佩麗卡——我希望管理員能……自己回想起那些回憶。"
       },
       {
+        "voId": "chr_0004_pelica_mono_about_line02",
         "title": "話題：帝江號",
         "text": "帝江號很壯觀，對吧。如果把協議技術理解為源石網路，帝江號就是所有協議源石的總伺服器。不僅如此，它也是泰拉文明穿過星門，抵達塔衛二後的歷史縮影。帝江號經歷過戰爭和混亂，但最終翱翔在了這片星海之中。也許終有一天，所有人都可以不再受引力的束縛，如前人所想的那樣，漫步於繁星身側。"
       },
       {
+        "voId": "chr_0004_pelica_mono_about_line03",
         "title": "話題：M3",
         "text": "很久以前，我會用「姐姐」來稱呼M3。後來，我正式成為了終末地的幹員，M3就不讓我那樣叫她了。對我來說，她真的就像姐姐一樣，親切、樂觀、無所不能。不過這些年，她越來越少出現在帝江號上了。我知道她有一個獨一無二的使命，但如果可以，我希望現在的終末地可以為她分擔。"
       },
       {
+        "voId": "chr_0004_pelica_mono_about_line04",
         "title": "話題：塔衛二與泰拉",
         "text": "很少有人知道，塔衛二這顆遙遠的星球才是我們真正的起源，而即使知道這一點，也無法抹滅很多人對於泰拉故土的懷念。離開泰拉，前往塔衛二，就像是孩子離開柔軟的搖籃，投入母親的懷抱。可是，對我來說，情況完全相反……我在塔衛二加入了終末地，結識了管理員，而泰拉似乎只是一個使命的符號而已。"
       },
       {
+        "voId": "chr_0004_pelica_mono_about_line05",
         "title": "話題：零號委託",
         "text": "參與零號委託的並不止我一個人，而且參與者之間，也未必知道其他人負責的內容是什麼。在過去的管理員意識到自己的狀況時，就已經做好了很多的布置。在你這次醒來之前，我無數次預演過執行零號委託的那一刻……但當真的再見到你，好像很多話順理成章地就說出口了。"
       },
       {
+        "voId": "chr_0004_pelica_mono_about_line06",
         "title": "話題：集成工業系統",
         "text": "集成工業系統是終末地近幾年的專攻對象。它表面上的功能和意義，想必管理員已經深刻體會到了。不過，之所以執著於協議技術，當然是有更深層次的目的。源石即是資訊，即是一切飄渺概念的體現和結晶。最終，我們能夠「建設」和「生產」的，遠不止工業品那麼簡單。"
       },
       {
+        "voId": "chr_0004_pelica_mono_about_line07",
         "title": "話題：危機處理小組",
         "text": "危機處理小組其實是管理員設立並領導的一支行動小隊，一度是塔衛二名聞遐邇的尖兵隊伍。後來，小隊指揮權移交給了創始人和M3，但依然發揮著原本的作用。而在我成為監督並接任指揮權後，我確實感受到指揮「英雄們」所帶來的壓力……以及，所有人都在為了一個無私的目標而戰的熱血沸騰。"
       },
       {
+        "voId": "chr_0004_pelica_mono_about_line08",
         "title": "話題：終末地監督",
         "text": "我聽M3說，終末地過去並沒有監督職位。管理員是終末地的領袖，M3、創始人和精英幹員們輔佐著管理員，這一決策層被稱為「源點」。「源點」管轄著三大中樞，支撐著終末地一路走到今天……但在你沉睡的時候，終末地也被迫做出了許多改變，不過也因此，我們才能繼續前進……我才能站在你的身邊。"
       },
       {
+        "voId": "chr_0004_pelica_explore_point_common_01",
         "title": "發現資源1",
         "text": "好像有值得調查的東西……"
       },
       {
+        "voId": "chr_0004_pelica_explore_point_valub_01",
         "title": "發現資源2",
         "text": "附近似乎有高價值的物資，值得留意。"
       },
       {
+        "voId": "chr_0004_pelica_explore_find_locked_01",
         "title": "發現未探索區域",
         "text": "又一處未被人類探索的區域。"
       },
       {
+        "voId": "chr_0004_pelica_explore_find_danger_01",
         "title": "發現強敵",
         "text": "眼前的敵人非同小可，提高警惕。"
       },
       {
+        "voId": "chr_0004_pelica_interact_mine_valub_01",
         "title": "採集礦物1",
         "text": "礦物是工業的基礎，多準備一點吧。"
       },
       {
+        "voId": "chr_0004_pelica_interact_mine_valub_echo2_01",
         "title": "採集礦物2",
         "text": "我也來幫忙。"
       },
       {
+        "voId": "chr_0004_pelica_interact_treasure_valub_01",
         "title": "打開儲藏箱",
         "text": "不錯的收穫。"
       },
       {
+        "voId": "chr_0004_pelica_interact_etherium_01",
         "title": "獲得醚質",
         "text": "醚質是破碎的宇宙，它穿越了遙遠的距離才抵達我們面前。"
       },
       {
+        "voId": "chr_0004_pelica_interact_blight_break_01",
         "title": "消除侵蝕",
         "text": "侵蝕已經無法威脅如今的終末地。"
       },
       {
+        "voId": "chr_0004_pelica_interact_rest_01",
         "title": "休整",
         "text": "休整完畢，各位，準備繼續行動。"
       },
       {
+        "voId": "chr_0004_pelica_combat_suppuse_using_01",
         "title": "使用戰術物品1",
         "text": "不要掉以輕心。"
       },
       {
+        "voId": "chr_0004_pelica_combat_suppuse_getheal_01",
         "title": "使用戰術物品2",
         "text": "調整好狀態。"
       },
       {
+        "voId": "chr_0004_pelica_combat_remind_danger_01",
         "title": "危險提醒",
         "text": "未知的行為，小心！"
       },
       {
+        "voId": "chr_0004_pelica_combat_hurt_lowhp_01",
         "title": "負傷",
         "text": "沒關係……比起我們的目標……"
       },
       {
+        "voId": "chr_0004_pelica_combat_dead_01",
         "title": "力竭",
         "text": "保護好自己……管理員……"
       },
       {
+        "voId": "chr_0004_pelica_combat_remind_praise_01",
         "title": "小隊激勵1",
         "text": "出色的技巧，令人讚嘆。"
       },
       {
+        "voId": "chr_0004_pelica_combat_remind_praise_02",
         "title": "小隊激勵2",
         "text": "我們團結一心！"
       },
       {
+        "voId": "chr_0004_pelica_combat_remind_praise_echo2_01",
         "title": "回應激勵1",
         "text": "全靠大家。"
       },
       {
+        "voId": "chr_0004_pelica_combat_remind_praise_echo2_02",
         "title": "回應激勵2",
         "text": "這就是終末地工業。"
       },
       {
+        "voId": "chr_0004_pelica_combat_intobattle_01",
         "title": "作戰開始1",
         "text": "戰鬥開始，請以自身安全為優先。"
       },
       {
+        "voId": "chr_0004_pelica_combat_intobattle_echo2_01",
         "title": "作戰開始2",
         "text": "沒有超過預先的設想。"
       },
       {
+        "voId": "chr_0004_pelica_combat_outbattle_nor_01",
         "title": "作戰勝利1",
         "text": "出色的配合，必然的結果。"
       },
       {
+        "voId": "chr_0004_pelica_combat_outbattle_nor_02",
         "title": "作戰勝利2",
         "text": "各位，確認一下自己的狀況吧。"
       },
       {
+        "voId": "chr_0004_pelica_combat_outbattle_nor_echo2_01",
         "title": "作戰勝利3",
         "text": "暴力並非我們的目的，繼續前進吧。"
       },
       {
+        "voId": "chr_0004_pelica_combat_outbattle_hard_01",
         "title": "作戰勝利4",
         "text": "先確認傷患的狀態，採用安全隊形，重整旗鼓。"
       },
       {
+        "voId": "chr_0004_pelica_combat_battle_defeat_01",
         "title": "作戰失敗",
         "text": "我們不會重蹈覆轍……"
       },
       {
+        "voId": "chr_0004_pelica_mono_attack_last_01",
         "title": "重擊1",
         "text": "協奏！"
       },
       {
+        "voId": "chr_0004_pelica_mono_attack_last_02",
         "title": "重擊2",
         "text": "序列！"
       },
       {
+        "voId": "chr_0004_pelica_mono_skill_nor_01",
         "title": "戰技1",
         "text": "已定位！"
       },
       {
+        "voId": "chr_0004_pelica_mono_skill_nor_02",
         "title": "戰技2",
         "text": "轟擊指令！"
       },
       {
+        "voId": "chr_0004_pelica_mono_skill_nor_03",
         "title": "戰技3",
         "text": "清除！"
       },
       {
+        "voId": "chr_0004_pelica_combat_skill_comb_ready_01",
         "title": "連攜技就緒1",
         "text": "施術單元已就緒！"
       },
       {
+        "voId": "chr_0004_pelica_combat_skill_comb_ready_02",
         "title": "連攜技就緒2",
         "text": "我來支援！"
       },
       {
+        "voId": "chr_0004_pelica_mono_skill_comb_release_01",
         "title": "連攜技1",
         "text": "乘勝追擊！"
       },
       {
+        "voId": "chr_0004_pelica_mono_skill_comb_release_02",
         "title": "連攜技2",
         "text": "抓住機會！"
       },
       {
+        "voId": "chr_0004_pelica_mono_attack_extra_01",
         "title": "處決1",
         "text": "賦格！"
       },
       {
+        "voId": "chr_0004_pelica_mono_attack_extra_02",
         "title": "處決2",
         "text": "尾聲！"
       },
       {
+        "voId": "chr_0004_pelica_mono_skill_ultimate_01",
         "title": "終結技1",
         "text": "殲滅座標，權限七！"
       },
       {
+        "voId": "chr_0004_pelica_mono_skill_ultimate_02",
         "title": "終結技2",
         "text": "目標鎖定，開火！"
       },
       {
+        "voId": "chr_0004_pelica_mono_skill_ultimate_03",
         "title": "終結技3",
         "text": "帝江號，清空區域！"
       }

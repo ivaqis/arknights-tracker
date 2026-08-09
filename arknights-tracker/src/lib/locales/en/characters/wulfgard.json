@@ -121,318 +121,397 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0006_wolfgd_chrbark_squad_01",
         "title": "Operation Prep 1",
         "text": "Command is yours."
       },
       {
+        "voId": "chr_0006_wolfgd_chrbark_squad_02",
         "title": "Operation Prep 2",
         "text": "Are we setting off now?"
       },
       {
+        "voId": "chr_0006_wolfgd_chrbark_join_01",
         "title": "Adding to Team 1",
         "text": "Need me in the team? Sure. Just make sure the rest keep up."
       },
       {
+        "voId": "chr_0006_wolfgd_chrbark_join_02",
         "title": "Adding to Team 2",
         "text": "A team assignment...? Understood. I'll do what needs to be done."
       },
       {
+        "voId": "chr_0006_wolfgd_chrbark_weap_01",
         "title": "Switching Weapon",
         "text": "Very well-balanced. Grazie."
       },
       {
+        "voId": "chr_0006_wolfgd_chrbark_gear_01",
         "title": "Switching Gear",
         "text": "Armed to the teeth... A very wise decision."
       },
       {
+        "voId": "chr_0006_wolfgd_chrup_skill_01",
         "title": "Ability Matrix Activation",
         "text": "Skills truly mastered shall be used in situations that are truly desperate."
       },
       {
+        "voId": "chr_0006_wolfgd_chrup_level_01",
         "title": "Watching Combat Records",
         "text": "The Pack hunts with purpose. Only the quickest path to victory will do."
       },
       {
+        "voId": "chr_0006_wolfgd_chrup_promt01_01",
         "title": "Operator Promotion 1",
         "text": "Appreciate your approval, Endmin. So, can I skip the mission report this time? No...? Fine."
       },
       {
+        "voId": "chr_0006_wolfgd_chrup_promt02_01",
         "title": "Operator Promotion 2",
         "text": "As you can see, Endmin — you trust me with the right tasks, and I let the results speak for themselves."
       },
       {
+        "voId": "chr_0006_wolfgd_chrup_promt03_01",
         "title": "Operator Promotion 3",
         "text": "Every wolf in the Pack earns its place through bloodshed. Take down enough prey, and you rise. Endmin, does this mean you have approved of my hunt?"
       },
       {
+        "voId": "chr_0006_wolfgd_chrup_promt04_01",
         "title": "Operator Promotion 4",
         "text": "I witnessed the Pack brought low and the devastation that came with it. This is why I've decided to find a new path for Rossi and the rest of the wolves... Fate brought us together, Endministrator. It's an honor to walk this path with you."
       },
       {
+        "voId": "chr_0006_wolfgd_introduce_01",
         "title": "Operator Reporting for Duty",
         "text": "Catello Wulfgard Luppino, Endfield Crisis Team. I represent the Pack. Give me any merc job, and as long as our contract stands, I'll be your claws and fangs."
       },
       {
+        "voId": "chr_0006_wolfgd_mono_switch_01",
         "title": "Standing by 1",
         "text": "Got a new assignment?"
       },
       {
+        "voId": "chr_0006_wolfgd_mono_switch_02",
         "title": "Standing by 2",
         "text": "I'm here."
       },
       {
+        "voId": "chr_0006_wolfgd_sim_assign_work_01",
         "title": "Assigning to Facility",
         "text": "Short on people here too?"
       },
       {
+        "voId": "chr_0006_wolfgd_sim_hello_lower_01",
         "title": "Greeting 1",
         "text": "Endmin."
       },
       {
+        "voId": "chr_0006_wolfgd_sim_hello_max_01",
         "title": "Greeting 2",
         "text": "Need me to tag along, Endmin? I can make time for you."
       },
       {
+        "voId": "chr_0006_wolfgd_sim_talk_lv01_01",
         "title": "Dijiang Idle Chatter 1",
         "text": "It's not easy working with the other operators. The Way of the Pack and my solitary nature aren't for everyone. But if you want me in line ... I'll adapt and make it work."
       },
       {
+        "voId": "chr_0006_wolfgd_sim_talk_lv02_01",
         "title": "Dijiang Idle Chatter 2",
         "text": "I'm more at home in the frontier than aboard Dijiang. A comfortable place like this makes you soft. But Rossi loves this place. The ship satisfies her curiosity."
       },
       {
+        "voId": "chr_0006_wolfgd_sim_talk_lv02_02",
         "title": "Dijiang Idle Chatter 3",
         "text": "I'll be blunt with you. I was never interested in studying the other Landbreaker clans. I just spent enough time in the wildlands ... and survival skills simply became part of me. In the Pack, we believe the best teacher is our survival instinct. It is our *only* belief."
       },
       {
+        "voId": "chr_0006_wolfgd_sim_talk_max_01",
         "title": "Dijiang Idle Chatter 4",
         "text": "Endfield operators come from all corners of Talos-II, and I see quite a few familiar faces... Or should I say ... familiar threats. I still have faith in your judgment, but when the situation calls for it, I hope you can have faith in my instincts."
       },
       {
+        "voId": "chr_0006_wolfgd_sim_talk_max_02",
         "title": "Dijiang Idle Chatter 5",
         "text": "Gun checks are my ritual. In the wild, if your fangs fail, you're meat. Same goes for a dead weapon — all your skills, all your training, useless. No power, no defense — just slow death. I went through it as a young pup. That lesson stuck. I won't be prey again."
       },
       {
+        "voId": "chr_0006_wolfgd_sim_talk_max_03",
         "title": "Dijiang Idle Chatter 6",
         "text": "It's been a long while since I last visited my clan, or led them on a hunt. I'm better at finding new hunting grounds than leading raids as the Alpharion."
       },
       {
+        "voId": "chr_0006_wolfgd_sim_gift_give_01",
         "title": "Offering Gifts",
         "text": "Got a moment, Endmin? I found something interesting on my last mission ... and I brought it for you."
       },
       {
+        "voId": "chr_0006_wolfgd_sim_gift_recv_01",
         "title": "Accepting Gifts",
         "text": "For me? Grazie. I'll put it to good use."
       },
       {
+        "voId": "chr_0006_wolfgd_mono_self_line01",
         "title": "Trust Dialog 1",
         "text": "I'm already treating my targets according to Endfield requirements. If I did things the old way ... they'd be *very, very* quiet as soon as I laid hands on them."
       },
       {
+        "voId": "chr_0006_wolfgd_mono_self_line02",
         "title": "Trust Dialog 2",
         "text": "I believe you realized that ... becoming the Pack Alpharion has never been my goal. Rossi might be a better fit for that role. I'm also uncertain if Endfield is a proper resting place for Catello Wulfgard Luppino. The Landbreaker vision can't be more different from yours. However, working with Endfield is at least far more enjoyable than I expected, Endmin."
       },
       {
+        "voId": "chr_0006_wolfgd_mono_self_line03",
         "title": "Trust Dialog 3",
         "text": "Why do I keep looking at the sky? Well, it's something I enjoy. Why do you look surprised? The sky is a free source of intel. It tells you about the weather, the time, and your orientation. You can even use it to predict enemy actions. Every hunter plays by the same rules under the sky. You can learn something about this as well, Endmin."
       },
       {
+        "voId": "chr_0006_wolfgd_mono_self_line04",
         "title": "Trust Dialog 4",
         "text": "My Landbreaker identity is the result of a bad choice made by my ancestors. We betrayed the Civilization Band to join the Breaker Lords, yet we failed to bring about the order or justice we dreamed of. I can't ask my forebears if they regretted their choice, but being born into a life filled with conflict and bloodshed in the wildlands, I know survival better than most. Supervisor Perlica said we could shed the Landbreaker label by working with Endfield ... but for me, it's who I am. *Sigh* Does that disappoint you, Endmin?"
       },
       {
+        "voId": "chr_0006_wolfgd_mono_self_line05",
         "title": "Trust Dialog 5",
         "text": "The Pack is built upon simple logic: The weak must band together to defeat the strong and survive a world without mercy. Every code of the clan and the very Landbreaker identity itself is based upon this. But what does Endfield have? A great vision is a double-edged sword. While the Pack can always start another hunt, Endfield could ill-afford a single defeat. This world is without mercy, Endministrator. But at least I'm part of your hunt, and I shall share part of your burden."
       },
       {
+        "voId": "chr_0006_wolfgd_mono_chat_line01",
         "title": "Chat 1",
         "text": "I know that strength isn't everything, but in Talos-II, you can't live without it."
       },
       {
+        "voId": "chr_0006_wolfgd_mono_chat_line02",
         "title": "Chat 2",
         "text": "Rossi loves collecting intricate things like these. I don't know what they're good for, but if it's for her ... I'll just go around and look for more."
       },
       {
+        "voId": "chr_0006_wolfgd_mono_chat_line03",
         "title": "Chat 3",
         "text": "Unrealistic idealism breaks more lives than it saves. Most frontiersfolk learn that the hard way. The real tragedy is, some people are destined to be casualties."
       },
       {
+        "voId": "chr_0006_wolfgd_mono_chat_line04",
         "title": "Chat 4",
         "text": "I do prefer taking care of problems on my own. Not that I think I can handle it all — just hoping to take the weight off someone else's back."
       },
       {
+        "voId": "chr_0006_wolfgd_mono_chat_line05",
         "title": "Chat 5",
         "text": "One can hardly force a lone wolf to turn its back on its former pack... This goes without question. But a few took the path of no return for the sake of survival ... or for something they hold dear. I can't sympathize with them, and I don't intend to interfere. I simply recognize the resolve behind their choices."
       },
       {
+        "voId": "chr_0006_wolfgd_mono_about_line01",
         "title": "Topic: The Pack",
         "text": "Even till this day, I'm still looking for the future of the Pack... Working with Endfield might not be the best option, but I believe it is an important and special step we must take. I understand no outsider can change the Pack's mentality, but what we need is an opportunity to start the change. How to present this \"opportunity\" to the Pack is something I've been trying to figure out."
       },
       {
+        "voId": "chr_0006_wolfgd_mono_about_line02",
         "title": "Topic: Rossi",
         "text": "I should spend more time with Rossi, but when I look at her right now ... I can't help but feel surprised by how much she's grown. She shares the breath of the wild and easily taps into the Blood of the Pack. Weapon mastery, Arts activation, and hunting... Everything came naturally to her. She is no longer the helpless babe wrapped in blood-soaked blankets. No. She is the Wulfperl of Famiglia Luppino. I am just the fangs of the Pack, but Rossi will always be its heart and soul."
       },
       {
+        "voId": "chr_0006_wolfgd_mono_about_line03",
         "title": "Topic: Landbreakers",
         "text": "Landbreaker clans are more complicated than most people think. Besides the Bonekrushers and the Pack, there's the Sandreavers — a strange, loosely organized clan that made their name with just a single bergantin. Then there are the Grayscars, who tattoo their entire bodies with Binding Verses... And the Shadowskulls, a merciless group of assassins no one dares cross after sunset. These minor clans survived the wildlands, so it's natural they know a few tricks about staying alive."
       },
       {
+        "voId": "chr_0006_wolfgd_explore_point_common_01",
         "title": "Resource/Collectible Detected 1",
         "text": "There's something we can gather over there."
       },
       {
+        "voId": "chr_0006_wolfgd_explore_point_valub_01",
         "title": "Resource/Collectible Detected 2",
         "text": "Special loot in sight. We should grab it."
       },
       {
+        "voId": "chr_0006_wolfgd_explore_find_locked_01",
         "title": "Unexplored Area Detected",
         "text": "We haven't been over there yet. Better make a note."
       },
       {
+        "voId": "chr_0006_wolfgd_explore_find_danger_01",
         "title": "Powerful Enemy Discovered",
         "text": "Smells like trouble. This is no ordinary enemy."
       },
       {
+        "voId": "chr_0006_wolfgd_interact_mine_valub_01",
         "title": "Mining 1",
         "text": "I hope their worth can pay for our efforts."
       },
       {
+        "voId": "chr_0006_wolfgd_interact_mine_valub_echo2_01",
         "title": "Mining 2",
         "text": "Maybe just let me handle... Actually, let's finish this as a team."
       },
       {
+        "voId": "chr_0006_wolfgd_interact_treasure_valub_01",
         "title": "Opening a Crate",
         "text": "Outstanding loot. This hunt has proved itself fruitful."
       },
       {
+        "voId": "chr_0006_wolfgd_interact_etherium_01",
         "title": "Acquiring Aurylene",
         "text": "Aurylene... I guess Endfield finds it valuable."
       },
       {
+        "voId": "chr_0006_wolfgd_interact_blight_break_01",
         "title": "Eliminating the Blight",
         "text": "You made the right call. The Blight only impedes our operation."
       },
       {
+        "voId": "chr_0006_wolfgd_interact_rest_01",
         "title": "Rest",
         "text": "Ammo check complete. Time for the next hunt."
       },
       {
+        "voId": "chr_0006_wolfgd_combat_suppuse_using_01",
         "title": "Tactical Use 1",
         "text": "Careful now. Don't push it."
       },
       {
+        "voId": "chr_0006_wolfgd_combat_suppuse_getheal_01",
         "title": "Tactical Use 2",
         "text": "...Caught my breath again."
       },
       {
+        "voId": "chr_0006_wolfgd_combat_remind_danger_01",
         "title": "Danger Warning",
         "text": "Evade!"
       },
       {
+        "voId": "chr_0006_wolfgd_combat_hurt_lowhp_01",
         "title": "Injured",
         "text": "Focus on the battle, not me."
       },
       {
+        "voId": "chr_0006_wolfgd_combat_dead_01",
         "title": "0 HP",
         "text": "Hngh... Medevac."
       },
       {
+        "voId": "chr_0006_wolfgd_combat_remind_praise_01",
         "title": "Team Encouragement 1",
         "text": "Nice moves."
       },
       {
+        "voId": "chr_0006_wolfgd_combat_remind_praise_02",
         "title": "Team Encouragement 2",
         "text": "Great teamwork."
       },
       {
+        "voId": "chr_0006_wolfgd_combat_remind_praise_echo2_01",
         "title": "Encouragement Response 1",
         "text": "This isn't my best."
       },
       {
+        "voId": "chr_0006_wolfgd_combat_remind_praise_echo2_02",
         "title": "Encouragement Response 2",
         "text": "Just doing what I must."
       },
       {
+        "voId": "chr_0006_wolfgd_combat_intobattle_01",
         "title": "Combat Begins 1",
         "text": "Got my eyes peeled for an opening."
       },
       {
+        "voId": "chr_0006_wolfgd_combat_intobattle_echo2_01",
         "title": "Combat Begins 2",
         "text": "Don't mind me. I'll keep up with your tempo."
       },
       {
+        "voId": "chr_0006_wolfgd_combat_outbattle_nor_01",
         "title": "Combat Victory 1",
         "text": "Wasn't expecting anything less."
       },
       {
+        "voId": "chr_0006_wolfgd_combat_outbattle_nor_02",
         "title": "Combat Victory 2",
         "text": "Just as I predicted."
       },
       {
+        "voId": "chr_0006_wolfgd_combat_outbattle_nor_echo2_01",
         "title": "Combat Victory 3",
         "text": "We won. That's what matters."
       },
       {
+        "voId": "chr_0006_wolfgd_combat_outbattle_hard_01",
         "title": "Combat Victory 4",
         "text": "It was harder than I thought... But we are the victors. That's what counts."
       },
       {
+        "voId": "chr_0006_wolfgd_combat_battle_defeat_01",
         "title": "Combat Defeat",
         "text": "The hunter can sometimes become the hunted... I say it's time to begin the chase anew."
       },
       {
+        "voId": "chr_0006_wolfgd_mono_attack_last_01",
         "title": "Final Strike 1",
         "text": "Shut up!"
       },
       {
+        "voId": "chr_0006_wolfgd_mono_attack_last_02",
         "title": "Final Strike 2",
         "text": "No escape!"
       },
       {
+        "voId": "chr_0006_wolfgd_mono_skill_nor_01",
         "title": "Battle Skill 1",
         "text": "Make it quick!"
       },
       {
+        "voId": "chr_0006_wolfgd_mono_skill_nor_02",
         "title": "Battle Skill 2",
         "text": "Blood of the Pack!"
       },
       {
+        "voId": "chr_0006_wolfgd_mono_skill_nor_03",
         "title": "Battle Skill 3",
         "text": "Outta my way!"
       },
       {
+        "voId": "chr_0006_wolfgd_combat_skill_comb_ready_01",
         "title": "Combo Skill Ready 1",
         "text": "Locked n' loaded."
       },
       {
+        "voId": "chr_0006_wolfgd_combat_skill_comb_ready_02",
         "title": "Combo Skill Ready 2",
         "text": "My turn."
       },
       {
+        "voId": "chr_0006_wolfgd_mono_skill_comb_release_01",
         "title": "Combo Casting 1",
         "text": "On it."
       },
       {
+        "voId": "chr_0006_wolfgd_mono_skill_comb_release_02",
         "title": "Combo Casting 2",
         "text": "Stand down!"
       },
       {
+        "voId": "chr_0006_wolfgd_mono_attack_extra_01",
         "title": "Finisher 1",
         "text": "Zip it."
       },
       {
+        "voId": "chr_0006_wolfgd_mono_attack_extra_02",
         "title": "Finisher 2",
         "text": "You are going down!"
       },
       {
+        "voId": "chr_0006_wolfgd_mono_skill_ultimate_01",
         "title": "Ultimate 1",
         "text": "None shall live!"
       },
       {
+        "voId": "chr_0006_wolfgd_mono_skill_ultimate_02",
         "title": "Ultimate 2",
         "text": "Go for the throat!"
       },
       {
+        "voId": "chr_0006_wolfgd_mono_skill_ultimate_03",
         "title": "Ultimate 3",
         "text": "Wolves, let's feast!"
       }

@@ -125,326 +125,407 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0007_ikut_chrbark_squad_01",
         "title": "Preparazione all'operazione 1",
         "text": "È tutto pronto? Le terre selvagge sono piene di pericoli."
       },
       {
+        "voId": "chr_0007_ikut_chrbark_squad_02",
         "title": "Preparazione all'operazione 2",
         "text": "Il vento non si ferma mai. E nemmeno io."
       },
       {
+        "voId": "chr_0007_ikut_chrbark_join_01",
         "title": "Aggiunta alla squadra 1",
         "text": "Finalmente una boccata d'aria fresca. Mi ero quasi dimenticata il profumo della terra."
       },
       {
+        "voId": "chr_0007_ikut_chrbark_join_02",
         "title": "Aggiunta alla squadra 2",
         "text": "Vai pure più veloce che puoi. Non temere. Riesco sempre a starti dietro."
       },
       {
+        "voId": "chr_0007_ikut_chrbark_weap_01",
         "title": "Cambio arma",
         "text": "Ne sento il respiro. È un'arma che sembra fatta apposta per me."
       },
       {
+        "voId": "chr_0007_ikut_chrbark_gear_01",
         "title": "Cambio equipaggiamento",
         "text": "È di ottima fattura... Una precisione del genere è rara, persino tra i Cantori più abili."
       },
       {
+        "voId": "chr_0007_ikut_chrup_skill_01",
         "title": "Attivazione matrice delle abilità",
         "text": "La mia Cantora mi ha insegnato diversamente, ma tu vuoi raggiungere gli stessi obiettivi. Mi sento illuminata."
       },
       {
+        "voId": "chr_0007_ikut_chrup_level_01",
         "title": "Visione delle registrazioni di combattimenti",
         "text": "Si impara molto vivendo nelle terre selvagge... Sono lezioni che ti plasmano come la cote affila una lama."
       },
       {
+        "voId": "chr_0007_ikut_chrup_promt01_01",
         "title": "Promozione operatore 1",
         "text": "Una promozione...? Significa che ho ottenuto la tua approvazione? Allora... sono lieta di essere stata approvata."
       },
       {
+        "voId": "chr_0007_ikut_chrup_promt02_01",
         "title": "Promozione operatore 2",
         "text": "L'onore comporta delle responsabilità. Tutto questo mi ricorda che abbiamo molte persone da aiutare."
       },
       {
+        "voId": "chr_0007_ikut_chrup_promt03_01",
         "title": "Promozione operatore 3",
         "text": "La natura non ci insegna la sopravvivenza. A malapena ci lascia un sentiero da seguire. Una volta, facevo del mio meglio per adattarmi... Ora... Inizio a capire come funziona tutto."
       },
       {
+        "voId": "chr_0007_ikut_chrup_promt04_01",
         "title": "Promozione operatore 4",
         "text": "Ho imparato molto viaggiando con te. Inizio a capire perché le strofe dell'hanna mi hanno condotto al tuo fianco. Sfrutterò al meglio questa conoscenza."
       },
       {
+        "voId": "chr_0007_ikut_introduce_01",
         "title": "Operatore a rapporto",
         "text": "Il mio nome è Ekut, conosciuta come Arclight. Non sono abile coi flussi di parole, ma ti auguro ogni bene e spero che tu possa scorrere come un fiume in piena, Endfielder."
       },
       {
+        "voId": "chr_0007_ikut_mono_switch_01",
         "title": "Attesa 1",
         "text": "Il sentiero dinanzi a noi è stato rivelato."
       },
       {
+        "voId": "chr_0007_ikut_mono_switch_02",
         "title": "Attesa 2",
         "text": "Sono carica e pronta a offrire prestazioni ottimali."
       },
       {
+        "voId": "chr_0007_ikut_sim_assign_work_01",
         "title": "Assegnazione a una struttura",
         "text": "Subito. Noi Cercatori dei canti non riposiamo mai."
       },
       {
+        "voId": "chr_0007_ikut_sim_hello_lower_01",
         "title": "Saluto 1",
         "text": "Endmin, da dove soffia il vento oggi?"
       },
       {
+        "voId": "chr_0007_ikut_sim_hello_max_01",
         "title": "Saluto 2",
         "text": "Sei di ritorno da un viaggio sulla superficie, Endmin? Emani l'odore delle terre selvagge."
       },
       {
+        "voId": "chr_0007_ikut_sim_talk_lv01_01",
         "title": "Chiacchiere sulla Dijiang 1",
         "text": "Riparare un destriero di ferro è come curare una cistibestia. Bisogna ascoltare attentamente prima di somministrare il trattamento."
       },
       {
+        "voId": "chr_0007_ikut_sim_talk_lv02_01",
         "title": "Chiacchiere sulla Dijiang 2",
         "text": "Le stelle qui sono diverse rispetto a quelle che vediamo nelle terre selvagge... Ma entrambi i punti d'osservazione sono a loro modo affascinanti."
       },
       {
+        "voId": "chr_0007_ikut_sim_talk_lv02_02",
         "title": "Chiacchiere sulla Dijiang 3",
         "text": "Sto studiando quelle nubi. I loro bordi frastagliati indicano l'arrivo di una tempesta. Presta cautela se dovrai andare laggiù per la prossima missione."
       },
       {
+        "voId": "chr_0007_ikut_sim_talk_max_01",
         "title": "Chiacchiere sulla Dijiang 4",
         "text": "Hai dei capelli splendidi, sono come la pelliccia di una bestia umida di rugiada mattutina. Non l'hai mai vista? Oh, è bellissima."
       },
       {
+        "voId": "chr_0007_ikut_sim_talk_max_02",
         "title": "Chiacchiere sulla Dijiang 5",
         "text": "Hai mai visto le migrazioni delle praterie? Un esercito di bestie e carri che insegue la pioggia e le nuvole. Sono queste le cose che desidero proteggere."
       },
       {
+        "voId": "chr_0007_ikut_sim_talk_max_03",
         "title": "Chiacchiere sulla Dijiang 6",
         "text": "Spesso il tuo sguardo si perde mentre osservi questo mondo. So come ti senti. I nostri cuori anelano i luoghi a noi cari, a prescindere da quanto possano essere lontani."
       },
       {
+        "voId": "chr_0007_ikut_sim_gift_give_01",
         "title": "Offerta regali",
         "text": "Ti ho portato una cosa. Un dono dalle terre selvagge. Spero ti piaccia."
       },
       {
+        "voId": "chr_0007_ikut_sim_gift_recv_01",
         "title": "Accettazione regali",
         "text": "Per me? I doni sono importanti nelle terre selvagge... ne avrò grande cura."
       },
       {
+        "voId": "chr_0007_ikut_mono_self_line01",
         "title": "Dialogo fiducia 1",
         "text": "Endmin, ti consiglio di imparare le basi della sopravvivenza nelle terre selvagge. Puoi cominciare col fabbricare a mano le trappole per i lungorecchi. Ti insegno io."
       },
       {
+        "voId": "chr_0007_ikut_mono_self_line02",
         "title": "Dialogo fiducia 2",
         "text": "La vita nelle terre selvagge è difficile, ma anche bella. Come i cieli tersi dopo la fine di un monsone, come la schiusa del crestalone sotto la luna."
       },
       {
+        "voId": "chr_0007_ikut_mono_self_line03",
         "title": "Dialogo fiducia 3",
         "text": "Non è un mistero: i dispositivi più vecchi funzionano meglio in gruppo. Lega due bestie da soma diverse allo stesso carro e dà loro del tempo. Finiranno per diventare un'ottima squadra."
       },
       {
+        "voId": "chr_0007_ikut_mono_self_line04",
         "title": "Dialogo fiducia 4",
         "text": "Ho iniziato il mio viaggio per cercare delle risposte. L'equilibrio delle terre selvagge è stato alterato: devo fare qualcosa. Ho ascoltato le increspature dei laghi e i sussurri dei boschi. Ora, però, desidero sentire la tua voce."
       },
       {
+        "voId": "chr_0007_ikut_mono_self_line05",
         "title": "Dialogo fiducia 5",
         "text": "Intesserò questi racconti nell'hanna del nostro viaggio. Ci vorrà del tempo, poiché ci sono troppe cose degne di essere messe in musica. Una volta che l'hanna sarà finita, sarai tu a sentirla prima di chiunque altro."
       },
       {
+        "voId": "chr_0007_ikut_mono_chat_line01",
         "title": "Chiacchierata 1",
         "text": "Chi desidera vivere farà sentire la sua voce. E i Cercatori dei canti in viaggio la sentiranno sempre. È questo lo scopo del Circuito Hannabit."
       },
       {
+        "voId": "chr_0007_ikut_mono_chat_line02",
         "title": "Chiacchierata 2",
         "text": "Diventare amici delle tribù delle terre selvagge è semplice. Noi ci concentriamo su ciò che conta: meteo, cibo e pericoli. Dedichiamo molto del nostro tempo a questi tre elementi."
       },
       {
+        "voId": "chr_0007_ikut_mono_chat_line03",
         "title": "Chiacchierata 3",
         "text": "Ogni Cercatore dei canti del Circuito Hannabit conosce le hanna a memoria. Non è difficile. Le strofe parlano di ogni aspetto delle nostre vite. Al tempo stesso, ogni nostra sfaccettatura è a sua volta intrecciata nei versi."
       },
       {
+        "voId": "chr_0007_ikut_mono_chat_line04",
         "title": "Chiacchierata 4",
         "text": "La mia Cantora mi ha raccontato di Terra e delle città che si spostano per evitare le catastrofi. A quanto pare, abbiamo ereditato questa pratica ancestrale, seppur in forma diversa."
       },
       {
+        "voId": "chr_0007_ikut_mono_chat_line05",
         "title": "Chiacchierata 5",
         "text": "In alcuni bazaar delle terre selvagge puoi barattare articoli usati, ma bisogna essere pazienti per trovare un buon affare. Per fare la mia trasmittente, ho modificato un vecchio dispositivo di Kjersch. Sono oggetti che funzionano anche in condizioni estreme."
       },
       {
+        "voId": "chr_0007_ikut_mono_about_line01",
         "title": "Argomento: città",
         "text": "Talos-II è molto più grande di quanto pensassi. Un tempo, credevo che tutte le città fossero solo un ammasso di acciaio, strade e luci. Poi, però, quando le ho visitate, ho capito che ognuna di esse ha una propria atmosfera e unicità. La differenza è ancora più lampante che tra due pascoli composti da erbe diverse."
       },
       {
+        "voId": "chr_0007_ikut_mono_about_line02",
         "title": "Argomento: l'Endministrator",
         "text": "Ho viaggiato molto e persino la più remota delle tribù intona delle canzoni sulle tue gesta. Sono storie estremamente diverse tra loro, ma le accomuna qualcosa di incredibile: il tuo nome è sempre associato al concetto di speranza."
       },
       {
+        "voId": "chr_0007_ikut_mono_about_line03",
         "title": "Argomento: canzoni hanna",
         "text": "Un nomade in punto di morte intonò la nostra primissima hanna, che includeva appena tre strofe. Furono queste a dare origine al Circuito Hannabit. E, fin dal primo Cantore, l'hanna continua a guidare i Cercatori dei canti finché loro stessi non divengono parte della canzone."
       },
       {
+        "voId": "chr_0007_ikut_mono_about_line04",
         "title": "Argomento: Cantori",
         "text": "È raro che i Cantori parlino in modo diretto. Orisha diceva che l'hanna contiene tutte le informazioni di cui abbiamo bisogno. Mi ha insegnato attraverso le sue azioni. Dobbiamo aiutarci a vicenda per sopravvivere in questo mondo."
       },
       {
+        "voId": "chr_0007_ikut_mono_about_line05",
         "title": "Argomento: la sua tribù",
         "text": "Sono cresciuta in una piccola tribù che contava a malapena cento anime. Non conoscevo altro prima di intraprendere il mio viaggio. Lì ho imparato a mungere le cistibestie, a cavalcare il mio destriero di ferro e a sopravvivere alle terre selvagge. Non l'ho mai lasciata. L'ho semplicemente portata con me."
       },
       {
+        "voId": "chr_0007_ikut_explore_point_common_01",
         "title": "Individuazione risorsa/collezionabile 1",
         "text": "Se contribuisce alla nostra sopravvivenza, diventerà di nostra proprietà."
       },
       {
+        "voId": "chr_0007_ikut_explore_point_valub_01",
         "title": "Individuazione risorsa/collezionabile 2",
         "text": "Cose del genere interesserebbero alla mia Cantora."
       },
       {
+        "voId": "chr_0007_ikut_explore_find_locked_01",
         "title": "Individuazione zona non esplorata",
         "text": "Andiamo avanti. Dobbiamo dare un'occhiata più da vicino."
       },
       {
+        "voId": "chr_0007_ikut_explore_find_danger_01",
         "title": "Individuazione nemico potente",
         "text": "Percepisco un pericolo. Non si farà sconfiggere facilmente."
       },
       {
+        "voId": "chr_0007_ikut_interact_mine_valub_01",
         "title": "Estrazione 1",
         "text": "I frutti della terra."
       },
       {
+        "voId": "chr_0007_ikut_interact_mine_valub_echo2_01",
         "title": "Estrazione 2",
         "text": "Faccio io. Me la cavo coi lavori fisici."
       },
       {
+        "voId": "chr_0007_ikut_interact_treasure_valub_01",
         "title": "Apertura di una cassa",
         "text": "Una rarità nelle terre selvagge. Ne faremo buon uso."
       },
       {
+        "voId": "chr_0007_ikut_interact_etherium_01",
         "title": "Acquisizione di Aurylene",
         "text": "Di solito lo imbottigliamo per ricavare delle torce."
       },
       {
+        "voId": "chr_0007_ikut_interact_blight_break_01",
         "title": "Eliminazione Contaminazione",
         "text": "Dovremmo lasciare che la natura faccia il suo corso."
       },
       {
+        "voId": "chr_0007_ikut_interact_rest_01",
         "title": "Riposo",
         "text": "Mi ricorda i fuochi che accendevamo nelle terre selvagge. Entrambi condividono lo stesso calore."
       },
       {
+        "voId": "chr_0007_ikut_combat_suppuse_using_01",
         "title": "Utilizzo di gadget 1",
         "text": "Fa' respiri lunghi e regolari."
       },
       {
+        "voId": "chr_0007_ikut_combat_suppuse_getheal_01",
         "title": "Utilizzo di gadget 2",
         "text": "La mia forza sta tornando."
       },
       {
+        "voId": "chr_0007_ikut_combat_remind_danger_01",
         "title": "Avviso di pericolo",
         "text": "Non fermarti. Continua a muoverti."
       },
       {
+        "voId": "chr_0007_ikut_combat_hurt_lowhp_01",
         "title": "Ferita",
         "text": "Posso ancora combattere, sono solo più lenta."
       },
       {
+        "voId": "chr_0007_ikut_combat_dead_01",
         "title": "Esaurimento PS",
         "text": "Mi spiace... Vorrei poterti essere più d'aiuto..."
       },
       {
+        "voId": "chr_0007_ikut_combat_remind_praise_01",
         "title": "Incoraggiamento alla squadra 1",
         "text": "Hai agito veloce come un fulmine!"
       },
       {
+        "voId": "chr_0007_ikut_combat_remind_praise_02",
         "title": "Incoraggiamento alla squadra 2",
         "text": "Come vento e fulmini, abbiamo scatenato una tempesta sul nemico."
       },
       {
+        "voId": "chr_0007_ikut_combat_remind_praise_echo2_01",
         "title": "Risposta all'incoraggiamento 1",
         "text": "È ciò che ci si aspetta da me."
       },
       {
+        "voId": "chr_0007_ikut_combat_remind_praise_echo2_02",
         "title": "Risposta all'incoraggiamento 2",
         "text": "Faccio solo la mia parte nella squadra."
       },
       {
+        "voId": "chr_0007_ikut_combat_intobattle_01",
         "title": "Inizio combattimento 1",
         "text": "Sono parte del flusso."
       },
       {
+        "voId": "chr_0007_ikut_combat_intobattle_echo2_01",
         "title": "Inizio combattimento 2",
         "text": "Lascerò a te quel lato."
       },
       {
+        "voId": "chr_0007_ikut_combat_outbattle_nor_01",
         "title": "Vittoria in combattimento 1",
         "text": "Il nemico tornerà nell'oblio."
       },
       {
+        "voId": "chr_0007_ikut_combat_outbattle_nor_02",
         "title": "Vittoria in combattimento 2",
         "text": "Prego affinché la terra accetti tutti voi."
       },
       {
+        "voId": "chr_0007_ikut_combat_outbattle_nor_echo2_01",
         "title": "Vittoria in combattimento 3",
         "text": "Tale è il volere della natura."
       },
       {
+        "voId": "chr_0007_ikut_combat_outbattle_hard_01",
         "title": "Vittoria in combattimento 4",
         "text": "Ogni essere delle terre selvagge deve superare le avversità per poter crescere."
       },
       {
+        "voId": "chr_0007_ikut_combat_battle_defeat_01",
         "title": "Sconfitta in combattimento",
         "text": "Persino la bestia feroce più esperta può farsi sfuggire la preda. Almeno abbiamo imparato qualcosa da questa caccia."
       },
       {
+        "voId": "chr_0007_ikut_mono_attack_last_01",
         "title": "Colpo finale 1",
         "text": "Rottura!"
       },
       {
+        "voId": "chr_0007_ikut_mono_attack_last_02",
         "title": "Colpo finale 2",
         "text": "Infrangimento!"
       },
       {
+        "voId": "chr_0007_ikut_mono_skill_nor_01",
         "title": "Abilità di combattimento 1",
         "text": "Venti furiosi!"
       },
       {
+        "voId": "chr_0007_ikut_mono_skill_nor_02",
         "title": "Abilità di combattimento 2",
         "text": "Rombo di tuono!"
       },
       {
+        "voId": "chr_0007_ikut_mono_skill_nor_03",
         "title": "Abilità di combattimento 3",
         "text": "Arco folgorante!"
       },
       {
+        "voId": "chr_0007_ikut_combat_skill_comb_ready_01",
         "title": "Abilità combo pronta 1",
         "text": "Il vento soffia nella direzione giusta!"
       },
       {
+        "voId": "chr_0007_ikut_combat_skill_comb_ready_02",
         "title": "Abilità combo pronta 2",
         "text": "Spazzerò via gli altri."
       },
       {
+        "voId": "chr_0007_ikut_mono_skill_comb_release_01",
         "title": "Esecuzione combo 1",
         "text": "Questa è la via da seguire."
       },
       {
+        "voId": "chr_0007_ikut_mono_skill_comb_release_02",
         "title": "Esecuzione combo 2",
         "text": "Vedo un'apertura!"
       },
       {
+        "voId": "chr_0007_ikut_mono_attack_extra_01",
         "title": "Mossa letale 1",
         "text": "È finita."
       },
       {
+        "voId": "chr_0007_ikut_mono_attack_extra_02",
         "title": "Mossa letale 2",
         "text": "È la mia occasione."
       },
       {
+        "voId": "chr_0007_ikut_mono_skill_ultimate_01",
         "title": "Abilità suprema 1",
         "text": "Non mi sfuggirai."
       },
       {
+        "voId": "chr_0007_ikut_mono_skill_ultimate_02",
         "title": "Abilità suprema 2",
         "text": "E giunse dalla tempesta..."
       },
       {
+        "voId": "chr_0007_ikut_mono_skill_ultimate_03",
         "title": "Abilità suprema 3",
         "text": "Colpì veloce come un fulmine."
       }

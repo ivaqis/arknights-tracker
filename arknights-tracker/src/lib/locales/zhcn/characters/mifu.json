@@ -122,326 +122,407 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0031_mifu_chrbark_squad_01",
         "title": "行动准备1",
         "text": "你亲自指挥？不赖。"
       },
       {
+        "voId": "chr_0031_mifu_chrbark_squad_02",
         "title": "行动准备2",
         "text": "有架要打，找我就行。"
       },
       {
+        "voId": "chr_0031_mifu_chrbark_join_01",
         "title": "编入队伍1",
         "text": "听凭调遣。"
       },
       {
+        "voId": "chr_0031_mifu_chrbark_join_02",
         "title": "编入队伍2",
         "text": "让我瞧瞧，你们是怎么干的。"
       },
       {
+        "voId": "chr_0031_mifu_chrbark_weap_01",
         "title": "更换武器",
         "text": "我自己就是武器，擅长给对手“锦上添花”——就是让他们的身上挂彩。"
       },
       {
+        "voId": "chr_0031_mifu_chrbark_gear_01",
         "title": "更换装备",
         "text": "这些玩意儿是为了保护我，还是保护我的对手？"
       },
       {
+        "voId": "chr_0031_mifu_chrup_skill_01",
         "title": "激活天赋阵列",
         "text": "我琢磨出了些新招，什么时候能露一手？"
       },
       {
+        "voId": "chr_0031_mifu_chrup_level_01",
         "title": "观看作战记录",
         "text": "这才是战斗啊，爽快！这些人都是你的手下？有空跟我比划比划吗？"
       },
       {
+        "voId": "chr_0031_mifu_chrup_promt01_01",
         "title": "精英化晋升1",
         "text": "老实说，你干得挺不赖。没错，认可从来都是双向的。呼——行，我接受你的领导。"
       },
       {
+        "voId": "chr_0031_mifu_chrup_promt02_01",
         "title": "精英化晋升2",
         "text": "嚯，挺新鲜。在武陵，都是我给巡卫队员晋升，我自己已经有些日子没有站在被晋升的这一边了。"
       },
       {
+        "voId": "chr_0031_mifu_chrup_promt03_01",
         "title": "精英化晋升3",
         "text": "做领头的，和单打独斗完全不一样。你懂的吧，带着手下一群人，还得惦记这惦记那的，真没那么痛快。"
       },
       {
+        "voId": "chr_0031_mifu_chrup_promt04_01",
         "title": "精英化晋升4",
         "text": "你和头儿怎么都能想出那么多漂亮话的？我每次都只会拍拍他们的肩膀……嗯，你说你也可以拍拍我的肩膀？唉，这种事情你先说出来不就没意义了！"
       },
       {
+        "voId": "chr_0031_mifu_introduce_01",
         "title": "干员报到",
         "text": "不浪费时间了，这一次，换我来给你解决麻烦。不过，我的手段比较直白，损坏报销就交给终末地了！"
       },
       {
+        "voId": "chr_0031_mifu_mono_switch_01",
         "title": "待命1",
         "text": "是时候好好活动活动了！"
       },
       {
+        "voId": "chr_0031_mifu_mono_switch_02",
         "title": "待命2",
         "text": "我们是过命的交情，对吧？"
       },
       {
+        "voId": "chr_0031_mifu_sim_assign_work_01",
         "title": "进驻设施",
         "text": "知道了。只不过，那些精密设备要是坏了，可别怪我。"
       },
       {
+        "voId": "chr_0031_mifu_sim_hello_lower_01",
         "title": "打招呼1",
         "text": "嘿，来了啊！"
       },
       {
+        "voId": "chr_0031_mifu_sim_hello_max_01",
         "title": "打招呼2",
         "text": "忙着呢？好久没跟你过过招了。"
       },
       {
+        "voId": "chr_0031_mifu_sim_talk_lv01_01",
         "title": "帝江号闲聊1",
         "text": "在这儿光站了一分钟，我就目击到至少三名可疑人士。哦？他们都是朋友？你的社会关系还真是复杂。"
       },
       {
+        "voId": "chr_0031_mifu_sim_talk_lv02_01",
         "title": "帝江号闲聊2",
         "text": "我来这儿找谁？趁武陵没事儿，来见一些朋友，黎风、陈千语、潘师傅，还有小猫崽子……不过，能见到你，也不算白跑一趟。"
       },
       {
+        "voId": "chr_0031_mifu_sim_talk_lv02_02",
         "title": "帝江号闲聊3",
         "text": "你来晚了，纪念品已经一个都不剩全分完了。还能是什么？当然是刚出锅的糖油粑粑了。"
       },
       {
+        "voId": "chr_0031_mifu_sim_talk_max_01",
         "title": "帝江号闲聊4",
         "text": "比起武陵的街道和竹林，帝江号显得有点太安静了，真让人不习惯。嗯？我没说过吗？我最讨厌安静。安静的地方才最吵，人心里的声音会说个不停。"
       },
       {
+        "voId": "chr_0031_mifu_sim_talk_max_02",
         "title": "帝江号闲聊5",
         "text": "不怕得罪你，我没那么喜欢这地儿。我喜欢天就是天，水就是水的地方。这儿的墙又冷又硬，活像个盒子把人盖在里面。什么？训练室空出来了？不早说！我去预定了！"
       },
       {
+        "voId": "chr_0031_mifu_sim_talk_max_03",
         "title": "帝江号闲聊6",
         "text": "在我刚练武的时候，有一晚，盯着满天的星星，心里暗自发誓，要打败这么多的对手。说不定其中一颗就是帝江号吧？没想到，我真一路“打”到这儿来了。"
       },
       {
+        "voId": "chr_0031_mifu_sim_gift_give_01",
         "title": "赠送礼物",
         "text": "拿着，这个。我自己做的……别笑！敢说出去，饶不了你。"
       },
       {
+        "voId": "chr_0031_mifu_sim_gift_recv_01",
         "title": "接收礼物",
         "text": "我俩什么交情，还送这个……嗯，不对。你觉得我们现在是什么样的交情了？"
       },
       {
+        "voId": "chr_0031_mifu_mono_self_line01",
         "title": "信赖对话1",
         "text": "我和人结交的方式，就是过招。能赢能输，能熬能打的人，才算可靠。你？嗯……你应该早就超出“可靠”的程度了。"
       },
       {
+        "voId": "chr_0031_mifu_mono_self_line02",
         "title": "信赖对话2",
         "text": "头儿把我留下的时候，我从没见过那么多种点心……也从没有吃过那么好吃的糖油粑粑。我玩儿命一样吃了三个月，吃得再也不想碰任何甜食。呵，血腥味儿也是甜的。对，我讨厌在武陵闻到血腥味儿。"
       },
       {
+        "voId": "chr_0031_mifu_mono_self_line03",
         "title": "信赖对话3",
         "text": "我那几个师父啊……三师父是个刀子嘴豆腐心，她的“鹤形”我一直没练成，被唠叨了好几年；二师父看上去让人望而生畏，但其实很温柔，当年我吃的穿的用的没少让他操心；只有大师父和我最合不来，但大家都说我的脾气和他最像：只会用拳头这一种方式，来解决所有的问题。"
       },
       {
+        "voId": "chr_0031_mifu_mono_self_line04",
         "title": "信赖对话4",
         "text": "拜师时师父给我算过命，说我注定只会与“对手”结缘。和对手战斗，和对手相识，再和对手分道扬镳。头儿、小猫崽子，还有那几位师父们，最后都成了我的对手。但你不一样——你从来都不是我的对手，反而一直在和我背靠背并肩作战。这种感觉……希望能长久一点。"
       },
       {
+        "voId": "chr_0031_mifu_mono_self_line05",
         "title": "信赖对话5",
         "text": "来了终末地才知道，原来息壤堰、武陵城、清波寨……真的都这么小，小到几乎看不见，我还一直在这小圈子里打转。师父说得没错，活着就要翻一座又一座山，破一道又一道关隘。只要跟着你，接下来就有打不完的对手，是吧？"
       },
       {
+        "voId": "chr_0031_mifu_mono_chat_line01",
         "title": "交谈1",
         "text": "这拳套看上去不错吧？你要不要试着戴戴看，保证一点都不沉。这是在我成为队长后配发的特别定制装备，用的是那年产的第一批息壤。真佩服那些天师，能让这拳套在打架的时候“随心所欲”，和我一起发怒——你见过吗？"
       },
       {
+        "voId": "chr_0031_mifu_mono_chat_line02",
         "title": "交谈2",
         "text": "练武的基础，得学竹子，就城外到处都是的那种。静练站桩，像冬天的竹子，扎在土里一动不动；等熬到了春天，练实了一口气，身子里有了奔腾涌动的劲头，就能噌噌地生长。"
       },
       {
+        "voId": "chr_0031_mifu_mono_chat_line03",
         "title": "交谈3",
         "text": "刚开始学武时，大师父让我拿竹子当对手。拳头砸在竹子上，磕得生疼，指节磨得鲜血淋漓。但他告诉我，人不该怕竹子，应该让竹子怕我，逼我咬着牙继续打。不知道练了多久，只记得后来有一天，拳头再也不怕竹子了，接着是石头、铁器、天使……只有先毫不畏惧地向对手挥拳，才有可能战胜他。"
       },
       {
+        "voId": "chr_0031_mifu_mono_chat_line04",
         "title": "交谈4",
         "text": "我的房间里为什么挂着那么多书法帖子？素质拓展，不行吗？……我的字很漂亮？真的？头儿教的。她说写书法能静心定念，对我有益。不抓贼的时候，就练一两笔。不过我始终觉得写写画画没什么意思，运笔和挥剑也没多少不同。"
       },
       {
+        "voId": "chr_0031_mifu_mono_chat_line05",
         "title": "交谈5",
         "text": "清波寨的人，喜欢用拳。他们很少招架，只会进攻。来武陵城以后，发现这儿的人喜欢剑——更长，更利，更“文明”，也更精巧。于是我就学着用，但头儿说，我舞剑时活像抱摔一棵杨柳树。"
       },
       {
+        "voId": "chr_0031_mifu_mono_about_line01",
         "title": "话题：名字",
         "text": "这俩字很怪？原先我不叫这个名字。自打来武陵城以后，阮一就叫我“叛徒”；小猫崽子……到今天都在喊“红脸婆”，懒得理她。至于“弭弗”，那时，头儿把我关医疗室里熬了一个多月，我就是不开口说话。有一天，她正坐在床边翻书，忽然问我叫什么，我就随手指了俩字。她说：“真好，那我以后就叫你弭弗了。”呵，还挺顺耳的。"
       },
       {
+        "voId": "chr_0031_mifu_mono_about_line02",
         "title": "话题：庄方宜",
         "text": "头儿……刚走？哈，我心里总觉得，她更适合待在你们这里。你们做的事天大地大，才够她多飞两圈。就算是自愿的，武陵对她也有点小了。你懂我的意思么？你们得招待好她！要是她伤了一根寒毛，不止我，全武陵都会来找你们麻烦。"
       },
       {
+        "voId": "chr_0031_mifu_mono_about_line03",
         "title": "话题：武陵",
         "text": "说不清我是什么时候成为一个武陵人的。被头儿强留养伤的几个月，看着他们在泥泞的荒地上规划未来，忽然有种不一样的感觉钻进心头。他们也不嫌弃我，使劲给我送吃的，我不爱欠人东西，就给他们帮点忙。方兴衢奠基那天，我竟然也被写进了建设者名单，忽然就想起了这句话：“你的拳头要是用在保护人上面，该有多好。”"
       },
       {
+        "voId": "chr_0031_mifu_mono_about_line04",
         "title": "话题：清波寨密道",
         "text": "真巧，你们上次来，还去了那地方。我可有十年没回去过了吧。我走以后，汤汤总是从密道那儿跑过来找我，我就亲手把那里封上了。她不该来，我也不该回去。我知道她会……呵，这次看到那壁画，我才知道她在我脸上画了那么大一个……我得找她算账去！"
       },
       {
+        "voId": "chr_0031_mifu_mono_about_line05",
         "title": "话题：汤汤",
         "text": "汤汤……那个小猫崽子，我跟她的账还没算完呢。她在这儿，给你们惹了什么麻烦没有？怎么，还真有？我来帮你教训她，就不劳你操心了。她那么在乎你，我怕她挨了你的骂就更想不开了，那才麻烦。"
       },
       {
+        "voId": "chr_0031_mifu_explore_point_common_01",
         "title": "发现资源1",
         "text": "那边有东西，先说好，巡卫一向鼓励拾金不昧。"
       },
       {
+        "voId": "chr_0031_mifu_explore_point_valub_01",
         "title": "发现资源2",
         "text": "有贵重的玩意落在那儿，就把它当无主之财处置，收起来吧。"
       },
       {
+        "voId": "chr_0031_mifu_explore_find_locked_01",
         "title": "发现未探索区域",
         "text": "新区域，去巡逻一圈，排除风险。"
       },
       {
+        "voId": "chr_0031_mifu_explore_find_danger_01",
         "title": "发现强敌",
         "text": "哈，值得挑战的对手。"
       },
       {
+        "voId": "chr_0031_mifu_interact_mine_valub_01",
         "title": "采集矿物1",
         "text": "劈碎的矿石，不影响使用吧？"
       },
       {
+        "voId": "chr_0031_mifu_interact_mine_valub_echo2_01",
         "title": "采集矿物2",
         "text": "我来，两下的事儿。"
       },
       {
+        "voId": "chr_0031_mifu_interact_treasure_valub_01",
         "title": "打开储藏箱",
         "text": "不错的东西，还好没砸烂。"
       },
       {
+        "voId": "chr_0031_mifu_interact_etherium_01",
         "title": "获得醚质",
         "text": "以前还以为这玩意儿是幽魂，来了武陵城才知道，大家都管它叫醚质。"
       },
       {
+        "voId": "chr_0031_mifu_interact_blight_break_01",
         "title": "消除侵蚀",
         "text": "小意思，拦不住我。"
       },
       {
+        "voId": "chr_0031_mifu_interact_rest_01",
         "title": "休整",
         "text": "我还没累，一身是劲儿呢！……好吧，听你的。"
       },
       {
+        "voId": "chr_0031_mifu_combat_suppuse_using_01",
         "title": "使用战术物品1",
         "text": "别在这儿挂彩！"
       },
       {
+        "voId": "chr_0031_mifu_combat_suppuse_getheal_01",
         "title": "使用战术物品2",
         "text": "起！再战！"
       },
       {
+        "voId": "chr_0031_mifu_combat_remind_danger_01",
         "title": "危险提醒",
         "text": "躲远点儿！"
       },
       {
+        "voId": "chr_0031_mifu_combat_hurt_lowhp_01",
         "title": "负伤",
         "text": "哼，现在才开始有点意思。"
       },
       {
+        "voId": "chr_0031_mifu_combat_dead_01",
         "title": "力竭",
         "text": "拳出……无悔……"
       },
       {
+        "voId": "chr_0031_mifu_combat_remind_praise_01",
         "title": "小队激励1",
         "text": "够干脆，有本事！"
       },
       {
+        "voId": "chr_0031_mifu_combat_remind_praise_02",
         "title": "小队激励2",
         "text": "团队行动，漂亮。"
       },
       {
+        "voId": "chr_0031_mifu_combat_remind_praise_echo2_01",
         "title": "回应激励1",
         "text": "职责而已。"
       },
       {
+        "voId": "chr_0031_mifu_combat_remind_praise_echo2_02",
         "title": "回应激励2",
         "text": "谢谢……你们。"
       },
       {
+        "voId": "chr_0031_mifu_combat_intobattle_01",
         "title": "作战开始1",
         "text": "畅快打一场！"
       },
       {
+        "voId": "chr_0031_mifu_combat_intobattle_echo2_01",
         "title": "作战开始2",
         "text": "该给他们长长教训了。"
       },
       {
+        "voId": "chr_0031_mifu_combat_outbattle_nor_01",
         "title": "作战胜利1",
         "text": "头儿听到这个消息，想必会很高兴。"
       },
       {
+        "voId": "chr_0031_mifu_combat_outbattle_nor_02",
         "title": "作战胜利2",
         "text": "顺利结案。"
       },
       {
+        "voId": "chr_0031_mifu_combat_outbattle_nor_echo2_01",
         "title": "作战胜利3",
         "text": "你也挺能打的！"
       },
       {
+        "voId": "chr_0031_mifu_combat_outbattle_hard_01",
         "title": "作战胜利4",
         "text": "你们……有事儿给我来扛。不要逞强。"
       },
       {
+        "voId": "chr_0031_mifu_combat_battle_defeat_01",
         "title": "作战失败",
         "text": "只要还能动，就不要认输。"
       },
       {
+        "voId": "chr_0031_mifu_mono_attack_last_01",
         "title": "重击1",
         "text": "倒下！"
       },
       {
+        "voId": "chr_0031_mifu_mono_attack_last_02",
         "title": "重击2",
         "text": "痛快！"
       },
       {
+        "voId": "chr_0031_mifu_mono_skill_nor_01",
         "title": "战技1",
         "text": "别想逃！"
       },
       {
+        "voId": "chr_0031_mifu_mono_skill_nor_02",
         "title": "战技2",
         "text": "吃我一拳！"
       },
       {
+        "voId": "chr_0031_mifu_mono_skill_nor_03",
         "title": "战技3",
         "text": "到你了！"
       },
       {
+        "voId": "chr_0031_mifu_combat_skill_comb_ready_01",
         "title": "连携技就绪1",
         "text": "该出手了！"
       },
       {
+        "voId": "chr_0031_mifu_combat_skill_comb_ready_02",
         "title": "连携技就绪2",
         "text": "是时候了！"
       },
       {
+        "voId": "chr_0031_mifu_mono_skill_comb_release_01",
         "title": "连携技1",
         "text": "立即伏法！"
       },
       {
+        "voId": "chr_0031_mifu_mono_skill_comb_release_02",
         "title": "连携技2",
         "text": "当头棒喝！"
       },
       {
+        "voId": "chr_0031_mifu_mono_attack_extra_01",
         "title": "处决1",
         "text": "抗拒从严！"
       },
       {
+        "voId": "chr_0031_mifu_mono_attack_extra_02",
         "title": "处决2",
         "text": "你没机会了！"
       },
       {
+        "voId": "chr_0031_mifu_mono_skill_ultimate_01",
         "title": "终结技1",
         "text": "我来掀桌子！"
       },
       {
+        "voId": "chr_0031_mifu_mono_skill_ultimate_02",
         "title": "终结技2",
         "text": "统统……逮捕！"
       },
       {
+        "voId": "chr_0031_mifu_mono_skill_ultimate_03",
         "title": "终结技3",
         "text": "敬酒不吃吃罚酒！"
       }

@@ -123,326 +123,407 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0013_aglina_chrbark_squad_01",
         "title": "行動準備1",
         "text": "嗨~管理員，外面的天氣很不錯喔。"
       },
       {
+        "voId": "chr_0013_aglina_chrbark_squad_02",
         "title": "行動準備2",
         "text": "準備好出遠門了嗎？"
       },
       {
+        "voId": "chr_0013_aglina_chrbark_join_01",
         "title": "編入隊伍1",
         "text": "今天的塔羅斯，會閃爍著什麼樣的光彩呢？"
       },
       {
+        "voId": "chr_0013_aglina_chrbark_join_02",
         "title": "編入隊伍2",
         "text": "要前往下一個目的地了嗎？"
       },
       {
+        "voId": "chr_0013_aglina_chrbark_weap_01",
         "title": "更換武器",
         "text": "無論是什麼樣的新武器，只要施加一點法術……看，飄起來了！"
       },
       {
+        "voId": "chr_0013_aglina_chrbark_gear_01",
         "title": "更換裝備",
         "text": "嗯！看上去很合適！我很期待帶著它們一起遠行。要怎麼穿搭才會更好看呢？"
       },
       {
+        "voId": "chr_0013_aglina_chrup_skill_01",
         "title": "解鎖天賦陣列",
         "text": "開闊眼界，提升經驗……再加上一點想像力，這樣才能看清前方的道路！"
       },
       {
+        "voId": "chr_0013_aglina_chrup_level_01",
         "title": "觀看作戰紀錄",
         "text": "回想一下當時的感覺……嗯，這個程度剛好，慢慢地……浮起來！"
       },
       {
+        "voId": "chr_0013_aglina_chrup_promt01_01",
         "title": "精英化晉升1",
         "text": "晉升的含義是……我可以前往更遙遠的地方了嗎？嘿嘿，我已經打包好行李了，什麼時候出發？"
       },
       {
+        "voId": "chr_0013_aglina_chrup_promt02_01",
         "title": "精英化晉升2",
         "text": "我想要在管理員……在大家的心中變得更加可靠。有時候我會有點擔憂，我真的有好好邁出這一步嗎？"
       },
       {
+        "voId": "chr_0013_aglina_chrup_promt03_01",
         "title": "精英化晉升3",
         "text": "下一次晉升會有些更特別的獎勵嗎？我想要的禮物？嗯……和管理員出去玩一整天怎麼樣？"
       },
       {
+        "voId": "chr_0013_aglina_chrup_promt04_01",
         "title": "精英化晉升4",
         "text": "每當我走完了一段漫長的新旅程，駐足回望，那些點點滴滴的情緒都會一起湧上心頭。這，就是我最熱愛這份工作的瞬間。"
       },
       {
+        "voId": "chr_0013_aglina_introduce_01",
         "title": "幹員報到",
         "text": "你好啊！你身上有一股令人懷念的氣味……好像一封沒有寫完的信，我很好奇它會去往哪裡。"
       },
       {
+        "voId": "chr_0013_aglina_mono_switch_01",
         "title": "待命1",
         "text": "看這裡！看，信使小姐帶著你的信飛來囉！"
       },
       {
+        "voId": "chr_0013_aglina_mono_switch_02",
         "title": "待命2",
         "text": "嗨！要一起出去走走嗎？天空的顏色很好看喔！"
       },
       {
+        "voId": "chr_0013_aglina_sim_assign_work_01",
         "title": "進駐設施",
         "text": "放心交給我吧！"
       },
       {
+        "voId": "chr_0013_aglina_sim_hello_lower_01",
         "title": "打招呼1",
         "text": "好巧啊，管理員！一起去艦橋散散步吧！"
       },
       {
+        "voId": "chr_0013_aglina_sim_hello_max_01",
         "title": "打招呼2",
         "text": "還在忙嗎？管理員，要注意休息喔。"
       },
       {
+        "voId": "chr_0013_aglina_sim_talk_lv01_01",
         "title": "帝江號閒聊1",
         "text": "我好喜歡收集五顏六色、不同香味的唇彩，這樣說出來的話語，是不是也會變得五彩斑斕呢？"
       },
       {
+        "voId": "chr_0013_aglina_sim_talk_lv02_01",
         "title": "帝江號閒聊2",
         "text": "塔羅斯賦予了塔衛二天空絢麗的顏色，看著那些不期而遇的光華一閃而過……管理員，你不覺得這是一件很浪漫的事情嗎？"
       },
       {
+        "voId": "chr_0013_aglina_sim_talk_lv02_02",
         "title": "帝江號閒聊3",
         "text": "管理員，看我帶回來了什麼？好多好看的小燈串！還有巫術時刻的特製小香氛。我們可以一起布置一下管理員的房間，等到晚上，周圍就會變得像夜空一樣璀璨！一起去試試吧！"
       },
       {
+        "voId": "chr_0013_aglina_sim_talk_max_01",
         "title": "帝江號閒聊4",
         "text": "嗯……我在想，為什麼小說裡的角色總是會把心事藏起來？送不出的邀請、寄不出的信、說不出的話語……明明那麼簡單，卻遲遲不敢傳達……我就可以輕鬆地邀請管理員出門，送出好玩的禮物……究竟是哪裡不一樣呢……"
       },
       {
+        "voId": "chr_0013_aglina_sim_talk_max_02",
         "title": "帝江號閒聊5",
         "text": "秋栗小姐送給了我一枚很特別的護身符，說是只要一直帶在身邊，總有一天願望就會實現。我的願望嘛……我希望每一個交給我信件的人，都能實現自己所寫下的願望！嘿嘿，這樣是不是有一點貪心了？"
       },
       {
+        "voId": "chr_0013_aglina_sim_talk_max_03",
         "title": "帝江號閒聊6",
         "text": "我總是會夢見曾經看到過的景色，在那些夢幻而又模糊的影子背後，總是有著一個人的身影，靜靜地站在遠處，像是在等一個人，或是在等一封信。最近，我覺得那個身影似乎變得越來越清晰，像是身邊某個熟悉的人……"
       },
       {
+        "voId": "chr_0013_aglina_sim_gift_give_01",
         "title": "贈送禮物",
         "text": "管理員，猜猜看我為你準備了什麼驚喜？是我專門為你挑選的喔！猜錯了也沒關係的，試一下嘛。"
       },
       {
+        "voId": "chr_0013_aglina_sim_gift_recv_01",
         "title": "接收禮物",
         "text": "這是給我的嗎？謝謝！我會把它擺在房間裡最顯眼的位置！"
       },
       {
+        "voId": "chr_0013_aglina_mono_self_line01",
         "title": "信賴對話1",
         "text": "我送出的第一封信，是華法琳醫生為我寫的介紹信。當我第一次來到帝江號時內心還有點忐忑，我總會去想：華法琳醫生讓我等待的「管理員」會是一個什麼樣的人？直到得知管理員你意外甦醒，在帝江號上親眼見到你時，我才放下心來……不過……現在還是有點小小的忐忑……"
       },
       {
+        "voId": "chr_0013_aglina_mono_self_line02",
         "title": "信賴對話2",
         "text": "我喜歡獨自在夜晚的天空中飛行，融進夜色裡，看著那些亮閃閃的點點星星，我會想像那裡會不會也有著數不清的故事。會不會在此時此刻，有人跟我想著一樣的事情，分享著同一片夜空……"
       },
       {
+        "voId": "chr_0013_aglina_mono_self_line03",
         "title": "信賴對話3",
         "text": "孤獨是信使的伴侶，但我永遠也習慣不了孤獨。每當孤身一人行至遠方，我都會拿起羅盤，看向羅德島的方向。那裡有著華法琳醫生，有著真實且不會褪色的記憶。而我要前進的方向，則有著素未謀面的新朋友和新的邂逅。想到這些，我就會安心下來，期待起接下來的旅行。嗯，潔爾佩塔想要做一個不孤獨的信使。"
       },
       {
+        "voId": "chr_0013_aglina_mono_self_line04",
         "title": "信賴對話4",
         "text": "每當看見孤零零的星星時，我都會感到莫名的失落和遺憾……星星啊星星，是否天空那一邊的你……也沒有等來屬於自己的伴星……"
       },
       {
+        "voId": "chr_0013_aglina_mono_self_line05",
         "title": "信賴對話5",
         "text": "在我剛剛走出那片「森林」時，我發現了身邊的那張空白信紙。它彷彿具現了那時我有些迷茫的內心……它為何只出現在我的身邊？究竟要在上面寫點什麼？寫好的信件又要交給什麼人？我走了一路，依然沒找到答案。但……我想這一定是讓我把所有的心情、所有的幻想，寫進那張空白的信紙裡，然後，將它交給某個最重視的人。"
       },
       {
+        "voId": "chr_0013_aglina_mono_chat_line01",
         "title": "交談1",
         "text": "印象深刻的旅行？嗯……管理員聽說過合金蘿蔔城嗎？那裡的卡特斯們能一天三餐都吃蘿蔔！他們會把蘿蔔做成各式各樣的料理！我去過那裡兩次，都是去提供藥品給蘿蔔種植園的商會。再有機會造訪的話，真想去看看下層的「大鑽孔」……啊，記得一定要去那家叫「高麗菜」的旅館住宿，否則你的菜單上就只剩下蘿蔔料理了……"
       },
       {
+        "voId": "chr_0013_aglina_mono_chat_line02",
         "title": "交談2",
         "text": "失重的感覺，對我來說是如影隨形的。我經常覺得自己像一顆氣球，輕飄飄地繫在沉重的地面上，但我又想要竭盡全力，帶著它一起飛起來。這會是異想天開嗎？地上的影子延長成一根長長的線，我知道，那就是我和世界的連結。就像信，連接著你和我一樣。"
       },
       {
+        "voId": "chr_0013_aglina_mono_chat_line03",
         "title": "交談3",
         "text": "你是問這本書？這是一本記錄著許許多多信使故事的選集。他們之中有人跨過了天災，拯救了人民，卻被當成喚來災難的使者；有人嚮往著安穩平淡的旅途，卻陰錯陽差顛覆了國家；還有笨拙的孩子，在成為信使的第一天弄丟了信……嘿嘿，我喜歡裡面的每一個故事。"
       },
       {
+        "voId": "chr_0013_aglina_mono_chat_line04",
         "title": "交談4",
         "text": "我在新藍卡塢無數次聽人講述「泰拉」的故事。有人歌頌她的溫暖，有人斥責她的無情；有人憎惡她的破敗，有人懷念她的瑰麗……藝術家為了那一段段歷史嘔心瀝血，哲學家則認為我們早該擁抱新的思潮……對我來說，「泰拉」更像是一個熟悉又陌生的名字……至少在我眼裡，那裡有著同樣美好的風景和熟悉的面孔……管理員，你呢？"
       },
       {
+        "voId": "chr_0013_aglina_mono_chat_line05",
         "title": "交談5",
         "text": "沒有信使能夠猜測到信封內藏著什麼，但看著那些精心裝飾著的貼紙，我就會想到一些溫馨的故事或許即將發生。看到信件被雨水打濕成皺巴巴的模樣，我就會感嘆會不會又是一段苦難的旅途或是離別……信件的主人們很少會向信使分享他們的心情，他們也不會知道，有個陌生人曾為他們開心，曾為他們難過。"
       },
       {
+        "voId": "chr_0013_aglina_mono_about_line01",
         "title": "話題：華法琳",
         "text": "華法琳醫生？她還是和以前一樣，看起來精神不錯。不過她有一次記錯了我的生日，很自責地向我道歉……明明沒關係的。慌亂中她還叫錯了我的名字……她那一刻的表情我從未見過，怎麼形容呢……看上去有點錯愕，有點茫然。在我走後，她一個人在餐桌旁坐了很久很久……"
       },
       {
+        "voId": "chr_0013_aglina_mono_about_line02",
         "title": "話題：神秘劍客",
         "text": "很久以前，我曾經在羅德島見過一位神秘的女性。她拿著一把與眾不同的劍，獨自立於平靜的湖面。劍光閃過，湖水只泛起了一點漣漪，天空卻缺了半邊的雲……她把這封信交給了我，希望把信寄給管理員，等到陳千語幹員有所成長的時候再轉交給她……"
       },
       {
+        "voId": "chr_0013_aglina_mono_about_line03",
         "title": "話題：艾維文娜",
         "text": "艾維文娜總是會前往一些兇險的地方送信……雖然她每天都在笑著，但她的眼睛裡像是藏著一些無法說出口的，有些沉重的秘密……我在許多信使眼中看到過……我知道那是為什麼……"
       },
       {
+        "voId": "chr_0013_aglina_mono_about_line04",
         "title": "話題：荒野上的危險",
         "text": "塔衛二充滿了各種未知的危險……我看過艾爾黛拉提供的報告，和遙遠的泰拉相比，塔衛二上的威脅更加難以預測。信使時常要涉足那些侵蝕災害頻繁的區域，所以會配備用於自救和逃脫的裝備。因為我會飛嘛，所以我通常會多準備一點，把它們留在荒野上的落腳點，盡可能地幫助到那些遇到危險的人。"
       },
       {
+        "voId": "chr_0013_aglina_mono_about_line05",
         "title": "話題：自己",
         "text": "我本來以為華法琳醫生會分配一些羅德島的任務給我，但她卻說羅德島現在的立場不適合活躍在大眾視野中，身為信使的我應該在更明媚的天空下暢遊。所以，我先在塔衛二上生活了兩年，逐漸認識了這個廣袤的新世界，然後來到了這裡。"
       },
       {
+        "voId": "chr_0013_aglina_explore_point_common_01",
         "title": "發現資源1",
         "text": "那邊有值得注意的東西。"
       },
       {
+        "voId": "chr_0013_aglina_explore_point_valub_01",
         "title": "發現資源2",
         "text": "看看那邊，說不定會有驚喜！"
       },
       {
+        "voId": "chr_0013_aglina_explore_find_locked_01",
         "title": "發現未探索區域",
         "text": "信使準則：未知區域需要謹慎前行！"
       },
       {
+        "voId": "chr_0013_aglina_explore_find_danger_01",
         "title": "發現強敵",
         "text": "那裡的敵人好像很危險，要小心喔。"
       },
       {
+        "voId": "chr_0013_aglina_interact_mine_valub_01",
         "title": "採集礦物1",
         "text": "讓我們把這些礦物放進背包裡！"
       },
       {
+        "voId": "chr_0013_aglina_interact_mine_valub_echo2_01",
         "title": "採集礦物2",
         "text": "我來幫忙囉，嘻嘻。"
       },
       {
+        "voId": "chr_0013_aglina_interact_treasure_valub_01",
         "title": "打開儲藏箱",
         "text": "哇！都是我們需要的東西！"
       },
       {
+        "voId": "chr_0013_aglina_interact_etherium_01",
         "title": "獲得醚質",
         "text": "嘿嘿，還好沒有飛遠。"
       },
       {
+        "voId": "chr_0013_aglina_interact_blight_break_01",
         "title": "消除侵蝕",
         "text": "這樣送信的道路將會暢通無阻！"
       },
       {
+        "voId": "chr_0013_aglina_interact_rest_01",
         "title": "休整",
         "text": "休息是為了更好地出發。"
       },
       {
+        "voId": "chr_0013_aglina_combat_suppuse_using_01",
         "title": "使用戰術物品1",
         "text": "試試這個，能幫到你！"
       },
       {
+        "voId": "chr_0013_aglina_combat_suppuse_getheal_01",
         "title": "使用戰術物品2",
         "text": "呼……我感覺好一點了。"
       },
       {
+        "voId": "chr_0013_aglina_combat_remind_danger_01",
         "title": "危險提醒",
         "text": "小心受傷，快閃開！"
       },
       {
+        "voId": "chr_0013_aglina_combat_hurt_lowhp_01",
         "title": "負傷",
         "text": "感覺……身體好重……"
       },
       {
+        "voId": "chr_0013_aglina_combat_dead_01",
         "title": "力竭",
         "text": "還想要……再一次飛起來……"
       },
       {
+        "voId": "chr_0013_aglina_combat_remind_praise_01",
         "title": "小隊激勵1",
         "text": "哇，還可以這樣！"
       },
       {
+        "voId": "chr_0013_aglina_combat_remind_praise_02",
         "title": "小隊激勵2",
         "text": "太精彩了！我們可以再來一次嗎？"
       },
       {
+        "voId": "chr_0013_aglina_combat_remind_praise_echo2_01",
         "title": "回應激勵1",
         "text": "嘿嘿，沒那麼厲害啦。"
       },
       {
+        "voId": "chr_0013_aglina_combat_remind_praise_echo2_02",
         "title": "回應激勵2",
         "text": "我們就這樣繼續吧，一鼓作氣！"
       },
       {
+        "voId": "chr_0013_aglina_combat_intobattle_01",
         "title": "作戰開始1",
         "text": "讓我們輕鬆地解決戰鬥！"
       },
       {
+        "voId": "chr_0013_aglina_combat_intobattle_echo2_01",
         "title": "作戰開始2",
         "text": "就等你這句話啦！"
       },
       {
+        "voId": "chr_0013_aglina_combat_outbattle_nor_01",
         "title": "作戰勝利1",
         "text": "嘿嘿，剛才的表現還不錯吧？"
       },
       {
+        "voId": "chr_0013_aglina_combat_outbattle_nor_02",
         "title": "作戰勝利2",
         "text": "這是今天最開心的事！"
       },
       {
+        "voId": "chr_0013_aglina_combat_outbattle_nor_echo2_01",
         "title": "作戰勝利3",
         "text": "好耶，又可以上路了。"
       },
       {
+        "voId": "chr_0013_aglina_combat_outbattle_hard_01",
         "title": "作戰勝利4",
         "text": "我們堅持到了最後……嗯，艱辛的過程是值得的。"
       },
       {
+        "voId": "chr_0013_aglina_combat_battle_defeat_01",
         "title": "作戰失敗",
         "text": "把一封信送到終點的旅途，或許會坎坷不平，但沒關係，我們會再次啟程。"
       },
       {
+        "voId": "chr_0013_aglina_mono_attack_last_01",
         "title": "重擊1",
         "text": "靠邊點！"
       },
       {
+        "voId": "chr_0013_aglina_mono_attack_last_02",
         "title": "重擊2",
         "text": "去吧！"
       },
       {
+        "voId": "chr_0013_aglina_mono_skill_nor_01",
         "title": "戰技1",
         "text": "聚在一起！"
       },
       {
+        "voId": "chr_0013_aglina_mono_skill_nor_02",
         "title": "戰技2",
         "text": "別想逃走！"
       },
       {
+        "voId": "chr_0013_aglina_mono_skill_nor_03",
         "title": "戰技3",
         "text": "小心腳下喔！"
       },
       {
+        "voId": "chr_0013_aglina_combat_skill_comb_ready_01",
         "title": "連攜技就緒1",
         "text": "重力場就緒了喔！"
       },
       {
+        "voId": "chr_0013_aglina_combat_skill_comb_ready_02",
         "title": "連攜技就緒2",
         "text": "有誰想飄起來嗎？"
       },
       {
+        "voId": "chr_0013_aglina_mono_skill_comb_release_01",
         "title": "連攜技1",
         "text": "飛吧！"
       },
       {
+        "voId": "chr_0013_aglina_mono_skill_comb_release_02",
         "title": "連攜技2",
         "text": "升起來！"
       },
       {
+        "voId": "chr_0013_aglina_mono_attack_extra_01",
         "title": "處決1",
         "text": "來點驚喜！"
       },
       {
+        "voId": "chr_0013_aglina_mono_attack_extra_02",
         "title": "處決2",
         "text": "喜歡嗎？"
       },
       {
+        "voId": "chr_0013_aglina_mono_skill_ultimate_01",
         "title": "終結技1",
         "text": "世界翻轉！"
       },
       {
+        "voId": "chr_0013_aglina_mono_skill_ultimate_02",
         "title": "終結技2",
         "text": "感受大地的力量！"
       },
       {
+        "voId": "chr_0013_aglina_mono_skill_ultimate_03",
         "title": "終結技3",
         "text": "傾倒在重力之下吧！"
       }

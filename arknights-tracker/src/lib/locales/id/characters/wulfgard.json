@@ -121,318 +121,397 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0006_wolfgd_chrbark_squad_01",
         "title": "Persiapan Operasi 1",
         "text": "Silakan berikan perintah."
       },
       {
+        "voId": "chr_0006_wolfgd_chrbark_squad_02",
         "title": "Persiapan Operasi 2",
         "text": "Kita berangkat sekarang?"
       },
       {
+        "voId": "chr_0006_wolfgd_chrbark_join_01",
         "title": "Menambahkan ke Tim 1",
         "text": "Tim ini butuh aku? Oke. Tapi, pastikan yang lain bisa mengikuti."
       },
       {
+        "voId": "chr_0006_wolfgd_chrbark_join_02",
         "title": "Menambahkan ke Tim 2",
         "text": "Tugas tim ...? Siap. Akan kulakukan apa yang harus dilakukan."
       },
       {
+        "voId": "chr_0006_wolfgd_chrbark_weap_01",
         "title": "Berganti Senjata",
         "text": "Sangat seimbang. Grazie."
       },
       {
+        "voId": "chr_0006_wolfgd_chrbark_gear_01",
         "title": "Berganti Gear",
         "text": "Senjatanya superlengkap .... Keputusan bijak."
       },
       {
+        "voId": "chr_0006_wolfgd_chrup_skill_01",
         "title": "Aktivasi Matriks Kemampuan",
         "text": "Skill andalan sebaiknya digunakan dalam situasi yang benar-benar mendesak saja."
       },
       {
+        "voId": "chr_0006_wolfgd_chrup_level_01",
         "title": "Menonton Rekaman Pertarungan",
         "text": "Kawanan selalu berburu dengan tujuan jelas. Kemenangan harus dicapai secepat mungkin."
       },
       {
+        "voId": "chr_0006_wolfgd_chrup_promt01_01",
         "title": "Promosi Operator 1",
         "text": "Terima kasih atas pengakuanmu, Endmin. Jadi, apa kali ini aku boleh libur menulis laporan misi? Tidak ...? Ya sudah."
       },
       {
+        "voId": "chr_0006_wolfgd_chrup_promt02_01",
         "title": "Promosi Operator 2",
         "text": "Lihat, Endmin—kalau memberiku tugas yang tepat, hasilnya pasti memuaskan."
       },
       {
+        "voId": "chr_0006_wolfgd_chrup_promt03_01",
         "title": "Promosi Operator 3",
         "text": "Setiap serigala di Kawanan meraih pangkatnya melalui pertumpahan darah. Kalau bisa menangkap banyak mangsa, pangkat akan naik. Endmin, apa ini artinya kau mengakui perburuanku?"
       },
       {
+        "voId": "chr_0006_wolfgd_chrup_promt04_01",
         "title": "Promosi Operator 4",
         "text": "Aku menyaksikan Kawanan hancur, juga kerusakan yang menyertainya. Karena itulah aku memutuskan mencari jalan baru untuk Rossi dan semua serigala lainnya .... Takdir mempertemukan kita, Endministrator. Sungguh suatu kehormatan bisa menempuh jalan ini bersamamu."
       },
       {
+        "voId": "chr_0006_wolfgd_introduce_01",
         "title": "Operator Siap Bertugas",
         "text": "Catello Wulfgard Luppino, Tim Krisis Endfield. Aku mewakili Kawanan. Tugas tentara bayaran apa pun akan kulakukan selama kontrak kita masih berlaku."
       },
       {
+        "voId": "chr_0006_wolfgd_mono_switch_01",
         "title": "Siaga 1",
         "text": "Ada tugas baru?"
       },
       {
+        "voId": "chr_0006_wolfgd_mono_switch_02",
         "title": "Siaga 2",
         "text": "Aku masih di sini."
       },
       {
+        "voId": "chr_0006_wolfgd_sim_assign_work_01",
         "title": "Menugaskan ke Fasilitas",
         "text": "Di sini kurang orang juga?"
       },
       {
+        "voId": "chr_0006_wolfgd_sim_hello_lower_01",
         "title": "Menyapa 1",
         "text": "Endmin."
       },
       {
+        "voId": "chr_0006_wolfgd_sim_hello_max_01",
         "title": "Menyapa 2",
         "text": "Kau ingin aku ikut, Endmin? Aku bisa meluangkan waktu untukmu."
       },
       {
+        "voId": "chr_0006_wolfgd_sim_talk_lv01_01",
         "title": "Obrolan Santai di Dijiang 1",
         "text": "Bekerja dengan operator lain memang tak mudah. Kebiasaan Kawanan dan sifat penyendiriku ini sulit diterima orang. Tapi, kalau kau ingin aku masuk tim ... aku akan menyesuaikan diri dan berusaha."
       },
       {
+        "voId": "chr_0006_wolfgd_sim_talk_lv02_01",
         "title": "Obrolan Santai di Dijiang 2",
         "text": "Aku lebih betah di perbatasan daripada di Dijiang. Tempat nyaman seperti ini membuatku lemah. Tapi, Rossi suka tempat ini. Pesawat ini memuaskan rasa ingin tahunya."
       },
       {
+        "voId": "chr_0006_wolfgd_sim_talk_lv02_02",
         "title": "Obrolan Santai di Dijiang 3",
         "text": "Terus terang saja, aku tak tertarik mencari tahu tentang klan Landbreaker yang lain. Aku cuma menghabiskan banyak waktu di alam liar ... dan keahlian bertahan hidup pun jadi bagian dari diriku. Di Kawanan, kami percaya bahwa guru terbaik adalah naluri bertahan hidup. Itu *satu-satunya* kepercayaan kami."
       },
       {
+        "voId": "chr_0006_wolfgd_sim_talk_max_01",
         "title": "Obrolan Santai di Dijiang 4",
         "text": "Operator Endfield datang dari berbagai penjuru Talos-II, dan ada beberapa wajah yang kukenal .... Atau bisa dibilang ... ancaman yang kukenal. Aku masih percaya akan penilaianmu, tapi kalau memang sudah mendesak, semoga kau percaya akan naluriku."
       },
       {
+        "voId": "chr_0006_wolfgd_sim_talk_max_02",
         "title": "Obrolan Santai di Dijiang 5",
         "text": "Pemeriksaan senapan memang sudah kebiasaanku. Di alam liar, kalau taringmu sampai gagal, kitalah yang akan dimangsa. Sama seperti senjata rusak—semua keahlian, semua latihan, tak ada gunanya. Tanpa kekuatan, tanpa pertahanan—hanya proses kematian yang panjang. Aku mengalaminya saat masih muda. Pelajaran itu melekat. Aku tak akan jadi mangsa lagi."
       },
       {
+        "voId": "chr_0006_wolfgd_sim_talk_max_03",
         "title": "Obrolan Santai di Dijiang 6",
         "text": "Sudah lama sekali aku tak mengunjungi klanku, atau memimpin perburuan mereka. Aku lebih ahli mencari tempat berburu baru daripada memimpin serbuan sebagai Alpharion."
       },
       {
+        "voId": "chr_0006_wolfgd_sim_gift_give_01",
         "title": "Menawarkan Hadiah",
         "text": "Punya waktu sebentar, Endmin? Aku menemukan barang menarik dalam misi terakhirku ... dan kubawakan untukmu."
       },
       {
+        "voId": "chr_0006_wolfgd_sim_gift_recv_01",
         "title": "Menerima Hadiah",
         "text": "Untukku? Grazie. Akan kumanfaatkan sebaik mungkin."
       },
       {
+        "voId": "chr_0006_wolfgd_mono_self_line01",
         "title": "Dialog Kepercayaan 1",
         "text": "Aku sudah memperlakukan targetku sesuai ketentuan Endfield. Kalau aku pakai cara lama ... mereka pasti jadi *sangat, sangat* tenang begitu kusentuh."
       },
       {
+        "voId": "chr_0006_wolfgd_mono_self_line02",
         "title": "Dialog Kepercayaan 2",
         "text": "Aku yakin kau sudah tahu bahwa ... aku tak pernah berniat menjadi Alpharion di Kawanan. Posisi itu sepertinya lebih cocok untuk Rossi. Aku juga tak yakin apa Endfield ini tempat istirahat yang layak untuk Catello Wulfgard Luppino. Visi Landbreaker sangat berbeda dari visi kalian. Tapi, setidaknya bekerja bersama Endfield ternyata lebih menyenangkan daripada dugaanku, Endmin."
       },
       {
+        "voId": "chr_0006_wolfgd_mono_self_line03",
         "title": "Dialog Kepercayaan 3",
         "text": "Kenapa aku terus menatap ke langit? Itu karena aku menikmatinya. Kenapa kau kaget begitu? Langit kan sumber intel cuma-cuma. Kita bisa cari tahu tentang cuaca, waktu, dan orientasi. Bahkan bisa untuk memprediksi gerakan musuh. Setiap pemburu bermain dengan aturan yang sama. Kau juga bisa belajar tentang ini, Endmin."
       },
       {
+        "voId": "chr_0006_wolfgd_mono_self_line04",
         "title": "Dialog Kepercayaan 4",
         "text": "Identitas Landbreaker-ku adalah hasil pilihan buruk yang diambil oleh leluhurku. Kami mengkhianati Sentrapolis untuk bergabung dengan para Penguasa Breaker, dan tetap saja gagal mewujudkan ketertiban ataupun keadilan yang kami impikan. Aku tak bisa menanyai leluhurku apakah mereka menyesali pilihan itu. Tapi, karena terlahir di tengah hidup penuh konflik dan pertumpahan darah di alam liar, aku lebih tahu tentang cara bertahan hidup daripada kebanyakan orang. Pengawas Perlica bilang label Landbreaker bisa dilepas dengan bekerja bersama Endfield ... tapi bagiku, itu sudah jadi bagian dari diriku. *Berdesah* Apa kau kecewa mendengarnya, Endmin?"
       },
       {
+        "voId": "chr_0006_wolfgd_mono_self_line05",
         "title": "Dialog Kepercayaan 5",
         "text": "Kawanan terbentuk berdasarkan logika sederhana: Yang lemah harus bekerja sama untuk mengalahkan yang kuat dan agar bisa bertahan hidup di dunia yang tak kenal ampun. Setiap aturan klan dan identitas Landbreaker juga didasarkan pada hal yang sama. Tapi, Endfield punya apa? Visi yang hebat adalah pedang bermata dua. Kawanan selalu bisa berburu lagi, tapi Endfield tak boleh sampai kalah satu kali pun. Dunia ini tak punya belas kasihan, Endministrator. Tapi, setidaknya aku ini bagian dari perburuanmu, dan aku akan ikut menanggung bebanmu."
       },
       {
+        "voId": "chr_0006_wolfgd_mono_chat_line01",
         "title": "Obrolan 1",
         "text": "Aku tahu kekuatan memang bukan segalanya. Tapi, di Talos-II, kita tak bisa hidup tanpanya."
       },
       {
+        "voId": "chr_0006_wolfgd_mono_chat_line02",
         "title": "Obrolan 2",
         "text": "Rossi senang mengoleksi benda-benda rumit seperti ini. Aku tak tahu apa gunanya, tapi kalau untuk dia ... aku akan berkeliling dan mencari lagi."
       },
       {
+        "voId": "chr_0006_wolfgd_mono_chat_line03",
         "title": "Obrolan 3",
         "text": "Idealisme yang tak realistis justru lebih banyak menghancurkan hidup, bukan menyelamatkannya. Banyak orang perbatasan akhirnya paham hal itu lewat pengalaman pahit. Tragisnya, memang ada orang-orang yang ditakdirkan jadi korban."
       },
       {
+        "voId": "chr_0006_wolfgd_mono_chat_line04",
         "title": "Obrolan 4",
         "text": "Aku memang lebih suka mengatasi masalah sendiri. Bukan karena aku merasa bisa mengatasi semuanya—hanya ingin mengurangi beban yang ditanggung orang lain."
       },
       {
+        "voId": "chr_0006_wolfgd_mono_chat_line05",
         "title": "Obrolan 5",
         "text": "Hampir tak ada yang bisa memaksa serigala penyendiri untuk mengkhianati kawanan lamanya .... Ini sudah sangat jelas. Tapi, ada beberapa yang mengambil jalan satu arah demi bertahan hidup ... atau demi sesuatu yang mereka sayangi. Aku tak bisa bersimpati kepada mereka, dan tak mau ikut campur. Tapi, aku mengakui tekad di balik pilihan-pilihan itu."
       },
       {
+        "voId": "chr_0006_wolfgd_mono_about_line01",
         "title": "Topik: Kawanan",
         "text": "Bahkan sampai saat ini, aku masih mengkhawatirkan masa depan Kawanan .... Bekerja untuk Endfield mungkin memang bukan pilihan terbaik, tapi aku percaya ini langkah yang penting dan spesial yang perlu diambil. Aku paham bahwa tak ada orang luar yang bisa mengubah mentalitas Kawanan, tapi kami butuh kesempatan untuk memulai perubahan. Aku sudah lama cari cara untuk membawa “kesempatan” ini ke Kawanan."
       },
       {
+        "voId": "chr_0006_wolfgd_mono_about_line02",
         "title": "Topik: Rossi",
         "text": "Seharusnya aku menghabiskan lebih banyak waktu dengan Rossi, tapi saat melihatnya sekarang ... aku terkejut melihat perkembangannya yang begitu pesat. Dia sudah begitu menyatu dengan alam liar dan dengan mudah mengakses Darah Kawanan. Penguasaan senjata, aktivasi Arts, dan perburuan .... Semuanya bisa dilakukannya dengan mudah. Dia bukan lagi gadis tak berdaya yang terbungkus selimut penuh darah. Bukan. Dia adalah si Wulfperl dari Famiglia Luppino. Aku hanyalah taring Kawanan, tapi Rossi akan selalu menjadi jantung dan jiwanya."
       },
       {
+        "voId": "chr_0006_wolfgd_mono_about_line03",
         "title": "Topik: Landbreaker",
         "text": "Klan Landbreaker lebih rumit daripada yang dikira orang-orang. Selain Bonekrusher dan Kawanan, ada juga Sandreaver—klan aneh yang kurang terorganisasi yang menjadi terkenal dengan satu bergantin saja. Ada juga Grayscar, yang seluruh tubuhnya dipenuhi tato Sajak Pengikat .... Lalu Shadowskull, kelompok pembunuh kejam yang ditakuti semua orang setelah matahari terbenam. Klan-klan kecil ini berhasil bertahan di alam liar, jadi sudah sewajarnya mereka tahu beberapa trik untuk bertahan hidup."
       },
       {
+        "voId": "chr_0006_wolfgd_explore_point_common_01",
         "title": "Sumber Daya/Barang Koleksi Terdeteksi 1",
         "text": "Di sana ada barang yang bisa kita ambil."
       },
       {
+        "voId": "chr_0006_wolfgd_explore_point_valub_01",
         "title": "Sumber Daya/Barang Koleksi Terdeteksi 2",
         "text": "Jarahan istimewa terlihat. Harus kita ambil."
       },
       {
+        "voId": "chr_0006_wolfgd_explore_find_locked_01",
         "title": "Area yang Belum Dijelajahi Terdeteksi",
         "text": "Kita belum pernah sampai sana. Sebaiknya perhatikan baik-baik."
       },
       {
+        "voId": "chr_0006_wolfgd_explore_find_danger_01",
         "title": "Musuh Kuat Ditemukan",
         "text": "Sepertinya akan merepotkan. Ini bukan musuh biasa."
       },
       {
+        "voId": "chr_0006_wolfgd_interact_mine_valub_01",
         "title": "Penambangan 1",
         "text": "Semoga nilainya sepadan dengan usaha kita."
       },
       {
+        "voId": "chr_0006_wolfgd_interact_mine_valub_echo2_01",
         "title": "Penambangan 2",
         "text": "Sebaiknya aku saja yang menanganinya .... Hmm, kita selesaikan bersama sebagai tim saja, deh."
       },
       {
+        "voId": "chr_0006_wolfgd_interact_treasure_valub_01",
         "title": "Membuka Kerat",
         "text": "Jarahan luar biasa. Perburuan ini terbukti membuahkan hasil."
       },
       {
+        "voId": "chr_0006_wolfgd_interact_etherium_01",
         "title": "Mendapatkan Aurylene",
         "text": "Aurylene ... sepertinya bernilai bagi Endfield."
       },
       {
+        "voId": "chr_0006_wolfgd_interact_blight_break_01",
         "title": "Menyingkirkan Hawar",
         "text": "Keputusanmu tepat. Hawar itu hanya menghambat operasi kita."
       },
       {
+        "voId": "chr_0006_wolfgd_interact_rest_01",
         "title": "Istirahat",
         "text": "Pemeriksaan amunisi selesai. Ayo mulai perburuan berikutnya."
       },
       {
+        "voId": "chr_0006_wolfgd_combat_suppuse_using_01",
         "title": "Penggunaan Taktis 1",
         "text": "Hati-hati. Tak usah dipaksa."
       },
       {
+        "voId": "chr_0006_wolfgd_combat_suppuse_getheal_01",
         "title": "Penggunaan Taktis 2",
         "text": "... Akhirnya bisa tarik napas."
       },
       {
+        "voId": "chr_0006_wolfgd_combat_remind_danger_01",
         "title": "Peringatan Bahaya",
         "text": "Menghindar!"
       },
       {
+        "voId": "chr_0006_wolfgd_combat_hurt_lowhp_01",
         "title": "Cedera",
         "text": "Perhatikan pertarungannya, bukan malah aku."
       },
       {
+        "voId": "chr_0006_wolfgd_combat_dead_01",
         "title": "0 HP",
         "text": "Hngh .... Evakuasi medis."
       },
       {
+        "voId": "chr_0006_wolfgd_combat_remind_praise_01",
         "title": "Penyemangat Tim 1",
         "text": "Aksi hebat."
       },
       {
+        "voId": "chr_0006_wolfgd_combat_remind_praise_02",
         "title": "Penyemangat Tim 2",
         "text": "Kerja sama luar biasa."
       },
       {
+        "voId": "chr_0006_wolfgd_combat_remind_praise_echo2_01",
         "title": "Respons Penyemangat 1",
         "text": "Ini belum seberapa."
       },
       {
+        "voId": "chr_0006_wolfgd_combat_remind_praise_echo2_02",
         "title": "Respons Penyemangat 2",
         "text": "Ini memang tugasku."
       },
       {
+        "voId": "chr_0006_wolfgd_combat_intobattle_01",
         "title": "Mulai Pertarungan 1",
         "text": "Aku akan terus cari peluang."
       },
       {
+        "voId": "chr_0006_wolfgd_combat_intobattle_echo2_01",
         "title": "Mulai Pertarungan 2",
         "text": "Tak usah khawatirkan aku. Aku akan mengikuti tempomu."
       },
       {
+        "voId": "chr_0006_wolfgd_combat_outbattle_nor_01",
         "title": "Menang Pertarungan 1",
         "text": "Menantang, sesuai ekspektasiku."
       },
       {
+        "voId": "chr_0006_wolfgd_combat_outbattle_nor_02",
         "title": "Menang Pertarungan 2",
         "text": "Sesuai dugaanku."
       },
       {
+        "voId": "chr_0006_wolfgd_combat_outbattle_nor_echo2_01",
         "title": "Menang Pertarungan 3",
         "text": "Kita menang. Itulah yang penting."
       },
       {
+        "voId": "chr_0006_wolfgd_combat_outbattle_hard_01",
         "title": "Menang Pertarungan 4",
         "text": "Lebih sulit dari perkiraan .... Tapi, kita pemenangnya. Itulah yang terpenting."
       },
       {
+        "voId": "chr_0006_wolfgd_combat_battle_defeat_01",
         "title": "Kalah Bertarung",
         "text": "Si pemburu terkadang jadi yang diburu .... Menurutku, ini saatnya mulai berburu dari awal lagi."
       },
       {
+        "voId": "chr_0006_wolfgd_mono_attack_last_01",
         "title": "Final Strike 1",
         "text": "Diam kau!"
       },
       {
+        "voId": "chr_0006_wolfgd_mono_attack_last_02",
         "title": "Final Strike 2",
         "text": "Kau tak akan bisa kabur!"
       },
       {
+        "voId": "chr_0006_wolfgd_mono_skill_nor_01",
         "title": "Skill Tarung 1",
         "text": "Lakukan dengan cepat!"
       },
       {
+        "voId": "chr_0006_wolfgd_mono_skill_nor_02",
         "title": "Skill Tarung 2",
         "text": "Darah Kawanan!"
       },
       {
+        "voId": "chr_0006_wolfgd_mono_skill_nor_03",
         "title": "Skill Tarung 3",
         "text": "Minggir!"
       },
       {
+        "voId": "chr_0006_wolfgd_combat_skill_comb_ready_01",
         "title": "Skill Kombo Siap 1",
         "text": "Siap tembak."
       },
       {
+        "voId": "chr_0006_wolfgd_combat_skill_comb_ready_02",
         "title": "Skill Kombo Siap 2",
         "text": "Giliranku."
       },
       {
+        "voId": "chr_0006_wolfgd_mono_skill_comb_release_01",
         "title": "Penggunaan Kombo 1",
         "text": "Biar kutangani."
       },
       {
+        "voId": "chr_0006_wolfgd_mono_skill_comb_release_02",
         "title": "Penggunaan Kombo 2",
         "text": "Tahan!"
       },
       {
+        "voId": "chr_0006_wolfgd_mono_attack_extra_01",
         "title": "Penuntas 1",
         "text": "Berisik."
       },
       {
+        "voId": "chr_0006_wolfgd_mono_attack_extra_02",
         "title": "Penuntas 2",
         "text": "Habislah kau!"
       },
       {
+        "voId": "chr_0006_wolfgd_mono_skill_ultimate_01",
         "title": "Ultimate 1",
         "text": "Habislah kalian semua!"
       },
       {
+        "voId": "chr_0006_wolfgd_mono_skill_ultimate_02",
         "title": "Ultimate 2",
         "text": "Incar lehernya!"
       },
       {
+        "voId": "chr_0006_wolfgd_mono_skill_ultimate_03",
         "title": "Ultimate 3",
         "text": "Para serigala, saatnya pesta!"
       }

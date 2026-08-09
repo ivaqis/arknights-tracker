@@ -125,326 +125,407 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0007_ikut_chrbark_squad_01",
         "title": "Preparación de la operación 1",
         "text": "¿Tienes todo listo? Las tierras salvajes están llenas de peligro."
       },
       {
+        "voId": "chr_0007_ikut_chrbark_squad_02",
         "title": "Preparación de la operación 2",
         "text": "El viento nunca se detiene. Y yo tampoco."
       },
       {
+        "voId": "chr_0007_ikut_chrbark_join_01",
         "title": "Añadir al equipo 1",
         "text": "Al fin, un soplo de aire fresco. Casi había olvidado el olor de la tierra."
       },
       {
+        "voId": "chr_0007_ikut_chrbark_join_02",
         "title": "Añadir al equipo 2",
         "text": "Puedes ir tan rápido como puedas. No te preocupes. Yo siempre sigo el ritmo."
       },
       {
+        "voId": "chr_0007_ikut_chrbark_weap_01",
         "title": "Cambiar de arma",
         "text": "Puedo sentir que respira, y que está hecho para mí."
       },
       {
+        "voId": "chr_0007_ikut_chrbark_gear_01",
         "title": "Cambiar de equipamiento",
         "text": "Qué artesanía... Esta precisión es inusual, incluso entre todos productos de los Aldertones que he conocido."
       },
       {
+        "voId": "chr_0007_ikut_chrup_skill_01",
         "title": "Activación de la matriz de habilidades",
         "text": "Mi Aldertone me enseñó algo diferente, pero tú apuntas a los mismos objetivos. He sido iluminada."
       },
       {
+        "voId": "chr_0007_ikut_chrup_level_01",
         "title": "Viendo los registros de combate",
         "text": "Vivir en las tierras salvajes te enseña cosas... Y esas lecciones ayudan a forjar una hoja afilada."
       },
       {
+        "voId": "chr_0007_ikut_chrup_promt01_01",
         "title": "Ascenso de operador 1",
         "text": "¿Ascenso...? ¿Significa que he ganado tu aprobación? Entonces me... me honra haber sido aprobada."
       },
       {
+        "voId": "chr_0007_ikut_chrup_promt02_01",
         "title": "Ascenso de operador 2",
         "text": "Con el honor viene el deber. Todo esto me recuerda que debo ayudar a más personas."
       },
       {
+        "voId": "chr_0007_ikut_chrup_promt03_01",
         "title": "Ascenso de operador 3",
         "text": "La naturaleza no nos enseña a sobrevivir. Solo deja un rastro para que lo sigamos. Alguna vez hice lo mejor por adaptarme... Ahora... Empiezo a entender cómo funciona."
       },
       {
+        "voId": "chr_0007_ikut_chrup_promt04_01",
         "title": "Ascenso de operador 4",
         "text": "He aprendido mucho viajando contigo. Empiezo a entender por qué los versos hanna me guiaron hasta ti. Usaré bien ese conocimiento."
       },
       {
+        "voId": "chr_0007_ikut_introduce_01",
         "title": "Operador reportándose para el deber",
         "text": "Soy Ekut. Mi distintivo es Arclight. No soy una tejedora de palabras entrenada, pero les deseo lo mejor, y que fluyan como un río creciente, Endfielders."
       },
       {
+        "voId": "chr_0007_ikut_mono_switch_01",
         "title": "En espera 1",
         "text": "El camino por delante ha sido revelado."
       },
       {
+        "voId": "chr_0007_ikut_mono_switch_02",
         "title": "En espera 2",
         "text": "Estoy preparada para un desempeño óptimo."
       },
       {
+        "voId": "chr_0007_ikut_sim_assign_work_01",
         "title": "Asignando a una instalación",
         "text": "Estoy en eso. Las Buscadoras de canciones nunca descansamos."
       },
       {
+        "voId": "chr_0007_ikut_sim_hello_lower_01",
         "title": "Saludo 1",
         "text": "¿De dónde provienen los vientos hoy, Endmin?"
       },
       {
+        "voId": "chr_0007_ikut_sim_hello_max_01",
         "title": "Saludo 2",
         "text": "¿Regresas de un viaje a la superficie, Endmin? Hueles a tierras salvajes."
       },
       {
+        "voId": "chr_0007_ikut_sim_talk_lv01_01",
         "title": "Charla casual en la Dijiang 1",
         "text": "Reparar un corcel de hierro es como tratar a una pequeña bestia de quiste. Hay que escuchar con atención antes de aplicar el tratamiento."
       },
       {
+        "voId": "chr_0007_ikut_sim_talk_lv02_01",
         "title": "Charla casual en la Dijiang 2",
         "text": "Las estrellas aquí son distintas a las que vemos desde las tierras salvajes... Pero ambas perspectivas son igual de fascinantes."
       },
       {
+        "voId": "chr_0007_ikut_sim_talk_lv02_02",
         "title": "Charla casual en la Dijiang 3",
         "text": "Estoy estudiando esas nubes. Sus bordes afilados anuncian tormenta. Ten cuidado si tu próxima misión te lleva allí."
       },
       {
+        "voId": "chr_0007_ikut_sim_talk_max_01",
         "title": "Charla casual en la Dijiang 4",
         "text": "Qué lindo cabello, como piel de bestia mojada con el rocío del alba. ¿Nunca las has visto? Bueno, es simplemente hermoso."
       },
       {
+        "voId": "chr_0007_ikut_sim_talk_max_02",
         "title": "Charla casual en la Dijiang 5",
         "text": "¿Has visto alguna vez las Migraciones de la pradera? Un ejército de bestias y vagones persiguiendo la lluvia y las nubes. Esas son las cosas que deseo proteger."
       },
       {
+        "voId": "chr_0007_ikut_sim_talk_max_03",
         "title": "Charla casual en la Dijiang 6",
         "text": "A menudo te pierdes contemplando este mundo. Creo que entiendo cómo te sientes. Nuestros corazones siempre anhelan los lugares que amamos, por lejanos que estén."
       },
       {
+        "voId": "chr_0007_ikut_sim_gift_give_01",
         "title": "Ofreciendo regalos",
         "text": "Te traje algo. Un regalo de las tierras salvajes. Espero que te guste."
       },
       {
+        "voId": "chr_0007_ikut_sim_gift_recv_01",
         "title": "Aceptando regalos",
         "text": "¿Para mí? Los regalos son importantes en las tierras salvajes... Este lo atesoraré."
       },
       {
+        "voId": "chr_0007_ikut_mono_self_line01",
         "title": "Diálogo de confianza 1",
         "text": "Recomiendo aprender lo básico para sobrevivir en la naturaleza, Endmin. Fabricar trampas artesanales para orejilargas es un buen comienzo. Puedo enseñarte eso."
       },
       {
+        "voId": "chr_0007_ikut_mono_self_line02",
         "title": "Diálogo de confianza 2",
         "text": "La vida en las tierras salvajes es difícil, pero también hermosa. Como el cielo despejado tras un monzón, como una bestia voladora naciendo bajo la luna."
       },
       {
+        "voId": "chr_0007_ikut_mono_self_line03",
         "title": "Diálogo de confianza 3",
         "text": "No hay nada misterioso en que los artefactos antiguos funcionen mejor cuando se improvisa. Yunta dos bestias de carga desconocidas al mismo carro y dales tiempo. A la larga se convertirán en un buen equipo."
       },
       {
+        "voId": "chr_0007_ikut_mono_self_line04",
         "title": "Diálogo de confianza 4",
         "text": "Comencé mi andar buscando respuestas. Las tierras salvajes han perdido su equilibrio, y debo hacer algo al respecto. Escuché a los lagos que susurran y a los bosques que murmuran. Y ahora, deseo escuchar tu voz."
       },
       {
+        "voId": "chr_0007_ikut_mono_self_line05",
         "title": "Diálogo de confianza 5",
         "text": "Tejeré estos relatos en la hanna de nuestro viaje. Eso tomará tiempo, pues muchas cosas son dignas de una canción. Cuando la hanna esté completa, tú serás la primera persona en oírla."
       },
       {
+        "voId": "chr_0007_ikut_mono_chat_line01",
         "title": "Charla 1",
         "text": "Quienes desean vivir se harán escuchar. Y las Buscadoras de canciones que deambulan siempre escucharán. Tal es el propósito del Circuito Hannabit."
       },
       {
+        "voId": "chr_0007_ikut_mono_chat_line02",
         "title": "Charla 2",
         "text": "Ser amigo de las tribus habitantes de Tierras salvajes es simple. Nos enfocamos en lo que importa: el clima, la comida y los peligros. Tan solo esto ya ocupa una buena parte de nuestro tiempo."
       },
       {
+        "voId": "chr_0007_ikut_mono_chat_line03",
         "title": "Charla 3",
         "text": "Toda Buscadora de canciones del Circuito Hannabit conoce los hannas de memoria. No es difícil. Los versos abarcan cada aspecto de nuestra vida. Y del mismo modo, nosotros estamos tejidos dentro de los versos."
       },
       {
+        "voId": "chr_0007_ikut_mono_chat_line04",
         "title": "Charla 4",
         "text": "Mi Aldertone me habló sobre Terra y las ciudades que se mueven para evitar las Catástrofes. Parece que hemos heredado nuestras prácticas ancestrales, solo que de otra forma."
       },
       {
+        "voId": "chr_0007_ikut_mono_chat_line05",
         "title": "Charla 5",
         "text": "Puedes intercambiar cosas usadas en ciertos bazares de las tierras salvajes, pero hay que tener paciencia para encontrar un buen trato. Modifiqué un viejo dispositivo Kjersch para usarlo como comunicador. Fabrican cosas que funcionan bien en ambientes extremos."
       },
       {
+        "voId": "chr_0007_ikut_mono_about_line01",
         "title": "Tema: Ciudades",
         "text": "Talos-II es más grande de lo que pensaba. Antes creía que toda ciudad era solo una combinación distinta de acero, caminos y luces. Pero cuando las visité, comprendí que cada una tiene su propio pulso y energía. La diferencia es más clara que entre dos praderas de pastos distintos."
       },
       {
+        "voId": "chr_0007_ikut_mono_about_line02",
         "title": "Tema: El Endministrator",
         "text": "He viajado mucho, y hasta las tribus más lejanas cantan historias sobre ti. Aunque difieren mucho entre sí, hay algo que siempre se repite: la esperanza siempre va unida a tu nombre."
       },
       {
+        "voId": "chr_0007_ikut_mono_about_line03",
         "title": "Tema: Canciones Hanna",
         "text": "Un nómada moribundo cantó nuestra primera hanna y solo tenía tres versos. Esos versos dieron nombre al Circuito Hannabit. Y desde el primer Aldertone, la hanna guió a las Buscadoras de canciones en su andar, hasta que ellos también se volvieron parte de la canción."
       },
       {
+        "voId": "chr_0007_ikut_mono_about_line04",
         "title": "Tema: Aldertones",
         "text": "Los Aldertones rara vez hablan directamente. Orisha decía que en la hanna está todo el conocimiento que necesitamos. Me enseñó con sus actos. Debemos ayudarnos mutuamente para sobrevivir en este mundo."
       },
       {
+        "voId": "chr_0007_ikut_mono_about_line05",
         "title": "Tema: Su tribu",
         "text": "Crecí en una pequeña tribu con no más de cien almas. Era todo lo que conocía antes de comenzar mi viaje. Me enseñó a ordeñar pequeñas bestias de quiste, a montar mi corcel de hierro y a sobrevivir en las tierras salvajes. Nunca dejé ese lugar. Simplemente lo llevé conmigo."
       },
       {
+        "voId": "chr_0007_ikut_explore_point_common_01",
         "title": "Recurso/Coleccionable detectado 1",
         "text": "Si ayuda a la supervivencia, tráelo."
       },
       {
+        "voId": "chr_0007_ikut_explore_point_valub_01",
         "title": "Recurso/Coleccionable detectado 2",
         "text": "Mi Aldertone estará interesado en esto."
       },
       {
+        "voId": "chr_0007_ikut_explore_find_locked_01",
         "title": "Zona inexplorada detectada",
         "text": "No te quedes atrás. Necesitamos verlo más de cerca."
       },
       {
+        "voId": "chr_0007_ikut_explore_find_danger_01",
         "title": "Enemigo poderoso descubierto",
         "text": "Siento peligro. Este no caerá fácilmente."
       },
       {
+        "voId": "chr_0007_ikut_interact_mine_valub_01",
         "title": "Minería 1",
         "text": "Las bondades de la tierra."
       },
       {
+        "voId": "chr_0007_ikut_interact_mine_valub_echo2_01",
         "title": "Minería 2",
         "text": "Déjamelo a mí. Soy bueno con el trabajo físico."
       },
       {
+        "voId": "chr_0007_ikut_interact_treasure_valub_01",
         "title": "Abriendo una caja",
         "text": "Una rareza en las tierras salvajes. Le daremos buen uso."
       },
       {
+        "voId": "chr_0007_ikut_interact_etherium_01",
         "title": "Adquiriendo Aurileno",
         "text": "Solemos embotellarlas para tener luz."
       },
       {
+        "voId": "chr_0007_ikut_interact_blight_break_01",
         "title": "Eliminar la Plaga",
         "text": "Dejemos que la Naturaleza siga su curso."
       },
       {
+        "voId": "chr_0007_ikut_interact_rest_01",
         "title": "Descanso",
         "text": "Esto me recuerda a las fogatas en las tierras salvajes. Ambas comparten el mismo calor."
       },
       {
+        "voId": "chr_0007_ikut_combat_suppuse_using_01",
         "title": "Uso táctico 1",
         "text": "Controla tu respiración."
       },
       {
+        "voId": "chr_0007_ikut_combat_suppuse_getheal_01",
         "title": "Uso táctico 2",
         "text": "Regresar es mi fortaleza."
       },
       {
+        "voId": "chr_0007_ikut_combat_remind_danger_01",
         "title": "Advertencia de peligro",
         "text": "No te detengas. Sigue avanzando."
       },
       {
+        "voId": "chr_0007_ikut_combat_hurt_lowhp_01",
         "title": "Herida",
         "text": "Sigo en la pelea, solo un poco más lenta."
       },
       {
+        "voId": "chr_0007_ikut_combat_dead_01",
         "title": "0 PV",
         "text": "Lo siento... Ojalá pudiera ayudarte más..."
       },
       {
+        "voId": "chr_0007_ikut_combat_remind_praise_01",
         "title": "Ánimo del equipo 1",
         "text": "¡Respondiste como el relámpago!"
       },
       {
+        "voId": "chr_0007_ikut_combat_remind_praise_02",
         "title": "Ánimo del equipo 2",
         "text": "Como viento y trueno, les dimos una tormenta."
       },
       {
+        "voId": "chr_0007_ikut_combat_remind_praise_echo2_01",
         "title": "Respuesta al ánimo 1",
         "text": "Eso es lo que tenía planeado hacer."
       },
       {
+        "voId": "chr_0007_ikut_combat_remind_praise_echo2_02",
         "title": "Respuesta al ánimo 2",
         "text": "Solo soy parte del equipo."
       },
       {
+        "voId": "chr_0007_ikut_combat_intobattle_01",
         "title": "Comienza el combate 1",
         "text": "Estoy en la onda."
       },
       {
+        "voId": "chr_0007_ikut_combat_intobattle_echo2_01",
         "title": "Comienza el combate 2",
         "text": "Te dejo ese lado."
       },
       {
+        "voId": "chr_0007_ikut_combat_outbattle_nor_01",
         "title": "Victoria en el combate 1",
         "text": "A la serenidad volverán."
       },
       {
+        "voId": "chr_0007_ikut_combat_outbattle_nor_02",
         "title": "Victoria en el combate 2",
         "text": "Rezo que la tierra los acepte a todos."
       },
       {
+        "voId": "chr_0007_ikut_combat_outbattle_nor_echo2_01",
         "title": "Victoria en el combate 3",
         "text": "Así lo quiere la Naturaleza."
       },
       {
+        "voId": "chr_0007_ikut_combat_outbattle_hard_01",
         "title": "Victoria en el combate 4",
         "text": "Todo ser de las tierras salvajes debe soportar dificultades para crecer."
       },
       {
+        "voId": "chr_0007_ikut_combat_battle_defeat_01",
         "title": "Derrota en el combate",
         "text": "Incluso la manada más experimentada de bestias colmilludas puede fallar al cazar su presa. Al menos aprendimos algo de esta cacería."
       },
       {
+        "voId": "chr_0007_ikut_mono_attack_last_01",
         "title": "Golpe final 1",
         "text": "¡Romper!"
       },
       {
+        "voId": "chr_0007_ikut_mono_attack_last_02",
         "title": "Golpe final 2",
         "text": "¡Quebrar!"
       },
       {
+        "voId": "chr_0007_ikut_mono_skill_nor_01",
         "title": "Habilidad de batalla 1",
         "text": "¡Vientos furiosos!"
       },
       {
+        "voId": "chr_0007_ikut_mono_skill_nor_02",
         "title": "Habilidad de batalla 2",
         "text": "¡Trueno retumbante!"
       },
       {
+        "voId": "chr_0007_ikut_mono_skill_nor_03",
         "title": "Habilidad de batalla 3",
         "text": "¡Relámpago de arco!"
       },
       {
+        "voId": "chr_0007_ikut_combat_skill_comb_ready_01",
         "title": "Habilidad de combo preparada 1",
         "text": "¡Perfecto es este viento!"
       },
       {
+        "voId": "chr_0007_ikut_combat_skill_comb_ready_02",
         "title": "Habilidad de combo preparada 2",
         "text": "Barreré lo que queda."
       },
       {
+        "voId": "chr_0007_ikut_mono_skill_comb_release_01",
         "title": "Lanzando combo 1",
         "text": "Tal es el camino óptimo."
       },
       {
+        "voId": "chr_0007_ikut_mono_skill_comb_release_02",
         "title": "Lanzando combo 2",
         "text": "¡Veo una oportunidad!"
       },
       {
+        "voId": "chr_0007_ikut_mono_attack_extra_01",
         "title": "Remate 1",
         "text": "Se acabó."
       },
       {
+        "voId": "chr_0007_ikut_mono_attack_extra_02",
         "title": "Remate 2",
         "text": "Esta es mi oportunidad."
       },
       {
+        "voId": "chr_0007_ikut_mono_skill_ultimate_01",
         "title": "Habilidad máxima 1",
         "text": "No escaparás de esto."
       },
       {
+        "voId": "chr_0007_ikut_mono_skill_ultimate_02",
         "title": "Habilidad máxima 2",
         "text": "De las tormentas vino."
       },
       {
+        "voId": "chr_0007_ikut_mono_skill_ultimate_03",
         "title": "Habilidad máxima 3",
         "text": "Como un relámpago, golpeó."
       }

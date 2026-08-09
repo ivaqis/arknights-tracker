@@ -131,326 +131,407 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0027_tangtang_chrbark_squad_01",
         "title": "Prep Operação 1",
         "text": "Ei, Máscara Escura, para onde você vai? Não vá embora sem mim!"
       },
       {
+        "voId": "chr_0027_tangtang_chrbark_squad_02",
         "title": "Prep Operação 2",
         "text": "Está saindo? Eu já estava quase mofando de tédio!"
       },
       {
+        "voId": "chr_0027_tangtang_chrbark_join_01",
         "title": "Adicionando à equipe 1",
         "text": "Sua Chefe Suprema está aqui! Você, você e você estão todos sob meu comando!"
       },
       {
+        "voId": "chr_0027_tangtang_chrbark_join_02",
         "title": "Adicionando à equipe 2",
         "text": "Não se preocupe, eu te ajudo."
       },
       {
+        "voId": "chr_0027_tangtang_chrbark_weap_01",
         "title": "Trocando de arma",
         "text": "Essa arma é ótima de usar! Minha mira está ainda mais precisa agora!"
       },
       {
+        "voId": "chr_0027_tangtang_chrbark_gear_01",
         "title": "Trocando de equipamento",
         "text": "Todo esse equipamento é para mim? Ah, qual é, coisas boas são para compartilhar! Este é seu, e este é meu!"
       },
       {
+        "voId": "chr_0027_tangtang_chrup_skill_01",
         "title": "Ativação da Matriz de Capacidade",
         "text": "Ainda mais forte agora! Muito bem, hora de testar isso naquela louca!"
       },
       {
+        "voId": "chr_0027_tangtang_chrup_level_01",
         "title": "Assistindo a Registros de Combate",
         "text": "Esquerda! Direita! Isso, assim mesmo... Ei, esses caras não são ruins, recrute-os para mim!"
       },
       {
+        "voId": "chr_0027_tangtang_chrup_promt01_01",
         "title": "Promoção do Operador 1",
         "text": "Você me chamou só para me elogiar? Então, não economize nos elogios. Adoro ouvir a verdade!"
       },
       {
+        "voId": "chr_0027_tangtang_chrup_promt02_01",
         "title": "Promoção do Operador 2",
         "text": "Está me promovendo de novo? Eu sabia que era a sua favorita!"
       },
       {
+        "voId": "chr_0027_tangtang_chrup_promt03_01",
         "title": "Promoção do Operador 3",
         "text": "A batalha é que nos forjou! Sem formalidades. Se eu tomar um gole de sopa, você ganha um pedaço de carne. O quê, deveria ser o contrário? Não, é assim que funciona."
       },
       {
+        "voId": "chr_0027_tangtang_chrup_promt04_01",
         "title": "Promoção do Operador 4",
         "text": "Outra promoção?! Eu só tenho um olho — não consigo ler tantos relatórios! Você cuida dos planos de construção por enquanto... Hã? Não estou relaxando! Isso é um atraso estratégico. Vou treinar e voltar mais forte!"
       },
       {
+        "voId": "chr_0027_tangtang_introduce_01",
         "title": "Operador se apresentando para o trabalho",
         "text": "Chefe da Paliçada de Qingbo, Tangtang, se apresentando conforme prometido! Agora podem me entregar a Endfield; farei dela o lugar mais brabo de Talos-II! Entregar uma proposta? Ora, desde quando uma chefe faz papelada? A gente resolve isso junto!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_switch_01",
         "title": "Em espera 1",
         "text": "Uau, meu tesouro! Hah, tente fugir de mim agora!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_switch_02",
         "title": "Em espera 2",
         "text": "Rawr — Máscara Escura! Finalmente você chegou! Por que demorou tanto?"
       },
       {
+        "voId": "chr_0027_tangtang_sim_assign_work_01",
         "title": "Atribuindo a Instalação",
         "text": "Certo, certo, entendi. Aperte aqui... e depois toque ali. Se algo der errado, Máscara Escura resolve!"
       },
       {
+        "voId": "chr_0027_tangtang_sim_hello_lower_01",
         "title": "Saudação 1",
         "text": "Máscara Escura, por aqui!"
       },
       {
+        "voId": "chr_0027_tangtang_sim_hello_max_01",
         "title": "Saudação 2",
         "text": "Me avise se alguma coisa legal surgir. Não quero perder nada!"
       },
       {
+        "voId": "chr_0027_tangtang_sim_talk_lv01_01",
         "title": "Conversa Ociosa da Dijiang 1",
         "text": "Sua tripulação é bem forte, mas eu nunca perdi uma luta de verdade! Uh... bem... os únicos que eu não consigo lidar são... aqueles médicos de jaleco branco! Eles ficam dizendo que vão tratar minha Oripatia e tentam espetar meu traseiro com agulhas — Aah! Eles estão chegando! Máscara Escura, me esconda!"
       },
       {
+        "voId": "chr_0027_tangtang_sim_talk_lv02_01",
         "title": "Conversa Ociosa da Dijiang 2",
         "text": "Você tem muitas pessoas talentosas na Dijiang, se eu pudesse ficar com algumas para mim... Heh, Máscara Escura, não sou gananciosa, só me deixe ficar com a Escriba Pálida e a Escamas Verdes! Não? Que tal aquele Velho Rosto de Ferro de três cabeças e super falante! Vamos lá, ele não tem medo de mim. Somos melhores amigos!"
       },
       {
+        "voId": "chr_0027_tangtang_sim_talk_lv02_02",
         "title": "Conversa Ociosa da Dijiang 3",
         "text": "Sempre que estou estressada, vou gritar perto da água algumas vezes, e isso sempre me faz sentir muito melhor. Alguém tão cheio de ocupações quanto você, com tanta coisa na cabeça, também deveria encontrar um lugar para gritar. Que tal aquela plataforma ali? Ou aquela janela grande? Pff, como assim isso pode causar problemas? O problema mesmo é guardar tudo para si!"
       },
       {
+        "voId": "chr_0027_tangtang_sim_talk_max_01",
         "title": "Conversa Ociosa da Dijiang 4",
         "text": "É possível ver tantas estrelas das janelas da Dijiang. Isso me lembra dos velhos tempos, quando eu me deitava perto da fonte ancestral, observando as estrelas refletidas na água. Uma nave espacial também é um navio, a galáxia também é um rio... Pensando bem, a Dijiang e a Paliçada de Qingbo não são tão diferentes assim. Ambos são ótimos lugares!"
       },
       {
+        "voId": "chr_0027_tangtang_sim_talk_max_02",
         "title": "Conversa Ociosa da Dijiang 5",
         "text": "Esses estragos... não foram culpa minha! A culpa é daquele novato de cabelo verde da patrulha, era só ele ter devolvido minha carteira. Mas não, ele resolveu me perseguir pela base inteira! Eu achei que ele queria me prender! E enquanto eu tentava despistar ele, bem... posso ter esbarrado em alguns caixotes. Não é como se eu fosse culpada ou algo assim! São apenas velhos hábitos de fugir dos patrulheiros em Wuling."
       },
       {
+        "voId": "chr_0027_tangtang_sim_talk_max_03",
         "title": "Conversa Ociosa da Dijiang 6",
         "text": "Endmin, Endmin, Endmin — Humph! Apostei com a Escamas Verdes que se eu pudesse te chamar de Endmin por um dia inteiro, ela me compraria um monte de lanches! Dessa vez eu ganhei! Só espere até ela abrir a carteira, Másc... Ah! Eu não disse isso! Você entendeu errado! Essa não vale!"
       },
       {
+        "voId": "chr_0027_tangtang_sim_gift_give_01",
         "title": "Oferta de presentes",
         "text": "Não pergunte de onde veio, apenas pegue. Minha regra é recompensar o bom trabalho, e você... você é muito bom!"
       },
       {
+        "voId": "chr_0027_tangtang_sim_gift_recv_01",
         "title": "Aceitando presentes",
         "text": "Ah, não precisava... Tem mais algum? Que tal outro?"
       },
       {
+        "voId": "chr_0027_tangtang_mono_self_line01",
         "title": "Diálogo de Confiança 1",
         "text": "Quando se trata das iguarias de Wuling, todo mundo só recomenda as mesmas coisas de sempre. Deixa eu te dar uma dica de verdade! Experimente a comida da prisão na Cidade de Wuling: três pratos, uma sopa e até frutas. Eu dei uma olhada escondida, os prisioneiros comem exatamente as mesmas refeições que os guardas, e é tudo muito bom. Ah, e vou te contar sobre um lugar legal também: quando você estiver rastejando pelos túneis subterrâneos em direção a Wuling, tem um lugar onde a luz entra, com um monte de flores crescendo por perto... Lindo demais. Uma pena que aquela louca da Mi Fu tenha bloqueado a passagem."
       },
       {
+        "voId": "chr_0027_tangtang_mono_self_line02",
         "title": "Diálogo de Confiança 2",
         "text": "Sabe, tem uma coisa que sempre me intrigou... Quem eram meus pais de verdade e por que me colocaram na água? Todo mundo diz que sou a \"filha do rio\", mas um rio não pode simplesmente dar à luz uma felina... Meu pai me contou que eu apareci boiando em uma bacia, toda embrulhada e com um laço em cima... Se eu algum dia os encontrasse, eu perguntaria. Com certeza eles não me abandonaram porque me odiavam, né? Quer dizer... quem coloca um laço no lixo que vai jogar fora?"
       },
       {
+        "voId": "chr_0027_tangtang_mono_self_line03",
         "title": "Diálogo de Confiança 3",
         "text": "Não se mexa! Você quase quebrou minha tira de bambu! Hum... O sol anda meio forte ultimamente, então pensei em tecer um chapéu para te proteger do sol. Só estava medindo sua cabeça... O quê, você não confia nas minhas habilidades? As cestas de bambu, os caixotes, as prateleiras lá na Paliçada — tá bom, eu não fiz aquilo, mas Qingwu diz que coisas feitas à mão têm mais significado... Enfim, quando a Chefe dá um presente, você aceita, não importa a aparência!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_self_line04",
         "title": "Diálogo de Confiança 4",
         "text": "Sei que o pessoal da Paliçada me chama de Chefe, mas no fundo, eles realmente seguiam meu irmão. Para ele, davam armas, ensinavam a ler... Para mim, eram brinquedos e roupas, e só fingiam me treinar. Até hoje, mal sei ler direito. Eles me tratavam bem, sempre tentando me manter feliz. Sem falhas, sem culpa. Só posso me culpar por não ter me esforçado mais... Mas agora é diferente. Serei uma líder adequada, não apenas para a Paliçada ou para mim mesma... mas para todos que acreditam em mim também."
       },
       {
+        "voId": "chr_0027_tangtang_mono_self_line05",
         "title": "Diálogo de Confiança 5",
         "text": "Máscara Escura, você é incrível em todos os aspectos, exceto um: sua postura é muito rígida! Não consigo nem me aproximar de você direito, fica difícil dar um tapinha no seu ombro ou bagunçar seu cabelo... Por quê? Porque quero te recompensar, é claro! É um sinal de confiança entre nós... Ei! Nem pense em dar um tapinha na minha cabeça! Eu sou a chefe, e a cabeça da chefe é proibida!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_chat_line01",
         "title": "Chat 1",
         "text": "Nadar, remar, atirar pedras na água, qualquer coisa que envolva água, eu levo na esportiva! O pessoal da Paliçada diz que sou uma criança abençoada pela fonte ancestral e que a água simplesmente me ama... Mas, cá entre nós? A verdade é que, como não enxergo bem com este olho, sempre ficava para trás quando nadava com os outros. Eu me recusei a aceitar isso e comecei a treinar todos os dias... até dominar a visão com um olho só e deixar todos para trás! Qual é aquele ditado mesmo? ...Isso mesmo, o trabalho duro compensa!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_chat_line02",
         "title": "Chat 2",
         "text": "Meus canhões de mão foram deixados pelo meu pai, minhas roupas foram feitas por Qingwu, meu cabelo foi cortado pelo meu irmão, as bandagens foram costuradas por Shui Ling... É assim que tudo funciona na Paliçada. Sem profissões específicas, todos têm que saber um pouco de tudo, ajudando uns aos outros... Ah, e eu corto cabelo muito melhor que meu irmão! Quer tentar? Esse seu corte de cabelo? Duas balas devem dar conta — Ei, Máscara Escura, pare de correr!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_chat_line03",
         "title": "Chat 3",
         "text": "No inverno, secávamos as barbatanas que pescávamos em varais de bambu para fazer carne seca. Durante aqueles dois meses, toda a Paliçada de Qingbo cheirava tão mal que eu quase desejava que Mi Fu me arrastasse para Wuling. Mas depois de completamente secas, refogadas com legumes e servidas sobre arroz? Absolutamente deliciosas. Sabe, é meio como a vida, primeiro amarga, depois doce. No fim, tudo sempre dá certo!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_chat_line04",
         "title": "Chat 4",
         "text": "Aqui está mais um Certificado de Tangtang para você. Você me ajudou no refeitório ontem, então te devo um. Humph! Mas aquela máquina, aquela que cospe garrafinhas quando você chuta? Com certeza não fui eu que quebrei... Enfim, esquece isso. Você já tem Certificados de Tangtang demais, preciso mudar as regras! De agora em diante, você, Máscara Escura, precisa de quinhentos para resgatar apenas uma vez... Heh, meus certificados, minhas regras!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_chat_line05",
         "title": "Chat 5",
         "text": "Eu cubro esse olho não porque a Oripatia o tornou sensível à luz... mas porque me permite usar aquela coisa chamada Artes de Originium. Eu não conseguia controlá-la antes e acabei machucando aquela louca durante uma luta, e ela ainda tem a cicatriz... Eu tinha medo de machucar outra pessoa sem querer, então mantive o tapa-olho desde então. Mas, ei, todo mundo diz que me dá mais a vibe de Chefe, então mesmo depois de aprender a controlar as Artes, nunca pensei em tirá-lo!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_about_line01",
         "title": "Tópico: Paliçada de Qingbo",
         "text": "Sabe, há mais de cem anos, nossos ancestrais na Paliçada de Qingbo se cansaram de todas as lutas e rivalidades entre as pessoas. Eles deixaram aqueles lugares assolados por conflitos e se estabeleceram perto da fonte ancestral. Mas depois que o povo de Wuling chegou, começamos a brigar outra vez. Não importa para onde você vá, as pessoas simplesmente não conseguem escapar de rancores e disputas... Porque essas coisas criam raízes no coração de todos. Mas se eu administrar bem este lar, esses conflitos não se repetirão... Não, mais do que isso. Vou fazer coisas ainda maiores aqui na Endfield, junto com todos vocês!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_about_line02",
         "title": "Tópico: Mi Fu",
         "text": "Sabe, aquela Mi Fu costumava ser uma de nós na Paliçada. Em um belo dia, ela simplesmente pirou e teve que aceitar aquela tal de Zhuang como chefe! Quase me matou de raiva! Eu disse pra ela várias vezes que eu seria uma líder muito melhor do que a Zhuang, mas ela nunca olhou para trás... Que absurdo! Todas aquelas vezes que eu fui à Cidade de Wuling? Não era pra implorar para ela voltar pra casa. Eu ia pra dar uma surra nela!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_about_line03",
         "title": "Tópico: Zhuang Fangyi",
         "text": "Aquela para-raios ambulante, a Tianshi? As coisas mais simples ficam um caos quando ela tenta explicar. Cada palavra dela parece uma armadilha, e eu levo uma eternidade pra entender. Nós somos como dois tipos de água correndo em sentidos opostos... Mas, pelo bem da Paliçada, eu ainda tenho que ouvir o que ela diz. Máscara Escura, me dá uma força com essa proposta. O que diabos significa esse tal de \"índice de cálculo\"...?"
       },
       {
+        "voId": "chr_0027_tangtang_mono_about_line04",
         "title": "Tópico: Sinos de água de bambu",
         "text": "Quando perdemos alguém na Paliçada, enviamos um sino de água de bambu. O primeiro que eu soltei... foi para o papai. Meu irmão disse que o som da fonte era o papai falando conosco. Depois disso, eu sempre ia até a água quando me sentia perdida, e ela respondia. Mas quando perguntei sobre meu irmão, ela permaneceu em silêncio. Esperei por muito, muito tempo até adormecer... Talvez meu pai acreditasse que isso era algo que eu precisava descobrir sozinho."
       },
       {
+        "voId": "chr_0027_tangtang_mono_about_line05",
         "title": "Tópico: Leitura",
         "text": "Normalmente não gosto de ler, mas aqueles livros que Escamas Verdes me deu da última vez eram muito bons. Ela disse que são de Hongshan e destinados a crianças que ainda não sabem ler. Mas, honestamente, as lições nos livros são explicadas de forma muito clara. Muitos adultos não conseguem fazer isso, mesmo conhecendo todas as palavras. Pelo menos, quando mostrei os livros para a tripulação, todos bateram nas próprias pernas e disseram: \"Isso faz sentido!\" Se as pessoas neste mundo falassem de forma tão clara quanto esses livros, quantos problemas e mal-entendidos a menos haveria?"
       },
       {
+        "voId": "chr_0027_tangtang_explore_point_common_01",
         "title": "Recurso/Colecionável detectado 1",
         "text": "Olhos atentos, tem coisa brilhante por perto!"
       },
       {
+        "voId": "chr_0027_tangtang_explore_point_valub_01",
         "title": "Recurso/Colecionável detectado 2",
         "text": "Há um tesouro ali! Me dê uma mãozinha!"
       },
       {
+        "voId": "chr_0027_tangtang_explore_find_locked_01",
         "title": "Área não explorada detectada",
         "text": "Essa área ainda está intocada, vamos explorá-la!"
       },
       {
+        "voId": "chr_0027_tangtang_explore_find_danger_01",
         "title": "Inimigo poderoso descoberto",
         "text": "Sua chefe chegou! ...Espere, isso parece difícil..."
       },
       {
+        "voId": "chr_0027_tangtang_interact_mine_valub_01",
         "title": "Mineração 1",
         "text": "Que pedras lindas! É hora de cavar, cavar, cavar!"
       },
       {
+        "voId": "chr_0027_tangtang_interact_mine_valub_echo2_01",
         "title": "Mineração 2",
         "text": "Coisas brilhantes. Vamos dividir!"
       },
       {
+        "voId": "chr_0027_tangtang_interact_treasure_valub_01",
         "title": "Abrindo um caixote",
         "text": "Espera... ninguém quer isso?! Então eu vou levar!"
       },
       {
+        "voId": "chr_0027_tangtang_interact_etherium_01",
         "title": "Adquirindo Aurileno",
         "text": "Posso vendê-lo para conseguir algum dinheiro?"
       },
       {
+        "voId": "chr_0027_tangtang_interact_blight_break_01",
         "title": "Eliminando a Praga",
         "text": "Legaaal! Agora podemos pular alguns desvios irritantes!"
       },
       {
+        "voId": "chr_0027_tangtang_interact_rest_01",
         "title": "Descansar",
         "text": "Ufa... Estou completamente exausta... Não consigo continuar? Hah! A palavra \"não consigo\" não existe no meu dicionário! Vamos lá, vamos seguir em frente!"
       },
       {
+        "voId": "chr_0027_tangtang_combat_suppuse_using_01",
         "title": "Uso Tático 1",
         "text": "Eu disse que cobriria você!"
       },
       {
+        "voId": "chr_0027_tangtang_combat_suppuse_getheal_01",
         "title": "Uso Tático 2",
         "text": "Ah, muito melhor!"
       },
       {
+        "voId": "chr_0027_tangtang_combat_remind_danger_01",
         "title": "Aviso de Perigo",
         "text": "Pare de ficar olhando! Volte para trás!"
       },
       {
+        "voId": "chr_0027_tangtang_combat_hurt_lowhp_01",
         "title": "Ferido",
         "text": "Tanto... sono... Preciso... aguentar firme..."
       },
       {
+        "voId": "chr_0027_tangtang_combat_dead_01",
         "title": "0 PV",
         "text": "Está bem... hoje você teve sorte..."
       },
       {
+        "voId": "chr_0027_tangtang_combat_remind_praise_01",
         "title": "Encorajamento da Equipe 1",
         "text": "Esse é meu companheiro de gangue estrela!"
       },
       {
+        "voId": "chr_0027_tangtang_combat_remind_praise_02",
         "title": "Encorajamento da Equipe 2",
         "text": "Nossa pequena gangue aqui tem habilidades incríveis!"
       },
       {
+        "voId": "chr_0027_tangtang_combat_remind_praise_echo2_01",
         "title": "Resposta a Encorajamento 1",
         "text": "Bom, bom!"
       },
       {
+        "voId": "chr_0027_tangtang_combat_remind_praise_echo2_02",
         "title": "Resposta a Encorajamento 2",
         "text": "Da próxima vez, vamos fazer algo ainda maior?"
       },
       {
+        "voId": "chr_0027_tangtang_combat_intobattle_01",
         "title": "Início do Combate 1",
         "text": "Quem é o cara esperto que está procurando briga?"
       },
       {
+        "voId": "chr_0027_tangtang_combat_intobattle_echo2_01",
         "title": "Início do Combate 2",
         "text": "Tem que assustá-los assim mesmo!"
       },
       {
+        "voId": "chr_0027_tangtang_combat_outbattle_nor_01",
         "title": "Vitória em Combate 1",
         "text": "Essa sim foi uma luta satisfatória!"
       },
       {
+        "voId": "chr_0027_tangtang_combat_outbattle_nor_02",
         "title": "Vitória em Combate 2",
         "text": "Heh, tudo graças ao meu comando brilhante!"
       },
       {
+        "voId": "chr_0027_tangtang_combat_outbattle_nor_echo2_01",
         "title": "Vitória em Combate 3",
         "text": "É isso que eu gosto de ouvir!"
       },
       {
+        "voId": "chr_0027_tangtang_combat_outbattle_hard_01",
         "title": "Vitória em Combate 4",
         "text": "Todos se saíram muito bem. Descansem agora, da próxima vez teremos mais cuidado!"
       },
       {
+        "voId": "chr_0027_tangtang_combat_battle_defeat_01",
         "title": "Derrota em Combate",
         "text": "Não suporto ver todo mundo sofrendo assim... Juro que vou me vingar de vocês!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_attack_last_01",
         "title": "Golpe Final 1",
         "text": "Pew!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_attack_last_02",
         "title": "Golpe Final 2",
         "text": "Blam!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_skill_nor_01",
         "title": "Habilidade de Batalha 1",
         "text": "Você está encurralado!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_skill_nor_02",
         "title": "Habilidade de Batalha 2",
         "text": "Aproveitando a maré!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_skill_nor_03",
         "title": "Habilidade de Batalha 3",
         "text": "Vamos ver quem é mais rápido!"
       },
       {
+        "voId": "chr_0027_tangtang_combat_skill_comb_ready_01",
         "title": "Combo de Habilidades Pronto 1",
         "text": "Quando será a minha vez?!"
       },
       {
+        "voId": "chr_0027_tangtang_combat_skill_comb_ready_02",
         "title": "Combo de Habilidades Pronto 2",
         "text": "Chegou a hora da chefe agir!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_skill_comb_release_01",
         "title": "Conjuração de Combo 1",
         "text": "Abertura detectada!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_skill_comb_release_02",
         "title": "Conjuração de Combo 2",
         "text": "Não deslize!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_attack_extra_01",
         "title": "Finalizador 1",
         "text": "Ficou exposto!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_attack_extra_02",
         "title": "Finalizador 2",
         "text": "Eu te enganei! Ha!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_skill_ultimate_01",
         "title": "Habilidade Suprema 1",
         "text": "Estou de olho em você —"
       },
       {
+        "voId": "chr_0027_tangtang_mono_skill_ultimate_02",
         "title": "Habilidade Suprema 2",
         "text": "Esse se chama — Pare aí mesmo!"
       },
       {
+        "voId": "chr_0027_tangtang_mono_skill_ultimate_03",
         "title": "Habilidade Suprema 3",
         "text": "Desapareça com a maré!"
       }

@@ -121,318 +121,397 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0006_wolfgd_chrbark_squad_01",
         "title": "작전 준비 1",
         "text": "네가 지휘해."
       },
       {
+        "voId": "chr_0006_wolfgd_chrbark_squad_02",
         "title": "작전 준비 2",
         "text": "지금 출발하는 거야?"
       },
       {
+        "voId": "chr_0006_wolfgd_chrbark_join_01",
         "title": "팀 가입 1",
         "text": "협력하라고? 좋아, 그들이 따라올 수만 있다면."
       },
       {
+        "voId": "chr_0006_wolfgd_chrbark_join_02",
         "title": "팀 가입 2",
         "text": "팀 작전? 알겠어. 할 일은 제대로 할게."
       },
       {
+        "voId": "chr_0006_wolfgd_chrbark_weap_01",
         "title": "무기 변경",
         "text": "손에 딱 맞는 무기네. 고마워."
       },
       {
+        "voId": "chr_0006_wolfgd_chrbark_gear_01",
         "title": "장비 변경",
         "text": "송곳니까지 무장하다니... 현명한 판단이야."
       },
       {
+        "voId": "chr_0006_wolfgd_chrup_skill_01",
         "title": "재능 배열 활성화",
         "text": "숙련된 기술일수록 결정적인 순간에 써야 해."
       },
       {
+        "voId": "chr_0006_wolfgd_chrup_level_01",
         "title": "작전 기록 관찰",
         "text": "적을 상대할 땐, 울프팀은 가장 효율적인 사냥법만 선택하지."
       },
       {
+        "voId": "chr_0006_wolfgd_chrup_promt01_01",
         "title": "정예화 돌파 1",
         "text": "인정해 줘서 고마워, 관리자. 그럼, 이번 보고서는 안 써도 되는 건가? 안 된다고...? 알겠어."
       },
       {
+        "voId": "chr_0006_wolfgd_chrup_promt02_01",
         "title": "정예화 돌파 2",
         "text": "봐서 알겠지만 내게 잘하는 일을 맡기면 절대 실망하는 일은 없을 거야. 관리자."
       },
       {
+        "voId": "chr_0006_wolfgd_chrup_promt03_01",
         "title": "정예화 돌파 3",
         "text": "울프팀에서 지위는 피로 정해지고, 사냥감만 충분히 잡으면 된다. 이제 내 사냥을 인정한 걸로 봐도 되겠지? 관리자?"
       },
       {
+        "voId": "chr_0006_wolfgd_chrup_promt04_01",
         "title": "정예화 돌파 4",
         "text": "난 울프팀이 큰 피해를 보는 참혹한 장면을 직접 봤어. 그래서 결심했지. 로시, 그리고 울프팀의 다른 모두를 위해 새로운 길을 찾아야겠다고. 관리자, 당신이랑 이렇게 함께할 수 있어서 정말 다행이야."
       },
       {
+        "voId": "chr_0006_wolfgd_introduce_01",
         "title": "오퍼레이터 첫인사",
         "text": "카텔로 울프가드 루피노, 엔드필드 위기 대책팀 소속이다. 지금은 울프팀을 대표해 너희와 협력하고 있지. 용병 일이라면 그 어떤 일이든 할 수 있어. 계약이 끝나기 전까진 너의 송곳니가 되어주지."
       },
       {
+        "voId": "chr_0006_wolfgd_mono_switch_01",
         "title": "명령 대기 1",
         "text": "새 임무인가?"
       },
       {
+        "voId": "chr_0006_wolfgd_mono_switch_02",
         "title": "명령 대기 2",
         "text": "그래."
       },
       {
+        "voId": "chr_0006_wolfgd_sim_assign_work_01",
         "title": "시설 배치",
         "text": "여기도 일손이 부족한 건가?"
       },
       {
+        "voId": "chr_0006_wolfgd_sim_hello_lower_01",
         "title": "인사 1",
         "text": "관리자."
       },
       {
+        "voId": "chr_0006_wolfgd_sim_hello_max_01",
         "title": "인사 2",
         "text": "관리자, 뭐 도와줄까? 마침 시간 비는데."
       },
       {
+        "voId": "chr_0006_wolfgd_sim_talk_lv01_01",
         "title": "제강호 잡담 1",
         "text": "다른 오퍼레이터들이랑 손발 맞추는 건 그리 간단한 일은 아니야. 울프팀의 방식은 보통 사람들이 쉽게 받아들이기 힘드니까. 나도 혼자 움직이는 게 더 익숙하기도 하고. 그래도 관리자, 네가 원한다면... 조금은 변해볼게."
       },
       {
+        "voId": "chr_0006_wolfgd_sim_talk_lv02_01",
         "title": "제강호 잡담 2",
         "text": "난 제강호보단 개척 지역이 더 익숙해. 여긴 너무 편안한 나머지 해이해지기 쉽거든. 그래도 로시는 이곳이 마음에 드는 모양이야. 여긴 호기심을 채워줄 수 있는 게 많으니까."
       },
       {
+        "voId": "chr_0006_wolfgd_sim_talk_lv02_02",
         "title": "제강호 잡담 3",
         "text": "솔직히 다른 랜드브레이커 집단엔 별 관심 없어. 그저 황무지에서 오래 지내다 보니, 목숨을 지키는 데 필요한 것들이 자연스럽게 몸에 새겨진 것뿐이지. 울프팀한테 생존 의지는 최고의 스승이자 유일한 신념이거든."
       },
       {
+        "voId": "chr_0006_wolfgd_sim_talk_max_01",
         "title": "제강호 잡담 4",
         "text": "엔드필드의 오퍼레이터들은 탈로스 II 곳곳에서 왔어. 그중엔 낯익은 얼굴도 있고... 위험한 녀석들도 있지. 난 너희 판단을 존중하지만, 정말 필요할 땐 내 직감을 믿는 게 좋을 거야."
       },
       {
+        "voId": "chr_0006_wolfgd_sim_talk_max_02",
         "title": "제강호 잡담 5",
         "text": "총기 점검을 하고 있었어. 습관 같은 거지. 전장에서 탄약 없는 빈 총을 들고 있는 건, 황무지 한가운데서 맨몸으로 버려진 거랑 다를 게 없어. 아무리 기술이 좋아도, 맨손이면 그저 사냥감이 될 뿐이지. 그 무력감... 어릴 때 뼈저리게 느껴봤거든. 그래서 두 번 다시 그런 꼴을 당하지 않겠다고 마음먹었어."
       },
       {
+        "voId": "chr_0006_wolfgd_sim_talk_max_03",
         "title": "제강호 잡담 6",
         "text": "그래, 집단의 거점에 돌아간 진 꽤 됐어. 집단을 이끌고 사냥하는 건 더 오래됐고. 난 늑대의 선봉장보단, 새로운 사냥터를 개척하는 쪽에 더 어울리니까."
       },
       {
+        "voId": "chr_0006_wolfgd_sim_gift_give_01",
         "title": "선물 증정",
         "text": "잠깐 시간 있나? 지난번 임무에서 재미있는 걸 발견해서 너한테 줄까 하는데."
       },
       {
+        "voId": "chr_0006_wolfgd_sim_gift_recv_01",
         "title": "선물 수락",
         "text": "나한테 주는 건가? 고마워, 유용하게 쓸게."
       },
       {
+        "voId": "chr_0006_wolfgd_mono_self_line01",
         "title": "신뢰 대화 1",
         "text": "사냥감을 다루는 방식이라면, 이미 엔드필드의 방침에 따라 바꿨어. 예전 같았으면... 사냥감은 '입을 열 기회'조차 없었겠지."
       },
       {
+        "voId": "chr_0006_wolfgd_mono_self_line02",
         "title": "신뢰 대화 2",
         "text": "어쩌면 너도 눈치챘겠지만... 울프팀의 리더가 되는 건 처음부터 내 목표가 아니었어. 로시가 나보단 훨씬 잘 어울리니까. 그리고 엔드필드가 '카텔로 울프가드 루피노'의 마지막 거처가 될 수 있을지는... 솔직히 모르겠어. '랜드브레이커'가 쫓던 거랑 너희가 꿈꾸는 '이상'은 너무 다르니까. 그래도 관리자, 엔드필드를 위해 뭔가를 성취할 때만큼은 생각보다 꽤 기분이 좋더라."
       },
       {
+        "voId": "chr_0006_wolfgd_mono_self_line03",
         "title": "신뢰 대화 3",
         "text": "내가 자주 하늘을 본다고? 그래, 난 하늘을 관찰하는 거 좋아해. 의외라는 얼굴이네. 하늘은 공개된 정보판 같은 거야. 날씨를 예측하고, 시간과 방향을 파악할 수 있어. 심지어 적의 움직임까지 미리 읽을 수 있지. 하늘 아래에서는 모든 사냥꾼이 다 똑같은 조건이야. 너도 조금씩 익혀두는 건 어때? 관리자."
       },
       {
+        "voId": "chr_0006_wolfgd_mono_self_line04",
         "title": "신뢰 대화 4",
         "text": "'랜드브레이커'라는 신분은 우리 조상들의 실패한 선택에서 비롯됐어. 랜드브레이커 군벌을 따라 문명 밴드를 등졌지만, 결국 얻은 건 혼란뿐이었지. 난 직접 어른들한테 후회하냐고 물어볼 순 없었지만, 태어나서부터 줄곧 피 흘리며 싸워와서 살아남는다는 게 어떤 건지 누구보다 뼈저리게 알아. 펠리카 감독관은 엔드필드와 협력하면 이 굴레를 벗어날 수 있다고 말했지만... 난 이미 받아들였어. 난 확실히 랜드브레이커야. 실망했나, 관리자?"
       },
       {
+        "voId": "chr_0006_wolfgd_mono_self_line05",
         "title": "신뢰 대화 5",
         "text": "약한 자들이 힘을 모아 강한 적을 쓰러뜨려야, 이 잔혹한 환경에서 겨우 살아남을 수 있다. 울프팀은 이런 단순한 논리 위에 세워졌어. 집단의 질서도, '랜드브레이커'라는 신분도 결국은 그 논리에서 나온 거야. 하지만 엔드필드는? 위대한 신념은 양날의 검이야. 울프팀의 사냥은 다시 시작할 수 있어도, 너한테 실패는 용납되지 않아. 꽤 잔혹하지? 하지만 괜찮아. 나도 네 사냥에 동참할게. 조금이라도 네 짐을 덜어줄 수 있다면."
       },
       {
+        "voId": "chr_0006_wolfgd_mono_chat_line01",
         "title": "대화 1",
         "text": "힘이 전부가 아니라는 건 알고 있지만, 탈로스 II에서만큼은 힘이 없다는 것은 절대로 좋은 일이 아니야."
       },
       {
+        "voId": "chr_0006_wolfgd_mono_chat_line02",
         "title": "대화 2",
         "text": "로시는 이런 정교한 것들을 모으는 걸 무척 좋아하더라고. 난 솔직히 이런 게 뭐가 좋은지 모르겠지만... 로시가 좋아하니까, 더 찾아줄 수밖에."
       },
       {
+        "voId": "chr_0006_wolfgd_mono_chat_line03",
         "title": "대화 3",
         "text": "현실과 동떨어진 이상주의는 늘 타인과 자신 모두에게 해를 끼치지. 개척 지역에서 좀 살아본 사람이라면 다 아는 사실이야. 다만... 대부분은 끝내 피해자로 남을 수밖에 없다는 거지."
       },
       {
+        "voId": "chr_0006_wolfgd_mono_chat_line04",
         "title": "대화 4",
         "text": "난 확실히 혼자 문제를 해결하는 데 익숙해. 모든 걸 감당할 능력이 있어서가 아니라, 내가 대신 하면 원래 그걸 해야 했던 사람들은 조금이라도 편해질 수 있으니까."
       },
       {
+        "voId": "chr_0006_wolfgd_mono_chat_line05",
         "title": "대화 5",
         "text": "무리를 떠난 늑대라도 쉽게 무리를 배신하진 않아... 그건 변함없는 사실이야. 하지만 생존이든, 미련이든, 결국 무리를 등지고 떠나는 놈들도 생기지. 난 그들에게 연민을 품지도 않고, 그 길을 막을 생각도 없어. 대신 그 선택만큼은 존중할 거야."
       },
       {
+        "voId": "chr_0006_wolfgd_mono_about_line01",
         "title": "울프팀에 관하여",
         "text": "난 계속해서 울프팀의 미래를 찾고 있어... 엔드필드와 협력하는 게 최선의 선택인지는 모르겠지만, 분명 의미 있는 걸음이라고 생각해. 외부의 힘만으로 울프팀 속에 자리 잡은 고정된 인식을 송두리째 바꾼다는 건 꿈같은 얘기야. 하지만 어떨 땐, 단 하나의 계기만으로도 변화가 일어나지. 그 '계기'를 울프팀에 어떻게 전할 수 있을지, 난 끊임없이 고민하고 있어."
       },
       {
+        "voId": "chr_0006_wolfgd_mono_about_line02",
         "title": "로시에 관하여",
         "text": "로시와 함께하는 시간은 많지 않지만, 성장해 가는 로시를 볼 때마다... 매번 놀라게 돼. 로시는 황무지와 함께 숨 쉬고, 늑대의 피를 끌어내. 무기를 다루고, 기술을 깨우치고, 사냥하는 것도 너무 자연스럽게 해내지. 이젠 알아. 로시는 더 이상 핏빛 포대기 속에서 힘없이 울던 아기가 아니야. 루피노 가문의 '울프펄'이지. 난 울프팀의 송곳니로 남겠지만, 로시는 언젠간 울프팀의 심장이 될 거야."
       },
       {
+        "voId": "chr_0006_wolfgd_mono_about_line03",
         "title": "랜드브레이커에 관하여",
         "text": "랜드브레이커 집단은 겉으로 보이는 것보다 훨씬 복잡해. 본 크러셔나 울프팀 외에도, 사막 도적들처럼 해적선 하나에 의지해 살아가는 부류들도 있어. 또... 그레이 운드 집단은 온몸에 '서약의 노래'를 새기고 다니고, 그림자 해골 집단의 암살자들은 태양이 지고 나면 절대로 상대하고 싶지 않은 놈들이기도 하지. 이렇게 황무지에서 살아남은 작은 집단들은 대체로 평범한 사람들보다 훨씬 많은 생존의 비결을 알고 있어."
       },
       {
+        "voId": "chr_0006_wolfgd_explore_point_common_01",
         "title": "자원 발견 1",
         "text": "저기 뭔가 챙겨갈 만한 게 있어."
       },
       {
+        "voId": "chr_0006_wolfgd_explore_point_valub_01",
         "title": "자원 발견 2",
         "text": "특별한 전리품이네. 저건 우리가 챙겨야겠어."
       },
       {
+        "voId": "chr_0006_wolfgd_explore_find_locked_01",
         "title": "미탐색 구역 발견",
         "text": "저 근처는 아직 가본 적이 없으니, 조심하는 게 좋겠어."
       },
       {
+        "voId": "chr_0006_wolfgd_explore_find_danger_01",
         "title": "강한 적 발견",
         "text": "심상치 않은 냄새... 만만한 상대가 아니야."
       },
       {
+        "voId": "chr_0006_wolfgd_interact_mine_valub_01",
         "title": "광물 채집 1",
         "text": "고생한 만큼의 가치가 있으면 좋겠는데."
       },
       {
+        "voId": "chr_0006_wolfgd_interact_mine_valub_echo2_01",
         "title": "광물 채집 2",
         "text": "나 혼자서도 충분... 아니, 다들 부탁하지."
       },
       {
+        "voId": "chr_0006_wolfgd_interact_treasure_valub_01",
         "title": "보물 상자 열기",
         "text": "훌륭한 전리품이군. 이번에도 풍성한 수확이야."
       },
       {
+        "voId": "chr_0006_wolfgd_interact_etherium_01",
         "title": "오리렌 획득",
         "text": "오리렌... 엔드필드 쪽에서 쓸모 있다고 생각한다면야..."
       },
       {
+        "voId": "chr_0006_wolfgd_interact_blight_break_01",
         "title": "침식 제거",
         "text": "침식은 작전을 방해하지. 정확한 판단이야."
       },
       {
+        "voId": "chr_0006_wolfgd_interact_rest_01",
         "title": "휴식",
         "text": "탄약 확인 완료. 다음 사냥을 시작하자고."
       },
       {
+        "voId": "chr_0006_wolfgd_combat_suppuse_using_01",
         "title": "전술 아이템 사용 1",
         "text": "조심해. 무리하지 말고."
       },
       {
+        "voId": "chr_0006_wolfgd_combat_suppuse_getheal_01",
         "title": "전술 아이템 사용 2",
         "text": "...이제 좀 나아졌군."
       },
       {
+        "voId": "chr_0006_wolfgd_combat_remind_danger_01",
         "title": "위험 경고",
         "text": "빨리 피해!"
       },
       {
+        "voId": "chr_0006_wolfgd_combat_hurt_lowhp_01",
         "title": "부상",
         "text": "신경 쓸 거 없어."
       },
       {
+        "voId": "chr_0006_wolfgd_combat_dead_01",
         "title": "탈진",
         "text": "으... 일단 물러난다."
       },
       {
+        "voId": "chr_0006_wolfgd_combat_remind_praise_01",
         "title": "팀 격려 1",
         "text": "역시 훌륭하네."
       },
       {
+        "voId": "chr_0006_wolfgd_combat_remind_praise_02",
         "title": "팀 격려 2",
         "text": "멋진 호흡이었어."
       },
       {
+        "voId": "chr_0006_wolfgd_combat_remind_praise_echo2_01",
         "title": "격려 응답 1",
         "text": "더 잘할 수 있어."
       },
       {
+        "voId": "chr_0006_wolfgd_combat_remind_praise_echo2_02",
         "title": "격려 응답 2",
         "text": "해야 할 일을 했을 뿐이야."
       },
       {
+        "voId": "chr_0006_wolfgd_combat_intobattle_01",
         "title": "작전 시작 1",
         "text": "기회는 확실히 잡겠어."
       },
       {
+        "voId": "chr_0006_wolfgd_combat_intobattle_echo2_01",
         "title": "작전 시작 2",
         "text": "나 신경 쓰지 말고, 네 방식대로 해."
       },
       {
+        "voId": "chr_0006_wolfgd_combat_outbattle_nor_01",
         "title": "작전 승리 1",
         "text": "당연한 결과야."
       },
       {
+        "voId": "chr_0006_wolfgd_combat_outbattle_nor_02",
         "title": "작전 승리 2",
         "text": "예상대로군."
       },
       {
+        "voId": "chr_0006_wolfgd_combat_outbattle_nor_echo2_01",
         "title": "작전 승리 3",
         "text": "그래, 이겼으면 됐어."
       },
       {
+        "voId": "chr_0006_wolfgd_combat_outbattle_hard_01",
         "title": "작전 승리 4",
         "text": "생각보다 훨씬 골치 아팠지만... 이긴 건 우리야. 그걸로 충분해."
       },
       {
+        "voId": "chr_0006_wolfgd_combat_battle_defeat_01",
         "title": "작전 실패",
         "text": "사냥꾼과 사냥감은 원래 한 끗 차이야... 정신 차리고 다시 가보자."
       },
       {
+        "voId": "chr_0006_wolfgd_mono_attack_last_01",
         "title": "강력한 일격 1",
         "text": "조용히 해!"
       },
       {
+        "voId": "chr_0006_wolfgd_mono_attack_last_02",
         "title": "강력한 일격 2",
         "text": "도망치려고?"
       },
       {
+        "voId": "chr_0006_wolfgd_mono_skill_nor_01",
         "title": "배틀 스킬 1",
         "text": "속전속결!"
       },
       {
+        "voId": "chr_0006_wolfgd_mono_skill_nor_02",
         "title": "배틀 스킬 2",
         "text": "늑대의 피!"
       },
       {
+        "voId": "chr_0006_wolfgd_mono_skill_nor_03",
         "title": "배틀 스킬 3",
         "text": "저리 비켜!"
       },
       {
+        "voId": "chr_0006_wolfgd_combat_skill_comb_ready_01",
         "title": "연계 스킬 준비 완료 1",
         "text": "재장전 완료."
       },
       {
+        "voId": "chr_0006_wolfgd_combat_skill_comb_ready_02",
         "title": "연계 스킬 준비 완료 2",
         "text": "내 차례야."
       },
       {
+        "voId": "chr_0006_wolfgd_mono_skill_comb_release_01",
         "title": "연계 스킬 1",
         "text": "내가 처리하지."
       },
       {
+        "voId": "chr_0006_wolfgd_mono_skill_comb_release_02",
         "title": "연계 스킬 2",
         "text": "소용없다."
       },
       {
+        "voId": "chr_0006_wolfgd_mono_attack_extra_01",
         "title": "처형 1",
         "text": "시끄럽군."
       },
       {
+        "voId": "chr_0006_wolfgd_mono_attack_extra_02",
         "title": "처형 2",
         "text": "이제 끝내주지!"
       },
       {
+        "voId": "chr_0006_wolfgd_mono_skill_ultimate_01",
         "title": "궁극기 1",
         "text": "한 마리도 놓치지 않겠다!"
       },
       {
+        "voId": "chr_0006_wolfgd_mono_skill_ultimate_02",
         "title": "궁극기 2",
         "text": "물어뜯어라!"
       },
       {
+        "voId": "chr_0006_wolfgd_mono_skill_ultimate_03",
         "title": "궁극기 3",
         "text": "늑대들이여, 포위하라!"
       }

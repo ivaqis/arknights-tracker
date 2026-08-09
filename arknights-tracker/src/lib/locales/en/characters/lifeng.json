@@ -130,334 +130,417 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0015_lifeng_chrbark_squad_01",
         "title": "Operation Prep 1",
         "text": "Endmin, finally got an assignment for me?"
       },
       {
+        "voId": "chr_0015_lifeng_chrbark_squad_02",
         "title": "Operation Prep 2",
         "text": "Oh, my laces are untied... Wait, Endmin's coming! Attention!"
       },
       {
+        "voId": "chr_0015_lifeng_chrbark_join_01",
         "title": "Adding to Team 1",
         "text": "Where's the target at?! ...Oh, my bad, Endmin. Just a bit of pre-battle practice."
       },
       {
+        "voId": "chr_0015_lifeng_chrbark_join_02",
         "title": "Adding to Team 2",
         "text": "Uncle Pan always says, no backing down once the war drums start beating."
       },
       {
+        "voId": "chr_0015_lifeng_chrbark_weap_01",
         "title": "Switching Weapon",
         "text": "It's not the weapon that makes the lancer. Even a simple waxwood staff can strike true!"
       },
       {
+        "voId": "chr_0015_lifeng_chrbark_gear_01",
         "title": "Switching Gear",
         "text": "All this tactical gear's for me? You serious, Endmin? Does this mean I'm officially recruited?!"
       },
       {
+        "voId": "chr_0015_lifeng_chrup_skill_01",
         "title": "Ability Matrix Activation",
         "text": "I came to Endfield to learn. But ... there's way too much to take in. Gotta work even harder!"
       },
       {
+        "voId": "chr_0015_lifeng_chrup_level_01",
         "title": "Watching Combat Records",
         "text": "Uncle Pan always tells me to record my training. Well, he's got a point — I had no idea how off my moves were until I watched the playback!"
       },
       {
+        "voId": "chr_0015_lifeng_chrup_promt01_01",
         "title": "Operator Promotion 1",
         "text": "P-promotion? Phew... I thought I was in trouble for something I messed up!"
       },
       {
+        "voId": "chr_0015_lifeng_chrup_promt02_01",
         "title": "Operator Promotion 2",
         "text": "It's always tough at first, but I've totally got the hang of it now. Endmin, you've seen my recent performance. Think I can win the Office Chair Racing this month?"
       },
       {
+        "voId": "chr_0015_lifeng_chrup_promt03_01",
         "title": "Operator Promotion 3",
         "text": "Hey Endmin, just curious — how many ranks come after this one? I'm thinking of adding \"Monthly Goals\" section to my journal!"
       },
       {
+        "voId": "chr_0015_lifeng_chrup_promt04_01",
         "title": "Operator Promotion 4",
         "text": "\"Outstanding performance,\" \"strong adaptability and teamwork,\" ... I can recite those compliments in my sleep now. Anyway, Endmin, I'm ready to roll. I promise I'll work my hardest to become your most reliable comrade."
       },
       {
+        "voId": "chr_0015_lifeng_introduce_01",
         "title": "Operator Reporting for Duty",
         "text": "Hey Endministrator, it's me, Lifeng! I'm still a bit green, but I'll work super hard! They say hardships shape and perfect us, but what does perfection really look like? Maybe someone like you has the answer. I'd really appreciate your insights."
       },
       {
+        "voId": "chr_0015_lifeng_mono_switch_01",
         "title": "Standing by 1",
         "text": "Piece of cake!"
       },
       {
+        "voId": "chr_0015_lifeng_mono_switch_02",
         "title": "Standing by 2",
         "text": "Leave it to me!"
       },
       {
+        "voId": "chr_0015_lifeng_sim_assign_work_01",
         "title": "Assigning to Facility",
         "text": "Got it, Endmin! Actually, I was just wondering what took you so long to assign me a task!"
       },
       {
+        "voId": "chr_0015_lifeng_sim_hello_lower_01",
         "title": "Greeting 1",
         "text": "Hi Endmin! You look tied up, but it's good to see you."
       },
       {
+        "voId": "chr_0015_lifeng_sim_hello_max_01",
         "title": "Greeting 2",
         "text": "Got a sec, Endmin? I've picked up a new move. Wanna check it out?"
       },
       {
+        "voId": "chr_0015_lifeng_sim_talk_lv01_01",
         "title": "Dijiang Idle Chatter 1",
         "text": "Uh ... what should I say in a moment like this... Lifeng, official operator of Endfield Industries. It's an honor to meet you."
       },
       {
+        "voId": "chr_0015_lifeng_sim_talk_lv02_01",
         "title": "Dijiang Idle Chatter 2",
         "text": "Oh, you saw me just now and wonder why I'm still here? Uh ... I'm totally not waiting for a mission. Hehe, not at all!"
       },
       {
+        "voId": "chr_0015_lifeng_sim_talk_lv02_02",
         "title": "Dijiang Idle Chatter 3",
         "text": "Endmin, do you know any other Anasa? My branch of the family has lived in the city for ages, but I've heard that other branches still live in the wilds. If you happen to come across them, please let me know so I can pay them a visit!"
       },
       {
+        "voId": "chr_0015_lifeng_sim_talk_max_01",
         "title": "Dijiang Idle Chatter 4",
         "text": "Actually ... I get carsick pretty easily. Even riding a five-wheeler at Wuling would make me queasy. But for some reason, I don't feel any motion at all on Dijiang."
       },
       {
+        "voId": "chr_0015_lifeng_sim_talk_max_02",
         "title": "Dijiang Idle Chatter 5",
         "text": "I can actually see the Xiranite Dam through Dijiang's telescope! It looks so tiny from here, like I could pinch it between two fingers... Amazing how a change in perspective makes something huge seem small. Mmm, I need to ponder on this."
       },
       {
+        "voId": "chr_0015_lifeng_sim_talk_max_03",
         "title": "Dijiang Idle Chatter 6",
         "text": "Endmin, there's someone looking after the plants in the growth chambers, right? Ooh... It's amazing to think they can thrive here, a place so far above the ground. But hey, I didn't think I'd be here either."
       },
       {
+        "voId": "chr_0015_lifeng_sim_gift_give_01",
         "title": "Offering Gifts",
         "text": "Endmin, remember I promised you a gift when I lost that game to you? Well, here it is!"
       },
       {
+        "voId": "chr_0015_lifeng_sim_gift_recv_01",
         "title": "Accepting Gifts",
         "text": "Is everyone getting this?... No? It's just for me? Thank you so much, Endmin!"
       },
       {
+        "voId": "chr_0015_lifeng_mono_self_line01",
         "title": "Trust Dialog 1",
         "text": "Were you speaking to me, Endministrator? My apologies, I've ... never really followed the standard reporting procedure before. Oh, you just want to talk? Then feel free to ask anything. I'll gladly give you all the details."
       },
       {
+        "voId": "chr_0015_lifeng_mono_self_line02",
         "title": "Trust Dialog 2",
         "text": "Endmin, I've been training in martial arts with Uncle Pan since I was a kid. Once, when our family compound caught fire, I threw two kids over my right shoulder, one more over my left, and rushed them to safety! By the way, did you see the test data from last week? The Medical Division says my toothpick arms aren't an issue, and my punches hit just as hard as anyone's. So if you need someone to take down enemies, I'm your guy!"
       },
       {
+        "voId": "chr_0015_lifeng_mono_self_line03",
         "title": "Trust Dialog 3",
         "text": "When I applied to join Endfield, I brought a few letters of recommendation. I trust you've read them all, haven't you? I begged Captain Mi, Tianshi Zhuang, and Uncle Pan so much — they preferred I stay closer to home. But I'm determined to learn through experience, which is why I have to make the most of this opportunity. Endmin, please give me something major! ...Oh, engine room cleaning? Got it, I'll make every gear shine!"
       },
       {
+        "voId": "chr_0015_lifeng_mono_self_line04",
         "title": "Trust Dialog 4",
         "text": "An invite straight from the Endmin?! Ahem, in that case, I'll do everything I can to help the operations team. I've already put together five contingency plans after hearing your briefing last night. So, where do I sign? Wait, no signature needed? ALRIGHTY! Here I come!"
       },
       {
+        "voId": "chr_0015_lifeng_mono_self_line05",
         "title": "Trust Dialog 5",
         "text": "From here on, I'll be your right hand man... Hmph, you probably think I'm joking, don't you? Haha, it's okay. I might not look the part now, but I'll grow into it. One day, I'll be capable enough to take on the toughest missions. So look forward to it, okay, Endmin?"
       },
       {
+        "voId": "chr_0015_lifeng_mono_chat_line01",
         "title": "Chat 1",
         "text": "Wanna arm wrestle with me? I can do this all day long!"
       },
       {
+        "voId": "chr_0015_lifeng_mono_chat_line02",
         "title": "Chat 2",
         "text": "Endmin, I know a little trick for sending flowers. When you send a bouquet, keep one flower. When it wilts, you know it's time to send a new bunch. *Giggle* I actually thought of it myself. It's how I make sure my parents' tombs always have fresh flowers."
       },
       {
+        "voId": "chr_0015_lifeng_mono_chat_line03",
         "title": "Chat 3",
         "text": "Everyone at Endfield seems a little shy. Like, when I was practicing Hongshan boxing in the morning, I saw some curious operators watching from a distance. They tried to mimic my moves, copying how I relax my shoulders and channel my force. But the moment I turned around, they'd scattered. The group has gotten even bigger lately. I still haven't asked any of their names..."
       },
       {
+        "voId": "chr_0015_lifeng_mono_chat_line04",
         "title": "Chat 4",
         "text": "I was just a little boy when I lost this arm, and at the time, the pain didn't quite register with me... It was spring when I entered the hospital, and spring again when I left. *Sigh* And I realized ... that some things, once lost, never return."
       },
       {
+        "voId": "chr_0015_lifeng_mono_chat_line05",
         "title": "Chat 5",
         "text": "I've come a long way from home, Endmin. I really wonder how everyone's doing back there. I still remember the little things: Granny Bai heading out for her back massage, Captain Liu changing his leg dressing when it rained, Auntie Li buying soy sauce for her braised pork on Wednesdays, Xiao Ran always forgetting her gloves during sampling, and Ah Zai borrowing money from me at the start of every month for his little business... I'll make sure to check in on them the next chance I get!"
       },
       {
+        "voId": "chr_0015_lifeng_mono_about_line01",
         "title": "Topic: Da Pan",
         "text": "When Tianshi Zhuang's too swamped, Uncle Pan helps me with my prosthetic. He's actually a whiz with machines! He knows everything from engineering to fine-tuning gear. I've always wondered why he chose to retire. Psst, Endmin! Wanna hear a little secret? I've seen photos of him back in the day — rocking a five-wheeler, leather jacket, shades, and a wild afro! I heard he was unstoppable at HAS. Folks said he could chop his way from the Band to the frontier with a Yanese cleaver. Shocking, right?"
       },
       {
+        "voId": "chr_0015_lifeng_mono_about_line02",
         "title": "Topic: Zhuang Fangyi",
         "text": "When I was a kid, I used to do my homework in Tianshi Zhuang's lab. She'd fine-tune my prosthetic when she had a moment — then quickly fall asleep mid-fix. Most of the time, I was the one tidying her place. She was way too busy for chores. But hey, that's fair — the future of all Wuling's riding on her shoulders."
       },
       {
+        "voId": "chr_0015_lifeng_mono_about_line03",
         "title": "Topic: Mi Fu",
         "text": "Captain Mi doesn't like us saying it, but she's actually a really nice person. Every time she saw me, she'd slip me a few coins and ask me to grab a skewer of Tangyoubaba from Auntie Tian's stall. It's a sweet treat made of sugar-glazed rice balls. When I brought it back, she'd slide them off the skewer and let me enjoy all the sticky goodness for myself. She'd just nibble on the bamboo stick with a contented smile."
       },
       {
+        "voId": "chr_0015_lifeng_mono_about_line04",
         "title": "Topic: Aggelos",
         "text": "We Wuling kids grew up fighting these buggerloids just to survive. Back when the Tianshi Pillars were still going up, even getting near unknown water was a risk. The adults used to scare us — \"Touch the Aggeloi, and they'll crawl out of your drain or between your floor tiles.\" Sounded like a ghost story, but that was life. Honestly, I didn't even know there were other kinds of Aggeloi till I joined Endfield."
       },
       {
+        "voId": "chr_0015_lifeng_mono_about_line05",
         "title": "Topic: Anasa",
         "text": "Mom and Dad used to say our ancestors weren't city folks. Before they crossed the Cosmic Gate to Talos-II, they roamed the dry plains outside the Nomadic City of Yan — sky for a blanket, earth for a bed, living with the land's rise and fall. I didn't get it then, but I do now. Mom and Dad weren't just telling me a story — they were preparing me. Even when their Astitva left this world, they'd return in another form. That's why… I stopped missing them a long time ago."
       },
       {
+        "voId": "chr_0015_lifeng_mono_about_line06",
         "title": "Topic: Wuling Scientific Developmental District",
         "text": "The Wuling you see today hasn't been around for long — it's about the same age as my prosthetic arm! Pretty incredible, right? In such a short time, it's grown into one of the finest places on Talos-II. Still, no matter how much it's changed, I know where every brick belongs in the city. If I close my eyes now, I can still smell the damp air of those rain-soaked streets on a drizzly day."
       },
       {
+        "voId": "chr_0015_lifeng_mono_about_line07",
         "title": "Topic: Hongshan",
         "text": "Funny thing — I've never actually been to HAS HQ. That's where Mom, Dad, Tianshi Zhuang, and Uncle Pan all worked. I just never had a reason to go. I mean ... I don't know anyone there, and from what I've heard, it's full of sharp minds and short tempers. I guess I've always worried they wouldn't take me seriously..."
       },
       {
+        "voId": "chr_0015_lifeng_explore_point_common_01",
         "title": "Resource/Collectible Detected 1",
         "text": "Watch your step, there could be goodies around!"
       },
       {
+        "voId": "chr_0015_lifeng_explore_point_valub_01",
         "title": "Resource/Collectible Detected 2",
         "text": "Rare stuff spotted. Shall we check it out?"
       },
       {
+        "voId": "chr_0015_lifeng_explore_find_locked_01",
         "title": "Unexplored Area Detected",
         "text": "You sure you know this path? I don't think we've been down it before."
       },
       {
+        "voId": "chr_0015_lifeng_explore_find_danger_01",
         "title": "Powerful Enemy Discovered",
         "text": "Enemy sighted! Let me handle this!"
       },
       {
+        "voId": "chr_0015_lifeng_interact_mine_valub_01",
         "title": "Mining 1",
         "text": "I've seen these in textbooks! Are they valuable?"
       },
       {
+        "voId": "chr_0015_lifeng_interact_mine_valub_echo2_01",
         "title": "Mining 2",
         "text": "No trouble at all!"
       },
       {
+        "voId": "chr_0015_lifeng_interact_treasure_valub_01",
         "title": "Opening a Crate",
         "text": "Nice find. Do we really have to turn it over to the watchguards...?"
       },
       {
+        "voId": "chr_0015_lifeng_interact_etherium_01",
         "title": "Acquiring Aurylene",
         "text": "My mentor said the floating Aurylenes in the wilds aren't really dangerous. Just don't go after them recklessly."
       },
       {
+        "voId": "chr_0015_lifeng_interact_blight_break_01",
         "title": "Eliminating the Blight",
         "text": "The Blight's nothing new to us Wuling kids. Don't worry, I got this one!"
       },
       {
+        "voId": "chr_0015_lifeng_interact_rest_01",
         "title": "Rest",
         "text": "I feel a warm surge coursing through me... Time to get up and stretch a little!"
       },
       {
+        "voId": "chr_0015_lifeng_combat_suppuse_using_01",
         "title": "Tactical Use 1",
         "text": "Grab my meds! Heal yourself!"
       },
       {
+        "voId": "chr_0015_lifeng_combat_suppuse_getheal_01",
         "title": "Tactical Use 2",
         "text": "One sec, just need a quick breather!"
       },
       {
+        "voId": "chr_0015_lifeng_combat_remind_danger_01",
         "title": "Danger Warning",
         "text": "WARHH, dodge the attack!"
       },
       {
+        "voId": "chr_0015_lifeng_combat_hurt_lowhp_01",
         "title": "Injured",
         "text": "Keep going ... gotta keep going..."
       },
       {
+        "voId": "chr_0015_lifeng_combat_dead_01",
         "title": "0 HP",
         "text": "If only I were stronger..."
       },
       {
+        "voId": "chr_0015_lifeng_combat_remind_praise_01",
         "title": "Team Encouragement 1",
         "text": "How'd you do that? Please teach me!"
       },
       {
+        "voId": "chr_0015_lifeng_combat_remind_praise_02",
         "title": "Team Encouragement 2",
         "text": "That was incredible! I'm fired up!"
       },
       {
+        "voId": "chr_0015_lifeng_combat_remind_praise_echo2_01",
         "title": "Encouragement Response 1",
         "text": "Heh heh, you're making me blush..."
       },
       {
+        "voId": "chr_0015_lifeng_combat_remind_praise_echo2_02",
         "title": "Encouragement Response 2",
         "text": "Two heads are better than one, and four are even better!"
       },
       {
+        "voId": "chr_0015_lifeng_combat_intobattle_01",
         "title": "Combat Begins 1",
         "text": "Lifeng of Wuling, ready to fight!"
       },
       {
+        "voId": "chr_0015_lifeng_combat_intobattle_echo2_01",
         "title": "Combat Begins 2",
         "text": "They can't handle my lance!"
       },
       {
+        "voId": "chr_0015_lifeng_combat_outbattle_nor_01",
         "title": "Combat Victory 1",
         "text": "Now that's what I call a real fight!"
       },
       {
+        "voId": "chr_0015_lifeng_combat_outbattle_nor_02",
         "title": "Combat Victory 2",
         "text": "Is that it? I haven't even shown you my best moves..."
       },
       {
+        "voId": "chr_0015_lifeng_combat_outbattle_nor_echo2_01",
         "title": "Combat Victory 3",
         "text": "Hmph, we taught them a lesson!"
       },
       {
+        "voId": "chr_0015_lifeng_combat_outbattle_hard_01",
         "title": "Combat Victory 4",
         "text": "Victory loves preparation. Keep pushing, team."
       },
       {
+        "voId": "chr_0015_lifeng_combat_battle_defeat_01",
         "title": "Combat Defeat",
         "text": "Uncle Pan says that being a great lancer isn't about speed, it's about keeping your cool. I lost mine this time, but I'll regroup and go again!"
       },
       {
+        "voId": "chr_0015_lifeng_mono_attack_last_01",
         "title": "Final Strike 1",
         "text": "Watch this!"
       },
       {
+        "voId": "chr_0015_lifeng_mono_attack_last_02",
         "title": "Final Strike 2",
         "text": "Pardon my strike!"
       },
       {
+        "voId": "chr_0015_lifeng_mono_skill_nor_01",
         "title": "Battle Skill 1",
         "text": "Purity grants truth!"
       },
       {
+        "voId": "chr_0015_lifeng_mono_skill_nor_02",
         "title": "Battle Skill 2",
         "text": "Obsession breeds sorrow!"
       },
       {
+        "voId": "chr_0015_lifeng_mono_skill_nor_03",
         "title": "Battle Skill 3",
         "text": "A keen mind strikes quick!"
       },
       {
+        "voId": "chr_0015_lifeng_combat_skill_comb_ready_01",
         "title": "Combo Skill Ready 1",
         "text": "Give me a shout anytime!"
       },
       {
+        "voId": "chr_0015_lifeng_combat_skill_comb_ready_02",
         "title": "Combo Skill Ready 2",
         "text": "Let me help!"
       },
       {
+        "voId": "chr_0015_lifeng_mono_skill_comb_release_01",
         "title": "Combo Casting 1",
         "text": "Ever seen this?"
       },
       {
+        "voId": "chr_0015_lifeng_mono_skill_comb_release_02",
         "title": "Combo Casting 2",
         "text": "You shall be banished!"
       },
       {
+        "voId": "chr_0015_lifeng_mono_attack_extra_01",
         "title": "Finisher 1",
         "text": "Obsess no more!"
       },
       {
+        "voId": "chr_0015_lifeng_mono_attack_extra_02",
         "title": "Finisher 2",
         "text": "Renounce or perish!"
       },
       {
+        "voId": "chr_0015_lifeng_mono_skill_ultimate_01",
         "title": "Ultimate 1",
         "text": "Guess which hand will crush you?"
       },
       {
+        "voId": "chr_0015_lifeng_mono_skill_ultimate_02",
         "title": "Ultimate 2",
         "text": "Evil shall face karmic justice!"
       },
       {
+        "voId": "chr_0015_lifeng_mono_skill_ultimate_03",
         "title": "Ultimate 3",
         "text": "I AM BECOME WRATH!"
       }

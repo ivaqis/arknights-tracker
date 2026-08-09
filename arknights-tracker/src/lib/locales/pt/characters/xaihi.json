@@ -127,318 +127,397 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0011_seraph_chrbark_squad_01",
         "title": "Prep Operação 1",
         "text": "Rezarei por você, Endministrator."
       },
       {
+        "voId": "chr_0011_seraph_chrbark_squad_02",
         "title": "Prep Operação 2",
         "text": "Estou aqui acordada enquanto a Lei me observa."
       },
       {
+        "voId": "chr_0011_seraph_chrbark_join_01",
         "title": "Adicionando à equipe 1",
         "text": "Estou pronta para executar seu comando, Endministrator."
       },
       {
+        "voId": "chr_0011_seraph_chrbark_join_02",
         "title": "Adicionando à equipe 2",
         "text": "Uma escolha lógica."
       },
       {
+        "voId": "chr_0011_seraph_chrbark_weap_01",
         "title": "Trocando de arma",
         "text": "Posso fazer pequenas modificações? Garanto que elas permanecerão dentro dos limites de segurança."
       },
       {
+        "voId": "chr_0011_seraph_chrbark_gear_01",
         "title": "Trocando de equipamento",
         "text": "Veritas é sustentada por sua própria santidade."
       },
       {
+        "voId": "chr_0011_seraph_chrup_skill_01",
         "title": "Ativação da Matriz de Capacidade",
         "text": "Quando estivermos conectadas, a sabedoria brotará."
       },
       {
+        "voId": "chr_0011_seraph_chrup_level_01",
         "title": "Assistindo a Registros de Combate",
         "text": "E com minhas orações, também erguerei aqueles que se desviaram."
       },
       {
+        "voId": "chr_0011_seraph_chrup_promt01_01",
         "title": "Promoção do Operador 1",
         "text": "Eis que a benevolência da Lei se manifestou... Ah, e com ela flui a confiança do Endministrator! Não é justo render-te graças?"
       },
       {
+        "voId": "chr_0011_seraph_chrup_promt02_01",
         "title": "Promoção do Operador 2",
         "text": "A Lei zela e preserva os mansos, mas não os eruditos, os sábios ou os ricos. Embora elevada por tamanha glória, permaneço humilde e grata a ti."
       },
       {
+        "voId": "chr_0011_seraph_chrup_promt03_01",
         "title": "Promoção do Operador 3",
         "text": "Tudo é tão claro e distinto quanto os veios de Originium. Esta promoção se alinha com o resultado projetado. Hein? Apertar as mãos? Eu... eu não sou muito boa nisso..."
       },
       {
+        "voId": "chr_0011_seraph_chrup_promt04_01",
         "title": "Promoção do Operador 4",
         "text": "Certa vez, reestruturei a cúpula do codec da Catedralis para aumentar sua eficiência operacional. No entanto, ressonâncias inesperadas ocorreram enquanto o algoritmo antigo processava o fluxo de dados. O resultado foi... complexo. E, no entanto, o que antes exilava alguém de sua terra natal... tornou-se uma fonte de graça aqui em Endfield. Talvez seja isso que a Lei desejava me revelar!"
       },
       {
+        "voId": "chr_0011_seraph_introduce_01",
         "title": "Operador se apresentando para o trabalho",
         "text": "Ó Conhecimento mais antigo, não nos deixes cair em tentação, mas livra-nos dos códigos da malícia... Eu sou Xaihi, Endministrator. Que seu caminho seja iluminado."
       },
       {
+        "voId": "chr_0011_seraph_mono_switch_01",
         "title": "Em espera 1",
         "text": "Contemplação... Computação... Elocução... Abandono."
       },
       {
+        "voId": "chr_0011_seraph_mono_switch_02",
         "title": "Em espera 2",
         "text": "Ofereço o diálogo e a contemplação de hoje ao seu terminal, em reverência..."
       },
       {
+        "voId": "chr_0011_seraph_sim_assign_work_01",
         "title": "Atribuindo a Instalação",
         "text": "Que teus mandamentos sejam cumpridos. Ó Endministrator, através do serviço, nosso caminho é revelado."
       },
       {
+        "voId": "chr_0011_seraph_sim_hello_lower_01",
         "title": "Saudação 1",
         "text": "Que a paz e a segurança estejam com você."
       },
       {
+        "voId": "chr_0011_seraph_sim_hello_max_01",
         "title": "Saudação 2",
         "text": "Endministrator, você aparece mais uma vez no meu resultado calculado."
       },
       {
+        "voId": "chr_0011_seraph_sim_talk_lv01_01",
         "title": "Conversa Ociosa da Dijiang 1",
         "text": "Validando dados, analisando sintaxe, gerando resultados... Saudações, Endministrator."
       },
       {
+        "voId": "chr_0011_seraph_sim_talk_lv02_01",
         "title": "Conversa Ociosa da Dijiang 2",
         "text": "Recebi seu sinal, Endministrator. Estou interpretando seu significado. Aguarde, por favor..."
       },
       {
+        "voId": "chr_0011_seraph_sim_talk_lv02_02",
         "title": "Conversa Ociosa da Dijiang 3",
         "text": "Ah... Eu me pego preferindo a presença de máquinas à companhia de humanos. Enquanto os pulsos humanos são erráticos e imensuráveis, as máquinas respiram em um padrão consistente e lógico."
       },
       {
+        "voId": "chr_0011_seraph_sim_talk_max_01",
         "title": "Conversa Ociosa da Dijiang 4",
         "text": "Meu terminal registrou mais de cinquenta erros nos últimos dez milissegundos. Mas fique tranquilo, pois estabeleci nossa comunicação como prioridade máxima. Hum? Minhas avaliações sobre o desempenho geral da Dijiang...? Eu diria que, apesar de uma miríade de problemas, a nave continuou a suportar suas tribulações com elegância, como se estivesse... sofrendo por outra pessoa."
       },
       {
+        "voId": "chr_0011_seraph_sim_talk_max_02",
         "title": "Conversa Ociosa da Dijiang 5",
         "text": "Como a Lei permite, assim agimos: o Paraíso será restaurado a este mundo. Quem trilhar o caminho, cruzará as terras selvagens e desoladas e alcançará a bem-aventurança. Pois a Veritas jaz oculta em enigmas, para que os perdidos não mais vaguem, mas caminhem com os Nobres, compartilhando um propósito eterno."
       },
       {
+        "voId": "chr_0011_seraph_sim_talk_max_03",
         "title": "Conversa Ociosa da Dijiang 6",
         "text": "Aos olhos dos meus colegas operadores, você é uma liderança do passado, um ser nobre no presente e uma muda de Originium amadurecendo rumo ao futuro. No entanto, nas profundezas da Rede de Protorig, eu vislumbrei um você diferente... Tudo o que posso fazer é rezar — para que nosso significante e o significado possam um dia se tornar um. Que você caminhe em bênçãos, Endministrator."
       },
       {
+        "voId": "chr_0011_seraph_sim_gift_give_01",
         "title": "Oferta de Presentes",
         "text": "Endministrator, posso te interromper por um instante? Eu... gostaria de agradecer por todos os incentivos que você me trouxe. Ah... você não notou nada? Ufa, estou tão aliviada..."
       },
       {
+        "voId": "chr_0011_seraph_sim_gift_recv_01",
         "title": "Aceitando presentes",
         "text": "Isso é um indicador! Ah, por favor, perdoe minha falta de decoro... Veritas reconhece seus esforços."
       },
       {
+        "voId": "chr_0011_seraph_mono_self_line01",
         "title": "Diálogo de Confiança 1",
         "text": "A Cabala compartilha seu conhecimento e destino com você, Endministrator."
       },
       {
+        "voId": "chr_0011_seraph_mono_self_line02",
         "title": "Diálogo de Confiança 2",
         "text": "Todas as minhas sugestões se mostram práticas e úteis...? Não, eu não sigo o caminho do pragmatismo... A Abadessa nos alertou que, aqui em Talos-II, precisamos fazer com que nossa fé produza resultados mais tangíveis e práticos. A abundância de Laterano é uma lembrança distante aqui. Apenas nossa interconexão nos une agora."
       },
       {
+        "voId": "chr_0011_seraph_mono_self_line03",
         "title": "Diálogo de Confiança 3",
         "text": "Depois de todo esse tempo juntos, sinto que me aproximei mais de Endministrator. Agora parece um momento apropriado para demonstrar carinho, confiança e boa vontade... Ah, Endministrator está vindo para cá. Depressa, Xaihi, faça um gesto de amizade... Hummm... Endministrator, gostaria de se juntar a mim para a oração matinal?"
       },
       {
+        "voId": "chr_0011_seraph_mono_self_line04",
         "title": "Diálogo de Confiança 4",
         "text": "Por favor, me perdoe, Endministrator... Antes de fazer inevitável contato com você, preciso primeiro descarregar dos meus dedos qualquer acúmulo potencial de estática... Ah? Você não tem medo dessas coisas? Mas... esses pequenos malfeitores se agarrariam secretamente às mãos de alguém... e o picariam quando menos se esperasse... assim."
       },
       {
+        "voId": "chr_0011_seraph_mono_self_line05",
         "title": "Diálogo de Confiança 5",
         "text": "Durante anos, na Catedralis, mergulhei em estudos, sem nunca ponderar como os frutos do nosso bom trabalho poderiam iluminar Talos-II. No entanto, as revelações da Lei me trouxeram à sua presença, e um novo mundo emergiu à minha vista. Uma a uma, as antigas e tranquilas palavras subitamente se concretizaram... e agora compreendo perfeitamente seus ensinamentos, Endministrator."
       },
       {
+        "voId": "chr_0011_seraph_mono_chat_line01",
         "title": "Chat 1",
         "text": "Endministrator, nós, Sessionitas, interpretamos a Lei considerando a linguagem como um símbolo. Ao destruir continuamente antigas combinações de símbolos para criar novas, aproximamo-nos cada vez mais do domínio da eternidade. Esse comportamento espelha o de Shatterus — a entidade consagrada atrás da estátua sagrada da Catedralis."
       },
       {
+        "voId": "chr_0011_seraph_mono_chat_line02",
         "title": "Chat 2",
         "text": "A Dijiang continua me lembrando da Catedralis. No entanto, não permanecemos lá para sempre. Congregações só ocorrem para resolver momentos de cisma. Quando isso acontecer, meus irmãos e irmãs de todos os cantos de Talos-II retornarão ao local. Humm? Como a Catedralis é mantida em segurança? Se algum dia for atacada... Humm, acredito que ela possa ser sua própria guardiã."
       },
       {
+        "voId": "chr_0011_seraph_mono_chat_line03",
         "title": "Chat 3",
         "text": "Nunca estivemos tão longe de Veritas, pois ela se foi do lugar que chamávamos de lar. Nunca estivemos tão perto de Veritas, pois agora batemos à sua porta de espera."
       },
       {
+        "voId": "chr_0011_seraph_mono_chat_line04",
         "title": "Chat 4",
         "text": "Corrida? A pé? Boxe? Com os punhos? E você quer me ver no festival de esportes?! Receio... Devo recusar. O único \"movimento físico\" que aprovo... é a magnitude das mudanças periódicas, feitas por elétrons dentro de um circuito oscilador. Eu jamais conseguiria competir com meus irmãos e irmãs! Não... Não estou procurando uma desculpa. E-eu preciso voltar agora para a sala do mainframe. Imediatamente."
       },
       {
+        "voId": "chr_0011_seraph_mono_chat_line05",
         "title": "Chat 5",
         "text": "Sim, existem muitos Sarkaz como eu na Cabala. Alguns até receberam relíquias que outrora foram empunhadas por Cavaleiros de Armas. De fato, estudei as escrituras da Cabala. Sei que, em Terra, os Sarkaz estavam em conflito feroz com muitas outras raças. No entanto, quando a Primeira Guerra dos Aggeloi terminou, um milagre de unidade sem precedentes desceu sobre nós: cada alma abraçou seus irmãos e irmãs, e cada par de lábios cantou na mesma língua."
       },
       {
+        "voId": "chr_0011_seraph_mono_about_line01",
         "title": "Tópico: Aggelos",
         "text": "O relacionamento entre a Lei e os Aggeloi que invadem Talos-II é um dos principais assuntos que a Cabala busca interpretar."
       },
       {
+        "voId": "chr_0011_seraph_mono_about_line02",
         "title": "Tópico: Shatterus",
         "text": "Há um Aggelos que lembra o Triaggelos, aninhado atrás da estátua sagrada na Catedralis. Nós o chamamos secretamente de Shatterus quando fora do horário da liturgia. Esta construção foi apreendida pela Abadessa Mumu durante a Primeira Guerra dos Aggeloi. A Abadessa nos encoraja a observar Shatterus e refletir, pois os ensinamentos da Lei podem ser encontrados no inimigo. Shatterus apresenta tanto uma aproximação quase precisa quanto uma conclusão formada ainda a ser interpretada."
       },
       {
+        "voId": "chr_0011_seraph_mono_about_line03",
         "title": "Tópico: Três ramos da Cabala",
         "text": "A Cabala agora consiste em três ramos: os Sessionitas, os Veritaritas e os Ressurgonitas. Eu mesma pertenço aos Sessionitas. Acreditamos que a computação e a análise linguística formam o caminho para a felicidade. Os Ressurgonitas, espalhados por Talos-II, são fanáticos armados, ávidos por mergulhar nas ruínas da antiga civilização. Os Veritaritas preocupam-se acima de tudo com questões do coração e da alma. Estudam esculturas, criam cópias manuscritas e guiam almas perdidas para casa."
       },
       {
+        "voId": "chr_0011_seraph_explore_point_common_01",
         "title": "Recurso/Colecionável detectado 1",
         "text": "Percebi a existência de raridades."
       },
       {
+        "voId": "chr_0011_seraph_explore_point_valub_01",
         "title": "Recurso/Colecionável detectado 2",
         "text": "Se um presente de Veritas estiver por perto, ele deverá ser recuperado."
       },
       {
+        "voId": "chr_0011_seraph_explore_find_locked_01",
         "title": "Área não explorada detectada",
         "text": "Abençoado ou amaldiçoado, o reino é nosso para explorar."
       },
       {
+        "voId": "chr_0011_seraph_explore_find_danger_01",
         "title": "Inimigo poderoso descoberto",
         "text": "Um ser rebelde e caído vagueia por perto. Meu cajado lamentará por ele."
       },
       {
+        "voId": "chr_0011_seraph_interact_mine_valub_01",
         "title": "Mineração 1",
         "text": "Tudo foi colocado nesta Terra diante de nós — E com o trabalho de nossas mãos eles serão adquiridos."
       },
       {
+        "voId": "chr_0011_seraph_interact_mine_valub_echo2_01",
         "title": "Mineração 2",
         "text": "Um presente da Lei."
       },
       {
+        "voId": "chr_0011_seraph_interact_treasure_valub_01",
         "title": "Abrindo um caixote",
         "text": "Mais uma vez vejo abundância — uma bênção prometida pela Lei!"
       },
       {
+        "voId": "chr_0011_seraph_interact_etherium_01",
         "title": "Adquirindo Aurileno",
         "text": "Aurileno... outro idioma sussurrado por Talos-II."
       },
       {
+        "voId": "chr_0011_seraph_interact_blight_break_01",
         "title": "Eliminando a Praga",
         "text": "Esse material amorfo é apenas uma variável em nossa jornada."
       },
       {
+        "voId": "chr_0011_seraph_interact_rest_01",
         "title": "Descansar",
         "text": "Por favor, guie-nos para a revelação da tranquilidade eterna."
       },
       {
+        "voId": "chr_0011_seraph_combat_suppuse_using_01",
         "title": "Uso Tático 1",
         "text": "Estou aqui para manifestar bênçãos."
       },
       {
+        "voId": "chr_0011_seraph_combat_suppuse_getheal_01",
         "title": "Uso Tático 2",
         "text": "Sejam louvadas as boas ações."
       },
       {
+        "voId": "chr_0011_seraph_combat_remind_danger_01",
         "title": "Aviso de Perigo",
         "text": "Eles demonstram intenção letal!"
       },
       {
+        "voId": "chr_0011_seraph_combat_hurt_lowhp_01",
         "title": "Ferida",
         "text": "A trilha se torna... mais árdua..."
       },
       {
+        "voId": "chr_0011_seraph_combat_dead_01",
         "title": "0 PV",
         "text": "Veritas... Por quê...?"
       },
       {
+        "voId": "chr_0011_seraph_combat_remind_praise_01",
         "title": "Encorajamento da Equipe 1",
         "text": "Suas Artes abriram meus olhos!"
       },
       {
+        "voId": "chr_0011_seraph_combat_remind_praise_02",
         "title": "Encorajamento da Equipe 2",
         "text": "Estamos unidos além da necessidade de palavras!"
       },
       {
+        "voId": "chr_0011_seraph_combat_remind_praise_echo2_01",
         "title": "Resposta a Encorajamento 1",
         "text": "Tenho sorte de estar em sua companhia."
       },
       {
+        "voId": "chr_0011_seraph_combat_remind_praise_echo2_02",
         "title": "Resposta a Encorajamento 2",
         "text": "Oferecerei orações por todos nós."
       },
       {
+        "voId": "chr_0011_seraph_combat_intobattle_01",
         "title": "Início do Combate 1",
         "text": "Aquele que sofre hoje não está entre nós."
       },
       {
+        "voId": "chr_0011_seraph_combat_intobattle_echo2_01",
         "title": "Início do Combate 2",
         "text": "Desejo muita sorte a você."
       },
       {
+        "voId": "chr_0011_seraph_combat_outbattle_nor_01",
         "title": "Vitória em Combate 1",
         "text": "A Veritas agraciou este campo de batalha com seu toque!"
       },
       {
+        "voId": "chr_0011_seraph_combat_outbattle_nor_02",
         "title": "Vitória em Combate 2",
         "text": "Minhas preces foram atendidas."
       },
       {
+        "voId": "chr_0011_seraph_combat_outbattle_nor_echo2_01",
         "title": "Vitória em Combate 3",
         "text": "Encontro alegria na linguagem da celebração."
       },
       {
+        "voId": "chr_0011_seraph_combat_outbattle_hard_01",
         "title": "Vitória em Combate 4",
         "text": "Meus amigos... sucesso e fracasso não são binários como 0 e 1. Existe um espectro de inúmeras nuances entre eles."
       },
       {
+        "voId": "chr_0011_seraph_combat_battle_defeat_01",
         "title": "Derrota em Combate",
         "text": "A sacralidade da computação reside em sua perfeita neutralidade — os algoritmos preveem tanto o sucesso quanto o fracasso. Mantenha a fé e siga em frente."
       },
       {
+        "voId": "chr_0011_seraph_mono_attack_last_01",
         "title": "Golpe Final 1",
         "text": "Injeção!"
       },
       {
+        "voId": "chr_0011_seraph_mono_attack_last_02",
         "title": "Golpe Final 2",
         "text": "Recursão!"
       },
       {
+        "voId": "chr_0011_seraph_mono_skill_nor_01",
         "title": "Habilidade de Batalha 1",
         "text": "Analisando."
       },
       {
+        "voId": "chr_0011_seraph_mono_skill_nor_02",
         "title": "Habilidade de Batalha 2",
         "text": "Uma saída fria."
       },
       {
+        "voId": "chr_0011_seraph_mono_skill_nor_03",
         "title": "Habilidade de Batalha 3",
         "text": "Coletando dados."
       },
       {
+        "voId": "chr_0011_seraph_combat_skill_comb_ready_01",
         "title": "Combo de Habilidades Pronto 1",
         "text": "Minha oração terminou."
       },
       {
+        "voId": "chr_0011_seraph_combat_skill_comb_ready_02",
         "title": "Combo de Habilidades Pronto 2",
         "text": "Eu ofereço meu poder computacional."
       },
       {
+        "voId": "chr_0011_seraph_mono_skill_comb_release_01",
         "title": "Conjuração de Combo 1",
         "text": "Que Veritas esteja com você."
       },
       {
+        "voId": "chr_0011_seraph_mono_skill_comb_release_02",
         "title": "Conjuração de Combo 2",
         "text": "Tudo se consertará."
       },
       {
+        "voId": "chr_0011_seraph_mono_attack_extra_01",
         "title": "Finalizador 1",
         "text": "Reinicialização física!"
       },
       {
+        "voId": "chr_0011_seraph_mono_attack_extra_02",
         "title": "Finalizador 2",
         "text": "Executando a destruição!"
       },
       {
+        "voId": "chr_0011_seraph_mono_skill_ultimate_01",
         "title": "Habilidade Suprema 1",
         "text": "A lógica rende mais."
       },
       {
+        "voId": "chr_0011_seraph_mono_skill_ultimate_02",
         "title": "Habilidade Suprema 2",
         "text": "Varra a corrupção!"
       },
       {
+        "voId": "chr_0011_seraph_mono_skill_ultimate_03",
         "title": "Habilidade Suprema 3",
         "text": "Listar violações de assunto."
       }

@@ -128,330 +128,412 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0026_lastrite_chrbark_squad_01",
         "title": "Persiapan Operasi 1",
         "text": "Sudah mau berangkat? Ah, aku, ee ... tunggu aku sebentar ...."
       },
       {
+        "voId": "chr_0026_lastrite_chrbark_squad_02",
         "title": "Persiapan Operasi 2",
         "text": "Aku ingat di Panduan Operasi tertulis—Oh, a-aku hampir selesai!"
       },
       {
+        "voId": "chr_0026_lastrite_chrbark_join_01",
         "title": "Menambahkan ke Tim 1",
         "text": "Sudah ... giliranku?"
       },
       {
+        "voId": "chr_0026_lastrite_chrbark_join_02",
         "title": "Menambahkan ke Tim 2",
         "text": "Last Rite, bersiap menyerang ...! Em .... Kita mau menyerang, ‘kan?"
       },
       {
+        "voId": "chr_0026_lastrite_chrbark_weap_01",
         "title": "Berganti Senjata",
         "text": "Tak apa. Yang penting cukup berat."
       },
       {
+        "voId": "chr_0026_lastrite_chrbark_gear_01",
         "title": "Berganti Gear",
         "text": "Wow .... Aku belum pernah lihat model ini .... Aku b-b-baca ulang panduan peng-penggunanya dulu ...."
       },
       {
+        "voId": "chr_0026_lastrite_chrup_skill_01",
         "title": "Aktivasi Matriks Kemampuan",
         "text": "Aku akan terus berusaha ... dengan caraku sendiri!"
       },
       {
+        "voId": "chr_0026_lastrite_chrup_level_01",
         "title": "Menonton Rekaman Pertarungan",
         "text": "KYAAA ...! M-m-maafkan aku! Situasinya agak ... seram ...."
       },
       {
+        "voId": "chr_0026_lastrite_chrup_promt01_01",
         "title": "Promosi Operator 1",
         "text": "Pro ... mosi? *Terkesiap* Sungguh?! U-untukku?"
       },
       {
+        "voId": "chr_0026_lastrite_chrup_promt02_01",
         "title": "Promosi Operator 2",
         "text": "Ibu .... Ayah .... Aku ... aku akhirnya berhasil ...."
       },
       {
+        "voId": "chr_0026_lastrite_chrup_promt03_01",
         "title": "Promosi Operator 3",
         "text": "Diterima. Aku akan menempa jalan melalui api dan darah atas namamu, dan tak akan goyah saat menghadapi—Emm .... Kenapa kau tampak ... tegang?"
       },
       {
+        "voId": "chr_0026_lastrite_chrup_promt04_01",
         "title": "Promosi Operator 4",
         "text": "Aku sadar bisa lebih berguna bagi semua orang kalau aku tetap di sini. Kalau kontrakku dengan Seš’qa sudah habis, kau bisa menghubungiku .... O-oh tidak! Aku tak boleh bilang begitu! Tolong .... Jangan beri tahu siapa pun ...."
       },
       {
+        "voId": "chr_0026_lastrite_introduce_01",
         "title": "Operator Siap Bertugas",
         "text": "Naradamping Seš’qa, siap bertugas .... Namaku .... M-maksudku nama sandiku Last Rite .... Panggil saja begitu ...."
       },
       {
+        "voId": "chr_0026_lastrite_mono_switch_01",
         "title": "Siaga 1",
         "text": "Latihannya harus diteruskan. Aku harus menguasai kekuatan ini ...."
       },
       {
+        "voId": "chr_0026_lastrite_mono_switch_02",
         "title": "Siaga 2",
         "text": "Semoga pertarungan kita bisa membawa perdamaian."
       },
       {
+        "voId": "chr_0026_lastrite_sim_assign_work_01",
         "title": "Menugaskan ke Fasilitas",
         "text": "Dipahami! Aku akan berusaha sepuluh kali lipat ...! Bukan, maksudku seratus dua puluh kali lipat lebih keras!"
       },
       {
+        "voId": "chr_0026_lastrite_sim_hello_lower_01",
         "title": "Menyapa 1",
         "text": "Endministrator?! A-ap-apa kabar ...?"
       },
       {
+        "voId": "chr_0026_lastrite_sim_hello_max_01",
         "title": "Menyapa 2",
         "text": "Ada yang bisa kubantu, Endmin?"
       },
       {
+        "voId": "chr_0026_lastrite_sim_talk_lv01_01",
         "title": "Obrolan Santai di Dijiang 1",
         "text": "Aku bisa melakukannya. Cuma sebaris saja. Ya, percaya diri! Eh, Endmin ...!!! M-m-ma-ma-makanan penutup ... hari ini e-e-enn-enak, ‘kan?"
       },
       {
+        "voId": "chr_0026_lastrite_sim_talk_lv02_01",
         "title": "Obrolan Santai di Dijiang 2",
         "text": "Oh tidak ... ramai sekali .... Bagaimana kalau ada yang mendatangiku? Aku mau meringkuk di kerat saja ...."
       },
       {
+        "voId": "chr_0026_lastrite_sim_talk_lv02_02",
         "title": "Obrolan Santai di Dijiang 3",
         "text": "A-a-apa kau tahu ke mana kita bisa melaporkan kerusakan? Aku ... ee ... menghancurkan kabin latihan ... lagi ...."
       },
       {
+        "voId": "chr_0026_lastrite_sim_talk_max_01",
         "title": "Obrolan Santai di Dijiang 4",
         "text": "Huh .... B-bolehkah aku bersandar padamu sebentar ...? Aku cuma mau ambil kraker keras .... A-aku baik-baik saja .... Hanya agak ... lapar ...."
       },
       {
+        "voId": "chr_0026_lastrite_sim_talk_max_02",
         "title": "Obrolan Santai di Dijiang 5",
         "text": "Stereo pribadi, kit alat omni, Unit Arts dasar .... Ah, cuma daftar belanja. Barang-barang ini sangat sulit didapatkan di kotaku. Untungnya, beberapa rekan di Kantor Logistik mau mampir membelikannya. Mereka baik sekali kepadaku!"
       },
       {
+        "voId": "chr_0026_lastrite_sim_talk_max_03",
         "title": "Obrolan Santai di Dijiang 6",
         "text": "Endmin ... apa aku boleh ... pasang brosur di Dijiang? Seš’qa memberiku banyak tugas promosi. Kalau tak memenuhi KPI, mereka akan menyeretku kembali untuk ikut latihan khusus ...."
       },
       {
+        "voId": "chr_0026_lastrite_sim_gift_give_01",
         "title": "Menawarkan Hadiah",
         "text": "Endmin, terimalah tanda terima kasihku yang kekal dan a-abadi ini! Ma ... maafkan aku .... Aku tak tahu harus bilang apa ...."
       },
       {
+        "voId": "chr_0026_lastrite_sim_gift_recv_01",
         "title": "Menerima Hadiah",
         "text": "Ini ... untukku ...? S-sungguh, Endmin? Ya ampun ... rasanya aku ... aku mau pingsan ...."
       },
       {
+        "voId": "chr_0026_lastrite_mono_self_line01",
         "title": "Dialog Kepercayaan 1",
         "text": "Hehehe .... Endmin, benarkah rumah di Wrankwood Baru seluruhnya terbuat dari permen? Bolehkah aku ... minta cuti beberapa hari untuk tinggal di tempat itu? Dan jangan khawatir, aku akan mengunyah cukup banyak agar uang kita tak sia-sia! Oh .... Itu ... itu cuma iklan?"
       },
       {
+        "voId": "chr_0026_lastrite_mono_self_line02",
         "title": "Dialog Kepercayaan 2",
         "text": "Lingkaran hitam di sekitar mataku? Oh, aku ikut kelas pertolongan pertama dan dasar pencegahan penyakit tumbuhan panen ... jadi waktu tidurku berkurang .... Tapi, kelas-kelas itu berguna sekali! Memotong sesuatu jadi kecil-kecil dengan pedang tak akan menyelesaikan semua masalah! Jelas tidak! Tapi, masalahnya ... pelajaran tentang Arts Pemulihan ternyata sulit sekali ...."
       },
       {
+        "voId": "chr_0026_lastrite_mono_self_line03",
         "title": "Dialog Kepercayaan 3",
         "text": "Last Rite. Witching Hour memberiku nama sandi ini. Karena aku seorang Nachzehrer dan bekerja sebagai pengurus jenazah di kampung halaman, mereka ingin nama yang “menonjolkan fitur produknya” .... Oh, produknya bukan aku—tapi pakaian ini! Last Rite adalah upacara duka yang diadakan untuk mereka yang sudah meninggal! Kenapa mereka memanfaatkannya dengan cara menggelikan seperti itu ...? Endmin ... bisa tolong buatkan surat protes lagi untukku? Kumohon?"
       },
       {
+        "voId": "chr_0026_lastrite_mono_self_line04",
         "title": "Dialog Kepercayaan 4",
         "text": "Orang-orang terus bercanda tentang aku yang membiarkan diriku “lapar”, dan sepertinya aku tahu alasannya. Tapi, kalau aku memakai kemampuan Nachzehrer bawaanku, jiwa-jiwa orang mati akan terganggu. Kemungkinannya kecil, tapi aku tak mau ambil risiko .... Aku belum mempelajarinya karena ilmu sihir kami rumit. Jadi, aku memilih untuk tak memakai kekuatanku. Itulah yang paling aman!"
       },
       {
+        "voId": "chr_0026_lastrite_mono_self_line05",
         "title": "Dialog Kepercayaan 5",
         "text": "Ada yang harus kuceritakan kepadamu, Endmin. Aku tak peduli apa yang terjadi setelahnya. Nah, k-kau perlu tahu bahwa ... Seš’qa itu terlalu berlebihan mengemasku! Mereka menamaiku “Putri Istana Perang” begitu saja tanpa izin! Aku tak ingin bohong kepadamu .... Aku benar-benar minta maaf. Mungkin sebaiknya aku mengundurkan diri saja—T-tunggu, kau sudah tahu sejak awal?! Kau ... tak mempermasalahkannya?"
       },
       {
+        "voId": "chr_0026_lastrite_mono_chat_line01",
         "title": "Obrolan 1",
         "text": "Aku sungguh berharap bisa memakai pedangku seperti operator yang lain. Semuanya punya rangkaian posisi, tebasan, dan pertahanan yang indah. Aku mencoba meniru gerakan mereka, tapi entah bagaimana, pedangku selalu terlempar. Sepertinya aku hanya bisa bertarung dengan ayunan yang liar dan naluriah .... Tunggu. Ayunanku juga indah? Aku ... masa, sih? Tapi ... terima kasih atas pujianmu."
       },
       {
+        "voId": "chr_0026_lastrite_mono_chat_line02",
         "title": "Obrolan 2",
         "text": "Banyak ras menyebutkan semacam “roh” yang tetap hidup setelah kematian. Orang tuaku mengajarkan banyak ritual doa, dan aku biasa melakukan semuanya setiap hari di makam dekat rumah. Hmm? Oh iya, aku pernah dengar tentang tipe Sarkaz yang disebut “Revenant”. Kata orang, mereka bisa masuk ke dalam segala jenis jasad dan membuatnya hidup kembali .... Tunggu. Kau mau cerita horor ya? TIDAKTIDAKTIDAK! AKU TAK DENGAR OMONGANMU!"
       },
       {
+        "voId": "chr_0026_lastrite_mono_chat_line03",
         "title": "Obrolan 3",
         "text": "Kenapa semua orang mengerjaiku? Anak-anak di tempat asalku memanggilku “Nyamnyam” atau “Nona Kecil Linglung”. Endfielder senior juga terus memberiku nama-nama lucu. Aku harus cari cara agar terlihat lebih otoriter .... Oh! Aku punya ide. Aku bisa pakai topeng seperti Endmin! Bagaimana penampilanku kalau kupakai topeng ini saat bicara dengan orang lain? Apa? Terlalu seram? Oh .... Baiklah ...."
       },
       {
+        "voId": "chr_0026_lastrite_mono_chat_line04",
         "title": "Obrolan 4",
         "text": "Aku ikut tes standar operator. Aku unggul di bagian kebugaran, tapi untuk hal-hal teknisnya ... yah, anggap saja Pengawas Perlica akhirnya membiarkan aku lulus! Sejak saat itu, aku ikut latihan perbaikan! Oh, dan pria tua yang menyerahkan kontrak kepadaku di kota apung .... Kata Perlica, pria itu berusaha melindungiku. Aku tak yakin apa maksudnya, tapi Perlica selalu benar!"
       },
       {
+        "voId": "chr_0026_lastrite_mono_chat_line05",
         "title": "Obrolan 5",
         "text": "Seš’qa sudah lama menjaga pengetahuan dan peralatan sihir Sarkaz, tapi hanya ada sedikit Nachzehrer di Talos-II. Banyak teknik berperang, yang pernah diwariskan turun-temurun, hilang seiring waktu. Menurut cendekiawan kami, banyak Nachzehrer bertempur di medan pertarungan Terra ... dan mereka menyokong perang itu dengan cara menyerap kekuatan rekan-rekan yang gugur .... Kurasa kita sudah tak perlu melakukannya, ‘kan? Aku punya aura dingin yang hampir tak bisa dikendalikan. Dinginnya akan merembes keluar dariku kalau aku tak hati-hati. Tapi, aku justru ... lebih nyaman dengan kekuatan itu."
       },
       {
+        "voId": "chr_0026_lastrite_mono_about_line01",
         "title": "Topik: Bakat dan Kekuatan",
         "text": "Instruktur Seš’qamam memberitahuku bahwa Nachzehrer sejati akan menggunakan ilmu sihir untuk menguasai esnya. Katanya, aku masih belum pantas karena dinginnya terus merembes keluar dariku. Yah, aku ini pandai menahan keinginan untuk menyerap kekuatan orang mati. Sisi negatifnya adalah aku jadi gampang lapar .... Tidak, aku baik-baik saja. Tubuhku menyerap semua kalori itu dengan cepat. Aku bahkan sudah lama terbiasa makan camilan tengah malam, tapi tetap saja berat badanku turun .... Emm, Endmin ... apa semua orang baru saja menatapku?"
       },
       {
+        "voId": "chr_0026_lastrite_mono_about_line02",
         "title": "Topik: Alat Tempur",
         "text": "Kau jarang lihat pakaian seperti ini? Ini prototipe produk dari Witching Hour. Mereka ingin aku mengenakannya dalam pertarungan untuk mengumpulkan ... ehm ... semacam data tes, begitu? Tapi, aku tak terlalu mahir bertarung. Aku penasaran kenapa mereka mempekerjakanku untuk tugas ini .... Pokoknya, pakaian ini luar biasa! Ringan, kokoh, dan bahkan bisa mengeringkan rambut setelah mandi! Tapi, buku panduan pengguna untuk mode tempurnya tebal sekali, sulit mengingat semuanya ...."
       },
       {
+        "voId": "chr_0026_lastrite_mono_about_line03",
         "title": "Topik: Mereka yang Telah Tiada",
         "text": "Aku ingat semua orang yang dimakamkan di pemakaman yang diurus keluargaku—orang tua, bayi malang, tentara bayaran dari kota lain, orang asing pengidap penyakit batu .... Masing-masing punya permintaan terakhir. Saat upacara, orang yang datang untuk mengucapkan selamat tinggal akan mengucapkan permintaan itu dengan lantang. Di balik kata-kata itu ... aku bisa merasakan hal yang sebenarnya mereka inginkan. Mereka bukannya meminta siapa pun untuk memenuhi permintaannya—mereka hanya ingin didengar. Yang bisa kulakukan hanyalah mengingat keinginan-keinginan itu. Seperti kata Ibuku, permintaan yang tertinggal adalah bukti bahwa mereka pernah hidup."
       },
       {
+        "voId": "chr_0026_lastrite_mono_about_line04",
         "title": "Topik: Seš’qa",
         "text": "Witching Hour harus berulang kali menyetel pakaian tempurku, jadi aku sering melakukan perjalanan ke kota apung. Saat Seš’qa sudah cukup jauh dari kota lain, mereka akan menyimpan semua fasilitas tur dan tempat itu jadi sangat sepi. Pengemudi karavan yang memperkenalkanku kepada Endfield bercerita bahwa Seš’qa menjelajahi Talos-II dengan membawa kru tentara bayaran dan tukang sihir. Tujuan mereka adalah menghubungkan dan mendukung komunitas Sarkaz di seluruh dunia. Tapi ... sejujurnya, mereka lebih mirip bisnis daripada amal ...."
       },
       {
+        "voId": "chr_0026_lastrite_mono_about_line05",
         "title": "Topik: Takdir",
         "text": "Ayah bilang, TGCC menggali beberapa sumur di tempat lama kami, bertahun-tahun yang lalu. Tapi, seorang Endfielder senior baru saja memberitahuku bahwa pemimpin seluruh proyek itu adalah Endfield! Nah, banyak keluarga kemudian menetap setelah kami punya akses air. Setelah itu, para pengemudi karavan pun mengunjungi tempat kami. Salah satu dari mereka bilang bahwa aku bisa mencoba peruntungan di Seš’qa, dan begitulah akhirnya aku bertemu semua orang di Endfield. Mungkin ini sudah takdir?"
       },
       {
+        "voId": "chr_0026_lastrite_mono_about_line06",
         "title": "Topik: “Teman”",
         "text": "Semua bermula saat aku masih gadis kecil. Kadang-kadang kudengar ada suara berbicara kepadaku. Suaranya terdengar kelelahan, dan mungkin lebih banyak tidur. Tak seorang pun dari anak-anaknya beristirahat di makam kami. Aku yakin mereka ada di utara .... Lalu, setiap kali aku lapar, dia akan memelukku dengan erat dan menghiburku. Tapi, beberapa tahun terakhir ini, durasi tidurnya jadi makin panjang, dan dia terdengar lebih lemah daripada sebelumnya. Aku ingin sekali melakukan sesuatu untuk membantunya ...."
       },
       {
+        "voId": "chr_0026_lastrite_explore_point_common_01",
         "title": "Sumber Daya/Barang Koleksi Terdeteksi 1",
         "text": "Aku lihat sumber daya di sana .... Perlu kita ambil, tidak?"
       },
       {
+        "voId": "chr_0026_lastrite_explore_point_valub_01",
         "title": "Sumber Daya/Barang Koleksi Terdeteksi 2",
         "text": "Kelihatannya barang bagus .... Kalau aku tak salah lihat ...."
       },
       {
+        "voId": "chr_0026_lastrite_explore_find_locked_01",
         "title": "Area yang Belum Dijelajahi Terdeteksi",
         "text": "Pakaian tempurku bereaksi terhadap sesuatu. Apa ada anomali di sana?"
       },
       {
+        "voId": "chr_0026_lastrite_explore_find_danger_01",
         "title": "Musuh Kuat Ditemukan",
         "text": "Hati-hati! Musuh itu kelihatannya kuat sekali!"
       },
       {
+        "voId": "chr_0026_lastrite_interact_mine_valub_01",
         "title": "Penambangan 1",
         "text": "Orang-orang dari G-Gudang Senjata ... tak akan marah karena ini, ‘kan?"
       },
       {
+        "voId": "chr_0026_lastrite_interact_mine_valub_echo2_01",
         "title": "Penambangan 2",
         "text": "Biar aku saja. Aku kuat."
       },
       {
+        "voId": "chr_0026_lastrite_interact_treasure_valub_01",
         "title": "Membuka Kerat",
         "text": "Woooooww .... Belum pernah kulihat benda sebagus ini ...."
       },
       {
+        "voId": "chr_0026_lastrite_interact_etherium_01",
         "title": "Mendapatkan Aurylene",
         "text": "Cantik sekali .... Oh, maaf! Aku sudah selesai mengumpulkannya!"
       },
       {
+        "voId": "chr_0026_lastrite_interact_blight_break_01",
         "title": "Menyingkirkan Hawar",
         "text": "Semoga aku tak menumpahkan cairan kotor itu ke mana-mana."
       },
       {
+        "voId": "chr_0026_lastrite_interact_rest_01",
         "title": "Istirahat",
         "text": "A-a-ada yang mau minuman dingin? Bisa kudinginkan sekalian untuk kalian ...."
       },
       {
+        "voId": "chr_0026_lastrite_combat_suppuse_using_01",
         "title": "Penggunaan Taktis 1",
         "text": "Biar kubantu!"
       },
       {
+        "voId": "chr_0026_lastrite_combat_suppuse_getheal_01",
         "title": "Penggunaan Taktis 2",
         "text": "Aku ... aku merasa lebih baik ...."
       },
       {
+        "voId": "chr_0026_lastrite_combat_remind_danger_01",
         "title": "Peringatan Bahaya",
         "text": "Awas! Bahaya!"
       },
       {
+        "voId": "chr_0026_lastrite_combat_hurt_lowhp_01",
         "title": "Cedera",
         "text": "Tetap sadar ...! Aku tak boleh tumbang di sini ...."
       },
       {
+        "voId": "chr_0026_lastrite_combat_dead_01",
         "title": "0 HP",
         "text": "Harus lindungi mereka ...."
       },
       {
+        "voId": "chr_0026_lastrite_combat_remind_praise_01",
         "title": "Penyemangat Tim 1",
         "text": "Ke-keren ... sekali ...."
       },
       {
+        "voId": "chr_0026_lastrite_combat_remind_praise_02",
         "title": "Penyemangat Tim 2",
         "text": "Kalian semua hebat sekali!"
       },
       {
+        "voId": "chr_0026_lastrite_combat_remind_praise_echo2_01",
         "title": "Respons Penyemangat 1",
         "text": "K-kau membuatku tersanjung!"
       },
       {
+        "voId": "chr_0026_lastrite_combat_remind_praise_echo2_02",
         "title": "Respons Penyemangat 2",
         "text": "S-semua ini berkat upaya kita semua!"
       },
       {
+        "voId": "chr_0026_lastrite_combat_intobattle_01",
         "title": "Mulai Pertarungan 1",
         "text": "Biar kubukakan jalan!"
       },
       {
+        "voId": "chr_0026_lastrite_combat_intobattle_echo2_01",
         "title": "Mulai Pertarungan 2",
         "text": "Ayo lakukan sebaik mungkin, Teman-teman!"
       },
       {
+        "voId": "chr_0026_lastrite_combat_outbattle_nor_01",
         "title": "Menang Pertarungan 1",
         "text": "Semoga pakaian tempurku tak rusak ...."
       },
       {
+        "voId": "chr_0026_lastrite_combat_outbattle_nor_02",
         "title": "Menang Pertarungan 2",
         "text": "Semua berkat teknologi terbaru Seš’qa! Ah .... Aku sulit menghilangkan kebiasaan ini ...."
       },
       {
+        "voId": "chr_0026_lastrite_combat_outbattle_nor_echo2_01",
         "title": "Menang Pertarungan 3",
         "text": "K-kita semua beraksi bagus!"
       },
       {
+        "voId": "chr_0026_lastrite_combat_outbattle_hard_01",
         "title": "Menang Pertarungan 4",
         "text": "Apa semua orang baik-baik saja ...? Oh ... rasanya senang bisa bertahan hidup ...."
       },
       {
+        "voId": "chr_0026_lastrite_combat_battle_defeat_01",
         "title": "Kalah Bertarung",
         "text": "A-a-aku minta maaf! Ini semua salahku! Akan ... akan kuperbaiki. Bagaimana kalau ... kita coba lagi?"
       },
       {
+        "voId": "chr_0026_lastrite_mono_attack_last_01",
         "title": "Final Strike 1",
         "text": "Ayunan ... terakhir!"
       },
       {
+        "voId": "chr_0026_lastrite_mono_attack_last_02",
         "title": "Final Strike 2",
         "text": "Kuhajar kau!"
       },
       {
+        "voId": "chr_0026_lastrite_mono_skill_nor_01",
         "title": "Skill Tarung 1",
         "text": "Agak dingin."
       },
       {
+        "voId": "chr_0026_lastrite_mono_skill_nor_02",
         "title": "Skill Tarung 2",
         "text": "Biarkan saljunya membeku."
       },
       {
+        "voId": "chr_0026_lastrite_mono_skill_nor_03",
         "title": "Skill Tarung 3",
         "text": "Es, dengarkan aku."
       },
       {
+        "voId": "chr_0026_lastrite_combat_skill_comb_ready_01",
         "title": "Skill Kombo Siap 1",
         "text": "Akan kusapu habis!"
       },
       {
+        "voId": "chr_0026_lastrite_combat_skill_comb_ready_02",
         "title": "Skill Kombo Siap 2",
         "text": "Aku siap!"
       },
       {
+        "voId": "chr_0026_lastrite_mono_skill_comb_release_01",
         "title": "Penggunaan Kombo 1",
         "text": "Gigit es sekarang!"
       },
       {
+        "voId": "chr_0026_lastrite_mono_skill_comb_release_02",
         "title": "Penggunaan Kombo 2",
         "text": "Ini bakal dingin!"
       },
       {
+        "voId": "chr_0026_lastrite_mono_attack_extra_01",
         "title": "Penuntas 1",
         "text": "Tolong berhentilah bertarung ...."
       },
       {
+        "voId": "chr_0026_lastrite_mono_attack_extra_02",
         "title": "Penuntas 2",
         "text": "Kau pasti akan kalah!"
       },
       {
+        "voId": "chr_0026_lastrite_mono_skill_ultimate_01",
         "title": "Ultimate 1",
         "text": "Kekuatan maksimum, aktif!"
       },
       {
+        "voId": "chr_0026_lastrite_mono_skill_ultimate_02",
         "title": "Ultimate 2",
         "text": "Kuburanmu sudah siap!"
       },
       {
+        "voId": "chr_0026_lastrite_mono_skill_ultimate_03",
         "title": "Ultimate 3",
         "text": "Eh, ada pesan terakhir?"
       }

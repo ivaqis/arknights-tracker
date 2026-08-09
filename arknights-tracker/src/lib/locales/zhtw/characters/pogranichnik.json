@@ -140,330 +140,412 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0029_pograni_chrbark_squad_01",
         "title": "行動準備1",
         "text": "已到達待命位置。"
       },
       {
+        "voId": "chr_0029_pograni_chrbark_squad_02",
         "title": "行動準備2",
         "text": "隨時準備拔營。"
       },
       {
+        "voId": "chr_0029_pograni_chrbark_join_01",
         "title": "編入隊伍1",
         "text": "戰鬥即是軍人的天職。"
       },
       {
+        "voId": "chr_0029_pograni_chrbark_join_02",
         "title": "編入隊伍2",
         "text": "我們總是需要為生存付出代價。"
       },
       {
+        "voId": "chr_0029_pograni_chrbark_weap_01",
         "title": "更換武器",
         "text": "必須學會如何去運用暴力，只為生存，無關善惡。"
       },
       {
+        "voId": "chr_0029_pograni_chrbark_gear_01",
         "title": "更換裝備",
         "text": "在軍需官眼中，完備的武裝無異於勝利的起點。"
       },
       {
+        "voId": "chr_0029_pograni_chrup_skill_01",
         "title": "解鎖天賦陣列",
         "text": "懈怠與疏忽，才是戰場上最棘手的敵人。"
       },
       {
+        "voId": "chr_0029_pograni_chrup_level_01",
         "title": "觀看作戰紀錄",
         "text": "很有價值的戰鬥……真令人熱血沸騰。"
       },
       {
+        "voId": "chr_0029_pograni_chrup_promt01_01",
         "title": "精英化晉升1",
         "text": "無需勛章與儀式，我明白這代表著什麼……謝謝你的信任，終末地的管理員。"
       },
       {
+        "voId": "chr_0029_pograni_chrup_promt02_01",
         "title": "精英化晉升2",
         "text": "如果是在鐵誓軍的堡壘，今晚我就不得不成為一場宴會的主持了。"
       },
       {
+        "voId": "chr_0029_pograni_chrup_promt03_01",
         "title": "精英化晉升3",
         "text": "無論在戰場還是別處，這都是一種榮譽。管理員，感謝你託付的信任，我會在最前線證明它的意義。"
       },
       {
+        "voId": "chr_0029_pograni_chrup_promt04_01",
         "title": "精英化晉升4",
         "text": "塔衛二的戰爭依然殘酷，至今仍有無數人於北方前赴後繼，只為眾多的生機能夠延續。我相信，管理員你所做的，會讓這慘烈的循環得到一份莊嚴的結局。"
       },
       {
+        "voId": "chr_0029_pograni_introduce_01",
         "title": "幹員報到",
         "text": "駿衛，羅德島駐外幹員兼鐵誓軍軍官，向你報到。事態緊急，我希望儘快瞭解你的作戰計劃……最好就是現在。"
       },
       {
+        "voId": "chr_0029_pograni_mono_switch_01",
         "title": "待命1",
         "text": "再推演一次作戰計劃，如何？"
       },
       {
+        "voId": "chr_0029_pograni_mono_switch_02",
         "title": "待命2",
         "text": "戰場上的生與死，往往只在一念之間。"
       },
       {
+        "voId": "chr_0029_pograni_sim_assign_work_01",
         "title": "進駐設施",
         "text": "我並未嘗試過這種工作……但出於戰略考量，或許值得一試。"
       },
       {
+        "voId": "chr_0029_pograni_sim_hello_lower_01",
         "title": "打招呼1",
         "text": "你好，管理員，又來巡視了嗎？"
       },
       {
+        "voId": "chr_0029_pograni_sim_hello_max_01",
         "title": "打招呼2",
         "text": "向你致敬，管理員。"
       },
       {
+        "voId": "chr_0029_pograni_sim_talk_lv01_01",
         "title": "帝江號閒聊1",
         "text": "帝江號比我以為的更加巨大，但我熟悉它的各個部分卻只花了極短的時間。這大概要歸功於建造者賦予它的，那近乎精巧的合理構造。這是一個遠大理想的起點，我很期待，管理員。"
       },
       {
+        "voId": "chr_0029_pograni_sim_talk_lv02_01",
         "title": "帝江號閒聊2",
         "text": "集成工業系統確實遠超我的想像。藉由協議核心，泰拉文明的軍工機器將擁有一顆無可匹敵的鋼鐵心臟，能夠不斷向這顆星球所有危險的角落輸送血液。管理員，你們將會拯救無數人的性命，我可以向你保證。"
       },
       {
+        "voId": "chr_0029_pograni_sim_talk_lv02_02",
         "title": "帝江號閒聊3",
         "text": "終末地的武庫工程師實在令人欽佩，竟然能在這樣有限的時間內，完成所有人員的武器維護工作……這樣的效率即使是在北方前線也稱得上是數一數二。不過，他們的負責人為何如此年幼？"
       },
       {
+        "voId": "chr_0029_pograni_sim_talk_max_01",
         "title": "帝江號閒聊4",
         "text": "我看過小道奇教官為你們擬定的訓練方案，十分務實也足夠循序漸進。我並沒有改動的打算，只是會根據經驗額外追加一兩場小小試煉……但想必是難不倒你的，管理員。"
       },
       {
+        "voId": "chr_0029_pograni_sim_talk_max_02",
         "title": "帝江號閒聊5",
         "text": "在你醒來前，我已許久未直接參與過終末地的行動。對我而言，羅德島、終末地、鐵誓軍，並無不同。我只是想保護那些值得保護的東西，而這一次，我可以義無反顧。"
       },
       {
+        "voId": "chr_0029_pograni_sim_talk_max_03",
         "title": "帝江號閒聊6",
         "text": "眺望塔衛二總是能給我莫大的鼓舞，足以覆蓋整顆衛星的異類被戰士們以血肉之軀攔截在北方極光下的方寸之地中。這是鐵誓軍最偉大的軍事成就之一，也是我們值得被委以文明延續之重任的鐵證。"
       },
       {
+        "voId": "chr_0029_pograni_sim_gift_give_01",
         "title": "贈送禮物",
         "text": "這是我在北方意外得到的……也許對你有用，管理員。"
       },
       {
+        "voId": "chr_0029_pograni_sim_gift_recv_01",
         "title": "接收禮物",
         "text": "感謝你的饋贈，管理員。這對我來說亦是一種嘉獎……請收下這個吧，就當是我的回禮。"
       },
       {
+        "voId": "chr_0029_pograni_mono_self_line01",
         "title": "信賴對話1",
         "text": "離開羅德島後，我最先落腳的地方是工團的工業母艦。出於一些原因，我想見證某一段過往在這片土地締造出的結果。看到那座頑強的城市時，我確實深受觸動。如果烏薩斯人的後裔能以另一個面貌贏得屬於他們的榮譽，那麼，赫爾森也不應該再猶豫下去。"
       },
       {
+        "voId": "chr_0029_pograni_mono_self_line02",
         "title": "信賴對話2",
         "text": "鐵誓軍的軍旅生活教會我三件事。第一，信任你的戰友；第二，不要輕易退縮；第三，不可懷有僥倖。在那裡，違背上述任意一條都可能為自身或是戰友帶來不幸。"
       },
       {
+        "voId": "chr_0029_pograni_mono_self_line03",
         "title": "信賴對話3",
         "text": "我在鐵誓軍重組並訓練了盾衛。這個想法誕生自我抵達堡壘群的前夜。厚重的建築群依山而建，薩米的黑森林像深綠色的火焰，沿著河流燃燒。無數人的墓碑如同城牆排列，擋住來自北方的敵人。鐵誓軍是文明環帶的一面盾，而我又為鐵誓軍帶去了另一面。我相信，這些戰士堅不可摧。"
       },
       {
+        "voId": "chr_0029_pograni_mono_self_line04",
         "title": "信賴對話4",
         "text": "赫拉格更像是我的良師益友。我飽嚐了他的遺憾與愧疚，也學習了他的想法與技能。這裡沒有烏薩斯的赫拉格將軍，這裡只有羅德島和終末地的赫爾森。偶爾，我慶幸自己了無牽掛。偶爾，我又會感到……孤獨。我所保護的東西若是虛指，那和帝國虛偽的榮光並無二致。管理員，我希望……你能成為我的答案。"
       },
       {
+        "voId": "chr_0029_pograni_mono_self_line05",
         "title": "信賴對話5",
         "text": "我希望管理員你能夠實現目標；我希望羅德島的人們能夠回到普通的生活；我希望鐵誓軍有朝一日鑄劍為犁，解甲歸田；我希望生命能在這顆古老的星球得以延續。管理員，每當獲勝，我都希望能與你們一起慶祝。但哪怕僅有一次的失敗到來，我希望你能活下去，以任何方式活下去，那我便不枉此行。"
       },
       {
+        "voId": "chr_0029_pograni_mono_chat_line01",
         "title": "交談1",
         "text": "Z7行動組的年輕人們確實讓我印象深刻。他們雖然只接受了簡單的軍事訓練，卻憑藉個人努力收穫了與普通軍人同等程度的作戰意識……這點尤為可貴。"
       },
       {
+        "voId": "chr_0029_pograni_mono_chat_line02",
         "title": "交談2",
         "text": "我在北方有過很多工作經驗。除了指揮官之外，我同時還是軍需官和教官。我鍛造過武器，為新品種的瘤獸擠奶，甚至親自釀過一些葡萄酒……"
       },
       {
+        "voId": "chr_0029_pograni_mono_chat_line03",
         "title": "交談3",
         "text": "什麼是軍人的榮譽？就算是我，恐怕也無法做出斷言。但管理員，倘若有一天你到達北方的要塞，可以去看看鐵誓軍在那裡立下的紀念碑……上面的每一個名字，都曾是一個答案。"
       },
       {
+        "voId": "chr_0029_pograni_mono_chat_line04",
         "title": "交談4",
         "text": "大司庫管理著一座遺產庫。「遺產」的定義多種多樣，除去鐵誓軍歷代英傑的遺物，還有一些是難以復原的泰拉技術，或是原理未知的前文明發現。我曾被允許挑選一把「遺產」作為己用，但我拒絕了。借用前人榮耀的事，我早已做過一次。此身此世，我應當留下屬於自己的榮耀。"
       },
       {
+        "voId": "chr_0029_pograni_mono_chat_line05",
         "title": "交談5",
         "text": "鐵誓軍的敵人大部分時候都是天使和錨點，以及超域活動帶來的災害。但極少數情況下，我們會面對一些自身無法理解的現象：巨大的生物痕跡，奇異人類個體的目擊報告……這也是我得知管理員甦醒後，立刻申請重回終末地的原因。"
       },
       {
+        "voId": "chr_0029_pograni_mono_about_line01",
         "title": "話題：鐵誓軍",
         "text": "北方和很多人的想像並不相同。百年的營運使得鐵誓軍的堡壘也擁有興盛的商業和娛樂業，人們在習以為常的戰事下孕育了一種朝氣蓬勃的生活方式。而堡壘之外，薩米人在那裡的黑森林安家，古老的知識和文化得以保留，大篷車來往於堡壘與森林之間。管理員，你應該去一趟北方。那裡很美，我會陪著你。"
       },
       {
+        "voId": "chr_0029_pograni_mono_about_line02",
         "title": "話題：聯盟工團",
         "text": "工業母艦，這座工團最大的城市如今有很多名字與簡稱。而我知道一個她在泰拉時的名字——「塞夢珂」。在帝國的暴政下，她曾被沉入了一片大湖。我不清楚烏薩斯為何要撈起她，又為何要把這樣一座廢城改造成他們在異星的飛地。但至少，這座塔衛二現存最巨大的移動城市，已然成為了無數人的精神象徵。"
       },
       {
+        "voId": "chr_0029_pograni_mono_about_line03",
         "title": "話題：盾衛",
         "text": "最初挑選盾衛的時候，我看見的是一群比我還要年輕的戰士。第一步，我需要從他們的身上削去銳氣，他們應當守衛，而非主動出擊；隨後，我將戰術傾囊相授，令他們成為戰線本身；最後一步，讓他們掌握活下去的方法……在這件事上，我始終擔心自己做得還不夠。犧牲不是目的，犧牲是為了阻止更多的犧牲。"
       },
       {
+        "voId": "chr_0029_pograni_mono_about_line04",
         "title": "話題：餘燼",
         "text": "我聽說過餘燼女士的事蹟，她是一名可敬的戰士。我想管理員應該有所瞭解，她的長官令她回到南方重組小隊，其實是給她一個「回到普通生活」的機會。這是一種意義不大的寬容。能和自己的過去和解的戰士，壓根就不會走到這一步。"
       },
       {
+        "voId": "chr_0029_pograni_mono_about_line05",
         "title": "話題：薩米人",
         "text": "薩米人並沒有傳聞中那麼排外。的確，他們對外來者常懷戒備，百餘年來始終在「祖靈之父」遺留的庇蔭下生活，但對尊重薩米習俗的旅人，他們也不吝於救濟。獨眼巨人曾將薩米的牙齒贈與塞什卡用作其飛空據點的動力源，雪祀也把傳承的法術向鐵誓軍傾囊相授。看得出，薩米人來到塔衛二後也在用自己的方式延續過往的生活。"
       },
       {
+        "voId": "chr_0029_pograni_explore_point_common_01",
         "title": "發現資源1",
         "text": "那或許是你們需要的東西。"
       },
       {
+        "voId": "chr_0029_pograni_explore_point_valub_01",
         "title": "發現資源2",
         "text": "如果不想錯過重要的物資，最好留意一下那裡。"
       },
       {
+        "voId": "chr_0029_pograni_explore_find_locked_01",
         "title": "發現未探索區域",
         "text": "未知的區域，切記保持隊形。"
       },
       {
+        "voId": "chr_0029_pograni_explore_find_danger_01",
         "title": "發現強敵",
         "text": "注意提防，那邊的敵手不容小覷。"
       },
       {
+        "voId": "chr_0029_pograni_interact_mine_valub_01",
         "title": "採集礦物1",
         "text": "優質的礦藏……它們將成為我手中的利劍與堅盾。"
       },
       {
+        "voId": "chr_0029_pograni_interact_mine_valub_echo2_01",
         "title": "採集礦物2",
         "text": "群策群力之下，再沒有難事。"
       },
       {
+        "voId": "chr_0029_pograni_interact_treasure_valub_01",
         "title": "打開儲藏箱",
         "text": "是十分珍貴的物資儲備，足以影響戰局。"
       },
       {
+        "voId": "chr_0029_pograni_interact_etherium_01",
         "title": "獲得醚質",
         "text": "獲得醚質的戰略意義恐怕高於它本身的價值。"
       },
       {
+        "voId": "chr_0029_pograni_interact_blight_break_01",
         "title": "消除侵蝕",
         "text": "不利的因素最好從一開始就解決掉。"
       },
       {
+        "voId": "chr_0029_pograni_interact_rest_01",
         "title": "休整",
         "text": "每一次的休息整頓都非常重要。這意味著在下一場戰鬥來臨前，你還有準備的機會。"
       },
       {
+        "voId": "chr_0029_pograni_combat_suppuse_using_01",
         "title": "使用戰術物品1",
         "text": "注意恢復，切勿心急。"
       },
       {
+        "voId": "chr_0029_pograni_combat_suppuse_getheal_01",
         "title": "使用戰術物品2",
         "text": "一時疏忽了。"
       },
       {
+        "voId": "chr_0029_pograni_combat_remind_danger_01",
         "title": "危險提醒",
         "text": "全軍！避讓！"
       },
       {
+        "voId": "chr_0029_pograni_combat_hurt_lowhp_01",
         "title": "負傷",
         "text": "還未到絕境。"
       },
       {
+        "voId": "chr_0029_pograni_combat_dead_01",
         "title": "力竭",
         "text": "戰場的終點……不該在此……"
       },
       {
+        "voId": "chr_0029_pograni_combat_remind_praise_01",
         "title": "小隊激勵1",
         "text": "高明的決策。"
       },
       {
+        "voId": "chr_0029_pograni_combat_remind_praise_02",
         "title": "小隊激勵2",
         "text": "教科書般的示範。"
       },
       {
+        "voId": "chr_0029_pograni_combat_remind_praise_echo2_01",
         "title": "回應激勵1",
         "text": "諸位過獎了。"
       },
       {
+        "voId": "chr_0029_pograni_combat_remind_praise_echo2_02",
         "title": "回應激勵2",
         "text": "你們證明了團隊的價值。"
       },
       {
+        "voId": "chr_0029_pograni_combat_intobattle_01",
         "title": "作戰開始1",
         "text": "戰場從不仁慈。"
       },
       {
+        "voId": "chr_0029_pograni_combat_intobattle_echo2_01",
         "title": "作戰開始2",
         "text": "開始接敵。"
       },
       {
+        "voId": "chr_0029_pograni_combat_outbattle_nor_01",
         "title": "作戰勝利1",
         "text": "均在作戰計劃內。"
       },
       {
+        "voId": "chr_0029_pograni_combat_outbattle_nor_02",
         "title": "作戰勝利2",
         "text": "不錯的戰果。"
       },
       {
+        "voId": "chr_0029_pograni_combat_outbattle_nor_echo2_01",
         "title": "作戰勝利3",
         "text": "值得慶祝一番。"
       },
       {
+        "voId": "chr_0029_pograni_combat_outbattle_hard_01",
         "title": "作戰勝利4",
         "text": "勝利總是代價高昂……珍視你由此得到的，勿忘你為此失去的。"
       },
       {
+        "voId": "chr_0029_pograni_combat_battle_defeat_01",
         "title": "作戰失敗",
         "text": "無需因失敗感到恥辱，正視它，然後讓它成為你更進一步的墊腳石。"
       },
       {
+        "voId": "chr_0029_pograni_mono_attack_last_01",
         "title": "重擊1",
         "text": "退下！"
       },
       {
+        "voId": "chr_0029_pograni_mono_attack_last_02",
         "title": "重擊2",
         "text": "無用的掙扎！"
       },
       {
+        "voId": "chr_0029_pograni_mono_skill_nor_01",
         "title": "戰技1",
         "text": "絕無僥倖！"
       },
       {
+        "voId": "chr_0029_pograni_mono_skill_nor_02",
         "title": "戰技2",
         "text": "絕無怯懦！"
       },
       {
+        "voId": "chr_0029_pograni_mono_skill_nor_03",
         "title": "戰技3",
         "text": "絕無退讓！"
       },
       {
+        "voId": "chr_0029_pograni_combat_skill_comb_ready_01",
         "title": "連攜技就緒1",
         "text": "已就緒。"
       },
       {
+        "voId": "chr_0029_pograni_combat_skill_comb_ready_02",
         "title": "連攜技就緒2",
         "text": "我來了結。"
       },
       {
+        "voId": "chr_0029_pograni_mono_skill_comb_release_01",
         "title": "連攜技1",
         "text": "新月！"
       },
       {
+        "voId": "chr_0029_pograni_mono_skill_comb_release_02",
         "title": "連攜技2",
         "text": "弦月！"
       },
       {
+        "voId": "chr_0029_pograni_mono_skill_comb_release_03",
         "title": "連攜技3",
         "text": "滿月！"
       },
       {
+        "voId": "chr_0029_pograni_mono_attack_extra_01",
         "title": "處決1",
         "text": "瞑目吧。"
       },
       {
+        "voId": "chr_0029_pograni_mono_attack_extra_02",
         "title": "處決2",
         "text": "終局已至！"
       },
       {
+        "voId": "chr_0029_pograni_mono_skill_ultimate_01",
         "title": "終結技1",
         "text": "聽我號令！"
       },
       {
+        "voId": "chr_0029_pograni_mono_skill_ultimate_02",
         "title": "終結技2",
         "text": "隨我進軍！"
       },
       {
+        "voId": "chr_0029_pograni_mono_skill_ultimate_03",
         "title": "終結技3",
         "text": "盾衛！列陣！"
       }

@@ -136,326 +136,407 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0016_laevat_chrbark_squad_01",
         "title": "作戦準備1",
         "text": "面倒なことはしたくないが、退屈なのはもっと耐えられない。"
       },
       {
+        "voId": "chr_0016_laevat_chrbark_squad_02",
         "title": "作戦準備2",
         "text": "これから起きることに、覚えておく価値があるといいけど。"
       },
       {
+        "voId": "chr_0016_laevat_chrbark_join_01",
         "title": "編成1",
         "text": "私一人で十分だ。"
       },
       {
+        "voId": "chr_0016_laevat_chrbark_join_02",
         "title": "編成2",
         "text": "私は剣であり、炎だ。"
       },
       {
+        "voId": "chr_0016_laevat_chrbark_weap_01",
         "title": "武器取替",
         "text": "いい剣だ。炎の熱に耐えられることを願うよ。"
       },
       {
+        "voId": "chr_0016_laevat_chrbark_gear_01",
         "title": "装備取替",
         "text": "この程度の重さ、剣を振るのに支障はない。耐火層？余計なことを。"
       },
       {
+        "voId": "chr_0016_laevat_chrup_skill_01",
         "title": "素質・配属スキル解放",
         "text": "どうだ、私の実力がわかったか？"
       },
       {
+        "voId": "chr_0016_laevat_chrup_level_01",
         "title": "経験値素材を使用",
         "text": "まぁまぁかな。うん、それだけだ。"
       },
       {
+        "voId": "chr_0016_laevat_chrup_promt01_01",
         "title": "昇進1",
         "text": "これは何？褒美？評価？……必要ない。たまたま目についたから、全部灰にしただけ。"
       },
       {
+        "voId": "chr_0016_laevat_chrup_promt02_01",
         "title": "昇進2",
         "text": "昇進後の権限なら、今すぐ面談ができるはずだ。ついてきて。外で風に当たりながら話したいから。"
       },
       {
+        "voId": "chr_0016_laevat_chrup_promt03_01",
         "title": "昇進3",
         "text": "またか。褒美や報酬の類は必要ない。でも、そうだな――一緒に過ごした記憶の証だって言うなら、取っておいてもいい。"
       },
       {
+        "voId": "chr_0016_laevat_chrup_promt04_01",
         "title": "昇進4",
         "text": "私無しではいられないようだな。その栄誉、貰ってやってもいい。これからは、エンドフィールドのレーヴァテインとして……って、何よ、その顔。"
       },
       {
+        "voId": "chr_0016_laevat_introduce_01",
         "title": "入職会話",
         "text": "あんた、前にも会ったか……まぁ、自己紹介なんかより、この剣と炎で覚えてもらうよ。"
       },
       {
+        "voId": "chr_0016_laevat_mono_switch_01",
         "title": "待機1",
         "text": "あれこれ指図してくる奴が一番ムカつく。あんたがそうじゃなくてよかったよ。"
       },
       {
+        "voId": "chr_0016_laevat_mono_switch_02",
         "title": "待機2",
         "text": "私を探してた……何か思い出したのか？"
       },
       {
+        "voId": "chr_0016_laevat_sim_assign_work_01",
         "title": "船室配属",
         "text": "たまになら、こういう時間潰しも悪くない。"
       },
       {
+        "voId": "chr_0016_laevat_sim_hello_lower_01",
         "title": "挨拶1",
         "text": "ああ、ここにいたか。"
       },
       {
+        "voId": "chr_0016_laevat_sim_hello_max_01",
         "title": "挨拶2",
         "text": "ふんっ……誤解するな。あんたを待ってたわけじゃないから。"
       },
       {
+        "voId": "chr_0016_laevat_sim_talk_lv01_01",
         "title": "帝江号雑談1",
         "text": "こんなとこでぼーっとしてるなら、ブリッジに行くよ。あんたのこれまでと、これからの道を教えてもらう。"
       },
       {
+        "voId": "chr_0016_laevat_sim_talk_lv02_01",
         "title": "帝江号雑談2",
         "text": "うーん……食堂にアイスクリームの無限供給があるとは……後方支援部に最大限の敬意を示そうじゃないか。あんたの分も1つ、取ってきてやってもいい。"
       },
       {
+        "voId": "chr_0016_laevat_sim_talk_lv02_02",
         "title": "帝江号雑談3",
         "text": "まもなく任務に行くが、一緒に……いや、協約転送は使わない。炎と轟音を連れて、降下ポッドで奴らの頭へ飛び降りる方が性に合ってる。"
       },
       {
+        "voId": "chr_0016_laevat_sim_talk_max_01",
         "title": "帝江号雑談4",
         "text": "寒い？私が温度を下げさせた。この船には外で風を感じられる場所もないから。我慢できないなら、こっちに来ればいい。"
       },
       {
+        "voId": "chr_0016_laevat_sim_talk_max_02",
         "title": "帝江号雑談5",
         "text": "暇なときは、アイスクリームを食べながら一日中外を眺めてる。頭の中にはいろんな記憶があるが、こんなふうに大地や星空を見下ろした記憶はないよ。"
       },
       {
+        "voId": "chr_0016_laevat_sim_talk_max_03",
         "title": "帝江号雑談6",
         "text": "まだ記憶の空白に囚われているのか？思い出せないなら、無理はするな。むしろ、この先のことをしっかり覚えておくんだね。"
       },
       {
+        "voId": "chr_0016_laevat_sim_gift_give_01",
         "title": "プレゼントを贈る",
         "text": "これ、あげる。ずっと私のことを覚えていた、そのお礼だ。ん……？大切な人を忘れない、それ自体がお礼？チッ……"
       },
       {
+        "voId": "chr_0016_laevat_sim_gift_recv_01",
         "title": "プレゼントを受け取る",
         "text": "うーん、プレゼントをもらうのは苦手だ。どうせ忘れてしまうから。でも、あんたからなら……話は別だけど。"
       },
       {
+        "voId": "chr_0016_laevat_mono_self_line01",
         "title": "信頼上昇後会話1",
         "text": "「レーヴァテイン」――そう、あの剣から取って、自分で選んだ名前だ。本当の名前じゃない？屈したならば私のものになるのは当然だ。支配されるんじゃなくて、支配する――あの記憶のようにな。"
       },
       {
+        "voId": "chr_0016_laevat_mono_self_line02",
         "title": "信頼上昇後会話2",
         "text": "私の頭の中には、今でも記憶の欠片が渦巻いている。消えたわけじゃない……今見ていないだけだ。いつか面倒なことを全て片付けたら、「記憶」を辿る旅に出るのも悪くないかもしれない。"
       },
       {
+        "voId": "chr_0016_laevat_mono_self_line03",
         "title": "信頼上昇後会話3",
         "text": "スルト……彼女の怒りも、失望も、戸惑いも……脳裏に刻み込まれてる。すごくリアルで、振り払えるものではないが……でも、彼女が最後に自分で選んだ道を思えば、少し気が楽になる。"
       },
       {
+        "voId": "chr_0016_laevat_mono_self_line04",
         "title": "信頼上昇後会話4",
         "text": "再旅者の使命になんて興味ない。そんなもの、ただの押し付けられた「記憶」だ。あんたたちと一緒に戦ってもいいと思ったのは、出会った人、歩いた道、寝泊まりした甲板、始末した悪党……全部、私のものになった記憶のおかげだ。"
       },
       {
+        "voId": "chr_0016_laevat_mono_self_line05",
         "title": "信頼上昇後会話5",
         "text": "なんであんたは私みたいに過去を手放せないのか、前は理解できなかった。エンドフィールドに来てようやくわかったよ。「管理人」はみんなの期待を写した、みんなが思い描く「救世主」じゃないといけない。でも、人の存在は他人の願望だけで作られるものじゃない……だから、記憶を辿って自分を取り戻すんだね。あんたの行く道なら、どこだろうと私がついていくよ。"
       },
       {
+        "voId": "chr_0016_laevat_mono_chat_line01",
         "title": "会話1",
         "text": "この欠けた「リング」は、私のペット兼アーツユニットってところだ。エンドフィールドの武庫エンジニアが構造を調べて修復しようとしたが……「リング」自身が拒んだようだな。"
       },
       {
+        "voId": "chr_0016_laevat_mono_chat_line02",
         "title": "会話2",
         "text": "ああ、ちょっと見てほしいものがある。ワルファリンが送ってきたパズルだ。テラの風景や人々、歴史が描かれているらしい……これがどうにも大きすぎて、やってもやっても終わらない。焦げたところは気にするな、届いたときからそうだった。私がやったわけじゃない。"
       },
       {
+        "voId": "chr_0016_laevat_mono_chat_line03",
         "title": "会話3",
         "text": "タロⅡで任務をする日の夜は、帝江号とエンドフィールドのことを夢に見る。ずっと待ち望んでるんだ――頭の中の「自分のじゃない記憶」を少しずつ手放して、「自分の記憶」で満たされる日を……"
       },
       {
+        "voId": "chr_0016_laevat_mono_chat_line04",
         "title": "会話4",
         "text": "剣を持つ理由？いつか山頂に立って、世界が炎に吞み込まれる光景を見届けるため……何、その顔。ただ、ずっと付きまとってきた悪夢の話をしただけだ。安心していいよ。現実になんかさせないから。"
       },
       {
+        "voId": "chr_0016_laevat_mono_chat_line05",
         "title": "会話5",
         "text": "あるときは荒野をさまよう流浪者、またあるときは街を焼き払う処刑人。庭で花の手入れをしたと思えば、薬品の匂いが漂う研究室にいる。顔の見えない相手と戦うが、なぜ剣を抜いたのかはわからない……って、寝るな！これからが本番だ。"
       },
       {
+        "voId": "chr_0016_laevat_mono_about_line01",
         "title": "セシュカについて",
         "text": "故郷の話か。「セシュカ」と呼ばれる場所に行ったことがある。建物も、言葉も、祝祭も、巫術も……確かに、懐かしさを感じた。でも、もう一度行きたい場所ではない――妙に歓迎してくるし、私を「炎魔」って呼ぶ奴もいて……少し、問題を起こしてしまった。どうしても面倒で……"
       },
       {
+        "voId": "chr_0016_laevat_mono_about_line02",
         "title": "イヴォンヌについて",
         "text": "ピンクの髪したヴイーヴルが「アイスちゃん」のテストをするって言って、よくここに来る。私の炎を消せたことは一度もないけど、彼女が作るアイスクリームはまぁまぁいい感じだ。味も悪くない。"
       },
       {
+        "voId": "chr_0016_laevat_mono_about_line03",
         "title": "衆生長地について",
         "text": "「火は風に託せば災いを招き、人に託せば仲間になる」――衆生長地の吟遊者が言ってた。彼女は火を怖がらず、「防火線」のことを教えてくれた。それで地面を焼き払って、山火事を食い止めたんだ。私たちは助けた村人に英雄扱いされたが……実はそのとき考えてたのは、火の中から助けた雲獣のことだけ。その吟遊者に預けたこと、少し後悔してる。"
       },
       {
+        "voId": "chr_0016_laevat_mono_about_line04",
         "title": "環タロ商会について",
         "text": "人事部が自分で説明しろって。ほら、これ――手配書。大した話じゃない。ロドスを離れてすぐ、アスファルトロータリーって場所に火を放っただけ。まあ、きれいな仕事じゃなかったから、火の粉が降り掛かっても仕方ない。"
       },
       {
+        "voId": "chr_0016_laevat_mono_about_line05",
         "title": "サーミについて",
         "text": "もう一度言うが、私はテラに行ったことなんてない。風景だの習わしだの、話しかけても無駄……でも、サーミは別だ。「故郷」がタロⅡまで背負って来たって聞いてる。もしそこで任務があるなら、私も一緒に行こう。"
       },
       {
+        "voId": "chr_0016_laevat_explore_point_common_01",
         "title": "発見：資源1",
         "text": "あっちに何かある。役に立たなければ、試し斬りにでも使えばいいよ。"
       },
       {
+        "voId": "chr_0016_laevat_explore_point_valub_01",
         "title": "発見：資源2",
         "text": "あっちに、忘れちゃいけないものがある。"
       },
       {
+        "voId": "chr_0016_laevat_explore_find_locked_01",
         "title": "発見：未探索エリア",
         "text": "心配いらない。見に行こう。私についてくればいい。"
       },
       {
+        "voId": "chr_0016_laevat_explore_find_danger_01",
         "title": "発見：強敵",
         "text": "奴らが見えたか？私がやってもいい。"
       },
       {
+        "voId": "chr_0016_laevat_interact_mine_valub_01",
         "title": "鉱物採集1",
         "text": "本物なら、炎にも耐えられるはずだ。"
       },
       {
+        "voId": "chr_0016_laevat_interact_mine_valub_echo2_01",
         "title": "鉱物採集2",
         "text": "遅い。私は待つのが嫌いなんだ。"
       },
       {
+        "voId": "chr_0016_laevat_interact_treasure_valub_01",
         "title": "資源箱開封",
         "text": "あんたの好きなものだって、覚えてる。"
       },
       {
+        "voId": "chr_0016_laevat_interact_etherium_01",
         "title": "オーリレン入手",
         "text": "オーリレン……記憶と同じだ。掴みどころがない。"
       },
       {
+        "voId": "chr_0016_laevat_interact_blight_break_01",
         "title": "侵蝕排除",
         "text": "気をつけろ。炎より危険な存在だ。"
       },
       {
+        "voId": "chr_0016_laevat_interact_rest_01",
         "title": "回復",
         "text": "まだ寒いなら、こっちに来るといい。"
       },
       {
+        "voId": "chr_0016_laevat_combat_suppuse_using_01",
         "title": "戦闘補助アイテム使用1",
         "text": "強がりなんて見たくない。"
       },
       {
+        "voId": "chr_0016_laevat_combat_suppuse_getheal_01",
         "title": "戦闘補助アイテム使用2",
         "text": "ふんっ、もう大丈夫だ。"
       },
       {
+        "voId": "chr_0016_laevat_combat_remind_danger_01",
         "title": "警告",
         "text": "いつまで突っ立ってるつもり？"
       },
       {
+        "voId": "chr_0016_laevat_combat_hurt_lowhp_01",
         "title": "負傷",
         "text": "チッ……死にはしない。"
       },
       {
+        "voId": "chr_0016_laevat_combat_dead_01",
         "title": "戦闘不能",
         "text": "くっ……敗北の記憶が……"
       },
       {
+        "voId": "chr_0016_laevat_combat_remind_praise_01",
         "title": "激励1",
         "text": "ふーん、覚えておくよ。"
       },
       {
+        "voId": "chr_0016_laevat_combat_remind_praise_02",
         "title": "激励2",
         "text": "まぁ、いいんじゃない。次は私がやる。"
       },
       {
+        "voId": "chr_0016_laevat_combat_remind_praise_echo2_01",
         "title": "激励応答1",
         "text": "わかってる。"
       },
       {
+        "voId": "chr_0016_laevat_combat_remind_praise_echo2_02",
         "title": "激励応答2",
         "text": "やるべきことをやっただけ。"
       },
       {
+        "voId": "chr_0016_laevat_combat_intobattle_01",
         "title": "作戦開始1",
         "text": "ずいぶん待たされたよ。"
       },
       {
+        "voId": "chr_0016_laevat_combat_intobattle_echo2_01",
         "title": "作戦開始2",
         "text": "時間の無駄。すぐに片付ける。"
       },
       {
+        "voId": "chr_0016_laevat_combat_outbattle_nor_01",
         "title": "作戦終了1",
         "text": "肩慣らしにもならない。"
       },
       {
+        "voId": "chr_0016_laevat_combat_outbattle_nor_02",
         "title": "作戦終了2",
         "text": "勝利なんて、あったりまえだ。"
       },
       {
+        "voId": "chr_0016_laevat_combat_outbattle_nor_echo2_01",
         "title": "作戦終了3",
         "text": "それなら、みんなで喜んでやってもいい。"
       },
       {
+        "voId": "chr_0016_laevat_combat_outbattle_hard_01",
         "title": "作戦終了4",
         "text": "十分だ。次は、面倒な敵は私がやる。"
       },
       {
+        "voId": "chr_0016_laevat_combat_battle_defeat_01",
         "title": "作戦失敗",
         "text": "こんなこと、二度と繰り返さない。"
       },
       {
+        "voId": "chr_0016_laevat_mono_attack_last_01",
         "title": "重攻撃1",
         "text": "切り尽くせ！"
       },
       {
+        "voId": "chr_0016_laevat_mono_attack_last_02",
         "title": "重攻撃2",
         "text": "滅びろ！"
       },
       {
+        "voId": "chr_0016_laevat_mono_skill_nor_01",
         "title": "戦技1",
         "text": "燃え上がれ！"
       },
       {
+        "voId": "chr_0016_laevat_mono_skill_nor_02",
         "title": "戦技2",
         "text": "焼き尽くせ！"
       },
       {
+        "voId": "chr_0016_laevat_mono_skill_nor_03",
         "title": "戦技3",
         "text": "呑まれろ！"
       },
       {
+        "voId": "chr_0016_laevat_combat_skill_comb_ready_01",
         "title": "連携技準備完了1",
         "text": "私がやる！"
       },
       {
+        "voId": "chr_0016_laevat_combat_skill_comb_ready_02",
         "title": "連携技準備完了2",
         "text": "灼熱の炎！"
       },
       {
+        "voId": "chr_0016_laevat_mono_skill_comb_release_01",
         "title": "連携技1",
         "text": "燃え尽きろ！"
       },
       {
+        "voId": "chr_0016_laevat_mono_skill_comb_release_02",
         "title": "連携技2",
         "text": "灰燼に帰せ！"
       },
       {
+        "voId": "chr_0016_laevat_mono_attack_extra_01",
         "title": "終撃1",
         "text": "逃げるか！"
       },
       {
+        "voId": "chr_0016_laevat_mono_attack_extra_02",
         "title": "終撃2",
         "text": "死ね！"
       },
       {
+        "voId": "chr_0016_laevat_mono_skill_ultimate_01",
         "title": "必殺技1",
         "text": "炎よ、黄昏を照らせ！"
       },
       {
+        "voId": "chr_0016_laevat_mono_skill_ultimate_02",
         "title": "必殺技2",
         "text": "闇ごと、焚き尽くせ！"
       },
       {
+        "voId": "chr_0016_laevat_mono_skill_ultimate_03",
         "title": "必殺技3",
         "text": "今日がお前の終末だ！"
       }

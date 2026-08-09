@@ -123,326 +123,407 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0013_aglina_chrbark_squad_01",
         "title": "Persiapan Operasi 1",
         "text": "Hai, Endmin. Oh, hari ini cuacanya bagus, ya."
       },
       {
+        "voId": "chr_0013_aglina_chrbark_squad_02",
         "title": "Persiapan Operasi 2",
         "text": "Siap menempuh perjalanan yang sangat panjang?"
       },
       {
+        "voId": "chr_0013_aglina_chrbark_join_01",
         "title": "Menambahkan ke Tim 1",
         "text": "Hmm. Hari ini Talos akan berkilau dengan warna apa, ya?"
       },
       {
+        "voId": "chr_0013_aglina_chrbark_join_02",
         "title": "Menambahkan ke Tim 2",
         "text": "Menuju tujuan kita selanjutnya?"
       },
       {
+        "voId": "chr_0013_aglina_chrbark_weap_01",
         "title": "Berganti Senjata",
         "text": "Tak peduli senjata baru apa yang kudapatkan, akan kutambahkan sedikit Arts .... Lihat! Melayang di udara!"
       },
       {
+        "voId": "chr_0013_aglina_chrbark_gear_01",
         "title": "Berganti Gear",
         "text": "Mmm. Gear ini cocok denganku! Akan kupakai untuk perjalanan berikutnya. Hei, Endmin, kau punya ide untuk padu padan gayanya?"
       },
       {
+        "voId": "chr_0013_aglina_chrup_skill_01",
         "title": "Aktivasi Matriks Kemampuan",
         "text": "Ada beberapa tip untuk mendapatkan pemandangan jalan yang lebih baik. Buka wawasanmu, belajarlah dari pengalaman ... dan tambahkan sedikit imajinasi!"
       },
       {
+        "voId": "chr_0013_aglina_chrup_level_01",
         "title": "Menonton Rekaman Pertarungan",
         "text": "Ingat rasanya .... Temukan intensitas yang tepat .... Naik!"
       },
       {
+        "voId": "chr_0013_aglina_chrup_promt01_01",
         "title": "Promosi Operator 1",
         "text": "Kalau dapat promosi, berarti ... aku boleh pergi ke tempat-tempat yang lebih jauh? Heheh. Aku sudah berkemas dan bersiap. Kapan kita berangkat?"
       },
       {
+        "voId": "chr_0013_aglina_chrup_promt02_01",
         "title": "Promosi Operator 2",
         "text": "Aku ingin jadi pendukung Endmin .... Maksudku, aku ingin menjadi pendukung yang paling bisa diandalkan semua orang. Tapi, ada kalanya aku agak khawatir apa aku sudah ... memenuhi syarat."
       },
       {
+        "voId": "chr_0013_aglina_chrup_promt03_01",
         "title": "Promosi Operator 3",
         "text": "Apa aku bakal dapat sesuatu yang lebih istimewa dalam promosi berikutnya ...? Apa yang kuharapkan? Hmm ... bagaimana kalau hari ini kita bersenang-senang, Endmin?"
       },
       {
+        "voId": "chr_0013_aglina_chrup_promt04_01",
         "title": "Promosi Operator 4",
         "text": "Setiap kali kuingat semua perjalanan panjang yang sudah kulalui, semua emosi kecil itu akan muncul dalam diriku. Saat itulah aku tahu ... aku benar-benar jatuh cinta dengan pekerjaanku."
       },
       {
+        "voId": "chr_0013_aglina_introduce_01",
         "title": "Operator Siap Bertugas",
         "text": "Hai! Oh, kau punya aroma kenangan yang indah ... seperti sepucuk surat yang belum tuntas untuk tempat yang istimewa. Aku ingin tahu di mana tempat itu."
       },
       {
+        "voId": "chr_0013_aglina_mono_switch_01",
         "title": "Siaga 1",
         "text": "Lihat ini! Nona Kurir Terbang punya surat khusus untukmu!"
       },
       {
+        "voId": "chr_0013_aglina_mono_switch_02",
         "title": "Siaga 2",
         "text": "Ciao! Jalan-jalan keluar, yuk? Warna-warni langit tampak sangat menakjubkan hari ini!"
       },
       {
+        "voId": "chr_0013_aglina_sim_assign_work_01",
         "title": "Menugaskan ke Fasilitas",
         "text": "Tenang saja. Biar kuurus!"
       },
       {
+        "voId": "chr_0013_aglina_sim_hello_lower_01",
         "title": "Menyapa 1",
         "text": "Endmin! Kebetulan sekali! Bagaimana kalau kita jalan-jalan di sepanjang Anjungan Komando?"
       },
       {
+        "voId": "chr_0013_aglina_sim_hello_max_01",
         "title": "Menyapa 2",
         "text": "Sibuk, Endmin? Jangan lupa istirahat, ya?"
       },
       {
+        "voId": "chr_0013_aglina_sim_talk_lv01_01",
         "title": "Obrolan Santai di Dijiang 1",
         "text": "Aku suka mengoleksi berbagai macam warna dan rasa lipstik. Aku jadi penasaran ... apa lipstik ini bisa menambahkan warna dan rona berkilau pada kata-kata kita, ya?"
       },
       {
+        "voId": "chr_0013_aglina_sim_talk_lv02_01",
         "title": "Obrolan Santai di Dijiang 2",
         "text": "Talos menorehkan beragam warna yang cemerlang ke langit Talos-II. Pemandangan menakjubkan dengan kilatan cahaya .... Sangat romantis, ‘kan, Endmin?"
       },
       {
+        "voId": "chr_0013_aglina_sim_talk_lv02_02",
         "title": "Obrolan Santai di Dijiang 3",
         "text": "Lihat apa yang kubawa, Endmin! Lampu mini warna-warni PLUS pembakar dupa kecil dari Witching Hour. Apa kita bisa ... menggunakannya untuk mendekorasi kabinmu bersama-sama, Endmin? Saat lampu dimatikan, kabinmu akan sama cemerlangnya dengan malam berbintang, lho! Ayo, bagaimana menurutmu?"
       },
       {
+        "voId": "chr_0013_aglina_sim_talk_max_01",
         "title": "Obrolan Santai di Dijiang 4",
         "text": "Hmm .... Karakter dalam novel selalu menyembunyikan perasaan mereka. Kenapa, ya? Ada banyak undangan yang gagal mereka sampaikan, banyak surat yang gagal mereka kirimkan, dan banyak hal yang gagal mereka katakan .... Padahal ini kan sederhana, tapi mereka tak berani menyampaikan perasaan .... Nah, sekarang aku bisa dengan mudah mengajakmu bertualang atau memberimu hadiah seru .... Di mana perbedaannya, ya?"
       },
       {
+        "voId": "chr_0013_aglina_sim_talk_max_02",
         "title": "Obrolan Santai di Dijiang 5",
         "text": "Nona Akekuri memberiku sebuah azimat khusus. Dia bilang, keinginanku akan terkabul kalau aku selalu membawanya. Sekarang, aku berharap agar ... semua orang yang mempekerjakanku untuk mengantarkan surat akan terpenuhi keinginannya! Heheh! Kuharap keinginan ini tak terdengar terlalu serakah!"
       },
       {
+        "voId": "chr_0013_aglina_sim_talk_max_03",
         "title": "Obrolan Santai di Dijiang 6",
         "text": "Aku selalu bermimpi tentang tempat yang pernah kukunjungi. Dan dalam mimpiku yang buram, selalu ada sosok yang berdiri diam, seakan-akan sedang menunggu seseorang ... atau sepucuk surat. Belum lama ini, kulihat sosok itu dengan lebih jelas—dan rupanya sosok itu adalah seseorang yang ... cukup kukenal."
       },
       {
+        "voId": "chr_0013_aglina_sim_gift_give_01",
         "title": "Menawarkan Hadiah",
         "text": "Kejutan, Endmin! Aku bawa sesuatu yang sangat istimewa untukmu. Coba tebak!"
       },
       {
+        "voId": "chr_0013_aglina_sim_gift_recv_01",
         "title": "Menerima Hadiah",
         "text": "Ini untukku? Oh, terima kasih banyak! Akan kutaruh di titik yang paling mudah terlihat di kabinku!"
       },
       {
+        "voId": "chr_0013_aglina_mono_self_line01",
         "title": "Dialog Kepercayaan 1",
         "text": "Surat pertama yang kukirimkan adalah rekomendasi yang ditulis oleh Ahli Bedah Warfarin untukku. Aku agak gugup saat pertama kali menginjakkan kaki di Dijiang. Warfarin bilang: “Tunggu Endministrator dulu.” Dan aku terus berpikir, “Si Endmin ini orangnya seperti apa, ya?” Tapi, bertemu denganmu secara langsung setelah kebangkitanmu yang tak disengaja—semua kekhawatiranku langsung sirna. Harus kuakui, aku masih agak gugup ...."
       },
       {
+        "voId": "chr_0013_aglina_mono_self_line02",
         "title": "Dialog Kepercayaan 2",
         "text": "Aku suka terbang sendirian setelah matahari terbenam. Langit malam membuatku bisa memandang bintang-bintang yang berkelip. Mungkin mereka punya banyak cerita sendiri. Mungkin pada saat itu, ada orang lain yang juga memikirkan hal yang sama ... dan menatap langit malam yang sama denganku ...."
       },
       {
+        "voId": "chr_0013_aglina_mono_self_line03",
         "title": "Dialog Kepercayaan 3",
         "text": "Kurir memang selalu merasa kesepian, tapi aku tak pernah terbiasa dengan itu. Setiap kali tiba di tempat yang jauh, aku akan ambil kompas untuk mencari arah ke Rhodes Island. Ada Ahli Bedah Warfarin di sana, begitu pula kenangan yang tak akan pernah pudar. Sekarang, aku sedang menyusuri jalan menuju teman dan pertemuan baru yang menungguku. Memikirkannya saja sudah membuatku merasa hangat dan nyaman, sekaligus penuh harap untuk perjalanan ke depan. Benar. Aku memang ingin jadi kurir yang tak pernah kesepian."
       },
       {
+        "voId": "chr_0013_aglina_mono_self_line04",
         "title": "Dialog Kepercayaan 4",
         "text": "Entah kenapa .... Menatap bintang yang bersinar sendiri menimbulkan rasa kehilangan dan penyesalan yang tak terlukiskan .... Oh, bintang-bintang kecil di langit, dari jauh tanyaku terungkit .... Mungkinkah kau, di langit luas, menunggu kelipmu bersinar bebas?"
       },
       {
+        "voId": "chr_0013_aglina_mono_self_line05",
         "title": "Dialog Kepercayaan 5",
         "text": "Saat baru meninggalkan Hutan, kulihat sepucuk surat kosong di sampingku. Rasanya seperti simbol kebingunganku .... Aku juga selalu ingin tahu kenapa hanya aku yang dapat. Apa harus kutulis sesuatu di surat itu? Dan harus kukirimkan kepada siapa? Aku sudah menempuh perjalanan jauh, tapi tak bisa menemukan jawabannya. Tapi, sekarang .... Aku yakin aku harus menuliskan semua yang kurasakan dan kubayangkan ... lalu mengirimkannya kepada seseorang yang paling penting dan istimewa."
       },
       {
+        "voId": "chr_0013_aglina_mono_chat_line01",
         "title": "Obrolan 1",
         "text": "Perjalanan yang paling kuingat? Hmm ... Endmin, kau pernah dengar soal Alloycarrot? Cautus yang tinggal di tempat itu makan wortel. Setiap. Saat! Dan mereka punya berbagai macam resep wortel! Aku mengunjungi kota itu dua kali untuk mengantarkan obat ke TGCC yang mengelola ladang wortel. Kalau bisa mengunjungi tempat itu lagi, kuharap aku bisa melihat Lubang Bor Besar bawah tanah .... Ah! Dan aku pasti akan pesan tempat di Penginapan Kubis .... Bukannya aku benci wortel, tapi aku butuh sedikit variasi ...."
       },
       {
+        "voId": "chr_0013_aglina_mono_chat_line02",
         "title": "Obrolan 2",
         "text": "Aku selalu merasa seperti tanpa bobot. Aku selalu merasa seperti balon yang meluncur lembut melintasi tanah yang berat. Tapi, kulakukan apa pun yang aku bisa agar bisa membuatnya melayang bersamaku. Aku seperti sedang berkhayal, ya? Tapi, bahkan saat terbang, bayangan panjangku tetap ada di darat—seakan-akan ada sesuatu yang mengikatku ke tanah. Sama seperti bagaimana surat-surat ini menghubungkanku ... denganmu."
       },
       {
+        "voId": "chr_0013_aglina_mono_chat_line03",
         "title": "Obrolan 3",
         "text": "Bagaimana dengan buku ini? Yah, ini antologi cerita pendek tentang para kurir. Salah satu dari mereka melewati Petaka untuk menyelamatkan semua orang ... tapi justru disebut sebagai pertanda bencana yang terkutuk. Yang lain hanya ingin bekerja dengan aman, tapi malah meruntuhkan seluruh negeri lewat serangkaian peristiwa tak terduga. Ada juga seorang kurir muda yang kikuk dan kehilangan kiriman pada hari pertamanya bekerja .... Heheheh. Aku suka semua kisah dalam buku ini."
       },
       {
+        "voId": "chr_0013_aglina_mono_chat_line04",
         "title": "Obrolan 4",
         "text": "Aku pernah dengar banyak orang bicara tentang Terra di Wrankwood Baru. Beberapa orang memuji kehangatannya. Yang lain mengutuk betapa tanpa ampunnya tempat itu. Sebagian membenci kehancurannya, dan ada juga yang merindukan keindahannya .... Sementara para seniman dan penulis mencurahkan seluruh hidup mereka pada bagian sejarah kita itu, para filsuf percaya bahwa kita harus bergerak maju dan menerapkan pola pikir baru .... Aku sendiri menganggap Terra sebagai nama yang familier, tapi terasa asing .... Sebuah dunia dengan pemandangan indah dan wajah-wajah yang tak asing .... Bagaimana denganmu, Endmin?"
       },
       {
+        "voId": "chr_0013_aglina_mono_chat_line05",
         "title": "Obrolan 5",
         "text": "Tak ada kurir yang bisa menebak isi surat. Tapi, saat melihat stiker dan dekorasi mewah pada amplopnya .... kubayangkan kisah-kisah hangat dan seru yang menunggu untuk terjadi. Sebaliknya, amplop yang lecek karena hujan memberiku kesan perjalanan yang sulit atau perpisahan yang memilukan .... Para penulis surat jarang menceritakan perasaan mereka kepada kurir. Mereka tak pernah tahu bagaimana seseorang yang belum pernah mereka temui ... ternyata merasakan kebahagiaan ... dan kesedihan yang sama dengan mereka."
       },
       {
+        "voId": "chr_0013_aglina_mono_about_line01",
         "title": "Topik: Warfarin",
         "text": "Ahli Bedah Warfarin? Dia tampak sehat dan masih seperti dulu. Tapi, Warfarin pernah salah ingat hari ulang tahunku ... dan dia kelihatan sangat bersalah saat minta maaf kepadaku .... Itu bukan masalah besar. Lalu, dia salah menyebut namaku karena panik .... Aku belum pernah lihat dia seperti itu. Bagaimana aku harus menggambarkannya, ya ...? Hmm. Dia tampak sangat bingung .... dan linglung. Bahkan setelah aku pergi, dia merenung di meja makan sendirian lama sekali ...."
       },
       {
+        "voId": "chr_0013_aglina_mono_about_line02",
         "title": "Topik: Swordmancer Misterius",
         "text": "Beberapa waktu lalu, aku bertemu seorang wanita misterius di Rhodes Island. Dia bawa pedang yang tampak unik dan berdiri di tepi danau yang tenang. Tiba-tiba, pedangnya berkelebat. Pedang itu hanya meninggalkan riak lembut di air danau, tapi membelah segumpal utuh awan menjadi dua .... Dia memberiku surat ini dan berharap aku bisa menyampaikannya kepada Endministrator. Lalu, setelah akhirnya Operator Chen Qianyu jadi ahli pedang hebat, kau bisa memberikannya kepadanya ...."
       },
       {
+        "voId": "chr_0013_aglina_mono_about_line03",
         "title": "Topik: Avywenna",
         "text": "Avywenna selalu melakukan pengiriman ke tempat-tempat berbahaya .... Mungkin dia selalu tersenyum, tapi matanya menyembunyikan beberapa rahasia yang berat .... Rahasia yang tak bisa diceritakannya kepada siapa pun .... Aku pernah lihat banyak kurir lain yang tatapannya sama .... Dan aku tahu apa artinya ...."
       },
       {
+        "voId": "chr_0013_aglina_mono_about_line04",
         "title": "Topik: Alam Liar yang Berbahaya",
         "text": "Talos-II dipenuhi berbagai macam bahaya yang tak diketahui .... Aku sudah baca laporan Ardelia. Bahaya di Talos-II jauh lebih tak terduga daripada di Terra yang jauh. Karena para kurir harus melewati area yang sering dilanda insiden Hawar, kami sering bawa perlengkapan untuk pertolongan pertama atau evakuasi. Karena bisa terbang, aku sering bawa perlengkapan darurat tambahan dan menurunkannya di tempat peristirahatan di alam liar. Kuharap ini bisa membantu orang-orang yang mengalami masalah."
       },
       {
+        "voId": "chr_0013_aglina_mono_about_line05",
         "title": "Topik: Diri sendiri",
         "text": "Saat aku berada di Rhodes Island, kukira Ahli Bedah Warfarin akan memberiku misi. Tapi, dia malah bilang bahwa Rhodes Island belum bisa memperlihatkan diri kepada publik. Tapi, karena aku seorang kurir, dia bilang akan lebih baik bagiku kalau bepergian di bawah langit terbuka. Dan itulah yang kulakukan—menghabiskan dua tahun mengembara di Talos-II, mengenal dunia ini sebelum akhirnya tiba di sini."
       },
       {
+        "voId": "chr_0013_aglina_explore_point_common_01",
         "title": "Sumber Daya/Barang Koleksi Terdeteksi 1",
         "text": "Ada sesuatu yang menarik perhatian di sana."
       },
       {
+        "voId": "chr_0013_aglina_explore_point_valub_01",
         "title": "Sumber Daya/Barang Koleksi Terdeteksi 2",
         "text": "Lihat di sebelah sana! Mungkin ada kejutan yang menunggu kita!"
       },
       {
+        "voId": "chr_0013_aglina_explore_find_locked_01",
         "title": "Area yang Belum Dijelajahi Terdeteksi",
         "text": "Menurut standar kurir: Berhati-hatilah saat memasuki wilayah yang belum dipetakan!"
       },
       {
+        "voId": "chr_0013_aglina_explore_find_danger_01",
         "title": "Musuh Kuat Ditemukan",
         "text": "Lebih berhati-hati, ya! Musuh itu kelihatan sangat berbahaya."
       },
       {
+        "voId": "chr_0013_aglina_interact_mine_valub_01",
         "title": "Penambangan 1",
         "text": "Ayo kemasi mineral ini!"
       },
       {
+        "voId": "chr_0013_aglina_interact_mine_valub_echo2_01",
         "title": "Penambangan 2",
         "text": "Aku siap bantu. Hihi."
       },
       {
+        "voId": "chr_0013_aglina_interact_treasure_valub_01",
         "title": "Membuka Kerat",
         "text": "Wow! Memang inilah yang kita butuhkan!"
       },
       {
+        "voId": "chr_0013_aglina_interact_etherium_01",
         "title": "Mendapatkan Aurylene",
         "text": "Heheh, berhasil kutangkap sebelum terbang."
       },
       {
+        "voId": "chr_0013_aglina_interact_blight_break_01",
         "title": "Menyingkirkan Hawar",
         "text": "Kita baru saja membuka jalan untuk pengiriman pada masa mendatang!"
       },
       {
+        "voId": "chr_0013_aglina_interact_rest_01",
         "title": "Istirahat",
         "text": "Istirahatlah yang cukup agar kita siap menempuh perjalanan lebih panjang."
       },
       {
+        "voId": "chr_0013_aglina_combat_suppuse_using_01",
         "title": "Penggunaan Taktis 1",
         "text": "Coba ini. Mestinya manjur!"
       },
       {
+        "voId": "chr_0013_aglina_combat_suppuse_getheal_01",
         "title": "Penggunaan Taktis 2",
         "text": "Fiuh .... Langsung merasa baikan."
       },
       {
+        "voId": "chr_0013_aglina_combat_remind_danger_01",
         "title": "Peringatan Bahaya",
         "text": "Hati-hati! Jangan sampai terluka!"
       },
       {
+        "voId": "chr_0013_aglina_combat_hurt_lowhp_01",
         "title": "Cedera",
         "text": "Badanku ... terasa berat sekali ...."
       },
       {
+        "voId": "chr_0013_aglina_combat_dead_01",
         "title": "0 HP",
         "text": "Aku ingin terbang ... untuk terakhir kalinya ...."
       },
       {
+        "voId": "chr_0013_aglina_combat_remind_praise_01",
         "title": "Penyemangat Tim 1",
         "text": "Wow! Kau benar-benar bisa melakukannya?!"
       },
       {
+        "voId": "chr_0013_aglina_combat_remind_praise_02",
         "title": "Penyemangat Tim 2",
         "text": "Hebat! Bisa kita lakukan lagi?"
       },
       {
+        "voId": "chr_0013_aglina_combat_remind_praise_echo2_01",
         "title": "Respons Penyemangat 1",
         "text": "Heheh. Kau sangat baik."
       },
       {
+        "voId": "chr_0013_aglina_combat_remind_praise_echo2_02",
         "title": "Respons Penyemangat 2",
         "text": "Ayo teruskan dan selesaikan ini!"
       },
       {
+        "voId": "chr_0013_aglina_combat_intobattle_01",
         "title": "Mulai Pertarungan 1",
         "text": "Kita akan akhiri pertarungan ini dengan mudah!"
       },
       {
+        "voId": "chr_0013_aglina_combat_intobattle_echo2_01",
         "title": "Mulai Pertarungan 2",
         "text": "Aku memang berharap kau bakal bilang begitu."
       },
       {
+        "voId": "chr_0013_aglina_combat_outbattle_nor_01",
         "title": "Menang Pertarungan 1",
         "text": "Heheh. Aku berhasil, ‘kan?"
       },
       {
+        "voId": "chr_0013_aglina_combat_outbattle_nor_02",
         "title": "Menang Pertarungan 2",
         "text": "Hal terbaik yang kulakukan hari ini!"
       },
       {
+        "voId": "chr_0013_aglina_combat_outbattle_nor_echo2_01",
         "title": "Menang Pertarungan 3",
         "text": "Ya! Kita bisa lanjutkan perjalanan."
       },
       {
+        "voId": "chr_0013_aglina_combat_outbattle_hard_01",
         "title": "Menang Pertarungan 4",
         "text": "Kita berhasil sampai akhir .... Dan kesulitan yang kita hadapi tak sia-sia."
       },
       {
+        "voId": "chr_0013_aglina_combat_battle_defeat_01",
         "title": "Kalah Bertarung",
         "text": "Jalannya mungkin penuh rintangan, tapi kita akan memulai perjalanan lagi dan memastikan pengirimannya berhasil."
       },
       {
+        "voId": "chr_0013_aglina_mono_attack_last_01",
         "title": "Final Strike 1",
         "text": "Minggir!"
       },
       {
+        "voId": "chr_0013_aglina_mono_attack_last_02",
         "title": "Final Strike 2",
         "text": "Maju!"
       },
       {
+        "voId": "chr_0013_aglina_mono_skill_nor_01",
         "title": "Skill Tarung 1",
         "text": "Tetap kompak, Teman-teman!"
       },
       {
+        "voId": "chr_0013_aglina_mono_skill_nor_02",
         "title": "Skill Tarung 2",
         "text": "Kau tak bisa lari dari gravitasi!"
       },
       {
+        "voId": "chr_0013_aglina_mono_skill_nor_03",
         "title": "Skill Tarung 3",
         "text": "Perhatikan langkahmu!"
       },
       {
+        "voId": "chr_0013_aglina_combat_skill_comb_ready_01",
         "title": "Skill Kombo Siap 1",
         "text": "Medan gravitasi siap!"
       },
       {
+        "voId": "chr_0013_aglina_combat_skill_comb_ready_02",
         "title": "Skill Kombo Siap 2",
         "text": "Siapa ingin melayang?"
       },
       {
+        "voId": "chr_0013_aglina_mono_skill_comb_release_01",
         "title": "Penggunaan Kombo 1",
         "text": "Sekarang, terbanglah!"
       },
       {
+        "voId": "chr_0013_aglina_mono_skill_comb_release_02",
         "title": "Penggunaan Kombo 2",
         "text": "Selamat melayang!"
       },
       {
+        "voId": "chr_0013_aglina_mono_attack_extra_01",
         "title": "Penuntas 1",
         "text": "Kejutan!"
       },
       {
+        "voId": "chr_0013_aglina_mono_attack_extra_02",
         "title": "Penuntas 2",
         "text": "Bagaimana dengan ini?"
       },
       {
+        "voId": "chr_0013_aglina_mono_skill_ultimate_01",
         "title": "Ultimate 1",
         "text": "Ayo balikkan dunia!"
       },
       {
+        "voId": "chr_0013_aglina_mono_skill_ultimate_02",
         "title": "Ultimate 2",
         "text": "Kekuatan negeri ini!"
       },
       {
+        "voId": "chr_0013_aglina_mono_skill_ultimate_03",
         "title": "Ultimate 3",
         "text": "Bersantai dengan gravitasi!"
       }

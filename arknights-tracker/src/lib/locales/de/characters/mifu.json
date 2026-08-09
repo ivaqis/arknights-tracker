@@ -122,326 +122,407 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0031_mifu_chrbark_squad_01",
         "title": "Einsatzvorbereitung 1",
         "text": "Du führst diesen Einsatz selbst an? Nicht übel."
       },
       {
+        "voId": "chr_0031_mifu_chrbark_squad_02",
         "title": "Einsatzvorbereitung 2",
         "text": "Bin für jeden Kampf zu haben."
       },
       {
+        "voId": "chr_0031_mifu_chrbark_join_01",
         "title": "Wird zum Team hinzugefügt 1",
         "text": "Ich bin bereit."
       },
       {
+        "voId": "chr_0031_mifu_chrbark_join_02",
         "title": "Wird zum Team hinzugefügt 2",
         "text": "Zeig mir, wie du die Dinge angehst."
       },
       {
+        "voId": "chr_0031_mifu_chrbark_weap_01",
         "title": "Waffe wird gewechselt",
         "text": "Ich bin eine Waffe. Ich hinterlasse „Souvenirs“ an meinen Gegnern – Prellungen, die sie nicht mehr vergessen."
       },
       {
+        "voId": "chr_0031_mifu_chrbark_gear_01",
         "title": "Ausrüstung wird gewechselt",
         "text": "Sind die zu meiner Sicherheit oder für meine Gegner?"
       },
       {
+        "voId": "chr_0031_mifu_chrup_skill_01",
         "title": "Fähigkeitsmatrix-Aktivierung",
         "text": "Hab ein paar neue Tricks gelernt. Wann darf ich sie einsetzen?"
       },
       {
+        "voId": "chr_0031_mifu_chrup_level_01",
         "title": "Kampfaufzeichnungen ansehen",
         "text": "HA! Das nenne ich einen Kampf! Gehören die zu unserer Crew? Lust auf ein bisschen Training?"
       },
       {
+        "voId": "chr_0031_mifu_chrup_promt01_01",
         "title": "Operator-Beförderung 1",
         "text": "Um ehrlich zu sein, schlägst du dich genauso gut. Anerkennung beruht auf Gegenseitigkeit. Also gut, ich folge dir."
       },
       {
+        "voId": "chr_0031_mifu_chrup_promt02_01",
         "title": "Operator-Beförderung 2",
         "text": "Ha, das ist neu. In Wuling befördere ich für gewöhnlich das Wachpersonal. Ist lange her, dass ich mal einstecken musste."
       },
       {
+        "voId": "chr_0031_mifu_chrup_promt03_01",
         "title": "Operator-Beförderung 3",
         "text": "Eine Crew anzuführen, ist was ganz anderes, als allein loszuziehen. Du weißt doch, was ich meine, oder? Man muss Leute verwalten und Missionen planen. Ist einfach nicht so sauber und glatt, wie selbst jemandem den Hintern zu versohlen."
       },
       {
+        "voId": "chr_0031_mifu_chrup_promt04_01",
         "title": "Operator-Beförderung 4",
         "text": "Ich frage mich ständig, wie du und der Boss auf diese ausgefallenen Worte kommt. Der einzige Trick, den ich kenne, ist, anderen auf die Schulter zu klopfen. Was? Kannst du mir auch auf die Schulter klopfen? Tsk, oh Mann, es laut auszusprechen, nimmt dem Ganzen doch den Sinn!"
       },
       {
+        "voId": "chr_0031_mifu_introduce_01",
         "title": "Operatorin meldet sich zum Dienst",
         "text": "Genug geredet. Diesmal bringe ich den Schlamassel für dich in Ordnung. Aber ich gehe die Dinge direkt an. Wenn was kaputtgeht, übernimmt Endfield die Rechnung."
       },
       {
+        "voId": "chr_0031_mifu_mono_switch_01",
         "title": "Warten 1",
         "text": "Zeit für ’ne ordentliche Schlägerei!"
       },
       {
+        "voId": "chr_0031_mifu_mono_switch_02",
         "title": "Warten 2",
         "text": "Wir sind ein kampferprobtes Team, richtig?"
       },
       {
+        "voId": "chr_0031_mifu_sim_assign_work_01",
         "title": "Zuweisung zur Anlage",
         "text": "Na schön. Aber wenn was Zerbrechliches kaputtgeht, gib nicht mir die Schuld."
       },
       {
+        "voId": "chr_0031_mifu_sim_hello_lower_01",
         "title": "Gruß 1",
         "text": "Hey, du bist hier!"
       },
       {
+        "voId": "chr_0031_mifu_sim_hello_max_01",
         "title": "Gruß 2",
         "text": "Hast du Zeit? Haben lange nicht mehr zusammen trainiert."
       },
       {
+        "voId": "chr_0031_mifu_sim_talk_lv01_01",
         "title": "Dijiang-Geplauder 1",
         "text": "Ich bin gerade erst hier angekommen und habe schon drei verdächtige Individuen gesehen. Ach? Deine Freunde? Dein Bekanntenkreis ist ziemlich speziell."
       },
       {
+        "voId": "chr_0031_mifu_sim_talk_lv02_01",
         "title": "Dijiang-Geplauder 2",
         "text": "Warum bin ich hier? Jetzt, da in Wuling Ruhe eingekehrt ist, will ich ein paar Freunde besuchen – Lifeng, Chen, Meister Pan und das kleine Samtpfötchen … Aber allein dich zu sehen, macht die Reise schon lohnenswert."
       },
       {
+        "voId": "chr_0031_mifu_sim_talk_lv02_02",
         "title": "Dijiang-Geplauder 3",
         "text": "Du bist zu spät. Die Souvenirs sind weg. Ach komm, was sollen sie sonst sein? Frisch frittierte süße Reiskuchen, natürlich."
       },
       {
+        "voId": "chr_0031_mifu_sim_talk_max_01",
         "title": "Dijiang-Geplauder 4",
         "text": "Verglichen mit den Straßen und Hainen Wulings ist die Dijiang viel zu ruhig. Das fühlt sich unnatürlich an. Ach? Hab ich dir nie gesagt, wie sehr ich ruhige Orte hasse? Nun, ich finde die ruhigsten Orte am lautesten. Denn, wenn alles still ist, fängt die Stimme in deinem Kopf an zu reden und hört nicht mehr auf."
       },
       {
+        "voId": "chr_0031_mifu_sim_talk_max_02",
         "title": "Dijiang-Geplauder 5",
         "text": "Nichts für ungut, aber ich fühle mich hier nicht wohl. Ich will einen Himmel und echtes Wasser – nicht diese kalten Wände, die einen einengen. Was? Der Trainingsraum ist gratis? Warum hast du das nicht früher gesagt?! Den muss ich sofort buchen!"
       },
       {
+        "voId": "chr_0031_mifu_sim_talk_max_03",
         "title": "Dijiang-Geplauder 6",
         "text": "Als ich mit dem Training begann, starrte ich in die Nacht und schwor mir selbst, dass ich so viele Gegner besiegen würde wie Sterne am Himmel stehen. Vielleicht war die Dijiang einer dieser Sterne. Und wenn ich daran denke, dass ich mir tatsächlich den Weg hierher „erkämpft“ habe. Schon irgendwie überraschend."
       },
       {
+        "voId": "chr_0031_mifu_sim_gift_give_01",
         "title": "Geschenke anbieten",
         "text": "Hier, für dich. Hab ich selbst gemacht … Lach nicht. Wenn sonst jemand davon erfährt, bist du erledigt."
       },
       {
+        "voId": "chr_0031_mifu_sim_gift_recv_01",
         "title": "Geschenke annehmen",
         "text": "Ach komm, die Phase des Schenkens ist doch längst vorbei … Moment mal. In welcher Phase unserer Freundschaft befinden wir uns eigentlich?"
       },
       {
+        "voId": "chr_0031_mifu_mono_self_line01",
         "title": "Vertrauensgespräch 1",
         "text": "Nichts bindet mich stärker an jemanden als ein Kampf. Nur die, die gewinnen, verlieren und einstecken können, sind zuverlässig. Du? … Hm. Ich denke, du bist weit mehr als nur „zuverlässig“."
       },
       {
+        "voId": "chr_0031_mifu_mono_self_line02",
         "title": "Vertrauensgespräch 2",
         "text": "Als der Boss mich aufnahm, konnte ich die Vielzahl verschiedener Snacks gar nicht fassen … Ich hatte vorher noch nie so leckere süße Reiskuchen gegessen. Also hab ich mich drei Monate lang vollgestopft, bis ich keine Süßigkeiten mehr sehen konnte. Hah, selbst Blut riecht süß. Und ich hasse es, wenn ich in Wuling Blut rieche."
       },
       {
+        "voId": "chr_0031_mifu_mono_self_line03",
         "title": "Vertrauensgespräch 3",
         "text": "Wer mir das Kämpfen beigebracht hat …? Die Meisterin hatte eine harte Schale, aber einen überaus weichen Kern. Hab’s nicht geschafft, ihre Kranichform nachzuahmen, und sie lag mir jahrelang deshalb in den Ohren. Der Alte Meister sah furchterregend aus, aber er war ganz sanftmütig. Er hat sich über alles Gedanken gemacht – was ich gegessen, getragen und verwendet habe. Und was meinen Großmeister angeht … mit dem hab ich mich nie verstanden. Alle sagen, wir wären uns zu ähnlich. Wir beide haben immer alles mit unseren Fäusten geregelt."
       },
       {
+        "voId": "chr_0031_mifu_mono_self_line04",
         "title": "Vertrauensgespräch 4",
         "text": "Als ich Schülerin wurde, haben mir meine Meister meine Zukunft prophezeit. Sie sagten, ich würde nur mit meinen „Widersachern“ Bindungen eingehen. Dass ich gegen sie kämpfen, mich mit ihnen anfreunden und dann jeder seines Weges gehen würde. Der Boss. Kleines Samtpfötchen. Selbst meine Meister. Alle wurden früher oder später meine Widersacher. Aber bei dir ist das anders … Wir haben nie gegeneinander gekämpft. Wir haben bisher eher Rücken an Rücken und Seite an Seite gekämpft. Ich hoffe … dabei bleibt es auch vorerst."
       },
       {
+        "voId": "chr_0031_mifu_mono_self_line05",
         "title": "Vertrauensgespräch 5",
         "text": "In meiner Zeit bei Endfield ist mir etwas klargeworden. Der Xiranit-Damm, Wuling City und die Qingbo-Palisade … Sie sind so klein und auf der Karte kaum zu erkennen. Und doch rannte ich in dieser winzigen Welt immer wieder im Kreis. Meine Meister hatten recht. Im Leben geht es darum, sich durch unzählige Berge und Hindernisse zu kämpfen. Und wenn ich an deiner Seite bleibe, wartet immer ein neuer Kampf, richtig?"
       },
       {
+        "voId": "chr_0031_mifu_mono_chat_line01",
         "title": "Geplauder 1",
         "text": "Diese Fingerhandschuhe sehen gut aus, oder? Willst du sie anprobieren? Keine Sorge. So schwer sind sie nicht. Die wurden eigens für mich maßangefertigt, als ich Hauptfrau wurde. Mit der ersten Charge an Xiranit, die in diesem Jahr produziert wurde. Die Handwerker der Tianshi haben wirklich was drauf. Diese Fingerhandschuhe hören auf meinen „Willen“ und teilen sogar meinen Zorn. Hab ich dir je gezeigt, wie sie funktionieren?"
       },
       {
+        "voId": "chr_0031_mifu_mono_chat_line02",
         "title": "Geplauder 2",
         "text": "Wer mit dem Kampftraining beginnt, muss als Erstes den Bambus beherrschen. Die Art, die überall außerhalb der Stadt wächst. Für die stille Kampfhaltung muss man wie der Winterbambus sein – tief im Boden verwurzelt und unnachgiebig. Mach bis zum Frühling so weiter, um ein starkes Chi aufzubauen, das in dir ansteigt, und setze es dann frei, um einen Wachstumsschub auszulösen. Das ist der Weg des Bambus."
       },
       {
+        "voId": "chr_0031_mifu_mono_chat_line03",
         "title": "Geplauder 3",
         "text": "Zu Beginn meines Trainings sagte mir der Großmeister, dass ich gegen den Bambus kämpfen soll. Ich schlug so oft und so fest dagegen, bis meine Knöchel bluteten. Dann sagte er: „Fürchte nicht den Bambus. Lehre den Bambus das Fürchten.“Also biss ich die Zähne zusammen und machte weiter. Ich weiß nicht mehr, wie lange es dauerte, aber eines Tages zuckten meine Fäuste nicht mehr. Und dann kämpfte ich gegen Stein, Ferrium und die Aggeloi … Man muss seinen Mut zusammennehmen und zum Schlag ausholen. Nur dann hat man eine Chance auf den Sieg."
       },
       {
+        "voId": "chr_0031_mifu_mono_chat_line04",
         "title": "Geplauder 4",
         "text": "Warum ich so viel Kalligrafie in meinem Zimmer habe? Ein bisschen kulturelle Beschäftigung schadet doch nicht, oder …? Meine Schrift sieht gut aus? Hm, echt? Der Boss hat’s mir beigebracht. Meinte, es würde helfen, den Kopf frei zu bekommen und sich zu konzentrieren. Ich schreibe ein paar Worte, wenn ich nicht gerade Verbrecher jage. Ehrlich gesagt hat es mich nie so richtig gepackt. Ein Pinselstrich ist im Grunde nichts anderes als ein Schwerthieb."
       },
       {
+        "voId": "chr_0031_mifu_mono_chat_line05",
         "title": "Geplauder 5",
         "text": "Die Palisadeure ziehen es vor, mit den Fäusten zu kämpfen. Sie blocken fast nie und holen lieber direkt zum Schlag aus. Bei meiner Ankunft in Wuling fand ich heraus, dass die Wulinger Klingen bevorzugen – wegen der größeren Reichweite, der schärferen Schneide und der eleganten Präzision. Ich habe versucht, sie zu meistern, aber der Boss meinte, meine Schwertkunst sähe eigenartig aus … so, als würde ich versuchen, mit einer Weide zu ringen."
       },
       {
+        "voId": "chr_0031_mifu_mono_about_line01",
         "title": "Thema: Name",
         "text": "„Mi Fu“ klingt seltsam? Nun ja, das war nicht immer mein Name. Ruan Yi nannte mich schon „Verräterin“, seit ich bei Wuling angefangen hatte. Und dieses kleine Samtpfötchen … nennt mich ständig „Verrückte“. Pff, als ob mich das interessieren würde … Tatsächlich bekam ich den Namen „Mi Fu“, als ich in einem Krankenzimmer lag. Der Boss ließ mich dort über einen Monat lang, aber ich sagte kein Wort. Eines Tages las sie neben meinem Bett und fragte plötzlich nach meinem Namen. Ich zeigte einfach auf zwei beliebige Schriftzeichen in ihrem Buch. Sie sah sie sich an und sagte: „Perfekt. Dann also Mi Fu.“ Hm. Der Name klingt doch gut."
       },
       {
+        "voId": "chr_0031_mifu_mono_about_line02",
         "title": "Thema: Zhuang Fangyi",
         "text": "Der Boss … ist einfach gegangen? Hmpf. Ehrlich gesagt glaube ich, dass sie sich bei dir eher zu Hause fühlt. Du hast ein paar richtig große Projekte. Groß genug, dass sie sich darin entfalten kann. Sie hat zwar Wuling gewählt, aber eigentlich ist der Ort etwas zu klein für sie. Weißt du, was ich meine? Du solltest gut auf sie achtgeben! Sollte ihr etwas zustoßen, wirst du dich nicht bloß um mich sorgen müssen. Dann bekommst du es mit ganz Wuling zu tun."
       },
       {
+        "voId": "chr_0031_mifu_mono_about_line03",
         "title": "Thema: Wuling",
         "text": "Ich weiß nicht, wann aus mir eine echte Wulingerin wurde. Während der Boss mich monatelang im Krankenzimmer festhielt, sah ich ihnen dabei zu, wie sie inmitten der schlammigen Wildnis ihre Zukunft planten. Irgendetwas veränderte sich. Sie behandelten mich wie eine von ihnen und brachten mir immer wieder Essen. Ich fing an, ihnen zu helfen, weil ich es hasse, jemandem etwas schuldig zu sein. Dann entdeckte ich meinen Namen auf der Liste der Bauarbeiter, als sie den ersten Spatenstich für die Fangxing-Straße machten. Da erinnerte ich mich an ihre Worte: „Es wäre wunderbar, wenn deine Fäuste die Leute beschützen würden.“"
       },
       {
+        "voId": "chr_0031_mifu_mono_about_line04",
         "title": "Thema: Geheimer Gang zur Qingbo-Palisade",
         "text": "So ein Zufall. Du warst bei deinem ersten Besuch tatsächlich beim geheimen Gang. Ich war schon seit zehn Jahren nicht mehr dort. Nachdem ich fortgegangen war, hat sich Tangtang immer wieder durch den Gang geschlichen, also habe ich ihn versiegelt. Sie hätte nicht kommen sollen, und ich hätte nicht zurückgehen sollen. Ich wusste, dass sie … Na ja, ich hatte nicht erwartet, dass sie so durchdreht und mein Gesicht in diesem Graffiti mit diesem riesigen Kreuz bemalt … Blöde Miez. Ich werde das mit ihr regeln!"
       },
       {
+        "voId": "chr_0031_mifu_mono_about_line05",
         "title": "Thema: Tangtang",
         "text": "Tangtang … Ich habe noch eine Rechnung mit dem kleinen Samtpfötchen offen. Hat sie dir Probleme gemacht? Moment mal, hat sie das wirklich? Na so was … Keine Sorge, ich kümmere mich darum. Sie hängt viel zu sehr an dir. Wenn du sie anschreien würdest, würde sie wahrscheinlich in eine Depression verfallen. Das wäre echt nicht schön."
       },
       {
+        "voId": "chr_0031_mifu_explore_point_common_01",
         "title": "Ressource/Sammelobjekt entdeckt 1",
         "text": "Da drüben ist was. Aber denk dran: Die Vorschriften der Wache ermutigen dazu, verlorenes Eigentum zurückzugeben."
       },
       {
+        "voId": "chr_0031_mifu_explore_point_valub_01",
         "title": "Ressource/Sammelobjekt entdeckt 2",
         "text": "Wertgegenstände gesichtet. Die können wir wohl als herrenloses Eigentum behandeln."
       },
       {
+        "voId": "chr_0031_mifu_explore_find_locked_01",
         "title": "Unerforschter Bereich entdeckt",
         "text": "Eine neue Zone. Sehen wir uns lieber ein bisschen um, um sicherzustellen, dass hier kein Ärger wartet."
       },
       {
+        "voId": "chr_0031_mifu_explore_find_danger_01",
         "title": "Starker Gegner entdeckt",
         "text": "Ha, ich sehe einen würdigen Gegner."
       },
       {
+        "voId": "chr_0031_mifu_interact_mine_valub_01",
         "title": "Abbau 1",
         "text": "Zerschlagenes Erz sollte trotzdem funktionieren, oder?"
       },
       {
+        "voId": "chr_0031_mifu_interact_mine_valub_echo2_01",
         "title": "Abbau 2",
         "text": "Ich übernehme das. Zwei Treffer, und die Sache ist erledigt."
       },
       {
+        "voId": "chr_0031_mifu_interact_treasure_valub_01",
         "title": "Kiste öffnen",
         "text": "Ein solider Fund. Nur gut, dass wir ihn nicht demoliert haben."
       },
       {
+        "voId": "chr_0031_mifu_interact_etherium_01",
         "title": "Aurylen erhalten",
         "text": "Früher hielt ich die für Geister. Erst in Wuling habe ich erfahren, dass man sie Aurylene nennt."
       },
       {
+        "voId": "chr_0031_mifu_interact_blight_break_01",
         "title": "Eliminierung der Verderbnis",
         "text": "Ha. Dieses Zeug kann mich nicht aufhalten."
       },
       {
+        "voId": "chr_0031_mifu_interact_rest_01",
         "title": "Ausruhen",
         "text": "Komm schon, ich bin noch fit … Gut, wenn du das sagst."
       },
       {
+        "voId": "chr_0031_mifu_combat_suppuse_using_01",
         "title": "Taktische Nutzung 1",
         "text": "Wehe, du stolperst hier!"
       },
       {
+        "voId": "chr_0031_mifu_combat_suppuse_getheal_01",
         "title": "Taktische Nutzung 2",
         "text": "Wieder im Kampfgeschehen."
       },
       {
+        "voId": "chr_0031_mifu_combat_remind_danger_01",
         "title": "Gefahrenwarnung",
         "text": "Bleib ein Stück weg!"
       },
       {
+        "voId": "chr_0031_mifu_combat_hurt_lowhp_01",
         "title": "Verletzt",
         "text": "He. So sieht ein echter Kampf aus."
       },
       {
+        "voId": "chr_0031_mifu_combat_dead_01",
         "title": "0 LP",
         "text": "Unsere Fäuste … kennen keine Reue …"
       },
       {
+        "voId": "chr_0031_mifu_combat_remind_praise_01",
         "title": "Teammotivation 1",
         "text": "Glatt und sauber. Beeindruckend!"
       },
       {
+        "voId": "chr_0031_mifu_combat_remind_praise_02",
         "title": "Teammotivation 2",
         "text": "Gute Teamarbeit!"
       },
       {
+        "voId": "chr_0031_mifu_combat_remind_praise_echo2_01",
         "title": "Motivationsreaktion 1",
         "text": "Das ist nur mein Job."
       },
       {
+        "voId": "chr_0031_mifu_combat_remind_praise_echo2_02",
         "title": "Motivationsreaktion 2",
         "text": "Danke, Team."
       },
       {
+        "voId": "chr_0031_mifu_combat_intobattle_01",
         "title": "Kampf beginnt 1",
         "text": "Zeit, zu kämpfen!"
       },
       {
+        "voId": "chr_0031_mifu_combat_intobattle_echo2_01",
         "title": "Kampf beginnt 2",
         "text": "Zeit, denen eine ordentliche Lektion zu erteilen."
       },
       {
+        "voId": "chr_0031_mifu_combat_outbattle_nor_01",
         "title": "Kampfsieg 1",
         "text": "Das wird den Boss freuen."
       },
       {
+        "voId": "chr_0031_mifu_combat_outbattle_nor_02",
         "title": "Kampfsieg 2",
         "text": "Fall gelöst."
       },
       {
+        "voId": "chr_0031_mifu_combat_outbattle_nor_echo2_01",
         "title": "Kampfsieg 3",
         "text": "Du kämpfst auch ziemlich gut!"
       },
       {
+        "voId": "chr_0031_mifu_combat_outbattle_hard_01",
         "title": "Kampfsieg 4",
         "text": "Team … ich übernehme den schwierigen Teil. Übertreibt’s mal nicht."
       },
       {
+        "voId": "chr_0031_mifu_combat_battle_defeat_01",
         "title": "Niederlage im Kampf",
         "text": "Gib niemals auf, solange du noch stehst."
       },
       {
+        "voId": "chr_0031_mifu_mono_attack_last_01",
         "title": "Abschlussangriff 1",
         "text": "Das war’s!"
       },
       {
+        "voId": "chr_0031_mifu_mono_attack_last_02",
         "title": "Abschlussangriff 2",
         "text": "Oh yeah!"
       },
       {
+        "voId": "chr_0031_mifu_mono_skill_nor_01",
         "title": "Kampffertigkeit 1",
         "text": "Es gibt kein Entkommen!"
       },
       {
+        "voId": "chr_0031_mifu_mono_skill_nor_02",
         "title": "Kampffertigkeit 2",
         "text": "Nimm das!"
       },
       {
+        "voId": "chr_0031_mifu_mono_skill_nor_03",
         "title": "Kampffertigkeit 3",
         "text": "Jetzt bist du dran!"
       },
       {
+        "voId": "chr_0031_mifu_combat_skill_comb_ready_01",
         "title": "Kombofertigkeit bereit 1",
         "text": "Fäuste hoch!"
       },
       {
+        "voId": "chr_0031_mifu_combat_skill_comb_ready_02",
         "title": "Kombofertigkeit bereit 2",
         "text": "Jetzt geht’s los!"
       },
       {
+        "voId": "chr_0031_mifu_mono_skill_comb_release_01",
         "title": "Kombo wirken 1",
         "text": "Gib auf!"
       },
       {
+        "voId": "chr_0031_mifu_mono_skill_comb_release_02",
         "title": "Kombo wirken 2",
         "text": "Zähne zusammenbeißen!"
       },
       {
+        "voId": "chr_0031_mifu_mono_attack_extra_01",
         "title": "Wuchtschlag 1",
         "text": "Widerstand ist zwecklos!"
       },
       {
+        "voId": "chr_0031_mifu_mono_attack_extra_02",
         "title": "Wuchtschlag 2",
         "text": "Ende der Fahnenstange!"
       },
       {
+        "voId": "chr_0031_mifu_mono_skill_ultimate_01",
         "title": "Ultimative Fertigkeit 1",
         "text": "Ich zeig’s dir auf die harte Tour!"
       },
       {
+        "voId": "chr_0031_mifu_mono_skill_ultimate_02",
         "title": "Ultimative Fertigkeit 2",
         "text": "Du verdienst … eine Zelle!"
       },
       {
+        "voId": "chr_0031_mifu_mono_skill_ultimate_03",
         "title": "Ultimative Fertigkeit 3",
         "text": "Ich habe dich höflich gefragt!"
       }

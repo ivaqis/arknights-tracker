@@ -125,326 +125,407 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0007_ikut_chrbark_squad_01",
         "title": "作戦準備1",
         "text": "荒野は危険な場所だ。準備はできてるね。"
       },
       {
+        "voId": "chr_0007_ikut_chrbark_squad_02",
         "title": "作戦準備2",
         "text": "風は止まない。だから、ぼくも歩みを止めない。"
       },
       {
+        "voId": "chr_0007_ikut_chrbark_join_01",
         "title": "編成1",
         "text": "やっと外の空気が吸えるね。土の匂いも忘れるところだったよ。"
       },
       {
+        "voId": "chr_0007_ikut_chrbark_join_02",
         "title": "編成2",
         "text": "大丈夫。どれだけ速くても、絶対に追いつけるから。"
       },
       {
+        "voId": "chr_0007_ikut_chrbark_weap_01",
         "title": "武器取替",
         "text": "呼吸を感じる……ぼくと気が合いそうだ。"
       },
       {
+        "voId": "chr_0007_ikut_chrbark_gear_01",
         "title": "装備取替",
         "text": "すごい技術だ……どんな詩教者でも、ここまでの精度のものは難しいだろうね。"
       },
       {
+        "voId": "chr_0007_ikut_chrup_skill_01",
         "title": "素質・配属スキル解放",
         "text": "詩教者のやり方とは違うけど、同じ成果が得られる。勉強になったよ。"
       },
       {
+        "voId": "chr_0007_ikut_chrup_level_01",
         "title": "経験値素材を使用",
         "text": "荒野の生活は経験を与えてくれる。それが、鋭く研ぎ澄まされた刃になるんだ。"
       },
       {
+        "voId": "chr_0007_ikut_chrup_promt01_01",
         "title": "昇進1",
         "text": "昇進？つまり……君に認められたってこと？……それは、感謝するよ。"
       },
       {
+        "voId": "chr_0007_ikut_chrup_promt02_01",
         "title": "昇進2",
         "text": "誉れには責任が伴う。もっと多くの人を助けられるように、努力するよ。"
       },
       {
+        "voId": "chr_0007_ikut_chrup_promt03_01",
         "title": "昇進3",
         "text": "自然は生きる方法を教えてはくれない。ただ跡を残すだけ……前は身を任せるだけだった。でも今は、その意味が少しわかってきた気がするんだ。"
       },
       {
+        "voId": "chr_0007_ikut_chrup_promt04_01",
         "title": "昇進4",
         "text": "君からはたくさんのことを教えてもらった。どうして「歌」がぼくを導いたのか……わかったよ。今度は、恩を返す番だってこともね。"
       },
       {
+        "voId": "chr_0007_ikut_introduce_01",
         "title": "入職会話",
         "text": "ぼくはエクト。コードネームはアークライトだ。うまいことは全然言えないけど……君が川の流れのように、止まらずに進めるように、願うよ。"
       },
       {
+        "voId": "chr_0007_ikut_mono_switch_01",
         "title": "待機1",
         "text": "進むべき道が見えてきたよ。"
       },
       {
+        "voId": "chr_0007_ikut_mono_switch_02",
         "title": "待機2",
         "text": "最高の状態だ。"
       },
       {
+        "voId": "chr_0007_ikut_sim_assign_work_01",
         "title": "船室配属",
         "text": "了解。吟遊者は手を抜かないよ。"
       },
       {
+        "voId": "chr_0007_ikut_sim_hello_lower_01",
         "title": "挨拶1",
         "text": "管理人、今日の風はどう？"
       },
       {
+        "voId": "chr_0007_ikut_sim_hello_max_01",
         "title": "挨拶2",
         "text": "管理人、外から戻ってきたところかな。荒野の匂いがする。"
       },
       {
+        "voId": "chr_0007_ikut_sim_talk_lv01_01",
         "title": "帝江号雑談1",
         "text": "バイクの修理は瘤獣の看病と似てる。慎重に耳を傾けて、応えてあげることが大切なんだ。"
       },
       {
+        "voId": "chr_0007_ikut_sim_talk_lv02_01",
         "title": "帝江号雑談2",
         "text": "ここの星空は荒野とは違う……でも、同じようにずっと見ていたくなるんだ。"
       },
       {
+        "voId": "chr_0007_ikut_sim_talk_lv02_02",
         "title": "帝江号雑談3",
         "text": "あの雲の縁、鋭く尖ってるね。嵐の前触れだよ。あっちに行くなら気をつけたほうがいい。"
       },
       {
+        "voId": "chr_0007_ikut_sim_talk_max_01",
         "title": "帝江号雑談4",
         "text": "綺麗な髪だ。まるで、朝露に濡れた獣の毛皮のような……見たこと無い？……とにかく綺麗だってこと。"
       },
       {
+        "voId": "chr_0007_ikut_sim_talk_max_02",
         "title": "帝江号雑談5",
         "text": "草原の大移動、見たことある？キャラバンが獣の群れを走らせ、雨と雲をゆっくり追いかけていく……それがぼくの守りたいものなんだ。"
       },
       {
+        "voId": "chr_0007_ikut_sim_talk_max_03",
         "title": "帝江号雑談6",
         "text": "いつもあの星を眺めて考え事をしてるね。その気持ち、ぼくにもわかるよ。たとえ遠く離れてても、心はいつも大切な場所に残る……そういうものだから。"
       },
       {
+        "voId": "chr_0007_ikut_sim_gift_give_01",
         "title": "プレゼントを贈る",
         "text": "君にあげたいものがあるんだ。荒野からの贈り物だよ。気に入ってくれるといいけど。"
       },
       {
+        "voId": "chr_0007_ikut_sim_gift_recv_01",
         "title": "プレゼントを受け取る",
         "text": "ぼくに？荒野ではプレゼントに特別な意味があるんだ……大切にするよ。"
       },
       {
+        "voId": "chr_0007_ikut_mono_self_line01",
         "title": "信頼上昇後会話1",
         "text": "管理人、基本的な生存術は身につけておくんだね。まずは、素手で長耳獣を捕まえる罠から。ぼくが教えてあげるよ。"
       },
       {
+        "voId": "chr_0007_ikut_mono_self_line02",
         "title": "信頼上昇後会話2",
         "text": "荒野の生活は過酷だよ。でも、美しくもあるんだ。長い雨季が終わったあとの澄んだ空や、月明かりの下で殻を破る羽獣の姿みたいにね。"
       },
       {
+        "voId": "chr_0007_ikut_mono_self_line03",
         "title": "信頼上昇後会話3",
         "text": "古い設備を組み合わせてるのに、性能が良くなるのはなぜかって？不思議なことはないよ。荷車を引く駄獣の息がいつの間にかぴったり合うみたいに、ゆっくり馴染んでいくものだからね。"
       },
       {
+        "voId": "chr_0007_ikut_mono_self_line04",
         "title": "信頼上昇後会話4",
         "text": "答えを探すために旅を始めたんだ。崩れていく荒野の秩序を見ながら、できることを探して……湖の波、林を吹き抜ける風に耳を傾けながらずっと探し続けてきたけど、今は……君の声を聞いていたいんだ。"
       },
       {
+        "voId": "chr_0007_ikut_mono_self_line05",
         "title": "信頼上昇後会話5",
         "text": "ここでの物語を「歌」に刻もうと思ってる。ぼくたちが一緒に歩いた道を記録しておきたいから。ちょっと時間がかかりそうなんだけど……できたら、最初に聞いてくれる？"
       },
       {
+        "voId": "chr_0007_ikut_mono_chat_line01",
         "title": "会話1",
         "text": "生きたいと願う人々の声は必ず響く。世界を渡り歩く「吟遊者」は必ずその声を聞く。これが、衆生長地の存在する意味なんだ。"
       },
       {
+        "voId": "chr_0007_ikut_mono_chat_line02",
         "title": "会話2",
         "text": "荒野の集落にいるのは、いい人ばかりだ。それに、目の前の現実的な問題を考えてる。天気、食料、集落に迫る危機……それだけで、毎日があっという間に過ぎていくんだよ。"
       },
       {
+        "voId": "chr_0007_ikut_mono_chat_line03",
         "title": "会話3",
         "text": "「歌」を覚えるのは難しいことじゃない。衆生長地の吟遊者なら誰でもできるんだ。ぼくたちの日常であって、ぼくたちもその一部なんだから。"
       },
       {
+        "voId": "chr_0007_ikut_mono_chat_line04",
         "title": "会話4",
         "text": "詩教者が言ってた。「テラの都市は、天災を免れるために移動する」んだって。もしそうなら、ぼくたちは別の形で祖先の生活を継承しているだけなのかもしれないね。"
       },
       {
+        "voId": "chr_0007_ikut_mono_chat_line05",
         "title": "会話5",
         "text": "荒野には中古品を取引する場所があるんだ。掘り出し物を探すには少し時間がかかるけど。ぼくの通信機も、イェルシェ製の古いものを改造したんだ。あそこで作られたものは、どんな環境でも頼りになるからね。"
       },
       {
+        "voId": "chr_0007_ikut_mono_about_line01",
         "title": "都市について",
         "text": "タロⅡはぼくが思ってたよりも、ずっと広大だった。最初は鉄、道路、灯りの配置が少し違うだけで、どの都市も似たようなものだと思ってたんだ。でも、実際に足を踏み入れてみると、どの場所にもそれぞれの鼓動と息遣いがあった……まるで全く違う2つの草原みたいなものなんだって。"
       },
       {
+        "voId": "chr_0007_ikut_mono_about_line02",
         "title": "管理人について",
         "text": "ぼくはこれまでたくさんの場所を巡ってきたけど、最果ての集落にも君の話はちゃんと伝わってた。内容は少しずつ違っても、変わらなかったのは――君の名前が、常に希望と一緒に語られてたってこと。"
       },
       {
+        "voId": "chr_0007_ikut_mono_about_line03",
         "title": "「歌」について",
         "text": "「歌」はもともと3行で、死の間際だった流浪者が口ずさんだのが始まりだったとも言われてる。つまり、衆生長地はたった3行の歌から始まったんだ。最初の詩教者がいて、吟遊者たちは歌を道しるべに旅をして……最後は自分自身が「歌」の一部になるんだ。"
       },
       {
+        "voId": "chr_0007_ikut_mono_about_line04",
         "title": "詩教者について",
         "text": "詩教者は直接何かを教えてくれるわけじゃない。詩教者オリシャは「知識はすべて『歌』の中にある」って言ってた。「互いに助け合わなければ、この星で生存していくことはできない」って、いつも行動でぼくを導いてくれたんだ。"
       },
       {
+        "voId": "chr_0007_ikut_mono_about_line05",
         "title": "集落について",
         "text": "ぼくの住んでた集落は小さくて、100人もいなかった。でも旅に出る前は、それがぼくの世界のすべてだったんだ。瘤獣の乳の絞り方、バイクの乗り方、荒野での生存術を学んで……ぼくはそこから離れたわけじゃない。そこにあったすべてを抱えて、旅に出ただけだよ。"
       },
       {
+        "voId": "chr_0007_ikut_explore_point_common_01",
         "title": "発見：資源1",
         "text": "生き残るために必要なものだ。持っていこう。"
       },
       {
+        "voId": "chr_0007_ikut_explore_point_valub_01",
         "title": "発見：資源2",
         "text": "詩教者が興味を持ちそうな物だね。"
       },
       {
+        "voId": "chr_0007_ikut_explore_find_locked_01",
         "title": "発見：未探索エリア",
         "text": "ついてきて。見に行こう。"
       },
       {
+        "voId": "chr_0007_ikut_explore_find_danger_01",
         "title": "発見：強敵",
         "text": "危ない気配がする。手強い敵がいそうだ。"
       },
       {
+        "voId": "chr_0007_ikut_interact_mine_valub_01",
         "title": "鉱物採集1",
         "text": "大地からの贈り物だ。"
       },
       {
+        "voId": "chr_0007_ikut_interact_mine_valub_echo2_01",
         "title": "鉱物採集2",
         "text": "ぼくに任せて。体力には自信があるんだ。"
       },
       {
+        "voId": "chr_0007_ikut_interact_treasure_valub_01",
         "title": "資源箱開封",
         "text": "荒野ではなかなか見ない物だよ。価値も高そうだ。"
       },
       {
+        "voId": "chr_0007_ikut_interact_etherium_01",
         "title": "オーリレン入手",
         "text": "これ、瓶に入れたら照明として使えそうだね。"
       },
       {
+        "voId": "chr_0007_ikut_interact_blight_break_01",
         "title": "侵蝕排除",
         "text": "自然の在るべき姿に戻す。"
       },
       {
+        "voId": "chr_0007_ikut_interact_rest_01",
         "title": "回復",
         "text": "荒野での焚き火を思い出した。そのときの温かさとおんなじだ。"
       },
       {
+        "voId": "chr_0007_ikut_combat_suppuse_using_01",
         "title": "戦闘補助アイテム使用1",
         "text": "呼吸を整えて。"
       },
       {
+        "voId": "chr_0007_ikut_combat_suppuse_getheal_01",
         "title": "戦闘補助アイテム使用2",
         "text": "体力は回復したよ。"
       },
       {
+        "voId": "chr_0007_ikut_combat_remind_danger_01",
         "title": "警告",
         "text": "止まらずに動くんだ。"
       },
       {
+        "voId": "chr_0007_ikut_combat_hurt_lowhp_01",
         "title": "負傷",
         "text": "スピードは出せないけど、まだ大丈夫……"
       },
       {
+        "voId": "chr_0007_ikut_combat_dead_01",
         "title": "戦闘不能",
         "text": "ごめん、力になれなかった……"
       },
       {
+        "voId": "chr_0007_ikut_combat_remind_praise_01",
         "title": "激励1",
         "text": "いい反応だ！"
       },
       {
+        "voId": "chr_0007_ikut_combat_remind_praise_02",
         "title": "激励2",
         "text": "風と雷のように息がぴったりだ。"
       },
       {
+        "voId": "chr_0007_ikut_combat_remind_praise_echo2_01",
         "title": "激励応答1",
         "text": "任された範囲内だからね。"
       },
       {
+        "voId": "chr_0007_ikut_combat_remind_praise_echo2_02",
         "title": "激励応答2",
         "text": "みんなに合わせただけだよ。"
       },
       {
+        "voId": "chr_0007_ikut_combat_intobattle_01",
         "title": "作戦開始1",
         "text": "戦闘準備は整ってる。"
       },
       {
+        "voId": "chr_0007_ikut_combat_intobattle_echo2_01",
         "title": "作戦開始2",
         "text": "そっちは任せたよ。"
       },
       {
+        "voId": "chr_0007_ikut_combat_outbattle_nor_01",
         "title": "作戦終了1",
         "text": "安らかに眠れ。"
       },
       {
+        "voId": "chr_0007_ikut_combat_outbattle_nor_02",
         "title": "作戦終了2",
         "text": "大地が受け入れてくれますように。"
       },
       {
+        "voId": "chr_0007_ikut_combat_outbattle_nor_echo2_01",
         "title": "作戦終了3",
         "text": "これは自然の流れなんだよ。"
       },
       {
+        "voId": "chr_0007_ikut_combat_outbattle_hard_01",
         "title": "作戦終了4",
         "text": "荒野のすべては、試練の中で研ぎ澄まされるんだ。"
       },
       {
+        "voId": "chr_0007_ikut_combat_battle_defeat_01",
         "title": "作戦失敗",
         "text": "どれだけ経験のある牙獣でも、常に狩りがうまくいくわけじゃない。でも、少なくとも教訓は得られるからね。"
       },
       {
+        "voId": "chr_0007_ikut_mono_attack_last_01",
         "title": "重攻撃1",
         "text": "止まれ！"
       },
       {
+        "voId": "chr_0007_ikut_mono_attack_last_02",
         "title": "重攻撃2",
         "text": "突き破る！"
       },
       {
+        "voId": "chr_0007_ikut_mono_skill_nor_01",
         "title": "戦技1",
         "text": "疾風！"
       },
       {
+        "voId": "chr_0007_ikut_mono_skill_nor_02",
         "title": "戦技2",
         "text": "雷鳴！"
       },
       {
+        "voId": "chr_0007_ikut_mono_skill_nor_03",
         "title": "戦技3",
         "text": "一閃！"
       },
       {
+        "voId": "chr_0007_ikut_combat_skill_comb_ready_01",
         "title": "連携技準備完了1",
         "text": "いい風だ！"
       },
       {
+        "voId": "chr_0007_ikut_combat_skill_comb_ready_02",
         "title": "連携技準備完了2",
         "text": "ぼくに任せなよ。"
       },
       {
+        "voId": "chr_0007_ikut_mono_skill_comb_release_01",
         "title": "連携技1",
         "text": "最善の方法だ。"
       },
       {
+        "voId": "chr_0007_ikut_mono_skill_comb_release_02",
         "title": "連携技2",
         "text": "機を逃すな！"
       },
       {
+        "voId": "chr_0007_ikut_mono_attack_extra_01",
         "title": "終撃1",
         "text": "終わらせる。"
       },
       {
+        "voId": "chr_0007_ikut_mono_attack_extra_02",
         "title": "終撃2",
         "text": "時が来た。"
       },
       {
+        "voId": "chr_0007_ikut_mono_skill_ultimate_01",
         "title": "必殺技1",
         "text": "逃がさないよ。"
       },
       {
+        "voId": "chr_0007_ikut_mono_skill_ultimate_02",
         "title": "必殺技2",
         "text": "嵐を乗り越えた力！"
       },
       {
+        "voId": "chr_0007_ikut_mono_skill_ultimate_03",
         "title": "必殺技3",
         "text": "もうここにいるよ。"
       }

@@ -123,326 +123,407 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0025_ardelia_chrbark_squad_01",
         "title": "Persiapan Operasi 1",
         "text": "Lakukan apa yang harus kaulakukan, Profesor. Akan kubantu sebisaku."
       },
       {
+        "voId": "chr_0025_ardelia_chrbark_squad_02",
         "title": "Persiapan Operasi 2",
         "text": "Coba kulihat. Kali ini, datanya harus kukumpulkan dari mana?"
       },
       {
+        "voId": "chr_0025_ardelia_chrbark_join_01",
         "title": "Menambahkan ke Tim 1",
         "text": "Peralatan eksplorasinya sudah kusiapkan, Profesor. Kita bisa berangkat kapan saja."
       },
       {
+        "voId": "chr_0025_ardelia_chrbark_join_02",
         "title": "Menambahkan ke Tim 2",
         "text": "Kalau ada Profesor bersamaku, aku merasa lebih aman."
       },
       {
+        "voId": "chr_0025_ardelia_chrbark_weap_01",
         "title": "Berganti Senjata",
         "text": "Bisa tolong berdiri agak jauh, Profesor? Aku, ee ... tak ingin kau tak sengaja cedera gara-gara aku."
       },
       {
+        "voId": "chr_0025_ardelia_chrbark_gear_01",
         "title": "Berganti Gear",
         "text": "Studi lapangan bisa jadi sangat berbahaya. Kita harus pastikan bahwa kita terlindung sebagaimana mestinya."
       },
       {
+        "voId": "chr_0025_ardelia_chrup_skill_01",
         "title": "Aktivasi Matriks Kemampuan",
         "text": "Buku harianku ibarat lingkaran tahun pada pohon kuno. Isinya catatan tentang setiap hal yang kupelajari sedari aku masih kecil."
       },
       {
+        "voId": "chr_0025_ardelia_chrup_level_01",
         "title": "Menonton Rekaman Pertarungan",
         "text": "Bagaimana mungkin musuh bisa mengubah tanah ini menjadi ... kehancuran tak bernyawa seperti ini?"
       },
       {
+        "voId": "chr_0025_ardelia_chrup_promt01_01",
         "title": "Promosi Operator 1",
         "text": "Baiklah, Ardelia! Fokus pada jalan itu saja! Terus jelajahi, dan terus tingkatkan kemampuan!"
       },
       {
+        "voId": "chr_0025_ardelia_chrup_promt02_01",
         "title": "Promosi Operator 2",
         "text": "Terima kasih banyak atas pujianmu, Profesor! Aku akan berusaha lebih baik lagi dan mencapai lebih banyak lagi di Endfield!"
       },
       {
+        "voId": "chr_0025_ardelia_chrup_promt03_01",
         "title": "Promosi Operator 3",
         "text": "Tak usah khawatirkan aku, Profesor. Aku jelas tak bekerja terlalu keras, kok. Hmm? Lingkaran hitam di mataku ini? Oh, anu ... bukunya menarik sekali. Aku tak bisa berhenti baca."
       },
       {
+        "voId": "chr_0025_ardelia_chrup_promt04_01",
         "title": "Promosi Operator 4",
         "text": "Dunia ini menyimpan begitu banyak misteri yang belum terkuak. Kita harus bisa lebih memahaminya seperti ... seperti halnya kita berusaha memahami diri kita sendiri. Iya, ‘kan, Profesor?"
       },
       {
+        "voId": "chr_0025_ardelia_introduce_01",
         "title": "Operator Siap Bertugas",
         "text": "Salam, Endministrator. Namaku Ardelia. Aku geolog dari Rhodes Island. Fokusku saat ini adalah korelasi antara bencana geologis dan Ætherside. Aku sudah dengar cukup banyak tentangmu, Endmin, dan aku punya banyak sekali pertanyaan untukmu. Oh, ada lagi .... Boleh kupanggil kau Profesor?"
       },
       {
+        "voId": "chr_0025_ardelia_mono_switch_01",
         "title": "Siaga 1",
         "text": "Tetaplah ceria hari ini seperti biasanya, Profesor."
       },
       {
+        "voId": "chr_0025_ardelia_mono_switch_02",
         "title": "Siaga 2",
         "text": "Aku dengar suara langkahmu, Profesor."
       },
       {
+        "voId": "chr_0025_ardelia_sim_assign_work_01",
         "title": "Menugaskan ke Fasilitas",
         "text": "Serahkan saja kepadaku, Profesor. Aku ingin coba hal baru juga."
       },
       {
+        "voId": "chr_0025_ardelia_sim_hello_lower_01",
         "title": "Menyapa 1",
         "text": "Profesor, mau berbagi mille crêpe ini denganku?"
       },
       {
+        "voId": "chr_0025_ardelia_sim_hello_max_01",
         "title": "Menyapa 2",
         "text": "Oh, baru saja aku berniat mencarimu, Profesor."
       },
       {
+        "voId": "chr_0025_ardelia_sim_talk_lv01_01",
         "title": "Obrolan Santai di Dijiang 1",
         "text": "Hati-hati saat berkeliling Dijiang, Profesor.... Ada macam-macam rambu peringatan di pesawat ini, dan ... dan aku selalu saja menyandungnya. Kalau sedang berpikir, aku tak menyadari keberadaan rambu-rambu itu."
       },
       {
+        "voId": "chr_0025_ardelia_sim_talk_lv02_01",
         "title": "Obrolan Santai di Dijiang 2",
         "text": "Dari Dijiang, aku bisa lihat banyak tempat yang dulu pernah kusurvei sendiri .... Alam liar, padang rumput, dan daerah utara tampak begitu kecil dari tempat ini. Pemandangan dari orbit bisa mencakup semua perjalanan panjang yang dulu kutempuh .... Harus kuakui, seru rasanya berada di atas sini—hihi!"
       },
       {
+        "voId": "chr_0025_ardelia_sim_talk_lv02_02",
         "title": "Obrolan Santai di Dijiang 3",
         "text": "Profesor, mau ikut acara klub baca yang akan kuadakan besok? Kita mau bahas buku apa? Oh, apa pun yang ingin kaubaca! Omong-omong soal itu, Pak Krad pernah bawa majalah foto tentang gunung api di Talos-II. Kalau kau tertarik, akan kubawakan saat acara klub baca!"
       },
       {
+        "voId": "chr_0025_ardelia_sim_talk_max_01",
         "title": "Obrolan Santai di Dijiang 4",
         "text": "Kau pasti lapar setelah bekerja keras, Profesor! Cicipi ini. Ini camilan Higashi pemberian Nona Akekuri. Ee, aku tak butuh camilan ini, karena ... a-aku sudah mencicipinya sedikit. Kenapa kemasannya belum dibuka? Ah, em ... Nona Akekuri memberiku sekotak lagi!"
       },
       {
+        "voId": "chr_0025_ardelia_sim_talk_max_02",
         "title": "Obrolan Santai di Dijiang 5",
         "text": "Kau sadar tidak, Profesor? Kau selalu berada di depan, seakan kau berusaha melindungi kami dari bahaya apa pun yang menghadang. Kadang, aku harus lari sedikit agar bisa menyusulmu. Mungkin ... kau tak perlu bergerak secepat itu. Kami ada di dekatmu—dan kami juga ingin membantu."
       },
       {
+        "voId": "chr_0025_ardelia_sim_talk_max_03",
         "title": "Obrolan Santai di Dijiang 6",
         "text": "Perjalanan pulang ke Dijiang selalu terasa menenangkan. Kalau tak bercerita tentang perjalananku kepada rekan-rekanku, aku akan ke Ruang Pertumbuhan dan memeriksa kondisi tanaman-tanaman mungil di sana. Kalau punya waktu luang, aku bahkan akan merawat mereka. Ini hobiku. Puas sekali rasanya melihat mereka tumbuh."
       },
       {
+        "voId": "chr_0025_ardelia_sim_gift_give_01",
         "title": "Menawarkan Hadiah",
         "text": "Boleh ganggu sebentar, Endmin? Aku bawa oleh-oleh dari surveiku. Bulu hiasan dari Hannabit Circuit, pernak-pernik giok dari Hongshan, dan medali dari Order of Steel Oath .... Semuanya untukmu. Semoga kau suka."
       },
       {
+        "voId": "chr_0025_ardelia_sim_gift_recv_01",
         "title": "Menerima Hadiah",
         "text": "Hadiah? Untukku? Aihh, terima kasih! Coba kita lihat isinya .... *Mengikik* Profesor, kau malah kelihatan lebih cemas daripada aku."
       },
       {
+        "voId": "chr_0025_ardelia_mono_self_line01",
         "title": "Dialog Kepercayaan 1",
         "text": "Profesor, kau baik-baik saja? Kau tampak kelelahan. Jangan bilang lagi-lagi kau bergadang semalaman. Ayolah, kau kan tahu itu sangat tak sehat .... Eits-eits! Tak ada kalau atau tapi—sekarang saatnya istirahat."
       },
       {
+        "voId": "chr_0025_ardelia_mono_self_line02",
         "title": "Dialog Kepercayaan 2",
         "text": "Oh, jangan gigiti pakaian Profesor lagi, Pak Dolly ...! Aduh. Maaf. Mereka memang usil. Hmm? Kau tak bisa lihat mereka? Oh ... Pak Dolly cuma memperlihatkan diri saat mereka ingin dilihat .... Apa Pak Dolly adalah Pemimpinnya? Bukan. Pak Dolly bukan nama spesifik untuk siapa pun, karena Dolly-nya ada banyak .... Aihhh, keluarlah dan bilang sendiri kepada Profesor! Pak Dolly, aku tahu kau bisa bicara!"
       },
       {
+        "voId": "chr_0025_ardelia_mono_self_line03",
         "title": "Dialog Kepercayaan 3",
         "text": "Aku mendaki gunung lagi hari ini. Dengan kompas geologi, aku bisa memastikan orientasi dan gradasi strata batuannya, sedangkan kapak ini membantuku mengumpulkan sampel batuan sedimen untuk studi optik dan tekstur .... Aku sama sekali tak lelah, Profesor. Aku masih bisa mendaki gunung lagi, bepergian lagi, dan mengumpulkan data geologis lagi. Senang sekali rasanya berusaha mengungkap misteri planet ini .... Tak bisa kujelaskan betapa senangnya aku!"
       },
       {
+        "voId": "chr_0025_ardelia_mono_self_line04",
         "title": "Dialog Kepercayaan 4",
         "text": "Kehadiran teman-teman saat momen besar sangatlah menyenangkan! Aku jadi ingat saat aku pertama kali tiba di Endfield. Orang-orang menggelar pesta sambutan untukku, penuh dengan semua kesukaanku. Oh, permen, bunga, dan musik yang riang dan ceria. Nona Yvonne bahkan menarikku dan kami berjoget mengikuti lagu pop terbaru! Aku agak pusing gara-gara berjoget dan berputar-putar, tapi aku berusaha sebaik mungkin untuk mengingat setiap senyum mereka."
       },
       {
+        "voId": "chr_0025_ardelia_mono_self_line05",
         "title": "Dialog Kepercayaan 5",
         "text": "Ætherside itu apa? Pertanyaan ini terus saja membayangiku. Jika Alam Semesta ini bisa sekejam itu kepada kita, adakah yang bisa kuperbuat untuk menolong semua orang ...? Kau juga berpikir begitu, Profesor? Hmm, berarti ... kita tak sendirian."
       },
       {
+        "voId": "chr_0025_ardelia_mono_chat_line01",
         "title": "Obrolan 1",
         "text": "Suaramu sangat menenangkan, Profesor. Oh, aku, anu, aku tak bermaksud apa-apa. Hanya saja ... begini, saat terbangun dari mimpi, kita lebih cepat mendengar daripada melihat sesuatu, ‘kan? Sebelum melihatmu pun, telingaku sudah duluan menangkap suaramu dan suara langkah kakimu .... Ya. Sebagian besar makhluk hidup bisa bersuara, entah itu serangga, hewan buas, pohon, atau tanaman. Suara mereka membuatku tersentuh. Demi merekalah aku memutuskan untuk melindungi dunia yang kita sayangi ini, dengan caraku sendiri."
       },
       {
+        "voId": "chr_0025_ardelia_mono_chat_line02",
         "title": "Obrolan 2",
         "text": "Semua orang di Endfield sangat baik. Nona Yvonne suka menceritakan temuan ilmiah terbarunya dan meminjamkan piringan hitam barunya kepadaku. Nona Akekuri sering mengajakku minum teh saat sore di tempat biasanya. Dan tentu saja Pak Antal—katanya, dia bisa memodifikasi tongkatku menjadi alat survei superportabel, *dan* melengkapinya dengan berbagai fitur luar biasa. Andai saja Nona Akekuri tak menariknya pergi setelah tiga jam, mungkin dia bakal terus menjelaskan detailnya sampai seharian!"
       },
       {
+        "voId": "chr_0025_ardelia_mono_chat_line03",
         "title": "Obrolan 3",
         "text": "Surveyor geologi lapangan punya banyak kebebasan, tapi keterbatasan dananya kadang bisa bikin frustrasi. Untuk mendapatkan dana, biasanya aku mengisi seminar dan kuliah di berbagai perusahaan, dengan harapan bahwa orang-orang akan tergerak oleh keyakinan dan visiku. Sebagian besar perusahaan, kecuali Endfield, tak tertarik pada sistem peringatan dini bencana geologis. Tapi, saat Siesta Group mendengar tentang penelitianku, mereka langsung menawarkan diri menjadi sponsor tanpa syarat. Kurasa aku tahu kenapa mereka bermurah hati begitu .... Mungkin saja pertemuan tak terduga ini memang sudah takdirku."
       },
       {
+        "voId": "chr_0025_ardelia_mono_chat_line04",
         "title": "Obrolan 4",
         "text": "Dulu, aku pernah bepergian dengan seorang Aldertone dari Hannabit Circuit. Dia melantunkan lagu hanna yang begitu indah dan bercerita kepadaku tentang Aldertone yang dulu membimbingnya. Semua orang di Sirkuit menghuni tanah ini, dan karenanya mereka sangat menghormati orang-orang yang mempelajari tanah ini—seperti kita. Hehe, aku senang sekali saat dia bilang begitu. Tapi, jujur saja, hanna yang dilantunkannya itulah yang membantuku menemukan tujuan hidup dan motivasi. Sungguh, Profesor. Perjalanan itu kutempuh sebelum akhirnya aku menemukan panggilan hidupku di Talos-II."
       },
       {
+        "voId": "chr_0025_ardelia_mono_chat_line05",
         "title": "Obrolan 5",
         "text": "Pakaianku sobek lagi? Oh, tak apa, sungguh. Nanti bisa kujahit lagi. Survei lapangan memang berisiko membuat pakaian sobek, kok .... Aku kan harus mendaki puncak gunung untuk mencari sampel mineral langka, dan batuan tak beraturan itu memang agak kasar. Tapi, perasaan saat hampir mencapai target—kadang kita jadi lupa bahwa setiap langkah mungkin saja sangat berisiko. Jangan khawatir, Profesor. Lain kali aku akan lebih hati-hati."
       },
       {
+        "voId": "chr_0025_ardelia_mono_about_line01",
         "title": "Topik: Ætherside",
         "text": "Ætherside adalah fenomena yang sepenuhnya baru yang harus kita hadapi di Talos-II. Ada berbagai teori yang menyebutnya fenomena fisika unik, sedangkan teori-teori lain menganggapnya dimensi spasial dan temporal yang aneh. Tapi, menurut firasatku, Ætherside ... adalah suatu ruang berdebu dan terbengkalai yang berisi hal-hal tua yang sudah terabaikan oleh semua orang. Profesor, mungkin Ætherside ada kaitannya dengan asal-usul kita."
       },
       {
+        "voId": "chr_0025_ardelia_mono_about_line02",
         "title": "Topik: Rhodes Island",
         "text": "Aku berasal dari Rhodes Island. Di sanalah aku mendapatkan latihan dan pelajaran yang kemudian membantu membentuk jati diriku. Aku sendiri tak punya kerabat sedarah, masa kanak-kanak, atau masa lalu, tapi Rhodes Island mengajari kami untuk menjalani hidup dan memahami diri kami. Profesor, Rhodes Island adalah kampung halamanku ... dan kata orang, tempat itu adalah kampung halamanmu juga."
       },
       {
+        "voId": "chr_0025_ardelia_mono_about_line03",
         "title": "Topik: Dolly",
         "text": "Pak Dolly sebenarnya lumayan ceria. Hanya saja, aku tak tahu kenapa dia tak mau memperlihatkan diri kepada orang lain. Sekarang, dia tak terlihat olehmu, tapi dia senang bermain denganmu. Pak Dolly sedang apa? Yah, dia sedang berusaha duduk di .... Astaga! Pak Dolly! Hentikan! Jangan jahili Profesor ...! Fyuh. Yah, Pak Dolly memang begitu. Kami kebetulan saja bertemu, dan sejak itu dia tak pernah jauh-jauh dariku."
       },
       {
+        "voId": "chr_0025_ardelia_mono_about_line04",
         "title": "Topik: Yvonne",
         "text": "Nona Yvonne adalah ilmuwan luar biasa. Saat aku pertama kali tiba di Endfield, dia memberitahuku banyak sekali informasi penting agar aku siap menghadapi Ætherside. Dia bahkan menceritakan temuan penelitiannya kepadaku, dengan harapan bahwa temuan itu bisa membantu para peneliti lain di bidang kami. Yang paling asyik, kami berdua sama-sama suka musik! Memang, aku lebih suka melodi ringan, sedangkan dia lebih suka musik berirama cepat dan berat. Tapi, tetap saja dia memberiku beberapa album pop La Fantoma. Dia benar-benar baik."
       },
       {
+        "voId": "chr_0025_ardelia_mono_about_line05",
         "title": "Topik: Talos-II",
         "text": "Aku pernah menyaksikan gugus Originium raksasa ditelan dan dihancurkan oleh Hawar yang bergulung-gulung seperti gelombang pasang. Yang tersisa hanyalah lembah tandus. Seekor Tuskbeast selamat dari bencana itu dan kembali ke rumahnya, sendirian dan bingung .... Ætherside dan Hawar seperti dua kutub yang saling meniadakan, sedangkan kita harus sangat berhati-hati di tepiannya agar bisa bertahan hidup. Aku terlahir dari Originium, dan karenanya aku merasa punya kewajiban mempelajari segala hal tentang Æther. Satu-satunya harapanku adalah membuat dunia ini lebih aman bagi semua orang."
       },
       {
+        "voId": "chr_0025_ardelia_explore_point_common_01",
         "title": "Sumber Daya/Barang Koleksi Terdeteksi 1",
         "text": "Sumber daya itu sepertinya berguna. Jangan lupa mengambilnya."
       },
       {
+        "voId": "chr_0025_ardelia_explore_point_valub_01",
         "title": "Sumber Daya/Barang Koleksi Terdeteksi 2",
         "text": "Sumber daya ini sangat penting. Ayo kumpulkan lebih banyak."
       },
       {
+        "voId": "chr_0025_ardelia_explore_find_locked_01",
         "title": "Area yang Belum Dijelajahi Terdeteksi",
         "text": "Ada yang mencurigakan di depan sana. Biar aku saja yang mengintai ke sana!"
       },
       {
+        "voId": "chr_0025_ardelia_explore_find_danger_01",
         "title": "Musuh Kuat Ditemukan",
         "text": "Ada bahaya di depan sana. Sebaiknya kita bersiap-siap."
       },
       {
+        "voId": "chr_0025_ardelia_interact_mine_valub_01",
         "title": "Penambangan 1",
         "text": "Sebentar, akan kupilah dan kuidentifikasi mineral-mineral ini."
       },
       {
+        "voId": "chr_0025_ardelia_interact_mine_valub_echo2_01",
         "title": "Penambangan 2",
         "text": "Biar kubantu juga!"
       },
       {
+        "voId": "chr_0025_ardelia_interact_treasure_valub_01",
         "title": "Membuka Kerat",
         "text": "Imbalan atas segala kesulitan yang telah kita hadapi!"
       },
       {
+        "voId": "chr_0025_ardelia_interact_etherium_01",
         "title": "Mendapatkan Aurylene",
         "text": "Dibandingkan Hawar dan celah, Aurylene tak terlalu berbahaya."
       },
       {
+        "voId": "chr_0025_ardelia_interact_blight_break_01",
         "title": "Menyingkirkan Hawar",
         "text": "Bagus. Sekarang, Hawar ini tak akan bisa melukai siapa pun lagi."
       },
       {
+        "voId": "chr_0025_ardelia_interact_rest_01",
         "title": "Istirahat",
         "text": "Kita sudah jalan sangat jauh ... kalian semua pasti lelah. Saatnya istirahat."
       },
       {
+        "voId": "chr_0025_ardelia_combat_suppuse_using_01",
         "title": "Penggunaan Taktis 1",
         "text": "Kau pasti bisa, dan aku siap membantu!"
       },
       {
+        "voId": "chr_0025_ardelia_combat_suppuse_getheal_01",
         "title": "Penggunaan Taktis 2",
         "text": "Fyuh ... aku merasa jauh lebih baik."
       },
       {
+        "voId": "chr_0025_ardelia_combat_remind_danger_01",
         "title": "Peringatan Bahaya",
         "text": "Hati-hati!"
       },
       {
+        "voId": "chr_0025_ardelia_combat_hurt_lowhp_01",
         "title": "Cedera",
         "text": "Tak apa! Aku masih bisa terus bertarung!"
       },
       {
+        "voId": "chr_0025_ardelia_combat_dead_01",
         "title": "0 HP",
         "text": "Aku tak boleh ... mengecewakan Profesor ...."
       },
       {
+        "voId": "chr_0025_ardelia_combat_remind_praise_01",
         "title": "Penyemangat Tim 1",
         "text": "Aksi luar biasa!"
       },
       {
+        "voId": "chr_0025_ardelia_combat_remind_praise_02",
         "title": "Penyemangat Tim 2",
         "text": "Ini berkat peran kalian semua!"
       },
       {
+        "voId": "chr_0025_ardelia_combat_remind_praise_echo2_01",
         "title": "Respons Penyemangat 1",
         "text": "Terima kasih atas jempolnya!"
       },
       {
+        "voId": "chr_0025_ardelia_combat_remind_praise_echo2_02",
         "title": "Respons Penyemangat 2",
         "text": "Terima kasih, Teman-teman!"
       },
       {
+        "voId": "chr_0025_ardelia_combat_intobattle_01",
         "title": "Mulai Pertarungan 1",
         "text": "Hati-hati melangkah, Teman-teman."
       },
       {
+        "voId": "chr_0025_ardelia_combat_intobattle_echo2_01",
         "title": "Mulai Pertarungan 2",
         "text": "Kita pasti bisa mengatasinya!"
       },
       {
+        "voId": "chr_0025_ardelia_combat_outbattle_nor_01",
         "title": "Menang Pertarungan 1",
         "text": "Kesulitan macam apa pun tak akan bisa menghentikan kita."
       },
       {
+        "voId": "chr_0025_ardelia_combat_outbattle_nor_02",
         "title": "Menang Pertarungan 2",
         "text": "Kita berhasil. Semoga kau tak kecapekan, Pak Dolly."
       },
       {
+        "voId": "chr_0025_ardelia_combat_outbattle_nor_echo2_01",
         "title": "Menang Pertarungan 3",
         "text": "Sudah kuduga kita pasti bisa."
       },
       {
+        "voId": "chr_0025_ardelia_combat_outbattle_hard_01",
         "title": "Menang Pertarungan 4",
         "text": "Akhirnya kita berhasil juga .... Semua ini karena kita saling bahu-membahu."
       },
       {
+        "voId": "chr_0025_ardelia_combat_battle_defeat_01",
         "title": "Kalah Bertarung",
         "text": "Kalah bukan berarti nasib kita tamat. Belajarlah dari pengalaman, dan lain kali kita harus berusaha lebih baik lagi."
       },
       {
+        "voId": "chr_0025_ardelia_mono_attack_last_01",
         "title": "Final Strike 1",
         "text": "Minggir!"
       },
       {
+        "voId": "chr_0025_ardelia_mono_attack_last_02",
         "title": "Final Strike 2",
         "text": "Letusan!"
       },
       {
+        "voId": "chr_0025_ardelia_mono_skill_nor_01",
         "title": "Skill Tarung 1",
         "text": "Benturan domba!"
       },
       {
+        "voId": "chr_0025_ardelia_mono_skill_nor_02",
         "title": "Skill Tarung 2",
         "text": "Hentikan!"
       },
       {
+        "voId": "chr_0025_ardelia_mono_skill_nor_03",
         "title": "Skill Tarung 3",
         "text": "Kita mulai!"
       },
       {
+        "voId": "chr_0025_ardelia_combat_skill_comb_ready_01",
         "title": "Skill Kombo Siap 1",
         "text": "Aku juga akan bantu!"
       },
       {
+        "voId": "chr_0025_ardelia_combat_skill_comb_ready_02",
         "title": "Skill Kombo Siap 2",
         "text": "Biar kucoba!"
       },
       {
+        "voId": "chr_0025_ardelia_mono_skill_comb_release_01",
         "title": "Penggunaan Kombo 1",
         "text": "Bakalan sakit, nih!"
       },
       {
+        "voId": "chr_0025_ardelia_mono_skill_comb_release_02",
         "title": "Penggunaan Kombo 2",
         "text": "Terjang maju!"
       },
       {
+        "voId": "chr_0025_ardelia_mono_attack_extra_01",
         "title": "Penuntas 1",
         "text": "Sekarang saatnya!"
       },
       {
+        "voId": "chr_0025_ardelia_mono_attack_extra_02",
         "title": "Penuntas 2",
         "text": "Pokoknya, pergi saja!"
       },
       {
+        "voId": "chr_0025_ardelia_mono_skill_ultimate_01",
         "title": "Ultimate 1",
         "text": "Pak Dolly, tolong!"
       },
       {
+        "voId": "chr_0025_ardelia_mono_skill_ultimate_02",
         "title": "Ultimate 2",
         "text": "Jangan jauh-jauh, Pak Dolly."
       },
       {
+        "voId": "chr_0025_ardelia_mono_skill_ultimate_03",
         "title": "Ultimate 3",
         "text": "Jangan kasar-kasar, Pak Dolly."
       }

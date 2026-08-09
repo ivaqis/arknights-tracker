@@ -126,318 +126,397 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0014_aurora_chrbark_squad_01",
         "title": "Operation Prep 1",
         "text": "Waiting for your orders, Endministrator."
       },
       {
+        "voId": "chr_0014_aurora_chrbark_squad_02",
         "title": "Operation Prep 2",
         "text": "Endmin! You're here!"
       },
       {
+        "voId": "chr_0014_aurora_chrbark_join_01",
         "title": "Adding to Team 1",
         "text": "A new field mission? I'm totally ready!"
       },
       {
+        "voId": "chr_0014_aurora_chrbark_join_02",
         "title": "Adding to Team 2",
         "text": "I'll protect everyone!"
       },
       {
+        "voId": "chr_0014_aurora_chrbark_weap_01",
         "title": "Switching Weapon",
         "text": "Wonderful performance! And it's also usable in extreme environments!"
       },
       {
+        "voId": "chr_0014_aurora_chrbark_gear_01",
         "title": "Switching Gear",
         "text": "The one who made this really gave it a lot of thought."
       },
       {
+        "voId": "chr_0014_aurora_chrup_skill_01",
         "title": "Ability Matrix Activation",
         "text": "I've been exercising really hard! Gotta get ready for all sorts of emergencies, you know!"
       },
       {
+        "voId": "chr_0014_aurora_chrup_level_01",
         "title": "Watching Combat Records",
         "text": "These records offer valuable references! They give me plenty of ideas for future SAR operations!"
       },
       {
+        "voId": "chr_0014_aurora_chrup_promt01_01",
         "title": "Operator Promotion 1",
         "text": "Mmh! Hard work always pays off! I'll not let Endfield or anyone down!"
       },
       {
+        "voId": "chr_0014_aurora_chrup_promt02_01",
         "title": "Operator Promotion 2",
         "text": "This gives an extension to my operational range, right? Don't worry! Count on me for all your needs in emergency rescues, data sampling, logistics support, and all kinds of field work!"
       },
       {
+        "voId": "chr_0014_aurora_chrup_promt03_01",
         "title": "Operator Promotion 3",
         "text": "I upgraded all my SAR ice-making Arts Units this time, Endmin! Look! I just built a temporary igloo! Come on in for a sleepover!"
       },
       {
+        "voId": "chr_0014_aurora_chrup_promt04_01",
         "title": "Operator Promotion 4",
         "text": "The time I spent with Endfield taught me many new things, and gave me many wonderful memories... Thanks for placing your faith in me, Endmin. From henceforth, I shall continue to climb ever higher peaks ... and to rescue as many people as I can."
       },
       {
+        "voId": "chr_0014_aurora_introduce_01",
         "title": "Operator Reporting for Duty",
         "text": "Greetings! I'm your operator from Rhodes Island. Codename's Snowshine. I'm a search and rescue expert specializing in low temperature operations. Get me on the team if you have a mission in the icefields or snowy mountains."
       },
       {
+        "voId": "chr_0014_aurora_mono_switch_01",
         "title": "Standing by 1",
         "text": "Wanna come snowboarding with me, Endmin?"
       },
       {
+        "voId": "chr_0014_aurora_mono_switch_02",
         "title": "Standing by 2",
         "text": "Wind speed's okay. Visibility's good. Perfect weather for snowboarding."
       },
       {
+        "voId": "chr_0014_aurora_sim_assign_work_01",
         "title": "Assigning to Facility",
         "text": "Not a problem! I've actually tried every job at this place! And they're way simpler than putting up fortifications!"
       },
       {
+        "voId": "chr_0014_aurora_sim_hello_lower_01",
         "title": "Greeting 1",
         "text": "Greetings, Endmin."
       },
       {
+        "voId": "chr_0014_aurora_sim_hello_max_01",
         "title": "Greeting 2",
         "text": "Need a hand, Endmin? I can be your defender!"
       },
       {
+        "voId": "chr_0014_aurora_sim_talk_lv01_01",
         "title": "Dijiang Idle Chatter 1",
         "text": "I learn tons of new stuff every time I step aboard Dijiang: There's tech and machinery that I've never seen before, special combat theories, bold monitoring plans... Oh, I can barely keep pace with everything! Endfield is just awesome! And I mean it!"
       },
       {
+        "voId": "chr_0014_aurora_sim_talk_lv02_01",
         "title": "Dijiang Idle Chatter 2",
         "text": "What? The Dijiang canteen has an all-you-can-eat snackbar?! Ah, apologies. I was just a little surprised... No, of course not! I'm not going to eat everything! Honest!"
       },
       {
+        "voId": "chr_0014_aurora_sim_talk_lv02_02",
         "title": "Dijiang Idle Chatter 3",
         "text": "Endmin! You came at just the right time! My package just arrived and I wonder if you're interested in trying out my special cheese fondue? The flavor...? I think it's quite ... special? Plenty of my colleagues told me it's an \"unforgettable experience of a lifetime\"..."
       },
       {
+        "voId": "chr_0014_aurora_sim_talk_max_01",
         "title": "Dijiang Idle Chatter 4",
         "text": "Hnnnggghh! Stretching will help limber up the joints. This routine can help prevent muscle tears and keep hypothermia at bay in polar environments. Wanna give it a go? Don't worry. I've been an assistant coach in the training sessions, so I can definitely get your posture right! — See? Easy, right?"
       },
       {
+        "voId": "chr_0014_aurora_sim_talk_max_02",
         "title": "Dijiang Idle Chatter 5",
         "text": "Lil' Dodge reminds me of our captain every time I see him. My captain's also a Perro. He's a really nice guy — but once an SAR mission begins, he turns into super bossy-boots. He even makes us do multiple caliber checks on the hot water drill bit... \"Every tiny detail matters in SAR!\" That's what I've learned from him."
       },
       {
+        "voId": "chr_0014_aurora_sim_talk_max_03",
         "title": "Dijiang Idle Chatter 6",
         "text": "The light reflecting off the clouds of Talos-II can be so beautiful. It reminds me of the aurora I know ... and the visions of my dreams. I often see them when I'm atop the highest peaks of the northern snowy mountains. I know the light is a form of dangerous Æther energy, but seeing it felt like meeting an old friend... One who watches me ... and protects me from afar..."
       },
       {
+        "voId": "chr_0014_aurora_sim_gift_give_01",
         "title": "Offering Gifts",
         "text": "Endmin, take this. It's a tiny something I brought from the snowfields."
       },
       {
+        "voId": "chr_0014_aurora_sim_gift_recv_01",
         "title": "Accepting Gifts",
         "text": "Is this for me? Oh, thank you! It's got such a warm feel... I'll definitely treasure it!"
       },
       {
+        "voId": "chr_0014_aurora_mono_self_line01",
         "title": "Trust Dialog 1",
         "text": "Look, Endmin! I used my Originium Arts to create this ice barrier! Super sturdy, right? Don't worry! Feel free to swing at it with more oomph! You won't put a crack in it!"
       },
       {
+        "voId": "chr_0014_aurora_mono_self_line02",
         "title": "Trust Dialog 2",
         "text": "Got some much-needed rest, Endmin? I always see you running all over the place with hardly a break... Hmm, you really should watch that work-life balance. Remember that last SAR training we had? You gave me quite the surprise when I carried you on my back... I could hardly believe you're lighter than a newborn burdenbeast calf..."
       },
       {
+        "voId": "chr_0014_aurora_mono_self_line03",
         "title": "Trust Dialog 3",
         "text": "Not every SAR operation is a success story... Sudden changes in weather or terrain can happen in ways faster than you expect. This is why I would triple-check my gear before setting off on a mission. Drones, thermal imaging cams ... every piece of equipment is an important assistant for any SAR operator. They're the reasons why we could launch bold rescue plans with confidence."
       },
       {
+        "voId": "chr_0014_aurora_mono_self_line04",
         "title": "Trust Dialog 4",
         "text": "I once rescued a father and his daughter in an avalanche... They probably had an argument and deliberately ignored each other in the temporary shelter I built. But when the blizzard came down hard, the father always set aside food for the girl, and the girl did her best to care for her old man... They were successfully evacced, but the two still refused to talk to each other. It made me wonder if that's what the bond of kinship is about. Even if they couldn't find the words, family would always stand up for each other in crucial moments..."
       },
       {
+        "voId": "chr_0014_aurora_mono_self_line05",
         "title": "Trust Dialog 5",
         "text": "Saving lives is no easy task. I never fantasized about rescuing everyone without making sacrifices. I'm the only one left from my cohort of SAR teammates. Blight disasters left a few with crippling disabilities. Some lost their minds in the frigid, snowy nights... There were times of confusion, and moments when I felt the touch of fear. But you Endfielders are so awesome, and so strong! I believe all of us will be capable of going further and higher, all thanks to your support, Endmin!"
       },
       {
+        "voId": "chr_0014_aurora_mono_chat_line01",
         "title": "Chat 1",
         "text": "What about this snowboard? It's a gift from Lady Warfarin when I left Rhodes Island. The board's constructed using rare materials, just like my shield. And it's ultra versatile in SAR missions! Hmm... Endmin, are you interested in snowboarding? I can totally teach you all about that!"
       },
       {
+        "voId": "chr_0014_aurora_mono_chat_line02",
         "title": "Chat 2",
         "text": "The Search and Rescue organization is under the Northern Corridor Rescue Union. Our missions typically involve messengers working in the north, traveling merchants, and military scouts who lost their way after being ambushed by the Aggeloi or beasts. My SAR teammates come from all across the world, and most of us are volunteers. The SAR experience was a constant battle against the ice, snow, and rough terrain, but it gave me a chance to meet all sorts of different people."
       },
       {
+        "voId": "chr_0014_aurora_mono_chat_line03",
         "title": "Chat 3",
         "text": "An operator recently asked me about joining the SAR. It isn't hard, really! Just constantly train yourself for mountaineering, endure hours of non-stop rescue operations, master some polar survival skills, learn how to avoid Ankhors and large beasts, and complete the full first-aid training course — at least to the level where you can handle sudden Oripathy! Finally, pass the special field trial designed by our captain and you'll become an official member of the SAR!"
       },
       {
+        "voId": "chr_0014_aurora_mono_chat_line04",
         "title": "Chat 4",
         "text": "I like the snow, the white-capped mountains, and the shimmering beauty revealed only in the frigid cold... This is why I don't want them to leave painful memories to the people they touch. When people see the snowy mountains, the first thing they remember should be the enrapturing views from the summit. And when the snow falls, I hope they think of pristine crystals and blossoms of ice... *Sigh* It would be so sad if all anyone thought of was catastrophe. Endmin, I will continue to strive towards these goals of mine."
       },
       {
+        "voId": "chr_0014_aurora_mono_chat_line05",
         "title": "Chat 5",
         "text": "Were you looking for me yesterday, Endmin? I'm so sorry I didn't notice back then. I was definitely taking a nap to make up for missing sleep. Yeah, napping is the first thing I'd do after coming back from an SAR mission... And sometimes I would accidentally oversleep by ... quite a bit. But you can simply wake me up if you got an emergency! The sound of your voice will get me up and ready in no time, Endmin!"
       },
       {
+        "voId": "chr_0014_aurora_mono_about_line01",
         "title": "Topic: Emergency SAR Training",
         "text": "Definitely! SAR training is super important! When natural disasters like an avalanche strike, people can quickly shelter themselves in safe, sturdy places ... And that would greatly improve their odds of survival! But this could only happen when people have strong disaster awareness... So, Endmin, you'll be attending the next SAR training session, right?"
       },
       {
+        "voId": "chr_0014_aurora_mono_about_line02",
         "title": "Topic: Gilberta",
         "text": "Is Miss Gilberta aboard Dijiang as well? Oh, it's just that she really went out of her way to help us in multiple SAR missions. She delivered vital supplies, air-lifted the injured, and even pinpointed a mid-air SOS signal in the middle of a terrible blizzard! The SAR team tried giving her a token of our appreciation but she turned everything down. In the end, she asked for a few photos of a nice view from the snowy peaks. Heheh. What do you think of this one? I made the photo frame myself as well!"
       },
       {
+        "voId": "chr_0014_aurora_mono_about_line03",
         "title": "Topic: Polar Survival",
         "text": "Polar survival is not easy... Essential knowledge includes proper overnight camping to avoid hypothermia during blizzards, finding edible food in the Blighted icefields, identifying sturdy footholds to cross glaciers ... and most importantly, plotting a safe passage to the objective — This means you have to learn how to avoid the Aggeloi, hungry beasts, and other dangers in disaster zones."
       },
       {
+        "voId": "chr_0014_aurora_explore_point_common_01",
         "title": "Resource/Collectible Detected 1",
         "text": "We should gather these resources! They might come in handy for rescue operations."
       },
       {
+        "voId": "chr_0014_aurora_explore_point_valub_01",
         "title": "Resource/Collectible Detected 2",
         "text": "Seems like a terrific discovery. Perhaps they'll be useful for future operations!"
       },
       {
+        "voId": "chr_0014_aurora_explore_find_locked_01",
         "title": "Unexplored Area Detected",
         "text": "Our drones haven't surveyed this area. We should be alert, people."
       },
       {
+        "voId": "chr_0014_aurora_explore_find_danger_01",
         "title": "Powerful Enemy Discovered",
         "text": "Everyone! Be cautious! That enemy looks very dangerous!"
       },
       {
+        "voId": "chr_0014_aurora_interact_mine_valub_01",
         "title": "Mining 1",
         "text": "High quality minerals. We can probably use them for building temporary shelters..."
       },
       {
+        "voId": "chr_0014_aurora_interact_mine_valub_echo2_01",
         "title": "Mining 2",
         "text": "Let's do this together. It'll make things faster."
       },
       {
+        "voId": "chr_0014_aurora_interact_treasure_valub_01",
         "title": "Opening a Crate",
         "text": "Let's add this to our emergency stockpile!"
       },
       {
+        "voId": "chr_0014_aurora_interact_etherium_01",
         "title": "Acquiring Aurylene",
         "text": "Is this Aurylene? How pretty... We should stash it properly!"
       },
       {
+        "voId": "chr_0014_aurora_interact_blight_break_01",
         "title": "Eliminating the Blight",
         "text": "Elimination success! And check for any damages on your Blight-resistant coating, people!"
       },
       {
+        "voId": "chr_0014_aurora_interact_rest_01",
         "title": "Rest",
         "text": "Want some cheese? It's great for restoring your stamina!"
       },
       {
+        "voId": "chr_0014_aurora_combat_suppuse_using_01",
         "title": "Tactical Use 1",
         "text": "Emergency treatment administered!"
       },
       {
+        "voId": "chr_0014_aurora_combat_suppuse_getheal_01",
         "title": "Tactical Use 2",
         "text": "Sorry...! Let me catch my breath!"
       },
       {
+        "voId": "chr_0014_aurora_combat_remind_danger_01",
         "title": "Danger Warning",
         "text": "Don't get hit by this!"
       },
       {
+        "voId": "chr_0014_aurora_combat_hurt_lowhp_01",
         "title": "Injured",
         "text": "It's okay. I can tough it out..."
       },
       {
+        "voId": "chr_0014_aurora_combat_dead_01",
         "title": "0 HP",
         "text": "Sorry... I couldn't weather this storm..."
       },
       {
+        "voId": "chr_0014_aurora_combat_remind_praise_01",
         "title": "Team Encouragement 1",
         "text": "Awesome teamwork!"
       },
       {
+        "voId": "chr_0014_aurora_combat_remind_praise_02",
         "title": "Team Encouragement 2",
         "text": "Fabulous work!"
       },
       {
+        "voId": "chr_0014_aurora_combat_remind_praise_echo2_01",
         "title": "Encouragement Response 1",
         "text": "Let's keep up the good work!"
       },
       {
+        "voId": "chr_0014_aurora_combat_remind_praise_echo2_02",
         "title": "Encouragement Response 2",
         "text": "Thanks for your support!"
       },
       {
+        "voId": "chr_0014_aurora_combat_intobattle_01",
         "title": "Combat Begins 1",
         "text": "Clearing the way for the rescue!"
       },
       {
+        "voId": "chr_0014_aurora_combat_intobattle_echo2_01",
         "title": "Combat Begins 2",
         "text": "Yeah! Freeze them!"
       },
       {
+        "voId": "chr_0014_aurora_combat_outbattle_nor_01",
         "title": "Combat Victory 1",
         "text": "Hoo. The battle has ended. Let's take a break while we still can."
       },
       {
+        "voId": "chr_0014_aurora_combat_outbattle_nor_02",
         "title": "Combat Victory 2",
         "text": "Everyone's giving their all. I've got to step up too!"
       },
       {
+        "voId": "chr_0014_aurora_combat_outbattle_nor_echo2_01",
         "title": "Combat Victory 3",
         "text": "Great teamwork, everyone!"
       },
       {
+        "voId": "chr_0014_aurora_combat_outbattle_hard_01",
         "title": "Combat Victory 4",
         "text": "Don't feel bad. Endure the storm and approach our goal! Save our strength and we'll reach the safe zone early!"
       },
       {
+        "voId": "chr_0014_aurora_combat_battle_defeat_01",
         "title": "Combat Defeat",
         "text": "Don't give up! Let's suit up and do our prep work! Then we'll do this again!"
       },
       {
+        "voId": "chr_0014_aurora_mono_attack_last_01",
         "title": "Final Strike 1",
         "text": "Freezing cleave!"
       },
       {
+        "voId": "chr_0014_aurora_mono_attack_last_02",
         "title": "Final Strike 2",
         "text": "Coldernado!"
       },
       {
+        "voId": "chr_0014_aurora_mono_skill_nor_strike_01",
         "title": "Battle Skill 1",
         "text": "Back off!"
       },
       {
+        "voId": "chr_0014_aurora_mono_skill_nor_strike_02",
         "title": "Battle Skill 2",
         "text": "Passage denied!"
       },
       {
+        "voId": "chr_0014_aurora_mono_skill_nor_strike_03",
         "title": "Battle Skill 3",
         "text": "Snowshine protects!"
       },
       {
+        "voId": "chr_0014_aurora_combat_skill_comb_ready_01",
         "title": "Combo Skill Ready 1",
         "text": "Prepped and ready!"
       },
       {
+        "voId": "chr_0014_aurora_combat_skill_comb_ready_02",
         "title": "Combo Skill Ready 2",
         "text": "Set for rescue!"
       },
       {
+        "voId": "chr_0014_aurora_mono_skill_comb_release_01",
         "title": "Combo Casting 1",
         "text": "Breathe with me!"
       },
       {
+        "voId": "chr_0014_aurora_mono_skill_comb_release_02",
         "title": "Combo Casting 2",
         "text": "EMS has arrived!"
       },
       {
+        "voId": "chr_0014_aurora_mono_attack_extra_01",
         "title": "Finisher 1",
         "text": "Away with YOU!"
       },
       {
+        "voId": "chr_0014_aurora_mono_attack_extra_02",
         "title": "Finisher 2",
         "text": "You're going DOWN!"
       },
       {
+        "voId": "chr_0014_aurora_mono_skill_ultimate_01",
         "title": "Ultimate 1",
         "text": "Storm of frost!"
       },
       {
+        "voId": "chr_0014_aurora_mono_skill_ultimate_02",
         "title": "Ultimate 2",
         "text": "Shield of ice!"
       },
       {
+        "voId": "chr_0014_aurora_mono_skill_ultimate_03",
         "title": "Ultimate 3",
         "text": "By ice and snow! Freeze!"
       }

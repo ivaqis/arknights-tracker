@@ -122,318 +122,397 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0005_chen_chrbark_squad_01",
         "title": "行動準備1",
         "text": "準備？嘿，我的劍可沒有懈怠的時候！"
       },
       {
+        "voId": "chr_0005_chen_chrbark_squad_02",
         "title": "行動準備2",
         "text": "能不能讓我再往前站一點？我想第一個出門！"
       },
       {
+        "voId": "chr_0005_chen_chrbark_join_01",
         "title": "編入隊伍1",
         "text": "輪到我們了？該出手時就出手嘛。"
       },
       {
+        "voId": "chr_0005_chen_chrbark_join_02",
         "title": "編入隊伍2",
         "text": "交給我就對啦！"
       },
       {
+        "voId": "chr_0005_chen_chrbark_weap_01",
         "title": "更換武器",
         "text": "哇，給我用這麼好的傢伙？普通的也夠了啦，照樣能把他們揍得屁滾尿流！"
       },
       {
+        "voId": "chr_0005_chen_chrbark_gear_01",
         "title": "更換裝備",
         "text": "嗯……大俠應該穿得更輕便才對嘛。"
       },
       {
+        "voId": "chr_0005_chen_chrup_skill_01",
         "title": "解鎖天賦陣列",
         "text": "劍招千遍，其勢自明！"
       },
       {
+        "voId": "chr_0005_chen_chrup_level_01",
         "title": "觀看作戰紀錄",
         "text": "這樣，再這樣？好咧，我已經明白了！"
       },
       {
+        "voId": "chr_0005_chen_chrup_promt01_01",
         "title": "精英化晉升1",
         "text": "我特地請佩麗卡把我的晉升環節留到現在！來自終末地的認可，當然得是你這個核心人物親口告訴我我才能放心啦。"
       },
       {
+        "voId": "chr_0005_chen_chrup_promt02_01",
         "title": "精英化晉升2",
         "text": "怎麼樣，我有沒有打破最快晉升紀錄？我在談劍堂可是提前畢業的——很驚訝？嘿嘿，在那邊我一直是第一喔！"
       },
       {
+        "voId": "chr_0005_chen_chrup_promt03_01",
         "title": "精英化晉升3",
         "text": "看來我不只在武學上有天賦嘛，當你的幹員是不是也是一把好手？哎呀，誇得我都不好意思了啦——再來兩句！"
       },
       {
+        "voId": "chr_0005_chen_chrup_promt04_01",
         "title": "精英化晉升4",
         "text": "不，還遠遠沒到頭呢。管理員，我曾聽說，媽媽的劍能碰觸到天上的雲彩。我會做到的，然後，成為你和佩麗卡最信任的人！"
       },
       {
+        "voId": "chr_0005_chen_introduce_01",
         "title": "幹員報到",
         "text": "管理員！我——嗯？走流程？哦，懂了懂了。終末地幹員陳千語，前來報到！"
       },
       {
+        "voId": "chr_0005_chen_mono_switch_01",
         "title": "待命1",
         "text": "起勢——！怎麼樣，帥不帥？"
       },
       {
+        "voId": "chr_0005_chen_mono_switch_02",
         "title": "待命2",
         "text": "嘿，在這裡，管理員！"
       },
       {
+        "voId": "chr_0005_chen_sim_assign_work_01",
         "title": "進駐設施",
         "text": "收到收到，管理員你就放一百個心吧。"
       },
       {
+        "voId": "chr_0005_chen_sim_hello_lower_01",
         "title": "打招呼1",
         "text": "你好啊，管理員。要陪我練練劍嗎？"
       },
       {
+        "voId": "chr_0005_chen_sim_hello_max_01",
         "title": "打招呼2",
         "text": "哎呀，管理員，剩下的還是交給我吧。工作休息要平衡！"
       },
       {
+        "voId": "chr_0005_chen_sim_talk_lv01_01",
         "title": "帝江號閒聊1",
         "text": "……哇！差點沒看到你，管理員！嘿嘿，剛才我在思考新想到的劍招，沒看路。"
       },
       {
+        "voId": "chr_0005_chen_sim_talk_lv02_01",
         "title": "帝江號閒聊2",
         "text": "離開宏山的時候沒想到自己會天天待在這~麼高的地方。這樣一看，塔衛二也很渺小呢。不知道我和我的劍，最終能抵達哪裡……塔羅斯有可能嗎，管理員？"
       },
       {
+        "voId": "chr_0005_chen_sim_talk_lv02_02",
         "title": "帝江號閒聊3",
         "text": "管理員，之前借給你的武俠傳記你有看嗎？小說？不不不，那才不是小說，都是真實發生在大炎過去的故事喔！「以指為劍」很難想像？的確呢……不過「拳定春秋」更離譜吧？"
       },
       {
+        "voId": "chr_0005_chen_sim_talk_max_01",
         "title": "帝江號閒聊4",
         "text": "我？唉唷——在放鬆肌肉呢。來到終末地之後，光是每天出任務，體能訓練量就夠了！要不然……我也幫你鬆一鬆？我可是知道幾個穴位喔！來嘛來嘛，把外套脫了，別客氣！"
       },
       {
+        "voId": "chr_0005_chen_sim_talk_max_02",
         "title": "帝江號閒聊5",
         "text": "我正要去武庫取劍，一起嗎？話說，我本來想在劍柄上刻字來著，只是一直沒想好刻「當破即破」還是「當斷即斷」……管理員，你幫我出出主意吧！"
       },
       {
+        "voId": "chr_0005_chen_sim_talk_max_03",
         "title": "帝江號閒聊6",
         "text": "最近經常感覺到有一些瓶頸呢。和技術無關，總覺得是心情方面的問題。傳說有一些神兵利器就是會根據主人心境的變化而變化的……但我這只是普通的劍啊！管理員，幫幫忙嘛。"
       },
       {
+        "voId": "chr_0005_chen_sim_gift_give_01",
         "title": "贈送禮物",
         "text": "我們常說「禮輕情意重」。倘若真的心懷情意，又會覺得送什麼禮都嫌輕，但願你能喜歡！"
       },
       {
+        "voId": "chr_0005_chen_sim_gift_recv_01",
         "title": "接收禮物",
         "text": "給我的？！哇……我現在就拆開看看！"
       },
       {
+        "voId": "chr_0005_chen_mono_self_line01",
         "title": "信賴對話1",
         "text": "以前總是聽著佩麗卡唸叨你，現在你本人就這樣活生生站在我眼前，這感覺還真奇妙欸！什麼？才不會失望呢！看著她嘴裡那個天下無敵、舉世無雙的傢伙在我旁邊吃飯睡覺，超有趣的耶——欸，這裡，你嘴角帶便當了。"
       },
       {
+        "voId": "chr_0005_chen_mono_self_line02",
         "title": "信賴對話2",
         "text": "離開家鄉，來到終末地之前，我在環帶遊歷過一段時間。嘿嘿，其實一開始我還蠻期待經歷些類似「事了拂衣去，深藏功與名」的事情。可真的切身體驗了宏山之外的人間百態，我意識到俠客是不能對自己行為的後果視而不見的。所以，步伐就慢了，去的地方就少了。無妨，以後補回來就是。"
       },
       {
+        "voId": "chr_0005_chen_mono_self_line03",
         "title": "信賴對話3",
         "text": "應該是十歲……差不多十一歲的時候吧，我在談劍堂的後山偷偷練劍，卻遇見了離群的天使。那是我第一次提劍實戰。我把斷劍帶回家的時候，父親表揚了我，但也問了我一個問題：我的劍只是斷了，那些沒劍的人，又該怎麼辦呢？嘿，別看他平常那個樣，這一問，我到今天都還在思考。"
       },
       {
+        "voId": "chr_0005_chen_mono_self_line04",
         "title": "信賴對話4",
         "text": "為什麼要來終末地？嗯……說來話長。但如果你一定要問是哪個時刻——我想，是在和某個穿著光鮮亮麗的黎博利一起把那輛馱獸車推出泥坑的時候吧。佩麗卡那時候的笑是發自內心的。當時我就想，剩下的路途，或許我可以不用一個人走了。"
       },
       {
+        "voId": "chr_0005_chen_mono_self_line05",
         "title": "信賴對話5",
         "text": "應龍拿起職責放下了同伴，媽媽拿起赤霄放下了我。在拿起更「重」的東西之前……大家似乎都要先放下那些更「輕」的。但終末地走過的地方，沒有輕重之分，沒有東西被放下——終末地拿得起整個塔衛二，而我還能再多拿一把劍！"
       },
       {
+        "voId": "chr_0005_chen_mono_chat_line01",
         "title": "交談1",
         "text": "讓佩麗卡休息是件難事，幸好我對付師兄師姐們的技巧反過來就能在這裡用上：想讓他們動起來得把所有的事都交給他們，想讓佩麗卡休息當然就是把所有的事都一口氣幫她做完啦……啊？這不算技巧嗎？"
       },
       {
+        "voId": "chr_0005_chen_mono_chat_line02",
         "title": "交談2",
         "text": "髮型？其實很簡單，只要對準頭上的兩個角，就很容易梳對稱啦。這是大院子裡的王奶奶教我的辦法，說是他們豐蹄的獨門秘訣……哎呀，院子裡的孩子都是這樣，說不清是誰帶大的，大家都像一家人一樣親呢。"
       },
       {
+        "voId": "chr_0005_chen_mono_chat_line03",
         "title": "交談3",
         "text": "我的劍法可謂集百家之長！首先肯定是談劍堂的師父教的，板正、俐落，極盡實用；然後是小時候鬧著讓媽媽帶我練劍學到的，傳承悠遠、招數繁雜，每招每式都別有蘊意；最後嘛……是我看那些傳記小說自己琢磨的。大俠總得有一兩招自創的獨門秘技，對吧？"
       },
       {
+        "voId": "chr_0005_chen_mono_chat_line04",
         "title": "交談4",
         "text": "武陵的空氣總是濕濕的，黏黏的，我習慣了好一陣子呢。在侵蝕潮漲起的時候，宿舍的牆壁上就會凝結出水珠。但那裡的飯菜好吃啊，人也——呃，大多數人都不錯。心事？沒有！絕對沒有想起什麼討厭的人！"
       },
       {
+        "voId": "chr_0005_chen_mono_chat_line05",
         "title": "交談5",
         "text": "「千語」這個名字據說是媽媽幫我取的。簡單、好寫——多虧如此，不然以前被師父罰寫的時候要費很多力氣呢。"
       },
       {
+        "voId": "chr_0005_chen_mono_about_line01",
         "title": "話題：宏山",
         "text": "從帝江號的艦橋往下看，可以看到宏山環形山呢。兩年前我除了迷茫，什麼都沒從那帶走。那些走過的路從艦橋上看下去只有指甲這麼長……不過，等到這距離能用手掌丈量——甚至手掌都不夠用的時候，我大概就能把這些迷茫都丟光了吧！"
       },
       {
+        "voId": "chr_0005_chen_mono_about_line02",
         "title": "話題：失蹤的母親",
         "text": "媽媽有一把赤紅色的劍。她說，那是很早以前，一位大炎的俠女贈送給我們祖上的，是我們的傳家寶。我甚至看過很多宏山來的老爺爺老奶奶對著那把劍長吁短嘆。之後，媽媽就和那把劍一起消失了。長大一點後我才明白，那把劍不只是劍，是一條道路、一種信念。我還是想去找她，只不過，這次小千語會帶著自己的劍去找她。"
       },
       {
+        "voId": "chr_0005_chen_mono_about_line03",
         "title": "話題：佩麗卡",
         "text": "我最早見到佩麗卡的時候，她就是個努力到不行的人。偶爾聽她提起她拼命的原因，是跟一個叫管理員的人有關，我還替她打抱不平呢。可是真的見到了管理員，好像也能理解一點……除去那些偉大的理想之類的，佩麗卡也許只是單純地想要能和你肩並肩前行而已呢。"
       },
       {
+        "voId": "chr_0005_chen_explore_point_common_01",
         "title": "發現資源1",
         "text": "那裡是不是有什麼東西？"
       },
       {
+        "voId": "chr_0005_chen_explore_point_valub_01",
         "title": "發現資源2",
         "text": "發現寶物！我們快過去看看！"
       },
       {
+        "voId": "chr_0005_chen_explore_find_locked_01",
         "title": "發現未探索區域",
         "text": "咦？這裡我們是不是沒來過？"
       },
       {
+        "voId": "chr_0005_chen_explore_find_danger_01",
         "title": "發現強敵",
         "text": "那裡好像有個厲害的傢伙，讓我來試試手吧。"
       },
       {
+        "voId": "chr_0005_chen_interact_mine_valub_01",
         "title": "採集礦物1",
         "text": "沒想到吧？我有專門對付石頭的劍法。"
       },
       {
+        "voId": "chr_0005_chen_interact_mine_valub_echo2_01",
         "title": "採集礦物2",
         "text": "剩下的交給我吧，用劍更快！"
       },
       {
+        "voId": "chr_0005_chen_interact_treasure_valub_01",
         "title": "打開儲藏箱",
         "text": "秘笈總是放在這種箱子裡面呢！"
       },
       {
+        "voId": "chr_0005_chen_interact_etherium_01",
         "title": "獲得醚質",
         "text": "圓又圓，亮晶晶……原來醚質是這個大小啊。"
       },
       {
+        "voId": "chr_0005_chen_interact_blight_break_01",
         "title": "消除侵蝕",
         "text": "抽刀斷水大概也是這種感覺吧。"
       },
       {
+        "voId": "chr_0005_chen_interact_rest_01",
         "title": "休整",
         "text": "休息一下，磨刀不誤砍柴工嘛！"
       },
       {
+        "voId": "chr_0005_chen_combat_suppuse_using_01",
         "title": "使用戰術物品1",
         "text": "快，用這個！"
       },
       {
+        "voId": "chr_0005_chen_combat_suppuse_getheal_01",
         "title": "使用戰術物品2",
         "text": "呼……恢復過來了！"
       },
       {
+        "voId": "chr_0005_chen_combat_remind_danger_01",
         "title": "危險提醒",
         "text": "小心，快退後！"
       },
       {
+        "voId": "chr_0005_chen_combat_hurt_lowhp_01",
         "title": "負傷",
         "text": "嗯……我沒事！先對付他們。"
       },
       {
+        "voId": "chr_0005_chen_combat_dead_01",
         "title": "力竭",
         "text": "嗚……可惡……"
       },
       {
+        "voId": "chr_0005_chen_combat_remind_praise_01",
         "title": "小隊激勵1",
         "text": "你這招很帥嘛！"
       },
       {
+        "voId": "chr_0005_chen_combat_remind_praise_02",
         "title": "小隊激勵2",
         "text": "耶！剛剛的配合簡直完美！"
       },
       {
+        "voId": "chr_0005_chen_combat_remind_praise_echo2_01",
         "title": "回應激勵1",
         "text": "嘿嘿，應該的！"
       },
       {
+        "voId": "chr_0005_chen_combat_remind_praise_echo2_02",
         "title": "回應激勵2",
         "text": "眾人合，劍招成！"
       },
       {
+        "voId": "chr_0005_chen_combat_intobattle_01",
         "title": "作戰開始1",
         "text": "劍起有光，光若奔夜！"
       },
       {
+        "voId": "chr_0005_chen_combat_intobattle_echo2_01",
         "title": "作戰開始2",
         "text": "交給我。"
       },
       {
+        "voId": "chr_0005_chen_combat_outbattle_nor_01",
         "title": "作戰勝利1",
         "text": "呼——意料之中。"
       },
       {
+        "voId": "chr_0005_chen_combat_outbattle_nor_02",
         "title": "作戰勝利2",
         "text": "這次輕鬆。"
       },
       {
+        "voId": "chr_0005_chen_combat_outbattle_nor_echo2_01",
         "title": "作戰勝利3",
         "text": "做得好！"
       },
       {
+        "voId": "chr_0005_chen_combat_outbattle_hard_01",
         "title": "作戰勝利4",
         "text": "好險。快，先搶救傷患！"
       },
       {
+        "voId": "chr_0005_chen_combat_battle_defeat_01",
         "title": "作戰失敗",
         "text": "……再來！"
       },
       {
+        "voId": "chr_0005_chen_mono_attack_last_01",
         "title": "重擊1",
         "text": "吃這招！"
       },
       {
+        "voId": "chr_0005_chen_mono_attack_last_02",
         "title": "重擊2",
         "text": "看劍！"
       },
       {
+        "voId": "chr_0005_chen_mono_skill_nor_01",
         "title": "戰技1",
         "text": "挑！"
       },
       {
+        "voId": "chr_0005_chen_mono_skill_nor_02",
         "title": "戰技2",
         "text": "洗！"
       },
       {
+        "voId": "chr_0005_chen_mono_skill_nor_03",
         "title": "戰技3",
         "text": "截！"
       },
       {
+        "voId": "chr_0005_chen_combat_skill_comb_ready_01",
         "title": "連攜技就緒1",
         "text": "趁現在！"
       },
       {
+        "voId": "chr_0005_chen_combat_skill_comb_ready_02",
         "title": "連攜技就緒2",
         "text": "交給我吧！"
       },
       {
+        "voId": "chr_0005_chen_mono_skill_comb_release_01",
         "title": "連攜技1",
         "text": "輪到我了！"
       },
       {
+        "voId": "chr_0005_chen_mono_skill_comb_release_02",
         "title": "連攜技2",
         "text": "你的對手在這！"
       },
       {
+        "voId": "chr_0005_chen_mono_attack_extra_01",
         "title": "處決1",
         "text": "有破綻！"
       },
       {
+        "voId": "chr_0005_chen_mono_attack_extra_02",
         "title": "處決2",
         "text": "斷！"
       },
       {
+        "voId": "chr_0005_chen_mono_skill_ultimate_01",
         "title": "終結技1",
         "text": "當破即破！"
       },
       {
+        "voId": "chr_0005_chen_mono_skill_ultimate_02",
         "title": "終結技2",
         "text": "當斷即斷！"
       },
       {
+        "voId": "chr_0005_chen_mono_skill_ultimate_03",
         "title": "終結技3",
         "text": "當棄即棄！"
       }

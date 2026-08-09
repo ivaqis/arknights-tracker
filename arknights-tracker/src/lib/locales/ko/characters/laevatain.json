@@ -136,326 +136,407 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0016_laevat_chrbark_squad_01",
         "title": "작전 준비 1",
         "text": "귀찮은 거 싫어, 근데 따분한 건 더 싫어."
       },
       {
+        "voId": "chr_0016_laevat_chrbark_squad_02",
         "title": "작전 준비 2",
         "text": "이번 작전이 기억할 만한 가치가 있어야 할 텐데 말이야."
       },
       {
+        "voId": "chr_0016_laevat_chrbark_join_01",
         "title": "팀 가입 1",
         "text": "나 하나면 충분해."
       },
       {
+        "voId": "chr_0016_laevat_chrbark_join_02",
         "title": "팀 가입 2",
         "text": "검처럼, 그리고 불꽃처럼."
       },
       {
+        "voId": "chr_0016_laevat_chrbark_weap_01",
         "title": "무기 변경",
         "text": "괜찮은 검이야, 내 불꽃을 버틸 수 있었으면 좋겠네."
       },
       {
+        "voId": "chr_0016_laevat_chrbark_gear_01",
         "title": "장비 변경",
         "text": "이 정도는 나한테 가볍지. 방화처리를 해야 하는 거 아니냐고? 그딴 거 필요 없어."
       },
       {
+        "voId": "chr_0016_laevat_chrup_skill_01",
         "title": "재능 배열 활성화",
         "text": "이제, 내 실력을 알겠지?"
       },
       {
+        "voId": "chr_0016_laevat_chrup_level_01",
         "title": "작전 기록 관찰",
         "text": "참고할 가치가 있네, 딱 그 정도야."
       },
       {
+        "voId": "chr_0016_laevat_chrup_promt01_01",
         "title": "정예화 돌파 1",
         "text": "그래서 이건 격려야? 아니면 인정? 사실 다 필요 없어. 그냥 눈에 거슬리는 녀석들을 겸사겸사 재로 만들어 버렸을 뿐이니까."
       },
       {
+        "voId": "chr_0016_laevat_chrup_promt02_01",
         "title": "정예화 돌파 2",
         "text": "그러니까 이제부터 내 권한으로 너한테 1년에 한번 정도는 1대1 면담을 신청할 수 있다는 거지? 그럼 지금 당장 나랑 같이 바람 쐬러 가자."
       },
       {
+        "voId": "chr_0016_laevat_chrup_promt03_01",
         "title": "정예화 돌파 3",
         "text": "또야? 격려나 포상의 증표 같은 건 필요 없는데... 음, 그러면 이렇게 하자. 만약 이게 우리들의 추억을 대표하는 거라면 잘 간직해 둘게. 그 증명으로써 말이야."
       },
       {
+        "voId": "chr_0016_laevat_chrup_promt04_01",
         "title": "정예화 돌파 4",
         "text": "너희들 말이야, 요즘 점점 나한테 의지하는 것 같은데... 좋아, 그럼 기댈 수 있게 해줄게. 이제부턴 날 엔드필드의 오퍼레이터 레바테인이라고 불러도 돼... 야, 그 표정은 뭐야!"
       },
       {
+        "voId": "chr_0016_laevat_introduce_01",
         "title": "오퍼레이터 첫인사",
         "text": "우리 어디서 만난 적 있지 않아? 자기소개는 됐고, 검이랑 불꽃으로 날 기억해 줘."
       },
       {
+        "voId": "chr_0016_laevat_mono_switch_01",
         "title": "명령 대기 1",
         "text": "난 제멋대로 이래라저래라 하는 녀석이 싫어, 다행히 넌 아니네."
       },
       {
+        "voId": "chr_0016_laevat_mono_switch_02",
         "title": "명령 대기 2",
         "text": "나 불렀어? 뭐 기억난 거라도 있는 거야?"
       },
       {
+        "voId": "chr_0016_laevat_sim_assign_work_01",
         "title": "시설 배치",
         "text": "가끔은 여기서 시간을 좀 낭비하는 것도 나쁘진 않지..."
       },
       {
+        "voId": "chr_0016_laevat_sim_hello_lower_01",
         "title": "인사 1",
         "text": "어? 여기 있었네."
       },
       {
+        "voId": "chr_0016_laevat_sim_hello_max_01",
         "title": "인사 2",
         "text": "너구나... 오해하진 마, 일부러 널 기다린 건 아니니까."
       },
       {
+        "voId": "chr_0016_laevat_sim_talk_lv01_01",
         "title": "제강호 잡담 1",
         "text": "왜 여기서 빈둥거리는 거야? 가자, 갑판으로. 네가 걸어온 길이랑 앞으로 가야 할 길, 모두 나한테 설명해."
       },
       {
+        "voId": "chr_0016_laevat_sim_talk_lv02_01",
         "title": "제강호 잡담 2",
         "text": "음... 아이스크림을 식당에서 무제한으로 먹을 수 있게 해 준 지원 부서한테 진짜로 고맙다는 말을 전하고 싶어. 너도 하나 갖다줄까?"
       },
       {
+        "voId": "chr_0016_laevat_sim_talk_lv02_02",
         "title": "제강호 잡담 3",
         "text": "이따가 처리할 임무가 있는데, 같이 갈래? 아니, 프로토콜 전송은 필요 없어. 강하 캡슐이 난 더 좋거든. 불꽃이랑 날카로운 소리에 휩싸여서 녀석들 머리 위에 내리꽂는 거야!"
       },
       {
+        "voId": "chr_0016_laevat_sim_talk_max_01",
         "title": "제강호 잡담 4",
         "text": "춥다고? 내가 온도를 낮추라고 했어. 누가 바람 쐴 곳도 없는 배를 만들래? 정 그렇게 추우면 나한테 좀 가까이 오든지 말든지."
       },
       {
+        "voId": "chr_0016_laevat_sim_talk_max_02",
         "title": "제강호 잡담 5",
         "text": "시간만 있으면 아이스크림을 먹으면서 하루 종일 밖을 볼 수도 있을 것 같아. 내 머릿속엔 수백수천 개의 기억이 있지만, 이 각도에서 바라보는 대지랑 별에 대한 기억은 없거든."
       },
       {
+        "voId": "chr_0016_laevat_sim_talk_max_03",
         "title": "제강호 잡담 6",
         "text": "기억 안 나는 걸 아직도 붙잡고 있는 거야? 하, 기억 안 나면 그냥 안 나는 대로 넘어가. 그거 할 시간에 앞으로의 일들을 기억하라고."
       },
       {
+        "voId": "chr_0016_laevat_sim_gift_give_01",
         "title": "선물 증정",
         "text": "네 거야. 계속 날 기억해 준 것에 대한 보상이지. 응? 소중한 사람을 잊지 않는 것 그 자체가 보상이라고? 하..."
       },
       {
+        "voId": "chr_0016_laevat_sim_gift_recv_01",
         "title": "선물 수락",
         "text": "응? 난 선물 받는 걸 좋아하진 않아, 왜냐하면 마지막에는 어차피 다 잊어버릴 거잖아? 근데 네가 준 거라면... 얘기가 좀 달라지지."
       },
       {
+        "voId": "chr_0016_laevat_mono_self_line01",
         "title": "신뢰 대화 1",
         "text": "'레바테인'. 맞아, 내가 직접 고른 이름이야, 검에서 따 왔지. 진짜 이름이 아니라는 말이 있다고? 내가 길들인 검이니까, 그 이름도 당연히 내 거야. 꼭 그 기억들처럼... 기억의 지배자가 되어야지, 지배를 당해선 안 되지 않겠어?"
       },
       {
+        "voId": "chr_0016_laevat_mono_self_line02",
         "title": "신뢰 대화 2",
         "text": "내 머릿속엔 아직도 수많은 기억의 조각들이 떠다니고 있어. 내가 의식하고 있지 않을 뿐이지, 사라지지 않거든. 언젠가 눈앞의 잡다한 일들을 모두 정리하고 나면 이런 '기억'을 따라서 새로운 여행을 시작할지도 모르겠네."
       },
       {
+        "voId": "chr_0016_laevat_mono_self_line03",
         "title": "신뢰 대화 3",
         "text": "수르트의 분노, 상실감, 방황... 이 모든 기억은 내 머릿 속에 남아 있어. 아주 생생하게 말이야. 하지만 수르트 자신이 마지막에 내린 선택이라고 생각하면 , 나도 받아들이게 되더라고."
       },
       {
+        "voId": "chr_0016_laevat_mono_self_line04",
         "title": "신뢰 대화 4",
         "text": "리컨비너의 사명? 관심 없어. 그냥 또 하나의 강제로 주입된 '기억'일 뿐이야. 너희랑 함께 싸우겠다고 결심하게 된 건, 여기서 만난 사람, 걸어왔던 길, 머물렀던 갑판, 내가 혼내줬던 나쁜 녀석들... 이런 진정한 나만의 기억들 때문이야."
       },
       {
+        "voId": "chr_0016_laevat_mono_self_line05",
         "title": "신뢰 대화 5",
         "text": "예전엔 이해가 안 됐어, 네가 왜 나처럼 과거를 내려놓지 못하는지 말이야. 근데 엔드필드에서 지내다 보니 알겠더라. 넌 수많은 기대 속에 둘러싸인 '관리자'이자, 모두가 마음 깊이 바라는 '구세주'의 투영이라는 걸. 하지만 다른 사람의 바람 속에서 진정한 자신을 찾아서는 안 돼. 그러니까 넌 자신의 기억 속에서 널 찾아야 한다는 거지... 그리고 그 길, 내가 같이 가 줄게."
       },
       {
+        "voId": "chr_0016_laevat_mono_chat_line01",
         "title": "대화 1",
         "text": "이 망가진 '링' 말이야? 내 반려동물이자 '아츠 유닛'인 셈이지. 엔드필드의 무기고 공학자들이 이 녀석의 구체적인 원리를 연구해서 수리해 보려고 했는데... 이 녀석 스스로가 그걸 거절했어."
       },
       {
+        "voId": "chr_0016_laevat_mono_chat_line02",
         "title": "대화 2",
         "text": "왔어? 이것 좀 봐줄래? 와파린이 보낸 퍼즐인데, 여기에 테라의 풍경이랑 사람들, 역사까지 담겨 있다고 하더라고. 진짜 이상할 정도로 커서 꽤 오래 맞췄는데도 아직 다 못 했어. 불탄 자국만 너무 뚫어지게 보진 마, 나랑 상관없다고. 퍼즐을 받았을 때부터 저랬단 말이야."
       },
       {
+        "voId": "chr_0016_laevat_mono_chat_line03",
         "title": "대화 3",
         "text": "탈로스 II에서 밤을 보내야 될 때면 난 항상 제강호랑 엔드필드의 사람들이랑 있었던 일들을 꿈꾸곤 해. 언젠가 내 머릿속 나랑 상관없는 기억이 모두 사라지고, 직접 겪은 나만의 기억으로 다시 가득 차는 날이 오겠지?"
       },
       {
+        "voId": "chr_0016_laevat_mono_chat_line04",
         "title": "대화 4",
         "text": "무엇을 위해 검을 들고 싸우냐고? 언젠가 산꼭대기에서 온 세상이 불길에 휩싸이는 걸 보기 위해서지... 표정이 왜 그래? 난 그냥 오랫동안 날 괴롭혀왔던 악몽을 이야기해 준 것뿐이야. 걱정하지 마, 절대 이걸 현실로 만들진 않을 테니까."
       },
       {
+        "voId": "chr_0016_laevat_mono_chat_line05",
         "title": "대화 5",
         "text": "가끔 난 황무지를 헤매는 유랑자가 되기도 하고, 또 어떤 때는 도시를 파괴하는 하수인이 되기도 해. 조금 전까지 정원에서 꽃을 다듬고 있다가도, 바로 다음 순간에는 연구실에서 코를 찌르는 약품 냄새를 맡고 있지. 얼굴도 안 보이는 상대랑 결투를 하기도 하는데, 왜 검을 뽑았는지 모를 때도 있어... 졸면 안 되지, 제대로 된 얘기는 아직 시작도 안 했다고."
       },
       {
+        "voId": "chr_0016_laevat_mono_about_line01",
         "title": "세쉬카에 관하여",
         "text": "고향? 난 '세쉬카'라고 불리는 곳에 가본 적이 있어. 건물부터 언어, 기념일, 주술까지... 확실히 '집' 같은 친숙함이 느껴지긴 했지. 근데 다시 가고 싶은 생각은 없어. 사람들이 지나치게 열정적인 데다가, 날 보고 '다이아볼릭'... 이라고 부르는 사람도 있었거든... 그땐 진짜 머리끝까지 짜증 나서 난리를 좀 쳤지..."
       },
       {
+        "voId": "chr_0016_laevat_mono_about_line02",
         "title": "이본에 관하여",
         "text": "그 분홍머리 와이번 말이야, 자꾸 자기 '꽁꽁이'를 테스트하겠다고 날 찾아오는데, 정작 단 한 번도 내 불꽃을 꺼본 적은 없어. 뭐, 그래도 걔가 만든 아이스크림은 꽤 먹음직스럽게 생긴 데다가 진짜 맛있더라고."
       },
       {
+        "voId": "chr_0016_laevat_mono_about_line03",
         "title": "만물의 대지에 관하여",
         "text": "'바람의 손에 담긴 불꽃은 재앙의 불씨이나, 사람의 손에 담긴 불꽃은 희망의 씨앗이다'. 만물의 대지에서 온 방랑자가 나한테 해준 말이야. 불꽃을 무서워하기는커녕, 오히려 황무지에서 '방화선'을 만들어서 산불이 더 퍼지지 못하게 막는 법을 가르쳐 준 녀석이거든. 그때 살아남은 마을 사람들은 우리를 영웅이라고 환대해줬어. 근데 난 그것보다도 불 속에서 구해낸 클라우드비스트가 더 신경쓰이더라고. 물론 아쉽게도 녀석한테 줘버렸지만."
       },
       {
+        "voId": "chr_0016_laevat_mono_about_line04",
         "title": "상업연합회에 관하여",
         "text": "관리자, 인사 부서에서 나한테 널 직접 찾아가라고 했어. 자, 이 수배령 받아. 별 건 아니고, 로도스 아일랜드를 막 떠났을 때 '아스팔트 라운드어바웃'이라는 곳에서 불을 좀 지른 적이 있었거든. 부정하게 돈을 버는 주제에... 당연히 나중에 '불똥이 튈 거라는 것'쯤은 예상해야 되지 않겠어?"
       },
       {
+        "voId": "chr_0016_laevat_mono_about_line05",
         "title": "사미에 관하여",
         "text": "딱 한번만 더 말해주는데, 난 진짜로 테라에 가본 적이 없어. 그러니까, 나한테 테라의 풍습이나 사람들 얘기는 하지 마... 사미만 빼고. 사미 사람들이 말하는 '고향'이라는 거, 듣기로는 직접 사람들을 태우고 탈로스 II까지 왔다며? 언젠가 거기로 가야 할 임무가 있으면 꼭 나도 불러줘."
       },
       {
+        "voId": "chr_0016_laevat_explore_point_common_01",
         "title": "자원 발견 1",
         "text": "저쪽에 있는 거 말이야, 안 쓸 거면 검 연습용으로 쓰자."
       },
       {
+        "voId": "chr_0016_laevat_explore_point_valub_01",
         "title": "자원 발견 2",
         "text": "저기, 저거 잊지 말고 챙겨 가자고."
       },
       {
+        "voId": "chr_0016_laevat_explore_find_locked_01",
         "title": "미탐색 구역 발견",
         "text": "가보자, 나만 잘 따라오면 안전해."
       },
       {
+        "voId": "chr_0016_laevat_explore_find_danger_01",
         "title": "강한 적 발견",
         "text": "저 녀석 봤어? 내가 처리해 줄까?"
       },
       {
+        "voId": "chr_0016_laevat_interact_mine_valub_01",
         "title": "광물 채집 1",
         "text": "진짜 가치 있는 건 불에도 잘 견디는 법이지."
       },
       {
+        "voId": "chr_0016_laevat_interact_mine_valub_echo2_01",
         "title": "광물 채집 2",
         "text": "너무 느리잖아! 기다리는 건 질색이야."
       },
       {
+        "voId": "chr_0016_laevat_interact_treasure_valub_01",
         "title": "보물 상자 열기",
         "text": "너 이런 거 좋아했지?"
       },
       {
+        "voId": "chr_0016_laevat_interact_etherium_01",
         "title": "오리렌 획득",
         "text": "오리렌... 꼭 내 기억처럼 잡히질 않네."
       },
       {
+        "voId": "chr_0016_laevat_interact_blight_break_01",
         "title": "침식 제거",
         "text": "불꽃보다 더 위험한 녀석이야."
       },
       {
+        "voId": "chr_0016_laevat_interact_rest_01",
         "title": "휴식",
         "text": "아직도 추우면 나한테 가까이 오는 것 정도는 허락할게."
       },
       {
+        "voId": "chr_0016_laevat_combat_suppuse_using_01",
         "title": "전술 아이템 사용 1",
         "text": "억지로 버티든지, 말든지."
       },
       {
+        "voId": "chr_0016_laevat_combat_suppuse_getheal_01",
         "title": "전술 아이템 사용 2",
         "text": "흥, 이제 됐어."
       },
       {
+        "voId": "chr_0016_laevat_combat_remind_danger_01",
         "title": "위험 경고",
         "text": "뭘 그렇게 멍하니 있어."
       },
       {
+        "voId": "chr_0016_laevat_combat_hurt_lowhp_01",
         "title": "부상",
         "text": "쳇... 죽을 정도는 아니야."
       },
       {
+        "voId": "chr_0016_laevat_combat_dead_01",
         "title": "탈진",
         "text": "젠장... 이것도 기억해야겠지..."
       },
       {
+        "voId": "chr_0016_laevat_combat_remind_praise_01",
         "title": "팀 격려 1",
         "text": "꽤 하잖아! 기억해 두겠어."
       },
       {
+        "voId": "chr_0016_laevat_combat_remind_praise_02",
         "title": "팀 격려 2",
         "text": "음, 좋아. 다음에는 내가 할게."
       },
       {
+        "voId": "chr_0016_laevat_combat_remind_praise_echo2_01",
         "title": "격려 응답 1",
         "text": "알고 있어."
       },
       {
+        "voId": "chr_0016_laevat_combat_remind_praise_echo2_02",
         "title": "격려 응답 2",
         "text": "할 일을 했을 뿐이야."
       },
       {
+        "voId": "chr_0016_laevat_combat_intobattle_01",
         "title": "작전 시작 1",
         "text": "한참 기다렸잖아."
       },
       {
+        "voId": "chr_0016_laevat_combat_intobattle_echo2_01",
         "title": "작전 시작 2",
         "text": "진작에 시작했어야지."
       },
       {
+        "voId": "chr_0016_laevat_combat_outbattle_nor_01",
         "title": "작전 승리 1",
         "text": "준비운동조차 안 되잖아."
       },
       {
+        "voId": "chr_0016_laevat_combat_outbattle_nor_02",
         "title": "작전 승리 2",
         "text": "승리는 당연한 거야."
       },
       {
+        "voId": "chr_0016_laevat_combat_outbattle_nor_echo2_01",
         "title": "작전 승리 3",
         "text": "너희랑 같이 환호해 줄게."
       },
       {
+        "voId": "chr_0016_laevat_combat_outbattle_hard_01",
         "title": "작전 승리 4",
         "text": "이미 충분히 잘했어. 다음번에는 까다로운 놈부터 나한테 넘겨."
       },
       {
+        "voId": "chr_0016_laevat_combat_battle_defeat_01",
         "title": "작전 실패",
         "text": "다신 이런 일 없을 거야."
       },
       {
+        "voId": "chr_0016_laevat_mono_attack_last_01",
         "title": "강력한 일격 1",
         "text": "절단!"
       },
       {
+        "voId": "chr_0016_laevat_mono_attack_last_02",
         "title": "강력한 일격 2",
         "text": "파멸!"
       },
       {
+        "voId": "chr_0016_laevat_mono_skill_nor_01",
         "title": "배틀 스킬 1",
         "text": "융화의 불꽃!"
       },
       {
+        "voId": "chr_0016_laevat_mono_skill_nor_02",
         "title": "배틀 스킬 2",
         "text": "모조리 태워버려!"
       },
       {
+        "voId": "chr_0016_laevat_mono_skill_nor_03",
         "title": "배틀 스킬 3",
         "text": "불꽃에 삼켜져라!"
       },
       {
+        "voId": "chr_0016_laevat_combat_skill_comb_ready_01",
         "title": "연계 스킬 준비 완료 1",
         "text": "내가 처리하지!"
       },
       {
+        "voId": "chr_0016_laevat_combat_skill_comb_ready_02",
         "title": "연계 스킬 준비 완료 2",
         "text": "불꽃이 밀려올 거야!"
       },
       {
+        "voId": "chr_0016_laevat_mono_skill_comb_release_01",
         "title": "연계 스킬 1",
         "text": "불타올라라!"
       },
       {
+        "voId": "chr_0016_laevat_mono_skill_comb_release_02",
         "title": "연계 스킬 2",
         "text": "잿더미로 만들어주지!"
       },
       {
+        "voId": "chr_0016_laevat_mono_attack_extra_01",
         "title": "처형 1",
         "text": "소용없어!"
       },
       {
+        "voId": "chr_0016_laevat_mono_attack_extra_02",
         "title": "처형 2",
         "text": "죽어라!"
       },
       {
+        "voId": "chr_0016_laevat_mono_skill_ultimate_01",
         "title": "궁극기 1",
         "text": "황혼을 비춰라!"
       },
       {
+        "voId": "chr_0016_laevat_mono_skill_ultimate_02",
         "title": "궁극기 2",
         "text": "어둠을 태워라!"
       },
       {
+        "voId": "chr_0016_laevat_mono_skill_ultimate_03",
         "title": "궁극기 3",
         "text": "작별 인사할 시간이야!"
       }

@@ -126,322 +126,402 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0012_avywen_chrbark_squad_01",
         "title": "Chuẩn Bị Tác Chiến 1",
         "text": "Chà, chà, Endmin, có vẻ như số phận đã dẫn ngài đến chỗ tôi rồi."
       },
       {
+        "voId": "chr_0012_avywen_chrbark_squad_02",
         "title": "Chuẩn Bị Tác Chiến 2",
         "text": "Này, này, đừng chớp mắt kẻo tôi biến mất đấy."
       },
       {
+        "voId": "chr_0012_avywen_chrbark_join_01",
         "title": "Đang thêm vào đội 1",
         "text": "Ồ, ngài tin tưởng tôi đến mức tiêu nhiều thế cơ à? Tôi cảm động đấy."
       },
       {
+        "voId": "chr_0012_avywen_chrbark_join_02",
         "title": "Đang thêm vào đội 2",
         "text": "Lại gần phía trước chút đi nào? Tôi không thích khoảng cách này đâu."
       },
       {
+        "voId": "chr_0012_avywen_chrbark_weap_01",
         "title": "Đang đổi vũ khí",
         "text": "Trong nhà tôi, chúng tôi luôn nói vũ khí là một phần thân thể. Vũ khí của tôi vô tình còn giúp tôi cao hơn nữa!"
       },
       {
+        "voId": "chr_0012_avywen_chrbark_gear_01",
         "title": "Đang đổi trang bị",
         "text": "Một hành trình tuyệt vời không chỉ nằm ở điểm đến mà còn nằm ở đôi giày đưa ta tới đó. Bởi vậy tôi không bao giờ tiếc tiền khi đầu tư cho bản thân."
       },
       {
+        "voId": "chr_0012_avywen_chrup_skill_01",
         "title": "Kích hoạt Ma Trận Năng Lực",
         "text": "Tôi không tin nổi mình đã đi được xa đến thế! Quê hương và những ngày xưa ấy... giờ như một thế giới khác vậy."
       },
       {
+        "voId": "chr_0012_avywen_chrup_level_01",
         "title": "Xem Hồ Sơ Chiến Đấu",
         "text": "Liệu người khác có xem được những trận chiến này không? Một vài người có thể nhận ra cây giáo của tôi. Tốt nhất là họ đừng biết tên tôi thì hơn..."
       },
       {
+        "voId": "chr_0012_avywen_chrup_promt01_01",
         "title": "Thăng Bậc Cán Viên 1",
         "text": "Đừng lo. Tin tôi đi, tôi là dân chuyên đấy."
       },
       {
+        "voId": "chr_0012_avywen_chrup_promt02_01",
         "title": "Thăng Bậc Cán Viên 2",
         "text": "Ha! Tôi biết ngay là rồi ngài cũng sẽ nghiện cảm giác này thôi! Giờ thì gì tiếp theo đây nhỉ?"
       },
       {
+        "voId": "chr_0012_avywen_chrup_promt03_01",
         "title": "Thăng Bậc Cán Viên 3",
         "text": "Chuyện này vừa hợp lý với công việc, vừa hợp với tôi, nên... nếu hơi nghiêng về cá nhân một chút thì cũng không sao chứ, nhỉ? Thôi nào, đừng đỏ mặt chứ! Tôi hiểu rõ ý ngài muốn nói gì rồi!"
       },
       {
+        "voId": "chr_0012_avywen_chrup_promt04_01",
         "title": "Thăng Bậc Cán Viên 4",
         "text": "Tôi lớn lên trong một gia đình luôn tranh giành vị trí số một nên chuyện giữ phong độ là bản năng của tôi. Nhưng mà này Endmin, hứa là ngài sẽ luôn nghĩ đến tôi đầu tiên nhé?"
       },
       {
+        "voId": "chr_0012_avywen_introduce_01",
         "title": "Cán Viên đang báo cáo nhiệm vụ",
         "text": "Chà, chà, xem ai đây này, Endministrator huyền thoại! Trên đường đến đây tôi có nghe được vài lời đồn. Muốn biết tin nào là thật không? Vì ngài chưa biết rõ tôi lắm nên tôi có đề nghị thế này: tôi kể cho ngài một bí mật, đổi lại, ngài kể tôi nghe một điều về ngài. Sao nào? Đồng ý chứ?"
       },
       {
+        "voId": "chr_0012_avywen_mono_switch_01",
         "title": "Chờ Lệnh 1",
         "text": "Chúng ta sẽ đi đâu đây?"
       },
       {
+        "voId": "chr_0012_avywen_mono_switch_02",
         "title": "Chờ Lệnh 2",
         "text": "Từ góc này trông tôi ổn chứ?"
       },
       {
+        "voId": "chr_0012_avywen_sim_assign_work_01",
         "title": "Phân Công Vào Công Trình",
         "text": "Đi thôi, không có thời gian để chần chừ!"
       },
       {
+        "voId": "chr_0012_avywen_sim_hello_lower_01",
         "title": "Lời Chào 1",
         "text": "Này, Endmin. Dạo này ổn chứ?"
       },
       {
+        "voId": "chr_0012_avywen_sim_hello_max_01",
         "title": "Lời Chào 2",
         "text": "Endmin, bạn thân mến! Gặp lại tuyệt thật đấy! Không phải đang tránh mặt tôi đấy chứ?"
       },
       {
+        "voId": "chr_0012_avywen_sim_talk_lv01_01",
         "title": "Trò Chuyện Nhàn Rỗi Dijiang 1",
         "text": "Này Endmin, lại gặp nhau rồi. Và ừ, ngài vẫn giữ nguyên phong độ đấy, y như năm phút trước nhỉ?"
       },
       {
+        "voId": "chr_0012_avywen_sim_talk_lv02_01",
         "title": "Trò Chuyện Nhàn Rỗi Dijiang 2",
         "text": "Tôi phải nói là ngài đã đặt cả trái tim mình vào việc xây dựng Dijiang. Thật đáng kinh ngạc, mới lơ lửng ở đây chút xíu thôi mà đã vượt qua cả chặng đường tôi mất bao năm trời."
       },
       {
+        "voId": "chr_0012_avywen_sim_talk_lv02_02",
         "title": "Trò Chuyện Nhàn Rỗi Dijiang 3",
         "text": "Trên mặt ngài dính gì thế? Không không, bên kia cơ... Haha, chỉ đùa chút thôi mà. Hiếm khi thấy ngài lúng túng như vậy đấy!"
       },
       {
+        "voId": "chr_0012_avywen_sim_talk_max_01",
         "title": "Trò Chuyện Nhàn Rỗi Dijiang 4",
         "text": "Ngài biết không, từ trên Cầu Tàu nhìn xuống, Talos-II thật sự trông như một quả cầu khổng lồ. Có lẽ điều đó có nghĩa là dù chúng ta đi đâu, cũng sẽ luôn quay về với nhau."
       },
       {
+        "voId": "chr_0012_avywen_sim_talk_max_02",
         "title": "Trò Chuyện Nhàn Rỗi Dijiang 5",
         "text": "Tôi lại chuẩn bị lên đường phiêu lưu tiếp đây! Cần gì sao? Nói nhanh đi không thì phải đợi lần sau đấy nhé!"
       },
       {
+        "voId": "chr_0012_avywen_sim_talk_max_03",
         "title": "Trò Chuyện Nhàn Rỗi Dijiang 6",
         "text": "Vẫn còn sống sau buổi xem phim kinh dị đêm qua à? Chậc, có vẻ tôi phải tăng độ kinh hoàng lên lần tới thôi. Đừng lo, tôi sẽ lôi ngài theo cho bằng được!"
       },
       {
+        "voId": "chr_0012_avywen_sim_gift_give_01",
         "title": "Tặng Quà",
         "text": "Tôi đã phải cố gắng nhiều lắm mới mang thứ này về cho ngài. Nó có gợi lại kỷ niệm nào không?"
       },
       {
+        "voId": "chr_0012_avywen_sim_gift_recv_01",
         "title": "Nhận quà",
         "text": "Một cô gái xinh như tôi thì đúng là nhận được cả đống quà, nhưng món này từ ngài... thật sự đặc biệt."
       },
       {
+        "voId": "chr_0012_avywen_mono_self_line01",
         "title": "Đối Thoại Tín Nhiệm 1",
         "text": "Con người có lúc cũng phức tạp ghê ha. Ngày xưa, tôi chẳng phải nghĩ gì nhiều. Công việc chỉ là chuyển hàng từ điểm A đến điểm B. Nhưng rồi tôi lỡ xông vào một rạp xiếc, mọi thứ trở nên... *Thở dài* Thôi, chuyện đó để lần khác tôi kể hết cho nghe nhé?"
       },
       {
+        "voId": "chr_0012_avywen_mono_self_line02",
         "title": "Đối Thoại Tín Nhiệm 2",
         "text": "Lúc làm công việc cũ, lương tôi phải gọi là... cả gia tài so với mức bây giờ! *Cười khúc khích* Nhà tôi không bao giờ chịu thiệt. Mà tôi chắc ngài biết điều gì đã bù lại khoảng chênh lệch đó rồi nhỉ? Chỉ là... ngài còn ngại chưa chịu nói ra thôi."
       },
       {
+        "voId": "chr_0012_avywen_mono_self_line03",
         "title": "Đối Thoại Tín Nhiệm 3",
         "text": "Tôi đã đi từ Vành Đai, chịu đựng cái lạnh nơi tiền tuyến cũ, ngủ qua bao đêm trắng trong mấy túp lều của Trường Địa Hannabit, ngắm tàu của người Seš'qa trôi qua bầu trời, và nghe mưa không dứt bên pháo đài của Hội Lời Thề Thép. Và suốt những chặng đường đó, Endmin, tên của ngài vang vọng."
       },
       {
+        "voId": "chr_0012_avywen_mono_self_line04",
         "title": "Đối Thoại Tín Nhiệm 4",
         "text": "Cứ gọi tôi là Lamp đi. Avywenna là họ của tôi. Này, đừng cười nha, tôi nói nghiêm túc đấy. Giữ bí mật giữa hai ta thôi nhé? Tôi không muốn có kẻ xấu tìm đến ngài. Trừ phi... Ồ? Ngài muốn làm người bảo vệ tôi à?"
       },
       {
+        "voId": "chr_0012_avywen_mono_self_line05",
         "title": "Đối Thoại Tín Nhiệm 5",
         "text": "Endmin, Talos-II rộng lớn lắm. Ngài đã đặt chân đến bao nhiêu nơi rồi? À phải... thế ngài nhớ được bao nhiêu trong số đó? Tôi mong ngài sẽ nhớ ra từng chỗ một. Càng nhiều kỷ niệm chung thì càng tuyệt, đúng không?"
       },
       {
+        "voId": "chr_0012_avywen_mono_chat_line01",
         "title": "Trò Chuyện 1",
         "text": "Gia đình tôi là người Bander, làm nghề liên lạc viên truyền tin trong suốt nhiều thế hệ. Còn gia đình ngài thì sao, Endmin?"
       },
       {
+        "voId": "chr_0012_avywen_mono_chat_line02",
         "title": "Trò Chuyện 2",
         "text": "Ta-da! Đây là góc nhỏ của tôi nè. Tôi ít khi có mặt ở đây lắm, nhưng vẫn muốn giữ cho nó mềm mại và ấm cúng một chút. Dân hay rong ruổi như tôi thì cũng cần chỗ trú chân chứ!"
       },
       {
+        "voId": "chr_0012_avywen_mono_chat_line03",
         "title": "Trò Chuyện 3",
         "text": "Liên lạc viên như tôi phải chuyển đi không ít bí mật, mà bí mật nào cũng đi kèm cái giá đắt đỏ. Nhưng còn thứ đắt hơn cả chi phí giao hàng, đó là... sự im lặng của tôi về những chuyện ấy."
       },
       {
+        "voId": "chr_0012_avywen_mono_chat_line04",
         "title": "Trò Chuyện 4",
         "text": "Chẳng ai thích bị từ chối cả... nên nếu có thể nói chuyện đàng hoàng, tôi vẫn muốn vậy hơn là phải động tay động chân. Nhưng nói rõ trước nhé, tôi ghét bị từ chối lắm đấy."
       },
       {
+        "voId": "chr_0012_avywen_mono_chat_line05",
         "title": "Trò Chuyện 5",
         "text": "Ngài nhớ ông già Laine chứ? Cái ông khó ưa đó chưa từng cười với tôi lần nào. Nghe bảo ông ấy là cựu nhân viên kỳ cựu, nghỉ việc mà khiến bao người khóc như mưa. Hừm, ông còn gọi tôi là \"đồ rắc rối\" trước khi tống tôi tới đây nữa kìa. Thì cứ cho là rắc rối đi, ít ra tôi cũng là kiểu rắc rối có năng lực!"
       },
       {
+        "voId": "chr_0012_avywen_mono_about_line01",
         "title": "Chủ đề: Endfield",
         "text": "Endfield là nơi tôi ở lại lâu nhất, trừ quê nhà Alloycarrot. Xem ra tôi cũng đang quen dần với cái kiểu định cư này rồi."
       },
       {
+        "voId": "chr_0012_avywen_mono_about_line02",
         "title": "Chủ đề: Doanh nghiệp gia đình",
         "text": "Tổ tiên tôi từng là tài xế xe tải hồi Cổng Không Gian còn mở. Mấy chiếc xe khổng lồ từng tạo nên một con đường kim loại lấp lánh dọc theo đường chân trời. Sau đó, cụ cố, bà ngoại, rồi mẹ tôi đều làm cho An Ninh Sloan ở Vành Đai! Ba người phụ nữ ấy từng la tôi muốn bể não khi biết tôi bỏ việc... E hèm. Nói cho rõ, không phải tôi đi lạc vào nơi tử tế của ngài đâu, Endmin."
       },
       {
+        "voId": "chr_0012_avywen_mono_about_line03",
         "title": "Chủ đề: Thời Trang",
         "text": "Quần áo của tôi hả? Vừa phong cách, vừa tiện dụng! Hãy nhớ kỹ điều này nếu ngài có vào vùng hoang địa: đồ phải gọn gàng, đầu phải cúi thấp."
       },
       {
+        "voId": "chr_0012_avywen_mono_about_line04",
         "title": "Chủ đề: Alloycarrot",
         "text": "Trời đất ơi, ngài chưa từng đến Alloycarrot á? Tôi không khoe đâu, nhưng tôi đã đi khắp Talos-II rồi, không đâu sánh bằng vẻ quyến rũ của mấy hầm mỏ quê tôi. Lũ trẻ lớn lên giữa bè bạn thân thiết và tiếng cười rộn ràng. Chúng tôi luôn nói thứ duy nhất cứng hơn mũi khoan là tình bạn của tụi tôi!"
       },
       {
+        "voId": "chr_0012_avywen_explore_point_common_01",
         "title": "Phát hiện Tài Nguyên/Có Thể Thu Thập 1",
         "text": "Thiết bị của tôi đang kêu tích tắc. Chắc gần đây có gì hay ho đó!"
       },
       {
+        "voId": "chr_0012_avywen_explore_point_valub_01",
         "title": "Phát hiện Tài Nguyên/Có Thể Thu Thập 2",
         "text": "Theo tôi! Lần trước đi ngang qua đây tôi đã đánh dấu kho báu rồi!"
       },
       {
+        "voId": "chr_0012_avywen_explore_find_locked_01",
         "title": "Phát Hiện Khu Vực Chưa Khám Phá",
         "text": "Trời đất, vẫn còn chỗ tôi chưa từng đến á?"
       },
       {
+        "voId": "chr_0012_avywen_explore_find_danger_01",
         "title": "Phát hiện Kẻ Địch Mạnh",
         "text": "Có vẻ như không thể thương lượng được rồi."
       },
       {
+        "voId": "chr_0012_avywen_interact_mine_valub_01",
         "title": "Khai thác 1",
         "text": "Hãy xem kỹ năng tổ truyền từ tổ tiên Rim Billiton đây!"
       },
       {
+        "voId": "chr_0012_avywen_interact_mine_valub_echo2_01",
         "title": "Khai thác 2",
         "text": "Người Rim Billie tụi tôi lúc nào cũng đùm bọc lẫn nhau!"
       },
       {
+        "voId": "chr_0012_avywen_interact_treasure_valub_01",
         "title": "Mở Thùng",
         "text": "Suỵt! Tụi tôi thường chôn tạm đồ quý để không ai để ý tới chúng..."
       },
       {
+        "voId": "chr_0012_avywen_interact_etherium_01",
         "title": "Nhận Aurylene",
         "text": "Aurylene?! Sao ngài biết tôi mê mấy thứ lấp lánh vậy?"
       },
       {
+        "voId": "chr_0012_avywen_interact_blight_break_01",
         "title": "Xua Tan Nhiễm Khuẩn",
         "text": "Nói thật là có khi tôi còn dùng nó để phòng thân trước một số thành phần nữa đó."
       },
       {
+        "voId": "chr_0012_avywen_interact_rest_01",
         "title": "Nghỉ ngơi",
         "text": "Chao ôi, cảm giác ấm áp và dễ chịu này đúng là hoàn hảo. Sau khi bị dính bẩn, dính mưa các kiểu, mà kiếm được chỗ sạch sẽ ấm áp như này thì đúng là như lên thiên đường."
       },
       {
+        "voId": "chr_0012_avywen_combat_suppuse_using_01",
         "title": "Sử Dụng Vật Phẩm Chiến Thuật 1",
         "text": "May mà tôi có chuẩn bị sẵn cái này."
       },
       {
+        "voId": "chr_0012_avywen_combat_suppuse_getheal_01",
         "title": "Sử Dụng Vật Phẩm Chiến Thuật 2",
         "text": "Cũng phải tự thưởng cho mình đôi chút chứ."
       },
       {
+        "voId": "chr_0012_avywen_combat_remind_danger_01",
         "title": "Cảnh Báo Nguy Hiểm",
         "text": "Tìm chỗ an toàn đi!"
       },
       {
+        "voId": "chr_0012_avywen_combat_hurt_lowhp_01",
         "title": "Bị Thương",
         "text": "Đừng lo, tôi vẫn ổn."
       },
       {
+        "voId": "chr_0012_avywen_combat_dead_01",
         "title": "0 HP",
         "text": "Cho tôi quay mặt về quê nhà... một lần cuối."
       },
       {
+        "voId": "chr_0012_avywen_combat_remind_praise_01",
         "title": "Cổ Vũ Đội 1",
         "text": "Hay lắm! Ngài từng nghĩ đến chuyện thử làm nghề của tôi chưa?"
       },
       {
+        "voId": "chr_0012_avywen_combat_remind_praise_02",
         "title": "Cổ Vũ Đội 2",
         "text": "Nhìn tụi mình đi, đúng kiểu một đại gia đình luôn!"
       },
       {
+        "voId": "chr_0012_avywen_combat_remind_praise_echo2_01",
         "title": "Đáp Lại Lời Cổ Vũ 1",
         "text": "Ừ đó, tôi ngầu vậy đó."
       },
       {
+        "voId": "chr_0012_avywen_combat_remind_praise_echo2_02",
         "title": "Đáp Lại Lời Cổ Vũ 2",
         "text": "Cảm giác này... giống như đang ở nhà vậy."
       },
       {
+        "voId": "chr_0012_avywen_combat_intobattle_01",
         "title": "Bắt Đầu Chiến Đấu 1",
         "text": "Bước đầu lúc nào cũng là khó nhất."
       },
       {
+        "voId": "chr_0012_avywen_combat_intobattle_echo2_01",
         "title": "Bắt Đầu Chiến Đấu 2",
         "text": "Cho chúng biết tay đi!"
       },
       {
+        "voId": "chr_0012_avywen_combat_outbattle_nor_01",
         "title": "Thắng Trận 1",
         "text": "Nói lúc nào cũng dễ. Làm mới khó."
       },
       {
+        "voId": "chr_0012_avywen_combat_outbattle_nor_02",
         "title": "Thắng Trận 2",
         "text": "Không sao đâu, chuyện thường ở huyện mà."
       },
       {
+        "voId": "chr_0012_avywen_combat_outbattle_nor_echo2_01",
         "title": "Thắng Trận 3",
         "text": "Đúng rồi, hãy giữ vững tinh thần đó!"
       },
       {
+        "voId": "chr_0012_avywen_combat_outbattle_hard_01",
         "title": "Thắng Trận 4",
         "text": "Liên Lạc Viên chúng tôi có một câu nói xưa: Muốn đi trên con đường đúng thì đừng nhìn xuống chỗ đặt chân, mà hãy dõi theo phía chân trời."
       },
       {
+        "voId": "chr_0012_avywen_combat_battle_defeat_01",
         "title": "Bại Trận",
         "text": "Khoản thù lao lần này tôi sẽ nhận khi chúng ta báo thù thành công."
       },
       {
+        "voId": "chr_0012_avywen_mono_attack_last_01",
         "title": "Đòn Dứt Điểm 1",
         "text": "Đừng chớp mắt!"
       },
       {
+        "voId": "chr_0012_avywen_mono_attack_last_02",
         "title": "Đòn Dứt Điểm 2",
         "text": "Tới liền tới liền!"
       },
       {
+        "voId": "chr_0012_avywen_mono_skill_nor_01",
         "title": "KN Chiến Đấu 1",
         "text": "Cẩn thận, điện giật!"
       },
       {
+        "voId": "chr_0012_avywen_mono_skill_nor_02",
         "title": "KN Chiến Đấu 2",
         "text": "Tránh ra."
       },
       {
+        "voId": "chr_0012_avywen_mono_skill_nor_03",
         "title": "KN Chiến Đấu 3",
         "text": "Chạy đâu cho thoát?"
       },
       {
+        "voId": "chr_0012_avywen_combat_skill_comb_ready_01",
         "title": "Chuẩn Bị KN Liên Hoàn 1",
         "text": "Đừng quên tôi đó nha!"
       },
       {
+        "voId": "chr_0012_avywen_combat_skill_comb_ready_02",
         "title": "Chuẩn Bị KN Liên Hoàn 2",
         "text": "Bắt tôi chờ hơi lâu rồi đó!"
       },
       {
+        "voId": "chr_0012_avywen_mono_skill_comb_release_01",
         "title": "Thi Triển Liên Hoàn 1",
         "text": "Tùy cơ ứng biến!"
       },
       {
+        "voId": "chr_0012_avywen_mono_skill_comb_release_02",
         "title": "Thi Triển Liên Hoàn 2",
         "text": "Tập trung vào mục tiêu."
       },
       {
+        "voId": "chr_0012_avywen_mono_attack_extra_01",
         "title": "Kết Liễu 1",
         "text": "Lộ sơ hở rồi!"
       },
       {
+        "voId": "chr_0012_avywen_mono_attack_extra_02",
         "title": "Kết Liễu 2",
         "text": "Tóm được nhé."
       },
       {
+        "voId": "chr_0012_avywen_mono_skill_ultimate_01",
         "title": "Tuyệt Kỹ 1",
         "text": "Tôi không thuộc dạng nhẹ tay đâu."
       },
       {
+        "voId": "chr_0012_avywen_mono_skill_ultimate_02",
         "title": "Tuyệt Kỹ 2",
         "text": "Tin xấu đang tới!"
       },
       {
+        "voId": "chr_0012_avywen_mono_skill_ultimate_03",
         "title": "Tuyệt Kỹ 3",
         "text": "Run rẩy đi, trước đòn đánh của tôi!"
       }

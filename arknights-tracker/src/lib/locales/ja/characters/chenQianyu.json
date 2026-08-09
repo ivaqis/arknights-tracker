@@ -122,318 +122,397 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0005_chen_chrbark_squad_01",
         "title": "作戦準備1",
         "text": "準備？うんうん、剣も大丈夫だって。"
       },
       {
+        "voId": "chr_0005_chen_chrbark_squad_02",
         "title": "作戦準備2",
         "text": "前行ってもいい？やっぱ、一番に出たくってさ。"
       },
       {
+        "voId": "chr_0005_chen_chrbark_join_01",
         "title": "編成1",
         "text": "あたしの出番？よーし、やっちゃうよ！"
       },
       {
+        "voId": "chr_0005_chen_chrbark_join_02",
         "title": "編成2",
         "text": "あたしに任せて！"
       },
       {
+        "voId": "chr_0005_chen_chrbark_weap_01",
         "title": "武器取替",
         "text": "ん？こんないいやつじゃなくて、普通のでいいよ。相手、腰抜かしちゃうかもだし。"
       },
       {
+        "voId": "chr_0005_chen_chrbark_gear_01",
         "title": "装備取替",
         "text": "うーん……侠客はさ、やっぱ身軽なほうがよくない？"
       },
       {
+        "voId": "chr_0005_chen_chrup_skill_01",
         "title": "素質・配属スキル解放",
         "text": "「幾千剣振れば、勢い自明なり」ってことだね！"
       },
       {
+        "voId": "chr_0005_chen_chrup_level_01",
         "title": "経験値素材を使用",
         "text": "こうやって、ほー……うんうん。「悟った」かも！"
       },
       {
+        "voId": "chr_0005_chen_chrup_promt01_01",
         "title": "昇進1",
         "text": "ペリカに頼んで、手続き待ってもらってたんだ。エンドフィールドのオペレーターならやっぱさ、管理人から直接聞きたいなって。"
       },
       {
+        "voId": "chr_0005_chen_chrup_promt02_01",
         "title": "昇進2",
         "text": "どう？あたし、最速昇進じゃない？実は談剣堂も飛び級したし――あ、驚いてるね？しかも、首席だよ！"
       },
       {
+        "voId": "chr_0005_chen_chrup_promt03_01",
         "title": "昇進3",
         "text": "武術だけじゃなくってさ、オペレーターの才能もあるってことだね……？へへっ……もっと褒めてもいいんだからね。"
       },
       {
+        "voId": "chr_0005_chen_chrup_promt04_01",
         "title": "昇進4",
         "text": "まだまだかな。母さんの剣は「天の彩雲に達した」って言われてて……あたしもそこまで行って、管理人とペリカの一番頼れる人になるんだ。"
       },
       {
+        "voId": "chr_0005_chen_introduce_01",
         "title": "入職会話",
         "text": "管理人！あたし――ん？あ、そっか。オペレーター、チェン・センユー。ただいま参上！"
       },
       {
+        "voId": "chr_0005_chen_mono_switch_01",
         "title": "待機1",
         "text": "よいしょっと……へへっ、どう？決まってる？"
       },
       {
+        "voId": "chr_0005_chen_mono_switch_02",
         "title": "待機2",
         "text": "管理人、こっちこっち！"
       },
       {
+        "voId": "chr_0005_chen_sim_assign_work_01",
         "title": "船室配属",
         "text": "うんうん。管理人、あたしにかかれば問題なし！"
       },
       {
+        "voId": "chr_0005_chen_sim_hello_lower_01",
         "title": "挨拶1",
         "text": "あ、管理人！あのさ、剣の稽古どう？"
       },
       {
+        "voId": "chr_0005_chen_sim_hello_max_01",
         "title": "挨拶2",
         "text": "お、管理人。残りはあたしに任せてさ、休むのも仕事のうちってやつだよ。"
       },
       {
+        "voId": "chr_0005_chen_sim_talk_lv01_01",
         "title": "帝江号雑談1",
         "text": "うわっ……びっくりした！ちょっと、新しい剣法のこと考えててさ……"
       },
       {
+        "voId": "chr_0005_chen_sim_talk_lv02_01",
         "title": "帝江号雑談2",
         "text": "宏山を出たとき、こんな高いとこまで来るなんて思わなかったよ。ここからだとタロⅡも小さくて……変な感じする。あたしと剣で、どこまでいけるんだろ。タロスまで行けたりするのかな？"
       },
       {
+        "voId": "chr_0005_chen_sim_talk_lv02_02",
         "title": "帝江号雑談3",
         "text": "管理人！貸してた武侠伝記、読んだ……？小説じゃないんだって！昔、炎国であった本当の話なんだよ。「指を剣に」なんて想像できないって？うーん、でもさ、「拳で時代を築く」ほうがもっと信じられなくない？"
       },
       {
+        "voId": "chr_0005_chen_sim_talk_max_01",
         "title": "帝江号雑談4",
         "text": "ん……？今、ストレッチ中！ここ来てから、任務で十分トレーニングはできてるからさ。あ、管理人もマッサージしてみる？ツボ押してあげるよ！ほれほれ、遠慮しなくていいから、コート脱いで！"
       },
       {
+        "voId": "chr_0005_chen_sim_talk_max_02",
         "title": "帝江号雑談5",
         "text": "武庫に剣取りに行くとこだったんだけど、一緒に行く？実はさ、柄に刻む文字、悩んでて。「当破即破」と「当断即断」……管理人なら、どっちにする？"
       },
       {
+        "voId": "chr_0005_chen_sim_talk_max_03",
         "title": "帝江号雑談6",
         "text": "最近、なんかスランプっていうか……技術じゃなくて、気持ちの問題かも。ほら、伝説の名刀だって持ち主の心次第……って、あたしのは普通のだけどさ。管理人、相談乗ってくれる？"
       },
       {
+        "voId": "chr_0005_chen_sim_gift_give_01",
         "title": "プレゼントを贈る",
         "text": "「プレゼントは大きさより気持ち」っていうけどさ。気持ち込めすぎると、何でも足りないって思っちゃうなあ。とにかく、気に入ってもらえますように！"
       },
       {
+        "voId": "chr_0005_chen_sim_gift_recv_01",
         "title": "プレゼントを受け取る",
         "text": "ん？あたしに……？今、開けちゃっていい？"
       },
       {
+        "voId": "chr_0005_chen_mono_self_line01",
         "title": "信頼上昇後会話1",
         "text": "管理人のこと、ずっとペリカから聞いてたからさ。目の前にいるの、ちょっと不思議な感じするなあ……がっかりとかじゃなくて！ペリカが「世界一の方」って言うくらいの人が、自分の横でご飯食べてるのが――あ、口のとこ、ご飯粒ついてる。"
       },
       {
+        "voId": "chr_0005_chen_mono_self_line02",
         "title": "信頼上昇後会話2",
         "text": "ここに来る前、文明地帯をちょっと旅してたんだ。最初は「功を立てて名を求めず」……みたいな。そんな感じを期待してたんだけど、途中で気づいたんだ。侠客は、自分がやったことから目を背けちゃダメなんだって。ゆっくり進んで、行く場所も減っちゃったけど……でも、後で取り返せばいいんだよね。"
       },
       {
+        "voId": "chr_0005_chen_mono_self_line03",
         "title": "信頼上昇後会話3",
         "text": "10歳くらいだったかなあ。談剣堂の裏山でこっそり剣の稽古してたら、アンゲロスが来て。それが、初めての実戦だったんだ。折れた剣を持って帰ったら、父さんが「お前は剣を折った。でも、剣を持たない者はどうするのか」って――褒めてはくれたけど、そう聞かれてから――ずっと考えてるんだ。へへっ……父さん、普段はあんななのにさ。"
       },
       {
+        "voId": "chr_0005_chen_mono_self_line04",
         "title": "信頼上昇後会話4",
         "text": "エンドフィールドに来た理由？うーん……話すと長くなるけど。きれいな服着たリーベリの子と駄獣の荷車を泥沼から押し出して……そのとき、すごくいい笑顔してたんだ、ペリカ。それで、もしかしてこの先、1人じゃなくてもいいのかもって思ったんだよね。"
       },
       {
+        "voId": "chr_0005_chen_mono_self_line05",
         "title": "信頼上昇後会話5",
         "text": "応龍は責任のために仲間を、母さんは赤霄のためにあたしを置いていった……もっと「重い」もののために、手放さなきゃいけないものもある……でも、ここにはそんなのないんだよね。エンドフィールドはタロⅡのすべてを背負う。あたしだって剣もう1本くらいなら、全然持てるしさ！"
       },
       {
+        "voId": "chr_0005_chen_mono_chat_line01",
         "title": "会話1",
         "text": "ペリカを休ませるのは難しいけど、兄弟子たちにやってたのが使えると思うんだ。働いてほしいときは仕事を全部押し付ける。休んでほしいときは、全部あたしがやっちゃう……どう？これ、いい「ワザ」じゃない？"
       },
       {
+        "voId": "chr_0005_chen_mono_chat_line02",
         "title": "会話2",
         "text": "髪？これ、簡単なんだよ。角に合わせて結べばバランスもばっちりだし。近くに住んでたワンおばさんに教えてもらったんだ。フォルテ特有の結び方らしいんだけど……宏山では近所のいろんな人が面倒見てくれて、みんな、家族みたいだったなあ。"
       },
       {
+        "voId": "chr_0005_chen_mono_chat_line03",
         "title": "会話3",
         "text": "あたしの剣術、「百家の長」――最高のを集めたやつでさ。談剣堂で師匠に学んだのは、端正な型で実用的。母さんに教わったのは、由緒正しく技数も多くて奥が深い。最後は……伝記を読んで自分で編み出したやつ。大侠なら、オリジナルの秘技ってやつ……1つくらいいるかなって思って。"
       },
       {
+        "voId": "chr_0005_chen_mono_chat_line04",
         "title": "会話4",
         "text": "武陵、空気がジメっとしてるから慣れるまでに時間かかったんだよね。侵蝕潮になると、寮の壁に水滴がつくしさ。でも、ご飯はおいしくて、人もみんな――あ、ほとんど……いい人だったし。ん？微妙な人のこととか、思い出してないよ。全然！"
       },
       {
+        "voId": "chr_0005_chen_mono_chat_line05",
         "title": "会話5",
         "text": "「千語」って名前、母さんがつけてくれたんだ。簡単で書きやすいから――正直、助かったなあ。罰で書き取りってなったときも、楽だったし！"
       },
       {
+        "voId": "chr_0005_chen_mono_about_line01",
         "title": "宏山について",
         "text": "帝江号のブリッジから、宏山環状山脈が見えるんだ。2年前、迷ったまま離れて……あのとき歩いた道も、ここからだと爪の先くらいなんだよね。もし、手のひら……ううん、手のひらを越えるくらい進んだら、迷いも全部捨てられると思うんだ！"
       },
       {
+        "voId": "chr_0005_chen_mono_about_line02",
         "title": "失踪した母親について",
         "text": "母さんが持ってた赤く燃えるような剣――炎国の女侠が祖先に贈ったっていう、代々伝わる家宝だったんだ。よく宏山のおじいちゃんおばあちゃんが見に来て、ほーってため息ついてたなあ。その後、母さんは剣と一緒に消えちゃって――後で気付いた。あの剣はただの武器じゃなくて「道」「信念」そのものだったんだって。だから、あたしは自分の剣を持って、母さんを探しに行きたいんだ。"
       },
       {
+        "voId": "chr_0005_chen_mono_about_line03",
         "title": "ペリカについて",
         "text": "初めてペリカに会ったとき、すっごい努力する人だなって思ってさ。なんでそこまでって聞くと、いつも「管理人」って名前が出てきて。最初はちょっと心配してたけど、でも……管理人に会ったらわかっちゃったかも。憧れとかじゃなくて、ペリカはきっと管理人と一緒に歩きたかったんだって思うよ。"
       },
       {
+        "voId": "chr_0005_chen_explore_point_common_01",
         "title": "発見：資源1",
         "text": "あそこ、なんかあるっぽいよ？"
       },
       {
+        "voId": "chr_0005_chen_explore_point_valub_01",
         "title": "発見：資源2",
         "text": "お宝発見！はやく見に行こうよ！"
       },
       {
+        "voId": "chr_0005_chen_explore_find_locked_01",
         "title": "発見：未探索エリア",
         "text": "ん？こんなとこ、来たことないよね？"
       },
       {
+        "voId": "chr_0005_chen_explore_find_danger_01",
         "title": "発見：強敵",
         "text": "あれ、結構強そうじゃない？手合わせしてみたいなあ。"
       },
       {
+        "voId": "chr_0005_chen_interact_mine_valub_01",
         "title": "鉱物採集1",
         "text": "へへっ……びっくりした？岩砕きの剣法もあるんだよ。"
       },
       {
+        "voId": "chr_0005_chen_interact_mine_valub_echo2_01",
         "title": "鉱物採集2",
         "text": "任せて！剣のほうが早いからさ。"
       },
       {
+        "voId": "chr_0005_chen_interact_treasure_valub_01",
         "title": "資源箱開封",
         "text": "秘伝の書ってさ、だいたいこんな感じの箱に入ってるよね？"
       },
       {
+        "voId": "chr_0005_chen_interact_etherium_01",
         "title": "オーリレン入手",
         "text": "丸くて、キラキラしてる……オーリレンって、こんな感じなんだね。"
       },
       {
+        "voId": "chr_0005_chen_interact_blight_break_01",
         "title": "侵蝕排除",
         "text": "剣で水を切るみたいな……なんか、キリないよ。"
       },
       {
+        "voId": "chr_0005_chen_interact_rest_01",
         "title": "回復",
         "text": "よっし、休憩！たまに剣を研いだほうが、効率がいいって言うもんね。"
       },
       {
+        "voId": "chr_0005_chen_combat_suppuse_using_01",
         "title": "戦闘補助アイテム使用1",
         "text": "これ、早く使って！"
       },
       {
+        "voId": "chr_0005_chen_combat_suppuse_getheal_01",
         "title": "戦闘補助アイテム使用2",
         "text": "ふう……回復完了！"
       },
       {
+        "voId": "chr_0005_chen_combat_remind_danger_01",
         "title": "警告",
         "text": "危ない！避けて！"
       },
       {
+        "voId": "chr_0005_chen_combat_hurt_lowhp_01",
         "title": "負傷",
         "text": "っつ……あたしは平気！それより敵だよ！"
       },
       {
+        "voId": "chr_0005_chen_combat_dead_01",
         "title": "戦闘不能",
         "text": "んっ……くっ……そぉ……"
       },
       {
+        "voId": "chr_0005_chen_combat_remind_praise_01",
         "title": "激励1",
         "text": "今のやつ、すごかったね！"
       },
       {
+        "voId": "chr_0005_chen_combat_remind_praise_02",
         "title": "激励2",
         "text": "よーっし、完璧な連携だったよね？"
       },
       {
+        "voId": "chr_0005_chen_combat_remind_praise_echo2_01",
         "title": "激励応答1",
         "text": "へへっ、当然だよ！"
       },
       {
+        "voId": "chr_0005_chen_combat_remind_praise_echo2_02",
         "title": "激励応答2",
         "text": "心合わせれば、剣の技も完成ってね！"
       },
       {
+        "voId": "chr_0005_chen_combat_intobattle_01",
         "title": "作戦開始1",
         "text": "剣の光、奔夜の如し！"
       },
       {
+        "voId": "chr_0005_chen_combat_intobattle_echo2_01",
         "title": "作戦開始2",
         "text": "任せて！"
       },
       {
+        "voId": "chr_0005_chen_combat_outbattle_nor_01",
         "title": "作戦終了1",
         "text": "ふーっ……予想通り！"
       },
       {
+        "voId": "chr_0005_chen_combat_outbattle_nor_02",
         "title": "作戦終了2",
         "text": "楽勝、楽勝！"
       },
       {
+        "voId": "chr_0005_chen_combat_outbattle_nor_echo2_01",
         "title": "作戦終了3",
         "text": "ばっちり！"
       },
       {
+        "voId": "chr_0005_chen_combat_outbattle_hard_01",
         "title": "作戦終了4",
         "text": "あぶなかった……ケガ、早く手当しないと……！"
       },
       {
+        "voId": "chr_0005_chen_combat_battle_defeat_01",
         "title": "作戦失敗",
         "text": "……もう一回……！"
       },
       {
+        "voId": "chr_0005_chen_mono_attack_last_01",
         "title": "重攻撃1",
         "text": "くらえ！"
       },
       {
+        "voId": "chr_0005_chen_mono_attack_last_02",
         "title": "重攻撃2",
         "text": "行くよ！"
       },
       {
+        "voId": "chr_0005_chen_mono_skill_nor_01",
         "title": "戦技1",
         "text": "――昇！"
       },
       {
+        "voId": "chr_0005_chen_mono_skill_nor_02",
         "title": "戦技2",
         "text": "――転！"
       },
       {
+        "voId": "chr_0005_chen_mono_skill_nor_03",
         "title": "戦技3",
         "text": "――絶！"
       },
       {
+        "voId": "chr_0005_chen_combat_skill_comb_ready_01",
         "title": "連携技準備完了1",
         "text": "今だ！"
       },
       {
+        "voId": "chr_0005_chen_combat_skill_comb_ready_02",
         "title": "連携技準備完了2",
         "text": "あたしがやる！"
       },
       {
+        "voId": "chr_0005_chen_mono_skill_comb_release_01",
         "title": "連携技1",
         "text": "出番だね！"
       },
       {
+        "voId": "chr_0005_chen_mono_skill_comb_release_02",
         "title": "連携技2",
         "text": "相手、こっちだよ！"
       },
       {
+        "voId": "chr_0005_chen_mono_attack_extra_01",
         "title": "終撃1",
         "text": "隙あり！"
       },
       {
+        "voId": "chr_0005_chen_mono_attack_extra_02",
         "title": "終撃2",
         "text": "――断！"
       },
       {
+        "voId": "chr_0005_chen_mono_skill_ultimate_01",
         "title": "必殺技1",
         "text": "当破即破！"
       },
       {
+        "voId": "chr_0005_chen_mono_skill_ultimate_02",
         "title": "必殺技2",
         "text": "当断即断！"
       },
       {
+        "voId": "chr_0005_chen_mono_skill_ultimate_03",
         "title": "必殺技3",
         "text": "当棄即棄！"
       }

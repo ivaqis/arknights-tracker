@@ -130,322 +130,402 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0020_meurs_chrbark_squad_01",
         "title": "Operation Prep 1",
         "text": "Hmm? A new mission?"
       },
       {
+        "voId": "chr_0020_meurs_chrbark_squad_02",
         "title": "Operation Prep 2",
         "text": "I am ready to go."
       },
       {
+        "voId": "chr_0020_meurs_chrbark_join_01",
         "title": "Adding to Team 1",
         "text": "If you need cover and logistics, you can leave them to me."
       },
       {
+        "voId": "chr_0020_meurs_chrbark_join_02",
         "title": "Adding to Team 2",
         "text": "Let's hope this mission is decently planned and involves less risks."
       },
       {
+        "voId": "chr_0020_meurs_chrbark_weap_01",
         "title": "Switching Weapon",
         "text": "Practical and versatile. It'll see us through assault operations in various scenarios."
       },
       {
+        "voId": "chr_0020_meurs_chrbark_gear_01",
         "title": "Switching Gear",
         "text": "Standardized gear... We only read about them in boot camp textbooks... The real thing is better machined than I expected."
       },
       {
+        "voId": "chr_0020_meurs_chrup_skill_01",
         "title": "Ability Matrix Activation",
         "text": "I would usually prepare extra contingency plans. They ... always come in handy."
       },
       {
+        "voId": "chr_0020_meurs_chrup_level_01",
         "title": "Watching Combat Records",
         "text": "O ... kay. There! I've jotted down all the keypoints... The Captain shall receive my summary on her desk."
       },
       {
+        "voId": "chr_0020_meurs_chrup_promt01_01",
         "title": "Operator Promotion 1",
         "text": "Thank you. You shall have my best performance in our future missions."
       },
       {
+        "voId": "chr_0020_meurs_chrup_promt02_01",
         "title": "Operator Promotion 2",
         "text": "You can now give me the tougher assignments. I believe I can now see them through."
       },
       {
+        "voId": "chr_0020_meurs_chrup_promt03_01",
         "title": "Operator Promotion 3",
         "text": "Really appreciate your approval, Endmin. In return, I have completed mission prepwork for the ... next ninety days. You may review them at any time."
       },
       {
+        "voId": "chr_0020_meurs_chrup_promt04_01",
         "title": "Operator Promotion 4",
         "text": "I sometimes think about what might've happened if I went along with my family's wishes. Perhaps I'd be living a different life. One that's simpler yet more comfortable... But I'd made up my mind when I took the sword and left my home that morning. I do not intend to look back."
       },
       {
+        "voId": "chr_0020_meurs_introduce_01",
         "title": "Operator Reporting for Duty",
         "text": "Catcher, Op Team Z7. My role is giving the team cover and logistics support. I specialize in defensive operations and I'm good with the blade... And I hope I'll be an effective addition to your team."
       },
       {
+        "voId": "chr_0020_meurs_mono_switch_01",
         "title": "Standing by 1",
         "text": "Need defensive cover? I shall give you my best."
       },
       {
+        "voId": "chr_0020_meurs_mono_switch_02",
         "title": "Standing by 2",
         "text": "I believe we should be better prepared."
       },
       {
+        "voId": "chr_0020_meurs_sim_assign_work_01",
         "title": "Assigning to Facility",
         "text": "Orders received. I've tagged them as my top mission priorities."
       },
       {
+        "voId": "chr_0020_meurs_sim_hello_lower_01",
         "title": "Greeting 1",
         "text": "Greetings, Endmin. Is there another assignment?"
       },
       {
+        "voId": "chr_0020_meurs_sim_hello_max_01",
         "title": "Greeting 2",
         "text": "Endmin, I've compiled ten folders of post-battle summaries for Team Z7. Do you wish to review them?"
       },
       {
+        "voId": "chr_0020_meurs_sim_talk_lv01_01",
         "title": "Dijiang Idle Chatter 1",
         "text": "You're looking for me, Endmin? Well, I got thirty minutes before five back-to-back sessions of swordfighting... And I'll be free for the rest of the time."
       },
       {
+        "voId": "chr_0020_meurs_sim_talk_lv02_01",
         "title": "Dijiang Idle Chatter 2",
         "text": "I have recently reviewed everyone's suggestions and improved my wildlands stew recipe... Feel free to give it a taste if you're curious, Endmin."
       },
       {
+        "voId": "chr_0020_meurs_sim_talk_lv02_02",
         "title": "Dijiang Idle Chatter 3",
         "text": "Whenever I return to Dijiang, I always get this sense of comfort and relaxation that I could hardly describe... Antal insists that it was the coziness of the dorm mattresses... Of course, I don't intend to disagree with him."
       },
       {
+        "voId": "chr_0020_meurs_sim_talk_max_01",
         "title": "Dijiang Idle Chatter 4",
         "text": "I have complete faith in my teammates during missions. Yet, I have zero faith that they will heed the Captain's orders and get proper R&R afterwards. One would stay up all night at the library, and another would be pulling pranks on raw recruits at the game room... Such nonsense can only end when I personally \"escort\" them back to their cabins."
       },
       {
+        "voId": "chr_0020_meurs_sim_talk_max_02",
         "title": "Dijiang Idle Chatter 5",
         "text": "I paid my family a visit two days ago. They don't really like my career choice but I told them what Team Z7 was really like. They didn't say much to that, except giving me a few rucksacks of local specialties. Z7 would need six months to go through all that... Endmin, I think you should get half a sack as well."
       },
       {
+        "voId": "chr_0020_meurs_sim_talk_max_03",
         "title": "Dijiang Idle Chatter 6",
         "text": "Life is very fulfilling. I actually feel useful and everyone actually appreciates it... That's what being an Endfielder means to me. There are occasions where I get too exhausted to sleep, but I take that in stride. It only means that I've earned someone's approval."
       },
       {
+        "voId": "chr_0020_meurs_sim_gift_give_01",
         "title": "Offering Gifts",
         "text": "It's just some minor gifts, Endmin... But I hope you can accept them."
       },
       {
+        "voId": "chr_0020_meurs_sim_gift_recv_01",
         "title": "Accepting Gifts",
         "text": "For me? Thank you so much, Endmin. It shall be secured in a proper safe."
       },
       {
+        "voId": "chr_0020_meurs_mono_self_line01",
         "title": "Trust Dialog 1",
         "text": "Oh, sorry, Endmin! I was thinking how I should prepare for the next mission. Wait! I got a question for you. Which of these do you think is more useful: a handheld welder, antigrav modulator, or Originium dustproof mask? Hmm... I'll just bring everything."
       },
       {
+        "voId": "chr_0020_meurs_mono_self_line02",
         "title": "Trust Dialog 2",
         "text": "I was born to a regular family. My parents were soldiers. My brother is a military instructor in the TGCC while my sister is an armed escort working for the Seš'qamam. I was the youngest child and they kept me protected. Everyone wanted to give me a peaceful life instead of following their footsteps and joining the military... But family protection doesn't last forever, especially in Talos-II."
       },
       {
+        "voId": "chr_0020_meurs_mono_self_line03",
         "title": "Trust Dialog 3",
         "text": "I don't miss my childhood before I turned nine. It made me dislike the smell of iodine and peroxide... Back then, I couldn't even lift a water canteen. The doctors also kept telling my family to keep me inside the house. I was only allowed to have fun outdoors in the rarest of occasions... Even now I could still remember my recovery and my first walk in broad daylight. It felt as though I was brought back to life."
       },
       {
+        "voId": "chr_0020_meurs_mono_self_line04",
         "title": "Trust Dialog 4",
         "text": "Some might find Z7 to be an unimpressive operations team. They're not entirely wrong. Captain Akekuri is a little too young, Fluorite's bite is a little too nasty, while Estella and Antal both need a little more common sense. Nevertheless, I'm more than willing to stay in Z7... In fact, I wouldn't mind being a permanent member of the team."
       },
       {
+        "voId": "chr_0020_meurs_mono_self_line05",
         "title": "Trust Dialog 5",
         "text": "When I first joined Endfield, I doubted if I had what it takes to earn the trust of my betters... But the whole of Team Z7 and even you, Endmin, always made this clear to me — I could achieve far more than I believed and meet everyone's expectations."
       },
       {
+        "voId": "chr_0020_meurs_mono_chat_line01",
         "title": "Chat 1",
         "text": "Boot camp was pretty standard. Just some basic combat courses with a bit of field survival added to the mix. Hardly anyone expects boot camp to teach you things that are actually useful in real battles... I might be the exception, as I spent an entire drill session debating with my instructor how his demonstrations deviated from the standard positions depicted in the manual. What happened next? Well, I convinced him before the third drill session began."
       },
       {
+        "voId": "chr_0020_meurs_mono_chat_line02",
         "title": "Chat 2",
         "text": "I'm actually the least talented soldier of the family. My physical strength and combat technique fall far behind the family norm... Even then, I never gave up and simply devoted myself to greater training — I woke up two hours before my brother and trained thrice as hard as my sister... And I've kept at it till this very day."
       },
       {
+        "voId": "chr_0020_meurs_mono_chat_line03",
         "title": "Chat 3",
         "text": "Why did I start learning how to cook? I don't really have a reason. When I first joined Z7, I tried the food prepared by other teammates. On day two, I asked Instructor Lil' Dodge for help. And this was how I received several weeks of Training for Ensuring Survival in the Wilderness."
       },
       {
+        "voId": "chr_0020_meurs_mono_chat_line04",
         "title": "Chat 4",
         "text": "I interned with a few PMCs before joining Endfield but all of them wanted me to be more \"professional\"... In layman's terms, they wanted me to take the pay and stop asking questions. They made their point and were reasonable about it. Unfortunately, I couldn't bring myself to comply."
       },
       {
+        "voId": "chr_0020_meurs_mono_chat_line05",
         "title": "Chat 5",
         "text": "I just hope no one gives Antal and friends any more strange ideas for the next assignment. We've already made enough trouble for our Arsenal Engineer this month... Yeah, you guessed right. The Captain has a stack of Feedback Reports she couldn't finish, and they're all sitting in my bunk. Don't worry. If I got no assignments on the following day, I'll just pull an all-nighter and blitz through everything."
       },
       {
+        "voId": "chr_0020_meurs_mono_about_line01",
         "title": "Topic: Akekuri",
         "text": "We have a responsible Captain who deeply cares for everyone in Z7... but it'd be great if she took a little more care of herself. Even at team gatherings, she always puts others' tastes before her own. *Sigh* Honestly, I wish she'd just admit she loves Higashinese snacks. Then I wouldn't have to keep pretending I made them \"by coincidence.\""
       },
       {
+        "voId": "chr_0020_meurs_mono_about_line02",
         "title": "Topic: Fluorite",
         "text": "I knew Bander mercs like her. Cunning, avaricious souls who kept to themselves, whose smiles looked scarier than their growls... But Fluorite started discussing techniques for throwing Originium Slugs with Antal... So, I guess we could ... give her some time before getting judgmental."
       },
       {
+        "voId": "chr_0020_meurs_mono_about_line03",
         "title": "Topic: Estella",
         "text": "I don't know why, but Estella always appears ... shocked whenever she reads my reports. I simply described everything that took place in the mission... and only added a few immature ideas at certain sections... Nothing about my reports should be considered surprising. They're all pretty standard, especially when compared to her ... creative compositions."
       },
       {
+        "voId": "chr_0020_meurs_mono_about_line04",
         "title": "Topic: Antal",
         "text": "Antal is knowledgeable and happy to answer questions. Problem is, he gets too eager when it comes to answering questions. Estella just casually mentioned: \"Why do long-ears have such long ears?\" Then Antal decided to spend the rest of the day giving us a lecture on ecobiology. It only ended when we got back to Dijiang — And he said he only gave us a summary that left out seventy percent of key contents."
       },
       {
+        "voId": "chr_0020_meurs_explore_point_common_01",
         "title": "Resource/Collectible Detected 1",
         "text": "Experience tells me that there are gatherables over there."
       },
       {
+        "voId": "chr_0020_meurs_explore_point_valub_01",
         "title": "Resource/Collectible Detected 2",
         "text": "There's something over there... It's worth looking into, even if we need to take a detour."
       },
       {
+        "voId": "chr_0020_meurs_explore_find_locked_01",
         "title": "Unexplored Area Detected",
         "text": "Threat level unavailable. We should be cautious."
       },
       {
+        "voId": "chr_0020_meurs_explore_find_danger_01",
         "title": "Powerful Enemy Discovered",
         "text": "If combat is required, I'll ready our exit plan in advance."
       },
       {
+        "voId": "chr_0020_meurs_interact_mine_valub_01",
         "title": "Mining 1",
         "text": "A rare material. We should gather them quickly."
       },
       {
+        "voId": "chr_0020_meurs_interact_mine_valub_echo2_01",
         "title": "Mining 2",
         "text": "We are always more efficient working as a team... Let's mine this together."
       },
       {
+        "voId": "chr_0020_meurs_interact_treasure_valub_01",
         "title": "Opening a Crate",
         "text": "Great. We've gathered plenty of useful supplies."
       },
       {
+        "voId": "chr_0020_meurs_interact_etherium_01",
         "title": "Acquiring Aurylene",
         "text": "This must be the Aurylene mentioned in the manual..."
       },
       {
+        "voId": "chr_0020_meurs_interact_blight_break_01",
         "title": "Eliminating the Blight",
         "text": "Blight is more dangerous than what is commonly believed. We must deal with it carefully."
       },
       {
+        "voId": "chr_0020_meurs_interact_rest_01",
         "title": "Rest",
         "text": "Adequate rest is conducive to mission completion. That's what the work manual says."
       },
       {
+        "voId": "chr_0020_meurs_combat_suppuse_using_01",
         "title": "Tactical Use 1",
         "text": "Take this. We still got plenty."
       },
       {
+        "voId": "chr_0020_meurs_combat_suppuse_getheal_01",
         "title": "Tactical Use 2",
         "text": "...I miscalculated."
       },
       {
+        "voId": "chr_0020_meurs_combat_remind_danger_01",
         "title": "Danger Warning",
         "text": "Watch it. Don't push yourself."
       },
       {
+        "voId": "chr_0020_meurs_combat_hurt_lowhp_01",
         "title": "Injured",
         "text": "My blade is still intact."
       },
       {
+        "voId": "chr_0020_meurs_combat_dead_01",
         "title": "0 HP",
         "text": "Sorry... I've let everyone down again..."
       },
       {
+        "voId": "chr_0020_meurs_combat_remind_praise_01",
         "title": "Team Encouragement 1",
         "text": "Impressive maneuver."
       },
       {
+        "voId": "chr_0020_meurs_combat_remind_praise_02",
         "title": "Team Encouragement 2",
         "text": "Such teamwork deserves a feast."
       },
       {
+        "voId": "chr_0020_meurs_combat_remind_praise_echo2_01",
         "title": "Encouragement Response 1",
         "text": "You ... flatter me."
       },
       {
+        "voId": "chr_0020_meurs_combat_remind_praise_echo2_02",
         "title": "Encouragement Response 2",
         "text": "Well, everyone helped."
       },
       {
+        "voId": "chr_0020_meurs_combat_intobattle_01",
         "title": "Combat Begins 1",
         "text": "We should play it safe and approach with care."
       },
       {
+        "voId": "chr_0020_meurs_combat_intobattle_echo2_01",
         "title": "Combat Begins 2",
         "text": "I shall fulfill my role of support."
       },
       {
+        "voId": "chr_0020_meurs_combat_outbattle_nor_01",
         "title": "Combat Victory 1",
         "text": "Area neutralized? Better run another check."
       },
       {
+        "voId": "chr_0020_meurs_combat_outbattle_nor_02",
         "title": "Combat Victory 2",
         "text": "We achieved an ideal outcome."
       },
       {
+        "voId": "chr_0020_meurs_combat_outbattle_nor_echo2_01",
         "title": "Combat Victory 3",
         "text": "Impressive... Only you could pull that off."
       },
       {
+        "voId": "chr_0020_meurs_combat_outbattle_hard_01",
         "title": "Combat Victory 4",
         "text": "In any case, we still completed the mission objectives."
       },
       {
+        "voId": "chr_0020_meurs_combat_battle_defeat_01",
         "title": "Combat Defeat",
         "text": "Most of my experiences in life taught me one thing: Accept your defeats, and find a way to surmount them."
       },
       {
+        "voId": "chr_0020_meurs_mono_attack_last_01",
         "title": "Final Strike 1",
         "text": "Get lost."
       },
       {
+        "voId": "chr_0020_meurs_mono_attack_last_02",
         "title": "Final Strike 2",
         "text": "Your turn."
       },
       {
+        "voId": "chr_0020_meurs_mono_skill_nor_strike_01",
         "title": "Battle Skill 1",
         "text": "Back off!"
       },
       {
+        "voId": "chr_0020_meurs_mono_skill_nor_strike_02",
         "title": "Battle Skill 2",
         "text": "Halt!"
       },
       {
+        "voId": "chr_0020_meurs_mono_skill_nor_strike_03",
         "title": "Battle Skill 3",
         "text": "Take cover!"
       },
       {
+        "voId": "chr_0020_meurs_combat_skill_comb_ready_01",
         "title": "Combo Skill Ready 1",
         "text": "Waiting's over."
       },
       {
+        "voId": "chr_0020_meurs_combat_skill_comb_ready_02",
         "title": "Combo Skill Ready 2",
         "text": "My turn."
       },
       {
+        "voId": "chr_0020_meurs_mono_skill_comb_release_01",
         "title": "Combo Casting 1",
         "text": "Tank this!"
       },
       {
+        "voId": "chr_0020_meurs_mono_skill_comb_release_02",
         "title": "Combo Casting 2",
         "text": "Taste this!"
       },
       {
+        "voId": "chr_0020_meurs_mono_attack_extra_01",
         "title": "Finisher 1",
         "text": "There's no escape."
       },
       {
+        "voId": "chr_0020_meurs_mono_attack_extra_02",
         "title": "Finisher 2",
         "text": "It's over."
       },
       {
+        "voId": "chr_0020_meurs_mono_skill_ultimate_01",
         "title": "Ultimate 1",
         "text": "I'm taking you down!"
       },
       {
+        "voId": "chr_0020_meurs_mono_skill_ultimate_02",
         "title": "Ultimate 2",
         "text": "No one's getting past me!"
       },
       {
+        "voId": "chr_0020_meurs_mono_skill_ultimate_03",
         "title": "Ultimate 3",
         "text": "OUT OF MY WAY!"
       }

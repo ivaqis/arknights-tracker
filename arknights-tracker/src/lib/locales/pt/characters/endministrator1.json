@@ -96,222 +96,277 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0003_endminf_chrbark_squad_01",
         "title": "Prep Operação 1",
         "text": "Eu ouço o Originium cantar."
       },
       {
+        "voId": "chr_0003_endminf_chrbark_squad_02",
         "title": "Prep Operação 2",
         "text": "A Endfield não vai parar de avançar."
       },
       {
+        "voId": "chr_0003_endminf_chrbark_join_01",
         "title": "Adicionando à equipe 1",
         "text": "Estou em posição, Dijiang."
       },
       {
+        "voId": "chr_0003_endminf_chrbark_join_02",
         "title": "Adicionando à equipe 2",
         "text": "Já estava na hora."
       },
       {
+        "voId": "chr_0003_endminf_chrbark_weap_01",
         "title": "Trocando de arma",
         "text": "Nada mal."
       },
       {
+        "voId": "chr_0003_endminf_chrbark_gear_01",
         "title": "Trocando de equipamento",
         "text": "Um excelente produto de fabricação industrial."
       },
       {
+        "voId": "chr_0003_endminf_chrup_skill_01",
         "title": "Ativação da Matriz de Capacidade",
         "text": "Eu conheço esse sentimento..."
       },
       {
+        "voId": "chr_0003_endminf_chrup_level_01",
         "title": "Assistindo a Registros de Combate",
         "text": "Nunca esquecerei a visão deles."
       },
       {
+        "voId": "chr_0003_endminf_chrup_promt01_01",
         "title": "Promoção do Operador 1",
         "text": "Outro passo adiante..."
       },
       {
+        "voId": "chr_0003_endminf_chrup_promt02_01",
         "title": "Promoção do Operador 2",
         "text": "Eu vou proteger a Endfield. Sempre."
       },
       {
+        "voId": "chr_0003_endminf_chrup_promt03_01",
         "title": "Promoção do Operador 3",
         "text": "O passado e o presente devem se tornar um."
       },
       {
+        "voId": "chr_0003_endminf_chrup_promt04_01",
         "title": "Promoção do Operador 4",
         "text": "Ouvi a voz dela, ecoando como um sussurro nos sonhos. Repetidamente, sonhei com um mar sem limites, um que traz tristeza, desperta memórias... e fortalece minha determinação."
       },
       {
+        "voId": "chr_0003_endminf_mono_switch_01",
         "title": "Em espera 1",
         "text": "Ainda esperando algo?"
       },
       {
+        "voId": "chr_0003_endminf_mono_switch_02",
         "title": "Em espera 2",
         "text": "O Originium abrirá um caminho para nós."
       },
       {
+        "voId": "chr_0003_endminf_sim_gift_recv_01",
         "title": "Aceitando presentes",
         "text": "Muito obrigado!"
       },
       {
+        "voId": "chr_0003_endminf_explore_point_common_01",
         "title": "Recurso/Colecionável detectado 1",
         "text": "Vejam, ali..."
       },
       {
+        "voId": "chr_0003_endminf_explore_point_valub_01",
         "title": "Recurso/Colecionável detectado 2",
         "text": "Tem algo importante ali!"
       },
       {
+        "voId": "chr_0003_endminf_explore_find_locked_01",
         "title": "Área não explorada detectada",
         "text": "A área próxima precisa de um levantamento adequado."
       },
       {
+        "voId": "chr_0003_endminf_explore_find_danger_01",
         "title": "Inimigo poderoso descoberto",
         "text": "Ameaça altamente hostil. Aproximem-se com cuidado."
       },
       {
+        "voId": "chr_0003_endminf_interact_mine_valub_01",
         "title": "Mineração 1",
         "text": "Esses minerais podem ser úteis."
       },
       {
+        "voId": "chr_0003_endminf_interact_mine_valub_echo2_01",
         "title": "Mineração 2",
         "text": "Deixe-me ajudar."
       },
       {
+        "voId": "chr_0003_endminf_interact_treasure_valub_01",
         "title": "Abrindo um caixote",
         "text": "Esta é uma viagem gratificante."
       },
       {
+        "voId": "chr_0003_endminf_interact_etherium_01",
         "title": "Adquirindo Aurileno",
         "text": "Isto parece familiar."
       },
       {
+        "voId": "chr_0003_endminf_interact_blight_break_01",
         "title": "Eliminando a Praga",
         "text": "Eliminação da Praga confirmada."
       },
       {
+        "voId": "chr_0003_endminf_interact_rest_01",
         "title": "Descansar",
         "text": "Todos estão descansados."
       },
       {
+        "voId": "chr_0003_endminf_combat_suppuse_using_01",
         "title": "Uso Tático 1",
         "text": "Está se sentindo melhor?"
       },
       {
+        "voId": "chr_0003_endminf_combat_suppuse_getheal_01",
         "title": "Uso Tático 2",
         "text": "Muito melhor agora."
       },
       {
+        "voId": "chr_0003_endminf_combat_remind_danger_01",
         "title": "Aviso de Perigo",
         "text": "Um ataque! Cuidado!"
       },
       {
+        "voId": "chr_0003_endminf_combat_hurt_lowhp_01",
         "title": "Ferida",
         "text": "Ainda estou em forma para lutar..."
       },
       {
+        "voId": "chr_0003_endminf_combat_dead_01",
         "title": "0 PV",
         "text": "Sinto muito... Está em suas mãos agora..."
       },
       {
+        "voId": "chr_0003_endminf_combat_remind_praise_01",
         "title": "Encorajamento da Equipe 1",
         "text": "Você fez um movimento elegante."
       },
       {
+        "voId": "chr_0003_endminf_combat_remind_praise_02",
         "title": "Encorajamento da Equipe 2",
         "text": "Estamos em perfeita sincronia."
       },
       {
+        "voId": "chr_0003_endminf_combat_remind_praise_echo2_01",
         "title": "Resposta a Encorajamento 1",
         "text": "Você me deixa lisonjeada."
       },
       {
+        "voId": "chr_0003_endminf_combat_remind_praise_echo2_02",
         "title": "Resposta a Encorajamento 2",
         "text": "Nosso trabalho em equipe está cada vez melhor."
       },
       {
+        "voId": "chr_0003_endminf_combat_intobattle_01",
         "title": "Início do Combate 1",
         "text": "Hora de lutar."
       },
       {
+        "voId": "chr_0003_endminf_combat_intobattle_echo2_01",
         "title": "Início do Combate 2",
         "text": "Estou com você."
       },
       {
+        "voId": "chr_0003_endminf_combat_outbattle_nor_01",
         "title": "Vitória em Combate 1",
         "text": "Demos outro passo adiante, Endfielders."
       },
       {
+        "voId": "chr_0003_endminf_combat_outbattle_nor_02",
         "title": "Vitória em Combate 2",
         "text": "Bom trabalho, pessoal."
       },
       {
+        "voId": "chr_0003_endminf_combat_outbattle_nor_echo2_01",
         "title": "Vitória em Combate 3",
         "text": "Lidamos muito bem com essa luta!"
       },
       {
+        "voId": "chr_0003_endminf_combat_outbattle_hard_01",
         "title": "Vitória em Combate 4",
         "text": "Estão todos bem?"
       },
       {
+        "voId": "chr_0003_endminf_combat_battle_defeat_01",
         "title": "Derrota em Combate",
         "text": "Não se preocupem. Vamos nos reagrupar e resolver isso."
       },
       {
+        "voId": "chr_0003_endminf_mono_attack_last_01",
         "title": "Golpe Final 1",
         "text": "Tome isto!"
       },
       {
+        "voId": "chr_0003_endminf_mono_attack_last_02",
         "title": "Golpe Final 2",
         "text": "Vejam isto!"
       },
       {
+        "voId": "chr_0003_endminf_mono_skill_nor_01",
         "title": "Habilidade de Batalha 1",
         "text": "Atacar!"
       },
       {
+        "voId": "chr_0003_endminf_mono_skill_nor_02",
         "title": "Habilidade de Batalha 2",
         "text": "Você será esmagado!"
       },
       {
+        "voId": "chr_0003_endminf_mono_skill_nor_03",
         "title": "Habilidade de Batalha 3",
         "text": "Acabem com eles!"
       },
       {
+        "voId": "chr_0003_endminf_combat_skill_comb_ready_01",
         "title": "Combo de Habilidades Pronto 1",
         "text": "Pronta para atacar."
       },
       {
+        "voId": "chr_0003_endminf_combat_skill_comb_ready_02",
         "title": "Combo de Habilidades Pronto 2",
         "text": "Confiem em mim."
       },
       {
+        "voId": "chr_0003_endminf_mono_skill_comb_release_01",
         "title": "Conjuração de Combo 1",
         "text": "Cristalizar!"
       },
       {
+        "voId": "chr_0003_endminf_mono_skill_comb_release_02",
         "title": "Conjuração de Combo 2",
         "text": "Enfrente seu fim!"
       },
       {
+        "voId": "chr_0003_endminf_mono_attack_extra_01",
         "title": "Finalizador 1",
         "text": "Isso termina agora!"
       },
       {
+        "voId": "chr_0003_endminf_mono_attack_extra_02",
         "title": "Finalizador 2",
         "text": "Peguei!"
       },
       {
+        "voId": "chr_0003_endminf_mono_skill_ultimate_01",
         "title": "Habilidade Suprema 1",
         "text": "Sem segundas chances."
       },
       {
+        "voId": "chr_0003_endminf_mono_skill_ultimate_02",
         "title": "Habilidade Suprema 2",
         "text": "Seu fim está à sua espera."
       },
       {
+        "voId": "chr_0003_endminf_mono_skill_ultimate_03",
         "title": "Habilidade Suprema 3",
         "text": "O show acabou."
       }

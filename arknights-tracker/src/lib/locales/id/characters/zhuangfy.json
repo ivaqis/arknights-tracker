@@ -128,326 +128,407 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0030_zhuangfy_chrbark_squad_01",
         "title": "Persiapan Operasi 1",
         "text": "Musuh ataupun tamu, kita harus sepenuhnya siap sebelum melangkah maju."
       },
       {
+        "voId": "chr_0030_zhuangfy_chrbark_squad_02",
         "title": "Persiapan Operasi 2",
         "text": "Bagaimana kalau minum secangkir teh segar dulu sebelum berangkat?"
       },
       {
+        "voId": "chr_0030_zhuangfy_chrbark_join_01",
         "title": "Menambahkan ke Tim 1",
         "text": "Karena kau minta bantuanku, sepertinya masalahnya rumit. Aku bisa bantu apa?"
       },
       {
+        "voId": "chr_0030_zhuangfy_chrbark_join_02",
         "title": "Menambahkan ke Tim 2",
         "text": "Sudah bertahun-tahun aku tak menjalankan misi .... Semoga kemampuanku belum tumpul."
       },
       {
+        "voId": "chr_0030_zhuangfy_chrbark_weap_01",
         "title": "Berganti Senjata",
         "text": "Senjata terbaik pun butuh waktu untuk dikuasai. Kalau sudah terbiasa, akan kusampaikan pendapatku."
       },
       {
+        "voId": "chr_0030_zhuangfy_chrbark_gear_01",
         "title": "Berganti Gear",
         "text": "Yang baru ini memang lebih kuat, tapi aku sudah telanjur terbiasa dengan yang lama ...."
       },
       {
+        "voId": "chr_0030_zhuangfy_chrup_skill_01",
         "title": "Aktivasi Matriks Kemampuan",
         "text": "Seiring bertambahnya hal baru yang kupelajari, aku jadi makin sadar bahwa aku tak tahu apa-apa."
       },
       {
+        "voId": "chr_0030_zhuangfy_chrup_level_01",
         "title": "Menonton Rekaman Pertarungan",
         "text": "*Huff* Aku tak tahan lihat kecanggunganku di layar ... kita langsung latih tanding saja, ya?"
       },
       {
+        "voId": "chr_0030_zhuangfy_chrup_promt01_01",
         "title": "Promosi Operator 1",
         "text": "Aku hanya melakukan yang semestinya ... tak usah sampai begitu."
       },
       {
+        "voId": "chr_0030_zhuangfy_chrup_promt02_01",
         "title": "Promosi Operator 2",
         "text": "Baiklah, baiklah, pujiannya sudah cukup. Kalau ada waktu, bisa periksa penelitian yang sedang kukerjakan?"
       },
       {
+        "voId": "chr_0030_zhuangfy_chrup_promt03_01",
         "title": "Promosi Operator 3",
         "text": "Ini terlalu berlebihan, sungguh .... Kita makan bersama saja, itu sudah lebih dari cukup. Atau, kalau kau pergi ke pantai, bawakan aku tanaman kecil yang tahan garam sebagai hadiah."
       },
       {
+        "voId": "chr_0030_zhuangfy_chrup_promt04_01",
         "title": "Promosi Operator 4",
         "text": "... Aku sangat menghargai niat baikmu. Aku juga punya pengingat kecil untukmu: Kalau sempat, datanglah ke Wuling untuk mengambil medali Warga Kehormatanmu. Setelah mengambilnya, jangan pergi tanpa berpamitan. Kami semua ingin mengadakan upacara yang layak untukmu."
       },
       {
+        "voId": "chr_0030_zhuangfy_introduce_01",
         "title": "Operator Siap Bertugas",
         "text": "Endmin, sebelum resmi bergabung, aku ingin menyampaikan beberapa hal. Sebagai Gubernur Jenderal, aku berpengalaman dalam tugas administrasi. Tapi ... di Endfield, aku ingin bekerja sebagai Tianshi biasa dan fokus pada penelitian."
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_switch_01",
         "title": "Siaga 1",
         "text": "Kau baru saja ... menyebut namaku? Kau ingin kutemani?"
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_switch_02",
         "title": "Siaga 2",
         "text": "Endmin, aku menambahkan modul baru ke aparatus Tianshi. Mau lihat kinerjanya?"
       },
       {
+        "voId": "chr_0030_zhuangfy_sim_assign_work_01",
         "title": "Menugaskan ke Fasilitas",
         "text": "Kalau memercayaiku, kau bisa serahkan masalah kecil ini kepadaku. Aku bisa menanganinya sendiri."
       },
       {
+        "voId": "chr_0030_zhuangfy_sim_hello_lower_01",
         "title": "Menyapa 1",
         "text": "Aku mau ke lab. Mau jalan bersama kalau tujuanmu searah?"
       },
       {
+        "voId": "chr_0030_zhuangfy_sim_hello_max_01",
         "title": "Menyapa 2",
         "text": "Wah, kebetulan sekali. Baru saja aku berniat mengunjungimu."
       },
       {
+        "voId": "chr_0030_zhuangfy_sim_talk_lv01_01",
         "title": "Obrolan Santai di Dijiang 1",
         "text": "Ini pertama kalinya aku naik Dijiang, tapi ... proyeksi holografisku pernah ikut rapat di sini beberapa kali."
       },
       {
+        "voId": "chr_0030_zhuangfy_sim_talk_lv02_01",
         "title": "Obrolan Santai di Dijiang 2",
         "text": "Aku sudah pertimbangkan patung Lung Gembul raksasa yang kauminta itu .... Bisa dikirim sih, tapi ... kau mungkin harus pikirkan baik-baik mau ditaruh di mana."
       },
       {
+        "voId": "chr_0030_zhuangfy_sim_talk_lv02_02",
         "title": "Obrolan Santai di Dijiang 3",
         "text": "Rencana kerja sama kita dengan Endfield ... maaf, dengan Wuling telah selesai, dan laporan eksperimen sudah diunggah. Kalau ada waktu beberapa hari ke depan, jangan lupa memeriksanya."
       },
       {
+        "voId": "chr_0030_zhuangfy_sim_talk_max_01",
         "title": "Obrolan Santai di Dijiang 4",
         "text": "Kali ini, aku ke Dijiang bukan untuk bekerja .... Pohon pir di Wuling sudah berbuah, jadi kubawakan beberapa untuk dibagikan kepada semua orang di sini."
       },
       {
+        "voId": "chr_0030_zhuangfy_sim_talk_max_02",
         "title": "Obrolan Santai di Dijiang 5",
         "text": "Saat masih kecil, aku suka menemani guruku ke observatorium. Beliau biasanya menghitung bintang dan menunjuk salah satunya sebagai Dijiang. Aku lalu memandanginya, membayangkan betapa jauh jaraknya. Sekarang, setelah Dijiang sudah di depan mata, justru kenangan itulah yang terasa jauh."
       },
       {
+        "voId": "chr_0030_zhuangfy_sim_talk_max_03",
         "title": "Obrolan Santai di Dijiang 6",
         "text": "Kata orang, kita harus banyak membaca dan bepergian. Aku sudah banyak membaca, tapi tempat yang kukunjungi belum banyak. Hongshan, Wuling, dan Dijiang, baru tiga. Wajar sih, karena aku punya kebiasaan menetap di satu tempat selama bertahun-tahun—sepuluh, dua puluh ... atau bahkan seumur hidup."
       },
       {
+        "voId": "chr_0030_zhuangfy_sim_gift_give_01",
         "title": "Menawarkan Hadiah",
         "text": "Aku baru saja kembali dari perjalanan dinas ke Hongshan dan membawakan beberapa hadiah untukmu. Memang sederhana, tapi kupilih sendiri dengan cermat .... Semoga kau suka."
       },
       {
+        "voId": "chr_0030_zhuangfy_sim_gift_recv_01",
         "title": "Menerima Hadiah",
         "text": "Menurut etika, aku harus menaruhnya di penyimpanan yang layak, tapi aku sendiri lebih suka menyimpannya di dekatku, di tempat yang bisa kulihat setiap saat."
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_self_line01",
         "title": "Dialog Kepercayaan 1",
         "text": "Oh, Endmin! Bisa tolong pegangi selagi aku mengisi tanahnya? Kalau takdir tak membawaku ke Wuling, mungkin masih di Hongshan, menjadi petani atau Tianshi Nongye. Keluargaku suka merawat bunga dan tanaman, jadi rumah kami sangat hijau, memberikan kesegaran kepada siapa pun yang berkunjung. Karena itulah, saat aku membantu merencanakan Kota Wuling, yang pertama kupikirkan adalah: wangi bunga apa yang sebaiknya menyambut setiap pengunjung, dan suasana apa yang akan merangkul mereka."
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_self_line02",
         "title": "Dialog Kepercayaan 2",
         "text": "Tenang, aku kemari bukan untuk menyeretmu ke Akademi. Ada kedai mie baru di Jalan Lebar Fangxing yang menyajikan mie semur daging, dan aku ingin mengajakmu mencobanya. Oh iya, kenapa kau langsung teringat pekerjaan saat melihatku? Mungkin aku harus meluangkan waktu untuk merenungkannya."
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_self_line03",
         "title": "Dialog Kepercayaan 3",
         "text": "Wuling sedang mengadakan “Balap Tiga Kaki”, dan aku ingin tahu apa kau mau ikut lomba bersamaku. Rutenya dari timur ke barat lalu utara ke selatan. Kalau bisa selesai sebelum matahari terbenam, kita menang. Khawatir kau tak akan sanggup? Tenang, tahun lalu akulah juaranya. Kalau perlu, aku bisa menggendongmu sampai akhir. Jadi tenang saja, kita pasti juara."
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_self_line04",
         "title": "Dialog Kepercayaan 4",
         "text": "Sedang baca apa? Oh, tentang aku? Makalah yang baru kami terbitkan? Ah ... begitu ya, ternyata tentang keluargaku. Padahal kau bisa tanya langsung kepadaku. Setelah orang tuaku meninggal, paman dan bibiku membesarkanku sepenuh hati mereka. Tapi, mereka punya tanggung jawab masing-masing dan tak bisa selalu menemaniku. Jadi, sejak kecil, aku mendambakan lebih banyak teman. Tapi, setelah akhirnya punya teman, aku mulai merindukan ketenangan dan kedamaian dalam kesendirian."
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_self_line05",
         "title": "Dialog Kepercayaan 5",
         "text": "Kedamaian mungkin memang sudah kembali ke Kota Wuling, tapi kita bisa dengan mudah memperkirakan sekian banyak cobaan dan tantangan yang menanti di depan saja. Jangan khawatir, Endmin. Betapa pun sulitnya situasi, kami akan tetap mendampingimu. Musim dingin selalu akan berganti menjadi musim semi. Seperti kata pepatah, musim yang penuh kesegaran hijau tak akan mengingkari orang-orang yang berani menghadapi salju dan embun, karena ia akan datang seperti yang sudah dijanjikan. Dan saat keindahan musim semi baru akhirnya tiba, mari kita menyambut dan mengaguminya bersama."
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_chat_line01",
         "title": "Obrolan 1",
         "text": "Usulanmu selaras dengan visi awal kami walau hambatan teknisnya sudah lama membuat kami bingung. Setelah ada jalan baru yang terbuka .... Ah, maaf, pikiranku terbawa oleh wangi yang masuk dari jendela. Tahun ini, bunga-bunganya mekar lebih cepat, betapa indahnya .... Endmin, karena musim ini sendiri yang mengundang kita, bagaimana kalau kita lanjutkan diskusinya di luar saja?"
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_chat_line02",
         "title": "Obrolan 2",
         "text": "Banyak tanaman di Kota Wuling merupakan hadiah dari para Tianshi yang dibawa dari kampung halaman mereka. Saat pertama kali melihat mereka menetap di sini, aku merasa seakan mereka mengambil bagian kecil dari rumah mereka dan menanamkannya di tanah Wuling agar bisa memandangnya kapan pun mereka merasa rindu. Baru belakangan aku sadar bahwa yang berakar bukan hanya benih—mereka juga. Bagi mereka, Wuling bukan lagi tempat asing, melainkan rumah."
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_chat_line03",
         "title": "Obrolan 3",
         "text": "Tambahkan lima mililiter larutan .... Oke, perubahan warnanya terlihat normal—tak ada endapan atau kekeruhan aneh. Selanjutnya, sedikit katalis untuk menonjolkan rasanya .... Suhu aman, tak ada yang gosong. Laju pelarutannya tampak oke .... Hmm, Endmin? Tidak, tidak, aku tidak sedang melakukan eksperimen. Sebenarnya aku ... sedang masak. Mi Fu selalu mengkritikku karena selalu makan makanan instan atau siap saji, jadi karena akhirnya ada waktu luang, aku ingin coba masak sendiri. Mau mencicipinya?"
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_chat_line04",
         "title": "Obrolan 4",
         "text": "Fyuh ... sebentar. Aku baru saja selesai lari pagi dan butuh ambil napas dulu. I-iya, aku tahu ini pukul lima pagi, tapi aku sudah biasa. Bangun pukul empat, olahraga selesai pukul lima, mulai kerja pukul setengah enam ... ritme ini sudah kulakukan lebih dari satu dekade. Tidak, aku tak suka bangun siang. Terlalu banyak hal yang ingin kulakukan dan kucapai, jadi kupakai saja waktu tidurku. Oh iya ... kenapa kau pergi sendirian ke lab pagi-pagi begini?"
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_chat_line05",
         "title": "Obrolan 5",
         "text": "Sebentar lagi peringatan kematian para seniorku. Endmin, kalau ada waktu, mau jalan bersamaku ke Taman Hening? Aku masih menyesal karena tak mampu mengumpulkan jasad mereka dan memulangkannya ke kampung halaman mereka. Aku paham bahwa tak ada monumen di Wuling yang bisa menghidupkan mereka lagi. Tapi, kalau kita bisa mengenang mereka melalui peringatan ini, walau hanya sesaat, usaha mereka tidaklah sia-sia."
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_about_line01",
         "title": "Topik: Kota Wuling",
         "text": "Tentu saja membangun Kota Wuling tepat di sebelah celah sangatlah berbahaya. Aku yang paling memahaminya. Tapi, tak ada yang mau memindahkan kota saat kami membangunnya kembali. Wuling mewarisi tugas Stasiun Sains, dan para Tianshi tak akan pernah goyah. Begitu pula kota ini."
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_about_line02",
         "title": "Topik: Stasiun Sains Wuling",
         "text": "Para pendahuluku memprioritaskan pelestarian pencapaian ilmiah mereka di atas nyawa mereka sendiri. Tapi bagiku, kehilangan yang terbesar adalah kepergian mereka. Xiranite memang bisa diproduksi lagi, tapi yang telah tiada tak bisa kembali lagi. Aku mengerti bahwa peluang untuk memulai lagi dalam penelitian sains itu sangatlah langka. Walau begitu, selalu ada orang-orang yang memilih untuk menempuh jalan ini dengan tekad bulat. Mungkin ... para seniorku sudah benar-benar memahami ini saat menentukan pilihan mereka."
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_about_line03",
         "title": "Topik: Mi Fu",
         "text": "Mi Fu itu ... cukup menarik. Saat kami baru mulai membangun Kota Wuling, tantangan datang silih berganti, dan aku sering kabur ke gunung untuk mencari ketenangan. Jangan tertawa, tapi “mencari ketenangan” itu cuma alasan. Sebenarnya, aku diam-diam menghapus air mataku. Dulu, Mi Fu masih bagian dari Kampung Benteng Qingbo dan selalu datang untuk menantangku. Kecuali pada satu malam itu, dia tak bilang apa-apa dan hanya duduk menemaniku sampai fajar datang."
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_about_line04",
         "title": "Topik: Xiranite",
         "text": "Saat ini, aku punya dua pilihan: melanjutkan penelitian Xiranite atau mengganti topikku. Walau mundur, aku yakin kolegaku di Biro Tianshi akan melanjutkan penelitian ini sesuai rencana. Mungkin sudah saatnya aku berkontribusi lebih di tempat yang paling membutuhkanku. Tapi, proyek ini mungkin satu-satunya warisan para seniorku; tak mungkin kutinggalkan begitu saja, ‘kan?"
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_about_line05",
         "title": "Topik: Lung Gembul",
         "text": "Cepat, duduklah di sini dan bantu aku membuka kotak-kotak kejutan ini. Setelah tempaan Xiranite di Institut dinonaktifkan, aku dan pihak pabrikan menanamkan elemen Xiranite ke dalam Lung Gembul Edisi Terbatas Ulang Tahun ke-10. Mereka menawariku satu set lengkap, tapi apa serunya? Hehe. Lagipula, peluang menangnya satu banding dua belas, sangat murah hati kalau dibandingkan dengan ketidakpastian penelitian ilmiah. Upaya seumur hidup pun tak bisa menjamin keberhasilan."
       },
       {
+        "voId": "chr_0030_zhuangfy_explore_point_common_01",
         "title": "Sumber Daya/Barang Koleksi Terdeteksi 1",
         "text": "Ada barang berharga di sini. Perjalanan kita tak sia-sia."
       },
       {
+        "voId": "chr_0030_zhuangfy_explore_point_valub_01",
         "title": "Sumber Daya/Barang Koleksi Terdeteksi 2",
         "text": "Negeri yang sangat makmur .... Keajaiban apa yang terkubur di sini?"
       },
       {
+        "voId": "chr_0030_zhuangfy_explore_find_locked_01",
         "title": "Area yang Belum Dijelajahi Terdeteksi",
         "text": "“Yang tak diketahui” .... Suatu konsep yang sangat memikat ...."
       },
       {
+        "voId": "chr_0030_zhuangfy_explore_find_danger_01",
         "title": "Musuh Kuat Ditemukan",
         "text": "Ini bukan pertemuan yang menyenangkan. Tetap waspada."
       },
       {
+        "voId": "chr_0030_zhuangfy_interact_mine_valub_01",
         "title": "Penambangan 1",
         "text": "Semasa aku bersekolah, aku bisa mengumpulkan mineral dengan cara seefisien caramu."
       },
       {
+        "voId": "chr_0030_zhuangfy_interact_mine_valub_echo2_01",
         "title": "Penambangan 2",
         "text": "Tenang. Akan kubantu."
       },
       {
+        "voId": "chr_0030_zhuangfy_interact_treasure_valub_01",
         "title": "Membuka Kerat",
         "text": "Ini bukan barang biasa. Mungkin saja kegunaannya banyak."
       },
       {
+        "voId": "chr_0030_zhuangfy_interact_etherium_01",
         "title": "Mendapatkan Aurylene",
         "text": "Sebaiknya kita lihat dari dekat cara mengumpulkan Aurylene."
       },
       {
+        "voId": "chr_0030_zhuangfy_interact_blight_break_01",
         "title": "Menyingkirkan Hawar",
         "text": "Apa ada cara untuk menyingkirkan Hawar dengan lebih efektif?"
       },
       {
+        "voId": "chr_0030_zhuangfy_interact_rest_01",
         "title": "Istirahat",
         "text": "Jangan ragu untuk beristirahat. Tantangan di depan mungkin lebih berat."
       },
       {
+        "voId": "chr_0030_zhuangfy_combat_suppuse_using_01",
         "title": "Penggunaan Taktis 1",
         "text": "Nih, pakai obat ini."
       },
       {
+        "voId": "chr_0030_zhuangfy_combat_suppuse_getheal_01",
         "title": "Penggunaan Taktis 2",
         "text": "Sudah mendingan."
       },
       {
+        "voId": "chr_0030_zhuangfy_combat_remind_danger_01",
         "title": "Peringatan Bahaya",
         "text": "Hati-hati!"
       },
       {
+        "voId": "chr_0030_zhuangfy_combat_hurt_lowhp_01",
         "title": "Cedera",
         "text": "Bukan apa-apa. Jangan khawatirkan aku."
       },
       {
+        "voId": "chr_0030_zhuangfy_combat_dead_01",
         "title": "0 HP",
         "text": "Maaf ... Endmin ...."
       },
       {
+        "voId": "chr_0030_zhuangfy_combat_remind_praise_01",
         "title": "Penyemangat Tim 1",
         "text": "Rapi dan mulus. Mantap!"
       },
       {
+        "voId": "chr_0030_zhuangfy_combat_remind_praise_02",
         "title": "Penyemangat Tim 2",
         "text": "Aksimu sangat sempurna."
       },
       {
+        "voId": "chr_0030_zhuangfy_combat_remind_praise_echo2_01",
         "title": "Respons Penyemangat 1",
         "text": "Aku merasa tersanjung."
       },
       {
+        "voId": "chr_0030_zhuangfy_combat_remind_praise_echo2_02",
         "title": "Respons Penyemangat 2",
         "text": "Oh, tadi itu kerja tim, kok."
       },
       {
+        "voId": "chr_0030_zhuangfy_combat_intobattle_01",
         "title": "Mulai Pertarungan 1",
         "text": "Yang kita takuti bukan pertarungan yang sengit, tapi pertarungan yang sia-sia."
       },
       {
+        "voId": "chr_0030_zhuangfy_combat_intobattle_echo2_01",
         "title": "Mulai Pertarungan 2",
         "text": "Aku akan langsung ke sana."
       },
       {
+        "voId": "chr_0030_zhuangfy_combat_outbattle_nor_01",
         "title": "Menang Pertarungan 1",
         "text": "Jujur saja, ini bukan pertarungan yang sulit dimenangi."
       },
       {
+        "voId": "chr_0030_zhuangfy_combat_outbattle_nor_02",
         "title": "Menang Pertarungan 2",
         "text": "Percayalah, Endmin. Berikutnya kita juga akan menang."
       },
       {
+        "voId": "chr_0030_zhuangfy_combat_outbattle_nor_echo2_01",
         "title": "Menang Pertarungan 3",
         "text": "Terima kasih atas kerja keras kalian semua."
       },
       {
+        "voId": "chr_0030_zhuangfy_combat_outbattle_hard_01",
         "title": "Menang Pertarungan 4",
         "text": "Asalkan tak menyerah, kita tak akan sepenuhnya kalah."
       },
       {
+        "voId": "chr_0030_zhuangfy_combat_battle_defeat_01",
         "title": "Kalah Bertarung",
         "text": "Selama kita masih berdiri, tak ada yang benar-benar hilang."
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_attack_last_01",
         "title": "Final Strike 1",
         "text": "Lenyapkan."
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_attack_last_02",
         "title": "Final Strike 2",
         "text": "Menyedihkan."
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_skill_nor_01",
         "title": "Skill Tarung 1",
         "text": "Guntur menderu!"
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_skill_nor_02",
         "title": "Skill Tarung 2",
         "text": "Pedang terhunus!"
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_skill_nor_03",
         "title": "Skill Tarung 3",
         "text": "Badai bangkit!"
       },
       {
+        "voId": "chr_0030_zhuangfy_combat_skill_comb_ready_01",
         "title": "Skill Kombo Siap 1",
         "text": "Aku siap kalau kau juga sudah siap!"
       },
       {
+        "voId": "chr_0030_zhuangfy_combat_skill_comb_ready_02",
         "title": "Skill Kombo Siap 2",
         "text": "Aku siap membantumu!"
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_skill_comb_release_01",
         "title": "Penggunaan Kombo 1",
         "text": "Menyerahlah sekarang!"
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_skill_comb_release_02",
         "title": "Penggunaan Kombo 2",
         "text": "Upayamu sia-sia!"
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_attack_extra_01",
         "title": "Penuntas 1",
         "text": "Payah sekali."
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_attack_extra_02",
         "title": "Penuntas 2",
         "text": "Benar-benar konyol."
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_skill_ultimate_01",
         "title": "Ultimate 1",
         "text": "Gemuruh guntur sunyi, rintikan hujan."
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_skill_ultimate_02",
         "title": "Ultimate 2",
         "text": "Semburan badai, lahirnya kehidupan."
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_skill_ultimate_03",
         "title": "Ultimate 3",
         "text": "Biru menyapu, tombak sang surya."
       }

@@ -127,318 +127,397 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0011_seraph_chrbark_squad_01",
         "title": "行動準備1",
         "text": "管理員，為您祈禱。"
       },
       {
+        "voId": "chr_0011_seraph_chrbark_squad_02",
         "title": "行動準備2",
         "text": "我在，律法亦未休眠。"
       },
       {
+        "voId": "chr_0011_seraph_chrbark_join_01",
         "title": "編入隊伍1",
         "text": "請為我下達指令，管理員。"
       },
       {
+        "voId": "chr_0011_seraph_chrbark_join_02",
         "title": "編入隊伍2",
         "text": "符合邏輯的選擇。"
       },
       {
+        "voId": "chr_0011_seraph_chrbark_weap_01",
         "title": "更換武器",
         "text": "您介意我進行一些輕微的改裝嗎？我保證它們將依然處在安全限制內……"
       },
       {
+        "voId": "chr_0011_seraph_chrbark_gear_01",
         "title": "更換裝備",
         "text": "真知會自我捍衛。"
       },
       {
+        "voId": "chr_0011_seraph_chrup_skill_01",
         "title": "解鎖天賦陣列",
         "text": "當我們彼此連結，智慧便會湧現。"
       },
       {
+        "voId": "chr_0011_seraph_chrup_level_01",
         "title": "觀看作戰紀錄",
         "text": "其中那些迷途之人，我也為他們祈禱。"
       },
       {
+        "voId": "chr_0011_seraph_chrup_promt01_01",
         "title": "精英化晉升1",
         "text": "這是律法仁慈的顯化……啊，當然也是管理員的信任！應該感謝您。"
       },
       {
+        "voId": "chr_0011_seraph_chrup_promt02_01",
         "title": "精英化晉升2",
         "text": "律法注視和保護的，是謙和之人，而非賢達和智者。這份光榮施加於我身上，我應該保持謙遜。"
       },
       {
+        "voId": "chr_0011_seraph_chrup_promt03_01",
         "title": "精英化晉升3",
         "text": "全都像源石的脈絡那樣清晰顯著，這次晉升符合計算結果……要、要握個手？我……我不太擅長這個……"
       },
       {
+        "voId": "chr_0011_seraph_chrup_promt04_01",
         "title": "精英化晉升4",
         "text": "我曾經重構過部分代碼穹頂，提升了大教堂的效率。但古老的演算法卻與資料串流發生了預期外的共鳴，導致……嗯，但使人離開故鄉的，在終末地卻使人蒙受恩典。這正是律法的啟示！"
       },
       {
+        "voId": "chr_0011_seraph_introduce_01",
         "title": "幹員報到",
         "text": "古老的知識，不要讓我們陷入誘惑，但救我們免於險惡……我是賽希，管理員，願您得到啟迪。"
       },
       {
+        "voId": "chr_0011_seraph_mono_switch_01",
         "title": "待命1",
         "text": "思考……運算……言說……放棄。"
       },
       {
+        "voId": "chr_0011_seraph_mono_switch_02",
         "title": "待命2",
         "text": "我將今日的對話與冥思，獻於您的終端……"
       },
       {
+        "voId": "chr_0011_seraph_sim_assign_work_01",
         "title": "進駐設施",
         "text": "爾旨承行……噢，管理員，勞作是我們的道途。"
       },
       {
+        "voId": "chr_0011_seraph_sim_hello_lower_01",
         "title": "打招呼1",
         "text": "願您平安。"
       },
       {
+        "voId": "chr_0011_seraph_sim_hello_max_01",
         "title": "打招呼2",
         "text": "管理員，您又出現在我的計算結果中了。"
       },
       {
+        "voId": "chr_0011_seraph_sim_talk_lv01_01",
         "title": "帝江號閒聊1",
         "text": "確定資料，執行指令，產生結果……管理員，您好。"
       },
       {
+        "voId": "chr_0011_seraph_sim_talk_lv02_01",
         "title": "帝江號閒聊2",
         "text": "我收到來自您的訊號了，管理員。我正在釋讀它的含義，請稍等。"
       },
       {
+        "voId": "chr_0011_seraph_sim_talk_lv02_02",
         "title": "帝江號閒聊3",
         "text": "啊……相比起人，我更願意跟機器相處……人的律動千變萬化，機器的呼吸始終依照邏輯。"
       },
       {
+        "voId": "chr_0011_seraph_sim_talk_max_01",
         "title": "帝江號閒聊4",
         "text": "我的終端在過去的十毫秒內接收到超過五十個錯誤回報，但是別擔心，我已經將與您的交流列為最高優先順序。嗯？我對……帝江號整體運作狀況的評價嗎？……雖然千瘡百孔，但仍然在努力掙扎，彷彿……在替什麼而受難。"
       },
       {
+        "voId": "chr_0011_seraph_sim_talk_max_02",
         "title": "帝江號閒聊5",
         "text": "如律法應允，如我等所行：樂園終將重回大地。凡築路的，將在困苦的荒野中通達至福。因無盡的真知藏在謎團裡面，叫迷途的，不再作客旅，乃是與聖徒同路，在基業中永生。"
       },
       {
+        "voId": "chr_0011_seraph_sim_talk_max_03",
         "title": "帝江號閒聊6",
         "text": "其他幹員眼中所見的您，是昔日的領袖，如今的善人，一株生長在未來的源石樹苗。而我在源石網路中所見的，卻與他們相悖……我只能，不停地為您祈禱……願我們的能指與所指終能連結。管理員，願您受庇佑。"
       },
       {
+        "voId": "chr_0011_seraph_sim_gift_give_01",
         "title": "贈送禮物",
         "text": "管理員，占用一下您的行程。我……我想感謝您帶給我的增益。您……完全沒有注意到嗎？呼，那太好了……"
       },
       {
+        "voId": "chr_0011_seraph_sim_gift_recv_01",
         "title": "接收禮物",
         "text": "這是一個指示符！噢，抱歉，我有點失態了……真知感謝您的付出。"
       },
       {
+        "voId": "chr_0011_seraph_mono_self_line01",
         "title": "信賴對話1",
         "text": "管理員，修會與您共享知識和命運。"
       },
       {
+        "voId": "chr_0011_seraph_mono_self_line02",
         "title": "信賴對話2",
         "text": "我向您提出的建議都很實用嗎？……不，我並非以務實為標竿行事……只是院長告誡我們眾人，在塔衛二上，信仰需要帶來更現實的結果。富饒的拉特蘭已經不在，我們的連結只在彼此之間。"
       },
       {
+        "voId": "chr_0011_seraph_mono_self_line03",
         "title": "信賴對話3",
         "text": "經過這段時間的相處，我與管理員的關係越發親近，這時，我應該展現友好、親和、信任的態度……是管理員走過來了，賽希，快向對象輸出一項表達友情的指令……呃，管理員，您要來參加我的晨禱嗎？"
       },
       {
+        "voId": "chr_0011_seraph_mono_self_line04",
         "title": "信賴對話4",
         "text": "管理員，我……抱歉，在不可避免地與您的肌膚發生觸碰之前，我需要先祛除掉手上可能的靜電……您不怕被刺到嗎？可是……它們是很調皮的，會悄悄地黏在手上……就像這樣……突然碰你一下。"
       },
       {
+        "voId": "chr_0011_seraph_mono_self_line05",
         "title": "信賴對話5",
         "text": "在大教堂的歲月中，我潛心修習，從未關心過我們的成果會如何映照在塔衛二。但律法的啟示將我引至您的面前，新的世界乍然向我湧現。管理員，那些古老、寂寥的語言，突然一一應驗，如今，我已了然於心。"
       },
       {
+        "voId": "chr_0011_seraph_mono_chat_line01",
         "title": "交談1",
         "text": "管理員，我所皈依的「會話派」對律法的釋讀——將語言視作符號。符號，在不斷地打碎重組之間，抵達永恆的疆域，就像修會大教堂聖像背後的「阿碎」一樣呢。"
       },
       {
+        "voId": "chr_0011_seraph_mono_chat_line02",
         "title": "交談2",
         "text": "帝江號不免讓我想起寂語修會的大教堂。只是，我們不會總是待在裡面，只有在會眾議異時，弟兄姊妹才會從塔衛二的各個角落回到那裡。欸，保衛它？如果大教堂遭襲的話……嗯，大教堂會自求多福的。"
       },
       {
+        "voId": "chr_0011_seraph_mono_chat_line03",
         "title": "交談3",
         "text": "我們與真知的距離前所未有地遠，它曾離開了我們的家園；我們與真知的距離前所未有地近，如今，我們叩響了它的門扉。"
       },
       {
+        "voId": "chr_0011_seraph_mono_chat_line04",
         "title": "交談4",
         "text": "參加賽跑？……拳、拳擊？運動會？！不了……我拒絕。我所能接受的「運動」，只有電子在振盪電路中週期性變化的幅度……弟兄姊妹之間不應彼此爭奪！我、我沒有在找藉口，我真的要回機房去了。"
       },
       {
+        "voId": "chr_0011_seraph_mono_chat_line05",
         "title": "交談5",
         "text": "嗯，修會中有很多像我這樣的薩卡茲，還有人被授予了曾經屬於銃騎的裝備。沒錯，我研習過修會的經卷，在泰拉，薩卡茲與許多種族都勢同水火。但在第一次天使戰爭後，連結彼此的神蹟空前絕後：大家擁抱著弟兄姊妹，口中湧出同樣的語言了。"
       },
       {
+        "voId": "chr_0011_seraph_mono_about_line01",
         "title": "話題：天使",
         "text": "如今橫行在塔衛二大地上的「天使」與律法之間的關係，是寂語修會釋讀的重要問題之一。"
       },
       {
+        "voId": "chr_0011_seraph_mono_about_line02",
         "title": "話題：阿碎",
         "text": "在修會大教堂的聖像背後，嵌合了一隻與三位一體相仿的天使。修士們日課間會偷偷叫牠「阿碎」。阿碎是第一次天使戰爭時期，院長姆姆親手捕獲的。她經常教誨我們，要觀察阿碎，時刻省思，在敵人身上亦能尋得律法的教喻，它是接近的可能性，也是終將得到解讀的定論。"
       },
       {
+        "voId": "chr_0011_seraph_mono_about_line03",
         "title": "話題：三個教派",
         "text": "現在，修會的成員們分為三個教派：會話、闡釋、重現。我來自會話派，我們視演算和語言分析為通往至福的大路。重現派的修士……或許您在塔衛二各處都會見到他們，他們全副武裝，對發掘文明遺跡一事非常狂熱。至於闡釋派，這些弟兄姊妹關懷心靈勝於一切，他們抄讀經卷，指引迷茫的人們找到路，回到家。"
       },
       {
+        "voId": "chr_0011_seraph_explore_point_common_01",
         "title": "發現資源1",
         "text": "我探查到了珍奇的存在。"
       },
       {
+        "voId": "chr_0011_seraph_explore_point_valub_01",
         "title": "發現資源2",
         "text": "真知的賜予就在附近，去將它取得。"
       },
       {
+        "voId": "chr_0011_seraph_explore_find_locked_01",
         "title": "發現未探索區域",
         "text": "也許是福地，也許是惡土，但憑我們探尋。"
       },
       {
+        "voId": "chr_0011_seraph_explore_find_danger_01",
         "title": "發現強敵",
         "text": "固執的迷途者就在附近徘徊。我的術杖會為其哀哭。"
       },
       {
+        "voId": "chr_0011_seraph_interact_mine_valub_01",
         "title": "採集礦物1",
         "text": "既有的一切，先於我們便已在大地上了——我們要用雙手去取得。"
       },
       {
+        "voId": "chr_0011_seraph_interact_mine_valub_echo2_01",
         "title": "採集礦物2",
         "text": "是律法的成全。"
       },
       {
+        "voId": "chr_0011_seraph_interact_treasure_valub_01",
         "title": "打開儲藏箱",
         "text": "我又看到了豐饒的景象——是律法應許的福地！"
       },
       {
+        "voId": "chr_0011_seraph_interact_etherium_01",
         "title": "獲得醚質",
         "text": "醚質，也是塔衛二的語言。"
       },
       {
+        "voId": "chr_0011_seraph_interact_blight_break_01",
         "title": "消除侵蝕",
         "text": "在我們的路途上，這只是一個可變向量。"
       },
       {
+        "voId": "chr_0011_seraph_interact_rest_01",
         "title": "休整",
         "text": "請指引我們的前路，向我們揭示永遠的寧靜吧。"
       },
       {
+        "voId": "chr_0011_seraph_combat_suppuse_using_01",
         "title": "使用戰術物品1",
         "text": "我是祝福的代行者。"
       },
       {
+        "voId": "chr_0011_seraph_combat_suppuse_getheal_01",
         "title": "使用戰術物品2",
         "text": "奉行一切善舉。"
       },
       {
+        "voId": "chr_0011_seraph_combat_remind_danger_01",
         "title": "危險提醒",
         "text": "對方的手段並不仁慈！"
       },
       {
+        "voId": "chr_0011_seraph_combat_hurt_lowhp_01",
         "title": "負傷",
         "text": "道路，越發艱險……"
       },
       {
+        "voId": "chr_0011_seraph_combat_dead_01",
         "title": "力竭",
         "text": "真知……為什麼……"
       },
       {
+        "voId": "chr_0011_seraph_combat_remind_praise_01",
         "title": "小隊激勵1",
         "text": "您的術式令我耳目一新！"
       },
       {
+        "voId": "chr_0011_seraph_combat_remind_praise_02",
         "title": "小隊激勵2",
         "text": "無需話語，便能傳遞我們的連結！"
       },
       {
+        "voId": "chr_0011_seraph_combat_remind_praise_echo2_01",
         "title": "回應激勵1",
         "text": "非常幸運與您同行。"
       },
       {
+        "voId": "chr_0011_seraph_combat_remind_praise_echo2_02",
         "title": "回應激勵2",
         "text": "我會為我們所有人祈禱。"
       },
       {
+        "voId": "chr_0011_seraph_combat_intobattle_01",
         "title": "作戰開始1",
         "text": "受難之人今天並非你我。"
       },
       {
+        "voId": "chr_0011_seraph_combat_intobattle_echo2_01",
         "title": "作戰開始2",
         "text": "也祝您順利。"
       },
       {
+        "voId": "chr_0011_seraph_combat_outbattle_nor_01",
         "title": "作戰勝利1",
         "text": "真知短暫地觸摸過這裡！"
       },
       {
+        "voId": "chr_0011_seraph_combat_outbattle_nor_02",
         "title": "作戰勝利2",
         "text": "我的祈禱奏效了！"
       },
       {
+        "voId": "chr_0011_seraph_combat_outbattle_nor_echo2_01",
         "title": "作戰勝利3",
         "text": "慶祝，是我鍾愛的語言。"
       },
       {
+        "voId": "chr_0011_seraph_combat_outbattle_hard_01",
         "title": "作戰勝利4",
         "text": "各位……成功與失敗並不是0和1的運算子，它們會組成無數種複雜的詩。"
       },
       {
+        "voId": "chr_0011_seraph_combat_battle_defeat_01",
         "title": "作戰失敗",
         "text": "計算的聖潔之處在於它的絕對中立——既能算出成功，也能算出失敗，這再正常不過。"
       },
       {
+        "voId": "chr_0011_seraph_mono_attack_last_01",
         "title": "重擊1",
         "text": "注入。"
       },
       {
+        "voId": "chr_0011_seraph_mono_attack_last_02",
         "title": "重擊2",
         "text": "遞迴！"
       },
       {
+        "voId": "chr_0011_seraph_mono_skill_nor_01",
         "title": "戰技1",
         "text": "分析，運算……"
       },
       {
+        "voId": "chr_0011_seraph_mono_skill_nor_02",
         "title": "戰技2",
         "text": "冰冷的結論。"
       },
       {
+        "voId": "chr_0011_seraph_mono_skill_nor_03",
         "title": "戰技3",
         "text": "資料收集。"
       },
       {
+        "voId": "chr_0011_seraph_combat_skill_comb_ready_01",
         "title": "連攜技就緒1",
         "text": "祈禱結束。"
       },
       {
+        "voId": "chr_0011_seraph_combat_skill_comb_ready_02",
         "title": "連攜技就緒2",
         "text": "提供我的算力。"
       },
       {
+        "voId": "chr_0011_seraph_mono_skill_comb_release_01",
         "title": "連攜技1",
         "text": "與您同在。"
       },
       {
+        "voId": "chr_0011_seraph_mono_skill_comb_release_02",
         "title": "連攜技2",
         "text": "全部修復。"
       },
       {
+        "voId": "chr_0011_seraph_mono_attack_extra_01",
         "title": "處決1",
         "text": "強制重啟！"
       },
       {
+        "voId": "chr_0011_seraph_mono_attack_extra_02",
         "title": "處決2",
         "text": "破壞性程式！"
       },
       {
+        "voId": "chr_0011_seraph_mono_skill_ultimate_01",
         "title": "終結技1",
         "text": "邏輯，本不宜人。"
       },
       {
+        "voId": "chr_0011_seraph_mono_skill_ultimate_02",
         "title": "終結技2",
         "text": "清除此等不諧！"
       },
       {
+        "voId": "chr_0011_seraph_mono_skill_ultimate_03",
         "title": "終結技3",
         "text": "細數他們的罪行。"
       }

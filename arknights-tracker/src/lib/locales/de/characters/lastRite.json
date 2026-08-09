@@ -128,330 +128,412 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0026_lastrite_chrbark_squad_01",
         "title": "Einsatzvorbereitung 1",
         "text": "Wir gehen schon? Ach, ich, äh … wartet kurz auf mich …"
       },
       {
+        "voId": "chr_0026_lastrite_chrbark_squad_02",
         "title": "Einsatzvorbereitung 2",
         "text": "Ich erinnere mich, dass im Betriebshandbuch stand … Oh, i-ich bin fast fertig!"
       },
       {
+        "voId": "chr_0026_lastrite_chrbark_join_01",
         "title": "Wird zum Team hinzugefügt 1",
         "text": "Oh, ich … ich bin schon dran?"
       },
       {
+        "voId": "chr_0026_lastrite_chrbark_join_02",
         "title": "Wird zum Team hinzugefügt 2",
         "text": "Last Rite, mach dich bereit zum Angriff! Äh … Wir greifen an, oder?"
       },
       {
+        "voId": "chr_0026_lastrite_chrbark_weap_01",
         "title": "Waffe wird gewechselt",
         "text": "Kein Problem. Solange sie nur schwer genug ist."
       },
       {
+        "voId": "chr_0026_lastrite_chrbark_gear_01",
         "title": "Ausrüstung wird gewechselt",
         "text": "Oha … Dieses Modell habe ich noch nie gesehen … Ich s-schaue noch einmal in der Be-Bedienungsanleitung nach …"
       },
       {
+        "voId": "chr_0026_lastrite_chrup_skill_01",
         "title": "Fähigkeitsmatrix wird aktiviert",
         "text": "Ich werde weiterkämpfen … auf meine Art!"
       },
       {
+        "voId": "chr_0026_lastrite_chrup_level_01",
         "title": "Kampfaufzeichnungen ansehen",
         "text": "AAAAAH …! E-e-es tut mir so leid! Diese Szene war ein bisschen … beängstigend …"
       },
       {
+        "voId": "chr_0026_lastrite_chrup_promt01_01",
         "title": "Operator-Beförderung 1",
         "text": "Be-Beförderung? *seufz* Wirklich?! F-für mich?"
       },
       {
+        "voId": "chr_0026_lastrite_chrup_promt02_01",
         "title": "Operator-Beförderung 2",
         "text": "Mama … Papa … i-ich hab’s endlich geschafft …"
       },
       {
+        "voId": "chr_0026_lastrite_chrup_promt03_01",
         "title": "Operator-Beförderung 3",
         "text": "Verstanden. Ich werde in deinem Namen einen Weg durch Feuer und Blut bahnen und auch im Antlitz des … Ähm … Warum siehst du so … angespannt aus?"
       },
       {
+        "voId": "chr_0026_lastrite_chrup_promt04_01",
         "title": "Operator-Beförderung 4",
         "text": "Mir ist klar geworden, dass ich allen viel besser helfen kann, wenn ich bleibe. Wenn mein Vertrag mit Seš’qa ausläuft, kannst du mich kontaktieren … O-oh nein! Das hätte ich nicht sagen sollen! Bitte … Sag niemandem davon …"
       },
       {
+        "voId": "chr_0026_lastrite_introduce_01",
         "title": "Operatorin meldet sich zum Dienst",
         "text": "Seš’qa-Verbindungsfrau, meldet sich zum Dienst … Mein Name ist … Mein Deckname ist Last Rite … Also nennt mich einfach so …"
       },
       {
+        "voId": "chr_0026_lastrite_mono_switch_01",
         "title": "Warten 1",
         "text": "Das Training muss weitergehen. Ich muss diese Kraft beherrschen …"
       },
       {
+        "voId": "chr_0026_lastrite_mono_switch_02",
         "title": "Warten 2",
         "text": "Ich hoffe, dass unsere Kämpfe Frieden bringen werden."
       },
       {
+        "voId": "chr_0026_lastrite_sim_assign_work_01",
         "title": "Zuweisung zur Anlage",
         "text": "Verstanden! Ich werde mich zehnmal so sehr anstrengen …! Nein, ich meine 120-mal!"
       },
       {
+        "voId": "chr_0026_lastrite_sim_hello_lower_01",
         "title": "Gruß 1",
         "text": "Endministrator?! W-w-wie geht es dir …?"
       },
       {
+        "voId": "chr_0026_lastrite_sim_hello_max_01",
         "title": "Gruß 2",
         "text": "Kann ich dir bei irgendwas helfen, Endmin?"
       },
       {
+        "voId": "chr_0026_lastrite_sim_talk_lv01_01",
         "title": "Dijiang-Geplauder 1",
         "text": "Ich schaff das. Es ist nur ein Satz. Ja, sei selbstbewusst! Hey, Endmin …!!! D-d-d-der N-Na-Na-Nachtisch ist heute … g-g-gr-oßartig, oder?"
       },
       {
+        "voId": "chr_0026_lastrite_sim_talk_lv02_01",
         "title": "Dijiang-Geplauder 2",
         "text": "Oh nein! Es ist so voll … W-was, wenn mich jemand anspricht? Ich sollte mich am besten in eine Kiste einschließen …"
       },
       {
+        "voId": "chr_0026_lastrite_sim_talk_lv02_02",
         "title": "Dijiang-Geplauder 3",
         "text": "W-weißt du vielleicht, wo wir Schäden melden können? Ich … äh … Ich habe die Trainingskabine kaputt gemacht … schon wieder …"
       },
       {
+        "voId": "chr_0026_lastrite_sim_talk_max_01",
         "title": "Dijiang-Geplauder 4",
         "text": "Ähm … D-darf ich mich kurz an dich anlehnen? Ich muss nur schnell einen Hartkeks holen … M-mir geht’s gut … Ich habe nur ein bisschen … Hunger …"
       },
       {
+        "voId": "chr_0026_lastrite_sim_talk_max_02",
         "title": "Dijiang-Geplauder 5",
         "text": "Persönliche Stereoanlage, Omni-Toolkit, grundlegende Tech-Einheit … Ach, das ist nur eine Einkaufsliste. Solche Sachen sind in meiner Heimatstadt echt schwer zu bekommen. Zum Glück haben ein paar Kollegen aus der Logistikabteilung angeboten, sie für mich mitzunehmen. Die sind echt nett zu mir!"
       },
       {
+        "voId": "chr_0026_lastrite_sim_talk_max_03",
         "title": "Dijiang-Geplauder 6",
         "text": "Endmin … kann ich … ein paar Flyer auf der Dijiang aufhängen? Seš’qa hat mir jede Menge Werbematerial gegeben. Wenn ich meine KPI nicht schaffe, muss ich wieder zum Spezialtraining …"
       },
       {
+        "voId": "chr_0026_lastrite_sim_gift_give_01",
         "title": "Geschenke anbieten",
         "text": "Endmin, bitte nimm dieses kleine Zeichen meiner ewigen und unendlichen Dankbarkeit an! Ich … Es tut mir so leid … Ich weiß nicht, was ich sagen soll …"
       },
       {
+        "voId": "chr_0026_lastrite_sim_gift_recv_01",
         "title": "Geschenke annehmen",
         "text": "Das ist … für mich …? B-bist du dir wirklich sicher, Endmin? Oh Gott … Ich glaube, ich … ich werde ohnmächtig."
       },
       {
+        "voId": "chr_0026_lastrite_mono_self_line01",
         "title": "Vertrauensgespräch 1",
         "text": "Hehehe … Endmin, stimmt es, dass es in New Wrankwood ein Haus gibt, das komplett aus Süßigkeiten gebaut ist? Kann ich … ein paar Tage freibekommen, um dort zu übernachten? Und keine Sorge, ich werde genug davon abknabbern, damit es sich für euch lohnt! Oh … Das ist … nur eine Werbung?"
       },
       {
+        "voId": "chr_0026_lastrite_mono_self_line02",
         "title": "Vertrauensgespräch 2",
         "text": "Dunkle Ringe unter den Augen? Ach, ich mache einen Kurs in Erster Hilfe und grundlegender Pflanzenkrankheitsbekämpfung … deshalb schlafe ich weniger … Aber die Kurse sind echt nützlich! Mit einem Schwert alles in kleine Stücke zu hacken, löst nicht alle unsere Probleme. Das geht auf keinen Fall. Das einzige Problem ist … dass der Unterricht in Restaurierungskunst so schwer ist."
       },
       {
+        "voId": "chr_0026_lastrite_mono_self_line03",
         "title": "Vertrauensgespräch 3",
         "text": "Last Rite. Zauberstunde hat mir diesen Codenamen verpasst. Da ich ein Nachzehrer bin und zu Hause als Bestatterin gearbeitet habe, wollten sie einen Namen, der die „Produktmerkmale hervorhebt“ … Aber nicht ich bin das Produkt – dieses Outfit ist es! Und das „letzte Ritual“, also quasi die Bedeutung meines Namens, ist eine düstere Zeremonie für die Toten! Warum verwenden sie diesen Namen auf so lächerliche Weise …? Endmin … könntest du bitte noch einen Protestbrief für mich schreiben? Bitte?"
       },
       {
+        "voId": "chr_0026_lastrite_mono_self_line04",
         "title": "Vertrauensgespräch 4",
         "text": "Die Leute machen immer Witze darüber, dass ich „hungere“, und irgendwie weiß ich auch, warum. Aber wenn ich meine angeborenen Nachzehrer-Fähigkeiten einsetzen würde, würde ich die Toten stören. Die Wahrscheinlichkeit ist zwar gering, aber ich verbiete es mir selbst … Aufgrund der Komplexität unserer Zauberei habe ich noch nicht alles herausgefunden. Deshalb habe ich mich entschieden, meine Kräfte nicht zu nutzen. Das ist die sicherste Vorgehensweise!"
       },
       {
+        "voId": "chr_0026_lastrite_mono_self_line05",
         "title": "Vertrauensgespräch 5",
         "text": "Ich muss dir etwas sagen, Endmin. Es ist mir egal, was danach passiert. D-du musst wissen, dass … dass Seš’qa mich total überbewertet hat! Sie haben mich einfach zur „Prinzessin des Kampfgerichts“ ernannt – ohne mich zu fragen! Ich wollte dich nie anlügen … Es tut mir wirklich leid … Vielleicht sollte ich einfach kündigen. W-warte, du wusstest das die ganze Zeit? Und du bist damit … einverstanden?"
       },
       {
+        "voId": "chr_0026_lastrite_mono_chat_line01",
         "title": "Geplauder 1",
         "text": "Ich wünschte wirklich, ich könnte mein Schwert so gut benutzen wie die anderen Operatoren. Sie haben alle so schöne Kampfhaltungen, Hiebe und Abwehrtechniken. Ich habe versucht, ihre Bewegungen nachzumachen, aber irgendwie werfe ich mein Schwert dabei immer wieder versehentlich weg. Offensichtlich kann ich nur mit wilden, … instinktiven Schwüngen kämpfen. Moment mal. Meine Schwünge sind auch schön? Ich … ich weiß nicht, aber … das ist sehr nett von dir."
       },
       {
+        "voId": "chr_0026_lastrite_mono_chat_line02",
         "title": "Geplauder 2",
         "text": "Viele Völker erzählen von einer Art „Geist“, der nach dem Tod weiterlebt. Meine Eltern haben mir viele Gebetsrituale beigebracht, die ich früher jeden Tag auf dem Friedhof in meiner Heimat durchgeführt habe. Hm? Ach ja, ich habe schon einmal von einer Art Sarkaz namens „Wiedergänger“ gehört. Die sollen sich in Leichen reinschleichen und sie wieder zum Leben erwecken können … Moment mal. Willst du mir etwa eine Gruselgeschichte erzählen? NEIN, NEIN, NEIN! ICH KANN DICH NICHT HÖREN!"
       },
       {
+        "voId": "chr_0026_lastrite_mono_chat_line03",
         "title": "Geplauder 3",
         "text": "Warum spielen alle Streiche mit mir? Zu Hause haben mich die Kinder entweder „Omnomnom“ oder „Kleine Verwirrte“ genannt. Auch die älteren Endfielder haben mir immer lustige Spitznamen gegeben. Ich muss herausfinden, wie ich autoritärer wirken kann … Oh! Ich habe eine Idee. Ich könnte eine Maske wie der Endmin tragen. Wie ich wohl damit aussehe, wenn ich mit Leuten rede? Was? Zu gruselig? Oh … Na gut …"
       },
       {
+        "voId": "chr_0026_lastrite_mono_chat_line04",
         "title": "Geplauder 4",
         "text": "Ich habe den Standardtest für Operatoren absolviert. Den Fitness-Teil habe ich mit links geschafft, aber der technische Teil … Nun ja, sagen wir einfach, dass mich Aufseherin Perlica am Ende trotzdem durchgewinkt hat! Seitdem nehme ich an Nachhilfekursen teil! Ach ja, und was den alten Herrn angeht, der mir in der schwebenden Stadt den Vertrag gegeben hat … Perlica meinte, er wollte mich beschützen. Ich weiß nicht genau, was sie damit gemeint hat, aber Perlica hat immer recht!"
       },
       {
+        "voId": "chr_0026_lastrite_mono_chat_line05",
         "title": "Geplauder 5",
         "text": "Seš’qa hat das Wissen und die Geräte der Sarkaz-Zauberei stets geschützt, doch auf Talos-II gibt es nur noch wenige Nachzehrer. Viele Kampftechniken, die früher über Generationen hinweg weitergegeben wurden, sind inzwischen verloren gegangen. Laut unseren Gelehrten kämpften viele Nachzehrer auf den Schlachtfeldern von Terra … Sie hielten den Krieg am Leben, indem sie die Kraft ihrer gefallenen Kameraden absorbierten … Ich glaube nicht, dass wir das heute noch tun müssen, oder? Ich habe eine eisige Aura, die ich kaum unterdrücken kann. Wenn ich nicht aufpasse, würde diese Kälte aus mir herausströmen. Trotzdem ist es eine Kraft, mit der ich mich … besser fühle."
       },
       {
+        "voId": "chr_0026_lastrite_mono_about_line01",
         "title": "Thema: Talent und Energie",
         "text": "Die Seš’qarier-Lehrer haben mir gesagt, dass ein echter Nachzehrer Zauberei benutzt, um den Frost zu beherrschen. Aber ich hab es nicht korrekt gemacht, weil meine Kälte immer wieder aus mir herausquoll. Nun ja, ich bin wirklich gut darin, meinen Drang, die Toten zu absorbieren, zu kontrollieren. Der Nachteil ist allerdings, dass ich schnell Hunger bekomme … Nein, mir geht es gut. Ich verbrenne Essen ziemlich schnell. Tatsächlich esse ich seit einer Weile sogar Mitternachtssnacks, aber irgendwie habe ich trotzdem abgenommen … Ähm, Endmin … Haben mich gerade alle angestarrt?"
       },
       {
+        "voId": "chr_0026_lastrite_mono_about_line02",
         "title": "Thema: Kampfausrüstung",
         "text": "Du hast noch nie ein Outfit wie meins gesehen? Das ist eine Prototyp-Ausrüstung aus der Zauberstunde. Ich soll das im Kampf tragen, um irgendwelche … Ähm … Testdaten zu sammeln – glaube ich zumindest. Aber ich bin nicht wirklich gut im Kämpfen. Ich frage mich, warum sie mich dafür eingestellt haben … Wie auch immer: Dieses Outfit ist fantastisch! Es ist leicht, robust und trocknet sogar die Haare nach dem Duschen. Aber die Bedienungsanleitung für den Kampfmodus ist ein dickes Buch, und es ist schwer, sich alles zu merken …"
       },
       {
+        "voId": "chr_0026_lastrite_mono_about_line03",
         "title": "Thema: Die Toten",
         "text": "Ich erinnere mich an alle, die auf dem von meiner Familie gepflegten Friedhof begraben sind: die alten Leute, das arme Baby, der Söldner aus einer anderen Stadt, der Fremde mit der Felskrankheit … Jeder von ihnen hatte einen letzten Wunsch. Während des Rituals sprachen die Menschen, die zum Abschied gekommen waren, diese Wünsche laut aus. Und hinter ihren Worten … konnte ich spüren, wonach sich die Verstorbenen wirklich sehnten. Sie baten niemanden, ihre Wünsche zu erfüllen – sie wollten einfach nur erhört werden. Ich konnte nur daran denken, mir ihre Wünsche zu merken. Wie meine Mutter immer sagte, sind zurückgebliebene Wünsche ein Beweis dafür, dass jemand einmal gelebt hat."
       },
       {
+        "voId": "chr_0026_lastrite_mono_about_line04",
         "title": "Thema: Seš’qa",
         "text": "Zauberstunde muss ab und zu seine Kampfausrüstung anpassen, weshalb ich oft in die schwebende Stadt fahre. Wenn Seš’qa weit genug von anderen Städten entfernt ist, werden die Touristenattraktionen abgebaut und es wird richtig ruhig. Der Karawanenführer, der mir Endfield gezeigt hat, meinte, dass Seš’qa mit Söldnern und Hexenmeistern durch Talos-II zieht. Ihr Ziel ist es, Sarkaz-Gemeinden auf der ganzen Welt zu verbinden und zu unterstützen. Aber … wenn ich ehrlich bin, kommen sie mir weniger wie eine Wohltätigkeitsorganisation vor, sondern eher wie ein gewinnorientiertes Unternehmen …"
       },
       {
+        "voId": "chr_0026_lastrite_mono_about_line05",
         "title": "Thema: Schicksal",
         "text": "Mein Vater hat erzählt, dass die TAHK vor vielen Jahren mehrere Brunnen an unserem alten Wohnort gegraben hat. Ein älterer Endfielder hat mir jedoch gerade gesagt, dass Endfield das gesamte Projekt geleitet hat! Jedenfalls sind ziemlich viele Familien eingezogen, nachdem wir eine funktionierende Wasserquelle hatten. Danach kamen die Karawanen zu uns. Einer von ihnen meinte, ich könnte mein Glück in Seš’qa versuchen. So habe ich alle in Endfield kennengelernt. Vielleicht war das Schicksal?"
       },
       {
+        "voId": "chr_0026_lastrite_mono_about_line06",
         "title": "Thema: „Freunde“",
         "text": "Es begann, als ich noch sehr jung war. Manchmal hörte ich eine Stimme, die mit mir redete. Sie klang müde und erschöpft und schlief vermutlich die meiste Zeit. Keines ihrer Kinder lag auf unserem Friedhof. Ich glaube, sie waren weiter nördlich begraben … Und immer, wenn ich Hunger hatte, hielt sie mich fest und tröstete mich. In den letzten Jahren schlief sie jedoch immer länger und klang noch schwächer als zuvor. Ich hoffe wirklich, dass ich etwas tun kann, um ihr zu helfen …"
       },
       {
+        "voId": "chr_0026_lastrite_explore_point_common_01",
         "title": "Ressource/Sammelobjekt entdeckt 1",
         "text": "Ich sehe da drüben Ressourcen … Sollen wir sie einsammeln?"
       },
       {
+        "voId": "chr_0026_lastrite_explore_point_valub_01",
         "title": "Ressource/Sammelobjekt entdeckt 2",
         "text": "Das sieht gut aus … Wenn ich mich nicht irre …"
       },
       {
+        "voId": "chr_0026_lastrite_explore_find_locked_01",
         "title": "Unerforschter Bereich entdeckt",
         "text": "Meine Kampfausrüstung reagiert auf etwas. Ist da drüben irgendwas?"
       },
       {
+        "voId": "chr_0026_lastrite_explore_find_danger_01",
         "title": "Starker Gegner entdeckt",
         "text": "Pass auf! Der Gegner sieht echt stark aus!"
       },
       {
+        "voId": "chr_0026_lastrite_interact_mine_valub_01",
         "title": "Abbau 1",
         "text": "Die Ar-Arsenal-Leute … werden sich darüber doch nicht aufregen, oder?"
       },
       {
+        "voId": "chr_0026_lastrite_interact_mine_valub_echo2_01",
         "title": "Abbau 2",
         "text": "Lass mich das machen. Ich bin stark."
       },
       {
+        "voId": "chr_0026_lastrite_interact_treasure_valub_01",
         "title": "Kiste öffnen",
         "text": "Wow … So schöne Sachen hab ich noch nie gesehen …"
       },
       {
+        "voId": "chr_0026_lastrite_interact_etherium_01",
         "title": "Aurylen erhalten",
         "text": "Das ist so schön … Oh, tut mir leid! Ich bin mit dem Sammeln fertig!"
       },
       {
+        "voId": "chr_0026_lastrite_interact_blight_break_01",
         "title": "Eliminierung der Verderbnis",
         "text": "Ich hoffe, ich habe das dreckige Zeug nicht überall verteilt."
       },
       {
+        "voId": "chr_0026_lastrite_interact_rest_01",
         "title": "Ausruhen",
         "text": "M-m-möchte jemand etwas Kaltes trinken? Ich kann es euch kalt machen …"
       },
       {
+        "voId": "chr_0026_lastrite_combat_suppuse_using_01",
         "title": "Taktische Nutzung 1",
         "text": "Lass mich dir helfen!"
       },
       {
+        "voId": "chr_0026_lastrite_combat_suppuse_getheal_01",
         "title": "Taktische Nutzung 2",
         "text": "Ich … ich fühle mich besser …"
       },
       {
+        "voId": "chr_0026_lastrite_combat_remind_danger_01",
         "title": "Gefahrenwarnung",
         "text": "Achtung! Gefahr!"
       },
       {
+        "voId": "chr_0026_lastrite_combat_hurt_lowhp_01",
         "title": "Verletzt",
         "text": "Bleib wach …! Ich darf hier nicht sterben …"
       },
       {
+        "voId": "chr_0026_lastrite_combat_dead_01",
         "title": "0 LP",
         "text": "Muss sie beschützen …"
       },
       {
+        "voId": "chr_0026_lastrite_combat_remind_praise_01",
         "title": "Teammotivation 1",
         "text": "Das ist … so cool …"
       },
       {
+        "voId": "chr_0026_lastrite_combat_remind_praise_02",
         "title": "Teammotivation 2",
         "text": "Ihr seid alle einfach unglaublich!"
       },
       {
+        "voId": "chr_0026_lastrite_combat_remind_praise_echo2_01",
         "title": "Motivationsreaktion 1",
         "text": "D-du schmeichelst mir."
       },
       {
+        "voId": "chr_0026_lastrite_combat_remind_praise_echo2_02",
         "title": "Motivationsreaktion 2",
         "text": "A-alle haben dazu beigetragen!"
       },
       {
+        "voId": "chr_0026_lastrite_combat_intobattle_01",
         "title": "Kampf beginnt 1",
         "text": "Lass mich mal ran!"
       },
       {
+        "voId": "chr_0026_lastrite_combat_intobattle_echo2_01",
         "title": "Kampf beginnt 2",
         "text": "Geben wir unser Bestes, Leute!"
       },
       {
+        "voId": "chr_0026_lastrite_combat_outbattle_nor_01",
         "title": "Kampfsieg 1",
         "text": "Ich hoffe, ich hab meine Kampfausrüstung nicht kaputt gemacht …"
       },
       {
+        "voId": "chr_0026_lastrite_combat_outbattle_nor_02",
         "title": "Kampfsieg 2",
         "text": "Das ist dank der neuesten Technologie von Seš’qa möglich! Ach … Ich kann diese Angewohnheit einfach nicht ablegen …"
       },
       {
+        "voId": "chr_0026_lastrite_combat_outbattle_nor_echo2_01",
         "title": "Kampfsieg 3",
         "text": "W-wir haben alle super Arbeit geleistet!"
       },
       {
+        "voId": "chr_0026_lastrite_combat_outbattle_hard_01",
         "title": "Kampfsieg 4",
         "text": "Sind alle okay …? Oh … Es ist ein gutes Gefühl, am Leben zu sein …"
       },
       {
+        "voId": "chr_0026_lastrite_combat_battle_defeat_01",
         "title": "Niederlage im Kampf",
         "text": "Es tut mir so leid! Es ist alles meine Schuld! Ich werde … Ich werde alles wieder in Ordnung bringen. Wie wäre es, wenn wir es noch einmal versuchen?"
       },
       {
+        "voId": "chr_0026_lastrite_mono_attack_last_01",
         "title": "Abschlussangriff 1",
         "text": "Letzter … Angriff!"
       },
       {
+        "voId": "chr_0026_lastrite_mono_attack_last_02",
         "title": "Abschlussangriff 2",
         "text": "Ich mach dich platt!"
       },
       {
+        "voId": "chr_0026_lastrite_mono_skill_nor_01",
         "title": "Kampffertigkeit 1",
         "text": "Es ist ein wenig kalt."
       },
       {
+        "voId": "chr_0026_lastrite_mono_skill_nor_02",
         "title": "Kampffertigkeit 2",
         "text": "Möge der Schnee einfrieren."
       },
       {
+        "voId": "chr_0026_lastrite_mono_skill_nor_03",
         "title": "Kampffertigkeit 3",
         "text": "Frost, höre auf mich."
       },
       {
+        "voId": "chr_0026_lastrite_combat_skill_comb_ready_01",
         "title": "Kombofertigkeit bereit 1",
         "text": "Überlasst das mir!"
       },
       {
+        "voId": "chr_0026_lastrite_combat_skill_comb_ready_02",
         "title": "Kombofertigkeit bereit 2",
         "text": "Ich bin bereit!"
       },
       {
+        "voId": "chr_0026_lastrite_mono_skill_comb_release_01",
         "title": "Kombo wirken 1",
         "text": "Und jetzt friss Eis!"
       },
       {
+        "voId": "chr_0026_lastrite_mono_skill_comb_release_02",
         "title": "Kombo wirken 2",
         "text": "Das wird kalt!"
       },
       {
+        "voId": "chr_0026_lastrite_mono_attack_extra_01",
         "title": "Wuchtschlag 1",
         "text": "Bitte hör auf, zu kämpfen …"
       },
       {
+        "voId": "chr_0026_lastrite_mono_attack_extra_02",
         "title": "Wuchtschlag 2",
         "text": "Du stirbst!"
       },
       {
+        "voId": "chr_0026_lastrite_mono_skill_ultimate_01",
         "title": "Ultimative Fertigkeit 1",
         "text": "Maximale Energie aktivieren!"
       },
       {
+        "voId": "chr_0026_lastrite_mono_skill_ultimate_02",
         "title": "Ultimative Fertigkeit 2",
         "text": "Dein Grab ist schon geschaufelt!"
       },
       {
+        "voId": "chr_0026_lastrite_mono_skill_ultimate_03",
         "title": "Ultimative Fertigkeit 3",
         "text": "Äh, noch irgendwelche letzten Worte?"
       }

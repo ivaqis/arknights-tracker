@@ -135,326 +135,407 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0017_yvonne_chrbark_squad_01",
         "title": "行動準備1",
         "text": "管理員，我們今天去哪裡玩？"
       },
       {
+        "voId": "chr_0017_yvonne_chrbark_squad_02",
         "title": "行動準備2",
         "text": "資料同步完畢，我隨時可以出發！"
       },
       {
+        "voId": "chr_0017_yvonne_chrbark_join_01",
         "title": "編入隊伍1",
         "text": "終於想起來叫我了？嗯哼，一定發生了什麼大事吧。"
       },
       {
+        "voId": "chr_0017_yvonne_chrbark_join_02",
         "title": "編入隊伍2",
         "text": "來了來了，設備上的問題就全都交給我吧。"
       },
       {
+        "voId": "chr_0017_yvonne_chrbark_weap_01",
         "title": "更換武器",
         "text": "這把銃手感不錯！嗯……設計上還有拓展空間，我會把它改成我的專屬款！"
       },
       {
+        "voId": "chr_0017_yvonne_chrbark_gear_01",
         "title": "更換裝備",
         "text": "我能把裝備改塗裝嗎？我覺得它的顏色跟我的頭髮不搭。"
       },
       {
+        "voId": "chr_0017_yvonne_chrup_skill_01",
         "title": "解鎖天賦陣列",
         "text": "這也太簡單了吧，給我點更難的挑戰！"
       },
       {
+        "voId": "chr_0017_yvonne_chrup_level_01",
         "title": "觀看作戰紀錄",
         "text": "我是快轉著看的，但效果應該沒差。"
       },
       {
+        "voId": "chr_0017_yvonne_chrup_promt01_01",
         "title": "精英化晉升1",
         "text": "幫我升職？眼光不錯嘛，管理員！"
       },
       {
+        "voId": "chr_0017_yvonne_chrup_promt02_01",
         "title": "精英化晉升2",
         "text": "這次晉升過後，我是不是可以換個更大一點的實驗室了？"
       },
       {
+        "voId": "chr_0017_yvonne_chrup_promt03_01",
         "title": "精英化晉升3",
         "text": "親臨戰場和光看資料完全是兩回事……在開拓區逛一圈能平安回來，對我來說已經是個巨大的進步了，不是嗎？"
       },
       {
+        "voId": "chr_0017_yvonne_chrup_promt04_01",
         "title": "精英化晉升4",
         "text": "助理？不需要不需要！我的「小滴答」完全能搞定！整理資料、收拾實驗室，對它來說都是小事！而且……它還不會抱怨我的作息。"
       },
       {
+        "voId": "chr_0017_yvonne_introduce_01",
         "title": "幹員報到",
         "text": "嗨，又見面了，還是叫我伊馮就好。這可是我最近第一次出門，管理員，希望我們能合作愉快——"
       },
       {
+        "voId": "chr_0017_yvonne_mono_switch_01",
         "title": "待命1",
         "text": "速凍仔，別調皮！管理員要帶我們出去呢！"
       },
       {
+        "voId": "chr_0017_yvonne_mono_switch_02",
         "title": "待命2",
         "text": "管理員，在這裡呢！我要帶的東西有點多……"
       },
       {
+        "voId": "chr_0017_yvonne_sim_assign_work_01",
         "title": "進駐設施",
         "text": "好啦好啦，這裡我很熟，放心吧！"
       },
       {
+        "voId": "chr_0017_yvonne_sim_hello_lower_01",
         "title": "打招呼1",
         "text": "管理員，裝備測試室今天我先預定了喔！"
       },
       {
+        "voId": "chr_0017_yvonne_sim_hello_max_01",
         "title": "打招呼2",
         "text": "最新一期的《MARTHE月刊》到了，要一起看嗎？"
       },
       {
+        "voId": "chr_0017_yvonne_sim_talk_lv01_01",
         "title": "帝江號閒聊1",
         "text": "啊啊……無論看幾次都覺得，集成工業系統實~~~在是太完美了！在協議核心的指揮下，生產不再只是冰冷的重複，而像……一套生命系統！可以循環和呼吸！真是天才設計！管理員，能讓我玩一下嗎？"
       },
       {
+        "voId": "chr_0017_yvonne_sim_talk_lv02_01",
         "title": "帝江號閒聊2",
         "text": "管理員，雖然我很喜歡你的造型，但總是穿這一身，我都快看膩了！有沒有想過換一身更亮眼的衣服？我帶你去買！保證搭配得更有型！"
       },
       {
+        "voId": "chr_0017_yvonne_sim_talk_lv02_02",
         "title": "帝江號閒聊3",
         "text": "佩麗卡不讓我帶小暴鴒上艦，說太危險。但我又離不開它們，只能妥協囉，上艦前我把爆破模組都拆掉啦！"
       },
       {
+        "voId": "chr_0017_yvonne_sim_talk_max_01",
         "title": "帝江號閒聊4",
         "text": "我打算過一陣子去菈梵朵瑪度個假，久違的沙灘和海風……管理員，要不要一起？還可以順便去考察一下那裡的海岸工程，聽說採用了新研發的防侵蝕塗層。"
       },
       {
+        "voId": "chr_0017_yvonne_sim_talk_max_02",
         "title": "帝江號閒聊5",
         "text": "管理員，我還沒有跟你合過照呢！一起來張自拍吧？我會把它放在「伊馮的年度時刻」集錦裡。不要質疑我的拍照技術！如果拍得不好看……那就怪帝江號的燈光囉！"
       },
       {
+        "voId": "chr_0017_yvonne_sim_talk_max_03",
         "title": "帝江號閒聊6",
         "text": "管理員，我們喜歡的音樂還蠻像的嘛！下次新唱片到了，可以來我的實驗室，我們一起聽。好音樂就是要和懂的人一起分享！"
       },
       {
+        "voId": "chr_0017_yvonne_sim_gift_give_01",
         "title": "贈送禮物",
         "text": "為你準備了點小東西，記得回去後再打開。嘿嘿，我諮詢過「專業人士」的意見，你一定會喜歡！"
       },
       {
+        "voId": "chr_0017_yvonne_sim_gift_recv_01",
         "title": "接收禮物",
         "text": "謝謝啦！放心，你送的東西，就算是有點醜我也會當寶貝收著！"
       },
       {
+        "voId": "chr_0017_yvonne_mono_self_line01",
         "title": "信賴對話1",
         "text": "我的設計，從來不只是為了讓機器的效能更強，而是為了讓人在用它的時候不用太緊張，不費腦，最好還能笑一笑。畢竟工具是拿來用的，不是讓人跟它較勁的。"
       },
       {
+        "voId": "chr_0017_yvonne_mono_self_line02",
         "title": "信賴對話2",
         "text": "管理員，你的源石技藝能借給我嗎？如果能精準控制源石迴路，設計上就有了超高的靈活性。例如……我一直想幫速凍仔再加一個加熱單元，這樣它就完美了！嗯？這樣就不算是「速凍仔」了？"
       },
       {
+        "voId": "chr_0017_yvonne_mono_self_line03",
         "title": "信賴對話3",
         "text": "我第一次知道管理員的時候，才三歲，是從一本科普讀物上看來的。書上說你是個大人物，要操心好多事。但真的見到了本人，沒想到……管理員其實還蠻可愛的。不過，你是真不知道有些盜版書把過去的你畫成了什麼樣子……不，你還是別知道了。"
       },
       {
+        "voId": "chr_0017_yvonne_mono_self_line04",
         "title": "信賴對話4",
         "text": "我剛接手寶貝小車計劃的時候，設備原型大得誇張，整個組裝處都塞不下了！工團一開始就想做成那種重型器械，用來大範圍清除侵蝕。但如果不試試輕量化，普通人面對突發的侵蝕災害怎麼辦？等移動平台轟隆隆開過來？為了這件事，我在實驗園區連續努力了好幾個月……結果你看，後來發生的事，證明我當時的決定——超級明智！"
       },
       {
+        "voId": "chr_0017_yvonne_mono_self_line05",
         "title": "信賴對話5",
         "text": "我其實一直都知道，我喜歡的那些東西——美妙的音樂、精彩的演出、漂亮的衣服，還有塔衛二的日出日落……全都很脆弱。正因為這樣，我才加入了終末地。我想做點什麼，讓這些脆弱但美好的東西，能存續下去。我還沒有享受夠呢，所以這個世界可不准完蛋！"
       },
       {
+        "voId": "chr_0017_yvonne_mono_chat_line01",
         "title": "交談1",
         "text": "如果是生活，我當然首選環塔商會的城市；但工作嘛，那裡實在是不適合我。你能想像嗎？他們一天要打六次卡！"
       },
       {
+        "voId": "chr_0017_yvonne_mono_chat_line02",
         "title": "交談2",
         "text": "這件衣服是巫術時刻出品的，我超喜歡他們的設計風格。他們會從一切地方找點子，甚至會模仿天使外殼的紋理。危險的東西反而更有魅力，不是嗎，管理員？"
       },
       {
+        "voId": "chr_0017_yvonne_mono_chat_line03",
         "title": "交談3",
         "text": "「伊馮」是個高盧名字。我爸說，我們家的血統大有來頭，大家都覺得那是很值得驕傲的事。但對我來說嘛，沒什麼特別的感覺。泰拉離我們都已經夠遙遠了，更別提那上面一個早就消失的帝國了。真不懂血統這種概念，到底哪裡重要了，那個什麼科什麼一世的，有那麼了不起嗎？"
       },
       {
+        "voId": "chr_0017_yvonne_mono_chat_line04",
         "title": "交談4",
         "text": "我只是順手把實驗室的熱能爐改了個接口，然後這個接口剛好可以煮泡麵。這不是偷懶，這是技術驗證！好吧，我分給你一份……你不會告訴佩麗卡的，對吧？"
       },
       {
+        "voId": "chr_0017_yvonne_mono_chat_line05",
         "title": "交談5",
         "text": "其實我在商會、宏科院和工團都實習過，但當時終末地的人事部開給我無法拒絕的條件：獲得所有超域相關資料的閱讀權限。其中還著重標註了一句：權限等級和管理員相同。"
       },
       {
+        "voId": "chr_0017_yvonne_mono_about_line01",
         "title": "話題：超域",
         "text": "我們對超域的瞭解，其實少得可憐。裡面可能一片漆黑，也可能是……徹底的混亂。我們現在能看到的，就只有那些侵蝕現象。它們的顏色很詭異，像是顛覆了光譜的原理。但說真的，看久了，我甚至覺得它們……有點迷人？"
       },
       {
+        "voId": "chr_0017_yvonne_mono_about_line02",
         "title": "話題：環塔商會的城市",
         "text": "我每年都會去環塔商會的城市好幾趟，去合金蘿蔔城採購材料和設備，或是去新藍卡塢的電影節把電影看個夠。但我最喜歡的城市是耶爾什，想不到吧？我喜歡那裡的雪，那裡的天空，那裡的萬籟俱寂。"
       },
       {
+        "voId": "chr_0017_yvonne_mono_about_line03",
         "title": "話題：流行文化",
         "text": "「泰拉復古音樂」已經是我爺爺奶奶還年輕的時候聽的了啦。環塔商會現在的流行樂是「新塔風」。最近那首《立體聲》，我就超級喜歡！我們生在塔衛二，長在塔衛二，當然要搞點屬於塔衛二的新東西。"
       },
       {
+        "voId": "chr_0017_yvonne_mono_about_line04",
         "title": "話題：童年",
         "text": "我爸媽都蠻忙的，小時候基本上沒人陪我。他們送了我一隻羽獸，當作我的玩伴。牠很吵，脾氣非常暴躁，把我的房間弄得亂糟糟的……但我真的很喜歡牠。也許你已經猜到了，牠就是「小暴鴒」的原型。小暴鴒雖然安靜多了，但還是繼承了牠的壞脾氣。"
       },
       {
+        "voId": "chr_0017_yvonne_mono_about_line05",
         "title": "話題：四號谷地",
         "text": "三年前剛來四號谷地的時候，我根本沒有打算久留。但克勞老師一把超域實驗場的裂隙數據甩出來，我就上鉤了！後來，我們兩個整天因為研究路線吵架，他吵不過我，乾脆把我塞給了安德烈。結果你猜怎麼樣？有了終末地的技術支援，我的研究簡直一發不可收拾！這三年，我的論文大爆發——四號谷地，還真是我的福地。"
       },
       {
+        "voId": "chr_0017_yvonne_explore_point_common_01",
         "title": "發現資源1",
         "text": "那個那個！帶回去研究研究。"
       },
       {
+        "voId": "chr_0017_yvonne_explore_point_valub_01",
         "title": "發現資源2",
         "text": "偷偷告訴你，那裡都是好東西！"
       },
       {
+        "voId": "chr_0017_yvonne_explore_find_locked_01",
         "title": "發現未探索區域",
         "text": "那附近我也沒去過。走，我們去看看！"
       },
       {
+        "voId": "chr_0017_yvonne_explore_find_danger_01",
         "title": "發現強敵",
         "text": "我的小暴鴒有點緊張，那傢伙應該很厲害！"
       },
       {
+        "voId": "chr_0017_yvonne_interact_mine_valub_01",
         "title": "採集礦物1",
         "text": "應該幫武器加裝一個採礦專用模組的。"
       },
       {
+        "voId": "chr_0017_yvonne_interact_mine_valub_echo2_01",
         "title": "採集礦物2",
         "text": "來幫忙了！爆破什麼的我很擅長喔！"
       },
       {
+        "voId": "chr_0017_yvonne_interact_treasure_valub_01",
         "title": "打開儲藏箱",
         "text": "哇，裡面的東西好好看啊。"
       },
       {
+        "voId": "chr_0017_yvonne_interact_etherium_01",
         "title": "獲得醚質",
         "text": "我一直想要一款像這樣流光變幻的指甲油。"
       },
       {
+        "voId": "chr_0017_yvonne_interact_blight_break_01",
         "title": "消除侵蝕",
         "text": "怎麼樣？消除得乾乾淨淨！"
       },
       {
+        "voId": "chr_0017_yvonne_interact_rest_01",
         "title": "休整",
         "text": "終於能休息一下了，髮型都亂了，得快點整理下。"
       },
       {
+        "voId": "chr_0017_yvonne_combat_suppuse_using_01",
         "title": "使用戰術物品1",
         "text": "別緊張，試試這個。"
       },
       {
+        "voId": "chr_0017_yvonne_combat_suppuse_getheal_01",
         "title": "使用戰術物品2",
         "text": "啊，現在舒服多了！"
       },
       {
+        "voId": "chr_0017_yvonne_combat_remind_danger_01",
         "title": "危險提醒",
         "text": "我掩護你，快閃開！"
       },
       {
+        "voId": "chr_0017_yvonne_combat_hurt_lowhp_01",
         "title": "負傷",
         "text": "嗚，好痛！好像受傷了……"
       },
       {
+        "voId": "chr_0017_yvonne_combat_dead_01",
         "title": "力竭",
         "text": "討厭！彈藥耗盡了……"
       },
       {
+        "voId": "chr_0017_yvonne_combat_remind_praise_01",
         "title": "小隊激勵1",
         "text": "剛才那招好帥！"
       },
       {
+        "voId": "chr_0017_yvonne_combat_remind_praise_02",
         "title": "小隊激勵2",
         "text": "大家都好厲害！"
       },
       {
+        "voId": "chr_0017_yvonne_combat_remind_praise_echo2_01",
         "title": "回應激勵1",
         "text": "那當然，也不看看我是誰！"
       },
       {
+        "voId": "chr_0017_yvonne_combat_remind_praise_echo2_02",
         "title": "回應激勵2",
         "text": "我們配合得不錯。"
       },
       {
+        "voId": "chr_0017_yvonne_combat_intobattle_01",
         "title": "作戰開始1",
         "text": "所有裝備蓄能完畢。"
       },
       {
+        "voId": "chr_0017_yvonne_combat_intobattle_echo2_01",
         "title": "作戰開始2",
         "text": "火力支援就交給我吧！"
       },
       {
+        "voId": "chr_0017_yvonne_combat_outbattle_nor_01",
         "title": "作戰勝利1",
         "text": "贏啦！我要拍張照紀念一下。"
       },
       {
+        "voId": "chr_0017_yvonne_combat_outbattle_nor_02",
         "title": "作戰勝利2",
         "text": "沒想到吧，戰鬥對我來說也不在話下。"
       },
       {
+        "voId": "chr_0017_yvonne_combat_outbattle_nor_echo2_01",
         "title": "作戰勝利3",
         "text": "嗯，這麼痛快的勝利一定要慶祝一下。"
       },
       {
+        "voId": "chr_0017_yvonne_combat_outbattle_hard_01",
         "title": "作戰勝利4",
         "text": "戰場上變數太多，連「小滴答」都無法預測……但下次我們一定能做得更好！"
       },
       {
+        "voId": "chr_0017_yvonne_combat_battle_defeat_01",
         "title": "作戰失敗",
         "text": "可惡！我要把速凍仔的功率提升五十倍，下次要贏我可就沒那麼容易了。"
       },
       {
+        "voId": "chr_0017_yvonne_mono_attack_last_01",
         "title": "重擊1",
         "text": "火力加倍！"
       },
       {
+        "voId": "chr_0017_yvonne_mono_attack_last_02",
         "title": "重擊2",
         "text": "再來一下！"
       },
       {
+        "voId": "chr_0017_yvonne_mono_skill_nor_01",
         "title": "戰技1",
         "text": "降溫了哦！"
       },
       {
+        "voId": "chr_0017_yvonne_mono_skill_nor_02",
         "title": "戰技2",
         "text": "幫你消消火！"
       },
       {
+        "voId": "chr_0017_yvonne_mono_skill_nor_03",
         "title": "戰技3",
         "text": "冷靜一下吧！"
       },
       {
+        "voId": "chr_0017_yvonne_combat_skill_comb_ready_01",
         "title": "連攜技就緒1",
         "text": "武器就緒！"
       },
       {
+        "voId": "chr_0017_yvonne_combat_skill_comb_ready_02",
         "title": "連攜技就緒2",
         "text": "蓄能完畢！"
       },
       {
+        "voId": "chr_0017_yvonne_mono_skill_comb_release_01",
         "title": "連攜技1",
         "text": "去吧，速凍仔！"
       },
       {
+        "voId": "chr_0017_yvonne_mono_skill_comb_release_02",
         "title": "連攜技2",
         "text": "一起涼快涼快！"
       },
       {
+        "voId": "chr_0017_yvonne_mono_attack_extra_01",
         "title": "處決1",
         "text": "快速瞄準！"
       },
       {
+        "voId": "chr_0017_yvonne_mono_attack_extra_02",
         "title": "處決2",
         "text": "精準一擊！"
       },
       {
+        "voId": "chr_0017_yvonne_mono_skill_ultimate_01",
         "title": "終結技1",
         "text": "來，一起跳個舞吧！"
       },
       {
+        "voId": "chr_0017_yvonne_mono_skill_ultimate_02",
         "title": "終結技2",
         "text": "感受我「超載的熱情」吧！"
       },
       {
+        "voId": "chr_0017_yvonne_mono_skill_ultimate_03",
         "title": "終結技3",
         "text": "送你一場煙火秀！"
       }

@@ -131,326 +131,407 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0033_camille_chrbark_squad_01",
         "title": "Préparation de l'opération 1",
         "text": "Je n'ai pas l'intention d'attendre plus longtemps."
       },
       {
+        "voId": "chr_0033_camille_chrbark_squad_02",
         "title": "Préparation de l'opération 2",
         "text": "Puis-je me joindre à vous ? Je suis à votre disposition."
       },
       {
+        "voId": "chr_0033_camille_chrbark_join_01",
         "title": "Intégration à l'équipe 1",
         "text": "Prenez la tête et je vous suivrai. Ou l'inverse."
       },
       {
+        "voId": "chr_0033_camille_chrbark_join_02",
         "title": "Intégration à l'équipe 2",
         "text": "Je n'en attendais pas moins. Allons-y."
       },
       {
+        "voId": "chr_0033_camille_chrbark_weap_01",
         "title": "Changement d'arme",
         "text": "Cet instrument tranchant parviendrait même à empaler la mer de sang. Je le manierai avec soin."
       },
       {
+        "voId": "chr_0033_camille_chrbark_gear_01",
         "title": "Changement d'équipement",
         "text": "La logique de fourniment des Gardiens s'articule autour de la sorcellerie sarkaz. Mais j'ai foi en vos choix."
       },
       {
+        "voId": "chr_0033_camille_chrup_skill_01",
         "title": "Activation de la matrice de capacités",
         "text": "C'en est fini des impuretés. Le sang est désormais pur."
       },
       {
+        "voId": "chr_0033_camille_chrup_level_01",
         "title": "Visionnage d'archives de combat",
         "text": "Ces données tactiques ont une grande valeur. Elles aideront les Gardiens à s'acquitter de leurs tâches."
       },
       {
+        "voId": "chr_0033_camille_chrup_promt01_01",
         "title": "Promotion d'opérateur 1",
         "text": "Est-ce là le souhait d'Endfield ou le vôtre ?"
       },
       {
+        "voId": "chr_0033_camille_chrup_promt02_01",
         "title": "Promotion d'opérateur 2",
         "text": "Merci pour cette distinction, Endministrator. Mes responsabilités ont évolué, mais pour l'instant, je suis juste heureux de mériter votre confiance."
       },
       {
+        "voId": "chr_0033_camille_chrup_promt03_01",
         "title": "Promotion d'opérateur 3",
         "text": "Peu m'importent les honneurs. Mon sang sera toujours à vos côtés."
       },
       {
+        "voId": "chr_0033_camille_chrup_promt04_01",
         "title": "Promotion d'opérateur 4",
         "text": "D'immenses forces se disputent la domination de ce monde et nous obligent à survivre là où nous le pouvons. Pourtant, vous m'avez montré que le changement, aussi insignifiant soit-il, est précieux. Et je suis... plus que disposé à vous seconder dans votre quête."
       },
       {
+        "voId": "chr_0033_camille_introduce_01",
         "title": "Opérateur au rapport",
         "text": "Camille Arno, Agaš'mekanaz de Seš'qa. Je cherche un dangereux criminel sarkaz qui utilise la sorcellerie comme arme. Pour cela, j'aurai besoin de la force d'Endfield... Et en échange, je jure de vous prêter la mienne."
       },
       {
+        "voId": "chr_0033_camille_mono_switch_01",
         "title": "En attente 1",
         "text": "Chacun naît dans le sang et meurt dans le sang."
       },
       {
+        "voId": "chr_0033_camille_mono_switch_02",
         "title": "En attente 2",
         "text": "Je ne projette pas d'ombre... Ainsi, l'ennemi ne peut s'y tapir."
       },
       {
+        "voId": "chr_0033_camille_sim_assign_work_01",
         "title": "Affectation à une installation",
         "text": "Je travaille seul. Quand on n'a pas besoin de communiquer, on est plus efficace."
       },
       {
+        "voId": "chr_0033_camille_sim_hello_lower_01",
         "title": "Salutation 1",
         "text": "Quels sont mes ordres ?"
       },
       {
+        "voId": "chr_0033_camille_sim_hello_max_01",
         "title": "Salutation 2",
         "text": "Endmin, notre rencontre n'est pas fortuite. Je vous attendais."
       },
       {
+        "voId": "chr_0033_camille_sim_talk_lv01_01",
         "title": "Bavardage sur le Dijiang 1",
         "text": "L'espace vertical à bord du Dijiang est vaste. Parfois, par souci d'efficacité, je traverse le plafond... Non, ce n'est pas pour éviter de parler aux autres."
       },
       {
+        "voId": "chr_0033_camille_sim_talk_lv02_01",
         "title": "Bavardage sur le Dijiang 2",
         "text": "J'entends le courant qui circule à travers les câbles du Dijiang. Lorsque les ingénieurs ajustent les paramètres du vaisseau, le bourdonnement électrique change et moi aussi, je dois me réajuster... Ce bourdonnement m'agace, mais je n'en garde nulle rancune. Cela prouve que chacun à bord de ce vaisseau fait de son mieux pour garder le cap."
       },
       {
+        "voId": "chr_0033_camille_sim_talk_lv02_02",
         "title": "Bavardage sur le Dijiang 3",
         "text": "J'aime beaucoup les puzzles. Je trouve relativement satisfaisant de réunir des fragments éparpillés afin d'en faire un tout. Et puis, c'est un loisir qui ne nécessite qu'une seule personne."
       },
       {
+        "voId": "chr_0033_camille_sim_talk_max_01",
         "title": "Bavardage sur le Dijiang 4",
         "text": "Il me semble peu probable que Seš'qa envoie l'opératrice Last Rite à Endfield... Votre partenariat est sincère et il prouve la solidarité qui unit les deux organisations ainsi que la cohérence de nos visions. Comme autrefois... Rien n'a changé."
       },
       {
+        "voId": "chr_0033_camille_sim_talk_max_02",
         "title": "Bavardage sur le Dijiang 5",
         "text": "Deux ailes dans le ciel, mais deux maisons bien distinctes. La tranquillité de Seš'qa est née de nos ancêtres. Mais le Dijiang... peut-être que la présence d'un individu en particulier a le même effet."
       },
       {
+        "voId": "chr_0033_camille_sim_talk_max_03",
         "title": "Bavardage sur le Dijiang 6",
         "text": "{F}Peu comprennent leur propre cœur. Pourtant, tout le monde à bord du Dijiang aspire à un but bien précis. Pendant longtemps, j'ai cherché la raison de ce phénomène. Et je l'ai trouvée, Endmin. C'est vous. Vous êtes une cheffe remarquable.{M}Peu comprennent leur propre cœur. Pourtant, tout le monde à bord du Dijiang aspire à un but bien précis. Pendant longtemps, j'ai cherché la raison de ce phénomène. Et je l'ai trouvée, Endmin. C'est vous. Vous êtes un chef remarquable."
       },
       {
+        "voId": "chr_0033_camille_sim_gift_give_01",
         "title": "Cadeaux offerts",
         "text": "J'ai quelque chose pour vous. En provenance de Seš'qa. Les autres présents de notre commandement ont été livrés à votre bureau."
       },
       {
+        "voId": "chr_0033_camille_sim_gift_recv_01",
         "title": "Cadeaux acceptés",
         "text": "Ce n'est pas un cadeau d'adieu, j'espère ? Très bien, je l'accepte."
       },
       {
+        "voId": "chr_0033_camille_mono_self_line01",
         "title": "Dialogue à cœur ouvert 1",
         "text": "{F}Au fil des ans, je vous ai vue quelques fois, de loin. La première fois, j'ai vu en vous une « sauveuse ». Mais aujourd'hui, je vous vois davantage comme une confidente. Je ne me soucie pas de l'opinion des autres, mais je suis rassuré de vous voir ainsi. Vous n'êtes plus usée par les éléments et votre corps est exempt de cicatrices.{M}Au fil des ans, je vous ai vu quelques fois, de loin. La première fois, j'ai vu en vous un « sauveur ». Mais aujourd'hui, je vous vois davantage comme un confident. Je ne me soucie pas de l'opinion des autres, mais je suis rassuré de vous voir ainsi. Vous n'êtes plus usé par les éléments et votre corps est exempt de cicatrices."
       },
       {
+        "voId": "chr_0033_camille_mono_self_line02",
         "title": "Dialogue à cœur ouvert 2",
         "text": "Je rêve constamment de ma famille dans un jardin, entourée de Brise-Terres déchaînés et armés de torches. J'ai beau courir, je n'avance pas et je ne parviens pas à m'approcher. Durant mes heures les plus sombres... le rêve revenait chaque soir. Mais depuis que j'ai rejoint Endfield, il n'est plus si récurrent."
       },
       {
+        "voId": "chr_0033_camille_mono_self_line03",
         "title": "Dialogue à cœur ouvert 3",
         "text": "Pour empêcher Char de mourir, je lui ai donné mon sang... Une bonne moitié de mon existence. De fait, je suis son frère en plus d'être son créateur. Rien n'effraie plus un Vampire que la corruption de son sang. Il a utilisé le mien pour porter préjudice à autrui... Je dois donc mettre un terme à ces absurdités. Il le faut."
       },
       {
+        "voId": "chr_0033_camille_mono_self_line04",
         "title": "Dialogue à cœur ouvert 4",
         "text": "Il y a fort longtemps, je rêvais de pouvoir me débarrasser de mes souvenirs pour me libérer de la douleur. Mais après notre rencontre... j'ai réalisé que c'étaient ces éléments intouchables, inoubliables et inaltérables qui avaient fait de moi ce que je suis aujourd'hui. Ainsi, Endmin, je vous aiderai à retrouver ce que vous avez perdu."
       },
       {
+        "voId": "chr_0033_camille_mono_self_line05",
         "title": "Dialogue à cœur ouvert 5",
         "text": "J'ai sacrifié la moitié de mon sang et je n'ai plus aujourd'hui qu'une seule aile... Mon aile manquante me fait si mal... C'est comme si mon sang réclamait ce que j'ai perdu. Mais les souvenirs que nous nous sommes faits ensemble comblent doucement ce vide... Peut-être qu'à terme... la douleur de la cicatrice ne me tourmentera plus."
       },
       {
+        "voId": "chr_0033_camille_mono_chat_line01",
         "title": "Discussion 1",
         "text": "Dans notre jardin familial se trouvait autrefois une plante connue sous le nom de Réglisse du diable. Ma mère nous disait que les Sarkaz avaient rapporté ce souvenir de Terra. Elle symbolisait l'espoir d'arriver un jour à coexister avec cette planète. Toute vie, animale ou végétale, sait trouver un équilibre, même dans les coins les plus reculés. Bien entendu, je l'utilisais alors surtout comme ingrédient pour mes bonbons... Le goût est étonnant, mais pas désagréable."
       },
       {
+        "voId": "chr_0033_camille_mono_chat_line02",
         "title": "Discussion 2",
         "text": "Il n'y a qu'une taverne, à Seš'qa. Elle est entièrement constituée de verre miroir. D'innombrables gemmes artificielles dont irradie la sorcellerie pendent au plafond. Le bâtiment tout entier rayonne. Pendant les heures d'ouverture, les Sankta y organisent des fêtes. Ils sont bruyants et turbulents, ils empêchent les gens de dormir. Mais toute cette animation est bénéfique pour Seš'qa. Elle prouve que nos efforts paient, que les barrières entre les espèces sont en train de tomber."
       },
       {
+        "voId": "chr_0033_camille_mono_chat_line03",
         "title": "Discussion 3",
         "text": "La personne du catalogue Goetia ? Bon, oui, c'est bien moi. Ils m'envoient des échantillons en échange de photos promotionnelles. Il y a quelques années, je suis entré dans une boutique de sorcellerie et le vendeur a réagi comme si j'étais un spécimen rare. Il m'a contraint, physiquement, à signer un contrat. Lorsqu'on me parle de ces photos, je n'en suis pas fier, mais les échantillons se font rares... Endmin, puis-je vous demander où vous allez, avec ce catalogue ?"
       },
       {
+        "voId": "chr_0033_camille_mono_chat_line04",
         "title": "Discussion 4",
         "text": "Enfant, je perdais constamment mes clés. Alors, avec Char, nous nous querellions. Et, un jour, j'ai cassé sa boîte à musique sans le faire exprès. Après que je lui ai présenté mes excuses, il a utilisé le composant central de la boîte pour me fabriquer une nouvelle clé... Selon lui, grâce à cette clé, je retrouverais toujours le chemin de notre maison. Maintenant que ma famille a disparu et que notre domaine de Seš'qa a été vendu... elle n'ouvre plus de portes et est devenue dénuée de sens."
       },
       {
+        "voId": "chr_0033_camille_mono_chat_line05",
         "title": "Discussion 5",
         "text": "Les « lances démoniaques » pourpres sont mes Arts de l'originium. Je peux encapsuler des objets dans mon sang pour les transformer en armes. J'utilise généralement mon propre sang, car celui de l'ennemi peut être impur. Et le sang de mes compagnons... Eh bien, je ne souhaite pas l'exploiter, même avec votre accord."
       },
       {
+        "voId": "chr_0033_camille_mono_about_line01",
         "title": "Thème : Seš'qa",
         "text": "Il y a cent ans, personne n'aurait imaginé qu'aujourd'hui, la vue de la ville sarkaz en train de flotter dans le ciel n'irriterait plus personne, mais que chacun souhaiterait la visiter et admirer la sorcellerie qui y est pratiquée. Seš'qa est telle une plume flottant dans l'air, portée par des vents maîtrisés par des centaines de personnes qui souhaitent qu'elle serve de repère à nos amis d'en bas, qu'elle soit un symbole d'espoir."
       },
       {
+        "voId": "chr_0033_camille_mono_about_line02",
         "title": "Thème : seigneur de guerre des terres sauvages",
         "text": "Jakub, le seigneur de guerre des terres sauvages... Oui, je l'ai vu en personne. Peu prononcent encore son nom, aujourd'hui. Au-delà de la haine que je lui voue, je ne suis pas d'accord avec son plan de détruire la Ceinture civilisée. Pourtant, je ne peux nier ses talents et l'efficacité de son commandement. Si Jakub Meissen n'était pas tombé, ses Brise-Terres auraient bien pu réussir à causer un véritable bain de sang sur Talos-II."
       },
       {
+        "voId": "chr_0033_camille_mono_about_line03",
         "title": "Thème : fratrie",
         "text": "Je ne ressemble en rien à Char. Mais parfois, il m'arrivait de voir son visage à la place du mien dans le miroir... J'essayais alors d'imiter son sourire nonchalant, cynique... Mais jamais je n'ai réussi à comprendre ses raisonnements. Comment a-t-il pu ignorer notre conflit et rejoindre les bandits qui ont tué nos parents ? Cette question me ronge. J'ai besoin de connaître la vérité."
       },
       {
+        "voId": "chr_0033_camille_mono_about_line04",
         "title": "Thème : Gardiens du Savoir",
         "text": "Rares sont ceux qui portent le titre d'« Agaš'mekanaz ». C'est à Char que je dois mon rôle de Gardien. Il est plus simple pour un membre de la famille de résoudre les crimes impliquant la sorcellerie sarkaz... Et nul ne connaît mieux que moi les Arts de Char. Je suis aussi le seul à pouvoir consacrer des décennies à sa traque. Il est douloureux de devoir se dresser contre un être cher, mais les Gardiens n'oublient jamais leur devoir. Et je ne ferai pas exception."
       },
       {
+        "voId": "chr_0033_camille_mono_about_line05",
         "title": "Thème : les parents",
         "text": "Sous l'égide de la légendaire Interlocutrice, mes parents sont arrivés sur Talos-II avec de nombreux Sarkaz. Ils ont compté parmi les premiers membres de Seš'qa et ont construit le vif-os... Le seigneur de guerre des terres sauvages les a tués. Dans mes souvenirs, ma mère était une personne douce, déterminée à instaurer la paix entre les espèces... Mais Char prétend avoir vu un autre aspect de sa personnalité qui m'aurait échappé... Qu'importe le passé, une trahison... est une trahison."
       },
       {
+        "voId": "chr_0033_camille_explore_point_common_01",
         "title": "Détection de ressource/objet à collecter 1",
         "text": "Suivez ces traces, par là."
       },
       {
+        "voId": "chr_0033_camille_explore_point_valub_01",
         "title": "Détection de ressource/objet à collecter 2",
         "text": "Ces objets ont une certaine valeur. Ils profiteront à nos opérations."
       },
       {
+        "voId": "chr_0033_camille_explore_find_locked_01",
         "title": "Zone inexplorée détectée",
         "text": "En tant que Gardien, il est de mon devoir de répertorier les territoires inconnus."
       },
       {
+        "voId": "chr_0033_camille_explore_find_danger_01",
         "title": "Découverte d'un ennemi puissant",
         "text": "Restez sur vos gardes. Une odeur de sang en émane."
       },
       {
+        "voId": "chr_0033_camille_interact_mine_valub_01",
         "title": "Extraction 1",
         "text": "Le son de ces minerais est vraiment agréable."
       },
       {
+        "voId": "chr_0033_camille_interact_mine_valub_echo2_01",
         "title": "Extraction 2",
         "text": "Permettez-moi. Ça ira plus vite."
       },
       {
+        "voId": "chr_0033_camille_interact_treasure_valub_01",
         "title": "Ouverture de caisse",
         "text": "L'action porte toujours ses fruits."
       },
       {
+        "voId": "chr_0033_camille_interact_etherium_01",
         "title": "Obtention d'aurylène",
         "text": "De l'aurylène... elle est tout aussi fugace."
       },
       {
+        "voId": "chr_0033_camille_interact_blight_break_01",
         "title": "Élimination de la Gangrène",
         "text": "Nous sommes venus à bout de la tare dont souffraient ces terres."
       },
       {
+        "voId": "chr_0033_camille_interact_rest_01",
         "title": "Se reposer",
         "text": "Du plus profond de l'obscurité nous provient une goutte de sang."
       },
       {
+        "voId": "chr_0033_camille_combat_suppuse_using_01",
         "title": "Utilisation de tactique 1",
         "text": "Utilisez ceci !"
       },
       {
+        "voId": "chr_0033_camille_combat_suppuse_getheal_01",
         "title": "Utilisation de tactique 2",
         "text": "Voilà qui vivifie le sang."
       },
       {
+        "voId": "chr_0033_camille_combat_remind_danger_01",
         "title": "Avertissement de danger",
         "text": "Attention !"
       },
       {
+        "voId": "chr_0033_camille_combat_hurt_lowhp_01",
         "title": "Blessure",
         "text": "Jusqu'à ma dernière goutte de sang..."
       },
       {
+        "voId": "chr_0033_camille_combat_dead_01",
         "title": "0 PV",
         "text": "La mer de sang... murmure son chagrin..."
       },
       {
+        "voId": "chr_0033_camille_combat_remind_praise_01",
         "title": "Encouragement de l'équipe 1",
         "text": "Un coup brillant."
       },
       {
+        "voId": "chr_0033_camille_combat_remind_praise_02",
         "title": "Encouragement de l'équipe 2",
         "text": "Magnifique. Voilà qui me fait frémir le sang."
       },
       {
+        "voId": "chr_0033_camille_combat_remind_praise_echo2_01",
         "title": "Réaction face aux encouragements 1",
         "text": "Je ne fais que mon devoir."
       },
       {
+        "voId": "chr_0033_camille_combat_remind_praise_echo2_02",
         "title": "Réaction face aux encouragements 2",
         "text": "Nous avons réussi ensemble."
       },
       {
+        "voId": "chr_0033_camille_combat_intobattle_01",
         "title": "Début du combat 1",
         "text": "Rien ne sert de lutter."
       },
       {
+        "voId": "chr_0033_camille_combat_intobattle_echo2_01",
         "title": "Début du combat 2",
         "text": "Nous devons aller de l'avant."
       },
       {
+        "voId": "chr_0033_camille_combat_outbattle_nor_01",
         "title": "Victoire au combat 1",
         "text": "La brise dissipe l'odeur métallique du sang. Tout se passe comme prévu."
       },
       {
+        "voId": "chr_0033_camille_combat_outbattle_nor_02",
         "title": "Victoire au combat 2",
         "text": "Un bel objectif. Sans parler de l'exécution."
       },
       {
+        "voId": "chr_0033_camille_combat_outbattle_nor_echo2_01",
         "title": "Victoire au combat 3",
         "text": "Le travail d'équipe, ce n'est pas mon fort. Mais ce jour fait exception."
       },
       {
+        "voId": "chr_0033_camille_combat_outbattle_hard_01",
         "title": "Victoire au combat 4",
         "text": "Nous avons versé du sang, mais l'ennemi encore plus. Nous avons atteint notre objectif... C'est une victoire dont nous devrons nous contenter."
       },
       {
+        "voId": "chr_0033_camille_combat_battle_defeat_01",
         "title": "Défaite au combat",
         "text": "Aussi amère soit notre défaite, ce n'est pas la fin. Toute dette de sang doit être honorée... et nous devons encore atteindre notre objectif."
       },
       {
+        "voId": "chr_0033_camille_mono_attack_last_01",
         "title": "Coup final 1",
         "text": "Pathétique !"
       },
       {
+        "voId": "chr_0033_camille_mono_attack_last_02",
         "title": "Coup final 2",
         "text": "Transpercez-les !"
       },
       {
+        "voId": "chr_0033_camille_mono_skill_nor_01",
         "title": "Compétence de combat 1",
         "text": "La miséricorde finale."
       },
       {
+        "voId": "chr_0033_camille_mono_skill_nor_02",
         "title": "Compétence de combat 2",
         "text": "La mort t'attend."
       },
       {
+        "voId": "chr_0033_camille_mono_skill_nor_03",
         "title": "Compétence de combat 3",
         "text": "Tords-toi de douleur."
       },
       {
+        "voId": "chr_0033_camille_combat_skill_comb_ready_01",
         "title": "Compétence de combo prête 1",
         "text": "La sorcellerie est prête."
       },
       {
+        "voId": "chr_0033_camille_combat_skill_comb_ready_02",
         "title": "Compétence de combo prête 2",
         "text": "Encerclez l'ennemi."
       },
       {
+        "voId": "chr_0033_camille_mono_skill_comb_release_01",
         "title": "Utilisation de combo 1",
         "text": "Nul ne s'échappera."
       },
       {
+        "voId": "chr_0033_camille_mono_skill_comb_release_02",
         "title": "Utilisation de combo 2",
         "text": "Saignez donc, impureté."
       },
       {
+        "voId": "chr_0033_camille_mono_attack_extra_01",
         "title": "Coup fatal 1",
         "text": "Acceptez votre destin."
       },
       {
+        "voId": "chr_0033_camille_mono_attack_extra_02",
         "title": "Coup fatal 2",
         "text": "Pitoyable."
       },
       {
+        "voId": "chr_0033_camille_mono_skill_ultimate_01",
         "title": "Ultime 1",
         "text": "Ô, pluie pourpre..."
       },
       {
+        "voId": "chr_0033_camille_mono_skill_ultimate_02",
         "title": "Ultime 2",
         "text": "Laissez la nuit sans fin vous emporter."
       },
       {
+        "voId": "chr_0033_camille_mono_skill_ultimate_03",
         "title": "Ultime 3",
         "text": "Le bûcher lave les péchés."
       }

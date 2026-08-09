@@ -128,326 +128,407 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0030_zhuangfy_chrbark_squad_01",
         "title": "Prep Operação 1",
         "text": "Seja para enfrentar inimigos ou convidados, precisamos nos preparar cuidadosamente antes de avançar."
       },
       {
+        "voId": "chr_0030_zhuangfy_chrbark_squad_02",
         "title": "Prep Operação 2",
         "text": "Que tal uma refrescante xícara de chá antes de sair?"
       },
       {
+        "voId": "chr_0030_zhuangfy_chrbark_join_01",
         "title": "Adicionando à Equipe 1",
         "text": "Já que você pediu minha ajuda, imagino que seja uma questão delicada. Como posso ajudar?"
       },
       {
+        "voId": "chr_0030_zhuangfy_chrbark_join_02",
         "title": "Adicionando à Equipe 2",
         "text": "Já se passaram anos desde a minha última missão... Espero não ter perdido a prática."
       },
       {
+        "voId": "chr_0030_zhuangfy_chrbark_weap_01",
         "title": "Trocando de Arma",
         "text": "Até mesmo a melhor arma exige tempo para ser dominada. Quando eu me acostumar com ela, compartilharei minhas impressões."
       },
       {
+        "voId": "chr_0030_zhuangfy_chrbark_gear_01",
         "title": "Trocando de Equipamento",
         "text": "Este novo é de fato mais poderoso, mas eu me apeguei ao antigo..."
       },
       {
+        "voId": "chr_0030_zhuangfy_chrup_skill_01",
         "title": "Ativação da Matriz de Capacidade",
         "text": "A cada nova descoberta que faço, percebo cada vez mais claramente que meu conhecimento não passa de uma gota no oceano."
       },
       {
+        "voId": "chr_0030_zhuangfy_chrup_level_01",
         "title": "Assistindo a Registros de Combate",
         "text": "*Suspiro* Não suporto me ver toda desastrada na tela... talvez você pudesse treinar comigo pessoalmente?"
       },
       {
+        "voId": "chr_0030_zhuangfy_chrup_promt01_01",
         "title": "Promoção de Operador 1",
         "text": "Eu apenas fiz o que devia... não há necessidade de tamanha cortesia."
       },
       {
+        "voId": "chr_0030_zhuangfy_chrup_promt02_01",
         "title": "Promoção de Operador 2",
         "text": "Muito bem, muito bem, já chega de elogios. Se você estiver livre, poderia dar uma olhada na pesquisa em que estou trabalhando?"
       },
       {
+        "voId": "chr_0030_zhuangfy_chrup_promt03_01",
         "title": "Promoção de Operador 3",
         "text": "Isso é generosidade demais da sua parte, sinceramente... Sabe de uma coisa? Uma refeição simples ao seu lado já seria mais do que suficiente. Ou, se você for visitar o litoral, uma pequena planta resistente ao sal seria uma lembrança perfeita."
       },
       {
+        "voId": "chr_0030_zhuangfy_chrup_promt04_01",
         "title": "Promoção de Operador 4",
         "text": "...Agradeço imensamente seu gesto gentil. E também gostaria de fazer um pequeno lembrete: quando puder, por favor, venha a Wuling para receber sua medalha de Cidadão Honorário. E prometa-me que não a pegará e irá embora sem nos avisar. Todos nós queremos realizar uma cerimônia apropriada para você."
       },
       {
+        "voId": "chr_0030_zhuangfy_introduce_01",
         "title": "Operadora se Apresentando para o Trabalho",
         "text": "Endmin, antes de vir oficialmente a bordo, gostaria de dizer algumas palavras. Como Vice-Rainha, tenho experiência em funções administrativas. No entanto... aqui na Endfield, eu gostaria de servir como uma Tianshi normal e me concentrar em pesquisa."
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_switch_01",
         "title": "Em espera 1",
         "text": "Você acabou de... me chamar? Você gostaria da minha companhia?"
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_switch_02",
         "title": "Em espera 2",
         "text": "Endmin, adicionei um novo módulo ao dispositivo Tianshi. Vamos ver como ele funciona?"
       },
       {
+        "voId": "chr_0030_zhuangfy_sim_assign_work_01",
         "title": "Atribuindo à Instalação",
         "text": "Se você confia em mim, pode deixar essas coisas menores comigo. Posso resolvê-las sozinha."
       },
       {
+        "voId": "chr_0030_zhuangfy_sim_hello_lower_01",
         "title": "Saudação 1",
         "text": "Estou indo para o laboratório. Gostaria de me acompanhar se for no seu caminho?"
       },
       {
+        "voId": "chr_0030_zhuangfy_sim_hello_max_01",
         "title": "Saudação 2",
         "text": "Que coincidência adorável! Eu estava pensando justamente em visitar você."
       },
       {
+        "voId": "chr_0030_zhuangfy_sim_talk_lv01_01",
         "title": "Conversa Informal na Dijiang 1",
         "text": "É a minha primeira vez na Dijiang, mas... minha projeção holográfica já esteve aqui em reuniões anteriores."
       },
       {
+        "voId": "chr_0030_zhuangfy_sim_talk_lv02_01",
         "title": "Conversa Informal na Dijiang 2",
         "text": "Refleti um pouco sobre aquela estátua gigante do Chubby Lung que você pediu... A entrega é possível, mas... talvez você queira pensar bem onde colocá-la."
       },
       {
+        "voId": "chr_0030_zhuangfy_sim_talk_lv02_02",
         "title": "Conversa Informal na Dijiang 3",
         "text": "Nosso plano de cooperação com a Endfield... perdão, com Wuling, foi concluído e o relatório do experimento já foi publicado. Se você tiver tempo nos próximos dias, por favor, dê uma olhada."
       },
       {
+        "voId": "chr_0030_zhuangfy_sim_talk_max_01",
         "title": "Conversa Informal na Dijiang 4",
         "text": "Desta vez não vim para a Dijiang a trabalho... As pereiras em Wuling deram frutos, então pensei em trazer algumas peras para compartilhar com todos."
       },
       {
+        "voId": "chr_0030_zhuangfy_sim_talk_max_02",
         "title": "Conversa Informal na Dijiang 5",
         "text": "Quando eu era criança, adorava acompanhar minha mestra ao observatório. Ela contava as estrelas e apontava para uma, que era Dijiang. Eu a observava, pensando na distância em que ela devia estar. Agora, com a Dijiang bem diante de mim, são as lembranças que parecem distantes."
       },
       {
+        "voId": "chr_0030_zhuangfy_sim_talk_max_03",
         "title": "Conversa Informal na Dijiang 6",
         "text": "Dizem que devemos ler muito e viajar bastante. Eu li muito, mas não visitei muitos lugares. Hongshan, Wuling e Dijiang são apenas três exemplos. Isso não é de se estranhar, pois tenho o hábito de permanecer em um mesmo lugar por muitos anos — dez, vinte... ou talvez até mesmo uma vida inteira."
       },
       {
+        "voId": "chr_0030_zhuangfy_sim_gift_give_01",
         "title": "Oferta de Presentes",
         "text": "Acabei de voltar de uma viagem de trabalho a Hongshan e trouxe alguns presentes para vocês. São simples, mas escolhi cada um com carinho... Espero que goste."
       },
       {
+        "voId": "chr_0030_zhuangfy_sim_gift_recv_01",
         "title": "Aceitando Presentes",
         "text": "Por etiqueta, eu deveria guardá-lo em um local apropriado, mas, pessoalmente, prefiro mantê-lo ao meu alcance para poder vê-lo o tempo todo."
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_self_line01",
         "title": "Diálogo de Confiança 1",
         "text": "Ah, Endmin! Você poderia segurar firme enquanto eu preparo a terra? Se o destino não tivesse me levado a Wuling, eu poderia ter permanecido em Hongshan, trabalhando como fazendeira ou como Tianshi Nongye. Minha família sempre adorou cuidar de flores e plantas, então nossa casa transbordava de verde, o que animava nossas visitas. É por isso que, quando ajudei a planejar a cidade de Wuling, meu primeiro pensamento foi: que fragrância deveria receber cada visitante e que atmosfera deveria envolvê-lo?"
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_self_line02",
         "title": "Diálogo de Confiança 2",
         "text": "Relaxa, não estou aqui para arrastar você para a Academia. Tem um restaurante de massas novo na Avenida Fangxing que serve macarrão com carne cozida, e pensei em te levar para experimentar. Aliás, por que me ver te lembra instantaneamente de que tem que trabalhar? Talvez eu devesse refletir um pouco sobre isso."
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_self_line03",
         "title": "Diálogo de Confiança 3",
         "text": "Wuling está organizando uma \"Corrida de Três Pernas\", e eu queria saber se você toparia correr comigo. O percurso vai de leste a oeste e depois de norte a sul. Se terminarmos antes do pôr do sol, passamos para a próxima fase. Está com medo de não conseguir? Relaxe, eu fiquei em primeiro lugar no ano passado. Se precisar, posso te carregar o resto do caminho. Então não se preocupe, com certeza vamos ficar entre os primeiros colocados."
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_self_line04",
         "title": "Diálogo de Confiança 4",
         "text": "O que você está lendo? Ah, é sobre mim? O artigo que publicamos antes? Ah... entendi, é sobre a minha família. Você podia ter me perguntado diretamente. Depois que meus pais faleceram, meu tio e minha tia me criaram com muito carinho. Mas cada um tinha suas próprias responsabilidades e nem sempre podiam estar ao meu lado. Então, desde pequena, eu ansiava por mais companhia. E, no entanto, quando finalmente fiz amigos, comecei a sentir falta da tranquilidade e da paz da solidão."
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_self_line05",
         "title": "Diálogo de Confiança 5",
         "text": "A paz pode ter retornado à Cidade de Wuling, mas podemos facilmente prever as muitas provações e desafios que estão por vir. Não se preocupe, Endmin. Não importa o quanto difíceis as coisas sejam, estaremos ao seu lado. O inverno sempre cede lugar à primavera. Como diz o ditado, a estação verdejante não decepciona aqueles que enfrentam a neve e a geada, pois ela despertará conforme prometido. E quando a beleza da nova primavera finalmente chegar, vamos admirá-la todos juntos."
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_chat_line01",
         "title": "Chat 1",
         "text": "O que você propôs combina bem com a nossa visão anterior, mas as barreiras técnicas há muito são um problema. Agora que um novo caminho se revelou... Ah, perdoe-me, acabei me distraindo com a fragrância que entrava pela janela. As flores desabrocharam tão cedo este ano, que maravilha... Endmin, já que a própria estação nos convida, que tal continuarmos nossa conversa lá fora?"
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_chat_line02",
         "title": "Chat 2",
         "text": "Muitas das plantas na Cidade de Wuling foram presentes que os Tianshi trouxeram de suas terras natais. Quando as vi pela primeira vez enraizadas aqui, pensei que era como se tivessem levado um pedaço de casa e o fincado na terra de Wuling, para que pudessem contemplá-lo sempre que a saudade batesse. Só mais tarde percebi que não eram apenas as sementes que haviam criado raízes, mas eles também. Para eles, Wuling não era mais um lugar estranho, mas um lar."
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_chat_line03",
         "title": "Chat 3",
         "text": "Adicione cinco mililitros da solução... Ok, a mudança de cor parece normal, sem precipitação ou turbidez estranhas. Em seguida, um pouco de catalisador para realçar o sabor... A temperatura está boa, nada está queimando. A taxa de dissolução parece normal... Humm, Endmin? Não, não, não estou fazendo um experimento. Na verdade, eu estou... cozinhando. Mi Fu sempre me criticou por viver de comida instantânea ou delivery, então, agora que finalmente tenho tempo livre, pensei em tentar fazer algo por conta própria. Quer experimentar?"
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_chat_line04",
         "title": "Chat 4",
         "text": "Ufa... um momento, por favor. Acabei de terminar minha corrida matinal e preciso respirar. S-sim, eu sei que são cinco da manhã, mas isso não é nada fora do comum. Levanto às quatro, faço exercício às cinco, estou na minha mesa às cinco e meia... esse ritmo me acompanha há mais de uma década. Não, eu nunca gostei de dormir até tarde. Simplesmente há muita coisa que quero fazer e realizar, então troco sono por tempo. Dito isso... o que traz você ao laboratório a essa hora?"
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_chat_line05",
         "title": "Chat 5",
         "text": "Em breve será o aniversário dos meus sêniores já falecidos. Endmin, se tiver tempo, você me acompanharia até o Jardim da Serenidade? Ainda lamento não ter conseguido recolher seus restos mortais e devolvê-los à sua terra natal. E entendo que nenhum monumento em Wuling pode trazê-los de volta. Contudo, se, por meio desses memoriais, pudermos manter viva a sua memória, mesmo que por mais um instante, então seus esforços não terão sido em vão."
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_about_line01",
         "title": "Tópico: Cidade de Wuling",
         "text": "É claro que construir a Cidade de Wuling bem ao lado da fenda é extremamente perigoso. Eu sabia disso melhor do que ninguém. Mas ninguém quis realocar a cidade quando a reconstruímos. Wuling herdou a responsabilidade da Estação Científica, e os Tianshi jamais vacilarão. Nem a cidade."
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_about_line02",
         "title": "Tema: Estação Científica de Wuling",
         "text": "Meus predecessores priorizaram a preservação de suas conquistas científicas acima de suas próprias vidas. No entanto, foram suas mortes o que mais senti. Embora a Xiranita possa ser reproduzida, quem partiu não pode voltar. Compreendo que, na busca pela ciência, as oportunidades de recomeçar são dolorosamente raras. Mesmo assim, sempre há aqueles que escolhem trilhar esse caminho com determinação. Talvez... meus predecessores tenham compreendido isso muito bem quando fizeram suas escolhas."
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_about_line03",
         "title": "Tópico: Mi Fu",
         "text": "Mi Fu é... bastante interessante. Quando começamos a construir a Cidade de Wuling, os desafios surgiam um após o outro, e eu frequentemente escapava para as montanhas em busca de paz. Não riam, mas \"buscar paz\" era apenas uma desculpa. Na verdade, eu estava enxugando minhas lágrimas em silêncio. Naquela época, Mi Fu ainda pertencia à Paliçada de Qingbo e sempre vinha para cima de mim com os punhos cerrados. Até que, certa noite, ela não disse nada e simplesmente sentou-se ao meu lado até o amanhecer, fazendo-me companhia."
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_about_line04",
         "title": "Tópico: Xiranita",
         "text": "Neste momento, estou diante de duas opções: continuar meus estudos sobre a Xiranita ou me dedicar a outros projetos. Sei que, mesmo que eu me afaste, meus colegas do Escritório Tianshi darão continuidade à pesquisa como esperado. E talvez seja hora de eu me dedicar onde sou mais necessária. No entanto, este projeto pode ser o único legado dos meus superiores; como eu poderia abandoná-lo?"
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_about_line05",
         "title": "Tópico: Chubby Lung",
         "text": "Rápido, sente-se comigo e me ajude a abrir essas caixas surpresa. Depois que a forja de Xiranita no Instituto foi desativada, o fabricante e eu incorporamos elementos de Xiranita na edição limitada de 10º aniversário de Chubby Lung. Eles se ofereceram para me enviar um conjunto completo, mas onde está a graça nisso? Hehe. Além disso, a probabilidade de ganhar é de uma em doze, o que é bem generoso comparado à imprevisibilidade da pesquisa científica, onde nem mesmo uma vida inteira de esforço garante o sucesso."
       },
       {
+        "voId": "chr_0030_zhuangfy_explore_point_common_01",
         "title": "Recurso/Colecionável Detectado 1",
         "text": "Há algo de valor aqui. Nossa jornada não foi em vão."
       },
       {
+        "voId": "chr_0030_zhuangfy_explore_point_valub_01",
         "title": "Recurso/Colecionável detectado 2",
         "text": "Que terra abençoada... Imagino as maravilhas que estão enterradas aqui."
       },
       {
+        "voId": "chr_0030_zhuangfy_explore_find_locked_01",
         "title": "Área Inexplorada Detectada",
         "text": "O \"desconhecido\"... Um conceito profundamente sedutor..."
       },
       {
+        "voId": "chr_0030_zhuangfy_explore_find_danger_01",
         "title": "Inimigo poderoso descoberto",
         "text": "Este não é um encontro amigável. Prossiga com cautela."
       },
       {
+        "voId": "chr_0030_zhuangfy_interact_mine_valub_01",
         "title": "Mineração 1",
         "text": "Quando eu estava na escola, conseguia coletar minerais de um jeito tão eficiente quanto você."
       },
       {
+        "voId": "chr_0030_zhuangfy_interact_mine_valub_echo2_01",
         "title": "Mineração 2",
         "text": "Calma. Eu te ajudo."
       },
       {
+        "voId": "chr_0030_zhuangfy_interact_treasure_valub_01",
         "title": "Abrindo um caixote",
         "text": "Este não é um objeto comum. Ele pode ter muitas finalidades."
       },
       {
+        "voId": "chr_0030_zhuangfy_interact_etherium_01",
         "title": "Adquirindo Aurileno",
         "text": "Vale a pena dar uma olhada de perto em como o Aurileno é coletado."
       },
       {
+        "voId": "chr_0030_zhuangfy_interact_blight_break_01",
         "title": "Eliminando a Praga",
         "text": "Eu gostaria de saber se existe uma maneira de eliminar a Praga de forma mais eficaz."
       },
       {
+        "voId": "chr_0030_zhuangfy_interact_rest_01",
         "title": "Descanse",
         "text": "Não hesite em fazer uma pausa. O que está por vir pode ser ainda mais desafiador."
       },
       {
+        "voId": "chr_0030_zhuangfy_combat_suppuse_using_01",
         "title": "Uso Tático 1",
         "text": "Aqui, use este medicamento."
       },
       {
+        "voId": "chr_0030_zhuangfy_combat_suppuse_getheal_01",
         "title": "Uso Tático 2",
         "text": "Muito melhor."
       },
       {
+        "voId": "chr_0030_zhuangfy_combat_remind_danger_01",
         "title": "Aviso de Perigo",
         "text": "Cuidado!"
       },
       {
+        "voId": "chr_0030_zhuangfy_combat_hurt_lowhp_01",
         "title": "Ferida",
         "text": "Não é nada. Não se preocupe comigo."
       },
       {
+        "voId": "chr_0030_zhuangfy_combat_dead_01",
         "title": "0 PV",
         "text": "Desculpe... Endmin..."
       },
       {
+        "voId": "chr_0030_zhuangfy_combat_remind_praise_01",
         "title": "Encorajamento da Equipe 1",
         "text": "Limpo e eficiente. Bela jogada!"
       },
       {
+        "voId": "chr_0030_zhuangfy_combat_remind_praise_02",
         "title": "Encorajamento da Equipe 2",
         "text": "A execução foi impecável."
       },
       {
+        "voId": "chr_0030_zhuangfy_combat_remind_praise_echo2_01",
         "title": "Resposta a Encorajamento 1",
         "text": "Você me deixa sem graça."
       },
       {
+        "voId": "chr_0030_zhuangfy_combat_remind_praise_echo2_02",
         "title": "Resposta a Encorajamento 2",
         "text": "Ah, foi um esforço de equipe."
       },
       {
+        "voId": "chr_0030_zhuangfy_combat_intobattle_01",
         "title": "Início do Combate 1",
         "text": "Não tememos lutas difíceis, apenas confusões fúteis."
       },
       {
+        "voId": "chr_0030_zhuangfy_combat_intobattle_echo2_01",
         "title": "Início do Combate 2",
         "text": "Já estou indo."
       },
       {
+        "voId": "chr_0030_zhuangfy_combat_outbattle_nor_01",
         "title": "Vitória em Combate 1",
         "text": "Para ser sincera, essa não foi uma batalha difícil."
       },
       {
+        "voId": "chr_0030_zhuangfy_combat_outbattle_nor_02",
         "title": "Vitória em Combate 2",
         "text": "Acredite, Endmin. A vitória será nossa da próxima vez também."
       },
       {
+        "voId": "chr_0030_zhuangfy_combat_outbattle_nor_echo2_01",
         "title": "Vitória em Combate 3",
         "text": "Obrigada pelo trabalho árduo."
       },
       {
+        "voId": "chr_0030_zhuangfy_combat_outbattle_hard_01",
         "title": "Vitória em Combate 4",
         "text": "Se você nunca desistir, nunca perderá de verdade."
       },
       {
+        "voId": "chr_0030_zhuangfy_combat_battle_defeat_01",
         "title": "Derrota em Combate",
         "text": "Enquanto estivermos de pé, nada estará verdadeiramente perdido."
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_attack_last_01",
         "title": "Golpe Final 1",
         "text": "Expurgue."
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_attack_last_02",
         "title": "Golpe Final 2",
         "text": "Abismal."
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_skill_nor_01",
         "title": "Habilidade de Batalha 1",
         "text": "Rugidos do trovão!"
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_skill_nor_02",
         "title": "Habilidade de Batalha 2",
         "text": "Lâminas sem limites!"
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_skill_nor_03",
         "title": "Habilidade de Batalha 3",
         "text": "A tempestade despertou!"
       },
       {
+        "voId": "chr_0030_zhuangfy_combat_skill_comb_ready_01",
         "title": "Combo de Habilidades Pronto 1",
         "text": "Estou pronta para quando você estiver!"
       },
       {
+        "voId": "chr_0030_zhuangfy_combat_skill_comb_ready_02",
         "title": "Combo de Habilidades Pronto 2",
         "text": "Estou com você!"
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_skill_comb_release_01",
         "title": "Conjuração de Combo 1",
         "text": "Desista agora!"
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_skill_comb_release_02",
         "title": "Conjuração de Combo 2",
         "text": "Luta em vão!"
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_attack_extra_01",
         "title": "Finalizador 1",
         "text": "Que incompetência."
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_attack_extra_02",
         "title": "Finalizador 2",
         "text": "Incompetente."
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_skill_ultimate_01",
         "title": "Habilidade Suprema 1",
         "text": "Um estrondo de trovão, uma pancada de chuva."
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_skill_ultimate_02",
         "title": "Habilidade Suprema 2",
         "text": "Uma tempestade repentina, o surgimento de uma vida."
       },
       {
+        "voId": "chr_0030_zhuangfy_mono_skill_ultimate_03",
         "title": "Habilidade Suprema 3",
         "text": "Um reinado azul, uma lança de sol."
       }

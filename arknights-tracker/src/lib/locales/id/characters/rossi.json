@@ -132,330 +132,412 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0028_wulfa_chrbark_squad_01",
         "title": "Persiapan Operasi 1",
         "text": "Ini kesempatanku untuk menunjukkan kemampuan kepada Endmin!"
       },
       {
+        "voId": "chr_0028_wulfa_chrbark_squad_02",
         "title": "Persiapan Operasi 2",
         "text": "Aku tak akan mengecewakan siapa pun!"
       },
       {
+        "voId": "chr_0028_wulfa_chrbark_join_01",
         "title": "Menambahkan ke Tim 1",
         "text": "Rossi dari Kawanan. E-Endmin .... Apa misi kita?"
       },
       {
+        "voId": "chr_0028_wulfa_chrbark_join_02",
         "title": "Menambahkan ke Tim 2",
         "text": "Aku akan berusaha sebaik mungkin, Endmin!"
       },
       {
+        "voId": "chr_0028_wulfa_chrbark_weap_01",
         "title": "Berganti Senjata",
         "text": "Wah! Senjata ini keren sekali! Aku belum pernah lihat yang seperti ini di klan!"
       },
       {
+        "voId": "chr_0028_wulfa_chrbark_gear_01",
         "title": "Berganti Gear",
         "text": "Agak susah gerak kalau pakai ini .... Oh? Endmin yang pilihkan untukku? Kalau begitu akan kupakai! Hmm ... Pasti ada makna di baliknya ...."
       },
       {
+        "voId": "chr_0028_wulfa_chrup_skill_01",
         "title": "Aktivasi Matriks Kemampuan",
         "text": "Aku ini keturunan Kawanan!"
       },
       {
+        "voId": "chr_0028_wulfa_chrup_level_01",
         "title": "Menonton Rekaman Pertarungan",
         "text": "Jadi, begitulah cara bertarung para pejuang berpengalaman .... Hmm ... begini ... lalu begitu .... Oke, sekarang aku paham!"
       },
       {
+        "voId": "chr_0028_wulfa_chrup_promt01_01",
         "title": "Promosi Operator 1",
         "text": "Pro ... mosi? Ah, paham! Di klan juga ada upacara serupa, tapi aku sendiri belum pernah ikut. Wah, ternyata ... seru juga."
       },
       {
+        "voId": "chr_0028_wulfa_chrup_promt02_01",
         "title": "Promosi Operator 2",
         "text": "Hehe, aku cukup jago juga, ‘kan? Minimal harus bisa seperti ini agar bisa pegang tanggung jawab klan. Soalnya, aku akan bikin Kawanan dikenal di seluruh Talos-II!"
       },
       {
+        "voId": "chr_0028_wulfa_chrup_promt03_01",
         "title": "Promosi Operator 3",
         "text": "Promosi memang gampang untuk pejuang seperti aku! Kapan promosi berikutnya? Aku sudah siap! Harus tunggu waktu yang pas? Oke ... baiklah."
       },
       {
+        "voId": "chr_0028_wulfa_chrup_promt04_01",
         "title": "Promosi Operator 4",
         "text": "Ini artinya akulah operator terbaik sekarang, ‘kan? Kira-kira Catello dulu juga semudah ini tidak, ya. Kalau ketemu, pasti akan kuledek habis-habisan!"
       },
       {
+        "voId": "chr_0028_wulfa_introduce_01",
         "title": "Operator Siap Bertugas",
         "text": "Aku Rossina, nama julukanku Wulfperl, artinya harta karun Kawanan! Jangan sampai lupa! Ah ... Endmin, kau boleh memanggilku apa saja, kok ...."
       },
       {
+        "voId": "chr_0028_wulfa_mono_switch_01",
         "title": "Siaga 1",
         "text": "Waktu pertumpahan darah telah tiba. Saatnya berburu. Maksudku ... saatnya makan."
       },
       {
+        "voId": "chr_0028_wulfa_mono_switch_02",
         "title": "Siaga 2",
         "text": "Mangsa, waspadalah! Akulah kaki Kawanan! ... Sebentar, kedengarannya kok aneh? Yah, sudahlah ... Auuu!"
       },
       {
+        "voId": "chr_0028_wulfa_sim_assign_work_01",
         "title": "Menugaskan ke Fasilitas",
         "text": "Promosi memang gampang untuk seorang elite sepertiku!"
       },
       {
+        "voId": "chr_0028_wulfa_sim_hello_lower_01",
         "title": "Menyapa 1",
         "text": "E-Endmin! Ada misi untukku hari ini?"
       },
       {
+        "voId": "chr_0028_wulfa_sim_hello_max_01",
         "title": "Menyapa 2",
         "text": "Endmin, ceritakan pengalaman kepemimpinanmu, ya?"
       },
       {
+        "voId": "chr_0028_wulfa_sim_talk_lv01_01",
         "title": "Obrolan Santai di Dijiang 1",
         "text": "Bagaimana cara Endfield mengatur begitu banyak operator? Katanya dengan ... sistem? Dan semacam ... kontrol pusat? Aku masih belum paham ... tapi pasti layak dipelajari."
       },
       {
+        "voId": "chr_0028_wulfa_sim_talk_lv02_01",
         "title": "Obrolan Santai di Dijiang 2",
         "text": "Para tetua serigala di klan menyuruhku sering-sering ke Dijiang. Katanya aku bisa belajar jadi pemimpin di sini, terutama di sisimu. Tapi, bertemu denganmu saja sulit sekali!"
       },
       {
+        "voId": "chr_0028_wulfa_sim_talk_lv02_02",
         "title": "Obrolan Santai di Dijiang 3",
         "text": "Kakak-kakak di Dijiang selalu menganggapku anak kecil! Padahal aku sudah jadi anggota elite di Kawanan. Lain kali, akan kutegaskan kepada mereka agar berhenti! ... Tapi, camilan dari mereka benar-benar enak ...."
       },
       {
+        "voId": "chr_0028_wulfa_sim_talk_max_01",
         "title": "Obrolan Santai di Dijiang 4",
         "text": "Urusan klan adalah yang utama! Tapi, kalau Endfield ada masalah mendesak, aku pasti akan langsung datang. Hanya saja ... aku tak yakin kau benar-benar butuh bantuanku .... Kau ini hebat sekali, krisis pun pasti bisa kautangani sendiri tanpa aku. Tapi, aku tetap ingin membantu .... Aku harus bagaimana, ya ...."
       },
       {
+        "voId": "chr_0028_wulfa_sim_talk_max_02",
         "title": "Obrolan Santai di Dijiang 5",
         "text": "Katanya Catello ada di Dijiang juga, tapi kenapa masih tetap susah dicari? Hmm ... mungkin sudah kebiasaan? Kalau tak segera ketemu, Nonno Rozzan bisa marah besar. Aku tak mau lihat dia marah .... Endmin, apa kau tahu aku bisa cari Catello di mana?"
       },
       {
+        "voId": "chr_0028_wulfa_sim_talk_max_03",
         "title": "Obrolan Santai di Dijiang 6",
         "text": "Kenapa aku juga tak bisa temukan data tentangmu di Dijiang? Akhirnya aku bisa pakai Arsip Intel ini, tapi hasilnya selalu tak jelas atau malah muncul pesan “Tidak Ada Otoritas” .... Ugh ... Endmin, kau ada waktu untuk cerita langsung soal kehebatanmu, tidak?"
       },
       {
+        "voId": "chr_0028_wulfa_sim_gift_give_01",
         "title": "Menawarkan Hadiah",
         "text": "Endmin, ini hasil rampasan yang kukumpulkan! Semuanya untukmu! Tenang saja, aku akan cari lagi!"
       },
       {
+        "voId": "chr_0028_wulfa_sim_gift_recv_01",
         "title": "Menerima Hadiah",
         "text": "Ini ... untukku? Sungguh? Terima kasih! Aku akan cari tahu arti dari hadiahmu ini!"
       },
       {
+        "voId": "chr_0028_wulfa_mono_self_line01",
         "title": "Dialog Kepercayaan 1",
         "text": "Ini? Yah ... aku hanya mencatat semua perkataan dan tindakanmu, Endmin. Bahkan hal yang detail pun layak dipelajari. Ah ... jangan dilihat! Ini catatan pribadiku!"
       },
       {
+        "voId": "chr_0028_wulfa_mono_self_line02",
         "title": "Dialog Kepercayaan 2",
         "text": "A-Aku dengar banyak legenda tentangmu. Aku selalu penasaran kau itu orang seperti apa! Tapi, setelah benar-benar bertemu, kau ternyata lebih hebat daripada cerita-cerita itu. Apanya, ya? Hmm ... caramu, kepemimpinanmu .... S-Sampai tak tahu cara mengungkapkannya ...."
       },
       {
+        "voId": "chr_0028_wulfa_mono_self_line03",
         "title": "Dialog Kepercayaan 3",
         "text": "Anak-anak Kawanan mengikuti upacara kedewasaan saat berumur tiga belas tahun. Klan akan berkumpul untuk memilih nama julukan “serigala” yang baru. Catello dapat “Wulfgard”, dan aku dapat “Wulfperl”. Aku suka nama yang diberikan klan. Setiap kali mengucapkannya, rasanya darah Kawanan mengalir dalam diriku .... Bagaimana menurutmu, Endmin?"
       },
       {
+        "voId": "chr_0028_wulfa_mono_self_line04",
         "title": "Dialog Kepercayaan 4",
         "text": "Endmin, belakangan ini aku cukup sukses dalam misi, ‘kan? Jadi ... apa aku boleh minta sedikit imbalan? Ah ... tak perlu berlebihan, mengobrol denganku saja sudah cukup! .... Boleh tidak?"
       },
       {
+        "voId": "chr_0028_wulfa_mono_self_line05",
         "title": "Dialog Kepercayaan 5",
         "text": "Aku tahu kemampuanku belum cukup untuk memimpin Kawanan, tapi para tetua bersikeras agar aku menangani urusan klan .... Jadi, aku ingin belajar darimu, Endmin. Aku ingin tahu caranya menjadi orang yang bisa dipercaya sepertimu, juga Perlica, dan M3 .... Akan kubuat semua orang terkejut saat melihatku!"
       },
       {
+        "voId": "chr_0028_wulfa_mono_chat_line01",
         "title": "Obrolan 1",
         "text": "Kakak-kakak di Endfield sudah banyak mengajariku! Perlica menjelaskan cara kerja protosync, Avywenna mengajakku ke toko pakaian dan perhiasan TGCC, dan ... dan Xaihi bilang dia ingin bicara soal kompleksitas waktu kuadratik .... Aku sendiri juga tak tahu itu artinya apa."
       },
       {
+        "voId": "chr_0028_wulfa_mono_chat_line02",
         "title": "Obrolan 2",
         "text": "Kakak-kakak di sini menjagaku dengan sangat baik. Mereka bahkan sering memberiku hadiah. Tapi, aku sudah lolos ujian Kawanan! Aku ini serigala sejati! Serigala dewasa mestinya tak suka hal kekanak-kanakan. Mereka mestinya suka belati dan koin! Makanya aku sudah kumpulkan banyak-banyak. Kalau badanku sudah lebih tinggi, semua orang pasti bisa menyerahkan misi paling berbahaya kepadaku!"
       },
       {
+        "voId": "chr_0028_wulfa_mono_chat_line03",
         "title": "Obrolan 3",
         "text": "Dulu kukira Nonno Rozzan itu orang terkuat di dunia, tapi dia selalu bilang “selalu ada yang lebih hebat” dan terus menyebut namamu, Endmin. Lalu, aku juga dengar banyak cerita legendaris tentangmu di tempat lain. Aku sampai berpikir, “Wow, ternyata ada orang sepertimu di luar sana?!” Aku sudah lama ingin tahu seperti apa dirimu yang sebenarnya. Sejak dengar kabar bahwa kau sudah bangun, aku pun berencana mau memberimu kejutan suatu hari nanti ... hehe."
       },
       {
+        "voId": "chr_0028_wulfa_mono_chat_line04",
         "title": "Obrolan 4",
         "text": "Belati pertamaku adalah imbalan dari perburuan darurat! Kotaknya mengilap dan berwarna emas, sampai sekarang masih kusimpan baik-baik. Yang ini juga favoritku. Selalu kubawa, walau tak terlalu tajam, cocok untuk memotong buah. Kalau mau, Endmin ... ehm .... Nanti akan kuberikan kepadamu setelah kotaknya kubawa!"
       },
       {
+        "voId": "chr_0028_wulfa_mono_chat_line05",
         "title": "Obrolan 5",
         "text": "Tentang masa kecilku .... Kawanan selalu terseret konflik melawan Bonekrusher. Yang membawaku mencari bantuan medis adalah kakakku, anggota klan juga .... Oh! Ah ... sebaiknya aku tak cerita ini di depanmu! Lupakan saja, Endmin. Lebih baik kita bahas tentangmu! Kudengar, katanya ...."
       },
       {
+        "voId": "chr_0028_wulfa_mono_about_line01",
         "title": "Topik: Endministrator",
         "text": "“Originium akan membuka jalan untuk kita.” Ah ... a-aku cuma latihan .... Oh, tidak, tidak .... Kau jadi benci aku tidak ya? Aku tahu belajar darimu bukan berarti sekadar meniru .... Aku cuma merasa ... kedengarannya keren sekali ...."
       },
       {
+        "voId": "chr_0028_wulfa_mono_about_line02",
         "title": "Topik: Nama Sandi",
         "text": "Sebagai anggota Kawanan, aku boleh pakai nama julukan sebagai nama sandi seperti kakakku, tapi ... aku belum pernah dipanggil dengan nama itu oleh orang luar klan, rasanya agak malu. “Rossina” juga terdengar terlalu kekanak-kanakan ... aku tak mau pakai itu! Akhirnya aku pakai “Rossi” sebagai nama sandiku, seperti warna jubahku."
       },
       {
+        "voId": "chr_0028_wulfa_mono_about_line03",
         "title": "Topik: Klan Bonekrusher",
         "text": "Tak akan kubiarkan satu pun berandalan Bonekrusher itu lolos! Ini dendam darah antara Kawanan dan Bonekrusher. Terlalu banyak serigala, terlalu banyak anggota keluarga, yang mati di tangan mereka hanya demi menyelamatkanku. Ini balas dendam Kawanan, dan juga dendamku. Kami ini klan yang menyimpan dendam paling lama di dunia ini, dan suatu hari nanti, semua dendam akan kami balas!"
       },
       {
+        "voId": "chr_0028_wulfa_mono_about_line04",
         "title": "Topik: Jubah",
         "text": "Jubah ini berlumuran darah keluargaku ... tapi bagiku, rasanya damai sekali setiap kali menyentuhnya. Seakan-akan mereka masih bersamaku. Jubah ini juga membara, yang mengingatkanku agar tak pernah lupa akan dendam kami, tapi juga memberiku keberanian, dan kehangatan keluarga .... Iya, mereka selalu menyertaiku."
       },
       {
+        "voId": "chr_0028_wulfa_mono_about_line05",
         "title": "Topik: Barang Koleksi",
         "text": "Dulu, semua belati dan koin yang kukumpulkan kusimpan di kotak harta khusus, tapi kotaknya hilang saat pindahan .... Parahnya lagi, di dalamnya ada barang-barang yang memalukan—kerajinan buatanku waktu kecil. Butuh waktu lama sekali untuk mencari kotak itu. Sekarang, semuanya aman tersimpan di Dijiang! Yang lebih seru lagi, aku bisa pakai alasan menyimpan barang untuk berkumpul bersama kakak-kakak di sini. Eh ... maksudku, untuk belajar di sini!"
       },
       {
+        "voId": "chr_0028_wulfa_mono_about_line06",
         "title": "Topik: Penghuni Alam Liar",
         "text": "Semua hal yang dilakukan orang di alam liar hanyalah demi bertahan hidup. Kadang aku melihat anak-anak seumuranku terpaksa melakukan hal buruk hanya demi bertahan .... Landbreaker sekalipun kadang ambil risiko besar supaya tetap hidup. Menurutku semua orang mestinya bisa hidup sesuai pilihannya sendiri. Endmin, apa Endfield bisa mengubah semua ini, agar anak-anak itu bisa mengejar mimpi mereka sepertiku?"
       },
       {
+        "voId": "chr_0028_wulfa_explore_point_common_01",
         "title": "Sumber Daya/Barang Koleksi Terdeteksi 1",
         "text": "Percaya deh, ada yang bagus di sana!"
       },
       {
+        "voId": "chr_0028_wulfa_explore_point_valub_01",
         "title": "Sumber Daya/Barang Koleksi Terdeteksi 2",
         "text": "Kawanan tak pernah melewatkan sumber daya apa pun di alam. Awasi area itu!"
       },
       {
+        "voId": "chr_0028_wulfa_explore_find_locked_01",
         "title": "Area yang Belum Dijelajahi Terdeteksi",
         "text": "Ada bau aneh di sana. Ayo lihat!"
       },
       {
+        "voId": "chr_0028_wulfa_explore_find_danger_01",
         "title": "Musuh Kuat Ditemukan",
         "text": "Bau bahaya nih. Kita perlu bertindak tidak?"
       },
       {
+        "voId": "chr_0028_wulfa_interact_mine_valub_01",
         "title": "Penambangan 1",
         "text": "Apa aku boleh minta beberapa batu itu? Mau kususun di belatiku."
       },
       {
+        "voId": "chr_0028_wulfa_interact_mine_valub_echo2_01",
         "title": "Penambangan 2",
         "text": "Ayo kita lakukan bersama. Agar tugas ini cepat selesai!"
       },
       {
+        "voId": "chr_0028_wulfa_interact_treasure_valub_01",
         "title": "Membuka Kerat",
         "text": "Hmm ... kalau tak bisa dibuka, coba kugigit saja."
       },
       {
+        "voId": "chr_0028_wulfa_interact_etherium_01",
         "title": "Mendapatkan Aurylene",
         "text": "Kenapa ada Aurylene yang melayang dan ada yang diam saja, ya? Ajaib sekali."
       },
       {
+        "voId": "chr_0028_wulfa_interact_blight_break_01",
         "title": "Menyingkirkan Hawar",
         "text": "Sudah beres! Hawar menyebalkan itu sudah hilang!"
       },
       {
+        "voId": "chr_0028_wulfa_interact_rest_01",
         "title": "Istirahat",
         "text": "Makan banyak, tidur nyenyak, dan istirahat cukup. Itulah kearifan Kawanan!"
       },
       {
+        "voId": "chr_0028_wulfa_combat_suppuse_using_01",
         "title": "Penggunaan Taktis 1",
         "text": "Cepat, pakai ini untuk memulihkan diri!"
       },
       {
+        "voId": "chr_0028_wulfa_combat_suppuse_getheal_01",
         "title": "Penggunaan Taktis 2",
         "text": "Rasanya jauh lebih mendingan!"
       },
       {
+        "voId": "chr_0028_wulfa_combat_remind_danger_01",
         "title": "Peringatan Bahaya",
         "text": "Awas! Ada yang datang!"
       },
       {
+        "voId": "chr_0028_wulfa_combat_hurt_lowhp_01",
         "title": "Cedera",
         "text": "Tak ada waktu ... untuk merawat lukaku ...."
       },
       {
+        "voId": "chr_0028_wulfa_combat_dead_01",
         "title": "0 HP",
         "text": "Kawanan ... tak akan membiarkan ini begitu saja ...."
       },
       {
+        "voId": "chr_0028_wulfa_combat_remind_praise_01",
         "title": "Penyemangat Tim 1",
         "text": "Serangannya mantap!"
       },
       {
+        "voId": "chr_0028_wulfa_combat_remind_praise_02",
         "title": "Penyemangat Tim 2",
         "text": "Wow! Kerja sama yang luar biasa!"
       },
       {
+        "voId": "chr_0028_wulfa_combat_remind_praise_echo2_01",
         "title": "Respons Penyemangat 1",
         "text": "Hehehe, aku punya trik yang lebih keren lagi!"
       },
       {
+        "voId": "chr_0028_wulfa_combat_remind_praise_echo2_02",
         "title": "Respons Penyemangat 2",
         "text": "Inilah pertarungan yang kita cari!"
       },
       {
+        "voId": "chr_0028_wulfa_combat_intobattle_01",
         "title": "Mulai Pertarungan 1",
         "text": "Darah Kawanan pun bergejolak!"
       },
       {
+        "voId": "chr_0028_wulfa_combat_intobattle_echo2_01",
         "title": "Mulai Pertarungan 2",
         "text": "Jangan sampai ketinggalan perburuan kali ini!"
       },
       {
+        "voId": "chr_0028_wulfa_combat_outbattle_nor_01",
         "title": "Menang Pertarungan 1",
         "text": "Nama Kawanan akan menggema di seluruh negeri!"
       },
       {
+        "voId": "chr_0028_wulfa_combat_outbattle_nor_02",
         "title": "Menang Pertarungan 2",
         "text": "Sudah kapok? Beginilah jadinya kalau main-main dengan Kawanan!"
       },
       {
+        "voId": "chr_0028_wulfa_combat_outbattle_nor_echo2_01",
         "title": "Menang Pertarungan 3",
         "text": "Heh-heh-heh. Kalau ada aku, kita sudah pasti menang!"
       },
       {
+        "voId": "chr_0028_wulfa_combat_outbattle_hard_01",
         "title": "Menang Pertarungan 4",
         "text": "Gigitan mereka memang dalam, tapi Kawanan tak takut punya bekas luka baru!"
       },
       {
+        "voId": "chr_0028_wulfa_combat_battle_defeat_01",
         "title": "Kalah Bertarung",
         "text": "Kemunduran kecil ini bukan masalah .... Aku, Rossina, tak akan menyerah!"
       },
       {
+        "voId": "chr_0028_wulfa_mono_attack_last_01",
         "title": "Final Strike 1",
         "text": "Tercabiklah!"
       },
       {
+        "voId": "chr_0028_wulfa_mono_attack_last_02",
         "title": "Final Strike 2",
         "text": "Gemetarlah!"
       },
       {
+        "voId": "chr_0028_wulfa_mono_skill_nor_01",
         "title": "Skill Tarung 1",
         "text": "Cabik mereka!"
       },
       {
+        "voId": "chr_0028_wulfa_mono_skill_nor_02",
         "title": "Skill Tarung 2",
         "text": "Saatnya berburu!"
       },
       {
+        "voId": "chr_0028_wulfa_mono_skill_nor_03",
         "title": "Skill Tarung 3",
         "text": "Cakar membara!"
       },
       {
+        "voId": "chr_0028_wulfa_combat_skill_comb_ready_01",
         "title": "Skill Kombo Siap 1",
         "text": "Akan kita buru mereka!"
       },
       {
+        "voId": "chr_0028_wulfa_combat_skill_comb_ready_02",
         "title": "Skill Kombo Siap 2",
         "text": "Akan kubuat mereka gentar!"
       },
       {
+        "voId": "chr_0028_wulfa_mono_skill_comb_release_01",
         "title": "Penggunaan Kombo 1",
         "text": "Kau tak akan bisa kabur!"
       },
       {
+        "voId": "chr_0028_wulfa_mono_skill_comb_release_02",
         "title": "Penggunaan Kombo 2",
         "text": "Kena kau!"
       },
       {
+        "voId": "chr_0028_wulfa_mono_attack_extra_01",
         "title": "Penuntas 1",
         "text": "Habislah kau!"
       },
       {
+        "voId": "chr_0028_wulfa_mono_attack_extra_02",
         "title": "Penuntas 2",
         "text": "Auuu!"
       },
       {
+        "voId": "chr_0028_wulfa_mono_skill_ultimate_01",
         "title": "Ultimate 1",
         "text": "Mendidihlah, darah Kawanan!"
       },
       {
+        "voId": "chr_0028_wulfa_mono_skill_ultimate_02",
         "title": "Ultimate 2",
         "text": "Pedang ini adalah diriku!"
       },
       {
+        "voId": "chr_0028_wulfa_mono_skill_ultimate_03",
         "title": "Ultimate 3",
         "text": "Roh serigala, tetaplah bersamaku."
       }

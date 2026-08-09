@@ -126,318 +126,397 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0014_aurora_chrbark_squad_01",
         "title": "Persiapan Operasi 1",
         "text": "Menunggu perintahmu, Endministrator."
       },
       {
+        "voId": "chr_0014_aurora_chrbark_squad_02",
         "title": "Persiapan Operasi 2",
         "text": "Endmin! Kau sudah datang!"
       },
       {
+        "voId": "chr_0014_aurora_chrbark_join_01",
         "title": "Menambahkan ke Tim 1",
         "text": "Misi medan baru? Aku siap berangkat!"
       },
       {
+        "voId": "chr_0014_aurora_chrbark_join_02",
         "title": "Menambahkan ke Tim 2",
         "text": "Akan kulindungi semuanya!"
       },
       {
+        "voId": "chr_0014_aurora_chrbark_weap_01",
         "title": "Berganti Senjata",
         "text": "Performanya mengagumkan! Bisa digunakan di lingkungan ekstrem juga!"
       },
       {
+        "voId": "chr_0014_aurora_chrbark_gear_01",
         "title": "Berganti Gear",
         "text": "Pembuatnya benar-benar penuh perhitungan."
       },
       {
+        "voId": "chr_0014_aurora_chrup_skill_01",
         "title": "Aktivasi Matriks Kemampuan",
         "text": "Aku sudah berolahraga sangat keras! Kita harus siap menghadapi segala macam situasi darurat, tahu!"
       },
       {
+        "voId": "chr_0014_aurora_chrup_level_01",
         "title": "Menonton Rekaman Pertarungan",
         "text": "Rekaman-rekaman ini memberikan banyak referensi berharga! Aku jadi punya banyak ide untuk operasi SAR mendatang!"
       },
       {
+        "voId": "chr_0014_aurora_chrup_promt01_01",
         "title": "Promosi Operator 1",
         "text": "Mmh! Kerja keras selalu membuahkan hasil! Aku tak akan mengecewakan Endfield atau siapa pun!"
       },
       {
+        "voId": "chr_0014_aurora_chrup_promt02_01",
         "title": "Promosi Operator 2",
         "text": "Berarti, cakupan operasionalku jadi makin luas, ‘kan? Jangan khawatir! Kau bisa mengandalkanku untuk semua kebutuhan penyelamatan darurat, pengambilan sampel data, dukungan logistik, dan segala jenis pekerjaan lapangan!"
       },
       {
+        "voId": "chr_0014_aurora_chrup_promt03_01",
         "title": "Promosi Operator 3",
         "text": "Kali ini, aku meng-upgrade semua Unit Arts pembuat es SAR-ku, Endmin! Lihat! Aku membuat igloo sementara! Masuk saja kalau mau menginap!"
       },
       {
+        "voId": "chr_0014_aurora_chrup_promt04_01",
         "title": "Promosi Operator 4",
         "text": "Waktu yang kuhabiskan di Endfield mengajarkan banyak hal baru dan memberikan banyak kenangan indah .... Terima kasih telah memercayaiku, Endmin. Mulai sekarang, aku akan terus mendaki puncak yang lebih tinggi ... dan menyelamatkan orang sebanyak mungkin."
       },
       {
+        "voId": "chr_0014_aurora_introduce_01",
         "title": "Operator Siap Bertugas",
         "text": "Salam! Aku operatormu dari Rhodes Island. Nama sandiku Snowshine. Aku ahli SAR dengan spesialisasi operasi suhu rendah. Masukkan aku ke tim kalau kau punya misi di padang es atau pegunungan bersalju."
       },
       {
+        "voId": "chr_0014_aurora_mono_switch_01",
         "title": "Siaga 1",
         "text": "Mau ikut main seluncur salju denganku, Endmin?"
       },
       {
+        "voId": "chr_0014_aurora_mono_switch_02",
         "title": "Siaga 2",
         "text": "Kecepatan anginnya bagus. Jarak pandangnya bagus. Cuacanya cocok untuk main seluncur salju."
       },
       {
+        "voId": "chr_0014_aurora_sim_assign_work_01",
         "title": "Menugaskan ke Fasilitas",
         "text": "Bukan masalah! Aku sudah mencoba semua pekerjaan di tempat ini! Dan pekerjaan itu jauh lebih mudah daripada membangun benteng!"
       },
       {
+        "voId": "chr_0014_aurora_sim_hello_lower_01",
         "title": "Menyapa 1",
         "text": "Salam, Endmin."
       },
       {
+        "voId": "chr_0014_aurora_sim_hello_max_01",
         "title": "Menyapa 2",
         "text": "Butuh bantuan, Endmin? Aku bisa jadi pelindungmu!"
       },
       {
+        "voId": "chr_0014_aurora_sim_talk_lv01_01",
         "title": "Obrolan Santai di Dijiang 1",
         "text": "Aku belajar banyak hal baru setiap kali aku naik Dijiang: Ada teknologi dan mesin yang belum pernah kulihat, teori pertarungan khusus, rencana pemantauan yang berani .... Oh, aku hampir tak bisa mengikuti semuanya! Endfield memang luar biasa! Serius!"
       },
       {
+        "voId": "chr_0014_aurora_sim_talk_lv02_01",
         "title": "Obrolan Santai di Dijiang 2",
         "text": "Apa? Kantin Dijiang punya bar camilan prasmanan?! Ah, maaf. Aku cuma agak terkejut .... Tidak, tentu saja tidak! Aku tak akan habiskan semuanya! Sumpah!"
       },
       {
+        "voId": "chr_0014_aurora_sim_talk_lv02_02",
         "title": "Obrolan Santai di Dijiang 3",
         "text": "Endmin! Pas sekali kau datang! Paketku baru saja sampai dan aku ingin tahu apa kau mau coba fondue keju spesialku? Rasanya ...? Menurutku lumayan ... istimewa? Banyak rekan kerjaku bilang bahwa ini “pengalaman tak terlupakan seumur hidup” ...."
       },
       {
+        "voId": "chr_0014_aurora_sim_talk_max_01",
         "title": "Obrolan Santai di Dijiang 4",
         "text": "Hnnnggghh! Peregangan bisa membantu melenturkan sendi. Kebiasaan ini bisa membantu mencegah otot robek dan hipotermia di lingkungan kutub. Mau coba? Jangan khawatir. Aku pernah jadi asisten pelatih dalam sesi latihan, jadi aku pasti bisa memperbaiki postur tubuhmu!—Lihat? Gampang, ‘kan?"
       },
       {
+        "voId": "chr_0014_aurora_sim_talk_max_02",
         "title": "Obrolan Santai di Dijiang 5",
         "text": "Setiap kali bertemu Lil’ Dodge, aku jadi ingat kapten kami. Kaptenku juga seorang Perro. Dia sangat baik—tapi, begitu misi SAR dimulai, dia berubah jadi tukang perintah. Dia bahkan menyuruh kami melakukan pemeriksaan kaliber berulang kali pada mata bor air panas .... “Dalam SAR, detail sekecil apa pun tetap penting!” Itulah yang kupelajari darinya."
       },
       {
+        "voId": "chr_0014_aurora_sim_talk_max_03",
         "title": "Obrolan Santai di Dijiang 6",
         "text": "Cahaya yang terpantul dari awan Talos-II ternyata bisa seindah itu. Aku jadi ingat aurora ... dan penglihatan dalam mimpiku. Aku sering lihat aurora saat berada di puncak tertinggi pegunungan bersalju di utara. Aku tahu cahaya itu terbentuk dari energi Æther yang berbahaya, tapi melihatnya saja bisa membuatku merasa seperti bertemu teman lama .... Teman yang mengawasi ... dan melindungiku dari jauh ...."
       },
       {
+        "voId": "chr_0014_aurora_sim_gift_give_01",
         "title": "Menawarkan Hadiah",
         "text": "Endmin, ini untukmu. Oleh-oleh kecil yang kubawa dari padang salju."
       },
       {
+        "voId": "chr_0014_aurora_sim_gift_recv_01",
         "title": "Menerima Hadiah",
         "text": "Ini untukku? Oh, terima kasih! Rasanya hangat sekali .... Akan kujaga baik-baik!"
       },
       {
+        "voId": "chr_0014_aurora_mono_self_line01",
         "title": "Dialog Kepercayaan 1",
         "text": "Lihat, Endmin! Aku pakai Originium Arts untuk membuat penghalang es ini! Kokoh sekali, ‘kan? Jangan khawatir! Ayunkan lebih mantap! Kau tak akan bisa membuatnya retak!"
       },
       {
+        "voId": "chr_0014_aurora_mono_self_line02",
         "title": "Dialog Kepercayaan 2",
         "text": "Apa istirahatmu sudah cukup, Endmin? Aku selalu melihatmu ke sana kemari tanpa istirahat .... Hmm, kau harus bisa jaga keseimbangan antara pekerjaan dan kehidupan pribadi. Ingat pelatihan SAR terakhir yang kita ikuti? Kau benar-benar membuatku kaget saat menggendongmu .... Aku hampir tak percaya kau lebih ringan daripada bayi burdenbeast yang baru lahir ...."
       },
       {
+        "voId": "chr_0014_aurora_mono_self_line03",
         "title": "Dialog Kepercayaan 3",
         "text": "Tak semua operasi SAR berakhir sukses .... Perubahan cuaca atau medan yang mendadak mungkin saja terjadi lebih cepat dari yang kaukira. Karena inilah aku selalu memeriksa ulang semua perlengkapanku sampai tiga kali sebelum memulai misi. Drone, kamera pencitraan termal ... setiap peralatan adalah asisten penting bagi setiap operator SAR. Berkat peralatan inilah, kita bisa menjalankan rencana penyelamatan yang berani dengan percaya diri."
       },
       {
+        "voId": "chr_0014_aurora_mono_self_line04",
         "title": "Dialog Kepercayaan 4",
         "text": "Aku pernah menyelamatkan seorang ayah dan putrinya saat ada salju longsor .... Mereka sepertinya sedang bertengkar dan sengaja saling mengabaikan di selter sementara yang kubuat. Tapi, saat badai salju datang menderu, sang ayah selalu menyisihkan makanan untuk gadis itu, dan gadis itu berusaha sebaik mungkin merawat ayahnya .... Mereka berhasil dievakuasi, tapi keduanya masih menolak bicara satu sama lain. Aku jadi bertanya-tanya, seperti itukah yang namanya ikatan keluarga? Bahkan saat tak berhasil menemukan kata-kata yang cocok, keluarga akan selalu saling mendukung pada saat-saat genting ...."
       },
       {
+        "voId": "chr_0014_aurora_mono_self_line05",
         "title": "Dialog Kepercayaan 5",
         "text": "Menyelamatkan nyawa bukan tugas yang mudah. Aku tak pernah membayangkan bisa melakukan penyelamatan tanpa harus berkorban. Aku satu-satunya yang tersisa dari tim SAR-ku. Bencana Hawar membuat beberapa rekan cacat permanen. Beberapa rekan kehilangan akal sehatnya akibat malam yang dingin dan bersalju .... Ada saat-saat yang membingungkan, juga momen saat aku merasa takut. Tapi, kalian para Endfielder sungguh hebat, dan sangat kuat! Aku yakin kita semua pasti bisa melangkah lebih jauh dan lebih tinggi, semua berkat dukunganmu, Endmin!"
       },
       {
+        "voId": "chr_0014_aurora_mono_chat_line01",
         "title": "Obrolan 1",
         "text": "Papan seluncur salju ini? Ini hadiah dari Nona Warfarin saat aku meninggalkan Rhodes Island. Papan ini dibuat dari material langka, sama seperti perisaiku. Dan sangat serbaguna dalam misi SAR! Hmm .... Endmin, kau mau main seluncur salju? Aku bisa mengajarimu!"
       },
       {
+        "voId": "chr_0014_aurora_mono_chat_line02",
         "title": "Obrolan 2",
         "text": "Organisasi SAR berada di bawah Serikat Penyelamat Koridor Utara. Misi kami biasanya melibatkan para kurir yang bekerja di utara, pedagang keliling, dan pengintai militer yang tersesat setelah disergap oleh Aggelos atau binatang buas. Rekan tim SAR kami berasal dari seluruh penjuru dunia, dan sebagian besar dari kami adalah sukarelawan. Bertugas di SAR ini memberi kami pengalaman pertempuran tanpa akhir melawan es, salju, dan medan yang berat, tapi aku jadi punya kesempatan untuk bertemu berbagai macam orang."
       },
       {
+        "voId": "chr_0014_aurora_mono_chat_line03",
         "title": "Obrolan 3",
         "text": "Belum lama ini, ada operator yang menanyakan cara bergabung ke tim SAR. Tidak sulit, kok! Latih dirimu terus-menerus untuk mendaki gunung, bertahanlah dalam operasi penyelamatan tanpa henti selama berjam-jam, kuasai keahlian bertahan hidup di kutub, pelajari cara menghindari Ankhor dan binatang besar, dan selesaikan program latihan P3K lengkap—setidaknya sampai bisa menangani Oripati mendadak! Terakhir, kalau berhasil lulus dari uji coba lapangan khusus yang dirancang oleh kapten kami, kau pun bisa jadi anggota resmi SAR!"
       },
       {
+        "voId": "chr_0014_aurora_mono_chat_line04",
         "title": "Obrolan 4",
         "text": "Aku suka salju, gunung-gunung berpuncak putih, dan keindahan berkilau yang hanya terungkap dalam cuaca sangat dingin .... Karena itulah, aku tak ingin keindahan itu justru jadi kenangan buruk bagi orang-orang yang disentuhnya. Saat orang-orang melihat pegunungan bersalju, hal pertama yang mereka ingat mestinya adalah pemandangan memesona dari puncaknya. Lalu, saat salju turun, kuharap mereka membayangkan kristal-kristal murni dan bunga-bunga es .... *Berdesah* Pasti rasanya sedih kalau semua orang hanya memikirkan petaka. Endmin, aku akan terus berusaha mencapai tujuan-tujuanku ini."
       },
       {
+        "voId": "chr_0014_aurora_mono_chat_line05",
         "title": "Obrolan 5",
         "text": "Kemarin kau mencariku, Endmin? Maaf, aku tak tahu. Aku pasti sedang tidur siang untuk mengganti waktu tidur yang hilang. Ya, tidur siang adalah hal pertama yang kulakukan setelah kembali dari misi SAR .... Terkadang aku tak sengaja tertidur ... cukup lama. Tapi, kau bisa langsung membangunkanku saja kalau ada keadaan darurat! Suaramu pasti akan membuatku bangun dan langsung bersiap, Endmin!"
       },
       {
+        "voId": "chr_0014_aurora_mono_about_line01",
         "title": "Topik: Latihan SAR Darurat",
         "text": "Sudah pasti! Latihan SAR memang sangat penting! Saat bencana alam seperti longsor melanda, orang-orang bisa dengan cepat berlindung di tempat yang aman dan kokoh .... Peluang selamat mereka pun meningkat drastis! Tapi, ini hanya berlaku bagi orang-orang yang punya kesadaran bencana yang kuat .... Jadi, Endmin, kau akan ikut sesi latihan SAR berikutnya, ‘kan?"
       },
       {
+        "voId": "chr_0014_aurora_mono_about_line02",
         "title": "Topik: Gilberta",
         "text": "Apa Nona Gilberta juga ada di Dijiang? Oh, bukan apa-apa, dia banyak membantu kami dalam berbagai misi SAR. Dia mengirimkan suplai penting, mengangkut korban luka lewat udara, dan bahkan menunjukkan sumber sinyal SOS udara di tengah badai salju yang dahsyat! Tim SAR pernah mencoba memberinya tanda terima kasih, tapi dia menolak semuanya. Akhirnya, dia meminta beberapa foto pemandangan indah dari puncak bersalju. Hehehe. Apa pendapatmu tentang foto ini? Bingkai fotonya juga buatanku sendiri!"
       },
       {
+        "voId": "chr_0014_aurora_mono_about_line03",
         "title": "Topik: Bertahan Hidup di Kutub",
         "text": "Bertahan hidup di kutub bukan hal yang mudah .... Beberapa pengetahuan yang penting mencakup cara berkemah semalam yang tepat untuk menghindari hipotermia di tengah badai salju, mencari makanan di padang es Hawar, mengidentifikasi pijakan yang kokoh untuk menyeberangi gletser ... dan yang terpenting, merencanakan jalur yang aman untuk mencapai tujuan—Ini artinya, kau harus belajar cara menghindari Aggelos, binatang lapar, dan bahaya lainnya di zona bencana."
       },
       {
+        "voId": "chr_0014_aurora_explore_point_common_01",
         "title": "Sumber Daya/Barang Koleksi Terdeteksi 1",
         "text": "Kita harus kumpulkan sumber daya ini! Pasti akan berguna dalam operasi penyelamatan."
       },
       {
+        "voId": "chr_0014_aurora_explore_point_valub_01",
         "title": "Sumber Daya/Barang Koleksi Terdeteksi 2",
         "text": "Penemuan yang keren. Mungkin akan berguna untuk operasi berikutnya!"
       },
       {
+        "voId": "chr_0014_aurora_explore_find_locked_01",
         "title": "Area yang Belum Dijelajahi Terdeteksi",
         "text": "Drone kita belum menyurvei area ini. Kita harus waspada, Teman-teman."
       },
       {
+        "voId": "chr_0014_aurora_explore_find_danger_01",
         "title": "Musuh Kuat Ditemukan",
         "text": "Teman-teman! Waspada! Musuh itu kelihatannya sangat berbahaya!"
       },
       {
+        "voId": "chr_0014_aurora_interact_mine_valub_01",
         "title": "Penambangan 1",
         "text": "Mineral berkualitas tinggi. Mungkin bisa digunakan untuk membuat selter sementara ...."
       },
       {
+        "voId": "chr_0014_aurora_interact_mine_valub_echo2_01",
         "title": "Penambangan 2",
         "text": "Kita lakukan bersama agar lebih cepat."
       },
       {
+        "voId": "chr_0014_aurora_interact_treasure_valub_01",
         "title": "Membuka Kerat",
         "text": "Tambahkan ini ke persediaan darurat kita!"
       },
       {
+        "voId": "chr_0014_aurora_interact_etherium_01",
         "title": "Mendapatkan Aurylene",
         "text": "Ini Aurylene? Cantik sekali .... Harus kita simpan baik-baik!"
       },
       {
+        "voId": "chr_0014_aurora_interact_blight_break_01",
         "title": "Menyingkirkan Hawar",
         "text": "Eliminasi berhasil! Periksa kerusakan pada lapisan tahan Hawar kalian!"
       },
       {
+        "voId": "chr_0014_aurora_interact_rest_01",
         "title": "Istirahat",
         "text": "Mau keju? Bagus untuk memulihkan staminamu!"
       },
       {
+        "voId": "chr_0014_aurora_combat_suppuse_using_01",
         "title": "Penggunaan Taktis 1",
         "text": "Penanganan darurat sudah diberikan!"
       },
       {
+        "voId": "chr_0014_aurora_combat_suppuse_getheal_01",
         "title": "Penggunaan Taktis 2",
         "text": "Maaf ...! Aku ambil napas dulu!"
       },
       {
+        "voId": "chr_0014_aurora_combat_remind_danger_01",
         "title": "Peringatan Bahaya",
         "text": "Jangan sampai kena yang ini!"
       },
       {
+        "voId": "chr_0014_aurora_combat_hurt_lowhp_01",
         "title": "Cedera",
         "text": "Tak apa. Aku masih kuat ...."
       },
       {
+        "voId": "chr_0014_aurora_combat_dead_01",
         "title": "0 HP",
         "text": "Maaf .... Aku tak bisa menembus badai ini ...."
       },
       {
+        "voId": "chr_0014_aurora_combat_remind_praise_01",
         "title": "Penyemangat Tim 1",
         "text": "Kerja sama tim yang hebat!"
       },
       {
+        "voId": "chr_0014_aurora_combat_remind_praise_02",
         "title": "Penyemangat Tim 2",
         "text": "Menakjubkan!"
       },
       {
+        "voId": "chr_0014_aurora_combat_remind_praise_echo2_01",
         "title": "Respons Penyemangat 1",
         "text": "Pertahankan performa bagusnya!"
       },
       {
+        "voId": "chr_0014_aurora_combat_remind_praise_echo2_02",
         "title": "Respons Penyemangat 2",
         "text": "Terima kasih atas bantuannya!"
       },
       {
+        "voId": "chr_0014_aurora_combat_intobattle_01",
         "title": "Mulai Pertarungan 1",
         "text": "Membuka jalan untuk penyelamatan!"
       },
       {
+        "voId": "chr_0014_aurora_combat_intobattle_echo2_01",
         "title": "Mulai Pertarungan 2",
         "text": "Yeah! Bekukan mereka!"
       },
       {
+        "voId": "chr_0014_aurora_combat_outbattle_nor_01",
         "title": "Menang Pertarungan 1",
         "text": "Hoo. Pertarungan sudah selesai. Ayo istirahat selagi sempat."
       },
       {
+        "voId": "chr_0014_aurora_combat_outbattle_nor_02",
         "title": "Menang Pertarungan 2",
         "text": "Semua berusaha sekuat tenaga. Aku juga tak mau kalah!"
       },
       {
+        "voId": "chr_0014_aurora_combat_outbattle_nor_echo2_01",
         "title": "Menang Pertarungan 3",
         "text": "Kerja sama yang luar biasa, Teman-teman!"
       },
       {
+        "voId": "chr_0014_aurora_combat_outbattle_hard_01",
         "title": "Menang Pertarungan 4",
         "text": "Jangan sedih. Bertahanlah dalam badai dan capai tujuan kita! Simpan tenaga dan kita akan cepat sampai ke zona aman!"
       },
       {
+        "voId": "chr_0014_aurora_combat_battle_defeat_01",
         "title": "Kalah Bertarung",
         "text": "Jangan menyerah! Ayo siap-siap! Lalu, kita lakukan lagi!"
       },
       {
+        "voId": "chr_0014_aurora_mono_attack_last_01",
         "title": "Final Strike 1",
         "text": "Tebasan pembeku!"
       },
       {
+        "voId": "chr_0014_aurora_mono_attack_last_02",
         "title": "Final Strike 2",
         "text": "Topan dingin!"
       },
       {
+        "voId": "chr_0014_aurora_mono_skill_nor_strike_01",
         "title": "Skill Tarung 1",
         "text": "Mundur!"
       },
       {
+        "voId": "chr_0014_aurora_mono_skill_nor_strike_02",
         "title": "Skill Tarung 2",
         "text": "Kau tak boleh lewat!"
       },
       {
+        "voId": "chr_0014_aurora_mono_skill_nor_strike_03",
         "title": "Skill Tarung 3",
         "text": "Snowshine akan melindungi!"
       },
       {
+        "voId": "chr_0014_aurora_combat_skill_comb_ready_01",
         "title": "Skill Kombo Siap 1",
         "text": "Siap siaga!"
       },
       {
+        "voId": "chr_0014_aurora_combat_skill_comb_ready_02",
         "title": "Skill Kombo Siap 2",
         "text": "Penyelamatan siap!"
       },
       {
+        "voId": "chr_0014_aurora_mono_skill_comb_release_01",
         "title": "Penggunaan Kombo 1",
         "text": "Ikuti irama napasku!"
       },
       {
+        "voId": "chr_0014_aurora_mono_skill_comb_release_02",
         "title": "Penggunaan Kombo 2",
         "text": "P3K darurat sudah tiba!"
       },
       {
+        "voId": "chr_0014_aurora_mono_attack_extra_01",
         "title": "Penuntas 1",
         "text": "Enyahlah KAU!"
       },
       {
+        "voId": "chr_0014_aurora_mono_attack_extra_02",
         "title": "Penuntas 2",
         "text": "Kau pasti akan KALAH!"
       },
       {
+        "voId": "chr_0014_aurora_mono_skill_ultimate_01",
         "title": "Ultimate 1",
         "text": "Badai es!"
       },
       {
+        "voId": "chr_0014_aurora_mono_skill_ultimate_02",
         "title": "Ultimate 2",
         "text": "Perisai es!"
       },
       {
+        "voId": "chr_0014_aurora_mono_skill_ultimate_03",
         "title": "Ultimate 3",
         "text": "Dengan es dan salju! Membekulah!"
       }

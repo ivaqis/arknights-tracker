@@ -123,322 +123,402 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0021_whiten_chrbark_squad_01",
         "title": "Chuẩn Bị Tác Chiến 1",
         "text": "Giờ nghỉ... hết rồi sao?"
       },
       {
+        "voId": "chr_0021_whiten_chrbark_squad_02",
         "title": "Chuẩn Bị Tác Chiến 2",
         "text": "Cho tôi thêm... hai phút nữa thôi..."
       },
       {
+        "voId": "chr_0021_whiten_chrbark_join_01",
         "title": "Đang thêm vào đội 1",
         "text": "Lại nhiệm vụ nữa à? Ái chà... Được rồi... Chỉ mong xong việc trước khi tôi kiệt sức..."
       },
       {
+        "voId": "chr_0021_whiten_chrbark_join_02",
         "title": "Đang thêm vào đội 2",
         "text": "Giờ tôi nên khám phá mấy... bí mật khó nói kia thế nào đây? Hmm..."
       },
       {
+        "voId": "chr_0021_whiten_chrbark_weap_01",
         "title": "Đang đổi vũ khí",
         "text": "Quao... Một vũ khí tối thượng... Hnnngghh... Nặng quá trời luôn..."
       },
       {
+        "voId": "chr_0021_whiten_chrbark_gear_01",
         "title": "Đang đổi trang bị",
         "text": "Đám kỹ sư Kho Vũ Khí rõ ràng đã đánh giá quá cao sức bền của tôi rồi... Hự hự... Thôi kệ."
       },
       {
+        "voId": "chr_0021_whiten_chrup_skill_01",
         "title": "Kích hoạt Ma Trận Năng Lực",
         "text": "Ồ, lên cấp thì được nghỉ nhiều hơn hả? Hay đấy..."
       },
       {
+        "voId": "chr_0021_whiten_chrup_level_01",
         "title": "Xem Hồ Sơ Chiến Đấu",
         "text": "Não nâng cấp, cơ thể thăng hạng... mà thể lực thì chẳng tiến triển gì. Xem ra tôi tiêu rồi."
       },
       {
+        "voId": "chr_0021_whiten_chrup_promt01_01",
         "title": "Thăng Bậc Cán Viên 1",
         "text": "Được thăng bậc... ngoài mong đợi thật đấy... Tôi cứ tưởng sẽ còn rất, rất... rất lâu nữa cơ..."
       },
       {
+        "voId": "chr_0021_whiten_chrup_promt02_01",
         "title": "Thăng Bậc Cán Viên 2",
         "text": "Không ngờ kết quả lại vượt cả kỳ vọng... Endmin... Tôi xin nghỉ hai ngày để tự chăm sóc bản thân một chút..."
       },
       {
+        "voId": "chr_0021_whiten_chrup_promt03_01",
         "title": "Thăng Bậc Cán Viên 3",
         "text": "Tại sao tôi cứ bị thăng bậc hoài vậy...? Có phải tôi là chuột bạch trong một chiến lược quản lý mới không...? Phải điều tra thử mới được..."
       },
       {
+        "voId": "chr_0021_whiten_chrup_promt04_01",
         "title": "Thăng Bậc Cán Viên 4",
         "text": "Chà chà! Vậy là tôi được sai bảo Akekuri rồi hả? He he he... Tới lúc thử quyền rồi."
       },
       {
+        "voId": "chr_0021_whiten_introduce_01",
         "title": "Cán Viên đang báo cáo nhiệm vụ",
         "text": "Sao tôi lại phải làm chuyện này nữa chứ...? Kính chào... Endministrator. Tôi là Estella. Xin ngài đừng giao cho tôi mấy nhiệm vụ tay chân nữa. Cảm ơn."
       },
       {
+        "voId": "chr_0021_whiten_mono_switch_01",
         "title": "Chờ Lệnh 1",
         "text": "Ha ha... vẫn còn thở được. Lúc này tôi chỉ muốn không làm gì cả..."
       },
       {
+        "voId": "chr_0021_whiten_mono_switch_02",
         "title": "Chờ Lệnh 2",
         "text": "Tôi lại làm việc quá sức rồi... Hngh... Phải tranh thủ tận hưởng lúc còn được nghỉ."
       },
       {
+        "voId": "chr_0021_whiten_sim_assign_work_01",
         "title": "Phân Công Vào Công Trình",
         "text": "Nhiệm vụ mới à? Tôi rất mong đợi... Thật đó. Thiệt tình."
       },
       {
+        "voId": "chr_0021_whiten_sim_hello_lower_01",
         "title": "Lời Chào 1",
         "text": "Endmin... Ngài nghỉ ngơi ổn chứ?"
       },
       {
+        "voId": "chr_0021_whiten_sim_hello_max_01",
         "title": "Lời Chào 2",
         "text": "Endmin, tôi hiếm thấy ngài nghỉ ngơi tử tế lắm."
       },
       {
+        "voId": "chr_0021_whiten_sim_talk_lv01_01",
         "title": "Trò Chuyện Nhàn Rỗi Dijiang 1",
         "text": "Sau khi tôi bảo Antal là tôi không thích mấy trò đố toán của cậu ấy thì cậu ấy dừng gửi luôn. Hmm... Thật ra, mọi người nên noi gương tôi mới phải."
       },
       {
+        "voId": "chr_0021_whiten_sim_talk_lv02_01",
         "title": "Trò Chuyện Nhàn Rỗi Dijiang 2",
         "text": "Mấy Kỹ Sư Kho Vũ Khí cứ càm ràm vì tôi làm gãy giáo nhanh quá... Thành thật mà nói, việc tôi còn vung nổi mấy món vũ khí nặng như thế này đã là kỳ tích rồi."
       },
       {
+        "voId": "chr_0021_whiten_sim_talk_lv02_02",
         "title": "Trò Chuyện Nhàn Rỗi Dijiang 3",
         "text": "Ông Andre...? Không biết ông ấy xoay đầu 180 độ được không nhỉ...? Chà... Tôi phải hỏi ổng vụ này vào lần sau."
       },
       {
+        "voId": "chr_0021_whiten_sim_talk_max_01",
         "title": "Trò Chuyện Nhàn Rỗi Dijiang 4",
         "text": "Akekuri mê tai dài nên tôi đã sưu tầm một đống công thức nấu món tai dài rồi đưa cho cô ấy... Rồi cô ấy lặng thinh nguyên một tuần liền... Thật kỳ quặc..."
       },
       {
+        "voId": "chr_0021_whiten_sim_talk_max_02",
         "title": "Trò Chuyện Nhàn Rỗi Dijiang 5",
         "text": "Tôi quen làm nhiệm vụ xâm nhập một mình rồi... Phiền thì phiền, nhưng phải có người làm chứ. Nhất là vì... Tôi là người thích làm việc độc lập hơn."
       },
       {
+        "voId": "chr_0021_whiten_sim_talk_max_03",
         "title": "Trò Chuyện Nhàn Rỗi Dijiang 6",
         "text": "Nhạc nặng đô ồn ào khiến tôi cảm thấy bình tĩnh lại... Tắt mấy âm thanh đó thì dễ, nhưng tôi thích cảm giác mông lung trong giai điệu hỗn loạn đó. Nó giúp tôi... quên đi mình là ai."
       },
       {
+        "voId": "chr_0021_whiten_sim_gift_give_01",
         "title": "Tặng Quà",
         "text": "Endmin, ngài nhận món này chứ? Đừng sợ... Không có gì kỳ quặc đâu."
       },
       {
+        "voId": "chr_0021_whiten_sim_gift_recv_01",
         "title": "Nhận quà",
         "text": "Là cho... tôi? À thì... Cảm ơn... Tôi ít khi được ai tặng quà, nhất là người không cùng đội với tôi."
       },
       {
+        "voId": "chr_0021_whiten_mono_self_line01",
         "title": "Đối Thoại Tín Nhiệm 1",
         "text": "Tham gia đội đột kích à? Thôi, tôi xin. Tôi tự biết mình không đủ sức bền để theo nổi... Cũng không nên bắt người ta phải cõng tôi đi khắp nơi."
       },
       {
+        "voId": "chr_0021_whiten_mono_self_line02",
         "title": "Đối Thoại Tín Nhiệm 2",
         "text": "Có người trong nghề nói tôi dùng thông tin tình báo chưa đủ... À... Thật ra tôi chưa bao giờ nghĩ đến chuyện tận dụng chúng. Nhiều việc lắm... Chắc là tôi chỉ thích thu thập thôi."
       },
       {
+        "voId": "chr_0021_whiten_mono_self_line03",
         "title": "Đối Thoại Tín Nhiệm 3",
         "text": "Xui xẻo hả? Ba mẹ tôi cứ nhắc về thời hoàng kim suốt, rồi bảo là do xui xẻo nên cuộc sống ngày càng tệ... Nhưng, ừm... Tôi nghĩ mỗi trải nghiệm đều có ý nghĩa riêng. Nhờ vậy mà tôi gặp được mấy người trong Đội Tác Chiến Z7..."
       },
       {
+        "voId": "chr_0021_whiten_mono_self_line04",
         "title": "Đối Thoại Tín Nhiệm 4",
         "text": "Trước khi gặp Đội Z7, tôi đúng là chạm đáy luôn. *Thở dài* Thời đó đúng là tai họa... Có một kẻ lừa hết sạch tiền tôi, tôi thì đói muốn xỉu... Lúc đầu, Akekuri với Fluorite cho tôi tá túc cùng mấy người du mục họ cứu. Khi tôi chia sẻ chi tiết về tổ chức Landbreaker với lịch tuần tra của họ... Fluorite nhìn tôi không chớp mắt rồi hỏi tôi làm sao có được thông tin đó... Ừ, tôi còn nhớ rõ cái ánh mắt của cô ấy lúc đó."
       },
       {
+        "voId": "chr_0021_whiten_mono_self_line05",
         "title": "Đối Thoại Tín Nhiệm 5",
         "text": "Tôi chỉ muốn sống yên bình, chấp nhận mọi thứ đến với mình... Có lúc tôi nghĩ, với một người xui như tôi thì đó chỉ là mơ mộng viển vông. Nhưng rồi tôi đến Endfield... gia nhập Đội Z7... và gặp ngài, Endmin... Cảm ơn ngài đã chấp nhận sự hiện diện của tôi..."
       },
       {
+        "voId": "chr_0021_whiten_mono_chat_line01",
         "title": "Trò Chuyện 1",
         "text": "Quá khứ của tôi không phải là mấy cú ngoặt kịch tính. Tôi chỉ theo gia đình lang bạt hết nơi này tới nơi khác... Ừ thì vất vả, mệt mỏi, nhưng phần lớn dân Talos nào chẳng thế. Tôi chỉ mong cuộc sống sắp tới nhẹ nhàng và dễ thở hơn một chút..."
       },
       {
+        "voId": "chr_0021_whiten_mono_chat_line02",
         "title": "Trò Chuyện 2",
         "text": "Tôi thích âm thanh chói tai phát ra khi ai đó bẻ một đoạn riff méo mó. Ra ngoài trời nghe nó, tai tôi cứ tê tê, lạ mà dễ chịu..."
       },
       {
+        "voId": "chr_0021_whiten_mono_chat_line03",
         "title": "Trò Chuyện 3",
         "text": "Làm việc sau phòng tuyến địch không khó lắm đâu. Ngược lại... khi không biết nguy hiểm sẽ ập đến lúc nào, cảm giác hồi hộp cũng khá thú vị. Nếu chuẩn bị kỹ thì chẳng bất ngờ được đâu."
       },
       {
+        "voId": "chr_0021_whiten_mono_chat_line04",
         "title": "Trò Chuyện 4",
         "text": "Tôi xin lỗi, Endmin. Ngài mà thấy tôi làm gì khiến ngài khó chịu thì cứ nói... Bộ Phận HR nhắc tôi chuyện này rồi... Nhưng mấy người trong Đội Z7 bảo không sao cả. Bị Estella làm phật ý là một phần của cuộc sống rồi..."
       },
       {
+        "voId": "chr_0021_whiten_mono_chat_line05",
         "title": "Trò Chuyện 5",
         "text": "Tôi thu thập thông tin còn Fluorite là người phân tích. Sao ngài dùng thông tin để hiểu được cả suy nghĩ của đối phương vậy? Hmm... Tôi hy vọng Fluorite sẽ chia sẻ bí quyết của cô ấy cho tôi... Nhưng thứ duy nhất cô ấy nói là: \"Do kinh nghiệm cả thôi.\""
       },
       {
+        "voId": "chr_0021_whiten_mono_about_line01",
         "title": "Chủ đề: Akekuri",
         "text": "Hmm... Sẽ có ngày mọi người phải trả giá cho việc phân công bất công này. Ai cũng sẽ biết bí mật cupcake của Akekuri thôi... Hừ hừ hừ... Estella, cô đúng là cô gái nham hiểm."
       },
       {
+        "voId": "chr_0021_whiten_mono_about_line02",
         "title": "Chủ đề: Catcher",
         "text": "Catcher thì chẳng có bí mật gì cả... Mọi thứ gần như được viết hết trong Báo Cáo Hiệu Suất Làm Việc của anh ấy... Tôi không ngờ lại gặp một người kỳ quặc như thế."
       },
       {
+        "voId": "chr_0021_whiten_mono_about_line03",
         "title": "Chủ đề: Fluorite",
         "text": "Tôi thường được ghép cặp với Fluorite. Cô ấy cứ cười mấy câu tôi nói, rồi còn khuyến khích tôi nói thêm nữa... Hmm... Tôi nghĩ là... con người và suy nghĩ của họ đúng là phức tạp."
       },
       {
+        "voId": "chr_0021_whiten_mono_about_line04",
         "title": "Chủ đề: Antal",
         "text": "Savra thì rất tận tâm... dù tôi nghĩ đôi khi anh ấy hơi thái quá. Làm việc đã đủ mệt rồi... Nhưng mấy trò đùa của anh ấy thì khá thú vị. Chúng luôn khiến tôi và Fluorite bật cười."
       },
       {
+        "voId": "chr_0021_whiten_explore_point_common_01",
         "title": "Phát hiện Tài Nguyên/Có Thể Thu Thập 1",
         "text": "Cái kia trông khá ổn đấy... Nếu được, chúng ta nên mang nó về."
       },
       {
+        "voId": "chr_0021_whiten_explore_point_valub_01",
         "title": "Phát hiện Tài Nguyên/Có Thể Thu Thập 2",
         "text": "Nhìn kìa... Chắc đáng để điều tra."
       },
       {
+        "voId": "chr_0021_whiten_explore_find_locked_01",
         "title": "Phát Hiện Khu Vực Chưa Khám Phá",
         "text": "Ái chà... Có vẻ ta phải khám phá khu vực đó rồi."
       },
       {
+        "voId": "chr_0021_whiten_explore_find_danger_01",
         "title": "Phát hiện Kẻ Địch Mạnh",
         "text": "Nguy cơ thù địch ở mức cao... Tôi tiếp tục hỗ trợ được không?"
       },
       {
+        "voId": "chr_0021_whiten_interact_mine_valub_01",
         "title": "Khai thác 1",
         "text": "Giá như ai đó mang theo giàn khai thác tự động thì tốt rồi..."
       },
       {
+        "voId": "chr_0021_whiten_interact_mine_valub_echo2_01",
         "title": "Khai thác 2",
         "text": "Tôi có mặt để giúp đỡ... Nhưng đừng kỳ vọng nhiều quá từ tôi..."
       },
       {
+        "voId": "chr_0021_whiten_interact_treasure_valub_01",
         "title": "Mở Thùng",
         "text": "Giờ thì chuyến đi này cũng đáng công rồi."
       },
       {
+        "voId": "chr_0021_whiten_interact_etherium_01",
         "title": "Nhận Aurylene",
         "text": "À... Tôi nghĩ tôi từng thấy cái này rồi..."
       },
       {
+        "voId": "chr_0021_whiten_interact_blight_break_01",
         "title": "Xua Tan Nhiễm Khuẩn",
         "text": "Quá tuyệt. Giờ ta không cần phải đi đường vòng nữa."
       },
       {
+        "voId": "chr_0021_whiten_interact_rest_01",
         "title": "Nghỉ ngơi",
         "text": "Tôi hồi phục được một chút... nhưng nghỉ thêm chút nữa thì vẫn tốt hơn."
       },
       {
+        "voId": "chr_0021_whiten_combat_suppuse_using_01",
         "title": "Sử Dụng Vật Phẩm Chiến Thuật 1",
         "text": "Thử cái này đi... Biết đâu sẽ giúp được..."
       },
       {
+        "voId": "chr_0021_whiten_combat_suppuse_getheal_01",
         "title": "Sử Dụng Vật Phẩm Chiến Thuật 2",
         "text": "Xem ra chuẩn bị kỹ cũng có ích thật."
       },
       {
+        "voId": "chr_0021_whiten_combat_remind_danger_01",
         "title": "Cảnh Báo Nguy Hiểm",
         "text": "Coi chừng... Đừng để trúng đòn."
       },
       {
+        "voId": "chr_0021_whiten_combat_hurt_lowhp_01",
         "title": "Bị Thương",
         "text": "Hự hự... Vũ khí này nặng quá..."
       },
       {
+        "voId": "chr_0021_whiten_combat_dead_01",
         "title": "0 HP",
         "text": "Tôi lại làm mọi người thất vọng nữa rồi..."
       },
       {
+        "voId": "chr_0021_whiten_combat_remind_praise_01",
         "title": "Cổ Vũ Đội 1",
         "text": "Chà... Tôi sẽ không bao giờ làm được chuyện đó đâu."
       },
       {
+        "voId": "chr_0021_whiten_combat_remind_praise_02",
         "title": "Cổ Vũ Đội 2",
         "text": "Tốt... Những gì cần làm là phối hợp nhóm."
       },
       {
+        "voId": "chr_0021_whiten_combat_remind_praise_echo2_01",
         "title": "Đáp Lại Lời Cổ Vũ 1",
         "text": "Tôi không muốn phải làm chuyện này thường xuyên đâu..."
       },
       {
+        "voId": "chr_0021_whiten_combat_remind_praise_echo2_02",
         "title": "Đáp Lại Lời Cổ Vũ 2",
         "text": "Yeah... Mọi người đều góp phần cả."
       },
       {
+        "voId": "chr_0021_whiten_combat_intobattle_01",
         "title": "Bắt Đầu Chiến Đấu 1",
         "text": "Trận chiến kéo dài không phải sở trường của tôi... Nên hãy hoàn thành thật nhanh."
       },
       {
+        "voId": "chr_0021_whiten_combat_intobattle_echo2_01",
         "title": "Bắt Đầu Chiến Đấu 2",
         "text": "Chúng ta thực sự phải chiến đấu sao? Được rồi. Đi thôi."
       },
       {
+        "voId": "chr_0021_whiten_combat_outbattle_nor_01",
         "title": "Thắng Trận 1",
         "text": "Hả... Xong rồi... Mình làm tốt lắm phải không...?"
       },
       {
+        "voId": "chr_0021_whiten_combat_outbattle_nor_02",
         "title": "Thắng Trận 2",
         "text": "Hô... May mà khi tôi không ngất giữa chừng."
       },
       {
+        "voId": "chr_0021_whiten_combat_outbattle_nor_echo2_01",
         "title": "Thắng Trận 3",
         "text": "Tốt... Ít nhất là kết thúc nhanh..."
       },
       {
+        "voId": "chr_0021_whiten_combat_outbattle_hard_01",
         "title": "Thắng Trận 4",
         "text": "Mọi người... đã làm tốt... Tôi thật sự rất vui vì mình trụ được..."
       },
       {
+        "voId": "chr_0021_whiten_combat_battle_defeat_01",
         "title": "Bại Trận",
         "text": "Tôi không thể kết thúc thế này được... Lần tới... Tôi sẽ cố gắng hơn..."
       },
       {
+        "voId": "chr_0021_whiten_mono_attack_last_01",
         "title": "Đòn Dứt Điểm 1",
         "text": "Đứng yên!"
       },
       {
+        "voId": "chr_0021_whiten_mono_attack_last_02",
         "title": "Đòn Dứt Điểm 2",
         "text": "Ngay tại đó!"
       },
       {
+        "voId": "chr_0021_whiten_mono_skill_nor_01",
         "title": "KN Chiến Đấu 1",
         "text": "Sóng âm... đóng băng!"
       },
       {
+        "voId": "chr_0021_whiten_mono_skill_nor_02",
         "title": "KN Chiến Đấu 2",
         "text": "Vỡ nát... phát nổ!"
       },
       {
+        "voId": "chr_0021_whiten_mono_skill_nor_03",
         "title": "KN Chiến Đấu 3",
         "text": "Haa... KẾT LIỄU!"
       },
       {
+        "voId": "chr_0021_whiten_combat_skill_comb_ready_01",
         "title": "Chuẩn Bị KN Liên Hoàn 1",
         "text": "Cuối cùng... Tôi đã vào vị trí."
       },
       {
+        "voId": "chr_0021_whiten_combat_skill_comb_ready_02",
         "title": "Chuẩn Bị KN Liên Hoàn 2",
         "text": "Xin lỗi vì để chờ lâu..."
       },
       {
+        "voId": "chr_0021_whiten_mono_skill_comb_release_01",
         "title": "Thi Triển Liên Hoàn 1",
         "text": "Kéo lên nào!"
       },
       {
+        "voId": "chr_0021_whiten_mono_skill_comb_release_02",
         "title": "Thi Triển Liên Hoàn 2",
         "text": "Đang lên đây!"
       },
       {
+        "voId": "chr_0021_whiten_mono_attack_extra_01",
         "title": "Kết Liễu 1",
         "text": "Đánh trúng... ĐIỂM yếu!"
       },
       {
+        "voId": "chr_0021_whiten_mono_attack_extra_02",
         "title": "Kết Liễu 2",
         "text": "Ngươi GỤC đi!"
       },
       {
+        "voId": "chr_0021_whiten_mono_skill_ultimate_01",
         "title": "Tuyệt Kỹ 1",
         "text": "Bom sóng âm... OANH KÍCH!"
       },
       {
+        "voId": "chr_0021_whiten_mono_skill_ultimate_02",
         "title": "Tuyệt Kỹ 2",
         "text": "Tấn công... và nổ thôi!"
       },
       {
+        "voId": "chr_0021_whiten_mono_skill_ultimate_03",
         "title": "Tuyệt Kỹ 3",
         "text": "Âm thanh, hợp nhất!"
       }

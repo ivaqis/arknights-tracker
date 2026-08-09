@@ -126,318 +126,397 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0014_aurora_chrbark_squad_01",
         "title": "Prep Operação 1",
         "text": "Aguardando suas ordens, Endministrator."
       },
       {
+        "voId": "chr_0014_aurora_chrbark_squad_02",
         "title": "Prep Operação 2",
         "text": "Endmin! Você está aqui!"
       },
       {
+        "voId": "chr_0014_aurora_chrbark_join_01",
         "title": "Adicionando à equipe 1",
         "text": "Uma nova missão de campo? Estou totalmente pronta!"
       },
       {
+        "voId": "chr_0014_aurora_chrbark_join_02",
         "title": "Adicionando à equipe 2",
         "text": "Protegerei a todos!"
       },
       {
+        "voId": "chr_0014_aurora_chrbark_weap_01",
         "title": "Trocando de arma",
         "text": "Desempenho maravilhoso! E também pode ser usada em ambientes extremos!"
       },
       {
+        "voId": "chr_0014_aurora_chrbark_gear_01",
         "title": "Trocando de equipamento",
         "text": "Quem fez isso realmente pensou muito sobre o assunto."
       },
       {
+        "voId": "chr_0014_aurora_chrup_skill_01",
         "title": "Ativação da Matriz de Capacidade",
         "text": "Tenho me exercitado muito! Preciso me preparar para todo tipo de emergência, sabia?"
       },
       {
+        "voId": "chr_0014_aurora_chrup_level_01",
         "title": "Assistindo a Registros de Combate",
         "text": "Esses registros oferecem referências valiosas! Eles me dão muitas ideias para futuras operações de BER!"
       },
       {
+        "voId": "chr_0014_aurora_chrup_promt01_01",
         "title": "Promoção do Operador 1",
         "text": "Hum! O trabalho duro sempre compensa! Não vou decepcionar a Endfield nem ninguém!"
       },
       {
+        "voId": "chr_0014_aurora_chrup_promt02_01",
         "title": "Promoção do Operador 2",
         "text": "Isso amplia meu alcance operacional, certo? Não se preocupe! Pode contar comigo para todas as suas necessidades em resgates de emergência, coleta de dados, apoio logístico e todos os tipos de trabalho de campo!"
       },
       {
+        "voId": "chr_0014_aurora_chrup_promt03_01",
         "title": "Promoção do Operador 3",
         "text": "Desta vez, aprimorei todas as minhas Unidades de Artes de fabricação de gelo de BER, Endmin! Olhe só! Acabei de construir um iglu temporário! Venham dormir aqui!"
       },
       {
+        "voId": "chr_0014_aurora_chrup_promt04_01",
         "title": "Promoção do Operador 4",
         "text": "O tempo que passei na Endfield me ensinou muitas coisas novas e me proporcionou muitas lembranças maravilhosas... Obrigado por confiar em mim, Endmin. De agora em diante, continuarei a escalar picos cada vez mais altos... e a resgatar o máximo de pessoas que puder."
       },
       {
+        "voId": "chr_0014_aurora_introduce_01",
         "title": "Operador se apresentando para o trabalho",
         "text": "Saudações! Sou sua operadora da Rhodes Island. Meu codinome é Snowshine. Sou especialista em busca e resgate, especializada em operações em baixas temperaturas. Me coloque na equipe se tiver uma missão em campos de gelo ou montanhas nevadas."
       },
       {
+        "voId": "chr_0014_aurora_mono_switch_01",
         "title": "Em espera 1",
         "text": "Quer praticar snowboard comigo, Endmin?"
       },
       {
+        "voId": "chr_0014_aurora_mono_switch_02",
         "title": "Em espera 2",
         "text": "A velocidade do vento está OK. A visibilidade é boa. Clima perfeito para snowboarding."
       },
       {
+        "voId": "chr_0014_aurora_sim_assign_work_01",
         "title": "Atribuindo a Instalação",
         "text": "Sem problemas! Já experimentei todos os trabalhos aqui! E são muito mais simples do que construir fortificações!"
       },
       {
+        "voId": "chr_0014_aurora_sim_hello_lower_01",
         "title": "Saudação 1",
         "text": "Saudações, Endmin."
       },
       {
+        "voId": "chr_0014_aurora_sim_hello_max_01",
         "title": "Saudação 2",
         "text": "Precisa de ajuda, Endmin? Eu posso ser sua defensora!"
       },
       {
+        "voId": "chr_0014_aurora_sim_talk_lv01_01",
         "title": "Conversa Ociosa da Dijiang 1",
         "text": "Aprendo um monte de coisas novas toda vez que embarco na Dijiang: sempre há tecnologia e maquinário que eu nunca vi antes, teorias especiais de combate, planos de monitoramento ousados... Ah, mal consigo acompanhar tudo! A Endfield é simplesmente sensacional! Estou falando sério!"
       },
       {
+        "voId": "chr_0014_aurora_sim_talk_lv02_01",
         "title": "Conversa Ociosa da Dijiang 2",
         "text": "O quê? O refeitório da Dijiang tem um bufê liberado?! Ah, desculpe. Só fiquei um pouco surpresa... Não, claro que não! Eu não vou comer tudo! Sério!"
       },
       {
+        "voId": "chr_0014_aurora_sim_talk_lv02_02",
         "title": "Conversa Ociosa da Dijiang 3",
         "text": "Endmin! Você chegou na hora certa! Meu pacote acabou de chegar e queria saber se você tem interesse em experimentar o meu fondue de queijo especial? O sabor...? Eu acho que é bem... especial? Muitos dos meus colegas me disseram que é uma \"experiência inesquecível para a vida toda\"..."
       },
       {
+        "voId": "chr_0014_aurora_sim_talk_max_01",
         "title": "Conversa Ociosa da Dijiang 4",
         "text": "Hnnnggghh! Alongar ajuda a flexibilizar as articulações. Essa rotina pode ajudar a prevenir rupturas musculares e manter a hipotermia sob controle em ambientes polares. Quer tentar? Não se preocupe. Já fui assistente técnica nas seções de treinamento, então com certeza consigo corrigir sua postura! — Viu? Fácil, não é?"
       },
       {
+        "voId": "chr_0014_aurora_sim_talk_max_02",
         "title": "Conversa Ociosa da Dijiang 5",
         "text": "O Lil' Dodge me lembra do nosso capitão toda vez que o vejo. Meu capitão também é um Perro. Ele é um cara muito legal — mas quando uma missão de BER começa, ele se transforma em um super mandão. Ele até nos obriga a fazer várias verificações de calibre na broca de água quente... \"Cada pequeno detalhe importa em BER!\" Foi isso que aprendi com ele."
       },
       {
+        "voId": "chr_0014_aurora_sim_talk_max_03",
         "title": "Conversa Ociosa da Dijiang 6",
         "text": "A luz refletida nas nuvens de Talos-II pode ser tão bela. Ela me lembra da aurora que conheço... e das visões dos meus sonhos. Costumo vê-las quando estou no topo dos picos mais altos das montanhas nevadas do norte. Sei que a luz é uma forma perigosa de energia do Æther, mas vê-la foi como encontrar uma velha amiga... Alguém que me observa... e me protege de longe..."
       },
       {
+        "voId": "chr_0014_aurora_sim_gift_give_01",
         "title": "Oferta de presentes",
         "text": "Endmin, pegue isso. É uma coisinha de nada que eu trouxe dos campos de neve."
       },
       {
+        "voId": "chr_0014_aurora_sim_gift_recv_01",
         "title": "Aceitando presentes",
         "text": "É para mim? Ah, obrigada! Tem um toque tão aconchegante... Com certeza vou guardar com todo o carinho!"
       },
       {
+        "voId": "chr_0014_aurora_mono_self_line01",
         "title": "Diálogo de Confiança 1",
         "text": "Veja, Endmin! Usei minhas Artes de Originium para criar esta barreira de gelo! Super resistente, não é? Não se preocupe! Sinta-se à vontade para balançar com mais força! Você não vai causar nenhuma rachadura!"
       },
       {
+        "voId": "chr_0014_aurora_mono_self_line02",
         "title": "Diálogo de Confiança 2",
         "text": "Descansou um pouco, Endmin? Sempre te vejo correndo por aí sem parar... Humm, você deveria mesmo cuidar desse equilíbrio entre vida pessoal e profissional. Lembra daquele último treinamento de BER que tivemos? Você me deu uma baita surpresa quando te carreguei nas costas... Mal pude acreditar que você é mais leve que uma besta de carga recém-nascida..."
       },
       {
+        "voId": "chr_0014_aurora_mono_self_line03",
         "title": "Diálogo de Confiança 3",
         "text": "Nem toda operação de BER é um sucesso... Mudanças repentinas no clima ou no terreno podem acontecer mais rápido do que o esperado. É por isso que eu verificaria meu equipamento três vezes antes de partir para uma missão. Drones, câmeras termográficas... cada equipamento é um auxiliar importante para qualquer operador de BER. São eles que nos permitem realizar operações de resgate ousadas ​com toda a confiança."
       },
       {
+        "voId": "chr_0014_aurora_mono_self_line04",
         "title": "Diálogo de Confiança 4",
         "text": "Certa vez, resgatei um pai e sua filha em uma avalanche... Eles provavelmente discutiram e se ignoraram deliberadamente no abrigo temporário que construí. Mas quando a nevasca caía forte, o pai sempre reservava comida para a menina, e ela se esforçava ao máximo para cuidar do pai... Eles foram evacuados com sucesso, mas os dois ainda se recusavam a se falar. Isso me fez pensar se é disso que se trata o laço de parentesco. Mesmo que não conseguissem encontrar as palavras, a família sempre se apoiava nos momentos mais difíceis..."
       },
       {
+        "voId": "chr_0014_aurora_mono_self_line05",
         "title": "Diálogo de Confiança 5",
         "text": "Salvar vidas não é tarefa fácil. Nunca fantasiei resgatar todos sem que houvesse sacrifícios. Sou a única que sobrou do meu grupo de companheiros de BER. Desastres da Praga deixaram alguns com deficiências incapacitantes. Alguns perderam a razão nas noites frias e nevadas... Houve momentos de confusão e momentos em que senti o toque do medo. Mas vocês, Endfielders, são tão incríveis e tão fortes! Acredito que todos nós seremos capazes de ir mais longe e mais alto, tudo graças ao seu apoio, Endmin!"
       },
       {
+        "voId": "chr_0014_aurora_mono_chat_line01",
         "title": "Chat 1",
         "text": "E esta prancha de snowboard? Foi um presente da Lady Warfarin quando saí da Rhodes Island. A prancha é feita com materiais raros, assim como meu escudo. E é ultra versátil em missões de BER! Hmm... Endmin, você se interessa por snowboard? Posso te ensinar tudo sobre isso com certeza!"
       },
       {
+        "voId": "chr_0014_aurora_mono_chat_line02",
         "title": "Chat 2",
         "text": "A organização de Busca e Resgate está subordinada à União de Resgate do Corredor Norte. Nossas missões normalmente envolvem mensageiros que trabalham no norte, mercadores viajantes e batedores militares que se perderam após serem emboscados pelos Aggeloi ou feras. Meus companheiros de equipe de BER vêm de todas as partes do mundo, e a maioria de nós é voluntária. A experiência de BER foi uma batalha constante contra o gelo, a neve e o terreno acidentado, mas me deu a oportunidade de conhecer todos os tipos de pessoas diferentes."
       },
       {
+        "voId": "chr_0014_aurora_mono_chat_line03",
         "title": "Chat 3",
         "text": "Um operador me perguntou recentemente sobre entrar para o BER. Não é difícil, na verdade! Basta treinar constantemente para montanhismo, suportar horas de operações de resgate ininterruptas, dominar algumas habilidades de sobrevivência polar, aprender a evitar Ankhors e animais grandes e concluir o curso completo de primeiros socorros — pelo menos até o nível em que você seja capaz de lidar com Oripatia repentina! Por fim, passe no teste de campo especial criado pelo nosso capitão e você se tornará um membro oficial da equipe de BER!"
       },
       {
+        "voId": "chr_0014_aurora_mono_chat_line04",
         "title": "Chat 4",
         "text": "Gosto da neve, das montanhas com picos brancos e da beleza cintilante que só se revela no frio glacial... É por isso que não quero que as pessoas voltem para casa com lembranças dolorosas. Quando as pessoas veem as montanhas nevadas, a primeira coisa de que se lembram deve ser a vista arrebatadora do cume. E quando a neve cair, espero que pensem em cristais imaculados e flores de gelo... *Suspiro* Seria tão triste se tudo em que as pessoas pensassem fosse catástrofe. Endmin, continuarei a lutar por esses meus objetivos."
       },
       {
+        "voId": "chr_0014_aurora_mono_chat_line05",
         "title": "Chat 5",
         "text": "Você estava me procurando ontem, Endmin? Sinto muito não ter percebido naquela hora. Eu definitivamente estava tirando um cochilo para compensar a falta de dormir. É, cochilar é a primeira coisa que eu faço depois de voltar de uma missão de BER... E, às vezes, eu acabo dormindo demais... bastante. Mas é só me acordar se houver uma emergência! O som da sua voz vai me acordar e fazer com que eu fique pronta rapidinho, Endmin!"
       },
       {
+        "voId": "chr_0014_aurora_mono_about_line01",
         "title": "TÓPICO: Treinamento de BER de emergência",
         "text": "Com certeza! O treinamento em BER é superimportante! Quando desastres naturais como uma avalanche acontecem, as pessoas podem se abrigar rapidamente em locais seguros e resistentes... E isso aumentaria muito suas chances de sobrevivência! Mas isso só poderia acontecer quando as pessoas tivessem uma forte conscientização sobre desastres... Então, Endmin, você vai participar da próxima sessão de treinamento de BER, não vai?"
       },
       {
+        "voId": "chr_0014_aurora_mono_about_line02",
         "title": "Tópico: Gilberta",
         "text": "A Srta. Gilberta também está a bordo da Dijiang? Ah, é que ela realmente se esforçou para nos ajudar em várias missões de BER. Ela entregou suprimentos vitais, transportou os feridos via aérea e até mesmo localizou um sinal de SOS no ar no meio de uma nevasca terrível! A equipe de BER tentou dar a ela uma pequena lembrança, um símbolo do nosso agradecimento, mas ela recusou. No final, ela pediu algumas fotos de uma bela vista dos picos nevados. Heheh. O que você acha desta? Eu mesma fiz a moldura!"
       },
       {
+        "voId": "chr_0014_aurora_mono_about_line03",
         "title": "Tópico: Sobrevivência Polar",
         "text": "A sobrevivência polar não é fácil... O conhecimento essencial inclui acampar adequadamente durante a noite para evitar hipotermia durante nevascas, encontrar alimentos comestíveis nos campos de gelo contaminados, identificar apoios firmes para cruzar geleiras... e, o mais importante, planejar uma passagem segura para o objetivo. Isso significa que você precisa aprender a evitar os Aggeloi, animais famintos e outros perigos em zonas de desastre."
       },
       {
+        "voId": "chr_0014_aurora_explore_point_common_01",
         "title": "Recurso/Colecionável detectado 1",
         "text": "Devemos coletar esses recursos! Eles podem ser úteis para operações de resgate."
       },
       {
+        "voId": "chr_0014_aurora_explore_point_valub_01",
         "title": "Recurso/Colecionável detectado 2",
         "text": "Parece uma descoberta fantástica. Talvez sejam úteis para futuras operações!"
       },
       {
+        "voId": "chr_0014_aurora_explore_find_locked_01",
         "title": "Área não explorada detectada",
         "text": "Nossos drones não fizeram o levantamento desta área. Devemos ficar alertas, pessoal."
       },
       {
+        "voId": "chr_0014_aurora_explore_find_danger_01",
         "title": "Inimigo poderoso descoberto",
         "text": "Pessoal! Cuidado! Esse inimigo parece muito perigoso!"
       },
       {
+        "voId": "chr_0014_aurora_interact_mine_valub_01",
         "title": "Mineração 1",
         "text": "Minerais de alta qualidade. Provavelmente podemos usá-los para construir abrigos temporários..."
       },
       {
+        "voId": "chr_0014_aurora_interact_mine_valub_echo2_01",
         "title": "Mineração 2",
         "text": "Vamos fazer isso juntos. Vai tornar tudo mais rápido."
       },
       {
+        "voId": "chr_0014_aurora_interact_treasure_valub_01",
         "title": "Abrindo um caixote",
         "text": "Vamos adicionar isso ao nosso estoque de emergência!"
       },
       {
+        "voId": "chr_0014_aurora_interact_etherium_01",
         "title": "Adquirindo Aurileno",
         "text": "É Aurileno? Que lindo... Temos que guardá-lo direito!"
       },
       {
+        "voId": "chr_0014_aurora_interact_blight_break_01",
         "title": "Eliminando a Praga",
         "text": "Eliminação bem-sucedida! E verifiquem se há danos no revestimento anti-Praga, pessoal!"
       },
       {
+        "voId": "chr_0014_aurora_interact_rest_01",
         "title": "Descansar",
         "text": "Quer um pouco de queijo? Queijo é ótimo para repor a vitalidade!"
       },
       {
+        "voId": "chr_0014_aurora_combat_suppuse_using_01",
         "title": "Uso Tático 1",
         "text": "Tratamento de emergência administrado!"
       },
       {
+        "voId": "chr_0014_aurora_combat_suppuse_getheal_01",
         "title": "Uso Tático 2",
         "text": "Desculpe...! Deixe-me recuperar o fôlego!"
       },
       {
+        "voId": "chr_0014_aurora_combat_remind_danger_01",
         "title": "Aviso de Perigo",
         "text": "Não seja atingido por isso!"
       },
       {
+        "voId": "chr_0014_aurora_combat_hurt_lowhp_01",
         "title": "Ferida",
         "text": "Está tudo bem. Eu consigo aguentar..."
       },
       {
+        "voId": "chr_0014_aurora_combat_dead_01",
         "title": "0 PV",
         "text": "Desculpe... Não consegui resistir a essa tempestade..."
       },
       {
+        "voId": "chr_0014_aurora_combat_remind_praise_01",
         "title": "Encorajamento da Equipe 1",
         "text": "Trabalho em equipe sensacional!"
       },
       {
+        "voId": "chr_0014_aurora_combat_remind_praise_02",
         "title": "Encorajamento da Equipe 2",
         "text": "Trabalho fabuloso!"
       },
       {
+        "voId": "chr_0014_aurora_combat_remind_praise_echo2_01",
         "title": "Resposta a Encorajamento 1",
         "text": "Vamos continuar com o bom trabalho!"
       },
       {
+        "voId": "chr_0014_aurora_combat_remind_praise_echo2_02",
         "title": "Resposta a Encorajamento 2",
         "text": "Obrigada pelo apoio!"
       },
       {
+        "voId": "chr_0014_aurora_combat_intobattle_01",
         "title": "Início do Combate 1",
         "text": "Abrindo caminho para o resgate!"
       },
       {
+        "voId": "chr_0014_aurora_combat_intobattle_echo2_01",
         "title": "Início do Combate 2",
         "text": "Isso! Congele-os!"
       },
       {
+        "voId": "chr_0014_aurora_combat_outbattle_nor_01",
         "title": "Vitória em Combate 1",
         "text": "Hoo. A batalha terminou. Vamos fazer uma pausa enquanto ainda podemos."
       },
       {
+        "voId": "chr_0014_aurora_combat_outbattle_nor_02",
         "title": "Vitória em Combate 2",
         "text": "Todo mundo está dando o seu melhor. Eu também tenho que dar um passo à frente!"
       },
       {
+        "voId": "chr_0014_aurora_combat_outbattle_nor_echo2_01",
         "title": "Vitória em Combate 3",
         "text": "Ótimo trabalho em equipe, pessoal!"
       },
       {
+        "voId": "chr_0014_aurora_combat_outbattle_hard_01",
         "title": "Vitória em Combate 4",
         "text": "Não se sinta mal. Aguente a tempestade e aproxime-se do seu objetivo! Poupe suas forças e chegaremos à zona segura mais cedo!"
       },
       {
+        "voId": "chr_0014_aurora_combat_battle_defeat_01",
         "title": "Derrota em Combate",
         "text": "Não desista! Vamos nos vestir e nos preparar! Depois, faremos isso de novo!"
       },
       {
+        "voId": "chr_0014_aurora_mono_attack_last_01",
         "title": "Golpe Final 1",
         "text": "Golpe congelante!"
       },
       {
+        "voId": "chr_0014_aurora_mono_attack_last_02",
         "title": "Golpe Final 2",
         "text": "Friornado!"
       },
       {
+        "voId": "chr_0014_aurora_mono_skill_nor_strike_01",
         "title": "Habilidade de Batalha 1",
         "text": "Para trás!"
       },
       {
+        "voId": "chr_0014_aurora_mono_skill_nor_strike_02",
         "title": "Habilidade de Batalha 2",
         "text": "Passagem negada!"
       },
       {
+        "voId": "chr_0014_aurora_mono_skill_nor_strike_03",
         "title": "Habilidade de Batalha 3",
         "text": "A Snowshine protege!"
       },
       {
+        "voId": "chr_0014_aurora_combat_skill_comb_ready_01",
         "title": "Combo de Habilidades Pronto 1",
         "text": "Preparada e pronta!"
       },
       {
+        "voId": "chr_0014_aurora_combat_skill_comb_ready_02",
         "title": "Combo de Habilidades Pronto 2",
         "text": "Pronta para o resgate!"
       },
       {
+        "voId": "chr_0014_aurora_mono_skill_comb_release_01",
         "title": "Conjuração de Combo 1",
         "text": "Respire comigo!"
       },
       {
+        "voId": "chr_0014_aurora_mono_skill_comb_release_02",
         "title": "Conjuração de Combo 2",
         "text": "O serviço de emergência chegou!"
       },
       {
+        "voId": "chr_0014_aurora_mono_attack_extra_01",
         "title": "Finalizador 1",
         "text": "Suma daqui!"
       },
       {
+        "voId": "chr_0014_aurora_mono_attack_extra_02",
         "title": "Finalizador 2",
         "text": "Você vai CAIR!"
       },
       {
+        "voId": "chr_0014_aurora_mono_skill_ultimate_01",
         "title": "Habilidade Suprema 1",
         "text": "Tempestade de geada!"
       },
       {
+        "voId": "chr_0014_aurora_mono_skill_ultimate_02",
         "title": "Habilidade Suprema 2",
         "text": "Escudo de gelo!"
       },
       {
+        "voId": "chr_0014_aurora_mono_skill_ultimate_03",
         "title": "Habilidade Suprema 3",
         "text": "Pelo gelo e pela neve! Congele!"
       }

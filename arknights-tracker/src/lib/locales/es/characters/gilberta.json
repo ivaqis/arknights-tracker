@@ -123,326 +123,407 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0013_aglina_chrbark_squad_01",
         "title": "Preparación de la operación 1",
         "text": "Hola, Endmin. Oh, tenemos un clima encantador el día de hoy."
       },
       {
+        "voId": "chr_0013_aglina_chrbark_squad_02",
         "title": "Preparación de la operación 2",
         "text": "¿Todo listo para un viaje muy largo?"
       },
       {
+        "voId": "chr_0013_aglina_chrbark_join_01",
         "title": "Añadir al equipo 1",
         "text": "Mmm. ¿De qué color brillará Talos hoy?"
       },
       {
+        "voId": "chr_0013_aglina_chrbark_join_02",
         "title": "Añadir al equipo 2",
         "text": "¿Vamos hacia nuestro próximo destino?"
       },
       {
+        "voId": "chr_0013_aglina_chrbark_weap_01",
         "title": "Cambiar de arma",
         "text": "No importa qué nueva arma reciba. Solo le añadiré un toque de artes... ¡Y mira! ¡Está flotando en el aire!"
       },
       {
+        "voId": "chr_0013_aglina_chrbark_gear_01",
         "title": "Cambiar de equipamiento",
         "text": "Mmm. ¡Me quedan tan bien! Me las pondré para el próximo viaje. Dime, Endmin, ¿alguna idea sobre combinación y estilo?"
       },
       {
+        "voId": "chr_0013_aglina_chrup_skill_01",
         "title": "Activación de la matriz de habilidades",
         "text": "Tengo unos cuantos consejos para ver mejor el camino. Amplía tu horizonte, aprende de la experiencia... ¡y agrégale una pizca de imaginación!"
       },
       {
+        "voId": "chr_0013_aglina_chrup_level_01",
         "title": "Viendo los registros de combate",
         "text": "Recuerda cómo se sentía... Encuentra la intensidad adecuada... ¡Y ahí va!"
       },
       {
+        "voId": "chr_0013_aglina_chrup_promt01_01",
         "title": "Ascenso de operador 1",
         "text": "El ascenso significa que... ¿Me van a dar permiso de ir a lugares más lejanos? Je, je. Ya tengo todo listo y empacado. ¿Cuándo nos vamos?"
       },
       {
+        "voId": "chr_0013_aglina_chrup_promt02_01",
         "title": "Ascenso de operador 2",
         "text": "Quiero ser la que Endmin... Quiero decir, yo quiero ser el soporte más confiable para todos. Pero a veces me preocupo por... ser lo suficientemente capaz."
       },
       {
+        "voId": "chr_0013_aglina_chrup_promt03_01",
         "title": "Ascenso de operador 3",
         "text": "¿Recibiré algo más lindo en el próximo ascenso...? ¿Qué es lo que estoy esperando? Mmm... ¿qué tal un día de diversión conmigo, Endmin?"
       },
       {
+        "voId": "chr_0013_aglina_chrup_promt04_01",
         "title": "Ascenso de operador 4",
         "text": "Cada vez que recordaba todos esos viajes tan largos que había hecho, un montón de pequeñas emociones brotaban dentro de mí. Ese fue el momento exacto en que supe que... simplemente amo mi trabajo."
       },
       {
+        "voId": "chr_0013_aglina_introduce_01",
         "title": "Operador reportándose para el deber",
         "text": "¡Hola! Oh, llevas el perfume de los recuerdos más dulces... como una carta inconclusa destinada a un lugar especial. Me pregunto cuál será."
       },
       {
+        "voId": "chr_0013_aglina_mono_switch_01",
         "title": "En espera 1",
         "text": "¡Mira esto! ¡La señorita Mensajera Voladora tiene una carta especial para ti!"
       },
       {
+        "voId": "chr_0013_aglina_mono_switch_02",
         "title": "En espera 2",
         "text": "¡Chao! ¿Quieres salir a dar un paseo? ¡Los colores del cielo están absolutamente hermosos hoy!"
       },
       {
+        "voId": "chr_0013_aglina_sim_assign_work_01",
         "title": "Asignando a una instalación",
         "text": "No te preocupes. ¡Déjamelo a mí!"
       },
       {
+        "voId": "chr_0013_aglina_sim_hello_lower_01",
         "title": "Saludo 1",
         "text": "¡Endmin! ¡Qué coincidencia! ¿Qué tal si damos una caminata por el Puente?"
       },
       {
+        "voId": "chr_0013_aglina_sim_hello_max_01",
         "title": "Saludo 2",
         "text": "¿Con mucho trabajo, Endmin? No olvides tomarte un descanso, ¿está bien?"
       },
       {
+        "voId": "chr_0013_aglina_sim_talk_lv01_01",
         "title": "Charla casual en la Dijiang 1",
         "text": "Me encanta coleccionar labiales de todos los colores y sabores. No puedo evitar preguntarme, ¿le dan tonos brillantes y tintes a nuestras palabras?"
       },
       {
+        "voId": "chr_0013_aglina_sim_talk_lv02_01",
         "title": "Charla casual en la Dijiang 2",
         "text": "Talos añade un espectro brillante de colores al cielo de Talos-II. Esos espectáculos inesperados con destellos de resplandor... ¿No te parecen simplemente románticos, Endmin?"
       },
       {
+        "voId": "chr_0013_aglina_sim_talk_lv02_02",
         "title": "Charla casual en la Dijiang 3",
         "text": "¡Mira lo que traje, Endmin! Minilámparas de todos colores Y TAMBIÉN un pequeño quemador de incienso de Hora de Brujas. Estaba pensando si podríamos... ¿usarlos para decorar tu cabina, Endmin? Una vez que apaguemos las luces, ¡tu cabina brillará como una noche estrellada! Vamos, ¿qué dices?"
       },
       {
+        "voId": "chr_0013_aglina_sim_talk_max_01",
         "title": "Charla casual en la Dijiang 4",
         "text": "Mmm... Los personajes de las novelas siempre esconden sus sentimientos. ¿Por qué? Tantas invitaciones que nunca entregaron, tantas cartas que nunca enviaron, tantas cosas que nunca se atrevieron a decir... Es tan obviamente simple, pero nunca encuentran el valor para expresar lo que sienten... Ahora yo podría invitarte fácilmente a una aventura, o darte regalitos divertidos... Me pregunto, ¿cuál será la diferencia?"
       },
       {
+        "voId": "chr_0013_aglina_sim_talk_max_02",
         "title": "Charla casual en la Dijiang 5",
         "text": "La señorita Akekuri me dio un talismán especial. Me dijo que mis deseos se cumplirán si lo llevo siempre conmigo. Y ahora, deseo que... ¡todas las personas que me contraten para entregar cartas vean cumplidos sus deseos! ¡Je, je! ¡Espero que ese deseo no suene demasiado ambicioso!"
       },
       {
+        "voId": "chr_0013_aglina_sim_talk_max_03",
         "title": "Charla casual en la Dijiang 6",
         "text": "Siempre sueño con los lugares que he visto. Y en medio de mis borrosos paisajes de ensueño, siempre hay una figura de pie en silencio, como si estuviera esperando a alguien... o una carta. Últimamente, esa figura se ve más clara, y es alguien a quien conozco... bastante bien."
       },
       {
+        "voId": "chr_0013_aglina_sim_gift_give_01",
         "title": "Ofreciendo regalos",
         "text": "¡Sorpresa, Endmin! Escogí algo muy especial, solo para ti. ¡Vamos, adivina qué es!"
       },
       {
+        "voId": "chr_0013_aglina_sim_gift_recv_01",
         "title": "Aceptando regalos",
         "text": "¿Es para mí? ¡Oh, muchísimas gracias! ¡Se va directo al lugar más visible de mi cabina!"
       },
       {
+        "voId": "chr_0013_aglina_mono_self_line01",
         "title": "Diálogo de confianza 1",
         "text": "La primera carta que entregué fue una recomendación que la Cirujana Warfarin escribió para mí. Estaba un poco nerviosa cuando subí por primera vez a la Dijiang. Warfarin me dijo: “Espera a Endministrator.” Y yo me preguntaba: “¿Cómo será Endmin?” Pero al verte en persona, luego de tu despertar accidental, todas mis preocupaciones se desvanecieron. Debo admitir que aún estoy un poco nerviosa..."
       },
       {
+        "voId": "chr_0013_aglina_mono_self_line02",
         "title": "Diálogo de confianza 2",
         "text": "Me encantan los vuelos solitarios tras la puesta del sol. El cielo nocturno me deja contemplar las estrellas parpadeantes. Quizás tienen muchas historias propias. Quizás, en esos mismos momentos, hay otros pensando lo mismo... y mirando el mismo cielo conmigo..."
       },
       {
+        "voId": "chr_0013_aglina_mono_self_line03",
         "title": "Diálogo de confianza 3",
         "text": "La soledad es la compañera de los mensajeros armados, pero nunca he podido acostumbrarme. Siempre que llegaba a un lugar distante, sacaba mi brújula para orientarme de nuevo hacia Rhodes Island. Ahí está la Cirujana Warfarin, junto con recuerdos que jamás se desvanecerán. Ahora estoy viajando por un camino donde me esperan nuevos amigos y encuentros. Solo de pensarlo me dan esos sentimientos cálidos y acogedores... y esperanza por lo que viene. Así es. Quiero ser una mensajera que nunca se siente sola."
       },
       {
+        "voId": "chr_0013_aglina_mono_self_line04",
         "title": "Diálogo de confianza 4",
         "text": "No sé... Ver una estrella solitaria me da una sensación de pérdida y melancolía que no sé cómo explicar... Brilla, brilla, estrellita, me pregunto desde aquí... ¿Será que, en ese cielo tan grande, aún esperas a una estrella que brille junto a ti?"
       },
       {
+        "voId": "chr_0013_aglina_mono_self_line05",
         "title": "Diálogo de confianza 5",
         "text": "Cuando apenas salía del Bosque, noté una carta en blanco a mi lado. Se sentía como un símbolo de mi confusión... Y siempre me pregunté por qué yo era la única que la tenía. ¿Debería escribir algo en ella? ¿Y a quién se la entregaría? Viajé muy lejos, pero no encontré mis respuestas. Pero ahora... Creo que debo escribir todo lo que he sentido y fantaseado... y entregarlo a la persona más importante y especial para mí."
       },
       {
+        "voId": "chr_0013_aglina_mono_chat_line01",
         "title": "Charla 1",
         "text": "¿Un viaje que recuerde especialmente? Mmm... Endmin, ¿has oído hablar de Alloycarrot? Los Cautuses que viven ahí comen zanahorias todo el tiempo. ¡Todo... el... tiempo! ¡Y tienen toda clase de recetas con zanahoria! Visité la ciudad dos veces para entregar medicina a la C.G.C.T. que administra las granjas. Si pudiera volver, me encantaría ver la Gran perforación... ¡Ah! Y sin duda reservaría en la Posada de la Col. No es que odie las zanahorias, solo quiero un poco más de variedad..."
       },
       {
+        "voId": "chr_0013_aglina_mono_chat_line02",
         "title": "Charla 2",
         "text": "La falta de peso es una sensación constante en mí. Siempre me siento como un globo flotando delicadamente sobre la pesada tierra. Y aun así, hago todo lo posible para que flote conmigo. Suena como si estuviera fantaseando, ¿verdad? Pero incluso cuando vuelo, proyecto una sombra larga sobre el suelo... como si algo me atase a la tierra. Así como estas cartas me atan... a ti."
       },
       {
+        "voId": "chr_0013_aglina_mono_chat_line03",
         "title": "Charla 3",
         "text": "¿Qué hay de este libro? Es una antología de cuentos sobre toda clase de mensajeros armados. Uno de ellos que atravesó una Catástrofe para salvar vidas... solo para que se le tildara de presagio maldito del desastre. Otro solo quería hacer una entrega en paz, y terminó derrocando una nación entera luego de una serie de eventos inesperados. Y hay una joven y torpe mensajera que perdió sus paquetes el primer día de trabajo... Je, je, je, je. Me encantan todos los cuentos de este libro."
       },
       {
+        "voId": "chr_0013_aglina_mono_chat_line04",
         "title": "Charla 4",
         "text": "He oído a muchas personas hablar de Terra en Nueva Wrankwood. Algunos elogian su calidez. Otros maldicen su falta de piedad. Algunos detestan su devastación, y otros extrañan su belleza... Mientras actores y escritores dedican su vida a esa parte de la historia, los filósofos creen que debemos seguir adelante y aceptar una nueva forma de pensar... Yo, personalmente, veo a Terra como un nombre familiar pero lejano... Un mundo de paisajes hermosos y rostros conocidos... ¿Y tú, Endmin?"
       },
       {
+        "voId": "chr_0013_aglina_mono_chat_line05",
         "title": "Charla 5",
         "text": "Ningún mensajero armado puede adivinar el contenido de una carta. Pero cuando veo sobres decorados con calcomanías elegantes... Imagino historias cálidas y acogedoras a punto de suceder. En cambio, un sobre arrugado por la lluvia me transmite el sentimiento de un viaje difícil, o una separación dolorosa... Los remitentes rara vez comparten sus sentimientos con los mensajeros. Jamás sabrán cómo alguien a quien nunca conocieron... comparte su alegría... o su tristeza."
       },
       {
+        "voId": "chr_0013_aglina_mono_about_line01",
         "title": "Tema: Warfarin",
         "text": "¿La Cirujana Warfarin? Se veía genial, como siempre. Pero hubo una vez en que confundió la fecha de mi cumpleaños... y parecía sentirse muy culpable mientras se disculpaba conmigo... No fue tan grave. Luego me llamó por otro nombre, en medio del pánico... Nunca la había visto así. ¿Cómo describirlo...? Mmm. Se veía muy confundida... y perdida. Incluso después de que me fui, se quedó sentada sola en la mesa... por mucho, mucho tiempo..."
       },
       {
+        "voId": "chr_0013_aglina_mono_about_line02",
         "title": "Tema: Espadachina misteriosa",
         "text": "Hace un tiempo conocí a una mujer misteriosa en Rhodes Island. Portaba una espada de aspecto único y estaba de pie junto al lago tranquilo. De pronto, su espada brilló. Apenas dejó una pequeña onda en el agua... pero partió una nube por la mitad... Me dio esta carta y me pidió que la entregara a Endministrator. Y que, una vez que la operadora Chen Qianyu alcance su máximo potencial, tú se la dieras..."
       },
       {
+        "voId": "chr_0013_aglina_mono_about_line03",
         "title": "Tema: Avywenna",
         "text": "Avywenna siempre hace entregas en lugares peligrosos... Puede estar sonriendo todo el tiempo, pero en sus ojos se esconden profundos secretos... Secretos que no puede compartir con nadie... He visto a muchos otros mensajeros armados con esa misma mirada... Y sé lo que significa..."
       },
       {
+        "voId": "chr_0013_aglina_mono_about_line04",
         "title": "Tema: Las peligrosas tierras salvajes",
         "text": "Talos-II está lleno de peligros desconocidos... Leí el informe de Ardelia. Los peligros de Talos-II son mucho más impredecibles que los de la lejana Terra. Como los mensajeros atravesamos zonas con eventos de Plaga frecuentes, solemos llevar equipamiento de primeros auxilios o evacuación. Como puedo volar, suelo llevar equipamiento de emergencia adicional para dejarlo en áreas de descanso en las tierras salvajes. Espero que ayude a quienes se metan en problemas."
       },
       {
+        "voId": "chr_0013_aglina_mono_about_line05",
         "title": "Tema: Yo interior",
         "text": "Mientras estuve en Rhodes Island, pensé que la Cirujana Warfarin me encargaría algunas misiones. Pero me dijo que Rhodes Island no estaba en posición de darse a conocer públicamente. Sin embargo, como soy mensajera, me dijo que lo haría mejor viajando bajo los cielos abiertos. Y eso fue justo lo que hice... Pasé dos años vagando por Talos-II, conociendo este mundo, antes de llegar aquí."
       },
       {
+        "voId": "chr_0013_aglina_explore_point_common_01",
         "title": "Recurso/Coleccionable detectado 1",
         "text": "Hay algo que llama nuestra atención por allá."
       },
       {
+        "voId": "chr_0013_aglina_explore_point_valub_01",
         "title": "Recurso/Coleccionable detectado 2",
         "text": "¡Mira! ¡Quizás nos espera una sorpresa!"
       },
       {
+        "voId": "chr_0013_aglina_explore_find_locked_01",
         "title": "Zona inexplorada detectada",
         "text": "Según los estándares de los mensajeros: ¡sé extremadamente cauteloso al entrar en territorios inexplorados!"
       },
       {
+        "voId": "chr_0013_aglina_explore_find_danger_01",
         "title": "Enemigo poderoso descubierto",
         "text": "¡Ten mucho cuidado! Ese enemigo se ve realmente peligroso."
       },
       {
+        "voId": "chr_0013_aglina_interact_mine_valub_01",
         "title": "Minería 1",
         "text": "¡Recojamos estos minerales!"
       },
       {
+        "voId": "chr_0013_aglina_interact_mine_valub_echo2_01",
         "title": "Minería 2",
         "text": "Estoy aquí para ayudar. Ji, ji."
       },
       {
+        "voId": "chr_0013_aglina_interact_treasure_valub_01",
         "title": "Abriendo una caja",
         "text": "¡Vaya! ¡Esto es justo lo que necesitábamos!"
       },
       {
+        "voId": "chr_0013_aglina_interact_etherium_01",
         "title": "Adquiriendo Aurileno",
         "text": "Je, je, lo atrapé antes de que se escapara."
       },
       {
+        "voId": "chr_0013_aglina_interact_blight_break_01",
         "title": "Eliminar la Plaga",
         "text": "¡Acabamos de abrir el camino para futuras entregas!"
       },
       {
+        "voId": "chr_0013_aglina_interact_rest_01",
         "title": "Descanso",
         "text": "Un buen descanso nos prepara para un viaje más largo."
       },
       {
+        "voId": "chr_0013_aglina_combat_suppuse_using_01",
         "title": "Uso táctico 1",
         "text": "Prueba esto. ¡Debería ayudarte!"
       },
       {
+        "voId": "chr_0013_aglina_combat_suppuse_getheal_01",
         "title": "Uso táctico 2",
         "text": "Uff... Ya me siento mejor."
       },
       {
+        "voId": "chr_0013_aglina_combat_remind_danger_01",
         "title": "Advertencia de peligro",
         "text": "¡Cuidado! ¡No te hagas daño!"
       },
       {
+        "voId": "chr_0013_aglina_combat_hurt_lowhp_01",
         "title": "Herida",
         "text": "Mi cuerpo... se siente tan pesado..."
       },
       {
+        "voId": "chr_0013_aglina_combat_dead_01",
         "title": "0 PV",
         "text": "Quisiera volar... una última vez..."
       },
       {
+        "voId": "chr_0013_aglina_combat_remind_praise_01",
         "title": "Ánimo del equipo 1",
         "text": "¡Vaya! ¡¿De verdad puedes hacer eso?!"
       },
       {
+        "voId": "chr_0013_aglina_combat_remind_praise_02",
         "title": "Ánimo del equipo 2",
         "text": "¡Impresionante! ¿Podemos hacerlo de nuevo?"
       },
       {
+        "voId": "chr_0013_aglina_combat_remind_praise_echo2_01",
         "title": "Respuesta al ánimo 1",
         "text": "Je, je. Eres demasiado amable."
       },
       {
+        "voId": "chr_0013_aglina_combat_remind_praise_echo2_02",
         "title": "Respuesta al ánimo 2",
         "text": "¡Sigamos y terminemos con esto!"
       },
       {
+        "voId": "chr_0013_aglina_combat_intobattle_01",
         "title": "Comienza el combate 1",
         "text": "¡Acabaremos esta pelea fácilmente!"
       },
       {
+        "voId": "chr_0013_aglina_combat_intobattle_echo2_01",
         "title": "Comienza el combate 2",
         "text": "Esperaba que dijeras eso."
       },
       {
+        "voId": "chr_0013_aglina_combat_outbattle_nor_01",
         "title": "Victoria en el combate 1",
         "text": "Je, je. Lo logré, ¿verdad?"
       },
       {
+        "voId": "chr_0013_aglina_combat_outbattle_nor_02",
         "title": "Victoria en el combate 2",
         "text": "¡Lo mejor que he hecho hoy!"
       },
       {
+        "voId": "chr_0013_aglina_combat_outbattle_nor_echo2_01",
         "title": "Victoria en el combate 3",
         "text": "¡Sí! Ahora podemos continuar nuestro viaje."
       },
       {
+        "voId": "chr_0013_aglina_combat_outbattle_hard_01",
         "title": "Victoria en el combate 4",
         "text": "Llegamos al final... Y las dificultades valieron la pena."
       },
       {
+        "voId": "chr_0013_aglina_combat_battle_defeat_01",
         "title": "Derrota en el combate",
         "text": "El camino puede estar lleno de obstáculos, pero comenzaremos el viaje una vez más y nos aseguraremos de que la entrega sea un éxito."
       },
       {
+        "voId": "chr_0013_aglina_mono_attack_last_01",
         "title": "Golpe final 1",
         "text": "¡Hazte a un lado!"
       },
       {
+        "voId": "chr_0013_aglina_mono_attack_last_02",
         "title": "Golpe final 2",
         "text": "¡Vamos!"
       },
       {
+        "voId": "chr_0013_aglina_mono_skill_nor_01",
         "title": "Habilidad de batalla 1",
         "text": "¡Permanezcan juntos, gente!"
       },
       {
+        "voId": "chr_0013_aglina_mono_skill_nor_02",
         "title": "Habilidad de batalla 2",
         "text": "¡No puedes escapar de la gravedad!"
       },
       {
+        "voId": "chr_0013_aglina_mono_skill_nor_03",
         "title": "Habilidad de batalla 3",
         "text": "¡Mejor fíjate por dónde pisas!"
       },
       {
+        "voId": "chr_0013_aglina_combat_skill_comb_ready_01",
         "title": "Habilidad de combo preparada 1",
         "text": "¡Campo gravitacional listo!"
       },
       {
+        "voId": "chr_0013_aglina_combat_skill_comb_ready_02",
         "title": "Habilidad de combo preparada 2",
         "text": "¿Quién quiere flotar?"
       },
       {
+        "voId": "chr_0013_aglina_mono_skill_comb_release_01",
         "title": "Lanzando combo 1",
         "text": "¡Ahora, a volar!"
       },
       {
+        "voId": "chr_0013_aglina_mono_skill_comb_release_02",
         "title": "Lanzando combo 2",
         "text": "¡Diviértanse flotando!"
       },
       {
+        "voId": "chr_0013_aglina_mono_attack_extra_01",
         "title": "Remate 1",
         "text": "¡Sorpresa!"
       },
       {
+        "voId": "chr_0013_aglina_mono_attack_extra_02",
         "title": "Remate 2",
         "text": "¿Qué tal esto?"
       },
       {
+        "voId": "chr_0013_aglina_mono_skill_ultimate_01",
         "title": "Habilidad máxima 1",
         "text": "¡Vamos a voltear el mundo!"
       },
       {
+        "voId": "chr_0013_aglina_mono_skill_ultimate_02",
         "title": "Habilidad máxima 2",
         "text": "¡Fuerza de la tierra!"
       },
       {
+        "voId": "chr_0013_aglina_mono_skill_ultimate_03",
         "title": "Habilidad máxima 3",
         "text": "¡Acomódate con la gravedad!"
       }

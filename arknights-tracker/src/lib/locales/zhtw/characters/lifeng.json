@@ -130,334 +130,417 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0015_lifeng_chrbark_squad_01",
         "title": "行動準備1",
         "text": "管理員！這次我能派上用場了嗎？"
       },
       {
+        "voId": "chr_0015_lifeng_chrbark_squad_02",
         "title": "行動準備2",
         "text": "欸，鞋帶鬆了……管理員來了！不管了，立正！"
       },
       {
+        "voId": "chr_0015_lifeng_chrbark_join_01",
         "title": "編入隊伍1",
         "text": "打擊對象，在哪個方位？！——別緊張管理員，我就是預先演習一下。"
       },
       {
+        "voId": "chr_0015_lifeng_chrbark_join_02",
         "title": "編入隊伍2",
         "text": "正如潘叔老是說的，聞鼓則進，斷不能怯！"
       },
       {
+        "voId": "chr_0015_lifeng_chrbark_weap_01",
         "title": "更換武器",
         "text": "練家子挑長槍，切勿盲目追求材質。趁手的，白蠟桿也能耍出花頭！"
       },
       {
+        "voId": "chr_0015_lifeng_chrbark_gear_01",
         "title": "更換裝備",
         "text": "管理員，這些戰術裝備真的是給我的嗎？這是不是說明，我也正式加入隊伍了？！"
       },
       {
+        "voId": "chr_0015_lifeng_chrup_skill_01",
         "title": "解鎖天賦陣列",
         "text": "我來終末地就是為了學東西的！只是……這裡的東西多得有點學不完啊……要加把勁！"
       },
       {
+        "voId": "chr_0015_lifeng_chrup_level_01",
         "title": "觀看作戰紀錄",
         "text": "潘叔也老是叫我把練習的動作錄下來回去揣摩。說真的，不看不知道，原來到處都是破綻！"
       },
       {
+        "voId": "chr_0015_lifeng_chrup_promt01_01",
         "title": "精英化晉升1",
         "text": "呼，原、原來是晉升啊！我還以為叫我過來，是因為我犯了什麼事……"
       },
       {
+        "voId": "chr_0015_lifeng_chrup_promt02_01",
         "title": "精英化晉升2",
         "text": "一回生二回熟，這次我完全知道了！管理員，我最近的表現是不是有望衝擊本月「辦公室座椅競速比賽」的頭名？！"
       },
       {
+        "voId": "chr_0015_lifeng_chrup_promt03_01",
         "title": "精英化晉升3",
         "text": "管理員，能不能透露一下，往上還有幾級啊？……我只是要更新日記的內容，比如說——「本月目標」！"
       },
       {
+        "voId": "chr_0015_lifeng_chrup_promt04_01",
         "title": "精英化晉升4",
         "text": "「鑑於你近期優秀的表現」、「在行動中展現了良好的適應性和合作能力」……這些話我都能背下來了！管理員，我已經做好了充分的準備，我會成為你最信任的夥伴。"
       },
       {
+        "voId": "chr_0015_lifeng_introduce_01",
         "title": "幹員報到",
         "text": "管理員，是我是我，我叫黎風！我還是個新手，您見笑了！我一直被教導，艱難困苦，玉汝於成！可是我還在琢磨，到底怎麼樣才能算是「成」呢……變得像您這樣嗎？那麼，能請您多指教嗎？"
       },
       {
+        "voId": "chr_0015_lifeng_mono_switch_01",
         "title": "待命1",
         "text": "手到擒來！"
       },
       {
+        "voId": "chr_0015_lifeng_mono_switch_02",
         "title": "待命2",
         "text": "交給我吧！"
       },
       {
+        "voId": "chr_0015_lifeng_sim_assign_work_01",
         "title": "進駐設施",
         "text": "收到，管理員！我剛剛還在想你怎麼現在才來找我呢！"
       },
       {
+        "voId": "chr_0015_lifeng_sim_hello_lower_01",
         "title": "打招呼1",
         "text": "管理員，你好忙啊！好難得見你一面！"
       },
       {
+        "voId": "chr_0015_lifeng_sim_hello_max_01",
         "title": "打招呼2",
         "text": "管理員有空嗎？我學了個新招，給你看看！"
       },
       {
+        "voId": "chr_0015_lifeng_sim_talk_lv01_01",
         "title": "帝江號閒聊1",
         "text": "咳……這種時候應該怎麼說話呢……管理員，終末地正式幹員黎風向您問好。"
       },
       {
+        "voId": "chr_0015_lifeng_sim_talk_lv02_01",
         "title": "帝江號閒聊2",
         "text": "啊，你剛才就看見我了？……我沒有在這裡等任務啊，沒有，嘿嘿……"
       },
       {
+        "voId": "chr_0015_lifeng_sim_talk_lv02_02",
         "title": "帝江號閒聊3",
         "text": "管理員，你還認識別的阿納薩嗎？我們這一支好久以前就生活在城市裡了，但我聽說還有一些族人留在荒野裡……下次你看到和我不一樣的阿納薩，叫我去看看！"
       },
       {
+        "voId": "chr_0015_lifeng_sim_talk_max_01",
         "title": "帝江號閒聊4",
         "text": "其實我……會暈車，連武陵那種動力五輪車我都吃不消。但是在帝江號上站著，還真的沒感覺到自己在動呢。"
       },
       {
+        "voId": "chr_0015_lifeng_sim_talk_max_02",
         "title": "帝江號閒聊5",
         "text": "用帝江號上的望遠鏡真的能看到息壤堰啊！就是很小，好像兩根手指頭就能夾起來……沒想到那麼大的東西，換個角度看就變得這麼渺小。嗯，我得去琢磨琢磨。"
       },
       {
+        "voId": "chr_0015_lifeng_sim_talk_max_03",
         "title": "帝江號閒聊6",
         "text": "管理員，培養艙裡的植物，一直都是有人專門照顧的吧？……有意思，它們竟然能在離地面這麼遠的地方生長。不過，我也沒想到我會在這就是了。"
       },
       {
+        "voId": "chr_0015_lifeng_sim_gift_give_01",
         "title": "贈送禮物",
         "text": "管理員，上次打遊戲輸給你的時候說好要送你的小禮物，嘿嘿，你快拿著！"
       },
       {
+        "voId": "chr_0015_lifeng_sim_gift_recv_01",
         "title": "接收禮物",
         "text": "這是大家都有的獎勵？……專門給我的嗎？！謝謝您，管理員！"
       },
       {
+        "voId": "chr_0015_lifeng_mono_self_line01",
         "title": "信賴對話1",
         "text": "管理員，您剛剛是在跟我說話嗎？我……還沒有走過彙報工作的流程。噢，只是聊聊天啊，好的，您想知道什麼，我全都告訴您！"
       },
       {
+        "voId": "chr_0015_lifeng_mono_self_line02",
         "title": "信賴對話2",
         "text": "管理員，我從小就跟著潘叔習武，有一次大院失火了，我右肩扛起兩個小孩，左肩上還架著一個，就這樣往外衝！您看到上週的測試數據了嗎？醫療部的老師說我就是胳膊細了點，出拳的力道不輸別人！有敵人要打，千萬記得要叫我！"
       },
       {
+        "voId": "chr_0015_lifeng_mono_self_line03",
         "title": "信賴對話3",
         "text": "管理員，我申請來終末地時，您讀過弭長官、莊天師、潘叔幫我寫的證明信了吧？我當時求了好久，他們不太願意讓我出這麼遠的門。但是我心意已決，一定要出來歷練一番。所以，不能浪費這個寶貴的機會，您就對我委以重任吧！……好，我這就去打掃動力艙！"
       },
       {
+        "voId": "chr_0015_lifeng_mono_self_line04",
         "title": "信賴對話4",
         "text": "管理員親自來邀請我？！咳，我將盡全力為行動小組分憂解難。我對戰術布置已經有了些想法，這是我昨晚聽你們提到後做出的五種方案。去哪裡簽字？……一般這種情況不需要簽字嗎？好的，就來。"
       },
       {
+        "voId": "chr_0015_lifeng_mono_self_line05",
         "title": "信賴對話5",
         "text": "接下來的旅程，我會成為您的左膀右臂！……噗嗤，看您的表情，是不是覺得我在開自己的玩笑？哈哈，沒關係的，我一定是一隻能堪大任的「手臂」，有朝一日，我會扛起一切的。管理員，等我。"
       },
       {
+        "voId": "chr_0015_lifeng_mono_chat_line01",
         "title": "交談1",
         "text": "要不要跟我比腕力？我可以玩這個玩一整天！"
       },
       {
+        "voId": "chr_0015_lifeng_mono_chat_line02",
         "title": "交談2",
         "text": "管理員，送花給人這件事有一個訣竅，我教你。從一捧花裡抽出來一朵，留在自己手裡，這樣等自己手裡那朵花凋謝了，就知道送給對方的花也該換新的了。嘿嘿，這其實也是我自己領悟出來的辦法，不然爸爸媽媽墓前的花謝了，我總是沒辦法及時換新的。"
       },
       {
+        "voId": "chr_0015_lifeng_mono_chat_line03",
         "title": "交談3",
         "text": "終末地的大家，好像都有點害羞。比如說，我發現有幾位幹員很好奇我每天早上在房門口打的那套宏山拳法，他們會偷偷跟在我後面，學我沉肩運勁……但我一回頭他們就跑掉了。後來，隊伍越來越長，我至今都沒問過他們的名字……"
       },
       {
+        "voId": "chr_0015_lifeng_mono_chat_line04",
         "title": "交談4",
         "text": "這隻手沒了的時候我還很小，那時候也不知道痛不痛的事，就記得……進醫院的那一刻是春天，走出來的時候，又是春天了，但是……好像有些東西再也長不出來了。"
       },
       {
+        "voId": "chr_0015_lifeng_mono_chat_line05",
         "title": "交談5",
         "text": "管理員，我這次出來這麼遠，不知道老家那群朋友們怎麼樣了。街坊鄰里的大小事我都記得很清楚，像是白奶奶什麼時候要去按摩腰，劉巡衛的腿下雨天要換藥，李阿姨要煮紅燒肉，每週三都得買醬油，小然去採樣總是忘記帶手套，阿仔做小本生意，月初總是要找我借點「本金」……下次聯絡他們的時候，我要把每個人都問候一圈！"
       },
       {
+        "voId": "chr_0015_lifeng_mono_about_line01",
         "title": "話題：大潘",
         "text": "我這隻義肢，在莊天師沒空的時候，都是潘叔幫我保養的。他在機械啊，工程啊那些事情上，可是一把好手！只是不知道他為什麼要解甲歸田……管理員，偷偷告訴你，我看過老照片，潘叔早年很風光的——踩著五輪車！機車服、大墨鏡、爆炸頭！據說在宏山科學院的時候，他操著一把菜刀就能從環帶砍到開拓區……想不到吧？"
       },
       {
+        "voId": "chr_0015_lifeng_mono_about_line02",
         "title": "話題：莊方宜",
         "text": "我小時候經常去莊天師的實驗室寫作業。她有空的時候，就幫我調整手臂的參數，只是每次調著調著就睡著了……她的屋子其實都是我幫忙收拾的。她真的太忙了，沒時間做這些瑣事……她把整個武陵都扛在肩上呢。"
       },
       {
+        "voId": "chr_0015_lifeng_mono_about_line03",
         "title": "話題：弭弗",
         "text": "雖然弭長官不讓我們這樣說，但是她其實很善良。她見到我，總是丟給我幾塊錢，讓我去田老姨的攤上幫她買一串糖油粑粑。她會把粑粑全部弄下來給我吃——光是叼着那根小竹籤，她就一副很滿足的樣子。"
       },
       {
+        "voId": "chr_0015_lifeng_mono_about_line04",
         "title": "話題：天使",
         "text": "我們武陵人要活下去，從小就得跟這東西鬥智鬥勇。以前在天師樁陣列還沒完工的時候，我們都不敢靠近未知的水源。大人們嚇我們說，沾上天使，牠們就會從家裡的管道、地磚縫裡爬出來……哎，我們都習慣了。不過，我也是來了終末地，才知道原來世界上還有其他模樣的天使……"
       },
       {
+        "voId": "chr_0015_lifeng_mono_about_line05",
         "title": "話題：阿納薩",
         "text": "爸爸媽媽說，我們的祖上在跨越星門前，不是像在塔衛二這樣生活在城市裡的。他們在炎國移動城市邊緣的荒漠和草原遊蕩，以天為被，以地為席，與世界一道生與滅。現在想來，他們反覆對我提起這些傳說，是為了告訴我，哪怕有一天他們的「實在」離開了，也會以另一種樣子，回到我的身邊。所以，我早就……不想念他們了。"
       },
       {
+        "voId": "chr_0015_lifeng_mono_about_line06",
         "title": "話題：武陵科學發展區",
         "text": "你們現在看到的武陵，歷史也不算長呢——就和我這隻手差不多歲數！在這麼短的時間裡，它就變成了塔衛二上數一數二好的地方，是不是特別神奇？但是，就算它變得再快，我都能記住每一塊磚的位置。我現在閉上眼睛，都能回想起下雨的陰天，街上那股濕漉漉的味道。"
       },
       {
+        "voId": "chr_0015_lifeng_mono_about_line07",
         "title": "話題：宏山",
         "text": "說到這個，我還沒去過宏科院本部呢！爸爸媽媽當年是從那邊過來的，和莊天師、潘叔他們一起。我……也沒太想過去宏山這件事，那邊沒有一個我認識的人……聽說那裡全是聰明腦袋打架，我有點擔心他們看不上我……"
       },
       {
+        "voId": "chr_0015_lifeng_explore_point_common_01",
         "title": "發現資源1",
         "text": "走路留意腳邊的好東西！"
       },
       {
+        "voId": "chr_0015_lifeng_explore_point_valub_01",
         "title": "發現資源2",
         "text": "那東西好罕見！我們去那邊看看？"
       },
       {
+        "voId": "chr_0015_lifeng_explore_find_locked_01",
         "title": "發現未探索區域",
         "text": "這條路你認識嗎？我們好像還沒走過。"
       },
       {
+        "voId": "chr_0015_lifeng_explore_find_danger_01",
         "title": "發現強敵",
         "text": "敵人！讓我來！讓我去！"
       },
       {
+        "voId": "chr_0015_lifeng_interact_mine_valub_01",
         "title": "採集礦物1",
         "text": "課本上講過這些東西！是不是很值錢啊？"
       },
       {
+        "voId": "chr_0015_lifeng_interact_mine_valub_echo2_01",
         "title": "採集礦物2",
         "text": "舉手之勞！"
       },
       {
+        "voId": "chr_0015_lifeng_interact_treasure_valub_01",
         "title": "打開儲藏箱",
         "text": "撿到這麼好的東西，是不是要上交給巡衛啊……"
       },
       {
+        "voId": "chr_0015_lifeng_interact_etherium_01",
         "title": "獲得醚質",
         "text": "老師說，野外飄浮的醚質其實很安全，只是不要追得太深。"
       },
       {
+        "voId": "chr_0015_lifeng_interact_blight_break_01",
         "title": "消除侵蝕",
         "text": "武陵的孩子從小就跟侵蝕打交道，小事，交給我！"
       },
       {
+        "voId": "chr_0015_lifeng_interact_rest_01",
         "title": "休整",
         "text": "好像全身湧過一股暖流……我得起來熱熱身，活動一下！"
       },
       {
+        "voId": "chr_0015_lifeng_combat_suppuse_using_01",
         "title": "使用戰術物品1",
         "text": "全都給你，快好起來啊！"
       },
       {
+        "voId": "chr_0015_lifeng_combat_suppuse_getheal_01",
         "title": "使用戰術物品2",
         "text": "我喘口氣，馬上就好！"
       },
       {
+        "voId": "chr_0015_lifeng_combat_remind_danger_01",
         "title": "危險提醒",
         "text": "哇啊啊，快閃開！"
       },
       {
+        "voId": "chr_0015_lifeng_combat_hurt_lowhp_01",
         "title": "負傷",
         "text": "還能撐住，還能撐住……"
       },
       {
+        "voId": "chr_0015_lifeng_combat_dead_01",
         "title": "力竭",
         "text": "要是我足夠強大……"
       },
       {
+        "voId": "chr_0015_lifeng_combat_remind_praise_01",
         "title": "小隊激勵1",
         "text": "怎麼做到的？教教我！"
       },
       {
+        "voId": "chr_0015_lifeng_combat_remind_praise_02",
         "title": "小隊激勵2",
         "text": "大開眼界了！我也不能落後！"
       },
       {
+        "voId": "chr_0015_lifeng_combat_remind_praise_echo2_01",
         "title": "回應激勵1",
         "text": "嘿嘿，別誇我了吧……"
       },
       {
+        "voId": "chr_0015_lifeng_combat_remind_praise_echo2_02",
         "title": "回應激勵2",
         "text": "三人行必有我師，我們有四個人！"
       },
       {
+        "voId": "chr_0015_lifeng_combat_intobattle_01",
         "title": "作戰開始1",
         "text": "晚輩武陵城黎風，失禮了！"
       },
       {
+        "voId": "chr_0015_lifeng_combat_intobattle_echo2_01",
         "title": "作戰開始2",
         "text": "諒他們接不住我這槍！"
       },
       {
+        "voId": "chr_0015_lifeng_combat_outbattle_nor_01",
         "title": "作戰勝利1",
         "text": "這一架打得太痛快了！"
       },
       {
+        "voId": "chr_0015_lifeng_combat_outbattle_nor_02",
         "title": "作戰勝利2",
         "text": "呀，就結束了？我還有幾招沒使……"
       },
       {
+        "voId": "chr_0015_lifeng_combat_outbattle_nor_echo2_01",
         "title": "作戰勝利3",
         "text": "讓他們好好瞧瞧！"
       },
       {
+        "voId": "chr_0015_lifeng_combat_outbattle_hard_01",
         "title": "作戰勝利4",
         "text": "最好的永遠是下一場戰鬥，大家穩住。"
       },
       {
+        "voId": "chr_0015_lifeng_combat_battle_defeat_01",
         "title": "作戰失敗",
         "text": "潘叔說，出槍不是比手快，而是看誰心穩，這口氣我還是沒沉住。歇口氣，再來一次。"
       },
       {
+        "voId": "chr_0015_lifeng_mono_attack_last_01",
         "title": "重擊1",
         "text": "看我的！"
       },
       {
+        "voId": "chr_0015_lifeng_mono_attack_last_02",
         "title": "重擊2",
         "text": "得罪了！"
       },
       {
+        "voId": "chr_0015_lifeng_mono_skill_nor_01",
         "title": "戰技1",
         "text": "明心見性！"
       },
       {
+        "voId": "chr_0015_lifeng_mono_skill_nor_02",
         "title": "戰技2",
         "text": "何苦來哉！"
       },
       {
+        "voId": "chr_0015_lifeng_mono_skill_nor_03",
         "title": "戰技3",
         "text": "心快，槍快！"
       },
       {
+        "voId": "chr_0015_lifeng_combat_skill_comb_ready_01",
         "title": "連攜技就緒1",
         "text": "儘管叫我！"
       },
       {
+        "voId": "chr_0015_lifeng_combat_skill_comb_ready_02",
         "title": "連攜技就緒2",
         "text": "助你一臂之力！"
       },
       {
+        "voId": "chr_0015_lifeng_mono_skill_comb_release_01",
         "title": "連攜技1",
         "text": "見識過這招嗎？"
       },
       {
+        "voId": "chr_0015_lifeng_mono_skill_comb_release_02",
         "title": "連攜技2",
         "text": "伏魔金槍！"
       },
       {
+        "voId": "chr_0015_lifeng_mono_attack_extra_01",
         "title": "處決1",
         "text": "助你破執！"
       },
       {
+        "voId": "chr_0015_lifeng_mono_attack_extra_02",
         "title": "處決2",
         "text": "勸你罷手！"
       },
       {
+        "voId": "chr_0015_lifeng_mono_skill_ultimate_01",
         "title": "終結技1",
         "text": "猜猜在哪隻手？"
       },
       {
+        "voId": "chr_0015_lifeng_mono_skill_ultimate_02",
         "title": "終結技2",
         "text": "摧破業障，降伏諸惡！"
       },
       {
+        "voId": "chr_0015_lifeng_mono_skill_ultimate_03",
         "title": "終結技3",
         "text": "現忿怒相，破！"
       }

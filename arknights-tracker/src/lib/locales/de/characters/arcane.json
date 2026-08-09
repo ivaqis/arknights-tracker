@@ -187,330 +187,412 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0032_lizhiyan_chrbark_squad_01",
         "title": "Einsatzvorbereitung 1",
         "text": "Jetzt hast du das Kommando."
       },
       {
+        "voId": "chr_0032_lizhiyan_chrbark_squad_02",
         "title": "Einsatzvorbereitung 2",
         "text": "Ich werde die Ehre der Yinglungs hochhalten."
       },
       {
+        "voId": "chr_0032_lizhiyan_chrbark_join_01",
         "title": "Wird zum Team hinzugefügt 1",
         "text": "Ich vertraue dir."
       },
       {
+        "voId": "chr_0032_lizhiyan_chrbark_join_02",
         "title": "Wird zum Team hinzugefügt 2",
         "text": "Gib mir deine Befehle."
       },
       {
+        "voId": "chr_0032_lizhiyan_chrbark_weap_01",
         "title": "Waffe wird gewechselt",
         "text": "Die stärkste Waffe ist das Herz, das sie führt."
       },
       {
+        "voId": "chr_0032_lizhiyan_chrbark_gear_01",
         "title": "Ausrüstung wird gewechselt",
         "text": "Endfield weiß wirklich, wie man Qualität liefert."
       },
       {
+        "voId": "chr_0032_lizhiyan_chrup_skill_01",
         "title": "Fähigkeitsmatrix-Aktivierung",
         "text": "Wenn du dich extrem perfektionierst, kannst du dich stets ruhig durchsetzen, egal in welcher Situation."
       },
       {
+        "voId": "chr_0032_lizhiyan_chrup_level_01",
         "title": "Kampfaufzeichnungen ansehen",
         "text": "Kampfaufzeichnungen … Früher habe ich die ganze Nacht damit verbracht, Nachbesprechungen durchzugehen."
       },
       {
+        "voId": "chr_0032_lizhiyan_chrup_promt01_01",
         "title": "Operator-Beförderung 1",
         "text": "Danke für diese Ehre … Als Einheitsleiterin gerate ich nicht oft in solche Situationen, also ist das … irgendwie neu."
       },
       {
+        "voId": "chr_0032_lizhiyan_chrup_promt02_01",
         "title": "Operator-Beförderung 2",
         "text": "Bedeutet dies eine engere Zusammenarbeit zwischen Endfield und der HAW? Vielleicht kann ich dir beim nächsten Mal eine Führung durch das Yinglung-Hauptquartier in Hongshan geben."
       },
       {
+        "voId": "chr_0032_lizhiyan_chrup_promt03_01",
         "title": "Operator-Beförderung 3",
         "text": "Belobigungen sind willkommen, aber ich möchte mich lieber mit weiteren Missionen beschäftigen. Mir ist jede Mission recht. Nichtstun passt mir nicht … Ich möchte dir noch mehr helfen können."
       },
       {
+        "voId": "chr_0032_lizhiyan_chrup_promt04_01",
         "title": "Operator-Beförderung 4",
         "text": "Hm? Ah … ich musste an die Zeit zurückdenken, als ich zur Einheitsleiterin am Yinglung-Pass ernannt wurde. Nachdem sich die Wuling-Affären erledigt haben … hat sich der sture Zorn gelegt, der mich einst antrieb. Hätte ich gewusst, dass du mich eines Tages persönlich auszeichnen würdest … na ja, egal."
       },
       {
+        "voId": "chr_0032_lizhiyan_introduce_01",
         "title": "Operator meldet sich zum Dienst",
         "text": "YSE-Einheitsleiterin Arkan meldet sich bei Endfield … Ich warte auf deinen Befehl, Kommandant."
       },
       {
+        "voId": "chr_0032_lizhiyan_mono_switch_01",
         "title": "Warten 1",
         "text": "Sei aus Ferrium, bewege dich wie eine scharfe Klinge. Yinglung gewinnt durch Schwung."
       },
       {
+        "voId": "chr_0032_lizhiyan_mono_switch_02",
         "title": "Warten 2",
         "text": "Betrachte mich als eine Klinge, die dir zur Verfügung steht. Sag mir einfach, wo du mich brauchst, und ich schlage zu."
       },
       {
+        "voId": "chr_0032_lizhiyan_sim_assign_work_01",
         "title": "Zuweisung zur Anlage",
         "text": "Yinglungs sind nie wählerisch, was ihre Missionen angeht. Meine Pflicht ist es, sie abzuschließen."
       },
       {
+        "voId": "chr_0032_lizhiyan_sim_hello_lower_01",
         "title": "Gruß 1",
         "text": "Hast du endlich einen Augenblick Zeit, Endmin?"
       },
       {
+        "voId": "chr_0032_lizhiyan_sim_hello_max_01",
         "title": "Gruß 2",
         "text": "Ich habe dich schon aus der Ferne gesehen. Gibt es neue Informationen?"
       },
       {
+        "voId": "chr_0032_lizhiyan_sim_talk_lv01_01",
         "title": "Dijiang-Geplauder 1",
         "text": "Ich dachte einst, dass die Proxy mich nicht besonders mag. Aber nach unserer Rückkehr aus der Sperrzone Nord-Wuling begann sie, mich freundlich zu behandeln. Ich glaube, ich verstehe wieso … Wahrscheinlich behandelte sie mich wie einen steifen Langweiler. Wenn ich die Chance erhalte, Lady Si an Bord der Dijiang zu treffen … Würde ich ihr gerne persönlich danken."
       },
       {
+        "voId": "chr_0032_lizhiyan_sim_talk_lv02_01",
         "title": "Dijiang-Geplauder 2",
         "text": "Öde Ebenen aus Sand, die Schneefelder im hohen Norden … Während ich auf dem Deck der Dijiang stehe, sehe ich die Regionen, die Hilfe benötigen, deutlicher als je zuvor. Meine Reise endet nicht mit dem Riesigen Riss … Ich werde jeden Zentimeter Boden zurückgewinnen, der durch andere Risse ruiniert wurde."
       },
       {
+        "voId": "chr_0032_lizhiyan_sim_talk_lv02_02",
         "title": "Dijiang-Geplauder 3",
         "text": "Ich habe die Berge und Flüsse der Wuling-Berge gesehen und mich mehr als satt gegessen. Alles ist neu für mich, und ich stehe vor Herausforderungen, die ich nie kommen sah. Du hast mich aus dieser toten Stadt herausgeholt … und das fühlte sich für mich wie ein zweites Leben an."
       },
       {
+        "voId": "chr_0032_lizhiyan_sim_talk_max_01",
         "title": "Dijiang-Geplauder 4",
         "text": "Ich hatte schon immer Albträume. Doch als ich in meiner ersten Nacht an Bord der Dijiang die Augen schloss, waren die gequälten Schreie und harten Befehle verschwunden. Stattdessen träumte ich von meinem leeren Ich und einer Stimme, die mir sagte, dass ich die Hoffnung für … Ähem. Tut mir leid, dass ich dich mit all dem belaste."
       },
       {
+        "voId": "chr_0032_lizhiyan_sim_talk_max_02",
         "title": "Dijiang-Geplauder 5",
         "text": "Von diesen Decks aus sehen die Auroras über Talos-II genauso aus wie die in der Sperrzone Nord-Wuling. Brillante Szenen, die blutgetränkte Wunden verbergen … Ich werde nicht zulassen, dass irgendein Riss diesem Land noch einmal Schaden zufügt."
       },
       {
+        "voId": "chr_0032_lizhiyan_sim_talk_max_03",
         "title": "Dijiang-Geplauder 6",
         "text": "Die Endfield-Operatoren stammen aus allen Ecken der Welt. Viele sind mächtige Soldaten, aber noch wertvoller sind die einfachen Leute, die sich für das Wohl anderer einsetzen. Wie heißt es gleich so schön – von einer hohen Position aus sieht man weiter als auf Zehenspitzen am Boden … Hier zu sein, stärkt meine Entschlossenheit, Endmin."
       },
       {
+        "voId": "chr_0032_lizhiyan_sim_gift_give_01",
         "title": "Geschenke anbieten",
         "text": "Nur ein paar lokale Sachen. Ich habe mir nicht die Mühe gemacht, sie vorzubereiten. Ich habe … hm, einfach zu viele davon."
       },
       {
+        "voId": "chr_0032_lizhiyan_sim_gift_recv_01",
         "title": "Geschenke annehmen",
         "text": "Danke. Ich werde im Gegenzug etwas vorbereiten. Aber ich bin … nicht sehr gut bei der Auswahl von Geschenken … also halte deine Erwartungen im Zaum."
       },
       {
+        "voId": "chr_0032_lizhiyan_mono_self_line01",
         "title": "Vertrauensgespräch 1",
         "text": "Es läuft gut hier, aber es könnte … schön sein, wenn wir ein paar schlaue kleine Begleiter hätten. Blitzcrash hat mir in der schlimmsten Zeit des Trainings Gesellschaft geleistet. Sie hat sich von einer kleinen Heulerbestie zu einer zuverlässigen Kameradin entwickelt … Unsere gemeinsame Zeit war nicht sehr lang, aber ich vermisse sie trotzdem manchmal … Auch die Pandraschweiflinge von Wuling sind eine Freude … Sind Haustiere auf der Dijiang erlaubt? Ich würde sie nach militärischen Standards ausbilden."
       },
       {
+        "voId": "chr_0032_lizhiyan_mono_self_line02",
         "title": "Vertrauensgespräch 2",
         "text": "Summit und Phrase haben beide ihre Stärken. Summit ist ein hervorragender Kommandant, während Phrase im Kampf begabt ist. Sie ergänzen sich gut. Einer von ihnen könnte irgendwann den Posten des Einheitsleiters übernehmen … Warum rede ich plötzlich darüber? Hm … Als ich Chen so sah, fragte ich mich, ob es auch für mich einen erweiterten Weg gibt … Ist … nur so ein Gedanke."
       },
       {
+        "voId": "chr_0032_lizhiyan_mono_self_line03",
         "title": "Vertrauensgespräch 3",
         "text": "Hm? Endmin, so ein Zufall … Normalerweise verbringe ich meine Freizeit allein. Ruhige Orte lassen mich an Menschen aus meiner Heimatstadt denken, an Übungspuppen in der Tanjian-Halle, an mit Zucker bestreute Reiskuchen … Aber diese Erinnerungen sind zu schön. Sie lassen dich langsam werden, senken deine Wachsamkeit und halten dich in ihnen gefangen. Ich will nicht, dass andere mich so sehen. Und du … Jetzt, wo ich darüber nachdenke, bist du der Grund dafür, dass ich weich geworden bin. Dann können wir diese geheime Pause auch gemeinsam verbringen."
       },
       {
+        "voId": "chr_0032_lizhiyan_mono_self_line04",
         "title": "Vertrauensgespräch 4",
         "text": "Meine Mutter hat meine Haare mit allen möglichen Bändern geflochten. Ich mochte das nie. Ich bin immer völlig verdreckt nach Hause gekommen, und meine Haare waren total durcheinander. Vater hat mir Tianshi-Reihen mit Zweigen beigebracht. Obwohl ich nichts verstand, spielten wir oft bis tief in die Nacht oder zählten im Mondlicht Birnenblüten, bis Mutter uns fand … Seltsam. Ich erinnere mich kaum an meine Kindheit, aber kleine Momente wie diese bleiben so lebendig."
       },
       {
+        "voId": "chr_0032_lizhiyan_mono_self_line05",
         "title": "Vertrauensgespräch 5",
         "text": "Kannst du … meine Haare zusammenbinden? Du weißt, welches Band du verwenden musst. Ich möchte dieses Buch beenden. Am Yinglung-Pass waren Bücher eine der wenigen Möglichkeiten, sich die Zeit zu vertreiben … Wann habe ich wohl das letzte Mal jemanden gebeten, mir die Haare zusammenzubinden …? Hm … Keine Ahnung. Ich dachte daran, es abzuschneiden, aber ich konnte mich einfach nicht dazu durchringen. Hm. Danke. Es ist schön geworden … Hast du mich beobachtet, wie ich meine Haare binde? Hm? Was ist das für ein Ausdruck in deinem Gesicht?"
       },
       {
+        "voId": "chr_0032_lizhiyan_mono_chat_line01",
         "title": "Geplauder 1",
         "text": "Ich kenne nicht wirklich die … Trends, für die sich die Leute begeistern. Ich habe einfach keine Zeit, mich damit zu beschäftigen. Aber … Tianshi Zhuang hat gesagt, ich solle mich mehr auf mich selbst konzentrieren, mir ein Hobby suchen oder so. Und was die Hobbys angeht … zählt Training sicher nicht. Vielleicht könnte ich Onkel Pan bitten, mir eine Fertigkeit beizubringen. Aber ich kann nicht wie Chen sein und den ganzen Tag so positiv sein. Sie ist schon einzigartig. Ein Hobby zu finden, scheint eine neue Herausforderung zu sein."
       },
       {
+        "voId": "chr_0032_lizhiyan_mono_chat_line02",
         "title": "Geplauder 2",
         "text": "Auch wenn ich nicht Teil der Sondereinheit bin, trainiere ich immer noch nach den Yinglung-Standards. So kann ich Notfalleinsätze unterstützen, wenn sie anstehen. Ich stehe immer noch in regelmäßigem Kontakt mit den Yinglungs und vertraue darauf, dass sie die Dinge auch in meiner Abwesenheit erledigen werden."
       },
       {
+        "voId": "chr_0032_lizhiyan_mono_chat_line03",
         "title": "Geplauder 3",
         "text": "Chen wollte mich wieder als Sparringspartner … Früher habe ich die meisten Kämpfe gewonnen, aber sie hat sich schnell verbessert – so schnell, dass sie die anderen Yinglungs damals frustriert hat. Leider war ich sogar noch schneller. Aber … nachdem ich Einheitsleiterin geworden war, verbrachte ich mehr Zeit mit anderen Dingen als mit meinem persönlichen Training. Jetzt bin ich mir also nicht mehr ganz so sicher. Vielleicht brauchen wir einen richtigen Kampf, um zu sehen, wer stärker ist … He. Tatsächlich freue ich mich schon darauf …"
       },
       {
+        "voId": "chr_0032_lizhiyan_mono_chat_line04",
         "title": "Geplauder 4",
         "text": "Tianshi Zhuang hat mir eine Kopie des Wiederaufbauplans der Zone geschickt … Sie weiß, wie viel mir das bedeutet. Aber ich habe immer noch meine Pflichten als Einheitsleiterin, ob in Wuling oder in Endfield … Ich bin schon zufrieden, dass ich den Riss versiegeln und unser Zuhause als Wulinger zurückerobern konnte. Ich bin mir sicher, dass die Tianshi die Straßen mit der AIK-Fabrik wieder so herrichten werden, wie sie einst waren. Wenn ich die Chance habe … werde ich zurückkehren und mich selbst überzeugen."
       },
       {
+        "voId": "chr_0032_lizhiyan_mono_chat_line05",
         "title": "Geplauder 5",
         "text": "Es gibt da ein Problemchen, Endmin. Ein paar alte Herren und Damen haben sich damals in Wuling um mich gekümmert. Als Soldatin, die jeden Moment sterben konnte, hielt ich es für unangebracht, Bindungen einzugehen oder Menschen traurig zu machen, also hielt ich Abstand. Aber jetzt denke ich darüber nach, was ich getan habe, und fühle mich ein wenig schuldig … Wie kann man das wiedergutmachen? Chen fragen! Ich kann mich einfach nicht dazu durchringen, sie zu fragen. Endmin, hast du vielleicht Zeit dafür?"
       },
       {
+        "voId": "chr_0032_lizhiyan_mono_about_line01",
         "title": "Thema: Chen Qianyu",
         "text": "Nachdem sie weg war, habe ich ab und zu an Chen gedacht. Seitdem habe ich noch niemanden getroffen, der so viel geredet und den Worten hat Taten folgen lassen wie sie. Sie ist kein Yinglung-Material, aber … die Leute werden ihr stärker vertrauen. Während einige die Dunkelheit überleben müssen, müssen andere im Licht stehen. Ich bereue keine einzige Entscheidung, die ich in der Vergangenheit getroffen habe. Meine Entscheidungen wären dieselben, auch wenn ich neu anfange."
       },
       {
+        "voId": "chr_0032_lizhiyan_mono_about_line02",
         "title": "Thema: Haarband",
         "text": "Nein, ich habe nie andere Stile ausprobiert … Andere haben versucht, ein paar zu empfehlen. Ich weiß das Angebot zu schätzen, aber ich bevorzuge immer noch die, die ich habe. Du weißt, was es mir bedeutet. Aber … vielleicht ist es an der Zeit, etwas Neues auszuprobieren … Endmin, welche Farbe würde deiner Meinung nach am besten all die Dinge repräsentieren, die wir zusammen erlebt haben?"
       },
       {
+        "voId": "chr_0032_lizhiyan_mono_about_line03",
         "title": "Thema: Verderbnisschatten",
         "text": "Wenn Æther das Leben verzehrt, hinterlässt er ein ohrenbetäubendes Echo der Verzweiflung und des Schreckens … aber wenn die Hoffnung zusammen mit gegenseitiger Güte und selbstloser Aufopferung überleben kann … dann kann uns kein sogenannter „Urheber“ besiegen. Das ist der Sinn unserer Existenz, und das … berührt mich zutiefst."
       },
       {
+        "voId": "chr_0032_lizhiyan_mono_about_line04",
         "title": "Thema: Alleikhreos",
         "text": "Ein wirklich unglaublicher Gegner, der noch mehr Geheimnisse mit sich gebracht hat. Seine Worte werden mich nicht an dir oder Endfield zweifeln lassen, aber es lässt sich nicht leugnen, dass dieses Wesen eine ernste Bedrohung für den Zivilisationsgürtel darstellt. Wenn unsere unbekannten Gegner aus dem Aggeloi-Krieg zurückkehren sollten … versprich mir, dass du mich zu deiner ersten Klinge ihrer Vernichtung machst."
       },
       {
+        "voId": "chr_0032_lizhiyan_mono_about_line05",
         "title": "Thema: Sperrzone Nord-Wuling",
         "text": "Die Zeit hat die Sehnsucht der Wulinger nach ihrer Heimat nicht gemindert. Solche Gefühle bauen sich mit der Zeit auf und bringen sie der Heimat, die sie verlassen mussten, immer näher … Die Sperrzone ist nicht mehr tabu, aber sie hat sich komplett verändert, und viele Dinge können nicht mehr rückgängig gemacht werden. Und dennoch … wir müssen für ein Morgen leben. Ist es nicht das, was du mir beigebracht hast?"
       },
       {
+        "voId": "chr_0032_lizhiyan_mono_about_line06",
         "title": "Thema: Si",
         "text": "Lady Si ist wirklich außergewöhnlich, und das meine ich wörtlich. Vor langer Zeit teilte sie ihre Stärke mit Hongshan und half bei der Gründung der Yinglung-Sondereinheit. Und doch hat sie keine formale Führungsposition bei den Yinglungs inne … und auch keinen Titel an der HAW. Lady Si führt die Yinglungs einfach als „Partnerin“. Viele von uns haben sie auch nach der Entlassung nie persönlich gesehen. Doch sie hat sich sehr für diese Mission eingesetzt …"
       },
       {
+        "voId": "chr_0032_lizhiyan_explore_point_common_01",
         "title": "Ressource/Sammelobjekt entdeckt 1",
         "text": "Unerwartete Vorräte da drüben. Lass sie uns zuerst auf ihre Sicherheit überprüfen."
       },
       {
+        "voId": "chr_0032_lizhiyan_explore_point_valub_01",
         "title": "Ressource/Sammelobjekt entdeckt 2",
         "text": "Strategische Vorräte am Zielort entdeckt. Erwarte Befehle."
       },
       {
+        "voId": "chr_0032_lizhiyan_explore_find_locked_01",
         "title": "Unerforschter Bereich entdeckt",
         "text": "Unbekannte Kampfzone voraus."
       },
       {
+        "voId": "chr_0032_lizhiyan_explore_find_danger_01",
         "title": "Starker Gegner entdeckt",
         "text": "Gegner hoher Bedrohung geortet. Sichtkontakt stabil. Erlaubnis zum Angriff."
       },
       {
+        "voId": "chr_0032_lizhiyan_interact_mine_valub_01",
         "title": "Abbau 1",
         "text": "Fürs Erste ist es unsere oberste Priorität, Erz zu bergen."
       },
       {
+        "voId": "chr_0032_lizhiyan_interact_mine_valub_echo2_01",
         "title": "Abbau 2",
         "text": "Das gehört alles dazu, um unsere Betriebe zu versorgen."
       },
       {
+        "voId": "chr_0032_lizhiyan_interact_treasure_valub_01",
         "title": "Kiste öffnen",
         "text": "Hochwertige Vorräte gesichert."
       },
       {
+        "voId": "chr_0032_lizhiyan_interact_etherium_01",
         "title": "Aurylen erhalten",
         "text": "Aurylen … Erhalte das Wesen. Wir werden es später in einer speziellen Vorrichtung sichern."
       },
       {
+        "voId": "chr_0032_lizhiyan_interact_blight_break_01",
         "title": "Eliminierung der Verderbnis",
         "text": "Verderbnis beseitigt. Der Weg ist frei."
       },
       {
+        "voId": "chr_0032_lizhiyan_interact_rest_01",
         "title": "Ausruhen",
         "text": "Rechtzeitige Pause abgeschlossen. Ziehen wir los."
       },
       {
+        "voId": "chr_0032_lizhiyan_combat_suppuse_using_01",
         "title": "Taktische Nutzung 1",
         "text": "Taktische Mittel im Einsatz!"
       },
       {
+        "voId": "chr_0032_lizhiyan_combat_suppuse_getheal_01",
         "title": "Taktische Nutzung 2",
         "text": "Eine rechtzeitige Behandlung."
       },
       {
+        "voId": "chr_0032_lizhiyan_combat_remind_danger_01",
         "title": "Teammitglied warnen",
         "text": "Achtung! Aufgepasst!"
       },
       {
+        "voId": "chr_0032_lizhiyan_combat_hurt_lowhp_01",
         "title": "Verletzt",
         "text": "Noch nicht … Ich kann immer noch kämpfen."
       },
       {
+        "voId": "chr_0032_lizhiyan_combat_dead_01",
         "title": "0 LP",
         "text": "Ich darf … hier nicht sterben …"
       },
       {
+        "voId": "chr_0032_lizhiyan_combat_remind_praise_01",
         "title": "Teammotivation 1",
         "text": "Herausragend."
       },
       {
+        "voId": "chr_0032_lizhiyan_combat_remind_praise_02",
         "title": "Teammotivation 2",
         "text": "Außergewöhnlich. Nur weiter so."
       },
       {
+        "voId": "chr_0032_lizhiyan_combat_remind_praise_echo2_01",
         "title": "Motivationsreaktion 1",
         "text": "Das ist eine ganz normale Yinglung-Leistung."
       },
       {
+        "voId": "chr_0032_lizhiyan_combat_remind_praise_echo2_02",
         "title": "Motivationsreaktion 2",
         "text": "Die Krise, die uns bevorsteht, verlangt das Beste von uns."
       },
       {
+        "voId": "chr_0032_lizhiyan_combat_intobattle_01",
         "title": "Kampf beginnt 1",
         "text": "Ziel bestätigt. EB sichern."
       },
       {
+        "voId": "chr_0032_lizhiyan_combat_intobattle_echo2_01",
         "title": "Kampf beginnt 2",
         "text": "Position erreicht. Kommunikation aufrechterhalten."
       },
       {
+        "voId": "chr_0032_lizhiyan_combat_outbattle_nor_01",
         "title": "Kampfsieg 1",
         "text": "Das Team ist auf Augenhöhe mit den Yinglungs. Beeindruckend."
       },
       {
+        "voId": "chr_0032_lizhiyan_combat_outbattle_nor_02",
         "title": "Kampfsieg 2",
         "text": "Wir haben weitere Fortschritte gemacht."
       },
       {
+        "voId": "chr_0032_lizhiyan_combat_outbattle_nor_echo2_01",
         "title": "Kampfsieg 3",
         "text": "Lasst uns dafür sorgen, dass diese Spitzenleistung fortbesteht."
       },
       {
+        "voId": "chr_0032_lizhiyan_combat_outbattle_hard_01",
         "title": "Kampfsieg 4",
         "text": "Die Verluste liegen noch innerhalb unserer Schätzungen. Gut gemacht, Team."
       },
       {
+        "voId": "chr_0032_lizhiyan_combat_battle_defeat_01",
         "title": "Niederlage im Kampf",
         "text": "Ein kleiner Rückschlag, das ist alles. Sieg und Niederlage sind immer Teil der Mission."
       },
       {
+        "voId": "chr_0032_lizhiyan_mono_attack_last_01",
         "title": "Abschlussangriff 1",
         "text": "Bruch!"
       },
       {
+        "voId": "chr_0032_lizhiyan_mono_attack_last_02",
         "title": "Abschlussangriff 2",
         "text": "Durchbruch!"
       },
       {
+        "voId": "chr_0032_lizhiyan_mono_skill_nor_01",
         "title": "Kampffertigkeit 1",
         "text": "Durchbrecht die Linie!"
       },
       {
+        "voId": "chr_0032_lizhiyan_mono_skill_nor_02",
         "title": "Kampffertigkeit 2",
         "text": "Gebiet abgeriegelt!"
       },
       {
+        "voId": "chr_0032_lizhiyan_mono_skill_nor_03",
         "title": "Kampffertigkeit 3",
         "text": "Formation entsenden."
       },
       {
+        "voId": "chr_0032_lizhiyan_combat_skill_comb_ready_01",
         "title": "Kombofertigkeit bereit 1",
         "text": "Formation entsendet."
       },
       {
+        "voId": "chr_0032_lizhiyan_combat_skill_comb_ready_02",
         "title": "Kombofertigkeit bereit 2",
         "text": "Ich geb dir Deckung!"
       },
       {
+        "voId": "chr_0032_lizhiyan_mono_skill_comb_release_01",
         "title": "Kombo wirken 1",
         "text": "Zuschlagen und unterdrücken!"
       },
       {
+        "voId": "chr_0032_lizhiyan_mono_skill_comb_release_02",
         "title": "Kombo wirken 2",
         "text": "Das wird dein Ende."
       },
       {
+        "voId": "chr_0032_lizhiyan_mono_attack_extra_01",
         "title": "Wuchtschlag 1",
         "text": "Und noch einer!"
       },
       {
+        "voId": "chr_0032_lizhiyan_mono_attack_extra_02",
         "title": "Wuchtschlag 2",
         "text": "Schwachpunkt erfasst!"
       },
       {
+        "voId": "chr_0032_lizhiyan_mono_skill_ultimate_01",
         "title": "Ultimative Fertigkeit 1",
         "text": "Hier befehlige ich Ebbe und Flut!"
       },
       {
+        "voId": "chr_0032_lizhiyan_mono_skill_ultimate_02",
         "title": "Ultimative Fertigkeit 2",
         "text": "Für eine Erde voller Leben und Licht!"
       },
       {
+        "voId": "chr_0032_lizhiyan_mono_skill_ultimate_03",
         "title": "Ultimative Fertigkeit 3",
         "text": "Dem Chaos wird Einhalt geboten!"
       }

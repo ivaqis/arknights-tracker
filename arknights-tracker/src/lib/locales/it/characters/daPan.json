@@ -120,330 +120,412 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0018_dapan_chrbark_squad_01",
         "title": "Preparazione all'operazione 1",
         "text": "Oh, Endmin! Hai fatto con i preparativi?"
       },
       {
+        "voId": "chr_0018_dapan_chrbark_squad_02",
         "title": "Preparazione all'operazione 2",
         "text": "Non si può sprecare il cibo in questo modo... EHI! Che bello vederti qui!"
       },
       {
+        "voId": "chr_0018_dapan_chrbark_join_01",
         "title": "Aggiunta alla squadra 1",
         "text": "Finalmente un luogo dove posso lasciarmi andare! Ti va di dare un'occhiata alle mie abilità?"
       },
       {
+        "voId": "chr_0018_dapan_chrbark_join_02",
         "title": "Aggiunta alla squadra 2",
         "text": "Se sei tu a dare gli ordini, ti seguirò ciecamente."
       },
       {
+        "voId": "chr_0018_dapan_chrbark_weap_01",
         "title": "Cambio arma",
         "text": "Oooh. Quest'arma è ben bilanciata. Ti sarà costata una fortuna."
       },
       {
+        "voId": "chr_0018_dapan_chrbark_gear_01",
         "title": "Cambio equipaggiamento",
         "text": "Era da un po' che non mi agghindavo per bene. NGH! AAAH! Beh, che ne pensi? Fa la sua figura, eh?"
       },
       {
+        "voId": "chr_0018_dapan_chrup_skill_01",
         "title": "Attivazione matrice delle abilità",
         "text": "Se un piatto non ti viene bene, preparalo più spesso! Non cucino per darmi delle arie. Lo faccio per realizzare un grazioso e allegro banchetto!"
       },
       {
+        "voId": "chr_0018_dapan_chrup_level_01",
         "title": "Visione delle registrazioni di combattimenti",
         "text": "Non si è mai troppo vecchi per imparare. Il segreto è tenere le gambe in forma!"
       },
       {
+        "voId": "chr_0018_dapan_chrup_promt01_01",
         "title": "Promozione operatore 1",
         "text": "Non sono né la scelta migliore, né il guerriero più forte, perciò sono lusingato dalla tua gentilezza. Non ho vino con me, perciò mi scolerò quest'intera teiera in segno di gratitudine!"
       },
       {
+        "voId": "chr_0018_dapan_chrup_promt02_01",
         "title": "Promozione operatore 2",
         "text": "Anche se non ho chissà che talento, porto sempre a termine i miei compiti. Perciò, accetterò la promozione. Fammi un fischio quando hai bisogno di me. Non mi tirerò certo indietro."
       },
       {
+        "voId": "chr_0018_dapan_chrup_promt03_01",
         "title": "Promozione operatore 3",
         "text": "È molto carino da parte tua, ma significa che il mio negozio a Wuling dovrà rimanere chiuso per un po'... Quando hai tempo torneremo lì, ti organizzerò un banchetto... e chiederò ai miei parenti di occuparsi dell'attività."
       },
       {
+        "voId": "chr_0018_dapan_chrup_promt04_01",
         "title": "Promozione operatore 4",
         "text": "Durante la mia ultima visita a Hongshan, la mia maestra ha fatto di tutto per assegnarmi a un progetto dell'Accademia. Ha smesso quando le ho detto che ora lavoro per la Endfield. Sarò schietto, Endmin, per me è un vero ONORE avere un posto ufficiale a bordo della Dijiang. Ehi, perché stai arrossendo?"
       },
       {
+        "voId": "chr_0018_dapan_introduce_01",
         "title": "Operatore a rapporto",
         "text": "Oh, ci incontriamo di nuovo, Endmin. C'è qualche problema di tipo ingegneristico? Dimmi qual è e lo risolverò! Sarei ANCORA più felice se volessi assegnarmi un incarico nella mensa!"
       },
       {
+        "voId": "chr_0018_dapan_mono_switch_01",
         "title": "Attesa 1",
         "text": "Ora dove si va, Endmin?"
       },
       {
+        "voId": "chr_0018_dapan_mono_switch_02",
         "title": "Attesa 2",
         "text": "Hai un lavoro per me? Nessun problema."
       },
       {
+        "voId": "chr_0018_dapan_sim_assign_work_01",
         "title": "Assegnazione a una struttura",
         "text": "Non preoccuparti. Prenditi una pausa. Io sarò operativo non appena sarò riuscito a infilarmi gli abiti da lavoro."
       },
       {
+        "voId": "chr_0018_dapan_sim_hello_lower_01",
         "title": "Saluto 1",
         "text": "Quando avrai tempo, ti cucinerò un bel banchetto!"
       },
       {
+        "voId": "chr_0018_dapan_sim_hello_max_01",
         "title": "Saluto 2",
         "text": "Vuoi mangiare qualcosa che non è disponibile nella mensa della Dijiang? Ci penso io."
       },
       {
+        "voId": "chr_0018_dapan_sim_talk_lv01_01",
         "title": "Chiacchiere sulla Dijiang 1",
         "text": "Hai perso di nuovo peso. Devi prenderti più cura della tua salute. Vuoi che ti cucini qualcosa?"
       },
       {
+        "voId": "chr_0018_dapan_sim_talk_lv02_01",
         "title": "Chiacchiere sulla Dijiang 2",
         "text": "Umpf. La mensa della Dijiang non mi dava soddisfazioni. Prima di contraddirmi, assaggia questo. L'ho cucinato io!"
       },
       {
+        "voId": "chr_0018_dapan_sim_talk_lv02_02",
         "title": "Chiacchiere sulla Dijiang 3",
         "text": "Ho sentito che hai parlato coi giovani con cui ho avuto quella discussione. Non preoccuparti. Non mi importa se sono Tianshi o chef. Non tutti sulla Dijiang hanno tempo di scambiare due parole con un vecchio panda."
       },
       {
+        "voId": "chr_0018_dapan_sim_talk_max_01",
         "title": "Chiacchiere sulla Dijiang 4",
         "text": "Vedo diverse tecnologie dell'Accademia sulla Dijiang, frutti del duro lavoro svolto dagli esperti di tecnologia orbitale dell'ASH... Un branco di vecchietti rumorosi e brontoloni che darebbero inizio a una guerra anche solo per decidere dove piazzare il più piccolo dei moduli diagnostici!"
       },
       {
+        "voId": "chr_0018_dapan_sim_talk_max_02",
         "title": "Chiacchiere sulla Dijiang 5",
         "text": "Le stanze del dormitorio della Endfield non sono abbastanza grandi! Non voglio mancare di rispetto, ma stamattina per stiracchiarmi mi sono fatto male a gomiti e ginocchia. TI PREGO! Fa' qualcosa!"
       },
       {
+        "voId": "chr_0018_dapan_sim_talk_max_03",
         "title": "Chiacchiere sulla Dijiang 6",
         "text": "Se vedi Andre, di' al Grande Gufo che deve condividere le sue ultime idee con un vecchio panda! Digli anche di smetterla di nascondersi da me!"
       },
       {
+        "voId": "chr_0018_dapan_sim_gift_give_01",
         "title": "Offerta regali",
         "text": "Eccoti, Endmin! Prendi qua! Ho una cosa speciale per te, dritta da Hongshan!"
       },
       {
+        "voId": "chr_0018_dapan_sim_gift_recv_01",
         "title": "Accettazione regali",
         "text": "Mi sento davvero onorato!"
       },
       {
+        "voId": "chr_0018_dapan_mono_self_line01",
         "title": "Dialogo fiducia 1",
         "text": "So che hai un sacco di lavoro di ricerca da fare, quindi delega pure qualcosa a me! Sono fiero di essere stato chef, elettricista, carpentiere, autista e piccolo imprenditore. Insomma, posso fare QUALSIASI cosa. Oh, hai una domanda su questa fiala \"Dipendente dell'Avanguardia\"? Eh eh eh, io la uso per il tè."
       },
       {
+        "voId": "chr_0018_dapan_mono_self_line02",
         "title": "Dialogo fiducia 2",
         "text": "Endmin, fai visita alla sede dell'Accademia scientifica di Hongshan. Anche se non ti va di andare in un posto nuovo, i dibattiti tra studenti possono farsi davvero intensi. Forse non te lo ricordi, ma ci sono numerosi progetti pionieristici che citano i tuoi lavori... Aspetta, anche io ho citato una delle tue ricerche."
       },
       {
+        "voId": "chr_0018_dapan_mono_self_line03",
         "title": "Dialogo fiducia 3",
         "text": "Questo mio wok di ferro nero mi ripara da pioggia, fuoco e persino munizioni incise. Se necessario, posso indossarlo sulla schiena per avere un'ottima copertura posteriore! Beh, Endmin, se ci impegniamo al massimo, ne trarremo beneficio nei momenti di maggior bisogno. Mi sembra un buon affare. Direi di approfittarne."
       },
       {
+        "voId": "chr_0018_dapan_mono_self_line04",
         "title": "Dialogo fiducia 4",
         "text": "Io? Pan Yuan, l'amichevole vecchio panda di quartiere? AH! Al tempo, nessuno dell'ASH aveva mai osato mettermi in discussione. Il grande Pan Yuan poneva fine ai disaccordi scientifici in un istante e... Ugh. Beh, a volte basarsi sui puri e semplici fatti potrebbe inavvertitamente distruggere la carriera per cui qualcuno ha lavorato tanto duramente. Ho provato a redimermi, ma la testardaggine è una bella gatta da pelare... Tu prendi questa storia con le pinze, però."
       },
       {
+        "voId": "chr_0018_dapan_mono_self_line05",
         "title": "Dialogo fiducia 5",
         "text": "Una volta che avrai finito di occuparti delle tue questioni qui, sarebbe un onore per me se potessi visitare Hongshan. Non preoccuparti, avrai tutto il tempo di visitare i negozi del posto, mentre io potrò prepararti dei piatti tipici a casa mia! Poi, vieni con me all'Accademia. C'è un progetto che devo ancora finire, e vorrei tanto provare le nuove cose che ho visto insieme a te! Dato che ci sarai anche tu, non mi arrenderò finché non avrò superato quell'ostacolo!"
       },
       {
+        "voId": "chr_0018_dapan_mono_chat_line01",
         "title": "Chiacchierata 1",
         "text": "Non esistono scorciatoie per il buon cibo. Devi continuare a provare e a mangiarti gli errori commessi lungo la strada. È l'unico modo per trovare la perfetta unione di sapori. Non sei d'accordo?"
       },
       {
+        "voId": "chr_0018_dapan_mono_chat_line02",
         "title": "Chiacchierata 2",
         "text": "Tu sì che hai capito tutto! I problemi non si risolvono ignorandoli. Bisogna concentrarsi sulla questione, parlare dei disaccordi e poi amici come prima, no? Non bisogna tenersi tutto dentro. Ugh. Ti racconterò la storia più tardi. Mi ha lasciato con l'amaro in bocca."
       },
       {
+        "voId": "chr_0018_dapan_mono_chat_line03",
         "title": "Chiacchierata 3",
         "text": "Wuling. Non si può menzionare senza parlare anche del meraviglioso paesaggio naturale, o del mio negozio, o delle partite di Mahjong giocate nonostante la Contaminazione acquatica. Lo so, potrei andare avanti all'infinito, ma casa mia mi manca molto! Forse Wuling mi ha abituato a una vita post-pensione fin troppo bella. Ehi, smettila di ridere. A proposito, visto che ne ho parlato... ti va una partita a Mahjong?"
       },
       {
+        "voId": "chr_0018_dapan_mono_chat_line04",
         "title": "Chiacchierata 4",
         "text": "Ho visitato molte città e imparato da altri colleghi chef. Ognuno di loro è più che disposto a rivelare i metodi di cottura impiegati nei propri piatti. Tuttavia, per padroneggiare le arti culinarie... bisogna avere la giusta stoffa."
       },
       {
+        "voId": "chr_0018_dapan_mono_chat_line05",
         "title": "Chiacchierata 5",
         "text": "Credevo che la vita da pensionato sarebbe stata a base di relax, cucina, tè e vivere alla giornata... Ma poi arrivi tu e mi scarichi addosso un'infinità di lavoro. Come dovrei sentirmi, eh? AH AH! Niente affatto male, in realtà!"
       },
       {
+        "voId": "chr_0018_dapan_mono_about_line01",
         "title": "Argomento: gli infetti",
         "text": "Diventare \"infetti\" non è più una condanna a morte. In molti la vedono come una semplice sfortuna e vanno avanti con la loro vita... Ma se visiti villaggi e cittadine fuori dalla Cintura, vedrai che la prospettiva sull'Oripatia è molto diversa."
       },
       {
+        "voId": "chr_0018_dapan_mono_about_line02",
         "title": "Argomento: la spaccatura",
         "text": "Abbiamo studiato la Vasta spaccatura sotto Wuling per anni. Posso usare il mio wok, se vuoi conoscerne le dimensioni esatte. Ma trovare una soluzione permanente... è ancora una bella sfida..."
       },
       {
+        "voId": "chr_0018_dapan_mono_about_line03",
         "title": "Argomento: Zhuang Fangyi",
         "text": "Oh, hai fatto visita alla viceré Zhuang? Non è cambiata affatto. Cerca ancora di passare per una tipa tosta, quando in realtà è un tortino dal cuore morbido. Adesso è infelice, nessuno la vuole intorno e... Ugh. Parliamone un'altra volta."
       },
       {
+        "voId": "chr_0018_dapan_mono_about_line04",
         "title": "Argomento: Accademia scientifica di Hongshan (ASH)",
         "text": "ASSURDO! Chi ha detto che l'ASH ammette solo candidati di origine yanese? Nessuno viene respinto per via delle proprie origini. Accettiamo chiunque possa lavorare bene con le altre due fazioni e abbia la pazienza necessaria per i lavori scientifici."
       },
       {
+        "voId": "chr_0018_dapan_mono_about_line05",
         "title": "Argomento: Lifeng",
         "text": "Lifeng è una bomba a mano. Mi stanco solo a guardarlo, per cui faccio del mio meglio per farlo rilassare. Per fortuna, è disposto a bighellonare con questo vecchio panda. È sveglio e capisce le cose per conto suo, ma non so se sia un bene o un male..."
       },
       {
+        "voId": "chr_0018_dapan_mono_about_line06",
         "title": "Argomento: Valle IV",
         "text": "La fabbrica del SIA migliorerà di molto le vite dei nomadi. Ciò nonostante, ognuno ha le sue idee, e le grandi iniziative andranno sempre incontro a degli intoppi. Dobbiamo solo farcene una ragione. Questo vecchio panda sta solo facendo del suo meglio e non si prenderà il merito per quel che abbiamo ottenuto a Valle IV!"
       },
       {
+        "voId": "chr_0018_dapan_explore_point_common_01",
         "title": "Individuazione risorsa/collezionabile 1",
         "text": "Non è facile da trovare. Riempitevi le tasche più che potete."
       },
       {
+        "voId": "chr_0018_dapan_explore_point_valub_01",
         "title": "Individuazione risorsa/collezionabile 2",
         "text": "Una scoperta molto rara. È ora di delegare il lavoro di raccolta."
       },
       {
+        "voId": "chr_0018_dapan_explore_find_locked_01",
         "title": "Individuazione zona non esplorata",
         "text": "Qui c'è qualcosa che non va. Facciamo attenzione."
       },
       {
+        "voId": "chr_0018_dapan_explore_find_danger_01",
         "title": "Individuazione nemico potente",
         "text": "Occhio. Quello non promette niente di buono."
       },
       {
+        "voId": "chr_0018_dapan_interact_mine_valub_01",
         "title": "Estrazione 1",
         "text": "Dei minerali di qualità!"
       },
       {
+        "voId": "chr_0018_dapan_interact_mine_valub_echo2_01",
         "title": "Estrazione 2",
         "text": "Apprezziamo il tuo impegno!"
       },
       {
+        "voId": "chr_0018_dapan_interact_treasure_valub_01",
         "title": "Apertura di una cassa",
         "text": "Hai trovato la pentola d'oro! Ah ah! Ti sto solo prendendo in giro!"
       },
       {
+        "voId": "chr_0018_dapan_interact_etherium_01",
         "title": "Acquisizione di Aurylene",
         "text": "Terrò io quest'Aurylene per te."
       },
       {
+        "voId": "chr_0018_dapan_interact_blight_break_01",
         "title": "Eliminazione Contaminazione",
         "text": "Contaminazione neutralizzata! Uff... che stanchezza."
       },
       {
+        "voId": "chr_0018_dapan_interact_rest_01",
         "title": "Riposo",
         "text": "Ho avuto la mia dose di cibo e sonno. Proseguiamo."
       },
       {
+        "voId": "chr_0018_dapan_combat_suppuse_using_01",
         "title": "Utilizzo di gadget 1",
         "text": "Niente panico! Ci sono io!"
       },
       {
+        "voId": "chr_0018_dapan_combat_suppuse_getheal_01",
         "title": "Utilizzo di gadget 2",
         "text": "Così va meglio."
       },
       {
+        "voId": "chr_0018_dapan_combat_remind_danger_01",
         "title": "Avviso di pericolo",
         "text": "Occhio! Non farti colpire!"
       },
       {
+        "voId": "chr_0018_dapan_combat_hurt_lowhp_01",
         "title": "Ferita",
         "text": "Argh... Non sto molto bene."
       },
       {
+        "voId": "chr_0018_dapan_combat_dead_01",
         "title": "Esaurimento PS",
         "text": "Mi spiace... devo tirare un attimo il fiato!"
       },
       {
+        "voId": "chr_0018_dapan_combat_remind_praise_01",
         "title": "Incoraggiamento alla squadra 1",
         "text": "Che mossa da professionista!"
       },
       {
+        "voId": "chr_0018_dapan_combat_remind_praise_02",
         "title": "Incoraggiamento alla squadra 2",
         "text": "Siamo una bella squadra!"
       },
       {
+        "voId": "chr_0018_dapan_combat_remind_praise_echo2_01",
         "title": "Risposta all'incoraggiamento 1",
         "text": "Prego!"
       },
       {
+        "voId": "chr_0018_dapan_combat_remind_praise_echo2_02",
         "title": "Risposta all'incoraggiamento 2",
         "text": "Andiamo alla grande, squadra!"
       },
       {
+        "voId": "chr_0018_dapan_combat_intobattle_01",
         "title": "Inizio combattimento 1",
         "text": "Vuoi un pezzo di panda? VIENI A PRENDERLO!"
       },
       {
+        "voId": "chr_0018_dapan_combat_intobattle_echo2_01",
         "title": "Inizio combattimento 2",
         "text": "Dai gli ordini! Io mi occupo del resto!"
       },
       {
+        "voId": "chr_0018_dapan_combat_outbattle_nor_01",
         "title": "Vittoria in combattimento 1",
         "text": "Ecco perché comandi tu!"
       },
       {
+        "voId": "chr_0018_dapan_combat_outbattle_nor_02",
         "title": "Vittoria in combattimento 2",
         "text": "Una gran bella battaglia... Oh, beh, è ora di mangiare."
       },
       {
+        "voId": "chr_0018_dapan_combat_outbattle_nor_echo2_01",
         "title": "Vittoria in combattimento 3",
         "text": "Ben detto! È stato divertente, e abbiamo vinto!"
       },
       {
+        "voId": "chr_0018_dapan_combat_outbattle_hard_01",
         "title": "Vittoria in combattimento 4",
         "text": "C'è mancato poco. Hanno quasi rotto il mio wok di ferro."
       },
       {
+        "voId": "chr_0018_dapan_combat_battle_defeat_01",
         "title": "Sconfitta in combattimento",
         "text": "Niente paura. Farò da mangiare per la squadra e ci vendicheremo di questa sconfitta!"
       },
       {
+        "voId": "chr_0018_dapan_mono_attack_last_01",
         "title": "Colpo finale 1",
         "text": "Arriva!"
       },
       {
+        "voId": "chr_0018_dapan_mono_attack_last_02",
         "title": "Colpo finale 2",
         "text": "PRENDI QUA!"
       },
       {
+        "voId": "chr_0018_dapan_mono_skill_nor_01",
         "title": "Abilità di combattimento 1",
         "text": "GIRA QUEL WOK!"
       },
       {
+        "voId": "chr_0018_dapan_mono_skill_nor_02",
         "title": "Abilità di combattimento 2",
         "text": "MANGIA QUESTO!"
       },
       {
+        "voId": "chr_0018_dapan_mono_skill_nor_03",
         "title": "Abilità di combattimento 3",
         "text": "VOLA VIA!"
       },
       {
+        "voId": "chr_0018_dapan_combat_skill_comb_ready_01",
         "title": "Abilità combo pronta 1",
         "text": "Serve una mano?"
       },
       {
+        "voId": "chr_0018_dapan_combat_skill_comb_ready_02",
         "title": "Abilità combo pronta 2",
         "text": "Guarda un po'!"
       },
       {
+        "voId": "chr_0018_dapan_mono_skill_comb_release_01",
         "title": "Esecuzione combo 1",
         "text": "Guardami!"
       },
       {
+        "voId": "chr_0018_dapan_mono_skill_comb_release_02",
         "title": "Esecuzione combo 2",
         "text": "Mangia la polvere!"
       },
       {
+        "voId": "chr_0018_dapan_mono_attack_extra_01",
         "title": "Mossa letale 1",
         "text": "A mai più rivederci!"
       },
       {
+        "voId": "chr_0018_dapan_mono_attack_extra_02",
         "title": "Mossa letale 2",
         "text": "OFFRE LA CASA!"
       },
       {
+        "voId": "chr_0018_dapan_mono_skill_ultimate_01",
         "title": "Abilità suprema 1",
         "text": "ULTRA WOK!"
       },
       {
+        "voId": "chr_0018_dapan_mono_skill_ultimate_02",
         "title": "Abilità suprema 2",
         "text": "ASSAGGIA IL PANDA SPECIAL!"
       },
       {
+        "voId": "chr_0018_dapan_mono_skill_ultimate_03",
         "title": "Abilità suprema 3",
         "text": "È ora di... SPAZZOLARE IL PIATTO!"
       }

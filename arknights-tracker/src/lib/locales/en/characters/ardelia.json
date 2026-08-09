@@ -123,326 +123,407 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0025_ardelia_chrbark_squad_01",
         "title": "Operation Prep 1",
         "text": "Do what you must, Professor. I'll do everything I can to help."
       },
       {
+        "voId": "chr_0025_ardelia_chrbark_squad_02",
         "title": "Operation Prep 2",
         "text": "Let me see. Where should I be gathering my data this time?"
       },
       {
+        "voId": "chr_0025_ardelia_chrbark_join_01",
         "title": "Adding to Team 1",
         "text": "I've readied the prospecting tools, Professor. We can set off anytime."
       },
       {
+        "voId": "chr_0025_ardelia_chrbark_join_02",
         "title": "Adding to Team 2",
         "text": "I feel much safer when Professor's here with me."
       },
       {
+        "voId": "chr_0025_ardelia_chrbark_weap_01",
         "title": "Switching Weapon",
         "text": "Could you stand a little further, Professor? I, uh... I don't want to hurt you by accident."
       },
       {
+        "voId": "chr_0025_ardelia_chrbark_gear_01",
         "title": "Switching Gear",
         "text": "Field studies can get really dangerous. We must make sure we're properly protected."
       },
       {
+        "voId": "chr_0025_ardelia_chrup_skill_01",
         "title": "Ability Matrix Activation",
         "text": "My diary is like the rings of an ancient tree. It keeps a record of every lesson I learned while growing up."
       },
       {
+        "voId": "chr_0025_ardelia_chrup_level_01",
         "title": "Watching Combat Records",
         "text": "How can the enemy turn the land into such ... such lifeless devastation?"
       },
       {
+        "voId": "chr_0025_ardelia_chrup_promt01_01",
         "title": "Operator Promotion 1",
         "text": "Okay, Ardelia! Focus on that one path! Keep exploring, and keep improving!"
       },
       {
+        "voId": "chr_0025_ardelia_chrup_promt02_01",
         "title": "Operator Promotion 2",
         "text": "I really appreciate your approval, Professor! I'll work even harder and achieve way more at Endfield!"
       },
       {
+        "voId": "chr_0025_ardelia_chrup_promt03_01",
         "title": "Operator Promotion 3",
         "text": "Don't worry about me, Professor. I'm definitely not working too hard. Hmm? What about the dark circles around my eyes? Oh, uh ... the book was just too interesting. I couldn't help myself."
       },
       {
+        "voId": "chr_0025_ardelia_chrup_promt04_01",
         "title": "Operator Promotion 4",
         "text": "This world has so many mysteries to uncover. We should get to know it better just like ... like how we should learn more about ourselves. Don't you agree, Professor?"
       },
       {
+        "voId": "chr_0025_ardelia_introduce_01",
         "title": "Operator Reporting for Duty",
         "text": "Greetings, Endministrator. The name's Ardelia and I'm a geologist from Rhodes Island. My current focus is the correlations between geological disasters and the Ætherside. I've heard about you for quite a while, Endmin, and I have so many questions for you. Oh, there's something else... Can I address you as my Professor?"
       },
       {
+        "voId": "chr_0025_ardelia_mono_switch_01",
         "title": "Standing by 1",
         "text": "Stay sunny for this day as well, Professor."
       },
       {
+        "voId": "chr_0025_ardelia_mono_switch_02",
         "title": "Standing by 2",
         "text": "I heard your footsteps, Professor."
       },
       {
+        "voId": "chr_0025_ardelia_sim_assign_work_01",
         "title": "Assigning to Facility",
         "text": "Leave it to me, Professor. I'm hoping to try out something new as well."
       },
       {
+        "voId": "chr_0025_ardelia_sim_hello_lower_01",
         "title": "Greeting 1",
         "text": "Professor, would you like to share this mille crêpe with me?"
       },
       {
+        "voId": "chr_0025_ardelia_sim_hello_max_01",
         "title": "Greeting 2",
         "text": "Oh, I was just about to go look for you, Professor."
       },
       {
+        "voId": "chr_0025_ardelia_sim_talk_lv01_01",
         "title": "Dijiang Idle Chatter 1",
         "text": "Be careful when walking around Dijiang, Professor... There are all sorts of warning signs aboard the ship and ... and I keep tripping over them. I just couldn't notice them when I'm thinking about things."
       },
       {
+        "voId": "chr_0025_ardelia_sim_talk_lv02_01",
         "title": "Dijiang Idle Chatter 2",
         "text": "I can see plenty of sites that I personally prospected from aboard Dijiang... The wildlands, the prairies, and the north seem so small from this place. The view from orbit easily covers all those lengthy field trips I took... Gotta say, it's kinda exciting being up here — tee-hee!"
       },
       {
+        "voId": "chr_0025_ardelia_sim_talk_lv02_02",
         "title": "Dijiang Idle Chatter 3",
         "text": "Professor, interested in the reading group I'm organizing tomorrow? What are we sharing? Oh, it can be anything you like reading! Speaking of which, Mr. Krad once brought a photo magazine about the volcanoes of Talos-II. I'll bring it to the reading group if you're interested!"
       },
       {
+        "voId": "chr_0025_ardelia_sim_talk_max_01",
         "title": "Dijiang Idle Chatter 4",
         "text": "You must be hungry after all that work, Professor! Try these. They're Higashinese snacks that Miss Akekuri gave me. Uh, I don't need any, actually, because ... I-I had some already. Why is this unopened? Ah, umm... Miss Akekuri gave me a-another box!"
       },
       {
+        "voId": "chr_0025_ardelia_sim_talk_max_02",
         "title": "Dijiang Idle Chatter 5",
         "text": "Haven't you noticed, Professor? You're always out in the front, like you're trying to shield us from whatever danger's ahead. Sometimes, I even had to jog a little just to keep up with you. Maybe ... you don't have to go so fast. We're right here with you — and we want to help too."
       },
       {
+        "voId": "chr_0025_ardelia_sim_talk_max_03",
         "title": "Dijiang Idle Chatter 6",
         "text": "Every trip back to Dijiang is so relaxing. When I'm not sharing stories of my trip with my colleagues, I'll visit the Growth Chambers and see how the little plants are doing. I'll even give them some tender loving care if I have time to spare. It's a little hobby of mine. It feels so fulfilling seeing them grow."
       },
       {
+        "voId": "chr_0025_ardelia_sim_gift_give_01",
         "title": "Offering Gifts",
         "text": "A moment of your time, Endmin? I gathered some souvenirs during prospecting. Decorative feathers from the Hannabit Circuit, jade trinkets from Hongshan, and medals from the Order of Steel Oath... They're all for you. Hope you like them."
       },
       {
+        "voId": "chr_0025_ardelia_sim_gift_recv_01",
         "title": "Accepting Gifts",
         "text": "A gift? For me? Aww, thank you! Let's see what's inside... *Giggle* Professor, you're looking even more anxious than me."
       },
       {
+        "voId": "chr_0025_ardelia_mono_self_line01",
         "title": "Trust Dialog 1",
         "text": "Professor, are you alright? You look really tired. Please don't tell me you stayed up all night again. C'mon, you know that's really bad for you... Uh-uh! No ifs or buts — it's rest time now."
       },
       {
+        "voId": "chr_0025_ardelia_mono_self_line02",
         "title": "Trust Dialog 2",
         "text": "Oh, stop nipping the Professor's clothes, Mr. Dolly...! Ugh. I'm so sorry. They're just so mischievous. Hmm? You can't see them? Oh... Mr. Dolly only show themselves when they want to be seen... Is Mr. Dolly the Sovereign? No. Mr. Dolly isn't a name for any one in particular since they're a flock of Dollies... Awww, come out and tell the Professor yourself! Mr. Dolly, I know you can talk!"
       },
       {
+        "voId": "chr_0025_ardelia_mono_self_line03",
         "title": "Trust Dialog 3",
         "text": "I climbed another mountain today. The geological compass helped me ascertain the orientation and gradient of the rock strata, while the pick helped me gather sedimentary rock samples for optical and texture studies... I'm not tired at all, Professor. I can totally climb more mountains, make more trips, and gather more geological data. Unraveling the mysteries of this planet brings me so much joy... I can't even explain how happy I am!"
       },
       {
+        "voId": "chr_0025_ardelia_mono_self_line04",
         "title": "Trust Dialog 4",
         "text": "Having friends by your side in such a festive moment feels so good! This reminds me of that time when I first arrived at Endfield. People threw a welcoming party for me filled with all the things I like. Oh, the sweets, the flowers, and the joyful, happy music. Miss Yvonne even took my hand and we danced to the latest pop! The spins and moves kinda left me disoriented, but I did my best to remember every smile."
       },
       {
+        "voId": "chr_0025_ardelia_mono_self_line05",
         "title": "Trust Dialog 5",
         "text": "What is the Ætherside? This question keeps coming to mind. If the Universe has such cruelty in store for us, is there anything I can do to help everyone...? You're thinking the same thing, Professor? Hmm, that means ... we're not alone."
       },
       {
+        "voId": "chr_0025_ardelia_mono_chat_line01",
         "title": "Chat 1",
         "text": "Your voice is so soothing, Professor. Oh, I, uh, I meant nothing else by that. It's just ... you know, how when waking from a dream, sounds always reach you before the sights? Prior to my eyes falling upon your face, it is your footsteps and your voice that touched my ears first... Yes. Most living beings made their own voices, be they insects, beasts, trees, or plants. The voices move me. They're why I've decided to protect the world we all love, in my own special way."
       },
       {
+        "voId": "chr_0025_ardelia_mono_chat_line02",
         "title": "Chat 2",
         "text": "Everyone at Endfield is incredibly kind. Miss Yvonne would always share her latest scientific findings and new vinyl records with me. Miss Akekuri would always invite me to the usual place for afternoon tea. And of course there's Mr. Antal — he told me he could modify my staff into a highly portable prospecting tool, *and* embellish it with a suite of wondrous features. If Miss Akekuri hadn't pulled him away after three hours, he probably would've spent the entire day explaining every detail!"
       },
       {
+        "voId": "chr_0025_ardelia_mono_chat_line03",
         "title": "Chat 3",
         "text": "Field geological surveyors enjoy a great deal of freedom, but the lack of funds can be quite frustrating at times. To acquire funding, I would give seminars and lectures at various companies, hoping that my faith and vision could be persuasive enough. Most companies, except for Endfield, weren't interested in early warning systems for geological disasters. But when the Siesta Group heard about my research, they stepped in with unconditional sponsorship. I think I know why they're being so generous... Perhaps this fateful encounter is part of my heritage."
       },
       {
+        "voId": "chr_0025_ardelia_mono_chat_line04",
         "title": "Chat 4",
         "text": "I once traveled with an Aldertone from the Hannabit Circuit. She sang such beautiful hanna songs and told me about the Aldertone who guided her. Everyone in the Circuit dwell upon this land, so they have a deep respect for those who study it — like us. Hehe, I felt really happy when she told me that. But honestly, it was through her hanna that I found my own purpose and motivation. That's right, Professor. This was the trip I made before I found my true calling upon Talos-II."
       },
       {
+        "voId": "chr_0025_ardelia_mono_chat_line05",
         "title": "Chat 5",
         "text": "Another tear in my clothes? Oh, it's okay, really. I can stitch it up again. Field surveys are always a bit rough on clothes anyway... I have to climb up mountain peaks for rare mineral samples, and the jagged rocks are not very gentle. But that feeling, when you're so close to your goal — sometimes it makes you forget just how risky each step can be. Please don't worry, Professor. I'll be more careful next time."
       },
       {
+        "voId": "chr_0025_ardelia_mono_about_line01",
         "title": "Topic: Ætherside",
         "text": "Ætherside is something entirely new we have to face in Talos-II. There are theories describing it as a unique physical phenomenon, while others regard it as a strange spatial and temporal dimension. But I have this feeling that it's ... a forgotten and dusty room filled with old things that nobody cared about anymore. Professor, maybe the Ætherside has something to do with our origins."
       },
       {
+        "voId": "chr_0025_ardelia_mono_about_line02",
         "title": "Topic: Rhodes Island",
         "text": "I came from Rhodes Island, where I received all kinds of training and lessons that helped me build my own identity. I had no blood relations, childhood, nor past to call my own, but Rhodes Island taught us how to live and understand ourselves. Professor, Rhodes Island is my home ... and they all told me that it was yours as well."
       },
       {
+        "voId": "chr_0025_ardelia_mono_about_line03",
         "title": "Topic: Dolly",
         "text": "Mr. Dolly is actually quite lively. I just can't figure out why it won't show itself to other people. It's invisible to you right now, but it loves playing with you. What's Mr. Dolly doing now? Well, it's trying to sit on your... Oh dear! Mr. Dolly! Stop it! Stop messing around with the Professor...! Hoo. Well, that's Mr. Dolly for you. We met on a quite ordinary day, and then it decided to stick around and never left me ever since."
       },
       {
+        "voId": "chr_0025_ardelia_mono_about_line04",
         "title": "Topic: Yvonne",
         "text": "Miss Yvonne is an incredible scientist. When I first arrived in Endfield, she shared tons of important info to get me up to speed about the Ætherside. She even shared her research findings with me, hoping they could help other researchers in our field. And to top it off, we both share a love for music! Though I'm into lighter melodies and she's into faster, heavier beats, she still gave me several albums of La Fantoma pop. She's amazing."
       },
       {
+        "voId": "chr_0025_ardelia_mono_about_line05",
         "title": "Topic: Talos-II",
         "text": "I've once witnessed a giant Originium cluster swallowed up and broken down by the Blight that rose like an ocean tide. Nothing was left but a barren valley. A Tuskbeast survived the disaster and returned to its home, alone and confused... The Ætherside and the Blight are like anathemas of each other, while we teeter precariously along the edge for survival. From Originium I was born, and thus I felt compelled to learn about the Æther. My only wish is to make this world a safer home for everyone."
       },
       {
+        "voId": "chr_0025_ardelia_explore_point_common_01",
         "title": "Resource/Collectible Detected 1",
         "text": "Those resources seem useful. Don't forget to pick them up."
       },
       {
+        "voId": "chr_0025_ardelia_explore_point_valub_01",
         "title": "Resource/Collectible Detected 2",
         "text": "These resources are really important. Let's try to gather more."
       },
       {
+        "voId": "chr_0025_ardelia_explore_find_locked_01",
         "title": "Unexplored Area Detected",
         "text": "Something feels unclear up ahead. Leave the scouting to me!"
       },
       {
+        "voId": "chr_0025_ardelia_explore_find_danger_01",
         "title": "Powerful Enemy Discovered",
         "text": "Something dangerous is up ahead. We better be fully prepared."
       },
       {
+        "voId": "chr_0025_ardelia_interact_mine_valub_01",
         "title": "Mining 1",
         "text": "I'll sort and identify these minerals in a bit."
       },
       {
+        "voId": "chr_0025_ardelia_interact_mine_valub_echo2_01",
         "title": "Mining 2",
         "text": "Let me help as well!"
       },
       {
+        "voId": "chr_0025_ardelia_interact_treasure_valub_01",
         "title": "Opening a Crate",
         "text": "A reward for the difficulties we faced!"
       },
       {
+        "voId": "chr_0025_ardelia_interact_etherium_01",
         "title": "Acquiring Aurylene",
         "text": "Unlike the Blight and rifts, Aurylenes aren't that dangerous."
       },
       {
+        "voId": "chr_0025_ardelia_interact_blight_break_01",
         "title": "Eliminating the Blight",
         "text": "Great. Now it'll no longer hurt anyone."
       },
       {
+        "voId": "chr_0025_ardelia_interact_rest_01",
         "title": "Rest",
         "text": "We've walked so far ... everyone must be tired. Good call on the break."
       },
       {
+        "voId": "chr_0025_ardelia_combat_suppuse_using_01",
         "title": "Tactical Use 1",
         "text": "You've got this, and you've got me!"
       },
       {
+        "voId": "chr_0025_ardelia_combat_suppuse_getheal_01",
         "title": "Tactical Use 2",
         "text": "Phew... I feel so much better."
       },
       {
+        "voId": "chr_0025_ardelia_combat_remind_danger_01",
         "title": "Danger Warning",
         "text": "Be careful!"
       },
       {
+        "voId": "chr_0025_ardelia_combat_hurt_lowhp_01",
         "title": "Injured",
         "text": "I'm good! I can still do this!"
       },
       {
+        "voId": "chr_0025_ardelia_combat_dead_01",
         "title": "0 HP",
         "text": "I can't let ... the Professor down..."
       },
       {
+        "voId": "chr_0025_ardelia_combat_remind_praise_01",
         "title": "Team Encouragement 1",
         "text": "Incredible move!"
       },
       {
+        "voId": "chr_0025_ardelia_combat_remind_praise_02",
         "title": "Team Encouragement 2",
         "text": "Everyone's chipping in!"
       },
       {
+        "voId": "chr_0025_ardelia_combat_remind_praise_echo2_01",
         "title": "Encouragement Response 1",
         "text": "Thanks for the thumbs up!"
       },
       {
+        "voId": "chr_0025_ardelia_combat_remind_praise_echo2_02",
         "title": "Encouragement Response 2",
         "text": "Thank you all!"
       },
       {
+        "voId": "chr_0025_ardelia_combat_intobattle_01",
         "title": "Combat Begins 1",
         "text": "Watch your step, people."
       },
       {
+        "voId": "chr_0025_ardelia_combat_intobattle_echo2_01",
         "title": "Combat Begins 2",
         "text": "We'll see this through!"
       },
       {
+        "voId": "chr_0025_ardelia_combat_outbattle_nor_01",
         "title": "Combat Victory 1",
         "text": "No hardship will stop us."
       },
       {
+        "voId": "chr_0025_ardelia_combat_outbattle_nor_02",
         "title": "Combat Victory 2",
         "text": "We've done it. Hope you're not tired, Mr. Dolly."
       },
       {
+        "voId": "chr_0025_ardelia_combat_outbattle_nor_echo2_01",
         "title": "Combat Victory 3",
         "text": "I knew we could do it."
       },
       {
+        "voId": "chr_0025_ardelia_combat_outbattle_hard_01",
         "title": "Combat Victory 4",
         "text": "We finally pulled it off... And it's because we all stuck together."
       },
       {
+        "voId": "chr_0025_ardelia_combat_battle_defeat_01",
         "title": "Combat Defeat",
         "text": "Losing isn't the end of the world. Learn from the experience and we'll do better next time."
       },
       {
+        "voId": "chr_0025_ardelia_mono_attack_last_01",
         "title": "Final Strike 1",
         "text": "Make way!"
       },
       {
+        "voId": "chr_0025_ardelia_mono_attack_last_02",
         "title": "Final Strike 2",
         "text": "Eruption!"
       },
       {
+        "voId": "chr_0025_ardelia_mono_skill_nor_01",
         "title": "Battle Skill 1",
         "text": "Lamb impact!"
       },
       {
+        "voId": "chr_0025_ardelia_mono_skill_nor_02",
         "title": "Battle Skill 2",
         "text": "Knock it off!"
       },
       {
+        "voId": "chr_0025_ardelia_mono_skill_nor_03",
         "title": "Battle Skill 3",
         "text": "Here we go!"
       },
       {
+        "voId": "chr_0025_ardelia_combat_skill_comb_ready_01",
         "title": "Combo Skill Ready 1",
         "text": "I'll help too!"
       },
       {
+        "voId": "chr_0025_ardelia_combat_skill_comb_ready_02",
         "title": "Combo Skill Ready 2",
         "text": "Let me give it a go!"
       },
       {
+        "voId": "chr_0025_ardelia_mono_skill_comb_release_01",
         "title": "Combo Casting 1",
         "text": "This will hurt!"
       },
       {
+        "voId": "chr_0025_ardelia_mono_skill_comb_release_02",
         "title": "Combo Casting 2",
         "text": "Blossom forth!"
       },
       {
+        "voId": "chr_0025_ardelia_mono_attack_extra_01",
         "title": "Finisher 1",
         "text": "Now's the time!"
       },
       {
+        "voId": "chr_0025_ardelia_mono_attack_extra_02",
         "title": "Finisher 2",
         "text": "Just leave!"
       },
       {
+        "voId": "chr_0025_ardelia_mono_skill_ultimate_01",
         "title": "Ultimate 1",
         "text": "Please help, Mr. Dolly!"
       },
       {
+        "voId": "chr_0025_ardelia_mono_skill_ultimate_02",
         "title": "Ultimate 2",
         "text": "Don't go too far, Mr. Dolly."
       },
       {
+        "voId": "chr_0025_ardelia_mono_skill_ultimate_03",
         "title": "Ultimate 3",
         "text": "Be gentle, Mr. Dolly."
       }

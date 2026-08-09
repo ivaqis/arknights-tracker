@@ -96,222 +96,277 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0003_endminf_chrbark_squad_01",
         "title": "Chuẩn Bị Tác Chiến 1",
         "text": "Tôi nghe thấy tiếng Originium ngân vang."
       },
       {
+        "voId": "chr_0003_endminf_chrbark_squad_02",
         "title": "Chuẩn Bị Tác Chiến 2",
         "text": "Endfield sẽ không ngừng tiến bước."
       },
       {
+        "voId": "chr_0003_endminf_chrbark_join_01",
         "title": "Đang thêm vào đội 1",
         "text": "Đã vào vị trí, Dijiang."
       },
       {
+        "voId": "chr_0003_endminf_chrbark_join_02",
         "title": "Đang thêm vào đội 2",
         "text": "Đến lúc rồi!"
       },
       {
+        "voId": "chr_0003_endminf_chrbark_weap_01",
         "title": "Đang đổi vũ khí",
         "text": "Không tệ chút nào."
       },
       {
+        "voId": "chr_0003_endminf_chrbark_gear_01",
         "title": "Đang đổi trang bị",
         "text": "Một tuyệt phẩm của ngành chế tạo công nghiệp."
       },
       {
+        "voId": "chr_0003_endminf_chrup_skill_01",
         "title": "Kích hoạt Ma Trận Năng Lực",
         "text": "Tôi nhớ rõ cảm giác này..."
       },
       {
+        "voId": "chr_0003_endminf_chrup_level_01",
         "title": "Xem Hồ Sơ Chiến Đấu",
         "text": "Tôi sẽ không bao giờ quên hình ảnh ấy."
       },
       {
+        "voId": "chr_0003_endminf_chrup_promt01_01",
         "title": "Thăng Bậc Cán Viên 1",
         "text": "Thêm một bước nữa..."
       },
       {
+        "voId": "chr_0003_endminf_chrup_promt02_01",
         "title": "Thăng Bậc Cán Viên 2",
         "text": "Tôi sẽ luôn bảo vệ Endfield. Luôn luôn."
       },
       {
+        "voId": "chr_0003_endminf_chrup_promt03_01",
         "title": "Thăng Bậc Cán Viên 3",
         "text": "Quá khứ và hiện tại phải hòa làm một."
       },
       {
+        "voId": "chr_0003_endminf_chrup_promt04_01",
         "title": "Thăng Bậc Cán Viên 4",
         "text": "Tôi đã nghe thấy giọng cô ấy, như tiếng thì thầm vọng lại trong giấc mơ. Bao lần ta mơ về một đại dương vô tận, nơi gợi nỗi buồn, khơi lại ký ức... và cũng là nơi tôi luyện ý chí."
       },
       {
+        "voId": "chr_0003_endminf_mono_switch_01",
         "title": "Chờ Lệnh 1",
         "text": "Vẫn còn chờ gì sao?"
       },
       {
+        "voId": "chr_0003_endminf_mono_switch_02",
         "title": "Chờ Lệnh 2",
         "text": "Originium sẽ mở đường cho chúng ta."
       },
       {
+        "voId": "chr_0003_endminf_sim_gift_recv_01",
         "title": "Nhận quà",
         "text": "Cảm ơn rất nhiều!"
       },
       {
+        "voId": "chr_0003_endminf_explore_point_common_01",
         "title": "Phát hiện Tài Nguyên/Có Thể Thu Thập 1",
         "text": "Nhìn kìa, đằng đó..."
       },
       {
+        "voId": "chr_0003_endminf_explore_point_valub_01",
         "title": "Phát hiện Tài Nguyên/Có Thể Thu Thập 2",
         "text": "Có gì đó rất quan trọng ở phía kia!"
       },
       {
+        "voId": "chr_0003_endminf_explore_find_locked_01",
         "title": "Phát Hiện Khu Vực Chưa Khám Phá",
         "text": "Khu vực quanh đây cần được khảo sát kỹ hơn."
       },
       {
+        "voId": "chr_0003_endminf_explore_find_danger_01",
         "title": "Phát hiện Kẻ Địch Mạnh",
         "text": "Kẻ địch nguy hiểm cao. Tiếp cận cẩn trọng."
       },
       {
+        "voId": "chr_0003_endminf_interact_mine_valub_01",
         "title": "Khai thác 1",
         "text": "Khoáng vật này có thể sẽ hữu ích."
       },
       {
+        "voId": "chr_0003_endminf_interact_mine_valub_echo2_01",
         "title": "Khai thác 2",
         "text": "Để ta giúp một tay."
       },
       {
+        "voId": "chr_0003_endminf_interact_treasure_valub_01",
         "title": "Mở Thùng",
         "text": "Chuyến đi này đáng giá đấy."
       },
       {
+        "voId": "chr_0003_endminf_interact_etherium_01",
         "title": "Nhận Aurylene",
         "text": "Cảm giác quen thuộc."
       },
       {
+        "voId": "chr_0003_endminf_interact_blight_break_01",
         "title": "Xua Tan Nhiễm Khuẩn",
         "text": "Đã loại bỏ Nhiễm Khuẩn."
       },
       {
+        "voId": "chr_0003_endminf_interact_rest_01",
         "title": "Nghỉ ngơi",
         "text": "Mọi người đã được nghỉ ngơi."
       },
       {
+        "voId": "chr_0003_endminf_combat_suppuse_using_01",
         "title": "Sử Dụng Vật Phẩm Chiến Thuật 1",
         "text": "Cảm thấy ổn hơn chưa?"
       },
       {
+        "voId": "chr_0003_endminf_combat_suppuse_getheal_01",
         "title": "Sử Dụng Vật Phẩm Chiến Thuật 2",
         "text": "Giờ thì khỏe hơn rồi."
       },
       {
+        "voId": "chr_0003_endminf_combat_remind_danger_01",
         "title": "Cảnh Báo Nguy Hiểm",
         "text": "Đang đến! Cẩn thận!"
       },
       {
+        "voId": "chr_0003_endminf_combat_hurt_lowhp_01",
         "title": "Bị Thương",
         "text": "Tôi vẫn còn chiến đấu được..."
       },
       {
+        "voId": "chr_0003_endminf_combat_dead_01",
         "title": "0 HP",
         "text": "Tôi xin lỗi... Phần còn lại nhờ cả vào cậu..."
       },
       {
+        "voId": "chr_0003_endminf_combat_remind_praise_01",
         "title": "Cổ Vũ Đội 1",
         "text": "Ra đòn mượt thật đấy."
       },
       {
+        "voId": "chr_0003_endminf_combat_remind_praise_02",
         "title": "Cổ Vũ Đội 2",
         "text": "Chúng ta phối hợp rất ăn ý."
       },
       {
+        "voId": "chr_0003_endminf_combat_remind_praise_echo2_01",
         "title": "Đáp Lại Lời Cổ Vũ 1",
         "text": "Quá khen rồi."
       },
       {
+        "voId": "chr_0003_endminf_combat_remind_praise_echo2_02",
         "title": "Đáp Lại Lời Cổ Vũ 2",
         "text": "Sự phối hợp của cả đội ngày càng hoàn hảo."
       },
       {
+        "voId": "chr_0003_endminf_combat_intobattle_01",
         "title": "Bắt Đầu Chiến Đấu 1",
         "text": "Đã đến lúc chiến đấu."
       },
       {
+        "voId": "chr_0003_endminf_combat_intobattle_echo2_01",
         "title": "Bắt Đầu Chiến Đấu 2",
         "text": "Có tôi ở bên."
       },
       {
+        "voId": "chr_0003_endminf_combat_outbattle_nor_01",
         "title": "Thắng Trận 1",
         "text": "Thêm một bước nữa, các nhân viên Endfield."
       },
       {
+        "voId": "chr_0003_endminf_combat_outbattle_nor_02",
         "title": "Thắng Trận 2",
         "text": "Làm tốt lắm, mọi người."
       },
       {
+        "voId": "chr_0003_endminf_combat_outbattle_nor_echo2_01",
         "title": "Thắng Trận 3",
         "text": "Chúng ta xử lý ổn đấy chứ!"
       },
       {
+        "voId": "chr_0003_endminf_combat_outbattle_hard_01",
         "title": "Thắng Trận 4",
         "text": "Mọi người đều ổn chứ?"
       },
       {
+        "voId": "chr_0003_endminf_combat_battle_defeat_01",
         "title": "Bại Trận",
         "text": "Không cần lo lắng. Chúng ta sẽ tập hợp lại và giải quyết tất cả."
       },
       {
+        "voId": "chr_0003_endminf_mono_attack_last_01",
         "title": "Đòn Dứt Điểm 1",
         "text": "Hãy cầm lấy!"
       },
       {
+        "voId": "chr_0003_endminf_mono_attack_last_02",
         "title": "Đòn Dứt Điểm 2",
         "text": "Xem này!"
       },
       {
+        "voId": "chr_0003_endminf_mono_skill_nor_01",
         "title": "KN Chiến Đấu 1",
         "text": "Giao chiến!"
       },
       {
+        "voId": "chr_0003_endminf_mono_skill_nor_02",
         "title": "KN Chiến Đấu 2",
         "text": "Nghiền nát!"
       },
       {
+        "voId": "chr_0003_endminf_mono_skill_nor_03",
         "title": "KN Chiến Đấu 3",
         "text": "Xử chúng đi!"
       },
       {
+        "voId": "chr_0003_endminf_combat_skill_comb_ready_01",
         "title": "Chuẩn Bị KN Liên Hoàn 1",
         "text": "Sẵn sàng tấn công."
       },
       {
+        "voId": "chr_0003_endminf_combat_skill_comb_ready_02",
         "title": "Chuẩn Bị KN Liên Hoàn 2",
         "text": "Tín nhiệm tôi nào."
       },
       {
+        "voId": "chr_0003_endminf_mono_skill_comb_release_01",
         "title": "Thi Triển Liên Hoàn 1",
         "text": "Kết Tinh!"
       },
       {
+        "voId": "chr_0003_endminf_mono_skill_comb_release_02",
         "title": "Thi Triển Liên Hoàn 2",
         "text": "Đối mặt với kết cục đi!"
       },
       {
+        "voId": "chr_0003_endminf_mono_attack_extra_01",
         "title": "Kết Liễu 1",
         "text": "Chấm dứt ở đây!"
       },
       {
+        "voId": "chr_0003_endminf_mono_attack_extra_02",
         "title": "Kết Liễu 2",
         "text": "Tóm được rồi!"
       },
       {
+        "voId": "chr_0003_endminf_mono_skill_ultimate_01",
         "title": "Tuyệt Kỹ 1",
         "text": "Hết cơ hội rồi."
       },
       {
+        "voId": "chr_0003_endminf_mono_skill_ultimate_02",
         "title": "Tuyệt Kỹ 2",
         "text": "Cái kết đón chờ."
       },
       {
+        "voId": "chr_0003_endminf_mono_skill_ultimate_03",
         "title": "Tuyệt Kỹ 3",
         "text": "Hạ màn thôi."
       }

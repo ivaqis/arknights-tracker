@@ -125,326 +125,407 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0007_ikut_chrbark_squad_01",
         "title": "Persiapan Operasi 1",
         "text": "Kau sudah siap? Alam liar penuh dengan bahaya."
       },
       {
+        "voId": "chr_0007_ikut_chrbark_squad_02",
         "title": "Persiapan Operasi 2",
         "text": "Angin tak pernah berhenti. Begitu pula aku."
       },
       {
+        "voId": "chr_0007_ikut_chrbark_join_01",
         "title": "Menambahkan ke Tim 1",
         "text": "Akhirnya ada angin segar. Hampir saja aku lupa bau tanah."
       },
       {
+        "voId": "chr_0007_ikut_chrbark_join_02",
         "title": "Menambahkan ke Tim 2",
         "text": "Lakukan saja secepat yang kau bisa. Jangan khawatir. Aku tak akan tertinggal."
       },
       {
+        "voId": "chr_0007_ikut_chrbark_weap_01",
         "title": "Berganti Senjata",
         "text": "Bisa kurasakan senjata ini bernapas, seakan ini memang jodohku."
       },
       {
+        "voId": "chr_0007_ikut_chrbark_gear_01",
         "title": "Berganti Gear",
         "text": "Keterampilan pengerjaannya luar biasa .... Presisinya menakjubkan, bahkan di antara semua karya Aldertone yang pernah kukenal."
       },
       {
+        "voId": "chr_0007_ikut_chrup_skill_01",
         "title": "Aktivasi Matriks Kemampuan",
         "text": "Ajaran Aldertone-ku berbeda, tapi tujuan yang ingin kaucapai tetap sama. Aku merasa tercerahkan."
       },
       {
+        "voId": "chr_0007_ikut_chrup_level_01",
         "title": "Menonton Rekaman Pertarungan",
         "text": "Kita bisa belajar banyak dari kehidupan di alam liar .... Dan pelajaran itu mengasah keahlian bertarung kita."
       },
       {
+        "voId": "chr_0007_ikut_chrup_promt01_01",
         "title": "Promosi Operator 1",
         "text": "Promosi ...? Berarti kau mengakui kemampuanku? Kalau begitu, aku ... aku senang sekali mendapatkan pengakuan darimu."
       },
       {
+        "voId": "chr_0007_ikut_chrup_promt02_01",
         "title": "Promosi Operator 2",
         "text": "Pangkat selalu disertai kewajiban. Semua ini berfungsi sebagai pengingat untuk membantu lebih banyak orang."
       },
       {
+        "voId": "chr_0007_ikut_chrup_promt03_01",
         "title": "Promosi Operator 3",
         "text": "Alam tak mengajari kita cara bertahan hidup. Alam hanya meninggalkan jejak untuk kita. Aku pernah berusaha sebaik mungkin untuk beradaptasi .... Sekarang ... aku mulai paham caranya."
       },
       {
+        "voId": "chr_0007_ikut_chrup_promt04_01",
         "title": "Promosi Operator 4",
         "text": "Aku belajar banyak dari perjalananku bersamamu. Aku mulai paham kenapa syair-syair hanna menuntunku ke sisimu. Akan kumanfaatkan pengetahuan ini dengan baik."
       },
       {
+        "voId": "chr_0007_ikut_introduce_01",
         "title": "Operator Siap Bertugas",
         "text": "Aku Ekut. Nama sandiku Arclight. Aku tak mahir menyusun kata, tapi kudoakan yang terbaik untukmu, dan semoga kau mengalir seperti sungai deras, Endfielder."
       },
       {
+        "voId": "chr_0007_ikut_mono_switch_01",
         "title": "Siaga 1",
         "text": "Jalan di depan sana sudah terlihat."
       },
       {
+        "voId": "chr_0007_ikut_mono_switch_02",
         "title": "Siaga 2",
         "text": "Aku siap memberikan performa optimal."
       },
       {
+        "voId": "chr_0007_ikut_sim_assign_work_01",
         "title": "Menugaskan ke Fasilitas",
         "text": "Siap, laksanakan. Songseeker tak pernah berhenti kerja."
       },
       {
+        "voId": "chr_0007_ikut_sim_hello_lower_01",
         "title": "Menyapa 1",
         "text": "Hari ini angin bertiup dari arah mana, Endmin?"
       },
       {
+        "voId": "chr_0007_ikut_sim_hello_max_01",
         "title": "Menyapa 2",
         "text": "Baru saja pulang dari perjalanan ke permukaan, Endmin? Badanmu bau alam liar."
       },
       {
+        "voId": "chr_0007_ikut_sim_talk_lv01_01",
         "title": "Obrolan Santai di Dijiang 1",
         "text": "Memperbaiki kuda besi sama halnya dengan merawat cystybeast. Kita harus dengarkan baik-baik sebelum memulai perawatan."
       },
       {
+        "voId": "chr_0007_ikut_sim_talk_lv02_01",
         "title": "Obrolan Santai di Dijiang 2",
         "text": "Bintang-bintang di sini berbeda dari yang bisa kita lihat di alam liar .... Tapi, kedua posisi ini sama-sama menakjubkan."
       },
       {
+        "voId": "chr_0007_ikut_sim_talk_lv02_02",
         "title": "Obrolan Santai di Dijiang 3",
         "text": "Aku sedang mempelajari awan ini. Bagian tepinya tajam, berarti ini pertanda badai. Waspadalah kalau misimu berikutnya ternyata membuatmu harus turun ke sana."
       },
       {
+        "voId": "chr_0007_ikut_sim_talk_max_01",
         "title": "Obrolan Santai di Dijiang 4",
         "text": "Rambutmu indah sekali, seperti kulit hewan yang basah oleh embun pagi. Kau belum pernah lihat? Yah, pokoknya cantik."
       },
       {
+        "voId": "chr_0007_ikut_sim_talk_max_02",
         "title": "Obrolan Santai di Dijiang 5",
         "text": "Pernah lihat Migrasi Padang Rumput? Seperti pasukan hewan buas dan gerobak kuda yang mengejar hujan dan awan. Itulah yang ingin kulindungi."
       },
       {
+        "voId": "chr_0007_ikut_sim_talk_max_03",
         "title": "Obrolan Santai di Dijiang 6",
         "text": "Kau sering terlena saat menatap dunia ini. Kurasa aku paham perasaanmu. Hati kita selalu merindukan tempat yang kita sayangi, seberapa pun jauh letaknya."
       },
       {
+        "voId": "chr_0007_ikut_sim_gift_give_01",
         "title": "Menawarkan Hadiah",
         "text": "Kubawakan sesuatu untukmu. Hadiah dari alam liar. Semoga kau suka."
       },
       {
+        "voId": "chr_0007_ikut_sim_gift_recv_01",
         "title": "Menerima Hadiah",
         "text": "Untukku? Hadiah memang penting di alam liar .... Akan kujaga ini baik-baik."
       },
       {
+        "voId": "chr_0007_ikut_mono_self_line01",
         "title": "Dialog Kepercayaan 1",
         "text": "Sebaiknya kau belajar dasar-dasar bertahan hidup di alam liar, Endmin. Sebagai langkah awal, kau bisa belajar membuat perangkap kuping panjang. Aku bisa mengajarimu."
       },
       {
+        "voId": "chr_0007_ikut_mono_self_line02",
         "title": "Dialog Kepercayaan 2",
         "text": "Hidup di alam liar memang sulit, tapi juga sangat indah. Bagaikan langit cerah setelah musim hujan panjang, bagaikan fowlbeast yang menetas di bawah sinar bulan."
       },
       {
+        "voId": "chr_0007_ikut_mono_self_line03",
         "title": "Dialog Kepercayaan 3",
         "text": "Tak ada yang misterius dari dua perangkat lama yang kerjanya malah jadi lebih baik saat disatukan. Pasang saja kekang pada dua burdenbeast yang tak saling kenal, suruh mereka menarik gerobak bersama, dan beri mereka waktu. Pada akhirnya mereka akan bisa bekerja sama dengan baik."
       },
       {
+        "voId": "chr_0007_ikut_mono_self_line04",
         "title": "Dialog Kepercayaan 4",
         "text": "Aku mulai berkelana mencari jawaban. Keseimbangan alam liar terusik, dan aku harus berbuat sesuatu. Kudengarkan suara riak air danau dan bisikan hutan. Dan sekarang, aku ingin mendengar suaramu."
       },
       {
+        "voId": "chr_0007_ikut_mono_self_line05",
         "title": "Dialog Kepercayaan 5",
         "text": "Akan kurangkai kisah-kisah ini menjadi hanna tentang perjalanan kita. Bakalan butuh waktu karena banyak sekali yang layak dijadikan lagu. Setelah hanna ini selesai, kaulah yang akan jadi orang pertama yang mendengarnya."
       },
       {
+        "voId": "chr_0007_ikut_mono_chat_line01",
         "title": "Obrolan 1",
         "text": "Orang-orang yang ingin bertahan hidup akan berusaha agar suaranya didengar. Dan Songseeker yang berkelana akan selalu mendengar. Memang itulah tujuan Hannabit Circuit."
       },
       {
+        "voId": "chr_0007_ikut_mono_chat_line02",
         "title": "Obrolan 2",
         "text": "Mudah saja bergaul dengan suku-suku alam liar. Kami fokus pada hal-hal yang penting: cuaca, makanan, dan bahaya. Itu saja sudah cukup menyita waktu kami."
       },
       {
+        "voId": "chr_0007_ikut_mono_chat_line03",
         "title": "Obrolan 3",
         "text": "Setiap Songseeker dari Hannabit Circuit hafal hanna di luar kepala. Tak sulit, kok. Syairnya menceritakan setiap aspek hidup kami. Sama halnya, kami pun terajut dalam syairnya."
       },
       {
+        "voId": "chr_0007_ikut_mono_chat_line04",
         "title": "Obrolan 4",
         "text": "Aldertone-ku bercerita tentang Terra dan kota-kota yang pindah demi menghindari Petaka. Sepertinya kami mewarisi sistem hidup dari para leluhur kami ini, tapi dalam bentuk yang berbeda."
       },
       {
+        "voId": "chr_0007_ikut_mono_chat_line05",
         "title": "Obrolan 5",
         "text": "Kita bisa membarter barang bekas di bazar tertentu di alam liar, tapi kita harus sabar agar bisa menemukan barang bagus. Aku berhasil memodifikasi perangkat lawas dari Kjersch untuk komunikatorku. Mereka mahir membuat berbagai benda yang bisa berfungsi andal di lingkungan ekstrem."
       },
       {
+        "voId": "chr_0007_ikut_mono_about_line01",
         "title": "Topik: Kota-kota",
         "text": "Talos-II lebih luas daripada yang kuduga. Dulu, kukira setiap kota sama saja, semata susunan baja, jalan, dan lampu. Tapi, saat berkunjung ke sana, aku jadi sadar bahwa setiap kota ternyata punya geliat dan aura sendiri-sendiri. Kekhasan ini lebih mencolok dibandingkan padang yang warna rumputnya beda-beda."
       },
       {
+        "voId": "chr_0007_ikut_mono_about_line02",
         "title": "Topik: Endministrator",
         "text": "Aku sudah banyak bepergian ke berbagai tempat, dan suku-suku paling terpencil sekalipun juga melantunkan kisah-kisah tentangmu. Kisahnya memang sangat berbeda-beda, tapi ada satu hal yang selalu sama—namamu selalu identik dengan harapan."
       },
       {
+        "voId": "chr_0007_ikut_mono_about_line03",
         "title": "Topik: Lagu-Lagu Hanna",
         "text": "Seorang nomad yang sekarat melantunkan hanna pertama kami, dan isinya cuma tiga baris. Dari syair itu, lahirlah nama Hannabit Circuit. Lalu, sejak Aldertone pertama, hanna itu menuntun para Songseeker dalam pengembaraan mereka, hingga akhirnya mereka sendiri pun jadi bagian dari lagu itu."
       },
       {
+        "voId": "chr_0007_ikut_mono_about_line04",
         "title": "Topik: Aldertone",
         "text": "Para Aldertone jarang bicara langsung. Kata Orisha, hanna itu berisi semua pengetahuan yang kami butuhkan. Dia mengajariku lewat tindakan. Kami harus saling tolong-menolong agar bisa bertahan hidup di dunia ini."
       },
       {
+        "voId": "chr_0007_ikut_mono_about_line05",
         "title": "Topik: Sukunya",
         "text": "Aku tumbuh di sebuah suku kecil yang warganya tak lebih dari seratus orang. Hanya itulah yang kuketahui sebelum aku mulai berkelana. Sukuku mengajariku cara memerah susu cystybeast, mengendarai kuda besiku, dan bertahan hidup di alam liar. Sesungguhnya, aku tak pernah meninggalkannya. Aku selalu membawanya ke mana pun."
       },
       {
+        "voId": "chr_0007_ikut_explore_point_common_01",
         "title": "Sumber Daya/Barang Koleksi Terdeteksi 1",
         "text": "Kalau bisa membantu bertahan hidup, bawa saja."
       },
       {
+        "voId": "chr_0007_ikut_explore_point_valub_01",
         "title": "Sumber Daya/Barang Koleksi Terdeteksi 2",
         "text": "Aldertone-ku pasti bakalan tertarik."
       },
       {
+        "voId": "chr_0007_ikut_explore_find_locked_01",
         "title": "Area yang Belum Dijelajahi Terdeteksi",
         "text": "Lanjutkan. Kita harus memeriksanya lebih lanjut."
       },
       {
+        "voId": "chr_0007_ikut_explore_find_danger_01",
         "title": "Musuh Kuat Ditemukan",
         "text": "Aku mencium bahaya. Yang ini sepertinya tak mudah dikalahkan."
       },
       {
+        "voId": "chr_0007_ikut_interact_mine_valub_01",
         "title": "Penambangan 1",
         "text": "Bukti kelimpahan negeri ini."
       },
       {
+        "voId": "chr_0007_ikut_interact_mine_valub_echo2_01",
         "title": "Penambangan 2",
         "text": "Biar aku saja. Kerja fisik memang bidangku, kok."
       },
       {
+        "voId": "chr_0007_ikut_interact_treasure_valub_01",
         "title": "Membuka Kerat",
         "text": "Ini benda langka di alam liar. Bakalan berguna untuk kita."
       },
       {
+        "voId": "chr_0007_ikut_interact_etherium_01",
         "title": "Mendapatkan Aurylene",
         "text": "Biasanya ini kita masukkan ke botol untuk dijadikan penerangan."
       },
       {
+        "voId": "chr_0007_ikut_interact_blight_break_01",
         "title": "Menyingkirkan Hawar",
         "text": "Biar Alam saja yang menanganinya."
       },
       {
+        "voId": "chr_0007_ikut_interact_rest_01",
         "title": "Istirahat",
         "text": "Aku jadi ingat api unggun di alam liar. Keduanya membawa kehangatan yang sama."
       },
       {
+        "voId": "chr_0007_ikut_combat_suppuse_using_01",
         "title": "Penggunaan Taktis 1",
         "text": "Atur napas."
       },
       {
+        "voId": "chr_0007_ikut_combat_suppuse_getheal_01",
         "title": "Penggunaan Taktis 2",
         "text": "Kekuatanku mulai pulih."
       },
       {
+        "voId": "chr_0007_ikut_combat_remind_danger_01",
         "title": "Peringatan Bahaya",
         "text": "Jangan berhenti. Maju terus."
       },
       {
+        "voId": "chr_0007_ikut_combat_hurt_lowhp_01",
         "title": "Cedera",
         "text": "Masih bertarung, tapi agak lebih lambat."
       },
       {
+        "voId": "chr_0007_ikut_combat_dead_01",
         "title": "0 HP",
         "text": "Maaf .... Andai saja aku masih bisa membantumu ...."
       },
       {
+        "voId": "chr_0007_ikut_combat_remind_praise_01",
         "title": "Penyemangat Tim 1",
         "text": "Responsmu benar-benar secepat kilat!"
       },
       {
+        "voId": "chr_0007_ikut_combat_remind_praise_02",
         "title": "Penyemangat Tim 2",
         "text": "Bagaikan angin dan guntur, kitalah badai yang berhasil menghajar mereka."
       },
       {
+        "voId": "chr_0007_ikut_combat_remind_praise_echo2_01",
         "title": "Respons Penyemangat 1",
         "text": "Ini memang sudah tugasku."
       },
       {
+        "voId": "chr_0007_ikut_combat_remind_praise_echo2_02",
         "title": "Respons Penyemangat 2",
         "text": "Ini memang sudah kewajibanku sebagai anggota tim."
       },
       {
+        "voId": "chr_0007_ikut_combat_intobattle_01",
         "title": "Mulai Pertarungan 1",
         "text": "Aku siap beraksi."
       },
       {
+        "voId": "chr_0007_ikut_combat_intobattle_echo2_01",
         "title": "Mulai Pertarungan 2",
         "text": "Sebelah sana kuserahkan kepadamu, ya."
       },
       {
+        "voId": "chr_0007_ikut_combat_outbattle_nor_01",
         "title": "Menang Pertarungan 1",
         "text": "Biarlah mereka kembali menuju keheningan."
       },
       {
+        "voId": "chr_0007_ikut_combat_outbattle_nor_02",
         "title": "Menang Pertarungan 2",
         "text": "Semoga tanah ini merengkuh kalian semua."
       },
       {
+        "voId": "chr_0007_ikut_combat_outbattle_nor_echo2_01",
         "title": "Menang Pertarungan 3",
         "text": "Memang demikianlah kehendak Alam."
       },
       {
+        "voId": "chr_0007_ikut_combat_outbattle_hard_01",
         "title": "Menang Pertarungan 4",
         "text": "Semua makhluk alam liar harus menghadapi kesulitan demi bertahan hidup."
       },
       {
+        "voId": "chr_0007_ikut_combat_battle_defeat_01",
         "title": "Kalah Bertarung",
         "text": "Kawanan tuskbeast paling berpengalaman sekalipun mungkin saja gagal menangkap mangsa. Setidaknya ada pelajaran yang bisa kita ambil dari perburuan ini."
       },
       {
+        "voId": "chr_0007_ikut_mono_attack_last_01",
         "title": "Final Strike 1",
         "text": "Hancurlah!"
       },
       {
+        "voId": "chr_0007_ikut_mono_attack_last_02",
         "title": "Final Strike 2",
         "text": "Pecahkan!"
       },
       {
+        "voId": "chr_0007_ikut_mono_skill_nor_01",
         "title": "Skill Tarung 1",
         "text": "Amukan topan!"
       },
       {
+        "voId": "chr_0007_ikut_mono_skill_nor_02",
         "title": "Skill Tarung 2",
         "text": "Gemuruh guruh!"
       },
       {
+        "voId": "chr_0007_ikut_mono_skill_nor_03",
         "title": "Skill Tarung 3",
         "text": "Sambaran kilat!"
       },
       {
+        "voId": "chr_0007_ikut_combat_skill_comb_ready_01",
         "title": "Skill Kombo Siap 1",
         "text": "Anginnya sudah pas!"
       },
       {
+        "voId": "chr_0007_ikut_combat_skill_comb_ready_02",
         "title": "Skill Kombo Siap 2",
         "text": "Sisanya biar kusapu bersih."
       },
       {
+        "voId": "chr_0007_ikut_mono_skill_comb_release_01",
         "title": "Penggunaan Kombo 1",
         "text": "Memang begitulah semestinya."
       },
       {
+        "voId": "chr_0007_ikut_mono_skill_comb_release_02",
         "title": "Penggunaan Kombo 2",
         "text": "Ada peluang!"
       },
       {
+        "voId": "chr_0007_ikut_mono_attack_extra_01",
         "title": "Penuntas 1",
         "text": "Tamat sudah."
       },
       {
+        "voId": "chr_0007_ikut_mono_attack_extra_02",
         "title": "Penuntas 2",
         "text": "Ini peluangku."
       },
       {
+        "voId": "chr_0007_ikut_mono_skill_ultimate_01",
         "title": "Ultimate 1",
         "text": "Kau tak akan bisa lolos."
       },
       {
+        "voId": "chr_0007_ikut_mono_skill_ultimate_02",
         "title": "Ultimate 2",
         "text": "Muncul dari badai."
       },
       {
+        "voId": "chr_0007_ikut_mono_skill_ultimate_03",
         "title": "Ultimate 3",
         "text": "Menyambar seperti kilat."
       }

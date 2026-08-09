@@ -129,322 +129,402 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0024_deepfin_chrbark_squad_01",
         "title": "Persiapan Operasi 1",
         "text": "Hah? Sudah giliranku?"
       },
       {
+        "voId": "chr_0024_deepfin_chrbark_squad_02",
         "title": "Persiapan Operasi 2",
         "text": "Karena ada kau di sini, sepertinya hari ini kita bakal dapat sesuatu."
       },
       {
+        "voId": "chr_0024_deepfin_chrbark_join_01",
         "title": "Menambahkan ke Tim 1",
         "text": "Ah .... Kemarin pergelangan kakiku keseleo .... Pinggulku sakit, leherku juga ...."
       },
       {
+        "voId": "chr_0024_deepfin_chrbark_join_02",
         "title": "Menambahkan ke Tim 2",
         "text": "Kau sudah punya banyak anggota yang mahir bertarung. Yakin nih masih butuh aku?"
       },
       {
+        "voId": "chr_0024_deepfin_chrbark_weap_01",
         "title": "Berganti Senjata",
         "text": "Hmm. Kelihatannya lebih kuat daripada tongkat bambu. Setidaknya yang ini tak akan remuk."
       },
       {
+        "voId": "chr_0024_deepfin_chrbark_gear_01",
         "title": "Berganti Gear",
         "text": "Dengan ini, aku tak akan cedera."
       },
       {
+        "voId": "chr_0024_deepfin_chrup_skill_01",
         "title": "Aktivasi Matriks Kemampuan",
         "text": "Sungguh, aku mampu bertahan dalam latihan khusus seminggu penuh. Tak bisa kupercaya aku berhasil berusaha sekeras itu."
       },
       {
+        "voId": "chr_0024_deepfin_chrup_level_01",
         "title": "Menonton Rekaman Pertarungan",
         "text": "Ini jauh lebih keren daripada yang ada di TV di rumah kita. Lagi pula, tontonannya selalu baru!"
       },
       {
+        "voId": "chr_0024_deepfin_chrup_promt01_01",
         "title": "Promosi Operator 1",
         "text": "Sebentar—perayaan ini untukku? Oh wow ... aku sampai tak tahu harus bilang apa. Em, mungkin ... terima kasih?"
       },
       {
+        "voId": "chr_0024_deepfin_chrup_promt02_01",
         "title": "Promosi Operator 2",
         "text": "Tak perlu terus-terusan menyemangatiku seperti ini, Endmin. Memang aneh, tapi kalau dipuji, aku justru bakalan jadi lembek seperti bunga yang kebanyakan disiram."
       },
       {
+        "voId": "chr_0024_deepfin_chrup_promt03_01",
         "title": "Promosi Operator 3",
         "text": "Mengemban semua tanggung jawab ini sendirian pasti melelahkan untukmu, Endmin. Ahh. Sepertinya aku tak punya pilihan selain membantumu untuk sementara ini."
       },
       {
+        "voId": "chr_0024_deepfin_chrup_promt04_01",
         "title": "Promosi Operator 4",
         "text": "Kenapa kau kelihatan lebih gembira daripada aku? Yang dipromosikan kan *aku*? Baiklah kalau begitu. Ayo kita rayakan di churrascaria. Aku cuma mau makan BBQ paling enak, dan kau yang harus traktir."
       },
       {
+        "voId": "chr_0024_deepfin_introduce_01",
         "title": "Operator Siap Bertugas",
         "text": "Permisi, apa di sini tempat pendaftaran kerjanya? Senang bertemu denganmu. Namaku Alesh. Aku suka membaca, dan aku bisa mancing sambil merem. Senang bisa bergabung dengan kalian."
       },
       {
+        "voId": "chr_0024_deepfin_mono_switch_01",
         "title": "Siaga 1",
         "text": "Indahnya hari ini. Cocok untuk tidur siang."
       },
       {
+        "voId": "chr_0024_deepfin_mono_switch_02",
         "title": "Siaga 2",
         "text": "Kantong kempes, beginilah hidupku ...."
       },
       {
+        "voId": "chr_0024_deepfin_sim_assign_work_01",
         "title": "Menugaskan ke Fasilitas",
         "text": "Ahh .... Begitu kau bilang “kerja”, semua energiku langsung menguap. Aku lebih pilih tidur siang daripada kerja, Endmin."
       },
       {
+        "voId": "chr_0024_deepfin_sim_hello_lower_01",
         "title": "Menyapa 1",
         "text": "Yo! Sering sekali aku bertemu denganmu. Bagaimana pekerjaanmu hari ini?"
       },
       {
+        "voId": "chr_0024_deepfin_sim_hello_max_01",
         "title": "Menyapa 2",
         "text": "Bos, memangnya kau tak lelah, nih? Aku bisa mengajarimu cara curi-curi tidur siang, lho."
       },
       {
+        "voId": "chr_0024_deepfin_sim_talk_lv01_01",
         "title": "Obrolan Santai di Dijiang 1",
         "text": "Semua jadwal sudah terpenuhi? Bagus. Saatnya nonton tayangan ulang acara mancing."
       },
       {
+        "voId": "chr_0024_deepfin_sim_talk_lv02_01",
         "title": "Obrolan Santai di Dijiang 2",
         "text": "Tempat itu. Yah. Yang selalu terselimuti salju. Di utara, ‘kan? Kalau tak bergabung ke Endfield, aku tak akan bisa melihatnya. Saat pertama naik Dijiang, pemandangan dari Anjungan Komando nyaris membuatku tak bisa bernapas. Sekarang karena sudah terbiasa, memandangi Talos-II dari atas ini terasa menakjubkan."
       },
       {
+        "voId": "chr_0024_deepfin_sim_talk_lv02_02",
         "title": "Obrolan Santai di Dijiang 3",
         "text": "Skill tempurku? Kuayunkan saja pedangku dan berharap ada musuh jahat yang kena, Bos. Tapi, kau juga bisa mempelajari skill spesialku setelah melawan Tuskbeast raksasa, sulur pemangsa manusia, Aggelos logam, dan orang-orang yang punya utang besar kepadamu."
       },
       {
+        "voId": "chr_0024_deepfin_sim_talk_max_01",
         "title": "Obrolan Santai di Dijiang 4",
         "text": "Begini, orang-orang seumuranku gampang sekali bosan. Mancing adalah satu-satunya cara bagiku untuk bebas dari kenyataan suram ini. Apa? Aku masih muda? Enak saja, aku lebih tua, tahu .... Sebentar, Endmin. Umurmu berapa, sih?"
       },
       {
+        "voId": "chr_0024_deepfin_sim_talk_max_02",
         "title": "Obrolan Santai di Dijiang 5",
         "text": "Berkali-kali kubaca buku tentang orang-orang biasa ini. Biasanya, hal-hal seperti bertahan hidup dan perjuangan manusia tak menarik buatku .... Tapi, menurutku si penulisnya seperti ... pernah menjalani langsung kehidupan seperti itu. Ai, ada apa? Kenapa tiba-tiba jadi serius begitu? Santai sajalah, Bos. Aku cuma mau bilang bahwa aku kagum kepada si penulis, itu saja."
       },
       {
+        "voId": "chr_0024_deepfin_sim_talk_max_03",
         "title": "Obrolan Santai di Dijiang 6",
         "text": "Satu-satunya keunggulanku mungkin adalah karena aku sulit dihabisi. Beberapa kali aku cedera parah, tapi ada terlalu banyak orang yang pasti akan kurindukan kalau aku mati—teman-temanku, pemilik kontrakanku yang lama ... dan juga kalian. Pikiran itu saja sudah cukup untuk mendorongku bangkit dan kembali bertarung."
       },
       {
+        "voId": "chr_0024_deepfin_sim_gift_give_01",
         "title": "Menawarkan Hadiah",
         "text": "Nih, Bos. Aku punya barang bagus untukmu. Kalau beli lagi, nanti tokonya akan berikan diskon lima puluh persen. Tawaran menarik, ‘kan?"
       },
       {
+        "voId": "chr_0024_deepfin_sim_gift_recv_01",
         "title": "Menerima Hadiah",
         "text": "Untukku? Ya ampun .... Biasanya aku dapat surat cinta dari bocah-bocah berandalan yang memintaku bayar utang, atau dari orang-orang yang ingin menghabisiku. Tak pernah kusangka aku bakal dapat hadiah sungguhan."
       },
       {
+        "voId": "chr_0024_deepfin_mono_self_line01",
         "title": "Dialog Kepercayaan 1",
         "text": "Lagi sedih? Ya ampun, anak muda mestinya penuh harapan. Aku tahu situasi memang parah, tapi mulai sekarang bakalan makin parah lagi. Nah, ‘kan? Kau sudah langsung merasa baikan, ‘kan?"
       },
       {
+        "voId": "chr_0024_deepfin_mono_self_line02",
         "title": "Dialog Kepercayaan 2",
         "text": "Kenapa aku bergabung ke Endfield? Pemilik kontrakanku orang UWST. Itulah sebabnya. Dia selalu saja marah-marah, tahu. Toko ikanku sedang agak sepi dan aku berutang uang sewa beberapa bulan. Jadi, dia langsung mencarikan pekerjaan untukku tanpa menanyaiku lebih dulu. Entahlah apa yang ditulisnya dalam resume-ku, tapi yang jelas kau menerimanya .... Jadi, yah, di sinilah aku sekarang."
       },
       {
+        "voId": "chr_0024_deepfin_mono_self_line03",
         "title": "Dialog Kepercayaan 3",
         "text": "Yang di tanganmu itu apa? “Gangster Kedua yang Memimpin La Estrada” ...? Wajah di foto ini mirip aku? Yah, entahlah. Ayolah, kita harus fokus pada masa kini. Tak ada gunanya mengorek-ngorek masa lalu. Sayang sekali kalau hubungan kita sampai terganggu oleh cerita dari masa lalu, ‘kan? Eem, kenapa kauminta nomor telepon Biro Sekuriti kepada Perlica?"
       },
       {
+        "voId": "chr_0024_deepfin_mono_self_line04",
         "title": "Dialog Kepercayaan 4",
         "text": "Dulu, aku biasa beraksi bersama Estrada Ursaña. Sebagian besar orang menyebutnya La Estrada. Kota itu besar, tapi banyak orang kecil sepertiku di dalamnya. Aku tumbuh di sudut kumuh kota itu, bertemu orang-orang senasib, dan akhirnya malah jadi pemimpin kelompok kami. Lalu, yah ... semua jadi berantakan. Duh .... Andai saja aku tahu hidupku bakal jadi begini, mestinya dua puluh tahun yang lalu aku kerja di pengalengan ikan saja. Sekarang, di sinilah aku, berjualan ikan demi bertahan hidup."
       },
       {
+        "voId": "chr_0024_deepfin_mono_self_line05",
         "title": "Dialog Kepercayaan 5",
         "text": "Kenapa lihat-lihat? Penasaran dengan bekas luka ini? Hah, orang yang punya banyak pengalaman tak akan bercerita begitu saja. Masa lalu biarlah jadi masa lalu. Relakan saja dan lanjutkan hidup .... Ai! Endmin! Jangan pergi, dong! Oke, oke, akan kuceritakan—bukan hal yang wah, kok. Dulu, aku punya dua sahabat. Yang satu malah menyerangku sementara aku melindungi yang lainnya. Saat itulah, aku kehilangan satu mataku dan secuil hidupku. Nah, begitulah. Sederhana dan tak menarik, ‘kan?"
       },
       {
+        "voId": "chr_0024_deepfin_mono_chat_line01",
         "title": "Obrolan 1",
         "text": "Hidup tak seperti mancing. Saat mancing, kita bisa selalu menarik lagi kail yang sudah dilemparkan. Tapi, dalam kehidupan nyata, tak ada jalan keluar yang gampang saat terjebak situasi sulit. *INILAH* kenapa kita harus menikmati kebahagiaan hidup. Ini petuah bijak dari seorang pria tua, Endmin."
       },
       {
+        "voId": "chr_0024_deepfin_mono_chat_line02",
         "title": "Obrolan 2",
         "text": "Toko ikan kecilku sedang agak sepi. Aku bahkan tak bisa bayar sewa tanpa gaji dari Endfield. Jujur saja, aku memang tak berharap bisa dapat untung banyak dari berjualan ikan. Karena itulah, kubiarkan saja para pembeliku menawar sesuka mereka—kalau perlu, mereka bahkan boleh berutang dulu. Kalaupun hasil pancinganku lumayan banyak, kelebihan ikannya kubagi-bagikan begitu saja. Tahu sendiri, lah, tak semua orang menjalani hidup yang mudah. Suatu kali, ada maling menyatroni tokoku. Cecunguk itu tak menemukan barang berharga apa pun di sana, lalu malah meninggalkan pesan untukku. “Tempat paling payah yang pernah kusambangi”. Ya ampun ...."
       },
       {
+        "voId": "chr_0024_deepfin_mono_chat_line03",
         "title": "Obrolan 3",
         "text": "Ini filosofi hidupku: Maklumi saja masalah-masalah kecil, hindari masalah-masalah besar. Bertindaklah *hanya* jika kau benar-benar tak bisa menghindar. Lalu, hajar mereka habis-habisan dan pastikan mereka tak berulah lagi."
       },
       {
+        "voId": "chr_0024_deepfin_mono_chat_line04",
         "title": "Obrolan 4",
         "text": "Apa kondisi mataku ini membuatku terganggu? Yah ... kadang memang iya. Misalnya, tadi kau berdiri di titik butaku saat kau menyapaku. Haha. Tak apa. Aku sudah terbiasa, kok. Penglihatan sempurna bukan hal yang menakjubkan. Mungkin malah lebih baik ada hal-hal yang tak usah dilihat dan dibiarkan saja ... jadi misteri."
       },
       {
+        "voId": "chr_0024_deepfin_mono_chat_line05",
         "title": "Obrolan 5",
         "text": "Ramalan tarot kemarin bilang aku bakalan sangat beruntung hari ini. Nah, coba tebak? Persis setelah keluar dari tempat itu, aku malah terperosok ke selokan bau. Aku langsung berpikir, “Ya ampun ...! Ramalan tarotnya sama sekali tak akurat.” Tapi, lalu kulihat suatu benda berkilauan di lumpur—cincin berlian. Jadi, yah, mungkin ternyata aku memang beruntung. Tapi, aku kasihan kepada pemilik yang kehilangan cincin itu. Jadi, kumanfaatkan keberuntungan superku untuk mencari si pemilik dan mengembalikan cincin itu. Intinya begini, Bos—kalau kita manfaatkan keberuntungan kita untuk berbuat baik, mungkin saja akan ada keberuntungan lain untuk kita. Setuju, tidak?"
       },
       {
+        "voId": "chr_0024_deepfin_mono_about_line01",
         "title": "Topik: Geng",
         "text": "Tahu tidak, dulu aku tinggal di perbatasan yang kacau. Di sana, anak-anak tumbuh besar dengan keluarga yang berantakan atau malah tanpa keluarga. Entahlah mana yang lebih parah. Aku? Aku tak punya keluarga, pendidikan, dan tempat tinggal. Begitulah, aku hidup di jalanan. Menghabiskan waktuku dengan berkelahi melawan anak-anak lain, sekadar demi bertahan hidup. Kami setengah mati benci satu sama lain, tapi kami terpaksa ambil pilihan-pilihan aneh karena semua ancaman itu. Entah bagaimana, akhirnya kami bersatu dan menjadi keluarga. Lucunya, kami bahkan menyusun aturan kami sendiri di tempat yang tak kenal hukum itu."
       },
       {
+        "voId": "chr_0024_deepfin_mono_about_line02",
         "title": "Topik: Tuan Tanah",
         "text": "Si pemilik kontrakan menyuratiku lagi. Dia tak menagih uang sewa, hanya ingin tahu kabarku. Dia bahkan menyebutku pemalas tak berguna yang tak bisa jaga diri. Duh, masa iya sih semasa mudanya dia orang hebat? .... Eiiitts. Kenapa dia peduli amat tentangku? Apa dia ingin aku jadi anaknya? Ya ampun, dengan bayar uang sewa saja berarti aku kan sudah menanggung dana pensiunnya—perjanjian sewanya tak menyebut kewajiban mendorong kursi rodanya. Dia selalu saja mengeluhkan dengkulnya .... Mungkin sebaiknya kuberi dia alat pijat otomatis. Serius, nih, pak tua ini mestinya jaga diri, bukannya malah mengusikku. Lagi pula, kalau memang khawatir, dia kan bisa mampir saja daripada membuatku merasa bersalah begini."
       },
       {
+        "voId": "chr_0024_deepfin_mono_about_line03",
         "title": "Topik: Kota Talos",
         "text": "Kota Talos punya makna istimewa bagi Talos-II. Setelah Perang Hina, kelompok Tiga Besar menandatangani Kesepakatan Sentrapolis dan bersama membangun Kota Talos. Itulah kota netral pertama bagi masyarakat Terra. Begitulah yang tertulis dalam buku-buku sejarah. Kota yang megah, tapi belum juga selesai walaupun pembangunannya sudah berjalan seabad lamanya. Mungkin bisa kugambarkan lebih jelas: “Seorang pria tua beruban yang mengangkat tombaknya ke arah matahari di balik perbukitan.” Terdengar lebih beradab, ‘kan? Yah—waktu yang kuhabiskan untuk baca novel-novel bangsa Ursus tidak sia-sia."
       },
       {
+        "voId": "chr_0024_deepfin_mono_about_line04",
         "title": "Topik: Sirip Aneh (Ikan)",
         "text": "Jadi, kau penasaran tentang ikan aneh yang kutangkap itu? Wah, ceritanya panjang. Semasa kecilku, aku sering berkelahi, bukan membaca. Semasa remaja, aku bahkan tak bisa bilang “Originium Arts” dengan benar. Saat baru saja kehilangan mataku dan merasa kalut dan bingung, aku merasakan ada sesuatu berenang-renang di titik butaku. Menjengkelkan sekali kalau aku sedang mancing, jadi kulemparkan saja kailku jauh-jauh, dan—“DUAAR!” Kau pasti tahu apa yang terjadi setelahnya. Pak tua itu bilang aku punya bakat Arts. Entahlah, mungkin itu kutukan."
       },
       {
+        "voId": "chr_0024_deepfin_explore_point_common_01",
         "title": "Sumber Daya/Barang Koleksi Terdeteksi 1",
         "text": "Mungkin sebaiknya kita periksa. Siapa tahu bakalan berguna."
       },
       {
+        "voId": "chr_0024_deepfin_explore_point_valub_01",
         "title": "Sumber Daya/Barang Koleksi Terdeteksi 2",
         "text": "Sepertinya berharga. Kita bakalan kaya, nih."
       },
       {
+        "voId": "chr_0024_deepfin_explore_find_locked_01",
         "title": "Area yang Belum Dijelajahi Terdeteksi",
         "text": "Hati-hati. Ada yang aneh di sekitar sini."
       },
       {
+        "voId": "chr_0024_deepfin_explore_find_danger_01",
         "title": "Musuh Kuat Ditemukan",
         "text": "Awas! Musuh ini bisa membuatmu babak belur."
       },
       {
+        "voId": "chr_0024_deepfin_interact_mine_valub_01",
         "title": "Penambangan 1",
         "text": "Ini bisa kita jual, tidak?"
       },
       {
+        "voId": "chr_0024_deepfin_interact_mine_valub_echo2_01",
         "title": "Penambangan 2",
         "text": "Barang berkilau. Coba kita cari lagi."
       },
       {
+        "voId": "chr_0024_deepfin_interact_treasure_valub_01",
         "title": "Membuka Kerat",
         "text": "Untung. Ternyata ramalan tarotnya benar."
       },
       {
+        "voId": "chr_0024_deepfin_interact_etherium_01",
         "title": "Mendapatkan Aurylene",
         "text": "Kelihatannya seperti ... benda sihir. Boleh kulihat lagi?"
       },
       {
+        "voId": "chr_0024_deepfin_interact_blight_break_01",
         "title": "Menyingkirkan Hawar",
         "text": "Nah. Sudah aman dan bersih."
       },
       {
+        "voId": "chr_0024_deepfin_interact_rest_01",
         "title": "Istirahat",
         "text": "Tidur siangku lelap. Sekarang, saatnya beraksi serius."
       },
       {
+        "voId": "chr_0024_deepfin_combat_suppuse_using_01",
         "title": "Penggunaan Taktis 1",
         "text": "Obatmu, nih! Tangkap."
       },
       {
+        "voId": "chr_0024_deepfin_combat_suppuse_getheal_01",
         "title": "Penggunaan Taktis 2",
         "text": "Fyuh. Kukira riwayatku bakalan tamat."
       },
       {
+        "voId": "chr_0024_deepfin_combat_remind_danger_01",
         "title": "Peringatan Bahaya",
         "text": "Hoi! Minggir!"
       },
       {
+        "voId": "chr_0024_deepfin_combat_hurt_lowhp_01",
         "title": "Cedera",
         "text": "Segitu saja tak cukup untuk menumbangkanku."
       },
       {
+        "voId": "chr_0024_deepfin_combat_dead_01",
         "title": "0 HP",
         "text": "Aku akan berusaha ... dengan segala cara ...."
       },
       {
+        "voId": "chr_0024_deepfin_combat_remind_praise_01",
         "title": "Penyemangat Tim 1",
         "text": "Hari ini kau penuh semangat, ya?"
       },
       {
+        "voId": "chr_0024_deepfin_combat_remind_praise_02",
         "title": "Penyemangat Tim 2",
         "text": "Kalau punya teman hebat, semua jadi gampang."
       },
       {
+        "voId": "chr_0024_deepfin_combat_remind_praise_echo2_01",
         "title": "Respons Penyemangat 1",
         "text": "Ini memang sudah tugasku."
       },
       {
+        "voId": "chr_0024_deepfin_combat_remind_praise_echo2_02",
         "title": "Respons Penyemangat 2",
         "text": "Semua ini berkat upaya tim."
       },
       {
+        "voId": "chr_0024_deepfin_combat_intobattle_01",
         "title": "Mulai Pertarungan 1",
         "text": "Saatnya waspada."
       },
       {
+        "voId": "chr_0024_deepfin_combat_intobattle_echo2_01",
         "title": "Mulai Pertarungan 2",
         "text": "Lakukan saja sesukamu. Akan kulindungi kau."
       },
       {
+        "voId": "chr_0024_deepfin_combat_outbattle_nor_01",
         "title": "Menang Pertarungan 1",
         "text": "Situasi memang sempat memanas, tapi kita berhasil mengatasinya."
       },
       {
+        "voId": "chr_0024_deepfin_combat_outbattle_nor_02",
         "title": "Menang Pertarungan 2",
         "text": "Aku sama sekali tak lelah."
       },
       {
+        "voId": "chr_0024_deepfin_combat_outbattle_nor_echo2_01",
         "title": "Menang Pertarungan 3",
         "text": "Lumayan. Semua orang ikut berkontribusi."
       },
       {
+        "voId": "chr_0024_deepfin_combat_outbattle_hard_01",
         "title": "Menang Pertarungan 4",
         "text": "Nyaris saja! Tetap saja, harus diakui—namanya menang ya tetap menang."
       },
       {
+        "voId": "chr_0024_deepfin_combat_battle_defeat_01",
         "title": "Kalah Bertarung",
         "text": "Jangan terlalu menyesali kekalahan. Lain kali, lebih hati-hati saja. Kita pasti bisa, oke?"
       },
       {
+        "voId": "chr_0024_deepfin_mono_attack_last_01",
         "title": "Final Strike 1",
         "text": "Rasakan, nih!"
       },
       {
+        "voId": "chr_0024_deepfin_mono_attack_last_02",
         "title": "Final Strike 2",
         "text": "Tetap merunduk!"
       },
       {
+        "voId": "chr_0024_deepfin_mono_skill_nor_01",
         "title": "Skill Tarung 1",
         "text": "Maju, SINI!"
       },
       {
+        "voId": "chr_0024_deepfin_mono_skill_nor_02",
         "title": "Skill Tarung 2",
         "text": "Meredalah!"
       },
       {
+        "voId": "chr_0024_deepfin_mono_skill_nor_03",
         "title": "Skill Tarung 3",
         "text": "Saatnya BERSANTAI!"
       },
       {
+        "voId": "chr_0024_deepfin_combat_skill_comb_ready_01",
         "title": "Skill Kombo Siap 1",
         "text": "Saatnya membalas, nih?"
       },
       {
+        "voId": "chr_0024_deepfin_combat_skill_comb_ready_02",
         "title": "Skill Kombo Siap 2",
         "text": "Siap menghajar begundal-begundal itu."
       },
       {
+        "voId": "chr_0024_deepfin_mono_skill_comb_release_01",
         "title": "Penggunaan Kombo 1",
         "text": "Coba SAJA!"
       },
       {
+        "voId": "chr_0024_deepfin_mono_skill_comb_release_02",
         "title": "Penggunaan Kombo 2",
         "text": "Minggir!"
       },
       {
+        "voId": "chr_0024_deepfin_mono_attack_extra_01",
         "title": "Penuntas 1",
         "text": "Jangan ganggu IKANKU!"
       },
       {
+        "voId": "chr_0024_deepfin_mono_attack_extra_02",
         "title": "Penuntas 2",
         "text": "Umpannya baru saja kulempar!"
       },
       {
+        "voId": "chr_0024_deepfin_mono_skill_ultimate_01",
         "title": "Ultimate 1",
         "text": "Kena!"
       },
       {
+        "voId": "chr_0024_deepfin_mono_skill_ultimate_02",
         "title": "Ultimate 2",
         "text": "Nikmatilah rasanya jadi umpan!"
       },
       {
+        "voId": "chr_0024_deepfin_mono_skill_ultimate_03",
         "title": "Ultimate 3",
         "text": "Nikmati camilanmu!"
       }

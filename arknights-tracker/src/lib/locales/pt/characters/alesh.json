@@ -129,322 +129,402 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0024_deepfin_chrbark_squad_01",
         "title": "Prep Operação 1",
         "text": "Hein? Já é a minha vez?"
       },
       {
+        "voId": "chr_0024_deepfin_chrbark_squad_02",
         "title": "Prep Operação 2",
         "text": "Já que você está por aqui, com certeza vamos pegar alguma coisa hoje."
       },
       {
+        "voId": "chr_0024_deepfin_chrbark_join_01",
         "title": "Adicionando à equipe 1",
         "text": "Ah... Torci meu tornozelo ontem... Meus quadris doem, e meu pescoço também..."
       },
       {
+        "voId": "chr_0024_deepfin_chrbark_join_02",
         "title": "Adicionando à equipe 2",
         "text": "Você já tem vários pesos pesados. Tem certeza de que precisa de mim para o trabalho?"
       },
       {
+        "voId": "chr_0024_deepfin_chrbark_weap_01",
         "title": "Trocando de arma",
         "text": "Humm. Parece mais resistente que um pedaço de bambu. Pelo menos este não vai se quebrar em pedaços."
       },
       {
+        "voId": "chr_0024_deepfin_chrbark_gear_01",
         "title": "Trocando de equipamento",
         "text": "Agora isso vai me ajudar a ficar longe dos hematomas."
       },
       {
+        "voId": "chr_0024_deepfin_chrup_skill_01",
         "title": "Ativação da Matriz de Capacidade",
         "text": "Na verdade, sobrevivi a uma semana inteira de treinamento especial. Não acredito que consegui me esforçar tanto."
       },
       {
+        "voId": "chr_0024_deepfin_chrup_level_01",
         "title": "Assistindo a Registros de Combate",
         "text": "Isso é melhor do que tudo o que passava na TV em casa. Além disso, tem sempre coisa nova!"
       },
       {
+        "voId": "chr_0024_deepfin_chrup_promt01_01",
         "title": "Promoção do Operador 1",
         "text": "Espere aí... Esta cerimônia é para mim? Nossa... o que eu digo? O-obrigado?"
       },
       {
+        "voId": "chr_0024_deepfin_chrup_promt02_01",
         "title": "Promoção do Operador 2",
         "text": "Não precisa continuar me incentivando assim, Endmin. É estranho, mas elogios me fazem murchar como uma flor regada demais."
       },
       {
+        "voId": "chr_0024_deepfin_chrup_promt03_01",
         "title": "Promoção do Operador 3",
         "text": "Deve ser cansativo assumir toda essa responsabilidade, Endmin. Ahh. Acho que não tenho escolha a não ser ajudar você por enquanto."
       },
       {
+        "voId": "chr_0024_deepfin_chrup_promt04_01",
         "title": "Promoção do Operador 4",
         "text": "Por que você está parecendo mais feliz do que eu? Achei que essa fosse *minha* promoção. OK, então. Vamos comemorar na churrascaria. Eu só quero os melhores cortes de churrasco, e você vai pagar a conta."
       },
       {
+        "voId": "chr_0024_deepfin_introduce_01",
         "title": "Operador se apresentando para o trabalho",
         "text": "Com licença, é aqui que nos candidatamos para o trabalho? Prazer em conhecê-lo. Meu nome é Alesh. Gosto de ler e consigo pescar de olhos fechados. Fico feliz por estar a bordo."
       },
       {
+        "voId": "chr_0024_deepfin_mono_switch_01",
         "title": "Em espera 1",
         "text": "Que belo dia. Perfeito para a minha soneca."
       },
       {
+        "voId": "chr_0024_deepfin_mono_switch_02",
         "title": "Em espera 2",
         "text": "Carteira vazia, a história da minha vida..."
       },
       {
+        "voId": "chr_0024_deepfin_sim_assign_work_01",
         "title": "Atribuindo a Instalação",
         "text": "Ahh... No momento em que você diz \"trabalhar\", toda a minha energia simplesmente evapora. Eu voto em um cochilo antes da tarefa, Endmin."
       },
       {
+        "voId": "chr_0024_deepfin_sim_hello_lower_01",
         "title": "Saudação 1",
         "text": "Ei! Estou sempre encontrando você. Como está o trabalho hoje?"
       },
       {
+        "voId": "chr_0024_deepfin_sim_hello_max_01",
         "title": "Saudação 2",
         "text": "Chefe, você não está cansado? Eu posso te ensinar a tirar um cochilo."
       },
       {
+        "voId": "chr_0024_deepfin_sim_talk_lv01_01",
         "title": "Conversa Ociosa da Dijiang 1",
         "text": "Não sobrou nada na programação? Ótimo. Hora de assistir à reprise daquele programa de pesca."
       },
       {
+        "voId": "chr_0024_deepfin_sim_talk_lv02_01",
         "title": "Conversa Ociosa da Dijiang 2",
         "text": "Aquele lugar. É. Aquele todo coberto de neve. É o norte, certo? Eu não estaria vendo isso se nunca tivesse entrado para a Endfield. Quando cheguei na Dijiang, a vista da ponte era quase insuportável. Agora que me acostumei, olhar para Talos-II daqui de cima parece mágico."
       },
       {
+        "voId": "chr_0024_deepfin_sim_talk_lv02_02",
         "title": "Conversa Ociosa da Dijiang 3",
         "text": "Minhas habilidades de combate? Eu só balanço a espada esperando acertar algo, chefe. Mas você também pode aprender minha habilidade especial depois de lutar contra bestas carnívoras gigantes, videiras devoradoras de homens, Aggeloi de metal e caras que te devem um monte de grana."
       },
       {
+        "voId": "chr_0024_deepfin_sim_talk_max_01",
         "title": "Conversa Ociosa da Dijiang 4",
         "text": "Sabe, gente da minha idade se cansa de muita coisa. Pescar é a única fuga que me resta dessa realidade cruel. O quê? Ainda sou jovem? Deixe disso, eu sou bem mais velho... Espere aí, Endmin. Quantos anos você tem mesmo?"
       },
       {
+        "voId": "chr_0024_deepfin_sim_talk_max_02",
         "title": "Conversa Ociosa da Dijiang 5",
         "text": "Ando folheando um livro sobre pessoas comuns. Sabe, assuntos como sobrevivência e a luta da humanidade geralmente não me interessam... Mas sinto que o autor é como... como alguém que realmente viveu a vida. Aí, o que houve? Por que tão sério de repente? Relaxe, chefe. Só estou dizendo que admiro o autor, só isso."
       },
       {
+        "voId": "chr_0024_deepfin_sim_talk_max_03",
         "title": "Conversa Ociosa da Dijiang 6",
         "text": "Ser difícil de matar é provavelmente minha única vantagem. Me acertaram feio algumas vezes, mas tinha muita gente que eu poderia perder, como meus amigos, o antigo senhorio... e vocês também. Só esse pensamento já basta para me fazer rastejar de volta para o segundo round."
       },
       {
+        "voId": "chr_0024_deepfin_sim_gift_give_01",
         "title": "Oferta de presentes",
         "text": "Aqui, chefe. Tenho uma coisa legal para você. A loja oferece um desconto de 50% na compra de outro. Uma pechincha, né?"
       },
       {
+        "voId": "chr_0024_deepfin_sim_gift_recv_01",
         "title": "Aceitando presentes",
         "text": "Para mim? Minha nossa... Costumo receber cartas de amor de punks chateados me pedindo para pagar ou de caras que querem me matar. Nunca imaginei que receberia um presente de verdade."
       },
       {
+        "voId": "chr_0024_deepfin_mono_self_line01",
         "title": "Diálogo de Confiança 1",
         "text": "Está se sentindo mal? Cara, os jovens deveriam ter esperança. Eu sei que as coisas estão terríveis, mas vão piorar a partir de agora. Viu? Você já está se sentindo bem melhor, não é?"
       },
       {
+        "voId": "chr_0024_deepfin_mono_self_line02",
         "title": "Diálogo de Confiança 2",
         "text": "Por que entrei para a Endfield? Meu antigo senhorio rabugento. Foi por isso. Ele está sempre bravo, sabe? Minha loja de barbatanas não está indo muito bem e eu devia meses de aluguel a ele. Então ele me arranjou um emprego sem me perguntar. Não sei o que ele escreveu no meu currículo, mas você aceitou... Então aqui estou eu."
       },
       {
+        "voId": "chr_0024_deepfin_mono_self_line03",
         "title": "Diálogo de Confiança 3",
         "text": "O que é isso na sua mão? \"Segundo em comando da gangue La Estrada\"...? O cara na foto se parece comigo? Quem sou eu para dizer. Vamos lá, a gente tem que viver o momento. Não adianta desenterrar o que é para ficar enterrado. Seria uma pena se deixássemos uma velha história empoeirada se intrometer, não acha? Ei, por que você está pedindo o número do Departamento de Segurança para Perlica?"
       },
       {
+        "voId": "chr_0024_deepfin_mono_self_line04",
         "title": "Diálogo de Confiança 4",
         "text": "Eu costumava andar com a Estrada Ursaña. A maioria a chamava de La Estrada. A cidade é um lugar enorme que cria gente insignificante como eu. Cresci no sovaco da cidade, encontrei minha turma, entrei para uma gangue maior e, de alguma forma, acabei me tornando um dos líderes. Aí, bem... tudo explodiu na minha cara. Cara... Se eu soubesse que ia acabar assim, deveria ter entrado para a fábrica de conservas de barbatanas há vinte anos. Agora estou aqui vendendo barbatanas para viver."
       },
       {
+        "voId": "chr_0024_deepfin_mono_self_line05",
         "title": "Diálogo de Confiança 5",
         "text": "Qual é a desse olhar? Curiosidade sobre a cicatriz? Ah, um homem com histórias não as conta facilmente. O que ficou para trás, ficou para trás. Tem que deixar para lá e seguir em frente... Ai! Endmin! A gente não vai embora de verdade! Tá bom, tá bom, vou te contar — não é nada especial. Tive duas coisas que me fizeram de bobo. Uma me deu uma patada quando eu estava dando cobertura para a outra. Perdi um olho e um pedaço da minha antiga vida ali mesmo. É isso. Simples e sem graça, não é?"
       },
       {
+        "voId": "chr_0024_deepfin_mono_chat_line01",
         "title": "Chat 1",
         "text": "A vida não é como pescar. Você sempre pode recuperar uma isca quando está pescando. Mas, na vida real, não há saída fácil quando se está em apuros. É exatamente por *ISSO* que viver uma vida feliz é importante. A verdadeira sabedoria de um velho garoto, Endmin."
       },
       {
+        "voId": "chr_0024_deepfin_mono_chat_line02",
         "title": "Chat 2",
         "text": "A minha pequena loja de barbatanas não está indo muito bem. Eu não conseguiria nem pagar o aluguel sem o salário da Endfield. Sinceramente, eu não esperava ganhar uma grana alta vendendo barbatanas. É por isso que deixo as pessoas pechincharem o quanto quiserem — e até mesmo vender fiado. Mesmo quando tinha sorte na pesca, simplesmente doava as barbatanas extras. A vida não é fácil para todos, sabe? Uma vez um ladrão entrou na minha casa. O ladrão não encontrou nada de valor e me deixou um bilhete. \"O lugar mais triste que eu já vi.\" Cara..."
       },
       {
+        "voId": "chr_0024_deepfin_mono_chat_line03",
         "title": "Chat 3",
         "text": "Aqui está minha filosofia de vida: tolere as pequenas coisas e evite as maiores. *Só* faça algo quando for impossível desviar. Aí você da a elas o inferno e garante que elas fiquem no chão."
       },
       {
+        "voId": "chr_0024_deepfin_mono_chat_line04",
         "title": "Chat 4",
         "text": "O olho está me dando trabalho? É... às vezes pode ser irritante. Por exemplo, você estava no meu ponto cego quando me cumprimentou. Haha. Tudo bem. Já estou acostumado com isso. Visão perfeita não é tão empolgante assim. Talvez seja melhor manter certas coisas no escuro e torná-las... misteriosas."
       },
       {
+        "voId": "chr_0024_deepfin_mono_chat_line05",
         "title": "Chat 5",
         "text": "O show de tarô de ontem previu que eu teria muita sorte hoje. E adivinha? Caí no esgoto fedorento logo depois de sair de casa. Pensei: \"Cara...! O show de tarô mais furado de todos os tempos\". Mas aí vi algo brilhante na lama — um anel de diamantes. Então, ei, talvez eu tenha tido sorte afinal. Mas me senti mal por quem o perdeu, e aí usei minha super sorte para encontrar o pobre coitado e devolvi o anel. O que estou dizendo é, chefe — se usarmos a sorte para fazer a coisa certa, talvez tenhamos ainda mais sorte. Concorda?"
       },
       {
+        "voId": "chr_0024_deepfin_mono_about_line01",
         "title": "Tópico: Gangues",
         "text": "Eu vivia naquele caos das fronteiras, sabe? É onde as crianças crescem com uma família fedorenta – ou sem família alguma. Não o que é pior. Eu? Eu não tinha família, nem educação, nem um teto sobre a minha cabeça. Então, sim, eu vivia nas ruas. Passava os dias brigando com outras crianças só para sobreviver. Odiávamos uns aos outros, mas todas as ameaças nos obrigam a fazer escolhas estranhas. De alguma forma, nos unimos e criamos nossa própria família. Engraçado que até criamos nossas próprias regras naquele território sem lei."
       },
       {
+        "voId": "chr_0024_deepfin_mono_about_line02",
         "title": "Tópico: Senhorio",
         "text": "O velho senhorio me escreveu de novo. Ele não estava cobrando o aluguel, mas está curioso sobre a minha situação recente. Até me chamou de preguiçoso e imprestável que não sabe cuidar de si mesmo. Cara, difícil acreditar que ele era alguém importante na juventude... Espera aí. Por que ele se importa tanto comigo? Será que está tentando fazer de mim um filho para ele? Cara, eu já estou financiando a aposentadoria dele pagando aluguel — serviço de motorista de cadeira de rodas não está no contrato. Ele ficou reclamando dos joelhos... Talvez eu devesse dar a ele um massageador automático. Sério, esse velho precisa se cuidar em vez de me encher o saco com essas bobagens. Além disso, se ele está tão preocupado, poderia simplesmente aparecer em vez de me culpar por meio de cartas."
       },
       {
+        "voId": "chr_0024_deepfin_mono_about_line03",
         "title": "Tópico: Cidade de Talos",
         "text": "A Cidade de Talos tem um significado especial para Talos-II. Após a Guerra da Humilhação, os Três Grandes assinaram o Acordo do Cinturão e construíram juntos a Cidade de Talos. Foi a primeira cidade neutra para os Terranos. É o que os livros de história dizem. Uma cidade grandiosa, ainda incompleta após um século de construção. Talvez eu possa descrevê-la melhor: \"Um homem grisalho enrugado que ergueu sua lança e apontou para o sol além das colinas\". Muito mais culto, certo? Bem, eu não perdia tempo lendo romances Ursinos."
       },
       {
+        "voId": "chr_0024_deepfin_mono_about_line04",
         "title": "Tópico: Barbatana estranha (peixe)",
         "text": "Então você está curioso sobre aquela barbatana estranha que eu peguei? Essa é uma longa história. Eu cresci lutando, não lendo. Eu nem conseguia dizer \"Artes de Originium\" direito quando era um jovem punk. Quando acabei de perder meu olho e estava me sentindo todo desorientado e confuso, senti algo nadando no meu ponto cego. Aquilo era muito irritante, então lancei minha isca com muita força e — \"BUUM!\" Você sabe o que aconteceu depois. O velho me disse que eu tenho talento para as Artes. Mas talvez seja uma maldição."
       },
       {
+        "voId": "chr_0024_deepfin_explore_point_common_01",
         "title": "Recurso/Colecionável detectado 1",
         "text": "Talvez seja melhor dar uma olhada. Pode ser que valha alguma coisa."
       },
       {
+        "voId": "chr_0024_deepfin_explore_point_valub_01",
         "title": "Recurso/Colecionável detectado 2",
         "text": "Parece valioso. Acho que vamos ficar ricos."
       },
       {
+        "voId": "chr_0024_deepfin_explore_find_locked_01",
         "title": "Área não explorada detectada",
         "text": "Cuidado. Há algo estranho por perto."
       },
       {
+        "voId": "chr_0024_deepfin_explore_find_danger_01",
         "title": "Inimigo poderoso descoberto",
         "text": "Cuidado! Essa pode te dar uma surra e tanto."
       },
       {
+        "voId": "chr_0024_deepfin_interact_mine_valub_01",
         "title": "Mineração 1",
         "text": "Podemos realmente vender isso?"
       },
       {
+        "voId": "chr_0024_deepfin_interact_mine_valub_echo2_01",
         "title": "Mineração 2",
         "text": "Coisa brilhante. Vamos pegar mais."
       },
       {
+        "voId": "chr_0024_deepfin_interact_treasure_valub_01",
         "title": "Abrindo um caixote",
         "text": "Sortudo. Parece que o show de tarô era legítimo."
       },
       {
+        "voId": "chr_0024_deepfin_interact_etherium_01",
         "title": "Adquirindo Aurileno",
         "text": "Parece... mágica. Posso dar outra olhada?"
       },
       {
+        "voId": "chr_0024_deepfin_interact_blight_break_01",
         "title": "Eliminando a Praga",
         "text": "Pronto. Bacana e limpo."
       },
       {
+        "voId": "chr_0024_deepfin_interact_rest_01",
         "title": "Descansar",
         "text": "Tirei uma ótima soneca. Hora de agir de verdade."
       },
       {
+        "voId": "chr_0024_deepfin_combat_suppuse_using_01",
         "title": "Uso Tático 1",
         "text": "Seus remédios! Pegue."
       },
       {
+        "voId": "chr_0024_deepfin_combat_suppuse_getheal_01",
         "title": "Uso Tático 2",
         "text": "Ufa. Pensei que estava acabado."
       },
       {
+        "voId": "chr_0024_deepfin_combat_remind_danger_01",
         "title": "Aviso de Perigo",
         "text": "Ei! Saia do caminho!"
       },
       {
+        "voId": "chr_0024_deepfin_combat_hurt_lowhp_01",
         "title": "Ferido",
         "text": "Não é o bastante para me derrubar."
       },
       {
+        "voId": "chr_0024_deepfin_combat_dead_01",
         "title": "0 PV",
         "text": "Farei... o que for preciso..."
       },
       {
+        "voId": "chr_0024_deepfin_combat_remind_praise_01",
         "title": "Encorajamento da Equipe 1",
         "text": "Tudo ótimo hoje, hein?"
       },
       {
+        "voId": "chr_0024_deepfin_combat_remind_praise_02",
         "title": "Encorajamento da Equipe 2",
         "text": "Uma boa gangue deixa tudo mais fácil."
       },
       {
+        "voId": "chr_0024_deepfin_combat_remind_praise_echo2_01",
         "title": "Resposta a Encorajamento 1",
         "text": "Só estou fazendo o meu trabalho."
       },
       {
+        "voId": "chr_0024_deepfin_combat_remind_praise_echo2_02",
         "title": "Resposta a Encorajamento 2",
         "text": "A gangue fez tudo acontecer."
       },
       {
+        "voId": "chr_0024_deepfin_combat_intobattle_01",
         "title": "Início do Combate 1",
         "text": "É hora de cuidar do meu olho."
       },
       {
+        "voId": "chr_0024_deepfin_combat_intobattle_echo2_01",
         "title": "Início do Combate 2",
         "text": "Faça do seu jeito. Eu dou cobertura."
       },
       {
+        "voId": "chr_0024_deepfin_combat_outbattle_nor_01",
         "title": "Vitória em Combate 1",
         "text": "As coisas ficaram um pouco intensas, mas conseguimos."
       },
       {
+        "voId": "chr_0024_deepfin_combat_outbattle_nor_02",
         "title": "Vitória em Combate 2",
         "text": "Eu nem me sinto cansado."
       },
       {
+        "voId": "chr_0024_deepfin_combat_outbattle_nor_echo2_01",
         "title": "Vitória em Combate 3",
         "text": "Nada mal. Cada um fez a sua parte."
       },
       {
+        "voId": "chr_0024_deepfin_combat_outbattle_hard_01",
         "title": "Vitória em Combate 4",
         "text": "Essa foi por pouco! Mesmo assim, preciso dizer: uma vitória é uma vitória."
       },
       {
+        "voId": "chr_0024_deepfin_combat_battle_defeat_01",
         "title": "Derrota em Combate",
         "text": "Não se preocupe com a derrota. Vamos ter mais cuidado da próxima vez. Está tudo bem, certo?"
       },
       {
+        "voId": "chr_0024_deepfin_mono_attack_last_01",
         "title": "Golpe Final 1",
         "text": "Tome isto!"
       },
       {
+        "voId": "chr_0024_deepfin_mono_attack_last_02",
         "title": "Golpe Final 2",
         "text": "Fique abaixado!"
       },
       {
+        "voId": "chr_0024_deepfin_mono_skill_nor_01",
         "title": "Habilidade de Batalha 1",
         "text": "Venha LEVAR um pouco!"
       },
       {
+        "voId": "chr_0024_deepfin_mono_skill_nor_02",
         "title": "Habilidade de Batalha 2",
         "text": "Acalme-se!"
       },
       {
+        "voId": "chr_0024_deepfin_mono_skill_nor_03",
         "title": "Habilidade de Batalha 3",
         "text": "Hora de RELAXAR!"
       },
       {
+        "voId": "chr_0024_deepfin_combat_skill_comb_ready_01",
         "title": "Combo de Habilidades Pronto 1",
         "text": "Hora de retaliar, ok?"
       },
       {
+        "voId": "chr_0024_deepfin_combat_skill_comb_ready_02",
         "title": "Combo de Habilidades Pronto 2",
         "text": "Pronto para acabar com esses punks."
       },
       {
+        "voId": "chr_0024_deepfin_mono_skill_comb_release_01",
         "title": "Conjuração de Combo 1",
         "text": "Veja o que MORDE!"
       },
       {
+        "voId": "chr_0024_deepfin_mono_skill_comb_release_02",
         "title": "Conjuração de Combo 2",
         "text": "Fora da minha LINHA!"
       },
       {
+        "voId": "chr_0024_deepfin_mono_attack_extra_01",
         "title": "Finalizador 1",
         "text": "Não desperte minha BARBATANA!"
       },
       {
+        "voId": "chr_0024_deepfin_mono_attack_extra_02",
         "title": "Finalizador 2",
         "text": "Eu apenas joguei a isca!"
       },
       {
+        "voId": "chr_0024_deepfin_mono_skill_ultimate_01",
         "title": "Habilidade Suprema 1",
         "text": "Peguei!"
       },
       {
+        "voId": "chr_0024_deepfin_mono_skill_ultimate_02",
         "title": "Habilidade Suprema 2",
         "text": "Divirta-se sendo a isca!"
       },
       {
+        "voId": "chr_0024_deepfin_mono_skill_ultimate_03",
         "title": "Habilidade Suprema 3",
         "text": "Aproveite seu lanchinho!"
       }

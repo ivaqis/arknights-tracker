@@ -123,326 +123,407 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0013_aglina_chrbark_squad_01",
         "title": "Chuẩn Bị Tác Chiến 1",
         "text": "Xin chào, Endmin. Ồ, hôm nay thời tiết thật tuyệt."
       },
       {
+        "voId": "chr_0013_aglina_chrbark_squad_02",
         "title": "Chuẩn Bị Tác Chiến 2",
         "text": "Ngài đã sẵn sàng cho một chuyến đi dài chưa?"
       },
       {
+        "voId": "chr_0013_aglina_chrbark_join_01",
         "title": "Đang thêm vào đội 1",
         "text": "Hmm. Không biết hôm nay Talos sẽ lấp lánh trong những gam màu gì nhỉ?"
       },
       {
+        "voId": "chr_0013_aglina_chrbark_join_02",
         "title": "Đang thêm vào đội 2",
         "text": "Chúng ta đang tiến đến điểm đến tiếp theo sao?"
       },
       {
+        "voId": "chr_0013_aglina_chrbark_weap_01",
         "title": "Đang đổi vũ khí",
         "text": "Vũ khí mới nào cũng được cả. Chỉ cần thêm một chút Thuật Pháp... Và nhìn này! Nó đang bay lơ lửng!"
       },
       {
+        "voId": "chr_0013_aglina_chrbark_gear_01",
         "title": "Đang đổi trang bị",
         "text": "Mmm. Chúng hợp với tôi ghê! Tôi sẽ diện chúng cho chuyến hành trình tiếp theo. Endmin, ngài có ý tưởng nào về cách phối đồ không?"
       },
       {
+        "voId": "chr_0013_aglina_chrup_skill_01",
         "title": "Kích hoạt Ma Trận Năng Lực",
         "text": "Tôi có vài mẹo nhỏ để nhìn rõ con đường hơn. Mở rộng tầm mắt, học hỏi từ trải nghiệm... và thêm một chút tưởng tượng nữa!"
       },
       {
+        "voId": "chr_0013_aglina_chrup_level_01",
         "title": "Xem Hồ Sơ Chiến Đấu",
         "text": "Hãy nhớ lại cảm giác ấy... Tìm được xúc cảm phù hợp... Bay vút lên!"
       },
       {
+        "voId": "chr_0013_aglina_chrup_promt01_01",
         "title": "Thăng Bậc Cán Viên 1",
         "text": "Thăng bậc nghĩa là... Tôi được phép đi xa hơn nữa phải không? Hehe. Tôi đã chuẩn bị đầy đủ hành trang. Khi nào chúng ta lên đường?"
       },
       {
+        "voId": "chr_0013_aglina_chrup_promt02_01",
         "title": "Thăng Bậc Cán Viên 2",
         "text": "Tôi muốn trở thành Endmin... Ý tôi là, tôi muốn trở thành người hỗ trợ đáng tin cậy như ngài. Nhưng đôi khi tôi cũng lo một chút... không biết bản thân có đủ tư cách không."
       },
       {
+        "voId": "chr_0013_aglina_chrup_promt03_01",
         "title": "Thăng Bậc Cán Viên 3",
         "text": "Liệu lần thăng bậc tiếp theo tôi sẽ nhận được điều gì đặc biệt hơn chăng...? Tôi đang mong chờ điều gì à? Hmm... hay là một ngày thật vui bên nhau, Endmin?"
       },
       {
+        "voId": "chr_0013_aglina_chrup_promt04_01",
         "title": "Thăng Bậc Cán Viên 4",
         "text": "Mỗi lần tôi nhìn lại những chuyến hành trình dài đã đi qua, những cảm xúc nhỏ bé cứ thế trào dâng trong lòng. Chính khoảnh khắc đó, tôi biết rằng... Tôi thực sự yêu công việc này."
       },
       {
+        "voId": "chr_0013_aglina_introduce_01",
         "title": "Cán Viên đang báo cáo nhiệm vụ",
         "text": "Chào ngài nhé! Ồ, ngài mang theo hương thơm dịu dàng của ký ức tươi đẹp... như một bức thư chưa hoàn chỉnh gửi đến một nơi thật đặc biệt. Tôi tự hỏi nơi đó là đâu nhỉ."
       },
       {
+        "voId": "chr_0013_aglina_mono_switch_01",
         "title": "Chờ Lệnh 1",
         "text": "Nhìn này! Quý Cô Liên Lạc Viên Bay mang đến một bức thư đặc biệt cho ngài đấy!"
       },
       {
+        "voId": "chr_0013_aglina_mono_switch_02",
         "title": "Chờ Lệnh 2",
         "text": "Chào! Ngài có muốn đi dạo không? Bầu trời hôm nay tuyệt vời làm sao!"
       },
       {
+        "voId": "chr_0013_aglina_sim_assign_work_01",
         "title": "Phân Công Vào Công Trình",
         "text": "Nhưng đừng lo. Cứ để tôi lo!"
       },
       {
+        "voId": "chr_0013_aglina_sim_hello_lower_01",
         "title": "Lời Chào 1",
         "text": "Endmin! Trùng hợp thật đấy! Chúng ta đi dạo một vòng qua Cầu Tàu chứ?"
       },
       {
+        "voId": "chr_0013_aglina_sim_hello_max_01",
         "title": "Lời Chào 2",
         "text": "Ngài đang bận sao, Endmin? Đừng quên nghỉ ngơi một chút nhé."
       },
       {
+        "voId": "chr_0013_aglina_sim_talk_lv01_01",
         "title": "Trò Chuyện Nhàn Rỗi Dijiang 1",
         "text": "Tôi rất thích sưu tầm son môi với đủ màu sắc và hương vị khác nhau. Tôi cứ tự hỏi liệu chúng có thể khiến lời nói của ta lung linh và rực rỡ hơn không?"
       },
       {
+        "voId": "chr_0013_aglina_sim_talk_lv02_01",
         "title": "Trò Chuyện Nhàn Rỗi Dijiang 2",
         "text": "Talos vẽ nên cả một dải màu sắc rực rỡ trên bầu trời Talos-II. Những khoảnh khắc dư quang lóe sáng không ngờ đến... Lãng mạn nhỉ, Endmin?"
       },
       {
+        "voId": "chr_0013_aglina_sim_talk_lv02_02",
         "title": "Trò Chuyện Nhàn Rỗi Dijiang 3",
         "text": "Nhìn xem tôi mang gì tới này, Endmin! Đèn mini đủ màu KÈM với một chiếc lư hương nhỏ từ Witching Hour đấy. Tôi đang nghĩ liệu ta có thể... cùng nhau trang trí khoang của ngài được không? Khi tắt hết đèn đi, căn phòng sẽ rực rỡ như một bầu trời đầy sao! Nào, ngài thấy sao?"
       },
       {
+        "voId": "chr_0013_aglina_sim_talk_max_01",
         "title": "Trò Chuyện Nhàn Rỗi Dijiang 4",
         "text": "Hmm... Các nhân vật trong tiểu thuyết thường hay giấu kín cảm xúc. Tại sao? Biết bao lời mời không được gửi, bao bức thư không đến nơi, và biết bao điều không thể thổ lộ... Rõ ràng là đơn giản, nhưng họ lại không đủ dũng khí để nói ra... Tôi có thể dễ dàng mời ngài phiêu lưu cùng, hoặc tặng ngài một món quà nhỏ... Khác biệt nằm ở đâu nhỉ?"
       },
       {
+        "voId": "chr_0013_aglina_sim_talk_max_02",
         "title": "Trò Chuyện Nhàn Rỗi Dijiang 5",
         "text": "Cô Akekuri đã tặng tôi một lá bùa đặc biệt. Cô ấy bảo rằng nếu tôi luôn mang theo nó, điều ước của tôi sẽ thành hiện thực. Giờ thì, tôi mong rằng... tất cả những ai nhờ tôi chuyển thư đều có thể đạt được điều mình mong muốn! Hehe! Hy vọng điều ước này không quá tham lam!"
       },
       {
+        "voId": "chr_0013_aglina_sim_talk_max_03",
         "title": "Trò Chuyện Nhàn Rỗi Dijiang 6",
         "text": "Tôi luôn mơ về những nơi tôi đã đến. Và giữa những giấc mơ mơ hồ của tôi, luôn có một bóng người đứng im lặng, như thể đang chờ đợi một người... hoặc một lá thư. Gần đây, tôi đã có cái nhìn rõ ràng hơn về nhân vật đó... và đó là người mà tôi... khá quen thuộc."
       },
       {
+        "voId": "chr_0013_aglina_sim_gift_give_01",
         "title": "Tặng Quà",
         "text": "Bất ngờ chưa, Endmin! Tôi đã chuẩn bị một món quà đặc biệt dành riêng cho ngài. Đoán xem là gì nào!"
       },
       {
+        "voId": "chr_0013_aglina_sim_gift_recv_01",
         "title": "Nhận quà",
         "text": "Cái này dành cho tôi sao? Ôi, cảm ơn rất nhiều! Nó sẽ chiếm vị trí nổi bật nhất trong khoang của tôi!"
       },
       {
+        "voId": "chr_0013_aglina_mono_self_line01",
         "title": "Đối Thoại Tín Nhiệm 1",
         "text": "Bức thư đầu tiên tôi chuyển chính là thư giới thiệu bác sĩ Warfarin viết cho tôi. Lúc mới đặt chân lên Dijiang, tôi khá là run. Bác sĩ Warfarin dặn rằng: \"Hãy đợi Endministrator.\" Tôi cứ mãi thắc mắc: \"Không biết Endmin là người như thế nào nhỉ?\" Nhưng ngay khi nhìn thấy ngài, sau lần tỉnh dậy đầy bất ngờ ấy, tất cả lo lắng của tôi tan biến ngay lập tức. Tuy vậy, thú thật là tôi vẫn hơi hồi hộp một chút..."
       },
       {
+        "voId": "chr_0013_aglina_mono_self_line02",
         "title": "Đối Thoại Tín Nhiệm 2",
         "text": "Tôi rất thích bay một mình sau khi mặt trời lặn. Giữa bầu trời đêm, tôi ngắm nhìn những vì sao lấp lánh. Có lẽ chúng cũng cất giữ những câu chuyện của riêng mình. Và có lẽ, vào chính khoảnh khắc đó, đâu đó cũng có những người khác... đang cùng tôi ngước nhìn bầu trời ấy."
       },
       {
+        "voId": "chr_0013_aglina_mono_self_line03",
         "title": "Đối Thoại Tín Nhiệm 3",
         "text": "Nỗi cô đơn là bạn đồng hành của liên lạc viên, nhưng tôi vẫn chưa thể quen với điều đó. Mỗi lần đến một nơi xa xôi, tôi lại lấy chiếc la bàn ra tìm hướng về Rhodes Island. Ở đó có bác sĩ Warfarin... và những ký ức không bao giờ phai nhạt. Giờ đây tôi đang bước đi trên một con đường mới, những người bạn mới, những cuộc gặp gỡ mới đang chờ đợi. Chỉ cần nghĩ đến thôi cũng khiến tim tôi ấm áp và tràn đầy hy vọng cho hành trình phía trước. Phải rồi. Tôi muốn trở thành một liên lạc viên không bao giờ cô đơn."
       },
       {
+        "voId": "chr_0013_aglina_mono_self_line04",
         "title": "Đối Thoại Tín Nhiệm 4",
         "text": "Không biết nữa... Một ngôi sao cô độc cũng khiến lòng tôi dâng lên cảm giác mất mát tiếc nuối khó diễn tả... Lấp lánh thay, ngôi sao bé nhỏ kia, tôi mãi dõi theo từ nơi xa... Liệu ở bầu trời rộng lớn ấy, ngài đang chờ một vì sao khác tỏa sáng gần bên?"
       },
       {
+        "voId": "chr_0013_aglina_mono_self_line05",
         "title": "Đối Thoại Tín Nhiệm 5",
         "text": "Lúc vừa rời khỏi Khu Rừng, tôi thấy bên mình có một bức thư trống. Nó giống như biểu tượng của sự hoang mang trong tôi... Và tôi luôn tự hỏi tại sao chỉ mình tôi có nó. Liệu tôi có nên viết gì đó vào đây? Và nếu có, tôi nên gửi nó đến ai? Tôi đã đi rất xa, nhưng vẫn không tìm ra câu trả lời. Nhưng giờ thì... Tôi tin rằng mình nên viết hết những cảm xúc và mộng tưởng ấy... và gửi chúng đến người quan trọng và đặc biệt nhất với mình."
       },
       {
+        "voId": "chr_0013_aglina_mono_chat_line01",
         "title": "Trò Chuyện 1",
         "text": "Một hành trình khiến tôi nhớ mãi ư? Hmm... Endmin, ngài đã từng nghe nói về Alloycarrot chưa? Người Cautus sống ở đó ăn cà rốt. Suốt. Ngày. Luôn! Họ còn có đủ loại công thức chế biến cà rốt! Tôi từng đến đó hai lần để chuyển thuốc cho Phòng Thương Mại Tổng Hợp Talos-II quản lý các trang trại cà rốt. Nếu có dịp quay lại, tôi muốn được tận mắt thấy Hố Khoan ngầm... À! Và nhất định phải đặt phòng ở Nhà Trọ Bắp Cải nữa... Không phải tôi ghét cà rốt đâu, tôi chỉ muốn có thêm chút... đa dạng thôi."
       },
       {
+        "voId": "chr_0013_aglina_mono_chat_line02",
         "title": "Trò Chuyện 2",
         "text": "Tôi luôn có cảm giác mất trọng lực. Tôi luôn thấy mình như một quả bóng bay lướt qua mặt đất nặng trĩu này. Tôi lại cố kéo theo tất cả mọi thứ, để chúng cùng bay với mình. Nghe có vẻ viển vông nhỉ? Nhưng ngay cả khi đang bay, tôi vẫn luôn thấy cái bóng dài của mình đổ xuống mặt đất như thể có thứ gì đó vẫn đang níu giữ tôi lại. Giống như những bức thư này... nối kết tôi... với ngài."
       },
       {
+        "voId": "chr_0013_aglina_mono_chat_line03",
         "title": "Trò Chuyện 3",
         "text": "Quyển sách này thì sao? À, là một tuyển tập truyện ngắn về đủ kiểu liên lạc viên khác nhau. Có người vượt qua thảm họa để cứu người... nhưng lại bị gọi là kẻ mang điềm xấu. Có người chỉ mong một chuyến giao thư yên ổn, vậy mà lại vô tình làm sụp đổ cả một quốc gia. Và có cả một cậu liên lạc viên nhỏ tuổi, hậu đậu, đã làm mất tất cả thư trong ngày làm việc đầu tiên... Hehehe. Tôi yêu từng câu chuyện trong quyển sách ấy."
       },
       {
+        "voId": "chr_0013_aglina_mono_chat_line04",
         "title": "Trò Chuyện 4",
         "text": "Tôi đã nghe nhiều người nói về Terra ở Tân Wrankwood. Có người khen ngợi sự ấm áp của nơi ấy, có người lại nguyền rủa nơi ấy chẳng biết thương xót ai. Có người căm ghét sự tàn phá của Terra, lại có người nhớ nhung vẻ đẹp của nơi ấy... Trong khi các diễn viên kịch và nhà văn dành trọn đời tái hiện lịch sử ấy, các triết gia lại cho rằng ta nên bước tiếp và tiếp nhận lối tư duy mới... Cá nhân tôi coi Terra như một cái tên quen thuộc nhưng xa cách... Một thế giới có phong cảnh tuyệt đẹp và những gương mặt thân quen... Còn ngài thì sao, Endmin?"
       },
       {
+        "voId": "chr_0013_aglina_mono_chat_line05",
         "title": "Trò Chuyện 5",
         "text": "Không liên lạc viên nào đoán được nội dung bên trong bức thư. Nhưng khi thấy phong bì được dán đầy hình dán và trang trí tỉ mỉ... Tôi lại tưởng tượng về những câu chuyện ấm áp đang chờ được kể. Còn những phong bì bị nhàu nhĩ vì mưa lại khiến tôi nghĩ về một hành trình gian nan, hoặc một cuộc chia ly đau lòng... Người viết thư hiếm khi chia sẻ cảm xúc với liên lạc viên. Nhưng họ đâu biết rằng có một người chưa từng gặp mặt... đã âm thầm sẻ chia niềm vui... và cả nỗi buồn với họ."
       },
       {
+        "voId": "chr_0013_aglina_mono_about_line01",
         "title": "Chủ đề: Warfarin",
         "text": "Bác sĩ Warfarin? Bác ấy vẫn rất ổn, vẫn như mọi khi. Nhưng có một lần, bác Warfarin nhớ nhầm ngày sinh nhật của tôi và đã vô cùng áy náy khi xin lỗi... Dù chuyện đó chẳng có gì nghiêm trọng cả. Rồi trong lúc hoảng loạn, bác ấy lại gọi nhầm tên tôi... Tôi chưa từng thấy bác ấy như vậy. Phải diễn tả thế nào nhỉ...? Hmm. Bác ấy trông thật sự bối rối... và lạc lõng. Và ngay cả sau khi tôi rời đi, bác vẫn ngồi lặng lẽ một mình bên bàn ăn, trầm ngâm rất lâu, rất lâu..."
       },
       {
+        "voId": "chr_0013_aglina_mono_about_line02",
         "title": "Chủ đề: Kiếm sĩ bí ẩn",
         "text": "Tôi gặp một người phụ nữ bí ẩn tại Rhodes Island cách đây khá lâu. Cô ấy cầm một thanh kiếm có hình dáng độc đáo và đứng bên hồ nước tĩnh lặng. Bất chợt, thanh kiếm của cô ấy lóe sáng. Nó chỉ để lại một gợn sóng nhẹ trên mặt hồ, nhưng đã chẻ đôi cả một đám mây... Cô ấy đưa cho tôi lá thư này và hy vọng tôi có thể chuyển nó đến cho Endministrator. Và khi nào Cán Viên Chen Qianyu thực sự trưởng thành, bạn có thể chuyển nó cho cô ấy..."
       },
       {
+        "voId": "chr_0013_aglina_mono_about_line03",
         "title": "Chủ đề: Avywenna",
         "text": "Avywenna thì luôn chuyển thư đến những nơi cực kỳ nguy hiểm... Cô ấy lúc nào cũng mỉm cười, nhưng ánh mắt lại chất chứa bí mật nặng nề... Những điều mà cô ấy không thể chia sẻ cùng bất kỳ ai... Tôi đã từng thấy nhiều liên lạc viên có ánh mắt giống như vậy... Và tôi hiểu điều đó có nghĩa là gì..."
       },
       {
+        "voId": "chr_0013_aglina_mono_about_line04",
         "title": "Chủ đề: Hoang địa nguy hiểm",
         "text": "Talos-II chứa đựng đủ loại hiểm họa chưa rõ... Tôi đã đọc bản báo cáo của Ardelia. Mức độ nguy hiểm của Talos-II vượt xa cả Terra xa xôi. Liên lạc viên thường phải vượt qua những khu vực bị ảnh hưởng bởi Nhiễm Khuẩn, chúng tôi hay mang theo dụng cụ y tế hoặc trang bị sơ tán khẩn cấp. Vì tôi có thể bay nên tôi thường mang thêm các bộ trang bị dự phòng và thả chúng xuống các điểm nghỉ chân hoang địa. Tôi hy vọng những món đồ này sẽ giúp được những ai gặp nạn."
       },
       {
+        "voId": "chr_0013_aglina_mono_about_line05",
         "title": "Chủ đề: Bản thân",
         "text": "Lúc còn ở Rhodes Island, tôi tưởng bác sĩ Warfarin sẽ giao cho tôi vài nhiệm vụ. Nhưng bác ấy nói rằng Rhodes Island không thể dễ dàng công khai xuất hiện. Tuy nhiên, vì tôi là một liên lạc viên, bác ấy bảo tôi nên du hành dưới bầu trời rộng mở. Tôi đã làm đúng như vậy, dành hai năm chu du khắp Talos-II, tìm hiểu thế giới này trước khi đến được đây."
       },
       {
+        "voId": "chr_0013_aglina_explore_point_common_01",
         "title": "Phát hiện Tài Nguyên/Có Thể Thu Thập 1",
         "text": "Có thứ đáng để chúng ta chú ý ở phía kia."
       },
       {
+        "voId": "chr_0013_aglina_explore_point_valub_01",
         "title": "Phát hiện Tài Nguyên/Có Thể Thu Thập 2",
         "text": "Nhìn kìa! Biết đâu lại có bất ngờ đang chờ đón chúng ta!"
       },
       {
+        "voId": "chr_0013_aglina_explore_find_locked_01",
         "title": "Phát Hiện Khu Vực Chưa Khám Phá",
         "text": "Theo tiêu chuẩn của liên lạc viên: Hãy đặc biệt cẩn trọng khi bước vào những vùng đất chưa được khám phá!"
       },
       {
+        "voId": "chr_0013_aglina_explore_find_danger_01",
         "title": "Phát hiện Kẻ Địch Mạnh",
         "text": "Hãy thật cẩn thận! Kẻ địch đó trông rất nguy hiểm."
       },
       {
+        "voId": "chr_0013_aglina_interact_mine_valub_01",
         "title": "Khai thác 1",
         "text": "Hãy thu gom những khoáng sản này lại!"
       },
       {
+        "voId": "chr_0013_aglina_interact_mine_valub_echo2_01",
         "title": "Khai thác 2",
         "text": "Tôi có mặt để giúp đỡ. Hihi."
       },
       {
+        "voId": "chr_0013_aglina_interact_treasure_valub_01",
         "title": "Mở Thùng",
         "text": "Ôi trời! Đúng thứ chúng ta cần rồi!"
       },
       {
+        "voId": "chr_0013_aglina_interact_etherium_01",
         "title": "Nhận Aurylene",
         "text": "Hehe, tôi tóm được nó trước khi nó bay mất."
       },
       {
+        "voId": "chr_0013_aglina_interact_blight_break_01",
         "title": "Xua Tan Nhiễm Khuẩn",
         "text": "Chúng ta vừa mở đường cho những chuyến giao hàng sau này!"
       },
       {
+        "voId": "chr_0013_aglina_interact_rest_01",
         "title": "Nghỉ ngơi",
         "text": "Nghỉ ngơi đúng cách sẽ giúp chúng ta đi xa hơn."
       },
       {
+        "voId": "chr_0013_aglina_combat_suppuse_using_01",
         "title": "Sử Dụng Vật Phẩm Chiến Thuật 1",
         "text": "Thử món này xem. Sẽ giúp ích đó!"
       },
       {
+        "voId": "chr_0013_aglina_combat_suppuse_getheal_01",
         "title": "Sử Dụng Vật Phẩm Chiến Thuật 2",
         "text": "Phù... phù... Thấy đỡ hơn rồi."
       },
       {
+        "voId": "chr_0013_aglina_combat_remind_danger_01",
         "title": "Cảnh Báo Nguy Hiểm",
         "text": "Coi chừng! Đừng để bị thương nhé!"
       },
       {
+        "voId": "chr_0013_aglina_combat_hurt_lowhp_01",
         "title": "Bị Thương",
         "text": "Cơ thể tôi... Nặng nề quá..."
       },
       {
+        "voId": "chr_0013_aglina_combat_dead_01",
         "title": "0 HP",
         "text": "Tôi muốn được bay... thêm một lần cuối..."
       },
       {
+        "voId": "chr_0013_aglina_combat_remind_praise_01",
         "title": "Cổ Vũ Đội 1",
         "text": "Ôi trời! Ngài thật sự có thể làm như vậy sao?!"
       },
       {
+        "voId": "chr_0013_aglina_combat_remind_praise_02",
         "title": "Cổ Vũ Đội 2",
         "text": "Quá là tuyệt vời! Chúng ta có thể thử lại lần nữa không?"
       },
       {
+        "voId": "chr_0013_aglina_combat_remind_praise_echo2_01",
         "title": "Đáp Lại Lời Cổ Vũ 1",
         "text": "Hehe. Ngài thật tốt bụng."
       },
       {
+        "voId": "chr_0013_aglina_combat_remind_praise_echo2_02",
         "title": "Đáp Lại Lời Cổ Vũ 2",
         "text": "Hãy tiếp tục và kết thúc việc này thôi!"
       },
       {
+        "voId": "chr_0013_aglina_combat_intobattle_01",
         "title": "Bắt Đầu Chiến Đấu 1",
         "text": "Chúng ta sẽ kết thúc trận chiến này thật gọn gàng!"
       },
       {
+        "voId": "chr_0013_aglina_combat_intobattle_echo2_01",
         "title": "Bắt Đầu Chiến Đấu 2",
         "text": "Tôi đã mong ngài sẽ nói thế mà."
       },
       {
+        "voId": "chr_0013_aglina_combat_outbattle_nor_01",
         "title": "Thắng Trận 1",
         "text": "Hehe. Tôi làm được rồi đúng không?"
       },
       {
+        "voId": "chr_0013_aglina_combat_outbattle_nor_02",
         "title": "Thắng Trận 2",
         "text": "Việc tuyệt nhất hôm nay của tôi đó!"
       },
       {
+        "voId": "chr_0013_aglina_combat_outbattle_nor_echo2_01",
         "title": "Thắng Trận 3",
         "text": "Yeah! Giờ chúng ta có thể tiếp tục hành trình."
       },
       {
+        "voId": "chr_0013_aglina_combat_outbattle_hard_01",
         "title": "Thắng Trận 4",
         "text": "Chúng ta đã đi đến tận cùng... Mọi khó khăn đều đáng giá."
       },
       {
+        "voId": "chr_0013_aglina_combat_battle_defeat_01",
         "title": "Bại Trận",
         "text": "Đường có thể đầy chông gai, nhưng chúng ta sẽ bắt đầu lại và đảm bảo giao hàng thành công."
       },
       {
+        "voId": "chr_0013_aglina_mono_attack_last_01",
         "title": "Đòn Dứt Điểm 1",
         "text": "Đứng qua một bên!"
       },
       {
+        "voId": "chr_0013_aglina_mono_attack_last_02",
         "title": "Đòn Dứt Điểm 2",
         "text": "Lên!"
       },
       {
+        "voId": "chr_0013_aglina_mono_skill_nor_01",
         "title": "KN Chiến Đấu 1",
         "text": "Mọi người, bám sát nhau!"
       },
       {
+        "voId": "chr_0013_aglina_mono_skill_nor_02",
         "title": "KN Chiến Đấu 2",
         "text": "Không thể thoát khỏi trọng lực đâu!"
       },
       {
+        "voId": "chr_0013_aglina_mono_skill_nor_03",
         "title": "KN Chiến Đấu 3",
         "text": "Tốt nhất là nhìn đường mà đi!"
       },
       {
+        "voId": "chr_0013_aglina_combat_skill_comb_ready_01",
         "title": "Chuẩn Bị KN Liên Hoàn 1",
         "text": "Trường Trọng Lực sẵn sàng!"
       },
       {
+        "voId": "chr_0013_aglina_combat_skill_comb_ready_02",
         "title": "Chuẩn Bị KN Liên Hoàn 2",
         "text": "Ai muốn bay nào?"
       },
       {
+        "voId": "chr_0013_aglina_mono_skill_comb_release_01",
         "title": "Thi Triển Liên Hoàn 1",
         "text": "Giờ thì, bay lên!"
       },
       {
+        "voId": "chr_0013_aglina_mono_skill_comb_release_02",
         "title": "Thi Triển Liên Hoàn 2",
         "text": "Thưởng thức cảm giác lơ lửng đi nhé!"
       },
       {
+        "voId": "chr_0013_aglina_mono_attack_extra_01",
         "title": "Kết Liễu 1",
         "text": "Bất ngờ chưa!"
       },
       {
+        "voId": "chr_0013_aglina_mono_attack_extra_02",
         "title": "Kết Liễu 2",
         "text": "Thế này thì sao?"
       },
       {
+        "voId": "chr_0013_aglina_mono_skill_ultimate_01",
         "title": "Tuyệt Kỹ 1",
         "text": "Hãy Lật Ngược Thế Giới!"
       },
       {
+        "voId": "chr_0013_aglina_mono_skill_ultimate_02",
         "title": "Tuyệt Kỹ 2",
         "text": "Sức mạnh của mặt đất!"
       },
       {
+        "voId": "chr_0013_aglina_mono_skill_ultimate_03",
         "title": "Tuyệt Kỹ 3",
         "text": "Chơi đùa với trọng lực!"
       }

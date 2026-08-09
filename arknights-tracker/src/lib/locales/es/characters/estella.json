@@ -123,322 +123,402 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0021_whiten_chrbark_squad_01",
         "title": "Preparación de la operación 1",
         "text": "¿Ya... se acabó el descanso?"
       },
       {
+        "voId": "chr_0021_whiten_chrbark_squad_02",
         "title": "Preparación de la operación 2",
         "text": "Estaré lista en... dos minutos más..."
       },
       {
+        "voId": "chr_0021_whiten_chrbark_join_01",
         "title": "Añadir al equipo 1",
         "text": "¿Otra misión? Ohhh... Está bien... Espero que termine antes de que me desmaye de agotamiento..."
       },
       {
+        "voId": "chr_0021_whiten_chrbark_join_02",
         "title": "Añadir al equipo 2",
         "text": "Ahora, ¿cómo debería explorar esos... secretos no revelados? Mmm..."
       },
       {
+        "voId": "chr_0021_whiten_chrbark_weap_01",
         "title": "Cambiar de arma",
         "text": "Vaya... Un arma de máximo poder... Hnnngghh... Es muy pesada..."
       },
       {
+        "voId": "chr_0021_whiten_chrbark_gear_01",
         "title": "Cambiar de equipamiento",
         "text": "Los Ingenieros de Arsenal claramente sobrestimaron mi resistencia en combate... Hurrrr... Como sea."
       },
       {
+        "voId": "chr_0021_whiten_chrup_skill_01",
         "title": "Activación de la matriz de habilidades",
         "text": "Ah, ¿así que mejorar significa menos trabajo? Yeee..."
       },
       {
+        "voId": "chr_0021_whiten_chrup_level_01",
         "title": "Viendo los registros de combate",
         "text": "Cerebro actualizado, cuerpo subió de nivel... pero cero progreso en energía. Vaya, supongo que estoy condenada."
       },
       {
+        "voId": "chr_0021_whiten_chrup_promt01_01",
         "title": "Ascenso de operador 1",
         "text": "Este ascenso es de lo más inesperado... Pensé que me tomaría mucho... mucho más que esto..."
       },
       {
+        "voId": "chr_0021_whiten_chrup_promt02_01",
         "title": "Ascenso de operador 2",
         "text": "Parece que los resultados de mi trabajo superaron mis expectativas... Endmin... Necesito un permiso de dos días para darme cuidado y amor..."
       },
       {
+        "voId": "chr_0021_whiten_chrup_promt03_01",
         "title": "Ascenso de operador 3",
         "text": "¿Por qué sigo recibiendo ascensos...? ¿Soy un experimento para nuevas estrategias de gestión? Debería intentar resolver esto..."
       },
       {
+        "voId": "chr_0021_whiten_chrup_promt04_01",
         "title": "Ascenso de operador 4",
         "text": "¡Ooooh! ¿Significa esto que puedo darle órdenes a Akekuri? Je, je... Hora de hacer la prueba."
       },
       {
+        "voId": "chr_0021_whiten_introduce_01",
         "title": "Operador reportándose para el deber",
         "text": "¿Por qué tengo que hacer esto otra vez...? Saludos... Endministrator. Soy Estella. Y por favor, no me asignes tareas físicamente demandantes. Gracias."
       },
       {
+        "voId": "chr_0021_whiten_mono_switch_01",
         "title": "En espera 1",
         "text": "Ah... sigo respirando. Por ahora, no quiero hacer absolutamente nada..."
       },
       {
+        "voId": "chr_0021_whiten_mono_switch_02",
         "title": "En espera 2",
         "text": "Volví a excederme trabajando... Uff... Será mejor que aproveche el descanso mientras dure."
       },
       {
+        "voId": "chr_0021_whiten_sim_assign_work_01",
         "title": "Asignando a una instalación",
         "text": "¿Una nueva asignación? La estoy esperando con ansias... En verdad. Lo juro."
       },
       {
+        "voId": "chr_0021_whiten_sim_hello_lower_01",
         "title": "Saludo 1",
         "text": "Endmin... ¿Cómo va tu descanso?"
       },
       {
+        "voId": "chr_0021_whiten_sim_hello_max_01",
         "title": "Saludo 2",
         "text": "Endmin, casi nunca veo que te tomes un descanso."
       },
       {
+        "voId": "chr_0021_whiten_sim_talk_lv01_01",
         "title": "Charla casual en la Dijiang 1",
         "text": "Después de que le dije a Antal que no me gustaban sus juegos de matemáticas, dejó de compartírmelos. Mmm... En realidad, la gente debería seguir mi ejemplo."
       },
       {
+        "voId": "chr_0021_whiten_sim_talk_lv02_01",
         "title": "Charla casual en la Dijiang 2",
         "text": "Los Ingenieros de Arsenal siguen quejándose de lo rápido que rompo mis lanzas... Francamente, el hecho de que pueda blandir estas armas tan pesadas ya es un milagro."
       },
       {
+        "voId": "chr_0021_whiten_sim_talk_lv02_02",
         "title": "Charla casual en la Dijiang 3",
         "text": "¿El Sr. Andre...? ¿Puede girar la cabeza 180 grados? Mmm... Debería preguntárselo la próxima vez."
       },
       {
+        "voId": "chr_0021_whiten_sim_talk_max_01",
         "title": "Charla casual en la Dijiang 4",
         "text": "A Akekuri le encantan los orejilargas, así que recopilé un montón de recetas con orejilargas y se las di... Después dejó de hablarme por toda una semana... Fue tan raro..."
       },
       {
+        "voId": "chr_0021_whiten_sim_talk_max_02",
         "title": "Charla casual en la Dijiang 5",
         "text": "Estoy acostumbrada a realizar operaciones de infiltración en solitario... Es molesto, pero alguien tiene que hacerlo. Especialmente porque... me va mejor trabajando sola en comparación con el resto del equipo."
       },
       {
+        "voId": "chr_0021_whiten_sim_talk_max_03",
         "title": "Charla casual en la Dijiang 6",
         "text": "La música metal ruidosa me calma... Detener ese tipo de ruido puede ser fácil, pero me gusta la sensación de estar sin rumbo en medio de la cacofonía. Me ayuda a... olvidar quién soy."
       },
       {
+        "voId": "chr_0021_whiten_sim_gift_give_01",
         "title": "Ofreciendo regalos",
         "text": "Endmin, ¿aceptarás esto? No tengas miedo... No hay nada extraño en esta cosa."
       },
       {
+        "voId": "chr_0021_whiten_sim_gift_recv_01",
         "title": "Aceptando regalos",
         "text": "¿Es... para mí? Bueno... Gracias... Usualmente no recibo regalos de personas que no están en mi equipo."
       },
       {
+        "voId": "chr_0021_whiten_mono_self_line01",
         "title": "Diálogo de confianza 1",
         "text": "¿Unirme al equipo de asalto? No, gracias. Estoy segura de que no tengo la fuerza física para hacerlo... Y la gente no debería estar obligada a cargarme."
       },
       {
+        "voId": "chr_0021_whiten_mono_self_line02",
         "title": "Diálogo de confianza 2",
         "text": "Alguien del gremio dijo que no aprovecho bien mi información... Mmm... Nunca se me ocurrió usar esos secretos. Es demasiado trabajo... Supongo que simplemente disfruto de coleccionarlos..."
       },
       {
+        "voId": "chr_0021_whiten_mono_self_line03",
         "title": "Diálogo de confianza 3",
         "text": "¿Mala suerte? Mis padres siempre hablan de los viejos tiempos, diciendo que fue pura mala suerte que nuestra vida fuera empeorando... Pero, bueno... Creo que cada experiencia tiene algún significado. Fue así como conocí a mis colegas del Equipo operativo Z7..."
       },
       {
+        "voId": "chr_0021_whiten_mono_self_line04",
         "title": "Diálogo de confianza 4",
         "text": "Estaba tocando fondo antes de encontrar al Equipo Z7. *Suspiro* Esa época fue un desastre total... Un estafador me robó todo mi dinero y tenía tanta hambre... Al principio, Akekuri y Fluorite me dejaron acampar con otros nómadas que habían rescatado. Pero cuando decidí compartir detalles sobre la organización de los Rompesuelos y sus turnos de patrullas... Fluorite no pudo ocultar su asombro y me preguntó cómo lo había logrado... Vaya, todavía recuerdo esa cara que puso."
       },
       {
+        "voId": "chr_0021_whiten_mono_self_line05",
         "title": "Diálogo de confianza 5",
         "text": "Solo quiero vivir una vida tranquila y aceptar lo que venga... Hubo un tiempo en que pensé que eso era un sueño imposible para alguien con mi mala suerte. Luego llegué a Endfield... me uní al Equipo Z7... y te conocí a ti, Endmin... Gracias por tolerar mi presencia..."
       },
       {
+        "voId": "chr_0021_whiten_mono_chat_line01",
         "title": "Charla 1",
         "text": "Mi pasado no fue para nada fácil. Solo seguía a mi familia de un lugar a otro... Sí, supongo que fue cansado y difícil, pero la mayoría de los Talosianos pasó por lo mismo. Solo espero que la vida se vuelva más relajada y fácil..."
       },
       {
+        "voId": "chr_0021_whiten_mono_chat_line02",
         "title": "Charla 2",
         "text": "Me gusta el zumbido metálico cuando alguien toca un riff de guitarra distorsionado. Cuando estoy al aire libre, me da un cosquilleo raro en los oídos... Es extrañamente reconfortante..."
       },
       {
+        "voId": "chr_0021_whiten_mono_chat_line03",
         "title": "Charla 3",
         "text": "Trabajar tras las líneas enemigas no es tan difícil. Al contrario... se siente bastante emocionante cuando no sabes en qué momento llegará el peligro... Bueno, nada te toma por sorpresa si estás bien preparado."
       },
       {
+        "voId": "chr_0021_whiten_mono_chat_line04",
         "title": "Charla 4",
         "text": "Lo siento, Endmin. Solo dime si alguna vez te ofendo... RR. HH. me recordó esto... Pero mis amigos del Equipo Z7 dijeron que no pasa nada, que ofenderse por Estella es parte de la vida..."
       },
       {
+        "voId": "chr_0021_whiten_mono_chat_line05",
         "title": "Charla 5",
         "text": "Yo solo recolecto información y Fluorite la analiza. ¿Cómo usas la información para comprender cómo funciona su mente? Mmm... Espero que Fluorite pueda compartir sus secretos... Lo único que me dijo fue: “Todo se reduce a la experiencia.”"
       },
       {
+        "voId": "chr_0021_whiten_mono_about_line01",
         "title": "Tema: Akekuri",
         "text": "Mmm... Habrá consecuencias por esta asignación injusta. Todo el mundo sabrá el secreto de los cupcakes de Akekuri... Mua, ja, ja... Estella, qué chica tan malvada eres."
       },
       {
+        "voId": "chr_0021_whiten_mono_about_line02",
         "title": "Tema: Catcher",
         "text": "Catcher no tiene secretos... De hecho, prácticamente ha expuesto todo en su Informe de Desempeño Laboral... Nunca pensé que conocería a un bicho raro como él."
       },
       {
+        "voId": "chr_0021_whiten_mono_about_line03",
         "title": "Tema: Fluorite",
         "text": "Tengo la intención de asociarme con Fluorite. Se la pasaba riéndose de lo que decía e incluso me animaba a decir más cosas... Mmm... Supongo que... las personas y sus mentes pueden ser bastante complicadas."
       },
       {
+        "voId": "chr_0021_whiten_mono_about_line04",
         "title": "Tema: Antal",
         "text": "El Savra es muy dedicado... Aunque creo que a veces se pasa de la raya. El trabajo ya es bastante cansado de por sí... Pero encuentro sus chistes bastante interesantes. Siempre nos hace reír a mí y a Fluorite."
       },
       {
+        "voId": "chr_0021_whiten_explore_point_common_01",
         "title": "Recurso/Coleccionable detectado 1",
         "text": "Ese se ve bien... Si es posible, deberíamos llevarlo de regreso."
       },
       {
+        "voId": "chr_0021_whiten_explore_point_valub_01",
         "title": "Recurso/Coleccionable detectado 2",
         "text": "Mira ahí... Podría valer la pena el esfuerzo."
       },
       {
+        "voId": "chr_0021_whiten_explore_find_locked_01",
         "title": "Zona inexplorada detectada",
         "text": "Juuu... Supongo que tendremos que investigar esa zona."
       },
       {
+        "voId": "chr_0021_whiten_explore_find_danger_01",
         "title": "Enemigo poderoso descubierto",
         "text": "Hostil de amenaza alta... ¿Les molesta si me quedo a ayudar?"
       },
       {
+        "voId": "chr_0021_whiten_interact_mine_valub_01",
         "title": "Minería 1",
         "text": "Si tan solo alguien hubiera traído una plataforma de minería automática..."
       },
       {
+        "voId": "chr_0021_whiten_interact_mine_valub_echo2_01",
         "title": "Minería 2",
         "text": "Estoy aquí para ayudar... Pero no esperes mucho de mí..."
       },
       {
+        "voId": "chr_0021_whiten_interact_treasure_valub_01",
         "title": "Abriendo una caja",
         "text": "Ahora, hemos cumplido con este viaje."
       },
       {
+        "voId": "chr_0021_whiten_interact_etherium_01",
         "title": "Adquiriendo Aurileno",
         "text": "Ahh... Creo que ya había visto esto antes..."
       },
       {
+        "voId": "chr_0021_whiten_interact_blight_break_01",
         "title": "Eliminar la Plaga",
         "text": "Genial. Ahora no tenemos que rodear la zona."
       },
       {
+        "voId": "chr_0021_whiten_interact_rest_01",
         "title": "Descanso",
         "text": "Me he recuperado un poco... pero un poco más de descanso me vendría bien."
       },
       {
+        "voId": "chr_0021_whiten_combat_suppuse_using_01",
         "title": "Uso táctico 1",
         "text": "Intenta esto... A lo mejor ayuda..."
       },
       {
+        "voId": "chr_0021_whiten_combat_suppuse_getheal_01",
         "title": "Uso táctico 2",
         "text": "Supongo que valió la pena la preparación."
       },
       {
+        "voId": "chr_0021_whiten_combat_remind_danger_01",
         "title": "Advertencia de peligro",
         "text": "Cuidado... No te dejes golpear."
       },
       {
+        "voId": "chr_0021_whiten_combat_hurt_lowhp_01",
         "title": "Herida",
         "text": "Hurrr... El arma es tan pesada..."
       },
       {
+        "voId": "chr_0021_whiten_combat_dead_01",
         "title": "0 PV",
         "text": "Volví a decepcionarlos a todos..."
       },
       {
+        "voId": "chr_0021_whiten_combat_remind_praise_01",
         "title": "Ánimo del equipo 1",
         "text": "Guau... Yo nunca podría hacer eso."
       },
       {
+        "voId": "chr_0021_whiten_combat_remind_praise_02",
         "title": "Ánimo del equipo 2",
         "text": "Bien... Lo que necesitamos es trabajo en equipo."
       },
       {
+        "voId": "chr_0021_whiten_combat_remind_praise_echo2_01",
         "title": "Respuesta al ánimo 1",
         "text": "Preferiría no hacer esto con frecuencia..."
       },
       {
+        "voId": "chr_0021_whiten_combat_remind_praise_echo2_02",
         "title": "Respuesta al ánimo 2",
         "text": "Genial... Todos tuvieron un papel."
       },
       {
+        "voId": "chr_0021_whiten_combat_intobattle_01",
         "title": "Comienza el combate 1",
         "text": "No sirvo para las batallas largas... Por favor, termínenlo rápido."
       },
       {
+        "voId": "chr_0021_whiten_combat_intobattle_echo2_01",
         "title": "Comienza el combate 2",
         "text": "¿De verdad tenemos que pelear? Está bien. Vamos."
       },
       {
+        "voId": "chr_0021_whiten_combat_outbattle_nor_01",
         "title": "Victoria en el combate 1",
         "text": "Hmm... Se acabó... Lo hice bien ¿verdad?"
       },
       {
+        "voId": "chr_0021_whiten_combat_outbattle_nor_02",
         "title": "Victoria en el combate 2",
         "text": "Juu... Me alegra no haberme desmayado a medio camino."
       },
       {
+        "voId": "chr_0021_whiten_combat_outbattle_nor_echo2_01",
         "title": "Victoria en el combate 3",
         "text": "Bien... Al menos terminó rápido..."
       },
       {
+        "voId": "chr_0021_whiten_combat_outbattle_hard_01",
         "title": "Victoria en el combate 4",
         "text": "Todos... lo hicieron bien... Me alegra tanto haberlo logrado..."
       },
       {
+        "voId": "chr_0021_whiten_combat_battle_defeat_01",
         "title": "Derrota en el combate",
         "text": "No puedo dejar que termine así... La próxima vez... Me esforzaré más..."
       },
       {
+        "voId": "chr_0021_whiten_mono_attack_last_01",
         "title": "Golpe final 1",
         "text": "¡Quédate quieto!"
       },
       {
+        "voId": "chr_0021_whiten_mono_attack_last_02",
         "title": "Golpe final 2",
         "text": "¡Allí!"
       },
       {
+        "voId": "chr_0021_whiten_mono_skill_nor_01",
         "title": "Habilidad de batalla 1",
         "text": "¡Congelación... sónica!"
       },
       {
+        "voId": "chr_0021_whiten_mono_skill_nor_02",
         "title": "Habilidad de batalla 2",
         "text": "¡Explosión... quebradora!"
       },
       {
+        "voId": "chr_0021_whiten_mono_skill_nor_03",
         "title": "Habilidad de batalla 3",
         "text": "Jaa... ¡DESCANSA EN PAZ!"
       },
       {
+        "voId": "chr_0021_whiten_combat_skill_comb_ready_01",
         "title": "Habilidad de combo preparada 1",
         "text": "Por fin... Estoy en posición."
       },
       {
+        "voId": "chr_0021_whiten_combat_skill_comb_ready_02",
         "title": "Habilidad de combo preparada 2",
         "text": "Perdón por la espera..."
       },
       {
+        "voId": "chr_0021_whiten_mono_skill_comb_release_01",
         "title": "Lanzando combo 1",
         "text": "¡Con fuerza!"
       },
       {
+        "voId": "chr_0021_whiten_mono_skill_comb_release_02",
         "title": "Lanzando combo 2",
         "text": "¡Ahí va!"
       },
       {
+        "voId": "chr_0021_whiten_mono_attack_extra_01",
         "title": "Remate 1",
         "text": "¡Dale al punto... DÉBIL!"
       },
       {
+        "voId": "chr_0021_whiten_mono_attack_extra_02",
         "title": "Remate 2",
         "text": "¡Vas a CAER!"
       },
       {
+        "voId": "chr_0021_whiten_mono_skill_ultimate_01",
         "title": "Habilidad máxima 1",
         "text": "Explosión sónica... ¡BOMBARDEO!"
       },
       {
+        "voId": "chr_0021_whiten_mono_skill_ultimate_02",
         "title": "Habilidad máxima 2",
         "text": "Carga y... ¡explota!"
       },
       {
+        "voId": "chr_0021_whiten_mono_skill_ultimate_03",
         "title": "Habilidad máxima 3",
         "text": "¡Oh, sonidos, converjan!"
       }

@@ -96,222 +96,277 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0002_endminm_chrbark_squad_01",
         "title": "Préparation de l'opération 1",
         "text": "J'entends l'originium chanter."
       },
       {
+        "voId": "chr_0002_endminm_chrbark_squad_02",
         "title": "Préparation de l'opération 2",
         "text": "Endfield ne cessera pas de progresser."
       },
       {
+        "voId": "chr_0002_endminm_chrbark_join_01",
         "title": "Intégration à l'équipe 1",
         "text": "Je suis en position, Dijiang."
       },
       {
+        "voId": "chr_0002_endminm_chrbark_join_02",
         "title": "Intégration à l'équipe 2",
         "text": "Il était temps."
       },
       {
+        "voId": "chr_0002_endminm_chrbark_weap_01",
         "title": "Changement d'arme",
         "text": "Pas trop mal."
       },
       {
+        "voId": "chr_0002_endminm_chrbark_gear_01",
         "title": "Changement d'équipement",
         "text": "Un beau produit de notre industrie."
       },
       {
+        "voId": "chr_0002_endminm_chrup_skill_01",
         "title": "Activation de la matrice de capacités",
         "text": "Ce sentiment m'est familier..."
       },
       {
+        "voId": "chr_0002_endminm_chrup_level_01",
         "title": "Visionnage d'archives de combat",
         "text": "Je ne les oublierai jamais."
       },
       {
+        "voId": "chr_0002_endminm_chrup_promt01_01",
         "title": "Promotion d'opérateur 1",
         "text": "Un autre pas en avant..."
       },
       {
+        "voId": "chr_0002_endminm_chrup_promt02_01",
         "title": "Promotion d'opérateur 2",
         "text": "Je veillerai toujours à la sécurité d'Endfield."
       },
       {
+        "voId": "chr_0002_endminm_chrup_promt03_01",
         "title": "Promotion d'opérateur 3",
         "text": "Le passé et le présent ne doivent plus faire qu'un."
       },
       {
+        "voId": "chr_0002_endminm_chrup_promt04_01",
         "title": "Promotion d'opérateur 4",
         "text": "J'ai entendu sa voix, comme l'écho d'un murmure dans mes rêves. À maintes reprises, j'ai rêvé d'une mer immense... D'une mer de chagrin et de souvenirs qui renforce ma détermination."
       },
       {
+        "voId": "chr_0002_endminm_mono_switch_01",
         "title": "En attente 1",
         "text": "Qu'est-ce qu'on attend ?"
       },
       {
+        "voId": "chr_0002_endminm_mono_switch_02",
         "title": "En attente 2",
         "text": "L'originium nous tracera un chemin."
       },
       {
+        "voId": "chr_0002_endminm_sim_gift_recv_01",
         "title": "Cadeaux acceptés",
         "text": "Un grand merci !"
       },
       {
+        "voId": "chr_0002_endminm_explore_point_common_01",
         "title": "Détection de ressource/objet à collecter 1",
         "text": "Regardez, par là..."
       },
       {
+        "voId": "chr_0002_endminm_explore_point_valub_01",
         "title": "Détection de ressource/objet à collecter 2",
         "text": "Il y a quelque chose d'important, là-bas !"
       },
       {
+        "voId": "chr_0002_endminm_explore_find_locked_01",
         "title": "Zone inexplorée détectée",
         "text": "Il faut étudier cette zone en détails."
       },
       {
+        "voId": "chr_0002_endminm_explore_find_danger_01",
         "title": "Découverte d'un ennemi puissant",
         "text": "Entité hostile à menace élevée. Approchez prudemment."
       },
       {
+        "voId": "chr_0002_endminm_interact_mine_valub_01",
         "title": "Extraction 1",
         "text": "Ces minerais pourraient être utiles."
       },
       {
+        "voId": "chr_0002_endminm_interact_mine_valub_echo2_01",
         "title": "Extraction 2",
         "text": "Besoin d'aide ?"
       },
       {
+        "voId": "chr_0002_endminm_interact_treasure_valub_01",
         "title": "Ouverture de caisse",
         "text": "Ce voyage en valait la peine."
       },
       {
+        "voId": "chr_0002_endminm_interact_etherium_01",
         "title": "Obtention d'aurylène",
         "text": "Ça me rappelle quelque chose."
       },
       {
+        "voId": "chr_0002_endminm_interact_blight_break_01",
         "title": "Élimination de la Gangrène",
         "text": "Élimination de la Gangrène confirmée."
       },
       {
+        "voId": "chr_0002_endminm_interact_rest_01",
         "title": "Repos",
         "text": "Tout le monde est bien reposé."
       },
       {
+        "voId": "chr_0002_endminm_combat_suppuse_using_01",
         "title": "Utilisation de tactique 1",
         "text": "Ça va mieux ?"
       },
       {
+        "voId": "chr_0002_endminm_combat_suppuse_getheal_01",
         "title": "Utilisation de tactique 2",
         "text": "Je me sens bien mieux."
       },
       {
+        "voId": "chr_0002_endminm_combat_remind_danger_01",
         "title": "Avertissement de danger",
         "text": "Ennemi en approche ! Attention !"
       },
       {
+        "voId": "chr_0002_endminm_combat_hurt_lowhp_01",
         "title": "Blessure",
         "text": "Je peux encore me battre..."
       },
       {
+        "voId": "chr_0002_endminm_combat_dead_01",
         "title": "0 PV",
         "text": "Je suis désolé... C'est à vous de jouer..."
       },
       {
+        "voId": "chr_0002_endminm_combat_remind_praise_01",
         "title": "Encouragement de l'équipe 1",
         "text": "Très joli coup."
       },
       {
+        "voId": "chr_0002_endminm_combat_remind_praise_02",
         "title": "Encouragement de l'équipe 2",
         "text": "Une synchronisation parfaite."
       },
       {
+        "voId": "chr_0002_endminm_combat_remind_praise_echo2_01",
         "title": "Réaction face aux encouragements 1",
         "text": "Je suis flatté."
       },
       {
+        "voId": "chr_0002_endminm_combat_remind_praise_echo2_02",
         "title": "Réaction face aux encouragements 2",
         "text": "On forme vraiment une belle équipe."
       },
       {
+        "voId": "chr_0002_endminm_combat_intobattle_01",
         "title": "Début du combat 1",
         "text": "Il est temps de se battre."
       },
       {
+        "voId": "chr_0002_endminm_combat_intobattle_echo2_01",
         "title": "Début du combat 2",
         "text": "Je suis avec vous."
       },
       {
+        "voId": "chr_0002_endminm_combat_outbattle_nor_01",
         "title": "Victoire au combat 1",
         "text": "Une nouvelle étape de franchie, Endfielders."
       },
       {
+        "voId": "chr_0002_endminm_combat_outbattle_nor_02",
         "title": "Victoire au combat 2",
         "text": "Beau travail, tout le monde."
       },
       {
+        "voId": "chr_0002_endminm_combat_outbattle_nor_echo2_01",
         "title": "Victoire au combat 3",
         "text": "On a bien géré ce combat !"
       },
       {
+        "voId": "chr_0002_endminm_combat_outbattle_hard_01",
         "title": "Victoire au combat 4",
         "text": "Tout le monde va bien ?"
       },
       {
+        "voId": "chr_0002_endminm_combat_battle_defeat_01",
         "title": "Défaite au combat",
         "text": "Pas d'inquiétude. On se regroupe et on avise."
       },
       {
+        "voId": "chr_0002_endminm_mono_attack_last_01",
         "title": "Coup final 1",
         "text": "Prends ça !"
       },
       {
+        "voId": "chr_0002_endminm_mono_attack_last_02",
         "title": "Coup final 2",
         "text": "Et voilà !"
       },
       {
+        "voId": "chr_0002_endminm_mono_skill_nor_01",
         "title": "Compétence de combat 1",
         "text": "À l'attaque !"
       },
       {
+        "voId": "chr_0002_endminm_mono_skill_nor_02",
         "title": "Compétence de combat 2",
         "text": "Ça va faire mal !"
       },
       {
+        "voId": "chr_0002_endminm_mono_skill_nor_03",
         "title": "Compétence de combat 3",
         "text": "On les anéantit !"
       },
       {
+        "voId": "chr_0002_endminm_combat_skill_comb_ready_01",
         "title": "Compétence de combo prête 1",
         "text": "Je suis prêt à frapper."
       },
       {
+        "voId": "chr_0002_endminm_combat_skill_comb_ready_02",
         "title": "Compétence de combo prête 2",
         "text": "Faites-moi confiance."
       },
       {
+        "voId": "chr_0002_endminm_mono_skill_comb_release_01",
         "title": "Utilisation de combo 1",
         "text": "Cristallisation !"
       },
       {
+        "voId": "chr_0002_endminm_mono_skill_comb_release_02",
         "title": "Utilisation de combo 2",
         "text": "Ton heure est venue !"
       },
       {
+        "voId": "chr_0002_endminm_mono_attack_extra_01",
         "title": "Coup fatal 1",
         "text": "Finissons-en !"
       },
       {
+        "voId": "chr_0002_endminm_mono_attack_extra_02",
         "title": "Coup fatal 2",
         "text": "Je te tiens !"
       },
       {
+        "voId": "chr_0002_endminm_mono_skill_ultimate_01",
         "title": "Ultime 1",
         "text": "Tu n'auras pas de deuxième chance."
       },
       {
+        "voId": "chr_0002_endminm_mono_skill_ultimate_02",
         "title": "Ultime 2",
         "text": "Ta fin est proche."
       },
       {
+        "voId": "chr_0002_endminm_mono_skill_ultimate_03",
         "title": "Ultime 3",
         "text": "Fin du spectacle."
       }

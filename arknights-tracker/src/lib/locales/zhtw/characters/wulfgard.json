@@ -121,318 +121,397 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0006_wolfgd_chrbark_squad_01",
         "title": "行動準備1",
         "text": "你來指揮。"
       },
       {
+        "voId": "chr_0006_wolfgd_chrbark_squad_02",
         "title": "行動準備2",
         "text": "現在出發？"
       },
       {
+        "voId": "chr_0006_wolfgd_chrbark_join_01",
         "title": "編入隊伍1",
         "text": "要我配合嗎？可以，只要他們跟得上。"
       },
       {
+        "voId": "chr_0006_wolfgd_chrbark_join_02",
         "title": "編入隊伍2",
         "text": "團隊作戰？知道了，我會做好該做的。"
       },
       {
+        "voId": "chr_0006_wolfgd_chrbark_weap_01",
         "title": "更換武器",
         "text": "很趁手的武器，多謝。"
       },
       {
+        "voId": "chr_0006_wolfgd_chrbark_gear_01",
         "title": "更換裝備",
         "text": "武裝到牙齒……聰明的決斷。"
       },
       {
+        "voId": "chr_0006_wolfgd_chrup_skill_01",
         "title": "解鎖天賦陣列",
         "text": "越嫻熟的技巧，越該用在關鍵時刻。"
       },
       {
+        "voId": "chr_0006_wolfgd_chrup_level_01",
         "title": "觀看作戰紀錄",
         "text": "面對敵人，狼群只會選最高效的圍獵手段。"
       },
       {
+        "voId": "chr_0006_wolfgd_chrup_promt01_01",
         "title": "精英化晉升1",
         "text": "謝謝你的認可，管理員，那我可以不寫這次的報告嗎？不能？……好吧。"
       },
       {
+        "voId": "chr_0006_wolfgd_chrup_promt02_01",
         "title": "精英化晉升2",
         "text": "如你所見，管理員，你讓我去做我擅長的工作，我就不會給出讓你失望的結果。"
       },
       {
+        "voId": "chr_0006_wolfgd_chrup_promt03_01",
         "title": "精英化晉升3",
         "text": "狼群的地位建立在鮮血之上，只需狩獵到足夠的獵物即可。我是否能認為你認可了我的狩獵，管理員？"
       },
       {
+        "voId": "chr_0006_wolfgd_chrup_promt04_01",
         "title": "精英化晉升4",
         "text": "我看過狼群遭受重創時的慘烈，所以才下定了決心，要為洛西、為狼群的其他人尋找新的出路。管理員，很慶幸能與你同行。"
       },
       {
+        "voId": "chr_0006_wolfgd_introduce_01",
         "title": "幹員報到",
         "text": "卡特洛·狼衛·盧皮諾，終末地危機處理小組成員。目前代表狼群氏族與你們合作，任何僱傭兵能幹的事我都能做。合約期內，我將成為你的獠牙。"
       },
       {
+        "voId": "chr_0006_wolfgd_mono_switch_01",
         "title": "待命1",
         "text": "有新任務？"
       },
       {
+        "voId": "chr_0006_wolfgd_mono_switch_02",
         "title": "待命2",
         "text": "我在。"
       },
       {
+        "voId": "chr_0006_wolfgd_sim_assign_work_01",
         "title": "進駐設施",
         "text": "這裡也缺人手？"
       },
       {
+        "voId": "chr_0006_wolfgd_sim_hello_lower_01",
         "title": "打招呼1",
         "text": "管理員。"
       },
       {
+        "voId": "chr_0006_wolfgd_sim_hello_max_01",
         "title": "打招呼2",
         "text": "管理員，要我同行嗎？我抽得出空。"
       },
       {
+        "voId": "chr_0006_wolfgd_sim_talk_lv01_01",
         "title": "帝江號閒聊1",
         "text": "和其他幹員合作並不算簡單。狼群的手段很難讓普通人立刻接受，更別提我本來就習慣獨來獨往。但如果是管理員您的要求……我會嘗試做出一些改變。"
       },
       {
+        "voId": "chr_0006_wolfgd_sim_talk_lv02_01",
         "title": "帝江號閒聊2",
         "text": "相比帝江號，我還是更習慣在開拓區待著。這裡太安逸了，容易讓人喪失該有的警惕。但洛西很喜歡這裡，能夠滿足她的好奇心。"
       },
       {
+        "voId": "chr_0006_wolfgd_sim_talk_lv02_02",
         "title": "帝江號閒聊3",
         "text": "老實說，我並沒有研究裂地者其他氏族的興趣。只是在荒地行走的日子久了，自然而然會牢記那些能夠保命的常識。對於狼群而言，求生意志就是最好的老師，也是唯一的信仰。"
       },
       {
+        "voId": "chr_0006_wolfgd_sim_talk_max_01",
         "title": "帝江號閒聊4",
         "text": "終末地的幹員來自塔衛二各個地方，其中有一些熟面孔……或者說，一些危險人物。我對你們的選擇保持信任，但如有必要，各位應該相信我的直覺。"
       },
       {
+        "voId": "chr_0006_wolfgd_sim_talk_max_02",
         "title": "帝江號閒聊5",
         "text": "我在檢查銃械，這是我的習慣。拿著彈盡的銃械，和赤裸裸地被丟在荒野中心沒有區別。你手無寸鐵，淪為獵物，一切技能和技巧都不再作數。那種感覺令人窒息……我在很小的時候體會過，所以，我會杜絕再次感受的可能。"
       },
       {
+        "voId": "chr_0006_wolfgd_sim_talk_max_03",
         "title": "帝江號閒聊6",
         "text": "我確實已經有一段時間沒回到過氏族的據點，更有很長一段時間沒有帶領過氏族的行動。我更擅長為他們開闢一片新的獵場，而不是成為每一次狩獵的頭狼。"
       },
       {
+        "voId": "chr_0006_wolfgd_sim_gift_give_01",
         "title": "贈送禮物",
         "text": "有空嗎？上次任務我發現了一些有趣的東西……特地帶給管理員的。"
       },
       {
+        "voId": "chr_0006_wolfgd_sim_gift_recv_01",
         "title": "接收禮物",
         "text": "給我的？謝謝，我會物盡其用的。"
       },
       {
+        "voId": "chr_0006_wolfgd_mono_self_line01",
         "title": "信賴對話1",
         "text": "我已經在按照終末地的需要改變對待獵物的方式了。如果是以往……獵物們從一開始就會「閉上嘴巴」。"
       },
       {
+        "voId": "chr_0006_wolfgd_mono_self_line02",
         "title": "信賴對話2",
         "text": "我想你應該已經意識到了……成為狼群的領袖從來不是我的目標，洛西比我更適合那個位置。至於終末地是否能成為「卡特洛·狼衛·盧皮諾」最後的歸處？我不知道，「裂地者」與你們想要實現的「理想」相差太遠。但是，管理員，至少在為終末地帶回成果的時候，我比我想的還要樂在其中。"
       },
       {
+        "voId": "chr_0006_wolfgd_mono_self_line03",
         "title": "信賴對話3",
         "text": "我時常會看著天空？是，我確實喜歡觀察天空。你好像很意外？天空是公開的情報板。你可以預測天氣，確定時間與方位，甚至能提前預判敵人的行動。天空之下，獵手們身處於一個公平的獵場。你也可以適當吸取一些經驗，管理員。"
       },
       {
+        "voId": "chr_0006_wolfgd_mono_self_line04",
         "title": "信賴對話4",
         "text": "「裂地者」的身分是我祖先們一次失敗的選擇，跟隨裂地者軍閥叛離文明環帶並沒有得到我們想要的秩序。我無法親自去問問長輩們是否後悔，但我從出生就在荒野上流血、廝殺……比旁人更清楚活下來的艱辛。佩麗卡監督說，我們能透過與終末地的合作擺脫這個身分……但我已接納了它的邏輯，我確實是裂地者。你會失望嗎，管理員？"
       },
       {
+        "voId": "chr_0006_wolfgd_mono_self_line05",
         "title": "信賴對話5",
         "text": "狼群氏族建立在一個簡單的邏輯上：弱小的人們需要共同獵殺強敵，才能在殘酷的環境中苟活。無論是氏族的秩序，還是「裂地者」的身分，都來源於此。可是，終末地呢？偉大的信念有時是一柄雙刃劍。狩獵可以重新開始，你卻不被允許失敗。這很殘酷，管理員。至少我能加入你的狩獵，分擔你的一些壓力。"
       },
       {
+        "voId": "chr_0006_wolfgd_mono_chat_line01",
         "title": "交談1",
         "text": "我知道力量並不代表一切，但在塔衛二，沒有力量通常不是什麼好事。"
       },
       {
+        "voId": "chr_0006_wolfgd_mono_chat_line02",
         "title": "交談2",
         "text": "洛西很愛收集這樣精巧的東西，雖然我不明白這些小玩意兒有什麼用，但她喜歡……只好多幫她找找了。"
       },
       {
+        "voId": "chr_0006_wolfgd_mono_chat_line03",
         "title": "交談3",
         "text": "不切實際的理想主義總是害人也害己。這個道理，我想大部分在開拓區待過的人都懂。區別在於，多數人自始至終只配當受害者。"
       },
       {
+        "voId": "chr_0006_wolfgd_mono_chat_line04",
         "title": "交談4",
         "text": "我確實更習慣一個人解決問題——不是認為自己有能力承擔一切，只是覺得有些事我做了，本該去做這些事的人……就能輕鬆一點。"
       },
       {
+        "voId": "chr_0006_wolfgd_mono_chat_line05",
         "title": "交談5",
         "text": "離群的狼依然不會輕易背棄狼群……這點毋庸置疑。但為了生存，或是難以放下的東西，總會有離群者踏上不歸路。我做不到去同情他們，也不打算干涉他們，但至少會尊重他們。"
       },
       {
+        "voId": "chr_0006_wolfgd_mono_about_line01",
         "title": "話題：狼群",
         "text": "直到今天，我仍在尋找那個屬於狼群的未來……與終末地的合作未必是最好的選擇，但在我看來，這依然是尤為重要且特殊的一步。全憑外力改變狼群固有的認知純屬妄想，但有時，變化也只是缺了一個契機——如何將「它」帶回去，正是我在反覆思考的事。"
       },
       {
+        "voId": "chr_0006_wolfgd_mono_about_line02",
         "title": "話題：洛西",
         "text": "我陪伴洛西的時間很少，但有時候看著現在的她……我每一次都會驚訝於她的成長。她與荒野共同呼吸，她調遣著狼的血脈。使用武器，覺醒技藝，學會狩獵，一切都水到渠成。我知道，她已經不是那個在浸血的襁褓中奄奄一息的嬰孩，她是盧皮諾家族的「狼珀」。我只會是狼群的爪牙，而她終會是狼群之心。"
       },
       {
+        "voId": "chr_0006_wolfgd_mono_about_line03",
         "title": "話題：裂地者",
         "text": "裂地者氏族的構成比世人想像得更加複雜。除了碾骨與狼群，也有沙盜這樣組織鬆散、只靠一艘私掠艦立足的異類。除此之外……灰疤氏族會在身上紋滿「誓歌」，沒人會想在太陽落山後和影顱氏族的刺客交手。這些能在荒地上倖存的小氏族，總是比一般人掌握更多活著的訣竅。"
       },
       {
+        "voId": "chr_0006_wolfgd_explore_point_common_01",
         "title": "發現資源1",
         "text": "那裡有些能帶走的東西。"
       },
       {
+        "voId": "chr_0006_wolfgd_explore_point_valub_01",
         "title": "發現資源2",
         "text": "特別的戰利品，我們應該拿下它們。"
       },
       {
+        "voId": "chr_0006_wolfgd_explore_find_locked_01",
         "title": "發現未探索區域",
         "text": "那附近我們還沒去過，最好留意一下。"
       },
       {
+        "voId": "chr_0006_wolfgd_explore_find_danger_01",
         "title": "發現強敵",
         "text": "棘手的味道，我們的對手並不簡單。"
       },
       {
+        "voId": "chr_0006_wolfgd_interact_mine_valub_01",
         "title": "採集礦物1",
         "text": "希望它們有足夠的價值，配得上我們耗費的功夫。"
       },
       {
+        "voId": "chr_0006_wolfgd_interact_mine_valub_echo2_01",
         "title": "採集礦物2",
         "text": "我一個人也……不，麻煩各位了。"
       },
       {
+        "voId": "chr_0006_wolfgd_interact_treasure_valub_01",
         "title": "打開儲藏箱",
         "text": "非凡的戰利品，這足以宣告狩獵的豐收。"
       },
       {
+        "voId": "chr_0006_wolfgd_interact_etherium_01",
         "title": "獲得醚質",
         "text": "醚質，如果終末地認為它有價值的話……"
       },
       {
+        "voId": "chr_0006_wolfgd_interact_blight_break_01",
         "title": "消除侵蝕",
         "text": "侵蝕會干擾行動計劃，正確的判斷。"
       },
       {
+        "voId": "chr_0006_wolfgd_interact_rest_01",
         "title": "休整",
         "text": "彈藥清點完畢，下一輪狩獵該開始了。"
       },
       {
+        "voId": "chr_0006_wolfgd_combat_suppuse_using_01",
         "title": "使用戰術物品1",
         "text": "小心點，別亂來。"
       },
       {
+        "voId": "chr_0006_wolfgd_combat_suppuse_getheal_01",
         "title": "使用戰術物品2",
         "text": "……緩過來了。"
       },
       {
+        "voId": "chr_0006_wolfgd_combat_remind_danger_01",
         "title": "危險提醒",
         "text": "注意閃開！"
       },
       {
+        "voId": "chr_0006_wolfgd_combat_hurt_lowhp_01",
         "title": "負傷",
         "text": "不必管我。"
       },
       {
+        "voId": "chr_0006_wolfgd_combat_dead_01",
         "title": "力竭",
         "text": "嗯……暫時撤退。"
       },
       {
+        "voId": "chr_0006_wolfgd_combat_remind_praise_01",
         "title": "小隊激勵1",
         "text": "有兩下子。"
       },
       {
+        "voId": "chr_0006_wolfgd_combat_remind_praise_02",
         "title": "小隊激勵2",
         "text": "精彩的配合。"
       },
       {
+        "voId": "chr_0006_wolfgd_combat_remind_praise_echo2_01",
         "title": "回應激勵1",
         "text": "還可以更好。"
       },
       {
+        "voId": "chr_0006_wolfgd_combat_remind_praise_echo2_02",
         "title": "回應激勵2",
         "text": "只是做了我該做的。"
       },
       {
+        "voId": "chr_0006_wolfgd_combat_intobattle_01",
         "title": "作戰開始1",
         "text": "我會找準時機。"
       },
       {
+        "voId": "chr_0006_wolfgd_combat_intobattle_echo2_01",
         "title": "作戰開始2",
         "text": "別在意我，照你的步調來。"
       },
       {
+        "voId": "chr_0006_wolfgd_combat_outbattle_nor_01",
         "title": "作戰勝利1",
         "text": "這是理所當然的結果。"
       },
       {
+        "voId": "chr_0006_wolfgd_combat_outbattle_nor_02",
         "title": "作戰勝利2",
         "text": "符合我先前的判斷。"
       },
       {
+        "voId": "chr_0006_wolfgd_combat_outbattle_nor_echo2_01",
         "title": "作戰勝利3",
         "text": "嗯，能贏就好。"
       },
       {
+        "voId": "chr_0006_wolfgd_combat_outbattle_hard_01",
         "title": "作戰勝利4",
         "text": "比預想的麻煩不少……但，勝者是我們，這就夠了。"
       },
       {
+        "voId": "chr_0006_wolfgd_combat_battle_defeat_01",
         "title": "作戰失敗",
         "text": "獵手與獵物本就是一念之差……重整旗鼓吧。"
       },
       {
+        "voId": "chr_0006_wolfgd_mono_attack_last_01",
         "title": "重擊1",
         "text": "安靜點！"
       },
       {
+        "voId": "chr_0006_wolfgd_mono_attack_last_02",
         "title": "重擊2",
         "text": "想逃？"
       },
       {
+        "voId": "chr_0006_wolfgd_mono_skill_nor_01",
         "title": "戰技1",
         "text": "速戰速決！"
       },
       {
+        "voId": "chr_0006_wolfgd_mono_skill_nor_02",
         "title": "戰技2",
         "text": "狼之血！"
       },
       {
+        "voId": "chr_0006_wolfgd_mono_skill_nor_03",
         "title": "戰技3",
         "text": "別擋路！"
       },
       {
+        "voId": "chr_0006_wolfgd_combat_skill_comb_ready_01",
         "title": "連攜技就緒1",
         "text": "彈藥補充完畢。"
       },
       {
+        "voId": "chr_0006_wolfgd_combat_skill_comb_ready_02",
         "title": "連攜技就緒2",
         "text": "到我了。"
       },
       {
+        "voId": "chr_0006_wolfgd_mono_skill_comb_release_01",
         "title": "連攜技1",
         "text": "我來處理。"
       },
       {
+        "voId": "chr_0006_wolfgd_mono_skill_comb_release_02",
         "title": "連攜技2",
         "text": "別掙扎了。"
       },
       {
+        "voId": "chr_0006_wolfgd_mono_attack_extra_01",
         "title": "處決1",
         "text": "閉嘴。"
       },
       {
+        "voId": "chr_0006_wolfgd_mono_attack_extra_02",
         "title": "處決2",
         "text": "解決你們！"
       },
       {
+        "voId": "chr_0006_wolfgd_mono_skill_ultimate_01",
         "title": "終結技1",
         "text": "獵物，一個不留！"
       },
       {
+        "voId": "chr_0006_wolfgd_mono_skill_ultimate_02",
         "title": "終結技2",
         "text": "撕咬吧！"
       },
       {
+        "voId": "chr_0006_wolfgd_mono_skill_ultimate_03",
         "title": "終結技3",
         "text": "群狼，圍獵！"
       }

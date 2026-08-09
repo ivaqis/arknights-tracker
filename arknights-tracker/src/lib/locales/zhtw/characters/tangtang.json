@@ -131,326 +131,407 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0027_tangtang_chrbark_squad_01",
         "title": "行動準備1",
         "text": "黑面煞，你要去哪裡？帶上我啊。"
       },
       {
+        "voId": "chr_0027_tangtang_chrbark_squad_02",
         "title": "行動準備2",
         "text": "終於要出門了嗎？我無聊得快長蘑菇了！"
       },
       {
+        "voId": "chr_0027_tangtang_chrbark_join_01",
         "title": "編入隊伍1",
         "text": "大當家在此，你、你，還有你，都聽我指揮！"
       },
       {
+        "voId": "chr_0027_tangtang_chrbark_join_02",
         "title": "編入隊伍2",
         "text": "你的忙，我肯定會幫。"
       },
       {
+        "voId": "chr_0027_tangtang_chrbark_weap_01",
         "title": "更換武器",
         "text": "這銃趁手，現在我的槍法更準了！"
       },
       {
+        "voId": "chr_0027_tangtang_chrbark_gear_01",
         "title": "更換裝備",
         "text": "這些裝備都給我了？來來來，好東西要一起用，這件歸你，這件歸我！"
       },
       {
+        "voId": "chr_0027_tangtang_chrup_skill_01",
         "title": "解鎖天賦陣列",
         "text": "又變厲害了！好，找紅臉婆練練去！"
       },
       {
+        "voId": "chr_0027_tangtang_chrup_level_01",
         "title": "觀看作戰紀錄",
         "text": "打左邊，打右邊！對對，就這樣……欸，這些人不賴，找來給我當手下吧！"
       },
       {
+        "voId": "chr_0027_tangtang_chrup_promt01_01",
         "title": "精英化晉升1",
         "text": "把我叫過來，就是為了誇我啊？那你再誇點，我就愛聽人說真話！"
       },
       {
+        "voId": "chr_0027_tangtang_chrup_promt02_01",
         "title": "精英化晉升2",
         "text": "又來幫我晉升？我就知道，你心裡最看重我啦！"
       },
       {
+        "voId": "chr_0027_tangtang_chrup_promt03_01",
         "title": "精英化晉升3",
         "text": "咱們兩個是過命的交情，不用這些虛的，只要有我一口湯，就有你一口肉——欸，我說反了？沒反！"
       },
       {
+        "voId": "chr_0027_tangtang_chrup_promt04_01",
         "title": "精英化晉升4",
         "text": "還要晉升？！我就一隻眼睛，看不了那麼多檔案！之前的建設計劃你先弄著……啥？才不是躲清閒，姑奶奶這是緩兵之計——練練再來！"
       },
       {
+        "voId": "chr_0027_tangtang_introduce_01",
         "title": "幹員報到",
         "text": "清波寨大當家湯湯，如約前來！你放心把這終末地交給我管，我保證讓它變成全塔衛二最厲害的地方——交計劃書給你？哎呀，當個老大，哪有這麼多事！咱們商量著辦就行！"
       },
       {
+        "voId": "chr_0027_tangtang_mono_switch_01",
         "title": "待命1",
         "text": "唉，我的寶貝！哼，別想從姑奶奶手裡溜走！"
       },
       {
+        "voId": "chr_0027_tangtang_mono_switch_02",
         "title": "待命2",
         "text": "嘎嗷——黑面煞，總算等到你了！"
       },
       {
+        "voId": "chr_0027_tangtang_sim_assign_work_01",
         "title": "進駐設施",
         "text": "行了行了，知道了，先按這個，再按那個，出事就找黑面煞嘛！"
       },
       {
+        "voId": "chr_0027_tangtang_sim_hello_lower_01",
         "title": "打招呼1",
         "text": "黑面煞，我在這呢！"
       },
       {
+        "voId": "chr_0027_tangtang_sim_hello_max_01",
         "title": "打招呼2",
         "text": "別偷偷湊熱鬧不叫我喔！"
       },
       {
+        "voId": "chr_0027_tangtang_sim_talk_lv01_01",
         "title": "帝江號閒聊1",
         "text": "你的手下都很厲害，但真的切磋起來，我也沒輸過誰！呃，嗯，唯一有點沒轍的就是……就是那些穿白袍的醫療幹員！他們說要幫我治那什麼礦石病，非拿針扎我屁股——呀啊啊過來了！黑面煞，讓我躲一躲！"
       },
       {
+        "voId": "chr_0027_tangtang_sim_talk_lv02_01",
         "title": "帝江號閒聊2",
         "text": "你這帝江號上的能人太多了，要是能把其中幾個收為己用……嘿嘿，黑面煞，我也不貪心，就把白面書生跟小青龍派給我！不行？那給我那個愛說話的，有三個腦袋的鐵面公！別胡說，它才不怕我呢，我們關係可好了！"
       },
       {
+        "voId": "chr_0027_tangtang_sim_talk_lv02_02",
         "title": "帝江號閒聊3",
         "text": "我覺得心煩時，去水邊叫幾聲，渾身就舒服了。像你這種每天都忙得要命，心裡裝著好多事的人，也該找個地方叫兩聲——那邊的平台怎麼樣？或者那個大窗戶？呿，能有什麼問題，一直憋著才是問題呢！"
       },
       {
+        "voId": "chr_0027_tangtang_sim_talk_max_01",
         "title": "帝江號閒聊4",
         "text": "從帝江號的窗戶能看到好多星星，跟我在祖泉邊睡覺時，水裡映著的那些星星一模一樣。飛船也是船，銀河也是河……這麼一想，帝江號跟清波寨也沒什麼不同嘛，都是好地方！"
       },
       {
+        "voId": "chr_0027_tangtang_sim_talk_max_02",
         "title": "帝江號閒聊5",
         "text": "這張賠償單……可不是我的錯！都怪那綠毛小巡衛，還我錢包也不直說，追了我一路，我還以為他要抓我。躲避的時候，咳咳，撞壞了幾個箱子……我沒心虛啊！哎呀，這不是以前在武陵，躲巡衛躲習慣了。"
       },
       {
+        "voId": "chr_0027_tangtang_sim_talk_max_03",
         "title": "帝江號閒聊6",
         "text": "管理員、管理員、管理員——哼哼，我跟小青龍打賭，我要是能堅持住叫你一天管理員，她就買一大堆好吃的給我！這次我贏定了，等著看她破財吧，黑面煞！欸？我沒叫，你聽錯了，剛才不算！"
       },
       {
+        "voId": "chr_0027_tangtang_sim_gift_give_01",
         "title": "贈送禮物",
         "text": "別問哪來的，收著，我的規矩就是論功行賞，你……你幹得不錯！"
       },
       {
+        "voId": "chr_0027_tangtang_sim_gift_recv_01",
         "title": "接收禮物",
         "text": "哎呀，這怎麼好意思……還有嗎？再來點？"
       },
       {
+        "voId": "chr_0027_tangtang_mono_self_line01",
         "title": "信賴對話1",
         "text": "說到武陵的美食，其他人告訴你是到處都有的東西，我推薦給你一個不一樣的！你去試試武陵城的牢飯，三菜一湯，還會給水果。我偷偷觀察過，犯人吃的跟巡衛吃的一模一樣，都是好東西。再跟你說個好看的地方，從地下密道偷偷向武陵爬時，會路過一處有光的地方，旁邊長著許多花，超漂亮的……可惜那地方已經被弭弗堵死了，呿！"
       },
       {
+        "voId": "chr_0027_tangtang_mono_self_line02",
         "title": "信賴對話2",
         "text": "其實我一直有個好奇的事，我親爹親娘到底是誰，為啥要把我放進水裡呢？雖然都說我是「河流的女兒」，但河又不可能生出個菲林……我聽爹說，我隨水而來的時候被放在了一個盆子裡，裹得緊緊的，綁著蝴蝶結……如果能見到他們，我想問問，肯定不是因為討厭才丟了我，對吧？反正……我不會把要丟的垃圾綁蝴蝶結。"
       },
       {
+        "voId": "chr_0027_tangtang_mono_self_line03",
         "title": "信賴對話3",
         "text": "別動！差點把我這竹條弄斷了！咳……最近太陽不是有點毒嘛，我就想說幫你編一頂帽子遮遮陽，正在量你的頭呢……怎麼，不相信我的手藝啊？寨子裡的竹籃、籮筐、架子——呃，那些確實不是我編的，但青蕪說親手做的東西才有分量……反正大當家的禮，不管什麼樣，你都得給我收下！"
       },
       {
+        "voId": "chr_0027_tangtang_mono_self_line04",
         "title": "信賴對話4",
         "text": "我知道，寨子的人叫我大當家，心裡認的卻是我哥。他們送我哥武器，帶他讀書……給我的是玩具、衣服，練武時也就是陪我做做樣子，直到現在，我也不認得幾個字。他們對我很好，都是為了哄我開心，所以只怪我自己沒有擔起責任……但現在不一樣，我會當好這個老大，不只為寨子和我自己……也為了相信我的大家。"
       },
       {
+        "voId": "chr_0027_tangtang_mono_self_line05",
         "title": "信賴對話5",
         "text": "黑面煞，你這人什麼都好，就有一個毛病——站姿實在是太端正，我沒辦法突襲你，不方便拍肩膀、摸腦袋啊……為啥？當然是為了嘉獎你，這是親信的證明……欸！你可別想摸我腦袋，我是老大，老大的頭不能摸！"
       },
       {
+        "voId": "chr_0027_tangtang_mono_chat_line01",
         "title": "交談1",
         "text": "游泳、撐船、打水漂，跟水有關的事情，我樣樣都在行！寨裡的人都說我是祖泉送來的孩子，水會跟我親近……但我悄悄告訴你，其實是因為我這隻眼看不清，跟別人一起游泳時總落在後面，我不服氣，天天去練……硬是被姑奶奶我練熟了用半邊眼看東西的本事，把他們都斬於座下！那句話叫什麼來著……對了，天道酬勤！"
       },
       {
+        "voId": "chr_0027_tangtang_mono_chat_line02",
         "title": "交談2",
         "text": "我的手銃是爹留下的，衣服是青蕪做的，頭髮是哥剪的，綁帶是水鈴縫的……寨子裡的一切都是這樣，沒什麼專門的職業，大家什麼都要會一點，互相幫助……對了，我剪頭髮的手藝比哥好多了，要不要試試？你這髮型，兩顆子彈就夠——欸，黑面煞，別跑！"
       },
       {
+        "voId": "chr_0027_tangtang_mono_chat_line03",
         "title": "交談3",
         "text": "冬天的時候，我們會把捕來的鱗晾在竹架上，做成鱗肉乾。那一兩個月，整個清波寨都臭得要命，我恨不得讓弭弗把我抓到武陵去算了。不過，等到它們完全變乾時，跟蔬菜一起炒一炒，蓋在飯上，又香得要命。我覺得啊，這就像我們身邊的事情，先苦後甜——最後總會是好結果的！"
       },
       {
+        "voId": "chr_0027_tangtang_mono_chat_line04",
         "title": "交談4",
         "text": "吶，再給你一張湯湯券，昨天你在餐廳幫我解圍，算我欠你一次。哼，但是那個什麼機，就是踹一腳會往外滾小瓶子的那個，真的不是我踢壞的……不說這個了，你手裡的湯湯券太多了，我得改改規矩！以後你黑面煞，存夠五百張才能兌一次……哼哼哼，這是我的券，當然是我說了算！"
       },
       {
+        "voId": "chr_0027_tangtang_mono_chat_line05",
         "title": "交談5",
         "text": "我遮著這隻眼，不是因為它得了礦石病，見不得光……而是它能讓我用出那個叫源石技藝的玩意兒。以前我控制不好，跟紅臉婆打架時把她弄傷了，現在她身上還留著一道疤……我怕再不小心傷人，從那時起就一直戴著眼罩。但你別說，大家都說這樣更有大當家的氣勢，所以就算後來能控制了，我也沒打算摘掉啦。"
       },
       {
+        "voId": "chr_0027_tangtang_mono_about_line01",
         "title": "話題：清波寨",
         "text": "其實一百多年前，清波寨的先祖們是厭倦了人們之間那些你爭我搶，才離開了那些總是在打架的地方，來到祖泉旁的。可是武陵人來了後，我們又開始不停爭鬥，就好像不管到哪，人們都躲不掉恩怨……因為這些東西是長在大家心裡的。但只要我管好這個家，糾紛就不會再重演……嗯，不止，我還要在終末地，跟你們一起做更大的事！"
       },
       {
+        "voId": "chr_0027_tangtang_mono_about_line02",
         "title": "話題：弭弗",
         "text": "你也知道，弭弗那傢伙以前是寨子的人，有一天不知道發什麼瘋，非要認那個姓莊的當老大，差點把姑奶奶氣死！我跟她說過好多次，我會成為比姓莊的更有本事的老大，但就算是這樣，她也沒回頭……胡扯，我去那麼多次武陵城，才不是去勸她回家的！我是去揍她的！"
       },
       {
+        "voId": "chr_0027_tangtang_mono_about_line03",
         "title": "話題：莊方宜",
         "text": "那個竄天雷天師？明明是很簡單的一件事，讓她說起來就彎彎繞繞，我總懷疑每句話都是陷阱，要琢磨好久好久。我跟她是兩種水，流不到一起，但是為了寨子的發展，又不得不聽她的……黑面煞，你幫我看看這個計劃書，什麼叫息什麼用地容積啊……"
       },
       {
+        "voId": "chr_0027_tangtang_mono_about_line04",
         "title": "話題：水竹鈴",
         "text": "寨子裡有人逝去時，我們就會放一個水竹鈴。我放的第一個……就是爹的，鈴落入祖泉後，水波一晃，就會響起來……哥說，那是爹在對我們說話。後來，我有什麼想不明白的，就去水邊，它總會回應我。但當我去問哥的事時，鈴不響了，我在水邊坐了好久，久到都睡著了……也許，爹是覺得這件事，必須靠我自己想通吧。"
       },
       {
+        "voId": "chr_0027_tangtang_mono_about_line05",
         "title": "話題：看書",
         "text": "我不喜歡看書，但小青龍上次送我的那幾本蠻有意思的。她說是宏山人給不識字的小孩子看的，可上面講的很多道理，比那些識字多、懂事多的人解釋得更明白。起碼，我拿給兄弟姐妹們看，大家都直拍大腿，說「在理」。要是這世上的人說起話，都像這些書一樣好懂，哪還會有這麼多問題跟誤會？"
       },
       {
+        "voId": "chr_0027_tangtang_explore_point_common_01",
         "title": "發現資源1",
         "text": "周圍有值錢的玩意兒，罩子放亮點！"
       },
       {
+        "voId": "chr_0027_tangtang_explore_point_valub_01",
         "title": "發現資源2",
         "text": "那邊有寶貝，來兩個幫手一起上！"
       },
       {
+        "voId": "chr_0027_tangtang_explore_find_locked_01",
         "title": "發現未探索區域",
         "text": "那附近還沒探過呢，踩踩點去！"
       },
       {
+        "voId": "chr_0027_tangtang_explore_find_danger_01",
         "title": "發現強敵",
         "text": "姑奶奶來了——等等，那邊好像是個難搞的……"
       },
       {
+        "voId": "chr_0027_tangtang_interact_mine_valub_01",
         "title": "採集礦物1",
         "text": "好漂亮的石頭！快挖快挖！"
       },
       {
+        "voId": "chr_0027_tangtang_interact_mine_valub_echo2_01",
         "title": "採集礦物2",
         "text": "有得賺，大家一起分分！"
       },
       {
+        "voId": "chr_0027_tangtang_interact_treasure_valub_01",
         "title": "打開儲藏箱",
         "text": "這些……真的沒人要？！我、我拿走了喔！"
       },
       {
+        "voId": "chr_0027_tangtang_interact_etherium_01",
         "title": "獲得醚質",
         "text": "這玩意兒能換錢嗎？"
       },
       {
+        "voId": "chr_0027_tangtang_interact_blight_break_01",
         "title": "消除侵蝕",
         "text": "好了好了，又能少走點彎路！"
       },
       {
+        "voId": "chr_0027_tangtang_interact_rest_01",
         "title": "休整",
         "text": "呼，累死我了……不行了？哼，姑奶奶就不認識「不行」這兩個字！走，咱們繼續！"
       },
       {
+        "voId": "chr_0027_tangtang_combat_suppuse_using_01",
         "title": "使用戰術物品1",
         "text": "有姑奶奶我罩著你呢！"
       },
       {
+        "voId": "chr_0027_tangtang_combat_suppuse_getheal_01",
         "title": "使用戰術物品2",
         "text": "總算舒服了！"
       },
       {
+        "voId": "chr_0027_tangtang_combat_remind_danger_01",
         "title": "危險提醒",
         "text": "愣著幹嘛？站到後面去！"
       },
       {
+        "voId": "chr_0027_tangtang_combat_hurt_lowhp_01",
         "title": "負傷",
         "text": "好、好睏……我得……撐住……"
       },
       {
+        "voId": "chr_0027_tangtang_combat_dead_01",
         "title": "力竭",
         "text": "今……今天先放過你……"
       },
       {
+        "voId": "chr_0027_tangtang_combat_remind_praise_01",
         "title": "小隊激勵1",
         "text": "不愧是我的手下！"
       },
       {
+        "voId": "chr_0027_tangtang_combat_remind_praise_02",
         "title": "小隊激勵2",
         "text": "咱們這個團夥，本事可太大了！"
       },
       {
+        "voId": "chr_0027_tangtang_combat_remind_praise_echo2_01",
         "title": "回應激勵1",
         "text": "受用，受用！"
       },
       {
+        "voId": "chr_0027_tangtang_combat_remind_praise_echo2_02",
         "title": "回應激勵2",
         "text": "下次，幹一票更大的？"
       },
       {
+        "voId": "chr_0027_tangtang_combat_intobattle_01",
         "title": "作戰開始1",
         "text": "哪個不識相的要來比劃比劃？"
       },
       {
+        "voId": "chr_0027_tangtang_combat_intobattle_echo2_01",
         "title": "作戰開始2",
         "text": "就得這樣嚇嚇他們！"
       },
       {
+        "voId": "chr_0027_tangtang_combat_outbattle_nor_01",
         "title": "作戰勝利1",
         "text": "打得可真痛快！"
       },
       {
+        "voId": "chr_0027_tangtang_combat_outbattle_nor_02",
         "title": "作戰勝利2",
         "text": "嘿嘿，都是我指揮得好！"
       },
       {
+        "voId": "chr_0027_tangtang_combat_outbattle_nor_echo2_01",
         "title": "作戰勝利3",
         "text": "這話中聽！"
       },
       {
+        "voId": "chr_0027_tangtang_combat_outbattle_hard_01",
         "title": "作戰勝利4",
         "text": "大家做得很好了，先歇歇，下次咱們再小心些！"
       },
       {
+        "voId": "chr_0027_tangtang_combat_battle_defeat_01",
         "title": "作戰失敗",
         "text": "看不得大家受苦……這仇我一定要幫你們報回來！"
       },
       {
+        "voId": "chr_0027_tangtang_mono_attack_last_01",
         "title": "重擊1",
         "text": "咻！"
       },
       {
+        "voId": "chr_0027_tangtang_mono_attack_last_02",
         "title": "重擊2",
         "text": "砰砰！"
       },
       {
+        "voId": "chr_0027_tangtang_mono_skill_nor_01",
         "title": "戰技1",
         "text": "鎖定你囉！"
       },
       {
+        "voId": "chr_0027_tangtang_mono_skill_nor_02",
         "title": "戰技2",
         "text": "踏潮來囉！"
       },
       {
+        "voId": "chr_0027_tangtang_mono_skill_nor_03",
         "title": "戰技3",
         "text": "比比誰快？"
       },
       {
+        "voId": "chr_0027_tangtang_combat_skill_comb_ready_01",
         "title": "連攜技就緒1",
         "text": "怎麼還不叫我？！"
       },
       {
+        "voId": "chr_0027_tangtang_combat_skill_comb_ready_02",
         "title": "連攜技就緒2",
         "text": "大駕光臨啦！"
       },
       {
+        "voId": "chr_0027_tangtang_mono_skill_comb_release_01",
         "title": "連攜技1",
         "text": "你有破綻！"
       },
       {
+        "voId": "chr_0027_tangtang_mono_skill_comb_release_02",
         "title": "連攜技2",
         "text": "小心腳滑！"
       },
       {
+        "voId": "chr_0027_tangtang_mono_attack_extra_01",
         "title": "處決1",
         "text": "露餡啦！"
       },
       {
+        "voId": "chr_0027_tangtang_mono_attack_extra_02",
         "title": "處決2",
         "text": "上當囉！"
       },
       {
+        "voId": "chr_0027_tangtang_mono_skill_ultimate_01",
         "title": "終結技1",
         "text": "看見你了——"
       },
       {
+        "voId": "chr_0027_tangtang_mono_skill_ultimate_02",
         "title": "終結技2",
         "text": "這招叫——站住別跑！"
       },
       {
+        "voId": "chr_0027_tangtang_mono_skill_ultimate_03",
         "title": "終結技3",
         "text": "隨波而逝吧！"
       }

@@ -136,326 +136,407 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0016_laevat_chrbark_squad_01",
         "title": "行动准备1",
         "text": "我讨厌麻烦，但更讨厌无聊。"
       },
       {
+        "voId": "chr_0016_laevat_chrbark_squad_02",
         "title": "行动准备2",
         "text": "接下来的事，最好值得我记住。"
       },
       {
+        "voId": "chr_0016_laevat_chrbark_join_01",
         "title": "编入队伍1",
         "text": "有我一个人就够了。"
       },
       {
+        "voId": "chr_0016_laevat_chrbark_join_02",
         "title": "编入队伍2",
         "text": "我是剑，我是火焰。"
       },
       {
+        "voId": "chr_0016_laevat_chrbark_weap_01",
         "title": "更换武器",
         "text": "这把剑不错，希望能承受住火焰的温度。"
       },
       {
+        "voId": "chr_0016_laevat_chrbark_gear_01",
         "title": "更换装备",
         "text": "这点重量不妨碍我挥剑。防火层？多事。"
       },
       {
+        "voId": "chr_0016_laevat_chrup_skill_01",
         "title": "激活天赋阵列",
         "text": "现在，了解我的实力了？"
       },
       {
+        "voId": "chr_0016_laevat_chrup_level_01",
         "title": "观看作战记录",
         "text": "值得参考。嗯，就这样。"
       },
       {
+        "voId": "chr_0016_laevat_chrup_promt01_01",
         "title": "精英化晋升1",
         "text": "这算什么？鼓励？肯定？不需要。只不过是碰见了一些碍眼的家伙，顺便把它们都烧成了灰而已。"
       },
       {
+        "voId": "chr_0016_laevat_chrup_promt02_01",
         "title": "精英化晋升2",
         "text": "所以按我晋升后的权限，可以要求马上举行一对一年度谈话了，对吧？走，现在陪我去吹吹风。"
       },
       {
+        "voId": "chr_0016_laevat_chrup_promt03_01",
         "title": "精英化晋升3",
         "text": "还来？我不需要信物作为嘉奖或回报。这样吧，如果是代表了共同的记忆，那我可以留下它，作为一种证明。"
       },
       {
+        "voId": "chr_0016_laevat_chrup_promt04_01",
         "title": "精英化晋升4",
         "text": "看来你们对我的依赖越来越深了。那这份荣誉，我就接受吧。从此以后，可以叫我终末地干员莱万汀……喂，别露出这种表情！"
       },
       {
+        "voId": "chr_0016_laevat_introduce_01",
         "title": "干员报到",
         "text": "我们不是见过了吗？比起自我介绍，还是用剑与火焰来记住我吧。"
       },
       {
+        "voId": "chr_0016_laevat_mono_switch_01",
         "title": "待命1",
         "text": "我讨厌乱指指点点的家伙，还好你不是。"
       },
       {
+        "voId": "chr_0016_laevat_mono_switch_02",
         "title": "待命2",
         "text": "你找我？想起了什么吗？"
       },
       {
+        "voId": "chr_0016_laevat_sim_assign_work_01",
         "title": "进驻设施",
         "text": "偶尔在这里浪费时间也不错……"
       },
       {
+        "voId": "chr_0016_laevat_sim_hello_lower_01",
         "title": "打招呼1",
         "text": "啊，你在这里。"
       },
       {
+        "voId": "chr_0016_laevat_sim_hello_max_01",
         "title": "打招呼2",
         "text": "是你……别误会，我没在特意等你。"
       },
       {
+        "voId": "chr_0016_laevat_sim_talk_lv01_01",
         "title": "帝江号闲聊1",
         "text": "为什么在这里无所事事？出发，去舰桥，把你过去的足迹和未来的目的地都指给我看。"
       },
       {
+        "voId": "chr_0016_laevat_sim_talk_lv02_01",
         "title": "帝江号闲聊2",
         "text": "嗯……我为食堂有无限量供应的冰淇淋，向后勤部门表达崇高的敬意。要帮你拿一份吗？"
       },
       {
+        "voId": "chr_0016_laevat_sim_talk_lv02_02",
         "title": "帝江号闲聊3",
         "text": "待会儿有任务要去处理，一起？不，不用协议传送，我更喜欢用降落舱，带着火焰和呼啸直接砸到他们头上。"
       },
       {
+        "voId": "chr_0016_laevat_sim_talk_max_01",
         "title": "帝江号闲聊4",
         "text": "感觉有点冷？是我要求把温控度数调低的，谁让这艘船连露天吹风的地方都没有。要是受不了的话，就站得离我近点儿。"
       },
       {
+        "voId": "chr_0016_laevat_sim_talk_max_02",
         "title": "帝江号闲聊5",
         "text": "空闲的时候，我能边吃冰淇淋边盯着外面看一整天。脑海里有成百上千段记忆，却没有哪一段是从这个角度看着大地与星空的。"
       },
       {
+        "voId": "chr_0016_laevat_sim_talk_max_03",
         "title": "帝江号闲聊6",
         "text": "还被困在回忆里？哼，想不起来就别想了。记住接下来发生的事情。"
       },
       {
+        "voId": "chr_0016_laevat_sim_gift_give_01",
         "title": "赠送礼物",
         "text": "给你的，作为你一直记住我的回报。嗯？不会忘记在意的人本身就是回报？嘁……"
       },
       {
+        "voId": "chr_0016_laevat_sim_gift_recv_01",
         "title": "接收礼物",
         "text": "哦？我不是很喜欢接受礼物，因为最后总是会忘记。不过既然是你的……那就另当别论。"
       },
       {
+        "voId": "chr_0016_laevat_mono_self_line01",
         "title": "信赖对话1",
         "text": "“莱万汀”，没错，我亲自选的，来自那把剑。有人说不算真名？它被我驯服之后，这名字当然也就属于我了。就像那些记忆——要做它们的支配者，而不是被支配。"
       },
       {
+        "voId": "chr_0016_laevat_mono_self_line02",
         "title": "信赖对话2",
         "text": "我的脑海里依然充斥着各种各样的记忆碎片，它们没有消失，只是我暂时不去看而已。如果哪一天收拾完了眼前的杂事，或许我会照着这些“记忆”，开始新的旅行。"
       },
       {
+        "voId": "chr_0016_laevat_mono_self_line03",
         "title": "信赖对话3",
         "text": "史尔特尔……她的怒火，她的失落，她的茫然……都还留在我脑海里。那么真实，那么挥之不去。不过，一想到她自己最终做出的选择，我也就释然了。"
       },
       {
+        "voId": "chr_0016_laevat_mono_self_line04",
         "title": "信赖对话4",
         "text": "再旅者的使命？我不在乎。那不过是又一个被硬塞给我的“记忆”罢了。真让我同意与你们并肩作战的，是在这里遇到的人、走过的路、寄宿过的甲板、收拾过的恶棍……这些真正属于我的记忆。"
       },
       {
+        "voId": "chr_0016_laevat_mono_self_line05",
         "title": "信赖对话5",
         "text": "之前不理解，为什么你不能和我一样放下过去。到了终末地，才看清楚——你是被层层期待包围的“管理员”，是每个人心目中“救世主”的投射。但一个人真正的模样，不该只由他人的愿望所塑造，所以你还是要通过记忆找回自我。在这条路上，无论去哪儿，都可以叫我同行。"
       },
       {
+        "voId": "chr_0016_laevat_mono_chat_line01",
         "title": "交谈1",
         "text": "这道残缺的“环”？就当是我的宠物兼“施术单元”吧。终末地的武库工程师研究过它的具体原理，试图修复它……但被它自己阻止了。"
       },
       {
+        "voId": "chr_0016_laevat_mono_chat_line02",
         "title": "交谈2",
         "text": "来了？帮我看看这个：华法琳寄来的一幅拼图，说上面是泰拉的风景、人群、历史……大得出奇，耗了我很长时间，到现在都还没拼完。别盯着残损的地方看，那些烧焦的部分和我无关，收到的时候就是如此。"
       },
       {
+        "voId": "chr_0016_laevat_mono_chat_line03",
         "title": "交谈3",
         "text": "在塔卫二执行任务的夜晚，我会梦见帝江号，还有终末地的人与事。我等待着，把脑海里那些不属于我的记忆一点一点遗忘，再用我亲身经历的记忆重新填满。"
       },
       {
+        "voId": "chr_0016_laevat_mono_chat_line04",
         "title": "交谈4",
         "text": "为什么而挥剑战斗？为了有朝一日站在山巅，目睹世界被火海吞噬……你这是什么表情，我只是讲述了一个困扰我很久的梦魇而已。放心，无论什么时候，什么地方，我都不会让它成真的。"
       },
       {
+        "voId": "chr_0016_laevat_mono_chat_line05",
         "title": "交谈5",
         "text": "有时候是在荒野中徘徊的难民，有时候却成了摧毁城市的刽子手；前一刻还在庭院里修剪花朵，下一刻就在实验室里忍受刺鼻的药剂味；和看不清面目的人决斗，但不知道为何拔剑……别打瞌睡，我才刚开了头呢。"
       },
       {
+        "voId": "chr_0016_laevat_mono_about_line01",
         "title": "话题：塞什卡",
         "text": "家乡？我到过一个叫“塞什卡”的地方，那里的建筑、语言、节日、巫术……的确有点“家”的熟悉感。不过我不想轻易再去了——他们有点过于热情，还有人管我叫“炎魔”……我实在不耐烦，在那里闹出了点乱子……"
       },
       {
+        "voId": "chr_0016_laevat_mono_about_line02",
         "title": "话题：伊冯",
         "text": "那个粉红头发的瓦伊凡经常来找我测试她的“速冻仔”，可惜没有一次能熄灭我的火焰。但她制作的冰淇淋看起来挺潮，尝起来也不错。"
       },
       {
+        "voId": "chr_0016_laevat_mono_about_line03",
         "title": "话题：众生长地",
         "text": "“火在风手里招致灾难，火在人手里成为伙伴。”有个众生长地的游人这么跟我说。她不仅不畏惧火焰，反而教我在荒野上烧出一条“防火线”，把蔓延的山火阻挡在了另一边。脱险的村民把我们当成英雄，但我只挂念从火里救出的那只云兽。可惜，留给她了。"
       },
       {
+        "voId": "chr_0016_laevat_mono_about_line04",
         "title": "话题：环塔商会",
         "text": "有件事，人事部门让我自己找你处理。喏，就是这张通缉令。没什么大不了的，只是刚离开罗德岛的时候，在一个叫“艾什柏环岛”的地方放了几把火而已。既然是不干不净的生意，就该想到会有“引火烧身”的一天。"
       },
       {
+        "voId": "chr_0016_laevat_mono_about_line05",
         "title": "话题：萨米",
         "text": "再说一遍，我并没有真正去过泰拉，所以不要跟我聊那里的风土人情……萨米除外。听说那些人的“家乡”直接驮着他们来到塔卫二了？什么时候有任务去那里的话，叫上我。"
       },
       {
+        "voId": "chr_0016_laevat_explore_point_common_01",
         "title": "发现资源1",
         "text": "那边有些东西，没用的话，就拿来试剑吧。"
       },
       {
+        "voId": "chr_0016_laevat_explore_point_valub_01",
         "title": "发现资源2",
         "text": "那边有你不该遗忘的东西。"
       },
       {
+        "voId": "chr_0016_laevat_explore_find_locked_01",
         "title": "发现未探索区域",
         "text": "放心去看看吧，跟在我身后就行了。"
       },
       {
+        "voId": "chr_0016_laevat_explore_find_danger_01",
         "title": "发现强敌",
         "text": "看见那个家伙了？要我出手吗？"
       },
       {
+        "voId": "chr_0016_laevat_interact_mine_valub_01",
         "title": "采集矿物1",
         "text": "真正有价值的东西经得住火炼。"
       },
       {
+        "voId": "chr_0016_laevat_interact_mine_valub_echo2_01",
         "title": "采集矿物2",
         "text": "太慢了，我不喜欢干等着。"
       },
       {
+        "voId": "chr_0016_laevat_interact_treasure_valub_01",
         "title": "打开储藏箱",
         "text": "我记得你喜欢这些。"
       },
       {
+        "voId": "chr_0016_laevat_interact_etherium_01",
         "title": "获得醚质",
         "text": "醚质……和记忆一样飘忽不定。"
       },
       {
+        "voId": "chr_0016_laevat_interact_blight_break_01",
         "title": "消除侵蚀",
         "text": "警惕比火焰更危险的存在。"
       },
       {
+        "voId": "chr_0016_laevat_interact_rest_01",
         "title": "休整",
         "text": "如果还觉得冷，可以往我这边靠。"
       },
       {
+        "voId": "chr_0016_laevat_combat_suppuse_using_01",
         "title": "使用战术物品1",
         "text": "我没兴趣看你硬撑。"
       },
       {
+        "voId": "chr_0016_laevat_combat_suppuse_getheal_01",
         "title": "使用战术物品2",
         "text": "哼，不碍事了。"
       },
       {
+        "voId": "chr_0016_laevat_combat_remind_danger_01",
         "title": "危险提醒",
         "text": "你想发愣到什么时候？"
       },
       {
+        "voId": "chr_0016_laevat_combat_hurt_lowhp_01",
         "title": "负伤",
         "text": "啧……死不了。"
       },
       {
+        "voId": "chr_0016_laevat_combat_dead_01",
         "title": "力竭",
         "text": "可恶……这失败的记忆……"
       },
       {
+        "voId": "chr_0016_laevat_combat_remind_praise_01",
         "title": "小队激励1",
         "text": "噢，我会记住。"
       },
       {
+        "voId": "chr_0016_laevat_combat_remind_praise_02",
         "title": "小队激励2",
         "text": "嗯，不错，下次我来。"
       },
       {
+        "voId": "chr_0016_laevat_combat_remind_praise_echo2_01",
         "title": "回应激励1",
         "text": "我知道。"
       },
       {
+        "voId": "chr_0016_laevat_combat_remind_praise_echo2_02",
         "title": "回应激励2",
         "text": "分内之事。"
       },
       {
+        "voId": "chr_0016_laevat_combat_intobattle_01",
         "title": "作战开始1",
         "text": "我已经等很久了。"
       },
       {
+        "voId": "chr_0016_laevat_combat_intobattle_echo2_01",
         "title": "作战开始2",
         "text": "早该动手了。"
       },
       {
+        "voId": "chr_0016_laevat_combat_outbattle_nor_01",
         "title": "作战胜利1",
         "text": "连热身都算不上。"
       },
       {
+        "voId": "chr_0016_laevat_combat_outbattle_nor_02",
         "title": "作战胜利2",
         "text": "胜利是理所应当的。"
       },
       {
+        "voId": "chr_0016_laevat_combat_outbattle_nor_echo2_01",
         "title": "作战胜利3",
         "text": "那就和你们一起欢呼吧。"
       },
       {
+        "voId": "chr_0016_laevat_combat_outbattle_hard_01",
         "title": "作战胜利4",
         "text": "已经做得很好了。下一次先把棘手的交给我。"
       },
       {
+        "voId": "chr_0016_laevat_combat_battle_defeat_01",
         "title": "作战失败",
         "text": "我不会再让这种情况发生。"
       },
       {
+        "voId": "chr_0016_laevat_mono_attack_last_01",
         "title": "重击1",
         "text": "斩断！"
       },
       {
+        "voId": "chr_0016_laevat_mono_attack_last_02",
         "title": "重击2",
         "text": "破灭！"
       },
       {
+        "voId": "chr_0016_laevat_mono_skill_nor_01",
         "title": "战技1",
         "text": "熔火！"
       },
       {
+        "voId": "chr_0016_laevat_mono_skill_nor_02",
         "title": "战技2",
         "text": "烧尽！"
       },
       {
+        "voId": "chr_0016_laevat_mono_skill_nor_03",
         "title": "战技3",
         "text": "被吞没吧！"
       },
       {
+        "voId": "chr_0016_laevat_combat_skill_comb_ready_01",
         "title": "连携技就绪1",
         "text": "让我来！"
       },
       {
+        "voId": "chr_0016_laevat_combat_skill_comb_ready_02",
         "title": "连携技就绪2",
         "text": "烈焰将至！"
       },
       {
+        "voId": "chr_0016_laevat_mono_skill_comb_release_01",
         "title": "连携技1",
         "text": "焚毁！"
       },
       {
+        "voId": "chr_0016_laevat_mono_skill_comb_release_02",
         "title": "连携技2",
         "text": "灰飞烟灭吧！"
       },
       {
+        "voId": "chr_0016_laevat_mono_attack_extra_01",
         "title": "处决1",
         "text": "别想逃！"
       },
       {
+        "voId": "chr_0016_laevat_mono_attack_extra_02",
         "title": "处决2",
         "text": "去死吧！"
       },
       {
+        "voId": "chr_0016_laevat_mono_skill_ultimate_01",
         "title": "终结技1",
         "text": "火焰，照亮黄昏！"
       },
       {
+        "voId": "chr_0016_laevat_mono_skill_ultimate_02",
         "title": "终结技2",
         "text": "焚烧黑暗！"
       },
       {
+        "voId": "chr_0016_laevat_mono_skill_ultimate_03",
         "title": "终结技3",
         "text": "你的末日到了！"
       }

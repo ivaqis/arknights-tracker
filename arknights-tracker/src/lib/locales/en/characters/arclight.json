@@ -125,326 +125,407 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0007_ikut_chrbark_squad_01",
         "title": "Operation Prep 1",
         "text": "Are you ready? The wildlands are filled with danger."
       },
       {
+        "voId": "chr_0007_ikut_chrbark_squad_02",
         "title": "Operation Prep 2",
         "text": "The wind never stops. Neither will I."
       },
       {
+        "voId": "chr_0007_ikut_chrbark_join_01",
         "title": "Adding to Team 1",
         "text": "Finally, a breath of fresh air. I almost forgot the smell of the earth."
       },
       {
+        "voId": "chr_0007_ikut_chrbark_join_02",
         "title": "Adding to Team 2",
         "text": "You can go as fast as you can. Don't worry. I always keep up."
       },
       {
+        "voId": "chr_0007_ikut_chrbark_weap_01",
         "title": "Switching Weapon",
         "text": "I can feel it breathing, and how it is a match made for me."
       },
       {
+        "voId": "chr_0007_ikut_chrbark_gear_01",
         "title": "Switching Gear",
         "text": "Such craftwork... This precision is rare, even amongst all the Aldertones' work I've known."
       },
       {
+        "voId": "chr_0007_ikut_chrup_skill_01",
         "title": "Ability Matrix Activation",
         "text": "My Aldertone taught me differently, but you aim to reach the same goals. I have been enlightened."
       },
       {
+        "voId": "chr_0007_ikut_chrup_level_01",
         "title": "Watching Combat Records",
         "text": "Living in the wildlands teaches you things... And such lessons help forge a keen blade."
       },
       {
+        "voId": "chr_0007_ikut_chrup_promt01_01",
         "title": "Operator Promotion 1",
         "text": "Promotion...? It means that I've earned your approval? Then I ... I'm pleased to be approved."
       },
       {
+        "voId": "chr_0007_ikut_chrup_promt02_01",
         "title": "Operator Promotion 2",
         "text": "With honor comes duty. All of this serves as a reminder to help more people."
       },
       {
+        "voId": "chr_0007_ikut_chrup_promt03_01",
         "title": "Operator Promotion 3",
         "text": "Nature does not teach us survival. It merely leaves a trail for us. I once did my best to adapt... Now ... I'm beginning to understand how it works."
       },
       {
+        "voId": "chr_0007_ikut_chrup_promt04_01",
         "title": "Operator Promotion 4",
         "text": "I've learned much traveling with you. I'm starting to understand why the hanna verses led me here to your side. I shall use the knowledge well."
       },
       {
+        "voId": "chr_0007_ikut_introduce_01",
         "title": "Operator Reporting for Duty",
         "text": "I am Ekut. Callsign is Arclight. I am not a trained weaver of words, but I wish you well and may you flow like a rising river, Endfielders."
       },
       {
+        "voId": "chr_0007_ikut_mono_switch_01",
         "title": "Standing by 1",
         "text": "The path ahead has been revealed."
       },
       {
+        "voId": "chr_0007_ikut_mono_switch_02",
         "title": "Standing by 2",
         "text": "I'm primed for optimal performance."
       },
       {
+        "voId": "chr_0007_ikut_sim_assign_work_01",
         "title": "Assigning to Facility",
         "text": "On it. We Songseekers never rest."
       },
       {
+        "voId": "chr_0007_ikut_sim_hello_lower_01",
         "title": "Greeting 1",
         "text": "Where do the winds hail from today, Endmin?"
       },
       {
+        "voId": "chr_0007_ikut_sim_hello_max_01",
         "title": "Greeting 2",
         "text": "Coming back from a trip to the surface, Endmin? You smell of the wildlands."
       },
       {
+        "voId": "chr_0007_ikut_sim_talk_lv01_01",
         "title": "Dijiang Idle Chatter 1",
         "text": "Repairing an iron steed is like treating a cystybeast. One must listen closely before administering the treatment."
       },
       {
+        "voId": "chr_0007_ikut_sim_talk_lv02_01",
         "title": "Dijiang Idle Chatter 2",
         "text": "The stars here are different from what we see from the wildlands... But both vantages are equally enthralling."
       },
       {
+        "voId": "chr_0007_ikut_sim_talk_lv02_02",
         "title": "Dijiang Idle Chatter 3",
         "text": "I am studying those clouds. Their sharp edges herald a storm. Be wary if your next mission takes you down there."
       },
       {
+        "voId": "chr_0007_ikut_sim_talk_max_01",
         "title": "Dijiang Idle Chatter 4",
         "text": "Your hair is lovely, like beast hide wet with the dew of dawn. You've never seen it? Well, it's just beautiful."
       },
       {
+        "voId": "chr_0007_ikut_sim_talk_max_02",
         "title": "Dijiang Idle Chatter 5",
         "text": "Ever seen the Prairie Migrations? An army of beasts and wagons chasing the rain and clouds. Such are the things I wish to protect."
       },
       {
+        "voId": "chr_0007_ikut_sim_talk_max_03",
         "title": "Dijiang Idle Chatter 6",
         "text": "You often lose yourself gazing upon this world. I think I know how you feel. Our hearts always yearn for places we care for, no matter how far away they may be."
       },
       {
+        "voId": "chr_0007_ikut_sim_gift_give_01",
         "title": "Offering Gifts",
         "text": "I brought you something. A gift of the wilds. I hope you like it."
       },
       {
+        "voId": "chr_0007_ikut_sim_gift_recv_01",
         "title": "Accepting Gifts",
         "text": "For me? Gifts are important in the wildlands... I shall treasure this one."
       },
       {
+        "voId": "chr_0007_ikut_mono_self_line01",
         "title": "Trust Dialog 1",
         "text": "I recommend learning basic wildland survival, Endmin. Handcrafting long-ear traps is a good place to start. This I can teach you."
       },
       {
+        "voId": "chr_0007_ikut_mono_self_line02",
         "title": "Trust Dialog 2",
         "text": "Life in the wildlands is difficult, but it is also beautiful. Like the clear skies ending a long monsoon, like a hatching fowlbeast under the moon."
       },
       {
+        "voId": "chr_0007_ikut_mono_self_line03",
         "title": "Trust Dialog 3",
         "text": "There is nothing mysterious about old devices working better when cobbled together. Yoke two unfamiliar burdenbeasts to the same wagon and give them time. They will eventually become a good team."
       },
       {
+        "voId": "chr_0007_ikut_mono_self_line04",
         "title": "Trust Dialog 4",
         "text": "I started my wandering to look for answers. The wildlands have been unbalanced and I must do something. I listened to the lapping lakes and the whispering woods. And now, I wish to hear your voice."
       },
       {
+        "voId": "chr_0007_ikut_mono_self_line05",
         "title": "Trust Dialog 5",
         "text": "I shall weave these tales into the hanna of our journey. This will take time, for too many things are worthy of song. Once the hanna is complete, you shall be the first to hear it."
       },
       {
+        "voId": "chr_0007_ikut_mono_chat_line01",
         "title": "Chat 1",
         "text": "Those who wish to live will make themselves heard. And the Songseekers who wander shall always hear. Such is the purpose of the Hannabit Circuit."
       },
       {
+        "voId": "chr_0007_ikut_mono_chat_line02",
         "title": "Chat 2",
         "text": "Being a friend of the wildlander tribes is simple. We focus on what matters: the weather, the food, and the dangers. These alone take up much of our time."
       },
       {
+        "voId": "chr_0007_ikut_mono_chat_line03",
         "title": "Chat 3",
         "text": "Every Songseeker of the Hannabit Circuit knows the hannas by heart. It isn't hard. The verses cover every aspect of our lives. Likewise, we are woven into the verses as well."
       },
       {
+        "voId": "chr_0007_ikut_mono_chat_line04",
         "title": "Chat 4",
         "text": "My Aldertone told me about Terra and cities that move to avoid Catastrophes. It seems we have inherited our ancestral practice, but just in another form."
       },
       {
+        "voId": "chr_0007_ikut_mono_chat_line05",
         "title": "Chat 5",
         "text": "You can trade used goods in certain wildland bazaars, but one must be patient to find a good deal. I modified an old Kjersch device for my communicator. They make things that work reliably in extreme environments."
       },
       {
+        "voId": "chr_0007_ikut_mono_about_line01",
         "title": "Topic: Cities",
         "text": "Talos-II is bigger than I thought. I once believed that every city is just another arrangement of steel, roads, and lights. But when I actually visited them, I realized every city had its own pulse and vibe. The distinction is more striking than two pastures of different grasses."
       },
       {
+        "voId": "chr_0007_ikut_mono_about_line02",
         "title": "Topic: The Endministrator",
         "text": "I have traveled much, and tales about you are sung by even the most distant of tribes. Though these stories may differ wildly, one amazing thing remains the same — hope is always bound to your name."
       },
       {
+        "voId": "chr_0007_ikut_mono_about_line03",
         "title": "Topic: Hanna Songs",
         "text": "A dying nomad sang our very first hanna and it had but three lines. These verses gave birth to the name of the Hannabit Circuit. And starting with the first Aldertone, the hanna has led the wandering Songseekers till they, too, become part of the song."
       },
       {
+        "voId": "chr_0007_ikut_mono_about_line04",
         "title": "Topic: Aldertones",
         "text": "The Aldertones rarely speak directly. Orisha said that the hanna contained all the knowledge we need. She taught me through her actions. We must help each other in order to survive in this world."
       },
       {
+        "voId": "chr_0007_ikut_mono_about_line05",
         "title": "Topic: Her Tribe",
         "text": "I grew up in a small tribe with no more than a hundred souls. It was all I knew before I started my journey. It taught me to milk the cystybeasts, ride my iron steed, and survive the wildlands. I never left it. I simply brought it with me."
       },
       {
+        "voId": "chr_0007_ikut_explore_point_common_01",
         "title": "Resource/Collectible Detected 1",
         "text": "If it helps with survival, bring it."
       },
       {
+        "voId": "chr_0007_ikut_explore_point_valub_01",
         "title": "Resource/Collectible Detected 2",
         "text": "My Aldertone will be interested in these."
       },
       {
+        "voId": "chr_0007_ikut_explore_find_locked_01",
         "title": "Unexplored Area Detected",
         "text": "Keep up. We need a closer look."
       },
       {
+        "voId": "chr_0007_ikut_explore_find_danger_01",
         "title": "Powerful Enemy Discovered",
         "text": "I sense danger. This one won't go down easily."
       },
       {
+        "voId": "chr_0007_ikut_interact_mine_valub_01",
         "title": "Mining 1",
         "text": "The bounties of the land."
       },
       {
+        "voId": "chr_0007_ikut_interact_mine_valub_echo2_01",
         "title": "Mining 2",
         "text": "Let me do it. I'm good with physical work."
       },
       {
+        "voId": "chr_0007_ikut_interact_treasure_valub_01",
         "title": "Opening a Crate",
         "text": "A rarity in the wildlands. We'll make good use of it."
       },
       {
+        "voId": "chr_0007_ikut_interact_etherium_01",
         "title": "Acquiring Aurylene",
         "text": "We usually bottle them to give light."
       },
       {
+        "voId": "chr_0007_ikut_interact_blight_break_01",
         "title": "Eliminating the Blight",
         "text": "We should let Nature take its course."
       },
       {
+        "voId": "chr_0007_ikut_interact_rest_01",
         "title": "Rest",
         "text": "This reminds me of campfires in the wildlands. Both seem to share the same warmth."
       },
       {
+        "voId": "chr_0007_ikut_combat_suppuse_using_01",
         "title": "Tactical Use 1",
         "text": "Steady your breathing."
       },
       {
+        "voId": "chr_0007_ikut_combat_suppuse_getheal_01",
         "title": "Tactical Use 2",
         "text": "Returning is my strength."
       },
       {
+        "voId": "chr_0007_ikut_combat_remind_danger_01",
         "title": "Danger Warning",
         "text": "Don't stop. Keep moving."
       },
       {
+        "voId": "chr_0007_ikut_combat_hurt_lowhp_01",
         "title": "Injured",
         "text": "Still in the fight, just a bit slower."
       },
       {
+        "voId": "chr_0007_ikut_combat_dead_01",
         "title": "0 HP",
         "text": "Sorry ... I wish I could help you more..."
       },
       {
+        "voId": "chr_0007_ikut_combat_remind_praise_01",
         "title": "Team Encouragement 1",
         "text": "You responded like lightning!"
       },
       {
+        "voId": "chr_0007_ikut_combat_remind_praise_02",
         "title": "Team Encouragement 2",
         "text": "Like wind and thunder we gave them a storm."
       },
       {
+        "voId": "chr_0007_ikut_combat_remind_praise_echo2_01",
         "title": "Encouragement Response 1",
         "text": "It's what I'm expected to do."
       },
       {
+        "voId": "chr_0007_ikut_combat_remind_praise_echo2_02",
         "title": "Encouragement Response 2",
         "text": "Just being part of the team."
       },
       {
+        "voId": "chr_0007_ikut_combat_intobattle_01",
         "title": "Combat Begins 1",
         "text": "I'm in the flow."
       },
       {
+        "voId": "chr_0007_ikut_combat_intobattle_echo2_01",
         "title": "Combat Begins 2",
         "text": "I'll leave that side to you."
       },
       {
+        "voId": "chr_0007_ikut_combat_outbattle_nor_01",
         "title": "Combat Victory 1",
         "text": "To serenity they shall return."
       },
       {
+        "voId": "chr_0007_ikut_combat_outbattle_nor_02",
         "title": "Combat Victory 2",
         "text": "I pray that the land accepts you all."
       },
       {
+        "voId": "chr_0007_ikut_combat_outbattle_nor_echo2_01",
         "title": "Combat Victory 3",
         "text": "Such is the will of Nature."
       },
       {
+        "voId": "chr_0007_ikut_combat_outbattle_hard_01",
         "title": "Combat Victory 4",
         "text": "Every wildland being must endure hardship to grow."
       },
       {
+        "voId": "chr_0007_ikut_combat_battle_defeat_01",
         "title": "Combat Defeat",
         "text": "Even the most experienced tuskbeast pack can fail to bring down their prey. At least we learned something from this hunt."
       },
       {
+        "voId": "chr_0007_ikut_mono_attack_last_01",
         "title": "Final Strike 1",
         "text": "Break!"
       },
       {
+        "voId": "chr_0007_ikut_mono_attack_last_02",
         "title": "Final Strike 2",
         "text": "Shatter!"
       },
       {
+        "voId": "chr_0007_ikut_mono_skill_nor_01",
         "title": "Battle Skill 1",
         "text": "Raging winds!"
       },
       {
+        "voId": "chr_0007_ikut_mono_skill_nor_02",
         "title": "Battle Skill 2",
         "text": "Rolling thunder!"
       },
       {
+        "voId": "chr_0007_ikut_mono_skill_nor_03",
         "title": "Battle Skill 3",
         "text": "Arcing flash!"
       },
       {
+        "voId": "chr_0007_ikut_combat_skill_comb_ready_01",
         "title": "Combo Skill Ready 1",
         "text": "Perfect is this wind!"
       },
       {
+        "voId": "chr_0007_ikut_combat_skill_comb_ready_02",
         "title": "Combo Skill Ready 2",
         "text": "I shall sweep the rest."
       },
       {
+        "voId": "chr_0007_ikut_mono_skill_comb_release_01",
         "title": "Combo Casting 1",
         "text": "Such is the optimal path."
       },
       {
+        "voId": "chr_0007_ikut_mono_skill_comb_release_02",
         "title": "Combo Casting 2",
         "text": "I spot an opening!"
       },
       {
+        "voId": "chr_0007_ikut_mono_attack_extra_01",
         "title": "Finisher 1",
         "text": "It's over."
       },
       {
+        "voId": "chr_0007_ikut_mono_attack_extra_02",
         "title": "Finisher 2",
         "text": "Here's my chance."
       },
       {
+        "voId": "chr_0007_ikut_mono_skill_ultimate_01",
         "title": "Ultimate 1",
         "text": "You can't escape this."
       },
       {
+        "voId": "chr_0007_ikut_mono_skill_ultimate_02",
         "title": "Ultimate 2",
         "text": "From the storms it came."
       },
       {
+        "voId": "chr_0007_ikut_mono_skill_ultimate_03",
         "title": "Ultimate 3",
         "text": "Like a flash it struck."
       }

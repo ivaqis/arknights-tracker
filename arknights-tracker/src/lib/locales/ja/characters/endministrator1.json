@@ -96,222 +96,277 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0003_endminf_chrbark_squad_01",
         "title": "作戦準備1",
         "text": "源石が歌っているんだ。"
       },
       {
+        "voId": "chr_0003_endminf_chrbark_squad_02",
         "title": "作戦準備2",
         "text": "エンドフィールドは歩みを止めない。"
       },
       {
+        "voId": "chr_0003_endminf_chrbark_join_01",
         "title": "編成1",
         "text": "帝江号、準備はできているよ。"
       },
       {
+        "voId": "chr_0003_endminf_chrbark_join_02",
         "title": "編成2",
         "text": "そろそろ時間だね。"
       },
       {
+        "voId": "chr_0003_endminf_chrbark_weap_01",
         "title": "武器取替",
         "text": "悪くないね。"
       },
       {
+        "voId": "chr_0003_endminf_chrbark_gear_01",
         "title": "装備取替",
         "text": "これが工業の成果だよ。"
       },
       {
+        "voId": "chr_0003_endminf_chrup_skill_01",
         "title": "素質・配属スキル解放",
         "text": "懐かしい感覚だ……"
       },
       {
+        "voId": "chr_0003_endminf_chrup_level_01",
         "title": "経験値素材を使用",
         "text": "二度と、皆のことを忘れたりしない。"
       },
       {
+        "voId": "chr_0003_endminf_chrup_promt01_01",
         "title": "昇進1",
         "text": "もう一歩、先へ。"
       },
       {
+        "voId": "chr_0003_endminf_chrup_promt02_01",
         "title": "昇進2",
         "text": "エンドフィールドを必ず守るよ。"
       },
       {
+        "voId": "chr_0003_endminf_chrup_promt03_01",
         "title": "昇進3",
         "text": "過去と今を……1つにするんだ。"
       },
       {
+        "voId": "chr_0003_endminf_chrup_promt04_01",
         "title": "昇進4",
         "text": "彼女の声がした。まるで、夢の中で囁かれるような……果てしない海をいつも夢に見る。悲しく、懐かしい……その度に決意を思い出すんだ。"
       },
       {
+        "voId": "chr_0003_endminf_mono_switch_01",
         "title": "待機1",
         "text": "何が待っているのかな。"
       },
       {
+        "voId": "chr_0003_endminf_mono_switch_02",
         "title": "待機2",
         "text": "源石が道を開いてくれるはずだ。"
       },
       {
+        "voId": "chr_0003_endminf_sim_gift_recv_01",
         "title": "プレゼントを受け取る",
         "text": "ありがとう。"
       },
       {
+        "voId": "chr_0003_endminf_explore_point_common_01",
         "title": "発見：資源1",
         "text": "あれは……"
       },
       {
+        "voId": "chr_0003_endminf_explore_point_valub_01",
         "title": "発見：資源2",
         "text": "大事なものがありそうだね。"
       },
       {
+        "voId": "chr_0003_endminf_explore_find_locked_01",
         "title": "発見：未探索エリア",
         "text": "この周辺は調査が必要そうかな。"
       },
       {
+        "voId": "chr_0003_endminf_explore_find_danger_01",
         "title": "発見：強敵",
         "text": "強敵だ。慎重に対処しよう。"
       },
       {
+        "voId": "chr_0003_endminf_interact_mine_valub_01",
         "title": "鉱物採集1",
         "text": "この鉱物、使えるかもしれない。"
       },
       {
+        "voId": "chr_0003_endminf_interact_mine_valub_echo2_01",
         "title": "鉱物採集2",
         "text": "手伝うよ。"
       },
       {
+        "voId": "chr_0003_endminf_interact_treasure_valub_01",
         "title": "資源箱開封",
         "text": "大漁だ。"
       },
       {
+        "voId": "chr_0003_endminf_interact_etherium_01",
         "title": "オーリレン入手",
         "text": "懐かしい感覚だ……"
       },
       {
+        "voId": "chr_0003_endminf_interact_blight_break_01",
         "title": "侵蝕排除",
         "text": "除去完了。"
       },
       {
+        "voId": "chr_0003_endminf_interact_rest_01",
         "title": "回復",
         "text": "皆、準備はできたね。"
       },
       {
+        "voId": "chr_0003_endminf_combat_suppuse_using_01",
         "title": "戦闘補助アイテム使用1",
         "text": "効くはずだよ。"
       },
       {
+        "voId": "chr_0003_endminf_combat_suppuse_getheal_01",
         "title": "戦闘補助アイテム使用2",
         "text": "いい調子だ。"
       },
       {
+        "voId": "chr_0003_endminf_combat_remind_danger_01",
         "title": "警告",
         "text": "危ない。気をつけて！"
       },
       {
+        "voId": "chr_0003_endminf_combat_hurt_lowhp_01",
         "title": "負傷",
         "text": "まだ……耐えられる……"
       },
       {
+        "voId": "chr_0003_endminf_combat_dead_01",
         "title": "戦闘不能",
         "text": "ごめん。あとは、皆に任せる……"
       },
       {
+        "voId": "chr_0003_endminf_combat_remind_praise_01",
         "title": "激励1",
         "text": "いい動きだ。"
       },
       {
+        "voId": "chr_0003_endminf_combat_remind_praise_02",
         "title": "激励2",
         "text": "完璧な連携だったね。"
       },
       {
+        "voId": "chr_0003_endminf_combat_remind_praise_echo2_01",
         "title": "激励応答1",
         "text": "大したことないよ。"
       },
       {
+        "voId": "chr_0003_endminf_combat_remind_praise_echo2_02",
         "title": "激励応答2",
         "text": "うん。随分息が合ってきた。"
       },
       {
+        "voId": "chr_0003_endminf_combat_intobattle_01",
         "title": "作戦開始1",
         "text": "出番みたいだね。"
       },
       {
+        "voId": "chr_0003_endminf_combat_intobattle_echo2_01",
         "title": "作戦開始2",
         "text": "任せて。"
       },
       {
+        "voId": "chr_0003_endminf_combat_outbattle_nor_01",
         "title": "作戦終了1",
         "text": "エンドフィールドがまた一歩、前に進んだね。"
       },
       {
+        "voId": "chr_0003_endminf_combat_outbattle_nor_02",
         "title": "作戦終了2",
         "text": "皆、よくやったね。"
       },
       {
+        "voId": "chr_0003_endminf_combat_outbattle_nor_echo2_01",
         "title": "作戦終了3",
         "text": "さすがだね。"
       },
       {
+        "voId": "chr_0003_endminf_combat_outbattle_hard_01",
         "title": "作戦終了4",
         "text": "大丈夫かな。"
       },
       {
+        "voId": "chr_0003_endminf_combat_battle_defeat_01",
         "title": "作戦失敗",
         "text": "大丈夫。もう一度準備を整えよう。"
       },
       {
+        "voId": "chr_0003_endminf_mono_attack_last_01",
         "title": "重攻撃1",
         "text": "決めるよ！"
       },
       {
+        "voId": "chr_0003_endminf_mono_attack_last_02",
         "title": "重攻撃2",
         "text": "見えた！"
       },
       {
+        "voId": "chr_0003_endminf_mono_skill_nor_01",
         "title": "戦技1",
         "text": "迎撃するよ。"
       },
       {
+        "voId": "chr_0003_endminf_mono_skill_nor_02",
         "title": "戦技2",
         "text": "任せて。"
       },
       {
+        "voId": "chr_0003_endminf_mono_skill_nor_03",
         "title": "戦技3",
         "text": "さっさと潰すよ。"
       },
       {
+        "voId": "chr_0003_endminf_combat_skill_comb_ready_01",
         "title": "連携技準備完了1",
         "text": "いつでも行ける。"
       },
       {
+        "voId": "chr_0003_endminf_combat_skill_comb_ready_02",
         "title": "連携技準備完了2",
         "text": "信じて。"
       },
       {
+        "voId": "chr_0003_endminf_mono_skill_comb_release_01",
         "title": "連携技1",
         "text": "受け取って。"
       },
       {
+        "voId": "chr_0003_endminf_mono_skill_comb_release_02",
         "title": "連携技2",
         "text": "終わらせる。"
       },
       {
+        "voId": "chr_0003_endminf_mono_attack_extra_01",
         "title": "終撃1",
         "text": "今だ！"
       },
       {
+        "voId": "chr_0003_endminf_mono_attack_extra_02",
         "title": "終撃2",
         "text": "油断したね。"
       },
       {
+        "voId": "chr_0003_endminf_mono_skill_ultimate_01",
         "title": "必殺技1",
         "text": "安心して。次はないから。"
       },
       {
+        "voId": "chr_0003_endminf_mono_skill_ultimate_02",
         "title": "必殺技2",
         "text": "君はここで終わり。"
       },
       {
+        "voId": "chr_0003_endminf_mono_skill_ultimate_03",
         "title": "必殺技3",
         "text": "お遊びはここまで。"
       }

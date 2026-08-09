@@ -125,326 +125,407 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0007_ikut_chrbark_squad_01",
         "title": "Chuẩn Bị Tác Chiến 1",
         "text": "Ngài đã sẵn sàng chưa? Hoang địa chất chứa hiểm nguy."
       },
       {
+        "voId": "chr_0007_ikut_chrbark_squad_02",
         "title": "Chuẩn Bị Tác Chiến 2",
         "text": "Gió nơi đây chưa từng ngừng thổi. Và tôi cũng chưa từng dừng lại."
       },
       {
+        "voId": "chr_0007_ikut_chrbark_join_01",
         "title": "Đang thêm vào đội 1",
         "text": "Cuối cùng cũng được hít thở không khí trong lành. Tôi suýt quên mất mùi hương của đất rồi."
       },
       {
+        "voId": "chr_0007_ikut_chrbark_join_02",
         "title": "Đang thêm vào đội 2",
         "text": "Cứ đi nhanh hết mức có thể. Đừng lo, tôi luôn theo kịp."
       },
       {
+        "voId": "chr_0007_ikut_chrbark_weap_01",
         "title": "Đang đổi vũ khí",
         "text": "Tôi cảm nhận được nó đang thở và nó phù hợp với tôi ra sao."
       },
       {
+        "voId": "chr_0007_ikut_chrbark_gear_01",
         "title": "Đang đổi trang bị",
         "text": "Thật tinh xảo... Sự chuẩn xác như thế này rất hiếm thấy, kể cả giữa những tác phẩm của Đạo Sư tôi từng biết."
       },
       {
+        "voId": "chr_0007_ikut_chrup_skill_01",
         "title": "Kích hoạt Ma Trận Năng Lực",
         "text": "Đạo sư của tôi dạy tôi con đường khác, nhưng mục tiêu cuối cùng của ngài cũng giống như tôi. Tôi đã được khai sáng."
       },
       {
+        "voId": "chr_0007_ikut_chrup_level_01",
         "title": "Xem Hồ Sơ Chiến Đấu",
         "text": "Sống trong hoang địa dạy chúng ta nhiều điều... Và chính những bài học ấy rèn nên một lưỡi kiếm sắc bén."
       },
       {
+        "voId": "chr_0007_ikut_chrup_promt01_01",
         "title": "Thăng Bậc Cán Viên 1",
         "text": "Thăng bậc...? Nghĩa là tôi đã nhận được sự công nhận của ngài? Vậy tôi... Tôi rất vinh hạnh vì điều này."
       },
       {
+        "voId": "chr_0007_ikut_chrup_promt02_01",
         "title": "Thăng Bậc Cán Viên 2",
         "text": "Vinh quang luôn đi kèm nghĩa vụ. Tất cả những điều này nhắc nhở tôi phải giúp đỡ thêm nhiều người nữa."
       },
       {
+        "voId": "chr_0007_ikut_chrup_promt03_01",
         "title": "Thăng Bậc Cán Viên 3",
         "text": "Thiên nhiên không dạy chúng ta cách sinh tồn. Nó chỉ để lại dấu vết cho ta lần theo. Đã có thời tôi cố gắng thích nghi hết sức... Giờ thì... Tôi bắt đầu hiểu được cách nó vận hành."
       },
       {
+        "voId": "chr_0007_ikut_chrup_promt04_01",
         "title": "Thăng Bậc Cán Viên 4",
         "text": "Tôi đã học được rất nhiều khi đồng hành cùng ngài. Giờ tôi bắt đầu hiểu vì sao những câu ca dao lại dẫn tôi đến cạnh ngài. Tôi sẽ sử dụng kiến thức một cách đúng đắn."
       },
       {
+        "voId": "chr_0007_ikut_introduce_01",
         "title": "Cán Viên đang báo cáo nhiệm vụ",
         "text": "Tôi là Ekut. Danh hiệu tác chiến: Arclight. Tôi không giỏi dùng lời hoa mỹ, nhưng xin chúc mọi điều thuận lợi như dòng sông đang dâng cao, nhân viên Endfield."
       },
       {
+        "voId": "chr_0007_ikut_mono_switch_01",
         "title": "Chờ Lệnh 1",
         "text": "Lối đi phía trước đã được hé mở."
       },
       {
+        "voId": "chr_0007_ikut_mono_switch_02",
         "title": "Chờ Lệnh 2",
         "text": "Tôi đã sẵn sàng để thể hiện tối ưu."
       },
       {
+        "voId": "chr_0007_ikut_sim_assign_work_01",
         "title": "Phân Công Vào Công Trình",
         "text": "Đã rõ. Những Kẻ Tầm Ca như chúng ta không bao giờ ngơi nghỉ."
       },
       {
+        "voId": "chr_0007_ikut_sim_hello_lower_01",
         "title": "Lời Chào 1",
         "text": "Hôm nay gió đến từ đâu vậy, Endmin?"
       },
       {
+        "voId": "chr_0007_ikut_sim_hello_max_01",
         "title": "Lời Chào 2",
         "text": "Ngài vừa trở về từ một chuyến hành trình lên mặt đất à, Endmin? Mùi hoang địa."
       },
       {
+        "voId": "chr_0007_ikut_sim_talk_lv01_01",
         "title": "Trò Chuyện Nhàn Rỗi Dijiang 1",
         "text": "Sửa chữa một chiến mã sắt cũng giống như điều trị một con Tê Giác Bướu. Cần lắng nghe thật kỹ trước khi ra tay."
       },
       {
+        "voId": "chr_0007_ikut_sim_talk_lv02_01",
         "title": "Trò Chuyện Nhàn Rỗi Dijiang 2",
         "text": "Những vì sao nơi đây khác hẳn với thứ ta thấy hoang địa... Nhưng cả hai khung cảnh đều khiến người ta say mê."
       },
       {
+        "voId": "chr_0007_ikut_sim_talk_lv02_02",
         "title": "Trò Chuyện Nhàn Rỗi Dijiang 3",
         "text": "Tôi đang quan sát những đám mây đó. Hình thù của chúng báo hiệu một cơn bão sắp tới. Hãy cẩn trọng nếu nhiệm vụ tiếp theo dẫn ngài đến đó."
       },
       {
+        "voId": "chr_0007_ikut_sim_talk_max_01",
         "title": "Trò Chuyện Nhàn Rỗi Dijiang 4",
         "text": "Mái tóc của ngài thật đẹp, như da thú ướt sương lúc bình minh. Ngài chưa từng thấy sao? Ừ, nó thật sự rất đẹp."
       },
       {
+        "voId": "chr_0007_ikut_sim_talk_max_02",
         "title": "Trò Chuyện Nhàn Rỗi Dijiang 5",
         "text": "Ngài từng thấy Lễ Di Cư trên Thảo Nguyên chưa? Một đoàn thú vật và xe kéo đuổi theo mưa và mây. Những điều ấy chính là điều tôi muốn bảo vệ."
       },
       {
+        "voId": "chr_0007_ikut_sim_talk_max_03",
         "title": "Trò Chuyện Nhàn Rỗi Dijiang 6",
         "text": "Ngài thường đắm mình nhìn thế giới này. Tôi hiểu cảm giác đó. Trái tim ta luôn hướng về nơi ta yêu quý, dù xa đến mấy."
       },
       {
+        "voId": "chr_0007_ikut_sim_gift_give_01",
         "title": "Tặng Quà",
         "text": "Tôi mang đến cho ngài một món đồ. Một món quà từ hoang dã. Mong là ngài sẽ thích."
       },
       {
+        "voId": "chr_0007_ikut_sim_gift_recv_01",
         "title": "Nhận quà",
         "text": "Cho tôi ư? Quà tặng là điều thiêng liêng ở hoang địa... Tôi sẽ trân trọng món quà này."
       },
       {
+        "voId": "chr_0007_ikut_mono_self_line01",
         "title": "Đối Thoại Tín Nhiệm 1",
         "text": "Tôi khuyên ngài nên học những kỹ năng sinh tồn cơ bản hoang địa, Endmin. Bắt đầu từ việc đan bẫy tai dài là hợp lý. Tôi có thể chỉ ngài."
       },
       {
+        "voId": "chr_0007_ikut_mono_self_line02",
         "title": "Đối Thoại Tín Nhiệm 2",
         "text": "Cuộc sống hoang địa thật gian nan, nhưng cũng đẹp đến ngỡ ngàng. Như bầu trời quang đãng sau cơn mưa mùa dài ngày, như con thú lông vũ nở ra dưới ánh trăng."
       },
       {
+        "voId": "chr_0007_ikut_mono_self_line03",
         "title": "Đối Thoại Tín Nhiệm 3",
         "text": "Không có gì huyền bí khi thiết bị cũ hoạt động tốt hơn khi được chắp vá đúng cách. Cột hai con Quái Thú Chở Hàng vào cùng một xe, rồi cho chúng thời gian. Rồi chúng sẽ trở thành một cặp hoàn hảo."
       },
       {
+        "voId": "chr_0007_ikut_mono_self_line04",
         "title": "Đối Thoại Tín Nhiệm 4",
         "text": "Tôi bắt đầu hành trình lang bạt để tìm kiếm câu trả lời. Hoang địa đang mất cân bằng, và tôi phải làm điều gì đó. Tôi lắng nghe tiếng nước vỗ bờ, tiếng rừng thì thầm. Và giờ, tôi muốn được lắng nghe giọng ngài."
       },
       {
+        "voId": "chr_0007_ikut_mono_self_line05",
         "title": "Đối Thoại Tín Nhiệm 5",
         "text": "Tôi sẽ dệt nên những câu ca dao từ hành trình của chúng ta. Việc này sẽ tốn thời gian, bởi có quá nhiều điều xứng đáng được hát lên. Khi bài ca dao hoàn chỉnh, ngài sẽ là người đầu tiên được nghe."
       },
       {
+        "voId": "chr_0007_ikut_mono_chat_line01",
         "title": "Trò Chuyện 1",
         "text": "Kẻ mong sống sót sẽ cất lời. Và Kẻ Tầm Ca sẽ luôn lắng nghe. Đó chính là mục đích của Trường Địa Hannabit."
       },
       {
+        "voId": "chr_0007_ikut_mono_chat_line02",
         "title": "Trò Chuyện 2",
         "text": "Làm bạn với các bộ tộc hoang địa xuyên hành rất đơn giản. Chúng tôi tập trung vào điều thiết yếu: thời tiết, thực phẩm, và hiểm họa. Chừng đó đã chiếm trọn thời gian."
       },
       {
+        "voId": "chr_0007_ikut_mono_chat_line03",
         "title": "Trò Chuyện 3",
         "text": "Mỗi Kẻ Tầm Ca trong Trường Địa Hannabit đều thuộc lòng các bài ca dao. Không hề khó. Chúng bao phủ toàn bộ đời sống của chúng tôi. Và như thế, chúng tôi được đan dệt vào từng câu từ."
       },
       {
+        "voId": "chr_0007_ikut_mono_chat_line04",
         "title": "Trò Chuyện 4",
         "text": "Đạo Sư của tôi từng kể về Terra và những thành phố biết dịch chuyển để tránh thảm họa. Có vẻ như chúng ta đã kế thừa tập tục tổ tiên, chỉ là dưới hình thức khác."
       },
       {
+        "voId": "chr_0007_ikut_mono_chat_line05",
         "title": "Trò Chuyện 5",
         "text": "Ngài có thể trao đổi hàng cũ ở một số chợ hoang địa, nhưng phải kiên nhẫn mới tìm được món tốt. Tôi đã cải tiến một thiết bị Kjersch cũ làm máy liên lạc. Thứ họ chế tạo luôn bền bỉ trong môi trường khắc nghiệt."
       },
       {
+        "voId": "chr_0007_ikut_mono_about_line01",
         "title": "Chủ đề: Các thành phố",
         "text": "Talos-II rộng lớn hơn tôi tưởng. Tôi từng nghĩ mọi thành phố chỉ là tổ hợp của thép, đường sá và ánh đèn. Nhưng khi thật sự đặt chân đến, tôi nhận ra mỗi nơi đều có nhịp đập và khí chất riêng. Khác biệt ấy còn rõ rệt hơn hai thảo nguyên với hai loại cỏ khác nhau."
       },
       {
+        "voId": "chr_0007_ikut_mono_about_line02",
         "title": "Chủ đề: Endministrator",
         "text": "Tôi đã đi qua rất nhiều nơi, và ngay cả những bộ tộc xa xôi nhất cũng kể về ngài. Dù lời kể có khác nhau, nhưng điều kỳ diệu vẫn luôn giống nhau. Hy vọng luôn gắn liền với tên ngài."
       },
       {
+        "voId": "chr_0007_ikut_mono_about_line03",
         "title": "Chủ đề: Ca Dao",
         "text": "Một người du mục hấp hối từng hát câu ca dao đầu tiên của chúng tôi, chỉ có ba dòng. Từ những câu ấy mà tên gọi Trường Địa Hannabit ra đời. Bắt đầu từ vị Đạo Sư đầu tiên, ca dao dẫn dắt những Kẻ Tầm Ca lang thang cho đến khi họ trở thành một phần của bài hát."
       },
       {
+        "voId": "chr_0007_ikut_mono_about_line04",
         "title": "Chủ đề: Đạo Sư",
         "text": "Các Đạo Sư hiếm khi nói thẳng. Orisha từng nói rằng ca dao chứa đựng mọi tri thức cần thiết. Bà dạy tôi bằng hành động. Muốn sống sót trong thế giới này, chúng ta phải nương tựa nhau."
       },
       {
+        "voId": "chr_0007_ikut_mono_about_line05",
         "title": "Chủ đề: Bộ tộc của cô ấy",
         "text": "Tôi lớn lên trong một bộ tộc nhỏ không quá một trăm người. Đó là tất cả những gì tôi biết trước khi bắt đầu chuyến đi. Nơi đó dạy tôi vắt sữa Tê Giác Bướu, cưỡi chiến mã sắt, và sống sót giữa hoang địa. Tôi chưa bao giờ rời khỏi đó. Tôi chỉ mang nó theo cùng mình."
       },
       {
+        "voId": "chr_0007_ikut_explore_point_common_01",
         "title": "Phát hiện Tài Nguyên/Có Thể Thu Thập 1",
         "text": "Nếu giúp ích cho việc sinh tồn, hãy mang nó theo."
       },
       {
+        "voId": "chr_0007_ikut_explore_point_valub_01",
         "title": "Phát hiện Tài Nguyên/Có Thể Thu Thập 2",
         "text": "Đạo sư của tôi hẳn sẽ hứng thú với thứ này."
       },
       {
+        "voId": "chr_0007_ikut_explore_find_locked_01",
         "title": "Phát Hiện Khu Vực Chưa Khám Phá",
         "text": "Theo kịp nhé. Chúng ta cần quan sát kỹ hơn."
       },
       {
+        "voId": "chr_0007_ikut_explore_find_danger_01",
         "title": "Phát hiện Kẻ Địch Mạnh",
         "text": "Tôi cảm thấy có nguy hiểm. Kẻ này không dễ hạ đâu."
       },
       {
+        "voId": "chr_0007_ikut_interact_mine_valub_01",
         "title": "Khai thác 1",
         "text": "Sản vật từ lòng đất."
       },
       {
+        "voId": "chr_0007_ikut_interact_mine_valub_echo2_01",
         "title": "Khai thác 2",
         "text": "Hãy để tôi làm. Tôi giỏi mấy việc tay chân."
       },
       {
+        "voId": "chr_0007_ikut_interact_treasure_valub_01",
         "title": "Mở Thùng",
         "text": "Hiếm có ở hoang địa. Chúng ta sẽ tận dụng nó thật tốt."
       },
       {
+        "voId": "chr_0007_ikut_interact_etherium_01",
         "title": "Nhận Aurylene",
         "text": "Thường thì chúng tôi lấy ánh sáng từ thứ này."
       },
       {
+        "voId": "chr_0007_ikut_interact_blight_break_01",
         "title": "Xua Tan Nhiễm Khuẩn",
         "text": "Cứ để Thiên Nhiên làm phần việc của mình."
       },
       {
+        "voId": "chr_0007_ikut_interact_rest_01",
         "title": "Nghỉ ngơi",
         "text": "Thứ này khiến tôi nhớ đến ánh lửa trại ở hoang địa. Cùng một hơi ấm, cùng một cảm giác."
       },
       {
+        "voId": "chr_0007_ikut_combat_suppuse_using_01",
         "title": "Sử Dụng Vật Phẩm Chiến Thuật 1",
         "text": "Giữ hơi thở đều đặn."
       },
       {
+        "voId": "chr_0007_ikut_combat_suppuse_getheal_01",
         "title": "Sử Dụng Vật Phẩm Chiến Thuật 2",
         "text": "Sức mạnh của tôi đã trở lại."
       },
       {
+        "voId": "chr_0007_ikut_combat_remind_danger_01",
         "title": "Cảnh Báo Nguy Hiểm",
         "text": "Đừng dừng lại. Tiếp tục di chuyển."
       },
       {
+        "voId": "chr_0007_ikut_combat_hurt_lowhp_01",
         "title": "Bị Thương",
         "text": "Tôi vẫn cầm cự được, chỉ là chậm hơn chút."
       },
       {
+        "voId": "chr_0007_ikut_combat_dead_01",
         "title": "0 HP",
         "text": "Xin lỗi... Ước gì tôi có thể giúp được nhiều hơn cho ngài..."
       },
       {
+        "voId": "chr_0007_ikut_combat_remind_praise_01",
         "title": "Cổ Vũ Đội 1",
         "text": "Phản hồi nhanh như chớp ấy!"
       },
       {
+        "voId": "chr_0007_ikut_combat_remind_praise_02",
         "title": "Cổ Vũ Đội 2",
         "text": "Gió và sét, chúng ta càn quét như một cơn lốc dữ dội."
       },
       {
+        "voId": "chr_0007_ikut_combat_remind_praise_echo2_01",
         "title": "Đáp Lại Lời Cổ Vũ 1",
         "text": "Đây là điều được mong đợi từ tôi."
       },
       {
+        "voId": "chr_0007_ikut_combat_remind_praise_echo2_02",
         "title": "Đáp Lại Lời Cổ Vũ 2",
         "text": "Chỉ là một thành phần của đội."
       },
       {
+        "voId": "chr_0007_ikut_combat_intobattle_01",
         "title": "Bắt Đầu Chiến Đấu 1",
         "text": "Tôi đang hoàn toàn tập trung."
       },
       {
+        "voId": "chr_0007_ikut_combat_intobattle_echo2_01",
         "title": "Bắt Đầu Chiến Đấu 2",
         "text": "Tôi để phía đó nha."
       },
       {
+        "voId": "chr_0007_ikut_combat_outbattle_nor_01",
         "title": "Thắng Trận 1",
         "text": "Họ sẽ trở về với tĩnh lặng."
       },
       {
+        "voId": "chr_0007_ikut_combat_outbattle_nor_02",
         "title": "Thắng Trận 2",
         "text": "Nguyện cho đất mẹ đón nhận tất cả các người."
       },
       {
+        "voId": "chr_0007_ikut_combat_outbattle_nor_echo2_01",
         "title": "Thắng Trận 3",
         "text": "Ý chí của Thiên Nhiên."
       },
       {
+        "voId": "chr_0007_ikut_combat_outbattle_hard_01",
         "title": "Thắng Trận 4",
         "text": "Mọi sinh linh hoang địa đều phải vượt qua gian khó để trưởng thành."
       },
       {
+        "voId": "chr_0007_ikut_combat_battle_defeat_01",
         "title": "Bại Trận",
         "text": "Ngay cả bầy thú ngà lão luyện nhất cũng có thể thất bại khi săn mồi. Ít nhất, chúng ta đã học được điều gì đó từ cuộc săn này."
       },
       {
+        "voId": "chr_0007_ikut_mono_attack_last_01",
         "title": "Đòn Dứt Điểm 1",
         "text": "Phá vỡ!"
       },
       {
+        "voId": "chr_0007_ikut_mono_attack_last_02",
         "title": "Đòn Dứt Điểm 2",
         "text": "Tan vỡ!"
       },
       {
+        "voId": "chr_0007_ikut_mono_skill_nor_01",
         "title": "KN Chiến Đấu 1",
         "text": "Cuồng phong nổi dậy!"
       },
       {
+        "voId": "chr_0007_ikut_mono_skill_nor_02",
         "title": "KN Chiến Đấu 2",
         "text": "Sấm sét cuộn mình!"
       },
       {
+        "voId": "chr_0007_ikut_mono_skill_nor_03",
         "title": "KN Chiến Đấu 3",
         "text": "Chớp giật lướt qua!"
       },
       {
+        "voId": "chr_0007_ikut_combat_skill_comb_ready_01",
         "title": "Chuẩn Bị KN Liên Hoàn 1",
         "text": "Cơn gió này thật hoàn mỹ!"
       },
       {
+        "voId": "chr_0007_ikut_combat_skill_comb_ready_02",
         "title": "Chuẩn Bị KN Liên Hoàn 2",
         "text": "Tôi sẽ quét sạch phần còn lại."
       },
       {
+        "voId": "chr_0007_ikut_mono_skill_comb_release_01",
         "title": "Thi Triển Liên Hoàn 1",
         "text": "Đó chính là con đường tối ưu."
       },
       {
+        "voId": "chr_0007_ikut_mono_skill_comb_release_02",
         "title": "Thi Triển Liên Hoàn 2",
         "text": "Tôi thấy một khoảng trống!"
       },
       {
+        "voId": "chr_0007_ikut_mono_attack_extra_01",
         "title": "Kết Liễu 1",
         "text": "Kết thúc rồi."
       },
       {
+        "voId": "chr_0007_ikut_mono_attack_extra_02",
         "title": "Kết Liễu 2",
         "text": "Cơ hội đây rồi!"
       },
       {
+        "voId": "chr_0007_ikut_mono_skill_ultimate_01",
         "title": "Tuyệt Kỹ 1",
         "text": "Không thể thoát đâu."
       },
       {
+        "voId": "chr_0007_ikut_mono_skill_ultimate_02",
         "title": "Tuyệt Kỹ 2",
         "text": "Từ cơn bão mà đến."
       },
       {
+        "voId": "chr_0007_ikut_mono_skill_ultimate_03",
         "title": "Tuyệt Kỹ 3",
         "text": "Như tia chớp mà giáng."
       }

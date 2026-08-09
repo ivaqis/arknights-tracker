@@ -123,326 +123,407 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0025_ardelia_chrbark_squad_01",
         "title": "行動準備1",
         "text": "前輩放手去做就好，我會全力配合您。"
       },
       {
+        "voId": "chr_0025_ardelia_chrbark_squad_02",
         "title": "行動準備2",
         "text": "讓我看一下這次要採集哪些數據。"
       },
       {
+        "voId": "chr_0025_ardelia_chrbark_join_01",
         "title": "編入隊伍1",
         "text": "前輩，我準備好需要的探勘工具了，我們隨時可以出發。"
       },
       {
+        "voId": "chr_0025_ardelia_chrbark_join_02",
         "title": "編入隊伍2",
         "text": "如果前輩陪著我的話……就讓人放心多了。"
       },
       {
+        "voId": "chr_0025_ardelia_chrbark_weap_01",
         "title": "更換武器",
         "text": "前輩，能站遠點嗎？我怕誤傷到您……"
       },
       {
+        "voId": "chr_0025_ardelia_chrbark_gear_01",
         "title": "更換裝備",
         "text": "野外考察經常會遇到一些危險情況，我們一定要做好防護措施。"
       },
       {
+        "voId": "chr_0025_ardelia_chrup_skill_01",
         "title": "解鎖天賦陣列",
         "text": "我會在日記裡寫下每次成長的感悟，如同年輪印刻著大樹生長的痕跡。"
       },
       {
+        "voId": "chr_0025_ardelia_chrup_level_01",
         "title": "觀看作戰紀錄",
         "text": "被敵人摧殘過的土地竟然變成這副模樣……如此殘破，了無生機。"
       },
       {
+        "voId": "chr_0025_ardelia_chrup_promt01_01",
         "title": "精英化晉升1",
         "text": "嗯！要朝著一個方向努力，不斷探索，不斷進步！"
       },
       {
+        "voId": "chr_0025_ardelia_chrup_promt02_01",
         "title": "精英化晉升2",
         "text": "謝謝您的認可，前輩！我會在終末地做到更多的！"
       },
       {
+        "voId": "chr_0025_ardelia_chrup_promt03_01",
         "title": "精英化晉升3",
         "text": "我沒有努力過頭，前輩，不用擔心我。但我的黑眼圈很嚴重？因為晚上看書太入迷，一不小心就熬夜了……"
       },
       {
+        "voId": "chr_0025_ardelia_chrup_promt04_01",
         "title": "精英化晉升4",
         "text": "這片土地還有太多的未知，我們必須瞭解腳下的這顆星球，就像……我們應該更加瞭解我們自己。對吧，前輩？"
       },
       {
+        "voId": "chr_0025_ardelia_introduce_01",
         "title": "幹員報到",
         "text": "您好，管理員，我是艾爾黛拉，來自羅德島的地質科研人員。目前在研究超域與地質災害的關係，我很早就聽說過管理員了，有很多問題想向您請教，還有……我可以叫您前輩嗎？"
       },
       {
+        "voId": "chr_0025_ardelia_mono_switch_01",
         "title": "待命1",
         "text": "今天也要保持好心情喔，前輩。"
       },
       {
+        "voId": "chr_0025_ardelia_mono_switch_02",
         "title": "待命2",
         "text": "我聽到您的腳步聲了，前輩。"
       },
       {
+        "voId": "chr_0025_ardelia_sim_assign_work_01",
         "title": "進駐設施",
         "text": "交給我吧，前輩，我也想嘗試新工作。"
       },
       {
+        "voId": "chr_0025_ardelia_sim_hello_lower_01",
         "title": "打招呼1",
         "text": "要一起吃岩石千層蛋糕嗎，前輩？"
       },
       {
+        "voId": "chr_0025_ardelia_sim_hello_max_01",
         "title": "打招呼2",
         "text": "我正想找您呢，前輩。"
       },
       {
+        "voId": "chr_0025_ardelia_sim_talk_lv01_01",
         "title": "帝江號閒聊1",
         "text": "維護中的帝江號到處都有警示牌……前輩要小心點。我在思考時也經常不看路，總是會不小心摔倒。"
       },
       {
+        "voId": "chr_0025_ardelia_sim_talk_lv02_01",
         "title": "帝江號閒聊2",
         "text": "從帝江號上能看到很多我曾勘查過的地方，荒野、草原、北地……都變得很小很小，那些我曾走過的漫長的路，現在一眼就能望到盡頭……而且站在這麼高的地方，感覺稍微有點刺激。"
       },
       {
+        "voId": "chr_0025_ardelia_sim_talk_lv02_02",
         "title": "帝江號閒聊3",
         "text": "我明天要舉辦一場讀書會，前輩有空參加嗎？該分享點什麼？只要是自己喜歡的書都可以！話說，卡拉德先生曾經帶過一本關於塔衛二火山的攝影雜誌給我。感興趣的話，我可以帶給您看！"
       },
       {
+        "voId": "chr_0025_ardelia_sim_talk_max_01",
         "title": "帝江號閒聊4",
         "text": "工作這麼久，前輩餓不餓？這是秋栗小姐送我的東國特產甜點，您嚐嚐看。不用分給我，我……我剛才已經吃過啦。可是包裝沒拆？因、因為秋栗小姐又多給了我一份！"
       },
       {
+        "voId": "chr_0025_ardelia_sim_talk_max_02",
         "title": "帝江號閒聊5",
         "text": "您有注意到嗎，前輩？隊伍裡，您總是走得最快的那個，好像前方總有什麼危險等著我們，您已準備好挺身迎擊，有時我需要小跑才能跟上您……放輕鬆，我們會照顧好自己。"
       },
       {
+        "voId": "chr_0025_ardelia_sim_talk_max_03",
         "title": "帝江號閒聊6",
         "text": "每次回到帝江號都感覺很放鬆，除了和同事們交流外出時的見聞，我還會去看培養艙裡的植物，不忙的時候我也會幫忙照顧它們。這算是我小小的愛好吧，看著植株一點點長大，感覺很欣慰呢。"
       },
       {
+        "voId": "chr_0025_ardelia_sim_gift_give_01",
         "title": "贈送禮物",
         "text": "可以借用您一點時間嗎？這是我外出勘測時收集的一些紀念品，眾生長地的羽飾、宏山的小玉器、鐵誓軍的紀念章……都是送給您的，希望您能喜歡。"
       },
       {
+        "voId": "chr_0025_ardelia_sim_gift_recv_01",
         "title": "接收禮物",
         "text": "送我的禮物嗎？讓我拆開看看裡面有什麼。真是的……前輩怎麼比我還著急啊。"
       },
       {
+        "voId": "chr_0025_ardelia_mono_self_line01",
         "title": "信賴對話1",
         "text": "前輩還好嗎？您看起來好像有點累，不會是工作了一整晚吧？不行！您現在要去休息——絕對不行！這次您說什麼我都不會答應！"
       },
       {
+        "voId": "chr_0025_ardelia_mono_self_line02",
         "title": "信賴對話2",
         "text": "多利先生，你不要再咬管理員的衣服了！真抱歉，前輩，牠們太調皮了。嗯？您說看不到牠們？多利先生能根據自己的意願決定是否需要現身……領袖？不是，牠們都是多利先生，不是某一隻的名字，牠們是一個整體……嗚……多利先生，你自己向前輩解釋吧！你不是會說話的嘛！"
       },
       {
+        "voId": "chr_0025_ardelia_mono_self_line03",
         "title": "信賴對話3",
         "text": "我今天又爬了一座山，用羅盤測量岩層的走向和傾斜角度，拿地質錘從岩壁上採集沉積岩塊，研究它們的光澤和紋理……我不累，前輩。我還能爬更多山，走更多路，收集更多地質數據。能盡情探索這個星球的秘密，我真的……很開心！"
       },
       {
+        "voId": "chr_0025_ardelia_mono_self_line04",
         "title": "信賴對話4",
         "text": "真好啊！如此熱鬧的時刻，朋友們都在身邊。讓我想起第一次來終末地的時候，大家特地為我準備了一場歡迎會，裡面有我喜歡的所有元素：甜點、花卉、歡快的歌曲。伊馮小姐還牽著我的手，帶我跳流行舞。雖然在旋轉中有點分不清方向，但我還是努力記住了所有人的笑容。"
       },
       {
+        "voId": "chr_0025_ardelia_mono_self_line05",
         "title": "信賴對話5",
         "text": "有時我會想，超域究竟是什麼呢？如果宇宙注定要對我們如此殘酷，我又能為大家做點什麼呢……前輩也有同樣的想法？真的？那……我們就都不是孤單一人了。"
       },
       {
+        "voId": "chr_0025_ardelia_mono_chat_line01",
         "title": "交談1",
         "text": "前輩，你的聲音真的很好聽。啊，我、我沒有別的意思，只是……就像從睡夢中醒來時，聲響總是先一步溜進我們的腦海裡。在看見你的臉龐之前，我總是會先聽見你的腳步聲、你的話語……嗯，這片土地上的大部分生靈都會發出聲響，蟲羽樹木都有自己的聲音。我非常感動，也因此下定決心，以自己的方式保護這個我們都熱愛的世界。"
       },
       {
+        "voId": "chr_0025_ardelia_mono_chat_line02",
         "title": "交談2",
         "text": "終末地的大家都很熱心呢。伊馮小姐時常跟我分享她最近的研究成果與新買的唱片；秋栗小姐每週都會邀請我在固定時間和她一起品嚐下午茶。當然還有安塔爾先生——他說可以幫我改造法杖，讓它變成便攜式地質探勘工具，甚至可以在裡面加入更多神奇的功能。他說了整整三個小時，如果不是秋栗小姐最後拉走了他，大概能講一整天吧。"
       },
       {
+        "voId": "chr_0025_ardelia_mono_chat_line03",
         "title": "交談3",
         "text": "去野外進行地質調查工作的確很自由，但缺少經費支援的話也會有點苦惱。為了籌措計劃資金，我會去一些公司演講，試圖用理念打動他們。但除了終末地，別的公司都對地質災害預警工作興致缺缺。後來汐斯塔集團得知我的研究後，無條件為我提供了一筆贊助。我其實知道他們的慷慨來自什麼……也許，這也是一種傳承下來的緣分吧。"
       },
       {
+        "voId": "chr_0025_ardelia_mono_chat_line04",
         "title": "交談4",
         "text": "我曾和眾生長地的一位師者同行。她唱的歌很美，她說，她也有她的師者，他們都在這片土地上生存。正因如此，他們敬重我們這樣的科學家。嘿嘿，聽到她這麼說的時候，我真的很開心，但其實反而是我從她的歌謠裡找到了目標和動力。嗯，前輩，這是我在塔衛二找到使命之前的旅途。"
       },
       {
+        "voId": "chr_0025_ardelia_mono_chat_line05",
         "title": "交談5",
         "text": "我的衣服？又劃破了啊，沒關係，簡單縫補一下就好。去野外考察經常會這樣，為了採集稀有的岩石樣本，我會努力登上山頂，攀爬的過程中衣服就會被銳利的岩石邊緣劃破。但是目標就在眼前的那種期待……確實會讓人忘記腳下的危險。前輩？不用這麼擔心，我以後會注意的。"
       },
       {
+        "voId": "chr_0025_ardelia_mono_about_line01",
         "title": "話題：超域",
         "text": "超域是人們在塔衛二面對的嶄新概念，有理論認為那是一種特別的物理現象，也有人說那是另一個詭異的時空。但我有一種感覺……那是一個被遺忘的房間，布滿灰塵和無人問津的舊物。前輩，也許超域和我們的起源息息相關。"
       },
       {
+        "voId": "chr_0025_ardelia_mono_about_line02",
         "title": "話題：羅德島",
         "text": "我來自羅德島，在那裡接受各種教育和輔導，成為了一個獨立的真正的「人」。我沒有血脈相連的親人，沒有真正屬於自己的童年和過往，是羅德島教會了我們如何生活，如何對待自我。前輩，羅德島是我的家。而且，他們都說過，那裡也曾是您的家。"
       },
       {
+        "voId": "chr_0025_ardelia_mono_about_line03",
         "title": "話題：多利",
         "text": "多利先生其實很活潑，可是不知道為什麼，牠不怎麼在別人面前現身。雖然您此刻看不見牠，但牠很喜歡跟您玩。現在？現在牠正嘗試坐在您的……多、多利先生！別捉弄前輩了！總之就是這樣，我在很平常的一天突然遇到牠，被牠黏上，然後再也甩不開了。"
       },
       {
+        "voId": "chr_0025_ardelia_mono_about_line04",
         "title": "話題：伊馮",
         "text": "伊馮小姐是很厲害的研究者。我來終末地後，她向我分享了很多重要資料，幫助我儘快熟悉超域。她也願意與我共享自己的研究成果，並真心希望這些發現能為其他同行提供幫助。而且很巧的是，她也和我一樣喜歡音樂呢。比起我常聽的輕快歌曲，她更喜歡節奏緊湊的，還送了我幾張菈梵朵瑪流行音樂唱片。"
       },
       {
+        "voId": "chr_0025_ardelia_mono_about_line05",
         "title": "話題：塔衛二",
         "text": "我曾親眼目睹巨大的源石晶簇被海洋一般的侵蝕吞沒消融，剩下一片荒蕪的山谷，有隻躲避侵蝕的牙獸懵懂地回到了那片土地……超域與源石難以相容，我們卻在脆弱的平衡點上生存。我來自於源石，所以才想瞭解超域，我想讓大家更安全地生活在這顆星球上。"
       },
       {
+        "voId": "chr_0025_ardelia_explore_point_common_01",
         "title": "發現資源1",
         "text": "那邊好像有些資源，別忘了去收回呀。"
       },
       {
+        "voId": "chr_0025_ardelia_explore_point_valub_01",
         "title": "發現資源2",
         "text": "那些資源都很重要喔，讓我們多收集一些吧。"
       },
       {
+        "voId": "chr_0025_ardelia_explore_find_locked_01",
         "title": "發現未探索區域",
         "text": "前方似乎存在許多不確定因素，讓我去調查吧！"
       },
       {
+        "voId": "chr_0025_ardelia_explore_find_danger_01",
         "title": "發現強敵",
         "text": "前方有危險的敵人，我們一定要做好萬全準備。"
       },
       {
+        "voId": "chr_0025_ardelia_interact_mine_valub_01",
         "title": "採集礦物1",
         "text": "待會可以把礦物鑑定分選一下。"
       },
       {
+        "voId": "chr_0025_ardelia_interact_mine_valub_echo2_01",
         "title": "採集礦物2",
         "text": "也讓我出一份力吧！"
       },
       {
+        "voId": "chr_0025_ardelia_interact_treasure_valub_01",
         "title": "打開儲藏箱",
         "text": "這也是對您一路辛苦的慰勞！"
       },
       {
+        "voId": "chr_0025_ardelia_interact_etherium_01",
         "title": "獲得醚質",
         "text": "與侵蝕和裂隙不同，醚質沒有那麼危險呢。"
       },
       {
+        "voId": "chr_0025_ardelia_interact_blight_break_01",
         "title": "消除侵蝕",
         "text": "太好了，這樣就不會有人受傷了。"
       },
       {
+        "voId": "chr_0025_ardelia_interact_rest_01",
         "title": "休整",
         "text": "走了那麼多路，大家的腳步都有點沉重，是該好好休息一下了！"
       },
       {
+        "voId": "chr_0025_ardelia_combat_suppuse_using_01",
         "title": "使用戰術物品1",
         "text": "撐住，我一直都在！"
       },
       {
+        "voId": "chr_0025_ardelia_combat_suppuse_getheal_01",
         "title": "使用戰術物品2",
         "text": "呼……我感覺好多了。"
       },
       {
+        "voId": "chr_0025_ardelia_combat_remind_danger_01",
         "title": "危險提醒",
         "text": "請小心！"
       },
       {
+        "voId": "chr_0025_ardelia_combat_hurt_lowhp_01",
         "title": "負傷",
         "text": "我沒關係，我能繼續！"
       },
       {
+        "voId": "chr_0025_ardelia_combat_dead_01",
         "title": "力竭",
         "text": "我不能……辜負前輩……"
       },
       {
+        "voId": "chr_0025_ardelia_combat_remind_praise_01",
         "title": "小隊激勵1",
         "text": "真的很棒！"
       },
       {
+        "voId": "chr_0025_ardelia_combat_remind_praise_02",
         "title": "小隊激勵2",
         "text": "大家都很厲害！"
       },
       {
+        "voId": "chr_0025_ardelia_combat_remind_praise_echo2_01",
         "title": "回應激勵1",
         "text": "多虧了你的鼓勵！"
       },
       {
+        "voId": "chr_0025_ardelia_combat_remind_praise_echo2_02",
         "title": "回應激勵2",
         "text": "謝謝你們！"
       },
       {
+        "voId": "chr_0025_ardelia_combat_intobattle_01",
         "title": "作戰開始1",
         "text": "注意腳邊，各位。"
       },
       {
+        "voId": "chr_0025_ardelia_combat_intobattle_echo2_01",
         "title": "作戰開始2",
         "text": "我們會成功的！"
       },
       {
+        "voId": "chr_0025_ardelia_combat_outbattle_nor_01",
         "title": "作戰勝利1",
         "text": "我們不會被這些困難阻止。"
       },
       {
+        "voId": "chr_0025_ardelia_combat_outbattle_nor_02",
         "title": "作戰勝利2",
         "text": "總算贏了，多利先生累不累？"
       },
       {
+        "voId": "chr_0025_ardelia_combat_outbattle_nor_echo2_01",
         "title": "作戰勝利3",
         "text": "我知道我們能做到。"
       },
       {
+        "voId": "chr_0025_ardelia_combat_outbattle_hard_01",
         "title": "作戰勝利4",
         "text": "終於贏了……因為大家始終沒有放棄，我們才沒有失敗。"
       },
       {
+        "voId": "chr_0025_ardelia_combat_battle_defeat_01",
         "title": "作戰失敗",
         "text": "失敗並不可怕，只要從中吸取經驗教訓，下次一定會做得更好。"
       },
       {
+        "voId": "chr_0025_ardelia_mono_attack_last_01",
         "title": "重擊1",
         "text": "請讓開！"
       },
       {
+        "voId": "chr_0025_ardelia_mono_attack_last_02",
         "title": "重擊2",
         "text": "噴湧吧。"
       },
       {
+        "voId": "chr_0025_ardelia_mono_skill_nor_01",
         "title": "戰技1",
         "text": "全力衝擊。"
       },
       {
+        "voId": "chr_0025_ardelia_mono_skill_nor_02",
         "title": "戰技2",
         "text": "別再破壞了！"
       },
       {
+        "voId": "chr_0025_ardelia_mono_skill_nor_03",
         "title": "戰技3",
         "text": "我們上吧！"
       },
       {
+        "voId": "chr_0025_ardelia_combat_skill_comb_ready_01",
         "title": "連攜技就緒1",
         "text": "我也來幫忙！"
       },
       {
+        "voId": "chr_0025_ardelia_combat_skill_comb_ready_02",
         "title": "連攜技就緒2",
         "text": "讓我來吧！"
       },
       {
+        "voId": "chr_0025_ardelia_mono_skill_comb_release_01",
         "title": "連攜技1",
         "text": "會很痛的喔。"
       },
       {
+        "voId": "chr_0025_ardelia_mono_skill_comb_release_02",
         "title": "連攜技2",
         "text": "綻放吧！"
       },
       {
+        "voId": "chr_0025_ardelia_mono_attack_extra_01",
         "title": "處決1",
         "text": "就是現在！"
       },
       {
+        "voId": "chr_0025_ardelia_mono_attack_extra_02",
         "title": "處決2",
         "text": "離開吧！"
       },
       {
+        "voId": "chr_0025_ardelia_mono_skill_ultimate_01",
         "title": "終結技1",
         "text": "多利先生，幫幫忙吧！"
       },
       {
+        "voId": "chr_0025_ardelia_mono_skill_ultimate_02",
         "title": "終結技2",
         "text": "多利先生，別跑太遠。"
       },
       {
+        "voId": "chr_0025_ardelia_mono_skill_ultimate_03",
         "title": "終結技3",
         "text": "多利先生，下手輕一點。"
       }

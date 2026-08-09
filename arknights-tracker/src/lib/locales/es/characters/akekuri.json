@@ -117,322 +117,402 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0019_karin_chrbark_squad_01",
         "title": "Preparación de la operación 1",
         "text": "¡Lista y recargada! ¡Vamos con todo, equipo!"
       },
       {
+        "voId": "chr_0019_karin_chrbark_squad_02",
         "title": "Preparación de la operación 2",
         "text": "¡Esta es nuestra oportunidad para aprender y mejorar!"
       },
       {
+        "voId": "chr_0019_karin_chrbark_join_01",
         "title": "Añadir al equipo 1",
         "text": "¡Akekuri, del Op Z7, reportándose! ¡Emocionada por unirme a la misión, será todo un éxito!"
       },
       {
+        "voId": "chr_0019_karin_chrbark_join_02",
         "title": "Añadir al equipo 2",
         "text": "¡Genial, otra tarea del Endmin! ¡No hay mejor forma de aprender que esta!"
       },
       {
+        "voId": "chr_0019_karin_chrbark_weap_01",
         "title": "Cambiar de arma",
         "text": "¿Un arma nueva? Mm... Definitivamente se siente única. ¡Muy bien, necesito idear tácticas y estrategias nuevas!"
       },
       {
+        "voId": "chr_0019_karin_chrbark_gear_01",
         "title": "Cambiar de equipamiento",
         "text": "Mmm, ¡me queda perfecto! Me aseguraré de enviar pronto mis comentarios al Arsenal."
       },
       {
+        "voId": "chr_0019_karin_chrup_skill_01",
         "title": "Activación de la matriz de habilidades",
         "text": "Esto es como acumular créditos, pero no del tipo que se obtienen en clase."
       },
       {
+        "voId": "chr_0019_karin_chrup_level_01",
         "title": "Viendo los registros de combate",
         "text": "¿Así que así son las reuniones de élite...? ¡Vaya que son reveladoras!"
       },
       {
+        "voId": "chr_0019_karin_chrup_promt01_01",
         "title": "Ascenso de operador 1",
         "text": "¿Oh, un ascenso? ¡Qué honor más grande! Siento que es un reconocimiento para mí y todo el equipo Z7. ¡Ten la seguridad de que seguiremos avanzando!"
       },
       {
+        "voId": "chr_0019_karin_chrup_promt02_01",
         "title": "Ascenso de operador 2",
         "text": "¿Se vienen misiones más peligrosas? Nop, yo estoy más emocionada que asustada. Es una muestra de tu confianza, y para mí, una gran oportunidad de seguir creciendo."
       },
       {
+        "voId": "chr_0019_karin_chrup_promt03_01",
         "title": "Ascenso de operador 3",
         "text": "Endmin, ¿tienes algo que hacer más tarde? El equipo te está organizando una pequeña fiesta. ¡Horneé un pastel Mont blanc especialmente para ti! Créeme; ¡no querrás perdértelo!"
       },
       {
+        "voId": "chr_0019_karin_chrup_promt04_01",
         "title": "Ascenso de operador 4",
         "text": "Hay una teoría que aprendí en clase que dice que todo el mundo finalmente acaba siendo ascendido a un puesto que no puede desempeñar. Así que si me quedo atorada por mucho tiempo, Endmin, por favor asegúrate de intervenir y ofrecerme tu guía."
       },
       {
+        "voId": "chr_0019_karin_introduce_01",
         "title": "Operador reportándose para el deber",
         "text": "¡La capitana Akekuri del Equipo operativo Z7 se reporta! El expediente de operaciones, el resumen de presupuesto y el plan de acción están listos para la revisión. ¿Cuál te gustaría leer primero?"
       },
       {
+        "voId": "chr_0019_karin_mono_switch_01",
         "title": "En espera 1",
         "text": "Un equipo fuerte es el que no tiene puntos débiles."
       },
       {
+        "voId": "chr_0019_karin_mono_switch_02",
         "title": "En espera 2",
         "text": "¡Vamos, déjame hacer algo por Endfield!"
       },
       {
+        "voId": "chr_0019_karin_sim_assign_work_01",
         "title": "Asignando a una instalación",
         "text": "Puedes contar conmigo. Ya he trabajado en eso antes."
       },
       {
+        "voId": "chr_0019_karin_sim_hello_lower_01",
         "title": "Saludo 1",
         "text": "¡El mundo es muy pequeño, Endmin! ¿También acabas de terminar una misión?"
       },
       {
+        "voId": "chr_0019_karin_sim_hello_max_01",
         "title": "Saludo 2",
         "text": "¿Un descanso para tomar café, Endmin? ¡Puedo prepararte una taza recién hecha!"
       },
       {
+        "voId": "chr_0019_karin_sim_talk_lv01_01",
         "title": "Charla casual en la Dijiang 1",
         "text": "Mucho gusto, Endministrator. Soy Akekuri, del Equipo Z7. ¡Oh, esta bien! Quizá estemos recién formados y pasando desapercibidos, pero lo prometo... Vamos a dejar nuestra huella."
       },
       {
+        "voId": "chr_0019_karin_sim_talk_lv02_01",
         "title": "Charla casual en la Dijiang 2",
         "text": "Sabiendo que has guiado a Endfield desde el día uno, pensé que serías mucho más estricto. Pero eres más relajado de lo que imaginaba. Je, je, ¡supongo que eso también es parte de ser un buen líder!"
       },
       {
+        "voId": "chr_0019_karin_sim_talk_lv02_02",
         "title": "Charla casual en la Dijiang 3",
         "text": "La verdad, prefiero estar aquí en la Dijiang que en esos “eventos de gala” de las élites corporativas de Neo Tsukushi. Aquí la gente es más relajada... y de verdad hace algo por cambiar las cosas."
       },
       {
+        "voId": "chr_0019_karin_sim_talk_max_01",
         "title": "Charla casual en la Dijiang 4",
         "text": "¿Has probado el nama yatsuhashi? Es un dulce tradicional de Higashi con frijoles rojos, matcha y sabor a castaña tostada. Si te animas, acompáñanos a la próxima reunión del equipo Z7."
       },
       {
+        "voId": "chr_0019_karin_sim_talk_max_02",
         "title": "Charla casual en la Dijiang 5",
         "text": "Oye, Endmin. ¿Quieres sentarte a tomar una taza de té caliente? ¡Tenemos buenas historias que compartir sobre la misión!"
       },
       {
+        "voId": "chr_0019_karin_sim_talk_max_03",
         "title": "Charla casual en la Dijiang 6",
         "text": "Me encanta ver Talos-II desde el Puente. Ahí están todos mis recuerdos... el lugar donde crecí, donde vi por última vez a mi familia y los lugares que tú ayudaste a transformar. ¿Eh? ¿Por qué esa cara de sorpresa? ¡Saqué A+ en geología planetaria e historia moderna!"
       },
       {
+        "voId": "chr_0019_karin_sim_gift_give_01",
         "title": "Ofreciendo regalos",
         "text": "¡Ah, Endmin! Te traje un pequeño detalle de la misión de campo. ¡Espero que te guste!"
       },
       {
+        "voId": "chr_0019_karin_sim_gift_recv_01",
         "title": "Aceptando regalos",
         "text": "¡Vaya! ¡¿Un regalo para mí?! ¿Es un premio por algo que hice, o...?"
       },
       {
+        "voId": "chr_0019_karin_mono_self_line01",
         "title": "Diálogo de confianza 1",
         "text": "¿Quieres saber por qué la mejor estudiante de Neo Tsukushi decidió unirse a Endfield? La verdad, yo soy quien agradece que me hayan aceptado. Me encanta todo de mi Equipo Op, mucho más que cualquier escalón corporativo. Aquí puedo ser una compañera de combate y una pionera al mismo tiempo."
       },
       {
+        "voId": "chr_0019_karin_mono_self_line02",
         "title": "Diálogo de confianza 2",
         "text": "¿Mi deseo? Solo quisiera que mamá y papá hicieran las paces. Mi papá ha estado en combate contra los Aggeloi, y mi mamá está atendiendo la tienda familiar. Pero ¿por qué eso significa que deben vivir vidas separadas? Si ambos trabajaran en Endfield, quizá no tendrían que elegir entre el deber y la familia..."
       },
       {
+        "voId": "chr_0019_karin_mono_self_line03",
         "title": "Diálogo de confianza 3",
         "text": "Cuando era pequeña, jugaba con mi papá y mi tío a “pelear contra los Aggelos”. Me subía a sus hombros como si fuera el comandante. Luego, hace diez años, llamaron a mi tío al norte como ninja hacker y nunca volvió. Ahí fue cuando mis padres dejaron de hablarse. Casi había olvidado esas “batallas” hasta que Endfield me lo recordó todo."
       },
       {
+        "voId": "chr_0019_karin_mono_self_line04",
         "title": "Diálogo de confianza 4",
         "text": "Después de pedir que reactivaran el Z7, pasé más de un año en entrenamientos y pruebas muy intensas. Pero lo más importante fue conocer a Catcher, Fluorite, Estella y Antal. Son el corazón de nuestro equipo y la razón por la que el Z7 tiene un futuro."
       },
       {
+        "voId": "chr_0019_karin_mono_self_line05",
         "title": "Diálogo de confianza 5",
         "text": "Je, je, supongo que no te puedo ocultar nada, Endmin. Sí, mi mamá ya lo tenía todo planeado: escuela de negocios, entrar a la C.G.C.T., seguir sus pasos. Vaya, unirme aquí no era parte de su plan. Por esooo... ¡haz que Endfield se vuelva lo mejor de Talos-II, o empezará a llamarme para que regrese! Ah, y si alguna vez compras en la Franja, toma esta tarjeta. Shhh... Sí, la tienda que todos conocen."
       },
       {
+        "voId": "chr_0019_karin_mono_chat_line01",
         "title": "Charla 1",
         "text": "Sé que no soy la más fuerte en combate... Por eso la confianza y el trabajo en equipo son nuestra mejor defensa. ¡Ahora entiendes por qué esta pistola de bengalas es tan importante!"
       },
       {
+        "voId": "chr_0019_karin_mono_chat_line02",
         "title": "Charla 2",
         "text": "¿Quieres saber cómo mantengo funcionando al Z7? Es muy sencillo; me como todo lo que cocina Catcher, le regalo plantas carnívoras a Fluorite, aguanto las canciones ruidosas de Estella junto con ella y me río de los chistes de Antal. Créeme, funciona."
       },
       {
+        "voId": "chr_0019_karin_mono_chat_line03",
         "title": "Charla 3",
         "text": "Nuestra primera misión fue una escolta sencilla: ayudar a los ingenieros de Endfield a construir una represa en la frontera. Suena fácil, ¿no? Lo hicimos tan mal que podríamos escribir un manual de “101 cosas que no se deben hacer”. Sin embargo, cuando la represa quedó lista y estábamos metidos hasta la cintura en el agua helada... La satisfacción por el logro fue real."
       },
       {
+        "voId": "chr_0019_karin_mono_chat_line04",
         "title": "Charla 4",
         "text": "Si tú nos guiaras, Endmin... Diría que Estella y Antal nos cubran, Catcher y yo atraemos la atención y Fluorite da el golpe final. ¿Eh? ¿Tienes un plan completamente diferente?"
       },
       {
+        "voId": "chr_0019_karin_mono_chat_line05",
         "title": "Charla 5",
         "text": "¿Quieres ver mi boletín de calificaciones? Mmm... En todo tengo A+, excepto en la simulación de negocios de segundo año. Mis compañeros de equipo dependían de mí, así que... ups. Creo que hice que los otros equipos se fueran a la quiebra. Después, el profesor me dijo que en Talos-II, la estrategia de suma cero no es la mejor opción. Esa fue mi única calificación A-."
       },
       {
+        "voId": "chr_0019_karin_mono_about_line01",
         "title": "Tema: Catcher",
         "text": "Todos dicen que Catcher es un gran compañero, pero francamente... es el que más cuidados necesita. Yo seguí preparando el café para todos en las reuniones del equipo, y él se lo tomaba todo... durante dos meses... ¡hasta que descubrimos que era alérgico! Desde entonces le preparo chocolate caliente."
       },
       {
+        "voId": "chr_0019_karin_mono_about_line02",
         "title": "Tema: Fluorite",
         "text": "Algunos le tienen miedo a Fluorite por cómo habla y por su pasado. Pero si llegas a conocerla, verás el coraje y el sentido de justicia que esconde bajo esa capucha. Créeme, no te vas a arrepentir."
       },
       {
+        "voId": "chr_0019_karin_mono_about_line03",
         "title": "Tema: Estella",
         "text": "¿Otra queja sobre la falta de motivación de Estella? Nah, eso no es cierto. Mira su historial, ¡lo suyo son las emociones fuertes, la aventura y el trabajo duro!"
       },
       {
+        "voId": "chr_0019_karin_mono_about_line04",
         "title": "Tema: Antal",
         "text": "¿No entiendes el humor de Antal? *Risita* Intenta ver las cosas desde su perspectiva; quizá así logres seguirle el ritmo y a lo mejor hasta te ríes... ¡Ja, ja, ja!"
       },
       {
+        "voId": "chr_0019_karin_explore_point_common_01",
         "title": "Recurso/Coleccionable detectado 1",
         "text": "Creo que vi algo interesante por allá... ¡Vamos a echar un vistazo!"
       },
       {
+        "voId": "chr_0019_karin_explore_point_valub_01",
         "title": "Recurso/Coleccionable detectado 2",
         "text": "Objeto de alto valor identificado. Solicito autorización para iniciar operación de recolección."
       },
       {
+        "voId": "chr_0019_karin_explore_find_locked_01",
         "title": "Zona inexplorada detectada",
         "text": "Área no identificada detectada. Esperando instrucciones adicionales para actuar."
       },
       {
+        "voId": "chr_0019_karin_explore_find_danger_01",
         "title": "Enemigo poderoso descubierto",
         "text": "Objetivo de alto riesgo detectado. Mantengan la calma, para esto nos entrenamos."
       },
       {
+        "voId": "chr_0019_karin_interact_mine_valub_01",
         "title": "Minería 1",
         "text": "Estos minerales son materiales esenciales para Endfield."
       },
       {
+        "voId": "chr_0019_karin_interact_mine_valub_echo2_01",
         "title": "Minería 2",
         "text": "¡Déjame darte una mano! Somos un equipo, ¿no?"
       },
       {
+        "voId": "chr_0019_karin_interact_treasure_valub_01",
         "title": "Abriendo una caja",
         "text": "¡Genial! ¡Parece que hicimos una gran recolección!"
       },
       {
+        "voId": "chr_0019_karin_interact_etherium_01",
         "title": "Adquiriendo Aurileno",
         "text": "Adquirir Aurileno es nuestra máxima prioridad en las misiones. Me pregunto qué secreto esconde..."
       },
       {
+        "voId": "chr_0019_karin_interact_blight_break_01",
         "title": "Eliminar la Plaga",
         "text": "¡Listo, otro obstáculo superado! ¡Adelante hacia nuestro objetivo!"
       },
       {
+        "voId": "chr_0019_karin_interact_rest_01",
         "title": "Descanso",
         "text": "Uf, por fin puedo sentarme a disfrutar mi café. Ah, también debería planear los siguientes pasos, revisar mi equipamiento y organizar mi mochila."
       },
       {
+        "voId": "chr_0019_karin_combat_suppuse_using_01",
         "title": "Uso táctico 1",
         "text": "Mantén la calma, vamos a curarte primero."
       },
       {
+        "voId": "chr_0019_karin_combat_suppuse_getheal_01",
         "title": "Uso táctico 2",
         "text": "¡Un tratamiento oportuno!"
       },
       {
+        "voId": "chr_0019_karin_combat_remind_danger_01",
         "title": "Advertencia de peligro",
         "text": "¡Cúbrete, AHORA!"
       },
       {
+        "voId": "chr_0019_karin_combat_hurt_lowhp_01",
         "title": "Herida",
         "text": "Una buena capitana... nunca debe retroceder..."
       },
       {
+        "voId": "chr_0019_karin_combat_dead_01",
         "title": "0 PV",
         "text": "Y aunque caiga... No me quedaré en el suelo."
       },
       {
+        "voId": "chr_0019_karin_combat_remind_praise_01",
         "title": "Ánimo del equipo 1",
         "text": "¡Guau, ejecución perfecta!"
       },
       {
+        "voId": "chr_0019_karin_combat_remind_praise_02",
         "title": "Ánimo del equipo 2",
         "text": "¡Excelente trabajo! ¡Impresionante!"
       },
       {
+        "voId": "chr_0019_karin_combat_remind_praise_echo2_01",
         "title": "Respuesta al ánimo 1",
         "text": "¡Todo es gracias al trabajo en equipo!"
       },
       {
+        "voId": "chr_0019_karin_combat_remind_praise_echo2_02",
         "title": "Respuesta al ánimo 2",
         "text": "¡No lo habría logrado sin ustedes!"
       },
       {
+        "voId": "chr_0019_karin_combat_intobattle_01",
         "title": "Comienza el combate 1",
         "text": "¡Vamos a enfrentarnos cara a cara, ejecuten el Plan A!"
       },
       {
+        "voId": "chr_0019_karin_combat_intobattle_echo2_01",
         "title": "Comienza el combate 2",
         "text": "¡Vamos! ¡Confío completamente en ustedes!"
       },
       {
+        "voId": "chr_0019_karin_combat_outbattle_nor_01",
         "title": "Victoria en el combate 1",
         "text": "Ahora toca el informe de acción y de combate... pero primero, ¡vamos a celebrar la victoria!"
       },
       {
+        "voId": "chr_0019_karin_combat_outbattle_nor_02",
         "title": "Victoria en el combate 2",
         "text": "Ya casi llegamos — lento pero seguro."
       },
       {
+        "voId": "chr_0019_karin_combat_outbattle_nor_echo2_01",
         "title": "Victoria en el combate 3",
         "text": "Buen trabajo. ¡Todos hemos puesto nuestro granito de arena por Endfield!"
       },
       {
+        "voId": "chr_0019_karin_combat_outbattle_hard_01",
         "title": "Victoria en el combate 4",
         "text": "Una victoria impecable enseña poco. Son las imperfecciones las que nos agudizan."
       },
       {
+        "voId": "chr_0019_karin_combat_battle_defeat_01",
         "title": "Derrota en el combate",
         "text": "Los errores nos ayudan a aprender. Seguro que la próxima vez podemos hacerlo mejor."
       },
       {
+        "voId": "chr_0019_karin_mono_attack_last_01",
         "title": "Golpe final 1",
         "text": "¡Miren esto!"
       },
       {
+        "voId": "chr_0019_karin_mono_attack_last_02",
         "title": "Golpe final 2",
         "text": "¡Golpe penetrante!"
       },
       {
+        "voId": "chr_0019_karin_mono_skill_nor_01",
         "title": "Habilidad de batalla 1",
         "text": "¡Barrido de la zona!"
       },
       {
+        "voId": "chr_0019_karin_mono_skill_nor_02",
         "title": "Habilidad de batalla 2",
         "text": "¡Abran paso!"
       },
       {
+        "voId": "chr_0019_karin_mono_skill_nor_03",
         "title": "Habilidad de batalla 3",
         "text": "¡Siente el calor!"
       },
       {
+        "voId": "chr_0019_karin_combat_skill_comb_ready_01",
         "title": "Habilidad de combo preparada 1",
         "text": "¡Este es el momento!"
       },
       {
+        "voId": "chr_0019_karin_combat_skill_comb_ready_02",
         "title": "Habilidad de combo preparada 2",
         "text": "¡Hagamos equipo!"
       },
       {
+        "voId": "chr_0019_karin_mono_skill_comb_release_01",
         "title": "Lanzando combo 1",
         "text": "¡Hmf! ¡Ráfaga!"
       },
       {
+        "voId": "chr_0019_karin_mono_skill_comb_release_02",
         "title": "Lanzando combo 2",
         "text": "¡Ahora, arde!"
       },
       {
+        "voId": "chr_0019_karin_mono_attack_extra_01",
         "title": "Remate 1",
         "text": "¡Se acabó!"
       },
       {
+        "voId": "chr_0019_karin_mono_attack_extra_02",
         "title": "Remate 2",
         "text": "¡Esto se acaba aquí!"
       },
       {
+        "voId": "chr_0019_karin_mono_skill_ultimate_01",
         "title": "Habilidad máxima 1",
         "text": "¡Equipo, sigan mi bengala! ¡VAMOS!"
       },
       {
+        "voId": "chr_0019_karin_mono_skill_ultimate_02",
         "title": "Habilidad máxima 2",
         "text": "¡Que se levanten los hanabi!"
       },
       {
+        "voId": "chr_0019_karin_mono_skill_ultimate_03",
         "title": "Habilidad máxima 3",
         "text": "¡Estrategia de victoria, activar!"
       }

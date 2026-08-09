@@ -122,326 +122,407 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0031_mifu_chrbark_squad_01",
         "title": "Préparation de l'opération 1",
         "text": "Vous allez mener vous-même l'opération ? Pas mal."
       },
       {
+        "voId": "chr_0031_mifu_chrbark_squad_02",
         "title": "Préparation de l'opération 2",
         "text": "S'il faut se battre, comptez sur moi."
       },
       {
+        "voId": "chr_0031_mifu_chrbark_join_01",
         "title": "Intégration à l'équipe 1",
         "text": "Je suis prête."
       },
       {
+        "voId": "chr_0031_mifu_chrbark_join_02",
         "title": "Intégration à l'équipe 2",
         "text": "Montrez-moi comment ça se passe ici."
       },
       {
+        "voId": "chr_0031_mifu_chrbark_weap_01",
         "title": "Changement d'arme",
         "text": "Je suis une arme qui laisse des « souvenirs » à ses adversaires : des plaies qu'ils ne sont pas près d'oublier."
       },
       {
+        "voId": "chr_0031_mifu_chrbark_gear_01",
         "title": "Changement d'équipement",
         "text": "Est-ce que c'est pour ma sécurité à moi, ou celle de mes adversaires ?"
       },
       {
+        "voId": "chr_0031_mifu_chrup_skill_01",
         "title": "Activation de la matrice de capacités",
         "text": "J'ai découvert quelques techniques. Quand est-ce que je pourrai les utiliser ?"
       },
       {
+        "voId": "chr_0031_mifu_chrup_level_01",
         "title": "Visionnage d'archives de combat",
         "text": "HA ! Ça, c'était du combat ! Ces gens font partie de l'équipe ? Est-ce qu'on peut s'entraîner ensemble ?"
       },
       {
+        "voId": "chr_0031_mifu_chrup_promt01_01",
         "title": "Promotion d'opérateur 1",
         "text": "Pour être honnête, vous vous débrouillez bien, vous aussi. Il faut toujours exprimer sa reconnaissance en retour. Allez-y, je vous suis."
       },
       {
+        "voId": "chr_0031_mifu_chrup_promt02_01",
         "title": "Promotion d'opérateur 2",
         "text": "C'est nouveau, ça. À Wuling, c'est plutôt moi qui accorde les promotions aux sentinelles. Ça faisait longtemps que ça n'avait pas été mon tour d'en recevoir."
       },
       {
+        "voId": "chr_0031_mifu_chrup_promt03_01",
         "title": "Promotion d'opérateur 3",
         "text": "Diriger une équipe, ça n'a rien à voir avec les missions solos. Vous voyez ce que je veux dire, non ? Il faut gérer les gens, jongler avec les tâches. Quand on est seul, tout est beaucoup plus simple et net."
       },
       {
+        "voId": "chr_0031_mifu_chrup_promt04_01",
         "title": "Promotion d'opérateur 4",
         "text": "Je me suis toujours demandé où la patronne et vous trouviez ces jolis mots, là. Moi, j'arrive à peine à donner une tape sur l'épaule. Quoi, vous voulez m'en donner une aussi ? Ah là là... Mais, si vous prévenez, ça gâche tout !"
       },
       {
+        "voId": "chr_0031_mifu_introduce_01",
         "title": "Opératrice au rapport",
         "text": "Assez de blabla. Je vais nettoyer tout ça pour vous, cette fois. Mais je suis du genre direct. Si y a de la casse, c'est Endfield qui paie la facture."
       },
       {
+        "voId": "chr_0031_mifu_mono_switch_01",
         "title": "En attente 1",
         "text": "C'est parti pour une bagarre digne de ce nom !"
       },
       {
+        "voId": "chr_0031_mifu_mono_switch_02",
         "title": "En attente 2",
         "text": "On est des camarades, nos liens ont été forgés par les combats, hein ?"
       },
       {
+        "voId": "chr_0031_mifu_sim_assign_work_01",
         "title": "Affectation à une installation",
         "text": "OK. Mais venez pas me le reprocher si vos trucs délicats finissent en mille morceaux."
       },
       {
+        "voId": "chr_0031_mifu_sim_hello_lower_01",
         "title": "Salutation 1",
         "text": "Yo, vous voilà !"
       },
       {
+        "voId": "chr_0031_mifu_sim_hello_max_01",
         "title": "Salutation 2",
         "text": "Vous faites quelque chose là ? Ça fait longtemps qu'on ne s'est pas entraînés ensemble."
       },
       {
+        "voId": "chr_0031_mifu_sim_talk_lv01_01",
         "title": "Bavardage sur le Dijiang 1",
         "text": "Ça fait à peine une minute que je suis là, mais j'ai déjà repéré trois individus suspects. Hm ? Vos amis ? Vous avez vraiment des relations étranges."
       },
       {
+        "voId": "chr_0031_mifu_sim_talk_lv02_01",
         "title": "Bavardage sur le Dijiang 2",
         "text": "Qu'est-ce que je fais là ? Je viens voir des amis, maintenant que les choses sont plus calmes à Wuling. Lifeng, Chen, maître Pan, la petite minette... Mais vous croiser suffit à rentabiliser le voyage !"
       },
       {
+        "voId": "chr_0031_mifu_sim_talk_lv02_02",
         "title": "Bavardage sur le Dijiang 3",
         "text": "Vous êtes en retard. Il ne reste plus un seul souvenir. Comment ça, qu'est-ce que c'était ? Des gâteaux de riz frits, évidemment."
       },
       {
+        "voId": "chr_0031_mifu_sim_talk_max_01",
         "title": "Bavardage sur le Dijiang 4",
         "text": "Le Dijiang est vraiment trop silencieux, par rapport aux rues et bois de Wuling. Ça me semble pas naturel. Oh, je vous avais jamais dit que je détestais les endroits trop calmes ? En fait, ils sont super bruyants, parce que quand tout est silencieux, la voix que j'ai dans la tête se met à jacasser sans s'arrêter."
       },
       {
+        "voId": "chr_0031_mifu_sim_talk_max_02",
         "title": "Bavardage sur le Dijiang 5",
         "text": "Désolée, mais j'aime pas trop cet endroit. J'aime le ciel et la vraie eau, pas les murs froids qui enferment. Hm ? On peut utiliser la salle d'entraînement gratuitement ? Il fallait le dire plus tôt, je vais la réserver !"
       },
       {
+        "voId": "chr_0031_mifu_sim_talk_max_03",
         "title": "Bavardage sur le Dijiang 6",
         "text": "Quand j'ai commencé à m'entraîner, j'ai passé une nuit à observer le ciel étoilé et je me suis juré que je vaincrais autant d'adversaires qu'il y a d'étoiles. Peut-être que le Dijiang était l'une de ces étoiles. Et dire que j'ai dû me « battre » pour arriver ici. Surprenant."
       },
       {
+        "voId": "chr_0031_mifu_sim_gift_give_01",
         "title": "Cadeaux offerts",
         "text": "Tenez, c'est du fait main... Vous moquez pas. Si vous en parlez à quiconque, je vous fais la peau."
       },
       {
+        "voId": "chr_0031_mifu_sim_gift_recv_01",
         "title": "Cadeaux acceptés",
         "text": "Pfff, on en est plus à la phase cadeaux... Une minute. On en est à quelle phase de notre amitié, d'ailleurs ?"
       },
       {
+        "voId": "chr_0031_mifu_mono_self_line01",
         "title": "Dialogue à cœur ouvert 1",
         "text": "C'est en me battant avec les gens que je développe mes liens avec eux. Seules les personnes qui savent gagner, perdre et prendre des coups sont fiables. Vous ? Hmm... Je dirais que « fiable » est un euphémisme dans votre cas."
       },
       {
+        "voId": "chr_0031_mifu_mono_self_line02",
         "title": "Dialogue à cœur ouvert 2",
         "text": "Quand je suis arrivée chez la patronne, je n'avais jamais vu autant de friandises différentes... ni goûté à d'aussi bons gâteaux de riz. Du coup, je me suis empiffrée pendant trois bons mois, jusqu'à être écœurée rien qu'en regardant des trucs sucrés. Hmpf, même le sang a une odeur de sucre. Et je déteste sentir cette odeur à Wuling."
       },
       {
+        "voId": "chr_0031_mifu_mono_self_line03",
         "title": "Dialogue à cœur ouvert 3",
         "text": "Ceux qui m'ont appris à me battre... ? Mon maître fait la fière, mais elle est très douce. J'ai jamais réussi à imiter la posture de la grue, et elle s'est moquée de moi pendant des années. Le maître supérieur a une tête terrifiante, mais il est très gentil. Il s'inquiétait de tout ce que je mangeais, portais et utilisais. Quant au Grand maître... On s'est jamais entendus. Tout le monde dit qu'on a le même caractère, qu'on veut tout résoudre avec nos poings."
       },
       {
+        "voId": "chr_0031_mifu_mono_self_line04",
         "title": "Dialogue à cœur ouvert 4",
         "text": "Pendant mon initiation, mes maîtres ont lu mon avenir. Ils racontaient que je ne me lierais qu'à mes « adversaires ». Je les affronterais, on deviendrait amis, puis on suivrait chacun notre propre chemin. La patronne. La petite minette. Même mes maîtres. Tous m'ont un jour affrontée. Mais pas vous... On n'a jamais croisé le fer. On était plutôt côte à côte lors des combats. J'espère... que ça continuera encore un peu."
       },
       {
+        "voId": "chr_0031_mifu_mono_self_line05",
         "title": "Dialogue à cœur ouvert 5",
         "text": "J'ai compris quelque chose en arrivant à Endfield. Le barrage de xiranite, la ville de Wuling et la palanque de Qingbo... Tous sont de minuscules points à peine visibles sur la carte. Et pourtant, je tournais en rond dans ce tout petit monde. Mes maîtres ont raison : la vie, ça consiste à se frayer un chemin à coups de poing parmi les montagnes et les obstacles. Et, si je reste avec vous, il y aura toujours un nouveau combat qui m'attend, non ?"
       },
       {
+        "voId": "chr_0031_mifu_mono_chat_line01",
         "title": "Discussion 1",
         "text": "Jolis gantelets, hein ? Vous voulez les essayer ? Pas de souci, ils sont pas si lourds. Je les ai fait faire sur mesure avec la première récolte de Xiranite de l'année quand je suis devenue capitaine. Faut bien admettre que les artisans Tianshi savent ce qu'ils font. Ces gantelets bougent en suivant ma volonté et ressentent ma rage. Vous les avez déjà vus en action ?"
       },
       {
+        "voId": "chr_0031_mifu_mono_chat_line02",
         "title": "Discussion 2",
         "text": "Tout entraînement martial commence par la maîtrise du bambou, celui qui pousse tout autour de la ville. La posture du silence nécessite d'être tel le bambou d'hiver, bien ancré dans le sol et immobile. Il faut rester comme ça jusqu'au printemps pour nourrir un chi puissant et volcanique, puis le relâcher pour grandir d'un coup. Telle est la voie du bambou."
       },
       {
+        "voId": "chr_0031_mifu_mono_chat_line03",
         "title": "Discussion 3",
         "text": "Quand j'ai commencé à m'entraîner, le Grand maître m'a demandé de battre le bambou. Je l'ai frappé jusqu'à en avoir les mains en sang. Et puis il a dit : « N'aie pas peur du bambou. C'est lui qui doit avoir peur de toi. » Alors j'ai serré les dents et j'ai continué. Je ne me souviens pas combien de temps ça a pris, mais, un jour, mes poings ont arrêté de souffrir. Alors je me suis battue contre des rochers, du ferrium, puis des Aggeloi... Il faut faire appel à son courage et porter un coup. C'est comme ça qu'on peut avoir une chance de gagner."
       },
       {
+        "voId": "chr_0031_mifu_mono_chat_line04",
         "title": "Discussion 4",
         "text": "Pourquoi j'ai autant de calligraphies affichées dans ma chambre ? Y a rien de mal à aimer la culture, non...? Vous trouvez que j'ai une belle écriture ? Hmm... Vraiment ? C'est la patronne qui m'a appris. Selon elle, ça aide à se vider l'esprit et à se concentrer. J'écris quelques mots quand je suis pas occupée à chasser des criminels. Mais en vrai, j'ai jamais trop compris. Pour moi, un pinceau, c'est pas très différent d'une épée."
       },
       {
+        "voId": "chr_0031_mifu_mono_chat_line05",
         "title": "Discussion 5",
         "text": "Les palanquiens privilégient leurs poings. Ils parent rarement et se concentrent sur leurs coups. Quand je suis arrivée à Wuling, j'ai constaté que les Wulingis préféraient les lames, pour leur portée, leur tranchant et leur élégance. J'ai bien essayé d'apprendre, mais la patronne dit toujours que ma spadamancie est... maladroite, comme si j'essayais de lutter contre un saule."
       },
       {
+        "voId": "chr_0031_mifu_mono_about_line01",
         "title": "Thème : nom",
         "text": "Vous trouvez que « Mi Fu » est un nom bizarre ? Ça n'a pas toujours été le mien. Ruan Yi m'a surnommée « la traîtresse » dès le jour où j'ai rejoint Wuling. Et félinette... elle me traite tout le temps de « folle ». Tss, comme si j'en avais quelque chose à faire... À vrai dire, j'ai été nommée « Mi Fu » pendant un séjour à l'infirmerie. La patronne m'y a enfermée plus d'un mois, mais je refusais de parler. Un jour, alors qu'elle lisait près de mon lit, elle m'a soudain demandé comment je m'appelais. J'ai pointé du doigt deux caractères au hasard, dans son livre. Elle les a regardés, avant de s'exclamer : « Parfait. Mi Fu, donc. » Hmpf. Ça sonne bien, quand même."
       },
       {
+        "voId": "chr_0031_mifu_mono_about_line02",
         "title": "Thème : Zhuang Fangyi",
         "text": "La patronne... est partie ? Humpf. Je pense qu'elle se sent plus à l'aise avec vous. Vous avez de super projets. Assez gros pour qu'elle prenne son envol. Wuling est trop petite pour elle, même si c'est elle qui a choisi d'y vivre. Vous voyez de quoi je veux parler ? Vous avez intérêt à prendre soin d'elle ! Si elle a le moindre bobo, ce n'est pas que moi, mais tous les habitants de Wuling qui vont vous tomber dessus."
       },
       {
+        "voId": "chr_0031_mifu_mono_about_line03",
         "title": "Thème : Wuling",
         "text": "Je ne sais pas quand je suis devenue une vraie Wulingie. Quand la patronne m'a gardée à l'infirmerie pendant des mois, je voyais les autres organiser leur avenir dans ces terres sauvages marécageuses. Et là, ça a fait tilt. Ils me traitaient comme l'une des leurs et me nourrissaient. Alors j'ai commencé à les aider, parce que je déteste être redevable. Et puis mon nom est apparu dans la liste des bâtisseurs, quand ils ont commencé à retourner la terre sur l'avenue Fangxing. Je me souviens de ses mots : « Ce serait merveilleux si tes poings protégeaient les autres. »"
       },
       {
+        "voId": "chr_0031_mifu_mono_about_line04",
         "title": "Thème : le passage secret de la palanque de Qingbo",
         "text": "Quelle coïncidence. Alors vous avez emprunté le passage secret lors de votre première visite. Ça fait dix ans que je n'y suis pas allée. Quand je suis partie, Tangtang s'est mise à y passer tout son temps, alors je l'ai condamné. Elle n'aurait pas dû venir et je n'aurais pas dû y retourner... Mais je m'en doutais. Enfin, j'aurais pas cru qu'elle serait paumée au point de dessiner une énorme croix sur mon visage sur le graffiti... Sale petite minette, il faut qu'on règle ça !"
       },
       {
+        "voId": "chr_0031_mifu_mono_about_line05",
         "title": "Thème : Tangtang",
         "text": "Tangtang... Elle et moi, on a des choses à régler. Elle vous a causé des problèmes ? Non, pour de vrai ? Tss, tss... Vous en faites pas, je vais m'occuper d'elle. Elle tient beaucoup trop à vous. Si vous la grondez, elle va probablement nous faire une dépression. Et ce serait une sacrée plaie."
       },
       {
+        "voId": "chr_0031_mifu_explore_point_common_01",
         "title": "Détection de ressource/objet à collecter 1",
         "text": "Il y a quelque chose, par là. Mais n'oubliez pas, les sentinelles encouragent quiconque trouve un objet perdu à le rendre."
       },
       {
+        "voId": "chr_0031_mifu_explore_point_valub_01",
         "title": "Détection de ressource/objet à collecter 2",
         "text": "J'ai vu des objets de valeur. Enfin des objets perdus, puisque personne ne les a réclamés."
       },
       {
+        "voId": "chr_0031_mifu_explore_find_locked_01",
         "title": "Zone inexplorée détectée",
         "text": "Une nouvelle zone. On devrait y envoyer une patrouille, pour éviter les mauvaises surprises."
       },
       {
+        "voId": "chr_0031_mifu_explore_find_danger_01",
         "title": "Découverte d'un ennemi puissant",
         "text": "Ah, voilà un adversaire digne de ce nom."
       },
       {
+        "voId": "chr_0031_mifu_interact_mine_valub_01",
         "title": "Extraction 1",
         "text": "Le minerai fonctionne même s'il est écrasé, pas vrai ?"
       },
       {
+        "voId": "chr_0031_mifu_interact_mine_valub_echo2_01",
         "title": "Extraction 2",
         "text": "Je gère. Deux coups, c'est tout ce qu'il me faut."
       },
       {
+        "voId": "chr_0031_mifu_interact_treasure_valub_01",
         "title": "Ouverture de caisse",
         "text": "Belle trouvaille. Heureusement que c'est intact."
       },
       {
+        "voId": "chr_0031_mifu_interact_etherium_01",
         "title": "Obtention d'aurylène",
         "text": "Je pensais que c'étaient des fantômes. J'ai appris qu'on appelait ça de l'aurylène après mon arrivée à Wuling."
       },
       {
+        "voId": "chr_0031_mifu_interact_blight_break_01",
         "title": "Élimination de la Gangrène",
         "text": "Ah. Cette substance ne peut rien contre moi."
       },
       {
+        "voId": "chr_0031_mifu_interact_rest_01",
         "title": "Se reposer",
         "text": "Allez, je peux continuer ! Bon, d'accord..."
       },
       {
+        "voId": "chr_0031_mifu_combat_suppuse_using_01",
         "title": "Utilisation de tactique 1",
         "text": "Il n'y a pas intérêt à tomber là !"
       },
       {
+        "voId": "chr_0031_mifu_combat_suppuse_getheal_01",
         "title": "Utilisation de tactique 2",
         "text": "De retour au combat !"
       },
       {
+        "voId": "chr_0031_mifu_combat_remind_danger_01",
         "title": "Avertissement de danger",
         "text": "Que personne ne m'approche !"
       },
       {
+        "voId": "chr_0031_mifu_combat_hurt_lowhp_01",
         "title": "Blessure",
         "text": "Ah. Là, c'est un vrai combat."
       },
       {
+        "voId": "chr_0031_mifu_combat_dead_01",
         "title": "0 PV",
         "text": "Nos poings... ne connaissent nul regret..."
       },
       {
+        "voId": "chr_0031_mifu_combat_remind_praise_01",
         "title": "Encouragement de l'équipe 1",
         "text": "Propre et précis. Impressionnant."
       },
       {
+        "voId": "chr_0031_mifu_combat_remind_praise_02",
         "title": "Encouragement de l'équipe 2",
         "text": "Beau travail d'équipe !"
       },
       {
+        "voId": "chr_0031_mifu_combat_remind_praise_echo2_01",
         "title": "Réaction face aux encouragements 1",
         "text": "Je ne fais que mon boulot."
       },
       {
+        "voId": "chr_0031_mifu_combat_remind_praise_echo2_02",
         "title": "Réaction face aux encouragements 2",
         "text": "Merci, tout le monde."
       },
       {
+        "voId": "chr_0031_mifu_combat_intobattle_01",
         "title": "Début du combat 1",
         "text": "Il est temps de se battre !"
       },
       {
+        "voId": "chr_0031_mifu_combat_intobattle_echo2_01",
         "title": "Début du combat 2",
         "text": "Il est temps de leur donner une leçon."
       },
       {
+        "voId": "chr_0031_mifu_combat_outbattle_nor_01",
         "title": "Victoire au combat 1",
         "text": "La patronne sera contente d'apprendre ça."
       },
       {
+        "voId": "chr_0031_mifu_combat_outbattle_nor_02",
         "title": "Victoire au combat 2",
         "text": "Affaire classée."
       },
       {
+        "voId": "chr_0031_mifu_combat_outbattle_nor_echo2_01",
         "title": "Victoire au combat 3",
         "text": "Sacré niveau !"
       },
       {
+        "voId": "chr_0031_mifu_combat_outbattle_hard_01",
         "title": "Victoire au combat 4",
         "text": "Les gens... Laissez-moi faire le plus difficile. N'en faites pas trop."
       },
       {
+        "voId": "chr_0031_mifu_combat_battle_defeat_01",
         "title": "Défaite au combat",
         "text": "Tant qu'on est encore debout, on ne lâche rien."
       },
       {
+        "voId": "chr_0031_mifu_mono_attack_last_01",
         "title": "Coup final 1",
         "text": "Recule !"
       },
       {
+        "voId": "chr_0031_mifu_mono_attack_last_02",
         "title": "Coup final 2",
         "text": "Alleeez !"
       },
       {
+        "voId": "chr_0031_mifu_mono_skill_nor_01",
         "title": "Compétence de combat 1",
         "text": "Tu ne m'échapperas pas !"
       },
       {
+        "voId": "chr_0031_mifu_mono_skill_nor_02",
         "title": "Compétence de combat 2",
         "text": "Mange ça !"
       },
       {
+        "voId": "chr_0031_mifu_mono_skill_nor_03",
         "title": "Compétence de combat 3",
         "text": "À ton tour !"
       },
       {
+        "voId": "chr_0031_mifu_combat_skill_comb_ready_01",
         "title": "Compétence de combo prête 1",
         "text": "Accroche-toi !"
       },
       {
+        "voId": "chr_0031_mifu_combat_skill_comb_ready_02",
         "title": "Compétence de combo prête 2",
         "text": "Ça va barder !"
       },
       {
+        "voId": "chr_0031_mifu_mono_skill_comb_release_01",
         "title": "Utilisation de combo 1",
         "text": "Rends-toi tout de suite !"
       },
       {
+        "voId": "chr_0031_mifu_mono_skill_comb_release_02",
         "title": "Utilisation de combo 2",
         "text": "Serre les dents !"
       },
       {
+        "voId": "chr_0031_mifu_mono_attack_extra_01",
         "title": "Coup fatal 1",
         "text": "Inutile de résister !"
       },
       {
+        "voId": "chr_0031_mifu_mono_attack_extra_02",
         "title": "Coup fatal 2",
         "text": "C'est terminé !"
       },
       {
+        "voId": "chr_0031_mifu_mono_skill_ultimate_01",
         "title": "Ultime 1",
         "text": "Je vais t'apprendre une leçon à la dure !"
       },
       {
+        "voId": "chr_0031_mifu_mono_skill_ultimate_02",
         "title": "Ultime 2",
         "text": "Tu mérites... d'aller en taule !"
       },
       {
+        "voId": "chr_0031_mifu_mono_skill_ultimate_03",
         "title": "Ultime 3",
         "text": "Je t'ai demandé gentiment, pourtant !"
       }

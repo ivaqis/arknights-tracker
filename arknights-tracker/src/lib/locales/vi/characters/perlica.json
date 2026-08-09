@@ -120,338 +120,422 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0004_pelica_chrbark_squad_01",
         "title": "Chuẩn Bị Tác Chiến 1",
         "text": "Tất cả Cán Viên đã điểm danh. Đội đã sẵn sàng cho nhiệm vụ."
       },
       {
+        "voId": "chr_0004_pelica_chrbark_squad_02",
         "title": "Chuẩn Bị Tác Chiến 2",
         "text": "Đội Ứng Phó Nguy Cảnh Endfield chuẩn bị hành động."
       },
       {
+        "voId": "chr_0004_pelica_chrbark_join_01",
         "title": "Đang thêm vào đội 1",
         "text": "Chuyển giao quyền chỉ huy ngay, Endministrator."
       },
       {
+        "voId": "chr_0004_pelica_chrbark_join_02",
         "title": "Đang thêm vào đội 2",
         "text": "Xin ngài hãy dẫn dắt chúng tôi, Endministrator."
       },
       {
+        "voId": "chr_0004_pelica_chrbark_weap_01",
         "title": "Đang đổi vũ khí",
         "text": "Đã đến lúc nghĩ ra chiến thuật tối ưu để sử dụng vũ khí này."
       },
       {
+        "voId": "chr_0004_pelica_chrbark_gear_01",
         "title": "Đang đổi trang bị",
         "text": "Thành quả của Khu Phức Hợp Công Nghiệp Tự Động."
       },
       {
+        "voId": "chr_0004_pelica_chrup_skill_01",
         "title": "Kích hoạt Ma Trận Năng Lực",
         "text": "Giờ tôi chỉ cần tinh chỉnh lại một chút... để tối đa hóa thành quả từ chiến thắng."
       },
       {
+        "voId": "chr_0004_pelica_chrup_level_01",
         "title": "Xem Hồ Sơ Chiến Đấu",
         "text": "Chúng tôi chiến đấu không ngừng nghỉ... bởi vì chúng tôi tin ngài sẽ quay trở lại."
       },
       {
+        "voId": "chr_0004_pelica_chrup_promt01_01",
         "title": "Thăng Bậc Cán Viên 1",
         "text": "Tôi rất biết ơn sự tín nhiệm của ngài, Endministrator. Tôi sẽ nỗ lực nhiều hơn nữa."
       },
       {
+        "voId": "chr_0004_pelica_chrup_promt02_01",
         "title": "Thăng Bậc Cán Viên 2",
         "text": "Dù tôi còn khá trẻ và thiếu kinh nghiệm, tôi đã hạ quyết tâm. Tôi sẽ hoàn thành tốt nhiệm vụ với tư cách là Giám sát viên của Tập đoàn Endfield."
       },
       {
+        "voId": "chr_0004_pelica_chrup_promt03_01",
         "title": "Thăng Bậc Cán Viên 3",
         "text": "Một lần nữa, cảm ơn ngài đã đặt niềm tin nơi tôi, Endministrator... Tôi nhất định sẽ không phụ sự kỳ vọng đó."
       },
       {
+        "voId": "chr_0004_pelica_chrup_promt04_01",
         "title": "Thăng Bậc Cán Viên 4",
         "text": "Tôi không sao. Lời động viên của ngài khiến tôi chợt thấy... bồi hồi quá khứ. Đó từng là lý do duy nhất giữ tôi tiếp tục bước đi. Giờ đây, tôi rất vui vì có thể lãnh đạo Tập Đoàn Endfield và sát cánh bên ngài."
       },
       {
+        "voId": "chr_0004_pelica_introduce_01",
         "title": "Cán Viên đang báo cáo nhiệm vụ",
         "text": "Tôi luôn tin rằng ngài sẽ đưa chúng tôi quay trở lại con đường đúng đắn. Chào mừng ngài trở lại với Tập đoàn Endfield, Endministrator."
       },
       {
+        "voId": "chr_0004_pelica_mono_switch_01",
         "title": "Chờ Lệnh 1",
         "text": "Mọi thứ đã được chuẩn bị."
       },
       {
+        "voId": "chr_0004_pelica_mono_switch_02",
         "title": "Chờ Lệnh 2",
         "text": "Cán Viên Perlica sẵn sàng nhận lệnh."
       },
       {
+        "voId": "chr_0004_pelica_sim_assign_work_01",
         "title": "Phân Công Vào Công Trình",
         "text": "Một nhiệm vụ hiệu quả. Tôi sẽ gắng hết sức!"
       },
       {
+        "voId": "chr_0004_pelica_sim_hello_lower_01",
         "title": "Lời Chào 1",
         "text": "Ngài vẫn ổn chứ, Endministrator?"
       },
       {
+        "voId": "chr_0004_pelica_sim_hello_max_01",
         "title": "Lời Chào 2",
         "text": "Xin đừng quá sức, Endministrator. Hãy nhớ nghỉ ngơi và giữ sức khỏe."
       },
       {
+        "voId": "chr_0004_pelica_sim_talk_lv01_01",
         "title": "Trò Chuyện Nhàn Rỗi Dijiang 1",
         "text": "Kể từ khi ngài tỉnh dậy, Dijiang trở nên nhộn nhịp hơn từng ngày... Và điều đó khiến tôi thêm hy vọng về tương lai, Endministrator."
       },
       {
+        "voId": "chr_0004_pelica_sim_talk_lv02_01",
         "title": "Trò Chuyện Nhàn Rỗi Dijiang 2",
         "text": "Ngài trông khỏe hơn nhiều rồi đấy, Endmin. Nếu có điều gì cần, xin ngài cứ nói với tôi."
       },
       {
+        "voId": "chr_0004_pelica_sim_talk_lv02_02",
         "title": "Trò Chuyện Nhàn Rỗi Dijiang 3",
         "text": "Nhu cầu của ngài là ưu tiên hàng đầu của chúng tôi, Endmin. Để đảm bảo chúng được đáp ứng, tôi sẵn sàng gác sang một bên những nhiệm vụ khác… hoặc nhờ Fiona xử lý chúng."
       },
       {
+        "voId": "chr_0004_pelica_sim_talk_max_01",
         "title": "Trò Chuyện Nhàn Rỗi Dijiang 4",
         "text": "Khoang Trung Tâm lúc nào cũng bận rộn như vậy. Đó là biểu tượng cho sứ mệnh mà chúng ta mang trên vai. Hơn một thế kỷ qua, nhiều thế hệ nhân viên Endfield đã dốc lòng hồi sinh Vành Đai Văn Minh. Có lẽ một ngày nào đó, Dijiang sẽ hạ cánh, được yên nghỉ trong nơi trú ẩn mà chúng ta đã xây dựng."
       },
       {
+        "voId": "chr_0004_pelica_sim_talk_max_02",
         "title": "Trò Chuyện Nhàn Rỗi Dijiang 5",
         "text": "Nhiều cán viên không ở lại Dijiang quá lâu, đặc biệt là các thành viên tinh nhuệ. Họ cần có mặt tại Vành Đai Văn Minh, nơi hiểm nguy rình rập chứ không phải tại nơi trú ẩn này. Dù sao ngài cũng sẽ sớm gặp họ thôi. Tôi sẽ sắp xếp giới thiệu khi đến thời điểm thích hợp."
       },
       {
+        "voId": "chr_0004_pelica_sim_talk_max_03",
         "title": "Trò Chuyện Nhàn Rỗi Dijiang 6",
         "text": "Lần cuối nói chuyện, tôi chỉ là một cô bé chiều cao không bằng phân nửa bây giờ. Thời gian đã trôi qua. Dijiang cũng đã được nâng cấp đáng kể, và tôi thì đã trưởng thành... Nhưng còn ngài, Endministrator... Ngài vẫn như xưa."
       },
       {
+        "voId": "chr_0004_pelica_sim_gift_give_01",
         "title": "Tặng Quà",
         "text": "Tôi đã thay mặt ngài yêu cầu tiếp tế, Endmin. Hy vọng nó sẽ hữu ích. Đôi lúc ngài làm việc quá sức. Nhưng xin nhớ rằng: ngài có thể trông cậy vào tôi và cả Tập Đoàn Endfield."
       },
       {
+        "voId": "chr_0004_pelica_sim_gift_recv_01",
         "title": "Nhận quà",
         "text": "Tôi thật sự biết ơn điều này, Endmin. Tôi sẽ trân trọng nó."
       },
       {
+        "voId": "chr_0004_pelica_mono_self_line01",
         "title": "Đối Thoại Tín Nhiệm 1",
         "text": "Endmin, đừng bỏ lỡ buổi kiểm tra sức khỏe, và vui lòng tránh làm việc quá sức. Quan trọng nhất, đừng lạm dụng Thuật Pháp Originium. Nếu có cán viên nào nhờ ngài sửa Robot Delta lần nữa... cứ từ chối họ đi!"
       },
       {
+        "voId": "chr_0004_pelica_mono_self_line02",
         "title": "Đối Thoại Tín Nhiệm 2",
         "text": "Khi còn bé, tôi đã đi khắp mọi ngóc ngách của Dijiang và đặt tên cho từng khoang. Lúc đó, tôi từng nghĩ mình sẽ chẳng bao giờ được đặt chân xuống mặt đất nữa... Dijiang chính là ngôi nhà của tôi. Nhưng để hỗ trợ ngài tốt hơn, tôi đã rời tàu và đi khắp nhiều nơi trên Talos-II. Giờ thì Dijiang trông chật chội hơn tôi nhớ đấy... nhưng với tôi, nó vẫn là con tàu lưu giữ toàn bộ ký ức đời mình."
       },
       {
+        "voId": "chr_0004_pelica_mono_self_line03",
         "title": "Đối Thoại Tín Nhiệm 3",
         "text": "Chen thực ra là cán viên đầu tiên mà tôi đích thân tuyển dụng kể từ khi trở thành Giám sát viên của Tập Đoàn Endfield. Cô ấy cũng là người bạn thân nhất của tôi. Tôi tình cờ gặp lại cô ấy trong dự án hợp tác với Học Viện Khoa Học Hongshan. Hehe. Cô ấy cứ hay nói rằng tôi đã luôn giữ vẻ mặt cứng nhắc, cô ấy chỉ đồng ý giúp vì quá lo cho tôi. Có lẽ là thật. Khi ấy tôi vẫn còn non nớt với vai trò Giám sát viên, có quá nhiều điều cần học hỏi. Tôi gần như không còn thời gian để quan tâm đến người và sự việc xung quanh. Có lẽ chính nụ cười và sự thẳng thắn của Chen đã giúp tôi không đi lạc hướng."
       },
       {
+        "voId": "chr_0004_pelica_mono_self_line04",
         "title": "Đối Thoại Tín Nhiệm 4",
         "text": "Không cần lo lắng đâu, Endmin. Đừng để lời của Chen khiến ngài hiểu lầm, dĩ nhiên tôi vẫn có thời gian nghỉ ngơi. Tôi làm gì trong kỳ nghỉ ư? Hmm... phần lớn là đọc sách, văn học và khoa học lý thuyết, vì chúng có liên quan đến công việc sắp tới. Nếu như vậy thì không còn là nghỉ ngơi nữa sao? Thôi được rồi... Tôi thích một mình lái xe vượt qua các vùng tiền tuyến. Endmin... ngài là người duy nhất biết điều này. Nếu các cán viên khác biết, họ sẽ lo lắng. Tôi hiểu họ, nhưng bản thân vẫn luôn khao khát được nghe tiếng gió của hành tinh này."
       },
       {
+        "voId": "chr_0004_pelica_mono_self_line05",
         "title": "Đối Thoại Tín Nhiệm 5",
         "text": "Ngài còn thức chứ, Endmin? Nếu thấy mệt thì ngài nên nghỉ sớm một chút. Tôi vừa thoáng thấy vẻ mặt buồn ngủ của ngài... *Cười khúc khích* Tôi đã nhìn thấy vẻ mặt buồn ngủ đó suốt cả một thập kỷ rồi. Phải, khi ấy tôi cùng những đứa trẻ khác đến thăm quan tài đá, nơi ngài an giấc trong giấc ngủ sâu. Nhưng dần dà chỉ còn mình tôi lui tới nơi đó. Tôi thường đến sau khi vượt qua bài kiểm tra cán viên, sau khi trở thành Giám sát viên... Xin đừng cảm thấy có lỗi, Endmin. Tôi thực sự định kể cho ngài mọi chuyện sau khi ngài khôi phục được ký ức."
       },
       {
+        "voId": "chr_0004_pelica_mono_chat_line01",
         "title": "Trò Chuyện 1",
         "text": "Tập đoàn Endfield hiện đang hợp tác với nhiều tổ chức trên mảnh đất này. Phe Hiệp Ước, dĩ nhiên rồi. Phòng Thương Mại Tổng Hợp Talos-II là nhà vận chuyển và vật tư hiện đại tốt nhất, còn Công Đoàn là người bạn đáng tin cậy nơi tiền tuyến. Học Viện Khoa Học Hongshan đi đầu về công nghệ, chúng tôi cũng cởi mở chia sẻ các phát hiện khoa học với họ. Những đồng minh này là nền tảng giúp chúng ta đứng vững nơi khắc nghiệt này."
       },
       {
+        "voId": "chr_0004_pelica_mono_chat_line02",
         "title": "Trò Chuyện 2",
         "text": "Ngài chưa từng gặp Fiona sao? À... Tình trạng của Fiona khá... đặc biệt. Cô ấy từng nói rằng mình thích hiện diện qua sóng truyền tin và kết nối với mọi người qua hệ thống liên lạc chiến đấu. Fiona cũng lo rằng nếu ngài... gặp cô ấy trực tiếp, ngài có thể sẽ thay đổi cách đối xử."
       },
       {
+        "voId": "chr_0004_pelica_mono_chat_line03",
         "title": "Trò Chuyện 3",
         "text": "Tôi trông giống một nhạc trưởng trên chiến trường à? Thói quen đó tôi có được trong lúc huấn luyện chiến đấu... Người ta nói rằng, vào Thời Terra, người Leithania đã kết hợp âm nhạc với năng khiếu về Thuật Pháp. Người hướng dẫn Thuật Pháp của tôi cũng là một nhạc sĩ tài năng. Khả năng chiến đấu của tôi vốn không mấy nổi bật, nhưng tôi đã nhanh chóng nắm vững kỹ thuật khi bắt đầu nhìn dòng chảy của Thuật Pháp như những nốt nhạc và nhịp điệu."
       },
       {
+        "voId": "chr_0004_pelica_mono_chat_line04",
         "title": "Trò Chuyện 4",
         "text": "Có thể quan sát Aurora từ Dijiang. Đó là loài hoa dị thường nở rộ trên Talos-II. Bức màn phương Bắc phủ đầy Æther, khiến Aurora trông như một bức tường chắn ngang đường ta. Từng có một vùng đất lý tưởng phía sau bức tường ấy... Dù chẳng còn gì ngoài đổ nát... và kẻ thù chiếm giữ tàn tích."
       },
       {
+        "voId": "chr_0004_pelica_mono_chat_line05",
         "title": "Trò Chuyện 5",
         "text": "Chúng ta nên bổ sung gian hàng nào cho Dijiang đây? Ngài có ý tưởng gì không, Endmin? À, chỉ là một cuộc khảo sát thường kỳ từ Bộ phận Kinh doanh thôi. Dijiang không có khu sinh hoạt lớn, số thành viên thường trú cũng không nhiều... Máy bán hàng tự động thì ổn nhưng lại thiếu đi nét ấm áp của con người... Một quán cà phê nhỏ thì sao, Endmin? Ngài có muốn ghé qua uống một tách cà phê trong giờ nghỉ không?"
       },
       {
+        "voId": "chr_0004_pelica_mono_about_line01",
         "title": "Chủ đề: Cuộc giao tranh đầu tiên của họ",
         "text": "Thành thật xin lỗi, Endministrator... Tôi biết điều này hơi ích kỷ, nhưng tôi không muốn nói về quá khứ lúc này. Tôi chỉ hy vọng ngài sẽ tự tìm lại những ký ức đó. Đây không phải là yêu cầu từ Giám sát viên của Tập đoàn Endfield mà là mong muốn từ chính tôi."
       },
       {
+        "voId": "chr_0004_pelica_mono_about_line02",
         "title": "Chủ đề: Dijiang",
         "text": "Ấn tượng lắm, phải không? Hãy hình dung Giao Thức Công Nghệ như mạng lưới Originium, và Dijiang là máy chủ Protorig. Nó còn là hiện thân của Văn Minh Terra, nền văn minh từng băng qua Cổng Không Gian, mang theo tất cả lịch sử đằng sau cuộc di cư ấy. Dijiang từng vượt qua chiến tranh và hỗn loạn, và giờ đây con tàu ấy đang lặng lẽ trôi giữa đại dương không gian. Có lẽ sẽ đến một ngày, nhân loại thoát khỏi xiềng xích của trọng lực... Bước đi giữa những vì sao như tổ tiên ta từng mơ ước."
       },
       {
+        "voId": "chr_0004_pelica_mono_about_line03",
         "title": "Chủ đề: M3",
         "text": "Đã có một khoảng thời gian tôi gọi M3 là chị. Nhưng sau khi tôi chính thức trở thành cán viên Endfield, chị ấy không cho tôi gọi như vậy nữa. Thành thật mà nói, với tôi chị ấy luôn là một người chị ruột. Hiền hòa, lạc quan, khéo léo trong mọi việc. Dạo gần đây, tôi không thấy chị ấy nhiều trên Dijiang. Tôi biết chị đang thực hiện một sứ mệnh của riêng mình... Nếu có thể, tôi mong Endfield sẽ chia sẻ phần nào gánh nặng ấy."
       },
       {
+        "voId": "chr_0004_pelica_mono_about_line04",
         "title": "Chủ đề: Talos-II và Terra",
         "text": "Rất ít người biết thế giới xa xôi Talos-II này thực chất là nơi bắt đầu của chúng ta. Dù mang trong mình nhận thức đó, hầu như không ai có thể buông bỏ nỗi hoài niệm về Terra. Rời khỏi Terra để đến Talos-II chẳng khác nào đứa trẻ rời xa chiếc nôi êm ái để tìm về vòng tay mẹ... Nhưng cảm nhận của tôi thì ngược lại. Chính trên Talos-II, tôi đã gia nhập Endfield và gặp được ngài, Endministrator. Terra chỉ là biểu tượng cho sứ mệnh của tôi."
       },
       {
+        "voId": "chr_0004_pelica_mono_about_line05",
         "title": "Chủ đề: Mệnh Lệnh Số 0",
         "text": "Tôi không phải người duy nhất tham gia vào Mệnh Lệnh Số 0. Nhưng không ai trong chúng tôi biết được nhiệm vụ của những người còn lại. Trước kia, ngài luôn có những chuẩn bị chu đáo từ rất sớm, thậm chí là trước khi nhận thức được hoàn cảnh của mình. Và lần thức tỉnh này, tôi đã diễn tập vô số lần thực hiện Mệnh Lệnh Số 0... Thế nhưng khi đối diện với ngài bằng xương bằng thịt, tất cả những lời lẽ đó lại tuôn ra một cách vô cùng tự nhiên."
       },
       {
+        "voId": "chr_0004_pelica_mono_about_line06",
         "title": "Chủ đề: Khu Phức Hợp Công Nghiệp Tự Động",
         "text": "Những năm gần đây, Tập đoàn Endfield đã tập trung phát triển Khu Phức Hợp Công Nghiệp Tự Động. Mục tiêu của Khu Phức Hợp đã thể hiện rõ qua chính cái tên của nó, tôi tin ngài có nhiều kinh nghiệm với hệ thống này. Dĩ nhiên, sự ám ảnh của chúng tôi với Giao Thức Công Nghệ không dừng lại ở đó. Originium chính là thông tin. Nó là hiện thân kết tinh của mọi ý tưởng thoáng qua. Hình thái cuối cùng của nó... sẽ cho phép chúng ta \"sản xuất\" và \"xây dựng\" không chỉ là sản phẩm công nghiệp."
       },
       {
+        "voId": "chr_0004_pelica_mono_about_line07",
         "title": "Chủ đề: Đội Ứng Phó Nguy Cảnh Endfield",
         "text": "Chính ngài là người sáng lập Đội Ứng Phó Nguy Cảnh, Endmin. Một đội tác chiến mà ngài từng trực tiếp chỉ huy. Đội Ứng Phó Nguy Cảnh từng là lực lượng tinh anh vang danh khắp Talos-II. Sau đó, quyền lãnh đạo được chuyển giao cho Người Sáng Lập Founder và M3, nhưng mục đích và chức năng của đội vẫn không thay đổi. Khi trở thành Giám Sát Viên và tiếp nhận vai trò chỉ huy, tôi cảm nhận rõ sức nặng của trách nhiệm. Dẫn dắt một đội ngũ anh hùng... cũng như sức nóng bùng cháy trong họ, từng người không tiếc thân mình vì lý tưởng cao cả của chúng ta."
       },
       {
+        "voId": "chr_0004_pelica_mono_about_line08",
         "title": "Chủ đề: Giám Sát Viên Tập Đoàn Endfield",
         "text": "Tôi từng nghe M3 nói rằng thuở đầu, Endfield không có Giám sát viên. Ngài, Endministrator, đã trực tiếp dẫn dắt toàn bộ công ty với sự hỗ trợ từ M3, Người Sáng Lập, và các cán viên tinh anh. Chúng tôi gọi tổ chức ra quyết định này là Khởi Nguồn. Khởi Nguồn là lực lượng điều phối ba trung tâm trụ cột, giúp Endfield vận hành cho tới tận hôm nay... Endfield buộc phải thay đổi trong thời gian ngài yên giấc. Nhưng những thay đổi đó đã giúp chúng tôi đi tiếp, cũng là lý do tôi đứng bên cạnh ngài như bây giờ."
       },
       {
+        "voId": "chr_0004_pelica_explore_point_common_01",
         "title": "Phát hiện Tài Nguyên/Có Thể Thu Thập 1",
         "text": "Có điều gì đó đáng để xem xét kỹ hơn..."
       },
       {
+        "voId": "chr_0004_pelica_explore_point_valub_01",
         "title": "Phát hiện Tài Nguyên/Có Thể Thu Thập 2",
         "text": "Có vẻ như chúng ta đang ở gần nguồn vật tư có giá trị cao. Hãy chú ý quan sát."
       },
       {
+        "voId": "chr_0004_pelica_explore_find_locked_01",
         "title": "Phát Hiện Khu Vực Chưa Khám Phá",
         "text": "Lại là một khu vực chưa từng có dấu chân người."
       },
       {
+        "voId": "chr_0004_pelica_explore_find_danger_01",
         "title": "Phát hiện Kẻ Địch Mạnh",
         "text": "Hãy cảnh giác. Kẻ địch này có mức độ đe dọa nghiêm trọng."
       },
       {
+        "voId": "chr_0004_pelica_interact_mine_valub_01",
         "title": "Khai thác 1",
         "text": "Các quặng khoáng sản là nền tảng của ngành công nghiệp. Chúng ta nên thu thập nhiều hơn."
       },
       {
+        "voId": "chr_0004_pelica_interact_mine_valub_echo2_01",
         "title": "Khai thác 2",
         "text": "Để tôi giúp."
       },
       {
+        "voId": "chr_0004_pelica_interact_treasure_valub_01",
         "title": "Mở Thùng",
         "text": "Thu hoạch rất ấn tượng."
       },
       {
+        "voId": "chr_0004_pelica_interact_etherium_01",
         "title": "Nhận Aurylene",
         "text": "Aurylene là mảnh từ một vũ trụ đã tan vỡ. Mảnh vỡ này đã vượt qua những khoảng cách khổng lồ để đến đây, ngay trước chúng ta."
       },
       {
+        "voId": "chr_0004_pelica_interact_blight_break_01",
         "title": "Xua Tan Nhiễm Khuẩn",
         "text": "Nhiễm Khuẩn giờ không còn là mối đe dọa của Endfield nữa."
       },
       {
+        "voId": "chr_0004_pelica_interact_rest_01",
         "title": "Nghỉ ngơi",
         "text": "Nghỉ ngơi kết thúc. Toàn đội, chuẩn bị tiếp tục nhiệm vụ."
       },
       {
+        "voId": "chr_0004_pelica_combat_suppuse_using_01",
         "title": "Sử Dụng Vật Phẩm Chiến Thuật 1",
         "text": "Đang sơ cứu. Hãy cảnh giác."
       },
       {
+        "voId": "chr_0004_pelica_combat_suppuse_getheal_01",
         "title": "Sử Dụng Vật Phẩm Chiến Thuật 2",
         "text": "Tình trạng đã ổn định."
       },
       {
+        "voId": "chr_0004_pelica_combat_remind_danger_01",
         "title": "Cảnh Báo Nguy Hiểm",
         "text": "Đang đến! Nguy hiểm không rõ!"
       },
       {
+        "voId": "chr_0004_pelica_combat_hurt_lowhp_01",
         "title": "Bị Thương",
         "text": "Tôi ổn... Tập trung vào mục tiêu của chúng ta..."
       },
       {
+        "voId": "chr_0004_pelica_combat_dead_01",
         "title": "0 HP",
         "text": "Bảo vệ bản thân... Endmin..."
       },
       {
+        "voId": "chr_0004_pelica_combat_remind_praise_01",
         "title": "Cổ Vũ Đội 1",
         "text": "Kỹ thuật xuất sắc. Ấn tượng thật."
       },
       {
+        "voId": "chr_0004_pelica_combat_remind_praise_02",
         "title": "Cổ Vũ Đội 2",
         "text": "Chúng ta đoàn kết như một!"
       },
       {
+        "voId": "chr_0004_pelica_combat_remind_praise_echo2_01",
         "title": "Đáp Lại Lời Cổ Vũ 1",
         "text": "Đây là thành công của cả đội."
       },
       {
+        "voId": "chr_0004_pelica_combat_remind_praise_echo2_02",
         "title": "Đáp Lại Lời Cổ Vũ 2",
         "text": "Đây chính là sức mạnh của Endfield."
       },
       {
+        "voId": "chr_0004_pelica_combat_intobattle_01",
         "title": "Bắt Đầu Chiến Đấu 1",
         "text": "Đang giao chiến. Cả đội, giữ an toàn."
       },
       {
+        "voId": "chr_0004_pelica_combat_intobattle_echo2_01",
         "title": "Bắt Đầu Chiến Đấu 2",
         "text": "Tất cả biến số đều nằm trong dự đoán."
       },
       {
+        "voId": "chr_0004_pelica_combat_outbattle_nor_01",
         "title": "Thắng Trận 1",
         "text": "Một kết quả đã rõ ràng nhờ tinh thần đồng đội vững mạnh."
       },
       {
+        "voId": "chr_0004_pelica_combat_outbattle_nor_02",
         "title": "Thắng Trận 2",
         "text": "Toàn đội, xác nhận và báo cáo tình trạng cá nhân."
       },
       {
+        "voId": "chr_0004_pelica_combat_outbattle_nor_echo2_01",
         "title": "Thắng Trận 3",
         "text": "Bạo lực chưa bao giờ là mục tiêu của chúng ta. Tiếp tục tiến lên."
       },
       {
+        "voId": "chr_0004_pelica_combat_outbattle_hard_01",
         "title": "Thắng Trận 4",
         "text": "Kiểm tra mọi vết thương. Duy trì đội hình phòng thủ và khôi phục trạng thái chiến đấu."
       },
       {
+        "voId": "chr_0004_pelica_combat_battle_defeat_01",
         "title": "Bại Trận",
         "text": "Chúng ta sẽ không để điều này tái diễn..."
       },
       {
+        "voId": "chr_0004_pelica_mono_attack_last_01",
         "title": "Đòn Dứt Điểm 1",
         "text": "Độc tấu!"
       },
       {
+        "voId": "chr_0004_pelica_mono_attack_last_02",
         "title": "Đòn Dứt Điểm 2",
         "text": "Chuỗi!"
       },
       {
+        "voId": "chr_0004_pelica_mono_skill_nor_01",
         "title": "KN Chiến Đấu 1",
         "text": "Đã khóa mục tiêu!"
       },
       {
+        "voId": "chr_0004_pelica_mono_skill_nor_02",
         "title": "KN Chiến Đấu 2",
         "text": "Ra lệnh tấn công!"
       },
       {
+        "voId": "chr_0004_pelica_mono_skill_nor_03",
         "title": "KN Chiến Đấu 3",
         "text": "Tiêu diệt!"
       },
       {
+        "voId": "chr_0004_pelica_combat_skill_comb_ready_01",
         "title": "Chuẩn Bị KN Liên Hoàn 1",
         "text": "Đơn Vị Thuật Pháp sẵn sàng!"
       },
       {
+        "voId": "chr_0004_pelica_combat_skill_comb_ready_02",
         "title": "Chuẩn Bị KN Liên Hoàn 2",
         "text": "Hỗ trợ Thuật Pháp sẵn sàng!"
       },
       {
+        "voId": "chr_0004_pelica_mono_skill_comb_release_01",
         "title": "Thi Triển Liên Hoàn 1",
         "text": "Xông về phía trước!"
       },
       {
+        "voId": "chr_0004_pelica_mono_skill_comb_release_02",
         "title": "Thi Triển Liên Hoàn 2",
         "text": "Cơ hội đây rồi!"
       },
       {
+        "voId": "chr_0004_pelica_mono_attack_extra_01",
         "title": "Kết Liễu 1",
         "text": "Giờ thì, tấu nhạc nào!"
       },
       {
+        "voId": "chr_0004_pelica_mono_attack_extra_02",
         "title": "Kết Liễu 2",
         "text": "Coda và kết thúc!"
       },
       {
+        "voId": "chr_0004_pelica_mono_skill_ultimate_01",
         "title": "Tuyệt Kỹ 1",
         "text": "Tiêu diệt toàn diện AL-7!"
       },
       {
+        "voId": "chr_0004_pelica_mono_skill_ultimate_02",
         "title": "Tuyệt Kỹ 2",
         "text": "Đã khóa mục tiêu. Khai hỏa!"
       },
       {
+        "voId": "chr_0004_pelica_mono_skill_ultimate_03",
         "title": "Tuyệt Kỹ 3",
         "text": "San bằng khu vực này!"
       }

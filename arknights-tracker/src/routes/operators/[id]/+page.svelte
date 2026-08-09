@@ -2,6 +2,7 @@
     import { page } from "$app/stores";
     import { t } from "$lib/i18n";
     import { fade, fly } from "svelte/transition";
+    import { onDestroy } from "svelte";
     import { currentLocale } from "$lib/stores/locale";
     import { progression } from "$lib/data/items/progression.js";
     import { currencies } from "$lib/data/items/currencies.js";
@@ -14,6 +15,7 @@
     import { parseRichText, hyperlinkAction } from "$lib/utils/richText.js";
     import { getRarityColor } from "$lib/utils/colorUtils.js";
     import { getImagePath } from "$lib/utils/imageUtils.js";
+    import { addNotification } from "$lib/stores/notifications.js";
 
     import Icon from "$lib/components/Icon.svelte";
     import Tooltip from "$lib/components/Tooltip.svelte";
@@ -262,6 +264,82 @@
     let isCumulative = true;
     let isTotalMode = false;
     let isTableCopied = false;
+
+    const audioLanguages = [
+        { id: "zh", label: "CN" },
+        { id: "en", label: "EN" },
+        { id: "ja", label: "JP" },
+        { id: "ko", label: "KO" },
+    ];
+    let selectedAudioLang = "en";
+    let currentAudio = null;
+    let currentPlayingVoId = null;
+    let isAudioLoading = false;
+
+    function changeAudioLang(langId) {
+        selectedAudioLang = langId;
+        if (currentAudio) {
+            currentAudio.pause();
+            currentAudio = null;
+            currentPlayingVoId = null;
+            isAudioLoading = false;
+        }
+    }
+
+    function playAudio(voId) {
+        if (!voId || !char.gameId) return;
+
+        if (currentPlayingVoId === voId && currentAudio) {
+            if (!currentAudio.paused) {
+                currentAudio.pause();
+                currentPlayingVoId = null;
+                return;
+            } else {
+                currentAudio.play();
+                return;
+            }
+        }
+
+        if (currentAudio) {
+            currentAudio.pause();
+            currentAudio = null;
+        }
+
+        const audioUrl = `/audio/${selectedAudioLang}/${char.gameId}/${voId}.mp3`;
+        isAudioLoading = true;
+        currentPlayingVoId = voId;
+
+        const audio = new Audio(audioUrl);
+        currentAudio = audio;
+
+        audio.addEventListener("canplaythrough", () => {
+            isAudioLoading = false;
+        }, { once: true });
+
+        const handleAudioError = () => {
+            currentPlayingVoId = null;
+            currentAudio = null;
+            isAudioLoading = false;
+            try {
+                addNotification("error", $t("global.noData"));
+            } catch (e) {}
+        };
+
+        audio.addEventListener("ended", () => {
+            currentPlayingVoId = null;
+            currentAudio = null;
+            isAudioLoading = false;
+        });
+
+        audio.play().catch(handleAudioError);
+    }
+
+    onDestroy(() => {
+        if (currentAudio) {
+            currentAudio.pause();
+            currentAudio = null;
+        }
+    });
 
     const menuItems = [
         { id: "about", label: "menu.about" },
@@ -1879,32 +1957,64 @@
                             {/if}
                         </div>
                     {:else if activeTab === "audio"}
-                        <div class="flex flex-col gap-5 animate-fadeIn w-full">
-                            <h2
-                                class="text-3xl dark:text-[#FDFDFD] font-bold text-[#21272C] mb-4 drop-shadow-sm font-sdk text-left 2xl:text-right"
-                            >
-                                {$t("menu.audio")}
-                            </h2>
+                        <div class="flex flex-col gap-4 animate-fadeIn w-full relative">
+                            <div class="flex items-center justify-end gap-3 flex-wrap">
+                                <h2
+                                    class="text-3xl dark:text-[#FDFDFD] font-bold text-[#21272C] font-sdk"
+                                >
+                                    {$t("menu.audio")}
+                                </h2>
+                            </div>
+
+                            <div class="sticky top-4 z-20 self-end flex items-center gap-1.5 bg-white/90 dark:bg-[#2b2b2b]/95 backdrop-blur-md p-1.5 rounded-2xl border border-gray-200/80 dark:border-[#444] shadow-lg transition-all">
+                                {#each audioLanguages as langOption}
+                                    <button
+                                        on:click={() => changeAudioLang(langOption.id)}
+                                        class="px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer {selectedAudioLang === langOption.id ? 'bg-[#FFD800] text-black shadow-sm' : 'text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white hover:bg-gray-100 dark:hover:bg-[#383838]'}"
+                                    >
+                                        {langOption.label}
+                                    </button>
+                                {/each}
+                            </div>
 
                             {#if voiceLines && voiceLines.length > 0}
-                                <div class="grid grid-cols-1 gap-2 w-full">
+                                <div class="grid grid-cols-1 gap-2.5 w-full">
                                     {#each voiceLines as line}
+                                        {@const isPlaying = currentPlayingVoId === line.voId}
                                         <div
-                                            class="bg-white/90 backdrop-blur-md dark:bg-[#383838]/90 p-5 rounded-2xl dark:border-[#444444] shadow-xl border border-white/50 flex flex-col gap-2 transition-all hover:border-gray-300 dark:hover:border-[#555]"
+                                            class="bg-white/90 backdrop-blur-md dark:bg-[#383838]/90 p-5 rounded-2xl dark:border-[#444444] shadow-xl border flex items-start gap-4 transition-all hover:border-gray-300 dark:hover:border-[#555] {isPlaying ? 'border-[#FFD800] dark:border-[#FFD800] ring-1 ring-[#FFD800]' : 'border-white/50'}"
                                         >
-                                            {#if line.title}
-                                                <div class="font-bold text-base text-[#21272C] dark:text-[#E4E4E4] font-sdk border-b border-gray-100 dark:border-[#444444] pb-1.5">
-                                                    {line.title}
-                                                </div>
-                                            {/if}
-                                            {#if line.text}
-                                                <div
-                                                    class="text-gray-700 dark:text-[#E4E4E4] whitespace-pre-wrap text-sm leading-relaxed font-medium"
-                                                    use:hyperlinkAction
+                                            {#if line.voId}
+                                                <button
+                                                    on:click={() => playAudio(line.voId)}
+                                                    class="shrink-0 w-10 h-10 rounded-xl flex items-center justify-center transition-all cursor-pointer shadow-sm mt-0.5 {isPlaying ? 'bg-[#FFD800] text-black scale-105' : 'bg-gray-100 dark:bg-[#444] text-gray-700 dark:text-gray-200 hover:bg-[#FFD800] hover:text-black dark:hover:bg-[#FFD800] dark:hover:text-black'}"
+                                                    title={isPlaying ? "Pause" : "Play"}
                                                 >
-                                                    {@html parseRichText(line.text)}
-                                                </div>
+                                                    {#if isPlaying && isAudioLoading}
+                                                        <div class="w-4 h-4 border-2 border-black border-t-transparent rounded-full animate-spin"></div>
+                                                    {:else if isPlaying}
+                                                        <Icon name="pause" class="w-4 h-4 fill-current" />
+                                                    {:else}
+                                                        <Icon name="play" class="w-4 h-4 fill-current ml-0.5" />
+                                                    {/if}
+                                                </button>
                                             {/if}
+
+                                            <div class="flex flex-col gap-1.5 flex-1 min-w-0">
+                                                {#if line.title}
+                                                    <div class="font-bold text-base text-[#21272C] dark:text-[#E4E4E4] font-sdk border-b border-gray-100 dark:border-[#444444] pb-1.5">
+                                                        {line.title}
+                                                    </div>
+                                                {/if}
+                                                {#if line.text}
+                                                    <div
+                                                        class="text-gray-700 dark:text-[#E4E4E4] whitespace-pre-wrap text-sm leading-relaxed font-medium"
+                                                        use:hyperlinkAction
+                                                    >
+                                                        {@html parseRichText(line.text)}
+                                                    </div>
+                                                {/if}
+                                            </div>
                                         </div>
                                     {/each}
                                 </div>

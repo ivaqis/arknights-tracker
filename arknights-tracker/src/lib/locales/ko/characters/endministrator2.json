@@ -96,222 +96,277 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0002_endminm_chrbark_squad_01",
         "title": "작전 준비 1",
         "text": "오리지늄이 노래하고 있어."
       },
       {
+        "voId": "chr_0002_endminm_chrbark_squad_02",
         "title": "작전 준비 2",
         "text": "엔드필드는 반드시 앞으로 나아갈 거야."
       },
       {
+        "voId": "chr_0002_endminm_chrbark_join_01",
         "title": "팀 가입 1",
         "text": "제강호, 난 준비됐어."
       },
       {
+        "voId": "chr_0002_endminm_chrbark_join_02",
         "title": "팀 가입 2",
         "text": "출발할 때가 됐어."
       },
       {
+        "voId": "chr_0002_endminm_chrbark_weap_01",
         "title": "무기 변경",
         "text": "나쁘지 않네."
       },
       {
+        "voId": "chr_0002_endminm_chrbark_gear_01",
         "title": "장비 변경",
         "text": "이게 바로 공업의 힘이지."
       },
       {
+        "voId": "chr_0002_endminm_chrup_skill_01",
         "title": "재능 배열 활성화",
         "text": "익숙한 느낌이야..."
       },
       {
+        "voId": "chr_0002_endminm_chrup_level_01",
         "title": "작전 기록 관찰",
         "text": "다시는 이들의 모습을 잊지 않겠어."
       },
       {
+        "voId": "chr_0002_endminm_chrup_promt01_01",
         "title": "정예화 돌파 1",
         "text": "한 걸음 더 나아갔어."
       },
       {
+        "voId": "chr_0002_endminm_chrup_promt02_01",
         "title": "정예화 돌파 2",
         "text": "난 엔드필드를 지킬 거야."
       },
       {
+        "voId": "chr_0002_endminm_chrup_promt03_01",
         "title": "정예화 돌파 3",
         "text": "과거와 현재는... 하나가 돼야 해."
       },
       {
+        "voId": "chr_0002_endminm_chrup_promt04_01",
         "title": "정예화 돌파 4",
         "text": "그 아이의 목소리를 들었어, 꼭 꿈속에서 울려 퍼지는 속삭임 같았지... 자주 내 꿈속에서는 끝없는 바다가 펼쳐지곤 해. 아주 슬프고, 그리움이 가득하게 만들어... 그리고 다시 한번 결심을 다지게 하지."
       },
       {
+        "voId": "chr_0002_endminm_mono_switch_01",
         "title": "명령 대기 1",
         "text": "뭘 기다리고 있는 거야?"
       },
       {
+        "voId": "chr_0002_endminm_mono_switch_02",
         "title": "명령 대기 2",
         "text": "오리지늄이 길을 열어줄 거야."
       },
       {
+        "voId": "chr_0002_endminm_sim_gift_recv_01",
         "title": "선물 수락",
         "text": "고마워!"
       },
       {
+        "voId": "chr_0002_endminm_explore_point_common_01",
         "title": "자원 발견 1",
         "text": "저쪽은..."
       },
       {
+        "voId": "chr_0002_endminm_explore_point_valub_01",
         "title": "자원 발견 2",
         "text": "저기 엄청 중요한 게 있어!"
       },
       {
+        "voId": "chr_0002_endminm_explore_find_locked_01",
         "title": "미탐색 구역 발견",
         "text": "근처에 조사가 필요한 구역이 있어."
       },
       {
+        "voId": "chr_0002_endminm_explore_find_danger_01",
         "title": "강한 적 발견",
         "text": "강력한 적이야, 신중하게 대처해야 해."
       },
       {
+        "voId": "chr_0002_endminm_interact_mine_valub_01",
         "title": "광물 채집 1",
         "text": "이 광물들, 꽤 유용하게 쓸 수 있을 거야!"
       },
       {
+        "voId": "chr_0002_endminm_interact_mine_valub_echo2_01",
         "title": "광물 채집 2",
         "text": "나도 도울게."
       },
       {
+        "voId": "chr_0002_endminm_interact_treasure_valub_01",
         "title": "보물 상자 열기",
         "text": "좋은 수확이야!"
       },
       {
+        "voId": "chr_0002_endminm_interact_etherium_01",
         "title": "오리렌 획득",
         "text": "익숙한 느낌이야."
       },
       {
+        "voId": "chr_0002_endminm_interact_blight_break_01",
         "title": "침식 제거",
         "text": "제거 완료."
       },
       {
+        "voId": "chr_0002_endminm_interact_rest_01",
         "title": "휴식",
         "text": "준비 완료."
       },
       {
+        "voId": "chr_0002_endminm_combat_suppuse_using_01",
         "title": "전술 아이템 사용 1",
         "text": "효과가 있을 거야."
       },
       {
+        "voId": "chr_0002_endminm_combat_suppuse_getheal_01",
         "title": "전술 아이템 사용 2",
         "text": "많이 좋아진 것 같아."
       },
       {
+        "voId": "chr_0002_endminm_combat_remind_danger_01",
         "title": "위험 경고",
         "text": "잘 보고 피해!"
       },
       {
+        "voId": "chr_0002_endminm_combat_hurt_lowhp_01",
         "title": "부상",
         "text": "아직 버틸 수 있어..."
       },
       {
+        "voId": "chr_0002_endminm_combat_dead_01",
         "title": "탈진",
         "text": "미안해, 뒤는 너희들한테 맡길게."
       },
       {
+        "voId": "chr_0002_endminm_combat_remind_praise_01",
         "title": "팀 격려 1",
         "text": "공격이 정말 날카롭네."
       },
       {
+        "voId": "chr_0002_endminm_combat_remind_praise_02",
         "title": "팀 격려 2",
         "text": "완벽한 호흡이야."
       },
       {
+        "voId": "chr_0002_endminm_combat_remind_praise_echo2_01",
         "title": "격려 응답 1",
         "text": "별거 아냐!"
       },
       {
+        "voId": "chr_0002_endminm_combat_remind_praise_echo2_02",
         "title": "격려 응답 2",
         "text": "점점 호흡이 잘 맞네."
       },
       {
+        "voId": "chr_0002_endminm_combat_intobattle_01",
         "title": "작전 시작 1",
         "text": "가자, 우리 차례야."
       },
       {
+        "voId": "chr_0002_endminm_combat_intobattle_echo2_01",
         "title": "작전 시작 2",
         "text": "내가 뒤를 맡을게."
       },
       {
+        "voId": "chr_0002_endminm_combat_outbattle_nor_01",
         "title": "작전 승리 1",
         "text": "엔드필드는 또 한 걸음 앞으로 나아갔어."
       },
       {
+        "voId": "chr_0002_endminm_combat_outbattle_nor_02",
         "title": "작전 승리 2",
         "text": "모두 고생 많았어."
       },
       {
+        "voId": "chr_0002_endminm_combat_outbattle_nor_echo2_01",
         "title": "작전 승리 3",
         "text": "아주 훌륭했어!"
       },
       {
+        "voId": "chr_0002_endminm_combat_outbattle_hard_01",
         "title": "작전 승리 4",
         "text": "다들 괜찮아?"
       },
       {
+        "voId": "chr_0002_endminm_combat_battle_defeat_01",
         "title": "작전 실패",
         "text": "서두르지 마, 일단 정비하고 다시 생각하자."
       },
       {
+        "voId": "chr_0002_endminm_mono_attack_last_01",
         "title": "강력한 일격 1",
         "text": "받아라!"
       },
       {
+        "voId": "chr_0002_endminm_mono_attack_last_02",
         "title": "강력한 일격 2",
         "text": "이건 어때!"
       },
       {
+        "voId": "chr_0002_endminm_mono_skill_nor_01",
         "title": "배틀 스킬 1",
         "text": "덤벼!"
       },
       {
+        "voId": "chr_0002_endminm_mono_skill_nor_02",
         "title": "배틀 스킬 2",
         "text": "나한테 맡겨!"
       },
       {
+        "voId": "chr_0002_endminm_mono_skill_nor_03",
         "title": "배틀 스킬 3",
         "text": "날려버리겠어!"
       },
       {
+        "voId": "chr_0002_endminm_combat_skill_comb_ready_01",
         "title": "연계 스킬 준비 완료 1",
         "text": "언제든지 갈 수 있어."
       },
       {
+        "voId": "chr_0002_endminm_combat_skill_comb_ready_02",
         "title": "연계 스킬 준비 완료 2",
         "text": "날 믿어!"
       },
       {
+        "voId": "chr_0002_endminm_mono_skill_comb_release_01",
         "title": "연계 스킬 1",
         "text": "연속 공격!"
       },
       {
+        "voId": "chr_0002_endminm_mono_skill_comb_release_02",
         "title": "연계 스킬 2",
         "text": "여기까지야!"
       },
       {
+        "voId": "chr_0002_endminm_mono_attack_extra_01",
         "title": "처형 1",
         "text": "지금이야!"
       },
       {
+        "voId": "chr_0002_endminm_mono_attack_extra_02",
         "title": "처형 2",
         "text": "허점 발견!"
       },
       {
+        "voId": "chr_0002_endminm_mono_skill_ultimate_01",
         "title": "궁극기 1",
         "text": "두 번의 기회는 없어."
       },
       {
+        "voId": "chr_0002_endminm_mono_skill_ultimate_02",
         "title": "궁극기 2",
         "text": "이걸로 끝이야."
       },
       {
+        "voId": "chr_0002_endminm_mono_skill_ultimate_03",
         "title": "궁극기 3",
         "text": "싸움을 끝낼 때가 됐어."
       }

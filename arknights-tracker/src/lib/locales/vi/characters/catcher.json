@@ -130,322 +130,402 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0020_meurs_chrbark_squad_01",
         "title": "Chuẩn Bị Tác Chiến 1",
         "text": "Hmm? Nhiệm vụ mới?"
       },
       {
+        "voId": "chr_0020_meurs_chrbark_squad_02",
         "title": "Chuẩn Bị Tác Chiến 2",
         "text": "Tôi đã sẵn sàng rồi."
       },
       {
+        "voId": "chr_0020_meurs_chrbark_join_01",
         "title": "Đang thêm vào đội 1",
         "text": "Nếu cần yểm trợ và vận chuyển thì cứ để tôi lo."
       },
       {
+        "voId": "chr_0020_meurs_chrbark_join_02",
         "title": "Đang thêm vào đội 2",
         "text": "Hy vọng nhiệm vụ lần này được lên kế hoạch cẩn thận và ít rủi ro hơn."
       },
       {
+        "voId": "chr_0020_meurs_chrbark_weap_01",
         "title": "Đang đổi vũ khí",
         "text": "Thực tiễn và linh hoạt. Nó sẽ giúp ta vượt qua các chiến dịch tấn công trong nhiều tình huống khác nhau."
       },
       {
+        "voId": "chr_0020_meurs_chrbark_gear_01",
         "title": "Đang đổi trang bị",
         "text": "Trang bị tiêu chuẩn... Trước giờ chỉ đọc thấy trong giáo trình huấn luyện... Hàng thật được gia công tốt hơn tôi tưởng nhiều."
       },
       {
+        "voId": "chr_0020_meurs_chrup_skill_01",
         "title": "Kích hoạt Ma Trận Năng Lực",
         "text": "Tôi thường chuẩn bị thêm vài phương án dự phòng. Chúng... luôn phát huy tác dụng."
       },
       {
+        "voId": "chr_0020_meurs_chrup_level_01",
         "title": "Xem Hồ Sơ Chiến Đấu",
         "text": "Được... rồi. Xong! Tôi đã ghi lại hết các điểm chính rồi... Bản tóm tắt sẽ có mặt trên bàn của Đội trưởng."
       },
       {
+        "voId": "chr_0020_meurs_chrup_promt01_01",
         "title": "Thăng Bậc Cán Viên 1",
         "text": "Cảm ơn. Tôi sẽ cống hiến hết mình trong các nhiệm vụ sắp tới."
       },
       {
+        "voId": "chr_0020_meurs_chrup_promt02_01",
         "title": "Thăng Bậc Cán Viên 2",
         "text": "Giờ tôi có thể nhận những nhiệm vụ khó hơn. Tôi tin rằng mình có thể hoàn thành chúng."
       },
       {
+        "voId": "chr_0020_meurs_chrup_promt03_01",
         "title": "Thăng Bậc Cán Viên 3",
         "text": "Thật sự biết ơn sự công nhận của ngài, Endmin. Để đáp lại, tôi đã hoàn thành công tác chuẩn bị cho... chín mươi ngày tới. Ngài có thể xem bất cứ lúc nào."
       },
       {
+        "voId": "chr_0020_meurs_chrup_promt04_01",
         "title": "Thăng Bậc Cán Viên 4",
         "text": "Thỉnh thoảng tôi tự hỏi, nếu ngày đó tôi nghe theo ý gia đình... Có lẽ giờ tôi đang sống một cuộc đời khác. Giản đơn hơn, dễ chịu hơn... Nhưng tôi đã quyết định từ lúc cầm lấy thanh kiếm và rời nhà vào buổi sáng hôm đó. Tôi không có ý định nhìn lại."
       },
       {
+        "voId": "chr_0020_meurs_introduce_01",
         "title": "Cán Viên đang báo cáo nhiệm vụ",
         "text": "Catcher, Đội Tác Chiến Z7. Nhiệm vụ của tôi là hỗ trợ hỏa lực và vận chuyển cho cả đội. Tôi chuyên về tác chiến phòng thủ và khá thành thạo kiếm pháp... Hy vọng sẽ là sự bổ sung hữu hiệu cho đội của ngài."
       },
       {
+        "voId": "chr_0020_meurs_mono_switch_01",
         "title": "Chờ Lệnh 1",
         "text": "Cần yểm trợ phòng thủ? Tôi sẽ dốc toàn lực."
       },
       {
+        "voId": "chr_0020_meurs_mono_switch_02",
         "title": "Chờ Lệnh 2",
         "text": "Tôi tin rằng ta nên chuẩn bị kỹ hơn."
       },
       {
+        "voId": "chr_0020_meurs_sim_assign_work_01",
         "title": "Phân Công Vào Công Trình",
         "text": "Lệnh đã nhận. Tôi đã đánh dấu nó ưu tiên hàng đầu."
       },
       {
+        "voId": "chr_0020_meurs_sim_hello_lower_01",
         "title": "Lời Chào 1",
         "text": "Xin chào, Endmin. Có phân công mới sao?"
       },
       {
+        "voId": "chr_0020_meurs_sim_hello_max_01",
         "title": "Lời Chào 2",
         "text": "Endmin, tôi đã tổng hợp mười tập tài liệu hậu chiến của Đội Z7. Ngài muốn xem chứ?"
       },
       {
+        "voId": "chr_0020_meurs_sim_talk_lv01_01",
         "title": "Trò Chuyện Nhàn Rỗi Dijiang 1",
         "text": "Ngài tìm tôi, Endmin? Tôi còn ba mươi phút trước khi bắt đầu năm buổi huấn luyện kiếm thuật liên tục... Thời gian còn lại thì tôi rảnh."
       },
       {
+        "voId": "chr_0020_meurs_sim_talk_lv02_01",
         "title": "Trò Chuyện Nhàn Rỗi Dijiang 2",
         "text": "Gần đây tôi đã xem lại gợi ý của mọi người và cải tiến món hầm kiểu hoang địa... Nếu ngài tò mò, cứ nếm thử nhé, Endmin."
       },
       {
+        "voId": "chr_0020_meurs_sim_talk_lv02_02",
         "title": "Trò Chuyện Nhàn Rỗi Dijiang 3",
         "text": "Mỗi lần trở về Dijiang, tôi luôn có cảm giác an yên khó tả... Antal cứ khăng khăng rằng đó là nhờ nệm giường êm ái... Tôi không định tranh luận với cậu ấy."
       },
       {
+        "voId": "chr_0020_meurs_sim_talk_max_01",
         "title": "Trò Chuyện Nhàn Rỗi Dijiang 4",
         "text": "Tôi luôn tin tưởng đồng đội khi làm nhiệm vụ. Nhưng lại chẳng tin chút nào rằng họ sẽ nghe lời Đội trưởng và nghỉ ngơi nghiêm túc sau đó. Kẻ thì thức trắng đêm ở thư viện, kẻ thì bày trò trêu tân binh ở phòng giải trí... Những chuyện thế này chỉ kết thúc khi tôi đích thân \"áp giải\" họ về phòng."
       },
       {
+        "voId": "chr_0020_meurs_sim_talk_max_02",
         "title": "Trò Chuyện Nhàn Rỗi Dijiang 5",
         "text": "Tôi đã về thăm nhà hai ngày trước. Gia đình không mấy thích nghề nghiệp của tôi, nhưng tôi kể cho họ nghe về Đội Z7 thực sự là như thế nào. Họ chẳng nói gì nhiều, chỉ đưa tôi vài ba lô đầy đặc sản địa phương. Chắc phải sáu tháng Đội Z7 mới dùng hết được... Endmin, tôi nghĩ ngài cũng nên nhận nửa bao."
       },
       {
+        "voId": "chr_0020_meurs_sim_talk_max_03",
         "title": "Trò Chuyện Nhàn Rỗi Dijiang 6",
         "text": "Cuộc sống thật trọn vẹn. Tôi thực sự thấy mình có ích và được mọi người trân trọng... Với tôi, đó chính là ý nghĩa của việc trở thành một nhân viên Endfield. Đôi khi tôi mệt đến mức không thể ngủ được, nhưng tôi vẫn chấp nhận điều đó. Bởi điều đó có nghĩa là tôi đã nhận được sự công nhận."
       },
       {
+        "voId": "chr_0020_meurs_sim_gift_give_01",
         "title": "Tặng Quà",
         "text": "Chỉ là vài món quà nhỏ thôi, Endmin... Mong ngài có thể nhận lấy."
       },
       {
+        "voId": "chr_0020_meurs_sim_gift_recv_01",
         "title": "Nhận quà",
         "text": "Cho tôi ư? Cảm ơn nhiều nhé, Endmin. Nó sẽ được cất kỹ trong két an toàn."
       },
       {
+        "voId": "chr_0020_meurs_mono_self_line01",
         "title": "Đối Thoại Tín Nhiệm 1",
         "text": "Ôi, xin lỗi, Endmin! Tôi đang suy nghĩ về việc chuẩn bị gì cho nhiệm vụ tiếp theo. Đợi đã! Tôi có một câu hỏi cho ngài. Ngài thấy cái nào hữu dụng hơn: máy hàn cầm tay, bộ điều chỉnh trọng lực, hay mặt nạ chống bụi Originium? Hmm... Tôi mang theo hết vậy."
       },
       {
+        "voId": "chr_0020_meurs_mono_self_line02",
         "title": "Đối Thoại Tín Nhiệm 2",
         "text": "Tôi sinh ra trong một gia đình bình thường. Bố mẹ tôi là lính. Anh trai tôi hiện là huấn luyện viên quân sự của Phòng Thương Mại Tổng Hợp Talos-II, còn chị tôi làm vệ sĩ vũ trang cho người Seš'qa. Tôi là con út nên được cả nhà bảo bọc. Ai cũng muốn tôi có một cuộc sống yên bình, không bước vào con đường binh nghiệp như họ... Nhưng sự bảo vệ của gia đình không kéo dài mãi, nhất là ở Talos-II."
       },
       {
+        "voId": "chr_0020_meurs_mono_self_line03",
         "title": "Đối Thoại Tín Nhiệm 3",
         "text": "Tôi không nhớ thương gì tuổi thơ trước năm chín tuổi. Nó khiến tôi sợ mùi i-ốt và oxy già... Hồi đó, đến cả bình nước tôi cũng không nhấc nổi. Bác sĩ liên tục dặn gia đình tôi không được cho tôi ra ngoài. Tôi chỉ được ra ngoài trời vào những dịp cực kỳ hiếm hoi... Cho đến bây giờ tôi vẫn nhớ lần hồi phục đầu tiên và lần đầu đi bộ dưới ánh sáng ban ngày. Cứ như thể tôi vừa được tái sinh vậy."
       },
       {
+        "voId": "chr_0020_meurs_mono_self_line04",
         "title": "Đối Thoại Tín Nhiệm 4",
         "text": "Một số người có thể cho rằng Z7 là đội tác chiến không mấy ấn tượng. Cũng không sai hoàn toàn. Đội trưởng Akekuri còn hơi trẻ, Fluorite thì hơi gắt gỏng, còn Estella và Antal thì cần thêm chút hiểu biết thường thức. Thế nhưng, tôi vẫn sẵn lòng ở lại Z7... Thậm chí, tôi không ngại trở thành thành viên cố định của đội."
       },
       {
+        "voId": "chr_0020_meurs_mono_self_line05",
         "title": "Đối Thoại Tín Nhiệm 5",
         "text": "Lúc mới gia nhập Endfield, tôi từng nghi ngờ bản thân có xứng đáng để nhận được sự tin tưởng của cấp trên không... Nhưng Đội Z7 và cả ngài nữa, Endmin, đã cho tôi thấy tôi có thể làm được nhiều hơn mình tưởng và đáp ứng được kỳ vọng của mọi người."
       },
       {
+        "voId": "chr_0020_meurs_mono_chat_line01",
         "title": "Trò Chuyện 1",
         "text": "Khóa huấn luyện quân sự thì khá cơ bản. Chỉ là vài khóa chiến đấu cơ bản với một chút kỹ năng sinh tồn dã ngoại kèm theo. Ít ai mong mấy thứ đó sẽ giúp ích thực sự ngoài chiến trường... Tôi có thể là ngoại lệ, vì tôi đã tranh luận với huấn luyện viên suốt cả buổi về việc mấy động tác biểu diễn của ông ấy khác hẳn mô tả trong sách hướng dẫn. Rồi chuyện gì xảy ra? Tôi thuyết phục được ông ấy ngay trước buổi huấn luyện thứ ba."
       },
       {
+        "voId": "chr_0020_meurs_mono_chat_line02",
         "title": "Trò Chuyện 2",
         "text": "Tôi thực ra là người ít năng khiếu quân sự nhất nhà. Thể lực và kỹ thuật chiến đấu của tôi kém hơn hẳn tiêu chuẩn gia đình... Thế nhưng tôi chưa từng bỏ cuộc, chỉ biết cố gắng gấp bội. Dậy sớm hai tiếng trước anh trai, tập gấp ba lần chị gái... Và tôi vẫn giữ thói quen đó cho đến hôm nay."
       },
       {
+        "voId": "chr_0020_meurs_mono_chat_line03",
         "title": "Trò Chuyện 3",
         "text": "Tại sao tôi bắt đầu học nấu ăn à? Cũng chẳng có lý do gì đặc biệt. Khi mới vào Z7, tôi ăn thử món của đồng đội nấu. Sang ngày thứ hai, tôi nhờ huấn luyện viên Nhóc Dodge chỉ giúp. Và thế là tôi trải qua vài tuần Khóa Huấn Luyện Sinh Tồn trong Thiên Nhiên."
       },
       {
+        "voId": "chr_0020_meurs_mono_chat_line04",
         "title": "Trò Chuyện 4",
         "text": "Tôi từng thực tập ở vài công ty PMC trước khi vào Endfield, nhưng ai cũng muốn tôi \"chuyên nghiệp\" hơn... Nói trắng ra là nhận lương rồi đừng hỏi nhiều. Họ nói vậy cũng có lý. Chỉ là tôi không thể nào làm theo được."
       },
       {
+        "voId": "chr_0020_meurs_mono_chat_line05",
         "title": "Trò Chuyện 5",
         "text": "Chỉ mong không ai nghĩ ra thêm trò quái quỷ nào cho Antal và các bạn ở nhiệm vụ tiếp theo. Tháng này kỹ sư kho vũ khí đã đủ khổ vì đội tôi rồi... Ừm, ngài đoán đúng rồi đấy. Đội trưởng có một chồng báo cáo phản hồi chưa xử lý, và giờ đống đó đang nằm trong giường của tôi. Nhưng đừng lo. Nếu hôm sau không có phân công, tôi sẽ thức trắng đêm để xử lý hết mọi thứ một lượt."
       },
       {
+        "voId": "chr_0020_meurs_mono_about_line01",
         "title": "Chủ đề: Akekuri",
         "text": "Đội trưởng của chúng tôi là người luôn quan tâm đến tất cả thành viên Z7... nhưng sẽ tốt hơn nếu cô ấy chịu quan tâm đến bản thân nhiều hơn một chút. Ngay cả trong những buổi họp mặt đội, cô ấy cũng luôn ưu tiên khẩu vị của người khác trước. *Thở dài* Thật lòng thì, tôi ước cô ấy chịu thừa nhận mình thích đồ ăn vặt vùng Higashi. Như vậy tôi sẽ không phải giả vờ rằng mình \"tình cờ\" làm ra chúng nữa."
       },
       {
+        "voId": "chr_0020_meurs_mono_about_line02",
         "title": "Chủ đề: Fluorite",
         "text": "Tôi từng biết vài lính đánh thuê kiểu Bander. Mưu mô, tham lam, ít giao tiếp, và nụ cười của họ còn đáng sợ hơn tiếng gầm gừ... Nhưng rồi Fluorite bắt đầu bàn về kỹ thuật ném Sên Originium với Antal... Thế nên, chắc cũng nên... cho cô ấy thêm thời gian trước khi đánh giá."
       },
       {
+        "voId": "chr_0020_meurs_mono_about_line03",
         "title": "Chủ đề: Estella",
         "text": "Tôi không hiểu tại sao Estella lúc nào cũng trông như thể bị sốc khi đọc báo cáo của tôi. Tôi chỉ đơn giản mô tả lại những gì diễn ra trong nhiệm vụ... có chèn vài suy nghĩ thiếu chín chắn ở một số đoạn... Không có gì trong báo cáo của tôi nên được xem là bất ngờ cả. Chúng hoàn toàn tiêu chuẩn, đặc biệt là khi so với mấy bài... sáng tác của cô ấy."
       },
       {
+        "voId": "chr_0020_meurs_mono_about_line04",
         "title": "Chủ đề: Antal",
         "text": "Antal rất hiểu biết và luôn sẵn lòng giải đáp mọi câu hỏi. Vấn đề là... anh ấy quá nhiệt tình khi được hỏi. Chỉ cần Estella vô tình thốt ra: \"Tại sao tai của bọn tai dài lại dài như vậy?\" Thế là Antal dành phần còn lại trong ngày để thuyết trình về sinh thái học. Bài giảng chỉ kết thúc khi chúng tôi về đến Dijiang, và anh ấy còn nói rằng đó mới chỉ là bản tóm tắt, bỏ qua 70% nội dung chính."
       },
       {
+        "voId": "chr_0020_meurs_explore_point_common_01",
         "title": "Phát hiện Tài Nguyên/Có Thể Thu Thập 1",
         "text": "Theo kinh nghiệm thì chỗ đó có vật liệu thu thập."
       },
       {
+        "voId": "chr_0020_meurs_explore_point_valub_01",
         "title": "Phát hiện Tài Nguyên/Có Thể Thu Thập 2",
         "text": "Có thứ gì đó ở đằng kia... Đáng để điều tra, dù có phải đi đường vòng."
       },
       {
+        "voId": "chr_0020_meurs_explore_find_locked_01",
         "title": "Phát Hiện Khu Vực Chưa Khám Phá",
         "text": "Chưa xác định mức độ đe dọa. Chúng ta nên cẩn trọng."
       },
       {
+        "voId": "chr_0020_meurs_explore_find_danger_01",
         "title": "Phát hiện Kẻ Địch Mạnh",
         "text": "Nếu bắt buộc phải chiến đấu, tôi sẽ chuẩn bị phương án rút lui từ trước."
       },
       {
+        "voId": "chr_0020_meurs_interact_mine_valub_01",
         "title": "Khai thác 1",
         "text": "Nguyên liệu hiếm. Chúng ta nên thu thập nhanh."
       },
       {
+        "voId": "chr_0020_meurs_interact_mine_valub_echo2_01",
         "title": "Khai thác 2",
         "text": "Làm việc nhóm luôn hiệu quả hơn... Cùng khai thác chỗ này đi."
       },
       {
+        "voId": "chr_0020_meurs_interact_treasure_valub_01",
         "title": "Mở Thùng",
         "text": "Quá tuyệt. Chúng ta đã thu thập được nhiều tài nguyên hữu ích."
       },
       {
+        "voId": "chr_0020_meurs_interact_etherium_01",
         "title": "Nhận Aurylene",
         "text": "Đây hẳn là loại Aurylene được nhắc trong cẩm nang..."
       },
       {
+        "voId": "chr_0020_meurs_interact_blight_break_01",
         "title": "Xua Tan Nhiễm Khuẩn",
         "text": "Nhiễm Khuẩn nguy hiểm hơn nhiều so với nhận định phổ thông. Chúng ta phải xử lý thật cẩn thận."
       },
       {
+        "voId": "chr_0020_meurs_interact_rest_01",
         "title": "Nghỉ ngơi",
         "text": "Nghỉ ngơi đầy đủ giúp nhiệm vụ hoàn thành tốt hơn. Đó là điều cẩm nang ghi rõ."
       },
       {
+        "voId": "chr_0020_meurs_combat_suppuse_using_01",
         "title": "Sử Dụng Vật Phẩm Chiến Thuật 1",
         "text": "Nhận lấy. Chúng ta vẫn còn khá nhiều."
       },
       {
+        "voId": "chr_0020_meurs_combat_suppuse_getheal_01",
         "title": "Sử Dụng Vật Phẩm Chiến Thuật 2",
         "text": "Tôi... đã tính sai."
       },
       {
+        "voId": "chr_0020_meurs_combat_remind_danger_01",
         "title": "Cảnh Báo Nguy Hiểm",
         "text": "Coi chừng. Đừng quá sức."
       },
       {
+        "voId": "chr_0020_meurs_combat_hurt_lowhp_01",
         "title": "Bị Thương",
         "text": "Kiếm của tôi vẫn chưa hỏng."
       },
       {
+        "voId": "chr_0020_meurs_combat_dead_01",
         "title": "0 HP",
         "text": "Thật xin lỗi... Tôi lại khiến mọi người thất vọng rồi..."
       },
       {
+        "voId": "chr_0020_meurs_combat_remind_praise_01",
         "title": "Cổ Vũ Đội 1",
         "text": "Chiêu vừa rồi rất ấn tượng."
       },
       {
+        "voId": "chr_0020_meurs_combat_remind_praise_02",
         "title": "Cổ Vũ Đội 2",
         "text": "Làm việc ăn ý như thế này đáng được ăn mừng."
       },
       {
+        "voId": "chr_0020_meurs_combat_remind_praise_echo2_01",
         "title": "Đáp Lại Lời Cổ Vũ 1",
         "text": "Cậu... quá khen rồi."
       },
       {
+        "voId": "chr_0020_meurs_combat_remind_praise_echo2_02",
         "title": "Đáp Lại Lời Cổ Vũ 2",
         "text": "Tất cả đều là công sức của cả nhóm."
       },
       {
+        "voId": "chr_0020_meurs_combat_intobattle_01",
         "title": "Bắt Đầu Chiến Đấu 1",
         "text": "Chúng ta nên thận trọng, tiếp cận từ từ."
       },
       {
+        "voId": "chr_0020_meurs_combat_intobattle_echo2_01",
         "title": "Bắt Đầu Chiến Đấu 2",
         "text": "Tôi sẽ hoàn thành tốt vai trò hỗ trợ."
       },
       {
+        "voId": "chr_0020_meurs_combat_outbattle_nor_01",
         "title": "Thắng Trận 1",
         "text": "Khu vực đã được kiểm soát? Vẫn nên kiểm tra thêm lần nữa."
       },
       {
+        "voId": "chr_0020_meurs_combat_outbattle_nor_02",
         "title": "Thắng Trận 2",
         "text": "Kết quả lần này rất lý tưởng."
       },
       {
+        "voId": "chr_0020_meurs_combat_outbattle_nor_echo2_01",
         "title": "Thắng Trận 3",
         "text": "Ấn tượng thật... Chỉ có ngài mới làm được vậy."
       },
       {
+        "voId": "chr_0020_meurs_combat_outbattle_hard_01",
         "title": "Thắng Trận 4",
         "text": "Dù sao thì chúng ta cũng đã hoàn thành mục tiêu nhiệm vụ."
       },
       {
+        "voId": "chr_0020_meurs_combat_battle_defeat_01",
         "title": "Bại Trận",
         "text": "Phần lớn kinh nghiệm cuộc sống dạy tôi một điều: Hãy chấp nhận thất bại, rồi tìm cách vượt qua nó."
       },
       {
+        "voId": "chr_0020_meurs_mono_attack_last_01",
         "title": "Đòn Dứt Điểm 1",
         "text": "Biến đi."
       },
       {
+        "voId": "chr_0020_meurs_mono_attack_last_02",
         "title": "Đòn Dứt Điểm 2",
         "text": "Tới lượt ngươi."
       },
       {
+        "voId": "chr_0020_meurs_mono_skill_nor_strike_01",
         "title": "KN Chiến Đấu 1",
         "text": "Lùi lại!"
       },
       {
+        "voId": "chr_0020_meurs_mono_skill_nor_strike_02",
         "title": "KN Chiến Đấu 2",
         "text": "Dừng lại!"
       },
       {
+        "voId": "chr_0020_meurs_mono_skill_nor_strike_03",
         "title": "KN Chiến Đấu 3",
         "text": "Nấp đi!"
       },
       {
+        "voId": "chr_0020_meurs_combat_skill_comb_ready_01",
         "title": "Chuẩn Bị KN Liên Hoàn 1",
         "text": "Không chờ đợi nữa."
       },
       {
+        "voId": "chr_0020_meurs_combat_skill_comb_ready_02",
         "title": "Chuẩn Bị KN Liên Hoàn 2",
         "text": "Tới lượt tôi."
       },
       {
+        "voId": "chr_0020_meurs_mono_skill_comb_release_01",
         "title": "Thi Triển Liên Hoàn 1",
         "text": "Đỡ đi!"
       },
       {
+        "voId": "chr_0020_meurs_mono_skill_comb_release_02",
         "title": "Thi Triển Liên Hoàn 2",
         "text": "Nếm chiêu!"
       },
       {
+        "voId": "chr_0020_meurs_mono_attack_extra_01",
         "title": "Kết Liễu 1",
         "text": "Không thoát được đâu."
       },
       {
+        "voId": "chr_0020_meurs_mono_attack_extra_02",
         "title": "Kết Liễu 2",
         "text": "Kết thúc rồi."
       },
       {
+        "voId": "chr_0020_meurs_mono_skill_ultimate_01",
         "title": "Tuyệt Kỹ 1",
         "text": "Hạ gục các ngươi!"
       },
       {
+        "voId": "chr_0020_meurs_mono_skill_ultimate_02",
         "title": "Tuyệt Kỹ 2",
         "text": "Không ai vượt qua được tôi!"
       },
       {
+        "voId": "chr_0020_meurs_mono_skill_ultimate_03",
         "title": "Tuyệt Kỹ 3",
         "text": "TRÁNH RA!"
       }

@@ -136,326 +136,407 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0016_laevat_chrbark_squad_01",
         "title": "Chuẩn Bị Tác Chiến 1",
         "text": "Tôi ghét rắc rối, nhưng chán nản còn tệ hơn."
       },
       {
+        "voId": "chr_0016_laevat_chrbark_squad_02",
         "title": "Chuẩn Bị Tác Chiến 2",
         "text": "Bất cứ điều gì sắp tới hy vọng sẽ đáng nhớ hơn."
       },
       {
+        "voId": "chr_0016_laevat_chrbark_join_01",
         "title": "Đang thêm vào đội 1",
         "text": "Tôi có thể làm được. Một mình."
       },
       {
+        "voId": "chr_0016_laevat_chrbark_join_02",
         "title": "Đang thêm vào đội 2",
         "text": "Tôi là một thanh kiếm. Tôi là hiện thân của lửa."
       },
       {
+        "voId": "chr_0016_laevat_chrbark_weap_01",
         "title": "Đang đổi vũ khí",
         "text": "Lưỡi kiếm tuyệt hảo. Hy vọng nó chịu được sức nóng từ lửa của tôi."
       },
       {
+        "voId": "chr_0016_laevat_chrbark_gear_01",
         "title": "Đang đổi trang bị",
         "text": "Trọng lượng này sẽ không làm chậm đòn tấn công của tôi. Lớp phủ chống cháy à? Xì."
       },
       {
+        "voId": "chr_0016_laevat_chrup_skill_01",
         "title": "Kích hoạt Ma Trận Năng Lực",
         "text": "Sao nào, sức mạnh thật sự của tôi thế nào?"
       },
       {
+        "voId": "chr_0016_laevat_chrup_level_01",
         "title": "Xem Hồ Sơ Chiến Đấu",
         "text": "Ừm, tạm chuẩn."
       },
       {
+        "voId": "chr_0016_laevat_chrup_promt01_01",
         "title": "Thăng Bậc Cán Viên 1",
         "text": "Cái này nghĩa là gì? Động viên ư? Công nhận à? Chẳng cần gì cả. Tôi chỉ đụng độ lũ sinh vật ngu ngốc rồi thiêu rụi tất cả."
       },
       {
+        "voId": "chr_0016_laevat_chrup_promt02_01",
         "title": "Thăng Bậc Cán Viên 2",
         "text": "Giờ tôi được thăng bậc, vậy là tôi đủ cấp đặc quyền để yêu cầu một buổi đánh giá thường niên riêng, đúng không? Tốt lắm. Đi dạo nào. Tôi cần chút không khí."
       },
       {
+        "voId": "chr_0016_laevat_chrup_promt03_01",
         "title": "Thăng Bậc Cán Viên 3",
         "text": "Lại nữa? Tôi không cần thứ gì chứng minh việc đã làm. Nhưng nếu ngài cứ muốn, tôi sẽ giữ nó như một biểu tượng và một minh chứng... cho những kỷ niệm mà chúng ta đã cùng tạo nên."
       },
       {
+        "voId": "chr_0016_laevat_chrup_promt04_01",
         "title": "Thăng Bậc Cán Viên 4",
         "text": "Nhân viên Endfield các ngài dường như ngày càng dựa dẫm vào tôi. Xem ra tôi không còn lựa chọn nào ngoài việc chấp nhận vinh dự này. Từ giờ ngài có thể gọi tôi là Cán Viên Endfield Laevatain... Này! Gì thế, ánh mắt đó là sao?"
       },
       {
+        "voId": "chr_0016_laevat_introduce_01",
         "title": "Cán Viên đang báo cáo nhiệm vụ",
         "text": "Chẳng phải ta gặp nhau rồi sao? Hmph. Không quan trọng. Ngài sẽ nhớ đến tôi bằng thanh kiếm này và ngọn lửa này."
       },
       {
+        "voId": "chr_0016_laevat_mono_switch_01",
         "title": "Chờ Lệnh 1",
         "text": "Tôi ghét những kẻ thích kiểm soát từng li từng tí. May mà ngài không phải loại người đó."
       },
       {
+        "voId": "chr_0016_laevat_mono_switch_02",
         "title": "Chờ Lệnh 2",
         "text": "Tìm tôi à? Cuối cùng thì ngài cũng nhớ ra gì đó sao?"
       },
       {
+        "voId": "chr_0016_laevat_sim_assign_work_01",
         "title": "Phân Công Vào Công Trình",
         "text": "Ừm, chỗ này cũng hợp để lãng phí thời gian..."
       },
       {
+        "voId": "chr_0016_laevat_sim_hello_lower_01",
         "title": "Lời Chào 1",
         "text": "À, ngài ở đây."
       },
       {
+        "voId": "chr_0016_laevat_sim_hello_max_01",
         "title": "Lời Chào 2",
         "text": "Là ngài... Không phải là tôi đang chờ ngài đâu."
       },
       {
+        "voId": "chr_0016_laevat_sim_talk_lv01_01",
         "title": "Trò Chuyện Nhàn Rỗi Dijiang 1",
         "text": "Ngài còn định đứng đó làm gì? Đi thôi, ra Cầu Tàu. Rồi ngài hãy kể cho tôi nghe về những nơi ngài từng đến, và cả những nơi ngài muốn đến sau này."
       },
       {
+        "voId": "chr_0016_laevat_sim_talk_lv02_01",
         "title": "Trò Chuyện Nhàn Rỗi Dijiang 2",
         "text": "Ừmmm... Tôi xin gửi lời cảm ơn chân thành nhất tới Bộ Phận Vận Chuyển vì quầy kem tự chọn tuyệt vời này. Cần tôi lấy cho Ngài một vài viên không?"
       },
       {
+        "voId": "chr_0016_laevat_sim_talk_lv02_02",
         "title": "Trò Chuyện Nhàn Rỗi Dijiang 3",
         "text": "Tôi có nhiệm vụ. Đi cùng chứ? Không, không cần giao thức dịch chuyển đâu. Tôi thích khoang đáp hơn. Tôi sẽ lao xuống với tiếng gầm rực lửa, ngay trên đầu bọn chúng."
       },
       {
+        "voId": "chr_0016_laevat_sim_talk_max_01",
         "title": "Trò Chuyện Nhàn Rỗi Dijiang 4",
         "text": "Lạnh à? Tôi đã bảo họ chỉnh điều hòa xuống, vì có gã nào đó xây con tàu này mà quên chừa chỗ cho luồng không khí. Nếu ngài không chịu được lạnh, cứ đứng sát lại gần tôi."
       },
       {
+        "voId": "chr_0016_laevat_sim_talk_max_02",
         "title": "Trò Chuyện Nhàn Rỗi Dijiang 5",
         "text": "Khi không có việc gì, tôi sẽ ăn kem và ngắm cảnh bên ngoài. Tôi có thể làm thế cả ngày. Tâm trí tôi đầy những mảnh ký ức vỡ vụn. Thế nhưng chẳng mảnh nào cho tôi thấy thế giới và bầu trời sao từ góc nhìn này."
       },
       {
+        "voId": "chr_0016_laevat_sim_talk_max_03",
         "title": "Trò Chuyện Nhàn Rỗi Dijiang 6",
         "text": "Vẫn còn mắc kẹt trong ký ức à? Hmph. Nếu đã qua rồi thì cứ để nó qua đi. Quan trọng là những gì xảy ra từ giờ trở đi."
       },
       {
+        "voId": "chr_0016_laevat_sim_gift_give_01",
         "title": "Tặng Quà",
         "text": "Đây. Của ngài đấy. Cảm ơn vì vẫn nghĩ đến tôi. Hửm? Chỉ cần còn nhớ đến một người mình trân trọng là đủ rồi à...? Xì..."
       },
       {
+        "voId": "chr_0016_laevat_sim_gift_recv_01",
         "title": "Nhận quà",
         "text": "Tôi vốn không thích nhận quà vì cuối cùng tôi luôn quên béng chúng đi. Nhưng cái này là từ ngài... nên sẽ là ngoại lệ."
       },
       {
+        "voId": "chr_0016_laevat_mono_self_line01",
         "title": "Đối Thoại Tín Nhiệm 1",
         "text": "Laevatain? Ừ. Tôi tự chọn cái tên đó. Lấy cảm hứng từ thanh kiếm. Có người không xem đó là tên thật của tôi? Hừ, tôi đã thuần phục nó nên tên của nó chính là của tôi. Giống như ký ức kia, tôi muốn làm chủ chúng chứ không để chúng chi phối tôi."
       },
       {
+        "voId": "chr_0016_laevat_mono_self_line02",
         "title": "Đối Thoại Tín Nhiệm 2",
         "text": "Tâm trí tôi vẫn ngập đầy những ký ức rời rạc. Chúng không biến mất. Chỉ là tôi chọn không đào sâu vào. Có lẽ khi đã xử lý xong mớ công việc thường nhật, tôi sẽ lần theo ký ức ấy, bắt đầu một hành trình mới."
       },
       {
+        "voId": "chr_0016_laevat_mono_self_line03",
         "title": "Đối Thoại Tín Nhiệm 3",
         "text": "Surtr... Tất cả cơn giận, nỗi mất mát, và sự bối rối của cô ấy... vẫn còn trong trí nhớ tôi. Chúng rõ ràng như thể chưa từng phai nhạt. Nhưng khi nhớ lại quyết định cuối cùng cô ấy tự đưa ra, tôi cũng cảm thấy nhẹ lòng phần nào."
       },
       {
+        "voId": "chr_0016_laevat_mono_self_line04",
         "title": "Đối Thoại Tín Nhiệm 4",
         "text": "Nhiệm vụ của Người Trở Về ư? Tôi không quan tâm nữa. Thứ đó có lẽ bị nhét vào ký ức của tôi. Tôi chỉ đồng ý chiến đấu bên ngài chỉ là vì những con người tôi từng gặp, con đường tôi đã bước, sàn tàu tôi từng nằm ngủ và lũ breaker tôi đã nghiền nát... Chính là những ký ức thật sự thuộc về tôi, được tạo ra tại nơi này."
       },
       {
+        "voId": "chr_0016_laevat_mono_self_line05",
         "title": "Đối Thoại Tín Nhiệm 5",
         "text": "Đã từng có lúc tôi không hiểu vì sao ngài cứ níu giữ quá khứ. Mãi đến khi đặt chân đến Endfield tôi mới hiểu. Ngài là Endministrator, là nơi quy tụ kỳ vọng của mọi người, là hình tượng được khắc họa từ lý tưởng về một người cứu thế. Nhưng không ai nên để hình ảnh bản thân bị bóp méo bởi mong ước của kẻ khác. Vì thế, ngài phải dùng chính ký ức của mình để tìm lại con người thật. Nếu trên hành trình ấy ngài cần một người đồng hành, chỉ cần gọi tôi. Tôi chẳng quan tâm ngài sẽ đi đâu."
       },
       {
+        "voId": "chr_0016_laevat_mono_chat_line01",
         "title": "Trò Chuyện 1",
         "text": "Chiếc \"Nhẫn\" vỡ nát của tôi à? Cứ xem nó như thú cưng và \"Đơn Vị Thuật Pháp\" của tôi vậy. Kỹ Sư Kho Vũ Khí ở Endfield từng cố tìm hiểu cách nó hoạt động. Họ cũng thử sửa chữa nó... Nhưng rồi Chiếc Nhẫn tự ý hành động, kết thúc mọi nỗ lực ấy."
       },
       {
+        "voId": "chr_0016_laevat_mono_chat_line02",
         "title": "Trò Chuyện 2",
         "text": "Ngài ở đây à? Lại đây nhìn thứ này giúp tôi. Warfarin gửi cho tôi một bộ xếp hình. Bác ấy bảo là tái hiện phong cảnh, con người, và lịch sử của Terra... Siêu to luôn. Tôi tốn cả đống thời gian mà vẫn chưa ghép xong... Này, đừng cứ chăm chăm nhìn mấy mép bị rách. Mấy đốm cháy ấy cũng không liên quan đến tôi. Lúc tôi nhận nó đã như vậy rồi."
       },
       {
+        "voId": "chr_0016_laevat_mono_chat_line03",
         "title": "Trò Chuyện 3",
         "text": "Khi làm nhiệm vụ ở Talos-II, ban đêm tôi thường mơ thấy Dijiang và những người ở Endfield. Tôi kiên nhẫn chờ đợi trí óc mình gột bỏ hết những ký ức không thuộc về mình, để rồi lấp đầy bằng những ký ức do chính tôi tạo nên."
       },
       {
+        "voId": "chr_0016_laevat_mono_chat_line04",
         "title": "Trò Chuyện 4",
         "text": "Tại sao tôi chiến đấu? Vì sẽ đến một ngày tôi đứng trên đỉnh núi, và nhìn thấy cả thế giới bị lửa thiêu rụi... Ánh mắt đó là sao? Tôi chỉ đang kể về một cơn ác mộng cứ bám lấy tôi suốt thôi. Gác nỗi lo sang một bên đi nào. Tôi sẽ không để viễn cảnh đó xảy ra, dù là lúc nào hay ở đâu."
       },
       {
+        "voId": "chr_0016_laevat_mono_chat_line05",
         "title": "Trò Chuyện 5",
         "text": "Đôi khi tôi thấy những người tị nạn lang thang hoang địa, hoặc lũ đồ tể từng phá hủy cả thành phố. Một phút trước tôi còn tỉa hoa trong vườn; phút sau đã ngạt thở trong phòng thí nghiệm hóa học. Tôi chiến đấu với những kẻ mặt mũi mờ ảo, bản thân cũng chẳng biết vì sao lại đánh nhau... Này, đừng ngủ gật. Tôi mới kể đến đó thôi."
       },
       {
+        "voId": "chr_0016_laevat_mono_about_line01",
         "title": "Chủ đề: Seš'qa",
         "text": "Nhà tôi à? Tôi từng ở một nơi gọi là Seš'qa. Có nhà cửa, có ngôn ngữ, có lễ hội và pháp thuật... đủ quen thuộc để cảm thấy như là \"nhà\". Nhưng tôi sẽ không quay lại trừ phi có lý do rất chính đáng. Người ở đó nhiệt tình đến phiền. Thậm chí có người gọi tôi là Diαblo... Ui. Nói chung là tôi mất bình tĩnh và làm loạn chỗ đó một chút..."
       },
       {
+        "voId": "chr_0016_laevat_mono_about_line02",
         "title": "Chủ đề: Yvonne",
         "text": "Cái cô tóc hồng người Vouivre cứ nhờ tôi kiểm tra Băng Bé Bỏng của cổ. Chẳng lần nào dập được lửa của tôi. Nhưng cô ấy... làm kem khá đẹp và cũng ngon nữa."
       },
       {
+        "voId": "chr_0016_laevat_mono_about_line03",
         "title": "Chủ đề: Trường Địa Hannabit",
         "text": "Một Kẻ Tầm Ca trong Trường Địa Hannabit từng nói với tôi: \"Lửa là quỷ trong tay gió, nhưng là bạn trong tay con người.\" Kẻ Tầm Ca đó chẳng sợ lửa chút nào. Thậm chí còn dạy tôi cách tạo ranh lửa để chặn cháy lan bên kia hoang địa. Tôi từng dập được một vụ cháy rừng. Dân làng sống sót gọi chúng tôi là anh hùng, nhưng tôi thì chỉ nhớ đến con Thú Mây nhỏ chúng tôi đã cứu. Tôi để cô ấy giữ nó. Tiếc thật đấy."
       },
       {
+        "voId": "chr_0016_laevat_mono_about_line04",
         "title": "Chủ đề: Phòng Thương Mại Tổng Hợp Talos-II",
         "text": "Tôi cần ngài xử lý một việc. Bộ Phận HR bảo tôi báo cáo trực tiếp lên ngài. Ở đây. Là một tấm lệnh truy nã. Không có gì to tát. Chuyện xảy ra lúc tôi vừa rời Rhodes Island. Một nơi tên là Bùng Binh Asphalt cáo buộc tôi vài vụ phóng hỏa. Chúng nên tự trách mình thì hơn. Một bãi rác đầy vật dễ cháy thì cũng phải lường trước chuyện sẽ bốc cháy chứ."
       },
       {
+        "voId": "chr_0016_laevat_mono_about_line05",
         "title": "Chủ đề: Sami",
         "text": "Tôi nhắc lại lần nữa. Tôi chưa từng đặt chân đến Terra. Thực sự là chưa. Thế nên đừng nói với tôi về cảnh vật, con người, hay văn hóa nơi đó... Trừ khi ngài đang nói về Sami. Tôi nghe nói \"quê nhà\" của họ đã đưa họ đến Talos-II. Nếu chúng ta có nhiệm vụ tại đó, hãy gọi tôi."
       },
       {
+        "voId": "chr_0016_laevat_explore_point_common_01",
         "title": "Phát hiện Tài Nguyên/Có Thể Thu Thập 1",
         "text": "Có gì đó kìa? Nếu vô dụng, ta có thể dùng để thử kiếm."
       },
       {
+        "voId": "chr_0016_laevat_explore_point_valub_01",
         "title": "Phát hiện Tài Nguyên/Có Thể Thu Thập 2",
         "text": "Có thứ đáng ghi nhớ ở đó."
       },
       {
+        "voId": "chr_0016_laevat_explore_find_locked_01",
         "title": "Phát Hiện Khu Vực Chưa Khám Phá",
         "text": "Chúng ta có thể đến xem thử. Đừng lo. Cứ bám sát tôi là được."
       },
       {
+        "voId": "chr_0016_laevat_explore_find_danger_01",
         "title": "Phát hiện Kẻ Địch Mạnh",
         "text": "Thấy tên kia chứ? Cần tôi dọn dẹp một chút không?"
       },
       {
+        "voId": "chr_0016_laevat_interact_mine_valub_01",
         "title": "Khai thác 1",
         "text": "Chỉ những thứ thật sự có giá trị mới sống sót qua lửa."
       },
       {
+        "voId": "chr_0016_laevat_interact_mine_valub_echo2_01",
         "title": "Khai thác 2",
         "text": "Chậm quá. Tôi ghét cảm giác đứng chờ không làm gì cả."
       },
       {
+        "voId": "chr_0016_laevat_interact_treasure_valub_01",
         "title": "Mở Thùng",
         "text": "Tôi nhớ là ngài từng khá thích mấy thứ này."
       },
       {
+        "voId": "chr_0016_laevat_interact_etherium_01",
         "title": "Nhận Aurylene",
         "text": "Aurylene... Một thứ không đáng tin chẳng khác gì ký ức của tôi."
       },
       {
+        "voId": "chr_0016_laevat_interact_blight_break_01",
         "title": "Xua Tan Nhiễm Khuẩn",
         "text": "Hãy thận trọng. Thứ này còn nguy hiểm hơn cả lửa."
       },
       {
+        "voId": "chr_0016_laevat_interact_rest_01",
         "title": "Nghỉ ngơi",
         "text": "Nếu vẫn thấy lạnh, hãy đến gần tôi xem sao."
       },
       {
+        "voId": "chr_0016_laevat_combat_suppuse_using_01",
         "title": "Sử Dụng Vật Phẩm Chiến Thuật 1",
         "text": "Thôi nào, tôi không muốn xem diễn hài."
       },
       {
+        "voId": "chr_0016_laevat_combat_suppuse_getheal_01",
         "title": "Sử Dụng Vật Phẩm Chiến Thuật 2",
         "text": "Hmph. Tôi ổn rồi."
       },
       {
+        "voId": "chr_0016_laevat_combat_remind_danger_01",
         "title": "Cảnh Báo Nguy Hiểm",
         "text": "Đừng đứng đó nữa, di chuyển đi!"
       },
       {
+        "voId": "chr_0016_laevat_combat_hurt_lowhp_01",
         "title": "Bị Thương",
         "text": "Chậc... Chừng này chưa giết được tôi đâu."
       },
       {
+        "voId": "chr_0016_laevat_combat_dead_01",
         "title": "0 HP",
         "text": "Chết tiệc... ký ức thua trận này..."
       },
       {
+        "voId": "chr_0016_laevat_combat_remind_praise_01",
         "title": "Cổ Vũ Đội 1",
         "text": "Hmph. Tôi sẽ ghi nhớ chuyện này."
       },
       {
+        "voId": "chr_0016_laevat_combat_remind_praise_02",
         "title": "Cổ Vũ Đội 2",
         "text": "Không tệ chút nào. Lần tới cứ để tôi lo."
       },
       {
+        "voId": "chr_0016_laevat_combat_remind_praise_echo2_01",
         "title": "Đáp Lại Lời Cổ Vũ 1",
         "text": "Tôi biết."
       },
       {
+        "voId": "chr_0016_laevat_combat_remind_praise_echo2_02",
         "title": "Đáp Lại Lời Cổ Vũ 2",
         "text": "Chỉ là một phần công việc thôi."
       },
       {
+        "voId": "chr_0016_laevat_combat_intobattle_01",
         "title": "Bắt Đầu Chiến Đấu 1",
         "text": "Đã đến lúc khiến chúng phải đau đớn rồi."
       },
       {
+        "voId": "chr_0016_laevat_combat_intobattle_echo2_01",
         "title": "Bắt Đầu Chiến Đấu 2",
         "text": "Đã đến lúc!"
       },
       {
+        "voId": "chr_0016_laevat_combat_outbattle_nor_01",
         "title": "Thắng Trận 1",
         "text": "Từng này còn chưa đủ khởi động."
       },
       {
+        "voId": "chr_0016_laevat_combat_outbattle_nor_02",
         "title": "Thắng Trận 2",
         "text": "Thắng lợi là điều hiển nhiên."
       },
       {
+        "voId": "chr_0016_laevat_combat_outbattle_nor_echo2_01",
         "title": "Thắng Trận 3",
         "text": "Tôi sẽ tham gia màn ăn mừng của ngài."
       },
       {
+        "voId": "chr_0016_laevat_combat_outbattle_hard_01",
         "title": "Thắng Trận 4",
         "text": "Ngài cũng làm khá lắm. Nhưng lần tới hãy để phần chiến đấu cho tôi."
       },
       {
+        "voId": "chr_0016_laevat_combat_battle_defeat_01",
         "title": "Bại Trận",
         "text": "Tôi sẽ không để chuyện này lặp lại nữa."
       },
       {
+        "voId": "chr_0016_laevat_mono_attack_last_01",
         "title": "Đòn Dứt Điểm 1",
         "text": "Chém!"
       },
       {
+        "voId": "chr_0016_laevat_mono_attack_last_02",
         "title": "Đòn Dứt Điểm 2",
         "text": "Bỏ mạng!"
       },
       {
+        "voId": "chr_0016_laevat_mono_skill_nor_01",
         "title": "KN Chiến Đấu 1",
         "text": "Ngọn Lửa Tan Chảy!"
       },
       {
+        "voId": "chr_0016_laevat_mono_skill_nor_02",
         "title": "KN Chiến Đấu 2",
         "text": "Thiêu rụi!"
       },
       {
+        "voId": "chr_0016_laevat_mono_skill_nor_03",
         "title": "KN Chiến Đấu 3",
         "text": "Nuốt chửng!"
       },
       {
+        "voId": "chr_0016_laevat_combat_skill_comb_ready_01",
         "title": "Chuẩn Bị KN Liên Hoàn 1",
         "text": "Tôi lo được!"
       },
       {
+        "voId": "chr_0016_laevat_combat_skill_comb_ready_02",
         "title": "Chuẩn Bị KN Liên Hoàn 2",
         "text": "Địa ngục đón chờ!"
       },
       {
+        "voId": "chr_0016_laevat_mono_skill_comb_release_01",
         "title": "Thi Triển Liên Hoàn 1",
         "text": "Đốt thành than!"
       },
       {
+        "voId": "chr_0016_laevat_mono_skill_comb_release_02",
         "title": "Thi Triển Liên Hoàn 2",
         "text": "Hóa thành tro!"
       },
       {
+        "voId": "chr_0016_laevat_mono_attack_extra_01",
         "title": "Kết Liễu 1",
         "text": "Không thoát được đâu!"
       },
       {
+        "voId": "chr_0016_laevat_mono_attack_extra_02",
         "title": "Kết Liễu 2",
         "text": "Để mạng lại đi!"
       },
       {
+        "voId": "chr_0016_laevat_mono_skill_ultimate_01",
         "title": "Tuyệt Kỹ 1",
         "text": "Hoàng hôn sẽ thiêu rụi!"
       },
       {
+        "voId": "chr_0016_laevat_mono_skill_ultimate_02",
         "title": "Tuyệt Kỹ 2",
         "text": "Hỏa táng bóng đêm!"
       },
       {
+        "voId": "chr_0016_laevat_mono_skill_ultimate_03",
         "title": "Tuyệt Kỹ 3",
         "text": "Giờ chết đã điểm!"
       }

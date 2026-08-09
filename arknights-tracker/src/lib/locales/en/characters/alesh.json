@@ -129,322 +129,402 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0024_deepfin_chrbark_squad_01",
         "title": "Operation Prep 1",
         "text": "Huh? Is it my turn already?"
       },
       {
+        "voId": "chr_0024_deepfin_chrbark_squad_02",
         "title": "Operation Prep 2",
         "text": "Since you're around, we're definitely catching something today."
       },
       {
+        "voId": "chr_0024_deepfin_chrbark_join_01",
         "title": "Adding to Team 1",
         "text": "Ah... I sprained my ankle yesterday... My hips hurt, and my neck, too..."
       },
       {
+        "voId": "chr_0024_deepfin_chrbark_join_02",
         "title": "Adding to Team 2",
         "text": "You got plenty of heavy hitters already. Sure you need me for the job?"
       },
       {
+        "voId": "chr_0024_deepfin_chrbark_weap_01",
         "title": "Switching Weapon",
         "text": "Hmm. Looks sturdier than a bamboo stick. At least this one isn't going to break into pieces."
       },
       {
+        "voId": "chr_0024_deepfin_chrbark_gear_01",
         "title": "Switching Gear",
         "text": "Now this will keep the bruises off me."
       },
       {
+        "voId": "chr_0024_deepfin_chrup_skill_01",
         "title": "Ability Matrix Activation",
         "text": "I actually survived a whole week of special training. Can't believe I managed to work that hard."
       },
       {
+        "voId": "chr_0024_deepfin_chrup_level_01",
         "title": "Watching Combat Records",
         "text": "This beats what we had on TV back home, plus it's fresh stuff every time!"
       },
       {
+        "voId": "chr_0024_deepfin_chrup_promt01_01",
         "title": "Operator Promotion 1",
         "text": "Hold on — this ceremony's for me? Oh wow ... what do I even say? I-I guess ... thank you?"
       },
       {
+        "voId": "chr_0024_deepfin_chrup_promt02_01",
         "title": "Operator Promotion 2",
         "text": "No need to keep encouraging me like this, Endmin. It's weird, but praise actually makes me wilt like an overwatered flower."
       },
       {
+        "voId": "chr_0024_deepfin_chrup_promt03_01",
         "title": "Operator Promotion 3",
         "text": "Must be tiring taking all this responsibility on your own, Endmin. Ahh. I guess I got no choice but to help you for now."
       },
       {
+        "voId": "chr_0024_deepfin_chrup_promt04_01",
         "title": "Operator Promotion 4",
         "text": "Why are you looking happier than me? I thought this is *my* promotion. Okay, then. Let's celebrate at the churrascaria. I only want the best BBQ cuts, and you're picking up the check."
       },
       {
+        "voId": "chr_0024_deepfin_introduce_01",
         "title": "Operator Reporting for Duty",
         "text": "Excuse me, is this where we sign up for the job? Nice meeting you. Name's Alesh. I like to read, and I can do angling with my eyes closed. Happy to be on board."
       },
       {
+        "voId": "chr_0024_deepfin_mono_switch_01",
         "title": "Standing by 1",
         "text": "What a beautiful day. Perfect for my nap."
       },
       {
+        "voId": "chr_0024_deepfin_mono_switch_02",
         "title": "Standing by 2",
         "text": "Empty wallet, story of my life..."
       },
       {
+        "voId": "chr_0024_deepfin_sim_assign_work_01",
         "title": "Assigning to Facility",
         "text": "Ahh... The moment you say \"work,\" all my energy just evaporates. I vote nap before task, Endmin."
       },
       {
+        "voId": "chr_0024_deepfin_sim_hello_lower_01",
         "title": "Greeting 1",
         "text": "Yo! I bump into you all the time. How's work today?"
       },
       {
+        "voId": "chr_0024_deepfin_sim_hello_max_01",
         "title": "Greeting 2",
         "text": "Boss, don't you feel tired? I can teach you how to sneak in a nap, you know."
       },
       {
+        "voId": "chr_0024_deepfin_sim_talk_lv01_01",
         "title": "Dijiang Idle Chatter 1",
         "text": "Nothing's left on the schedule? Great. Time to catch that angling show rerun."
       },
       {
+        "voId": "chr_0024_deepfin_sim_talk_lv02_01",
         "title": "Dijiang Idle Chatter 2",
         "text": "That place. Yeah. That one all covered in snow. It's the north, right? I would not be seeing this if I never joined Endfield. When I first got on Dijiang, the view from the bridge was almost too much to take in. Now that I'm used to it, looking down at Talos-II from up here feels pretty magical."
       },
       {
+        "voId": "chr_0024_deepfin_sim_talk_lv02_02",
         "title": "Dijiang Idle Chatter 3",
         "text": "My combat skills? I just swing the sword around and hope it hurts something real bad, boss. But you can also learn my special skill after fighting giant Tuskbeasts, man-eating vines, full metal Aggeloi, and dudes who owe you serious money."
       },
       {
+        "voId": "chr_0024_deepfin_sim_talk_max_01",
         "title": "Dijiang Idle Chatter 4",
         "text": "You see, folks my age get bored of a lot of things. Angling's the only escape I've got left from all this grim reality. Wha? I'm still young? Cut the buggerloid crap, I'm way older... Wait, Endmin. How old are you again?"
       },
       {
+        "voId": "chr_0024_deepfin_sim_talk_max_02",
         "title": "Dijiang Idle Chatter 5",
         "text": "I've been flipping through this book about common folks. Y'know, stuff like survival and humanity's struggle doesn't usually interest me... But I feel the author is like ... like someone who actually lived the life. Ai, what's wrong? Why so serious all of a sudden? Relax, Boss. I'm just saying I admire the author, that's all."
       },
       {
+        "voId": "chr_0024_deepfin_sim_talk_max_03",
         "title": "Dijiang Idle Chatter 6",
         "text": "Being hard to kill is probably my only advantage. I got hit real bad a couple of times, but there were too many people I might miss — like my buddies, the old landlord ... and you guys as well. The thought alone always makes me crawl back up for round two."
       },
       {
+        "voId": "chr_0024_deepfin_sim_gift_give_01",
         "title": "Offering Gifts",
         "text": "Here, Boss. Got something nice for you. The shop got this fifty percent discount if you buy another. A great steal, right?"
       },
       {
+        "voId": "chr_0024_deepfin_sim_gift_recv_01",
         "title": "Accepting Gifts",
         "text": "For me? Holy... I usually get love letters from butt-hurt punks asking me to pay up or guys who want to kill me. Never expected to get a real gift."
       },
       {
+        "voId": "chr_0024_deepfin_mono_self_line01",
         "title": "Trust Dialog 1",
         "text": "Feeling low? Man, young people should be hopeful. I know things are terrible, but it's going to get worse from now. See? You're feeling a lot better already, right?"
       },
       {
+        "voId": "chr_0024_deepfin_mono_self_line02",
         "title": "Trust Dialog 2",
         "text": "Why did I join Endfield? My old wooster landlord. That's why. He's always angry, you know. My fin shop isn't doing too good and I owed him months of rent. So he got me a job without asking me. Don't know what he wrote for my resume, but you accepted it... So here I am."
       },
       {
+        "voId": "chr_0024_deepfin_mono_self_line03",
         "title": "Trust Dialog 3",
         "text": "What's that in your hand? \"Second Gangster Leading La Estrada\"...? The cara in the photo looks like me? Eh, who's to say. C'mon, we should live in the moment. No point digging up what's meant to stay buried. It'd be a shame if we let some old dusty story come between us, don't you think? Uh, why are you asking Perlica for the Security Bureau's number?"
       },
       {
+        "voId": "chr_0024_deepfin_mono_self_line04",
         "title": "Trust Dialog 4",
         "text": "I used to roll with Estrada Ursaña. Most called it La Estrada. The city's a huge place that breeds small-timers like me. I grew up in the city's armpit, found my crew, joined a bigger gang, and somehow ended up leading it. Then, well ... everything blew up in my face. Man... If I knew I'd end up like this, I should've joined the fin cannery twenty years ago. Now, here I am, selling fins for a living."
       },
       {
+        "voId": "chr_0024_deepfin_mono_self_line05",
         "title": "Trust Dialog 5",
         "text": "What's with the stare? Curious about this scar? Hah, a man with stories doesn't hand 'em out easily. What's behind us stays behind. Gotta let it go and just walk on... Ai! Endmin! Don't really walk away! Okay, okay, I'll tell you — it's nothing fancy. Had two ride-or-dies. One took a swipe at me when I was covering for the other. Lost an eye and a chunk of my old life right there. There you have it. Simple and boring, right?"
       },
       {
+        "voId": "chr_0024_deepfin_mono_chat_line01",
         "title": "Chat 1",
         "text": "Life isn't like angling. You can always retrieve a cast lure when angling. But in real life, there's no easy way out once you're in hot water. *THIS* is exactly why livin' the happy life is important. True legit wisdom from an old boy, Endmin."
       },
       {
+        "voId": "chr_0024_deepfin_mono_chat_line02",
         "title": "Chat 2",
         "text": "My little fin shop isn't doing too well. I couldn't even afford rent without that Endfield paycheck. Honestly, I wasn't expecting to make serious bucks selling fins. That's why I let people haggle all they want — and even run tabs if they need to. Even when I got lucky with angling I simply gave the extra fins away. Life isn't easy for everyone, you know. There was this time when a thief visited my place. The sneak found nothing valuable and left me a note. \"Sorriest place I've ever seen.\" Man..."
       },
       {
+        "voId": "chr_0024_deepfin_mono_chat_line03",
         "title": "Chat 3",
         "text": "Here's my philosophy of life: Tolerate the little things and dodge the bigger things. *Only* do something when dodging is impossible. Then you give them hell and make sure they stay down."
       },
       {
+        "voId": "chr_0024_deepfin_mono_chat_line04",
         "title": "Chat 4",
         "text": "Is the eye giving me trouble? Yeah ... it can be annoying sometimes. For example, you were standing in my blind spot when you greeted me just then. Haha. It's okay. I'm already used to this. Perfect vision isn't that exciting. Maybe it's actually better to keep certain things in the dark and make them ... mysterious."
       },
       {
+        "voId": "chr_0024_deepfin_mono_chat_line05",
         "title": "Chat 5",
         "text": "The tarot show yesterday predicted I'd be super lucky today. And guess what? I fell into the stinky sewers right after leaving my place. I was like, \"Man...! Most inaccurate tarot show ever.\" But then I spotted something shiny in the muck — a diamond ring. So hey, maybe I was lucky after all. Felt bad for whoever lost it though, so I used my super luck to find this poor guy and returned the ring. What I'm saying is, Boss — if we use our luck to do the right thing, maybe even more luck will come our way. You agree?"
       },
       {
+        "voId": "chr_0024_deepfin_mono_about_line01",
         "title": "Topic: Gangs",
         "text": "I lived in the messy frontiers, you know. It's where kids either grew up with a stinking family or without one. Not sure which one's more screwed up. Me? I had no family, no education, and no roof over my head. So yeah, I ran with the streets. Spent my days brawling with other kids just to survive. We hated each other's guts, but all the threats force us to make funny choices. Somehow we got together and created our own family. Funny enough, we even carved our own rules on that lawless turf."
       },
       {
+        "voId": "chr_0024_deepfin_mono_about_line02",
         "title": "Topic: Landlord",
         "text": "The old landlord wrote me again. He wasn't asking for rent, but he's curious about my recent situation. Even called me a lazy good-for-nothing who can't take care of myself. Man, hard to believe he was some big deal during his younger days... Waaaiit. Why does he care so much about me? Is he trying to make me his son? Dude, I'm already funding his retirement by paying rent— wheelchair chauffeur duties aren't in the lease. He kept whining about his knees... Maybe I should give him an auto-massager. Seriously, this old man needs to look after himself instead of pestering me with this nonsense. Plus, if he's so worried, he could just drop in instead of guilt-tripping me through letters."
       },
       {
+        "voId": "chr_0024_deepfin_mono_about_line03",
         "title": "Topic: Talos City",
         "text": "Talos City has a special meaning for Talos-II. After the Humiliation War, the Big Three signed the Band Accord and jointly built Talos City. It was the first neutral city for the Terrans. That's what the history books say. A grand city, still incomplete after a century of construction work. Maybe I can describe it better: \"A wizened, graying man who raised his lance and pointed at the sun beyond the hills.\" A lot more cultured, right? Well — I didn't waste no time reading Ursine novels."
       },
       {
+        "voId": "chr_0024_deepfin_mono_about_line04",
         "title": "Topic: Strange Fin (Fish)",
         "text": "So you're curious about that strange fin I caught? Now that's a long story. I grew up fighting, not reading. Couldn't even say \"Originium Arts\" properly when I was a young punk. When I just lost my eye and was feeling all dazed and confused, I sensed something swimming around in my blind spot. It got really annoying when I was angling, so I cast my bait real hard and — \"BOOM!\" You know what happened next. Old man told me I got a talent for the Arts. I don't know if it's a curse."
       },
       {
+        "voId": "chr_0024_deepfin_explore_point_common_01",
         "title": "Resource/Collectible Detected 1",
         "text": "Probably should take a look. Maybe it's worth something."
       },
       {
+        "voId": "chr_0024_deepfin_explore_point_valub_01",
         "title": "Resource/Collectible Detected 2",
         "text": "Looks valuable. Guess we're gonna be rich."
       },
       {
+        "voId": "chr_0024_deepfin_explore_find_locked_01",
         "title": "Unexplored Area Detected",
         "text": "Careful. There's something weird nearby."
       },
       {
+        "voId": "chr_0024_deepfin_explore_find_danger_01",
         "title": "Powerful Enemy Discovered",
         "text": "Watch it! That one can rough you up real bad."
       },
       {
+        "voId": "chr_0024_deepfin_interact_mine_valub_01",
         "title": "Mining 1",
         "text": "Can we actually sell this?"
       },
       {
+        "voId": "chr_0024_deepfin_interact_mine_valub_echo2_01",
         "title": "Mining 2",
         "text": "Shiny stuff. Let's get some more."
       },
       {
+        "voId": "chr_0024_deepfin_interact_treasure_valub_01",
         "title": "Opening a Crate",
         "text": "Lucky. Turned out the tarot show is legit."
       },
       {
+        "voId": "chr_0024_deepfin_interact_etherium_01",
         "title": "Acquiring Aurylene",
         "text": "Looks like ... magical stuff. Can I take another look?"
       },
       {
+        "voId": "chr_0024_deepfin_interact_blight_break_01",
         "title": "Eliminating the Blight",
         "text": "There. Nice and clean."
       },
       {
+        "voId": "chr_0024_deepfin_interact_rest_01",
         "title": "Rest",
         "text": "I had a great nap. Time for some serious action."
       },
       {
+        "voId": "chr_0024_deepfin_combat_suppuse_using_01",
         "title": "Tactical Use 1",
         "text": "Your meds! Catch."
       },
       {
+        "voId": "chr_0024_deepfin_combat_suppuse_getheal_01",
         "title": "Tactical Use 2",
         "text": "Phew. I thought I was done for."
       },
       {
+        "voId": "chr_0024_deepfin_combat_remind_danger_01",
         "title": "Danger Warning",
         "text": "Hey! Get out the way!"
       },
       {
+        "voId": "chr_0024_deepfin_combat_hurt_lowhp_01",
         "title": "Injured",
         "text": "Not enough to take me down."
       },
       {
+        "voId": "chr_0024_deepfin_combat_dead_01",
         "title": "0 HP",
         "text": "I'll do ... whatever it takes..."
       },
       {
+        "voId": "chr_0024_deepfin_combat_remind_praise_01",
         "title": "Team Encouragement 1",
         "text": "Feeling great today, eh?"
       },
       {
+        "voId": "chr_0024_deepfin_combat_remind_praise_02",
         "title": "Team Encouragement 2",
         "text": "A good gang makes it easy."
       },
       {
+        "voId": "chr_0024_deepfin_combat_remind_praise_echo2_01",
         "title": "Encouragement Response 1",
         "text": "Just doing my job."
       },
       {
+        "voId": "chr_0024_deepfin_combat_remind_praise_echo2_02",
         "title": "Encouragement Response 2",
         "text": "The gang made it happen."
       },
       {
+        "voId": "chr_0024_deepfin_combat_intobattle_01",
         "title": "Combat Begins 1",
         "text": "Time to keep my eye peeled."
       },
       {
+        "voId": "chr_0024_deepfin_combat_intobattle_echo2_01",
         "title": "Combat Begins 2",
         "text": "Do it your way. I'll keep you covered."
       },
       {
+        "voId": "chr_0024_deepfin_combat_outbattle_nor_01",
         "title": "Combat Victory 1",
         "text": "Things got a little intense, but we nailed it."
       },
       {
+        "voId": "chr_0024_deepfin_combat_outbattle_nor_02",
         "title": "Combat Victory 2",
         "text": "I don't even feel tired."
       },
       {
+        "voId": "chr_0024_deepfin_combat_outbattle_nor_echo2_01",
         "title": "Combat Victory 3",
         "text": "Not bad. Everyone did their part."
       },
       {
+        "voId": "chr_0024_deepfin_combat_outbattle_hard_01",
         "title": "Combat Victory 4",
         "text": "That was close! Still gotta say — a win's a win."
       },
       {
+        "voId": "chr_0024_deepfin_combat_battle_defeat_01",
         "title": "Combat Defeat",
         "text": "Don't sweat the loss. Let's just be more careful next time. We've got this, yeah?"
       },
       {
+        "voId": "chr_0024_deepfin_mono_attack_last_01",
         "title": "Final Strike 1",
         "text": "Take this!"
       },
       {
+        "voId": "chr_0024_deepfin_mono_attack_last_02",
         "title": "Final Strike 2",
         "text": "Stay down!"
       },
       {
+        "voId": "chr_0024_deepfin_mono_skill_nor_01",
         "title": "Battle Skill 1",
         "text": "Come GET some!"
       },
       {
+        "voId": "chr_0024_deepfin_mono_skill_nor_02",
         "title": "Battle Skill 2",
         "text": "Simmer DOWN!"
       },
       {
+        "voId": "chr_0024_deepfin_mono_skill_nor_03",
         "title": "Battle Skill 3",
         "text": "Time to CHILL!"
       },
       {
+        "voId": "chr_0024_deepfin_combat_skill_comb_ready_01",
         "title": "Combo Skill Ready 1",
         "text": "Time to retaliate, eh?"
       },
       {
+        "voId": "chr_0024_deepfin_combat_skill_comb_ready_02",
         "title": "Combo Skill Ready 2",
         "text": "Ready to wreck these punks."
       },
       {
+        "voId": "chr_0024_deepfin_mono_skill_comb_release_01",
         "title": "Combo Casting 1",
         "text": "See what BITES!"
       },
       {
+        "voId": "chr_0024_deepfin_mono_skill_comb_release_02",
         "title": "Combo Casting 2",
         "text": "Outta my LINE!"
       },
       {
+        "voId": "chr_0024_deepfin_mono_attack_extra_01",
         "title": "Finisher 1",
         "text": "Don't trigger my FIN!"
       },
       {
+        "voId": "chr_0024_deepfin_mono_attack_extra_02",
         "title": "Finisher 2",
         "text": "I just chummed here!"
       },
       {
+        "voId": "chr_0024_deepfin_mono_skill_ultimate_01",
         "title": "Ultimate 1",
         "text": "Gotcha!"
       },
       {
+        "voId": "chr_0024_deepfin_mono_skill_ultimate_02",
         "title": "Ultimate 2",
         "text": "Have fun being the bait!"
       },
       {
+        "voId": "chr_0024_deepfin_mono_skill_ultimate_03",
         "title": "Ultimate 3",
         "text": "Go enjoy your snack!"
       }

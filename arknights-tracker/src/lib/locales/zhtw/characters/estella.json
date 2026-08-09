@@ -123,322 +123,402 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0021_whiten_chrbark_squad_01",
         "title": "行動準備1",
         "text": "休息時間……要結束了嗎？"
       },
       {
+        "voId": "chr_0021_whiten_chrbark_squad_02",
         "title": "行動準備2",
         "text": "再給我兩分鐘就出發……"
       },
       {
+        "voId": "chr_0021_whiten_chrbark_join_01",
         "title": "編入隊伍1",
         "text": "又要出任務了嗎？呼……趁我的體能還沒耗盡……"
       },
       {
+        "voId": "chr_0021_whiten_chrbark_join_02",
         "title": "編入隊伍2",
         "text": "該去探索哪些……不為人知的秘辛呢？哼哼……"
       },
       {
+        "voId": "chr_0021_whiten_chrbark_weap_01",
         "title": "更換武器",
         "text": "啊啊……無法匹敵的力量……呼呃……好重……"
       },
       {
+        "voId": "chr_0021_whiten_chrbark_gear_01",
         "title": "更換裝備",
         "text": "武庫的工程師們顯然高估了我的持續作戰能力……不過……就這樣吧。"
       },
       {
+        "voId": "chr_0021_whiten_chrup_skill_01",
         "title": "解鎖天賦陣列",
         "text": "提升能力就能減少工作了嗎？好耶……"
       },
       {
+        "voId": "chr_0021_whiten_chrup_level_01",
         "title": "觀看作戰紀錄",
         "text": "除了身體機能以外的部分都成長了……嗯，看來我已經沒救了。"
       },
       {
+        "voId": "chr_0021_whiten_chrup_promt01_01",
         "title": "精英化晉升1",
         "text": "真是突如其來的晉升機會……本來以為還需要花更多時間的……"
       },
       {
+        "voId": "chr_0021_whiten_chrup_promt02_01",
         "title": "精英化晉升2",
         "text": "看來我的工作比我預想中完成得還要出色……管理員……我需要請兩天假犒勞一下自己……"
       },
       {
+        "voId": "chr_0021_whiten_chrup_promt03_01",
         "title": "精英化晉升3",
         "text": "讓我晉升這麼快真的好嗎……還是說這是什麼試探下屬的管理方式嗎？我得好好想一下……"
       },
       {
+        "voId": "chr_0021_whiten_chrup_promt04_01",
         "title": "精英化晉升4",
         "text": "喔喔！這是不是意味著我可以去指揮秋栗做事了？哼哼……等下就去試試。"
       },
       {
+        "voId": "chr_0021_whiten_introduce_01",
         "title": "幹員報到",
         "text": "又是這個環節嗎？你好……管理員，我的名字是埃特拉，還請不要分配太多重體力的工作給我。"
       },
       {
+        "voId": "chr_0021_whiten_mono_switch_01",
         "title": "待命1",
         "text": "哈……活過來了。我暫時不想再去做任何事了……"
       },
       {
+        "voId": "chr_0021_whiten_mono_switch_02",
         "title": "待命2",
         "text": "又過度勞動了……嗯……忙裡偷閒的時光可要好好珍惜。"
       },
       {
+        "voId": "chr_0021_whiten_sim_assign_work_01",
         "title": "進駐設施",
         "text": "又是什麼新的工作嗎？我還是蠻期待的……真的喔。"
       },
       {
+        "voId": "chr_0021_whiten_sim_hello_lower_01",
         "title": "打招呼1",
         "text": "管理員……休息得怎麼樣？"
       },
       {
+        "voId": "chr_0021_whiten_sim_hello_max_01",
         "title": "打招呼2",
         "text": "難得看到管理員這麼有空。"
       },
       {
+        "voId": "chr_0021_whiten_sim_talk_lv01_01",
         "title": "帝江號閒聊1",
         "text": "自從我告訴安塔爾我不喜歡他的那些數字遊戲後……他就再也不向我推薦了。嗯……其他人也應該這麼做的。"
       },
       {
+        "voId": "chr_0021_whiten_sim_talk_lv02_01",
         "title": "帝江號閒聊2",
         "text": "武庫的工程師總是向我抱怨我的槍破損率太高……那也沒辦法……我能揮舞起這麼重的武器已經是不小的奇蹟了。"
       },
       {
+        "voId": "chr_0021_whiten_sim_talk_lv02_02",
         "title": "帝江號閒聊3",
         "text": "安德烈先生……他的腦袋能做到一百八十度旋轉嗎？嗯……下次我會去問問他的。"
       },
       {
+        "voId": "chr_0021_whiten_sim_talk_max_01",
         "title": "帝江號閒聊4",
         "text": "秋栗很喜歡長耳獸，所以我專門收集了許多長耳獸的料理食譜送給她……不知為何在那之後她整整一個禮拜沒跟我說話……真奇怪……"
       },
       {
+        "voId": "chr_0021_whiten_sim_talk_max_02",
         "title": "帝江號閒聊5",
         "text": "我已經習慣孤軍深入的戰術行動了……雖然很麻煩，但總得有人去做這些事。畢竟……我比其他人更耐得住寂寞。"
       },
       {
+        "voId": "chr_0021_whiten_sim_talk_max_03",
         "title": "帝江號閒聊6",
         "text": "噪音和金屬樂更能讓我變得平靜……停住那些聲音很容易，但我喜歡嘈雜聲中的些許迷失感，會有點……忘我？"
       },
       {
+        "voId": "chr_0021_whiten_sim_gift_give_01",
         "title": "贈送禮物",
         "text": "管理員，你願意收下這個嗎？放心……不是什麼奇怪的東西。"
       },
       {
+        "voId": "chr_0021_whiten_sim_gift_recv_01",
         "title": "接收禮物",
         "text": "送給我的……？嗯……很感謝……很少有小隊以外的人送給我禮物。"
       },
       {
+        "voId": "chr_0021_whiten_mono_self_line01",
         "title": "信賴對話1",
         "text": "為什麼不加入攻堅小組？不了不了，我對自己體能的不足可是很有自信的……不能給他人增加負擔。"
       },
       {
+        "voId": "chr_0021_whiten_mono_self_line02",
         "title": "信賴對話2",
         "text": "有位同行曾說過我對資訊的利用率太低……嗯……不過我根本沒考慮過怎麼去利用那些秘密，太麻煩了……收集它們只是我的愛好……"
       },
       {
+        "voId": "chr_0021_whiten_mono_self_line03",
         "title": "信賴對話3",
         "text": "運氣差？我的父母倒是經常會懷念過去的生活，認為生活的落差是運氣差所致……但是，嗯……我覺得無論什麼樣的經歷都有它存在的意義，正如我由此認識了Z7小隊的夥伴……"
       },
       {
+        "voId": "chr_0021_whiten_mono_self_line04",
         "title": "信賴對話4",
         "text": "遇到Z7小隊前我正處於人生的最低谷……啊……真是災難。錢被騙光，飢腸轆轆……秋栗和螢石起初把我和被救出的難民們安置在一起，直到我告訴她們裂地者換班的細節和組織情報……螢石一臉驚訝地問我怎麼做到的……嗯，那時她的表情我依然還記得。"
       },
       {
+        "voId": "chr_0021_whiten_mono_self_line05",
         "title": "信賴對話5",
         "text": "我想過隨遇而安的生活……我曾以為霉運纏身的我有這樣的想法很奢侈。直到我來到了終末地……加入了Z7小隊，遇見了管理員……謝謝你們一直在包容我……"
       },
       {
+        "voId": "chr_0021_whiten_mono_chat_line01",
         "title": "交談1",
         "text": "我的過去沒有那麼跌宕起伏，我只記得自己跟著家人輾轉各地……嗯，很累、很辛苦，和塔衛二上的大多數人一樣。所以我想生活得更輕鬆一點……"
       },
       {
+        "voId": "chr_0021_whiten_mono_chat_line02",
         "title": "交談2",
         "text": "在空曠的環境……去感受失真的吉他聲給耳朵帶來的輕微刺痛感……嗯……我很喜歡……"
       },
       {
+        "voId": "chr_0021_whiten_mono_chat_line03",
         "title": "交談3",
         "text": "我並不覺得敵後的工作艱苦，相反……不知何時將至的威脅有些微妙的刺激感……嗯，只要準備足夠充分，沒什麼應付不了的。"
       },
       {
+        "voId": "chr_0021_whiten_mono_chat_line04",
         "title": "交談4",
         "text": "管理員會有覺得被我冒犯到的時候嗎？抱歉……人事部門提醒過我這一點……Z7小隊的大家叫我不用太介意，理由是他們已經習慣了……"
       },
       {
+        "voId": "chr_0021_whiten_mono_chat_line05",
         "title": "交談5",
         "text": "該怎麼利用情報去猜測人的內心？我只負責收集，螢石負責剖析……嗯，我也很想知道她是怎麼做到的。不過……她只是告訴我說「經驗之談」。"
       },
       {
+        "voId": "chr_0021_whiten_mono_about_line01",
         "title": "話題：秋栗",
         "text": "嗯……作為超額勞動的報復，我要把秋栗與紙杯蛋糕的秘密公之於眾……呵呵，我真是太惡毒了。"
       },
       {
+        "voId": "chr_0021_whiten_mono_about_line02",
         "title": "話題：卡契爾",
         "text": "卡契爾是個毫無秘密的人……嗯，他的一切似乎都已經寫在述職報告裡了……世界上居然還存在這樣的人？"
       },
       {
+        "voId": "chr_0021_whiten_mono_about_line03",
         "title": "話題：螢石",
         "text": "螢石和我搭檔的次數最多，她總是因為我說了什麼而笑個不停，還會叫我多說點話……嗯……人內心的想法真是難以捉摸。"
       },
       {
+        "voId": "chr_0021_whiten_mono_about_line04",
         "title": "話題：安塔爾",
         "text": "那位薩弗拉是個很認真的人……有時候是不是有點認真過頭了？工作本就如此辛苦……不過他講的笑話非常有趣，總能把我和螢石逗笑。"
       },
       {
+        "voId": "chr_0021_whiten_explore_point_common_01",
         "title": "發現資源1",
         "text": "那個看起來還不錯……嗯，找個機會帶回去吧。"
       },
       {
+        "voId": "chr_0021_whiten_explore_point_valub_01",
         "title": "發現資源2",
         "text": "那邊那個……就算再累也有跑一趟的價值。"
       },
       {
+        "voId": "chr_0021_whiten_explore_find_locked_01",
         "title": "發現未探索區域",
         "text": "呼……得去那邊探索一番了。"
       },
       {
+        "voId": "chr_0021_whiten_explore_find_danger_01",
         "title": "發現強敵",
         "text": "是強敵……我可以只負責支援嗎？"
       },
       {
+        "voId": "chr_0021_whiten_interact_mine_valub_01",
         "title": "採集礦物1",
         "text": "多希望這種場合能用自動礦機……"
       },
       {
+        "voId": "chr_0021_whiten_interact_mine_valub_echo2_01",
         "title": "採集礦物2",
         "text": "我來幫忙了……不過……別對我有太多期望……"
       },
       {
+        "voId": "chr_0021_whiten_interact_treasure_valub_01",
         "title": "打開儲藏箱",
         "text": "這樣就不算白跑一趟了。"
       },
       {
+        "voId": "chr_0021_whiten_interact_etherium_01",
         "title": "獲得醚質",
         "text": "啊，我曾經見過這個……"
       },
       {
+        "voId": "chr_0021_whiten_interact_blight_break_01",
         "title": "消除侵蝕",
         "text": "太好了，這樣就不用多繞路了。"
       },
       {
+        "voId": "chr_0021_whiten_interact_rest_01",
         "title": "休整",
         "text": "多少恢復了點體力……能再多休息一會就更好了。"
       },
       {
+        "voId": "chr_0021_whiten_combat_suppuse_using_01",
         "title": "使用戰術物品1",
         "text": "試試這個……或許能幫到你……"
       },
       {
+        "voId": "chr_0021_whiten_combat_suppuse_getheal_01",
         "title": "使用戰術物品2",
         "text": "之前的準備派上用場了……"
       },
       {
+        "voId": "chr_0021_whiten_combat_remind_danger_01",
         "title": "危險提醒",
         "text": "小心……這時候不能硬撐。"
       },
       {
+        "voId": "chr_0021_whiten_combat_hurt_lowhp_01",
         "title": "負傷",
         "text": "呼……武器好重……"
       },
       {
+        "voId": "chr_0021_whiten_combat_dead_01",
         "title": "力竭",
         "text": "抱歉……是我拖累了大家……"
       },
       {
+        "voId": "chr_0021_whiten_combat_remind_praise_01",
         "title": "小隊激勵1",
         "text": "喔哦……剛才的動作我可不行。"
       },
       {
+        "voId": "chr_0021_whiten_combat_remind_praise_02",
         "title": "小隊激勵2",
         "text": "沒錯……就應該多依靠團隊協作。"
       },
       {
+        "voId": "chr_0021_whiten_combat_remind_praise_echo2_01",
         "title": "回應激勵1",
         "text": "但我不想多來幾次了……"
       },
       {
+        "voId": "chr_0021_whiten_combat_remind_praise_echo2_02",
         "title": "回應激勵2",
         "text": "嗯……每個人都出了份力。"
       },
       {
+        "voId": "chr_0021_whiten_combat_intobattle_01",
         "title": "作戰開始1",
         "text": "我不擅長持久戰……加速解決吧。"
       },
       {
+        "voId": "chr_0021_whiten_combat_intobattle_echo2_01",
         "title": "作戰開始2",
         "text": "到了不得不戰鬥的時候了嗎？上吧。"
       },
       {
+        "voId": "chr_0021_whiten_combat_outbattle_nor_01",
         "title": "作戰勝利1",
         "text": "總算結束了……哈，我表現得還不錯吧……"
       },
       {
+        "voId": "chr_0021_whiten_combat_outbattle_nor_02",
         "title": "作戰勝利2",
         "text": "呼……幸好在體力槽見底前結束了。"
       },
       {
+        "voId": "chr_0021_whiten_combat_outbattle_nor_echo2_01",
         "title": "作戰勝利3",
         "text": "還好……沒有拖太久……"
       },
       {
+        "voId": "chr_0021_whiten_combat_outbattle_hard_01",
         "title": "作戰勝利4",
         "text": "多虧了……大家……還好堅持下來了……"
       },
       {
+        "voId": "chr_0021_whiten_combat_battle_defeat_01",
         "title": "作戰失敗",
         "text": "下一次……下一次我會更加全力以赴的……不能就這樣結束……"
       },
       {
+        "voId": "chr_0021_whiten_mono_attack_last_01",
         "title": "重擊1",
         "text": "別亂跑！"
       },
       {
+        "voId": "chr_0021_whiten_mono_attack_last_02",
         "title": "重擊2",
         "text": "……這裡！"
       },
       {
+        "voId": "chr_0021_whiten_mono_skill_nor_01",
         "title": "戰技1",
         "text": "將聲波……凍結！"
       },
       {
+        "voId": "chr_0021_whiten_mono_skill_nor_02",
         "title": "戰技2",
         "text": "破碎……之聲！"
       },
       {
+        "voId": "chr_0021_whiten_mono_skill_nor_03",
         "title": "戰技3",
         "text": "哈啊……撕裂吧！"
       },
       {
+        "voId": "chr_0021_whiten_combat_skill_comb_ready_01",
         "title": "連攜技就緒1",
         "text": "總算……準備就緒了。"
       },
       {
+        "voId": "chr_0021_whiten_combat_skill_comb_ready_02",
         "title": "連攜技就緒2",
         "text": "讓你們久等了……"
       },
       {
+        "voId": "chr_0021_whiten_mono_skill_comb_release_01",
         "title": "連攜技1",
         "text": "唔……嘿咻！"
       },
       {
+        "voId": "chr_0021_whiten_mono_skill_comb_release_02",
         "title": "連攜技2",
         "text": "別急，這就來！"
       },
       {
+        "voId": "chr_0021_whiten_mono_attack_extra_01",
         "title": "處決1",
         "text": "瞄準……弱點！"
       },
       {
+        "voId": "chr_0021_whiten_mono_attack_extra_02",
         "title": "處決2",
         "text": "快點……倒下吧！"
       },
       {
+        "voId": "chr_0021_whiten_mono_skill_ultimate_01",
         "title": "終結技1",
         "text": "音爆……轟擊！"
       },
       {
+        "voId": "chr_0021_whiten_mono_skill_ultimate_02",
         "title": "終結技2",
         "text": "匯聚……釋放！"
       },
       {
+        "voId": "chr_0021_whiten_mono_skill_ultimate_03",
         "title": "終結技3",
         "text": "將聲音凝結！"
       }

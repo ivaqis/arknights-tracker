@@ -120,338 +120,422 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0004_pelica_chrbark_squad_01",
         "title": "Preparación de la operación 1",
         "text": "Todos los operadores están presentes. El equipo está listo para la misión."
       },
       {
+        "voId": "chr_0004_pelica_chrbark_squad_02",
         "title": "Preparación de la operación 2",
         "text": "El Equipo de Crisis de Endfield está listo para la acción."
       },
       {
+        "voId": "chr_0004_pelica_chrbark_join_01",
         "title": "Añadir al equipo 1",
         "text": "Se está transfiriendo la autoridad de mando en este momento, Endministrator."
       },
       {
+        "voId": "chr_0004_pelica_chrbark_join_02",
         "title": "Añadir al equipo 2",
         "text": "Guíanos en el siguiente paso, Endministrator."
       },
       {
+        "voId": "chr_0004_pelica_chrbark_weap_01",
         "title": "Cambiar de arma",
         "text": "Es momento de pensar en las mejores tácticas para manejar esta arma."
       },
       {
+        "voId": "chr_0004_pelica_chrbark_gear_01",
         "title": "Cambiar de equipamiento",
         "text": "El fruto del Complejo de Automatización Industrial."
       },
       {
+        "voId": "chr_0004_pelica_chrup_skill_01",
         "title": "Activación de la matriz de habilidades",
         "text": "Ahora solo necesito ajustar esto... para maximizar el botín de nuestras victorias."
       },
       {
+        "voId": "chr_0004_pelica_chrup_level_01",
         "title": "Viendo los registros de combate",
         "text": "Una vez luchamos sin rendirnos en ningún momento... porque nuestro deseo es presenciar tu regreso."
       },
       {
+        "voId": "chr_0004_pelica_chrup_promt01_01",
         "title": "Ascenso de operador 1",
         "text": "Se aprecia mucho tu aprobación, Endministrator. Seguiré esforzándome aún más."
       },
       {
+        "voId": "chr_0004_pelica_chrup_promt02_01",
         "title": "Ascenso de operador 2",
         "text": "Aunque soy algo joven e inexperta, tengo clara mi determinación. Cumpliré con mis deberes como Supervisora de Endfield Industries."
       },
       {
+        "voId": "chr_0004_pelica_chrup_promt03_01",
         "title": "Ascenso de operador 3",
         "text": "Una vez más has depositado tu confianza en mí, Endministrator... Estaré a la altura de tus expectativas."
       },
       {
+        "voId": "chr_0004_pelica_chrup_promt04_01",
         "title": "Ascenso de operador 4",
         "text": "Estoy bien. Escuchar tus palabras de aliento me hizo... sentir nostalgia por el pasado. Solía ser el único motivo para seguir. Ahora, me alegra liderar Endfield Industries y poder estar a tu lado."
       },
       {
+        "voId": "chr_0004_pelica_introduce_01",
         "title": "Operador reportándose para el deber",
         "text": "Siempre he creído que nos guiarás por el camino correcto una vez más. Bienvenido de nuevo a Endfield Industries, Endministrator."
       },
       {
+        "voId": "chr_0004_pelica_mono_switch_01",
         "title": "En espera 1",
         "text": "Preparada y lista para partir."
       },
       {
+        "voId": "chr_0004_pelica_mono_switch_02",
         "title": "En espera 2",
         "text": "Operadora Perlica en espera."
       },
       {
+        "voId": "chr_0004_pelica_sim_assign_work_01",
         "title": "Asignando a una instalación",
         "text": "Una asignación eficiente. Daré lo mejor de mí."
       },
       {
+        "voId": "chr_0004_pelica_sim_hello_lower_01",
         "title": "Saludo 1",
         "text": "¿Cómo te encuentras, Endministrator?"
       },
       {
+        "voId": "chr_0004_pelica_sim_hello_max_01",
         "title": "Saludo 2",
         "text": "No te exijas demasiado, Endministrator. Cuídate y descansa."
       },
       {
+        "voId": "chr_0004_pelica_sim_talk_lv01_01",
         "title": "Charla casual en la Dijiang 1",
         "text": "Desde tu despertar, la Dijiang se ha vuelto un lugar más animado con cada día que pasa... Y eso me llena de esperanza para el futuro, Endministrator."
       },
       {
+        "voId": "chr_0004_pelica_sim_talk_lv02_01",
         "title": "Charla casual en la Dijiang 2",
         "text": "Te ves mucho mejor, Endmin. No dudes en hablar conmigo si necesitas algo."
       },
       {
+        "voId": "chr_0004_pelica_sim_talk_lv02_02",
         "title": "Charla casual en la Dijiang 3",
         "text": "Tus necesidades son nuestra máxima prioridad, Endmin. Con mucho gusto dejaré de lado otras tareas para asegurarme de que se cumplan... o le pediré a Fiona que lo haga."
       },
       {
+        "voId": "chr_0004_pelica_sim_talk_max_01",
         "title": "Charla casual en la Dijiang 4",
         "text": "El Anillo Central siempre está así de ocupado. Es el símbolo de nuestras obligaciones con este mundo. Por más de un siglo, generaciones de Endfielders se han dedicado a revivir la Franja de la Civilización. Tal vez algún día la Dijiang pueda aterrizar y descansar al fin en el refugio que hemos construido."
       },
       {
+        "voId": "chr_0004_pelica_sim_talk_max_02",
         "title": "Charla casual en la Dijiang 5",
         "text": "Muchos de nuestros operadores no permanecen mucho tiempo en la Dijiang, especialmente los de élite. Son necesarios en la Franja de la Civilización, donde acecha el peligro, no en este refugio orbital. No importa, los conocerás muy pronto. Haré las presentaciones debidas cuando llegue el momento."
       },
       {
+        "voId": "chr_0004_pelica_sim_talk_max_03",
         "title": "Charla casual en la Dijiang 6",
         "text": "La última vez que tuve una conversación así, era una niña con apenas la mitad de mi estatura actual. Los tiempos han cambiado. La Dijiang recibió muchas modificaciones, y yo crecí... Pero tú, Endministrator... no has cambiado para nada."
       },
       {
+        "voId": "chr_0004_pelica_sim_gift_give_01",
         "title": "Ofreciendo regalos",
         "text": "Solicité un paquete de suministros en tu nombre, Endmin. Espero que te sea de ayuda. Hay veces en las que te exiges demasiado. Pero recuerda: está bien contar conmigo y con Endfield Industries."
       },
       {
+        "voId": "chr_0004_pelica_sim_gift_recv_01",
         "title": "Aceptando regalos",
         "text": "Te agradezco mucho esto, Endmin. Lo guardaré como un tesoro."
       },
       {
+        "voId": "chr_0004_pelica_mono_self_line01",
         "title": "Diálogo de confianza 1",
         "text": "Endmin, no faltes a tus exámenes médicos y evita trabajar demasiado. Y lo más importante, nunca abuses de tus Artes de Originio. Si otro operador te pide ayuda para reparar un Bot Delta, ¡solo dile que no!"
       },
       {
+        "voId": "chr_0004_pelica_mono_self_line02",
         "title": "Diálogo de confianza 2",
         "text": "Cuando era niña, exploré cada rincón de la Dijiang y le puse un nombre a cada cabina. Era un tiempo en que creía que nunca volvería a ver la superficie... Un tiempo en que sentía que la Dijiang era mi hogar. Pero para poder apoyarte mejor, dejé la nave y recorrí muchos lugares de Talos-II. Ahora, la Dijiang se siente más pequeña de lo que recordaba... pero para mí, sigue siendo un lugar capaz de contener todos mis recuerdos."
       },
       {
+        "voId": "chr_0004_pelica_mono_self_line03",
         "title": "Diálogo de confianza 3",
         "text": "Chen fue la primera operadora que recluté personalmente cuando me convertí en Supervisora de Endfield Industries. También es mi mejor amiga. La encontré por sorpresa durante un proyecto en conjunto con la A.C.H. Je, je. Ella siempre dice que yo solía tener una cara muy seria, y que decidió ayudar solo porque se preocupaba por mí. Quizá tenía razón. Era una Supervisora inexperta, y había tantas cosas que debía aprender. Apenas tenía tiempo para fijarme en las personas y cosas a mi alrededor. Su sonrisa y su personalidad sincera probablemente evitaron que tomara malas decisiones."
       },
       {
+        "voId": "chr_0004_pelica_mono_self_line04",
         "title": "Diálogo de confianza 4",
         "text": "No hay necesidad de preocuparse, Endmin. No tomes muy en serio las bromas de Chen sobre mí. Claro que tengo tiempo libre. ¿Qué hago en mis vacaciones? Mmm, principalmente leo... literatura y ciencia teórica, porque tienen relevancia para el trabajo que viene. ¿No cuenta como descanso si sigo haciendo cosas del trabajo? Bueno, entonces... Me gusta viajar por las tierras fronterizas, sola en mi motocicleta. Endmin... tú eres la única persona que lo sabe. Los otros operadores se preocuparían si supieran este secreto. Entiendo sus motivos, pero una parte de mí anhela oír el viento de este planeta."
       },
       {
+        "voId": "chr_0004_pelica_mono_self_line05",
         "title": "Diálogo de confianza 5",
         "text": "¿Aún no te acuestas, Endmin? Deberías irte a dormir temprano si sientes cansancio. Vi tu cara somnolienta hace un momento... He estado viendo esa misma cara adormilada por una década. En aquel entonces, visité el Sarcófago con otros niños, solo para verte hibernando en paz. Pero con el tiempo, fui la única que quedó. Solía visitarte a menudo... después de pasar las pruebas de operadores, después de convertirme en Supervisora... No te sientas mal por eso, Endmin. En realidad, tengo planeado contarte todo cuando recuperemos tus recuerdos."
       },
       {
+        "voId": "chr_0004_pelica_mono_chat_line01",
         "title": "Charla 1",
         "text": "Endfield Industries colabora con muchas organizaciones en esta tierra. Los Acordatorios, definitivamente. La C.G.C.T. es el mejor proveedor de logística y suministros modernos y, los S.T.U.T., un amigo confiable en la frontera. La A.C.H. siempre está al borde de un nuevo avance tecnológico, y compartimos libremente nuestros hallazgos científicos. Aliados así garantizan que podamos mantenernos firmes en este nuevo y cruel hogar."
       },
       {
+        "voId": "chr_0004_pelica_mono_chat_line02",
         "title": "Charla 2",
         "text": "¿Nunca has conocido a Fiona en persona? Ah... La condición de Fiona es algo... especial. Me dijo que disfruta estar en el aire, conectada con todos mediante nuestras comunicaciones de combate. A Fiona le preocupa que, si llegas a verla en persona... puedas empezar a tratarla de forma distinta."
       },
       {
+        "voId": "chr_0004_pelica_mono_chat_line03",
         "title": "Charla 3",
         "text": "¿Dices que parezco una maestra en combate? Tomé esa costumbre durante el entrenamiento. Dicen que los Leithanianos en la Era de Terra combinaban la música con su don innato para las Artes. Mi instructora en Artes también era una música talentosa. Mis aptitudes para el combate no eran especialmente destacadas, pero dominé las técnicas rápidamente al interpretar el flujo de las Artes como escritura musical y tempos."
       },
       {
+        "voId": "chr_0004_pelica_mono_chat_line04",
         "title": "Charla 4",
         "text": "La Aurora también es visible desde la Dijiang. Es la flor anómala que floreció en Talos-II. El Velo del Norte está envuelto en Éter, lo que hace que la Aurora parezca un muro que bloquea nuestro camino. Alguna vez existió una utopía para incontables almas al otro lado de ese muro... Aunque no queda nada más que devastación... y enemigos que ocupan las ruinas."
       },
       {
+        "voId": "chr_0004_pelica_mono_chat_line05",
         "title": "Charla 5",
         "text": "¿Qué proveedores deberíamos añadir a la Dijiang? ¿Alguna idea, Endmin? Oh, nada especial, solo otro informe rutinario de la Oficina Comercial. La Dijiang no tiene un área de descanso grande, y nuestra tripulación residente tampoco es tan numerosa... Los dispensadores automáticos funcionan bien, pero carecen de ese toque humano... ¿Qué tal una cafetería acogedora, Endmin? ¿Te tomarías una taza de café en tu descanso?"
       },
       {
+        "voId": "chr_0004_pelica_mono_about_line01",
         "title": "Tema: Su primer encuentro",
         "text": "Disculpa, Endministrator... Sé que es egoísta, pero preferiría no hablar del pasado por ahora. Solo espero que puedas encontrar esos recuerdos por tu cuenta. Esto no es una solicitud de la Supervisora de Endfield Industries... Es mía."
       },
       {
+        "voId": "chr_0004_pelica_mono_about_line02",
         "title": "Tema: Dijiang",
         "text": "Impresionante, ¿no es así? Imagina el Tecno protocolo como la Red de Originio, y la Dijiang sería el servidor maestro de la Protoplataforma. También es la encarnación de la Civilización terrana que cruzó la Puerta cósmica, así como de todos los eventos posteriores al cruce. La Dijiang ha resistido guerras y caos, y ahora navega por el mar del espacio exterior. Quizá llegue el día en que la humanidad se libere de las ataduras de la gravedad... y camine entre las estrellas, como lo soñaron nuestros antepasados."
       },
       {
+        "voId": "chr_0004_pelica_mono_about_line03",
         "title": "Tema: M3",
         "text": "Hubo un tiempo en que me refería a M3 como a una hermana mayor. Pero ella puso fin a eso después de que me convertí en operadora oficial de Endfield. La verdad, la sentía como una auténtica hermana. Amable, gentil, optimista y hábil en todo. Ya no la veo mucho en la Dijiang. Sé que está cumpliendo una misión propia... Y si es posible, espero que Endfield pueda compartir su carga."
       },
       {
+        "voId": "chr_0004_pelica_mono_about_line04",
         "title": "Tema: Talos-II y Terra",
         "text": "Pocas personas saben que este mundo distante, Talos-II, es en realidad de donde venimos todos. Y a pesar de saberlo, casi nadie puede renunciar a su nostalgia por Terra. Dejar Terra por Talos-II es como un bebé que deja su cuna suave y cómoda para volver al abrazo de su madre... Pero para mí fue lo contrario. Fue en Talos-II donde me uní a Endfield y conocí a Endministrator. Terra ya no es más que un símbolo de mi misión."
       },
       {
+        "voId": "chr_0004_pelica_mono_about_line05",
         "title": "Tema: La Directiva de Zeroth",
         "text": "No fui la única participante de la Directiva de Zeroth. Pero ninguno de nosotros conocía las misiones de los demás. En el pasado, siempre tenías todo preparado incluso antes de ser consciente de tu situación. Para este despertar, he ensayado innumerables veces la ejecución de la Directiva de Zeroth... Pero al reencontrarme contigo en persona, todas esas palabras fluyeron con naturalidad y facilidad."
       },
       {
+        "voId": "chr_0004_pelica_mono_about_line06",
         "title": "Tema: Complejo de Automatización Industrial",
         "text": "Endfield Industries ha enfocado sus últimos años en el Complejo de Automatización Industrial. Los objetivos del CAI están claros en su nombre, y sé que tienes amplia experiencia directa con él. Por supuesto, nuestra obsesión con el Tecno protocolo no se trata solo de eso. El Originio es información. Es la cristalización de toda idea efímera. Su forma final... nos permitirá “fabricar” y “construir” más que solo productos industriales."
       },
       {
+        "voId": "chr_0004_pelica_mono_about_line07",
         "title": "Tema: El Equipo de Crisis de Endfield",
         "text": "Tú fundaste el Equipo de Crisis, Endmin. Es un equipo operativo especial que lideraste en persona. El Equipo de Crisis fue un grupo de élite famoso en todo Talos-II. El liderazgo fue transferido más tarde al Fundador y al M3, pero su propósito y función no han cambiado. Cuando me convertí en Supervisora y asumí el liderazgo del equipo, sentí intensamente la presión de comandar a un grupo de héroes... así como su ardiente pasión al lanzarse al combate por un objetivo y un ideal desinteresados."
       },
       {
+        "voId": "chr_0004_pelica_mono_about_line08",
         "title": "Tema: Supervisora de Endfield Industries",
         "text": "Oí que M3 decía que Endfield no tenía una Supervisora en ese entonces. Endministrator lideraba toda la compañía, mientras que M3, el Fundador y nuestros operadores élite ofrecían su apoyo. A esta organización de toma de decisiones la llamábamos la Procedencia. La Procedencia gestionaba los tres grandes nexus y mantuvo a Endfield en funcionamiento hasta hoy... Endfield tuvo que cambiar mientras dormías, pero estos cambios nos mantuvieron en marcha... y así fue como pude estar a tu lado."
       },
       {
+        "voId": "chr_0004_pelica_explore_point_common_01",
         "title": "Recurso/Coleccionable detectado 1",
         "text": "Algo parece requerir un análisis más detallado..."
       },
       {
+        "voId": "chr_0004_pelica_explore_point_valub_01",
         "title": "Recurso/Coleccionable detectado 2",
         "text": "Parece que hay suministros valiosos cerca. Mantén los ojos abiertos."
       },
       {
+        "voId": "chr_0004_pelica_explore_find_locked_01",
         "title": "Zona inexplorada detectada",
         "text": "Otra zona no explorada por la humanidad."
       },
       {
+        "voId": "chr_0004_pelica_explore_find_danger_01",
         "title": "Enemigo poderoso descubierto",
         "text": "Mantente alerta. Esta amenaza hostil representa un peligro considerable."
       },
       {
+        "voId": "chr_0004_pelica_interact_mine_valub_01",
         "title": "Minería 1",
         "text": "Los minerales forman la base de la industria. Deberíamos reunir más."
       },
       {
+        "voId": "chr_0004_pelica_interact_mine_valub_echo2_01",
         "title": "Minería 2",
         "text": "¡Déjame ayudarte!"
       },
       {
+        "voId": "chr_0004_pelica_interact_treasure_valub_01",
         "title": "Abriendo una caja",
         "text": "Una adquisición impresionante."
       },
       {
+        "voId": "chr_0004_pelica_interact_etherium_01",
         "title": "Adquiriendo Aurileno",
         "text": "El Aurileno es un fragmento de un universo quebrado. Este viajó enormes distancias para llegar justo ante nosotros."
       },
       {
+        "voId": "chr_0004_pelica_interact_blight_break_01",
         "title": "Eliminar la Plaga",
         "text": "La Plaga ya no representa una amenaza para el Endfield actual."
       },
       {
+        "voId": "chr_0004_pelica_interact_rest_01",
         "title": "Descanso",
         "text": "Descanso y recuperación completados. Equipo, prepárense para continuar con las operaciones."
       },
       {
+        "voId": "chr_0004_pelica_combat_suppuse_using_01",
         "title": "Uso táctico 1",
         "text": "Reparaciones provisionales. Mantente alerta."
       },
       {
+        "voId": "chr_0004_pelica_combat_suppuse_getheal_01",
         "title": "Uso táctico 2",
         "text": "Condiciones estabilizadas."
       },
       {
+        "voId": "chr_0004_pelica_combat_remind_danger_01",
         "title": "Advertencia de peligro",
         "text": "¡Se aproxima un peligro desconocido!"
       },
       {
+        "voId": "chr_0004_pelica_combat_hurt_lowhp_01",
         "title": "Herida",
         "text": "Estoy bien... Hay que enfocarnos en el objetivo..."
       },
       {
+        "voId": "chr_0004_pelica_combat_dead_01",
         "title": "0 PV",
         "text": "Protégete... Endmin..."
       },
       {
+        "voId": "chr_0004_pelica_combat_remind_praise_01",
         "title": "Ánimo del equipo 1",
         "text": "Técnica sobresaliente. Impresionante."
       },
       {
+        "voId": "chr_0004_pelica_combat_remind_praise_02",
         "title": "Ánimo del equipo 2",
         "text": "¡Estamos unidos como uno solo!"
       },
       {
+        "voId": "chr_0004_pelica_combat_remind_praise_echo2_01",
         "title": "Respuesta al ánimo 1",
         "text": "Lo hicimos como equipo."
       },
       {
+        "voId": "chr_0004_pelica_combat_remind_praise_echo2_02",
         "title": "Respuesta al ánimo 2",
         "text": "Este es el poder de Endfield."
       },
       {
+        "voId": "chr_0004_pelica_combat_intobattle_01",
         "title": "Comienza el combate 1",
         "text": "Entrando en acción. Manténganse a salvo, equipo."
       },
       {
+        "voId": "chr_0004_pelica_combat_intobattle_echo2_01",
         "title": "Comienza el combate 2",
         "text": "Todas las variables dentro de lo estimado."
       },
       {
+        "voId": "chr_0004_pelica_combat_outbattle_nor_01",
         "title": "Victoria en el combate 1",
         "text": "Un resultado definitivo logrado mediante trabajo en equipo."
       },
       {
+        "voId": "chr_0004_pelica_combat_outbattle_nor_02",
         "title": "Victoria en el combate 2",
         "text": "Verifiquen y reporten su estado, equipo."
       },
       {
+        "voId": "chr_0004_pelica_combat_outbattle_nor_echo2_01",
         "title": "Victoria en el combate 3",
         "text": "La violencia nunca es nuestro objetivo. Sigamos adelante."
       },
       {
+        "voId": "chr_0004_pelica_combat_outbattle_hard_01",
         "title": "Victoria en el combate 4",
         "text": "Revisen todas las lesiones. Adopten formación defensiva y restauren la capacidad de combate."
       },
       {
+        "voId": "chr_0004_pelica_combat_battle_defeat_01",
         "title": "Derrota en el combate",
         "text": "No permitiremos que esto vuelva a ocurrir..."
       },
       {
+        "voId": "chr_0004_pelica_mono_attack_last_01",
         "title": "Golpe final 1",
         "text": "¡Concierto!"
       },
       {
+        "voId": "chr_0004_pelica_mono_attack_last_02",
         "title": "Golpe final 2",
         "text": "¡Secuencia!"
       },
       {
+        "voId": "chr_0004_pelica_mono_skill_nor_01",
         "title": "Habilidad de batalla 1",
         "text": "¡Objetivo fijado!"
       },
       {
+        "voId": "chr_0004_pelica_mono_skill_nor_02",
         "title": "Habilidad de batalla 2",
         "text": "¡Orden de ataque!"
       },
       {
+        "voId": "chr_0004_pelica_mono_skill_nor_03",
         "title": "Habilidad de batalla 3",
         "text": "¡Finalizar!"
       },
       {
+        "voId": "chr_0004_pelica_combat_skill_comb_ready_01",
         "title": "Habilidad de combo preparada 1",
         "text": "¡Unidad de las Artes activa!"
       },
       {
+        "voId": "chr_0004_pelica_combat_skill_comb_ready_02",
         "title": "Habilidad de combo preparada 2",
         "text": "¡Apoyo de Artes listo!"
       },
       {
+        "voId": "chr_0004_pelica_mono_skill_comb_release_01",
         "title": "Lanzando combo 1",
         "text": "¡Avancen!"
       },
       {
+        "voId": "chr_0004_pelica_mono_skill_comb_release_02",
         "title": "Lanzando combo 2",
         "text": "¡Es nuestra oportunidad!"
       },
       {
+        "voId": "chr_0004_pelica_mono_attack_extra_01",
         "title": "Remate 1",
         "text": "¡Ahora, fuga!"
       },
       {
+        "voId": "chr_0004_pelica_mono_attack_extra_02",
         "title": "Remate 2",
         "text": "¡Coda y final!"
       },
       {
+        "voId": "chr_0004_pelica_mono_skill_ultimate_01",
         "title": "Habilidad máxima 1",
         "text": "¡Iniciar aniquilación AL-7!"
       },
       {
+        "voId": "chr_0004_pelica_mono_skill_ultimate_02",
         "title": "Habilidad máxima 2",
         "text": "Objetivo fijado. ¡Fuego!"
       },
       {
+        "voId": "chr_0004_pelica_mono_skill_ultimate_03",
         "title": "Habilidad máxima 3",
         "text": "¡Esterilicen esta zona!"
       }

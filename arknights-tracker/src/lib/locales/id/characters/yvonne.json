@@ -135,326 +135,407 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0017_yvonne_chrbark_squad_01",
         "title": "Persiapan Operasi 1",
         "text": "Jadi, kita mau bersenang-senang di mana hari ini, Endmin?"
       },
       {
+        "voId": "chr_0017_yvonne_chrbark_squad_02",
         "title": "Persiapan Operasi 2",
         "text": "Sinkronisasi data selesai. Aku siap berangkat kapan pun!"
       },
       {
+        "voId": "chr_0017_yvonne_chrbark_join_01",
         "title": "Menambahkan ke Tim 1",
         "text": "Akhirnya kau memanggilku, ya? Hehe, pasti kau sedang terdesak."
       },
       {
+        "voId": "chr_0017_yvonne_chrbark_join_02",
         "title": "Menambahkan ke Tim 2",
         "text": "Aku siap. Kalau peralatanmu bermasalah, biar kutangani."
       },
       {
+        "voId": "chr_0017_yvonne_chrbark_weap_01",
         "title": "Berganti Senjata",
         "text": "Meriam tangan ini rasanya pas. Hmm .... Desainnya masih perlu diperbaiki. Mungkin akan kumodifikasi saja jadi senjata spesial Yvonne!"
       },
       {
+        "voId": "chr_0017_yvonne_chrbark_gear_01",
         "title": "Berganti Gear",
         "text": "Apa aku boleh tambahkan lapisan baru di gear-ku? Skema warnanya tak cocok dengan rambutku."
       },
       {
+        "voId": "chr_0017_yvonne_chrup_skill_01",
         "title": "Aktivasi Matriks Kemampuan",
         "text": "Terlalu gampang! Beri aku tantangan yang benar, dong!"
       },
       {
+        "voId": "chr_0017_yvonne_chrup_level_01",
         "title": "Menonton Rekaman Pertarungan",
         "text": "Semuanya kupercepat. Aku belajar dengan cepat, jadi sama saja, kok."
       },
       {
+        "voId": "chr_0017_yvonne_chrup_promt01_01",
         "title": "Promosi Operator 1",
         "text": "Aku dipromosikan? Woow, ternyata kau pandai melihat potensi, Endmin!"
       },
       {
+        "voId": "chr_0017_yvonne_chrup_promt02_01",
         "title": "Promosi Operator 2",
         "text": "Jadi, promosi ini artinya ... aku akan dapat lab yang lebih besar?"
       },
       {
+        "voId": "chr_0017_yvonne_chrup_promt03_01",
         "title": "Promosi Operator 3",
         "text": "Bertarung sungguhan sangatlah berbeda dari mempelajari video pertarungan .... Aku sudah meningkat begitu *banyak* dengan bertahan hidup dalam semua perjalanan di daerah perbatasan itu. Benar, ‘kan?"
       },
       {
+        "voId": "chr_0017_yvonne_chrup_promt04_01",
         "title": "Promosi Operator 4",
         "text": "Asisten? TIDAK! Aku tak butuh! Tink-a-Bella bisa tangani semuanya! Penataan data dan pembersihan lab hanyalah sebagian kecil dari fitur dasarnya! Ditambah lagi, dia tak akan pernah mengeluhkan jadwal harianku."
       },
       {
+        "voId": "chr_0017_yvonne_introduce_01",
         "title": "Operator Siap Bertugas",
         "text": "Hai, Endmin. Kita berjumpa lagi. Panggil saja Yvonne. Sudah lama sekali aku tak keluar. Senang berbisnis denganmu!"
       },
       {
+        "voId": "chr_0017_yvonne_mono_switch_01",
         "title": "Siaga 1",
         "text": "Jaga sikapmu, Frost-e-Bytee! Kita akan berjalan-jalan dengan Endmin!"
       },
       {
+        "voId": "chr_0017_yvonne_mono_switch_02",
         "title": "Siaga 2",
         "text": "Sebelah sini, Endmin! Oh, aku bawa sedikit barang ...."
       },
       {
+        "voId": "chr_0017_yvonne_sim_assign_work_01",
         "title": "Menugaskan ke Fasilitas",
         "text": "Oke, oke. Aku sudah paham sekali tentang ini, jadi kau santai-santai saja!"
       },
       {
+        "voId": "chr_0017_yvonne_sim_hello_lower_01",
         "title": "Menyapa 1",
         "text": "Endmin! Ruang pengujian peralatannya untukku, ya. Trims banyak!"
       },
       {
+        "voId": "chr_0017_yvonne_sim_hello_max_01",
         "title": "Menyapa 2",
         "text": "Edisi terbaru MARTHE Monthly baru saja sampai. Mau baca bersama?"
       },
       {
+        "voId": "chr_0017_yvonne_sim_talk_lv01_01",
         "title": "Obrolan Santai di Dijiang 1",
         "text": "*Berdesah* ... Setiap kali mempelajari Area Industri Cerdas, aku jadi merasa bahwa fasilitas itu adalah—kesempurnaan sejati! Produksi yang diarahkan PAC bukan lagi tugas yang kaku dan berulang-ulang ... tapi sistem yang hidup dan bernapas yang berisi proses-proses yang saling terkait! Cerdik sekali! Endmin, aku harus mencobanya. Boleh, ya, kumohon?"
       },
       {
+        "voId": "chr_0017_yvonne_sim_talk_lv02_01",
         "title": "Obrolan Santai di Dijiang 2",
         "text": "Jujur saja, Endmin. Aku suka gayamu, tapi apa kau tak merasa sudah saatnya memperbarui isi lemari? Ayo, kau butuh sesuatu yang lebih mencolok dan cerah! Gaya busana barumu pasti jadi tren. Di-ja-min!"
       },
       {
+        "voId": "chr_0017_yvonne_sim_talk_lv02_02",
         "title": "Obrolan Santai di Dijiang 3",
         "text": "Perlica melarangku bawa Tweety-Bomb karena dianggap berbahaya. Tapi, aku tak bisa hidup tanpanya! *Berdesah*. Akhirnya, aku berkompromi dan mencopot modul penghancurannya sebelum naik ke pesawat ini."
       },
       {
+        "voId": "chr_0017_yvonne_sim_talk_max_01",
         "title": "Obrolan Santai di Dijiang 4",
         "text": "Aku berencana berlibur ke La Fantoma. Aku rindu pantai dan angin lautnya .... Mau ikut, Endmin? Kita juga bisa lihat rekayasa pesisir terbaru mereka. Katanya sudah diberi lapisan tahan Hawar baru yang baru saja mereka kembangkan."
       },
       {
+        "voId": "chr_0017_yvonne_sim_talk_max_02",
         "title": "Obrolan Santai di Dijiang 5",
         "text": "Rasanya kita belum pernah foto bersama, Endmin? Mau selfie dulu? Akan kutambahkan ke koleksi Momen Tahunan Yvonne. Kalau hasilnya tak imut, itu salah pencahayaan Dijiang yang jelek, bukan keterampilanku!"
       },
       {
+        "voId": "chr_0017_yvonne_sim_talk_max_03",
         "title": "Obrolan Santai di Dijiang 6",
         "text": "Sepertinya selera musik kita sama, Endmin! Artinya kau bisa mampir ke labku dan mendengarkan piringan hitam terbaruku kalau sudah tiba. Lagi pula, musik yang bagus akan terasa lebih bagus kalau didengarkan bersama orang yang tepat!"
       },
       {
+        "voId": "chr_0017_yvonne_sim_gift_give_01",
         "title": "Menawarkan Hadiah",
         "text": "Aku punya sesuatu untukmu. Bukalah kalau sudah sampai rumah. Heh. Kau pasti suka, karena banyak “profesional” yang sudah kutanyai untuk memastikannya!"
       },
       {
+        "voId": "chr_0017_yvonne_sim_gift_recv_01",
         "title": "Menerima Hadiah",
         "text": "Aihh, trims! Jangan khawatir, meskipun agak aneh, akan tetap kujaga selamanya ... karena ini pemberianmu!"
       },
       {
+        "voId": "chr_0017_yvonne_mono_self_line01",
         "title": "Dialog Kepercayaan 1",
         "text": "Tujuanku bukan memaksimalkan performa mesin. Bukan. Tujuanku adalah memberikan pengalaman yang bebas panik dan mudah dimengerti, bahkan untuk orang dungu sekalipun. Kalau mereka bisa tertawa lepas, itu kuanggap bonus saja. Peralatan kan memang seharusnya membuat hidup lebih mudah, bukan lebih sulit."
       },
       {
+        "voId": "chr_0017_yvonne_mono_self_line02",
         "title": "Dialog Kepercayaan 2",
         "text": "Endmin, apa aku boleh pinjam Originium Arts-mu? Kontrol yang presisi atas sirkuit Originium pasti akan memberiku banyak opsi desain. Misalnya ... aku sudah lama ingin pasang modul pemanas pada si dingin Frost-e-Bytee. Oh, kedengarannya keren! Sebentar. Kalau bisa memanaskan, namanya bukan si dingin Frost-e lagi, dong ...."
       },
       {
+        "voId": "chr_0017_yvonne_mono_self_line03",
         "title": "Dialog Kepercayaan 3",
         "text": "Usiaku masih tiga tahun saat pertama kali membaca tentangmu di beberapa buku sains populer. Di sana tertulis bahwa kau seorang legenda dengan banyak sekali tanggung jawab. Tapi, ternyata kau ... imut, ya? *Tertawa kecil* Oh, kau mungkin tak ingin tahu bagaimana mereka menggambarkanmu di salinan tak berlisensinya. Lebih baik kau tetap tak tahu ...."
       },
       {
+        "voId": "chr_0017_yvonne_mono_self_line04",
         "title": "Dialog Kepercayaan 4",
         "text": "Saat aku pertama kali mengambil alih proyek Baby Bot, prototipenya besar sekali! Mereka bahkan tak bisa memasukkannya ke hanggar kendaraan! Mungkin UWST butuh rig industri berat beroda untuk menetralkan gumpalan Hawar besar. Tapi, bagaimana dengan orang-orang yang harus berhadapan dengan Hawar yang masuk ke rumah mereka? Menunggu saja dan berdoa sampai ada rig raksasa dari UWST datang? Yang benar saja. Harus ada yang melakukan studi untuk membuat miniaturnya. Jadi, kuhabiskan waktu berbulan-bulan di Taman Sains untuk membuatnya .... Kau bisa lihat sendiri hasilnya. Peristiwa yang terjadi setelahnya membuktikan bahwa keputusanku sangat bijaksana!"
       },
       {
+        "voId": "chr_0017_yvonne_mono_self_line05",
         "title": "Dialog Kepercayaan 5",
         "text": "Musik yang luar biasa, konser yang asyik, mode yang anggun, matahari terbit dan terbenam yang indah di cakrawala Talos—aku sadar bahwa semua yang kusukai sudah berada di ambang kehancuran. Karena itulah aku menjadi Endfielder. Aku ingin berbuat sesuatu dan memastikan bahwa keindahan dunia kita yang rapuh ini akan tetap bertahan. Maksudku, aku belum puas bersenang-senang, jadi tak akan kubiarkan dunia ini berakhir selagi masih ada aku!"
       },
       {
+        "voId": "chr_0017_yvonne_mono_chat_line01",
         "title": "Obrolan 1",
         "text": "Menurutku, kota TGCC di Sentrapolis ini cocok untuk menikmati hidup berkualitas. Tapi, kalau untuk bekerja? JELAS TIDAK! Praktik Korporat itu mengharuskan karyawan untuk mengisi presensi enam kali sehari. Bisa kaubayangkan?!"
       },
       {
+        "voId": "chr_0017_yvonne_mono_chat_line02",
         "title": "Obrolan 2",
         "text": "Nah, yang ini dari Witching Hour. Aku SUKA SEKALI gayanya. Elemen desainnya berasal dari berbagai hal. Termasuk juga tekstur dan serat karapas Aggelos! Bahaya memang jauh lebih ... *menggiurkan*. Kau setuju, Endmin?"
       },
       {
+        "voId": "chr_0017_yvonne_mono_chat_line03",
         "title": "Obrolan 3",
         "text": "Yvonne adalah nama khas Gaul. Ayah pernah bilang bahwa kami mewarisi sesuatu yang hebat dan setiap anggota keluarga bangga akan hal itu. Tapi, aku tak sepenuhnya setuju. Terra sudah terlalu jauh, dan kekaisaran kuno itu sudah lama hilang. Apa pentingnya silsilah atau garis keturunan? Lalu, ada juga orang bernama Corsi-Sesuatu le First? Memangnya dia benar-benar hebat?"
       },
       {
+        "voId": "chr_0017_yvonne_mono_chat_line04",
         "title": "Obrolan 4",
         "text": "Ah, ini ...? Yah ... aku baru mengganti konektor tungku termalnya di lab. Kalau ada kompatibilitas dengan alat pemasak mie instan, itu *kebetulan* saja. Ini v&v teknis sungguhan. Jangan melihatku seakan-akan aku ini pemalas .... Oh, baiklah! Kau boleh pakai juga .... Lalu ... kau tak akan bilang kepada Perlica tentang ini, ‘kan?"
       },
       {
+        "voId": "chr_0017_yvonne_mono_chat_line05",
         "title": "Obrolan 5",
         "text": "Aku pernah magang di TGCC, HAS, dan UWST. Tapi, Divisi SDM Endfield memberiku tawaran yang tak bisa kutolak: Akses tanpa batas ke bank data Endfield tentang Ætherside! Mereka bahkan menyoroti baris ini: “Level otoritas akses setara dengan milik Endministrator.”"
       },
       {
+        "voId": "chr_0017_yvonne_mono_about_line01",
         "title": "Topik: Ætherside",
         "text": "Kita nyaris tak tahu apa pun tentang Ætherside. Mungkin itu tempat yang benar-benar gelap ... atau dunia yang benar-benar kacau. Sampai saat ini, hanya fenomena Hawarlah yang bisa kita amati. Semua fenomena itu muncul dalam berbagai warna aneh—seakan tak terpengaruh oleh hukum konvensional yang mengatur spektrum optik. Sejujurnya, setelah menghabiskan banyak waktu mempelajarinya ... aku jadi merasa bahwa fenomena itu ternyata cukup ... memikat."
       },
       {
+        "voId": "chr_0017_yvonne_mono_about_line02",
         "title": "Topik: Kota-Kota TGCC",
         "text": "Aku mengunjungi beberapa kota TGCC setiap tahun. Aku mendapatkan material dan peralatan di Alloycarrot. Aku maraton nonton film di Festival Film Wrankwood Baru. Tapi, kalau disuruh memilih kota favorit, sudah pasti Kjersch. Kaget, ya? Aku suka saljunya, langitnya yang luas, dan ketenangannya."
       },
       {
+        "voId": "chr_0017_yvonne_mono_about_line03",
         "title": "Topik: Budaya Populer",
         "text": "Semasa remaja, kakek-nenekku suka mendengarkan musik Retro Terra. Yang sedang TREN saat ini adalah Neo-Talos. Aku SUKA lagu yang berjudul STEREO! Kami orang Talos, lahir dan besar di sana—tentu saja kami akan merilis lagu-lagu yang benar-benar mencerminkan Talos-II."
       },
       {
+        "voId": "chr_0017_yvonne_mono_about_line04",
         "title": "Topik: Masa kecil",
         "text": "Saat aku masih kecil, orang tuaku sangat sibuk dan tak ada orang lain yang menemaniku. Jadi, mereka memberiku seekor fowlbeast sebagai teman bermain. Dia berisik, pemarah, dan selalu mengotori kamarku ... tapi aku sangat menyayangi makhluk itu. Kau mungkin sudah menduga bahwa makhluk itulah inspirasiku untuk Tweety-Bomb. Meskipun Tweety-Bomb tak terlalu berisik, sifat pemarahnya sama persis dengan makhluk berbulu yang lucu itu."
       },
       {
+        "voId": "chr_0017_yvonne_mono_about_line05",
         "title": "Topik: Lembah IV",
         "text": "Saat pertama kali tiba tiga tahun lalu, aku sebenarnya tak pernah berniat tinggal di Lembah IV. Tapi, Profesor Crowe menunjukkan sejumlah pembacaan data celah dari Lokasi Uji Coba Æther—aku pun langsung terpikat! Sayang sekali, setelah itu kami malah selalu saja berbeda pendapat. Penelitiannya gagal total. Si tua Crowe tak bisa mengalahkanku, jadi dia malah mengirimku ke Andre. Coba tebak? Proyekku mulai membuahkan hasil yang nyata dengan dukungan teknologi Endfield yang hebat itu! Aku mengerjakan makalah tanpa henti selama tiga tahun berturut-turut! Oh, Lembah IV memang zona keberuntunganku."
       },
       {
+        "voId": "chr_0017_yvonne_explore_point_common_01",
         "title": "Sumber Daya/Barang Koleksi Terdeteksi 1",
         "text": "Ohhhh! Aku harus membawanya untuk dipelajari."
       },
       {
+        "voId": "chr_0017_yvonne_explore_point_valub_01",
         "title": "Sumber Daya/Barang Koleksi Terdeteksi 2",
         "text": "Ssst. Kuberi tahu rahasia, ya. Barang di sana itu terbuat dari bahan keren!"
       },
       {
+        "voId": "chr_0017_yvonne_explore_find_locked_01",
         "title": "Area yang Belum Dijelajahi Terdeteksi",
         "text": "Belum pernah ke tempat itu. Ayo kita periksa lebih dekat."
       },
       {
+        "voId": "chr_0017_yvonne_explore_find_danger_01",
         "title": "Musuh Kuat Ditemukan",
         "text": "Tweety-Bomb kelihatannya agak gugup. Monsternya mungkin besar dan berbahaya."
       },
       {
+        "voId": "chr_0017_yvonne_interact_mine_valub_01",
         "title": "Penambangan 1",
         "text": "Mestinya pistolku ini kulengkapi dengan modul tambang khusus."
       },
       {
+        "voId": "chr_0017_yvonne_interact_mine_valub_echo2_01",
         "title": "Penambangan 2",
         "text": "Akan kubantu! Kebetulan, aku ahli pembongkaran!"
       },
       {
+        "voId": "chr_0017_yvonne_interact_treasure_valub_01",
         "title": "Membuka Kerat",
         "text": "Wow, barang berkilau yang cantik sekali."
       },
       {
+        "voId": "chr_0017_yvonne_interact_etherium_01",
         "title": "Mendapatkan Aurylene",
         "text": "Zat cair yang berkilauan. Aku sudah lama ingin mengecat kukuku dengan yang seperti itu."
       },
       {
+        "voId": "chr_0017_yvonne_interact_blight_break_01",
         "title": "Menyingkirkan Hawar",
         "text": "Netralisasi mutlak! Bagaimana menurutmu?"
       },
       {
+        "voId": "chr_0017_yvonne_interact_rest_01",
         "title": "Istirahat",
         "text": "Fyuh. Dari tadi aku ingin istirahat. Rambut liar ini perlu dijinakkan ...."
       },
       {
+        "voId": "chr_0017_yvonne_combat_suppuse_using_01",
         "title": "Penggunaan Taktis 1",
         "text": "Jangan panik. Coba ini."
       },
       {
+        "voId": "chr_0017_yvonne_combat_suppuse_getheal_01",
         "title": "Penggunaan Taktis 2",
         "text": "Ahhh .... Rasanya jauh lebih mendingan!"
       },
       {
+        "voId": "chr_0017_yvonne_combat_remind_danger_01",
         "title": "Peringatan Bahaya",
         "text": "Menghindar! Biar kulindungi!"
       },
       {
+        "voId": "chr_0017_yvonne_combat_hurt_lowhp_01",
         "title": "Cedera",
         "text": "Hngh .... Sakit .... Aku kena telak ...."
       },
       {
+        "voId": "chr_0017_yvonne_combat_dead_01",
         "title": "0 HP",
         "text": "Sial .... Aku pamit, ya ...."
       },
       {
+        "voId": "chr_0017_yvonne_combat_remind_praise_01",
         "title": "Penyemangat Tim 1",
         "text": "Spektakuler!"
       },
       {
+        "voId": "chr_0017_yvonne_combat_remind_praise_02",
         "title": "Penyemangat Tim 2",
         "text": "Kalian keren sekali, Teman-teman!"
       },
       {
+        "voId": "chr_0017_yvonne_combat_remind_praise_echo2_01",
         "title": "Respons Penyemangat 1",
         "text": "Uh-huh. Hebat kan memang gayaku!"
       },
       {
+        "voId": "chr_0017_yvonne_combat_remind_praise_echo2_02",
         "title": "Respons Penyemangat 2",
         "text": "Kerja sama yang indah."
       },
       {
+        "voId": "chr_0017_yvonne_combat_intobattle_01",
         "title": "Mulai Pertarungan 1",
         "text": "Semua peralatan siap."
       },
       {
+        "voId": "chr_0017_yvonne_combat_intobattle_echo2_01",
         "title": "Mulai Pertarungan 2",
         "text": "Tembakan bantuan sudah siap!"
       },
       {
+        "voId": "chr_0017_yvonne_combat_outbattle_nor_01",
         "title": "Menang Pertarungan 1",
         "text": "Kita menang! Saatnya selfie."
       },
       {
+        "voId": "chr_0017_yvonne_combat_outbattle_nor_02",
         "title": "Menang Pertarungan 2",
         "text": "Asal tahu saja, aku juga ahli bertarung, lho."
       },
       {
+        "voId": "chr_0017_yvonne_combat_outbattle_nor_echo2_01",
         "title": "Menang Pertarungan 3",
         "text": "Hmph. Keberhasilan ini harus dirayakan!"
       },
       {
+        "voId": "chr_0017_yvonne_combat_outbattle_hard_01",
         "title": "Menang Pertarungan 4",
         "text": "Pertarungan sulit ditebak, bahkan oleh Tink-a-Bella sekalipun .... TAPI, kita pasti bisa lebih baik lagi."
       },
       {
+        "voId": "chr_0017_yvonne_combat_battle_defeat_01",
         "title": "Kalah Bertarung",
         "text": "Hawar sialan! Kunaikkan output Frost-e-Bytee sampai 5.000 persen! Coba lihat apa mereka masih bisa tahan!"
       },
       {
+        "voId": "chr_0017_yvonne_mono_attack_last_01",
         "title": "Final Strike 1",
         "text": "Tembakan kuat!"
       },
       {
+        "voId": "chr_0017_yvonne_mono_attack_last_02",
         "title": "Final Strike 2",
         "text": "Satu tembakan lagi!"
       },
       {
+        "voId": "chr_0017_yvonne_mono_skill_nor_01",
         "title": "Skill Tarung 1",
         "text": "Rasakan dinginnya!"
       },
       {
+        "voId": "chr_0017_yvonne_mono_skill_nor_02",
         "title": "Skill Tarung 2",
         "text": "Meredalah!"
       },
       {
+        "voId": "chr_0017_yvonne_mono_skill_nor_03",
         "title": "Skill Tarung 3",
         "text": "Membekulah!"
       },
       {
+        "voId": "chr_0017_yvonne_combat_skill_comb_ready_01",
         "title": "Skill Kombo Siap 1",
         "text": "Siap tembak!"
       },
       {
+        "voId": "chr_0017_yvonne_combat_skill_comb_ready_02",
         "title": "Skill Kombo Siap 2",
         "text": "Energi sudah penuh."
       },
       {
+        "voId": "chr_0017_yvonne_mono_skill_comb_release_01",
         "title": "Penggunaan Kombo 1",
         "text": "Ayo! Frost-e!"
       },
       {
+        "voId": "chr_0017_yvonne_mono_skill_comb_release_02",
         "title": "Penggunaan Kombo 2",
         "text": "Ayo dingin-dinginan!"
       },
       {
+        "voId": "chr_0017_yvonne_mono_attack_extra_01",
         "title": "Penuntas 1",
         "text": "DUAAR!"
       },
       {
+        "voId": "chr_0017_yvonne_mono_attack_extra_02",
         "title": "Penuntas 2",
         "text": "Tembakan sempurrrna!"
       },
       {
+        "voId": "chr_0017_yvonne_mono_skill_ultimate_01",
         "title": "Ultimate 1",
         "text": "Ayo menari!"
       },
       {
+        "voId": "chr_0017_yvonne_mono_skill_ultimate_02",
         "title": "Ultimate 2",
         "text": "Gairah terisi penuh!"
       },
       {
+        "voId": "chr_0017_yvonne_mono_skill_ultimate_03",
         "title": "Ultimate 3",
         "text": "Kembang api untukmu!"
       }

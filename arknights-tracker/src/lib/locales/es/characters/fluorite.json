@@ -125,322 +125,402 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0022_bounda_chrbark_squad_01",
         "title": "Preparación de la operación 1",
         "text": "Oh, ¿estamos listos para jugar?"
       },
       {
+        "voId": "chr_0022_bounda_chrbark_squad_02",
         "title": "Preparación de la operación 2",
         "text": "Esperen, ¿y si alguien no está listo?"
       },
       {
+        "voId": "chr_0022_bounda_chrbark_join_01",
         "title": "Añadir al equipo 1",
         "text": "Paz y sonrisas, damas y caballeros."
       },
       {
+        "voId": "chr_0022_bounda_chrbark_join_02",
         "title": "Añadir al equipo 2",
         "text": "Vaya, parece que soy un buen partido."
       },
       {
+        "voId": "chr_0022_bounda_chrbark_weap_01",
         "title": "Cambiar de arma",
         "text": "Nada mal... ¿Te molesta si la modifico un poco?"
       },
       {
+        "voId": "chr_0022_bounda_chrbark_gear_01",
         "title": "Cambiar de equipamiento",
         "text": "Cuanto más sofisticado es el equipo, más complicaciones hay, ¿no?"
       },
       {
+        "voId": "chr_0022_bounda_chrup_skill_01",
         "title": "Activación de la matriz de habilidades",
         "text": "¿Nadie quiere entrenar conmigo? Qué lástima."
       },
       {
+        "voId": "chr_0022_bounda_chrup_level_01",
         "title": "Viendo los registros de combate",
         "text": "Tantos registros de combate... Endfield sin duda cumple con la parte de “Industrias”."
       },
       {
+        "voId": "chr_0022_bounda_chrup_promt01_01",
         "title": "Ascenso de operador 1",
         "text": "Parece que el verdadero trabajo apenas esta empezando."
       },
       {
+        "voId": "chr_0022_bounda_chrup_promt02_01",
         "title": "Ascenso de operador 2",
         "text": "Es un verdadero honor... pero supongo que eso significa más horas en misiones de campo, ¿no?"
       },
       {
+        "voId": "chr_0022_bounda_chrup_promt03_01",
         "title": "Ascenso de operador 3",
         "text": "Quizás la próxima vez podrías incluir una medalla. Nunca he tenido una."
       },
       {
+        "voId": "chr_0022_bounda_chrup_promt04_01",
         "title": "Ascenso de operador 4",
         "text": "Si los Linderos de la Franja forman parte del “mundo mejor” que intentamos construir, entonces nos queda mucho trabajo por delante, ¿no crees?"
       },
       {
+        "voId": "chr_0022_bounda_introduce_01",
         "title": "Operador reportándose para el deber",
         "text": "Op Z7, guerrillera, Fluorite. ¿Tienes algo que decir? ¿No? ¿Qué tal si damos por terminado el día?"
       },
       {
+        "voId": "chr_0022_bounda_mono_switch_01",
         "title": "En espera 1",
         "text": "¿A quién le toca la mala suerte esta vez?"
       },
       {
+        "voId": "chr_0022_bounda_mono_switch_02",
         "title": "En espera 2",
         "text": "¿Distraerlos? ¿Inhabilitarlos? ¿O... simplemente destruirlos?"
       },
       {
+        "voId": "chr_0022_bounda_sim_assign_work_01",
         "title": "Asignando a una instalación",
         "text": "Relájate; haré bien el trabajo."
       },
       {
+        "voId": "chr_0022_bounda_sim_hello_lower_01",
         "title": "Saludo 1",
         "text": "Día ajetreado, ¿eh, gran héroe?"
       },
       {
+        "voId": "chr_0022_bounda_sim_hello_max_01",
         "title": "Saludo 2",
         "text": "¿Cuándo fue la última vez que descansaste de verdad?"
       },
       {
+        "voId": "chr_0022_bounda_sim_talk_lv01_01",
         "title": "Charla casual en la Dijiang 1",
         "text": "Vaya... esto sí que es nuevo. ¿No tengo tareas para hoy?"
       },
       {
+        "voId": "chr_0022_bounda_sim_talk_lv02_01",
         "title": "Charla casual en la Dijiang 2",
         "text": "¿Akekuri acaba de entrar al salón de entrenamiento, sonriendo... con una espada? Será mejor mantenerme fuera de su vista un rato más..."
       },
       {
+        "voId": "chr_0022_bounda_sim_talk_lv02_02",
         "title": "Charla casual en la Dijiang 3",
         "text": "La primera vez que tomé una pistola, ni siquiera sabía cómo abrir la recámara. Pero con todos esos tipos atacándome, no es como que tuviera muchas opciones. La verdad, este entrenamiento es pan comido comparado con el caos que había en la frontera."
       },
       {
+        "voId": "chr_0022_bounda_sim_talk_max_01",
         "title": "Charla casual en la Dijiang 4",
         "text": "De pura suerte acabamos en el mismo equipo; de lo contrario, tendríamos el doble de problemas. Pero no te preocupes, yo los mantendré bajo control."
       },
       {
+        "voId": "chr_0022_bounda_sim_talk_max_02",
         "title": "Charla casual en la Dijiang 5",
         "text": "Cuando éramos niños, dormíamos todo el día sobre las bestias de carga, tomando sol para no sentir hambre... No es que me queje de los beneficios; solo creo que sería una pena no tomar un poco de sol a esta altitud."
       },
       {
+        "voId": "chr_0022_bounda_sim_talk_max_03",
         "title": "Charla casual en la Dijiang 6",
         "text": "Eres como la supervisora Perlica... De verdad no puedo odiarte. A los peces gordos de la frontera les encanta aferrarse a su estatus y su orgullo, pero la verdad, la gente sigue a un verdadero líder, con o sin todo eso."
       },
       {
+        "voId": "chr_0022_bounda_sim_gift_give_01",
         "title": "Ofreciendo regalos",
         "text": "Toma, un pequeño artefacto para ti. Relájate; nada saldrá de ahí."
       },
       {
+        "voId": "chr_0022_bounda_sim_gift_recv_01",
         "title": "Aceptando regalos",
         "text": "Mmm... un “colega” mío aceptó un regalo una vez y terminó asumiendo la culpa... ¿Por qué sacudes tanto la cabeza?"
       },
       {
+        "voId": "chr_0022_bounda_mono_self_line01",
         "title": "Diálogo de confianza 1",
         "text": "¿Habilidades de negociación? Por favor, no halagues a esos jóvenes rufianes de barrio. Ladran fuerte, pero cuando su jefe agita el plato, regresan trotando. Son solo herramientas... sin carácter ni plan. Claro que provocan desastres, pero ¿la verdadera decadencia? Son los que poseen el poder y los recursos, sacándonos hasta la última gota."
       },
       {
+        "voId": "chr_0022_bounda_mono_self_line02",
         "title": "Diálogo de confianza 2",
         "text": "Tuve algunos problemas antes de unirme. Akekuri me sacó del apuro. Su escuadrón estaba ocupado salvando el pueblo y echando a esos Rompesuelos. ¿Y los lugareños? Estaban demasiado ocupados mirando los suministros de Endfield como buitres... Ahora, dime, ¿tú qué habrías hecho?"
       },
       {
+        "voId": "chr_0022_bounda_mono_self_line03",
         "title": "Diálogo de confianza 3",
         "text": "Tengo seis tíos, ocho tías y veintidós hermanos... Sí, somos muy parecidos a los Cautuses. No todos éramos familia; solo gente que huyó conmigo y con mi mamá. Algunos se unieron después, otros desaparecieron quién sabe cuándo. Pero nos mantuvimos unidos, aunque fuera solo por un tiempo. Esa era suficiente familia para mí."
       },
       {
+        "voId": "chr_0022_bounda_mono_self_line04",
         "title": "Diálogo de confianza 4",
         "text": "Algunos olvidan que tenemos cuatro extremidades, no solo dos para arrastrarnos. Si te encorvas lo suficiente, dejas de parecer una persona. La frontera está llena de gente así. ¿Pero y si tienes el valor de alzar la mirada? Entonces quizá tengas una oportunidad de algo mejor."
       },
       {
+        "voId": "chr_0022_bounda_mono_self_line05",
         "title": "Diálogo de confianza 5",
         "text": "Toma esta carta. Quémala en las tierras salvajes si no regreso. Puedes leerla si quieres, solo son unas cuantas cositas. La persona a quien iba dirigida ya no está. Supongo que me toca a mí encontrar las respuestas que buscaba. Seguro que el gran héroe de Talos-II me echará una mano, ¿no?"
       },
       {
+        "voId": "chr_0022_bounda_mono_chat_line01",
         "title": "Charla 1",
         "text": "Esta es una de mis bombas clave. Solo hay que ajustar la superficie adhesiva y explotará justo donde se necesita. Oh, no te preocupes por su potencia. Es mucho más eficaz para frenar al objetivo que para simplemente volarlo todo."
       },
       {
+        "voId": "chr_0022_bounda_mono_chat_line02",
         "title": "Charla 2",
         "text": "Después de revisar mi expediente, la supervisora Perlica me dio el nombre clave “Fluorite”. Es naturalmente tóxica, pero perfecta para fabricar todo tipo de productos industriales. Entendí lo que ella quería decir después de hojear el libro. Pero, ¿te soy sincera? Fue una elección un poco atrevida."
       },
       {
+        "voId": "chr_0022_bounda_mono_chat_line03",
         "title": "Charla 3",
         "text": "De niña, mi mamá y yo siempre íbamos huyendo de un lugar a otro. Eventualmente, me tocó sobrevivir sola en la frontera. En algunos lugares nos daban grano reservado como raciones, y en otros nos cobraban todo tipo de cargos inventados. Todo lugar parecía ser un hogar, pero ninguno lo era de verdad. Los asentamientos en la frontera nunca duraban, y la idea de “hogar” en realidad nunca significó nada."
       },
       {
+        "voId": "chr_0022_bounda_mono_chat_line04",
         "title": "Charla 4",
         "text": "La belleza siempre ha definido las tierras salvajes. Los animales ahuyentados por la Plaga nunca se van del todo... solo cambian su ruta cada año. El pasto regresa apenas la Plaga se retira. La naturaleza tiene su propio ritmo, y solo puede aguantar... A veces me pregunto si de verdad formamos parte de ese equilibrio."
       },
       {
+        "voId": "chr_0022_bounda_mono_chat_line05",
         "title": "Charla 5",
         "text": "En las zonas remotas que he vivido, siempre los ejecutores son los que más presionan a la gente. Saben lo frágil que es todo: una chispa de caos, y el lugar entero se desmorona. Así crean un equilibrio distorsionado, manteniendo a las personas de ahí como rehenes. Y mientras no tengas el poder de agarrarlos por el cuello, nada va a cambiar nunca."
       },
       {
+        "voId": "chr_0022_bounda_mono_about_line01",
         "title": "Tema: Akekuri",
         "text": "Adivina: ¿quién crees que selló esas orejas en la bolsa de evidencia? Sí, incluso nuestra amable capitana sabía que no había mejor opción en Talos-II. ¿Y viste esa cara que puso, con los ojos llorosos pero aguantando? Adorable."
       },
       {
+        "voId": "chr_0022_bounda_mono_about_line02",
         "title": "Tema: Catcher",
         "text": "Puede que parezca que lo disfruta, pero sé indulgente con él. Los que se preparan de más suelen ser los que más miedo tienen de arruinarlo todo. Nadie está libre de equivocarse... ¿Que deje de pedirle favores? Pfff, ¿y por qué lo haría? No te preocupes, saldrá adelante, aunque esté paralizado de miedo. Siempre lo hace."
       },
       {
+        "voId": "chr_0022_bounda_mono_about_line03",
         "title": "Tema: Estella",
         "text": "No toques la lista de reproducción de Estella ni la dejes lanzarse al peligro real. ¿Crees que lo tiene todo bajo control? Para nada. Será mejor que tengas un trapeador a la mano, cariño."
       },
       {
+        "voId": "chr_0022_bounda_mono_about_line04",
         "title": "Tema: Antal",
         "text": "Ese lagarto grande es más frío que el hielo, incluso en el calor de la batalla... Seguro ni se da cuenta de que está en peligro. Eso vuelve loca a la capitana... pero bueno, así es él. ¿Él y yo? Mmm... Nos llevamos bien... mientras recuerde que no debe quedarse mirándome la cola."
       },
       {
+        "voId": "chr_0022_bounda_explore_point_common_01",
         "title": "Recurso/Coleccionable detectado 1",
         "text": "Encontré algo genial, ¿les molesta si me lo quedo?"
       },
       {
+        "voId": "chr_0022_bounda_explore_point_valub_01",
         "title": "Recurso/Coleccionable detectado 2",
         "text": "¿Vieron eso de allá? Ah, no importa, olvídenlo."
       },
       {
+        "voId": "chr_0022_bounda_explore_find_locked_01",
         "title": "Zona inexplorada detectada",
         "text": "Encontré un buen lugar. Mmm... parece divertido."
       },
       {
+        "voId": "chr_0022_bounda_explore_find_danger_01",
         "title": "Enemigo poderoso descubierto",
         "text": "Gente, tenemos un amigo con quién jugar."
       },
       {
+        "voId": "chr_0022_bounda_interact_mine_valub_01",
         "title": "Minería 1",
         "text": "Ah, el viejo y confiable “hazlo tú mismo”. Como en aquellos días amargos de antaño."
       },
       {
+        "voId": "chr_0022_bounda_interact_mine_valub_echo2_01",
         "title": "Minería 2",
         "text": "*Bostezo* Ya voy. Ustedes sí que son productivos."
       },
       {
+        "voId": "chr_0022_bounda_interact_treasure_valub_01",
         "title": "Abriendo una caja",
         "text": "Guau, qué hallazgo. ¿Y sin etiqueta? Mmm..."
       },
       {
+        "voId": "chr_0022_bounda_interact_etherium_01",
         "title": "Adquiriendo Aurileno",
         "text": "Ya tuve uno de estos antes... Lo que pasó después no fue tan bueno."
       },
       {
+        "voId": "chr_0022_bounda_interact_blight_break_01",
         "title": "Eliminar la Plaga",
         "text": "Si tan solo hubiera podido eliminar la Plaga en aquel entonces..."
       },
       {
+        "voId": "chr_0022_bounda_interact_rest_01",
         "title": "Descanso",
         "text": "Por fin, hora de reabastecer mis bombas."
       },
       {
+        "voId": "chr_0022_bounda_combat_suppuse_using_01",
         "title": "Uso táctico 1",
         "text": "¿Ves? Sabía que esto serviría."
       },
       {
+        "voId": "chr_0022_bounda_combat_suppuse_getheal_01",
         "title": "Uso táctico 2",
         "text": "Eso solo fue mala suerte. Una ronda más."
       },
       {
+        "voId": "chr_0022_bounda_combat_remind_danger_01",
         "title": "Advertencia de peligro",
         "text": "Cuidado, no te dejes golpear."
       },
       {
+        "voId": "chr_0022_bounda_combat_hurt_lowhp_01",
         "title": "Herida",
         "text": "...Me resbalé."
       },
       {
+        "voId": "chr_0022_bounda_combat_dead_01",
         "title": "0 PV",
         "text": "Debí... haberlo atrapado."
       },
       {
+        "voId": "chr_0022_bounda_combat_remind_praise_01",
         "title": "Ánimo del equipo 1",
         "text": "Bueno, eso fue interesante."
       },
       {
+        "voId": "chr_0022_bounda_combat_remind_praise_02",
         "title": "Ánimo del equipo 2",
         "text": "Nada mal. Lástima que nadie lo grabó."
       },
       {
+        "voId": "chr_0022_bounda_combat_remind_praise_echo2_01",
         "title": "Respuesta al ánimo 1",
         "text": "Bonitas palabras, pero ahórrate el aliento."
       },
       {
+        "voId": "chr_0022_bounda_combat_remind_praise_echo2_02",
         "title": "Respuesta al ánimo 2",
         "text": "Bueno, al final del día somos un equipo de élite."
       },
       {
+        "voId": "chr_0022_bounda_combat_intobattle_01",
         "title": "Comienza el combate 1",
         "text": "De vuelta a mi antiguo trabajo, ¿eh?"
       },
       {
+        "voId": "chr_0022_bounda_combat_intobattle_echo2_01",
         "title": "Comienza el combate 2",
         "text": "¡Qué dedicados somos! Dedos cruzados por un bono."
       },
       {
+        "voId": "chr_0022_bounda_combat_outbattle_nor_01",
         "title": "Victoria en el combate 1",
         "text": "Bien, un problema menos del cual preocuparnos."
       },
       {
+        "voId": "chr_0022_bounda_combat_outbattle_nor_02",
         "title": "Victoria en el combate 2",
         "text": "Qué mal, casi lo logran."
       },
       {
+        "voId": "chr_0022_bounda_combat_outbattle_nor_echo2_01",
         "title": "Victoria en el combate 3",
         "text": "Sip, sip. No hubiera sido posible sin ti."
       },
       {
+        "voId": "chr_0022_bounda_combat_outbattle_hard_01",
         "title": "Victoria en el combate 4",
         "text": "Hmm. Nada mal, pero no fue suficiente."
       },
       {
+        "voId": "chr_0022_bounda_combat_battle_defeat_01",
         "title": "Derrota en el combate",
         "text": "Lamentarse no lleva a nada. Actuar, sí. Vamos, esto aún no termina."
       },
       {
+        "voId": "chr_0022_bounda_mono_attack_last_01",
         "title": "Golpe final 1",
         "text": "*Silbido* ¡Atrápalo!"
       },
       {
+        "voId": "chr_0022_bounda_mono_attack_last_02",
         "title": "Golpe final 2",
         "text": "Atención, por favor."
       },
       {
+        "voId": "chr_0022_bounda_mono_skill_nor_01",
         "title": "Habilidad de batalla 1",
         "text": "Aquí tienes."
       },
       {
+        "voId": "chr_0022_bounda_mono_skill_nor_02",
         "title": "Habilidad de batalla 2",
         "text": "¡Espero que te guste!"
       },
       {
+        "voId": "chr_0022_bounda_mono_skill_nor_03",
         "title": "Habilidad de batalla 3",
         "text": "¡Tic toc!"
       },
       {
+        "voId": "chr_0022_bounda_combat_skill_comb_ready_01",
         "title": "Habilidad de combo preparada 1",
         "text": "Ajá. Hora del espectáculo."
       },
       {
+        "voId": "chr_0022_bounda_combat_skill_comb_ready_02",
         "title": "Habilidad de combo preparada 2",
         "text": "Tienen más agujeros que un queso."
       },
       {
+        "voId": "chr_0022_bounda_mono_skill_comb_release_01",
         "title": "Lanzando combo 1",
         "text": "Saborea esto."
       },
       {
+        "voId": "chr_0022_bounda_mono_skill_comb_release_02",
         "title": "Lanzando combo 2",
         "text": "Apuesto a que te encanta."
       },
       {
+        "voId": "chr_0022_bounda_mono_attack_extra_01",
         "title": "Remate 1",
         "text": "Sorpresa."
       },
       {
+        "voId": "chr_0022_bounda_mono_attack_extra_02",
         "title": "Remate 2",
         "text": "Hora de dormir, cariño."
       },
       {
+        "voId": "chr_0022_bounda_mono_skill_ultimate_01",
         "title": "Habilidad máxima 1",
         "text": "¿Supongo que ya viviste suficiente?"
       },
       {
+        "voId": "chr_0022_bounda_mono_skill_ultimate_02",
         "title": "Habilidad máxima 2",
         "text": "Esto va a sonar fuerte."
       },
       {
+        "voId": "chr_0022_bounda_mono_skill_ultimate_03",
         "title": "Habilidad máxima 3",
         "text": "Hasta aquí llegaste, amigo."
       }

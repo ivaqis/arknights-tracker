@@ -120,322 +120,402 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0023_antal_chrbark_squad_01",
         "title": "Persiapan Operasi 1",
         "text": "Hmm. Jam gilir kerja mulai lagi."
       },
       {
+        "voId": "chr_0023_antal_chrbark_squad_02",
         "title": "Persiapan Operasi 2",
         "text": "Kali ini, siapa subjek tesnya?"
       },
       {
+        "voId": "chr_0023_antal_chrbark_join_01",
         "title": "Menambahkan ke Tim 1",
         "text": "Misi untukku? Bagus. Kebetulan, aku sedang cari peluang untuk melakukan uji lapangan untuk orbiter hasil modifikasi."
       },
       {
+        "voId": "chr_0023_antal_chrbark_join_02",
         "title": "Menambahkan ke Tim 2",
         "text": "Kalau kau sudah punya rencana, langsung berikan perintahmu saja. Aku percaya keputusanmu."
       },
       {
+        "voId": "chr_0023_antal_chrbark_weap_01",
         "title": "Berganti Senjata",
         "text": "Senjata baru dan belum dikalibrasi. Performanya harus dievaluasi dulu."
       },
       {
+        "voId": "chr_0023_antal_chrbark_gear_01",
         "title": "Berganti Gear",
         "text": "Gear baru ini sudah menjalani sejumlah peningkatan signifikan. Tapi, gampang tersangkut di lapisan sisikku."
       },
       {
+        "voId": "chr_0023_antal_chrup_skill_01",
         "title": "Aktivasi Matriks Kemampuan",
         "text": "Hmm .... Terima kasih atas instruksinya. Aku jadi dapat ide, nih."
       },
       {
+        "voId": "chr_0023_antal_chrup_level_01",
         "title": "Menonton Rekaman Pertarungan",
         "text": "Rencana pertarungan ini sangat mengesankan, Endministrator. Aku senang bisa jadi bagian dari tim operasimu."
       },
       {
+        "voId": "chr_0023_antal_chrup_promt01_01",
         "title": "Promosi Operator 1",
         "text": "Naik gaji? Aku memang butuh tambahan dana untuk beli lebih banyak perangkat Originium dan Unit Arts. Barang-barang penelitian dan barang pribadiku akan terus bertambah."
       },
       {
+        "voId": "chr_0023_antal_chrup_promt02_01",
         "title": "Promosi Operator 2",
         "text": "Promosi, tapi pekerjaannya juga makin banyak? Aku paham. Nah, ada misi baru untukku, tidak?"
       },
       {
+        "voId": "chr_0023_antal_chrup_promt03_01",
         "title": "Promosi Operator 3",
         "text": "Apa ini dorongan untuk rasa hausku akan pengetahuan? Aku baru saja selesai menyusun laporan tentang Protokol Automasi Canggih. Kau bisa membacanya untuk jaga-jaga, siapa tahu ada yang terlewat olehku."
       },
       {
+        "voId": "chr_0023_antal_chrup_promt04_01",
         "title": "Promosi Operator 4",
         "text": "Kehidupan di Endfield sangat jauh berbeda dari saat aku masih di Akademi. Dulu, aku bisa dengan mudah dapat IPK bagus melalui risetku, tapi sepertinya sekarang itu sudah tak berlaku lagi. Aku harus belajar dan hidup dengan memercayai rekan-rekan timku dan berusaha mencapai hasil sebagai tim."
       },
       {
+        "voId": "chr_0023_antal_introduce_01",
         "title": "Operator Siap Bertugas",
         "text": "Antal dari Op Z7 siap bertugas. Aku mempelajari automasi Originium, dan kadang membantu memodifikasi atau memperbaiki perangkat Originium. Kau boleh menghubungiku kalau ada tugas semacam itu .... Oh, ya, aku ingin tanya. Topengmu itu terbuat dari material apa? Serat karbon?"
       },
       {
+        "voId": "chr_0023_antal_mono_switch_01",
         "title": "Siaga 1",
         "text": "Ada yang ingin kaubicarakan denganku?"
       },
       {
+        "voId": "chr_0023_antal_mono_switch_02",
         "title": "Siaga 2",
         "text": "Aku sedang menyusun lelucon garing untukmu."
       },
       {
+        "voId": "chr_0023_antal_sim_assign_work_01",
         "title": "Menugaskan ke Fasilitas",
         "text": "Tugas baru? Siap, laksanakan."
       },
       {
+        "voId": "chr_0023_antal_sim_hello_lower_01",
         "title": "Menyapa 1",
         "text": "Selain tugas-tugas lain, aku juga siap menjawab pertanyaan seputar perangkat Originium."
       },
       {
+        "voId": "chr_0023_antal_sim_hello_max_01",
         "title": "Menyapa 2",
         "text": "Anehnya, kehadiranmu membuatku jadi makin ingin berbagi pengetahuanku yang luas ini."
       },
       {
+        "voId": "chr_0023_antal_sim_talk_lv01_01",
         "title": "Obrolan Santai di Dijiang 1",
         "text": "Boleh kuperiksa senjatamu, Endmin? Hmm. Menurutku, satu-satunya masalahnya adalah ada beberapa komponen yang aus. Cukup ganti saja satu komponen Originium presisinya. Tugas perbaikan ini tak akan terlalu sulit. Aku menawarkan layanan ini kepada semua anggota Tim Z7."
       },
       {
+        "voId": "chr_0023_antal_sim_talk_lv02_01",
         "title": "Obrolan Santai di Dijiang 2",
         "text": "Studiku tentang Dijiang menunjukkan bahwa pesawat ini adalah puncak kesempurnaan ilmu permesinan. Kontrol Pusat, Nodus Jaringan Protorig, sistem Pendukung Kehidupan, dan berbagai bagian pesawat menawarkan peluang luas untuk belajar. Pesawat ini membantuku menyusun tesisku yang berikutnya."
       },
       {
+        "voId": "chr_0023_antal_sim_talk_lv02_02",
         "title": "Obrolan Santai di Dijiang 3",
         "text": "Aku punya lelucon berdasarkan pengalaman pribadi Fluorite. Bagaimana cara menanggapi pesan ancaman dari seorang antagonis? Jawab: Berhenti berlangganan. Wah, kau tertawa. Berarti, lelucon ini terbukti lucu. Tapi, kenapa yang lainnya tak tertawa sepertimu?"
       },
       {
+        "voId": "chr_0023_antal_sim_talk_max_01",
         "title": "Obrolan Santai di Dijiang 4",
         "text": "Kalau sedang kurang semangat, ikutlah denganku ke luar. Sinar matahari akan merangsang sekresi serotonin di otak sehingga emosi negatif akan mereda. Ada taman air mancur di dekat Akademiku. Tempatnya sangat tenang dan terpapar sinar matahari melimpah. Semasa belajar di Akademi, di taman itulah aku beristirahat saat kelelahan."
       },
       {
+        "voId": "chr_0023_antal_sim_talk_max_02",
         "title": "Obrolan Santai di Dijiang 5",
         "text": "Balasan dari nenekku tiba kemarin. Sepertinya dia agak tertarik pada seseorang yang namanya berulang kali kusebut dalam surat-suratku kepadanya. Akan kusampaikan pesan nenekku kepada orang itu, yang kebetulan adalah kau, Endmin: “Sekarang, mestinya kau sudah tahu bahwa si Savra muda itu agak keras kepala, tapi dalam artian positif. Sabarlah menghadapinya. Kapan-kapan, aku ingin minum teh bersamamu. Nanti kuceritakan bagaimana aku membesarkan bocah kecil bersisik itu.”"
       },
       {
+        "voId": "chr_0023_antal_sim_talk_max_03",
         "title": "Obrolan Santai di Dijiang 6",
         "text": "Banyak orang memandangi Talos-II dari dek Dijiang. Aku juga, tapi walaupun aku memang dapat perspektif baru, aku tak merasakan nostalgia seperti yang mereka rasakan. Mungkin ini gara-gara nenekku. Dia mengajariku: “Jangan terobsesi pada masa lalu. Kejar dan perluaslah masa depanmu.”"
       },
       {
+        "voId": "chr_0023_antal_sim_gift_give_01",
         "title": "Menawarkan Hadiah",
         "text": "Menurut norma pergaulan, orang harus saling memberikan hadiah sebagai bentuk ungkapan perasaan mereka. Sang penerima, aku sudah menyiapkan hadiah istimewa ini untukmu."
       },
       {
+        "voId": "chr_0023_antal_sim_gift_recv_01",
         "title": "Menerima Hadiah",
         "text": "Aku sungguh berterima kasih. Aku paham makna pemberian hadiah, dan akan kujaga pemberian ini baik-baik."
       },
       {
+        "voId": "chr_0023_antal_mono_self_line01",
         "title": "Dialog Kepercayaan 1",
         "text": "Bergabung ke Endfield bukan pilihan sulit. Kalian menawarkan banyak teknologi baru yang tak ada di Akademi. Kalau menyangkut kemajuan di bidang-bidang tertentu, kalangan ilmiah kadang terlalu konservatif. Tapi, Endfield justru punya semangat luar biasa dalam hal eksplorasi, inovasi, dan penerapan praktis."
       },
       {
+        "voId": "chr_0023_antal_mono_self_line02",
         "title": "Dialog Kepercayaan 2",
         "text": "Bukuku? Memang benar, judulnya Pilihan Tantangan Sudoku Ekstrem. Puzzle aritmetika membantu mengendalikan emosiku saat sedang tak ada kegiatan. Aku sudah pernah mengajak para anggota Z7 melakukan kegiatan ini untuk mengisi waktu, tapi tanggapan mereka negatif. Mungkin kau mau mencobanya, Endmin?"
       },
       {
+        "voId": "chr_0023_antal_mono_self_line03",
         "title": "Dialog Kepercayaan 3",
         "text": "Lelucon garing untukku? Mana, biar kudengar. “Kenapa Savra hanya melontarkan lelucon norak saat siang? Karena matahari bersinar saat siang, dan lelucon norak pun butuh vitamin D agar jadi garing.” .... Hrra-Hrra-Hrra. Aku tak bermaksud mengejek, Endmin. Memang begitulah suara tawa Savra."
       },
       {
+        "voId": "chr_0023_antal_mono_self_line04",
         "title": "Dialog Kepercayaan 4",
         "text": "Aku sudah memodifikasi banyak perangkat Originium. Tapi, yang paling kurindukan adalah tongkat yang diberikan nenekku sewaktu aku masih kecil. Sampai sekarang pun, aku masih ingat kata-katanya: “Tongkat ini akan menemani dalam perjalananmu untuk mengubah dunia.”"
       },
       {
+        "voId": "chr_0023_antal_mono_self_line05",
         "title": "Dialog Kepercayaan 5",
         "text": "Nenekku bilang, menghabiskan seumur hidup untuk menjawab pertanyaan ilmiah mungkin memang romantis, tapi kalau tak ada teman, hidup bakal terasa sepi. Dulu, aku tak paham maksudnya. Kemudian, sekali waktu aku ingin berbagi kegembiraan karena berhasil menghasilkan penemuan baru, tapi kau tak ada. Dari kejadian itu, aku belajar tentang kesepian."
       },
       {
+        "voId": "chr_0023_antal_mono_chat_line01",
         "title": "Obrolan 1",
         "text": "Fluorite mengajariku suatu permainan kartu untuk mengisi waktu. Dia juga bilang, yang kalah harus mau melakukan apa pun untuk pemain yang menang. Kami main lima kali. Sekarang, dia harus memberiku lima sesi latihan langsung tentang “cara cepat menjadi lawan bicara yang menyenangkan”."
       },
       {
+        "voId": "chr_0023_antal_mono_chat_line02",
         "title": "Obrolan 2",
         "text": "Makan malam? Tidak. Aku tak bisa ikut. Aku memburu Aggelos tanpa melaporkannya kepada Kaptenku. Jadi, dia menghukumku dengan mencabut hak makan malamku di kantin."
       },
       {
+        "voId": "chr_0023_antal_mono_chat_line03",
         "title": "Obrolan 3",
         "text": "Kenapa aku malah pilih Z7 alih-alih proyek Litbang? Awalnya, aku memang tertarik pada Pusat Litbang, tapi ternyata yang mewawancaraiku adalah Kapten Akekuri. Menurutnya, perangkat Originium harus dibawa keluar lab dan diuji coba dalam skenario pertarungan sungguhan. Dengan begitu, masalahnya akan lebih mudah diidentifikasi. Aku sependapat dengannya, makanya aku bergabung ke timnya."
       },
       {
+        "voId": "chr_0023_antal_mono_chat_line04",
         "title": "Obrolan 4",
         "text": "Kenapa aku terobsesi pada lelucon garing? Semasa sekolah, orang-orang sering protes karena aku kurang punya selera humor. Aku sependapat. Kekuranganku ini harus diperbaiki."
       },
       {
+        "voId": "chr_0023_antal_mono_chat_line05",
         "title": "Obrolan 5",
         "text": "Nenekku bilang dia senang aku pergi dari rumah dan masuk Endfield. Menurutnya, ini kesempatan untuk mengalihkan perhatianku dari membaca dan perangkat Originium. Dia berharap aku bisa belajar bergaul dengan rekan-rekan timku, dan mungkin bahkan ... dapat teman baru."
       },
       {
+        "voId": "chr_0023_antal_mono_about_line01",
         "title": "Topik: Akekuri",
         "text": "Kapten Akekuri? Dia merekrutku, dan dia sangat ramah. Kuikuti semua instruksinya. Dia memang bilang tim kami baik-baik saja, tapi dia sering bergadang dan mondar-mandir saat tengah malam. Dia tak mau jelaskan alasannya. Semoga kau bisa memberitahukan alasannya, Endmin."
       },
       {
+        "voId": "chr_0023_antal_mono_about_line02",
         "title": "Topik: Catcher",
         "text": "Catcher bertanggung jawab menyiapkan ransum saat operasi lapangan. Kemahirannya menggunakan alat masak melampaui kemahiranku menggunakan orbiterku. Saat hujan turun, dia tak mau bicara, tapi dia juga tak menolak kehadiranku. Aku jadi bingung karenanya."
       },
       {
+        "voId": "chr_0023_antal_mono_about_line03",
         "title": "Topik: Fluorite",
         "text": "Bisa dibilang, Fluorite adalah temanku, walau dia bersisik. Menurutku, ekornya yang kuat dan hebat itu menarik, tapi dia melarangku menyentuhnya. Fluorite juga teman bicara yang menyenangkan. Aku bisa belajar banyak darinya."
       },
       {
+        "voId": "chr_0023_antal_mono_about_line04",
         "title": "Topik: Estella",
         "text": "Saat memasuki pertarungan, aku perlu mempertimbangkan untuk melindungi Estella. Warna kulit kami sama-sama reflektif dan mencolok. Dalam pertarungan, ini berbahaya karena kami jadi gampang terlihat."
       },
       {
+        "voId": "chr_0023_antal_explore_point_common_01",
         "title": "Sumber Daya/Barang Koleksi Terdeteksi 1",
         "text": "Bagus. Ada penemuan baru."
       },
       {
+        "voId": "chr_0023_antal_explore_point_valub_01",
         "title": "Sumber Daya/Barang Koleksi Terdeteksi 2",
         "text": "Kita harus periksa penemuan penting itu."
       },
       {
+        "voId": "chr_0023_antal_explore_find_locked_01",
         "title": "Area yang Belum Dijelajahi Terdeteksi",
         "text": "Biar kuselidiki misteri ini."
       },
       {
+        "voId": "chr_0023_antal_explore_find_danger_01",
         "title": "Musuh Kuat Ditemukan",
         "text": "Unit musuh elite terdeteksi."
       },
       {
+        "voId": "chr_0023_antal_interact_mine_valub_01",
         "title": "Penambangan 1",
         "text": "Mineral punya banyak kegunaan. Kita harus mengumpulkannya."
       },
       {
+        "voId": "chr_0023_antal_interact_mine_valub_echo2_01",
         "title": "Penambangan 2",
         "text": "Ini akan meningkatkan efisiensi kita."
       },
       {
+        "voId": "chr_0023_antal_interact_treasure_valub_01",
         "title": "Membuka Kerat",
         "text": "Tumpukan sumber daya kaya ditemukan. Kita harus memilahnya agar bisa mengidentifikasi material pemeliharaan gear."
       },
       {
+        "voId": "chr_0023_antal_interact_etherium_01",
         "title": "Mendapatkan Aurylene",
         "text": "Beberapa Aurylene tiba-tiba saja menjauh saat didekati. Kenapa? Apa ini semacam penolakan akibat energi?"
       },
       {
+        "voId": "chr_0023_antal_interact_blight_break_01",
         "title": "Menyingkirkan Hawar",
         "text": "Apa ini berarti kita sudah lebih memahami Hawar ...?"
       },
       {
+        "voId": "chr_0023_antal_interact_rest_01",
         "title": "Istirahat",
         "text": "Manusia bukan mesin, dan harus meluangkan waktu untuk istirahat."
       },
       {
+        "voId": "chr_0023_antal_combat_suppuse_using_01",
         "title": "Penggunaan Taktis 1",
         "text": "Memulai penanganan darurat."
       },
       {
+        "voId": "chr_0023_antal_combat_suppuse_getheal_01",
         "title": "Penggunaan Taktis 2",
         "text": "Kondisi kembali normal."
       },
       {
+        "voId": "chr_0023_antal_combat_remind_danger_01",
         "title": "Peringatan Bahaya",
         "text": "Perintah serangan musuh terdeteksi."
       },
       {
+        "voId": "chr_0023_antal_combat_hurt_lowhp_01",
         "title": "Cedera",
         "text": "Kondisi kurang optimal, tapi masih bisa berfungsi."
       },
       {
+        "voId": "chr_0023_antal_combat_dead_01",
         "title": "0 HP",
         "text": "Pikiran kacau. Bantuan ... tidak tersedia."
       },
       {
+        "voId": "chr_0023_antal_combat_remind_praise_01",
         "title": "Penyemangat Tim 1",
         "text": "Performa luar biasa."
       },
       {
+        "voId": "chr_0023_antal_combat_remind_praise_02",
         "title": "Penyemangat Tim 2",
         "text": "Kita berhasil mencapai sinergi tanpa kata."
       },
       {
+        "voId": "chr_0023_antal_combat_remind_praise_echo2_01",
         "title": "Respons Penyemangat 1",
         "text": "Terima kasih. Tapi, mestinya aku bisa lebih baik lagi."
       },
       {
+        "voId": "chr_0023_antal_combat_remind_praise_echo2_02",
         "title": "Respons Penyemangat 2",
         "text": "Hasilnya tak perlu diragukan."
       },
       {
+        "voId": "chr_0023_antal_combat_intobattle_01",
         "title": "Mulai Pertarungan 1",
         "text": "Unit Arts optimal."
       },
       {
+        "voId": "chr_0023_antal_combat_intobattle_echo2_01",
         "title": "Mulai Pertarungan 2",
         "text": "Fokus pada pertarungan. Akan kulepaskan tembakan pelindung."
       },
       {
+        "voId": "chr_0023_antal_combat_outbattle_nor_01",
         "title": "Menang Pertarungan 1",
         "text": "Pengetahuan baru didapatkan."
       },
       {
+        "voId": "chr_0023_antal_combat_outbattle_nor_02",
         "title": "Menang Pertarungan 2",
         "text": "Misi selesai. Gampang sekali."
       },
       {
+        "voId": "chr_0023_antal_combat_outbattle_nor_echo2_01",
         "title": "Menang Pertarungan 3",
         "text": "Semua anggota sudah berkontribusi besar bagi tim."
       },
       {
+        "voId": "chr_0023_antal_combat_outbattle_hard_01",
         "title": "Menang Pertarungan 4",
         "text": "Walau ada banyak variabel tak terduga dalam pertarungan, hasil kita tetap optimal."
       },
       {
+        "voId": "chr_0023_antal_combat_battle_defeat_01",
         "title": "Kalah Bertarung",
         "text": "Berdasarkan perhitungan kerugian, evakuasi adalah solusi terbaik bagi tim."
       },
       {
+        "voId": "chr_0023_antal_mono_attack_last_01",
         "title": "Final Strike 1",
         "text": "Cacatnya terlihat!"
       },
       {
+        "voId": "chr_0023_antal_mono_attack_last_02",
         "title": "Final Strike 2",
         "text": "Huh! Lumpuhkan!"
       },
       {
+        "voId": "chr_0023_antal_mono_skill_nor_01",
         "title": "Skill Tarung 1",
         "text": "Arah sudah ditentukan."
       },
       {
+        "voId": "chr_0023_antal_mono_skill_nor_02",
         "title": "Skill Tarung 2",
         "text": "Target terkunci."
       },
       {
+        "voId": "chr_0023_antal_mono_skill_nor_03",
         "title": "Skill Tarung 3",
         "text": "Output maks."
       },
       {
+        "voId": "chr_0023_antal_combat_skill_comb_ready_01",
         "title": "Skill Kombo Siap 1",
         "text": "Energi sudah penuh."
       },
       {
+        "voId": "chr_0023_antal_combat_skill_comb_ready_02",
         "title": "Skill Kombo Siap 2",
         "text": "Unit siap beraksi."
       },
       {
+        "voId": "chr_0023_antal_mono_skill_comb_release_01",
         "title": "Penggunaan Kombo 1",
         "text": "Setrum sampai kritis."
       },
       {
+        "voId": "chr_0023_antal_mono_skill_comb_release_02",
         "title": "Penggunaan Kombo 2",
         "text": "Percepat kemenangan!"
       },
       {
+        "voId": "chr_0023_antal_mono_attack_extra_01",
         "title": "Penuntas 1",
         "text": "Semburan ion."
       },
       {
+        "voId": "chr_0023_antal_mono_attack_extra_02",
         "title": "Penuntas 2",
         "text": "Lonjakan tegangan."
       },
       {
+        "voId": "chr_0023_antal_mono_skill_ultimate_01",
         "title": "Ultimate 1",
         "text": "Kemenangan menggetarkan."
       },
       {
+        "voId": "chr_0023_antal_mono_skill_ultimate_02",
         "title": "Ultimate 2",
         "text": "Sirkuit diperkuat."
       },
       {
+        "voId": "chr_0023_antal_mono_skill_ultimate_03",
         "title": "Ultimate 3",
         "text": "Saatnya menghimpun kekuatan."
       }

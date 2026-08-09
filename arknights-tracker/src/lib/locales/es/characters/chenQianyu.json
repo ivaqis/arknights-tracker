@@ -122,318 +122,397 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0005_chen_chrbark_squad_01",
         "title": "Preparación de la operación 1",
         "text": "¿Si ya estoy lista? Je, je. ¡Mis espadas siempre están listas porque ellas nunca descansan!"
       },
       {
+        "voId": "chr_0005_chen_chrbark_squad_02",
         "title": "Preparación de la operación 2",
         "text": "Quiero un lugar en primera fila esta vez. ¡Quiero ser la primera en salir!"
       },
       {
+        "voId": "chr_0005_chen_chrbark_join_01",
         "title": "Añadir al equipo 1",
         "text": "¿Ya es nuestro turno? Bien. Hay que atacar en el momento oportuno."
       },
       {
+        "voId": "chr_0005_chen_chrbark_join_02",
         "title": "Añadir al equipo 2",
         "text": "¡Déjamelo a mí!"
       },
       {
+        "voId": "chr_0005_chen_chrbark_weap_01",
         "title": "Cambiar de arma",
         "text": "Vaya. Esto es muy elegante. Pero también puedo usar armamento estándar para desatar una buena paliza."
       },
       {
+        "voId": "chr_0005_chen_chrbark_gear_01",
         "title": "Cambiar de equipamiento",
         "text": "Mmm... Tal vez un verdadero maestro debería usar equipamiento más ligero."
       },
       {
+        "voId": "chr_0005_chen_chrup_skill_01",
         "title": "Activación de la matriz de habilidades",
         "text": "¡Con práctica llega la iluminación en el arte del espadachín!"
       },
       {
+        "voId": "chr_0005_chen_chrup_level_01",
         "title": "Viendo los registros de combate",
         "text": "¿Entonces esto... y luego esto? ¡Muy bien, lo tengo!"
       },
       {
+        "voId": "chr_0005_chen_chrup_promt01_01",
         "title": "Ascenso de operador 1",
         "text": "¡Le pedí a Perlica que retrasara mi ascenso hasta este momento! ¡Solo podré estar en paz cuando mi aprobación de Endfield sea entregada personalmente por ti, Endmin!"
       },
       {
+        "voId": "chr_0005_chen_chrup_promt02_01",
         "title": "Ascenso de operador 2",
         "text": "¿Qué opinas? ¿Rompí el récord del ascenso más rápido? De hecho, me salté algunos años en el Salón Tanjian. ¿Te sorprende? Je, je. Siempre fui la mejor de mi clase."
       },
       {
+        "voId": "chr_0005_chen_chrup_promt03_01",
         "title": "Ascenso de operador 3",
         "text": "Bueno, resulta que soy buena en algo más que artes marciales. Simplemente no puedo evitar convertirme en tu mejor operadora. Ay, tus halagos ya me están sonrojando... ¡pero no pares!"
       },
       {
+        "voId": "chr_0005_chen_chrup_promt04_01",
         "title": "Ascenso de operador 4",
         "text": "Todavía estoy lejos de la cima. Dicen que la espada de mi madre agitó las nubes mismas, Endmin. Y haré exactamente eso... ¡y me convertiré en aquella en que tú y Perlica siempre puedan confiar!"
       },
       {
+        "voId": "chr_0005_chen_introduce_01",
         "title": "Operador reportándose para el deber",
         "text": "¡ENDMIN! ¿CÓMO ESTÁS...? Oh. Está bien, sigamos el debido proceso. Allá voy. ¡Operadora de Endfield, Chen Qianyu, reportándose al deber!"
       },
       {
+        "voId": "chr_0005_chen_mono_switch_01",
         "title": "En espera 1",
         "text": "¡Mira esto! Je, je, genial, ¿verdad?"
       },
       {
+        "voId": "chr_0005_chen_mono_switch_02",
         "title": "En espera 2",
         "text": "Endmin, ¡por aquí! Ji, ji."
       },
       {
+        "voId": "chr_0005_chen_sim_assign_work_01",
         "title": "Asignando a una instalación",
         "text": "Entendido. ¡Relaja tu mente por completo, Endmin!"
       },
       {
+        "voId": "chr_0005_chen_sim_hello_lower_01",
         "title": "Saludo 1",
         "text": "¿Cómo estás, Endmin? ¿Te interesa entrenar conmigo?"
       },
       {
+        "voId": "chr_0005_chen_sim_hello_max_01",
         "title": "Saludo 2",
         "text": "Deja que me encargue del resto, Endmin. Ve a darte un respiro... ¡Te lo ganaste!"
       },
       {
+        "voId": "chr_0005_chen_sim_talk_lv01_01",
         "title": "Charla casual en la Dijiang 1",
         "text": "¡Ah! ¡Por poco y no te veo, Endmin! Je, je, sí. Estaba tratando de perfeccionar un nuevo movimiento y no veía por dónde iba."
       },
       {
+        "voId": "chr_0005_chen_sim_talk_lv02_01",
         "title": "Charla casual en la Dijiang 2",
         "text": "Nunca esperé estar en un lugar *TAN* alto en órbita después de dejar Hongshan. Talos-II en realidad se ve bastante pequeño desde donde estamos. Me pregunto dónde podríamos llegar mi espada y yo... ¿Talos, quizá? ¿Qué te parece, Endmin?"
       },
       {
+        "voId": "chr_0005_chen_sim_talk_lv02_02",
         "title": "Charla casual en la Dijiang 3",
         "text": "¡Endmin! ¿Leíste esa leyenda de artes marciales que te presté? No, no, no es una novela. ¡Está basada en hechos reales ocurridos en Yan! ¿Qué? ¿No puedes imaginar a alguien cuyos “dedos cortan como cuchillas”? Oh... Tienes razón... Pero los “puños que calmaron las mareas de la primavera y el otoño” son incluso peores, ¿no?"
       },
       {
+        "voId": "chr_0005_chen_sim_talk_max_01",
         "title": "Charla casual en la Dijiang 4",
         "text": "¿Qué estoy haciendo? ¡AY! Uf. Estoy tratando de relajar mis músculos. Ser una Endfielder y ejecutar todas estas misiones superó con creces mi cuota diaria de entrenamiento físico... Oye, ¿qué tal si nos relajamos un poco? ¡De hecho, conozco algunos meridianos! ¡Vamos! ¡Quítate esa chaqueta! ¡Y de nada!"
       },
       {
+        "voId": "chr_0005_chen_sim_talk_max_02",
         "title": "Charla casual en la Dijiang 5",
         "text": "¡Acompáñame al Arsenal! Tengo una espada que reclamar. ¿Qué debo grabar en la empuñadura? ¿“He aquí mi espada desenvainada” o “Una mano hábil no le teme a nada”? ¡Endmin, por favooor, ayúdame a decidir!"
       },
       {
+        "voId": "chr_0005_chen_sim_talk_max_03",
         "title": "Charla casual en la Dijiang 6",
         "text": "Recientemente me topé con un cuello de botella. Uf. No tiene que ver con la técnica; creo que algo me molesta desde dentro. Las leyendas dicen que las mejores armas se adaptarán a la mente de quien las empuña... ¡Pero... pero esto es solo un trozo de acero común! ¡Endmin! ¡Por favooor, ayúdame con esto!"
       },
       {
+        "voId": "chr_0005_chen_sim_gift_give_01",
         "title": "Ofreciendo regalos",
         "text": "“Un regalo no es más que una amable muestra de sinceridad de corazón”. Así dice el dicho. Pero si alguien de verdad es sincero, ningún regalo será lo suficientemente adecuado. ¡Bueno, solo espero que este te guste, Endmin!"
       },
       {
+        "voId": "chr_0005_chen_sim_gift_recv_01",
         "title": "Aceptando regalos",
         "text": "¡¿Para... mí?! GUAU... ¡Lo voy a abrir ahora mismo!"
       },
       {
+        "voId": "chr_0005_chen_mono_self_line01",
         "title": "Diálogo de confianza 1",
         "text": "Perlica siempre estaba hablando de ti, ¡pero ahora estás justo frente a mí! ¡Se siente como de otro mundo, si me lo preguntas! ¿Qué? ¡No! ¡No estoy decepcionada! ¡Compartir techo y comidas con la leyenda suprema e invencible de Perlica es lo más emocionante del mundo! Espera. Tienes migajas en la cara."
       },
       {
+        "voId": "chr_0005_chen_mono_self_line02",
         "title": "Diálogo de confianza 2",
         "text": "Después de dejar mi hogar, de hecho viajé por la Franja un tiempo antes de unirme a Endfield. Je, je. En realidad quería ser una heroína anónima con hazañas legendarias... una que deja un velo de misterio. Pero tras experimentar la vida fuera de Hongshan, entendí que los verdaderos guerreros no pueden separarse de las consecuencias de sus actos. Así que... desaceleré el paso y visité menos lugares. No importa, compensaré esta oportunidad perdida."
       },
       {
+        "voId": "chr_0005_chen_mono_self_line03",
         "title": "Diálogo de confianza 3",
         "text": "Creo que tenía unos diez... quizá once años. Estaba practicando mi arte de la espada en secreto en las colinas detrás del Salón Tanjian cuando me encontré con un Aggelos separado de su grupo. Fue mi primer combate real. Mi padre me elogió cuando volví a casa con una espada rota, pero también me dijo esto: “Puede que hayas roto una espada, pero hay quienes ni siquiera tienen una.” Supongo que tengo que ver más allá de cómo suele ser mi padre. Lo que dijo me dejó reflexionando, incluso hasta hoy."
       },
       {
+        "voId": "chr_0005_chen_mono_self_line04",
         "title": "Diálogo de confianza 4",
         "text": "¿Por qué me volví una Endfielder? Mmm... Esa es una historia larga. Si de verdad quieres saber cómo es que me llamó la atención... Supongo que fue aquella vez que ayudé a un Liberi bien vestido a sacar un carro de bestia de carga del lodo. Perly me sonrió con tanta sinceridad. Y pensé que... tal vez ya no tenía que seguir viajando sola."
       },
       {
+        "voId": "chr_0005_chen_mono_self_line05",
         "title": "Diálogo de confianza 5",
         "text": "Yinglung dejó atrás a sus amigos para asumir el manto del deber. Y mi madre me dejó para irse a Chi Xiao. Supongo que la gente que encuentra su vocación verdadera... simplemente deja ir lo menos importante que tienen. Pero Endfield no hace eso. Todo y todos son igual de importantes, y nada se queda atrás. Si Endfield tiene en la mira una visión para Talos-II, ¡entonces blandiré otra espada para llevarla a cabo!"
       },
       {
+        "voId": "chr_0005_chen_mono_chat_line01",
         "title": "Charla 1",
         "text": "Convencer a Perlica para que deje su trabajo no será fácil. Pero tengo un truco que usaba con mis maestros espadachines. Si quería que se pusieran a trabajar, simplemente les dejaba todas las tareas. Ahora vamos a darle vuelta a esto. Podemos terminar todo el trabajo de Perly y no tendrá más remedio que tomarse un descanso... ¿Qué? Vamos, es una técnica ingeniosa, ¿no?"
       },
       {
+        "voId": "chr_0005_chen_mono_chat_line02",
         "title": "Charla 2",
         "text": "¿Mi peinado? ¡Fácil! Solo usa los dos cuernos como guía para lograr la simetría. Mi vecina, la abuela Wang, me dijo que es un secreto de los Forte y me enseñó este truco... ¿Qué raro? Es solo la vida en un vecindario típico de dayuan. La gente ayudaba a criar a los hijos de los vecinos y todos crecimos en el mismo patio. Podrías decir que éramos más que vecinos. Se sentía como una gran familia extendida."
       },
       {
+        "voId": "chr_0005_chen_mono_chat_line03",
         "title": "Charla 3",
         "text": "¡Muchas, muchas escuelas inspiraron mi arte de la espada especial! ¿La mayor influencia? Definitivamente mi maestro del Salón Tanjian. Me enseñó movimientos disciplinados, golpes eficientes... pura sustancia, sin rodeos. Después viene lo que mi madre me demostraba cuando me quejaba lo suficiente. Su arte de la espada se transmitía por generaciones y era ultracompleja. Cada movimiento tenía un significado especial. En cuanto al resto... bueno, se me ocurrieron después de leer todas esas leyendas de espadachines. Una verdadera guerrera debe tener al menos una técnica característica o dos, ¿no crees?"
       },
       {
+        "voId": "chr_0005_chen_mono_chat_line04",
         "title": "Charla 4",
         "text": "Wuling es un lugar húmedo, pegajoso y mojado, pero me quedé un tiempo y me acostumbré. Las paredes lloraban gotas de agua cada vez que subía la Ola de plaga. Pero la comida de Wuling es increíble y la gente allí... Bueno, la mayoría es muy amable. ¿Malos recuerdos? ¡NO! ¡Definitivamente no recuerdo a nadie que me caiga mal de ese lugar!"
       },
       {
+        "voId": "chr_0005_chen_mono_chat_line05",
         "title": "Charla 5",
         "text": "Me dijeron que fue mi madre quien me puso Qianyu. Menos mal que es fácil de escribir en yanés... Me ahorró muchos dolores de cabeza cuando mi maestro me castigó ordenándome que escribiera mi nombre mil veces."
       },
       {
+        "voId": "chr_0005_chen_mono_about_line01",
         "title": "Tema: Hongshan",
         "text": "En realidad puedes ver el Cráter de Hongshan si miras abajo desde el puente de la Dijiang. Dejé ese lugar hace dos años, sin nada más que falta de rumbo. Pero todos esos caminos que recorrí apenas alcanzaban el ancho de una uña... Supongo que seguiré viajando hasta que me quede sin dedos o palmas para medir mis pasos. ¡Probablemente habré dejado de lado mi falta de rumbo cuando eso suceda!"
       },
       {
+        "voId": "chr_0005_chen_mono_about_line02",
         "title": "Tema: Madre desaparecida",
         "text": "Mi madre tiene una espada carmesí. Me dijo que era una reliquia familiar que una heroína de Yan le entregó a nuestro antepasado. Recuerdo cómo los ancianos de todo Hongshan visitaban nuestra casa para ver la espada y contar sus leyendas épicas. Luego... mi madre desapareció con la espada. Al crecer, comprendí que no era solo un arma. Era un camino. Una creencia. Aún quiero ir a buscarla. Sin embargo, su pequeña Qianyu lo hará con su propia espada."
       },
       {
+        "voId": "chr_0005_chen_mono_about_line03",
         "title": "Tema: Perlica",
         "text": "Perlica ya era una adicta al trabajo cuando la conocí por primera vez. A veces escuchaba que una persona conocida como Endministrator era la razón por la que se exigía tanto. Me daba lástima Perly... pero después de verte, creo que entiendo por qué lo hace... Más allá de su visión épica y proyectos, siento que Perlica solo quiere luchar a tu lado."
       },
       {
+        "voId": "chr_0005_chen_explore_point_common_01",
         "title": "Recurso/Coleccionable detectado 1",
         "text": "Mmm, ¿creo ver algunas cosas buenas por allá?"
       },
       {
+        "voId": "chr_0005_chen_explore_point_valub_01",
         "title": "Recurso/Coleccionable detectado 2",
         "text": "¡Veo un tesoro! ¡Vamos a echar un vistazo!"
       },
       {
+        "voId": "chr_0005_chen_explore_find_locked_01",
         "title": "Zona inexplorada detectada",
         "text": "Espera. No hemos estado aquí antes, ¿cierto?"
       },
       {
+        "voId": "chr_0005_chen_explore_find_danger_01",
         "title": "Enemigo poderoso descubierto",
         "text": "Hay peligro más adelante. Déjame ver qué tan bueno es este."
       },
       {
+        "voId": "chr_0005_chen_interact_mine_valub_01",
         "title": "Minería 1",
         "text": "No te esperabas esto, ¿verdad? ¡Mi técnica especial de arte de la espada para cosas rocosas!"
       },
       {
+        "voId": "chr_0005_chen_interact_mine_valub_echo2_01",
         "title": "Minería 2",
         "text": "¡Déjame el resto a mí! ¡Con una espada es más rápido!"
       },
       {
+        "voId": "chr_0005_chen_interact_treasure_valub_01",
         "title": "Abriendo una caja",
         "text": "Suelen esconder tomos secretos en cajas como esta."
       },
       {
+        "voId": "chr_0005_chen_interact_etherium_01",
         "title": "Adquiriendo Aurileno",
         "text": "Es redondo y brilla... Oh, este es el tamaño real del Aurileno."
       },
       {
+        "voId": "chr_0005_chen_interact_blight_break_01",
         "title": "Eliminar la Plaga",
         "text": "No se puede detener una inundación con una sola espada. Quizá eso es lo que pareció."
       },
       {
+        "voId": "chr_0005_chen_interact_rest_01",
         "title": "Descanso",
         "text": "¡Buen descanso! ¡Las espadas afiladas compensan el tiempo perdido!"
       },
       {
+        "voId": "chr_0005_chen_combat_suppuse_using_01",
         "title": "Uso táctico 1",
         "text": "¡Rápido! ¡Toma un poco de esto!"
       },
       {
+        "voId": "chr_0005_chen_combat_suppuse_getheal_01",
         "title": "Uso táctico 2",
         "text": "Juuu... ¡Ya me siento mejor!"
       },
       {
+        "voId": "chr_0005_chen_combat_remind_danger_01",
         "title": "Advertencia de peligro",
         "text": "¡Cuidado! ¡Atrás!"
       },
       {
+        "voId": "chr_0005_chen_combat_hurt_lowhp_01",
         "title": "Herida",
         "text": "¡Hngh! ¡Estoy bien! Hay que concentrarse en la pelea."
       },
       {
+        "voId": "chr_0005_chen_combat_dead_01",
         "title": "0 PV",
         "text": "Maldita sea... Hngh..."
       },
       {
+        "voId": "chr_0005_chen_combat_remind_praise_01",
         "title": "Ánimo del equipo 1",
         "text": "¡Ese movimiento tuyo fue increíble!"
       },
       {
+        "voId": "chr_0005_chen_combat_remind_praise_02",
         "title": "Ánimo del equipo 2",
         "text": "¡Sí! ¡Eso fue un trabajo en equipo perfecto!"
       },
       {
+        "voId": "chr_0005_chen_combat_remind_praise_echo2_01",
         "title": "Respuesta al ánimo 1",
         "text": "¡Je! ¡Solo hago mi trabajo!"
       },
       {
+        "voId": "chr_0005_chen_combat_remind_praise_echo2_02",
         "title": "Respuesta al ánimo 2",
         "text": "¡La unidad genera sinergia con la espada!"
       },
       {
+        "voId": "chr_0005_chen_combat_intobattle_01",
         "title": "Comienza el combate 1",
         "text": "¡Una espada desenvainada y su luz liberada!"
       },
       {
+        "voId": "chr_0005_chen_combat_intobattle_echo2_01",
         "title": "Comienza el combate 2",
         "text": "Déjamelo a mí."
       },
       {
+        "voId": "chr_0005_chen_combat_outbattle_nor_01",
         "title": "Victoria en el combate 1",
         "text": "Juuu... No esperaba menos."
       },
       {
+        "voId": "chr_0005_chen_combat_outbattle_nor_02",
         "title": "Victoria en el combate 2",
         "text": "Una victoria fácil."
       },
       {
+        "voId": "chr_0005_chen_combat_outbattle_nor_echo2_01",
         "title": "Victoria en el combate 3",
         "text": "¡Bien hecho!"
       },
       {
+        "voId": "chr_0005_chen_combat_outbattle_hard_01",
         "title": "Victoria en el combate 4",
         "text": "Eso estuvo... demasiado cerca. Rápido. ¡Hay que atender a los heridos!"
       },
       {
+        "voId": "chr_0005_chen_combat_battle_defeat_01",
         "title": "Derrota en el combate",
         "text": "...¡Los enfrentaremos otra vez!"
       },
       {
+        "voId": "chr_0005_chen_mono_attack_last_01",
         "title": "Golpe final 1",
         "text": "¡Toma esto!"
       },
       {
+        "voId": "chr_0005_chen_mono_attack_last_02",
         "title": "Golpe final 2",
         "text": "¡Allí!"
       },
       {
+        "voId": "chr_0005_chen_mono_skill_nor_01",
         "title": "Habilidad de batalla 1",
         "text": "¡Corte!"
       },
       {
+        "voId": "chr_0005_chen_mono_skill_nor_02",
         "title": "Habilidad de batalla 2",
         "text": "¡Barrido!"
       },
       {
+        "voId": "chr_0005_chen_mono_skill_nor_03",
         "title": "Habilidad de batalla 3",
         "text": "¡Desvío!"
       },
       {
+        "voId": "chr_0005_chen_combat_skill_comb_ready_01",
         "title": "Habilidad de combo preparada 1",
         "text": "¡Es nuestra oportunidad!"
       },
       {
+        "voId": "chr_0005_chen_combat_skill_comb_ready_02",
         "title": "Habilidad de combo preparada 2",
         "text": "¡Déjamelo a mí!"
       },
       {
+        "voId": "chr_0005_chen_mono_skill_comb_release_01",
         "title": "Lanzando combo 1",
         "text": "¡Mi turno!"
       },
       {
+        "voId": "chr_0005_chen_mono_skill_comb_release_02",
         "title": "Lanzando combo 2",
         "text": "¡Te estás enfrentando a mí!"
       },
       {
+        "voId": "chr_0005_chen_mono_attack_extra_01",
         "title": "Remate 1",
         "text": "¡Debilidad detectada!"
       },
       {
+        "voId": "chr_0005_chen_mono_attack_extra_02",
         "title": "Remate 2",
         "text": "¡Romper!"
       },
       {
+        "voId": "chr_0005_chen_mono_skill_ultimate_01",
         "title": "Habilidad máxima 1",
         "text": "¡He aquí mi espada desenvainada!"
       },
       {
+        "voId": "chr_0005_chen_mono_skill_ultimate_02",
         "title": "Habilidad máxima 2",
         "text": "¡Una mano hábil no le teme a nada!"
       },
       {
+        "voId": "chr_0005_chen_mono_skill_ultimate_03",
         "title": "Habilidad máxima 3",
         "text": "¡Desaparece como mereces!"
       }

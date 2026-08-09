@@ -981,6 +981,14 @@
         <path d="M6.54688 14.4415C6.54688 14.4415 11.1596 11.6875 11.6553 11.6875C12.1509 11.6875 14.3995 13.0122 14.3995 13.0122L9.24187 16.0056L6.54688 14.4415Z" fill="currentColor" fill-opacity="0.8"/>
         <path d="M17.4921 10.2948L15.4536 9.06602L15.4413 2.14844L7.98573 6.39475L8.02264 8.73229L2.07812 12.214L9.26155 16.5569L11.3161 15.3758L17.2215 18.8575L17.4921 10.2948Z" class="stroke-white dark:stroke-[#383838]/80" fill="transparent"/>
     </svg>
+{:else if name === "play"}
+    <svg class={$$props.class} style={$$props.style} viewBox="0 0 24 24" fill="currentColor">
+        <path d="M8 5v14l11-7z"/>
+    </svg>
+{:else if name === "pause"}
+    <svg class={$$props.class} style={$$props.style} viewBox="0 0 24 24" fill="currentColor">
+        <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+    </svg>
 {:else}
 <svg class={$$props.class} style={$$props.style} {viewBox} {width} {height} {fill} {stroke} stroke-width={strokeWidth} stroke-linecap={strokeLinecap} stroke-linejoin={strokeLinejoin} {opacity}>
     <use href="#{resolvedName}" {fill} {stroke} stroke-width={strokeWidth} stroke-linecap={strokeLinecap} stroke-linejoin={strokeLinejoin} />

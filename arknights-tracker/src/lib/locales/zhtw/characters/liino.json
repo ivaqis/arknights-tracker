@@ -139,326 +139,407 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0035_liino_chrbark_squad_01",
         "title": "行動準備1",
         "text": "嗯嗯？可以上台了嗎？"
       },
       {
+        "voId": "chr_0035_liino_chrbark_squad_02",
         "title": "行動準備2",
         "text": "Twinkle-twinkle！新的演出馬上開始！"
       },
       {
+        "voId": "chr_0035_liino_chrbark_join_01",
         "title": "編入隊伍1",
         "text": "我可是舞蹈、演唱、臨場應變都拿滿分的全能偶像！"
       },
       {
+        "voId": "chr_0035_liino_chrbark_join_02",
         "title": "編入隊伍2",
         "text": "無論在哪裡，我都想成為最引人注目的那顆星星！"
       },
       {
+        "voId": "chr_0035_liino_chrbark_weap_01",
         "title": "更換武器",
         "text": "可以幫我挑一件嗎？最好能讓不擅長戰鬥的人也能輕鬆上手！"
       },
       {
+        "voId": "chr_0035_liino_chrbark_gear_01",
         "title": "更換裝備",
         "text": "我還是頭一次穿這樣的演出服……嗯，要不要再設計一下配套的動作？"
       },
       {
+        "voId": "chr_0035_liino_chrup_skill_01",
         "title": "解鎖天賦陣列",
         "text": "咻的一下就理解了！像是星星跳進了心裡……是不是讓我變得更耀眼了？"
       },
       {
+        "voId": "chr_0035_liino_chrup_level_01",
         "title": "觀看作戰紀錄",
         "text": "這個登場方式——真的不能用在我下次的演出裡嗎？嗚啊，好遺憾……"
       },
       {
+        "voId": "chr_0035_liino_chrup_promt01_01",
         "title": "精英化晉升1",
         "text": "好感動！我該怎麼答謝這份信賴才好……嗯，再多給你幾張下次演出的門票，怎麼樣？"
       },
       {
+        "voId": "chr_0035_liino_chrup_promt02_01",
         "title": "精英化晉升2",
         "text": "欸？這樣就可以了嗎？我還以為會像跟事務所簽續約合約一樣，追加一大堆條件……老實說，有點不習慣……"
       },
       {
+        "voId": "chr_0035_liino_chrup_promt03_01",
         "title": "精英化晉升3",
         "text": "嗯哼，徹底拜倒在我的魅力下了嗎？終於開竅——欸？什麼叫「今後終末地的宣傳也靠你了」？重點是這個嗎？！"
       },
       {
+        "voId": "chr_0035_liino_chrup_promt04_01",
         "title": "精英化晉升4",
         "text": "管理員，我決定了，以後你就是我巡演的常駐特邀嘉賓啦！這樣一來，我的任何一次「閃耀時刻」，你都不會錯過！怎麼樣？是不是很感動？到時可要好好看著我！要是我發現你走神了……哼哼！"
       },
       {
+        "voId": "chr_0035_liino_introduce_01",
         "title": "幹員報到",
         "text": "管理員，好久不見呀！欸？作為全塔衛二最閃耀可愛的第一偶像，梨諾正式加入終末地——居然沒有什麼特別優待嗎？真是的……你果然還是老樣子，坦率到讓人想討厭都討厭不起來呢……"
       },
       {
+        "voId": "chr_0035_liino_mono_switch_01",
         "title": "待命1",
         "text": "嘿嘿，這個姿勢也很可愛吧？"
       },
       {
+        "voId": "chr_0035_liino_mono_switch_02",
         "title": "待命2",
         "text": "啦——啦啦——試音完畢，可以開始啦！"
       },
       {
+        "voId": "chr_0035_liino_sim_assign_work_01",
         "title": "進駐設施",
         "text": "能在這裡多放兩個音響嗎？一個也可以！讓我試試擴音效果就好……"
       },
       {
+        "voId": "chr_0035_liino_sim_hello_lower_01",
         "title": "打招呼1",
         "text": "管理員，你好呀！要陪我去看演出場地嗎？"
       },
       {
+        "voId": "chr_0035_liino_sim_hello_max_01",
         "title": "打招呼2",
         "text": "我正在找你呢，管理員！快來聽我的新歌Demo！"
       },
       {
+        "voId": "chr_0035_liino_sim_talk_lv01_01",
         "title": "帝江號閒聊1",
         "text": "管理員，是來看我的進場排練嗎？這次我專門設計了兩個特別難的滑翔動作，總算是練好了！嘿嘿，別擔心，我提前就幫你留好位置啦！"
       },
       {
+        "voId": "chr_0035_liino_sim_talk_lv02_01",
         "title": "帝江號閒聊2",
         "text": "帝江號真的好大！第一次來的時候，真是把我都嚇了一跳！當時我就在想——「啊，要是能讓我在這裡開一場太空主題的個人演唱會，該有多好！」你說是不是，管理員？"
       },
       {
+        "voId": "chr_0035_liino_sim_talk_lv02_02",
         "title": "帝江號閒聊3",
         "text": "哼哼，這次又拿到了一個不錯的贊助！看來下一場演出可以試試新方案了……嗯？例如把舞台搭成環形的結構，然後徹底去掉觀眾席，讓每一個來看演出的人都成為演出的一分子——聽起來是不是很有意思？"
       },
       {
+        "voId": "chr_0035_liino_sim_talk_max_01",
         "title": "帝江號閒聊4",
         "text": "真是的，受不了那些整天亂編薩卡茲笞心魔能力的傢伙了！怎麼可能做到「對你笑一下，你就會乖乖掏錢了」啊？要是我真的有這種能力……管理員，保持這樣別動，就看著我的臉！現在有把零用錢全交給我的衝動了嗎？"
       },
       {
+        "voId": "chr_0035_liino_sim_talk_max_02",
         "title": "帝江號閒聊5",
         "text": "當初籌備第一場演出的時候，我連續七天都沒睡好，整天不是在練歌，就是在檢查我的舞台方案，直到上台前都很緊張，生怕出一點紕漏。但最後——看著觀眾們驚喜的目光，我忽然覺得之前付出的一切……還蠻值得的。"
       },
       {
+        "voId": "chr_0035_liino_sim_talk_max_03",
         "title": "帝江號閒聊6",
         "text": "管理員，你說我下次的演出安排在哪裡呢？新藍卡塢那個空中舞台蠻有趣的，新都築的演歌館也不錯，至於菈梵朵瑪……直接在海上演出怎麼樣？應該很有話題度。嗯？為什麼都是商會的城市？嘖，那當然是為了能多賺一點！"
       },
       {
+        "voId": "chr_0035_liino_sim_gift_give_01",
         "title": "贈送禮物",
         "text": "欸嘿，這是我在采風路上專門為你挑選的伴手禮！你就心滿意足地收下吧。"
       },
       {
+        "voId": "chr_0035_liino_sim_gift_recv_01",
         "title": "接收禮物",
         "text": "雖然收到過各式各樣的禮物，但從你那裡得到的……總感覺更特別一點。"
       },
       {
+        "voId": "chr_0035_liino_mono_self_line01",
         "title": "信賴對話1",
         "text": "每結束一場演出，我都會興奮好一陣子！嗯，就像工匠們打造出足夠鋒利的兵器一樣，區別只在於……好兵器會被用來粉碎他人的心，但好演出卻能讓人看清自己的心。"
       },
       {
+        "voId": "chr_0035_liino_mono_self_line02",
         "title": "信賴對話2",
         "text": "「真心」——是我一直在用的香水的名字哦。我很喜歡它的味道，紫丁香配上些許薔薇的芬芳，開場盛大而夢幻，最後偏偏卻以杉木的苦味收尾……所以，才格外讓人難忘，不是嗎？"
       },
       {
+        "voId": "chr_0035_liino_mono_self_line03",
         "title": "信賴對話3",
         "text": "因為我笞心魔的身分，外界傳過好多誇張的說法，像是「歌聲裡的源石技藝會操控心靈」「演出用的巫術裝置能把觀眾變為傀儡」……可是管理員，你知道嗎？我在耳環與髮夾上施的巫術，反而是遏制笞心魔能力的。我才不允許最重要的舞台上出現與演出無關的「瑕疵」……哪怕是這份與生俱來的力量。"
       },
       {
+        "voId": "chr_0035_liino_mono_self_line04",
         "title": "信賴對話4",
         "text": "小時候，我的夢裡有一朵美麗又芬芳的紫色玫瑰，它和一艘雲朵一樣的白船陪伴著我，在漫無邊際的天空中飛呀飛，和我講述著星星的故事……某一天，紅色的風暴出現了，白船被掀翻，與玫瑰一起掉進了漆黑的漩渦裡。後來？後來我一個人醒來了啊……從此就再沒做過夢了。"
       },
       {
+        "voId": "chr_0035_liino_mono_self_line05",
         "title": "信賴對話5",
         "text": "我一直覺得世界就是個大一點的舞台，只是要耗費更多的「心」才能駕馭。大家不過是為了喝采聲而努力表演，我也不例外。但偶爾，只是偶爾……即使是我，也會想偷個懶呢。所以管理員，能讓我再在這裡多待一下嗎？好像就只有在你身邊的時候，感覺能鬆懈一點……真奇妙啊。"
       },
       {
+        "voId": "chr_0035_liino_mono_chat_line01",
         "title": "交談1",
         "text": "怎麼又有這種需要背稿才方便答的「現場問題」啊……唉，都好幾次了，問的一堆問題還是圍繞我出道時的事。在這些節目組心裡，一個沒上過選秀節目，直接被星探發掘，出道後馬上走紅，只憑個人的努力就走到這一步的偶像，莫非就這麼難以置信嗎？"
       },
       {
+        "voId": "chr_0035_liino_mono_chat_line02",
         "title": "交談2",
         "text": "跟粉絲互動也好，上台演出也好……對我而言，都是需要全力以赴的事。尤其是面對粉絲的時候，絕對不能讓大家留下任何的遺憾，務必要為他們送上一場醒來後依然會覺得幸福的夢才可以。所以就算已經累到能站著睡著了，我也總是會堅持到最後一名粉絲離場了才喝水休息……這就是偶像應盡的義務。"
       },
       {
+        "voId": "chr_0035_liino_mono_chat_line03",
         "title": "交談3",
         "text": "我確實受過那種「絕對不能提這些話題」的培訓。不過，如果是跟你說……應該沒問題吧？例如，其實我作息時間一點都不規律，老是熬夜，還不按時吃飯，經常為了爭取更好的舞台效果讓工作人員頭痛。真是的，這麼說出來總覺得更不好意思了……作為交換，也跟我說說你的事吧，管理員？"
       },
       {
+        "voId": "chr_0035_liino_mono_chat_line04",
         "title": "交談4",
         "text": "平常喜歡的放鬆方式？如果是別人來問，那肯定要回答「聽音樂」之類的安全選項啦。其實我更喜歡睡覺，經常一睡就是十幾個小時，有一次把新來的工作人員都嚇到了，她當時完全叫不醒我……還好那天我的經紀人在，直接衝進來大喊了一聲「演出十秒後開始——」，然後還沒等她數到九，我就醒了。"
       },
       {
+        "voId": "chr_0035_liino_mono_chat_line05",
         "title": "交談5",
         "text": "這個月我收到了上家事務所一位工作人員寄來的信件……他在信上說自己已經離職，想為之前在贊助商平白指責時沒有維護我而道歉。但我其實沒有怪過他。畢竟……他也只是為了那點養家的薪水才被迫選擇那麼做——和那些生活艱難的人們一樣，沒有誰是應該被責備的。"
       },
       {
+        "voId": "chr_0035_liino_mono_about_line01",
         "title": "話題：環塔商會",
         "text": "一開始，我不怎麼反感商會的那些條條框框。但當我見過了更多的人，經歷了更多的事，發現生活的真相不止一種的時候，我才意識到——原來就算是在商會的地盤，人們也未必只有一種活法；原來就算是在傳統的舞台上，偶像也未必只有一種演出方式。"
       },
       {
+        "voId": "chr_0035_liino_mono_about_line02",
         "title": "話題：偶像",
         "text": "管理員，你覺得「偶像」是怎樣的存在呢？我想，在每個人心裡肯定都有一個屬於自己的答案吧？至少對我來說，所謂的「偶像」只是一艘承載願望的航船，只有航行到足夠高的地方，才有履行「職責」的資格……而「我」一直以來的願望都是——將名為「梨諾」的航船開往塔衛二的最高處，努力去照亮她承載的每一個願望。"
       },
       {
+        "voId": "chr_0035_liino_mono_about_line03",
         "title": "話題：音樂遊戲",
         "text": "欸？你不覺得玩音樂遊戲是一種很棒的紓壓方式嗎？像我的話，就習慣在通告最密集的空隙打一些高難度的譜面。就算拿不到全完美判定，打完時也會有種神清氣爽的感覺！不過我不太擅長下落式，還是習慣玩單軌的那種啦！比如《二郎達人》和《律動派對》，我都很喜歡！"
       },
       {
+        "voId": "chr_0035_liino_mono_about_line04",
         "title": "話題：笞心魔",
         "text": "母親在我很小的時候就告誡過我——「笞心魔」是很容易貪食他人心靈的一族，在嘗試鞭笞他人心靈的時候，也千萬不要忘記鞭笞自己的心……對於笞心魔而言，瞭解他人藏在心裡的秘密就像吃飯喝水一樣尋常，無須刻意便能輕鬆做到。於是我們總是容易忘記，忘記對於他人而言，被隨意探知內心從來不是件開心的事。"
       },
       {
+        "voId": "chr_0035_liino_mono_about_line05",
         "title": "話題：菈梵朵瑪",
         "text": "父母最後一次帶我出門的那天，是當年那屆黑曜石音樂節的第一日。夕陽很美，餘暉染紅了城市的邊緣，而我望著大樓上最醒目的宣傳海報，指著上面拿著麥克風的女孩子問母親：「媽媽，我什麼時候也能像她一樣？」母親笑著摸了摸我的頭，第一次這樣鼓勵我：「會有那一天的。只要梨諾願意，一定會成為菈梵朵瑪最耀眼的那顆星。」"
       },
       {
+        "voId": "chr_0035_liino_explore_point_common_01",
         "title": "發現資源1",
         "text": "那邊應該有什麼……好讓人在意！"
       },
       {
+        "voId": "chr_0035_liino_explore_point_valub_01",
         "title": "發現資源2",
         "text": "咦？好像發現了很貴重的東西……說不定能大賺一筆？"
       },
       {
+        "voId": "chr_0035_liino_explore_find_locked_01",
         "title": "發現未探索區域",
         "text": "是之前沒來過的地方！嗯，希望能遇到一點有趣的東西。"
       },
       {
+        "voId": "chr_0035_liino_explore_find_danger_01",
         "title": "發現強敵",
         "text": "哎呀，好像有沒被邀請的大傢伙出場了！"
       },
       {
+        "voId": "chr_0035_liino_interact_mine_valub_01",
         "title": "採集礦物1",
         "text": "哇，這樣的礦物我只在百科全書上看過……"
       },
       {
+        "voId": "chr_0035_liino_interact_mine_valub_echo2_01",
         "title": "採集礦物2",
         "text": "哼哼，是時候收集一些特別的動作素材了。"
       },
       {
+        "voId": "chr_0035_liino_interact_treasure_valub_01",
         "title": "打開儲藏箱",
         "text": "好棒的收穫！值得為它追加十個聚光燈！"
       },
       {
+        "voId": "chr_0035_liino_interact_etherium_01",
         "title": "獲得醚質",
         "text": "欸？真正的醚質原來這麼閃亮嗎！應該會很值錢……"
       },
       {
+        "voId": "chr_0035_liino_interact_blight_break_01",
         "title": "消除侵蝕",
         "text": "附近的一切都讓人不舒服……我可不要在這種地方演出！"
       },
       {
+        "voId": "chr_0035_liino_interact_rest_01",
         "title": "休整",
         "text": "現在算是幕間休息時間？呼，讓我先喝幾口水！馬上就好！"
       },
       {
+        "voId": "chr_0035_liino_combat_suppuse_using_01",
         "title": "使用戰術物品1",
         "text": "馬上來幫你！"
       },
       {
+        "voId": "chr_0035_liino_combat_suppuse_getheal_01",
         "title": "使用戰術物品2",
         "text": "好溫暖的感覺……"
       },
       {
+        "voId": "chr_0035_liino_combat_remind_danger_01",
         "title": "危險提醒",
         "text": "快躲開！別硬撐！"
       },
       {
+        "voId": "chr_0035_liino_combat_hurt_lowhp_01",
         "title": "負傷",
         "text": "嗚，這種小瑕疵……"
       },
       {
+        "voId": "chr_0035_liino_combat_dead_01",
         "title": "力竭",
         "text": "不甘心……明明再撐一下就……"
       },
       {
+        "voId": "chr_0035_liino_combat_remind_praise_01",
         "title": "小隊激勵1",
         "text": "哇，好想再看一次！"
       },
       {
+        "voId": "chr_0035_liino_combat_remind_praise_02",
         "title": "小隊激勵2",
         "text": "什麼時候能像你們一樣……"
       },
       {
+        "voId": "chr_0035_liino_combat_remind_praise_echo2_01",
         "title": "回應激勵1",
         "text": "下次再一起共演吧！"
       },
       {
+        "voId": "chr_0035_liino_combat_remind_praise_echo2_02",
         "title": "回應激勵2",
         "text": "和大家更有默契了！"
       },
       {
+        "voId": "chr_0035_liino_combat_intobattle_01",
         "title": "作戰開始1",
         "text": "呼……就這樣上吧！Twinkle-twinkle！"
       },
       {
+        "voId": "chr_0035_liino_combat_intobattle_echo2_01",
         "title": "作戰開始2",
         "text": "一起清除「不和諧音」！"
       },
       {
+        "voId": "chr_0035_liino_combat_outbattle_nor_01",
         "title": "作戰勝利1",
         "text": "都說了我不擅長了……欸？結束了嗎？"
       },
       {
+        "voId": "chr_0035_liino_combat_outbattle_nor_02",
         "title": "作戰勝利2",
         "text": "圓滿的謝幕！這也在我的預期內。"
       },
       {
+        "voId": "chr_0035_liino_combat_outbattle_nor_echo2_01",
         "title": "作戰勝利3",
         "text": "不賴嘛，竟然跟上了我的節奏！"
       },
       {
+        "voId": "chr_0035_liino_combat_outbattle_hard_01",
         "title": "作戰勝利4",
         "text": "為了能在下次「演出」發揮得更出色，先好好休息一下吧！放心，我會讓大家打起精神的！"
       },
       {
+        "voId": "chr_0035_liino_combat_battle_defeat_01",
         "title": "作戰失敗",
         "text": "是我還不夠閃耀嗎？不，不可能……我絕不接受這種結果……"
       },
       {
+        "voId": "chr_0035_liino_mono_attack_last_01",
         "title": "重擊1",
         "text": "再見啦！"
       },
       {
+        "voId": "chr_0035_liino_mono_attack_last_02",
         "title": "重擊2",
         "text": "墜落吧！"
       },
       {
+        "voId": "chr_0035_liino_mono_skill_nor_01",
         "title": "戰技1",
         "text": "獻給所有人！"
       },
       {
+        "voId": "chr_0035_liino_mono_skill_nor_02",
         "title": "戰技2",
         "text": "由我歌唱！"
       },
       {
+        "voId": "chr_0035_liino_mono_skill_nor_03",
         "title": "戰技3",
         "text": "奏響我的旋律！"
       },
       {
+        "voId": "chr_0035_liino_combat_skill_comb_ready_01",
         "title": "連攜技就緒1",
         "text": "該回應大家了！"
       },
       {
+        "voId": "chr_0035_liino_combat_skill_comb_ready_02",
         "title": "連攜技就緒2",
         "text": "舞台在呼喚我！"
       },
       {
+        "voId": "chr_0035_liino_mono_skill_comb_release_01",
         "title": "連攜技1",
         "text": "晨星再臨！"
       },
       {
+        "voId": "chr_0035_liino_mono_skill_comb_release_02",
         "title": "連攜技2",
         "text": "演出繼續！"
       },
       {
+        "voId": "chr_0035_liino_mono_attack_extra_01",
         "title": "處決1",
         "text": "竟敢分心？"
       },
       {
+        "voId": "chr_0035_liino_mono_attack_extra_02",
         "title": "處決2",
         "text": "還不退場？"
       },
       {
+        "voId": "chr_0035_liino_mono_skill_ultimate_01",
         "title": "終結技1",
         "text": "由我點亮每一顆心！"
       },
       {
+        "voId": "chr_0035_liino_mono_skill_ultimate_02",
         "title": "終結技2",
         "text": "見證星光的閃耀！"
       },
       {
+        "voId": "chr_0035_liino_mono_skill_ultimate_03",
         "title": "終結技3",
         "text": "為世界送上璀璨！"
       }

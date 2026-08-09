@@ -120,322 +120,402 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0023_antal_chrbark_squad_01",
         "title": "Chuẩn Bị Tác Chiến 1",
         "text": "Hmm. Lại bắt đầu một ca trực mới."
       },
       {
+        "voId": "chr_0023_antal_chrbark_squad_02",
         "title": "Chuẩn Bị Tác Chiến 2",
         "text": "Ai là đối tượng thử nghiệm lần này?"
       },
       {
+        "voId": "chr_0023_antal_chrbark_join_01",
         "title": "Đang thêm vào đội 1",
         "text": "Nhiệm vụ dành cho tôi? Tốt lắm. Tôi đang cần cơ hội thử nghiệm thực địa cho việc chỉnh sửa các tàu quỹ đạo."
       },
       {
+        "voId": "chr_0023_antal_chrbark_join_02",
         "title": "Đang thêm vào đội 2",
         "text": "Nếu ngài đã có kế hoạch, xin cứ ra lệnh. Tôi tin tưởng vào phán đoán của ngài."
       },
       {
+        "voId": "chr_0023_antal_chrbark_weap_01",
         "title": "Đang đổi vũ khí",
         "text": "Một vũ khí mới chưa qua hiệu chỉnh. Tôi phải tiến hành đánh giá hiệu suất ngay."
       },
       {
+        "voId": "chr_0023_antal_chrbark_gear_01",
         "title": "Đang đổi trang bị",
         "text": "Trang bị mới cho thấy nhiều cải tiến đáng kể. Tuy nhiên nó hay vướng vào lớp vảy của tôi."
       },
       {
+        "voId": "chr_0023_antal_chrup_skill_01",
         "title": "Kích hoạt Ma Trận Năng Lực",
         "text": "Hmm... Tôi rất cảm kích lời chỉ dẫn này. Một ý tưởng mới vừa được khơi mở."
       },
       {
+        "voId": "chr_0023_antal_chrup_level_01",
         "title": "Xem Hồ Sơ Chiến Đấu",
         "text": "Kế hoạch chiến đấu rất đáng nể, Endministrator. Tôi thấy vinh dự khi được tham gia chiến dịch của ngài."
       },
       {
+        "voId": "chr_0023_antal_chrup_promt01_01",
         "title": "Thăng Bậc Cán Viên 1",
         "text": "Tăng lương? Tôi rất hoan nghênh nguồn vốn bổ sung dùng để thu thập thêm thiết bị Originium và đơn vị Thuật Pháp. Kho nghiên cứu và cả kho cá nhân của tôi sẽ phát triển vượt bậc."
       },
       {
+        "voId": "chr_0023_antal_chrup_promt02_01",
         "title": "Thăng Bậc Cán Viên 2",
         "text": "Thăng bậc và kèm theo khối lượng công việc thêm trong tương lai? Tôi hiểu. Vậy, có nhiệm vụ mới nào giao cho tôi không?"
       },
       {
+        "voId": "chr_0023_antal_chrup_promt03_01",
         "title": "Thăng Bậc Cán Viên 3",
         "text": "Liệu đây có phải là sự khích lệ cho niềm đam mê kiến thức của tôi không? Tôi vừa hoàn thành báo cáo về Lõi Tự Động Hóa Giao Thức. Ngài có thể xem lại nếu tôi bỏ sót điều gì đó."
       },
       {
+        "voId": "chr_0023_antal_chrup_promt04_01",
         "title": "Thăng Bậc Cán Viên 4",
         "text": "Cuộc sống ở Endfield khác xa so với những ngày tháng trong Học Viện. Khi ấy, tôi dễ dàng đạt GPA nhờ công trình nghiên cứu, nhưng giờ điều đó chẳng còn ý nghĩa gì nhiều. Tôi phải học cách đặt niềm tin vào đồng đội và cùng họ đạt được kết quả."
       },
       {
+        "voId": "chr_0023_antal_introduce_01",
         "title": "Cán Viên đang báo cáo nhiệm vụ",
         "text": "Antal từ Đội Z7, báo cáo. Tôi nghiên cứu về tự động hóa Originium, thỉnh thoảng cũng phụ trách điều chỉnh hoặc sửa chữa thiết bị liên quan. Ngài có thể giao cho tôi các nhiệm vụ như vậy... Nhưng tôi có một câu hỏi dành cho ngài. Mặt nạ ngài đang đeo được làm từ vật liệu gì vậy? Sợi carbon?"
       },
       {
+        "voId": "chr_0023_antal_mono_switch_01",
         "title": "Chờ Lệnh 1",
         "text": "Ngài muốn trao đổi điều gì với tôi?"
       },
       {
+        "voId": "chr_0023_antal_mono_switch_02",
         "title": "Chờ Lệnh 2",
         "text": "Tôi đang cố gắng nghĩ ra một trò đùa dở để dành riêng cho ngài."
       },
       {
+        "voId": "chr_0023_antal_sim_assign_work_01",
         "title": "Phân Công Vào Công Trình",
         "text": "Giao nhiệm vụ mới? Xác nhận."
       },
       {
+        "voId": "chr_0023_antal_sim_hello_lower_01",
         "title": "Lời Chào 1",
         "text": "Tôi sẵn sàng trả lời các câu hỏi liên quan đến thiết bị Originium cũng như nhiều chủ đề khác."
       },
       {
+        "voId": "chr_0023_antal_sim_hello_max_01",
         "title": "Lời Chào 2",
         "text": "Thật kỳ lạ, sự hiện diện của ngài khiến tôi càng muốn chia sẻ kho tri thức của mình nhiều hơn."
       },
       {
+        "voId": "chr_0023_antal_sim_talk_lv01_01",
         "title": "Trò Chuyện Nhàn Rỗi Dijiang 1",
         "text": "Tôi có thể kiểm tra vũ khí của ngài chứ, Endmin? Hmm. Vấn đề duy nhất tôi thấy chính là linh kiện bị hỏng. Chỉ cần thay một linh kiện Originium chính xác là có thể khắc phục. Việc sửa chữa lần này sẽ không quá rắc rối. Tôi cung cấp dịch vụ này cho mọi thành viên của Đội Z7."
       },
       {
+        "voId": "chr_0023_antal_sim_talk_lv02_01",
         "title": "Trò Chuyện Nhàn Rỗi Dijiang 2",
         "text": "Việc nghiên cứu Dijiang cho tôi thấy nó là đỉnh cao của kỹ thuật hiện đại. Trung Tâm Điều Khiển, Nút Mạng Lưới Protorig, hệ thống Hỗ Trợ Sự Sống và nhiều thành phần khác của con tàu đều là kho tàng kiến thức. Chúng đã cung cấp nền tảng cho luận án tiếp theo của tôi."
       },
       {
+        "voId": "chr_0023_antal_sim_talk_lv02_02",
         "title": "Trò Chuyện Nhàn Rỗi Dijiang 3",
         "text": "Tôi có một câu đùa lấy cảm hứng từ trải nghiệm cá nhân của Fluorite. Làm thế nào để trả lời một tin nhắn đe dọa từ kẻ phản diện? Trả lời: Hủy đăng ký. Ngài cười rồi. Chứng tỏ câu đùa này rất hài hước. Nhưng vì sao những người khác lại không cười giống ngài?"
       },
       {
+        "voId": "chr_0023_antal_sim_talk_max_01",
         "title": "Trò Chuyện Nhàn Rỗi Dijiang 4",
         "text": "Nếu cảm xúc của ngài trở nên lạnh lẽo, hãy cùng tôi ra ngoài trời. Bức xạ mặt trời giúp kích thích tiết serotonin trong não bộ, làm giảm cảm xúc tiêu cực. Gần Học Viện của tôi từng có một công viên đài phun nước, nơi ấy yên bình và đầy ánh nắng. Thời còn là sinh viên Học Viện, tôi thường lui tới đó để nghỉ ngơi mỗi khi kiệt sức."
       },
       {
+        "voId": "chr_0023_antal_sim_talk_max_02",
         "title": "Trò Chuyện Nhàn Rỗi Dijiang 5",
         "text": "Hôm qua, thư hồi âm từ bà tôi đã đến. Bà có vẻ khá hứng thú với một cá nhân mà tôi liên tục nhắc đến trong thư gửi bà. Tôi sẽ chuyển lại lời nhắn của bà đến người đó, chính là ngài, Endmin: \"Chắc ngài cũng biết, một cậu Savra trẻ tuổi nào đó đôi khi rất bướng bỉnh, nhưng là theo cách dễ thương. Làm ơn hãy rộng lượng với cháu nó. Tôi mong có dịp được cùng ngài uống trà và kể thêm về cách tôi nuôi dạy cái đứa nhỏ có vảy này.\""
       },
       {
+        "voId": "chr_0023_antal_sim_talk_max_03",
         "title": "Trò Chuyện Nhàn Rỗi Dijiang 6",
         "text": "Nhiều người thường đứng trên boong tàu Dijiang để ngắm nhìn Talos-II. Tôi cũng từng làm thế, và tuy thấy khung cảnh khá mới mẻ, tôi lại không cảm nhận được sự hoài niệm mà họ có. Có lẽ là vì bà tôi. Bà từng dạy tôi rằng: \"Đừng quá vương vấn quá khứ. Hãy tìm kiếm và mở rộng tương lai của cháu.\""
       },
       {
+        "voId": "chr_0023_antal_sim_gift_give_01",
         "title": "Tặng Quà",
         "text": "Theo quy tắc giao tiếp xã hội, người ta thường trao quà để thể hiện cảm xúc. Tôi đã chuẩn bị món quà này dành cho ngài."
       },
       {
+        "voId": "chr_0023_antal_sim_gift_recv_01",
         "title": "Nhận quà",
         "text": "Tôi rất biết ơn. Tôi hiểu ý nghĩa của việc tặng quà và tôi sẽ trân trọng món quà này."
       },
       {
+        "voId": "chr_0023_antal_mono_self_line01",
         "title": "Đối Thoại Tín Nhiệm 1",
         "text": "Gia nhập Endfield chưa bao giờ là lựa chọn khó khăn đối với tôi. Ngài cung cấp công nghệ mới mà Học Viện không hề có. Giới khoa học thường bảo thủ quá mức trong việc phát triển một số lĩnh vực. Endfield, ngược lại, thể hiện tinh thần đáng ngưỡng mộ về sự khám phá, đổi mới và ứng dụng thực tiễn."
       },
       {
+        "voId": "chr_0023_antal_mono_self_line02",
         "title": "Đối Thoại Tín Nhiệm 2",
         "text": "Sách của tôi? Đúng vậy, là tập \"Tuyển Tập Sudoku Cấp Độ Cực Hạn\". Những câu đố số học giúp tôi điều tiết cảm xúc trong lúc nhàn rỗi. Tôi đã chia sẻ thú vui này với các thành viên Z7 nhưng phản hồi khá tiêu cực. Ngài muốn thử chứ, Endmin?"
       },
       {
+        "voId": "chr_0023_antal_mono_self_line03",
         "title": "Đối Thoại Tín Nhiệm 3",
         "text": "Ngài có câu đùa dở tệ dành cho tôi à? Xin được lắng nghe. \"Tại sao một Savra chỉ buông mấy câu đùa sến sẩm vào ban ngày? Vì mặt trời ló rồi, mà đến Xí Hổ cũng cần tí vitamin D\"... Hrra-Hrra-Hrra. Tôi không có ý xúc phạm đâu Endmin. Âm thanh đó là tiếng cười chân thành của một Savra."
       },
       {
+        "voId": "chr_0023_antal_mono_self_line04",
         "title": "Đối Thoại Tín Nhiệm 4",
         "text": "Tôi từng chỉnh sửa rất nhiều thiết bị Originium. Nhưng thứ tôi nhớ nhất chính là cây gậy bà tôi tặng tôi hồi nhỏ. Tôi vẫn còn nhớ lời bà cho đến tận bây giờ: \"Nó sẽ đồng hành cùng cháu khi cháu thay đổi thế giới này.\""
       },
       {
+        "voId": "chr_0023_antal_mono_self_line05",
         "title": "Đối Thoại Tín Nhiệm 5",
         "text": "Bà tôi từng nói rằng dành cả đời để trả lời một câu hỏi khoa học có thể rất lãng mạn, nhưng sống không có bạn bè thì rất cô độc. Tôi đã không hiểu câu nói ấy của bà. Cho đến khi tôi muốn chia sẻ niềm vui vì vừa khám phá ra điều mới, nhưng ngài lại không có ở đó. Chuyện đó dạy tôi một bài học về nỗi cô đơn."
       },
       {
+        "voId": "chr_0023_antal_mono_chat_line01",
         "title": "Trò Chuyện 1",
         "text": "Fluorite đã chỉ tôi một trò chơi bài để giết thời gian. Cô ấy còn nói rằng người thua phải làm bất cứ điều gì người thắng yêu cầu. Chúng tôi đã chơi năm ván. Giờ cô ấy buộc phải dạy riêng tôi năm buổi về chủ đề \"trở thành một người bạn trò chuyện vui vẻ một cách nhanh chóng\"."
       },
       {
+        "voId": "chr_0023_antal_mono_chat_line02",
         "title": "Trò Chuyện 2",
         "text": "Ăn tối sao? Không, tôi không đi được. Tôi đã tự ý truy đuổi một Aggeloi mà không báo cáo với Đội trưởng. Cô ấy đã phạt tôi bằng cách tước quyền ăn khuya ở nhà ăn."
       },
       {
+        "voId": "chr_0023_antal_mono_chat_line03",
         "title": "Trò Chuyện 3",
         "text": "Vì sao tôi chọn Z7 thay vì một dự án Nghiên Cứu và Phát Triển? Trung Tâm Nghiên Cứu và Phát Triển vốn là nơi tôi muốn đến, nhưng người phỏng vấn tôi là Đội trưởng Akekuri. Cô ấy tin rằng thiết bị Originium đã được chỉnh sửa thì nên đưa ra chiến trường thay vì chỉ giữ trong phòng thí nghiệm. Như vậy sẽ dễ dàng phát hiện ra các vấn đề hơn. Tôi đồng tình, vì vậy tôi đã gia nhập đội của cô ấy."
       },
       {
+        "voId": "chr_0023_antal_mono_chat_line04",
         "title": "Trò Chuyện 4",
         "text": "Tại sao tôi bị ám ảnh bởi những câu đùa dở tệ? Thời còn đi học, nhiều người than phiền rằng tôi không có khiếu hài hước. Tôi đồng ý với họ. Đây là một khiếm khuyết cần phải được khắc phục."
       },
       {
+        "voId": "chr_0023_antal_mono_chat_line05",
         "title": "Trò Chuyện 5",
         "text": "Bà tôi nói rằng bà rất vui khi tôi rời nhà để đến Endfield. Bà xem đó là cơ hội giúp tôi rời xa sách vở và thiết bị Originium. Bà hy vọng tôi sẽ học được cách hòa hợp với đồng đội, thậm chí... có thể kết bạn."
       },
       {
+        "voId": "chr_0023_antal_mono_about_line01",
         "title": "Chủ đề: Akekuri",
         "text": "Đội trưởng Akekuri? Chính cô ấy đã tuyển tôi, cô ấy cũng rất thân thiện. Tôi luôn tuân theo mọi chỉ thị của cô ấy. Dù cô ấy nói đội của chúng tôi đã làm rất tốt, nhưng cô ấy thường xuyên mất ngủ và đi đi lại lại giữa đêm khuya. Cô ấy không muốn nói lý do. Tôi hy vọng ngài có thể nói cho tôi biết, Endmin."
       },
       {
+        "voId": "chr_0023_antal_mono_about_line02",
         "title": "Chủ đề: Catcher",
         "text": "Catcher phụ trách chuẩn bị khẩu phần trong các nhiệm vụ dã chiến. Cậu ấy dùng dụng cụ nhà bếp còn thuần thục hơn cả tôi với các tàu quỹ đạo. Tuy nhiên, mỗi khi trời mưa, cậu ấy không nói lời nào dù cũng không xua đuổi tôi. Tôi cảm thấy hơi khó hiểu."
       },
       {
+        "voId": "chr_0023_antal_mono_about_line03",
         "title": "Chủ đề: Fluorite",
         "text": "Ở mức độ nào đó, tôi xem Fluorite là một người bạn cùng giống loài có vảy. Tôi cảm thấy cái đuôi mạnh mẽ và dứt khoát của cô ấy thật hấp dẫn. Nhưng cô ấy đã cấm tôi đánh giá bằng xúc giác. Fluorite cũng là người có khả năng đàm thoại rất tinh tế. Tôi học hỏi rất nhiều từ cô ấy."
       },
       {
+        "voId": "chr_0023_antal_mono_about_line04",
         "title": "Chủ đề: Estella",
         "text": "Khi bước vào trận chiến, tôi cần tính tới việc bảo vệ Estella. Chúng tôi đều có màu da nổi bật và phản quang, điều này là một mối lo quan trọng vì dễ khiến chúng tôi bị lộ trên chiến trường."
       },
       {
+        "voId": "chr_0023_antal_explore_point_common_01",
         "title": "Phát hiện Tài Nguyên/Có Thể Thu Thập 1",
         "text": "Tốt lắm. Một khám phá mới đã được thực hiện."
       },
       {
+        "voId": "chr_0023_antal_explore_point_valub_01",
         "title": "Phát hiện Tài Nguyên/Có Thể Thu Thập 2",
         "text": "Chúng ta nên kiểm tra yếu tố trọng yếu đó."
       },
       {
+        "voId": "chr_0023_antal_explore_find_locked_01",
         "title": "Phát Hiện Khu Vực Chưa Khám Phá",
         "text": "Cho phép tôi điều tra bí ẩn này."
       },
       {
+        "voId": "chr_0023_antal_explore_find_danger_01",
         "title": "Phát hiện Kẻ Địch Mạnh",
         "text": "Phát hiện đơn vị địch tinh anh."
       },
       {
+        "voId": "chr_0023_antal_interact_mine_valub_01",
         "title": "Khai thác 1",
         "text": "Khoáng sản có nhiều công dụng. Chúng ta nên thu thập thêm."
       },
       {
+        "voId": "chr_0023_antal_interact_mine_valub_echo2_01",
         "title": "Khai thác 2",
         "text": "Sẽ nâng cao hiệu suất của chúng ta."
       },
       {
+        "voId": "chr_0023_antal_interact_treasure_valub_01",
         "title": "Mở Thùng",
         "text": "Phát hiện kho tài nguyên giàu lưu trữ. Chúng ta nên phân loại để tìm vật liệu bảo dưỡng trang bị."
       },
       {
+        "voId": "chr_0023_antal_interact_etherium_01",
         "title": "Nhận Aurylene",
         "text": "Một số Aurylene bất ngờ rút lui khi chúng ta tiếp cận. Tại sao? Liệu có phải là phản ứng đẩy dựa trên năng lượng?"
       },
       {
+        "voId": "chr_0023_antal_interact_blight_break_01",
         "title": "Xua Tan Nhiễm Khuẩn",
         "text": "Điều này đồng nghĩa với việc chúng ta đã hiểu thêm về Nhiễm Khuẩn sao...?"
       },
       {
+        "voId": "chr_0023_antal_interact_rest_01",
         "title": "Nghỉ ngơi",
         "text": "Con người không phải máy móc, cần có thời gian để nghỉ ngơi."
       },
       {
+        "voId": "chr_0023_antal_combat_suppuse_using_01",
         "title": "Sử Dụng Vật Phẩm Chiến Thuật 1",
         "text": "Khởi động điều trị khẩn cấp."
       },
       {
+        "voId": "chr_0023_antal_combat_suppuse_getheal_01",
         "title": "Sử Dụng Vật Phẩm Chiến Thuật 2",
         "text": "Tình trạng cơ bản đã được khôi phục."
       },
       {
+        "voId": "chr_0023_antal_combat_remind_danger_01",
         "title": "Cảnh Báo Nguy Hiểm",
         "text": "Phát hiện lệnh tấn công từ phía địch."
       },
       {
+        "voId": "chr_0023_antal_combat_hurt_lowhp_01",
         "title": "Bị Thương",
         "text": "Điều kiện chưa tối ưu nhưng vẫn hoạt động được."
       },
       {
+        "voId": "chr_0023_antal_combat_dead_01",
         "title": "0 HP",
         "text": "Gián đoạn mạch suy nghĩ. Hỗ trợ... không khả dụng."
       },
       {
+        "voId": "chr_0023_antal_combat_remind_praise_01",
         "title": "Cổ Vũ Đội 1",
         "text": "Một màn thể hiện xuất sắc."
       },
       {
+        "voId": "chr_0023_antal_combat_remind_praise_02",
         "title": "Cổ Vũ Đội 2",
         "text": "Chúng tôi đã đạt thỏa thuận hợp tác ngầm."
       },
       {
+        "voId": "chr_0023_antal_combat_remind_praise_echo2_01",
         "title": "Đáp Lại Lời Cổ Vũ 1",
         "text": "Cảm ơn ngài, nhưng dư sức làm tốt hơn nữa."
       },
       {
+        "voId": "chr_0023_antal_combat_remind_praise_echo2_02",
         "title": "Đáp Lại Lời Cổ Vũ 2",
         "text": "Kết quả đã rõ ràng."
       },
       {
+        "voId": "chr_0023_antal_combat_intobattle_01",
         "title": "Bắt Đầu Chiến Đấu 1",
         "text": "Đơn Vị Thuật Pháp đạt tối ưu."
       },
       {
+        "voId": "chr_0023_antal_combat_intobattle_echo2_01",
         "title": "Bắt Đầu Chiến Đấu 2",
         "text": "Tập trung vào chiến đấu. Tôi sẽ yểm trợ hỏa lực."
       },
       {
+        "voId": "chr_0023_antal_combat_outbattle_nor_01",
         "title": "Thắng Trận 1",
         "text": "Tiếp thu kiến thức mới."
       },
       {
+        "voId": "chr_0023_antal_combat_outbattle_nor_02",
         "title": "Thắng Trận 2",
         "text": "Nhiệm vụ hoàn thành. Dễ như trở bàn tay."
       },
       {
+        "voId": "chr_0023_antal_combat_outbattle_nor_echo2_01",
         "title": "Thắng Trận 3",
         "text": "Tất cả đều là nhân tố không thể thay thế trong đội hình."
       },
       {
+        "voId": "chr_0023_antal_combat_outbattle_hard_01",
         "title": "Thắng Trận 4",
         "text": "Kết quả của chúng ta đạt mức tối ưu dù có nhiều biến số bất ngờ trong giao tranh."
       },
       {
+        "voId": "chr_0023_antal_combat_battle_defeat_01",
         "title": "Bại Trận",
         "text": "Bảng tổng hợp tổn thất cho thấy rút lui là giải pháp tốt nhất cho cả đội."
       },
       {
+        "voId": "chr_0023_antal_mono_attack_last_01",
         "title": "Đòn Dứt Điểm 1",
         "text": "Phát hiện sơ hở!"
       },
       {
+        "voId": "chr_0023_antal_mono_attack_last_02",
         "title": "Đòn Dứt Điểm 2",
         "text": "Hừ! Tê liệt đi!"
       },
       {
+        "voId": "chr_0023_antal_mono_skill_nor_01",
         "title": "KN Chiến Đấu 1",
         "text": "Đã cài hướng di chuyển."
       },
       {
+        "voId": "chr_0023_antal_mono_skill_nor_02",
         "title": "KN Chiến Đấu 2",
         "text": "Đã khóa mục tiêu."
       },
       {
+        "voId": "chr_0023_antal_mono_skill_nor_03",
         "title": "KN Chiến Đấu 3",
         "text": "Công suất tối đa."
       },
       {
+        "voId": "chr_0023_antal_combat_skill_comb_ready_01",
         "title": "Chuẩn Bị KN Liên Hoàn 1",
         "text": "Đầy năng lượng."
       },
       {
+        "voId": "chr_0023_antal_combat_skill_comb_ready_02",
         "title": "Chuẩn Bị KN Liên Hoàn 2",
         "text": "Đơn vị đã sẵn sàng, nhiệt độ ổn định."
       },
       {
+        "voId": "chr_0023_antal_mono_skill_comb_release_01",
         "title": "Thi Triển Liên Hoàn 1",
         "text": "Cú điện giật chí mạng."
       },
       {
+        "voId": "chr_0023_antal_mono_skill_comb_release_02",
         "title": "Thi Triển Liên Hoàn 2",
         "text": "Hãy nhanh chóng giành chiến thắng!"
       },
       {
+        "voId": "chr_0023_antal_mono_attack_extra_01",
         "title": "Kết Liễu 1",
         "text": "Bùng Nổ Ion."
       },
       {
+        "voId": "chr_0023_antal_mono_attack_extra_02",
         "title": "Kết Liễu 2",
         "text": "Bùng phát điện áp."
       },
       {
+        "voId": "chr_0023_antal_mono_skill_ultimate_01",
         "title": "Tuyệt Kỹ 1",
         "text": "Chiến thắng chấn động."
       },
       {
+        "voId": "chr_0023_antal_mono_skill_ultimate_02",
         "title": "Tuyệt Kỹ 2",
         "text": "Mạch điện được khuếch đại!"
       },
       {
+        "voId": "chr_0023_antal_mono_skill_ultimate_03",
         "title": "Tuyệt Kỹ 3",
         "text": "Đến lúc nạp năng lượng rồi!"
       }

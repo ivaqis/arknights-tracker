@@ -120,330 +120,412 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0018_dapan_chrbark_squad_01",
         "title": "Préparation de l'opération 1",
         "text": "Oh, Endmin ! Les préparatifs sont terminés ?"
       },
       {
+        "voId": "chr_0018_dapan_chrbark_squad_02",
         "title": "Préparation de l'opération 2",
         "text": "Il ne faut pas gâcher de nourriture... Oh ! Content de te voir !"
       },
       {
+        "voId": "chr_0018_dapan_chrbark_join_01",
         "title": "Intégration à l'équipe 1",
         "text": "Je vais enfin pouvoir me dégourdir les jambes ! Tu veux voir de quoi je suis capable ?"
       },
       {
+        "voId": "chr_0018_dapan_chrbark_join_02",
         "title": "Intégration à l'équipe 2",
         "text": "Si c'est toi qui mène la barque, je te suis."
       },
       {
+        "voId": "chr_0018_dapan_chrbark_weap_01",
         "title": "Changement d'arme",
         "text": "Oh ! Cette arme est très bien équilibrée. Tu dois l'avoir payée une fortune."
       },
       {
+        "voId": "chr_0018_dapan_chrbark_gear_01",
         "title": "Changement d'équipement",
         "text": "Ça faisait longtemps que je n'avais pas été aussi équipé. Hmpf... Ah ! Alors, qu'est-ce que tu en penses ? Pas mal, hein ?"
       },
       {
+        "voId": "chr_0018_dapan_chrup_skill_01",
         "title": "Activation de la matrice de capacités",
         "text": "Quand on ne sait pas cuisiner un plat, il suffit de s'entraîner ! Je ne cuisine pas pour me faire valoir, mais pour vous offrir de beaux festins !"
       },
       {
+        "voId": "chr_0018_dapan_chrup_level_01",
         "title": "Visionnage d'archives de combat",
         "text": "Il n'est jamais trop tard pour apprendre. L'important, c'est de faire en sorte de garder l'usage de ses jambes !"
       },
       {
+        "voId": "chr_0018_dapan_chrup_promt01_01",
         "title": "Promotion d'opérateur 1",
         "text": "Je ne suis certainement pas un grand guerrier, mais ton choix me flatte. Je n'ai pas de vin sur moi, donc je vais vider cette théière en gage de gratitude !"
       },
       {
+        "voId": "chr_0018_dapan_chrup_promt02_01",
         "title": "Promotion d'opérateur 2",
         "text": "Mes talents sont certes limités, mais je veille toujours à être à la hauteur de la tâche ! Alors, j'accepte cette promotion. Si tu as besoin de moi, appelle-moi. Je ne te décevrai pas."
       },
       {
+        "voId": "chr_0018_dapan_chrup_promt03_01",
         "title": "Promotion d'opérateur 3",
         "text": "C'est très gentil de ta part, mais ça veut dire que je vais devoir fermer ma boutique de Wuling pour le moment... Quand tu auras le temps, on reviendra et je te préparerai un véritable festin... et je demanderai à ma famille de s'occuper de l'affaire."
       },
       {
+        "voId": "chr_0018_dapan_chrup_promt04_01",
         "title": "Promotion d'opérateur 4",
         "text": "La dernière fois que je suis allé à Hongshan, ma maîtresse a tout fait pour me convaincre d'intégrer un projet à l'Académie. Quand je lui ai dit que je travaillais pour Endfield, elle a arrêté. Je ne vais pas te mentir, Endmin, je suis vraiment flatté de m'être vu offrir un poste officiel à bord du Dijiang... Hé, pourquoi tu rougis ?"
       },
       {
+        "voId": "chr_0018_dapan_introduce_01",
         "title": "Opératrice au rapport",
         "text": "Oh, comme nous nous retrouvons, Endmin. Tu as un problème technique ? Je m'en occupe, pas de souci ! Et s'il y a du travail pour moi dans la cantine, c'est encore mieux !"
       },
       {
+        "voId": "chr_0018_dapan_mono_switch_01",
         "title": "En attente 1",
         "text": "Alors, on va où, Endmin ?"
       },
       {
+        "voId": "chr_0018_dapan_mono_switch_02",
         "title": "En attente 2",
         "text": "Tu as du travail pour moi ? Je m'en charge."
       },
       {
+        "voId": "chr_0018_dapan_sim_assign_work_01",
         "title": "Affectation à une installation",
         "text": "Ne t'en fais pas. Prends ta pause. Dès que j'aurai réussi à entrer dans ma tenue de travail, je te rejoindrai."
       },
       {
+        "voId": "chr_0018_dapan_sim_hello_lower_01",
         "title": "Salutation 1",
         "text": "Quand tu auras le temps, je te préparerai un véritable festin !"
       },
       {
+        "voId": "chr_0018_dapan_sim_hello_max_01",
         "title": "Salutation 2",
         "text": "Tu as envie de quelque chose qui n'est pas au menu de la cafétéria du Dijiang ? C'est dans mes cordes."
       },
       {
+        "voId": "chr_0018_dapan_sim_talk_lv01_01",
         "title": "Bavardage sur le Dijiang 1",
         "text": "Tu as encore perdu du poids. Fais plus attention à ta santé, je t'en prie. Tu veux que je te prépare quelque chose ?"
       },
       {
+        "voId": "chr_0018_dapan_sim_talk_lv02_01",
         "title": "Bavardage sur le Dijiang 2",
         "text": "Hmpf. La cafétéria du Dijiang ne m'a pas convaincu. Attends, avant de me contredire. Essaie ça, c'est moi qui l'ai fait !"
       },
       {
+        "voId": "chr_0018_dapan_sim_talk_lv02_02",
         "title": "Bavardage sur le Dijiang 3",
         "text": "Apparemment, tu as discuté avec les jeunes qui n'étaient pas d'accord avec moi. Mais ce n'est pas grave. Tianshi, chefs, je m'en fiche bien. Tout le monde à bord du Dijiang n'a pas le temps de bavarder avec un vieux panda."
       },
       {
+        "voId": "chr_0018_dapan_sim_talk_max_01",
         "title": "Bavardage sur le Dijiang 4",
         "text": "Je retrouve beaucoup de technologie de l'Académie à bord du Dijiang. Le fruit du dur labeur des experts en technologie orbitale de l'ASH. Tu n'imagines pas à quel point ces vieux croûtons peuvent être bruyants ! Ils seraient capables de déclencher des guerres pour décider où placer un minuscule module de diagnostic !"
       },
       {
+        "voId": "chr_0018_dapan_sim_talk_max_02",
         "title": "Bavardage sur le Dijiang 5",
         "text": "Les dortoirs d'Endfield ne sont pas assez grands ! Sauf ton respect, j'ai essayé de m'étirer ce matin et je me suis abîmé les coudes et les genoux ! Je t'en prie, fais quelque chose !"
       },
       {
+        "voId": "chr_0018_dapan_sim_talk_max_03",
         "title": "Bavardage sur le Dijiang 6",
         "text": "Si tu vois André, dis au Gros hibou que le Vieux panda attend ses dernières idées ! Et dis-lui d'arrêter de se cacher !"
       },
       {
+        "voId": "chr_0018_dapan_sim_gift_give_01",
         "title": "Cadeaux offerts",
         "text": "{F}Je t'ai trouvée, Endmin ! Voici quelque chose de spécial pour toi. Ça vient tout droit de Hongshan !{M}Je t'ai trouvé, Endmin ! Voici quelque chose de spécial pour toi. Ça vient tout droit de Hongshan !"
       },
       {
+        "voId": "chr_0018_dapan_sim_gift_recv_01",
         "title": "Cadeaux acceptés",
         "text": "Je suis honoré !"
       },
       {
+        "voId": "chr_0018_dapan_mono_self_line01",
         "title": "Dialogue à cœur ouvert 1",
         "text": "Je sais qu'il y a beaucoup de travail à faire dans les laboratoires, alors dis-moi comment je peux t'aider ! J'ai travaillé comme chef, électricien, charpentier et routier. Je peux tout faire ! Oh, tu as une question sur ma flasque « Ouvrier de l'Avant-garde » ? Héhé, elle ne contient que du thé."
       },
       {
+        "voId": "chr_0018_dapan_mono_self_line02",
         "title": "Dialogue à cœur ouvert 2",
         "text": "Endmin, tu dois visiter le siège de l'Académie des sciences de Hongshan. Même si la perspective de découvrir un nouvel endroit ne t'enchante pas, les débats entre les élèves peuvent être très intéressants. Tu ne t'en souviens sûrement pas, mais ton travail est cité dans beaucoup de projets de pointe. En fait, je crois que même moi, j'ai cité ton étude."
       },
       {
+        "voId": "chr_0018_dapan_mono_self_line03",
         "title": "Dialogue à cœur ouvert 3",
         "text": "Mon wok en fer noir est étanche, à l'épreuve du feu et il arrête même les munitions gravées. S'il le faut, je n'ai qu'à le porter sur mon dos pour me protéger ! Enfin... Endmin, s'il suffit d'un petit effort supplémentaire pour prendre l'avantage le moment venu, je pense qu'on n'a pas le choix."
       },
       {
+        "voId": "chr_0018_dapan_mono_self_line04",
         "title": "Dialogue à cœur ouvert 4",
         "text": "Moi ? Pan Yuan, le gentil vieux panda ? Ah ! À l'époque, aucun membre de l'ASH ne voulait croiser mon chemin. Le grand Pan Yuan a mis un terme à tous les désaccords scientifiques et... Hmpf. Parfois, s'en tenir à des faits concrets, ça peut ruiner des années de travail acharné. J'ai essayé de me rattraper, mais aujourd'hui, je regrette mon entêtement... Ne prends pas cette histoire au pied de la lettre."
       },
       {
+        "voId": "chr_0018_dapan_mono_self_line05",
         "title": "Dialogue à cœur ouvert 5",
         "text": "Quand tu auras fini de régler les problèmes qui se posent ici, je serais honoré que tu visites Hongshan. Ne t'inquiète pas, tu auras tout le temps de flâner dans les boutiques locales. Et je pourrai te préparer n'importe quelle spécialité de Hongshan dans mon restaurant ! Et tu passeras à l'Académie avec moi. J'ai un projet à terminer et j'espère pouvoir mettre en pratique ce que j'ai appris à tes côtés ! En tout cas, puisque tu es là, je n'abandonnerai pas avant d'être sorti de l'impasse !"
       },
       {
+        "voId": "chr_0018_dapan_mono_chat_line01",
         "title": "Discussion 1",
         "text": "Un bon plat, ça ne s'improvise pas. Il faut s'entraîner et apprendre de ses erreurs. C'est le seul moyen d'obtenir le parfait mélange de saveurs. Tu n'es pas d'accord ?"
       },
       {
+        "voId": "chr_0018_dapan_mono_chat_line02",
         "title": "Discussion 2",
         "text": "Tu as tout compris ! Pour régler un problème technique, il ne faut pas tourner autour du pot. Il faut se consacrer à la question et aplanir les désaccords pour travailler en bonne entente. Il ne faut pas garder ça pour soi. Hmpf... Je te raconterai cette histoire plus tard, j'ai encore du mal à en parler."
       },
       {
+        "voId": "chr_0018_dapan_mono_chat_line03",
         "title": "Discussion 3",
         "text": "La ville de Wuling. Impossible d'en parler sans évoquer ses incroyables paysages naturels, ma boutique, les parties de mah-jong qui y sont organisées en dépit de la Marée gangrénée. Je sais que j'en parle beaucoup, mais ça me manque vraiment ! Peut-être que j'y ai trop pris mes aises, après ma retraite. Hé, arrête de rigoler ! Et puisqu'on en parle... une petite partie de mah-jong, ça te dit ?"
       },
       {
+        "voId": "chr_0018_dapan_mono_chat_line04",
         "title": "Discussion 4",
         "text": "J'ai visité beaucoup de villes et j'ai appris de nombreux chefs. Aucun n'a hésité à me faire part de ses techniques et de ses recettes. Mais l'apprentissage des arts culinaires n'est pas aisé pour tout le monde."
       },
       {
+        "voId": "chr_0018_dapan_mono_chat_line05",
         "title": "Discussion 5",
         "text": "{F}Je pensais pouvoir profiter de ma retraite en cuisinant, en préparant du thé... Et puis, tu es arrivée et me voilà accablé de travail. Qu'est-ce que j'en pense ? Eh bien, ma foi, je ne suis pas mécontent !{M}Je pensais pouvoir profiter de ma retraite en cuisinant, en préparant du thé... Et puis, tu es arrivé et me voilà accablé de travail. Qu'est-ce que j'en pense ? Eh bien, ma foi, je ne suis pas mécontent !"
       },
       {
+        "voId": "chr_0018_dapan_mono_about_line01",
         "title": "Thème : les infectés",
         "text": "Se faire « infecter » n'est plus une condamnation à mort. La plupart se disent simplement qu'ils n'ont pas eu de chance et tournent la page... Mais si tu te rends dans les villages situés au-delà de la Ceinture, ton point de vue sur l'oripositivité risque de changer."
       },
       {
+        "voId": "chr_0018_dapan_mono_about_line02",
         "title": "Thème : la faille",
         "text": "On a passé des années à étudier l'immense faille qui se trouve sous la ville de Wuling. Si tu as besoin de ses dimensions exactes, je peux utiliser mon wok. Mais on est encore loin de trouver une solution permanente..."
       },
       {
+        "voId": "chr_0018_dapan_mono_about_line03",
         "title": "Thème : Zhuang Fangyi",
         "text": "Oh. Tu as vu la vice-reine Zhuang ? Elle n'a pas changé. Elle s'efforce encore de paraître sévère alors qu'en fait, elle est d'une douceur sans pareille. C'est à cause de ça qu'elle est si triste, si impopulaire et... Hmpf. On en discutera un autre jour."
       },
       {
+        "voId": "chr_0018_dapan_mono_about_line04",
         "title": "Thème : l'Académie des sciences de Hongshan (ASH)",
         "text": "C'est ridicule ! Qui a dit que l'ASH n'admettait que les candidats d'origine yanaise ? L'ascendance n'est pas prise en compte. On accepte tous ceux qui savent collaborer avec les deux autres factions et qui ont la patience que requiert tout travail scientifique."
       },
       {
+        "voId": "chr_0018_dapan_mono_about_line05",
         "title": "Thème : Lifeng",
         "text": "Lifeng est trop tendu. Rien qu'en le voyant, je suis fatigué. Alors, je fais de mon mieux pour l'aider à se détendre. Par chance, il refuse rarement de plaisanter avec moi. Il a l'esprit vif et il est capable de se débrouiller seul, mais je ne sais pas si c'est une bonne chose..."
       },
       {
+        "voId": "chr_0018_dapan_mono_about_line06",
         "title": "Thème : la Vallée-IV",
         "text": "L'usine du GIA va considérablement améliorer la vie des nomades. Mais chacun a ses propres idées et les grandes initiatives font toujours face à des obstacles. Il faudra juste persévérer. De mon côté, je fais de mon mieux et je ne m'attribuerai pas le mérite de ce qu'on a accompli dans la Vallée-IV !"
       },
       {
+        "voId": "chr_0018_dapan_explore_point_common_01",
         "title": "Détection de ressource/objet à collecter 1",
         "text": "Ce n'est pas facile à trouver. Remplis tes poches, n'hésite pas."
       },
       {
+        "voId": "chr_0018_dapan_explore_point_valub_01",
         "title": "Détection de ressource/objet à collecter 2",
         "text": "C'est très rare. Il va falloir organiser une mission de récupération."
       },
       {
+        "voId": "chr_0018_dapan_explore_find_locked_01",
         "title": "Zone inexplorée détectée",
         "text": "Cet endroit ne me dit rien qui vaille. Fais attention."
       },
       {
+        "voId": "chr_0018_dapan_explore_find_danger_01",
         "title": "Découverte d'un ennemi puissant",
         "text": "Attention. Celui-ci va nous donner du fil à retordre."
       },
       {
+        "voId": "chr_0018_dapan_interact_mine_valub_01",
         "title": "Extraction 1",
         "text": "Un minerai de qualité !"
       },
       {
+        "voId": "chr_0018_dapan_interact_mine_valub_echo2_01",
         "title": "Extraction 2",
         "text": "Merci pour votre dur labeur !"
       },
       {
+        "voId": "chr_0018_dapan_interact_treasure_valub_01",
         "title": "Ouverture de caisse",
         "text": "Jackpot ! Ha ! Je plaisante."
       },
       {
+        "voId": "chr_0018_dapan_interact_etherium_01",
         "title": "Obtention d'aurylène",
         "text": "Je vais garder cette aurylène pour toi."
       },
       {
+        "voId": "chr_0018_dapan_interact_blight_break_01",
         "title": "Élimination de la Gangrène",
         "text": "Gangrène neutralisée ! Argh, c'est épuisant."
       },
       {
+        "voId": "chr_0018_dapan_interact_rest_01",
         "title": "Repos",
         "text": "J'ai assez mangé et dormi. Allons-y."
       },
       {
+        "voId": "chr_0018_dapan_combat_suppuse_using_01",
         "title": "Utilisation de tactique 1",
         "text": "Pas de panique, je m'occupe de toi !"
       },
       {
+        "voId": "chr_0018_dapan_combat_suppuse_getheal_01",
         "title": "Utilisation de tactique 2",
         "text": "Ça va mieux."
       },
       {
+        "voId": "chr_0018_dapan_combat_remind_danger_01",
         "title": "Avertissement de danger",
         "text": "Attention ! Évite ça !"
       },
       {
+        "voId": "chr_0018_dapan_combat_hurt_lowhp_01",
         "title": "Blessure",
         "text": "Argh... Ce n'est pas la grande forme."
       },
       {
+        "voId": "chr_0018_dapan_combat_dead_01",
         "title": "0 PV",
         "text": "Désolé, mais j'ai besoin d'un moment !"
       },
       {
+        "voId": "chr_0018_dapan_combat_remind_praise_01",
         "title": "Encouragement de l'équipe 1",
         "text": "Joli coup, très professionnel !"
       },
       {
+        "voId": "chr_0018_dapan_combat_remind_praise_02",
         "title": "Encouragement de l'équipe 2",
         "text": "On forme une bonne équipe !"
       },
       {
+        "voId": "chr_0018_dapan_combat_remind_praise_echo2_01",
         "title": "Réaction face aux encouragements 1",
         "text": "De rien !"
       },
       {
+        "voId": "chr_0018_dapan_combat_remind_praise_echo2_02",
         "title": "Réaction face aux encouragements 2",
         "text": "Beau travail, l'équipe !"
       },
       {
+        "voId": "chr_0018_dapan_combat_intobattle_01",
         "title": "Début du combat 1",
         "text": "Tu veux du panda ? Alors, viens me chercher !"
       },
       {
+        "voId": "chr_0018_dapan_combat_intobattle_echo2_01",
         "title": "Début du combat 2",
         "text": "Toi, tu prends les décisions et moi, je m'occupe du reste !"
       },
       {
+        "voId": "chr_0018_dapan_combat_outbattle_nor_01",
         "title": "Victoire au combat 1",
         "text": "C'est pour ça que c'est toi qui décides !"
       },
       {
+        "voId": "chr_0018_dapan_combat_outbattle_nor_02",
         "title": "Victoire au combat 2",
         "text": "C'était un beau combat ! Maintenant, il faut manger."
       },
       {
+        "voId": "chr_0018_dapan_combat_outbattle_nor_echo2_01",
         "title": "Victoire au combat 3",
         "text": "Bien dit ! C'était amusant et on a gagné !"
       },
       {
+        "voId": "chr_0018_dapan_combat_outbattle_hard_01",
         "title": "Victoire au combat 4",
         "text": "C'était moins une. Mon wok en fer a failli y rester."
       },
       {
+        "voId": "chr_0018_dapan_combat_battle_defeat_01",
         "title": "Défaite au combat",
         "text": "Pas de panique. Je vais préparer à manger pour l'équipe et venger notre défaite !"
       },
       {
+        "voId": "chr_0018_dapan_mono_attack_last_01",
         "title": "Coup final 1",
         "text": "Encaisse ça !"
       },
       {
+        "voId": "chr_0018_dapan_mono_attack_last_02",
         "title": "Coup final 2",
         "text": "PRENDS ÇA !"
       },
       {
+        "voId": "chr_0018_dapan_mono_skill_nor_01",
         "title": "Compétence de combat 1",
         "text": "WOK DANS TA FACE !"
       },
       {
+        "voId": "chr_0018_dapan_mono_skill_nor_02",
         "title": "Compétence de combat 2",
         "text": "MANGE ÇA !"
       },
       {
+        "voId": "chr_0018_dapan_mono_skill_nor_03",
         "title": "Compétence de combat 3",
         "text": "ET HOP, EN L'AIR !"
       },
       {
+        "voId": "chr_0018_dapan_combat_skill_comb_ready_01",
         "title": "Compétence de combo prête 1",
         "text": "Besoin d'un coup de main ?"
       },
       {
+        "voId": "chr_0018_dapan_combat_skill_comb_ready_02",
         "title": "Compétence de combo prête 2",
         "text": "Je vais vous en mettre plein les yeux !"
       },
       {
+        "voId": "chr_0018_dapan_mono_skill_comb_release_01",
         "title": "Utilisation de combo 1",
         "text": "Droit devant !"
       },
       {
+        "voId": "chr_0018_dapan_mono_skill_comb_release_02",
         "title": "Utilisation de combo 2",
         "text": "Tu vas mordre la poussière !"
       },
       {
+        "voId": "chr_0018_dapan_mono_attack_extra_01",
         "title": "Coup fatal 1",
         "text": "À jamais !"
       },
       {
+        "voId": "chr_0018_dapan_mono_attack_extra_02",
         "title": "Coup fatal 2",
         "text": "C'EST LA MAISON QUI OFFRE !"
       },
       {
+        "voId": "chr_0018_dapan_mono_skill_ultimate_01",
         "title": "Ultime 1",
         "text": "UN BON COUP DE WOK !"
       },
       {
+        "voId": "chr_0018_dapan_mono_skill_ultimate_02",
         "title": "Ultime 2",
         "text": "LE COUP SPÉCIAL DU PANDA !"
       },
       {
+        "voId": "chr_0018_dapan_mono_skill_ultimate_03",
         "title": "Ultime 3",
         "text": "Et fais en sorte... QU'IL N'EN RESTE PLUS UNE MIETTE !"
       }

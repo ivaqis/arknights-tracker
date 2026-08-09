@@ -126,322 +126,402 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0012_avywen_chrbark_squad_01",
         "title": "작전 준비 1",
         "text": "음? 저도 마침 관리자님한테 가려던 참이었어요."
       },
       {
+        "voId": "chr_0012_avywen_chrbark_squad_02",
         "title": "작전 준비 2",
         "text": "쉿, 눈 깜빡이지 마세요. 절 놓칠지도 모르니까요."
       },
       {
+        "voId": "chr_0012_avywen_chrbark_join_01",
         "title": "팀 가입 1",
         "text": "역시 절 믿고 계시네요. 이렇게 엄청난 금액을 제시할 정도라니..."
       },
       {
+        "voId": "chr_0012_avywen_chrbark_join_02",
         "title": "팀 가입 2",
         "text": "저 좀 앞으로 보내주시면 안 될까요? 뒤에 있는 거 싫단 말이에요. 관리자님이랑도 너무 멀고요!"
       },
       {
+        "voId": "chr_0012_avywen_chrbark_weap_01",
         "title": "무기 변경",
         "text": "저희 가문에는 이런 말이 있어요... '무기는 우리 몸의 일부다.' 작은 키를 대신하라는 말일까요?"
       },
       {
+        "voId": "chr_0012_avywen_chrbark_gear_01",
         "title": "장비 변경",
         "text": "전 이것만큼은 절대 아끼지 않아요. 먼 길을 떠날 때, 목표만큼 중요한 게 편한 신발이거든요."
       },
       {
+        "voId": "chr_0012_avywen_chrup_skill_01",
         "title": "재능 배열 활성화",
         "text": "지금 돌아보면 참 많은 곳을 다녔네요. 고향을 떠나 지내왔던 그 시절을 생각하면... 정말 멀리 와버렸어요."
       },
       {
+        "voId": "chr_0012_avywen_chrup_level_01",
         "title": "작전 기록 관찰",
         "text": "혹시 이번 작전 과정이 외부인한테 알려지진 않겠죠? 제 장창을 기억하는 사람들이 있거든요. 제 이름까지 유출되진 않았으면 좋겠는데..."
       },
       {
+        "voId": "chr_0012_avywen_chrup_promt01_01",
         "title": "정예화 돌파 1",
         "text": "이 정도는 별거 아니죠. 전 전문가니까요."
       },
       {
+        "voId": "chr_0012_avywen_chrup_promt02_01",
         "title": "정예화 돌파 2",
         "text": "흠, 관리자님이 언젠가 이런 느낌에 의존하게 될 줄 알았어요. 그래서... 저 아니면 절대 안 되는 임무가 뭐죠?"
       },
       {
+        "voId": "chr_0012_avywen_chrup_promt03_01",
         "title": "정예화 돌파 3",
         "text": "공적으로 생각하든, 사적으로 생각하든... 어느 쪽이든 합리적이니까, 조금은 사적으로 생각해도 되는 거겠죠? 부끄러워하지 마세요...! 무슨 말인지 알아요, 다 안다고요."
       },
       {
+        "voId": "chr_0012_avywen_chrup_promt04_01",
         "title": "정예화 돌파 4",
         "text": "대가족이다 보니 전 어릴 때부터 밥을 먹든, 잠을 자든 항상 동생들이랑 그 순서를 놓고 다퉈야했어요. 그래서, 가장 첫 번째 자리를 꿰차는 건 저한테 어려운 일이 아니에요. 그러니까... 관리자님도 항상 절 가장 먼저 떠올려 주셔야 해요."
       },
       {
+        "voId": "chr_0012_avywen_introduce_01",
         "title": "오퍼레이터 첫인사",
         "text": "드디어 실제로 만나 뵙네요, 유명하신 관리자님? 오는 길에, 관리자님에 관한 소문을 많이 들었답니다. 음? 어떤 소문이 가장 진짜 같다고 생각하냐면... 이렇게 하죠. 관리자님은 아직 저에 대한 걸 아무것도 모르시잖아요? 그럼 이건 공정한 거래라고 할 수 없어요. 제 비밀을 하나 알려드릴 테니까, 관리자님도 관리자님의 진짜 모습을 하나 알려주는 거예요. 알겠죠?"
       },
       {
+        "voId": "chr_0012_avywen_mono_switch_01",
         "title": "명령 대기 1",
         "text": "어느 쪽으로 갈까요?"
       },
       {
+        "voId": "chr_0012_avywen_mono_switch_02",
         "title": "명령 대기 2",
         "text": "어때요? 예쁜 각도죠?"
       },
       {
+        "voId": "chr_0012_avywen_sim_assign_work_01",
         "title": "시설 배치",
         "text": "지금 바로 출발할게요."
       },
       {
+        "voId": "chr_0012_avywen_sim_hello_lower_01",
         "title": "인사 1",
         "text": "어? 관리자님, 어디 가시는 거죠?"
       },
       {
+        "voId": "chr_0012_avywen_sim_hello_max_01",
         "title": "인사 2",
         "text": "반가워요, 관리자님. 절 피했던 건 아니죠?"
       },
       {
+        "voId": "chr_0012_avywen_sim_talk_lv01_01",
         "title": "제강호 잡담 1",
         "text": "관리자님, 또 만났네요. 5분 전이랑 똑같이 귀여우신걸요?"
       },
       {
+        "voId": "chr_0012_avywen_sim_talk_lv02_01",
         "title": "제강호 잡담 2",
         "text": "관리자님, 이 제강호는 직접 만드신 건가요? 정말 대단해요. 하늘 위에 잠깐 떠 있었을 뿐인데, 제가 몇 년이나 걸었던 거리를 다 지나가 버렸거든요!"
       },
       {
+        "voId": "chr_0012_avywen_sim_talk_lv02_02",
         "title": "제강호 잡담 3",
         "text": "얼굴에 뭐가 묻으신 거 아닌가요? 오른쪽이에요... 하하, 장난이었어요. 이렇게 당황한 모습은 정말 귀한데요?"
       },
       {
+        "voId": "chr_0012_avywen_sim_talk_max_01",
         "title": "제강호 잡담 4",
         "text": "갑판 위에 서니까... 탈로스 II가 커다란 공 모양이라는 게 실감 나요. 그러니까... 어느 방향으로 가더라도 결국 다시 만나게 되겠죠."
       },
       {
+        "voId": "chr_0012_avywen_sim_talk_max_02",
         "title": "제강호 잡담 5",
         "text": "이따가 또 지상으로 갈 일이 있는데, 뭔가 갖고 싶은 건 없으신가요? 한번 생각해 보세요. 시간이 얼마 없답니다?"
       },
       {
+        "voId": "chr_0012_avywen_sim_talk_max_03",
         "title": "제강호 잡담 6",
         "text": "어젯밤에 본 공포 영화 말이에요. 별로 안 무서웠죠? 역시... 우리의 담력을 시험할 만한 영화는 아직 못 찾은 것 같아요! 음, 그럼... 다음에 또 부를게요."
       },
       {
+        "voId": "chr_0012_avywen_sim_gift_give_01",
         "title": "선물 증정",
         "text": "이건 제가 관리자님한테 주려고 특별히 가져온 거예요, 엄청 힘들게 찾은 거 있죠? 이걸 보고 나서, 뭐 좀 생각나는 거 없어요?"
       },
       {
+        "voId": "chr_0012_avywen_sim_gift_recv_01",
         "title": "선물 수락",
         "text": "저처럼 이렇게 예쁜 여자가 선물을 한두 개 받아봤겠어요? 하지만 관리자님이 준 이 선물은... 그것들 중에 가장 특별해요."
       },
       {
+        "voId": "chr_0012_avywen_mono_self_line01",
         "title": "신뢰 대화 1",
         "text": "사람의 마음이란건... 참 복잡해요. 근데 예전에 전 그걸 이해할 필요가 없었어요. 전달자로서, 그냥 편지를 목적지에 전달하기만 하면 되니까요. 괜히 일에 끼어들었다가 저한테... 아니에요. 이 얘기는 다음에 말씀드릴게요."
       },
       {
+        "voId": "chr_0012_avywen_mono_self_line02",
         "title": "신뢰 대화 2",
         "text": "음, 사실 전에 있던 곳에서는 지금보다 훨씬 더 많은 보수를 받았어요! 하하하, 하지만 저희 가문 사람들은 절대 손해 보는 장사를 하진 않는답니다. 제가 왜 더 적은 보수를 받고도 여기에 있는지... 부끄러워하지 않으셔도 돼요, 다 이해해요."
       },
       {
+        "voId": "chr_0012_avywen_mono_self_line03",
         "title": "신뢰 대화 3",
         "text": "밴드에서 시작된 여정 속에서 전 북쪽의 옛 개척 지역에서 극한의 추위를 견디고, 만물의 대지의 목초지에서 백야를 보내고, 세쉬카인들이 하늘에 띄운 배를 보고, 철의 서약군 요새 밖에서 끝없이 내리는 빗소리도 들었어요. 그런데 말이죠. 그 모든 곳에서 관리자님의 이름이 울려 퍼지고 있더라고요."
       },
       {
+        "voId": "chr_0012_avywen_mono_self_line04",
         "title": "신뢰 대화 4",
         "text": "음, 그냥 절 람포라고 불러주세요. '아비웨나'는 사실 저희 가문의 성씨거든요. 앗, 웃으시면 안 돼요. 저한테는 꽤 중요하고 진지한 일이니까요. 이건 제가 관리자님한테만 알려드리는 비밀이에요. 어디 가서 소문내지 마시고요. 절 쫓는 나쁜 녀석들이 관리자님한테 들러붙으면 안 되잖아요? 뭐, 물론... 관리자님이 절 지켜주고 싶으신 거라면 또 모르겠지만요?"
       },
       {
+        "voId": "chr_0012_avywen_mono_self_line05",
         "title": "신뢰 대화 5",
         "text": "관리자님, 이 넓은 탈로스 II에서 얼마나 많은 곳을 가보셨나요? 아니, 음...그래요, 얼마나 많은 곳을 기억하고 계시죠? 흐음... 관리자님이 빨리 모든 걸 기억해 내셨으면 좋겠어요. 그러면 우리가 더 많은 추억을 만들 수 있을 테니까요."
       },
       {
+        "voId": "chr_0012_avywen_mono_chat_line01",
         "title": "대화 1",
         "text": "저희 가문은 밴드의 도시에서 대대로 전달자로서의 삶을 이어가고 있어요. 관리자님의 가문은 어때요?"
       },
       {
+        "voId": "chr_0012_avywen_mono_chat_line02",
         "title": "대화 2",
         "text": "제 '비밀 아지트'에 오신 걸 환영해요. 의외인가요? 자주 오진 않지만, 전 집을 아늑하게 꾸며놓는 걸 좋아하거든요. 여행자한테 가장 필요한 건, 오히려 이렇게 언제든 돌아올 수 있는 곳이니까요."
       },
       {
+        "voId": "chr_0012_avywen_mono_chat_line03",
         "title": "대화 3",
         "text": "전달자는 수많은 비밀을 전달해요. 모든 비밀 하나하나가 귀중한 가치를 갖고 있죠. 하지만 비밀들보다 더 가치 있는 건... 제가 절대 비밀을 발설하지 않는다는 사실이에요."
       },
       {
+        "voId": "chr_0012_avywen_mono_chat_line04",
         "title": "대화 4",
         "text": "누구든... 거절당하면 기분이 나빠지는 법이죠. 그러니까, 말로 해결할 수 있는 일이라면 저도 굳이 폭력을 사용하고 싶진 않아요. 하지만 그렇다고 제가 거절당하는 걸 좋아하는 사람은 아니라서요?"
       },
       {
+        "voId": "chr_0012_avywen_mono_chat_line05",
         "title": "대화 5",
         "text": "레인 소장님 말이에요, 아직 기억하시나요? 그분께서 엔드필드를 추천해 주셨거든요. 진짜... 그 소장님은 몇 달 동안 단 한 번도 저한테 좋은 표정을 보여주신 적이 없어요. 그러더니 이 '재앙' 같은 절 여기로 보내버리겠다고 하셨죠. 근데 또 들어보니까, 참 명예롭게 퇴직한 직원이셨더라고요. 퇴직할 때 적어도 열댓 명은 눈물을 글썽일 정도로요. 그러니까 분명 엔드필드를 망치겠다고 절 보내신 건 아니었을 거예요, 그렇죠?"
       },
       {
+        "voId": "chr_0012_avywen_mono_about_line01",
         "title": "엔드필드에 관하여",
         "text": "제가 어릴 때 살았던 합금 무성을 빼면, 가장 오래 머문 곳이 바로 이 곳, 엔드필드예요. 어쩌면... 제가 또다시 정착한 삶에 익숙해지고 있는지도 모르겠네요."
       },
       {
+        "voId": "chr_0012_avywen_mono_about_line02",
         "title": "가문의 일에 관하여",
         "text": "스타게이트를 넘나들던 시절, 저희 가문의 선조님들은 모두 트럭을 운전했어요. 거대한 트럭들이 지평선 끝을 따라 나아가며, 찬란하게 이어지는 길을 그려내곤 했죠. 그 다음엔 증조할머니, 할머니, 어머니까지... 어느샌가, 가족들은 밴드의 슬론 보안 회사에서 일하기 시작했고요! 제가 그 일을 그만두겠다고 결정했을 때, 가족들이... 흠흠, 말 안 해도 아시겠죠? 제가 얼마나 많은 어려움을 이겨내고 관리자님 앞에 이렇게 서 있는지 말이에요."
       },
       {
+        "voId": "chr_0012_avywen_mono_about_line03",
         "title": "의상에 관하여",
         "text": "제 옷은 실용성과 패션을 모두 고려해서 디자인한 거예요! 오랜 시간 야외에서 활동하기 위해서는 두 가지 원칙을 지켜야 하거든요. 무엇이든 몸에 많이 달아라, 그리고... 쓸데없는 사건에는 휘말리지 말아라."
       },
       {
+        "voId": "chr_0012_avywen_mono_about_line04",
         "title": "합금 무성에 관하여",
         "text": "관리자님이 합금 무성에 한 번도 가본 적이 없으실 거라고는 생각지도 못했어요! 미리 말씀드리지만, 이건 절대 제가 과장하는 게 아니에요. 탈로스 II에서 참 많은 곳을 다녔는데, 그중에서 가장 따뜻한 인간미가 느껴지는 곳은 저희 합금 무성의 크고 작은 광산 동굴들이라고 생각하거든요. 그곳의 아이들은 끈끈한 인간관계와 즐거운 분위기 속에서 살아가요. 저희한테는 이런 말이 있어요. '거대한 드릴보다 더 단단한 건, 오직 우리의 우정뿐이다.'"
       },
       {
+        "voId": "chr_0012_avywen_explore_point_common_01",
         "title": "자원 발견 1",
         "text": "바늘이 움직이고 있어요. 근처에 좋은 물건이 있을지도 몰라요."
       },
       {
+        "voId": "chr_0012_avywen_explore_point_valub_01",
         "title": "자원 발견 2",
         "text": "절 따라오세요. 전에 여길 지나가다가 보물이 숨겨진 곳에 표시를 해놨었거든요!"
       },
       {
+        "voId": "chr_0012_avywen_explore_find_locked_01",
         "title": "미탐색 구역 발견",
         "text": "이 근처에 저도 아직 못 가본 곳이 있어요!"
       },
       {
+        "voId": "chr_0012_avywen_explore_find_danger_01",
         "title": "강한 적 발견",
         "text": "저 녀석... 협상의 가능성을 짓밟아버렸네요."
       },
       {
+        "voId": "chr_0012_avywen_interact_mine_valub_01",
         "title": "광물 채집 1",
         "text": "선조님들이 림 빌리턴에 계실 때 사용했던 기술이에요!"
       },
       {
+        "voId": "chr_0012_avywen_interact_mine_valub_echo2_01",
         "title": "광물 채집 2",
         "text": "저희는 서로를 도와주는 전통이 있거든요!"
       },
       {
+        "voId": "chr_0012_avywen_interact_treasure_valub_01",
         "title": "보물 상자 열기",
         "text": "쉿! 평소에 이런 좋은 걸 발견하면, 저희는 먼저 묻어두는 편이예요..."
       },
       {
+        "voId": "chr_0012_avywen_interact_etherium_01",
         "title": "오리렌 획득",
         "text": "오리렌이네요! 제가 빛나는 걸 좋아한다는 거, 어떻게 아신 거예요?"
       },
       {
+        "voId": "chr_0012_avywen_interact_blight_break_01",
         "title": "침식 제거",
         "text": "사실 가끔 전 이걸 누군가를 피하기 위한 자기방어 수단으로 쓰곤 해요."
       },
       {
+        "voId": "chr_0012_avywen_interact_rest_01",
         "title": "휴식",
         "text": "포근한 느낌, 정말 좋네요. 계속 먼지투성이에... 축축하고 그랬는데, 이렇게 따뜻하고 깨끗한 곳을 찾다니 정말 다행이에요!"
       },
       {
+        "voId": "chr_0012_avywen_combat_suppuse_using_01",
         "title": "전술 아이템 사용 1",
         "text": "다행히 챙겨온 게 있어요."
       },
       {
+        "voId": "chr_0012_avywen_combat_suppuse_getheal_01",
         "title": "전술 아이템 사용 2",
         "text": "자기 자신한테도 좀 잘해줘야죠!"
       },
       {
+        "voId": "chr_0012_avywen_combat_remind_danger_01",
         "title": "위험 경고",
         "text": "가요! 안전한 곳으로!"
       },
       {
+        "voId": "chr_0012_avywen_combat_hurt_lowhp_01",
         "title": "부상",
         "text": "괜찮아요, 별거 아니에요."
       },
       {
+        "voId": "chr_0012_avywen_combat_dead_01",
         "title": "탈진",
         "text": "이쪽이... 우리 집 방향이던가..."
       },
       {
+        "voId": "chr_0012_avywen_combat_remind_praise_01",
         "title": "팀 격려 1",
         "text": "괜찮네요. 같이 일 해보지 않으실래요?"
       },
       {
+        "voId": "chr_0012_avywen_combat_remind_praise_02",
         "title": "팀 격려 2",
         "text": "저희 지금 진짜 가족 같네요!"
       },
       {
+        "voId": "chr_0012_avywen_combat_remind_praise_echo2_01",
         "title": "격려 응답 1",
         "text": "맞아요, 제가 이렇게 대단해요."
       },
       {
+        "voId": "chr_0012_avywen_combat_remind_praise_echo2_02",
         "title": "격려 응답 2",
         "text": "집에 돌아온 것 같은데요?"
       },
       {
+        "voId": "chr_0012_avywen_combat_intobattle_01",
         "title": "작전 시작 1",
         "text": "첫걸음이 가장 어려운 법이죠."
       },
       {
+        "voId": "chr_0012_avywen_combat_intobattle_echo2_01",
         "title": "작전 시작 2",
         "text": "맞는 말이에요. 먼저 상대방의 기를 꺾어보죠."
       },
       {
+        "voId": "chr_0012_avywen_combat_outbattle_nor_01",
         "title": "작전 승리 1",
         "text": "협상만으로 모든 걸 해결할 수는 없어요. 결국은... 강해야 하죠."
       },
       {
+        "voId": "chr_0012_avywen_combat_outbattle_nor_02",
         "title": "작전 승리 2",
         "text": "이 정도는 쉽죠. 저희는 이걸 위해서 태어난 사람들이니까요."
       },
       {
+        "voId": "chr_0012_avywen_combat_outbattle_nor_echo2_01",
         "title": "작전 승리 3",
         "text": "이 분위기를 계속 이어 나가는 거예요!"
       },
       {
+        "voId": "chr_0012_avywen_combat_outbattle_hard_01",
         "title": "작전 승리 4",
         "text": "괜찮아요. 전달자 가문에 대대로 전해 내려오는 말이 있거든요. '발아래의 진흙을 보지 말고, 저 별빛을 보고 걸어라.'"
       },
       {
+        "voId": "chr_0012_avywen_combat_battle_defeat_01",
         "title": "작전 실패",
         "text": "이번 보수는... 복수가 성공했을 때 다시 계산하도록 하죠."
       },
       {
+        "voId": "chr_0012_avywen_mono_attack_last_01",
         "title": "강력한 일격 1",
         "text": "눈 깜빡이지 마세요!"
       },
       {
+        "voId": "chr_0012_avywen_mono_attack_last_02",
         "title": "강력한 일격 2",
         "text": "받아보시죠!"
       },
       {
+        "voId": "chr_0012_avywen_mono_skill_nor_01",
         "title": "배틀 스킬 1",
         "text": "감전 조심하세요!"
       },
       {
+        "voId": "chr_0012_avywen_mono_skill_nor_02",
         "title": "배틀 스킬 2",
         "text": "저리 비켜보세요!"
       },
       {
+        "voId": "chr_0012_avywen_mono_skill_nor_03",
         "title": "배틀 스킬 3",
         "text": "어디로 도망치려고요?"
       },
       {
+        "voId": "chr_0012_avywen_combat_skill_comb_ready_01",
         "title": "연계 스킬 준비 완료 1",
         "text": "절 잊으시면 안 되죠."
       },
       {
+        "voId": "chr_0012_avywen_combat_skill_comb_ready_02",
         "title": "연계 스킬 준비 완료 2",
         "text": "한참 기다렸잖아요."
       },
       {
+        "voId": "chr_0012_avywen_mono_skill_comb_release_01",
         "title": "연계 스킬 1",
         "text": "상황 봐가면서 움직여요!"
       },
       {
+        "voId": "chr_0012_avywen_mono_skill_comb_release_02",
         "title": "연계 스킬 2",
         "text": "1등이 두 명이네요!"
       },
       {
+        "voId": "chr_0012_avywen_mono_attack_extra_01",
         "title": "처형 1",
         "text": "어라, 약점이네요?"
       },
       {
+        "voId": "chr_0012_avywen_mono_attack_extra_02",
         "title": "처형 2",
         "text": "빈틈을 보이면 안 되죠."
       },
       {
+        "voId": "chr_0012_avywen_mono_skill_ultimate_01",
         "title": "궁극기 1",
         "text": "전 부드러운 성격이 아니랍니다!"
       },
       {
+        "voId": "chr_0012_avywen_mono_skill_ultimate_02",
         "title": "궁극기 2",
         "text": "안 좋은 소식이네요!"
       },
       {
+        "voId": "chr_0012_avywen_mono_skill_ultimate_03",
         "title": "궁극기 3",
         "text": "차지... 필살!"
       }

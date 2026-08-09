@@ -122,318 +122,397 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0005_chen_chrbark_squad_01",
         "title": "行动准备1",
         "text": "准备？嘿，我的剑可没有懈怠的时候！"
       },
       {
+        "voId": "chr_0005_chen_chrbark_squad_02",
         "title": "行动准备2",
         "text": "能不能让我再往前站站？我想第一个出门！"
       },
       {
+        "voId": "chr_0005_chen_chrbark_join_01",
         "title": "编入队伍1",
         "text": "轮到我们了？该出手时就出手嘛。"
       },
       {
+        "voId": "chr_0005_chen_chrbark_join_02",
         "title": "编入队伍2",
         "text": "交给我就对啦！"
       },
       {
+        "voId": "chr_0005_chen_chrbark_weap_01",
         "title": "更换武器",
         "text": "哇，给我用这么好的家伙？普通的也够啦，照样能把他们揍得屁滚尿流！"
       },
       {
+        "voId": "chr_0005_chen_chrbark_gear_01",
         "title": "更换装备",
         "text": "唔……大侠应该穿得更轻便才对嘛。"
       },
       {
+        "voId": "chr_0005_chen_chrup_skill_01",
         "title": "激活天赋阵列",
         "text": "剑招千遍，其势自明！"
       },
       {
+        "voId": "chr_0005_chen_chrup_level_01",
         "title": "观看作战记录",
         "text": "这样，再这样？好嘞，我已经明白了！"
       },
       {
+        "voId": "chr_0005_chen_chrup_promt01_01",
         "title": "精英化晋升1",
         "text": "我特地让佩丽卡把我的晋升环节留到现在！来自终末地的认可，当然得是你这个核心人物亲口告诉我我才能放心啦。"
       },
       {
+        "voId": "chr_0005_chen_chrup_promt02_01",
         "title": "精英化晋升2",
         "text": "怎么样，我有没有打破最快晋升纪录？我在谈剑堂可是提前毕业的——很惊讶？嘿嘿，在那边我一直是第一哦！"
       },
       {
+        "voId": "chr_0005_chen_chrup_promt03_01",
         "title": "精英化晋升3",
         "text": "看来我不只在武学上有天赋嘛，当你的干员是不是也是一把好手？哎呀，夸得我都不好意思啦——再来两句！"
       },
       {
+        "voId": "chr_0005_chen_chrup_promt04_01",
         "title": "精英化晋升4",
         "text": "不，还远远没到头呢。管理员，我曾听说，妈妈的剑能碰触到天上的云彩。我会做到的，然后，成为你和佩丽卡最信任的人！"
       },
       {
+        "voId": "chr_0005_chen_introduce_01",
         "title": "干员报到",
         "text": "管理员！我——嗯？走流程？哦，懂了懂了。终末地干员陈千语，前来报到！"
       },
       {
+        "voId": "chr_0005_chen_mono_switch_01",
         "title": "待命1",
         "text": "起势——！怎么样，帅不帅？"
       },
       {
+        "voId": "chr_0005_chen_mono_switch_02",
         "title": "待命2",
         "text": "嘿，这儿呢，管理员！"
       },
       {
+        "voId": "chr_0005_chen_sim_assign_work_01",
         "title": "进驻设施",
         "text": "收到收到，管理员你就放一百个心吧。"
       },
       {
+        "voId": "chr_0005_chen_sim_hello_lower_01",
         "title": "打招呼1",
         "text": "你好呀，管理员。要陪我练练剑吗？"
       },
       {
+        "voId": "chr_0005_chen_sim_hello_max_01",
         "title": "打招呼2",
         "text": "哎呀，管理员，剩下的还是交给我吧。劳逸结合！"
       },
       {
+        "voId": "chr_0005_chen_sim_talk_lv01_01",
         "title": "帝江号闲聊1",
         "text": "……哇！差点没看到你，管理员！嘿嘿，刚才我在琢磨新想到的剑招，没看路。"
       },
       {
+        "voId": "chr_0005_chen_sim_talk_lv02_01",
         "title": "帝江号闲聊2",
         "text": "离开宏山的时候可没想到自己会天天待在这——么高的地方。这样一看，塔卫二也很渺小呢。不知道我和我的剑，最终能抵达哪里……塔罗斯有可能吗，管理员？"
       },
       {
+        "voId": "chr_0005_chen_sim_talk_lv02_02",
         "title": "帝江号闲聊3",
         "text": "管理员，之前借给你的武侠传记你有看吗？小说？不不不，那可不是小说，都是真实发生在大炎过去的故事哦！“以指为剑”很难想象？的确呢……不过“拳定春秋”更离谱吧？"
       },
       {
+        "voId": "chr_0005_chen_sim_talk_max_01",
         "title": "帝江号闲聊4",
         "text": "我？哎哟——在放松肌肉呢。来到终末地之后，光是每天出任务，体能训练量就能达标了！要不……我也帮你松松？我可是知道几个穴位哦！来嘛来嘛，把外套脱了，别客气！"
       },
       {
+        "voId": "chr_0005_chen_sim_talk_max_02",
         "title": "帝江号闲聊5",
         "text": "我正要去武库取剑，一起吗？说起来，我本来想在剑柄上刻字来着，只是一直没想好刻“当破即破”还是“当断即断”……管理员，你帮我出出主意呗！"
       },
       {
+        "voId": "chr_0005_chen_sim_talk_max_03",
         "title": "帝江号闲聊6",
         "text": "最近经常感觉到有一些瓶颈呢。和技术无关，总觉得是心情方面的问题。传说有一些神兵利器就是会根据主人心境的变化而变化的……可我这只是普通的剑啊！管理员，帮帮忙嘛。"
       },
       {
+        "voId": "chr_0005_chen_sim_gift_give_01",
         "title": "赠送礼物",
         "text": "我们常说“礼轻情意重”。倘若真的心怀情意，又会觉得送什么礼都嫌轻，但愿你能喜欢！"
       },
       {
+        "voId": "chr_0005_chen_sim_gift_recv_01",
         "title": "接收礼物",
         "text": "给我的？！哇……我现在就拆开看看！"
       },
       {
+        "voId": "chr_0005_chen_mono_self_line01",
         "title": "信赖对话1",
         "text": "以前总是听着佩丽卡念叨你，现在你本人就这么活生生站在我眼前，这感觉还真奇妙欸！什么？才不会失望呢！看着她嘴里那个天下无敌、举世无双的家伙在我旁边吃饭睡觉，有意思得很呢——欸，这儿，你嘴角有饭粒。"
       },
       {
+        "voId": "chr_0005_chen_mono_self_line02",
         "title": "信赖对话2",
         "text": "离开家乡，来到终末地之前，我在环带游历过一段时间。嘿嘿，其实一开始我还挺期待经历些类似“事了拂衣去，深藏功与名”的事情。可真的切身体验了宏山之外的人间百态，我意识到侠客是不能对自己行为的后果视而不见的。所以，步子就慢了，去的地方就少了。无妨，以后补回来就是。"
       },
       {
+        "voId": "chr_0005_chen_mono_self_line03",
         "title": "信赖对话3",
         "text": "应该是十岁……差不多十一岁的时候吧，我在谈剑堂的后山偷偷练剑，却遇见了离群的天使。那是我第一次提剑实战。我把断剑带回家的时候，父亲表扬了我，但也问了我一个问题：我的剑只是断了，那些没剑的人，又该怎么办呢？嘿，别看他平时那个样，这一问，我到今天都在琢磨。"
       },
       {
+        "voId": "chr_0005_chen_mono_self_line04",
         "title": "信赖对话4",
         "text": "为什么要来终末地？唔……说来话长。但如果你一定要问是哪个时刻——我想，是在和某个穿着光鲜亮丽的黎博利一起把那辆驮兽车推出泥坑的时候吧。佩丽卡那时候的笑是发自真心的。当时我就想，剩下的路途，或许我可以不用一个人走了。"
       },
       {
+        "voId": "chr_0005_chen_mono_self_line05",
         "title": "信赖对话5",
         "text": "应龙拿起职责放下了同伴，妈妈拿起赤霄放下了我。在拿起更“重”的东西之前……大家似乎都要先放下那些更“轻”的。但终末地走过的地方，没有轻重之分，没有东西被放下——终末地拿得起整个塔卫二，而我还能再多拿一把剑！"
       },
       {
+        "voId": "chr_0005_chen_mono_chat_line01",
         "title": "交谈1",
         "text": "让佩丽卡休息是件难事，好在我对付师兄师姐们的技巧反过来就能在这里用上：想让他们动起来得把所有的活都交给他们，想让佩丽卡休息当然就是把所有的活都一口气帮她干完啦……啊？这不算技巧吗？"
       },
       {
+        "voId": "chr_0005_chen_mono_chat_line02",
         "title": "交谈2",
         "text": "发型？其实很简单，只要对准头上的两个角，就很容易梳对称啦。这是大院儿里的王奶奶教我的办法，说是他们丰蹄的独门秘诀……哎呀，院儿里的孩子都是这样，说不清是谁带大的，大伙儿都像一家一样亲呢。"
       },
       {
+        "voId": "chr_0005_chen_mono_chat_line03",
         "title": "交谈3",
         "text": "我的剑法可谓集百家之长！首先肯定是谈剑堂的师父教的，板正、利索，极尽实用；然后是小时候闹着让妈妈带我练剑学到的，传承悠远、招数驳杂，每招每式都别有蕴意；最后嘛……是我看那些传记小说自己琢磨的。大侠总得有一两招自创的独门秘技，对吧？"
       },
       {
+        "voId": "chr_0005_chen_mono_chat_line04",
         "title": "交谈4",
         "text": "武陵的空气总是湿湿的，黏糊糊的，我习惯了好一阵子呢。在侵蚀潮涨起的时候，宿舍的墙壁上就会凝结出水珠。但那里的饭菜好吃呀，人也——呃，大多数人都不错。心事？没有！绝对没有想起什么讨厌的人！"
       },
       {
+        "voId": "chr_0005_chen_mono_chat_line05",
         "title": "交谈5",
         "text": "“千语”这个名字据说是妈妈给我取的。简单、好写——多亏如此，不然以前被师父罚抄的时候要费很多力气呢。"
       },
       {
+        "voId": "chr_0005_chen_mono_about_line01",
         "title": "话题：宏山",
         "text": "从帝江号的舰桥往下看，可以看到宏山环形山呢。两年前我除了迷茫，什么都没从那儿带走。那些走过的路从舰桥上看下去只有指甲盖这么长……不过，等到这距离能用手掌丈量——甚至手掌都不够用的时候，我大概就能把这些迷茫都丢光了吧！"
       },
       {
+        "voId": "chr_0005_chen_mono_about_line02",
         "title": "话题：失踪的母亲",
         "text": "妈妈有一把赤红色的剑。她说，那是很早以前，一位大炎的侠女赠送给我们祖上的，是我们的传家宝。我甚至见过很多宏山来的老爷爷老奶奶对着那把剑长吁短叹。之后，妈妈就和那把剑一起消失了。长大一点后我才明白，那把剑不只是剑，是一条道路、一种信念。我还是想去找她，只不过，这次小千语会带着自己的剑去找她。"
       },
       {
+        "voId": "chr_0005_chen_mono_about_line03",
         "title": "话题：佩丽卡",
         "text": "我最早见到佩丽卡的时候，她就是个努力到没边的人。偶尔听她提起她拼命的原因，是和一个叫管理员的人有关，我还替她打抱不平呢。可真的见到了管理员，似乎也能理解一些……除去那些伟大的理想之类的，佩丽卡也许只是单纯地想要能和你肩并肩前行而已呢。"
       },
       {
+        "voId": "chr_0005_chen_explore_point_common_01",
         "title": "发现资源1",
         "text": "那儿是不是有什么东西？"
       },
       {
+        "voId": "chr_0005_chen_explore_point_valub_01",
         "title": "发现资源2",
         "text": "发现宝物！咱们快过去看看！"
       },
       {
+        "voId": "chr_0005_chen_explore_find_locked_01",
         "title": "发现未探索区域",
         "text": "咦？这里我们是不是没来过？"
       },
       {
+        "voId": "chr_0005_chen_explore_find_danger_01",
         "title": "发现强敌",
         "text": "那里似乎有个厉害的家伙，让我来试试手吧。"
       },
       {
+        "voId": "chr_0005_chen_interact_mine_valub_01",
         "title": "采集矿物1",
         "text": "没想到吧？我有专门对付石头的剑法。"
       },
       {
+        "voId": "chr_0005_chen_interact_mine_valub_echo2_01",
         "title": "采集矿物2",
         "text": "剩下的交给我吧，用剑更快！"
       },
       {
+        "voId": "chr_0005_chen_interact_treasure_valub_01",
         "title": "打开储藏箱",
         "text": "秘笈总是放在这种箱子里面呢！"
       },
       {
+        "voId": "chr_0005_chen_interact_etherium_01",
         "title": "获得醚质",
         "text": "圆又圆，亮晶晶……原来醚质是这个大小啊。"
       },
       {
+        "voId": "chr_0005_chen_interact_blight_break_01",
         "title": "消除侵蚀",
         "text": "抽刀断水大概也是这种感觉吧。"
       },
       {
+        "voId": "chr_0005_chen_interact_rest_01",
         "title": "休整",
         "text": "歇歇，磨刀不误砍柴工嘛！"
       },
       {
+        "voId": "chr_0005_chen_combat_suppuse_using_01",
         "title": "使用战术物品1",
         "text": "快，用这个！"
       },
       {
+        "voId": "chr_0005_chen_combat_suppuse_getheal_01",
         "title": "使用战术物品2",
         "text": "呼……恢复过来了！"
       },
       {
+        "voId": "chr_0005_chen_combat_remind_danger_01",
         "title": "危险提醒",
         "text": "当心，快退后！"
       },
       {
+        "voId": "chr_0005_chen_combat_hurt_lowhp_01",
         "title": "负伤",
         "text": "唔，我没事！先对付他们。"
       },
       {
+        "voId": "chr_0005_chen_combat_dead_01",
         "title": "力竭",
         "text": "呜……可恶……"
       },
       {
+        "voId": "chr_0005_chen_combat_remind_praise_01",
         "title": "小队激励1",
         "text": "你这招很帅嘛！"
       },
       {
+        "voId": "chr_0005_chen_combat_remind_praise_02",
         "title": "小队激励2",
         "text": "耶！刚刚的配合简直完美！"
       },
       {
+        "voId": "chr_0005_chen_combat_remind_praise_echo2_01",
         "title": "回应激励1",
         "text": "嘿嘿，应该的！"
       },
       {
+        "voId": "chr_0005_chen_combat_remind_praise_echo2_02",
         "title": "回应激励2",
         "text": "众人合，剑招成！"
       },
       {
+        "voId": "chr_0005_chen_combat_intobattle_01",
         "title": "作战开始1",
         "text": "剑起有光，光若奔夜！"
       },
       {
+        "voId": "chr_0005_chen_combat_intobattle_echo2_01",
         "title": "作战开始2",
         "text": "交给我。"
       },
       {
+        "voId": "chr_0005_chen_combat_outbattle_nor_01",
         "title": "作战胜利1",
         "text": "呼——意料之中。"
       },
       {
+        "voId": "chr_0005_chen_combat_outbattle_nor_02",
         "title": "作战胜利2",
         "text": "这次轻松。"
       },
       {
+        "voId": "chr_0005_chen_combat_outbattle_nor_echo2_01",
         "title": "作战胜利3",
         "text": "做得好！"
       },
       {
+        "voId": "chr_0005_chen_combat_outbattle_hard_01",
         "title": "作战胜利4",
         "text": "好险。快，先抢救伤员！"
       },
       {
+        "voId": "chr_0005_chen_combat_battle_defeat_01",
         "title": "作战失败",
         "text": "……再来！"
       },
       {
+        "voId": "chr_0005_chen_mono_attack_last_01",
         "title": "重击1",
         "text": "吃这招！"
       },
       {
+        "voId": "chr_0005_chen_mono_attack_last_02",
         "title": "重击2",
         "text": "看剑！"
       },
       {
+        "voId": "chr_0005_chen_mono_skill_nor_01",
         "title": "战技1",
         "text": "挑！"
       },
       {
+        "voId": "chr_0005_chen_mono_skill_nor_02",
         "title": "战技2",
         "text": "洗！"
       },
       {
+        "voId": "chr_0005_chen_mono_skill_nor_03",
         "title": "战技3",
         "text": "截！"
       },
       {
+        "voId": "chr_0005_chen_combat_skill_comb_ready_01",
         "title": "连携技就绪1",
         "text": "趁现在！"
       },
       {
+        "voId": "chr_0005_chen_combat_skill_comb_ready_02",
         "title": "连携技就绪2",
         "text": "交给我吧！"
       },
       {
+        "voId": "chr_0005_chen_mono_skill_comb_release_01",
         "title": "连携技1",
         "text": "轮到我了！"
       },
       {
+        "voId": "chr_0005_chen_mono_skill_comb_release_02",
         "title": "连携技2",
         "text": "你的对手在这儿！"
       },
       {
+        "voId": "chr_0005_chen_mono_attack_extra_01",
         "title": "处决1",
         "text": "有破绽！"
       },
       {
+        "voId": "chr_0005_chen_mono_attack_extra_02",
         "title": "处决2",
         "text": "断！"
       },
       {
+        "voId": "chr_0005_chen_mono_skill_ultimate_01",
         "title": "终结技1",
         "text": "当破即破！"
       },
       {
+        "voId": "chr_0005_chen_mono_skill_ultimate_02",
         "title": "终结技2",
         "text": "当断即断！"
       },
       {
+        "voId": "chr_0005_chen_mono_skill_ultimate_03",
         "title": "终结技3",
         "text": "当弃即弃！"
       }

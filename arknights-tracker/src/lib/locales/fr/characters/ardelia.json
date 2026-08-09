@@ -123,326 +123,407 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0025_ardelia_chrbark_squad_01",
         "title": "Préparation de l'opération 1",
         "text": "Fais ce qu'il faut, Professeur. Je t'apporterai toute l'aide possible."
       },
       {
+        "voId": "chr_0025_ardelia_chrbark_squad_02",
         "title": "Préparation de l'opération 2",
         "text": "Voyons voir. Où devrais-je stocker mes données, cette fois-ci ?"
       },
       {
+        "voId": "chr_0025_ardelia_chrbark_join_01",
         "title": "Intégration à l'équipe 1",
         "text": "J'ai préparé les outils de prospection, Professeur. Nous pouvons partir quand tu le souhaites."
       },
       {
+        "voId": "chr_0025_ardelia_chrbark_join_02",
         "title": "Intégration à l'équipe 2",
         "text": "Je me sens bien plus en sécurité quand le Professeur est là, avec moi."
       },
       {
+        "voId": "chr_0025_ardelia_chrbark_weap_01",
         "title": "Changement d'arme",
         "text": "Pourrais-tu reculer un peu, Professeur ? Je, euh... je ne voudrais pas te blesser accidentellement."
       },
       {
+        "voId": "chr_0025_ardelia_chrbark_gear_01",
         "title": "Changement d'équipement",
         "text": "Enquêter sur le terrain peut s'avérer très dangereux. Nous devons assurer notre protection."
       },
       {
+        "voId": "chr_0025_ardelia_chrup_skill_01",
         "title": "Activation de la matrice de capacités",
         "text": "Mon journal est semblable aux anneaux d'un vieil arbre. Il conserve toutes les leçons que j'ai apprises au fil du temps."
       },
       {
+        "voId": "chr_0025_ardelia_chrup_level_01",
         "title": "Visionnage d'archives de combat",
         "text": "Comment un ennemi peut-il transformer un territoire en... un lieu aussi dévasté et sans vie ?"
       },
       {
+        "voId": "chr_0025_ardelia_chrup_promt01_01",
         "title": "Promotion d'opérateur 1",
         "text": "D'accord, Ardelia ! Concentre-toi là-dessus ! Continue à explorer et à t'améliorer !"
       },
       {
+        "voId": "chr_0025_ardelia_chrup_promt02_01",
         "title": "Promotion d'opérateur 2",
         "text": "Ton approbation me touche beaucoup, Professeur ! Je travaillerai encore plus dur et je ferai tout mon possible pour Endfield !"
       },
       {
+        "voId": "chr_0025_ardelia_chrup_promt03_01",
         "title": "Promotion d'opérateur 3",
         "text": "Ne t'inquiète pas pour moi, Professeur. Je suis loin d'être en surmenage. Hein ? J'ai les yeux cernés ? Oh, euh... c'est ce livre qui est passionnant. Je n'ai pas pu m'arrêter."
       },
       {
+        "voId": "chr_0025_ardelia_chrup_promt04_01",
         "title": "Promotion d'opérateur 4",
         "text": "Ce monde renferme tant de mystères. Nous devrions apprendre à mieux le connaître, et... à nous connaître nous-mêmes. N'est-ce pas, Professeur ?"
       },
       {
+        "voId": "chr_0025_ardelia_introduce_01",
         "title": "Opératrice au rapport",
         "text": "Bonjour, Endministrator. Je m'appelle Ardelia et je suis géologue pour Rhodes Island. Je me concentre actuellement sur les corrélations entre les désastres géologiques et le plan æthérique. Cela fait un bon moment que j'entends parler de toi, Endmin, et j'ai tellement de questions. Oh, autre chose... Puis-je t'appeler Professeur ?"
       },
       {
+        "voId": "chr_0025_ardelia_mono_switch_01",
         "title": "En attente 1",
         "text": "Que ta journée soit aussi radieuse que toi, Professeur."
       },
       {
+        "voId": "chr_0025_ardelia_mono_switch_02",
         "title": "En attente 2",
         "text": "Je t'ai entendu arriver, Professeur."
       },
       {
+        "voId": "chr_0025_ardelia_sim_assign_work_01",
         "title": "Affectation à une installation",
         "text": "Laisse-moi m'en occuper, Professeur. J'ai l'intention d'essayer quelque chose de nouveau, moi aussi."
       },
       {
+        "voId": "chr_0025_ardelia_sim_hello_lower_01",
         "title": "Salutation 1",
         "text": "Professeur, accepterais-tu de partager ce mille-crêpes avec moi ?"
       },
       {
+        "voId": "chr_0025_ardelia_sim_hello_max_01",
         "title": "Salutation 2",
         "text": "Oh, j'allais justement partir te chercher, Professeur."
       },
       {
+        "voId": "chr_0025_ardelia_sim_talk_lv01_01",
         "title": "Bavardage sur le Dijiang 1",
         "text": "Fais attention lorsque tu te promènes dans le Dijiang, Professeur... Le vaisseau comporte toutes sortes de panneaux d'avertissement et... et je trébuche constamment dessus. Je ne les remarque pas quand je suis perdue dans mes réflexions."
       },
       {
+        "voId": "chr_0025_ardelia_sim_talk_lv02_01",
         "title": "Bavardage sur le Dijiang 2",
         "text": "Depuis le Dijiang, j'arrive à voir de nombreux sites que j'ai personnellement traversés... Les terres sauvages, les prairies et le Nord semblent si petits vus d'ici, en orbite. Il suffit d'un regard pour couvrir l'ensemble de mes voyages d'études... Je dois dire que c'est assez exaltant d'être là, hi hi !"
       },
       {
+        "voId": "chr_0025_ardelia_sim_talk_lv02_02",
         "title": "Bavardage sur le Dijiang 3",
         "text": "Professeur, ça t'intéresserait de participer au groupe de lecture que j'organise demain ? De quoi nous parlerons ? Oh, n'importe quel livre à ton goût conviendrait ! M. Krad a même apporté un magazine sur les volcans de Talos-II, une fois. Je préviendrai le groupe si ça t'intéresse !"
       },
       {
+        "voId": "chr_0025_ardelia_sim_talk_max_01",
         "title": "Bavardage sur le Dijiang 4",
         "text": "Tu dois avoir faim après ce dur labeur, Professeur ! Essaie ceci. Ce sont des en-cas d'Higashi que mademoiselle Akekuri m'a offert. Oh, je n'en ai pas vraiment besoin, en fait, parce que... j-j'en ai déjà mangé. Pourquoi ils ne sont pas ouverts ? Ah, euh... E-Elle m'en a offert une autre boîte !"
       },
       {
+        "voId": "chr_0025_ardelia_sim_talk_max_02",
         "title": "Bavardage sur le Dijiang 5",
         "text": "Tu n'as pas remarqué, Professeur ? Tu es toujours loin devant, comme si tu tentais de nous protéger des dangers qui nous attendent. Parfois, j'ai même dû trottiner pour te rattraper. Peut-être que... ce n'est pas nécessaire d'aller si vite. Nous sommes là, avec toi, et nous voulons t'aider, nous aussi."
       },
       {
+        "voId": "chr_0025_ardelia_sim_talk_max_03",
         "title": "Bavardage sur le Dijiang 6",
         "text": "C'est tellement relaxant de revenir à bord du Dijiang. Quand je ne partage pas les récits de mon voyage avec mes collègues, je visite les chambres de culture pour voir comment se portent les plantes. Je leur donne même des soins et de l'affection quand j'en ai le temps. C'est un de mes petits loisirs. C'est tellement gratifiant de les voir pousser."
       },
       {
+        "voId": "chr_0025_ardelia_sim_gift_give_01",
         "title": "Cadeaux offerts",
         "text": "Aurais-tu un instant, Endmin ? J'ai rapporté quelques souvenirs de ma prospection. Des plumes décoratives venant du circuit d'Hannabit, des bibelots en jade de Hongshan et des médailles de l'Ordre du serment d'acier... C'est pour toi. J'espère qu'ils te plairont."
       },
       {
+        "voId": "chr_0025_ardelia_sim_gift_recv_01",
         "title": "Cadeaux acceptés",
         "text": "Un cadeau ? Pour moi ? Ooooh, merci ! Voyons ce qu'il contient... Hi hi, professeur, tu as l'air de trembler plus que moi."
       },
       {
+        "voId": "chr_0025_ardelia_mono_self_line01",
         "title": "Dialogue à cœur ouvert 1",
         "text": "Professeur, est-ce que tout va bien ? Tu n'as pas l'air en forme. Ne me dis pas qu'encore une fois, tu n'as pas fermé l'œil de la nuit. Voyons, tu sais que c'est très mauvais pour toi... Hm-hm ! Pas de « si », pas de « mais », il est temps de te reposer."
       },
       {
+        "voId": "chr_0025_ardelia_mono_self_line02",
         "title": "Dialogue à cœur ouvert 2",
         "text": "Oh, arrête de mordiller ses vêtements, M. Dolly... ! Enfin. Je suis vraiment désolée. C'est un vrai trublion. Hein ? Tu ne le vois pas ? Oh... M. Dolly n'est visible que quand il le souhaite... M. Dolly est-il le chef ? Non. M. Dolly n'est pas un nom spécifique, parce qu'il y a de nombreux Dolly... Ooooh, viens donc l'expliquer toi-même ! M. Dolly, je sais que tu peux parler !"
       },
       {
+        "voId": "chr_0025_ardelia_mono_self_line03",
         "title": "Dialogue à cœur ouvert 3",
         "text": "J'ai escaladé une autre montagne, aujourd'hui. La boussole géologique m'a aidée à définir l'orientation et l'inclinaison des couches rocheuses, tandis que la pioche m'a aidée à collecter des échantillons de roche sédimentaire pour des études d'optique et de texture... Je ne suis absolument pas fatiguée, Professeur. Je peux escalader d'autres montagnes, faire d'autres voyages et collecter d'autres données géologiques. Dévoiler les mystères de cette planète m'apporte tellement de joie... Je ne saurais exprimer à quel point je suis heureuse !"
       },
       {
+        "voId": "chr_0025_ardelia_mono_self_line04",
         "title": "Dialogue à cœur ouvert 4",
         "text": "C'est tellement agréable d'avoir des amis à ses côtés dans un moment aussi festif ! Ça me rappelle mon arrivée à Endfield. Les gens ont organisé une fête de bienvenue, avec plein de choses que j'aime. Oh, les bonbons, les fleurs et la musique joyeuse. Mademoiselle Yvonne m'a même pris la main et on a dansé sur le dernier tube ! J'ai eu mal à la tête à force de tourner et de danser, mais j'ai fait de mon mieux pour graver chaque souvenir dans ma mémoire."
       },
       {
+        "voId": "chr_0025_ardelia_mono_self_line05",
         "title": "Dialogue à cœur ouvert 5",
         "text": "Qu'est-ce que le plan æthérique ? Je me pose sans cesse la question. Si l'Univers nous réserve autant de cruauté, que pouvons-nous faire pour aider tout le monde... ? C'est aussi ce que tu penses, Professeur ? Hmm, ça signifie... que nous ne sommes pas les seuls."
       },
       {
+        "voId": "chr_0025_ardelia_mono_chat_line01",
         "title": "Discussion 1",
         "text": "Ta voix est tellement apaisante, professeur. Oh, je, euh, je n'insinuais rien. C'est juste... tu sais, quand on sort tout juste d'un rêve et que le son nous parvient avant qu'on ouvre les yeux ? Eh bien, avant que mes yeux se posent sur toi, ce sont tes pas et ta voix qui m'ont touchée... Oui. La plupart des êtres vivants ont leur propre voix, que ce soient des insectes, des bêtes, des arbres ou des plantes. Les voix me touchent. Voilà pourquoi j'ai décidé de protéger ce monde que nous aimons tous, à ma propre façon."
       },
       {
+        "voId": "chr_0025_ardelia_mono_chat_line02",
         "title": "Discussion 2",
         "text": "Tout le monde est tellement gentil, à Endfield. Mlle Yvonne partage toujours avec moi ses dernières découvertes et ses nouveaux vinyles. Mlle Akekuri m'invite à l'endroit habituel pour le thé de l'après-midi. Et bien sûr, il y a M. Antal. Il m'a dit qu'il pouvait changer mon bâton en outil de prospection portatif *et* l'embellir avec un ensemble de fonctionnalités incroyables. Sans l'intervention de mademoiselle Akekuri, il aurait certainement passé la journée à m'en parler dans les moindres détails !"
       },
       {
+        "voId": "chr_0025_ardelia_mono_chat_line03",
         "title": "Discussion 3",
         "text": "Les géologues de terrain profitent d'une grande liberté, mais le manque de moyens peut être assez frustrant. Pour être financée, je donnais des séminaires et des cours magistraux dans différentes entreprises, en espérant les persuader avec ma confiance et ma vision. Hormis Endfield, la plupart n'étaient pas intéressées par des systèmes d'alerte précoce pour les catastrophes géologiques. Mais lorsque le Groupe Siesta a entendu parler de mes recherches, ils m'ont proposé un mécénat sans condition. Je crois savoir pourquoi ils sont si généreux... Peut-être que cette rencontre décisive fait partie de mon héritage."
       },
       {
+        "voId": "chr_0025_ardelia_mono_chat_line04",
         "title": "Discussion 4",
         "text": "Un jour, j'ai voyagé avec une Voix-d'aulne du circuit d'Hannabit. Elle chantait de merveilleux hannas et m'a parlé du Voix-d'aulne qui la guidait. Tous les membres du circuit arpentent ces terres, alors ils ont énormément de respect pour ceux qui l'étudient. Comme nous. Hé hé, j'ai été vraiment heureuse d'apprendre ça. Mais honnêtement, c'est dans ses hannas que j'ai trouvé mon véritable objectif et puisé ma motivation. Eh oui, Professeur, c'est le voyage que j'ai fait juste avant de trouver ma vocation sur Talos-II."
       },
       {
+        "voId": "chr_0025_ardelia_mono_chat_line05",
         "title": "Discussion 5",
         "text": "Il y a encore un trou dans mes vêtements ? Oh, ce n'est rien, vraiment. Je peux les raccommoder. Les relevés de terrain sont toujours un peu rudes pour les vêtements, de toute façon... Je dois grimper jusqu'au sommet des montagnes pour prélever des minéraux rares, et les rochers acérés ne sont pas vraiment tendres avec le tissu en général. Mais cette sensation, quand on est proche de son objectif, ça vous fait parfois oublier tous les risques. Ne t'inquiète pas, Professeur, je ferai plus attention la prochaine fois."
       },
       {
+        "voId": "chr_0025_ardelia_mono_about_line01",
         "title": "Thème : le plan æthérique",
         "text": "Le plan æthérique est un tout nouveau défi présenté par Talos-II. Certaines théories le décrivent comme un phénomène physique unique en son genre, tandis que d'autres le voient comme une étrange dimension spatio-temporelle. Mais j'ai le sentiment que c'est... juste une pièce poussiéreuse, oubliée, remplie de vieilles affaires dont plus personne ne se préoccupe. Professeur, le plan æthérique a peut-être un rapport avec nos origines."
       },
       {
+        "voId": "chr_0025_ardelia_mono_about_line02",
         "title": "Thème : Rhodes Island",
         "text": "À Rhodes Island, d'où je viens, j'ai bénéficié de toutes sortes de leçons et d'entraînements qui m'ont aidée à me forger une identité. Je n'avais aucune famille, pas d'enfance et pas de passé propre, mais Rhodes Island nous a enseigné la vie et nous a appris à mieux nous comprendre. Professeur, Rhodes Island est ma maison... et ils m'ont dit que c'était également la tienne."
       },
       {
+        "voId": "chr_0025_ardelia_mono_about_line03",
         "title": "Thème : Dolly",
         "text": "M. Dolly est en réalité assez vif. Je n'arrive simplement pas à comprendre pourquoi il ne se montre pas. Pour toi, il est invisible en ce moment, mais il adore jouer avec toi. Que fait M. Dolly, là ? Eh bien, il essaie de s'asseoir sur ton... Oh non ! M. Dolly, arrête ça ! Arrête d'embêter l'Endmin... ! Roh. Bon, c'était M. Dolly. On s'est rencontrés par une journée banale, et il a décidé de rester et ne m'a plus quittée depuis."
       },
       {
+        "voId": "chr_0025_ardelia_mono_about_line04",
         "title": "Thème : Yvonne",
         "text": "Mlle Yvonne est une scientifique incroyable. Quand je suis arrivée à Endfield, elle a partagé énormément d'informations pour que je rattrape mon retard à propos du plan æthérique. Elle a même partagé ses découvertes avec moi en espérant qu'elles puissent aider d'autres chercheurs de notre domaine. Et pour couronner le tout, on aime la même musique ! Même si je préfère les mélodies plus douces et elle des rythmes plus forts et plus rapides, elle m'a donné plusieurs albums de pop de La Fantoma. Elle est géniale."
       },
       {
+        "voId": "chr_0025_ardelia_mono_about_line05",
         "title": "Thème : Talos-II",
         "text": "Un jour, j'ai vu un bloc d'originium géant être avalé et détruit par la Gangrène, qui déferlait comme une marée. Il n'en est resté qu'une vallée dénudée. Un hyenard a survécu au désastre et est rentré chez lui, seul et perdu... Le plan æthérique et la Gangrène sont un peu des anathèmes opposés, et nous vacillons pour survivre le long de cette ligne étroite. Je suis née de l'originium, alors je me suis sentie obligée d'étudier l'Æther. Mon seul souhait est de rendre ce monde plus sûr pour tous."
       },
       {
+        "voId": "chr_0025_ardelia_explore_point_common_01",
         "title": "Détection de ressource/objet à collecter 1",
         "text": "Ces ressources semblent utiles. N'oublions pas de les ramasser."
       },
       {
+        "voId": "chr_0025_ardelia_explore_point_valub_01",
         "title": "Détection de ressource/objet à collecter 2",
         "text": "Ces ressources sont très importantes. Essayons d'en trouver davantage."
       },
       {
+        "voId": "chr_0025_ardelia_explore_find_locked_01",
         "title": "Zone inexplorée détectée",
         "text": "Il y a quelque chose de louche, un peu plus loin. Je vais voir !"
       },
       {
+        "voId": "chr_0025_ardelia_explore_find_danger_01",
         "title": "Découverte d'un ennemi puissant",
         "text": "Il y a quelque chose de dangereux, plus loin. Nous devrions bien nous préparer."
       },
       {
+        "voId": "chr_0025_ardelia_interact_mine_valub_01",
         "title": "Extraction 1",
         "text": "Je trierai et j'identifierai ces minéraux un peu plus tard."
       },
       {
+        "voId": "chr_0025_ardelia_interact_mine_valub_echo2_01",
         "title": "Extraction 2",
         "text": "Laissez-moi aussi vous aider !"
       },
       {
+        "voId": "chr_0025_ardelia_interact_treasure_valub_01",
         "title": "Ouverture de caisse",
         "text": "Une récompense pour toutes les difficultés qu'on a affrontées !"
       },
       {
+        "voId": "chr_0025_ardelia_interact_etherium_01",
         "title": "Obtention d'aurylène",
         "text": "Contrairement à la Gangrène et aux failles, l'aurylène n'est pas très dangereuse."
       },
       {
+        "voId": "chr_0025_ardelia_interact_blight_break_01",
         "title": "Élimination de la Gangrène",
         "text": "Super. Plus personne n'en souffrira, désormais."
       },
       {
+        "voId": "chr_0025_ardelia_interact_rest_01",
         "title": "Repos",
         "text": "On a tellement marché... Tout le monde doit être épuisé. Cette pause est vraiment bienvenue."
       },
       {
+        "voId": "chr_0025_ardelia_combat_suppuse_using_01",
         "title": "Utilisation de tactique 1",
         "text": "Tu vas t'en sortir, je suis là !"
       },
       {
+        "voId": "chr_0025_ardelia_combat_suppuse_getheal_01",
         "title": "Utilisation de tactique 2",
         "text": "Pfiou... Je me sens beaucoup mieux."
       },
       {
+        "voId": "chr_0025_ardelia_combat_remind_danger_01",
         "title": "Avertissement de danger",
         "text": "Attention !"
       },
       {
+        "voId": "chr_0025_ardelia_combat_hurt_lowhp_01",
         "title": "Blessure",
         "text": "Je vais bien ! Je peux encore y arriver !"
       },
       {
+        "voId": "chr_0025_ardelia_combat_dead_01",
         "title": "0 PV",
         "text": "Je ne peux pas... laisser tomber... Professeur..."
       },
       {
+        "voId": "chr_0025_ardelia_combat_remind_praise_01",
         "title": "Encouragement de l'équipe 1",
         "text": "Quel coup incroyable !"
       },
       {
+        "voId": "chr_0025_ardelia_combat_remind_praise_02",
         "title": "Encouragement de l'équipe 2",
         "text": "Tout le monde met son grain de sel !"
       },
       {
+        "voId": "chr_0025_ardelia_combat_remind_praise_echo2_01",
         "title": "Réaction face aux encouragements 1",
         "text": "Merci pour ton soutien !"
       },
       {
+        "voId": "chr_0025_ardelia_combat_remind_praise_echo2_02",
         "title": "Réaction face aux encouragements 2",
         "text": "Merci à tous !"
       },
       {
+        "voId": "chr_0025_ardelia_combat_intobattle_01",
         "title": "Début du combat 1",
         "text": "Faites attention où vous mettez les pieds."
       },
       {
+        "voId": "chr_0025_ardelia_combat_intobattle_echo2_01",
         "title": "Début du combat 2",
         "text": "On va s'en sortir."
       },
       {
+        "voId": "chr_0025_ardelia_combat_outbattle_nor_01",
         "title": "Victoire au combat 1",
         "text": "Aucune épreuve ne nous arrêtera."
       },
       {
+        "voId": "chr_0025_ardelia_combat_outbattle_nor_02",
         "title": "Victoire au combat 2",
         "text": "On a réussi. J'espère que tu n'es pas trop fatigué, M. Dolly."
       },
       {
+        "voId": "chr_0025_ardelia_combat_outbattle_nor_echo2_01",
         "title": "Victoire au combat 3",
         "text": "Je savais qu'on pouvait y arriver."
       },
       {
+        "voId": "chr_0025_ardelia_combat_outbattle_hard_01",
         "title": "Victoire au combat 4",
         "text": "On a fini par y arriver... Et c'est parce qu'on s'est serré les coudes."
       },
       {
+        "voId": "chr_0025_ardelia_combat_battle_defeat_01",
         "title": "Défaite au combat",
         "text": "Une défaite n'est pas la fin du monde. Apprenons de nos erreurs et on fera mieux la prochaine fois."
       },
       {
+        "voId": "chr_0025_ardelia_mono_attack_last_01",
         "title": "Coup final 1",
         "text": "Faites place !"
       },
       {
+        "voId": "chr_0025_ardelia_mono_attack_last_02",
         "title": "Coup final 2",
         "text": "Éruption !"
       },
       {
+        "voId": "chr_0025_ardelia_mono_skill_nor_01",
         "title": "Compétence de combat 1",
         "text": "Impact imminent !"
       },
       {
+        "voId": "chr_0025_ardelia_mono_skill_nor_02",
         "title": "Compétence de combat 2",
         "text": "Ça suffit !"
       },
       {
+        "voId": "chr_0025_ardelia_mono_skill_nor_03",
         "title": "Compétence de combat 3",
         "text": "C'est parti !"
       },
       {
+        "voId": "chr_0025_ardelia_combat_skill_comb_ready_01",
         "title": "Compétence de combo prête 1",
         "text": "Je vais t'aider !"
       },
       {
+        "voId": "chr_0025_ardelia_combat_skill_comb_ready_02",
         "title": "Compétence de combo prête 2",
         "text": "Laisse-moi tenter ma chance !"
       },
       {
+        "voId": "chr_0025_ardelia_mono_skill_comb_release_01",
         "title": "Utilisation de combo 1",
         "text": "Ça va faire mal !"
       },
       {
+        "voId": "chr_0025_ardelia_mono_skill_comb_release_02",
         "title": "Utilisation de combo 2",
         "text": "Épanouissez-vous !"
       },
       {
+        "voId": "chr_0025_ardelia_mono_attack_extra_01",
         "title": "Coup fatal 1",
         "text": "C'est le moment !"
       },
       {
+        "voId": "chr_0025_ardelia_mono_attack_extra_02",
         "title": "Coup fatal 2",
         "text": "Du balai !"
       },
       {
+        "voId": "chr_0025_ardelia_mono_skill_ultimate_01",
         "title": "Ultime 1",
         "text": "Aide-moi, M. Dolly !"
       },
       {
+        "voId": "chr_0025_ardelia_mono_skill_ultimate_02",
         "title": "Ultime 2",
         "text": "N'en fais pas trop, M. Dolly."
       },
       {
+        "voId": "chr_0025_ardelia_mono_skill_ultimate_03",
         "title": "Ultime 3",
         "text": "Doucement, M. Dolly."
       }

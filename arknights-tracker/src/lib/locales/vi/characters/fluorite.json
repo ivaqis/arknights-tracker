@@ -125,322 +125,402 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0022_bounda_chrbark_squad_01",
         "title": "Chuẩn Bị Tác Chiến 1",
         "text": "Ồ, ta sẵn sàng chơi rồi sao?"
       },
       {
+        "voId": "chr_0022_bounda_chrbark_squad_02",
         "title": "Chuẩn Bị Tác Chiến 2",
         "text": "Khoan đã, nhỡ ai đó chưa chuẩn bị thì sao?"
       },
       {
+        "voId": "chr_0022_bounda_chrbark_join_01",
         "title": "Đang thêm vào đội 1",
         "text": "Bình yên và nụ cười, thưa quý ông quý bà."
       },
       {
+        "voId": "chr_0022_bounda_chrbark_join_02",
         "title": "Đang thêm vào đội 2",
         "text": "Chà, xem ra tôi khá nổi tiếng nhỉ."
       },
       {
+        "voId": "chr_0022_bounda_chrbark_weap_01",
         "title": "Đang đổi vũ khí",
         "text": "Không tệ chút nào... Ngài có phiền nếu tôi chỉnh lại một chút không?"
       },
       {
+        "voId": "chr_0022_bounda_chrbark_gear_01",
         "title": "Đang đổi trang bị",
         "text": "Trang bị càng hào nhoáng, phiền toái càng nhiều, nhỉ?"
       },
       {
+        "voId": "chr_0022_bounda_chrup_skill_01",
         "title": "Kích hoạt Ma Trận Năng Lực",
         "text": "Không ai muốn đấu tập với tôi à? Tiếc thật đấy."
       },
       {
+        "voId": "chr_0022_bounda_chrup_level_01",
         "title": "Xem Hồ Sơ Chiến Đấu",
         "text": "Nhiều bản ghi chiến đấu thế này... Endfield quả thật xứng đáng với chữ \"Tập Đoàn\"."
       },
       {
+        "voId": "chr_0022_bounda_chrup_promt01_01",
         "title": "Thăng Bậc Cán Viên 1",
         "text": "Xem ra công việc thực sự mới chỉ bắt đầu thôi."
       },
       {
+        "voId": "chr_0022_bounda_chrup_promt02_01",
         "title": "Thăng Bậc Cán Viên 2",
         "text": "Tôi rất vinh dự... nhưng chắc điều đó cũng đồng nghĩa với việc phải làm nhiệm vụ thực địa lâu hơn, nhỉ?"
       },
       {
+        "voId": "chr_0022_bounda_chrup_promt03_01",
         "title": "Thăng Bậc Cán Viên 3",
         "text": "Lần tới hãy tặng tôi huy chương nhé. Tôi chả có cái nào cả."
       },
       {
+        "voId": "chr_0022_bounda_chrup_promt04_01",
         "title": "Thăng Bậc Cán Viên 4",
         "text": "Nếu Viền Vành Đai là một phần của \"thế giới tốt đẹp hơn\" mà ta đang cố gắng xây dựng, thì đúng là vẫn còn rất nhiều việc cần làm nhỉ?"
       },
       {
+        "voId": "chr_0022_bounda_introduce_01",
         "title": "Cán Viên đang báo cáo nhiệm vụ",
         "text": "Kẻ Đánh Lén Đội Z7, Fluorite. Ngài có gì muốn nói không? Không? Vậy hay là hôm nay dừng ở đây nhé?"
       },
       {
+        "voId": "chr_0022_bounda_mono_switch_01",
         "title": "Chờ Lệnh 1",
         "text": "Lần này ai sẽ là người gặp xui nhỉ?"
       },
       {
+        "voId": "chr_0022_bounda_mono_switch_02",
         "title": "Chờ Lệnh 2",
         "text": "Đánh lạc hướng? Vô hiệu hóa? Hay... xóa sổ luôn?"
       },
       {
+        "voId": "chr_0022_bounda_sim_assign_work_01",
         "title": "Phân Công Vào Công Trình",
         "text": "Cứ yên tâm, tôi sẽ hoàn thành nhiệm vụ chuẩn không cần chỉnh."
       },
       {
+        "voId": "chr_0022_bounda_sim_hello_lower_01",
         "title": "Lời Chào 1",
         "text": "Ngày bận rộn quá hả, đại anh hùng?"
       },
       {
+        "voId": "chr_0022_bounda_sim_hello_max_01",
         "title": "Lời Chào 2",
         "text": "Lần gần nhất ngài nghỉ ngơi là bao giờ vậy?"
       },
       {
+        "voId": "chr_0022_bounda_sim_talk_lv01_01",
         "title": "Trò Chuyện Nhàn Rỗi Dijiang 1",
         "text": "Ồ... cái này mới đây. Không có nhiệm vụ nào cho tôi hôm nay sao?"
       },
       {
+        "voId": "chr_0022_bounda_sim_talk_lv02_01",
         "title": "Trò Chuyện Nhàn Rỗi Dijiang 2",
         "text": "Có phải Akekuri vừa vào phòng huấn luyện, cười toe toét... cùng một thanh kiếm? Có lẽ tôi nên tránh tầm mắt của cô ấy thêm một chút..."
       },
       {
+        "voId": "chr_0022_bounda_sim_talk_lv02_02",
         "title": "Trò Chuyện Nhàn Rỗi Dijiang 3",
         "text": "Lần đầu cầm súng, tôi thậm chí còn không biết mở buồng đạn như thế nào. Nhưng khi cả đám địch lao về phía mình thì cũng chẳng còn lựa chọn nào khác... Thật lòng thì huấn luyện ở đây chỉ như gió thoảng so với hỗn loạn nơi tiền tuyến."
       },
       {
+        "voId": "chr_0022_bounda_sim_talk_max_01",
         "title": "Trò Chuyện Nhàn Rỗi Dijiang 4",
         "text": "Nếu không nhờ may mắn mà tôi và mấy người kia được xếp chung đội, chắc chúng tôi đã gây họa to rồi. Nhưng đừng lo, tôi sẽ trông chừng họ."
       },
       {
+        "voId": "chr_0022_bounda_sim_talk_max_02",
         "title": "Trò Chuyện Nhàn Rỗi Dijiang 5",
         "text": "Hồi nhỏ, chúng tôi hay nằm dài trên lưng những con Quái Thú Chở Hàng, tắm nắng suốt ngày để quên đói... Tôi không phàn nàn về đặc quyền nơi đây; chỉ thấy hơi tiếc nếu không tranh thủ đón chút ánh nắng ở độ cao thế này."
       },
       {
+        "voId": "chr_0022_bounda_sim_talk_max_03",
         "title": "Trò Chuyện Nhàn Rỗi Dijiang 6",
         "text": "Ngài giống Giám sát viên Perlica, khó mà ghét được. Những kẻ đầu sỏ ở vùng tiền tuyến thì cứ bám mãi vào địa vị và sĩ diện, nhưng mà, người ta sẽ đi theo một lãnh đạo thực thụ, dù có hay không có mấy cái danh."
       },
       {
+        "voId": "chr_0022_bounda_sim_gift_give_01",
         "title": "Tặng Quà",
         "text": "Đây, một món đồ nhỏ tặng ngài. Yên tâm, không có gì bất ngờ bật ra đâu."
       },
       {
+        "voId": "chr_0022_bounda_sim_gift_recv_01",
         "title": "Nhận quà",
         "text": "À, có một \"đồng nghiệp\" của tôi từng nhận quà rồi phải gánh hết trách nhiệm... Sao ngài lắc đầu mạnh thế?"
       },
       {
+        "voId": "chr_0022_bounda_mono_self_line01",
         "title": "Đối Thoại Tín Nhiệm 1",
         "text": "Kỹ năng đàm phán à? Thôi nào, đừng tâng bốc bọn du côn đường phố đó. Chúng kêu to lắm, nhưng chỉ cần ông chủ chúng lắc cái bát là chúng lại chạy về. Chúng chỉ là công cụ thôi, không có bản lĩnh, chẳng có kế hoạch. Chúng gây rối được đấy, nhưng cái mục ruỗng thực sự ư? Là mấy kẻ ngồi chễm chệ trên quyền lực và tài nguyên, bóp nghẹt những người còn lại."
       },
       {
+        "voId": "chr_0022_bounda_mono_self_line02",
         "title": "Đối Thoại Tín Nhiệm 2",
         "text": "Tôi cũng từng gặp rắc rối trước khi gia nhập. Akekuri đã kéo tôi ra khỏi đó. Đội hình của cô ấy lúc ấy đang cứu thị trấn, đuổi đám Landbreaker. Còn dân địa phương? Họ thì chỉ chăm chăm nhìn vào nguồn tiếp tế của Endfield như lũ kền kền... Vậy ngài nói thử xem, ngài sẽ làm gì?"
       },
       {
+        "voId": "chr_0022_bounda_mono_self_line03",
         "title": "Đối Thoại Tín Nhiệm 3",
         "text": "Tôi có sáu ông chú, tám bà dì, và hai mươi hai anh em... Đúng vậy, bọn tôi giống hệt lũ Cautus. Không phải ai cũng là ruột thịt, vài người cùng chạy loạn với tôi và mẹ. Có người đến sau, có người biến mất chẳng ai hay. Nhưng chỉ cần còn sát cánh dù chỉ trong khoảnh khắc ngắn ngủi. Thế cũng đã là gia đình rồi."
       },
       {
+        "voId": "chr_0022_bounda_mono_self_line04",
         "title": "Đối Thoại Tín Nhiệm 4",
         "text": "Có người quên rằng mình có bốn chi, không phải chỉ hai chân để lê lết. Khi cúi đầu đủ lâu, người ta sẽ không còn giống con người nữa. Vùng tiền tuyến đầy rẫy những kẻ như thế. Nhưng nếu ngài đủ can đảm để ngẩng đầu lên thì sao? Vậy có lẽ ngài có cơ hội để giành lấy điều gì đó tốt đẹp hơn."
       },
       {
+        "voId": "chr_0022_bounda_mono_self_line05",
         "title": "Đối Thoại Tín Nhiệm 5",
         "text": "Đây, hãy cầm lấy bức thư này. Hãy đốt nó ở hoang địa nếu tôi không trở về. Ngài có thể đọc nếu muốn, chỉ là vài điều nhỏ nhặt thôi. Người mà bức thư này dành cho đã không còn nữa. Xem ra tôi phải tự mình tìm ra câu trả lời mà họ từng kiếm tìm. Tôi chắc rằng vị đại anh hùng vĩ đại của Talos-II sẽ giúp tôi, phải không?"
       },
       {
+        "voId": "chr_0022_bounda_mono_chat_line01",
         "title": "Trò Chuyện 1",
         "text": "Đây là một trong những quả bom dắt lưng của tôi. Chỉ cần chỉnh lớp keo dính một chút, nó sẽ nổ chính xác tại điểm cần thiết. À, đừng lo về sức công phá của nó. Thực ra, nó hiệu quả trong việc cản bước mục tiêu hơn là phá hủy mọi thứ."
       },
       {
+        "voId": "chr_0022_bounda_mono_chat_line02",
         "title": "Trò Chuyện 2",
         "text": "Sau khi xem hồ sơ của tôi, Giám sát viên Perlica đặt cho tôi mật danh \"Fluorite\". Độc tính tự nhiên, nhưng lại hoàn hảo để tạo ra vô số sản phẩm công nghiệp. Tôi hiểu ý cô ấy sau khi lướt qua cuốn sách. Nhưng thật lòng mà nói? Đó là một lựa chọn khá là tinh quái."
       },
       {
+        "voId": "chr_0022_bounda_mono_chat_line03",
         "title": "Trò Chuyện 3",
         "text": "Khi còn nhỏ, tôi và mẹ luôn phải chạy từ nơi này đến nơi khác. Cuối cùng, tôi phải tự sinh tồn nơi tiền tuyến. Có nơi phát cho chúng tôi ít lương khô để cầm cự, có nơi thì bắt đóng đủ thứ loại thuế vô lý. Nơi nào cũng như nhà, nhưng thật ra chẳng nơi nào là nhà cả. Các khu định cư nơi vùng tiền tuyến hiếm khi tồn tại lâu, và khái niệm \"quê nhà\" chẳng có ý nghĩa gì."
       },
       {
+        "voId": "chr_0022_bounda_mono_chat_line04",
         "title": "Trò Chuyện 4",
         "text": "Vẻ đẹp luôn hiện hữu ở hoang địa. Động vật tháo chạy khỏi vùng Nhiễm Khuẩn không bao giờ thật sự biến mất, chúng chỉ thay đổi lộ trình mỗi năm. Cỏ mọc trở lại ngay khi Nhiễm Khuẩn rút đi. Thiên nhiên có nhịp điệu riêng, nó chỉ chịu đựng được đến một mức giới hạn... Đôi khi tôi tự hỏi liệu chúng ta có thực sự thuộc về sự cân bằng đó không."
       },
       {
+        "voId": "chr_0022_bounda_mono_chat_line05",
         "title": "Trò Chuyện 5",
         "text": "Ở những vùng quê nghèo tôi từng sống, lúc nào cũng là bọn cưỡng chế đè đầu cưỡi cổ dân chúng. Chúng biết sự mong manh của trật tự, chỉ cần một tia lửa hỗn loạn là tất cả sụp đổ. Thế là chúng tạo ra một kiểu cân bằng méo mó bằng cách bắt dân cư làm con tin. Trừ khi ngài ở đủ gần để bóp cổ bọn chúng, nếu không sẽ chẳng có gì thay đổi."
       },
       {
+        "voId": "chr_0022_bounda_mono_about_line01",
         "title": "Chủ đề: Akekuri",
         "text": "Thử đoán xem, ai là người niêm phong cặp tai đó vào túi tang vật? Đúng vậy, ngay cả Đội trưởng tốt bụng cũng biết chẳng còn lựa chọn nào tốt hơn trên Talos-II. Gương mặt ấy, đầy nước mắt nhưng cố gắng kìm lại? Dễ thương thật."
       },
       {
+        "voId": "chr_0022_bounda_mono_about_line02",
         "title": "Chủ đề: Catcher",
         "text": "Cậu ta trông có vẻ đang tận hưởng, nhưng làm ơn nhẹ tay với cậu ấy. Những người chuẩn bị kỹ lưỡng nhất thường là người sợ mắc lỗi nhất. Không ai là không thể phạm sai lầm cả... Sao, tôi nên ngừng nhờ cậu ta giúp đỡ à? Phì, tại sao tôi phải làm vậy? Đừng lo, dù có sợ đến cứng người, cậu ấy vẫn sẽ vượt qua thôi. Cậu ấy luôn như vậy mà."
       },
       {
+        "voId": "chr_0022_bounda_mono_about_line03",
         "title": "Chủ đề: Estella",
         "text": "Đừng động vào danh sách nhạc của Estella, và đừng để cô ấy xông pha. Ngài nghĩ cô ấy kiểm soát được mọi thứ sao? Không không. Tốt nhất nên chuẩn bị sẵn để dọn dẹp mớ hỗn độn mà cô ấy sẽ gây ra, thưa ngài."
       },
       {
+        "voId": "chr_0022_bounda_mono_about_line04",
         "title": "Chủ đề: Antal",
         "text": "Con thằn lằn to ấy trông điềm tĩnh như băng, kể cả giữa chiến trận, có khi còn chẳng nhận ra là mình đang gặp nguy hiểm. Điều đó khiến Đội trưởng phát cáu... nhưng, ừm, đó là cách sống của cậu ấy mà. Tôi và cậu ta? Hmm... Tôi và cậu ta vẫn ổn... miễn là cậu ta nhớ cái đuôi của tôi không phải để ngắm."
       },
       {
+        "voId": "chr_0022_bounda_explore_point_common_01",
         "title": "Phát hiện Tài Nguyên/Có Thể Thu Thập 1",
         "text": "Tôi đã tìm thấy thứ gì đó hay ho. Tôi lấy hết được chứ?"
       },
       {
+        "voId": "chr_0022_bounda_explore_point_valub_01",
         "title": "Phát hiện Tài Nguyên/Có Thể Thu Thập 2",
         "text": "Ngài có thấy cái gì ở đằng kia không? À mà thôi, quên đi."
       },
       {
+        "voId": "chr_0022_bounda_explore_find_locked_01",
         "title": "Phát Hiện Khu Vực Chưa Khám Phá",
         "text": "Chỗ này có vẻ thú vị. Hmm... trông có vẻ vui đấy."
       },
       {
+        "voId": "chr_0022_bounda_explore_find_danger_01",
         "title": "Phát hiện Kẻ Địch Mạnh",
         "text": "Mọi người ơi, có bạn mới đến chơi rồi này."
       },
       {
+        "voId": "chr_0022_bounda_interact_mine_valub_01",
         "title": "Khai thác 1",
         "text": "À, lao động tay chân. Như những ngày cay đắng xưa kia."
       },
       {
+        "voId": "chr_0022_bounda_interact_mine_valub_echo2_01",
         "title": "Khai thác 2",
         "text": "*Ngáp* Tới liền. Mọi người năng nổ thật đấy."
       },
       {
+        "voId": "chr_0022_bounda_interact_treasure_valub_01",
         "title": "Mở Thùng",
         "text": "Ồ, trông xịn thế. Mà lại không có thẻ tên sao? Hừm..."
       },
       {
+        "voId": "chr_0022_bounda_interact_etherium_01",
         "title": "Nhận Aurylene",
         "text": "Tôi từng có một cái giống vậy. Hừm... Mà sau đó chuyện không hay đã xảy ra."
       },
       {
+        "voId": "chr_0022_bounda_interact_blight_break_01",
         "title": "Xua Tan Nhiễm Khuẩn",
         "text": "Giá như tôi có thể tiêu diệt vùng Nhiễm Khuẩn hồi đó..."
       },
       {
+        "voId": "chr_0022_bounda_interact_rest_01",
         "title": "Nghỉ ngơi",
         "text": "Cuối cùng cũng đến lúc bổ sung thêm bom."
       },
       {
+        "voId": "chr_0022_bounda_combat_suppuse_using_01",
         "title": "Sử Dụng Vật Phẩm Chiến Thuật 1",
         "text": "Thấy chưa? Tôi biết nó sẽ có ích mà."
       },
       {
+        "voId": "chr_0022_bounda_combat_suppuse_getheal_01",
         "title": "Sử Dụng Vật Phẩm Chiến Thuật 2",
         "text": "Chỉ là xui thôi. Thêm một vòng nữa."
       },
       {
+        "voId": "chr_0022_bounda_combat_remind_danger_01",
         "title": "Cảnh Báo Nguy Hiểm",
         "text": "Cẩn thận, đừng để xui lây."
       },
       {
+        "voId": "chr_0022_bounda_combat_hurt_lowhp_01",
         "title": "Bị Thương",
         "text": "... Tôi bị trượt."
       },
       {
+        "voId": "chr_0022_bounda_combat_dead_01",
         "title": "0 HP",
         "text": "Lẽ ra tôi phải... đỡ được đòn đó."
       },
       {
+        "voId": "chr_0022_bounda_combat_remind_praise_01",
         "title": "Cổ Vũ Đội 1",
         "text": "Ừm, cũng tạm ổn."
       },
       {
+        "voId": "chr_0022_bounda_combat_remind_praise_02",
         "title": "Cổ Vũ Đội 2",
         "text": "Không tệ chút nào. Tiếc là chẳng ai quay lại cảnh đó."
       },
       {
+        "voId": "chr_0022_bounda_combat_remind_praise_echo2_01",
         "title": "Đáp Lại Lời Cổ Vũ 1",
         "text": "Lời khen hay đấy, nhưng ngài khỏi cần tốn hơi."
       },
       {
+        "voId": "chr_0022_bounda_combat_remind_praise_echo2_02",
         "title": "Đáp Lại Lời Cổ Vũ 2",
         "text": "Chúng tôi là đội tinh anh mà, đúng không?"
       },
       {
+        "voId": "chr_0022_bounda_combat_intobattle_01",
         "title": "Bắt Đầu Chiến Đấu 1",
         "text": "Lại quay về công việc cũ à?"
       },
       {
+        "voId": "chr_0022_bounda_combat_intobattle_echo2_01",
         "title": "Bắt Đầu Chiến Đấu 2",
         "text": "Chúng ta thật chăm chỉ! Cầu mong có thêm thưởng."
       },
       {
+        "voId": "chr_0022_bounda_combat_outbattle_nor_01",
         "title": "Thắng Trận 1",
         "text": "Tốt, bớt được một mối lo."
       },
       {
+        "voId": "chr_0022_bounda_combat_outbattle_nor_02",
         "title": "Thắng Trận 2",
         "text": "Chán vậy, đã cho chúng một cơ hội rồi đó."
       },
       {
+        "voId": "chr_0022_bounda_combat_outbattle_nor_echo2_01",
         "title": "Thắng Trận 3",
         "text": "Đúng, chính xác. Chúng ta hoàn toàn không thể làm được nếu thiếu ngài."
       },
       {
+        "voId": "chr_0022_bounda_combat_outbattle_hard_01",
         "title": "Thắng Trận 4",
         "text": "Hmph. Cũng ổn, nhưng vẫn chưa đủ."
       },
       {
+        "voId": "chr_0022_bounda_combat_battle_defeat_01",
         "title": "Bại Trận",
         "text": "Buồn bã cũng không giúp ích gì, hành động mới là điều quan trọng. Nào, mọi chuyện vẫn chưa kết thúc đâu."
       },
       {
+        "voId": "chr_0022_bounda_mono_attack_last_01",
         "title": "Đòn Dứt Điểm 1",
         "text": "*Huýt sáo* Bắt lấy!"
       },
       {
+        "voId": "chr_0022_bounda_mono_attack_last_02",
         "title": "Đòn Dứt Điểm 2",
         "text": "Xin hãy chú ý."
       },
       {
+        "voId": "chr_0022_bounda_mono_skill_nor_01",
         "title": "KN Chiến Đấu 1",
         "text": "Của ngài đây."
       },
       {
+        "voId": "chr_0022_bounda_mono_skill_nor_02",
         "title": "KN Chiến Đấu 2",
         "text": "Hy vọng ngài thích!"
       },
       {
+        "voId": "chr_0022_bounda_mono_skill_nor_03",
         "title": "KN Chiến Đấu 3",
         "text": "Tích tắc!"
       },
       {
+        "voId": "chr_0022_bounda_combat_skill_comb_ready_01",
         "title": "Chuẩn Bị KN Liên Hoàn 1",
         "text": "Hmph. Bắt đầu trình diễn."
       },
       {
+        "voId": "chr_0022_bounda_combat_skill_comb_ready_02",
         "title": "Chuẩn Bị KN Liên Hoàn 2",
         "text": "Chúng thủng như miếng phô mai vậy."
       },
       {
+        "voId": "chr_0022_bounda_mono_skill_comb_release_01",
         "title": "Thi Triển Liên Hoàn 1",
         "text": "Thưởng thức đi."
       },
       {
+        "voId": "chr_0022_bounda_mono_skill_comb_release_02",
         "title": "Thi Triển Liên Hoàn 2",
         "text": "Cá là ngài sẽ thích."
       },
       {
+        "voId": "chr_0022_bounda_mono_attack_extra_01",
         "title": "Kết Liễu 1",
         "text": "Bất ngờ chưa."
       },
       {
+        "voId": "chr_0022_bounda_mono_attack_extra_02",
         "title": "Kết Liễu 2",
         "text": "Đến giờ đi ngủ rồi cưng."
       },
       {
+        "voId": "chr_0022_bounda_mono_skill_ultimate_01",
         "title": "Tuyệt Kỹ 1",
         "text": "Có lẽ sống đủ lâu rồi nhỉ?"
       },
       {
+        "voId": "chr_0022_bounda_mono_skill_ultimate_02",
         "title": "Tuyệt Kỹ 2",
         "text": "Cái này sẽ rất ồn đấy."
       },
       {
+        "voId": "chr_0022_bounda_mono_skill_ultimate_03",
         "title": "Tuyệt Kỹ 3",
         "text": "Tới đường cùng rồi bạn hiền."
       }

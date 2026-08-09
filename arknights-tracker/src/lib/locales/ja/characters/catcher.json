@@ -130,322 +130,402 @@
     },
     "voiceLines": [
       {
+        "voId": "chr_0020_meurs_chrbark_squad_01",
         "title": "作戦準備1",
         "text": "はい、新しい任務でしょうか？"
       },
       {
+        "voId": "chr_0020_meurs_chrbark_squad_02",
         "title": "作戦準備2",
         "text": "準備ができました。"
       },
       {
+        "voId": "chr_0020_meurs_chrbark_join_01",
         "title": "編成1",
         "text": "援護や後方支援に関する任務は、自分に任せてください。"
       },
       {
+        "voId": "chr_0020_meurs_chrbark_join_02",
         "title": "編成2",
         "text": "今回の任務もできる限り安全に、無事に終わることを願います。"
       },
       {
+        "voId": "chr_0020_meurs_chrbark_weap_01",
         "title": "武器取替",
         "text": "汎用性も実用性も高く、様々な状況で使えそうです。"
       },
       {
+        "voId": "chr_0020_meurs_chrbark_gear_01",
         "title": "装備取替",
         "text": "制式装備は訓練所の教材でしか見たことがありませんでした。実物は予想以上に精巧ですね。"
       },
       {
+        "voId": "chr_0020_meurs_chrup_skill_01",
         "title": "素質・配属スキル解放",
         "text": "念の為、いつも緊急対応策を用意していますが……大抵、使うことになります。"
       },
       {
+        "voId": "chr_0020_meurs_chrup_level_01",
         "title": "経験値素材を使用",
         "text": "はい、要点は全部記録しました……整理後、隊長に報告をします。"
       },
       {
+        "voId": "chr_0020_meurs_chrup_promt01_01",
         "title": "昇進1",
         "text": "ありがとうございます。今後も全力を尽くします。"
       },
       {
+        "voId": "chr_0020_meurs_chrup_promt02_01",
         "title": "昇進2",
         "text": "次はもっと厳しい任務でも任せてください。必ず、やり遂げてみせます。"
       },
       {
+        "voId": "chr_0020_meurs_chrup_promt03_01",
         "title": "昇進3",
         "text": "管理人。認めて頂いたことに応えたく、以降3カ月分の任務に関する準備を終わらせました。ご確認ください。"
       },
       {
+        "voId": "chr_0020_meurs_chrup_promt04_01",
         "title": "昇進4",
         "text": "時々思うのです。あのとき、家族の願いに従っていたなら――おそらく今よりずっと、穏やかで安定した生活を送っていたと……でもあの朝、剣を手に家を出た瞬間から、もう振り返らないと決めました。"
       },
       {
+        "voId": "chr_0020_meurs_introduce_01",
         "title": "入職会話",
         "text": "行動隊Z7のキャッチャーです。支援を担当します。防衛戦が得意で、剣術も悪くないはずです……皆の力になれたら、嬉しく思います。"
       },
       {
+        "voId": "chr_0020_meurs_mono_switch_01",
         "title": "待機1",
         "text": "援護が必要ですか？全力でサポートします。"
       },
       {
+        "voId": "chr_0020_meurs_mono_switch_02",
         "title": "待機2",
         "text": "個人的には、もう少し準備が必要と思います。"
       },
       {
+        "voId": "chr_0020_meurs_sim_assign_work_01",
         "title": "船室配属",
         "text": "承知しました。最優先任務として、確実に遂行します。"
       },
       {
+        "voId": "chr_0020_meurs_sim_hello_lower_01",
         "title": "挨拶1",
         "text": "管理人、お疲れさまです。また新しい任務でしょうか？"
       },
       {
+        "voId": "chr_0020_meurs_sim_hello_max_01",
         "title": "挨拶2",
         "text": "管理人、作戦報告を追加で10件まとめておきました。目を通して貰えますか？"
       },
       {
+        "voId": "chr_0020_meurs_sim_talk_lv01_01",
         "title": "帝江号雑談1",
         "text": "管理人？どうしましたか？今日は忙しくはありません。30分後から剣術訓練が5コマ連続で入っているのみで……それ以外は全て空いています。"
       },
       {
+        "voId": "chr_0020_meurs_sim_talk_lv02_01",
         "title": "帝江号雑談2",
         "text": "皆のアドバイスを参考に、キャンプ用ポタージュのレシピを改良しました。管理人、時間があるときに味見して貰えますか？"
       },
       {
+        "voId": "chr_0020_meurs_sim_talk_lv02_02",
         "title": "帝江号雑談3",
         "text": "帝江号に戻るたび、なんだか心が落ち着きます。アンタルは寮のベッドが快適だからだと言っています……もちろん、その点については自分も異論はありませんが。"
       },
       {
+        "voId": "chr_0020_meurs_sim_talk_max_01",
         "title": "帝江号雑談4",
         "text": "任務中はZ7の全員を信頼しています。でも、隊長の言うことを聞いて大人しく休むかと言われると……いえ、ありえません。どうせ図書室に籠って本を読んでいるか、ラウンジで新人をからかっているか……念の為、自分が寮に「送って」あげないと。"
       },
       {
+        "voId": "chr_0020_meurs_sim_talk_max_02",
         "title": "帝江号雑談5",
         "text": "先日、久しぶりに地元に帰りました。今でも家族は仕事について受け入れてくれませんが……Z7のことを色々と話すと、何も言わずにたくさんのお土産を、しかも皆で食べても半年はなくならないほどの量をくれました……管理人にも、少しお裾分けします。"
       },
       {
+        "voId": "chr_0020_meurs_sim_talk_max_03",
         "title": "帝江号雑談6",
         "text": "毎日充実していて、多くの人に必要とされている――エンドフィールドに来てから一番強く感じていることです。疲れて眠れない夜もありますが、悪く思っていません。自分にとってはそれが「認められた証」ですから。"
       },
       {
+        "voId": "chr_0020_meurs_sim_gift_give_01",
         "title": "プレゼントを贈る",
         "text": "管理人、差し入れです。大したものではないですが……よかったら、どうぞ。"
       },
       {
+        "voId": "chr_0020_meurs_sim_gift_recv_01",
         "title": "プレゼントを受け取る",
         "text": "自分にですか？ありがとうございます。金庫に入れて大切に保管します。"
       },
       {
+        "voId": "chr_0020_meurs_mono_self_line01",
         "title": "信頼上昇後会話1",
         "text": "……失礼しました。次の任務について少し考え事をしていました。ところで、溶接ガン、浮力調整装置、源石粉塵防護マスク……この中で一番実用性の高いものはどれだと思いますか？……そうですね、念の為全部持って行きます。"
       },
       {
+        "voId": "chr_0020_meurs_mono_self_line02",
         "title": "信頼上昇後会話2",
         "text": "自分はごく普通の5人家族で育ちました。両親は軍人、兄は商会の部隊教官、姉はセシュカの護衛をしています。家族は同じ道を歩ませたくない、平穏に暮らしてほしいと守ってくれましたが……でも、タロⅡでは一生家族に守られて生きるなど、誰にもできないことです。"
       },
       {
+        "voId": "chr_0020_meurs_mono_self_line03",
         "title": "信頼上昇後会話3",
         "text": "9歳までのことは、正直あまり振り返りたくありません。今でも、消毒液の匂いは苦手です。やかんを持つことも難しく、外出も禁止され、陽の光を浴びることも贅沢な日々……だからこそ、今でもはっきり覚えています。初めて1人太陽の下を歩いた、あの生き返ったような感覚を……"
       },
       {
+        "voId": "chr_0020_meurs_mono_self_line04",
         "title": "信頼上昇後会話4",
         "text": "Z7を優秀な隊だと思わない人もいると思いますし、それは理解できます。隊長は若く、フローライトは怒られることばかりして、エステーラとアンタルは……マイペースです。それでも自分はずっとZ7に……できることなら、一生ここにいたいです。"
       },
       {
+        "voId": "chr_0020_meurs_mono_self_line05",
         "title": "信頼上昇後会話5",
         "text": "エンドフィールドに来たばかりのとき、皆に信頼してもらえる力があるか何度も疑いました。でも、Z7の皆と管理人のおかげで……思っていたよりもずっと、期待に応えられる力があると気づくことができました。"
       },
       {
+        "voId": "chr_0020_meurs_mono_chat_line01",
         "title": "会話1",
         "text": "訓練所で学ぶ内容はどこも同じです。作戦の知識、野外での生存スキル……実践で役立つ知識が身につくなんて期待している人はいません。でも、自分は違います。模擬訓練の授業で教官の構えが理論と異なることについて1時間ほど議論し――結果ですか？直してもらいました。次の授業が始まる前までに。"
       },
       {
+        "voId": "chr_0020_meurs_mono_chat_line02",
         "title": "会話2",
         "text": "自分は家族で最も戦闘の才能がありませんでした。体力も技術も、誰にも及ばず……それでも、諦めたことは一度もありません。ただひたすら努力することを選んで、兄より2時間早く起き、姉の3倍訓練をして……その積み重ねが、今日の自分です。"
       },
       {
+        "voId": "chr_0020_meurs_mono_chat_line03",
         "title": "会話3",
         "text": "料理を始めたきっかけですか？そうですね、大した理由はありませんが……Z7に加入したばかりの頃、他の隊員が作った料理を食べて……次の日、すぐダッジ教官に願い出て野外生存保障訓練を受けました。"
       },
       {
+        "voId": "chr_0020_meurs_mono_chat_line04",
         "title": "会話4",
         "text": "エンドフィールドに来る前、傭兵学校で研修を受けたことがあります。どこでも「プロ」になってほしい……つまり「金を渡すから黙って働け」と。理解できなくはありません。ですが、自分には一生難しいことだと思います。"
       },
       {
+        "voId": "chr_0020_meurs_mono_chat_line05",
         "title": "会話5",
         "text": "次の任務ではアンタルたちが何か思いついてしまうきっかけが無いと良いですが……今月すでに武庫エンジニアには相当なご迷惑をおかけしました……はい、隊長が未着手のクレーム処理は自分の部屋に積み上がっています。大丈夫です、任務のない日に徹夜で片付けます。"
       },
       {
+        "voId": "chr_0020_meurs_mono_about_line01",
         "title": "アケクリについて",
         "text": "隊長はとても責任感が強く、Z7の皆を気遣ってくれます……ただ、自分をもっと大切にしてほしいと思います。せめて、食事の時間は無理に皆の好みに合わせなくても……こちらも、隊長の好きな東国のおやつを作る理由を考えなくて済みますから。"
       },
       {
+        "voId": "chr_0020_meurs_mono_about_line02",
         "title": "フローライトについて",
         "text": "フローライトのような傭兵は文明地帯でよく見ていました。ずる賢く、人付き合いも悪い。笑顔の方が寧ろ怖いような……でも、最近はアンタルとオリジムシの投げ方について盛り上がっていて……もう少し様子を見て、考え直してもいいと思います。"
       },
       {
+        "voId": "chr_0020_meurs_mono_about_line03",
         "title": "エステーラについて",
         "text": "理由はわかりませんが、エステーラは自分の報告書を見る度に……驚く顔をします。任務中の出来事を全て記録し、未熟ながらコメントも記載しただけで、特別ではないはずですが……エステーラの好きな「芸術」と比べたら、至って普通の報告書のはずです。"
       },
       {
+        "voId": "chr_0020_meurs_mono_about_line04",
         "title": "アンタルについて",
         "text": "アンタルは博識で、皆の疑問に答えてくれます。問題は、答えるのが好きすぎること……エステーラが「長耳獣の耳が長い理由」を適当に尋ねたところ、アンタルは一日中生物学について語り続けていました。帝江号に戻る頃にようやく止まりましたが、それでも7割省略した簡略版だと……"
       },
       {
+        "voId": "chr_0020_meurs_explore_point_common_01",
         "title": "発見：資源1",
         "text": "経験上ですが、あちらに資源があると思います。"
       },
       {
+        "voId": "chr_0020_meurs_explore_point_valub_01",
         "title": "発見：資源2",
         "text": "はい、あれは……遠回りする価値があります。"
       },
       {
+        "voId": "chr_0020_meurs_explore_find_locked_01",
         "title": "発見：未探索エリア",
         "text": "危険性が不明です。念の為、慎重に。"
       },
       {
+        "voId": "chr_0020_meurs_explore_find_danger_01",
         "title": "発見：強敵",
         "text": "作戦の予定があるのなら、撤退ルートを計画しておきます。"
       },
       {
+        "voId": "chr_0020_meurs_interact_mine_valub_01",
         "title": "鉱物採集1",
         "text": "貴重な素材です。急ぎ集めたほうが良いと思います。"
       },
       {
+        "voId": "chr_0020_meurs_interact_mine_valub_echo2_01",
         "title": "鉱物採集2",
         "text": "協力すれば早く終わります。一緒に採掘をしましょう。"
       },
       {
+        "voId": "chr_0020_meurs_interact_treasure_valub_01",
         "title": "資源箱開封",
         "text": "実用性の高い物を確保できました。助かります。"
       },
       {
+        "voId": "chr_0020_meurs_interact_etherium_01",
         "title": "オーリレン入手",
         "text": "これがマニュアルで見た「オーリレン」ですか……"
       },
       {
+        "voId": "chr_0020_meurs_interact_blight_break_01",
         "title": "侵蝕排除",
         "text": "侵蝕による影響は想像以上に深刻……慎重な対応が必要です。"
       },
       {
+        "voId": "chr_0020_meurs_interact_rest_01",
         "title": "回復",
         "text": "マニュアルによると、適度な休憩は任務の遂行に効果的だそうです。"
       },
       {
+        "voId": "chr_0020_meurs_combat_suppuse_using_01",
         "title": "戦闘補助アイテム使用1",
         "text": "支援物資はまだあります。どうぞ。"
       },
       {
+        "voId": "chr_0020_meurs_combat_suppuse_getheal_01",
         "title": "戦闘補助アイテム使用2",
         "text": "……自分の失策です。"
       },
       {
+        "voId": "chr_0020_meurs_combat_remind_danger_01",
         "title": "警告",
         "text": "気を付けてください、無理は禁物です。"
       },
       {
+        "voId": "chr_0020_meurs_combat_hurt_lowhp_01",
         "title": "負傷",
         "text": "自分の剣なら、まだ行けます。"
       },
       {
+        "voId": "chr_0020_meurs_combat_dead_01",
         "title": "戦闘不能",
         "text": "すみません……自分が……足を引っ張って、しまいました……"
       },
       {
+        "voId": "chr_0020_meurs_combat_remind_praise_01",
         "title": "激励1",
         "text": "良い一手です。"
       },
       {
+        "voId": "chr_0020_meurs_combat_remind_praise_02",
         "title": "激励2",
         "text": "うまく行きましたね。戻ったら、食事を作ります。"
       },
       {
+        "voId": "chr_0020_meurs_combat_remind_praise_echo2_01",
         "title": "激励応答1",
         "text": "……少し、褒めすぎかと。"
       },
       {
+        "voId": "chr_0020_meurs_combat_remind_praise_echo2_02",
         "title": "激励応答2",
         "text": "皆の力があってこそです。"
       },
       {
+        "voId": "chr_0020_meurs_combat_intobattle_01",
         "title": "作戦開始1",
         "text": "念の為に、慎重に行きましょう。"
       },
       {
+        "voId": "chr_0020_meurs_combat_intobattle_echo2_01",
         "title": "作戦開始2",
         "text": "責任を持って援護を担当します。"
       },
       {
+        "voId": "chr_0020_meurs_combat_outbattle_nor_01",
         "title": "作戦終了1",
         "text": "すべて終わりましたか？念の為確認しておきます。"
       },
       {
+        "voId": "chr_0020_meurs_combat_outbattle_nor_02",
         "title": "作戦終了2",
         "text": "理想的な展開でした。"
       },
       {
+        "voId": "chr_0020_meurs_combat_outbattle_nor_echo2_01",
         "title": "作戦終了3",
         "text": "さすがです。抜かりはないですね。"
       },
       {
+        "voId": "chr_0020_meurs_combat_outbattle_hard_01",
         "title": "作戦終了4",
         "text": "とにかく、任務目標は達成です……"
       },
       {
+        "voId": "chr_0020_meurs_combat_battle_defeat_01",
         "title": "作戦失敗",
         "text": "経験上の教訓があります――「失敗はすべて受け入れ、乗り越える方法を探すこと。」"
       },
       {
+        "voId": "chr_0020_meurs_mono_attack_last_01",
         "title": "重攻撃1",
         "text": "邪魔するな。"
       },
       {
+        "voId": "chr_0020_meurs_mono_attack_last_02",
         "title": "重攻撃2",
         "text": "お前の番だ。"
       },
       {
+        "voId": "chr_0020_meurs_mono_skill_nor_strike_01",
         "title": "戦技1",
         "text": "させない！"
       },
       {
+        "voId": "chr_0020_meurs_mono_skill_nor_strike_02",
         "title": "戦技2",
         "text": "止まれ！"
       },
       {
+        "voId": "chr_0020_meurs_mono_skill_nor_strike_03",
         "title": "戦技3",
         "text": "援護する！"
       },
       {
+        "voId": "chr_0020_meurs_combat_skill_comb_ready_01",
         "title": "連携技準備完了1",
         "text": "待たせた。"
       },
       {
+        "voId": "chr_0020_meurs_combat_skill_comb_ready_02",
         "title": "連携技準備完了2",
         "text": "自分の番だ。"
       },
       {
+        "voId": "chr_0020_meurs_mono_skill_comb_release_01",
         "title": "連携技1",
         "text": "受けられるか？"
       },
       {
+        "voId": "chr_0020_meurs_mono_skill_comb_release_02",
         "title": "連携技2",
         "text": "喰らえ！"
       },
       {
+        "voId": "chr_0020_meurs_mono_attack_extra_01",
         "title": "終撃1",
         "text": "逃げられると思うな。"
       },
       {
+        "voId": "chr_0020_meurs_mono_attack_extra_02",
         "title": "終撃2",
         "text": "ここで……終わらせる！"
       },
       {
+        "voId": "chr_0020_meurs_mono_skill_ultimate_01",
         "title": "必殺技1",
         "text": "自分が片付ける！"
       },
       {
+        "voId": "chr_0020_meurs_mono_skill_ultimate_02",
         "title": "必殺技2",
         "text": "ここは……通さない！"
       },
       {
+        "voId": "chr_0020_meurs_mono_skill_ultimate_03",
         "title": "必殺技3",
         "text": "目の前から……消えろ！"
       }
