@@ -331,7 +331,20 @@
             isAudioLoading = false;
         });
 
+        audio.addEventListener("error", handleAudioError);
+
         audio.play().catch(handleAudioError);
+    }
+
+    function downloadAudio(voId) {
+        if (!voId || !char.gameId) return;
+        const audioUrl = `/audio/${selectedAudioLang}/${char.gameId}/${voId}.mp3`;
+        const link = document.createElement("a");
+        link.href = audioUrl;
+        link.download = `${voId}_${selectedAudioLang}.mp3`;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
     }
 
     onDestroy(() => {
@@ -1958,7 +1971,7 @@
                         </div>
                     {:else if activeTab === "audio"}
                         <div class="flex flex-col gap-4 animate-fadeIn w-full relative">
-                            <div class="flex items-center justify-end gap-3 flex-wrap">
+                            <div class="flex items-center justify-between gap-3 flex-wrap">
                                 <h2
                                     class="text-3xl dark:text-[#FDFDFD] font-bold text-[#21272C] font-sdk"
                                 >
@@ -1966,7 +1979,7 @@
                                 </h2>
                             </div>
 
-                            <div class="sticky top-4 z-20 self-end flex items-center gap-1.5 bg-white/90 dark:bg-[#2b2b2b]/95 backdrop-blur-md p-1.5 rounded-2xl border border-gray-200/80 dark:border-[#444] shadow-lg transition-all">
+                            <div class="sticky top-16 md:top-4 z-20 self-end flex items-center gap-1.5 bg-white/90 dark:bg-[#2b2b2b]/95 backdrop-blur-md p-1.5 rounded-2xl border border-gray-200/80 dark:border-[#444] shadow-lg transition-all">
                                 {#each audioLanguages as langOption}
                                     <button
                                         on:click={() => changeAudioLang(langOption.id)}
@@ -1985,19 +1998,29 @@
                                             class="bg-white/90 backdrop-blur-md dark:bg-[#383838]/90 p-5 rounded-2xl dark:border-[#444444] shadow-xl border flex items-start gap-4 transition-all hover:border-gray-300 dark:hover:border-[#555] {isPlaying ? 'border-[#FFD800] dark:border-[#FFD800] ring-1 ring-[#FFD800]' : 'border-white/50'}"
                                         >
                                             {#if line.voId}
-                                                <button
-                                                    on:click={() => playAudio(line.voId)}
-                                                    class="shrink-0 w-10 h-10 rounded-xl flex items-center justify-center transition-all cursor-pointer shadow-sm mt-0.5 {isPlaying ? 'bg-[#FFD800] text-black scale-105' : 'bg-gray-100 dark:bg-[#444] text-gray-700 dark:text-gray-200 hover:bg-[#FFD800] hover:text-black dark:hover:bg-[#FFD800] dark:hover:text-black'}"
-                                                    title={isPlaying ? "Pause" : "Play"}
-                                                >
-                                                    {#if isPlaying && isAudioLoading}
-                                                        <div class="w-4 h-4 border-2 border-black border-t-transparent rounded-full animate-spin"></div>
-                                                    {:else if isPlaying}
-                                                        <Icon name="pause" class="w-4 h-4 fill-current" />
-                                                    {:else}
-                                                        <Icon name="play" class="w-4 h-4 fill-current ml-0.5" />
-                                                    {/if}
-                                                </button>
+                                                <div class="flex items-center gap-1.5 shrink-0 mt-0.5">
+                                                    <button
+                                                        on:click={() => playAudio(line.voId)}
+                                                        class="w-10 h-10 rounded-xl flex items-center justify-center transition-all cursor-pointer shadow-sm {isPlaying ? 'bg-[#FFD800] text-black scale-105' : 'bg-gray-100 dark:bg-[#444] text-gray-700 dark:text-gray-200 hover:bg-[#FFD800] hover:text-black dark:hover:bg-[#FFD800] dark:hover:text-black'}"
+                                                        title={isPlaying ? "Pause" : "Play"}
+                                                    >
+                                                        {#if isPlaying && isAudioLoading}
+                                                            <div class="w-4 h-4 border-2 border-black border-t-transparent rounded-full animate-spin"></div>
+                                                        {:else if isPlaying}
+                                                            <Icon name="pause" class="w-4 h-4 fill-current" />
+                                                        {:else}
+                                                            <Icon name="play" class="w-4 h-4 fill-current ml-0.5" />
+                                                        {/if}
+                                                    </button>
+
+                                                    <button
+                                                        on:click={() => downloadAudio(line.voId)}
+                                                        class="w-9 h-9 rounded-xl flex items-center justify-center transition-all cursor-pointer text-gray-500 dark:text-gray-400 hover:text-black dark:hover:text-white bg-gray-100/60 dark:bg-[#444]/60 hover:bg-[#FFD800] hover:text-black dark:hover:bg-[#FFD800] dark:hover:text-black"
+                                                        title="Download Audio"
+                                                    >
+                                                        <Icon name="import" class="w-4 h-4" />
+                                                    </button>
+                                                </div>
                                             {/if}
 
                                             <div class="flex flex-col gap-1.5 flex-1 min-w-0">
