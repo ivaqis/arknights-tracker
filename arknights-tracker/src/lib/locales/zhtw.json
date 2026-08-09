@@ -1146,7 +1146,8 @@
     "miFu": "弭弗",
     "mifu": "弭弗",
     "camille": "卡繆",
-    "arcane": "訣"
+    "arcane": "訣",
+    "liino": "梨諾"
   },
   "weaponsList": {
     "custom_weapon": "自訂武器",
@@ -1225,7 +1226,8 @@
     "type42SolemnPhalanx": "四二式·肅陣",
     "junctionPoint": "聯結點",
     "goldenAge": "黃金時代",
-    "farsight": "遙望"
+    "farsight": "遙望",
+    "bedazzlingNightDebut": "曜夜的首演"
   },
   "cookies": {
     "title": "我們使用 Cookie",

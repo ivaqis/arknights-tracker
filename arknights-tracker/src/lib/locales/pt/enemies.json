@@ -711,7 +711,8 @@
     "nickname": "Alleikhreos",
     "description": "Uma criação da Fundação e um veterano de inúmeras batalhas. Este Quiliarca vagou pelo Ætherside até recuperar sua espada perdida e abrir uma brecha para poder retornar.",
     "abilities": [
-      "Quando o medidor de Desorientação de Alleikhreos, Quiliarca, atingir o Nó de Desorientação, ele soltará uma Arma de Fundite. Aproxime-se dela com o operador controlado para pegá-la e use a arma para atacá-lo."
+      "Quando o medidor de Desorientação de Alleikhreos, Quiliarca, atingir o Nó de Desorientação, ele soltará uma Arma de Fundite. Aproxime-se dela com o operador controlado para pegá-la e use a arma para atacá-lo.",
+      "Quando as coisas se complicarem para Alleikhreos, Quiliarca, ele invocará dublês da fenda para atacar seus oponentes."
     ]
   }
 }

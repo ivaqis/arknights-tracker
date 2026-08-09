@@ -29,6 +29,11 @@
         (op) => op && op.id,
     );
 
+    const charOrderMap = Object.keys(characters || {}).reduce((acc, key, idx) => {
+        acc[key] = idx;
+        return acc;
+    }, {});
+
     let sortField = "rarity";
     let sortDirection = "desc";
     let searchQuery = "";
@@ -184,14 +189,24 @@
                 let valB = sortField === "weapon" ? b.weapon : b[sortField];
                 
                 if (sortField === "rarity") {
-                    return sortDirection === "asc" ? valA - valB : valB - valA;
+                    const diff = sortDirection === "asc" ? valA - valB : valB - valA;
+                    if (diff !== 0) return diff;
+                    const indexA = charOrderMap[a.id] ?? 0;
+                    const indexB = charOrderMap[b.id] ?? 0;
+                    return indexB - indexA;
                 }
                 if (!valA) valA = "";
                 if (!valB) valB = "";
 
-                return sortDirection === "asc"
+                const primaryComp = sortDirection === "asc"
                     ? String(valA).localeCompare(String(valB))
                     : String(valB).localeCompare(String(valA));
+
+                if (primaryComp !== 0) return primaryComp;
+
+                const indexA = charOrderMap[a.id] ?? 0;
+                const indexB = charOrderMap[b.id] ?? 0;
+                return indexB - indexA;
             });
     })();
 

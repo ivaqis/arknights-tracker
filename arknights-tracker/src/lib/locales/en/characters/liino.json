@@ -1,0 +1,180 @@
+{
+  "baseInfo": {
+    "tags": [
+      "HP Treatment",
+      "Amp"
+    ],
+    "behaviourHateTags": [
+      "Nature"
+    ],
+    "behaviourUnavailableTags": [
+      "Introvert (SYSTEM ONLY, not visible in-game)"
+    ],
+    "blocTag": "Talos-II General Chamber of Commerce (TGCC)",
+    "expertTags": [
+      "Epiphany",
+      "Street Wisdom"
+    ],
+    "giftPreferTags": [
+      "Wuling Explorer's Choice"
+    ],
+    "hobbyTags": [
+      "Creative",
+      "Fine Arts"
+    ],
+    "raceTag": "Sarkaz"
+  },
+  "skills": {
+    "basicAttack": {
+      "name": "Starry Heart Throb",
+      "description": "BASIC ATTACK: \nAn attack with up to 5 sequences that deals <@ba.pulse>Electric DMG</>. As the controlled operator, <#ba.lastcombo>Final Strike</> also deals <@ba.poise>{poise:0}</> Stagger. \n\nDIVE ATTACK: \nBasic attack performed in mid-air becomes a dive attack that deals <@ba.pulse>Electric DMG</> to nearby enemies. \n\nFINISHER: \nBasic attack performed near a Staggered enemy becomes a finisher that deals massive <@ba.pulse>Electric DMG</> and recovers some SP.",
+      "batkSeq1Multiplier": "BATK SEQ 1 Multiplier",
+      "batkSeq2Multiplier": "BATK SEQ 2 Multiplier",
+      "batkSeq3Multiplier": "BATK SEQ 3 Multiplier",
+      "batkSeq4Multiplier": "BATK SEQ 4 Multiplier",
+      "batkSeq5Multiplier": "BATK SEQ 5 Multiplier",
+      "finisherAtkMultiplier": "Finisher ATK Multiplier",
+      "diveAtkMultiplier": "Dive ATK Multiplier"
+    },
+    "battleSkill": {
+      "name": "Dazzling Focus",
+      "description": "Liino deals <@ba.pulse>Electric DMG</> to enemies and then enters her <@ba.key>Vocalist Stance</>. While this stance is active, if there are enemies nearby, Liino will perform an Additional ATK (that deals <@ba.pulse>Electric DMG</> to enemies) on a regular basis.\n<@ba.key>Vocalist Stance</>: While this stance is active, Liino grants the entire team an ATK Boost. After entering battle, Liino will also grant continuous <@ba.heal>HP Treatment</> to operators within range.\n<@ba.info>During Vocalist Stance, her battle skill is replaced with End Stance. Casting this will end her Vocalist Stance early without consuming any SP, after which the battle skill will enter a short cooldown.</>",
+      "firstAtkMultiplier": "First ATK Multiplier",
+      "additionalAtkDmgMultiplier": "Additional ATK DMG Multiplier",
+      "additionalAtkIntervalS": "Additional ATK Interval (s)",
+      "beatIntervalS": "Beat Interval (s)",
+      "vocalistStanceDurationS": "Vocalist Stance Duration (s)",
+      "atkBoost": "ATK Boost",
+      "baseTreatment": "Base Treatment",
+      "treatmentIncreasePerAgility": "Treatment Increase per Agility",
+      "stagger": "Stagger"
+    },
+    "comboSkill": {
+      "name": "Delightful Harmonics",
+      "description": "COMBO TRIGGER: While <@ba.key>Vocalist Stance</> is active, an <#ba.spellstatus>Arts Reaction</> is <#ba.consume>consumed</> or is applied on an enemy.\nLiino deals <@ba.pulse>Electric DMG</> to enemies, grants <@ba.heal>HP Treatment</> to the controlled operator, and gains additional Ultimate Energy.\nCasting the combo skill <@ba.key>Delightful Harmonics</> does not interrupt <@ba.key>Vocalist Stance</>.",
+      "dmgMultiplier": "DMG Multiplier",
+      "stagger": "Stagger",
+      "ultimateEnergyGain": "Ultimate Energy Gain",
+      "baseTreatment": "Base Treatment",
+      "treatmentIncreasePerAgility": "Treatment Increase per Agility"
+    },
+    "ultimate": {
+      "name": "Dawnstar Concerto",
+      "description": "Liino grants <@ba.heal>HP Treatment</> to the entire team, enters her <@ba.key>Cosmovoice Stance</> at the same time, unleashes a continuous display of Stage Pyrotechnics that deals <@ba.pulse>Electric DMG</>, and then triggers an <@ba.key>Electrifying Extravaganza</> that deals <@ba.pulse>Electric DMG</> and forcibly applies <#ba.conduct>Electrification</> to enemies in a large area of effect (AOE).\n<@ba.key>Cosmovoice Stance</>: This stance replaces Liino's <@ba.key>Vocalist Stance</>. While active, the stance grants the entire team <#ba.pulseenhance>Electric Amp</> and <#ba.naturalenhance>Nature Amp</> (effects are further increased by the attribute of Will) as well as an ATK Boost. The beats of Liino's song also deal <@ba.pulse>Electric DMG</> to enemies in the AOE and grant continuous <@ba.heal>HP Treatment</> to allied operators in the AOE. When the stance ends, deals 3 times the DMG from a single beat to enemies in the AOE, and grants 3 times the HP treatment from a single beat to the entire team. This effect does not trigger if the stance is ended early. \nDuring the stance, her battle skill is replaced with End Stance. <@ba.info>Casting the battle skill during Cosmovoice Stance ends it early and does not consume any SP.</>",
+      "stagePyrotechnicsDmgMultiplier": "Stage Pyrotechnics DMG Multiplier",
+      "electrifyingExtravaganzaDmgMultiplier": "Electrifying Extravaganza DMG Multiplier",
+      "atkBoost": "ATK Boost",
+      "ampIncreasePerWill": "Amp Increase per Will",
+      "maxAmpFromWill": "MAX Amp from Will",
+      "baseTreatmentFor1stTreatment": "Base Treatment for 1st Treatment",
+      "treatmentIncreasePerAgility": "Treatment Increase per Agility",
+      "dmgMultiplierPerBeat": "DMG Multiplier per Beat",
+      "baseTreatmentPerBeat": "Base Treatment per Beat",
+      "beatIntervalS": "Beat Interval (s)",
+      "cosmovoiceStanceDurationS": "Cosmovoice Stance Duration (s)",
+      "electrifyingExtravaganzaStagger": "Electrifying Extravaganza Stagger"
+    },
+    "indicator": {
+      "levels": [
+        "Operator Will +10.",
+        "Operator Will +15.",
+        "Operator Will +15.",
+        "Operator Will +20."
+      ],
+      "name": "Stalwart"
+    },
+    "talent1": {
+      "levels": [
+        "During <@ba.key>Vocalist Stance</> or <@ba.key>Cosmovoice Stance</>, operators within the area of effect (AOE) gain Treatment Received Bonus <@ba.vup>+{healtaken_rate:0%}</> and DMG Taken <@ba.vup>{shelter:0%}</>. These effects persist for {shelter_duration:0}s after leaving the AOE.",
+        "During <@ba.key>Vocalist Stance</> or <@ba.key>Cosmovoice Stance</>, operators within the area of effect (AOE) gain Treatment Received Bonus <@ba.vup>+{healtaken_rate:0%}</> and DMG Taken <@ba.vup>{shelter:0%}</>. These effects persist for {shelter_duration:0}s after leaving the AOE."
+      ],
+      "name": "Idol Zone"
+    },
+    "talent2": {
+      "levels": [
+        "For {atb_return_duration:0}s after casting Liino's combo skill <@ba.key>Delightful Harmonics</>, casting a battle skill of an <@ba.pulse>Electric</> or <@ba.natur>Nature</> operator <#ba.return>returns</> <@ba.vup>{atb_return:0}</> SP. This effect cannot stack and ends after triggering.",
+        "For {atb_return_duration:0}s after casting Liino's combo skill <@ba.key>Delightful Harmonics</>, casting a battle skill of an <@ba.pulse>Electric</> or <@ba.natur>Nature</> operator <#ba.return>returns</> <@ba.vup>{atb_return:0}</> SP. This effect cannot stack and ends after triggering."
+      ],
+      "name": "Starry Boost of 1st Magnitude"
+    },
+    "baseSkill1": {
+      "levels": [
+        "Assign to Reception Room to slow Mood Drop of all operators in it by 14%",
+        "Assign to Reception Room to slow Mood Drop of all operators in it by 18%"
+      ],
+      "name": "Idol Passion"
+    },
+    "baseSkill2": {
+      "levels": [
+        "Assign to Control Nexus to grant all operators' Mood Regen +12%",
+        "Assign to Control Nexus to grant all operators' Mood Regen +16%"
+      ],
+      "name": "Stage Vibe That Lingers"
+    },
+    "files": {
+      "main": "CODENAME: Liino \nGENDER: Female \nAUTHENTICATION: Talos-II General Chamber of Commerce (TGCC) \nDOB: July 27 \nRACE: Sarkaz \n[ORIPATHY INFECTION STATUS] \nOripathy positive, based on medical examination reports. \n\n[INTEGRATED PHYSICAL EXAMINATION] \nPHYSIOLOGICAL STRENGTH: Normal \nCOMBAT SKILL: Normal \nTACTICAL ACUMEN: Standard \nORIGINIUM ARTS ASSIMILATION: Excellent \n\nAlthough Liino isn't concerned about it, given her status as an idol, we strongly recommend tighter security for the relevant files to prevent any unintended issues. \n— HR Division",
+      "humanResources": "Operator Liino is a rising star in the Civilization Band's pop culture scene, widely known as the \"Morning Star of La Fantoma\". She joined Endfield Industries for personal reasons and currently handles parts of its external communications and public outreach efforts. \n\nDespite her popularity in the entertainment industry, Operator Liino is far more approachable than most people would expect from an idol. She has occasionally played up a softer, more delicate image when interacting with Engineering Division operators to secure personal favors, including access to certain areas aboard Dijiang. Following several friendly reminders from Supervisor Perlica, such behavior has become far less common. \nOne thing worth noting is that Liino rarely talks about her family. According to the files she submitted, her parents passed away in an accident when she was eight, and she was the only survivor. \nAs for her mother, who was also a Djall, Mr. Fleming, the \"Bridge Builder\", confirmed in a brief exchange that she, too, was from Seš'qa. However, she left her family shortly after coming of age and has not been heard from since. \nRegarding the \"little trouble\" (as she put it) caused by the \"Djall rumors\", Mr. Fleming took the opportunity to negotiate a partnership with Liino. The exact details of their agreement remain unknown. However, her later shift toward more daring stage performances, along with the gradual fading of the rumors, suggests the outcome was positive for everyone involved. \nLooking ahead, it remains difficult to predict how Operator Liino intends to grow her stage career. But as she likes to say herself: \n\"Ask me about the future later! I've got, like, dozens of concerts to shine through first!\" \n— Martin Marvin Malen, Assistant, HR Division, Endfield Industries",
+      "file1": "Even after joining Endfield, Miss Liino remains largely focused on her performance schedule. Still, she handles every assignment from the Endministrator, from routine duties to assisting intelligence operators with evaluating potential partners, with remarkable enthusiasm and professionalism, always producing excellent results. \nMedical staff have frequently pointed out that Miss Liino's eating and sleeping habits are significantly more erratic than those of most operators, with sharp changes that closely follow the intensity of her schedule. Over time, those who have worked with her have come to see that she is deeply perfectionistic in nature, applying the same standards to all tasks she accepts as she does to her performances. Even minor imperfections are difficult for her to accept, and she will relentlessly refine her work until it matches her vision. \nEvery now and then, the Medical Division sends someone to check on Miss Liino. Once the Endministrator talks her into it, she'll usually play along — for a little while, at least. \n\nBy Talos... She's been at that proposal for almost 30 hours now! Do Djall not sleep or something? \n— An anonymous operator who once worked with Liino \n\nBedtime? Mealtime? Hmm ... the only time that matters is showtime! I've got a dream stage to build! \n— Liino",
+      "file2": "I've never really trusted my memory, and I don't keep a diary. \nBut when I got back to my place at the Asphalt Roundabout and took out that album with Miss Liino's signature on it, all the happy memories from that day came rushing back. I just had to write this down. \n\nI've never been to La Fantoma before this fan meeting. Even though I booked my hotel a month in advance, I still got lost. Thankfully, a kind Feline helped me find my way. A lot of the guests there were probably fans like me. The front desk noticed my Liino plushie on my bag, told me the fastest route to the venue, and even suggested a nearby café. \n\"It's the one Miss Liino mentioned in her interview! You might wanna try their signature drink.\" \nThe next day, when I arrived at the venue, almost everyone was holding a cup of that café's signature drink. I had already bought one too, so I just quietly blended in. No one knew I had never actually watched a single Liino interview. \nEveryone around me looked so young and so clearly devoted. Compared to them, I really was just an ordinary fan. I only heard a few of Miss Liino's songs and liked her right away. Honestly, I never really cared about idols before her, and I had never been to a fan meeting before this. Everything about that day felt strange ... a little mysterious, and exciting in a way I can't really explain. \nWhen Miss Liino took the gift I nervously held out to her, said my name so warmly, and gently squeezed my hand, she said: \n\"Twinkle-twinkle! I remember you! At the Asphalt Roundabout bus station, you helped Liino get her travel pass, didn't you?\" \nI just nodded, speechless. Every line I'd practiced vanished. In the end, I just blurted a clumsy thank-you — \n\"Thank you... I'm glad I could help...\" \nI also wanted to tell her how much I loved that song she made up on the spot that day. But I couldn't get the words out. \nYet somehow, she seemed to hear them anyway. She picked up the thread so naturally. \n\"You still remember that song? It's gonna be in my next album! If you like it so much, you should come to Liino's concert next month. Liino will sing the full version live!\" \nThen she placed the already-signed album into my hands, smiled, and said: \n\"I hope I'll see you there, Evelyn!\" \n\nLooking back, everything felt like a dream. \nI think I finally understand how those super passionate fans feel. When you're looking at someone that shines that brightly, it's impossible not to think ... \"I wish I could see her again.\" \nI really, really hope I'll get to see Liino again someday. La Fantoma, New Wrankwood, Simonch, or even somewhere way farther away, I'd go without hesitation. \nI really would. \n\n— \"A Fan Meeting I'll Never Forget\" by a Bus Station Clerk Who Traveled Alone to Valley IV for Liino",
+      "file3": "\"The Mystery Behind Her Sudden Fame: Genuine Public Support or Djall Witchcraft?\" \nA new idol named Liino, from La Fantoma, is taking the scene by storm. She's smashing chart records at a ridiculous pace, and her fanbase has exploded from a few hundred to over ten thousand in no time. \nLiino fever is sweeping the scene. Her debut album, \"Fly Talosian and Go Supersonic\", is already sold out, and tickets to her first La Fantoma concert have become a full-blown sellout nightmare for fans. \nHowever, while compiling this article, I have also come across growing doubts surrounding Liino's meteoric rise to fame — and her so-called \"Djall\" identity now appears to be at the very center of the storm. One informant even told me that his own sister became an obsessive fan of Liino after hearing just a single song, despite having shown no interest in idols beforehand. In recent days, similar stories have been popping up at an alarming rate. Some even speculate she is weaving ancient Djall witchcraft into her music. While the academic world firmly insists there is no evidence for so-called \"recordable witchcraft\", that has done little to stop the rumor mill, and the theory has been regarded by some as relatively credible. \nLiino's rapid rise in popularity may stem from a planned corporate campaign, with Djall witchcraft possibly playing a role in amplifying its effect. If true, her real capabilities may fall short of the phenomenon surrounding her. \nIt is hard not to wonder how the traditional idol industry of Talos II has ended up in such a state, raising deeper questions about the forces behind it. \n— Weekly Art, Issue 143, Star News Column \n\n\"Whispers Behind the Curtain: Pro Doubts Cast on Mega Idol's First-Ever Concert\" \nJust last month, Liino, one of the Civilization Band's fastest-rising idols, held her very first concert on the coast of La Fantoma. \nThe show, themed \"Breaking the Stage\", sought to redefine live entertainment through bold staging choices and physically demanding choreography. \nWhile the concert was a clear success in terms of attendance and sales, professional opinions were divided. Among them, Mr. Louis Henson remarked: \n\"Visually impressive, but somewhat excessive... Her vocal technique still needs work.\" \nSo it appears this rising idol has a long way to go vocally, and her flashy, over-the-top performances can't quite hide that fact. \nHow deeply disappointing. An idol with real ambition and talent, yet held back by such a glaring weakness. What a pity! \nLet this serve as a cautionary example for other emerging idols in the industry: polish your skills! After all, an idol who only caters to fan activities is unlikely to go far. \n— Weekly Art, Issue 151, Star News Column \n\n\"Has Liino Been Misjudged? Rising Idol Speaks Out in Interview\" \nLiino, the acclaimed rising idol, recently sat down for another exclusive interview with the La Fantoma Recording Industry Association. The nearly thirty-minute conversation covered recent controversies and her upcoming performance schedule. \nContrary to expectations, Liino appeared remarkably candid regarding her Djall identity. Rather than attempting to avoid the subject, she openly acknowledged the criticism and stated that she understood why such doubts existed. As for performance style, she stated that she was willing to accept sincere feedback from audiences and continue refining herself as an idol. \nThe interview ultimately left a somewhat more positive impression than expected. Whether Liino can truly live up to her words, however, will require further observation. \nEditor's Note: This article was written before Liino's latest fan event. The opinions expressed above were not influenced in any way by Liino's sincere on-stage thanks toward the Weekly Art editorial department. \n— Weekly Art, Issue 155, Star News Column \n\n\"Liino Drops New Demo 'Starlight Over New Wrankwood — Over a Million Streams Already!\" \nThis Sunday, Liino finally gave fans what they'd been waiting for — the demo of \"Starlight Over New Wrankwood\", the lead single from her upcoming album. \nThis is her first time blending classical music influences with modern pop production, and she's already showing a bold new side to her music. Fans are loving it: \"Miss Liino is amazing! This song is beautiful!\" \nWithin a short time of release, the demo had already surpassed one million streams. If this preview is any indication, even bigger surprises may be waiting when the full album arrives. \n— Weekly Art, Issue 158, Star News Column \n\n\"Morning Star\" Lands at Valley IV — Charity Concert Set to Shine!\" \nLiino, currently one of the most talked-about rising idols of Talos II, is said to be heading to Valley IV. Insider reports suggest she has been invited as a special guest for a charity concert organized by the Brady Mining Group, with plans to deliver a solo performance on site. \nAfter winning over both fans and critics with her previous shows, expectations are sky-high. One thing's for sure — Liino is about to bring something even more dazzling and unforgettable to the stage. \nTicket sales will be announced later this month on Liino's official website. Stay tuned for details. \n— Weekly Art, Issue 160, Star News Column",
+      "file4": "When Liino first met Mr. Fleming, known as the \"Bridge Builder\", she immediately knew he had come specifically to find her. \nUnlike the clearly separated reds and blacks, blues and yellows she usually perceived in people, Liino regarded him with caution and noticed three overlapping colors within the man said to represent the Witching Hour... \nA somber blue. A mournful green. And a deep, veiled purple. \nTogether, they formed an image not easily deciphered — one that left even her, usually so perceptive, momentarily confused. \nFleming seemed to notice her reaction and gave a small, knowing nod. \n\"You're a very gifted Djall ... and yet you've never once used your abilities in performance. Is that because of what Freida taught you?\" \nLiino froze for a brief moment. \nShe had almost forgotten how long it had been since anyone last said that name to her. Her mother's name. \nBut she quickly recovered. As an idol who always chased perfection, experience had long taught her how to respond to unexpected situations, then and now. \nSo she composed herself and met Fleming's eyes without flinching. Her gaze was sharp, as if she intended to see right through him. \n\"Who are you exactly...? How do you know that name?\" \nFleming smiled gently, unbothered by her bluntness. He looked around the backstage room and said: \n\"Just an old acquaintance who misses her playing sometimes. I still remember how much she loved Leithanian classical music. She once had us track down quite a few musical sheets from Terra.\" \n\"But then ... she took them all with her. She gave up everything to run away with some Liberi from Mieszko Industries. Just like that... It's been over twenty years now, hasn't it?\" \nAs he spoke, the colors around him shifted into a faded yellow, like old musical sheets her mother once adored and she now kept close. Her heart grew heavier. \n\"Mr. Fleming... Did you come all this way just to talk about old times?\" \nFleming shook his head. \n\"Not only for that. I wanted to offer a little warmth before discussing what might become a partnership. Just in case someone with too much caution decided to walk away before I even got to the point.\" \n\"Partnership ... with who? The Witching Hour?\" \n\"As a senior business consultant to the Witching Hour, of course I'd like to work with a top idol like you. You know, there are broader possibilities.\" \n\"You mean ... Seš'qa?\" \n\"Heh. You really do take after your mother. Conversations with intelligent people always save me a great deal of time. Yes — whether it's Djall-related rumors or external negotiations with different factions ... Seš'qa would be happy to help you remove anything that gets in the way of your perfect performances.\" \n\"And the cost? What do I have to give in exchange for working with you ... with Seš'qa?\" \n\"I could say you are the greatest value of all ... but I suspect that isn't the answer you want. Information, access, connections ... something along those lines. How does that sound?\" \n\"......\" \n\"Now then, may I hear your answer?\""
+    },
+    "tags": {
+      "expert1": {
+        "name": "Epiphany",
+        "description": "Epiphany: Improvised Performance\nWhenever and wherever! When she wants to perform, anything beneath her feet becomes her special stage."
+      },
+      "expert2": {
+        "name": "Street Wisdom",
+        "description": "Street Wisdom: Idol-Tier Negotiation\nShe can get zealous fans to quiet down and make annoyingly invasive reporters speechless. And she can do these without using her Djall Arts."
+      },
+      "hobby1": {
+        "name": "Creative",
+        "description": "Creative: Soap Opera Appreciation\n\"A character introduced in episode 1 ... is still around in episode 325... Is this the main lead? How enviable!\""
+      },
+      "hobby2": {
+        "name": "Fine Arts",
+        "description": "Fine Arts: Old Vinyl Collection\nNostalgia is not a bad habit. It is her wish. Maybe a day will come when her albums will become a treasured piece of someone's collection."
+      }
+    }
+  },
+  "potentials": {
+    "potential1": {
+      "description": "After entering battle without her <@ba.key>Vocalist Stance</> active, the first casting of the battle skill <@ba.key>Dazzling Focus</> <#ba.return>returns</> <@ba.vup>{potential_atb_return:0}</> additional SP. \nEffects of ATK Boost granted by <@ba.key>Vocalist Stance</> and <@ba.key>Cosmovoice Stance</> are increased by <@ba.vup>+{atk_up:0%}</>.",
+      "name": "Flawless Stage Work"
+    },
+    "potential2": {
+      "description": "Will <@ba.vup>+{Will:0}</>, Treatment Efficiency <@ba.vup>+{HealOutputIncrease:0%}</>.",
+      "name": "Committed Rehearsals"
+    },
+    "potential3": {
+      "description": "Combo skill <@ba.key>Delightful Harmonics</> improved: Length of cooldown <@ba.vup>{coolDown:0}</>s. DMG Multiplier and HP Treatment are increased to <@ba.vup>{heal_value:0.0}</> times the original.",
+      "name": "Longing for the Horizon"
+    },
+    "potential4": {
+      "description": "Ultimate <@ba.key>Dawnstar Concerto</> improved: Ultimate Energy cost <@ba.vup>-{1-costvalue:0%}</>.",
+      "name": "Meteoric Rhythm"
+    },
+    "potential5": {
+      "description": "<#ba.enhance>Amp</> effect of <@ba.key>Dawnstar Concerto</> is increased to <@ba.vup>{will_up:0.0}</> times the original. \nDMG Multipliers of battle skill <@ba.key>Dazzling Focus</> and ultimate <@ba.key>Dawnstar Concerto</> are increased to <@ba.vup>{atk_scale:0.0}</> times the original.",
+      "name": "Heart-Whipping Q&A"
+    }
+  },
+  "arts": {
+    "potential1": {
+      "name": "Show Time",
+      "author": "수줍(Sjoop)",
+      "description": "This is the day when she defines the meaning of \"bedazzling\", \"perfection\", and \"brilliance that nobody can ever forget\"."
+    },
+    "potential3": {
+      "name": "Where the Morning Star Gazes",
+      "author": "油锅なべる",
+      "description": "Even a \"star\" like herself strives to reach for that stretch of shimmering cosmos lying high above."
+    },
+    "potential5": {
+      "name": "Heart-Whipping Practice",
+      "author": "pako",
+      "description": "\"Hush now. Now's the time to give everyone a moment for beautiful dreams.\""
+    }
+  }
+}

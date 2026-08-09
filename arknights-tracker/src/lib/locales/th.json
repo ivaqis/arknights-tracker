@@ -1103,7 +1103,8 @@
     "miFu": "หมี่​ฟู่",
     "mifu": "หมี่​ฟู่",
     "camille": "คา​มิลล์",
-    "arcane": "ปริศนา"
+    "arcane": "ปริศนา",
+    "liino": "หลี​นั่​ว"
   },
   "weaponsList": {
     "custom_weapon": "อาวุธแบบกำหนดเอง",
@@ -1182,7 +1183,8 @@
     "type42SolemnPhalanx": "Type 42: โซ​เล็ม​ ฟา​ลัง​ซ์",
     "junctionPoint": "จุด​เชื่อมต่อ",
     "goldenAge": "ยุคทอง",
-    "farsight": "สุดลูกหูลูกตา"
+    "farsight": "สุดลูกหูลูกตา",
+    "bedazzlingNightDebut": "เด​บิว​ต์​คืน​เจิด​จรัส"
   },
   "cookies": {
     "title": "เราใช้คุกกี้",

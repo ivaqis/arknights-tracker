@@ -711,7 +711,8 @@
     "nickname": "Alleikhreos",
     "description": "Ciptaan Fondasi dan veteran pertarungan yang tak terhitung banyaknya. Chiliarch ini berkelana di Ætherside hingga ia menemukan kembali pedangnya yang hilang dan menemukan waktu kembalinya.",
     "abilities": [
-      "Saat indikator Stagger Alleikhreos, Chiliarch mencapai Nodus Stagger, dia akan menjatuhkan Senjata Foundite. Dekati dengan operator terkontrol untuk mengambilnya dan gunakan senjata tersebut untuk menyerangnya."
+      "Saat indikator Stagger Alleikhreos, Chiliarch mencapai Nodus Stagger, dia akan menjatuhkan Senjata Foundite. Dekati dengan operator terkontrol untuk mengambilnya dan gunakan senjata tersebut untuk menyerangnya.",
+      "Saat Alleikhreos, Chiliarch, mulai terdesak, dia akan memanggil duplikat-duplikatnya dari celah untuk menyerang lawannya."
     ]
   }
 }

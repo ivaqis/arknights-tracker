@@ -711,7 +711,8 @@
     "nickname": "Alleikhreos",
     "description": "Une création de la Fondation ayant livré d'innombrables combats. Ce Chiliarque qui errait dans le plan æthérique a retrouvé son épée perdue et déchiré l'espace-temps pour revenir dans notre réalité.",
     "abilities": [
-      "Lorsque sa jauge de Déséquilibre atteint le nœud de déséquilibre, Alleikhreos le Chiliarque lâche une arme fondamentale. Approchez-vous-en avec l'opérateur contrôlé pour la ramasser et l'utiliser contre lui."
+      "Lorsque sa jauge de Déséquilibre atteint le nœud de déséquilibre, Alleikhreos le Chiliarque lâche une arme fondamentale. Approchez-vous-en avec l'opérateur contrôlé pour la ramasser et l'utiliser contre lui.",
+      "Lorsqu'il est en difficulté, Alleikhreos le Chiliarque invoque des doubles depuis la faille pour attaquer ses adversaires."
     ]
   }
 }

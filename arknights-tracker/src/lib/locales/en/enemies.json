@@ -711,7 +711,8 @@
     "nickname": "Alleikhreos",
     "description": "A creation of the Foundation and a veteran of countless battles. This Chiliarch roamed the Ætherside until he recovered his lost sword and tore open a moment for his return.",
     "abilities": [
-      "When the Stagger meter of Alleikhreos, Chiliarch hits the Stagger Node, he would drop a Foundite Weapon. Approach it with the controlled operator to pick it up and use the weapon to attack him."
+      "When the Stagger meter of Alleikhreos, Chiliarch hits the Stagger Node, he would drop a Foundite Weapon. Approach it with the controlled operator to pick it up and use the weapon to attack him.",
+      "When things turn against Alleikhreos, Chiliarch, he will summon doubles from the rift to attack his opponents."
     ]
   }
 }

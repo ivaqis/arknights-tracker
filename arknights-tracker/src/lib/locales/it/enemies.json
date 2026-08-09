@@ -711,7 +711,8 @@
     "nickname": "Alleikhreos",
     "description": "Creazione dei Fondatori e veterano di innumerevoli battaglie. Questo Chiliarca vagava per l'Ætherspazio finché non ha recuperato la sua spada perduta e squarciato un varco per fare ritorno.",
     "abilities": [
-      "Quando la barra di vacillamento di Alleikhreos, Chiliarch colpisce il nodo di vacillamento, rilascia un'Arma di Foundite. Avvicinati con l'operatore controllato per raccoglierla e usarla per attaccarlo."
+      "Quando la barra di vacillamento di Alleikhreos, Chiliarch colpisce il nodo di vacillamento, rilascia un'Arma di Foundite. Avvicinati con l'operatore controllato per raccoglierla e usarla per attaccarlo.",
+      "Quando la fortuna lo abbandona, Alleikhreos, Chiliarch evoca copie dalla spaccatura per attaccare i suoi avversari."
     ]
   }
 }

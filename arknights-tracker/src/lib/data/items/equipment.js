@@ -12931,7 +12931,6 @@ export const equipment = {
     ]
   },
   "item_equip_t4_suit_fire_natr01_edc_04": {
-    "url": "https://oem.re/0P5HOCM",
     "level": 70,
     "tier": "T4.3",
     "partType": 2,
@@ -12994,7 +12993,8 @@ export const equipment = {
           "amount": 50
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0P5HOCM"
   },
   "item_equip_t4_suit_fire_natr01_hand_01": {
     "level": 70,
@@ -13272,7 +13272,6 @@ export const equipment = {
     ]
   },
   "item_equip_t4_suit_fire_natr01_hand_04": {
-    "url": "https://oem.re/0P5HOCM",
     "level": 70,
     "tier": "T4.3",
     "partType": 1,
@@ -13335,7 +13334,8 @@ export const equipment = {
           "amount": 50
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0P5HOCM"
   },
   "item_equip_t4_suit_heal01_body_01": {
     "level": 70,
@@ -13526,7 +13526,6 @@ export const equipment = {
     ]
   },
   "item_equip_t4_suit_heal01_body_03": {
-    "url": "https://oem.re/0P5HOCM",
     "level": 70,
     "tier": "T4.3",
     "partType": 0,
@@ -13588,7 +13587,8 @@ export const equipment = {
           "amount": 50
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0P5HOCM"
   },
   "item_equip_t4_suit_heal01_edc_01": {
     "level": 70,
@@ -14219,7 +14219,6 @@ export const equipment = {
     ]
   },
   "item_equip_t4_suit_heal01_hand_03": {
-    "url": "https://oem.re/0P5HOCM",
     "level": 70,
     "tier": "T4.3",
     "partType": 1,
@@ -14281,7 +14280,8 @@ export const equipment = {
           "amount": 50
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0P5HOCM"
   },
   "item_equip_t4_suit_phy01_body_01": {
     "level": 70,
@@ -16375,7 +16375,6 @@ export const equipment = {
     ]
   },
   "item_equip_t4_suit_usp02_body_03": {
-    "url": "https://oem.re/0nzgEg7",
     "level": 70,
     "tier": "T4.3",
     "partType": 0,
@@ -16426,10 +16425,10 @@ export const equipment = {
           "amount": 50
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0nzgEg7"
   },
   "item_equip_t4_suit_usp02_body_04": {
-    "url": "https://oem.re/0nzgEg7",
     "level": 70,
     "tier": "T4.3",
     "partType": 0,
@@ -16490,7 +16489,8 @@ export const equipment = {
           "amount": 50
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0nzgEg7"
   },
   "item_equip_t4_suit_usp02_edc_01": {
     "level": 70,
@@ -16772,7 +16772,6 @@ export const equipment = {
     ]
   },
   "item_equip_t4_suit_usp02_edc_04": {
-    "url": "https://oem.re/0nzgEg7",
     "level": 70,
     "tier": "T4.3",
     "partType": 2,
@@ -16823,7 +16822,8 @@ export const equipment = {
           "amount": 50
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0nzgEg7"
   },
   "item_equip_t4_suit_usp02_hand_01": {
     "level": 70,
@@ -17012,7 +17012,6 @@ export const equipment = {
     ]
   },
   "item_equip_t4_suit_usp02_hand_03": {
-    "url": "https://oem.re/0nzgEg7",
     "level": 70,
     "tier": "T4.3",
     "partType": 1,
@@ -17073,10 +17072,10 @@ export const equipment = {
           "amount": 50
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0nzgEg7"
   },
   "item_equip_t4_suit_usp02_hand_04": {
-    "url": "https://oem.re/0nzgEg7",
     "level": 70,
     "tier": "T4.3",
     "partType": 1,
@@ -17137,6 +17136,7 @@ export const equipment = {
           "amount": 50
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0nzgEg7"
   }
 };

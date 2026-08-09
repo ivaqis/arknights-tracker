@@ -1243,7 +1243,8 @@
     "miFu": "Ми Фу",
     "mifu": "Ми Фу",
     "camille": "Камиль",
-    "arcane": "Премудрость"
+    "arcane": "Премудрость",
+    "liino": "Лиино"
   },
   "weaponsList": {
     "custom_weapon": "Кастомное оружие",
@@ -1322,7 +1323,8 @@
     "type42SolemnPhalanx": "Тип 42: Чинная фаланга",
     "junctionPoint": "Узловая точка",
     "goldenAge": "Золотой век",
-    "farsight": "Дальновидность"
+    "farsight": "Дальновидность",
+    "bedazzlingNightDebut": "Блестящий ночной дебют"
   },
   "cookies": {
     "title": "Мы используем куки",

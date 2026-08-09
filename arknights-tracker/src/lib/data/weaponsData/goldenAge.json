@@ -511,7 +511,9 @@
         }
     },
     "rOps": {
-        "skill": [],
+        "skill": [
+            "liino"
+        ],
         "attr": []
     }
 }

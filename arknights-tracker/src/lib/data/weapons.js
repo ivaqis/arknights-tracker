@@ -502,6 +502,18 @@ export const weapons = {
       "magabn"
     ]
   },
+  "bedazzlingNightDebut": {
+    "id": "bedazzlingNightDebut",
+    "gameId": "wpn_lance_0014",
+    "name": "Bedazzling Night Debut",
+    "rarity": 6,
+    "weapon": "polearm",
+    "skills": [
+      "attr_will",
+      "attr_heal",
+      "heal"
+    ]
+  },
   "blessingOfLustrousCarmine": {
     "id": "blessingOfLustrousCarmine",
     "gameId": "wpn_lance_0015",

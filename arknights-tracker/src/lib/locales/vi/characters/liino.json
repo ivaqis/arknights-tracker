@@ -1,0 +1,180 @@
+{
+  "baseInfo": {
+    "tags": [
+      "Hồi Phục HP",
+      "Tăng ST"
+    ],
+    "behaviourHateTags": [
+      "Tự Nhiên"
+    ],
+    "behaviourUnavailableTags": [
+      "Hướng Nội (CHỈ HIỂN THỊ TRONG HỆ THỐNG, không hiển thị trong game)"
+    ],
+    "blocTag": "Phòng Thương Mại Tổng Hợp Talos-II (TGCC)",
+    "expertTags": [
+      "Khai Sáng",
+      "Sành Sỏi Mùi Đời"
+    ],
+    "giftPreferTags": [
+      "Lựa Chọn Của Nhà Thám Hiểm Võ Lăng"
+    ],
+    "hobbyTags": [
+      "Sáng Tạo",
+      "Mỹ Thuật"
+    ],
+    "raceTag": "Sarkaz"
+  },
+  "skills": {
+    "basicAttack": {
+      "name": "Rung Động Tinh Quang",
+      "description": "ĐÒN ĐÁNH THƯỜNG: \nMột đòn tấn công gồm tối đa 5 chuỗi gây <@ba.pulse>ST Điện</>. Với cán viên đang điều khiển, <#ba.lastcombo>Đòn Dứt Điểm</> cũng gây <@ba.poise>{poise:0}</> Suy Sụp. \n\nĐÒN BỔ NHÀO: \nĐòn Đánh Thường thi triển trên không trở thành đòn bổ nhào gây <@ba.pulse>ST Điện</> cho kẻ địch gần đó. \n\nKẾT LIỄU: \nĐòn Đánh Thường thi triển lên kẻ địch bị Suy Sụp trở thành tấn công kết liễu gây lượng lớn <@ba.pulse>ST Điện</> và hồi một phần Điểm KN.",
+      "batkSeq1Multiplier": "Hệ Số Trình Tự Đòn Đánh Thường 1",
+      "batkSeq2Multiplier": "Hệ Số Trình Tự Đòn Đánh Thường 2",
+      "batkSeq3Multiplier": "Hệ Số Trình Tự Đòn Đánh Thường 3",
+      "batkSeq4Multiplier": "Hệ Số Trình Tự Đòn Đánh Thường 4",
+      "batkSeq5Multiplier": "Hệ Số Trình Tự Đòn Đánh Thường 5",
+      "finisherAtkMultiplier": "Hệ Số Đòn Kết Liễu",
+      "diveAtkMultiplier": "Hệ Số Đòn Bổ Nhào"
+    },
+    "battleSkill": {
+      "name": "Tiêu Điểm Chói Rạng",
+      "description": "Liino gây <@ba.pulse>ST Điện</> lên kẻ địch, sau đó vào <@ba.key>Tư Thế Ca Sĩ</>. Khi tư thế này đang có hiệu lực, nếu có kẻ địch ở gần, Liino sẽ định kỳ thực hiện Đòn Tấn Công Bổ Sung, gây <@ba.pulse>ST Điện</> lên kẻ địch.\n<@ba.key>Tư Thế Ca Sĩ</>: Khi tư thế này đang có hiệu lực, Liino ban Tăng Cường Tấn Công cho toàn đội. Sau khi vào trận, Liino cũng sẽ liên tục cung cấp <@ba.heal>Hồi Phục HP</> cho cán viên trong phạm vi.\n<@ba.info>Trong thời gian Tư Thế Ca Sĩ đang kích hoạt, KN chiến đấu của cô sẽ được thay bằng Kết Thúc Tư Thế. Thi triển kỹ năng này sẽ kết thúc Tư Thế Ca Sĩ sớm mà không tiêu hao Điểm Kỹ Năng, sau đó KN chiến đấu sẽ bước vào thời gian hồi chiêu ngắn.</>",
+      "firstAtkMultiplier": "Hệ Số Đòn Tấn Công Đầu",
+      "additionalAtkDmgMultiplier": "Hệ Số ST Tấn Công Bổ Sung",
+      "additionalAtkIntervalS": "Thời Gian Giữa Các Đòn Tấn Công Bổ Sung (giây)",
+      "beatIntervalS": "Khoảng Lặng Giữa Nhịp (giây)",
+      "vocalistStanceDurationS": "Hiệu Lực Tư Thế Ca Sĩ (giây)",
+      "atkBoost": "Tăng Cường Tấn Công",
+      "baseTreatment": "Hồi Phục Căn Cứ",
+      "treatmentIncreasePerAgility": "Tăng Hồi Phục Theo Nhanh Nhẹn",
+      "stagger": "Suy Sụp"
+    },
+    "comboSkill": {
+      "name": "Hòa Âm Vui Tươi",
+      "description": "KÍCH HOẠT LIÊN HOÀN: Khi <@ba.key>Tư Thế Ca Sĩ</> đang kích hoạt, một <#ba.spellstatus>Phản Ứng Thuật Pháp</> bị <#ba.consume>tiêu hao</> hoặc được áp dụng lên kẻ địch.\nLiino gây <@ba.pulse>ST Điện</> lên kẻ địch, cấp <@ba.heal>Hồi Phục HP</> cho cán viên đang điều khiển, đồng thời nhận thêm Năng Lượng Tuyệt Kỹ.\nThi triển KN liên hoàn <@ba.key>Hòa Âm Vui Tươi</> sẽ không gián đoạn <@ba.key>Tư Thế Ca Sĩ</>.",
+      "dmgMultiplier": "Hệ Số ST",
+      "stagger": "Suy Sụp",
+      "ultimateEnergyGain": "Tăng Năng Lượng Tuyệt Kỹ",
+      "baseTreatment": "Hồi Phục Căn Cứ",
+      "treatmentIncreasePerAgility": "Tăng Hồi Phục Theo Nhanh Nhẹn"
+    },
+    "ultimate": {
+      "name": "Hòa Tấu Sao Mai",
+      "description": "Liino <@ba.heal>Hồi Phục HP</> cho toàn đội, đồng thời vào <@ba.key>Tư Thế Giọng Ca Vũ Trụ</>, tung ra chuỗi Pháo Hoa Sân Khấu liên tục gây <@ba.pulse>ST Điện</>, sau đó kích hoạt <@ba.key>Đại Tiệc Điện Quang</> gây <@ba.pulse>ST Điện</> và cưỡng chế áp dụng <#ba.conduct>Điện Hóa</> lên kẻ địch trong phạm vi hiệu ứng (AOE) lớn.\n<@ba.key>Tư Thế Giọng Ca Vũ Trụ</>: Tư thế này thay thế <@ba.key>Tư Thế Ca Sĩ</> của Liino. Khi đang kích hoạt, tư thế này cho toàn đội <#ba.pulseenhance>Tăng ST Điện</> và <#ba.naturalenhance>Tăng ST Tự Nhiên</>, với hiệu quả được tăng thêm bởi thuộc tính Ý Chí, cũng như Tăng Cường Tấn Công. Nhịp điệu trong bài hát của Liino cũng gây <@ba.pulse>ST Điện</> lên kẻ địch trong phạm vi hiệu ứng và liên tục cấp <@ba.heal>Hồi Phục HP</> cho cán viên đồng minh trong phạm vi hiệu ứng. Khi Tư Thế Giọng Ca Vũ Trụ kết thúc, gây lượng ST gấp 3 lần một nhịp lên kẻ địch trong phạm vi hiệu ứng, đồng thời cấp lượng Hồi Phục HP gấp 3 lần một nhịp cho toàn đội. Hiệu ứng này không kích hoạt nếu tư thế kết thúc sớm. \nTrong thời gian duy trì tư thế, KN chiến đấu của cô được thay bằng Kết Thúc Tư Thế. <@ba.info>Thi triển KN chiến đấu trong thời gian duy trì Tư Thế Giọng Ca Vũ Trụ sẽ kết thúc tư thế sớm và không tiêu hao Điểm Kỹ Năng.</>",
+      "stagePyrotechnicsDmgMultiplier": "Hệ Số ST Pháo Hoa Sân Khấu",
+      "electrifyingExtravaganzaDmgMultiplier": "Hệ Số ST Đại Tiệc Điện Quang",
+      "atkBoost": "Tăng Cường Tấn Công",
+      "ampIncreasePerWill": "Tăng ST Cường Hóa Theo Ý Chí",
+      "maxAmpFromWill": "TỐI ĐA Tăng từ Ý Chí",
+      "baseTreatmentFor1stTreatment": "Hồi Phục Căn Cứ cho lần Chữa Trị Đầu Tiên",
+      "treatmentIncreasePerAgility": "Tăng Hồi Phục Theo Nhanh Nhẹn",
+      "dmgMultiplierPerBeat": "Hệ Số ST Mỗi Nhịp",
+      "baseTreatmentPerBeat": "Hồi Phục Căn Cứ Mỗi Nhịp",
+      "beatIntervalS": "Khoảng Lặng Giữa Nhịp (giây)",
+      "cosmovoiceStanceDurationS": "Hiệu Lực Tư Thế Giọng Ca Vũ Trụ (giây)",
+      "electrifyingExtravaganzaStagger": "Suy Sụp Đại Tiệc Điện Quang"
+    },
+    "indicator": {
+      "levels": [
+        "Ý Chí Cán Viên +10.",
+        "Ý Chí Cán Viên +15.",
+        "Ý Chí Cán Viên +15.",
+        "Ý Chí Cán Viên +20."
+      ],
+      "name": "Kiên Cường"
+    },
+    "talent1": {
+      "levels": [
+        "Trong thời gian duy trì <@ba.key>Tư Thế Ca Sĩ</> hoặc <@ba.key>Tư Thế Giọng Ca Vũ Trụ</>, cán viên trong khu vực ảnh hưởng nhận Thưởng Nhận Điều Trị <@ba.vup>+{healtaken_rate:0%}</> và <@ba.vup>{shelter:0%}</> ST Gánh Chịu. Các hiệu ứng này duy trì trong {shelter_duration:0} giây sau khi rời khỏi khu vực ảnh hưởng.",
+        "Trong thời gian duy trì <@ba.key>Tư Thế Ca Sĩ</> hoặc <@ba.key>Tư Thế Giọng Ca Vũ Trụ</>, cán viên trong khu vực ảnh hưởng nhận Thưởng Nhận Điều Trị <@ba.vup>+{healtaken_rate:0%}</> và <@ba.vup>{shelter:0%}</> ST Gánh Chịu. Các hiệu ứng này duy trì trong {shelter_duration:0} giây sau khi rời khỏi khu vực ảnh hưởng."
+      ],
+      "name": "Khu Thần Tượng"
+    },
+    "talent2": {
+      "levels": [
+        "Trong {atb_return_duration:0} giây sau khi thi triển KN liên hoàn <@ba.key>Hòa Âm Vui Tươi</> của Liino, thi triển KN chiến đấu của cán viên hệ <@ba.pulse>Điện</> hoặc <@ba.natur>Tự Nhiên</> sẽ <#ba.return>hoàn trả</> <@ba.vup>{atb_return:0}</> Điểm Kỹ Năng. Hiệu ứng này không cộng dồn và sẽ kết thúc sau khi kích hoạt.",
+        "Trong {atb_return_duration:0} giây sau khi thi triển KN liên hoàn <@ba.key>Hòa Âm Vui Tươi</> của Liino, thi triển KN chiến đấu của cán viên hệ <@ba.pulse>Điện</> hoặc <@ba.natur>Tự Nhiên</> sẽ <#ba.return>hoàn trả</> <@ba.vup>{atb_return:0}</> Điểm Kỹ Năng. Hiệu ứng này không cộng dồn và sẽ kết thúc sau khi kích hoạt."
+      ],
+      "name": "Tinh Quang Hạng Nhất"
+    },
+    "baseSkill1": {
+      "levels": [
+        "Khi phân công vào Phòng Tiếp Khách, làm chậm mức Giảm Tâm Trạng của tất cả cán viên đi 14%",
+        "Khi phân công vào Phòng Tiếp Khách, làm chậm mức Giảm Tâm Trạng của tất cả cán viên đi 18%"
+      ],
+      "name": "Nhiệt Huyết Thần Tượng"
+    },
+    "baseSkill2": {
+      "levels": [
+        "Khi phân công vào Trung Tâm Kiểm Soát, tăng Tái Tạo Tâm Trạng của tất cả các cán viên thêm 12%",
+        "Khi phân công vào Trung Tâm Kiểm Soát, tăng Tái Tạo Tâm Trạng của tất cả các cán viên thêm 16%"
+      ],
+      "name": "Dư Âm Sân Khấu Vấn Vương"
+    },
+    "files": {
+      "main": "MẬT DANH: Liino \nGIỚI TÍNH: Nữ \nNHẬN DẠNG: Phòng Thương Mại Tổng Hợp Talos-II \nNGÀY SINH: 27 Tháng 07 \nCHỦNG TỘC: Sarkaz \n[TÌNH TRẠNG NHIỄM ORIPATHY] \nDương tính với Oripathy, theo báo cáo kiểm tra y tế. \n\n[KHÁM SỨC KHỎE TỔNG HỢP] \nTHỂ CHẤT: Bình Thường \nKN CHIẾN ĐẤU: Bình Thường \nTƯ DUY CHIẾN THUẬT: Cơ Bản \nĐỒNG HÓA THUẬT PHÁP ORIGINIUM: Xuất Sắc \n\nDù bản thân Liino không quá bận tâm đến vấn đề này, nhưng xét đến thân phận thần tượng của cô ấy, chúng tôi đặc biệt khuyến nghị tăng cường bảo mật đối với các hồ sơ liên quan, nhằm tránh phát sinh những sự cố ngoài ý muốn. \n— Bộ Phận HR",
+      "humanResources": "Cán Viên Liino là một ngôi sao đang lên trong nền văn hóa đại chúng của Vành Đai Văn Minh, được đông đảo công chúng biết đến với danh xưng \"Sao Mai của La Fantoma\". Cô gia nhập Tập Đoàn Endfield vì lý do cá nhân, và hiện đang phụ trách một phần công tác truyền thông đối ngoại cũng như các hoạt động tiếp cận công chúng của công ty. \n\nDù có độ nổi tiếng đáng kể trong ngành giải trí, Cán Viên Liino lại dễ gần hơn nhiều so với hình dung của phần lớn mọi người về một thần tượng. Đôi khi, khi tiếp xúc với các Cán Viên thuộc Bộ Phận Kỹ Thuật, cô sẽ cố tình thể hiện hình tượng mềm mại, mong manh hơn để nhờ họ giúp đỡ một số việc cá nhân, bao gồm cả việc xin quyền ra vào một vài khu vực nhất định trên Dijiang. Sau vài lần được Giám Sát Viên Perlica nhắc nhở một cách thiện chí, những hành vi như vậy đã giảm đi đáng kể. \nMột điểm đáng lưu ý là Liino rất hiếm khi nhắc đến gia đình mình. Theo hồ sơ cô nộp, cha mẹ cô đã qua đời trong một tai nạn khi cô tám tuổi, và cô là người sống sót duy nhất. \nVề mẹ của cô, người cũng là một Djall, ông Fleming, \"Người Xây Cầu\", đã xác nhận trong một cuộc trao đổi ngắn rằng bà cũng đến từ Seš'qa. Tuy nhiên, bà đã rời gia đình không lâu sau khi trưởng thành, và từ đó không còn tin tức gì nữa. \nLiên quan đến “rắc rối nhỏ” như cách cô gọi, bắt nguồn từ những “tin đồn về Djall”, ông Fleming đã nhân cơ hội này để thương lượng một thỏa thuận hợp tác với Liino. Chi tiết cụ thể của thỏa thuận hiện vẫn chưa được tiết lộ. Tuy nhiên, việc phong cách biểu diễn trên sân khấu của cô về sau trở nên táo bạo hơn, cùng với việc các tin đồn dần lắng xuống, cho thấy kết quả sau cùng là tích cực đối với tất cả các bên liên quan. \nNhìn về tương lai, hiện vẫn khó đoán Cán Viên Liino dự định sẽ phát triển sự nghiệp sân khấu của mình theo hướng nào. Nhưng như chính cô vẫn thường nói: \n“Chuyện tương lai thì để sau hãy hỏi tôi nhé! Trước mắt tôi còn cả chục buổi biểu diễn phải tỏa sáng hết mình đã!” \n— Martin Marvin Malen, Trợ Lý, Bộ Phận HR, Tập Đoàn Endfield",
+      "file1": "Ngay cả sau khi gia nhập Endfield, cô Liino vẫn chủ yếu tập trung vào lịch trình biểu diễn của mình. Dù vậy, cô luôn tiếp nhận mọi nhiệm vụ do Endministrator giao phó, từ các công việc thường nhật cho đến hỗ trợ các Cán Viên tình báo đánh giá đối tác tiềm năng, với tinh thần nhiệt tình và thái độ chuyên nghiệp đáng ghi nhận. Kết quả cô mang lại cũng luôn rất xuất sắc. \nNhân viên y tế từng nhiều lần chỉ ra rằng thói quen ăn uống và ngủ nghỉ của cô Liino thất thường hơn đáng kể so với phần lớn Cán Viên khác, và thường biến động rất mạnh tùy theo cường độ lịch trình của cô. Theo thời gian, những người từng làm việc cùng cô dần nhận ra rằng bản chất cô là một người cực kỳ cầu toàn. Cô áp dụng cùng một tiêu chuẩn nghiêm ngặt cho mọi nhiệm vụ mình nhận, giống hệt cách cô đối đãi với các buổi biểu diễn của mình. Ngay cả những khiếm khuyết nhỏ nhất cũng khiến cô khó lòng chấp nhận, và cô sẽ không ngừng chỉnh sửa, trau chuốt cho đến khi thành quả đạt đúng hình dung của bản thân. \nThỉnh thoảng, Bộ Phận Y Tế lại cử người đến kiểm tra tình hình của cô Liino. Một khi được Endministrator thuyết phục, cô thường sẽ chịu phối hợp — ít nhất là trong một thời gian ngắn. \n\n“Trời Talos ơi... Cô ấy đã ngồi làm bản đề xuất đó gần 30 tiếng rồi! Djall không cần ngủ hay sao vậy?” \n— Một Cán Viên ẩn danh từng làm việc cùng Liino \n\n“Giờ ngủ? Giờ ăn? Hmm... thời điểm duy nhất quan trọng là giờ diễn thôi! Tôi còn phải dựng nên sân khấu trong mơ của mình mà!” \n— Liino",
+      "file2": "Tôi chưa bao giờ thật sự tin tưởng trí nhớ của mình, cũng không có thói quen viết nhật ký. \nNhưng khi trở về chỗ ở của mình tại Bùng Binh Asphalt, rồi lấy cuốn album có chữ ký của cô Liino ra, tất cả những ký ức vui vẻ của ngày hôm ấy bỗng ùa về. Tôi cảm thấy mình nhất định phải viết lại chuyện này. \n\nTrước buổi Gặp Người Hâm Mộ đó, tôi chưa từng đến La Fantoma bao giờ. Dù đã đặt khách sạn trước cả tháng, cuối cùng tôi vẫn bị lạc đường. May mà có một Feline tốt bụng đã giúp tôi tìm đường. Rất nhiều khách ở đó có lẽ cũng là fan giống tôi. Nhân viên lễ tân nhìn thấy móc bông Liino trên túi của tôi, liền chỉ cho tôi con đường nhanh nhất đến địa điểm tổ chức, thậm chí còn gợi ý một quán cà phê gần đó. \n“Là quán mà cô Liino từng nhắc đến trong phỏng vấn đó! Bạn nên thử món đặc trưng của họ xem.” \nNgày hôm sau, khi tôi đến nơi tổ chức, gần như ai cũng cầm một ly đồ uống đặc trưng của quán cà phê ấy trên tay. Tôi cũng đã mua một ly từ trước, nên cứ lặng lẽ hòa vào đám đông. Không ai biết rằng thật ra tôi chưa từng xem bất kỳ buổi phỏng vấn nào của Liino. \nNhững người xung quanh tôi trông đều rất trẻ, và rõ ràng là những fan hết lòng vì cô ấy. So với họ, tôi thật sự chỉ là một người hâm mộ bình thường. Tôi chỉ tình cờ nghe vài bài hát của cô Liino rồi lập tức thích cô ấy. Thành thật mà nói, trước cô ấy, tôi chưa từng quan tâm đến thần tượng, cũng chưa từng tham gia Gặp Người Hâm Mộ bao giờ. Mọi thứ trong ngày hôm đó đều thật xa lạ... có chút bí ẩn, và cũng khiến tôi phấn khích theo một cách mà chính tôi cũng không biết phải diễn tả thế nào. \nKhi cô Liino nhận lấy món quà mà tôi hồi hộp đưa ra, dịu dàng gọi tên tôi rồi khẽ nắm tay tôi, cô ấy nói: \n“Lấp lánh nào! Tôi nhớ bạn đó! Ở trạm xe buýt Bùng Binh Asphalt, chính bạn đã giúp Liino lấy thẻ thông hành, đúng không?” \nTôi chỉ biết gật đầu, chẳng nói nên lời. Tất cả những câu tôi đã tập trước đều biến mất. Cuối cùng, tôi chỉ lắp bắp được một lời cảm ơn vụng về: \n“Cảm ơn cô... tôi rất vui vì khi ấy có thể giúp được cô...” \nTôi còn muốn nói với cô ấy rằng tôi thích bài hát cô ấy ứng tác ngày hôm đó đến mức nào. Nhưng tôi không sao thốt ra được. \nVậy mà không hiểu sao, cô ấy dường như vẫn nghe thấy những lời ấy. Cô tiếp lời một cách tự nhiên đến lạ. \n“Bạn vẫn nhớ bài hát đó sao? Nó sẽ có trong album tiếp theo của tôi đó! Nếu bạn thích nó đến vậy, tháng sau hãy đến concert của Liino nhé. Liino sẽ hát bản đầy đủ trực tiếp trên sân khấu!” \nRồi cô ấy đặt cuốn album đã ký sẵn vào tay tôi, mỉm cười và nói: \n“Hy vọng tôi sẽ được gặp lại bạn ở đó, Evelyn!” \n\nKhi nhìn lại, mọi thứ giống như một giấc mơ. \nTôi nghĩ cuối cùng mình cũng hiểu cảm giác của những fan cuồng nhiệt ấy. Khi được nhìn một người tỏa sáng rực rỡ đến vậy, thật khó để không nghĩ rằng... “Mình muốn được gặp cô ấy lần nữa.” \nTôi thật sự, thật sự hy vọng một ngày nào đó mình sẽ được gặp lại Liino. La Fantoma, Tân Wrankwood, Simonch, hay thậm chí là một nơi nào đó xa hơn nữa, tôi cũng sẽ đi mà không do dự. \nTôi thật sự sẽ đi. \n\n— “Buổi Gặp Người Hâm Mộ Tôi Sẽ Chẳng Bao Giờ Quên”, viết bởi một nhân viên trạm xe buýt đã một mình đến Thung Lũng IV vì Liino",
+      "file3": "“Bí Ẩn Đằng Sau Sự Nổi Tiếng Đột Ngột Của Cô Ấy: Sức Hút Thật Từ Công Chúng Hay Tà Thuật Djall?” \nMột thần tượng mới tên Liino, đến từ La Fantoma, đang khuấy đảo toàn bộ giới giải trí. Cô liên tục phá vỡ các kỷ lục bảng xếp hạng với tốc độ khó tin, còn lượng fan thì bùng nổ từ vài trăm người lên hơn mười nghìn chỉ trong thời gian ngắn. \nCơn sốt Liino đang lan khắp mọi nơi. Album đầu tay của cô, “Bay Cùng Talos, Vượt Ngưỡng Siêu Thanh”, đã cháy hàng, trong khi vé concert đầu tiên tại La Fantoma cũng trở thành một cơn ác mộng đúng nghĩa đối với người hâm mộ. \nTuy nhiên, trong quá trình biên soạn bài viết này, tôi cũng bắt gặp ngày càng nhiều nghi vấn xoay quanh sự nổi tiếng nhanh như vũ bão của Liino — và thân phận “Djall” của cô dường như đang trở thành tâm điểm của làn sóng tranh cãi ấy. Một nguồn tin thậm chí còn kể với tôi rằng em gái anh ta đã trở thành fan cuồng của Liino chỉ sau khi nghe đúng một bài hát, dù trước đó hoàn toàn không hề quan tâm đến thần tượng. Những ngày gần đây, các câu chuyện tương tự xuất hiện với tần suất đáng báo động. Thậm chí còn có người suy đoán rằng cô đang lồng tà thuật Djall cổ xưa vào âm nhạc của mình. Dù giới học thuật vẫn kiên quyết khẳng định không có bằng chứng nào cho cái gọi là “tà thuật có thể ghi âm”, điều đó cũng không thể ngăn những lời đồn tiếp tục lan rộng. Thuyết này hiện thậm chí còn được một số người xem là tương đối đáng tin. \nSự nổi tiếng chóng mặt của Liino có thể bắt nguồn từ một chiến dịch quảng bá có tính toán của doanh nghiệp, trong đó tà thuật Djall có khả năng đã góp phần khuếch đại hiệu ứng. Nếu điều này là thật, năng lực thực sự của cô có lẽ không tương xứng với hiện tượng mà cô đang tạo ra. \nThật khó để không tự hỏi vì sao ngành thần tượng truyền thống của Talos-II lại đi đến tình trạng như hiện nay, và những thế lực nào đang âm thầm đứng sau tất cả. \n— Bí Mật Showbiz, Số 143, Chuyên Mục Tin Tức Ngôi Sao \n\n “Những Lời Xì Xào Sau Tấm Màn: Giới Chuyên Môn Dấy Lên Nghi Vấn Về Concert Đầu Tay Của Siêu Thần Tượng” \nMới tháng trước, Liino, một trong những thần tượng đang lên nhanh nhất của Vành Đai Văn Minh, đã tổ chức concert đầu tiên trên bờ biển La Fantoma. \nĐêm diễn mang chủ đề “Bùng Nổ Sân Khấu”, với tham vọng tái định nghĩa trải nghiệm biểu diễn trực tiếp thông qua những lựa chọn sân khấu táo bạo và vũ đạo đòi hỏi thể lực cao. \nXét về lượng khán giả và doanh thu, concert rõ ràng là một thành công. Tuy nhiên, giới chuyên môn lại có nhiều ý kiến trái chiều. Trong số đó, ông Louis Henson nhận xét: \n“Ấn tượng về mặt thị giác, nhưng hơi quá đà... Kỹ thuật thanh nhạc của cô ấy vẫn cần cải thiện thêm.” \nCó vẻ như thần tượng đang lên này vẫn còn một chặng đường dài phải đi về mặt giọng hát, và những màn trình diễn hào nhoáng, phô trương cũng chưa thể che lấp hoàn toàn điểm yếu đó. \nQuả là đáng tiếc. Một thần tượng có tham vọng và tài năng thật sự, nhưng lại bị kìm chân bởi một thiếu sót quá rõ ràng. \nMong rằng đây sẽ là bài học cảnh tỉnh cho các thần tượng trẻ khác trong ngành: hãy trau dồi kỹ năng của mình! Suy cho cùng, một thần tượng chỉ biết phục vụ các hoạt động dành cho fan thì khó lòng đi xa. \n— Bí Mật Showbiz, Số 151, Chuyên Mục Tin Tức Ngôi Sao \n\n“Liino Có Đang Bị Hiểu Lầm? Thần Tượng Đang Lên Lên Tiếng Trong Buổi Phỏng Vấn” \nLiino, thần tượng đang lên được đông đảo công chúng chú ý, gần đây đã tham gia một buổi phỏng vấn độc quyền khác với Hiệp Hội Công Nghiệp Ghi Âm La Fantoma. Cuộc trò chuyện kéo dài gần ba mươi phút, xoay quanh những tranh cãi gần đây cũng như lịch trình biểu diễn sắp tới của cô. \nTrái với dự đoán, Liino tỏ ra vô cùng thẳng thắn khi nhắc đến thân phận Djall của mình. Thay vì né tránh chủ đề này, cô công khai thừa nhận những lời chỉ trích và cho biết mình hiểu vì sao các nghi ngờ ấy lại tồn tại. Về phong cách biểu diễn, cô cũng bày tỏ rằng mình sẵn sàng tiếp nhận những góp ý chân thành từ khán giả và tiếp tục hoàn thiện bản thân với tư cách một thần tượng. \nNhìn chung, buổi phỏng vấn đã để lại ấn tượng tích cực hơn mong đợi. Tuy nhiên, liệu Liino có thật sự làm được như những gì cô nói hay không, vẫn cần thêm thời gian quan sát. \nGhi Chú Của Biên Tập Viên: Bài viết này được thực hiện trước sự kiện Gặp Người Hâm Mộ mới nhất của Liino. Những quan điểm nêu trên hoàn toàn không chịu bất kỳ ảnh hưởng nào từ lời cảm ơn chân thành mà Liino đã gửi đến ban biên tập Bí Mật Showbiz trên sân khấu. \n— Bí Mật Showbiz, Số 155, Chuyên Mục Tin Tức Ngôi Sao \n\n“Liino Tung Demo Mới ‘Dưới Ánh Sao Tân Wrankwood’ — Đã Vượt Mốc Một Triệu Lượt Nghe!” \nChủ nhật tuần này, cuối cùng Liino cũng đã mang đến cho người hâm mộ điều họ chờ đợi bấy lâu — bản demo của “Dưới Ánh Sao Tân Wrankwood”, ca khúc chủ đề trong album sắp ra mắt của cô. \nĐây là lần đầu tiên cô kết hợp ảnh hưởng từ âm nhạc cổ điển với phong cách sản xuất pop hiện đại, đồng thời cũng cho thấy một khía cạnh mới đầy táo bạo trong âm nhạc của mình. Người hâm mộ đang vô cùng yêu thích ca khúc này: “Cô Liino đỉnh quá! Bài này hay thật sự!” \nChỉ trong thời gian ngắn sau khi phát hành, bản demo đã vượt mốc một triệu lượt nghe. Nếu phần nghe thử này là dấu hiệu cho những gì sắp tới, có lẽ album hoàn chỉnh sẽ còn mang đến nhiều bất ngờ lớn hơn nữa. \n— Bí Mật Showbiz, Số 158, Chuyên Mục Tin Tức Ngôi Sao \n\n“‘Sao Mai’ Đáp Xuống Thung Lũng IV — Concert Từ Thiện Sắp Tỏa Sáng!” \nLiino, hiện là một trong những thần tượng đang lên được bàn tán nhiều nhất Talos-II, được cho là sắp đến Thung Lũng IV. Theo nguồn tin nội bộ, cô đã được mời làm khách mời đặc biệt trong một concert từ thiện do Tập Đoàn Khai Thác Brady tổ chức, và dự kiến sẽ có một phần biểu diễn solo ngay tại sự kiện. \nSau khi chinh phục cả người hâm mộ lẫn giới phê bình bằng các màn trình diễn trước đó, kỳ vọng dành cho cô hiện đang ở mức rất cao. Có một điều chắc chắn — Liino sắp mang đến sân khấu một màn trình diễn còn rực rỡ và khó quên hơn nữa. \nThông tin bán vé sẽ được công bố trên trang web chính thức của Liino vào cuối tháng này. Hãy theo dõi để biết thêm chi tiết. \n— Bí Mật Showbiz, Số 160, Chuyên Mục Tin Tức Ngôi Sao",
+      "file4": "Khi Liino lần đầu gặp ông Fleming, người được biết đến với danh xưng “Người Xây Cầu”, cô lập tức biết rằng ông ta đến đây là để tìm mình. \nKhác với những sắc đỏ và đen, xanh lam và vàng thường tách bạch rõ ràng trong cảm nhận của cô về người khác, Liino nhìn ông với sự dè chừng, và nhận ra bên trong người đàn ông được cho là đại diện cho Witching Hour ấy có đến ba sắc màu chồng lấn lên nhau... \nMột màu xanh lam u trầm. Một màu xanh lục tang thương. Và một sắc tím thẫm, sâu kín dưới lớp màn che. \nBa sắc màu ấy hòa vào nhau, tạo thành một hình ảnh khó lòng giải mã — đến mức ngay cả Liino, người vốn luôn nhạy bén với những điều như vậy, cũng thoáng rơi vào bối rối. \nFleming dường như nhận ra phản ứng của cô, bèn khẽ gật đầu như thể đã hiểu. \n“Cô là một Djall rất có thiên phú... vậy mà chưa từng một lần dùng năng lực của mình trong biểu diễn. Là vì những gì Freida đã dạy cô sao?” \nLiino thoáng khựng lại. \nCô gần như đã quên mất, đã bao lâu rồi không còn ai gọi cái tên ấy trước mặt mình. Tên của mẹ cô. \nNhưng cô nhanh chóng lấy lại bình tĩnh. Với một thần tượng luôn theo đuổi sự hoàn hảo, kinh nghiệm từ lâu đã dạy cô cách ứng phó với những tình huống bất ngờ, dù là trên sân khấu hay ngoài đời. \nVậy nên cô chỉnh lại cảm xúc, ngẩng lên nhìn thẳng vào mắt Fleming, không hề né tránh. Ánh mắt cô sắc bén, như thể muốn nhìn xuyên qua con người ông ta. \n“Rốt cuộc ông là ai...? Sao ông lại biết cái tên đó?” \nFleming dịu dàng mỉm cười, chẳng hề bận tâm đến sự thẳng thừng của cô. Ông nhìn quanh phòng chờ hậu trường rồi nói: \n“Chỉ là một người quen cũ, đôi khi vẫn nhớ tiếng đàn của bà ấy thôi. Ta vẫn còn nhớ bà ấy yêu nhạc cổ điển Leithanian đến mức nào. Năm đó, bà ấy từng nhờ chúng ta tìm về không ít bản nhạc từ Terra.” \n“Nhưng rồi... bà ấy mang tất cả đi cùng mình. Từ bỏ mọi thứ để bỏ trốn với một Liberi nào đó của Tập Đoàn Mieszko. Cứ thế mà đi... Cũng đã hơn hai mươi năm rồi, phải không?” \nKhi ông nói, những sắc màu quanh ông dần chuyển thành một màu vàng phai cũ, giống như những bản nhạc xưa mẹ cô từng trân quý, và giờ đây cô vẫn luôn cất giữ bên mình. Trái tim Liino chợt nặng trĩu. \n“Ông Fleming... ông đi xa đến vậy chỉ để nhắc lại chuyện cũ thôi sao?” \nFleming lắc đầu. \n“Không hẳn. Ta chỉ muốn mang đến chút hơi ấm trước khi bàn về một chuyện có thể trở thành hợp tác. Phòng trường hợp một người quá thận trọng nào đó quyết định quay lưng bỏ đi trước khi ta kịp nói vào trọng điểm.” \n“Hợp tác... với ai? Witching Hour sao?” \n“Với tư cách cố vấn kinh doanh cấp cao của Witching Hour, tất nhiên ta rất muốn hợp tác với một thần tượng hàng đầu như cô. Cô biết đấy, vẫn còn rất nhiều khả năng rộng mở hơn.” \n“Ý ông là... Seš'qa?” \n“Ha. Cô đúng là rất giống mẹ mình. Nói chuyện với người thông minh lúc nào cũng tiết kiệm được cho ta rất nhiều thời gian. Đúng vậy — dù là những tin đồn liên quan đến Djall, hay các cuộc thương lượng đối ngoại với những phe phái khác nhau... Seš'qa đều sẽ vui lòng giúp cô dọn sạch mọi thứ cản trở những màn trình diễn hoàn hảo của cô.” \n“Và cái giá là gì? Tôi phải trao đổi điều gì để hợp tác với ông... với Seš'qa?” \n“Ta có thể nói rằng bản thân cô đã là giá trị lớn nhất rồi... nhưng ta đoán đó không phải câu trả lời cô muốn nghe. Thông tin, quyền tiếp cận, các mối quan hệ... đại khái là những thứ như vậy. Nghe thế nào?” \n“......” \n“Vậy, ta có thể nghe câu trả lời của cô chưa?”"
+    },
+    "tags": {
+      "expert1": {
+        "name": "Khai Sáng",
+        "description": "Khai Sáng: Màn Biểu Diễn Ngẫu Hứng\nBất cứ lúc nào, bất cứ nơi đâu! Chỉ cần cô muốn biểu diễn, mọi thứ dưới chân đều sẽ hóa thành sân khấu đặc biệt của riêng cô."
+      },
+      "expert2": {
+        "name": "Sành Sỏi Mùi Đời",
+        "description": "Trí Tuệ Đường Phố: Đàm Phán Chuẩn Idol\nCô có thể khiến những fan cuồng nhiệt lặng xuống, khiến đám phóng viên soi mói phiền phức phải cứng họng. Và cô làm được tất cả mà chẳng cần dùng đến Thuật Pháp Djall."
+      },
+      "hobby1": {
+        "name": "Sáng Tạo",
+        "description": "Sáng Tạo: Thưởng Thức Phim Truyền Hình Dài Tập\n\"Một nhân vật xuất hiện từ tập 1... đến tận tập 325 vẫn còn đất diễn... Đây là nhân vật chính sao? Thật đáng ngưỡng mộ!\""
+      },
+      "hobby2": {
+        "name": "Mỹ Thuật",
+        "description": "Mỹ Thuật: Bộ Sưu Tập Đĩa Than Cũ\nHoài niệm không phải một thói quen xấu. Đó là ước nguyện của cô. Có lẽ rồi sẽ đến một ngày, những album của cô cũng trở thành báu vật được ai đó nâng niu trong bộ sưu tập."
+      }
+    }
+  },
+  "potentials": {
+    "potential1": {
+      "description": "Sau khi vào trận mà chưa kích hoạt <@ba.key>Tư Thế Ca Sĩ</>, lần thi triển đầu tiên của KN chiến đấu <@ba.key>Tiêu Điểm Chói Rạng</> sẽ <#ba.return>hoàn trả</> thêm <@ba.vup>{potential_atb_return:0}</> Điểm Kỹ Năng. \nHiệu quả Tăng Cường Tấn Công do <@ba.key>Tư Thế Ca Sĩ</> và <@ba.key>Tư Thế Giọng Ca Vũ Trụ</> cung cấp <@ba.vup>+{atk_up:0%}</>.",
+      "name": "Màn Diễn Toàn Bích"
+    },
+    "potential2": {
+      "description": "Ý Chí <@ba.vup>+{Will:0}</>, Hiệu Quả Điều Trị <@ba.vup>+{HealOutputIncrease:0%}</>.",
+      "name": "Những Buổi Tập Duyệt Tận Tâm"
+    },
+    "potential3": {
+      "description": "KN liên hoàn <@ba.key>Hòa Âm Vui Tươi</> được cải thiện: Thời gian hồi chiêu là <@ba.vup>{coolDown:0}</> giây. Hệ Số ST và Hồi HP tăng lên bằng <@ba.vup>{heal_value:0.0}</> lần so với ban đầu.",
+      "name": "Nỗi Khát Khao Nơi Chân Trời"
+    },
+    "potential4": {
+      "description": "Tuyệt Kỹ <@ba.key>Hòa Tấu Sao Mai</> được cường hóa: Tiêu hao Năng Lượng Tuyệt Kỹ <@ba.vup>-{1-costvalue:0%}</>.",
+      "name": "Nhịp Sao Băng Lướt Qua"
+    },
+    "potential5": {
+      "description": "Hiệu ứng <#ba.enhance>Khuếch Đại</> của <@ba.key>Hòa Tấu Sao Mai</> tăng lên bằng <@ba.vup>{will_up:0.0}</> lần so với ban đầu. \nHệ Số ST của KN chiến đấu <@ba.key>Tiêu Điểm Chói Rạng</> và Tuyệt Kỹ <@ba.key>Hòa Tấu Sao Mai</> tăng lên bằng <@ba.vup>{atk_scale:0.0}</> lần so với ban đầu.",
+      "name": "Q&A Lay Động Con Tim"
+    }
+  },
+  "arts": {
+    "potential1": {
+      "name": "Giờ Diễn",
+      "author": "수줍(Sjoop)",
+      "description": "Đây là ngày cô định nghĩa lại ý nghĩa của “chói rạng”, “hoàn mỹ” và “ánh huy hoàng không ai có thể quên”."
+    },
+    "potential3": {
+      "name": "Nơi Sao Mai Dõi Mắt",
+      "author": "油锅なべる",
+      "description": "Ngay cả một “ngôi sao” như cô cũng vẫn nỗ lực vươn tới khoảng tinh hà lấp lánh phía trời cao."
+    },
+    "potential5": {
+      "name": "Luyện Thuật Lay Động Con Tim",
+      "author": "pako",
+      "description": "“Suỵt nào. Đã đến lúc để mọi người có một thoáng mộng đẹp.”"
+    }
+  }
+}

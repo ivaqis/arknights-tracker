@@ -1103,7 +1103,8 @@
     "miFu": "Mi Fu",
     "mifu": "Mi Fu",
     "camille": "Camille",
-    "arcane": "Arcane"
+    "arcane": "Arcane",
+    "liino": "Liino"
   },
   "weaponsList": {
     "custom_weapon": "Arme personnalisée",
@@ -1182,7 +1183,8 @@
     "type42SolemnPhalanx": "Type 42 : phalange solennelle",
     "junctionPoint": "Point de jonction",
     "goldenAge": "Âge d'or",
-    "farsight": "Clairvoyance"
+    "farsight": "Clairvoyance",
+    "bedazzlingNightDebut": "Première par une soirée éblouissante"
   },
   "cookies": {
     "title": "Nous utilisons des cookies",

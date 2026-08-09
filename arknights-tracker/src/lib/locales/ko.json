@@ -1103,7 +1103,8 @@
     "miFu": "미브",
     "mifu": "미브",
     "camille": "카뮤",
-    "arcane": "결"
+    "arcane": "결",
+    "liino": "리노"
   },
   "weaponsList": {
     "custom_weapon": "커스텀 무기",
@@ -1182,7 +1183,8 @@
     "type42SolemnPhalanx": "42식 · 척결",
     "junctionPoint": "공명점",
     "goldenAge": "전성기",
-    "farsight": "조망"
+    "farsight": "조망",
+    "bedazzlingNightDebut": "찬란한 밤의 데뷔"
   },
   "cookies": {
     "title": "쿠키 사용 안내",

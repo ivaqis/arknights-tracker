@@ -1103,7 +1103,8 @@
     "miFu": "ミ・フ",
     "mifu": "ミ・フ",
     "camille": "カミーユ",
-    "arcane": "オクギ"
+    "arcane": "オクギ",
+    "liino": "リーノ"
   },
   "weaponsList": {
     "custom_weapon": "カスタム武器",
@@ -1182,7 +1183,8 @@
     "type42SolemnPhalanx": "四二式・粛陣",
     "junctionPoint": "連結点",
     "goldenAge": "黄金時代",
-    "farsight": "ファーサイト"
+    "farsight": "ファーサイト",
+    "bedazzlingNightDebut": "プリズムナイトデビュー"
   },
   "cookies": {
     "title": "クッキーを使用しています",

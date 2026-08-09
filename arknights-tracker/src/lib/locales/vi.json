@@ -1146,7 +1146,8 @@
     "miFu": "Mi Fu",
     "mifu": "Mi Fu",
     "camille": "Camille",
-    "arcane": "Arcane"
+    "arcane": "Arcane",
+    "liino": "Liino"
   },
   "weaponsList": {
     "custom_weapon": "Vũ Khí Tùy Chỉnh",
@@ -1225,7 +1226,8 @@
     "type42SolemnPhalanx": "Loại 42: Phương Trận Trang Nghiêm",
     "junctionPoint": "Giao Thoa",
     "goldenAge": "Thời Đại Hoàng Kim",
-    "farsight": "Viễn Kiến"
+    "farsight": "Viễn Kiến",
+    "bedazzlingNightDebut": "Màn Ra Mắt Đêm Chói Rạng"
   },
   "cookies": {
     "title": "Chúng tôi sử dụng cookie",

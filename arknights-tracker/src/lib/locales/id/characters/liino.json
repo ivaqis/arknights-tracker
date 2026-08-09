@@ -1,0 +1,180 @@
+{
+  "baseInfo": {
+    "tags": [
+      "HP Treatment",
+      "Amp"
+    ],
+    "behaviourHateTags": [
+      "Alam"
+    ],
+    "behaviourUnavailableTags": [
+      "Introvert (SISTEM SAJA, tidak terlihat dalam game)"
+    ],
+    "blocTag": "Talos-II General Chamber of Commerce (TGCC)",
+    "expertTags": [
+      "Daya Paham",
+      "Kearifan Jalanan"
+    ],
+    "giftPreferTags": [
+      "Pilihan Penjelajah Wuling"
+    ],
+    "hobbyTags": [
+      "Kreatif",
+      "Seni Rupa"
+    ],
+    "raceTag": "Sarkaz"
+  },
+  "skills": {
+    "basicAttack": {
+      "name": "Starry Heart Throb",
+      "description": "SERANGAN DASAR: \nSerangan dengan maksimum 5 tahap yang akan menimbulkan <@ba.pulse>Electric DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>{poise:0}</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.pulse>Electric DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi penuntas yang akan menimbulkan <@ba.pulse>Electric DMG</> sangat besar dan memulihkan sebagian SP.",
+      "batkSeq1Multiplier": "Pengganda BATK SEQ 1",
+      "batkSeq2Multiplier": "Pengganda BATK SEQ 2",
+      "batkSeq3Multiplier": "Pengganda BATK SEQ 3",
+      "batkSeq4Multiplier": "Pengganda BATK SEQ 4",
+      "batkSeq5Multiplier": "Pengganda BATK SEQ 5",
+      "finisherAtkMultiplier": "Pengganda ATK Penuntas",
+      "diveAtkMultiplier": "Pengganda ATK Menukik"
+    },
+    "battleSkill": {
+      "name": "Dazzling Focus",
+      "description": "Liino akan menimbulkan <@ba.pulse>Electric DMG</> kepada musuh, lalu masuk ke kondisi <@ba.key>Vocalist Stance</>. Selagi kondisi ini aktif, jika ada musuh di sekitarnya, Liino akan melancarkan ATK Tambahan (yang akan menimbulkan <@ba.pulse>Electric DMG</> kepada musuh) secara berkala.\n<@ba.key>Vocalist Stance</>: Selagi kondisi ini aktif, Liino akan memberikan ATK Boost kepada seluruh tim. Setelah masuk ke pertarungan, Liino juga akan memberikan <@ba.heal>HP Treatment</> terus-menerus kepada operator dalam jangkauan.\n<@ba.info>Selama Vocalist Stance, skill tarungnya akan digantikan dengan End Stance. Jika digunakan, Vocalist Stance akan berakhir lebih awal tanpa memakai SP, kemudian skill tarung akan masuk ke cooldown singkat.</>",
+      "firstAtkMultiplier": "Pengganda ATK Pertama",
+      "additionalAtkDmgMultiplier": "Tambahan Pengganda ATK DMG",
+      "additionalAtkIntervalS": "Interval ATK Tambahan (dtk)",
+      "beatIntervalS": "Interval Irama (dtk)",
+      "vocalistStanceDurationS": "Durasi Vocalist Stance (dtk)",
+      "atkBoost": "ATK Boost",
+      "baseTreatment": "Treatment Dasar",
+      "treatmentIncreasePerAgility": "Peningkatan Treatment per Agility",
+      "stagger": "Stagger"
+    },
+    "comboSkill": {
+      "name": "Delightful Harmonics",
+      "description": "PEMICU KOMBO: Selagi <@ba.key>Vocalist Stance</> masih aktif, <#ba.spellstatus>Arts Reaction</> akan <#ba.consume>dipakai</> atau diakibatkan kepada musuh.\nLiino akan menimbulkan <@ba.pulse>Electric DMG</> kepada musuh, memberikan <@ba.heal>HP Treatment</> kepada operator terkontrol, dan mendapatkan tambahan Energi Ultimate.\nPenggunaan skill kombo <@ba.key>Delightful Harmonics</> tidak akan menyela <@ba.key>Vocalist Stance</>.",
+      "dmgMultiplier": "Pengganda DMG",
+      "stagger": "Stagger",
+      "ultimateEnergyGain": "Perolehan Energi Ultimate",
+      "baseTreatment": "Treatment Dasar",
+      "treatmentIncreasePerAgility": "Peningkatan Treatment per Agility"
+    },
+    "ultimate": {
+      "name": "Dawnstar Concerto",
+      "description": "Liino akan memberikan <@ba.heal>HP Treatment</> kepada seluruh tim, masuk ke kondisi <@ba.key>Cosmovoice Stance</> pada saat bersamaan, melepaskan pertunjukan Stage Pyrotechnics terus-menerus yang akan menimbulkan <@ba.pulse>Electric DMG</>, lalu mengaktifkan <@ba.key>Electrifying Extravaganza</> yang akan menimbulkan <@ba.pulse>Electric DMG</> dan mengakibatkan <#ba.conduct>Electrification</> secara paksa kepada musuh di dalam area efek (AOE) besar.\n<@ba.key>Cosmovoice Stance</>: Kondisi ini akan menggantikan kondisi <@ba.key>Vocalist Stance</> Liino. Selagi aktif, kondisi ini akan memberikan <#ba.pulseenhance>Electric Amp</> dan <#ba.naturalenhance>Nature Amp</> kepada seluruh tim (efek akan ditingkatkan lagi oleh atribut Will) serta ATK Boost. Irama lagu Liino juga akan menimbulkan <@ba.pulse>Electric DMG</> kepada musuh di dalam AOE dan memberikan <@ba.heal>HP Treatment</> terus-menerus kepada operator rekan di dalam AOE. Saat berakhir, kondisi ini akan menimbulkan DMG 3 kali lipat dari satu irama saja kepada musuh di dalam AOE dan memberikan HP Treatment 3 kali lipat dari satu irama saja kepada seluruh tim. Efek ini tidak akan aktif jika kondisi berakhir lebih awal. \nSelama kondisi ini, skill tarungnya akan digantikan dengan End Stance. <@ba.info>Jika skill tarung digunakan selama kondisi Cosmovoice Stance, kondisi ini akan berakhir lebih awal dan tidak akan memakai SP.</>",
+      "stagePyrotechnicsDmgMultiplier": "Pengganda DMG Stage Pyrotechnics",
+      "electrifyingExtravaganzaDmgMultiplier": "Pengganda DMG Electrifying Extravaganza",
+      "atkBoost": "ATK Boost",
+      "ampIncreasePerWill": "Peningkatan Amp per Will",
+      "maxAmpFromWill": "MAX Amp dari Will",
+      "baseTreatmentFor1stTreatment": "Treatment Dasar untuk Treatment ke-1",
+      "treatmentIncreasePerAgility": "Peningkatan Treatment per Agility",
+      "dmgMultiplierPerBeat": "Pengganda DMG per Irama",
+      "baseTreatmentPerBeat": "Treatment Dasar per Irama",
+      "beatIntervalS": "Interval Irama (dtk)",
+      "cosmovoiceStanceDurationS": "Durasi Cosmovoice Stance (dtk)",
+      "electrifyingExtravaganzaStagger": "Electrifying Extravaganza Stagger"
+    },
+    "indicator": {
+      "levels": [
+        "Will Operator +10.",
+        "Will Operator +15.",
+        "Will Operator +15.",
+        "Will Operator +20."
+      ],
+      "name": "Stalwart"
+    },
+    "talent1": {
+      "levels": [
+        "Selama <@ba.key>Vocalist Stance</> atau <@ba.key>Cosmovoice Stance</>, operator di dalam area efek (AOE) akan mendapatkan Bonus Treatment yang Diterima <@ba.vup>+{healtaken_rate:0%}</> dan DMG Taken <@ba.vup>{shelter:0%}</>. Efek ini bertahan selama {shelter_duration:0} dtk setelah keluar dari AOE.",
+        "Selama <@ba.key>Vocalist Stance</> atau <@ba.key>Cosmovoice Stance</>, operator di dalam area efek (AOE) akan mendapatkan Bonus Treatment yang Diterima <@ba.vup>+{healtaken_rate:0%}</> dan DMG Taken <@ba.vup>{shelter:0%}</>. Efek ini bertahan selama {shelter_duration:0} dtk setelah keluar dari AOE."
+      ],
+      "name": "Idol Zone"
+    },
+    "talent2": {
+      "levels": [
+        "Selama {atb_return_duration:0} dtk setelah menggunakan skill kombo Liino, <@ba.key>Delightful Harmonics</>, penggunaan skill tarung milik operator berelemen <@ba.pulse>Electric</> atau <@ba.natur>Nature</> akan <#ba.return>mengembalikan</> <@ba.vup>{atb_return:0}</> SP. Efek ini tidak bisa ditumpuk dan akan berakhir setelah diaktifkan.",
+        "Selama {atb_return_duration:0} dtk setelah menggunakan skill kombo Liino, <@ba.key>Delightful Harmonics</>, penggunaan skill tarung milik operator berelemen <@ba.pulse>Electric</> atau <@ba.natur>Nature</> akan <#ba.return>mengembalikan</> <@ba.vup>{atb_return:0}</> SP. Efek ini tidak bisa ditumpuk dan akan berakhir setelah diaktifkan."
+      ],
+      "name": "Starry Boost of 1st Magnitude"
+    },
+    "baseSkill1": {
+      "levels": [
+        "Saat ditugaskan ke Ruang Resepsionis, Penurunan Suasana Hati semua operator di dalamnya akan melambat sebesar 14%",
+        "Saat ditugaskan ke Ruang Resepsionis, Penurunan Suasana Hati semua operator di dalamnya akan melambat sebesar 18%"
+      ],
+      "name": "Idol Passion"
+    },
+    "baseSkill2": {
+      "levels": [
+        "Saat ditugaskan ke Nexus Kontrol, Regen Suasana Hati semua operator akan meningkat sebesar +12%",
+        "Saat ditugaskan ke Nexus Kontrol, Regen Suasana Hati semua operator akan meningkat sebesar +16%"
+      ],
+      "name": "Stage Vibe That Lingers"
+    },
+    "files": {
+      "main": "NAMA SANDI: Liino \nGENDER: Perempuan \nAUTENTIKASI: Talos-II General Chamber of Commerce (TGCC) \nTANGGAL LAHIR: 27 Juli \nRAS: Sarkaz \n[STATUS INFEKSI ORIPATI] \nPositif Oripati, berdasarkan laporan pemeriksaan medis. \n\n[PEMERIKSAAN FISIK TERPADU] \nKEKUATAN FISIOLOGIS: Normal \nSKILL TEMPUR: Normal \nKECERDASAN TAKTIS: Standar \nASIMILASI ORIGINIUM ARTS: Sangat Baik \n\nMeski Liino tidak khawatir, mengingat statusnya sebagai idola, kami sangat merekomendasikan keamanan yang lebih ketat untuk file yang relevan guna mencegah masalah yang tidak diinginkan. \n— Divisi SDM",
+      "humanResources": "Operator Liino adalah bintang yang sedang naik daun di kancah budaya pop Sentrapolis, yang dikenal luas sebagai “Bintang Pagi dari La Fantoma”. Dia bergabung dengan Endfield Industries karena alasan pribadi dan saat ini menangani sebagian komunikasi eksternal dan upaya penjangkauan publiknya. \n\nMeski populer di industri hiburan, Operator Liino sangat ramah, berbeda dari sifat seorang idola yang dibayangkan orang-orang. Dia kadang-kadang bersikap lebih lembut dan halus saat berinteraksi dengan operator Divisi Teknik agar mudah mendapatkan bantuan, termasuk akses ke area tertentu di Dijiang. Setelah diingatkan oleh Pengawas Perlica, dia jadi sangat jarang menunjukkan sikap semacam itu. \nYang perlu diperhatikan adalah, Liino jarang berbicara tentang keluarganya. Menurut berkas yang dia serahkan, orang tuanya meninggal karena kecelakaan saat dia berusia delapan tahun, dan hanya dia yang selamat. \nMengenai ibunya, yang juga seorang Djall, Pak Fleming, sang “Pembangun Jembatan”, mengonfirmasi dalam suatu percakapan singkat bahwa dia juga berasal dari Seš’qa. Tapi, dia meninggalkan keluarganya tak lama setelah beranjak dewasa dan belum pernah terdengar kabarnya sejak saat itu. \nSoal “masalah kecil” (seperti yang dia katakan) yang disebabkan oleh “rumor Djall”, Pak Fleming mengambil kesempatan itu untuk menegosiasikan kemitraan dengan Liino. Detail dari kesepakatan mereka masih belum diketahui. Tapi, dari penampilan panggungnya yang makin berani, seiring dengan memudarnya rumor itu, menunjukkan bahwa kesepakatan itu menguntungkan semua pihak yang terlibat. \nKe depannya, rencana Operator Liino untuk mengembangkan karier panggungnya masih sulit diprediksi. Tapi, seperti yang sering dia katakan: \n“Tahan dulu pertanyaan untuk masa depan! Aku masih harus melakukan puluhan konser agar bisa bersinar dulu!” \n— Martin Marvin Malen, Asisten, Divisi SDM, Endfield Industries",
+      "file1": "Bahkan setelah bergabung dengan Endfield, Nona Liino tetap fokus pada jadwal penampilannya. Walau demikian, dia tetap menjalankan setiap tugas dari Endministrator, mulai dari tugas rutin hingga membantu operator intelijen mengevaluasi calon mitra, dengan antusiasme dan profesionalisme yang luar biasa, serta dengan hasil yang sangat baik. \nStaf medis sering mengemukakan bahwa kebiasaan makan dan tidur Nona Liino jauh lebih tidak teratur dibandingkan kebanyakan operator, dengan perubahan tajam yang mengikuti intensitas jadwalnya. Seiring waktu, mereka yang pernah bekerja bersamanya pun menyadari bahwa dia sangat perfeksionis, menerapkan standar yang sama untuk semua tugas yang diterimanya seperti yang diterapkan pada penampilannya. Bahkan ketidaksempurnaan kecil pun sulit diterimanya, dan dia akan tanpa henti menyempurnakan pekerjaannya hingga sesuai dengan visinya. \nSesekali, Divisi Medis mengutus seseorang untuk memeriksa keadaan Nona Liino. Setelah Endministrator membujuknya, dia biasanya mau menurut—setidaknya untuk sementara. \n\nDemi Talos .... Sudah hampir 30 jam dia mengerjakan proposal itu! Memangnya Djall tak butuh tidur, ya? \n— Seorang operator anonim yang pernah bekerja dengan Liino \n\nJam tidur? Jam makan? Hmm ... satu-satunya waktu yang penting adalah waktu pertunjukan mulai! Ada panggung impian yang ingin kubangun! \n— Liino",
+      "file2": "Aku tak terlalu memercayai ingatanku, aku juga tidak punya buku harian. \nTapi, saat aku kembali ke rumahku di Simpang Aspal dan mengeluarkan album bertanda tangan Nona Liino, semua kenangan indah dari hari itu membanjiriku. Aku harus menuliskan ini. \n\nAku belum pernah ke La Fantoma sebelum jumpa penggemar ini. Meski sudah memesan hotel sebulan sebelumnya, aku masih saja tersesat. Untungnya, ada Feline baik hati yang membantuku mencari jalan. Mungkin banyak tamu hotel itu yang juga penggemar sepertiku. Resepsionis melihat boneka Liino di tasku lalu memberitahuku rute tercepat ke lokasi acara, bahkan merekomendasikan kafe terdekat. \n“Itu kafe yang disebutkan Nona Liino dalam wawancaranya! Kau mungkin ingin mencoba minuman khas mereka.” \nKeesokan harinya, saat aku sampai di lokasi acara, hampir semua orang memegang gelas berisi minuman khas kafe itu. Aku juga sudah beli satu, jadi bisa membaur dengan tenang. Tak ada yang tahu aku belum pernah sekalipun menonton wawancara Liino. \nSemua orang di sekitarku terlihat sangat muda dan sangat berdedikasi. Dibandingkan mereka, aku ini benar-benar penggemar biasa. Aku baru dengar beberapa lagu Nona Liino dan langsung menyukainya. Sebenarnya, sebelum ini aku tak pernah peduli dengan idola dan belum pernah datang ke jumpa penggemar. Hari itu memang rasanya aneh ... agak misterius, tapi juga entah kenapa mengasyikkan. \nSaat menerima hadiah yang dengan gugup kuberikan kepadanya, Nona Liino menyebut namaku dengan begitu hangat dan meremas tanganku dengan lembut, dia berkata: \n“Kelap-kelip! Aku ingat kau! Di stasiun bus Simpang Aspal, kau membantu Liino membeli tiket bus, ‘kan?” \nAku hanya mengangguk, tak bisa berkata-kata. Semua kata-kata yang sudah kulatih lenyap. Akhirnya, aku hanya mengucapkan terima kasih dengan canggung— \n“Terima kasih .... Senang bisa membantu ....” \nAku juga ingin bilang betapa aku menyukai lagu yang dia buat secara spontan hari itu, tapi tak bisa mengatakannya. \nTapi entah bagaimana, dia sepertinya paham. Dia melanjutkan percakapan dengan sangat alami. \n“Kau masih ingat lagu itu? Pasti akan masuk ke albumku berikutnya! Kalau suka lagu itu, kau harus datang ke konser Liino bulan depan. Liino akan menyanyikan versi lengkapnya secara langsung!” \nDia lalu menyerahkan album yang sudah ditandatangani ke tanganku, tersenyum, dan berkata: \n“Semoga kita bertemu lagi di sana, Evelyn!” \n\nJika diingat lagi, semuanya terasa seperti mimpi. \nSepertinya aku akhirnya mengerti perasaan para penggemar yang sangat bersemangat itu. Saat melihat seseorang yang bersinar begitu terang, kau pasti akan berpikir ... “Semoga aku bisa melihatnya lagi.” \nAku sangat, sangat berharap bisa melihat Liino lagi suatu hari nanti. La Fantoma, Wrankwood Baru, Simonch, atau bahkan di tempat yang lebih jauh, aku pasti akan datang. \nPasti. \n\n— “Jumpa Penggemar yang Tak Akan Pernah Kulupakan” oleh seorang Pegawai Stasiun Bus yang Bepergian Sendirian ke Lembah IV demi Liino",
+      "file3": "“Misteri di Balik Ketenarannya yang Tiba-Tiba: Dukungan Publik Sungguhan atau Sihir Djall?” \nIdola baru dari La Fantoma bernama Liino sedang naik daun. Dia memecahkan rekor tangga lagu dengan sangat cepat dan basis penggemarnya meledak dari beberapa ratus menjadi lebih dari sepuluh ribu dalam waktu singkat. \nDemam Liino sedang melanda. Album debutnya, “Fly Talosian and Go Supersonic”, sudah terjual habis, dan tiket konser La Fantoma pertamanya pun menjadi mimpi buruk bagi penggemar karena terjual habis. \nTapi, saat menulis artikel ini, aku pun mulai meragukan ketenaran Liino yang meroket—identitas “Djall”-nya yang menjadi pusat badai itu. Seorang informan bahkan memberitahuku bahwa saudarinya sendiri menjadi penggemar berat Liino setelah mendengar satu lagu saja, meski sebelumnya tak menunjukkan minat pada sosok idola. Dalam beberapa hari terakhir, muncul kisah-kisah serupa yang jumlahnya mengkhawatirkan. Bahkan ada yang berspekulasi bahwa dia menyisipkan ilmu sihir Djall kuno ke dalam musiknya. Meski dunia akademis dengan tegas bersikeras bahwa tidak ada bukti keberadaan “ilmu sihir yang dapat direkam”, hal itu tetap tak bisa menghentikan rumor yang beredar, dan teori tersebut dianggap cukup masuk akal oleh beberapa orang. \nPesatnya peningkatan popularitas Liino mungkin berasal dari rencana kampanye perusahaan, yang kemungkinan diperkuat efeknya dengan ilmu sihir Djall. Jika benar, kemampuannya yang sebenarnya mungkin tidak sebanding dengan fenomena yang mengelilinginya. \nSulit untuk tidak bertanya-tanya bagaimana industri idola tradisional Talos-II bisa menjadi seperti itu, yang menimbulkan pertanyaan lebih dalam tentang kekuatan di baliknya. \n— Weekly Art, Edisi 143, Kolom Kabar Bintang \n\n“Bisikan di Balik Tirai: Keraguan Ahli tentang Konser Pertama sang Megaidola” \nBaru bulan lalu, Liino, salah satu idola Sentrapolis yang paling cepat naik daun, mengadakan konser pertamanya di pesisir La Fantoma. \nKonser dengan tema “Breaking the Stage” itu berusaha mendefinisikan kembali hiburan langsung melalui pilihan tata panggung yang berani dan koreografi penuh energi. \nMeski konser itu sukses besar dalam hal jumlah penonton dan penjualan, pendapat para profesional terbagi. Di antara mereka, Pak Louis Henson berkomentar: \n“Secara visual mengesankan, tapi agak berlebihan .... Teknik vokalnya masih perlu diasah.” \nJadi, dalam hal vokal, tampaknya perjalanan idola yang sedang naik daun ini masih panjang, dan penampilannya yang mencolok serta berlebihan tak bisa menyembunyikan fakta itu. \nSungguh mengecewakan. Seorang idola dengan ambisi dan bakat yang nyata, tapi tertahan oleh kelemahan yang begitu mencolok. Sayang sekali! \nBiarlah ini menjadi contoh peringatan bagi idola pendatang baru lainnya di industri ini: asah kemampuan kalian! Idola yang hanya fokus pada aktivitas penggemar tak mungkin bertahan lama. \n— Weekly Art, Edisi 151, Kolom Kabar Bintang \n\n“Apakah Liino Salah Dinilai? Idola yang Sedang Naik Daun Buka Suara saat Wawancara” \nLiino, idola pendatang baru, baru-baru ini diwawancarai secara eksklusif oleh Asosiasi Industri Rekaman La Fantoma. Percakapan yang berlangsung selama hampir tiga puluh menit itu membahas kontroversi baru-baru ini dan jadwal penampilannya yang akan datang. \nBertentangan dengan ekspektasi, Liino tampak sangat jujur tentang identitas Djall-nya. Alih-alih menghindari topik tersebut, dia secara terbuka mengakui kritik tersebut dan menyatakan bahwa dia mengerti mengapa ada keraguan semacam itu. Mengenai gaya penampilannya, dia menyatakan bahwa dia bersedia menerima umpan balik yang tulus dari penonton dan akan terus menyempurnakan diri sebagai seorang idola. \nWawancara tersebut pada akhirnya meninggalkan kesan yang sedikit lebih positif dari yang diharapkan. Tapi, perlu diamati lebih lanjut apakah Liino benar-benar bisa memenuhi kata-katanya. \nCatatan Editor: Artikel ini ditulis sebelum acara penggemar terbaru Liino. Pendapat yang diungkapkan di atas sama sekali tidak dipengaruhi oleh ucapan terima kasih tulus Liino di atas panggung kepada departemen editorial Weekly Art. \n— Weekly Art, Edisi 155, Kolom Kabar Bintang \n\n“Liino Merilis Demo Baru 'Starlight Over New Wrankwood — Sudah Diputar Lebih dari Satu Juta Kali!” \nPada hari Minggu ini, Liino akhirnya memberikan apa yang ditunggu-tunggu penggemar—demo “Starlight Over New Wrankwood”, singel utama dari albumnya yang akan datang. \nIni kali pertamanya memadukan pengaruh musik klasik dengan produksi pop modern, dan dia sudah menunjukkan sisi baru yang berani pada musiknya. Para penggemar menyukainya: “Nona Liino memang hebat! Lagu ini indah sekali!” \nDalam waktu singkat setelah rilis, demo tersebut telah diputar lebih dari satu juta kali. Jika melihat pratinjau ini, mungkin akan ada kejutan yang lebih besar lagi saat album lengkapnya tiba. \n— Weekly Art, Edisi 158, Kolom Kabar Bintang \n\n“‘Bintang Pagi’ Hadir di Lembah IV — Konser Amal Siap Bersinar!” \nLiino, yang saat ini menjadi salah satu idola pendatang baru yang paling banyak dibicarakan di Talos-II, dikabarkan akan datang ke Lembah IV. Laporan dari orang dalam menyebutkan bahwa dia telah diundang sebagai bintang tamu spesial untuk konser amal yang diselenggarakan oleh Brady Mining Group, dan direncanakan untuk memberikan penampilan solo di lokasi tersebut. \nSetelah memikat hati para penggemar dan kritikus dengan penampilan sebelumnya, ekspektasi pun melambung tinggi. Satu hal yang pasti—Liino akan menghadirkan sesuatu yang lebih memukau dan tak terlupakan ke atas panggung. \nPenjualan tiket akan diumumkan akhir bulan ini di situs web resmi Liino. Nantikan detail selanjutnya. \n— Weekly Art, Edisi 160, Kolom Kabar Bintang",
+      "file4": "Saat pertama kali bertemu Pak Fleming, yang dikenal sebagai “Pembangun Jembatan”, Liino langsung tahu bahwa pria itu datang untuk mencarinya. \nBerbeda dengan warna merah dan hitam, biru dan kuning yang tampak terpisah dengan jelas pada orang-orang, Liino melihatnya dengan waspada dan melihat tiga warna yang tumpang tindih di dalam diri pria yang konon mewakili Witching Hour itu .... \nBiru suram. Hijau murung. Dan ungu tua yang terselubung. \nWarna-warna itu membentuk gambar yang sulit diuraikan—yang bahkan membuat dirinya, yang biasanya sangat peka, sempat bingung. \nFleming sepertinya menyadari reaksinya dan mengangguk kecil dengan penuh arti. \n“Kau ini seorang Djall yang sangat berbakat ... tapi kau malah belum pernah menggunakan kemampuanmu dalam pertunjukan. Apa karena hal yang diajarkan Freida kepadamu?” \nLiino sesaat terpaku. \nDia hampir lupa sudah berapa lama sejak terakhir kali seseorang menyebut nama itu kepadanya. Nama ibunya. \nTapi, dia dengan cepat menguasai diri. Sebagai seorang idola yang selalu mengejar kesempurnaan, pengalaman membuatnya belajar cara menanggapi situasi yang tak terduga, dulu dan sekarang. \nJadi dia menenangkan diri dan menatap mata Fleming tanpa berkedip. Tatapannya tajam, seolah dia berniat melihat ke dalam dirinya. \n“Siapa kau sebenarnya ...? Bagaimana kau tahu nama itu?” \nFleming tersenyum lembut, tak terganggu oleh sikap terus terangnya. Dia melihat ke sekeliling ruang ganti dan berkata: \n“Hanya kenalan lama yang kadang-kadang merindukan permainan musiknya. Aku masih ingat betapa dia menyukai musik klasik Leithanien. Dia pernah menyuruh kami mencari banyak lembaran musik dari Terra.” \n“Tapi kemudian ... dia membawa semuanya, melepaskan segalanya untuk kabur dengan seorang Liberi dari Mieszko Industries. Begitu saja .... Sudah lebih dari dua puluh tahun, ya?” \nSaat dia bicara, warna-warna di sekitarnya berubah menjadi kuning pudar, seperti lembaran musik tua yang sangat disayangi ibunya dulu dan kini disimpan rapat-rapat. Hatinya terasa makin berat. \n“Pak Fleming .... Apa kau datang jauh-jauh ke sini hanya untuk membicarakan masa lalu?” \nFleming menggelengkan kepalanya. \n“Bukan hanya untuk itu. Aku bermaksud memberikan kehangatan sebelum mendiskusikan sesuatu yang bisa menjadi kemitraan. Kalau-kalau seseorang yang terlalu hati-hati memutuskan untuk pergi sebelum aku sempat mengutarakan maksudku.” \n“Kemitraan ... dengan siapa? Witching Hour?” \n“Sebagai konsultan bisnis senior di Witching Hour, tentu saja aku ingin bekerja sama dengan idola top sepertimu. Tapi, masih ada kemungkinan yang lebih luas.” \n“Maksudmu ... Seš’qa?” \n“Wah. Kau benar-benar mirip ibumu. Berbincang dengan orang cerdas memang menghemat banyak waktu. Benar—entah itu rumor terkait Djall atau negosiasi eksternal dengan berbagai faksi ... Seš’qa akan dengan senang hati membantumu menyingkirkan apa pun yang bisa menghalangi penampilan sempurnamu.” \n“Biayanya? Apa yang harus kuberikan sebagai imbalan bekerja denganmu ... dengan Seš’qa?” \n“Aku bisa saja bilang bahwa kaulah nilai terbesar dari semuanya ... tapi pasti bukan itu jawaban yang kauinginkan. Informasi, akses, koneksi ... hal semacam itu. Bagaimana?” \n“....” \n“Nah, apa jawabanmu?”"
+    },
+    "tags": {
+      "expert1": {
+        "name": "Daya Paham",
+        "description": "Daya Paham: Improvisasi Aksi:\nKapan pun dan di mana pun! Setiap kali dia ingin tampil, apa pun yang ada di bawah kakinya akan menjadi panggung spesialnya."
+      },
+      "expert2": {
+        "name": "Kearifan Jalanan",
+        "description": "Kearifan Jalanan: Negosiasi Tingkat Idola\nDia bisa membuat penggemar yang heboh menjadi tenang dan membuat wartawan yang menjengkelkan dan agresif menjadi terdiam. Dan dia bisa melakukan semua itu tanpa menggunakan Djall Arts-nya."
+      },
+      "hobby1": {
+        "name": "Kreatif",
+        "description": "Kreatif: Apresiasi Opera Sabun\n“Karakter yang muncul di episode 1 ... masih ada di episode 325 .... Apa ini tokoh utamanya? Beruntung sekali!"
+      },
+      "hobby2": {
+        "name": "Seni Rupa",
+        "description": "Seni Rupa: Koleksi Piringan Hitam Tua\nNostalgia bukanlah kebiasaan buruk. Itu adalah keinginannya. Mungkin kelak albumnya akan menjadi barang berharga dalam koleksi seseorang."
+      }
+    }
+  },
+  "potentials": {
+    "potential1": {
+      "description": "Setelah memasuki pertarungan dan kondisi <@ba.key>Vocalist Stance</> miliknya tidak aktif, penggunaan pertama skill tarung <@ba.key>Dazzling Focus</> akan <#ba.return>mengembalikan</> <@ba.vup>{potential_atb_return:0}</> SP lagi. \nEfek ATK Boost yang diberikan oleh <@ba.key>Vocalist Stance</> dan <@ba.key>Cosmovoice Stance</> meningkat sebesar <@ba.vup>+{atk_up:0%}</>.",
+      "name": "Flawless Stage Work"
+    },
+    "potential2": {
+      "description": "Will <@ba.vup>+{Will:0}</>, Efisiensi Treatment <@ba.vup>+{HealOutputIncrease:0%}</>.",
+      "name": "Committed Rehearsals"
+    },
+    "potential3": {
+      "description": "Skill kombo <@ba.key>Delightful Harmonics</> meningkat: Durasi cooldown <@ba.vup>{coolDown:0}</> dtk. Pengganda DMG dan HP Treatment meningkat menjadi <@ba.vup>{heal_value:0.0}</> kali nilai aslinya.",
+      "name": "Longing for the Horizon"
+    },
+    "potential4": {
+      "description": "Ultimate <@ba.key>Dawnstar Concerto</> meningkat: Biaya Energi Ultimate <@ba.vup>-{1-costvalue:0%}</>.",
+      "name": "Meteoric Rhythm"
+    },
+    "potential5": {
+      "description": "Efek <#ba.enhance>Amp</> dari <@ba.key>Dawnstar Concerto</> meningkat menjadi <@ba.vup>{will_up:0.0}</> kali nilai aslinya. \nPengganda DMG skill tarung <@ba.key>Dazzling Focus</> dan ultimate <@ba.key>Dawnstar Concerto</> meningkat menjadi <@ba.vup>{atk_scale:0.0}</> kali nilai aslinya.",
+      "name": "Heart-Whipping Q&A"
+    }
+  },
+  "arts": {
+    "potential1": {
+      "name": "Saatnya Pertunjukan",
+      "author": "수줍(Sjoop)",
+      "description": "Inilah hari ketika dia menunjukkan apa arti “pesona”, “kesempurnaan”, dan “kegemilangan yang akan terus melekat dalam ingatan”."
+    },
+    "potential3": {
+      "name": "Arah Tatapan si Bintang Pagi",
+      "author": "油锅なべる",
+      "description": "Bahkan seorang “bintang” sepertinya pun harus berjuang keras untuk meraih hamparan kosmos berkilauan yang terbentang tinggi di atas sana."
+    },
+    "potential5": {
+      "name": "Latihan Menggetarkan Hati",
+      "author": "pako",
+      "description": "“Ssst. Sekarang saatnya memberi semua orang mimpi yang indah.”"
+    }
+  }
+}

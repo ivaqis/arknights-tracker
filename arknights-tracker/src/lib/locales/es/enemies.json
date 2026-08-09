@@ -711,7 +711,8 @@
     "nickname": "Alleikhreos",
     "description": "Una creación de la Fundación y veterano de incontables batallas. Este quiliarca vagó por el Plano del éter hasta que recuperó su espada perdida y abrió por la fuerza un instante para su regreso.",
     "abilities": [
-      "Cuando el medidor de Tambaleo de Alleikhreos, Quiliarca llegue al Nodo de Tambaleo, soltará un Arma de fundita. Acércate con el operador controlado para recogerla y usa el arma para atacarlo."
+      "Cuando el medidor de Tambaleo de Alleikhreos, Quiliarca llegue al Nodo de Tambaleo, soltará un Arma de fundita. Acércate con el operador controlado para recogerla y usa el arma para atacarlo.",
+      "Cuando las cosas se vuelvan en contra de Alleikhreos, Quiliarca, invocará dobles desde la grieta para atacar a sus oponentes."
     ]
   }
 }

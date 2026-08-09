@@ -45,39 +45,6 @@ export const characters = {
     apiId: "ad1607a2d5a203b1e95762ff0d911bcd",
     gameId: "chr_0005_chen"
   },
-  laevatain: {
-    id: "laevatain",
-    name: "Laevatain",
-    rarity: 6,
-    element: "heat",
-    class: "striker",
-    weapon: "sword",
-    birthDate: "",
-    apiId: "0b199a0eaae5a9b37a5d3c990b6c8bca",
-    gameId: "chr_0016_laevat"
-  },
-  yvonne: {
-    id: "yvonne",
-    name: "Yvonne",
-    rarity: 6,
-    element: "cryo",
-    class: "striker",
-    weapon: "handcannon",
-    birthDate: "09-05",
-    apiId: "05047b063867199b953b30ac8df9a853",
-    gameId: "chr_0017_yvonne"
-  },
-  gilberta: {
-    id: "gilberta",
-    name: "Gilberta",
-    rarity: 6,
-    element: "nature",
-    class: "supporter",
-    weapon: "artsUnit",
-    birthDate: "28-11",
-    apiId: "0295282ff895bd1b7242d137da99dc94",
-    gameId: "chr_0013_aglina"
-  },
   ardelia: {
     id: "ardelia",
     name: "Ardelia",
@@ -265,6 +232,39 @@ export const characters = {
     apiId: "bcb564ed05eb0912d4b0f86d1e193c9f",
     gameId: "chr_0022_bounda"
   },
+  laevatain: {
+    id: "laevatain",
+    name: "Laevatain",
+    rarity: 6,
+    element: "heat",
+    class: "striker",
+    weapon: "sword",
+    birthDate: "",
+    apiId: "0b199a0eaae5a9b37a5d3c990b6c8bca",
+    gameId: "chr_0016_laevat"
+  },
+  yvonne: {
+    id: "yvonne",
+    name: "Yvonne",
+    rarity: 6,
+    element: "cryo",
+    class: "striker",
+    weapon: "handcannon",
+    birthDate: "09-05",
+    apiId: "05047b063867199b953b30ac8df9a853",
+    gameId: "chr_0017_yvonne"
+  },
+  gilberta: {
+    id: "gilberta",
+    name: "Gilberta",
+    rarity: 6,
+    element: "nature",
+    class: "supporter",
+    weapon: "artsUnit",
+    birthDate: "28-11",
+    apiId: "0295282ff895bd1b7242d137da99dc94",
+    gameId: "chr_0013_aglina"
+  },
   tangtang: {
     id: "tangtang",
     name: "Tangtang",
@@ -322,7 +322,7 @@ export const characters = {
   },
   arcane: {
     id: "arcane",
-    name: "arcane",
+    name: "Arcane",
     rarity: 6,
     element: "nature",
     class: "caster",
@@ -330,5 +330,16 @@ export const characters = {
     birthDate: "07-07",
     apiId: "989411af662b6e9b3f0cef53e9d32f1a",
     gameId: "chr_0032_lizhiyan"
+  },
+  liino: {
+    id: "liino",
+    name: "Liino",
+    rarity: 6,
+    element: "electric",
+    class: "supporter",
+    weapon: "polearm",
+    birthDate: "27-07",
+    apiId: "",
+    gameId: "chr_0035_liino"
   }
 };

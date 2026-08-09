@@ -5,6 +5,11 @@
     import { addNotification } from "$lib/stores/notifications.js";
     import { fade, fly } from "svelte/transition";
     import { characters } from "$lib/data/characters.js";
+
+    const charOrderMap = Object.keys(characters || {}).reduce((acc, key, idx) => {
+        acc[key] = idx;
+        return acc;
+    }, {});
     import { weapons } from "$lib/data/weapons.js";
     import { getImagePath } from "$lib/utils/imageUtils.js";
     import { getGradientColorByElement } from "$lib/utils/colorUtils.js";
@@ -292,6 +297,9 @@
             if (bLevel !== aLevel) {
                 return bLevel - aLevel;
             }
+            const indexA = charOrderMap[aData?.id] ?? 0;
+            const indexB = charOrderMap[bData?.id] ?? 0;
+            if (indexA !== indexB) return indexB - indexA;
             return (aData?.id || "").localeCompare(bData?.id || "");
         });
     })();

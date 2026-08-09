@@ -1102,7 +1102,8 @@
     "miFu": "Mi Fu",
     "mifu": "Mi Fu",
     "camille": "Camille",
-    "arcane": "Arkan"
+    "arcane": "Arkan",
+    "liino": "Liino"
   },
   "weaponsList": {
     "custom_weapon": "Benutzerdefinierte Waffe",
@@ -1181,7 +1182,8 @@
     "type42SolemnPhalanx": "Typ 42: Feierliche Phalanx",
     "junctionPoint": "Knotenpunkt",
     "goldenAge": "Goldenes Zeitalter",
-    "farsight": "Weitsicht"
+    "farsight": "Weitsicht",
+    "bedazzlingNightDebut": "Debüt der blendenden Nacht"
   },
   "cookies": {
     "title": "Wir verwenden Cookies",

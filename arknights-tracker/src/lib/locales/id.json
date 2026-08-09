@@ -1103,7 +1103,8 @@
     "miFu": "Mi Fu",
     "mifu": "Mi Fu",
     "camille": "Camille",
-    "arcane": "Arcane"
+    "arcane": "Arcane",
+    "liino": "Liino"
   },
   "weaponsList": {
     "custom_weapon": "Senjata Kustom",
@@ -1182,7 +1183,8 @@
     "type42SolemnPhalanx": "Type 42: Solemn Phalanx",
     "junctionPoint": "Junction Point",
     "goldenAge": "Golden Age",
-    "farsight": "Farsight"
+    "farsight": "Farsight",
+    "bedazzlingNightDebut": "Bedazzling Night Debut"
   },
   "cookies": {
     "title": "Kami menggunakan cookie",

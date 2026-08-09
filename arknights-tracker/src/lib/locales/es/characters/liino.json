@@ -1,0 +1,180 @@
+{
+  "baseInfo": {
+    "tags": [
+      "Trat. de PV",
+      "Amplific."
+    ],
+    "behaviourHateTags": [
+      "Naturaleza"
+    ],
+    "behaviourUnavailableTags": [
+      "Introvertido (SOLO SISTEMA, no visible dentro del juego)"
+    ],
+    "blocTag": "Cámara General de Comercio de Talos-II (C.G.C.T.)",
+    "expertTags": [
+      "Epifanía",
+      "Sabiduría callejera"
+    ],
+    "giftPreferTags": [
+      "Selección de los exploradores de Wuling"
+    ],
+    "hobbyTags": [
+      "Creatividad",
+      "Bellas artes"
+    ],
+    "raceTag": "Sarkaz"
+  },
+  "skills": {
+    "basicAttack": {
+      "name": "Latido estelar",
+      "description": "ATAQUE BÁSICO: \nUn ataque de hasta 5 secuencias que inflige <@ba.pulse>DAÑ eléctrico</>. Como operador controlado, <#ba.lastcombo>Golpe final</> también inflige <@ba.poise>{poise:0}</> de Tambaleo. \n\nATAQUE DE INMERSIÓN: \nUn ataque básico realizado en el aire se convierte en un ataque de inmersión que inflige <@ba.pulse>DAÑ eléctrico</> a los enemigos cercanos. \n\nREMATE: \nUn ataque básico realizado cerca de un enemigo Tambaleado se convierte en un remate que inflige <@ba.pulse>DAÑ eléctrico</> masivo y recupera algo de PH.",
+      "batkSeq1Multiplier": "Multiplicador ATQB SEC 1",
+      "batkSeq2Multiplier": "Multiplicador ATQB SEC 2",
+      "batkSeq3Multiplier": "Multiplicador ATQB SEC 3",
+      "batkSeq4Multiplier": "Multiplicador ATQB SEC 4",
+      "batkSeq5Multiplier": "Multiplicador ATQB SEC 5",
+      "finisherAtkMultiplier": "Multiplicador de ATQ de Remate",
+      "diveAtkMultiplier": "Multiplicador ATQ de Inmersión"
+    },
+    "battleSkill": {
+      "name": "Enfoque deslumbrante",
+      "description": "Liino inflige <@ba.pulse>DAÑ eléctrico</> a los enemigos y luego entra en su <@ba.key>Postura de vocalista</>. Mientras esta postura está activa, si hay enemigos cerca, Liino realizará un ATQ adicional que inflige <@ba.pulse>DAÑ eléctrico</> a los enemigos periódicamente.\n<@ba.key>Postura de vocalista</>: Mientras esta postura está activa, Liino otorga un Refuerzo de ATQ a todo el equipo. Tras entrar en combate, Liino también otorgará <@ba.heal>Tratamiento de PV</> continuo a los operadores dentro del alcance.\n<@ba.info>Durante la Postura de vocalista, su habilidad de batalla se reemplaza por Postura final. Al lanzar esta habilidad, la Postura de vocalista terminará antes de tiempo sin consumir PH, después la habilidad de batalla entrará en un breve tiempo de enfriamiento.</>",
+      "firstAtkMultiplier": "Multiplicador de Primer ATQ",
+      "additionalAtkDmgMultiplier": "Multiplicador de DAÑ de ATQ adicional",
+      "additionalAtkIntervalS": "Intervalo de ATQ adicional (s)",
+      "beatIntervalS": "Intervalo de Pulso (s)",
+      "vocalistStanceDurationS": "Duración de la Postura de vocalista (s)",
+      "atkBoost": "Refuerzo de ATQ",
+      "baseTreatment": "Tratamiento base",
+      "treatmentIncreasePerAgility": "Incremento de tratamiento por Agilidad",
+      "stagger": "Tambaleo"
+    },
+    "comboSkill": {
+      "name": "Armónicos deleitables",
+      "description": "ACTIVACIÓN DE COMBO: Mientras <@ba.key>Postura de vocalista</> está activa, se <#ba.spellstatus>consume</> una <#ba.consume>Reacción a artes</> o se aplica una a un enemigo.\nLiino inflige <@ba.pulse>DAÑ eléctrico</> a los enemigos, otorga <@ba.heal>Tratamiento de PV</> al operador controlado y obtiene Energía máxima adicional.\nLanzar la habilidad de combo <@ba.key>Armónicos deleitables</> no interrumpe <@ba.key>Postura de vocalista</>.",
+      "dmgMultiplier": "Multiplicador de DAÑ",
+      "stagger": "Tambaleo",
+      "ultimateEnergyGain": "Ganancia de Energía máxima",
+      "baseTreatment": "Tratamiento base",
+      "treatmentIncreasePerAgility": "Incremento de tratamiento por Agilidad"
+    },
+    "ultimate": {
+      "name": "Concierto de Estrella del amanecer",
+      "description": "Liino otorga <@ba.heal>Tratamiento de PV</> a todo el equipo, entra al mismo tiempo en su <@ba.key>Postura de cosmovoz</>, desata un espectáculo continuo de Pirotecnia escénica que inflige <@ba.pulse>DAÑ eléctrico</> y luego activa una <@ba.key>Extravaganza electrizante</> que inflige <@ba.pulse>DAÑ eléctrico</> y aplica <#ba.conduct>Electrificación</> forzada a los enemigos en un área de efecto (ADE) grande.\n<@ba.key>Postura de cosmovoz</>: Esta postura reemplaza la <@ba.key>Postura de vocalista</> de Liino. Mientras está activa, la postura otorga a todo el equipo <#ba.pulseenhance>Amp eléctrica</> y <#ba.naturalenhance>Amp de naturaleza</> (los efectos también aumentan más por el atributo Voluntad), además de un Refuerzo de ATQ. Los pulsos de la canción de Liino también infligen <@ba.pulse>DAÑ eléctrico</> a los enemigos en el ADE y otorgan <@ba.heal>Tratamiento de PV</> continuo a los operadores aliados en el ADE. Cuando la postura termina, inflige a los enemigos en el ADE 3 veces el DAÑ de un solo pulso y otorga a todo el equipo 3 veces el Tratamiento de PV de un solo pulso. Este efecto no se activa si la postura termina antes de tiempo. \nDurante la postura, su habilidad de batalla se reemplaza por Postura final. <@ba.info>Lanzar la habilidad de batalla durante la Postura de cosmovoz la termina antes de tiempo y no consume ningún PH.</>",
+      "stagePyrotechnicsDmgMultiplier": "Multiplicador de DAÑ de Pirotecnia escénica",
+      "electrifyingExtravaganzaDmgMultiplier": "Multiplicador de DAÑ de Extravaganza electrizante",
+      "atkBoost": "Refuerzo de ATQ",
+      "ampIncreasePerWill": "Incremento de Amp por Voluntad",
+      "maxAmpFromWill": "Amp MÁX. por Voluntad",
+      "baseTreatmentFor1stTreatment": "Tratamiento base del 1.er tratamiento",
+      "treatmentIncreasePerAgility": "Incremento de tratamiento por Agilidad",
+      "dmgMultiplierPerBeat": "Multiplicador de DAÑ por Pulso",
+      "baseTreatmentPerBeat": "Tratamiento base por Pulso",
+      "beatIntervalS": "Intervalo de Pulso (s)",
+      "cosmovoiceStanceDurationS": "Duración de la Postura de cosmovoz (s)",
+      "electrifyingExtravaganzaStagger": "Tambaleo de Extravaganza electrizante"
+    },
+    "indicator": {
+      "levels": [
+        "Voluntad del operador +10.",
+        "Voluntad del operador +15.",
+        "Voluntad del operador +15.",
+        "Voluntad del operador +20."
+      ],
+      "name": "Inquebrantable"
+    },
+    "talent1": {
+      "levels": [
+        "Durante <@ba.key>Postura de vocalista</> o <@ba.key>Postura de cosmovoz</>, los operadores dentro del área de efecto (ADE) obtienen Bonificación de tratamiento recibido <@ba.vup>+{healtaken_rate:0%}</> y DAÑ recibido <@ba.vup>{shelter:0%}</>. Estos efectos permanecen durante {shelter_duration:0} s después de salir del ADE.",
+        "Durante <@ba.key>Postura de vocalista</> o <@ba.key>Postura de cosmovoz</>, los operadores dentro del área de efecto (ADE) obtienen Bonificación de tratamiento recibido <@ba.vup>+{healtaken_rate:0%}</> y DAÑ recibido <@ba.vup>{shelter:0%}</>. Estos efectos permanecen durante {shelter_duration:0} s después de salir del ADE."
+      ],
+      "name": "Zona de ídolos"
+    },
+    "talent2": {
+      "levels": [
+        "Durante {atb_return_duration:0} s después de lanzar la habilidad de combo de Liino <@ba.key>Armónicos deleitables</>, lanzar una habilidad de batalla de un operador <@ba.pulse>Eléctrico</> o de <@ba.natur>Naturaleza</> <#ba.return>devuelve</> <@ba.vup>{atb_return:0}</> PH. Este efecto no puede acumularse y termina tras activarse.",
+        "Durante {atb_return_duration:0} s después de lanzar la habilidad de combo de Liino <@ba.key>Armónicos deleitables</>, lanzar una habilidad de batalla de un operador <@ba.pulse>Eléctrico</> o de <@ba.natur>Naturaleza</> <#ba.return>devuelve</> <@ba.vup>{atb_return:0}</> PH. Este efecto no puede acumularse y termina tras activarse."
+      ],
+      "name": "Impulso estelar de 1.ª magnitud"
+    },
+    "baseSkill1": {
+      "levels": [
+        "Asignar a la Sala de recepción para reducir la disminución del Estado de ánimo de todos los operadores en ella un 14 %",
+        "Asignar a la Sala de recepción para reducir la disminución del Estado de ánimo de todos los operadores en ella un 18 %"
+      ],
+      "name": "Pasión de idol"
+    },
+    "baseSkill2": {
+      "levels": [
+        "Asignar al Nexus de control para otorgar a todos los operadores regeneración del Estado de ánimo de +12 %",
+        "Asignar al Nexus de control para otorgar a todos los operadores regeneración del Estado de ánimo de +16 %"
+      ],
+      "name": "La vibra del escenario que perdura"
+    },
+    "files": {
+      "main": "NOMBRE CLAVE: Liino \nGÉNERO: Femenino \nAUTENTICACIÓN: Cámara General de Comercio de Talos-II (C.G.C.T.) \nFECHA DE NACIMIENTO: 27 de julio \nRAZA: Sarkaz \n[ESTADO DE INFECCIÓN POR ORIPATÍA] \nOripatía positiva, según informes de examen médico. \n\n[EXAMEN FÍSICO INTEGRAL] \nFUERZA FISIOLÓGICA: Normal \nHABILIDAD DE COMBATE: Normal \nPERICIA TÁCTICA: Estándar \nASIMILACIÓN DE ARTES DE ORIGINIO: Excelente \n\nAunque a Liino no le preocupa, debido a su condición de idol, recomendamos encarecidamente reforzar la seguridad de los archivos correspondientes para evitar cualquier problema imprevisto. \n— División de RR. HH.",
+      "humanResources": "La operadora Liino es una estrella en ascenso de la escena de cultura pop de la Franja de la Civilización, conocida ampliamente como la “Estrella de la Mañana de La Fantoma”. Se unió a Endfield Industries por motivos personales y actualmente se encarga de parte de sus comunicaciones externas y labores de difusión pública. \n\nA pesar de su popularidad en la industria del entretenimiento, la operadora Liino es mucho más accesible de lo que la mayoría esperaría de una idol. En ocasiones ha exagerado una imagen más dulce y delicada al interactuar con operadores de la División de ingeniería para conseguir favores personales, incluido el acceso a ciertas áreas a bordo de la Dijiang. Tras varios recordatorios amistosos de la supervisora Perlica, dicho comportamiento se ha vuelto mucho menos frecuente. \nUn punto digno de mencionar es que Liino rara vez habla de su familia. Según los archivos que presentó, sus padres fallecieron en un accidente cuando ella tenía ocho años, y ella fue la única sobreviviente. \nEn cuanto a su madre, quien también era Djall, el Sr. Fleming, el “Constructor de puentes”, confirmó en un breve intercambio que ella también provenía de Seš'qa. Sin embargo, abandonó a su familia poco después de alcanzar la mayoría de edad y no se ha sabido nada de ella desde entonces. \nCon respecto al “pequeño problema” (como ella lo llamó) causado por los “rumores Djall”, el Sr. Fleming aprovechó la oportunidad para negociar una colaboración con Liino. Los detalles exactos de su acuerdo siguen siendo desconocidos. Sin embargo, su posterior cambio hacia presentaciones escénicas más atrevidas, junto con el desvanecimiento gradual de los rumores, sugiere que el resultado fue positivo para todos los involucrados. \nDe cara al futuro, sigue siendo difícil predecir cómo pretende desarrollar su carrera escénica la operadora Liino. Pero, como a ella misma le gusta decir: \n“¡Pregúntenme por el futuro después! ¡Primero, tengo decenas de conciertos en los que debo brillar!”. \n— Martin Marvin Malen, asistente, División de RR. HH., Endfield Industries",
+      "file1": "Incluso después de unirse a Endfield, la señorita Liino sigue enfocada principalmente en su agenda de presentaciones. Aun así, atiende todas las asignaciones de Endministrator, desde tareas rutinarias hasta ayudar a los operadores de inteligencia a evaluar posibles colaboradores, con un entusiasmo y profesionalismo notables, obteniendo siempre excelentes resultados. \nEl personal médico ha señalado con frecuencia que los hábitos de alimentación y sueño de la señorita Liino son mucho más erráticos que los de la mayoría de los operadores, con cambios bruscos que siguen de cerca la intensidad de su agenda. Con el tiempo, quienes han trabajado con ella han llegado a notar que es profundamente perfeccionista por naturaleza, y aplica a todas las tareas que acepta los mismos estándares que a sus presentaciones. Incluso las imperfecciones menores le resultan difíciles de aceptar, y perfecciona su trabajo sin descanso hasta que coincide con su visión. \nDe vez en cuando, la División médica envía a alguien para revisar a la señorita Liino. Una vez que Endministrator la convence, suele seguirles la corriente... al menos durante un rato.\n\nPor Talos... ¡Lleva casi 30 horas trabajando en esa propuesta! ¿Los Djall no duermen o qué? \n— Un operador anónimo que trabajó alguna vez con Liino \n\n¿La hora de dormir? ¿La hora de comer? Hmm... ¡la única hora que importa es la hora del show! ¡Tengo que construir un escenario de ensueño! \n— Liino",
+      "file2": "Nunca he confiado demasiado en mi memoria, y no llevo un diario. \nPero, cuando volví a mi casa en la Glorieta asfaltada y saqué aquel álbum con la firma de la señorita Liino, todos los recuerdos felices de ese día volvieron de golpe. Tenía que escribirlo. \n\nNunca había ido a La Fantoma antes de este encuentro con los fans. Aunque reservé mi hotel con un mes de anticipación, de todos modos me perdí. Por suerte, una amable Felina me ayudó a encontrar el camino. Muchos de los huéspedes de ahí probablemente eran fans como yo. En recepción notaron el peluche de Liino en mi bolsa, me indicaron la ruta más rápida al recinto e incluso me recomendaron un café cercano. \n“¡Es el que mencionó la señorita Liino en su entrevista! Tal vez quieras probar su bebida especial”. \nAl día siguiente, cuando llegué al recinto, casi todos sostenían un vaso de la bebida especial de ese café. Yo también ya había comprado una, así que simplemente me mezclé en silencio. Nadie sabía que en realidad nunca había visto ni una sola entrevista de Liino. \nTodos a mi alrededor se veían tan jóvenes y tan claramente entregados. Comparada con ellos, yo sí era solo una fan común y corriente. Solo escuché unas cuantas canciones de la señorita Liino y me gustó de inmediato. Sinceramente, antes de ella nunca me habían importado mucho las idols, y nunca había asistido a un encuentro con fans. Todo ese día se sintió extraño... un poco misterioso, y emocionante de una forma que no sé explicar muy bien. \nCuando la señorita Liino tomó el regalo que le extendí con nerviosismo, dijo mi nombre con mucha calidez, me apretó suavemente la mano, y dijo: \n“¡Brilla, brilla! ¡Te recuerdo! En la estación de autobuses de la Glorieta asfaltada, ayudaste a Liino a conseguir su pase de viaje, ¿verdad?”. \nSolo asentí, sin palabras. Todas las frases que había practicado desaparecieron. Al final, solo solté un agradecimiento torpe: \n“Gracias... Me alegra haber podido ayudar...”. \nTambién quería decirle cuánto me había encantado aquella canción que improvisó ese día. Pero no pude decirlo. \nY aun así, de alguna forma, pareció oírlas de todos modos. Retomó el hilo con tanta naturalidad. \n“¿Todavía recuerdas esa canción? ¡Va a estar en mi próximo álbum! Si te gusta tanto, deberías venir al concierto de Liino el próximo mes. ¡Liino cantará la versión completa en vivo!”. \nLuego puso el álbum ya firmado en mis manos, sonrió y dijo: \n“¡Espero verte ahí, Evelyn!”. \n\nAl mirar atrás, todo se sintió como un sueño. \nCreo que por fin entiendo cómo se sienten esos fans tan apasionados. Cuando miras a alguien que brilla con tanta intensidad, es imposible no pensar... “Ojalá pudiera volver a verla”. \nDe verdad, de verdad espero poder volver a ver a Liino algún día. La Fantoma, Nueva Wrankwood, Simonch, o incluso algún lugar mucho más lejano, iría sin dudarlo. \nDe verdad lo haría. \n\n— “Un encuentro con fans que nunca olvidaré”, por una empleada de estación de autobuses que viajó sola al Valle IV por Liino",
+      "file3": "“El misterio tras su repentina fama: ¿apoyo genuino del público o hechicería Djall?”. \nUna nueva idol llamada Liino, proveniente de La Fantoma, está arrasando en la escena. Está rompiendo récords en las listas a un ritmo ridículo, y su base de fans pasó de unos cuantos cientos a más de diez mil en un abrir y cerrar de ojos. \nLa fiebre por Liino está arrasando en la escena. Su álbum debut, “Vuela Talosiano y alcanza velocidades supersónicas”, ya está agotado, y las entradas para su primer concierto en La Fantoma se han convertido en una auténtica pesadilla de entradas agotadas para los fans. \nSin embargo, mientras recopilaba información para este artículo, también me encontré con crecientes dudas en torno al meteórico ascenso de Liino a la fama, y su supuesta identidad “Djall” ahora parece estar justo en el centro de la tormenta. Un informante incluso me dijo que su propia hermana se volvió fan obsesiva de Liino tras escuchar una sola canción, a pesar de no haber mostrado interés alguno en las idols anteriormente. En los últimos días, historias similares han estado apareciendo a un ritmo alarmante. Algunos incluso especulan que está utilizando alguna hechicería Djall ancestral en su música. Aunque el mundo académico insiste firmemente en que no hay evidencia de la llamada “hechicería registrable”, esto no ha servido para acallar los rumores, y algunos han considerado que esta teoría es relativamente creíble. \nEl rápido aumento de popularidad de Liino podría deberse a una campaña corporativa planificada, con la hechicería Djall posiblemente desempeñando un papel en amplificar su efecto. De ser cierto, sus capacidades reales podrían no estar a la altura del fenómeno que la rodea. \nEs difícil no preguntarse cómo la industria tradicional de idols de Talos II terminó en semejante estado, lo cual plantea preguntas más profundas sobre las fuerzas detrás de ella. \n— Semanario del Arte, número 143, columna Noticias estelares \n\n“Susurros tras el telón: profesionales expresan dudas sobre el primer concierto de la mega idol” \nApenas el mes pasado, Liino, una de las idols de ascenso más rápido de la Franja de la Civilización, celebró su primer concierto en la costa de La Fantoma. \nEl espectáculo, con la temática “Rompiéndola en el escenario”, buscó redefinir el entretenimiento en vivo mediante decisiones escénicas audaces y coreografías físicamente exigentes. \nAunque el concierto fue un claro éxito en términos de asistencia y ventas, las opiniones profesionales estuvieron divididas. Entre ellas, el Sr. Louis Henson comentó: \n“Visualmente impresionante, pero algo excesivo... Su técnica vocal aún necesita trabajo”. \nAsí que parece que esta idol en ascenso aún tiene un largo camino por recorrer en lo vocal, y sus presentaciones llamativas y exageradas no pueden ocultar del todo ese hecho. \nQué gran decepción. Una idol con verdadera ambición y talento, pero frenada por una debilidad tan evidente. ¡Qué lástima! \nQue esto sirva como advertencia para otras idols emergentes de la industria: ¡perfeccionen sus habilidades! Después de todo, es poco probable que una idol que solo se dedica a las actividades con los fans llegue muy lejos. \n— Semanario del Arte, número 151, columna Noticias estelares \n\n“¿Liino fue juzgada injustamente? Idol en ascenso habla en entrevista” \nLiino, la aclamada idol en ascenso, se sentó recientemente para otra entrevista exclusiva con la Asociación de la Industria Discográfica de La Fantoma. La conversación de casi treinta minutos abordó las controversias recientes y su próxima agenda de presentaciones. \nContra todo pronóstico, Liino se mostró notablemente franca respecto a su identidad Djall. En lugar de intentar evitar el tema, reconoció abiertamente las críticas y declaró que entendía por qué existían esas dudas. En cuanto a su estilo de presentación, declaró que estaba dispuesta a aceptar comentarios sinceros del público y seguir perfeccionándose como idol. \nAl final, la entrevista dejó una impresión algo más positiva de lo esperado. Sin embargo, aún habrá que observar si Liino realmente puede estar a la altura de sus palabras. \nNota del editor: Este artículo fue escrito antes del evento de fans más reciente de Liino. Las opiniones expresadas anteriormente no fueron influenciadas de ninguna manera por el sincero agradecimiento que Liino dedicó en el escenario al departamento editorial de Semanario del Arte. \n— Semanario del Arte, número 155, columna Noticias estelares \n\n“Liino lanza nuevo demo, ‘Luz estelar sobre Nueva Wrankwood’: ¡más de un millón de reproducciones ya!”. \nEste domingo, Liino finalmente les dio a sus fans lo que habían estado esperando: el demo de “Luz estelar sobre Nueva Wrankwood”, el sencillo principal de su próximo álbum. \nEs la primera vez que mezcla influencias de música clásica con producción pop moderna, y ya está mostrando una nueva faceta audaz de su música. A los fans les encanta: “¡La señorita Liino es increíble! ¡Esta canción es hermosa!”. \nA poco tiempo de su lanzamiento, el demo ya había superado el millón de reproducciones. Si este adelanto sirve de indicio, puede que haya sorpresas aún mayores cuando llegue el álbum completo. \n— Semanario del Arte, número 158, columna Noticias estelares \n\n“La ‘Estrella de la Mañana’ llega al Valle IV: ¡concierto benéfico listo para brillar!”. \nSe dice que Liino, actualmente una de las idols en ascenso más comentadas de Talos II, se dirige al Valle IV. Según fuentes internas, se le ha invitado como artista especial a un concierto benéfico organizado por el Grupo Minero Brady, y está previsto que ofrezca una actuación en solitario en el evento. \nDespués de conquistar tanto a fans como a críticos con sus presentaciones anteriores, las expectativas están por las nubes. Algo es seguro: Liino está a punto de llevar algo aún más deslumbrante e inolvidable al escenario. \nLa venta de boletos se anunciará más adelante este mes en el sitio web oficial de Liino. Estén atentos para conocer más detalles. \n— Semanario del Arte, número 160, columna Noticias estelares",
+      "file4": "Cuando Liino conoció por primera vez al Sr. Fleming, conocido como el “Constructor de puentes”, supo de inmediato que había venido específicamente a buscarla. \nA diferencia de los rojos y negros, azules y amarillos claramente separados que solía percibir en las personas, Liino lo observó con cautela y notó tres colores superpuestos dentro del hombre que, según se decía, representaba a la Hora de brujas... \nUn azul sombrío. Un verde melancólico. Y un púrpura profundo y velado. \nJuntos, formaban una imagen difícil de descifrar, una que incluso a ella, normalmente tan perceptiva, la dejó confundida por un momento. \nFleming pareció notar su reacción y asintió ligeramente, como si entendiera. \n“Eres una Djall muy talentosa... y, aun así, nunca has usado tus habilidades en una presentación. ¿Es por lo que te enseñó Freida?”. \nLiino se quedó paralizada por un breve momento. \nCasi había olvidado cuánto tiempo había pasado desde la última vez que alguien le dijo ese nombre. El nombre de su madre. \nPero se recuperó rápidamente. Como idol que siempre perseguía la perfección, la experiencia le había enseñado desde hacía mucho cómo responder ante situaciones inesperadas, tanto entonces como ahora. \nAsí que recuperó la compostura y sostuvo la mirada de Fleming sin inmutarse. Su mirada era aguda, como si quisiera atravesarlo con ella. \n“¿Quién eres exactamente...? ¿Cómo sabes ese nombre?”. \nFleming sonrió con gentileza, imperturbable ante su franqueza. Miró alrededor del camerino y dijo: \n“Solo un viejo conocido que a veces extraña su forma de tocar. Todavía recuerdo cuánto amaba la música clásica Leithaniana. Una vez nos hizo rastrear bastantes partituras de Terra”. \n“Pero luego... se las llevó todas consigo. Lo dejó todo para huir con un Liberi de Mieszko Industries. Así, sin más... Ya han pasado más de veinte años, ¿no?”. \nMientras hablaba, los colores a su alrededor cambiaron a un amarillo desvaído, como las viejas partituras que su madre alguna vez adoró y que ella ahora mantenía cerca. Sintió el corazón más pesado. \n“Sr. Fleming... ¿Vino hasta aquí solo para hablar de los viejos tiempos?”. \nFleming negó con la cabeza. \n“No solo por eso. Quería ofrecer un poco de calidez antes de hablar de lo que podría convertirse en una colaboración. Por si alguien demasiado cautelosa decidía marcharse antes de que siquiera llegara al punto”. \n“¿Colaboración... con quién? ¿La Hora de brujas?”. \n“Como consultor comercial sénior de la Hora de brujas, por supuesto que me gustaría trabajar con una idol de primera como tú. Ya sabes, hay posibilidades más amplias”. \n“Quieres decir... ¿Seš'qa?”. \n“Je. De verdad te pareces a tu madre. Las conversaciones con gente inteligente siempre me ahorran muchísimo tiempo. Sí, ya sean rumores relacionados con los Djall o negociaciones externas con distintas facciones... Seš'qa estará encantada de ayudarte a eliminar cualquier cosa que se interponga en el camino de tus presentaciones perfectas”. \n“¿Y el costo? ¿Qué tengo que dar a cambio de trabajar contigo... con Seš'qa?”. \n“Podría decir que tú eres el mayor valor de todos... pero sospecho que esa no es la respuesta que quieres. Información, acceso, contactos... algo por el estilo. ¿Qué te parece?”. \n“......” \n“Entonces, ¿puedo oír tu respuesta?”."
+    },
+    "tags": {
+      "expert1": {
+        "name": "Epifanía",
+        "description": "Epifanía: Actuación improvisada\n¡Cuando sea y donde sea! Cuando quiere actuar, cualquier cosa bajo sus pies se convierte en su escenario especial."
+      },
+      "expert2": {
+        "name": "Sabiduría callejera",
+        "description": "Sabiduría callejera: Negociación nivel Idol\nPuede hacer que los fans más fervorosos se calmen y dejar sin palabras a reporteros insoportablemente invasivos. Y puede hacerlo sin usar sus Artes Djall."
+      },
+      "hobby1": {
+        "name": "Creatividad",
+        "description": "Creatividad: Apreciación de telenovelas\n“Un personaje que apareció en el episodio 1... sigue presente en el episodio 325... ¿Será el protagonista? ¡Qué envidia!”."
+      },
+      "hobby2": {
+        "name": "Bellas artes",
+        "description": "Bellas artes: Colección de vinilos antiguos\nLa nostalgia no es un mal hábito. Es su deseo. Quizá llegue el día en que sus álbumes se conviertan en una pieza preciada de la colección de alguien."
+      }
+    }
+  },
+  "potentials": {
+    "potential1": {
+      "description": "Tras entrar en combate sin su <@ba.key>Postura de vocalista</> activa, el primer lanzamiento de la habilidad de batalla <@ba.key>Enfoque deslumbrante</> <#ba.return>devuelve</> <@ba.vup>{potential_atb_return:0}</> PH adicionales. \nLos efectos de Refuerzo de ATQ otorgados por <@ba.key>Postura de vocalista</> y <@ba.key>Postura de cosmovoz</> aumentan en <@ba.vup>+{atk_up:0%}</>.",
+      "name": "Puesta en escena impecable"
+    },
+    "potential2": {
+      "description": "Voluntad <@ba.vup>+{Will:0}</>, Eficiencia del tratamiento <@ba.vup>+{HealOutputIncrease:0%}</>.",
+      "name": "Ensayos dedicados"
+    },
+    "potential3": {
+      "description": "Habilidad de combo <@ba.key>Armónicos deleitables</> mejorada: duración del tiempo de reutilización: <@ba.vup>{coolDown:0}</> s. El Multiplicador de DAÑ y el Tratamiento de PV aumentan a <@ba.vup>{heal_value:0.0}</> veces el original.",
+      "name": "Anhelo por el horizonte"
+    },
+    "potential4": {
+      "description": "Máxima <@ba.key>Concierto de Estrella del amanecer</> mejorada: costo de Energía máxima <@ba.vup>-{1-costvalue:0%}</>.",
+      "name": "Ritmo meteórico"
+    },
+    "potential5": {
+      "description": "El efecto de <#ba.enhance>Amp</> de <@ba.key>Concierto de Estrella del amanecer</> aumenta <@ba.vup>{will_up:0.0}</> veces el original. \nLos Multiplicadores de DAÑ de la habilidad de batalla <@ba.key>Enfoque deslumbrante</> y la máxima <@ba.key>Concierto de estrella del amanecer</> aumentan <@ba.vup>{atk_scale:0.0}</> veces el original.",
+      "name": "Preguntas y respuestas que te llegan al corazón"
+    }
+  },
+  "arts": {
+    "potential1": {
+      "name": "Hora del espectáculo",
+      "author": "수줍(Sjoop)",
+      "description": "Este es el día en que ella define el significado de “deslumbrante”, “perfección” y “un brillo que nadie podrá olvidar jamás”."
+    },
+    "potential3": {
+      "name": "Donde mira la estrella de la mañana",
+      "author": "油锅なべる",
+      "description": "Incluso una “estrella” como ella se esfuerza por alcanzar esa extensión de cosmos reluciente que yace en lo alto."
+    },
+    "potential5": {
+      "name": "Práctica azotacorazones",
+      "author": "pako",
+      "description": "“Silencio. Ahora es momento de concederles a todos un instante de hermosos sueños”."
+    }
+  }
+}

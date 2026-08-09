@@ -711,7 +711,8 @@
     "nickname": "Alleikhreos",
     "description": "Eine Schöpfung der Stiftung und Veteran zahlloser Kämpfe. Dieser Chiliarch hat die Ætherside durchwandert, bis er sein verlorenes Schwert wiedergefunden hatte und sich eine Möglichkeit zur Rückkehr freischneiden konnte.",
     "abilities": [
-      "Wenn die Taumeln-Anzeige von Alleikhreos, Chiliarch den Taumel-Knoten erreicht, lässt er eine Fundit-Waffe fallen. Nähere dich ihr mit dem gesteuerten Operator, um die Waffe aufzuheben und ihn damit anzugreifen."
+      "Wenn die Taumeln-Anzeige von Alleikhreos, Chiliarch den Taumel-Knoten erreicht, lässt er eine Fundit-Waffe fallen. Nähere dich ihr mit dem gesteuerten Operator, um die Waffe aufzuheben und ihn damit anzugreifen.",
+      "Wenn sich das Blatt gegen Alleikhreos, Chiliarch wendet, beschwört er Doppelgänger aus dem Riss, um seine Gegner anzugreifen."
     ]
   }
 }
