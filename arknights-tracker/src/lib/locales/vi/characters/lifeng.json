@@ -127,7 +127,341 @@
         "name": "Tự Nhiên",
         "description": "Tự Nhiên: Lữ Khách Nhiệt Huyết\nPhần lớn thế giới này vẫn còn xa lạ với anh. Thế nhưng, anh xem những điều bí ẩn ấy như những trọng trách tương lai mà mình phải cố gắng để xứng đáng."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Chuẩn Bị Tác Chiến 1",
+        "text": "Endmin, cuối cùng cũng có phân công cho tôi rồi sao?"
+      },
+      {
+        "title": "Chuẩn Bị Tác Chiến 2",
+        "text": "Ôi, dây giày mình tuột rồi... Khoan đã, Endmin tới kìa! Nghiêm nào!"
+      },
+      {
+        "title": "Đang thêm vào đội 1",
+        "text": "Mục tiêu ở đâu?!...Ôi, lỗi của tôi, Endmin. Chỉ là tôi đang luyện tập trước khi chiến đấu thôi."
+      },
+      {
+        "title": "Đang thêm vào đội 2",
+        "text": "Chú Pan tôi luôn dặn rằng một khi trống trận vang lên thì không được lùi bước."
+      },
+      {
+        "title": "Đang đổi vũ khí",
+        "text": "Không phải vũ khí làm nên một chiến sĩ đâu. Ngay cả một cây gậy gỗ bình thường cũng có thể đánh trúng mục tiêu!"
+      },
+      {
+        "title": "Đang đổi trang bị",
+        "text": "Tất cả trang bị chiến thuật này là dành cho tôi sao? Thật vậy à, Endmin?! Vậy là tôi đã được tuyển chính thức rồi đúng không?"
+      },
+      {
+        "title": "Kích hoạt Ma Trận Năng Lực",
+        "text": "Tôi đến Endfield để học hỏi. Nhưng... có quá nhiều thứ cần học. Tôi sẽ nỗ lực hết mình!"
+      },
+      {
+        "title": "Xem Hồ Sơ Chiến Đấu",
+        "text": "Chú Pan luôn bảo tôi phải ghi lại quá trình huấn luyện. Ông ấy nói đúng, tôi đâu có biết mình đánh sai tư thế ra sao cho đến khi xem lại bản ghi hình!"
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 1",
+        "text": "Thăng bậc á? Phù... Tôi cứ tưởng mình lại làm gì sai rồi cơ chứ!"
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 2",
+        "text": "Ban đầu lúc nào cũng khó khăn, nhưng giờ tôi bắt nhịp được rồi. Endmin, ngài đã thấy biểu hiện gần đây của tôi rồi mà. Ngài nghĩ tôi có cơ hội thắng giải Đua Ghế Văn Phòng tháng này không?"
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 3",
+        "text": "À mà, Endmin, tôi tò mò lắm, sau bậc này thì còn bao nhiêu bậc nữa? Tôi đang định thêm \"Mục Tiêu Hàng Tháng\" vào sổ ghi chép!"
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 4",
+        "text": "\"Biểu hiện xuất sắc\", \"khả năng thích ứng và làm việc nhóm tốt\"... Tôi đọc được những lời khen đó trong cả giấc ngủ! Dù sao thì, Endmin, tôi đã sẵn sàng rồi. Tôi hứa sẽ cố gắng hết mình để trở thành đồng đội đáng tin cậy nhất của ngài."
+      },
+      {
+        "title": "Cán Viên đang báo cáo nhiệm vụ",
+        "text": "Chào Endministrator, tôi là Lifeng đây! Tôi vẫn còn non kinh nghiệm, nhưng tôi sẽ nỗ lực hết sức! Gian khó rèn nên con người, nhưng sự hoàn hảo thực sự trông như thế nào? Có lẽ người như ngài sẽ biết câu trả lời. Tôi thật lòng muốn nghe quan điểm của ngài."
+      },
+      {
+        "title": "Chờ Lệnh 1",
+        "text": "Chuyện nhỏ!"
+      },
+      {
+        "title": "Chờ Lệnh 2",
+        "text": "Cứ để tôi lo!"
+      },
+      {
+        "title": "Phân Công Vào Công Trình",
+        "text": "Tôi hiểu rồi, Endmin! Thực ra thì tôi đang thắc mắc sao mãi ngài chưa giao việc cho tôi đấy chứ!"
+      },
+      {
+        "title": "Lời Chào 1",
+        "text": "Chào Endmin! Trông ngài bận quá, nhưng tôi rất vui khi được gặp ngài."
+      },
+      {
+        "title": "Lời Chào 2",
+        "text": "Endmin có rảnh không? Tôi học được một chiêu. Ngài muốn xem không?"
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 1",
+        "text": "À... tôi nên nói gì trong trường hợp thế này nhỉ... Lifeng, cán viên chính thức của Tập Đoàn Endfield. Rất vinh hạnh được gặp ngài."
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 2",
+        "text": "Ơ, ngài vừa thấy tôi lúc nãy và thắc mắc vì sao tôi vẫn còn ở đây? Ừm... Không phải tôi đang chờ nhiệm vụ đâu. Hehe, hoàn toàn không phải!"
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 3",
+        "text": "Endmin, ngài có quen ai là Anasa không? Gia đình tôi đã sống ở thành phố nhiều đời rồi, nhưng tôi nghe nói có nhánh khác vẫn còn sống ở vùng hoang địa. Nếu ngài tình cờ gặp họ, xin hãy cho tôi biết, để tôi có thể đến thăm!"
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 4",
+        "text": "Thật ra... Tôi rất dễ say xe. Chỉ cần ngồi xe năm bánh ở Võ Lăng là tôi đã chóng mặt rồi. Nhưng không hiểu sao khi ở trên Dijiang, tôi lại không cảm thấy gì cả."
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 5",
+        "text": "Thật tuyệt! Tôi có thể nhìn thấy Đập Xiranite qua kính viễn vọng của Dijiang! Nó trông bé xíu từ đây, như thể tôi có thể kẹp nó giữa hai ngón tay… Thật ngạc nhiên khi thay đổi góc nhìn khiến một vật khổng lồ trở nên nhỏ bé. Mmm, tôi cần suy ngẫm về điều này."
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 6",
+        "text": "Endmin, có người đang chăm sóc cây trong các Buồng Phát Triển nhỉ? Òm... Thật kỳ diệu khi chúng có thể phát triển ở một nơi cao vút, xa mặt đất đến vậy. Mà tôi cũng không nghĩ mình sẽ ở đây đâu."
+      },
+      {
+        "title": "Tặng Quà",
+        "text": "Endmin, ngài nhớ món quà tôi hứa tặng khi thua trò chơi chứ? Đây, là món đó đây!"
+      },
+      {
+        "title": "Nhận quà",
+        "text": "Mọi người đều nhận được à?... Không? Chỉ dành cho tôi thôi sao? Cảm ơn nhiều nhé, Endmin!"
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 1",
+        "text": "Ngài vừa gọi tôi à, thưa Endministrator? Xin lỗi, tôi... không quen tuân thủ các quy trình báo cáo tiêu chuẩn cho lắm. Ồ, ngài chỉ muốn trò chuyện thôi sao? Vậy ngài cứ hỏi bất kỳ điều gì. Tôi sẵn sàng kể hết mọi thứ."
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 2",
+        "text": "Endmin, tôi đã tập võ với chú Pan từ nhỏ. Có lần nhà tôi bị cháy, tôi đã vác hai đứa trẻ lên vai phải, thêm một đứa bên vai trái, rồi lao ra ngoài an toàn! À mà ngài có xem dữ liệu kiểm tra tuần trước chưa? Bộ Phận Y Tế nói cánh tay que tăm không thành vấn đề, cú đấm của tôi vẫn mạnh như ai. Nên nếu cần người tiêu diệt kẻ địch, tôi chính là lựa chọn đấy!"
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 3",
+        "text": "Khi tôi nộp đơn gia nhập Endfield, tôi có mang theo mấy bức thư giới thiệu. Tôi tin là ngài đã đọc hết rồi nhỉ? Tôi năn nỉ Đội trưởng Mi, Thiên Sư Zhuang và chú Pan rất nhiều. Họ vốn muốn tôi ở gần nhà. Nhưng tôi quyết tâm học hỏi bằng cách trải nghiệm, đó là lý do tôi phải tận dụng cơ hội này. Endmin, xin hãy giao cho tôi một nhiệm vụ lớn!...Vệ sinh phòng máy? Rõ rồi, tôi sẽ làm cho từng bánh răng trang bị sáng bóng như mới!"
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 4",
+        "text": "Lời mời trực tiếp từ Endmin?! E hèm, tôi sẽ làm tất cả những gì có thể để hỗ trợ đội tác chiến. Tôi đã lập sẵn năm phương án sau khi nghe bản báo cáo đêm qua của ngài. Vậy, tôi ký ở đâu? Khoan đã, không cần ký à? OKELA! Tôi tới liền đây!"
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 5",
+        "text": "Từ giờ trở đi, tôi sẽ là cánh tay phải của ngài... Hừm, chắc ngài nghĩ tôi đùa đấy chứ gì? Haha, không sao cả. Giờ có thể tôi chưa đủ trình bây giờ, nhưng tôi sẽ trưởng thành. Một ngày nào đó, tôi sẽ đủ năng lực để nhận những nhiệm vụ khó khăn nhất. Vậy nên hãy mong chờ nhé, Endmin?"
+      },
+      {
+        "title": "Trò Chuyện 1",
+        "text": "Muốn vật tay với tôi không? Tôi có thể chơi cả ngày luôn đó!"
+      },
+      {
+        "title": "Trò Chuyện 2",
+        "text": "Endmin, tôi biết một mẹo nhỏ để tặng hoa. Khi gửi một bó hoa, hãy giữ lại một bông. Khi bông đó héo đi, đó là lúc nên gửi bó tiếp theo. *Khúc khích* Ý tưởng này là của tôi đấy. Tôi dùng cách này để đảm bảo mộ cha mẹ mình luôn có hoa tươi."
+      },
+      {
+        "title": "Trò Chuyện 3",
+        "text": "Mọi người ở Endfield dường như hơi ngại ngùng. Giống như, khi tôi tập quyền Hongshan vào buổi sáng, tôi thấy vài cán viên lặng lẽ quan sát từ xa. Họ cố bắt chước dáng điệu của tôi, học cách tôi thả lỏng vai, dẫn lực. Nhưng chỉ cần tôi quay lại, họ lại tản đi hết. Dạo này nhóm đó ngày càng đông. Mà tôi vẫn chưa hỏi được tên ai cả..."
+      },
+      {
+        "title": "Trò Chuyện 4",
+        "text": "Tôi đã mất cánh tay này khi còn nhỏ, lúc đó tôi còn chưa cảm nhận rõ được nỗi đau... Tôi nhập viện vào mùa xuân, rời viện cũng vào mùa xuân. *Thở dài* Rồi tôi nhận ra... có những thứ, một khi đã mất đi sẽ không bao giờ quay lại nữa."
+      },
+      {
+        "title": "Trò Chuyện 5",
+        "text": "Tôi đã rời nhà xa lắm rồi, Endmin. Tôi thật sự muốn biết mọi người ở quê giờ thế nào. Tôi vẫn còn nhớ những điều nhỏ nhặt: Bà Bai đi xoa bóp lưng, Đội Trưởng Liu phải thay băng chân mỗi khi trời mưa, Dì Li mua xì dầu nấu thịt kho vào thứ Tư, Xiao Ran lúc nào cũng quên mang găng tay khi lấy mẫu, và Ah Zai thì cứ đầu tháng là lại mượn tiền tôi để xoay sở cái tiệm nhỏ của cậu ta... Tôi sẽ cố sắp xếp để ghé thăm họ ngay khi có cơ hội!"
+      },
+      {
+        "title": "Chủ đề: Da Pan",
+        "text": "Mỗi khi Thiên Sư Zhuang bận quá, chú Pan lại giúp tôi điều chỉnh tay giả. Chú ấy đúng là chuyên gia về máy móc! Từ kỹ thuật cơ khí cho đến tinh chỉnh trang bị, chú đều rành như lòng bàn tay. Tôi luôn thắc mắc tại sao chú ấy lại chọn nghỉ hưu. Phì, Endmin! Ngài muốn nghe một bí mật nhỏ không? Tôi từng thấy ảnh chú Pan hồi trẻ, cưỡi chiếc xe năm bánh, mặc áo da, đeo kính râm, để kiểu tóc xù tổ chim cực ngầu! Nghe nói chú từng là huyền thoại ở Học Viện Khoa Học Hongshan. Người ta đồn chú ấy có thể chém xuyên từ Vành Đai tới tận tiền tuyến chỉ với một con dao chặt thịt Viêm Quốc. Nghe mà sốc, phải không?"
+      },
+      {
+        "title": "Chủ đề: Zhuang Fangyi",
+        "text": "Hồi nhỏ, tôi thường làm bài tập trong phòng thí nghiệm của Thiên Sư Zhuang. Cô ấy tranh thủ lúc rảnh rỗi để chỉnh lại tay giả cho tôi, rồi ngủ gật ngay giữa chừng. Thường thì tôi là người dọn dẹp chỗ cô ấy. Cô ấy quá bận để lo chuyện nhà cửa. Nhưng mà cũng phải thôi, cả tương lai của Võ Lăng đều đặt lên vai cô ấy mà."
+      },
+      {
+        "title": "Chủ đề: Mi Fu",
+        "text": "Đội trưởng Mi không thích chúng tôi nhắc đến, nhưng cô ấy là người rất tốt. Mỗi lần gặp tôi, cô đều dúi cho tôi vài đồng và bảo tôi mua một xiên bánh trôi đường ở quầy của dì Tian. Đó là món ăn ngọt làm từ những viên gạo nếp bọc đường. Khi tôi mang về, cô sẽ trút hết bánh ra và cho tôi ăn hết sạch. Còn cô chỉ gặm cái que tre với vẻ mãn nguyện."
+      },
+      {
+        "title": "Chủ đề: Aggeloi",
+        "text": "Trẻ con Võ Lăng chúng tôi lớn lên trong cảnh phải đánh nhau với bọn buggerloid đó để tồn tại. Lúc các Cột Thiên Sư còn đang được xây, đến gần những vùng nước lạ cũng đã là mạo hiểm. Người lớn thường dọa chúng tôi, \"Chạm vào Aggeloi đi, rồi chúng sẽ bò ra từ cống nhà con hoặc kẽ gạch nền nhà.\" Nghe như chuyện ma vậy, nhưng đó là sự thật. Thật ra, mãi đến khi gia nhập Endfield tôi mới biết Aggeloi có nhiều loại."
+      },
+      {
+        "title": "Chủ đề: Anasa",
+        "text": "Ba mẹ tôi từng nói tổ tiên chúng tôi không phải người thành thị. Trước khi vượt Cổng Không Gian để đến Talos-II, họ từng sống lang bạt trên vùng thảo nguyên khô cằn bên ngoài Thành Phố Du Mục Viêm Quốc - lấy trời làm chăn, đất làm giường, sống hòa mình với thiên nhiên. Hồi đó tôi chẳng hiểu gì, nhưng giờ thì tôi hiểu rồi. Ba mẹ không chỉ đang kể chuyện, họ đang chuẩn bị cho tôi. Dù Thực Tại đã rời khỏi thế gian này, họ sẽ quay lại dưới một hình dạng khác. Đó là lý do... tôi đã thôi nhớ họ từ lâu."
+      },
+      {
+        "title": "Chủ đề: Quận Phát Triển Khoa Học Võ Lăng",
+        "text": "Võ Lăng mà ngài thấy hôm nay chưa tồn tại bao lâu đâu. Cũng tầm tuổi với cánh tay giả của tôi thôi! Thật đáng kinh ngạc, đúng không? Chỉ trong thời gian ngắn, nơi đây đã trở thành địa điểm tuyệt vời nhất Talos-II. Dù có thay đổi bao nhiêu, tôi vẫn nhớ rõ từng viên gạch trong thành phố. Nhắm mắt lại, tôi vẫn có thể cảm nhận được mùi ẩm của những con đường ướt mưa."
+      },
+      {
+        "title": "Chủ đề: Hongshan",
+        "text": "Buồn cười là, tôi chưa từng đến tổng bộ Học Viện Khoa Học Hongshan lần nào. Đó là nơi ba mẹ tôi, Thiên Sư Zhuang và chú Pan từng làm việc. Tôi đơn giản là không có lý do để đến đó. Ý tôi là... Tôi không quen ai ở đó cả, theo những gì tôi nghe được, nơi ấy toàn người giỏi và nóng tính. Tôi luôn lo rằng họ sẽ không coi trọng tôi..."
+      },
+      {
+        "title": "Phát hiện Tài Nguyên/Có Thể Thu Thập 1",
+        "text": "Đi cẩn thận, có thể có đồ hay quanh đây!"
+      },
+      {
+        "title": "Phát hiện Tài Nguyên/Có Thể Thu Thập 2",
+        "text": "Phát hiện vật phẩm hiếm! Chúng ta đi xem thử chứ?"
+      },
+      {
+        "title": "Phát Hiện Khu Vực Chưa Khám Phá",
+        "text": "Ngài chắc là mình biết đường này chứ? Tôi không nghĩ ta từng đi lối này đâu."
+      },
+      {
+        "title": "Phát hiện Kẻ Địch Mạnh",
+        "text": "Kẻ địch phía trước! Để tôi lo liệu!"
+      },
+      {
+        "title": "Khai thác 1",
+        "text": "Tôi từng thấy chúng trong sách giáo khoa! Chúng có giá trị không nhỉ?"
+      },
+      {
+        "title": "Khai thác 2",
+        "text": "Không thành vấn đề!"
+      },
+      {
+        "title": "Mở Thùng",
+        "text": "Đồ ngon đấy. Chúng ta thực sự phải nộp nó cho đội cảnh vệ sao...?"
+      },
+      {
+        "title": "Nhận Aurylene",
+        "text": "Sư phụ tôi nói rằng mấy Aurylene trôi nổi ngoài hoang dã không nguy hiểm lắm. Chỉ cần đừng lao vào chúng bừa bãi là được."
+      },
+      {
+        "title": "Xua Tan Nhiễm Khuẩn",
+        "text": "Nhiễm Khuẩn đâu có lạ gì với trẻ con Võ Lăng chúng tôi. Không sao, cái này để tôi lo!"
+      },
+      {
+        "title": "Nghỉ ngơi",
+        "text": "Tôi cảm thấy một luồng ấm áp lan khắp cơ thể... Đến lúc đứng dậy giãn gân cốt một chút rồi!"
+      },
+      {
+        "title": "Sử Dụng Vật Phẩm Chiến Thuật 1",
+        "text": "Dùng thuốc của tôi để phục hồi mau!"
+      },
+      {
+        "title": "Sử Dụng Vật Phẩm Chiến Thuật 2",
+        "text": "Chờ tôi chút, để tôi thở tí đã!"
+      },
+      {
+        "title": "Cảnh Báo Nguy Hiểm",
+        "text": "WAHH, né đòn tấn công mau!"
+      },
+      {
+        "title": "Bị Thương",
+        "text": "Cố lên... tôi phải cố lên..."
+      },
+      {
+        "title": "0 HP",
+        "text": "Phải chi tôi mạnh hơn..."
+      },
+      {
+        "title": "Cổ Vũ Đội 1",
+        "text": "Sao ngài làm được vậy? Dạy tôi với!"
+      },
+      {
+        "title": "Cổ Vũ Đội 2",
+        "text": "Thật mở mang tầm mắt! Tôi hừng hực khí thế rồi đây!"
+      },
+      {
+        "title": "Đáp Lại Lời Cổ Vũ 1",
+        "text": "He he, ngài làm tôi ngượng quá..."
+      },
+      {
+        "title": "Đáp Lại Lời Cổ Vũ 2",
+        "text": "Một cây làm chẳng nên non, bốn cây chụm lại nên hòn núi cao!"
+      },
+      {
+        "title": "Bắt Đầu Chiến Đấu 1",
+        "text": "Lifeng đến từ Võ Lăng, sẵn sàng chiến đấu!"
+      },
+      {
+        "title": "Bắt Đầu Chiến Đấu 2",
+        "text": "Chúng không thể trụ nổi trước ngọn giáo của tôi!"
+      },
+      {
+        "title": "Thắng Trận 1",
+        "text": "Đó mới gọi là một trận đánh đúng nghĩa!"
+      },
+      {
+        "title": "Thắng Trận 2",
+        "text": "Thế thôi à? Tôi còn chưa kịp dùng hết các chiêu hay nhất nữa..."
+      },
+      {
+        "title": "Thắng Trận 3",
+        "text": "Hừm, ta đã cho chúng một bài học nhớ đời!"
+      },
+      {
+        "title": "Thắng Trận 4",
+        "text": "Chiến thắng thuộc về người có chuẩn bị. Tiếp tục tiến lên nào, cả đội!"
+      },
+      {
+        "title": "Bại Trận",
+        "text": "Chú Pan nói rằng trở thành một chiến binh giỏi không phải là nhanh, mà là giữ được sự bình tĩnh. Lần này tôi mất bình tĩnh, nhưng tôi sẽ trở lại và lợi hại hơn!"
+      },
+      {
+        "title": "Đòn Dứt Điểm 1",
+        "text": "Xem này!"
+      },
+      {
+        "title": "Đòn Dứt Điểm 2",
+        "text": "Đỡ đòn tấn công đi!"
+      },
+      {
+        "title": "KN Chiến Đấu 1",
+        "text": "Thuần khiết khai sáng chân lý!"
+      },
+      {
+        "title": "KN Chiến Đấu 2",
+        "text": "Ám ảnh sinh đau khổ!"
+      },
+      {
+        "title": "KN Chiến Đấu 3",
+        "text": "Tâm sáng ra tay chớp nhoáng!"
+      },
+      {
+        "title": "Chuẩn Bị KN Liên Hoàn 1",
+        "text": "Cần gì thì cứ gọi tôi nhé!"
+      },
+      {
+        "title": "Chuẩn Bị KN Liên Hoàn 2",
+        "text": "Để tôi giúp!"
+      },
+      {
+        "title": "Thi Triển Liên Hoàn 1",
+        "text": "Thấy cái này chưa?"
+      },
+      {
+        "title": "Thi Triển Liên Hoàn 2",
+        "text": "Đày ải!"
+      },
+      {
+        "title": "Kết Liễu 1",
+        "text": "Không còn ám ảnh!"
+      },
+      {
+        "title": "Kết Liễu 2",
+        "text": "Từ bỏ hoặc diệt vong!"
+      },
+      {
+        "title": "Tuyệt Kỹ 1",
+        "text": "Đoán xem tay nào sẽ nghiền nát ngươi?"
+      },
+      {
+        "title": "Tuyệt Kỹ 2",
+        "text": "Cái ác phải chịu báo ứng!"
+      },
+      {
+        "title": "Tuyệt Kỹ 3",
+        "text": "ĐÂY LÀ CƠN THỊNH NỘ!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

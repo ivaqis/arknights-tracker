@@ -122,7 +122,333 @@
         "name": "Sport",
         "description": "Sport: Nachtläuferin\nDie Wildnis ist der beste Ort zum Trainieren. Dort kann sie nach Herzenslust rennen."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Einsatzvorbereitung 1",
+        "text": "Bist du bereit? Die Wildnis ist voller Gefahren."
+      },
+      {
+        "title": "Einsatzvorbereitung 2",
+        "text": "Der Wind hört niemals auf. Und ich auch nicht."
+      },
+      {
+        "title": "Wird zum Team hinzugefügt 1",
+        "text": "Endlich etwas frischer Wind. Ich hatte den Geruch von Erde fast vergessen."
+      },
+      {
+        "title": "Wird zum Team hinzugefügt 2",
+        "text": "Geh, so schnell du kannst. Keine Sorge. Ich kann immer mithalten."
+      },
+      {
+        "title": "Waffe wird gewechselt",
+        "text": "Ich spüre den Atem der Waffe und dass sie wie für mich geschaffen ist."
+      },
+      {
+        "title": "Ausrüstung wird gewechselt",
+        "text": "Beeindruckende Handwerkskunst … Diese Präzision ist selten, sogar unter den mir bekannten Aldertones."
+      },
+      {
+        "title": "Fähigkeitsmatrix wird aktiviert",
+        "text": "Mein Aldertone hat mir etwas anderes beigebracht, aber du strebst nach den gleichen Zielen. Ich wurde erleuchtet."
+      },
+      {
+        "title": "Kampfaufzeichnungen ansehen",
+        "text": "Das Leben in der Wildnis ist lehrreich … Und durch diese Lektionen wird eine scharfe Klinge geschmiedet."
+      },
+      {
+        "title": "Operator-Beförderung 1",
+        "text": "Beförderung …? Das heißt, ich habe deine Zustimmung? Dann … freue ich mich über die Zustimmung."
+      },
+      {
+        "title": "Operator-Beförderung 2",
+        "text": "Ehre gibt es nicht ohne Pflicht. All dies dient als Erinnerung daran, mehr Leuten zu helfen."
+      },
+      {
+        "title": "Operator-Beförderung 3",
+        "text": "Die Natur lehrt uns nicht das Überleben. Sie hinterlässt uns lediglich einen Pfad. Früher habe ich mein Bestes getan, mich anzupassen … Jetzt … fange ich an zu verstehen, wie dies alles funktioniert."
+      },
+      {
+        "title": "Operator-Beförderung 4",
+        "text": "Ich habe auf meinen Reisen mit dir viel gelernt. Ich fange an zu verstehen, warum mich die Hanna-Verse hierher an deine Seite geführt haben. Ich werde das Wissen gut nutzen."
+      },
+      {
+        "title": "Operator meldet sich zum Dienst",
+        "text": "Ich bin Ekut. Mein Rufzeichen ist Arclight. Ich bin keine geübte Wortweberin, aber ich wünsche euch alles Gute – möget ihr wie ein ansteigender Fluss fließen, Endfielder."
+      },
+      {
+        "title": "Warten 1",
+        "text": "Der Weg vor mir wurde offenbart."
+      },
+      {
+        "title": "Warten 2",
+        "text": "Ich bin auf optimale Leistung vorbereitet."
+      },
+      {
+        "title": "Zuweisung zur Anlage",
+        "text": "Bin dabei. Wir Liedsucher ruhen nie."
+      },
+      {
+        "title": "Gruß 1",
+        "text": "Woher wehen die Winde heute, Endmin?"
+      },
+      {
+        "title": "Gruß 2",
+        "text": "Kommst du von einer Reise an die Oberfläche zurück, Endmin? Du riechst nach Wildnis."
+      },
+      {
+        "title": "Dijiang-Geplauder 1",
+        "text": "Die Reparatur eines eisernen Rosses ist wie die Behandlung eines Zystbiests. Man muss genau zuhören, bevor man die Behandlung durchführt."
+      },
+      {
+        "title": "Dijiang-Geplauder 2",
+        "text": "Die Sterne hier unterscheiden sich von denen, die wir in der Wildnis sehen … Aber beide Anblicke sind gleichermaßen faszinierend."
+      },
+      {
+        "title": "Dijiang-Geplauder 3",
+        "text": "Ich beobachte diese Wolken. Ihre scharfen Kanten kündigen einen Sturm an. Sei vorsichtig, wenn dich deine nächste Mission nach dort unten führt."
+      },
+      {
+        "title": "Dijiang-Geplauder 4",
+        "text": "Dein Haar ist bezaubernd, wie ein vom Tau der Morgendämmerung benetztes Tierfell. Du hast es noch nie gesehen? Na, es ist einfach wunderschön."
+      },
+      {
+        "title": "Dijiang-Geplauder 5",
+        "text": "Hast du schon mal die Präriewanderungen gesehen? Eine Armee aus Tieren und Wagen, die Regen und Wolken hinterherjagen. Das sind die Dinge, die ich beschützen möchte."
+      },
+      {
+        "title": "Dijiang-Geplauder 6",
+        "text": "Man verliert sich oft im Anblick dieser Welt. Ich glaube, ich weiß, wie es dir geht. Unser Herz sehnt sich immer nach Orten, die uns am Herzen liegen – egal, wie weit sie entfernt sind."
+      },
+      {
+        "title": "Geschenke anbieten",
+        "text": "Ich habe dir etwas mitgebracht. Ein Geschenk aus der Wildnis. Hoffentlich gefällt es dir."
+      },
+      {
+        "title": "Geschenke annehmen",
+        "text": "Für mich? In der Wildnis sind Geschenke wichtig … Ich werde es in Ehren halten."
+      },
+      {
+        "title": "Vertrauensgespräch 1",
+        "text": "Du solltest die Grundlagen des Überlebens in der Wildnis erlernen, Endmin. Das Herstellen von Langohrfallen ist ein guter Anfang. Das kann ich dir beibringen."
+      },
+      {
+        "title": "Vertrauensgespräch 2",
+        "text": "Das Leben in der Wildnis ist hart, aber auch schön. Wie der klare Himmel am Ende eines langen Monsuns, wie eine brütende Vogelbestie unter dem Mond."
+      },
+      {
+        "title": "Vertrauensgespräch 3",
+        "text": "Es ist kein Geheimnis, dass alte Geräte besser funktionieren, wenn sie miteinander kombiniert werden. Spanne zwei fremde Monsterbestien vor einen Wagen und gib ihnen Zeit. Sie werden schließlich zu einem guten Team."
+      },
+      {
+        "title": "Vertrauensgespräch 4",
+        "text": "Ich begann meine Wanderung auf der Suche nach Antworten. Die Wildnis ist aus dem Gleichgewicht geraten, und ich muss etwas unternehmen. Ich lauschte dem Plätschern der Seen und dem Flüstern der Wälder. Und jetzt möchte ich deine Stimme hören."
+      },
+      {
+        "title": "Vertrauensgespräch 5",
+        "text": "Ich werde diese Geschichten in die Hanna unserer Reise einflechten. Das wird einige Zeit dauern, denn zu viele Dinge sind eines Liedes würdig. Sobald die Hanna fertig ist, wirst du sie zuerst hören."
+      },
+      {
+        "title": "Geplauder 1",
+        "text": "Wer leben will, wird sich Gehör verschaffen. Und die wandernden Liedsucher werden immer hören. Das ist der Zweck des Hannabit-Zirkels."
+      },
+      {
+        "title": "Geplauder 2",
+        "text": "Mit den Wildling-Stämmen befreundet zu sein, ist einfach. Wir konzentrieren uns auf das Wesentliche: das Wetter, die Nahrung und die Gefahren. Allein diese Dinge nehmen einen Großteil unserer Zeit in Anspruch."
+      },
+      {
+        "title": "Geplauder 3",
+        "text": "Alle Liedsucher des Hannabit-Zirkels kennen die Hannas auswendig. Sie sind nicht schwer. Die Verse decken jeden Aspekt unseres Lebens ab. Ebenso sind wir in die Verse verwoben."
+      },
+      {
+        "title": "Geplauder 4",
+        "text": "Mein Aldertone hat mir von Terra und Städten erzählt, die sich bewegen, um Katastrophen zu vermeiden. Es scheint, als hätten wir unsere alten Methoden geerbt, nur in anderer Form."
+      },
+      {
+        "title": "Geplauder 5",
+        "text": "Auf manchen Wildnisbasaren kann man gebrauchte Waren tauschen, aber man muss Geduld haben, um ein gutes Angebot zu finden. Ich habe ein altes Kjersch-Gerät für meinen Kommunikator modifiziert. Dort werden Dinge hergestellt, die auch unter extremen Bedingungen zuverlässig funktionieren."
+      },
+      {
+        "title": "Thema: Städte",
+        "text": "Talos-II ist größer als gedacht. Früher glaubte ich, jede Stadt sei nur eine Ansammlung von Stahl, Straßen und Lichtern. Doch als ich sie tatsächlich besuchte, erkannte ich, dass jede Stadt ihren eigenen Puls und ihre eigene Atmosphäre hat. Die Unterschiede sind deutlicher als bei zwei Weiden mit unterschiedlichem Gras."
+      },
+      {
+        "title": "Thema: Der Endministrator",
+        "text": "Ich bin viel herumgekommen, und selbst die entlegensten Stämme erzählen Geschichten über dich. So unterschiedlich diese Geschichten auch sein mögen, eines bleibt immer gleich: Mit deinem Namen ist stets Hoffnung verbunden."
+      },
+      {
+        "title": "Thema: Hanna-Lieder",
+        "text": "Ein sterbender Nomade sang unsere allererste Hanna, die nur aus drei Zeilen bestand. Diese Verse gaben dem Hannabit-Zirkel ihren Namen. Und vom ersten Aldertone an führte die Hanna die wandernden Liedsucher an, bis auch sie Teil des Liedes wurden."
+      },
+      {
+        "title": "Thema: Aldertones",
+        "text": "Die Aldertones sprechen nur selten direkt. Orisha sagte, die Hanna beinhalte alles Wissen, das wir brauchen. Sie lehrte mich durch ihre Taten. Wir müssen einander helfen, um in dieser Welt zu überleben."
+      },
+      {
+        "title": "Thema: Ihr Stamm",
+        "text": "Ich bin in einem kleinen Stamm mit nicht mehr als hundert Seelen aufgewachsen. Das war alles, was ich kannte, bevor ich meine Reise antrat. Ich lernte, die Zystbiester zu melken, mein eisernes Ross zu reiten und in der Wildnis zu überleben. Ich habe den Ort nie verlassen. Ich habe ihn einfach mitgenommen."
+      },
+      {
+        "title": "Ressource/Sammelobjekt entdeckt 1",
+        "text": "Wenn es beim Überleben hilft, greif zu."
+      },
+      {
+        "title": "Ressource/Sammelobjekt entdeckt 2",
+        "text": "Das wird meinen Aldertone interessieren."
+      },
+      {
+        "title": "Unerforschter Bereich entdeckt",
+        "text": "Weiter so. Wir müssen näher ran."
+      },
+      {
+        "title": "Starker Gegner entdeckt",
+        "text": "Ich spüre eine Gefahr. Das wird nicht einfach."
+      },
+      {
+        "title": "Abbau 1",
+        "text": "Die Gaben des Landes."
+      },
+      {
+        "title": "Abbau 2",
+        "text": "Ich übernehme das. Mit körperlicher Arbeit kenne ich mich aus."
+      },
+      {
+        "title": "Kiste öffnen",
+        "text": "Eine Seltenheit in der Wildnis. Das wird uns von Nutzen sein."
+      },
+      {
+        "title": "Aurylen erhalten",
+        "text": "Wir füllen sie normalerweise in eine Flasche, um Licht zu spenden."
+      },
+      {
+        "title": "Eliminierung der Verderbnis",
+        "text": "Wir sollten der Natur ihren Lauf lassen."
+      },
+      {
+        "title": "Ausruhen",
+        "text": "Das erinnert mich an Lagerfeuer in der Wildnis. Beide scheinen dieselbe Wärme zu spenden."
+      },
+      {
+        "title": "Taktische Nutzung 1",
+        "text": "Atme ruhig."
+      },
+      {
+        "title": "Taktische Nutzung 2",
+        "text": "Meine Stärke kehrt zurück."
+      },
+      {
+        "title": "Gefahrenwarnung",
+        "text": "Bleib nicht stehen. Geh weiter."
+      },
+      {
+        "title": "Verletzt",
+        "text": "Bin noch im Kampf, nur etwas langsamer."
+      },
+      {
+        "title": "0 LP",
+        "text": "Tut mir leid … Ich hätte dir gerne mehr geholfen …"
+      },
+      {
+        "title": "Teammotivation 1",
+        "text": "Deine Reflexe sind blitzschnell!"
+      },
+      {
+        "title": "Teammotivation 2",
+        "text": "Wie der Wind und der Donner haben wir ihnen einen Sturm gegeben."
+      },
+      {
+        "title": "Motivationsreaktion 1",
+        "text": "Genau das wird von mir erwartet."
+      },
+      {
+        "title": "Motivationsreaktion 2",
+        "text": "Ich bin nur ein Teil des Teams."
+      },
+      {
+        "title": "Kampf beginnt 1",
+        "text": "Ich bin im Fluss."
+      },
+      {
+        "title": "Kampf beginnt 2",
+        "text": "Diese Seite überlasse ich dir."
+      },
+      {
+        "title": "Kampfsieg 1",
+        "text": "Jetzt werden sie ewige Ruhe finden."
+      },
+      {
+        "title": "Kampfsieg 2",
+        "text": "Ich bete, dass das Land euch alle aufnimmt."
+      },
+      {
+        "title": "Kampfsieg 3",
+        "text": "Das ist der Wille der Natur."
+      },
+      {
+        "title": "Kampfsieg 4",
+        "text": "Jedes Lebewesen in der Wildnis muss Härte ertragen, um zu wachsen."
+      },
+      {
+        "title": "Niederlage im Kampf",
+        "text": "Selbst dem erfahrensten Reißbiestrudel gelingt es manchmal nicht, seine Beute zu erlegen. Immerhin haben wir aus dieser Jagd etwas gelernt."
+      },
+      {
+        "title": "Abschlussangriff 1",
+        "text": "Bruch!"
+      },
+      {
+        "title": "Abschlussangriff 2",
+        "text": "Zersplittere!"
+      },
+      {
+        "title": "Kampffertigkeit 1",
+        "text": "Wütender Wind!"
+      },
+      {
+        "title": "Kampffertigkeit 2",
+        "text": "Donnergrollen!"
+      },
+      {
+        "title": "Kampffertigkeit 3",
+        "text": "Lichtbogenblitz!"
+      },
+      {
+        "title": "Kombofertigkeit bereit 1",
+        "text": "Dieser Wind ist perfekt!"
+      },
+      {
+        "title": "Kombofertigkeit bereit 2",
+        "text": "Den Rest kann ich fertigmachen."
+      },
+      {
+        "title": "Kombo wirken 1",
+        "text": "Das ist der optimale Weg."
+      },
+      {
+        "title": "Kombo wirken 2",
+        "text": "Ich sehe eine Lücke!"
+      },
+      {
+        "title": "Wuchtschlag 1",
+        "text": "Es ist vorbei."
+      },
+      {
+        "title": "Wuchtschlag 2",
+        "text": "Das ist die Gelegenheit."
+      },
+      {
+        "title": "Ultimative Fertigkeit 1",
+        "text": "Dem kannst du nicht entkommen."
+      },
+      {
+        "title": "Ultimative Fertigkeit 2",
+        "text": "Der Sturm zerstört alles."
+      },
+      {
+        "title": "Ultimative Fertigkeit 3",
+        "text": "Wie ein Blitz aus heiterem Himmel."
+      }
+    ]
   },
   "potentials": {
     "potential1": {

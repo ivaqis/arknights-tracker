@@ -133,7 +133,333 @@
         "name": "Stile di vita",
         "description": "Stile di vita: vacanze\nI dolci sono una bontà; i letti morbidi sono fantastici; viaggiare è molto piacevole. Meglio concentrarsi sul futuro che essere ossessionati dal passato."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Preparazione all'operazione 1",
+        "text": "Detesto i guai, ma odio la noia ancora di più."
+      },
+      {
+        "title": "Preparazione all'operazione 2",
+        "text": "Qualunque cosa succeda, spero sia memorabile."
+      },
+      {
+        "title": "Aggiunta alla squadra 1",
+        "text": "Posso farcela. Da sola."
+      },
+      {
+        "title": "Aggiunta alla squadra 2",
+        "text": "Io sono la lama. Io sono il fuoco."
+      },
+      {
+        "title": "Cambio arma",
+        "text": "Bella spada. Spero regga l'ardore delle mie fiamme."
+      },
+      {
+        "title": "Cambio equipaggiamento",
+        "text": "Il peso non mi rallenterà negli attacchi. Rivestimento ignifugo? Ma per favore..."
+      },
+      {
+        "title": "Attivazione matrice delle abilità",
+        "text": "Allora, che ne dici del mio vero potere?"
+      },
+      {
+        "title": "Visione delle registrazioni di combattimenti",
+        "text": "Mmh, molto utile."
+      },
+      {
+        "title": "Promozione operatore 1",
+        "text": "E questo cosa dovrebbe essere, un incoraggiamento? Un segno di approvazione? Non me ne faccio niente. Ho solo ridotto in cenere un mucchio di insettoni."
+      },
+      {
+        "title": "Promozione operatore 2",
+        "text": "Ora che sono stata promossa, il mio livello di autorità dovrebbe garantirmi un colloquio di valutazione annuale privato, giusto? Bene. Andiamo a fare una passeggiata, mi serve un po' d'aria."
+      },
+      {
+        "title": "Promozione operatore 3",
+        "text": "Di già? Non mi servono riconoscimenti per aver fatto bene il mio lavoro. Se proprio insisti, lo considererò un simbolo e una testimonianza... di tutti i ricordi che abbiamo creato insieme."
+      },
+      {
+        "title": "Promozione operatore 4",
+        "text": "Voi Endfielder sembrate dipendere da me sempre di più... Suppongo di non avere altra scelta se non accettare quest'onore. Rivolgiti pure a me come \"operatrice Endfield Laevatain\"... Ehi! Perché quella faccia?"
+      },
+      {
+        "title": "Operatore a rapporto",
+        "text": "Non ci conosciamo già? Pfft, non ha importanza. Ti ricorderai di me grazie a questa spada e alle mie fiamme."
+      },
+      {
+        "title": "Attesa 1",
+        "text": "Detesto i capi che stanno sempre a controllarmi... Per fortuna tu non sei così."
+      },
+      {
+        "title": "Attesa 2",
+        "text": "Cercavi me? Ti è tornata la memoria?"
+      },
+      {
+        "title": "Assegnazione a una struttura",
+        "text": "Mmh, sembra un ottimo posto dove sprecare il mio tempo..."
+      },
+      {
+        "title": "Saluto 1",
+        "text": "Ah, eccoti."
+      },
+      {
+        "title": "Saluto 2",
+        "text": "Sei tu... Oh, non ti stavo aspettando."
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 1",
+        "text": "Perché te ne stai qui a far niente? Dai, vieni sul ponte, così mi racconti di tutti i luoghi che hai visto e di quelli che vuoi vedere in futuro."
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 2",
+        "text": "Mmh... Voglio ringraziare sentitamente la Divisione logistica per il buffet di gelato all-you-can-eat. Vuoi che te ne prenda un po'?"
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 3",
+        "text": "Ho una missione. Vuoi venire? No, niente tele-protocollo. Io preferisco le capsule di atterraggio. Farò il mio ingresso con un fragoroso boato incandescente, proprio sopra le loro teste."
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 4",
+        "text": "Hai freddo? Ho chiesto io di abbassare il termostato, dato che l'idiota che ha costruito questa nave si è scordato di prevedere uno spazio dove prendere una boccata di aria fresca. Avvicinati un po' a me, se hai troppo freddo."
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 5",
+        "text": "Quando non ho altro da fare, mi godo la vista mangiando un gelato. Potrei stare lì così tutto il giorno. La mia mente trabocca di frammenti di ricordi infranti, eppure nessuno di essi contiene una finestra sul mondo, né notti stellate viste da questa prospettiva."
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 6",
+        "text": "Cerchi ancora di dare un senso ai ricordi? Pfft. Se ormai sono andati, allora non c'è niente da fare. Ricorda solo quel che succederà da adesso in poi."
+      },
+      {
+        "title": "Offerta regali",
+        "text": "Ecco, prendi. Grazie per quello che fai per me. Eh? Dici che riuscire a ricordare qualcuno a cui tieni è già un regalo sufficiente? Pfft..."
+      },
+      {
+        "title": "Accettazione regali",
+        "text": "Mmh, di solito non amo ricevere regali, perché finisco sempre per dimenticarmene. Ma questo me l'hai dato tu... perciò farò un'eccezione."
+      },
+      {
+        "title": "Dialogo fiducia 1",
+        "text": "Il nome Laevatain? Sì, l'ho scelto io. L'idea me l'ha data la spada. C'è chi non lo accetta? Umpf, ho domato quest'affare e ora il suo nome mi appartiene. E per i ricordi è lo stesso. Sono io a controllarli, non il contrario."
+      },
+      {
+        "title": "Dialogo fiducia 2",
+        "text": "La mia mente è ancora colma di ricordi frammentati. Non è che siano spariti, ho solo scelto di non soffermarmici. Forse, quando avrò finito di occuparmi di queste faccende triviali, seguirò quei ricordi e comincerò un nuovo percorso."
+      },
+      {
+        "title": "Dialogo fiducia 3",
+        "text": "Surtr... La rabbia, il senso di perdita e la confusione che le appartenevano... continuano a vivere nei miei ricordi. Sembrano così reali e incancellabili. Eppure, quando ripenso alla decisione che alla fine ha preso per sé, trovo un po' di sollievo."
+      },
+      {
+        "title": "Dialogo fiducia 4",
+        "text": "I doveri dei veicolanti? Non me ne importa un fico secco. Probabilmente è qualcosa che hanno ficcato a forza nei miei ricordi. Ho accettato di combattere al tuo fianco solo per via delle persone che ho incontrato, delle strade che ho percorso, dei ponti su cui mi sono appisolata e dei Fenditerra che ho annientato... Per via dei ricordi che sono davvero miei, che mi sono creata qui."
+      },
+      {
+        "title": "Dialogo fiducia 5",
+        "text": "C'è stato un tempo in cui non capivo perché tu non riuscissi a lasciar perdere il passato. Poi, quando sono arrivata alla Endfield, ho capito. Tu sei l'Endministrator e su di te ricadono le aspettative di tutti, che vedono in te la persona che li salverà. Però nessuno dovrebbe permettere che la propria immagine venga plasmata dalle illusioni altrui. Ecco perché devi usare i tuoi ricordi per riscoprire il tuo vero io. Se avrai bisogno di una compagna in quest'avventura, chiamami. Non m'importa dove andrai."
+      },
+      {
+        "title": "Chiacchierata 1",
+        "text": "Il mio anello spezzato? Vedilo come un animaletto, come un'unità delle Arti. Gli ingegneri dell'arsenale della Endfield hanno provato a capire come funziona. Hanno anche tentato di ripararlo... ma l'anello si è ribellato e la cosa è finita lì."
+      },
+      {
+        "title": "Chiacchierata 2",
+        "text": "Ah, sei qui? Vieni a vedere una cosa. Warfarin mi ha mandato un puzzle. Ha detto che ritrae i paesaggi, i popoli e le storie di Terra... ed è enorme. Ci ho passato ore e ore e non ho ancora finito... Ehi, smettila di fissare i bordi strappati. E sappi che non c'entro niente neanche con i punti bruciati. È arrivato così."
+      },
+      {
+        "title": "Chiacchierata 3",
+        "text": "Quando sono in missione su Talos-II, di notte sogno sempre la Dijiang e le persone e le storie della Endfield. Aspetto pazientemente che la mia mente dimentichi tutti i frammenti di un passato che non mi appartiene, quindi riempio i vuoti con i ricordi che mi sono creata."
+      },
+      {
+        "title": "Chiacchierata 4",
+        "text": "Perché combatto? Perché verrà il giorno in cui sarò sulla cima di una montagna e poserò lo sguardo su un mondo consumato dalle fiamme... Perché mi guardi così? Descrivevo solamente un incubo che mi tormenta da tempo. Non temere, non lascerò che quella visione si realizzi, non importa dove o quando."
+      },
+      {
+        "title": "Chiacchierata 5",
+        "text": "Mi capita di vedere rifugiati che vagano per le terre selvagge e carnefici che devastano intere città. Un momento sono lì a potare le piante in giardino e quello dopo soffoco in laboratorio a causa di qualche sostanza chimica. Mi batto con figure indistinte di cui non riesco a vedere i volti, senza mai sapere perché combattono... Dai, non ti addormentare. Ho appena cominciato."
+      },
+      {
+        "title": "Argomento: Seš'qa",
+        "text": "Casa mia? Sono stata in un posto chiamato Seš'qa. Gli edifici, la lingua, le feste e le stregonerie mi sembravano... abbastanza familiari da poterlo chiamare \"casa\", ma non ci andrò più senza un motivo valido. La gente lì è troppo calorosa e zelante. Alcuni mi hanno definita un Diαblo... Uff. Diciamo solo che mi hanno fatta innervosire e ho combinato un guaio... Uno piccolino..."
+      },
+      {
+        "title": "Argomento: Yvonne",
+        "text": "Quella Vouivre dai capelli rosa mi chiede spesso di testare su di me il suo Gelobyte. Non è mai riuscita a spegnere le mie fiamme, ma... sa fare un gelato dall'aspetto davvero magnifico, ed è anche piuttosto buono."
+      },
+      {
+        "title": "Argomento: Circuito Hannabit",
+        "text": "Una volta, una Cercatrice dei canti del Circuito Hannabit mi disse: \"Il fuoco è un nemico nelle mani del vento, ma un alleato in quelle dell'umanità\". La Cercatrice non aveva paura del fuoco, anzi, mi insegnò a creare delle piste tagliafuoco che arrivavano dall'altra parte delle terre selvagge. Riuscii a contenere un incendio boschivo che si stava espandendo. I sopravvissuti al disastro ci definirono eroine, ma io continuavo a pensare alla nuvolfiera che avevamo salvato. La lasciai a lei. Che peccato."
+      },
+      {
+        "title": "Argomento: CCGT",
+        "text": "Ho bisogno di un favore. Le risorse umane mi hanno detto di rivolgermi direttamente a te. Ecco qua, è un poster da ricercata. Non è niente di grave. È successo quando avevo appena lasciato la Rhodes Island. Mi hanno accusata di diversi incendi dolosi in un luogo chiamato il Rondò d'asfalto. La colpa è solamente loro. È normale che scoppi un incendio nei posti loschi e disseminati di immondizia infiammabile."
+      },
+      {
+        "title": "Argomento: Sami",
+        "text": "Lo ripeto, non sono mai stata su Terra. Non di persona. Quindi non venire a parlarmi dei panorami, delle persone o della cultura di quel luogo... A meno che, ovviamente, tu non ti riferisca a Sami. Ho sentito dire che la loro stessa \"casa\" li ha portati su Talos-II. Se mai ci sarà una missione laggiù, chiamami."
+      },
+      {
+        "title": "Individuazione risorsa/collezionabile 1",
+        "text": "Ho visto qualcosa. Se si rivela inutile, possiamo usarlo per mettere alla prova le nostre lame."
+      },
+      {
+        "title": "Individuazione risorsa/collezionabile 2",
+        "text": "Lì c'è qualcosa che vale la pena di ricordare."
+      },
+      {
+        "title": "Individuazione zona non esplorata",
+        "text": "Andiamo a dare un'occhiata. Non avere paura, resta dietro di me."
+      },
+      {
+        "title": "Individuazione nemico potente",
+        "text": "Hai visto? Vuoi che me ne occupi io?"
+      },
+      {
+        "title": "Estrazione 1",
+        "text": "Solo le pietre più preziose sopravvivono al fuoco."
+      },
+      {
+        "title": "Estrazione 2",
+        "text": "Che lentezza. Odio starmene con le mani in mano."
+      },
+      {
+        "title": "Apertura di una cassa",
+        "text": "Ricordo che queste cose ti piacciono."
+      },
+      {
+        "title": "Acquisizione di Aurylene",
+        "text": "Aurylene... Inaffidabile quanto i miei ricordi."
+      },
+      {
+        "title": "Eliminazione Contaminazione",
+        "text": "Attenzione! La Contaminazione è molto più pericolosa del fuoco."
+      },
+      {
+        "title": "Riposo",
+        "text": "Avvicinati a me, se hai ancora freddo."
+      },
+      {
+        "title": "Utilizzo di gadget 1",
+        "text": "Dai, risparmiami la sceneggiata."
+      },
+      {
+        "title": "Utilizzo di gadget 2",
+        "text": "Umpf. Ora va meglio."
+      },
+      {
+        "title": "Avviso di pericolo",
+        "text": "Non startene lì, spostati!"
+      },
+      {
+        "title": "Ferita",
+        "text": "Tsk... Non basta questo a uccidermi."
+      },
+      {
+        "title": "Esaurimento PS",
+        "text": "Al diavolo questo... ricordo di una sconfitta..."
+      },
+      {
+        "title": "Incoraggiamento alla squadra 1",
+        "text": "Beh, me ne ricorderò!"
+      },
+      {
+        "title": "Incoraggiamento alla squadra 2",
+        "text": "Non male. Al prossimo ci penso io."
+      },
+      {
+        "title": "Risposta all'incoraggiamento 1",
+        "text": "Lo so."
+      },
+      {
+        "title": "Risposta all'incoraggiamento 2",
+        "text": "Faccio solo il mio lavoro."
+      },
+      {
+        "title": "Inizio combattimento 1",
+        "text": "Ora comincia il vero dolore."
+      },
+      {
+        "title": "Inizio combattimento 2",
+        "text": "Era ora."
+      },
+      {
+        "title": "Vittoria in combattimento 1",
+        "text": "Neanche il tempo di riscaldarsi."
+      },
+      {
+        "title": "Vittoria in combattimento 2",
+        "text": "Non c'era dubbio sulla vittoria."
+      },
+      {
+        "title": "Vittoria in combattimento 3",
+        "text": "Va bene, festeggiamo."
+      },
+      {
+        "title": "Vittoria in combattimento 4",
+        "text": "Non male! Ma la prossima volta, la parte tosta la gestisco io."
+      },
+      {
+        "title": "Sconfitta in combattimento",
+        "text": "Non permetterò che accada di nuovo."
+      },
+      {
+        "title": "Colpo finale 1",
+        "text": "Fendente!"
+      },
+      {
+        "title": "Colpo finale 2",
+        "text": "Muori!"
+      },
+      {
+        "title": "Abilità di combattimento 1",
+        "text": "Fiamma incandescente!"
+      },
+      {
+        "title": "Abilità di combattimento 2",
+        "text": "Incenerimento!"
+      },
+      {
+        "title": "Abilità di combattimento 3",
+        "text": "Che il fuoco ti consumi!"
+      },
+      {
+        "title": "Abilità combo pronta 1",
+        "text": "Ci penso io!"
+      },
+      {
+        "title": "Abilità combo pronta 2",
+        "text": "Arriva un inferno di fiamme!"
+      },
+      {
+        "title": "Esecuzione combo 1",
+        "text": "Brucia!"
+      },
+      {
+        "title": "Esecuzione combo 2",
+        "text": "Ti ridurrò in cenere!"
+      },
+      {
+        "title": "Mossa letale 1",
+        "text": "Non c'è via di scampo!"
+      },
+      {
+        "title": "Mossa letale 2",
+        "text": "Per te è finita!"
+      },
+      {
+        "title": "Abilità suprema 1",
+        "text": "Che il crepuscolo divampi!"
+      },
+      {
+        "title": "Abilità suprema 2",
+        "text": "Oscurità, alle fiamme!"
+      },
+      {
+        "title": "Abilità suprema 3",
+        "text": "La tua fine è vicina!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

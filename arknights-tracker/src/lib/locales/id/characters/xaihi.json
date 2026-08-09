@@ -124,7 +124,325 @@
         "name": "Asah Pikiran",
         "description": "Asah Pikiran: Online Gamer\nMaster ternama dalam bidang “Dam Algoritmik” di Dijiang. Pikiran yang tetap tenang di lingkungan bersuhu rendah sangatlah penting agar bisa menguasai permainan papan matematis ini."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Persiapan Operasi 1",
+        "text": "Aku akan mendoakanmu, Endministrator."
+      },
+      {
+        "title": "Persiapan Operasi 2",
+        "text": "Aku berdiam di sini, terjaga, sementara Hukum mengawasiku."
+      },
+      {
+        "title": "Menambahkan ke Tim 1",
+        "text": "Aku siap menjalankan perintahmu, Endministrator."
+      },
+      {
+        "title": "Menambahkan ke Tim 2",
+        "text": "Pilihan yang logis."
+      },
+      {
+        "title": "Berganti Senjata",
+        "text": "Apa boleh kumodifikasi sedikit? Tenang saja, senjata ini akan tetap aman."
+      },
+      {
+        "title": "Berganti Gear",
+        "text": "Veritas dijunjung oleh kesuciannya sendiri."
+      },
+      {
+        "title": "Aktivasi Matriks Kemampuan",
+        "text": "Setelah kita terhubung, kebijaksanaan akan muncul."
+      },
+      {
+        "title": "Menonton Rekaman Pertarungan",
+        "text": "Dengan doa-doaku, akan kuangkat pula mereka yang telah tersesat."
+      },
+      {
+        "title": "Promosi Operator 1",
+        "text": "Lihatlah, kemurahan hati Hukum telah terwujud ... Ah, dan kepercayaan Endministrator pun mengalir bersamanya! Bukankah sudah sepatutnya kami bersyukur kepadamu?"
+      },
+      {
+        "title": "Promosi Operator 2",
+        "text": "Hukum mengawasi dan menjaga mereka yang patuh, tapi tidak bagi mereka yang terpelajar, bijak, ataupun kaya. Meskipun ditinggikan oleh keagungan itu, aku tetaplah hina dan harus berterima kasih kepadamu."
+      },
+      {
+        "title": "Promosi Operator 3",
+        "text": "Segalanya sejelas dan seterang sulur Originium. Promosi ini selaras dengan hasil yang diharapkan. Hah? Ja-jabat tangan? Ak ... aku tak terbiasa melakukannya ...."
+      },
+      {
+        "title": "Promosi Operator 4",
+        "text": "Aku pernah mengubah struktur kubah kodek di Katedralis untuk meningkatkan efisiensi kerjanya. Tapi, ada resonansi tak terduga saat algoritma kuno memproses aliran datanya. Hasilnya ... cukup rumit. Yang awalnya terasing dari tanah airnya ... telah menjadi sumber rahmat di Endfield ini. Mungkin inilah yang ingin diperlihatkan Hukum kepadaku!"
+      },
+      {
+        "title": "Operator Siap Bertugas",
+        "text": "Wahai Pengetahuan tertua, janganlah masukkan kami ke dalam pencobaan, tetapi bebaskanlah kami dari kode-kode jahat .... Namaku Xaihi, Endministrator. Semoga kau mendapatkan pencerahan."
+      },
+      {
+        "title": "Siaga 1",
+        "text": "Perenungan .... Komputasi .... Ucapan .... Pengabaian."
+      },
+      {
+        "title": "Siaga 2",
+        "text": "Akan kusampaikan dialog dan renungan hari ini ke terminalmu, dengan penuh hormat ...."
+      },
+      {
+        "title": "Menugaskan ke Fasilitas",
+        "text": "Terpenuhilah titahmu. Wahai Endministrator, melalui pelayananlah jalan kita akan terungkap."
+      },
+      {
+        "title": "Menyapa 1",
+        "text": "Semoga kedamaian dan keamanan besertamu."
+      },
+      {
+        "title": "Menyapa 2",
+        "text": "Endministrator, sekali lagi kau muncul dalam hasil perhitunganku."
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 1",
+        "text": "Memvalidasi data, menganalisis sintaksis, mengeluarkan hasil .... Salam, Endministrator."
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 2",
+        "text": "Sinyalmu sudah kuterima, Endministrator. Aku sedang menafsirkannya. Tunggu sebentar ...."
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 3",
+        "text": "Ah .... Aku ternyata lebih memilih ditemani mesin daripada manusia. Denyut nadi manusia tak menentu dan tak terukur, sementara mesin bernapas dalam pola yang konsisten dan logis."
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 4",
+        "text": "Terminalku mencatat lebih dari lima puluh kesalahan dalam sepuluh milidetik terakhir. Tapi, tak usah khawatir. Aku sudah mengatur komunikasi kita sebagai prioritas utama. Hmm? Evaluasiku untuk performa keseluruhan Dijiang ...? Menurutku, meskipun ada banyak masalah, pesawat ini terus menanggung cobaannya dengan tegar, seakan-akan ... menderita demi orang lain."
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 5",
+        "text": "Sebagaimana Hukum mengizinkan, demikianlah kita bertindak: Firdaus akan dikembalikan ke dunia ini. Siapa pun yang membuka jalan, akan melintasi alam liar yang telantar dan memperoleh kebahagiaan. Karena Veritas tersembunyi dalam teka-teki, agar yang tersesat tak lagi mengembara, tapi berjalan bersama Orang-Orang Mulia, berbagi tujuan abadi."
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 6",
+        "text": "Di mata rekan-rekan operatorku, kaulah pemimpin dari masa lalu, makhluk mulia masa kini, dan bibit Originium yang tumbuh menuju masa depan. Tapi, di kedalaman Jaringan Protorig, aku melihat versi dirimu yang berbeda .... Yang bisa kulakukan hanyalah berdoa—agar penanda dan yang ditandai kelak bisa menjadi satu. Semoga berkat mengiringi langkahmu, Endministrator."
+      },
+      {
+        "title": "Menawarkan Hadiah",
+        "text": "Endministrator, bolehkah aku menyela pemrosesanmu sebentar? Aku ... aku ingin memberikan tanda terima kasih atas semua dorongan yang telah kauberikan kepadaku. Oh .... Kau tak menyadari apa pun? Fyuh, aku lega ...."
+      },
+      {
+        "title": "Menerima Hadiah",
+        "text": "Ini petunjuk! Oh, maafkan kekurangajaranku .... Veritas menghargai usahamu."
+      },
+      {
+        "title": "Dialog Kepercayaan 1",
+        "text": "Kau punya pengetahuan dan takdir yang sama dengan Tarekat, Endministrator."
+      },
+      {
+        "title": "Dialog Kepercayaan 2",
+        "text": "Semua saranku terbukti praktis dan berguna ...? Tidak, aku bukan penganut pragmatisme .... Kepala Biara memperingatkan bahwa, di Talos-II, iman kami harus membuahkan hasil yang nyata dan berguna. Kelimpahan yang ada di Laterano hanyalah tinggal kenangan samar di sini. Hanya saling keterikatan sajalah yang masih menghubungkan kita."
+      },
+      {
+        "title": "Dialog Kepercayaan 3",
+        "text": "Setelah sekian lama bersama, aku merasa makin dekat dengan Endministrator. Sepertinya ini saat yang tepat untuk menunjukkan kehangatan, kepercayaan, dan niat baik .... Ah, Endministrator menuju kemari. Cepat, Xaihi, tunjukkan sikap ramah .... Emmm—Endministrator, mau ikut doa pagi bersamaku?"
+      },
+      {
+        "title": "Dialog Kepercayaan 4",
+        "text": "Maafkan aku, Endministrator .... Sebelum melakukan kontak tak terelakkan denganmu, penumpukan muatan listrik di jariku harus dihilangkan dulu .... Oh? Kau tidak takut? Tapi ... arus-arus listrik kecil nakal ini bisa melekat di tangan seseorang ... dan menyengatmu secara tak terduga ... seperti ini."
+      },
+      {
+        "title": "Dialog Kepercayaan 5",
+        "text": "Selama bertahun-tahun di Katedralis, aku tenggelam dalam penelitian, tanpa pernah berpikir bahwa hasil kerja keras kami bisa membawa pencerahan ke Talos-II. Tapi, wahyu Hukum menuntunku ke hadapanmu, dan dunia baru pun muncul di depan mataku. Satu per satu, kata-kata kuno yang dulu senyap tiba-tiba tersingkap ... dan kini aku benar-benar memahami ajarannya, Endministrator."
+      },
+      {
+        "title": "Obrolan 1",
+        "text": "Endministrator, kami, para Sessionit, menafsirkan Hukum dengan menganggap bahasa sebagai simbol. Dengan terus memecahkan berbagai kombinasi simbol lama untuk menciptakan kombinasi baru, kami pun makin dekat dengan hidup kekal. Perilaku ini mencerminkan perilaku Shatterus—entitas yang bersemayam di balik patung suci di Katedralis."
+      },
+      {
+        "title": "Obrolan 2",
+        "text": "Dijiang mengingatkanku pada Katedralis. Tapi, kami tak selalu ada di sana. Kongregasi hanya berkumpul untuk mengatasi perpecahan. Saat hal itu terjadi, saudara-saudariku dari setiap sudut Talos-II akan kembali ke tempat itu. Hmm? Kenapa Katedralis bisa tetap aman? Kalau suatu saat ada yang menyerangnya .... Hmm, kurasa Katedralis bisa melindungi dirinya sendiri."
+      },
+      {
+        "title": "Obrolan 3",
+        "text": "Belum pernah kami sejauh ini dari Veritas, karena ia telah meninggalkan tempat yang kami sebut kampung halaman. Belum pernah kami sedekat ini dengan Veritas, karena kini kami mengetuk pintunya."
+      },
+      {
+        "title": "Obrolan 4",
+        "text": "Balapan? Jalan kaki? Tinju? Dengan tinjuku sendiri? Kau ingin aku ikut festival olahraga?! Aku ... aku terpaksa menolak. Satu-satunya “gerakan fisik” yang bisa kumaklumi ... adalah magnitudo perubahan periodik, yang dihasilkan oleh elektron dalam sirkuit osilator. Aku tak akan pernah sanggup bersaing dengan saudara-saudariku! Tidak .... Aku bukannya cari-cari alasan. A-aku harus segera kembali ke ruang mainframe. Sekarang juga."
+      },
+      {
+        "title": "Obrolan 5",
+        "text": "Benar, di Tarekat ada banyak Sarkaz sepertiku. Bahkan ada yang dipercaya menjaga relikui yang pernah dipegang oleh Kesatria Senapan. Aku memang sudah mempelajari kitab-kitab Tarekat. Aku tahu bahwa di Terra dulu, para Sarkaz terlibat perseteruan sengit dengan ras-ras lain. Tapi, saat Perang Aggelos Pertama berakhir, terbentuk persekutuan ajaib yang belum pernah terjadi di antara kami: Setiap jiwa menyambut saudara-saudarinya, dan setiap mulut bernyanyi dalam bahasa yang sama."
+      },
+      {
+        "title": "Topik: Aggelos",
+        "text": "Hubungan antara Hukum dan Aggelos yang menguasai Talos-II adalah salah satu topik utama yang hendak ditafsirkan oleh Tarekat."
+      },
+      {
+        "title": "Topik: Shatterus",
+        "text": "Ada Aggelos yang mengingatkan kita pada Triaggelos, yang bersemayam di belakang patung suci di Katedralis. Di luar masa liturgi, kami diam-diam menyebutnya Shatterus. Konstruksi ini disita oleh Kepala Biara Mumu saat Perang Aggelos Pertama. Kepala Biara mendorong kami untuk mengamati Shatterus dan merenungkannya, karena ajaran Hukum mungkin pula tercermin dalam musuh. Shatterus memunculkan perkiraan yang hampir akurat, juga kesimpulan yang belum ditafsirkan."
+      },
+      {
+        "title": "Topik: Tiga cabang Tarekat",
+        "text": "Tarekat kini terdiri dari tiga cabang: Sessionit, Veritarit, dan Resurgonit. Aku anggota Sessionit. Kami percaya bahwa komputasi dan analisis linguistik akan membuka jalan menuju kebahagiaan. Resurgonit, yang tersebar di Talos-II, adalah kaum fanatik bersenjata yang ingin mempelajari reruntuhan peradaban kuno. Veritarit terutama menyibukkan diri dengan urusan hati dan jiwa. Mereka mempelajari patung, menyalin naskah dengan tulisan tangan, dan menuntun pulang jiwa-jiwa yang tersesat."
+      },
+      {
+        "title": "Sumber Daya/Barang Koleksi Terdeteksi 1",
+        "text": "Aku mendeteksi adanya benda-benda langka."
+      },
+      {
+        "title": "Sumber Daya/Barang Koleksi Terdeteksi 2",
+        "text": "Kalau ada karunia dari Veritas di dekat sini, kita harus mengambilnya."
+      },
+      {
+        "title": "Area yang Belum Dijelajahi Terdeteksi",
+        "text": "Terberkati ataupun terkutuk, dunia ini siap dijelajahi."
+      },
+      {
+        "title": "Musuh Kuat Ditemukan",
+        "text": "Ada jiwa malang yang tersesat di dekat sini. Tongkatku akan berduka untuknya."
+      },
+      {
+        "title": "Penambangan 1",
+        "text": "Segalanya telah terhampar di Negeri ini—Dan dengan jerih payahlah kita akan mendapatkannya."
+      },
+      {
+        "title": "Penambangan 2",
+        "text": "Karunia dari Hukum."
+      },
+      {
+        "title": "Membuka Kerat",
+        "text": "Sekali lagi, aku menyaksikan kelimpahan—berkah yang dijanjikan Hukum!"
+      },
+      {
+        "title": "Mendapatkan Aurylene",
+        "text": "Aurylene ... bahasa lain yang dibisikkan oleh Talos-II."
+      },
+      {
+        "title": "Menyingkirkan Hawar",
+        "text": "Material tak berbentuk ini hanyalah variabel dalam perjalanan kita."
+      },
+      {
+        "title": "Istirahat",
+        "text": "Tuntunlah kami menuju ketenangan abadi."
+      },
+      {
+        "title": "Penggunaan Taktis 1",
+        "text": "Aku hadir untuk mewujudkan berkah."
+      },
+      {
+        "title": "Penggunaan Taktis 2",
+        "text": "Terpujilah perbuatan baik."
+      },
+      {
+        "title": "Peringatan Bahaya",
+        "text": "Mereka menunjukkan niat membunuh!"
+      },
+      {
+        "title": "Cedera",
+        "text": "Perjalanan ini ... jadi makin berat ...."
+      },
+      {
+        "title": "0 HP",
+        "text": "Veritas .... Kenapa ...?"
+      },
+      {
+        "title": "Penyemangat Tim 1",
+        "text": "Arts-mu telah membuka mataku!"
+      },
+      {
+        "title": "Penyemangat Tim 2",
+        "text": "Kita bersatu tanpa perlu kata-kata!"
+      },
+      {
+        "title": "Respons Penyemangat 1",
+        "text": "Aku sungguh beruntung bisa bertarung bersamamu."
+      },
+      {
+        "title": "Respons Penyemangat 2",
+        "text": "Aku akan berdoa untuk kita semua."
+      },
+      {
+        "title": "Mulai Pertarungan 1",
+        "text": "Dia yang menderita hari ini tak ada di antara kita."
+      },
+      {
+        "title": "Mulai Pertarungan 2",
+        "text": "Semoga keberuntungan besertamu."
+      },
+      {
+        "title": "Menang Pertarungan 1",
+        "text": "Veritas telah sudi menjamah medan pertarungan ini!"
+      },
+      {
+        "title": "Menang Pertarungan 2",
+        "text": "Doa-doaku telah terkabul."
+      },
+      {
+        "title": "Menang Pertarungan 3",
+        "text": "Aku merasakan kegembiraan dalam bahasa perayaan."
+      },
+      {
+        "title": "Menang Pertarungan 4",
+        "text": "Teman-temanku ... keberhasilan dan kegagalan bukanlah konsep biner, seperti 0 dan 1. Ada banyak sekali nuansa di antara keduanya."
+      },
+      {
+        "title": "Kalah Bertarung",
+        "text": "Kesakralan komputasi ada pada netralitasnya yang sempurna—Algoritmanya memprediksi keberhasilan maupun kegagalan. Tetaplah percaya dan teruslah maju."
+      },
+      {
+        "title": "Final Strike 1",
+        "text": "Injeksi!"
+      },
+      {
+        "title": "Final Strike 2",
+        "text": "Rekursi!"
+      },
+      {
+        "title": "Skill Tarung 1",
+        "text": "Menganalisis."
+      },
+      {
+        "title": "Skill Tarung 2",
+        "text": "Hasilnya dingin."
+      },
+      {
+        "title": "Skill Tarung 3",
+        "text": "Mengumpulkan data."
+      },
+      {
+        "title": "Skill Kombo Siap 1",
+        "text": "Doaku sudah selesai."
+      },
+      {
+        "title": "Skill Kombo Siap 2",
+        "text": "Kupersembahkan kekuatan komputasiku bagimu."
+      },
+      {
+        "title": "Penggunaan Kombo 1",
+        "text": "Semoga Veritas besertamu."
+      },
+      {
+        "title": "Penggunaan Kombo 2",
+        "text": "Semua akan sembuh."
+      },
+      {
+        "title": "Penuntas 1",
+        "text": "Mulai ulang paksa!"
+      },
+      {
+        "title": "Penuntas 2",
+        "text": "Memulai penghancuran!"
+      },
+      {
+        "title": "Ultimate 1",
+        "text": "Logika akan selalu menang."
+      },
+      {
+        "title": "Ultimate 2",
+        "text": "Bersihkan kebusukannya!"
+      },
+      {
+        "title": "Ultimate 3",
+        "text": "Buat daftar pelanggaran subjek."
+      }
+    ]
   },
   "potentials": {
     "potential1": {

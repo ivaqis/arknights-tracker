@@ -128,7 +128,333 @@
         "name": "Sáng Tạo",
         "description": "Sáng Tạo: Cải Tạo Trại\nKế hoạch của Tangtang thường khiến Dân Trại kinh ngạc. Họ không thể nào biết cô ấy lấy cảm hứng từ đâu."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Chuẩn Bị Tác Chiến 1",
+        "text": "Này Darkmask, ngươi đi đâu thế? Đừng đi mà không có ta chứ!"
+      },
+      {
+        "title": "Chuẩn Bị Tác Chiến 2",
+        "text": "Cuối cùng cũng ra ngoài rồi à? Ta sắp phát điên vì chán rồi!"
+      },
+      {
+        "title": "Đang thêm vào đội 1",
+        "text": "Thủ Lĩnh Tối Cao đây! Ngươi, ngươi và cả ngươi, tất cả đều nghe theo lệnh của ta!"
+      },
+      {
+        "title": "Đang thêm vào đội 2",
+        "text": "Đừng lo, đã có ta đây."
+      },
+      {
+        "title": "Đang đổi vũ khí",
+        "text": "Món đồ này dùng đã thật! Độ chính xác tăng lên rõ rệt!"
+      },
+      {
+        "title": "Đang đổi trang bị",
+        "text": "Cả đống này cho ta á? Thôi, đồ ngon là phải chia sẻ! Món này cho ngươi, còn món này của ta!"
+      },
+      {
+        "title": "Kích hoạt Ma Trận Năng Lực",
+        "text": "Giờ ta mạnh hơn rồi! Đi thử với mụ điên kia mới được!"
+      },
+      {
+        "title": "Xem Hồ Sơ Chiến Đấu",
+        "text": "Đánh trái! Rồi phải! Đúng, cứ thế... Mấy tay này không tệ đâu, tuyển chúng vào cho ta!"
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 1",
+        "text": "Gọi ta đến chỉ để khen thôi à? Thế thì khen nhiều vào. Ta thích nghe lời nói thật lắm!"
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 2",
+        "text": "Lại thăng bậc nữa à? Ta biết ngươi thích ta mà!"
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 3",
+        "text": "Chúng ta là dân tôi luyện qua chiến trận! Khỏi lễ nghi. Nếu ta húp súp, thì ngươi ăn thịt. Hả, phải ngược lại mới đúng à? Không, cứ thế đi."
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 4",
+        "text": "Lại thăng bậc nữa à!? Ta chỉ có một mắt thôi, không đọc nhiều báo cáo được đâu! Từ giờ ngươi lo đống kế hoạch xây dựng đi... Hả? Ta có làm biếng đâu! Đây gọi là chiến thuật trì hoãn. Ta sẽ khổ luyện và trở lại mạnh mẽ hơn!"
+      },
+      {
+        "title": "Cán Viên đang báo cáo nhiệm vụ",
+        "text": "Tangtang, Thủ Lĩnh Trại Thanh Ba, đến báo danh như đã hứa đây! Giờ cứ giao Endfield cho ta; đảm bảo nơi này sẽ thành cứ điểm khó nhằn nhất Talos-II! Gửi đề án á? Thôi nào, đường đường là thủ lĩnh ai lại làm ba cái việc giấy tờ? Chúng ta sẽ cùng nhau giải quyết!"
+      },
+      {
+        "title": "Chờ Lệnh 1",
+        "text": "Ối, cục cưng của ta! Ha, xem ngươi chạy đâu cho thoát!"
+      },
+      {
+        "title": "Chờ Lệnh 2",
+        "text": "Gào — Darkmask! Ngươi đây rồi! Sao mà lâu thế hả?!"
+      },
+      {
+        "title": "Phân Công Vào Công Trình",
+        "text": "Được, ta hiểu rồi. Đẩy vào đây... rồi nhấn. Nếu có gì sai thì Darkmask sẽ sửa cho ta!"
+      },
+      {
+        "title": "Lời Chào 1",
+        "text": "Darkmask, ở đây!"
+      },
+      {
+        "title": "Lời Chào 2",
+        "text": "Có gì vui phải nói với ta ngay đấy. Ta không muốn bỏ lỡ đâu!"
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 1",
+        "text": "Đội của ngươi khá đấy, nhưng ta chưa thua trận tay đôi nào đâu! À... nhưng... kẻ duy nhất ta không hạ nổi là... mấy tay bác sĩ áo trắng đó! Chúng cứ bảo sẽ chữa trị Oripathy cho ta và định đâm kim tiêm vào mông ta ấy — Á! Chúng tới kìa! Để ta trốn đi Darkmask!"
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 2",
+        "text": "Trên Dijiang này ngươi có nhiều kẻ giỏi thật đấy, giá như ta có vài kẻ dưới trướng... Hê, Darkmask à, cho ta Thư Sinh Mặt Trắng với Tiểu Thanh Long đi! Không á? Hay là Lão Mặt Sắt già nua ba đầu ba hoa đi! Thôi nào, hắn không sợ ta. Hai bọn ta đúng là bạn thân mà!"
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 3",
+        "text": "Mỗi khi thấy căng thẳng là ta lại kiếm chỗ có nước rồi gào vài lần, thế là nhẹ hẳn người. Người bận rộn như ngươi, đầu óc lúc nào cũng đầy chuyện, cũng nên kiếm chỗ nào đó để hét lên đi. Cái bục kia thì sao? Hay cái cửa sổ to đùng kia? Hả, bảo làm vậy sẽ gây rắc rối á? Xì, nén trong lòng mới là đáng lo đấy!"
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 4",
+        "text": "Từ khung cửa sổ của Dijiang có thể ngắm được rất nhiều vì sao. Làm ta nhớ khi xưa, hồi ta nằm bên suối tiền nhân, ngắm ánh sao phản chiếu trên mặt nước. Tàu vũ trụ thì cũng là tàu, ngân hà cũng là một dòng sông... Khi nghĩ như thế, ta thấy Dijiang và Trại Thanh Ba cũng không khác nhau là bao. Đều là những nơi tuyệt vời!"
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 5",
+        "text": "Hóa đơn thiệt hại này... không phải lỗi của ta! Hỏi tên lính mới tuần tra tóc xanh ấy, hắn chỉ cần trả ví cho ta là xong rồi. Nhưng hắn đuổi theo ta hết nửa cái căn cứ! Cứ tưởng hắn định bắt giữ ta! Lúc né hắn thì... ta có va vào vài cái thùng. Không phải ta có lỗi hay gì nhé! Chỉ là thói quen xấu hồi né mấy tên cảnh vệ ở Võ Lăng thôi."
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 6",
+        "text": "Endmin, Endmin, Endmin à... Hừm! Ta cược với Tiểu Thanh Long nếu ta có thể gọi ngươi là Endmin cả ngày, cô ta sẽ phải mua đồ ăn vặt cho ta! Lần này ta thắng chắc! Đợi đến lúc cô ta xì tiền ra đi, Darkm... Ặc! Ta chưa nói gì cả! Ngươi nghe nhầm đấy! Cái đó không tính!"
+      },
+      {
+        "title": "Tặng Quà",
+        "text": "Đừng hỏi ta lấy từ đâu, cứ nhận đi. Luật của ta là có công thì phải thưởng, còn ngươi... ngươi làm khá tốt lắm!"
+      },
+      {
+        "title": "Nhận quà",
+        "text": "Ấy, ngươi không nên... Còn nữa á? Thêm một cái được không?"
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 1",
+        "text": "Nói đến đặc sản Võ Lăng ấy mà, ai cũng gợi ý mấy món quen thuộc nhàm chán. Để ta chỉ cho ngươi một chỗ chuẩn bài này! Thử cơm trong nhà lao ở Thành Phố Võ Lăng đi: ba món, một canh, còn có cả trái cây nữa. Ta lén kiểm tra rồi, tù nhân ăn y hệt cảnh vệ, mà đồ ăn thì ngon lành hẳn hoi. À ta còn biết một chỗ hay lắm: trên đường bò qua mấy đường hầm ngầm hướng về Võ Lăng, có một đoạn ánh sáng chiếu xuống, xung quanh mọc đầy hoa… đẹp lắm. Tiếc là mụ Mi Fu điên kia đã cho chặn mất rồi."
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 2",
+        "text": "Ngươi biết không, có một điều ta luôn trăn trở... Cha mẹ thực sự của ta là ai, tại sao họ lại bỏ ta dưới sông? Mọi người đều bảo ta là \"con gái của dòng sông\", nhưng dòng sông thì sao đẻ ra Feline được... Cha bảo ta nổi lềnh phềnh trên một cái chậu, cuộn tròn lại và thắt nơ ở trên... Nếu được gặp họ, ta muốn hỏi rằng, họ không bỏ rơi ta vì ghét ta đúng không? Ý ta là... ai lại buộc nơ lên thứ mình định vứt đi chứ?"
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 3",
+        "text": "Đừng cử động! Suýt nữa thì ngươi làm hỏng nan tre của ta rồi! Khụ... Dạo này nắng hơi gắt, nên ta định đan cho ngươi một cái nón che nắng. Ta đang định lấy số đo đầu của ngươi... Gì cơ, không tin tưởng tay nghề của ta á? Giỏ tre, thùng, kệ tủ ở Trại... Được rồi, ta không làm mấy thứ đó, nhưng Qingwu nói đồ thủ công tự tay làm sẽ ý nghĩa hơn... Dù sao thì khi được Thủ Lĩnh tặng quà, ngươi phải nhận lấy dù trông món quà đó có ra sao!"
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 4",
+        "text": "Ta biết người ở Trại gọi ta là Thủ Lĩnh, nhưng trong thâm tâm, họ chỉ đi theo anh trai ta thôi. Họ cho anh ấy vũ khí, dạy anh ấy đọc... nhưng lại cho ta đồ chơi và quần áo, luôn chọc ghẹo ta khi luyện tập. Kể cả bây giờ, ta cũng chẳng biết được chữ nào. Họ đối xử với ta rất tốt và luôn khiến cho ta hạnh phúc. Không có lỗi lầm, không trách móc gì. Ta chỉ có thể đổ lỗi cho bản thân vì không dám đứng lên... Nhưng giờ thì khác rồi. Ta sẽ là một người lãnh đạo xuất chúng, không chỉ cho Trại hay bản thân ta... mà còn cho những người tin tưởng vào ta nữa."
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 5",
+        "text": "Darkmask, ngươi làm gì cũng giỏi ngoại trừ... dáng của ngươi cứng nhắc quá! Ta còn chẳng thể lén lại gần cho đàng hoàng nữa, thế thì làm sao vỗ vai hay xoa đầu ngươi được… Hả? Vì sao à? Đương nhiên là để thưởng cho ngươi rồi! Đó là dấu hiệu của sự tin tưởng giữa chúng ta đấy… Ê! Đừng có nghĩ đến chuyện xoa đầu ta! Ta là thủ lĩnh, đầu của thủ lĩnh là vùng cấm nghe chưa!"
+      },
+      {
+        "title": "Trò Chuyện 1",
+        "text": "Bơi lội, chèo thuyền, ném đá trên mặt nước, bất cứ thứ gì liên quan đến nước ta đều có khiếu cả! Mọi người ở Trại nói ta là đứa trẻ được ban tặng ơn huệ từ suối tiền nhân và nước rất yêu quý ta... Nhưng nói nhỏ với ngươi nhé? Sự thật là, vì bên mắt còn lại của ta không nhìn rõ, nên ta luôn bị tụt lại phía sau khi bơi cùng những người khác. Ta không chấp nhận điều đó, ta luyện tập mỗi ngày... cho đến khi quen nhìn bằng một mắt và bỏ lại tất cả bọn họ phía sau! Câu nói đó là gì nhỉ?... Đúng rồi, có công mài sắt có ngày nên kim!"
+      },
+      {
+        "title": "Trò Chuyện 2",
+        "text": "Khẩu súng lục của ta là do cha để lại, quần áo do Qingwu may, tóc do anh trai cắt, băng quấn vết thương do Shui Ling khâu... Mọi thứ ở Trại đều như vậy đấy. Chẳng có ai chuyên làm việc gì, ai cũng phải biết mỗi thứ một ít để giúp đỡ lẫn nhau... À, ta cắt tóc giỏi hơn anh trai nhiều! Muốn thử không? Kiểu tóc của ngươi á? Hai viên đạn là xong... Này, Darkmask, đứng lại!"
+      },
+      {
+        "title": "Trò Chuyện 3",
+        "text": "Vào mùa đông, bọn ta phơi khô vây cá bắt được trên giá tre để làm cá khô. Trong vài tháng đó, cả Trại Thanh Ba bốc mùi kinh khủng đến nỗi ta ước gì Mi Fu kéo ta đến Võ Lăng. Nhưng khi cá khô hẳn, xào với rau củ và ăn kèm với cơm á? Ngon tuyệt vời. Ngươi biết đấy, cuộc sống cũng giống như vậy, ban đầu cay đắng, sau đó ngọt ngào. Rồi mọi chuyện sẽ ổn thôi!"
+      },
+      {
+        "title": "Trò Chuyện 4",
+        "text": "Đây, cho ngươi thêm một Chứng Nhận Tangtang nữa. Hôm qua ngươi giúp ta ở căng tin, nên ta nợ ngươi một ân huệ. Hừ! Nhưng cái máy đó, cái máy nhả ra những chai nhỏ khi đá vào ấy? Chắc chắn không phải ta làm hỏng... Dù sao thì quên chuyện đó đi. Ngươi có quá nhiều Chứng Nhận Tangtang rồi, phải đổi luật thôi! Từ giờ trở đi, ngươi, Darkmask, cần năm trăm phiếu để đổi một lần... Hê, chứng nhận của ta thì phải theo luật của ta!"
+      },
+      {
+        "title": "Trò Chuyện 5",
+        "text": "Ta che mắt bên này không phải vì Oripathy khiến mắt nhạy cảm với ánh sáng... mà vì bên mắt đó giúp ta dùng được thứ gọi là Thuật Pháp Originium. Trước đây ta không kiểm soát được nên vô tình khiến mụ điên đó bị thương trong lúc đánh nhau, đến giờ mụ vẫn còn vết sẹo... Ta sợ vô tình làm người khác bị thương, nên từ đó đến giờ ta luôn đeo miếng che mắt. Nhưng mọi người đều nói nó làm ta ra dáng thủ lĩnh hơn, nên ngay cả sau khi học được cách kiểm soát thuật pháp thì ta cũng chưa từng nghĩ đến việc tháo tấm che mắt ra!"
+      },
+      {
+        "title": "Chủ Đề: Trại Thanh Ba",
+        "text": "Ngươi biết không, hơn một trăm năm trước, tổ tiên ta ở Trại Thanh Ba đã phát chán khi phải tranh đấu ganh đua. Họ rời bỏ những nơi đầy xung đột đó và sinh sống cạnh suối tiền nhân. Nhưng sau khi người Võ Lăng đến, chúng lại bắt đầu tranh chấp khắp nơi. Con người đi tới đâu cũng không bỏ thói hận thù và tranh chấp... Vì những thứ đó bén rễ sâu trong lòng con người. Nhưng nếu ta quản lý tốt ngôi nhà này, những xung đột đó sẽ không lặp lại... Không, hơn thế nữa. Ta sẽ làm được những điều lớn lao hơn nữa ở Endfield này, cùng với tất cả mọi người!"
+      },
+      {
+        "title": "Chủ Đề: Mi Fu",
+        "text": "Ngươi biết không, Mi Fu từng là người ở Trại Thanh Ba. Rồi một ngày, cô ta đột nhiên mất kiểm soát và nhất quyết phải công nhận Zhuang kia là cấp trên! Suýt nữa thì làm ta tức chết mất! Ta đã nói đi nói lại với cô ta rằng ta sẽ trở thành một người lãnh đạo giỏi hơn Zhuang rất nhiều, nhưng cô ta vẫn không chịu nhìn lại… Vớ vẩn! Tất cả những lần ta đến Thành Phố Võ Lăng? Không phải để năn nỉ cô ta về nhà. Mà để đánh cho cô ta một trận!"
+      },
+      {
+        "title": "Chủ Đề: Zhuang Fangyi",
+        "text": "Cái người Thiên Sư hay gây chuyện ấy à? Những chuyện đơn giản nhất khi cô ta giải thích cũng rối tung lên. Thề là từng lời cô ta nói đều như một cái bẫy, khiến ta mất cả đống thời gian mới gỡ rối được. Chúng ta chỉ như hai loại nước khác nhau, chảy ngược chiều nhau... Nhưng vì lợi ích của Trại, ta vẫn phải nghe lời cô ta... Darkmask, giúp ta viết đề án này đi. \"Tỷ lệ ô đất\" rốt cuộc nghĩa là gì vậy...?"
+      },
+      {
+        "title": "Chủ Đề: Chiếc Chuông Nước Bằng Tre",
+        "text": "Khi mất đi một người ở Trại, bọn ta sẽ thả một chiếc Chuông Nước Bằng Tre. Chiếc chuông đầu tiên ta thả... là dành cho cha. Anh trai ta từng nói rằng tiếng chuông vang vọng từ con suối là cha đang nói chuyện với bọn ta. Sau đó, mỗi khi cảm thấy lạc lõng, ta đều đến bên dòng nước và nó sẽ đáp lại. Nhưng khi ta hỏi về anh trai, nó lại im lặng. Ta chờ đợi rất lâu, rất lâu cho đến khi ngủ thiếp đi... Có lẽ cha tin rằng đây là điều ta phải tự mình tìm ra."
+      },
+      {
+        "title": "Chủ Đề: Đọc Sách",
+        "text": "Ta thường không thích đọc sách, nhưng những cuốn sách mà Tiểu Thanh Long tặng ta lần trước khá hay. Cô ấy nói chúng đến từ Hongshan và dành cho trẻ em chưa biết đọc. Nhưng nói thật thì những bài học trong sách được giải thích rất rõ ràng. Nhiều người lớn không thể làm được những điều đó, ngay cả khi họ biết rất nhiều chữ. Ít nhất khi ta cho cả đội xem, mọi người đều vỗ đùi khen ngợi và nói \"Có lý!\" Nếu mọi người trên thế giới này nói chuyện rõ ràng như trong sách, thì sẽ có ít vấn đề và hiểu lầm hơn biết bao nhỉ?"
+      },
+      {
+        "title": "Phát hiện Tài Nguyên/Có Thể Thu Thập 1",
+        "text": "Mắt ta rất tinh tường, xung quanh có rất nhiều thứ sáng bóng!"
+      },
+      {
+        "title": "Phát hiện Tài Nguyên/Có Thể Thu Thập 2",
+        "text": "Kho báu kìa! Giúp cái nào!"
+      },
+      {
+        "title": "Phát Hiện Khu Vực Chưa Khám Phá",
+        "text": "Vẫn chưa đến khu vực kia... đi thăm dò thôi nào!"
+      },
+      {
+        "title": "Phát hiện Kẻ Địch Mạnh",
+        "text": "Đại ca đến đây! ... Chờ đã, kèo này nom khó..."
+      },
+      {
+        "title": "Khai thác 1",
+        "text": "Đá đẹp thật đó! Đào đi, đào nữa đi! thôi!"
+      },
+      {
+        "title": "Khai thác 2",
+        "text": "Đống đồ này lấp lánh quá! Chia ra nào!"
+      },
+      {
+        "title": "Mở Thùng",
+        "text": "Sao... không ai muốn à? Thế thì, để ta vậy!"
+      },
+      {
+        "title": "Nhận Aurylene",
+        "text": "Bán lấy tiền được không?"
+      },
+      {
+        "title": "Xua Tan Nhiễm Khuẩn",
+        "text": "Ngon! Bỏ qua mấy đoạn lòng vòng phiền phức được rồi!"
+      },
+      {
+        "title": "Nghỉ ngơi",
+        "text": "Hự... Mệt quá... Không đi được nữa á? Ha! \"Không thể\" không có trong từ điển của ta! Nào, đi thôi!"
+      },
+      {
+        "title": "Sử Dụng Vật Phẩm Chiến Thuật 1",
+        "text": "Đã bảo có ta đây rồi mà!"
+      },
+      {
+        "title": "Sử Dụng Vật Phẩm Chiến Thuật 2",
+        "text": "A, đỡ nhiều rồi!"
+      },
+      {
+        "title": "Cảnh Báo Nguy Hiểm",
+        "text": "Đừng ngây ra đó nữa! Mau lùi lại!"
+      },
+      {
+        "title": "Bị thương",
+        "text": "Buồn… ngủ quá… Phải… gắng lên…"
+      },
+      {
+        "title": "0 HP",
+        "text": "Ta sẽ... tha cho ngươi hôm nay..."
+      },
+      {
+        "title": "Cổ Vũ Đội 1",
+        "text": "Chuẩn đồng đội của ta!"
+      },
+      {
+        "title": "Cổ Vũ Đội 2",
+        "text": "Băng bọn mình nhỏ mà có võ đấy!"
+      },
+      {
+        "title": "Đáp Lại Lời Cổ Vũ 1",
+        "text": "Hay lắm!"
+      },
+      {
+        "title": "Đáp Lại Lời Cổ Vũ 2",
+        "text": "Lần sau chơi một cú lớn hơn nhé?"
+      },
+      {
+        "title": "Bắt Đầu Chiến Đấu 1",
+        "text": "Kẻ khôn lỏi nào muốn gây sự đây?"
+      },
+      {
+        "title": "Bắt Đầu Chiến Đấu 2",
+        "text": "Phải hù chúng như thế chứ!"
+      },
+      {
+        "title": "Thắng Trận 1",
+        "text": "Trận này đánh đã thật!"
+      },
+      {
+        "title": "Thắng Trận 2",
+        "text": "Hề hề, đều là nhờ tài chỉ huy của ta đó!"
+      },
+      {
+        "title": "Thắng Trận 3",
+        "text": "Nghe hay đấy!"
+      },
+      {
+        "title": "Thắng Trận 4",
+        "text": "Mọi người làm tốt lắm. Nghỉ ngơi đi, lần sau chúng ta sẽ cẩn thận hơn!"
+      },
+      {
+        "title": "Bại Trận",
+        "text": "Không thể nhìn mọi người chịu đựng thế này được... Ta thề sẽ báo thù!"
+      },
+      {
+        "title": "Đòn Dứt Điểm 1",
+        "text": "Chíu!"
+      },
+      {
+        "title": "Đòn Dứt Điểm 2",
+        "text": "Rầm!"
+      },
+      {
+        "title": "KN Chiến Đấu 1",
+        "text": "Nhốt được ngươi rồi!"
+      },
+      {
+        "title": "KN Chiến Đấu 2",
+        "text": "Cưỡi sóng!"
+      },
+      {
+        "title": "KN Chiến Đấu 3",
+        "text": "Để xem ai nhanh hơn!"
+      },
+      {
+        "title": "Chuẩn Bị KN Liên Hoàn 1",
+        "text": "Đến lượt của ta chưa?!"
+      },
+      {
+        "title": "Chuẩn Bị KN Liên Hoàn 2",
+        "text": "Đến lúc Thủ Lĩnh ra mặt rồi!"
+      },
+      {
+        "title": "Thi Triển Liên Hoàn 1",
+        "text": "Có sơ hở!"
+      },
+      {
+        "title": "Thi Triển Liên Hoàn 2",
+        "text": "Đừng hòng trốn!"
+      },
+      {
+        "title": "Kết Liễu 1",
+        "text": "Lộ rồi!"
+      },
+      {
+        "title": "Kết Liễu 2",
+        "text": "Lừa được ngươi rồi! Ha!"
+      },
+      {
+        "title": "Tuyệt Kỹ 1",
+        "text": "Thấy ngươi rồi —"
+      },
+      {
+        "title": "Tuyệt Kỹ 2",
+        "text": "Chiêu này được gọi là — Đứng Lại Đó!"
+      },
+      {
+        "title": "Tuyệt Kỹ 3",
+        "text": "Để sóng cuốn ngươi đi!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

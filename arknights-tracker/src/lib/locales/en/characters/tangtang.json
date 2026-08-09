@@ -128,7 +128,333 @@
         "name": "Creative",
         "description": "Creative: Stockade Upgrader\nTangtang's plans often shock the Stockaders. They have no idea where she gets her inspirations from."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Operation Prep 1",
+        "text": "Hey Darkmask, where you off to? Don't leave without me!"
+      },
+      {
+        "title": "Operation Prep 2",
+        "text": "Finally heading out? I was about to go mold from boredom!"
+      },
+      {
+        "title": "Adding to Team 1",
+        "text": "Your Supreme Chief is here! You, you, and you, are all under my command!"
+      },
+      {
+        "title": "Adding to Team 2",
+        "text": "Don't sweat it, I got you covered."
+      },
+      {
+        "title": "Switching Weapon",
+        "text": "This piece handles great! My aim's even sharper now!"
+      },
+      {
+        "title": "Switching Gear",
+        "text": "All this gear's for me? C'mon, good stuff's for sharing! This one's yours, and this one's mine!"
+      },
+      {
+        "title": "Ability Matrix Activation",
+        "text": "Even stronger now! Alright, time to go test this on that mad woman!"
+      },
+      {
+        "title": "Watching Combat Records",
+        "text": "Hit left! And right! Yeah, just like that... Hey, these guys aren't half bad, recruit them for me!"
+      },
+      {
+        "title": "Operator Promotion 1",
+        "text": "You called me over just to praise me? Well, lay it on thicker then. I love hearing the truth!"
+      },
+      {
+        "title": "Operator Promotion 2",
+        "text": "Promoting me again? I knew I was your favorite!"
+      },
+      {
+        "title": "Operator Promotion 3",
+        "text": "We're battle-forged! No need for formalities. If I get a sip of soup, you get a bite of meat. What, it should be the other way around? Nah, that's just how it goes."
+      },
+      {
+        "title": "Operator Promotion 4",
+        "text": "Another promotion?! I've only got one eye — I can't read that many reports! You handle the construction plans for now... Huh? I'm not slacking off! This is a strategic delay. I'll train and come back stronger!"
+      },
+      {
+        "title": "Operator Reporting for Duty",
+        "text": "Qingbo Stockade's Chief, Tangtang, reporting as promised! Now you can just hand Endfield over to me; I'll make it the toughest spot on Talos-II! Turn in a proposal? C'mon, since when does a chief do paperwork? We'll just figure it out together!"
+      },
+      {
+        "title": "Standing by 1",
+        "text": "Whoa, my precious! Hah, try to slip away from me now!"
+      },
+      {
+        "title": "Standing by 2",
+        "text": "Rawr — Darkmask! Finally you're here! What took you so long?!"
+      },
+      {
+        "title": "Assigning to Facility",
+        "text": "Okay, okay, I got it. Push this ... then tap that. If anything goes wrong, Darkmask will fix it!"
+      },
+      {
+        "title": "Greeting 1",
+        "text": "Darkmask, over here!"
+      },
+      {
+        "title": "Greeting 2",
+        "text": "Let me know if anything fun comes up. I don't wanna miss out!"
+      },
+      {
+        "title": "Dijiang Idle Chatter 1",
+        "text": "Your crew's pretty tough, but I've never lost a real spar! Uh ... well ... the only ones I can't handle are ... those white-coated medics! They keep saying they'll treat my Oripathy and try to jab my butt with needles — Aah! They're coming! Darkmask, let me hide!"
+      },
+      {
+        "title": "Dijiang Idle Chatter 2",
+        "text": "You've got too many talented folks on this Dijiang, if I could just have a few for myself... Heh, Darkmask, I'm not greedy, just give me Pale Scribe and Green Scales! No? How about that three-headed, super talkative Old Iron-Face! Come on, he's not scared of me. We're best friends!"
+      },
+      {
+        "title": "Dijiang Idle Chatter 3",
+        "text": "Whenever I'm stressed, I just go yell by the water a few times, and it always makes me feel loads better. Someone as busy as you, with so much on their mind, should find a spot to shout too. How about that platform over there? Or that big window? Pfft, what do you mean this could cause problems? Holding it all in is the real problem!"
+      },
+      {
+        "title": "Dijiang Idle Chatter 4",
+        "text": "You can see so many stars from Dijiang's windows. Kinda reminds me of the old days, when I'd lie by the ancestral spring, watching the stars reflected in the water. A spaceship's also a ship, the galaxy's also a river... When you think about it, Dijiang and Qingbo Stockade aren't so different after all. Both are good places!"
+      },
+      {
+        "title": "Dijiang Idle Chatter 5",
+        "text": "This damage bill ... wasn't my fault! Blame that green-haired patrol rookie — he could've just returned my wallet. Instead he chased me halfway across the base! I thought he was trying to arrest me! While dodging him, well ... I might've bumped into a few crates. Not like I'm guilty or anything! Just old habits from dodging watchguards back in Wuling."
+      },
+      {
+        "title": "Dijiang Idle Chatter 6",
+        "text": "Endmin Endmin Endmin — Hmph! I bet Green Scales that if I could call you Endmin for a whole day, she'd buy me a ton of snacks! I'm so winning this time! Just wait until she coughs up the cash, Darkm — Ack! I didn't say it! You misheard! That one doesn't count!"
+      },
+      {
+        "title": "Offering Gifts",
+        "text": "Don't ask where it's from, just take it. My rule is to reward good work, and you ...  you're pretty good!"
+      },
+      {
+        "title": "Accepting Gifts",
+        "text": "Aw, you shouldn't have... Got anymore? How about another one?"
+      },
+      {
+        "title": "Trust Dialog 1",
+        "text": "When it comes to Wuling's delicacies, everyone else just recommends the same old mainstream stuff. Let me give you a real tip! Try the prison food in Wuling City: three dishes, a soup, and they even give you fruit. I've secretly checked, the inmates eat the exact same meals as the watchguards, and it's all good stuff. Oh, and I'll tell you about a cool spot too: when you're crawling through the underground tunnels toward Wuling, there's this place where light shines through, with tons of flowers growing nearby... So pretty. Too bad that mad woman Mi Fu had it blocked off."
+      },
+      {
+        "title": "Trust Dialog 2",
+        "text": "You know, there's one thing I've always wondered... Who were my real parents, and why'd they put me in the water? Everyone says I'm the \"river's daughter\", but a river can't just birth a Feline... Dad told me I came floating in a basin, all wrapped up tight with a bow on top... If I ever met them, I'd wanna ask, they definitely didn't ditch me because they hated me right? I mean ... who ties a bow on trash they're throwing away?"
+      },
+      {
+        "title": "Trust Dialog 3",
+        "text": "Don't move! You almost snapped my bamboo strip! Ahem... The sun's been kinda harsh lately, so I thought I'd weave you a hat for shade. Was just measuring your head... What, you don't trust my skills? The bamboo baskets, crates, shelves back at the Stockade — okay, fine, I didn't make those, but Qingwu says handmade stuff carries more meaning... Anyway, when Chief gives a gift, you're taking it no matter what it looks like!"
+      },
+      {
+        "title": "Trust Dialog 4",
+        "text": "I know the Stockade folks call me Chief, but in their hearts, they really followed my brother. They gave him weapons, taught him to read ... but gave me toys and clothes, just humored me during training. Even now, I barely know any characters. They treated me well, always trying to keep me happy. No faults, no blame. I can only kick myself for not stepping up... But now it's different. I'll be a proper leader, not just for the Stockade or myself ... but for everyone who believes in me too."
+      },
+      {
+        "title": "Trust Dialog 5",
+        "text": "Darkmask, you're great in every way except one — your posture's way too stiff! I can't even sneak up on you properly, makes it hard to pat your shoulder or ruffle your hair... Why? 'Cause I wanna reward you, of course! It's a sign of trust between us... Hey! Don't even think about patting my head! I'm the boss, and the boss's head is off-limits!"
+      },
+      {
+        "title": "Chat 1",
+        "text": "Swimming, punting, skipping stones, anything to do with water, I'm a natural! Folks at the Stockade say I'm a child gifted by the ancestral spring, and that water just loves me... But between you and me? Truth is, because I can't see well with this eye, I always fell behind when swimming with others. I refused to accept it, practiced every single day ... till I mastered seeing with one eye and left them all in my wake! What's that saying again? ...Right, hard work pays off!"
+      },
+      {
+        "title": "Chat 2",
+        "text": "My handcannons were left by my dad, my clothes were made by Qingwu, my hair was cut by my brother, the bandages were stitched by Shui Ling... That's how everything is at the Stockade. No dedicated professions, everyone has to know a little bit of everything, helping each other out... Oh, and I'm way better at cutting hair than my brother! Wanna give it a try? That hairstyle of yours? Two bullets oughta do it — Hey, Darkmask, stop running!"
+      },
+      {
+        "title": "Chat 3",
+        "text": "In winter, we'd dry the fin we caught on bamboo racks to make jerky. For those couple months, the whole Qingbo Stockade reeked so bad I almost wished Mi Fu would just drag me off to Wuling. But once they were fully dried, stir-fried with veggies and laid over rice? Absolutely delicious. You know, it's kinda like life, bitter first, sweet later. In the end, things always work out!"
+      },
+      {
+        "title": "Chat 4",
+        "text": "Here, another Tangtang Cert for you. You helped me out in the canteen yesterday, so I owe you one. Hmph! But that machine, the one that spits out little bottles when you kick it? Definitely wasn't me who broke it... Anyway, forget that. You've got way too many Tangtang Certs now, gotta change the rules! From now on, you, Darkmask, need five hundred to redeem just once... Heh, my certs, my rules!"
+      },
+      {
+        "title": "Chat 5",
+        "text": "I cover this eye not because Oripathy made it light-sensitive ... but because it lets me use that thing called Originium Arts. I couldn't control it before and ended up hurting that mad woman during a fight, and she still has the scar... I was afraid of hurting someone else by accident, so I've kept the eyepatch on ever since. But hey, everyone says it gives me more Chief vibes, so even after I learned to control it, I never really thought about taking it off!"
+      },
+      {
+        "title": "Topic: Qingbo Stockade",
+        "text": "You know, over a hundred years ago, our ancestors at Qingbo Stockade grew tired of all the fighting and rivalry among people. They left those conflict-ridden places and settled by the ancestral spring. But after the Wuling folks arrived, we started fighting all over again. Like no matter where you go, people just can't escape grudges and disputes... Because these things take root right in everyone's hearts. But if I manage this home well, those conflicts won't repeat themselves... No, more than that. I'm gonna do even bigger things here at Endfield, together with all of you!"
+      },
+      {
+        "title": "Topic: Mi Fu",
+        "text": "You know, that Mi Fu used to be one of us at the Stockade. Then one day, she just lost it and had to go recognize that Zhuang as her boss instead! Nearly pissed me off to death! I told her over and over, I'd become a way better leader than that Zhuang, but she still never looked back... Nonsense! All those times I went to Wuling City? Wasn't to beg her to come home. I went to beat her up!"
+      },
+      {
+        "title": "Topic: Zhuang Fangyi",
+        "text": "That lightning rod Tianshi? The simplest things always get twisted up when she explains them. I swear every word feels like a trap, and takes me forever to untangle. We're just two different types of water, flowing in opposite directions... But for the Stockade's sake, I gotta listen to her anyway... Darkmask, help me out with this proposal. What in the world is \"plot ratio\" supposed to mean...?"
+      },
+      {
+        "title": "Topic: Bamboo Water Chimes",
+        "text": "When we lose someone at the Stockade, we send off a bamboo water chime. The first one I ever released ... was for Dad. Brother said the ringing from the Spring was Dad speaking to us. After that, I'd always go to the water when I felt lost, and it would answer. But when I asked about Brother, it stayed silent. I waited for a long, long time until I fell asleep... Maybe Dad believed this was something I had to figure out alone."
+      },
+      {
+        "title": "Topic: Reading",
+        "text": "I don't usually like reading, but those books Green Scales gave me last time were pretty good. She said they're from Hongshan and meant for kids who can't read yet. But honestly, the lessons in the books are explained so clearly. A lot of grown-ups can't manage that, even though they know all the words. At least when I showed them to the crew, everyone was slapping their knees saying \"That makes sense!\" If people in this world talked as plainly as those books, how many fewer problems and misunderstandings would there be?"
+      },
+      {
+        "title": "Resource/Collectible Detected 1",
+        "text": "Eyeballs sharp, there's shiny stuff around!"
+      },
+      {
+        "title": "Resource/Collectible Detected 2",
+        "text": "Treasure over there! Gimme a hand!"
+      },
+      {
+        "title": "Unexplored Area Detected",
+        "text": "That area's still untouched — let's go scout it out!"
+      },
+      {
+        "title": "Powerful Enemy Discovered",
+        "text": "Your boss is here! ...Wait, that one looks tough..."
+      },
+      {
+        "title": "Mining 1",
+        "text": "Such pretty rocks! Dig dig dig!"
+      },
+      {
+        "title": "Mining 2",
+        "text": "Shiny stuff. Let's split it!"
+      },
+      {
+        "title": "Opening a Crate",
+        "text": "Wait ... nobody wants these?! I'm, uh, taking them then!"
+      },
+      {
+        "title": "Acquiring Aurylene",
+        "text": "Can I sell it for cash?"
+      },
+      {
+        "title": "Eliminating the Blight",
+        "text": "Niiiice! Now we can skip some annoying detours!"
+      },
+      {
+        "title": "Rest",
+        "text": "Huff... I'm totally beat... Can't go on? Hah! The word \"can't\" isn't in my dictionary! C'mon, let's keep moving!"
+      },
+      {
+        "title": "Tactical Use 1",
+        "text": "I told you I'd cover you!"
+      },
+      {
+        "title": "Tactical Use 2",
+        "text": "Ah, much better!"
+      },
+      {
+        "title": "Danger Warning",
+        "text": "Quit gawking! Get back!"
+      },
+      {
+        "title": "Injured",
+        "text": "So ... sleepy... I gotta ... hang on..."
+      },
+      {
+        "title": "0 HP",
+        "text": "I'll ... let you off today..."
+      },
+      {
+        "title": "Team Encouragement 1",
+        "text": "That's my star gangmate!"
+      },
+      {
+        "title": "Team Encouragement 2",
+        "text": "Our little gang here's got some serious skills!"
+      },
+      {
+        "title": "Encouragement Response 1",
+        "text": "Nice, nice!"
+      },
+      {
+        "title": "Encouragement Response 2",
+        "text": "Next time, we pull off something even bigger?"
+      },
+      {
+        "title": "Combat Begins 1",
+        "text": "Who's the wise guy looking for a fight?"
+      },
+      {
+        "title": "Combat Begins 2",
+        "text": "Gotta scare them just like that!"
+      },
+      {
+        "title": "Combat Victory 1",
+        "text": "Now that was a satisfying fight!"
+      },
+      {
+        "title": "Combat Victory 2",
+        "text": "Heh, all thanks to my brilliant command!"
+      },
+      {
+        "title": "Combat Victory 3",
+        "text": "Now that's what I like to hear!"
+      },
+      {
+        "title": "Combat Victory 4",
+        "text": "Everyone did great. Rest up now, next time we'll be more careful!"
+      },
+      {
+        "title": "Combat Defeat",
+        "text": "Can't stand seeing everyone suffer like this... I swear I'll get revenge for y'all!"
+      },
+      {
+        "title": "Final Strike 1",
+        "text": "Pew!"
+      },
+      {
+        "title": "Final Strike 2",
+        "text": "Blam!"
+      },
+      {
+        "title": "Battle Skill 1",
+        "text": "Got you locked in!"
+      },
+      {
+        "title": "Battle Skill 2",
+        "text": "Riding the tide!"
+      },
+      {
+        "title": "Battle Skill 3",
+        "text": "See who's faster!"
+      },
+      {
+        "title": "Combo Skill Ready 1",
+        "text": "When's it my turn?!"
+      },
+      {
+        "title": "Combo Skill Ready 2",
+        "text": "Time for the chief's move!"
+      },
+      {
+        "title": "Combo Casting 1",
+        "text": "Opening spotted!"
+      },
+      {
+        "title": "Combo Casting 2",
+        "text": "Don't slip!"
+      },
+      {
+        "title": "Finisher 1",
+        "text": "You're exposed!"
+      },
+      {
+        "title": "Finisher 2",
+        "text": "I fooled ya! Ha!"
+      },
+      {
+        "title": "Ultimate 1",
+        "text": "Got you in sight —"
+      },
+      {
+        "title": "Ultimate 2",
+        "text": "This one's called — Stop Right There!"
+      },
+      {
+        "title": "Ultimate 3",
+        "text": "Vanish with the tide!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

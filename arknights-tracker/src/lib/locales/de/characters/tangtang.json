@@ -128,7 +128,333 @@
         "name": "Kreatives",
         "description": "Kreatives: Palisadenverbessererin\nDie Palisadeure sind oftmals erstaunt über Tangtangs Pläne. Sie haben keine Ahnung, wo sie ihre Inspirationen hernimmt."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Einsatzvorbereitung 1",
+        "text": "Hey, Finstermaske! Wo willst du hin? Geh nicht ohne mich!"
+      },
+      {
+        "title": "Einsatzvorbereitung 2",
+        "text": "Geht’s endlich los? Ich war kurz davor, vor Langeweile einzugehen!"
+      },
+      {
+        "title": "Wird zum Team hinzugefügt 1",
+        "text": "Der Oberhäuptling ist da! Du, du und du, ihr untersteht alle meinem Kommando!"
+      },
+      {
+        "title": "Wird zum Team hinzugefügt 2",
+        "text": "Mach dir keine Sorgen, ich hab alles im Griff."
+      },
+      {
+        "title": "Waffe wird gewechselt",
+        "text": "Dieses Teil ist echt super! Damit kann ich jetzt noch besser zielen!"
+      },
+      {
+        "title": "Ausrüstung wird gewechselt",
+        "text": "Die ganze Ausrüstung ist für mich? Alter, coole Sachen teilt man! Das hier gehört dir und das hier mir."
+      },
+      {
+        "title": "Fähigkeitsmatrix-Aktivierung",
+        "text": "Jetzt bin ich noch stärker! Okay, es ist an der Zeit, das Teil an dieser verrückten Frau auszuprobieren!"
+      },
+      {
+        "title": "Kampfaufzeichnungen ansehen",
+        "text": "Schlag links! Und rechts! Ja, genau so … Hey, die Leutchen sind echt nicht schlecht. Hol sie mir ins Team!"
+      },
+      {
+        "title": "Operator-Beförderung 1",
+        "text": "Hast du mich nur hergerufen, um mir ein Lob auszusprechen? Na, dann leg noch eins drauf! Ich liebe es, die Wahrheit zu hören!"
+      },
+      {
+        "title": "Operator-Beförderung 2",
+        "text": "Schon wieder eine Beförderung für mich? Ich wusste doch, dass ich dein Liebling bin!"
+      },
+      {
+        "title": "Operator-Beförderung 3",
+        "text": "Wir sind kampferprobt! Keine Formalitäten nötig. Wenn ich einen Schluck Suppe bekomme, bekommst du ein Stück Fleisch. Was, es sollte andersherum sein? Nein, so läuft das eben."
+      },
+      {
+        "title": "Operator-Beförderung 4",
+        "text": "Noch eine Beförderung? Ich hab doch nur ein Auge … ich kann nicht so viele Berichte lesen! Kümmere dich erst einmal um die Baupläne … Was? Ich bin nicht faul! Das ist eine strategische Verzögerungstaktik. Ich werde trainieren und stärker zurückkommen!"
+      },
+      {
+        "title": "Operator meldet sich zum Dienst",
+        "text": "Tangtang, Häuptling der Qingbo-Palisade, zu Diensten! Überlass Endfield einfach mir. Ich mache es zum härtesten Ort auf Talos-II! Einen Vorschlag einreichen? Komm schon, seit wann macht ein Häuptling Papierkram? Wir kriegen das schon gemeinsam hin!"
+      },
+      {
+        "title": "Warten 1",
+        "text": "Woah, mein Schatz! Ha! Versuch, dich jetzt von mir wegzuschleichen!"
+      },
+      {
+        "title": "Warten 2",
+        "text": "Grrr – Finstermaske! Endlich bist du da! Wo warst du so lange?"
+      },
+      {
+        "title": "Zuweisung zur Anlage",
+        "text": "Okay, okay, ich hab schon verstanden. Drück das hier … und dann tipp da drauf. Wenn etwas schiefgeht, wird Finstermaske das schon wieder richten!"
+      },
+      {
+        "title": "Gruß 1",
+        "text": "Finstermaske! Hier drüben!"
+      },
+      {
+        "title": "Gruß 2",
+        "text": "Sag mir Bescheid, wenn etwas Cooles ansteht. Ich will nichts verpassen!"
+      },
+      {
+        "title": "Dijiang-Geplauder 1",
+        "text": "Deine Crew ist zwar hart im Nehmen, aber ich habe noch nie einen richtigen Sparringkampf verloren! Na ja … Die einzigen, mit denen ich nicht klarkomme, sind diese … Ärzte in ihren weißen Kitteln! Die behaupten immer, sie würden meine Oripathie behandeln, und versuchen, mir Nadeln in den Hintern zu stecken. Aah! Da kommen sie schon! Finstermaske, ich muss mich verstecken!"
+      },
+      {
+        "title": "Dijiang-Geplauder 2",
+        "text": "Du hast echt zu viele talentierte Leute auf dieser Dijiang. Wenn du mir doch nur ein paar für mein Team überlassen könntest … Heh, Finstermaske, ich bin nicht gierig. Gib mir einfach Blasse Schreiberin und Grünschuppe! Nein? Wie wär’s dann mit dem dreiköpfigen, super gesprächigen Eisengesicht? Er hat doch keine Angst vor mir. Wir sind beste Freunde!"
+      },
+      {
+        "title": "Dijiang-Geplauder 3",
+        "text": "Wenn ich gestresst bin, gehe ich ans Wasser und schreie ein paar Mal. Danach fühle ich mich immer viel besser. Jemand, der so beschäftigt ist wie du und sich um so viele Dinge kümmern muss, sollte sich auch einen Ort zum Schreien suchen. Wie wär’s mit der Plattform dort drüben? Oder dem großen Fenster? Was meinst du damit, das könnte Probleme geben? Das eigentliche Problem ist, alles in sich hineinzufressen!"
+      },
+      {
+        "title": "Dijiang-Geplauder 4",
+        "text": "Von den Fenstern der Dijiang aus kann man unzählige Sterne sehen. Das erinnert mich an alte Zeiten, als ich neben der Ahnenquelle lag und die Sterne beobachtete, die sich darin spiegelten. Ein Raumschiff ist schließlich auch ein Schiff und die Galaxie ist wie ein Fluss … Wenn man darüber nachdenkt, sind die Dijiang und die Qingbo-Palisade gar nicht so verschieden. Beide sind tolle Orte!"
+      },
+      {
+        "title": "Dijiang-Geplauder 5",
+        "text": "Der Schaden … war nicht meine Schuld! Schuld ist dieser grünhaarige Streifenpolizist. Er hätte mir einfach meine Brieftasche zurückgeben können. Stattdessen hat er mich quer durch die Basis gejagt. Ich dachte, er will mich verhaften! Während ich ihm auswich, bin ich vielleicht … ein paar Kisten in die Quere gekommen. Nicht, dass ich schuldig wäre oder so! Das sind nur alte Gewohnheiten von mir aus Wuling, als ich noch Wachen ausgewichen bin."
+      },
+      {
+        "title": "Dijiang-Geplauder 6",
+        "text": "Endmin, Endmin, Endmin – hmpf! Ich habe mit Grünschuppe eine Wette am Laufen. Wenn ich’s schaffe, dich einen ganzen Tag lang Endmin zu nennen, kauft sie mir einen Haufen Snacks. Diesmal gewinne ich auf jeden Fall! Warte nur, bis sie das Geld rausrückt, Finsterm– Argh! Das habe ich nicht gesagt! Du hast dich verhört! Das zählt nicht!"
+      },
+      {
+        "title": "Geschenke anbieten",
+        "text": "Frag nicht, woher das kommt. Nimm es einfach an. Meine Regel ist es, gute Arbeit zu belohnen, und du … du bist ziemlich gut."
+      },
+      {
+        "title": "Geschenke annehmen",
+        "text": "Ach, das wär doch nicht nötig gewesen … Hast du noch mehr davon? Wie wär’s mit noch einem?"
+      },
+      {
+        "title": "Vertrauensgespräch 1",
+        "text": "Wenn es um die kulinarischen Köstlichkeiten von Wuling geht, empfehlen alle nur die üblichen Mainstream-Gerichte. Ich verrate dir einen echten Geheimtipp! Probier das Gefängnisessen in Wuling City: Es gibt drei Gerichte, eine Suppe und sogar Obst. Ich habe heimlich nachgeprüft und festgestellt, dass die Insassen genau das gleiche Essen wie das Wachpersonal bekommen. Es schmeckt alles super. Oh, und ich verrate dir auch noch einen coolen Ort. Wenn du durch die unterirdischen Tunnel in Richtung Wuling kriechst, gibt es eine Stelle, an der Licht hereinscheint und in deren Nähe jede Menge Blumen wachsen … Es ist so schön dort. Schade, dass diese verrückte Mi Fu den Ort sperren lassen hat."
+      },
+      {
+        "title": "Vertrauensgespräch 2",
+        "text": "Weißt du, es gibt eine Sache, die ich mich schon immer gefragt habe. Wer waren meine echten Eltern, und warum haben sie mich ins Wasser gelegt? Alle sagen, ich sei die „Tochter des Flusses“, aber ein Fluss kann schließlich keine Felin zur Welt bringen … Mein Vater hat mir erzählt, dass er mich in einer Schüssel angeschwemmt gefunden hat. Ich war fest eingewickelt und mit einer Schleife verziert … Wenn ich sie jemals treffen würde, würde ich sie fragen, ob sie mich nicht behalten haben, weil sie mich nicht mochten. Ich meine … wer bindet schon eine Schleife um Müll, den er wegwirft?"
+      },
+      {
+        "title": "Vertrauensgespräch 3",
+        "text": "Bleib stehen! Du hättest meinen Bambusstreifen fast zerbrochen! Ähm … Die Sonne ist in letzter Zeit ziemlich stark, deshalb wollte ich dir einen Hut flechten, der dir Schatten spendet. Ich habe nur deinen Kopf ausgemessen … Was, du traust meinen Fähigkeiten nicht? Die Bambuskörbe, Kisten und Regale in der Palisade habe ich zwar nicht gemacht, aber Qingwu sagt, handgemachte Sachen hätten mehr Bedeutung. Wie auch immer, wenn der Häuptling dir ein Geschenk macht, dann nimmst du es an, egal wie es aussieht!"
+      },
+      {
+        "title": "Vertrauensgespräch 4",
+        "text": "Ich weiß, dass die Leute aus der Palisade mich „Häuptling“ nennen, aber in ihren Herzen folgen sie eigentlich meinem Bruder. Sie haben ihm Waffen gegeben und ihm das Lesen beigebracht … Mir haben sie hingegen nur Spielzeug und Klamotten gegeben und mich beim Training einfach nur geduldet. Selbst jetzt kenne ich kaum Schriftzeichen. Sie haben mich gut behandelt und immer versucht, mich bei Laune zu halten. Keine Fehler, keine Schuld. Ich kann mich nur selbst ohrfeigen, dass ich mich nicht mehr engagiert habe. Aber jetzt ist alles anders. Ich werde ein guter Anführer sein – nicht nur für die Palisade oder mich selbst, sondern für alle, die an mich glauben."
+      },
+      {
+        "title": "Vertrauensgespräch 5",
+        "text": "Finstermaske, du bist in jeder Hinsicht super – außer in einer: Deine Haltung ist viel zu steif! Ich kann mich nicht einmal richtig an dich heranschleichen, um dir auf die Schulter zu klopfen oder dir durch die Haare zu wuscheln … Warum? Weil ich dich belohnen will natürlich! Das ist ein Zeichen des Vertrauens zwischen uns … Hey, denk nicht mal daran, mir durch die Haare zu wuscheln! Ich bin der Boss, und der Kopf des Bosses ist tabu!"
+      },
+      {
+        "title": "Geplauder 1",
+        "text": "Schwimmen, Stocherkahn fahren, Steine flitschen – alles, was mit Wasser zu tun hat, liegt mir total! Die Palisadenbewohner sagen, ich sei ein von der Ahnenquelle gesegnetes Kind, und das Wasser liebe mich einfach. Aber mal ganz unter uns? Die Wahrheit ist, dass ich mit einem Auge nicht gut sehen kann und deshalb beim Schwimmen immer hinterherhinkte. Ich wollte mich damit nicht abfinden und habe deshalb jeden Tag trainiert … bis ich es endlich geschafft hatte, mit einem Auge zu sehen und alle hinter mir zu lassen! Wie heißt es doch so schön? Richtig: Harte Arbeit zahlt sich aus!"
+      },
+      {
+        "title": "Geplauder 2",
+        "text": "Meine Handfeuerwaffe hat mir mein Vater hinterlassen, meine Kleidung hat Qingwu genäht, meine Haare hat mein Bruder geschnitten und die Verbände hat Shui Ling gefertigt … So läuft das bei uns in der Palisade. Es gibt keine festen Berufe. Jeder muss ein bisschen von allem können und sich gegenseitig helfen … Ach ja, und ich kann viel besser Haare schneiden als mein Bruder! Willst du es mal probieren? Deine Frisur? Zwei Kugeln sollten reichen. Hey, Finstermaske, hör auf wegzulaufen!"
+      },
+      {
+        "title": "Geplauder 3",
+        "text": "Im Winter haben wir die gefangenen Flössler auf Bambusgestellen getrocknet, um Trockenfisch herzustellen. In diesen paar Monaten roch die ganze Qingbo-Palisade so übel, dass ich mir fast gewünscht hätte, Mi Fu würde mich einfach nach Wuling mitnehmen. Aber als sie dann komplett getrocknet waren, mit Gemüse gebraten und auf Reis serviert wurden … Einfach lecker! Weißt du, es ist irgendwie wie im Leben: Erst ist es bitter, dann wird es süß. Am Ende klappt immer alles!"
+      },
+      {
+        "title": "Geplauder 4",
+        "text": "Hier, noch ein Tangtang-Zerti für dich. Du hast mir gestern in der Kantine geholfen, deshalb bin ich dir etwas schuldig. Hmpf! Aber diese Maschine, die kleine Flaschen ausspuckt, wenn man sie tritt? Ich war definitiv nicht derjenige, der sie kaputtgemacht hat … Egal, vergiss das einfach. Du hast jetzt viel zu viele Tangtang-Zertis. Ich muss die Regeln ändern! Ab jetzt brauchst du, Finstermaske, 500, um sie einzulösen … Hehe, meine Zertis, meine Regeln!"
+      },
+      {
+        "title": "Geplauder 5",
+        "text": "Ich verdecke dieses Auge nicht, weil die Oripathie es lichtempfindlich gemacht hat … sondern, weil ich dadurch diese Originium-Techniken nutzen kann. Früher konnte ich sie nicht kontrollieren und habe bei einem Kampf einer verrückten Frau wehgetan, die noch heute eine Narbe davon hat … Ich hatte Angst, noch jemanden zu verletzen, deshalb trage ich seitdem die Augenklappe. Aber hey, alle sagen, dass ich damit mehr wie ein Häuptling wirke. Deshalb trage ich sie auch heute noch!"
+      },
+      {
+        "title": "Thema: Qingbo-Palisade.",
+        "text": "Weißt du, vor über 100 Jahren hatten unsere Vorfahren in der Qingbo-Palisade die Nase voll von all den Kämpfen und Rivalitäten. Sie verließen diesen konfliktreichen Ort und ließen sich an der Ahnenquelle nieder. Doch nachdem die Leute aus Wuling angekommen waren, fingen wir wieder an, uns zu streiten. Es scheint, als könne man dem Groll und dem Streit nirgendwo entkommen. Denn diese Dinge sind tief in den Herzen aller Menschen verwurzelt. Wenn ich dieses Haus jedoch gut führe, werden sich diese Konflikte nicht wiederholen … Nein, mehr als das. Ich werde hier in Endfield zusammen mit euch allen noch Größeres erreichen!"
+      },
+      {
+        "title": "Thema: Mi Fu",
+        "text": "Weißt du, Mi Fu war früher eine von uns in der Palisade. Eines Tages hat sie dann einfach die Nerven verloren und musste diesen Zhuang als ihren Boss anerkennen. Das hat mich fast um den Verstand gebracht. Ich habe ihr immer wieder gesagt, dass ich ein viel besserer Anführer wäre als Zhuang, aber sie hat nie zurückgeblickt … Quatsch! All die Male, die ich nach Wuling City gefahren bin? Da wollte ich sie nicht bitten, nach Hause zu kommen. Ich wollte sie verprügeln!"
+      },
+      {
+        "title": "Thema: Zhuang Fangyi",
+        "text": "Diese Blitzableiterin-Tianshi? Sie verkompliziert die einfachsten Sachen immer total, wenn sie sie erklärt. Ich schwöre, jedes Wort fühlt sich wie eine Falle an, und ich brauche ewig, um sie zu entwirren. Wir sind einfach zwei verschiedene Arten von Wasser, die in entgegengesetzte Richtungen fließen … Aber um der Palisade willen muss ich ihr trotzdem zuhören. Finstermaske, hilf mir mal bei diesem Vorschlag. Was zum Teufel soll das Wort „Flächenverhältnis“ bedeuten …?"
+      },
+      {
+        "title": "Thema: Bambus-Wasserglockenspiel",
+        "text": "Wenn wir jemanden in der Palisade verlieren, lassen wir ein Bambus-Wasserglockenspiel ins Wasser … Das erste, das ich jemals steigen ließ, war für meinen Vater. Mein Bruder meinte, das Klingeln sei Papa, der von der Ahnenquelle zu uns spricht. Danach bin ich immer zum Wasser gegangen, wenn ich mich verloren gefühlt habe, und es hat mir eine Antwort gegeben. Aber wenn ich nach meinem Bruder gefragt habe, blieb es immer still. Ich habe lange, lange gewartet, bis mir die Augen zufielen … Vielleicht dachte Papa, dass ich das alleine herausfinden musste."
+      },
+      {
+        "title": "Thema: Lesen",
+        "text": "Normalerweise lese ich nicht so gern, aber die Bücher, die mir Grünschuppe letztes Mal gegeben hat, waren echt gut. Sie meinte, sie kämen aus Hongshan und seien für Kinder, die noch nicht lesen können. Aber ehrlich gesagt sind die Lektionen in den Büchern wirklich gut erklärt. Das schaffen viele Erwachsene nicht, obwohl sie alle Wörter kennen. Als ich sie der Crew gezeigt habe, haben sich zumindest alle auf die Knie geklopft und gesagt: „Macht Sinn!“ Würden die Menschen in dieser Welt so klar reden wie in diesen Büchern, gäbe es dann nicht viel weniger Probleme und Missverständnisse?"
+      },
+      {
+        "title": "Ressource/Sammelobjekt entdeckt 1",
+        "text": "Augen auf, hier gibt’s glänzende Sachen!"
+      },
+      {
+        "title": "Ressource/Sammelobjekt entdeckt 2",
+        "text": "Da drüben ist ein Schatz! Hilf mir mal!"
+      },
+      {
+        "title": "Unerforschter Bereich entdeckt",
+        "text": "Dieser Bereich ist noch unberührt – lass uns ihn erkunden!"
+      },
+      {
+        "title": "Starker Gegner entdeckt",
+        "text": "Dein Boss ist da! … Moment mal, der sieht aber streng aus …"
+      },
+      {
+        "title": "Abbau 1",
+        "text": "Was für hübsche Steine! Grabt, grabt, grabt!"
+      },
+      {
+        "title": "Abbau 2",
+        "text": "Funkelnde Sachen. Teilen wir sie auf!"
+      },
+      {
+        "title": "Kiste öffnen",
+        "text": "Moment mal … will das denn niemand haben? Dann nehme ich sie eben!"
+      },
+      {
+        "title": "Aurylen erhalten",
+        "text": "Kann ich das gegen Bares verkaufen?"
+      },
+      {
+        "title": "Eliminierung der Verderbnis",
+        "text": "Cooooool! Jetzt können wir ein paar nervige Umwege vermeiden."
+      },
+      {
+        "title": "Ausruhen",
+        "text": "Puh … Ich bin total fertig … Ob ich nicht mehr weiterkann? Ha! Das Wort „nicht“ gibt es in meinem Wörterbuch nicht! Los, wir machen weiter!"
+      },
+      {
+        "title": "Taktische Nutzung 1",
+        "text": "Ich hab dir doch gesagt, dass ich dich schütze!"
+      },
+      {
+        "title": "Taktische Nutzung 2",
+        "text": "Ah, viel besser!"
+      },
+      {
+        "title": "Gefahrenwarnung",
+        "text": "Hör auf zu glotzen! Geh zurück!"
+      },
+      {
+        "title": "Verletzt",
+        "text": "So … müde … muss … durchhalten …"
+      },
+      {
+        "title": "0 LP",
+        "text": "Ich lass dich heute noch mal davonkommen …"
+      },
+      {
+        "title": "Teammotivation 1",
+        "text": "Das ist mein Superstar-Kumpel!"
+      },
+      {
+        "title": "Teammotivation 2",
+        "text": "Unsere kleine Truppe hier hat echt was drauf!"
+      },
+      {
+        "title": "Motivationsreaktion 1",
+        "text": "Cool, cool!"
+      },
+      {
+        "title": "Motivationsreaktion 2",
+        "text": "Sollen wir beim nächsten Mal etwas noch Größeres machen?"
+      },
+      {
+        "title": "Kampf beginnt 1",
+        "text": "Wer ist der Schlaumeier, der Streit sucht?"
+      },
+      {
+        "title": "Kampf beginnt 2",
+        "text": "Man muss sie einfach so erschrecken!"
+      },
+      {
+        "title": "Kampfsieg 1",
+        "text": "Das war mal ein richtig guter Kampf!"
+      },
+      {
+        "title": "Kampfsieg 2",
+        "text": "Ha, das ist alles meinem genialen Kommando zu verdanken!"
+      },
+      {
+        "title": "Kampfsieg 3",
+        "text": "Das hör ich doch gern!"
+      },
+      {
+        "title": "Kampfsieg 4",
+        "text": "Super Arbeit! Jetzt ruht euch aus. Beim nächsten Mal sind wir vorsichtiger!"
+      },
+      {
+        "title": "Niederlage im Kampf",
+        "text": "Ich kann es nicht ertragen, euch alle so leiden zu sehen … Ich schwöre euch, ich werde mich für euch alle rächen!"
+      },
+      {
+        "title": "Abschlussangriff 1",
+        "text": "Peng!"
+      },
+      {
+        "title": "Abschlussangriff 2",
+        "text": "Bämm!"
+      },
+      {
+        "title": "Kampffertigkeit 1",
+        "text": "Jetzt kannst du nicht mehr raus!"
+      },
+      {
+        "title": "Kampffertigkeit 2",
+        "text": "Eins mit dem Strom!"
+      },
+      {
+        "title": "Kampffertigkeit 3",
+        "text": "Mal sehen, wer schneller ist!"
+      },
+      {
+        "title": "Kombofertigkeit bereit 1",
+        "text": "Wann bin ich dran?!"
+      },
+      {
+        "title": "Kombofertigkeit bereit 2",
+        "text": "Zeit, dass der Häuptling mal zeigt, was er kann!"
+      },
+      {
+        "title": "Kombo wirken 1",
+        "text": "Lücke in der Verteidigung entdeckt!"
+      },
+      {
+        "title": "Kombo wirken 2",
+        "text": "Vorsicht, Rutschgefahr!"
+      },
+      {
+        "title": "Wuchtschlag 1",
+        "text": "Jetzt bist du mir ausgeliefert!"
+      },
+      {
+        "title": "Wuchtschlag 2",
+        "text": "Hab dich reingelegt! Ha!"
+      },
+      {
+        "title": "Ultimative Fertigkeit 1",
+        "text": "Ich seh dich!"
+      },
+      {
+        "title": "Ultimative Fertigkeit 2",
+        "text": "Der heißt – Stopp!"
+      },
+      {
+        "title": "Ultimative Fertigkeit 3",
+        "text": "Verschwinde mit dem Strom!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

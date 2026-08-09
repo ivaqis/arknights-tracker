@@ -123,7 +123,325 @@
         "name": "Wohltätigkeit",
         "description": "Wohltätigkeit: Geborene Altruistin\nFür Snowshine ist es zu einer Art Gewohnheit geworden … anderen ab und zu bei Besorgungen und Verpflichtungen zu helfen."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Einsatzvorbereitung 1",
+        "text": "Erwarte deine Befehle, Endministrator."
+      },
+      {
+        "title": "Einsatzvorbereitung 2",
+        "text": "Endmin! Da bist du ja!"
+      },
+      {
+        "title": "Wird zum Team hinzugefügt 1",
+        "text": "Eine neue Mission? Ich bin so was von bereit!"
+      },
+      {
+        "title": "Wird zum Team hinzugefügt 2",
+        "text": "Ich werde alle beschützen!"
+      },
+      {
+        "title": "Waffe wird gewechselt",
+        "text": "Einfach wunderbar! Und kann auch unter extremen Bedingungen eingesetzt werden!"
+      },
+      {
+        "title": "Ausrüstung wird gewechselt",
+        "text": "Der Hersteller hat wirklich viel Hirnschmalz investiert."
+      },
+      {
+        "title": "Fähigkeitsmatrix wird aktiviert",
+        "text": "Ich habe richtig hart trainiert! Muss mich ja auf alle möglichen Notfälle vorbereiten!"
+      },
+      {
+        "title": "Kampfaufzeichnungen ansehen",
+        "text": "Diese Aufzeichnungen enthalten wertvolle Referenzen! Sie geben mir viele Ideen für zukünftige Rettungseinsätze!"
+      },
+      {
+        "title": "Operator-Beförderung 1",
+        "text": "Mmh! Harte Arbeit zahlt sich immer aus! Ich werde weder Endfield noch irgendjemand anderen im Stich lassen!"
+      },
+      {
+        "title": "Operator-Beförderung 2",
+        "text": "Dadurch wird mein Einsatzbereich vergrößert, richtig? Keine Sorge! Ich bin deine Ansprechpartnerin für alle Notfallrettungen, Datenerfassungen, Logistikunterstützungen und alle anderen Arten von Außeneinsätzen!"
+      },
+      {
+        "title": "Operator-Beförderung 3",
+        "text": "Ich habe dieses Mal alle meine Eis-Tech-Einheiten für Rettungseinsätze verbessert, Endmin! Schau mal! Ich habe gerade ein provisorisches Iglu gebaut! Komm vorbei und übernachte bei mir!"
+      },
+      {
+        "title": "Operator-Beförderung 4",
+        "text": "In der Zeit bei Endfield habe ich viel Neues gelernt und viel Schönes erlebt … Danke für dein Vertrauen, Endmin. Von nun an werde ich immer höhere Gipfel erklimmen … und so viele Leute wie möglich retten."
+      },
+      {
+        "title": "Operatorin meldet sich zum Dienst",
+        "text": "Hallo! Ich bin deine Operatorin aus Rhodes Island. Codename „Snowshine“. Ich bin Rettungsexpertin und auf Tieftemperatureinsätze spezialisiert. Hol mich ins Team, wenn du eine Mission in den Eisfeldern oder schneebedeckten Bergen zu erfüllen hast."
+      },
+      {
+        "title": "Warten 1",
+        "text": "Gehst du mit mir zum Snowboarden, Endmin?"
+      },
+      {
+        "title": "Warten 2",
+        "text": "Windgeschwindigkeit okay. Sichtweite gut. Perfektes Wetter zum Snowboarden."
+      },
+      {
+        "title": "Zuweisung zur Anlage",
+        "text": "Kein Problem! Ich habe tatsächlich jeden Job an diesem Ort ausprobiert! Und sie alle sind viel einfacher als das Errichten von Befestigungen!"
+      },
+      {
+        "title": "Gruß 1",
+        "text": "Hallo Endmin."
+      },
+      {
+        "title": "Gruß 2",
+        "text": "Brauchst du Hilfe, Endmin? Ich kann deine Verteidigerin sein!"
+      },
+      {
+        "title": "Dijiang-Geplauder 1",
+        "text": "Jedes Mal, wenn ich an Bord der Dijiang gehe, lerne ich jede Menge Neues: Es gibt Technik und Maschinen, die ich noch nie zuvor gesehen habe, spezielle Kampftheorien, kühne Überwachungspläne … Ach, ich kann kaum mit allem Schritt halten! Endfield ist einfach großartig! Und das meine ich ernst!"
+      },
+      {
+        "title": "Dijiang-Geplauder 2",
+        "text": "Wie bitte? In der Kantine der Dijiang gibt es eine All-you-can-eat-Snackbar? Oh, entschuldige. Ich war nur etwas überrascht … Nein, natürlich nicht! Ich werde nicht alles aufessen! Ehrlich!"
+      },
+      {
+        "title": "Dijiang-Geplauder 3",
+        "text": "Endmin! Du kommst gerade rechtzeitig! Mein Paket ist angekommen, und ich frage mich, ob du mein spezielles Käsefondue probieren möchtest? Der Geschmack …? Ich finde ihn ziemlich … speziell? Viele meiner Kollegen haben es als „unvergessliches Erlebnis“ bezeichnet …"
+      },
+      {
+        "title": "Dijiang-Geplauder 4",
+        "text": "Hnnnggghh! Dehnen macht die Gelenke locker. Diese Übung kann Muskelrissen vorbeugen und Unterkühlung in polaren Umgebungen verhindern. Lust, es mal auszuprobieren? Keine Sorge. Ich war als Assistenztrainerin bei den Trainingseinheiten dabei, also kann ich dir bestimmt die richtige Haltung zeigen! Siehst du? Ganz einfach, oder?"
+      },
+      {
+        "title": "Dijiang-Geplauder 5",
+        "text": "Flinx erinnert mich jedes Mal, wenn ich ihn sehe, an unseren Hauptmann. Er ist ebenfalls ein Perro und ein wirklich netter Kerl – aber sobald eine Rettungsmission beginnt, wird er zum strengsten Boss aller Zeiten. Er lässt uns sogar mehrere Kaliberprüfungen am Heißwasser-Bohrkopf durchführen … „Bei Rettungseinsätzen zählt jedes noch so kleine Detail!“ Das habe ich von ihm gelernt."
+      },
+      {
+        "title": "Dijiang-Geplauder 6",
+        "text": "Das Licht, das sich in den Wolken von Talos-II spiegelt, kann so schön sein. Es erinnert mich an die Aurora, die ich kenne … und an die Visionen in meinen Träumen. Ich sehe sie oft, wenn ich auf den höchsten Gipfeln der nördlichen Schneeberge stehe. Ich weiß, dass das Licht eine Form gefährlicher Æther-Energie ist, aber es zu sehen, fühlte sich an, als würde ich einen alten Freund treffen … jemanden, der mich beobachtet … und aus der Ferne beschützt …"
+      },
+      {
+        "title": "Geschenke anbieten",
+        "text": "Endmin, das ist für dich. Eine Kleinigkeit, die ich aus den Schneefeldern mitgebracht habe."
+      },
+      {
+        "title": "Geschenke annehmen",
+        "text": "Ist das für mich? Oh, danke! Es fühlt sich richtig warm an … Ich werde es auf jeden Fall in Ehren halten!"
+      },
+      {
+        "title": "Vertrauensgespräch 1",
+        "text": "Sieh mal, Endmin! Ich habe meine Originium-Techniken eingesetzt, um diese Eisbarriere zu erschaffen! Äußerst stabil, oder? Keine Sorge! Schlag ruhig mit mehr Wumms drauf! Du wirst nicht mal einen Kratzer verursachen!"
+      },
+      {
+        "title": "Vertrauensgespräch 2",
+        "text": "Hast du endlich mal wieder eine Pause bekommen, Endmin? Ich sehe dich ständig pausenlos durch die Gegend rennen … Hmm, du solltest wirklich auf deine Work-Life-Balance achten. Erinnerst du dich noch an unser letztes Rettungstraining? Du hast mich total überrascht, als ich dich getragen habe … Ich konnte kaum glauben, dass du leichter bist als ein neugeborenes Monsterbestienkalb …"
+      },
+      {
+        "title": "Vertrauensgespräch 3",
+        "text": "Nicht jeder Rettungseinsatz ist ein Erfolg … Plötzliche Wetter- oder Geländeveränderungen können schneller eintreten als erwartet. Deshalb überprüfe ich meine Ausrüstung vor jedem Einsatz dreimal. Drohnen, Wärmebildkameras … jedes Ausrüstungsteil ist ein wichtiger Helfer für jeden R-Team-Operator. Nur so können wir selbstbewusst mutige Rettungspläne umsetzen."
+      },
+      {
+        "title": "Vertrauensgespräch 4",
+        "text": "Ich habe einmal einen Vater und seine Tochter aus einer Lawine gerettet … Wahrscheinlich hatten sie einen Streit und ignorierten sich absichtlich in der von mir errichteten Behelfsunterkunft. Doch als der Schneesturm immer heftiger wurde, versorgte der Vater das Mädchen mit Essen, und das Mädchen kümmerte sich nach Kräften um ihren Vater … Sie wurden erfolgreich evakuiert, aber die beiden weigerten sich immer noch, miteinander zu sprechen. Ich fragte mich, ob das der Sinn von „Familienbande“ ist. Auch wenn ihnen die Worte fehlen, stehen Familien in entscheidenden Momenten immer füreinander ein …"
+      },
+      {
+        "title": "Vertrauensgespräch 5",
+        "text": "Das Retten von Leben ist keine leichte Aufgabe. Ich habe mir nie eingebildet, alle retten zu können, ohne Opfer zu bringen. Ich bin die Letzte aus meinem Rettungsteam. Durch die Verderbnis haben einige schwere bleibende Verletzungen davongetragen. Manche verloren in den eisigen, verschneiten Nächten den Verstand … Es gab Zeiten der Verwirrung und Momente, in denen mich die Angst packte. Aber ihr Endfielder seid so großartig und so stark! Ich glaube, wir alle können dank eurer Unterstützung noch besser werden, Endmin!"
+      },
+      {
+        "title": "Geplauder 1",
+        "text": "Was es mit diesem Snowboard auf sich hat? Das ist ein Geschenk von Lady Warfarin, als ich Rhodes Island verließ. Das Board ist aus seltenen Materialien gefertigt, genau wie mein Schild. Und es ist extrem vielseitig in Rettungseinsätzen! Hmm … Endmin, interessierst du dich fürs Snowboarden? Das kann ich dir bestimmt beibringen!"
+      },
+      {
+        "title": "Geplauder 2",
+        "text": "Die Rettungsorganisation untersteht dem Rettungsbund des Nordkorridors. Unsere Missionen umfassen häufig im Norden arbeitende Boten, Handlungsreisende und Militärkundschafter, die sich nach einem Angriff der Aggeloi oder wilder Tiere verirrt haben. Die Mitglieder meines Rettungsteams kommen aus aller Welt, und die meisten von uns sind Freiwillige. Im Rettungsteam kämpft man ständig gegen Eis, Schnee und unwegsames Gelände, aber ich hatte dabei die Gelegenheit, die unterschiedlichsten Leute kennenzulernen."
+      },
+      {
+        "title": "Geplauder 3",
+        "text": "Ein Operator hat mich kürzlich gefragt, ob er dem R-Team beitreten könne. Das ist wirklich nicht schwer! Trainiere einfach fürs Bergsteigen, überstehe stundenlange, pausenlose Rettungseinsätze, meistere einige Techniken für polares Überleben, lerne Ankhors und großen Tieren auszuweichen und absolviere den kompletten Erste-Hilfe-Kurs – zumindest so weit, dass du mit plötzlicher Oripathie umgehen kannst! Und schließlich musst du nur noch die spezielle Einsatzprüfung bestehen – und schon bist du offizielles Mitglied des R-Teams!"
+      },
+      {
+        "title": "Geplauder 4",
+        "text": "Ich mag Schnee, die weißen Berggipfel und die schimmernde Schönheit, die sich nur in der eisigen Kälte offenbart … Deshalb möchte ich nicht, dass er den Leuten, die ihn berühren, schmerzhafte Erinnerungen hinterlässt. Wenn die Leute die schneebedeckten Berge sehen, sollte ihnen vor allem die hinreißende Aussicht vom Gipfel in Erinnerung bleiben. Und wenn der Schnee fällt, hoffe ich, dass sie an makellose Kristalle und Eisblüten denken … *seufz* Es wäre so traurig, wenn alle nur an Katastrophen denken würden. Endmin, ich werde weiterhin nach diesen Zielen streben."
+      },
+      {
+        "title": "Geplauder 5",
+        "text": "Hast du mich gestern gesucht, Endmin? Das habe ich leider nicht bemerkt. Ich habe definitiv ein Nickerchen gemacht, um den Schlafmangel auszugleichen. Ja, Nickerchen ist das Erste, was ich nach einer Rettungsmission mache … Und manchmal kann es vorkommen … dass ich versehentlich ziemlich viel verschlafe. Aber du kannst mich im Notfall einfach wecken! Deine Stimme macht mich im Nu wach und bereit, Endmin!"
+      },
+      {
+        "title": "Thema: Rettungstraining",
+        "text": "Auf jeden Fall! Rettungstraining ist super wichtig! Bei Naturkatastrophen wie Lawinen können sich die Leute schnell in Sicherheit bringen … Und das kann ihre Überlebenschancen deutlich verbessern! Das geht aber nur mit einem ausgeprägten Katastrophenbewusstsein … Also, Endmin, du nimmst doch am nächsten Rettungstraining teil, oder?"
+      },
+      {
+        "title": "Thema: Gilberta",
+        "text": "Ist Fräulein Gilberta auch an Bord der Dijiang? Oh, sie hat sich einfach bei mehreren Rettungseinsätzen wirklich ins Zeug gelegt. Sie lieferte lebenswichtige Güter, evakuierte Verletzte aus der Luft und ortete sogar mitten in einem schrecklichen Schneesturm ein SOS-Signal! Das Rettungsteam versuchte, ihr unsere Wertschätzung zu zeigen, aber sie lehnte alles ab. Schließlich bat sie um ein paar Fotos von der schönen Aussicht von den schneebedeckten Gipfeln. Hehe. Wie findest du das hier? Den Bilderrahmen habe ich selbst gebaut!"
+      },
+      {
+        "title": "Thema: Polares Überleben",
+        "text": "Polares Überleben ist nicht einfach … Zu den grundlegenden Kenntnissen gehört es, geeignete Nachtlager aufzuschlagen, um bei Schneestürmen Unterkühlung zu vermeiden, in den verderbten Eisfeldern essbare Nahrung zu finden, stabile Wege zum Überqueren von Gletschern zu erkennen … und, was am wichtigsten ist, einen sicheren Weg zum Ziel zu finden. Das bedeutet, man muss lernen, wie Aggeloi, hungrige Tiere und andere Gefahren in Katastrophengebieten gemieden werden können."
+      },
+      {
+        "title": "Ressource/Sammelobjekt entdeckt 1",
+        "text": "Wir sollten diese Ressourcen einsammeln! Sie könnten bei Rettungseinsätzen nützlich sein."
+      },
+      {
+        "title": "Ressource/Sammelobjekt entdeckt 2",
+        "text": "Scheint eine tolle Entdeckung zu sein. Vielleicht sind sie in zukünftigen Einsätzen von Nutzen!"
+      },
+      {
+        "title": "Unerforschter Bereich entdeckt",
+        "text": "Unsere Drohnen haben dieses Gebiet noch nicht erkundet. Wir sollten wachsam sein, Leute."
+      },
+      {
+        "title": "Starker Gegner entdeckt",
+        "text": "Seid alle vorsichtig! Dieser Gegner sieht sehr gefährlich aus!"
+      },
+      {
+        "title": "Abbau 1",
+        "text": "Hochwertige Mineralien. Wir können sie wahrscheinlich für den Bau von Behelfsunterkünften einsetzen …"
+      },
+      {
+        "title": "Abbau 2",
+        "text": "Wir machen das gemeinsam. So sind wir schneller."
+      },
+      {
+        "title": "Kiste öffnen",
+        "text": "Das sollten wir unserem Notfallvorrat hinzufügen!"
+      },
+      {
+        "title": "Aurylen erhalten",
+        "text": "Ist das Aurylen? Wie schön … Wir sollten es ordnungsgemäß lagern!"
+      },
+      {
+        "title": "Eliminierung der Verderbnis",
+        "text": "Eliminierung erfolgreich! Leute, überprüft eure verderbnisresistente Beschichtung auf Schäden!"
+      },
+      {
+        "title": "Ausruhen",
+        "text": "Möchtest du Käse? Der stellt deine Ausdauer wieder her!"
+      },
+      {
+        "title": "Taktische Nutzung 1",
+        "text": "Notfallbehandlung durchgeführt!"
+      },
+      {
+        "title": "Taktische Nutzung 2",
+        "text": "Tut mir leid …! Ich muss erst mal zu Atem kommen!"
+      },
+      {
+        "title": "Gefahrenwarnung",
+        "text": "Lass dich davon nicht treffen!"
+      },
+      {
+        "title": "Verletzt",
+        "text": "Schon okay. Das halte ich aus …"
+      },
+      {
+        "title": "0 LP",
+        "text": "Tut mir leid … Ich konnte diesem Sturm nicht standhalten …"
+      },
+      {
+        "title": "Teammotivation 1",
+        "text": "Fantastische Teamarbeit!"
+      },
+      {
+        "title": "Teammotivation 2",
+        "text": "Fabelhafte Arbeit!"
+      },
+      {
+        "title": "Motivationsreaktion 1",
+        "text": "Genau so sollten wir weitermachen!"
+      },
+      {
+        "title": "Motivationsreaktion 2",
+        "text": "Danke für deine Unterstützung!"
+      },
+      {
+        "title": "Kampf beginnt 1",
+        "text": "Ich mache den Weg für die Rettung frei!"
+      },
+      {
+        "title": "Kampf beginnt 2",
+        "text": "Ja! Frier sie ein!"
+      },
+      {
+        "title": "Kampfsieg 1",
+        "text": "Puh. Der Kampf ist vorbei. Lasst uns eine Pause einlegen, solange wir noch können."
+      },
+      {
+        "title": "Kampfsieg 2",
+        "text": "Alle haben ihr Bestes gegeben. Aber ich muss noch zulegen!"
+      },
+      {
+        "title": "Kampfsieg 3",
+        "text": "Gute Teamarbeit, Leute!"
+      },
+      {
+        "title": "Kampfsieg 4",
+        "text": "Keine Sorge. Wir trotzen dem Sturm und nähern uns unserem Ziel! Wenn wir unsere Kräfte einteilen, erreichen wir die Sicherheitszone frühzeitig!"
+      },
+      {
+        "title": "Niederlage im Kampf",
+        "text": "Nicht aufgeben! Wir rüsten uns aus und bereiten uns vor! Dann wiederholen wir das Ganze!"
+      },
+      {
+        "title": "Abschlussangriff 1",
+        "text": "Eiskaltes Spalten!"
+      },
+      {
+        "title": "Abschlussangriff 2",
+        "text": "Kalttornado!"
+      },
+      {
+        "title": "Kampffertigkeit 1",
+        "text": "Zurück!"
+      },
+      {
+        "title": "Kampffertigkeit 2",
+        "text": "Hier kommt niemand durch!"
+      },
+      {
+        "title": "Kampffertigkeit 3",
+        "text": "Snowshine beschützt!"
+      },
+      {
+        "title": "Kombofertigkeit bereit 1",
+        "text": "Ausgerüstet und einsatzbereit!"
+      },
+      {
+        "title": "Kombofertigkeit bereit 2",
+        "text": "Bereit für Rettung!"
+      },
+      {
+        "title": "Kombo wirken 1",
+        "text": "Atme mit mir!"
+      },
+      {
+        "title": "Kombo wirken 2",
+        "text": "Rettungsdienst eingetroffen!"
+      },
+      {
+        "title": "Wuchtschlag 1",
+        "text": "Weg mit DIR!"
+      },
+      {
+        "title": "Wuchtschlag 2",
+        "text": "Du STIRBST!"
+      },
+      {
+        "title": "Ultimative Fertigkeit 1",
+        "text": "Froststurm!"
+      },
+      {
+        "title": "Ultimative Fertigkeit 2",
+        "text": "Eisschild!"
+      },
+      {
+        "title": "Ultimative Fertigkeit 3",
+        "text": "Beim Eis und beim Schnee! Jetzt wird’s kalt!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

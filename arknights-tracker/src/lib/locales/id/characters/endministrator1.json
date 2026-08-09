@@ -93,7 +93,229 @@
         "name": "???",
         "description": ""
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Persiapan Operasi 1",
+        "text": "Kudengar Originium bernyanyi."
+      },
+      {
+        "title": "Persiapan Operasi 2",
+        "text": "Endfield akan terus maju."
+      },
+      {
+        "title": "Menambahkan ke Tim 1",
+        "text": "Aku sudah di posisi, Dijiang."
+      },
+      {
+        "title": "Menambahkan ke Tim 2",
+        "text": "Sudah hampir saatnya."
+      },
+      {
+        "title": "Berganti Senjata",
+        "text": "Boleh juga."
+      },
+      {
+        "title": "Berganti Gear",
+        "text": "Produk bagus hasil manufaktur industri."
+      },
+      {
+        "title": "Aktivasi Matriks Kemampuan",
+        "text": "Aku tahu perasaan ini ...."
+      },
+      {
+        "title": "Menonton Rekaman Pertarungan",
+        "text": "Tak akan pernah kulupakan saat aku melihat mereka."
+      },
+      {
+        "title": "Promosi Operator 1",
+        "text": "Maju selangkah lagi ...."
+      },
+      {
+        "title": "Promosi Operator 2",
+        "text": "Aku akan melindungi Endfield. Selalu."
+      },
+      {
+        "title": "Promosi Operator 3",
+        "text": "Masa lalu dan masa kini harus jadi satu."
+      },
+      {
+        "title": "Promosi Operator 4",
+        "text": "Kudengar suaranya, bergema bagaikan bisikan dalam mimpi. Berkali-kali, aku memimpikan laut tak berujung—laut yang membawa duka, membangkitkan kenangan ... dan memperkuat tekadku."
+      },
+      {
+        "title": "Siaga 1",
+        "text": "Masih menunggu yang lain?"
+      },
+      {
+        "title": "Siaga 2",
+        "text": "Originium akan membuka jalan untuk kita."
+      },
+      {
+        "title": "Menerima Hadiah",
+        "text": "Trims banyak!"
+      },
+      {
+        "title": "Sumber Daya/Barang Koleksi Terdeteksi 1",
+        "text": "Lihat, di sana ...."
+      },
+      {
+        "title": "Sumber Daya/Barang Koleksi Terdeteksi 2",
+        "text": "Ada benda penting di sana!"
+      },
+      {
+        "title": "Area yang Belum Dijelajahi Terdeteksi",
+        "text": "Area sekitar ini harus disurvei dengan cermat."
+      },
+      {
+        "title": "Musuh Kuat Ditemukan",
+        "text": "Musuh ancaman tinggi. Dekati dengan hati-hati."
+      },
+      {
+        "title": "Penambangan 1",
+        "text": "Mineral ini mungkin berguna."
+      },
+      {
+        "title": "Penambangan 2",
+        "text": "Biar kubantu."
+      },
+      {
+        "title": "Membuka Kerat",
+        "text": "Perjalanan ini sungguh memuaskan."
+      },
+      {
+        "title": "Mendapatkan Aurylene",
+        "text": "Rasanya tak asing lagi."
+      },
+      {
+        "title": "Menyingkirkan Hawar",
+        "text": "Hawar berhasil disingkirkan."
+      },
+      {
+        "title": "Istirahat",
+        "text": "Semua sudah istirahat."
+      },
+      {
+        "title": "Penggunaan Taktis 1",
+        "text": "Sudah baikan?"
+      },
+      {
+        "title": "Penggunaan Taktis 2",
+        "text": "Sekarang rasanya jauh lebih baik."
+      },
+      {
+        "title": "Peringatan Bahaya",
+        "text": "Serangan datang! Awas!"
+      },
+      {
+        "title": "Cedera",
+        "text": "Aku masih bisa bertarung ...."
+      },
+      {
+        "title": "0 HP",
+        "text": "Maaf .... Sekarang, semua terserah kau ...."
+      },
+      {
+        "title": "Penyemangat Tim 1",
+        "text": "Jurusmu mulus sekali."
+      },
+      {
+        "title": "Penyemangat Tim 2",
+        "text": "Kita kompak sekali."
+      },
+      {
+        "title": "Respons Penyemangat 1",
+        "text": "Aku merasa tersanjung."
+      },
+      {
+        "title": "Respons Penyemangat 2",
+        "text": "Kerja sama tim kita makin kompak saja."
+      },
+      {
+        "title": "Mulai Pertarungan 1",
+        "text": "Saatnya bertarung."
+      },
+      {
+        "title": "Mulai Pertarungan 2",
+        "text": "Aku siap membantumu."
+      },
+      {
+        "title": "Menang Pertarungan 1",
+        "text": "Kita berhasil maju selangkah lagi, Endfielder."
+      },
+      {
+        "title": "Menang Pertarungan 2",
+        "text": "Bagus, Teman-teman."
+      },
+      {
+        "title": "Menang Pertarungan 3",
+        "text": "Kita berhasil bertarung dengan baik!"
+      },
+      {
+        "title": "Menang Pertarungan 4",
+        "text": "Kalian semua baik-baik saja?"
+      },
+      {
+        "title": "Kalah Bertarung",
+        "text": "Tak usah khawatir. Kita berkumpul lagi saja dan cari solusinya."
+      },
+      {
+        "title": "Final Strike 1",
+        "text": "Rasakan, nih!"
+      },
+      {
+        "title": "Final Strike 2",
+        "text": "Lihat, nih!"
+      },
+      {
+        "title": "Skill Tarung 1",
+        "text": "Serang!"
+      },
+      {
+        "title": "Skill Tarung 2",
+        "text": "Remuklah!"
+      },
+      {
+        "title": "Skill Tarung 3",
+        "text": "Taklukkan mereka!"
+      },
+      {
+        "title": "Skill Kombo Siap 1",
+        "text": "Siap menyerang."
+      },
+      {
+        "title": "Skill Kombo Siap 2",
+        "text": "Percayalah kepadaku."
+      },
+      {
+        "title": "Penggunaan Kombo 1",
+        "text": "Mengkristallah!"
+      },
+      {
+        "title": "Penggunaan Kombo 2",
+        "text": "Hadapilah ajalmu!"
+      },
+      {
+        "title": "Penuntas 1",
+        "text": "Sekarang, tamatlah kau!"
+      },
+      {
+        "title": "Penuntas 2",
+        "text": "Kena!"
+      },
+      {
+        "title": "Ultimate 1",
+        "text": "Tak ada kesempatan kedua."
+      },
+      {
+        "title": "Ultimate 2",
+        "text": "Ajal sudah menantimu."
+      },
+      {
+        "title": "Ultimate 3",
+        "text": "Selesai sudah."
+      }
+    ]
   },
   "potentials": {
     "potential1": {

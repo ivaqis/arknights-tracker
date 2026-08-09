@@ -118,7 +118,325 @@
         "name": "Criatividade",
         "description": "Criatividade: Modificação de Armas\nModificar munição entalhada pode ser um trabalho chato, mas ele gosta de encontrar pessoas para testar a sua."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Prep Operação 1",
+        "text": "O comando é seu."
+      },
+      {
+        "title": "Prep Operação 2",
+        "text": "Já estamos de saída?"
+      },
+      {
+        "title": "Adicionando à equipe 1",
+        "text": "Precisa de mim na equipe? Claro. Só garanta que os outros acompanhem."
+      },
+      {
+        "title": "Adicionando à equipe 2",
+        "text": "Uma atribuição em equipe...? Entendido. Farei o que for preciso."
+      },
+      {
+        "title": "Trocando de arma",
+        "text": "Um equilíbrio muito bom. Agradecido."
+      },
+      {
+        "title": "Trocando de equipamento",
+        "text": "Armados até os dentes... Uma decisão muito sábia."
+      },
+      {
+        "title": "Ativação da Matriz de Capacidade",
+        "text": "Habilidades verdadeiramente dominadas devem ser usadas em situações verdadeiramente desesperadoras."
+      },
+      {
+        "title": "Assistindo a Registros de Combate",
+        "text": "A Matilha caça com propósito. Somente o caminho mais rápido para a vitória será suficiente."
+      },
+      {
+        "title": "Promoção do Operador 1",
+        "text": "Agradeço sua aprovação, Endmin. Então, posso pular o relatório da missão desta vez? Não...? Tudo bem."
+      },
+      {
+        "title": "Promoção do Operador 2",
+        "text": "Como você pode ver, Endmin, confie a mim as tarefas certas e eu deixo os resultados falarem por si."
+      },
+      {
+        "title": "Promoção do Operador 3",
+        "text": "Cada lobo da Matilha conquista seu lugar pelo derramamento de sangue. Abata presas suficientes e você se reerguerá. Endmin, isso significa que você aprovou minha caçada?"
+      },
+      {
+        "title": "Promoção do Operador 4",
+        "text": "Testemunhei a decadência da Matilha e a devastação que a acompanha. É por isso que decidi encontrar um novo caminho para Rossi e o resto dos lobos... O destino nos uniu, Endministrator. É uma honra trilhar esse caminho com você."
+      },
+      {
+        "title": "Operador se apresentando para o trabalho",
+        "text": "Catello Wulfgard Luppino, Equipe de Crises da Endfield. Eu represento a Matilha. Me dê qualquer trabalho de mercenário e, enquanto nosso contrato estiver em vigor, serei suas garras e presas."
+      },
+      {
+        "title": "Em espera 1",
+        "text": "Tem uma nova atribuição?"
+      },
+      {
+        "title": "Em espera 2",
+        "text": "Estou aqui."
+      },
+      {
+        "title": "Atribuindo a Instalação",
+        "text": "Está com pouca gente aqui também?"
+      },
+      {
+        "title": "Saudação 1",
+        "text": "Endmin."
+      },
+      {
+        "title": "Saudação 2",
+        "text": "Precisa que eu vá junto, Endmin? Posso arranjar um tempo para você."
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 1",
+        "text": "Não é fácil trabalhar com os outros operadores. O jeito da matilha e minha natureza solitária não são para todos. Mas se você me quiser na linha... eu me adaptarei e farei dar certo."
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 2",
+        "text": "Sinto-me mais à vontade na fronteira do que a bordo da Dijiang. Um lugar confortável como este te deixa sensível. Mas Rossi adora este lugar. A nave satisfaz sua curiosidade."
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 3",
+        "text": "Vou ser direto com você. Nunca me interessei em estudar os outros clãs de Invasores de Terras. Apenas passei bastante tempo nas terras selvagens... e as habilidades de sobrevivência simplesmente se tornaram parte de mim. Na Matilha, acreditamos que o melhor professor é o nosso instinto de sobrevivência. É a nossa *única* crença."
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 4",
+        "text": "Os operadores da Endfield vêm de todos os cantos de Talos-II, e vejo alguns rostos familiares... Ou melhor, ameaças familiares. Ainda confio no seu julgamento, mas quando a situação exigir, espero que você possa confiar nos meus instintos."
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 5",
+        "text": "Verificar armas é meu ritual. Na natureza, se suas presas falharem, você vira carne. O mesmo vale para uma arma morta — todas as suas habilidades, todo o seu treinamento, inúteis. Sem poder, sem defesa — apenas morte lenta. Eu passei por isso quando era filhote. Essa lição ficou. Não serei uma presa novamente."
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 6",
+        "text": "Já faz um bom tempo desde a última vez que visitei meu clã ou os liderei em uma caçada. Sou melhor em encontrar novos territórios de caça do que em liderar ataques como Alpharion."
+      },
+      {
+        "title": "Oferta de Presentes",
+        "text": "Tem um tempinho, Endmin? Encontrei algo interessante na minha última missão... e trouxe para você."
+      },
+      {
+        "title": "Aceitando presentes",
+        "text": "Para mim? Agradecido. Vou fazer bom uso dele."
+      },
+      {
+        "title": "Diálogo de Confiança 1",
+        "text": "Já estou tratando meus alvos de acordo com os requisitos da Endfield. Se eu fizesse as coisas do jeito antigo... eles ficariam *muito, mas muito* quietos assim que eu colocasse as mãos neles."
+      },
+      {
+        "title": "Diálogo de Confiança 2",
+        "text": "Acredito que você tenha percebido que... me tornar o Alpharion da Matilha nunca foi meu objetivo. Rossi pode ser melhor nessa função. Também não tenho certeza se a Endfield é um local de descanso adequado para Catello Wulfgard Luppino. A visão do Invasor de Terras não poderia ser mais diferente da sua. No entanto, trabalhar com a Endfield é pelo menos muito mais agradável do que eu esperava, Endmin."
+      },
+      {
+        "title": "Diálogo de Confiança 3",
+        "text": "Por que fico olhando para o céu? Bem, é algo que eu gosto. Por que te surpreende? O céu é uma fonte gratuita de informações. Ele informa sobre o clima, a hora e sua orientação. Você pode até usá-lo para prever as ações inimigas. Todo caçador segue as mesmas regras sob o céu. Você também pode aprender algo sobre isso, Endmin."
+      },
+      {
+        "title": "Diálogo de Confiança 4",
+        "text": "Minha identidade de Invasor de Terras é o resultado de uma má escolha dos meus ancestrais. Traímos o Cinturão da Civilização para nos juntar aos Lordes Invasores, mas falhamos em trazer a ordem ou a justiça com que sonhávamos. Não posso perguntar aos meus antepassados ​​se eles se arrependeram da escolha, mas tendo nascido em uma vida cheia de conflitos e derramamento de sangue nas terras selvagens, conheço a sobrevivência melhor do que a maioria. A Supervisora ​​Perlica disse que poderíamos nos livrar do rótulo de Invasores de Terras trabalhando com a Endfield... mas para mim, é quem eu sou. *Suspiro* Isso te decepciona, Endmin?"
+      },
+      {
+        "title": "Diálogo de Confiança 5",
+        "text": "A Matilha é construída sobre uma lógica simples: os fracos devem se unir para derrotar os fortes e sobreviver em um mundo sem misericórdia. Todo código do clã e a própria identidade dos Invasores de Terras se baseiam nisso. Mas o que a Endfield tem? Uma grande visão é uma espada de dois gumes. Embora a Matilha sempre possa começar outra caçada, a Endfield dificilmente se daria ao luxo de uma única derrota. Este mundo é implacável, Endministrator. Mas pelo menos eu faço parte da sua caçada e compartilharei parte do seu fardo."
+      },
+      {
+        "title": "Chat 1",
+        "text": "Sei que força não é tudo, mas, em Talos-II, não se vive sem ela."
+      },
+      {
+        "title": "Chat 2",
+        "text": "A Rossi adora colecionar coisas intrincadas como essas. Não sei para que servem, mas se for para ela... Vou dar uma volta e procurar mais."
+      },
+      {
+        "title": "Chat 3",
+        "text": "O idealismo irrealista destrói mais vidas do que salva. A maioria dos pioneiros aprende isso da maneira mais difícil. A verdadeira tragédia é que algumas pessoas estão destinadas a ser vítimas."
+      },
+      {
+        "title": "Chat 4",
+        "text": "Prefiro resolver os problemas sozinho. Não que eu ache que consigo lidar com tudo — só espero tirar o peso das costas de outra pessoa."
+      },
+      {
+        "title": "Chat 5",
+        "text": "Dificilmente se pode forçar um lobo solitário a dar as costas à sua antiga matilha... Isso é inquestionável. Mas alguns seguiram o caminho sem volta em nome da sobrevivência... ou por algo que lhes é caro. Não consigo simpatizar com eles e não pretendo interferir. Simplesmente reconheço a determinação por trás de suas escolhas."
+      },
+      {
+        "title": "Tópico: A Matilha",
+        "text": "Até hoje, continuo buscando o futuro da Matilha... Trabalhar com a Endfield pode não ser a melhor opção, mas acredito que seja um passo importante e especial que devemos dar. Entendo que ninguém de fora pode mudar a mentalidade da Matilha, mas o que precisamos é de uma oportunidade para iniciar a mudança. Agora, como apresentar essa \"oportunidade\" à Matilha é algo que venho tentando descobrir."
+      },
+      {
+        "title": "Tópico: Rossi",
+        "text": "Eu deveria passar mais tempo com a Rossi, mas quando olho para ela agora... não consigo deixar de me surpreender com o quanto ela cresceu. Ela compartilha o sopro da natureza e facilmente se conecta ao Sangue da Matilha. Domínio de armas, ativação de Artes e caça... Tudo veio naturalmente para ela. Ela não é mais a criança indefesa enrolada em cobertores encharcados de sangue. Não. Ela é a Wulfperl da Famiglia Luppino. Eu sou apenas as presas da Matilha, mas Rossi sempre será o coração e a alma."
+      },
+      {
+        "title": "Tópico: Invasores de Terras",
+        "text": "Os clãs de Invasores de Terras são mais complexos do que a maioria das pessoas pensa. Além dos Quebra-Ossos e da Matilha, há os Ladrões de Areia — um clã estranho e pouco organizado que se destacou com apenas um bergantin. Há também os Cicatrizes Cinzentas, que tatuam o corpo inteiro com Versos de Ligação... E os Caveiras Sombrias, um grupo implacável de assassinos que ninguém ousa cruzar após o pôr do sol. Esses clãs menores sobreviveram às terras selvagens, então é natural que saibam alguns truques para se manterem vivos."
+      },
+      {
+        "title": "Recurso/Colecionável detectado 1",
+        "text": "Há algo que podemos pegar ali."
+      },
+      {
+        "title": "Recurso/Colecionável detectado 2",
+        "text": "Saque especial à vista. Devemos pegá-lo."
+      },
+      {
+        "title": "Área não explorada detectada",
+        "text": "Ainda não fomos lá. Melhor anotar."
+      },
+      {
+        "title": "Inimigo poderoso descoberto",
+        "text": "Cheira a problema. Este não é um inimigo comum."
+      },
+      {
+        "title": "Mineração 1",
+        "text": "Espero que o valor deles possa compensar nossos esforços."
+      },
+      {
+        "title": "Mineração 2",
+        "text": "Talvez eu deva cuidar disso... Na verdade, vamos terminar isso como uma equipe."
+      },
+      {
+        "title": "Abrindo um caixote",
+        "text": "Saque excepcional. Esta caçada se mostrou bastante frutífera."
+      },
+      {
+        "title": "Adquirindo Aurileno",
+        "text": "Aurileno... Creio que a Endfield ache valioso."
+      },
+      {
+        "title": "Eliminando a Praga",
+        "text": "Você tomou a decisão certa. A Praga só atrapalha nossa operação."
+      },
+      {
+        "title": "Descansar",
+        "text": "Verificação de munição concluída. Hora da próxima caçada."
+      },
+      {
+        "title": "Uso Tático 1",
+        "text": "Cuidado agora. Não force."
+      },
+      {
+        "title": "Uso Tático 2",
+        "text": "...Recuperei meu fôlego."
+      },
+      {
+        "title": "Aviso de Perigo",
+        "text": "Fujam!"
+      },
+      {
+        "title": "Ferido",
+        "text": "Foco na batalha, e não em mim."
+      },
+      {
+        "title": "0 PV",
+        "text": "Hngh... Evacuação médica."
+      },
+      {
+        "title": "Encorajamento da Equipe 1",
+        "text": "Belos movimentos."
+      },
+      {
+        "title": "Encorajamento da Equipe 2",
+        "text": "Ótimo trabalho em equipe."
+      },
+      {
+        "title": "Resposta a Encorajamento 1",
+        "text": "Isto não é o meu melhor."
+      },
+      {
+        "title": "Resposta a Encorajamento 2",
+        "text": "Só estou fazendo o que devo."
+      },
+      {
+        "title": "Início do Combate 1",
+        "text": "Fiquei de olho em busca de uma oportunidade."
+      },
+      {
+        "title": "Início do Combate 2",
+        "text": "Não se incomode. Vou acompanhar seu ritmo."
+      },
+      {
+        "title": "Vitória em Combate 1",
+        "text": "Não esperava nada menos."
+      },
+      {
+        "title": "Vitória em Combate 2",
+        "text": "Exatamente como eu previ."
+      },
+      {
+        "title": "Vitória em Combate 3",
+        "text": "Vencemos. É isso que importa."
+      },
+      {
+        "title": "Vitória em Combate 4",
+        "text": "Foi mais difícil do que eu pensava... Mas somos os vencedores. É isso que importa."
+      },
+      {
+        "title": "Derrota em Combate",
+        "text": "Às vezes, o caçador pode se tornar a caça... Eu digo que é hora de começar a perseguição novamente."
+      },
+      {
+        "title": "Golpe Final 1",
+        "text": "Cale-se!"
+      },
+      {
+        "title": "Golpe Final 2",
+        "text": "Não há escapatória!"
+      },
+      {
+        "title": "Habilidade de Batalha 1",
+        "text": "Vai logo!"
+      },
+      {
+        "title": "Habilidade de Batalha 2",
+        "text": "Sangue da Matilha!"
+      },
+      {
+        "title": "Habilidade de Batalha 3",
+        "text": "Fora do meu caminho!"
+      },
+      {
+        "title": "Combo de Habilidades Pronto 1",
+        "text": "Preparada e carregada."
+      },
+      {
+        "title": "Combo de Habilidades Pronto 2",
+        "text": "Minha vez."
+      },
+      {
+        "title": "Conjuração de Combo 1",
+        "text": "Trabalhando nisso."
+      },
+      {
+        "title": "Conjuração de Combo 2",
+        "text": "Desistam!"
+      },
+      {
+        "title": "Finalizador 1",
+        "text": "Pare com isso."
+      },
+      {
+        "title": "Finalizador 2",
+        "text": "Você vai cair!"
+      },
+      {
+        "title": "Habilidade Suprema 1",
+        "text": "Ninguém viverá!"
+      },
+      {
+        "title": "Habilidade Suprema 2",
+        "text": "Vá na garganta!"
+      },
+      {
+        "title": "Habilidade Suprema 3",
+        "text": "Lobos, vamos festejar!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

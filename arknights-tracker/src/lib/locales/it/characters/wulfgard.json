@@ -118,7 +118,325 @@
         "name": "Creatività",
         "description": "Creatività: modifica delle armi\nModificare le munizioni incise potrebbe sembrare un lavoro noioso, ma lui adora trovare soggetti su cui testarle."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Preparazione all'operazione 1",
+        "text": "Il comando è tuo."
+      },
+      {
+        "title": "Preparazione all'operazione 2",
+        "text": "Stiamo partendo ora?"
+      },
+      {
+        "title": "Aggiunta alla squadra 1",
+        "text": "Hai bisogno di me nella squadra? Certo. Assicurati che gli altri stiano al passo."
+      },
+      {
+        "title": "Aggiunta alla squadra 2",
+        "text": "Un'assegnazione di squadra? Ricevuto. Farò ciò che devo."
+      },
+      {
+        "title": "Cambio arma",
+        "text": "Molto bilanciata. Grazie."
+      },
+      {
+        "title": "Cambio equipaggiamento",
+        "text": "Armati fino ai denti... Una decisione saggia."
+      },
+      {
+        "title": "Attivazione matrice delle abilità",
+        "text": "Le abilità padroneggiate al meglio saranno utili nelle situazioni disperate."
+      },
+      {
+        "title": "Visione delle registrazioni di combattimenti",
+        "text": "Il Branco caccia con determinazione. La strada più veloce per la vittoria è l'unica percorribile."
+      },
+      {
+        "title": "Promozione operatore 1",
+        "text": "Mi fa piacere avere la tua approvazione, Endmin. Allora posso saltare il rapporto della missione per stavolta? No?... E va bene."
+      },
+      {
+        "title": "Promozione operatore 2",
+        "text": "Come puoi vedere, Endmin, mi affidi gli incarichi giusti e io lascio che i risultati parlino da soli."
+      },
+      {
+        "title": "Promozione operatore 3",
+        "text": "Ogni lupo nel Branco si guadagna il proprio posto con spargimenti di sangue. Più prede abbatti, più ti distingui dagli altri. Endmin, ciò significa che la mia caccia ha la tua approvazione?"
+      },
+      {
+        "title": "Promozione operatore 4",
+        "text": "Ho visto il Branco venire umiliato, e la devastazione che ne è susseguita. Ecco perché ho deciso di trovare una nuova strada per Rossi e il resto dei lupi... Il destino ci ha fatto incontrare, Endministrator. È un onore percorrere questa strada insieme a te."
+      },
+      {
+        "title": "Operatore a rapporto",
+        "text": "Catello Wulfgard Luppino, squadra anti-crisi della Endfield. Rappresento il Branco. Dammi un qualsiasi lavoro da mercenario e, finché avremo un contratto, sarò le tue zanne e i tuoi artigli."
+      },
+      {
+        "title": "Attesa 1",
+        "text": "Hai una nuova assegnazione?"
+      },
+      {
+        "title": "Attesa 2",
+        "text": "Eccomi."
+      },
+      {
+        "title": "Assegnazione a una struttura",
+        "text": "Anche qui c'è carenza di persone?"
+      },
+      {
+        "title": "Saluto 1",
+        "text": "Endmin."
+      },
+      {
+        "title": "Saluto 2",
+        "text": "Hai bisogno che venga anch'io, Endmin? Posso trovare del tempo per te."
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 1",
+        "text": "Non è facile lavorare con gli altri operatori. I metodi del Branco e la mia natura solitaria non sono per tutti. Ma se mi vuoi nelle tue fila... mi adatterò e farò in modo che la cosa funzioni."
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 2",
+        "text": "Sono più a mio agio nella frontiera che a bordo della Dijiang. Un posto confortevole come questo ti rammollisce. Ma Rossi ama questo posto, la nave soddisfa la sua curiosità."
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 3",
+        "text": "Sarò schietto con te: non mi ha mai interessato studiare gli altri clan dei Fenditerra. Ho già passato parecchio tempo nelle terre selvagge... e le abilità di sopravvivenza sono diventate parte di me. Nel Branco, crediamo che il miglior insegnante sia il nostro istinto di sopravvivenza. È il nostro unico credo."
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 4",
+        "text": "Gli operatori della Endfield provengono da ogni angolo di Talos-II e ho visto tante facce familiari... O meglio... minacce familiari. Mi fido ancora del tuo giudizio, ma quando la situazione lo richiede, spero tu possa fidarti del mio istinto."
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 5",
+        "text": "Controllare le armi è il mio rituale. In natura, se le tue zanne fanno cilecca, sei carne da macello. Lo stesso vale per un'arma inceppata: tutte le tue abilità, l'addestramento, sono inutili. Niente potenza, niente difesa. Solo una morte lenta. L'ho dovuto imparare da cucciolo, non scorderò mai quella lezione. Non sarò di nuovo una preda."
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 6",
+        "text": "È passato tanto tempo dall'ultima volta che ho fatto visita al mio clan o da quando li ho guidati in una battuta di caccia. Sono più abile nel trovare nuovi terreni di caccia piuttosto che comandare gli assalti come un alfarion."
+      },
+      {
+        "title": "Offerta regali",
+        "text": "Hai un momento, Endmin? Ho trovato una cosa interessante nella mia ultima missione... e te l'ho portata."
+      },
+      {
+        "title": "Accettazione regali",
+        "text": "È per me? Grazie. Ne farò buon uso."
+      },
+      {
+        "title": "Dialogo fiducia 1",
+        "text": "Tratto già i miei bersagli come vuole la Endfield. Se usassi ancora i miei vecchi metodi... non oserebbero proferire parola appena caduti nelle mie grinfie."
+      },
+      {
+        "title": "Dialogo fiducia 2",
+        "text": "Immagino tu abbia capito che... diventare l'alfarion del Branco non è mai stato il mio obiettivo. Rossi sarebbe più indicata per quel ruolo. Non sono neanche sicuro che la Endfield sia un luogo di riposo appropriato per Catello Wulfgard Luppino. La visione dei Fenditerra non può essere tanto diversa dalla tua. Tuttavia, lavorare con la Endfield almeno è molto più piacevole di quanto mi aspettassi, Endmin."
+      },
+      {
+        "title": "Dialogo fiducia 3",
+        "text": "Ti stai chiedendo come mai continuo a guardare il cielo? Beh, è una cosa che mi piace. Perché quell'aria sorpresa? Il cielo è una risorsa gratuita di informazioni. Ti informa sul tempo, sull'ora e sulla posizione. Puoi persino sfruttarlo per prevedere le azioni nemiche. Ogni cacciatore gioca con le stesse regole, sotto il cielo. Anche tu puoi imparare qualcosa a riguardo, Endmin."
+      },
+      {
+        "title": "Dialogo fiducia 4",
+        "text": "La mia identità di Fenditerra è il risultato di una scelta sbagliata dei miei antenati. Abbiamo tradito la Cintura civilizzata per unirci ai grandi signori dei Fenditerra, ma non siamo riusciti a portare l'ordine o la giustizia che sognavamo. Non posso chiedere ai miei antenati se si sono pentiti della loro scelta, ma essendo nato in una vita piena di conflitti e spargimenti di sangue nelle terre selvagge, conosco la sopravvivenza meglio di tanti altri. La supervisora Perlica ha detto che ci saremmo liberati dell'etichetta di Fenditerra, lavorando alla Endfield... Ma per me, è ciò che sono. *Sospira* Questo ti delude, Endmin?"
+      },
+      {
+        "title": "Dialogo fiducia 5",
+        "text": "Il Branco si fonda su una logica semplice: i deboli devono fare squadra per sconfiggere i forti e sopravvivere in un mondo spietato. Ogni codice del clan e la stessa identità dei Fenditerra è basata su questo. Ma la Endfield cos'ha? Un grande obiettivo è un'arma a doppio taglio. Mentre il Branco può sempre darsi a un'altra caccia, la Endfield può permettersi una sola sconfitta. Questo mondo non ha pietà, Endministrator. Ma almeno faccio parte della tua caccia e condividerò parte del tuo fardello."
+      },
+      {
+        "title": "Chiacchierata 1",
+        "text": "Lo so che la forza non è tutto, ma su Talos-II non puoi sopravvivere senza."
+      },
+      {
+        "title": "Chiacchierata 2",
+        "text": "Rossi ama collezionare cose intricate come questa. Non so a cosa servano, ma se è per lei... andrò a cercarne altre."
+      },
+      {
+        "title": "Chiacchierata 3",
+        "text": "L'idealismo irrealistico spezza più vite di quante ne salvi. La maggior parte degli abitanti della frontiera lo scopre con le cattive. La vera tragedia è che alcune persone sono destinate a essere vittime."
+      },
+      {
+        "title": "Chiacchierata 4",
+        "text": "Preferisco occuparmi dei problemi da solo. Non che io pensi di potermi accollare tutto, è solo che spero di alleviare il peso dalle spalle di qualcun altro."
+      },
+      {
+        "title": "Chiacchierata 5",
+        "text": "È molto difficile costringere un lupo solitario a voltare le spalle al suo precedente branco... questo è indubbio. Ma alcuni scelgono la strada del non ritorno, per il bene della sopravvivenza... o per qualcosa che gli è caro. Non riesco a empatizzare con loro e non intendo interferire. Semplicemente, riconosco la determinazione dietro le loro scelte."
+      },
+      {
+        "title": "Argomento: il Branco",
+        "text": "Ancora oggi, guardo al futuro del Branco... Lavorare con la Endfield potrebbe non essere l'opzione migliore, ma sono convinto che sia un passo speciale e importante da intraprendere. Comprendo che nessun esterno possa cambiare la mentalità del Branco, ma ciò di cui abbiamo bisogno è l'opportunità di dare inizio a questo cambio. Quello che sto cercando di capire è come presentare questa \"opportunità\" al Branco."
+      },
+      {
+        "title": "Argomento: Rossi",
+        "text": "Dovrei passare più tempo con Rossi, ma quando la guardo ora... non posso fare a meno di sorprendermi per quanto sia cresciuta. Ha quell'energia selvaggia e attinge con facilità al sangue del Branco. La maestria nelle armi, l'attivazione delle Arti e la caccia... Le viene tutto naturale. Non è più una bambina inerme avvolta in coperte insanguinate. No, è la Wulfperl della famiglia Luppino. Io sono solo le zanne del Branco, ma Rossi ne sarà sempre il cuore e l'anima."
+      },
+      {
+        "title": "Argomento: Fenditerra",
+        "text": "I clan dei Fenditerra sono più complicati di quanto la gente pensi. Oltre agli Spacca-Ossa e al Branco, ci sono i Predatori della sabbia, un clan strano e dall'organizzazione incerta che si è fatto un nome con un singolo brigantino. Poi, ci sono i Marchi grigi, che si tatuano Versetti dei voti su tutto il corpo... E i Teschi d'ombra, un gruppo di spietati assassini che nessuno osa incrociare dopo il tramonto. Questi clan minori sono sopravvissuti alle terre selvagge, perciò è naturale che conoscano parecchi trucchetti per la sopravvivenza."
+      },
+      {
+        "title": "Individuazione risorsa/collezionabile 1",
+        "text": "Da quella parte c'è qualcosa da prendere."
+      },
+      {
+        "title": "Individuazione risorsa/collezionabile 2",
+        "text": "Bottino speciale in vista. Dovremmo prenderlo."
+      },
+      {
+        "title": "Individuazione zona non esplorata",
+        "text": "Non siamo ancora stati là. Meglio segnarselo."
+      },
+      {
+        "title": "Individuazione nemico potente",
+        "text": "Ha l'aria di portare guai. Non è un nemico ordinario."
+      },
+      {
+        "title": "Estrazione 1",
+        "text": "Spero che il loro valore possa ripagare i nostri sforzi."
+      },
+      {
+        "title": "Estrazione 2",
+        "text": "Ci penso io... Anzi, occupiamocene come squadra."
+      },
+      {
+        "title": "Apertura di una cassa",
+        "text": "Un bottino stupefacente. Questa caccia ha dato i suoi frutti."
+      },
+      {
+        "title": "Acquisizione di Aurylene",
+        "text": "Aurylene... A quanto pare, ha grande valore per la Endfield."
+      },
+      {
+        "title": "Eliminazione Contaminazione",
+        "text": "Hai preso la decisione giusta. La Contaminazione non fa altro che ostacolare la nostra operazione."
+      },
+      {
+        "title": "Riposo",
+        "text": "Controllo munizioni completato. Procediamo alla prossima caccia."
+      },
+      {
+        "title": "Utilizzo di gadget 1",
+        "text": "Ora fa' attenzione. Mantieni la calma."
+      },
+      {
+        "title": "Utilizzo di gadget 2",
+        "text": "... Ho ripreso fiato."
+      },
+      {
+        "title": "Avviso di pericolo",
+        "text": "Schiva!"
+      },
+      {
+        "title": "Ferita",
+        "text": "Concentrati sulla battaglia, non su di me."
+      },
+      {
+        "title": "Esaurimento PS",
+        "text": "Argh... Richiedo trasporto medico."
+      },
+      {
+        "title": "Incoraggiamento alla squadra 1",
+        "text": "Ottima mossa."
+      },
+      {
+        "title": "Incoraggiamento alla squadra 2",
+        "text": "Splendido lavoro di squadra."
+      },
+      {
+        "title": "Risposta all'incoraggiamento 1",
+        "text": "Avrei potuto fare di meglio."
+      },
+      {
+        "title": "Risposta all'incoraggiamento 2",
+        "text": "Faccio solo ciò che devo."
+      },
+      {
+        "title": "Inizio combattimento 1",
+        "text": "Non mi lascerò sfuggire l'occasione giusta."
+      },
+      {
+        "title": "Inizio combattimento 2",
+        "text": "Non preoccuparti per me. Mi adatto alla tua andatura."
+      },
+      {
+        "title": "Vittoria in combattimento 1",
+        "text": "Non mi aspettavo niente di diverso."
+      },
+      {
+        "title": "Vittoria in combattimento 2",
+        "text": "Proprio come previsto."
+      },
+      {
+        "title": "Vittoria in combattimento 3",
+        "text": "Abbiamo vinto. È ciò che importa."
+      },
+      {
+        "title": "Vittoria in combattimento 4",
+        "text": "È stata più dura del previsto... Ma ne siamo usciti vincitori. È ciò che conta."
+      },
+      {
+        "title": "Sconfitta in combattimento",
+        "text": "A volte il cacciatore diventa la preda... È ora di ricominciare l'inseguimento."
+      },
+      {
+        "title": "Colpo finale 1",
+        "text": "Silenzio!"
+      },
+      {
+        "title": "Colpo finale 2",
+        "text": "Non puoi scappare!"
+      },
+      {
+        "title": "Abilità di combattimento 1",
+        "text": "Finiamola in fretta!"
+      },
+      {
+        "title": "Abilità di combattimento 2",
+        "text": "Sangue del Branco!"
+      },
+      {
+        "title": "Abilità di combattimento 3",
+        "text": "Levati di mezzo!"
+      },
+      {
+        "title": "Abilità combo pronta 1",
+        "text": "Pronto all'azione."
+      },
+      {
+        "title": "Abilità combo pronta 2",
+        "text": "È il mio turno."
+      },
+      {
+        "title": "Esecuzione combo 1",
+        "text": "Ci penso io."
+      },
+      {
+        "title": "Esecuzione combo 2",
+        "text": "Sta' giù!"
+      },
+      {
+        "title": "Mossa letale 1",
+        "text": "Bocca chiusa."
+      },
+      {
+        "title": "Mossa letale 2",
+        "text": "Hai i minuti contati!"
+      },
+      {
+        "title": "Abilità suprema 1",
+        "text": "Nessuno sopravviverà!"
+      },
+      {
+        "title": "Abilità suprema 2",
+        "text": "Alla gola!"
+      },
+      {
+        "title": "Abilità suprema 3",
+        "text": "Lupi, azzannate!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

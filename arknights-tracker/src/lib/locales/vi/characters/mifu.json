@@ -119,7 +119,333 @@
         "name": "Thể Thao",
         "description": "Thể Thao: Võ Giao \n\"Cảm ơn vì bài học. Hãy để những cú đấm bất hận của chúng ta giao chiến.\" \"Hay lắm. Đừng nương tay. Dòng nước sẽ trôi về đâu, cứ để Số Mệnh định đoạt.”"
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Chuẩn Bị Tác Chiến 1",
+        "text": "Đích thân chỉ huy chiến dịch này sao? Cũng được đấy."
+      },
+      {
+        "title": "Chuẩn Bị Tác Chiến 2",
+        "text": "Giao chiến thì tôi tham gia."
+      },
+      {
+        "title": "Đang thêm vào Đội 1",
+        "text": "Sẵn sàng rồi."
+      },
+      {
+        "title": "Đang thêm vào Đội 2",
+        "text": "Cho tôi thấy cách bạn chỉ huy."
+      },
+      {
+        "title": "Đang Đổi Vũ Khí",
+        "text": "Tôi là vũ khí. Và \"quà lưu niệm\" tôi để lại trên người kẻ địch là những vết bầm chúng không thể quên."
+      },
+      {
+        "title": "Đang Đổi Trang Bị",
+        "text": "Mấy thứ này là để bảo vệ tôi, hay để bảo vệ đối thủ đây?"
+      },
+      {
+        "title": "Kích Hoạt Ma Trận Năng Lực",
+        "text": "Tôi vừa nghĩ ra vài trò mới. Bao giờ mới được thử đây?"
+      },
+      {
+        "title": "Xem Hồ Sơ Chiến Đấu",
+        "text": "HA! Thế mới là đánh chứ! Họ là người của bạn à? Muốn so tài vài hiệp không?"
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 1",
+        "text": "Nói thật, bạn cũng đâu kém gì. Sự công nhận phải đến từ cả hai phía. Được rồi, tôi sẽ theo bạn."
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 2",
+        "text": "Ha, đúng là mới mẻ thật. Ở Võ Lăng, trước giờ vẫn là tôi thăng bậc các đội cảnh vệ. Đã rất lâu rồi tôi mới lại trở thành người được đề bạt đấy."
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 3",
+        "text": "Dẫn một đội khác hẳn tự mình hành động. Bạn hiểu mà, đúng chứ? Phải lo người, phải quán việc. Không thể nào gọn ghẽ, dứt khoát như tự xử lý được."
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 4",
+        "text": "Tôi lúc nào cũng tự hỏi bạn với sếp lấy đâu ra lắm lời hoa mỹ đến vậy. Để mà động viên người khác thì tôi chỉ biết mỗi vỗ vai một cái. Gì cơ? Bạn có thể vỗ vai tôi ư? Ờ... được thôi, nhưng nói toẹt ra trước thế thì chẳng hay."
+      },
+      {
+        "title": "Cán Viên Đang Báo Cáo Nhiệm Vụ",
+        "text": "Đủ rồi. Lần này tôi sẽ giúp dọn dẹp đống rối rắm này. Nhưng tôi làm việc rất thẳng tay. Có gì hỏng hóc thì Endfield \"xòe tiền\" nhé."
+      },
+      {
+        "title": "Chờ Lệnh 1",
+        "text": "Đến lúc đánh một trận ra hồn rồi!"
+      },
+      {
+        "title": "Chờ Lệnh 2",
+        "text": "Chúng ta là đồng đội từng vào sinh ra tử cùng nhau, đúng chứ?"
+      },
+      {
+        "title": "Phân Công Vào Công Trình",
+        "text": "Được. Nhưng lỡ có hỏng thứ gì mong manh thì đừng đổ tại tôi đấy."
+      },
+      {
+        "title": "Lời Chào 1",
+        "text": "A, bạn tới rồi."
+      },
+      {
+        "title": "Lời Chào 2",
+        "text": "Có bận không? Đã khá lâu rồi chúng ta chưa giao đấu."
+      },
+      {
+        "title": "Tán Gẫu Ở Dijiang 1",
+        "text": "Tôi mới ở đây chưa được bao lâu mà đã nhìn ra ba kẻ đáng ngờ rồi. Hửm? Bạn à? Vòng quan hệ đúng là đặc sắc thật đấy."
+      },
+      {
+        "title": "Tán Gẫu Ở Dijiang 2",
+        "text": "Sao tôi lại ở đây à? Tới thăm vài người bạn thôi, vì dạo này bên Võ Lăng cũng bớt việc rồi - Lifeng, Chen, Tông Sư Pan, với cả cô mèo nhỏ nữa... Nhưng chỉ cần được gặp bạn thôi, chuyến đi này đã đáng công lắm rồi."
+      },
+      {
+        "title": "Tán Gẫu Ở Dijiang 3",
+        "text": "Bạn đến muộn rồi. Quà mang về hết sạch rồi. Còn có thể là gì nữa chứ? Bánh trôi đường nóng hổi, tất nhiên rồi."
+      },
+      {
+        "title": "Tán Gẫu Ở Dijiang 4",
+        "text": "Dijiang yên tĩnh quá, khác hẳn những con phố và rừng bụi của Võ Lăng. Không thoải mái lắm. Ồ? Tôi chưa từng kể là ghét những nơi tĩnh lặng đến mức nào sao? Bởi thật ra, chính những nơi như thế mới ồn ào nhất. Một khi mọi thứ xung quanh lặng xuống, tiếng nói trong đầu bạn sẽ bắt đầu vang lên... không ngừng được."
+      },
+      {
+        "title": "Tán Gẫu Ở Dijiang 5",
+        "text": "Đừng phật ý nhé, nhưng tôi không ưa chỗ này lắm. Tôi thích trời thật, nước thật hơn chứ không phải mấy bức tường lạnh lẽo giam hãm thế này. Gì cơ? Phòng tập đang trống á? Sao không nói sớm! Tôi đi ngay đây!"
+      },
+      {
+        "title": "Tán Gẫu Ở Dijiang 6",
+        "text": "Hồi mới luyện tập, có đêm tôi nhìn lên bầu trời sao và lặng lẽ thề với chính mình: phải hạ gục số đối thủ nhiều như những vì sao trên cao ấy. Có lẽ Dijiang cũng là một trong số đó. Vậy mà giờ nghĩ lại, tôi thật sự đã vượt qua tất cả để tới được nơi này. Bất ngờ thật."
+      },
+      {
+        "title": "Tặng Quà",
+        "text": "Này, cầm lấy đi. Tôi tự làm đấy... Đừng có cười. Để người khác biết chuyện này là không xong đâu."
+      },
+      {
+        "title": "Nhận quà",
+        "text": "Thôi nào, chúng ta qua cái giai đoạn tặng quà cho nhau lâu rồi mà... Khoan đã. Vậy giờ tình bạn này đang ở giai đoạn nào rồi?"
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 1",
+        "text": "Tôi gắn kết với người khác qua những trận đấu. Trong mắt tôi, chỉ những ai chịu được thắng thua, chịu được cả những đòn đau mới là người đáng để tin cậy. Còn bạn thì... Hừm, thì còn hơn cả \"đáng tin\"."
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 2",
+        "text": "Hồi sếp đưa tôi về, tôi chưa từng thấy nhiều loại quà vặt đến thế... cũng chưa từng nếm chiếc bánh trôi đường nào ngon đến thế. Thế là ăn suốt ba tháng trời, ăn đến mức sau này chỉ cần thấy thứ gì ngọt là đã ngấy rồi. He, ngay cả máu cũng mang mùi ngọt. Và tôi ghét cái mùi máu ở Võ Lăng."
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 3",
+        "text": "Những người đã dạy tôi chiến đấu à...? Tam Sư Phụ thì miệng lưỡi lúc nào cũng sắc như dao, nhưng thật ra lại là người mềm lòng nhất. Tôi không sao học được Thế Hạc của bà, thế là bị cằn nhằn suốt bao năm. Nhị Sư Phụ thì nhìn đáng sợ thật, nhưng lại rất đỗi ôn hòa. Lo cho tôi từng cái ăn, cái mặc. Còn Đại Sư Phụ... chưa từng thật sự hòa hợp với tôi. Ai cũng nói cái tính nóng của tôi giống ổng như đúc. Cả hai đều quen giải quyết mọi chuyện bằng nắm đấm."
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 4",
+        "text": "Khi tôi được nhận làm học trò, các tông sư từng xem mệnh cho tôi. Họ bảo rằng tôi chỉ có thể gắn bó với \"đối thủ\" của mình. Tôi sẽ chiến đấu với họ, trở nên thân thiết, rồi cuối cùng lại chia về hai ngả. Sếp, nhóc mèo nhỏ, ngay cả các tông sư của tôi... ai rồi cũng thành đối thủ của tôi cả. Nhưng bạn thì khác — Chúng ta chưa từng đứng ở hai đầu chiến tuyến. Những trận chiến giữa chúng ta giống như kề lưng sát cánh hơn. Hy vọng điều này... có thể kéo dài lâu hơn một chút."
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 5",
+        "text": "Từ khi đến Endfield, tôi mới thật sự hiểu. Đập Xiranite, Thành Phố Võ Lăng, rồi cả Trại Thanh Ba... nếu đặt lên bản đồ thì đều nhỏ bé đến mức gần như không thấy nổi. Vậy mà tôi đã từng xoay vòng mãi trong cái thế giới chật hẹp ấy. Các tông sư nói đúng. Đời người vốn là hành trình tự mình phá lối băng qua vô vàn núi non và chướng ngại. Và nếu được ở bên bạn, thì phía trước hẳn sẽ luôn còn nhiều trận chiến khác đang đợi nhỉ?"
+      },
+      {
+        "title": "Trò Chuyện 1",
+        "text": "Cặp bao tay quyền đấu này trông ngầu đấy chứ, đúng không? Muốn thử đeo không? Yên tâm, không nặng thế đâu. Tôi có riêng cặp bao tay này khi được bổ nhiệm làm đội trưởng, rèn từ lô Xiranite đầu tiên sản xuất trong năm đó. Tay nghề của các Thiên Sư Chế Tác quả thật không tầm thường. Cặp bao tay quyền đấu này chuyển động theo \"ý chí\" của tôi, thậm chí còn đồng cảm với cơn thịnh nộ của tôi nữa — Tận mắt thấy chúng hoạt động chưa?"
+      },
+      {
+        "title": "Trò Chuyện 2",
+        "text": "Con đường luyện võ khởi đầu từ việc ngộ ra đạo của tre - thứ mọc khắp chốn ngoại thành. Khi giữ thế tĩnh, phải tựa như tre giữa mùa đông: rễ ghim sâu vào đất, bất động. Kiên trì như thế cho tới lúc xuân sang, để chân khí âm thầm hun đúc, dồn nén trong cơ thể, rồi thuận thế mà bùng lên như măng mọc. Ấy chính là đạo."
+      },
+      {
+        "title": "Trò Chuyện 3",
+        "text": "Khi vừa bắt đầu tập luyện, Đại Sư Phụ đã bảo tôi đi đánh tre. Tôi đấm cho đến khi khớp tay bầm tím, rách toạc và rướm máu. Rồi ông nói: \"Đừng sợ tre. Hãy khiến tre phải sợ con.\" Thế là cứ nghiến răng mà tiếp tục. Chẳng nhớ thời gian trôi qua bao lâu, chỉ biết rằng rồi cũng đến một ngày, nắm đấm này không còn biết chùn bước. Sau đó, tôi đánh đá, đánh sắt, đánh cả Aggeloi... Muốn giành phần thắng, trước tiên phải có can đảm tung ra cú đấm đó. Chỉ đến khi ấy mới có cơ hội thắng."
+      },
+      {
+        "title": "Trò Chuyện 4",
+        "text": "Sao trong phòng tôi lại có nhiều thư pháp như vậy à? Theo đuổi đôi chút nhã thú cũng được mà, đúng không...? Chữ tôi trông ổn lắm ư? Thật sao? Là sếp dạy đấy. Sếp nói viết thư pháp có thể giúp gột sạch tạp niệm, khiến tâm trí trở nên tập trung hơn. Những lúc không phải ra ngoài truy bắt tội phạm, tôi cũng viết dăm ba chữ. Nói thật thì tôi vẫn chưa thực sự lĩnh hội được hết. Một nét bút cũng chẳng khác gì một đường kiếm."
+      },
+      {
+        "title": "Trò Chuyện 5",
+        "text": "Dân Trại quen chiến đấu bằng nắm đấm. Họ hiếm khi thủ thế, mà thường trực diện tung đòn. Đến khi đặt chân đến Võ Lăng, tôi mới biết người Võ Lăng lại chuộng kiếm hơn — bởi nó có tầm với xa hơn, lưỡi sắc hơn, lại còn mang một vẻ tao nhã riêng. Tôi cũng từng thử học qua, nhưng sếp nói kiếm pháp của tôi nhìn gượng gạo vô cùng, cứ như thể tôi đang vật lộn với một nhành liễu vậy."
+      },
+      {
+        "title": "Chủ đề: Tên",
+        "text": "Cái tên \"Mi Fu\" nghe hơi lạ à? Ừ, vì ban đầu đó đâu phải tên của tôi. Từ ngày tôi bước chân đến Võ Lăng, Ruan Yi đã gọi tôi là \"Kẻ Phản Bội\". Còn cô mèo nhỏ kia thì... cứ mở mồm gọi \"Bà Điên\". Chậc, làm như quan tâm lắm... Cái tên \"Mi Fu\" là tôi có được lúc còn nằm ở phòng điều trị. Sếp giữ tôi ở đó hơn một tháng, nhưng tôi nhất quyết không chịu nói một lời. Cho đến một ngày, sếp ngồi đọc sách bên giường tôi rồi chợt hỏi tên tôi là gì. Tôi chỉ đại vào hai chữ bất kỳ trong cuốn sách trên tay cô ấy. Sếp nhìn chúng một lúc rồi nói: \"Được lắm. Vậy từ nay cô sẽ là Mi Fu.\" Hừm... Ngẫm lại thì cái tên ấy cũng dễ nghe."
+      },
+      {
+        "title": "Chủ Đề: Zhuang Fangyi",
+        "text": "Sếp... rời đi rồi sao? Hừm. Thú thật, tôi luôn cảm thấy chị ấy hợp với chỗ của bạn hơn. Phía bạn có những dự án thật sự lớn lao, lớn đến mức đủ để chị ấy có thể tung mình bay lượn giữa đó. Võ Lăng, dù sao đi nữa, vẫn hơi chật hẹp, cho dù chính chị ấy lựa chọn. Hiểu ý tôi mà, đúng không? Vậy nên bạn tốt nhất phải chăm sóc chị ấy cho cẩn thận. Chỉ cần chị ấy bị thương dù chỉ một vết xước thôi, thì người bạn phải lo không chỉ có mình tôi đâu. Đến lúc đó, bạn sẽ là kẻ đối đầu với cả Võ Lăng."
+      },
+      {
+        "title": "Chủ Đề: Võ Lăng",
+        "text": "Chẳng biết từ bao giờ mình thật sự trở thành Dân Võ Lăng. Suốt mấy tháng nằm trong phòng điều trị nhìn họ vạch ra một tương lai giữa vùng hoang vu bùn lầy. Rồi mọi thứ cứ khớp lại với nhau. Họ đối đãi với tôi như người của mình, ngày ngày còn mang đồ ăn đến tận nơi. Tôi bắt đầu giúp đỡ, đơn giản vì tôi không thích mắc nợ ân tình. Cho đến ngày họ động thổ xây Đại Lộ Phương Hưng, tôi nhìn thấy tên mình trong danh sách những người dựng nên con đường ấy. Khi đó, tôi chợt nhớ lại lời chị ấy từng nói: \"Sẽ thật tuyệt biết bao nếu nắm đấm của em dùng để bảo vệ người khác.\""
+      },
+      {
+        "title": "Chủ Đề: Lối Đi Bí Mật Vào Trại Thanh Ba",
+        "text": "Đúng là trùng hợp thật. Ngay lần đầu tới đó bạn đã tìm trúng lối đi bí mật. Tôi đã mười năm không quay lại nơi ấy. Sau khi tôi rời đi, Tangtang cứ lén lút ra vào bằng lối đó, nên cuối cùng tôi đã tự tay niêm nó lại. Đáng ra con bé không nên đến, mà tôi cũng chẳng nên quay về. Tôi biết nó nhất định sẽ... thôi, nhưng tôi thật sự không ngờ nó lại vẽ một dấu gạch chéo thật lớn ngang mặt tôi trong bức graffiti đó... Phải tính sổ nhỏ mèo ngốc đấy!"
+      },
+      {
+        "title": "Chủ Đề: Tangtang",
+        "text": "Tangtang... tôi vẫn còn món nợ chưa tính xong với cô mèo nhỏ đó. Nhỏ có gây phiền phức gì cho bạn không? Khoan, thật sự có à? Đừng lo, cứ để tôi xử lý. Nhỏ để tâm tới bạn quá mức rồi. Chỉ cần bạn lớn tiếng một câu thôi thì nhỏ sẽ sầu mất. Đến lúc đó mới là đau đầu."
+      },
+      {
+        "title": "Phát hiện Tài Nguyên/Đồ Sưu Tập 1",
+        "text": "Có gì đó đằng kia. Nhưng nhớ là theo quy định của Cảnh Vệ thì nhặt được của rơi phải trả lại người mất."
+      },
+      {
+        "title": "Phát hiện Tài Nguyên/Đồ Sưu Tập 2",
+        "text": "Phát hiện vật phẩm giá trị. Chắc có thể xem chúng là tài sản vô chủ."
+      },
+      {
+        "title": "Phát Hiện Khu Vực Chưa Khám Phá",
+        "text": "Khu vực mới. Tốt hơn hết là tuần tra một vòng để bảo đảm không có gì bất thường."
+      },
+      {
+        "title": "Phát hiện Kẻ Địch Mạnh",
+        "text": "Ha, đối thủ xứng tầm đây rồi."
+      },
+      {
+        "title": "Khai thác 1",
+        "text": "Quặng mà vỡ nát thì chắc vẫn dùng được chứ?"
+      },
+      {
+        "title": "Khai thác 2",
+        "text": "Cứ để đấy. Hai đòn là đủ."
+      },
+      {
+        "title": "Mở Thùng",
+        "text": "Tìm được món khá đấy. May mà chưa phá hỏng nó."
+      },
+      {
+        "title": "Nhận Aurylene",
+        "text": "Trước kia tôi cứ ngỡ đó là ma vậy. Phải tới khi đặt chân đến Võ Lăng, tôi mới biết người ta gọi chúng là Aurylenes."
+      },
+      {
+        "title": "Loại Bỏ Nhiễm Khuẩn",
+        "text": "Ha. Đống nhớp nháp này cản được chắc?"
+      },
+      {
+        "title": "Nghỉ ngơi",
+        "text": "Thôi nào, tôi vẫn đi tiếp được mà...! Được rồi, nói vậy thì thôi."
+      },
+      {
+        "title": "Sử Dụng Vật Phẩm Chiến Thuật 1",
+        "text": "Đừng có gục ở đây!"
+      },
+      {
+        "title": "Sử Dụng Vật Phẩm Chiến Thuật 2",
+        "text": "Quay lại trận chiến nào!"
+      },
+      {
+        "title": "Cảnh Báo Nguy Hiểm",
+        "text": "Giữ khoảng cách đi!"
+      },
+      {
+        "title": "Bị thương",
+        "text": "He. Giờ mới đúng nghĩa một trận chiến."
+      },
+      {
+        "title": "0 HP",
+        "text": "Nắm đấm của chúng ta... chưa từng biết hối hận..."
+      },
+      {
+        "title": "Cổ Vũ Đội 1",
+        "text": "Gọn và gắt. Ấn tượng đấy!"
+      },
+      {
+        "title": "Cổ Vũ Đội 2",
+        "text": "Phối hợp tốt quá!"
+      },
+      {
+        "title": "Đáp Lại Lời Cổ Vũ 1",
+        "text": "Chỉ là làm phần việc của mình thôi."
+      },
+      {
+        "title": "Đáp Lại Lời Cổ Vũ 2",
+        "text": "Cảm ơn cả đội."
+      },
+      {
+        "title": "Bắt Đầu Chiến Đấu 1",
+        "text": "Đến lúc chiến rồi!"
+      },
+      {
+        "title": "Bắt Đầu Chiến Đấu 2",
+        "text": "Đến lúc cho chúng một bài học ra trò rồi."
+      },
+      {
+        "title": "Thắng Trận 1",
+        "text": "Sếp mà nghe chuyện này chắc sẽ vui lắm."
+      },
+      {
+        "title": "Thắng Trận 2",
+        "text": "Xong vụ rồi."
+      },
+      {
+        "title": "Thắng Trận 3",
+        "text": "Đánh cũng ra gì đấy!"
+      },
+      {
+        "title": "Thắng Trận 4",
+        "text": "Cả đội... phần khó để tôi lo. Đừng gắng quá sức."
+      },
+      {
+        "title": "Bại Trận",
+        "text": "Còn đứng được thì đừng bao giờ chịu thua."
+      },
+      {
+        "title": "Đòn Dứt Điểm 1",
+        "text": "Lùi xuống!"
+      },
+      {
+        "title": "Đòn Dứt Điểm 2",
+        "text": "Thế chứ!"
+      },
+      {
+        "title": "KN Chiến Đấu 1",
+        "text": "Khó thoát!"
+      },
+      {
+        "title": "KN Chiến Đấu 2",
+        "text": "Nếm quả này xem!"
+      },
+      {
+        "title": "KN Chiến Đấu 3",
+        "text": "Đến lượt kìa!"
+      },
+      {
+        "title": "Chuẩn Bị KN Liên Hoàn 1",
+        "text": "Vào thế đi!"
+      },
+      {
+        "title": "Chuẩn Bị KN Liên Hoàn 2",
+        "text": "\"Quẩy\" lên nào!"
+      },
+      {
+        "title": "Thi Triển Liên Hoàn 1",
+        "text": "Đầu hàng đi!"
+      },
+      {
+        "title": "Thi Triển Liên Hoàn 2",
+        "text": "Gồng lên đi!"
+      },
+      {
+        "title": "Kết Liễu 1",
+        "text": "Chống cự cũng vô ích!"
+      },
+      {
+        "title": "Kết Liễu 2",
+        "text": "Hết đường rồi!"
+      },
+      {
+        "title": "Tuyệt Kỹ 1",
+        "text": "Nhận bài học đi!"
+      },
+      {
+        "title": "Tuyệt Kỹ 2",
+        "text": "Xứng đáng... vào ngục!"
+      },
+      {
+        "title": "Tuyệt Kỹ 3",
+        "text": "Đã nói tử tế rồi đấy!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

@@ -124,7 +124,325 @@
         "name": "Mind Honing",
         "description": "Mind Honing: Online Gamer\nThe renowned master of \"Algorithmic Checkers\" aboard Dijiang. A mind kept cool in a low-temperature environment is essential to master this mathematical board game."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Operation Prep 1",
+        "text": "I shall pray for you, Endministrator."
+      },
+      {
+        "title": "Operation Prep 2",
+        "text": "I stand here awake, as the Law watches upon me."
+      },
+      {
+        "title": "Adding to Team 1",
+        "text": "I am ready to process your command, Endministrator."
+      },
+      {
+        "title": "Adding to Team 2",
+        "text": "A logical choice."
+      },
+      {
+        "title": "Switching Weapon",
+        "text": "May I make slight modifications to this? I assure you, they will remain within the bounds of safety."
+      },
+      {
+        "title": "Switching Gear",
+        "text": "Veritas is upheld by its own sanctity."
+      },
+      {
+        "title": "Ability Matrix Activation",
+        "text": "Once we are connected, wisdom shall springeth forth."
+      },
+      {
+        "title": "Watching Combat Records",
+        "text": "And with my prayers, I shall also lift up those who have gone astray."
+      },
+      {
+        "title": "Operator Promotion 1",
+        "text": "Behold, the benevolence of the Law manifested... Ah, and with it flows the trust of the Endministrator! Is it not righteous to give thanks unto thee?"
+      },
+      {
+        "title": "Operator Promotion 2",
+        "text": "The Law watches over and preserves the meek, but not the learned, wise, nor rich. Though elevated by such glory, I remain humble and thankful to thee."
+      },
+      {
+        "title": "Operator Promotion 3",
+        "text": "Everything is as clear and distinct as the veins of Originium. This promotion aligns with the projected outcome. Huh? Sh-shake hands? I ... I am not very good at that..."
+      },
+      {
+        "title": "Operator Promotion 4",
+        "text": "I once restructured the codec dome of the Cathedralis to enhance its working efficiency. Yet, unanticipated resonances occurred as the ancient algorithm processed the data flow. The result was ... complicated. And yet, what once exiled one from their homeland ... has become a source of grace here at Endfield. Perhaps this is what the Law wished to reveal to me!"
+      },
+      {
+        "title": "Operator Reporting for Duty",
+        "text": "O Knowledge most ancient, lead us not into temptation but deliver us from the codes of malice... I am Xaihi, Endministrator. May you be enlightened."
+      },
+      {
+        "title": "Standing by 1",
+        "text": "Contemplation... Computation... Utterance... Abandonment."
+      },
+      {
+        "title": "Standing by 2",
+        "text": "I offer today's dialogue and contemplation to your terminal, in reverence..."
+      },
+      {
+        "title": "Assigning to Facility",
+        "text": "Let thy commands be fulfilled. O Endministrator, through service, our path is revealed."
+      },
+      {
+        "title": "Greeting 1",
+        "text": "May peace and safety be with you."
+      },
+      {
+        "title": "Greeting 2",
+        "text": "Endministrator, you appear once again in my calculated result."
+      },
+      {
+        "title": "Dijiang Idle Chatter 1",
+        "text": "Validating data, analyzing syntax, generating results... Greetings, Endministrator."
+      },
+      {
+        "title": "Dijiang Idle Chatter 2",
+        "text": "I have received your signal, Endministrator. I am in the process of interpreting its meaning. Please wait..."
+      },
+      {
+        "title": "Dijiang Idle Chatter 3",
+        "text": "Ah ... I find myself preferring the presence of machines over the company of humans. While human pulses are erratic and immeasurable, machines breathe in a consistent and logical pattern."
+      },
+      {
+        "title": "Dijiang Idle Chatter 4",
+        "text": "My terminal registered more than fifty errors within the past ten milliseconds. But set your mind at ease, for I have set our communication as top priority. Hmm? My evaluations for Dijiang's overall performance...? I would say, despite a myriad of issues, the vessel has continued to endure her tribulations with grace, as though she is ... suffering for someone else."
+      },
+      {
+        "title": "Dijiang Idle Chatter 5",
+        "text": "As the Law permits, so we act: Paradise shall be restored unto this world. Whosoever paveth the path, shall cross the forlorn wildlands and attain bliss. For Veritas layeth hidden in enigmas, that the lost may no longer wander, but walk with the Noble Ones, sharing in an eternal purpose."
+      },
+      {
+        "title": "Dijiang Idle Chatter 6",
+        "text": "In the eyes of my fellow operators, you are a leader from the past, a noble being in the present, and an Originium sapling maturing toward the future. Yet within the depths of the Protorig Network, I beheld a different you... All I can do is pray — that our signifier and the signified may one day become one. May you walk in blessing, Endministrator."
+      },
+      {
+        "title": "Offering Gifts",
+        "text": "Endministrator, may I interrupt your processing for a moment? I ... I would like to offer a token of appreciation for all the boosts you have brought me. Oh ... you have noticed nothing at all? Phew, I'm so relieved..."
+      },
+      {
+        "title": "Accepting Gifts",
+        "text": "This is an indicator! Oh, please forgive my lapse in decorum... Veritas acknowledges your efforts."
+      },
+      {
+        "title": "Trust Dialog 1",
+        "text": "The Cabal shares their knowledge and fate with you, Endministrator."
+      },
+      {
+        "title": "Trust Dialog 2",
+        "text": "All my suggestions prove practical and useful...? No, I do not follow the path of pragmatism... The Abbess cautioned us that, here on Talos-II, we must make our faith yield more tangible and practical results. The abundance of Laterano is a distant memory here. Only our interconnection binds us now."
+      },
+      {
+        "title": "Trust Dialog 3",
+        "text": "After all this time together, I feel I've grown closer to the Endministrator. Now seems an appropriate time to show warmth, trust, and goodwill... Ah, the Endministrator is coming this way. Quickly, Xaihi, execute a gesture of friendliness... Ummm — Endministrator, would you like to join me for morning prayer?"
+      },
+      {
+        "title": "Trust Dialog 4",
+        "text": "Please pardon me, Endministrator... Before I make inevitable contact with you, potential static buildup must be first discharged from my fingers... Oh? Do you not fear such things? But ... these tiny miscreants would secretly cling to one's hands ... and sting you when you least expect it ... like this."
+      },
+      {
+        "title": "Trust Dialog 5",
+        "text": "For years within the Cathedralis, I immersed myself in study, never pondering how the fruits of our good work could enlighten Talos-II. Yet, the Law's revelations brought me to your presence, and a new world has since emerged in my sight. One by one, the ancient, tranquil words suddenly came to pass ... and now I fully understand their teachings, Endministrator."
+      },
+      {
+        "title": "Chat 1",
+        "text": "Endministrator, we Sessionites interpret the Law by viewing language as a symbol. By continuously shattering old symbol combinations to create new ones, we draw ever closer to the domain of eternity. This behavior mirrors that of the Shatterus — the entity enshrined behind the sacred statue of the Cathedralis."
+      },
+      {
+        "title": "Chat 2",
+        "text": "Dijiang keeps reminding me of the Cathedralis. However, we do not remain there always. Congregations only occur to resolve moments of schism. When this happens, my brethren and sisters from every corner of Talos-II will return to the place. Hmm? How is the Cathedralis kept safe? If it were ever to come under assault... Hmm, I believe it can be its own guardian."
+      },
+      {
+        "title": "Chat 3",
+        "text": "Never have we stood so far from Veritas, for it has departed from the place we called home. Never have we stood so near to Veritas, for now we have knocked upon its waiting door."
+      },
+      {
+        "title": "Chat 4",
+        "text": "Racing? On foot? Boxing? With fists? And you wish to see me in the sports festival?! I'm afraid ... I must refuse. The only \"physical motion\" I approve of ... is the magnitude of periodic changes, made by electrons within an oscillator circuit. I could never bring myself to compete against my brethren and sisters! No ... I am not seeking an excuse. I-I must now return to the mainframe room. Immediately."
+      },
+      {
+        "title": "Chat 5",
+        "text": "Yes, there are many Sarkaz like me within the Cabal. Some were even entrusted with relics once wielded by Gun-Knights. Indeed, I have studied the scriptures of the Cabal. I know that, back on Terra, the Sarkaz were in fierce conflict with many other races. However, when the First Aggeloi War ended, an unprecedented miracle of unity descended upon us: Every soul embraced their brethren and sisters, and every pair of lips sang in the same tongue."
+      },
+      {
+        "title": "Topic: Aggelos",
+        "text": "The relationship between the Law and the Aggeloi overrunning Talos-II, is one of the primary subjects the Cabal seeks to interpret."
+      },
+      {
+        "title": "Topic: Shatterus",
+        "text": "There is an Aggelos reminiscent of the Triaggelos, nestled behind the sacred statue in the Cathedralis. We secretly call it Shatterus when outside the hours of liturgy. This construct was seized by Abbess Mumu during the First Aggeloi War. The Abbess encourages us to observe Shatterus and reflect, for the Law's teachings might be found in the enemy. Shatterus presents both a near-accurate approximation, and a formed conclusion yet to be interpreted."
+      },
+      {
+        "title": "Topic: Three branches of the Cabal",
+        "text": "The Cabal now consists of three branches: the Sessionites, the Veritarites, and the Resurgonites. I myself belong to the Sessionites. We believe that computation and linguistic analysis form the avenue to bliss. The Resurgonites, scattered across Talos-II, are armed zealots eager to delve into the ruins of the ancient civilization. The Veritarites concern themselves above all with matters of heart and soul. They study sculptures, create handwritten copies, and guide lost souls home."
+      },
+      {
+        "title": "Resource/Collectible Detected 1",
+        "text": "I have perceived the existence of rarities."
+      },
+      {
+        "title": "Resource/Collectible Detected 2",
+        "text": "If a gift of Veritas is nearby, then it shall be retrieved."
+      },
+      {
+        "title": "Unexplored Area Detected",
+        "text": "Blessed or accursed, the realm is ours to explore."
+      },
+      {
+        "title": "Powerful Enemy Discovered",
+        "text": "A wayward, fallen one roams nearby. My staff shall grieve for them."
+      },
+      {
+        "title": "Mining 1",
+        "text": "All have been set upon this Land before us — And with the toil of our hands shall they be acquired."
+      },
+      {
+        "title": "Mining 2",
+        "text": "A gift of the Law."
+      },
+      {
+        "title": "Opening a Crate",
+        "text": "Again I behold abundance — a blessing promised by the Law!"
+      },
+      {
+        "title": "Acquiring Aurylene",
+        "text": "Aurylene ... another language whispered by Talos-II."
+      },
+      {
+        "title": "Eliminating the Blight",
+        "text": "This amorphous material is just a variable on our trek."
+      },
+      {
+        "title": "Rest",
+        "text": "Kindly guide us to the revealing of eternal tranquility."
+      },
+      {
+        "title": "Tactical Use 1",
+        "text": "I am here to manifest blessings."
+      },
+      {
+        "title": "Tactical Use 2",
+        "text": "Good deeds be praised."
+      },
+      {
+        "title": "Danger Warning",
+        "text": "They show lethal intent!"
+      },
+      {
+        "title": "Injured",
+        "text": "The trek grows ... more arduous..."
+      },
+      {
+        "title": "0 HP",
+        "text": "Veritas... Why...?"
+      },
+      {
+        "title": "Team Encouragement 1",
+        "text": "Your Arts have opened my eyes!"
+      },
+      {
+        "title": "Team Encouragement 2",
+        "text": "We are united beyond the need for words!"
+      },
+      {
+        "title": "Encouragement Response 1",
+        "text": "I am fortunate to be in your company."
+      },
+      {
+        "title": "Encouragement Response 2",
+        "text": "I shall offer prayers for all of us."
+      },
+      {
+        "title": "Combat Begins 1",
+        "text": "He who suffers today is not among us."
+      },
+      {
+        "title": "Combat Begins 2",
+        "text": "I wish you the best of fortune."
+      },
+      {
+        "title": "Combat Victory 1",
+        "text": "Veritas has graced this battlefield with its touch!"
+      },
+      {
+        "title": "Combat Victory 2",
+        "text": "My prayers have been answered."
+      },
+      {
+        "title": "Combat Victory 3",
+        "text": "I find joy in the language of celebration."
+      },
+      {
+        "title": "Combat Victory 4",
+        "text": "My friends ... success and failure are not binary like 0 and 1. A spectrum of countless nuances lies between them."
+      },
+      {
+        "title": "Combat Defeat",
+        "text": "The sacredness of computation lies in its perfect neutrality — The algorithms predict both success and failure. Keep faith and carry on."
+      },
+      {
+        "title": "Final Strike 1",
+        "text": "Injection!"
+      },
+      {
+        "title": "Final Strike 2",
+        "text": "Recursion!"
+      },
+      {
+        "title": "Battle Skill 1",
+        "text": "Analyzing."
+      },
+      {
+        "title": "Battle Skill 2",
+        "text": "A frigid output."
+      },
+      {
+        "title": "Battle Skill 3",
+        "text": "Gathering data."
+      },
+      {
+        "title": "Combo Skill Ready 1",
+        "text": "My prayer has ended."
+      },
+      {
+        "title": "Combo Skill Ready 2",
+        "text": "I offer my computing power."
+      },
+      {
+        "title": "Combo Casting 1",
+        "text": "Veritas be with you."
+      },
+      {
+        "title": "Combo Casting 2",
+        "text": "All shall mend."
+      },
+      {
+        "title": "Finisher 1",
+        "text": "Hard reboot!"
+      },
+      {
+        "title": "Finisher 2",
+        "text": "Executing destruction!"
+      },
+      {
+        "title": "Ultimate 1",
+        "text": "Logic yields to none."
+      },
+      {
+        "title": "Ultimate 2",
+        "text": "Sanitize the corruption!"
+      },
+      {
+        "title": "Ultimate 3",
+        "text": "List subject violations."
+      }
+    ]
   },
   "potentials": {
     "potential1": {

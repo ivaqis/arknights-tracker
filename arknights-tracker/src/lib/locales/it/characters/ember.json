@@ -120,7 +120,333 @@
         "name": "Tecnologia",
         "description": "Tecnologia: riparazioni fai da te\nAnche l'equipaggiamento più avanzato ha bisogno di manutenzione. Un soldato ha il dovere di conoscere a fondo i propri compagni più stretti."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Preparazione all'operazione 1",
+        "text": "Sono pronta. Aspetto solo un tuo ordine."
+      },
+      {
+        "title": "Preparazione all'operazione 2",
+        "text": "Una nuova missione?"
+      },
+      {
+        "title": "Aggiunta alla squadra 1",
+        "text": "Conduco io il briefing tattico."
+      },
+      {
+        "title": "Aggiunta alla squadra 2",
+        "text": "Procediamo. La guerra non ha mai fine, possiamo soltanto proseguire la nostra marcia."
+      },
+      {
+        "title": "Cambio arma",
+        "text": "Un'arma davvero eccellente. Ne farò buon uso."
+      },
+      {
+        "title": "Cambio equipaggiamento",
+        "text": "Non vedevo un equipaggiamento di questo calibro da... parecchio tempo."
+      },
+      {
+        "title": "Attivazione matrice delle abilità",
+        "text": "Sto recuperando le forze... ma non è ancora sufficiente."
+      },
+      {
+        "title": "Visione delle registrazioni di combattimenti",
+        "text": "Eccellente lavoro di squadra... Grazie, ho imparato molto."
+      },
+      {
+        "title": "Promozione operatore 1",
+        "text": "Apprezzo la fiducia. Non ti deluderò."
+      },
+      {
+        "title": "Promozione operatore 2",
+        "text": "Ricevuto. Ora che mi sono stati assegnati incarichi di maggior rilievo, posso contribuire al piano di battaglia?"
+      },
+      {
+        "title": "Promozione operatore 3",
+        "text": "Quand'ero nell'Ordine, in questi momenti il comandante ci premiava con delle medaglie... No, non è necessario adesso. Che tutto rimanga com'è. Non mi interessano le onorificenze."
+      },
+      {
+        "title": "Promozione operatore 4",
+        "text": "Non so quando la nostra crociata avrà fine, ma è sempre più evidente che va affrontata con assoluta dedizione... Spero che mi concederai l'onore di combattere al tuo fianco fino all'ultimo."
+      },
+      {
+        "title": "Operatore a rapporto",
+        "text": "Ember, cavaliera dell'Ordine del Giuramento d'acciaio, al tuo servizio. Come imposto dal giuramento, obbedirò a ogni tuo comando fino al termine della crociata."
+      },
+      {
+        "title": "Attesa 1",
+        "text": "La mia crociata è tutt'altro che conclusa..."
+      },
+      {
+        "title": "Attesa 2",
+        "text": "Il campo di battaglia non perdona. Dobbiamo affinare le nostre capacità con incrollabile devozione."
+      },
+      {
+        "title": "Assegnazione a una struttura",
+        "text": "Una missione speciale? Ricevuto... La porterò a termine con impegno e tenacia."
+      },
+      {
+        "title": "Saluto 1",
+        "text": "Hai una missione di combattimento che richiede la mia presenza?"
+      },
+      {
+        "title": "Saluto 2",
+        "text": "È bello rivederti, Endmin. Dove ci condurrà la prossima battaglia?"
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 1",
+        "text": "La Dijiang è ricca di comfort, ma inadatta alla guerra. Ancora mi devo abituare alla sua mancanza di prontezza operativa."
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 2",
+        "text": "Com'era l'addestramento nell'Ordine? Mmh... All'epoca riuscivo a sconfiggere un intero gruppo di Homoiossaron da sola, perciò il comandante mi mandava contro intere squadre di nuove reclute."
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 3",
+        "text": "Le linee di difesa dei Cavalieri Giurati si estendevano sotto l'aurora. All'inizio della battaglia, i cieli si popolavano di sciami di Aggeloi. Certo, noi avevamo portaerei e velivoli di supporto... Aspetta, perché la catena montuosa si snoda in questa direzione? Perdonami, temo di aver... male interpretato la nostra posizione."
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 4",
+        "text": "I lanci ad alta quota nelle zone di guerra sono all'ordine del giorno per la mia unità. Eppure, quassù il concetto di altitudine inizia a svanire."
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 5",
+        "text": "Gli operatori di qui sono eccellenti compagni di addestramento. Sanno quanto è importante la coordinazione sul campo di battaglia e dimostrano grande creatività nello sviluppo di strategie. Ho imparato molto da loro. In qualità di Cavaliera Giurata, devo tenere il passo e affinare costantemente le mie capacità."
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 6",
+        "text": "L'ufficio analisi mi ha dato accesso ai registri di alcune missioni. Quante persone hanno dato la vita per ciò in cui credevano senza neanche mettere piede sul campo di battaglia... Forse non avevano rimpianti, ma non posso fare a meno di chiedermi cosa possiamo fare per evitare che simili sacrifici si ripetano così di frequente."
+      },
+      {
+        "title": "Offerta regali",
+        "text": "Ti prego di accettarlo, Endmin."
+      },
+      {
+        "title": "Accettazione regali",
+        "text": "Ti ringrazio. Lo prenderò come un segno della tua approvazione."
+      },
+      {
+        "title": "Dialogo fiducia 1",
+        "text": "Quest'armatura è piuttosto complessa e i Cavalieri Giurati devono masticare qualche nozione di ingegneria per mantenerla funzionante. Alla fine, però, non è l'armatura a salvarti in battaglia, bensì la determinazione a restare in piedi, la capacità di elaborare strategie e il coraggio di agire."
+      },
+      {
+        "title": "Dialogo fiducia 2",
+        "text": "Permettimi di farmi carico delle spese mediche di quell'operatore di riserva. Tra i Cavalieri Giurati, molti sono pronti a rischiare la vita, ma quando si perde la concentrazione, quella determinazione finisce solo per mettere tutti in pericolo. *Sospira* Ero persa nei miei pensieri e ho colpito più forte di quanto avrei voluto... Sono molto spiacente."
+      },
+      {
+        "title": "Dialogo fiducia 3",
+        "text": "Fra i Cavalieri Giurati c'è una tradizione: quando una squadra è troppo provata per continuare, uno di noi deve ritirarsi per reclutare nuovi alleati. È una sorta di crociata a sé, in cui prendersi del tempo per trovare dei degni successori senza mai avere fretta. Tuttavia... sento che la mia crociata si protrae da troppo tempo."
+      },
+      {
+        "title": "Dialogo fiducia 4",
+        "text": "Quando dovevo consegnare le ceneri e i ricordi di compagni caduti, ne incontravo i genitori, i fratelli, le persone amate. Una volta ho persino dovuto fermare il migliore amico di un soldato che voleva dirigersi al Nord in cerca di vendetta. In un modo o nell'altro, sono diventata colei che più di tutti consolava gli altri, convincendoli a non agire d'impulso. Forse è per questo che il comandante ha insistito perché partissi per la crociata il prima possibile."
+      },
+      {
+        "title": "Dialogo fiducia 5",
+        "text": "Lei è Claire, mentre loro sono Zhao, Nilla e Lucion. Quello dallo sguardo acuto è Fiyanggu, un novellino. Nessuno di loro ha bevuto davvero. Abbiamo solo finto di fare un brindisi perché c'era un giornalista. Erano tutti soldati di prim'ordine, motivo per cui hanno scelto quel giorno per portare a termine la missione. Se i loro successori sono altrettanto eccezionali... non so se avrò la forza di mandarli al Nord. Perché ho questi pensieri, Endmin? Cosa mi manca?"
+      },
+      {
+        "title": "Chiacchierata 1",
+        "text": "Il nome in codice \"Ember\" l'ho scelto io. Significa \"braci\". Non intendo fuggire dalla verità: non sono ancora pronta a tornare sul fronte settentrionale. Ma finché resterà anche solo una scintilla, le mie braci potranno tornare ad alimentare le fiamme. Endmin, confido che la Endfield mi aiuterà a trovare la mia strada."
+      },
+      {
+        "title": "Chiacchierata 2",
+        "text": "Le normali unità di sicurezza riescono a gestire i Kriosson, ma la situazione cambia drasticamente quando entrano in gioco i Thrylissoron. Tra i Cavalieri Giurati, le squadre tattiche come la nostra hanno il compito di rompere rapidamente le formazioni nemiche, neutralizzare gli Ankhor ed evitare il raggruppamento degli Aggeloi più pericolosi. Sono missioni ad alto rischio, ma per noi è un onore portarle a termine."
+      },
+      {
+        "title": "Chiacchierata 3",
+        "text": "Se una squadra è ridotta all'osso, deve ritirarsi nelle retrovie per arruolare nuovi soldati, aprendo uno speciale canale di reclutamento per i Cavalieri Giurati. Chi viene a sfidarmi vuole semplicemente unirsi a noi; non nutre rancore personale nei miei confronti. Va da sé che un'eventuale vittoria non garantisce il reclutamento. Forza e abilità sono essenziali, ma quel che conta davvero è ciò che la battaglia rivela sul carattere dello sfidante."
+      },
+      {
+        "title": "Chiacchierata 4",
+        "text": "Vuoi sapere della mia pistola da custode? Temo di averla lasciata alla fortezza dei Cavalieri Giurati. Non sono solita combattere con armi da fuoco. La pistola è più che altro una parte di me. Lasciarla lì mi ricorda che un giorno farò ritorno."
+      },
+      {
+        "title": "Chiacchierata 5",
+        "text": "Quando mi hanno tolta dalla prima linea, il comandante non ha fissato una data per il mio ritorno. In effetti, so che altri veterani hanno ricevuto gli stessi ordini: sono stati mandati ad arruolare nuove reclute nelle retrovie, senza mai fare ritorno alla fortezza. Forse è un modo rispettoso di congedare qualcuno senza clamore. Io però non intendo accettare quel destino, motivo per cui il comandante mi ha mandata da voi. Ritiene che la Endfield possa aiutarmi a scoprire cosa mi manca. Mi auguro sinceramente che abbia ragione."
+      },
+      {
+        "title": "Argomento: Ordine del Giuramento d'acciaio",
+        "text": "Durante la Prima guerra degli Aggeloi, fu costituita una coalizione di forze d'élite incaricata di spingersi verso il Nord. Giurarono di lottare fino alla fine, dando così inizio a una lunga e sanguinosa guerra di logoramento. Fu allora che nacquero i primi Cavalieri Giurati... Anzi, una volta il comandante mi ha detto che fosti proprio tu, Endmin, ad aiutarli a ristabilire le comunicazioni con le retrovie. E ora eccomi qui, a raccontarti questa storia. È quasi surreale."
+      },
+      {
+        "title": "Argomento: Guerra degli Aggeloi",
+        "text": "Tattiche e tecnologie sono efficaci contro gli Aggeloi, ma quando una battaglia si trasforma in guerra, la perdita di vite umane è inevitabile. L'attività di Ankhor e Aggeloi è diminuita notevolmente dopo la Prima guerra degli Aggeloi, eppure quand'ero in servizio, molti anni dopo, gli scontri sul fronte avevano già cominciato a intensificarsi... Forse la vera guerra è soltanto agli inizi."
+      },
+      {
+        "title": "Argomento: linea di difesa settentrionale",
+        "text": "La linea di difesa settentrionale non resta mai la stessa. Ogni giorno lottiamo per guadagnare terreno contro gli Aggeloi. Quando la lotta si fa particolarmente feroce, i nostri soldati portano in battaglia materiali da costruzione per affrettarsi a erigere nuove roccaforti sui punti strategici appena conquistati. Non ci ritiriamo mai dalla linea di difesa, perché la linea di difesa siamo noi."
+      },
+      {
+        "title": "Argomento: Arti di Originium",
+        "text": "Come il fuoco comune, le mie Arti di Originium mi permettono di incendiare materiali e ustionare i nemici. Se controllate con precisione, possono anche servire a disinfettare le ferite e regolare la temperatura corporea. Queste tecniche possono rivelarsi utili in battaglia, ma non sostituiscono le Arti mediche vere e proprie. È sempre preferibile evacuare i feriti e prestare loro le cure opportune il prima possibile."
+      },
+      {
+        "title": "Argomento: la Cintura civilizzata",
+        "text": "Anche nel pieno della battaglia, le scorte di inibitori di Oripatia non smettono mai di arrivare al fronte. Io sono infetta e comprendo appieno la loro importanza. È difficile immaginare come vivessero le persone durante l'Epoca di Terra... Le catastrofi causate dall'Originium qui non si verificano e gli infetti non vengono più perseguitati. Che sia la prova di un progresso reale?"
+      },
+      {
+        "title": "Individuazione risorsa/collezionabile 1",
+        "text": "Individuate risorse utili. Prepararsi al recupero."
+      },
+      {
+        "title": "Individuazione risorsa/collezionabile 2",
+        "text": "Oggetto di elevato valore identificato. Richiedo l'autorizzazione al recupero."
+      },
+      {
+        "title": "Individuazione zona non esplorata",
+        "text": "Rilevati segnali insoliti più avanti. Non corrispondono agli schemi tipici degli Ankhor. Avviamo un'indagine?"
+      },
+      {
+        "title": "Individuazione nemico potente",
+        "text": "Avvistato bersaglio altamente pericoloso. Restare in guardia."
+      },
+      {
+        "title": "Estrazione 1",
+        "text": "Bisogna rifornirsi quando si può. Meglio evitare di ritrovarsi a corto di risorse proprio quando servono."
+      },
+      {
+        "title": "Estrazione 2",
+        "text": "Raccogliamo minerali? Contribuisco anch'io."
+      },
+      {
+        "title": "Apertura di una cassa",
+        "text": "Spero si riveli utile."
+      },
+      {
+        "title": "Acquisizione di Aurylene",
+        "text": "Questo ci interessa? Ricevuto, terrò gli occhi bene aperti."
+      },
+      {
+        "title": "Eliminazione Contaminazione",
+        "text": "Ora questi ostacoli ripugnanti non rallentano più la nostra avanzata."
+      },
+      {
+        "title": "Riposo",
+        "text": "Riposo concluso. Procediamo con la missione."
+      },
+      {
+        "title": "Utilizzo di gadget 1",
+        "text": "Supporto tattico in arrivo."
+      },
+      {
+        "title": "Utilizzo di gadget 2",
+        "text": "Ora è tutto a posto. Si torna a combattere."
+      },
+      {
+        "title": "Avviso di pericolo",
+        "text": "Prepararsi all'impatto!"
+      },
+      {
+        "title": "Ferita",
+        "text": "Resisterò fino all'ultimo."
+      },
+      {
+        "title": "Esaurimento PS",
+        "text": "La crociata... non può finire così..."
+      },
+      {
+        "title": "Incoraggiamento alla squadra 1",
+        "text": "Prestazione eccellente."
+      },
+      {
+        "title": "Incoraggiamento alla squadra 2",
+        "text": "Manovra di combattimento esemplare."
+      },
+      {
+        "title": "Risposta all'incoraggiamento 1",
+        "text": "Ognuno si è guadagnato la sua parte di gloria."
+      },
+      {
+        "title": "Risposta all'incoraggiamento 2",
+        "text": "È il frutto di un impeccabile lavoro di squadra."
+      },
+      {
+        "title": "Inizio combattimento 1",
+        "text": "Sono pronta! Nessuno mi fermerà!"
+      },
+      {
+        "title": "Inizio combattimento 2",
+        "text": "Ricevuto. Procedo all'offensiva."
+      },
+      {
+        "title": "Vittoria in combattimento 1",
+        "text": "Una vittoria meritata."
+      },
+      {
+        "title": "Vittoria in combattimento 2",
+        "text": "Abbiamo combattuto con coraggio e cautela. Ottimo lavoro, squadra."
+      },
+      {
+        "title": "Vittoria in combattimento 3",
+        "text": "Insieme abbiamo conquistato la vittoria."
+      },
+      {
+        "title": "Vittoria in combattimento 4",
+        "text": "Non sono stata all'altezza... ma farò tesoro di quanto appreso per crescere. Lo prometto."
+      },
+      {
+        "title": "Sconfitta in combattimento",
+        "text": "Ho commesso di nuovo gli stessi errori?"
+      },
+      {
+        "title": "Colpo finale 1",
+        "text": "Prendi questo!"
+      },
+      {
+        "title": "Colpo finale 2",
+        "text": "Basta opporre resistenza!"
+      },
+      {
+        "title": "Abilità di combattimento 1",
+        "text": "Nessuno può fermarmi!"
+      },
+      {
+        "title": "Abilità di combattimento 2",
+        "text": "Facciamola finita!"
+      },
+      {
+        "title": "Abilità di combattimento 3",
+        "text": "Avanti tutta!"
+      },
+      {
+        "title": "Abilità combo pronta 1",
+        "text": "Pronta a un'azione combinata!"
+      },
+      {
+        "title": "Abilità combo pronta 2",
+        "text": "In posizione!"
+      },
+      {
+        "title": "Esecuzione combo 1",
+        "text": "Non finché ci sono io!"
+      },
+      {
+        "title": "Esecuzione combo 2",
+        "text": "Per te è la fine!"
+      },
+      {
+        "title": "Mossa letale 1",
+        "text": "Distruzione!"
+      },
+      {
+        "title": "Mossa letale 2",
+        "text": "Patetico!"
+      },
+      {
+        "title": "Abilità suprema 1",
+        "text": "Fuoco dei Cavalieri Giurati!"
+      },
+      {
+        "title": "Abilità suprema 2",
+        "text": "Io sono l'incarnazione del Fulgore!"
+      },
+      {
+        "title": "Abilità suprema 3",
+        "text": "Qui la luce arderà in eterno!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

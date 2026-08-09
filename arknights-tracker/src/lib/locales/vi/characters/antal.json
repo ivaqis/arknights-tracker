@@ -117,7 +117,329 @@
         "name": "Sáng Tạo",
         "description": "Sáng Tạo: Huấn Luyện Cảm Nhận Hài Hước\nAntal tin rằng cứ chăm chỉ tập thì sớm ngày trở thành Trùm của Những Trò Đùa Nhạt Nhẽo."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Chuẩn Bị Tác Chiến 1",
+        "text": "Hmm. Lại bắt đầu một ca trực mới."
+      },
+      {
+        "title": "Chuẩn Bị Tác Chiến 2",
+        "text": "Ai là đối tượng thử nghiệm lần này?"
+      },
+      {
+        "title": "Đang thêm vào đội 1",
+        "text": "Nhiệm vụ dành cho tôi? Tốt lắm. Tôi đang cần cơ hội thử nghiệm thực địa cho việc chỉnh sửa các tàu quỹ đạo."
+      },
+      {
+        "title": "Đang thêm vào đội 2",
+        "text": "Nếu ngài đã có kế hoạch, xin cứ ra lệnh. Tôi tin tưởng vào phán đoán của ngài."
+      },
+      {
+        "title": "Đang đổi vũ khí",
+        "text": "Một vũ khí mới chưa qua hiệu chỉnh. Tôi phải tiến hành đánh giá hiệu suất ngay."
+      },
+      {
+        "title": "Đang đổi trang bị",
+        "text": "Trang bị mới cho thấy nhiều cải tiến đáng kể. Tuy nhiên nó hay vướng vào lớp vảy của tôi."
+      },
+      {
+        "title": "Kích hoạt Ma Trận Năng Lực",
+        "text": "Hmm... Tôi rất cảm kích lời chỉ dẫn này. Một ý tưởng mới vừa được khơi mở."
+      },
+      {
+        "title": "Xem Hồ Sơ Chiến Đấu",
+        "text": "Kế hoạch chiến đấu rất đáng nể, Endministrator. Tôi thấy vinh dự khi được tham gia chiến dịch của ngài."
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 1",
+        "text": "Tăng lương? Tôi rất hoan nghênh nguồn vốn bổ sung dùng để thu thập thêm thiết bị Originium và đơn vị Thuật Pháp. Kho nghiên cứu và cả kho cá nhân của tôi sẽ phát triển vượt bậc."
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 2",
+        "text": "Thăng bậc và kèm theo khối lượng công việc thêm trong tương lai? Tôi hiểu. Vậy, có nhiệm vụ mới nào giao cho tôi không?"
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 3",
+        "text": "Liệu đây có phải là sự khích lệ cho niềm đam mê kiến thức của tôi không? Tôi vừa hoàn thành báo cáo về Lõi Tự Động Hóa Giao Thức. Ngài có thể xem lại nếu tôi bỏ sót điều gì đó."
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 4",
+        "text": "Cuộc sống ở Endfield khác xa so với những ngày tháng trong Học Viện. Khi ấy, tôi dễ dàng đạt GPA nhờ công trình nghiên cứu, nhưng giờ điều đó chẳng còn ý nghĩa gì nhiều. Tôi phải học cách đặt niềm tin vào đồng đội và cùng họ đạt được kết quả."
+      },
+      {
+        "title": "Cán Viên đang báo cáo nhiệm vụ",
+        "text": "Antal từ Đội Z7, báo cáo. Tôi nghiên cứu về tự động hóa Originium, thỉnh thoảng cũng phụ trách điều chỉnh hoặc sửa chữa thiết bị liên quan. Ngài có thể giao cho tôi các nhiệm vụ như vậy... Nhưng tôi có một câu hỏi dành cho ngài. Mặt nạ ngài đang đeo được làm từ vật liệu gì vậy? Sợi carbon?"
+      },
+      {
+        "title": "Chờ Lệnh 1",
+        "text": "Ngài muốn trao đổi điều gì với tôi?"
+      },
+      {
+        "title": "Chờ Lệnh 2",
+        "text": "Tôi đang cố gắng nghĩ ra một trò đùa dở để dành riêng cho ngài."
+      },
+      {
+        "title": "Phân Công Vào Công Trình",
+        "text": "Giao nhiệm vụ mới? Xác nhận."
+      },
+      {
+        "title": "Lời Chào 1",
+        "text": "Tôi sẵn sàng trả lời các câu hỏi liên quan đến thiết bị Originium cũng như nhiều chủ đề khác."
+      },
+      {
+        "title": "Lời Chào 2",
+        "text": "Thật kỳ lạ, sự hiện diện của ngài khiến tôi càng muốn chia sẻ kho tri thức của mình nhiều hơn."
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 1",
+        "text": "Tôi có thể kiểm tra vũ khí của ngài chứ, Endmin? Hmm. Vấn đề duy nhất tôi thấy chính là linh kiện bị hỏng. Chỉ cần thay một linh kiện Originium chính xác là có thể khắc phục. Việc sửa chữa lần này sẽ không quá rắc rối. Tôi cung cấp dịch vụ này cho mọi thành viên của Đội Z7."
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 2",
+        "text": "Việc nghiên cứu Dijiang cho tôi thấy nó là đỉnh cao của kỹ thuật hiện đại. Trung Tâm Điều Khiển, Nút Mạng Lưới Protorig, hệ thống Hỗ Trợ Sự Sống và nhiều thành phần khác của con tàu đều là kho tàng kiến thức. Chúng đã cung cấp nền tảng cho luận án tiếp theo của tôi."
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 3",
+        "text": "Tôi có một câu đùa lấy cảm hứng từ trải nghiệm cá nhân của Fluorite. Làm thế nào để trả lời một tin nhắn đe dọa từ kẻ phản diện? Trả lời: Hủy đăng ký. Ngài cười rồi. Chứng tỏ câu đùa này rất hài hước. Nhưng vì sao những người khác lại không cười giống ngài?"
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 4",
+        "text": "Nếu cảm xúc của ngài trở nên lạnh lẽo, hãy cùng tôi ra ngoài trời. Bức xạ mặt trời giúp kích thích tiết serotonin trong não bộ, làm giảm cảm xúc tiêu cực. Gần Học Viện của tôi từng có một công viên đài phun nước, nơi ấy yên bình và đầy ánh nắng. Thời còn là sinh viên Học Viện, tôi thường lui tới đó để nghỉ ngơi mỗi khi kiệt sức."
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 5",
+        "text": "Hôm qua, thư hồi âm từ bà tôi đã đến. Bà có vẻ khá hứng thú với một cá nhân mà tôi liên tục nhắc đến trong thư gửi bà. Tôi sẽ chuyển lại lời nhắn của bà đến người đó, chính là ngài, Endmin: \"Chắc ngài cũng biết, một cậu Savra trẻ tuổi nào đó đôi khi rất bướng bỉnh, nhưng là theo cách dễ thương. Làm ơn hãy rộng lượng với cháu nó. Tôi mong có dịp được cùng ngài uống trà và kể thêm về cách tôi nuôi dạy cái đứa nhỏ có vảy này.\""
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 6",
+        "text": "Nhiều người thường đứng trên boong tàu Dijiang để ngắm nhìn Talos-II. Tôi cũng từng làm thế, và tuy thấy khung cảnh khá mới mẻ, tôi lại không cảm nhận được sự hoài niệm mà họ có. Có lẽ là vì bà tôi. Bà từng dạy tôi rằng: \"Đừng quá vương vấn quá khứ. Hãy tìm kiếm và mở rộng tương lai của cháu.\""
+      },
+      {
+        "title": "Tặng Quà",
+        "text": "Theo quy tắc giao tiếp xã hội, người ta thường trao quà để thể hiện cảm xúc. Tôi đã chuẩn bị món quà này dành cho ngài."
+      },
+      {
+        "title": "Nhận quà",
+        "text": "Tôi rất biết ơn. Tôi hiểu ý nghĩa của việc tặng quà và tôi sẽ trân trọng món quà này."
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 1",
+        "text": "Gia nhập Endfield chưa bao giờ là lựa chọn khó khăn đối với tôi. Ngài cung cấp công nghệ mới mà Học Viện không hề có. Giới khoa học thường bảo thủ quá mức trong việc phát triển một số lĩnh vực. Endfield, ngược lại, thể hiện tinh thần đáng ngưỡng mộ về sự khám phá, đổi mới và ứng dụng thực tiễn."
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 2",
+        "text": "Sách của tôi? Đúng vậy, là tập \"Tuyển Tập Sudoku Cấp Độ Cực Hạn\". Những câu đố số học giúp tôi điều tiết cảm xúc trong lúc nhàn rỗi. Tôi đã chia sẻ thú vui này với các thành viên Z7 nhưng phản hồi khá tiêu cực. Ngài muốn thử chứ, Endmin?"
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 3",
+        "text": "Ngài có câu đùa dở tệ dành cho tôi à? Xin được lắng nghe. \"Tại sao một Savra chỉ buông mấy câu đùa sến sẩm vào ban ngày? Vì mặt trời ló rồi, mà đến Xí Hổ cũng cần tí vitamin D\"... Hrra-Hrra-Hrra. Tôi không có ý xúc phạm đâu Endmin. Âm thanh đó là tiếng cười chân thành của một Savra."
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 4",
+        "text": "Tôi từng chỉnh sửa rất nhiều thiết bị Originium. Nhưng thứ tôi nhớ nhất chính là cây gậy bà tôi tặng tôi hồi nhỏ. Tôi vẫn còn nhớ lời bà cho đến tận bây giờ: \"Nó sẽ đồng hành cùng cháu khi cháu thay đổi thế giới này.\""
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 5",
+        "text": "Bà tôi từng nói rằng dành cả đời để trả lời một câu hỏi khoa học có thể rất lãng mạn, nhưng sống không có bạn bè thì rất cô độc. Tôi đã không hiểu câu nói ấy của bà. Cho đến khi tôi muốn chia sẻ niềm vui vì vừa khám phá ra điều mới, nhưng ngài lại không có ở đó. Chuyện đó dạy tôi một bài học về nỗi cô đơn."
+      },
+      {
+        "title": "Trò Chuyện 1",
+        "text": "Fluorite đã chỉ tôi một trò chơi bài để giết thời gian. Cô ấy còn nói rằng người thua phải làm bất cứ điều gì người thắng yêu cầu. Chúng tôi đã chơi năm ván. Giờ cô ấy buộc phải dạy riêng tôi năm buổi về chủ đề \"trở thành một người bạn trò chuyện vui vẻ một cách nhanh chóng\"."
+      },
+      {
+        "title": "Trò Chuyện 2",
+        "text": "Ăn tối sao? Không, tôi không đi được. Tôi đã tự ý truy đuổi một Aggeloi mà không báo cáo với Đội trưởng. Cô ấy đã phạt tôi bằng cách tước quyền ăn khuya ở nhà ăn."
+      },
+      {
+        "title": "Trò Chuyện 3",
+        "text": "Vì sao tôi chọn Z7 thay vì một dự án Nghiên Cứu và Phát Triển? Trung Tâm Nghiên Cứu và Phát Triển vốn là nơi tôi muốn đến, nhưng người phỏng vấn tôi là Đội trưởng Akekuri. Cô ấy tin rằng thiết bị Originium đã được chỉnh sửa thì nên đưa ra chiến trường thay vì chỉ giữ trong phòng thí nghiệm. Như vậy sẽ dễ dàng phát hiện ra các vấn đề hơn. Tôi đồng tình, vì vậy tôi đã gia nhập đội của cô ấy."
+      },
+      {
+        "title": "Trò Chuyện 4",
+        "text": "Tại sao tôi bị ám ảnh bởi những câu đùa dở tệ? Thời còn đi học, nhiều người than phiền rằng tôi không có khiếu hài hước. Tôi đồng ý với họ. Đây là một khiếm khuyết cần phải được khắc phục."
+      },
+      {
+        "title": "Trò Chuyện 5",
+        "text": "Bà tôi nói rằng bà rất vui khi tôi rời nhà để đến Endfield. Bà xem đó là cơ hội giúp tôi rời xa sách vở và thiết bị Originium. Bà hy vọng tôi sẽ học được cách hòa hợp với đồng đội, thậm chí... có thể kết bạn."
+      },
+      {
+        "title": "Chủ đề: Akekuri",
+        "text": "Đội trưởng Akekuri? Chính cô ấy đã tuyển tôi, cô ấy cũng rất thân thiện. Tôi luôn tuân theo mọi chỉ thị của cô ấy. Dù cô ấy nói đội của chúng tôi đã làm rất tốt, nhưng cô ấy thường xuyên mất ngủ và đi đi lại lại giữa đêm khuya. Cô ấy không muốn nói lý do. Tôi hy vọng ngài có thể nói cho tôi biết, Endmin."
+      },
+      {
+        "title": "Chủ đề: Catcher",
+        "text": "Catcher phụ trách chuẩn bị khẩu phần trong các nhiệm vụ dã chiến. Cậu ấy dùng dụng cụ nhà bếp còn thuần thục hơn cả tôi với các tàu quỹ đạo. Tuy nhiên, mỗi khi trời mưa, cậu ấy không nói lời nào dù cũng không xua đuổi tôi. Tôi cảm thấy hơi khó hiểu."
+      },
+      {
+        "title": "Chủ đề: Fluorite",
+        "text": "Ở mức độ nào đó, tôi xem Fluorite là một người bạn cùng giống loài có vảy. Tôi cảm thấy cái đuôi mạnh mẽ và dứt khoát của cô ấy thật hấp dẫn. Nhưng cô ấy đã cấm tôi đánh giá bằng xúc giác. Fluorite cũng là người có khả năng đàm thoại rất tinh tế. Tôi học hỏi rất nhiều từ cô ấy."
+      },
+      {
+        "title": "Chủ đề: Estella",
+        "text": "Khi bước vào trận chiến, tôi cần tính tới việc bảo vệ Estella. Chúng tôi đều có màu da nổi bật và phản quang, điều này là một mối lo quan trọng vì dễ khiến chúng tôi bị lộ trên chiến trường."
+      },
+      {
+        "title": "Phát hiện Tài Nguyên/Có Thể Thu Thập 1",
+        "text": "Tốt lắm. Một khám phá mới đã được thực hiện."
+      },
+      {
+        "title": "Phát hiện Tài Nguyên/Có Thể Thu Thập 2",
+        "text": "Chúng ta nên kiểm tra yếu tố trọng yếu đó."
+      },
+      {
+        "title": "Phát Hiện Khu Vực Chưa Khám Phá",
+        "text": "Cho phép tôi điều tra bí ẩn này."
+      },
+      {
+        "title": "Phát hiện Kẻ Địch Mạnh",
+        "text": "Phát hiện đơn vị địch tinh anh."
+      },
+      {
+        "title": "Khai thác 1",
+        "text": "Khoáng sản có nhiều công dụng. Chúng ta nên thu thập thêm."
+      },
+      {
+        "title": "Khai thác 2",
+        "text": "Sẽ nâng cao hiệu suất của chúng ta."
+      },
+      {
+        "title": "Mở Thùng",
+        "text": "Phát hiện kho tài nguyên giàu lưu trữ. Chúng ta nên phân loại để tìm vật liệu bảo dưỡng trang bị."
+      },
+      {
+        "title": "Nhận Aurylene",
+        "text": "Một số Aurylene bất ngờ rút lui khi chúng ta tiếp cận. Tại sao? Liệu có phải là phản ứng đẩy dựa trên năng lượng?"
+      },
+      {
+        "title": "Xua Tan Nhiễm Khuẩn",
+        "text": "Điều này đồng nghĩa với việc chúng ta đã hiểu thêm về Nhiễm Khuẩn sao...?"
+      },
+      {
+        "title": "Nghỉ ngơi",
+        "text": "Con người không phải máy móc, cần có thời gian để nghỉ ngơi."
+      },
+      {
+        "title": "Sử Dụng Vật Phẩm Chiến Thuật 1",
+        "text": "Khởi động điều trị khẩn cấp."
+      },
+      {
+        "title": "Sử Dụng Vật Phẩm Chiến Thuật 2",
+        "text": "Tình trạng cơ bản đã được khôi phục."
+      },
+      {
+        "title": "Cảnh Báo Nguy Hiểm",
+        "text": "Phát hiện lệnh tấn công từ phía địch."
+      },
+      {
+        "title": "Bị Thương",
+        "text": "Điều kiện chưa tối ưu nhưng vẫn hoạt động được."
+      },
+      {
+        "title": "0 HP",
+        "text": "Gián đoạn mạch suy nghĩ. Hỗ trợ... không khả dụng."
+      },
+      {
+        "title": "Cổ Vũ Đội 1",
+        "text": "Một màn thể hiện xuất sắc."
+      },
+      {
+        "title": "Cổ Vũ Đội 2",
+        "text": "Chúng tôi đã đạt thỏa thuận hợp tác ngầm."
+      },
+      {
+        "title": "Đáp Lại Lời Cổ Vũ 1",
+        "text": "Cảm ơn ngài, nhưng dư sức làm tốt hơn nữa."
+      },
+      {
+        "title": "Đáp Lại Lời Cổ Vũ 2",
+        "text": "Kết quả đã rõ ràng."
+      },
+      {
+        "title": "Bắt Đầu Chiến Đấu 1",
+        "text": "Đơn Vị Thuật Pháp đạt tối ưu."
+      },
+      {
+        "title": "Bắt Đầu Chiến Đấu 2",
+        "text": "Tập trung vào chiến đấu. Tôi sẽ yểm trợ hỏa lực."
+      },
+      {
+        "title": "Thắng Trận 1",
+        "text": "Tiếp thu kiến thức mới."
+      },
+      {
+        "title": "Thắng Trận 2",
+        "text": "Nhiệm vụ hoàn thành. Dễ như trở bàn tay."
+      },
+      {
+        "title": "Thắng Trận 3",
+        "text": "Tất cả đều là nhân tố không thể thay thế trong đội hình."
+      },
+      {
+        "title": "Thắng Trận 4",
+        "text": "Kết quả của chúng ta đạt mức tối ưu dù có nhiều biến số bất ngờ trong giao tranh."
+      },
+      {
+        "title": "Bại Trận",
+        "text": "Bảng tổng hợp tổn thất cho thấy rút lui là giải pháp tốt nhất cho cả đội."
+      },
+      {
+        "title": "Đòn Dứt Điểm 1",
+        "text": "Phát hiện sơ hở!"
+      },
+      {
+        "title": "Đòn Dứt Điểm 2",
+        "text": "Hừ! Tê liệt đi!"
+      },
+      {
+        "title": "KN Chiến Đấu 1",
+        "text": "Đã cài hướng di chuyển."
+      },
+      {
+        "title": "KN Chiến Đấu 2",
+        "text": "Đã khóa mục tiêu."
+      },
+      {
+        "title": "KN Chiến Đấu 3",
+        "text": "Công suất tối đa."
+      },
+      {
+        "title": "Chuẩn Bị KN Liên Hoàn 1",
+        "text": "Đầy năng lượng."
+      },
+      {
+        "title": "Chuẩn Bị KN Liên Hoàn 2",
+        "text": "Đơn vị đã sẵn sàng, nhiệt độ ổn định."
+      },
+      {
+        "title": "Thi Triển Liên Hoàn 1",
+        "text": "Cú điện giật chí mạng."
+      },
+      {
+        "title": "Thi Triển Liên Hoàn 2",
+        "text": "Hãy nhanh chóng giành chiến thắng!"
+      },
+      {
+        "title": "Kết Liễu 1",
+        "text": "Bùng Nổ Ion."
+      },
+      {
+        "title": "Kết Liễu 2",
+        "text": "Bùng phát điện áp."
+      },
+      {
+        "title": "Tuyệt Kỹ 1",
+        "text": "Chiến thắng chấn động."
+      },
+      {
+        "title": "Tuyệt Kỹ 2",
+        "text": "Mạch điện được khuếch đại!"
+      },
+      {
+        "title": "Tuyệt Kỹ 3",
+        "text": "Đến lúc nạp năng lượng rồi!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

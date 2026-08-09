@@ -128,7 +128,333 @@
         "name": "Công Nghệ",
         "description": "Công Nghệ: Sưu Tập Trang Bị \nKệ trưng bày, càng nhiều càng tốt. Đó là yêu cầu duy nhất của cậu đối với một nơi trú ẩn. Nhờ vậy, cậu có thể tỉ mỉ phân loại và sắp xếp đủ loại trang bị theo thương hiệu lẫn chức năng."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Chuẩn Bị Tác Chiến 1",
+        "text": "Tôi không muốn chờ thêm nữa."
+      },
+      {
+        "title": "Chuẩn Bị Tác Chiến 2",
+        "text": "Muốn thêm người đồng hành không? Chỉ cần lên tiếng là tôi sẽ theo."
+      },
+      {
+        "title": "Đang thêm vào Đội 1",
+        "text": "Dẫn đường đi, tôi theo sau. Ngược lại cũng được."
+      },
+      {
+        "title": "Đang thêm vào Đội 2",
+        "text": "Sớm liệu được rồi. Lên đường thôi."
+      },
+      {
+        "title": "Đang Đổi Vũ Khí",
+        "text": "Vũ khí sắc bén này sẽ xé toạc tất cả, không gì cản được. Phải cẩn trọng khi dùng."
+      },
+      {
+        "title": "Đang Đổi Trang Bị",
+        "text": "Cơ chế trang bị của Hộ Thần vận hành xoay quanh vu thuật Sarkaz. Nhưng tôi tin vào lựa chọn của bạn."
+      },
+      {
+        "title": "Kích hoạt Ma Trận Năng Lực",
+        "text": "Tạp chất đã được loại bỏ. Dòng máu giờ đã thuần khiết hơn."
+      },
+      {
+        "title": "Xem Hồ Sơ Chiến Đấu",
+        "text": "Những ghi chép chiến thuật này rất hữu ích. Nhờ đây mà các Hộ Thần thực hiện nhiệm vụ thêm hiệu quả."
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 1",
+        "text": "Là Endfield chính thức công nhận hay là do bạn tín nhiệm?"
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 2",
+        "text": "Cảm ơn Endministrator đã khen ngợi. Trách nhiệm trên vai nặng hơn nhưng giờ tôi chỉ thấy vui vì xứng đáng với sự tín nhiệm của bạn."
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 3",
+        "text": "Này bạn tôi, mấy cái danh hiệu vô nghĩa chẳng đáng bận tâm nữa. Dòng máu của tôi sẽ mãi bên bạn."
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 4",
+        "text": "Trên thế gian này, những thế lực khổng lồ luôn tranh đoạt quyền, để mặc ta chật vật mưu sinh. Thế nhưng bạn đã cho tôi thấy một đổi thay nhỏ bé vẫn có ý nghĩa. Và tôi... Tôi cũng hết lòng muốn cùng bạn bước tiếp trên con đường ấy."
+      },
+      {
+        "title": "Cán Viên Đang Báo Cáo Nhiệm Vụ",
+        "text": "Camille Arno, Agaš'mekanaz của Seš'qa. Tôi đang truy lùng một tội phạm Sarkaz cực kỳ nguy hiểm, kẻ lấy vu thuật làm vũ khí. Vì vậy, tôi cần đến sức mạnh của Endfield... Và đổi lại, tôi nguyện dâng hiến sức mạnh của mình."
+      },
+      {
+        "title": "Chờ Lệnh 1",
+        "text": "Bắt đầu từ máu, rồi cũng sẽ kết trong máu."
+      },
+      {
+        "title": "Chờ Lệnh 2",
+        "text": "Ta sẽ không để yên cho bất kỳ kẻ tội đồ nào lẩn trốn."
+      },
+      {
+        "title": "Phân Công Vào Công Trình",
+        "text": "Tôi làm việc độc lập. Tự tung tự tác sẽ hiệu quả hơn."
+      },
+      {
+        "title": "Lời Chào 1",
+        "text": "Có chỉ thị gì không?"
+      },
+      {
+        "title": "Lời Chào 2",
+        "text": "Endmin, cuộc gặp này không phải ngẫu nhiên. Tôi đã chờ từ lâu."
+      },
+      {
+        "title": "Tán Gẫu Ở Dijiang 1",
+        "text": "Không gian theo chiều dọc ở Dijiang rất rộng. Đôi khi, để tối ưu hiệu suất, tôi sẽ đi ngang qua trần nhà... Không, không phải để tránh chào hỏi người khác."
+      },
+      {
+        "title": "Tán Gẫu Ở Dijiang 2",
+        "text": "Tôi có thể nghe thấy dòng điện đi qua trong từng sợi cáp của Dijiang. Mỗi khi bộ phận Kỹ Sư điều chỉnh các thông số của con tàu, âm rung của điện lưu lại thay đổi, và tôi cũng phải theo đó mà điều chỉnh... Hơi phiền nhưng không sao. Bởi nghĩa là vẫn có người đang dốc sức để vận hành con tàu này đúng quỹ đạo."
+      },
+      {
+        "title": "Tán Gẫu Ở Dijiang 3",
+        "text": "Tôi hứng thú với ghép hình. Có một cảm giác thỏa mãn rất riêng khi thu nhặt những mảnh rời rạc và đưa về thể toàn vẹn. Mà nữa, đó là thú tiêu khiển một mình."
+      },
+      {
+        "title": "Tán Gẫu Ở Dijiang 4",
+        "text": "Không ngờ Seš'qa lại điều cán viên Last Rite đến Endfield... Đây là sự hợp tác chân thành, gắn kết giữa hai tổ chức, cũng như cho sự đồng điệu trong tầm nhìn của chúng ta. Hệt như ngày trước... không thay đổi."
+      },
+      {
+        "title": "Tán Gẫu Ở Dijiang 5",
+        "text": "Đều là đôi cánh trên không trung, nhưng lại ở hai nơi khác nhau. Sự bình yên của Seš'qa khởi sinh từ những người cùng huyết mạch với tôi. Còn Dijiang... có lẽ sự hiện diện của một người đặc biệt cũng có thể đem lại cảm giác vững lòng như thế."
+      },
+      {
+        "title": "Tán Gẫu Ở Dijiang 6",
+        "text": "Hiếm ai có thể thật sự hiểu rõ mình, vậy mà trên Dijiang, mọi người lại cùng nhau tiến về một mục tiêu rõ ràng. Tôi đã đi tìm nguyên do trong một thời gian dài, và cuối cùng tìm thấy ở bạn, Endmin. Bạn đúng là một nhà lãnh đạo đáng nể."
+      },
+      {
+        "title": "Tặng Quà",
+        "text": "Tôi mang đến một món quà từ Seš'qa. Xin nhận lấy. Những quà tặng khác từ phía lãnh đạo của chúng tôi cũng đã được chuyển đến văn phòng của bạn."
+      },
+      {
+        "title": "Nhận quà",
+        "text": "Mong rằng đây không phải là món quà chia tay... Được, tôi sẽ nhận."
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 1",
+        "text": "Suốt thập kỷ qua, đôi lần tôi nhìn thấy bạn từ xa. Ấn tượng đầu tiên là hình bóng của một \"Đấng Cứu Thế\". Nhưng giờ lại giống người bạn tâm giao hơn. Tôi vốn chẳng quan tâm đến người khác nghĩ gì, nhưng lại thấy an yên hơn với người đang ở trước mắt lúc này. Dáng vẻ đã không còn hằn dấu từng trải, thân thể cũng chẳng còn sẹo."
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 2",
+        "text": "Tôi thường xuyên mơ thấy gia đình mình trong một khu vườn, bị vây quanh bởi đám Landbreaker cuồng loạn tay cầm đuốc. Dù có ra sức chạy đến đâu thì đôi chân vẫn như mắc cứng tại chỗ, chẳng thể nào chạm tới họ. Trong những tháng ngày tăm tối nhất... giấc mộng ấy đêm nào cũng tìm đến. Nhưng kể từ khi đặt chân đến Endfield, những cơn ác mộng đó đã dần phai đi."
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 3",
+        "text": "Để giữ cho Char sống sót, tôi đã trao cho em ấy máu của mình... trọn vẹn một nửa sự tồn tại của tôi. Vì thế, tôi vừa là anh trai mà vừa là người đã sinh ra em ấy. Điều mà một Vampire sợ nhất chính là dòng máu của mình bị vấy bẩn, bị tha hóa. Nhưng nó lại dùng chính dòng máu ấy để làm tổn thương người khác... nên tôi buộc phải ngăn chuyện ngu xuẩn đó lại. Phải làm vậy thôi."
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 4",
+        "text": "Ngày trước, tôi từng ước gì ký ức có thể theo dòng máu mà trôi đi, để không còn nỗi đau dai dẳng. Nhưng sau khi gặp bạn... tôi mới nhận ra rằng chính những điều không thể chạm tới, không thể quên đi, cũng không thể thay đổi ấy đã tạo nên con người tôi hôm nay. Vì vậy, Endmin, tôi sẽ giúp bạn tìm lại những gì mình đã mất."
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 5",
+        "text": "Tôi đã cho đi một nửa sinh huyết của mình, nên giờ chỉ còn lại một cánh... Phần đã mất ấy vẫn đau nhức không ngừng, như thể dòng máu trong tôi muốn đòi lại những gì đã mất. Nhưng những ký ức mới mà chúng ta cùng nhau tạo nên đang dần lấp đầy khoảng trống ấy. Có lẽ rồi theo thời gian... nỗi đau nơi vết sẹo đó sẽ không còn giày vò nữa."
+      },
+      {
+        "title": "Trò Chuyện 1",
+        "text": "Trong vườn nhà tôi ngày trước có một loài cây mang tên Cam Thảo Ma Giới. Mẹ từng nói, người Sarkaz đã đem theo nó từ Terra như mang theo một sợi tơ ký ức. Nó tượng trưng cho hy vọng rằng chúng tôi có thể cùng hành tinh này chung tồn — rằng mọi sự sống, dù là con người hay thực vật, rồi cũng sẽ tìm được cách sinh trưởng nơi miền đất lạ. Dĩ nhiên, hồi còn nhỏ tôi chỉ xem như nguyên liệu để làm kẹo vu thuật... Vị khá đặc biệt, nhưng cũng không phải kiểu khó chịu."
+      },
+      {
+        "title": "Trò Chuyện 2",
+        "text": "Trên Seš'qa có một quán rượu rất đặc biệt, toàn bộ được dựng bằng kính gương. Trên trần treo vô số bảo thạch nhân tạo phát sáng nhờ vu thuật, khiến cả tòa nhà rực lên ánh sáng. Mỗi khi mở đợt tham quan, người Sankta lại tổ chức tiệc ở đó. Lúc nào cũng ồn ã, náo nhiệt đến mức làm người khác không thể ngủ nổi. Thế nhưng, chính sự rộn ràng ấy lại là điều tốt cho Seš'qa. Những cố gắng của chúng tôi đang thật sự mang lại kết quả, dần dỡ bỏ biết bao rào cản giữa các chủng tộc."
+      },
+      {
+        "title": "Trò Chuyện 3",
+        "text": "Người xuất hiện trong cuốn catalog của Witching Hour à...? Rồi, là tôi đó. Họ gửi mẫu thử cho tôi để đổi lấy ảnh quảng bá. Nhiều năm trước, tôi bước vào một cửa hàng vu thuật, rồi nhân viên ở đó nhìn tôi như thể mẫu vật quý hiếm. Kết quả là tôi bị giữ lại, theo đúng nghĩa đen, để ký hợp đồng ngay tại chỗ. Nếu để người quen nhìn thấy bức ảnh đó thì quả thật cũng hơi khó xử... nhưng bù lại, mấy mẫu thử kia đúng là hàng hiếm. Endmin, tôi có thể hỏi bạn đang định đem cuốn sổ đó đi đâu không?"
+      },
+      {
+        "title": "Trò Chuyện 4",
+        "text": "Hồi nhỏ, tôi rất hay làm mất chìa khóa nhà. Có lần vì chuyện đó mà tôi cãi nhau với Char, rồi vô tình làm hỏng chiếc hộp nhạc của em ấy. Sau khi tôi xin lỗi, em ấy đã dùng bộ phận lõi của chiếc hộp đó để làm cho tôi một chiếc chìa khóa mới... Còn nói đó là một lá bùa sẽ luôn đưa tôi trở về nhà. Nhưng giờ thì gia đình tôi đã mất, còn điền trang ở Seš'qa cũng đã bị bán đi... chiếc chìa khóa ấy giờ đây không còn mở được cánh cửa nào nữa, cũng chẳng còn ý nghĩa gì."
+      },
+      {
+        "title": "Trò Chuyện 5",
+        "text": "Những \"ma thương\" rực huyết kia là Thuật Pháp Originium của tôi. Tôi có thể bọc vật thể trong máu rồi định hình chúng thành vũ khí. Bình thường, tôi chỉ sử dụng máu của chính mình, bởi máu của kẻ địch có thể mang tạp chất. Còn máu của đồng đội... đó là điều tôi không muốn, kể cả khi được cho phép."
+      },
+      {
+        "title": "Chủ đề: Seš'qa",
+        "text": "Trăm năm trước, có lẽ chẳng ai dám nghĩ đến ngày hình ảnh thành phố Sarkaz lơ lửng giữa trời cao không còn gây sự khó chịu, mà thay vào đó là mong muốn được đến thăm và tận mắt chứng kiến vu thuật. Seš'qa giống như một chiếc lông vũ phiêu bạt, giữa hàng vạn người cố điều khiển thứ không thể kiểm soát. Điều họ mong mỏi là thành phố hải hành ấy sẽ trở thành sợi dây nối liền với đồng bào ở mặt đất, để mang đến cho họ một niềm hy vọng."
+      },
+      {
+        "title": "Chủ đề: Chiến Thần Vùng Hoang",
+        "text": "Jakub, Chiến Thần Vùng Hoang... Phải, tôi đã gặp hắn ngoài đời. Giờ đây, gần như không còn mấy ai nhắc tới cái tên đó nữa. Gác tư thù sang một bên thì tôi không đồng tình với kế hoạch xé toạc Vành Đai Văn Minh của hắn. Nhưng dù vậy, tôi cũng không thể phủ nhận bản lĩnh cùng tài thao lược phi thường. Nếu Jakub Meissen không thất bại, rất có thể đám Landbreaker dưới trướng hắn đã cắt được một mảnh nhuốm máu khỏi Talos-II."
+      },
+      {
+        "title": "Chủ đề: Anh em ruột",
+        "text": "Tôi chẳng giống Char. Thế nhưng đã có những lúc lơ đãng, khi tôi nhìn vào gương và thoáng thấy gương mặt của em ấy nơi đó... Tôi từng thử bắt chước nụ cười nhếch môi hờ hững, mỉa mai của em ấy, nhưng đến giờ vẫn không sao hiểu nổi em ấy đang nghĩ gì — sao có thể gạt bỏ mối thù hằn ấy và gia nhập chính đám thổ phỉ đã giết cha mẹ chúng tôi? Câu hỏi đó cứ hằn sâu, còn tôi thì khát khao biết được sự thật."
+      },
+      {
+        "title": "Chủ đề: Hộ Thần Trí Tuệ",
+        "text": "Danh hiệu \"Agaš'mekanaz\" vốn chỉ thuộc về số rất ít người — chính Char là người đã trao cho tôi cơ hội trở thành một Hộ Thần. Những tội án có liên quan đến vu thuật Sarkaz thường sẽ dễ lần ra hơn nếu do chính người cùng huyết thống truy xét... Tôi hiểu rõ Thuật Pháp của Char hơn bất kỳ ai; và cũng chỉ có tôi mới có thể dành ra hàng chục năm truy lùng em ấy. Biến người mình từng yêu quý thành kẻ thù là một điều đau đớn, nhưng Hộ Thần chúng tôi vẫn luôn trung thành với trọng trách của mình. Tôi cũng không phải ngoại lệ."
+      },
+      {
+        "title": "Chủ đề: Cha Mẹ",
+        "text": "Dưới sự dẫn dắt của vị Người Nói huyền thoại, cha mẹ tôi đã cùng rất nhiều Sarkaz đặt chân đến Talos-II. Họ là những thành viên đầu tiên của Seš'qa và dựng nên Sinh Cốt... Nhưng rồi Chiến Thần Vùng Hoang đã giết họ. Trong ký ức của tôi, mẹ thật người dịu dàng, luôn tận tâm xây dựng hòa bình giữa các chủng tộc... Thế nhưng Char lại nói rằng em ấy từng nhìn thấy ở mẹ một mặt khác mà tôi chưa từng biết... Dù quá khứ có ẩn giấu điều gì đi nữa, phản bội... vẫn mãi là phản bội."
+      },
+      {
+        "title": "Phát hiện Tài Nguyên/Đồ Sưu Tập 1",
+        "text": "Lần theo dấu vết đằng kia."
+      },
+      {
+        "title": "Phát hiện Tài Nguyên/Đồ Sưu Tập 2",
+        "text": "Những vật phẩm đó rất đáng giá. Đem theo chúng sẽ giúp ích cho chiến dịch của chúng ta."
+      },
+      {
+        "title": "Phát Hiện Khu Vực Chưa Khám Phá",
+        "text": "Nguyên tắc đầu tiên của một Hộ Thần: luôn để tâm đến những vùng đất chưa được khai phá."
+      },
+      {
+        "title": "Phát hiện Kẻ Địch Mạnh",
+        "text": "Cẩn thận. Trên người kẻ đó sặc mùi máu tanh."
+      },
+      {
+        "title": "Khai thác 1",
+        "text": "Những khoáng sản này phát ra âm thanh khá vui tai."
+      },
+      {
+        "title": "Khai thác 2",
+        "text": "Để tôi. Như vậy sẽ nhanh hơn."
+      },
+      {
+        "title": "Mở Thùng",
+        "text": "Làm thì ắt sẽ có kết quả."
+      },
+      {
+        "title": "Nhận Aurylene",
+        "text": "Aurylene... cũng khéo chạy thoát đấy."
+      },
+      {
+        "title": "Loại Bỏ Nhiễm Khuẩn",
+        "text": "Đã tẩy sạch xong đám nhơ nhuốc trên mảnh đất này."
+      },
+      {
+        "title": "Nghỉ ngơi",
+        "text": "Từ nơi tận cùng bóng tối, lại thêm một giọt máu phải trả."
+      },
+      {
+        "title": "Sử Dụng Vật Phẩm Chiến Thuật 1",
+        "text": "Dùng đi!"
+      },
+      {
+        "title": "Sử Dụng Vật Phẩm Chiến Thuật 2",
+        "text": "Sinh khí lại trở về trong huyết mạch."
+      },
+      {
+        "title": "Cảnh Báo Nguy Hiểm",
+        "text": "Coi chừng!"
+      },
+      {
+        "title": "Bị thương",
+        "text": "Cho đến giọt máu cuối cùng..."
+      },
+      {
+        "title": "0 HP",
+        "text": "Biển máu... đang thì thầm nỗi bi thương..."
+      },
+      {
+        "title": "Cổ Vũ Đội 1",
+        "text": "Ra chiêu đỉnh."
+      },
+      {
+        "title": "Cổ Vũ Đội 2",
+        "text": "Đẳng cấp. Nhìn thôi cũng đủ phấn khích rồi."
+      },
+      {
+        "title": "Đáp Lại Lời Cổ Vũ 1",
+        "text": "Chỉ là làm tròn nhiệm vụ thôi."
+      },
+      {
+        "title": "Đáp Lại Lời Cổ Vũ 2",
+        "text": "Đây là thành quả của tất cả chúng ta."
+      },
+      {
+        "title": "Bắt Đầu Chiến Đấu 1",
+        "text": "Cứ vùng vẫy đi."
+      },
+      {
+        "title": "Bắt Đầu Chiến Đấu 2",
+        "text": "Con đường duy nhất là tiến về phía trước."
+      },
+      {
+        "title": "Thắng Trận 1",
+        "text": "Cơn gió cuốn đi mùi máu tanh nồng. Mọi thứ diễn ra theo đúng hướng."
+      },
+      {
+        "title": "Thắng Trận 2",
+        "text": "Truy kích hay. Xử lý xuất sắc."
+      },
+      {
+        "title": "Thắng Trận 3",
+        "text": "Không khoái phối hợp lắm nhưng hôm nay là ngoại lệ."
+      },
+      {
+        "title": "Thắng Trận 4",
+        "text": "Phải đổ máu nhưng kẻ địch còn trả giá gấp mười. Chỉ cần hoàn thành nhiệm vụ... đã là chiến thắng rồi."
+      },
+      {
+        "title": "Bại Trận",
+        "text": "Cay đắng đến đâu thì đây vẫn chưa phải hồi kết. Nợ máu ắt phải trả bằng máu... và mục tiêu vẫn còn phía trước."
+      },
+      {
+        "title": "Đòn Dứt Điểm 1",
+        "text": "Quá yếu!"
+      },
+      {
+        "title": "Đòn Dứt Điểm 2",
+        "text": "Xuyên giáp chúng!"
+      },
+      {
+        "title": "KN Chiến Đấu 1",
+        "text": "Ân xá cuối."
+      },
+      {
+        "title": "KN Chiến Đấu 2",
+        "text": "Địa ngục đang chờ."
+      },
+      {
+        "title": "KN Chiến Đấu 3",
+        "text": "Quằn quại đau đớn."
+      },
+      {
+        "title": "Chuẩn Bị KN Liên Hoàn 1",
+        "text": "Vu thuật đã sẵn sàng."
+      },
+      {
+        "title": "Chuẩn Bị KN Liên Hoàn 2",
+        "text": "Dồn vào đường cùng."
+      },
+      {
+        "title": "Thi Triển Liên Hoàn 1",
+        "text": "Chạy đâu cho thoát."
+      },
+      {
+        "title": "Thi Triển Liên Hoàn 2",
+        "text": "Tuôn ra đi, thứ tạp chất."
+      },
+      {
+        "title": "Kết Liễu 1",
+        "text": "Đón lấy kết cục đi."
+      },
+      {
+        "title": "Kết Liễu 2",
+        "text": "Kẻ ngu muội đáng thương."
+      },
+      {
+        "title": "Tuyệt Kỹ 1",
+        "text": "Hỡi cơn mưa đỏ thẫm..."
+      },
+      {
+        "title": "Tuyệt Kỹ 2",
+        "text": "Chìm trong đêm dài vô tận."
+      },
+      {
+        "title": "Tuyệt Kỹ 3",
+        "text": "Tội lỗi rồi sẽ kết thúc trong lửa thiêu."
+      }
+    ]
   },
   "potentials": {
     "potential1": {

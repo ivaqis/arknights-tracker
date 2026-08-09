@@ -132,7 +132,333 @@
         "name": "Technology",
         "description": "Technology: Ætherside Deciphering\nShe stands at the very fringe of Ætherside technology of Talos-II. Every step she takes is an all-new adventure."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Operation Prep 1",
+        "text": "So, where are we having fun today, Endmin?"
+      },
+      {
+        "title": "Operation Prep 2",
+        "text": "Data sync complete. I'm ready to go at any time!"
+      },
+      {
+        "title": "Adding to Team 1",
+        "text": "Finally decided to call me up? Hehe, I bet you got a sticky situation on your hands."
+      },
+      {
+        "title": "Adding to Team 2",
+        "text": "I'm here. If you got equipment issues, leave them to me."
+      },
+      {
+        "title": "Switching Weapon",
+        "text": "This pair of handcannons feels just right. Hmm... Noticed a few design OFIs. Guess I'll just mod them into a pair of Yvonne-specials!"
+      },
+      {
+        "title": "Switching Gear",
+        "text": "Can I apply a new layer of coating to my gear? This color scheme doesn't really match my hair."
+      },
+      {
+        "title": "Ability Matrix Activation",
+        "text": "Too easy! Give me a proper challenge!"
+      },
+      {
+        "title": "Watching Combat Records",
+        "text": "I was fast-forwarding through everything. I learn fast so makes no difference."
+      },
+      {
+        "title": "Operator Promotion 1",
+        "text": "I'm getting promoted? Wooo, you've got an eye for talent, Endmin!"
+      },
+      {
+        "title": "Operator Promotion 2",
+        "text": "So, does this promotion mean ... I can get a bigger lab?"
+      },
+      {
+        "title": "Operator Promotion 3",
+        "text": "Fighting in an actual battle is really different from studying combat videos... And I've made *massive* improvements by surviving all those trips in the frontier. Right?"
+      },
+      {
+        "title": "Operator Promotion 4",
+        "text": "Assistant? NEWP! Don't need one! My Tink-a-Bella can handle everything! Data organization and lab cleanups are just some of its most basic features! Plus, it would never complain about my daily schedule."
+      },
+      {
+        "title": "Operator Reporting for Duty",
+        "text": "Hi, Endmin. We meet again. Just call me Yvonne. It's been a very long time since I last went out. Pleasure doing business together!"
+      },
+      {
+        "title": "Standing by 1",
+        "text": "Behave, Frost-e-Bytee! We're going for a walk with Endmin!"
+      },
+      {
+        "title": "Standing by 2",
+        "text": "Over here, Endmin! Oh, I'm bringing quite a few things..."
+      },
+      {
+        "title": "Assigning to Facility",
+        "text": "Alright, alright. I'm super familiar with all this, so just kick back and relax!"
+      },
+      {
+        "title": "Greeting 1",
+        "text": "Endmin! I'm calling dibs on the equipment testing chamber. Thanks a lot!"
+      },
+      {
+        "title": "Greeting 2",
+        "text": "The latest issue of Monthly MARTHE just arrived. Wanna read it with me?"
+      },
+      {
+        "title": "Dijiang Idle Chatter 1",
+        "text": "*Sigh*... Every time I study the Automated Industry Complex, I can't help but feel that it's — pure perfection! PAC-directed production is no longer a cold, repetitive chore ... but a living, breathing system of intertwining process loops! Absolutely ingenious! Endmin, I've gotta try this. C'mon, pleaaase?"
+      },
+      {
+        "title": "Dijiang Idle Chatter 2",
+        "text": "I'll be honest with you, Endmin. I like your style, but don't you think it's time for a wardrobe refresh? Come on, let's get you something flashier and brighter! Your fashion upgrade will be the vogue. Gua-ran-teed!"
+      },
+      {
+        "title": "Dijiang Idle Chatter 3",
+        "text": "Perlica won't let me bring my Tweety-Bombs along because she said they're safety hazards. But I just can't live without them! *Sigh*. In the end, I compromised and dismantled the demolition modules before boarding this ship."
+      },
+      {
+        "title": "Dijiang Idle Chatter 4",
+        "text": "I'm planning a La Fantoma getaway. Kinda missed the beaches and ocean breeze... Wanna come with, Endmin? We can also check out their latest coastal engineering. I heard it's got a new layer of Blight-resistant coating they just recently developed."
+      },
+      {
+        "title": "Dijiang Idle Chatter 5",
+        "text": "I guess we haven't been in the same picture together, Endmin? How about a selfie? I'm going to add it to Yvonne's Annual Moments collection. And if it doesn't turn out cute, I'm blaming Dijiang's terrible lighting, not my skills!"
+      },
+      {
+        "title": "Dijiang Idle Chatter 6",
+        "text": "It appears we have similar tastes in music, Endmin! That means you can swing by my lab and enjoy my latest vinyl once it arrives. After all, good music gets even better with good company!"
+      },
+      {
+        "title": "Offering Gifts",
+        "text": "Got a little something for you. Open it when you're back at your place. Heh. You're definitely going to like it, 'cos I asked plenty of \"professionals\" to make sure of that!"
+      },
+      {
+        "title": "Accepting Gifts",
+        "text": "Aww, thanks! Don't worry, even if it's a teensy bit weird, I'll still treasure it forever ... because it's from you!"
+      },
+      {
+        "title": "Trust Dialog 1",
+        "text": "Maximizing machine performance was never the intention. Nope. My goal is to provide users with a panic-free and idiot-proof experience. Giving them a good laugh would be the cherry on top. After all, tools should make life easier, not harder."
+      },
+      {
+        "title": "Trust Dialog 2",
+        "text": "Endmin, can you lend me your Originium Arts? Precision controls over Originium circuitry would grant me tons of design options. For example ... I've always wanted to give Frost-e-Bytee a heating module. Oh, that sounds magnifique! Wait. If it heats things up, it won't be Frost-e anymore..."
+      },
+      {
+        "title": "Trust Dialog 3",
+        "text": "I was three when I first read about you in some popular book about science. It said you're a legend with *tons* of responsibilities. But the real you is surprisingly ... cute, I guess? *Chuckle* Oh, you probably don't want to know how they illustrated you in those unlicensed copies. It's better to keep you in the dark..."
+      },
+      {
+        "title": "Trust Dialog 4",
+        "text": "When I first took over my Baby Bot project, the prototype was just humongous! They couldn't even fit the thing inside the vehicle hangar! Guess the UWST wanted a heavy industrial rig-on-wheels for neutralizing major glops of Blight. But what about people who have to deal with Blight creeping up their homes? Wait around and pray for the giant wooster rig to show up? C'mon, someone's gotta carry out miniaturization studies. So I spent months in the Science Park working on that... The results totally speak for themselves. The events that followed proved my decision to be *incredibly* wise!"
+      },
+      {
+        "title": "Trust Dialog 5",
+        "text": "Fabulous music, exhilarating concerts, chic fashion, the beautiful sunrises and sunsets over the Talosian horizon — I actually know that everything I love is teetering on the edge of destruction. It's the reason why I became an Endfielder. I want to do something and ensure that the fragile beauty of our world lives on. I mean, I haven't had enough fun yet, so I'm not gonna let this world end on my watch!"
+      },
+      {
+        "title": "Chat 1",
+        "text": "If you ask me, I'll choose a TGCC city in the band for quality of life. But for work? HELL NO! Corporate Practice requires employees to clock in six times a day. Can you imagine that?!"
+      },
+      {
+        "title": "Chat 2",
+        "text": "Now this one's from the Witching Hour. I just LURRV their style. They get their design elements from all sorts of things. Even the texture and grain of Aggeloid carapace! Danger is just so much more ... *enticing*. Don't you agree, Endmin?"
+      },
+      {
+        "title": "Chat 3",
+        "text": "Yvonne is a Gallian name. Father told me that we inherited a great legacy and everyone in the family was pretty proud of that. But I don't exactly share their sentiments. Terra is far enough away already, and that ancient empire was long gone. What's so important about pedigrees or bloodlines anyway? And then there's this guy called Corsi-Something le First? Was he really that great to begin with?"
+      },
+      {
+        "title": "Chat 4",
+        "text": "Ah, this...? Well... I just swapped out the thermal furnace connector in the lab. Compatibility with an instant noodle cooker was purely *coincidental*. I'm telling you, this is legit technical v&v. Don't look at me like I'm some lazy bum... Oh, fine! I'll share some with you... And ... you won't tell Perlica about this, right?"
+      },
+      {
+        "title": "Chat 5",
+        "text": "I've actually interned at the TGCC, HAS, and UWST. But the Endfield HR Division gave me an offer that I simply couldn't refuse: Unrestricted access to the Endfield databank on everything Ætherside! They even highlighted this particular line: \"Access authority level shall be on par with that of the Endministrator.\""
+      },
+      {
+        "title": "Topic: Ætherside",
+        "text": "We hardly know anything about the Ætherside. It might be a completely dark place ... or a realm of absolute chaos. As of now, Blight phenomena are the only things we can observe. They come in all sorts of weird colors — like the conventional laws governing the optical spectrum don't even apply. Truth be told, having spent so much time studying them ... I can't help but feel that they're actually quite ... enthralling."
+      },
+      {
+        "title": "Topic: TGCC Cities",
+        "text": "I visit quite a few TGCC cities every year. Alloycarrot is where I get my materials and equipment, and New Wrankwood's Film Festival is where I do some serious movie-binging. But if I'm talking about my favorite city, it has to be Kjersch. Surprised, huh? I love their snow, their open skies, and their quiet serenity."
+      },
+      {
+        "title": "Topic: Popular Culture",
+        "text": "Terran Retro is something that my grandparents listened to when they were teens. What's IN right now is Neo-Talosian. I LURRRV the song STEREO! We're Talosians, born and raised — of course we're gonna drop jams that are Talos-II-legit."
+      },
+      {
+        "title": "Topic: Childhood",
+        "text": "When I was a child, my parents were really busy and there was no one else around. So they gave me a fowlbeast as a playmate. It was loud, bad tempered, and kept messing up my room ... but I really loved that creature. You probably guessed that it was the inspiration for my Tweety-Bomb. Though my Tweety-Bombs make a lot less noise, they inherited the foul temper of that cute ball of feathers."
+      },
+      {
+        "title": "Topic: Valley IV",
+        "text": "I actually never intended to stay at Valley IV when I first arrived three years ago. But Professor Crowe showed me some rift data readings from the Æther Test Site — got me hooked right there and then! Shame we couldn't agree on anything after that. Total research meltdown. Old Crowe couldn't beat me, so he sent me to Andre instead. Guess what? My project started spitting out solid results with that sweet Endfield tech support! I was chugging out papers left and right for three years straight! Oh, Valley IV is truly my special zone of fortune."
+      },
+      {
+        "title": "Resource/Collectible Detected 1",
+        "text": "Ohhhh! Gotta take that one back for my studies."
+      },
+      {
+        "title": "Resource/Collectible Detected 2",
+        "text": "Psst. Got a secret for you. The stuff over there is made of awesome!"
+      },
+      {
+        "title": "Unexplored Area Detected",
+        "text": "Never been to that place. Let's head over for a closer look."
+      },
+      {
+        "title": "Powerful Enemy Discovered",
+        "text": "Tweety-Bomb looks a little nervous. That one's probably a naughty big bad."
+      },
+      {
+        "title": "Mining 1",
+        "text": "Should've furnished my pewpews with a specialized mining module."
+      },
+      {
+        "title": "Mining 2",
+        "text": "Here to help! I happen to be an expert demolitionist!"
+      },
+      {
+        "title": "Opening a Crate",
+        "text": "Wow, that's some nice-looking bling."
+      },
+      {
+        "title": "Acquiring Aurylene",
+        "text": "Such fluid, effervescent glittering. I've always wanted my nails varnished like that."
+      },
+      {
+        "title": "Eliminating the Blight",
+        "text": "Absolute neutralization! What do you think?"
+      },
+      {
+        "title": "Rest",
+        "text": "Whew. Been waiting for this break forever. Gotta tame this wild hair..."
+      },
+      {
+        "title": "Tactical Use 1",
+        "text": "Don't panic. Try this."
+      },
+      {
+        "title": "Tactical Use 2",
+        "text": "Ahhh... I'm feeling much better!"
+      },
+      {
+        "title": "Danger Warning",
+        "text": "Evade! I'll cover you!"
+      },
+      {
+        "title": "Injured",
+        "text": "Hngh... It hurts... They got me bad..."
+      },
+      {
+        "title": "0 HP",
+        "text": "Shoot... I'm out..."
+      },
+      {
+        "title": "Team Encouragement 1",
+        "text": "Spectacular!"
+      },
+      {
+        "title": "Team Encouragement 2",
+        "text": "You're so amazing, team!"
+      },
+      {
+        "title": "Encouragement Response 1",
+        "text": "Uh-huh. Greatness is kinda my thing!"
+      },
+      {
+        "title": "Encouragement Response 2",
+        "text": "Beautiful teamwork."
+      },
+      {
+        "title": "Combat Begins 1",
+        "text": "All equipment charged and ready."
+      },
+      {
+        "title": "Combat Begins 2",
+        "text": "Fire support, hot and ready!"
+      },
+      {
+        "title": "Combat Victory 1",
+        "text": "Victory is ours! Time for a selfie."
+      },
+      {
+        "title": "Combat Victory 2",
+        "text": "FYI, I'm also quite the combat expert."
+      },
+      {
+        "title": "Combat Victory 3",
+        "text": "Hmph. This triumph deserves a real partay!"
+      },
+      {
+        "title": "Combat Victory 4",
+        "text": "Battles are hard to predict, even for Tink-a-Bella... *BUT* we'll definitely do better next time."
+      },
+      {
+        "title": "Combat Defeat",
+        "text": "Blasted blightery! I'm upping Frost-e-Bytee's output by 5000 percent! Let's see how they beat that!"
+      },
+      {
+        "title": "Final Strike 1",
+        "text": "Power shot!"
+      },
+      {
+        "title": "Final Strike 2",
+        "text": "One more shot!"
+      },
+      {
+        "title": "Battle Skill 1",
+        "text": "Feel the chill!"
+      },
+      {
+        "title": "Battle Skill 2",
+        "text": "Simmer down!"
+      },
+      {
+        "title": "Battle Skill 3",
+        "text": "Get iced!"
+      },
+      {
+        "title": "Combo Skill Ready 1",
+        "text": "Ready to blast!"
+      },
+      {
+        "title": "Combo Skill Ready 2",
+        "text": "Fully energized."
+      },
+      {
+        "title": "Combo Casting 1",
+        "text": "Go! Frost-e!"
+      },
+      {
+        "title": "Combo Casting 2",
+        "text": "Let's get icy!"
+      },
+      {
+        "title": "Finisher 1",
+        "text": "KABOOM!"
+      },
+      {
+        "title": "Finisher 2",
+        "text": "Purrrfect shot!"
+      },
+      {
+        "title": "Ultimate 1",
+        "text": "Let us dance!"
+      },
+      {
+        "title": "Ultimate 2",
+        "text": "Passion supercharged!"
+      },
+      {
+        "title": "Ultimate 3",
+        "text": "Fireworks for you!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

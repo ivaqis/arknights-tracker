@@ -127,7 +127,329 @@
         "name": "Esportes",
         "description": "Esportes: Rotina de Treinamento Perpétuo\nO primeiro exercício de fisioterapia que ele aprendeu no acampamento foi 30 agachamentos por dia. Ele continuou fazendo isso por 1946 dias."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Prep Operação 1",
+        "text": "Humm? Uma nova missão?"
+      },
+      {
+        "title": "Prep Operação 2",
+        "text": "Estou pronto para ir."
+      },
+      {
+        "title": "Adicionando à equipe 1",
+        "text": "Se precisar de cobertura e logística, pode deixar comigo."
+      },
+      {
+        "title": "Adicionando à equipe 2",
+        "text": "Espero que esta missão seja bem planejada e envolva menos riscos."
+      },
+      {
+        "title": "Trocando de arma",
+        "text": "Prático e versátil, ele nos acompanhará em operações de assalto em diversos cenários."
+      },
+      {
+        "title": "Trocando de equipamento",
+        "text": "Equipamentos padronizados... Só lemos sobre eles nos manuais de treinamento... Os equipamentos de verdade são mais bem usinados do que eu esperava."
+      },
+      {
+        "title": "Ativação da Matriz de Capacidade",
+        "text": "Eu normalmente preparo planos de contingência extras. Eles... sempre são úteis."
+      },
+      {
+        "title": "Assistindo a Registros de Combate",
+        "text": "OK... Anotei todos os pontos-chave... A Capitã receberá meu resumo em sua mesa."
+      },
+      {
+        "title": "Promoção do Operador 1",
+        "text": "Obrigado. Pode contar com o melhor de mim em nossas futuras missões."
+      },
+      {
+        "title": "Promoção do Operador 2",
+        "text": "Agora você pode me dar as atribuições mais difíceis. Acredito que agora consigo realizá-las."
+      },
+      {
+        "title": "Promoção do Operador 3",
+        "text": "Agradeço muito a sua aprovação, Endmin. Em troca, concluí a preparação de missões para os... próximos noventa dias. Você pode revisá-la a qualquer momento."
+      },
+      {
+        "title": "Promoção do Operador 4",
+        "text": "Às vezes penso no que poderia ter acontecido se eu tivesse seguido os desejos da minha família. Talvez eu estivesse vivendo uma vida diferente. Uma mais simples, porém mais confortável... Mas eu já tinha me decidido quando peguei a espada e saí de casa naquela manhã. Não pretendo olhar para trás."
+      },
+      {
+        "title": "Operador se apresentando para o trabalho",
+        "text": "Catcher, Equipe Op Z7. Minha função é dar cobertura e apoio logístico à equipe. Sou especialista em operações defensivas e sou bom com a lâmina... E espero ser uma adição eficaz à sua equipe."
+      },
+      {
+        "title": "Em espera 1",
+        "text": "Precisa de cobertura defensiva? Vou te dar o meu melhor."
+      },
+      {
+        "title": "Em espera 2",
+        "text": "Acho que deveríamos estar mais bem preparados."
+      },
+      {
+        "title": "Atribuindo a Instalação",
+        "text": "Ordens recebidas. Eu as identifiquei como minhas principais prioridades de missão."
+      },
+      {
+        "title": "Saudação 1",
+        "text": "Saudações, Endmin. Alguma outra atribuição?"
+      },
+      {
+        "title": "Saudação 2",
+        "text": "Endmin, compilei dez pastas de resumos pós-batalha para a Equipe Z7. Você gostaria de revisá-los?"
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 1",
+        "text": "Você está me procurando, Endmin? Bem, tenho trinta minutos antes de cinco sessões consecutivas de esgrima... E estarei livre pelo resto do tempo."
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 2",
+        "text": "Recentemente, revisei as sugestões de todos e melhorei minha receita de ensopado das terras selvagens... Sinta-se à vontade para experimentar se estiver curioso, Endmin."
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 3",
+        "text": "Sempre que volto para a Dijiang, sinto uma sensação de conforto e relaxamento que mal consigo descrever... Antal insiste que foi o aconchego dos colchões do alojamento... É claro que não pretendo discordar dele."
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 4",
+        "text": "Tenho plena confiança nos meus companheiros de equipe durante as missões. No entanto, não tenho a mínima fé de que eles obedecerão às ordens da Capitã e terão o merecido descanso depois. Um deles ficava acordado a noite toda na biblioteca, e outro pregava peças em recrutas inexperientes na sala de jogos... Esse absurdo só pode acabar quando eu pessoalmente os \"escoltar\" de volta para suas cabines."
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 5",
+        "text": "Visitei minha família há dois dias. Eles não gostaram muito da minha escolha de carreira, mas contei a eles como era a Equipe Z7 de verdade. Eles não comentaram muito, exceto que me deram alguns sacos com especiarias locais. A Z7 levaria seis meses para usar isso tudo... Endmin, acho que você também deveria ficar com metade."
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 6",
+        "text": "A vida é muito gratificante. Eu me sinto realmente útil e todos realmente apreciam isso... É isso que ser um Endfielder significa para mim. Há ocasiões em que fico exausto demais para dormir, mas levo isso na esportiva. Significa apenas que conquistei a aprovação de alguém."
+      },
+      {
+        "title": "Oferta de presentes",
+        "text": "São apenas algumas lembrancinhas, Endmin... Mas espero que você possa aceitá-las."
+      },
+      {
+        "title": "Aceitando presentes",
+        "text": "Para mim? Muito obrigado, Endmin. Guardarei em um cofre adequado."
+      },
+      {
+        "title": "Diálogo de Confiança 1",
+        "text": "Ah, desculpe, Endmin! Eu estava pensando em como me preparar para a próxima missão. Espere! Tenho uma pergunta para você. Qual destes você acha mais útil: um soldador portátil, um modulador antigravidade ou uma máscara antipoeira de Originium? Humm... Vou levar tudo."
+      },
+      {
+        "title": "Diálogo de Confiança 2",
+        "text": "Nasci em uma família comum. Meus pais eram soldados. Meu irmão é instrutor militar na CGCT, enquanto minha irmã é escolta armada a serviço dos Seš'qanos. Eu era o caçula e eles me protegeram. Todos queriam que eu tivesse uma vida tranquila em vez de seguir seus passos e ingressar nas forças armadas... Mas a proteção familiar não dura para sempre, especialmente em Talos-II."
+      },
+      {
+        "title": "Diálogo de Confiança 3",
+        "text": "Não sinto falta da minha infância antes dos nove anos. Ela me fez detestar o cheiro de iodo e água oxigenada... Naquela época, eu não conseguia nem levantar um cantil de água. Os médicos também diziam para minha família me manter dentro de casa. Eu só podia me divertir ao ar livre em raras ocasiões... Mesmo agora, ainda me lembro da minha recuperação e da minha primeira caminhada em plena luz do dia. Foi como se eu tivesse sido trazido de volta à vida."
+      },
+      {
+        "title": "Diálogo de Confiança 4",
+        "text": "Alguns podem achar a Z7 uma equipe de operações nada impressionante. Eles não estão totalmente errados. A Capitã Akekuri é um pouco jovem demais, a mordida de Fluorite é um pouco forte demais, enquanto Estella e Antal precisam de um pouco mais de bom senso. Mesmo assim, estou mais do que disposto a ficar na Z7... Aliás, eu não me importaria de ser um membro permanente da equipe."
+      },
+      {
+        "title": "Diálogo de Confiança 5",
+        "text": "Quando entrei para a Endfield, duvidei se teria o que era preciso para ganhar a confiança dos meus superiores... Mas toda a equipe Z7 e até você, Endmin, sempre deixaram isso claro para mim: eu poderia conseguir muito mais do que acreditava e atender às expectativas de todos."
+      },
+      {
+        "title": "Chat 1",
+        "text": "O treinamento foi bem padrão. Apenas alguns cursos básicos de combate com um pouco de sobrevivência em campo. Quase ninguém espera que o treinamento básico ensine coisas que sejam realmente úteis em batalhas reais... Eu posso ser a exceção, pois passei uma sessão inteira de exercícios debatendo com meu instrutor como suas demonstrações se desviavam das posições padrão descritas no manual. O que aconteceu depois? Bem, eu o convenci antes mesmo da terceira sessão de treinamento começar."
+      },
+      {
+        "title": "Chat 2",
+        "text": "Na verdade, sou o soldado menos talentoso da família. Minha força física e técnica de combate estão muito aquém do padrão da família... Mesmo assim, nunca desisti e simplesmente me dediquei a um treinamento mais intenso — acordava duas horas antes do meu irmão e treinava três vezes mais que minha irmã... E continuo assim até hoje."
+      },
+      {
+        "title": "Chat 3",
+        "text": "Por que comecei a aprender a cozinhar? Não tenho um motivo específico. Quando entrei para a Z7, experimentei a comida preparada por outros membros da equipe. No segundo dia, pedi ajuda ao instrutor Lil' Dodge. E foi assim que recebi várias semanas de treinamento de sobrevivência na natureza."
+      },
+      {
+        "title": "Chat 4",
+        "text": "Fiz estágio com algumas EMPs antes de entrar na Endfield, mas todos queriam que eu fosse mais \"profissional\"... Em termos leigos, queriam que eu recebesse o pagamento e parasse de fazer perguntas. Eles deixaram claro seu ponto de vista e foram bastante enfáticos quanto a isso. Infelizmente, não consegui me fazer obedecer."
+      },
+      {
+        "title": "Chat 5",
+        "text": "Só espero que ninguém dê mais ideias estranhas para a próxima atribuição a Antal e seus amigos. Já causamos problemas demais para o nosso Engenheiro de Arsenal este mês... É, você adivinhou. A Capitã tem uma pilha de relatórios de feedback que não conseguiu terminar, e eles estão todos no meu beliche. Não se preocupe. Se eu não tiver tarefas no dia seguinte, vou virar a noite e dar uma olhada em tudo."
+      },
+      {
+        "title": "Tópico: Akekuri",
+        "text": "Temos uma Capitã responsável que se importa profundamente com todos na Z7... mas seria muito bom se ela se cuidasse melhor. Mesmo nas reuniões de equipe, ela sempre prioriza o gosto dos outros. *Suspiro* Sinceramente, eu queria que ela simplesmente admitisse que adora salgadinhos de Higashi. Assim eu não teria que ficar fingindo que os fiz por \"coincidência\"."
+      },
+      {
+        "title": "Tópico: Fluorite",
+        "text": "Eu conheci mercenários do Cinturão como ela. Almas astutas, gananciosas e reservadas cujos sorrisos eram mais assustadores do que seus rosnados... Mas Fluorite começou a discutir técnicas de arremesso de Lesmas do Originium com Antal... Então, acho que poderíamos... dar a ela um tempo antes de começar a julgá-la."
+      },
+      {
+        "title": "Tópico: Estella",
+        "text": "Não sei por que, mas Estella sempre parece... chocada quando lê meus relatórios. Eu simplesmente descrevi tudo o que aconteceu na missão... e só adicionei algumas ideias imaturas em certas seções... Nada nos meus relatórios deve ser considerado surpreendente. São todos bem comuns, especialmente quando comparados às suas... composições criativas."
+      },
+      {
+        "title": "Tópico: Antal",
+        "text": "Antal é bem informado e responde com prazer a perguntas. O problema é que ele fica ansioso demais para responder. Estella mencionou casualmente: \"Por que orelhas longas têm orelhas tão compridas?\". Então, Antal decidiu passar o resto do dia nos dando uma palestra sobre ecobiologia. A palestra só terminou quando voltamos para a Dijiang — e ele disse que só apresentou um resumo e que omitiu setenta por cento do conteúdo principal."
+      },
+      {
+        "title": "Recurso/Colecionável detectado 1",
+        "text": "A experiência me diz que há itens colecionáveis ali."
+      },
+      {
+        "title": "Recurso/Colecionável detectado 2",
+        "text": "Tem alguma coisa ali... Vale a pena investigar, mesmo que precisemos fazer um desvio."
+      },
+      {
+        "title": "Área não explorada detectada",
+        "text": "Nível de ameaça indisponível. Devemos ser cautelosos."
+      },
+      {
+        "title": "Inimigo poderoso descoberto",
+        "text": "Se for necessário combater, vou preparar nosso plano de saída com antecedência."
+      },
+      {
+        "title": "Mineração 1",
+        "text": "Um material raro. Precisamos coletá-lo rapidamente."
+      },
+      {
+        "title": "Mineração 2",
+        "text": "Somos sempre mais eficientes trabalhando em equipe... Vamos explorar isso juntos."
+      },
+      {
+        "title": "Abrindo um caixote",
+        "text": "Ótimo. Coletamos muitos suprimentos úteis."
+      },
+      {
+        "title": "Adquirindo Aurileno",
+        "text": "Este deve ser o Aurileno mencionado no manual..."
+      },
+      {
+        "title": "Eliminando a Praga",
+        "text": "A Praga é mais perigosa do que se pensa. Devemos lidar com ela com cuidado."
+      },
+      {
+        "title": "Descansar",
+        "text": "O descanso adequado contribui para a conclusão da missão. É o que diz o manual de trabalho."
+      },
+      {
+        "title": "Uso Tático 1",
+        "text": "Leve isto. Ainda temos bastante."
+      },
+      {
+        "title": "Uso Tático 2",
+        "text": "...Calculei errado."
+      },
+      {
+        "title": "Aviso de Perigo",
+        "text": "Cuidado. Não se esforce demais."
+      },
+      {
+        "title": "Ferido",
+        "text": "Minha lâmina ainda está intacta."
+      },
+      {
+        "title": "0 PV",
+        "text": "Desculpe... Eu decepcionei todo mundo de novo..."
+      },
+      {
+        "title": "Encorajamento da Equipe 1",
+        "text": "Manobra impressionante."
+      },
+      {
+        "title": "Encorajamento da Equipe 2",
+        "text": "Um trabalho em equipe como esse merece uma comemoração."
+      },
+      {
+        "title": "Resposta a Encorajamento 1",
+        "text": "Você... me deixa lisonjeado."
+      },
+      {
+        "title": "Resposta a Encorajamento 2",
+        "text": "Bem, todos ajudaram."
+      },
+      {
+        "title": "Início do Combate 1",
+        "text": "Devemos agir com cautela e ter cuidado."
+      },
+      {
+        "title": "Início do Combate 2",
+        "text": "Cumprirei meu papel de apoio."
+      },
+      {
+        "title": "Vitória em Combate 1",
+        "text": "Área neutralizada? Melhor verificar de novo."
+      },
+      {
+        "title": "Vitória em Combate 2",
+        "text": "Conseguimos um resultado ideal."
+      },
+      {
+        "title": "Vitória em Combate 3",
+        "text": "Impressionante... Só você conseguiria fazer isso."
+      },
+      {
+        "title": "Vitória em Combate 4",
+        "text": "De qualquer forma, ainda cumprimos os objetivos da missão."
+      },
+      {
+        "title": "Derrota em Combate",
+        "text": "A maioria das minhas experiências de vida me ensinou uma coisa: aceite suas derrotas e encontre uma maneira de superá-las."
+      },
+      {
+        "title": "Golpe Final 1",
+        "text": "Cai fora."
+      },
+      {
+        "title": "Golpe Final 2",
+        "text": "Sua vez."
+      },
+      {
+        "title": "Habilidade de Batalha 1",
+        "text": "Para trás!"
+      },
+      {
+        "title": "Habilidade de Batalha 2",
+        "text": "Pare!"
+      },
+      {
+        "title": "Habilidade de Batalha 3",
+        "text": "Protejam-se!"
+      },
+      {
+        "title": "Combo de Habilidades Pronto 1",
+        "text": "A espera acabou."
+      },
+      {
+        "title": "Combo de Habilidades Pronto 2",
+        "text": "Minha vez."
+      },
+      {
+        "title": "Conjuração de Combo 1",
+        "text": "Aguente isto!"
+      },
+      {
+        "title": "Conjuração de Combo 2",
+        "text": "Experimente isto!"
+      },
+      {
+        "title": "Finalizador 1",
+        "text": "Não há escapatória."
+      },
+      {
+        "title": "Finalizador 2",
+        "text": "Acabou."
+      },
+      {
+        "title": "Habilidade Suprema 1",
+        "text": "Vou acabar com você!"
+      },
+      {
+        "title": "Habilidade Suprema 2",
+        "text": "Ninguém vai passar por mim!"
+      },
+      {
+        "title": "Habilidade Suprema 3",
+        "text": "SAIAM DO MEU CAMINHO!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

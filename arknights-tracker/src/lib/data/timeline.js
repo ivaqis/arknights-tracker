@@ -1121,5 +1121,20 @@ export const rawEvents = [
     type: "web",
     iconPosition: 30,
     version: "1.4"
+  },
+  {
+    id: "ev15-v1.4",
+    title: "events.bedazzlingDawnstarSignIn",
+    name: "Bedazzling Dawnstar Sign-In",
+    startTime: "2026-08-09 12:00:00",
+    endTime: "2026-09-01 17:00:00",
+    endTimeAsia: "2026-09-02 04:00:00",
+    icon: "ev15-v1.4.webp",
+    url: "",
+    color: "#a533b9ff",
+    layer: 1,
+    type: "signIn",
+    iconPosition: 30,
+    version: "1.4"
   }
 ];

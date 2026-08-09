@@ -362,7 +362,9 @@
     "special_1_3_2": "咎の番人",
     "weponbox_1_3_2": "染紅・申請",
     "special_1_4_1": "臨淵望北",
-    "weponbox_1_4_1": "戦列・申請"
+    "weponbox_1_4_1": "戦列・申請",
+    "special_1_4_2": "キラキラ綺羅星",
+    "weponbox_1_4_2": "明星・申請"
   },
   "pages": {
     "home": "ホーム",
@@ -455,7 +457,8 @@
     "theRootedRealm": "根脈奇景",
     "protocolPassBlightedSea": "協約通行証・蝕海",
     "gazeNorthToTheRiftSignIn": "臨淵北望スタンプ",
-    "protocolInvitationTheReturn": "協約招待：帰還"
+    "protocolInvitationTheReturn": "協約招待：帰還",
+    "bedazzlingDawnstarSignIn": "煌めく明星スタンプ"
   },
   "mouths": {
     "january": "1月",

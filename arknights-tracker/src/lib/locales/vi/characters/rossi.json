@@ -129,7 +129,337 @@
         "name": "Thể Thao",
         "description": "Thể Thao: Trò Chơi Săn Đuổi\nViệc theo dõi con mồi là một quá trình dài, nhưng Rossi rất kiên nhẫn. Không cần phải vội vàng, vì chúng ta đã gần ngửi thấy mùi máu rồi."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Chuẩn Bị Tác Chiến 1",
+        "text": "Cơ hội để cho Endmin thấy thực lực của ta!"
+      },
+      {
+        "title": "Chuẩn Bị Tác Chiến 2",
+        "text": "Ta sẽ không làm mọi người thất vọng!"
+      },
+      {
+        "title": "Đang thêm vào đội 1",
+        "text": "Em là Rossi đến từ Tộc Sói. E-Endmin... Nhiệm vụ của chúng ta là gì ạ?"
+      },
+      {
+        "title": "Đang thêm vào đội 2",
+        "text": "Em sẽ cố gắng hết sức, thưa Endmin!"
+      },
+      {
+        "title": "Đang đổi vũ khí",
+        "text": "A! Món vũ khí này ngầu quá! Em chưa thấy thứ gì thế này hồi còn ở trong bộ tộc!"
+      },
+      {
+        "title": "Đang đổi trang bị",
+        "text": "Hơi khó di chuyển... A? Endmin chọn cho em sao? Thế thì em nhận! Hừm... Chắc phải có ý nghĩa sâu xa gì đấy..."
+      },
+      {
+        "title": "Kích hoạt Ma Trận Năng Lực",
+        "text": "Em là hậu duệ của Tộc Sói!"
+      },
+      {
+        "title": "Xem Hồ Sơ Chiến Đấu",
+        "text": "Ra đó là cách các chiến binh kì cựu chiến đấu... Hừm... thế này... rồi thế kia... Được, em nghĩ em hiểu rồi!"
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 1",
+        "text": "Thăng... chức? A, em hiểu rồi! Hồi ở bộ tộc bọn em cũng có các buổi lễ tương tự! Không ngờ giờ chính em lại được trải nghiệm. Ngài biết không? Có vẻ... không tệ lắm."
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 2",
+        "text": "Hehe, em đang làm rất tốt đúng không ạ? Phải thế mới gánh vác trách nhiệm của bộ tộc được. Em phải khiến cho Tộc Sói vang danh khắp Talos-II!"
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 3",
+        "text": "Thăng bậc đối với em quá đơn giản! Lần tiếp theo là khi nào ạ? Em sẵn sàng rồi! Phải đợi thời đúng lúc á? Ừm... Được ạ."
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 4",
+        "text": "Thế này đã chứng minh được em là cán viên hàng đầu chưa? Không biết Catello có làm được như mình không. Lần tới gặp nhau, em phải cho anh ta thấy!"
+      },
+      {
+        "title": "Cán Viên đang báo cáo nhiệm vụ",
+        "text": "Ta là Rossina, tên hiệu là Wulfperl, nghĩa là Kho Báu của Tộc Sói! Nhớ cho kĩ vào! A... Endmin, ngài có thể gọi em thế nào cũng được..."
+      },
+      {
+        "title": "Chờ Lệnh 1",
+        "text": "Thời khắc đổ máu đã đến. Đã đến lúc săn mồi. Ý em là... đến lúc đi ăn rồi."
+      },
+      {
+        "title": "Chờ Lệnh 2",
+        "text": "Nghe đây, hỡi con mồi! Ta là móng vuốt của Tộc Sói!... Khoan, nghe không đúng lắm thì phải? Dù sao thì... Hú!"
+      },
+      {
+        "title": "Phân Công Vào Công Trình",
+        "text": "Với người ưu tú như em thì đơn giản!"
+      },
+      {
+        "title": "Lời Chào 1",
+        "text": "E-Endmin! Hôm nay ngài có nhiệm vụ nào cho em không?"
+      },
+      {
+        "title": "Lời Chào 2",
+        "text": "Endmin, có thể chia sẻ cho em chút kinh nghiệm lãnh đạo không?"
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 1",
+        "text": "Sao Tập Đoàn Endfield có thể quản lý nhiều cán viên như vậy được nhỉ? Có cái gì mà... hệ thống à? Với cái... kiểm soát tập trung? Em không hiểu... nhưng chắc chắn rất đáng học hỏi."
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 2",
+        "text": "Mấy lão sói ở bộ tộc bảo em nên lên Dijiang nhiều hơn. Họ nói em có thể học về khả năng lãnh đạo ở đây, nhất là bên cạnh ngài. Nhưng thật khó có cơ hội để gặp ngài!"
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 3",
+        "text": "Các anh chị ở Dijiang đối xử với em như trẻ con vậy! Nhưng em là người ưu tú của Tộc Sói cơ mà. Lần sau em phải nói rõ, không thể để chuyện này tiếp diễn được!... Nhưng đồ ăn vặt họ cho em lại rất ngon..."
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 4",
+        "text": "Việc của bộ tộc là ưu tiên hàng đầu! Nhưng nếu ở Endfield có chuyện cấp bách, em chắc chắn sẽ đến ngay lập tức. Chỉ là... em không chắc ngài có cần em giúp không... Ngài giỏi như vậy, chắc có thể xử lý khủng hoảng dễ dàng dù không có em. Nhưng em vẫn muốn giúp ngài... Em nên làm gì đây..."
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 5",
+        "text": "Em nghe nói có thể tìm thấy Catello trên Dijiang, nhưng sao ở đây cũng khó tìm được anh ta vậy? Hừm... thói quen khó bỏ chăng? Nếu không thấy anh ta sớm thì Nonno Rozzan sẽ nổi giận lắm. Em không muốn thấy ông ấy giận đâu... Endmin, ngài có biết chỗ nào Catello có thể đến không?"
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 6",
+        "text": "Sao em không tìm được ghi chép nào của ngài trên Dijiang vậy? Cuối cùng em cũng biết cách sử dụng Hồ Sơ Tình Báo, nhưng em chỉ thấy mấy kết quả vô dụng như \"Không Có Quyền\"... Ư... Endmin à, có thể kể cho em nghe những chiến công hiển hách của ngài không?"
+      },
+      {
+        "title": "Tặng Quà",
+        "text": "Endmin, đây là chiến lợi phẩm em thu thập được! Cho ngài hết đấy! Đừng lo, em sẽ kiếm thêm nữa!"
+      },
+      {
+        "title": "Nhận quà",
+        "text": "Món này... cho em á? Em nhận được thật á? Cảm ơn ngài! Nhất định em sẽ hiểu được ý nghĩa của món quà này!"
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 1",
+        "text": "Đây ạ? Thì... Em đang ghi chép lại lời nói và cử chỉ của Endmin. Em nghĩ mọi chi tiết đều đáng học hỏi. A... Ngài đừng xem! Đây là ghi chép cá nhân mà!"
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 2",
+        "text": "E-Em đã nghe rất nhiều giai thoại về ngài. Em luôn tự hỏi ngài là người như thế nào! Nhưng giờ khi đã thực sự gặp ngài, em cảm thấy ngài còn đáng ngưỡng mộ hơn cả những gì người ta kể. Cụ thể là gì? À... phương pháp, khả năng lãnh đạo của ngài... E-Em không biết diễn tả bằng lời như thế nào..."
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 3",
+        "text": "Trẻ em trong Tộc Sói sẽ tham gia lễ trưởng thành khi đủ mười ba tuổi. Cả tộc sẽ tụ tập để chọn tên hiệu cho \"con sói\" mới. Tên của Catello là \"Wulfgard\", của em là \"Wulfperl\". Em rất thích cái tên mà tộc đã ban cho em. Mỗi khi nói ra, em cảm thấy dòng máu của Tộc Sói cuộn trào trong mình... Ngài nghĩ sao, Endmin?"
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 4",
+        "text": "Endmin, nhiệm vụ gần đây em đã làm rất tốt đúng không? Nên là... em có thể xin một phần thưởng nhỏ không? À... không phải thứ gì xa hoa đâu, chỉ cần nói chuyện với em là đủ rồi!... Được không ạ?"
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 5",
+        "text": "Em biết em vẫn chưa đủ kinh nghiệm để lãnh đạo Tộc Sói, nhưng các trưởng lão cứ khăng khăng để em lo liệu chuyện của tộc... Nên em muốn học hỏi hơn nữa ở bên Endmin. Em muốn biết cách để trở nên đáng tin cậy như ngài, Perlica và M3... Em sẽ khiến mọi người nhìn em bằng con mắt hoàn toàn khác!"
+      },
+      {
+        "title": "Trò Chuyện 1",
+        "text": "Các anh chị ở Endfield đã dạy em nhiều thứ! Chị Perlica đã dạy em cách thức hoạt động của Bộ Đồng Hóa Giao Thức, Avywenna dạy em về trang phục của Phòng Thương Mại Tổng Hợp Talos-II và những cửa hàng đá quý, và... và Xaihi bảo là muốn bàn với em về độ phức tạp thời gian bậc hai... Em còn chẳng biết thứ đó là gì."
+      },
+      {
+        "title": "Trò Chuyện 2",
+        "text": "Các anh chị ở đây đều chăm sóc em rất tốt. Còn tặng quà cho em nữa. Nhưng em đã vượt qua các thử thách của Tộc Sói! Em là một con sói thực thụ! Một con sói trưởng thành không nên thích những thứ trẻ con. Chúng nên thích dao găm và tiền xu cơ! Vì vậy em đã thu thập được rất nhiều thứ đó. Khi em lớn hơn một chút, mọi người sẽ có thể tin tưởng giao cho em những nhiệm vụ nguy hiểm nhất!"
+      },
+      {
+        "title": "Trò Chuyện 3",
+        "text": "Em luôn nghĩ Nonno Rozzan là người mạnh nhất trên đời, nhưng ông cứ bảo \"luôn có người mạnh hơn\" và toàn nhắc đến ngài thôi, Endmin. Về sau em được nghe rất nhiều giai thoại về ngài ở đâu đó. Rồi em nghĩ, \"Ồ, có người như vậy ở ngoài kia sao?!\" Em đã luôn muốn gặp được ngài. Từ khi nghe tin ngài tỉnh dậy, em đã lên kế hoạch để một ngày nào đó làm ngài ngạc nhiên đấy... hehe."
+      },
+      {
+        "title": "Trò Chuyện 4",
+        "text": "Con dao găm đầu tiên của em là phần thưởng sau một chuyến săn bất ngờ! Hộp đựng dao lấp lánh ánh vàng, em vẫn giữ gìn cẩn thận từ đó đến nay. Em cũng thích con dao này nhất. Lúc nào em cũng mang bên mình dù không sắc lắm... chủ yếu chỉ để cắt trái cây thôi. Nếu ngài thích, Endmin… thì… em sẽ tặng ngài khi em mang cả cái hộp theo nữa!"
+      },
+      {
+        "title": "Trò Chuyện 5",
+        "text": "Tuổi thơ của em... Tộc Sói luôn có hiềm khích với Tộc Bonekrusher. Chính anh trai đã đưa em đi nhờ cứu chữa, và các thành viên trong tộc cũng... Á! À... Em không nên nói chuyện này trước mặt ngài! Thôi bỏ qua đi, Endmin. Chúng ta hãy nói về ngài đi! Em nghe nói..."
+      },
+      {
+        "title": "Chủ Đề: Endministrator",
+        "text": "\"Originium sẽ mở đường cho chúng ta.\" À... E-Em chỉ đang luyện tập thôi... A, không, không... Ngài sẽ ghét em sao? Em biết học hỏi từ ngài không chỉ là sao chép... Em chỉ nghĩ. rằng... nghe ngầu thật đấy..."
+      },
+      {
+        "title": "Chủ Đề: Mật Danh",
+        "text": "Là thành viên của Tộc Sói, em có thể dùng tên hiệu làm mật danh giống anh trai, nhưng... chưa có ai ngoại tộc gọi em như thế, nên chắc sẽ hơi xấu hổ. Và \"Rossina\" lại nghe quá trẻ con... không đời nào em lại chọn tên đó! Nên em quyết định chọn mật danh là \"Rossi\", giống màu áo choàng của em."
+      },
+      {
+        "title": "Chủ Đề: Tộc Bonekrusher",
+        "text": "Em sẽ không để một tên Bonekrusher man rợ nào trốn thoát! Đây là mối thù truyền kiếp giữa Tộc Sói và Tộc Bonekrusher. Quá nhiều sói, quá nhiều người thân trong gia đình em đã chết dưới tay chúng, chỉ để bảo vệ em. Em sẽ trả thù cho Tộc Sói, cũng là cho chính em. Chúng em là bộ tộc mang mối hận lâu nhất trên đời này và rồi sẽ có một ngày, món nợ này nhất định phải được thanh toán!"
+      },
+      {
+        "title": "Chủ Đề: Áo Choàng",
+        "text": "Nó nhuốm máu của những người ruột thịt… nhưng lạ là mỗi lần chạm vào, em lại cảm thấy bình yên khó tả, như thể họ chưa từng rời xa. Chiếc áo choàng này khiến em nhói đau, nhắc em không bao giờ được quên mối thù ấy, nhưng cũng tiếp thêm cho em dũng khí... và hơi ấm của gia đình… Đúng vậy, họ vẫn luôn ở bên em."
+      },
+      {
+        "title": "Chủ Đề: Đồ Sưu Tầm",
+        "text": "Trước đây em từng cất hết dao găm và tiền xu nhặt được vào một chiếc rương báu riêng, nhưng em đã làm mất nó trong lúc chuyển đi… Tệ hơn nữa là trong đó còn có vài thứ cực kỳ xấu hổ, mấy món đồ thủ công em làm hồi nhỏ. Em phải mất rất lâu mới tìm lại được chiếc rương đó. Giờ thì em có thể cất giữ mọi thứ an toàn ở Dijiang rồi! Tuyệt hơn nữa, em còn có cớ để thường xuyên qua lại với các anh chị ở đây. Không… ý em là để học tập ở đây!"
+      },
+      {
+        "title": "Chủ Đề: Người Nơi Hoang Vu",
+        "text": "Mọi thứ con người làm ở nơi hoang dã, suy cho cùng cũng chỉ để sinh tồn. Có lúc em thấy những đứa trẻ trạc tuổi mình phải làm những việc rất khủng khiếp chỉ để sống sót… Thậm chí cả Landbreaker cũng nhiều lần liều mạng trong tuyệt vọng chỉ để tồn tại. Em nghĩ ai cũng nên được sống theo lựa chọn của chính mình. Endmin… Endfield có thể thay đổi tất cả những điều đó không? Để những đứa trẻ ấy có thể theo đuổi ước mơ của mình, giống như em?"
+      },
+      {
+        "title": "Phát hiện Tài Nguyên/Có Thể Thu Thập 1",
+        "text": "Tin em đi, có đồ tốt ở đằng kia!"
+      },
+      {
+        "title": "Phát hiện Tài Nguyên/Có Thể Thu Thập 2",
+        "text": "Tộc Sói không bao giờ ngó lơ tài nguyên nơi hoang dã! Để mắt đến chỗ đó nào!"
+      },
+      {
+        "title": "Phát Hiện Khu Vực Chưa Khám Phá",
+        "text": "Đằng kia có mùi lạ. Mau đi xem thử!"
+      },
+      {
+        "title": "Phát hiện Kẻ Địch Mạnh",
+        "text": "Có mùi nguy hiểm. Có nên áp sát không?"
+      },
+      {
+        "title": "Khai thác 1",
+        "text": "Có thể cho em vài viên đá đó được không? Em muốn khảm chúng vào con dao găm của mình."
+      },
+      {
+        "title": "Khai thác 2",
+        "text": "Cùng làm đi. Sẽ sớm xong thôi!"
+      },
+      {
+        "title": "Mở Thùng",
+        "text": "Hừm... Em còn đang nghĩ nếu nó không mở ra, chắc em sẽ thử cắn xem sao."
+      },
+      {
+        "title": "Nhận Aurylene",
+        "text": "Tại sao có Aurylene lơ lửng trong khi số khác thì lại nằm yên nhỉ? Kỳ diệu thật."
+      },
+      {
+        "title": "Xua Tan Nhiễm Khuẩn",
+        "text": "Đã xong! Không còn thứ Nhiễm Khuẩn phiền phức nữa rồi!"
+      },
+      {
+        "title": "Nghỉ ngơi",
+        "text": "Ăn no, ngủ kĩ, nghỉ đủ. Chính là tôn chỉ thông thái của Tộc Sói!"
+      },
+      {
+        "title": "Sử Dụng Vật Phẩm Chiến Thuật 1",
+        "text": "Nhanh lên, dùng cái này để hồi phục đi!"
+      },
+      {
+        "title": "Sử Dụng Vật Phẩm Chiến Thuật 2",
+        "text": "Thấy ổn hơn rồi!"
+      },
+      {
+        "title": "Cảnh Báo Nguy Hiểm",
+        "text": "Cẩn thận! Có gì đó đang đến!"
+      },
+      {
+        "title": "Bị thương",
+        "text": "Không kịp... liếm vết thương mất rồi..."
+      },
+      {
+        "title": "0 HP",
+        "text": "Tộc Sói... tuyệt đối không bỏ qua..."
+      },
+      {
+        "title": "Cổ Vũ Đội 1",
+        "text": "Hay lắm!"
+      },
+      {
+        "title": "Cổ Vũ Đội 2",
+        "text": "Whoa! Phối hợp hoàn hảo!"
+      },
+      {
+        "title": "Đáp Lại Lời Cổ Vũ 1",
+        "text": "Hehehe, ta còn nhiều trò hay hơn cơ!"
+      },
+      {
+        "title": "Đáp Lại Lời Cổ Vũ 2",
+        "text": "Đúng là trận chiến chúng ta mong đợi!"
+      },
+      {
+        "title": "Bắt Đầu Chiến Đấu 1",
+        "text": "Dòng máu của Tộc Sói đang sục sôi!"
+      },
+      {
+        "title": "Bắt Đầu Chiến Đấu 2",
+        "text": "Chuyến đi săn thế này sao mà bỏ lỡ được!"
+      },
+      {
+        "title": "Thắng Trận 1",
+        "text": "Tiếng tăm của Tộc Sói sẽ vang khắp vùng này!"
+      },
+      {
+        "title": "Thắng Trận 2",
+        "text": "Chừa chưa? Động vào Tộc Sói sẽ phải trả giá!"
+      },
+      {
+        "title": "Thắng Trận 3",
+        "text": "He-he-he. Có em ở đây thì tất nhiên phải thắng rồi!"
+      },
+      {
+        "title": "Thắng Trận 4",
+        "text": "Chúng cắn rát đấy, nhưng Tộc Sói không sợ sẹo đâu!"
+      },
+      {
+        "title": "Bại Trận",
+        "text": "Trở ngại nhỏ này chẳng là gì... Rossina ta đây sẽ không bỏ cuộc!"
+      },
+      {
+        "title": "Đòn Dứt Điểm 1",
+        "text": "Tan xác đi!"
+      },
+      {
+        "title": "Đòn Dứt Điểm 2",
+        "text": "Run sợ đi!"
+      },
+      {
+        "title": "KN Chiến Đấu 1",
+        "text": "Xé xác chúng!"
+      },
+      {
+        "title": "KN Chiến Đấu 2",
+        "text": "Đến giờ săn rồi!"
+      },
+      {
+        "title": "KN Chiến Đấu 3",
+        "text": "Móng vuốt rực lửa!"
+      },
+      {
+        "title": "Chuẩn Bị KN Liên Hoàn 1",
+        "text": "Chúng ta sẽ săn chúng!"
+      },
+      {
+        "title": "Chuẩn Bị KN Liên Hoàn 2",
+        "text": "Em sẽ khiến chúng khiếp sợ!"
+      },
+      {
+        "title": "Thi Triển Liên Hoàn 1",
+        "text": "Khó thoát!"
+      },
+      {
+        "title": "Thi Triển Liên Hoàn 2",
+        "text": "Tóm được ngươi rồi!"
+      },
+      {
+        "title": "Kết Liễu 1",
+        "text": "Xuống đi!"
+      },
+      {
+        "title": "Kết Liễu 2",
+        "text": "Hú!"
+      },
+      {
+        "title": "Tuyệt Kỹ 1",
+        "text": "Sôi sục lên, huyết quản của Tộc Sói!"
+      },
+      {
+        "title": "Tuyệt Kỹ 2",
+        "text": "Lưỡi kiếm này chính là ta!"
+      },
+      {
+        "title": "Tuyệt Kỹ 3",
+        "text": "Hỡi linh hồn sói, hãy ở bên ta."
+      }
+    ]
   },
   "potentials": {
     "potential1": {

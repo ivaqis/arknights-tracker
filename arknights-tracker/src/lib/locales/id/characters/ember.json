@@ -120,7 +120,333 @@
         "name": "Teknologi",
         "description": "Teknologi: Perbaikan DIY\nPeralatan paling canggih sekalipun harus dirawat. Sesuai tugasnya, prajurit harus punya pengetahuan menyeluruh tentang teman terdekat mereka ini."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Persiapan Operasi 1",
+        "text": "Sudah siap. Menunggu perintah darimu."
+      },
+      {
+        "title": "Persiapan Operasi 2",
+        "text": "Misi baru?"
+      },
+      {
+        "title": "Menambahkan ke Tim 1",
+        "text": "Biar kupimpin briefing taktisnya."
+      },
+      {
+        "title": "Menambahkan ke Tim 2",
+        "text": "Ayo maju. Perang tak pernah berakhir. Kita hanya bisa terus maju."
+      },
+      {
+        "title": "Berganti Senjata",
+        "text": "Ini hasil karya luar biasa. Akan kumanfaatkan sebaik mungkin."
+      },
+      {
+        "title": "Berganti Gear",
+        "text": "Sudah cukup lama ... aku tak lihat peralatan sekaliber ini."
+      },
+      {
+        "title": "Aktivasi Matriks Kemampuan",
+        "text": "Kekuatanku mulai pulih ... tapi masih belum cukup."
+      },
+      {
+        "title": "Menonton Rekaman Pertarungan",
+        "text": "Kerja sama tim kita bagus sekali .... Terima kasih. Aku belajar banyak."
+      },
+      {
+        "title": "Promosi Operator 1",
+        "text": "Terima kasih atas kepercayaanmu. Aku tak akan mengecewakanmu."
+      },
+      {
+        "title": "Promosi Operator 2",
+        "text": "Dipahami. Karena aku sudah diberi tugas yang lebih kritis, apa aku boleh berikan saran untuk rencana tempur kita?"
+      },
+      {
+        "title": "Promosi Operator 3",
+        "text": "Semasa di Ordo, komandan kami biasanya memberi kami lencana pada momen-momen seperti ini .... Tidak, tak usah. Biar begini saja, karena yang kucari di sini bukanlah penghargaan."
+      },
+      {
+        "title": "Promosi Operator 4",
+        "text": "Aku tak tahu kapan Perang Suci ini akan berakhir, tapi aku makin yakin bahwa situasi ini harus dihadapi seserius mungkin .... Kuharap kau mengizinkanku bertarung bersamamu."
+      },
+      {
+        "title": "Operator Siap Bertugas",
+        "text": "Ember, Kesatria Order of Steel Oath, siap bertugas. Sesuai sumpahku, aku akan mematuhi perintahmu hingga Perang Suci ini selesai."
+      },
+      {
+        "title": "Siaga 1",
+        "text": "Perang Suciku sama sekali belum usai ...."
+      },
+      {
+        "title": "Siaga 2",
+        "text": "Di medan pertarungan, tak ada ampun bagi kesalahan. Kita harus asah keahlian kita segigih mungkin."
+      },
+      {
+        "title": "Menugaskan ke Fasilitas",
+        "text": "Misi khusus? Dipahami .... Akan kujalankan sebaik mungkin."
+      },
+      {
+        "title": "Menyapa 1",
+        "text": "Kau punya misi pertarungan yang butuh aku?"
+      },
+      {
+        "title": "Menyapa 2",
+        "text": "Selamat datang kembali, Endmin. Berikutnya, kita akan bertarung di mana?"
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 1",
+        "text": "Dijiang memang dilengkapi berbagai fasilitas, tapi pesawat ini dirancang bukan untuk perang. Kesiapan operasionalnya tak menentu, dan aku masih berusaha menyesuaikan diri dengan hal itu."
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 2",
+        "text": "Latihan di Ordo? Hmm .... Dulu, aku bisa menghadapi satu gugus Homoiossaron sendirian, jadi biasanya komandanku mengerahkan beberapa skuad rekrutan baru untuk melawanku sekaligus."
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 3",
+        "text": "Di bawah aurora, terbentang baris pertahanan Oathkeeper. Saat pertarungan dimulai, langit akan dipenuhi kawanan Aggelos terbang. Tentu saja, kereta tempur dan pesawat pengawal kami juga akan—sebentar, kenapa barisan pegunungannya mengarah ke sini .... Maaf, sepertinya aku ... salah mengidentifikasi lokasinya."
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 4",
+        "text": "Terjun dari ketinggian ke zona perang memang aksi standar di unitku. Tapi, di sini, konsep ketinggian itu sendiri mulai pudar."
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 5",
+        "text": "Para operator di sini sangat cocok jadi partner latih tanding. Mereka menghargai koordinasi di medan pertarungan dan sangat kreatif dalam menyusun strategi. Aku belajar banyak dari mereka. Sebagai Oathkeeper, aku harus terus berlatih dan selalu meningkatkan kemampuanku."
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 6",
+        "text": "Kantor Intel memberiku akses ke beberapa log misi. Begitu banyak orang harus kehilangan nyawa demi membela keyakinan mereka, bahkan walaupun mereka sama sekali tak pernah terjun ke medan pertarungan. Mungkin mereka sama sekali tak menyesalinya, tapi tetap saja aku jadi bertanya-tanya: apa yang bisa kita lakukan agar pengorbanan seperti itu tak terlalu banyak terjadi?"
+      },
+      {
+        "title": "Menawarkan Hadiah",
+        "text": "Terimalah ini, Endmin."
+      },
+      {
+        "title": "Menerima Hadiah",
+        "text": "Terima kasih banyak. Kuanggap ini tanda pengakuan darimu."
+      },
+      {
+        "title": "Dialog Kepercayaan 1",
+        "text": "Desain setelan armor ini memang rumit, dan sebagai Oathkeeper, kami harus mempelajari keahlian teknik agar setelan ini selalu berfungsi. Tapi, pada akhirnya, yang membuat kami bisa bertahan hidup dalam pertarungan bukanlah armor ini. Kami bisa bertahan berkat tekad, kecerdasan strategi, dan keberanian untuk bertindak."
+      },
+      {
+        "title": "Dialog Kepercayaan 2",
+        "text": "Izinkan aku menanggung biaya perawatan untuk operator cadangan itu. Banyak Oathkeeper siap mengorbankan nyawa, tapi tanpa fokus yang jelas demi meraih kemenangan, tekad seperti itu hanya akan menimbulkan risiko bagi semua orang. *Berdesah* Aku kehilangan fokus dan jadi menghantamnya terlalu keras .... Aku sungguh minta maaf."
+      },
+      {
+        "title": "Dialog Kepercayaan 3",
+        "text": "Ada tradisi tertentu di kalangan Oathkeeper: Saat ada skuad yang sudah tak sanggup melanjutkan pertarungan, salah seorang Oathkeeper harus mundur untuk merekrut anggota baru. Bisa dibilang, ini semacam Perang Suci. Kami mencari calon penerus yang layak dengan cermat, dan tak pernah terburu-buru dalam melakukannya. Tapi ... sepertinya Perang Suciku sudah berlangsung terlalu lama."
+      },
+      {
+        "title": "Dialog Kepercayaan 4",
+        "text": "Saat mengantarkan barang-barang peninggalan dan abu rekan-rekanku yang wafat, aku bertemu orang tua, saudara, dan orang-orang terkasih mereka. Aku bahkan menghentikan sahabat salah satu prajurit yang berniat pergi ke utara untuk balas dendam. Entah bagaimana, justru akulah yang paling sering menghibur orang lain dan meyakinkan mereka untuk tak bertindak gegabah. Mungkin karena itulah komandanku bersikeras menyuruhku memulai Perang Suci sesegera mungkin."
+      },
+      {
+        "title": "Dialog Kepercayaan 5",
+        "text": "Ini Claire, lalu yang ini Zhao, Nilla, dan Lucion. Yang matanya tajam itu Fiyanggu, anggota anyaran. Mereka semua tidak minum. Kami pura-pura bersulang begitu karena ada jurnalis yang berkunjung. Mereka semua prajurit hebat, dan karena itulah mereka memilih hari itu untuk menuntaskan misi. Kalau penerus mereka juga sama luar biasanya seperti mereka ... kurasa aku tak akan tega memerintahkan mereka ke utara. Kenapa aku begini, Endmin? Apa yang kurang dariku?"
+      },
+      {
+        "title": "Obrolan 1",
+        "text": "Ember, nama sandi ini pilihanku sendiri. Aku tak berniat lari dari kenyataan: aku masih belum siap kembali ke front utara. Tapi, asalkan masih ada peluang untuk membara, api Ember akan menyala kembali. Endmin, aku yakin Endfield akan membantuku menemukan jalan hidupku."
+      },
+      {
+        "title": "Obrolan 2",
+        "text": "Unit keamanan standar bisa menghadapi Kriosson, tapi situasi langsung berubah drastis kalau ada Thrylissoron. Di Oathkeeper, skuad taktis seperti kami ditugaskan mengacaukan formasi musuh dengan cepat, menetralkan Ankhor, dan mencegah kemunculan gugus Aggelos yang lebih berbahaya. Misi ini memang sangat berisiko, tapi kami bangga bisa menjalankannya."
+      },
+      {
+        "title": "Obrolan 3",
+        "text": "Skuad yang anggotanya menipis akan ditarik mundur untuk merekrut prajurit baru, jadi tugasnya jadi semacam saluran rekrutmen bagi Oathkeeper. Orang-orang yang menantangku sebenarnya hanya ingin bergabung dengan kami; bukan karena mereka punya dendam pribadi kepadaku. Tentu saja, kalaupun mereka menang, bukan berarti mereka akan langsung direkrut. Kekuatan dan keahlian memang penting, tapi yang terpenting adalah kepribadian si penantang, yang akan tampak saat mereka bertarung."
+      },
+      {
+        "title": "Obrolan 4",
+        "text": "Penasaran tentang Senapan Penjagaku? Sayangnya, aku meninggalkannya di benteng Oathkeeper. Aku tak biasa bertarung dengan senjata jarak jauh. Senapanku terasa lebih seperti bagian dari diriku. Dengan meninggalkannya di sana, aku jadi selalu ingat bahwa suatu hari nanti aku akan kembali ke sana."
+      },
+      {
+        "title": "Obrolan 5",
+        "text": "Saat aku ditarik dari baris depan, komandanku tak menentukan tanggal berapa aku akan kembali. Justru, kudengar banyak veteran lain juga diberi mendapatkan perintah yang sama. Mereka ditarik mundur untuk merekrut anggota baru, tapi tak pernah kembali ke benteng. Mungkin itu cara halus untuk menyatakan bahwa mereka diam-diam dipensiunkan. Tapi, aku tak berniat mengikuti jalan itu, dan karena itulah komandanku merekomendasikanku kepadamu. Menurutnya, Endfield mungkin bisa membantuku mengenali kekuranganku. Semoga dia memang benar."
+      },
+      {
+        "title": "Topik: Order of Steel Oath",
+        "text": "Saat Perang Aggelos Pertama, koalisi pasukan elite dibentuk untuk mendesak masuk ke Utara. Mereka bersumpah akan bertarung hingga titik darah penghabisan, dan dengan itu, dimulailah perang panjang dan keji yang melelahkan. Inilah asal mula para Oathkeeper pertama .... Sebenarnya, komandanku bilang bahwa kaulah, Endmin, yang membantu mereka hingga bisa berkomunikasi lagi dengan barisan belakang. Dan sekarang, di sinilah aku, menceritakan ulang kisah ini kepadamu. Rasanya seperti mimpi."
+      },
+      {
+        "title": "Topik: Perang Aggelos",
+        "text": "Taktik dan teknologi mungkin bisa membuat kita unggul saat melawan Aggelos, tapi begitu pertarungan berubah menjadi peperangan, korban jiwa pun tak bisa dihindari. Saat Perang Aggelos Pertama berakhir, aktivitas Ankhor dan Aggelos sudah berkurang banyak. Tapi, bertahun-tahun kemudian, saat aku masih bertugas sebagai prajurit, pertarungan di baris depan jadi makin sengit .... Mungkin, perang yang sesungguhnya justru baru saja mulai."
+      },
+      {
+        "title": "Topik: Baris Pertahanan Utara",
+        "text": "Baris Pertahanan Utara bukan perbatasan yang sifatnya permanen. Setiap hari, kami bertarung mempertahankan setiap jengkal area itu melawan Aggelos. Saat pertarungan makin sengit, para prajurit kami bahkan kadang membawa material bangunan sambil bertarung, dan buru-buru membangun gardu benteng baru di titik-titik strategis yang baru saja berhasil kami rebut. Kami tak pernah mundur dari baris pertahanan, karena kami sendirilah yang jadi baris pertahanan."
+      },
+      {
+        "title": "Topik: Originium Arts",
+        "text": "Seperti halnya api pada umumnya, Originium Arts-ku bisa menyalakan material dan membakar musuh. Dengan kontrol presisi, kemampuan ini bahkan bisa digunakan untuk mendisinfeksi luka dan mengatur suhu tubuh. Teknik ini mungkin memang bermanfaat dalam pertarungan, tapi tetap saja tak bisa menggantikan arts medis sungguhan. Langkah terbaik adalah mengevakuasi prajurit yang cedera dan segera memberi mereka penanganan yang memadai."
+      },
+      {
+        "title": "Topik: Sentrapolis",
+        "text": "Saat pertarungan memuncak pun, suplai Supresan Oripati ke barisan pasukan tak pernah terhenti. Sebagai orang yang Terinfeksi, aku sepenuhnya paham betapa pentingnya suplai itu. Sulit rasanya membayangkan kehidupan orang-orang pada Zaman Terra .... Petaka akibat Originium tak pernah sampai menyebar ke sini, dan orang-orang yang Terinfeksi tak lagi dimusuhi habis-habisan. Mungkin ini bukti bahwa kita sudah lebih baik daripada dulu?"
+      },
+      {
+        "title": "Sumber Daya/Barang Koleksi Terdeteksi 1",
+        "text": "Lokasi sumber daya bermanfaat ditemukan. Bersiaplah memungutnya."
+      },
+      {
+        "title": "Sumber Daya/Barang Koleksi Terdeteksi 2",
+        "text": "Objek bernilai tinggi teridentifikasi. Meminta izin untuk mengambilnya."
+      },
+      {
+        "title": "Area yang Belum Dijelajahi Terdeteksi",
+        "text": "Sinyal aneh terdeteksi di depan sana. Bukan pola Ankhor yang sudah diketahui. Perlu kita selidiki, tidak?"
+      },
+      {
+        "title": "Musuh Kuat Ditemukan",
+        "text": "Musuh dengan tingkat ancaman tinggi terdeteksi. Tetap waspada."
+      },
+      {
+        "title": "Penambangan 1",
+        "text": "Kapan pun memungkinkan, selalu isi ulang suplai. Jangan sampai kehabisan suplai saat kondisi kritis."
+      },
+      {
+        "title": "Penambangan 2",
+        "text": "Mengumpulkan mineral? Biar kubantu."
+      },
+      {
+        "title": "Membuka Kerat",
+        "text": "Semoga ini berguna."
+      },
+      {
+        "title": "Mendapatkan Aurylene",
+        "text": "Apa ini harus kita kumpulkan? Baiklah, aku akan ikut mencari."
+      },
+      {
+        "title": "Menyingkirkan Hawar",
+        "text": "Sekarang, rintangan menyebalkan ini tak akan menghalangi kita lagi."
+      },
+      {
+        "title": "Istirahat",
+        "text": "Istirahat selesai. Ayo kita lanjutkan misi."
+      },
+      {
+        "title": "Penggunaan Taktis 1",
+        "text": "Menyiapkan dukungan taktis."
+      },
+      {
+        "title": "Penggunaan Taktis 2",
+        "text": "Semua siap. Kembali bertarung."
+      },
+      {
+        "title": "Peringatan Bahaya",
+        "text": "Siap-siap terhantam!"
+      },
+      {
+        "title": "Cedera",
+        "text": "Aku akan terus berusaha hingga akhir."
+      },
+      {
+        "title": "0 HP",
+        "text": "Perang Suci ... tak boleh berakhir di sini ...."
+      },
+      {
+        "title": "Penyemangat Tim 1",
+        "text": "Performa menakjubkan."
+      },
+      {
+        "title": "Penyemangat Tim 2",
+        "text": "Manuver tempur luar biasa."
+      },
+      {
+        "title": "Respons Penyemangat 1",
+        "text": "Semua berhak merayakan kemenangan ini."
+      },
+      {
+        "title": "Respons Penyemangat 2",
+        "text": "Semua ini berkat kerja sama tim kita yang luar biasa."
+      },
+      {
+        "title": "Mulai Pertarungan 1",
+        "text": "Majulah! Hadapi aku!"
+      },
+      {
+        "title": "Mulai Pertarungan 2",
+        "text": "Roger. Mendekati musuh."
+      },
+      {
+        "title": "Menang Pertarungan 1",
+        "text": "Kemenangan ini memang sepadan."
+      },
+      {
+        "title": "Menang Pertarungan 2",
+        "text": "Kita bertarung dengan berani dan hati-hati. Bagus sekali, Teman-teman."
+      },
+      {
+        "title": "Menang Pertarungan 3",
+        "text": "Kemenangan ini berhasil kita raih karena kita berusaha bersama."
+      },
+      {
+        "title": "Menang Pertarungan 4",
+        "text": "Performaku kurang bagus .... Tapi, aku akan belajar dan terus mengasah kemampuan. Aku janji."
+      },
+      {
+        "title": "Kalah Bertarung",
+        "text": "Jangan-jangan aku mengulangi kesalahan yang sama ...?"
+      },
+      {
+        "title": "Final Strike 1",
+        "text": "Rasakan, nih!"
+      },
+      {
+        "title": "Final Strike 2",
+        "text": "Jangan melawan lagi!"
+      },
+      {
+        "title": "Skill Tarung 1",
+        "text": "Kau tak akan bisa menghentikanku!"
+      },
+      {
+        "title": "Skill Tarung 2",
+        "text": "Tundukkan mereka!"
+      },
+      {
+        "title": "Skill Tarung 3",
+        "text": "Desak maju!"
+      },
+      {
+        "title": "Skill Kombo Siap 1",
+        "text": "Siap membantu!"
+      },
+      {
+        "title": "Skill Kombo Siap 2",
+        "text": "Sudah di posisi!"
+      },
+      {
+        "title": "Penggunaan Kombo 1",
+        "text": "Tak akan kubiarkan!"
+      },
+      {
+        "title": "Penggunaan Kombo 2",
+        "text": "Hadapilah ajalmu!"
+      },
+      {
+        "title": "Penuntas 1",
+        "text": "Pecahkan sekarang!"
+      },
+      {
+        "title": "Penuntas 2",
+        "text": "Payah!"
+      },
+      {
+        "title": "Ultimate 1",
+        "text": "Api Oathkeeper!"
+      },
+      {
+        "title": "Ultimate 2",
+        "text": "Akulah perwujudan Terang!"
+      },
+      {
+        "title": "Ultimate 3",
+        "text": "Di sini, cahaya akan menyala selamanya!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

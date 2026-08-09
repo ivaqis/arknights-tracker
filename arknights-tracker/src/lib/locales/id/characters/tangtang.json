@@ -128,7 +128,333 @@
         "name": "Kreatif",
         "description": "Kreatif: Peningkat Kampung Benteng\nRencana-rencana Tangtang sering mengejutkan orang Kampung Benteng. Mereka tak tahu dari mana dia mendapatkan inspirasinya."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Persiapan Operasi 1",
+        "text": "Hei Topeng Gelap, mau ke mana? Jangan meninggalkanku!"
+      },
+      {
+        "title": "Persiapan Operasi 2",
+        "text": "Akhirnya mau berangkat juga? Aku nyaris berlumut karena bosan!"
+      },
+      {
+        "title": "Menambahkan ke Tim 1",
+        "text": "Ketua Agung kalian sudah datang! Kau, kau, dan kau, kalian semua di bawah komandoku!"
+      },
+      {
+        "title": "Menambahkan ke Tim 2",
+        "text": "Santai saja, aku akan membantumu."
+      },
+      {
+        "title": "Berganti Senjata",
+        "text": "Senjata ini enak sekali dipakai! Bidikanku jadi makin tajam!"
+      },
+      {
+        "title": "Berganti Gear",
+        "text": "Gear sebanyak ini untukku? Ayolah, barang bagus itu harus dibagi! Yang ini untukmu, yang ini untukku!"
+      },
+      {
+        "title": "Aktivasi Matriks Kemampuan",
+        "text": "Kita sudah makin kuat! Saatnya coba kekuatan ini kepada perempuan gila itu!"
+      },
+      {
+        "title": "Menonton Rekaman Pertarungan",
+        "text": "Serang kiri! Lalu kanan! Ya, begitu dong .... Hei, mereka boleh juga, kita rekrut saja langsung!"
+      },
+      {
+        "title": "Promosi Operator 1",
+        "text": "Kau memanggilku hanya untuk memuji? Kalau begitu, jangan tanggung-tanggung. Aku suka sekali mendengar kebenaran!"
+      },
+      {
+        "title": "Promosi Operator 2",
+        "text": "Promosi lagi? Sejak awal aku memang favoritmu!"
+      },
+      {
+        "title": "Promosi Operator 3",
+        "text": "Kita sudah teruji di medan pertarungan! Tak perlu basa-basi. Kalau aku dapat seteguk sup, kau dapat sesuap daging. Apa? Terbalik? Tidak, memang mestinya begitu."
+      },
+      {
+        "title": "Promosi Operator 4",
+        "text": "Promosi lagi?! Mataku cuma satu—mana bisa baca laporan sebanyak itu! Sementara, kau saja yang urus rencana pembangunannya .... Hah? Aku bukannya malas! Ini namanya penundaan strategis. Aku latihan dulu agar makin kuat!"
+      },
+      {
+        "title": "Operator Siap Bertugas",
+        "text": "Ketua Kampung Benteng Qingbo, Tangtang, melapor sesuai janji! Serahkan saja Endfield kepadaku dan akan kuubah jadi tempat terkuat di Talos-II! Ajukan proposal dulu? Ayolah, sejak kapan Ketua mengurus berkas? Kita cari solusinya bersama-sama saja!"
+      },
+      {
+        "title": "Siaga 1",
+        "text": "Wah, kesayanganku! Hah, coba kabur dariku kalau berani!"
+      },
+      {
+        "title": "Siaga 2",
+        "text": "Arrgh—Topeng Gelap! Akhirnya datang juga! Kenapa lama sekali, sih?!"
+      },
+      {
+        "title": "Menugaskan ke Fasilitas",
+        "text": "Oke, oke, paham. Tekan ini ... lalu ketuk itu. Kalau ada apa-apa, Topeng Gelap bisa mengatasinya!"
+      },
+      {
+        "title": "Menyapa 1",
+        "text": "Topeng Gelap, ayo sini!"
+      },
+      {
+        "title": "Menyapa 2",
+        "text": "Beri tahu aku kalau ada yang seru, ya. Aku tak mau melewatkannya!"
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 1",
+        "text": "Krumu memang tangguh, tapi aku belum pernah kalah dalam latih tanding! Em ... kecuali ... yang tak sanggup kuhadapi itu ... tim medis berjubah putih itu! Mereka terus bilang akan menangani Oripatiku dan berusaha menyuntik pantatku—Aah! Itu mereka! Topeng Gelap, aku sembunyi dulu!"
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 2",
+        "text": "Orang-orang di Dijiang banyak yang jago, andai saja aku bisa minta beberapa .... Heh, Topeng Gelap, aku tak serakah kok, Juru Tulis Pucat dan Sisik Hijau saja sudah cukup! Tidak boleh? Kalau begitu, Muka Besi Tua berkepala tiga yang cerewet sekali itu saja! Ayolah, dia tak takut kepadaku. Kami sahabat, kok!"
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 3",
+        "text": "Setiap kali merasa stres, aku berteriak di pinggir perairan, rasanya langsung mendingan. Orang sesibuk kau pikirannya pasti penuh. Kau harus cari tempat untuk berteriak juga. Bagaimana kalau platform di sana itu? Atau di jendela besar itu? Pfft, apa maksudnya bisa jadi masalah? Justru menahan dirilah yang bakalan jadi masalah!"
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 4",
+        "text": "Dari jendela Dijiang, banyak sekali bintang yang terlihat. Aku jadi ingat masa kecil, saat berbaring di dekat mata air leluhur, memandangi bintang yang memantul di air. Pesawat luar angkasa itu juga kapal, galaksi itu juga sungai .... Kalau dipikir-pikir, Dijiang dan Kampung Benteng Qingbo tak begitu berbeda. Dua-duanya tempat yang keren!"
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 5",
+        "text": "Tagihan kerusakan ini ... bukan salahku! Salah si patroli baru berambut hijau itu—padahal tinggal kembalikan dompetku saja. Dia malah mengejarku keliling markas! Kukira dia mau menangkapku! Saat menghindarinya, yah ... aku mungkin menabrak beberapa kerat. Tapi aku tak salah! Cuma kebiasaan lama gara-gara sering kabur dari para opsir di Wuling."
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 6",
+        "text": "Endmin Endmin Endmin—Hmph! Aku bertaruh dengan Sisik Hijau, kalau aku bisa memanggilmu Endmin seharian penuh, dia akan membelikanku banyak camilan! Kali ini aku pasti menang! Tinggal tunggu dia bayar saja, Topeng Gel—Ehh! Bukan, aku tak memanggilmu begitu! Kau salah dengar! Itu tidak termasuk!"
+      },
+      {
+        "title": "Menawarkan Hadiah",
+        "text": "Tak usah tanya asalnya, ambil saja. Aku punya prinsip untuk memberikan imbalan untuk kerja bagus. Dan kau ... kau hebat juga!"
+      },
+      {
+        "title": "Menerima Hadiah",
+        "text": "Wah, kau baik sekali .... Masih ada lagi tidak? Boleh minta satu lagi?"
+      },
+      {
+        "title": "Dialog Kepercayaan 1",
+        "text": "Kalau soal makanan enak di Wuling, rekomendasi semua orang biasanya yang itu-itu saja, yang sudah umum. Kuberi tip sungguhan, ya! Cobalah makanan penjara di Kota Wuling: tiga hidangan, satu sup, bahkan dapat buah juga. Aku sudah cek diam-diam, para tahanan makan hidangan yang sama dengan opsir, dan semuanya enak. Oh iya, ada satu tempat yang keren juga: saat kau merangkak di terowongan bawah tanah menuju Wuling, ada satu lokasi tempat cahaya menembus masuk, banyak bunga tumbuh di sekitarnya .... Indah sekali. Sayang, tempat itu sudah ditutup Mi Fu, perempuan gila itu."
+      },
+      {
+        "title": "Dialog Kepercayaan 2",
+        "text": "Aku selalu penasaran akan satu hal .... Siapa orang tua kandungku dan kenapa mereka menaruhku di air? Semua orang bilang aku ini “putri sungai”, padahal sungai tak mungkin melahirkan Feline .... Ayah bilang, dulu aku ditemukan mengapung di dalam baskom, terbungkus rapi dengan pita di atasnya .... Kalau bisa bertemu mereka, aku ingin tanya, mereka membuangku bukan karena benci, ‘kan? Maksudku ... untuk apa menyematkan pita pada sampah yang mau dibuang?"
+      },
+      {
+        "title": "Dialog Kepercayaan 3",
+        "text": "Jangan bergerak! Hampir saja bambuku patah! Ehem .... Akhir-akhir ini matahari terik sekali, jadi aku ingin menganyam topi untukmu agar tak kepanasan. Aku sedang mengukur kepalamu .... Kenapa, tak percaya dengan kemampuanku? Keranjang bambu, kerat, rak di Kampung Benteng—oke, memang bukan aku yang buat, tapi Qingwu bilang barang buatan tangan lebih bermakna .... Pokoknya, kalau Ketua memberikan hadiah, kau wajib menerimanya, apa pun bentuknya!"
+      },
+      {
+        "title": "Dialog Kepercayaan 4",
+        "text": "Orang-orang Kampung Benteng memang memanggilku Ketua, tapi dalam hati, mereka sebenarnya mengikuti kakakku. Mereka memberinya senjata, mengajarinya membaca ... tapi aku diberi mainan dan baju, dan ditertawakan saat latihan. Sekarang pun, aku nyaris tak bisa membaca. Mereka benar-benar baik, selalu berusaha membuatku senang. Tak dianggap salah dan tak pernah disalahkan. Aku hanya bisa menyalahkan diriku sendiri karena tak berani maju .... Tapi, sekarang berbeda. Aku akan jadi pemimpin sungguhan, bukan cuma untuk Kampung Benteng atau diriku ... tapi juga untuk semua yang percaya kepadaku."
+      },
+      {
+        "title": "Dialog Kepercayaan 5",
+        "text": "Topeng Gelap, kau hebat dalam banyak hal, tapi posturmu terlalu kaku! Aku sampai tak bisa menyelinap dan menepuk pundakmu dengan benar, apalagi mengacak-acak rambutmu .... Kenapa? Ya, karena aku ingin memberimu imbalan! Itu tanda kepercayaan di antara kita .... Hei! Jangan berani-berani menepuk-nepuk kepalaku! Aku bosnya, dan kepala bos sama sekali tak boleh disentuh!"
+      },
+      {
+        "title": "Obrolan 1",
+        "text": "Berenang, mendayung, melempar batu, apa pun yang berhubungan dengan air, aku jagonya! Orang-orang di Kampung Benteng bilang aku ini anak yang diberkati oleh mata air leluhur dan disayangi oleh air .... Tapi sejujurnya? Karena mataku ini, aku tak bisa melihat dengan jelas, selalu ketinggalan saat berenang bersama yang lain. Aku tak mau kalah, berlatih setiap hari ... sampai akhirnya jago berenang dengan satu mata dan berhasil mengalahkan mereka semua! Apa pepatahnya? .... Oh ya, hasil tak akan mengkhianati usaha!"
+      },
+      {
+        "title": "Obrolan 2",
+        "text": "Meriam tanganku warisan dari Ayah, bajuku buatan Qingwu, rambutku dipotong kakakku, perban dijahit Shui Ling .... Begitulah di Kampung Benteng. Tak ada profesi khusus, semua harus bisa sedikit-sedikit, bantu-membantu .... Oh, aku juga jauh lebih jago memotong rambut daripada kakakku! Mau coba? Gaya rambutmu itu, dua peluru pasti cukup—Hei, Topeng Gelap, jangan kabur!"
+      },
+      {
+        "title": "Obrolan 3",
+        "text": "Saat musim dingin, kami mengeringkan ikan hasil tangkapan di rak bambu untuk dijadikan dendeng. Selama beberapa bulan itu, seisi Kampung Benteng Qingbo baunya amit-amit, sampai aku berharap Mi Fu membawaku ke Wuling. Tapi, setelah benar-benar kering, kalau ditumis bersama sayuran lalu ditaruh di atas nasi? Lezat sekali. Hidup juga seperti itu, pahit dulu, manis kemudian. Pada akhirnya semua akan baik-baik saja!"
+      },
+      {
+        "title": "Obrolan 4",
+        "text": "Nih, satu Sertifikat Tangtang lagi untukmu. Kemarin kau membantuku di kantin, jadi aku hanya balas budi. Hmph! Tapi soal mesin itu, yang mengeluarkan botol kecil kalau ditendang? Bukan aku yang merusaknya .... Pokoknya, lupakan soal itu. Sertifikat Tangtangmu pasti banyak sekali, aturannya harus diganti! Mulai sekarang, kau, Topeng Gelap, untuk menukarkan satu kali saja, kau butuh lima ratus sertifikat .... Heh, sertifikatku, aturanku!"
+      },
+      {
+        "title": "Obrolan 5",
+        "text": "Aku menutup mata ini bukan karena mataku jadi sensitif terhadap cahaya gara-gara Oripati ... tapi karena aku jadi bisa pakai Originium Arts. Aku dulu tak bisa mengendalikannya dan membuat perempuan gila itu terluka saat bertarung, dan bekas lukanya masih tersisa .... Aku takut tak sengaja menyakiti orang lagi, makanya sejak itu aku selalu pakai penutup mata. Tapi, kata orang-orang, aku justru makin terlihat seperti Ketua, jadi walau sudah bisa mengendalikan Arts-ku, aku tak mau melepasnya!"
+      },
+      {
+        "title": "Topik: Kampung Benteng Qingbo",
+        "text": "Tahu tidak, ratusan tahun lalu, nenek moyang kita di Kampung Benteng Qingbo tak mau lagi bertarung dan bersaing. Mereka meninggalkan tempat-tempat yang penuh konflik dan pindah ke tepi mata air leluhur. Tapi, setelah orang Wuling datang, pertarungan pun dimulai lagi. Sepertinya, di mana pun, manusia tak bisa lepas dari dendam dan perselisihan .... Karena semua itu berakar di hati semua orang. Tapi, kalau aku berhasil mengurus rumah ini dengan baik, konflik itu tak akan terulang .... Bukan cuma itu. Aku akan melakukan hal yang lebih besar di Endfield ini, bersama kalian semua!"
+      },
+      {
+        "title": "Topik: Mi Fu",
+        "text": "Jadi, Mi Fu dulu anggota Kampung Benteng juga. Tapi, entah bagaimana jadi hilang akal dan malah mengakui Zhuang sebagai bosnya! Aku jadi jengkel setengah mati! Sudah kubilang berulang kali bahwa aku akan jadi pemimpin yang jauh lebih baik dari Zhuang, tapi dia tetap saja tak kembali .... Dasar! Semua waktu yang kuhabiskan di Kota Wuling itu? Bukan untuk membujuknya pulang, kok. Aku ke sana untuk menghajarnya!"
+      },
+      {
+        "title": "Topik: Zhuang Fangyi",
+        "text": "Tianshi pasak petir itu? Hal paling sederhana saja bisa jadi ribet kalau dia yang menjelaskan. Serius, setiap kata-katanya terasa seperti jebakan, jadi sulit sekali kupahami. Kami ini seperti dua jenis air yang mengalir ke arah berlawanan .... Tapi demi Kampung, aku terpaksa mendengarkan dia .... Topeng Gelap, tolong bantu aku soal proposal ini. Apa sih artinya “rasio petak” ...?"
+      },
+      {
+        "title": "Topik: Lonceng Bambu Air",
+        "text": "Kalau ada orang Kampung yang tiada, kami akan melepaskan lonceng air bambu. Aku pertama kali melepaskannya ... untuk Ayah. Kakak bilang bunyi dentingan dari mata air itu adalah suara Ayah yang berbicara kepada kami. Setelah itu, setiap kali merasa bingung, aku pasti ke perairan, dan selalu mendapatkan jawaban. Tapi, saat bertanya soal Kakak, tak ada suara apa-apa. Aku menunggu lama sekali sampai ketiduran .... Mungkin Ayah merasa bahwa ini adalah sesuatu yang harus kuselesaikan sendiri."
+      },
+      {
+        "title": "Topik: Membaca",
+        "text": "Aku sebenarnya tak suka baca, tapi buku dari Sisik Hijau itu ternyata seru juga. Katanya itu buku dari Hongshan, untuk anak-anak yang belum bisa membaca. Tapi jujur saja, pelajaran dari buku itu dijelaskan dengan baik. Banyak orang dewasa tak bisa melakukannya walau tahu semua kata. Setidaknya saat kutunjukkan bukunya kepada kru, semuanya menepuk paha sambil bilang, “Masuk akal juga!” Andai semua orang di dunia ini bicaranya sejelas buku-buku itu, pasti masalah dan kesalahpahaman akan sangat berkurang, iya ‘kan?"
+      },
+      {
+        "title": "Sumber Daya/Barang Koleksi Terdeteksi 1",
+        "text": "Mata awas, ada barang berkilau di sekitar sini!"
+      },
+      {
+        "title": "Sumber Daya/Barang Koleksi Terdeteksi 2",
+        "text": "Harta karun di sana! Bantu aku!"
+      },
+      {
+        "title": "Area yang Belum Dijelajahi Terdeteksi",
+        "text": "Area itu belum dijelajahi—ayo kita periksa ke sana!"
+      },
+      {
+        "title": "Musuh Kuat Ditemukan",
+        "text": "Bosmu datang! ... Eh, yang itu tampaknya tangguh ...."
+      },
+      {
+        "title": "Penambangan 1",
+        "text": "Batuannya cantik sekali! Gali terus!"
+      },
+      {
+        "title": "Penambangan 2",
+        "text": "Barang berkilau. Kita bagi sama rata saja!"
+      },
+      {
+        "title": "Membuka Kerat",
+        "text": "Eh ... tak ada yang mau?! Oke, untukku saja!"
+      },
+      {
+        "title": "Mendapatkan Aurylene",
+        "text": "Bisa dijual tidak ya?"
+      },
+      {
+        "title": "Menyingkirkan Hawar",
+        "text": "Mantap! Tak perlu repot-repot lewat jalan memutar!"
+      },
+      {
+        "title": "Istirahat",
+        "text": "Huff ... capek sekali .... Sudah tak bisa lanjut? Hah! Dalam kamusku, tak ada kata “tak bisa”! Ayo maju terus!"
+      },
+      {
+        "title": "Penggunaan Taktis 1",
+        "text": "Sudah kubilang kau akan kulindungi!"
+      },
+      {
+        "title": "Penggunaan Taktis 2",
+        "text": "Ah, rasanya mendingan!"
+      },
+      {
+        "title": "Peringatan Bahaya",
+        "text": "Jangan bengong! Mundur!"
+      },
+      {
+        "title": "Cedera",
+        "text": "Ugh ... ngantuk sekali .... Aku harus ... tahan ...."
+      },
+      {
+        "title": "0 HP",
+        "text": "Hari ini kau ... kubiarkan lolos ...."
+      },
+      {
+        "title": "Penyemangat Tim 1",
+        "text": "Itu baru teman seperjuanganku!"
+      },
+      {
+        "title": "Penyemangat Tim 2",
+        "text": "Geng kecil kita ini memang mahir!"
+      },
+      {
+        "title": "Respons Penyemangat 1",
+        "text": "Mantap, mantap!"
+      },
+      {
+        "title": "Respons Penyemangat 2",
+        "text": "Bagaimana kalau lain kali aksinya lebih heboh lagi?"
+      },
+      {
+        "title": "Mulai Pertarungan 1",
+        "text": "Siapa nih orang pintar yang cari gara-gara?"
+      },
+      {
+        "title": "Mulai Pertarungan 2",
+        "text": "Mereka harus dibuat takut seperti itu!"
+      },
+      {
+        "title": "Menang Pertarungan 1",
+        "text": "Pertarungan tadi memuaskan sekali!"
+      },
+      {
+        "title": "Menang Pertarungan 2",
+        "text": "Heh, semua berkat strategi geniusku!"
+      },
+      {
+        "title": "Menang Pertarungan 3",
+        "text": "Nah, itu baru kabar yang ingin kudengar!"
+      },
+      {
+        "title": "Menang Pertarungan 4",
+        "text": "Semuanya hebat. Istirahat dulu, lain kali kita akan lebih hati-hati!"
+      },
+      {
+        "title": "Kalah Bertarung",
+        "text": "Aku tak tahan lihat kalian menderita begini .... Aku janji akan balaskan dendam kalian!"
+      },
+      {
+        "title": "Final Strike 1",
+        "text": "Dor!"
+      },
+      {
+        "title": "Final Strike 2",
+        "text": "Duar!"
+      },
+      {
+        "title": "Skill Tarung 1",
+        "text": "Kau sudah terkunci!"
+      },
+      {
+        "title": "Skill Tarung 2",
+        "text": "Menunggangi ombak!"
+      },
+      {
+        "title": "Skill Tarung 3",
+        "text": "Ayo lihat siapa yang lebih cepat!"
+      },
+      {
+        "title": "Skill Kombo Siap 1",
+        "text": "Kapan giliranku?!"
+      },
+      {
+        "title": "Skill Kombo Siap 2",
+        "text": "Saatnya sang ketua beraksi!"
+      },
+      {
+        "title": "Penggunaan Kombo 1",
+        "text": "Celah pertahanannya terlihat!"
+      },
+      {
+        "title": "Penggunaan Kombo 2",
+        "text": "Jangan sampai meleset!"
+      },
+      {
+        "title": "Penuntas 1",
+        "text": "Kau terbuka lebar!"
+      },
+      {
+        "title": "Penuntas 2",
+        "text": "Kena kau! Ha!"
+      },
+      {
+        "title": "Ultimate 1",
+        "text": "Kau sudah masuk bidikan—"
+      },
+      {
+        "title": "Ultimate 2",
+        "text": "Yang ini namanya—Berhenti Sekarang Juga!"
+      },
+      {
+        "title": "Ultimate 3",
+        "text": "Lenyap bersama ombak!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

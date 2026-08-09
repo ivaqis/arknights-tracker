@@ -123,7 +123,329 @@
         "name": "Fesyen",
         "description": "Fesyen: Kalap Belanja Perhiasan\nYang membuatnya puas bukanlah kemilau perhiasannya, tapi kegiatan berbelanjanya. Dan, dia berniat memanjakan diri sepenuhnya untuk perjalanan ini."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Persiapan Operasi 1",
+        "text": "Wah, wah, Endmin, sepertinya takdir menuntunmu langsung kepadaku."
+      },
+      {
+        "title": "Persiapan Operasi 2",
+        "text": "Ah-ah, kalau berkedip, mungkin saja aku akan hilang dari pandanganmu."
+      },
+      {
+        "title": "Menambahkan ke Tim 1",
+        "text": "Oh, rupanya kau percaya kepadaku sampai-sampai rela menghabiskan uang sebanyak itu? Aku merasa tersanjung."
+      },
+      {
+        "title": "Menambahkan ke Tim 2",
+        "text": "Bisa maju sedikit lagi? Aku tak suka jauh-jauhan begini."
+      },
+      {
+        "title": "Berganti Senjata",
+        "text": "Di keluargaku, senjata kami bisa dibilang adalah bagian dari kami. Kebetulan saja senjataku membuatku sedikit lebih tinggi!"
+      },
+      {
+        "title": "Berganti Gear",
+        "text": "Perjalanan yang hebat bukan ditentukan oleh tujuannya semata, tapi oleh sepatu yang kaupakai. Makanya, untuk urusan peralatan, aku tak pernah pelit."
+      },
+      {
+        "title": "Aktivasi Matriks Kemampuan",
+        "text": "Tak kusangka ternyata aku sudah bepergian sejauh ini! Kampung halaman dan hari-hariku di sana kini terasa jauh sekali."
+      },
+      {
+        "title": "Menonton Rekaman Pertarungan",
+        "text": "Apa orang-orang lain akan lihat pertarungan ini? Mungkin saja ada yang mengenali tombakku. Jangan sampai mereka mengenaliku ...."
+      },
+      {
+        "title": "Promosi Operator 1",
+        "text": "Tak usah khawatir. Percayalah, aku ini pro."
+      },
+      {
+        "title": "Promosi Operator 2",
+        "text": "Ha! Sudah kuduga pada akhirnya kau akan merasa seperti itu! Nah, apa tugas berikutnya untukku?"
+      },
+      {
+        "title": "Promosi Operator 3",
+        "text": "Karena ini memang masuk akal dari segi profesional dan personal, aku sih tak keberatan kalau kita lebih akrab lagi, iya ‘kan? Aih, jangan malu begitu, dong! Aku paham maksudmu, kok!"
+      },
+      {
+        "title": "Promosi Operator 4",
+        "text": "Seluruh masa kecilku kuisi dengan berkelahi agar bisa mengungguli saudara-saudaraku, jadi aku memang harus selalu berusaha agar lebih unggul. Tapi, ini yang penting, Endmin—berjanjilah, kau akan selalu mengingatku lebih dulu, ya?"
+      },
+      {
+        "title": "Operator Siap Bertugas",
+        "text": "Wah, wah, coba lihat siapa ini—Endministrator, sang legenda. Sepanjang jalan ke sini, kudengar bisik-bisik orang tentangmu. Aku penasaran mana yang paling akurat. Karena kau belum begitu mengenalku, aku punya tawaran: akan kuceritakan suatu rahasia, tapi sebagai gantinya, kau juga harus ceritakan sedikit tentang dirimu. Bagaimana?"
+      },
+      {
+        "title": "Siaga 1",
+        "text": "Kita mau ke mana?"
+      },
+      {
+        "title": "Siaga 2",
+        "text": "Apa aku terlihat oke dari sudut ini?"
+      },
+      {
+        "title": "Menugaskan ke Fasilitas",
+        "text": "Saatnya berangkat, jangan buang-buang waktu!"
+      },
+      {
+        "title": "Menyapa 1",
+        "text": "Hai, Endmin! Apa kabar?"
+      },
+      {
+        "title": "Menyapa 2",
+        "text": "Endmin, kawanku! Senang melihatmu! Kau tak berniat menghindariku, ‘kan?"
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 1",
+        "text": "Hai, Endmin, senang bertemu denganmu lagi. Yak, kau tetap kelihatan keren—sama seperti lima menit yang lalu, ya?"
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 2",
+        "text": "Harus kuakui, kau benar-benar sepenuh hati merakit Dijiang. Luar biasa—baru saja terbang sebentar, pesawat ini sudah membawa kita melintasi jarak yang dulu butuh bertahun-tahun untuk kutempuh."
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 3",
+        "text": "Ada apa di mukamu, tuh? Eh-eh, sebelah satunya .... Haha, aku cuma bercanda. Jarang sekali bisa melihatmu malu-malu begitu!"
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 4",
+        "text": "Tahu tidak, dari Anjungan Komando ini, Talos-II sungguh terlihat seperti bola raksasa. Artinya, ke mana pun kita pergi, kita akan selalu berputar hingga akhirnya bertemu kembali."
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 5",
+        "text": "Aku mau bertualang lagi! Butuh sesuatu? Cepat bilang. Kalau tidak, kau harus tunggu sampai kesempatan berikutnya!"
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 6",
+        "text": "Masih segar setelah nonton film horor semalam? Ckck, sepertinya lain kali aku harus pilih film yang lebih seram. Tenang saja, kau akan kuseret ikut nonton lagi!"
+      },
+      {
+        "title": "Menawarkan Hadiah",
+        "text": "Aku harus bersusah payah demi membawakan benda ini untukmu. Jadi ingat sesuatu, tidak?"
+      },
+      {
+        "title": "Menerima Hadiah",
+        "text": "Gadis cantik sepertiku tentu saja dapat banyak hadiah, tapi hadiah darimu ini ... istimewa."
+      },
+      {
+        "title": "Dialog Kepercayaan 1",
+        "text": "Orang-orang kadang memang sulit dipahami. Dulu, aku tak perlu berpikir terlalu keras. Tugasku sekadar bekerja dari A ke B. Tapi, saat tak sengaja terseret dalam masalah itu, situasi jadi .... *Berdesah* Kapan-kapan saja kuceritakan selengkapnya, ya?"
+      },
+      {
+        "title": "Dialog Kepercayaan 2",
+        "text": "Dibandingkan sekarang, gaji dari pekerjaan lamaku setara gaji anak raja! *Tertawa kecil* Keluargaku tak pernah mau terima bayaran di bawah standar. Aku yakin kau pasti tahu apa yang menutupi selisih itu. Hanya saja ... kau terlalu malu untuk mengakuinya."
+      },
+      {
+        "title": "Dialog Kepercayaan 3",
+        "text": "Aku mengembara dari Sentrapolis, bertahan melawan dinginnya wilayah perbatasan lama, menghabiskan malam-malam terang di gubuk Hannabit Circuit, memandangi kapal udara Seš’qamam melayang di langit, dan mendengarkan suara hujan yang tak ada habisnya di dekat benteng Oathkeeper. Dan dalam itu semua, Endmin, namamu bergaung."
+      },
+      {
+        "title": "Dialog Kepercayaan 4",
+        "text": "Panggil saja aku Lamp. Avywenna sebenarnya nama keluargaku. Eh, ini sungguhan, jadi jangan tertawa. Cukup kita berdua saja yang tahu, ya? Aku tak mau kau jadi incaran orang-orang jahat. Kecuali .... Oh? Kau siap melindungiku?"
+      },
+      {
+        "title": "Dialog Kepercayaan 5",
+        "text": "Endmin, Talos-II ini luas. Berapa banyak tempat yang sudah kaukunjungi? Oh, baiklah ... kalau begitu, berapa banyak yang masih kauingat? Aku tak sabar menunggumu ingat semuanya. Makin banyak kenangan yang saling kita ceritakan, makin baik, ‘kan?"
+      },
+      {
+        "title": "Obrolan 1",
+        "text": "Keluargaku orang Sentrapolis, dan pekerjaan sebagai Kurir sudah jadi panggilan hidup kami sejak zaman leluhur kami. Nah, keluargamu sendiri seperti apa, Endmin?"
+      },
+      {
+        "title": "Obrolan 2",
+        "text": "Ta-da! Ini tempat istirahat kecilku. Aku memang jarang menempatinya, tapi aku ingin tempat ini selalu lembut dan rapi. Orang yang sering bepergian sepertiku pun tetap butuh tempat untuk tidur, ‘kan?"
+      },
+      {
+        "title": "Obrolan 3",
+        "text": "Kurir harus mengantarkan banyak rahasia dengan aman, dan setiap kiriman itu mahal. Tapi, ada satu hal yang lebih mahal daripada jasa pengiriman itu sendiri, yaitu ... tugasku untuk menjaga rahasia-rahasia itu."
+      },
+      {
+        "title": "Obrolan 4",
+        "text": "Tak ada orang yang suka penolakan ... jadi, aku lebih pilih membicarakannya baik-baik daripada harus adu otot. Tapi, sekadar kutekankan saja, aku tak suka ditolak."
+      },
+      {
+        "title": "Obrolan 5",
+        "text": "Kau masih ingat si tua Laine, ‘kan? Pria galak itu sama sekali tak pernah tersenyum kepadaku. Tapi, kudengar dia pensiunan yang dihormati, dan saat dia pensiun, orang-orang menangis habis-habisan. Hmph, dia bahkan menyebutku “si pembuat onar” sebelum menyuruhku ke sini. Yah, kalau aku memang begitu, setidaknya aku pembuat onar yang mahir!"
+      },
+      {
+        "title": "Topik: Endfield",
+        "text": "Selain Alloycarrot, tempatku tumbuh besar, tempat yang paling lama kudiami sekarang adalah Endfield. Sepertinya aku sudah mulai terbiasa menetap."
+      },
+      {
+        "title": "Topik: Bisnis Keluarga",
+        "text": "Dulu, semasa Gerbang Kosmis masih terbuka, leluhurku bekerja sebagai sopir truk. Rig-rig raksasa itu dulu tampak seperti jalur logam berkilauan yang membentang sepanjang cakrawala. Setelah itu, nenek buyutku, nenekku, dan ibuku bekerja keras di Sloan Security di Sentrapolis! Mereka kecewa berat saat aku memutuskan berhenti .... Ehem. Asal tahu saja, aku tidak begitu saja memutuskan untuk ... mendatangimu ke sini, Endmin."
+      },
+      {
+        "title": "Topik: Fesyen",
+        "text": "Pakaianku? Intinya adalah gaya dan kepraktisan! Ingat ini saat kau bertugas di lapangan: selalu siagakan perlengkapanmu, dan jangan pernah lengah."
+      },
+      {
+        "title": "Topik: Alloycarrot",
+        "text": "Astaga, kau belum pernah ke Alloycarrot? Yah, aku tak suka pamer, sih, tapi aku sendiri sudah bepergian ke banyak tempat di Talos-II, dan tak ada yang bisa menandingi terowongan tambang kami. Anak-anak tumbuh di lingkungan yang akrab dan penuh obrolan hangat. Kami selalu bilang: yang bisa menandingi kuatnya bor besar hanyalah persahabatan kami!"
+      },
+      {
+        "title": "Sumber Daya/Barang Koleksi Terdeteksi 1",
+        "text": "Perangkatku bereaksi. Mungkin ada sesuatu di sekitar sini."
+      },
+      {
+        "title": "Sumber Daya/Barang Koleksi Terdeteksi 2",
+        "text": "Ikuti aku! Terakhir kali ke sini, aku meninggalkan penanda jejak!"
+      },
+      {
+        "title": "Area yang Belum Dijelajahi Terdeteksi",
+        "text": "Oh, tak bisa kupercaya, ternyata ada tempat yang belum pernah kudatangi!"
+      },
+      {
+        "title": "Musuh Kuat Ditemukan",
+        "text": "Sepertinya dia sama sekali tak mau berunding."
+      },
+      {
+        "title": "Penambangan 1",
+        "text": "Saksikanlah keahlian warisan para leluhurku dari Rim Billiton!"
+      },
+      {
+        "title": "Penambangan 2",
+        "text": "Orang Rim Billiton selalu saling melindungi!"
+      },
+      {
+        "title": "Membuka Kerat",
+        "text": "Psssst! Biasanya, temuan sebagus ini kami kubur dulu supaya tak ditemukan orang lain ...."
+      },
+      {
+        "title": "Mendapatkan Aurylene",
+        "text": "Aurylene?! Kok kau tahu aku suka benda-benda yang berkilau?"
+      },
+      {
+        "title": "Menyingkirkan Hawar",
+        "text": "Jujur saja, menurutku ini justru cara untuk melindungi diriku dari orang-orang tertentu."
+      },
+      {
+        "title": "Istirahat",
+        "text": "Aihh, suasana hangat dan nyaman ini benar-benar sempurna. Setelah harus berkotor-kotor dan berbasah-basahan, tempat bersih dan hangat seperti ini terasa bagaikan surga."
+      },
+      {
+        "title": "Penggunaan Taktis 1",
+        "text": "Untung aku bawa ini."
+      },
+      {
+        "title": "Penggunaan Taktis 2",
+        "text": "Kadang aku pun butuh dirawat."
+      },
+      {
+        "title": "Peringatan Bahaya",
+        "text": "Cari tempat aman!"
+      },
+      {
+        "title": "Cedera",
+        "text": "Jangan khawatir, aku tak apa."
+      },
+      {
+        "title": "0 HP",
+        "text": "Biarkan aku pulang ... untuk terakhir kalinya."
+      },
+      {
+        "title": "Penyemangat Tim 1",
+        "text": "Bagus! Kau tak mau ambil alih pekerjaanku, nih?"
+      },
+      {
+        "title": "Penyemangat Tim 2",
+        "text": "Wah, kerja sama kita sudah seperti saudara saja, nih!"
+      },
+      {
+        "title": "Respons Penyemangat 1",
+        "text": "Yap, memang sekeren itulah aku."
+      },
+      {
+        "title": "Respons Penyemangat 2",
+        "text": "Aku jadi merasa seperti di rumah sendiri."
+      },
+      {
+        "title": "Mulai Pertarungan 1",
+        "text": "Langkah pertama memang selalu paling sulit."
+      },
+      {
+        "title": "Mulai Pertarungan 2",
+        "text": "Ayo tunjukkan kemampuan kita!"
+      },
+      {
+        "title": "Menang Pertarungan 1",
+        "text": "Ngomong saja memang gampang, Bung. Kita juga harus berusaha keras."
+      },
+      {
+        "title": "Menang Pertarungan 2",
+        "text": "Tenang saja, ini memang sudah tugas kami."
+      },
+      {
+        "title": "Menang Pertarungan 3",
+        "text": "Nah, begitu, pertahankan semangatnya!"
+      },
+      {
+        "title": "Menang Pertarungan 4",
+        "text": "Ada pepatah tua di kalangan Kurir: Agar jalanmu benar, jangan terpaku pada arah langkahmu, tapi perhatikanlah cakrawala."
+      },
+      {
+        "title": "Kalah Bertarung",
+        "text": "Kita simpan saja bayaran ini sampai kita bisa balas dendam."
+      },
+      {
+        "title": "Final Strike 1",
+        "text": "Jangan berkedip!"
+      },
+      {
+        "title": "Final Strike 2",
+        "text": "Ini dia!"
+      },
+      {
+        "title": "Skill Tarung 1",
+        "text": "Awas tersetrum!"
+      },
+      {
+        "title": "Skill Tarung 2",
+        "text": "Minggir."
+      },
+      {
+        "title": "Skill Tarung 3",
+        "text": "Mau lari ke mana, hah?"
+      },
+      {
+        "title": "Skill Kombo Siap 1",
+        "text": "Masih ada aku, lho!"
+      },
+      {
+        "title": "Skill Kombo Siap 2",
+        "text": "Kau benar-benar membuatku menunggu lama!"
+      },
+      {
+        "title": "Penggunaan Kombo 1",
+        "text": "Ikuti saja!"
+      },
+      {
+        "title": "Penggunaan Kombo 2",
+        "text": "Jangan hilang fokus."
+      },
+      {
+        "title": "Penuntas 1",
+        "text": "Titik lemahnya ketemu!"
+      },
+      {
+        "title": "Penuntas 2",
+        "text": "Kena kau."
+      },
+      {
+        "title": "Ultimate 1",
+        "text": "Aku tak suka main lembut."
+      },
+      {
+        "title": "Ultimate 2",
+        "text": "Ada kabar buruk untuk kalian!"
+      },
+      {
+        "title": "Ultimate 3",
+        "text": "Kau bakal gemetaran gara-gara seranganku!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

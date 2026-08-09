@@ -119,7 +119,333 @@
         "name": "Sport",
         "description": "Sport: Kampfkunst-Freundschaft \n„Danke für die Lektion. Kreuzen wir unsere Fäuste ohne Reue.“ „Gut gesagt. Halte dich nicht zurück. Lass das Schicksal darüber entscheiden, wie das Wasser fließt.“"
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Einsatzvorbereitung 1",
+        "text": "Du führst diesen Einsatz selbst an? Nicht übel."
+      },
+      {
+        "title": "Einsatzvorbereitung 2",
+        "text": "Bin für jeden Kampf zu haben."
+      },
+      {
+        "title": "Wird zum Team hinzugefügt 1",
+        "text": "Ich bin bereit."
+      },
+      {
+        "title": "Wird zum Team hinzugefügt 2",
+        "text": "Zeig mir, wie du die Dinge angehst."
+      },
+      {
+        "title": "Waffe wird gewechselt",
+        "text": "Ich bin eine Waffe. Ich hinterlasse „Souvenirs“ an meinen Gegnern – Prellungen, die sie nicht mehr vergessen."
+      },
+      {
+        "title": "Ausrüstung wird gewechselt",
+        "text": "Sind die zu meiner Sicherheit oder für meine Gegner?"
+      },
+      {
+        "title": "Fähigkeitsmatrix-Aktivierung",
+        "text": "Hab ein paar neue Tricks gelernt. Wann darf ich sie einsetzen?"
+      },
+      {
+        "title": "Kampfaufzeichnungen ansehen",
+        "text": "HA! Das nenne ich einen Kampf! Gehören die zu unserer Crew? Lust auf ein bisschen Training?"
+      },
+      {
+        "title": "Operator-Beförderung 1",
+        "text": "Um ehrlich zu sein, schlägst du dich genauso gut. Anerkennung beruht auf Gegenseitigkeit. Also gut, ich folge dir."
+      },
+      {
+        "title": "Operator-Beförderung 2",
+        "text": "Ha, das ist neu. In Wuling befördere ich für gewöhnlich das Wachpersonal. Ist lange her, dass ich mal einstecken musste."
+      },
+      {
+        "title": "Operator-Beförderung 3",
+        "text": "Eine Crew anzuführen, ist was ganz anderes, als allein loszuziehen. Du weißt doch, was ich meine, oder? Man muss Leute verwalten und Missionen planen. Ist einfach nicht so sauber und glatt, wie selbst jemandem den Hintern zu versohlen."
+      },
+      {
+        "title": "Operator-Beförderung 4",
+        "text": "Ich frage mich ständig, wie du und der Boss auf diese ausgefallenen Worte kommt. Der einzige Trick, den ich kenne, ist, anderen auf die Schulter zu klopfen. Was? Kannst du mir auch auf die Schulter klopfen? Tsk, oh Mann, es laut auszusprechen, nimmt dem Ganzen doch den Sinn!"
+      },
+      {
+        "title": "Operatorin meldet sich zum Dienst",
+        "text": "Genug geredet. Diesmal bringe ich den Schlamassel für dich in Ordnung. Aber ich gehe die Dinge direkt an. Wenn was kaputtgeht, übernimmt Endfield die Rechnung."
+      },
+      {
+        "title": "Warten 1",
+        "text": "Zeit für ’ne ordentliche Schlägerei!"
+      },
+      {
+        "title": "Warten 2",
+        "text": "Wir sind ein kampferprobtes Team, richtig?"
+      },
+      {
+        "title": "Zuweisung zur Anlage",
+        "text": "Na schön. Aber wenn was Zerbrechliches kaputtgeht, gib nicht mir die Schuld."
+      },
+      {
+        "title": "Gruß 1",
+        "text": "Hey, du bist hier!"
+      },
+      {
+        "title": "Gruß 2",
+        "text": "Hast du Zeit? Haben lange nicht mehr zusammen trainiert."
+      },
+      {
+        "title": "Dijiang-Geplauder 1",
+        "text": "Ich bin gerade erst hier angekommen und habe schon drei verdächtige Individuen gesehen. Ach? Deine Freunde? Dein Bekanntenkreis ist ziemlich speziell."
+      },
+      {
+        "title": "Dijiang-Geplauder 2",
+        "text": "Warum bin ich hier? Jetzt, da in Wuling Ruhe eingekehrt ist, will ich ein paar Freunde besuchen – Lifeng, Chen, Meister Pan und das kleine Samtpfötchen … Aber allein dich zu sehen, macht die Reise schon lohnenswert."
+      },
+      {
+        "title": "Dijiang-Geplauder 3",
+        "text": "Du bist zu spät. Die Souvenirs sind weg. Ach komm, was sollen sie sonst sein? Frisch frittierte süße Reiskuchen, natürlich."
+      },
+      {
+        "title": "Dijiang-Geplauder 4",
+        "text": "Verglichen mit den Straßen und Hainen Wulings ist die Dijiang viel zu ruhig. Das fühlt sich unnatürlich an. Ach? Hab ich dir nie gesagt, wie sehr ich ruhige Orte hasse? Nun, ich finde die ruhigsten Orte am lautesten. Denn, wenn alles still ist, fängt die Stimme in deinem Kopf an zu reden und hört nicht mehr auf."
+      },
+      {
+        "title": "Dijiang-Geplauder 5",
+        "text": "Nichts für ungut, aber ich fühle mich hier nicht wohl. Ich will einen Himmel und echtes Wasser – nicht diese kalten Wände, die einen einengen. Was? Der Trainingsraum ist gratis? Warum hast du das nicht früher gesagt?! Den muss ich sofort buchen!"
+      },
+      {
+        "title": "Dijiang-Geplauder 6",
+        "text": "Als ich mit dem Training begann, starrte ich in die Nacht und schwor mir selbst, dass ich so viele Gegner besiegen würde wie Sterne am Himmel stehen. Vielleicht war die Dijiang einer dieser Sterne. Und wenn ich daran denke, dass ich mir tatsächlich den Weg hierher „erkämpft“ habe. Schon irgendwie überraschend."
+      },
+      {
+        "title": "Geschenke anbieten",
+        "text": "Hier, für dich. Hab ich selbst gemacht … Lach nicht. Wenn sonst jemand davon erfährt, bist du erledigt."
+      },
+      {
+        "title": "Geschenke annehmen",
+        "text": "Ach komm, die Phase des Schenkens ist doch längst vorbei … Moment mal. In welcher Phase unserer Freundschaft befinden wir uns eigentlich?"
+      },
+      {
+        "title": "Vertrauensgespräch 1",
+        "text": "Nichts bindet mich stärker an jemanden als ein Kampf. Nur die, die gewinnen, verlieren und einstecken können, sind zuverlässig. Du? … Hm. Ich denke, du bist weit mehr als nur „zuverlässig“."
+      },
+      {
+        "title": "Vertrauensgespräch 2",
+        "text": "Als der Boss mich aufnahm, konnte ich die Vielzahl verschiedener Snacks gar nicht fassen … Ich hatte vorher noch nie so leckere süße Reiskuchen gegessen. Also hab ich mich drei Monate lang vollgestopft, bis ich keine Süßigkeiten mehr sehen konnte. Hah, selbst Blut riecht süß. Und ich hasse es, wenn ich in Wuling Blut rieche."
+      },
+      {
+        "title": "Vertrauensgespräch 3",
+        "text": "Wer mir das Kämpfen beigebracht hat …? Die Meisterin hatte eine harte Schale, aber einen überaus weichen Kern. Hab’s nicht geschafft, ihre Kranichform nachzuahmen, und sie lag mir jahrelang deshalb in den Ohren. Der Alte Meister sah furchterregend aus, aber er war ganz sanftmütig. Er hat sich über alles Gedanken gemacht – was ich gegessen, getragen und verwendet habe. Und was meinen Großmeister angeht … mit dem hab ich mich nie verstanden. Alle sagen, wir wären uns zu ähnlich. Wir beide haben immer alles mit unseren Fäusten geregelt."
+      },
+      {
+        "title": "Vertrauensgespräch 4",
+        "text": "Als ich Schülerin wurde, haben mir meine Meister meine Zukunft prophezeit. Sie sagten, ich würde nur mit meinen „Widersachern“ Bindungen eingehen. Dass ich gegen sie kämpfen, mich mit ihnen anfreunden und dann jeder seines Weges gehen würde. Der Boss. Kleines Samtpfötchen. Selbst meine Meister. Alle wurden früher oder später meine Widersacher. Aber bei dir ist das anders … Wir haben nie gegeneinander gekämpft. Wir haben bisher eher Rücken an Rücken und Seite an Seite gekämpft. Ich hoffe … dabei bleibt es auch vorerst."
+      },
+      {
+        "title": "Vertrauensgespräch 5",
+        "text": "In meiner Zeit bei Endfield ist mir etwas klargeworden. Der Xiranit-Damm, Wuling City und die Qingbo-Palisade … Sie sind so klein und auf der Karte kaum zu erkennen. Und doch rannte ich in dieser winzigen Welt immer wieder im Kreis. Meine Meister hatten recht. Im Leben geht es darum, sich durch unzählige Berge und Hindernisse zu kämpfen. Und wenn ich an deiner Seite bleibe, wartet immer ein neuer Kampf, richtig?"
+      },
+      {
+        "title": "Geplauder 1",
+        "text": "Diese Fingerhandschuhe sehen gut aus, oder? Willst du sie anprobieren? Keine Sorge. So schwer sind sie nicht. Die wurden eigens für mich maßangefertigt, als ich Hauptfrau wurde. Mit der ersten Charge an Xiranit, die in diesem Jahr produziert wurde. Die Handwerker der Tianshi haben wirklich was drauf. Diese Fingerhandschuhe hören auf meinen „Willen“ und teilen sogar meinen Zorn. Hab ich dir je gezeigt, wie sie funktionieren?"
+      },
+      {
+        "title": "Geplauder 2",
+        "text": "Wer mit dem Kampftraining beginnt, muss als Erstes den Bambus beherrschen. Die Art, die überall außerhalb der Stadt wächst. Für die stille Kampfhaltung muss man wie der Winterbambus sein – tief im Boden verwurzelt und unnachgiebig. Mach bis zum Frühling so weiter, um ein starkes Chi aufzubauen, das in dir ansteigt, und setze es dann frei, um einen Wachstumsschub auszulösen. Das ist der Weg des Bambus."
+      },
+      {
+        "title": "Geplauder 3",
+        "text": "Zu Beginn meines Trainings sagte mir der Großmeister, dass ich gegen den Bambus kämpfen soll. Ich schlug so oft und so fest dagegen, bis meine Knöchel bluteten. Dann sagte er: „Fürchte nicht den Bambus. Lehre den Bambus das Fürchten.“Also biss ich die Zähne zusammen und machte weiter. Ich weiß nicht mehr, wie lange es dauerte, aber eines Tages zuckten meine Fäuste nicht mehr. Und dann kämpfte ich gegen Stein, Ferrium und die Aggeloi … Man muss seinen Mut zusammennehmen und zum Schlag ausholen. Nur dann hat man eine Chance auf den Sieg."
+      },
+      {
+        "title": "Geplauder 4",
+        "text": "Warum ich so viel Kalligrafie in meinem Zimmer habe? Ein bisschen kulturelle Beschäftigung schadet doch nicht, oder …? Meine Schrift sieht gut aus? Hm, echt? Der Boss hat’s mir beigebracht. Meinte, es würde helfen, den Kopf frei zu bekommen und sich zu konzentrieren. Ich schreibe ein paar Worte, wenn ich nicht gerade Verbrecher jage. Ehrlich gesagt hat es mich nie so richtig gepackt. Ein Pinselstrich ist im Grunde nichts anderes als ein Schwerthieb."
+      },
+      {
+        "title": "Geplauder 5",
+        "text": "Die Palisadeure ziehen es vor, mit den Fäusten zu kämpfen. Sie blocken fast nie und holen lieber direkt zum Schlag aus. Bei meiner Ankunft in Wuling fand ich heraus, dass die Wulinger Klingen bevorzugen – wegen der größeren Reichweite, der schärferen Schneide und der eleganten Präzision. Ich habe versucht, sie zu meistern, aber der Boss meinte, meine Schwertkunst sähe eigenartig aus … so, als würde ich versuchen, mit einer Weide zu ringen."
+      },
+      {
+        "title": "Thema: Name",
+        "text": "„Mi Fu“ klingt seltsam? Nun ja, das war nicht immer mein Name. Ruan Yi nannte mich schon „Verräterin“, seit ich bei Wuling angefangen hatte. Und dieses kleine Samtpfötchen … nennt mich ständig „Verrückte“. Pff, als ob mich das interessieren würde … Tatsächlich bekam ich den Namen „Mi Fu“, als ich in einem Krankenzimmer lag. Der Boss ließ mich dort über einen Monat lang, aber ich sagte kein Wort. Eines Tages las sie neben meinem Bett und fragte plötzlich nach meinem Namen. Ich zeigte einfach auf zwei beliebige Schriftzeichen in ihrem Buch. Sie sah sie sich an und sagte: „Perfekt. Dann also Mi Fu.“ Hm. Der Name klingt doch gut."
+      },
+      {
+        "title": "Thema: Zhuang Fangyi",
+        "text": "Der Boss … ist einfach gegangen? Hmpf. Ehrlich gesagt glaube ich, dass sie sich bei dir eher zu Hause fühlt. Du hast ein paar richtig große Projekte. Groß genug, dass sie sich darin entfalten kann. Sie hat zwar Wuling gewählt, aber eigentlich ist der Ort etwas zu klein für sie. Weißt du, was ich meine? Du solltest gut auf sie achtgeben! Sollte ihr etwas zustoßen, wirst du dich nicht bloß um mich sorgen müssen. Dann bekommst du es mit ganz Wuling zu tun."
+      },
+      {
+        "title": "Thema: Wuling",
+        "text": "Ich weiß nicht, wann aus mir eine echte Wulingerin wurde. Während der Boss mich monatelang im Krankenzimmer festhielt, sah ich ihnen dabei zu, wie sie inmitten der schlammigen Wildnis ihre Zukunft planten. Irgendetwas veränderte sich. Sie behandelten mich wie eine von ihnen und brachten mir immer wieder Essen. Ich fing an, ihnen zu helfen, weil ich es hasse, jemandem etwas schuldig zu sein. Dann entdeckte ich meinen Namen auf der Liste der Bauarbeiter, als sie den ersten Spatenstich für die Fangxing-Straße machten. Da erinnerte ich mich an ihre Worte: „Es wäre wunderbar, wenn deine Fäuste die Leute beschützen würden.“"
+      },
+      {
+        "title": "Thema: Geheimer Gang zur Qingbo-Palisade",
+        "text": "So ein Zufall. Du warst bei deinem ersten Besuch tatsächlich beim geheimen Gang. Ich war schon seit zehn Jahren nicht mehr dort. Nachdem ich fortgegangen war, hat sich Tangtang immer wieder durch den Gang geschlichen, also habe ich ihn versiegelt. Sie hätte nicht kommen sollen, und ich hätte nicht zurückgehen sollen. Ich wusste, dass sie … Na ja, ich hatte nicht erwartet, dass sie so durchdreht und mein Gesicht in diesem Graffiti mit diesem riesigen Kreuz bemalt … Blöde Miez. Ich werde das mit ihr regeln!"
+      },
+      {
+        "title": "Thema: Tangtang",
+        "text": "Tangtang … Ich habe noch eine Rechnung mit dem kleinen Samtpfötchen offen. Hat sie dir Probleme gemacht? Moment mal, hat sie das wirklich? Na so was … Keine Sorge, ich kümmere mich darum. Sie hängt viel zu sehr an dir. Wenn du sie anschreien würdest, würde sie wahrscheinlich in eine Depression verfallen. Das wäre echt nicht schön."
+      },
+      {
+        "title": "Ressource/Sammelobjekt entdeckt 1",
+        "text": "Da drüben ist was. Aber denk dran: Die Vorschriften der Wache ermutigen dazu, verlorenes Eigentum zurückzugeben."
+      },
+      {
+        "title": "Ressource/Sammelobjekt entdeckt 2",
+        "text": "Wertgegenstände gesichtet. Die können wir wohl als herrenloses Eigentum behandeln."
+      },
+      {
+        "title": "Unerforschter Bereich entdeckt",
+        "text": "Eine neue Zone. Sehen wir uns lieber ein bisschen um, um sicherzustellen, dass hier kein Ärger wartet."
+      },
+      {
+        "title": "Starker Gegner entdeckt",
+        "text": "Ha, ich sehe einen würdigen Gegner."
+      },
+      {
+        "title": "Abbau 1",
+        "text": "Zerschlagenes Erz sollte trotzdem funktionieren, oder?"
+      },
+      {
+        "title": "Abbau 2",
+        "text": "Ich übernehme das. Zwei Treffer, und die Sache ist erledigt."
+      },
+      {
+        "title": "Kiste öffnen",
+        "text": "Ein solider Fund. Nur gut, dass wir ihn nicht demoliert haben."
+      },
+      {
+        "title": "Aurylen erhalten",
+        "text": "Früher hielt ich die für Geister. Erst in Wuling habe ich erfahren, dass man sie Aurylene nennt."
+      },
+      {
+        "title": "Eliminierung der Verderbnis",
+        "text": "Ha. Dieses Zeug kann mich nicht aufhalten."
+      },
+      {
+        "title": "Ausruhen",
+        "text": "Komm schon, ich bin noch fit … Gut, wenn du das sagst."
+      },
+      {
+        "title": "Taktische Nutzung 1",
+        "text": "Wehe, du stolperst hier!"
+      },
+      {
+        "title": "Taktische Nutzung 2",
+        "text": "Wieder im Kampfgeschehen."
+      },
+      {
+        "title": "Gefahrenwarnung",
+        "text": "Bleib ein Stück weg!"
+      },
+      {
+        "title": "Verletzt",
+        "text": "He. So sieht ein echter Kampf aus."
+      },
+      {
+        "title": "0 LP",
+        "text": "Unsere Fäuste … kennen keine Reue …"
+      },
+      {
+        "title": "Teammotivation 1",
+        "text": "Glatt und sauber. Beeindruckend!"
+      },
+      {
+        "title": "Teammotivation 2",
+        "text": "Gute Teamarbeit!"
+      },
+      {
+        "title": "Motivationsreaktion 1",
+        "text": "Das ist nur mein Job."
+      },
+      {
+        "title": "Motivationsreaktion 2",
+        "text": "Danke, Team."
+      },
+      {
+        "title": "Kampf beginnt 1",
+        "text": "Zeit, zu kämpfen!"
+      },
+      {
+        "title": "Kampf beginnt 2",
+        "text": "Zeit, denen eine ordentliche Lektion zu erteilen."
+      },
+      {
+        "title": "Kampfsieg 1",
+        "text": "Das wird den Boss freuen."
+      },
+      {
+        "title": "Kampfsieg 2",
+        "text": "Fall gelöst."
+      },
+      {
+        "title": "Kampfsieg 3",
+        "text": "Du kämpfst auch ziemlich gut!"
+      },
+      {
+        "title": "Kampfsieg 4",
+        "text": "Team … ich übernehme den schwierigen Teil. Übertreibt’s mal nicht."
+      },
+      {
+        "title": "Niederlage im Kampf",
+        "text": "Gib niemals auf, solange du noch stehst."
+      },
+      {
+        "title": "Abschlussangriff 1",
+        "text": "Das war’s!"
+      },
+      {
+        "title": "Abschlussangriff 2",
+        "text": "Oh yeah!"
+      },
+      {
+        "title": "Kampffertigkeit 1",
+        "text": "Es gibt kein Entkommen!"
+      },
+      {
+        "title": "Kampffertigkeit 2",
+        "text": "Nimm das!"
+      },
+      {
+        "title": "Kampffertigkeit 3",
+        "text": "Jetzt bist du dran!"
+      },
+      {
+        "title": "Kombofertigkeit bereit 1",
+        "text": "Fäuste hoch!"
+      },
+      {
+        "title": "Kombofertigkeit bereit 2",
+        "text": "Jetzt geht’s los!"
+      },
+      {
+        "title": "Kombo wirken 1",
+        "text": "Gib auf!"
+      },
+      {
+        "title": "Kombo wirken 2",
+        "text": "Zähne zusammenbeißen!"
+      },
+      {
+        "title": "Wuchtschlag 1",
+        "text": "Widerstand ist zwecklos!"
+      },
+      {
+        "title": "Wuchtschlag 2",
+        "text": "Ende der Fahnenstange!"
+      },
+      {
+        "title": "Ultimative Fertigkeit 1",
+        "text": "Ich zeig’s dir auf die harte Tour!"
+      },
+      {
+        "title": "Ultimative Fertigkeit 2",
+        "text": "Du verdienst … eine Zelle!"
+      },
+      {
+        "title": "Ultimative Fertigkeit 3",
+        "text": "Ich habe dich höflich gefragt!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

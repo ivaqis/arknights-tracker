@@ -118,7 +118,325 @@
         "name": "Creatividad",
         "description": "Creatividad: Modificación de armas\nModificar munición grabada puede ser un trabajo aburrido, pero a él le encanta encontrar gente con quien probarla."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Preparación de la operación 1",
+        "text": "Estás al mando."
+      },
+      {
+        "title": "Preparación de la operación 2",
+        "text": "¿Ya vamos en marcha?"
+      },
+      {
+        "title": "Añadir al equipo 1",
+        "text": "¿Me necesitas en el equipo? Claro. Solo asegúrate de que los demás no se queden atrás."
+      },
+      {
+        "title": "Añadir al equipo 2",
+        "text": "¿Una asignación en equipo...? Entendido. Haré lo que sea necesario."
+      },
+      {
+        "title": "Cambiar de arma",
+        "text": "Muy bien balanceado. Grazie."
+      },
+      {
+        "title": "Cambiar de equipamiento",
+        "text": "Armada hasta los dientes... Una decisión muy sabia."
+      },
+      {
+        "title": "Activación de la matriz de habilidades",
+        "text": "Las habilidades que se dominan de verdad se guardan para los momentos más críticos."
+      },
+      {
+        "title": "Viendo los registros de combate",
+        "text": "La Manada caza con un propósito. Solo servirá el camino más rápido a la victoria."
+      },
+      {
+        "title": "Ascenso de operador 1",
+        "text": "Gracias por la aprobación, Endmin. Entonces... ¿puedo omitir el informe de la misión por esta vez? ¿No...? De acuerdo."
+      },
+      {
+        "title": "Ascenso de operador 2",
+        "text": "Como podrás ver, Endmin... si me confías las tareas apropiadas, dejo que los resultados hablen por sí solos."
+      },
+      {
+        "title": "Ascenso de operador 3",
+        "text": "Cada lobo de La Manada obtiene su lugar tras un derramamiento de sangre. Cazas suficientes presas y asciendes. Endmin, ¿esto significa que apruebas mi cacería?"
+      },
+      {
+        "title": "Ascenso de operador 4",
+        "text": "Fui testigo de cómo era derribada La Manada y la devastación que trajo consigo. Por eso decidí buscar un nuevo camino para Rossi y los demás lobos... El destino nos unió, Endministrator. Es un honor recorrer este camino contigo."
+      },
+      {
+        "title": "Operador reportándose para el deber",
+        "text": "Catello Wulfgard Luppino, Equipo de Crisis de Endfield. Represento a La Manada. Dame cualquier trabajo como mercenario, y mientras nuestro contrato siga vigente, seré tus garras y colmillos."
+      },
+      {
+        "title": "En espera 1",
+        "text": "¿Tienes una nueva asignación?"
+      },
+      {
+        "title": "En espera 2",
+        "text": "Aquí estoy."
+      },
+      {
+        "title": "Asignando a una instalación",
+        "text": "¿Aquí también te falta gente?"
+      },
+      {
+        "title": "Saludo 1",
+        "text": "Endmin."
+      },
+      {
+        "title": "Saludo 2",
+        "text": "¿Necesitas que te acompañe, Endmin? Puedo hacerme un tiempo para ti."
+      },
+      {
+        "title": "Charla casual en la Dijiang 1",
+        "text": "No es fácil trabajar con los demás operadores. El camino de La Manada y mi naturaleza solitaria no son para todo el mundo. Pero si me quieres en la lista... me adaptaré para que funcione."
+      },
+      {
+        "title": "Charla casual en la Dijiang 2",
+        "text": "Me siento más a gusto en la frontera que a bordo de la Dijiang. Un lugar así de cómodo te vuelve débil. Pero a Rossi le encanta este lugar. La nave satisface su curiosidad."
+      },
+      {
+        "title": "Charla casual en la Dijiang 3",
+        "text": "Seré franco contigo. Nunca me interesó estudiar a los demás clanes Rompesuelos. Pasé suficiente tiempo en las tierras salvajes... y las habilidades de supervivencia simplemente se volvieron parte de mí. En La Manada, creemos que el mejor maestro es nuestro instinto de supervivencia. Es nuestra *única* creencia."
+      },
+      {
+        "title": "Charla casual en la Dijiang 4",
+        "text": "Los operadores de Endfield provienen de todos los rincones de Talos-II, y reconozco muchas caras... O mejor dicho... reconozco muchas amenazas. Aún confío en tu criterio, pero cuando la situación lo amerite, espero que confíes en mis instintos."
+      },
+      {
+        "title": "Charla casual en la Dijiang 5",
+        "text": "Revisar armas es un ritual para mí. En la naturaleza, si tus colmillos fallan, te conviertes en la presa. Lo mismo pasa con las armas descompuestas... Todas tus habilidades y entrenamiento no servirán de nada. Ni poder ni defensa... solo una muerte lenta. Ya pasé por eso de cachorro. Nunca olvidé la lección. No volveré a ser la presa."
+      },
+      {
+        "title": "Charla casual en la Dijiang 6",
+        "text": "Ha pasado mucho tiempo desde que visité a mi clan, o los lideré en una cacería. Soy mejor buscando nuevos territorios de caza que liderando ataques como el Alfarión."
+      },
+      {
+        "title": "Ofreciendo regalos",
+        "text": "¿Tienes un minuto, Endmin? Encontré algo interesante en mi última misión... y te lo traje a ti."
+      },
+      {
+        "title": "Aceptando regalos",
+        "text": "¿Para mí? Grazie. Le daré un buen uso."
+      },
+      {
+        "title": "Diálogo de confianza 1",
+        "text": "Ya trato a mis objetivos según los requisitos de Endfield. Si lo hiciera a la antigua... estarían “muy, muy” callados en cuanto les pusiera las manos encima."
+      },
+      {
+        "title": "Diálogo de confianza 2",
+        "text": "Creo que ya puedes darte cuenta de que... convertirme en el Alfarión de La Manada nunca fue mi objetivo. Puede que Rossi encaje mejor en ese rol. Tampoco sé si Endfield sea el lugar de descanso apropiado para Catello Wulfgard Luppino. La visión de los Rompesuelos no puede ser más diferente a la tuya. Sin embargo, trabajar con Endfield es mucho más agradable de lo que pensé, Endmin."
+      },
+      {
+        "title": "Diálogo de confianza 3",
+        "text": "¿Por qué sigo mirando al cielo? Bueno, es algo que disfruto. ¿Por qué te sorprendes? El cielo es una fuente gratuita de información. Te informa sobre el tiempo, la hora y tu orientación. Incluso puedes usarlo para predecir las acciones del enemigo. Todo cazador sigue las mismas reglas bajo el cielo. También podrías aprender algo de esto, Endmin."
+      },
+      {
+        "title": "Diálogo de confianza 4",
+        "text": "Mi identidad como Rompesuelos es el resultado de una mala decisión que tomaron mis antepasados. Traicionamos a la Franja de la Civilización para unirnos a los Señores rompesuelos, pero fracasamos en establecer el orden y la justicia con la que soñábamos. No puedo preguntarle a mis antepasados si se arrepienten de su decisión, pero nacer en una vida llena de conflicto y derramamiento de sangre en las tierras salvajes me enseñó todo lo necesario para sobrevivir. La Supervisora Perlica dijo que podíamos dejar atrás el estigma de los Rompesuelos al trabajar con Endfield... pero para mí, es lo que soy. *Suspira* ¿Eso te decepciona, Endmin?"
+      },
+      {
+        "title": "Diálogo de confianza 5",
+        "text": "La Manada se basa en una simple lógica: los débiles deben unirse para derrotar a los fuertes y sobrevivir a un mundo sin piedad. Cada código del clan y la mismísima identidad de los Rompesuelos se basa en ello. Pero ¿qué tiene Endfield? Una gran visión es una espada de doble filo. Mientras que La Manada siempre puede empezar otra cacería, Endfield no podía permitirse una sola derrota. Este mundo no tiene piedad, Endministrator. Pero al menos formo parte de tu cacería, y compartiré parte de tu carga."
+      },
+      {
+        "title": "Charla 1",
+        "text": "Sé que la fuerza no lo es todo, pero en Talos-II no se puede vivir sin ella."
+      },
+      {
+        "title": "Charla 2",
+        "text": "A Rossi le encanta coleccionar objetos complejos como estos. No sé para qué sirven, pero si son para ella... simplemente saldré a buscar más."
+      },
+      {
+        "title": "Charla 3",
+        "text": "El idealismo poco realista destruye más vidas de las que salva. La gente de las fronteras aprendió esa lección por las malas. Pero la verdadera tragedia es que algunas personas están destinadas a ser víctimas."
+      },
+      {
+        "title": "Charla 4",
+        "text": "Yo prefiero encargarme de los problemas por mi cuenta. No es que crea que puedo con todo... Solo espero quitarle un poco de carga de encima a alguien."
+      },
+      {
+        "title": "Charla 5",
+        "text": "Difícilmente se puede obligar a un lobo solitario a darle la espalda a su antigua manada... Eso no se discute. Pero algunos decidieron no regresar con el fin de sobrevivir... o por algo que consideran importante. No puedo simpatizar con ellos, y no pretendo interferir. Solamente respeto la determinación detrás de sus decisiones."
+      },
+      {
+        "title": "Tema: La Manada",
+        "text": "Incluso hasta el día de hoy, sigo buscando un futuro para La Manada... Puede que trabajar con Endfield no sea la mejor opción, pero creo que es un paso importante y especial que debemos dar. Sé que ningún extraño puede cambiar la mentalidad de La Manada, pero necesitamos una oportunidad para empezar el cambio. Lo que intento averiguar es cómo presentarle esta “oportunidad” a La Manada."
+      },
+      {
+        "title": "Tema: Rossi",
+        "text": "Debería pasar más tiempo con Rossi, pero cuando la miro ahora mismo... no puedo evitar sentir sorpresa por cuánto ha crecido. Ella comparte el aliento salvaje y se conecta fácilmente con la sangre de La Manada. La maestría de las armas, la Activación de las artes, y la cacería... Todo le resulta natural. Ya no es una bebé indefensa cubierta con mantos empapados de sangre. No. Ella es la Wulfperl de la Famiglia Luppino. Yo solo soy los colmillos de La Manada, pero Rossi siempre será su corazón y su alma."
+      },
+      {
+        "title": "Tema: Rompesuelos",
+        "text": "Los clanes Rompesuelos son más complicados de lo que la mayoría cree. Además de los Rompehuesos y La Manada, están los Bandidos de las Dunas... un extraño y desorganizado clan que se popularizó con tan solo un bergantín. Y luego están los Cicatrices Grises, que tatúan sus cuerpos con Versos vinculantes... Y los Cráneos Sombríos, un despiadado grupo de asesinos con los que nadie se quiere cruzar al anochecer. Estos clanes menores sobrevivieron a las tierras salvajes, así que es normal que conozcan uno que otro truco de supervivencia."
+      },
+      {
+        "title": "Recurso/Coleccionable detectado 1",
+        "text": "Hay algo que podemos conseguir por allá."
+      },
+      {
+        "title": "Recurso/Coleccionable detectado 2",
+        "text": "Botín especial a la vista. Deberíamos recogerlo."
+      },
+      {
+        "title": "Zona inexplorada detectada",
+        "text": "Aún no hemos pasado por ahí. Será mejor anotarlo."
+      },
+      {
+        "title": "Enemigo poderoso descubierto",
+        "text": "Huele a problemas. Este no es un enemigo cualquiera."
+      },
+      {
+        "title": "Minería 1",
+        "text": "Espero que su valor recompense el esfuerzo."
+      },
+      {
+        "title": "Minería 2",
+        "text": "Quizá sea mejor que yo me encargue... Mejor, terminemos esto como un equipo."
+      },
+      {
+        "title": "Abriendo una caja",
+        "text": "Un botín impresionante. Esta cacería ha resultado fructífera."
+      },
+      {
+        "title": "Adquiriendo Aurileno",
+        "text": "Aurileno... Supongo que Endfield lo considera valioso."
+      },
+      {
+        "title": "Eliminar la Plaga",
+        "text": "Tomaste la decisión correcta. La Plaga solo obstaculiza nuestra operación."
+      },
+      {
+        "title": "Descanso",
+        "text": "Revisión de munición completa. Hora de la siguiente cacería."
+      },
+      {
+        "title": "Uso táctico 1",
+        "text": "Con cuidado. No te precipites."
+      },
+      {
+        "title": "Uso táctico 2",
+        "text": "... Logré recuperar el aliento."
+      },
+      {
+        "title": "Advertencia de peligro",
+        "text": "¡Esquiva!"
+      },
+      {
+        "title": "Herido",
+        "text": "Concéntrate en la batalla, no en mí."
+      },
+      {
+        "title": "0 PV",
+        "text": "Hngh... Evacuación médica."
+      },
+      {
+        "title": "Ánimo del equipo 1",
+        "text": "Buenos movimientos."
+      },
+      {
+        "title": "Ánimo del equipo 2",
+        "text": "Buen trabajo en equipo."
+      },
+      {
+        "title": "Respuesta al ánimo 1",
+        "text": "Suelo hacerlo mejor."
+      },
+      {
+        "title": "Respuesta al ánimo 2",
+        "text": "Solo hago lo que debo."
+      },
+      {
+        "title": "Comienza el combate 1",
+        "text": "Tengo los ojos bien abiertos para una oportunidad."
+      },
+      {
+        "title": "Comienza el combate 2",
+        "text": "No te preocupes por mí. Te seguiré el ritmo."
+      },
+      {
+        "title": "Victoria en el combate 1",
+        "text": "No esperaba menos."
+      },
+      {
+        "title": "Victoria en el combate 2",
+        "text": "Justo como lo predije."
+      },
+      {
+        "title": "Victoria en el combate 3",
+        "text": "Ganamos. Eso es lo que importa."
+      },
+      {
+        "title": "Victoria en el combate 4",
+        "text": "Fue más difícil de lo que pensé. Pero somos los ganadores. Eso es lo que cuenta."
+      },
+      {
+        "title": "Derrota en el combate",
+        "text": "El cazador a veces puede convertirse en la presa. Yo digo que es hora de empezar la cacería de nuevo."
+      },
+      {
+        "title": "Golpe final 1",
+        "text": "¡Cállate!"
+      },
+      {
+        "title": "Golpe final 2",
+        "text": "¡No hay salida!"
+      },
+      {
+        "title": "Habilidad de batalla 1",
+        "text": "¡Hazlo rápido!"
+      },
+      {
+        "title": "Habilidad de batalla 2",
+        "text": "¡Sangre de La Manada!"
+      },
+      {
+        "title": "Habilidad de batalla 3",
+        "text": "¡Fuera de mi camino!"
+      },
+      {
+        "title": "Habilidad de combo preparada 1",
+        "text": "Listo y cargado."
+      },
+      {
+        "title": "Habilidad de combo preparada 2",
+        "text": "Mi turno."
+      },
+      {
+        "title": "Lanzando combo 1",
+        "text": "En eso estoy."
+      },
+      {
+        "title": "Lanzando combo 2",
+        "text": "¡Abajo las armas!"
+      },
+      {
+        "title": "Remate 1",
+        "text": "Cierra la boca."
+      },
+      {
+        "title": "Remate 2",
+        "text": "¡Van a caer!"
+      },
+      {
+        "title": "Habilidad máxima 1",
+        "text": "¡Nadie sobrevivirá!"
+      },
+      {
+        "title": "Habilidad máxima 2",
+        "text": "¡Ve directo a la garganta!"
+      },
+      {
+        "title": "Habilidad máxima 3",
+        "text": "¡Lobos, a devorar!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

@@ -93,7 +93,229 @@
         "name": "???",
         "description": ""
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Einsatzvorbereitung 1",
+        "text": "Ich höre den Gesang von Originium."
+      },
+      {
+        "title": "Einsatzvorbereitung 2",
+        "text": "Endfield wird nie aufhören, sich weiterzuentwickeln."
+      },
+      {
+        "title": "Wird zum Team hinzugefügt 1",
+        "text": "Ich bin in Position, Dijiang."
+      },
+      {
+        "title": "Wird zum Team hinzugefügt 2",
+        "text": "Das wurde auch Zeit."
+      },
+      {
+        "title": "Waffe wird gewechselt",
+        "text": "Nicht schlecht."
+      },
+      {
+        "title": "Ausrüstung wird gewechselt",
+        "text": "Was für ein gutes Beispiel für industrielle Fertigung."
+      },
+      {
+        "title": "Fähigkeitsmatrix wird aktiviert",
+        "text": "Ich kenne dieses Gefühl …"
+      },
+      {
+        "title": "Kampfaufzeichnungen ansehen",
+        "text": "Ich werde den Anblick nie vergessen."
+      },
+      {
+        "title": "Operator-Beförderung 1",
+        "text": "Ein weiterer Schritt nach vorn …"
+      },
+      {
+        "title": "Operator-Beförderung 2",
+        "text": "Ich werde Endfield beschützen. Für immer."
+      },
+      {
+        "title": "Operator-Beförderung 3",
+        "text": "Die Vergangenheit und die Gegenwart müssen eins werden."
+      },
+      {
+        "title": "Operator-Beförderung 4",
+        "text": "Ich hörte ihre Stimme, die wie ein Flüstern im Traum hallte. Ich habe immer wieder von einem endlosen Meer geträumt – einem Meer, das Trauer bringt … Erinnerungen weckt und meine Entschlossenheit stärkt."
+      },
+      {
+        "title": "Warten 1",
+        "text": "Wartest du noch auf was?"
+      },
+      {
+        "title": "Warten 2",
+        "text": "Originium wird uns den Weg ebnen."
+      },
+      {
+        "title": "Geschenke annehmen",
+        "text": "Vielen Dank!"
+      },
+      {
+        "title": "Ressource/Sammelobjekt entdeckt 1",
+        "text": "Schaut mal, da drüben …"
+      },
+      {
+        "title": "Ressource/Sammelobjekt entdeckt 2",
+        "text": "Da drüben liegt was Wichtiges!"
+      },
+      {
+        "title": "Unerforschter Bereich entdeckt",
+        "text": "Die Umgebung sollten wir uns mal genauer anschauen."
+      },
+      {
+        "title": "Starker Gegner entdeckt",
+        "text": "Hochgefährlicher Feind. Seid vorsichtig!"
+      },
+      {
+        "title": "Abbau 1",
+        "text": "Diese Mineralien könnten sich als nützlich erweisen."
+      },
+      {
+        "title": "Abbau 2",
+        "text": "Lass mich helfen."
+      },
+      {
+        "title": "Kiste öffnen",
+        "text": "Diese Reise hat sich echt gelohnt."
+      },
+      {
+        "title": "Aurylen erhalten",
+        "text": "Das kommt mir bekannt vor."
+      },
+      {
+        "title": "Eliminierung der Verderbnis",
+        "text": "Verderbniseliminierung bestätigt."
+      },
+      {
+        "title": "Ausruhen",
+        "text": "Alle sind ausgeruht."
+      },
+      {
+        "title": "Taktische Nutzung 1",
+        "text": "Fühlst du dich schon besser?"
+      },
+      {
+        "title": "Taktische Nutzung 2",
+        "text": "Mir geht’s schon viel besser."
+      },
+      {
+        "title": "Gefahrenwarnung",
+        "text": "Achtung! Angriff!"
+      },
+      {
+        "title": "Verletzt",
+        "text": "Ich kann immer noch kämpfen …"
+      },
+      {
+        "title": "0 LP",
+        "text": "Tut mir leid … Jetzt liegt’s an euch …"
+      },
+      {
+        "title": "Teammotivation 1",
+        "text": "Das war ein echt cooler Move."
+      },
+      {
+        "title": "Teammotivation 2",
+        "text": "Wir sind auf einer Wellenlänge."
+      },
+      {
+        "title": "Motivationsreaktion 1",
+        "text": "Du schmeichelst mir."
+      },
+      {
+        "title": "Motivationsreaktion 2",
+        "text": "Unsere Teamarbeit wird immer besser."
+      },
+      {
+        "title": "Kampf beginnt 1",
+        "text": "Zeit, zu Kämpfen."
+      },
+      {
+        "title": "Kampf beginnt 2",
+        "text": "Ich bin bei dir."
+      },
+      {
+        "title": "Kampfsieg 1",
+        "text": "Ein weiterer Schritt nach vorn, Endfielder."
+      },
+      {
+        "title": "Kampfsieg 2",
+        "text": "Gute Arbeit, Leute."
+      },
+      {
+        "title": "Kampfsieg 3",
+        "text": "Wir haben den Kampf gut gemeistert!"
+      },
+      {
+        "title": "Kampfsieg 4",
+        "text": "Geht’s allen gut?"
+      },
+      {
+        "title": "Niederlage im Kampf",
+        "text": "Keine Sorge. Wir werden uns neu organisieren und einen Weg finden."
+      },
+      {
+        "title": "Abschlussangriff 1",
+        "text": "Nimm das!"
+      },
+      {
+        "title": "Abschlussangriff 2",
+        "text": "Sieh genau zu!"
+      },
+      {
+        "title": "Kampffertigkeit 1",
+        "text": "Los geht’s!"
+      },
+      {
+        "title": "Kampffertigkeit 2",
+        "text": "Dich mach ich platt!"
+      },
+      {
+        "title": "Kampffertigkeit 3",
+        "text": "Macht sie fertig!"
+      },
+      {
+        "title": "Kombofertigkeit bereit 1",
+        "text": "Bereit zum Angriff."
+      },
+      {
+        "title": "Kombofertigkeit bereit 2",
+        "text": "Vertrau mir."
+      },
+      {
+        "title": "Kombo wirken 1",
+        "text": "Werde zu Kristall!"
+      },
+      {
+        "title": "Kombo wirken 2",
+        "text": "Das ist dein Ende!"
+      },
+      {
+        "title": "Wuchtschlag 1",
+        "text": "Jetzt ist Schluss!"
+      },
+      {
+        "title": "Wuchtschlag 2",
+        "text": "Hab ich dich!"
+      },
+      {
+        "title": "Ultimative Fertigkeit 1",
+        "text": "Keine zweiten Chance."
+      },
+      {
+        "title": "Ultimative Fertigkeit 2",
+        "text": "Dein Ende naht."
+      },
+      {
+        "title": "Ultimative Fertigkeit 3",
+        "text": "Die Show ist vorbei."
+      }
+    ]
   },
   "potentials": {
     "potential1": {

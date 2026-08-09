@@ -362,7 +362,9 @@
     "special_1_3_2": "Sündentilger",
     "weponbox_1_3_2": "„Blutrot“-Ausgabe",
     "special_1_4_1": "Sehnsucht der Riss-Wächterin nach dem Norden",
-    "weponbox_1_4_1": "Militär-Standard-Ausgabe"
+    "weponbox_1_4_1": "Militär-Standard-Ausgabe",
+    "special_1_4_2": "Dein Morgenstern begrüßt den Tag",
+    "weponbox_1_4_2": "Blendend-Ausgabe"
   },
   "pages": {
     "home": "Home",
@@ -455,7 +457,8 @@
     "theRootedRealm": "Das Geerdete Reich",
     "protocolPassBlightedSea": "Protokollpass: Verderbtes Meer",
     "gazeNorthToTheRiftSignIn": "Blicke nach Norden zum Riss – Anmeldung",
-    "protocolInvitationTheReturn": "Protokoll-Einladung: Die Rückkehr"
+    "protocolInvitationTheReturn": "Protokoll-Einladung: Die Rückkehr",
+    "bedazzlingDawnstarSignIn": "Blendender Morgenstern – Anmeldung"
   },
   "mouths": {
     "january": "Januar",

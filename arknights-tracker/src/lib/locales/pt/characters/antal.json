@@ -117,7 +117,329 @@
         "name": "Criatividade",
         "description": "Criatividade: Treinamento de Sensibilidade ao Humor\nAntal acredita que a prática constante fará dele o Mestre Guru das Piadas Infames."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Prep Operação 1",
+        "text": "Humm. Outro turno está começando."
+      },
+      {
+        "title": "Prep Operação 2",
+        "text": "Quem é o sujeito do teste desta vez?"
+      },
+      {
+        "title": "Adicionando à equipe 1",
+        "text": "Uma missão para mim? Ótimo. Estou buscando oportunidades de testes de campo para drones orbitais modificados."
+      },
+      {
+        "title": "Adicionando à equipe 2",
+        "text": "Se você tem um plano, apenas dê suas ordens. Confio no seu julgamento."
+      },
+      {
+        "title": "Trocando de arma",
+        "text": "Uma arma nova e descalibrada. Preciso submetê-la a uma rodada de avaliações de desempenho."
+      },
+      {
+        "title": "Trocando de equipamento",
+        "text": "O novo equipamento apresenta melhorias significativas. No entanto, ele prende nas minhas escamas dérmicas."
+      },
+      {
+        "title": "Ativação da Matriz de Capacidade",
+        "text": "Humm... Agradeço as instruções. Elas inspiraram uma nova linha de pensamento."
+      },
+      {
+        "title": "Assistindo a Registros de Combate",
+        "text": "Um plano de batalha impressionante, Endministrator. Fico feliz por fazer parte das suas operações."
+      },
+      {
+        "title": "Promoção do Operador 1",
+        "text": "Um aumento? Agradeço fundos adicionais para adquirir mais dispositivos de Originium e Unidades de Artes. Minha pesquisa e meu acervo pessoal aumentarão."
+      },
+      {
+        "title": "Promoção do Operador 2",
+        "text": "Uma promoção, mas que implica trabalho adicional no futuro? Entendido. Então, há alguma nova missão para mim?"
+      },
+      {
+        "title": "Promoção do Operador 3",
+        "text": "Isso é um incentivo para a minha sede de conhecimento? Acabei de terminar um relatório sobre o Núcleo de Automação do Protocolo. Você pode revisá-lo para ver se eu esqueci de algo."
+      },
+      {
+        "title": "Promoção do Operador 4",
+        "text": "A vida na Endfield é muito diferente dos meus dias na Academia. Naquela época, eu conseguia manter meu coeficiente de rendimento facilmente com minhas pesquisas, mas isso não parece importante agora. Preciso aprender e conviver confiando em meus companheiros de equipe e com a conquista de resultados como um time."
+      },
+      {
+        "title": "Operador se apresentando para o trabalho",
+        "text": "Antal da Op Z7 apresentando-se para o serviço. Estudei automação de Originium e ocasionalmente ajudo em modificações ou reparos de dispositivos de Originium. Você pode me procurar para tarefas desse tipo... E tenho uma pergunta para você. Qual é o material da sua máscara? Fibra de carbono?"
+      },
+      {
+        "title": "Em espera 1",
+        "text": "Você gostaria de discutir algo comigo?"
+      },
+      {
+        "title": "Em espera 2",
+        "text": "Estou tentando montar uma piada ruim para você."
+      },
+      {
+        "title": "Atribuindo a Instalação",
+        "text": "Uma nova atribuição de trabalho? Afirmativo."
+      },
+      {
+        "title": "Saudação 1",
+        "text": "Estou aberto a perguntas relacionadas a dispositivos de Originium, além de outras coisas."
+      },
+      {
+        "title": "Saudação 2",
+        "text": "Curiosamente, sua presença amplia muito minha vontade de compartilhar meu vasto conhecimento."
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 1",
+        "text": "Posso inspecionar seu armamento, Endmin? Humm. O único problema que vejo é o desgaste de alguns componentes. Substituir um único componente de precisão de Originium resolverá o problema. Esse reparo não será muito trabalhoso. Ofereço esse serviço a todos os membros da Equipe Z7."
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 2",
+        "text": "Meus estudos sobre a Dijiang revelam que ela é uma maravilha da engenharia. O Controle Central, o Nó da Rede de Protorig, os sistemas de apoio à vida e várias outras partes da nave oferecem amplas oportunidades de aprendizado. Isso tudo me forneceu a estrutura de que eu precisava para minha próxima tese."
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 3",
+        "text": "Tenho uma piada baseada nas experiências pessoais de Fluorite. Como responder a uma mensagem ameaçadora de um antagonista? Resposta: cancelar a inscrição. Você riu. Esta piada é comprovadamente engraçada. Mas por que os outros não riram como você?"
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 4",
+        "text": "Se suas emoções estão frias, junte-se a mim ao ar livre. A radiação solar induz a secreção cerebral de serotonina, que alivia emoções negativas. Havia um parque com fontes perto da minha Academia que oferecia serenidade e bastante exposição solar. Quando eu estudava na Academia, o parque era meu refúgio nos momentos de exaustão."
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 5",
+        "text": "A resposta da minha avó chegou ontem. Ela parece bastante interessada em um indivíduo em particular que mencionei repetidamente em minhas cartas. Vou transmitir a mensagem dela ao referido indivíduo, que por acaso vem a ser você, Endmin: \"Você já deveria saber que um certo jovem Savra pode ser bastante teimoso, embora de uma forma bem-humorada. Por favor, tenha paciência com ele. Espero tomar um chá com você e contar mais sobre como criei aquele garotinho escamoso\"."
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 6",
+        "text": "Muitas pessoas contemplam Talos-II dos decks da Dijiang. Eu fiz o mesmo e, embora oferecesse uma perspectiva nova, não compartilhei da nostalgia que sentiam. Talvez a culpa seja da minha avó. Ela me ensinou: \"Não fique obcecado com o passado. Busque e amplie seu futuro.\""
+      },
+      {
+        "title": "Oferta de presentes",
+        "text": "As convenções de socialização determinam que as pessoas troquem presentes para expressar seus sentimentos. Preparei este presente especial para você, destinatário."
+      },
+      {
+        "title": "Aceitando presentes",
+        "text": "Sou grato. Entendo o que significa oferecer um presente e guardarei essa oferenda com carinho."
+      },
+      {
+        "title": "Diálogo de Confiança 1",
+        "text": "Entrar para a Endfield não foi uma escolha difícil. Vocês oferecem novas tecnologias que não estão disponíveis na Academia. A sociedade científica pode ser excessivamente conservadora no avanço de certos campos. A Endfield, no entanto, oferece um espírito admirável de exploração, inovação e aplicações práticas."
+      },
+      {
+        "title": "Diálogo de Confiança 2",
+        "text": "Meu livro? É de fato a Seleção de Desafios Extremos de Sudoku. Quebra-cabeças aritméticos ajudam a modular minhas emoções em momentos de ócio. Compartilhei esse passatempo com membros da Z7, mas a recepção foi negativa. Talvez você possa experimentar, Endmin?"
+      },
+      {
+        "title": "Diálogo de Confiança 3",
+        "text": "Uma piada ruim para mim? Preciso ouvi-la. \"Por que um Savra só conta piadas cafonas durante o dia? Porque o sol está brilhando, e até a vergonha alheia merece um pouco de vitamina D\". Hrra-Hrra-Hrra. Eu não quis ofender, Endmin. Esse é o genuíno som da risada de um Savra."
+      },
+      {
+        "title": "Diálogo de Confiança 4",
+        "text": "Já modifiquei muitos dispositivos de Originium. Mas do que mais sinto falta é o cajado que minha avó me deu quando eu era criança. Lembro-me até hoje do que ela disse: \"Ele te acompanhará enquanto você muda este mundo\"."
+      },
+      {
+        "title": "Diálogo de Confiança 5",
+        "text": "Minha avó me disse que passar a vida inteira respondendo a uma pergunta científica pode ser romântico, mas uma vida sem amigos é muito solitária. Eu não entendia o que ela queria dizer. Então chegou um momento em que eu queria compartilhar a alegria de uma nova descoberta, mas você não estava por perto. Esse incidente me ensinou sobre solidão."
+      },
+      {
+        "title": "Chat 1",
+        "text": "Fluorite me ensinou um jogo de cartas para passar o tempo. Ela também me disse que o perdedor deve fazer qualquer coisa pelo vencedor. Jogamos cinco partidas. Agora ela terá que me mostrar cinco sessões individuais sobre \"como me tornar rapidamente um parceiro alegre nas conversas\"."
+      },
+      {
+        "title": "Chat 2",
+        "text": "Jantar? Não. Não posso ir. Cacei um Aggelos sem avisar minha Capitã. Ela me puniu negando-me o privilégio de me alimentar à noite no refeitório."
+      },
+      {
+        "title": "Chat 3",
+        "text": "Por que escolhi a Z7 em vez de um projeto de P&D? O Centro de P&D era meu interesse inicial, mas a Capitã Akekuri foi minha entrevistadora. Ela acredita que dispositivos de Originium modificados devem ser retirados do laboratório e submetidos a cenários de combate reais. Isso identificará melhor os problemas. Concordo. Por isso, decidi me juntei à equipe dela."
+      },
+      {
+        "title": "Chat 4",
+        "text": "Por que sou obcecado por piadas ruins? Durante meus tempos de escola, as pessoas reclamavam da minha falta de humor. Concordo com elas. Meu defeito precisa ser corrigido."
+      },
+      {
+        "title": "Chat 5",
+        "text": "Minha avó me disse que estava feliz por eu ter saído de casa para ir para a Endfield. Ela encarou isso como uma oportunidade de me tirar da leitura e dos aparelhos Originium. Ela esperava que eu aprendesse a me relacionar com companheiros de equipe e até... fizesse amigos."
+      },
+      {
+        "title": "Tópico: Akekuri",
+        "text": "Capitã Akekuri? Ela me recrutou e é muito simpática. Eu sigo todas as suas instruções. Embora ela diga que nossa equipe está indo bem, ela frequentemente perde o sono e anda de um lado para o outro no meio da noite. Ela se recusa a revelar os motivos. Espero que você possa me dizer o porquê, Endmin."
+      },
+      {
+        "title": "Tópico: Catcher",
+        "text": "Catcher é responsável por preparar as rações durante as operações de campo. Ele maneja utensílios de cozinha melhor do que eu manejo meus drones orbitais. Quando chove, porém, ele se recusa a falar, mas também não se opõe à minha presença. Acho isso bastante desconcertante."
+      },
+      {
+        "title": "Tópico: Fluorite",
+        "text": "Considero Fluorite uma amiga escamosa, até certo ponto. Acho sua cauda forte e poderosa atraente, mas ela me proibiu de fazer avaliações táteis. Fluorite também é uma conversadora habilidosa. Posso aprender muito com ela."
+      },
+      {
+        "title": "Tópico: Estella",
+        "text": "Ao entrar em combate, preciso considerar defender Estella. Ambas temos tons de pele reflexivos e chamativos. Essa é uma preocupação crucial que nos expõe perigosamente em batalha."
+      },
+      {
+        "title": "Recurso/Colecionável detectado 1",
+        "text": "Bom. Uma nova descoberta foi feita."
+      },
+      {
+        "title": "Recurso/Colecionável detectado 2",
+        "text": "É melhor darmos uma olhada naquela importante descoberta."
+      },
+      {
+        "title": "Área não explorada detectada",
+        "text": "Permita-me investigar este mistério."
+      },
+      {
+        "title": "Inimigo poderoso descoberto",
+        "text": "Unidade de elite hostil detectada."
+      },
+      {
+        "title": "Mineração 1",
+        "text": "Os minerais atendem a vários propósitos. Devemos coletar alguns."
+      },
+      {
+        "title": "Mineração 2",
+        "text": "Isso aumentará nossa eficiência."
+      },
+      {
+        "title": "Abrindo um caixote",
+        "text": "Uma reserva rica em recursos foi encontrada. Precisamos examiná-la para identificar os materiais de manutenção dos equipamentos."
+      },
+      {
+        "title": "Adquirindo Aurileno",
+        "text": "Alguns Aurilenos se afastam repentinamente quando nos aproximamos. Por quê? Pode ser alguma forma de repulsão baseada em energia?"
+      },
+      {
+        "title": "Eliminando a Praga",
+        "text": "Isso significa que alcançamos uma melhor compreensão da Praga...?"
+      },
+      {
+        "title": "Descansar",
+        "text": "As pessoas não são máquinas e devem reservar um tempo para descansar."
+      },
+      {
+        "title": "Uso Tático 1",
+        "text": "Iniciando tratamento de emergência."
+      },
+      {
+        "title": "Uso Tático 2",
+        "text": "Condições nominais restauradas."
+      },
+      {
+        "title": "Aviso de Perigo",
+        "text": "Pedido de ataque hostil detectado."
+      },
+      {
+        "title": "Ferido",
+        "text": "As condições não são ideais, mas ainda funcionam."
+      },
+      {
+        "title": "0 PV",
+        "text": "Linha de pensamento... descarrilou. Apoio... indisponível."
+      },
+      {
+        "title": "Encorajamento da Equipe 1",
+        "text": "Um desempenho sensacional."
+      },
+      {
+        "title": "Encorajamento da Equipe 2",
+        "text": "Alcançamos uma sinergia silenciosa."
+      },
+      {
+        "title": "Resposta a Encorajamento 1",
+        "text": "Obrigado, mas eu poderia ter feito melhor."
+      },
+      {
+        "title": "Resposta a Encorajamento 2",
+        "text": "Um resultado definitivo."
+      },
+      {
+        "title": "Início do Combate 1",
+        "text": "Unidade de Artes otimizada."
+      },
+      {
+        "title": "Início do Combate 2",
+        "text": "Concentre-se na batalha. Eu darei cobertura de fogo."
+      },
+      {
+        "title": "Vitória em Combate 1",
+        "text": "Novo conhecimento adquirido."
+      },
+      {
+        "title": "Vitória em Combate 2",
+        "text": "Missão cumprida. Foi moleza."
+      },
+      {
+        "title": "Vitória em Combate 3",
+        "text": "Todos foram indispensáveis para a equipe."
+      },
+      {
+        "title": "Vitória em Combate 4",
+        "text": "Nossos resultados são ótimos, apesar das variáveis inesperadas do combate."
+      },
+      {
+        "title": "Derrota em Combate",
+        "text": "As tabulações das perdas incorridas mostraram que a extração foi a melhor solução para a equipe."
+      },
+      {
+        "title": "Golpe Final 1",
+        "text": "Falha detectada!"
+      },
+      {
+        "title": "Golpe Final 2",
+        "text": "Humph! Paralisar!"
+      },
+      {
+        "title": "Habilidade de Batalha 1",
+        "text": "Direção definida."
+      },
+      {
+        "title": "Habilidade de Batalha 2",
+        "text": "Travado no alvo."
+      },
+      {
+        "title": "Habilidade de Batalha 3",
+        "text": "Saída máxima."
+      },
+      {
+        "title": "Combo de Habilidades Pronto 1",
+        "text": "Totalmente energizada."
+      },
+      {
+        "title": "Combo de Habilidades Pronto 2",
+        "text": "Unidade pronta e aquecida."
+      },
+      {
+        "title": "Conjuração de Combo 1",
+        "text": "Zap crítico."
+      },
+      {
+        "title": "Conjuração de Combo 2",
+        "text": "Apresse a vitória!"
+      },
+      {
+        "title": "Finalizador 1",
+        "text": "Explosão de ions."
+      },
+      {
+        "title": "Finalizador 2",
+        "text": "Surto voltaico."
+      },
+      {
+        "title": "Habilidade Suprema 1",
+        "text": "Vitória eletrizante."
+      },
+      {
+        "title": "Habilidade Suprema 2",
+        "text": "Circuito amplificado."
+      },
+      {
+        "title": "Habilidade Suprema 3",
+        "text": "Hora de turbinar."
+      }
+    ]
   },
   "potentials": {
     "potential1": {

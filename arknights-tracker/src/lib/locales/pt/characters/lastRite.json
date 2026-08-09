@@ -125,7 +125,337 @@
         "name": "Caridade",
         "description": "Caridade: Serviço Comunitário\nLast Rite prefere cuidar dos doentes ou colher grãos em vez de brandir armas."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Prep Operação 1",
+        "text": "Estamos indo embora? Ah, eu... espere por mim um segundo..."
+      },
+      {
+        "title": "Prep Operação 2",
+        "text": "Lembro que o Manual Operacional dizia: — Ah, e-estou quase terminando!"
+      },
+      {
+        "title": "Adicionando à equipe 1",
+        "text": "Já é... a minha vez?"
+      },
+      {
+        "title": "Adicionando à equipe 2",
+        "text": "Last Rite, prepare-se para atacar...! Humm... Estamos atacando, certo?"
+      },
+      {
+        "title": "Trocando de arma",
+        "text": "Sem problemas. Desde que seja pesado o suficiente."
+      },
+      {
+        "title": "Trocando de equipamento",
+        "text": "Uau... Nunca vi esse modelo antes... Deixe-me dar outra olhada no manual do usu-usuário..."
+      },
+      {
+        "title": "Ativação da Matriz de Capacidade",
+        "text": "Vou continuar lutando... do meu jeito!"
+      },
+      {
+        "title": "Assistindo a Registros de Combate",
+        "text": "KYAAA...! E-e-eu sinto muito! Aquela cena foi um pouco... assustadora..."
+      },
+      {
+        "title": "Promoção do Operador 1",
+        "text": "Pro... moção? *Suspiro* Sério?! P-para mim?"
+      },
+      {
+        "title": "Promoção do Operador 2",
+        "text": "Mãe... Pai... Eu... Eu finalmente consegui..."
+      },
+      {
+        "title": "Promoção do Operador 3",
+        "text": "Entendido. Abrirei caminho através do fogo e do sangue em seu nome, e não vacilarei diante de você. — Hum... Por que você está tão... tenso?"
+      },
+      {
+        "title": "Promoção do Operador 4",
+        "text": "Percebi que posso ser muito mais útil a todos se ficar. Se meu contrato com Seš'qa expirar, você poderá entrar em contato comigo... Ah, não! Eu não deveria ter dito isso! Por favor... Não conte a ninguém sobre isso..."
+      },
+      {
+        "title": "Operador se apresentando para o trabalho",
+        "text": "Representante dos Seš'qa, apresentando-se para o serviço... Meu nome é... Que... quero dizer que meu codinome é Last Rite, o último ritual... Pode me chamar assim..."
+      },
+      {
+        "title": "Em espera 1",
+        "text": "O treinamento deve continuar. Preciso dominar esse poder..."
+      },
+      {
+        "title": "Em espera 2",
+        "text": "E espero que nossas batalhas possam trazer paz."
+      },
+      {
+        "title": "Atribuindo a Instalação",
+        "text": "Entendido! Vou me esforçar dez vezes mais...! Não, quero dizer, cento e vinte vezes mais!"
+      },
+      {
+        "title": "Saudação 1",
+        "text": "Endministrator?! Co... como você... você está?"
+      },
+      {
+        "title": "Saudação 2",
+        "text": "Precisa de ajuda com algo, Endmin?"
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 1",
+        "text": "Eu consigo fazer isso. É só uma linha. Sim, fique confiante! Ei, Endmin...!!! A so... so... sobremesa está... ó-t-t-t-ima hoje, não é?"
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 2",
+        "text": "Ah, não... está tão cheio... E... e se alguém vier até mim? Eu devia me enrolar dentro de um caixote..."
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 3",
+        "text": "V-v-você sabe onde podemos relatar danos? Eu... uh... destruí a cabine de treinamento... de novo..."
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 4",
+        "text": "Hngh... P-posso me apoiar em você por um segundo...? Só preciso pegar um biscoito... E-estou bem... Só um pouquinho... com fome..."
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 5",
+        "text": "Aparelho de som pessoal, kit de ferramentas omnidirecional, Unidade de Artes básica... Ah, é só uma lista de compras. Essas coisas são muito difíceis de encontrar na minha cidade. Felizmente, alguns colegas do Escritório de Logística se ofereceram para buscá-las no caminho. Eles são tão gentis comigo!"
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 6",
+        "text": "Endmin... posso... postar alguns panfletos na Dijiang? Os Seš'qa me deram um monte de trabalho promocional. Se eu não atingir meus índices de desempenho, eles vão me arrastar de volta para um treinamento especial..."
+      },
+      {
+        "title": "Oferta de presentes",
+        "text": "Endmin! Por favor, aceite este humilde símbolo da minha eterna e eterna g-gratidão! Eu... sinto muito... Não sei o que dizer..."
+      },
+      {
+        "title": "Aceitando presentes",
+        "text": "Isto é... para mim...? T-Tem mesmo certeza, Endmin? Oh, minha nossa... Acho que... Vou desmaiar..."
+      },
+      {
+        "title": "Diálogo de Confiança 1",
+        "text": "Heheheh... Endmin, é verdade que eles têm uma casa feita só de doces em Nova Wrankwood? Posso... tirar uns dias de folga para ficar lá? Não se preocupe, vou mastigar coisas suficientes para compensar o nosso dinheiro! Ah... É... é só uma propaganda?"
+      },
+      {
+        "title": "Diálogo de Confiança 2",
+        "text": "Olheiras? Ah, estou fazendo cursos de primeiros socorros e prevenção básica de doenças nas culturas... então comecei a dormir menos... Mas são muito úteis! Cortar coisas em pedacinhos com uma espada não vai resolver todos os nossos problemas! Isso é definitivamente inaceitável! O único problema é que... as aulas sobre as Artes da Restauração são tão difíceis..."
+      },
+      {
+        "title": "Diálogo de Confiança 3",
+        "text": "Last Rite, que significa \"último ritual\". A Witching Hour me atribuiu esse codinome. Como sou uma Nachzehrer e trabalhei como agente funerária lá em casa, eles queriam um nome que \"destacasse as características do produto\"... Mas eu não sou o produto — é esta roupa! E os últimos rituais são cerimônias sombrias destinadas aos que partiram! Por que eles usariam isso de uma maneira tão ridícula...? Endmin... posso pedir que você escreva outra carta de protesto para mim? Por favor?"
+      },
+      {
+        "title": "Diálogo de Confiança 4",
+        "text": "As pessoas vivem brincando sobre eu me deixar passar \"fome\", e eu meio que sei o motivo. Mas usar minhas habilidades naturais de Nachzehrer perturbaria os mortos. As chances são mínimas, mas eu não quero... Ainda não descobri tudo devido à complexidade da nossa bruxaria. Então, optei por não recorrer aos meus poderes. Essa é a atitude mais segura!"
+      },
+      {
+        "title": "Diálogo de Confiança 5",
+        "text": "Tem uma coisa que preciso compartilhar com você, Endmin. Não me importa o que aconteça depois. Bem, v-você deve saber que... que os Seš'qa me superestimaram! Acabaram de me chamar de \"Princesa da Corte de Batalha\" sem pedir! Eu nunca quis mentir para você... Sinto muito mesmo. Talvez eu devesse simplesmente renunciar — E-espere, você sempre soube disso?! E você... está bem com isso?"
+      },
+      {
+        "title": "Chat 1",
+        "text": "Eu queria muito poder usar minha lâmina como os outros operadores. Todo mundo tem um belo conjunto de posturas, golpes e defesas. Tentei copiar os movimentos deles, mas, por algum motivo, acabei jogando minha espada fora sem querer. Acho que só consigo lutar com golpes selvagens e instintivos... Espera aí. Meus golpes também são lindos? Eu... não sei, mas... acho que é muita gentileza sua."
+      },
+      {
+        "title": "Chat 2",
+        "text": "Muitas raças mencionam algum tipo de \"espírito\" que permanece após a morte. Meus pais me ensinaram muitos rituais de oração, e eu costumava realizar cada um deles todos os dias no cemitério lá de onde eu morava. Hum? Ah, sim, já ouvi falar de um tipo de Sarkaz chamado \"Ressuscitados\". Dizia-se que eles conseguiam se infiltrar em todos os tipos de carcaças e reanimá-las... Espere aí. Você está tentando me contar uma história de terror? NAHNAHNAHNAH! NÃO CONSIGO TE OUVIR!"
+      },
+      {
+        "title": "Chat 3",
+        "text": "Por que todo mundo prega peças em mim? As crianças lá em casa me chamavam de \"Omnomnom\" ou \"Senhorita Confusa\". Os Endfielders mais antigos também ficavam me chamando de apelidos engraçados. Preciso descobrir como parecer mais autoritária... Ah! Tenho uma ideia. Posso usar uma máscara igual à de Endmin! Como fico se falo com as pessoas usando isso? O quê? É muito assustador? Ah... Tudo bem..."
+      },
+      {
+        "title": "Chat 4",
+        "text": "Fiz o teste padrão de operador. Passei na parte de condicionamento físico, mas a parte técnica... b-bem, digamos que a Supervisora Perlica acabou me passando mesmo assim! Faço treinamento de recuperação desde então! Ah, e sobre aquele velhote que me entregou o contrato na cidade flutuante... Perlica disse que estava tentando me proteger. Não entendi bem o que ela quis dizer, mas Perlica está sempre certa!"
+      },
+      {
+        "title": "Chat 5",
+        "text": "Os Seš'qa sempre protegeram o conhecimento e os dispositivos de bruxaria dos Sarkaz, mas há tão poucos Nachzehrers em Talos-II. Muitas técnicas de guerra, outrora transmitidas de geração em geração, perderam-se no tempo. Segundo nossos estudiosos, muitos Nachzehrers lutaram nos campos de batalha de Terra... e sustentaram a própria guerra absorvendo o poder de camaradas caídos... Acho que não precisamos mais fazer isso, certo? Tenho uma aura frígida que mal conseguia conter. A frieza se esvairia de mim se eu não tomasse cuidado. No entanto, é um poder com o qual... me sinto mais confortável."
+      },
+      {
+        "title": "Tópico: Talento e poder",
+        "text": "Os instrutores Seš'qanos me disseram que um Nachzehrer de verdade usa bruxaria para dominar o gelo. E eu não estava sendo decente porque minha frigidez continuava me consumindo. Bem, eu sou muito boa em controlar meus impulsos de absorver os mortos. A desvantagem é que fico com fome facilmente... Não, eu estou bem. Eu como bem rápido. Na verdade, eu até tenho comido lanches da meia-noite há um tempo, mas de alguma forma ainda perdi peso... Hum, Endmin... todo mundo estava me encarando agora há pouco?"
+      },
+      {
+        "title": "Tópico: Equipamento de combate",
+        "text": "Você quase não vê trajes como o meu? É um equipamento protótipo da Witching Hour. Querem que eu use isso durante o combate para coletar alguns... hum... dados de teste, eu acho? Mas eu não sou muito boa em lutar contra coisas. Por que será que me contrataram para isso? Enfim, esse traje é fabuloso! É leve, resistente e até seca o cabelo depois do banho! Mas o manual do usuário do modo de combate é um livro enorme, e é difícil memorizar tudo..."
+      },
+      {
+        "title": "Tópico: Os mortos",
+        "text": "Lembro-me de todos os sepultados no cemitério que minha família cuidava — o idoso, o bebê infeliz, o mercenário de outra cidade, o estranho com a doença das pedras... Cada um deles tinha um último desejo. Durante os rituais, aqueles que vinham se despedir pronunciavam esses desejos em voz alta. E por trás de suas palavras... eu podia sentir o que os falecidos realmente ansiavam. Eles não estavam pedindo a ninguém que realizasse seus desejos — eles só queriam ser ouvidos. Lembrar de seus desejos era a única coisa que eu podia fazer. Como minha Mãe dizia, um desejo que permanece é a prova de que eles um dia viveram."
+      },
+      {
+        "title": "Tópico: Seš'qa",
+        "text": "A Witching Hour precisa ajustar meu traje de combate de vez em quando, então costumo fazer viagens à cidade flutuante. Quando os Seš'qa se afastam o suficiente das outras cidades, eles retiram as instalações turísticas e o lugar fica realmente silencioso. O caravaneiro que me apresentou à Endfield disse que os Seš'qa vagam por Talos-II carregando equipes de mercenários e bruxos. O objetivo deles é conectar e apoiar as comunidades Sarkaz ao redor do mundo. Mas... para ser sincera, eles parecem mais com uma grande empresa do que com uma instituição de caridade..."
+      },
+      {
+        "title": "Tópico: Destino",
+        "text": "Papai disse que a CGCT cavou vários poços em nossa antiga propriedade há muitos anos. Mas um Endfielder mais antigo acabou de me dizer que foi a Endfield que liderou todo o projeto! Enfim, várias famílias se mudaram para cá depois que tivemos acesso à água. Depois disso, os caravaneiros começaram a visitar nossa propriedade. Um deles me disse que eu poderia tentar a sorte em Seš'qa, e foi assim que conheci todo mundo na Endfield. Talvez tenha sido um ato do destino?"
+      },
+      {
+        "title": "Tópico: \"Amigos\"",
+        "text": "Tudo começou quando eu ainda era bem pequena. De vez em quando, eu ouvia uma voz falando comigo. Ela parecia cansada e exausta, e provavelmente dormia a maior parte do tempo. Nenhum dos filhos dela descansava em nosso cemitério. Acredito que eles ficavam mais ao norte... E sempre que eu tinha fome, ela me abraçava forte e me consolava. Mas, nos últimos anos, ela dormia cada vez mais e parecia ainda mais fraca do que antes. Sinceramente, espero poder fazer algo para ajudar..."
+      },
+      {
+        "title": "Recurso/Colecionável detectado 1",
+        "text": "Vejo recursos ali... Devemos ir buscá-los?"
+      },
+      {
+        "title": "Recurso/Colecionável detectado 2",
+        "text": "Isso parece algo legal... Se eu não estou vendo coisas..."
+      },
+      {
+        "title": "Área não explorada detectada",
+        "text": "Meu traje de combate está reagindo a alguma coisa. Há alguma anomalia ali?"
+      },
+      {
+        "title": "Inimigo poderoso descoberto",
+        "text": "Cuidado! Esse inimigo parece muito perigoso!"
+      },
+      {
+        "title": "Mineração 1",
+        "text": "O pessoal do Ar-arsenal... não vai ficar bravo com isso, certo?"
+      },
+      {
+        "title": "Mineração 2",
+        "text": "Deixe comigo. Sou forte."
+      },
+      {
+        "title": "Abrindo um caixote",
+        "text": "Uauuuuu... Nunca vi coisas tão bonitas assim..."
+      },
+      {
+        "title": "Adquirindo Aurileno",
+        "text": "É tão lindo... Ah, desculpe! Já terminei de juntar tudo!"
+      },
+      {
+        "title": "Eliminando a Praga",
+        "text": "Espero não ter derramado essa gosma suja por todo lugar."
+      },
+      {
+        "title": "Descansar",
+        "text": "Al-alguém quer algo gelado para beber? Posso gelar algo para você..."
+      },
+      {
+        "title": "Uso Tático 1",
+        "text": "Deixe-me ajudar você!"
+      },
+      {
+        "title": "Uso Tático 2",
+        "text": "Eu... eu me sinto melhor..."
+      },
+      {
+        "title": "Aviso de Perigo",
+        "text": "Veja! Perigo!"
+      },
+      {
+        "title": "Ferida",
+        "text": "Não durma...! Eu não posso cair aqui..."
+      },
+      {
+        "title": "0 PV",
+        "text": "É preciso protegê-los..."
+      },
+      {
+        "title": "Encorajamento da Equipe 1",
+        "text": "Is... Isso é tão legal..."
+      },
+      {
+        "title": "Encorajamento da Equipe 2",
+        "text": "Todos são tão incríveis!"
+      },
+      {
+        "title": "Resposta a Encorajamento 1",
+        "text": "Vo... você me deixa lisonjeada!"
+      },
+      {
+        "title": "Resposta a Encorajamento 2",
+        "text": "To... todos fizeram acontecer."
+      },
+      {
+        "title": "Início do Combate 1",
+        "text": "Deixe-me assumir a liderança!"
+      },
+      {
+        "title": "Início do Combate 2",
+        "text": "Vamos fazer o nosso melhor, pessoal!"
+      },
+      {
+        "title": "Vitória em Combate 1",
+        "text": "Espero não ter quebrado meu traje de combate..."
+      },
+      {
+        "title": "Vitória em Combate 2",
+        "text": "Possibilitado pela mais recente tecnologia Seš'qa! Ah... Não consigo largar esse hábito..."
+      },
+      {
+        "title": "Vitória em Combate 3",
+        "text": "To... todos fizemos um ótimo trabalho!"
+      },
+      {
+        "title": "Vitória em Combate 4",
+        "text": "Estão todos bem...? Ah... é bom estar viva..."
+      },
+      {
+        "title": "Derrota em Combate",
+        "text": "E-e-eu sinto muito! A culpa é toda minha! Eu... eu vou consertar o que deu errado. Que tal... tentarmos de novo?"
+      },
+      {
+        "title": "Golpe Final 1",
+        "text": "Último... golpe!"
+      },
+      {
+        "title": "Golpe Final 2",
+        "text": "Esmagar você!"
+      },
+      {
+        "title": "Habilidade de Batalha 1",
+        "text": "Está um pouco frio."
+      },
+      {
+        "title": "Habilidade de Batalha 2",
+        "text": "Deixe a neve congelar."
+      },
+      {
+        "title": "Habilidade de Batalha 3",
+        "text": "Frio, tenha cuidado comigo."
+      },
+      {
+        "title": "Combo de Habilidades Pronto 1",
+        "text": "Vou limpar isso!"
+      },
+      {
+        "title": "Combo de Habilidades Pronto 2",
+        "text": "Estou pronta!"
+      },
+      {
+        "title": "Conjuração de Combo 1",
+        "text": "Agora morda o gelo!"
+      },
+      {
+        "title": "Conjuração de Combo 2",
+        "text": "Isso vai ser frio!"
+      },
+      {
+        "title": "Finalizador 1",
+        "text": "Por favor, parem de brigar..."
+      },
+      {
+        "title": "Finalizador 2",
+        "text": "Você vai cair!"
+      },
+      {
+        "title": "Habilidade Suprema 1",
+        "text": "Potência máxima, ativar!"
+      },
+      {
+        "title": "Habilidade Suprema 2",
+        "text": "Sua cova foi cavada!"
+      },
+      {
+        "title": "Habilidade Suprema 3",
+        "text": "Hum, alguma última palavra?"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

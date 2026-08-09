@@ -114,7 +114,329 @@
         "name": "Sport",
         "description": "Sport: Integriertes körperliches Training\nAkekuri hat Mode, die schönen Künste, Literatur und andere Dinge, die sie einst interessierten, ad acta gelegt. Stattdessen verbringt sie jetzt ihre Zeit mit Training."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Einsatzvorbereitung 1",
+        "text": "Alles fertig! Legen wir los, Team!"
+      },
+      {
+        "title": "Einsatzvorbereitung 2",
+        "text": "Das ist unsere Chance, zu lernen und zu wachsen!"
+      },
+      {
+        "title": "Wird zum Team hinzugefügt 1",
+        "text": "Akekuri, Team Z7, melde mich zum Dienst! Freue mich, bei der Mission dabei zu sein. Machen wir sie zu einem Erfolg!"
+      },
+      {
+        "title": "Wird zum Team hinzugefügt 2",
+        "text": "Super, noch eine Aufgabe vom Endmin! Besser kann man gar nicht lernen!"
+      },
+      {
+        "title": "Waffe wird gewechselt",
+        "text": "Eine neue Waffe, hmm … fühlt sich definitiv einzigartig an. Okay, ich muss mir neue Taktiken und Strategien ausdenken!"
+      },
+      {
+        "title": "Ausrüstung wird gewechselt",
+        "text": "Hmm, passt perfekt zu mir! Ich werde dem Arsenal bald mein Feedback schicken."
+      },
+      {
+        "title": "Fähigkeitsmatrix wird aktiviert",
+        "text": "Das fühlt sich an, als würde man neues Wissen erlangen, nur nicht die Art, die man im Unterricht bekommt."
+      },
+      {
+        "title": "Kampfaufzeichnungen ansehen",
+        "text": "So sieht also eine Elite-Nachbesprechung aus … wirklich aufschlussreich!"
+      },
+      {
+        "title": "Operator-Beförderung 1",
+        "text": "Ohhh, eine Beförderung? Welch Ehre! Das ist wie ein Dank an mich und die gesamte Z7-Crew. Keine Sorge, wir ruhen uns nicht darauf aus!"
+      },
+      {
+        "title": "Operator-Beförderung 2",
+        "text": "Noch mehr riskante Missionen? Nein, ich bin eher erfreut als verängstigt. Das ist ein Zeichen deines Vertrauens und ich sehe es als eine großartige Chance für uns, zu lernen und zu wachsen."
+      },
+      {
+        "title": "Operator-Beförderung 3",
+        "text": "Endmin, hast du später kurz Zeit? Das Team veranstaltet eine kleine Feier für dich. Ich habe extra für dich einen Mont-Blanc-Kuchen gebacken, und glaub mir, den solltest du dir nicht entgehen lassen!"
+      },
+      {
+        "title": "Operator-Beförderung 4",
+        "text": "Ich habe im Unterricht eine Theorie gelernt, die besagt, dass jeder irgendwann in eine Rolle befördert wird, die nicht zu bewältigen ist. Wenn ich also zu lange feststecke, Endmin, greif bitte ein und hilf mir."
+      },
+      {
+        "title": "Operatorin meldet sich zum Dienst",
+        "text": "Hauptfrau Akekuri vom Einsatzteam Z7 meldet sich zum Dienst! Das Einsatzdossier, die Budgetübersicht und der Aktionsplan stehen zur Überprüfung bereit. Was möchtest du zuerst lesen?"
+      },
+      {
+        "title": "Warten 1",
+        "text": "Ein starkes Team hat keine schwachen Verbindungen."
+      },
+      {
+        "title": "Warten 2",
+        "text": "Na los, ich möchte was für Endfield tun!"
+      },
+      {
+        "title": "Zuweisung zur Anlage",
+        "text": "Du kannst dich auf mich verlassen. Ich habe Erfahrung in diesem Job."
+      },
+      {
+        "title": "Gruß 1",
+        "text": "Die Welt ist ein Dorf, Endmin! Du hast auch gerade eine Mission abgeschlossen?"
+      },
+      {
+        "title": "Gruß 2",
+        "text": "Kaffeepause, Endmin? Ich kann dir eine Tasse einschenken!"
+      },
+      {
+        "title": "Dijiang-Geplauder 1",
+        "text": "Schön, dich kennenzulernen, Endministrator. Ich bin Akekuri vom Einsatzteam Z7. Ach, schon gut! Wir sind vielleicht neu formiert und noch unbekannt, aber ich verspreche dir: Wir werden Eindruck hinterlassen."
+      },
+      {
+        "title": "Dijiang-Geplauder 2",
+        "text": "Da du Endfield seit dem ersten Tag leitest, dachte ich, du wärst deutlich strenger. Aber du bist lockerer als erwartet – hihi, ich schätze, das macht einen wahren Anführer aus!"
+      },
+      {
+        "title": "Dijiang-Geplauder 3",
+        "text": "Ich muss sagen, ich bin viel lieber hier auf der Dijiang als bei den sogenannten „schicken Events“ der Wirtschaftselite in Neo Tsukushi. Die Leute hier sind viel entspannter und bewirken tatsächlich etwas."
+      },
+      {
+        "title": "Dijiang-Geplauder 4",
+        "text": "Hast du schon mal Nama Yatsuhashi probiert? Das ist eine traditionelle Higashi-Süßigkeit mit roten Bohnen, Matcha und gerösteten Kastanien. Wenn du Lust hast, komm beim nächsten Z7-Teamtreffen vorbei."
+      },
+      {
+        "title": "Dijiang-Geplauder 5",
+        "text": "Hey, Endmin. Lust auf eine Tasse heißen Tee? Wir haben coole Geschichten von der Mission zu erzählen!"
+      },
+      {
+        "title": "Dijiang-Geplauder 6",
+        "text": "Ich schaue von der Brücke aus gerne hinauf zu Talos-II. Dort sind all meine Erinnerungen – an mein Aufwachsen, an den letzten Wohnort meiner Familie und an die Orte, die du verändert hast. Hey, was soll der überraschte Blick? Ich hatte in Planetengeologie und Neuer Geschichte eine 1+!"
+      },
+      {
+        "title": "Geschenke anbieten",
+        "text": "Ah, Endmin! Ich habe dir was von der Mission mitgebracht! Hoffentlich gefällt es dir!"
+      },
+      {
+        "title": "Geschenke annehmen",
+        "text": "Wow, ein Geschenk für mich? Ist das eine Belohnung für besondere Leistungen oder …?"
+      },
+      {
+        "title": "Vertrauensgespräch 1",
+        "text": "Oh, du möchtest wissen, warum sich die Jahrgangsbeste von Neo Tsukushi für Endfield entschieden hat? Ehrlich gesagt bin ich diejenige, die dankbar ist, dass ich ausgewählt wurde. Ich mag alles an meinem Einsatzteam, viel mehr als jede Karriereleiter. Hier kann ich sowohl Mitkämpferin als auch Pionierin sein."
+      },
+      {
+        "title": "Vertrauensgespräch 2",
+        "text": "Was ich mir wünsche? Ich hoffe nur, dass Mama und Papa Frieden schließen. Papa hat gegen die Aggeloi gekämpft, während Mama den Familienladen geführt hat. Aber warum sollten sie deshalb getrennte Leben führen müssen? Wenn beide in Endfield arbeiten würden, müssten sie sich vielleicht nicht zwischen Pflicht und Familie entscheiden …"
+      },
+      {
+        "title": "Vertrauensgespräch 3",
+        "text": "Als Kind spielte ich mit meinem Vater und meinem Onkel immer „Kampf gegen Aggelos“. Ich ritt auf ihren Schultern, als wäre ich ihr Kommandant. Dann, vor zehn Jahren, wurde mein Onkel als Shinobi-Hacker in den Norden gerufen und kam nie zurück. Von da an sprachen meine Eltern nicht mehr miteinander. Ich hatte diese „Kämpfe“ fast vergessen, bis Endfield sie mir wieder ins Gedächtnis rief."
+      },
+      {
+        "title": "Vertrauensgespräch 4",
+        "text": "Nachdem ich mich für den Neuaufbau von Z7 beworben hatte, durchlief ich über ein Jahr intensives Training und Prüfungen. Aber was wirklich zählte, war das Treffen mit Catcher, Fluorite, Estella und Antal. Sie sind das Herz unseres Teams und der Grund, warum Z7 eine Zukunft hat."
+      },
+      {
+        "title": "Vertrauensgespräch 5",
+        "text": "Haha, vor dir lässt sich auch nichts verbergen, Endmin. Ja, meine Mutter hatte alles geplant – Kaufmannsschule, TAHK beitreten, in ihre Fußstapfen treten. Tja, dass ich hier einsteige, stand nicht auf ihrem Plan. Also … bitte mach Endfield zum größten Ding auf Talos-II, sonst ruft sie mich wieder zurück! Ach ja, falls du mal im Gürtel einkaufst, nimm diese Karte mit. Psst … Ja, der Laden, den jeder kennt."
+      },
+      {
+        "title": "Geplauder 1",
+        "text": "Ich weiß, ich bin nicht die stärkste Kämpferin da draußen – deshalb sind Vertrauen und Teamwork unsere beste Verteidigung. Jetzt verstehst du, warum diese Leuchtpistole so wichtig ist!"
+      },
+      {
+        "title": "Geplauder 2",
+        "text": "Willst du wissen, wie ich Z7 am Laufen halte? Eigentlich ganz einfach: alles essen, was Catcher kocht, Fluorite Fliegenfallen schenken, mit Estella ihre Metal-Tracks durchpowern und über Antals Witze lachen. Glaub mir, es funktioniert."
+      },
+      {
+        "title": "Geplauder 3",
+        "text": "Unsere erste gemeinsame Mission war nur ein einfacher Begleitauftrag – wir halfen den Ingenieuren von Endfield beim Bau eines Staudamms im Grenzgebiet. Klingt einfach, oder? Wir haben es so vermasselt, dass wir ein Handbuch mit den „101 Dingen, die man vermeiden sollte“ hätten schreiben können. Aber als der Damm endlich fertig war und wir hüfttief im kalten Wasser standen … das Erfolgserlebnis? Das war echt."
+      },
+      {
+        "title": "Geplauder 4",
+        "text": "Wenn du uns anführen würdest, Endmin … würde ich sagen, Estella und Antal geben uns Deckung, Catcher und ich ziehen die Aufmerksamkeit auf uns, und Fluorite landet den finalen Schlag. Moment, du hast einen ganz anderen Plan?"
+      },
+      {
+        "title": "Geplauder 5",
+        "text": "Willst du mein Zeugnis sehen? Hm, ich habe überall eine 1+, außer in der Wirtschaftssimulation im zweiten Jahr. Meine Teamkollegen haben auf mich gezählt, und ups … ich habe die anderen Teams irgendwie in den Bankrott getrieben. Der Professor hat mir später gesagt, dass auf Talos-II die Nullsummenstrategie nicht der beste Ansatz ist. Das war meine einzige 1-."
+      },
+      {
+        "title": "Thema: Catcher",
+        "text": "Alle sagen, Catcher sei ein toller Teamkollege, aber ehrlich gesagt ist er derjenige, der am meisten Hilfe braucht. Ich habe bei den Teambesprechungen immer Kaffee für alle gekocht, und er hat ihn zwei Monate lang einfach jedes Mal getrunken – bis wir herausfanden, dass er allergisch war! Da habe ich ihn auf heiße Schokolade umgestellt."
+      },
+      {
+        "title": "Thema: Fluorite",
+        "text": "Einige Leute haben Angst vor Fluorite – wegen ihrer Art zu sprechen und ihrer Herkunft. Aber wenn man sie kennenlernt, erkennt man den Mut und den Gerechtigkeitssinn, der sich hinter dieser Kapuze verbirgt. Glaub mir, du wirst es nicht bereuen."
+      },
+      {
+        "title": "Thema: Estella",
+        "text": "Noch eine Beschwerde über Estellas mangelnde Motivation? Nein, das stimmt nicht. Schau dir nur ihre Bilanz an – bei ihr dreht sich alles um Nervenkitzel, Abenteuer und harte Arbeit!"
+      },
+      {
+        "title": "Thema: Antal",
+        "text": "Ach, du verstehst Antals Humor nicht? *kicher* Versuch mal, es aus seiner Perspektive zu betrachten, vielleicht verstehst du seinen Gedankengang und findest das lustig … Hahaha!"
+      },
+      {
+        "title": "Ressource/Sammelobjekt entdeckt 1",
+        "text": "Ich glaube, ich habe da drüben etwas Interessantes entdeckt … Sehen wir uns das an!"
+      },
+      {
+        "title": "Ressource/Sammelobjekt entdeckt 2",
+        "text": "Wertvolles Objekt identifiziert. Erbitte Genehmigung zum Einleiten des Bergungsvorgangs."
+      },
+      {
+        "title": "Unerforschter Bereich entdeckt",
+        "text": "Unbekannten Bereich erkannt. Warte auf weitere Handlungsanweisungen."
+      },
+      {
+        "title": "Starker Gegner entdeckt",
+        "text": "Hochrisikoziel erkannt. Immer mit der Ruhe, wir haben dafür trainiert."
+      },
+      {
+        "title": "Abbau 1",
+        "text": "Diese Mineralien sind für Endfield essenzielles Material."
+      },
+      {
+        "title": "Abbau 2",
+        "text": "Ich helfe dir! Wir sind doch ein Team, oder?"
+      },
+      {
+        "title": "Kiste öffnen",
+        "text": "Super! Anscheinend haben wir da was richtig Gutes gefunden!"
+      },
+      {
+        "title": "Aurylen erhalten",
+        "text": "Die Beschaffung von Aurylen hat bei unseren Missionen oberste Priorität. Ich frage mich, welches Geheimnis es birgt …"
+      },
+      {
+        "title": "Eliminierung der Verderbnis",
+        "text": "Sehr gut, noch eine Hürde gemeistert! Weiter zum Ziel!"
+      },
+      {
+        "title": "Ausruhen",
+        "text": "Puh, jetzt kann ich endlich meinen Kaffee genießen. Ach ja, ich sollte auch noch die nächsten Schritte planen, meine Ausrüstung zusammenpacken und meine Tasche prüfen."
+      },
+      {
+        "title": "Taktische Nutzung 1",
+        "text": "Bleib ruhig, wir flicken dich erst zusammen."
+      },
+      {
+        "title": "Taktische Nutzung 2",
+        "text": "Gerade noch rechtzeitig!"
+      },
+      {
+        "title": "Gefahrenwarnung",
+        "text": "In Deckung, SOFORT!"
+      },
+      {
+        "title": "Verletzt",
+        "text": "Eine gute Hauptfrau … sollte niemals zurückweichen …"
+      },
+      {
+        "title": "0 LP",
+        "text": "Selbst wenn ich falle … werde ich wieder aufstehen."
+      },
+      {
+        "title": "Teammotivation 1",
+        "text": "Wow, perfekte Ausführung!"
+      },
+      {
+        "title": "Teammotivation 2",
+        "text": "Fantastisch! Ich bin schwer beeindruckt!"
+      },
+      {
+        "title": "Motivationsreaktion 1",
+        "text": "Wir schaffen alles mit Teamwork!"
+      },
+      {
+        "title": "Motivationsreaktion 2",
+        "text": "Ohne euch hätte ich das nicht geschafft!"
+      },
+      {
+        "title": "Kampf beginnt 1",
+        "text": "Jetzt gilt’s! Führe Plan A aus!"
+      },
+      {
+        "title": "Kampf beginnt 2",
+        "text": "Los geht’s! Ich vertraue euch allen bedingungslos!"
+      },
+      {
+        "title": "Kampfsieg 1",
+        "text": "Als Nächstes kommen Einsatznachbesprechung und Kampfabschlussanalyse … Aber zuerst sollten wir uns über unseren Sieg freuen!"
+      },
+      {
+        "title": "Kampfsieg 2",
+        "text": "Wir schaffen das – langsam, aber sicher."
+      },
+      {
+        "title": "Kampfsieg 3",
+        "text": "Gut gemacht. Wir alle haben unseren Teil für Endfield beigetragen!"
+      },
+      {
+        "title": "Kampfsieg 4",
+        "text": "Ein makelloser Sieg lehrt uns nur wenig. Nur aus Fehlern lernen wir."
+      },
+      {
+        "title": "Niederlage im Kampf",
+        "text": "Aus Fehlern lernen wir. Nächstes Mal sind wir sicherlich besser."
+      },
+      {
+        "title": "Abschlussangriff 1",
+        "text": "Sieh genau zu!"
+      },
+      {
+        "title": "Abschlussangriff 2",
+        "text": "Durchdringender Schlag!"
+      },
+      {
+        "title": "Kampffertigkeit 1",
+        "text": "Gebiet durchkämmen!"
+      },
+      {
+        "title": "Kampffertigkeit 2",
+        "text": "Platz da!"
+      },
+      {
+        "title": "Kampffertigkeit 3",
+        "text": "Jetzt wird’s heiß!"
+      },
+      {
+        "title": "Kombofertigkeit bereit 1",
+        "text": "Jetzt ist der richtige Augenblick!"
+      },
+      {
+        "title": "Kombofertigkeit bereit 2",
+        "text": "Los, im Team sind wir stark!"
+      },
+      {
+        "title": "Kombo wirken 1",
+        "text": "Hmpf! Durchbrennen!"
+      },
+      {
+        "title": "Kombo wirken 2",
+        "text": "Jetzt zünden!"
+      },
+      {
+        "title": "Wuchtschlag 1",
+        "text": "Du bist erledigt!"
+      },
+      {
+        "title": "Wuchtschlag 2",
+        "text": "Hier ist Schluss!"
+      },
+      {
+        "title": "Ultimative Fertigkeit 1",
+        "text": "Team, folgt meinem Signal! AUF GEHT’S!"
+      },
+      {
+        "title": "Ultimative Fertigkeit 2",
+        "text": "Möge das Hanabi sich erheben!"
+      },
+      {
+        "title": "Ultimative Fertigkeit 3",
+        "text": "Siegstrategie! Los geht’s!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

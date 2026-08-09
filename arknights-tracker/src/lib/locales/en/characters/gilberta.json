@@ -120,7 +120,333 @@
         "name": "Culture",
         "description": "Culture: Romantic Footnote\nWho bookmarked the sweetest part of the romance? And who scribbled something next to the drawing of the happily ever after?"
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Operation Prep 1",
+        "text": "Hi, Endmin. Oh, the weather is so lovely today."
+      },
+      {
+        "title": "Operation Prep 2",
+        "text": "Ready for a really long trip?"
+      },
+      {
+        "title": "Adding to Team 1",
+        "text": "Hmm. What colors will Talos be sparkling in today?"
+      },
+      {
+        "title": "Adding to Team 2",
+        "text": "Heading towards our next destination?"
+      },
+      {
+        "title": "Switching Weapon",
+        "text": "It doesn't matter which new weapon I'm getting. I'll just add a dash of Arts... And look! It's floating in the air!"
+      },
+      {
+        "title": "Switching Gear",
+        "text": "Mmm. They fit me so well! I'll suit up with them for the next journey. Say, Endmin, got any ideas on matching and style?"
+      },
+      {
+        "title": "Ability Matrix Activation",
+        "text": "Got a few tips to get a better view of the road. Broaden your horizons, learn from the experiences ... and add a dash of imagination!"
+      },
+      {
+        "title": "Watching Combat Records",
+        "text": "Remember how it felt... Find the right intensity... Up it goes!"
+      },
+      {
+        "title": "Operator Promotion 1",
+        "text": "Does the promotion mean that ... I'm allowed to head to places even further away? Heheh. I've got everything packed and ready. When are we setting off?"
+      },
+      {
+        "title": "Operator Promotion 2",
+        "text": "I wanna be the Endmin's ... I mean, I want to be everybody's most reliable support. But there are times when I get a little worried about being ... qualified enough."
+      },
+      {
+        "title": "Operator Promotion 3",
+        "text": "Will I get something more special in the next promotion...? What am I hoping for? Hmm ... how about a day of fun together, Endmin?"
+      },
+      {
+        "title": "Operator Promotion 4",
+        "text": "Every time I looked back at all those lengthy journeys I've completed, all those tiny emotions would simply well up within me. That was the exact moment when I knew ... I'm simply in love with my work."
+      },
+      {
+        "title": "Operator Reporting for Duty",
+        "text": "Hi there! Oh, you have the rosy scent of beautiful memories ... like an incomplete letter destined for a special place. I wonder where that might be."
+      },
+      {
+        "title": "Standing by 1",
+        "text": "Looky here! The Flying Miss Messenger got a special letter for you!"
+      },
+      {
+        "title": "Standing by 2",
+        "text": "Ciao! Wanna head out for a walk? The colors of the sky look absolutely fabulous today!"
+      },
+      {
+        "title": "Assigning to Facility",
+        "text": "Don't worry. Leave it to me!"
+      },
+      {
+        "title": "Greeting 1",
+        "text": "Endmin! What a coincidence! How about we take a stroll along the Bridge?"
+      },
+      {
+        "title": "Greeting 2",
+        "text": "Busy, Endmin? Don't forget to take a break, okay?"
+      },
+      {
+        "title": "Dijiang Idle Chatter 1",
+        "text": "I just love collecting lipsticks of all sorts of colors and flavors. I can't help but wonder if they add sparkling hues and tints to our words?"
+      },
+      {
+        "title": "Dijiang Idle Chatter 2",
+        "text": "Talos adds a brilliant spectrum of colors to the sky of Talos-II. Those unexpected spectacles with flashes of radiance... Aren't they simply romantic, Endmin?"
+      },
+      {
+        "title": "Dijiang Idle Chatter 3",
+        "text": "Look at what I brought, Endmin! Mini-lamps with all sorts of colors PLUS a little incense burner from Witching Hour. I'm thinking if we could ... use them to decorate your cabin together, Endmin? Once the lights are off, your place will be as brilliant as the starry night! Come on, what do you say?"
+      },
+      {
+        "title": "Dijiang Idle Chatter 4",
+        "text": "Hmm... Characters in novels keep hiding their feelings. Why? There were so many invitations they failed to deliver, so many letters they failed to send, and so many things they failed to say... It's so obviously simple but they just couldn't find the courage to convey their feelings... Now I could easily invite you to an adventure or give you fun prezzies... I wonder where the difference is?"
+      },
+      {
+        "title": "Dijiang Idle Chatter 5",
+        "text": "Miss Akekuri gave me this special talisman. She told me that my wishes will eventually come true if I carry it around with me. Now, I wish that ... everyone who hires me for a letter delivery will have their wishes fulfilled! Heheh! I hope this wish doesn't sound too greedy!"
+      },
+      {
+        "title": "Dijiang Idle Chatter 6",
+        "text": "I always dream about the places I've seen. And amidst my blurry dreamscapes, there's always a figure standing in silence, as though waiting for a person ... or a letter. Recently, I've been getting a clearer view of that figure — and it's someone whom I'm ... pretty familiar with."
+      },
+      {
+        "title": "Offering Gifts",
+        "text": "Surprise, Endmin! I picked something super special, just for you. C'mon, guess what it is!"
+      },
+      {
+        "title": "Accepting Gifts",
+        "text": "Is this for me? Oh, thank you so much! It's getting the most conspicuous spot in my cabin!"
+      },
+      {
+        "title": "Trust Dialog 1",
+        "text": "The first letter I delivered was a recommendation that Surgeon Warfarin wrote for me. I was a little nervous when I first stepped aboard Dijiang. Warfarin told me to: \"Wait for the Endministrator.\" And I kept thinking: \"What's this Endmin like?\" But seeing you in person after your accidental awakening — all my worries just faded away. I got to admit, I'm still a little nervous..."
+      },
+      {
+        "title": "Trust Dialog 2",
+        "text": "I love solo flights after the sun has set. The night sky lets me gaze upon twinkling stars. Perhaps they have plenty of stories of their own. Perhaps at those very moments, there were others who were thinking the same thing ... and looking at the same night sky together with me..."
+      },
+      {
+        "title": "Trust Dialog 3",
+        "text": "Loneliness is the messengers' companion, but I could never get used to it. Whenever I reached a distant place, I would take out my compass to find my bearings towards Rhodes Island. Surgeon Warfarin is there, along with memories that will never fade. Now, I'm traveling down a path where new friends and encounters await. Just thinking about this gives me warm, cozy feels as well as hope for the journey ahead. That's right. I want to be a messenger who's never lonely."
+      },
+      {
+        "title": "Trust Dialog 4",
+        "text": "I don't know... Seeing a lonely star would give me an indescribable sense of loss and regret... Oh twinkle, twinkle little star, how I wonder from afar... Could you be, across that sky so wide, still waiting for your star to shine beside?"
+      },
+      {
+        "title": "Trust Dialog 5",
+        "text": "When I'd just left the Woods, I noticed the blank letter by my side. It felt like a symbol of my confusion... And I always wondered why was I the only one who had it. Should I write something on it? And who should I deliver this letter to? I journeyed far yet failed to find my answers. But now ... I believe I should jot down all that I've felt and fantasized ... then deliver it to my most important and special someone."
+      },
+      {
+        "title": "Chat 1",
+        "text": "A journey that I remember most? Hmm... Endmin, have you heard about Alloycarrot? Cautuses who live at that place eat carrots. All. The. Time! And they have all sorts of carrot recipes! I visited the city twice to deliver medication to the TGCC running the carrot farms. If I can visit that place again, I hope I'll get to see the subterranean Big Borehole... Ah! And I'll definitely book a place at the Cabbage Inn... Not that I hate carrots, I just want a bit more variety..."
+      },
+      {
+        "title": "Chat 2",
+        "text": "Weightlessness is a constant feeling I have. I always feel like a balloon gently skimming across the heavy earth. Yet I do whatever I can to make it float with me. Sounds like I'm fantasizing, doesn't it? But even while flying, I would cast a long shadow upon the land — as if something was tethering me to the earth. Just like how these letters link me ... to you."
+      },
+      {
+        "title": "Chat 3",
+        "text": "What about this book? Well, it's an anthology of short stories of all sorts of messengers. One of them navigated through a Catastrophe to save people ... only to be called out as an accursed harbinger of disaster. Another just wanted a peaceful delivery, only to topple an entire nation through a series of unexpected events. And there's this young but clumsy messenger who lost their deliveries on the first day of the job... Heheheh. I love every single tale in this book."
+      },
+      {
+        "title": "Chat 4",
+        "text": "I've heard plenty of people talk about Terra in New Wrankwood. Some lauded her warmth. Others cursed her lack of mercy. A few hated her devastation, and there were those who missed her beauty... While thespians and writers devote entire lifetimes to that part of our history, the philosophers believe that we should move on and embrace a new way of thinking... I personally treat Terra as a familiar yet distant name... A world of beautiful landscapes and familiar faces... What about you, Endmin?"
+      },
+      {
+        "title": "Chat 5",
+        "text": "No messengers could guess the contents of a letter. But when I see fancy stickers and decorations on the envelope ... I imagine warm cozy stories waiting to happen. An envelope wrinkled by the rain, on the other hand, gives me the vibes of a difficult journey or heartbreaking separation... The letter writers rarely share their feelings with the messengers. They never know how someone whom they've never met ... actually shares their happiness ... and sadness."
+      },
+      {
+        "title": "Topic: Warfarin",
+        "text": "Surgeon Warfarin? She looked great and appeared to be her same old self. But there was this time when Warfarin remembered my birthday wrong ... and she looked really guilty while apologizing to me... It wasn't that big of a deal. Then she called me by the wrong name in panic... I've never seen her like that. How would I describe it...? Hmm. She appeared really confused ... and lost. And even after I left, she brooded by the dinner table by herself for a really, really long time..."
+      },
+      {
+        "title": "Topic: Mysterious Swordmancer",
+        "text": "I met a mysterious lady at Rhodes Island quite a while ago. She wielded a unique-looking blade, and stood by the tranquil lake. Suddenly, her blade flashed. It left only a gentle ripple upon the lake waters, but clove an entire cloud in two... She gave me this letter and hoped that I could deliver it to the Endministrator. And once Operator Chen Qianyu finally comes into her own, you can then pass it on to her..."
+      },
+      {
+        "title": "Topic: Avywenna",
+        "text": "Avywenna is always delivering to dangerous places... She might be smiling all the time, but her eyes are hiding some heavy secrets... Secrets that she could not share with anyone... I've seen plenty of other messengers who share the same gaze... And I know what it means..."
+      },
+      {
+        "title": "Topic: The Dangerous Wildlands",
+        "text": "Talos-II is filled with all sorts of unknown dangers... I've read Ardelia's report. The hazards of Talos-II are far more unpredictable than those of faraway Terra. Since messengers have to navigate through areas with frequent Blight events, we often carry gear for emergency first aid or evac. Since I can fly, I often carry extra sets of emergency gear and drop them off at resting areas in the wildlands. I hope this can help people who run into trouble."
+      },
+      {
+        "title": "Topic: Self",
+        "text": "While I was at Rhodes Island, I thought Surgeon Warfarin would give me a few missions. But she told me that Rhodes Island was not in a position to make itself known to the public. However, since I'm a messenger, she told me I would do better by traveling under the open skies. And that's exactly what I did — spent two years wandering Talos-II, getting to know this world before finally arriving here."
+      },
+      {
+        "title": "Resource/Collectible Detected 1",
+        "text": "Something calls for our attention over there."
+      },
+      {
+        "title": "Resource/Collectible Detected 2",
+        "text": "Look there! Maybe there's a surprise waiting for us!"
+      },
+      {
+        "title": "Unexplored Area Detected",
+        "text": "According to messenger standards: Be extra cautious when entering uncharted territories!"
+      },
+      {
+        "title": "Powerful Enemy Discovered",
+        "text": "Be extra careful! That enemy looks really dangerous."
+      },
+      {
+        "title": "Mining 1",
+        "text": "Let's pack up these minerals!"
+      },
+      {
+        "title": "Mining 2",
+        "text": "I'm here to help. Heehee."
+      },
+      {
+        "title": "Opening a Crate",
+        "text": "Wow! This is exactly what we need!"
+      },
+      {
+        "title": "Acquiring Aurylene",
+        "text": "Heheh, caught it before it flew away."
+      },
+      {
+        "title": "Eliminating the Blight",
+        "text": "We just opened up the way for future deliveries!"
+      },
+      {
+        "title": "Rest",
+        "text": "Proper rest prepares us for a longer journey."
+      },
+      {
+        "title": "Tactical Use 1",
+        "text": "Try this. It should help!"
+      },
+      {
+        "title": "Tactical Use 2",
+        "text": "Phooo... Feeling better already."
+      },
+      {
+        "title": "Danger Warning",
+        "text": "Watch it! Don't get hurt!"
+      },
+      {
+        "title": "Injured",
+        "text": "My body ... is feeling so heavy..."
+      },
+      {
+        "title": "0 HP",
+        "text": "I wanna fly ... one last time..."
+      },
+      {
+        "title": "Team Encouragement 1",
+        "text": "Wow! You can actually do that?!"
+      },
+      {
+        "title": "Team Encouragement 2",
+        "text": "Awesome! Can we do it again?"
+      },
+      {
+        "title": "Encouragement Response 1",
+        "text": "Heheh. You're too kind."
+      },
+      {
+        "title": "Encouragement Response 2",
+        "text": "Let's keep going and finish this!"
+      },
+      {
+        "title": "Combat Begins 1",
+        "text": "We'll end this fight easily!"
+      },
+      {
+        "title": "Combat Begins 2",
+        "text": "And I was hoping you'd say that."
+      },
+      {
+        "title": "Combat Victory 1",
+        "text": "Heheh. I pulled it off, right?"
+      },
+      {
+        "title": "Combat Victory 2",
+        "text": "Best thing I've done today!"
+      },
+      {
+        "title": "Combat Victory 3",
+        "text": "Yeah! We can now continue our journey."
+      },
+      {
+        "title": "Combat Victory 4",
+        "text": "We made it to the end... And the difficulties were worth their while."
+      },
+      {
+        "title": "Combat Defeat",
+        "text": "The road might be fraught with hardship, but we will start our journey again, and ensure a successful delivery."
+      },
+      {
+        "title": "Final Strike 1",
+        "text": "Step aside!"
+      },
+      {
+        "title": "Final Strike 2",
+        "text": "Go!"
+      },
+      {
+        "title": "Battle Skill 1",
+        "text": "Stick together, people!"
+      },
+      {
+        "title": "Battle Skill 2",
+        "text": "You can't escape gravity!"
+      },
+      {
+        "title": "Battle Skill 3",
+        "text": "Better watch where you step!"
+      },
+      {
+        "title": "Combo Skill Ready 1",
+        "text": "Gravity field ready!"
+      },
+      {
+        "title": "Combo Skill Ready 2",
+        "text": "Who wants to float?"
+      },
+      {
+        "title": "Combo Casting 1",
+        "text": "Now, fly!"
+      },
+      {
+        "title": "Combo Casting 2",
+        "text": "Have fun floating!"
+      },
+      {
+        "title": "Finisher 1",
+        "text": "Surprise!"
+      },
+      {
+        "title": "Finisher 2",
+        "text": "How about this?"
+      },
+      {
+        "title": "Ultimate 1",
+        "text": "Let's flip the world!"
+      },
+      {
+        "title": "Ultimate 2",
+        "text": "Might of the land!"
+      },
+      {
+        "title": "Ultimate 3",
+        "text": "Cozy up with gravity!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

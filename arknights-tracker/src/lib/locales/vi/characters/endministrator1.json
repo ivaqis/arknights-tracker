@@ -93,7 +93,229 @@
         "name": "???",
         "description": ""
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Chuẩn Bị Tác Chiến 1",
+        "text": "Tôi nghe thấy tiếng Originium ngân vang."
+      },
+      {
+        "title": "Chuẩn Bị Tác Chiến 2",
+        "text": "Endfield sẽ không ngừng tiến bước."
+      },
+      {
+        "title": "Đang thêm vào đội 1",
+        "text": "Đã vào vị trí, Dijiang."
+      },
+      {
+        "title": "Đang thêm vào đội 2",
+        "text": "Đến lúc rồi!"
+      },
+      {
+        "title": "Đang đổi vũ khí",
+        "text": "Không tệ chút nào."
+      },
+      {
+        "title": "Đang đổi trang bị",
+        "text": "Một tuyệt phẩm của ngành chế tạo công nghiệp."
+      },
+      {
+        "title": "Kích hoạt Ma Trận Năng Lực",
+        "text": "Tôi nhớ rõ cảm giác này..."
+      },
+      {
+        "title": "Xem Hồ Sơ Chiến Đấu",
+        "text": "Tôi sẽ không bao giờ quên hình ảnh ấy."
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 1",
+        "text": "Thêm một bước nữa..."
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 2",
+        "text": "Tôi sẽ luôn bảo vệ Endfield. Luôn luôn."
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 3",
+        "text": "Quá khứ và hiện tại phải hòa làm một."
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 4",
+        "text": "Tôi đã nghe thấy giọng cô ấy, như tiếng thì thầm vọng lại trong giấc mơ. Bao lần ta mơ về một đại dương vô tận, nơi gợi nỗi buồn, khơi lại ký ức... và cũng là nơi tôi luyện ý chí."
+      },
+      {
+        "title": "Chờ Lệnh 1",
+        "text": "Vẫn còn chờ gì sao?"
+      },
+      {
+        "title": "Chờ Lệnh 2",
+        "text": "Originium sẽ mở đường cho chúng ta."
+      },
+      {
+        "title": "Nhận quà",
+        "text": "Cảm ơn rất nhiều!"
+      },
+      {
+        "title": "Phát hiện Tài Nguyên/Có Thể Thu Thập 1",
+        "text": "Nhìn kìa, đằng đó..."
+      },
+      {
+        "title": "Phát hiện Tài Nguyên/Có Thể Thu Thập 2",
+        "text": "Có gì đó rất quan trọng ở phía kia!"
+      },
+      {
+        "title": "Phát Hiện Khu Vực Chưa Khám Phá",
+        "text": "Khu vực quanh đây cần được khảo sát kỹ hơn."
+      },
+      {
+        "title": "Phát hiện Kẻ Địch Mạnh",
+        "text": "Kẻ địch nguy hiểm cao. Tiếp cận cẩn trọng."
+      },
+      {
+        "title": "Khai thác 1",
+        "text": "Khoáng vật này có thể sẽ hữu ích."
+      },
+      {
+        "title": "Khai thác 2",
+        "text": "Để ta giúp một tay."
+      },
+      {
+        "title": "Mở Thùng",
+        "text": "Chuyến đi này đáng giá đấy."
+      },
+      {
+        "title": "Nhận Aurylene",
+        "text": "Cảm giác quen thuộc."
+      },
+      {
+        "title": "Xua Tan Nhiễm Khuẩn",
+        "text": "Đã loại bỏ Nhiễm Khuẩn."
+      },
+      {
+        "title": "Nghỉ ngơi",
+        "text": "Mọi người đã được nghỉ ngơi."
+      },
+      {
+        "title": "Sử Dụng Vật Phẩm Chiến Thuật 1",
+        "text": "Cảm thấy ổn hơn chưa?"
+      },
+      {
+        "title": "Sử Dụng Vật Phẩm Chiến Thuật 2",
+        "text": "Giờ thì khỏe hơn rồi."
+      },
+      {
+        "title": "Cảnh Báo Nguy Hiểm",
+        "text": "Đang đến! Cẩn thận!"
+      },
+      {
+        "title": "Bị Thương",
+        "text": "Tôi vẫn còn chiến đấu được..."
+      },
+      {
+        "title": "0 HP",
+        "text": "Tôi xin lỗi... Phần còn lại nhờ cả vào cậu..."
+      },
+      {
+        "title": "Cổ Vũ Đội 1",
+        "text": "Ra đòn mượt thật đấy."
+      },
+      {
+        "title": "Cổ Vũ Đội 2",
+        "text": "Chúng ta phối hợp rất ăn ý."
+      },
+      {
+        "title": "Đáp Lại Lời Cổ Vũ 1",
+        "text": "Quá khen rồi."
+      },
+      {
+        "title": "Đáp Lại Lời Cổ Vũ 2",
+        "text": "Sự phối hợp của cả đội ngày càng hoàn hảo."
+      },
+      {
+        "title": "Bắt Đầu Chiến Đấu 1",
+        "text": "Đã đến lúc chiến đấu."
+      },
+      {
+        "title": "Bắt Đầu Chiến Đấu 2",
+        "text": "Có tôi ở bên."
+      },
+      {
+        "title": "Thắng Trận 1",
+        "text": "Thêm một bước nữa, các nhân viên Endfield."
+      },
+      {
+        "title": "Thắng Trận 2",
+        "text": "Làm tốt lắm, mọi người."
+      },
+      {
+        "title": "Thắng Trận 3",
+        "text": "Chúng ta xử lý ổn đấy chứ!"
+      },
+      {
+        "title": "Thắng Trận 4",
+        "text": "Mọi người đều ổn chứ?"
+      },
+      {
+        "title": "Bại Trận",
+        "text": "Không cần lo lắng. Chúng ta sẽ tập hợp lại và giải quyết tất cả."
+      },
+      {
+        "title": "Đòn Dứt Điểm 1",
+        "text": "Hãy cầm lấy!"
+      },
+      {
+        "title": "Đòn Dứt Điểm 2",
+        "text": "Xem này!"
+      },
+      {
+        "title": "KN Chiến Đấu 1",
+        "text": "Giao chiến!"
+      },
+      {
+        "title": "KN Chiến Đấu 2",
+        "text": "Nghiền nát!"
+      },
+      {
+        "title": "KN Chiến Đấu 3",
+        "text": "Xử chúng đi!"
+      },
+      {
+        "title": "Chuẩn Bị KN Liên Hoàn 1",
+        "text": "Sẵn sàng tấn công."
+      },
+      {
+        "title": "Chuẩn Bị KN Liên Hoàn 2",
+        "text": "Tín nhiệm tôi nào."
+      },
+      {
+        "title": "Thi Triển Liên Hoàn 1",
+        "text": "Kết Tinh!"
+      },
+      {
+        "title": "Thi Triển Liên Hoàn 2",
+        "text": "Đối mặt với kết cục đi!"
+      },
+      {
+        "title": "Kết Liễu 1",
+        "text": "Chấm dứt ở đây!"
+      },
+      {
+        "title": "Kết Liễu 2",
+        "text": "Tóm được rồi!"
+      },
+      {
+        "title": "Tuyệt Kỹ 1",
+        "text": "Hết cơ hội rồi."
+      },
+      {
+        "title": "Tuyệt Kỹ 2",
+        "text": "Cái kết đón chờ."
+      },
+      {
+        "title": "Tuyệt Kỹ 3",
+        "text": "Hạ màn thôi."
+      }
+    ]
   },
   "potentials": {
     "potential1": {

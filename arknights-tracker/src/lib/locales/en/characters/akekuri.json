@@ -114,7 +114,329 @@
         "name": "Sports",
         "description": "Sports: Integrated Physical Training\nAkekuri has set aside fashion, fine arts, literature, and other things that once interested her. Instead, she now spends her time exercising."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Operation Prep 1",
+        "text": "Prepped and primed! Let's hit it, team!"
+      },
+      {
+        "title": "Operation Prep 2",
+        "text": "This is our chance to learn and grow!"
+      },
+      {
+        "title": "Adding to Team 1",
+        "text": "Akekuri, Op Z7, reporting in! Excited to join the mission, let's make it a success!"
+      },
+      {
+        "title": "Adding to Team 2",
+        "text": "Awesome, another task from the Endmin! What better way to learn than this!"
+      },
+      {
+        "title": "Switching Weapon",
+        "text": "A new weapon, hmm ... definitely feels unique. Alright, I've gotta come up with fresh tactics and strategies!"
+      },
+      {
+        "title": "Switching Gear",
+        "text": "Hmm, fits me just right! I'll be sure to send my feedback to the Arsenal soon."
+      },
+      {
+        "title": "Ability Matrix Activation",
+        "text": "This feels like stacking up credits, just not the kind you get from class."
+      },
+      {
+        "title": "Watching Combat Records",
+        "text": "So this is what an elite debriefing looks like ... truly eye-opening!"
+      },
+      {
+        "title": "Operator Promotion 1",
+        "text": "Ohhh, a promotion? What an honor! Feels like a nod to me and the whole Z7 crew. Rest assured, we'll keep pushing forward!"
+      },
+      {
+        "title": "Operator Promotion 2",
+        "text": "More risky missions to come? Nope, I'm more excited than scared. It's a sign of your trust, and I see it as a great chance for us to learn and grow."
+      },
+      {
+        "title": "Operator Promotion 3",
+        "text": "Endmin, got a bit of time later? The team's throwing you a little celebration party. I baked a Mont Blanc cake just for you, and trust me, you won't wanna miss it!"
+      },
+      {
+        "title": "Operator Promotion 4",
+        "text": "There's a theory I learned in class that everyone will eventually be promoted to a role they can't handle. So, if I get stuck for too long, Endmin, please be sure to step in and offer me your guide."
+      },
+      {
+        "title": "Operator Reporting for Duty",
+        "text": "Captain Akekuri of Operation Team Z7 reporting in! The operations dossier, budget summary, and action plan are ready for review. Which would you like to read first?"
+      },
+      {
+        "title": "Standing by 1",
+        "text": "A strong team is one without any weak links."
+      },
+      {
+        "title": "Standing by 2",
+        "text": "C'mon, let me do something for Endfield!"
+      },
+      {
+        "title": "Assigning to Facility",
+        "text": "You can count on me. I've done the job before."
+      },
+      {
+        "title": "Greeting 1",
+        "text": "Small world, Endmin! You just wrapped up a mission as well?"
+      },
+      {
+        "title": "Greeting 2",
+        "text": "Coffee break, Endmin? I can whip up a fresh pot for you!"
+      },
+      {
+        "title": "Dijiang Idle Chatter 1",
+        "text": "Nice to meet you, Endministrator. I'm Akekuri from Operation Team Z7. Oh, it's okay! We may be newly reformed and flying under the radar for now, but I promise — we're going to make our mark."
+      },
+      {
+        "title": "Dijiang Idle Chatter 2",
+        "text": "Knowing you've been guiding Endfield since day one, I thought you'd be a lot stricter. But you're more easygoing than I expected — heehee, I guess that's part of what makes a true leader!"
+      },
+      {
+        "title": "Dijiang Idle Chatter 3",
+        "text": "I must say, I'd much rather be here in Dijiang than at those so-called \"fancy events\" run by the business elites in Neo Tsukushi. People here are way more relaxed and actually making a real impact."
+      },
+      {
+        "title": "Dijiang Idle Chatter 4",
+        "text": "Have you ever had nama yatsuhashi? It's a traditional Higashi sweet with red beans, matcha, and roasted chestnut flavor. If you're up for it, come along to the next Z7 team meeting."
+      },
+      {
+        "title": "Dijiang Idle Chatter 5",
+        "text": "Hey, Endmin. Wanna sit down for a cup of hot tea? We've got cool stories from the mission to share!"
+      },
+      {
+        "title": "Dijiang Idle Chatter 6",
+        "text": "I love looking up at Talos-II from the Bridge. It's got all my memories — where I grew up, where my family last was, and the places you've changed. Hey, what's with the surprise face? I totally got A+ in planetary geology and modern history!"
+      },
+      {
+        "title": "Offering Gifts",
+        "text": "Ah, Endmin! I got you a little something from the field mission. Hope you like it!"
+      },
+      {
+        "title": "Accepting Gifts",
+        "text": "Wow, a gift for me?! Is it a reward for something I did, or...?"
+      },
+      {
+        "title": "Trust Dialog 1",
+        "text": "Oh, you wanna know why the valedictorian from Neo Tsukushi chose to join Endfield? Truth is, I'm the one who's grateful they chose me. I like everything about my Op Team, far more than any corporate ladder. Here, I get to be a fellow combatant as well as a pioneer."
+      },
+      {
+        "title": "Trust Dialog 2",
+        "text": "My wish? I just hope Mom and Dad can make peace. Dad's been out fighting Aggeloi, while Mom's been running the family store. But why should that mean they have to live separate lives? If they both worked at Endfield, maybe they wouldn't have to choose between duty and family..."
+      },
+      {
+        "title": "Trust Dialog 3",
+        "text": "When I was little, I used to play this game called \"Fight the Aggelos\" with Dad and Uncle. I'd ride on their shoulders like I was the commander. Then, ten years ago, Uncle got called up to the north as a shinobi hacker and never came back. That was when my parents stopped speaking to each other. I almost forgot about those \"battles\" until Endfield brought it all rushing back."
+      },
+      {
+        "title": "Trust Dialog 4",
+        "text": "After applying to reestablish Z7, I went through over a year of intense training and trials. But what truly mattered was meeting Catcher, Fluorite, Estella, and Antal. They're the heart of our team and the reason Z7 has a future."
+      },
+      {
+        "title": "Trust Dialog 5",
+        "text": "Haha, guess there's no hiding anything from you, Endmin. Yeah, my mom had it all planned out — business school, join TGCC, follow in her footsteps. Welp, me joining here was not a part of her script. Sooo ... please make Endfield the biggest deal on Talos-II, or she'll start calling me back! Oh, by the way, if you ever shop in the Band, take this card. Shh... Yes, the store everyone knows about."
+      },
+      {
+        "title": "Chat 1",
+        "text": "I know I'm not the strongest fighter out there — that's why trust and teamwork are our best defense. Now you see why this flare gun matters so much!"
+      },
+      {
+        "title": "Chat 2",
+        "text": "Wanna know how I keep Z7 running smooth? It's actually quite simple — eat everything Catcher cooks, gift Fluorite flytraps, power through Estella's noisy tracks with her, and laugh at Antal's jokes. Trust me, it works."
+      },
+      {
+        "title": "Chat 3",
+        "text": "Our first mission together was just a simple escort gig — helping Endfield engineers build a dam on the frontier. Sounds easy, right? We bungled it so bad we could've written a \"101 Things Not to Do\" handbook. But when the dam was finally finished, standing waist-deep in that cold water... The sense of accomplishment was real."
+      },
+      {
+        "title": "Chat 4",
+        "text": "If you were leading us, Endmin ... I'd say let Estella and Antal cover us, Catcher and I draw the heat, and Fluorite lands the final blow. Wait, you've got a totally different plan?"
+      },
+      {
+        "title": "Chat 5",
+        "text": "You wanna see my report card? Hmm, all A+ except for the business simulation in sophomore year. My teammates were counting on me, so oops... I kinda made the other teams go bankrupt. The professor later told me that in Talos-II, zero-sum strategy isn't the best approach. That was my one and only A-."
+      },
+      {
+        "title": "Topic: Catcher",
+        "text": "Everyone says Catcher's a great teammate, but honestly, he's the one who needs the most care. I kept making coffee for everyone at the team meetings, and he just drank it every time for two months — until we found out he was allergic! That's when I switched him to hot cocoa."
+      },
+      {
+        "title": "Topic: Fluorite",
+        "text": "Some people are scared of Fluorite because of the way she speaks and her background. But if you get to know her, you'll see the courage and sense of justice beneath that hood. Trust me, you won't regret it."
+      },
+      {
+        "title": "Topic: Estella",
+        "text": "Another complaint about Estella lacking motivation? Nah, that's not true. Just look at her record, she's actually all about the thrills, adventures, and hard work!"
+      },
+      {
+        "title": "Topic: Antal",
+        "text": "Oh, you don't get Antal's humor? *Giggle* Try looking at it from his point of view, maybe you'll catch his train of thought and find that funny... Hahaha!"
+      },
+      {
+        "title": "Resource/Collectible Detected 1",
+        "text": "I think I spotted something interesting over there... Let's go check it out!"
+      },
+      {
+        "title": "Resource/Collectible Detected 2",
+        "text": "High-value object identified. Requesting approval to initiate collection operation."
+      },
+      {
+        "title": "Unexplored Area Detected",
+        "text": "Unidentified area detected. Awaiting additional instructions for action."
+      },
+      {
+        "title": "Powerful Enemy Discovered",
+        "text": "High-risk target detected. Stay calm, we've trained for this."
+      },
+      {
+        "title": "Mining 1",
+        "text": "These minerals are essential materials for Endfield."
+      },
+      {
+        "title": "Mining 2",
+        "text": "Let me give you a hand! We're a team, right?"
+      },
+      {
+        "title": "Opening a Crate",
+        "text": "Nice! Looks like we've made quite the haul!"
+      },
+      {
+        "title": "Acquiring Aurylene",
+        "text": "Acquiring Aurylene is our top priority on missions. I wonder what secret it hides..."
+      },
+      {
+        "title": "Eliminating the Blight",
+        "text": "Alrighty, another hurdle down! Onward to our goal!"
+      },
+      {
+        "title": "Rest",
+        "text": "Phew, now I can finally sit down and enjoy my coffee. Oh, I should also plan the next steps, fix up my gear, and check my bag."
+      },
+      {
+        "title": "Tactical Use 1",
+        "text": "Stay calm, let's get you patched up first."
+      },
+      {
+        "title": "Tactical Use 2",
+        "text": "A timely treatment!"
+      },
+      {
+        "title": "Danger Warning",
+        "text": "Take cover, NOW!"
+      },
+      {
+        "title": "Injured",
+        "text": "A good captain ... should never back down..."
+      },
+      {
+        "title": "0 HP",
+        "text": "Even if I fall ... I won't stay down."
+      },
+      {
+        "title": "Team Encouragement 1",
+        "text": "Wow, perfect execution!"
+      },
+      {
+        "title": "Team Encouragement 2",
+        "text": "Beautifully done! I'm amazed!"
+      },
+      {
+        "title": "Encouragement Response 1",
+        "text": "It's all about our teamwork!"
+      },
+      {
+        "title": "Encouragement Response 2",
+        "text": "Couldn't have done it without you all!"
+      },
+      {
+        "title": "Combat Begins 1",
+        "text": "We're going head-to-head, execute Plan A!"
+      },
+      {
+        "title": "Combat Begins 2",
+        "text": "Let's go! I have total faith in y'all!"
+      },
+      {
+        "title": "Combat Victory 1",
+        "text": "Next up is AAR, PCA ... but let's cheer for our victory first!"
+      },
+      {
+        "title": "Combat Victory 2",
+        "text": "We're getting there — slowly but surely."
+      },
+      {
+        "title": "Combat Victory 3",
+        "text": "Great job. We've all done our part for Endfield!"
+      },
+      {
+        "title": "Combat Victory 4",
+        "text": "A flawless win teaches little. It's the flaws that sharpen us."
+      },
+      {
+        "title": "Combat Defeat",
+        "text": "Mistakes help us learn. I'm sure we can do better next time."
+      },
+      {
+        "title": "Final Strike 1",
+        "text": "Watch this!"
+      },
+      {
+        "title": "Final Strike 2",
+        "text": "Piercing strike!"
+      },
+      {
+        "title": "Battle Skill 1",
+        "text": "Area sweep!"
+      },
+      {
+        "title": "Battle Skill 2",
+        "text": "Make way!"
+      },
+      {
+        "title": "Battle Skill 3",
+        "text": "Feel the burn!"
+      },
+      {
+        "title": "Combo Skill Ready 1",
+        "text": "Now's the moment!"
+      },
+      {
+        "title": "Combo Skill Ready 2",
+        "text": "Let's team up!"
+      },
+      {
+        "title": "Combo Casting 1",
+        "text": "Hmph! Blaze through!"
+      },
+      {
+        "title": "Combo Casting 2",
+        "text": "Now ignite!"
+      },
+      {
+        "title": "Finisher 1",
+        "text": "You are finished!"
+      },
+      {
+        "title": "Finisher 2",
+        "text": "This ends here!"
+      },
+      {
+        "title": "Ultimate 1",
+        "text": "Team, follow my flare! Let's GO!"
+      },
+      {
+        "title": "Ultimate 2",
+        "text": "Let the hanabi rise!"
+      },
+      {
+        "title": "Ultimate 3",
+        "text": "Victory strategy, engage!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

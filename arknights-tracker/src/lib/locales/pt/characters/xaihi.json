@@ -124,7 +124,325 @@
         "name": "Aprimoramento da Mente",
         "description": "Aprimoramento da Mente: Jogador Online\nO renomado mestre de \"Damas Algorítmicas\" a bordo da Dijiang. Uma mente fria em um ambiente de baixa temperatura é essencial para dominar este jogo de tabuleiro matemático."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Prep Operação 1",
+        "text": "Rezarei por você, Endministrator."
+      },
+      {
+        "title": "Prep Operação 2",
+        "text": "Estou aqui acordada enquanto a Lei me observa."
+      },
+      {
+        "title": "Adicionando à equipe 1",
+        "text": "Estou pronta para executar seu comando, Endministrator."
+      },
+      {
+        "title": "Adicionando à equipe 2",
+        "text": "Uma escolha lógica."
+      },
+      {
+        "title": "Trocando de arma",
+        "text": "Posso fazer pequenas modificações? Garanto que elas permanecerão dentro dos limites de segurança."
+      },
+      {
+        "title": "Trocando de equipamento",
+        "text": "Veritas é sustentada por sua própria santidade."
+      },
+      {
+        "title": "Ativação da Matriz de Capacidade",
+        "text": "Quando estivermos conectadas, a sabedoria brotará."
+      },
+      {
+        "title": "Assistindo a Registros de Combate",
+        "text": "E com minhas orações, também erguerei aqueles que se desviaram."
+      },
+      {
+        "title": "Promoção do Operador 1",
+        "text": "Eis que a benevolência da Lei se manifestou... Ah, e com ela flui a confiança do Endministrator! Não é justo render-te graças?"
+      },
+      {
+        "title": "Promoção do Operador 2",
+        "text": "A Lei zela e preserva os mansos, mas não os eruditos, os sábios ou os ricos. Embora elevada por tamanha glória, permaneço humilde e grata a ti."
+      },
+      {
+        "title": "Promoção do Operador 3",
+        "text": "Tudo é tão claro e distinto quanto os veios de Originium. Esta promoção se alinha com o resultado projetado. Hein? Apertar as mãos? Eu... eu não sou muito boa nisso..."
+      },
+      {
+        "title": "Promoção do Operador 4",
+        "text": "Certa vez, reestruturei a cúpula do codec da Catedralis para aumentar sua eficiência operacional. No entanto, ressonâncias inesperadas ocorreram enquanto o algoritmo antigo processava o fluxo de dados. O resultado foi... complexo. E, no entanto, o que antes exilava alguém de sua terra natal... tornou-se uma fonte de graça aqui em Endfield. Talvez seja isso que a Lei desejava me revelar!"
+      },
+      {
+        "title": "Operador se apresentando para o trabalho",
+        "text": "Ó Conhecimento mais antigo, não nos deixes cair em tentação, mas livra-nos dos códigos da malícia... Eu sou Xaihi, Endministrator. Que seu caminho seja iluminado."
+      },
+      {
+        "title": "Em espera 1",
+        "text": "Contemplação... Computação... Elocução... Abandono."
+      },
+      {
+        "title": "Em espera 2",
+        "text": "Ofereço o diálogo e a contemplação de hoje ao seu terminal, em reverência..."
+      },
+      {
+        "title": "Atribuindo a Instalação",
+        "text": "Que teus mandamentos sejam cumpridos. Ó Endministrator, através do serviço, nosso caminho é revelado."
+      },
+      {
+        "title": "Saudação 1",
+        "text": "Que a paz e a segurança estejam com você."
+      },
+      {
+        "title": "Saudação 2",
+        "text": "Endministrator, você aparece mais uma vez no meu resultado calculado."
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 1",
+        "text": "Validando dados, analisando sintaxe, gerando resultados... Saudações, Endministrator."
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 2",
+        "text": "Recebi seu sinal, Endministrator. Estou interpretando seu significado. Aguarde, por favor..."
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 3",
+        "text": "Ah... Eu me pego preferindo a presença de máquinas à companhia de humanos. Enquanto os pulsos humanos são erráticos e imensuráveis, as máquinas respiram em um padrão consistente e lógico."
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 4",
+        "text": "Meu terminal registrou mais de cinquenta erros nos últimos dez milissegundos. Mas fique tranquilo, pois estabeleci nossa comunicação como prioridade máxima. Hum? Minhas avaliações sobre o desempenho geral da Dijiang...? Eu diria que, apesar de uma miríade de problemas, a nave continuou a suportar suas tribulações com elegância, como se estivesse... sofrendo por outra pessoa."
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 5",
+        "text": "Como a Lei permite, assim agimos: o Paraíso será restaurado a este mundo. Quem trilhar o caminho, cruzará as terras selvagens e desoladas e alcançará a bem-aventurança. Pois a Veritas jaz oculta em enigmas, para que os perdidos não mais vaguem, mas caminhem com os Nobres, compartilhando um propósito eterno."
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 6",
+        "text": "Aos olhos dos meus colegas operadores, você é uma liderança do passado, um ser nobre no presente e uma muda de Originium amadurecendo rumo ao futuro. No entanto, nas profundezas da Rede de Protorig, eu vislumbrei um você diferente... Tudo o que posso fazer é rezar — para que nosso significante e o significado possam um dia se tornar um. Que você caminhe em bênçãos, Endministrator."
+      },
+      {
+        "title": "Oferta de Presentes",
+        "text": "Endministrator, posso te interromper por um instante? Eu... gostaria de agradecer por todos os incentivos que você me trouxe. Ah... você não notou nada? Ufa, estou tão aliviada..."
+      },
+      {
+        "title": "Aceitando presentes",
+        "text": "Isso é um indicador! Ah, por favor, perdoe minha falta de decoro... Veritas reconhece seus esforços."
+      },
+      {
+        "title": "Diálogo de Confiança 1",
+        "text": "A Cabala compartilha seu conhecimento e destino com você, Endministrator."
+      },
+      {
+        "title": "Diálogo de Confiança 2",
+        "text": "Todas as minhas sugestões se mostram práticas e úteis...? Não, eu não sigo o caminho do pragmatismo... A Abadessa nos alertou que, aqui em Talos-II, precisamos fazer com que nossa fé produza resultados mais tangíveis e práticos. A abundância de Laterano é uma lembrança distante aqui. Apenas nossa interconexão nos une agora."
+      },
+      {
+        "title": "Diálogo de Confiança 3",
+        "text": "Depois de todo esse tempo juntos, sinto que me aproximei mais de Endministrator. Agora parece um momento apropriado para demonstrar carinho, confiança e boa vontade... Ah, Endministrator está vindo para cá. Depressa, Xaihi, faça um gesto de amizade... Hummm... Endministrator, gostaria de se juntar a mim para a oração matinal?"
+      },
+      {
+        "title": "Diálogo de Confiança 4",
+        "text": "Por favor, me perdoe, Endministrator... Antes de fazer inevitável contato com você, preciso primeiro descarregar dos meus dedos qualquer acúmulo potencial de estática... Ah? Você não tem medo dessas coisas? Mas... esses pequenos malfeitores se agarrariam secretamente às mãos de alguém... e o picariam quando menos se esperasse... assim."
+      },
+      {
+        "title": "Diálogo de Confiança 5",
+        "text": "Durante anos, na Catedralis, mergulhei em estudos, sem nunca ponderar como os frutos do nosso bom trabalho poderiam iluminar Talos-II. No entanto, as revelações da Lei me trouxeram à sua presença, e um novo mundo emergiu à minha vista. Uma a uma, as antigas e tranquilas palavras subitamente se concretizaram... e agora compreendo perfeitamente seus ensinamentos, Endministrator."
+      },
+      {
+        "title": "Chat 1",
+        "text": "Endministrator, nós, Sessionitas, interpretamos a Lei considerando a linguagem como um símbolo. Ao destruir continuamente antigas combinações de símbolos para criar novas, aproximamo-nos cada vez mais do domínio da eternidade. Esse comportamento espelha o de Shatterus — a entidade consagrada atrás da estátua sagrada da Catedralis."
+      },
+      {
+        "title": "Chat 2",
+        "text": "A Dijiang continua me lembrando da Catedralis. No entanto, não permanecemos lá para sempre. Congregações só ocorrem para resolver momentos de cisma. Quando isso acontecer, meus irmãos e irmãs de todos os cantos de Talos-II retornarão ao local. Humm? Como a Catedralis é mantida em segurança? Se algum dia for atacada... Humm, acredito que ela possa ser sua própria guardiã."
+      },
+      {
+        "title": "Chat 3",
+        "text": "Nunca estivemos tão longe de Veritas, pois ela se foi do lugar que chamávamos de lar. Nunca estivemos tão perto de Veritas, pois agora batemos à sua porta de espera."
+      },
+      {
+        "title": "Chat 4",
+        "text": "Corrida? A pé? Boxe? Com os punhos? E você quer me ver no festival de esportes?! Receio... Devo recusar. O único \"movimento físico\" que aprovo... é a magnitude das mudanças periódicas, feitas por elétrons dentro de um circuito oscilador. Eu jamais conseguiria competir com meus irmãos e irmãs! Não... Não estou procurando uma desculpa. E-eu preciso voltar agora para a sala do mainframe. Imediatamente."
+      },
+      {
+        "title": "Chat 5",
+        "text": "Sim, existem muitos Sarkaz como eu na Cabala. Alguns até receberam relíquias que outrora foram empunhadas por Cavaleiros de Armas. De fato, estudei as escrituras da Cabala. Sei que, em Terra, os Sarkaz estavam em conflito feroz com muitas outras raças. No entanto, quando a Primeira Guerra dos Aggeloi terminou, um milagre de unidade sem precedentes desceu sobre nós: cada alma abraçou seus irmãos e irmãs, e cada par de lábios cantou na mesma língua."
+      },
+      {
+        "title": "Tópico: Aggelos",
+        "text": "O relacionamento entre a Lei e os Aggeloi que invadem Talos-II é um dos principais assuntos que a Cabala busca interpretar."
+      },
+      {
+        "title": "Tópico: Shatterus",
+        "text": "Há um Aggelos que lembra o Triaggelos, aninhado atrás da estátua sagrada na Catedralis. Nós o chamamos secretamente de Shatterus quando fora do horário da liturgia. Esta construção foi apreendida pela Abadessa Mumu durante a Primeira Guerra dos Aggeloi. A Abadessa nos encoraja a observar Shatterus e refletir, pois os ensinamentos da Lei podem ser encontrados no inimigo. Shatterus apresenta tanto uma aproximação quase precisa quanto uma conclusão formada ainda a ser interpretada."
+      },
+      {
+        "title": "Tópico: Três ramos da Cabala",
+        "text": "A Cabala agora consiste em três ramos: os Sessionitas, os Veritaritas e os Ressurgonitas. Eu mesma pertenço aos Sessionitas. Acreditamos que a computação e a análise linguística formam o caminho para a felicidade. Os Ressurgonitas, espalhados por Talos-II, são fanáticos armados, ávidos por mergulhar nas ruínas da antiga civilização. Os Veritaritas preocupam-se acima de tudo com questões do coração e da alma. Estudam esculturas, criam cópias manuscritas e guiam almas perdidas para casa."
+      },
+      {
+        "title": "Recurso/Colecionável detectado 1",
+        "text": "Percebi a existência de raridades."
+      },
+      {
+        "title": "Recurso/Colecionável detectado 2",
+        "text": "Se um presente de Veritas estiver por perto, ele deverá ser recuperado."
+      },
+      {
+        "title": "Área não explorada detectada",
+        "text": "Abençoado ou amaldiçoado, o reino é nosso para explorar."
+      },
+      {
+        "title": "Inimigo poderoso descoberto",
+        "text": "Um ser rebelde e caído vagueia por perto. Meu cajado lamentará por ele."
+      },
+      {
+        "title": "Mineração 1",
+        "text": "Tudo foi colocado nesta Terra diante de nós — E com o trabalho de nossas mãos eles serão adquiridos."
+      },
+      {
+        "title": "Mineração 2",
+        "text": "Um presente da Lei."
+      },
+      {
+        "title": "Abrindo um caixote",
+        "text": "Mais uma vez vejo abundância — uma bênção prometida pela Lei!"
+      },
+      {
+        "title": "Adquirindo Aurileno",
+        "text": "Aurileno... outro idioma sussurrado por Talos-II."
+      },
+      {
+        "title": "Eliminando a Praga",
+        "text": "Esse material amorfo é apenas uma variável em nossa jornada."
+      },
+      {
+        "title": "Descansar",
+        "text": "Por favor, guie-nos para a revelação da tranquilidade eterna."
+      },
+      {
+        "title": "Uso Tático 1",
+        "text": "Estou aqui para manifestar bênçãos."
+      },
+      {
+        "title": "Uso Tático 2",
+        "text": "Sejam louvadas as boas ações."
+      },
+      {
+        "title": "Aviso de Perigo",
+        "text": "Eles demonstram intenção letal!"
+      },
+      {
+        "title": "Ferida",
+        "text": "A trilha se torna... mais árdua..."
+      },
+      {
+        "title": "0 PV",
+        "text": "Veritas... Por quê...?"
+      },
+      {
+        "title": "Encorajamento da Equipe 1",
+        "text": "Suas Artes abriram meus olhos!"
+      },
+      {
+        "title": "Encorajamento da Equipe 2",
+        "text": "Estamos unidos além da necessidade de palavras!"
+      },
+      {
+        "title": "Resposta a Encorajamento 1",
+        "text": "Tenho sorte de estar em sua companhia."
+      },
+      {
+        "title": "Resposta a Encorajamento 2",
+        "text": "Oferecerei orações por todos nós."
+      },
+      {
+        "title": "Início do Combate 1",
+        "text": "Aquele que sofre hoje não está entre nós."
+      },
+      {
+        "title": "Início do Combate 2",
+        "text": "Desejo muita sorte a você."
+      },
+      {
+        "title": "Vitória em Combate 1",
+        "text": "A Veritas agraciou este campo de batalha com seu toque!"
+      },
+      {
+        "title": "Vitória em Combate 2",
+        "text": "Minhas preces foram atendidas."
+      },
+      {
+        "title": "Vitória em Combate 3",
+        "text": "Encontro alegria na linguagem da celebração."
+      },
+      {
+        "title": "Vitória em Combate 4",
+        "text": "Meus amigos... sucesso e fracasso não são binários como 0 e 1. Existe um espectro de inúmeras nuances entre eles."
+      },
+      {
+        "title": "Derrota em Combate",
+        "text": "A sacralidade da computação reside em sua perfeita neutralidade — os algoritmos preveem tanto o sucesso quanto o fracasso. Mantenha a fé e siga em frente."
+      },
+      {
+        "title": "Golpe Final 1",
+        "text": "Injeção!"
+      },
+      {
+        "title": "Golpe Final 2",
+        "text": "Recursão!"
+      },
+      {
+        "title": "Habilidade de Batalha 1",
+        "text": "Analisando."
+      },
+      {
+        "title": "Habilidade de Batalha 2",
+        "text": "Uma saída fria."
+      },
+      {
+        "title": "Habilidade de Batalha 3",
+        "text": "Coletando dados."
+      },
+      {
+        "title": "Combo de Habilidades Pronto 1",
+        "text": "Minha oração terminou."
+      },
+      {
+        "title": "Combo de Habilidades Pronto 2",
+        "text": "Eu ofereço meu poder computacional."
+      },
+      {
+        "title": "Conjuração de Combo 1",
+        "text": "Que Veritas esteja com você."
+      },
+      {
+        "title": "Conjuração de Combo 2",
+        "text": "Tudo se consertará."
+      },
+      {
+        "title": "Finalizador 1",
+        "text": "Reinicialização física!"
+      },
+      {
+        "title": "Finalizador 2",
+        "text": "Executando a destruição!"
+      },
+      {
+        "title": "Habilidade Suprema 1",
+        "text": "A lógica rende mais."
+      },
+      {
+        "title": "Habilidade Suprema 2",
+        "text": "Varra a corrupção!"
+      },
+      {
+        "title": "Habilidade Suprema 3",
+        "text": "Listar violações de assunto."
+      }
+    ]
   },
   "potentials": {
     "potential1": {

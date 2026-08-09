@@ -128,7 +128,333 @@
         "name": "Créativité",
         "description": "Créativité : amélioratrice de la palanque\nLes palanquiens sont parfois surpris par les plans de Tangtang. Ils n'ont aucune idée d'où lui vient toute cette inspiration."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Préparation de l'opération 1",
+        "text": "Hé, Masque noir, où est-ce que vous allez ? Ne partez pas sans moi !"
+      },
+      {
+        "title": "Préparation de l'opération 2",
+        "text": "Ça y est, on y va ? J'étais à deux doigts de mourir d'ennui !"
+      },
+      {
+        "title": "Intégration à l'équipe 1",
+        "text": "Votre cheffe suprême est là ! Vous autres, vous êtes sous mon commandement !"
+      },
+      {
+        "title": "Intégration à l'équipe 2",
+        "text": "Faut pas s'en faire, je suis là."
+      },
+      {
+        "title": "Changement d'arme",
+        "text": "Cet engin est vraiment très maniable ! Je vise encore mieux, maintenant !"
+      },
+      {
+        "title": "Changement d'équipement",
+        "text": "Tout cet équipement, pour moi ? Allez, de telles merveilles, ça se partage ! Voilà, moi, je me contenterai de ça !"
+      },
+      {
+        "title": "Activation de la matrice de capacités",
+        "text": "Je suis encore plus forte ! Bien, je vais aller tester ça sur cette folle furieuse !"
+      },
+      {
+        "title": "Visionnage d'archives de combat",
+        "text": "À gauche ! À droite, maintenant ! Oui, comme ça... Hé, ça se débrouille plutôt bien, dans cette équipe ! Je les veux à mes côtés !"
+      },
+      {
+        "title": "Promotion d'opérateur 1",
+        "text": "Vous m'avez appelée juste pour me faire des compliments ? Eh bien, n'hésitez pas. J'adore entendre la vérité !"
+      },
+      {
+        "title": "Promotion d'opérateur 2",
+        "text": "Vous m'offrez une promotion, encore ? Je savais que j'étais votre préférée !"
+      },
+      {
+        "title": "Promotion d'opérateur 3",
+        "text": "Nous avons combattu ensemble ! Pas besoin de faire des manières. C'est donnant-donnant. C'est bien comme ça qu'on dit, hein ? Oui, c'est ça."
+      },
+      {
+        "title": "Promotion d'opérateur 4",
+        "text": "Encore une promotion ? Je n'ai qu'un œil, je ne peux pas lire tant de rapports ! Je vous laisse vous occuper des plans de construction pour le moment... Hein ? Je ne tire pas au flanc ! Je temporise, c'est stratégique. Je vais m'entraîner et revenir plus forte !"
+      },
+      {
+        "title": "Opérateur au rapport",
+        "text": "Cheffe de la palanque de Qingbo, Tangtang, au rapport, comme promis ! Maintenant, vous pouvez me confier Endfield. J'en ferai l'endroit le plus fortifié de tout Talos-II ! Que je vous rédige une proposition ? Oh, allez, depuis quand les chefs font de la paperasse ? On trouvera la solution ensemble !"
+      },
+      {
+        "title": "En attente 1",
+        "text": "Oh, vous voilà ! Ha, essayez de m'échapper, maintenant !"
+      },
+      {
+        "title": "En attente 2",
+        "text": "Grrr... Masque noir ! Vous êtes enfin là ! Qu'est-ce qui vous a pris si longtemps ?!"
+      },
+      {
+        "title": "Affectation à une installation",
+        "text": "OK, OK, j'ai compris. On pousse ça... puis on appuie là-dessus. Si ça tourne mal, Masque noir résoudra le problème !"
+      },
+      {
+        "title": "Salutation 1",
+        "text": "Masque noir, par ici !"
+      },
+      {
+        "title": "Salutation 2",
+        "text": "Dites-moi s'il se passe quelque chose d'amusant. Je ne veux passer à côté de rien !"
+      },
+      {
+        "title": "Bavardage sur le Dijiang 1",
+        "text": "Votre équipage est plutôt coriace, mais je n'ai jamais perdu un véritable combat ! Enfin, euh... les seuls qui me font peur, ce sont... ces médecins, avec leur blouse blanche ! Ils n'arrêtent pas de dire qu'ils veulent traiter mon oripathie et ils tentent de me piquer les fesses avec leurs aiguilles... Ah ! Ils arrivent ! Masque noir, laissez-moi me cacher !"
+      },
+      {
+        "title": "Bavardage sur le Dijiang 2",
+        "text": "Vous avez bien trop de gens talentueux à bord du Dijiang, vous pourriez m'en prêter quelques-uns... Allez, Masque noir, donnez-moi Scribe pâle et Écailles vertes ! Non ? Et Vieux masque de fer, avec ses trois têtes et son bagout ? Allez, il n'a pas peur de moi. On est les meilleurs amis du monde !"
+      },
+      {
+        "title": "Bavardage sur le Dijiang 3",
+        "text": "Quand je suis stressée, je vais juste crier près de l'eau une ou deux fois et après, je me sens toujours mieux. Vous qui avez tant à penser, vous devriez vous trouver un endroit pour crier aussi. Pourquoi pas cette plateforme, là-bas ? Ou cette grande fenêtre ? Pff, comment ça, ça causerait des problèmes ? Non, le vrai problème, c'est de tout intérioriser !"
+      },
+      {
+        "title": "Bavardage sur le Dijiang 4",
+        "text": "On voit tant d'étoiles, depuis les fenêtres du Dijiang... Ça me rappelle le bon vieux temps, quand je m'allongeais près de la source ancestrale pour regarder le reflet des étoiles sur l'eau. Un vaisseau spatial reste un vaisseau et la galaxie, c'est un peu une rivière... Quand on y réfléchit bien, le Dijiang et la palanque de Qingbo ne sont pas si différents. Ce sont deux beaux endroits !"
+      },
+      {
+        "title": "Bavardage sur le Dijiang 5",
+        "text": "Tous ces dégâts... Ce n'est pas ma faute ! Allez plutôt voir cette recrue aux cheveux verts. Il aurait pu me rendre mon portefeuille, tout simplement ! À la place, il m'a poursuivie à travers toute la base ! J'ai cru qu'il voulait m'arrêter ! Et en l'évitant... j'ai peut-être fait tomber quelques caisses. Mais je ne suis coupable de rien ! Ce sont juste de vieilles habitudes de l'époque où je devais esquiver les sentinelles, à Wuling."
+      },
+      {
+        "title": "Bavardage sur le Dijiang 6",
+        "text": "Endmin, Endmin, Endmin... Hmpf ! J'ai fait un pari avec Écailles vertes. Si j'arrive à vous appeler Endmin pendant une journée entière, elle doit m'acheter plein de sucreries ! Je vais gagner cette fois, c'est sûr ! Vous allez voir, elle va le regretter, Masq... Argh ! Je ne l'ai pas dit ! Vous avez mal entendu ! Ça ne compte pas !"
+      },
+      {
+        "title": "Cadeaux offerts",
+        "text": "Ne demandez pas d'où ça vient, acceptez le cadeau, c'est tout. Je mets un point d'honneur à récompenser le travail bien fait, et vous... vous assurez !"
+      },
+      {
+        "title": "Cadeaux acceptés",
+        "text": "Oh, il ne fallait pas... Vous en avez d'autres ? Hein, dites ?"
+      },
+      {
+        "title": "Dialogue à cœur ouvert 1",
+        "text": "En matière de sucreries de Wuling, tout le monde recommande les mêmes banalités. Laissez-moi vous donner un conseil digne de ce nom ! Essayez la nourriture de la prison de la ville de Wuling : trois plats, une soupe, et même un fruit ! J'ai vérifié, les détenus mangent exactement la même chose que les sentinelles et ce n'est vraiment pas mauvais. Oh, et j'ai un petit coin vraiment sympa à vous conseiller ! Dans les tunnels souterrains qui vont vers Wuling, il y a un endroit où la lumière passe et des tonnes de fleurs y poussent... C'est vraiment joli. Dommage que cette folle de Mi Fu l'ait fait barricader."
+      },
+      {
+        "title": "Dialogue à cœur ouvert 2",
+        "text": "Vous savez, il y a une question qui me taraude depuis toujours... Qui étaient mes vrais parents et pourquoi m'ont-ils mise à l'eau ? Tout le monde dit que je suis la « fille de la rivière », mais une rivière ne peut pas donner naissance à une Feli... Mon père m'a dit que j'étais arrivée en flottant dans un panier, avec un nœud sur le dessus... Si je les rencontrais un jour, je m'assurerais qu'ils ne se sont pas débarrassés de moi parce qu'ils me détestaient. Parce qu'en vrai... qui met un nœud sur un déchet qu'il ne veut plus jamais voir ?"
+      },
+      {
+        "title": "Dialogue à cœur ouvert 3",
+        "text": "Ne bougez pas ! Vous avez failli casser ma bande de bambou ! Hum... Le soleil tape assez fort, ces temps-ci, donc j'ai décidé de vous tisser un chapeau. Je voulais juste mesurer votre tête... Quoi, vous ne croyez pas en mon talent ? Les paniers, les caisses et les étagères en bambou de la palanque... Bon, d'accord, ce n'est pas moi qui les ai fabriqués, mais Qingwu dit toujours que les objets faits à la main portent une certaine symbolique. Quoi qu'il en soit, quand la cheffe vous donne un cadeau, vous devez l'accepter, même s'il est moche !"
+      },
+      {
+        "title": "Dialogue à cœur ouvert 4",
+        "text": "Je sais que les gens de la palanque m'appellent « cheffe », mais dans leur cœur, c'est mon frère qu'ils suivaient. Ils lui ont donné des armes, lui ont appris à lire... Alors que moi, ils m'offraient des jouets et des vêtements, et toléraient simplement ma présence lors des entraînements. Aujourd'hui encore, j'ai du mal à déchiffrer les caractères. Ils me traitaient bien, faisaient de leur mieux pour me rendre heureuse. Aucun reproche, aucune sanction. Si je n'ai pas su m'imposer, c'est de ma faute... Mais désormais, c'est différent. Je serai une cheffe digne de ce nom, pas juste pour la palanque ou pour moi... Mais pour tous ceux qui croient en moi."
+      },
+      {
+        "title": "Dialogue à cœur ouvert 5",
+        "text": "Masque noir, vous êtes vraiment quelqu'un d'incroyable... Mais vous êtes bien trop raide ! Je ne peux même pas me faufiler derrière vous pour vous tapoter l'épaule ou vous ébouriffer les cheveux... Pourquoi ? Parce que je tiens à vous récompenser, bien sûr ! C'est un gage de confiance... Hé ! N'essayez même pas de me tapoter la tête ! Je suis la cheffe et personne ne touche la tête de la cheffe !"
+      },
+      {
+        "title": "Discussion 1",
+        "text": "Nager, faire un tour en canot, faire des ricochets avec des pierres... Tout ce qui a trait à l'eau me vient naturellement ! Les gens de la palanque disent que j'ai été bénie par la source ancestrale et que l'eau m'adore... Mais entre nous ? C'est juste que, comme je vois mal de cet œil, j'étais toujours à la traîne, quand je nageais avec les autres. Je ne pouvais pas l'accepter, donc je me suis entraînée chaque jour... jusqu'à ce que mon œil valide soit aussi performant que leurs deux yeux et me permette de leur mettre la pâtée ! C'est quoi, l'expression, déjà ? Ah, oui. Le travail acharné porte toujours ses fruits !"
+      },
+      {
+        "title": "Discussion 2",
+        "text": "Mes canons portatifs étaient ceux de mon père, c'est Qingwu qui fabriquait mes vêtements, mon frère coupait mes cheveux et ces bandages ont été cousus par Shui Ling... C'est comme ça, à la palanque. Personne n'a de réelle profession, tout le monde doit savoir faire de tout, aider son prochain... Oh, et je coupe bien mieux les cheveux que mon frère ! Vous voulez essayer ? Parce que votre coupe... Deux balles devraient suffire... Hé, Masque noir, arrêtez de courir !"
+      },
+      {
+        "title": "Discussion 3",
+        "text": "En hiver, on faisait sécher nos ailettes sur des étagères en bambou. Pendant quelques mois, la palanque de Qingbo tout entière puait tellement que je me retrouvais presque à prier pour que Mi Fu me traîne à Wuling. Mais une fois séchées, quelques ailettes avec des légumes et du riz... Délicieux. Vous savez, c'est un peu comme la vie. Au début, c'est plein d'amertume, mais finalement, c'est plutôt agréable. Tout finit toujours par s'arranger !"
+      },
+      {
+        "title": "Discussion 4",
+        "text": "Voilà, un autre certif de Tangtang pour vous. Vous m'avez filé un coup de main à la cantine, hier, donc je vous en dois un. Hmpf ! Mais cette machine, celle qui crache de petites bouteilles quand on lui donne un coup de pied ? Ce n'est certainement pas moi qui l'ai cassée... Enfin, oubliez. Vous avez déjà bien trop de certifs de Tangtang, il va falloir que je change les règles ! Désormais, Masque noir, vous ne pourrez plus les échanger avant d'en avoir cinq cents... Hé, mes certifs, mes règles !"
+      },
+      {
+        "title": "Discussion 5",
+        "text": "Si je couvre cet œil, ce n'est pas parce que l'oripathie l'a rendu photosensible... C'est parce que ça me permet d'utiliser les Arts de l'originium. Avant, je n'arrivais pas à les contrôler et j'ai fini par blesser cette folle pendant un combat. Elle en garde une cicatrice... J'avais peur de blesser quelqu'un d'autre par accident, donc depuis, je garde le cache-œil. Mais hé, tout le monde dit que ça me fait encore plus ressembler à une cheffe, donc même maintenant que je maîtrise les Arts, je préfère le garder !"
+      },
+      {
+        "title": "Thème : la palanque de Qingbo",
+        "text": "Vous savez, il y a plus de cent ans, nos ancêtres de la palanque de Qingbo en ont eu assez des combats et de la rivalité entre les peuples. Ils ont donc quitté ces endroits déchirés par les conflits et se sont installés près de la source ancestrale. Mais après que les gens de Wuling sont arrivés, les combats ont repris. Où qu'on aille, il est impossible d'échapper aux rancœurs et aux querelles... parce qu'elles prennent racine dans le cœur de chacun. Mais si je joue bien mon rôle de cheffe, ces conflits ne se répéteront pas... Et ce n'est pas tout. Aux côtés d'Endfield, je ferai de grandes choses !"
+      },
+      {
+        "title": "Thème : Mi Fu",
+        "text": "Vous savez, autrefois, cette Mi Fu était l'une des nôtres, une habitante de la palanque. Puis un jour, elle a perdu la tête et a décidé d'obéir aux ordres de Zhuang ! J'étais si énervée ! Je lui ai répété maintes fois qu'un jour, je ferais une meilleure cheffe que cette Zhuang, mais ça n'a pas suffi à la faire changer d'avis... C'est incompréhensible ! Tous mes voyages à Wuling ? Ce n'était pas pour la supplier de rentrer. C'était pour lui mettre des raclées !"
+      },
+      {
+        "title": "Thème : Zhuang Fangyi",
+        "text": "Cette Tianshi paratonnerre ? Quand elle parle, elle arrive à compliquer les choses les plus simples. Je vous jure, chacun de ses mots est un piège et j'ai toujours du mal à démêler le vrai du faux. On est juste deux types d'eau différents, qui ne coulent pas dans la même direction... Mais pour le bien de la palanque, je dois l'écouter malgré tout... Masque noir, aidez-moi avec cette proposition. Qu'est-ce que ça veut dire, « coefficient d'occupation du sol » ?"
+      },
+      {
+        "title": "Thème : les carillons aquatiques en bambou",
+        "text": "À la palanque, quand on perd quelqu'un, on met à l'eau un carillon aquatique en bambou. Mon tout premier... était pour mon père. Mon frère m'a dit que si la source tintait, c'était que notre père nous parlait. Alors, j'ai pris l'habitude d'aller au bord de l'eau quand j'étais perdue. Et il répondait. Mais quand je lui ai parlé de mon frère, il est resté silencieux. J'ai attendu très, très longtemps, jusqu'à m'endormir... Peut-être que mon père estimait qu'il fallait que je trouve la réponse seule."
+      },
+      {
+        "title": "Thème : lecture",
+        "text": "Normalement, je n'aime pas trop lire, mais les livres qu'Écailles vertes m'a donnés la dernière fois étaient plutôt intéressants. Elle a dit qu'ils venaient d'Hongshan et qu'ils étaient destinés aux enfants qui ne savaient pas encore lire. Mais en fait, les leçons y sont expliquées très clairement. Ce n'est pas à la portée de beaucoup d'adultes, même s'ils connaissent tous les mots. Quand je les ai montrés à mon équipe, ils se sont tous écriés : « Mais c'est logique ! » Si les gens de ce monde s'exprimaient aussi clairement que ces livres, il y aurait bien moins de problèmes et de malentendus !"
+      },
+      {
+        "title": "Détection de ressource/objet à collecter 1",
+        "text": "Ouvrez l'œil, ça brille tout autour !"
+      },
+      {
+        "title": "Détection de ressource/objet à collecter 2",
+        "text": "Par là, un trésor ! Besoin d'un coup de main !"
+      },
+      {
+        "title": "Zone inexplorée détectée",
+        "text": "Cette zone est inexplorée... Allons voir ça de plus près !"
+      },
+      {
+        "title": "Découverte d'un ennemi puissant",
+        "text": "La cheffe est là ! Oh, tu as l'air coriace, toi..."
+      },
+      {
+        "title": "Extraction 1",
+        "text": "Quels jolis rochers ! Allez, on creuse, on creuse !"
+      },
+      {
+        "title": "Extraction 2",
+        "text": "Ça brille. On se partage ça !"
+      },
+      {
+        "title": "Ouverture de caisse",
+        "text": "Attendez... personne n'en veut ? Dans ce cas, ce sera pour moi !"
+      },
+      {
+        "title": "Obtention d'aurylène",
+        "text": "Je peux vendre ça contre de l'argent ?"
+      },
+      {
+        "title": "Élimination de la Gangrène",
+        "text": "Super ! Ça va nous éviter des détours inutiles !"
+      },
+      {
+        "title": "Repos",
+        "text": "Arf... Je suis épuisée... M'arrêter là ? Ah ! Le mot « arrêter » ne fait pas partie de mon vocabulaire ! Allez, on continue !"
+      },
+      {
+        "title": "Utilisation de tactique 1",
+        "text": "Je vous avais dit que je vous couvrais !"
+      },
+      {
+        "title": "Utilisation de tactique 2",
+        "text": "Ah, bien mieux !"
+      },
+      {
+        "title": "Avertissement de danger",
+        "text": "Ne restez pas là ! Reculez !"
+      },
+      {
+        "title": "Blessure",
+        "text": "Si fatiguée... Je dois... tenir bon..."
+      },
+      {
+        "title": "0 PV",
+        "text": "Ça... ira pour cette fois..."
+      },
+      {
+        "title": "Encouragement de l'équipe 1",
+        "text": "Ça, c'est la star de mon équipe !"
+      },
+      {
+        "title": "Encouragement de l'équipe 2",
+        "text": "Notre petit groupe se débrouille sacrément bien !"
+      },
+      {
+        "title": "Réaction face aux encouragements 1",
+        "text": "Bien, joli !"
+      },
+      {
+        "title": "Réaction face aux encouragements 2",
+        "text": "La prochaine fois, on voit les choses en grand ?"
+      },
+      {
+        "title": "Début du combat 1",
+        "text": "Alors, ça cherche la bagarre ?"
+      },
+      {
+        "title": "Début du combat 2",
+        "text": "Il suffit de leur faire peur, comme ça !"
+      },
+      {
+        "title": "Victoire au combat 1",
+        "text": "Alors ça, c'était un combat satisfaisant !"
+      },
+      {
+        "title": "Victoire au combat 2",
+        "text": "Ah, tout ça, c'est grâce à mon formidable commandement !"
+      },
+      {
+        "title": "Victoire au combat 3",
+        "text": "Alors ça, ça fait plaisir !"
+      },
+      {
+        "title": "Victoire au combat 4",
+        "text": "Tout le monde s'en est bien sorti. Maintenant, reposez-vous. La prochaine fois, on fera plus attention !"
+      },
+      {
+        "title": "Défaite au combat",
+        "text": "Je déteste voir tout le monde souffrir comme ça... Je vous jure que je vous vengerai !"
+      },
+      {
+        "title": "Coup final 1",
+        "text": "Pan !"
+      },
+      {
+        "title": "Coup final 2",
+        "text": "Blam !"
+      },
+      {
+        "title": "Compétence de combat 1",
+        "text": "En plein dans mon viseur !"
+      },
+      {
+        "title": "Compétence de combat 2",
+        "text": "Surfe la vague !"
+      },
+      {
+        "title": "Compétence de combat 3",
+        "text": "Voyons si tu es plus rapide que moi !"
+      },
+      {
+        "title": "Compétence de combo prête 1",
+        "text": "C'est quand, mon tour ?!"
+      },
+      {
+        "title": "Compétence de combo prête 2",
+        "text": "Il est temps pour la cheffe d'agir !"
+      },
+      {
+        "title": "Utilisation de combo 1",
+        "text": "Je vois une ouverture !"
+      },
+      {
+        "title": "Utilisation de combo 2",
+        "text": "Ne glisse pas !"
+      },
+      {
+        "title": "Coup fatal 1",
+        "text": "Te voilà vulnérable !"
+      },
+      {
+        "title": "Coup fatal 2",
+        "text": "Je t'ai eu ! Ha !"
+      },
+      {
+        "title": "Ultime 1",
+        "text": "Je t'ai dans ma ligne de mire..."
+      },
+      {
+        "title": "Ultime 2",
+        "text": "Celui-ci s'appelle : Arrête-toi là !"
+      },
+      {
+        "title": "Ultime 3",
+        "text": "Disparais avec la marée !"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

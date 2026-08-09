@@ -132,7 +132,333 @@
         "name": "Công Nghệ",
         "description": "Công Nghệ: Giải Mã Ætherside\nCô không đi theo lối mòn của công nghệ Ætherside của Talos-II. Mỗi bước chân cô đi đều là một cuộc phiêu lưu hoàn toàn mới."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Chuẩn Bị Tác Chiến 1",
+        "text": "Hôm nay ta đi quẩy ở đâu đây, Endmin?"
+      },
+      {
+        "title": "Chuẩn Bị Tác Chiến 2",
+        "text": "Đồng bộ dữ liệu xong. Tôi sẵn sàng lên đường bất cứ lúc nào!"
+      },
+      {
+        "title": "Đang thêm vào đội 1",
+        "text": "Cuối cùng cũng chịu gọi tôi à? He he. Chắc là lại có chuyện rối rắm lắm đúng không?"
+      },
+      {
+        "title": "Đang thêm vào đội 2",
+        "text": "Tôi đây. Nếu có trục trặc với trang bị thì cứ giao cho tôi."
+      },
+      {
+        "title": "Đang đổi vũ khí",
+        "text": "Cặp súng ngắn này vừa tay lắm! Hmm... Tôi vừa phát hiện vài điểm có thể cải tiến thiết kế. Thôi thì chỉnh lại thành phiên bản đặc biệt của Yvonne vậy!"
+      },
+      {
+        "title": "Đang đổi trang bị",
+        "text": "Tôi có thể sơn lại trang bị của mình không? Màu hiện tại không hợp với tóc tôi lắm."
+      },
+      {
+        "title": "Kích hoạt Ma Trận Năng Lực",
+        "text": "Dễ quá! Cho tôi một thử thách ra hồn đi!"
+      },
+      {
+        "title": "Xem Hồ Sơ Chiến Đấu",
+        "text": "Tôi đã tua nhanh qua mọi thứ. Tôi học rất nhanh nên không thấy gì khác."
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 1",
+        "text": "Tôi được thăng bậc à? Quao, đúng là Endmin có mắt nhìn người thật đấy!"
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 2",
+        "text": "Vậy thăng bậc có nghĩa là... Tôi có phòng thí nghiệm to hơn chứ?"
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 3",
+        "text": "Ra chiến trường thật đúng là khác xa với việc nghiên cứu phim chiến đấu... Tôi đã \"lên tay\" rất nhiều sau những chuyến đi ở vùng tiền tuyến rồi. Đúng không?"
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 4",
+        "text": "Trợ lý? KHÔNG ĐỜI NÀO! Không cần đâu! Tink-a-Bella của tôi dùng được tất tần tật rồi! Từ sắp xếp dữ liệu đến dọn dẹp phòng thí nghiệm, nó làm tuốt! Chưa kể nó chẳng bao giờ càm ràm lịch làm việc của tôi cả."
+      },
+      {
+        "title": "Cán Viên đang báo cáo nhiệm vụ",
+        "text": "Xin chào, Endmin. Chúng ta lại gặp nhau rồi. Cứ gọi tôi Yvonne. Cũng đã rất lâu rồi tôi mới được ra ngoài. Hân hạnh hợp tác nhé!"
+      },
+      {
+        "title": "Chờ Lệnh 1",
+        "text": "Ngoan nào, Băng Bé Bỏng! Chúng ta sắp đi dạo với Endmin đấy!"
+      },
+      {
+        "title": "Chờ Lệnh 2",
+        "text": "Bên này nè, Endmin! À mà tôi mang theo hơi bị nhiều đồ đó nha..."
+      },
+      {
+        "title": "Phân Công Vào Công Trình",
+        "text": "Được rồi, được rồi. Tôi rành hết mấy cái này rồi, nên Endministrator cứ nghỉ ngơi đi ha!"
+      },
+      {
+        "title": "Lời Chào 1",
+        "text": "Endmin! Tôi xí trước phòng thử nghiệm thiết bị nha. Cảm ơn nhiều nha!"
+      },
+      {
+        "title": "Lời Chào 2",
+        "text": "Số mới nhất của Nguyệt San MARTHE vừa về rồi nè. Muốn đọc chung với tôi không?"
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 1",
+        "text": "*Thở dài*... Mỗi lần nghiên cứu Khu Phức Hợp Công Nghiệp Tự Động là tôi lại thấy nó hoàn hảo tuyệt đối luôn ấy! Dây chuyền sản xuất do Lõi Giao Thức điều khiển không còn là công việc nhàm chán, cứng nhắc nữa... Thật sự thiên tài! Endmin, tôi phải thử mới được. Làm ơn mà, được không?"
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 2",
+        "text": "Nói thật nha, Endmin. Tôi thích phong cách của ngài lắm, nhưng đã đến lúc làm mới tủ đồ rồi đó? Nào nào, để tôi sắm cho ngài vài bộ thật nổi, thật sáng! Tôi đảm bảo lên đồ xong là hợp mốt liền! Đảm bảo luôn!"
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 3",
+        "text": "Perlica không cho tôi đem theo mấy quả Bom Chim Sẻ chỉ vì cô ấy bảo chúng nguy hiểm. Nhưng mà tôi không sống thiếu chúng được á! *Thở dài*. Cuối cùng thì tôi cũng chịu nhịn mà tháo dỡ hết mấy mô-đun phá dỡ ra trước khi lên tàu này..."
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 4",
+        "text": "Tôi đang lên kế hoạch trốn đi La Fantoma chơi nè. Tự nhiên lại nhớ biển xanh, cát trắng, gió mát ghê luôn... Ngài có muốn đi cùng không, Endmin? Mình có thể tranh thủ coi thử mấy công trình ven biển đời mới ở đó nữa. Nghe nói họ vừa phát triển thêm lớp phủ chống Nhiễm Khuẩn cực kỳ xịn."
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 5",
+        "text": "Chúng ta chưa từng chụp ảnh chung đúng không, Endmin? Làm một tấm selfie nha? Tôi sẽ cho vào bộ sưu tập Khoảnh Khắc Của Năm của Yvonne. Chụp không đẹp là lỗi tại đèn đóm của Dijiang nha, không phải do tay tôi đâu!"
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 6",
+        "text": "Có vẻ gu âm nhạc của ngài và tôi cũng giống nhau ghê, Endmin! Hôm nào rảnh ghé phòng thí nghiệm tôi chơi, nghe thử đĩa vinyl mới về nhé! Âm nhạc ngon lành mà đi kèm bạn nghe hợp gu nữa thì hết bài!"
+      },
+      {
+        "title": "Tặng Quà",
+        "text": "Tôi có món quà nhỏ cho ngài nè. Về đến phòng hẵn mở ra xem nha. He he. Đảm bảo ngài sẽ thích, vì tôi đã hỏi ý kiến cả đống \"chuyên gia\" rồi!"
+      },
+      {
+        "title": "Nhận quà",
+        "text": "Ui, cảm ơn! Yên tâm đi, dù có hơi kỳ quặc tí thôi, tôi vẫn sẽ giữ gìn cẩn thận vì nó là từ ngài mà!"
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 1",
+        "text": "Tối đa hóa hiệu suất máy móc vốn không phải là mục đích ban đầu. Hoàn toàn không phải! Mục tiêu thật sự là: thiết bị dễ dùng, không gây hoảng loạn, ai dùng cũng hiểu. Và nếu khiến người ta cười được nữa thì càng tốt! Công cụ sinh ra là để giúp đỡ con người chứ không phải làm khó họ."
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 2",
+        "text": "Endmin, cho tôi mượn Thuật Pháp Originium của ngài được không? Nếu kiểm soát chính xác mạch Originium, tôi sẽ mở rộng được vô số thiết kế! Ví dụ nha... Tôi luôn muốn gắn mô-đun sưởi vào Băng Bé Bỏng. Chà, nghe tuyệt vời quá! Đợi đã. Mà nếu làm nóng thì còn gọi gì là Băng nữa..."
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 3",
+        "text": "Tôi đọc về ngài lần đầu khi mới ba tuổi, trong một cuốn sách khoa học nổi tiếng. Ngài được mô tả như một huyền thoại gánh vác trách nhiệm *khổng lồ*. Nhưng ngài thật ngoài đời thì... dễ thương hơn tôi tưởng đó? *Khúc khích* Mà chắc ngài không muốn biết trong mấy bản in lậu họ vẽ ngài trông ra sao đâu. Tốt nhất là đừng biết thì hơn..."
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 4",
+        "text": "Khi tôi mới tiếp quản dự án Baby Bot, nguyên mẫu to khủng khiếp luôn! To đến mức không nhét vừa nhà chứa xe luôn ấy! Xem ra Công Đoàn chỉ nghĩ đến việc làm cỗ máy to đùng chuyên xử lý các ổ Nhiễm Khuẩn lớn. Nhưng còn người dân sống ở nơi bị Nhiễm Khuẩn len lỏi vào tận nhà thì sao? Cứ ngồi đó mà đợi cái cỗ máy khổng lồ ầm ầm kéo đến à? Thôi nào, phải có người nghiên cứu thu nhỏ thiết bị chứ. Thế là tôi dành mấy tháng ở Công viên Khoa học để nghiên cứu cái này... Kết quả thì khỏi phải bàn! Mấy chuyện sau đó chứng minh tôi *cực kỳ*sáng suốt khi chọn hướng đi đó!"
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 5",
+        "text": "Âm nhạc mê ly, buổi diễn sôi động, thời trang chất lừ, cảnh bình minh hoàng hôn trên Talos, thực ra tôi biết tất cả những điều tôi yêu đều đang đứng trước bờ vực tan biến. Đó là lý do tôi chọn trở thành nhân viên Endfield. Tôi muốn làm điều gì đó để bảo vệ vẻ đẹp mong manh của thế giới này. Tôi còn chưa chơi cho đã cơ mà, sao để thế giới kết thúc được chứ!"
+      },
+      {
+        "title": "Trò Chuyện 1",
+        "text": "Nếu là sống thì tôi sẽ chọn thành phố Phòng Thương Mại Tổng Hợp Talos-II ở vành đai. Còn nếu để làm việc á? CHỊU LUÔN! Thực tập doanh nghiệp bên đó bắt nhân viên điểm danh 6 lần/ngày! Ngài tưởng tượng được không?!"
+      },
+      {
+        "title": "Trò Chuyện 2",
+        "text": "Mẫu này là từ bộ sưu tập Witching Hour đó. Tôi MÊ cái style của họ! Họ lấy cảm hứng từ mọi thứ. Kể cả lớp vỏ ngoài của Aggeloid! Nguy hiểm trông lại càng... *hấp dẫn*. Ngài có thấy vậy không, Endmin?"
+      },
+      {
+        "title": "Trò Chuyện 3",
+        "text": "Yvonne là một cái tên Gallian. Cha tôi bảo nhà tôi đang mang trong mình một di sản vĩ đại và cả họ ai cũng tự hào. Nhưng tôi thì không có cảm giác đó cho lắm. Terra đã đủ xa rồi, mà cái đế chế cổ đó cũng tan biến từ lâu rồi còn đâu. Dòng dõi hay huyết thống thì có gì quan trọng chứ? Với cả, có cái ông tên là Corsi-Gì-Gì đó, le First? Ổng có thực sự vĩ đại đến vậy không?"
+      },
+      {
+        "title": "Trò Chuyện 4",
+        "text": "À, chuyện này...? À thì... Tôi chỉ thay đầu nối lò nung trong phòng thí nghiệm thôi. Chuyện nó tương thích với nồi nấu mì ăn liền chỉ là *trùng hợp*. Tôi thề là tôi đang làm kiểm định kỹ thuật nghiêm túc mà! Đừng nhìn tôi như thể tôi chỉ biết chơi bời lười nhác... Thôi được rồi! Tôi chia sẻ cho ngài hay... Nhưng... Ngài sẽ không méc Perlica vụ này, phải không?"
+      },
+      {
+        "title": "Trò Chuyện 5",
+        "text": "Tôi từng thực tập ở Phòng Thương Mại Tổng Hợp Talos-II, Học Viện Khoa Học Hongshan và Công Đoàn nữa. Nhưng bộ phận HR của Endfield đưa ra một lời mời tôi không thể nào từ chối: Toàn quyền truy cập kho dữ liệu Endfield về mọi thứ liên quan đến Ætherside! Thậm chí còn ghi rõ gạch chân: \"Cấp đặc quyền truy cập tương đương với Endministrator.\""
+      },
+      {
+        "title": "Chủ đề: Ætherside",
+        "text": "Chúng ta gần như chẳng biết gì về Ætherside cả. Có thể đó là nơi hoàn toàn tăm tối... hoặc một cõi hỗn loạn tuyệt đối. Tới hiện tại, thứ duy nhất chúng ta quan sát được là hiện tượng Nhiễm Khuẩn. Chúng có đủ màu sắc kỳ quái, như thể các quy luật ánh sáng thông thường không còn áp dụng được. Thật lòng mà nói, sau từng ấy thời gian nghiên cứu... Tôi không thể không cảm thấy rằng họ thật sự... cuốn hút đấy."
+      },
+      {
+        "title": "Chủ đề: Các thành phố Phòng Thương Mại Tổng Hợp Talos-II",
+        "text": "Tôi ghé thăm vài thành phố Phòng Thương Mại Tổng Hợp Talos-II mỗi năm. Tôi lấy trang bị và vật tư ở Alloycarrot, còn Liên Hoan Phim ở Tân Wrankwood là nơi tôi cày phim thả ga. Nhưng nếu phải nói thành phố tôi thích nhất, thì đó là Kjersch. Ngạc nhiên chưa? Tôi mê tuyết, bầu trời mở rộng và sự tĩnh lặng ở đó."
+      },
+      {
+        "title": "Chủ đề: Văn hóa đại chúng",
+        "text": "Terran Retro là thể loại mà ông bà tôi nghe hồi trẻ. Giờ thịnh hành là loại Neo-Talosian. Tôi MÊ bài STEREO cực kỳ! Tụi tôi là người Talos, sinh ra ở đây, dĩ nhiên nhạc của tụi tôi phải chất như đất Talos-II rồi!"
+      },
+      {
+        "title": "Chủ đề: Thời thơ ấu",
+        "text": "Hồi nhỏ ba mẹ tôi bận suốt nên tôi chẳng có ai chơi cùng. Họ tặng tôi một con thú lông vũ làm bạn. Nó siêu ồn ào, khó chịu, phá phách kinh khủng... nhưng tôi thật sự rất quý sinh vật đó. Có lẽ nó là cảm hứng cho Bom Chim Sẻ của tôi. Dù Bom Chim Sẻ ít gây tiếng động hơn, nhưng cái tính khí thì y chang cái cục lông dễ ghét đó."
+      },
+      {
+        "title": "Chủ đề: Thung Lũng IV",
+        "text": "Thật ra khi tôi mới đến Thung Lũng IV ba năm trước, tôi chẳng định ở lại lâu đâu. Nhưng Giáo Sư Crowe lại cho tôi xem dữ liệu khe nứt từ Khu Thử Nghiệm Æther — và thế là tôi bị cuốn vào ngay lập tức! Tiếc là sau đó hai người chẳng thể thống nhất được điều gì cả. Một cuộc sụp đổ nghiên cứu hoàn toàn. Ông Crowe già không thắng nổi tôi, nên đành gửi tôi sang cho Andre. Mà đoán xem? Dự án của tôi bắt đầu cho ra kết quả rõ rệt nhờ có hỗ trợ công nghệ xịn của Endfield! Suốt ba năm liền tôi cho ra hàng loạt bài nghiên cứu! Ah, Thung Lũng IV đúng là vùng đất may mắn của riêng tôi."
+      },
+      {
+        "title": "Phát hiện Tài Nguyên/Có Thể Thu Thập 1",
+        "text": "Ohhhh! Phải mang cái này về nghiên cứu thôi."
+      },
+      {
+        "title": "Phát hiện Tài Nguyên/Có Thể Thu Thập 2",
+        "text": "Suỵt. Nói cho nghe một bí mật nè. Đống đồ bên kia là hàng xịn đó nha!"
+      },
+      {
+        "title": "Phát Hiện Khu Vực Chưa Khám Phá",
+        "text": "Chưa từng tới chỗ kia. Đi khám phá thử đi."
+      },
+      {
+        "title": "Phát hiện Kẻ Địch Mạnh",
+        "text": "Bom Chim Sẻ trông hơi lo lắng. Chắc là đụng phải tên siêu quậy nào rồi."
+      },
+      {
+        "title": "Khai thác 1",
+        "text": "Lẽ ra mình nên gắn mô-đun khai khoáng cho khẩu pháo của mình..."
+      },
+      {
+        "title": "Khai thác 2",
+        "text": "Tôi đến hỗ trợ đây! Tôi vốn là chuyên gia phá dỡ mà!"
+      },
+      {
+        "title": "Mở Thùng",
+        "text": "Oaaaa, lấp lánh đẹp dữ!"
+      },
+      {
+        "title": "Nhận Aurylene",
+        "text": "Thật óng ánh và lấp lánh tuyệt vời. Tôi luôn muốn sơn móng tay của mình trông rực rỡ như thế này."
+      },
+      {
+        "title": "Xua Tan Nhiễm Khuẩn",
+        "text": "Giải trừ tuyệt đối! Ngài thấy sao?"
+      },
+      {
+        "title": "Nghỉ ngơi",
+        "text": "Ái chà. Chờ khoảnh khắc nghỉ ngơi này lâu lắm rồi. Phải thuần hóa mái tóc hoang dại này..."
+      },
+      {
+        "title": "Sử Dụng Vật Phẩm Chiến Thuật 1",
+        "text": "Đừng hoảng nữa. Thử món này xem."
+      },
+      {
+        "title": "Sử Dụng Vật Phẩm Chiến Thuật 2",
+        "text": "Ahhh... Tôi đỡ hơn nhiều rồi!"
+      },
+      {
+        "title": "Cảnh Báo Nguy Hiểm",
+        "text": "Né mau! Tôi sẽ yểm trợ!"
+      },
+      {
+        "title": "Bị Thương",
+        "text": "Hngh... Đau quá... Chúng đánh tôi nặng quá..."
+      },
+      {
+        "title": "0 HP",
+        "text": "Đạn... Tôi hết sạch rồi..."
+      },
+      {
+        "title": "Cổ Vũ Đội 1",
+        "text": "Quá là tuyệt vời!"
+      },
+      {
+        "title": "Cổ Vũ Đội 2",
+        "text": "Mọi người hết sảy!"
+      },
+      {
+        "title": "Đáp Lại Lời Cổ Vũ 1",
+        "text": "Ừm. Vĩ đại là kiểu của tôi mà!"
+      },
+      {
+        "title": "Đáp Lại Lời Cổ Vũ 2",
+        "text": "Phối hợp hoàn hảo."
+      },
+      {
+        "title": "Bắt Đầu Chiến Đấu 1",
+        "text": "Tất cả trang bị đã sạc đầy và sẵn sàng."
+      },
+      {
+        "title": "Bắt Đầu Chiến Đấu 2",
+        "text": "Hỏa lực yểm trợ, nóng hổi vừa thổi vừa bắn!"
+      },
+      {
+        "title": "Thắng Trận 1",
+        "text": "Chiến thắng thuộc về chúng ta! Chụp tấm selfie nào!"
+      },
+      {
+        "title": "Thắng Trận 2",
+        "text": "Ngài biết không, tôi cũng khá giỏi khoản chiến đấu đấy!"
+      },
+      {
+        "title": "Thắng Trận 3",
+        "text": "Hmph. Chiến thắng này xứng đáng có một buổi tiệc thật hoành tráng!"
+      },
+      {
+        "title": "Thắng Trận 4",
+        "text": "Những trận chiến thì khó lường thật, ngay cả với Tink-a-Bella... *NHƯNG* lần tới chúng ta chắc chắn sẽ làm tốt hơn!"
+      },
+      {
+        "title": "Bại Trận",
+        "text": "Chết tiệt! Tôi sẽ tăng công suất của Băng Bé Bỏng lên 5000%! Để xem chúng đánh lại nổi nữa không!"
+      },
+      {
+        "title": "Đòn Dứt Điểm 1",
+        "text": "Bắn uy lực!"
+      },
+      {
+        "title": "Đòn Dứt Điểm 2",
+        "text": "Thêm ly nữa!"
+      },
+      {
+        "title": "KN Chiến Đấu 1",
+        "text": "Cảm nhận cơn buốt giá!"
+      },
+      {
+        "title": "KN Chiến Đấu 2",
+        "text": "Bình tĩnh lại nào!"
+      },
+      {
+        "title": "KN Chiến Đấu 3",
+        "text": "Nhận đóng băng!"
+      },
+      {
+        "title": "Chuẩn Bị KN Liên Hoàn 1",
+        "text": "Sẵn sàng bắn phá!"
+      },
+      {
+        "title": "Chuẩn Bị KN Liên Hoàn 2",
+        "text": "Đầy năng lượng."
+      },
+      {
+        "title": "Thi Triển Liên Hoàn 1",
+        "text": "Lên! Băng!"
+      },
+      {
+        "title": "Thi Triển Liên Hoàn 2",
+        "text": "Làm đá chúng nào!"
+      },
+      {
+        "title": "Kết Liễu 1",
+        "text": "BÙM BÙM!"
+      },
+      {
+        "title": "Kết Liễu 2",
+        "text": "Phát bắn hoàn hảo!"
+      },
+      {
+        "title": "Tuyệt Kỹ 1",
+        "text": "Cùng khiêu vũ nào!"
+      },
+      {
+        "title": "Tuyệt Kỹ 2",
+        "text": "Đam mê bùng nổ!"
+      },
+      {
+        "title": "Tuyệt Kỹ 3",
+        "text": "Pháo hoa tặng bạn đây!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

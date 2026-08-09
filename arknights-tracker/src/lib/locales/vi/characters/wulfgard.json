@@ -118,7 +118,325 @@
         "name": "Sáng Tạo",
         "description": "Sáng Tạo: Tùy Biến Vũ Khí\nViệc chỉnh sửa loại đạn khắc hoa văn có thể khá nhàm chán, nhưng anh lại rất thích… tìm người để thử nghiệm chúng."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Chuẩn Bị Tác Chiến 1",
+        "text": "Đợi chỉ thị của ngài."
+      },
+      {
+        "title": "Chuẩn Bị Tác Chiến 2",
+        "text": "Chúng ta lên đường chứ?"
+      },
+      {
+        "title": "Đang thêm vào đội 1",
+        "text": "Cần tôi vào đội à? Chắc rồi. Nhưng mấy người còn lại nhớ theo kịp."
+      },
+      {
+        "title": "Đang thêm vào đội 2",
+        "text": "Phân công nhiệm vụ sao...? Tôi hiểu. Tôi sẽ hoàn thành."
+      },
+      {
+        "title": "Đang đổi vũ khí",
+        "text": "Cân bằng rất tốt. Cảm ơn."
+      },
+      {
+        "title": "Đang đổi trang bị",
+        "text": "Vũ trang tận răng rồi... Một quyết định khôn ngoan."
+      },
+      {
+        "title": "Kích hoạt Ma Trận Năng Lực",
+        "text": "Kỹ năng chỉ thật sự đáng giá khi đặt vào tình huống tuyệt vọng."
+      },
+      {
+        "title": "Xem Hồ Sơ Chiến Đấu",
+        "text": "Tộc Sói đi săn với mục tiêu rõ ràng. Phải chọn con đường ngắn nhất đến chiến thắng."
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 1",
+        "text": "Rất biết ơn sự công nhận của ngài, Endmin. Vậy tôi khỏi nộp báo cáo lần này được không? Không à...? Được rồi."
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 2",
+        "text": "Như ngài thấy đấy, Endmin. Ngài giao đúng việc, tôi phụ trách tôi mang về kết quả."
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 3",
+        "text": "Mỗi con sói trong Tộc Sói đều giành vị trí bằng máu. Hạ đủ con mồi thì sẽ thăng tiến. Endmin, nghĩa là ngài đã chấp thuận cuộc đi săn của tôi?"
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 4",
+        "text": "Tôi từng chứng kiến Tộc Sói rệu rã và hậu quả theo sau. Đó là lý do tôi chọn tìm đường mới cho Rossi và các chiến hữu... Số phận đưa chúng ta gặp nhau, Endministrator. Thật vinh dự khi được đồng hành cùng ngài."
+      },
+      {
+        "title": "Cán Viên đang báo cáo nhiệm vụ",
+        "text": "Catello Wulfgard Luppino, Đội Ứng Phó Nguy Cảnh Endfield. Tôi đại diện cho Tộc Sói. Giao cho tôi nhiệm vụ lính đánh thuê nào cũng được. Chỉ cần hợp đồng còn hiệu lực, tôi sẽ là nanh vuốt của ngài."
+      },
+      {
+        "title": "Chờ Lệnh 1",
+        "text": "Có phân công mới à?"
+      },
+      {
+        "title": "Chờ Lệnh 2",
+        "text": "Tôi đây."
+      },
+      {
+        "title": "Phân Công Vào Công Trình",
+        "text": "Bên này cũng thiếu người sao?"
+      },
+      {
+        "title": "Lời Chào 1",
+        "text": "Endmin."
+      },
+      {
+        "title": "Lời Chào 2",
+        "text": "Cần tôi đi cùng không, Endmin? Tôi có thời gian."
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 1",
+        "text": "Làm việc với các cán viên khác không dễ. Lối sống của Tộc Sói và bản chất cô độc của tôi không hợp với họ. Nhưng nếu ngài muốn tôi theo nề nếp... Tôi sẽ cố thích nghi."
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 2",
+        "text": "Tôi hợp với tiền tuyến hơn là Dijiang. Nơi thoải mái làm người ta dễ yếu mềm. Nhưng Rossi thì yêu nơi này. Con tàu này thoả mãn trí tò mò của con bé."
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 3",
+        "text": "Tôi nói thẳng vậy. Tôi chẳng hứng thú với các tộc Landbreaker khác. Tôi chỉ sống đủ lâu ở hoang địa... Đến khi những kỹ năng sinh tồn trở thành một phần của tôi. Trong Tộc Sói, bản năng sinh tồn là người thầy duy nhất. Là niềm tin *duy nhất*."
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 4",
+        "text": "Các cán viên Endfield đến từ khắp Talos-II. Tôi thấy vài gương mặt quen thuộc... Hay nên nói là... vài mối đe dọa quen thuộc. Tôi tin vào phán đoán của ngài. Nhưng khi cần thiết, tôi mong ngài tin vào bản năng của tôi."
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 5",
+        "text": "Kiểm tra súng là nghi thức của tôi. Ở hoang dã, nếu nanh vuốt không còn thì ta chỉ là thớ thịt. Vũ khí trục trặc cũng thế, mọi kỹ năng, huấn luyện đều vô dụng. Không sức mạnh, không phòng thủ, chỉ còn cái chết đến chậm. Tôi từng trải qua khi còn non trẻ. Bài học đó in sâu mãi. Tôi sẽ không làm con mồi thêm lần nào nữa."
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 6",
+        "text": "Lâu rồi tôi chưa về lại tộc hay dẫn họ đi săn. Tôi giỏi tìm bãi săn mới hơn là trở thành Sói Đầu Đàn dẫn đi đánh cướp."
+      },
+      {
+        "title": "Tặng Quà",
+        "text": "Endmin có rảnh chút nào không? Tôi tìm được thứ thú vị trong nhiệm vụ vừa rồi... Tôi mang đến cho ngài."
+      },
+      {
+        "title": "Nhận quà",
+        "text": "Cho tôi ư? Cảm ơn. Tôi sẽ tận dụng nó một cách xứng đáng."
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 1",
+        "text": "Tôi đã điều chỉnh cách \"xử lý\" mục tiêu theo yêu cầu của Endfield rồi. Nếu vẫn làm theo lối cũ... thì bọn chúng đã \"câm như hến\" ngay khi tôi ra tay."
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 2",
+        "text": "Tôi biết ngài hiểu rõ... tôi chưa từng muốn làm Sói Đầu Đàn. Rossi có lẽ phù hợp hơn. Tôi cũng chưa chắc Endfield có phải nơi thích hợp để Catello Wulfgard Luppino dừng lại. Tầm nhìn của Landbreaker khác xa mọi người. Nhưng... làm việc ở Endfield lại thú vị hơn tôi nghĩ đấy, Endmin."
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 3",
+        "text": "Sao tôi hay nhìn trời à? À thì, sở thích thế thôi. Sao ngài lại ngạc nhiên thế? Bầu trời là nguồn tin miễn phí. Nó cho biết thời tiết, thời gian, phương hướng. Thậm chí còn giúp đoán bước đi kẻ thù. Mọi thợ săn đều chơi theo luật dưới bầu trời đó. Ngài cũng nên học điều này, Endmin."
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 4",
+        "text": "Thân phận Landbreaker của tôi bắt nguồn từ quyết định sai lầm của tổ tiên. Chúng tôi phản bội Vành Đai Văn Minh để theo Chúa Tể Breaker, nhưng chẳng mang lại trật tự hay công lý gì. Tôi không thể hỏi tổ tiên có hối hận không. Nhưng với cuộc đời ngập xung đột và máu đổ, tôi hiểu rõ sinh tồn mới là điều quan trọng nhất hoang địa. Giám sát viên Perlica nói chúng ta có thể bỏ qua cái danh Landbreaker khi làm việc ở Endfield... Nhưng với tôi, đó là một phần con người mình. *Thở dài* Điều đó khiến ngài thất vọng sao, Endmin?"
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 5",
+        "text": "Tộc Sói được xây dựng dựa trên logic đơn giản: Kẻ yếu phải dựa vào nhau để đánh bại kẻ mạnh và tồn tại trong thế giới không chút khoan nhượng. Tất cả luật lệ của tộc, thậm chí cả cái danh Landbreaker, đều sinh ra từ điều đó. Còn Endfield thì có gì? Một tầm nhìn lớn lao luôn là thanh kiếm hai lưỡi. Tộc Sói luôn có thể bắt đầu một cuộc săn mới, nhưng Endfield thì không chịu nổi một thất bại nào. Thế giới này không khoan nhượng, Endministrator. Nhưng ít ra giờ tôi là một phần trong cuộc săn của ngài, tôi sẽ chia sẻ gánh nặng với ngài."
+      },
+      {
+        "title": "Trò Chuyện 1",
+        "text": "Tôi biết sức mạnh không phải là tất cả, nhưng ở Talos-II, không có sức mạnh thì không thể sống."
+      },
+      {
+        "title": "Trò Chuyện 2",
+        "text": "Rossi thích sưu tầm mấy thứ tinh tế như vầy. Tôi chẳng rõ có ích gì, nhưng nếu là vì con bé... Tôi sẽ đi tìm thêm."
+      },
+      {
+        "title": "Trò Chuyện 3",
+        "text": "Chủ nghĩa lý tưởng viển vông giết nhiều sinh mạng hơn là cứu vớt. Người sống nơi tiền tuyến rồi cũng học ra điều đó, bằng cách đau đớn nhất. Bi kịch thật sự là một số người sinh ra để trở thành kẻ hy sinh."
+      },
+      {
+        "title": "Trò Chuyện 4",
+        "text": "Tôi thích tự giải quyết vấn đề hơn. Không phải vì nghĩ mình gánh được mọi thứ, tôi chỉ hy vọng người khác bớt gánh nặng."
+      },
+      {
+        "title": "Trò Chuyện 5",
+        "text": "Chẳng ai ép nổi một con sói cô độc quay lưng lại với bầy của nó. Điều đó không cần nói cũng hiểu. Nhưng vẫn có người chọn con đường không thể quay lại, vì sống sót... hoặc vì thứ họ trân quý hơn. Tôi không đồng cảm, cũng không xen vào. Tôi chỉ chấp nhận ý chí phía sau lựa chọn ấy."
+      },
+      {
+        "title": "Chủ đề: Tộc Sói",
+        "text": "Đến giờ này tôi vẫn tìm kiếm tương lai cho Tộc Sói. Làm việc ở Endfield có thể không phải là lựa chọn tốt nhất, nhưng tôi tin đó là một bước đi quan trọng. Tôi hiểu không ai ngoài cuộc có thể thay đổi tư tưởng của Tộc Sói. Nhưng chúng tôi cần cơ hội để bắt đầu thay đổi. Cách mang \"cơ hội\" đó đến với Tộc Sói chính là điều tôi đang tìm kiếm."
+      },
+      {
+        "title": "Chủ đề: Rossi",
+        "text": "Tôi nên dành nhiều thời gian hơn với Rossi, nhưng khi nhìn con bé lúc này... Tôi thật sự kinh ngạc vì nó đã lớn đến nhường nào. Con bé mang hơi thở hoang dã và dễ chạm vào Huyết Mạch Tộc Sói. Tinh thông vũ khí, khai triển Thuật Pháp, đi săn... Tất cả đến với nó một cách tự nhiên. Nó không còn là đứa trẻ nhỏ bị quấn trong tấm chăn đẫm máu ngày nào. Không, con bé là Wulfperl của Gia Tộc Luppino. Tôi chỉ là nanh vuốt của Tộc Sói, còn Rossi là trái tim và linh hồn của nó."
+      },
+      {
+        "title": "Chủ đề: Landbreaker",
+        "text": "Các tộc Landbreaker phức tạp hơn nhiều so với mọi người vẫn tưởng. Ngoài Bonekrusher và Tộc Sói, còn có Sandreaver – một tộc kỳ dị với tổ chức lỏng lẻo, nhưng lại nổi danh chỉ với một chiếc tàu hải tặc duy nhất. Rồi đến Grayscar, những kẻ xăm đầy người bằng Bùa Trói Buộc... Và Shadowskull, một nhóm sát thủ tàn độc mà chẳng ai dám dây vào khi màn đêm buông xuống. Những tộc nhỏ này sống sót qua được những vùng hoang địa khắc nghiệt nên dĩ nhiên họ biết vài mánh khóe để sinh tồn."
+      },
+      {
+        "title": "Phát hiện Tài Nguyên/Có Thể Thu Thập 1",
+        "text": "Có thứ gì đó có thể thu thập ở đằng kia."
+      },
+      {
+        "title": "Phát hiện Tài Nguyên/Có Thể Thu Thập 2",
+        "text": "Phát hiện vật phẩm đặc biệt. Chúng ta nên lấy nó."
+      },
+      {
+        "title": "Phát Hiện Khu Vực Chưa Khám Phá",
+        "text": "Chỗ đó chưa được khảo sát. Tốt nhất nên đánh dấu lại."
+      },
+      {
+        "title": "Phát hiện Kẻ Địch Mạnh",
+        "text": "Có mùi rắc rối. Kẻ địch này không tầm thường."
+      },
+      {
+        "title": "Khai thác 1",
+        "text": "Hy vọng giá trị của chúng xứng đáng với công sức bỏ ra."
+      },
+      {
+        "title": "Khai thác 2",
+        "text": "Có lẽ cứ để tôi lo liệu... À thôi, cùng nhau kết thúc trận này đi."
+      },
+      {
+        "title": "Mở Thùng",
+        "text": "Chiến lợi phẩm tuyệt vời. Cuộc đi săn này rất đáng giá."
+      },
+      {
+        "title": "Nhận Aurylene",
+        "text": "Aurylene... Có vẻ Endfield thấy nó rất giá trị."
+      },
+      {
+        "title": "Xua Tan Nhiễm Khuẩn",
+        "text": "Quyết định đúng đấy. Nhiễm Khuẩn chỉ tổ làm chậm trễ chiến dịch thôi."
+      },
+      {
+        "title": "Nghỉ ngơi",
+        "text": "Đã nạp lại đạn. Đến lúc bắt đầu cuộc săn tiếp theo."
+      },
+      {
+        "title": "Sử Dụng Vật Phẩm Chiến Thuật 1",
+        "text": "Cẩn thận nhé. Đừng quá sức."
+      },
+      {
+        "title": "Sử Dụng Vật Phẩm Chiến Thuật 2",
+        "text": "... Thở lại được rồi."
+      },
+      {
+        "title": "Cảnh Báo Nguy Hiểm",
+        "text": "Tránh ra!"
+      },
+      {
+        "title": "Bị Thương",
+        "text": "Tập trung vào chiến đấu, đừng lo cho tôi."
+      },
+      {
+        "title": "0 HP",
+        "text": "Hngh... Cứu thương."
+      },
+      {
+        "title": "Cổ Vũ Đội 1",
+        "text": "Đòn đẹp lắm."
+      },
+      {
+        "title": "Cổ Vũ Đội 2",
+        "text": "Phối hợp ăn ý."
+      },
+      {
+        "title": "Đáp Lại Lời Cổ Vũ 1",
+        "text": "Tôi còn có thể làm tốt hơn."
+      },
+      {
+        "title": "Đáp Lại Lời Cổ Vũ 2",
+        "text": "Chỉ đơn giản là nghĩa vụ thôi."
+      },
+      {
+        "title": "Bắt Đầu Chiến Đấu 1",
+        "text": "Tôi đang quan sát để tìm sơ hở."
+      },
+      {
+        "title": "Bắt Đầu Chiến Đấu 2",
+        "text": "Đừng lo cho tôi. Tôi sẽ theo kịp."
+      },
+      {
+        "title": "Thắng Trận 1",
+        "text": "Không ngoài dự đoán."
+      },
+      {
+        "title": "Thắng Trận 2",
+        "text": "Tôi đã lường trước rồi."
+      },
+      {
+        "title": "Thắng Trận 3",
+        "text": "Chúng ta thắng rồi. Thế là đủ."
+      },
+      {
+        "title": "Thắng Trận 4",
+        "text": "Khó hơn tôi tưởng... Nhưng chúng ta là người chiến thắng. Đó mới là điều quan trọng."
+      },
+      {
+        "title": "Bại Trận",
+        "text": "Cũng có lúc kẻ săn mồi phải trở thành con mồi... Chúng ta sẽ bắt đầu cuộc săn mới."
+      },
+      {
+        "title": "Đòn Dứt Điểm 1",
+        "text": "Im lặng!"
+      },
+      {
+        "title": "Đòn Dứt Điểm 2",
+        "text": "Khó thoát!"
+      },
+      {
+        "title": "KN Chiến Đấu 1",
+        "text": "Giải quyết nhanh gọn!"
+      },
+      {
+        "title": "KN Chiến Đấu 2",
+        "text": "Huyết Mạch Tộc Sói!"
+      },
+      {
+        "title": "KN Chiến Đấu 3",
+        "text": "Tránh ra mau!"
+      },
+      {
+        "title": "Chuẩn Bị KN Liên Hoàn 1",
+        "text": "Nạp đạn xong."
+      },
+      {
+        "title": "Chuẩn Bị KN Liên Hoàn 2",
+        "text": "Tới lượt tôi."
+      },
+      {
+        "title": "Thi Triển Liên Hoàn 1",
+        "text": "Đã rõ."
+      },
+      {
+        "title": "Thi Triển Liên Hoàn 2",
+        "text": "Lùi xuống!"
+      },
+      {
+        "title": "Kết Liễu 1",
+        "text": "Giữ lại."
+      },
+      {
+        "title": "Kết Liễu 2",
+        "text": "Ngươi tiêu đời rồi!"
+      },
+      {
+        "title": "Tuyệt Kỹ 1",
+        "text": "Không ai thoát được!"
+      },
+      {
+        "title": "Tuyệt Kỹ 2",
+        "text": "Nhắm ngay yết hầu!"
+      },
+      {
+        "title": "Tuyệt Kỹ 3",
+        "text": "Bầy sói, mở tiệc nào!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

@@ -114,7 +114,329 @@
         "name": "Sports",
         "description": "Sports : entraînement physique intégré\nAkekuri a délaissé la mode, les arts, la littérature et tout ce qui pouvait l'intéresser autrefois. Elle passe désormais son temps à s'entraîner."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Préparation de l'opération 1",
+        "text": "Parée et apprêtée ! En avant, tout le monde !"
+      },
+      {
+        "title": "Préparation de l'opération 2",
+        "text": "C'est l'occasion d'apprendre et de se perfectionner !"
+      },
+      {
+        "title": "Intégration à l'équipe 1",
+        "text": "Akekuri, OP Z7, au rapport ! J'ai hâte de participer à la mission, que ce soit un franc succès !"
+      },
+      {
+        "title": "Intégration à l'équipe 2",
+        "text": "Génial, une autre tâche venue de l'Endmin ! Il n'y a pas de meilleur moyen d'apprendre !"
+      },
+      {
+        "title": "Changement d'arme",
+        "text": "Une nouvelle arme, hmm... Elle semble clairement unique. Très bien, je vais élaborer de nouvelles tactiques et stratégies !"
+      },
+      {
+        "title": "Changement d'équipement",
+        "text": "Hmm, cela me convient très bien ! Je m'assurerai de faire rapidement part de mes commentaires à l'arsenal."
+      },
+      {
+        "title": "Activation de la matrice de capacités",
+        "text": "J'ai l'impression d'empiler les crédits, mais pas tel qu'on l'apprend en cours."
+      },
+      {
+        "title": "Visionnage d'archives de combat",
+        "text": "Alors voilà à quoi ressemble un débriefing d'élite... Quelle révélation !"
+      },
+      {
+        "title": "Promotion d'opérateur 1",
+        "text": "Ohhh, une promotion ? Quel honneur ! Je prends cela comme un signe d'approbation, pour moi et toute la Z7. Nous allons continuer à progresser, aucun doute là-dessus !"
+      },
+      {
+        "title": "Promotion d'opérateur 2",
+        "text": "D'autres missions risquées sont prévues ? Non, je suis plus impatiente qu'effrayée. C'est un gage de confiance de ta part et une belle opportunité pour nous tous d'apprendre et d'évoluer."
+      },
+      {
+        "title": "Promotion d'opérateur 3",
+        "text": "Endmin, tu aurais un moment, tout à l'heure ? L'équipe organise une petite fête en ton honneur. J'ai préparé un Mont Blanc juste pour toi, et crois-moi, tu ne veux pas manquer ça !"
+      },
+      {
+        "title": "Promotion d'opérateur 4",
+        "text": "Selon une théorie que j'ai apprise en classe, tout le monde finit par être promu à un poste qui les dépasse. Alors si je reste coincée trop longtemps, Endmin, n'hésite pas à intervenir et à m'apporter tes conseils."
+      },
+      {
+        "title": "Opératrice au rapport",
+        "text": "Capitaine Akekuri de l'équipe opérationnelle Z7, au rapport ! Le dossier des opérations, le résumé du budget et le plan d'action sont prêts à être examinés. Que souhaites-tu lire en premier ?"
+      },
+      {
+        "title": "En attente 1",
+        "text": "Une équipe n'est forte que si elle ne comporte aucun maillon faible."
+      },
+      {
+        "title": "En attente 2",
+        "text": "Allez, laissez-moi faire quelque chose pour Endfield !"
+      },
+      {
+        "title": "Affectation à une installation",
+        "text": "Tu peux compter sur moi. J'ai déjà fait ça."
+      },
+      {
+        "title": "Salutation 1",
+        "text": "Le monde est petit, Endmin ! Tu reviens de mission, toi aussi ?"
+      },
+      {
+        "title": "Salutation 2",
+        "text": "Une pause café, Endmin ? Je peux t'en préparer du tout frais !"
+      },
+      {
+        "title": "Bavardage sur le Dijiang 1",
+        "text": "Ravie de te rencontrer, Endministrator. Je suis Akekuri, de l'équipe opérationnelle Z7. Oh, tout va bien ! Peut-être que nous sommes nouvellement réformés et que nous restons discrets pour l'instant, mais je te le promets : nous allons laisser notre marque."
+      },
+      {
+        "title": "Bavardage sur le Dijiang 2",
+        "text": "En sachant que tu diriges Endfield depuis le premier jour, je pensais que tu serais beaucoup plus sévère. Mais tu es bien plus sympa que prévu... Hi hi, j'imagine que c'est aussi cela, être un véritable leader !"
+      },
+      {
+        "title": "Bavardage sur le Dijiang 3",
+        "text": "Je dois dire que je préfère être ici, à bord du Dijiang, qu'à un de ces soi-disant « événements mondains » organisés par les élites des affaires de Néo Tsukushi. Les gens sont bien plus détendus ici et ils ont un impact réel."
+      },
+      {
+        "title": "Bavardage sur le Dijiang 4",
+        "text": "Tu as déjà mangé des nama yatsuhashi ? C'est une friandise traditionnelle de Higashi avec des haricots rouges, du matcha et un goût de châtaignes grillées. Si tu veux en goûter, viens participer à la prochaine réunion de la Z7."
+      },
+      {
+        "title": "Bavardage sur le Dijiang 5",
+        "text": "Salut, Endmin. Tu veux prendre une tasse de thé bien chaud avec moi ? On a de bonnes histoires de missions à partager !"
+      },
+      {
+        "title": "Bavardage sur le Dijiang 6",
+        "text": "J'adore regarder Talos-II depuis le pont. J'y ai tous mes souvenirs ; là où j'ai grandi, là où se trouvait ma famille et les lieux que vous avez modifiés. Bah, pourquoi cet air surpris ? J'ai eu 20/20 en géologie planétaire et en histoire contemporaine, hein !"
+      },
+      {
+        "title": "Cadeaux offerts",
+        "text": "Ah, Endmin ! Je t'ai rapporté un petit quelque chose de ma mission. J'espère que cela te plaira !"
+      },
+      {
+        "title": "Cadeaux acceptés",
+        "text": "Oh, un cadeau pour moi ?! C'est une récompense pour ce que j'ai fait ou... ?"
+      },
+      {
+        "title": "Dialogue à cœur ouvert 1",
+        "text": "Oh, tu veux savoir pourquoi la major de promotion de Néo Tsukushi a choisi de rejoindre Endfield ? En réalité, c'est moi qui suis reconnaissante d'avoir été choisie. Tout me plaît dans mon équipe OP, bien plus que de grimper les échelons d'une entreprise. Ici, je peux combattre avec les autres et être une pionnière."
+      },
+      {
+        "title": "Dialogue à cœur ouvert 2",
+        "text": "Mon souhait ? Simplement que papa et maman fassent la paix. Papa est parti combattre les Aggeloi et maman gère le magasin familial. Mais pourquoi devraient-ils pour autant vivre des vies séparées ? S'ils travaillaient ensemble à Endfield, ils n'auraient pas à choisir entre leur devoir et leur famille..."
+      },
+      {
+        "title": "Dialogue à cœur ouvert 3",
+        "text": "Quand j'étais petite, je jouais à un jeu appelé « Combattre les Aggeloi » avec papa et tonton. Je montais sur leurs épaules comme si j'étais la commandante. Et puis, il y a dix ans, tonton a été appelé dans le Nord en tant que hackeur shinobi et n'est jamais revenu. C'est là que mes parents ont arrêté de se parler. J'avais quasiment oublié ces « combats » jusqu'à ce qu'Endfield fasse tout ressurgir."
+      },
+      {
+        "title": "Dialogue à cœur ouvert 4",
+        "text": "Après ma candidature pour restaurer la Z7, j'ai passé plus d'un an à m'entraîner et à me tester durement. Mais ce qui importait le plus, c'était de rencontrer Catcher, Fluorite, Estella et Antal. Ils sont le cœur de notre équipe et la raison pour laquelle la Z7 a un avenir."
+      },
+      {
+        "title": "Dialogue à cœur ouvert 5",
+        "text": "Ha ha, j'imagine qu'on ne peut rien te cacher, Endmin. Oui, ma maman avait tout prévu : l'école de commerce, rejoindre la CCGT, suivre ses pas. Bon, le fait que je vienne ici ne faisait pas partie de son plan. Alooors... s'il te plaît, fais d'Endfield un incontournable sur Talos-II, sinon elle va me rappeler à la maison ! Oh, au fait, si tu veux faire du shopping dans la Ceinture, prends cette carte. Chuuut... Oui, c'est ce magasin si célèbre."
+      },
+      {
+        "title": "Discussion 1",
+        "text": "Je sais, je ne suis pas la combattante la plus forte... C'est pourquoi la confiance et le travail d'équipe sont notre meilleure défense. Maintenant, tu vois l'importance que peut avoir ce pistolet lance-fusées !"
+      },
+      {
+        "title": "Discussion 2",
+        "text": "Tu veux savoir comment je m'assure que tout se passe bien dans la Z7 ? C'est assez simple en fait : il suffit de manger tout ce que cuisine Catcher, d'offrir des attrape-mouches à Fluorite, de supporter toutes les chansons tapageuses d'Estella, et de rire des blagues d'Antal. Crois-moi, ça fonctionne."
+      },
+      {
+        "title": "Discussion 3",
+        "text": "Notre première mission ensemble était un simple travail d'escorte, pour aider les ingénieurs d'Endfield à construire un barrage dans les Confins. Ça a l'air facile, hein ? On a tellement bâclé le travail qu'on pourrait écrire un manuel « Comment tout rater en 10 leçons ». Mais quand le barrage a enfin été construit, immergée jusqu'à la taille dans l'eau froide, j'ai eu... un véritable sentiment d'accomplissement."
+      },
+      {
+        "title": "Discussion 4",
+        "text": "Si tu nous dirigeais, Endmin... Je te dirais de laisser Estella et Antal nous couvrir, Catcher et moi encaisser le gros des dégâts, et Fluorite porter le coup de grâce. Attends, tu prévois de faire totalement autre chose ?"
+      },
+      {
+        "title": "Discussion 5",
+        "text": "Tu veux voir mon bulletin scolaire ? Hmm, j'ai eu 20/20 partout sauf en simulation d'entreprise en deuxième année. Mes coéquipiers comptaient sur moi, alors oups... j'ai un peu poussé les autres équipes à faire faillite. Le professeur m'a dit plus tard que sur Talos-II, les stratégies à somme nulle ne sont pas la meilleure approche. Ça a été mon seul et unique 19/20."
+      },
+      {
+        "title": "Thème : Catcher",
+        "text": "Tout le monde dit que Catcher est un super coéquipier, mais honnêtement, c'est celui dont il faut le plus s'occuper. Je faisais du café pour tout le monde pendant les réunions et, depuis deux mois, il le buvait systématiquement... jusqu'à ce qu'on découvre qu'il était allergique ! C'est pour ça que je suis passée au chocolat chaud."
+      },
+      {
+        "title": "Thème : Fluorite",
+        "text": "Certaines personnes ont peur de Fluorite à cause de sa façon de parler et de son passé. Mais en apprenant à la connaître, tu vois le courage et le sens de la justice qui se cachent sous sa capuche. Crois-moi, tu ne le regretteras pas."
+      },
+      {
+        "title": "Thème : Estella",
+        "text": "Quelqu'un d'autre s'est plaint du manque de motivation d'Estella ? Nan, c'est n'importe quoi. Regarde son dossier, elle adore les sensations fortes, les aventures et travailler dur !"
+      },
+      {
+        "title": "Thème : Antal",
+        "text": "Oh, tu ne comprends pas l'humour d'Antal ? Hi hi. En essayant d'adopter de son point de vue, tu verras peut-être ce qu'il veut dire et tu pourrais trouver ça drôle... Ha ha ha !"
+      },
+      {
+        "title": "Détection de ressource/objet à collecter 1",
+        "text": "Je pense que j'ai repéré quelque chose d'intéressant par ici... Allons voir !"
+      },
+      {
+        "title": "Détection de ressource/objet à collecter 2",
+        "text": "Objet de valeur identifié. Demande d'autorisation de lancement de l'opération de collecte."
+      },
+      {
+        "title": "Zone inexplorée détectée",
+        "text": "Zone non identifiée détectée. En attente de consignes complémentaires."
+      },
+      {
+        "title": "Découverte d'un ennemi puissant",
+        "text": "Cible à haut risque détectée. Restez calmes, c'est ce pour quoi on s'est entraîné."
+      },
+      {
+        "title": "Extraction 1",
+        "text": "Ces minerais sont des matériaux essentiels pour Endfield."
+      },
+      {
+        "title": "Extraction 2",
+        "text": "Laissez-moi vous donner un coup de main ! On forme une équipe, non ?"
+      },
+      {
+        "title": "Ouverture de caisse",
+        "text": "Sympa ! On a ramassé un joli butin !"
+      },
+      {
+        "title": "Obtention d'aurylène",
+        "text": "Récupérer de l'aurylène est une priorité en mission. Je me demande quels secrets il renferme..."
+      },
+      {
+        "title": "Élimination de la Gangrène",
+        "text": "Très bien, un autre obstacle de moins ! Notre objectif nous attend !"
+      },
+      {
+        "title": "Repos",
+        "text": "Pfiou, je peux enfin m'asseoir et savourer mon café. Oh, je devrais également planifier les prochaines étapes, réparer mon équipement et vérifier mon sac."
+      },
+      {
+        "title": "Utilisation de tactique 1",
+        "text": "Reste calme, commençons par te rafistoler."
+      },
+      {
+        "title": "Utilisation de tactique 2",
+        "text": "Des soins qui tombent à pic !"
+      },
+      {
+        "title": "Avertissement de danger",
+        "text": "À couvert, MAINTENANT !"
+      },
+      {
+        "title": "Blessure",
+        "text": "Une bonne capitaine... ne doit jamais reculer..."
+      },
+      {
+        "title": "0 PV",
+        "text": "Même si je tombe... je me relèverai."
+      },
+      {
+        "title": "Encouragement de l'équipe 1",
+        "text": "Oh, une exécution parfaite !"
+      },
+      {
+        "title": "Encouragement de l'équipe 2",
+        "text": "C'était magnifique ! Je suis stupéfaite !"
+      },
+      {
+        "title": "Réaction face aux encouragements 1",
+        "text": "C'est un travail d'équipe avant tout !"
+      },
+      {
+        "title": "Réaction face aux encouragements 2",
+        "text": "Je n'y serais pas arrivée sans vous !"
+      },
+      {
+        "title": "Début du combat 1",
+        "text": "Ce sera un face-à-face, application du plan A !"
+      },
+      {
+        "title": "Début du combat 2",
+        "text": "Allez ! J'ai totalement foi en vous tous !"
+      },
+      {
+        "title": "Victoire au combat 1",
+        "text": "Ensuite, il faudra procéder à l'analyse du retour d'expérience... mais célébrons d'abord notre victoire !"
+      },
+      {
+        "title": "Victoire au combat 2",
+        "text": "On est sur la bonne voie. Lentement mais sûrement."
+      },
+      {
+        "title": "Victoire au combat 3",
+        "text": "Très beau travail. Nous avons tous fait notre part pour Endfield !"
+      },
+      {
+        "title": "Victoire au combat 4",
+        "text": "Une victoire parfaite ne nous apprend rien. Ce sont les failles qui nous affûtent."
+      },
+      {
+        "title": "Défaite au combat",
+        "text": "Les erreurs sont sources d'apprentissage. Je suis sûre qu'on fera mieux la prochaine fois."
+      },
+      {
+        "title": "Coup final 1",
+        "text": "Regardez un peu ça !"
+      },
+      {
+        "title": "Coup final 2",
+        "text": "Attaque perforante !"
+      },
+      {
+        "title": "Compétence de combat 1",
+        "text": "Balayage de zone !"
+      },
+      {
+        "title": "Compétence de combat 2",
+        "text": "Faites place !"
+      },
+      {
+        "title": "Compétence de combat 3",
+        "text": "Ressens la brûlure !"
+      },
+      {
+        "title": "Compétence de combo prête 1",
+        "text": "C'est maintenant ou jamais !"
+      },
+      {
+        "title": "Compétence de combo prête 2",
+        "text": "Ensemble !"
+      },
+      {
+        "title": "Utilisation de combo 1",
+        "text": "Hmpf ! Ça va cramer !"
+      },
+      {
+        "title": "Utilisation de combo 2",
+        "text": "Ça va cramer !"
+      },
+      {
+        "title": "Coup fatal 1",
+        "text": "C'est terminé !"
+      },
+      {
+        "title": "Coup fatal 2",
+        "text": "Finissons-en !"
+      },
+      {
+        "title": "Ultime 1",
+        "text": "Équipe, suivez la lumière ! C'est parti !"
+      },
+      {
+        "title": "Ultime 2",
+        "text": "Gloire à Hannabit !"
+      },
+      {
+        "title": "Ultime 3",
+        "text": "La stratégie de la victoire ! Allons-y !"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

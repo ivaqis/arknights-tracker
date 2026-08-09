@@ -120,7 +120,333 @@
         "name": "Tecnología",
         "description": "Tecnología: Reparaciones por cuenta propia\nIncluso el equipo más avanzado debe recibir el mantenimiento adecuado. Un soldado tiene el deber de conocer a fondo a sus compañeros más cercanos."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Preparación de la operación 1",
+        "text": "Todo listo y preparado. A la espera de tus órdenes."
+      },
+      {
+        "title": "Preparación de la operación 2",
+        "text": "¿Una misión nueva?"
+      },
+      {
+        "title": "Añadir al equipo 1",
+        "text": "Yo me encargaré de la sesión táctica."
+      },
+      {
+        "title": "Añadir al equipo 2",
+        "text": "En marcha. La guerra nunca termina. Solo podemos seguir adelante."
+      },
+      {
+        "title": "Cambiar de arma",
+        "text": "Una excelente pieza de trabajo de gran calidad. Le daré un buen uso."
+      },
+      {
+        "title": "Cambiar de equipamiento",
+        "text": "No veía un equipo de este calibre desde hace... bastante tiempo."
+      },
+      {
+        "title": "Activación de la matriz de habilidades",
+        "text": "Mi fuerzas se están recuperando... pero aún no es suficiente."
+      },
+      {
+        "title": "Viendo los registros de combate",
+        "text": "Excelente trabajo en equipo... Gracias. He aprendido mucho."
+      },
+      {
+        "title": "Ascenso de operador 1",
+        "text": "Te agradezco la confianza. No te fallaré."
+      },
+      {
+        "title": "Ascenso de operador 2",
+        "text": "Entendido. Ahora que se me han asignado tareas más críticas, ¿puedo dar mi opinión para el plan de combate?"
+      },
+      {
+        "title": "Ascenso de operador 3",
+        "text": "En la Orden, el comandante nos entregaba insignias por momentos como este... No, no es necesario. Que se quede así; lo que busco aquí no es honor."
+      },
+      {
+        "title": "Ascenso de operador 4",
+        "text": "No puedo decir cuándo terminará esta Cruzada, pero cada vez soy más consciente de que debemos tomarla con la máxima seriedad... Espero que me concedas el honor de completarla a tu lado."
+      },
+      {
+        "title": "Operador reportándose para el deber",
+        "text": "Ember, Caballero de la Orden del Juramento de Acero, reportándose para el deber. Comprometida por el pacto, obedeceré tus órdenes hasta que la Cruzada concluya."
+      },
+      {
+        "title": "En espera 1",
+        "text": "Mi Cruzada está lejos de terminar..."
+      },
+      {
+        "title": "En espera 2",
+        "text": "El campo de batalla no perdona los errores. Debemos perfeccionar nuestras habilidades con verdadera devoción."
+      },
+      {
+        "title": "Asignando a una instalación",
+        "text": "¿Una misión especial? Entendido... La llevaré a cabo con esfuerzo inquebrantable."
+      },
+      {
+        "title": "Saludo 1",
+        "text": "¿Tienes una misión de combate que requiera mi presencia?"
+      },
+      {
+        "title": "Saludo 2",
+        "text": "Hola de nuevo, Endmin. ¿A dónde nos llevará la siguiente batalla?"
+      },
+      {
+        "title": "Charla casual en la Dijiang 1",
+        "text": "La Dijiang es una nave equipada con múltiples comodidades, pero no está diseñada para la guerra. Aún me estoy acostumbrando a su ausencia de disponibilidad constante para el combate."
+      },
+      {
+        "title": "Charla casual en la Dijiang 2",
+        "text": "¿Entrenamiento en la Orden? Mmm... En aquellos días, podía enfrentar sola a todo un grupo de Homoiossaron, así que mi comandante enviaba escuadrones enteros de reclutas nuevos para luchar contra mí."
+      },
+      {
+        "title": "Charla casual en la Dijiang 3",
+        "text": "Debajo de la aurora se extienden las líneas defensivas de los Guardianes del juramento... Cuando estallaba la batalla, el cielo se cubría de enjambres de Aggeloi flotantes. Por supuesto, nuestros portaaviones de combate y naves escolta también... Espera, la cordillera no debería estar en esa dirección... Lo siento, tal vez... confundí el lugar."
+      },
+      {
+        "title": "Charla casual en la Dijiang 4",
+        "text": "Los saltos desde gran altitud en zonas de guerra son habituales para mi unidad. Sin embargo, aquí arriba, la idea misma de altitud empieza a desvanecerse."
+      },
+      {
+        "title": "Charla casual en la Dijiang 5",
+        "text": "Los operadores aquí son excelentes compañeros de entrenamiento. Valoran la coordinación en el campo de batalla y muestran gran creatividad al desarrollar estrategias. He aprendido mucho de ellos. Como Guardiana del Juramento, debo seguir el ritmo y no dejar nunca de mejorar."
+      },
+      {
+        "title": "Charla casual en la Dijiang 6",
+        "text": "La Oficina de inteligencia me dio acceso a algunos registros de misiones. Tantos dieron su vida por sus creencias, incluso sin haber pisado jamás el campo de batalla. Tal vez no se arrepintieron, pero me pongo a pensar: ¿qué podemos hacer para evitar que estos sacrificios se repitan con tanta frecuencia?"
+      },
+      {
+        "title": "Ofreciendo regalos",
+        "text": "Por favor, acepta esto, Endmin."
+      },
+      {
+        "title": "Aceptando regalos",
+        "text": "Mis agradecimientos. Lo tomaré como una muestra de tu aprobación."
+      },
+      {
+        "title": "Diálogo de confianza 1",
+        "text": "Esta armadura está diseñada con suma precisión, y como Guardianes del juramento, debemos tener las habilidades de ingeniería necesarias para mantenerla en funcionamiento. Al final, no es la armadura lo que te mantiene con vida en combate. Es tu determinación para mantenerte firme, tu mente para trazar estrategias y tu valentía para actuar."
+      },
+      {
+        "title": "Diálogo de confianza 2",
+        "text": "Permíteme cubrir los gastos médicos de ese operador de reserva. Entre los Guardianes del Juramento, muchos están dispuestos a dar la vida, pero sin un objetivo claro de victoria, esa determinación solo pone a todos en peligro. *Suspiro* Me distraje y golpeé con más fuerza de la que pretendía... Lo siento de verdad."
+      },
+      {
+        "title": "Diálogo de confianza 3",
+        "text": "Existe una tradición entre los Guardianes del Juramento: cuando un escuadrón está demasiado agotado para continuar, el Guardián del Juramento debe retirarse para reclutar nuevos aliados. Podrías considerarlo una forma de Cruzada. Nos tomamos nuestro tiempo para encontrar sucesores dignos y nunca apresuramos el proceso. Sin embargo... parece que mi Cruzada se ha extendido demasiado."
+      },
+      {
+        "title": "Diálogo de confianza 4",
+        "text": "Cuando entrego recuerdos y cenizas de camaradas caídos, conocí a sus padres, hermanos y seres queridos. Incluso detuve al mejor amigo de un soldado que quería ir al norte por venganza. De algún modo, fui quien más terminó consolando a los demás, convenciéndolos de no actuar por impulso. Quizá por eso el comandante insistió en que iniciara la Cruzada sin demora."
+      },
+      {
+        "title": "Diálogo de confianza 5",
+        "text": "Ella es Claire, ellos son Zhao, Nilla y Lucion. El de mirada aguda es Fiyanggu, un novato. En realidad, ninguno bebió. Solo fingimos brindar porque había un periodista de visita. Todos eran soldados excepcionales y por eso eligieron ese día para completar la misión. Si sus sucesores son igual de excepcionales... No creo que pueda ser capaz de enviarlos al norte. ¿Por qué estoy pensando así, Endmin? ¿Qué me falta?"
+      },
+      {
+        "title": "Charla 1",
+        "text": "Ember, ese nombre en clave lo elegí yo. No pretendo huir de la verdad: aún no estoy lista para volver al frente norte. Pero mientras haya posibilidad de arder, Ember reavivará las llamas. Endmin, confío en que Endfield me ayudará a encontrar mi camino."
+      },
+      {
+        "title": "Charla 2",
+        "text": "Las unidades de seguridad estándar pueden lidiar con los Kriossones, pero todo cambia cuando aparecen los Thrylissorones. En los Guardianes del Juramento, los escuadrones tácticos como el nuestro tienen la tarea de desarticular rápidamente las formaciones enemigas, neutralizar a los Ankhors y prevenir la aparición de agrupaciones más peligrosas de Aggeloi. Estas misiones son muy peligrosas, pero nos enorgullece cumplirlas."
+      },
+      {
+        "title": "Charla 3",
+        "text": "Un escuadrón debilitado debe retirarse a la retaguardia para reclutar nuevos soldados, funcionando como un canal de reclutamiento especial para los Guardianes del Juramento. Quienes vienen a retarme solo desean unirse a nosotros; no tienen rencor personal hacia mí. Claro está, la victoria por sí sola no garantiza el alistamiento. La fuerza y la habilidad son esenciales, pero lo que realmente importa es lo que el combate revela sobre el carácter del retador."
+      },
+      {
+        "title": "Charla 4",
+        "text": "¿Tienes curiosidad por mi Pistola Guardiana? Me temo que la dejé en la fortaleza de los Guardianes del Juramento. En realidad no lucho con armas a distancia. Mi pistola es más bien una parte de lo que soy. Dejarla ahí es un recordatorio de que algún día volveré."
+      },
+      {
+        "title": "Charla 5",
+        "text": "Cuando me retiraron del frente, el comandante no fijó una fecha de regreso. De hecho, he oído de otros veteranos que recibieron la misma orden. Fueron enviados a la retaguardia para reclutar, pero nunca volvieron a la fortaleza. Tal vez esa sea una forma respetuosa de decir que fueron retirados en silencio. Pero no pienso seguir ese camino; por eso el comandante me asignó contigo. Cree que Endfield podría ayudarme a descubrir lo que aún me falta. Sinceramente espero que tenga razón."
+      },
+      {
+        "title": "Tema: Orden del juramento de acero",
+        "text": "Durante la Primera Guerra de Aggeloi, se formó una coalición de fuerzas élite para avanzar hacia el Norte. Juraron luchar hasta el final, iniciando una larga y agotadora guerra de desgaste. Así se crearon los primeros Guardianes del Juramento... De hecho, el comandante me dijo que fuiste tú, Endmin, quien ayudó a restablecer la comunicación con la retaguardia. Y ahora estoy aquí, contándote esta historia. Se siente casi surrealista."
+      },
+      {
+        "title": "Tema: La Guerra de Aggeloi",
+        "text": "La táctica y la tecnología pueden darnos ventaja contra los Aggeloi, pero una vez que una batalla escala a guerra, la pérdida de vidas se vuelve inevitable. Cuando terminó la Primera Guerra de Aggeloi, la actividad de los Ankhor y los Aggeloi había disminuido considerablemente. Sin embargo, muchos años después, cuando servía como soldado, los enfrentamientos en el frente ya se estaban intensificando... Tal vez la verdadera guerra apenas está comenzando."
+      },
+      {
+        "title": "Tema: Línea de Defensa del Norte",
+        "text": "La Línea de Defensa del Norte nunca es un límite fijo. Cada día luchamos por cada centímetro de terreno contra los Aggeloi. Cuando el combate se vuelve feroz, nuestros soldados incluso cargan materiales de construcción hacia el campo de batalla, apresurándose a levantar nuevas fortalezas en puntos estratégicos recién tomados. Nunca retrocedemos de la línea de defensa, porque nosotros mismos somos la línea de defensa."
+      },
+      {
+        "title": "Tema: Artes de Originio",
+        "text": "Igual que el fuego común, mis Artes de Originio pueden encender materiales y quemar enemigos. Con el control adecuado, incluso pueden usarse para desinfectar heridas y regular la temperatura corporal. Estas técnicas pueden ser útiles en combate, pero no sustituyen las verdaderas artes médicas. Siempre es mejor evacuar a los heridos y darles tratamiento adecuado lo antes posible."
+      },
+      {
+        "title": "Tema: Franja de la Civilización",
+        "text": "Incluso en lo más intenso del combate, el suministro de Supresores de oripatía al frente nunca se interrumpió. Como Infectada, entiendo perfectamente lo crucial que es eso. Es difícil imaginar cómo vivía la gente durante la Era de Terra... Aquí no ocurren Catástrofes provocadas por el Originio, y los Infectados ya no son perseguidos a gran escala. ¿Quizá esto es prueba de cuánto hemos avanzado?"
+      },
+      {
+        "title": "Recurso/Coleccionable detectado 1",
+        "text": "Recursos útiles localizados. Hay que preparar el rescate."
+      },
+      {
+        "title": "Recurso/Coleccionable detectado 2",
+        "text": "Objeto de alto valor identificado. Solicito aprobación para su recuperación."
+      },
+      {
+        "title": "Zona inexplorada detectada",
+        "text": "Señales inusuales detectadas más adelante. No coinciden con los patrones conocidos de los Ankhor. ¿Deberíamos investigarlo?"
+      },
+      {
+        "title": "Enemigo poderoso descubierto",
+        "text": "Amenaza hostil de alto riesgo detectada. Permanezcan alerta."
+      },
+      {
+        "title": "Minería 1",
+        "text": "Reabastece siempre los suministros cuando tengas la oportunidad. No querrás quedarte sin recursos en los momentos críticos."
+      },
+      {
+        "title": "Minería 2",
+        "text": "¿Recolectando minerales? Permíteme ayudarte."
+      },
+      {
+        "title": "Abriendo una caja",
+        "text": "Espero que sea útil."
+      },
+      {
+        "title": "Adquiriendo Aurileno",
+        "text": "¿Vamos a recolectar esto? Entendido, estaré pendiente."
+      },
+      {
+        "title": "Eliminar la Plaga",
+        "text": "Estos obstáculos inmundos ya no entorpecerán nuestro avance."
+      },
+      {
+        "title": "Descanso",
+        "text": "El descanso ha concluido. Continuemos con la misión."
+      },
+      {
+        "title": "Uso táctico 1",
+        "text": "Preparando soporte táctico."
+      },
+      {
+        "title": "Uso táctico 2",
+        "text": "Todo listo. De vuelta a la pelea."
+      },
+      {
+        "title": "Advertencia de peligro",
+        "text": "¡Prepárense para el impacto!"
+      },
+      {
+        "title": "Herida",
+        "text": "Resistiré hasta el final."
+      },
+      {
+        "title": "0 PV",
+        "text": "La Cruzada... no puede terminar aquí..."
+      },
+      {
+        "title": "Ánimo del equipo 1",
+        "text": "Desempeño sobresaliente."
+      },
+      {
+        "title": "Ánimo del equipo 2",
+        "text": "Maniobra de combate ejemplar."
+      },
+      {
+        "title": "Respuesta al ánimo 1",
+        "text": "Todos se han ganado su parte de gloria."
+      },
+      {
+        "title": "Respuesta al ánimo 2",
+        "text": "Todo gracias a nuestro sólido trabajo en equipo."
+      },
+      {
+        "title": "Comienza el combate 1",
+        "text": "¡Vamos! ¡Estás peleando contra mí!"
+      },
+      {
+        "title": "Comienza el combate 2",
+        "text": "Entendido. Atacando al enemigo."
+      },
+      {
+        "title": "Victoria en el combate 1",
+        "text": "Una victoria bien merecida."
+      },
+      {
+        "title": "Victoria en el combate 2",
+        "text": "Luchamos con valor y prudencia. Excelente trabajo, equipo."
+      },
+      {
+        "title": "Victoria en el combate 3",
+        "text": "Juntos hicimos posible esta victoria."
+      },
+      {
+        "title": "Victoria en el combate 4",
+        "text": "No tuve un buen desempeño... pero aprovecharé lo aprendido y mejoraré. Lo prometo."
+      },
+      {
+        "title": "Derrota en el combate",
+        "text": "¿Cometí los mismos errores otra vez...?"
+      },
+      {
+        "title": "Golpe final 1",
+        "text": "¡Toma esto!"
+      },
+      {
+        "title": "Golpe final 2",
+        "text": "¡Deja de resistirte!"
+      },
+      {
+        "title": "Habilidad de batalla 1",
+        "text": "¡No puedes detenerme!"
+      },
+      {
+        "title": "Habilidad de batalla 2",
+        "text": "¡Derríbenlos!"
+      },
+      {
+        "title": "Habilidad de batalla 3",
+        "text": "¡Avancen!"
+      },
+      {
+        "title": "Habilidad de combo preparada 1",
+        "text": "¡Lista para apoyar!"
+      },
+      {
+        "title": "Habilidad de combo preparada 2",
+        "text": "¡En posición!"
+      },
+      {
+        "title": "Lanzando combo 1",
+        "text": "¡No mientras yo esté de guardia!"
+      },
+      {
+        "title": "Lanzando combo 2",
+        "text": "¡Enfrenta tu final!"
+      },
+      {
+        "title": "Remate 1",
+        "text": "¡Quebrar ahora!"
+      },
+      {
+        "title": "Remate 2",
+        "text": "¡Patético!"
+      },
+      {
+        "title": "Habilidad máxima 1",
+        "text": "¡Fuego del Guardián del Juramento!"
+      },
+      {
+        "title": "Habilidad máxima 2",
+        "text": "¡Seré el avatar del Resplandor!"
+      },
+      {
+        "title": "Habilidad máxima 3",
+        "text": "¡Aquí, la luz arderá por toda la eternidad!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

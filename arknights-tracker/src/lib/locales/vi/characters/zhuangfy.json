@@ -125,7 +125,333 @@
         "name": "Văn Hóa",
         "description": "Văn Hóa: Người Khai Mở Công Nghiệp \nCô đã có kế hoạch cho tương lai của Võ Lăng vượt xa cả công nghệ Xiranite."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Chuẩn Bị Tác Chiến 1",
+        "text": "Dù là đối địch hay khách quý, ta luôn chuẩn bị chu toàn trước khi bước ra."
+      },
+      {
+        "title": "Chuẩn Bị Tác Chiến 2",
+        "text": "Uống một tách trà thanh mát trước khi xuất phát chứ?"
+      },
+      {
+        "title": "Đang thêm vào Đội 1",
+        "text": "Nếu ngài tìm đến tôi, hẳn đây không phải chuyện đơn giản. Tôi có thể giúp gì đây?"
+      },
+      {
+        "title": "Đang thêm vào Đội 2",
+        "text": "Đã nhiều năm rồi tôi chưa nhận nhiệm vụ... Hy vọng tay nghề của tôi vẫn chưa mai một."
+      },
+      {
+        "title": "Đang Đổi Vũ Khí",
+        "text": "Ngay cả loại vũ khí tinh xảo nhất cũng cần thời gian mới thạo được. Khi đã quen tay, tôi sẽ chia sẻ cảm nhận của mình."
+      },
+      {
+        "title": "Đang Đổi Trang Bị",
+        "text": "Loại mới này quả thật mạnh hơn, nhưng tôi vẫn có chút lưu luyến với cái cũ…"
+      },
+      {
+        "title": "Kích Hoạt Ma Trận Năng Lực",
+        "text": "Mỗi khi học thêm được điều gì mới, tôi lại càng thấm thía rằng hiểu biết của mình chẳng qua chỉ là một giọt nước giữa đại dương."
+      },
+      {
+        "title": "Xem Hồ Sơ Chiến Đấu",
+        "text": "*Thở dài* Thật không chịu nổi khi thấy dáng vẻ vụng về của mình trên màn hình… hay là ngài trực tiếp đấu với tôi một trận xem?"
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 1",
+        "text": "Tôi chỉ làm điều mình nên làm thôi… không cần phải khách sáo như vậy."
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 2",
+        "text": "Được rồi, được rồi, khen thế là đủ rồi đấy. Nếu ngài rảnh, có thể xem qua công trình nghiên cứu tôi đang làm không?"
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 3",
+        "text": "Ngài hào phóng quá rồi, thật đấy… Hay là thế này nhé, cùng nhau dùng một bữa đơn giản là đủ rồi. Hoặc nếu có dịp ra biển, một loài cây nhỏ chịu được mặn sẽ là món quà hoàn hảo."
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 4",
+        "text": "… Tôi thật lòng cảm kích trước tấm lòng của ngài. Và tôi cũng xin nhắc nhẹ một điều: Nếu được thì hãy đến Võ Lăng nhận huy chương Công Dân Danh Dự nhé. Hứa với tôi, đừng có lặng lẽ nhận xong rồi đi mà không báo cho chúng tôi đấy. Mọi người rất muốn tổ chức cho ngài một buổi lễ đàng hoàng."
+      },
+      {
+        "title": "Cán Viên đang báo cáo nhiệm vụ",
+        "text": "Endmin, trước khi chính thức gia nhập, tôi muốn nói vài lời. Với vai trò là Phó Vương, tôi có nhiều kinh nghiệm về hành chính. Nhưng… ở Endfield, tôi mong được làm một Thiên Sư bình thường và tập trung vào nghiên cứu."
+      },
+      {
+        "title": "Chờ Lệnh 1",
+        "text": "Ngài vừa… gọi tôi sao? Ngài chọn tôi làm người đồng hành à?"
+      },
+      {
+        "title": "Chờ Lệnh 2",
+        "text": "Endmin, tôi mới thêm một mô-đun mới vào thiết bị Thiên Sư. Chúng ta thử xem hiệu năng của nó thế nào chứ?"
+      },
+      {
+        "title": "Phân Công Vào Công Trình",
+        "text": "Nếu tin tôi, hãy giao những việc nhỏ này cho tôi. Tôi có thể tự xử lý."
+      },
+      {
+        "title": "Lời Chào 1",
+        "text": "Tôi đang trên đường đến phòng thí nghiệm. Tiện đường thì đi chung luôn nhé?"
+      },
+      {
+        "title": "Lời Chào 2",
+        "text": "Trùng hợp thật đấy. Tôi vừa định tới chỗ ngài luôn."
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 1",
+        "text": "Đây là lần đầu tôi đến Dijiang, nhưng… hình chiếu ba chiều của tôi từng đến đây họp trước đó rồi."
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 2",
+        "text": "Về bức tượng Chubby Lung khổng lồ mà ngài nhờ… tôi đã suy nghĩ rồi. Vận chuyển thì được đấy, nhưng… ngài nên cân nhắc kỹ về nơi đặt tượng."
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 3",
+        "text": "Kế hoạch hợp tác với Endfield… xin lỗi, giữa Võ Lăng và chúng tôi đã kết thúc, báo cáo thí nghiệm cũng đã được tải lên. Nếu vài ngày tới ngài rảnh thì xin hãy xem qua."
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 4",
+        "text": "Lần này tôi đến Dijiang không phải vì công việc… Vườn lê ở Võ Lăng đã vào mùa, nên tôi mang một ít đến chia cho mọi người."
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 5",
+        "text": "Hồi nhỏ, tôi rất thích theo sư phụ đến đài quan sát. Bà thường đếm những vì sao, rồi chỉ một ngôi sao và nói đó là Dijiang. Tôi nhìn theo, tự hỏi nó hẳn phải xa xôi đến nhường nào. Giờ đây, Dijiang ở ngay trước mắt, vậy mà chính những ký ức ấy lại trở nên xa vời."
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 6",
+        "text": "Người ta nói nên đọc vạn quyển sách, đi vạn dặm đường. Tôi đọc thì nhiều, nhưng lại chẳng đi được bao nơi. Hongshan, Võ Lăng và Dijiang, vừa tròn ba chốn. Vậy cũng không lạ, bởi tôi có thói quen ở lại một nơi suốt nhiều năm — mười năm, hai mươi năm… hay thậm chí là cả một đời."
+      },
+      {
+        "title": "Tặng Quà",
+        "text": "Tôi vừa trở về từ chuyến công tác ở Hongshan và mang cho ngài vài món quà. Khiêm tốn thôi, nhưng tôi đã chọn từng món rất cẩn thận đấy… Mong là ngài sẽ thích."
+      },
+      {
+        "title": "Nhận Quà",
+        "text": "Theo phép tắc thì tôi nên cất món quà vào kho, nhưng cá nhân tôi lại muốn đặt nó ở nơi dễ với, để lúc nào cũng có thể nhìn thấy."
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 1",
+        "text": "À Endmin! Ngài có thể giữ chắc giúp tôi để tôi lấp đất vào không? Nếu số phận không đưa tôi đến Võ Lăng, có lẽ tôi vẫn ở Hongshan, làm nông dân hoặc một Thiên Sư Nông Nghiệp. Gia đình tôi vốn rất yêu hoa cỏ, nên nhà lúc nào cũng tràn ngập màu xanh mát mắt, ai ghé thăm cũng thấy dễ chịu. Vì thế, khi tham gia quy hoạch Thành Phố Võ Lăng, điều đầu tiên tôi nghĩ đến là chọn hương thơm nào để chào đón mỗi vị khách, và tiếp đón họ trong bầu không khí nào."
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 2",
+        "text": "Thoải mái đi, tôi không đến để kéo ngài về Học Viện đâu. Trên Đại Lộ Phương Hưng có quán mì thịt kho mới mở, tôi định rủ ngài đi ăn thử. Nhưng nói thật nhé, sao cứ thấy tôi là ngài lại nghĩ đến công việc vậy? Có lẽ tôi cũng nên tự kiểm điểm lại."
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 3",
+        "text": "Võ Lăng sắp tổ chức \"Cuộc Chạy Đua Ba Chân\", ngài có muốn tham gia cùng tôi không? Lộ trình sẽ đi từ đông sang tây, rồi từ bắc xuống nam. Về đích trước hoàng hôn là đạt. Sợ không theo kịp à? Yên tâm đi, năm ngoái tôi đứng nhất đấy. Nếu cần, tôi có thể cõng ngài đoạn cuối. Đừng lo, chắc chắn chúng ta sẽ có giải."
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 4",
+        "text": "Ngài đang đọc gì vậy? À, về tôi sao? Bài báo chúng tôi từng công bố à? À... Biết rồi, là về gia đình tôi. Ngài cứ hỏi thẳng tôi cũng được mà. Sau khi cha mẹ qua đời, tôi được chú dì chăm sóc rất chu đáo. Nhưng họ cũng có trách nhiệm riêng, không thể lúc nào cũng ở bên tôi được. Vì thế, từ nhỏ tôi đã khao khát có thêm bạn bè. Nhưng khi thực sự có bạn, tôi lại bắt đầu nhớ sự tĩnh lặng và yên bình khi ở một mình."
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 5",
+        "text": "Hòa bình có thể đã trở lại với Thành Phố Võ Lăng, nhưng chúng ta đều có thể thấy còn nhiều thử thách và gian nan đang chờ phía trước. Đừng lo lắng, Endmin. Dù mọi chuyện có khó khăn đến đâu, chúng tôi vẫn sẽ luôn ở bên cạnh ngài. Đông qua rồi xuân sẽ tới. Như người ta thường nói, mùa xanh tươi không phụ lòng người dám bước qua băng tuyết và sương giá, xuân nhất định sẽ bừng tỉnh như ước hẹn. Và khi xuân đến mang theo vẻ đẹp, hãy cùng nhau chiêm ngưỡng nhé."
+      },
+      {
+        "title": "Trò Chuyện 1",
+        "text": "Điều ngài đề xuất rất hợp với tầm nhìn trước đây của chúng tôi, chỉ là rào cản kỹ thuật mãi chưa thể vượt qua được thôi. Giờ đây, khi một con đường mới đã mở ra… À, xin lỗi, hương thơm ngoài cửa sổ làm tôi phân tâm mất. Năm nay hoa nở sớm thật, tuyệt quá… Endmin, nếu mùa xuân đã mời gọi như vậy, hay là chúng ta thảo luận bên ngoài nhé?"
+      },
+      {
+        "title": "Trò Chuyện 2",
+        "text": "Nhiều loài cây ở Võ Lăng là món quà do các Thiên Sư mang về từ quê hương của họ. Lúc đầu tôi nghĩ, như thể họ đã mang một mảnh quê nhà ghim xuống đất Võ Lăng, để mỗi khi nhớ nhà là họ đều có thể nhìn ngắm. Sau này tôi mới hiểu, không chỉ có mỗi hạt giống bén rễ tại đây — mà chính họ cũng vậy. Với họ, Võ Lăng không còn là đất lạ, mà đã trở thành quê hương."
+      },
+      {
+        "title": "Trò Chuyện 3",
+        "text": "Thêm năm mililit dung dịch… Được rồi, màu sắc bình thường — không có kết tủa hay đục bất thường. Tiếp theo, chút chất xúc tác để làm dậy hương vị… Nhiệt độ ổn, không bị cháy. Tốc độ hòa tan cũng ổn… Hửm, Endmin? Không, không, không phải thí nghiệm. Thật ra tôi… đang nấu ăn. Mi Fu lúc nào cũng chê tôi sống bằng đồ ăn nhanh và đặt mua ngoài, nên nay rảnh rỗi tôi thử tự nấu xem sao. Muốn nếm thử không?"
+      },
+      {
+        "title": "Trò Chuyện 4",
+        "text": "Phù… chờ tôi một chút nhé. Tôi vừa chạy bộ sáng xong, cần thở đã. V-vâng, tôi biết mới năm giờ sáng, nhưng chuyện này không có gì lạ. Bốn giờ dậy, năm giờ tập xong, năm rưỡi có mặt tại bàn làm việc… nhịp sinh hoạt này đã theo tôi hơn thập kỷ rồi. Không, tôi chưa từng thích ngủ nướng. Có quá nhiều điều tôi muốn làm và đạt được, nên tôi đổi giấc ngủ lấy thời gian. Nói đi cũng phải nói lại… sao ngài lại một mình đến phòng thí nghiệm giờ này vậy?"
+      },
+      {
+        "title": "Trò Chuyện 5",
+        "text": "Sắp đến ngày giỗ của các tiền bối rồi. Endmin, nếu có thời gian, ngài đi cùng tôi đến Vườn Tĩnh Lặng nhé? Tôi vẫn day dứt vì đã không thể thu nhặt di cốt của họ và đưa về quê nhà. Tôi hiểu, không có đài tưởng niệm nào ở Võ Lăng có thể đưa họ trở lại. Tuy vậy, nếu nhờ những dịp tưởng niệm này mà ký ức về họ được lưu giữ thêm, dù chỉ một khoảnh khắc, vậy thì mọi nỗ lực của họ cũng không uổng phí."
+      },
+      {
+        "title": "Chủ đề: Thành Phố Võ Lăng",
+        "text": "Dĩ nhiên xây dựng Thành Phố Võ Lăng sát bên khe nứt là điều vô cùng nguy hiểm. Tôi hiểu điều đó hơn ai hết. Nhưng không ai muốn rời đi khi chúng tôi tái thiết thành phố cả. Võ Lăng kế thừa sứ mệnh của Trạm Khoa Học, các Thiên Sư sẽ không bao giờ chùn bước. Thành phố này cũng vậy."
+      },
+      {
+        "title": "Chủ đề: Trạm Khoa Học Võ Lăng",
+        "text": "Những người tiền nhiệm của tôi đã đặt việc bảo tồn các thành tựu khoa học lên trên cả mạng sống của chính họ. Nhưng với tôi, sự ra đi của họ mới là mất mát lớn nhất. Xiranite có thể tái tạo, còn người đã khuất thì không thể quay về. Tôi hiểu rằng, trên con đường theo đuổi khoa học, cơ hội để bắt đầu lại thực sự vô cùng hiếm hoi. Dẫu vậy, vẫn luôn có những người lựa chọn bước tiếp với quyết tâm không lay chuyển. Có lẽ... những người tiền nhiệm của tôi cũng rất hiểu điều này khi đưa ra lựa chọn của mình."
+      },
+      {
+        "title": "Chủ đề: Mi Fu",
+        "text": "Mi Fu… là một người rất thú vị. Khi chúng tôi bắt đầu xây dựng Thành Phố Võ Lăng, trước thử thách nối tiếp thử thách, tôi thường trốn lên núi để tìm sự bình yên. Đừng cười, nhưng \"tìm sự bình yên\" chỉ là cái cớ. Thực ra, tôi lặng lẽ lau nước mắt của mình ở đó. Khi ấy, Mi Fu vẫn còn ở Trại Thanh Ba, lần nào gặp tôi cô ấy cũng vung nắm đấm tới tấp. Chỉ riêng một đêm nọ, cô ấy không nói gì cả, chỉ lặng lẽ ngồi cạnh tôi cho đến khi trời sáng."
+      },
+      {
+        "title": "Chủ đề: Xiranite",
+        "text": "Ngay lúc này, tôi đang đứng trước hai lựa chọn: tiếp tục nghiên cứu Xiranite hay rẽ sang hướng đi khác. Tôi biết rằng, dù có lùi lại, các đồng nghiệp tại Cục Thiên Sư vẫn sẽ tiếp tục công trình này theo đúng quỹ đạo đã định. Và có lẽ, đã đến lúc tôi nên đóng góp nhiều hơn ở nơi mình thực sự cần thiết. Nhưng dự án này có thể là di sản duy nhất mà các bậc tiền bối để lại... làm sao tôi có thể quay lưng rời bỏ nó được?"
+      },
+      {
+        "title": "Chủ đề: Chubby Lung",
+        "text": "Nhanh lên, ngồi xuống đây và giúp tôi mở những hộp mù này. Sau khi lò Xiranite ở Viện bị ngừng hoạt động, nhà sản xuất và tôi đã nhúng các nguyên tố Xiranite vào Chubby Lung Phiên Bản Giới Hạn Kỷ Niệm 10 Năm. Họ đề nghị gửi cho tôi đủ cả một bộ, nhưng thế thì còn gì là hồi hộp nữa? Hehe. Với lại, xác suất trúng chỉ là một trên mười hai, tức là vẫn hào phóng hơn nhiều so với tính chất bất định của nghiên cứu khoa học, nơi mà đôi khi cả một đời nỗ lực cũng chưa chắc đổi lấy được thành công."
+      },
+      {
+        "title": "Phát hiện Tài Nguyên/Có Thể Thu Thập 1",
+        "text": "Nơi đây ắt hẳn có thứ gì đó đáng giá. Hành trình của chúng ta không hề uổng phí."
+      },
+      {
+        "title": "Phát hiện Tài Nguyên/Có Thể Thu Thập 2",
+        "text": "Quả là một miền đất được ban phúc… Không biết những kỳ tích nào đang ngủ yên dưới lớp đất này."
+      },
+      {
+        "title": "Phát Hiện Khu Vực Chưa Khám Phá",
+        "text": "\"Thứ chưa biết\"… Một khái niệm mê hoặc đến lạ thường…"
+      },
+      {
+        "title": "Phát hiện Kẻ Địch Mạnh",
+        "text": "Đây không phải cuộc chạm mặt thân thiện đâu. Cẩn trọng vào."
+      },
+      {
+        "title": "Khai thác 1",
+        "text": "Hồi còn đi học, tôi cũng từng thu gom khoáng vật hiệu quả chẳng kém ai."
+      },
+      {
+        "title": "Khai thác 2",
+        "text": "Bình tĩnh nào. Để tôi giúp cho."
+      },
+      {
+        "title": "Mở Thùng",
+        "text": "Vật thể này không tầm thường đâu. Nó có thể có nhiều công dụng khác nhau."
+      },
+      {
+        "title": "Nhận Aurylene",
+        "text": "Đáng để quan sát kỹ cách thu thập Aurylene đấy."
+      },
+      {
+        "title": "Xua Tan Nhiễm Khuẩn",
+        "text": "Không biết có cách nào thanh trừ Nhiễm Khuẩn hiệu quả hơn không nhỉ."
+      },
+      {
+        "title": "Nghỉ ngơi",
+        "text": "Đừng ngại nếu muốn nghỉ ngơi một chút. Những gì đang chờ ở phía trước có thể còn gian nan hơn nữa."
+      },
+      {
+        "title": "Sử Dụng Vật Phẩm Chiến Thuật 1",
+        "text": "Đây, dùng thuốc này đi."
+      },
+      {
+        "title": "Sử Dụng Vật Phẩm Chiến Thuật 2",
+        "text": "Khỏe hơn nhiều rồi đấy."
+      },
+      {
+        "title": "Cảnh Báo Nguy Hiểm",
+        "text": "Hãy cẩn thận!"
+      },
+      {
+        "title": "Bị Thương",
+        "text": "Không có gì đâu. Đừng lo về tôi."
+      },
+      {
+        "title": "0 HP",
+        "text": "Xin lỗi... Endmin..."
+      },
+      {
+        "title": "Cổ Vũ Đội 1",
+        "text": "Gọn gàng và dứt khoát. Làm tốt lắm!"
+      },
+      {
+        "title": "Cổ Vũ Đội 2",
+        "text": "Xử lý hoàn hảo không chê vào đâu được."
+      },
+      {
+        "title": "Đáp Lại Lời Cổ Vũ 1",
+        "text": "Quá khen rồi."
+      },
+      {
+        "title": "Đáp Lại Lời Cổ Vũ 2",
+        "text": "Ôi, đó là công sức của cả đội mà."
+      },
+      {
+        "title": "Bắt Đầu Chiến Đấu 1",
+        "text": "Chúng tôi không sợ trận chiến khốc liệt, chỉ sợ vô nghĩa mà thôi."
+      },
+      {
+        "title": "Bắt Đầu Chiến Đấu 2",
+        "text": "Tôi sẽ đến ngay."
+      },
+      {
+        "title": "Thắng Trận 1",
+        "text": "Nói thật thì, đây cũng không phải là một trận chiến quá gian nan."
+      },
+      {
+        "title": "Thắng Trận 2",
+        "text": "Tin tôi đi, Endmin. Lần tới, chiến thắng vẫn sẽ thuộc về chúng ta."
+      },
+      {
+        "title": "Thắng Trận 3",
+        "text": "Cảm ơn mọi người đã vất vả rồi."
+      },
+      {
+        "title": "Thắng Trận 4",
+        "text": "Chỉ cần không bỏ cuộc là sẽ không bao giờ thất bại."
+      },
+      {
+        "title": "Bại Trận",
+        "text": "Miễn ta còn đứng vững, thì chưa thua đâu."
+      },
+      {
+        "title": "Đòn Dứt Điểm 1",
+        "text": "Thanh lọc."
+      },
+      {
+        "title": "Đòn Dứt Điểm 2",
+        "text": "Thảm hại."
+      },
+      {
+        "title": "KN Chiến Đấu 1",
+        "text": "Sấm rền!"
+      },
+      {
+        "title": "KN Chiến Đấu 2",
+        "text": "Lưỡi kiếm tung hoành!"
+      },
+      {
+        "title": "KN Chiến Đấu 3",
+        "text": "Bão tố thức tỉnh!"
+      },
+      {
+        "title": "Chuẩn Bị KN Liên Hoàn 1",
+        "text": "Luôn sẵn sàng khi cần!"
+      },
+      {
+        "title": "Chuẩn Bị KN Liên Hoàn 2",
+        "text": "Có tôi đây rồi!"
+      },
+      {
+        "title": "Thi Triển Liên Hoàn 1",
+        "text": "Khuất phục đi!"
+      },
+      {
+        "title": "Thi Triển Liên Hoàn 2",
+        "text": "Chống cự vô ích!"
+      },
+      {
+        "title": "Kết Liễu 1",
+        "text": "Thật vụng về."
+      },
+      {
+        "title": "Kết Liễu 2",
+        "text": "Bất tài."
+      },
+      {
+        "title": "Tuyệt Kỹ 1",
+        "text": "Một thoáng sấm lặng, một vệt mưa ngang trời."
+      },
+      {
+        "title": "Tuyệt Kỹ 2",
+        "text": "Một cơn bão bùng nổ, một mầm sống khai sinh."
+      },
+      {
+        "title": "Tuyệt Kỹ 3",
+        "text": "Một vòm xanh ngự trị, một mũi giáo rực nắng."
+      }
+    ]
   },
   "potentials": {
     "potential1": {

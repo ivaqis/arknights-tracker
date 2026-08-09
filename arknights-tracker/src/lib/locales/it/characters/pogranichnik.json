@@ -137,7 +137,337 @@
         "name": "Fortificazione mentale",
         "description": "Fortificazione mentale: maestro di scacchi\n\"Non è tanto una partita, quanto uno scontro all'ultimo sangue.\" - Ogni operatore che abbia mai giocato a scacchi con Pogranichnik condivide questa sensazione."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Preparazione all'operazione 1",
+        "text": "In posizione e in attesa."
+      },
+      {
+        "title": "Preparazione all'operazione 2",
+        "text": "Pronto a levare le tende. Attendo l'ordine."
+      },
+      {
+        "title": "Aggiunta alla squadra 1",
+        "text": "Un soldato nasce per combattere."
+      },
+      {
+        "title": "Aggiunta alla squadra 2",
+        "text": "La sopravvivenza non è mai gratuita. Bisogna sempre pagare."
+      },
+      {
+        "title": "Cambio arma",
+        "text": "È necessario imparare a comandare la violenza; non per fare del bene né per fare del male, solo per sopravvivere."
+      },
+      {
+        "title": "Cambio equipaggiamento",
+        "text": "Per un quartiermastro, un armamento adeguato è il primo passo verso la vittoria."
+      },
+      {
+        "title": "Attivazione matrice delle abilità",
+        "text": "La negligenza e la trascuratezza sono la più grande minaccia sul campo di battaglia."
+      },
+      {
+        "title": "Visione delle registrazioni di combattimenti",
+        "text": "Una battaglia importante... Il mio spirito combattivo è in fermento."
+      },
+      {
+        "title": "Promozione operatore 1",
+        "text": "Non sono necessari distintivi né cerimonie. Apprezzo appieno il significato di questa promozione... Grazie per la tua fiducia, Endministrator della Endfield Industries."
+      },
+      {
+        "title": "Promozione operatore 2",
+        "text": "Se fosse accaduto alla fortezza dei Cavalieri Giurati, avrei dovuto offrire io il banchetto di stasera."
+      },
+      {
+        "title": "Promozione operatore 3",
+        "text": "Che sia in battaglia o altrove, è un onore. Grazie per la tua fiducia, Endministrator. Le mie azioni al fronte ti dimostreranno che è ben riposta."
+      },
+      {
+        "title": "Promozione operatore 4",
+        "text": "La guerra rimane una faccenda brutale su Talos-II. Molte anime hanno marciato verso nord, combattendo e cadendo perché il resto del mondo potesse continuare a vivere. Endmin, non ho dubbi che le tue azioni porranno una solenne fine a questa crudele spirale di guerra e sacrificio."
+      },
+      {
+        "title": "Operatore a rapporto",
+        "text": "Pogranichnik, operatore della Rhodes Island e agente in servizio per l'Ordine del Giuramento d'acciaio, a rapporto. La questione è urgente. Richiedo gentilmente un briefing sul piano di combattimento il prima possibile."
+      },
+      {
+        "title": "Attesa 1",
+        "text": "Rivediamo il piano di combattimento ancora una volta."
+      },
+      {
+        "title": "Attesa 2",
+        "text": "La minima svista determina chi sopravviverà... e chi morirà in battaglia."
+      },
+      {
+        "title": "Assegnazione a una struttura",
+        "text": "Non ho mai sperimentato questo tipo di lavoro... Ma da una prospettiva strategica, varrà la pena provare."
+      },
+      {
+        "title": "Saluto 1",
+        "text": "Salve, Endministrator. Sei qui per un altro giro di ispezione?"
+      },
+      {
+        "title": "Saluto 2",
+        "text": "Buongiorno, Endministrator."
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 1",
+        "text": "La Dijiang è molto più grande di quanto mi aspettassi, ma non mi ci è voluto molto per prendere confidenza con la sua configurazione. E questo grazie all'impeccabile progettazione da parte del suo creatore. È un ottimo punto di partenza per un sogno grandioso, Endmin, e sono impaziente di scoprire come si evolverà."
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 2",
+        "text": "Il sistema industriale automatizzato supera di gran lunga ciò che avevo immaginato. Grazie al nucleo di automazione protocollare, tutta quella serie di macchinari industriali e militari di Terra avrà finalmente un cuore potente, capace di sostenere una fornitura stabile di risorse essenziali a ogni periglioso angolo del pianeta. Endmin, il tuo lavoro salverà innumerevoli vite. Questo posso prometterlo in tutta sincerità."
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 3",
+        "text": "Gli ingegneri dell'arsenale della Endfield sono davvero ammirevoli. Sono riusciti a portare a termine la manutenzione delle armi per ogni membro del personale, nonostante le scadenze incalzanti... Una tale efficienza è rara, persino al fronte settentrionale. Anche se devo ammettere che non mi aspettavo che la gestione del tuo arsenale fosse in mano a una persona così giovane."
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 4",
+        "text": "Ho guardato il programma di allenamento che Lil' Dodge ha preparato per te. I contenuti sono utili e la curva di difficoltà è equilibrata. Non intendo apportare alcuna modifica, però ho aggiunto uno o due esercizietti prendendo spunto dalla mia esperienza... Ma sono convinto che non sarà un problema per te, Endministrator."
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 5",
+        "text": "Prima che ti risvegliassi, erano anni che non prendevo direttamente parte alle operazioni della Endfield. Per me, non fa differenza prestare servizio presso la Rhodes Island, la Endfield o l'Ordine del Giuramento d'acciaio. Voglio solo proteggere ciò che ritengo meritevole. E stavolta andrò avanti, senza mai ritirarmi."
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 6",
+        "text": "Ogni volta che guardo oltre Talos-II, sento un'ondata di ispirazione. Immensi sciami di abomini, capaci di inghiottire l'intero pianeta, sono costretti dentro calderoni nel Nord aurorale. Semplici soldati in carne e ossa erano le fondamenta che hanno mantenuto il nemico a bada. Questa è una delle imprese militari più grandi dei Cavalieri Giurati, una prova inconfutabile che siamo degni... dell'immensa responsabilità di salvaguardare la civiltà."
+      },
+      {
+        "title": "Offerta regali",
+        "text": "L'ho trovato al Nord... Potrebbe dimostrarsi utile, Endministrator."
+      },
+      {
+        "title": "Accettazione regali",
+        "text": "Grazie del regalo, Endministrator. Lo prendo come un encomio... e ti prego di accettare questo in segno di gratitudine."
+      },
+      {
+        "title": "Dialogo fiducia 1",
+        "text": "Dopo aver lasciato la Rhodes Island, per prima cosa ho fatto visita all'Ammiraglia Industriale dell'USLT. Per qualche motivo, volevo vedere quali frutti aveva dato a questa terra un certo capitolo della storia. Quando ho messo gli occhi su quella città indomita, ne sono rimasto toccato. Se i figli degli Ursus possono lasciarsi il passato alle spalle, iniziare un nuovo capitolo e compiere le proprie imprese nell'onore e nella gloria, allora io, Khorsyn, non ho più alcun motivo per indugiare."
+      },
+      {
+        "title": "Dialogo fiducia 2",
+        "text": "La vita militare con i Cavalieri Giurati mi ha insegnato tre cose: primo, fidati dei tuoi compagni; secondo, non arrenderti con facilità; terzo, non sfidare la fortuna. Al Nord, violare uno qualsiasi di questi tre principi poteva portare sventura su di te o sui tuoi compagni."
+      },
+      {
+        "title": "Dialogo fiducia 3",
+        "text": "Durante il mio periodo con i Cavalieri Giurati, riorganizzai e addestrai i Baluardi. L'idea iniziò a prendere forma la notte prima che raggiungessi il complesso del bastione dei Cavalieri Giurati. Strutture imponenti si ergevano all'ombra delle montagne e la Foresta oscura di Sami si estendeva nel buio, come se fiamme verde scuro avvolgessero le sponde del fiume. File interminabili di lapidi formavano un muro che respingeva i nemici dal Nord. I Cavalieri Giurati sono uno scudo che protegge la Cintura civilizzata e io per loro forgiai un ulteriore scudo. Sono convinto che questi soldati non cadranno mai."
+      },
+      {
+        "title": "Dialogo fiducia 4",
+        "text": "Per me, Hellagur è più un amico e un mentore. Sono arrivato a comprendere il suo rammarico e il suo senso di colpa, e ho imparato dal suo pensiero e dalle sue abilità. Qui non c'è nessun generale degli Ursus; solo Khorsyn della Rhodes Island e della Endfield. A volte, sono grato di non avere un passato che mi appesantisce. Altre, sento... il dolore della solitudine. Se ciò che proteggo dovesse rivelarsi un altro vacuo ideale, allora non ci sarebbe differenza con la vuota gloria dell'impero degli Ursus. Endministrator, spero che... tu possa darmi una risposta."
+      },
+      {
+        "title": "Dialogo fiducia 5",
+        "text": "Endmin, mi auguro solennemente che la tua visione si concretizzi; perché tutti alla Rhodes Island possano tornare a una vita di pace e gioie comuni, perché i Cavalieri Giurati possano sotterrare l'ascia di guerra e godersi la compagnia dei loro cari, e perché la vita possa finalmente affondare le radici nelle profondità di questo antico pianeta. Attendo con impazienza il momento in cui celebreremo ogni vittoria, insieme a te e ai tuoi amici. Persino davanti a una sconfitta devastante, prego che tu sopravviva, con ogni mezzo necessario. Se lo farai, allora ciò che ho fatto acquisterà un senso."
+      },
+      {
+        "title": "Chiacchierata 1",
+        "text": "I giovani della Squadra operativa Z7 sono davvero ammirevoli. Hanno ricevuto solo un addestramento di base, ma sono riusciti a sviluppare una consapevolezza bellica pari a quella dei militari ordinari. È un risultato raro ed encomiabile."
+      },
+      {
+        "title": "Chiacchierata 2",
+        "text": "Ho svolto lavori di tutti i tipi al Nord. Oltre a essere un comandante, ero anche quartiermastro e sergente istruttore. Forgiavo armi, mungevo nuove varietà di cistibestie e producevo persino del vino..."
+      },
+      {
+        "title": "Chiacchierata 3",
+        "text": "Cos'è l'onore di un soldato? Temo di non riuscire nemmeno io a dare una risposta definitiva. Ma se dovessi mai visitare la fortezza dei Cavalieri Giurati al Nord, ti consiglio caldamente di far visita al nostro memoriale...Un tempo, ogni nome inciso su quel monumento serbava una risposta a questo quesito."
+      },
+      {
+        "title": "Chiacchierata 4",
+        "text": "Il gran tesoriere gestisce un enorme deposito di lasciti, tra cui reliquie di leggendari Cavalieri Giurati, ma anche tecnologie di Terra attualmente non recuperabili e misteriosi manufatti dei Precursori. Una volta, mi diedero la possibilità di scegliere una reliquia da brandire, ma rifiutai. Avevo già attinto dalla gloria di una leggenda del passato. Per il resto della mia vita, mi lascerò alle spalle la mia eredità gloriosa."
+      },
+      {
+        "title": "Chiacchierata 5",
+        "text": "Per la maggior parte del tempo, i Cavalieri Giurati combattono contro Aggeloi, Ankhor e i disastri causati dalle attività dell'Ætherspazio. Ma ci sono state rarissime occasioni in cui abbiamo assistito a fenomeni inspiegabili: tracce di creature giganti, testimonianze di individui singolari... Per questo ho richiesto subito di tornare alla Endfield, quando ho saputo del risveglio dell'Endmin."
+      },
+      {
+        "title": "Argomento: Ordine del Giuramento d'acciaio",
+        "text": "Il Nord è molto diverso da come se lo immagina la gente. Dopo un secolo di sviluppo, le fortezze dei Cavalieri Giurati sono diventate trafficati centri di commercio e intrattenimento. Le persone si sono abituate alla guerra costante e hanno dato sfogo alla loro vitalità. Fuori dalla fortezza, i Samifjod hanno costruito insediamenti nella Foresta oscura per preservare la loro antica sapienza e cultura. Le loro carovane viaggiavano spesso tra la fortezza e il bosco. Endmin, dovresti visitare il Nord. È un posto meraviglioso e, se lo desideri, sarò lieto di accompagnarti."
+      },
+      {
+        "title": "Argomento: l'USLT",
+        "text": "L'Ammiraglia Industriale, la città più grande dell'USLT, ora ha tanti nomi e soprannomi diversi. Però io so che il suo nome era Simonch, quando ancora si trovava su Terra. Affondò in un lago sotto il dominio tirannico dell'Impero degli Ursus. Ancora non so perché l'Impero decise di salvarla in seguito, né perché abbia dato nuova vita a quella città in rovina come exclave in un mondo sconosciuto. In ogni caso, ora è la città nomade più grande di Talos-II e, per molti, un simbolo spirituale."
+      },
+      {
+        "title": "Argomento: Baluardi",
+        "text": "Quando scelsi i miei Baluardi la prima volta, mi trovai davanti una serie di apprendisti più giovani di me. Il mio primo compito fu quello di spogliarli della loro aggressività: sono guardie, non aggressori. Poi, insegnai loro ogni tattica che conoscevo, in modo che potessero non solo difendere, ma diventare essi stessi una frontiera vivente. Infine, mi assicurai che padroneggiassero le abilità di sopravvivenza... Ma a questo proposito ho sempre avuto la sensazione di non aver fatto abbastanza. Il sacrificio non è mai l'obiettivo, è l'ultima spiaggia, al solo scopo di evitare altri sacrifici."
+      },
+      {
+        "title": "Argomento: Ember",
+        "text": "Ho sentito varie storie sulla signorina Ember, è una guerriera ammirevole. È stata assegnata al Sud non solo per ricostruire la sua squadra. Il suo comandante voleva darle la possibilità di condurre una vita normale. Penso tu l'abbia già notato, Endmin. Purtroppo, è improbabile che lei apprezzi il significato di questa generosità. Un soldato in grado di far pace con il proprio passato non sarebbe mai arrivato tanto lontano quanto lei."
+      },
+      {
+        "title": "Argomento: Samifjod",
+        "text": "Al contrario di ciò che dice la gente, i Samifjod non sono xenofobi. È vero che da più di un secolo vivono sotto la protezione persistente lasciatagli dal loro Padre supremo. Eppure, offrono generosamente aiuto ai viaggiatori che rispettano le tradizioni di Sami. Un tempo i ciclopi regalavano denti di Sami ai Seš'qamam per alimentare il bastione fluttuante. Anche i sacerdoti delle nevi condividono di buon grado le loro Arti con i Cavalieri Giurati. È chiaro che i Samifjod hanno trovato il modo di condurre una nuova vita su Talos-II, preservando allo stesso tempo la loro eredità."
+      },
+      {
+        "title": "Individuazione risorsa/collezionabile 1",
+        "text": "Potrebbe essere utile."
+      },
+      {
+        "title": "Individuazione risorsa/collezionabile 2",
+        "text": "Teniamo d'occhio quell'area, se non vogliamo farci sfuggire risorse fondamentali."
+      },
+      {
+        "title": "Individuazione zona non esplorata",
+        "text": "Manteniamo la formazione, soprattutto in territori inesplorati."
+      },
+      {
+        "title": "Individuazione nemico potente",
+        "text": "Stiamo all'erta, il nemico è forte."
+      },
+      {
+        "title": "Estrazione 1",
+        "text": "Questo tornerà davvero utile: è perfetto sia per l'attacco che per la difesa."
+      },
+      {
+        "title": "Estrazione 2",
+        "text": "Quando uniamo le forze, non esiste obiettivo al di fuori delle nostre possibilità."
+      },
+      {
+        "title": "Apertura di una cassa",
+        "text": "Riserve strategiche come queste possono invertire le sorti di una battaglia."
+      },
+      {
+        "title": "Acquisizione di Aurylene",
+        "text": "Il suo significato strategico probabilmente supera il suo valore operativo."
+      },
+      {
+        "title": "Eliminazione Contaminazione",
+        "text": "È meglio liberarsi delle variabili avverse nelle prime fasi della battaglia."
+      },
+      {
+        "title": "Riposo",
+        "text": "Ogni possibilità di recupero è preziosa. Potrebbe essere l'unica occasione di prepararsi per la battaglia successiva."
+      },
+      {
+        "title": "Utilizzo di gadget 1",
+        "text": "Resisti. Non fare movimenti affrettati."
+      },
+      {
+        "title": "Utilizzo di gadget 2",
+        "text": "È stata una svista."
+      },
+      {
+        "title": "Avviso di pericolo",
+        "text": "A tutte le unità! Arrivano!"
+      },
+      {
+        "title": "Ferita",
+        "text": "La situazione è ancora gestibile."
+      },
+      {
+        "title": "Esaurimento PS",
+        "text": "Non è qui... che la mia battaglia avrà fine..."
+      },
+      {
+        "title": "Incoraggiamento alla squadra 1",
+        "text": "Una strategia brillante."
+      },
+      {
+        "title": "Incoraggiamento alla squadra 2",
+        "text": "Una manovra da manuale."
+      },
+      {
+        "title": "Risposta all'incoraggiamento 1",
+        "text": "Mi lusinghi."
+      },
+      {
+        "title": "Risposta all'incoraggiamento 2",
+        "text": "Abbiamo dato prova del potere dell'unione."
+      },
+      {
+        "title": "Inizio combattimento 1",
+        "text": "La guerra non è mai questione di misericordia."
+      },
+      {
+        "title": "Inizio combattimento 2",
+        "text": "All'attacco!"
+      },
+      {
+        "title": "Vittoria in combattimento 1",
+        "text": "Il nostro piano di battaglia si è dimostrato valido."
+      },
+      {
+        "title": "Vittoria in combattimento 2",
+        "text": "I risultati parlano da sé."
+      },
+      {
+        "title": "Vittoria in combattimento 3",
+        "text": "Questo successo merita una celebrazione."
+      },
+      {
+        "title": "Vittoria in combattimento 4",
+        "text": "Ogni vittoria ha il suo prezzo... Teniamo caro ciò che abbiamo imparato, ma non dimentichiamo ciò che abbiamo pagato."
+      },
+      {
+        "title": "Sconfitta in combattimento",
+        "text": "Non lasciamo che il fallimento ci abbatta. Prendiamone atto e lasciamo che ci sospinga verso vette più alte."
+      },
+      {
+        "title": "Colpo finale 1",
+        "text": "Fatti da parte!"
+      },
+      {
+        "title": "Colpo finale 2",
+        "text": "Patetico!"
+      },
+      {
+        "title": "Abilità di combattimento 1",
+        "text": "Non sfidare mai il fato!"
+      },
+      {
+        "title": "Abilità di combattimento 2",
+        "text": "La paura non ci appartiene!"
+      },
+      {
+        "title": "Abilità di combattimento 3",
+        "text": "Mai ritirarsi!"
+      },
+      {
+        "title": "Abilità combo pronta 1",
+        "text": "Attendo l'ordine."
+      },
+      {
+        "title": "Abilità combo pronta 2",
+        "text": "Spetta a me il colpo di grazia."
+      },
+      {
+        "title": "Esecuzione combo 1",
+        "text": "Luna crescente!"
+      },
+      {
+        "title": "Esecuzione combo 2",
+        "text": "Mezzaluna!"
+      },
+      {
+        "title": "Esecuzione combo 3",
+        "text": "Luna piena!"
+      },
+      {
+        "title": "Mossa letale 1",
+        "text": "Riposa in silenzio."
+      },
+      {
+        "title": "Mossa letale 2",
+        "text": "La morte ti attende."
+      },
+      {
+        "title": "Abilità suprema 1",
+        "text": "AL MIO ORDINE!"
+      },
+      {
+        "title": "Abilità suprema 2",
+        "text": "Soldati, AVANZATE!"
+      },
+      {
+        "title": "Abilità suprema 3",
+        "text": "Baluardi! FORMAZIONE!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

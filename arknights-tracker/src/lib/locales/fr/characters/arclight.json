@@ -122,7 +122,333 @@
         "name": "Sports",
         "description": "Sports : joggeuse de nuit\nLes terres sauvages sont l'endroit idéal pour faire du sport. Là-bas, elle peut courir aussi loin qu'elle le souhaite."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Préparation de l'opération 1",
+        "text": "Tout est prêt ? Les terres sauvages sont pleines de dangers."
+      },
+      {
+        "title": "Préparation de l'opération 2",
+        "text": "Le vent ne faiblit jamais. Moi non plus."
+      },
+      {
+        "title": "Intégration à l'équipe 1",
+        "text": "Enfin, une bouffée d'air frais. J'avais presque oublié l'odeur de la terre."
+      },
+      {
+        "title": "Intégration à l'équipe 2",
+        "text": "Va aussi vite que tu peux. Ne t'inquiète pas, je tiendrai le rythme."
+      },
+      {
+        "title": "Changement d'arme",
+        "text": "Je sens son cœur battre. Cette arme est parfaite pour moi."
+      },
+      {
+        "title": "Changement d'équipement",
+        "text": "Quel beau travail... Une telle précision est rare, même chez les Voix-d'aulne."
+      },
+      {
+        "title": "Activation de la matrice de capacités",
+        "text": "Ce n'est pas ce que ma Voix-d'aulne m'a enseigné, mais vous avez les mêmes objectifs. J'y vois plus clair, désormais."
+      },
+      {
+        "title": "Visionnage d'archives de combat",
+        "text": "Vivre dans les terres sauvages m'a appris tant de choses... De ces leçons est née une lame acérée."
+      },
+      {
+        "title": "Promotion d'opérateur 1",
+        "text": "Promotion... ? Ça veut dire que mon travail te satisfait ? Alors... tant mieux."
+      },
+      {
+        "title": "Promotion d'opérateur 2",
+        "text": "Avec l'honneur vient le devoir. Tout ceci souligne la nécessité d'aider toujours plus de personnes."
+      },
+      {
+        "title": "Promotion d'opérateur 3",
+        "text": "La nature ne nous apprend pas à survivre. Elle nous permet à peine de nous frayer un chemin en son sein. Autrefois, je faisais de mon mieux pour m'adapter. Aujourd'hui... je commence à comprendre comment elle fonctionne."
+      },
+      {
+        "title": "Promotion d'opérateur 4",
+        "text": "J'ai beaucoup appris, à tes côtés. Je commence à comprendre pourquoi les versets des hannas m'ont menée à toi. Je saurai faire bon usage de ce savoir."
+      },
+      {
+        "title": "Opératrice au rapport",
+        "text": "Je suis Ekut. Mon nom de code est Arclight. Je n'ai jamais vraiment appris à manier les mots, mais je vous souhaite bonne chance. Puissiez-vous vous déverser comme la crue d'une rivière, Endfielders."
+      },
+      {
+        "title": "En attente 1",
+        "text": "Le chemin à suivre a été dévoilé."
+      },
+      {
+        "title": "En attente 2",
+        "text": "Je suis prête à livrer une performance optimale."
+      },
+      {
+        "title": "Affectation à une installation",
+        "text": "Je m'en charge. Nous autres, les Cherche-chant, ne connaissons pas le repos."
+      },
+      {
+        "title": "Salutation 1",
+        "text": "D'où souffle le vent, aujourd'hui, Endmin ?"
+      },
+      {
+        "title": "Salutation 2",
+        "text": "Tu reviens d'un voyage à la surface, Endmin ? Je reconnais l'odeur des terres sauvages."
+      },
+      {
+        "title": "Bavardage sur le Dijiang 1",
+        "text": "Réparer un destrier d'acier, c'est comme soigner une cyste. Il faut savoir l'écouter avant d'administrer le moindre traitement."
+      },
+      {
+        "title": "Bavardage sur le Dijiang 2",
+        "text": "Ici, les étoiles sont différentes de celles que nous voyons dans les terres sauvages... Mais dans les deux cas, elles offrent un spectacle fascinant."
+      },
+      {
+        "title": "Bavardage sur le Dijiang 3",
+        "text": "J'observe les nuages. Leurs arêtes sont vives, ils annoncent une tempête. Si c'est là que ta prochaine mission te mène, fais attention."
+      },
+      {
+        "title": "Bavardage sur le Dijiang 4",
+        "text": "Quelle belle chevelure, c'est comme la fourrure d'une bête trempée par la rosée de l'aube. Tu as déjà vu ça ? Eh bien... c'est vraiment magnifique."
+      },
+      {
+        "title": "Bavardage sur le Dijiang 5",
+        "text": "Tu as déjà vu les migrations des prairies ? Une armée de bêtes et de chariots qui courent après la pluie et les nuages. C'est ce genre de chose que je veux protéger."
+      },
+      {
+        "title": "Bavardage sur le Dijiang 6",
+        "text": "Je te vois souvent te perdre dans tes pensées, à observer ce monde. Je te comprends, je crois. Notre cœur se languit toujours des endroits qui comptent pour nous, peu importe la distance."
+      },
+      {
+        "title": "Cadeaux offerts",
+        "text": "J'ai quelque chose pour toi. Un cadeau des terres sauvages. J'espère qu'il te plaira."
+      },
+      {
+        "title": "Cadeaux acceptés",
+        "text": "Pour moi ? Dans les terres sauvages, les cadeaux sont importants... Je chérirai celui-ci."
+      },
+      {
+        "title": "Dialogue à cœur ouvert 1",
+        "text": "Je te conseille d'apprendre les techniques de base pour survivre dans les terres sauvages, Endmin. Tu pourrais commencer par la confection de pièges à longauris. C'est une chose que je peux t'enseigner."
+      },
+      {
+        "title": "Dialogue à cœur ouvert 2",
+        "text": "La vie dans les terres sauvages n'est pas facile, mais elle est belle. Comme le ciel bleu après la mousson ou l'éclosion d'un aviliaire au clair de lune."
+      },
+      {
+        "title": "Dialogue à cœur ouvert 3",
+        "text": "Le fait que les vieux dispositifs fonctionnent mieux quand on les bricole ensemble n'a rien de mystérieux. Attelle au même chariot deux bêtes de somme qui ne se connaissent pas, laisse-leur un peu de temps, et elles finiront par former une belle équipe."
+      },
+      {
+        "title": "Dialogue à cœur ouvert 4",
+        "text": "J'ai commencé mon périple dans l'espoir de trouver des réponses. Dans les terres sauvages, l'équilibre est menacé et je dois faire quelque chose. J'ai écouté le clapotis des lacs et les murmures des bois. Et maintenant, j'aimerais entendre ta voix."
+      },
+      {
+        "title": "Dialogue à cœur ouvert 5",
+        "text": "Je tisserai ces récits dans le hanna de notre périple. Il me faudra du temps... Bien des choses méritent d'être chantées. Une fois le hanna terminé, tu seras la première personne à l'entendre."
+      },
+      {
+        "title": "Discussion 1",
+        "text": "Ceux qui veulent vivre se font entendre. Et les Cherche-chant ne cesseront jamais d'écouter. Tel est le but du circuit d'Hannabit."
+      },
+      {
+        "title": "Discussion 2",
+        "text": "Il n'est pas bien compliqué de se lier d'amitié avec les habitants des terres sauvages. Nous nous concentrons sur l'essentiel : le temps, la nourriture et le danger. Ces considérations nous prennent déjà beaucoup de temps."
+      },
+      {
+        "title": "Discussion 3",
+        "text": "Tous les Cherche-chant du circuit d'Hannabit connaissent les hannas par cœur. Ce n'est pas difficile. Les versets parlent de tous les aspects de notre vie. Nos histoires elles-mêmes sont tissées dans ces vers."
+      },
+      {
+        "title": "Discussion 4",
+        "text": "Ma Voix-d'aulne m'a parlé de Terra et des cités qui se déplaçaient pour éviter les Catastrophes. Il semblerait que nous ayons hérité de cette pratique ancestrale, simplement sous une autre forme."
+      },
+      {
+        "title": "Discussion 5",
+        "text": "Dans certains bazars des terres sauvages, il est possible d'échanger des marchandises usagées. Il faut cependant s'armer de patience pour trouver une bonne affaire. J'ai modifié un vieux dispositif Kjersch pour mon communicateur. Ils fabriquent des objets très fiables, même dans les environnements extrêmes."
+      },
+      {
+        "title": "Thème : les cités",
+        "text": "Talos-II est plus grand que je l'imaginais. Autrefois, je pensais que toutes les cités n'étaient qu'un même enchevêtrement d'acier, de routes et de lumières. Mais quand je les ai visitées, j'ai réalisé que chacune avait une âme qui lui était propre. Elles sont encore plus distinctes que deux prés aux herbes différentes."
+      },
+      {
+        "title": "Thème : l'Endministrator",
+        "text": "J'ai beaucoup voyagé et même les tribus les plus éloignées chantent tes louanges. Leurs récits diffèrent, mais il y a quelque chose qui ne change jamais... Ton nom est toujours synonyme d'espoir."
+      },
+      {
+        "title": "Thème : les chants hanna",
+        "text": "Un nomade aux portes de la mort a chanté notre premier hanna. Il ne comptait que trois lignes. C'est de ces versets que vient le nom du circuit d'Hannabit. Puis, la première Voix-d'aulne est arrivée et le hanna a guidé les Cherche-chant dans leur errance jusqu'à ce qu'ils fassent à leur tour partie du chant."
+      },
+      {
+        "title": "Thème : Voix-d'aulne",
+        "text": "Les Voix-d'aulne s'expriment rarement directement. Orisha a dit que le hanna contenait tout le savoir qu'il nous fallait. Ses actes m'ont beaucoup appris. Pour survivre dans ce monde, nous devons nous entraider."
+      },
+      {
+        "title": "Thème : sa tribu",
+        "text": "J'ai grandi dans une petite tribu qui comptait à peine plus d'une centaine d'âmes. Avant de commencer mon périple, je ne connaissais que ça. J'y ai appris à traire les cystes, à monter mon destrier d'acier et à survivre dans les terres sauvages. Je n'ai jamais vraiment quitté ma tribu. Elle est toujours à mes côtés."
+      },
+      {
+        "title": "Détection de ressource/objet à collecter 1",
+        "text": "Si ça peut nous aider à survivre, ne t'en sépare pas."
+      },
+      {
+        "title": "Détection de ressource/objet à collecter 2",
+        "text": "Voilà qui intéresserait ma Voix-d'aulne."
+      },
+      {
+        "title": "Zone inexplorée détectée",
+        "text": "Continuons. Il faut qu'on voie ça de plus près."
+      },
+      {
+        "title": "Découverte d'un ennemi puissant",
+        "text": "Nous sommes en danger, je le sens. Celui-ci ne se laissera pas faire."
+      },
+      {
+        "title": "Extraction 1",
+        "text": "Les richesses de la terre."
+      },
+      {
+        "title": "Extraction 2",
+        "text": "Laissez-moi faire. Le travail manuel ne me fait pas peur."
+      },
+      {
+        "title": "Ouverture de caisse",
+        "text": "C'est très rare, dans les terres sauvages. Nous en ferons bon usage."
+      },
+      {
+        "title": "Obtention d'aurylène",
+        "text": "En général, nous les mettons en bouteille pour nous éclairer."
+      },
+      {
+        "title": "Élimination de la Gangrène",
+        "text": "Nous devrions laisser la Nature suivre son cours."
+      },
+      {
+        "title": "Repos",
+        "text": "Ça me rappelle les feux de camp dans les terres sauvages. Les deux m'enveloppent d'une même chaleur."
+      },
+      {
+        "title": "Utilisation de tactique 1",
+        "text": "Contrôle ta respiration."
+      },
+      {
+        "title": "Utilisation de tactique 2",
+        "text": "Ma force me revient."
+      },
+      {
+        "title": "Avertissement de danger",
+        "text": "Ne t'arrête pas. Continue à bouger."
+      },
+      {
+        "title": "Blessure",
+        "text": "Je peux encore me battre, je suis juste ralentie."
+      },
+      {
+        "title": "0 PV",
+        "text": "Désolée... J'aurais aimé pouvoir faire plus..."
+      },
+      {
+        "title": "Encouragement de l'équipe 1",
+        "text": "Tu as réagi aussi vite que l'éclair !"
+      },
+      {
+        "title": "Encouragement de l'équipe 2",
+        "text": "À la manière du vent et du tonnerre, nous nous sommes abattus sur eux comme la tempête."
+      },
+      {
+        "title": "Réaction face aux encouragements 1",
+        "text": "C'est mon devoir."
+      },
+      {
+        "title": "Réaction face aux encouragements 2",
+        "text": "C'est normal, je fais partie de l'équipe."
+      },
+      {
+        "title": "Début du combat 1",
+        "text": "Je suis dans ma zone."
+      },
+      {
+        "title": "Début du combat 2",
+        "text": "Je vous laisse vous occuper de ce côté."
+      },
+      {
+        "title": "Victoire au combat 1",
+        "text": "Qu'ils retrouvent la sérénité."
+      },
+      {
+        "title": "Victoire au combat 2",
+        "text": "Puissent les terres vous accueillir."
+      },
+      {
+        "title": "Victoire au combat 3",
+        "text": "Telle est la volonté de la Nature."
+      },
+      {
+        "title": "Victoire au combat 4",
+        "text": "Chaque être des terres sauvages doit endurer des souffrances pour grandir."
+      },
+      {
+        "title": "Défaite au combat",
+        "text": "Même les meutes de hyenards les plus expérimentées échouent parfois dans leur chasse. Nous aurons au moins appris quelque chose."
+      },
+      {
+        "title": "Coup final 1",
+        "text": "Je vais te briser !"
+      },
+      {
+        "title": "Coup final 2",
+        "text": "En éclats !"
+      },
+      {
+        "title": "Compétence de combat 1",
+        "text": "Un vent déchaîné !"
+      },
+      {
+        "title": "Compétence de combat 2",
+        "text": "Des roulements de tonnerre !"
+      },
+      {
+        "title": "Compétence de combat 3",
+        "text": "Un éclair !"
+      },
+      {
+        "title": "Compétence de combo prête 1",
+        "text": "Le vent est parfait !"
+      },
+      {
+        "title": "Compétence de combo prête 2",
+        "text": "Je m'occupe du reste."
+      },
+      {
+        "title": "Utilisation de combo 1",
+        "text": "Voilà la voie optimale."
+      },
+      {
+        "title": "Utilisation de combo 2",
+        "text": "J'ai repéré une ouverture !"
+      },
+      {
+        "title": "Coup fatal 1",
+        "text": "C'est terminé."
+      },
+      {
+        "title": "Coup fatal 2",
+        "text": "C'est ma chance."
+      },
+      {
+        "title": "Ultime 1",
+        "text": "Tu n'y échapperas pas."
+      },
+      {
+        "title": "Ultime 2",
+        "text": "La tempête s'est abattue."
+      },
+      {
+        "title": "Ultime 3",
+        "text": "L'éclair a frappé."
+      }
+    ]
   },
   "potentials": {
     "potential1": {

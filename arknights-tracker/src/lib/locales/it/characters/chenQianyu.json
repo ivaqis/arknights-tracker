@@ -119,7 +119,325 @@
         "name": "Beneficenza",
         "description": "Beneficenza: difesa della giustizia\nAltruismo: l'essenza dei veri guerrieri."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Preparazione all'operazione 1",
+        "text": "Prepararmi? Eh eh. Le mie lame sono sempre pronte: loro non dormono mai!"
+      },
+      {
+        "title": "Preparazione all'operazione 2",
+        "text": "Assegnami alla prima linea, stavolta. Voglio essere la prima a uscire!"
+      },
+      {
+        "title": "Aggiunta alla squadra 1",
+        "text": "È già il nostro turno? Bene. Bisogna sempre colpire col giusto tempismo."
+      },
+      {
+        "title": "Aggiunta alla squadra 2",
+        "text": "Lascia fare a me!"
+      },
+      {
+        "title": "Cambio arma",
+        "text": "Wow. Bella roba. Ma mi bastano anche gli armamenti d'ordinanza per prendere a calci i nemici."
+      },
+      {
+        "title": "Cambio equipaggiamento",
+        "text": "Mhh... Forse una vera maestra dovrebbe indossare equipaggiamenti più leggeri."
+      },
+      {
+        "title": "Attivazione matrice delle abilità",
+        "text": "Con la pratica si comprende meglio l'arte della spadamanzia!"
+      },
+      {
+        "title": "Visione delle registrazioni di combattimenti",
+        "text": "Quindi così... e poi devo fare questo a seguire? D'accordo, ho capito!"
+      },
+      {
+        "title": "Promozione operatore 1",
+        "text": "Ho chiesto a Perlica di rimandare la mia promozione fino a questo momento! Endmin, mi darò pace solo quando sarai tu in persona a comunicarmi l'approvazione della Endfield!"
+      },
+      {
+        "title": "Promozione operatore 2",
+        "text": "Che ne pensi? Ho battuto il record per la promozione più veloce? Dopotutto, ho saltato qualche anno all'Accademia Tanjian. Non te l'aspettavi, eh? Ah ah ah. Ero sempre la prima della classe."
+      },
+      {
+        "title": "Promozione operatore 3",
+        "text": "Beh, pare che non sia brava solo nelle arti marziali. Non posso farci niente: sono la tua operatrice migliore. Oh, se continui ad adularmi così, finirò per arrossire... Però non smettere!"
+      },
+      {
+        "title": "Promozione operatore 4",
+        "text": "Sono ancora lontana dal mio apice. Endmin, dicono che la lama di mia madre potesse fendere le nuvole. Io voglio arrivare allo stesso livello... e diventare qualcuno su cui tu e Perlica potete sempre contare!"
+      },
+      {
+        "title": "Operatore a rapporto",
+        "text": "ENDMIN! COME... Oh. Ok, mi attengo alle procedure standard. Ecco qui: operatrice Endfield Chen Qianyu a rapporto!"
+      },
+      {
+        "title": "Attesa 1",
+        "text": "Guarda qui! Ih ih, fantastico, eh?"
+      },
+      {
+        "title": "Attesa 2",
+        "text": "Da questa parte, Endmin! Ih ih!"
+      },
+      {
+        "title": "Assegnazione a una struttura",
+        "text": "Ricevuto. Non hai niente di cui preoccuparti, Endmin!"
+      },
+      {
+        "title": "Saluto 1",
+        "text": "Come stai, Endmin? Ti va di addestrarti con me?"
+      },
+      {
+        "title": "Saluto 2",
+        "text": "Al resto ci penso io, Endmin. Tu goditi pure un po' di relax: te lo meriti!"
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 1",
+        "text": "Ehi! Quasi non mi ero accorta di te, Endmin! Eh eh eh, sì. Sto cercando di perfezionare un nuova mossa e non ho visto dove stavo andando."
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 2",
+        "text": "Non mi sarei aspettata di trovarmi COSÌ in alto nell'orbita dopo essermene andata da Hongshan. Talos-II sembra davvero piccola da quassù. Mi chiedo se io e la mia lama saremmo in grado di raggiungere... Talos, forse? Che ne pensi, Endmin?"
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 3",
+        "text": "Endmin! Hai letto il libro sulla leggenda delle arti marziali che ti ho prestato? No, no, no, non è un romanzo. È basato su fatti realmente accaduti a Yan! Cosa? Stenti a credere che esista qualcuno le cui dita \"tagliano come coltelli\"? Oh... Non hai tutti i torti... Ma i \"pugni che crearono le maree primaverili e autunnali\" sono ancora peggio, eh?"
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 4",
+        "text": "Che sto facendo? AHIA! Ugh. Sto cercando di rilassare i muscoli. Da quando sono una Endfielder e svolgo tutte queste missioni, ogni giorno vado ben oltre quanto previsto dal mio regime di allenamento... Ehi, vuoi rilassarti anche tu? Guarda che conosco la posizione di qualche meridiano! Dai! Levati quella giacca! Non c'è di che."
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 5",
+        "text": "Sto andando all'arsenale, unisciti a me! Devo ritirare una spada. Cosa dovrei far inscrivere sull'elsa? \"Che il fato guidi la lama\" o \"Umile è la lama celebre\"? Ti preeego, Endmin! Aiutami a decidere!"
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 6",
+        "text": "C'è un dubbio che mi tormenta, ultimamente. Ugh. Non ha niente a che fare con la tecnica, credo che venga da dentro di me. Secondo le leggende, le armi migliori si adattano alla mente di chi le impugna, ma... Questo è solo un comunissimo pezzo d'acciaio! Ti preeego, Endmin! Dammi una mano tu!"
+      },
+      {
+        "title": "Offerta regali",
+        "text": "\"Un dono non è che una dimostrazione di pura sincerità\". È così che recita il detto. Ma per chi è davvero sincero non esistono regali adatti. Beh, spero solo che questo ti piaccia, Endmin!"
+      },
+      {
+        "title": "Accettazione regali",
+        "text": "Per... me?! WOW... Lo aprirò subitissimo!"
+      },
+      {
+        "title": "Dialogo fiducia 1",
+        "text": "Perlica non faceva che parlare di te, ma ora eccoti qui davanti ai miei occhi! Sembra un'esperienza quasi ultraterrena! Cosa? No che non sono delusa! Mangiare e dormire sotto lo stesso tetto dell'immensa leggenda invincibile di Perlica è super interessante! Aspetta... hai delle briciole sulla faccia."
+      },
+      {
+        "title": "Dialogo fiducia 2",
+        "text": "Dopo essermene andata da casa mia, per un po' ho viaggiato in giro per la Cintura, prima di unirmi alla Endfield. Eh eh eh. Volevo diventare un'eroina senza nome che compie gesta leggendarie, circondata da un alone di mistero. Tuttavia, dopo aver visto com'era la vita fuori da Hongshan, ho capito che i veri guerrieri non possono semplicemente allontanarsi dalle conseguenze delle loro azioni. Così... ho rallentato il passo e visitato meno luoghi. Non importa, compenserò per quest'opportunità mancata."
+      },
+      {
+        "title": "Dialogo fiducia 3",
+        "text": "Forse avevo dieci anni... o undici. Mi stavo allenando nella mia spadamanzia in segreto, sulle colline dietro l'Accademia Tanjian, quando mi imbattei in un Aggelos che si era separato dal suo aggregato. Fu la mia prima vera battaglia. Quando tornai a casa con la spada rotta, mio padre mi fece i complimenti, ma mi disse anche questo: \"Potrai anche aver rotto una lama, ma c'è chi non ha nemmeno il lusso di averne una\". Forse devo vedere oltre la solita immagine che ho di lui. Ciò che disse mi fa riflettere ancora oggi."
+      },
+      {
+        "title": "Dialogo fiducia 4",
+        "text": "Quando sono diventata una Endfielder? Mmh... è una lunga storia. Se vuoi davvero sapere quando ho iniziato a considerare l'idea... forse è stato quando ho aiutato una Liberi molto ben vestita a tirar fuori dal fango una bestia da soma e il suo carro. Perly mi rivolse un sorriso così genuino, e pensai... che forse avrei potuto smettere di viaggiare da sola."
+      },
+      {
+        "title": "Dialogo fiducia 5",
+        "text": "Yinglung abbandonò gli amici per dedicarsi al dovere. E mia madre mi abbandonò per prendere la Chi Xiao. Immagino che chiunque trovi la sua vera vocazione... finisca per lasciarsi alle spalle le cose meno importanti. Ma la Endfield non è così. Tutto e tutti hanno la stessa importanza e nessuno viene lasciato indietro. Se la Endfield ha una sua visione per Talos-II, impugnerò un'altra lama per portarla a compimento!"
+      },
+      {
+        "title": "Chiacchierata 1",
+        "text": "Far allontanare Perlica dal lavoro non sarà facile. Tuttavia, c'è questo trucco che usavo con gli spadamanti di grado superiore al mio... Se volevo che si dessero da fare, passavo a loro tutte le faccende da sbrigare. Basterà fare il contrario: portiamo a termine i lavori di Perly e non avrà altra scelta se non prendersi una pausa... Che c'è? Dai, è una strategia geniale, no?"
+      },
+      {
+        "title": "Chiacchierata 2",
+        "text": "La mia acconciatura? Facile! Per ottenere un risultato simmetrico, basta usare due corni come guida. Me lo ha insegnato la mia vicina, la vecchia Wang, dicendo che è un segreto dei Fortis... È strano, dici? La vita nei quartieri dayuan è così. Tutti contribuiscono a crescere i bambini del vicinato, infatti giocavamo tutti nello stesso cortile. Si potrebbe dire che non eravamo semplici vicini. Era un po' come essere in un'enorme famiglia allargata."
+      },
+      {
+        "title": "Chiacchierata 3",
+        "text": "Per la mia spadamanzia speciale ho preso ispirazione da un gran numero di scuole! La mia influenza principale? Di certo il maestro che ho avuto all'Accademia Tanjian. Mi ha insegnato come colpire con efficacia e disciplina: tutta sostanza, zero fuffa. Poi c'è qualunque cosa mi mostrasse mia madre quando facevo abbastanza capricci. La sua spadamanzia è stata tramandata di generazione in generazione, ed è incredibilmente complessa. Ogni mossa ha un significato speciale. Per quanto riguarda il resto... beh, me lo sono inventato dopo aver letto di tutti quegli spadamanti leggendari. Un vero guerriero deve pur avere una o due tecniche originali, no?"
+      },
+      {
+        "title": "Chiacchierata 4",
+        "text": "Wuling è un luogo bagnaticcio, umido e appiccicoso, ma ci sono rimasta per un po' fino ad abituarmici. Dalle pareti sgorgavano gocce d'acqua ogni volta che si alzava la Contaminazione acquatica. Tuttavia, il cibo di Wuling è tanto meraviglioso quanto le persone che ci vivono. Cioè, la maggior parte della gente del posto è super gentile. Se ho brutti ricordi? NO! Lì non c'è nessuno che non mi stia simpatico!"
+      },
+      {
+        "title": "Chiacchierata 5",
+        "text": "Mi hanno detto che la mamma mi aveva chiamata Qianyu. Per fortuna è facile da scrivere in yanese... Mi ha risparmiato tante rogne quando il maestro mi puniva facendomi scrivere il mio nome un migliaio di volte."
+      },
+      {
+        "title": "Argomento: Hongshan",
+        "text": "Se guardi in basso dal ponte della Dijiang, puoi vedere il Cratere di Hongshan. Me ne sono andata da lì due anni fa senza un vero obiettivo. Ciò nonostante, le strade che ho percorso in totale ammontano a malapena alla lunghezza di un'unghia... forse dovrei viaggiare ancora finché non finirò le dita o persino i palmi per misurare la distanza che percorro. Quando succederà, magari avrò trovato un obiettivo!"
+      },
+      {
+        "title": "Argomento: madre scomparsa",
+        "text": "Mia mamma ha una spada cremisi. Mi ha detto che era un cimelio di famiglia donato da un'eroina di Yan a un nostro antenato. Ricordo come gli anziani venissero da tutta Hongshan per visitare casa nostra e ammirare la spada, così da rievocare i racconti epici a essa legati. Poi... la mamma è scomparsa insieme alla spada. Crescendo, ho capito che non era solo un'arma. Era un sentiero. Una convinzione. Voglio ancora cercarla. Tuttavia, la sua piccola Qianyu lo farà con una lama tutta sua."
+      },
+      {
+        "title": "Argomento: Perlica",
+        "text": "Perlica aveva già una relazione malsana col lavoro quando l'ho conosciuta. Di tanto in tanto, ho sentito che il motivo per cui si dava così tanto da fare era proprio l'Endministrator. All'inizio mi dispiaceva per Perly, ma dopo aver fatto la tua conoscenza capisco quello che intende... Oltre alla visione e alle iniziative epiche su cui sta lavorando, credo che lei voglia semplicemente combattere al tuo fianco."
+      },
+      {
+        "title": "Individuazione risorsa/collezionabile 1",
+        "text": "Mmh, credo di aver trovato qualcosa di interessante lì..."
+      },
+      {
+        "title": "Individuazione risorsa/collezionabile 2",
+        "text": "Un tesoro! Andiamo a dare un'occhiata!"
+      },
+      {
+        "title": "Individuazione zona non esplorata",
+        "text": "Aspetta. È la prima volta che veniamo qui, vero?"
+      },
+      {
+        "title": "Individuazione nemico potente",
+        "text": "Pericolo più avanti. Vediamo quanto è forte questo..."
+      },
+      {
+        "title": "Estrazione 1",
+        "text": "Non te l'aspettavi, eh? È la mia spadamanzia speciale per le cose rocciose!"
+      },
+      {
+        "title": "Estrazione 2",
+        "text": "Al resto ci penso io! Con una spada è tutto più facile!"
+      },
+      {
+        "title": "Apertura di una cassa",
+        "text": "Di solito in casse di questo tipo ci nascondono tomi segreti."
+      },
+      {
+        "title": "Acquisizione di Aurylene",
+        "text": "Rotondo, luccicante... Oh, sono queste le vere dimensioni dell'Aurylene."
+      },
+      {
+        "title": "Eliminazione Contaminazione",
+        "text": "Non è possibile fermare un'inondazione con una sola lama. Forse questo è quello che hanno provato allora."
+      },
+      {
+        "title": "Riposo",
+        "text": "Ora mi sento riposata! Compenserò il tempo perso con lame più affilate!"
+      },
+      {
+        "title": "Utilizzo di gadget 1",
+        "text": "Presto! Prendine un po'!"
+      },
+      {
+        "title": "Utilizzo di gadget 2",
+        "text": "Oooh... Mi sento meglio!"
+      },
+      {
+        "title": "Avviso di pericolo",
+        "text": "Attenzione! Stai indietro!"
+      },
+      {
+        "title": "Ferita",
+        "text": "Ngh! Sto bene! Pensa alla battaglia..."
+      },
+      {
+        "title": "Esaurimento PS",
+        "text": "Dannazione... Ngh..."
+      },
+      {
+        "title": "Incoraggiamento alla squadra 1",
+        "text": "Quella mossa che hai fatto è stata incredibile!"
+      },
+      {
+        "title": "Incoraggiamento alla squadra 2",
+        "text": "Evviva! Un ottimo lavoro di squadra!"
+      },
+      {
+        "title": "Risposta all'incoraggiamento 1",
+        "text": "Eh eh. Faccio solo il mio lavoro!"
+      },
+      {
+        "title": "Risposta all'incoraggiamento 2",
+        "text": "L'unità favorisce la sinergia della lama!"
+      },
+      {
+        "title": "Inizio combattimento 1",
+        "text": "Una lama sguainata, dalla luce mai eguagliata!"
+      },
+      {
+        "title": "Inizio combattimento 2",
+        "text": "Ci penso io."
+      },
+      {
+        "title": "Vittoria in combattimento 1",
+        "text": "Oooh, non mi aspettavo nulla di meno."
+      },
+      {
+        "title": "Vittoria in combattimento 2",
+        "text": "Una vittoria facile."
+      },
+      {
+        "title": "Vittoria in combattimento 3",
+        "text": "Ottimo lavoro!"
+      },
+      {
+        "title": "Vittoria in combattimento 4",
+        "text": "C'è mancato poco... troppo poco. Presto, occupiamoci dei feriti!"
+      },
+      {
+        "title": "Sconfitta in combattimento",
+        "text": "... Li affronteremo di nuovo!"
+      },
+      {
+        "title": "Colpo finale 1",
+        "text": "Prendi questo!"
+      },
+      {
+        "title": "Colpo finale 2",
+        "text": "Centro!"
+      },
+      {
+        "title": "Abilità di combattimento 1",
+        "text": "Fendente!"
+      },
+      {
+        "title": "Abilità di combattimento 2",
+        "text": "Spazzata!"
+      },
+      {
+        "title": "Abilità di combattimento 3",
+        "text": "Deviazione!"
+      },
+      {
+        "title": "Abilità combo pronta 1",
+        "text": "È la nostra occasione!"
+      },
+      {
+        "title": "Abilità combo pronta 2",
+        "text": "Lascia fare a me!"
+      },
+      {
+        "title": "Esecuzione combo 1",
+        "text": "Tocca a me!"
+      },
+      {
+        "title": "Esecuzione combo 2",
+        "text": "Sono io la tua avversaria!"
+      },
+      {
+        "title": "Mossa letale 1",
+        "text": "Debolezza identificata!"
+      },
+      {
+        "title": "Mossa letale 2",
+        "text": "Rottura!"
+      },
+      {
+        "title": "Abilità suprema 1",
+        "text": "Che il fato guidi la lama!"
+      },
+      {
+        "title": "Abilità suprema 2",
+        "text": "Umile è la spada celebre!"
+      },
+      {
+        "title": "Abilità suprema 3",
+        "text": "Azione senza esitazione!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

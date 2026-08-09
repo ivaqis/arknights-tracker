@@ -133,7 +133,333 @@
         "name": "Gaya Hidup",
         "description": "Gaya Hidup: Wisata Liburan\nMakanan penutup memang enak. Kasur empuk memang nyaman. Bepergian juga asyik—Lebih baik mengabdikan hidup demi masa depan daripada terus-menerus terpaku pada masa lalu."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Persiapan Operasi 1",
+        "text": "Aku tak suka masalah, tapi lebih tak suka kejemuan."
+      },
+      {
+        "title": "Persiapan Operasi 2",
+        "text": "Semoga yang berikutnya cukup berkesan, apa pun itu."
+      },
+      {
+        "title": "Menambahkan ke Tim 1",
+        "text": "Aku pasti bisa. Sendirian."
+      },
+      {
+        "title": "Menambahkan ke Tim 2",
+        "text": "Akulah pedang. Akulah jelmaan api."
+      },
+      {
+        "title": "Berganti Senjata",
+        "text": "Pedangnya bagus. Semoga apiku tak terlalu panas untuknya."
+      },
+      {
+        "title": "Berganti Gear",
+        "text": "Seranganku tak akan melambat karena bobotnya. Lapisan tahan api? Pfft."
+      },
+      {
+        "title": "Aktivasi Matriks Kemampuan",
+        "text": "Jadi, kekuatan asliku lumayan juga, ‘kan?"
+      },
+      {
+        "title": "Menonton Rekaman Pertarungan",
+        "text": "Hmm, boleh juga referensinya."
+      },
+      {
+        "title": "Promosi Operator 1",
+        "text": "Ini maksudnya apa? Penyemangat? Pengakuan? Aku tak butuh. Aku kan cuma menerjang kumpulan serangga itu dan mengubah mereka jadi abu."
+      },
+      {
+        "title": "Promosi Operator 2",
+        "text": "Nah, karena aku sudah dipromosikan, level otoritasku yang baru mestinya memberiku hak rapat tinjauan tahunan empat mata, ‘kan? Oke, bagus. Ayo jalan-jalan dulu, cari udara segar."
+      },
+      {
+        "title": "Promosi Operator 3",
+        "text": "Lagi? Aku tak butuh tanda penghargaan atas pekerjaan bagusku. Tapi, kalau memang harus, akan kusimpan sebagai lambang dan bukti ... semua kenangan yang kita ukir bersama."
+      },
+      {
+        "title": "Promosi Operator 4",
+        "text": "Kalian, Endfielder, tampaknya makin bergantung kepadaku. Sepertinya aku tak punya pilihan lagi selain menerima kehormatan ini. Sekarang, kalian boleh memanggilku Operator Endfield Laevatain .... Eh! Kenapa ekspresimu seperti itu?"
+      },
+      {
+        "title": "Operator Siap Bertugas",
+        "text": "Bukannya kita sudah pernah bertemu? Huh. Sudahlah. Kau pasti akan mengingatku karena api dan pedang ini."
+      },
+      {
+        "title": "Siaga 1",
+        "text": "Aku paling tak suka orang-orang dungu tukang atur. Untung kau tak seperti mereka."
+      },
+      {
+        "title": "Siaga 2",
+        "text": "Mencariku? Akhirnya kau ingat sesuatu?"
+      },
+      {
+        "title": "Menugaskan ke Fasilitas",
+        "text": "Hmm, sepertinya tempat ini cocok untuk menghabiskan waktu ...."
+      },
+      {
+        "title": "Menyapa 1",
+        "text": "Ah, kau datang juga."
+      },
+      {
+        "title": "Menyapa 2",
+        "text": "Ternyata kau .... Oh, aku tidak sedang menunggumu, kok."
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 1",
+        "text": "Kenapa diam saja di sini? Ayo ke Anjungan Komando. Kau bisa bercerita tentang tempat-tempat yang pernah kaukunjungi dan tujuan yang ingin kaudatangi suatu hari nanti."
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 2",
+        "text": "Mmmm .... Dengan ini, aku memberikan apresiasi tertinggi kepada Divisi Logistik, yang telah menyediakan bar es krim prasmanan. Mau kuambilkan juga?"
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 3",
+        "text": "Aku dapat misi. Mau ikut? Tidak, tak usah pakai teleprotokol, aku lebih suka kapsul pendaratan. Aku akan pergi diiringi deru api yang memekakkan telinga, tepat di atas kepala mereka."
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 4",
+        "text": "Dingin? Kusuruh mereka menurunkan suhu termostatnya karena yang membangun pesawat ini agak bego dan lupa menyediakan ruang untuk udara segar. Kalau tak tahan dinginnya, mendekat saja."
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 5",
+        "text": "Kalau sedang tak ada kerjaan, aku biasanya makan es krim dan menikmati pemandangan di luar. Aku bisa melakukannya sepanjang hari. Walaupun pikiranku dipenuhi banyak sekali potongan kenangan yang terpecah, tak ada satu pun yang berisi pemandangan dunia atau malam berbintang dari sudut ini."
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 6",
+        "text": "Masih terjebak dalam kenangan? Huh. Kalau memorimu hilang, mau bagaimana lagi. Ingat saja apa yang terjadi mulai saat ini."
+      },
+      {
+        "title": "Menawarkan Hadiah",
+        "text": "Nih. Untukmu. Terima kasih sudah peduli kepadaku. Hah? Bisa mengingat orang yang disayangi saja sudah merupakan hadiah ...? Pfft ...."
+      },
+      {
+        "title": "Menerima Hadiah",
+        "text": "Hmm, aku tak terlalu suka hadiah karena aku selalu lupa tentang hadiah itu. Tapi, hadiah ini pemberianmu ... jadi pasti akan berbeda."
+      },
+      {
+        "title": "Dialog Kepercayaan 1",
+        "text": "Laevatain? Iya. Aku pilih sendiri, idenya dari pedang itu. Ada yang menganggap itu bukan nama asliku? Huh, ‘kan sudah kujinakkan, jadi namanya jadi milikku. Sama seperti kenangan-kenangan itu—akulah yang akan mengendalikan mereka, bukan sebaliknya."
+      },
+      {
+        "title": "Dialog Kepercayaan 2",
+        "text": "Pikiranku masih dipenuhi berbagai macam cuplikan kenangan. Semua kenangan itu tak hilang begitu saja. Aku cuma tak mau mempelajarinya. Mungkin setelah semua tugas menjemukan ini selesai, aku akan mengikuti kenangan-kenangan ini dan memulai perjalanan baru."
+      },
+      {
+        "title": "Dialog Kepercayaan 3",
+        "text": "Surtr .... Semua kemarahan, perasaan kehilangan, dan kebingungannya ... tersimpan dalam ingatanku. Rasanya begitu nyata dan permanen. Tapi, saat mengingat keputusan yang akhirnya diambilnya untuk dirinya sendiri, aku merasa sedikit terhibur."
+      },
+      {
+        "title": "Dialog Kepercayaan 4",
+        "text": "Tugas para reconvener? Aku tak peduli, sih. Mungkin saja itu sesuatu yang diselipkan dalam memoriku. Aku hanya setuju untuk bertarung bersamamu karena orang-orang yang kujumpai, jalan-jalan yang kulalui, dek-dek yang jadi tempat tidur siangku, dan breaker yang kuhancurkan .... Semua karena ingatan yang benar-benar milikku, yang tercipta di tempat ini."
+      },
+      {
+        "title": "Dialog Kepercayaan 5",
+        "text": "Aku sempat tak paham kenapa kau terus terpaku pada masa lalu. Setelah tiba di Endfield, akhirnya aku tahu—Kau ini Endministrator, wadah harapan dan cerminan penyelamat dunia ideal bagi semua orang. Tapi, tak seharusnya kaubiarkan citra dirimu dibentuk oleh angan-angan orang lain. Karena itulah kau harus menggunakan ingatanmu untuk menemukan jati dirimu. Kalau butuh teman untuk perjalanan ini, hubungi aku. Aku tak akan mempertanyakan tujuanmu."
+      },
+      {
+        "title": "Obrolan 1",
+        "text": "“Cincinku” yang terpecah ini? Anggap saja ini peliharaan dan “Unit Arts” milikku. Ahli Mesin Senjata di Endfield sudah berusaha mencari tahu cara kerjanya. Mereka juga sudah berusaha memperbaikinya .... Tapi, Cincin ini bertindak sendiri, dan memutuskan mengakhirinya."
+      },
+      {
+        "title": "Obrolan 2",
+        "text": "Kau sudah sampai? Coba lihat ini dulu. Warfarin mengirimiku puzzle. Katanya, puzzle ini berisi pemandangan, orang-orang, dan sejarah Terra .... Ukurannya besar sekali. Sudah lama sekali aku berusaha menyusunnya, tapi tetap belum selesai .... Hei, jangan terus-terusan memandangi tepiannya yang robek. Aku juga tak tahu kenapa ada bagian-bagian yang terbakar. Kondisinya sudah seperti ini saat kuterima."
+      },
+      {
+        "title": "Obrolan 3",
+        "text": "Pada malam hari, saat sedang menjalankan misi di Talos-II, aku biasanya bermimpi tentang Dijiang, juga orang-orangnya dan peristiwa di Endfield. Aku menunggu dengan sabar sampai pikiranku bisa melupakan semua kepingan masa lalu yang bukan milikku, lalu mengisi kekosongannya dengan kenangan ciptaanku sendiri."
+      },
+      {
+        "title": "Obrolan 4",
+        "text": "Alasanku bertarung? Karena suatu hari nanti, aku akan berdiri di puncak gunung dan menatap dunia yang ditelan api .... Kenapa melihatku seperti itu? Aku kan cuma menggambarkan mimpi buruk yang sudah lama menggangguku. Tak usah khawatir, tak akan kubiarkan itu terjadi, kapan pun dan di mana pun."
+      },
+      {
+        "title": "Obrolan 5",
+        "text": "Kadang kulihat pengungsi berkeliaran di alam liar, atau pembantai yang menghancurkan seluruh kota. Kadang, aku memangkas bunga di kebun, lalu sesak napas gara-gara bahan kimia di lab. Aku melawan sosok-sosok bayangan yang tak kelihatan wajahnya, dan aku tak tahu alasan kita bertarung .... Ayolah, jangan melamun terus. Aku baru mau mulai."
+      },
+      {
+        "title": "Topik: Seš’qa",
+        "text": "Rumahku? Aku pernah sampai di tempat bernama Seš’qa. Di sana ada bangunan, bahasa, festival, dan ilmu sihir yang ... rasanya cukup familier untuk disebut “rumah”. Tapi, aku tak akan mengunjunginya lagi kalau tak ada alasan yang sangat kuat—Penduduknya terlalu hangat dan bersemangat. Bahkan ada yang memanggilku Diαblo .... Huh. Bisa dibilang, aku jadi kesal, lalu aku pun mengacaukan tempat itu ... sedikit ...."
+      },
+      {
+        "title": "Topik: Yvonne",
+        "text": "Vouivre berambut pink itu sering memintaku menguji Frost-e-Bytee miliknya, yang tak pernah berhasil memadamkan apiku. Tapi ... dia bisa buat es krim yang cantik dan menarik, dan rasanya juga lumayan enak."
+      },
+      {
+        "title": "Topik: Hannabit Circuit",
+        "text": "Seorang Songseeker dari Hannabit Circuit pernah bilang, “Di tangan angin, api jadi lawan. Di tangan manusia, api jadi kawan.” Songseeker itu tampak tak takut api. Dia bahkan mengajariku cara membuat jalur api di sisi lain alam liar. Aku berhasil menahan penyebaran kebakaran hutan. Warga desa yang selamat dari bencana itu menyebut kami pahlawan, tapi aku tak bisa berhenti memikirkan cloudbeast yang kami selamatkan. Kubiarkan dia memelihara makhluk mungil itu. Sayang sekali."
+      },
+      {
+        "title": "Topik: TGCC",
+        "text": "Ada sesuatu yang harus kutangani. Divisi SDM menyuruhku langsung menyampaikan masalah ini kepadamu. Ini. Poster buronan. Bukan masalah besar, sih. Kejadiannya saat aku baru saja meninggalkan Rhodes Island. Di tempat yang disebut Simpang Aspal, aku dituduh melakukan sejumlah pembakaran. Padahal sebenarnya, itu semua salah mereka sendiri. Bisnis kotor yang punya banyak sampah mudah terbakar mestinya sudah tahu mereka berisiko mengalami kebakaran."
+      },
+      {
+        "title": "Topik: Sami",
+        "text": "Akan kukatakan sekali lagi. Aku belum pernah ke Terra secara langsung. Jadi, jangan bicara tentang pemandangan, penduduk, ataupun budayanya .... Kecuali, tentu saja, yang kaumaksud adalah Sami. Kudengar “rumah” merekalah yang membawa mereka ke Talos-II. Kalau kita ada misi ke sana, beri tahu aku."
+      },
+      {
+        "title": "Sumber Daya/Barang Koleksi Terdeteksi 1",
+        "text": "Lihat, ada sesuatu di sana. Kalau tak ada gunanya, bisa kita pakai untuk menguji pedang."
+      },
+      {
+        "title": "Sumber Daya/Barang Koleksi Terdeteksi 2",
+        "text": "Sesuatu yang sebaiknya diingat."
+      },
+      {
+        "title": "Area yang Belum Dijelajahi Terdeteksi",
+        "text": "Kita bisa memeriksanya. Jangan khawatir. Tetaplah di belakangku, jangan jauh-jauh."
+      },
+      {
+        "title": "Musuh Kuat Ditemukan",
+        "text": "Lihat yang satu itu? Perlu kupangkas?"
+      },
+      {
+        "title": "Penambangan 1",
+        "text": "Yang bisa bertahan dari api hanyalah barang yang benar-benar berharga."
+      },
+      {
+        "title": "Penambangan 2",
+        "text": "Lambat sekali. Aku tak tahan berdiam diri terus."
+      },
+      {
+        "title": "Membuka Kerat",
+        "text": "Aku ingat, kau lumayan suka yang seperti ini."
+      },
+      {
+        "title": "Mendapatkan Aurylene",
+        "text": "Aurylene .... Sama labilnya seperti ingatanku."
+      },
+      {
+        "title": "Menyingkirkan Hawar",
+        "text": "Hati-hati. Ini jauh lebih berbahaya daripada api."
+      },
+      {
+        "title": "Istirahat",
+        "text": "Kalau masih kedinginan, mendekatlah kepadaku."
+      },
+      {
+        "title": "Penggunaan Taktis 1",
+        "text": "Ayolah, tak usah berlebihan begitu."
+      },
+      {
+        "title": "Penggunaan Taktis 2",
+        "text": "Hmph. Aku sudah mendingan."
+      },
+      {
+        "title": "Peringatan Bahaya",
+        "text": "Jangan berdiri saja, minggir!"
+      },
+      {
+        "title": "Cedera",
+        "text": "Ck .... Aku tak akan mati gara-gara ini."
+      },
+      {
+        "title": "0 HP",
+        "text": "Terkutuklah ... ingatan akan kekalahan ini ...."
+      },
+      {
+        "title": "Penyemangat Tim 1",
+        "text": "Hmph. Akan kuingat."
+      },
+      {
+        "title": "Penyemangat Tim 2",
+        "text": "Boleh juga. Biar kuurus yang berikutnya."
+      },
+      {
+        "title": "Respons Penyemangat 1",
+        "text": "Memang."
+      },
+      {
+        "title": "Respons Penyemangat 2",
+        "text": "Memang sudah tugasku."
+      },
+      {
+        "title": "Mulai Pertarungan 1",
+        "text": "Saatnya membuat musuh kesakitan."
+      },
+      {
+        "title": "Mulai Pertarungan 2",
+        "text": "Akhirnya."
+      },
+      {
+        "title": "Menang Pertarungan 1",
+        "text": "Ini belum bisa dianggap pemanasan."
+      },
+      {
+        "title": "Menang Pertarungan 2",
+        "text": "Memang sudah pasti menang, sih."
+      },
+      {
+        "title": "Menang Pertarungan 3",
+        "text": "Baiklah, aku ikut senang."
+      },
+      {
+        "title": "Menang Pertarungan 4",
+        "text": "Lumayan bagus. Tapi, berikutnya, biar aku saja yang melawan musuh yang kuat."
+      },
+      {
+        "title": "Kalah Bertarung",
+        "text": "Tak akan kubiarkan ini terjadi lagi."
+      },
+      {
+        "title": "Final Strike 1",
+        "text": "Tebas!"
+      },
+      {
+        "title": "Final Strike 2",
+        "text": "Binasalah!"
+      },
+      {
+        "title": "Skill Tarung 1",
+        "text": "Api pelebur!"
+      },
+      {
+        "title": "Skill Tarung 2",
+        "text": "Terbakarlah!"
+      },
+      {
+        "title": "Skill Tarung 3",
+        "text": "Musnahlah!"
+      },
+      {
+        "title": "Skill Kombo Siap 1",
+        "text": "Aku siap!"
+      },
+      {
+        "title": "Skill Kombo Siap 2",
+        "text": "Neraka menantimu!"
+      },
+      {
+        "title": "Penggunaan Kombo 1",
+        "text": "Terbakarlah jadi abu!"
+      },
+      {
+        "title": "Penggunaan Kombo 2",
+        "text": "Jadilah abu!"
+      },
+      {
+        "title": "Penuntas 1",
+        "text": "Kau tak bisa kabur!"
+      },
+      {
+        "title": "Penuntas 2",
+        "text": "Matilah kau!"
+      },
+      {
+        "title": "Ultimate 1",
+        "text": "Biarkan senjanya menyala!"
+      },
+      {
+        "title": "Ultimate 2",
+        "text": "Akan kubakar kegelapan!"
+      },
+      {
+        "title": "Ultimate 3",
+        "text": "Ajalmu sudah dekat!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

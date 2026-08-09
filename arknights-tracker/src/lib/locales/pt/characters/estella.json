@@ -120,7 +120,329 @@
         "name": "Aprimoramento da Mente",
         "description": "Aprimoramento da Mente: Pensador\nCerta vez, uma inocente Estella pensou que o trabalho mental era mais fácil do que o muscular."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Prep Operação 1",
+        "text": "A pausa para descanso... já acabou?"
+      },
+      {
+        "title": "Prep Operação 2",
+        "text": "Estarei pronta em... mais dois minutos..."
+      },
+      {
+        "title": "Adicionando à equipe 1",
+        "text": "Outra missão? Uau... Tudo bem... Espero que acabe antes que eu caia de exaustão..."
+      },
+      {
+        "title": "Adicionando à equipe 2",
+        "text": "Agora, como devo explorar esses... segredos não falados? Hmm..."
+      },
+      {
+        "title": "Trocando de arma",
+        "text": "Uau... Uma arma de poder supremo... Hnnngghh... É tão pesada..."
+      },
+      {
+        "title": "Trocando de equipamento",
+        "text": "Os Engenheiros de Arsenal obviamente superestimaram minha resistência em combate... Hurrrr... Tanto faz."
+      },
+      {
+        "title": "Ativação da Matriz de Capacidade",
+        "text": "Ah, então melhorar significa menos trabalho? Oba..."
+      },
+      {
+        "title": "Assistindo a Registros de Combate",
+        "text": "O cérebro melhorou, o corpo aumentou de nível... mas não houve progresso algum em termos de vitalidade. Bom, acho que estou ferrada."
+      },
+      {
+        "title": "Promoção do Operador 1",
+        "text": "Essa promoção é muito inesperada... Pensei que levaria muito, muito... muito mais tempo do que isso..."
+      },
+      {
+        "title": "Promoção do Operador 2",
+        "text": "Acontece que os resultados do meu trabalho superaram minhas expectativas... Endmin... Preciso de dois dias de folga para me dar um pouco de carinho e atenção..."
+      },
+      {
+        "title": "Promoção do Operador 3",
+        "text": "Por que continuo sendo promovida...? Sou um experimento para novas estratégias de gestão? Eu deveria tentar descobrir isso..."
+      },
+      {
+        "title": "Promoção do Operador 4",
+        "text": "Ooooh! Isso significa que eu posso dar ordens a Akekuri? Heh heh... Hora de experimentar."
+      },
+      {
+        "title": "Operador se apresentando para o trabalho",
+        "text": "Por que eu tenho que fazer isso de novo...? Saudações... Endministrator. Eu sou a Estella. E, por favor, não me dê atribuições fisicamente intensas. Obrigada."
+      },
+      {
+        "title": "Em espera 1",
+        "text": "Haah... ainda respirando. Por enquanto, só quero não fazer nada..."
+      },
+      {
+        "title": "Em espera 2",
+        "text": "Eu me esforcei demais de novo... Hngh... É melhor aproveitar a pausa enquanto ela dura."
+      },
+      {
+        "title": "Atribuindo a Instalação",
+        "text": "Uma nova atribuição? Estou ansiosa por isso... Sério."
+      },
+      {
+        "title": "Saudação 1",
+        "text": "Endmin... Como vai seu intervalo?"
+      },
+      {
+        "title": "Saudação 2",
+        "text": "Endmin, quase não vejo você fazendo uma pausa."
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 1",
+        "text": "Depois que eu disse a Antal que não gostava dos seus jogos de matemática, ele parou de compartilhá-los comigo. Hmm... Na verdade, as pessoas deveriam seguir o meu exemplo."
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 2",
+        "text": "Os Engenheiros de Arsenal continuam reclamando sobre a rapidez com que eu quebro minhas lanças... Honestamente, o fato de eu conseguir balançar essas armas excessivamente pesadas já é um milagre."
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 3",
+        "text": "Sr. Andre...? Ele consegue virar a cabeça 180 graus? Humm... Vou perguntar isso a ele na próxima vez."
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 4",
+        "text": "Akekuri adora orelhas longas, então compilei várias receitas com orelhas longas e dei para ela... Então ela parou de falar comigo por uma semana inteira... Isso foi tão estranho..."
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 5",
+        "text": "Estou acostumada a realizar operações de infiltração sozinha... É um incômodo, mas alguém tem que fazer isso. Principalmente porque sou mais solitária do que o resto da equipe."
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 6",
+        "text": "Música metal alta me acalma... Parar esses ruídos pode ser fácil, mas eu gosto da sensação de falta de propósito em meio à cacofonia. Isso me ajuda... a esquecer quem eu sou."
+      },
+      {
+        "title": "Oferta de presentes",
+        "text": "Endmin, você aceita isto? Não tenha medo... Não há nada de estranho aqui."
+      },
+      {
+        "title": "Aceitando presentes",
+        "text": "É para... mim? Bem... Obrigada... Normalmente não recebo presentes de pessoas que não são da minha equipe."
+      },
+      {
+        "title": "Diálogo de Confiança 1",
+        "text": "Entrar para a equipe de assalto? Não, mas agradeço. Tenho certeza de que não tenho força física para isso... E ninguém deveria ser obrigado a me carregar por aí."
+      },
+      {
+        "title": "Diálogo de Confiança 2",
+        "text": "Alguém no ramo disse que estou subutilizando minhas informações... Hmm... Na verdade, nunca pensei em usar esses segredos. Dá muito trabalho... Acho que simplesmente gosto de colecioná-los..."
+      },
+      {
+        "title": "Diálogo de Confiança 3",
+        "text": "Azar? Meus pais sempre relembram os bons e velhos tempos, dizendo que o motivo de nossas vidas piorarem cada vez mais era só azar... Mas, bem... acho que cada experiência é significativa de alguma forma. Foi assim que conheci meus colegas da Equipe Op Z7..."
+      },
+      {
+        "title": "Diálogo de Confiança 4",
+        "text": "Eu estava no fundo do poço antes de conhecer a Equipe Z7. *Suspiro* Aquela época foi um desastre total... Um picareta me roubou todo o dinheiro e eu estava com tanta fome... No começo, Akekuri e Fluorite me fizeram acampar com os outros nômades que resgataram. Mas quando decidi compartilhar detalhes sobre a organização dos Invasores de Terras e seus turnos de patrulha... Fluorite não conseguiu esconder seu espanto e me perguntou como eu fazia aquilo... É, ainda me lembro daquela expressão no rosto dela."
+      },
+      {
+        "title": "Diálogo de Confiança 5",
+        "text": "Eu só quero viver uma vida em paz e aceitar tudo o que vier... Houve um tempo em que pensei que isso fosse uma ilusão para alguém tão azarada quanto eu. Então vim para a Endfield... entrei para a Equipe Z7... e conheci você, Endmin... Agradeço por tolerar minha presença..."
+      },
+      {
+        "title": "Chat 1",
+        "text": "Meu passado não foi um passeio de montanha-russa. Eu apenas segui minha família e fui de um lugar para outro... É, acho que foi cansativo e difícil, mas a maioria dos talosianos passou pela mesma coisa. Só espero que a vida possa ficar mais relaxante e fácil..."
+      },
+      {
+        "title": "Chat 2",
+        "text": "Gosto do zumbido metálico quando alguém toca um refrão distorcido. Quando estou ao ar livre, sinto um formigamento estranho nos ouvidos — é estranhamente reconfortante..."
+      },
+      {
+        "title": "Chat 3",
+        "text": "Trabalhar atrás das linhas inimigas não é tão difícil. Pelo contrário... é bem emocionante quando você não sabe quando o perigo vai atacar... Bem, quando você está bem preparada, nada te pega desprevenida."
+      },
+      {
+        "title": "Chat 4",
+        "text": "Desculpa, Endmin. Só me diga quando se sentir ofendido por mim... RH me lembrou disso... Mas meus amigos da Equipe Z7 me disseram que está tudo bem: eles falaram que se ofender com a Estella faz parte da vida..."
+      },
+      {
+        "title": "Chat 5",
+        "text": "Eu apenas coleto as informações e Fluorite as analisa. Como você usa essas informações para entender como a mente deles funciona? Humm... Espero que Fluorite possa compartilhar seus segredos comigo... A única coisa que ela me disse foi: \"Tudo depende da experiência\"."
+      },
+      {
+        "title": "Tópico: Akekuri",
+        "text": "Hmm... Haverá um acerto de contas por esta atribuição injusta. Todos descobrirão o segredo dos cupcakes de Akekuri... Hurhur... Estella, você é uma menina tão má."
+      },
+      {
+        "title": "Tópico: Catcher",
+        "text": "Catcher não tem segredos... Na verdade, ele praticamente expôs tudo em seu Relatório de Desempenho no Trabalho... Nunca imaginei que encontraria um cara esquisito como ele."
+      },
+      {
+        "title": "Tópico: Fluorite",
+        "text": "Costumo fazer dupla com Fluorite. Ela ficava rindo das coisas que eu dizia e até me incentivava a falar mais... Humm... acho que... as pessoas e suas mentes podem ser bem complicadas."
+      },
+      {
+        "title": "Tópico: Antal",
+        "text": "O Savra é dedicado... embora eu ache que ele exagera às vezes. O trabalho já é cansativo por si só... Mas acho as piadas dele bem interessantes. Elas sempre fazem a Fluorite e eu rirmos."
+      },
+      {
+        "title": "Recurso/Colecionável detectado 1",
+        "text": "Esse parece bom... Se possível, deveríamos trazê-lo de volta."
+      },
+      {
+        "title": "Recurso/Colecionável detectado 2",
+        "text": "Olhem ali... O esforço pode valer a pena."
+      },
+      {
+        "title": "Área não explorada detectada",
+        "text": "Hooo... Acho que teremos que investigar aquela área."
+      },
+      {
+        "title": "Inimigo poderoso descoberto",
+        "text": "Hostil altamente ameaçador... Você se importa se eu continuar no apoio?"
+      },
+      {
+        "title": "Mineração 1",
+        "text": "Se ao menos alguém trouxesse uma sonda de mineração automática..."
+      },
+      {
+        "title": "Mineração 2",
+        "text": "Estou aqui para ajudar... Mas não espere muito de mim..."
+      },
+      {
+        "title": "Abrindo um caixote",
+        "text": "Agora fizemos um bom trabalho nesta viagem."
+      },
+      {
+        "title": "Adquirindo Aurileno",
+        "text": "Ahh... Acho que já vi isso antes..."
+      },
+      {
+        "title": "Eliminando a Praga",
+        "text": "Ótimo. Agora não precisamos mais andar tanto."
+      },
+      {
+        "title": "Descansar",
+        "text": "Estou um pouco recuperada... ainda assim, um pouco mais de descanso seria ótimo."
+      },
+      {
+        "title": "Uso Tático 1",
+        "text": "Tente isto... Talvez possa ajudar..."
+      },
+      {
+        "title": "Uso Tático 2",
+        "text": "Acho que a preparação valeu a pena."
+      },
+      {
+        "title": "Aviso de Perigo",
+        "text": "{F}Cuidado para não ser atingida!{M}Cuidado para não ser atingido!"
+      },
+      {
+        "title": "Ferida",
+        "text": "Hurrr... A arma é tão pesada..."
+      },
+      {
+        "title": "0 PV",
+        "text": "Eu decepcionei todo mundo de novo..."
+      },
+      {
+        "title": "Encorajamento da Equipe 1",
+        "text": "Uau... Eu nunca faria isso."
+      },
+      {
+        "title": "Encorajamento da Equipe 2",
+        "text": "Bom... Trabalho em equipe é o que precisamos."
+      },
+      {
+        "title": "Resposta a Encorajamento 1",
+        "text": "Prefiro não fazer isso com muita frequência..."
+      },
+      {
+        "title": "Resposta a Encorajamento 2",
+        "text": "Sim... Todos tiveram seu papel."
+      },
+      {
+        "title": "Início do Combate 1",
+        "text": "Não sou boa em batalhas longas... Por favor, termine-as rapidamente."
+      },
+      {
+        "title": "Início do Combate 2",
+        "text": "Temos mesmo que lutar? Ótimo. Vamos lá."
+      },
+      {
+        "title": "Vitória em Combate 1",
+        "text": "Huh... Acabou... Eu me saí bem, certo...?"
+      },
+      {
+        "title": "Vitória em Combate 2",
+        "text": "Hoo... Ainda bem que não desmaiei no meio do caminho."
+      },
+      {
+        "title": "Vitória em Combate 3",
+        "text": "Bom... Pelo menos terminou rápido..."
+      },
+      {
+        "title": "Vitória em Combate 4",
+        "text": "Todos... se saíram bem... Estou tão feliz por ter conseguido..."
+      },
+      {
+        "title": "Derrota em Combate",
+        "text": "Não posso deixar que acabe assim... Da próxima vez... Vou me esforçar ainda mais..."
+      },
+      {
+        "title": "Golpe Final 1",
+        "text": "Fique parado!"
+      },
+      {
+        "title": "Golpe Final 2",
+        "text": "Ali!"
+      },
+      {
+        "title": "Habilidade de Batalha 1",
+        "text": "Sônico... congelar!"
+      },
+      {
+        "title": "Habilidade de Batalha 2",
+        "text": "Quebrar... explosão!"
+      },
+      {
+        "title": "Habilidade de Batalha 3",
+        "text": "Haa... RIP!"
+      },
+      {
+        "title": "Combo de Habilidades Pronto 1",
+        "text": "Finalmente... Estou em posição."
+      },
+      {
+        "title": "Combo de Habilidades Pronto 2",
+        "text": "Desculpe fazê-los esperar..."
+      },
+      {
+        "title": "Conjuração de Combo 1",
+        "text": "Elevar-ô!"
+      },
+      {
+        "title": "Conjuração de Combo 2",
+        "text": "Chegando!"
+      },
+      {
+        "title": "Finalizador 1",
+        "text": "Acerte o PONTO... fraco!"
+      },
+      {
+        "title": "Finalizador 2",
+        "text": "Você vai CAIR!"
+      },
+      {
+        "title": "Habilidade Suprema 1",
+        "text": "Buum sônico... BOMBARDEAR!"
+      },
+      {
+        "title": "Habilidade Suprema 2",
+        "text": "Atacar e... estourar!"
+      },
+      {
+        "title": "Habilidade Suprema 3",
+        "text": "Todos os sons, convergir!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

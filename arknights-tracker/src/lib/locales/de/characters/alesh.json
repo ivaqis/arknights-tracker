@@ -126,7 +126,329 @@
         "name": "Sport",
         "description": "Sport: Hochseefischen\nFlossenangeln mag nach einem friedlichen Sport aussehen, aber eigentlich handelt es sich um einen Ringkampf mit monströsen Wellen."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Einsatzvorbereitung 1",
+        "text": "Hm? Bin ich etwa schon dran?"
+      },
+      {
+        "title": "Einsatzvorbereitung 2",
+        "text": "Da du dabei bist, werden wir heute sicherlich etwas fangen."
+      },
+      {
+        "title": "Wird zum Team hinzugefügt 1",
+        "text": "Ah … ich habe mir gestern den Knöchel verstaucht … Meine Hüften tun weh und mein Nacken auch …"
+      },
+      {
+        "title": "Wird zum Team hinzugefügt 2",
+        "text": "Du hast schon genug Spezialisten. Bist du sicher, dass du mich für den Auftrag brauchst?"
+      },
+      {
+        "title": "Waffe wird gewechselt",
+        "text": "Hmm. Sieht stabiler als ein Bambusstock aus. Zumindest zerbricht der nicht in Stücke."
+      },
+      {
+        "title": "Ausrüstung wird gewechselt",
+        "text": "Das wird mich vor blauen Flecken bewahren."
+      },
+      {
+        "title": "Fähigkeitsmatrix wird aktiviert",
+        "text": "Ich habe tatsächlich eine ganze Woche Spezialtraining überlebt. Kaum zu glauben, dass ich so hart trainieren konnte."
+      },
+      {
+        "title": "Kampfaufzeichnungen ansehen",
+        "text": "Das ist besser als unser Fernsehprogramm zu Hause – und außerdem gibt’s keine Wiederholungen!"
+      },
+      {
+        "title": "Operator-Beförderung 1",
+        "text": "Moment mal – diese Feier ist für mich? Oh, wow … Ich weiß gar nicht, was ich sagen soll! Also, ich … danke?"
+      },
+      {
+        "title": "Operator-Beförderung 2",
+        "text": "Du musst mich nicht ständig ermutigen, Endmin. Es ist seltsam, aber Lob lässt mich tatsächlich verwelken wie eine überwässerte Blume."
+      },
+      {
+        "title": "Operator-Beförderung 3",
+        "text": "Es muss anstrengend sein, all diese Verantwortung alleine zu tragen, Endmin. Ahh. Ich schätze, ich habe keine andere Wahl, als dir jetzt zu helfen."
+      },
+      {
+        "title": "Operator-Beförderung 4",
+        "text": "Warum siehst du glücklicher aus als ich? Ich dachte, das ist *meine* Beförderung. Na gut. Lass uns im Churrascaria feiern. Ich will nur die besten Grillsteaks, und du übernimmst die Rechnung."
+      },
+      {
+        "title": "Operator meldet sich zum Dienst",
+        "text": "Entschuldigung, kann ich mich hier für den Job anmelden? Freut mich, dich kennenzulernen. Ich heiße Alesh. Ich lese gerne, kann mit geschlossenen Augen angeln und bin gerne dabei."
+      },
+      {
+        "title": "Warten 1",
+        "text": "So ein schöner Tag. Perfekt für ein Nickerchen."
+      },
+      {
+        "title": "Warten 2",
+        "text": "Leeres Portemonnaie, wie eigentlich immer."
+      },
+      {
+        "title": "Zuweisung zur Anlage",
+        "text": "Ahh … Sobald du „Arbeit“ sagst, verpufft meine ganze Energie. Ich bin für ein Nickerchen vor der Arbeit, Endmin."
+      },
+      {
+        "title": "Gruß 1",
+        "text": "Hey! Dich treffe ich ja ständig. Wie läuft es heute mit der Arbeit?"
+      },
+      {
+        "title": "Gruß 2",
+        "text": "Boss, bist du nicht müde? Ich kann dir beibringen, wie du heimlich ein Nickerchen machen kannst."
+      },
+      {
+        "title": "Dijiang-Geplauder 1",
+        "text": "Es steht nichts mehr auf dem Plan? Sehr gut. Dann sehe ich mir jetzt die Wiederholung dieser Angelsendung an."
+      },
+      {
+        "title": "Dijiang-Geplauder 2",
+        "text": "Dieser Ort. Ja. Der, der ganz mit Schnee bedeckt ist. Das ist der Norden, oder? Ich würde das nicht sehen, wenn ich nie zu Endfield gekommen wäre. Als ich das erste Mal auf der Dijiang war, war der Blick von der Brücke fast zu überwältigend. Jetzt, wo ich mich daran gewöhnt habe, fühlt sich der Blick von hier oben auf Talos-II ziemlich magisch an."
+      },
+      {
+        "title": "Dijiang-Geplauder 3",
+        "text": "Meine Kampffertigkeiten? Ich schwinge einfach das Schwert und hoffe, dass es irgendeinem Gegner richtig wehtut, Boss. Aber du kannst meine Spezialfertigkeit auch erlernen, indem du gegen riesige Reißbiester, menschenfressende Ranken, Aggeloi aus Metall und Typen kämpfst, die dir eine Menge Geld schulden."
+      },
+      {
+        "title": "Dijiang-Geplauder 4",
+        "text": "Weißt du, Leute in meinem Alter finden vieles langweilig. Angeln ist meine einzige Fluchtmöglichkeit vor dieser düsteren Realität. Was? Ich bin noch jung? Hör auf mit dem Dämloiden-Mist, ich bin viel älter als … Moment, Endmin. Wie alt bist du noch mal?"
+      },
+      {
+        "title": "Dijiang-Geplauder 5",
+        "text": "Ich habe dieses Buch über ganz normale Leute durchgeblättert. Weißt du, Dinge wie Überleben und der Kampf der Menschheit interessieren mich normalerweise nicht … Aber ich habe das Gefühl, der Autor ist … ist jemand, der das wirklich gelebt hat. Hey, was ist los? Warum plötzlich so ernst? Bleib ruhig, Boss. Ich sage doch nur, dass ich den Autor bewundere, das ist alles."
+      },
+      {
+        "title": "Dijiang-Geplauder 6",
+        "text": "Dass ich so schwer zu töten bin, ist wahrscheinlich mein einziger Vorteil. Ich wurde ein paar Mal richtig heftig getroffen, aber es gibt zu viele Leute, die ich vermissen würde – meine Kumpels, den alten Vermieter … und euch auch. Allein der Gedanke daran lässt mich immer wieder für die zweite Runde aufstehen."
+      },
+      {
+        "title": "Geschenke anbieten",
+        "text": "Hier, Boss. Ich hab was Schönes für dich. Der Laden gibt dir 50 % Rabatt, wenn du noch eins kaufst. Ein echtes Schnäppchen, oder?"
+      },
+      {
+        "title": "Geschenke annehmen",
+        "text": "Für mich? Meine Güte … Normalerweise bekomme ich Liebesbriefe von gekränkten Rabauken, die mich zur Kasse bitten, oder von Typen, die mich umbringen wollen. Ein richtiges Geschenk hätte ich nie erwartet."
+      },
+      {
+        "title": "Vertrauensgespräch 1",
+        "text": "Bist du niedergeschlagen? Junge Leute sollten Hoffnung haben. Ich weiß, es ist gerade schrecklich, aber von jetzt an wird es noch schlimmer. Siehst du? Du fühlst dich schon viel besser, oder?"
+      },
+      {
+        "title": "Vertrauensgespräch 2",
+        "text": "Warum bin Endfield beigetreten bin? Wegen meines alten Vermieters. Ja, wirklich. Er war immer auf Zinne, weißt du. Mein Flössler-Laden lief nicht so gut, und ich schuldete ihm monatelang Miete. Also hat er mir einen Job besorgt, ohne mich zu fragen. Ich weiß nicht, was er in meinen Lebenslauf geschrieben hat, aber dir hat er wohl gefallen … Und hier bin ich nun."
+      },
+      {
+        "title": "Vertrauensgespräch 3",
+        "text": "Was hast du da in der Hand? „Zweiter Gangster an der Spitze von La Estrada“ …? Der auf dem Foto sieht mir ähnlich? Na ja, wer weiß. Komm schon, wir sollten im Hier und Jetzt leben. Es hat keinen Sinn, Dinge auszugraben, die eigentlich begraben bleiben sollten. Es wäre doch schade, wenn uns eine alte, verstaubte Geschichte in die Quere käme, findest du nicht? Äh, warum fragst du Perlica nach der Nummer des Sicherheitsbüros?"
+      },
+      {
+        "title": "Vertrauensgespräch 4",
+        "text": "Ich war früher bei Estrada Ursaña. Die meisten nannten sie La Estrada. Die Stadt ist riesig und brütet Kleinkriminelle wie mich aus. Ich bin in deren Mitte aufgewachsen, habe meine Crew gefunden, bin einer größeren Gang beigetreten und habe sie schließlich irgendwie angeführt. Dann, na ja … ist mir alles um die Ohren geflogen. Mann … wenn ich das gewusst hätte, wäre ich schon vor 20 Jahren zur Fischkonservenfabrik gegangen. Und jetzt verkaufe ich Flössler für meinen Lebensunterhalt."
+      },
+      {
+        "title": "Vertrauensgespräch 5",
+        "text": "Warum starrst du mich an? Wegen dieser Narbe? Haha, ein Mann mit Geschichten gibt sie nicht so leicht preis. Was vergangen ist, ist vergangen. Wir müssen es hinter uns lassen und einfach nach vorn sehen … Hey! Endmin! Jetzt lauf nicht weg! Okay, okay, ganz ehrlich – da gibt es nichts Besonderes zu erzählen. Hatte zwei sehr enge Freunde. Einer hat nach mir geschlagen, als ich den anderen deckte. Habe dabei ein Auge und ein Stück meines alten Lebens verloren. So war das. Langweilig, oder?"
+      },
+      {
+        "title": "Geplauder 1",
+        "text": "Das Leben ist kein Angelausflug. Beim Angeln kann man einen Wurfköder immer wieder einholen. Aber im echten Leben gibt es keinen einfachen Ausweg, wenn man erst einmal in Schwierigkeiten steckt. Genau *DARUM* ist es wichtig, ein glückliches Leben zu führen. Wahre Weisheit von einem alten Knaben, Endmin."
+      },
+      {
+        "title": "Geplauder 2",
+        "text": "Mein kleiner Flössler-Laden läuft nicht besonders gut. Ohne den Gehaltsscheck von Endfield könnte ich mir nicht mal die Miete leisten. Ehrlich gesagt hatte ich nicht erwartet, mit Flösslern richtig viel Geld zu verdienen. Deshalb lasse ich die Leute so viel feilschen, wie sie wollen – und schreibe sogar an, wenn nötig. Selbst als ich beim Angeln Glück hatte, habe ich die überschüssigen Flössler einfach verschenkt. Das Leben ist eben nicht für jeden leicht. Einmal wurde bei mir eingebrochen. Der Einbrecher fand nichts Wertvolles und hinterließ mir eine Nachricht: „Der traurigste Ort, am dem ich je war.“ Mann …"
+      },
+      {
+        "title": "Geplauder 3",
+        "text": "Meine Lebensphilosophie lautet: Die kleinen Dinge ertragen und die großen meiden. Tu etwas *nur*, wenn das Vermeiden unmöglich ist. Dann machst du ihnen die Hölle heiß und sorgst dafür, dass sie liegen bleiben."
+      },
+      {
+        "title": "Geplauder 4",
+        "text": "Ob mir das Auge Probleme macht? Ja … das kann manchmal nervig sein. Zum Beispiel standest du gerade in meinem toten Winkel, als du mich begrüßt hast. Haha. Schon okay. Daran bin ich schon gewöhnt. Perfektes Sehen ist nicht so wichtig. Vielleicht ist es sogar besser, bestimmte Dinge im Dunkeln zu lassen und sie dadurch … geheimnisvoll zu machen."
+      },
+      {
+        "title": "Geplauder 5",
+        "text": "Die gestrige Tarot-Show hat mir heute Riesenglück vorausgesagt. Und weißt du was? Ich bin gleich nach dem Verlassen meiner Wohnung in die stinkende Kanalisation gefallen. Ich dachte nur: „Mann …! Die ungenaueste Tarot-Show aller Zeiten!“ Aber dann habe ich etwas Glänzendes im Dreck entdeckt – einen Diamantring. Also, hey, vielleicht hatte ich ja doch Glück. Ich hatte aber Mitleid mit demjenigen, der ihn verloren hat, und habe mein Superglück genutzt, um den armen Kerl zu finden und ihm den Ring zurückzugeben. Was ich sagen will: Boss – wenn wir unser Glück nutzen, um das Richtige zu tun, werden wir vielleicht noch mehr Glück haben. Stimmst du mir zu?"
+      },
+      {
+        "title": "Thema: Banden",
+        "text": "Ich habe in den chaotischen Grenzgebieten gelebt. Dort wachsen Kinder entweder in einer miesen Familie oder ganz ohne auf. Ich weiß nicht, was schlimmer ist. Ich? Ich hatte keine Familie, keine Ausbildung und kein Dach über dem Kopf. Also ja, ich bin auf der Straße aufgewachsen. Ich habe mich mit anderen Kindern geprügelt, nur um zu überleben. Wir haben uns abgrundtief gehasst, aber die ganzen Bedrohungen zwingen uns zu seltsamen Entscheidungen. Irgendwie haben wir uns zusammenrauft und unsere eigene Familie gegründet. Lustigerweise haben wir in diesem gesetzlosen Gebiet sogar unsere eigenen Regeln aufgestellt."
+      },
+      {
+        "title": "Thema: Vermieter",
+        "text": "Der alte Vermieter hat mir schon wieder geschrieben. Er wollte keine Miete, ist aber neugierig auf meine aktuelle Situation. Er hat mich sogar einen faulen Taugenichts genannt, der nicht für sich selbst sorgen kann. Mann, kaum zu glauben, dass er in jungen Jahren so wichtig war … Waaarte mal … Warum kümmert er sich so sehr um mich? Sucht er etwa einen Sohn? Mann, ich finanziere doch schon seine Rente mit der Miete – im Mietvertrag steht doch nichts von Altenpflege. Er hat ständig über seine Knie gejammert … Vielleicht sollte ich ihm einen Massageroboter schenken. Im Ernst, dieser alte Mann sollte auf sich selbst aufpassen, anstatt mich mit diesem Unsinn zu nerven. Und wenn er sich so viele Sorgen macht, könnte er einfach vorbeikommen, anstatt mir in Briefen Schuldgefühle einzureden."
+      },
+      {
+        "title": "Thema: Talos City",
+        "text": "Talos City hat für Talos-II eine besondere Bedeutung. Nach dem Demütigungskrieg unterzeichneten die Großen Drei das Gürtelabkommen und erbauten gemeinsam Talos City. Das war die erste neutrale Stadt der Terraner. So steht es in den Geschichtsbüchern. Eine prachtvolle Stadt, die nach einem Jahrhundert Bauzeit noch immer unvollendet ist. Vielleicht kann ich sie besser beschreiben: „Ein runzliger, ergrauter Mann, der seine Lanze hob und auf die Sonne hinter den Hügeln zeigte.“ Deutlich kultivierter, oder? Nun ja – ich habe keine Zeit mit der Lektüre von Bärenromanen verschwendet."
+      },
+      {
+        "title": "Thema: Seltsamer Flössler (Fische)",
+        "text": "Du bist neugierig auf den seltsamen Flössler, den ich gefangen habe? Das ist eine lange Geschichte. Ich bin mit Kämpfen aufgewachsen, nicht mit Lesen. Als junger Punk konnte ich nicht einmal „Originium-Techniken“ richtig aussprechen. Als ich gerade mein Auge verloren hatte und völlig benommen und verwirrt war, spürte ich etwas in meinem toten Winkel herumschwimmen. Beim Angeln wurde es richtig nervig, also warf ich den Köder mit voller Wucht aus und – „BUMM!“ Du weißt, was dann passierte. Der Alte meinte, ich hätte ein Talent für die Techniken. Ich weiß nicht, ob das ein Fluch ist."
+      },
+      {
+        "title": "Ressource/Sammelobjekt entdeckt 1",
+        "text": "Das sollte ich mir wohl ansehen. Vielleicht hat das einen Wert."
+      },
+      {
+        "title": "Ressource/Sammelobjekt entdeckt 2",
+        "text": "Sieht wertvoll aus. Wir könnten reich werden."
+      },
+      {
+        "title": "Unerforschter Bereich entdeckt",
+        "text": "Vorsicht. In der Nähe ist etwas Seltsames."
+      },
+      {
+        "title": "Starker Gegner entdeckt",
+        "text": "Aufgepasst! Der da kann uns richtig fertigmachen."
+      },
+      {
+        "title": "Abbau 1",
+        "text": "Können wir das vielleicht verkaufen?"
+      },
+      {
+        "title": "Abbau 2",
+        "text": "Das glänzt. Davon brauchen wir mehr."
+      },
+      {
+        "title": "Kiste öffnen",
+        "text": "Glück gehabt. Es hat sich herausgestellt, dass die Tarot-Show recht hatte."
+      },
+      {
+        "title": "Aurylen erhalten",
+        "text": "Sieht irgendwie … magisch aus. Kann ich mir das noch mal ansehen?"
+      },
+      {
+        "title": "Eliminierung der Verderbnis",
+        "text": "So. Alles wieder sauber."
+      },
+      {
+        "title": "Ausruhen",
+        "text": "Ich habe ein tolles Nickerchen gemacht. Zeit für Action."
+      },
+      {
+        "title": "Taktische Nutzung 1",
+        "text": "Deine Medizin! Fang."
+      },
+      {
+        "title": "Taktische Nutzung 2",
+        "text": "Puh. Ich dachte schon, ich bin erledigt."
+      },
+      {
+        "title": "Gefahrenwarnung",
+        "text": "Hey! Aus dem Weg!"
+      },
+      {
+        "title": "Verletzt",
+        "text": "So einfach gehe ich nicht unter."
+      },
+      {
+        "title": "0 LP",
+        "text": "Ich mache alles … was nötig ist …"
+      },
+      {
+        "title": "Teammotivation 1",
+        "text": "Ein guter Tag, oder?"
+      },
+      {
+        "title": "Teammotivation 2",
+        "text": "Durch ein gutes Team wird alles einfach."
+      },
+      {
+        "title": "Motivationsreaktion 1",
+        "text": "Das ist nur mein Job."
+      },
+      {
+        "title": "Motivationsreaktion 2",
+        "text": "Das Team macht’s möglich."
+      },
+      {
+        "title": "Kampf beginnt 1",
+        "text": "Jetzt muss ich aufpassen."
+      },
+      {
+        "title": "Kampf beginnt 2",
+        "text": "Leg los. Ich gebe dir Deckung."
+      },
+      {
+        "title": "Kampfsieg 1",
+        "text": "Das war ziemlich intensiv, aber wir haben’s geschafft."
+      },
+      {
+        "title": "Kampfsieg 2",
+        "text": "Ich bin nicht mal müde."
+      },
+      {
+        "title": "Kampfsieg 3",
+        "text": "Nicht übel. Alle haben etwas beigetragen."
+      },
+      {
+        "title": "Kampfsieg 4",
+        "text": "Das war knapp! Aber dennoch: Ein Sieg ist ein Sieg."
+      },
+      {
+        "title": "Niederlage im Kampf",
+        "text": "Eine Niederlage ist nicht schlimm. Nächstes Mal müssen wir vorsichtiger sein. Wir schaffen das, okay?"
+      },
+      {
+        "title": "Abschlussangriff 1",
+        "text": "Nimm das!"
+      },
+      {
+        "title": "Abschlussangriff 2",
+        "text": "Das war’s!"
+      },
+      {
+        "title": "Kampffertigkeit 1",
+        "text": "DANN KOMM DOCH!"
+      },
+      {
+        "title": "Kampffertigkeit 2",
+        "text": "REG DICH AB!"
+      },
+      {
+        "title": "Kampffertigkeit 3",
+        "text": "Bleib mal COOL!"
+      },
+      {
+        "title": "Kombofertigkeit bereit 1",
+        "text": "Zeit für Rache, was?"
+      },
+      {
+        "title": "Kombofertigkeit bereit 2",
+        "text": "Diese Rüpel mach ich fertig."
+      },
+      {
+        "title": "Kombo wirken 1",
+        "text": "Das TUT WEH!"
+      },
+      {
+        "title": "Kombo wirken 2",
+        "text": "Aus dem WEG!"
+      },
+      {
+        "title": "Wuchtschlag 1",
+        "text": "Pass auf meinen FLÖSSLER auf!"
+      },
+      {
+        "title": "Wuchtschlag 2",
+        "text": "Ich habe doch gerade erst angefüttert!"
+      },
+      {
+        "title": "Ultimative Fertigkeit 1",
+        "text": "Hab ich dich!"
+      },
+      {
+        "title": "Ultimative Fertigkeit 2",
+        "text": "Jetzt bist du der Köder!"
+      },
+      {
+        "title": "Ultimative Fertigkeit 3",
+        "text": "Viel Spaß mit deinem Snack!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

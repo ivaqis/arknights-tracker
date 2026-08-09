@@ -184,7 +184,337 @@
         "name": "Caridad",
         "description": "Caridad: Todos los sabores de la vida\nUna vez que se ve, no puede ignorarse. Una vez que se experimenta, deja su marca. Lo más importante en el viaje de la vida es saber cómo dar y compartir cada uno de sus sabores."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Preparación para la operación 1",
+        "text": "Ahora, tú estás al mando."
+      },
+      {
+        "title": "Preparación para la operación 2",
+        "text": "Defenderé el honor de los Yinglungs."
+      },
+      {
+        "title": "Añadir al equipo 1",
+        "text": "Confío en ti."
+      },
+      {
+        "title": "Añadir al equipo 2",
+        "text": "Dame tus órdenes."
+      },
+      {
+        "title": "Cambiar de arma",
+        "text": "El arma más poderosa es el corazón que la empuña."
+      },
+      {
+        "title": "Cambiar de equipamiento",
+        "text": "Endfield sí que sabe ofrecer calidad."
+      },
+      {
+        "title": "Activación de la Matriz de habilidades",
+        "text": "Mejora hasta alcanzar la perfección absoluta y podrás salir airoso con serenidad, sea cual sea la situación."
+      },
+      {
+        "title": "Viendo los registros de combate",
+        "text": "Registros de combate... Antes pasaba noches enteras revisando informes posteriores a la acción."
+      },
+      {
+        "title": "Ascenso de operador 1",
+        "text": "Gracias por el honor... No suelo vivir situaciones así como líder de tareas, así que es... algo nuevo."
+      },
+      {
+        "title": "Ascenso de operador 2",
+        "text": "¿Esto significa una colaboración más estrecha entre Endfield y la A.C.H.? A lo mejor la próxima vez puedo darte un recorrido por el CG de Yinglung en Hongshan."
+      },
+      {
+        "title": "Ascenso de operador 3",
+        "text": "Agradezco los reconocimientos, pero preferiría mantenerme trabajando en más misiones. Cualquier misión servirá. La inactividad no va conmigo... Quiero serte de más ayuda."
+      },
+      {
+        "title": "Ascenso de operador 4",
+        "text": "¿Mmm? Ah... Mi mente volvió al momento en que me nombraron líder de tareas en el Paso de Yinglung. Después de que terminaron los asuntos de Wuling... la furia obstinada que antes me impulsaba se había apaciguado. Si hubiera sabido que un día me condecorarías en persona... bueno, olvídalo."
+      },
+      {
+        "title": "Operadora reportándose al deber",
+        "text": "Líder de tareas del EFEY, Arcane, reportándose ante Endfield... A la espera de sus órdenes, Comandante."
+      },
+      {
+        "title": "En espera 1",
+        "text": "Ten una voluntad de Ferrio y muévete como el filo de una navaja. Yinglung vence por impulso."
+      },
+      {
+        "title": "En espera 2",
+        "text": "Considérame una espada bajo tus órdenes. Dime dónde me necesitas y allí actuaré."
+      },
+      {
+        "title": "Asignando a una instalación",
+        "text": "Los Yinglungs nunca somos quisquillosos con nuestras misiones. Mi deber es llevarlas hasta el final."
+      },
+      {
+        "title": "Saludo 1",
+        "text": "¿Al fin tienes un momento, Endmin?"
+      },
+      {
+        "title": "Saludo 2",
+        "text": "Te vi desde lejos. ¿Hay inteligencia nueva?"
+      },
+      {
+        "title": "Charla casual en la Dijiang 1",
+        "text": "En algún momento pensé que no le agradaba mucho a la Emisaria. Pero después de que volvimos de la Zona de exclusión norte de Wuling, empezó a tratarme con calidez. Creo que entiendo por qué... Probablemente pensaba que mi antiguo yo era una persona aburrida y rígida. Si tengo la oportunidad de conocer a la Señorita Si a bordo de la Dijiang... Me gustaría darle las gracias en persona."
+      },
+      {
+        "title": "Charla casual en la Dijiang 2",
+        "text": "Tierras desoladas de arena, campos nevados del extremo norte... Mientras estoy de pie sobre las cubiertas de la Dijiang, las regiones que necesitan ayuda me resultan más claras que nunca. Mi viaje no termina con la Grieta gigantesca... Recuperaré cada centímetro de tierra arruinado por otras Grietas."
+      },
+      {
+        "title": "Charla casual en la Dijiang 3",
+        "text": "He visto ya suficientes montañas y ríos de Wuling, y ya he comido más de lo que podía soportar. Todo es nuevo para mí y me enfrento a retos que nunca imaginé. Me sacaste de esa ciudad enterrada... y eso me pareció como un renacer."
+      },
+      {
+        "title": "Charla casual en la Dijiang 4",
+        "text": "Siempre he tenido pesadillas. Pero al cerrar los ojos durante mi primera noche a bordo de la Dijiang, los gritos angustiados y las instrucciones severas desaparecieron. En cambio, soñé con mi yo vacía y una voz que me decía que yo soy portadora de la esperanza de... Ejem. Perdón por soltarte todo esto."
+      },
+      {
+        "title": "Charla casual en la Dijiang 5",
+        "text": "Desde estas cubiertas, las auroras sobre Talos-II se ven exactamente igual que las de la Zona de exclusión norte de Wuling. Escenas de esplendor que ocultan heridas empapadas de sangre... No permitiré que ninguna Grieta vuelva a dañar esta tierra."
+      },
+      {
+        "title": "Charla casual en la Dijiang 6",
+        "text": "Los operadores de Endfield vienen de todos los rincones del mundo. Muchos son soldados poderosos, pero los más valiosos son los comunes y corrientes que se dedican al bienestar de los demás. Como dice el dicho, desde la cima se ve más lejos que intentar alzarse de puntas en el suelo... Estar aquí de verdad alimenta mi determinación, Endmin."
+      },
+      {
+        "title": "Ofrecer obsequios",
+        "text": "Son solo algunas cosas locales. No me esforcé en prepararlas. Es solo que... mmm, conseguí demasiadas."
+      },
+      {
+        "title": "Aceptando obsequios",
+        "text": "Gracias. Prepararé algo a cambio. Pero... no soy muy buena eligiendo regalos... así que no te hagas muchas expectativas."
+      },
+      {
+        "title": "Diálogo de confianza 1",
+        "text": "Las cosas están bien aquí, pero sería... agradable tener algunos compañeritos inteligentes. Blitzcrash me acompañó durante la peor parte del entrenamiento. Pasó de ser una diminuta bestia aulladora a una compañera confiable... No estuvimos juntas mucho tiempo, pero a veces sigo extrañándola... Los cola plana de Wuling también son una alegría... ¿Se permiten mascotas en la Dijiang? Las entrenaría según estándares militares."
+      },
+      {
+        "title": "Diálogo de confianza 2",
+        "text": "Summit y Phrase tienen sus propias fortalezas. Summit destaca en el mando, mientras que Phrase tiene talento para el combate. Se complementan bien el uno al otro. Alguno de ellos podría asumir el cargo de líder de tareas algún día... ¿Por qué estoy hablando de esto de repente? Mmm... Ver a Chen así me hizo preguntarme si también hay un camino más amplio para mí... Es... solo una idea."
+      },
+      {
+        "title": "Diálogo de confianza 3",
+        "text": "¿Mmm? Qué gran coincidencia, Endmin... Normalmente paso mi tiempo libre a solas. Los lugares tranquilos me dejan pensar en la gente de mi ciudad natal, los muñecos de entrenamiento del Salón tanjian, los pasteles de arroz espolvoreados con azúcar... Pero estos recuerdos son demasiado hermosos. Te vuelven lenta, te hacen bajar la guardia y te atrapan dentro de ellos... No quiero que otros me vean así. En cuanto a ti... Ahora que lo pienso, eres la razón por la que me he ablandado. Bueno, ya que estamos aquí, disfrutemos en secreto de nuestro descanso."
+      },
+      {
+        "title": "Diálogo de confianza 4",
+        "text": "Mi madre solía trenzarme el cabello con todo tipo de listones. Nunca me gustó. Siempre volvía a casa cubierta de tierra y con el cabello hecho un desastre. Mi padre me enseñaba conjuntos Tianshi con ramitas. Aunque yo no entendía nada, a menudo jugábamos hasta entrada la noche o contábamos flores de peral bajo la luz de la luna hasta que mi madre nos encontraba... Es extraño. Apenas recuerdo mi infancia, pero momentos diminutos como estos son tan vívidos."
+      },
+      {
+        "title": "Diálogo de confianza 5",
+        "text": "¿Puedes... amarrarme el cabello? Ya sabes qué listón usar. Quiero terminar este libro. En el Paso de Yinglung, los libros eran una de las pocas formas de pasar el tiempo... ¿Cuándo fue la última vez que le pedí a alguien que me amarrara el cabello...? Mmm... No lo recuerdo. Pensé en cortarlo, pero simplemente no pude hacerlo. Mmm... Gracias. Está muy bien hecho... ¿Has estado observando cómo me amarro el cabello? ¿Mmm? ¿Qué es esa expresión en tu rostro?"
+      },
+      {
+        "title": "Charla 1",
+        "text": "En realidad no conozco las... tendencias que emocionan a la gente. Simplemente no tengo tiempo para pensar en ellas. Pero... Tianshi Zhuang dijo que debería enfocarme más en mí misma, como encontrar un pasatiempo o algo así. Así que, sobre los pasatiempos... entrenar definitivamente no cuenta. Quizá podría pedirle al tío Pan que me enseñe alguna habilidad. Pero no puedo ser como Chen y estar positiva todo el día. Ella es única. Desarrollar un pasatiempo parece un nuevo desafío."
+      },
+      {
+        "title": "Charla 2",
+        "text": "Aunque no estoy en el Equipo de Fuerzas, sigo entrenando según los estándares Yinglung. Esto me permite apoyar en misiones de emergencia si llegan a surgir. Sigo en contacto regular con los Yinglungs, y confío en que cumplirán la misión, incluso en mi ausencia."
+      },
+      {
+        "title": "Charla 3",
+        "text": "Chen quería volver a entrenar conmigo... Antes ganaba la mayoría de los combates, pero ella mejoró rápido; tan rápido que una vez frustró a los demás Yinglungs. Por desgracia, yo fui todavía más rápida. Pero... después de convertirme en líder de tareas, dediqué más tiempo a otras cosas que a mi entrenamiento personal. Así que ahora ya no estoy tan segura. Quizá necesitemos una pelea real para ver quién es más fuerte... Je. La verdad, estoy esperando con ansias."
+      },
+      {
+        "title": "Charla 4",
+        "text": "Tianshi Zhuang me envió una copia del plan de reconstrucción de la Zona... Ella sabe cuánto significa para mí. Pero sigo teniendo mis deberes como líder de tareas, ya sea en Wuling o en Endfield... Ya me basta con haber podido sellar la Grieta y recuperar nuestro hogar como Wulinguense. Con la Fábrica del CAI, estoy segura de que los Tianshi restaurarán las calles hasta dejarlas como eran antes. Si tengo la oportunidad... Volveré y lo veré por mí misma."
+      },
+      {
+        "title": "Charla 5",
+        "text": "Hay un pequeño problema, Endmin. Algunos ancianos y ancianas cuidaron de mí en Wuling. Como soldado que podía morir en cualquier momento, pensé que no era correcto formar vínculos ni entristecer a la gente, así que mantuve mi distancia. Pero ahora pienso en lo que hice y me siento un poco culpable... Entonces, ¿cómo se compensa algo así? ¿Preguntarle a Chen? No puedo obligarme a preguntarle. Endmin, ¿quizás tengas tiempo para esto?"
+      },
+      {
+        "title": "Tema: Chen Qianyu",
+        "text": "Pensaba en Chen de vez en cuando después de que se fue. Desde entonces, nunca he conocido a nadie que predicara con el ejemplo tan a la perfección como ella. No tiene madera de Yinglung, pero... la gente confiará más en ella. Mientras algunos deben sobrevivir en la oscuridad, otros deben permanecer en la luz. No me arrepiento de ninguna decisión que tomé en el pasado. Mis elecciones serían las mismas, incluso si volviera a empezar."
+      },
+      {
+        "title": "Tema: Listón para el cabello",
+        "text": "No, nunca he probado otros estilos... Otros intentaron recomendarme algunos. Aprecio la oferta, pero sigo prefiriendo el que tengo. Tú sabes lo que significa para mí. Pero... quizá sea hora de probar uno nuevo... Endmin, ¿qué color crees que representaría mejor todo lo que hemos vivido en conjunto?"
+      },
+      {
+        "title": "Tema: Sombras contaminadas",
+        "text": "Cuando el Éter consume la vida, registra un eco ensordecedor de desesperación y terror... pero si la esperanza pudiera sobrevivir junto con la bondad mutua y el sacrificio desinteresado... entonces ningún supuesto “Creador” podría derrotarnos. Este es el significado de nuestra existencia, y eso... me conmueve profundamente."
+      },
+      {
+        "title": "Tema: Alleikhreos",
+        "text": "Un enemigo verdaderamente increíble, uno que ha traído aún más misterios. Sus palabras no harán que dude de ti ni de Endfield, pero no se puede negar que esta entidad supone una grave amenaza para la Franja de la Civilización. Si nuestros enemigos desconocidos de la Guerra de Aggeloi volvieran... prométeme que me convertirás en la primera espada para su destrucción."
+      },
+      {
+        "title": "Tema: Zona de exclusión norte de Wuling",
+        "text": "El tiempo no ha obstaculizado el anhelo de los Wulinguenses por volver a casa. Esos sentimientos se acumulan lentamente con el tiempo y los empujan cada vez más cerca de los hogares que se vieron obligados a abandonar... La Zona de Exclusión ya no está prohibida, pero ha cambiado por completo y muchas cosas no pueden deshacerse. Aun así... debemos vivir por el mañana. ¿No es eso lo que me enseñaste?"
+      },
+      {
+        "title": "Tema: Si",
+        "text": "La Señorita Si es realmente extraordinaria, y lo digo en sentido literal. Hace mucho tiempo, compartió su fuerza con Hongshan y ayudó a fundar el Equipo de Fuerzas Especiales de Yinglung. Sin embargo, no ocupa ningún cargo formal de mando entre los Yinglungs... ni tiene un título de la A.C.H. Lady Si simplemente guía a los Yinglungs como una “compañera” más. Muchos de nosotros nunca la vimos en persona, incluso después de ser dados de baja. Pero se involucró mucho en esta operación..."
+      },
+      {
+        "title": "Recurso/Coleccionable detectado 1",
+        "text": "Hay suministros inesperados por allá. Hay que revisarlos primero por seguridad."
+      },
+      {
+        "title": "Recurso/Coleccionable detectado 2",
+        "text": "Suministros estratégicos detectados en la ubicación objetivo. Esperando órdenes."
+      },
+      {
+        "title": "Zona inexplorada detectada",
+        "text": "Zona de combate desconocida al frente."
+      },
+      {
+        "title": "Enemigo poderoso descubierto",
+        "text": "Hostil de alta amenaza detectado. Manteniendo contacto visual. Solicito permiso para atacar."
+      },
+      {
+        "title": "Minería 1",
+        "text": "La recuperación de minerales es nuestra máxima prioridad por ahora."
+      },
+      {
+        "title": "Minería 2",
+        "text": "Todo forma parte de mantener abastecidas nuestras operaciones."
+      },
+      {
+        "title": "Abriendo una caja",
+        "text": "Suministros de alta calidad asegurados."
+      },
+      {
+        "title": "Adquiriendo Aurileno",
+        "text": "Aurileno... Adquiere la entidad. La aseguraremos en un dispositivo especial más tarde."
+      },
+      {
+        "title": "Eliminar la Plaga",
+        "text": "Plaga eliminada. El camino está despejado."
+      },
+      {
+        "title": "Descanso",
+        "text": "Descanso oportuno concluido. En marcha."
+      },
+      {
+        "title": "Uso de item táctico 1",
+        "text": "¡Usando items tácticos!"
+      },
+      {
+        "title": "Uso de item táctico 2",
+        "text": "Un tratamiento oportuno."
+      },
+      {
+        "title": "Alertando a tu compañero",
+        "text": "¡Cuidado! ¡Ahí vienen!"
+      },
+      {
+        "title": "Herido",
+        "text": "Todavía no... Aún puedo luchar."
+      },
+      {
+        "title": "0 PV",
+        "text": "No puedo... caer aquí..."
+      },
+      {
+        "title": "Ánimo al equipo 1",
+        "text": "Estelar."
+      },
+      {
+        "title": "Ánimo al equipo 2",
+        "text": "Excepcional. Sigue así."
+      },
+      {
+        "title": "Respuesta al ánimo 1",
+        "text": "Es solo el desempeño estándar de Yinglung."
+      },
+      {
+        "title": "Respuesta al ánimo 2",
+        "text": "La crisis que enfrentamos exige lo mejor de nosotros."
+      },
+      {
+        "title": "Comienza el combate 1",
+        "text": "Objetivo confirmado. Aseguren el AO."
+      },
+      {
+        "title": "Comienza el combate 2",
+        "text": "Posición alcanzada. Mantengan las comunicaciones."
+      },
+      {
+        "title": "Victoria en combate 1",
+        "text": "El equipo está a la altura de los Yinglungs. Impresionante."
+      },
+      {
+        "title": "Victoria en combate 2",
+        "text": "Hemos logrado más avances."
+      },
+      {
+        "title": "Victoria en combate 3",
+        "text": "Asegurémonos de que esta excelencia se mantenga."
+      },
+      {
+        "title": "Victoria en combate 4",
+        "text": "Las pérdidas siguen dentro de nuestras estimaciones. Bien hecho, equipo."
+      },
+      {
+        "title": "Derrota en combate",
+        "text": "Un contratiempo menor, eso es todo. La victoria y la derrota forman parte de la misión."
+      },
+      {
+        "title": "Golpe final 1",
+        "text": "¡Romper!"
+      },
+      {
+        "title": "Golpe final 2",
+        "text": "¡Una brecha!"
+      },
+      {
+        "title": "Habilidad de batalla 1",
+        "text": "¡Rompan la línea!"
+      },
+      {
+        "title": "Habilidad de batalla 2",
+        "text": "¡Área sellada!"
+      },
+      {
+        "title": "Habilidad de batalla 3",
+        "text": "Desplegar formación."
+      },
+      {
+        "title": "Habilidad de combo preparada 1",
+        "text": "Formación en posición."
+      },
+      {
+        "title": "Habilidad de combo preparada 2",
+        "text": "¡Yo te cubro!"
+      },
+      {
+        "title": "Lanzando combo 1",
+        "text": "¡Ataquen y contengan!"
+      },
+      {
+        "title": "Lanzando combo 2",
+        "text": "Hasta aquí llegaste."
+      },
+      {
+        "title": "Remate 1",
+        "text": "¡Toma otro!"
+      },
+      {
+        "title": "Remate 2",
+        "text": "¡Punto débil localizado!"
+      },
+      {
+        "title": "Habilidad máxima 1",
+        "text": "¡Aquí tengo dominio sobre el flujo y el reflujo!"
+      },
+      {
+        "title": "Habilidad máxima 2",
+        "text": "¡Por una tierra viva bañada por el sol!"
+      },
+      {
+        "title": "Habilidad máxima 3",
+        "text": "¡El caos será sofocado!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

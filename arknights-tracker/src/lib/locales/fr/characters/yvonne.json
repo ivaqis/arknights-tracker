@@ -132,7 +132,333 @@
         "name": "Technologie",
         "description": "Technologie : déchiffrage du plan æthérique\nElle est à l'avant-garde de la technologie du plan æthérique de Talos-II. Chaque pas qu'elle fait est une nouvelle aventure."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Préparation de l'opération 1",
+        "text": "Alors, on s'amuse où aujourd'hui, Endmin ?"
+      },
+      {
+        "title": "Préparation de l'opération 2",
+        "text": "Synchronisation des données terminée. Je suis prête à partir quand tu veux !"
+      },
+      {
+        "title": "Intégration à l'équipe 1",
+        "text": "Tu as enfin décidé de faire appel à moi ? Hé hé. Je parie que tu te trouves dans une situation délicate."
+      },
+      {
+        "title": "Intégration à l'équipe 2",
+        "text": "Je suis là. Si tu as des problèmes avec ton équipement, laisse-le-moi."
+      },
+      {
+        "title": "Changement d'arme",
+        "text": "Cette paire de canons portatifs est correcte. Hmm... Il y a quelques défauts de conception, mais je vais les améliorer à la sauce Yvonne !"
+      },
+      {
+        "title": "Changement d'équipement",
+        "text": "Est-ce que je peux changer le revêtement de mon équipement ? Cette association de couleurs ne va pas trop avec mes cheveux."
+      },
+      {
+        "title": "Activation de la matrice de capacités",
+        "text": "Pfff... Trop fastoche ! Donne-moi un défi à mon niveau !"
+      },
+      {
+        "title": "Visionnage d'archives de combat",
+        "text": "J'ai tout regardé en accéléré. Et j'ai vite constaté que ça ne change absolument rien."
+      },
+      {
+        "title": "Promotion d'opérateur 1",
+        "text": "J'ai une promotion ? Youhou, tu as un don pour repérer les talents, Endmin !"
+      },
+      {
+        "title": "Promotion d'opérateur 2",
+        "text": "Est-ce que cette promotion implique... un plus gros labo ?"
+      },
+      {
+        "title": "Promotion d'opérateur 3",
+        "text": "Participer à un véritable combat, ce n'est pas pareil que de l'étudier en vidéo... J'ai énormément progressé en survivant à toutes ces expéditions dans les Confins. Non ?"
+      },
+      {
+        "title": "Promotion d'opérateur 4",
+        "text": "Un assistant ? NAN ! Pas besoin ! Ma Clochette sait tout faire ! Classer les données et nettoyer le labo font partie de ses fonctionnalités de base ! En plus, elle ne se plaint jamais de mon emploi du temps."
+      },
+      {
+        "title": "Opératrice au rapport",
+        "text": "Salut, Endmin. Comme on se revoit ! Appelle-moi Yvonne. Ça faisait longtemps que je n'étais pas sortie. Je suis contente de collaborer avec toi !"
+      },
+      {
+        "title": "En attente 1",
+        "text": "Tiens-toi bien, Givr-O-max ! On va se balader avec l'Endmin !"
+      },
+      {
+        "title": "En attente 2",
+        "text": "Par ici, Endmin ! Oh, j'ai pas mal de choses à emporter..."
+      },
+      {
+        "title": "Affectation à une installation",
+        "text": "OK, OK. C'est carrément dans mes cordes... T'inquiète pas, détends-toi !"
+      },
+      {
+        "title": "Salutation 1",
+        "text": "Endmin ! Je réserve la salle de test d'équipement en premier. Merci beaucoup !"
+      },
+      {
+        "title": "Salutation 2",
+        "text": "Le dernier numéro de MARTHE mensuel vient d'arriver. Tu veux le lire avec moi ?"
+      },
+      {
+        "title": "Bavardage sur le Dijiang 1",
+        "text": "Ouah... Chaque fois que j'analyse le Groupe industriel automatisé, je le trouve absolument parfait ! La production pilotée par NAP n'est plus du tout une tâche froide et répétitive, c'est un système animé et dynamique de boucles de processus interdépendants ! C'est vraiment ingénieux ! Endmin, je dois absolument l'essayer. Alleeez, s'il te plaît ?"
+      },
+      {
+        "title": "Bavardage sur le Dijiang 2",
+        "text": "Je vais être honnête avec toi, Endmin. Je t'aime bien comme tu es, mais tu ne crois pas que c'est le moment de renouveler ta garde-robe ? Allez, on va te choisir un truc plus flashy ! Tu vas faire sensation avec ton nouveau look. Je te le garantis !"
+      },
+      {
+        "title": "Bavardage sur le Dijiang 3",
+        "text": "Perlica refuse que j'emporte mes bombes cui-cui avec moi, car elle dit qu'elles compromettent la sécurité. Mais je ne peux pas m'en passer ! Rhaa... Finalement, j'ai fait un compromis en retirant les modules de démolition avant d'embarquer à bord."
+      },
+      {
+        "title": "Bavardage sur le Dijiang 4",
+        "text": "J'ai l'intention de faire une escapade à La Fantoma. Ça me manque un peu, la plage et la brise marine... Ça te dit de venir avec moi, Endmin ? On pourra aussi aller voir leurs dernières innovations technologiques sur le littoral. Il paraît qu'ils viennent de mettre au point un nouveau revêtement résistant à la Gangrène."
+      },
+      {
+        "title": "Bavardage sur le Dijiang 5",
+        "text": "Je crois qu'on n'a jamais pris de photo ensemble, Endmin ! On fait un selfie ? Je vais l'ajouter à la collection Souvenirs de l'année d'Yvonne. Et si la photo ne rend pas bien, je mettrai ça sur le compte de l'éclairage pourri du Dijiang, pas sur mes talents !"
+      },
+      {
+        "title": "Bavardage sur le Dijiang 6",
+        "text": "On dirait qu'on a les mêmes goûts musicaux, Endmin ! Passe donc me voir au labo quand tu veux pour écouter mon dernier vinyle. Après tout, la musique s'apprécie encore mieux en bonne compagnie !"
+      },
+      {
+        "title": "Cadeaux offerts",
+        "text": "J'ai quelque chose pour toi. Ouvre-le quand tu seras chez toi. Hé hé. Tu verras, ça va te plaire. J'ai demandé à une tonne de « professionnels » de s'en assurer !"
+      },
+      {
+        "title": "Cadeaux acceptés",
+        "text": "Ooooh, merci ! Ne t'inquiète pas, même si c'est un poil bizarre, je le garderai précieusement pour toujours... parce que ça vient de toi !"
+      },
+      {
+        "title": "Dialogue à cœur ouvert 1",
+        "text": "Je n'ai jamais cherché à optimiser les performances des machines. Loin de là ! Mon objectif, c'est d'offrir aux utilisateurs une expérience sereine et sans effort mental. Si en plus, ça les faire sourire, c'est encore mieux. Après tout, les outils devraient nous faciliter la vie, pas la compliquer."
+      },
+      {
+        "title": "Dialogue à cœur ouvert 2",
+        "text": "Endmin, tu veux bien me prêter tes Arts de l'originium ? En contrôlant parfaitement les circuits d'originium, je pourrais avoir une tonne d'options de conception. J'ai toujours voulu ajouter un module chauffant à mon Givr-O-max, par exemple... Oh, ça doit être superbe ! Attends, mais s'il a un module chauffant, il ne sera plus glacial..."
+      },
+      {
+        "title": "Dialogue à cœur ouvert 3",
+        "text": "J'avais trois ans quand j'ai lu ton histoire pour la première fois dans un livre de vulgarisation scientifique. L'auteur disait que tu étais une légende avec une tonne de responsabilités. Mais en vrai, je te trouve étonnamment... adorable, je dirais ? Hi hi. Oh, il vaut mieux que tu ne saches pas comment ils t'ont dépeint dans les copies pirates. Moins tu en sais, mieux c'est..."
+      },
+      {
+        "title": "Dialogue à cœur ouvert 4",
+        "text": "Quand j'ai repris mon projet bébé robot, le prototype était immense ! Il n'entrait même pas dans le hangar à véhicules ! Le Syndicat des Travailleurs Unis de Talos-II voulait un engin industriel mobile pour neutraliser les principales zones gangrénées. Mais comment pouvions-nous aider les personnes dont les maisons sont envahies par la Gangrène ? En attendant et en priant pour que la foreuse géante se pointe ? Soyons sérieux, il fallait bien que quelqu'un fasse des recherches pour en faire une version miniature. J'ai donc passé des mois au Parc des sciences à travailler sur ce projet... Les résultats parlent d'eux-mêmes. La tournure des événements m'a confortée dans l'idée que ma décision était *incroyablement* judicieuse !"
+      },
+      {
+        "title": "Dialogue à cœur ouvert 5",
+        "text": "De la musique incroyable, des concerts géniaux, des fringues stylées, de superbes levers et couchers de soleil sur l'horizon talosien... Je sais bien que tout ce que j'aime pourrait disparaître à tout moment, c'est pour cette raison que je suis devenue une Endfielder. Je veux agir et veiller à ce que l'on préserve la beauté fragile de notre monde. Après tout, je n'ai pas encore eu l'occasion d'en profiter pleinement, alors je refuse de laisser ce monde disparaître sous mes yeux !"
+      },
+      {
+        "title": "Discussion 1",
+        "text": "Pour tout te dire, je choisirais une ville de la CCGT dans la Ceinture pour sa qualité de vie, mais pour travailler ? PAS QUESTION ! Les entreprises exigent des employés qu'ils pointent six fois par jour. Tu imagines un peu ?!"
+      },
+      {
+        "title": "Discussion 2",
+        "text": "Cette tenue vient de Goetia. J'adooooore leur style. Ils s'inspirent de plein de trucs pour créer leurs pièces, comme la texture et le grain de la carapace aggeloïde, pour te dire ! Le danger est tellement plus... *séduisant*, n'est-ce pas, Endmin ?"
+      },
+      {
+        "title": "Discussion 3",
+        "text": "Yvonne est un prénom gallien. Mon père m'a dit que nous avions hérité d'un grand patrimoine et que toute la famille en était très fière. Personnellement, je ne partage pas vraiment ce sentiment. Terra est déjà bien loin, et cet ancien empire a disparu depuis longtemps. À quoi bon accorder autant d'importance à la généalogie ou aux lignées ? Et puis, il y a ce Corsi-machin-chose Ier ?! Était-il aussi extraordinaire qu'on le dit ?"
+      },
+      {
+        "title": "Discussion 4",
+        "text": "Ah, ça ? Eh bien... Je viens tout juste de remplacer le connecteur thermique du four dans le laboratoire. Le fait qu'on puisse y chauffer des nouilles instantanées était une pure *coïncidence*. Je t'assure, c'est très technique comme boulot. Ne me regarde pas comme si j'étais paresseuse. Bon, d'accord ! Je vais t'en dire un peu plus... Mais pas un mot à Perlica, d'accord ?"
+      },
+      {
+        "title": "Discussion 5",
+        "text": "J'ai fait des stages à la CCGT, à l'ASH et au STUT, mais la division des RH d'Endfield m'a fait une offre que je ne pouvais pas refuser : un accès illimité à la base de données d'Endfield sur le plan æthérique ! Ils ont même ajouté une phrase importante : « Le niveau d'autorité pour y accéder sera équivalent à celui de l'Endministrator »."
+      },
+      {
+        "title": "Thème : le plan æthérique",
+        "text": "On ne sait presque rien sur le plan æthérique. C'est peut-être un lieu complètement plongé dans les ténèbres... ou un royaume où règne le chaos absolu. Jusqu'à présent, nous ne pouvons observer que les phénomènes de Gangrène. Ils se déclinent dans une multitude de couleurs étranges, comme si les lois conventionnelles qui régissent le spectre optique ne s'appliquaient pas à eux. Après avoir passé autant de temps à les étudier, je dois avouer que je les trouve vraiment... fascinants."
+      },
+      {
+        "title": "Thème : les villes de la CCGT",
+        "text": "Je vais dans de nombreuses villes de la CCGT chaque année. Pour me procurer mon matériel et mon équipement, je vais à Allicarotte. Et je vais au Festival du film de New Wrankwood pour me faire des marathons ciné. Si je devais dire ma ville préférée, je choisirais Kjersch sans hésiter. Ça te surprend ? J'adore la neige, le ciel dégagé et le calme qui y règne."
+      },
+      {
+        "title": "Thème : la culture populaire",
+        "text": "Mes grands-parents écoutaient de la musique terranne rétro quand ils étaient ados. En ce moment, ce qui est en vogue, c'est le néo-talosien. J'adooooore la chanson STÉRÉO ! On est nés et on a grandi sur Talos-II, c'est normal qu'on fasse de la musique talosienne authentique."
+      },
+      {
+        "title": "Thème : son enfance",
+        "text": "Quand j'étais petite, mes parents étaient très occupés et j'étais toujours seule. Ils m'ont donc offert un aviliaire comme animal domestique. Il était bruyant, il avait mauvais caractère et il mettait toujours ma chambre sens dessus dessous... mais je l'adorais quand même. Tu te doutes bien que mon inspiration pour la bombe cui-cui vient de ma petite boule de plumes. Ceci dit, mes bombes cui-cui font bien moins de bruit, mais elles ont hérité de son sale caractère."
+      },
+      {
+        "title": "Thème : la Vallée-IV",
+        "text": "À vrai dire, je n'avais pas l'intention de rester dans la Vallée-IV quand j'y ai mis les pieds pour la première fois il y a trois ans, mais le professeur Crowe m'a montré des données sur la faille d'un site d'essais æthériques et ça m'a tout de suite passionnée ! Dommage qu'on n'ait pas réussi à se mettre d'accord après. Les recherches étaient un échec total. Comme ce vieux Crowe n'arrivait pas à me convaincre, il a préféré me confier à André. Et tu sais quoi ? Mes recherches ont commencé à donner des résultats concrets grâce à l'assistance technique précieuse d'Endfield ! J'ai rédigé des articles à tour de bras pendant près de trois ans ! Ah, la Vallée-IV est vraiment mon endroit de prédilection."
+      },
+      {
+        "title": "Détection de ressource/objet à collecter 1",
+        "text": "Ohhhh ! Je dois récupérer ça pour l'étudier."
+      },
+      {
+        "title": "Détection de ressource/objet à collecter 2",
+        "text": "Psst, j'ai un secret pour toi. Ce truc là-bas est incroyable !"
+      },
+      {
+        "title": "Zone inexplorée détectée",
+        "text": "Je n'ai jamais mis les pieds ici. Allons jeter un œil de plus près."
+      },
+      {
+        "title": "Découverte d'un ennemi puissant",
+        "text": "Ma bombe cui-cui a l'air nerveuse. On a sans doute affaire à un vilain méchant."
+      },
+      {
+        "title": "Extraction 1",
+        "text": "J'aurais dû équiper mes pioupious avec un module d'extraction spécial."
+      },
+      {
+        "title": "Extraction 2",
+        "text": "Je viens en renfort ! Je suis une experte en démolition !"
+      },
+      {
+        "title": "Ouverture de caisse",
+        "text": "Ouah, quel beau bijou !"
+      },
+      {
+        "title": "Obtention d'aurylène",
+        "text": "Des paillettes si fluides et effervescentes... J'ai toujours voulu un vernis à ongles comme ça."
+      },
+      {
+        "title": "Élimination de la Gangrène",
+        "text": "Neutralisation absolue ! Alors, t'en dis quoi ?"
+      },
+      {
+        "title": "Repos",
+        "text": "Pfiou. Ça fait un bail que j'attends de faire une pause. Je dois dompter ma chevelure rebelle..."
+      },
+      {
+        "title": "Utilisation de tactique 1",
+        "text": "Pas de panique. Essaie ça."
+      },
+      {
+        "title": "Utilisation de tactique 2",
+        "text": "Ahh... Je me sens bien mieux !"
+      },
+      {
+        "title": "Avertissement de danger",
+        "text": "Échappe-toi ! Je te couvre !"
+      },
+      {
+        "title": "Blessure",
+        "text": "Aïe... ça fait mal... J'ai pris cher..."
+      },
+      {
+        "title": "0 PV",
+        "text": "Mince... Game over..."
+      },
+      {
+        "title": "Encouragement de l'équipe 1",
+        "text": "C'est spectaculaire !"
+      },
+      {
+        "title": "Encouragement de l'équipe 2",
+        "text": "Vous êtes vraiment incroyables !"
+      },
+      {
+        "title": "Réaction face aux encouragements 1",
+        "text": "Eh ouais. J'assure à fond !"
+      },
+      {
+        "title": "Réaction face aux encouragements 2",
+        "text": "Joli travail d'équipe."
+      },
+      {
+        "title": "Début du combat 1",
+        "text": "Tout l'équipement est chargé et prêt."
+      },
+      {
+        "title": "Début du combat 2",
+        "text": "Renforts prêts à intervenir !"
+      },
+      {
+        "title": "Victoire au combat 1",
+        "text": "La victoire est à nous ! On fait un selfie ?"
+      },
+      {
+        "title": "Victoire au combat 2",
+        "text": "Pour info, je suis aussi experte en combat."
+      },
+      {
+        "title": "Victoire au combat 3",
+        "text": "Qui dit victoire, dit fiesta !"
+      },
+      {
+        "title": "Victoire au combat 4",
+        "text": "C'est difficile d'anticiper l'issue d'un combat, même pour Clochette... MAIS on fera mieux la prochaine fois, c'est sûr !"
+      },
+      {
+        "title": "Défaite au combat",
+        "text": "Maudite gangrènerie ! J'augmente la capacité de Givr-O-max de 5 000 % ! On va voir s'ils arrivent à nous battre !"
+      },
+      {
+        "title": "Coup final 1",
+        "text": "Coup puissant !"
+      },
+      {
+        "title": "Coup final 2",
+        "text": "Plus qu'un coup !"
+      },
+      {
+        "title": "Compétence de combat 1",
+        "text": "Ressens ce froid !"
+      },
+      {
+        "title": "Compétence de combat 2",
+        "text": "Baisse d'un ton !"
+      },
+      {
+        "title": "Compétence de combat 3",
+        "text": "Je vais te refroidir !"
+      },
+      {
+        "title": "Compétence de combo prête 1",
+        "text": "Prête à tout faire sauter !"
+      },
+      {
+        "title": "Compétence de combo prête 2",
+        "text": "Énergie au maximum."
+      },
+      {
+        "title": "Utilisation de combo 1",
+        "text": "Allez, vas-y ! Surgélation !"
+      },
+      {
+        "title": "Utilisation de combo 2",
+        "text": "Ça va geler !"
+      },
+      {
+        "title": "Coup fatal 1",
+        "text": "ET BOUM !"
+      },
+      {
+        "title": "Coup fatal 2",
+        "text": "Coup parrrrfait !"
+      },
+      {
+        "title": "Ultime 1",
+        "text": "On va danser !"
+      },
+      {
+        "title": "Ultime 2",
+        "text": "Passion explosive !"
+      },
+      {
+        "title": "Ultime 3",
+        "text": "Des feux d'artifice pour toi !"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

@@ -127,7 +127,341 @@
         "name": "Naturaleza",
         "description": "Naturaleza: Viajero incansable\nGran parte de este mundo sigue siendo desconocida para él. Aun así, considera esos misterios como deberes futuros a los que debe intentar estar a la altura."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Preparación de la operación 1",
+        "text": "Endmin, ¿por fin tienes una asignación para mí?"
+      },
+      {
+        "title": "Preparación de la operación 2",
+        "text": "Oh, traigo las agujetas desatadas... ¡Espera, ahí viene Endmin! ¡Atención!"
+      },
+      {
+        "title": "Añadir al equipo 1",
+        "text": "¡¿Dónde está el objetivo?!... Oh, disculpa, Endmin. Solo un poco de práctica previa a la batalla."
+      },
+      {
+        "title": "Añadir al equipo 2",
+        "text": "El Tío Pan siempre dice que una vez que suenan los tambores de guerra, no hay marcha atrás."
+      },
+      {
+        "title": "Cambiar de arma",
+        "text": "No es el arma la que hace al lancero. ¡Hasta con una simple vara de madera se puede atacar con precisión!"
+      },
+      {
+        "title": "Cambiar de equipamiento",
+        "text": "¿Todo este equipamiento táctico es para mí? ¿Hablas en serio, Endmin? ¡¿Eso significa que me has reclutado oficialmente?!"
+      },
+      {
+        "title": "Activación de la matriz de habilidades",
+        "text": "Vine a Endfield para aprender. Pero... hay muchísimo que asimilar. ¡Tengo que esforzarme el doble!"
+      },
+      {
+        "title": "Viendo los registros de combate",
+        "text": "El Tío Pan siempre me dice que grabe mis entrenamientos. Y tiene razón... ¡No tenía idea de lo mal que me salían los movimientos hasta que vi la grabación!"
+      },
+      {
+        "title": "Ascenso de operador 1",
+        "text": "¿A-ascenso? Fiiuuu... ¡Pensé que me ibas a regañar por algo que hice mal!"
+      },
+      {
+        "title": "Ascenso de operador 2",
+        "text": "Siempre cuesta al principio, pero ya le agarré el ritmo. Endmin, has visto mi rendimiento reciente. ¿Crees que pueda ganar la Carrera de sillas de la oficina de este mes?"
+      },
+      {
+        "title": "Ascenso de operador 3",
+        "text": "Oye, Endmin, solo por curiosidad... ¿Cuántos rangos siguen después de este? ¡Estoy pensando en agregar una sección de “Metas mensuales” a mi diario!"
+      },
+      {
+        "title": "Ascenso de operador 4",
+        "text": "“Desempeño sobresaliente”, “gran adaptabilidad y trabajo en equipo”... Ya puedo recitar esos elogios hasta en mis sueños. En fin, Endmin, tengo todo listo para empezar. Prometo esforzarme al máximo para convertirme en tu camarada más confiable."
+      },
+      {
+        "title": "Operador reportándose para el deber",
+        "text": "¡Ey, Endministrator! Soy yo, ¡Lifeng! Aún soy algo novato, ¡pero trabajaré muy duro! Dicen que las dificultades nos moldean y nos perfeccionan, pero... ¿cómo se ve la perfección realmente? Tal vez alguien como tú tenga la respuesta. De verdad apreciaría tu opinión."
+      },
+      {
+        "title": "En espera 1",
+        "text": "¡Pan comido!"
+      },
+      {
+        "title": "En espera 2",
+        "text": "¡Déjamelo a mí!"
+      },
+      {
+        "title": "Asignando a una instalación",
+        "text": "¡Entendido, Endmin! ¡La verdad, ya me estaba preguntando por qué te habías tardado tanto en asignarme una tarea!"
+      },
+      {
+        "title": "Saludo 1",
+        "text": "¡Hola, Endmin! Parece que tienes mucho trabajo, pero me alegra verte."
+      },
+      {
+        "title": "Saludo 2",
+        "text": "¿Tienes un momento, Endmin? He elegido un nuevo movimiento. ¿Quieres echarle un vistazo?"
+      },
+      {
+        "title": "Charla casual en la Dijiang 1",
+        "text": "Eh... ¿qué debería decir en un momento como este...? Lifeng, operador oficial de Endfield Industries. Es un honor conocerte."
+      },
+      {
+        "title": "Charla casual en la Dijiang 2",
+        "text": "¿Oh, me viste hace rato y te preguntas por qué sigo aquí? Eh... No estoy esperando una misión, para nada. je, je, ¡en absoluto!"
+      },
+      {
+        "title": "Charla casual en la Dijiang 3",
+        "text": "Endmin, ¿conoces a algún otro Anasa? Mi rama familiar ha echado raíces en la ciudad desde hace mucho tiempo, pero escuché que hay otras que aún viven entre los parajes silvestres. Si llegas a cruzarte con ellos, ¡dímelo! ¡Me encantaría visitarlos!"
+      },
+      {
+        "title": "Charla casual en la Dijiang 4",
+        "text": "La verdad... me mareo fácilmente en los vehículos. Hasta los vehículos de cinco ruedas de Wuling me revuelven el estómago. Pero por alguna razón, en la Dijiang no siento nada de movimiento."
+      },
+      {
+        "title": "Charla casual en la Dijiang 5",
+        "text": "¡Puedo ver La presa de Xiranita a través del telescopio de la Dijiang! Desde aquí se ve diminuta, como si pudiera atraparla entre dos dedos... Impresionante cómo un cambio de perspectiva hace que algo enorme parezca pequeño. Mmm, tengo que reflexionar sobre eso."
+      },
+      {
+        "title": "Charla casual en la Dijiang 6",
+        "text": "Endmin, hay alguien que se encarga de las plantas en las cámaras de crecimiento, ¿cierto? Ooh... Es increíble pensar que puedan crecer aquí, tan lejos del suelo. Aunque, bueno, tampoco pensé que yo estaría aquí."
+      },
+      {
+        "title": "Ofreciendo regalos",
+        "text": "Endmin, ¿recuerdas que te prometí un regalo cuando perdí ese juego contigo? ¡Pues aquí está!"
+      },
+      {
+        "title": "Aceptando regalos",
+        "text": "¿Todos reciben esto?... ¿No? ¿Solo yo? ¡Muchísimas gracias, Endmin!"
+      },
+      {
+        "title": "Diálogo de confianza 1",
+        "text": "¿Me hablabas a mí, Endministrator? Disculpa... nunca antes he seguido el protocolo de informes estándar. ¿Ah, solo querías conversar? Entonces siéntete libre de preguntar todo lo que quieras. Con gusto te daré todos los detalles."
+      },
+      {
+        "title": "Diálogo de confianza 2",
+        "text": "Endmin, he entrenado artes marciales con el Tío Pan desde que era niño. Una vez, cuando la casa familiar se incendió, cargué a dos niños sobre mi hombro derecho, otro más sobre el izquierdo, ¡y los saqué corriendo! Por cierto, ¿viste los datos de prueba de la semana pasada? La División Médica dice que mis brazos delgaditos no son un problema; mis golpes pegan igual de fuerte que los de cualquiera. Así que si necesitas a alguien que derribe enemigos, ¡soy el indicado!"
+      },
+      {
+        "title": "Diálogo de confianza 3",
+        "text": "Cuando solicité unirme a Endfield, traje algunas cartas de recomendación. Confío en que ya las leíste todas, ¿no es así? Le rogué tanto a la Capitana Mi, Tianshi Zhuang y al Tío Pan... Preferían que me quedara más cerca de casa. Pero estoy decidido a aprender a través de la experiencia, por eso tengo que aprovechar esta oportunidad al máximo. Endmin, ¡dame algo importante! ...Oh, ¿limpieza de la sala de máquinas? ¡Entendido! ¡Haré que cada engranaje brille!"
+      },
+      {
+        "title": "Diálogo de confianza 4",
+        "text": "¡¿Una invitación directa de Endmin?! Ejem, en ese caso, daré todo de mí para ayudar al equipo operativo. Después del informe de anoche, ya tengo cinco planes de contingencia preparados. Entonces, ¿dónde firmo? ¿No hace falta firma? ¡PERFECTO! ¡Allá voy!"
+      },
+      {
+        "title": "Diálogo de confianza 5",
+        "text": "De ahora en adelante, seré tu mano derecha... Pff, seguro piensas que estoy bromeando, ¿verdad? Ja, ja, está bien. Puede que no parezca mucho ahora, pero me pondré a la altura. Algún día, seré lo bastante capaz como para enfrentar las misiones más difíciles. Espera con ansias ese día, ¿sí, Endmin?"
+      },
+      {
+        "title": "Charla 1",
+        "text": "¿Te echas un pulso conmigo? ¡Puedo hacer esto todo el día!"
+      },
+      {
+        "title": "Charla 2",
+        "text": "Endmin, conozco un truquito para enviar flores. Cuando mandes un ramo, guarda una flor. Cuando se marchite, sabrás que es momento de enviar otro. *Risa* De hecho, se me ocurrió a mí. Así me aseguro de que siempre haya flores frescas en la tumba de mis padres."
+      },
+      {
+        "title": "Charla 3",
+        "text": "Todos en Endfield parecen un poco tímidos. Por ejemplo, cuando practico boxeo de Hongshan en la mañana, veo a unos operadores curiosos mirándome desde lejos. Intentan imitar mis movimientos, copiando cómo relajo los hombros y canalizo la fuerza. Pero en cuanto me doy la vuelta, se dispersan. El grupo ha crecido últimamente. Aún no les he preguntado sus nombres..."
+      },
+      {
+        "title": "Charla 4",
+        "text": "Era solo un niño cuando perdí este brazo, y en ese momento, no sentí mucho dolor... Entré al hospital en primavera, y salí también en primavera. *Suspiro* Y me di cuenta... de que algunas cosas, una vez perdidas, no vuelven jamás."
+      },
+      {
+        "title": "Charla 5",
+        "text": "He recorrido un largo camino desde casa, Endmin. Me pregunto cómo estarán todos allá. Aún recuerdo los pequeños detalles: la Abuela Bai saliendo a su masaje de espalda, el Capitán Liu cambiándose el vendaje en la pierna cuando llovía, la Tía Li comprando salsa de soya para su cerdo estofado de los miércoles, Xiao Ran siempre olvidando sus guantes al salir a muestrear y Ah Zai pidiéndome prestado dinero al principio de cada mes para su pequeño negocio... ¡Me aseguraré de verlos la próxima vez que tenga la oportunidad!"
+      },
+      {
+        "title": "Tema: Da Pan",
+        "text": "Cuando Tianshi Zhuang está demasiado ocupada, el Tío Pan me ayuda con la prótesis. ¡En realidad es un genio de las máquinas! Sabe de todo, desde ingeniería hasta ajuste fino de equipamiento. Siempre me he preguntado por qué decidió retirarse. ¡Psst, Endmin! ¿Quieres escuchar un pequeño secreto? He visto fotos de él en sus días mozos... conduciendo un cinco-ruedas, con chaqueta de cuero, gafas oscuras ¡y una melena afro salvaje! Escuché que era imparable en la A.C.H. Dicen que podía abrirse paso desde la Franja hasta la frontera con un cuchillo Yanés. Impactante, ¿no?"
+      },
+      {
+        "title": "Tema: Zhuang Fangyi",
+        "text": "Cuando era niño, solía hacer la tarea en el laboratorio de Tianshi Zhuang. Ella ajustaba mi prótesis cuando tenía un momento libre... y luego se quedaba dormida en medio del ajuste. La mayoría de las veces, yo era quien limpiaba su espacio. Estaba demasiado ocupada para los quehaceres. Pero bueno, no me quejo... El futuro de todo Wuling recae sobre sus hombros."
+      },
+      {
+        "title": "Tema: Mi Fu",
+        "text": "A la Capitana Mi no le gusta que lo digamos, pero en realidad es una persona muy linda. Cada vez que me veía, me daba unas monedas y me pedía que le comprara un Tangyoubaba del puesto de la Tía Tian. Es un dulce hecho con bolitas de arroz glaseadas de azúcar. Cuando lo traía de vuelta, quitaba los bocados del palito y me dejaba disfrutar de todo lo pegajoso. Ella solo mordisqueaba el palito de bambú con una sonrisa de satisfacción."
+      },
+      {
+        "title": "Tema: Aggelos",
+        "text": "Los niños de Wuling crecimos peleando contra esas cosas solo para sobrevivir. Cuando se estaban construyendo los Pilares de Tianshi, incluso acercarse a aguas desconocidas era un riesgo. Los adultos nos asustaban: “Si tocas a los Aggeloi, saldrán por el drenaje o por las rendijas del piso.” Parecía una historia de fantasmas, pero así era la vida. La verdad, ni siquiera sabía que había otros tipos de Aggeloi hasta que llegué a Endfield."
+      },
+      {
+        "title": "Tema: Anasa",
+        "text": "Mamá y papá solían decir que nuestros ancestros no eran gente de ciudad. Antes de cruzar la Puerta cósmica hacia Talos-II, vagaban por las llanuras secas fuera de la Ciudad Nómada de Yan... El cielo como cobija, la tierra como cama, viviendo al ritmo de las subidas y bajadas del terreno. En ese entonces no lo entendía, pero ahora sí. Mamá y papá no solo me contaban una historia... me estaban preparando. Incluso cuando su Astitva dejó este mundo, regresarían en otra forma. Por eso... dejé de extrañarlos hace mucho."
+      },
+      {
+        "title": "Tema: Distrito de Desarrollo Científico de Wuling",
+        "text": "El Wuling que ves hoy no tiene tanto tiempo... ¡Tiene la misma edad que mi brazo protésico! Increíble, ¿no? En tan poco tiempo se ha convertido en uno de los mejores lugares de Talos-II. Aun así, por más que haya cambiado, sé en qué lugar va cada ladrillo de la ciudad. Si cierro los ojos, todavía puedo oler el aire húmedo de esas calles en un día lluvioso."
+      },
+      {
+        "title": "Tema: Hongshan",
+        "text": "Qué curioso... Nunca he estado en el Cuartel General de la A.C.H. Allí trabajaban mamá, papá, Tianshi Zhuang y el Tío Pan. Pero nunca tuve una razón para ir. Quiero decir... No conozco a nadie allá, y por lo que he escuchado, está lleno de mentes brillantes y mal genio. Supongo que siempre me dio miedo que no me tomaran en serio..."
+      },
+      {
+        "title": "Recurso/Coleccionable detectado 1",
+        "text": "Cuidado por dónde pisas, ¡puede haber cosas valiosas!"
+      },
+      {
+        "title": "Recurso/Coleccionable detectado 2",
+        "text": "He visto cosas raras. ¿Vamos a chequear?"
+      },
+      {
+        "title": "Zona inexplorada detectada",
+        "text": "¿De verdad conoces este camino? No creo que hayamos pasado por aquí antes."
+      },
+      {
+        "title": "Enemigo poderoso descubierto",
+        "text": "¡Enemigo avistado! ¡Déjamelo a mí!"
+      },
+      {
+        "title": "Minería 1",
+        "text": "¡Los he visto en los libros de texto! ¿Son valiosos?"
+      },
+      {
+        "title": "Minería 2",
+        "text": "¡No hay problema!"
+      },
+      {
+        "title": "Abriendo una caja",
+        "text": "Buen hallazgo. ¿De verdad tenemos que entregárselo a los vigilantes...?"
+      },
+      {
+        "title": "Adquiriendo Aurileno",
+        "text": "Mi mentora decía que los Aurilenos flotantes de las tierras salvajes no son realmente peligrosos. Solo no vayas tras ellos imprudentemente."
+      },
+      {
+        "title": "Eliminar la Plaga",
+        "text": "La Plaga no es nada nuevo para los niños de Wuling. No te preocupes, ¡yo me encargo de este!"
+      },
+      {
+        "title": "Descanso",
+        "text": "Siento una oleada cálida recorriendo mi cuerpo... ¡Hora de levantarme y estirarme un poco!"
+      },
+      {
+        "title": "Uso táctico 1",
+        "text": "¡Pásame mis medicinas! ¡Cúrate tú!"
+      },
+      {
+        "title": "Uso táctico 2",
+        "text": "¡Un segundo, solo necesito recuperar el aliento!"
+      },
+      {
+        "title": "Advertencia de peligro",
+        "text": "¡WARHH, esquiva el ataque!"
+      },
+      {
+        "title": "Herido",
+        "text": "Seguir adelante... Tengo que seguir adelante..."
+      },
+      {
+        "title": "0 PV",
+        "text": "Si tan solo fuera más fuerte..."
+      },
+      {
+        "title": "Ánimo del equipo 1",
+        "text": "¿Cómo hiciste eso? ¡Por favor, enséñame!"
+      },
+      {
+        "title": "Ánimo del equipo 2",
+        "text": "¡Eso fue increíble! ¡Estoy que quemo!"
+      },
+      {
+        "title": "Respuesta al ánimo 1",
+        "text": "Je, je, me estás haciendo sonrojar..."
+      },
+      {
+        "title": "Respuesta al ánimo 2",
+        "text": "¡Dos cabezas piensan mejor que una, y cuatro son aún mejores!"
+      },
+      {
+        "title": "Comienza el combate 1",
+        "text": "¡Lifeng de Wuling, listo para luchar!"
+      },
+      {
+        "title": "Comienza el combate 2",
+        "text": "¡No pueden con mi lanza!"
+      },
+      {
+        "title": "Victoria en el combate 1",
+        "text": "¡Esto sí que fue un verdadero combate!"
+      },
+      {
+        "title": "Victoria en el combate 2",
+        "text": "¿Eso es todo? Ni siquiera les mostré mis mejores movimientos..."
+      },
+      {
+        "title": "Victoria en el combate 3",
+        "text": "Pff, ¡les dimos una lección!"
+      },
+      {
+        "title": "Victoria en el combate 4",
+        "text": "No hay victoria sin preparación. Sigan presionando, equipo."
+      },
+      {
+        "title": "Derrota en el combate",
+        "text": "El Tío Pan dice que ser un gran lancero no se trata de velocidad, sino de mantener la calma. Esta vez la perdí, ¡pero me reagruparé y lo intentaré de nuevo!"
+      },
+      {
+        "title": "Golpe final 1",
+        "text": "¡Miren esto!"
+      },
+      {
+        "title": "Golpe final 2",
+        "text": "¡Perdona por el golpe!"
+      },
+      {
+        "title": "Habilidad de batalla 1",
+        "text": "¡La pureza revela la verdad!"
+      },
+      {
+        "title": "Habilidad de batalla 2",
+        "text": "¡La obsesión engendra pesar!"
+      },
+      {
+        "title": "Habilidad de batalla 3",
+        "text": "¡Una mente aguda ataca veloz!"
+      },
+      {
+        "title": "Habilidad de combo preparada 1",
+        "text": "¡Llámame cuando quieras!"
+      },
+      {
+        "title": "Habilidad de combo preparada 2",
+        "text": "¡Déjame ayudarte!"
+      },
+      {
+        "title": "Lanzando combo 1",
+        "text": "¿Alguna vez has visto esto?"
+      },
+      {
+        "title": "Lanzando combo 2",
+        "text": "¡Serás desterrado!"
+      },
+      {
+        "title": "Remate 1",
+        "text": "¡No más obsesiones!"
+      },
+      {
+        "title": "Remate 2",
+        "text": "¡Renuncia o perece!"
+      },
+      {
+        "title": "Habilidad máxima 1",
+        "text": "¿Adivina con cuál mano te aplastaré?"
+      },
+      {
+        "title": "Habilidad máxima 2",
+        "text": "¡El mal enfrentará justicia kármica!"
+      },
+      {
+        "title": "Habilidad máxima 3",
+        "text": "¡ME HE VUELTO IRA PURA!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

@@ -120,7 +120,333 @@
         "name": "Cultura",
         "description": "Cultura: postille romantiche\nChi ha messo un segno nella parte più romantica del romanzo? E chi ha scarabocchiato qualcosa accanto al disegno del \"vissero per sempre felici e contenti\"?"
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Preparazione all'operazione 1",
+        "text": "Ciao, Endmin. Oh, oggi il tempo è proprio bello."
+      },
+      {
+        "title": "Preparazione all'operazione 2",
+        "text": "Pronti a partire per un lungo viaggio?"
+      },
+      {
+        "title": "Aggiunta alla squadra 1",
+        "text": "Mmh. Di quali colori brillerà oggi Talos?"
+      },
+      {
+        "title": "Aggiunta alla squadra 2",
+        "text": "Ci dirigiamo alla prossima meta?"
+      },
+      {
+        "title": "Cambio arma",
+        "text": "Non importa che arma mi capita. Mi basta aggiungere un pizzico di Arti e... guarda! Fluttua nell'aria!"
+      },
+      {
+        "title": "Cambio equipaggiamento",
+        "text": "Mmh. Mi sta alla grande! Adesso sono pronta per la prossima missione. Dimmi, Endmin, ti viene in mente qualche bell'abbinamento?"
+      },
+      {
+        "title": "Attivazione matrice delle abilità",
+        "text": "Ecco qualche consiglio per avere una visuale migliore della strada di fronte a te. Allarga i tuoi orizzonti, impara dall'esperienza... e aggiungi un pizzico di immaginazione!"
+      },
+      {
+        "title": "Visione delle registrazioni di combattimenti",
+        "text": "Ricorda quella sensazione... Trova la giusta intensità e... sempre più in alto si va!"
+      },
+      {
+        "title": "Promozione operatore 1",
+        "text": "La promozione significa che... posso andare in luoghi ancora più remoti? Eh eh. Ho già preparato tutto il necessario. Quando si parte?"
+      },
+      {
+        "title": "Promozione operatore 2",
+        "text": "Voglio essere d'aiuto all'Endmin... Cioè, voglio essere d'aiuto a tutti quanti. Ma certe volte mi viene il dubbio di non essere... abbastanza qualificata."
+      },
+      {
+        "title": "Promozione operatore 3",
+        "text": "Riceverò qualcosa di più speciale alla prossima promozione? Vorresti sapere cosa desidero? Mmh... Che ne dici di una giornata divertente insieme, Endmin?"
+      },
+      {
+        "title": "Promozione operatore 4",
+        "text": "Quando ripenso ai miei viaggi più lunghi, tutte quelle piccole emozioni finiscono per tornare di nuovo a galla. È proprio in un momento simile che ho capito... che amo davvero il mio lavoro."
+      },
+      {
+        "title": "Operatore a rapporto",
+        "text": "Ehilà! Oh, emani quell'aroma di rosa tipico dei bei ricordi... Come una lettera incompleta, destinata a un luogo speciale. Mi chiedo quale."
+      },
+      {
+        "title": "Attesa 1",
+        "text": "Guarda un po' qui! La messaggera volante ha una lettera speciale per te!"
+      },
+      {
+        "title": "Attesa 2",
+        "text": "Ciao! Ti va di fare una passeggiata? Oggi il cielo ha dei colori semplicemente splendidi!"
+      },
+      {
+        "title": "Assegnazione a una struttura",
+        "text": "Non ti preoccupare, ci penso io!"
+      },
+      {
+        "title": "Saluto 1",
+        "text": "Endmin! Che coincidenza! Che ne dici di una passeggiata sul ponte?"
+      },
+      {
+        "title": "Saluto 2",
+        "text": "Tanto da fare, Endmin? Cerca di prenderti una pausa ogni tanto, ok?"
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 1",
+        "text": "Adoro collezionare rossetti di gusti e colori diversi. Mi chiedo sempre se possano aggiungere delle sfumature brillanti alle nostre parole..."
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 2",
+        "text": "Talos regala al cielo di Talos-II uno spettro di colori meraviglioso. Quegli spettacoli inaspettati, pieni di bagliori... Non è romantico, Endmin?"
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 3",
+        "text": "Guarda cos'ho qui, Endmin! Lucine di tutti i colori e un piccolo incensiere della Witching Hour. Mi chiedevo se potessimo... usarli per decorare insieme la tua cabina, Endmin! Una volta spente le luci, brillerà come una notte stellata! Dai, che ne dici?"
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 4",
+        "text": "Mmh... I personaggi dei romanzi nascondono sempre i propri sentimenti, ma perché? Così tanti inviti mai consegnati, lettere mai spedite, parole mai pronunciate... È talmente semplice ed evidente, eppure non trovano il coraggio di confessare ciò che provano... Io non avrei problemi a invitarti per un'avventura o a farti qualche bel regaletto... Mi chiedo dove sia la differenza."
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 5",
+        "text": "La signorina Akekuri mi ha dato un talismano speciale. Ha detto che prima o poi i miei desideri si avvereranno, se lo porto con me. Ora il mio desiderio è... che i desideri di tutti coloro che mi affidano le loro lettere si realizzino! Eh eh! Spero di non sembrare troppo avida!"
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 6",
+        "text": "Sogno sempre i luoghi che ho visitato. E nel mezzo di quegli indistinti paesaggi onirici c'è sempre una figura che se ne sta lì in silenzio, come se aspettasse una persona... o una lettera. Di recente, la figura è diventata sempre più nitida, ed è qualcuno che... conosco piuttosto bene."
+      },
+      {
+        "title": "Offerta regali",
+        "text": "Sorpresa, Endmin! Ho preso una cosa speciale, solo per te. Dai, prova a indovinare!"
+      },
+      {
+        "title": "Accettazione regali",
+        "text": "Ma è per me? Oh, grazie infinite! Avrà il posto d'onore nella mia cabina!"
+      },
+      {
+        "title": "Dialogo fiducia 1",
+        "text": "La mia prima consegna è stata una lettera di raccomandazione che la chirurga Warfarin aveva scritto per me. Ero un po' nervosa quando ho messo piede sulla Dijiang per la prima volta. Warfarin mi aveva detto: \"Aspetta l'Endministrator\". E io continuavo a chiedermi: \"Come sarà quest'Endmin?\" Ma vederti di persona dopo il tuo risveglio accidentale ha fatto svanire tutte le mie preoccupazioni. Devo ammetterlo, un po' nervosa lo sono ancora..."
+      },
+      {
+        "title": "Dialogo fiducia 2",
+        "text": "Adoro volare da sola dopo il tramonto. Il cielo notturno mi permette di ammirare le stelle che scintillano. Chissà, magari anche loro hanno delle storie da raccontare. Forse in quegli stessi momenti c'erano altre persone che stavano pensando la stessa cosa... e guardavano il cielo notturno insieme a me..."
+      },
+      {
+        "title": "Dialogo fiducia 3",
+        "text": "La solitudine è la compagna di tutti i messaggeri, ma io non mi ci sono mai abituata. Ogni volta che raggiungevo un luogo remoto, tiravo sempre fuori la bussola per vedere in che direzione si trovava la Rhodes Island. Lì c'è la chirurga Warfarin, insieme a ricordi che non sbiadiranno mai. Sulla strada che sto percorrendo adesso mi attendono nuovi amici e incontri inaspettati. Il solo pensarci mi scalda il cuore e mi riempie di speranza per il prossimo viaggio. Già, voglio essere una messaggera che non si sente mai sola."
+      },
+      {
+        "title": "Dialogo fiducia 4",
+        "text": "Non lo so... Vedere una stella solitaria mi fa provare un senso indescrivibile di perdita e rimpianto... Stella stellina, la notte si avvicina... Sei forse lassù, tra i cieli tranquilli, ad aspettare un'altra stella che al tuo fianco scintilli?"
+      },
+      {
+        "title": "Dialogo fiducia 5",
+        "text": "Quando ho lasciato il Bosco mi sono accorta che accanto a me c'era una lettera in bianco. Era come un simbolo della mia confusione... e mi sono sempre chiesta perché fossi l'unica ad averla. Avrei dovuto scriverci sopra? E a chi l'avrei dovuta consegnare? Mi sono avventurata in lungo e in largo, eppure non ho mai trovato la risposta. Adesso, però... credo di dover mettere su carta tutto ciò che ho provato e sognato... per poi consegnarla alla persona che per me è più importante e speciale."
+      },
+      {
+        "title": "Chiacchierata 1",
+        "text": "Il viaggio che mi ricordo meglio? Mmh... Endmin, hai mai sentito parlare di Alloycarrot? I Cautus che ci vivono mangiano carote. Con-ti-nua-men-te! E hanno una marea di ricette a base di carote! Ho visitato la città due volte per consegnare dei medicinali alla CCGT, che gestisce i campi di carote. Se dovessi tornarci, spero di avere modo di vedere il grande scavo sotterraneo... Ah! E prenoterò senz'altro al Cavolo a merenda... Non è che detesti le carote, voglio solo un po' di varietà..."
+      },
+      {
+        "title": "Chiacchierata 2",
+        "text": "L'assenza di peso è una sensazione costante per me. Mi sento sempre come un palloncino che delicatamente sfiora la terra pesante, facendo tutto il possibile per farla fluttuare con sé. Sembra una fantasia, vero? Ma anche quando volo, proietto una lunga ombra sulla terra, come se ci fosse qualcosa che mi tiene ancorata. Un po' come queste lettere mi legano... a te."
+      },
+      {
+        "title": "Chiacchierata 3",
+        "text": "Vuoi sapere di questo libro? Beh, è un'antologia di racconti brevi di numerosi messaggeri. Uno di loro ha sfidato una catastrofe per salvare delle persone... solo per poi essere accusato di essere un portatore di sventura maledetto. Un altro sperava in una consegna tranquilla, ma ha finito per rovesciare un'intera nazione attraverso una serie di eventi inaspettati. E poi c'è questa giovane messaggera imbranata che ha perso tutte le lettere da consegnare il primo giorno di lavoro... Eh eh. Adoro le storie di questo libro."
+      },
+      {
+        "title": "Chiacchierata 4",
+        "text": "Ho sentito molto parlare di Terra a Nuova Wrankwood. Alcuni lodavano il suo calore, altri ne maledicevano la mancanza di misericordia. C'era chi odiava la sua devastazione e chi rimpiangeva la sua bellezza... Mentre autori e teatranti dedicano la loro vita a quella parte della nostra storia, i filosofi ritengono che dovremmo andare avanti e adottare un nuovo modo di pensare... Personalmente, considero Terra un nome familiare ma distante... Un mondo di paesaggi meravigliosi e volti conosciuti... E tu, Endmin?"
+      },
+      {
+        "title": "Chiacchierata 5",
+        "text": "Nessun messaggero può mai indovinare il contenuto di una lettera, ma quando vedo decorazioni e adesivi eleganti sulla busta... immagino storie serene e confortanti in attesa di accadere. Una busta raggrinzita per la pioggia, invece, mi fa pensare a un viaggio difficile o a una separazione straziante... È raro che chi scrive condivida i propri sentimenti con i messaggeri. Non pensano che qualcuno che non conoscono possa... condividere la loro gioia... e il loro dolore."
+      },
+      {
+        "title": "Argomento: Warfarin",
+        "text": "La chirurga Warfarin? A vederla, stava benissimo e sembrava la solita di sempre, ma una volta ha sbagliato a ricordarsi il mio compleanno... Sembrava davvero desolata mentre mi chiedeva scusa... Non era certo una cosa tanto grave. Poi mi ha chiamata col nome sbagliato, nel panico più totale... Non l'avevo mai vista così. Come descriverla... Mmh. Sembrava davvero confusa... e smarrita. E anche dopo che me ne sono andata, è rimasta a rimuginare da sola al tavolo per molto, molto tempo..."
+      },
+      {
+        "title": "Argomento: spadamante misteriosa",
+        "text": "Incontrai una donna misteriosa alla Rhodes Island, un bel po' di tempo fa. Portava una lama dall'aspetto davvero particolare e se ne stava lì sulla riva del placido lago. Improvvisamente, la sua lama saettò. Non lasciò che una lieve increspatura sull'acqua, ma spaccò in due un'intera nuvola... Mi diede questa lettera, nella speranza che la consegnassi all'Endministrator. E quando l'operatrice Chen Qianyu avrà finalmente trovato sé stessa... allora potrai darla a lei."
+      },
+      {
+        "title": "Argomento: Avywenna",
+        "text": "Avywenna consegna sempre nei luoghi più pericolosi... Anche se ha sempre il sorriso, i suoi occhi nascondono segreti opprimenti... Segreti che non può condividere con nessuno... Ne ho visti tanti di messaggeri con lo stesso sguardo... E so cosa significa..."
+      },
+      {
+        "title": "Argomento: i pericoli delle terre selvagge",
+        "text": "Talos-II è piena di pericoli ignoti di ogni genere... Ho letto il rapporto di Ardelia. I pericoli di Talos-II sono molto più imprevedibili rispetto a quelli della lontana Terra. Dato che noi messaggeri dobbiamo attraversare zone afflitte dalla Contaminazione, ci dotiamo spesso di attrezzature utili per il primo soccorso o l'evacuazione di civili. Dato che posso volare, spesso mi porto dietro alcune attrezzature d'emergenza in più e le lascio presso le aree di sosta nelle terre selvagge. Spero che siano d'aiuto a chi si trova nei guai."
+      },
+      {
+        "title": "Argomento: sé stessa",
+        "text": "Quando ero alla Rhodes Island, pensavo che la chirurga Warfarin mi avrebbe assegnato delle missioni, ma lei disse che la Rhodes Island non era nella posizione di rendersi nota al pubblico. Tuttavia, poiché sono una messaggera, mi ha suggerito di viaggiare per i cieli. Ed è esattamente ciò che ho fatto, trascorrendo due anni a girovagare per Talos-II e imparando a conoscere questo mondo prima di approdare qui."
+      },
+      {
+        "title": "Individuazione risorsa/collezionabile 1",
+        "text": "Laggiù c'è qualcosa che richiede la nostra attenzione."
+      },
+      {
+        "title": "Individuazione risorsa/collezionabile 2",
+        "text": "Guarda lì! Forse ci aspetta una sorpresa!"
+      },
+      {
+        "title": "Individuazione zona non esplorata",
+        "text": "Regola dei messaggeri: prestare la massima attenzione quando si entra in territori inesplorati!"
+      },
+      {
+        "title": "Individuazione nemico potente",
+        "text": "Facciamo attenzione! Quel nemico ha l'aria molto pericolosa."
+      },
+      {
+        "title": "Estrazione 1",
+        "text": "Portiamoci a casa questi minerali!"
+      },
+      {
+        "title": "Estrazione 2",
+        "text": "Sono qui per dare una mano! Eh eh."
+      },
+      {
+        "title": "Apertura di una cassa",
+        "text": "Wow! Ma è esattamente ciò che ci serviva!"
+      },
+      {
+        "title": "Acquisizione di Aurylene",
+        "text": "Eh eh, meno male che l'abbiamo preso."
+      },
+      {
+        "title": "Eliminazione Contaminazione",
+        "text": "Ora la strada è aperta per le consegne!"
+      },
+      {
+        "title": "Riposo",
+        "text": "È bene riposare prima di un lungo viaggio."
+      },
+      {
+        "title": "Utilizzo di gadget 1",
+        "text": "Prova questo. Ti sarà utile!"
+      },
+      {
+        "title": "Utilizzo di gadget 2",
+        "text": "Fiuu... Mi sento già meglio."
+      },
+      {
+        "title": "Avviso di pericolo",
+        "text": "Attenzione o ti farai male!"
+      },
+      {
+        "title": "Ferita",
+        "text": "Mi sento... così pesante..."
+      },
+      {
+        "title": "Esaurimento PS",
+        "text": "Voglio volare... un'ultima volta..."
+      },
+      {
+        "title": "Incoraggiamento alla squadra 1",
+        "text": "Wow! Ma come ci riesci?!"
+      },
+      {
+        "title": "Incoraggiamento alla squadra 2",
+        "text": "Fantastico! Lo rifacciamo?"
+      },
+      {
+        "title": "Risposta all'incoraggiamento 1",
+        "text": "Eh eh. Troppo gentile."
+      },
+      {
+        "title": "Risposta all'incoraggiamento 2",
+        "text": "Continuiamo così e facciamola finita!"
+      },
+      {
+        "title": "Inizio combattimento 1",
+        "text": "Vinceremo senza problemi!"
+      },
+      {
+        "title": "Inizio combattimento 2",
+        "text": "Speravo che lo dicessi."
+      },
+      {
+        "title": "Vittoria in combattimento 1",
+        "text": "Eh eh. Sono stata brava, eh?"
+      },
+      {
+        "title": "Vittoria in combattimento 2",
+        "text": "Il mio più grande successo di oggi!"
+      },
+      {
+        "title": "Vittoria in combattimento 3",
+        "text": "Evvai! Ora possiamo rimetterci in viaggio."
+      },
+      {
+        "title": "Vittoria in combattimento 4",
+        "text": "Alla fine ce l'abbiamo fatta... Anche se è stato difficile, ne è valsa la pena."
+      },
+      {
+        "title": "Sconfitta in combattimento",
+        "text": "La strada sarà anche irta di traversie, ma riprenderemo il nostro viaggio e riusciremo a portare a termine la consegna."
+      },
+      {
+        "title": "Colpo finale 1",
+        "text": "Fatti da parte!"
+      },
+      {
+        "title": "Colpo finale 2",
+        "text": "Vai!"
+      },
+      {
+        "title": "Abilità di combattimento 1",
+        "text": "Restiamo insieme, gente!"
+      },
+      {
+        "title": "Abilità di combattimento 2",
+        "text": "Alla gravità non si sfugge!"
+      },
+      {
+        "title": "Abilità di combattimento 3",
+        "text": "Guarda dove metti i piedi!"
+      },
+      {
+        "title": "Abilità combo pronta 1",
+        "text": "Campo gravitazionale pronto!"
+      },
+      {
+        "title": "Abilità combo pronta 2",
+        "text": "Chi ha voglia di fluttuare un po'?"
+      },
+      {
+        "title": "Esecuzione combo 1",
+        "text": "E adesso... vola!"
+      },
+      {
+        "title": "Esecuzione combo 2",
+        "text": "Divertiti in aria!"
+      },
+      {
+        "title": "Mossa letale 1",
+        "text": "Sorpresa!"
+      },
+      {
+        "title": "Mossa letale 2",
+        "text": "Che mi dici di questo?"
+      },
+      {
+        "title": "Abilità suprema 1",
+        "text": "Ribaltiamo il mondo!"
+      },
+      {
+        "title": "Abilità suprema 2",
+        "text": "Potere della terra!"
+      },
+      {
+        "title": "Abilità suprema 3",
+        "text": "Goditi la gravità!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

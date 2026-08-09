@@ -123,7 +123,329 @@
         "name": "Moda",
         "description": "Moda: Investindo em Joias.\nNão é o brilho cintilante das joias, mas o ato de comprar que traz satisfação. E ela pretende se mimar de verdade nesta viagem."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Prep Operação 1",
+        "text": "Ora, ora, Endmin, parece que o destino trouxe você direto para mim."
+      },
+      {
+        "title": "Prep Operação 2",
+        "text": "Ah-ah, não pisque ou eu posso simplesmente desaparecer."
+      },
+      {
+        "title": "Adicionando à equipe 1",
+        "text": "Ah, então você confia em mim o suficiente para gastar tanto? Sinto-me lisonjeada."
+      },
+      {
+        "title": "Adicionando à equipe 2",
+        "text": "Um pouco mais para a frente, por favor? Não gosto dessa distância toda entre nós."
+      },
+      {
+        "title": "Trocando de arma",
+        "text": "Na minha família, dizemos que nossas armas são basicamente parte de nós. Acontece que as minhas me fazem ficar um pouco mais alta!"
+      },
+      {
+        "title": "Trocando de equipamento",
+        "text": "Uma grande jornada não se resume ao destino — são os calçados que nos levam até lá. É por isso que nunca sou mesquinha comigo mesma quando se trata disso."
+      },
+      {
+        "title": "Ativação da Matriz de Capacidade",
+        "text": "Não acredito o quanto cheguei longe! Minha casa e aqueles dias parecem mundos distantes agora."
+      },
+      {
+        "title": "Assistindo a Registros de Combate",
+        "text": "Será que outros verão essas lutas? Alguns podem reconhecer minha lança. Provavelmente é melhor que não aprendam meu nome..."
+      },
+      {
+        "title": "Promoção do Operador 1",
+        "text": "Não se preocupe. Confie em mim. Sou uma profissional."
+      },
+      {
+        "title": "Promoção do Operador 2",
+        "text": "Ha! Eu sabia que você acabaria se viciando nessa sensação! Então, o que vem agora?"
+      },
+      {
+        "title": "Promoção do Operador 3",
+        "text": "Já que faz sentido tanto profissional quanto pessoalmente, não me importo se formos um pouco mais pessoais aqui, certo? Vamos lá, não fique sem graça agora! Eu entendo perfeitamente o que você quer dizer!"
+      },
+      {
+        "title": "Promoção do Operador 4",
+        "text": "Passei a infância inteira brigando pelo primeiro lugar entre meus irmãos, então ficar à frente é o que eu faço. Mas aqui vai, Endmin: prometa que sempre pensará em mim primeiro, OK?"
+      },
+      {
+        "title": "Operador se apresentando para o trabalho",
+        "text": "Ora, ora, estou diante de uma lenda: Endministrator. Ouvi alguns cochichos no caminho para cá. Quer saber qual é o mais verdadeiro? Já que você ainda não me conhece bem, aqui vai a minha oferta: que tal eu te contar um segredo em troca de um pouquinho sobre você? O que você acha?"
+      },
+      {
+        "title": "Em espera 1",
+        "text": "Aonde estamos indo?"
+      },
+      {
+        "title": "Em espera 2",
+        "text": "Pareço bem deste ângulo?"
+      },
+      {
+        "title": "Atribuindo a Instalação",
+        "text": "Lá vamos nós, sem tempo a perder!"
+      },
+      {
+        "title": "Saudação 1",
+        "text": "Olá, Endmin! Como vai?"
+      },
+      {
+        "title": "Saudação 2",
+        "text": "Caramba, é você, Endmin! Que legal te ver! Não está me evitando, certo?"
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 1",
+        "text": "Ei, Endmin, que bom te ver de novo. E sim, você ainda está arrasando com esse charme — igualzinho a cinco minutos atrás, né?"
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 2",
+        "text": "Devo dizer que você realmente se dedicou à criação da Dijiang. É incrível — só de flutuar aqui por um instante ela já andou a distância que levei anos para percorrer."
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 3",
+        "text": "O que é isso na sua cara? Uh-uh, o outro lado... Haha, só brincando. É raro ver vocês todos nervosos assim!"
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 4",
+        "text": "Sabe, Talos-II realmente parece uma esfera gigante vista daqui de cima da Ponte. Acho que isso significa que, não importa para onde viajemos, sempre voltaremos uns para os outros."
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 5",
+        "text": "Vou embarcar em mais uma aventura! Precisa de alguma coisa? Fale logo, senão vai ter que esperar até a próxima!"
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 6",
+        "text": "Ainda de pé depois do filme de terror de ontem à noite? Tsc, tsc, acho que vou ter que aumentar a aposta da próxima vez. Não se preocupe, vou te arrastar para a próxima também!"
+      },
+      {
+        "title": "Oferta de presentes",
+        "text": "Passei por muita coisa para trazer isso de volta para você. Isso traz alguma lembrança?"
+      },
+      {
+        "title": "Aceitando presentes",
+        "text": "Uma garota bonita como eu definitivamente ganhou muitos presentes, mas esse seu é... especial."
+      },
+      {
+        "title": "Diálogo de Confiança 1",
+        "text": "Às vezes, as pessoas podem ser bem complicadas. Naquela época, eu não precisava pensar muito. Meu trabalho era levar as coisas do ponto A ao ponto B. Mas quando eu entrei naquele circo, as coisas ficaram... *Suspiro* Eu conto a história completa outra hora, OK?"
+      },
+      {
+        "title": "Diálogo de Confiança 2",
+        "text": "No meu antigo emprego, meu salário era basicamente uma fortuna comparado ao que ganho agora! *Risos* Na minha família, nunca nos contentamos com nada menos do que o justo. Tenho certeza de que você sabe exatamente o que compensou essa diferença. A sua timidez é simplesmente... demais para você admitir."
+      },
+      {
+        "title": "Diálogo de Confiança 3",
+        "text": "Viajei desde o Cinturão, aguentei o frio das antigas fronteiras, passei noites brancas nas cabanas do Circuito Hannabit, observei a nave dos Seš'qanos flutuar pelo céu e ouvi a chuva sem fim perto da fortaleza dos Guardiões do Juramento. E em meio a tudo isso, Endmin, seu nome ecoou."
+      },
+      {
+        "title": "Diálogo de Confiança 4",
+        "text": "Pode me chamar de Lamp. Avywenna é, na verdade, meu sobrenome. Ei, não é brincadeira para mim, então não ria. Mantenha esse segredo entre nós, ok? Não quero ninguém ruim atrás de você. A menos que... Ah? Você está a fim de cuidar de mim?"
+      },
+      {
+        "title": "Diálogo de Confiança 5",
+        "text": "Endmin, Talos-II é enorme. Quantos lugares você já visitou? Ah, é... então, de quantos deles você ainda se lembra? Mal posso esperar para que você se lembre de todos eles. Quanto mais memórias compartilharmos, melhor, certo?"
+      },
+      {
+        "title": "Chat 1",
+        "text": "Eu e minha família somos do Cinturão. Trabalhar como mensageiros tem sido nossa vocação por gerações. Então, como é a sua família, Endmin?"
+      },
+      {
+        "title": "Chat 2",
+        "text": "Tchau! Este é o meu cantinho. Não que eu volte aqui com frequência, mas gosto de mantê-lo limpo e aconchegante. Uma andarilha como eu precisa ter um lugar para dormir, certo?"
+      },
+      {
+        "title": "Chat 3",
+        "text": "Os mensageiros precisam entregar muitos segredos com segurança, e cada um deles tem um preço alto. Mas há algo mais caro do que a entrega em si... o meu silêncio sobre esses assuntos."
+      },
+      {
+        "title": "Chat 4",
+        "text": "Ninguém gosta de rejeição... então, se pudermos conversar, prefiro muito mais fazer isso do que brigar. Mas, para deixar claro, eu não gosto de ser rejeitada."
+      },
+      {
+        "title": "Chat 5",
+        "text": "Você se lembra do velho Laine, né? Aquele cara rabugento nunca sorriu para mim. Mas ouvi dizer que ele é um funcionário aposentado respeitado, e quando ele saiu, as pessoas choraram copiosamente. Humph, ele até me chamou de \"encrenqueira\" antes de me mandar para cá. Bem, se eu sou encrenqueira, pelo menos sou encrenqueira de verdade!"
+      },
+      {
+        "title": "Tópico: Endfield",
+        "text": "A Endfield é o lugar onde fiquei por mais tempo, tirando Alloycarrot, onde cresci. Acho que estou me acostumando com essa coisa de me estabelecer."
+      },
+      {
+        "title": "Tópico: Empresa familiar",
+        "text": "Meus ancestrais eram caminhoneiros quando o Portão Cósmico ainda estava aberto. Os caminhões gigantes formavam uma trilha cintilante de metal que se estendia pelo horizonte. Depois disso, minha bisavó, minha avó e minha mãe se trabalharam duro para a Sloan Security no Cinturão! Aquelas velhinhas me deram um trabalhão quando decidi parar... Hum. Só para você saber, eu não... simplesmente entrei na sua casinha bonitinha, Endmin."
+      },
+      {
+        "title": "Tópico: Moda",
+        "text": "Minhas roupas? Tudo sobre estilo e praticidade! Lembre-se disso quando estiver na natureza selvagem: mantenha seu kit impecável e a cabeça sempre erguida."
+      },
+      {
+        "title": "Tópico: Alloycarrot",
+        "text": "Caramba, não acredito que você nunca visitou Alloycarrot! Bem, eu não sou de me gabar, mas já visitei muitos lugares ao redor de Talos-II, e nada se compara ao charme dos nossos túneis de mineração. As crianças crescem em um mundo cheio de amigos próximos e conversas animadas. Sempre dissemos que a única coisa mais difícil do que uma grande perfuradora é a nossa amizade!"
+      },
+      {
+        "title": "Recurso/Colecionável detectado 1",
+        "text": "Meu dispositivo está fazendo barulho. Talvez tenha algo legal por perto."
+      },
+      {
+        "title": "Recurso/Colecionável detectado 2",
+        "text": "Siga-me! Deixei uma marca de tesouro aqui da última vez que estive aqui!"
+      },
+      {
+        "title": "Área não explorada detectada",
+        "text": "Ah, não acredito que há lugares que nunca visitei antes!"
+      },
+      {
+        "title": "Inimigo poderoso descoberto",
+        "text": "Parece que esse cara acabou com qualquer chance de negociação."
+      },
+      {
+        "title": "Mineração 1",
+        "text": "Testemunhe as habilidades transmitidas pelos meus ancestrais Rim Billiton!"
+      },
+      {
+        "title": "Mineração 2",
+        "text": "Nós Rim Billies sempre cuidamos uns dos outros!"
+      },
+      {
+        "title": "Abrindo um caixote",
+        "text": "Shhhh! Geralmente enterramos essas boas descobertas antes que alguém as veja..."
+      },
+      {
+        "title": "Adquirindo Aurileno",
+        "text": "Aurileno?! Como você sabia que eu adoro coisas brilhantes?"
+      },
+      {
+        "title": "Eliminando a Praga",
+        "text": "Honestamente, eu vejo isso como uma forma de me manter protegida contra certas pessoas."
+      },
+      {
+        "title": "Descansar",
+        "text": "Nossa, essa vibe acolhedora é simplesmente perfeita. Depois de toda essa bagunça e umidade, encontrar um lugar limpo e quentinho como este é um pedacinho do paraíso."
+      },
+      {
+        "title": "Uso Tático 1",
+        "text": "Ainda bem que trouxe esse."
+      },
+      {
+        "title": "Uso Tático 2",
+        "text": "Às vezes, tenho que cuidar bem de mim."
+      },
+      {
+        "title": "Aviso de Perigo",
+        "text": "Vá até um local seguro!"
+      },
+      {
+        "title": "Ferida",
+        "text": "Não se preocupe, estou bem."
+      },
+      {
+        "title": "0 PV",
+        "text": "Deixe-me olhar para casa... uma última vez."
+      },
+      {
+        "title": "Encorajamento da Equipe 1",
+        "text": "Muito bem! Já pensou em fazer o meu trabalho?"
+      },
+      {
+        "title": "Encorajamento da Equipe 2",
+        "text": "Olhem para nós, unidos como uma verdadeira irmandade!"
+      },
+      {
+        "title": "Resposta a Encorajamento 1",
+        "text": "Sim, eu sou incrível assim mesmo."
+      },
+      {
+        "title": "Resposta a Encorajamento 2",
+        "text": "Isso faz eu me sentir em casa."
+      },
+      {
+        "title": "Início do Combate 1",
+        "text": "O primeiro passo é sempre o mais difícil."
+      },
+      {
+        "title": "Início do Combate 2",
+        "text": "Vamos mostrar para eles o que temos!"
+      },
+      {
+        "title": "Vitória em Combate 1",
+        "text": "Falar é fácil, cara. É preciso se esforçar bastante."
+      },
+      {
+        "title": "Vitória em Combate 2",
+        "text": "Não se preocupe, tudo isso faz parte do nosso trabalho."
+      },
+      {
+        "title": "Vitória em Combate 3",
+        "text": "Isso mesmo, mantenha esse espírito!"
+      },
+      {
+        "title": "Vitória em Combate 4",
+        "text": "Há um velho ditado entre os Mensageiros: para trilhar o caminho certo, não se concentre onde pisa — mantenha os olhos no horizonte."
+      },
+      {
+        "title": "Derrota em Combate",
+        "text": "Vamos guardar esse pagamento para quando chegar a hora da nossa vingança."
+      },
+      {
+        "title": "Golpe Final 1",
+        "text": "Não pisque!"
+      },
+      {
+        "title": "Golpe Final 2",
+        "text": "Aí vem!"
+      },
+      {
+        "title": "Habilidade de Batalha 1",
+        "text": "Alerta de zap!"
+      },
+      {
+        "title": "Habilidade de Batalha 2",
+        "text": "Abra caminho."
+      },
+      {
+        "title": "Habilidade de Batalha 3",
+        "text": "Para onde você está correndo?"
+      },
+      {
+        "title": "Combo de Habilidades Pronto 1",
+        "text": "Não se esqueça de mim!"
+      },
+      {
+        "title": "Combo de Habilidades Pronto 2",
+        "text": "Você realmente me fez esperar!"
+      },
+      {
+        "title": "Conjuração de Combo 1",
+        "text": "Toque de ouvido!"
+      },
+      {
+        "title": "Conjuração de Combo 2",
+        "text": "Olhos no prêmio."
+      },
+      {
+        "title": "Finalizador 1",
+        "text": "Ponto fraco avistado!"
+      },
+      {
+        "title": "Finalizador 2",
+        "text": "Peguei."
+      },
+      {
+        "title": "Habilidade Suprema 1",
+        "text": "Não sou do tipo gentil."
+      },
+      {
+        "title": "Habilidade Suprema 2",
+        "text": "Más notícias chegando!"
+      },
+      {
+        "title": "Habilidade Suprema 3",
+        "text": "Tremam diante do meu golpe!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

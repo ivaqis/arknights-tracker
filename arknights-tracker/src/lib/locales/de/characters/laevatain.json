@@ -133,7 +133,333 @@
         "name": "Lifestyle",
         "description": "Lifestyle: Reiseurlaub\nNachtisch ist gut. Weiche Betten sind toll. Reisen ist auch ziemlich schön – es ist viel besser, sein Leben der Zukunft zu widmen, als sich mit der Vergangenheit zu beschäftigen."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Einsatzvorbereitung 1",
+        "text": "Ich hasse Ärger, aber Langeweile ist noch schlimmer."
+      },
+      {
+        "title": "Einsatzvorbereitung 2",
+        "text": "Was auch immer als Nächstes kommt, es sollte besser unvergesslich sein."
+      },
+      {
+        "title": "Wird zum Team hinzugefügt 1",
+        "text": "Ich kann das. Alleine."
+      },
+      {
+        "title": "Wird zum Team hinzugefügt 2",
+        "text": "Ich bin das Schwert. Ich bin das Feuer in Person."
+      },
+      {
+        "title": "Waffe wird gewechselt",
+        "text": "Schöne Klinge. Ich hoffe, sie hält der Hitze meines Feuers stand."
+      },
+      {
+        "title": "Ausrüstung wird gewechselt",
+        "text": "Das Gewicht wird meine Angriffe nicht zurückhalten. Flammhemmende Beschichtung? Pfft."
+      },
+      {
+        "title": "Fähigkeitsmatrix wird aktiviert",
+        "text": "Na, was sagst du zu meiner ganzen Kraft?"
+      },
+      {
+        "title": "Kampfaufzeichnungen ansehen",
+        "text": "Hm, gute Referenz."
+      },
+      {
+        "title": "Operator-Beförderung 1",
+        "text": "Was soll das denn heißen? Ermutigung? Anerkennung? Das brauche ich nicht. Ich bin nur auf ein paar nervige Viecher gestoßen und habe sie alle in Asche verwandelt."
+      },
+      {
+        "title": "Operator-Beförderung 2",
+        "text": "Da ich nun befördert wurde, sollte ich doch eigentlich ein jährliches Einzelgespräch mit meinem neuen Autoritätslevel bekommen, oder? Cool. Lass uns einen Spaziergang machen. Ich brauche frische Luft."
+      },
+      {
+        "title": "Operator-Beförderung 3",
+        "text": "Schon wieder hier? Ich brauche kein Zeichen für meine gute Arbeit. Wenn du aber darauf bestehst, behalte ich es als Symbol und Beweis … für all die Erinnerungen, die wir gemeinsam geschaffen haben."
+      },
+      {
+        "title": "Operator-Beförderung 4",
+        "text": "Es scheint, als würdet ihr Endfielder euch immer mehr auf mich verlassen. Ich fürchte, ihr lasst mir keine andere Wahl, als diese Ehre anzunehmen. Ihr könnt mich jetzt Endfield-Operator Laevatain nennen. Hey, wieso guckst du mich so an?"
+      },
+      {
+        "title": "Operator meldet sich zum Dienst",
+        "text": "Kennen wir uns nicht? Pffft. Egal. Du wirst dich dank dieses Schwerts und der Flammen auf ewig an mich erinnern."
+      },
+      {
+        "title": "Warten 1",
+        "text": "Ich kann Leute, die alles bis ins kleinste Detail kontrollieren wollen, nicht ausstehen. Zum Glück gehörst du nicht dazu."
+      },
+      {
+        "title": "Warten 2",
+        "text": "Suchst du nach mir? Hast du dich endlich an etwas erinnert?"
+      },
+      {
+        "title": "Zuweisung zur Anlage",
+        "text": "Hm, das sieht nach einem guten Ort aus, um meine Zeit zu verschwenden …"
+      },
+      {
+        "title": "Gruß 1",
+        "text": "Da, bitte."
+      },
+      {
+        "title": "Gruß 2",
+        "text": "Du bist es … Oh, ich habe nicht speziell auf dich gewartet."
+      },
+      {
+        "title": "Dijiang-Geplauder 1",
+        "text": "Was hängst du hier rum? Komm schon, lass uns zur Brücke gehen! Dort kannst du mir dann alles erzählen: Wo du schon überall warst und was du in Zukunft noch vorhast."
+      },
+      {
+        "title": "Dijiang-Geplauder 2",
+        "text": "Hmmm … ich möchte mich hiermit ganz herzlich bei der Logistikabteilung für die Eisbar bedanken. Soll ich dir ein paar Kugeln mitbringen?"
+      },
+      {
+        "title": "Dijiang-Geplauder 3",
+        "text": "Ich habe eine Mission. Kommst du mit? Nein, ein Tele-Protokoll ist nicht nötig. Ich nehme lieber die Landekapsel. Mit ohrenbetäubendem Feuer werde ich direkt über ihre Köpfe hinwegfliegen."
+      },
+      {
+        "title": "Dijiang-Geplauder 4",
+        "text": "Ist dir kalt? Ich habe gesagt, sie sollen den Thermostat herunterdrehen, weil derjenige, der dieses Schiff gebaut hat, vergessen hat, Platz für frische Luft zu lassen. Wenn du die Kälte nicht verträgst, komm einfach ein bisschen näher."
+      },
+      {
+        "title": "Dijiang-Geplauder 5",
+        "text": "Wenn ich nichts zu tun habe, esse ich einfach Eis und genieße die Aussicht. Das könnte ich den ganzen Tag lang machen. Mein Kopf ist voller unzähliger Bruchstücke von Erinnerungen. Aber keine davon hat mir die Welt oder den Sternenhimmel aus dieser Perspektive gezeigt."
+      },
+      {
+        "title": "Dijiang-Geplauder 6",
+        "text": "Bist du immer noch in deinen Erinnerungen gefangen? Hmpf. Wenn sie weg sind, dann sind sie eben weg. Konzentrier dich einfach auf das, was ab jetzt passiert."
+      },
+      {
+        "title": "Geschenke anbieten",
+        "text": "Hier. Das ist für dich. Danke, dass du an mich gedacht hast. Hä? Sich an jemanden zu erinnern, den man mag, ist doch Geschenk genug. Pfft …"
+      },
+      {
+        "title": "Geschenke annehmen",
+        "text": "Hmm, ich mag Geschenke eigentlich nicht so sehr, weil ich sie immer vergesse. Aber dieses hier ist von dir … Also mache ich eine Ausnahme."
+      },
+      {
+        "title": "Vertrauensgespräch 1",
+        "text": "Laevatain? Ja, den Namen habe ich mir selbst ausgesucht. Das Schwert hat mich dazu inspiriert. Manche glauben nicht, dass das mein richtiger Name ist. Pah, ich habe das Ding gezähmt, also gehört sein Name mir. Genau wie diese Erinnerungen – ich will über sie herrschen und nicht von ihnen beherrscht werden."
+      },
+      {
+        "title": "Vertrauensgespräch 2",
+        "text": "Mein Kopf ist immer noch voller Erinnerungsfetzen. Sie verschwinden nicht einfach so. Ich habe mich lediglich entschieden, mich nicht damit zu beschäftigen. Vielleicht folge ich diesen Erinnerungen und beginne eine neue Reise, wenn ich mit den alltäglichen Aufgaben fertig bin."
+      },
+      {
+        "title": "Vertrauensgespräch 3",
+        "text": "Surtr … ihre Wut, ihr Verlustgefühl und ihre Verwirrung … werden mir in Erinnerung bleiben. Sie fühlen sich so echt und permanent an. Wenn ich jedoch an die Entscheidung denke, die sie am Ende für sich getroffen hat, finde ich ein wenig Trost."
+      },
+      {
+        "title": "Vertrauensgespräch 4",
+        "text": "Die Pflicht der Wiederhersteller? Das ist mir egal. Das wurde mir wahrscheinlich in die Erinnerungen gepflanzt. Wieso ich zugestimmt habe, an deiner Seite zu kämpfen? Wegen der Menschen, die ich getroffen habe, wegen der Wege, die ich gegangen bin, wegen der Decks, auf denen ich geschlafen habe, und wegen der Brecher, die ich zerschmettert habe … Und wegen der Erinnerungen, die wirklich mir gehören und die ich an diesem Ort gesammelt habe."
+      },
+      {
+        "title": "Vertrauensgespräch 5",
+        "text": "Es gab eine Zeit, in der ich nicht verstanden habe, warum du die Vergangenheit nicht einfach loslassen konntest. Das wurde mir klar, als ich bei Endfield anfing: Du bist der Endministrator, ein Medium für die Erwartungen aller und eine Projektion der Idealvorstellung vom Retter der Welt. Aber niemand sollte zulassen, dass das eigene Image durch die Wunschvorstellungen anderer geprägt wird. Deshalb musst du deine Erinnerungen nutzen, um dein wahres Ich wiederzufinden. Wenn du auf dieser Reise eine Begleiterin brauchst, sag einfach Bescheid. Es ist mir egal, wohin dein Weg dich führt."
+      },
+      {
+        "title": "Geplauder 1",
+        "text": "Mein zersplitterter „Ring“? Ich betrachte ihn als mein Haustier und meine „Tech-Einheit“. Die Waffeningenieure von Endfield haben versucht herauszufinden, wie er funktioniert. Sie haben auch versucht, ihn zu reparieren … Der Ring hat sich jedoch selbstständig gemacht und dem ein Ende bereitet."
+      },
+      {
+        "title": "Geplauder 2",
+        "text": "Du bist hier? Komm mal her und schau dir das an! Warfarin hat mir ein Puzzle geschickt. Sie meinte, es zeige die Landschaft, die Leute und die Geschichte von Terra … Es ist riesig. Ich habe schon ewig daran gesessen und bin noch nicht fertig … Hey, guck nicht so auf die kaputten Kanten. Ich habe übrigens nichts mit den verbrannten Stellen zu tun. So sah es schon aus, als ich es bekommen habe."
+      },
+      {
+        "title": "Geplauder 3",
+        "text": "Während meiner Missionen auf Talos-II träumte ich nachts von der Dijiang sowie den Menschen und Ereignissen in Endfield. Ich warte geduldig darauf, dass mein Geist alle Erinnerungsfetzen, die nicht mir gehören, vergisst und die Lücken mit eigenen Erinnerungen füllt."
+      },
+      {
+        "title": "Geplauder 4",
+        "text": "Warum ich kämpfe? Weil der Tag kommen wird, an dem ich auf einem Berg stehen und auf eine von Feuer verschlungene Welt blicken werde … Warum schaust du mich so an? Ich habe dir nur von einem Albtraum erzählt, der mich schon seit einiger Zeit quält. Mach dir keine Sorgen. Ich werde nicht zulassen, dass diese Vision Wirklichkeit wird – egal wann und wo."
+      },
+      {
+        "title": "Geplauder 5",
+        "text": "Manchmal sah ich Flüchtlinge durch die Wildnis streifen oder Schlächter, die ganze Städte verwüsteten. Im einen Moment schnitt ich noch Blumen im Garten, im nächsten erstickte ich im Labor fast an Chemikalien. Ich kämpfte gegen Schattengestalten, deren Gesichter ich nicht sehen konnte, und wusste nie, warum wir kämpften … Na komm, nicht einschlafen! Ich habe gerade erst angefangen."
+      },
+      {
+        "title": "Thema: Seš’qa",
+        "text": "Mein Zuhause? Ich war einmal an einem Ort namens Seš’qa. Es gab dort Gebäude, eine Sprache, Feste und Hexerei, die … mir so vertraut vorkamen, dass ich mich wie „zu Hause“ fühlte. Aber ich werde diesen Ort nicht wieder besuchen, es sei denn, es gibt einen sehr guten Grund dafür, denn die Menschen dort waren mir zu herzlich und leidenschaftlich. Einige haben mich sogar „Diαblo“ genannt … Urgh. Sagen wir einfach, es ging mir auf die Nerven und ich habe ein bisschen Chaos angerichtet … Nur ein bisschen …"
+      },
+      {
+        "title": "Thema: Yvonne",
+        "text": "Diese pinkhaarige Vouivre bittet mich oft, Frost-Bytee zu testen. Er hat meine Flammen nie gelöscht. Aber … sie macht hübsches und schickes Eis und es schmeckt gar nicht so schlecht."
+      },
+      {
+        "title": "Thema: Der Hannabit-Zirkel",
+        "text": "Ein Liedsucher aus dem Hannabit-Zirkel sagte einmal zu mir: „Feuer ist ein Feind in den Händen des Windes, aber ein Freund in den Händen der Menschen.“ Die Liedsucherin hatte keine Angst vor dem Feuer. Sie hat mir sogar gezeigt, wie man auf der anderen Seite der Wildnis Feuerlinien zieht. So konnte ich einen sich ausbreitenden Waldbrand eindämmen. Die Dorfbewohner, die die Katastrophe überlebt hatten, nannten uns Helden. Ich konnte jedoch nur an die Wolkenbestie denken, die wir gerettet hatten. Ich habe ihr das Junge überlassen. Wie schade."
+      },
+      {
+        "title": "Thema: Die TAHK",
+        "text": "Ich brauche deine Hilfe. Die Personalabteilung hat mich gebeten, diese Angelegenheit direkt an dich weiterzuleiten. Hier ist sie. Ein Steckbrief. Keine große Sache. Das ist passiert, als ich gerade Rhodes Island verlassen hatte. Ein Ort namens Asphalt-Rondell hat mich wegen mehrerer Fälle von Brandstiftung gesucht. Die sind doch selbst schuld. Bei einem schmutzigen Geschäft mit jeder Menge brennbarem Müll muss man schließlich mit Bränden rechnen."
+      },
+      {
+        "title": "Thema: Sami",
+        "text": "Ich sag’s noch einmal. Ich war noch nie auf Terra. Nicht persönlich. Erzähl mir also nichts über die Sehenswürdigkeiten, die Leute oder die Kultur dort … Es sei denn, du redest von Sami. Ich habe gehört, dass ihre „Heimat“ sie nach Talos-II gebracht hat. Wenn wir dort einen Auftrag haben, gib mir Bescheid."
+      },
+      {
+        "title": "Ressource/Sammelobjekt entdeckt 1",
+        "text": "Da ist etwas. Wenn es nutzlos ist, können wir es unseren Klingen vorsetzen."
+      },
+      {
+        "title": "Ressource/Sammelobjekt entdeckt 2",
+        "text": "Da ist etwas, das wir uns merken sollten."
+      },
+      {
+        "title": "Unerforschter Bereich entdeckt",
+        "text": "Wir können mal nachsehen. Keine Sorge. Bleib einfach dicht hinter mir."
+      },
+      {
+        "title": "Starker Gegner entdeckt",
+        "text": "Seht ihr den da? Soll ich den mal zurechtstutzen?"
+      },
+      {
+        "title": "Abbau 1",
+        "text": "Nur echte Wertgegenstände können gegen das Feuer bestehen."
+      },
+      {
+        "title": "Abbau 2",
+        "text": "Geht das auch etwas schneller? Ich hasse nichts mehr, als herumzustehen und nichts zu tun zu haben."
+      },
+      {
+        "title": "Kiste öffnen",
+        "text": "Ich weiß noch, dass dir die gefallen … oder so."
+      },
+      {
+        "title": "Aurylen erhalten",
+        "text": "Aurylen … Etwas, das genauso unzuverlässig ist wie meine Erinnerungen."
+      },
+      {
+        "title": "Eliminierung der Verderbnis",
+        "text": "Seid vorsichtig. Das ist viel gefährlicher als Feuer."
+      },
+      {
+        "title": "Ausruhen",
+        "text": "Wenn dir immer noch kalt ist, komm näher zu mir."
+      },
+      {
+        "title": "Taktische Nutzung 1",
+        "text": "Komm schon, spar dir das Theater."
+      },
+      {
+        "title": "Taktische Nutzung 2",
+        "text": "Hmpf. Mir geht’s schon besser."
+      },
+      {
+        "title": "Gefahrenwarnung",
+        "text": "Steh nicht rum, beweg dich!"
+      },
+      {
+        "title": "Verletzt",
+        "text": "Pfft … Das bringt mich schon nicht um."
+      },
+      {
+        "title": "0 LP",
+        "text": "Verdammt sei … diese Erinnerung an die Niederlage …"
+      },
+      {
+        "title": "Teammotivation 1",
+        "text": "Hmpf. Ich werde das nicht vergessen."
+      },
+      {
+        "title": "Teammotivation 2",
+        "text": "Nicht schlecht. Ich übernehme den Nächsten."
+      },
+      {
+        "title": "Motivationsreaktion 1",
+        "text": "Ich weiß."
+      },
+      {
+        "title": "Motivationsreaktion 2",
+        "text": "Das gehört zu meinem Job."
+      },
+      {
+        "title": "Kampf beginnt 1",
+        "text": "Jetzt geht’s ans Eingemachte."
+      },
+      {
+        "title": "Kampf beginnt 2",
+        "text": "Wurde auch Zeit."
+      },
+      {
+        "title": "Kampfsieg 1",
+        "text": "Das war ja nicht mal eine Aufwärmübung."
+      },
+      {
+        "title": "Kampfsieg 2",
+        "text": "Natürlich haben wir gewonnen."
+      },
+      {
+        "title": "Kampfsieg 3",
+        "text": "Ich schließe mich euren Feierlichkeiten an."
+      },
+      {
+        "title": "Kampfsieg 4",
+        "text": "Ihr habt das ganz gut gemacht. Überlasst mir das nächste Mal einfach die schweren Gegner."
+      },
+      {
+        "title": "Niederlage im Kampf",
+        "text": "Ich werde nicht zulassen, dass das noch mal passiert."
+      },
+      {
+        "title": "Abschlussangriff 1",
+        "text": "Hieb!"
+      },
+      {
+        "title": "Abschlussangriff 2",
+        "text": "Stirb!"
+      },
+      {
+        "title": "Kampffertigkeit 1",
+        "text": "Schmelzende Flamme!"
+      },
+      {
+        "title": "Kampffertigkeit 2",
+        "text": "Verbrenne!"
+      },
+      {
+        "title": "Kampffertigkeit 3",
+        "text": "Mögen die Flammen dich verzehren!"
+      },
+      {
+        "title": "Kombofertigkeit bereit 1",
+        "text": "Überlasst das mir!"
+      },
+      {
+        "title": "Kombofertigkeit bereit 2",
+        "text": "Die Hölle wartet!"
+      },
+      {
+        "title": "Kombo wirken 1",
+        "text": "Verbrenn zu Asche!"
+      },
+      {
+        "title": "Kombo wirken 2",
+        "text": "Asche zu Asche!"
+      },
+      {
+        "title": "Wuchtschlag 1",
+        "text": "Es gibt kein Entkommen!"
+      },
+      {
+        "title": "Wuchtschlag 2",
+        "text": "Dein Ende ist gekommen!"
+      },
+      {
+        "title": "Ultimative Fertigkeit 1",
+        "text": "Möge die Abenddämmerung in Flammen aufgehen!"
+      },
+      {
+        "title": "Ultimative Fertigkeit 2",
+        "text": "Ich werde die Dunkelheit verbrennen!"
+      },
+      {
+        "title": "Ultimative Fertigkeit 3",
+        "text": "Das ist dein Ende!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

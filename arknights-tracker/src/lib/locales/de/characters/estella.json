@@ -120,7 +120,329 @@
         "name": "Gedächtnistraining",
         "description": "Gedächtnistraining: Brainstorming\nEinst dachte die unschuldige Estella, dass Kopfarbeit leichter sei als körperliche Arbeit."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Einsatzvorbereitung 1",
+        "text": "Ist die Pause … schon vorbei?"
+      },
+      {
+        "title": "Einsatzvorbereitung 2",
+        "text": "Ich bin in … zwei Minuten fertig …"
+      },
+      {
+        "title": "Wird zum Team hinzugefügt 1",
+        "text": "Noch eine Mission? Puuh … Na gut … Hoffentlich ist es vorbei, bevor ich vor Erschöpfung umfalle …"
+      },
+      {
+        "title": "Wird zum Team hinzugefügt 2",
+        "text": "Wie soll ich diese … unausgesprochenen Geheimnisse nun erforschen? Hmm …"
+      },
+      {
+        "title": "Waffe wird gewechselt",
+        "text": "Wow … Eine Waffe mit ultimativer Kraft … Hnnngghh … Boah, ist die schwer!"
+      },
+      {
+        "title": "Ausrüstung wird gewechselt",
+        "text": "Die Waffeningenieure haben meine Ausdauer im Kampf wohl total unterschätzt … Grrr … Egal."
+      },
+      {
+        "title": "Fähigkeitsmatrix wird aktiviert",
+        "text": "Ach so, „besser werden“ bedeutet also weniger Arbeit? Juhu …"
+      },
+      {
+        "title": "Kampfaufzeichnungen ansehen",
+        "text": "Der Kopf ist fitter und der Körper ist besser in Form … Aber meine Ausdauer wird einfach nicht besser. Na ja, ich schätze, ich bin aufgeschmissen."
+      },
+      {
+        "title": "Operator-Beförderung 1",
+        "text": "Diese Beförderung kommt wirklich überraschend … Ich dachte, das würde noch viel länger dauern … viel länger …"
+      },
+      {
+        "title": "Operator-Beförderung 2",
+        "text": "Die Ergebnisse meiner Arbeit haben meine Erwartungen übertroffen … Endmin … Ich brauche zwei Tage frei, um mich mal richtig zu entspannen …"
+      },
+      {
+        "title": "Operator-Beförderung 3",
+        "text": "Warum werde ich immer befördert …? Bin ich etwa ein Versuchskaninchen für neue Managementstrategien? Ich sollte mal versuchen, das herauszufinden."
+      },
+      {
+        "title": "Operator-Beförderung 4",
+        "text": "Ooooh! Heißt das, ich kann Akekuri herumkommandieren? Hehe … Zeit, das mal auszuprobieren!"
+      },
+      {
+        "title": "Operator meldet sich zum Dienst",
+        "text": "Warum muss ich das schon wieder machen …? Hallo … Endministrator. Ich bin Estella. Bitte gib mir keine Aufgaben, bei denen ich mich körperlich verausgaben muss. Danke."
+      },
+      {
+        "title": "Warten 1",
+        "text": "Haaah … Ich atme noch. Im Moment möchte ich einfach gar nichts tun …"
+      },
+      {
+        "title": "Warten 2",
+        "text": "Ich habe mich wieder einmal total verausgabt. Argh … Ich genieße lieber die Pause, ehe sie wieder vorbei ist."
+      },
+      {
+        "title": "Zuweisung zur Anlage",
+        "text": "Ein neuer Auftrag? Ich freue mich darauf … Wirklich. Ehrlich."
+      },
+      {
+        "title": "Gruß 1",
+        "text": "Endmin … Wie läuft deine Pause?"
+      },
+      {
+        "title": "Gruß 2",
+        "text": "Endmin, du machst ja kaum mal eine Pause."
+      },
+      {
+        "title": "Dijiang-Geplauder 1",
+        "text": "Nachdem ich Antal gesagt hatte, dass mir seine Mathe-Spiele nicht gefallen, hat er aufgehört, sie mir zu zeigen. Hmm … Eigentlich sollten alle meinem Beispiel folgen."
+      },
+      {
+        "title": "Dijiang-Geplauder 2",
+        "text": "Die Waffeningenieure beschweren sich immer, wie schnell ich meine Lanzen kaputt mache … Ehrlich gesagt ist es schon ein Wunder, dass ich diese extrem schweren Waffen überhaupt schwingen kann."
+      },
+      {
+        "title": "Dijiang-Geplauder 3",
+        "text": "Herr André, … kann er seinen Kopf um 180 Grad drehen? Hm … Das werde ich ihn beim nächsten Mal fragen."
+      },
+      {
+        "title": "Dijiang-Geplauder 4",
+        "text": "Da Akekuri Langohren liebt, habe ich ihr jede Menge Rezepte mit Langohren zusammengestellt und ihr gegeben … Dann hat sie eine ganze Woche lang nicht mehr mit mir geredet … Das war echt komisch …"
+      },
+      {
+        "title": "Dijiang-Geplauder 5",
+        "text": "Ich bin es gewohnt, Infiltrationsmissionen allein durchzuführen … Es ist zwar nervig, aber jemand muss es eben machen. Vor allem, weil … Nun ja, ich bin eben ein größerer Einzelgänge als der Rest des Teams."
+      },
+      {
+        "title": "Dijiang-Geplauder 6",
+        "text": "Laute Metal-Musik beruhigt mich … Es mag leicht sein, diese Geräusche auszublenden, aber ich genieße das Gefühl der Ziellosigkeit inmitten dieser Kakophonie. Es hilft mir … mich selbst zu vergessen."
+      },
+      {
+        "title": "Geschenke anbieten",
+        "text": "Endmin, würdest du das hier annehmen? Keine Angst … Es ist nichts Seltsames."
+      },
+      {
+        "title": "Geschenke annehmen",
+        "text": "Ist das für … mich? Ähm … Danke. Normalerweise bekomme ich keine Geschenke von Leuten, die nicht in meinem Team sind."
+      },
+      {
+        "title": "Vertrauensgespräch 1",
+        "text": "Dem Sturmteam beitreten? Nein danke. Ich bin mir ziemlich sicher, dass ich dafür nicht stark genug bin … Außerdem sollte niemand dazu gezwungen werden, mich herumzutragen."
+      },
+      {
+        "title": "Vertrauensgespräch 2",
+        "text": "Jemand aus der Branche meinte, ich würde meine Informationen nicht richtig nutzen … Hm … Ich habe eigentlich nie darüber nachgedacht, diese Geheimnisse zu nutzen. Das ist mir zu viel Arbeit … Ich glaube, für mich sind sie einfach nur Sammlerstücke …"
+      },
+      {
+        "title": "Vertrauensgespräch 3",
+        "text": "Pech? Meine Eltern schwärmen immer von den guten alten Zeiten und sagen, es sei einfach Pech gewesen, dass unser Leben immer schlechter geworden ist … Aber … Nun ja, ich denke, jede Erfahrung ist auf ihre eigene Weise sinnvoll. So habe ich zum Beispiel meine Kollegen vom Einsatzteam Z7 kennengelernt …"
+      },
+      {
+        "title": "Vertrauensgespräch 4",
+        "text": "Bevor ich Team Z7 getroffen habe, war ich echt am Ende. *seufz* Das war eine echte Katastrophe … Ein Gauner hat mich um mein ganzes Geld gebracht und ich hatte so Hunger … Zunächst haben Akekuri und Fluorite mich bei den anderen Nomaden untergebracht, die sie gerettet hatten. Als ich ihnen dann von der Organisation der Landbrecher und ihren Patrouillenschichten erzählte, konnte Fluorite ihre Überraschung nicht verbergen … Sie fragte mich, wie ich das herausgefunden hatte … Ja, ich weiß noch genau, wie sie mich da angeschaut hat."
+      },
+      {
+        "title": "Vertrauensgespräch 5",
+        "text": "Ich möchte einfach nur ein ruhiges Leben führen und alles so nehmen, wie es kommt … Früher dachte ich, das sei nur Wunschdenken für jemanden, der so viel Pech hat wie ich. Dann bin ich zu Endfield gekommen … Team Z7 beigetreten … und habe dich getroffen, Endmin … Danke, dass du meine Anwesenheit tolerierst …"
+      },
+      {
+        "title": "Geplauder 1",
+        "text": "Meine Vergangenheit war keine Achterbahnfahrt. Ich bin einfach meiner Familie gefolgt und von Ort zu Ort gezogen. Ja, es war anstrengend und schwer, aber die meisten Talosianer haben Ähnliches durchgemacht. Ich hoffe, dass das Leben irgendwann entspannter und einfacher wird."
+      },
+      {
+        "title": "Geplauder 2",
+        "text": "Ich mag das metallische Summen, wenn jemand ein verzerrtes Riff spielt. Wenn ich draußen bin, kribbelt es ganz seltsam in meinen Ohren. Aber das hat irgendwie eine beruhigende Wirkung …"
+      },
+      {
+        "title": "Geplauder 3",
+        "text": "Hinter feindlichen Linien zu arbeiten, ist gar nicht so schwer. Im Gegenteil … Es ist sogar ziemlich aufregend, wenn man nicht weiß, wann die nächste Gefahr auftaucht … Solange man gut vorbereitet ist, kann einen nichts überraschen."
+      },
+      {
+        "title": "Geplauder 4",
+        "text": "Tut mir leid, Endmin. Sag mir einfach, wenn du dich von mir beleidigt fühlst … Die Personalabteilung hat mich daran erinnert … Aber meine Freunde aus Team Z7 haben gesagt, dass das in Ordnung ist, weil es ihrer Meinung nach dazugehört, von Estella beleidigt zu werden …"
+      },
+      {
+        "title": "Geplauder 5",
+        "text": "Ich sammle nur Informationen, Fluorite schaut sie sich an. Wie nutzt du die Informationen, um zu verstehen, wie sie ticken? Hm … Ich wünschte, Fluorite würde mir ihre Geheimnisse verraten … Das Einzige, was sie bisher mit mir geteilt hat, war: „Das kommt alles mit der Erfahrung.“"
+      },
+      {
+        "title": "Thema: Akekuri",
+        "text": "Hmm … Für diese unfaire Aufgabe wird es eine Abrechnung geben. Alle werden von Akekuris Cupcake-Geheimnis erfahren … Hehehe … Estella, du bist ein böses Mädchen."
+      },
+      {
+        "title": "Thema: Catcher",
+        "text": "Catcher hat keine Geheimnisse … Tatsächlich hat er in seinem Arbeitsleistungsbericht so ziemlich alles offengelegt … Ich hätte nie gedacht, dass ich jemals einen Spinner wie ihn treffen würde."
+      },
+      {
+        "title": "Thema: Fluorite",
+        "text": "Oft werde ich mit Fluorite in Verbindung gebracht. Sie hat über alles, was ich gesagt habe, gelacht und mich sogar ermutigt, noch mehr zu erzählen … Hm … Ich schätze, die Gedanken von Menschen können echt kompliziert sein."
+      },
+      {
+        "title": "Thema: Antal",
+        "text": "Der Savra ist wirklich engagiert … Auch wenn er manchmal ein bisschen übertreibt. Die Arbeit ist schon anstrengend genug … Aber ich finde seine Witze wirklich interessant. Fluorite und ich müssen immer darüber lachen."
+      },
+      {
+        "title": "Ressource/Sammelobjekt entdeckt 1",
+        "text": "Das sieht gut aus … Wenn möglich, sollten wir es mitnehmen."
+      },
+      {
+        "title": "Ressource/Sammelobjekt entdeckt 2",
+        "text": "Schaut mal da … Das könnte die Mühe wert sein."
+      },
+      {
+        "title": "Unerforschter Bereich entdeckt",
+        "text": "Puhhh … Ich schätze, wir sollten uns diesen Bereich einmal genauer anschauen."
+      },
+      {
+        "title": "Starker Gegner entdeckt",
+        "text": "Hohe Bedrohung … Ist es in Ordnung, wenn ich einfach nur unterstütze?"
+      },
+      {
+        "title": "Abbau 1",
+        "text": "Hätte jemand doch bloß eine automatische Abbauanlage mitgebracht …"
+      },
+      {
+        "title": "Abbau 2",
+        "text": "Ich bin hier, um zu helfen … Aber erwarte nicht zu viel von mir …"
+      },
+      {
+        "title": "Kiste öffnen",
+        "text": "Jetzt hat sich diese Reise wirklich gelohnt."
+      },
+      {
+        "title": "Aurylen erhalten",
+        "text": "Ahh … Ich glaube, das hab ich schon mal gesehen …"
+      },
+      {
+        "title": "Eliminierung der Verderbnis",
+        "text": "Super. Jetzt müssen wir keine Umwege mehr gehen."
+      },
+      {
+        "title": "Ausruhen",
+        "text": "Ich habe mich ein wenig erholt … Trotzdem wäre etwas mehr Pause auch nicht schlecht."
+      },
+      {
+        "title": "Taktische Nutzung 1",
+        "text": "Versuch mal das … Vielleicht hilft’s ja …"
+      },
+      {
+        "title": "Taktische Nutzung 2",
+        "text": "Die Vorbereitung hat sich offensichtlich gelohnt."
+      },
+      {
+        "title": "Gefahrenwarnung",
+        "text": "Pass auf … Lass dich nicht erwischen."
+      },
+      {
+        "title": "Verletzt",
+        "text": "Arggh … Die Waffe ist so schwer …"
+      },
+      {
+        "title": "0 LP",
+        "text": "Ich habe wieder alle enttäuscht …"
+      },
+      {
+        "title": "Teammotivation 1",
+        "text": "Wow … Das würde ich nie schaffen."
+      },
+      {
+        "title": "Teammotivation 2",
+        "text": "Gut … Mit Teamwork schaffen wir alles."
+      },
+      {
+        "title": "Motivationsreaktion 1",
+        "text": "Ich würde das lieber nicht zu oft machen …"
+      },
+      {
+        "title": "Motivationsreaktion 2",
+        "text": "Ja … Alle haben ihren Teil dazu beigetragen."
+      },
+      {
+        "title": "Kampf beginnt 1",
+        "text": "Ich bin nicht für lange Kämpfe gemacht … Bitte bring es schnell zu Ende."
+      },
+      {
+        "title": "Kampf beginnt 2",
+        "text": "Müssen wir wirklich kämpfen? Na gut. Los geht’s."
+      },
+      {
+        "title": "Kampfsieg 1",
+        "text": "Hm … Es ist vorbei … Ich habe mich gut geschlagen, oder?"
+      },
+      {
+        "title": "Kampfsieg 2",
+        "text": "Puh … Zum Glück bin ich nicht mittendrin ohnmächtig geworden."
+      },
+      {
+        "title": "Kampfsieg 3",
+        "text": "Gut … Zumindest war es schnell vorbei …"
+      },
+      {
+        "title": "Kampfsieg 4",
+        "text": "Alle … haben super Arbeit geleistet … Ich bin so froh, das überlebt zu haben …"
+      },
+      {
+        "title": "Niederlage im Kampf",
+        "text": "Ich kann es nicht so enden lassen … Nächstes Mal … werde ich mich noch mehr anstrengen …"
+      },
+      {
+        "title": "Abschlussangriff 1",
+        "text": "Halt still!"
+      },
+      {
+        "title": "Abschlussangriff 2",
+        "text": "Genau da!"
+      },
+      {
+        "title": "Kampffertigkeit 1",
+        "text": "Schall…erfrierung!"
+      },
+      {
+        "title": "Kampffertigkeit 2",
+        "text": "Zersplitterungs…explosion!"
+      },
+      {
+        "title": "Kampffertigkeit 3",
+        "text": "Graaaah … STIRB!"
+      },
+      {
+        "title": "Kombofertigkeit bereit 1",
+        "text": "Endlich … Ich bin in Position."
+      },
+      {
+        "title": "Kombofertigkeit bereit 2",
+        "text": "Entschuldigt die Warterei …"
+      },
+      {
+        "title": "Kombo wirken 1",
+        "text": "Hiiieb-AN!"
+      },
+      {
+        "title": "Kombo wirken 2",
+        "text": "Kommt!"
+      },
+      {
+        "title": "Wuchtschlag 1",
+        "text": "Triff den Schwach–PUNKT!"
+      },
+      {
+        "title": "Wuchtschlag 2",
+        "text": "Und du bist DRAN!"
+      },
+      {
+        "title": "Ultimative Fertigkeit 1",
+        "text": "Schallbomben-…BOMBARDEMENT!"
+      },
+      {
+        "title": "Ultimative Fertigkeit 2",
+        "text": "Aufladen und … sprengen!"
+      },
+      {
+        "title": "Ultimative Fertigkeit 3",
+        "text": "O Klänge, vereint euch!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

@@ -132,7 +132,333 @@
         "name": "Tecnologia",
         "description": "Tecnologia: decodifica dell'Ætherspazio\nSonda i confini estremi della tecnologia dell'Ætherspazio di Talos-II. Ogni passo che compie è una nuova avventura."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Preparazione all'operazione 1",
+        "text": "Allora, dove ci divertiamo oggi, Endmin?"
+      },
+      {
+        "title": "Preparazione all'operazione 2",
+        "text": "Sincronizzazione dei dati completata. Sono pronta in qualsiasi momento!"
+      },
+      {
+        "title": "Aggiunta alla squadra 1",
+        "text": "Hai finalmente deciso di rivolgerti a me? Eh eh. Immagino abbia una situazione scomoda di cui occuparti."
+      },
+      {
+        "title": "Aggiunta alla squadra 2",
+        "text": "Sono qui. Se hai problemi di equipaggiamento, ci penso io."
+      },
+      {
+        "title": "Cambio arma",
+        "text": "Questa coppia di pistole pesanti sembra perfetta. Mmh... Si potrebbero apportare alcune migliorie... Credo proprio che le trasformerò in qualcosa di speciale!"
+      },
+      {
+        "title": "Cambio equipaggiamento",
+        "text": "Posso applicare un altro rivestimento al mio equipaggiamento? Questa combinazione di colori non si intona ai miei capelli."
+      },
+      {
+        "title": "Attivazione matrice delle abilità",
+        "text": "Troppo facile! Dammi una sfida vera!"
+      },
+      {
+        "title": "Visione delle registrazioni di combattimenti",
+        "text": "Ho messo il turbo e sono passata avanti a tutto. Imparo in fretta, quindi non fa differenza."
+      },
+      {
+        "title": "Promozione operatore 1",
+        "text": "Ho ricevuto una promozione? Uuuh, hai proprio occhio per il talento, Endmin!"
+      },
+      {
+        "title": "Promozione operatore 2",
+        "text": "Quindi questa promozione significa che... posso avere un laboratorio più grande?"
+      },
+      {
+        "title": "Promozione operatore 3",
+        "text": "Combattere in una battaglia vera è molto diverso dallo studiare video di combattimento... E ho fatto *enormi* passi avanti, sopravvivendo a tutti quei viaggi nella frontiera. No?"
+      },
+      {
+        "title": "Promozione operatore 4",
+        "text": "Assistente? Assolutamente NO! Non me ne faccio niente! La mia Campanellina è in grado di occuparsi di tutto! L'organizzazione dei dati e la pulizia del laboratorio sono solo alcune delle sue funzionalità di base! E poi, non si lamenterebbe mai dei miei impegni giornalieri."
+      },
+      {
+        "title": "Operatore a rapporto",
+        "text": "Ciao, Endmin. Ci incontriamo ancora. Chiamami pure Yvonne. È passato tanto tempo dall'ultima volta che sono uscita. È un piacere fare affari con te!"
+      },
+      {
+        "title": "Attesa 1",
+        "text": "Fai il bravo, Gelobyte! Andiamo a spasso con l'Endmin!"
+      },
+      {
+        "title": "Attesa 2",
+        "text": "Da questa parte, Endmin! Oh, ho con me un po' di cose..."
+      },
+      {
+        "title": "Assegnazione a una struttura",
+        "text": "Va bene, va bene. Ho molta dimestichezza con questo genere di cose, perciò tu rilassati pure!"
+      },
+      {
+        "title": "Saluto 1",
+        "text": "Endmin! La camera per i test dell'equipaggiamento ora la occupo io. Grazie mille!"
+      },
+      {
+        "title": "Saluto 2",
+        "text": "È appena arrivato l'ultimo numero del mensile MARTHE. Ti va di leggerlo con me?"
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 1",
+        "text": "*Sospira*... Ogni volta che studio il sistema industriale automatizzato, non posso fare a meno di pensare che sia... pura perfezione! La produzione diretta dal NAP non è più solo un'azione fredda e ripetitiva... ma un sistema vivente, che respira, fatto da processi ripetuti che si intrecciano! È davvero ingegnoso! Devo provarlo. E dai, possooo?"
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 2",
+        "text": "Sarò sincera con te, Endmin. Mi piace il tuo stile, ma non credi che sia ora di rinnovare il guardaroba? Dai, andiamo a prenderti qualcosa di più luminoso e sgargiante! Il tuo nuovo stile sarà una tendenza di moda. Te lo garantisco!"
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 3",
+        "text": "Perlica mi aveva detto che non avrei potuto portare con me i miei Cippybomba perché diceva che sono un rischio per la sicurezza. Ma io non posso vivere senza di loro! *Sospira* Alla fine, sono scesa a un compromesso e ho smantellato i loro moduli di demolizione, prima di imbarcarmi su questa nave."
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 4",
+        "text": "Sto organizzando una gita a La Fantoma. Mi mancano un po' le spiagge e la brezza oceanica... Vuoi venire anche tu, Endmin? Possiamo anche dare un'occhiata alle ultime strutture ingegneristiche sulla costa. Ho sentito che hanno appena sviluppato un nuovo strato di rivestimento resistente alla Contaminazione."
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 5",
+        "text": "Non abbiamo neanche una foto insieme, Endmin! Che ne dici di un selfie? Così lo aggiungo alla raccolta dei momenti speciali di Yvonne. E se non veniamo adorabili, la colpa è della pessima illuminazione della Dijiang, non delle mie abilità!"
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 6",
+        "text": "A quanto pare, abbiamo gusti simili in fatto di musica, Endmin! Questo significa che puoi passare dal mio laboratorio e ascoltare con me il mio ultimo vinile, appena arriva. Dopotutto, la buona musica è ancora più gradevole in ottima compagnia!"
+      },
+      {
+        "title": "Offerta regali",
+        "text": "Ho una cosina per te. Aprila, quando torni a casa. Eh eh, ti piacerà di sicuro, perché ho chiesto a molti \"professionisti\" di accertarsene!"
+      },
+      {
+        "title": "Accettazione regali",
+        "text": "Oooh, grazie! Non preoccuparti, anche se è un regalo un po' strano, ne farò tesoro per sempre... perché è da parte tua!"
+      },
+      {
+        "title": "Dialogo fiducia 1",
+        "text": "Lo scopo non è mai stato massimizzare le prestazioni delle macchine. No, il mio obiettivo è fornire agli utenti un'esperienza priva di panico e a prova di idiota. Farli anche ridere sarebbe la ciliegina sulla torta. Dopotutto, gli strumenti dovrebbero rendere la vita più facile, non più difficile."
+      },
+      {
+        "title": "Dialogo fiducia 2",
+        "text": "Endmin, puoi prestarmi le tue Arti di Originium? Con i controlli di precisione sui circuiti di Originium, potrei apportare moltissime modifiche ai progetti. Per esempio... ho sempre voluto dare a Gelobyte un modulo riscaldante. Oh, sarebbe magnifico! Ma un momento... Se fosse in grado di riscaldare, non sarebbe più Gelobyte..."
+      },
+      {
+        "title": "Dialogo fiducia 3",
+        "text": "Avevo tre anni la prima volta che lessi di te in un famoso libro sulla scienza. Diceva che sei una leggenda con un sacco di responsabilità, ma la tua vera personalità è... adorabile, credo? *Ridacchia* Oh, forse non volevi sapere come parlavano di te in quelle copie non autorizzate. Sarebbe stato meglio tenerti all'oscuro..."
+      },
+      {
+        "title": "Dialogo fiducia 4",
+        "text": "La prima volta che mi sono occupata del mio progetto per la robocucciola, il prototipo era gigantesco! Non riuscivano nemmeno a farlo entrare nell'hangar dei veicoli! Pensa che l'USLT voleva un impianto di estrazione pesante su ruote per neutralizzare i grossi ammassi di Contaminazione. Ma che ne è della gente che deve affrontare la Contaminazione che si insinua nella propria casa? Dovrebbe aspettare e pregare che qualche uslino si faccia vivo? E dai, qualcuno doveva effettuare degli studi di miniaturizzazione. Perciò, ho passato mesi nel Parco scientifico a lavorarci... I risultati parlano da sé. Gli eventi successivi hanno dimostrato che la mia decisione è stata incredibilmente saggia!"
+      },
+      {
+        "title": "Dialogo fiducia 5",
+        "text": "Musica favolosa, concerti entusiasmanti, moda chic, albe e tramonti magnifici sull'orizzonte talossiano... Lo so che tutto ciò che amo vacilla sull'orlo della distruzione. È il motivo per cui sono diventata Endfielder. Voglio dare il mio contributo e assicurarmi che la fragile bellezza del nostro mondo sopravviva. Insomma, voglio divertirmi ancora un po', perciò non lascerò che questo mondo giunga alla fine; non finché ci sarò io!"
+      },
+      {
+        "title": "Chiacchierata 1",
+        "text": "Se vuoi saperlo, sceglierei una città della CCGT nella Cintura per la qualità di vita. Ma per il lavoro? PROPRIO NO! Le regole aziendali prevedono che i dipendenti timbrino il cartellino sei volte al giorno. Te l'immagini?!"
+      },
+      {
+        "title": "Chiacchierata 2",
+        "text": "Questo è della Witching Hour. ADORO il loro stile. Per il design dei loro prodotti, traggono ispirazione da un sacco di cose diverse; persino dalla consistenza e dalle venature del carapace degli Aggeloi! Il pericolo è così... attraente. Non trovi, Endmin?"
+      },
+      {
+        "title": "Chiacchierata 3",
+        "text": "Yvonne è un nome della Gallia. Mio padre mi ha detto che abbiamo ereditato un lascito grandioso e che tutti ne sono molto orgogliosi, in famiglia. Ma non condivido del tutto questo sentimento. Terra è già abbastanza lontano e quell'antico impero è ormai perduto. Cosa c'è di tanto importante negli alberi genealogici o nei legami di sangue? E poi, quel tizio, \"Corsi-coso primo\"... era davvero tanto speciale?"
+      },
+      {
+        "title": "Chiacchierata 4",
+        "text": "Oh, questo? Beh... ho solo preso in prestito il connettore della fornace termica nel laboratorio. La compatibilità con il bollitore da cucina è stata puramente casuale. Te lo dico io, il merito è tutto della mia competenza tecnica. Non guardarmi come se fossi una scansafatiche... Oh, e va bene! Ne do un po' anche a te... Ma non dire niente a Perlica, va bene?"
+      },
+      {
+        "title": "Chiacchierata 5",
+        "text": "Sono stata una stagista alla CCGT, all'ASH e all'USLT, ma il reparto risorse umane della Endfield mi ha presentato un'offerta che non potevo proprio rifiutare: accesso illimitato alla banca dati della Endfield su tutto l'Ætherspazio! Hanno persino calcato su questa frase: \"Il livello di autorità dell'accesso sarà pari a quello dell'Endministrator\"."
+      },
+      {
+        "title": "Argomento: Ætherspazio",
+        "text": "Non sappiamo quasi niente dell'Ætherspazio. Potrebbe essere un luogo totalmente oscuro... o un regno di caos assoluto. Per ora, i fenomeni della Contaminazione sono l'unica cosa osservabile. Hanno un sacco di colori strani... come se le leggi classiche che governano lo spettro ottico non si applicassero. A dire la verità, dopo aver passato tanto tempo a studiarli... non posso fare a meno di trovarli piuttosto... ammalianti."
+      },
+      {
+        "title": "Argomento: città della CCGT",
+        "text": "Ogni anno, visito varie città della CCGT. Mi rifornisco di materiali ed equipaggiamenti ad Alloycarrot e faccio incetta di film al festival cinematografico di Nuova Wrankwood. Ma la mia città preferita è senza dubbio Kjersch. Ti sorprende? Mi piace la neve, il cielo aperto e la serenità."
+      },
+      {
+        "title": "Argomento: cultura popolare",
+        "text": "La musica retrò di Terra la ascoltavano i miei nonni da adolescenti. Quello che va forte ora è il neo-talossiano. ADORO la canzone STEREO! Siamo talossiani, nati e cresciuti qui... È normale che produciamo hit adatte a Talos-II."
+      },
+      {
+        "title": "Argomento: infanzia",
+        "text": "Quando ero bambina, i miei genitori erano sempre impegnati e io rimanevo spesso sola. Perciò mi regalarono un crestalone come compagno di giochi. Era chiassoso, irascibile e non faceva altro che mettermi la stanza in disordine... ma adoravo quella creatura. Avrai già capito che è stata la mia fonte di ispirazione per il Cippybomba. Anche se le mie creazioni sono molto meno rumorose, hanno ereditato il carattere esplosivo di quell'adorabile palla di piume."
+      },
+      {
+        "title": "Argomento: Valle IV",
+        "text": "Non avevo previsto di stare a Valle IV, quando sono arrivata qui per la prima volta tre anni fa. Ma il professor Crowe mi ha mostrato alcuni dati raccolti dalle spaccature nell'Area test dell'Æther... e mi hanno letteralmente rapita! È un peccato che poi non siamo più andati d'accordo su nulla. Una vera e propria battuta d'arresto nella ricerca. Il vecchio Crowe non riusciva a superarmi, perciò mi ha mandata da Andre. Indovina un po'? Il mio progetto ha iniziato a produrre risultati concreti con il fantastico supporto tecnico della Endfield! Non ho fatto altro che macinare scritti a destra e a manca per tre anni! Oh, Valle IV è davvero il luogo della mia fortuna."
+      },
+      {
+        "title": "Individuazione risorsa/collezionabile 1",
+        "text": "Oooh! Quello lo devo prendere per i miei studi."
+      },
+      {
+        "title": "Individuazione risorsa/collezionabile 2",
+        "text": "Psss, ti dico un segreto. Da quella parte c'è una bella sorpresa!"
+      },
+      {
+        "title": "Individuazione zona non esplorata",
+        "text": "Non sono mai stata in quel posto. Andiamo a dare un'occhiata."
+      },
+      {
+        "title": "Individuazione nemico potente",
+        "text": "Cippybomba sembra un po' teso. Quello dev'essere un tipo tosto."
+      },
+      {
+        "title": "Estrazione 1",
+        "text": "Avrei dovuto adornare le mie bang bang con un modulo di estrazione specializzato."
+      },
+      {
+        "title": "Estrazione 2",
+        "text": "Sono qui per aiutare! Guarda caso sono una demolitrice esperta!"
+      },
+      {
+        "title": "Apertura di una cassa",
+        "text": "Cavoli, è proprio un tesoro pazzesco."
+      },
+      {
+        "title": "Acquisizione di Aurylene",
+        "text": "Che colore brillante, effervescente e fluido... Ho sempre voluto uno smalto per unghie così."
+      },
+      {
+        "title": "Eliminazione Contaminazione",
+        "text": "Neutralizzazione assoluta! Che ne pensi?"
+      },
+      {
+        "title": "Riposo",
+        "text": "Fiuu. Non vedevo l'ora di poter fare questa pausa. Devo proprio ravviarmi i capelli..."
+      },
+      {
+        "title": "Utilizzo di gadget 1",
+        "text": "Niente panico. Prova questo."
+      },
+      {
+        "title": "Utilizzo di gadget 2",
+        "text": "Aaah... Mi sento molto meglio!"
+      },
+      {
+        "title": "Avviso di pericolo",
+        "text": "Scappa, ti copro io!"
+      },
+      {
+        "title": "Ferita",
+        "text": "Argh... Fa male... Me le hanno date di brutto..."
+      },
+      {
+        "title": "Esaurimento PS",
+        "text": "Diamine... Sono fuori gioco..."
+      },
+      {
+        "title": "Incoraggiamento alla squadra 1",
+        "text": "Spettacolare!"
+      },
+      {
+        "title": "Incoraggiamento alla squadra 2",
+        "text": "Siete fantastici, squadra!"
+      },
+      {
+        "title": "Risposta all'incoraggiamento 1",
+        "text": "A-ah! La grandiosità è il mio forte!"
+      },
+      {
+        "title": "Risposta all'incoraggiamento 2",
+        "text": "Splendido lavoro di squadra."
+      },
+      {
+        "title": "Inizio combattimento 1",
+        "text": "Attrezzatura carica e pronta."
+      },
+      {
+        "title": "Inizio combattimento 2",
+        "text": "Fuoco di supporto pronto all'azione!"
+      },
+      {
+        "title": "Vittoria in combattimento 1",
+        "text": "La vittoria è nostra! Facciamoci un selfie."
+      },
+      {
+        "title": "Vittoria in combattimento 2",
+        "text": "E comunque, anche io sono un'esperta di combattimento."
+      },
+      {
+        "title": "Vittoria in combattimento 3",
+        "text": "Umpf. Questo trionfo si merita un bel party!"
+      },
+      {
+        "title": "Vittoria in combattimento 4",
+        "text": "Le battaglie sono difficili da prevedere, persino per Campanellina. Ma la prossima volta andrà meglio!"
+      },
+      {
+        "title": "Sconfitta in combattimento",
+        "text": "Ma che contamineria è questa?! Alzo la potenza di Gelobyte del 5000 percento! Vediamo come faranno a batterci!"
+      },
+      {
+        "title": "Colpo finale 1",
+        "text": "Colpo energetico!"
+      },
+      {
+        "title": "Colpo finale 2",
+        "text": "Un altro colpo!"
+      },
+      {
+        "title": "Abilità di combattimento 1",
+        "text": "Senti il brivido!"
+      },
+      {
+        "title": "Abilità di combattimento 2",
+        "text": "Sbollisci!"
+      },
+      {
+        "title": "Abilità di combattimento 3",
+        "text": "Congelamento!"
+      },
+      {
+        "title": "Abilità combo pronta 1",
+        "text": "Pronti a esplodere!"
+      },
+      {
+        "title": "Abilità combo pronta 2",
+        "text": "Carica completa."
+      },
+      {
+        "title": "Esecuzione combo 1",
+        "text": "Vai, Gelobyte!"
+      },
+      {
+        "title": "Esecuzione combo 2",
+        "text": "Rinfreschiamoci un po'!"
+      },
+      {
+        "title": "Mossa letale 1",
+        "text": "KABUM!"
+      },
+      {
+        "title": "Mossa letale 2",
+        "text": "Colpo peeerfetto!"
+      },
+      {
+        "title": "Abilità suprema 1",
+        "text": "Su, balliamo!"
+      },
+      {
+        "title": "Abilità suprema 2",
+        "text": "Passione megacarica!"
+      },
+      {
+        "title": "Abilità suprema 3",
+        "text": "Fuochi d'artificio per te!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

@@ -119,7 +119,325 @@
         "name": "Amal",
         "description": "Amal: Membela Keadilan\nSelalu mengutamakan kepentingan orang lain. Memang begitulah jiwa kesatria sejati."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Persiapan Operasi 1",
+        "text": "Siap-siap? Heh. Pedangku selalu siap dan tak pernah beristirahat!"
+      },
+      {
+        "title": "Persiapan Operasi 2",
+        "text": "Kali ini, tugaskan aku di baris depan. Aku ingin jadi yang pertama keluar ke medan!"
+      },
+      {
+        "title": "Menambahkan ke Tim 1",
+        "text": "Sudah giliran kita? Bagus. Kita memang harus menyerang saat momennya pas."
+      },
+      {
+        "title": "Menambahkan ke Tim 2",
+        "text": "Biar kuurus!"
+      },
+      {
+        "title": "Berganti Senjata",
+        "text": "Wow. Keren juga. Tapi, aku juga bisa pakai senjata edisi standar untuk menghajar musuh tanpa harus berlebihan."
+      },
+      {
+        "title": "Berganti Gear",
+        "text": "Hmm .... Mungkin seorang master sejati mestinya pakai perlengkapan yang lebih ringan."
+      },
+      {
+        "title": "Aktivasi Matriks Kemampuan",
+        "text": "Dengan latihan, muncullah pengetahuan tentang seni swordmancer!"
+      },
+      {
+        "title": "Menonton Rekaman Pertarungan",
+        "text": "Jadi, yang ini ... lalu disusul yang ini? Baiklah, biar kutangani!"
+      },
+      {
+        "title": "Promosi Operator 1",
+        "text": "Kuminta Perlica menunda promosiku hingga sekarang! Aku baru akan tenang kalau kau sendirilah yang menyampaikan persetujuan promosi untukku dari Endfield, Endmin!"
+      },
+      {
+        "title": "Promosi Operator 2",
+        "text": "Bagaimana menurutmu? Apa aku berhasil memecahkan rekor promosi tercepat? Aku kan lulus beberapa tahun lebih cepat di Balai Tanjian. Kaget? Heheh. Dari dulu aku memang juara kelas."
+      },
+      {
+        "title": "Promosi Operator 3",
+        "text": "Wah, ternyata aku punya keahlian lain selain seni bela diri. Mau bagaimana lagi, tetap saja akhirnya akulah operator terbaikmu. Oh, aku jadi malu gara-gara pujianmu—puji aku terus, dong!"
+      },
+      {
+        "title": "Promosi Operator 4",
+        "text": "Aku masih jauh dari sempurna. Kata orang, pedang ibuku bahkan sanggup mengoyak awan, Endmin. Dan memang itulah yang akan kulakukan ... serta menjadi operator kepercayaanmu dan Perlica!"
+      },
+      {
+        "title": "Operator Siap Bertugas",
+        "text": "ENDMIN! APA KA——Oh. Oke, aku harus ikuti prosedur. Baiklah. Operator Endfield, Chen Qianyu, siap bertugas!"
+      },
+      {
+        "title": "Siaga 1",
+        "text": "Lihat, nih! Hehe, keren, ‘kan?"
+      },
+      {
+        "title": "Siaga 2",
+        "text": "Di sini, Endmin! Hihi."
+      },
+      {
+        "title": "Menugaskan ke Fasilitas",
+        "text": "Roger. Tenang sajalah, Endmin!"
+      },
+      {
+        "title": "Menyapa 1",
+        "text": "Apa kabar, Endmin? Mau latih tanding denganku?"
+      },
+      {
+        "title": "Menyapa 2",
+        "text": "Biar kuurus sisanya, Endmin. Sana, istirahatlah—kau sudah bekerja keras!"
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 1",
+        "text": "Woah! Nyaris saja aku tak melihatmu, Endmin! Heheh, yah. Aku sedang berusaha menyempurnakan jurus baru dan tak memperhatikan arah gerakku."
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 2",
+        "text": "Tak pernah kubayangkan aku akan berada di tempat setinggi *INI* setelah lulus dari Hongshan. Dari tempat kita ini, Talos-II kelihatan sangat kecil. Kira-kira, aku dan pedangku bisa pergi sampai sejauh mana, ya ... Talos, mungkin? Bagaimana menurutmu, Endmin?"
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 3",
+        "text": "Endmin! Kau sudah baca buku legenda seni bela diri yang kupinjamkan itu, belum? Bukan, bukan, bukan, itu bukan novel. Buku itu didasarkan pada peristiwa nyata di Yan! Apa? Kau tak bisa membayangkan ada orang yang “jarinya sanggup memotong seperti pisau”? Oh .... Benar juga, sih .... Tapi, “tinju yang sanggup menentukan arah Musim Semi dan Musim Gugur” malah lebih parah lagi, ‘kan?"
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 4",
+        "text": "Aku sedang apa? OW! Aduh. Aku sedang melemaskan otot-ototku. Gara-gara kerja sebagai Endfielder dan sibuk menjalankan misi, target olahraga harianku jadi terabaikan .... Eh, mau ikut peregangan sebentar, tidak? Aku tahu beberapa titik meridian tubuh, lho! Sini! Lepas jaketmu! Terima kasih kembali!"
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 5",
+        "text": "Ikut aku ke Gudang Senjata, yuk! Ada pedang yang harus kuambil. Sebaiknya gagangnya kuberi ukiran apa, ya? “Tebas sampai tuntas” atau “Buktikan kemampuan tanpa batas”? Endmin, bantu aku memilih, dong!"
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 6",
+        "text": "Belum lama ini, latihanku tak berkembang! Aduh. Bukan gara-gara teknik, tapi kurasa ada yang mengusikku dari dalam. Menurut legenda, senjata bagus akan mengikuti pikiran pemakainya .... Tapi ... tapi, ini cuma keping baja biasa! Endmin! Bantu aku, dong!"
+      },
+      {
+        "title": "Menawarkan Hadiah",
+        "text": "“Hadiah hanyalah lambang ketulusan yang mendalam.” Kata orang sih begitu. Tapi, kalau benar-benar tulus, hadiah apa pun tak akan bisa melambangkannya. Yah, semoga kau suka hadiah ini, Endmin!"
+      },
+      {
+        "title": "Menerima Hadiah",
+        "text": "Untuk ... ku?! WOW .... Kubuka sekarang juga, ya!"
+      },
+      {
+        "title": "Dialog Kepercayaan 1",
+        "text": "Perlica selalu saja membicarakanmu tanpa henti, tapi sekarang kau ada di hadapanku! Kalau boleh kubilang, rasanya seperti mimpi! Apa? Tidak! Aku tak kecewa! Bisa makan bersama dan tinggal seatap dengan legenda terhebat kepercayaan Perlica justru sangat menarik—! Sebentar. Ada sisa makanan di mukamu."
+      },
+      {
+        "title": "Dialog Kepercayaan 2",
+        "text": "Setelah pergi dari rumah, aku menjelajahi Sentrapolis sebentar, lalu bergabung ke Endfield. Heheh. Sebenarnya aku ingin jadi pahlawan wanita tak bernama yang legendaris—yang serbamisterius. Tapi, setelah merasakan hidup di luar Hongshan, aku sadar bahwa kesatria sejati tak bisa lepas tangan dari segala tindakannya. Jadi ... aku berusaha lebih santai dan mengurangi pengembaraanku. Tak apa, akan kuraih kembali kesempatan yang terlewat ini."
+      },
+      {
+        "title": "Dialog Kepercayaan 3",
+        "text": "Kalau tak salah, saat itu umurku sepuluh tahun ... atau sebelas. Aku sedang berlatih pedang diam-diam di bukit di belakang Balai Tanjian, lalu tak sengaja bertemu Aggelos yang terpisah dari kawanannya. Itulah pertama kalinya aku bertarung sungguhan. Saat pulang dengan pedang patah, ayah memujiku, tapi dia juga bilang, “Pedangmu memang patah, tapi ada orang-orang yang bahkan tak punya pedang.” Sepertinya aku harus belajar memahami sisi lain dalam diri ayahku. Kata-katanya itu membuatku terus bertanya-tanya hingga sekarang."
+      },
+      {
+        "title": "Dialog Kepercayaan 4",
+        "text": "Kenapa aku jadi Endfielder? Hmm .... Ceritanya panjang. Kalau sungguh ingin tahu kapan ketertarikanku mulai muncul .... Sepertinya saat aku membantu seorang Liberi berpakaian mewah menarik gerobak burdenbeast dari lumpur. Perly tersenyum sangat tulus kepadaku. Lalu, aku pun berpikir ... mungkin aku tak perlu lagi berkelana sendirian."
+      },
+      {
+        "title": "Dialog Kepercayaan 5",
+        "text": "Yinglung meninggalkan teman-temannya demi memenuhi tugasnya. Ibuku meninggalkanku demi Chi Xiao. Menurutku, kalau sudah menemukan panggilan hidup, orang cenderung akan ... meninggalkan hal-hal yang tak terlalu penting. Tapi, Endfield tak seperti itu. Segala hal dan semua orang sama pentingnya, dan tak satu pun akan ditinggalkan—Kalau Endfield sudah menetapkan visi untuk Talos-II, aku rela pakai pedang lain demi mewujudkan visi itu!"
+      },
+      {
+        "title": "Obrolan 1",
+        "text": "Mengalihkan Perlica dari pekerjaannya bukanlah hal mudah. Tapi, aku punya trik yang dulu sering kupakai kepada senior-senior ilmu pedangku. Kalau aku ingin mereka mulai bekerja, kutumpahkan saja semua tugas kepada mereka. Nah, tinggal dibalik saja. Kita bisa selesaikan semua pekerjaan Perly, jadi mau tak mau dia harus istirahat .... Apa? Lho, teknikku ini cerdas, ‘kan?"
+      },
+      {
+        "title": "Obrolan 2",
+        "text": "Tata rambutku? Gampang! Pakai saja sepasang tanduk untuk panduan agar simetris. Tetanggaku, Nenek Wang, bilang ini rahasia Forte dan mengajariku trik ini .... Aneh? Ya, memang begitulah kehidupan dayuan. Orang-orang saling bantu mengasuh anak-anak tetangga, dan kami tumbuh besar di lingkungan yang sama. Bisa dibilang, kami lebih dari sekadar tetangga. Rasanya seperti keluarga besar."
+      },
+      {
+        "title": "Obrolan 3",
+        "text": "Ilmu pedang spesialku terinspirasi oleh banyak sekali aliran! Inspirasi terbesar? Tentu saja guruku di Balai Tanjian. Dia mengajariku jurus-jurus disiplin, serangan yang efisien—pokoknya langsung ke intinya, tak perlu basa-basi. Lalu, ada juga pengaruh contoh dari ibuku yang diberikannya setelah aku merengek-rengek. Ilmu pedangnya adalah warisan turun-temurun dan sangat kompleks. Setiap jurus punya makna khusus. Sisanya ... yah, aku menciptakannya sendiri setelah membaca semua cerita tentang legenda swordmancer. Kesatria sejati harus punya beberapa teknik andalan, ‘kan?"
+      },
+      {
+        "title": "Obrolan 4",
+        "text": "Wuling adalah tempat beriklim basah, lembap, dan lengket, tapi aku tinggal di sana cukup lama dan akhirnya terbiasa dengan cuacanya. Temboknya mengeluarkan tetesan air saat Ombak Hawar pasang. Tapi, makanan Wuling enak sekali, dan orang-orang di sana lumayan—maksudku, sebagian besar warganya lumayan baik. Kenangan buruk? TIDAK! Tak ada hal yang kubenci dari tempat itu!"
+      },
+      {
+        "title": "Obrolan 5",
+        "text": "Kata orang-orang, ibuku menamaiku Qianyu. Untunglah namaku mudah ditulis dalam bahasa Yan. Aku jadi tak terlalu kerepotan saat Guruku menghukumku dengan menyuruhku menulis namaku seribu kali."
+      },
+      {
+        "title": "Topik: Hongshan",
+        "text": "Kalau lihat ke bawah dari anjungan komando Dijiang, kita bisa lihat Kawah Hongshan. Aku pergi dari tempat itu dua tahun lalu tanpa tujuan. Tapi, semua jalanan yang kutempuh itu bahkan tak lebih lebar dari satu kuku jariku jika dilihat dari sini .... Sepertinya aku harus terus berkelana sampai akhirnya aku tak bisa lagi mengukur perjalananku dengan jemariku, atau bahkan telapak tanganku. Kalau sudah begitu, mungkin aku sudah tak akan tersesat lagi!"
+      },
+      {
+        "title": "Topik: Rindu Ibu",
+        "text": "Ibuku punya sebilah pedang berwarna merah. Katanya, pedang itu pusaka keluarga yang diberikan seorang pahlawan wanita Yan kepada leluhur kami. Aku ingat orang-orang tua dari seluruh Hongshan mendatangi rumah kami untuk melihat pedang itu dan mengenang kisah-kisahnya yang luar biasa. Lalu ... ibuku raib begitu saja bersama pedang itu. Setelah dewasa, akhirnya aku sadar bahwa pedang itu bukan sekadar senjata. Pedang itu adalah panggilan hidup. Keyakinan. Aku masih ingin mencari ibuku. Tapi, Qianyu kecilnya ini akan berusaha mencarinya dengan pedangnya sendiri."
+      },
+      {
+        "title": "Topik: Perlica",
+        "text": "Saat pertama kali bertemu dengannya, Perlica memang sudah gila kerja. Beberapa kali kudengar bahwa dia bekerja begitu keras gara-gara pengaruh seorang Endministrator. Aku kasihan sekali kepada Perly—tapi, setelah melihatmu, aku jadi paham kenapa dia seperti itu .... Terlepas dari visi besar dan pekerjaannya, kurasa Perlica hanya ingin bertarung di sisimu."
+      },
+      {
+        "title": "Sumber Daya/Barang Koleksi Terdeteksi 1",
+        "text": "Hm, sepertinya ada barang di sana?"
+      },
+      {
+        "title": "Sumber Daya/Barang Koleksi Terdeteksi 2",
+        "text": "Ada harta karun! Ayo kita lihat!"
+      },
+      {
+        "title": "Area yang Belum Dijelajahi Terdeteksi",
+        "text": "Tunggu. Kita belum pernah kemari, ‘kan?"
+      },
+      {
+        "title": "Musuh Kuat Ditemukan",
+        "text": "Ada bahaya di depan sana. Biar kulihat seberapa kuat dia."
+      },
+      {
+        "title": "Penambangan 1",
+        "text": "Tak terduga, ‘kan? Ilmu pedangku bisa dipakai untuk menyerang formasi batuan!"
+      },
+      {
+        "title": "Penambangan 2",
+        "text": "Biar kuurus sisanya! Lebih cepat kalau pakai pedang!"
+      },
+      {
+        "title": "Membuka Kerat",
+        "text": "Biasanya ada kitab rahasia tersembunyi dalam kerat seperti ini."
+      },
+      {
+        "title": "Mendapatkan Aurylene",
+        "text": "Bundar dan berkilau .... Oh, ukuran Aurylene memang segini."
+      },
+      {
+        "title": "Menyingkirkan Hawar",
+        "text": "Satu pedang saja tak akan bisa menghentikan banjir. Mungkin seperti inilah rasanya."
+      },
+      {
+        "title": "Istirahat",
+        "text": "Enak istirahatnya! Setelah pulih, kita bisa kejar ketertinggalan kita!"
+      },
+      {
+        "title": "Penggunaan Taktis 1",
+        "text": "Cepat! Ambil ini!"
+      },
+      {
+        "title": "Penggunaan Taktis 2",
+        "text": "Fyuh .... Aku sudah merasa baikan!"
+      },
+      {
+        "title": "Peringatan Bahaya",
+        "text": "Awas! Mundur!"
+      },
+      {
+        "title": "Cedera",
+        "text": "Hngh! Aku tak apa! Fokus bertarung saja."
+      },
+      {
+        "title": "0 HP",
+        "text": "Sial .... Hngh ...."
+      },
+      {
+        "title": "Penyemangat Tim 1",
+        "text": "Jurusmu luar biasa!"
+      },
+      {
+        "title": "Penyemangat Tim 2",
+        "text": "Hore! Kerja sama tim kita luar biasa!"
+      },
+      {
+        "title": "Respons Penyemangat 1",
+        "text": "Heh! Ini memang sudah tugasku!"
+      },
+      {
+        "title": "Respons Penyemangat 2",
+        "text": "Dengan bersatu, serangan pedang jadi terpadu!"
+      },
+      {
+        "title": "Mulai Pertarungan 1",
+        "text": "Pedang terhunus, siap membuat musuh hangus!"
+      },
+      {
+        "title": "Mulai Pertarungan 2",
+        "text": "Biar kuurus."
+      },
+      {
+        "title": "Menang Pertarungan 1",
+        "text": "Fyuuu—memang mestinya begini."
+      },
+      {
+        "title": "Menang Pertarungan 2",
+        "text": "Menang mudah."
+      },
+      {
+        "title": "Menang Pertarungan 3",
+        "text": "Bagus!"
+      },
+      {
+        "title": "Menang Pertarungan 4",
+        "text": "Waduh ... nyaris saja. Cepat. Rawat yang terluka!"
+      },
+      {
+        "title": "Kalah Bertarung",
+        "text": "... Kita lawan lagi mereka!"
+      },
+      {
+        "title": "Final Strike 1",
+        "text": "Rasakan, nih!"
+      },
+      {
+        "title": "Final Strike 2",
+        "text": "Sebelah sana!"
+      },
+      {
+        "title": "Skill Tarung 1",
+        "text": "Tebas!"
+      },
+      {
+        "title": "Skill Tarung 2",
+        "text": "Sambar!"
+      },
+      {
+        "title": "Skill Tarung 3",
+        "text": "Tangkis!"
+      },
+      {
+        "title": "Skill Kombo Siap 1",
+        "text": "Sekarang peluang kita!"
+      },
+      {
+        "title": "Skill Kombo Siap 2",
+        "text": "Biar kuurus!"
+      },
+      {
+        "title": "Penggunaan Kombo 1",
+        "text": "Giliranku!"
+      },
+      {
+        "title": "Penggunaan Kombo 2",
+        "text": "Akulah lawanmu!"
+      },
+      {
+        "title": "Penuntas 1",
+        "text": "Titik lemahnya kelihatan!"
+      },
+      {
+        "title": "Penuntas 2",
+        "text": "Hancurlah!"
+      },
+      {
+        "title": "Ultimate 1",
+        "text": "Tebas sampai tuntas!"
+      },
+      {
+        "title": "Ultimate 2",
+        "text": "Tunjukkan kemampuan tanpa batas!"
+      },
+      {
+        "title": "Ultimate 3",
+        "text": "Semua akan kuberantas!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

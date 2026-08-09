@@ -114,7 +114,329 @@
         "name": "Olahraga",
         "description": "Olahraga: Latihan Fisik Terpadu\nAkekuri sudah meninggalkan fesyen, seni murni, sastra, dan hal-hal lain yang dulu menjadi minatnya. Kini, dia menghabiskan waktu untuk olah fisik."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Persiapan Operasi 1",
+        "text": "Siap sedia! Ayo beraksi, Kawan-kawan!"
+      },
+      {
+        "title": "Persiapan Operasi 2",
+        "text": "Ini kesempatan kita untuk belajar dan berkembang!"
+      },
+      {
+        "title": "Menambahkan ke Tim 1",
+        "text": "Akekuri, Op Z7, melapor! Senang sekali bisa ikut misi ini. Semoga kita berhasil!"
+      },
+      {
+        "title": "Menambahkan ke Tim 2",
+        "text": "Bagus, ada tugas lagi dari Endmin! Ini memang cara paling bagus untuk belajar!"
+      },
+      {
+        "title": "Berganti Senjata",
+        "text": "Senjata baru, hmm ... rasanya jelas unik. Baiklah, aku harus susun taktik dan strategi baru!"
+      },
+      {
+        "title": "Berganti Gear",
+        "text": "Hmm, pas sekali untukku! Akan segera kusampaikan masukanku ke Gudang Senjata."
+      },
+      {
+        "title": "Aktivasi Matriks Kemampuan",
+        "text": "Rasanya seperti menempuh SKS, tapi bukan seperti dalam perkuliahan."
+      },
+      {
+        "title": "Menonton Rekaman Pertarungan",
+        "text": "Rupanya beginilah debrief elite ... sungguh mencerahkan pikiran!"
+      },
+      {
+        "title": "Promosi Operator 1",
+        "text": "Ohhh, promosi? Ini suatu kehormatan! Rasanya seperti pengakuan untukku dan seluruh kru Z7. Yakinlah, kami akan terus berusaha lebih baik lagi!"
+      },
+      {
+        "title": "Promosi Operator 2",
+        "text": "Masih banyak misi berisiko lagi? Ah, aku tak takut, justru jadi sangat bersemangat. Ini bukti kau percaya kepadaku, dan menurutku ini kesempatan bagus bagi kita untuk belajar dan berkembang."
+      },
+      {
+        "title": "Promosi Operator 3",
+        "text": "Endmin, kau nanti ada waktu? Tim mengadakan pesta perayaan kecil untukmu. Aku sudah memanggang kue Mont Blanc khusus untukmu. Pokoknya jangan sampai melewatkannya!"
+      },
+      {
+        "title": "Promosi Operator 4",
+        "text": "Dulu, semasa sekolah, aku pernah belajar tentang teori yang menyebut bahwa semua orang pada akhirnya akan dipromosikan untuk memegang peran yang tak bisa mereka tangani. Jadi, andai kata aku terlalu lama tak berkembang, Endmin, tolong tuntun aku, ya."
+      },
+      {
+        "title": "Operator Siap Bertugas",
+        "text": "Kapten Akekuri dari Tim Operasi Z7 melapor! Dokumen operasi, ringkasan anggaran, dan rencana tindakan sudah siap ditinjau. Mana yang ingin kaubaca duluan?"
+      },
+      {
+        "title": "Siaga 1",
+        "text": "Tim yang kuat tak punya titik lemah."
+      },
+      {
+        "title": "Siaga 2",
+        "text": "Ayolah, izinkan aku berusaha juga demi Endfield!"
+      },
+      {
+        "title": "Menugaskan ke Fasilitas",
+        "text": "Serahkan saja kepadaku. Aku sudah pernah lakukan tugas ini."
+      },
+      {
+        "title": "Menyapa 1",
+        "text": "Betapa sempitnya dunia ini, Endmin! Kau juga baru saja menyelesaikan misi?"
+      },
+      {
+        "title": "Menyapa 2",
+        "text": "Mau rehat minum kopi, Endmin? Aku bisa buatkan seteko kopi panas untukmu!"
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 1",
+        "text": "Senang bertemu denganmu, Endministrator. Aku Akekuri dari Tim Operasi Z7. Oh, tenang saja! Kami memang baru saja direformasi dan untuk sementara ini beroperasi diam-diam, tapi aku janji—kerja kami pasti bakal mengesankan."
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 2",
+        "text": "Kau sudah memandu Endfield sejak awal sekali, jadi kukira sikapmu bakalan lebih kaku. Tapi, ternyata kau lebih santai daripada yang kuduga—hihi, menurutku, justru seperti itulah yang namanya pemimpin sejati!"
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 3",
+        "text": "Jujur saja, aku lebih suka di Dijiang daripada menghadiri “acara mewah” yang diadakan kalangan elite bisnis di Neo Tsukushi. Orang-orang di sini lebih santai dan benar-benar berkontribusi nyata."
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 4",
+        "text": "Kau pernah makan nama yatsuhashi, tidak? Itu manisan tradisional Higashi dengan rasa kacang merah, matcha, dan kastanya panggang. Kalau mau cicipi, ikutlah dalam rapat tim Z7 mendatang."
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 5",
+        "text": "Hai, Endmin. Mau duduk-duduk sebentar sambil menikmati teh panas? Kami punya cerita keren dari misi kami!"
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 6",
+        "text": "Aku suka memandangi Talos-II dari Anjungan Komando. Semua kenanganku ada di sana—tempatku tumbuh besar, tempat yang terakhir didiami keluargaku, dan tempat yang berubah karenamu. Eh, kenapa kaget begitu? Aku dapat nilai A+ untuk pelajaran geologi planet dan sejarah modern, lho!"
+      },
+      {
+        "title": "Menawarkan Hadiah",
+        "text": "Ah, Endmin! Kubawakan oleh-oleh dari misi medan, nih. Semoga kau suka!"
+      },
+      {
+        "title": "Menerima Hadiah",
+        "text": "Wow, hadiah untukku?! Maksudnya, ini imbalan, atau apa ...?"
+      },
+      {
+        "title": "Dialog Kepercayaan 1",
+        "text": "Oh, kau ingin tahu kenapa murid teladan dari Neo Tsukushi malah memilih masuk Endfield? Jujur saja, aku justru bersyukur mereka memilihku. Aku jauh lebih suka Tim Operasiku daripada harus menjajaki karier di perusahaan. Di sini, aku bisa jadi petarung sekaligus perintis."
+      },
+      {
+        "title": "Dialog Kepercayaan 2",
+        "text": "Harapanku? Aku hanya ingin Ayah dan Ibuku rukun kembali. Ayahku harus bertarung melawan Aggelos, sedangkan ibuku mengelola toko keluarga. Tapi, kenapa mereka harus hidup terpisah gara-gara itu? Kalau mereka berdua sama-sama kerja di Endfield, mungkin mereka tak harus terpaksa memilih antara pekerjaan dan keluarga ...."
+      },
+      {
+        "title": "Dialog Kepercayaan 3",
+        "text": "Sewaktu kecil, aku bisa main “Bertarung Melawan Aggelos” dengan Ayah dan Paman. Mereka biasa menggendongku seolah-olah aku ini komandan. Lalu, sepuluh tahun kemudian, Paman dipanggil ke utara untuk bekerja sebagai shinobi peretas, dan tak pernah kembali lagi. Sejak itulah, ayah ibuku tak lagi bicara dengan satu sama lain. Aku nyaris lupa tentang “pertarungan” itu hingga akhirnya Endfield membuatku teringat tentangnya."
+      },
+      {
+        "title": "Dialog Kepercayaan 4",
+        "text": "Setelah mengajukan permohonan untuk mengaktifkan kembali Z7, aku menjalani latihan dan ujian keras selama satu tahun lebih. Tapi, yang sungguh berharga adalah karena aku bisa bertemu Catcher, Fluorite, Estella, dan Antal. Merekalah jantung tim kami, dan berkat merekalah, Z7 punya masa depan."
+      },
+      {
+        "title": "Dialog Kepercayaan 5",
+        "text": "Haha, sepertinya aku tak bisa menutup-nutupi apa pun darimu, Endmin. Yah, ibuku sudah merencanakan semuanya—sekolah bisnis, masuk TGCC, mengikuti jejaknya. Sayangnya, sekarang aku malah bergabung ke sini, dan itu bukan bagian rencananya. Jadiii ... tolong buat Endfield jadi yang paling hebat di Talos-II. Kalau tidak, dia bakal menyuruhku pulang! Oh, ya, kalau kau sempat berbelanja di Sentrapolis, bawalah kartu ini. Psst .... Iya, toko yang sudah dikenal semua orang itu."
+      },
+      {
+        "title": "Obrolan 1",
+        "text": "Aku tahu aku memang bukan petarung paling kuat—justru karena itulah pertahanan terbaik kita adalah kepercayaan dan kerja sama tim. Nah, sekarang kau sudah tahu kenapa senapan suar ini sangat penting!"
+      },
+      {
+        "title": "Obrolan 2",
+        "text": "Mau tahu caraku menjaga kelancaran operasi di Z7? Gampang saja—makan saja semua masakan Catcher, berikan perangkap lalat kepada Fluorite, temani Estella mendengarkan lagu-lagu berisik kesukaannya, dan tertawalah saat Antal melucu. Percayalah, cara ini pasti berhasil."
+      },
+      {
+        "title": "Obrolan 3",
+        "text": "Misi pertama kami hanyalah tugas pengawalan sederhana—membantu para ahli mesin Endfield membangun bendungan di perbatasan. Kedengarannya gampang, ya? Tapi, pekerjaan kami kacau sekali, sampai-sampai kami bisa buat buku “Jangan Lakukan 101 Hal Ini”. Tapi, saat bendungan itu akhirnya selesai, berdiri setinggi pinggang dalam air dingin ... Rasa bangga yang kami rasakan sungguh nyata."
+      },
+      {
+        "title": "Obrolan 4",
+        "text": "Kalau kau memimpin kami, Endmin ... menurutku, biar Estella dan Antal melindungi kita, aku dan Catcher akan memancing serangan musuh, lalu biarkan Fluorite melancarkan hantaman terakhir. Eh, rencanamu sama sekali bukan begitu?"
+      },
+      {
+        "title": "Obrolan 5",
+        "text": "Kau mau lihat kartu laporanku? Hmm, semua dapat A+, kecuali simulasi bisnis pada tahun kedua. Padahal rekan-rekan timku memercayakan semuanya kepadaku, jadi uups ... bisa dibilang, tim-tim lain bangkrut gara-gara aku. Setelah itu, dosenku bilang bahwa di Talos-II, strategi zero-sum bukanlah pendekatan terbaik. Itu satu-satunya nilai A- yang kudapat."
+      },
+      {
+        "title": "Topik: Catcher",
+        "text": "Semua orang bilang Catcher adalah rekan tim yang menyenangkan. Tapi, jujur saja, justru dialah yang paling butuh perhatian. Aku selalu buat kopi untuk semua orang saat rapat tim, dan dia selalu meminumnya sampai dua bulan—sampai akhirnya kami tahu bahwa ternyata dia alergi! Sejak itu, minumannya kuganti dengan cokelat panas."
+      },
+      {
+        "title": "Topik: Fluorite",
+        "text": "Sebagian orang takut kepada Fluorite gara-gara cara bicara dan latar belakangnya. Tapi, kalau sudah kenal, kau bakalan lihat bahwa sebenarnya dia pemberani dan menjunjung keadilan. Percayalah, kau tak bakal menyesal."
+      },
+      {
+        "title": "Topik: Estella",
+        "text": "Ada keluhan lagi gara-gara Estella kurang termotivasi? Ah, mana mungkin. Lihat saja catatannya. Sebenarnya, dia sangat bersemangat, suka bertualang, dan bekerja keras!"
+      },
+      {
+        "title": "Topik: Antal",
+        "text": "Oh, kau tak paham lelucon Antal? *Mengikik* Coba pahami dari sudut pandangnya, mungkin kau bisa memahami pola pikirnya dan menangkap kelucuannya .... Hahaha!"
+      },
+      {
+        "title": "Sumber Daya/Barang Koleksi Terdeteksi 1",
+        "text": "Sepertinya ada yang menarik di sana .... Ayo kita periksa!"
+      },
+      {
+        "title": "Sumber Daya/Barang Koleksi Terdeteksi 2",
+        "text": "Objek bernilai tinggi teridentifikasi. Meminta persetujuan untuk menjalankan operasi pengumpulan."
+      },
+      {
+        "title": "Area yang Belum Dijelajahi Terdeteksi",
+        "text": "Area tanpa identifikasi terdeteksi. Menunggu instruksi tambahan untuk bertindak."
+      },
+      {
+        "title": "Musuh Kuat Ditemukan",
+        "text": "Target berisiko tinggi terdeteksi. Tetap tenang, kita sudah berlatih untuk menghadapi ini."
+      },
+      {
+        "title": "Penambangan 1",
+        "text": "Mineral ini adalah material sangat penting untuk Endfield."
+      },
+      {
+        "title": "Penambangan 2",
+        "text": "Biar kubantu! Kita ini tim, ‘kan?"
+      },
+      {
+        "title": "Membuka Kerat",
+        "text": "Bagus! Sepertinya kita dapat barang bagus!"
+      },
+      {
+        "title": "Mendapatkan Aurylene",
+        "text": "Prioritas utama misi kita adalah mendapatkan Aurylene. Aku ingin tahu rahasia apa yang disembunyikannya ...."
+      },
+      {
+        "title": "Menyingkirkan Hawar",
+        "text": "Oke, satu sasaran teratasi! Maju menuju target kita!"
+      },
+      {
+        "title": "Istirahat",
+        "text": "Fyuh, sekarang akhirnya aku bisa duduk dan menikmati kopiku. Oh, aku juga harus merencanakan langkah berikutnya, memperbaiki gear-ku, dan memeriksa ranselku."
+      },
+      {
+        "title": "Penggunaan Taktis 1",
+        "text": "Tetap tenang, kita obati dulu lukamu."
+      },
+      {
+        "title": "Penggunaan Taktis 2",
+        "text": "Penanganannya tepat waktu!"
+      },
+      {
+        "title": "Peringatan Bahaya",
+        "text": "Berlindung, SEKARANG JUGA!"
+      },
+      {
+        "title": "Cedera",
+        "text": "Kapten yang baik ... tak boleh mundur ...."
+      },
+      {
+        "title": "0 HP",
+        "text": "Kalaupun aku tumbang ... aku tak akan menyerah."
+      },
+      {
+        "title": "Penyemangat Tim 1",
+        "text": "Wow, eksekusi sempurna!"
+      },
+      {
+        "title": "Penyemangat Tim 2",
+        "text": "Bagus sekali! Aku kagum!"
+      },
+      {
+        "title": "Respons Penyemangat 1",
+        "text": "Kuncinya memang kerja sama tim!"
+      },
+      {
+        "title": "Respons Penyemangat 2",
+        "text": "Tanpa kalian semua, kita tak mungkin berhasil!"
+      },
+      {
+        "title": "Mulai Pertarungan 1",
+        "text": "Kita akan bertarung langsung, jalankan Rencana A!"
+      },
+      {
+        "title": "Mulai Pertarungan 2",
+        "text": "Ayo! Aku percaya sepenuhnya kepada kalian!"
+      },
+      {
+        "title": "Menang Pertarungan 1",
+        "text": "Berikutnya TPA, APP ... tapi, pertama-tama, kita rayakan dulu kemenangan kita!"
+      },
+      {
+        "title": "Menang Pertarungan 2",
+        "text": "Perlahan tapi pasti, kita akan sampai juga."
+      },
+      {
+        "title": "Menang Pertarungan 3",
+        "text": "Bagus. Kita semua sudah sama-sama berusaha demi Endfield!"
+      },
+      {
+        "title": "Menang Pertarungan 4",
+        "text": "Kalau menang mulus, kita tak akan banyak belajar. Kita belajar justru dari kekalahan."
+      },
+      {
+        "title": "Kalah Bertarung",
+        "text": "Kesalahan membantu kita belajar. Aku yakin lain kali kita pasti bisa lebih baik lagi."
+      },
+      {
+        "title": "Final Strike 1",
+        "text": "Lihat, nih!"
+      },
+      {
+        "title": "Final Strike 2",
+        "text": "Serangan menusuk!"
+      },
+      {
+        "title": "Skill Tarung 1",
+        "text": "Sisir area!"
+      },
+      {
+        "title": "Skill Tarung 2",
+        "text": "Minggir!"
+      },
+      {
+        "title": "Skill Tarung 3",
+        "text": "Rasakan panasnya!"
+      },
+      {
+        "title": "Skill Kombo Siap 1",
+        "text": "Ini saatnya!"
+      },
+      {
+        "title": "Skill Kombo Siap 2",
+        "text": "Bersatu!"
+      },
+      {
+        "title": "Penggunaan Kombo 1",
+        "text": "Hmph! Melaju kencang!"
+      },
+      {
+        "title": "Penggunaan Kombo 2",
+        "text": "Sekarang nyalakan!"
+      },
+      {
+        "title": "Penuntas 1",
+        "text": "Kau sudah tamat!"
+      },
+      {
+        "title": "Penuntas 2",
+        "text": "Semua berakhir di sini!"
+      },
+      {
+        "title": "Ultimate 1",
+        "text": "Teman-teman, ikuti suarku! AYO!"
+      },
+      {
+        "title": "Ultimate 2",
+        "text": "Biarkan kembang apinya melambung!"
+      },
+      {
+        "title": "Ultimate 3",
+        "text": "Strategi menang, serang!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

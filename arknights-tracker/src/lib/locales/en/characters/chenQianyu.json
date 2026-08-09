@@ -119,7 +119,325 @@
         "name": "Charity",
         "description": "Charity: Stand Up for Justice\nAltruism. Such is the essence of a true warrior."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Operation Prep 1",
+        "text": "Get ready? Heh. My blades are always ready as they never rest!"
+      },
+      {
+        "title": "Operation Prep 2",
+        "text": "Give me the front row this time. I wanna be the first out of the door!"
+      },
+      {
+        "title": "Adding to Team 1",
+        "text": "Our turn already? Nice. One should strike when the timing is right."
+      },
+      {
+        "title": "Adding to Team 2",
+        "text": "Leave it to me!"
+      },
+      {
+        "title": "Switching Weapon",
+        "text": "Wow. This is pretty sleek. But I can also use standard issue weaponry to unleash a healthy dose of whoop-ass."
+      },
+      {
+        "title": "Switching Gear",
+        "text": "Hmm... Maybe a true master should wear lighter gear."
+      },
+      {
+        "title": "Ability Matrix Activation",
+        "text": "With practice comes enlightenment of the swordmancer's art!"
+      },
+      {
+        "title": "Watching Combat Records",
+        "text": "So this ... and follow up with this? Alright, I got it!"
+      },
+      {
+        "title": "Operator Promotion 1",
+        "text": "I asked Perlica to stave off my promotion till this moment! I'll only rest easy when my approval from Endfield is personally delivered by you, Endmin!"
+      },
+      {
+        "title": "Operator Promotion 2",
+        "text": "What do you think? Did I break the fastest promotion on record? After all, I actually skipped a few years in Tanjian Hall. Surprised? Heheh. I was always the top of my class."
+      },
+      {
+        "title": "Operator Promotion 3",
+        "text": "Well, turns out I'm great at something other than martial arts. I just can't help but end up as your best operator. Oh, your flattery is making me blush already — keep it coming though!"
+      },
+      {
+        "title": "Operator Promotion 4",
+        "text": "I'm still far from the pinnacle. They say my mother's blade stirred the very clouds themselves, Endmin. And I'll do exactly that ... and become the one that you and Perlica can always count on!"
+      },
+      {
+        "title": "Operator Reporting for Duty",
+        "text": "ENDMIN! HOW ARE —— Oh. Okay, stick with the process. Here goes. Endfield operator Chen Qianyu, reporting for duty!"
+      },
+      {
+        "title": "Standing by 1",
+        "text": "Watch this! Hehe, awesome, right?"
+      },
+      {
+        "title": "Standing by 2",
+        "text": "Over here, Endmin! Heehee."
+      },
+      {
+        "title": "Assigning to Facility",
+        "text": "And roger that. Set your mind at absolute ease, Endmin!"
+      },
+      {
+        "title": "Greeting 1",
+        "text": "How are you doing, Endmin? Interested in sparring with me?"
+      },
+      {
+        "title": "Greeting 2",
+        "text": "Just leave the rest to me, Endmin. Go enjoy a breather — you've earned it!"
+      },
+      {
+        "title": "Dijiang Idle Chatter 1",
+        "text": "Woah! I almost didn't see you, Endmin! Heheh, yeah. I was trying to perfect a new move and didn't see where I was going."
+      },
+      {
+        "title": "Dijiang Idle Chatter 2",
+        "text": "I never expected to be somewhere *THIS* high in orbit after leaving Hongshan. Talos-II actually looks pretty small from where we're standing. I wonder where me and my blade could reach... Talos, maybe? Watchu think, Endmin?"
+      },
+      {
+        "title": "Dijiang Idle Chatter 3",
+        "text": "Endmin! Did you read that martial arts legend I lent you? No, no, no, it's not a novel. It's based on things that really happened at Yan! What? You can't picture someone whose \"fingers can cut like blades\"? Oh... You make a good point... But the \"fists that settled the tides of Spring and Autumn\" are even worse, right?"
+      },
+      {
+        "title": "Dijiang Idle Chatter 4",
+        "text": "What am I doing? OW! Ugh. I'm trying to loosen my muscles. Being an Endfielder and running all these missions took me way beyond my daily PT quota... Hey, interested in loosening up a bit? I actually know a few meridians! Come on! Off with that jacket! And you're welcome!"
+      },
+      {
+        "title": "Dijiang Idle Chatter 5",
+        "text": "Join me on a trip to the Arsenal! I got a sword to claim. What should I engrave on the hilt? \"Cleave now as cleft\" or \"Once known be deft\"? Endmin, puh-lease help me decide!"
+      },
+      {
+        "title": "Dijiang Idle Chatter 6",
+        "text": "I recently ran into a bottleneck. Ugh. It's got nothing to do with technique and I think something's bugging me from the inside. The legends say that the finest weapons will adapt to their wielders' mind... But ... but this is just an ordinary piece of steel! Endmin! Puh-lease help me out with this!"
+      },
+      {
+        "title": "Offering Gifts",
+        "text": "\"A gift is but a gentle token of heartfelt sincerity.\" That's how the saying goes. But if someone's truly sincere, no gift will be fitting enough. Well, I just hope you'll like this one, Endmin!"
+      },
+      {
+        "title": "Accepting Gifts",
+        "text": "For ... me?! WOW ... I'm totally gonna open it right now!"
+      },
+      {
+        "title": "Trust Dialog 1",
+        "text": "Perlica used to drone on and on about you, but now you're just right in front of me! Feels rather otherworldly, if you ask me! What? No! I'm not disappointed! Having meals and sharing a roof with Perlica's ultimate and invincible legend is like the most interesting thing ever—! Hold on. You got crumbs on your face."
+      },
+      {
+        "title": "Trust Dialog 2",
+        "text": "After I left my home, I actually traveled around the Band for a while before joining Endfield. Heheh. I actually hoped to be a nameless heroine of legendary deeds — one who leaves nothing but mystery. But having experienced life outside Hongshan, I realized that true warriors can't just walk away from the results of their actions. So ... I slowed down my pace and visited fewer places. No matter, I'll make up for this missed opportunity."
+      },
+      {
+        "title": "Trust Dialog 3",
+        "text": "I think I was about ten ... maybe eleven. I was practicing my swordmancy in secret in the hills behind Tanjian Hall when I ran into an Aggelos that got separated from its cluster. It was my first real battle. Father praised me when I returned home with a broken blade, but he also said this: \"You may have broken a blade, but there are those who don't even have one.\" I guess I got to see beyond my old man's usual self. What he said got me pondering, even to this day."
+      },
+      {
+        "title": "Trust Dialog 4",
+        "text": "Why did I become an Endfielder? Hmm... That's a long story. If you really wanna know when I got interested ... I guess it was that occasion when I helped a really well-dressed Liberi pull a burdenbeast cart out of the mud. Perly gave me such a genuine smile. And I thought to myself ... maybe I didn't have to travel around on my own anymore."
+      },
+      {
+        "title": "Trust Dialog 5",
+        "text": "Yinglung left behind friends to take up the mantle of duty. And my mother left me behind to take up Chi Xiao. I guess people who find a true calling would just ... drop the less important things they have. But Endfield doesn't do that. Everything and everyone are just as important and nothing gets left behind — If Endfield has taken up a vision for Talos-II, then I'll swing another blade to see it through!"
+      },
+      {
+        "title": "Chat 1",
+        "text": "Taking Perlica off her work won't be easy. But I got a trick I used on my swordmancy seniors. If I wanted them to start working, I simply pushed all the chores to them. Now let's flip this around. We can simply finish all of Perly's work and she would have no choice but to start taking a break... What? Come on, it's a clever technique, right?"
+      },
+      {
+        "title": "Chat 2",
+        "text": "My hairdo? Easy! Just use the two horns for guidance to achieve symmetry. My neighbor Granny Wang told me it's a Forte secret and taught me this trick... That's odd? It's just life in a typical dayuan neighborhood. People helped raise the neighbors' kids and we all grew up in the same courtyard. You could say we were more than neighbors. It felt like being in a huge extended family."
+      },
+      {
+        "title": "Chat 3",
+        "text": "Many, many schools have inspired my special swordmancy! The biggest influence? Definitely my master at Tanjian Hall. He taught me disciplined moves, efficient strikes — pure substance, no fluff. Next comes whatever my mother demonstrated to me when I whined hard enough. Her swordmancy was passed down through generations and ultra complex. Every move carried a special meaning. As for the rest ... well, I just came up with them after reading up on all those swordmancer legends. A true warrior must have a signature technique or two, right?"
+      },
+      {
+        "title": "Chat 4",
+        "text": "Wuling is a wet, humid, and sticky place, but I stayed there for a bit and I got used to that. The walls would bleed water droplets every time the Blight Tide rose. But Wuling food is just awesome and the people there are like — I mean, most people are pretty nice. Bad memories? NO! I definitely can't think of anyone I hate at that place!"
+      },
+      {
+        "title": "Chat 5",
+        "text": "People told me that my mother named me Qianyu. Thank goodness it's easy to write in Yanese — Spared me a ton of grief when my Master punished me to write my name a thousand times."
+      },
+      {
+        "title": "Topic: Hongshan",
+        "text": "You can actually see Hongshan Crater if you look down from the bridge of Dijiang. I left that place two years ago with nothing but aimlessness. But all those roads I traveled barely reached the width of a single fingernail... Guess I'll just do more traveling till I run out of fingers or even palms to measure all my walking. I would probably have tossed my aimlessness aside by the time that happens!"
+      },
+      {
+        "title": "Topic: Missing Mother",
+        "text": "Mother has a crimson sword. She told me it was a family heirloom that a heroine of Yan gave to our ancestor. I remember how old folks from across Hongshan visited our family home to see the blade and recall its epic tales. Then ... mother disappeared with the sword. As I grew older, I realized that it wasn't just a weapon. It was a path. A belief. I still want to look for her. However, her little Qianyu will be doing so with her own blade."
+      },
+      {
+        "title": "Topic: Perlica",
+        "text": "Perlica was already an extreme workaholic when I first met her. I occasionally overheard that a certain Endministrator was the reason she pushes herself so hard. I felt really sorry for Perly — but after seeing you, I kinda get where she's coming from... Aside from the epic vision and enterprise she's working on, I feel that Perlica simply wishes to fight by your side."
+      },
+      {
+        "title": "Resource/Collectible Detected 1",
+        "text": "Hm, I think I spot some goodies over there?"
+      },
+      {
+        "title": "Resource/Collectible Detected 2",
+        "text": "I spot treasure! Let's go take a look!"
+      },
+      {
+        "title": "Unexplored Area Detected",
+        "text": "Wait. We've never been here before, right?"
+      },
+      {
+        "title": "Powerful Enemy Discovered",
+        "text": "Danger up ahead. Lemme see how good this one is."
+      },
+      {
+        "title": "Mining 1",
+        "text": "Didn't expect this, right? My special swordmancy for rocky stuff!"
+      },
+      {
+        "title": "Mining 2",
+        "text": "Leave the rest to me! It's faster with a blade!"
+      },
+      {
+        "title": "Opening a Crate",
+        "text": "They usually hide secret tomes in crates like this."
+      },
+      {
+        "title": "Acquiring Aurylene",
+        "text": "It's round and it's shiny... Oh, this is the actual size of Aurylene."
+      },
+      {
+        "title": "Eliminating the Blight",
+        "text": "One can't stop a flood with a single blade. Perhaps this is what it felt like."
+      },
+      {
+        "title": "Rest",
+        "text": "Good rest! Sharpened blades make up for lost time!"
+      },
+      {
+        "title": "Tactical Use 1",
+        "text": "Quick! Take some of this!"
+      },
+      {
+        "title": "Tactical Use 2",
+        "text": "Hoo... I'm feeling better!"
+      },
+      {
+        "title": "Danger Warning",
+        "text": "Watch out! Get back!"
+      },
+      {
+        "title": "Injured",
+        "text": "Hngh! I'm alright! Focus on the fight."
+      },
+      {
+        "title": "0 HP",
+        "text": "Darn it... Hngh..."
+      },
+      {
+        "title": "Team Encouragement 1",
+        "text": "That move of yours was incredible!"
+      },
+      {
+        "title": "Team Encouragement 2",
+        "text": "Yay! That was some perfect teamwork!"
+      },
+      {
+        "title": "Encouragement Response 1",
+        "text": "Heh! Just doing my job!"
+      },
+      {
+        "title": "Encouragement Response 2",
+        "text": "Unity delivers blade synergy!"
+      },
+      {
+        "title": "Combat Begins 1",
+        "text": "A blade unsheathed, its light unleashed!"
+      },
+      {
+        "title": "Combat Begins 2",
+        "text": "Leave it to me."
+      },
+      {
+        "title": "Combat Victory 1",
+        "text": "Hooo— I wouldn't expect anything less."
+      },
+      {
+        "title": "Combat Victory 2",
+        "text": "An easy victory."
+      },
+      {
+        "title": "Combat Victory 3",
+        "text": "Nicely done!"
+      },
+      {
+        "title": "Combat Victory 4",
+        "text": "That was ... a little too close. Quick. Tend to the wounded!"
+      },
+      {
+        "title": "Combat Defeat",
+        "text": "...We'll fight them again!"
+      },
+      {
+        "title": "Final Strike 1",
+        "text": "Take this!"
+      },
+      {
+        "title": "Final Strike 2",
+        "text": "Right there!"
+      },
+      {
+        "title": "Battle Skill 1",
+        "text": "Slash!"
+      },
+      {
+        "title": "Battle Skill 2",
+        "text": "Sweep!"
+      },
+      {
+        "title": "Battle Skill 3",
+        "text": "Deflect!"
+      },
+      {
+        "title": "Combo Skill Ready 1",
+        "text": "Now's our chance!"
+      },
+      {
+        "title": "Combo Skill Ready 2",
+        "text": "Leave it to me!"
+      },
+      {
+        "title": "Combo Casting 1",
+        "text": "My turn!"
+      },
+      {
+        "title": "Combo Casting 2",
+        "text": "You're fighting me!"
+      },
+      {
+        "title": "Finisher 1",
+        "text": "Weakness spotted!"
+      },
+      {
+        "title": "Finisher 2",
+        "text": "Break!"
+      },
+      {
+        "title": "Ultimate 1",
+        "text": "Cleave now as cleft!"
+      },
+      {
+        "title": "Ultimate 2",
+        "text": "Once known be deft!"
+      },
+      {
+        "title": "Ultimate 3",
+        "text": "Cast off as cast!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

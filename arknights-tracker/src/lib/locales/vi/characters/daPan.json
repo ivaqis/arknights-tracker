@@ -117,7 +117,337 @@
         "name": "Lòng Nhân Ái",
         "description": "Lòng Nhân Ái: Dân Phượt Khắp Chốn\nNgười bán hàng rong, tài xế, hướng dẫn viên du lịch, người cải tạo và là người chủ lo bữa ăn cho mọi người. Da Pan không thích để thời gian trôi đi lãng phí nên lúc nào cũng muốn xê dịch."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Chuẩn Bị Tác Chiến 1",
+        "text": "Ô, Endmin! Ngài đã chuẩn bị xong chưa?"
+      },
+      {
+        "title": "Chuẩn Bị Tác Chiến 2",
+        "text": "Không thể lãng phí đồ ăn kiểu này được đâu. NÀY! Rất vui khi gặp ngài ở đây!"
+      },
+      {
+        "title": "Đang thêm vào đội 1",
+        "text": "Cuối cùng cũng có chỗ để tôi duỗi chân tay một chút! Ngài muốn xem kỹ năng của tôi chứ?"
+      },
+      {
+        "title": "Đang thêm vào đội 2",
+        "text": "Chỉ cần ngài gọi một tiếng, tôi sẽ sát cánh bên cạnh."
+      },
+      {
+        "title": "Đang đổi vũ khí",
+        "text": "Ái chà. Mảnh này cân đối thật. Hẳn là ngài đã tốn một khoản kha khá để có được nó."
+      },
+      {
+        "title": "Đang đổi trang bị",
+        "text": "Cũng đã lâu rồi tôi chưa được trang bị đầy đủ như vậy. HGNH! Á á! Thế nào, ngài thấy sao? Trông cũng ổn chứ?"
+      },
+      {
+        "title": "Kích hoạt Ma Trận Năng Lực",
+        "text": "Nếu không giỏi nấu món gì, thì cứ nấu món đó thật nhiều lần! Tôi không nấu ăn để thể hiện. Tôi nấu để tạo ra một bữa tiệc thật đẹp và vui vẻ!"
+      },
+      {
+        "title": "Xem Hồ Sơ Chiến Đấu",
+        "text": "Không bao giờ là quá muộn để học hỏi. Bí quyết là phải giữ cho đôi chân luôn vững vàng!"
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 1",
+        "text": "Tôi không phải là người giỏi nhất hay chiến binh xuất sắc nhất, và tôi rất cảm kích lòng tốt của ngài. Tôi không có rượu mang theo, nên xin cạn ấm trà này để tỏ lòng biết ơn!"
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 2",
+        "text": "Tuy tài năng có hạn, nhưng tôi luôn hoàn thành tốt nhiệm vụ. Vậy nên, tôi sẽ nhận lời thăng bậc này. Cần việc gì cứ gọi tôi một tiếng. Tôi sẽ không bao giờ để ngài thất vọng."
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 3",
+        "text": "Ngài tốt quá, nhưng điều này cũng có nghĩa là tiệm của tôi ở Võ Lăng phải tạm đóng cửa một thời gian. Khi nào ngài rảnh, ta hãy cùng quay lại đó mở một bữa tiệc... Rồi nhờ họ hàng tôi trông nom cửa tiệm."
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 4",
+        "text": "Lần cuối tôi ghé lại Hongshan, sư phụ tôi tìm mọi cách lôi tôi vào một dự án tại Học Viện. Bà ấy chỉ dừng lại khi tôi nói rằng tôi đang làm việc ở Endfield. Nói thật với ngài, Endmin, tôi THẬT SỰ vinh dự khi được nhận một chức vụ chính thức trên Dijiang. Này, sao mặt ngài đỏ thế?"
+      },
+      {
+        "title": "Cán Viên đang báo cáo nhiệm vụ",
+        "text": "Ồ, lại gặp ngài rồi, Endmin. Có vấn đề kỹ thuật gì cần xử lý sao? Chỉ cần nói tôi sẽ sửa ngay! Tôi còn vui HƠN nếu có tuyển nhân viên căng tin!"
+      },
+      {
+        "title": "Chờ Lệnh 1",
+        "text": "Đi đâu tiếp đây, Endmin?"
+      },
+      {
+        "title": "Chờ Lệnh 2",
+        "text": "Có việc gì cho tôi làm không? Cứ để tôi lo."
+      },
+      {
+        "title": "Phân Công Vào Công Trình",
+        "text": "Nhưng đừng lo. Cứ nghỉ ngơi đi. Tôi sẽ đến ngay sau khi mặc xong đồ bảo hộ."
+      },
+      {
+        "title": "Lời Chào 1",
+        "text": "Khi nào ngài có thời gian, tôi sẽ nấu một bữa thịnh soạn đãi ngài!"
+      },
+      {
+        "title": "Lời Chào 2",
+        "text": "Thèm ăn món gì mà căng tin Dijiang không có sao? Tôi có thể lo được."
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 1",
+        "text": "Ngài lại sút cân nữa rồi. Xin hãy chú ý chăm sóc sức khỏe hơn. Ngài có muốn tôi nấu chút gì đó không?"
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 2",
+        "text": "Hừ hừ hừ. Căng tin Dijiang dạo này làm ăn không ra sao. Đừng vội phản bác. Thử món này xem. Tôi nấu đấy!"
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 3",
+        "text": "Tôi nghe nói cậu nói chuyện với những thanh niên không đồng tình với tôi. Không sao cả. Tôi không quan tâm họ là Thiên Sư hay đầu bếp. Không phải ai trên tàu Dijiang cũng có thời gian để trò chuyện vài lời với một chú gấu trúc già."
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 4",
+        "text": "Tôi thấy có rất nhiều công nghệ của Học viện trên tàu Dijiang. Toàn là thành quả từ các chuyên gia kỹ thuật quỹ đạo của Học Viện Khoa Học Hongshan. Ngài chắc khó mà tưởng tượng nổi đám người lớn tuổi ồn ào và nóng tính đó đâu! Họ có thể cãi nhau cả ngày chỉ vì vị trí lắp đặt của một mô-đun chẩn đoán nhỏ xíu!"
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 5",
+        "text": "Phòng ở của Endfield thật sự quá nhỏ! Không phải tôi thiếu tôn trọng, nhưng tôi chỉ duỗi người thôi mà đã bầm cả khuỷu tay lẫn đầu gối rồi. LÀM ƠN! Làm gì đó đi!"
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 6",
+        "text": "Nếu ngài gặp Andre, nói với Cú Lớn là ông ta nợ một con Gấu Trúc Già vài ý tưởng mới đấy! VÀ bảo ông ta đừng có trốn tôi nữa!"
+      },
+      {
+        "title": "Tặng Quà",
+        "text": "Tìm thấy ngài rồi, Endmin! Ở đây này! Có thứ đặc biệt gửi trực tiếp từ Hongshan!"
+      },
+      {
+        "title": "Nhận quà",
+        "text": "Tôi rất vinh dự!"
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 1",
+        "text": "Tôi biết ngài có cả đống việc trong phòng thí nghiệm, cứ giao cho tôi xử lý đi! Tôi từng là đầu bếp, thợ điện, thợ mộc, tài xế và cả người buôn bán ven đường. Nên VIỆC GÌ tôi cũng làm được. Ồ, ngài thắc mắc cái bình \"Công nhân Tiên Phong\" này sao? Hehe, tôi chỉ dùng để pha trà thôi."
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 2",
+        "text": "Endmin, xin ngài hãy ghé trụ sở Học Viện Khoa Học Hongshan một lần. Dù ngài không hứng thú với chuyện đi đây đó, nhưng mấy cuộc tranh luận của sinh viên ở đó cũng khá hấp dẫn. Có thể ngài không nhớ, nhưng nhiều dự án tiên phong đã trích dẫn công trình của ngài. Khoan đã. Tôi... tôi cũng từng trích dẫn bài nghiên cứu của ngài."
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 3",
+        "text": "Chiếc chảo sắt đen này của tôi có thể che mưa, chắn lửa, thậm chí cả đạn khắc nữa. Khi cần, tôi chỉ việc đeo lên lưng là bảo vệ được bản thân khá tốt! Endmin, chịu khó thêm một chút sẽ giúp ta có lợi thế lớn khi cần thiết. Vụ này xịn đó. Tôi nghĩ ta nên chốt thôi."
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 4",
+        "text": "Tôi á? Gấu trúc già thân thiện Pan Yuan á? Haha! Ngày xưa, chẳng ai trong Học Viện Khoa Học Hongshan dám ngáng đường tôi đâu. Da Pan Yuan vĩ đại từng CHẤM DỨT mọi tranh cãi khoa học tại chỗ và, và... Ừm. Thật ra, đôi khi quá cứng nhắc và lạnh lùng lại vô tình phá hỏng cả sự nghiệp mà người ta khổ công gây dựng. Tôi từng cố gắng bù đắp, nhưng sự cố chấp thì luôn để lại tiếc nuối... Câu chuyện này, ngài chỉ nên nghe cho vui thôi."
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 5",
+        "text": "Khi nào xong việc bên này, tôi rất vinh hạnh nếu ngài có thể ghé thăm Hongshan! Yên tâm, ngài sẽ có thời gian dạo mấy cửa hàng địa phương và tôi có thể nấu bất cứ món Hongshan nào! Cứ cùng tôi đến Học Viện một chuyến. Tôi còn một dự án dang dở, hy vọng được cùng ngài thử nghiệm những ý tưởng mới! Có ngài ở đây thì tôi không thể bỏ cuộc được. Tôi phải vượt qua ngưỡng ấy!"
+      },
+      {
+        "title": "Trò Chuyện 1",
+        "text": "Muốn ăn ngon thì KHÔNG vội được đâu. Bạn phải tiếp tục cố gắng và tự chịu trách nhiệm cho những sai lầm của mình trên hành trình đó. Chỉ như vậy mới có thể nấu ra món có hương vị hòa quyện hoàn hảo. Bạn có đồng ý không?"
+      },
+      {
+        "title": "Trò Chuyện 2",
+        "text": "Ngài đúng là người hiểu chuyện! Mấy vấn đề kỹ thuật không thể giải quyết bằng cách lảng tránh. Phải tập trung vào vấn đề, cùng nhau bàn bạc rõ ràng, rồi lại là bạn tốt như xưa, đúng không nào? Đừng giữ mọi thứ trong lòng mãi. Ui. Để sau tôi kể tiếp câu chuyện này. Nó để lại dư vị hơi khó chịu."
+      },
+      {
+        "title": "Trò Chuyện 3",
+        "text": "Thành Phố Võ Lăng. Đã nhắc đến nơi này thì sao có thể thiếu phong cảnh thiên nhiên tuyệt đẹp, cửa hàng của tôi, hay những ván Mạt chược giữa lúc Triều Nhiễm Khuẩn đang hoành hành. Tôi biết là mình có thể nói mãi không ngừng, nhưng thực sự tôi rất nhớ nơi đó! Có lẽ Võ Lăng đã quá chiều chuộng cuộc sống hưu trí của tôi rồi. Này, đừng cười nữa. Mà tiện nói đến thì bạn có muốn chơi vài ván... Mạt chược không?"
+      },
+      {
+        "title": "Trò Chuyện 4",
+        "text": "Tôi đã đi nhiều thành phố, học được rất nhiều từ các đầu bếp đồng nghiệp. Đầu bếp nào cũng sẵn lòng chia sẻ bí quyết qua chính món ăn của họ. Nhưng để lĩnh hội được những tinh hoa đó... thì phải xem tay nghề của người học."
+      },
+      {
+        "title": "Trò Chuyện 5",
+        "text": "Tôi từng nghĩ cuộc sống về hưu sẽ nhẹ nhàng với nấu ăn, pha trà và ngày qua ngày an yên... Nhưng rồi ngài xuất hiện và mang đến cho tôi một núi công việc. Tôi thấy sao ư? Haha! Tôi thấy cũng không tệ lắm!"
+      },
+      {
+        "title": "Chủ đề: Người Nhiễm Bệnh",
+        "text": "Giờ đây, việc \"nhiễm bệnh\" không còn là án tử nữa. Nhiều người chỉ coi như mình gặp vận xui rồi tiếp tục sống... Nhưng nếu ngài đến các làng mạc, thị trấn bên ngoài Vành Đai, ngài sẽ thay đổi cách nhìn về Chứng Oripathy."
+      },
+      {
+        "title": "Chủ đề: Khe Nứt",
+        "text": "Chúng tôi đã nghiên cứu Khe Nứt Cực Lớn dưới thành phố Võ Lăng suốt nhiều năm. Nếu cần kích thước chính xác, tôi có thể dùng cái chảo sắt của mình đo cho ngài xem. Nhưng tìm ra giải pháp triệt để... vẫn là một thách thức lớn..."
+      },
+      {
+        "title": "Chủ đề: Zhuang Fangyi",
+        "text": "Ồ. Ngài có gặp Phó Vương Zhuang không? Cô ấy vẫn không thay đổi gì cả. Cứ gồng mình lên để tỏ ra mạnh mẽ, dù trong lòng thì mềm yếu lắm. Làm bản thân mệt mỏi, rồi bị mọi người ghét bỏ. Thôi, chuyện này để dịp khác nói tiếp."
+      },
+      {
+        "title": "Chủ đề: Học Viện Khoa Học Hongshan (Học Viện)",
+        "text": "VÔ LÝ! Ai bảo Học viện Khoa học Hongshan chỉ tuyển người Viêm Quốc? Chúng tôi không loại ai vì xuất thân cả. Miễn là họ có thể hợp tác tốt với các bên và có đủ kiên nhẫn với nghiên cứu khoa học."
+      },
+      {
+        "title": "Chủ đề: Lifeng",
+        "text": "Lifeng căng thẳng quá. Tôi nhìn thôi đã thấy mệt, nên cố giúp cậu ấy thư giãn một chút. May mà cậu ấy cũng chịu đùa giỡn với lão gấu trúc già này. Cậu ấy thông minh, biết suy nghĩ độc lập, nhưng tôi cũng không rõ đó là tốt hay xấu nữa..."
+      },
+      {
+        "title": "Chủ đề: Thung Lũng IV",
+        "text": "Nhà Máy Khu Phức Hợp chắc chắn sẽ cải thiện cuộc sống của dân du mục. Nhưng mỗi người một suy nghĩ, đại sự thì luôn gặp trắc trở. Chúng ta chỉ còn cách kiên nhẫn chịu đựng thôi. Lão gấu trúc này chỉ đang cố hết sức mình. Tôi không hề đòi hỏi cho những gì đã đạt được ở Thung Lũng IV cả!"
+      },
+      {
+        "title": "Phát hiện Tài Nguyên/Có Thể Thu Thập 1",
+        "text": "Tìm được thứ này đâu có dễ. Cứ nhét đầy túi những gì ngài lấy được nhé."
+      },
+      {
+        "title": "Phát hiện Tài Nguyên/Có Thể Thu Thập 2",
+        "text": "Đây là phát hiện cực kỳ hiếm. Đến lúc phân công nhiệm vụ thu thập rồi."
+      },
+      {
+        "title": "Phát Hiện Khu Vực Chưa Khám Phá",
+        "text": "Chỗ này có gì đó lạ lắm. Cẩn thận."
+      },
+      {
+        "title": "Phát hiện Kẻ Địch Mạnh",
+        "text": "Hãy cẩn thận. Thứ kia nhìn nguy hiểm thật."
+      },
+      {
+        "title": "Khai thác 1",
+        "text": "Quặng chất lượng cao!"
+      },
+      {
+        "title": "Khai thác 2",
+        "text": "Cảm ơn ngài đã làm việc chăm chỉ!"
+      },
+      {
+        "title": "Mở Thùng",
+        "text": "Nổ hũ vàng! Hah! Đùa thôi!"
+      },
+      {
+        "title": "Nhận Aurylene",
+        "text": "Tôi sẽ giữ Aurylene này cho ngài."
+      },
+      {
+        "title": "Xua Tan Nhiễm Khuẩn",
+        "text": "Nhiễm Khuẩn đã bị giải trừ! Hừ hừ. Mệt quá rồi."
+      },
+      {
+        "title": "Nghỉ ngơi",
+        "text": "Ăn ngủ no đủ rồi. Đi tiếp nào."
+      },
+      {
+        "title": "Sử Dụng Vật Phẩm Chiến Thuật 1",
+        "text": "Đừng hoảng! Tôi yểm trợ cho nè!"
+      },
+      {
+        "title": "Sử Dụng Vật Phẩm Chiến Thuật 2",
+        "text": "Cảm giác khá hơn rồi."
+      },
+      {
+        "title": "Cảnh Báo Nguy Hiểm",
+        "text": "Coi chừng! Đừng để bị thương!"
+      },
+      {
+        "title": "Bị Thương",
+        "text": "Hự hự... Tôi không ổn lắm."
+      },
+      {
+        "title": "0 HP",
+        "text": "Xin lỗi... nhưng tôi cần nghỉ một chút!"
+      },
+      {
+        "title": "Cổ Vũ Đội 1",
+        "text": "Một chiêu rất chuyên nghiệp!"
+      },
+      {
+        "title": "Cổ Vũ Đội 2",
+        "text": "Chúng ta phối hợp thật ăn ý!"
+      },
+      {
+        "title": "Đáp Lại Lời Cổ Vũ 1",
+        "text": "Không có chi!"
+      },
+      {
+        "title": "Đáp Lại Lời Cổ Vũ 2",
+        "text": "Mọi người làm tốt lắm!"
+      },
+      {
+        "title": "Bắt Đầu Chiến Đấu 1",
+        "text": "Muốn thử sức với gấu trúc à? TỚI ĐÂY ĐI!"
+      },
+      {
+        "title": "Bắt Đầu Chiến Đấu 2",
+        "text": "Hãy ra chỉ thị! Tôi sẽ lo phần còn lại!"
+      },
+      {
+        "title": "Thắng Trận 1",
+        "text": "Đúng là sếp xịn!"
+      },
+      {
+        "title": "Thắng Trận 2",
+        "text": "ĐÓ là một trận chiến tuyệt vời. Mà thôi, giờ là lúc ăn uống rồi."
+      },
+      {
+        "title": "Thắng Trận 3",
+        "text": "Nói hay lắm! Vừa vui, vừa thắng!"
+      },
+      {
+        "title": "Thắng Trận 4",
+        "text": "Suýt nữa thì toang. Bọn chúng suýt làm vỡ cái chảo sắt của tôi."
+      },
+      {
+        "title": "Bại Trận",
+        "text": "Đừng lo nào. Tôi sẽ nấu ăn cho cả đội và trả mối thù này sau!"
+      },
+      {
+        "title": "Đòn Dứt Điểm 1",
+        "text": "Tới đây nào!"
+      },
+      {
+        "title": "Đòn Dứt Điểm 2",
+        "text": "NHẬN LẤY ĐI!"
+      },
+      {
+        "title": "KN Chiến Đấu 1",
+        "text": "LẬT CHẢO!"
+      },
+      {
+        "title": "KN Chiến Đấu 2",
+        "text": "THỬ MÓN NÀY!"
+      },
+      {
+        "title": "KN Chiến Đấu 3",
+        "text": "BAY LÊN!"
+      },
+      {
+        "title": "Chuẩn Bị KN Liên Hoàn 1",
+        "text": "Cần giúp một tay không?"
+      },
+      {
+        "title": "Chuẩn Bị KN Liên Hoàn 2",
+        "text": "Xem tôi xử đây!"
+      },
+      {
+        "title": "Thi Triển Liên Hoàn 1",
+        "text": "Mắt nhìn đằng trước!"
+      },
+      {
+        "title": "Thi Triển Liên Hoàn 2",
+        "text": "Cạp đất đi!"
+      },
+      {
+        "title": "Kết Liễu 1",
+        "text": "Hẹn gặp lại nhé!"
+      },
+      {
+        "title": "Kết Liễu 2",
+        "text": "MÓN NÀY MIỄN PHÍ!"
+      },
+      {
+        "title": "Tuyệt Kỹ 1",
+        "text": "LẬT CHẢO SIÊU PHÀM!"
+      },
+      {
+        "title": "Tuyệt Kỹ 2",
+        "text": "THƯỞNG THỨC MÓN GẤU TRÚC ĐẶC BIỆT!"
+      },
+      {
+        "title": "Tuyệt Kỹ 3",
+        "text": "Đến lúc... DỌN SẠCH MÂM RỒI!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

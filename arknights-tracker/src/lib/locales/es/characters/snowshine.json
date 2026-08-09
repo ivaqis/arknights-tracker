@@ -123,7 +123,325 @@
         "name": "Caridad",
         "description": "Caridad: Altruista por naturaleza\nPara Snowshine, ayudar de vez en cuando a la gente con recados y quehaceres... se ha convertido en una especie de hábito."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Preparación de la operación 1",
+        "text": "A la espera de órdenes, Endministrator."
+      },
+      {
+        "title": "Preparación de la operación 2",
+        "text": "¡Endmin! ¡Llegaste!"
+      },
+      {
+        "title": "Añadir al equipo 1",
+        "text": "¿Una nueva misión en campo? ¡Estoy totalmente lista!"
+      },
+      {
+        "title": "Añadir al equipo 2",
+        "text": "¡Los protegeré a todos!"
+      },
+      {
+        "title": "Cambiar de arma",
+        "text": "¡Maravilloso desempeño! ¡Y también sirve en entornos extremos!"
+      },
+      {
+        "title": "Cambiar de equipamiento",
+        "text": "Quien hizo esto de verdad le dedicó mucho tiempo."
+      },
+      {
+        "title": "Activación de la matriz de habilidades",
+        "text": "¡He estado haciendo mucho ejercicio! Hay que estar preparados para todo tipo de emergencias, ¿sabes?"
+      },
+      {
+        "title": "Viendo los registros de combate",
+        "text": "¡Estos registros ofrecen valiosas referencias! ¡Me dieron muchas ideas para futuras operaciones de B&R!"
+      },
+      {
+        "title": "Ascenso de operador 1",
+        "text": "¡Mmm! ¡El trabajo duro siempre da frutos! ¡No decepcionaré a Endfield ni a nadie!"
+      },
+      {
+        "title": "Ascenso de operador 2",
+        "text": "Esto le dará una extensión a mi rango operativo, ¿verdad? ¡Descuida! ¡Cuenta conmigo para todas tus necesidades de rescates de emergencia, muestras de datos, apoyo logístico y todo tipo de trabajo en campo!"
+      },
+      {
+        "title": "Ascenso de operador 3",
+        "text": "Mejoré todas mis Unidades de las Artes de hielo de B&R, Endmin. ¡Mira! ¡Acabo de construir un iglú temporal! ¡Ven a quedarte a dormir!"
+      },
+      {
+        "title": "Ascenso de operador 4",
+        "text": "El tiempo que pasé en Endfield me enseñó muchas cosas nuevas, y me dejó muchos recuerdos maravillosos... Gracias por confiar en mí, Endmin. De aquí en adelante, seguiré subiendo las cimas más altas... y rescatar a tanta gente como pueda."
+      },
+      {
+        "title": "Operador reportándose para el deber",
+        "text": "¡Saludos! Soy tu operadora de Rhodes Island. Nombre clave: Snowshine. Soy experta en búsqueda y rescate especializada en operaciones a bajas temperaturas. Ponme en tu equipo si tienes una misión en los campos de hielo o en las montañas nevadas."
+      },
+      {
+        "title": "En espera 1",
+        "text": "¿Quieres hacer snowboarding conmigo, Endmin?"
+      },
+      {
+        "title": "En espera 2",
+        "text": "Velocidad del viento, buena. Visibilidad, buena. Clima perfecto para hacer snowboarding."
+      },
+      {
+        "title": "Asignando a una instalación",
+        "text": "¡No hay problema! ¡He pasado por todos los trabajos de este lugar! ¡Y son más simples que construir fortificaciones!"
+      },
+      {
+        "title": "Saludo 1",
+        "text": "Saludos, Endmin."
+      },
+      {
+        "title": "Saludo 2",
+        "text": "¿Necesitas ayuda, Endmin? ¡Puedo ser tu defensora!"
+      },
+      {
+        "title": "Charla casual en la Dijiang 1",
+        "text": "Aprendí muchas cosas nuevas cada vez que abordé la Dijiang. Hay tecnología y maquinaria que nunca antes había visto, teorías de combate especial, planes de monitoreo intrépidos... ¡Oh, apenas puedo seguirle la marcha a todo! ¡Endfield es simplemente increíble! ¡Y lo digo en serio!"
+      },
+      {
+        "title": "Charla casual en la Dijiang 2",
+        "text": "¿Qué? ¡¿La cafetería de la Dijiang tiene una barra libre de bocadillos?! Ah, perdón. Solo me sorprendí un poco... ¡No, claro que no! ¡No me lo voy a comer todo! ¡Lo juro!"
+      },
+      {
+        "title": "Charla casual en la Dijiang 3",
+        "text": "¡Endmin! ¡Llegaste justo a tiempo! Mi paquete acaba de llegar y ¿me preguntaba si te interesaría probar mi fondue de queso especial? ¿El sabor...? Creo que es algo... ¿especial? Muchos colegas me dijeron que es “una experiencia única e inolvidable”..."
+      },
+      {
+        "title": "Charla casual en la Dijiang 4",
+        "text": "¡Hmmmmm! Hacer estiramientos ayuda a calentar las articulaciones. Esta rutina ayuda a prevenir desgarres musculares y prevenir la hipotermia en entornos polares. ¿Quieres intentarlo? Descuida. Fui asistente del entrenador en las sesiones de entrenamiento, ¡así que definitivamente puedo corregir tu postura! ¿Ves? Fácil, ¿no?"
+      },
+      {
+        "title": "Charla casual en la Dijiang 5",
+        "text": "Lil' Dodge me recuerda a nuestro capitán cada vez que lo veo. Mi capitán también es un Perro. Es muy buen tipo... pero cuando empieza una misión de B&R, es mandón. Incluso nos hace hacer múltiples revisiones de calibre en el simulacro en agua caliente... “¡Hasta el más mínimo detalle importa en la B&R!”. Eso fue lo que aprendí de él."
+      },
+      {
+        "title": "Charla casual en la Dijiang 6",
+        "text": "La luz que se refleja en las nubes de Talos-II puede ser tan hermosa. Me recuerda a la aurora que conozco... y las visiones de mis sueños. Suelo verlas cuando estoy en las cimas más altas de las montañas nevadas del norte. Sé que la luz es un tipo de Energía de éter peligrosa, pero verla se siente como ver a un viejo amigo... Uno que me observa... y me protege a la distancia."
+      },
+      {
+        "title": "Ofreciendo regalos",
+        "text": "Endmin, toma esto. Es un detalle que traje de los campos nevados."
+      },
+      {
+        "title": "Aceptando regalos",
+        "text": "¿Esto es para mí? ¡Oh, gracias! Da una sensación cálida... ¡Lo atesoraré mucho!"
+      },
+      {
+        "title": "Diálogo de confianza 1",
+        "text": "¡Mira, Endmin! ¡Usé mis Artes de Originio para crear esta barrera de hielo! Es muy resistente, ¿no? ¡Descuida! ¡Siéntete libre de golpearla con más fuerza! ¡No le harás ni un rasguño!"
+      },
+      {
+        "title": "Diálogo de confianza 2",
+        "text": "¿Descansaste lo suficiente, Endmin? Siempre te veo corriendo por todos lados con apenas un poco de descanso... Mmm, deberías cuidar tu equilibrio entre el trabajo y la vida personal. ¿Recuerdas el último entrenamiento de B&R que tuvimos? Me diste una sorpresa cuando te llevé en la espalda... No podía creer que pesaras menos que un cachorro de bestia de carga recién nacido..."
+      },
+      {
+        "title": "Diálogo de confianza 3",
+        "text": "No todas las operaciones de B&R tienen una historia de éxito... Pueden ocurrir cambios de temperatura o terreno más rápido de lo que te imaginas. Por eso reviso mi equipamiento hasta tres veces antes de salir a una misión. Drones, cámaras de imagen térmica... cada pieza de equipamiento es un asistente importante para cualquier operador de B&R. Son los motivos por los que podemos realizar peligrosos planes de rescate con confianza."
+      },
+      {
+        "title": "Diálogo de confianza 4",
+        "text": "Una vez rescaté a un padre y a su hija en una avalancha. Probablemente tuvieron una discusión y se ignoraron a propósito en el refugio temporal que construí. Pero cuando la tormenta azotaba con fuerza, el padre siempre reservaba comida para la niña, y ella hacía todo lo posible por cuidar a su padre... Fueron evacuados con éxito, pero los dos se rehusaban a hablarse. Me hizo preguntarme si de eso se trata el lazo de parentesco. Aunque no pudiesen encontrar las palabras, la familia siempre se protege en momentos cruciales..."
+      },
+      {
+        "title": "Diálogo de confianza 5",
+        "text": "Salvar vidas no es una tarea fácil. Nunca fantaseé con rescatarlos a todos sin hacer sacrificios. Soy la única que queda de mi grupo de compañeros de B&R. Los desastres de la Plaga dejaron a varios con discapacidades paralizadoras. Algunos perdieron la cordura en las heladas y nevadas noches... Hubo tiempos de confusión y momentos en los que sentí el toque del miedo. ¡Pero ustedes, los Endfielders, son geniales y tan fuertes! Creo que todos seremos capaces de llegar cada vez más lejos y más alto; ¡todo gracias a tu apoyo, Endmin!"
+      },
+      {
+        "title": "Charla 1",
+        "text": "¿Qué tal esta tabla de snowboard? Fue un regalo de Lady Warfarin, cuando me fui de Rhodes Island. La tabla está hecha de materiales poco comunes, igual que mi escudo. ¡Y es muy versátil en misiones de B&R! Mmm... Endmin, ¿te interesa el snowboarding? ¡Puedo enseñarte todo lo necesario!"
+      },
+      {
+        "title": "Charla 2",
+        "text": "La Organización de búsqueda y rescate se encuentra bajo la Unión de rescate del Corredor Norte. Nuestras misiones normalmente involucran a mensajeros que trabajan en el norte, comerciantes ambulantes y exploradores militares que se perdieron después de ser emboscados por los Aggeloi o por bestias. Mis compañeros de B&R provienen de todas partes del mundo, y la mayoría somos voluntarios. La experiencia de B&R fue una constante batalla contra el hielo, la nieve y el terreno peligroso, pero me dio la oportunidad de conocer a todo tipo de personas."
+      },
+      {
+        "title": "Charla 3",
+        "text": "Un operador me pidió unirse a B&R hace un tiempo. ¡No es difícil, en serio! Solo debes entrenarte constantemente para el montañismo, soportar horas de operaciones de rescate sin pausa, dominar algunas habilidades de supervivencia polar, aprender a evitar a los Ankhors y a las bestias grandes, y completar el curso completo de primeros auxilios... al menos hasta el nivel en que puedas manejar la oripatía espontánea. Por último, debes pasar la prueba en terreno especial diseñada por nuestro capitán ¡y te convertirás en un miembro oficial de B&R!"
+      },
+      {
+        "title": "Charla 4",
+        "text": "Me gusta la nieve, las montañas blancas y la belleza brillante que solo se revela en el frío glacial... Por eso no quiero que les dejen recuerdos dolorosos a la gente que tocan. Cuando la gente ve las montañas nevadas, lo primero que deberían recordar son las maravillosas vistas desde la cima. Y cuando caiga la nieve, espero que piensen en cristales prístinos y flores de hielo... *Suspira* Sería muy triste que la gente solo piense en catástrofes. Endmin, seguiré luchando por alcanzar esas metas personales."
+      },
+      {
+        "title": "Charla 5",
+        "text": "¿Me estuviste buscando ayer, Endmin? Siento no haberme dado cuenta. Definitivamente estaba tomando una siesta para recuperar el sueño perdido. Sí, tomar una siesta es lo primero que hago al regresar de una misión de B&R... Y, a veces, me quedo dormida... más de la cuenta. ¡Pero puedes simplemente despertarme si hay una emergencia! ¡El sonido de tu voz me hará levantarme y estar lista en poco tiempo, Endmin!"
+      },
+      {
+        "title": "Tema: Entrenamiento de B&R de emergencia",
+        "text": "¡Definitivamente! ¡El entrenamiento de B&R es muy importante! Cuando ocurren desastres naturales como una avalancha, la gente puede resguardarse rápidamente en lugares seguros y resistentes... ¡Y eso aumenta enormemente sus probabilidades de supervivencia! Pero esto solo podría pasar cuando las personas tienen una fuerte conciencia contra desastres... Así que, Endmin, participarás en la próxima sesión de entrenamiento de B&R, ¿verdad?"
+      },
+      {
+        "title": "Tema: Gilberta",
+        "text": "¿Ya abordó la Dijiang la señorita Gilberta? Oh, es que ella de verdad dio pasos extras para ayudarnos en varias misiones de B&R. ¡Envió suministros vitales, evacuó a los heridos por aire e incluso localizó una señal SOS en pleno vuelo durante una terrible ventisca! El equipo de B&R intentó darle una muestra de nuestro agradecimiento pero ella lo rechazó todo. Al final, pidió unas fotos de una linda vista desde las cimas nevadas. Je, je. ¿Qué te parece esta? ¡Yo misma hice el marco de la foto!"
+      },
+      {
+        "title": "Tema: Superviviente polar",
+        "text": "La supervivencia polar no es fácil... El conocimiento esencial incluye acampar adecuadamente durante la noche para evitar la hipotermia en las ventiscas, encontrar alimentos comestibles en los campos de hielo contaminados, identificar puntos firmes para cruzar glaciares... y lo más importante, trazar un paso seguro hacia el objetivo... Esto significa que debes aprender a evitar a los Aggeloi, bestias hambrientas y otros peligros en zonas de desastre."
+      },
+      {
+        "title": "Recurso/Coleccionable detectado 1",
+        "text": "¡Deberíamos reunir estos recursos! Podrían resultar útiles en operaciones de rescate."
+      },
+      {
+        "title": "Recurso/Coleccionable detectado 2",
+        "text": "Parece ser un descubrimiento magnífico. ¡Quizá sean útiles en futuras operaciones!"
+      },
+      {
+        "title": "Zona inexplorada detectada",
+        "text": "Nuestros drones no han inspeccionado esta área. Hay que estar alerta, compañeros."
+      },
+      {
+        "title": "Enemigo poderoso descubierto",
+        "text": "¡Compañeros! ¡Tengan cuidado! ¡Ese enemigo luce muy peligroso!"
+      },
+      {
+        "title": "Minería 1",
+        "text": "Minerales de alta calidad. Probablemente podamos usarlos para construir refugios temporales..."
+      },
+      {
+        "title": "Minería 2",
+        "text": "Hagamos esto juntos. Así será más rápido."
+      },
+      {
+        "title": "Abriendo una caja",
+        "text": "¡Agreguemos esto a nuestro almacén de emergencia!"
+      },
+      {
+        "title": "Adquiriendo Aurileno",
+        "text": "¿Esto es Aurileno? Qué bonito se ve... ¡Hay que empacarlo bien!"
+      },
+      {
+        "title": "Eliminar la Plaga",
+        "text": "¡Eliminación exitosa! ¡Y revisen si hay daños en su recubrimiento resistente a la Plaga, gente!"
+      },
+      {
+        "title": "Descanso",
+        "text": "¿Quieres un poco de queso? ¡Es ideal para recuperar tu energía!"
+      },
+      {
+        "title": "Uso táctico 1",
+        "text": "¡Tratamiento de emergencia administrado!"
+      },
+      {
+        "title": "Uso táctico 2",
+        "text": "¡Lo siento...! ¡Déjame recuperar el aliento!"
+      },
+      {
+        "title": "Advertencia de peligro",
+        "text": "¡No te golpees con esto!"
+      },
+      {
+        "title": "Herida",
+        "text": "Está bien. Puedo superarlo..."
+      },
+      {
+        "title": "0 PV",
+        "text": "Lo siento... No pude resistir esta tormenta..."
+      },
+      {
+        "title": "Ánimo del equipo 1",
+        "text": "¡Excelente trabajo en equipo!"
+      },
+      {
+        "title": "Ánimo del equipo 2",
+        "text": "¡Fabuloso trabajo!"
+      },
+      {
+        "title": "Respuesta al ánimo 1",
+        "text": "¡Sigamos con el buen trabajo!"
+      },
+      {
+        "title": "Respuesta al ánimo 2",
+        "text": "¡Gracias por el apoyo!"
+      },
+      {
+        "title": "Comienza el combate 1",
+        "text": "¡Despejando el camino para el rescate!"
+      },
+      {
+        "title": "Comienza el combate 2",
+        "text": "¡Sí! ¡Congélenlos!"
+      },
+      {
+        "title": "Victoria en el combate 1",
+        "text": "Uf... La batalla terminó. Descansemos mientras podamos."
+      },
+      {
+        "title": "Victoria en el combate 2",
+        "text": "Todos están dando su mayor esfuerzo. ¡Debo ponerme a su altura!"
+      },
+      {
+        "title": "Victoria en el combate 3",
+        "text": "¡Buen trabajo en equipo, compañeros!"
+      },
+      {
+        "title": "Victoria en el combate 4",
+        "text": "No se desanimen. ¡Soporten la tormenta y acerquémonos al destino! ¡Conserven fuerzas y llegaremos a la zona segura antes!"
+      },
+      {
+        "title": "Derrota en el combate",
+        "text": "¡No se rindan! ¡Vamos a ponernos el equipo y hagamos el trabajo de preparación! ¡Y luego lo volvemos a hacer!"
+      },
+      {
+        "title": "Golpe final 1",
+        "text": "¡Corte congelante!"
+      },
+      {
+        "title": "Golpe final 2",
+        "text": "¡Tornado gélido!"
+      },
+      {
+        "title": "Habilidad de batalla 1",
+        "text": "¡Atrás!"
+      },
+      {
+        "title": "Habilidad de batalla 2",
+        "text": "¡Paso denegado!"
+      },
+      {
+        "title": "Habilidad de batalla 3",
+        "text": "¡Snowshine protege!"
+      },
+      {
+        "title": "Habilidad de combo preparada 1",
+        "text": "¡Lista y preparada!"
+      },
+      {
+        "title": "Habilidad de combo preparada 2",
+        "text": "¡Lista para el rescate!"
+      },
+      {
+        "title": "Lanzando combo 1",
+        "text": "¡Respira conmigo!"
+      },
+      {
+        "title": "Lanzando combo 2",
+        "text": "¡Los servicios médicos de emergencia han llegado!"
+      },
+      {
+        "title": "Remate 1",
+        "text": "¡FUERA de aquí!"
+      },
+      {
+        "title": "Remate 2",
+        "text": "¡Vas a CAER!"
+      },
+      {
+        "title": "Habilidad máxima 1",
+        "text": "¡Tormenta de escarcha!"
+      },
+      {
+        "title": "Habilidad máxima 2",
+        "text": "¡Escudo de hielo!"
+      },
+      {
+        "title": "Habilidad máxima 3",
+        "text": "¡Por el hielo y la nieve! ¡Congélate!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

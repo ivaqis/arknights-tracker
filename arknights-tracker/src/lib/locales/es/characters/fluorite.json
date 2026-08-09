@@ -122,7 +122,329 @@
         "name": "Creatividad",
         "description": "Creatividad: Fabricación de “regalos”\nEl silencio de Fluorite suele anunciar una broma inminente. Por desgracia, Fluorite guarda silencio muy a menudo."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Preparación de la operación 1",
+        "text": "Oh, ¿estamos listos para jugar?"
+      },
+      {
+        "title": "Preparación de la operación 2",
+        "text": "Esperen, ¿y si alguien no está listo?"
+      },
+      {
+        "title": "Añadir al equipo 1",
+        "text": "Paz y sonrisas, damas y caballeros."
+      },
+      {
+        "title": "Añadir al equipo 2",
+        "text": "Vaya, parece que soy un buen partido."
+      },
+      {
+        "title": "Cambiar de arma",
+        "text": "Nada mal... ¿Te molesta si la modifico un poco?"
+      },
+      {
+        "title": "Cambiar de equipamiento",
+        "text": "Cuanto más sofisticado es el equipo, más complicaciones hay, ¿no?"
+      },
+      {
+        "title": "Activación de la matriz de habilidades",
+        "text": "¿Nadie quiere entrenar conmigo? Qué lástima."
+      },
+      {
+        "title": "Viendo los registros de combate",
+        "text": "Tantos registros de combate... Endfield sin duda cumple con la parte de “Industrias”."
+      },
+      {
+        "title": "Ascenso de operador 1",
+        "text": "Parece que el verdadero trabajo apenas esta empezando."
+      },
+      {
+        "title": "Ascenso de operador 2",
+        "text": "Es un verdadero honor... pero supongo que eso significa más horas en misiones de campo, ¿no?"
+      },
+      {
+        "title": "Ascenso de operador 3",
+        "text": "Quizás la próxima vez podrías incluir una medalla. Nunca he tenido una."
+      },
+      {
+        "title": "Ascenso de operador 4",
+        "text": "Si los Linderos de la Franja forman parte del “mundo mejor” que intentamos construir, entonces nos queda mucho trabajo por delante, ¿no crees?"
+      },
+      {
+        "title": "Operador reportándose para el deber",
+        "text": "Op Z7, guerrillera, Fluorite. ¿Tienes algo que decir? ¿No? ¿Qué tal si damos por terminado el día?"
+      },
+      {
+        "title": "En espera 1",
+        "text": "¿A quién le toca la mala suerte esta vez?"
+      },
+      {
+        "title": "En espera 2",
+        "text": "¿Distraerlos? ¿Inhabilitarlos? ¿O... simplemente destruirlos?"
+      },
+      {
+        "title": "Asignando a una instalación",
+        "text": "Relájate; haré bien el trabajo."
+      },
+      {
+        "title": "Saludo 1",
+        "text": "Día ajetreado, ¿eh, gran héroe?"
+      },
+      {
+        "title": "Saludo 2",
+        "text": "¿Cuándo fue la última vez que descansaste de verdad?"
+      },
+      {
+        "title": "Charla casual en la Dijiang 1",
+        "text": "Vaya... esto sí que es nuevo. ¿No tengo tareas para hoy?"
+      },
+      {
+        "title": "Charla casual en la Dijiang 2",
+        "text": "¿Akekuri acaba de entrar al salón de entrenamiento, sonriendo... con una espada? Será mejor mantenerme fuera de su vista un rato más..."
+      },
+      {
+        "title": "Charla casual en la Dijiang 3",
+        "text": "La primera vez que tomé una pistola, ni siquiera sabía cómo abrir la recámara. Pero con todos esos tipos atacándome, no es como que tuviera muchas opciones. La verdad, este entrenamiento es pan comido comparado con el caos que había en la frontera."
+      },
+      {
+        "title": "Charla casual en la Dijiang 4",
+        "text": "De pura suerte acabamos en el mismo equipo; de lo contrario, tendríamos el doble de problemas. Pero no te preocupes, yo los mantendré bajo control."
+      },
+      {
+        "title": "Charla casual en la Dijiang 5",
+        "text": "Cuando éramos niños, dormíamos todo el día sobre las bestias de carga, tomando sol para no sentir hambre... No es que me queje de los beneficios; solo creo que sería una pena no tomar un poco de sol a esta altitud."
+      },
+      {
+        "title": "Charla casual en la Dijiang 6",
+        "text": "Eres como la supervisora Perlica... De verdad no puedo odiarte. A los peces gordos de la frontera les encanta aferrarse a su estatus y su orgullo, pero la verdad, la gente sigue a un verdadero líder, con o sin todo eso."
+      },
+      {
+        "title": "Ofreciendo regalos",
+        "text": "Toma, un pequeño artefacto para ti. Relájate; nada saldrá de ahí."
+      },
+      {
+        "title": "Aceptando regalos",
+        "text": "Mmm... un “colega” mío aceptó un regalo una vez y terminó asumiendo la culpa... ¿Por qué sacudes tanto la cabeza?"
+      },
+      {
+        "title": "Diálogo de confianza 1",
+        "text": "¿Habilidades de negociación? Por favor, no halagues a esos jóvenes rufianes de barrio. Ladran fuerte, pero cuando su jefe agita el plato, regresan trotando. Son solo herramientas... sin carácter ni plan. Claro que provocan desastres, pero ¿la verdadera decadencia? Son los que poseen el poder y los recursos, sacándonos hasta la última gota."
+      },
+      {
+        "title": "Diálogo de confianza 2",
+        "text": "Tuve algunos problemas antes de unirme. Akekuri me sacó del apuro. Su escuadrón estaba ocupado salvando el pueblo y echando a esos Rompesuelos. ¿Y los lugareños? Estaban demasiado ocupados mirando los suministros de Endfield como buitres... Ahora, dime, ¿tú qué habrías hecho?"
+      },
+      {
+        "title": "Diálogo de confianza 3",
+        "text": "Tengo seis tíos, ocho tías y veintidós hermanos... Sí, somos muy parecidos a los Cautuses. No todos éramos familia; solo gente que huyó conmigo y con mi mamá. Algunos se unieron después, otros desaparecieron quién sabe cuándo. Pero nos mantuvimos unidos, aunque fuera solo por un tiempo. Esa era suficiente familia para mí."
+      },
+      {
+        "title": "Diálogo de confianza 4",
+        "text": "Algunos olvidan que tenemos cuatro extremidades, no solo dos para arrastrarnos. Si te encorvas lo suficiente, dejas de parecer una persona. La frontera está llena de gente así. ¿Pero y si tienes el valor de alzar la mirada? Entonces quizá tengas una oportunidad de algo mejor."
+      },
+      {
+        "title": "Diálogo de confianza 5",
+        "text": "Toma esta carta. Quémala en las tierras salvajes si no regreso. Puedes leerla si quieres, solo son unas cuantas cositas. La persona a quien iba dirigida ya no está. Supongo que me toca a mí encontrar las respuestas que buscaba. Seguro que el gran héroe de Talos-II me echará una mano, ¿no?"
+      },
+      {
+        "title": "Charla 1",
+        "text": "Esta es una de mis bombas clave. Solo hay que ajustar la superficie adhesiva y explotará justo donde se necesita. Oh, no te preocupes por su potencia. Es mucho más eficaz para frenar al objetivo que para simplemente volarlo todo."
+      },
+      {
+        "title": "Charla 2",
+        "text": "Después de revisar mi expediente, la supervisora Perlica me dio el nombre clave “Fluorite”. Es naturalmente tóxica, pero perfecta para fabricar todo tipo de productos industriales. Entendí lo que ella quería decir después de hojear el libro. Pero, ¿te soy sincera? Fue una elección un poco atrevida."
+      },
+      {
+        "title": "Charla 3",
+        "text": "De niña, mi mamá y yo siempre íbamos huyendo de un lugar a otro. Eventualmente, me tocó sobrevivir sola en la frontera. En algunos lugares nos daban grano reservado como raciones, y en otros nos cobraban todo tipo de cargos inventados. Todo lugar parecía ser un hogar, pero ninguno lo era de verdad. Los asentamientos en la frontera nunca duraban, y la idea de “hogar” en realidad nunca significó nada."
+      },
+      {
+        "title": "Charla 4",
+        "text": "La belleza siempre ha definido las tierras salvajes. Los animales ahuyentados por la Plaga nunca se van del todo... solo cambian su ruta cada año. El pasto regresa apenas la Plaga se retira. La naturaleza tiene su propio ritmo, y solo puede aguantar... A veces me pregunto si de verdad formamos parte de ese equilibrio."
+      },
+      {
+        "title": "Charla 5",
+        "text": "En las zonas remotas que he vivido, siempre los ejecutores son los que más presionan a la gente. Saben lo frágil que es todo: una chispa de caos, y el lugar entero se desmorona. Así crean un equilibrio distorsionado, manteniendo a las personas de ahí como rehenes. Y mientras no tengas el poder de agarrarlos por el cuello, nada va a cambiar nunca."
+      },
+      {
+        "title": "Tema: Akekuri",
+        "text": "Adivina: ¿quién crees que selló esas orejas en la bolsa de evidencia? Sí, incluso nuestra amable capitana sabía que no había mejor opción en Talos-II. ¿Y viste esa cara que puso, con los ojos llorosos pero aguantando? Adorable."
+      },
+      {
+        "title": "Tema: Catcher",
+        "text": "Puede que parezca que lo disfruta, pero sé indulgente con él. Los que se preparan de más suelen ser los que más miedo tienen de arruinarlo todo. Nadie está libre de equivocarse... ¿Que deje de pedirle favores? Pfff, ¿y por qué lo haría? No te preocupes, saldrá adelante, aunque esté paralizado de miedo. Siempre lo hace."
+      },
+      {
+        "title": "Tema: Estella",
+        "text": "No toques la lista de reproducción de Estella ni la dejes lanzarse al peligro real. ¿Crees que lo tiene todo bajo control? Para nada. Será mejor que tengas un trapeador a la mano, cariño."
+      },
+      {
+        "title": "Tema: Antal",
+        "text": "Ese lagarto grande es más frío que el hielo, incluso en el calor de la batalla... Seguro ni se da cuenta de que está en peligro. Eso vuelve loca a la capitana... pero bueno, así es él. ¿Él y yo? Mmm... Nos llevamos bien... mientras recuerde que no debe quedarse mirándome la cola."
+      },
+      {
+        "title": "Recurso/Coleccionable detectado 1",
+        "text": "Encontré algo genial, ¿les molesta si me lo quedo?"
+      },
+      {
+        "title": "Recurso/Coleccionable detectado 2",
+        "text": "¿Vieron eso de allá? Ah, no importa, olvídenlo."
+      },
+      {
+        "title": "Zona inexplorada detectada",
+        "text": "Encontré un buen lugar. Mmm... parece divertido."
+      },
+      {
+        "title": "Enemigo poderoso descubierto",
+        "text": "Gente, tenemos un amigo con quién jugar."
+      },
+      {
+        "title": "Minería 1",
+        "text": "Ah, el viejo y confiable “hazlo tú mismo”. Como en aquellos días amargos de antaño."
+      },
+      {
+        "title": "Minería 2",
+        "text": "*Bostezo* Ya voy. Ustedes sí que son productivos."
+      },
+      {
+        "title": "Abriendo una caja",
+        "text": "Guau, qué hallazgo. ¿Y sin etiqueta? Mmm..."
+      },
+      {
+        "title": "Adquiriendo Aurileno",
+        "text": "Ya tuve uno de estos antes... Lo que pasó después no fue tan bueno."
+      },
+      {
+        "title": "Eliminar la Plaga",
+        "text": "Si tan solo hubiera podido eliminar la Plaga en aquel entonces..."
+      },
+      {
+        "title": "Descanso",
+        "text": "Por fin, hora de reabastecer mis bombas."
+      },
+      {
+        "title": "Uso táctico 1",
+        "text": "¿Ves? Sabía que esto serviría."
+      },
+      {
+        "title": "Uso táctico 2",
+        "text": "Eso solo fue mala suerte. Una ronda más."
+      },
+      {
+        "title": "Advertencia de peligro",
+        "text": "Cuidado, no te dejes golpear."
+      },
+      {
+        "title": "Herida",
+        "text": "...Me resbalé."
+      },
+      {
+        "title": "0 PV",
+        "text": "Debí... haberlo atrapado."
+      },
+      {
+        "title": "Ánimo del equipo 1",
+        "text": "Bueno, eso fue interesante."
+      },
+      {
+        "title": "Ánimo del equipo 2",
+        "text": "Nada mal. Lástima que nadie lo grabó."
+      },
+      {
+        "title": "Respuesta al ánimo 1",
+        "text": "Bonitas palabras, pero ahórrate el aliento."
+      },
+      {
+        "title": "Respuesta al ánimo 2",
+        "text": "Bueno, al final del día somos un equipo de élite."
+      },
+      {
+        "title": "Comienza el combate 1",
+        "text": "De vuelta a mi antiguo trabajo, ¿eh?"
+      },
+      {
+        "title": "Comienza el combate 2",
+        "text": "¡Qué dedicados somos! Dedos cruzados por un bono."
+      },
+      {
+        "title": "Victoria en el combate 1",
+        "text": "Bien, un problema menos del cual preocuparnos."
+      },
+      {
+        "title": "Victoria en el combate 2",
+        "text": "Qué mal, casi lo logran."
+      },
+      {
+        "title": "Victoria en el combate 3",
+        "text": "Sip, sip. No hubiera sido posible sin ti."
+      },
+      {
+        "title": "Victoria en el combate 4",
+        "text": "Hmm. Nada mal, pero no fue suficiente."
+      },
+      {
+        "title": "Derrota en el combate",
+        "text": "Lamentarse no lleva a nada. Actuar, sí. Vamos, esto aún no termina."
+      },
+      {
+        "title": "Golpe final 1",
+        "text": "*Silbido* ¡Atrápalo!"
+      },
+      {
+        "title": "Golpe final 2",
+        "text": "Atención, por favor."
+      },
+      {
+        "title": "Habilidad de batalla 1",
+        "text": "Aquí tienes."
+      },
+      {
+        "title": "Habilidad de batalla 2",
+        "text": "¡Espero que te guste!"
+      },
+      {
+        "title": "Habilidad de batalla 3",
+        "text": "¡Tic toc!"
+      },
+      {
+        "title": "Habilidad de combo preparada 1",
+        "text": "Ajá. Hora del espectáculo."
+      },
+      {
+        "title": "Habilidad de combo preparada 2",
+        "text": "Tienen más agujeros que un queso."
+      },
+      {
+        "title": "Lanzando combo 1",
+        "text": "Saborea esto."
+      },
+      {
+        "title": "Lanzando combo 2",
+        "text": "Apuesto a que te encanta."
+      },
+      {
+        "title": "Remate 1",
+        "text": "Sorpresa."
+      },
+      {
+        "title": "Remate 2",
+        "text": "Hora de dormir, cariño."
+      },
+      {
+        "title": "Habilidad máxima 1",
+        "text": "¿Supongo que ya viviste suficiente?"
+      },
+      {
+        "title": "Habilidad máxima 2",
+        "text": "Esto va a sonar fuerte."
+      },
+      {
+        "title": "Habilidad máxima 3",
+        "text": "Hasta aquí llegaste, amigo."
+      }
+    ]
   },
   "potentials": {
     "potential1": {

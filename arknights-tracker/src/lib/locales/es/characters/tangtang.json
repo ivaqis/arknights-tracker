@@ -128,7 +128,333 @@
         "name": "Creatividad",
         "description": "Creatividad: Mejoradora de la Empalizada\nLos planes de Tangtang suelen dejar en shock a los Empalizadores. No tienen idea de dónde obtiene su inspiración."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Preparación de la operación 1",
+        "text": "Oye, Máscara oscura, ¿a dónde vas? ¡No te vayas sin mí!"
+      },
+      {
+        "title": "Preparación de la operación 2",
+        "text": "¿Por fin vas a salir? ¡Ya me estaban saliendo raíces de tanto esperar!"
+      },
+      {
+        "title": "Añadir al equipo 1",
+        "text": "¡Tu Jefa Suprema ya llegó! ¡Tú, tú y tú están bajo mi mando!"
+      },
+      {
+        "title": "Añadir al equipo 2",
+        "text": "No te preocupes, yo te cubro."
+      },
+      {
+        "title": "Cambiar de arma",
+        "text": "¡Esta cosa se maneja de maravilla! ¡Mi puntería está mejor que nunca!"
+      },
+      {
+        "title": "Cambiar de equipamiento",
+        "text": "¿Todo este equipo es para mí? Vamos, ¡lo bueno se comparte! ¡Este es tuyo, y este es mío!"
+      },
+      {
+        "title": "Activación de la matriz de habilidades",
+        "text": "¡Ahora soy todavía más fuerte! Bueno, ¡hora de probar esto con esa vieja loca!"
+      },
+      {
+        "title": "Viendo los registros de combate",
+        "text": "¡Golpea a la izquierda! ¡Y a la derecha! Sí, así, justo así... Oye, estos no están nada mal, ¡reclútalos para mí!"
+      },
+      {
+        "title": "Ascenso de operador 1",
+        "text": "¿Me llamaste solo para elogiarme? Bueno, entonces no te detengas. ¡Me encanta oír la verdad!"
+      },
+      {
+        "title": "Ascenso de operador 2",
+        "text": "¿Otra vez me vas a ascender? ¡Sabía que era tu favorita!"
+      },
+      {
+        "title": "Ascenso de operador 3",
+        "text": "¡Estamos forjados en batalla! No hacen falta formalidades. Si yo me tomo un sorbo de sopa, tú te comes un bocado de carne. ¿Qué, debería ser al revés? Nah, así es como funcionan las cosas conmigo."
+      },
+      {
+        "title": "Ascenso de operador 4",
+        "text": "¡¿Otro ascenso?! ¡Solo tengo un ojo... no puedo leer tantos reportes! Tú encárgate de los planos de construcción por ahora... ¿Eh? ¡No me estoy haciendo la tonta! Esto es una demora estratégica. ¡Voy a entrenar y regresar más fuerte!"
+      },
+      {
+        "title": "Operador reportándose para el deber",
+        "text": "¡La Jefa de la Empalizada de Qingbo, Tangtang, reportándose como prometí! Ahora sí, ¡entrégame Endfield y lo voy a convertir en el lugar más rudo de Talos-II! ¿Entregar una propuesta? Vamos, ¿desde cuándo un jefe hace papeleo? ¡Lo resolvemos juntos y ya!"
+      },
+      {
+        "title": "En espera 1",
+        "text": "¡Uff, mi tesoro! ¡Ja, trata de escapar ahora!"
+      },
+      {
+        "title": "En espera 2",
+        "text": "¡Rawr, Máscara oscura! ¡Por fin estás aquí! ¿Por qué tardaste tanto?"
+      },
+      {
+        "title": "Asignando a la instalación",
+        "text": "Está bien, está bien, ya entendí. Presionas esto... luego tocas eso. ¡Si algo sale mal, Máscara oscura lo arregla!"
+      },
+      {
+        "title": "Saludo 1",
+        "text": "¡Máscara oscura, por aquí!"
+      },
+      {
+        "title": "Saludo 2",
+        "text": "Avísame si sale algo divertido. ¡No me lo quiero perder!"
+      },
+      {
+        "title": "Charla casual en la Dijiang 1",
+        "text": "Tu tripulación es bastante fuerte, ¡pero nunca he perdido un combate de verdad! Eh… bueno… los únicos que no aguanto son... ¡esos médicos de bata blanca! Siguen diciendo que van a tratar mi Oripatía y quieren picarme el trasero con agujas... ¡Aaah! ¡Ahí vienen! ¡Máscara oscura, déjame esconderme!"
+      },
+      {
+        "title": "Charla casual en la Dijiang 2",
+        "text": "Tienes demasiada gente talentosa en esta Dijiang; si pudiera quedarme con unos cuantos… Je, Máscara oscura, no tengo tanta codicia, ¡nomás dame a Escriba Pálida y a Escamas Verdes! ¿No? ¡Entonces a ese Viejo Cara de Hierro de tres cabezas, súper hablador! Ándale, él no me tiene miedo. ¡Somos los mejores amigos!"
+      },
+      {
+        "title": "Charla casual en la Dijiang 3",
+        "text": "{F}Cuando me estreso, solo me voy a gritar junto al agua unas cuantas veces, y siempre me siento muchísimo mejor. Alguien tan ocupada como tú, con tantas cosas en la cabeza, también debería buscar un lugar para gritar. ¿Qué tal esa plataforma de allá? ¿O esa ventana grandota? Pff, ¿cómo que esto podría causar problemas? ¡Guardártelo todo es el verdadero problema!{M}Cuando me estreso, solo me voy a gritar junto al agua unas cuantas veces, y siempre me siento muchísimo mejor. Alguien tan ocupado como tú, con tantas cosas en la cabeza, también debería buscar un lugar para gritar. ¿Qué tal esa plataforma de allá? ¿O esa ventana grandota? Pff, ¿cómo que esto podría causar problemas? ¡Guardártelo todo es el verdadero problema!"
+      },
+      {
+        "title": "Charla casual en la Dijiang 4",
+        "text": "Desde las ventanas de la Dijiang se ven un montón de estrellas. Me recuerda un poco a antes, cuando me acostaba junto al manantial ancestral y veía las estrellas reflejadas en el agua. Una nave espacial también es un barco; la galaxia también es un río... Si lo piensas, la Dijiang y la Empalizada de Qingbo no son tan diferentes después de todo. ¡Los dos son buenos lugares!"
+      },
+      {
+        "title": "Charla casual en la Dijiang 5",
+        "text": "Esta factura de daños… ¡no fue mi culpa! Échale la culpa a ese novato patrullero de pelo verde — pudo haberme devuelto la cartera y ya. ¡En lugar de eso me persiguió por media base! ¡Pensé que me quería arrestar! Y mientras lo esquivaba, bueno… puede que haya chocado con unas cuantas cajas. ¡No es como si yo fuera culpable ni nada! Son viejas mañas de andar esquivando vigilantes en Wuling."
+      },
+      {
+        "title": "Charla casual en la Dijiang 6",
+        "text": "Endmin Endmin Endmin... ¡Hmph! Aposté con Escamas verdes que si podía llamarte Endmin todo un día, ¡me compraría un montón de dulces! ¡Esta vez sí gano! Solo espera a que suelte el dinero, Máscara osc... ¡ura! ¡Yo no lo dije! ¡Oíste mal! ¡Esa no cuenta!"
+      },
+      {
+        "title": "Ofreciendo obsequios",
+        "text": "No preguntes de dónde salió, solo tómalo. Mi regla es recompensar el buen trabajo, y tú… ¡lo haces bastante bien!"
+      },
+      {
+        "title": "Aceptando regalos",
+        "text": "Ay, no debías... ¿Tienes más? ¿Qué tal otro?"
+      },
+      {
+        "title": "Diálogo de confianza 1",
+        "text": "Cuando se trata de las delicias de Wuling, todos recomiendan lo mismo de siempre. ¡Déjame darte un tip de verdad! Prueba la comida de la prisión en la Ciudad de Wuling: tres platillos, una sopa y hasta te dan fruta. Lo revisé en secreto: los presos comen exactamente lo mismo que los vigilantes, y está bien bueno. Ah, y también te cuento de un lugar genial: cuando vas arrastrándote por los túneles subterráneos rumbo a Wuling, hay un sitio por donde se cuela la luz, con un montón de flores creciendo cerca... Bien bonito. Qué lástima que esa loca de Mi Fu lo haya bloqueado."
+      },
+      {
+        "title": "Diálogo de confianza 2",
+        "text": "¿Sabes? Hay algo que siempre me he preguntado... ¿Quiénes fueron mis verdaderos padres, y por qué me dejaron en el agua? Todos dicen que soy la “hija del río”, pero un río no puede parir a una Felina... Papá me dijo que llegué flotando en una tina, bien envuelta, con un moño arriba... Si algún día los conociera, querría preguntarles: ¿de verdad no me abandonaron porque me odiaban, verdad? Digo... ¿quién le pone moño a la basura que está tirando?"
+      },
+      {
+        "title": "Diálogo de confianza 3",
+        "text": "¡No te muevas! ¡Casi me rompes mi tira de bambú! Ejem... El sol ha estado medio pesado últimamente, así que pensé tejerte un sombrero para el calor. Solo estaba midiendo tu cabeza... ¿Qué, no confías en mis habilidades? Las canastas, cajas y estantes de bambú allá en la Empalizada... bueno, sí, está bien, yo no los hice, pero Qingwu dice que lo hecho a mano tiene más significado... En fin: ¡cuando la Jefa da un regalo, lo aceptas, y punto!"
+      },
+      {
+        "title": "Diálogo de confianza 4",
+        "text": "Sé que la gente de la Empalizada me llama Jefa, pero en su corazón, en realidad seguían a mi hermano. A él le dieron armas, le enseñaron a leer… pero a mí me daban juguetes y ropa; solo me seguían el juego durante el entrenamiento. Incluso ahora, apenas me sé unos cuantos caracteres. Me trataron bien, siempre intentando mantenerme feliz. Sin fallas, sin culpas. Yo solo puedo reprocharme por no haber estado a la altura… Pero ahora es diferente. Seré una líder de verdad, no solo para la Empalizada o para mí… sino también para todos los que creen en mí."
+      },
+      {
+        "title": "Diálogo de confianza 5",
+        "text": "Máscara oscura, eres genial en todo, excepto en una cosa: ¡tu postura está demasiado rígida! Ni siquiera puedo acercarme sigilosamente como se debe; se me complica darte una palmadita en el hombro o revolverte el cabello... ¿Por qué? ¡Porque quiero recompensarte, claro! Es una señal de confianza que tenemos... ¡Oye! ¡Ni se te ocurra darme palmaditas en la cabeza! Yo soy la jefa, ¡y la cabeza de la jefa está fuera de tus límites!"
+      },
+      {
+        "title": "Charla 1",
+        "text": "Nadar, remar, lanzar piedras... todo lo que tenga que ver con el agua, ¡se me da natural! La gente de la Empalizada dice que soy una niña bendecida por el manantial ancestral, y que el agua me adora... ¿Pero entre tú y yo? La verdad es que, como no veo bien con este ojo, siempre me quedaba atrás cuando nadaba con los demás. Me negué a aceptarlo; practiqué todos los días... ¡hasta que dominé eso de ver con un solo ojo y los dejé a todos atrás! ¿Cómo era ese dicho? ...Cierto: ¡el que persevera, alcanza!"
+      },
+      {
+        "title": "Charla 2",
+        "text": "Mis cañones de mano me los dejó Papá, mi ropa la hizo Qingwu, mi cabello me lo cortó mi hermano, las vendas las cosió Shui Ling... Así es todo en la Empalizada. No hay profesiones fijas: todos tienen que saber un poco de todo, ayudándose entre sí... ¡Ah, y yo soy mucho mejor cortando el cabello que mi hermano! ¿Quieres probar? ¿Ese peinado tuyo? Con un par de balazos queda — ¡Oye, Máscara oscura, deja de correr!"
+      },
+      {
+        "title": "Charla 3",
+        "text": "En invierno, secábamos la aleta que pescábamos en parrillas de bambú para hacer carne seca. Durante esos meses, toda la Empalizada de Qingbo apestaba tanto que casi deseaba que Mi Fu me arrastrara a Wuling. Pero ya bien secas, salteadas con verduras y encima de arroz... Absolutamente delicioso. Ya sabes, es como la vida: primero amarga, luego dulce. Al final, ¡todo se acomoda!"
+      },
+      {
+        "title": "Charla 4",
+        "text": "Toma, otro Certificado Tangtang para ti. Me ayudaste en la cafetería ayer, así que te debo una. ¡Hmph! Pero esa máquina, la que escupe botellitas cuando la pateas, ¿sí sabes cuál? Definitivamente no fui yo la que la rompió... En fin, olvida eso. Ya tienes demasiados Certificados Tangtang; ¡hay que cambiar las reglas! De ahora en adelante, tú, Máscara oscura, necesitas quinientos para canjear una sola vez... ¡Je, mis vales, mis reglas!"
+      },
+      {
+        "title": "Charla 5",
+        "text": "Me cubro este ojo no porque la Oripatía lo haya vuelto sensible a la luz... sino porque me permite usar eso que llaman Artes de Originio. Antes no podía controlarlo y terminé lastimando a esa loca durante una pelea, y todavía tiene la cicatriz... Me daba miedo lastimar a alguien más por accidente, así que desde entonces he traído el parche. Pero bueno, todos dicen que me da más “porte de jefa”, así que incluso después de aprender a controlarlo, ¡ni pensé en quitármelo!"
+      },
+      {
+        "title": "Tema: Empalizada de Qingbo",
+        "text": "¿Sabes? Hace más de cien años, nuestros ancestros en la Empalizada de Qingbo se cansaron de tantas peleas y rivalidades entre la gente. Dejaron esos lugares llenos de conflicto y se establecieron junto al manantial ancestral. Pero después de que llegó la gente de Wuling, volvimos a pelear otra vez. Como que no importa a dónde vayas: la gente no puede escapar de los rencores y los pleitos... Porque esas cosas echan raíz justo en el corazón de todos. Pero si yo administro bien este hogar, esos conflictos no se repetirán... No, más que eso. ¡Voy a hacer cosas todavía más grandes aquí en Endfield, junto con todos ustedes!"
+      },
+      {
+        "title": "Tema: Mi Fu",
+        "text": "¿Sabes? Mi Fu antes era una de los nuestros en la Empalizada. ¡Luego un día se le botó la canica y fue a reconocer a ese Zhuang como su jefe! ¡Me hizo enojar mucho! Le dije una y otra vez que yo sería una líder muchísimo mejor que ese Zhuang, pero igual nunca volteó atrás... ¡Puras tonterías! ¿Todas esas veces que fui a la Ciudad de Wuling? No fue para rogarle que regresara a casa. ¡Fui a partirle la cara!"
+      },
+      {
+        "title": "Tema: Zhuang Fangyi",
+        "text": "¿Esa Tianshi pararrayos? Hasta lo más simple se enreda cuando ella lo explica. Te juro que cada palabra se siente como una trampa, y me tardo siglos en desenredarla. Solo somos dos tipos de agua distintos, fluyendo en direcciones opuestas... Pero por el bien de la Empalizada, de todos modos tengo que escucharla... Máscara oscura, ayúdame con esta propuesta. ¿Qué demonios se supone que significa “índice del terreno”...?"
+      },
+      {
+        "title": "Tema: Fuentes de bambú de agua",
+        "text": "Cuando perdemos a alguien en la Empalizada, dejamos ir una fuente de bambú de agua. La primera que solté… fue por papá. Mi hermano decía que el tintineo del manantial era papá hablándonos. Después de eso, siempre iba al agua cuando me sentía perdida, y me respondía. Pero cuando pregunté por mi hermano, se quedó en silencio. Esperé, esperé muchísimo, hasta que me quedé dormida… Tal vez papá creyó que esto era algo que tenía que resolver yo sola."
+      },
+      {
+        "title": "Tema: Lectura",
+        "text": "No suelo disfrutar leer, pero esos libros que me dio Escamas verdes la última vez estaban bastante buenos. Dijo que son de Hongshan y que son para niños que todavía no saben leer. Pero la verdad, las lecciones vienen explicadas con mucha claridad. Muchos adultos no logran eso, aunque se sepan todas las palabras. Al menos cuando se los enseñé a la tripulación, todos se daban palmadas en la pierna diciendo “¡Eso tiene sentido!”. Si la gente en este mundo hablara tan directo como esos libros, ¿cuántos problemas y malentendidos menos habría?"
+      },
+      {
+        "title": "Recurso/Coleccionable detectado 1",
+        "text": "¡Ojos bien abiertos, hay algo brillante por aquí!"
+      },
+      {
+        "title": "Recurso/Coleccionable detectado 2",
+        "text": "¡Tesoro por allá! ¡Échame la mano!"
+      },
+      {
+        "title": "Zona inexplorada detectada",
+        "text": "Esa zona sigue intacta; ¡vamos a explorarla!"
+      },
+      {
+        "title": "Enemigo poderoso descubierto",
+        "text": "¡Llegó tu jefa! ...Espera, ese se ve duro..."
+      },
+      {
+        "title": "Minería 1",
+        "text": "¡Qué rocas tan bonitas! ¡A excavar, excavar y excavar!"
+      },
+      {
+        "title": "Minería 2",
+        "text": "Cosas brillantes. ¡Hay que repartirlas!"
+      },
+      {
+        "title": "Abriendo una caja",
+        "text": "Espera... ¡¿nadie quiere estos?! Yo, eh... ¡entonces me los quedo!"
+      },
+      {
+        "title": "Adquiriendo Aurileno",
+        "text": "¿Lo puedo vender?"
+      },
+      {
+        "title": "Eliminando la Plaga",
+        "text": "¡Genial! ¡Ahora podemos saltarnos varias vueltas innecesarias!"
+      },
+      {
+        "title": "Descanso",
+        "text": "Uf... Ahora sí me cansé... ¿No puedes seguir? ¡Ja! ¡La palabra “no puedo” no está en mi diccionario! Vamos, ¡sigamos avanzando!"
+      },
+      {
+        "title": "Uso táctico 1",
+        "text": "¡Te dije que yo te cubría!"
+      },
+      {
+        "title": "Uso táctico 2",
+        "text": "Ah, ¡mucho mejor!"
+      },
+      {
+        "title": "Advertencia de peligro",
+        "text": "¡No te quedes ahí parado! ¡Quítate!"
+      },
+      {
+        "title": "Herido",
+        "text": "Qué... sueño... Tengo que... aguantar..."
+      },
+      {
+        "title": "0 PV",
+        "text": "Hoy... te la voy a dejar pasar..."
+      },
+      {
+        "title": "Ánimo del equipo 1",
+        "text": "¡Ese es mi amigui estrella!"
+      },
+      {
+        "title": "Ánimo del equipo 2",
+        "text": "¡Nuestra pequeña banda sí que tiene talento!"
+      },
+      {
+        "title": "Respuesta al ánimo 1",
+        "text": "¡Bien, bien!"
+      },
+      {
+        "title": "Respuesta al ánimo 2",
+        "text": "La próxima, ¿hacemos algo todavía más grande?"
+      },
+      {
+        "title": "Comienza el combate 1",
+        "text": "¿Quién es el gracioso que busca pleito?"
+      },
+      {
+        "title": "Comienza el combate 2",
+        "text": "¡Así es como hay que asustarlos!"
+      },
+      {
+        "title": "Victoria en el combate 1",
+        "text": "¡Eso sí fue una pelea satisfactoria!"
+      },
+      {
+        "title": "Victoria en el combate 2",
+        "text": "Je, ¡todo gracias a mi brillante mando!"
+      },
+      {
+        "title": "Victoria en el combate 3",
+        "text": "¡Eso es lo que me gusta oír!"
+      },
+      {
+        "title": "Victoria en el combate 4",
+        "text": "Todos lo hicieron genial. ¡A descansar ahora; la próxima seremos más cuidadosos!"
+      },
+      {
+        "title": "Derrota en el combate",
+        "text": "No soporto verlos sufrir así... ¡Juro que me vengaré por ustedes!"
+      },
+      {
+        "title": "Golpe final 1",
+        "text": "¡Piu!"
+      },
+      {
+        "title": "Golpe final 2",
+        "text": "¡Blam!"
+      },
+      {
+        "title": "Habilidad de batalla 1",
+        "text": "¡Objetivo fijado!"
+      },
+      {
+        "title": "Habilidad de batalla 2",
+        "text": "¡Montando la marea!"
+      },
+      {
+        "title": "Habilidad de batalla 3",
+        "text": "¡A ver quién es más rápido!"
+      },
+      {
+        "title": "Habilidad de combo preparada 1",
+        "text": "¡¿Cuándo me toca a mí?!"
+      },
+      {
+        "title": "Habilidad de combo preparada 2",
+        "text": "¡Hora del movimiento de la jefa!"
+      },
+      {
+        "title": "Lanzando combo 1",
+        "text": "¡Veo una apertura!"
+      },
+      {
+        "title": "Lanzando combo 2",
+        "text": "¡No te resbales!"
+      },
+      {
+        "title": "Remate 1",
+        "text": "¡Estás expuesto!"
+      },
+      {
+        "title": "Remate 2",
+        "text": "¡Te engañé! ¡Ja!"
+      },
+      {
+        "title": "Habilidad máxima 1",
+        "text": "Te tengo en la mira."
+      },
+      {
+        "title": "Habilidad máxima 2",
+        "text": "A esta la llamo: ¡Quieto ahí!"
+      },
+      {
+        "title": "Habilidad máxima 3",
+        "text": "¡Desaparece con la marea!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

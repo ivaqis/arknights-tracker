@@ -127,7 +127,329 @@
         "name": "Sport",
         "description": "Sport: Immerwährende Trainingsroutine\nDie erste Fitnessübung, die er im Camp lernte, waren 30 Kniebeugen pro Tag. Das hat er 1946 Tage lang durchgezogen."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Einsatzvorbereitung 1",
+        "text": "Hmm? Eine neue Mission?"
+      },
+      {
+        "title": "Einsatzvorbereitung 2",
+        "text": "Ich bin bereit."
+      },
+      {
+        "title": "Wird zum Team hinzugefügt 1",
+        "text": "Wenn du Deckung und Logistik brauchst, kannst du beides mir überlassen."
+      },
+      {
+        "title": "Wird zum Team hinzugefügt 2",
+        "text": "Hoffen wir, dass diese Mission gut geplant ist und weniger Risiken birgt."
+      },
+      {
+        "title": "Waffe wird gewechselt",
+        "text": "Praktisch und vielseitig. Das wird uns bei Angriffseinsätzen in verschiedenen Szenarien unterstützen."
+      },
+      {
+        "title": "Ausrüstung wird gewechselt",
+        "text": "Standardisierte Ausrüstung … Davon haben wir nur in Bootcamp-Lehrbüchern gelesen … Das Original ist besser verarbeitet als erwartet."
+      },
+      {
+        "title": "Fähigkeitsmatrix wird aktiviert",
+        "text": "Normalerweise bereite ich zusätzliche Notfallpläne vor. Die … sind immer nützlich."
+      },
+      {
+        "title": "Kampfaufzeichnungen ansehen",
+        "text": "Okay … So! Ich habe alle wichtigen Punkte notiert … Ich lege der Hauptfrau meine Zusammenfassung auf ihren Schreibtisch."
+      },
+      {
+        "title": "Operator-Beförderung 1",
+        "text": "Vielen Dank. Ich werde bei unseren zukünftigen Missionen mein Bestes geben."
+      },
+      {
+        "title": "Operator-Beförderung 2",
+        "text": "Du kannst mir jetzt die schwierigeren Aufgaben geben. Ich glaube, sie kann sie jetzt bewältigen."
+      },
+      {
+        "title": "Operator-Beförderung 3",
+        "text": "Ich weiß deine Unterstützung sehr zu schätzen, Endmin. Im Gegenzug habe ich die Missionsvorbereitungen für die … nächsten neunzig Tage abgeschlossen. Du kannst sie dir jederzeit ansehen."
+      },
+      {
+        "title": "Operator-Beförderung 4",
+        "text": "Manchmal denke ich darüber nach, was hätte passieren können, wenn ich den Wünschen meiner Familie nachgekommen wäre. Vielleicht würde ich heute ein anderes Leben führen. Ein einfacheres, aber bequemeres … Aber ich hatte mich entschieden, als ich an jenem Morgen das Schwert nahm und mein Zuhause verließ. Ich habe nicht vor, zurückzublicken."
+      },
+      {
+        "title": "Operator meldet sich zum Dienst",
+        "text": "Catcher, Einsatzteam Z7. Meine Aufgabe besteht darin, dem Team Deckung und logistische Unterstützung zu geben. Ich bin auf Verteidigungseinsätze spezialisiert und kenne mich gut mit der Klinge aus … Und ich hoffe, ich werde dein Team effektiv verstärken."
+      },
+      {
+        "title": "Warten 1",
+        "text": "Brauchst du Deckung? Die bekommst du von mir."
+      },
+      {
+        "title": "Warten 2",
+        "text": "Ich glaube, wir sollten uns gründlicher vorbereiten."
+      },
+      {
+        "title": "Zuweisung zur Anlage",
+        "text": "Befehle erhalten. Ich habe sie als oberste Missionsprioritäten markiert."
+      },
+      {
+        "title": "Gruß 1",
+        "text": "Hallo Endmin. Gibt es einen weiteren Auftrag?"
+      },
+      {
+        "title": "Gruß 2",
+        "text": "Endmin, ich habe zehn Ordner mit Kampfzusammenfassungen für Team Z7 zusammengestellt. Möchtest du sie dir ansehen?"
+      },
+      {
+        "title": "Dijiang-Geplauder 1",
+        "text": "Suchst du mich, Endmin? Nun, ich habe dreißig Minuten Zeit, bevor ich in fünf Schwertkampfrunden hintereinander antrete … Und den Rest der Zeit bin ich frei."
+      },
+      {
+        "title": "Dijiang-Geplauder 2",
+        "text": "Ich habe mir vor Kurzem alle Vorschläge angesehen und mein Rezept für Wildnis-Eintopf verbessert … Probiere ihn ruhig mal, wenn du neugierig bist, Endmin."
+      },
+      {
+        "title": "Dijiang-Geplauder 3",
+        "text": "Immer wenn ich auf die Dijiang zurückkehre, überkommt mich dieses Gefühl von Behaglichkeit und Entspannung, das ich kaum beschreiben kann … Antal besteht darauf, dass es an der Gemütlichkeit der Matratzen im Schlafsaal liegt … Natürlich möchte ich ihm da nicht widersprechen."
+      },
+      {
+        "title": "Dijiang-Geplauder 4",
+        "text": "Ich vertraue meinen Teammitgliedern auf Missionen voll und ganz. Allerdings vertraue ich nicht darauf, dass sie den Befehlen der Hauptfrau Folge leisten und sich danach richtig erholen. Einer würde die ganze Nacht in der Bibliothek verbringen und ein anderer würde den Rekruten im Spielzimmer Streiche spielen … Derartiger Unfug wird erst enden, wenn ich sie persönlich zurück in ihre Kabinen „begleite“."
+      },
+      {
+        "title": "Dijiang-Geplauder 5",
+        "text": "Ich habe meine Familie vor zwei Tagen besucht. Meine Familienmitglieder sind nicht gerade begeistert von meiner Berufswahl, aber ich habe ihnen erzählt, wie Team Z7 wirklich ist. Sie haben nicht viel dazu gesagt und haben mir lediglich ein paar Rucksäcke mit lokalen Spezialitäten gegeben. Z7 bräuchte sechs Monate, um das alles aufzuessen … Endmin, ich finde, du solltest auch einen halben Rucksack bekommen."
+      },
+      {
+        "title": "Dijiang-Geplauder 6",
+        "text": "Das Leben ist sehr erfüllend. Ich fühle mich wirklich nützlich, und jeder weiß das zu schätzen … Und genau das bedeutet es für mich, Endfielder zu sein. Manchmal bin ich zu erschöpft, um zu schlafen, aber das nehme ich gelassen hin. Das heißt nur, dass ich mir jemandes Anerkennung verdient habe."
+      },
+      {
+        "title": "Geschenke anbieten",
+        "text": "Das sind nur ein paar kleine Geschenke, Endmin … Aber ich hoffe, du nimmst sie an."
+      },
+      {
+        "title": "Geschenke annehmen",
+        "text": "Für mich? Vielen Dank, Endmin. Das werde ich in einem Tresor aufbewahren."
+      },
+      {
+        "title": "Vertrauensgespräch 1",
+        "text": "Oh, entschuldige, Endmin! Ich habe überlegt, wie ich mich auf die nächste Mission vorbereiten soll. Moment! Ich habe eine Frage an dich. Was hältst du für nützlicher: ein Handschweißgerät, ein Antigravitationsmodulator oder eine Originium-Staubschutzmaske? Hmm … Ich nehme einfach alles mit."
+      },
+      {
+        "title": "Vertrauensgespräch 2",
+        "text": "Ich wurde in eine ganz normale Familie hineingeboren. Meine Eltern waren Soldaten. Mein Bruder ist Militärausbilder in der TAHK, meine Schwester arbeitet als bewaffnete Eskorte für die Seš’qarier. Ich war das jüngste Kind und wurde von ihnen beschützt. Alle wollten mir ein friedliches Leben ermöglichen, anstatt in ihre Fußstapfen zu treten und zum Militär zu gehen … Doch der Schutz der Familie währt nicht ewig, besonders nicht auf Talos-II."
+      },
+      {
+        "title": "Vertrauensgespräch 3",
+        "text": "Ich vermisse meine Kindheit vor meinem neunten Geburtstag nicht. Damals konnte ich den Geruch von Jod und Peroxid nicht ausstehen … Ich konnte nicht einmal eine Feldflasche anheben. Die Ärzte rieten meiner Familie ständig, mich im Haus zu behalten. Nur ganz selten durfte ich mich draußen vergnügen … Ich kann mich noch gut an meine Genesung und meinen ersten Spaziergang am helllichten Tag erinnern. Es fühlte sich an, als wäre ich neu geboren worden."
+      },
+      {
+        "title": "Vertrauensgespräch 4",
+        "text": "Manche mögen Z7 als unscheinbares Einsatzteam empfinden. Und damit haben sie nicht ganz unrecht. Hauptfrau Akekuri ist etwas zu jung, Fluorites Biss ist etwas zu heftig, und Estella und Antal bräuchten etwas mehr Verstand. Trotzdem bin ich gerne beim Team Z7 … Eigentlich hätte ich nichts dagegen, ein festes Mitglied zu sein."
+      },
+      {
+        "title": "Vertrauensgespräch 5",
+        "text": "Als ich zu Endfield kam, bezweifelte ich, ob ich das Zeug dazu hätte, das Vertrauen meiner Vorgesetzten zu gewinnen … Aber das gesamte Team Z7 und sogar du, Endmin, haben mir immer eins klargemacht: Ich könnte viel mehr erreichen, als ich glaubte, und alle Erwartungen erfüllen."
+      },
+      {
+        "title": "Geplauder 1",
+        "text": "Das Bootcamp war ziemlich unspektakulär. Nur ein paar grundlegende Kampfkurse, dazu ein bisschen Überlebenstraining. Kaum jemand erwartet im Bootcamp Dinge, die im echten Kampf wirklich nützlich sind … Ich bin da vielleicht eine Ausnahme, denn ich habe eine ganze Übungseinheit damit verbracht, mit meinem Ausbilder zu diskutieren, dass seine Demonstrationen von den im Handbuch beschriebenen Standardpositionen abwichen. Was dann geschah? Tja, ich hatte ihn vor Beginn der dritten Übungseinheit überzeugt."
+      },
+      {
+        "title": "Geplauder 2",
+        "text": "Ich bin eigentlich der am wenigsten talentierte Soldat der Familie. Meine körperliche Stärke und Kampftechnik liegen weit hinter dem Familiendurchschnitt zurück … Dennoch gab ich nie auf und widmete mich einfach einem intensiveren Training – ich stand zwei Stunden vor meinem Bruder auf und trainierte dreimal so hart wie meine Schwester … Und das habe ich bis heute so durchgezogen."
+      },
+      {
+        "title": "Geplauder 3",
+        "text": "Warum ich angefangen habe, Kochen zu lernen? Eigentlich gibt es dafür keinen Grund. Als ich bei Z7 anfing, probierte ich das Essen der anderen Teammitglieder. Am zweiten Tag bat ich Ausbilder Flinx um Hilfe. So erhielt ich ein mehrwöchiges Training zum Überleben in der Wildnis."
+      },
+      {
+        "title": "Geplauder 4",
+        "text": "Ich habe vor meinem Einstieg bei Endfield Praktika bei einigen Privatarmeen absolviert, aber alle wollten, dass ich „professioneller“ werde … Kurz gesagt: Sie wollten, dass ich den Lohn annehme und keine Fragen mehr stelle. Sie haben ihren Standpunkt klargemacht und waren dabei fair. Leider konnte ich mich nicht dazu durchringen."
+      },
+      {
+        "title": "Geplauder 5",
+        "text": "Ich hoffe nur, dass niemand Antal und seinen Freunden auf noch mehr seltsame Ideen für den nächsten Auftrag bringt. Wir haben unserem Waffeningenieur diesen Monat schon genug Kummer bereitet … Ja, du hast richtig geraten. Die Hauptfrau hat einen Stapel unvollendeter Feedback-Berichte, die jetzt alle in meiner Koje liegen. Aber keine Sorge. Wenn ich am nächsten Tag keine Aufträge habe, arbeite ich einfach die Nacht durch und erledige alles im Handumdrehen."
+      },
+      {
+        "title": "Thema: Akekuri",
+        "text": "Wir haben eine verantwortungsbewusste Hauptfrau, die sich in Z7 sehr um alle kümmert … Aber es wäre toll, wenn sie sich auch etwas um sich selbst kümmern würde. Sogar bei Teamtreffen stellt sie immer den Geschmack anderer über ihren eigenen. *seufz* Ehrlich gesagt wünschte ich, sie würde einfach zugeben, dass sie auf Higashi-Snacks steht. Dann müsste ich nicht immer so tun, als hätte ich sie „zufällig“ zubereitet."
+      },
+      {
+        "title": "Thema: Fluorite",
+        "text": "Ich kannte Gürtler-Söldner wie sie. Listige, habgierige Seelen, die für sich blieben und deren Lächeln furchteinflößender wirkte als ihr Knurren … Doch Fluorite begann, mit Antal Techniken zum Werfen von Originium-Schnecken zu erörtern … Also schätze ich … wir könnten ihr etwas Zeit geben, bevor wir vorschnell urteilen."
+      },
+      {
+        "title": "Thema: Estella",
+        "text": "Ich weiß nicht warum, aber Estella wirkt immer … schockiert, wenn sie meine Berichte liest. Ich habe einfach alles beschrieben, was während der Mission passiert ist … und nur an einigen Stellen ein paar wenige unreife Ideen hinzugefügt … Nichts an meinen Berichten sollte jemanden wirklich überraschen. Sie sind alle ziemlich normal, besonders im Vergleich zu ihren … kreativen Kompositionen."
+      },
+      {
+        "title": "Thema: Antal",
+        "text": "Antal kennt sich aus und beantwortet gerne Fragen. Das Problem ist nur, dass er dabei zu eifrig ist. Estella fragte ganz beiläufig: „Warum haben Langohren so lange Ohren?“ Da hat uns Antal den ganzen Rest des Tages einen Vortrag über Ökobiologie gehalten. Dieser endete erst, als wir auf die Dijiang zurückkehrten – und er sagte, er habe uns nur eine Zusammenfassung gegeben, in der siebzig Prozent der wichtigsten Inhalte fehlten."
+      },
+      {
+        "title": "Ressource/Sammelobjekt entdeckt 1",
+        "text": "Aus Erfahrung weiß ich, dass dort was zu holen ist."
+      },
+      {
+        "title": "Ressource/Sammelobjekt entdeckt 2",
+        "text": "Da drüben ist was … Das sollten wir uns ansehen, auch wenn es einen Umweg bedeutet."
+      },
+      {
+        "title": "Unerforschter Bereich entdeckt",
+        "text": "Bedrohungslevel nicht verfügbar. Wir sollten vorsichtig sein."
+      },
+      {
+        "title": "Starker Gegner entdeckt",
+        "text": "Wenn ein Kampf unumgänglich ist, werde ich unseren Fluchtplan im Voraus vorbereiten."
+      },
+      {
+        "title": "Abbau 1",
+        "text": "Ein seltenes Material. Das sollten wir uns schnell holen."
+      },
+      {
+        "title": "Abbau 2",
+        "text": "Im Team arbeiten wir immer an effizientesten … Wir sollten das gemeinsam abbauen."
+      },
+      {
+        "title": "Kiste öffnen",
+        "text": "Großartig. Wir haben jede Menge nützliche Vorräte gesammelt."
+      },
+      {
+        "title": "Aurylen erhalten",
+        "text": "Das muss das im Handbuch erwähnte Aurylen sein …"
+      },
+      {
+        "title": "Eliminierung der Verderbnis",
+        "text": "Die Verderbnis ist gefährlicher als allgemein angenommen. Wir müssen vorsichtig damit sein."
+      },
+      {
+        "title": "Ausruhen",
+        "text": "Ausreichende Ruhepausen sind für die Erfüllung der Mission förderlich. So steht es im Arbeitshandbuch."
+      },
+      {
+        "title": "Taktische Nutzung 1",
+        "text": "Nimm das. Wir haben noch jede Menge."
+      },
+      {
+        "title": "Taktische Nutzung 2",
+        "text": "… Ich habe mich verrechnet."
+      },
+      {
+        "title": "Gefahrenwarnung",
+        "text": "Achtung! Übertreib’s nicht."
+      },
+      {
+        "title": "Verletzt",
+        "text": "Meine Klinge ist noch intakt."
+      },
+      {
+        "title": "0 LP",
+        "text": "Sorry … Ich hab’s wieder mal vermasselt …"
+      },
+      {
+        "title": "Teammotivation 1",
+        "text": "Beeindruckendes Manöver."
+      },
+      {
+        "title": "Teammotivation 2",
+        "text": "Dieses Teamwork verdient ein Festmahl."
+      },
+      {
+        "title": "Motivationsreaktion 1",
+        "text": "Du … schmeichelst mir."
+      },
+      {
+        "title": "Motivationsreaktion 2",
+        "text": "Nun ja, alle haben mitgeholfen."
+      },
+      {
+        "title": "Kampf beginnt 1",
+        "text": "Wir sollten vorsichtig sein und mit Bedacht kämpfen."
+      },
+      {
+        "title": "Kampf beginnt 2",
+        "text": "Ich werde meine Unterstützungsrolle erfüllen."
+      },
+      {
+        "title": "Kampfsieg 1",
+        "text": "Bereich neutralisiert? Besser noch mal prüfen."
+      },
+      {
+        "title": "Kampfsieg 2",
+        "text": "Wir haben ein ideales Ergebnis erzielt."
+      },
+      {
+        "title": "Kampfsieg 3",
+        "text": "Beeindruckend … Nur du konntest das schaffen."
+      },
+      {
+        "title": "Kampfsieg 4",
+        "text": "Auf jeden Fall haben wir die Missionsziele trotzdem erreicht."
+      },
+      {
+        "title": "Niederlage im Kampf",
+        "text": "Die meisten meiner Lebenserfahrungen haben mich eines gelehrt: Akzeptiere deine Niederlagen und finde einen Weg, sie zu überwinden."
+      },
+      {
+        "title": "Abschlussangriff 1",
+        "text": "Verschwinde."
+      },
+      {
+        "title": "Abschlussangriff 2",
+        "text": "Jetzt bist du dran."
+      },
+      {
+        "title": "Kampffertigkeit 1",
+        "text": "Zurück!"
+      },
+      {
+        "title": "Kampffertigkeit 2",
+        "text": "Halt!"
+      },
+      {
+        "title": "Kampffertigkeit 3",
+        "text": "In Deckung!"
+      },
+      {
+        "title": "Kombofertigkeit bereit 1",
+        "text": "Das Warten hat ein Ende."
+      },
+      {
+        "title": "Kombofertigkeit bereit 2",
+        "text": "Ich bin dran."
+      },
+      {
+        "title": "Kombo wirken 1",
+        "text": "Nimm das!"
+      },
+      {
+        "title": "Kombo wirken 2",
+        "text": "Nur für dich!"
+      },
+      {
+        "title": "Wuchtschlag 1",
+        "text": "Es gibt kein Entkommen."
+      },
+      {
+        "title": "Wuchtschlag 2",
+        "text": "Es ist vorbei."
+      },
+      {
+        "title": "Ultimative Fertigkeit 1",
+        "text": "Ich mach dich fertig!"
+      },
+      {
+        "title": "Ultimative Fertigkeit 2",
+        "text": "An mir kommt niemand vorbei!"
+      },
+      {
+        "title": "Ultimative Fertigkeit 3",
+        "text": "AUS DEM WEG!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

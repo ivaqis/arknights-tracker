@@ -93,7 +93,229 @@
         "name": "???",
         "description": ""
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Operation Prep 1",
+        "text": "I hear Originium singing."
+      },
+      {
+        "title": "Operation Prep 2",
+        "text": "Endfield won't stop progressing."
+      },
+      {
+        "title": "Adding to Team 1",
+        "text": "I'm in position, Dijiang."
+      },
+      {
+        "title": "Adding to Team 2",
+        "text": "It's about time."
+      },
+      {
+        "title": "Switching Weapon",
+        "text": "Not too shabby."
+      },
+      {
+        "title": "Switching Gear",
+        "text": "A fine product of industrial manufacturing."
+      },
+      {
+        "title": "Ability Matrix Activation",
+        "text": "I recognize this feeling..."
+      },
+      {
+        "title": "Watching Combat Records",
+        "text": "I'll never forget the sight of them."
+      },
+      {
+        "title": "Operator Promotion 1",
+        "text": "Another step forward..."
+      },
+      {
+        "title": "Operator Promotion 2",
+        "text": "I'll protect Endfield. Always."
+      },
+      {
+        "title": "Operator Promotion 3",
+        "text": "The past and the present must become one."
+      },
+      {
+        "title": "Operator Promotion 4",
+        "text": "I heard her voice, echoing like a whisper in dreams. Time and again, I've dreamed of a boundless sea — one that brings sorrow, stirs memories ... and strengthens my resolve."
+      },
+      {
+        "title": "Standing by 1",
+        "text": "Still waiting for something?"
+      },
+      {
+        "title": "Standing by 2",
+        "text": "Originium will carve a path for us."
+      },
+      {
+        "title": "Accepting Gifts",
+        "text": "Many thanks!"
+      },
+      {
+        "title": "Resource/Collectible Detected 1",
+        "text": "Look, over there..."
+      },
+      {
+        "title": "Resource/Collectible Detected 2",
+        "text": "Something important lies over there!"
+      },
+      {
+        "title": "Unexplored Area Detected",
+        "text": "The nearby area needs a proper survey."
+      },
+      {
+        "title": "Powerful Enemy Discovered",
+        "text": "High-threat hostile. Approach with caution."
+      },
+      {
+        "title": "Mining 1",
+        "text": "These minerals may come in handy."
+      },
+      {
+        "title": "Mining 2",
+        "text": "Let me help out."
+      },
+      {
+        "title": "Opening a Crate",
+        "text": "This is one rewarding trip."
+      },
+      {
+        "title": "Acquiring Aurylene",
+        "text": "This feels familiar."
+      },
+      {
+        "title": "Eliminating the Blight",
+        "text": "Blight elimination confirmed."
+      },
+      {
+        "title": "Rest",
+        "text": "Everyone is rested."
+      },
+      {
+        "title": "Tactical Use 1",
+        "text": "Feeling better?"
+      },
+      {
+        "title": "Tactical Use 2",
+        "text": "Much better now."
+      },
+      {
+        "title": "Danger Warning",
+        "text": "Incoming! Watch out!"
+      },
+      {
+        "title": "Injured",
+        "text": "I'm still in fighting shape..."
+      },
+      {
+        "title": "0 HP",
+        "text": "I'm sorry... It's in your hands now..."
+      },
+      {
+        "title": "Team Encouragement 1",
+        "text": "You pulled off a sleek move."
+      },
+      {
+        "title": "Team Encouragement 2",
+        "text": "We're in perfect sync."
+      },
+      {
+        "title": "Encouragement Response 1",
+        "text": "You flatter me."
+      },
+      {
+        "title": "Encouragement Response 2",
+        "text": "Our teamwork just keeps getting better."
+      },
+      {
+        "title": "Combat Begins 1",
+        "text": "Time to fight."
+      },
+      {
+        "title": "Combat Begins 2",
+        "text": "I'm with you."
+      },
+      {
+        "title": "Combat Victory 1",
+        "text": "We made another step forward, Endfielders."
+      },
+      {
+        "title": "Combat Victory 2",
+        "text": "Good work, everyone."
+      },
+      {
+        "title": "Combat Victory 3",
+        "text": "We handled that fight well!"
+      },
+      {
+        "title": "Combat Victory 4",
+        "text": "Everyone okay?"
+      },
+      {
+        "title": "Combat Defeat",
+        "text": "No need to worry. We'll regroup and figure this out."
+      },
+      {
+        "title": "Final Strike 1",
+        "text": "Take this!"
+      },
+      {
+        "title": "Final Strike 2",
+        "text": "Watch this!"
+      },
+      {
+        "title": "Battle Skill 1",
+        "text": "Engage!"
+      },
+      {
+        "title": "Battle Skill 2",
+        "text": "Get crushed!"
+      },
+      {
+        "title": "Battle Skill 3",
+        "text": "Take 'em out!"
+      },
+      {
+        "title": "Combo Skill Ready 1",
+        "text": "Ready to strike."
+      },
+      {
+        "title": "Combo Skill Ready 2",
+        "text": "Trust in me."
+      },
+      {
+        "title": "Combo Casting 1",
+        "text": "Crystallize!"
+      },
+      {
+        "title": "Combo Casting 2",
+        "text": "Face your end!"
+      },
+      {
+        "title": "Finisher 1",
+        "text": "This ends now!"
+      },
+      {
+        "title": "Finisher 2",
+        "text": "Gotcha!"
+      },
+      {
+        "title": "Ultimate 1",
+        "text": "No second chance."
+      },
+      {
+        "title": "Ultimate 2",
+        "text": "Your end awaits."
+      },
+      {
+        "title": "Ultimate 3",
+        "text": "Show's over."
+      }
+    ]
   },
   "potentials": {
     "potential1": {

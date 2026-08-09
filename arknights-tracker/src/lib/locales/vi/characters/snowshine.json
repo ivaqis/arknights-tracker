@@ -123,7 +123,325 @@
         "name": "Lòng Nhân Ái",
         "description": "Lòng Nhân Ái: Người Vị Tha Bản Năng\nĐối với Snowshine, giúp mọi người làm việc vặt hay chạy việc linh tinh… dần đã trở thành một thói quen."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Chuẩn Bị Tác Chiến 1",
+        "text": "Đợi chỉ thị của ngài, Endministrator."
+      },
+      {
+        "title": "Chuẩn Bị Tác Chiến 2",
+        "text": "Endmin! Ngài ở đây à!"
+      },
+      {
+        "title": "Đang thêm vào đội 1",
+        "text": "Nhiệm vụ thực địa mới? Tôi sẵn sàng rồi!"
+      },
+      {
+        "title": "Đang thêm vào đội 2",
+        "text": "Tôi sẽ bảo vệ tất cả mọi người!"
+      },
+      {
+        "title": "Đang đổi vũ khí",
+        "text": "Hiệu suất tuyệt vời! Thiết bị này có thể hoạt động trong điều kiện khắc nghiệt nữa!"
+      },
+      {
+        "title": "Đang đổi trang bị",
+        "text": "Người thiết kế nó hẳn đã suy nghĩ rất kỹ lưỡng."
+      },
+      {
+        "title": "Kích hoạt Ma Trận Năng Lực",
+        "text": "Tôi đã tập luyện rất chăm chỉ! Phải chuẩn bị cho mọi tình huống khẩn cấp, đúng không nào!"
+      },
+      {
+        "title": "Xem Hồ Sơ Chiến Đấu",
+        "text": "Những bản ghi chép này là tài liệu tham khảo vô giá! Chúng cho tôi rất nhiều ý tưởng cho việc tác chiến của Đội Cứu Nạn!"
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 1",
+        "text": "Ừm! Chăm chỉ sẽ được đền đáp! Tôi sẽ không khiến Endfield hay bất kỳ ai thất vọng!"
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 2",
+        "text": "Cái này giúp mở rộng phạm vi tác chiến của tôi, đúng không? Đừng lo! Cứ giao cho tôi các nhiệm vụ cứu hộ khẩn cấp, lấy mẫu dữ liệu, hỗ trợ vận chuyển và đủ loại công việc hiện trường!"
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 3",
+        "text": "Tôi đã nâng cấp toàn bộ Đơn Vị Thuật Pháp tạo băng trong cứu nạn rồi, Endmin! Nhìn đi! Tôi vừa dựng tạm một cái lều tuyết đấy! Vào ngủ thử không!"
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 4",
+        "text": "Khoảng thời gian ở đây, Endfield đã dạy tôi rất nhiều điều mới và mang lại nhiều ký ức tuyệt vời... Cảm ơn vì đã đặt niềm tin nơi tôi, Endmin. Từ giờ trở đi, tôi sẽ tiếp tục chinh phục những đỉnh cao mới... Cứu lấy nhiều người bằng tất cả khả năng của mình."
+      },
+      {
+        "title": "Cán Viên đang báo cáo nhiệm vụ",
+        "text": "Kính chào! Tôi là cán viên từ Rhodes Island. Mật danh là Snowshine. Tôi là chuyên gia tìm kiếm và cứu nạn, chuyên về môi trường nhiệt độ thấp. Nếu ngài có nhiệm vụ ở các cánh đồng băng hay núi tuyết, hãy đưa tôi theo nhé."
+      },
+      {
+        "title": "Chờ Lệnh 1",
+        "text": "Muốn trượt tuyết cùng tôi không, Endmin?"
+      },
+      {
+        "title": "Chờ Lệnh 2",
+        "text": "Gió vừa phải. Tầm nhìn tốt. Thời tiết lý tưởng để trượt tuyết đấy."
+      },
+      {
+        "title": "Phân Công Vào Công Trình",
+        "text": "Không vấn đề gì đâu! Tôi từng thử mọi công việc ở đây rồi! Chúng đơn giản hơn nhiều so với xây dựng công sự!"
+      },
+      {
+        "title": "Lời Chào 1",
+        "text": "Xin chào, Endmin."
+      },
+      {
+        "title": "Lời Chào 2",
+        "text": "Cần giúp gì không, Endmin? Tôi có thể làm hộ vệ cho ngài!"
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 1",
+        "text": "Tôi học được rất nhiều điều mỗi lần bước lên Dijiang: Công nghệ và máy móc mà tôi chưa từng thấy, các lý thuyết chiến đấu đặc biệt, những kế hoạch giám sát táo bạo... Tôi còn không theo kịp hết mọi thứ! Endfield thật tuyệt vời! Tôi nói thật đấy!"
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 2",
+        "text": "Hả? Căng-tin trên Dijiang có quầy ăn vặt tự chọn à?! À, xin lỗi. Tôi chỉ hơi bất ngờ thôi... Không! Tất nhiên là không! Tôi không định ăn hết đâu! Thiệt tình!"
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 3",
+        "text": "Endmin! Ngài đến đúng lúc đấy! Gói hàng của tôi vừa đến và tôi đang muốn mời ngài thử món fondue phô mai đặc biệt của tôi! Mùi vị à...? Tôi nghĩ là... Khá đặc biệt? Rất nhiều đồng nghiệp của tôi bảo đó là \"trải nghiệm không thể quên trong đời\"..."
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 4",
+        "text": "Hnnnggghh! Giãn cơ giúp các khớp linh hoạt hơn. Bài tập này có thể giúp phòng tránh rách cơ và giữ ấm trong môi trường lạnh giá. Muốn thử không? Nhưng đừng lo. Tôi từng làm trợ lý huấn luyện viên nên chắc chắn có thể chỉnh lại tư thế cho ngài!... Thấy chưa? Dễ mà, đúng không?"
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 5",
+        "text": "Nhóc Dodge làm tôi nhớ đến đội trưởng mỗi khi nhìn thấy nó. Đội trưởng của tôi cũng là một Perro. Anh ấy rất tốt bụng, nhưng khi bắt đầu nhiệm vụ cứu nạn thì lại cực kỳ nghiêm khắc. Anh ấy còn bắt bọn tôi kiểm tra đầu khoan nước nóng nhiều lần... \"Mọi chi tiết nhỏ đều quan trọng trong cứu nạn!\" Đó là những gì tôi học được từ anh ấy."
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 6",
+        "text": "Ánh sáng phản chiếu từ các tầng mây của Talos-II đẹp đến nao lòng. Nó làm tôi nhớ đến aurora... và cả những giấc mơ của mình. Tôi thường thấy nó khi đứng trên đỉnh những ngọn núi tuyết phía bắc cao vời vợi. Tôi biết đó là dạng năng lượng Æther nguy hiểm, nhưng mỗi lần thấy tôi cảm giác như gặp lại một người bạn cũ... Một người bạn luôn dõi theo... và bảo vệ tôi từ nơi xa xôi..."
+      },
+      {
+        "title": "Tặng Quà",
+        "text": "Endmin, hãy nhận lấy thứ này. Là món quà nhỏ tôi mang về từ đồng tuyết lạnh."
+      },
+      {
+        "title": "Nhận quà",
+        "text": "Cái này là dành cho tôi sao? Ôi, cảm ơn ngài! Có cảm giác khá ấm áp... Tôi chắc chắn sẽ trân trọng nó!"
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 1",
+        "text": "Nhìn này, Endmin! Tôi đã dùng Thuật Pháp Originium để tạo ra tấm chắn băng này đấy! Cực kỳ chắc chắn luôn, đúng không? Đừng lo! Cứ thoải mái vung tay thử lực đi! Ngài sẽ không làm nó nứt được đâu!"
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 2",
+        "text": "Ngài đã nghỉ ngơi đủ chưa vậy, Endmin? Tôi lúc nào cũng thấy ngài bận rộn chạy khắp nơi. Hừm, ngài thật sự nên để tâm đến việc cân bằng giữa công việc và nghỉ ngơi đấy. Ngài còn nhớ buổi huấn luyện cứu nạn lần trước không? Lúc tôi cõng ngài trên lưng, tôi ngạc nhiên kinh khủng... Tôi suýt không tin nổi, ngài còn nhẹ hơn con Quái Thú Chở Hàng mới sinh nữa..."
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 3",
+        "text": "Không phải lần tác chiến nào của đội cứu nạn cũng thành công... Thời tiết hay địa hình có thể thay đổi nhanh đến mức ta không kịp trở tay. Vì vậy, trước mỗi nhiệm vụ, tôi luôn kiểm tra lại trang bị ba lần. Thiết bị bay, máy ảnh dò nhiệt... từng món đều không thể thiếu với một cán viên của đội cứu nạn. Nhờ đó mà chúng tôi mới triển khai được những kế hoạch táo bạo và tự tin."
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 4",
+        "text": "Tôi từng cứu hai bố con nọ bị kẹt trong trận lở tuyết... Có lẽ họ đã cãi nhau, nên suốt thời gian trú trong Hầm Trú Ẩn Tạm Thời mà tôi dựng, chẳng ai nói với ai câu nào. Nhưng khi cơn bão tuyết trút xuống, người cha luôn chừa lại phần thức ăn cho con gái, còn cô bé thì cố chăm sóc ông già mình hết mức có thể... Họ được sơ tán an toàn, nhưng đến cuối vẫn chẳng ai mở lời trước. Tôi tự hỏi liệu đó có phải thứ gọi là \"tình thân\"... Dù không nói ra lời, nhưng gia đình sẽ luôn bảo vệ nhau trong khoảnh khắc quan trọng nhất."
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 5",
+        "text": "Cứu người chưa bao giờ là chuyện dễ dàng. Tôi chưa từng mơ mộng sẽ cứu được mọi người mà không phải đánh đổi gì. Đội cứu nạn trước kia giờ chỉ còn mỗi tôi ở lại. Có người bị thương nặng sau thảm họa Nhiễm Khuẩn... Có người đánh mất lý trí giữa đêm tuyết lạnh giá... Tôi cũng từng hoang mang, vài khoảnh khắc tôi từng sợ hãi. Nhưng các nhân viên Endfield thật tuyệt vời và mạnh mẽ! Tôi tin rằng tất cả chúng ta sẽ còn tiến xa hơn nữa, tất cả là nhờ có ngài ở đây, Endmin!"
+      },
+      {
+        "title": "Trò Chuyện 1",
+        "text": "Ván trượt tuyết này ấy hả? Đây là món quà tiễn tôi rời Rhodes Island từ Bác sĩ Warfarin đấy. Ván được làm từ vật liệu hiếm, giống như tấm khiên của tôi vậy. Nó cực kỳ hữu dụng trong nhiệm vụ của đội cứu nạn ở vùng tuyết! Hmm... Endmin, ngài có muốn học trượt tuyết không? Tôi dạy ngài từ đầu luôn cũng được!"
+      },
+      {
+        "title": "Trò Chuyện 2",
+        "text": "Tổ chức Tìm Kiếm Và Cứu Nạn trực thuộc Liên Minh Cứu Trợ Hành Lang Phương Bắc. Nhiệm vụ thường xoay quanh việc hỗ trợ liên lạc viên vùng tuyết, thương nhân di chuyển hoặc trinh sát quân đội lạc đường do bị Aggeloi hoặc dã thú phục kích. Đồng đội trong đội cứu nạn đến từ khắp nơi, phần lớn là tình nguyện viên. Trải nghiệm của đội cứu nạn luôn là một cuộc chiến chống lại băng tuyết và địa hình khắc nghiệt, nhưng nhờ vậy tôi mới được gặp đủ kiểu người khác nhau."
+      },
+      {
+        "title": "Trò Chuyện 3",
+        "text": "Có một cán viên vừa hỏi tôi cách để gia nhập đội cứu nạn. Thật ra cũng không khó lắm đâu! Chỉ cần tập luyện leo núi thường xuyên, chịu được những ca trực dài liên tục, học vài kỹ năng sinh tồn vùng cực, biết cách tránh Ankhors và thú lớn... Và hoàn thành khóa sơ cứu nâng cao, đủ để xử lý tình huống nhiễm chứng Oripathy bất ngờ. Cuối cùng là vượt qua bài kiểm tra thực địa đặc biệt do đội trưởng của chúng tôi thiết kế, vậy là thành thành viên đội cứu nạn chính thức rồi!"
+      },
+      {
+        "title": "Trò Chuyện 4",
+        "text": "Tôi rất thích tuyết, những ngọn núi phủ trắng, và vẻ đẹp lấp lánh chỉ hiện ra giữa giá lạnh... Vì thế tôi không muốn để lại ký ức đau thương cho bất kỳ ai từng đặt chân tới đó. Tôi mong khi mọi người nhìn thấy núi tuyết, điều đầu tiên họ nhớ đến là cảnh đẹp hút hồn trên đỉnh cao. Và khi tuyết rơi, họ sẽ nghĩ đến những tinh thể băng trong veo, những đóa hoa băng... *Thở dài* Nếu tất cả chỉ còn là ký ức về thảm họa thì buồn biết mấy... Endmin, tôi sẽ tiếp tục nỗ lực vì những điều tôi tin tưởng."
+      },
+      {
+        "title": "Trò Chuyện 5",
+        "text": "Hôm qua ngài tìm tôi sao, Endmin? Tôi xin lỗi, tôi không biết gì cả... Chắc lúc ấy tôi đang ngủ bù sau khi nhiệm vụ rồi. Mỗi lần hoàn thành nhiệm vụ đội cứu nạn, tôi luôn tranh thủ chợp mắt một chút... Có lúc tôi còn ngủ quên hơi sâu nữa... Nhưng nếu có chuyện gấp, ngài cứ gọi tôi nhé! Chỉ cần nghe thấy giọng ngài là tôi sẽ tỉnh ngay và sẵn sàng lên đường!"
+      },
+      {
+        "title": "CHỦ ĐỀ: Huấn luyện Cứu Nạn Khẩn Cấp",
+        "text": "Chắc chắn rồi! Huấn luyện của đội cứu nạn rất quan trọng! Khi xảy ra thiên tai như lở tuyết, nếu mọi người nhanh chóng bảo vệ bản thân và biết trú ẩn đúng chỗ an toàn... Tỷ lệ sống sót sẽ tăng lên rất nhiều! Nhưng để được vậy thì mọi người phải có ý thức phòng ngừa từ trước... Endmin, ngài sẽ tham gia buổi huấn luyện của đội cứu nạn lần tới chứ?"
+      },
+      {
+        "title": "Chủ đề: Gilberta",
+        "text": "Cô Gilberta cũng có mặt trên Dijiang à? Cô ấy từng hỗ trợ bọn tôi rất nhiều trong mấy nhiệm vụ của đội cứu nạn. Cô ấy từng vận chuyển tiếp tế, sơ tán người bị thương, thậm chí còn phát hiện tín hiệu SOS giữa cơn bão tuyết khủng khiếp trên không nữa! Đội cứu nạn muốn tặng cô ấy một món quà tỏ lòng cảm ơn nhưng cô ấy từ chối tất cả. Cuối cùng cô ấy chỉ xin vài tấm ảnh chụp phong cảnh đẹp trên đỉnh núi tuyết. Hehe. Ngài thấy cái này thế nào? Khung ảnh này là tôi tự tay làm đấy!"
+      },
+      {
+        "title": "Chủ đề: Sinh Tồn Vùng Cực",
+        "text": "Sinh tồn vùng cực không hề dễ chút nào... Những kiến thức cần thiết bao gồm: cách cắm trại qua đêm để tránh hạ thân nhiệt giữa bão tuyết, nhận biết loại thực phẩm ăn được trong đồng băng Nhiễm Khuẩn, chọn điểm đặt chân chắc chắn khi băng qua sông băng... Và quan trọng nhất là tìm ra lộ trình an toàn đến mục tiêu, nghĩa là phải biết tránh né Aggeloi, dã thú đói khát, và những mối nguy hiểm khác trong vùng thảm họa."
+      },
+      {
+        "title": "Phát hiện Tài Nguyên/Có Thể Thu Thập 1",
+        "text": "Chúng ta nên thu thập tài nguyên này! Chúng có thể sẽ hữu ích trong các chiến dịch cứu hộ sau này!"
+      },
+      {
+        "title": "Phát hiện Tài Nguyên/Có Thể Thu Thập 2",
+        "text": "Một phát hiện tuyệt vời đấy. Biết đâu sẽ giúp ích cho những nhiệm vụ kế tiếp!"
+      },
+      {
+        "title": "Phát Hiện Khu Vực Chưa Khám Phá",
+        "text": "Khu vực này chưa được drone do thám. Mọi người, hãy luôn cảnh giác!"
+      },
+      {
+        "title": "Phát hiện Kẻ Địch Mạnh",
+        "text": "Mọi người! Hãy thận trọng! Kẻ địch kia trông rất nguy hiểm!"
+      },
+      {
+        "title": "Khai thác 1",
+        "text": "Khoáng sản chất lượng cao... Có thể dùng để dựng nơi trú ẩn tạm thời đấy..."
+      },
+      {
+        "title": "Khai thác 2",
+        "text": "Cùng nhau làm đi! Sẽ nhanh hơn nhiều!"
+      },
+      {
+        "title": "Mở Thùng",
+        "text": "Thêm vào kho khẩn cấp nào!"
+      },
+      {
+        "title": "Nhận Aurylene",
+        "text": "Đây là Aurylene sao? Đẹp quá... Phải lưu trữ cẩn thận mới được!"
+      },
+      {
+        "title": "Xua Tan Nhiễm Khuẩn",
+        "text": "Xử lý xong mục tiêu! Nhớ kiểm tra lại lớp phủ chống Nhiễm Khuẩn nhé mọi người!"
+      },
+      {
+        "title": "Nghỉ ngơi",
+        "text": "Muốn ăn chút phô mai không? Phục hồi thể lực rất tốt đấy!"
+      },
+      {
+        "title": "Sử Dụng Vật Phẩm Chiến Thuật 1",
+        "text": "Đã tiến hành cấp cứu!"
+      },
+      {
+        "title": "Sử Dụng Vật Phẩm Chiến Thuật 2",
+        "text": "Thật xin lỗi...! Cho tôi thở chút đã!"
+      },
+      {
+        "title": "Cảnh Báo Nguy Hiểm",
+        "text": "Đừng để trúng đòn này!"
+      },
+      {
+        "title": "Bị Thương",
+        "text": "Không sao đâu. Tôi chịu được mà..."
+      },
+      {
+        "title": "0 HP",
+        "text": "Thật xin lỗi... Tôi không thể vượt qua cơn bão này..."
+      },
+      {
+        "title": "Cổ Vũ Đội 1",
+        "text": "Chúng ta phối hợp rất tốt!"
+      },
+      {
+        "title": "Cổ Vũ Đội 2",
+        "text": "Xuất sắc luôn!"
+      },
+      {
+        "title": "Đáp Lại Lời Cổ Vũ 1",
+        "text": "Cùng nhau cố gắng tiếp nhé!"
+      },
+      {
+        "title": "Đáp Lại Lời Cổ Vũ 2",
+        "text": "Cảm ơn đã hỗ trợ!"
+      },
+      {
+        "title": "Bắt Đầu Chiến Đấu 1",
+        "text": "Mở đường cho công tác cứu hộ đây!"
+      },
+      {
+        "title": "Bắt Đầu Chiến Đấu 2",
+        "text": "Đúng rồi! Đóng băng chúng!"
+      },
+      {
+        "title": "Thắng Trận 1",
+        "text": "Phù. Chiến đấu kết thúc rồi. Tranh thủ nghỉ một lát nào."
+      },
+      {
+        "title": "Thắng Trận 2",
+        "text": "Mọi người đều nỗ lực hết mình. Mình cũng phải cố lên!"
+      },
+      {
+        "title": "Thắng Trận 3",
+        "text": "Phối hợp nhóm tuyệt vời!"
+      },
+      {
+        "title": "Thắng Trận 4",
+        "text": "Đừng nản lòng! Cứ tiến bước giữa bão tố, rồi chúng ta sẽ đến được đích thôi! Giữ sức và ta sẽ đến vùng an toàn sớm thôi!"
+      },
+      {
+        "title": "Bại Trận",
+        "text": "Đừng bỏ cuộc! Chuẩn bị đầy đủ trang bị nào! Chúng ta sẽ bắt đầu lại lần nữa!"
+      },
+      {
+        "title": "Đòn Dứt Điểm 1",
+        "text": "Chém đóng băng!"
+      },
+      {
+        "title": "Đòn Dứt Điểm 2",
+        "text": "Lốc Băng Giá!"
+      },
+      {
+        "title": "KN Chiến Đấu 1",
+        "text": "Lùi lại!"
+      },
+      {
+        "title": "KN Chiến Đấu 2",
+        "text": "Từ chối cho qua!"
+      },
+      {
+        "title": "KN Chiến Đấu 3",
+        "text": "Snowshine bảo vệ!"
+      },
+      {
+        "title": "Chuẩn Bị KN Liên Hoàn 1",
+        "text": "Chuẩn bị sẵn sàng!"
+      },
+      {
+        "title": "Chuẩn Bị KN Liên Hoàn 2",
+        "text": "Sẵn sàng cứu hộ!"
+      },
+      {
+        "title": "Thi Triển Liên Hoàn 1",
+        "text": "Thở cùng tôi nào!"
+      },
+      {
+        "title": "Thi Triển Liên Hoàn 2",
+        "text": "Đội y tế đến rồi đây!"
+      },
+      {
+        "title": "Kết Liễu 1",
+        "text": "BIẾN đi!"
+      },
+      {
+        "title": "Kết Liễu 2",
+        "text": "Ngươi TIÊU ĐỜI rồi!"
+      },
+      {
+        "title": "Tuyệt Kỹ 1",
+        "text": "Cơn bão băng giá!"
+      },
+      {
+        "title": "Tuyệt Kỹ 2",
+        "text": "Khiên băng!"
+      },
+      {
+        "title": "Tuyệt Kỹ 3",
+        "text": "Băng và tuyết! Đóng băng!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

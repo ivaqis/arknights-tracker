@@ -362,7 +362,9 @@
     "special_1_3_2": "죄를 쫓는 자",
     "weponbox_1_3_2": "적색화 신청",
     "special_1_4_1": "벼랑 끝, 북쪽을 향한 시선",
-    "weponbox_1_4_1": "제대 신청"
+    "weponbox_1_4_1": "제대 신청",
+    "special_1_4_2": "빛나는 새벽의 별",
+    "weponbox_1_4_2": "찬란 신청"
   },
   "pages": {
     "home": "홈",
@@ -455,7 +457,8 @@
     "theRootedRealm": "미지의 구역",
     "protocolPassBlightedSea": "프로토콜 통행증 · 침식 조류",
     "gazeNorthToTheRiftSignIn": "심연에서 북쪽을 바라보며 출석 체크",
-    "protocolInvitationTheReturn": "프로토콜의 초대: 귀환"
+    "protocolInvitationTheReturn": "프로토콜의 초대: 귀환",
+    "bedazzlingDawnstarSignIn": "찬란한 샛별 출석 체크"
   },
   "mouths": {
     "january": "1월",

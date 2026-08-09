@@ -119,7 +119,333 @@
         "name": "Olahraga",
         "description": "Olahraga: Persahabatan Bela Diri \n“Terima kasih atas pelajarannya. Mari adu tinju tanpa sesal kita.” “Setuju. Jangan setengah-setengah, biarkan Takdir menentukan aliran airnya.”"
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Persiapan Operasi 1",
+        "text": "Kau memimpin operasi ini sendiri? Boleh juga."
+      },
+      {
+        "title": "Persiapan Operasi 2",
+        "text": "Kalau ada pertarungan, aku ikut."
+      },
+      {
+        "title": "Menambahkan ke Tim 1",
+        "text": "Aku siap."
+      },
+      {
+        "title": "Menambahkan ke Tim 2",
+        "text": "Tunjukkan caramu memimpin."
+      },
+      {
+        "title": "Berganti Senjata",
+        "text": "Aku ini senjata. Aku meninggalkan “suvenir” pada lawan-lawanku, memar yang tak akan mereka lupakan."
+      },
+      {
+        "title": "Berganti Gear",
+        "text": "Ini demi keselamatanku atau keselamatan lawanku?"
+      },
+      {
+        "title": "Aktivasi Matriks Kemampuan",
+        "text": "Aku punya trik baru. Kapan aku bisa menggunakannya?"
+      },
+      {
+        "title": "Menonton Rekaman Pertarungan",
+        "text": "HEH! Itu baru pertarungan sungguhan! Apa mereka anggota krumu? Mau latih tanding denganku?"
+      },
+      {
+        "title": "Promosi Operator 1",
+        "text": "Sejujurnya, kau juga bagus. Pengakuan itu berlaku dua arah. Baiklah, aku akan mengikuti arahanmu."
+      },
+      {
+        "title": "Promosi Operator 2",
+        "text": "Hah, ini hal baru. Sewaktu di Wuling, biasanya akulah yang mempromosikan para opsir. Sudah lama aku sendiri tak dipromosikan."
+      },
+      {
+        "title": "Promosi Operator 3",
+        "text": "Memimpin kru sangat berbeda dari bergerak sendiri. Kau paham maksudku, ‘kan? Kita harus mengatur orang-orang dan menjalankan banyak misi. Rasanya tak sesempurna dan semulus menghajar lawan sendirian."
+      },
+      {
+        "title": "Promosi Operator 4",
+        "text": "Aku selalu heran bagaimana kau dan Bos bisa memikirkan kata-kata yang bagus itu. Satu-satunya “trik” yang kubisa hanya menepuk pundak orang. Apa? Kau juga bisa menepuk pundakku? Ck, aiya, tapi kalau kaukatakan keras-keras lebih dulu, jadi tak seru!"
+      },
+      {
+        "title": "Operator Siap Bertugas",
+        "text": "Cukup bicaranya. Kali ini, akan kubereskan kekacauannya untukmu. Tapi, aku suka langsung kerja. Kalau ada yang rusak, Endfield yang bayar."
+      },
+      {
+        "title": "Siaga 1",
+        "text": "Saatnya pertarungan sungguhan!"
+      },
+      {
+        "title": "Siaga 2",
+        "text": "Kita ini rekan tim yang sudah teruji dalam pertarungan, ‘kan?"
+      },
+      {
+        "title": "Menugaskan ke Fasilitas",
+        "text": "Baiklah. Tapi, kalau ada barang ringkih yang hancur, jangan salahkan aku."
+      },
+      {
+        "title": "Menyapa 1",
+        "text": "Yo, rupanya kau di sini!"
+      },
+      {
+        "title": "Menyapa 2",
+        "text": "Sibuk? Sudah lama kita tak latih tanding."
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 1",
+        "text": "Aku baru sebentar di sini, tapi aku sudah lihat tiga orang mencurigakan. Oh? Itu teman-temanmu? Lingkaran pertemananmu benar-benar luar biasa."
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 2",
+        "text": "Kenapa aku di sini? Aku datang untuk mengunjungi beberapa teman, karena keadaan sudah mulai tenang di Wuling. Lifeng, Chen, Pak Pan, dan si kucing kecil .... Tapi, sekadar melihatmu saja sudah membuat perjalanan ini terbayarkan."
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 3",
+        "text": "Kau terlambat. Suvenirnya sudah habis. Ayolah, memangnya apa lagi? Tentu saja kue beras manis yang baru digoreng."
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 4",
+        "text": "Dijiang terlalu hening dibandingkan jalanan dan belukar Wuling. Rasanya tak wajar bagiku. Oh? Aku belum pernah bilang betapa bencinya aku pada tempat-tempat hening? Begini, tempat yang hening sebenarnya adalah tempat yang paling berisik. Karena saat semuanya hening, suara di benak kita mulai berbicara, dan tak mau berhenti."
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 5",
+        "text": "Jangan tersinggung, tapi aku tak suka tempat ini. Aku lebih suka langit dan air sungguhan, bukan dinding-dinding dingin yang mengurungmu ini. Apa? Gym latihannya gratis? Bilang dari tadi, dong! Aku pesan sekarang juga!"
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 6",
+        "text": "Saat pertama kali mulai berlatih, aku pernah menatap langit berbintang pada suatu malam, dan diam-diam bersumpah kepada diriku sendiri: Aku akan mengalahkan lawan sebanyak bintang di atas sana. Mungkin Dijiang adalah salah satu bintang itu. Dan agak mengejutkan karena aku benar-benar “bertarung” sampai ke sini."
+      },
+      {
+        "title": "Menawarkan Hadiah",
+        "text": "Ini, ambillah. Aku membuatnya sendiri .... Jangan tertawa. Kalau orang lain sampai tahu, tamat riwayatmu."
+      },
+      {
+        "title": "Menerima Hadiah",
+        "text": "Ayolah, kita sudah melewati fase saling memberi hadiah .... Tunggu sebentar. Pertemanan kita sekarang di fase apa?"
+      },
+      {
+        "title": "Dialog Kepercayaan 1",
+        "text": "Aku akrab dengan orang lain lewat pertarungan melawan mereka. Hanya orang yang bisa menerima kemenangan, kekalahan, dan rasa sakitlah yang bisa diandalkan. Kau? Hmm .... Kurasa kau lebih dari sekadar “bisa diandalkan”."
+      },
+      {
+        "title": "Dialog Kepercayaan 2",
+        "text": "Saat bos menerimaku, itu kali pertama aku lihat camilan sebanyak itu ... atau mencicipi kue beras manis seenak itu. Jadi, aku terus makan sampai kenyang selama tiga bulan penuh, hingga aku tak sanggup lagi melihat apa pun yang manis. Heh, darah pun jadi manis baunya. Dan aku benci mencium bau darah di Wuling."
+      },
+      {
+        "title": "Dialog Kepercayaan 3",
+        "text": "Orang-orang yang mengajariku cara bertarung ...? Guru memang galak, tapi hatinya sangat lembut. Aku tak bisa meniru Jurus Bangaunya dan dia terus mengomel soal itu hingga bertahun-tahun. Senior Master tampak menakutkan, tapi dia lembut. Dia mengkhawatirkan semua yang kumakan, kukenakan, dan kugunakan. Sementara Grand Master ... kami tak pernah akur. Semua orang bilang amarahku sama sepertinya. Kami berdua menyelesaikan semuanya dengan bertarung."
+      },
+      {
+        "title": "Dialog Kepercayaan 4",
+        "text": "Saat dilantik menjadi murid, guru-guruku membaca nasibku. Mereka bilang aku hanya akan akrab dengan “lawan-lawanku”. Aku akan bertarung dengan mereka, berteman dengan mereka, lalu berpisah jalan. Bos, si kucing kecil, bahkan guru-guruku, semuanya berakhir menjadi lawanku. Tapi, kau berbeda. Kita tak pernah bertarung secara langsung. Pertarungan kita lebih seperti saling membelakangi dan berdampingan. Kuharap ini ... bisa bertahan agak lama."
+      },
+      {
+        "title": "Dialog Kepercayaan 5",
+        "text": "Datang ke Endfield membuatku menyadari sesuatu. Bendungan Xiranite, Kota Wuling, dan Kampung Benteng Qingbo .... Semuanya sangat kecil dan hampir tak terlihat di peta. Tapi, aku terus berputar-putar di dunia yang sempit itu. Guru-guruku benar. Hidup hanyalah tentang menerobos barisan pegunungan dan rintangan yang tak ada habisnya. Dan kalau aku terus di sisimu, akan selalu ada pertarungan baru yang menanti, ‘kan?"
+      },
+      {
+        "title": "Obrolan 1",
+        "text": "Gauntlet ini terlihat bagus, ‘kan? Mau coba pakai? Jangan khawatir. Tak terlalu berat, kok. Aku dapat senjata tempur khusus ini saat aku menjadi kapten. Dibuat dengan kloter Xiranite pertama yang diproduksi tahun itu. Harus kuakui kehebatan para penyempurna Tianshi. Gauntlet ini bergerak sesuai dengan “kehendakku” dan bahkan membagikan amarahku. Pernah lihat cara kerjanya?"
+      },
+      {
+        "title": "Obrolan 2",
+        "text": "Latihan bela diri dimulai dengan penguasaan bambu. Jenis bambu yang kaulihat tumbuh di mana-mana di luar kota. Untuk kuda-kuda diam, jadilah seperti bambu musim dingin, yang tertanam ke tanah dan bergeming. Pertahankan sampai musim semi untuk menumbuhkan chi kuat yang meluap di dalam diri, lalu lepaskan untuk mendapatkan lonjakan kekuatan. Begitulah cara hidup bambu."
+      },
+      {
+        "title": "Obrolan 3",
+        "text": "Saat latihanku dimulai, Grand Master menyuruhku bertarung melawan bambu. Aku memukulinya sampai buku jariku memar dan berdarah. Lalu dia bilang, “Jangan takut terhadap bambu. Buat bambu takut terhadapmu”. Jadi aku menggertakkan gigi dan terus memukulinya. Aku tak ingat butuh waktu berapa lama, tapi suatu hari tinjuku tak lagi tersentak. Kemudian aku melawan batu, ferrium, dan Aggelos .... Kita harus mengumpulkan keberanian dan melempar pukulan. Hanya dengan begitulah, kita punya peluang untuk menang."
+      },
+      {
+        "title": "Obrolan 4",
+        "text": "Kenapa aku punya begitu banyak kaligrafi di kamarku? Tak ada salahnya sesekali mendalami budaya, ‘kan ...? Tulisanku bagus? Hmm, masa, sih? Bos yang mengajariku. Katanya, itu membantu membersihkan dan memusatkan pikiran. Aku menulis satu atau dua kata saat sedang tak sibuk meringkus penjahat. Sejujurnya, aku tak pernah benar-benar memahaminya. Goresan kuas tak ada bedanya dengan ayunan pedang."
+      },
+      {
+        "title": "Obrolan 5",
+        "text": "Orang Kampung lebih suka bertarung dengan tinju. Mereka jarang menepis, tapi langsung menyerang. Setelah tiba di Wuling, aku baru tahu bahwa orang Wuling lebih suka menggunakan pedang karena jangkauannya lebih jauh, ujungnya lebih tajam, dan kesannya sangat elegan. Aku sudah coba mempelajarinya, tapi bos bilang ilmu pedangku terlihat ... canggung, seakan-akan aku sedang mencoba bergulat dengan pohon dedalu."
+      },
+      {
+        "title": "Topik: Nama",
+        "text": "“Mi Fu” terdengar aneh? Yah, awalnya bukan itu namaku. Ruan Yi mulai memanggilku “Pengkhianat” sejak hari aku bergabung ke Wuling. Dan kucing kecil itu ... dia terus saja mengataiku “Perempuan Gila”. Cih, bodoh amat .... Sebenarnya, aku dapat nama “Mi Fu” saat dirawat di ruang medis. Bos meninggalkanku di sana selama lebih dari sebulan, tapi aku menolak mengucapkan sepatah kata pun. Suatu hari, dia sedang membaca di samping ranjangku dan tiba-tiba menanyakan namaku. Aku hanya menunjuk asal-asalan ke dua karakter di bukunya. Dia melihatnya dan berkata, “Bagus. Kalau begitu, namamu Mi Fu.” Hur. Nama ini memang terdengar bagus."
+      },
+      {
+        "title": "Topik: Zhuang Fangyi",
+        "text": "Bos ... baru saja pergi? Hur. Sejujurnya, menurutku dia lebih cocok di tempatmu. Proyek-proyekmu sangat luar biasa. Tempatmu cukup besar untuk dia berkembang. Wuling sebenarnya agak kecil untuknya, walau dia sendirilah yang memilihnya. Paham maksudku? Kau harus menjaganya baik-baik! Kalau sampai dia terluka sedikit saja, bukan cuma aku yang harus kauhadapi. Kau akan berhadapan dengan semua orang di Wuling."
+      },
+      {
+        "title": "Topik: Wuling",
+        "text": "Entah sejak kapan aku jadi orang Wuling sejati. Saat bos merawatku di ruang medis selama berbulan-bulan, aku melihat mereka merencanakan masa depan di alam liar yang berlumpur. Sesuatu membuatku tergugah. Mereka menganggapku bagian dari mereka dan terus membawakanku makanan. Aku mulai membantu karena aku tak mau berutang budi. Lalu, aku menemukan namaku dalam daftar pembangun saat mereka membuka lahan untuk Jalan Lebar Fangxing. Kemudian, aku teringat kata-katanya: “Alangkah indahnya kalau tinjumu bisa melindungi orang-orang.”"
+      },
+      {
+        "title": "Topik: Jalan Rahasia Kampung Benteng Qingbo",
+        "text": "Kebetulan sekali. Kau benar-benar pergi ke jalan rahasia itu pada kunjungan pertamamu. Sudah sepuluh tahun aku tak ke sana. Setelah aku pergi, Tangtang terus menyusup lewat jalan itu, jadi aku menutupnya sendiri. Dia tak seharusnya datang, dan aku tak seharusnya kembali. Aku tahu dia akan datang ... tapi aku tak menyangka dia akan sekacau itu sampai mencoret wajahku dengan tanda silang besar di grafiti itu .... Kucing bodoh, akan kutuntaskan urusan ini dengannya!"
+      },
+      {
+        "title": "Topik: Tangtang",
+        "text": "Tangtang .... Aku punya urusan yang belum selesai dengan kucing kecil itu. Apa dia menyusahkanmu? Tunggu, dia benar-benar menyusahkanmu? Ckckck .... Jangan khawatir, biar kutangani. Dia terlalu peduli kepadamu. Kalau kau membentaknya, dia mungkin akan langsung depresi. Nah, itu baru jadi masalah besar."
+      },
+      {
+        "title": "Sumber Daya/Barang Koleksi Terdeteksi 1",
+        "text": "Ada sesuatu di sana. Tapi ingat, berdasarkan kebijakan opsir, barang yang hilang harus dikembalikan."
+      },
+      {
+        "title": "Sumber Daya/Barang Koleksi Terdeteksi 2",
+        "text": "Ada Barang Berharga. Sepertinya bisa dianggap barang tak bertuan."
+      },
+      {
+        "title": "Area yang Belum Dijelajahi Terdeteksi",
+        "text": "Zona baru. Sebaiknya kita berpatroli dan memastikan di sini tak ada masalah."
+      },
+      {
+        "title": "Musuh Kuat Ditemukan",
+        "text": "Nah, ini baru lawan yang sepadan."
+      },
+      {
+        "title": "Penambangan 1",
+        "text": "Kalaupun hancur, bijihnya masih bisa dipakai ‘kan?"
+      },
+      {
+        "title": "Penambangan 2",
+        "text": "Biar aku saja. Dua pukulan saja cukup."
+      },
+      {
+        "title": "Membuka Kerat",
+        "text": "Temuan bagus. Untung tidak hancur karena kita."
+      },
+      {
+        "title": "Mendapatkan Aurylene",
+        "text": "Kukira itu hantu. Setelah ke Wuling, barulah aku tahu ternyata namanya Aurylene."
+      },
+      {
+        "title": "Menyingkirkan Hawar",
+        "text": "Hah. Cairan lengket ini tak akan menghentikanku."
+      },
+      {
+        "title": "Istirahat",
+        "text": "Ayolah, aku masih bisa lanjut ...! Baiklah kalau memang itu maumu."
+      },
+      {
+        "title": "Penggunaan Taktis 1",
+        "text": "Jangan sampai kau tumbang di sini!"
+      },
+      {
+        "title": "Penggunaan Taktis 2",
+        "text": "Kembali bertarung!"
+      },
+      {
+        "title": "Peringatan Bahaya",
+        "text": "Jaga jarakmu!"
+      },
+      {
+        "title": "Cedera",
+        "text": "Heh. Ini baru terasa seperti pertarungan sungguhan."
+      },
+      {
+        "title": "0 HP",
+        "text": "Tinju kami ... tak kenal sesal ...."
+      },
+      {
+        "title": "Penyemangat Tim 1",
+        "text": "Bersih dan tajam. Mengesankan!"
+      },
+      {
+        "title": "Penyemangat Tim 2",
+        "text": "Kerja sama yang bagus!"
+      },
+      {
+        "title": "Respons Penyemangat 1",
+        "text": "Memang sudah tugasku."
+      },
+      {
+        "title": "Respons Penyemangat 2",
+        "text": "Trims, Teman-teman."
+      },
+      {
+        "title": "Mulai Pertarungan 1",
+        "text": "Saatnya bertarung!"
+      },
+      {
+        "title": "Mulai Pertarungan 2",
+        "text": "Saatnya beri mereka pelajaran."
+      },
+      {
+        "title": "Menang Pertarungan 1",
+        "text": "Bos pasti senang mendengarnya."
+      },
+      {
+        "title": "Menang Pertarungan 2",
+        "text": "Kasus selesai."
+      },
+      {
+        "title": "Menang Pertarungan 3",
+        "text": "Keahlian bertarungmu hebat juga!"
+      },
+      {
+        "title": "Menang Pertarungan 4",
+        "text": "Teman-teman ... biar kuurus bagian yang sulit. Jangan memaksakan diri."
+      },
+      {
+        "title": "Kalah Bertarung",
+        "text": "Selama masih bisa berdiri, jangan menyerah."
+      },
+      {
+        "title": "Final Strike 1",
+        "text": "Tahan!"
+      },
+      {
+        "title": "Final Strike 2",
+        "text": "Mantap!"
+      },
+      {
+        "title": "Skill Tarung 1",
+        "text": "Kau tak akan bisa kabur!"
+      },
+      {
+        "title": "Skill Tarung 2",
+        "text": "Rasakan ini!"
+      },
+      {
+        "title": "Skill Tarung 3",
+        "text": "Giliranmu!"
+      },
+      {
+        "title": "Skill Kombo Siap 1",
+        "text": "Kepalkan tinju!"
+      },
+      {
+        "title": "Skill Kombo Siap 2",
+        "text": "Guncangkan dunia!"
+      },
+      {
+        "title": "Penggunaan Kombo 1",
+        "text": "Menyerahlah sekarang!"
+      },
+      {
+        "title": "Penggunaan Kombo 2",
+        "text": "Kertakkan gigimu!"
+      },
+      {
+        "title": "Penuntas 1",
+        "text": "Jangan melawan!"
+      },
+      {
+        "title": "Penuntas 2",
+        "text": "Inilah akhirnya!"
+      },
+      {
+        "title": "Ultimate 1",
+        "text": "Biar kuajari kau dengan cara yang keras!"
+      },
+      {
+        "title": "Ultimate 2",
+        "text": "Kau pantas ... masuk penjara!"
+      },
+      {
+        "title": "Ultimate 3",
+        "text": "Aku sudah meminta dengan baik-baik!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

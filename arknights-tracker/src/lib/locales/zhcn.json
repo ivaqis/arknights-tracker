@@ -366,7 +366,9 @@
     "special_1_3_2": "逐罪者",
     "weponbox_1_3_2": "染赤申领",
     "special_1_4_1": "临渊望北",
-    "weponbox_1_4_1": "军列申领"
+    "weponbox_1_4_1": "军列申领",
+    "special_1_4_2": "晨星于此闪耀",
+    "weponbox_1_4_2": "明曜申领"
   },
   "pages": {
     "home": "首页",
@@ -460,7 +462,8 @@
     "theRootedRealm": "根脉奇境",
     "protocolPassBlightedSea": "协议通行证·蚀海",
     "gazeNorthToTheRiftSignIn": "踞渊北眺签到",
-    "protocolInvitationTheReturn": "协议邀约：重归"
+    "protocolInvitationTheReturn": "协议邀约：重归",
+    "bedazzlingDawnstarSignIn": "明耀晨星签到"
   },
   "mouths": {
     "january": "一月",

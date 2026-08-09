@@ -119,7 +119,325 @@
         "name": "Wohltätigkeit",
         "description": "Wohltätigkeit: Kampf für Gerechtigkeit\nAltruismus. Das ist die Essenz eines wahren Kriegers."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Einsatzvorbereitung 1",
+        "text": "Bereit machen? Hehe. Meine Klingen sind immer bereit, da sie nie ruhen!"
+      },
+      {
+        "title": "Einsatzvorbereitung 2",
+        "text": "Stell mich dieses Mal in die vorderste Reihe. Ich will beim Angriff der Erste sein!"
+      },
+      {
+        "title": "Wird zum Team hinzugefügt 1",
+        "text": "Wir sind schon an der Reihe? Gut. Man sollte immer im richtigen Moment zuschlagen."
+      },
+      {
+        "title": "Wird zum Team hinzugefügt 2",
+        "text": "Überlass das mir!"
+      },
+      {
+        "title": "Waffe wird gewechselt",
+        "text": "Wow. Ziemlich schnittig. Aber ich kann auch Standardwaffen verwenden, um ordentlich Arschtritte zu verteilen."
+      },
+      {
+        "title": "Ausrüstung wird gewechselt",
+        "text": "Hm. Ein wahrer Meister sollte vielleicht leichtere Ausrüstung tragen."
+      },
+      {
+        "title": "Fähigkeitsmatrix wird aktiviert",
+        "text": "Mit Übung erlangt man Erleuchtung in der Schwertkämpfer-Kunst!"
+      },
+      {
+        "title": "Kampfaufzeichnungen ansehen",
+        "text": "Also das … und danach so? Okay, verstanden!"
+      },
+      {
+        "title": "Operator-Beförderung 1",
+        "text": "Ich habe Perlica gebeten, meine Beförderung bis zu diesem Moment hinauszuzögern! Ich werde mich erst entspannen, wenn du mir die Bestätigung durch Endfield persönlich überbringst, Endmin!"
+      },
+      {
+        "title": "Operator-Beförderung 2",
+        "text": "Was meinst du? Habe ich den Rekord für die schnellste Beförderung aller Zeiten gebrochen? Immerhin habe ich in der Tanjian-Halle tatsächlich ein paar Jahre übersprungen. Überrascht? Hehe. Ich war immer die Beste in meiner Klasse."
+      },
+      {
+        "title": "Operator-Beförderung 3",
+        "text": "Tja, es hat sich herausgestellt, dass ich auch in etwas anderem als den Kampfkünsten gut bin. Ich kann einfach nicht anders, ich muss deine beste Operatorin werden. Oh, deine Schmeicheleien bringen mich schon zum Erröten – aber mach weiter so!"
+      },
+      {
+        "title": "Operator-Beförderung 4",
+        "text": "Ich bin noch weit vom Gipfel entfernt. Man sagt, die Klinge meiner Mutter habe die Wolken selbst bewegt, Endmin. Und genau das werde ich tun … und diejenige sein, auf die du und Perlica immer zählen könnt!"
+      },
+      {
+        "title": "Operatorin meldet sich zum Dienst",
+        "text": "ENDMIN! WIE – Oh. Okay, nicht ablenken lassen. Also. Endfield-Operatorin Chen Qianyu meldet sich zum Dienst!"
+      },
+      {
+        "title": "Warten 1",
+        "text": "Sieh dir das an! Hehe, fantastisch, oder?"
+      },
+      {
+        "title": "Warten 2",
+        "text": "Hier drüben, Endmin! Hihi."
+      },
+      {
+        "title": "Zuweisung zur Anlage",
+        "text": "Und verstanden. Du kannst dich entspannen, Endmin!"
+      },
+      {
+        "title": "Gruß 1",
+        "text": "Wie läuft’s, Endmin? Möchtest du mit mir trainieren?"
+      },
+      {
+        "title": "Gruß 2",
+        "text": "Überlass mir den Rest, Endmin. Du kannst erst mal durchatmen – hast du dir verdient!"
+      },
+      {
+        "title": "Dijiang-Geplauder 1",
+        "text": "Boah! Ich hätte dich fast übersehen, Endmin! Hehe, ja. Ich habe versucht, einen neuen Move zu perfektionieren und habe nicht gesehen, wohin ich lief."
+      },
+      {
+        "title": "Dijiang-Geplauder 2",
+        "text": "Ich hätte nie erwartet, nach dem Verlassen von Hongshan *SO* hoch im Orbit zu landen. Talos-II sieht von hier aus tatsächlich ziemlich klein aus. Wohin ich mit meiner Klinge wohl gelangen könnte … vielleicht bis nach Talos? Was denkst du, Endmin?"
+      },
+      {
+        "title": "Dijiang-Geplauder 3",
+        "text": "Endmin! Hast du die Kampfkunstlegende gelesen, die ich dir geliehen habe? Nein, nein, nein, das ist kein Roman. Das Buch basiert auf Ereignissen, die sich in Yan tatsächlich zugetragen haben! Wie bitte? Du kannst dir niemanden vorstellen, dessen „Finger wie Klingen schneiden können“? Oh … Da hast du recht … Aber die „Fäuste, die die Gezeiten von Frühling und Herbst beruhigten“ klingt doch noch schlimmer, oder?"
+      },
+      {
+        "title": "Dijiang-Geplauder 4",
+        "text": "Was ich hier mache? Au! Argh. Ich versuche, meine Muskeln zu lockern. Als Endfielder und mit all diesen Missionen habe ich mein tägliches Trainingspensum weit übertroffen … Hey, Lust auf ein paar Lockerungsübungen? Ich kenne tatsächlich ein paar Meridiane! Komm schon! Zieh die Jacke aus! Gern geschehen!"
+      },
+      {
+        "title": "Dijiang-Geplauder 5",
+        "text": "Begleite mich auf einem Ausflug ins Arsenal! Ich muss ein Schwert abholen. Was soll ich auf den Griff gravieren? „Ein Schwert, sie alle zu spalten“ oder „Ehemals als flink bekannt“? Endmin, ich kann mich einfach nicht entscheiden!"
+      },
+      {
+        "title": "Dijiang-Geplauder 6",
+        "text": "Ich bin seit Kurzem in einer Zwickmühle. Pah. Hat nichts mit Technik zu tun, und ich glaube, irgendetwas nervt mich einfach innerlich. Die Legenden besagen, dass sich die besten Waffen an den Geist ihrer Träger anpassen … Aber … aber das ist nur ein gewöhnliches Stück Stahl! Endmin! Bitte hilf mir damit!"
+      },
+      {
+        "title": "Geschenke anbieten",
+        "text": "„Ein Geschenk ist nur ein Zeichen herzlicher Aufrichtigkeit.“ So lautet das Sprichwort. Aber wenn jemand wirklich aufrichtig ist, ist kein Geschenk angemessen genug. Ich hoffe nur, das hier gefällt dir, Endmin!"
+      },
+      {
+        "title": "Geschenke annehmen",
+        "text": "Für … mich?! WOW … Ich werde es auf jeden Fall sofort öffnen!"
+      },
+      {
+        "title": "Vertrauensgespräch 1",
+        "text": "Perlica hat immer so viel von dir erzählt, aber jetzt stehst du direkt vor mir! Fühlt sich irgendwie seltsam an, wenn du mich fragst! Was? Nein! Ich bin nicht enttäuscht! Mit Perlicas ultimativer und unbesiegbarer Legende zu essen und ein Dach über dem Kopf zu teilen, ist das Interessanteste überhaupt! Moment mal. Du hast Krümel am Mund."
+      },
+      {
+        "title": "Vertrauensgespräch 2",
+        "text": "Nachdem ich meine Heimat verlassen hatte, reiste ich tatsächlich eine Weile im Gürtel umher, bevor ich mich Endfield anschloss. Hehe. Eigentlich hatte ich gehofft, eine namenlose Heldin legendärer Taten zu werden – eine, die ein Mysterium hinterlässt. Doch nachdem ich das Leben außerhalb von Hongshan erlebt hatte, wurde mir klar, dass wahre Kriegerinnen nicht einfach vor den Folgen ihrer Taten davonlaufen können. Also … habe ich mein Tempo gedrosselt und weniger Orte besucht. Egal, ich werde diese verpasste Gelegenheit nachholen."
+      },
+      {
+        "title": "Vertrauensgespräch 3",
+        "text": "Ich glaube, ich war etwa zehn … vielleicht elf. Ich übte heimlich meine Schwertkunst in den Hügeln hinter der Tanjian-Halle, als ich auf einen Aggelos traf, der sich von seinem Schwarm entfernt hatte. Das war mein erster richtiger Kampf. Vater lobte mich, als ich mit einer zerbrochenen Klinge nach Hause kam, sagte aber auch: „Du magst eine Klinge zerbrochen haben, aber es gibt welche, die haben nicht mal eine.“ Diese Aussage meines Vaters erfordert wohl eine Interpretation. Was er sagte, hat mich bis heute zum Nachdenken gebracht."
+      },
+      {
+        "title": "Vertrauensgespräch 4",
+        "text": "Warum ich Endfielder geworden bin? Hmm … Das ist eine lange Geschichte. Wenn du wirklich wissen möchtest, wann mein Interesse geweckt wurde … Ich glaube, das war damals, als ich einem wirklich gut gekleideten Liberi half, einen Monsterbestien-Karren aus dem Schlamm zu ziehen. Perly schenkte mir ein so aufrichtiges Lächeln. Und ich dachte mir … vielleicht muss ich nicht mehr alleine herumreisen."
+      },
+      {
+        "title": "Vertrauensgespräch 5",
+        "text": "Yinglung ließ Freunde zurück, um seine Pflicht zu erfüllen. Und meine Mutter ließ mich wegen Chi Xiao zurück. Ich schätze, Leute, die eine wahre Berufung finden … lassen oft einfach alle unwichtigeren Dinge fallen. Aber Endfield ist da anders. Alles und jeder ist gleich wichtig, und nichts und niemand bleibt zurück – wenn Endfield eine Vision für Talos-II hat, dann werde ich eine weitere Klinge schwingen, um sie zu verwirklichen!"
+      },
+      {
+        "title": "Geplauder 1",
+        "text": "Perlica von der Arbeit abzubringen, wird nicht einfach. Aber ich habe einen Trick, den ich immer bei meinen älteren Schwertkämpfern angewendet habe. Wenn ich wollte, dass sie mit der Arbeit anfangen, habe ich ihnen einfach alle Aufgaben zugeschoben. Drehen wir das Ganze um: Wir können Perlicas Arbeit erledigen, und sie hätte keine andere Wahl, als eine Pause zu machen … Was? Komm schon, das ist doch eine gute Idee, oder?"
+      },
+      {
+        "title": "Geplauder 2",
+        "text": "Meine Frisur? Ganz einfach! Ich orientiere mich einfach an den beiden Hörnern, um Symmetrie zu erzielen. Meine Nachbarin Oma Wang hat mir einen Forte-Trick verraten … Seltsam? So ist das Leben in einem typischen Dayuan-Viertel. Die Leute halfen, die Nachbarskinder großzuziehen, und wir wuchsen alle im selben Hof auf. Man könnte sagen, wir waren mehr als nur Nachbarn. Es fühlte sich an wie eine große Familie."
+      },
+      {
+        "title": "Geplauder 3",
+        "text": "Sehr viele Schulen haben meine besondere Schwertkunst inspiriert! Der größte Einfluss? Definitiv mein Meister in der Tanjian-Halle. Er lehrte mich disziplinierte Bewegungen, effiziente Schläge – pure Substanz, kein Schnickschnack. Dann kam das, was meine Mutter mir zeigte, wenn ich laut genug jammerte. Ihre Schwertkunst wurde über Generationen hinweg weitergegeben und war äußerst komplex. Jede Bewegung hatte eine besondere Bedeutung. Und was den Rest angeht … nun, ich habe sie selbst entwickelt, nachdem ich all diese Schwertkämpferlegenden gelesen hatte. Eine wahre Kriegerin muss doch ein oder zwei Spezialtechniken haben, oder?"
+      },
+      {
+        "title": "Geplauder 4",
+        "text": "Wuling ist ein feuchter und klebriger Ort, aber ich blieb eine Weile dort und gewöhnte mich daran. Jedes Mal, wenn die Verderbnisflut anschwoll, traten Wassertropfen wie Blut aus den Wänden hervor. Aber das Essen in Wuling ist einfach fantastisch und die Leute dort sind – ich meine, die meisten sind echt nett. Schlechte Erinnerungen? NEIN! Mir fällt definitiv niemand dort ein, den ich nicht mögen würde!"
+      },
+      {
+        "title": "Geplauder 5",
+        "text": "Die Leute erzählten mir, dass meine Mutter mich Qianyu genannt hatte. Gott sei Dank ist dieser Name auf Yanesisch einfach zu schreiben – hat mir viel Kummer erspart, als mein Meister mich bestrafte und ich meinen Namen tausendmal schreiben musste."
+      },
+      {
+        "title": "Thema: Hongshan",
+        "text": "Man kann den Hongshan-Krater tatsächlich sehen, wenn man von der Brücke der Dijiang hinunterblickt. Vor zwei Jahren habe ich diesen Ort ziellos verlassen. Aber all die Straßen auf denen ich gereist bin, waren kaum so breit wie ein Fingernagel … Ich schätze, ich werde einfach weiterreisen, bis mir die Finger oder Handflächen ausgehen, um all meine Wanderungen zu messen. Wenn das geschieht, hätte ich bis dahin wohl meine Ziellosigkeit aufgegeben!"
+      },
+      {
+        "title": "Thema: Verschwundene Mutter",
+        "text": "Mutter besitzt ein purpurrotes Schwert. Sie erzählte mir, es sei ein Familienerbstück, das eine Heldin aus Yan unserem Vorfahren geschenkt habe. Ich erinnere mich, wie alte Leute aus ganz Hongshan unser Haus besuchten, um die Klinge zu sehen und sich an ihre epischen Geschichten zu erinnern. Dann … verschwand Mutter mit dem Schwert. Als ich älter wurde, erkannte ich, dass es nicht nur eine Waffe war. Es war ein Weg. Eine Religion. Ich möchte sie immer noch suchen. Doch ihre kleine Qianyu wird dafür ihre eigene Klinge benutzen."
+      },
+      {
+        "title": "Thema: Perlica",
+        "text": "Perlica war schon eine extreme Workaholic, als ich sie kennenlernte. Ich habe gelegentlich mitbekommen, dass ein gewisser Endministrator der Grund für ihre Überarbeitung war. Perly tat mir wirklich leid – aber da ich dich nun kennengelernt habe, verstehe ich ihre Beweggründe irgendwie … Abgesehen von der epischen Vision und dem Unternehmen, an dem sie arbeitet, habe ich das Gefühl, dass Perlica einfach an deiner Seite kämpfen möchte."
+      },
+      {
+        "title": "Ressource/Sammelobjekt entdeckt 1",
+        "text": "Hm, ich glaube, ich habe da drüben was Nützliches entdeckt!"
+      },
+      {
+        "title": "Ressource/Sammelobjekt entdeckt 2",
+        "text": "Ich sehe einen Schatz! Sehen wir uns das mal an!"
+      },
+      {
+        "title": "Unerforschter Bereich entdeckt",
+        "text": "Moment. Wir waren noch nie hier, oder?"
+      },
+      {
+        "title": "Starker Gegner entdeckt",
+        "text": "Gefahr voraus. Mal sehen, wie stark dieser Gegner ist."
+      },
+      {
+        "title": "Abbau 1",
+        "text": "Das hast du nicht erwartet, oder? Meine spezielle Schwertkunst für alles Steinige!"
+      },
+      {
+        "title": "Abbau 2",
+        "text": "Überlass mir den Rest! Mit einer Klinge geht das schneller!"
+      },
+      {
+        "title": "Kiste öffnen",
+        "text": "Normalerweise werden geheime Bücher in Kisten wie dieser versteckt."
+      },
+      {
+        "title": "Aurylen erhalten",
+        "text": "Rund und glänzend … Oh, das ist die tatsächliche Größe von Aurylen."
+      },
+      {
+        "title": "Eliminierung der Verderbnis",
+        "text": "Mit einer einzelnen Klinge kann eine Flut nicht aufgehalten werden. Vielleicht hat es sich so angefühlt."
+      },
+      {
+        "title": "Ausruhen",
+        "text": "Wir müssen rasten! Geschärfte Klingen werden die verlorene Zeit ausgleichen!"
+      },
+      {
+        "title": "Taktische Nutzung 1",
+        "text": "Schnell! Nimm was davon!"
+      },
+      {
+        "title": "Taktische Nutzung 2",
+        "text": "Puh … Jetzt geht’s mir besser!"
+      },
+      {
+        "title": "Gefahrenwarnung",
+        "text": "Pass auf! Zurück!"
+      },
+      {
+        "title": "Verletzt",
+        "text": "Arngh! Ich komme zurecht! Konzentriere dich auf den Kampf."
+      },
+      {
+        "title": "0 LP",
+        "text": "Verdammt … Hngh …"
+      },
+      {
+        "title": "Teammotivation 1",
+        "text": "Dieser Move war unglaublich!"
+      },
+      {
+        "title": "Teammotivation 2",
+        "text": "Jawoll! Das nenne ich mal perfektes Teamwork!"
+      },
+      {
+        "title": "Motivationsreaktion 1",
+        "text": "Hehe! Das ist nur mein Job!"
+      },
+      {
+        "title": "Motivationsreaktion 2",
+        "text": "Einheit führt zu Klingensynergien!"
+      },
+      {
+        "title": "Kampf beginnt 1",
+        "text": "Eine gezogene Klinge, ihr Licht entfesselt!"
+      },
+      {
+        "title": "Kampf beginnt 2",
+        "text": "Überlass das mir."
+      },
+      {
+        "title": "Kampfsieg 1",
+        "text": "Jawoll! Ich habe nichts anderes erwartet."
+      },
+      {
+        "title": "Kampfsieg 2",
+        "text": "Ein leichter Sieg."
+      },
+      {
+        "title": "Kampfsieg 3",
+        "text": "Gut gemacht!"
+      },
+      {
+        "title": "Kampfsieg 4",
+        "text": "Das war … etwas zu knapp. Schnell. Wir müssen die Verwundeten versorgen!"
+      },
+      {
+        "title": "Niederlage im Kampf",
+        "text": "… Wir werden wieder gegen sie kämpfen!"
+      },
+      {
+        "title": "Abschlussangriff 1",
+        "text": "Nimm das!"
+      },
+      {
+        "title": "Abschlussangriff 2",
+        "text": "Genau da!"
+      },
+      {
+        "title": "Kampffertigkeit 1",
+        "text": "Hieb!"
+      },
+      {
+        "title": "Kampffertigkeit 2",
+        "text": "Durchbruch!"
+      },
+      {
+        "title": "Kampffertigkeit 3",
+        "text": "Parieren!"
+      },
+      {
+        "title": "Kombofertigkeit bereit 1",
+        "text": "Das ist unsere Chance!"
+      },
+      {
+        "title": "Kombofertigkeit bereit 2",
+        "text": "Überlass das mir!"
+      },
+      {
+        "title": "Kombo wirken 1",
+        "text": "Ich bin dran!"
+      },
+      {
+        "title": "Kombo wirken 2",
+        "text": "Du kämpfst gegen mich!"
+      },
+      {
+        "title": "Wuchtschlag 1",
+        "text": "Schwäche entdeckt!"
+      },
+      {
+        "title": "Wuchtschlag 2",
+        "text": "Bruch!"
+      },
+      {
+        "title": "Ultimative Fertigkeit 1",
+        "text": "Ein Schwert, sie alle zu spalten!"
+      },
+      {
+        "title": "Ultimative Fertigkeit 2",
+        "text": "Ehemals als flink bekannt!"
+      },
+      {
+        "title": "Ultimative Fertigkeit 3",
+        "text": "Die Zeit ist reif!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

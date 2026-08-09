@@ -114,7 +114,329 @@
         "name": "Thể Thao",
         "description": "Thể Thao: Huấn Luyện Thể Chất Tích Hợp\nAkekuri đã gác lại thời trang, mỹ thuật, văn chương và những sở thích từng hấp dẫn cô trước đây. Thay vào đó, cô dành thời gian để rèn luyện thể chất."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Chuẩn Bị Tác Chiến 1",
+        "text": "Chuẩn bị sẵn sàng! Cả đội, xông lên nào!"
+      },
+      {
+        "title": "Chuẩn Bị Tác Chiến 2",
+        "text": "Đây là cơ hội để chúng ta học tập và phát triển!"
+      },
+      {
+        "title": "Đang thêm vào đội 1",
+        "text": "Akekuri, Đội Z7, báo cáo! Thật háo hức khi được tham gia nhiệm vụ, hoàn thành xuất sắc nhé!"
+      },
+      {
+        "title": "Đang thêm vào đội 2",
+        "text": "Tuyệt, thêm một nhiệm vụ từ Endmin! Còn cách nào tốt hơn để học hỏi nữa chứ!"
+      },
+      {
+        "title": "Đang đổi vũ khí",
+        "text": "Một vũ khí mới, ừm... Đúng là khác biệt thật. Được rồi, phải nghĩ chiến thuật và chiến lược mới thôi!"
+      },
+      {
+        "title": "Đang đổi trang bị",
+        "text": "Ừm, hợp với mình ghê! Tôi sẽ sớm gửi đánh giá đến Kho Vũ Khí."
+      },
+      {
+        "title": "Kích hoạt Ma Trận Năng Lực",
+        "text": "Cảm giác như đang tích lũy tín dụng vậy, không phải loại tín chỉ nhận trên lớp."
+      },
+      {
+        "title": "Xem Hồ Sơ Chiến Đấu",
+        "text": "Đây là buổi tổng kết của giới tinh anh sao... Thật mở mang tầm mắt!"
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 1",
+        "text": "Ồ, thăng bậc? Thật vinh dự! Giống như một sự công nhận dành cho tôi và cả đội Z7. Cứ yên tâm, chúng ta sẽ tiếp tục tiến lên!"
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 2",
+        "text": "Nhiều nhiệm vụ rủi ro hơn ư? Không đâu, tôi háo hức hơn là sợ hãi. Đó là dấu hiệu của sự tín nhiệm, tôi xem đó là một cơ hội tuyệt vời để học hỏi và phát triển!"
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 3",
+        "text": "Endmin, lát nữa có rảnh không? Cả đội đang tổ chức một buổi tiệc nhỏ ăn mừng. Tôi đã nướng một chiếc bánh Mont Blanc dành riêng cho ngài. Tin tôi đi, ngài sẽ không muốn bỏ lỡ đâu!"
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 4",
+        "text": "Có một học thuyết cho rằng ai rồi cũng sẽ được thăng bậc lên vị trí vượt quá khả năng của họ. Vậy nên, nếu tôi bị mắc kẹt quá lâu, Endmin, làm ơn dẫn dắt tôi đúng hướng."
+      },
+      {
+        "title": "Cán Viên đang báo cáo nhiệm vụ",
+        "text": "Đội trưởng Akekuri của Đội Tác Chiến Z7 báo cáo! Hồ sơ tác chiến, bảng tóm tắt ngân sách và kế hoạch hành động đang đợi duyệt. Ngài muốn xem cái nào trước?"
+      },
+      {
+        "title": "Chờ Lệnh 1",
+        "text": "Một đội mạnh là đội không có mắc xích nào yếu kém."
+      },
+      {
+        "title": "Chờ Lệnh 2",
+        "text": "Thôi nào, cho tôi làm gì đó vì Endfield đi!"
+      },
+      {
+        "title": "Phân Công Vào Công Trình",
+        "text": "Ngài có thể tin ở tôi. Tôi rành việc này lắm."
+      },
+      {
+        "title": "Lời Chào 1",
+        "text": "Thế giới thật nhỏ bé, Endmin! Cậu cũng vừa hoàn thành một nhiệm vụ à?"
+      },
+      {
+        "title": "Lời Chào 2",
+        "text": "Nghỉ ngơi làm hơi cà phê chứ, Endmin? Tôi sẽ pha một bình mới cho ngài!"
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 1",
+        "text": "Rất vui được gặp ngài, Endministrator. Tôi là Akekuri của Đội Tác Chiến Z7. Ồ, được rồi! Có thể ta chỉ mới được cải tổ và hoạt động trong bí mật, nhưng tôi hứa, chúng ta sẽ tạo nên dấu ấn."
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 2",
+        "text": "Tôi được biết ngài đã dẫn dắt Endfield thuở đầu, tôi đã nghĩ là ngài rất nghiêm khắc. Nhưng ngài hào sảng hơn tôi tưởng. He he, tôi đoán đó là một phần tạo nên nhà lãnh đạo thực thụ!"
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 3",
+        "text": "Thú thực rằng, tôi thích ở Dijiang này hơn là tham gia những thứ gọi là \"sự kiện sang chảnh\" giới kinh doanh tinh anh tổ chức ở Neo Tsukushi. Ở đây mọi người thoải mái hơn và thực sự tạo nên ảnh hưởng."
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 4",
+        "text": "Ngài đã ăn bánh gối tam giác bao giờ chưa? Đó là một món bánh ngọt truyền thống ở Higashi được làm từ đậu đỏ, trà xanh và hạt dẻ nướng. Nếu ngài có hứng thú, hãy đến buổi họp mặt của đội Z7 lần tới nhé."
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 5",
+        "text": "Này, Endmin. Ngồi xuống uống tách trà nóng nhé? Chúng tôi muốn kể vài chuyện thú vị khi làm nhiệm vụ!"
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 6",
+        "text": "Tôi rất thích ngắm nhìn Talos-II từ Cầu Tàu. Nơi đó chứa mọi kỷ niệm của tôi. Nơi tôi lớn lên, nơi gia đình tôi từng sống và cả những nơi ngài thay đổi. Này, sao lại tỏ ra bất ngờ thế? Tôi đạt trọn A+ trong môn địa chất học hành tinh và lịch sử hiện đại đó!"
+      },
+      {
+        "title": "Tặng Quà",
+        "text": "Này, Endmin. Tôi mang về cho ngài một món quà từ nhiệm vụ thực địa. Hi vọng ngài sẽ thích!"
+      },
+      {
+        "title": "Nhận quà",
+        "text": "Ồ, quà cho tôi?! Là phần thưởng cho chuyện gì? Hay là...?"
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 1",
+        "text": "Ồ, ngài muốn biết tại sao thủ khoa của Neo Tsukushi lại chọn gia nhập Endfield à? Thực ra chính tôi mới là người biết ơn vì đã được chọn. Tôi thích mọi thứ ở Đội Tác Chiến hơn bất kỳ nấc thang danh vọng nào. Ở đây, tôi vừa là đồng đội, vừa là người tiên phong."
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 2",
+        "text": "Điều ước sao? Tôi chỉ mong bố mẹ có thể làm hòa. Bố tôi xông pha chiến đấu với Aggeloi, còn mẹ thì gồng gánh cửa hàng gia đình. Nhưng tại sao họ lại phải tách nhau ra? Nếu cả hai cùng làm việc tại Endfield, có lẽ họ không cần phải lựa chọn giữa gia đình và nghĩa vụ..."
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 3",
+        "text": "Hồi bé, tôi thường chơi trò \"Chiến đấu với Aggeloi\" cùng bố và chú. Tôi cưỡi lên vai họ như một vị chỉ huy. Nhưng mười năm trước, chú bị điều đến phương Bắc làm hacker shinobi rồi không bao giờ trở lại. Kể từ đó, bố mẹ tôi không nói chuyện với nhau nữa. Tôi gần như quên về những \"trận chiến\" ấy cho đến khi Endfield gợi lại chúng."
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 4",
+        "text": "Sau khi nộp đơn vào tái thiết Z7, tôi đã trải qua hơn một năm huấn luyện và thử thách khắc nghiệt. Nhưng điều thực sự quan trọng chính là gặp được Catcher, Fluorite, Estella, và Antal. Họ là trái tim của cả đội và là lý do Z7 tiếp tục tồn tại."
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 5",
+        "text": "Haha, tôi đoán là chẳng có gì giấu nổi ngài cả, Endmin. Ừ thì, mẹ tôi đã lên sẵn kế hoạch, trường kinh doanh, gia nhập Phòng Thương Mại Tổng Hợp Talos-II, nối gót bà. Chà, chuyện tôi gia nhập nơi này không nằm trong kịch bản của bà ấy. Vậy nên... Hãy đưa Endfield vươn tầm đỉnh cao ở Talos-II, nếu không bà ấy nắm đầu tôi về mất! À mà, nếu lúc nào ngài muốn mua sắm ở Vành Đai thì cầm thẻ này theo. Suỵt... Ừ, cái cửa hàng mà ai cũng biết đó."
+      },
+      {
+        "title": "Trò Chuyện 1",
+        "text": "Tôi biết mình không phải chiến binh mạnh nhất, vậy nên sự tín nhiệm và tinh thần đồng đội chính là tuyến phòng thủ vững chắc nhất của chúng ta. Giờ ngài hiểu tại sao khẩu pháo sáng này quan trọng đến thế rồi chứ!"
+      },
+      {
+        "title": "Trò Chuyện 2",
+        "text": "Muốn biết cách tôi giữ cho đội Z7 vận hành trơn tru không? Thật ra cũng khá đơn giản. Ăn mọi thứ Catcher nấu, tặng Fluorite cây bắt ruồi, nghe những bản nhạc ồn ào của Estella và cười hùa với những câu đùa của Antal. Tin tôi đi, hiệu quả lắm."
+      },
+      {
+        "title": "Trò Chuyện 3",
+        "text": "Nhiệm vụ đầu tiên cả đội làm cùng nhau chỉ là một chuyến hộ tống đơn giản, hỗ trợ kỹ sư Endfield xây đập ở tiền tuyến. Nghe dễ nhỉ? Bọn tôi làm rối tung cả lên đến mức có thể viết một cuốn \"101 Điều Không Nên Làm\" luôn đấy. Nhưng khi con đập hoàn thành, cả người chìm trong làn nước lạnh đến thắt lưng... cảm giác thành tựu khi đó? Chân thật lắm."
+      },
+      {
+        "title": "Trò Chuyện 4",
+        "text": "Nếu ngài dẫn dắt chúng tôi, Endmin... Tôi sẽ bảo Estella và Antal yểm trợ, Catcher và tôi thu hút hỏa lực, còn Fluorite sẽ tung kết liễu. Khoan đã, ngài có kế hoạch hoàn toàn khác?"
+      },
+      {
+        "title": "Trò Chuyện 5",
+        "text": "Ngài muốn xem bảng điểm của tôi? Hừm... Toàn là A+ trừ môn mô phỏng kinh doanh năm hai. Đồng đội của tôi trông cậy hết vào tôi, vậy mà... Tôi đã khiến các đội khác phá sản. Sau đó giáo sư bảo tôi rằng trên Talos-II, tổng chiến lược bằng không cũng chưa phải là lựa chọn tốt nhất. Đó là điểm A- duy nhất của tôi."
+      },
+      {
+        "title": "Chủ đề: Catcher",
+        "text": "Ai cũng nói Catcher là đồng đội tuyệt vời, nhưng thật ra, chính cậu ấy là người cần được chăm sóc nhiều nhất. Tôi pha cà phê cho cả đội mỗi buổi họp, và cậu ấy cứ uống đều đặn suốt hai tháng, cho đến khi bọn tôi phát hiện cậu ấy bị dị ứng! Từ đó tôi chuyển sang pha ca cao nóng cho cậu ấy."
+      },
+      {
+        "title": "Chủ đề: Fluorite",
+        "text": "Có người sợ Fluorite vì cách cô ấy nói chuyện và xuất thân của cô ấy. Nhưng nếu thật sự hiểu cô ấy, ngài sẽ thấy sự dũng cảm và chính trực đằng sau chiếc mũ trùm đó. Tin tôi đi, ngài sẽ không hối hận đâu."
+      },
+      {
+        "title": "Chủ đề: Estella",
+        "text": "Thêm vài câu phàn nàn về việc Estella thiếu động lực à? Không đúng đâu. Hãy nhìn vào thành tích của cổ, cô ấy thực ra vô cùng khát khao thử thách, phiêu lưu và nỗ lực!"
+      },
+      {
+        "title": "Chủ đề: Antal",
+        "text": "Ồ, ngài không hiểu khiếu hài hước của Antal ư? *Khúc khích* Hãy thử đổi sang góc nhìn của cậu ấy, có lẽ ngài sẽ hiểu được mạch suy nghĩ và thấy buồn cười đó... Hahaha!"
+      },
+      {
+        "title": "Phát hiện Tài Nguyên/Có Thể Thu Thập 1",
+        "text": "Hình như tôi thấy gì đó thú vị ở đằng kia... Đến kiểm tra thử nào!"
+      },
+      {
+        "title": "Phát hiện Tài Nguyên/Có Thể Thu Thập 2",
+        "text": "Phát hiện vật thể giá trị cao. Yêu cầu phê duyệt để tiến hành thu thập."
+      },
+      {
+        "title": "Phát Hiện Khu Vực Chưa Khám Phá",
+        "text": "Phát hiện khu vực chưa xác định. Đợi chỉ thị bổ sung để hành động."
+      },
+      {
+        "title": "Phát hiện Kẻ Địch Mạnh",
+        "text": "Phát hiện mục tiêu rủi ro cao. Giữ bình tĩnh, chúng ta đã được huấn luyện cho tình huống này."
+      },
+      {
+        "title": "Khai thác 1",
+        "text": "Những khoáng sản này là nguyên liệu thiết yếu cho Endfield."
+      },
+      {
+        "title": "Khai thác 2",
+        "text": "Để tôi giúp một tay! Chúng ta là một đội mà, đúng không?"
+      },
+      {
+        "title": "Mở Thùng",
+        "text": "Tuyệt! Thu hoạch lần này có vẻ ấn tượng đấy!"
+      },
+      {
+        "title": "Nhận Aurylene",
+        "text": "Thu thập Aurylene là ưu tiên hàng đầu trong mọi nhiệm vụ. Chẳng rõ nó đang ẩn chứa bí mật gì..."
+      },
+      {
+        "title": "Xua Tan Nhiễm Khuẩn",
+        "text": "Được rồi, hạ được một rào cản nữa! Tiến tới mục tiêu thôi!"
+      },
+      {
+        "title": "Nghỉ ngơi",
+        "text": "Phù, cuối cùng cũng có thể ngồi xuống nhâm nhi tách cà phê rồi. À, phải lên kế hoạch tiếp theo, chỉnh lại trang bị và kiểm tra Túi nữa."
+      },
+      {
+        "title": "Sử Dụng Vật Phẩm Chiến Thuật 1",
+        "text": "Hãy bình tĩnh, chữa cho khỏi cái đã."
+      },
+      {
+        "title": "Sử Dụng Vật Phẩm Chiến Thuật 2",
+        "text": "Chữa trị kịp thời!"
+      },
+      {
+        "title": "Cảnh Báo Nguy Hiểm",
+        "text": "Nấp đi, NGAY!"
+      },
+      {
+        "title": "Bị Thương",
+        "text": "Một đội trưởng cừ khôi... Sẽ không bao giờ chùn bước..."
+      },
+      {
+        "title": "0 HP",
+        "text": "Dù có ngã xuống... Tôi cũng sẽ không dừng lại."
+      },
+      {
+        "title": "Cổ Vũ Đội 1",
+        "text": "Quao, thi triển hoàn hảo!"
+      },
+      {
+        "title": "Cổ Vũ Đội 2",
+        "text": "Kết thúc hoàn mĩ! Tôi rất ngạc nhiên đấy!"
+      },
+      {
+        "title": "Đáp Lại Lời Cổ Vũ 1",
+        "text": "Tất cả là nhờ sự phối hợp của chúng ta!"
+      },
+      {
+        "title": "Đáp Lại Lời Cổ Vũ 2",
+        "text": "Không thể hoàn thành nếu thiếu mọi người được!"
+      },
+      {
+        "title": "Bắt Đầu Chiến Đấu 1",
+        "text": "Chúng ta sẽ đối đầu, thực hiện Kế Hoạch A!"
+      },
+      {
+        "title": "Bắt Đầu Chiến Đấu 2",
+        "text": "Đi thôi! Tôi có niềm tin ở tất cả mọi người!"
+      },
+      {
+        "title": "Thắng Trận 1",
+        "text": "Tiếp theo là AAR, PCA... Nhưng trước tiên hãy ăn mừng chiến thắng của chúng ta đã!"
+      },
+      {
+        "title": "Thắng Trận 2",
+        "text": "Chúng ta đang tiến tới đó, chậm nhưng chắc."
+      },
+      {
+        "title": "Thắng Trận 3",
+        "text": "Làm tốt lắm. Chúng ta đã hoàn thành nhiệm vụ cho Endfield!"
+      },
+      {
+        "title": "Thắng Trận 4",
+        "text": "Ta sẽ chẳng học được mấy từ sự hoàn mỹ. Những vết sẹo mới dạy ta nên người."
+      },
+      {
+        "title": "Bại Trận",
+        "text": "Sai lầm giúp ta học hỏi. Tôi tin rằng chúng ta sẽ làm tốt hơn lần tới."
+      },
+      {
+        "title": "Đòn Dứt Điểm 1",
+        "text": "Xem này!"
+      },
+      {
+        "title": "Đòn Dứt Điểm 2",
+        "text": "Đòn xuyên phá!"
+      },
+      {
+        "title": "KN Chiến Đấu 1",
+        "text": "Quét sạch khu vực!"
+      },
+      {
+        "title": "KN Chiến Đấu 2",
+        "text": "Tránh ra!"
+      },
+      {
+        "title": "KN Chiến Đấu 3",
+        "text": "Thiêu Đốt!"
+      },
+      {
+        "title": "Chuẩn Bị KN Liên Hoàn 1",
+        "text": "Thời điểm là đây!"
+      },
+      {
+        "title": "Chuẩn Bị KN Liên Hoàn 2",
+        "text": "Phối hợp nào cả đội!"
+      },
+      {
+        "title": "Thi Triển Liên Hoàn 1",
+        "text": "Hừ! Xuyên phá thôi!"
+      },
+      {
+        "title": "Thi Triển Liên Hoàn 2",
+        "text": "Bốc cháy đi!"
+      },
+      {
+        "title": "Kết Liễu 1",
+        "text": "Ngươi xong đời rồi!"
+      },
+      {
+        "title": "Kết Liễu 2",
+        "text": "Kết thúc tại đây thôi!"
+      },
+      {
+        "title": "Tuyệt Kỹ 1",
+        "text": "Đội hình, theo pháo sáng của tôi! Đi thôi!"
+      },
+      {
+        "title": "Tuyệt Kỹ 2",
+        "text": "Hãy để pháo hoa bừng sáng lên nào!"
+      },
+      {
+        "title": "Tuyệt Kỹ 3",
+        "text": "Chiến lược thắng lợi, giao chiến!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

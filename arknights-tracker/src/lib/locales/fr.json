@@ -362,7 +362,9 @@
     "special_1_3_2": "Effaceur de péché",
     "weponbox_1_3_2": "Tirage de teinte écarlate",
     "special_1_4_1": "Face à la faille, regardant vers le nord",
-    "weponbox_1_4_1": "Tirage de type militaire"
+    "weponbox_1_4_1": "Tirage de type militaire",
+    "special_1_4_2": "Bonjour de votre étoile de l'aube",
+    "weponbox_1_4_2": "Tirage éblouissant"
   },
   "pages": {
     "home": "Accueil",
@@ -455,7 +457,8 @@
     "theRootedRealm": "Le royaume enraciné",
     "protocolPassBlightedSea": "Pass de Protocole : Marée gangrénée",
     "gazeNorthToTheRiftSignIn": "Connexion - Regard tourné vers le nord et vers la faille",
-    "protocolInvitationTheReturn": "Invitation du Protocole : le retour"
+    "protocolInvitationTheReturn": "Invitation du Protocole : le retour",
+    "bedazzlingDawnstarSignIn": "Connexion - Étoile du matin étincelante"
   },
   "mouths": {
     "january": "Janvier",

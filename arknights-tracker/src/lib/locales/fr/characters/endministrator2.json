@@ -93,7 +93,229 @@
         "name": "???",
         "description": ""
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Préparation de l'opération 1",
+        "text": "J'entends l'originium chanter."
+      },
+      {
+        "title": "Préparation de l'opération 2",
+        "text": "Endfield ne cessera pas de progresser."
+      },
+      {
+        "title": "Intégration à l'équipe 1",
+        "text": "Je suis en position, Dijiang."
+      },
+      {
+        "title": "Intégration à l'équipe 2",
+        "text": "Il était temps."
+      },
+      {
+        "title": "Changement d'arme",
+        "text": "Pas trop mal."
+      },
+      {
+        "title": "Changement d'équipement",
+        "text": "Un beau produit de notre industrie."
+      },
+      {
+        "title": "Activation de la matrice de capacités",
+        "text": "Ce sentiment m'est familier..."
+      },
+      {
+        "title": "Visionnage d'archives de combat",
+        "text": "Je ne les oublierai jamais."
+      },
+      {
+        "title": "Promotion d'opérateur 1",
+        "text": "Un autre pas en avant..."
+      },
+      {
+        "title": "Promotion d'opérateur 2",
+        "text": "Je veillerai toujours à la sécurité d'Endfield."
+      },
+      {
+        "title": "Promotion d'opérateur 3",
+        "text": "Le passé et le présent ne doivent plus faire qu'un."
+      },
+      {
+        "title": "Promotion d'opérateur 4",
+        "text": "J'ai entendu sa voix, comme l'écho d'un murmure dans mes rêves. À maintes reprises, j'ai rêvé d'une mer immense... D'une mer de chagrin et de souvenirs qui renforce ma détermination."
+      },
+      {
+        "title": "En attente 1",
+        "text": "Qu'est-ce qu'on attend ?"
+      },
+      {
+        "title": "En attente 2",
+        "text": "L'originium nous tracera un chemin."
+      },
+      {
+        "title": "Cadeaux acceptés",
+        "text": "Un grand merci !"
+      },
+      {
+        "title": "Détection de ressource/objet à collecter 1",
+        "text": "Regardez, par là..."
+      },
+      {
+        "title": "Détection de ressource/objet à collecter 2",
+        "text": "Il y a quelque chose d'important, là-bas !"
+      },
+      {
+        "title": "Zone inexplorée détectée",
+        "text": "Il faut étudier cette zone en détails."
+      },
+      {
+        "title": "Découverte d'un ennemi puissant",
+        "text": "Entité hostile à menace élevée. Approchez prudemment."
+      },
+      {
+        "title": "Extraction 1",
+        "text": "Ces minerais pourraient être utiles."
+      },
+      {
+        "title": "Extraction 2",
+        "text": "Besoin d'aide ?"
+      },
+      {
+        "title": "Ouverture de caisse",
+        "text": "Ce voyage en valait la peine."
+      },
+      {
+        "title": "Obtention d'aurylène",
+        "text": "Ça me rappelle quelque chose."
+      },
+      {
+        "title": "Élimination de la Gangrène",
+        "text": "Élimination de la Gangrène confirmée."
+      },
+      {
+        "title": "Repos",
+        "text": "Tout le monde est bien reposé."
+      },
+      {
+        "title": "Utilisation de tactique 1",
+        "text": "Ça va mieux ?"
+      },
+      {
+        "title": "Utilisation de tactique 2",
+        "text": "Je me sens bien mieux."
+      },
+      {
+        "title": "Avertissement de danger",
+        "text": "Ennemi en approche ! Attention !"
+      },
+      {
+        "title": "Blessure",
+        "text": "Je peux encore me battre..."
+      },
+      {
+        "title": "0 PV",
+        "text": "Je suis désolé... C'est à vous de jouer..."
+      },
+      {
+        "title": "Encouragement de l'équipe 1",
+        "text": "Très joli coup."
+      },
+      {
+        "title": "Encouragement de l'équipe 2",
+        "text": "Une synchronisation parfaite."
+      },
+      {
+        "title": "Réaction face aux encouragements 1",
+        "text": "Je suis flatté."
+      },
+      {
+        "title": "Réaction face aux encouragements 2",
+        "text": "On forme vraiment une belle équipe."
+      },
+      {
+        "title": "Début du combat 1",
+        "text": "Il est temps de se battre."
+      },
+      {
+        "title": "Début du combat 2",
+        "text": "Je suis avec vous."
+      },
+      {
+        "title": "Victoire au combat 1",
+        "text": "Une nouvelle étape de franchie, Endfielders."
+      },
+      {
+        "title": "Victoire au combat 2",
+        "text": "Beau travail, tout le monde."
+      },
+      {
+        "title": "Victoire au combat 3",
+        "text": "On a bien géré ce combat !"
+      },
+      {
+        "title": "Victoire au combat 4",
+        "text": "Tout le monde va bien ?"
+      },
+      {
+        "title": "Défaite au combat",
+        "text": "Pas d'inquiétude. On se regroupe et on avise."
+      },
+      {
+        "title": "Coup final 1",
+        "text": "Prends ça !"
+      },
+      {
+        "title": "Coup final 2",
+        "text": "Et voilà !"
+      },
+      {
+        "title": "Compétence de combat 1",
+        "text": "À l'attaque !"
+      },
+      {
+        "title": "Compétence de combat 2",
+        "text": "Ça va faire mal !"
+      },
+      {
+        "title": "Compétence de combat 3",
+        "text": "On les anéantit !"
+      },
+      {
+        "title": "Compétence de combo prête 1",
+        "text": "Je suis prêt à frapper."
+      },
+      {
+        "title": "Compétence de combo prête 2",
+        "text": "Faites-moi confiance."
+      },
+      {
+        "title": "Utilisation de combo 1",
+        "text": "Cristallisation !"
+      },
+      {
+        "title": "Utilisation de combo 2",
+        "text": "Ton heure est venue !"
+      },
+      {
+        "title": "Coup fatal 1",
+        "text": "Finissons-en !"
+      },
+      {
+        "title": "Coup fatal 2",
+        "text": "Je te tiens !"
+      },
+      {
+        "title": "Ultime 1",
+        "text": "Tu n'auras pas de deuxième chance."
+      },
+      {
+        "title": "Ultime 2",
+        "text": "Ta fin est proche."
+      },
+      {
+        "title": "Ultime 3",
+        "text": "Fin du spectacle."
+      }
+    ]
   },
   "potentials": {
     "potential1": {

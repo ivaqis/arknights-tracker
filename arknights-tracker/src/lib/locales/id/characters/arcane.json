@@ -184,7 +184,337 @@
         "name": "Amal",
         "description": "Amal: Segala Rasa Kehidupan\nSekali dilihat, tak bisa diabaikan. Sekali dirasakan, bakal menyentuh hati. Bagian terpenting dalam perjalanan hidup adalah tahu cara memberi dan berbagi setiap kenikmatannya."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Persiapan Operasi 1",
+        "text": "Sekarang, kau yang pegang komando."
+      },
+      {
+        "title": "Persiapan Operasi 2",
+        "text": "Akan kujunjung tinggi kehormatan Yinglung."
+      },
+      {
+        "title": "Menambahkan ke Tim 1",
+        "text": "Aku percaya kepadamu."
+      },
+      {
+        "title": "Menambahkan ke Tim 2",
+        "text": "Berikan perintahmu kepadaku."
+      },
+      {
+        "title": "Berganti Senjata",
+        "text": "Senjata terkuat adalah hati yang menggunakannya."
+      },
+      {
+        "title": "Berganti Gear",
+        "text": "Endfield benar-benar tahu cara memberikan hasil yang berkualitas."
+      },
+      {
+        "title": "Aktivasi Matriks Kemampuan",
+        "text": "Asah dirimu hingga mencapai kesempurnaan, agar bisa menang dengan tenang dalam situasi apa pun."
+      },
+      {
+        "title": "Menonton Rekaman Pertarungan",
+        "text": "Rekaman pertarungan .... Dulu, aku bergadang semalaman untuk mempelajari ulasan pascatindakan."
+      },
+      {
+        "title": "Promosi Operator 1",
+        "text": "Terima kasih atas kehormatan ini .... Aku jarang ditugaskan menjadi Ketua Satgas, jadi ini terasa ... agak beda."
+      },
+      {
+        "title": "Promosi Operator 2",
+        "text": "Apa ini pertanda kerja sama yang lebih erat antara Endfield dan HAS? Mungkin lain kali, aku bisa mengajakmu berkeliling di mabes Yinglung di Hongshan."
+      },
+      {
+        "title": "Promosi Operator 3",
+        "text": "Kuhargai pujianmu, tapi aku lebih suka menyibukkan diri dengan misi lagi. Misi apa pun boleh. Aku tak cocok berdiam diri .... Aku ingin bisa lebih berguna bagimu."
+      },
+      {
+        "title": "Promosi Operator 4",
+        "text": "Hmm? Ah ... aku jadi ingat saat diangkat jadi Ketua Satgas di Terusan Yinglung. Setelah urusan di Wuling selesai ... amarah yang dulu menjadi pendorongku akhirnya padam. Seandainya aku tahu bahwa suatu hari kau akan memberiku penghargaan secara langsung ... yah, lupakan saja."
+      },
+      {
+        "title": "Operator Siap Bertugas",
+        "text": "Ketua Satgas Satgassus Yinglung, Arcane, melapor ke Endfield .... Menunggu perintahmu, Komandan."
+      },
+      {
+        "title": "Siaga 1",
+        "text": "Teguhkan tekad bagai ferrium, bergeraklah setajam silet. Yinglung menang berkat momentum."
+      },
+      {
+        "title": "Siaga 2",
+        "text": "Anggap saja aku pedang yang siap kaupakai. Arahkan aku sesuai kebutuhanmu, dan aku akan menyerang."
+      },
+      {
+        "title": "Menugaskan ke Fasilitas",
+        "text": "Yinglung tak pernah pilih-pilih misi. Tugasku adalah menyelesaikannya."
+      },
+      {
+        "title": "Menyapa 1",
+        "text": "Akhirnya ada waktu luang, Endmin?"
+      },
+      {
+        "title": "Menyapa 2",
+        "text": "Aku melihatmu dari kejauhan. Ada intel baru?"
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 1",
+        "text": "Aku sempat mengira Proksi tak terlalu menyukaiku. Tapi, setelah kami kembali dari Zona Eksklusi Wuling Utara, dia mulai bersikap hangat. Kurasa aku paham alasannya .... Dia mungkin merasa aku yang dulu sangat kaku dan membosankan. Kalau ada kesempatan untuk bertemu Nona Si di Dijiang ... aku ingin berterima kasih secara langsung."
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 2",
+        "text": "Padang pasir yang tandus, padang salju di ujung utara .... Saat aku berdiri di atas geladak Dijiang, wilayah-wilayah yang butuh bantuan terlihat lebih jelas dari sebelumnya. Perjalananku tidak berakhir di celah raksasa .... Akan kurebut kembali setiap jengkal tanah yang dihancurkan oleh celah lainnya."
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 3",
+        "text": "Aku sudah cukup banyak melihat gunung dan sungai di Wuling, dan menikmati makanannya sampai kenyang. Semuanya baru bagiku dan aku menghadapi berbagai tantangan tak terduga. Kau membawaku keluar dari kota yang terkubur itu ... dan rasanya seperti kesempatan hidup kedua."
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 4",
+        "text": "Aku selalu bermimpi buruk. Tapi, setelah memejamkan mata pada malam pertamaku di Dijiang, jeritan pilu dan perintah galak itu lenyap. Sebagai gantinya, aku bermimpi tentang diriku yang hampa dan sebuah suara yang memberitahuku bahwa aku memikul harapan bagi .... Ehem. Maaf, aku malah curhat."
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 5",
+        "text": "Dari geladak ini, aurora di atas Talos-II terlihat sama seperti yang ada di Zona Eksklusi Wuling Utara. Pemandangan gemerlap yang menyembunyikan luka berlumuran darah .... Tak akan kubiarkan celah mana pun melukai negeri ini lagi."
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 6",
+        "text": "Operator Endfield berasal dari seluruh penjuru dunia. Banyak yang merupakan prajurit tangguh, tapi yang lebih berharga adalah orang-orang biasa yang mengabdikan diri demi kesejahteraan orang lain. Seperti kata pepatah, dari tempat tinggi, pandangan akan lebih jauh dan lebih luas daripada di tanah .... Tekadku benar-benar terpicu di sini, Endmin."
+      },
+      {
+        "title": "Menawarkan Hadiah",
+        "text": "Hanya beberapa barang lokal. Aku tak sengaja menyiapkannya. Aku hanya ... hmm, punya terlalu banyak."
+      },
+      {
+        "title": "Menerima Hadiah",
+        "text": "Terima kasih. Aku akan menyiapkan sesuatu sebagai balasannya. Tapi, aku ... tidak terlalu pandai memilih hadiah ... jadi jangan berharap terlalu banyak."
+      },
+      {
+        "title": "Dialog Kepercayaan 1",
+        "text": "Semuanya baik-baik saja di sini, tapi akan ... lebih menyenangkan kalau kita punya beberapa teman kecil yang pintar. Blitzcrash menemaniku melewati masa latihan yang terburuk. Dia tumbuh dari seekor howlerbeast kecil menjadi rekan yang bisa diandalkan .... Kami tak lama bersama, tapi kadang aku masih merindukannya .... Kawanan pantail di Wuling juga menyenangkan .... Apa di Dijiang boleh bawa hewan peliharaan? Aku akan melatih mereka dengan standar militer."
+      },
+      {
+        "title": "Dialog Kepercayaan 2",
+        "text": "Summit dan Phrase punya kelebihannya masing-masing. Summit unggul dalam komando sedangkan Phrase ahli dalam pertarungan. Mereka saling melengkapi dengan baik. Salah satu dari mereka bisa saja jadi Ketua Satgas pada akhirnya .... Kenapa aku jadi membahas ini? Hmm .... Setelah melihat Chen, aku jadi berpikir apakah ada jalan yang lebih luas untukku juga .... Itu ... itu hanya pemikiranku saja."
+      },
+      {
+        "title": "Dialog Kepercayaan 3",
+        "text": "Hm? Kebetulan sekali, Endmin .... Aku biasanya menghabiskan waktu luangku sendirian. Tempat yang sepi membuatku bisa memikirkan orang-orang dari kampung halamanku, boneka latihan di Balai Tanjian, kue beras bertabur gula .... Tapi, semua kenangan ini terlalu indah. Kenangan ini membuatmu melambat, lengah, dan terjebak di dalamnya .... Aku tak mau orang lain melihatku seperti ini. Kalau kau .... Setelah dipikir-pikir, kaulah yang membuatku lembek. Yah, sekalian saja kita nikmati waktu istirahat rahasia ini bersama-sama."
+      },
+      {
+        "title": "Dialog Kepercayaan 4",
+        "text": "Ibu dulu sering mengepang rambutku dengan berbagai macam pita. Aku tak suka dikepang. Aku selalu pulang dalam keadaan kotor, dengan rambut yang sangat berantakan. Ayah mengajariku tentang susunan Tianshi menggunakan ranting. Walau tak ada yang kupahami, kami sering bermain hingga larut malam atau menghitung bunga pir di bawah sinar rembulan sampai ibu menemukan kami .... Aneh. Aku hampir tak ingat masa kecilku, tapi momen-momen kecil seperti ini masih kuingat dengan sangat jelas."
+      },
+      {
+        "title": "Dialog Kepercayaan 5",
+        "text": "Bisakah kau ... mengikat rambutku? Kau tahu harus pakai pita yang mana. Aku ingin menyelesaikan buku ini. Di Terusan Yinglung, buku adalah salah satu cara untuk mengisi waktu .... Kapan terakhir kali aku minta orang lain mengikatkan rambutku ...? Hmm .... Tidak ingat. Tadinya mau kupotong saja, tapi aku masih belum mantap. Mm .... Terima kasih. Rapi sekali .... Apa selama ini kau memperhatikan caraku mengikat rambut? Hm? Kenapa raut wajahmu begitu?"
+      },
+      {
+        "title": "Obrolan 1",
+        "text": "Aku tak tahu ... tren yang sedang digandrungi orang-orang. Aku tak sempat memikirkannya. Tapi ... Tianshi Zhuang bilang, aku harus lebih fokus pada diriku sendiri, misalnya, mencari hobi atau semacamnya. Jadi, soal hobi ... latihan jelas tidak termasuk. Mungkin aku bisa minta Paman Pan mengajariku satu keahlian. Tapi, aku tak bisa seperti Chen dan bersikap positif sepanjang hari. Dia itu langka. Pencarian hobi sepertinya tantangan baru."
+      },
+      {
+        "title": "Obrolan 2",
+        "text": "Walau aku bukan anggota Satuan Tugas, aku masih berlatih dengan standar Yinglung, agar bisa mendukung misi darurat kalau sewaktu-waktu terjadi. Aku masih terus berkomunikasi dengan para anggota Yinglung, dan aku percaya mereka bisa menyelesaikan tugas, bahkan walau tanpa aku."
+      },
+      {
+        "title": "Obrolan 3",
+        "text": "Chen ingin latih tanding denganku lagi .... Dulu aku sering menang, tapi dia berkembang pesat—saking pesatnya hingga sempat membuat anggota Yinglung lainnya frustrasi. Sayangnya, aku masih lebih tangkas. Tapi ... setelah menjadi Ketua Satgas, aku lebih banyak menghabiskan waktu untuk hal lain daripada latihan pribadiku. Jadi, sekarang aku tak terlalu yakin lagi. Mungkin kami memang butuh bertarung untuk mencari tahu siapa yang lebih kuat .... Heh. Sebenarnya aku menantikannya."
+      },
+      {
+        "title": "Obrolan 4",
+        "text": "Tianshi Zhuang mengirimiku salinan rencana rekonstruksi Zona .... Dia tahu itu sangat berarti bagiku. Tapi, aku masih punya tugas Ketua Satgas, baik di Wuling maupun di Endfield .... Aku sudah puas bisa menyegel Celah itu dan merebut kembali rumah kami sebagai orang Wuling. Dengan Pabrik AIC, aku yakin para Tianshi akan memulihkan jalanan seperti sedia kala. Kalau sempat ... aku akan kembali dan melihatnya sendiri."
+      },
+      {
+        "title": "Obrolan 5",
+        "text": "Ada sedikit masalah, Endmin. Aku dirawat oleh beberapa pria dan wanita paruh baya saat masih di Wuling. Sebagai seorang prajurit yang bisa mati kapan saja, aku merasa tidak pantas menjalin ikatan atau membuat orang sedih, jadi aku menjaga jarak. Tapi, sekarang aku memikirkan perbuatanku dan agak merasa bersalah .... Jadi, bagaimana cara menebusnya? Tanya Chen? Aku tak mau bertanya kepadanya. Endmin, apa kau punya waktu untuk ini?"
+      },
+      {
+        "title": "Topik: Chen Qianyu",
+        "text": "Terkadang aku memikirkan Chen setelah dia pergi. Sejak saat itu, aku belum pernah bertemu orang sepertinya, yang ucapannya selaras dengan tindakannya. Dia tak cocok di Yinglung, tapi ... orang-orang pasti akan lebih memercayainya. Walau ada yang harus bertahan dalam kegelapan, yang lain harus berdiri di tempat terang. Aku tak menyesali keputusan apa pun yang dulu kuambil. Pilihanku akan tetap sama, bahkan walau harus mulai dari awal."
+      },
+      {
+        "title": "Topik: Pita Rambut",
+        "text": "Tidak, aku belum pernah coba gaya lain .... Orang lain pernah menyarankan beberapa gaya. Aku menghargainya, tapi masih lebih suka gaya rambutku ini. Kau tahu apa artinya ini bagiku. Tapi ... mungkin sudah saatnya mencoba gaya lain .... Endmin, menurutmu warna apa yang paling mewakili semua hal yang telah kita lalui bersama?"
+      },
+      {
+        "title": "Topik: Bayang-bayang Hawar",
+        "text": "Saat Æther merenggut nyawa, energinya merekam gema keputusasaan dan kengerian yang memekakkan telinga .... Tapi, kalau harapan bisa bertahan bersama dengan kebaikan timbal balik dan pengorbanan tanpa pamrih ... tak ada “Kreator” yang bisa mengalahkan kita. Inilah makna dari eksistensi kita, dan itu ... sangat menyentuh hatiku."
+      },
+      {
+        "title": "Topik: Alleikhreos",
+        "text": "Musuh yang benar-benar luar biasa, yang membawa lebih banyak misteri. Kata-katanya tak akan membuatku meragukanmu atau Endfield, tapi entitas ini jelas ancaman serius bagi Sentrapolis. Kalau musuh tak dikenal dari Perang Aggelos itu kembali lagi ... berjanjilah untuk menjadikanku pedang pertamamu yang akan menghancurkan mereka."
+      },
+      {
+        "title": "Topik: Zona Eksklusi Wuling Utara",
+        "text": "Waktu tak menghilangkan kerinduan orang Wuling akan rumah. Perasaan seperti itu perlahan-lahan menumpuk seiring waktu dan membuat mereka makin dekat ke rumah yang terpaksa mereka tinggalkan .... Zona Eksklusi tak lagi terlarang. Tapi, tempat itu telah sepenuhnya berubah dan ada banyak hal yang tak bisa dikembalikan seperti semula. Walau begitu ... kita harus hidup demi hari esok. Bukankah ini yang kauajarkan kepadaku?"
+      },
+      {
+        "title": "Topik: Si",
+        "text": "Nona Si benar-benar luar biasa, dan dalam arti yang sebenarnya. Dulu, dia memberikan kekuatannya kepada penduduk Hongshan dan membantu mendirikan Satuan Tugas Khusus Yinglung. Tapi, dia tak memegang posisi komando resmi di Yinglung ... dan tak punya gelar apa pun di HAS. Nona Si hanya membimbing para anggota Yinglung sebagai sesama “rekan”. Banyak dari kami belum pernah bertemu langsung dengannya, bahkan setelah diberhentikan. Tapi, dia sangat terlibat dalam operasi ini ...."
+      },
+      {
+        "title": "Sumber Daya/Barang Koleksi Terdeteksi 1",
+        "text": "Ada pasokan tak terduga di sana. Ayo kita periksa dulu aman atau tidaknya."
+      },
+      {
+        "title": "Sumber Daya/Barang Koleksi Terdeteksi 2",
+        "text": "Pasokan strategis terdeteksi di lokasi target. Menunggu perintah."
+      },
+      {
+        "title": "Area yang Belum Dijelajahi Terdeteksi",
+        "text": "Di depan sana ada zona pertarungan tak dikenal."
+      },
+      {
+        "title": "Musuh Kuat Ditemukan",
+        "text": "Ada musuh yang sangat berbahaya. Akan terus mengawasi. Minta izin untuk menyerang."
+      },
+      {
+        "title": "Penambangan 1",
+        "text": "Prioritas utama kita sekarang adalah mengambil bijih."
+      },
+      {
+        "title": "Penambangan 2",
+        "text": "Itu salah satu cara menjaga pasokan operasi kita."
+      },
+      {
+        "title": "Membuka Kerat",
+        "text": "Pasokan berkualitas tinggi berhasil diamankan."
+      },
+      {
+        "title": "Mendapatkan Aurylene",
+        "text": "Aurylene .... Ambil entitas itu. Nanti kita amankan dalam perangkat khusus."
+      },
+      {
+        "title": "Menyingkirkan Hawar",
+        "text": "Hawar berhasil disingkirkan. Jalan sudah aman."
+      },
+      {
+        "title": "Istirahat",
+        "text": "Waktu istirahat sudah selesai. Ayo kita pergi."
+      },
+      {
+        "title": "Penggunaan Taktis 1",
+        "text": "Menggunakan item taktis!"
+      },
+      {
+        "title": "Penggunaan Taktis 2",
+        "text": "Penanganannya tepat waktu."
+      },
+      {
+        "title": "Memperingatkan Rekan Tim",
+        "text": "Awas! Serangan datang!"
+      },
+      {
+        "title": "Cedera",
+        "text": "Ini belum selesai .... Aku masih kuat bertarung."
+      },
+      {
+        "title": "0 HP",
+        "text": "Aku tak boleh ... gugur di sini ...."
+      },
+      {
+        "title": "Penyemangat Tim 1",
+        "text": "Luar biasa."
+      },
+      {
+        "title": "Penyemangat Tim 2",
+        "text": "Mengagumkan. Pertahankan."
+      },
+      {
+        "title": "Respons Penyemangat 1",
+        "text": "Ini performa standar bagi anggota Yinglung."
+      },
+      {
+        "title": "Respons Penyemangat 2",
+        "text": "Krisis di depan mata menuntut kemampuan terbaik kita."
+      },
+      {
+        "title": "Mulai Pertarungan 1",
+        "text": "Target terkonfirmasi. Amankan AO."
+      },
+      {
+        "title": "Mulai Pertarungan 2",
+        "text": "Sudah di posisi. Pertahankan komunikasi."
+      },
+      {
+        "title": "Menang Pertarungan 1",
+        "text": "Tim ini sama kuatnya dengan anggota Yinglung. Mengesankan."
+      },
+      {
+        "title": "Menang Pertarungan 2",
+        "text": "Kita berhasil menambah progres."
+      },
+      {
+        "title": "Menang Pertarungan 3",
+        "text": "Mari pertahankan performa luar biasa ini."
+      },
+      {
+        "title": "Menang Pertarungan 4",
+        "text": "Tak apa, kerugian masih dalam batas wajar. Bagus, Teman-teman."
+      },
+      {
+        "title": "Kalah Bertarung",
+        "text": "Ini hanya rintangan kecil. Kemenangan dan kekalahan adalah bagian dari misi."
+      },
+      {
+        "title": "Final Strike 1",
+        "text": "Hancurlah!"
+      },
+      {
+        "title": "Final Strike 2",
+        "text": "Tembuslah!"
+      },
+      {
+        "title": "Skill Tarung 1",
+        "text": "Hancurkan barisan mereka!"
+      },
+      {
+        "title": "Skill Tarung 2",
+        "text": "Area disegel!"
+      },
+      {
+        "title": "Skill Tarung 3",
+        "text": "Kerahkan formasi."
+      },
+      {
+        "title": "Skill Kombo Siap 1",
+        "text": "Formasi siap."
+      },
+      {
+        "title": "Skill Kombo Siap 2",
+        "text": "Kau akan kulindungi!"
+      },
+      {
+        "title": "Penggunaan Kombo 1",
+        "text": "Serang dan tundukkan!"
+      },
+      {
+        "title": "Penggunaan Kombo 2",
+        "text": "Temui ajalmu di sini."
+      },
+      {
+        "title": "Penuntas 1",
+        "text": "Rasakan ini!"
+      },
+      {
+        "title": "Penuntas 2",
+        "text": "Titik lemah ditargetkan!"
+      },
+      {
+        "title": "Ultimate 1",
+        "text": "Di sini, aku mengendalikan pasang surutnya!"
+      },
+      {
+        "title": "Ultimate 2",
+        "text": "Demi bumi yang disinari mentari dan penuh kehidupan!"
+      },
+      {
+        "title": "Ultimate 3",
+        "text": "Kekacauan akan diredam!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

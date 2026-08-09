@@ -129,7 +129,337 @@
         "name": "Sports",
         "description": "Sports: Game of the Hunt\nTracking down a prey is a long process, but Rossi is very patient. No need to rush, for we are close to the scent of blood."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Operation Prep 1",
+        "text": "This is my chance to show Endmin what I'm made of!"
+      },
+      {
+        "title": "Operation Prep 2",
+        "text": "I won't let anyone down!"
+      },
+      {
+        "title": "Adding to Team 1",
+        "text": "Rossi from the Pack. E-Endmin... What's our mission?"
+      },
+      {
+        "title": "Adding to Team 2",
+        "text": "I'll do my absolute best, Endmin!"
+      },
+      {
+        "title": "Switching Weapon",
+        "text": "Ah! This weapon is so cool! I've never seen anything like this back in the clan!"
+      },
+      {
+        "title": "Switching Gear",
+        "text": "It's a bit hard to move in... Oh? You picked it out for me, Endmin? I'll take it then! Hmm... There must be some deeper meaning behind this..."
+      },
+      {
+        "title": "Ability Matrix Activation",
+        "text": "I am a descendant of the Pack!"
+      },
+      {
+        "title": "Watching Combat Records",
+        "text": "So that's how seasoned warriors fight... Hmm ... like this ... and then like that... Okay, I think I've got it now!"
+      },
+      {
+        "title": "Operator Promotion 1",
+        "text": "Pro ... motion? Ah, I get it! We have similar ceremonies back in the clan, though I've never actually experienced one myself. You know what? This isn't ... half bad."
+      },
+      {
+        "title": "Operator Promotion 2",
+        "text": "Hehe, I'm doing pretty well, right? Gotta be this good to shoulder the clan's responsibilities. After all, I'm gonna make the Pack famous across Talos-II!"
+      },
+      {
+        "title": "Operator Promotion 3",
+        "text": "Promotions are a piece of cake for someone like me! When's the next one? I'm totally ready! Gotta wait for the right opportunity? Well ... alright then."
+      },
+      {
+        "title": "Operator Promotion 4",
+        "text": "Doesn't this prove I'm the top operator now? Wonder if Catello had it this easy. Next time I see him, I'm totally rubbing it in his face!"
+      },
+      {
+        "title": "Operator Reporting for Duty",
+        "text": "I'm Rossina, granted name Wulfperl, meaning the Pack's treasure! You'd better remember that! Ah ... Endmin, you can call me whatever you prefer..."
+      },
+      {
+        "title": "Standing by 1",
+        "text": "The hour of bloodshed is upon us. It's time to hunt. I mean ... it's time to eat."
+      },
+      {
+        "title": "Standing by 2",
+        "text": "Prey, beware! I am the paws of the Pack! ...Wait, that doesn't sound right? Anyway... Awoo!"
+      },
+      {
+        "title": "Assigning to Facility",
+        "text": "Piece of cake for an elite like me!"
+      },
+      {
+        "title": "Greeting 1",
+        "text": "E-Endmin! Do you have any missions for me today?"
+      },
+      {
+        "title": "Greeting 2",
+        "text": "Endmin, could you share some leadership experience with me?"
+      },
+      {
+        "title": "Dijiang Idle Chatter 1",
+        "text": "How does Endfield manage so many operators? Something about ... systems? And some kind of ... central control? I can't figure it out ... but it's definitely worth learning."
+      },
+      {
+        "title": "Dijiang Idle Chatter 2",
+        "text": "The elder wolves from the clan told me to visit Dijiang more often. They said I could learn about leadership here, especially by your side. But getting a chance to catch you is just so hard!"
+      },
+      {
+        "title": "Dijiang Idle Chatter 3",
+        "text": "The big brothers and sisters on Dijiang always treat me like a kid! But I'm already an elite of the Pack. Next time I'll make it clear to them, this has to stop! ...Though the snacks they give me are really good ..."
+      },
+      {
+        "title": "Dijiang Idle Chatter 4",
+        "text": "Clan affairs come first! But if anything urgent happens to Endfield, I'll definitely rush over right away. It's just ... I'm not sure if you really need my help... You're so capable, you could probably handle crises easily, even without me. But I still want to be helpful... What should I do..."
+      },
+      {
+        "title": "Dijiang Idle Chatter 5",
+        "text": "I heard Catello could be found on Dijiang, but why's he so elusive here too? Hmm ... guess old habits die hard? If I can't find him soon, Nonno Rozzan's gonna be furious. I really don't wanna see him angry... Endmin, do you know where I might find Catello?"
+      },
+      {
+        "title": "Dijiang Idle Chatter 6",
+        "text": "Why can't I find any records about you on Dijiang, either? I finally learned how to use this so-called Intel Archive, but all I get are useless results or \"No Authority\" messages... Ugh... Endmin, do you have time to tell me about your heroic deeds yourself?"
+      },
+      {
+        "title": "Offering Gifts",
+        "text": "Endmin, these are the spoils I've collected! They're all for you! Don't worry, I'll get even more!"
+      },
+      {
+        "title": "Accepting Gifts",
+        "text": "This is ... for me? Can I really have it? Thank you! I'll make sure to understand the meaning behind your gift!"
+      },
+      {
+        "title": "Trust Dialog 1",
+        "text": "This? Well ... I'm just taking notes on your words and actions, Endmin. I think even the details are worth learning from. Ah ... please don't look! These are personal notes!"
+      },
+      {
+        "title": "Trust Dialog 2",
+        "text": "I-I've heard so many legends about you. I've always wondered what kind of person you'd be! But now that I've actually met you, I feel like you're even more admirable than the stories say. What exactly? Well ... your methods, your leadership... I-I don't even know how to put it into words..."
+      },
+      {
+        "title": "Trust Dialog 3",
+        "text": "Children of the Pack participate in the coming-of-age ceremony at thirteen. The clan gathers to choose a granted name for the new \"wolf\". Catello's name is \"Wulfgard\", and mine is \"Wulfperl\". I love the name the clan gave me. Every time I say it, I can feel the blood of the Pack flowing through me... What do you think of it, Endmin?"
+      },
+      {
+        "title": "Trust Dialog 4",
+        "text": "Endmin, I've been doing pretty well on missions lately, right? So ... could I maybe ask for a little reward? Ah ... nothing too fancy, just chatting with me more would be enough! ...Is that okay?"
+      },
+      {
+        "title": "Trust Dialog 5",
+        "text": "I know I'm not skilled enough yet to lead the Pack, but the elders insist I handle the clan's affairs... So I want to learn more by your side, Endmin. I want to learn how to become someone trustworthy like you, and Perlica, and M3... I'll make everyone see me in a new light!"
+      },
+      {
+        "title": "Chat 1",
+        "text": "The big brothers and sisters at Endfield have taught me a lot! Perlica explained how Protosyncs work, Avywenna took me to TGCC's clothing and jewelry stores, and ... and Xaihi said she wants to discuss quadratic time complexity with me... I don't even know what that means."
+      },
+      {
+        "title": "Chat 2",
+        "text": "The big brothers and sisters here all take good care of me. They even give me gifts. But I've passed the Pack's trials! I'm a real wolf! A mature wolf shouldn't like childish things. They should prefer daggers and coins! So I've collected plenty of those. Once I grow a bit taller, everyone can finally trust me with the most dangerous missions!"
+      },
+      {
+        "title": "Chat 3",
+        "text": "I always thought Nonno Rozzan was the strongest person in the world, but he kept saying \"there's always someone greater\" and mentioned you all the time, Endmin. Later, I heard tons of legendary stories about you elsewhere. And I was like, \"Wow, we actually got someone like you out there?!\" I've always wanted to see what you're really like. Ever since I heard you woke up, I've been planning to surprise you one day ... hehe."
+      },
+      {
+        "title": "Chat 4",
+        "text": "My first dagger was a reward after an emergency hunt! The box it came in was all shiny and golden, I've kept it safe ever since. This one's my favorite too. I always carry it with me, though it's not very sharp, good mostly for cutting fruit. If you'd like it, Endmin ... well ... I'll give it to you once I bring the box along too!"
+      },
+      {
+        "title": "Chat 5",
+        "text": "About my childhood... The Pack was always caught in conflicts with the Bonekrushers. It was my brother who took me around seeking medical help, and the clan members also... Oh! Ah ... I shouldn't be talking about this in front of you! Forget it, Endmin. Let's talk about you instead! I've heard that..."
+      },
+      {
+        "title": "Topic: The Endministrator",
+        "text": "\"Originium will carve a path for us.\" Ah... I-I was just practicing... Oh, no, no... Will you hate me for this? I know learning from you isn't just about copying... I just thought ... it sounded really cool..."
+      },
+      {
+        "title": "Topic: Codename",
+        "text": "As a Pack member, I could use my granted name as a codename like my brother does, but ... I haven't really been called that by anyone outside the clan yet, so it might feel a bit embarrassing. And \"Rossina\" just sounds too childish ... no way I'm using that! I ended up going with \"Rossi\" as my codename, after the color of my cloak."
+      },
+      {
+        "title": "Topic: The Bonekrusher Clan",
+        "text": "I won't let a single one of those Bonekrusher brutes get away! This is a blood feud between the Pack and the Bonekrushers. Too many wolves, too many family members, died at their hands just to save me. This is the Pack's vengeance, and mine too. We're the clan that holds grudges longest in this world, and one day, we will settle this score!"
+      },
+      {
+        "title": "Topic: Cape",
+        "text": "It's stained with the blood of my kindred ... but to me, every time I touch it, I feel an incredible sense of peace, as if they never really left. This cloak burns, reminding me never to forget the vendetta, but it also gives me courage, and the warmth of family... Yes, they're always with me."
+      },
+      {
+        "title": "Topic: Collectibles",
+        "text": "I used to keep all the daggers and coins I collected in a special treasure box, but I lost it during the move… What's worse is it had some really embarrassing stuff inside — crafts I made as a kid. It took me forever to find the box again. Now I can store everything safely on Dijiang! Better yet, I can use storing things as an excuse to hang out with the big brothers and sisters here. No … I mean, to study here!"
+      },
+      {
+        "title": "Topic: Wilderness Dwellers",
+        "text": "Everything people do in the wilderness is just to survive. Sometimes I saw kids my age doing terrible things just to get by... Sometimes even Landbreakers took desperate risks simply to stay alive. I think everyone should be able to live by their own choices. Endmin, can Endfield change all this, so those kids can pursue their dreams like I do?"
+      },
+      {
+        "title": "Resource/Collectible Detected 1",
+        "text": "Trust me, something good is over there!"
+      },
+      {
+        "title": "Resource/Collectible Detected 2",
+        "text": "The Pack never overlooks any resources in the wild. Keep an eye on that area!"
+      },
+      {
+        "title": "Unexplored Area Detected",
+        "text": "There's a strange smell over there. Let's go check it out!"
+      },
+      {
+        "title": "Powerful Enemy Discovered",
+        "text": "Smells like danger. Should we engage?"
+      },
+      {
+        "title": "Mining 1",
+        "text": "Can you spare a few of those stones for me? I want to inlay them into my dagger."
+      },
+      {
+        "title": "Mining 2",
+        "text": "Let's do this together. We'll finish this work in no time!"
+      },
+      {
+        "title": "Opening a Crate",
+        "text": "Hmm ... I was thinking if it won't open, maybe I could try biting it."
+      },
+      {
+        "title": "Acquiring Aurylene",
+        "text": "Why do some Aurylene float around while others just stay still? It's marvelous."
+      },
+      {
+        "title": "Eliminating the Blight",
+        "text": "All done! No more of that annoying Blight!"
+      },
+      {
+        "title": "Rest",
+        "text": "Eat well, sleep well, rest well. That's the wisdom of the Pack!"
+      },
+      {
+        "title": "Tactical Use 1",
+        "text": "Quick, use these to recover!"
+      },
+      {
+        "title": "Tactical Use 2",
+        "text": "I feel much better now!"
+      },
+      {
+        "title": "Danger Warning",
+        "text": "Careful! Something's coming!"
+      },
+      {
+        "title": "Injured",
+        "text": "No time ... to lick my wounds now..."
+      },
+      {
+        "title": "0 HP",
+        "text": "The Pack ... won't let this slide..."
+      },
+      {
+        "title": "Team Encouragement 1",
+        "text": "Nice hit!"
+      },
+      {
+        "title": "Team Encouragement 2",
+        "text": "Whoa! Perfect teamwork!"
+      },
+      {
+        "title": "Encouragement Response 1",
+        "text": "Hehehe, I've got better tricks up my sleeve!"
+      },
+      {
+        "title": "Encouragement Response 2",
+        "text": "This is the fight we want!"
+      },
+      {
+        "title": "Combat Begins 1",
+        "text": "The blood of the Pack is boiling!"
+      },
+      {
+        "title": "Combat Begins 2",
+        "text": "Wouldn't wanna miss out on this hunt!"
+      },
+      {
+        "title": "Combat Victory 1",
+        "text": "The name of the Pack will echo across the land!"
+      },
+      {
+        "title": "Combat Victory 2",
+        "text": "Learned your lesson? This is what happens when you mess with the Pack!"
+      },
+      {
+        "title": "Combat Victory 3",
+        "text": "Heh-heh-heh. With me around, victory is a sure thing!"
+      },
+      {
+        "title": "Combat Victory 4",
+        "text": "They bit deep, but the Pack isn't afraid of more scars!"
+      },
+      {
+        "title": "Combat Defeat",
+        "text": "This little setback means nothing... I, Rossina won't give up!"
+      },
+      {
+        "title": "Final Strike 1",
+        "text": "Get ripped!"
+      },
+      {
+        "title": "Final Strike 2",
+        "text": "Tremble!"
+      },
+      {
+        "title": "Battle Skill 1",
+        "text": "Tear them apart!"
+      },
+      {
+        "title": "Battle Skill 2",
+        "text": "Hunting time!"
+      },
+      {
+        "title": "Battle Skill 3",
+        "text": "Scorching claws!"
+      },
+      {
+        "title": "Combo Skill Ready 1",
+        "text": "We'll hunt them down!"
+      },
+      {
+        "title": "Combo Skill Ready 2",
+        "text": "I'll make them fear!"
+      },
+      {
+        "title": "Combo Casting 1",
+        "text": "No escape!"
+      },
+      {
+        "title": "Combo Casting 2",
+        "text": "I got you!"
+      },
+      {
+        "title": "Finisher 1",
+        "text": "Down you go!"
+      },
+      {
+        "title": "Finisher 2",
+        "text": "Awoo!"
+      },
+      {
+        "title": "Ultimate 1",
+        "text": "Seethe, blood of the Pack!"
+      },
+      {
+        "title": "Ultimate 2",
+        "text": "The blade is me!"
+      },
+      {
+        "title": "Ultimate 3",
+        "text": "Wolf spirits, stand with me."
+      }
+    ]
   },
   "potentials": {
     "potential1": {

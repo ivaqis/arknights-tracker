@@ -117,7 +117,345 @@
         "name": "Creatività",
         "description": "Creatività: saetta delle terre selvagge\nLei è la luce e l'ombra della Cintura, e la sua moto lascia tracce nella neve e nella sabbia. Tuttavia, questo segreto l'ha condiviso solo con te."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Preparazione all'operazione 1",
+        "text": "Tutti gli operatori a rapporto. La squadra è pronta per la missione."
+      },
+      {
+        "title": "Preparazione all'operazione 2",
+        "text": "Squadra anti-crisi Endfield pronta all'azione."
+      },
+      {
+        "title": "Aggiunta alla squadra 1",
+        "text": "Sto trasferendo l'autorità di comando, Endministrator."
+      },
+      {
+        "title": "Aggiunta alla squadra 2",
+        "text": "Guidaci nella prossima operazione, Endministrator."
+      },
+      {
+        "title": "Cambio arma",
+        "text": "È tempo di elaborare tattiche ottimali per l'uso di quest'arma."
+      },
+      {
+        "title": "Cambio equipaggiamento",
+        "text": "Il frutto del sistema industriale automatizzato."
+      },
+      {
+        "title": "Attivazione matrice delle abilità",
+        "text": "Ora devo solo mettere a punto i dettagli... per massimizzare i vantaggi delle nostre vittorie."
+      },
+      {
+        "title": "Visione delle registrazioni di combattimenti",
+        "text": "Un tempo, combattevamo senza arrenderci... perché è nostro desiderio assistere al tuo ritorno."
+      },
+      {
+        "title": "Promozione operatore 1",
+        "text": "La tua approvazione conta molto per me, Endministrator. Mi impegnerò sempre di più."
+      },
+      {
+        "title": "Promozione operatore 2",
+        "text": "Anche se sono ancora giovane e ho poca esperienza, ho le idee chiare. Adempierò ai miei doveri da supervisora della Endfield Industries."
+      },
+      {
+        "title": "Promozione operatore 3",
+        "text": "Ancora una volta, hai riposto la tua fiducia in me, Endministrator... Non deluderò le tue aspettative."
+      },
+      {
+        "title": "Promozione operatore 4",
+        "text": "Sto bene. Le tue parole di incoraggiamento mi hanno provocato... nostalgia del passato. Prima, era l'unica ragione che mi spingeva ad andare avanti. Ora, sono lieta di poter dirigere la Endfield Industries ed essere al tuo fianco."
+      },
+      {
+        "title": "Operatore a rapporto",
+        "text": "Ho sempre saputo che ci avresti condotto sulla strada giusta ancora una volta. Ti do il bentornato alla Endfield Industries, Endministrator."
+      },
+      {
+        "title": "Attesa 1",
+        "text": "Pronta a partire."
+      },
+      {
+        "title": "Attesa 2",
+        "text": "Operatrice Perlica in attesa di comandi."
+      },
+      {
+        "title": "Assegnazione a una struttura",
+        "text": "Un'assegnazione efficiente. Farò del mio meglio."
+      },
+      {
+        "title": "Saluto 1",
+        "text": "Come ti senti, Endministrator?"
+      },
+      {
+        "title": "Saluto 2",
+        "text": "Non strafare, Endministrator. Ricordati di concederti sempre un po' di riposo."
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 1",
+        "text": "Dal tuo risveglio, sulla Dijiang si respira un'aria sempre più vivace... E questo riaccende le mie speranze per il futuro, Endministrator."
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 2",
+        "text": "Sembri molto più in forma, Endministrator. Parla pure con me, se hai bisogno di qualcosa."
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 3",
+        "text": "Le tue necessità hanno la priorità per noi, Endmin. Metterò volentieri da parte gli altri compiti per soddisfarle... o chiederò a Fiona di occuparsene."
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 4",
+        "text": "L'anello centrale è sempre molto affollato. È un simbolo dei nostri doveri verso questo mondo. Per oltre un secolo, generazioni di Endfielder si sono dedicate completamente a restituire la vita alla Cintura civilizzata. Forse verrà il giorno in cui la Dijiang potrà finalmente atterrare e godersi il meritato riposo nel porto sicuro che abbiamo costruito."
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 5",
+        "text": "Sono tanti gli operatori che non passano molto tempo a bordo della Dijiang, soprattutto la nostra élite. La Cintura civilizzata ha un disperato bisogno di loro per occuparsi dei pericoli in agguato, mentre questo rifugio orbitale può fare a meno di loro. In ogni caso, li incontrerai presto. Quando sarà il momento, farò le dovute presentazioni."
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 6",
+        "text": "L'ultima volta che ho avuto una conversazione del genere, ero una ragazzina alta appena la metà di ora. I tempi sono cambiati. La Dijiang ha attraversato tanti cambiamenti e io sono cresciuta... Ma tu, Endministrator... rimani sempre uguale a prima."
+      },
+      {
+        "title": "Offerta regali",
+        "text": "Ho richiesto un set di rifornimenti per te, Endmin, spero ti sia utile. Certe volte, lavori più del dovuto. Ma ricorda che puoi sempre contare su di me e sulla Endfield Industries."
+      },
+      {
+        "title": "Accettazione regali",
+        "text": "Lo apprezzo molto, Endmin. Terrò caro questo dono."
+      },
+      {
+        "title": "Dialogo fiducia 1",
+        "text": "Endmin, ricorda le tue visite mediche e cerca di non esagerare con il lavoro. Cosa più importante, non abusare mai delle tue Arti di Originium. Se altri operatori dovessero richiedere ancora la tua assistenza per aggiustare un robot Delta... rifiuta e basta!"
+      },
+      {
+        "title": "Dialogo fiducia 2",
+        "text": "Quando ero piccola, mi piaceva esplorare ogni angolo della Dijiang e dare un soprannome a ogni cabina. Un tempo, pensavo che non avrei mai rivisto la superficie... e sentivo che la Dijiang era casa mia. Ma, per aiutarti al meglio delle mie possibilità, ho lasciato la nave e viaggiato in tanti luoghi su Talos-II. Ora, la Dijiang mi sembra più angusta di quanto ricordassi... Ma per me, resta sempre una nave capace di conservare tutti miei ricordi."
+      },
+      {
+        "title": "Dialogo fiducia 3",
+        "text": "Chen è la prima operatrice che ho reclutato personalmente da quando sono diventata supervisora della Endfield Industries. È anche la mia migliore amica. L'ho incontrata per caso durante un progetto in collaborazione con l'ASH... Eh eh. Non faceva altro che dirmi che avevo un'espressione severa e aveva deciso di aiutarmi solo perché era preoccupata per me. Forse diceva il vero. Ero una supervisora senza esperienza e avevo tanto da imparare. Quasi non avevo tempo per concentrarmi sulle cose e sulle persone intorno a me. Il suo sorriso e la sua spontaneità probabilmente mi hanno impedito di prendere strade sbagliate."
+      },
+      {
+        "title": "Dialogo fiducia 4",
+        "text": "Non c'è bisogno di preoccuparsi, Endmin. Non prendere troppo sul serio le provocazioni di Chen: certo che ho del tempo da dedicare a me. Cosa faccio nei giorni liberi? Uhm, più che altro leggo libri di letteratura e scienze teoriche, dato che mi sono utili per il lavoro. Dici che non è una pausa se faccio cose per lavoro? Beh, allora... Mi piace sfrecciare tra le terre della frontiera, da sola sulla mia moto. Endmin... sei l'unica persona che lo sa. Gli altri operatori si preoccuperebbero, se sapessero questo segreto. Li capisco, ma una parte di me brama sentire il vento di questo pianeta."
+      },
+      {
+        "title": "Dialogo fiducia 5",
+        "text": "Sei già in piedi, Endmin? Oggi dovresti staccare prima, se hai bisogno di riposare. Ho appena visto di sfuggita la tua faccia assonnata... *Ridacchia* In realtà vedo la stessa faccia assonnata da un decennio. Sì, venivo a vedere il sarcofago con gli altri bambini, per guardarti nella pace della tua ibernazione. Ma con il passare del tempo, sono rimasta solo io. Venivo spesso: anche dopo aver superato le prove da operatrice, dopo essere diventata supervisora... Non essere triste, Endmin. Ho intenzione di dirti tutto, una volta che avremo recuperato la tua memoria."
+      },
+      {
+        "title": "Chiacchierata 1",
+        "text": "La Endfield Industries sta siglando accordi con tante organizzazioni in questo territorio. Li chiamano \"i firmatari\": la CCGT offre i rifornimenti migliori e logistica moderna, l'USLT è il compagno più affidabile nella frontiera e l'ASH è sempre sull'orlo di un'innovazione tecnologica e condividiamo le nostre scoperte scientifiche a vicenda. Alleati come questi ci permettono di resistere e rimanere saldi in questa nuova, crudele casa."
+      },
+      {
+        "title": "Chiacchierata 2",
+        "text": "Non hai mai incontrato Fiona dal vivo? Ah, la situazione di Fiona è piuttosto... speciale. Mi ha detto che le piace parlare collegandosi ai nostri sistemi di comunicazione da combattimento e teme che se tu la... incontrassi di persona, potresti iniziare a trattarla in modo diverso."
+      },
+      {
+        "title": "Chiacchierata 3",
+        "text": "Sembro una direttrice d'orchestra in combattimento? Ho preso questo modo di fare durante l'addestramento... Dicono che quelli di Leithanien, durante l'Epoca di Terra, unissero la musica al loro dono innato per le Arti. Anche il mio istruttore di Arti era, guarda caso, un musicista. La mia attitudine al combattimento non era niente di speciale, ma ci ho messo poco a padroneggiare le tecniche quando ho iniziato a interpretare il flusso delle Arti come fosse una melodia."
+      },
+      {
+        "title": "Chiacchierata 4",
+        "text": "L'aurora è visibile anche dalla Dijiang. È il fiore anomalo sbocciato su Talos-II. Il Velo del Nord è avvolto nell'Æther e fa sembrare l'aurora un muro che ostruisce il nostro cammino. Un tempo, innumerevoli anime immaginavano un'utopia dall'altro lato del muro, ma non è rimasto altro che devastazione... e nemici che occupano le rovine."
+      },
+      {
+        "title": "Chiacchierata 5",
+        "text": "Quali servizi potremmo aggiungere sulla Dijiang? Hai qualche idea, Endmin? Oh, non è niente di che, è solo un normale questionario da parte dell'ufficio acquisti. La Dijiang non ha una grande area ristoro e il nostro equipaggio non è particolarmente numeroso... I distributori automatici vanno benone, ma manca quel tocco umano... Che ne dici di un'accogliente caffetteria, Endmin? Berresti una tazza di caffè mentre sei in pausa?"
+      },
+      {
+        "title": "Argomento: il primo incontro",
+        "text": "Scusa, Endministrator... Lo so che è egoista da parte mia, ma preferirei non rievocare il nostro passato, in questo momento. Spero solo che tu riesca a ritrovare quei ricordi con le tue forze. Non è la supervisora della Endfield Industries a chiedertelo, ma io."
+      },
+      {
+        "title": "Argomento: Dijiang",
+        "text": "Notevole, vero? Se immagini il tecno-protocollo come la rete di Originium, la Dijiang sarebbe il fornitore principale di Protorig. È anche la personificazione della civiltà di Terra che ha viaggiato oltre il Portale cosmico e degli eventi successivi al nostro attraversamento. La Dijiang ha sopportato guerra e caos, e ora attraversa il mare nello spazio aperto. Forse arriverà il giorno in cui l'umanità sarà libera dalle catene della gravità... e camminerà tra le stelle, come sognavano i nostri antenati."
+      },
+      {
+        "title": "Argomento: M3",
+        "text": "Un tempo, mi rivolgevo a M3 come se fosse la mia sorella maggiore, ma poi mi ha chiesto di non farlo più quando sono diventata un'operatrice della Endfield Industries a tutti gli effetti. In verità, per me era davvero come una sorella; gentile, premurosa, positiva e abile in tutto. Non la vedo spesso sulla Dijiang, ultimamente. So che sta svolgendo una sua missione... E, se possibile, spero che la Endfield possa condividere il suo fardello."
+      },
+      {
+        "title": "Argomento: Talos-II e Terra",
+        "text": "Pochissimi sanno che questo remoto mondo di Talos-II è in realtà il luogo da cui veniamo tutti. E nonostante questa consapevolezza, quasi nessuno riesce a mettere da parte la nostalgia per Terra. Lasciare Terra per Talos-II è come quando un bambino lascia la sua soffice, comoda culla per l'abbraccio della madre... Ma per me è stato il contrario. Ero su Talos-II quando sono entrata alla Endfield e ho incontrato l'Endministrator. Ormai Terra è poco più di un simbolo della mia missione."
+      },
+      {
+        "title": "Argomento: Direttiva Zero",
+        "text": "Non ero l'unica partecipante alla Direttiva Zero. Ma nessuno conosceva la missione degli altri. In passato, avevi sempre tanti preparativi in corso, ancora prima di prendere atto della situazione. Per questo risveglio, ho ripassato l'esecuzione della Direttiva Zero innumerevoli volte... Ma quando ti ho incontrato di nuovo di persona, tutte quelle parole mi sono uscite con estrema naturalezza."
+      },
+      {
+        "title": "Argomento: sistema industriale automatizzato",
+        "text": "Negli ultimi anni la Endfield Industries si è concentrata sul sistema industriale automatizzato. Gli obiettivi del SIA si evincono dal nome e credo che tu ne abbia una grande esperienza in prima persona. Inutile dire che la nostra ossessione per il tecno-protocollo non si limita a questo. L'Originium è informazione; è la manifestazione cristallizzata di ogni idea effimera. La sua personificazione finale... ci permetterà di \"fabbricare\" e \"costruire\" ben più che semplici prodotti industriali."
+      },
+      {
+        "title": "Argomento: squadra anti-crisi Endfield",
+        "text": "Hai fondato tu la squadra anti-crisi, Endmin. È una squadra operativa speciale, che hai guidato personalmente, composta da membri d'élite conosciuti in tutta Talos-II. La guida della squadra è poi stata trasferita al Fondatore e a M3, ma lo scopo e la funzione sono rimasti gli stessi. Quando sono diventata supervisora e ho preso in mano le redini della squadra, ho sentito la pressione di dover comandare una squadra di eroi... e la loro ardente determinazione, mentre si gettavano in battaglia per i nostri obiettivi e ideali altruisti."
+      },
+      {
+        "title": "Argomento: supervisora della Endfield Industries",
+        "text": "All'epoca sentii M3 dire che la Endfield non aveva un supervisore. Era l'Endministrator a guidare l'azienda intera, mentre M3, il Fondatore e i nostri operatori d'élite fornivano il loro supporto. Questa organizzazione decisionale è stata chiamata Provenance. La Provenance gestiva i tre Nexus principali e ha mantenuto la Endfield in attività fino a oggi... La Endfield è stata costretta a cambiare durante la tua ibernazione, ma quei cambiamenti ci hanno permesso di andare avanti... ed è così che ho potuto rimanere al tuo fianco."
+      },
+      {
+        "title": "Individuazione risorsa/collezionabile 1",
+        "text": "Qualcosa sembra richiedere una maggiore attenzione..."
+      },
+      {
+        "title": "Individuazione risorsa/collezionabile 2",
+        "text": "Sembra che nei dintorni ci siano rifornimenti di valore. Teniamo gli occhi aperti."
+      },
+      {
+        "title": "Individuazione zona non esplorata",
+        "text": "Un'altra area non ancora esplorata dall'umanità."
+      },
+      {
+        "title": "Individuazione nemico potente",
+        "text": "Stai all'erta. Questo avversario costituisce una minaccia notevole."
+      },
+      {
+        "title": "Estrazione 1",
+        "text": "I minerali grezzi costituiscono le fondamenta dell'industria. Dovremmo raccoglierne ancora."
+      },
+      {
+        "title": "Estrazione 2",
+        "text": "Lascia che ti dia una mano."
+      },
+      {
+        "title": "Apertura di una cassa",
+        "text": "Un conseguimento notevole."
+      },
+      {
+        "title": "Acquisizione di Aurylene",
+        "text": "L'Aurylene è un frammento dell'universo in frantumi. Questo ha percorso enormi distanze per arrivare fin qui, proprio davanti a noi."
+      },
+      {
+        "title": "Eliminazione Contaminazione",
+        "text": "La Contaminazione non è più una minaccia per la Endfield di oggi."
+      },
+      {
+        "title": "Riposo",
+        "text": "Recupero completato. Squadra, prepariamoci a proseguire le nostre operazioni."
+      },
+      {
+        "title": "Utilizzo di gadget 1",
+        "text": "Applico la medicazione. Stiamo all'erta."
+      },
+      {
+        "title": "Utilizzo di gadget 2",
+        "text": "Condizioni stabilizzate."
+      },
+      {
+        "title": "Avviso di pericolo",
+        "text": "Attacco in arrivo! Pericolo sconosciuto!"
+      },
+      {
+        "title": "Ferita",
+        "text": "Sto bene... Concentriamoci sull'obiettivo..."
+      },
+      {
+        "title": "Esaurimento PS",
+        "text": "Proteggiti... Endmin..."
+      },
+      {
+        "title": "Incoraggiamento alla squadra 1",
+        "text": "Che tecnica eccezionale. Notevole."
+      },
+      {
+        "title": "Incoraggiamento alla squadra 2",
+        "text": "Ci muoviamo all'unisono!"
+      },
+      {
+        "title": "Risposta all'incoraggiamento 1",
+        "text": "Ce l'abbiamo fatta, come squadra."
+      },
+      {
+        "title": "Risposta all'incoraggiamento 2",
+        "text": "Questa è la forza della Endfield."
+      },
+      {
+        "title": "Inizio combattimento 1",
+        "text": "Entriamo in combattimento. Attenzione, squadra."
+      },
+      {
+        "title": "Inizio combattimento 2",
+        "text": "Tutti i valori sono nella norma."
+      },
+      {
+        "title": "Vittoria in combattimento 1",
+        "text": "Un grande risultato raggiunto grazie a un ottimo lavoro di squadra."
+      },
+      {
+        "title": "Vittoria in combattimento 2",
+        "text": "Verificate e riferite il vostro stato personale, squadra."
+      },
+      {
+        "title": "Vittoria in combattimento 3",
+        "text": "La violenza non è mai il nostro obiettivo. Proseguiamo."
+      },
+      {
+        "title": "Vittoria in combattimento 4",
+        "text": "Controllate le ferite. Assumete la formazione difensiva e preparatevi a tornare in combattimento."
+      },
+      {
+        "title": "Sconfitta in combattimento",
+        "text": "Non permetteremo che accada di nuovo..."
+      },
+      {
+        "title": "Colpo finale 1",
+        "text": "Concerto!"
+      },
+      {
+        "title": "Colpo finale 2",
+        "text": "Sequenza!"
+      },
+      {
+        "title": "Abilità di combattimento 1",
+        "text": "Bersaglio agganciato!"
+      },
+      {
+        "title": "Abilità di combattimento 2",
+        "text": "Attacco!"
+      },
+      {
+        "title": "Abilità di combattimento 3",
+        "text": "Eliminazione confermata!"
+      },
+      {
+        "title": "Abilità combo pronta 1",
+        "text": "Unità delle Arti disponibile!"
+      },
+      {
+        "title": "Abilità combo pronta 2",
+        "text": "Supporto Arti pronto!"
+      },
+      {
+        "title": "Esecuzione combo 1",
+        "text": "Avanti tutta!"
+      },
+      {
+        "title": "Esecuzione combo 2",
+        "text": "È la nostra occasione!"
+      },
+      {
+        "title": "Mossa letale 1",
+        "text": "Fuga, adesso!"
+      },
+      {
+        "title": "Mossa letale 2",
+        "text": "Coda e fine!"
+      },
+      {
+        "title": "Abilità suprema 1",
+        "text": "Inizio annientamento LA-7!"
+      },
+      {
+        "title": "Abilità suprema 2",
+        "text": "Bersaglio agganciato. Fuoco!"
+      },
+      {
+        "title": "Abilità suprema 3",
+        "text": "Sterilizziamo quest'area!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

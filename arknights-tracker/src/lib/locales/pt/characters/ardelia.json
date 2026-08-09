@@ -120,7 +120,333 @@
         "name": "Natureza",
         "description": "Natureza: Afinidade Ecológica\nO cair da chuva sobre a terra é a linguagem pela qual o mundo se renova. Tudo ganha uma nova aparência no amanhecer."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Prep Operação 1",
+        "text": "{F}Faça o que for preciso, Professora. Farei tudo o que puder para ajudar.{M}Faça o que for preciso, Professor. Farei tudo o que puder para ajudar."
+      },
+      {
+        "title": "Prep Operação 2",
+        "text": "Deixe-me ver. Onde devo coletar meus dados desta vez?"
+      },
+      {
+        "title": "Adicionando à equipe 1",
+        "text": "{F}Sinto-me muito mais segura quando a Professora está aqui comigo.{M}Sinto-me muito mais segura quando o Professor está aqui comigo."
+      },
+      {
+        "title": "Adicionando à equipe 2",
+        "text": "Sinto-me muito mais segura quando o Professor está aqui comigo."
+      },
+      {
+        "title": "Trocando de arma",
+        "text": "{F}Você poderia se afastar um pouco mais, Professora? Eu, uh... eu não quero machucá-la acidentalmente.{M}Você poderia se afastar um pouco mais, Professor? Eu, uh... eu não quero machucá-lo acidentalmente."
+      },
+      {
+        "title": "Trocando de equipamento",
+        "text": "Estudos de campo podem ser muito perigosos. Precisamos nos certificar de que estamos devidamente protegidos."
+      },
+      {
+        "title": "Ativação da Matriz de Capacidade",
+        "text": "Meu diário é como os anéis de uma árvore centenária. Ele registra cada lição que aprendi enquanto crescia."
+      },
+      {
+        "title": "Assistindo a Registros de Combate",
+        "text": "Como o inimigo pode transformar a terra em uma devastação tão... sem vida?"
+      },
+      {
+        "title": "Promoção do Operador 1",
+        "text": "Certo, Ardelia! Concentre-se nesse caminho! Continue explorando e melhorando!"
+      },
+      {
+        "title": "Promoção do Operador 2",
+        "text": "{F}Agradeço muito a sua aprovação, Professora! Vou me esforçar ainda mais e conquistar muito mais na Endfield!{M}Agradeço muito a sua aprovação, Professor! Vou me esforçar ainda mais e conquistar muito mais na Endfield!"
+      },
+      {
+        "title": "Promoção do Operador 3",
+        "text": "{F}Não se preocupe comigo, professora. Definitivamente não estou trabalhando demais. Como? E as olheiras? Ah, uh... o livro era simplesmente muito interessante. Não consegui me conter.{M}Não se preocupe comigo, professor. Definitivamente não estou trabalhando demais. Como? E as olheiras? Ah, uh... o livro era simplesmente muito interessante. Não consegui me conter."
+      },
+      {
+        "title": "Promoção do Operador 4",
+        "text": "{F}Este mundo tem tantos mistérios a serem desvendados. Deveríamos conhecê-lo melhor, assim como... assim como deveríamos aprender mais sobre nós mesmos. Não concorda, Professora?{M}Este mundo tem tantos mistérios a serem desvendados. Deveríamos conhecê-lo melhor, assim como... assim como deveríamos aprender mais sobre nós mesmos. Não concorda, Professor?"
+      },
+      {
+        "title": "Operador se apresentando para o trabalho",
+        "text": "{F}Saudações, Endministrator. Meu nome é Ardelia e sou geóloga da Rhodes Island. Meu foco atual são as correlações entre desastres geológicos e o Ætherside. Já faz um bom tempo que ouço falar de você, Endmin, e tenho tantas perguntas... Ah, tem mais uma coisa: posso me dirigir a você como minha Professora?{M}Saudações, Endministrator. Meu nome é Ardelia e sou geóloga da Rhodes Island. Meu foco atual são as correlações entre desastres geológicos e o Ætherside. Já faz um bom tempo que ouço falar de você, Endmin, e tenho tantas perguntas... Ah, tem mais uma coisa: posso me dirigir a você como meu Professor?"
+      },
+      {
+        "title": "Em espera 1",
+        "text": "{F}Continue positiva neste dia também, Professora.{M}Continue positivo neste dia também, Professor."
+      },
+      {
+        "title": "Em espera 2",
+        "text": "{F}Ouvi seus passos, Professora.{M}Ouvi seus passos, Professor."
+      },
+      {
+        "title": "Atribuindo a Instalação",
+        "text": "{F}Deixe comigo, Professora. Espero poder experimentar algo novo também.{M}Deixe comigo, Professor. Espero poder experimentar algo novo também."
+      },
+      {
+        "title": "Saudação 1",
+        "text": "{F}Professora, gostaria de compartilhar esse doce comigo?{M}Professor, gostaria de compartilhar esse doce comigo?"
+      },
+      {
+        "title": "Saudação 2",
+        "text": "{F}Ah, eu estava prestes a ir te procurar, Professora.{M}Ah, eu estava prestes a ir te procurar, Professor."
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 1",
+        "text": "{F}Tenha cuidado ao andar pela Dijiang, Professora... Há todo tipo de placas de alerta a bordo da nave e... e eu continuo tropeçando nelas. Eu simplesmente não conseguia notá-las quando estava pensando nas coisas.{M}Tenha cuidado ao andar pela Dijiang, Professor... Há todo tipo de placas de alerta a bordo da nave e... e eu continuo tropeçando nelas. Eu simplesmente não conseguia notá-las quando estava pensando nas coisas."
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 2",
+        "text": "Consigo ver muitos locais que explorei pessoalmente a bordo da Dijiang... As terras selvagens, as pradarias e o norte parecem tão pequenos daqui. A vista da órbita cobre facilmente todas as longas viagens de campo que fiz... Devo dizer que é meio emocionante estar aqui em cima — risos!"
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 3",
+        "text": "{F}Professora, você tem interesse no grupo de leitura que vou organizar amanhã? O que vamos compartilhar? Ah, pode ser qualquer coisa que você goste de ler! Falando nisso, o Sr. Krad certa vez trouxe uma revista de fotos sobre os vulcões de Talos-II. Eu a levarei para o grupo de leitura, se você tiver interesse!{M}Professor, você tem interesse no grupo de leitura que vou organizar amanhã? O que vamos compartilhar? Ah, pode ser qualquer coisa que você goste de ler! Falando nisso, o Sr. Krad certa vez trouxe uma revista de fotos sobre os vulcões de Talos-II. Eu a levarei para o grupo de leitura, se você tiver interesse!"
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 4",
+        "text": "{F}Você deve estar com fome depois de todo esse trabalho, Professora! Experimente estes. São salgadinhos de Higashi que a Srta. Akekuri me deu. Uh, na verdade, não preciso de nenhum, porque... E-eu já comi alguns. Por que isso está fechado? Ah, umm... A Srta. Akekuri me deu outra caixa!{M}Você deve estar com fome depois de todo esse trabalho, Professor! Experimente estes. São salgadinhos de Higashi que a Srta. Akekuri me deu. Uh, na verdade, não preciso de nenhum, porque... E-eu já comi alguns. Por que isso está fechado? Ah, umm... A Srta. Akekuri me deu outra caixa!"
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 5",
+        "text": "{F}Não percebeu, Professora? Você está sempre na frente, como se estivesse tentando nos proteger de qualquer perigo que esteja por vir. Às vezes, eu até precisava correr um pouco só para te acompanhar. Talvez... você não precise ir tão rápido. Estamos aqui com você e queremos ajudar também.{M}Não percebeu, Professor? Você está sempre na frente, como se estivesse tentando nos proteger de qualquer perigo que esteja por vir. Às vezes, eu até precisava correr um pouco só para te acompanhar. Talvez... você não precise ir tão rápido. Estamos aqui com você e queremos ajudar também."
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 6",
+        "text": "Toda viagem de volta à Dijiang é muito relaxante. Quando não estou compartilhando histórias da minha viagem com meus colegas, visito as Câmaras de Crescimento e vejo como as plantinhas estão. Até dou um carinho especial a elas quando tenho algum tempo livre. É um pequeno hobby meu. É tão gratificante vê-las crescer."
+      },
+      {
+        "title": "Oferta de presentes",
+        "text": "Um momento do seu tempo, Endmin? Reuni algumas lembranças durante a prospecção. Penas decorativas do Circuito Hannabit, bugigangas de jade de Hongshan e medalhas da Ordem do Juramento de Aço... Tudo para você. Espero que goste."
+      },
+      {
+        "title": "Aceitando presentes",
+        "text": "{F}Um presente? Para mim? Uau, obrigada! Vamos ver o que tem dentro... *Risada* Professora, você parece ainda mais ansiosa do que eu.{M}Um presente? Para mim? Uau, obrigada! Vamos ver o que tem dentro... *Risada* Professor, você parece ainda mais ansioso do que eu."
+      },
+      {
+        "title": "Diálogo de Confiança 1",
+        "text": "{F}Professora, você está bem? Você parece muito cansada. Por favor, não me diga que ficou acordada a noite toda de novo. Qual é, você sabe que isso é muito ruim para você... Uh-uh! Mas sem desculpas: agora é hora de descansar.{M}Professor, você está bem? Você parece muito cansado. Por favor, não me diga que ficou acordado a noite toda de novo. Qual é, você sabe que isso é muito ruim para você... Uh-uh! Mas sem desculpas: agora é hora de descansar."
+      },
+      {
+        "title": "Diálogo de Confiança 2",
+        "text": "{F}Ah, pare de mordiscar as roupas da Professora, Sr. Dolly...! Ugh. Me desculpe. Eles são tão travessos. Como? Você não consegue vê-los? Ah... O Sr. Dolly só aparece quando quer ser visto... O Sr. Dolly é o Soberano? Não. Sr. Dolly não é um nome para ninguém em particular, já que eles são um bando de Dollies... Awww, venha e conte você mesmo para a Professora! Sr. Dolly, eu sei que você sabe falar!{M}Ah, pare de mordiscar as roupas do Professor, Sr. Dolly...! Ugh. Me desculpe. Eles são tão travessos. Como? Você não consegue vê-los? Ah... O Sr. Dolly só aparece quando quer ser visto... O Sr. Dolly é o Soberano? Não. Sr. Dolly não é um nome para ninguém em particular, já que eles são um bando de Dollies... Awww, venha e conte você mesmo para o Professor! Sr. Dolly, eu sei que você sabe falar!"
+      },
+      {
+        "title": "Diálogo de Confiança 3",
+        "text": "{F}Escalei mais uma montanha hoje. A bússola geológica me ajudou a determinar a orientação e o gradiente das camadas rochosas, enquanto a picareta me ajudou a coletar amostras de rochas sedimentares para estudos ópticos e de textura... Não estou nem um pouco cansada, professora. Posso escalar mais montanhas, fazer mais viagens e coletar mais dados geológicos. Desvendar os mistérios deste planeta me traz tanta alegria... Nem consigo explicar o quanto estou feliz!{M}Escalei mais uma montanha hoje. A bússola geológica me ajudou a determinar a orientação e o gradiente das camadas rochosas, enquanto a picareta me ajudou a coletar amostras de rochas sedimentares para estudos ópticos e de textura... Não estou nem um pouco cansada, professor. Posso escalar mais montanhas, fazer mais viagens e coletar mais dados geológicos. Desvendar os mistérios deste planeta me traz tanta alegria... Nem consigo explicar o quanto estou feliz!"
+      },
+      {
+        "title": "Diálogo de Confiança 4",
+        "text": "Ter amigos ao lado em um momento tão festivo é tão bom! Isso me lembra daquela minha primeira vez na Endfield. As pessoas me deram uma festa de boas-vindas cheia de tudo o que eu gosto. Ah, os doces, as flores e a música alegre e feliz. A Srta. Yvonne até pegou minha mão e dançamos ao som do pop mais recente! Os giros e os movimentos me deixaram meio desorientada, mas fiz o meu melhor para me lembrar de cada sorriso."
+      },
+      {
+        "title": "Diálogo de Confiança 5",
+        "text": "{F}O que é o Ætherside? Essa pergunta não para de me vir à mente. Se o Universo nos reserva algo tão cruel, há algo que eu possa fazer para ajudar a todos...? Você está pensando a mesma coisa, Professora? Humm, isso significa... que não estamos sozinhas.{M}O que é o Ætherside? Essa pergunta não para de me vir à mente. Se o Universo nos reserva algo tão cruel, há algo que eu possa fazer para ajudar a todos...? Você está pensando a mesma coisa, Professor? Humm, isso significa... que não estamos sozinhos."
+      },
+      {
+        "title": "Chat 1",
+        "text": "{F}Sua voz é tão suave, Professora. Ah, eu, uh, eu não quis dizer outra coisa com isso. É que... sabe, como quando acordo de um sonho, os sons sempre chegam até você antes das imagens? Antes de meus olhos encontrarem seu rosto, foram seus passos e sua voz que tocaram meus ouvidos primeiro... Sim. A maioria dos seres vivos criou suas próprias vozes, sejam insetos, animais, árvores ou plantas. As vozes me comovem. É por elas que decidi proteger o mundo que todos amamos, do meu jeito especial.{M}Sua voz é tão suave, Professor. Ah, eu, uh, eu não quis dizer outra coisa com isso. É que... sabe, como quando acordo de um sonho, os sons sempre chegam até você antes das imagens? Antes de meus olhos encontrarem seu rosto, foram seus passos e sua voz que tocaram meus ouvidos primeiro... Sim. A maioria dos seres vivos criou suas próprias vozes, sejam insetos, animais, árvores ou plantas. As vozes me comovem. É por elas que decidi proteger o mundo que todos amamos, do meu jeito especial."
+      },
+      {
+        "title": "Chat 2",
+        "text": "Todos na Endfield são incrivelmente gentis. A Srta. Yvonne sempre compartilhava suas últimas descobertas científicas e novos discos de vinil comigo. A Srta. Akekuri sempre me convidava para o chá da tarde no lugar de sempre. E, claro, tem o Sr. Antal — ele me disse que poderia transformar meu cajado em uma ferramenta de prospecção altamente portátil *e* embelezá-lo com um conjunto de recursos maravilhosos. Se a Srta. Akekuri não o tivesse chamado depois de três horas, ele provavelmente teria passado o dia inteiro explicando cada detalhe!"
+      },
+      {
+        "title": "Chat 3",
+        "text": "Geólogos de campo desfrutam de bastante liberdade, mas a falta de recursos pode ser bastante frustrante. Para conseguir financiamento, eu dava seminários e palestras em várias empresas, na esperança de que minha fé e visão fossem persuasivas o suficiente. A maioria das empresas, exceto a Endfield, não estava interessada em sistemas de alerta precoce para desastres geológicos. Mas quando o Grupo Siesta soube da minha pesquisa, eles me ofereceram patrocínio incondicional. Acho que sei por que eles estão sendo tão generosos... Talvez esse encontro fatídico faça parte da minha herança."
+      },
+      {
+        "title": "Chat 4",
+        "text": "{F}Certa vez, viajei com uma Aldertone do Circuito Hannabit. Ela cantou canções de Hanna belíssimas e me contou sobre a Aldertone que a guiou. Todos no Circuito habitam esta terra, então eles têm um profundo respeito por aqueles que a estudam, como nós. Hehe, fiquei muito feliz quando ela me contou isso. Mas, honestamente, foi graças à Hanna dela que encontrei meu verdadeiro propósito e motivação. Isso mesmo, Professora. Essa foi a viagem que fiz antes de encontrar minha verdadeira vocação em Talos-II.{M}Certa vez, viajei com uma Aldertone do Circuito Hannabit. Ela cantou canções de Hanna belíssimas e me contou sobre a Aldertone que a guiou. Todos no Circuito habitam esta terra, então eles têm um profundo respeito por aqueles que a estudam, como nós. Hehe, fiquei muito feliz quando ela me contou isso. Mas, honestamente, foi graças à Hanna dela que encontrei meu verdadeiro propósito e motivação. Isso mesmo, Professor. Essa foi a viagem que fiz antes de encontrar minha verdadeira vocação em Talos-II."
+      },
+      {
+        "title": "Chat 5",
+        "text": "Outro rasgo na minha roupa? Ah, tudo bem, sério. Posso costurar de novo. Pesquisas de campo são sempre um pouco difíceis para qualquer roupa... Tenho que escalar picos de montanhas para coletar amostras de minerais raros, e as rochas irregulares não são muito suaves. Mas aquela sensação, quando você está tão perto do seu objetivo, às vezes, nos faz esquecer o quanto arriscado cada passo pode ser. Mas não se preocupe. Serei mais cuidadosa da próxima vez."
+      },
+      {
+        "title": "Tópico: Ætherside",
+        "text": "O Ætherside é algo inteiramente novo que temos que enfrentar em Talos-II. Há teorias que o descrevem como um fenômeno físico único, enquanto outras o consideram uma estranha dimensão espacial e temporal. Mas tenho a sensação de que é... uma sala esquecida e empoeirada, cheia de coisas antigas com as quais ninguém mais se importa. Professor, talvez o Ætherside tenha algo a ver com as nossas origens."
+      },
+      {
+        "title": "Tópico: Rhodes Island",
+        "text": "{F}Vim da Rhodes Island, onde recebi todo tipo de treinamento e lições que me ajudaram a construir minha própria identidade. Não tive parentesco, infância ou passado que pudesse chamar de meu, mas a Rhodes Island nos ensinou a viver e a compreender a nós mesmos. Professora, a Rhodes Island é o meu lar... e todos me disseram que era o seu também.{M}Vim da Rhodes Island, onde recebi todo tipo de treinamento e lições que me ajudaram a construir minha própria identidade. Não tive parentesco, infância ou passado que pudesse chamar de meu, mas a Rhodes Island nos ensinou a viver e a compreender a nós mesmos. Professor, a Rhodes Island é o meu lar... e todos me disseram que era o seu também."
+      },
+      {
+        "title": "Tópico: Dolly",
+        "text": "{F}O Sr. Dolly é bem animado mesmo. Só não consigo entender por que ele não se mostra para os outros. Ele está invisível para você agora, mas adora brincar com você. O que o Sr. Dolly está fazendo agora? Bem, ele está tentando sentar na sua... Ai, meu Deus! Sr. Dolly! Pare com isso! Pare de brincar com a Professora...! Ufa. Bem, esse é o Sr. Dolly. Nós nos conhecemos em um dia bem comum, e então ele decidiu ficar por aqui e nunca mais me deixou.{M}O Sr. Dolly é bem animado mesmo. Só não consigo entender por que ele não se mostra para os outros. Ele está invisível para você agora, mas adora brincar com você. O que o Sr. Dolly está fazendo agora? Bem, ele está tentando sentar no seu... Ai, meu Deus! Sr. Dolly! Pare com isso! Pare de brincar com o Professor...! Ufa. Bem, esse é o Sr. Dolly. Nós nos conhecemos em um dia bem comum, e então ele decidiu ficar por aqui e nunca mais me deixou."
+      },
+      {
+        "title": "Tópico: Yvonne",
+        "text": "A Srta. Yvonne é uma cientista incrível. Quando cheguei na Endfield, ela compartilhou toneladas de informações importantes para me atualizar sobre o Ætherside. Ela até compartilhou suas descobertas de pesquisa comigo, esperando que pudessem ajudar outros pesquisadores em nossa área. E, para completar, nós duas compartilhamos o amor pela música! Embora eu goste de melodias mais leves e ela de batidas mais rápidas e pesadas, ela ainda me deu vários álbuns de pop da La Fantoma. Ela é incrível."
+      },
+      {
+        "title": "Tópico: Talos-II",
+        "text": "Certa vez, testemunhei um aglomerado de Originium gigante ser engolido e desintegrado pela Praga que se elevou como uma maré oceânica. Nada restou além de um vale árido. Uma besta carnívora sobreviveu ao desastre e retornou ao seu lar, sozinha e confusa... O Ætherside e a Praga são como anátemas um do outro, enquanto nós oscilamos precariamente à beira da sobrevivência. Nasci do Originium e, por isso, me senti compelida a aprender sobre o Æther. Meu único desejo é tornar este mundo um lar mais seguro para todos."
+      },
+      {
+        "title": "Recurso/Colecionável detectado 1",
+        "text": "Esses recursos parecem úteis. Não se esqueça de pegá-los."
+      },
+      {
+        "title": "Recurso/Colecionável detectado 2",
+        "text": "Esses recursos são realmente importantes. Vamos tentar pegar mais."
+      },
+      {
+        "title": "Área não explorada detectada",
+        "text": "Algo parece estranho lá na frente. Deixe a exploração comigo!"
+      },
+      {
+        "title": "Inimigo poderoso descoberto",
+        "text": "Algo perigoso está por vir. É melhor estarmos totalmente preparados."
+      },
+      {
+        "title": "Mineração 1",
+        "text": "Vou classificar e identificar esses minerais em breve."
+      },
+      {
+        "title": "Mineração 2",
+        "text": "Deixe-me ajudar também!"
+      },
+      {
+        "title": "Abrindo um caixote",
+        "text": "Uma recompensa pelas dificuldades que enfrentamos!"
+      },
+      {
+        "title": "Adquirindo Aurileno",
+        "text": "Ao contrário da Praga e das fendas, os Aurilenos não são tão perigosos."
+      },
+      {
+        "title": "Eliminando a Praga",
+        "text": "Ótimo. Ele agora não vai machucar mais ninguém."
+      },
+      {
+        "title": "Descansar",
+        "text": "Já andamos tanto... todos devem estar cansados. Boa hora para fazer uma pausa."
+      },
+      {
+        "title": "Uso Tático 1",
+        "text": "Você consegue, eu estou aqui!"
+      },
+      {
+        "title": "Uso Tático 2",
+        "text": "Ufa... Estou me sentindo muito melhor."
+      },
+      {
+        "title": "Aviso de Perigo",
+        "text": "Cuidado!"
+      },
+      {
+        "title": "Ferida",
+        "text": "Estou bem! Ainda posso fazer isso!"
+      },
+      {
+        "title": "0 PV",
+        "text": "{F}Não posso desapontar... a Professora...{M}Não posso desapontar... o Professor..."
+      },
+      {
+        "title": "Encorajamento da Equipe 1",
+        "text": "Movimento incrível!"
+      },
+      {
+        "title": "Encorajamento da Equipe 2",
+        "text": "Todo mundo está contribuindo!"
+      },
+      {
+        "title": "Resposta a Encorajamento 1",
+        "text": "Obrigada pela curtida!"
+      },
+      {
+        "title": "Resposta a Encorajamento 2",
+        "text": "Obrigada a todos vocês!"
+      },
+      {
+        "title": "Início do Combate 1",
+        "text": "Prestem atenção, pessoal."
+      },
+      {
+        "title": "Início do Combate 2",
+        "text": "Vamos passar por isso!"
+      },
+      {
+        "title": "Vitória em Combate 1",
+        "text": "Nenhuma dificuldade nos deterá."
+      },
+      {
+        "title": "Vitória em Combate 2",
+        "text": "Conseguimos. Espero que não esteja cansado, Sr. Dolly."
+      },
+      {
+        "title": "Vitória em Combate 3",
+        "text": "Eu sabia que conseguiríamos."
+      },
+      {
+        "title": "Vitória em Combate 4",
+        "text": "Finalmente conseguimos... E isso porque todos nós permanecemos unidos."
+      },
+      {
+        "title": "Derrota em Combate",
+        "text": "Perder não é o fim do mundo. Aprenda com a experiência e faremos melhor na próxima vez."
+      },
+      {
+        "title": "Golpe Final 1",
+        "text": "Abram caminho!"
+      },
+      {
+        "title": "Golpe Final 2",
+        "text": "Erupção!"
+      },
+      {
+        "title": "Habilidade de Batalha 1",
+        "text": "Impacto de cordeiro!"
+      },
+      {
+        "title": "Habilidade de Batalha 2",
+        "text": "Pare com isso!"
+      },
+      {
+        "title": "Habilidade de Batalha 3",
+        "text": "Aqui vamos nós!"
+      },
+      {
+        "title": "Combo de Habilidades Pronto 1",
+        "text": "Também vou ajudar!"
+      },
+      {
+        "title": "Combo de Habilidades Pronto 2",
+        "text": "Deixe-me tentar!"
+      },
+      {
+        "title": "Conjuração de Combo 1",
+        "text": "Isso vai doer!"
+      },
+      {
+        "title": "Conjuração de Combo 2",
+        "text": "Floresça!"
+      },
+      {
+        "title": "Finalizador 1",
+        "text": "A hora é agora!"
+      },
+      {
+        "title": "Finalizador 2",
+        "text": "Apenas saia!"
+      },
+      {
+        "title": "Habilidade Suprema 1",
+        "text": "Por favor, ajude, Sr. Dolly!"
+      },
+      {
+        "title": "Habilidade Suprema 2",
+        "text": "Não vá muito longe, Sr. Dolly."
+      },
+      {
+        "title": "Habilidade Suprema 3",
+        "text": "Seja gentil, Sr. Dolly."
+      }
+    ]
   },
   "potentials": {
     "potential1": {

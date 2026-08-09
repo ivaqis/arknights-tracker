@@ -93,7 +93,229 @@
         "name": "???",
         "description": ""
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Preparazione all'operazione 1",
+        "text": "Sento il canto dell'Originium."
+      },
+      {
+        "title": "Preparazione all'operazione 2",
+        "text": "Niente fermerà il progresso della Endfield."
+      },
+      {
+        "title": "Aggiunta alla squadra 1",
+        "text": "Dijiang, sono in posizione."
+      },
+      {
+        "title": "Aggiunta alla squadra 2",
+        "text": "Era ora."
+      },
+      {
+        "title": "Cambio arma",
+        "text": "Niente male."
+      },
+      {
+        "title": "Cambio equipaggiamento",
+        "text": "Un raffinato esempio di manifattura industriale."
+      },
+      {
+        "title": "Attivazione matrice delle abilità",
+        "text": "Riconosco questa sensazione..."
+      },
+      {
+        "title": "Visione delle registrazioni di combattimenti",
+        "text": "Questo non lo dimenticherò mai."
+      },
+      {
+        "title": "Promozione operatore 1",
+        "text": "Un altro passo avanti..."
+      },
+      {
+        "title": "Promozione operatore 2",
+        "text": "Io proteggerò la Endfield. Sempre."
+      },
+      {
+        "title": "Promozione operatore 3",
+        "text": "Passato e presente devono diventare una cosa sola."
+      },
+      {
+        "title": "Promozione operatore 4",
+        "text": "Ho udito la sua voce riecheggiare, come un sussurro in un sogno. Ancora e ancora, ho sognato un mare infinito. Un mare che porta dolore, risveglia ricordi... e alimenta la mia determinazione."
+      },
+      {
+        "title": "Attesa 1",
+        "text": "Cosa aspettiamo?"
+      },
+      {
+        "title": "Attesa 2",
+        "text": "L'Originium ci mostrerà la via."
+      },
+      {
+        "title": "Accettazione regali",
+        "text": "Grazie mille!"
+      },
+      {
+        "title": "Individuazione risorsa/collezionabile 1",
+        "text": "Cosa c'è laggiù?"
+      },
+      {
+        "title": "Individuazione risorsa/collezionabile 2",
+        "text": "Laggiù c'è qualcosa di importante!"
+      },
+      {
+        "title": "Individuazione zona non esplorata",
+        "text": "Meglio esplorare a fondo i dintorni."
+      },
+      {
+        "title": "Individuazione nemico potente",
+        "text": "Bersaglio altamente pericoloso. Avvicinarsi con cautela."
+      },
+      {
+        "title": "Estrazione 1",
+        "text": "Questi minerali potrebbero tornarci utili."
+      },
+      {
+        "title": "Estrazione 2",
+        "text": "Do una mano anch'io."
+      },
+      {
+        "title": "Apertura di una cassa",
+        "text": "Una spedizione fruttuosa."
+      },
+      {
+        "title": "Acquisizione di Aurylene",
+        "text": "Ha un che di familiare."
+      },
+      {
+        "title": "Eliminazione Contaminazione",
+        "text": "Contaminazione eliminata."
+      },
+      {
+        "title": "Riposo",
+        "text": "Il gruppo ha recuperato le forze."
+      },
+      {
+        "title": "Utilizzo di gadget 1",
+        "text": "Ti senti meglio?"
+      },
+      {
+        "title": "Utilizzo di gadget 2",
+        "text": "Ora va molto meglio."
+      },
+      {
+        "title": "Avviso di pericolo",
+        "text": "Attacco in arrivo! Attenzione!"
+      },
+      {
+        "title": "Ferita",
+        "text": "Riesco ancora a combattere..."
+      },
+      {
+        "title": "Esaurimento PS",
+        "text": "Mi dispiace... Ora è tutto nelle vostre mani..."
+      },
+      {
+        "title": "Incoraggiamento alla squadra 1",
+        "text": "Bella mossa."
+      },
+      {
+        "title": "Incoraggiamento alla squadra 2",
+        "text": "Siamo in perfetta sincronia."
+      },
+      {
+        "title": "Risposta all'incoraggiamento 1",
+        "text": "Mi lusinghi."
+      },
+      {
+        "title": "Risposta all'incoraggiamento 2",
+        "text": "Lavoriamo sempre più come una squadra."
+      },
+      {
+        "title": "Inizio combattimento 1",
+        "text": "È ora di combattere."
+      },
+      {
+        "title": "Inizio combattimento 2",
+        "text": "Sono con te."
+      },
+      {
+        "title": "Vittoria in combattimento 1",
+        "text": "Un altro passo avanti per noi, Endfielder."
+      },
+      {
+        "title": "Vittoria in combattimento 2",
+        "text": "Ottimo lavoro, gente."
+      },
+      {
+        "title": "Vittoria in combattimento 3",
+        "text": "Ce la siamo cavata bene!"
+      },
+      {
+        "title": "Vittoria in combattimento 4",
+        "text": "Stiamo tutti bene?"
+      },
+      {
+        "title": "Sconfitta in combattimento",
+        "text": "Non c'è da preoccuparsi. Ci riorganizzeremo e risolveremo la questione."
+      },
+      {
+        "title": "Colpo finale 1",
+        "text": "Prendi questo!"
+      },
+      {
+        "title": "Colpo finale 2",
+        "text": "State a vedere!"
+      },
+      {
+        "title": "Abilità di combattimento 1",
+        "text": "All'attacco!"
+      },
+      {
+        "title": "Abilità di combattimento 2",
+        "text": "Ti distruggo!"
+      },
+      {
+        "title": "Abilità di combattimento 3",
+        "text": "Facciamoli fuori!"
+      },
+      {
+        "title": "Abilità combo pronta 1",
+        "text": "Sono pronta a colpire."
+      },
+      {
+        "title": "Abilità combo pronta 2",
+        "text": "Posso farcela."
+      },
+      {
+        "title": "Esecuzione combo 1",
+        "text": "Cristallizzazione!"
+      },
+      {
+        "title": "Esecuzione combo 2",
+        "text": "Per te è la fine!"
+      },
+      {
+        "title": "Mossa letale 1",
+        "text": "Ora basta!"
+      },
+      {
+        "title": "Mossa letale 2",
+        "text": "È finita!"
+      },
+      {
+        "title": "Abilità suprema 1",
+        "text": "Non avrai un'altra occasione."
+      },
+      {
+        "title": "Abilità suprema 2",
+        "text": "La tua fine è vicina."
+      },
+      {
+        "title": "Abilità suprema 3",
+        "text": "La festa è finita."
+      }
+    ]
   },
   "potentials": {
     "potential1": {

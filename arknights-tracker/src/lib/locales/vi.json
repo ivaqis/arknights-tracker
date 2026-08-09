@@ -366,7 +366,9 @@
     "special_1_3_2": "Đấng Xá Tội",
     "weponbox_1_3_2": "Gói Rút Nhuộm Huyết Sắc",
     "special_1_4_1": "Đứng Canh Khe Nứt Bứt Rứt Nhớ Quê",
-    "weponbox_1_4_1": "Gói Rút Cấp Quân Dụng"
+    "weponbox_1_4_1": "Gói Rút Cấp Quân Dụng",
+    "special_1_4_2": "Lời Chào Từ Sao Mai",
+    "weponbox_1_4_2": "Gói Rút Chói Rạng"
   },
   "pages": {
     "home": "Trang chủ",
@@ -460,7 +462,8 @@
     "theRootedRealm": "Vùng Đất Khởi Nguyên",
     "protocolPassBlightedSea": "Thẻ Giao Thức: Biển Nhiễm Khuẩn",
     "gazeNorthToTheRiftSignIn": "Điểm Danh Dõi Về Khe Nứt Phương Bắc",
-    "protocolInvitationTheReturn": "Lời Mời Giao Thức: Trở Về"
+    "protocolInvitationTheReturn": "Lời Mời Giao Thức: Trở Về",
+    "bedazzlingDawnstarSignIn": "Điểm Danh Ánh Sao Mai Lộng Lẫy"
   },
   "mouths": {
     "january": "Tháng 1",

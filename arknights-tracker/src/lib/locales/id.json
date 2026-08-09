@@ -362,7 +362,9 @@
     "special_1_3_2": "Pembasuh Dosa",
     "weponbox_1_3_2": "Edisi Rona Merah Darah",
     "special_1_4_1": "Penjaga Celah Merindukan Utara",
-    "weponbox_1_4_1": "Edisi Standar Militer"
+    "weponbox_1_4_1": "Edisi Standar Militer",
+    "special_1_4_2": "Selamat Pagi dari Bintang Fajarmu",
+    "weponbox_1_4_2": "Edisi Terpesona"
   },
   "pages": {
     "home": "Beranda",
@@ -455,7 +457,8 @@
     "theRootedRealm": "Buana Akar",
     "protocolPassBlightedSea": "Tiket Akses Protokol: Laut Hawar",
     "gazeNorthToTheRiftSignIn": "Sign In Tataplah Celah di Utara",
-    "protocolInvitationTheReturn": "Undangan Protokol: Kembalinya"
+    "protocolInvitationTheReturn": "Undangan Protokol: Kembalinya",
+    "bedazzlingDawnstarSignIn": "Sign In Bintang Fajar Gemerlap"
   },
   "mouths": {
     "january": "Januari",

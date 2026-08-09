@@ -120,7 +120,333 @@
         "name": "Natura",
         "description": "Natura: affinità ecologica\nLo scroscio della pioggia sulla terra è il linguaggio con cui il mondo si rinnova. Tutto assume un nuovo aspetto quando arriva l'alba di un nuovo giorno."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Preparazione all'operazione 1",
+        "text": "Fa' pure quel che devi, prof. Farò il possibile per dare una mano."
+      },
+      {
+        "title": "Preparazione all'operazione 2",
+        "text": "Vediamo... Da dove dovrei raccogliere i miei dati, stavolta?"
+      },
+      {
+        "title": "Aggiunta alla squadra 1",
+        "text": "Prof, ho preparato i miei strumenti di prospezione. Possiamo partire quando vuoi."
+      },
+      {
+        "title": "Aggiunta alla squadra 2",
+        "text": "Mi sento molto più al sicuro quando sei con me, prof."
+      },
+      {
+        "title": "Cambio arma",
+        "text": "Prof, potresti fare qualche passo indietro? Io, ehm... non voglio farti del male per sbaglio."
+      },
+      {
+        "title": "Cambio equipaggiamento",
+        "text": "Gli studi sul campo possono essere pericolosi. Dobbiamo assicurarci di essere ben equipaggiati."
+      },
+      {
+        "title": "Attivazione matrice delle abilità",
+        "text": "Il mio diario è come gli anelli di un albero antico. Tiene traccia di ogni lezione che ho imparato nel corso della mia vita."
+      },
+      {
+        "title": "Visione delle registrazioni di combattimenti",
+        "text": "Come fa il nemico a... ridurre la terra in una landa desolata e senza vita?"
+      },
+      {
+        "title": "Promozione operatore 1",
+        "text": "Bene, Ardelia! Concentrati su quel percorso! Continua a esplorare e a migliorarti!"
+      },
+      {
+        "title": "Promozione operatore 2",
+        "text": "Ti sono grata per la tua approvazione, prof! Mi impegnerò ancora di più e otterrò ancora più risultati qui alla Endfield!"
+      },
+      {
+        "title": "Promozione operatore 3",
+        "text": "Non preoccuparti per me, prof. Non sto affatto esagerando col lavoro. Eh? I cerchi scuri che ho intorno agli occhi, dici? Oh, ehm... il libro che stavo leggendo era molto interessante. Non ho saputo trattenermi."
+      },
+      {
+        "title": "Promozione operatore 4",
+        "text": "In questo mondo ci sono molti misteri da scoprire. Dovremmo conoscerlo meglio, così come dovremmo... conoscere meglio noi stessi. Non sei d'accordo, prof?"
+      },
+      {
+        "title": "Operatore a rapporto",
+        "text": "Salve, Endministrator. Mi chiamo Ardelia e sono una geologa della Rhodes Island. Al momento sto concentrando i miei studi sulle correlazioni tra i disastri geologici e l'Ætherspazio. È da molto che sento parlare di te, Endmin. Ho diverse domande da farti. Oh, e c'è un'altra cosa che volevo chiederti... Posso chiamarti \"prof\"?"
+      },
+      {
+        "title": "Attesa 1",
+        "text": "Ti auguro un'altra giornata radiosa, prof."
+      },
+      {
+        "title": "Attesa 2",
+        "text": "Ho sentito i tuoi passi, prof."
+      },
+      {
+        "title": "Assegnazione a una struttura",
+        "text": "Ci penso io, prof. Spero di poter sperimentare qualcosa di nuovo."
+      },
+      {
+        "title": "Saluto 1",
+        "text": "Prof, ti va di mangiare con me questa mille crêpe?"
+      },
+      {
+        "title": "Saluto 2",
+        "text": "Oh, stavo per venirti a cercare, prof."
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 1",
+        "text": "Prof, fa' attenzione quando giri per la Dijiang... A bordo ci sono segnali d'avvertimento di ogni tipo e... continuo a inciamparci. Non riesco proprio a vederli mentre sono sovrappensiero."
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 2",
+        "text": "Dalla Dijiang vedo svariati siti di cui ho curato personalmente la prospezione... Le terre selvagge, le praterie e il nord sembrano così piccoli da qui. Mentre siamo in orbita, riesco a scorgere tutte quelle aree che ho impiegato tanto tempo a esplorare... Devo dire che stare quassù è piuttosto emozionante! Eh eh."
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 3",
+        "text": "Prof, ti va di partecipare alla riunione del gruppo di lettura che ho organizzato per domani? Di cosa parliamo? Oh, di qualsiasi cosa ci piaccia leggere! A proposito, il signor Krad una volta ha portato una rivista fotografica sui vulcani di Talos-II. Se ne hai voglia, posso portarla al gruppo di lettura!"
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 4",
+        "text": "Prof, avrai una gran fame dopo tutto quel lavoro! Tieni. Sono degli snack di Higashi che mi ha dato la signorina Akekuri. Ehm, io non ne ho bisogno in realtà, perché... N-ne ho già mangiati un po'. Perché il pacchetto è ancora chiuso? Oh, ehm... la signorina Akekuri me ne ha dati due!"
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 5",
+        "text": "Non ci hai fatto caso, prof? Sei sempre in prima linea, come se dovessi proteggerci da qualunque pericolo si celi davanti a noi. A volte, ho dovuto accelerare un po' per starti dietro. Forse... non dovresti andare così veloce. Siamo tutti al tuo fianco... e vogliamo aiutarti."
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 6",
+        "text": "Ogni ritorno sulla Dijiang è così rilassante... Quando non racconto storie dei miei viaggi ai colleghi, visito le camere di coltivazione per vedere come stanno le piantine. Se ho tempo, gli dedico un po' d'amore e affetto. È il mio piccolo hobby. Vederle crescere mi riempie il cuore di gioia."
+      },
+      {
+        "title": "Offerta regali",
+        "text": "Posso chiederti un minuto del tuo tempo, Endmin? Durante la prospezione, ho radunato qualche souvenir. Piume decorative del Circuito Hannabit, ninnoli di giada di Hongshan e medaglie dell'Ordine del Giuramento d'acciaio... Sono tutti per te. Spero ti piacciano."
+      },
+      {
+        "title": "Accettazione regali",
+        "text": "Un regalo? Per me? Oh, ma grazie! Vediamo che c'è dentro... *Ridacchia* Prof, sembri ancora più in agitazione di me."
+      },
+      {
+        "title": "Dialogo fiducia 1",
+        "text": "Prof, stai bene? Non sembri in forma. Non dirmi che hai fatto di nuovo le ore piccole? Avanti, lo sai che non fa bene alla tua salute... Ah-ah! Non accetto obiezioni, vai subito a riposare."
+      },
+      {
+        "title": "Dialogo fiducia 2",
+        "text": "Ehi, signor Dolly, smettila di mordicchiare i suoi vestiti! Uff... Mi dispiace tanto. È un vero monello. Eh? Non lo vedi? Oh... il signor Dolly si mostra solo quando vuole essere visto... Se il signor Dolly è il sovrano? No. \"Signor Dolly\" non è un nome per qualcuno di preciso, perché si tratta di un intero gregge di Dolly... Oh, vieni fuori e diglielo tu, dai! Signor Dolly, lo so che sai parlare!"
+      },
+      {
+        "title": "Dialogo fiducia 3",
+        "text": "Oggi ho scalato un'altra montagna. La bussola geologica mi ha aiutato a determinare l'orientamento e il gradiente degli strati rocciosi, mentre grazie al piccone ho raccolto campioni di roccia sedimentaria per analizzarne l'aspetto e la composizione... Non sono affatto stanca, prof. Posso benissimo scalare altre montagne, fare altri viaggi e raccogliere ancora più dati geologici. Svelare i misteri di questo pianeta mi rende talmente felice che... non riesco nemmeno a spiegarlo a parole!"
+      },
+      {
+        "title": "Dialogo fiducia 4",
+        "text": "È bellissimo avere accanto i propri amici in un momento come questo! Mi ricorda il mio primo arrivo alla Endfield. Hanno organizzato una festa di benvenuto con tutte le cose che mi piacciono di più: dolci, fiori, musica felice e gioiosa. La signorina Yvonne mi ha persino preso per mano, ballando con me al ritmo delle canzoni più famose del momento! Mi sentivo un po' disorientata per via di tutte le giravolte e le piroette, ma ho fatto del mio meglio per memorizzare ogni sorriso."
+      },
+      {
+        "title": "Dialogo fiducia 5",
+        "text": "Cos'è l'Ætherspazio? È una domanda che mi pongo continuamente. Se l'universo è così crudele nei nostri confronti, c'è qualcosa che possiamo fare per aiutare la collettività? Stai pensando alla stessa cosa, prof? Mmh, allora significa... che non siamo soli."
+      },
+      {
+        "title": "Chiacchierata 1",
+        "text": "La tua voce mi rilassa, prof. Oh, io, ehm, non intendevo nulla di fraintendibile. È solo che... hai presente quando ti risvegli da un sogno e senti i suoni prima di riuscire a elaborare le immagini? Prima che i miei occhi si posassero sul tuo viso, il suono dei tuoi passi e della tua voce sono stati la prima cosa che ho sentito... Già. La maggior parte degli esseri viventi ha creato la propria voce: insetti, bestie, alberi o piante. Le voci sono ciò che mi motiva. Sono il motivo per cui ho deciso di proteggere il mondo che tutti amiamo, ma in un modo tutto mio."
+      },
+      {
+        "title": "Chiacchierata 2",
+        "text": "Sono tutti molto gentili qui alla Endfield. La signorina Yvonne mi mostra sempre le sue ultime scoperte scientifiche, oltre alle nuove aggiunte alla sua collezione di vinili. La signorina Akekuri mi invita sempre al solito posto per il tè pomeridiano. E poi c'è il signor Antal. Mi ha detto che potrebbe modificare il mio bastone in uno strumento di prospezione ad alta portabilità, oltre a dotarlo di tutta una serie di funzionalità incredibili. Se la signorina Akekuri non lo avesse fatto allontanare dopo tre ore, probabilmente avrebbe trascorso l'intera giornata a spiegarmi ogni dettaglio!"
+      },
+      {
+        "title": "Chiacchierata 3",
+        "text": "I geologi che operano sul campo godono di grande libertà, nonostante la mancanza di fondi possa essere piuttosto frustrante, a volte. Per ottenere fondi, organizzo seminari e corsi in varie aziende, sperando che la mia fede e i miei progetti siano abbastanza persuasivi. La maggior parte di esse, a eccezione della Endfield, non erano interessate a sistemi di avvertimento preventivo per i disastri geologici. Tuttavia, quando il Siesta Group ha sentito della mia ricerca, mi ha offerto il suo sostegno incondizionato. Credo di sapere il perché di tutta questa generosità... Forse questo incontro fortuito fa parte del mio retaggio."
+      },
+      {
+        "title": "Chiacchierata 4",
+        "text": "Una volta viaggiai con una Cantora del Circuito Hannabit. Cantava delle stupende canzoni hanna e mi raccontava del Cantore che la guidò. Tutti nel Circuito contemplano questa terra. È il motivo per cui nutrono un profondo rispetto per coloro che la studiano, come noi. Eh eh, sono davvero felice che me l'abbia detto. Ma in tutta onestà, è stato grazie alle sue hanna che ho scoperto il mio scopo e la mia motivazione. Esatto, prof. Questo era il viaggio che ho intrapreso prima di trovare la mia vera vocazione su Talos-II."
+      },
+      {
+        "title": "Chiacchierata 5",
+        "text": "Un altro strappo nei miei vestiti? Oh, non è un problema, davvero. Posso sempre rammendarlo. I vestiti dei geologi come me sono sempre messi a dura prova... devo scalare le vette delle montagne per raccogliere campioni di minerali rari, e quelle rocce aguzze non perdonano affatto. Ma quella sensazione che provi quando sei vicino all'obiettivo... a volte ti fa dimenticare di quanto possa essere pericoloso ogni passo che compi. Ma non preoccuparti, prof. Farò più attenzione la prossima volta."
+      },
+      {
+        "title": "Argomento: Ætherspazio",
+        "text": "L'Ætherspazio è qualcosa di completamente nuovo che dobbiamo affrontare su Talos-II. Secondo alcune teorie, è un fenomeno fisico unico, mentre secondo altre è una strana dimensione spazio-temporale. Io, invece, ho la sensazione che sia come... un vecchio stanzino polveroso pieno di cose di cui nessuno s'interessava più. Prof, forse l'Ætherspazio ha qualcosa a che fare con le nostre origini."
+      },
+      {
+        "title": "Argomento: Rhodes Island",
+        "text": "Vengo dalla Rhodes Island, dove ho seguito addestramenti e lezioni di ogni sorta che mi hanno aiutato a plasmare la mia identità. Non avevo legami di sangue, un'infanzia o un passato tutti miei, ma la Rhodes Island ci ha insegnato a vivere e a comprenderci. Prof, la Rhodes Island è casa mia... e tutti mi hanno detto che era anche la tua."
+      },
+      {
+        "title": "Argomento: Dolly",
+        "text": "Il signor Dolly è molto vivace. È solo che non riesco a capire perché non vuole mostrarsi agli altri. Ora non puoi vederlo, ma adora giocare con te. Che sta facendo adesso? Beh, sta cercando di sedersi sul tuo... Oh, cielo! Signor Dolly! Basta! Smettila di dar fastidio al prof! Oooh. Beh, tipico del signor Dolly. Era un giorno come un altro quando ci siamo incontrati, e da allora ha deciso di restare con me e non lasciarmi mai."
+      },
+      {
+        "title": "Argomento: Yvonne",
+        "text": "La signorina Yvonne è una scienziata incredibile. Quando sono arrivata alla Endfield, mi ha fornito un sacco di informazioni utili per aggiornarmi sull'Ætherspazio. Ha persino condiviso con me gli esiti della sua ricerca, sperando che potessero aiutare altri ricercatori nel nostro campo. E come se non bastasse, entrambe amiamo la musica! Anche se io preferisco melodie più dolci e lei predilige ritmi più veloci e pesanti, mi ha comunque regalato diversi album pop di La Fantoma. Che donna fantastica."
+      },
+      {
+        "title": "Argomento: Talos-II",
+        "text": "Una volta vidi un aggregato di Originium venire ingoiato e scomposto dalla Contaminazione, che si alzava come la marea dell'oceano. Non rimase niente, se non una landa desolata. Sopravvisse al disastro una bestia feroce, che tornò nella sua casa sola e confusa... L'Ætherspazio e la Contaminazione sono uno l'anatema dell'altra, mentre noi vacilliamo sull'orlo della nostra disfatta. Io sono nata dall'Originium e per questo sento di dover scoprire di più sull'Æther. Il mio unico desiderio è rendere questo mondo un luogo sicuro per tutti."
+      },
+      {
+        "title": "Individuazione risorsa/collezionabile 1",
+        "text": "Quelle risorse sembrano utili. Non dimentichiamoci di raccoglierle."
+      },
+      {
+        "title": "Individuazione risorsa/collezionabile 2",
+        "text": "Queste risorse sono molto importanti. Cerchiamo di procurarcene di più."
+      },
+      {
+        "title": "Individuazione zona non esplorata",
+        "text": "C'è qualcosa più avanti che non mi convince. Vado in avanscoperta!"
+      },
+      {
+        "title": "Individuazione nemico potente",
+        "text": "C'è qualcosa di pericoloso più avanti. Prepariamoci come si deve."
+      },
+      {
+        "title": "Estrazione 1",
+        "text": "Catalogherò e identificherò questi minerali tra un attimo."
+      },
+      {
+        "title": "Estrazione 2",
+        "text": "Voglio aiutare anche io!"
+      },
+      {
+        "title": "Apertura di una cassa",
+        "text": "Una ricompensa per le difficoltà che abbiamo affrontato!"
+      },
+      {
+        "title": "Acquisizione di Aurylene",
+        "text": "Al contrario della Contaminazione e delle spaccature, l'Aurylene non è così pericoloso."
+      },
+      {
+        "title": "Eliminazione Contaminazione",
+        "text": "Perfetto. Ora non farà più male a nessuno."
+      },
+      {
+        "title": "Riposo",
+        "text": "Ne abbiamo fatta di strada... Saranno tutti stanchi. Una pausa è un'ottima idea."
+      },
+      {
+        "title": "Utilizzo di gadget 1",
+        "text": "Puoi farcela, ci sono io con te!"
+      },
+      {
+        "title": "Utilizzo di gadget 2",
+        "text": "Fiuuu... Mi sento molto meglio."
+      },
+      {
+        "title": "Avviso di pericolo",
+        "text": "Attenzione!"
+      },
+      {
+        "title": "Ferita",
+        "text": "Sto bene! Posso ancora farcela!"
+      },
+      {
+        "title": "Esaurimento PS",
+        "text": "Prof... Non voglio deluderti..."
+      },
+      {
+        "title": "Incoraggiamento alla squadra 1",
+        "text": "Una mossa incredibile!"
+      },
+      {
+        "title": "Incoraggiamento alla squadra 2",
+        "text": "Stanno dando tutti il loro contributo!"
+      },
+      {
+        "title": "Risposta all'incoraggiamento 1",
+        "text": "Grazie per i complimenti!"
+      },
+      {
+        "title": "Risposta all'incoraggiamento 2",
+        "text": "Grazie infinite!"
+      },
+      {
+        "title": "Inizio combattimento 1",
+        "text": "Occhio a dove mettete i piedi."
+      },
+      {
+        "title": "Inizio combattimento 2",
+        "text": "Ce la faremo!"
+      },
+      {
+        "title": "Vittoria in combattimento 1",
+        "text": "Le difficoltà non ci fermeranno."
+      },
+      {
+        "title": "Vittoria in combattimento 2",
+        "text": "Ce l'abbiamo fatta. Spero che tu non sia stanco, signor Dolly."
+      },
+      {
+        "title": "Vittoria in combattimento 3",
+        "text": "Sapevo che ce l'avremmo fatta."
+      },
+      {
+        "title": "Vittoria in combattimento 4",
+        "text": "Alla fine abbiamo vinto... Ma solo perché abbiamo fatto squadra."
+      },
+      {
+        "title": "Sconfitta in combattimento",
+        "text": "Perdere non è la fine del mondo. Impareremo da questa esperienza e faremo meglio la prossima volta."
+      },
+      {
+        "title": "Colpo finale 1",
+        "text": "Largo!"
+      },
+      {
+        "title": "Colpo finale 2",
+        "text": "Eruzione!"
+      },
+      {
+        "title": "Abilità di combattimento 1",
+        "text": "Impatto lanuto!"
+      },
+      {
+        "title": "Abilità di combattimento 2",
+        "text": "E finiscila!"
+      },
+      {
+        "title": "Abilità di combattimento 3",
+        "text": "Ci siamo!"
+      },
+      {
+        "title": "Abilità combo pronta 1",
+        "text": "Darò il mio contributo!"
+      },
+      {
+        "title": "Abilità combo pronta 2",
+        "text": "Voglio provarci anch'io!"
+      },
+      {
+        "title": "Esecuzione combo 1",
+        "text": "Questo ti farà male!"
+      },
+      {
+        "title": "Esecuzione combo 2",
+        "text": "Fioritura!"
+      },
+      {
+        "title": "Mossa letale 1",
+        "text": "È giunta l'ora!"
+      },
+      {
+        "title": "Mossa letale 2",
+        "text": "Sparisci!"
+      },
+      {
+        "title": "Abilità suprema 1",
+        "text": "Aiutami, signor Dolly!"
+      },
+      {
+        "title": "Abilità suprema 2",
+        "text": "Non allontanarti troppo, signor Dolly."
+      },
+      {
+        "title": "Abilità suprema 3",
+        "text": "Sii gentile, signor Dolly."
+      }
+    ]
   },
   "potentials": {
     "potential1": {

@@ -124,7 +124,325 @@
         "name": "Gedächtnistraining",
         "description": "Gedächtnistraining: Online-Gamer\nDer bewunderte Meister des „Algorithmischen Damespiels“ auf der Dijiang. Für die Beherrschung dieses mathematischen Brettspiels muss man in der kalten Umgebung einen kühlen Kopf bewahren."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Einsatzvorbereitung 1",
+        "text": "Ich werde für dich beten, Endministrator."
+      },
+      {
+        "title": "Einsatzvorbereitung 2",
+        "text": "Ich kann nicht schlafen, während das Gesetz mich beobachtet."
+      },
+      {
+        "title": "Wird zum Team hinzugefügt 1",
+        "text": "Ich bin bereit für deine Befehle, Endministrator."
+      },
+      {
+        "title": "Wird zum Team hinzugefügt 2",
+        "text": "Eine logische Entscheidung."
+      },
+      {
+        "title": "Waffe wird gewechselt",
+        "text": "Darf ich diese Waffe ein bisschen anpassen? Keine Sorge, Sicherheit steht für mich stets an erster Stelle."
+      },
+      {
+        "title": "Ausrüstung wird gewechselt",
+        "text": "Veritas wird durch seine eigene Heiligkeit aufrechterhalten."
+      },
+      {
+        "title": "Fähigkeitsmatrix wird aktiviert",
+        "text": "Sobald wir verbunden sind, wird Weisheit entstehen."
+      },
+      {
+        "title": "Kampfaufzeichnungen ansehen",
+        "text": "Mit meinen Gebeten werde ich auch jene unterstützen, die vom rechten Weg abgekommen sind."
+      },
+      {
+        "title": "Operator-Beförderung 1",
+        "text": "Wie schön, die Güte des Gesetzes zeigt sich … Ah, und mit ihr kommt das Vertrauen des Endministrators! Ich sollte dir meinen tiefsten Dank aussprechen. Ist es nicht recht und billig, dir Dank zu erweisen?"
+      },
+      {
+        "title": "Operator-Beförderung 2",
+        "text": "Das Gesetz schützt die Sanftmütigen, aber nicht die Gelehrten, Weisen oder Reichen. Obwohl mir ein solcher Ruhm zuteil wurde, bleibe ich demütig und dir dankbar."
+      },
+      {
+        "title": "Operator-Beförderung 3",
+        "text": "Alles ist so klar und deutlich wie die Adern von Originium. Diese Beförderung passt zu dem erwarteten Ergebnis. Hä? H-Hände schütteln? Ich … Ich bin nicht so gut darin …"
+      },
+      {
+        "title": "Operator-Beförderung 4",
+        "text": "Ich habe die Codec-Kuppel der Kathedralis umgebaut, um sie zu verbessern. Als der alte Algorithmus die Daten verarbeitete, gab es jedoch unerwartete Resonanzen. Das Ergebnis war … kompliziert. Und trotzdem ist aus dem, was einst jemanden aus seiner Heimat vertrieben hat, hier bei Endfield etwas Schönes geworden. Vielleicht wollte mir das Gesetz damit etwas zeigen!"
+      },
+      {
+        "title": "Operatorin meldet sich zum Dienst",
+        "text": "O Wissen, führe uns nicht in Versuchung, sondern erlöse uns von den Regeln der Bosheit … Ich bin Xaihi, Endministrator. Möge das Licht dich erleuchten."
+      },
+      {
+        "title": "Warten 1",
+        "text": "Besinnung … Berechnung … Ausdruck … Verzicht."
+      },
+      {
+        "title": "Warten 2",
+        "text": "Ich schicke dir den Dialog von heute und meine Gedanken dazu zum Nachdenken an dein Terminal. Mit Respekt …"
+      },
+      {
+        "title": "Zuweisung zur Anlage",
+        "text": "Möge deine Befehle erfüllt werden. O Endministrator, durch Untergebenheit wird unser Weg offenbart."
+      },
+      {
+        "title": "Gruß 1",
+        "text": "Möge Frieden und Sicherheit mit dir sein."
+      },
+      {
+        "title": "Gruß 2",
+        "text": "Endministrator, du bist wieder in meinem berechneten Ergebnis aufgetaucht."
+      },
+      {
+        "title": "Dijiang-Geplauder 1",
+        "text": "Überprüfe Daten, analysiere Syntax, generiere Ergebnisse … Hallo Endministrator."
+      },
+      {
+        "title": "Dijiang-Geplauder 2",
+        "text": "Ich habe dein Signal erhalten, Endministrator. Ich bin gerade dabei, seine Bedeutung zu verstehen. Bitte warte …"
+      },
+      {
+        "title": "Dijiang-Geplauder 3",
+        "text": "Ah … Ich merke, dass ich Maschinen lieber mag als Menschen. Während menschliche Impulse unberechenbar und unvorhersehbar sind, folgen Maschinen einem konstanten, logischen Muster."
+      },
+      {
+        "title": "Dijiang-Geplauder 4",
+        "text": "In den letzten zehn Millisekunden hat mein Terminal mehr als 50 Fehler gemeldet. Aber keine Sorge, ich habe unsere Kommunikation als höchste Priorität eingestellt. Hmm? Wie ich die Gesamtleistung der Dijiang einschätze? Ich würde sagen, trotz einer Vielzahl von Problemen hat das Schiff seine Schwierigkeiten mit Anmut gemeistert, als würde es … für jemand anderen leiden."
+      },
+      {
+        "title": "Dijiang-Geplauder 5",
+        "text": "Wir tun, was das Gesetz erlaubt: Wir wollen das Paradies auf die Welt zurückbringen. Wer den Weg ebnet, wird die verlassenen Wildnisse durchqueren und Glückseligkeit finden. Denn Veritas liegt in Rätseln verborgen, damit die Verlorenen nicht mehr umherirren, sondern mit den Edlen gehen und an einem ewigen Ziel teilhaben können."
+      },
+      {
+        "title": "Dijiang-Geplauder 6",
+        "text": "Für meine Operatoren bist du ein Anführer aus der Vergangenheit, ein edler Mensch in der Gegenwart und ein Originium-Setzling, der in die Zukunft hineinwächst. Doch tief im Inneren des Protorig-Netzwerks habe ich ein anderes Bild von dir gesehen … Ich kann nur beten, dass unser Signifikant und unser Signifikat eines Tages eins werden. Mögest du in Segen wandeln, Endministrator."
+      },
+      {
+        "title": "Geschenke anbieten",
+        "text": "Endministrator, darf ich dich kurz stören? Ich … Ich möchte mich bei dir für all die Booster bedanken, die du mir gegeben hast. Oh … du hast gar nichts bemerkt? Puh, ich bin so erleichtert …"
+      },
+      {
+        "title": "Geschenke annehmen",
+        "text": "Das ist ein Zeichen! Oh, bitte entschuldige meine Unhöflichkeit … Veritas weiß deine Bemühungen zu schätzen."
+      },
+      {
+        "title": "Vertrauensgespräch 1",
+        "text": "Der Orden teilt sein Wissen und sein Schicksal mit dir, Endministrator."
+      },
+      {
+        "title": "Vertrauensgespräch 2",
+        "text": "Sind all meine Vorschläge praktisch und nützlich …? Nein, ich bin keine Pragmatikerin … Die Äbtissin hat uns jedoch gesagt, dass wir unseren Glauben hier auf Talos-II in greifbarere und praktischere Ergebnisse umsetzen müssen. Der Reichtum von Lateran ist hier nur noch eine ferne Erinnerung. Das Einzige, was uns jetzt noch verbindet, ist unsere Verbundenheit untereinander."
+      },
+      {
+        "title": "Vertrauensgespräch 3",
+        "text": "Nach all der Zeit, die wir zusammen verbracht haben, fühle ich mich dem Endministrator näher. Jetzt scheint mir der richtige Zeitpunkt, um meine Zuneigung, mein Vertrauen und meine Freundschaft zu zeigen … Ah, da kommt der Endministrator. Schnell, Xaihi, mach eine freundliche Geste. Ähm … Endministrator, möchtest du mich zum Morgengebet begleiten?"
+      },
+      {
+        "title": "Vertrauensgespräch 4",
+        "text": "Entschuldige bitte, Endministrator. bevor ich den unvermeidlichen Kontakt mit dir herstelle, muss ich erst die statische Aufladung aus meinen Fingern ableiten … Ach, fürchtest du diese Dinge nicht? Aber … Diese winzigen Biester haften heimlich an den Händen … Und sie stechen dich, wenn du es am wenigsten erwartest … Genau so."
+      },
+      {
+        "title": "Vertrauensgespräch 5",
+        "text": "Jahrelang habe ich mich in der Kathedralis dem Studium gewidmet, ohne darüber nachzudenken, wie die Früchte unserer Arbeit Talos-II erleuchten könnten. Doch die Offenbarungen des Gesetzes haben mich zu dir geführt und mir eine neue Welt eröffnet. Eine nach der anderen haben sich die alten, besinnlichen Worte plötzlich erfüllt … und jetzt verstehe ich deine Lehren vollkommen, Endministrator."
+      },
+      {
+        "title": "Geplauder 1",
+        "text": "Endministrator, wir Versammelte verstehen das Gesetz, indem wir Sprache als Symbol betrachten. Indem wir immer wieder alte Symbolkombinationen aufbrechen, um neue zu erschaffen, kommen wir dem Reich der Ewigkeit näher. Dieses Verhalten spiegelt das der Splitterus wider, das Wesen, das hinter der heiligen Statue der Kathedralis verehrt wird."
+      },
+      {
+        "title": "Geplauder 2",
+        "text": "Die Dijiang erinnert mich immer an die Kathedralis. Aber wir bleiben nicht immer dort. Wir treffen uns nur, um Probleme zu lösen. Wenn das passiert, kommen meine Brüder und Schwestern aus allen Ecken von Talos-II an diesen Ort zurück. Hm? Wie die Kathedralis beschützt wird? Was, wenn jemand angreift …? Hmm, ich glaube, sie kann sich selbst beschützen."
+      },
+      {
+        "title": "Geplauder 3",
+        "text": "Noch nie waren wir Veritas so fern, denn es hat den Ort verlassen, den wir unser Zuhause nannten. Noch nie waren wir Veritas so nah … denn wir haben an seine Tür geklopft."
+      },
+      {
+        "title": "Geplauder 4",
+        "text": "Rennen? Zu Fuß? Boxen? Mit den Fäusten? Und du willst mich beim Sportfest sehen? Ich fürchte, … ich muss leider ablehnen. Die einzige „körperliche Bewegung“, die ich gut finde … ist die Größe der periodischen Schwingungen, die Elektronen in einem Schwingkreis ausführen. Ich könnte mich nie dazu bringen, gegen meine Brüder und Schwestern anzutreten. Nein … ich suche keine Ausrede. I-ich muss jetzt zurück in den Hauptrechnerraum. Auf der Stelle."
+      },
+      {
+        "title": "Geplauder 5",
+        "text": "Ja, es gibt viele Sarkaz wie mich im Orden. Einige von ihnen haben sogar Relikte erhalten, die einst von Waffenrittern benutzt wurden. Ich habe die Schriften des Ordens studiert und weiß, dass die Sarkaz auf Terra früher mit vielen anderen Rassen gekämpft haben. Nach dem Ersten Aggeloi-Krieg passierte jedoch etwas Wunderbares: Alle umarmten sich und sangen in derselben Sprache."
+      },
+      {
+        "title": "Thema: Aggelos",
+        "text": "Die Beziehung zwischen dem Gesetz und den Aggeloi, die Talos-II überrannt haben, ist eines der Hauptthemen, die der Orden zu interpretieren versucht."
+      },
+      {
+        "title": "Thema: Splitterus",
+        "text": "Hinter der heiligen Statue in der Kathedralis steht ein Aggelos, der an den Triaggelos erinnert. Außerhalb der Gottesdienstzeiten nennen wir ihn heimlich Splitterus. Dieses Konstrukt wurde während des Ersten Aggeloi-Kriegs von Äbtissin Priora beschlagnahmt. Die Äbtissin ermutigt uns, Splitterus zu beobachten und über ihn zu reflektieren, denn die Lehren des Gesetzes könnten sich auch im Feind finden lassen. Splitterus stellt sowohl eine nahezu exakte Annäherung als auch eine gefasste Schlussfolgerung dar, die jedoch noch interpretiert werden muss."
+      },
+      {
+        "title": "Thema: Die drei Gruppen des Ordens",
+        "text": "Der Orden besteht aktuell aus drei Gruppen: den Versammelten, den Wahrheitsliebenden und den Auferstandenen. Ich selbst gehöre zu den Versammelten. Wir sind der Meinung, dass Rechnen und Sprachanalyse der Schlüssel zum Glück sind. Die über Talos-II verstreuten Auferstandenen sind bewaffnete Fanatiker, die unbedingt die Ruinen der alten Zivilisation erforschen wollen. Die Wahrheitsliebenden beschäftigen sich vor allem mit Herzens- und Seelensangelegenheiten. Sie studieren Skulpturen, erstellen handgeschriebene Kopien und führen verlorene Seelen nach Hause."
+      },
+      {
+        "title": "Ressource/Sammelobjekt entdeckt 1",
+        "text": "Ich erkenne die Existenz von Raritäten an."
+      },
+      {
+        "title": "Ressource/Sammelobjekt entdeckt 2",
+        "text": "Wenn sich ein Geschenk von Veritas in der Nähe befindet, sollte es geholt werden."
+      },
+      {
+        "title": "Unerforschter Bereich entdeckt",
+        "text": "Egal, ob es gesegnet oder verflucht ist – das Reich gehört uns, und wir können es erkunden."
+      },
+      {
+        "title": "Starker Gegner entdeckt",
+        "text": "In der Nähe streift etwas Abtrünniges, Gefallenes umher. Mein Stab wird darum trauern."
+      },
+      {
+        "title": "Abbau 1",
+        "text": "Alles wurde vor uns in dieses Land gebracht – und mit der Arbeit unserer Hände werden wir es uns aneignen."
+      },
+      {
+        "title": "Abbau 2",
+        "text": "Ein Geschenk des Gesetzes."
+      },
+      {
+        "title": "Kiste öffnen",
+        "text": "Wieder erblickte ich den Überfluss, den das Gesetz versprochen hatte – ein Segen!"
+      },
+      {
+        "title": "Aurylen erhalten",
+        "text": "Aurylen … eine andere Sprache, die auf Talos-II geflüstert wird."
+      },
+      {
+        "title": "Eliminierung der Verderbnis",
+        "text": "Dieses formlose Material ist lediglich eine Variable auf unserer Reise."
+      },
+      {
+        "title": "Ausruhen",
+        "text": "Wir bitten dich um Hilfe bei der Suche nach der ewigen Ruhe."
+      },
+      {
+        "title": "Taktische Nutzung 1",
+        "text": "Ich bin hier, um Segen zu verbreiten."
+      },
+      {
+        "title": "Taktische Nutzung 2",
+        "text": "Gelobt seien gute Taten."
+      },
+      {
+        "title": "Gefahrenwarnung",
+        "text": "Sie haben böse Absichten!"
+      },
+      {
+        "title": "Verletzt",
+        "text": "Die Wanderung wird … anstrengender …"
+      },
+      {
+        "title": "0 LP",
+        "text": "Veritas … Warum …?"
+      },
+      {
+        "title": "Teammotivation 1",
+        "text": "Deine Technik hat mir die Augen geöffnet!"
+      },
+      {
+        "title": "Teammotivation 2",
+        "text": "Wir sind vereint – ganz ohne viele Worte!"
+      },
+      {
+        "title": "Motivationsreaktion 1",
+        "text": "Ich bin wirklich froh, bei euch zu sein."
+      },
+      {
+        "title": "Motivationsreaktion 2",
+        "text": "Ich werde für uns alle beten."
+      },
+      {
+        "title": "Kampf beginnt 1",
+        "text": "Das Leiden ist heute nicht unter uns."
+      },
+      {
+        "title": "Kampf beginnt 2",
+        "text": "Möge uns allen das Glück hold sein."
+      },
+      {
+        "title": "Kampfsieg 1",
+        "text": "Veritas hat dieses Schlachtfeld mit seiner Anwesenheit beehrt!"
+      },
+      {
+        "title": "Kampfsieg 2",
+        "text": "Meine Gebete wurden erhört."
+      },
+      {
+        "title": "Kampfsieg 3",
+        "text": "Ich finde Freude an der Sprache des Sieges."
+      },
+      {
+        "title": "Kampfsieg 4",
+        "text": "Meine Freunde … Erfolg und Misserfolg sind nicht so schwarz oder weiß wie 0 und 1, dazwischen gibt es ein ganzes Spektrum mit vielen kleinen Nuancen."
+      },
+      {
+        "title": "Niederlage im Kampf",
+        "text": "Das Besondere an Berechnungen ist, dass sie völlig neutral sind. Die Algorithmen sagen sowohl Erfolg als auch Misserfolg voraus. Bewahre deinen Glauben und mach weiter!"
+      },
+      {
+        "title": "Abschlussangriff 1",
+        "text": "Injektion!"
+      },
+      {
+        "title": "Abschlussangriff 2",
+        "text": "Rekursion!"
+      },
+      {
+        "title": "Kampffertigkeit 1",
+        "text": "Analysiere."
+      },
+      {
+        "title": "Kampffertigkeit 2",
+        "text": "Eine kalte Ausgabe."
+      },
+      {
+        "title": "Kampffertigkeit 3",
+        "text": "Sammle Daten."
+      },
+      {
+        "title": "Kombofertigkeit bereit 1",
+        "text": "Mein Gebet ist zu Ende."
+      },
+      {
+        "title": "Kombofertigkeit bereit 2",
+        "text": "Ich biete meine Rechenleistung an."
+      },
+      {
+        "title": "Kombo wirken 1",
+        "text": "Veritas sei mit dir."
+      },
+      {
+        "title": "Kombo wirken 2",
+        "text": "Alles wird wieder gut."
+      },
+      {
+        "title": "Wuchtschlag 1",
+        "text": "Neustart erforderlich!"
+      },
+      {
+        "title": "Wuchtschlag 2",
+        "text": "Zerstörung wird ausgeführt!"
+      },
+      {
+        "title": "Ultimative Fertigkeit 1",
+        "text": "Logik ist unerbitterlich."
+      },
+      {
+        "title": "Ultimative Fertigkeit 2",
+        "text": "Säubert die Korruption!"
+      },
+      {
+        "title": "Ultimative Fertigkeit 3",
+        "text": "Liste Verstöße auf."
+      }
+    ]
   },
   "potentials": {
     "potential1": {

@@ -118,7 +118,325 @@
         "name": "Kreatives",
         "description": "Kreatives: Waffen-Modding\nGeätzte Munition zu modifizieren mag ein langweiliger Job sein, aber es macht ihm Spaß, Leute zu finden, an denen er sie testen kann."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Einsatzvorbereitung 1",
+        "text": "Du hast das Kommando."
+      },
+      {
+        "title": "Einsatzvorbereitung 2",
+        "text": "Brechen wir jetzt auf?"
+      },
+      {
+        "title": "Wird zum Team hinzugefügt 1",
+        "text": "Brauchst du mich im Team? Klar. Aber sorg dafür, dass der Rest mithält."
+      },
+      {
+        "title": "Wird zum Team hinzugefügt 2",
+        "text": "Ein Teamauftrag …? Verstehe. Ich tue, was getan werden muss."
+      },
+      {
+        "title": "Waffe wird gewechselt",
+        "text": "Sehr gut ausbalanciert. Grazie."
+      },
+      {
+        "title": "Ausrüstung wird gewechselt",
+        "text": "Bis an die Zähne bewaffnet … eine kluge Entscheidung."
+      },
+      {
+        "title": "Fähigkeitsmatrix wird aktiviert",
+        "text": "Wahrlich gemeisterte Fertigkeiten sollten in wahrlich verzweifelten Situationen eingesetzt werden."
+      },
+      {
+        "title": "Kampfaufzeichnungen ansehen",
+        "text": "Das Rudel jagt zielgerichtet. Nur der schnellste Weg zum Sieg ist gut genug."
+      },
+      {
+        "title": "Operator-Beförderung 1",
+        "text": "Vielen Dank für deine Zustimmung, Endmin. Kann ich den Missionsbericht dieses Mal überspringen? Nein …? Na gut."
+      },
+      {
+        "title": "Operator-Beförderung 2",
+        "text": "Wie du siehst, Endmin, vertraust du mir die richtigen Aufgaben an – und ich lasse die Ergebnisse für sich sprechen."
+      },
+      {
+        "title": "Operator-Beförderung 3",
+        "text": "Jeder Wolf im Rudel verdient sich seinen Platz durch Blutvergießen. Wer genügend Beute erlegt, steigt auf. Endmin, heißt das, du bist mit meiner Jagd zufrieden?"
+      },
+      {
+        "title": "Operator-Beförderung 4",
+        "text": "Ich habe miterlebt, wie das Rudel unterging und welche Verwüstung damit einherging. Deshalb habe ich beschlossen, einen neuen Weg für Rossi und den Rest der Wölfe zu finden … Das Schicksal hat uns zusammengeführt, Endministrator. Es ist mir eine Ehre, diesen Weg mit dir zu gehen."
+      },
+      {
+        "title": "Operator meldet sich zum Dienst",
+        "text": "Catello Wulfgard Luppino, Endfield-Krisenteam. Ich spreche für das Rudel. Gib mir einen Söldnerjob, und solange unser Vertrag gilt, bin ich deine Klauen und Reißzähne."
+      },
+      {
+        "title": "Warten 1",
+        "text": "Hast du einen neuen Auftrag?"
+      },
+      {
+        "title": "Warten 2",
+        "text": "Ich bin hier."
+      },
+      {
+        "title": "Zuweisung zur Anlage",
+        "text": "Gibt’s hier auch zu wenig Leute?"
+      },
+      {
+        "title": "Gruß 1",
+        "text": "Endmin."
+      },
+      {
+        "title": "Gruß 2",
+        "text": "Soll ich mitkommen, Endmin? Ich hätte Zeit für dich."
+      },
+      {
+        "title": "Dijiang-Geplauder 1",
+        "text": "Die Arbeit mit anderen Operatoren ist nicht gerade einfach. Die Methoden des Rudels und mein einzelgängerisches Wesen sind nicht jedermanns Sache. Aber wenn du willst, dass ich mich an die Regeln halte … werde ich mich anpassen und dafür sorgen, dass es klappt."
+      },
+      {
+        "title": "Dijiang-Geplauder 2",
+        "text": "Ich fühle mich im Grenzgebiet wohler als an Bord der Dijiang. Ein gemütlicher Ort wie dieser macht einen weich. Aber Rossi liebt diesen Ort. Das Schiff befriedigt ihre Neugier."
+      },
+      {
+        "title": "Dijiang-Geplauder 3",
+        "text": "Ich will ganz offen sein. Ich hatte nie Interesse daran, die anderen Landbrecher-Klans zu studieren. Ich habe einfach genug Zeit in der Wildnis verbracht … und Überlebensfertigkeiten sind einfach zu einem Teil von mir geworden. Im Rudel glauben wir, dass unser Überlebensinstinkt der beste Lehrmeister ist. Das ist unser *einziger* Glaube."
+      },
+      {
+        "title": "Dijiang-Geplauder 4",
+        "text": "Endfield-Operatoren kommen aus allen Ecken von Talos-II, und ich sehe einige bekannte Gesichter … Oder sollte ich sagen … bekannte Bedrohungen. Ich vertraue immer noch auf dein Urteil, aber wenn die Situation es erfordert, hoffe ich, dass du auch meinen Instinkten vertraust."
+      },
+      {
+        "title": "Dijiang-Geplauder 5",
+        "text": "Waffenüberprüfungen sind mein Ritual. In der Wildnis ist man, wenn die Reißzähne versagen, totes Fleisch. Dasselbe gilt für eine tote Waffe: all deine Fertigkeiten, all dein Training – nutzlos. Keine Kraft, keine Verteidigung – nur langsamer Tod. Ich habe das als junger Welpe durchgemacht. Diese Lektion ist mir im Gedächtnis geblieben. Ich werde nie wieder zur Beute."
+      },
+      {
+        "title": "Dijiang-Geplauder 6",
+        "text": "Es ist lange her, seit ich meinen Klan das letzte Mal besucht oder ihn auf die Jagd geführt habe. Ich bin besser darin, neue Jagdgründe zu entdecken, als als Alpharion Raubzüge anzuführen."
+      },
+      {
+        "title": "Geschenke anbieten",
+        "text": "Hast du einen Moment Zeit, Endmin? Auf meiner letzten Mission habe ich etwas Interessantes gefunden … und dir mitgebracht."
+      },
+      {
+        "title": "Geschenke annehmen",
+        "text": "Für mich? Grazie. Das kann ich gut gebrauchen."
+      },
+      {
+        "title": "Vertrauensgespräch 1",
+        "text": "Ich behandle meine Ziele bereits gemäß den Endfield-Anforderungen. Wenn ich es auf die alte Art und Weise machen würde … wären sie *sehr, sehr* still, sobald ich sie zu fassen bekäme."
+      },
+      {
+        "title": "Vertrauensgespräch 2",
+        "text": "Ich glaube, du hast gemerkt, dass … es nie mein Ziel war, zum Rudel-Alpharion zu werden. Rossi wäre vielleicht besser für diese Rolle geeignet. Ich bin mir auch nicht sicher, ob Endfield die richtige Ruhestätte für Catello Wulfgard Luppino ist. Die Landbrecher-Vision könnte jedenfalls nicht unterschiedlicher sein als deine. Aber die Zusammenarbeit mit Endfield macht viel mehr Spaß, als ich erwartet hatte, Endmin."
+      },
+      {
+        "title": "Vertrauensgespräch 3",
+        "text": "Warum ich ständig zum Himmel blicke? Nun, es macht mir Spaß. Warum siehst du so überrascht aus? Der Himmel ist eine kostenlose Informationsquelle. Er verrät dir das Wetter, die Uhrzeit und deine Position. Du kannst ihn sogar nutzen, um gegnerische Aktionen vorherzusagen. Jeder Jäger spielt unter freiem Himmel nach den gleichen Regeln. Auch du kannst daraus etwas lernen, Endmin."
+      },
+      {
+        "title": "Vertrauensgespräch 4",
+        "text": "Meine Landbrecher-Identität ist das Ergebnis einer Fehlentscheidung meiner Vorfahren. Wir verrieten den Zivilisationsgürtel, um uns den Brecherfürsten anzuschließen, doch es gelang uns nicht, die Ordnung und Gerechtigkeit zu erschaffen, von der wir träumten. Ich kann meine Vorfahren nicht fragen, ob sie ihre Entscheidung bereut haben, aber da ich in ein Leben voller Konflikte und Blutvergießen in der Wildnis hineingeboren wurde, kenne ich mich mit Überleben besser aus als die meisten anderen. Aufseherin Perlica meinte, wir könnten die Bezeichnung „Landbrecher“ ablegen, indem wir mit Endfield zusammenarbeiten … aber für mich ist es nun mal das, was ich bin. *seufz* Enttäuscht dich das, Endmin?"
+      },
+      {
+        "title": "Vertrauensgespräch 5",
+        "text": "Das Rudel basiert auf einer einfachen Logik: Die Schwachen müssen sich zusammenschließen, um die Starken zu besiegen und in einer gnadenlosen Welt zu überleben. Jeder Kodex des Klans und die Landbrecher-Identität selbst basieren darauf. Und was hat Endfield? Eine große Vision ist ein zweischneidiges Schwert. Während das Rudel jederzeit eine neue Jagd starten kann, kann sich Endfield nicht mal eine einzige Niederlage leisten. Diese Welt ist gnadenlos, Endministrator. Aber zumindest bin ich Teil deiner Jagd und werde einen Teil deiner Last tragen."
+      },
+      {
+        "title": "Geplauder 1",
+        "text": "Ich weiß, dass Stärke nicht alles ist, aber auf Talos-II gibt es ohne Stärke kein Überleben."
+      },
+      {
+        "title": "Geplauder 2",
+        "text": "Rossi sammelt gerne derart komplizierte Dinge. Ich weiß nicht, wozu sie gut sind, aber für sie … werde ich einfach nach weiteren suchen."
+      },
+      {
+        "title": "Geplauder 3",
+        "text": "Unrealistischer Idealismus zerstört mehr Leben, als er rettet. Die meisten Bewohner des Grenzgebiets lernen das auf die harte Tour. Die wahre Tragödie besteht darin, dass manche Leute dazu bestimmt sind, Opfer zu werden."
+      },
+      {
+        "title": "Geplauder 4",
+        "text": "Ich löse Probleme lieber selber. Nicht dass ich alles bewältigen könnte – ich hoffe nur, jemand anderem eine Last abzunehmen."
+      },
+      {
+        "title": "Geplauder 5",
+        "text": "Man kann einen einsamen Wolf kaum dazu zwingen, seinem ehemaligen Rudel den Rücken zu kehren … Das steht außer Frage. Doch einige wenige haben sich für den Weg ohne Wiederkehr entschieden, um zu überleben … oder für etwas, das ihnen am Herzen liegt. Ich kann ihnen nichts abgewinnen und habe auch nicht die Absicht, mich einzumischen. Aber immerhin sehe ich die Entschlossenheit hinter ihren Entscheidungen."
+      },
+      {
+        "title": "Thema: Das Rudel",
+        "text": "Auch heute noch bin ich auf der Suche nach der Zukunft des Rudels. Die Zusammenarbeit mit Endfield ist vielleicht nicht die beste Option, aber ich glaube, es ist ein wichtiger und besonderer Schritt, den wir gehen müssen. Ich verstehe, dass kein Außenstehender die Mentalität des Rudels ändern kann, aber wir brauchen eine Chance, den Wandel einzuleiten. Jetzt versuche ich, herauszufinden, wie ich dem Rudel diese „Chance“ präsentieren kann."
+      },
+      {
+        "title": "Thema: Rossi",
+        "text": "Ich sollte mehr Zeit mit Rossi verbringen, aber wenn ich sie mir jetzt so ansehe … bin ich überrascht, wie sehr sie gewachsen ist. Sie teilt den Atem der Wildnis und schöpft mühelos Kraft aus dem Blut des Rudels. Waffenbeherrschung, die Aktivierung von Techniken und die Jagd … alles fiel ihr leicht. Sie ist nicht länger das hilflose Baby, eingehüllt in blutgetränkte Decken. Nein. Sie ist Rossina Wulfperl aus der Famiglia Luppino. Ich bin nur die Reißzähne des Rudels, aber Rossi wird immer sein Herz und seine Seele sein."
+      },
+      {
+        "title": "Thema: Landbrecher",
+        "text": "Landbrecher-Klans sind komplexer, als die meisten denken. Neben den Knochenbrechern und dem Rudel gibt es die Sandplünderer – einen seltsamen, lose organisierten Klan, der sich mit nur einer einzigen Brigantine einen Namen gemacht hat. Dann gibt es die Graunarben, die ihren ganzen Körper mit bindenden Versen tätowieren … und die Schattenschädel, eine gnadenlose Gruppe von Assassinen, denen sich nach Sonnenuntergang niemand mehr in den Weg stellt. Diese kleineren Klans haben in der Wildnis überlebt, daher ist es nur natürlich, dass sie ein paar Tricks kennen, um am Leben zu bleiben."
+      },
+      {
+        "title": "Ressource/Sammelobjekt entdeckt 1",
+        "text": "Da drüben gibt es was zu holen."
+      },
+      {
+        "title": "Ressource/Sammelobjekt entdeckt 2",
+        "text": "Besondere Beute gesichtet. Die sollten wir uns schnappen."
+      },
+      {
+        "title": "Unerforschter Bereich entdeckt",
+        "text": "Da drüben waren wir noch nicht. Sollten wir nicht vergessen."
+      },
+      {
+        "title": "Starker Gegner entdeckt",
+        "text": "Ich rieche Ärger. Das ist kein gewöhnlicher Gegner."
+      },
+      {
+        "title": "Abbau 1",
+        "text": "Ich hoffe, dass der Wert Lohn für unsere Bemühungen ist."
+      },
+      {
+        "title": "Abbau 2",
+        "text": "Vielleicht sollte ich mich darum kümmern … Oder nein, wir machen das als Team."
+      },
+      {
+        "title": "Kiste öffnen",
+        "text": "Herausragende Beute. Diese Jagd hat sich als erfolgreich erwiesen."
+      },
+      {
+        "title": "Aurylen erhalten",
+        "text": "Aurylen … Für Endfield ist das wahrscheinlich wertvoll."
+      },
+      {
+        "title": "Eliminierung der Verderbnis",
+        "text": "Du hast die richtige Entscheidung getroffen. Die Verderbnis behindert nur unseren Einsatz."
+      },
+      {
+        "title": "Ausruhen",
+        "text": "Munitionsüberprüfung abgeschlossen. Zeit für die nächste Jagd."
+      },
+      {
+        "title": "Taktische Nutzung 1",
+        "text": "Vorsichtig. Übertreib’s nicht."
+      },
+      {
+        "title": "Taktische Nutzung 2",
+        "text": "… Das war knapp."
+      },
+      {
+        "title": "Gefahrenwarnung",
+        "text": "Ausweichen!"
+      },
+      {
+        "title": "Verletzt",
+        "text": "Konzentriere dich auf den Kampf, nicht auf mich."
+      },
+      {
+        "title": "0 LP",
+        "text": "Hrngh … Brauche Hilfe!"
+      },
+      {
+        "title": "Teammotivation 1",
+        "text": "Coole Moves."
+      },
+      {
+        "title": "Teammotivation 2",
+        "text": "Super Teamarbeit."
+      },
+      {
+        "title": "Motivationsreaktion 1",
+        "text": "Ich kann noch mehr."
+      },
+      {
+        "title": "Motivationsreaktion 2",
+        "text": "Ich tue nur meine Pflicht."
+      },
+      {
+        "title": "Kampf beginnt 1",
+        "text": "Ich halte Ausschau nach einer Lücke."
+      },
+      {
+        "title": "Kampf beginnt 2",
+        "text": "Kümmere dich nicht um mich. Ich halte mit dir Schritt."
+      },
+      {
+        "title": "Kampfsieg 1",
+        "text": "Ich habe nichts anderes erwartet."
+      },
+      {
+        "title": "Kampfsieg 2",
+        "text": "Wie von mir vorhergesagt."
+      },
+      {
+        "title": "Kampfsieg 3",
+        "text": "Wir haben gewonnen. Nur das zählt."
+      },
+      {
+        "title": "Kampfsieg 4",
+        "text": "Es war schwieriger als gedacht … Aber wir waren siegreich. Nur das zählt."
+      },
+      {
+        "title": "Niederlage im Kampf",
+        "text": "Der Jäger kann manchmal zum Gejagten werden … Ich finde, es ist Zeit, die Jagd von neuem zu beginnen."
+      },
+      {
+        "title": "Abschlussangriff 1",
+        "text": "Ruhe!"
+      },
+      {
+        "title": "Abschlussangriff 2",
+        "text": "Es gibt kein Entkommen!"
+      },
+      {
+        "title": "Kampffertigkeit 1",
+        "text": "Ich mach’s schnell!"
+      },
+      {
+        "title": "Kampffertigkeit 2",
+        "text": "Blut des Rudels!"
+      },
+      {
+        "title": "Kampffertigkeit 3",
+        "text": "Aus dem Weg!"
+      },
+      {
+        "title": "Kombofertigkeit bereit 1",
+        "text": "Geladen und entsichert."
+      },
+      {
+        "title": "Kombofertigkeit bereit 2",
+        "text": "Ich bin dran."
+      },
+      {
+        "title": "Kombo wirken 1",
+        "text": "Bin dabei."
+      },
+      {
+        "title": "Kombo wirken 2",
+        "text": "Das war’s!"
+      },
+      {
+        "title": "Wuchtschlag 1",
+        "text": "Der ist geliefert."
+      },
+      {
+        "title": "Wuchtschlag 2",
+        "text": "Jetzt stirbst du!"
+      },
+      {
+        "title": "Ultimative Fertigkeit 1",
+        "text": "Niemand wird überleben!"
+      },
+      {
+        "title": "Ultimative Fertigkeit 2",
+        "text": "An die Gurgel!"
+      },
+      {
+        "title": "Ultimative Fertigkeit 3",
+        "text": "Wölfe, jetzt fressen wir!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

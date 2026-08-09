@@ -93,7 +93,229 @@
         "name": "???",
         "description": ""
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Prep Operação 1",
+        "text": "Eu ouço o Originium cantar."
+      },
+      {
+        "title": "Prep Operação 2",
+        "text": "A Endfield não vai parar de avançar."
+      },
+      {
+        "title": "Adicionando à equipe 1",
+        "text": "Estou em posição, Dijiang."
+      },
+      {
+        "title": "Adicionando à equipe 2",
+        "text": "Já estava na hora."
+      },
+      {
+        "title": "Trocando de arma",
+        "text": "Nada mal."
+      },
+      {
+        "title": "Trocando de equipamento",
+        "text": "Um excelente produto de fabricação industrial."
+      },
+      {
+        "title": "Ativação da Matriz de Capacidade",
+        "text": "Eu conheço esse sentimento..."
+      },
+      {
+        "title": "Assistindo a Registros de Combate",
+        "text": "Nunca esquecerei a visão deles."
+      },
+      {
+        "title": "Promoção do Operador 1",
+        "text": "Outro passo adiante..."
+      },
+      {
+        "title": "Promoção do Operador 2",
+        "text": "Eu vou proteger a Endfield. Sempre."
+      },
+      {
+        "title": "Promoção do Operador 3",
+        "text": "O passado e o presente devem se tornar um."
+      },
+      {
+        "title": "Promoção do Operador 4",
+        "text": "Ouvi a voz dela, ecoando como um sussurro nos sonhos. Repetidamente, sonhei com um mar sem limites, um que traz tristeza, desperta memórias... e fortalece minha determinação."
+      },
+      {
+        "title": "Em espera 1",
+        "text": "Ainda esperando algo?"
+      },
+      {
+        "title": "Em espera 2",
+        "text": "O Originium abrirá um caminho para nós."
+      },
+      {
+        "title": "Aceitando presentes",
+        "text": "Eu agradeço!"
+      },
+      {
+        "title": "Recurso/Colecionável detectado 1",
+        "text": "Vejam, ali..."
+      },
+      {
+        "title": "Recurso/Colecionável detectado 2",
+        "text": "Tem algo importante ali!"
+      },
+      {
+        "title": "Área Inexplorada Detectada",
+        "text": "A área próxima precisa de um levantamento adequado."
+      },
+      {
+        "title": "Inimigo poderoso descoberto",
+        "text": "Ameaça altamente hostil. Aproximem-se com cuidado."
+      },
+      {
+        "title": "Mineração 1",
+        "text": "Esses minerais podem ser úteis."
+      },
+      {
+        "title": "Mineração 2",
+        "text": "Deixe-me ajudar."
+      },
+      {
+        "title": "Abrindo um caixote",
+        "text": "Esta é uma viagem gratificante."
+      },
+      {
+        "title": "Adquirindo Aurileno",
+        "text": "Isto parece familiar."
+      },
+      {
+        "title": "Eliminando a Praga",
+        "text": "Eliminação da Praga confirmada."
+      },
+      {
+        "title": "Descansar",
+        "text": "Todos estão descansados."
+      },
+      {
+        "title": "Uso Tático 1",
+        "text": "Está se sentindo melhor?"
+      },
+      {
+        "title": "Uso Tático 2",
+        "text": "Muito melhor agora."
+      },
+      {
+        "title": "Aviso de Perigo",
+        "text": "Um ataque! Cuidado!"
+      },
+      {
+        "title": "Ferido",
+        "text": "Ainda estou em forma para lutar..."
+      },
+      {
+        "title": "0 PV",
+        "text": "Sinto muito... Está em suas mãos agora..."
+      },
+      {
+        "title": "Encorajamento da Equipe 1",
+        "text": "Você fez um movimento elegante."
+      },
+      {
+        "title": "Encorajamento da Equipe 2",
+        "text": "Estamos em perfeita sincronia."
+      },
+      {
+        "title": "Resposta a Encorajamento 1",
+        "text": "Você me deixa lisonjeado."
+      },
+      {
+        "title": "Resposta a Encorajamento 2",
+        "text": "Nosso trabalho em equipe está cada vez melhor."
+      },
+      {
+        "title": "Início do Combate 1",
+        "text": "Hora de lutar."
+      },
+      {
+        "title": "Início do Combate 2",
+        "text": "Estou com você."
+      },
+      {
+        "title": "Vitória em Combate 1",
+        "text": "Demos outro passo adiante, Endfielders."
+      },
+      {
+        "title": "Vitória em Combate 2",
+        "text": "Bom trabalho, pessoal."
+      },
+      {
+        "title": "Vitória em Combate 3",
+        "text": "Lidamos muito bem com essa luta!"
+      },
+      {
+        "title": "Vitória em Combate 4",
+        "text": "Estão todos bem?"
+      },
+      {
+        "title": "Derrota em Combate",
+        "text": "Não se preocupem. Vamos nos reagrupar e entender o que está acontecendo."
+      },
+      {
+        "title": "Golpe Final 1",
+        "text": "Tome isto!"
+      },
+      {
+        "title": "Golpe Final 2",
+        "text": "Vejam isto!"
+      },
+      {
+        "title": "Habilidade de Batalha 1",
+        "text": "Atacar!"
+      },
+      {
+        "title": "Habilidade de Batalha 2",
+        "text": "Você será esmagado!"
+      },
+      {
+        "title": "Habilidade de Batalha 3",
+        "text": "Acabem com eles!"
+      },
+      {
+        "title": "Combo de Habilidades Pronto 1",
+        "text": "Pronto para atacar."
+      },
+      {
+        "title": "Combo de Habilidades Pronto 2",
+        "text": "Confiem em mim."
+      },
+      {
+        "title": "Conjuração de Combo 1",
+        "text": "Cristalizar!"
+      },
+      {
+        "title": "Conjuração de Combo 2",
+        "text": "Enfrente seu fim!"
+      },
+      {
+        "title": "Finalizador 1",
+        "text": "Isso termina agora!"
+      },
+      {
+        "title": "Finalizador 2",
+        "text": "Peguei!"
+      },
+      {
+        "title": "Habilidade Suprema 1",
+        "text": "Sem segundas chances."
+      },
+      {
+        "title": "Habilidade Suprema 2",
+        "text": "Seu fim está à sua espera."
+      },
+      {
+        "title": "Habilidade Suprema 3",
+        "text": "O show acabou."
+      }
+    ]
   },
   "potentials": {
     "potential1": {

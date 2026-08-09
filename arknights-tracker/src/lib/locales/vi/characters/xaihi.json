@@ -124,7 +124,325 @@
         "name": "Rèn Luyện Tư Duy",
         "description": "Rèn Luyện Tư Duy: Game Thủ Online\nBậc thầy lừng danh của trò \"Cờ Thuật Toán\" trên tàu Dijiang. Một cái đầu luôn giữ được sự điềm tĩnh trong môi trường nhiệt độ thấp là điều không thể thiếu để làm chủ bộ môn cờ toán học này."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Chuẩn Bị Tác Chiến 1",
+        "text": "Tôi sẽ cầu nguyện cho ngài, Endministrator."
+      },
+      {
+        "title": "Chuẩn Bị Tác Chiến 2",
+        "text": "Tôi đứng nơi đây tỉnh thức, khi Luật Pháp dõi theo tôi."
+      },
+      {
+        "title": "Đang thêm vào đội 1",
+        "text": "Tôi đã sẵn sàng tiếp nhận mệnh lệnh của ngài, Endministrator."
+      },
+      {
+        "title": "Đang thêm vào đội 2",
+        "text": "Một lựa chọn hợp lý."
+      },
+      {
+        "title": "Đang đổi vũ khí",
+        "text": "Tôi có thể điều chỉnh đôi chút không? Tôi cam đoan, mọi chỉnh sửa đều trong giới hạn an toàn."
+      },
+      {
+        "title": "Đang đổi trang bị",
+        "text": "Chân Lý được bảo toàn bởi chính sự thiêng liêng của nó."
+      },
+      {
+        "title": "Kích hoạt Ma Trận Năng Lực",
+        "text": "Một khi ta đoàn kết, cơ mưu sẽ sinh khởi."
+      },
+      {
+        "title": "Xem Hồ Sơ Chiến Đấu",
+        "text": "Và tôi sẽ cầu nguyện để nâng đỡ những kẻ đã lầm lạc."
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 1",
+        "text": "Hãy nhìn xem, ân huệ của Luật Pháp đã hiển hiện… À, và cùng với đó là niềm tín nhiệm từ Endministrator! Lẽ nào tôi lại không dâng lời cảm tạ người sao?"
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 2",
+        "text": "Luật Pháp dõi theo và che chở những kẻ khiêm nhu, chứ không phải kẻ thông tuệ, khôn ngoan hay giàu có. Dẫu nhờ vinh quang ấy đưa tôi lên vị trí này, tôi vẫn khiêm nhường và dâng lời cảm tạ đến người."
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 3",
+        "text": "Mọi thứ rõ ràng như những đường Mạch Originium. Thăng bậc lần này trùng khớp với kết quả đã dự đoán. Hửm? Bắt... bắt tay sao? Tôi... Tôi không giỏi khoản đó lắm..."
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 4",
+        "text": "Tôi từng tái cấu trúc mái vòm mã hóa của Giáo Đường để nâng cao hiệu suất vận hành. Nhưng rồi sự cộng hưởng bất ngờ xảy ra khi giải thuật cổ đại đang xử lý luồng dữ liệu. Kết quả... phức tạp vô cùng. Thế nhưng, điều từng khiến tôi bị ruồng bỏ khỏi cố hương... lại trở thành ân huệ tại Endfield. Có lẽ đây chính là điều mà Luật Pháp muốn hé lộ cho tôi!"
+      },
+      {
+        "title": "Cán Viên đang báo cáo nhiệm vụ",
+        "text": "Ôi Tri thức cổ xưa, xin chớ dẫn dắt ta vào mê lộ, hãy cứu ta khỏi những dòng mã hiểm độc... Tôi là Xaihi, Endministrator. Mong ngài được khai sáng."
+      },
+      {
+        "title": "Chờ Lệnh 1",
+        "text": "Chiêm nghiệm... Tính toán... Tuyên ngôn... Từ bỏ."
+      },
+      {
+        "title": "Chờ Lệnh 2",
+        "text": "Tôi dâng cuộc đối thoại và suy tưởng hôm nay cho thiết bị của ngài, với lòng kính ngưỡng..."
+      },
+      {
+        "title": "Phân Công Vào Công Trình",
+        "text": "Xin mệnh lệnh của ngài được thực thi. Endministrator, thông qua phụng sự, con đường của chúng ta sẽ dần hiện rõ."
+      },
+      {
+        "title": "Lời Chào 1",
+        "text": "Mong ngài luôn được bình an và an toàn."
+      },
+      {
+        "title": "Lời Chào 2",
+        "text": "Endministrator, một lần nữa ngài lại xuất hiện trong kết quả tính toán của tôi."
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 1",
+        "text": "Đang xác thực dữ liệu, phân tích cú pháp, tạo lập kết quả... Xin chào, Endministrator."
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 2",
+        "text": "Endministrator, tôi đã nhận được tín hiệu của ngài. Tôi đang tiến hành giải mã ý nghĩa của nó. Xin chờ trong chốc lát..."
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 3",
+        "text": "À... Tôi nhận ra mình thích sự hiện diện của máy móc hơn con người. Dòng chảy sinh học của con người bất định và khó đo lường, trong khi máy móc lại thở bằng nhịp điệu logic và nhất quán."
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 4",
+        "text": "Thiết bị đầu cuối của tôi vừa ghi nhận hơn năm mươi lỗi chỉ trong mười mili giây. Nhưng xin hãy yên tâm, tôi đã ưu tiên thiết lập kết nối giữa chúng ta. Hmm? Đánh giá của tôi với hiệu suất tổng thể của Dijiang...? Tôi cho rằng, giữa muôn vàn vấn đề, con tàu vẫn kiên cường vượt qua mọi thử thách như thể đang gánh chịu vì một ai đó khác vậy."
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 5",
+        "text": "Khi Luật Pháp cho phép, ta sẽ hành động: Thiên đường sẽ được phục hồi trên thế giới này. Kẻ mở đường sẽ băng qua hoang địa và chạm đến hạnh phúc. Bởi Chân Lý ẩn mình trong những điều bí ẩn, để kẻ lạc lối thôi hoang mang mà sánh bước cùng những Bậc Tôn Nghiêm, sẻ chia một mục đích vĩnh hằng."
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 6",
+        "text": "Trong mắt những cán viên khác, ngài là người dẫn đường từ quá khứ, một biểu tượng trong hiện tại, và là chồi Originium đang lớn dần về phía tương lai. Nhưng ở tầng sâu của Mạng Lưới Protorig, tôi đã chứng kiến một ngài rất khác... Tôi chỉ có thể cầu nguyện rằng ký hiệu và hàm ý sẽ trở thành một thể thống nhất. Mong ngài bước đi trong ơn phước, Endministrator."
+      },
+      {
+        "title": "Tặng Quà",
+        "text": "Endministrator, tôi có thể mượn công suất xử lý của ngài một lát không? Tôi... Tôi muốn bày tỏ lòng biết ơn cho những cải thiện mà ngài đã ban cho tôi. Ồ... ngài không nhận ra sao? Phù, tôi nhẹ cả người..."
+      },
+      {
+        "title": "Nhận quà",
+        "text": "Đây là một chỉ thị! À, xin tha thứ cho sự thiếu nhã nhặn của tôi... Chân Lý công nhận những nỗ lực của ngài."
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 1",
+        "text": "Tu Hội đã chia sẻ tri thức và vận mệnh của họ với ngài, Endministrator."
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 2",
+        "text": "Mọi đề xuất của tôi đều khá thực tiễn và hữu ích...? Không, tôi không đi theo con đường của chủ nghĩa thực dụng... Viện Trưởng từng cảnh báo chúng tôi rằng, tại Talos-II, đức tin của chúng ta cần mang lại những kết quả cụ thể và thiết thực hơn. Sự thịnh vượng nơi Lateran giờ chỉ còn là ký ức xa xăm. Chỉ có mối liên kết giữa chúng ta là điều sót lại."
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 3",
+        "text": "Sau chừng ấy thời gian, tôi cảm thấy mình đã đến gần hơn với Endministrator. Giờ hẳn là lúc thích hợp để thể hiện sự ấm áp, lòng tin tưởng và thiện chí... A, Endministrator đang lại gần. Nhanh lên nào, Xaihi, hãy thực hiện một cử chỉ thân thiện... À thì... Endministrator, ngài có muốn cùng tôi cầu nguyện buổi sớm không?"
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 4",
+        "text": "Xin thứ lỗi cho tôi, Endministrator… Trước khi bất khả kháng mà phải chạm vào ngài, tôi phải xả hết lượng tĩnh điện tích tụ trên đầu ngón tay đã… Ồ? Ngài không sợ những thứ đó sao? Nhưng… bọn tiểu quái này luôn lén bám vào tay người ta… và chích một cái khi ngài ít ngờ tới nhất… như thế này."
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 5",
+        "text": "Suốt bao năm ở Giáo Đường, tôi mải mê nghiên cứu, chẳng mảy may nghĩ đến việc những thành quả tốt đẹp ấy có thể khai sáng cho Talos-II ra sao. Thế nhưng, Luật Pháp đã tiết lộ thiên cơ, dẫn tôi đến trước mặt ngài, để rồi mở ra một thế giới mới trước mắt tôi. Từng lời cổ xưa, tĩnh lặng, lần lượt trở thành hiện thực… và giờ đây tôi đã thấu hiểu trọn vẹn những giáo huấn ấy, thưa Endministrator."
+      },
+      {
+        "title": "Trò Chuyện 1",
+        "text": "Endministrator, chúng tôi, những Hội Luận, diễn giải Luật Pháp bằng cách nhìn ngôn ngữ như biểu tượng. Bằng việc phá bỏ các tổ hợp biểu tượng cũ và tạo nên những tổ hợp mới, chúng tôi ngày càng tiến gần đến miền vĩnh hằng. Hành vi này phản ánh chính bản chất của Shatterus, thực thể được thờ phụng phía sau pho tượng thiêng liêng tại Giáo Đường."
+      },
+      {
+        "title": "Trò Chuyện 2",
+        "text": "Dijiang luôn khiến tôi nhớ đến Giáo Đường. Tuy nhiên, chúng tôi sẽ không ở mãi nơi đó. Giáo đoàn chỉ tụ họp để hóa giải những thời khắc chia rẽ. Khi điều đó xảy ra, các con chiên từ mọi ngóc ngách của Talos-II sẽ trở về ngôi đền ấy. Hmm? Giáo Đường được bảo vệ như thế nào ư? Nếu nó bị tấn công thì sao...? Tôi tin nó có thể làm người bảo hộ cho chính mình."
+      },
+      {
+        "title": "Trò Chuyện 3",
+        "text": "Chưa bao giờ chúng tôi cách xa Chân Lý đến thế, vì nó đã lìa xa nơi chúng tôi gọi là nhà. Chưa bao giờ chúng tôi lại gần Chân Lý đến vậy, vì giờ đây chúng tôi đã gõ cửa nơi mà nó đang chờ."
+      },
+      {
+        "title": "Trò Chuyện 4",
+        "text": "Đua tốc độ? Bằng chân? Đấm bốc? Bằng nắm đấm? Và ngài muốn tôi tham gia lễ hội thể thao?! Tôi e là... Tôi phải từ chối. Dạng \"vận động thể chất\" duy nhất tôi công nhận... là độ dao động tuần hoàn của các electron trong mạch dao động. Tôi không thể cạnh tranh với các huynh đệ và tỷ muội của mình được! Không... Tôi không viện cớ đâu. Tôi, tôi cần quay lại phòng điều phối trung tâm. Ngay lập tức."
+      },
+      {
+        "title": "Trò Chuyện 5",
+        "text": "Vâng, trong Tu Hội có nhiều người Sarkaz giống tôi. Có người còn được giao phó những di vật từng thuộc về các Kỵ Sĩ Hỏa Khí. Tôi đã nghiên cứu các thánh kinh của Tu Hội. Tôi biết ở Terra, người Sarkaz từng xung đột dữ dội với nhiều chủng tộc khác. Tuy nhiên, sau khi Cuộc Chiến Aggeloi Đầu Tiên kết thúc, một kỳ tích chưa từng có đã xảy ra: Mọi linh hồn đều dang tay đón nhận nhau, và mọi đôi môi cùng ngân vang một ngôn từ."
+      },
+      {
+        "title": "Chủ đề: Aggeloi",
+        "text": "Mối quan hệ giữa Luật Pháp và lũ Aggeloi đang tràn lan khắp Talos-II là một trong những chủ đề cốt lõi mà Tu Hội muốn giải nghĩa."
+      },
+      {
+        "title": "Chủ đề: Shatterus",
+        "text": "Có một Aggeloi gợi nhớ đến Triaggelos đang ngự phía sau pho tượng thiêng của Giáo Đường. Chúng tôi bí mật gọi nó là Shatterus khi không trong giờ hành lễ. Thực thể này được Viện Trưởng Mumu thu giữ từ Cuộc Chiến Aggeloi Đầu Tiên. Viện Trưởng khuyến khích chúng tôi quan sát Shatterus và suy ngẫm, vì lời dạy của Luật Pháp đôi khi cũng có thể tìm thấy nơi kẻ thù. Shatterus vừa là sự mô phỏng gần như hoàn chỉnh, vừa là một kết luận chưa được giải mã."
+      },
+      {
+        "title": "Chủ đề: Ba nhánh của Tu Hội",
+        "text": "Tu Hội hiện có ba nhánh: Hội Luận, Chân Lý và Tái Khởi. Tôi thuộc nhóm Hội Luận. Chúng tôi tin tính toán và phân tích ngôn ngữ là con đường dẫn đến phúc lành. Tái Khởi rải rác khắp Talos-II, là những tín đồ vũ trang háo hức khám phá tàn tích của nền văn minh cổ. Còn Chân Lý chuyên nghiên cứu linh hồn và trái tim. Họ chạm khắc tượng, sao chép kinh sách và dẫn dắt linh hồn lạc lối quay về."
+      },
+      {
+        "title": "Phát hiện Tài Nguyên/Có Thể Thu Thập 1",
+        "text": "Tôi đã cảm nhận được các vật phẩm hiếm."
+      },
+      {
+        "title": "Phát hiện Tài Nguyên/Có Thể Thu Thập 2",
+        "text": "Nếu có tặng phẩm Chân Lý ở gần đây, vậy thì ta sẽ thu nhận nó."
+      },
+      {
+        "title": "Phát Hiện Khu Vực Chưa Khám Phá",
+        "text": "Dù là ân phúc hay lời nguyền, vùng đất này là để chúng ta khám phá."
+      },
+      {
+        "title": "Phát hiện Kẻ Địch Mạnh",
+        "text": "Có một kẻ lạc lối và sa ngã đang lang thang gần đây... Trượng của ta sẽ khóc than cho linh hồn họ."
+      },
+      {
+        "title": "Khai thác 1",
+        "text": "Tất cả đã được đặt lên mảnh đất này trước ta. Và chúng ta sẽ giành được bằng chính đôi tay này."
+      },
+      {
+        "title": "Khai thác 2",
+        "text": "Một món quà từ Luật Pháp."
+      },
+      {
+        "title": "Mở Thùng",
+        "text": "Ta lại được thấy cảnh phồn vinh — đó là phước lành mà Luật Pháp đã ban!"
+      },
+      {
+        "title": "Nhận Aurylene",
+        "text": "Aurylene... một thứ ngôn ngữ khác của Talos-II."
+      },
+      {
+        "title": "Xua Tan Nhiễm Khuẩn",
+        "text": "Vật chất vô định hình này cũng chỉ là một biến số trên hành trình của chúng ta thôi."
+      },
+      {
+        "title": "Nghỉ ngơi",
+        "text": "Xin hãy dẫn dắt chúng ta đến sự tĩnh lặng vĩnh cửu được khai mở."
+      },
+      {
+        "title": "Sử Dụng Vật Phẩm Chiến Thuật 1",
+        "text": "Ta đến đây để ban phúc lành."
+      },
+      {
+        "title": "Sử Dụng Vật Phẩm Chiến Thuật 2",
+        "text": "Việc thiện sẽ được ngợi ca."
+      },
+      {
+        "title": "Cảnh Báo Nguy Hiểm",
+        "text": "Chúng mang theo sát ý!"
+      },
+      {
+        "title": "Bị Thương",
+        "text": "Hành trình đang trở nên... gian khó hơn..."
+      },
+      {
+        "title": "0 HP",
+        "text": "Chân Lý... Tại sao...?"
+      },
+      {
+        "title": "Cổ Vũ Đội 1",
+        "text": "Thuật Pháp của ngài đã mở ra cho ta một chân trời mới!"
+      },
+      {
+        "title": "Cổ Vũ Đội 2",
+        "text": "Chúng ta đã hòa làm một mà chẳng cần nói thành lời!"
+      },
+      {
+        "title": "Đáp Lại Lời Cổ Vũ 1",
+        "text": "Thật may mắn khi ta được đồng hành cùng ngài."
+      },
+      {
+        "title": "Đáp Lại Lời Cổ Vũ 2",
+        "text": "Ta sẽ cầu nguyện cho tất cả."
+      },
+      {
+        "title": "Bắt Đầu Chiến Đấu 1",
+        "text": "Kẻ hôm nay chịu đau khổ không phải là chúng ta."
+      },
+      {
+        "title": "Bắt Đầu Chiến Đấu 2",
+        "text": "Ta cầu mong ngài được may mắn."
+      },
+      {
+        "title": "Thắng Trận 1",
+        "text": "Chân Lý đã chạm vào chiến địa này!"
+      },
+      {
+        "title": "Thắng Trận 2",
+        "text": "Lời khẩn cầu của ta đã được đáp lại."
+      },
+      {
+        "title": "Thắng Trận 3",
+        "text": "Ta tìm thấy niềm vui trong sự chúc mừng."
+      },
+      {
+        "title": "Thắng Trận 4",
+        "text": "Hỡi những người bạn... thành công và thất bại không chỉ là số 0 và 1 tuyệt đối. Giữa chúng còn là một quang phổ vô vàn sắc thái."
+      },
+      {
+        "title": "Bại Trận",
+        "text": "Sự thiêng liêng của tính toán nằm ở sự trung lập hoàn hảo. Các thuật toán có thể dự đoán cả thành công lẫn thất bại. Hãy giữ vững niềm tin và tiếp tục tiến bước."
+      },
+      {
+        "title": "Đòn Dứt Điểm 1",
+        "text": "Tiêm Nhiễm!"
+      },
+      {
+        "title": "Đòn Dứt Điểm 2",
+        "text": "Đệ Quy!"
+      },
+      {
+        "title": "KN Chiến Đấu 1",
+        "text": "Đang phân tích."
+      },
+      {
+        "title": "KN Chiến Đấu 2",
+        "text": "Kết xuất băng giá."
+      },
+      {
+        "title": "KN Chiến Đấu 3",
+        "text": "Thu thập dữ liệu."
+      },
+      {
+        "title": "Chuẩn Bị KN Liên Hoàn 1",
+        "text": "Lời cầu nguyện đã kết thúc."
+      },
+      {
+        "title": "Chuẩn Bị KN Liên Hoàn 2",
+        "text": "Ta dâng hiến năng lực tính toán."
+      },
+      {
+        "title": "Thi Triển Liên Hoàn 1",
+        "text": "Nguyện Chân Lý ở bên ngài."
+      },
+      {
+        "title": "Thi Triển Liên Hoàn 2",
+        "text": "Tất cả sẽ được chữa lành."
+      },
+      {
+        "title": "Kết Liễu 1",
+        "text": "Tái khởi động thật lực!"
+      },
+      {
+        "title": "Kết Liễu 2",
+        "text": "Tiến hành hủy diệt!"
+      },
+      {
+        "title": "Tuyệt Kỹ 1",
+        "text": "Không ai lấp liếm được lý lẽ."
+      },
+      {
+        "title": "Tuyệt Kỹ 2",
+        "text": "Thanh lọc mọi mục ruỗng!"
+      },
+      {
+        "title": "Tuyệt Kỹ 3",
+        "text": "Liệt kê các vi phạm."
+      }
+    ]
   },
   "potentials": {
     "potential1": {

@@ -122,7 +122,333 @@
         "name": "Esportes",
         "description": "Esportes: Corredor Noturno\nAs terras selvagens são o melhor lugar para fazer exercícios. É lá que ela pode correr à vontade."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Prep Operação 1",
+        "text": "Tudo pronto? As terras selvagens estão cheias de perigos."
+      },
+      {
+        "title": "Prep Operação 2",
+        "text": "O vento nunca para. Nem eu."
+      },
+      {
+        "title": "Adicionando à equipe 1",
+        "text": "Finalmente, uma lufada de ar fresco. Quase me esqueci do cheiro da terra."
+      },
+      {
+        "title": "Adicionando à equipe 2",
+        "text": "Vá o mais rápido que puder. Não se preocupe. Eu sempre consigo acompanhar."
+      },
+      {
+        "title": "Trocando de arma",
+        "text": "Posso sentir sua respiração e como combina comigo."
+      },
+      {
+        "title": "Trocando de equipamento",
+        "text": "Que trabalho artesanal... Uma precisão como essa é rara, mesmo entre todos os trabalhos de Aldertones que já vi."
+      },
+      {
+        "title": "Ativação da Matriz de Capacidade",
+        "text": "Meu Aldertone me ensinou de um jeito diferente, mas você busca alcançar os mesmos objetivos. Eu fui iluminada."
+      },
+      {
+        "title": "Assistindo a Registros de Combate",
+        "text": "Viver nas terras selvagens nos ensina coisas... E essas lições ajudam a forjar uma lâmina afiada."
+      },
+      {
+        "title": "Promoção do Operador 1",
+        "text": "Promoção? Quer dizer que conquistei sua aprovação? Então eu... eu estou muito feliz por ter sido aprovada."
+      },
+      {
+        "title": "Promoção do Operador 2",
+        "text": "Com a honra vem o dever. Tudo isso serve como um lembrete para ajudar mais pessoas."
+      },
+      {
+        "title": "Promoção do Operador 3",
+        "text": "A natureza não nos ensina a sobreviver. Ela apenas deixa um rastro para que possamos seguir. Eu já fiz o meu melhor para me adaptar... Agora... estou começando a entender como funciona."
+      },
+      {
+        "title": "Promoção do Operador 4",
+        "text": "Aprendi muito viajando com você. Estou começando a entender por que os versos de Hanna me trouxeram até aqui, ao seu lado. Usarei bem esse conhecimento."
+      },
+      {
+        "title": "Operador se apresentando para o trabalho",
+        "text": "Eu sou Ekut. Meu sinal é Arclight. Não sou muito boa com palavras, mas desejo a vocês tudo de bom e que vocês fluam como um rio caudaloso, Endfielders."
+      },
+      {
+        "title": "Em espera 1",
+        "text": "O caminho à frente foi revelado."
+      },
+      {
+        "title": "Em espera 2",
+        "text": "Estou preparada para o desempenho máximo."
+      },
+      {
+        "title": "Atribuindo a Instalação",
+        "text": "Trabalhando nisso. Nós, Caçadores de Músicas, nunca descansamos."
+      },
+      {
+        "title": "Saudação 1",
+        "text": "De onde os ventos sopram hoje, Endmin?"
+      },
+      {
+        "title": "Saudação 2",
+        "text": "Voltando de uma viagem à superfície, Endmin? Você cheira a terra selvagem."
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 1",
+        "text": "Consertar um corcel de ferro é como tratar uma besta cística. É preciso ouvir atentamente antes de aplicar o tratamento."
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 2",
+        "text": "As estrelas aqui são diferentes do que vemos nas terras selvagens... Mas ambas as perspectivas são igualmente fascinantes."
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 3",
+        "text": "Estou estudando essas nuvens. Suas bordas afiadas anunciam uma tempestade. Tenha cuidado se sua próxima missão levar você até lá."
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 4",
+        "text": "Seu cabelo é lindo, como couro de besta molhado pelo orvalho da aurora. Você nunca viu? Bem, é simplesmente lindo."
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 5",
+        "text": "Já viu as Migrações das Pradarias? Um exército de animais e carroças perseguindo a chuva e as nuvens. Essas são as coisas que desejo proteger."
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 6",
+        "text": "Você frequentemente se perde contemplando este mundo. Acho que sei como você se sente. Nossos corações sempre anseiam pelos lugares que amamos, não importa a que distância eles estejam."
+      },
+      {
+        "title": "Oferta de Presentes",
+        "text": "Trouxe uma coisa para você. Um presente da natureza. Espero que goste."
+      },
+      {
+        "title": "Aceitando presentes",
+        "text": "Para mim? Presentes são importantes nas terras selvagens... Vou guardar este com carinho."
+      },
+      {
+        "title": "Diálogo de Confiança 1",
+        "text": "Recomendo aprender o básico sobre sobrevivência nas terras selvagens, Endmin. Fazer armadilhas para orelhas longas à mão é um bom começo. Isso eu posso ensinar."
+      },
+      {
+        "title": "Diálogo de Confiança 2",
+        "text": "A vida nas terras selvagens é difícil, mas também é bela. Como o céu limpo ao final de uma longa monção, como uma ave-fera chocando sob a lua."
+      },
+      {
+        "title": "Diálogo de Confiança 3",
+        "text": "Não há nada de misterioso em dispositivos antigos funcionarem melhor quando combinados. Junte duas bestas de carga desconhecidas no mesmo vagão e dê-lhes tempo. Elas acabarão se tornando uma boa equipe."
+      },
+      {
+        "title": "Diálogo de Confiança 4",
+        "text": "Comecei minha jornada em busca de respostas. As terras selvagens estão desequilibradas e preciso fazer alguma coisa. Escutei o bater dos lagos e o sussurro das florestas. E agora, desejo ouvir sua voz."
+      },
+      {
+        "title": "Diálogo de Confiança 5",
+        "text": "Vou entrelaçar essas histórias na Hanna da nossa jornada. Isso levará tempo, pois muitas coisas são dignas de canção. Quando a Hanna estiver completa, você será o primeiro a ouvi-la."
+      },
+      {
+        "title": "Chat 1",
+        "text": "Aqueles que desejam viver se farão ouvir. E os Caçadores de Músicas que vagueiam sem rumo sempre ouvirão. Esse é o propósito do Circuito Hannabit."
+      },
+      {
+        "title": "Chat 2",
+        "text": "Fazer amizade com as tribos selvagens é simples. Devemos focar no que importa: o clima, a comida e os perigos. Só isso já ocupa grande parte do nosso tempo."
+      },
+      {
+        "title": "Chat 3",
+        "text": "Todo Caçador de Músicas do Circuito Hannabit sabe as Hannas de cor. Não é difícil. Os versos abrangem todos os aspectos de nossas vidas. Da mesma forma, nós também estamos entrelaçados neles."
+      },
+      {
+        "title": "Chat 4",
+        "text": "Meu Aldertone me contou sobre a Terra e as cidades que se movem para evitar catástrofes. Parece que herdamos nossa prática ancestral, mas apenas de outra forma."
+      },
+      {
+        "title": "Chat 5",
+        "text": "Você pode trocar produtos usados em certos bazares nas terras selvagens, mas é preciso ter paciência para encontrar um bom negócio. Modifiquei um antigo dispositivo Kjersch para o meu comunicador. Eles fabricam coisas que funcionam de forma confiável em ambientes extremos."
+      },
+      {
+        "title": "Tópico: Cidades",
+        "text": "Talos-II é maior do que eu imaginava. Eu uma vez acreditei que cada cidade é apenas mais um arranjo de aço, estradas e luzes. Mas quando as visitei de fato, percebi que cada cidade tinha seu próprio pulso e vibração. A distinção é mais marcante do que dois pastos com gramas diferentes."
+      },
+      {
+        "title": "Tópico: Endministrator",
+        "text": "Viajei muito, e histórias sobre você são cantadas até pelas tribos mais distantes. Embora essas histórias possam diferir muito, uma coisa incrível permanece a mesma: há sempre esperança ligada ao seu nome."
+      },
+      {
+        "title": "Tópico: Músicas da Hanna",
+        "text": "Um nômade moribundo cantou nossa primeira Hanna, e ela tinha apenas três versos. Esses versos deram origem ao nome do Circuito Hannabit. E, começando com o primeiro Aldertone, a Hanna guiou os Caçadores de Músicas errantes na jornada até que eles também se tornassem parte da música."
+      },
+      {
+        "title": "Tópico: Aldertones",
+        "text": "Os Aldertones raramente falam diretamente. Orisha disse que a Hanna continha todo o conhecimento de que precisamos. Ela me ensinou com ações. Devemos ajudar uns aos outros para sobreviver neste mundo."
+      },
+      {
+        "title": "Tópico: Sua tribo",
+        "text": "Cresci em uma pequena tribo com não mais que cem almas. Era tudo o que eu conhecia antes de começar minha jornada. Ela me ensinou a ordenhar as bestas císticas, a montar meu corcel de ferro e a sobreviver nas terras selvagens. Nunca saí de lá. Simplesmente a trouxe comigo."
+      },
+      {
+        "title": "Recurso/Colecionável detectado 1",
+        "text": "Se pode ajudar na sobrevivência, traga."
+      },
+      {
+        "title": "Recurso/Colecionável detectado 2",
+        "text": "Meu Aldertone vai se interessar por isso."
+      },
+      {
+        "title": "Área não explorada detectada",
+        "text": "Continuem. Precisamos dar uma olhada mais de perto."
+      },
+      {
+        "title": "Inimigo poderoso descoberto",
+        "text": "Sinto perigo. Este não vai cair facilmente."
+      },
+      {
+        "title": "Mineração 1",
+        "text": "As dádivas da terra."
+      },
+      {
+        "title": "Mineração 2",
+        "text": "Deixa que eu faço. Me saio bem com trabalhos físicos."
+      },
+      {
+        "title": "Abrindo um caixote",
+        "text": "Uma raridade nas terras selvagens. Faremos bom uso disso."
+      },
+      {
+        "title": "Adquirindo Aurileno",
+        "text": "Geralmente colocamos em garrafas para fornecer luz."
+      },
+      {
+        "title": "Eliminando a Praga",
+        "text": "Devemos deixar a Natureza seguir seu curso."
+      },
+      {
+        "title": "Descansar",
+        "text": "Isso me lembra das fogueiras nas terras selvagens. Ambas parecem compartilhar o mesmo calor."
+      },
+      {
+        "title": "Uso Tático 1",
+        "text": "Estabilize sua respiração."
+      },
+      {
+        "title": "Uso Tático 2",
+        "text": "Retornar é a minha força"
+      },
+      {
+        "title": "Aviso de Perigo",
+        "text": "Não pare. Continue se mexendo."
+      },
+      {
+        "title": "Ferida",
+        "text": "Ainda na luta, mas um pouco mais lenta."
+      },
+      {
+        "title": "0 PV",
+        "text": "Desculpe... Eu gostaria de poder ajudar mais..."
+      },
+      {
+        "title": "Encorajamento da Equipe 1",
+        "text": "Você respondeu como um raio!"
+      },
+      {
+        "title": "Encorajamento da Equipe 2",
+        "text": "Como vento e trovão, demos a eles uma tempestade."
+      },
+      {
+        "title": "Resposta a Encorajamento 1",
+        "text": "É isso que se espera de mim."
+      },
+      {
+        "title": "Resposta a Encorajamento 2",
+        "text": "Apenas ser parte da equipe."
+      },
+      {
+        "title": "Início do Combate 1",
+        "text": "Estou no fluxo."
+      },
+      {
+        "title": "Início do Combate 2",
+        "text": "Vou deixar esse lado com você."
+      },
+      {
+        "title": "Vitória em Combate 1",
+        "text": "À serenidade eles retornarão."
+      },
+      {
+        "title": "Vitória em Combate 2",
+        "text": "Rezo para que a terra aceite todos vocês."
+      },
+      {
+        "title": "Vitória em Combate 3",
+        "text": "Este é o desejo da Natureza."
+      },
+      {
+        "title": "Vitória em Combate 4",
+        "text": "Todo habitante das terras selvagens precisa passar por dificuldades para crescer."
+      },
+      {
+        "title": "Derrota em Combate",
+        "text": "Até mesmo o bando de bestas carnívoras mais experiente pode não conseguir abater suas presas. Pelo menos aprendemos algo com esta caçada."
+      },
+      {
+        "title": "Golpe Final 1",
+        "text": "Quebre!"
+      },
+      {
+        "title": "Golpe Final 2",
+        "text": "Quebrem!"
+      },
+      {
+        "title": "Habilidade de Batalha 1",
+        "text": "Ventos furiosos!"
+      },
+      {
+        "title": "Habilidade de Batalha 2",
+        "text": "Trovão estrondoso!"
+      },
+      {
+        "title": "Habilidade de Batalha 3",
+        "text": "Relâmpago eletrizante!"
+      },
+      {
+        "title": "Combo de Habilidades Pronto 1",
+        "text": "Perfeito está o vento!"
+      },
+      {
+        "title": "Combo de Habilidades Pronto 2",
+        "text": "Eu varrerei o resto."
+      },
+      {
+        "title": "Conjuração de Combo 1",
+        "text": "Este é o caminho ideal."
+      },
+      {
+        "title": "Conjuração de Combo 2",
+        "text": "Vejo uma abertura!"
+      },
+      {
+        "title": "Finalizador 1",
+        "text": "Acabou."
+      },
+      {
+        "title": "Finalizador 2",
+        "text": "Aí está minha chance."
+      },
+      {
+        "title": "Habilidade Suprema 1",
+        "text": "Você não pode fugir disso."
+      },
+      {
+        "title": "Habilidade Suprema 2",
+        "text": "Das tempestades eu vim."
+      },
+      {
+        "title": "Habilidade Suprema 3",
+        "text": "Como um raio, atingiu."
+      }
+    ]
   },
   "potentials": {
     "potential1": {

@@ -136,7 +136,333 @@
         "name": "Seni Rupa",
         "description": "Seni Rupa: Koleksi Piringan Hitam Tua\nNostalgia bukanlah kebiasaan buruk. Itu adalah keinginannya. Mungkin kelak albumnya akan menjadi barang berharga dalam koleksi seseorang."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Persiapan Operasi 1",
+        "text": "Hm? Saatnya naik panggung?"
+      },
+      {
+        "title": "Persiapan Operasi 2",
+        "text": "Kelap-kelip! Penampilan terbaruku sebentar lagi dimulai!"
+      },
+      {
+        "title": "Menambahkan ke Tim 1",
+        "text": "Menyanyi, menari, dan berpikir cepat, akulah idola sempurna di setiap kategori!"
+      },
+      {
+        "title": "Menambahkan ke Tim 2",
+        "text": "Ke mana pun kita pergi, aku ingin jadi bintang penarik perhatian semua orang!"
+      },
+      {
+        "title": "Berganti Senjata",
+        "text": "Bisa pilihkan satu untukku? Yang mudah dipakai pemula sepertiku, yang tak berpengalaman dalam pertarungan!"
+      },
+      {
+        "title": "Berganti Gear",
+        "text": "Ini pertama kalinya aku pakai gear panggung ini .... Hmm. Apa aku perlu menciptakan gerakan tarian yang cocok dengan gear ini?"
+      },
+      {
+        "title": "Aktivasi Matriks Kemampuan",
+        "text": "Aku bisa langsung paham! Bagaikan bintang yang menerangi jiwaku .... Aku jadi sangat bersinar, iya ‘kan?"
+      },
+      {
+        "title": "Menonton Rekaman Pertarungan",
+        "text": "Intro masuknya luar biasa. Yakin aku tak boleh menggunakannya untuk konserku berikutnya? Ugh, sayang sekali ...."
+      },
+      {
+        "title": "Promosi Operator 1",
+        "text": "Oh, terima kasih sekali! Aku harus membalasnya .... Aha! Aku akan terus memberimu tiket konser sampai kita impas, bagaimana?"
+      },
+      {
+        "title": "Promosi Operator 2",
+        "text": "Eh? Hanya itu yang kauinginkan dariku? Aku membayangkan daftar permintaan yang panjang, seperti kontrak perpanjanganku .... Ini ... agak mengejutkan ...."
+      },
+      {
+        "title": "Promosi Operator 3",
+        "text": "Mm-hmm, jadi akhirnya kau luluh juga? Aku tahu kau akan berubah pikiran—eh? Apa? “Kau akan membantu membawakan iklan Endfield”? Hanya itu yang kaupikirkan?!"
+      },
+      {
+        "title": "Promosi Operator 4",
+        "text": "Endmin, sudah resmi: kau sekarang VIP permanenku! Akan kupastikan kau tak melewatkan satu pun “momen memukauku”! Kau terpesona, ‘kan? Perhatikan baik-baik! Kalau sampai aku melihatmu melamun .... Heehee!"
+      },
+      {
+        "title": "Operator Siap Bertugas",
+        "text": "Endmin, kangen aku tidak? Sebagai superidol paling bersinar dan imut di Talos-II, apa ada perlakuan spesial untukku? Tidak ada ...? Aw, kau masih blak-blakan dan terus terang, tapi entah kenapa tetap menggemaskan .... Yah, mau bagaimana lagi."
+      },
+      {
+        "title": "Siaga 1",
+        "text": "Hehe! Bagaimana menurutmu pose imut ini?"
+      },
+      {
+        "title": "Siaga 2",
+        "text": "La—lala—! Cek mik selesai! Aku siap beraksi!"
+      },
+      {
+        "title": "Menugaskan ke Fasilitas",
+        "text": "Bagaimana kalau dua set speaker? Satu juga tak apa-apa! Aku hanya ingin tahu bagaimana suaraku terdengar di sini ...."
+      },
+      {
+        "title": "Menyapa 1",
+        "text": "Endmin! Mau ikut? Aku mau meninjau beberapa lokasi."
+      },
+      {
+        "title": "Menyapa 2",
+        "text": "Di situ kau rupanya, Endmin! Ayo dengarkan demo baruku!"
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 1",
+        "text": "Hai, Endmin! Datang untuk menonton gladi resikku? Aku baru saja menyempurnakan dua aksi meluncur rumit rancanganku! Hehe, jangan khawatir! Aku sudah pesan kursi terbaik untukmu!"
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 2",
+        "text": "Dijiang itu BESAAAR sekali! Tempat ini awalnya membuatku takut! Lalu, aku berpikir .... Kalau aku bisa mengadakan konser bertema luar angkasa di sini, pasti akan luar biasa SEEEKALI! Setuju, ‘kan, Endmin?"
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 3",
+        "text": "Hehe, satu kontrak selesai ditandatangani lagi! Aku sedang memikirkan tata letak baru .... Panggung melingkar. Singkirkan kursi penonton dan libatkan semua orang dalam pertunjukan! Sangat cerdas dan menarik, ‘kan?"
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 4",
+        "text": "Astaga, orang-orang harus BERHENTI mengarang cerita konyol tentang Djall. Dia cuma tersenyum dan orang-orang langsung akan menjerit: “DIAM DAN AMBIL DOMPETKU!” Serius? Ya ampun. Kalau memang benar .... Endmin, diam di situ dan tatap wajahku! Nah ... apa kau merasa sangat terdorong untuk memberiku semua uangmu?"
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 5",
+        "text": "Pada malam sebelum debutku, aku tak bisa tidur seminggu penuh. Sepanjang malam aku berlatih dan memeriksa ulang setiap detail penampilanku. Satu kesalahan kecil saja membuatku takut. Tapi, setelah lihat betapa bahagianya penonton, aku tahu semua yang kulakukan itu ... sepadan dengan semua penderitaanku."
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 6",
+        "text": "Aku butuh saran untuk lokasi pertunjukanku berikutnya, Endmin! Wrankwood Baru punya panggung terapung yang menarik, aula konser Neo Tsukushi juga keren. La Fantoma ... bagaimana kalau pertunjukan di tengah lautan? Pasti akan sangat heboh! Hmm? Kenapa hanya kota-kota TGCC? Ck, karena di sanalah uangnya!"
+      },
+      {
+        "title": "Menawarkan Hadiah",
+        "text": "Ehehe, aku menemukan suvenir kecil ini saat sedang meninjau lokasi! Terimalah dan semoga ini bisa mencerahkan harimu."
+      },
+      {
+        "title": "Menerima Hadiah",
+        "text": "*KAGET* Makasih, ya! Hihi! Aku dapat berbagai macam hadiah, tapi hadiah darimu ... selalu terasa sedikit lebih berarti bagiku."
+      },
+      {
+        "title": "Dialog Kepercayaan 1",
+        "text": "Kehebohan dari sebuah pertunjukan hebat melekat padaku selama berhari-hari! Benar, rasanya seperti pandai besi yang menyempurnakan senjatanya, hanya saja ... pedang tajam cuma digunakan untuk mematahkan hati, sedangkan pertunjukan yang hebat adalah cermin jiwa yang sempurna."
+      },
+      {
+        "title": "Dialog Kepercayaan 2",
+        "text": "“Ketulusan”. Itulah parfum yang kupakai dan aku suka aromanya. Lilac dengan sentuhan mawar, yang memberinya wangi awal yang spektakuler dan seperti mimpi, tapi memudar menjadi aroma dasar cedar yang pahit .... Karena itulah aromanya sangat berkesan, bukankah begitu?"
+      },
+      {
+        "title": "Dialog Kepercayaan 3",
+        "text": "Karena aku seorang Djall, mereka mengarang segala jenis cerita berlebihan tentangku, misalnya, bahwa lagu-laguku mengandung arts pengendali pikiran atau bahwa aku menggunakan instrumen sihir untuk memanipulasi penontonku .... Tapi Endmin, sihir di anting-anting dan jepit rambutku sebenarnya malah menekan kekuatan Djall-ku. Aku tak akan membiarkan ada satu pun “cacat” di atas panggungku yang bukan bagian dari pertunjukan ... bahkan walau cacat itu adalah kekuatan bawaanku sekalipun."
+      },
+      {
+        "title": "Dialog Kepercayaan 4",
+        "text": "Saat masih kecil, aku sering memimpikan bunga mawar ungu yang cantik. Dengan kapal seputih awan, kami terbang melintasi langit yang tak terbatas, dan mawar itu menceritakan kisah tentang bintang-bintang .... Suatu hari, badai merah muncul. Kapal itu terbalik bersama si mawar, terseret ke dalam pusaran air yang gelap. Setelah itu? Yah, aku terbangun sendirian ... dan tak pernah bermimpi lagi."
+      },
+      {
+        "title": "Dialog Kepercayaan 5",
+        "text": "Aku selalu menganggap dunia ini sebagai panggung besar, yang membutuhkan lebih banyak “hati” untuk dikuasai. Semua orang, termasuk aku, menampilkan pertunjukan terbaik kami untuk mendapatkan tepuk tangan. Tapi terkadang ... sesekali ... aku pun ingin istirahat. Jadi, Endmin, bolehkah aku di sini sedikit lebih lama? Rasanya aku hanya bisa bernapas lega saat berada di dekatmu .... Aneh, ‘kan?"
+      },
+      {
+        "title": "Obrolan 1",
+        "text": "Masih banyak naskah yang harus dihafal untuk wawancara “kejutan” .... Ugh. Orang-orang selalu bertanya bagaimana aku memulainya. Aku tak pernah ikut acara pencarian bakat. Aku langsung direkrut. Debutku langsung sukses dan aku bekerja keras untuk sampai ke posisiku sekarang. Apa para produser variety show ini tak paham?! Apa itu sangat sulit dipercaya?"
+      },
+      {
+        "title": "Obrolan 2",
+        "text": "Berinteraksi dengan penggemar, tampil di atas panggung .... Aku memberikan segalanya dalam semua hal yang kulakukan. Terutama untuk penggemarku. Aku tak mau mengecewakan mereka. Mereka pantas mendapatkan mimpi yang kebahagiaannya bisa bertahan lama setelah mereka bangun. Aku tak keberatan kelelahan sampai-sampai ketiduran sambil tidur berdiri. Aku akan menunggu sampai penggemar terakhir pergi sebelum meneguk setetes air pun .... Itulah tugas seorang idola sejati."
+      },
+      {
+        "title": "Obrolan 3",
+        "text": "Aku memang ikut pelatihan tentang “topik yang sangat tabu”. Tapi kurasa ... tak apa-apa kalau aku membahasnya denganmu. Misalnya, jadwal harianku sangat berantakan. Aku sering begadang. Jam makanku tidak teratur. Aku juga sangat merepotkan stafku karena aku ingin pertunjukanku sempurna. Wah, rasanya malu juga mengakui semua itu .... Jadi, agar impas, beri tahu aku satu rahasia pribadimu, Endmin."
+      },
+      {
+        "title": "Obrolan 4",
+        "text": "Cara bersantai favoritku? Kalau kau jurnalis, aku akan bilang “musik” sebagai jawaban aman. Tapi sejujurnya, aku suka tidur. Aku bisa tidur selama belasan jam setelah menyentuh bantal. Asisten baruku pernah ketakutan setengah mati karena tak bisa membangunkanku ...! Untungnya manajerku ada di sana dan berteriak: “Sepuluh detik sebelum tirai dibuka!” Aku pun bangun sebelum dia bisa menghitung mundur sampai sembilan."
+      },
+      {
+        "title": "Obrolan 5",
+        "text": "Ada mantan staf yang menulis surat untukku bulan ini. Dia merasa bersalah karena diam saja saat seorang sponsor terang-terangan menuduhku melakukan sesuatu yang tak pernah kulakukan. Tapi, aku tak pernah menyalahkannya .... Dia memilih diam karena dia butuh uang untuk keluarganya, seperti banyak orang lain yang berjuang untuk menyambung hidup. Apa kita berhak menyalahkan mereka?"
+      },
+      {
+        "title": "Topik: TGCC",
+        "text": "Dulu, aku merasa tak ada masalah dengan semua praktik dan aturan TGCC itu. Tapi, karena pengalaman dan pembelajaran bahwa tak ada kebenaran tunggal dalam hidup, aku jadi sadar bahwa orang-orang TGCC pun bisa memilih untuk menjalani hidup mereka sendiri. Bahkan untuk pertunjukan panggung tradisional, seorang idola masih bisa memberikan penampilan dengan gaya mereka sendiri."
+      },
+      {
+        "title": "Topik: Penyanyi Idola",
+        "text": "Endmin, menurutmu “idola” itu apa, sih? Kurasa setiap orang punya jawabannya sendiri. Bagiku, seorang “idola” adalah kapal yang membawa harapan, dan dia harus berlayar cukup tinggi untuk mendapatkan hak memenuhi “tugasnya” .... Dan \"aku\" selalu bermimpi untuk berlayar dengan Kapal Liino dan mencapai puncak tertinggi Talos-II. Di sana, aku akan melakukan yang terbaik untuk menerangi setiap harapan yang dibawanya."
+      },
+      {
+        "title": "Topik: Game Musik",
+        "text": "Eh? Bukankah game musik itu bagus untuk menghilangkan stres? Bahkan saat sedang sangat sibuk, aku masih suka menyelipkan beberapa tantangan supersulit di sela-sela waktu luangku yang singkat. Aku tak bisa mengenai setiap nada dengan sempurna, tapi rasanya senang kalau berhasil menyelesaikan satu stage! Aku tak terlalu mahir dalam game bergulir secara vertikal. Yang kusukai adalah game single-track seperti Diro Master atau Rhythm Party!"
+      },
+      {
+        "title": "Topik: Djall",
+        "text": "Ibu pernah memperingatkanku saat aku masih kecil. Pikiran orang lain bisa sangat memikat bagi para Djall. Saat memecut hati mereka, aku tak boleh lupa untuk memecut hatiku sendiri .... Membaca rahasia tersembunyi orang-orang itu semudah minum air bagi kami. Kami bahkan tak perlu bersusah payah. Karena itulah kami sering lupa bahwa orang-orang tidak suka hatinya dibongkar."
+      },
+      {
+        "title": "Topik: La Fantoma",
+        "text": "Hari pertama Festival Obsidian itu adalah terakhir kalinya aku jalan-jalan dengan orang tuaku. Matahari terbenam yang indah membuat pinggiran kota berwarna merah. Aku menunjuk seorang gadis yang memegang mik di poster paling mencolok di gedung pencakar langit dan bertanya kepada ibuku: “Mama, apa aku bisa jadi seperti dia?” Ibu tersenyum, menepuk kepalaku, dan menyemangatiku untuk pertama kalinya. “Pasti bisa. Kalau Liino kecil bersungguh-sungguh melakukannya, dia pasti akan menjadi bintang paling terang di La Fantoma.”"
+      },
+      {
+        "title": "Sumber Daya/Barang Koleksi Terdeteksi 1",
+        "text": "Ada sesuatu di sana .... Aku tak bisa berhenti menatapnya!"
+      },
+      {
+        "title": "Sumber Daya/Barang Koleksi Terdeteksi 2",
+        "text": "Eh? Kelihatan mahal .... Jangan-jangan kita bakal jadi tajir melintir?"
+      },
+      {
+        "title": "Area yang Belum Dijelajahi Terdeteksi",
+        "text": "Tempat baru! Semoga ada kejutan menarik di sini."
+      },
+      {
+        "title": "Musuh Kuat Ditemukan",
+        "text": "Wah, sepertinya ada tamu berbadan besar yang tak diundang, nih!"
+      },
+      {
+        "title": "Penambangan 1",
+        "text": "Wow. Aku hanya pernah lihat mineral-mineral ini di ensiklopedia ...."
+      },
+      {
+        "title": "Penambangan 2",
+        "text": "Hehe. Saatnya menunjukkan koreografi spesial!"
+      },
+      {
+        "title": "Membuka Kerat",
+        "text": "Temuan luar biasa! Ini sih ibarat pertunjukan solo yang mengundang decak kagum semua penonton!"
+      },
+      {
+        "title": "Mendapatkan Aurylene",
+        "text": "Wah. Aurylene ternyata sangat berkilau! Pasti harganya sangat mahal ...."
+      },
+      {
+        "title": "Menyingkirkan Hawar",
+        "text": "Semua yang ada di sekitar sini terasa ... memuakkan. Aku tak mau tampil di tempat seperti ini!"
+      },
+      {
+        "title": "Istirahat",
+        "text": "Sudah saatnya istirahat, belum? Fyuh, aku butuh minum! Sebentar, ya!"
+      },
+      {
+        "title": "Penggunaan Taktis 1",
+        "text": "Aku akan membantumu!"
+      },
+      {
+        "title": "Penggunaan Taktis 2",
+        "text": "Hangat dan nyaman sekali ...."
+      },
+      {
+        "title": "Memperingatkan Rekan Tim",
+        "text": "Merunduk! Jangan memaksakan diri!"
+      },
+      {
+        "title": "Cedera",
+        "text": "Ngh .... Ceroboh sekali ...."
+      },
+      {
+        "title": "0 HP",
+        "text": "Tidak adil .... Padahal sedikit lagi ...."
+      },
+      {
+        "title": "Penyemangat Tim 1",
+        "text": "Wow! Aku harus melihatnya lagi!"
+      },
+      {
+        "title": "Penyemangat Tim 2",
+        "text": "Kapan, ya, aku bisa beraksi dengan keren seperti kalian?"
+      },
+      {
+        "title": "Respons Penyemangat 1",
+        "text": "Ayo tampil di atas panggung bersamaku di konser berikutnya!"
+      },
+      {
+        "title": "Respons Penyemangat 2",
+        "text": "Sinkronisasi kita keren sekali!"
+      },
+      {
+        "title": "Mulai Pertarungan 1",
+        "text": "Oke, aku pasti bisa! Saatnya bersinar seperti bintang!"
+      },
+      {
+        "title": "Mulai Pertarungan 2",
+        "text": "Oke, saatnya melenyapkan suara-suara sumbang ini!"
+      },
+      {
+        "title": "Menang Pertarungan 1",
+        "text": "Sudah kubilang, aku tak becus bertarung .... Eh? Kita benaran menang?"
+      },
+      {
+        "title": "Menang Pertarungan 2",
+        "text": "Akhir pertunjukan yang luar biasa! Sejak awal, aku yakin kita pasti menang."
+      },
+      {
+        "title": "Menang Pertarungan 3",
+        "text": "Boleh juga! Kau ternyata bisa mengimbangi tempoku!"
+      },
+      {
+        "title": "Menang Pertarungan 4",
+        "text": "Istirahat dulu yang cukup sebelum pertunjukan berikutnya! Tak usah khawatir. Akan kupastikan semuanya tetap bersemangat!"
+      },
+      {
+        "title": "Kalah Bertarung",
+        "text": "Apakah sinarku seredup itu? Tidak .... Aksi akhirnya tak boleh suram begini ...."
+      },
+      {
+        "title": "Final Strike 1",
+        "text": "Dadaah!"
+      },
+      {
+        "title": "Final Strike 2",
+        "text": "Tumbang!"
+      },
+      {
+        "title": "Skill Tarung 1",
+        "text": "Ini untuk kalian semua!"
+      },
+      {
+        "title": "Skill Tarung 2",
+        "text": "Dengarkan aku!"
+      },
+      {
+        "title": "Skill Tarung 3",
+        "text": "Inilah baitku!"
+      },
+      {
+        "title": "Skill Kombo Siap 1",
+        "text": "Sekarang giliranku membalas!"
+      },
+      {
+        "title": "Skill Kombo Siap 2",
+        "text": "Panggung memanggilku!"
+      },
+      {
+        "title": "Penggunaan Kombo 1",
+        "text": "Kembalinya sang Bintang Fajar!"
+      },
+      {
+        "title": "Penggunaan Kombo 2",
+        "text": "Pertunjukan tetap berlangsung!"
+      },
+      {
+        "title": "Penuntas 1",
+        "text": "Kau melewatkan satu ketukan!"
+      },
+      {
+        "title": "Penuntas 2",
+        "text": "Pertunjukanmu sudah berakhir!"
+      },
+      {
+        "title": "Ultimate 1",
+        "text": "Saatnya menyebarkan kebahagiaan di setiap hati!"
+      },
+      {
+        "title": "Ultimate 2",
+        "text": "Jangan berkedip! Sang bintang sedang terbit!"
+      },
+      {
+        "title": "Ultimate 3",
+        "text": "Ayo isi dunia dengan kilauan!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

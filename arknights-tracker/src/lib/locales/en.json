@@ -368,7 +368,9 @@
     "special_1_3_2": "Expunger of Sin",
     "weponbox_1_3_2": "Crimson Hued Issue",
     "special_1_4_1": "North Yearns the Rift Vigile",
-    "weponbox_1_4_1": "Military Grade Issue"
+    "weponbox_1_4_1": "Military Grade Issue",
+    "special_1_4_2": "Good Morning from Your Dawnstar",
+    "weponbox_1_4_2": "Bedazzled Issue"
   },
   "pages": {
     "home": "Home",
@@ -462,7 +464,8 @@
     "theRootedRealm": "The Rooted Realm",
     "protocolPassBlightedSea": "Protocol Pass: Blighted Sea",
     "gazeNorthToTheRiftSignIn": "Gaze North to the Rift Sign-In",
-    "protocolInvitationTheReturn": "Protocol Invitation: The Return"
+    "protocolInvitationTheReturn": "Protocol Invitation: The Return",
+    "bedazzlingDawnstarSignIn": "Bedazzling Dawnstar Sign-In"
   },
   "mouths": {
     "january": "January",

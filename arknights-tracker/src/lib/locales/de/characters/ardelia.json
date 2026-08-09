@@ -120,7 +120,333 @@
         "name": "Natur",
         "description": "Natur: Ökologische Affinität\nDas Plätschern des Regens auf dem Land ist die Sprache, mit der sich die Welt erneuert. Wenn der Morgen heranbricht, erhält alles ein neues Aussehen."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Einsatzvorbereitung 1",
+        "text": "Tu, was du für richtig hältst, Prof. Ich werde alles in meiner Macht Stehende tun, um dir zu helfen."
+      },
+      {
+        "title": "Einsatzvorbereitung 2",
+        "text": "Hm, mal sehen. Wo soll ich diesmal meine Daten sammeln?"
+      },
+      {
+        "title": "Wird zum Team hinzugefügt 1",
+        "text": "Die Prospektionswerkzeuge sind bereit, Prof. Wir können jederzeit aufbrechen."
+      },
+      {
+        "title": "Wird zum Team hinzugefügt 2",
+        "text": "Die Anwesenheit des Professors gibt mir ein Gefühl von Sicherheit."
+      },
+      {
+        "title": "Waffe wird gewechselt",
+        "text": "Könntest du bitte etwas weiter wegtreten, Prof? Ich … ähm … möchte dich nicht versehentlich verletzen."
+      },
+      {
+        "title": "Ausrüstung wird gewechselt",
+        "text": "Feldstudien können sehr gefährlich sein. Wir müssen deshalb sicherstellen, dass wir angemessen geschützt sind."
+      },
+      {
+        "title": "Fähigkeitsmatrix wird aktiviert",
+        "text": "Mein Tagebuch gleicht den Jahresringen eines alten Baumes. Es enthält alle Lektionen, die ich in meiner Kindheit gelernt habe."
+      },
+      {
+        "title": "Kampfaufzeichnungen ansehen",
+        "text": "Wie kann der Feind das Land in eine so … so leblose Verwüstung verwandeln?"
+      },
+      {
+        "title": "Operator-Beförderung 1",
+        "text": "Okay, Ardelia! Konzentrier dich auf diesen einen Weg! Erkunde ihn weiter und verbessere dich!"
+      },
+      {
+        "title": "Operator-Beförderung 2",
+        "text": "Ich weiß deine Zustimmung wirklich zu schätzen, Prof! Ich werde noch härter arbeiten und bei Endfield noch viel mehr erreichen!"
+      },
+      {
+        "title": "Operator-Beförderung 3",
+        "text": "Mach dir keine Sorgen um mich, Prof. Ich arbeite definitiv nicht zu hart. Hm? Die dunklen Ringe unter meinen Augen? Oh, äh … das Buch war einfach zu spannend. Ich konnte einfach nicht aufhören, zu lesen."
+      },
+      {
+        "title": "Operator-Beförderung 4",
+        "text": "Diese Welt birgt so viele Geheimnisse, die es zu entdecken gilt. Wir sollten sie besser kennenlernen … genauso wie wir mehr über uns selbst lernen sollten. Findest du nicht auch, Prof?"
+      },
+      {
+        "title": "Operatorin meldet sich zum Dienst",
+        "text": "Hallo, Endministrator. Ich bin Ardelia, Geologin von Rhodes Island. Ich beschäftige mich derzeit mit den Zusammenhängen zwischen geologischen Katastrophen und der Ætherside. Ich habe schon viel von dir gehört, Endmin, und habe jede Menge Fragen an dich. Ach ja, noch was … darf ich dich Prof nennen?"
+      },
+      {
+        "title": "Warten 1",
+        "text": "Hab einen sonnigen Tag, Prof."
+      },
+      {
+        "title": "Warten 2",
+        "text": "Ich hab dich kommen hören, Prof."
+      },
+      {
+        "title": "Zuweisung zur Anlage",
+        "text": "Überlass das nur mir, Prof. Ich möchte auch mal was Neues ausprobieren."
+      },
+      {
+        "title": "Gruß 1",
+        "text": "Prof, möchtest du vielleicht diesen Mille Crêpe mit mir teilen?"
+      },
+      {
+        "title": "Gruß 2",
+        "text": "Oh, ich war gerade auf dem Weg zu dir, Prof."
+      },
+      {
+        "title": "Dijiang-Geplauder 1",
+        "text": "Pass auf, wenn du auf der Dijiang herumläufst, Prof … auf dem Schiff gibt es überall Warnschilder und … ich stolpere ständig darüber. Wenn ich nachdenke, übersehe ich sie einfach."
+      },
+      {
+        "title": "Dijiang-Geplauder 2",
+        "text": "Von hier aus kann ich viele Orte sehen, die ich persönlich von Bord der Dijiang aus erkundet habe … Die Wildnis, die Prärien und der Norden wirken von hier aus winzig. Der Ausblick vom Orbit umfasst mühelos all die langen Exkursionen, die ich unternommen habe … Ich muss sagen, es ist irgendwie aufregend, hier oben zu sein."
+      },
+      {
+        "title": "Dijiang-Geplauder 3",
+        "text": "Prof, hast du Lust, morgen bei meiner Lesegruppe vorbeizuschauen? Was wir lesen? Ach, einfach alles, was du gerne liest! Da fällt mir ein: Herr Krad hat mal ein Fotomagazin über die Vulkane von Talos-II mitgebracht. Ich kann es mitbringen, wenn du willst."
+      },
+      {
+        "title": "Dijiang-Geplauder 4",
+        "text": "Nach all der Arbeit hast du bestimmt Hunger, Prof! Probier das hier mal. Das sind Snacks aus Higashi, die mir Fräulein Akekuri gegeben hat. Ähm, ich brauche eigentlich keine, weil … i-ich hatte schon welche. Warum die Packung noch zu ist? Ah, ähm … Fräulein Akekuri hat mir n-noch eine Packung gegeben!"
+      },
+      {
+        "title": "Dijiang-Geplauder 5",
+        "text": "Hast du’s nicht gemerkt, Prof? Du bist immer ganz vorne, als wolltest du uns vor Gefahren schützen. Manchmal musste ich sogar joggen, um mit dir Schritt zu halten. Vielleicht … könntest du etwas langsamer gehen. Wir sind für dich da – und wir wollen dir helfen."
+      },
+      {
+        "title": "Dijiang-Geplauder 6",
+        "text": "Jede Rückkehr zur Dijiang ist so entspannend. Wenn ich nicht gerade meinen Kollegen von meiner Reise erzähle, schaue ich in den Wachstumskammern vorbei und sehe nach, wie es den kleinen Pflanzen geht. Wenn ich Zeit habe, kümmere ich mich sogar liebevoll um sie. Das ist sozusagen mein kleines Hobby. Es erfüllt mich mit Freude, sie wachsen zu sehen."
+      },
+      {
+        "title": "Geschenke anbieten",
+        "text": "Hast du kurz Zeit, Endmin? Ich habe bei meinen Erkundungen ein paar Souvenirs gesammelt. Deko-Federn vom Hannabit-Zirkel, Jade-Schmuckstücke aus Hongshan und Medaillen vom Orden des Stahlschwurs … das ist alles für dich. Ich hoffe, diese Stücke gefallen dir."
+      },
+      {
+        "title": "Geschenke annehmen",
+        "text": "Ein Geschenk für mich? Für mich? Ohh, danke! Mal sehen, was drin ist … *kicher* Prof, du siehst noch aufgeregter aus als ich."
+      },
+      {
+        "title": "Vertrauensgespräch 1",
+        "text": "Prof, geht es dir gut? Du siehst echt müde aus. Sag mir bloß nicht, dass du wieder die ganze Nacht durchgemacht hast?! Du weißt doch, wie schlecht das für dich ist … Nein! Keine Ausreden – Zeit, dass du dich mal ausruhst."
+      },
+      {
+        "title": "Vertrauensgespräch 2",
+        "text": "Hör auf, an der Kleidung des Profs zu ziehen, Herr Dolly …! Argh. Es tut mir so leid. Sie sind einfach so frech. Hm? Du kannst sie nicht sehen? Oh … Herr Dolly zeigt sich nur, wenn er gesehen werden will … Ob Herr Dolly das Oberhaupt ist? Nein, Herr Dolly ist kein Name für eine bestimmte Person, denn es gibt viele Dollys … Aw, komm raus und sag es dem Prof selbst! Herr Dolly, ich weiß, dass du sprechen kannst!"
+      },
+      {
+        "title": "Vertrauensgespräch 3",
+        "text": "Heute habe ich wieder einen Berg bestiegen. Mithilfe des geologischen Kompasses konnte ich die Ausrichtung und Neigung der Gesteinsschichten bestimmen. Mit dem Pickel habe ich Sedimentgesteinsproben für optische und strukturelle Untersuchungen gesammelt … Ich bin überhaupt nicht müde, Prof. Ich könnte noch mehr Berge besteigen, noch mehr Ausflüge machen und noch mehr geologische Daten sammeln. Es macht mir so viel Spaß, die Geheimnisse dieses Planeten zu entschlüsseln. Ich kann gar nicht in Worte fassen, wie glücklich ich bin!"
+      },
+      {
+        "title": "Vertrauensgespräch 4",
+        "text": "In einem so festlichen Moment Freunde um sich zu haben, fühlt sich echt gut an! Das erinnert mich an meine Ankunft bei Endfield. Die Leute haben eine Willkommensparty für mich geschmissen und dabei wirklich an alles gedacht, was ich mag. Oh, die Süßigkeiten, die Blumen und die fröhliche Musik! Fräulein Yvonne hat mich sogar an die Hand genommen und wir haben zu den neuesten Hits getanzt! Die Drehungen und Bewegungen haben mich etwas aus der Bahn geworfen, aber ich habe mein Bestes gegeben, um jedes Lächeln in Erinnerung zu behalten."
+      },
+      {
+        "title": "Vertrauensgespräch 5",
+        "text": "Was ist die Ætherside? Diese Frage geht mir nicht aus dem Kopf. Wenn das Universum so grausam zu uns ist, kann ich dann etwas tun, um allen zu helfen …? Denkst du das nicht auch, Prof? Hm, das heißt … wir sind nicht allein."
+      },
+      {
+        "title": "Geplauder 1",
+        "text": "Deine Stimme ist sehr beruhigend, Prof. Oh, ich, äh, ich wollte damit nichts Bestimmtes sagen. Es ist nur … Weißt du, wie es ist, wenn man aus einem Traum aufwacht und zuerst die Geräusche wahrnimmt, bevor man etwas sieht? Bevor ich dein Gesicht sah, waren es deine Schritte und deine Stimme, die ich zuerst wahrgenommen habe … Ja. Die meisten Lebewesen haben ihre eigene Stimme – seien es Insekten, Tiere, Bäume oder Pflanzen. Diese Stimmen berühren mich. Sie sind der Grund, warum ich mich entschlossen habe, die Welt, die wir alle lieben, auf meine ganz eigene Weise zu beschützen."
+      },
+      {
+        "title": "Geplauder 2",
+        "text": "Alle bei Endfield sind wirklich sehr nett. Fräulein Yvonne hat mir immer von ihren neuesten wissenschaftlichen Funden erzählt und mir ihre neuen Schallplatten gezeigt. Fräulein Akekuri hat mich immer zum Nachmittagstee eingeladen. Und dann ist da natürlich noch Herr Antal. Er hat mir angeboten, meinen Stab in ein äußerst praktisches Werkzeug zum Prospektieren umzubauen *und* mit vielen tollen Funktionen auszustatten. Wenn Fräulein Akekuri ihn nicht nach drei Stunden von mir weggezerrt hätte, hätte er mir wahrscheinlich den ganzen Tag lang jedes Detail erklärt!"
+      },
+      {
+        "title": "Geplauder 3",
+        "text": "Geologen haben viel Freiheit, aber es ist manchmal echt nervig, dass nicht genug Geld da ist. Um an Geld zu kommen, habe ich bei verschiedenen Firmen Seminare und Vorträge gehalten – in der Hoffnung, dass meine Hingabe und meine Vision überzeugen würden. Die meisten Firmen – außer Endfield – waren jedoch nicht an Frühwarnsystemen für geologische Katastrophen interessiert. Doch als die Siesta Group von meiner Forschung erfuhr, sprang sie mit einer bedingungslosen Förderung ein. Ich glaube, ich weiß, warum das Unternehmen so großzügig ist … Vielleicht ist diese schicksalhafte Begegnung Teil meines Erbes."
+      },
+      {
+        "title": "Geplauder 4",
+        "text": "Ich bin einmal mit einer Aldertone aus dem Hannabit-Zirkel gereist. Sie hat wunderschöne Hanna-Lieder gesungen und mir von dem Aldertone erzählt, der sie begleitet hat. Alle im Zirkel leben auf diesem Land und haben großen Respekt vor denen, die es erforschen – so wie wir. Hehe, ich war echt glücklich, als sie mir das erzählt hat. Aber ehrlich gesagt habe ich durch ihr Hanna-Lied meinen eigenen Sinn und meine Motivation gefunden. Genau, Prof. Das war die Reise, die ich unternommen habe, bevor ich meine wahre Berufung auf Talos-II gefunden habe."
+      },
+      {
+        "title": "Geplauder 5",
+        "text": "Schon wieder ein Riss in meiner Kleidung? Ach, das ist schon okay. Ich kann das wieder flicken. Bei Feldforschungen leidet die Kleidung ohnehin immer … Für seltene Mineralproben muss ich auf Berggipfel klettern, und die schroffen Felsen sind nicht gerade sanft. Aber wenn man seinem Ziel so nah ist, vergisst man manchmal, wie riskant jeder Schritt sein kann. Mach dir bitte keine Sorgen, Prof. Ich werde beim nächsten Mal vorsichtiger sein."
+      },
+      {
+        "title": "Thema: Ætherside",
+        "text": "Die Ætherside ist etwas völlig Neues, mit dem wir uns auf Talos-II auseinandersetzen müssen. Während einige sie als einzigartiges physikalisches Phänomen beschreiben, betrachten andere sie als seltsame räumliche und zeitliche Dimension. Ich habe jedoch das Gefühl, dass … es sich um einen vergessenen und verstaubten Raum handelt, der mit Dingen gefüllt ist, die niemanden mehr interessieren. Prof, vielleicht hat die Ætherside etwas mit unseren Ursprüngen zu tun."
+      },
+      {
+        "title": "Thema: Rhodes Island",
+        "text": "Ich komme von Rhodes Island. Dort habe ich jede Menge Training und Unterricht bekommen, was mir dabei geholfen hat, meine eigene Identität zu entwickeln. Ich hatte keine Familie, keine Kindheit und keine Vergangenheit, aber auf Rhodes Island haben sie uns gezeigt, wie man lebt und sich selbst versteht. Prof, Rhodes Island ist mein Zuhause … und mir wurde gesagt, dass es auch deins ist."
+      },
+      {
+        "title": "Thema: Dolly",
+        "text": "Herr Dolly ist eigentlich ziemlich lebhaft. Ich kann mir nur nicht erklären, warum er sich anderen Leuten nicht zeigt. Für dich ist er jetzt unsichtbar, aber er würde total gern mit dir spielen. Was Herr Dolly gerade macht? Na, er versucht, sich auf deinen … Oje! Herr Dolly! Hör auf! Hör auf, den Prof zu ärgern! Puh. Typisch Herr Dolly. Wir haben uns an einem ganz normalen Tag kennengelernt und dann hat er beschlossen, bei mir zu bleiben. Seitdem ist er mir nicht mehr von der Seite gewichen."
+      },
+      {
+        "title": "Thema: Yvonne",
+        "text": "Fräulein Yvonne ist eine unglaubliche Wissenschaftlerin. Als ich bei Endfield angefangen habe, hat sie mir viele wichtige Informationen gegeben, damit ich mich schnell in die Ætherside einarbeiten konnte. Sie hat mir sogar ihre Forschungsergebnisse gezeigt, in der Hoffnung, dass sie anderen Forschern in unserem Bereich helfen könnten. Und obendrein teilen wir beide die Liebe zur Musik! Obwohl ich eher auf leichtere Melodien stehe und sie schnellere, härtere Beats bevorzugt, hat sie mir mehrere Alben von La Fantoma Pop geschenkt. Sie ist einfach toll."
+      },
+      {
+        "title": "Thema: Talos-II",
+        "text": "Ich habe einmal miterlebt, wie ein riesiger Originium-Cluster von der Verderbnis wie von einer Flutwelle verschluckt und zerstört wurde. Zurück blieb nichts als ein unfruchtbares Tal. Ein Reißbiest hat die Katastrophe überlebt und ist allein und verwirrt in seine Heimat zurückgekehrt … Die Ætherside und die Verderbnis sind wie Feinde, während wir am Rande des Abgrunds um unser Überleben kämpfen. Da ich aus Originium geboren wurde, fühle ich mich dazu berufen, mehr über den Æther zu erfahren. Mein einziger Wunsch ist es, diese Welt zu einem sichereren Zuhause für alle zu machen."
+      },
+      {
+        "title": "Ressource/Sammelobjekt entdeckt 1",
+        "text": "Diese Ressourcen scheinen nützlich zu sein. Vergiss nicht, sie mitzunehmen."
+      },
+      {
+        "title": "Ressource/Sammelobjekt entdeckt 2",
+        "text": "Diese Ressourcen sind wirklich wichtig. Wir sollten versuchen, noch mehr davon zu sammeln."
+      },
+      {
+        "title": "Unerforschter Bereich entdeckt",
+        "text": "Da vorne stimmt irgendwas nicht. Überlasst mir das Erkunden!"
+      },
+      {
+        "title": "Starker Gegner entdeckt",
+        "text": "Da vorne wartet etwas Gefährliches auf uns. Wir sollten uns besser gut vorbereiten."
+      },
+      {
+        "title": "Abbau 1",
+        "text": "Ich werde diese Mineralien gleich sortieren und bestimmen."
+      },
+      {
+        "title": "Abbau 2",
+        "text": "Ich möchte auch helfen!"
+      },
+      {
+        "title": "Kiste öffnen",
+        "text": "Eine Belohnung für die Herausforderungen, die wir mit Bravour gemeistert haben!"
+      },
+      {
+        "title": "Aurylen erhalten",
+        "text": "Im Gegensatz zur Verderbnis und zu den Rissen sind Aurylene nicht so gefährlich."
+      },
+      {
+        "title": "Eliminierung der Verderbnis",
+        "text": "Super. Jetzt kann sie niemanden mehr verletzen."
+      },
+      {
+        "title": "Ausruhen",
+        "text": "Wir sind schon so weit gelaufen … ihr müsst alle müde sein. Eine Pause macht Sinn."
+      },
+      {
+        "title": "Taktische Nutzung 1",
+        "text": "Du schaffst das, und ich bin für dich da!"
+      },
+      {
+        "title": "Taktische Nutzung 2",
+        "text": "Puh … Jetzt geht’s mir schon viel besser."
+      },
+      {
+        "title": "Gefahrenwarnung",
+        "text": "Sei vorsichtig!"
+      },
+      {
+        "title": "Verletzt",
+        "text": "Mir geht’s gut! Ich schaff das!"
+      },
+      {
+        "title": "0 LP",
+        "text": "Ich kann … den Prof nicht im Stich lassen …"
+      },
+      {
+        "title": "Teammotivation 1",
+        "text": "Das war unglaublich!"
+      },
+      {
+        "title": "Teammotivation 2",
+        "text": "Alle geben ihr Bestes!"
+      },
+      {
+        "title": "Motivationsreaktion 1",
+        "text": "Danke für das Kompliment!"
+      },
+      {
+        "title": "Motivationsreaktion 2",
+        "text": "Danke euch allen!"
+      },
+      {
+        "title": "Kampf beginnt 1",
+        "text": "Passt auf, wo ihr hintretet, Leute."
+      },
+      {
+        "title": "Kampf beginnt 2",
+        "text": "Wir schaffen das!"
+      },
+      {
+        "title": "Kampfsieg 1",
+        "text": "Nichts und niemand kann uns aufhalten."
+      },
+      {
+        "title": "Kampfsieg 2",
+        "text": "Wir haben’s geschafft. Hoffentlich bist du nicht müde, Herr Dolly."
+      },
+      {
+        "title": "Kampfsieg 3",
+        "text": "Ich wusste, dass wir das schaffen können."
+      },
+      {
+        "title": "Kampfsieg 4",
+        "text": "Wir haben es endlich geschafft … Und zwar nur, weil wir alle zusammengehalten haben."
+      },
+      {
+        "title": "Niederlage im Kampf",
+        "text": "Verlieren ist nicht das Ende der Welt. Lerne aus dieser Erfahrung, und beim nächsten Mal machen wir es besser."
+      },
+      {
+        "title": "Abschlussangriff 1",
+        "text": "Platz da!"
+      },
+      {
+        "title": "Abschlussangriff 2",
+        "text": "Ausbruch!"
+      },
+      {
+        "title": "Kampffertigkeit 1",
+        "text": "Lammeinschlag!"
+      },
+      {
+        "title": "Kampffertigkeit 2",
+        "text": "Schluss damit!"
+      },
+      {
+        "title": "Kampffertigkeit 3",
+        "text": "Los geht’s!"
+      },
+      {
+        "title": "Kombofertigkeit bereit 1",
+        "text": "Ich helfe auch mit!"
+      },
+      {
+        "title": "Kombofertigkeit bereit 2",
+        "text": "Lass es mich mal versuchen!"
+      },
+      {
+        "title": "Kombo wirken 1",
+        "text": "Das tut jetzt weh!"
+      },
+      {
+        "title": "Kombo wirken 2",
+        "text": "Erblüht!"
+      },
+      {
+        "title": "Wuchtschlag 1",
+        "text": "Jetzt!"
+      },
+      {
+        "title": "Wuchtschlag 2",
+        "text": "Stirb endlich!"
+      },
+      {
+        "title": "Ultimative Fertigkeit 1",
+        "text": "Bitte hilf uns, Herr Dolly!"
+      },
+      {
+        "title": "Ultimative Fertigkeit 2",
+        "text": "Geh nicht zu weit weg, Herr Dolly."
+      },
+      {
+        "title": "Ultimative Fertigkeit 3",
+        "text": "Schön vorsichtig, Herr Dolly!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

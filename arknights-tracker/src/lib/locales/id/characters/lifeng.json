@@ -127,7 +127,341 @@
         "name": "Alam",
         "description": "Alam: Pengembara Penuh Semangat\nSebagian besar dari dunia ini masih belum diketahuinya. Tapi, dia menganggap misteri ini sebagai tugas masa depan yang harus diembannya."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Persiapan Operasi 1",
+        "text": "Endmin, akhirnya kau punya tugas untukku?"
+      },
+      {
+        "title": "Persiapan Operasi 2",
+        "text": "Oh, tali sepatuku lepas .... Oh, Endmin datang! Perhatian!"
+      },
+      {
+        "title": "Menambahkan ke Tim 1",
+        "text": "Mana targetnya?! .... Oh, maaf, Endmin. Ini cuma latihan prapertarungan."
+      },
+      {
+        "title": "Menambahkan ke Tim 2",
+        "text": "Paman Pan selalu bilang, begitu genderang perang mulai ditabuh, kita tak boleh mundur lagi."
+      },
+      {
+        "title": "Berganti Senjata",
+        "text": "Ahli tombak tidak ditentukan oleh senjatanya. Tongkat sederhana dari waxwood pun bisa menyerang dengan tepat!"
+      },
+      {
+        "title": "Berganti Gear",
+        "text": "Semua item taktis ini untukku? Serius, Endmin? Apa ini artinya aku direkrut secara resmi?!"
+      },
+      {
+        "title": "Aktivasi Matriks Kemampuan",
+        "text": "Aku datang ke Endfield untuk belajar. Tapi ... banyak sekali yang harus dipelajari. Aku harus berusaha lebih keras lagi!"
+      },
+      {
+        "title": "Menonton Rekaman Pertarungan",
+        "text": "Paman Pan selalu menyuruhku merekam latihanku. Yah, ada benarnya juga sih—Kalau belum nonton rekamannya, aku tak akan tahu separah apa kesalahan gerakanku!"
+      },
+      {
+        "title": "Promosi Operator 1",
+        "text": "P-promosi? Fyuh .... Kukira aku kena masalah karena berbuat salah!"
+      },
+      {
+        "title": "Promosi Operator 2",
+        "text": "Awalnya memang sulit, tapi sekarang aku sudah menguasainya. Endmin, kau sudah lihat performaku baru-baru ini. Apa menurutmu aku bisa memenangi Balap Kursi Kantor bulan ini?"
+      },
+      {
+        "title": "Promosi Operator 3",
+        "text": "Hei, Endmin, mau tanya—masih ada berapa pangkat setelah yang ini? Aku ingin menambahkan kolom “Target Bulanan” ke dalam jurnalku!"
+      },
+      {
+        "title": "Promosi Operator 4",
+        "text": "“Performa luar biasa”, “kemampuan beradaptasi dan kerja sama tim yang kuat”, ... aku sudah bisa mengucapkan pujian-pujian itu dalam tidurku. Pokoknya, Endmin, aku siap maju. Aku janji akan berusaha sekuat tenaga untuk menjadi rekanmu yang paling bisa diandalkan."
+      },
+      {
+        "title": "Operator Siap Bertugas",
+        "text": "Hei, Endministrator, ini aku, Lifeng! Aku masih belum banyak pengalaman, tapi aku akan berusaha sebaik mungkin! Kata orang, kesulitan bisa membentuk dan menyempurnakan kita, tapi kesempurnaan itu seperti apa sih? Mungkin orang sepertimu punya jawabannya. Aku akan sangat berterima kasih atas masukanmu."
+      },
+      {
+        "title": "Siaga 1",
+        "text": "Gampang banget!"
+      },
+      {
+        "title": "Siaga 2",
+        "text": "Biar kuurus!"
+      },
+      {
+        "title": "Menugaskan ke Fasilitas",
+        "text": "Siap, Endmin! Aku sebenarnya memang bertanya-tanya kenapa kau tak kunjung memberiku tugas!"
+      },
+      {
+        "title": "Menyapa 1",
+        "text": "Hai, Endmin! Kau kelihatan sibuk, tapi aku senang melihatmu."
+      },
+      {
+        "title": "Menyapa 2",
+        "text": "Ada waktu sebentar, Endmin? Aku punya jurus baru. Mau lihat?"
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 1",
+        "text": "Anu ... aku harus bilang apa pada saat seperti ini .... Lifeng, operator resmi di Endfield Industries. Suatu kehormatan bisa bertemu denganmu."
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 2",
+        "text": "Oh, kau melihatku barusan dan ingin tahu kenapa aku masih di sini? Ee ... aku bukannya menunggu diberi misi. Hehe, sama sekali tidak!"
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 3",
+        "text": "Endmin, apa ada Anasa lain yang kaukenal? Keturunan keluargaku sudah lama menetap di kota, tapi katanya masih ada juga yang hidup di alam liar. Kalau kebetulan bertemu mereka, tolong beri tahu aku, agar aku bisa mengunjungi mereka!"
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 4",
+        "text": "Sebenarnya ... aku gampang mabuk darat. Naik roda lima di Wuling saja bisa membuatku mual. Tapi, entah kenapa aku tak merasakan gerakan apa pun di Dijiang."
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 5",
+        "text": "Aku bisa melihat Bendungan Xiranite melalui teleskop Dijiang! Kelihatan kecil sekali dari sini, seperti bisa dijepit dengan dua jari .... Menakjubkan sekali, perubahan perspektif bisa membuat sesuatu yang besar tampak kecil. Mmm, aku perlu merenungkannya."
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 6",
+        "text": "Endmin, ada orang yang merawat semua tanaman di ruang pertumbuhan, ‘kan? Ooh .... Luar biasa sekali tanaman-tanaman itu bisa tumbuh subur di sini, di tempat yang jauh di atas tanah. Tapi yah, dulu kukira juga aku tak akan betah di sini."
+      },
+      {
+        "title": "Menawarkan Hadiah",
+        "text": "Endmin, masih ingat hadiah yang kujanjikan saat aku kalah main melawanmu? Nah, ini dia!"
+      },
+      {
+        "title": "Menerima Hadiah",
+        "text": "Apa semuanya juga dapat? .... Tidak? Cuma aku? Terima kasih sekali, Endmin!"
+      },
+      {
+        "title": "Dialog Kepercayaan 1",
+        "text": "Kau bicara kepadaku, Endministrator? Maafkan aku, aku ... belum pernah menjalankan prosedur laporan standar. Oh, hanya mau mengobrol? Kalau begitu, kau boleh bertanya apa pun. Aku akan menjawabnya dengan senang hati."
+      },
+      {
+        "title": "Dialog Kepercayaan 2",
+        "text": "Endmin, aku sudah berlatih bela diri dengan Paman Pan sejak masih kecil. Suatu kali, saat kompleks keluarga kami terbakar, kugendong dua anak di bahu kanan, satu anak di bahu kiri, dan kubawa mereka ke tempat aman! Oh iya, apa kau sudah lihat data tes dari minggu lalu? Divisi Medis bilang lenganku yang kurus ini bukan masalah dan pukulanku sama kerasnya dengan pukulan orang lain. Jadi, kalau butuh orang untuk menyingkirkan musuh, cari saja aku!"
+      },
+      {
+        "title": "Dialog Kepercayaan 3",
+        "text": "Saat mendaftar ke Endfield, aku bawa beberapa surat rekomendasi. Kau pasti sudah membacanya, ‘kan? Aku benar-benar memohon kepada Kapten Mi, Tianshi Zhuang, dan Paman Pan—mereka lebih suka aku bekerja di tempat yang dekat dengan rumah. Tapi, aku bertekad untuk belajar melalui pengalaman. Karena itulah aku harus memanfaatkan kesempatan ini sebaik mungkin. Endmin, beri aku tugas yang penting! .... Oh, membersihkan ruang mesin? Oke, akan kubuat semua peralatannya berkilau!"
+      },
+      {
+        "title": "Dialog Kepercayaan 4",
+        "text": "Ajakan langsung dari Endmin?! Ehem, kalau begitu, aku akan berusaha sebaik mungkin untuk membantu tim operasinya. Aku sudah menyusun lima rencana darurat setelah mendengarkan pengarahanmu tadi malam. Jadi, aku tanda tangan di mana? Hah, tak butuh tanda tangan? OKE! Aku datang!"
+      },
+      {
+        "title": "Dialog Kepercayaan 5",
+        "text": "Mulai sekarang, aku akan jadi tangan kananmu .... Huh, kau pasti mengira aku bercanda, ‘kan? Haha, tak apa. Sekarang aku mungkin tampak belum berpengalaman, tapi lama-lama aku pasti bisa. Suatu hari nanti, aku pasti mampu menjalankan misi paling sulit sekalipun. Jadi, nantikan saja, Endmin."
+      },
+      {
+        "title": "Obrolan 1",
+        "text": "Mau adu panco denganku? Aku bisa beradu sepanjang hari!"
+      },
+      {
+        "title": "Obrolan 2",
+        "text": "Endmin, aku punya trik untuk kirim bunga. Kalau mengirim buket, simpanlah setangkai bunganya. Kalau sudah layu, kau jadi tahu sudah saatnya kirim buket lagi. *Mengikik* Itu ideku sendiri, lho. Itu caraku memastikan bunga di makam orang tuaku tetap segar."
+      },
+      {
+        "title": "Obrolan 3",
+        "text": "Semua orang di Endfield kelihatannya agak pemalu. Misalnya, saat sedang berlatih tinju Hongshan pada pagi hari, aku melihat beberapa operator nonton dari kejauhan. Mereka mencoba meniru gerakanku, meniru caraku meregangkan bahu dan menyalurkan tenaga. Tapi, begitu aku berbalik, mereka langsung pergi. Akhir-akhir ini jumlahnya makin banyak. Aku masih belum sempat tanya nama mereka ...."
+      },
+      {
+        "title": "Obrolan 4",
+        "text": "Aku masih kecil saat kehilangan lengan ini. Saat itu, rasa sakitnya tak begitu terasa .... Aku masuk rumah sakit pada musim semi, dan keluar pada musim semi juga. *Berdesah* Aku pun menyadari ... ada beberapa hal yang, setelah hilang, tak akan pernah kembali."
+      },
+      {
+        "title": "Obrolan 5",
+        "text": "Aku pergi jauh dari rumah, Endmin. Aku penasaran sekali bagaimana kabar semua orang di sana. Aku masih ingat hal-hal kecil: Nenek Bai pergi untuk pijat punggung, Kapten Liu mengganti perban kakinya saat hujan, Bibi Li beli kecap asin untuk daging babi rebusnya pada hari Rabu, Xiao Ran selalu lupa bawa sarung tangannya saat mengumpulkan sampel, dan Ah Zai pinjam uang dariku setiap awal bulan untuk bisnis kecilnya ... Akan kukunjungi mereka begitu ada kesempatan!"
+      },
+      {
+        "title": "Topik: Da Pan",
+        "text": "Kalau Tianshi Zhuang sedang sibuk, Paman Pan-lah yang membantuku menyetel lengan prostetikku. Dia benar-benar terampil dalam hal mesin! Dia tahu segalanya, mulai dari rekayasa mesin hingga menyetel peralatan. Aku selalu bertanya-tanya kenapa dia malah pensiun. Ssst, Endmin! Mau tahu rahasia kecil? Aku pernah lihat fotonya semasa muda—mengendarai kendaraan roda lima, pakai jaket kulit, kacamata hitam, dan rambut afro! Kudengar, di HAS, tak ada yang bisa menandinginya. Orang-orang bilang dia bisa buka jalan sendiri dari Sentrapolis hingga perbatasan dengan mengandalkan tebasan-tebasan golok Yan. Mengejutkan, ‘kan?"
+      },
+      {
+        "title": "Topik: Zhuang Fangyi",
+        "text": "Saat masih kecil, aku biasa mengerjakan PR di laboratorium Tianshi Zhuang. Dia akan menyetel prostetikku kalau punya waktu luang—lalu jatuh tertidur di tengah-tengah perbaikan. Biasanya, akulah yang membersihkan rumahnya. Dia terlalu sibuk untuk melakukannya sendiri. Tapi, tak apa-apa, sih—masa depan seluruh Wuling ada di pundaknya."
+      },
+      {
+        "title": "Topik: Mi Fu",
+        "text": "Kapten Mi tak suka kalau kami bilang begini, tapi dia sebenarnya sangat baik. Setiap kali kami bertemu, dia memberiku sejumlah koin dan menyuruhku beli setusuk Tangyoubaba di kios Bibi Tian. Itu adalah makanan manis yang terbuat dari nasi kepal berlapis gula. Saat kuberikan kepadanya, dia melepasnya dari tusukan dan menyuruhku menghabiskan semua penganan lengket itu seorang diri. Dia lalu mengerikiti tusuk bambunya sambil tersenyum puas."
+      },
+      {
+        "title": "Topik: Aggelos",
+        "text": "Anak-anak Wuling tumbuh besar dan bertahan hidup dengan cara melawan monster batuan ini. Dulu, saat Pilar Tianshi masih berdiri, mendekati perairan tak dikenal saja sudah berisiko. Orang dewasa biasa menakut-nakuti kami—“Kalau sampai menyentuh Aggelos, mereka akan merangkak keluar dari saluran pembuangan atau celah ubin lantaimu.” Kedengarannya seperti cerita hantu, tapi begitulah hidup kami. Sebelum bergabung ke Endfield, aku bahkan tak tahu ada jenis Aggelos lain."
+      },
+      {
+        "title": "Topik: Anasa",
+        "text": "Ibu dan Ayah pernah bilang bahwa leluhur kami bukanlah orang kota. Sebelum menyeberangi Gerbang Kosmis menuju Talos-II, mereka menjelajahi dataran kering di luar Kota Nomaden Yan—berselimutkan langit, beralaskan tanah, menjalani hidup seiring naik turunnya tanah. Saat itu aku tak paham, tapi sekarang aku paham, Ibu dan Ayah tak sekadar bercerita—mereka sedang mempersiapkanku. Bahkan setelah Astitva mereka meninggalkan dunia ini, mereka akan kembali dalam wujud lain. Karena itulah ... aku sudah lama berhenti merindukan mereka."
+      },
+      {
+        "title": "Topik: Distrik Pengembangan Sains Wuling",
+        "text": "Wuling yang kaulihat sekarang ini belum lama terbentuk—umurnya hampir sama dengan lengan prostetikku! Luar biasa, ‘kan? Dalam waktu singkat, tempat ini berkembang menjadi salah satu tempat terbaik di Talos-II. Tapi, tak peduli seberapa banyak perubahannya, aku masih hafal letak setiap batu bata di kota ini. Kalau kupejamkan mata, aku masih bisa mencium udara lembap dari jalanan yang tergenang hujan saat gerimis turun."
+      },
+      {
+        "title": "Topik: Hongshan",
+        "text": "Lucunya—aku malah belum pernah ke Mabes HAS. Di sanalah Ibu, Ayah, Tianshi Zhuang, dan Paman Pan bekerja. Aku tak pernah punya alasan untuk ke sana. Maksudku ... tak ada yang kukenal di sana, dan dari yang kudengar, tempat itu penuh orang-orang cerdas dan pemarah. Mungkin aku khawatir mereka bakal menyepelekanku ...."
+      },
+      {
+        "title": "Sumber Daya/Barang Koleksi Terdeteksi 1",
+        "text": "Awasi langkah, mungkin ada barang di sekitar!"
+      },
+      {
+        "title": "Sumber Daya/Barang Koleksi Terdeteksi 2",
+        "text": "Ada barang langka. Kita periksa, yuk?"
+      },
+      {
+        "title": "Area yang Belum Dijelajahi Terdeteksi",
+        "text": "Kau yakin kau tahu jalan ini? Seingatku, kita belum pernah lewat sini."
+      },
+      {
+        "title": "Musuh Kuat Ditemukan",
+        "text": "Musuh terlihat! Biar kutangani!"
+      },
+      {
+        "title": "Penambangan 1",
+        "text": "Aku pernah melihatnya dalam buku! Apa ini berharga?"
+      },
+      {
+        "title": "Penambangan 2",
+        "text": "Bukan masalah!"
+      },
+      {
+        "title": "Membuka Kerat",
+        "text": "Temuan bagus. Apa kita benar-benar harus menyerahkannya kepada para opsir ...?"
+      },
+      {
+        "title": "Mendapatkan Aurylene",
+        "text": "Kata mentorku, Aurylene yang terbang di alam liar tak terlalu berbahaya. Yang penting jangan gegabah mengejarnya."
+      },
+      {
+        "title": "Menyingkirkan Hawar",
+        "text": "Anak Wuling sudah terbiasa dengan Hawar. Jangan khawatir, biar kuurus yang ini!"
+      },
+      {
+        "title": "Istirahat",
+        "text": "Aku merasakan kehangatan mengalir dalam tubuhku .... Saatnya berdiri dan meregangkan badan sebentar!"
+      },
+      {
+        "title": "Penggunaan Taktis 1",
+        "text": "Ambil peralatan medisku! Pulihkan dirimu!"
+      },
+      {
+        "title": "Penggunaan Taktis 2",
+        "text": "Sebentar, mau istirahat dulu!"
+      },
+      {
+        "title": "Peringatan Bahaya",
+        "text": "WARHH, hindari serangannya!"
+      },
+      {
+        "title": "Cedera",
+        "text": "Terus berusaha ... harus terus berusaha ...."
+      },
+      {
+        "title": "0 HP",
+        "text": "Kalau saja aku lebih kuat ...."
+      },
+      {
+        "title": "Penyemangat Tim 1",
+        "text": "Bagaimana caranya? Ajari aku!"
+      },
+      {
+        "title": "Penyemangat Tim 2",
+        "text": "Yang barusan itu luar biasa! Aku jadi bersemangat!"
+      },
+      {
+        "title": "Respons Penyemangat 1",
+        "text": "Heh heh, aku jadi malu ...."
+      },
+      {
+        "title": "Respons Penyemangat 2",
+        "text": "Dua kepala lebih baik dari satu, apalagi kalau empat!"
+      },
+      {
+        "title": "Mulai Pertarungan 1",
+        "text": "Lifeng dari Wuling, siap bertarung!"
+      },
+      {
+        "title": "Mulai Pertarungan 2",
+        "text": "Mereka tak akan bisa menahan tombakku!"
+      },
+      {
+        "title": "Menang Pertarungan 1",
+        "text": "Itu baru namanya pertarungan sungguhan!"
+      },
+      {
+        "title": "Menang Pertarungan 2",
+        "text": "Begitu saja? Aku bahkan belum sempat pakai jurus andalanku ...."
+      },
+      {
+        "title": "Menang Pertarungan 3",
+        "text": "Hmph, kita berhasil beri mereka ganjaran!"
+      },
+      {
+        "title": "Menang Pertarungan 4",
+        "text": "Kemenangan butuh persiapan. Terus berusaha, Teman-teman."
+      },
+      {
+        "title": "Kalah Bertarung",
+        "text": "Paman Pan bilang, ahli tombak hebat tidak ditentukan oleh kecepatan, tapi oleh ketenangan. Ketenanganku hilang kali ini, tapi aku akan bangkit dan coba lagi!"
+      },
+      {
+        "title": "Final Strike 1",
+        "text": "Lihat, nih!"
+      },
+      {
+        "title": "Final Strike 2",
+        "text": "Permisi, kuserang, ya!"
+      },
+      {
+        "title": "Skill Tarung 1",
+        "text": "Kemurnian memberikan kebenaran!"
+      },
+      {
+        "title": "Skill Tarung 2",
+        "text": "Obsesi menghasilkan kepedihan!"
+      },
+      {
+        "title": "Skill Tarung 3",
+        "text": "Pikiran yang tajam menyerang dengan gesit!"
+      },
+      {
+        "title": "Skill Kombo Siap 1",
+        "text": "Beri aba-aba kapan saja!"
+      },
+      {
+        "title": "Skill Kombo Siap 2",
+        "text": "Biar kubantu!"
+      },
+      {
+        "title": "Penggunaan Kombo 1",
+        "text": "Pernah lihat ini?"
+      },
+      {
+        "title": "Penggunaan Kombo 2",
+        "text": "Enyahlah kau!"
+      },
+      {
+        "title": "Penuntas 1",
+        "text": "Pudarlah obsesimu!"
+      },
+      {
+        "title": "Penuntas 2",
+        "text": "Menyerah atau binasa!"
+      },
+      {
+        "title": "Ultimate 1",
+        "text": "Tebak, tangan mana yang akan meremukkanmu?"
+      },
+      {
+        "title": "Ultimate 2",
+        "text": "Kejahatan akan mendapatkan keadilan karma!"
+      },
+      {
+        "title": "Ultimate 3",
+        "text": "AKULAH MURKA!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

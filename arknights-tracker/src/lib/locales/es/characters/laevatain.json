@@ -133,7 +133,333 @@
         "name": "Estilo de vida",
         "description": "Estilo de vida: Viaje de vacaciones\nLos postres son buenos. Las camas suaves son excelentes. Viajar también es bastante agradable: es mucho mejor dedicar la vida al futuro que obsesionarse con el pasado."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Preparación de la operación 1",
+        "text": "Odio los problemas, pero el aburrimiento es peor."
+      },
+      {
+        "title": "Preparación de la operación 2",
+        "text": "Lo que venga después, más vale que sea memorable."
+      },
+      {
+        "title": "Añadir al equipo 1",
+        "text": "Puedo hacerlo. Sola."
+      },
+      {
+        "title": "Añadir al equipo 2",
+        "text": "Yo soy la espada. Yo soy fuego encarnado."
+      },
+      {
+        "title": "Cambiar de arma",
+        "text": "Bonita hoja. Espero que soporte el calor de mis llamas."
+      },
+      {
+        "title": "Cambiar de equipamiento",
+        "text": "El peso no va a frenar mis ataques. ¿Revestimiento resistente al fuego? Bah."
+      },
+      {
+        "title": "Activación de la matriz de habilidades",
+        "text": "¿Y qué tal eso para mostrar mi verdadero poder?"
+      },
+      {
+        "title": "Viendo los registros de combate",
+        "text": "Mmm, buena referencia."
+      },
+      {
+        "title": "Ascenso de operador 1",
+        "text": "¿Y esto qué se supone que significa? ¿Aliento? ¿Aprobación? No necesito eso. Lo único que hice fue toparme con un montón de bichos defectuosos y convertirlos en cenizas."
+      },
+      {
+        "title": "Ascenso de operador 2",
+        "text": "Ahora que me ascendieron, me imagino que el nuevo nivel de autoridad viene con algún tipo de reunión de revisión anual individual, ¿cierto? Bien. Demos un paseo. Necesito un poco de aire."
+      },
+      {
+        "title": "Ascenso de operador 3",
+        "text": "¿De vuelta otra vez? No necesito ningún reconocimiento por hacer bien mi trabajo. Pero si insistes, lo conservaré como símbolo y prueba... de todos los recuerdos que hicimos juntos."
+      },
+      {
+        "title": "Ascenso de operador 4",
+        "text": "Parece que los Endfielders cada vez dependen más de mí. Supongo que no me dejas otra opción más que aceptar este honor. A partir de ahora puedes llamarme Laevatain, operadora de Endfield... ¡Ey! ¿Qué te pasa en la cara?"
+      },
+      {
+        "title": "Operador reportándose para el deber",
+        "text": "¿No nos habíamos conocido ya? Pff. No importa. Me recordarás por esta espada y esta llama."
+      },
+      {
+        "title": "En espera 1",
+        "text": "Odio a los tontos que quieren microgestionar todo. Gracias al cielo que tú no eres uno de ellos."
+      },
+      {
+        "title": "En espera 2",
+        "text": "¿Me buscabas? ¿Por fin recordaste algo?"
+      },
+      {
+        "title": "Asignando a una instalación",
+        "text": "Mmm, parece un buen lugar donde perder el tiempo..."
+      },
+      {
+        "title": "Saludo 1",
+        "text": "Ah, aquí estás."
+      },
+      {
+        "title": "Saludo 2",
+        "text": "Eres tú... Oh, no es que estuviera esperándote específicamente a ti."
+      },
+      {
+        "title": "Charla casual en la Dijiang 1",
+        "text": "¿Por qué estás aquí sin hacer nada? Vamos, vayamos al Puente. Así me cuentas sobre los lugares en los que estuviste... y los destinos que guardas para el futuro."
+      },
+      {
+        "title": "Charla casual en la Dijiang 2",
+        "text": "Mmmm... En este acto agradezco profundamente a la División de Logística por la barra libre de helado. ¿Quieres que te traiga unas porciones?"
+      },
+      {
+        "title": "Charla casual en la Dijiang 3",
+        "text": "Tengo una misión. ¿Quieres venir conmigo? No, no necesito el teleprotocolo. Prefiero la cápsula de descenso. Voy en un aullido ensordecedor de fuego, directo sobre sus cabezas."
+      },
+      {
+        "title": "Charla casual en la Dijiang 4",
+        "text": "¿Frío? Ya les dije que bajaran el termostato, ya que algún genio construyó esta nave y se le olvidó dejar espacio para el aire fresco. Si no aguantas el frío, acércate un poco más."
+      },
+      {
+        "title": "Charla casual en la Dijiang 5",
+        "text": "Cuando no tengo nada que hacer, suelo comer helado y disfrutar del paisaje. Podría hacerlo todo el día. Mi mente está llena de fragmentos rotos de recuerdos. Sin embargo ninguno de ellos me dio una mirada del mundo ni las noches estrelladas desde este ángulo."
+      },
+      {
+        "title": "Charla casual en la Dijiang 6",
+        "text": "¿Sigues atrapado en tus recuerdos? Hm. Si los olvidaste, déjalo así. Solo recuerda lo que pase de ahora en adelante."
+      },
+      {
+        "title": "Ofreciendo regalos",
+        "text": "Toma. Es para ti. Gracias por pensar en mí. ¿Uh? ¿Poder recordar a quien te importa ya es suficiente regalo...? Pff..."
+      },
+      {
+        "title": "Aceptando regalos",
+        "text": "Mmm, no me gusta mucho recibir regalos, porque siempre termino olvidándome de ellos. Pero este es de tu parte... así que será la excepción."
+      },
+      {
+        "title": "Diálogo de confianza 1",
+        "text": "¿Laevatain? Ajá. Lo elegí yo misma. Me inspiré en la espada. ¿Que algunos no lo toman como mi nombre real? Pff. Yo domé a esa cosa, así que su nombre ahora es mío. Igual que con los recuerdos: pretendo gobernarlos, no que ellos me gobiernen a mí."
+      },
+      {
+        "title": "Diálogo de confianza 2",
+        "text": "Mi mente sigue llena de todo tipo de recuerdos fragmentados. No desaparecieron. Simplemente decidí no analizarlos. Quizás cuando termine con estas tareas mundanas siga esos recuerdos y empiece un nuevo viaje."
+      },
+      {
+        "title": "Diálogo de confianza 3",
+        "text": "Surtr... Toda su rabia, su pérdida, su confusión... siguen en mi memoria. Se sienten tan reales, tan permanentes. Pero cuando recuerdo la decisión que tomó al final, encuentro un poco de consuelo."
+      },
+      {
+        "title": "Diálogo de confianza 4",
+        "text": "¿El deber de los reconvocadores? No me importa. Probablemente fue algo que metieron en mis memorias. Acepté luchar a tu lado por la gente que conocí, los caminos que recorrí, las cubiertas donde dormí, los Rompesuelos que aplasté... Fue por los recuerdos que realmente son míos, forjados aquí, en este lugar."
+      },
+      {
+        "title": "Diálogo de confianza 5",
+        "text": "Hubo un tiempo en que no entendía por qué no podías dejar el pasado atrás. Solo lo comprendí al llegar a Endfield... Tú eres Endministrator, un receptáculo de expectativas de todos, una proyección del ideal colectivo de un salvador. Pero nadie debería permitir que su imagen sea moldeada por los anhelos de los demás. Y por eso debes usar tus recuerdos para redescubrir quién eres en verdad. Si necesitas compañía en ese viaje, solo llámame. No me importará a dónde vayas."
+      },
+      {
+        "title": "Charla 1",
+        "text": "¿Mi “Anillo” destrozado? Trátalo como mi mascota y como mi “Unidad de las Artes”. Los ingenieros de Arsenal de Endfield intentaron averiguar cómo funciona. También trataron de repararlo... Pero el Anillo actuó por su cuenta y puso fin a eso."
+      },
+      {
+        "title": "Charla 2",
+        "text": "¿Estás aquí? Ven, échale un ojo a esto. Warfarin me mandó un rompecabezas. Dice que muestra los paisajes, pueblos e historias de Terra... Es enorme. He pasado mucho tiempo en esto y todavía no lo he terminado... Oye, deja de ver los bordes rotos. Y tampoco tuve nada que ver con las partes quemadas. Ya venía así cuando me lo dieron."
+      },
+      {
+        "title": "Charla 3",
+        "text": "Al realizar misiones en Talos-II, soñaba con la Dijiang, con la gente y los eventos de Endfield. Espero pacientemente a que mi mente olvide cada fragmento del pasado que no es mío, y llene los huecos con recuerdos que yo misma haya forjado."
+      },
+      {
+        "title": "Charla 4",
+        "text": "¿Por qué lucho? Porque llegará el día en que estaré en la cima de una montaña, viendo un mundo consumido por el fuego... ¿Y esa cara? Solo describía una pesadilla que me fastidia desde hace tiempo. Olvídate de tus preocupaciones. No dejaré que esa visión se vuelva realidad, sin importar cuándo ni dónde."
+      },
+      {
+        "title": "Charla 5",
+        "text": "A veces veía refugiados vagando por las tierras salvajes, o carniceros que arrasaban ciudades enteras. Un momento estaba podando flores en el jardín, y al siguiente me ahogaba con químicos en el laboratorio. Luchaba contra figuras sombrías a las que no les podía ver el rostro, sin saber por qué peleábamos... Vamos, deja de cabecear. Apenas estaba comenzando."
+      },
+      {
+        "title": "Tema: Seš'qa",
+        "text": "¿Mi hogar? Estuve en un lugar llamado Seš'qa. Tenían edificios, un idioma, festivales y brujería que... se sentían lo bastante familiares como para considerarlos un “hogar”. Pero no volveré ahí a menos que haya una muy buena razón... Su gente era demasiado cálida y apasionada. Algunos incluso me llamaban Diαblo... Uf. Digamos que me sacaron de quicio y... armé un poco de lío en el lugar, solo un poco."
+      },
+      {
+        "title": "Tema: Yvonne",
+        "text": "Esa Vouivre de cabello rosa siempre me pide probar su Frost-e-Bytee. Nunca logró apagar mis llamas. Pero... hace helados bonitos y con estilo, y de sabor no son tan malos."
+      },
+      {
+        "title": "Tema: Circuito Hannabit",
+        "text": "Una Buscadora de canciones del Circuito Hannabit me dijo una vez: “El fuego es un enemigo en manos del viento, pero un amigo en manos de la humanidad.” Ella no temía al fuego. Incluso me enseñó a trazar líneas de fuego al otro lado de las tierras salvajes. Logré contener un incendio forestal. Los aldeanos que sobrevivieron al desastre nos llamaron héroes, pero yo solo pensaba en la bestia nube que salvamos. Le dejé quedarse con la pequeña. Una lástima."
+      },
+      {
+        "title": "Tema: C.G.C.T.",
+        "text": "Necesito que te encargues de algo. La División de RR. HH. me dijo que escalara este asunto contigo. Aquí está. Un cartel de “Se busca”. No es gran cosa. Pasó cuando acababa de salir de Rhodes Island. Un lugar llamado la Glorieta asfaltada me acusó de varios incendios provocados. Deberían culparse a sí mismos. Un negocio sucio lleno de basura inflamable debería, como mínimo, esperarse un incendio."
+      },
+      {
+        "title": "Tema: Sami",
+        "text": "Lo repetiré. Nunca he estado en Terra. En persona. Así que no me hables de sus atracciones, su gente ni su cultura... A menos, claro, que hables de Sami. Escuché que su “hogar” los trajo a Talos-II. Si tenemos una misión en ese lugar, llámame."
+      },
+      {
+        "title": "Recurso/Coleccionable detectado 1",
+        "text": "Veo algo por allá. Si no sirve, podemos usarlo para probar nuestras espadas."
+      },
+      {
+        "title": "Recurso/Coleccionable detectado 2",
+        "text": "Ahí hay algo que vale la pena recordar."
+      },
+      {
+        "title": "Zona inexplorada detectada",
+        "text": "Podemos ir a ver. No te preocupes. Solo quédate cerca de mí."
+      },
+      {
+        "title": "Enemigo poderoso descubierto",
+        "text": "¿Ves ese? ¿Quieres que le dé una podadita?"
+      },
+      {
+        "title": "Minería 1",
+        "text": "Solo lo verdaderamente valioso sobrevive al fuego."
+      },
+      {
+        "title": "Minería 2",
+        "text": "Muy lento. Odio quedarme parada sin nada que hacer."
+      },
+      {
+        "title": "Abriendo una caja",
+        "text": "Recuerdo que estos te gustaban."
+      },
+      {
+        "title": "Adquiriendo Aurileno",
+        "text": "Aurileno... Una cosa tan poco confiable como mis recuerdos."
+      },
+      {
+        "title": "Eliminar la Plaga",
+        "text": "Ten cuidado. Esto es mucho más peligroso que el fuego."
+      },
+      {
+        "title": "Descanso",
+        "text": "Si aún tienes frío, intenta acercarte más a mí."
+      },
+      {
+        "title": "Uso táctico 1",
+        "text": "Vamos, ahórrame el drama."
+      },
+      {
+        "title": "Uso táctico 2",
+        "text": "Hmm. Ya estoy mejor."
+      },
+      {
+        "title": "Advertencia de peligro",
+        "text": "No te quedes ahí parado, ¡muévete!"
+      },
+      {
+        "title": "Herido",
+        "text": "Pff... Esto no me va a matar."
+      },
+      {
+        "title": "0 PV",
+        "text": "Maldigo este... recuerdo de derrota..."
+      },
+      {
+        "title": "Ánimo del equipo 1",
+        "text": "Hmm. Recordaré eso."
+      },
+      {
+        "title": "Ánimo del equipo 2",
+        "text": "Nada mal. Yo me encargo del siguiente."
+      },
+      {
+        "title": "Respuesta al ánimo 1",
+        "text": "Lo sé."
+      },
+      {
+        "title": "Respuesta al ánimo 2",
+        "text": "Es parte de mi trabajo."
+      },
+      {
+        "title": "Comienza el combate 1",
+        "text": "Ahora es el momento de hacer daño."
+      },
+      {
+        "title": "Comienza el combate 2",
+        "text": "Ya era hora."
+      },
+      {
+        "title": "Victoria en el combate 1",
+        "text": "Esto ni cuenta como calentamiento."
+      },
+      {
+        "title": "Victoria en el combate 2",
+        "text": "La victoria era evidente."
+      },
+      {
+        "title": "Victoria en el combate 3",
+        "text": "Supongo que me uniré a tu celebración."
+      },
+      {
+        "title": "Victoria en el combate 4",
+        "text": "Lo hiciste bien. Pero la próxima, solo déjame la parte difícil a mí."
+      },
+      {
+        "title": "Derrota en el combate",
+        "text": "No permitiré que esto vuelva a pasar."
+      },
+      {
+        "title": "Golpe final 1",
+        "text": "¡Corte!"
+      },
+      {
+        "title": "Golpe final 2",
+        "text": "¡Perece!"
+      },
+      {
+        "title": "Habilidad de batalla 1",
+        "text": "¡Fusión de llamas!"
+      },
+      {
+        "title": "Habilidad de batalla 2",
+        "text": "¡Incinérate!"
+      },
+      {
+        "title": "Habilidad de batalla 3",
+        "text": "¡Consúmete!"
+      },
+      {
+        "title": "Habilidad de combo preparada 1",
+        "text": "¡Déjamelo a mí!"
+      },
+      {
+        "title": "Habilidad de combo preparada 2",
+        "text": "¡El infierno te espera!"
+      },
+      {
+        "title": "Lanzando combo 1",
+        "text": "¡Quémate hasta las cenizas!"
+      },
+      {
+        "title": "Lanzando combo 2",
+        "text": "¡Vuélvete cenizas!"
+      },
+      {
+        "title": "Remate 1",
+        "text": "¡No hay escapatoria!"
+      },
+      {
+        "title": "Remate 2",
+        "text": "¡Vas a morir!"
+      },
+      {
+        "title": "Habilidad máxima 1",
+        "text": "¡Deja que ese crepúsculo arda!"
+      },
+      {
+        "title": "Habilidad máxima 2",
+        "text": "¡Cremaré la oscuridad!"
+      },
+      {
+        "title": "Habilidad máxima 3",
+        "text": "¡Tu fin está cerca!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

@@ -117,7 +117,329 @@
         "name": "Kreatif",
         "description": "Kreatif: Latihan Sensitivitas Humor\nAntal yakin bahwa dengan latihan rutin, kelak dia akan jadi Suhu Guru Lelucon Garing."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Persiapan Operasi 1",
+        "text": "Hmm. Jam gilir kerja mulai lagi."
+      },
+      {
+        "title": "Persiapan Operasi 2",
+        "text": "Kali ini, siapa subjek tesnya?"
+      },
+      {
+        "title": "Menambahkan ke Tim 1",
+        "text": "Misi untukku? Bagus. Kebetulan, aku sedang cari peluang untuk melakukan uji lapangan untuk orbiter hasil modifikasi."
+      },
+      {
+        "title": "Menambahkan ke Tim 2",
+        "text": "Kalau kau sudah punya rencana, langsung berikan perintahmu saja. Aku percaya keputusanmu."
+      },
+      {
+        "title": "Berganti Senjata",
+        "text": "Senjata baru dan belum dikalibrasi. Performanya harus dievaluasi dulu."
+      },
+      {
+        "title": "Berganti Gear",
+        "text": "Gear baru ini sudah menjalani sejumlah peningkatan signifikan. Tapi, gampang tersangkut di lapisan sisikku."
+      },
+      {
+        "title": "Aktivasi Matriks Kemampuan",
+        "text": "Hmm .... Terima kasih atas instruksinya. Aku jadi dapat ide, nih."
+      },
+      {
+        "title": "Menonton Rekaman Pertarungan",
+        "text": "Rencana pertarungan ini sangat mengesankan, Endministrator. Aku senang bisa jadi bagian dari tim operasimu."
+      },
+      {
+        "title": "Promosi Operator 1",
+        "text": "Naik gaji? Aku memang butuh tambahan dana untuk beli lebih banyak perangkat Originium dan Unit Arts. Barang-barang penelitian dan barang pribadiku akan terus bertambah."
+      },
+      {
+        "title": "Promosi Operator 2",
+        "text": "Promosi, tapi pekerjaannya juga makin banyak? Aku paham. Nah, ada misi baru untukku, tidak?"
+      },
+      {
+        "title": "Promosi Operator 3",
+        "text": "Apa ini dorongan untuk rasa hausku akan pengetahuan? Aku baru saja selesai menyusun laporan tentang Protokol Automasi Canggih. Kau bisa membacanya untuk jaga-jaga, siapa tahu ada yang terlewat olehku."
+      },
+      {
+        "title": "Promosi Operator 4",
+        "text": "Kehidupan di Endfield sangat jauh berbeda dari saat aku masih di Akademi. Dulu, aku bisa dengan mudah dapat IPK bagus melalui risetku, tapi sepertinya sekarang itu sudah tak berlaku lagi. Aku harus belajar dan hidup dengan memercayai rekan-rekan timku dan berusaha mencapai hasil sebagai tim."
+      },
+      {
+        "title": "Operator Siap Bertugas",
+        "text": "Antal dari Op Z7 siap bertugas. Aku mempelajari automasi Originium, dan kadang membantu memodifikasi atau memperbaiki perangkat Originium. Kau boleh menghubungiku kalau ada tugas semacam itu .... Oh, ya, aku ingin tanya. Topengmu itu terbuat dari material apa? Serat karbon?"
+      },
+      {
+        "title": "Siaga 1",
+        "text": "Ada yang ingin kaubicarakan denganku?"
+      },
+      {
+        "title": "Siaga 2",
+        "text": "Aku sedang menyusun lelucon garing untukmu."
+      },
+      {
+        "title": "Menugaskan ke Fasilitas",
+        "text": "Tugas baru? Siap, laksanakan."
+      },
+      {
+        "title": "Menyapa 1",
+        "text": "Selain tugas-tugas lain, aku juga siap menjawab pertanyaan seputar perangkat Originium."
+      },
+      {
+        "title": "Menyapa 2",
+        "text": "Anehnya, kehadiranmu membuatku jadi makin ingin berbagi pengetahuanku yang luas ini."
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 1",
+        "text": "Boleh kuperiksa senjatamu, Endmin? Hmm. Menurutku, satu-satunya masalahnya adalah ada beberapa komponen yang aus. Cukup ganti saja satu komponen Originium presisinya. Tugas perbaikan ini tak akan terlalu sulit. Aku menawarkan layanan ini kepada semua anggota Tim Z7."
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 2",
+        "text": "Studiku tentang Dijiang menunjukkan bahwa pesawat ini adalah puncak kesempurnaan ilmu permesinan. Kontrol Pusat, Nodus Jaringan Protorig, sistem Pendukung Kehidupan, dan berbagai bagian pesawat menawarkan peluang luas untuk belajar. Pesawat ini membantuku menyusun tesisku yang berikutnya."
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 3",
+        "text": "Aku punya lelucon berdasarkan pengalaman pribadi Fluorite. Bagaimana cara menanggapi pesan ancaman dari seorang antagonis? Jawab: Berhenti berlangganan. Wah, kau tertawa. Berarti, lelucon ini terbukti lucu. Tapi, kenapa yang lainnya tak tertawa sepertimu?"
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 4",
+        "text": "Kalau sedang kurang semangat, ikutlah denganku ke luar. Sinar matahari akan merangsang sekresi serotonin di otak sehingga emosi negatif akan mereda. Ada taman air mancur di dekat Akademiku. Tempatnya sangat tenang dan terpapar sinar matahari melimpah. Semasa belajar di Akademi, di taman itulah aku beristirahat saat kelelahan."
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 5",
+        "text": "Balasan dari nenekku tiba kemarin. Sepertinya dia agak tertarik pada seseorang yang namanya berulang kali kusebut dalam surat-suratku kepadanya. Akan kusampaikan pesan nenekku kepada orang itu, yang kebetulan adalah kau, Endmin: “Sekarang, mestinya kau sudah tahu bahwa si Savra muda itu agak keras kepala, tapi dalam artian positif. Sabarlah menghadapinya. Kapan-kapan, aku ingin minum teh bersamamu. Nanti kuceritakan bagaimana aku membesarkan bocah kecil bersisik itu.”"
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 6",
+        "text": "Banyak orang memandangi Talos-II dari dek Dijiang. Aku juga, tapi walaupun aku memang dapat perspektif baru, aku tak merasakan nostalgia seperti yang mereka rasakan. Mungkin ini gara-gara nenekku. Dia mengajariku: “Jangan terobsesi pada masa lalu. Kejar dan perluaslah masa depanmu.”"
+      },
+      {
+        "title": "Menawarkan Hadiah",
+        "text": "Menurut norma pergaulan, orang harus saling memberikan hadiah sebagai bentuk ungkapan perasaan mereka. Sang penerima, aku sudah menyiapkan hadiah istimewa ini untukmu."
+      },
+      {
+        "title": "Menerima Hadiah",
+        "text": "Aku sungguh berterima kasih. Aku paham makna pemberian hadiah, dan akan kujaga pemberian ini baik-baik."
+      },
+      {
+        "title": "Dialog Kepercayaan 1",
+        "text": "Bergabung ke Endfield bukan pilihan sulit. Kalian menawarkan banyak teknologi baru yang tak ada di Akademi. Kalau menyangkut kemajuan di bidang-bidang tertentu, kalangan ilmiah kadang terlalu konservatif. Tapi, Endfield justru punya semangat luar biasa dalam hal eksplorasi, inovasi, dan penerapan praktis."
+      },
+      {
+        "title": "Dialog Kepercayaan 2",
+        "text": "Bukuku? Memang benar, judulnya Pilihan Tantangan Sudoku Ekstrem. Puzzle aritmetika membantu mengendalikan emosiku saat sedang tak ada kegiatan. Aku sudah pernah mengajak para anggota Z7 melakukan kegiatan ini untuk mengisi waktu, tapi tanggapan mereka negatif. Mungkin kau mau mencobanya, Endmin?"
+      },
+      {
+        "title": "Dialog Kepercayaan 3",
+        "text": "Lelucon garing untukku? Mana, biar kudengar. “Kenapa Savra hanya melontarkan lelucon norak saat siang? Karena matahari bersinar saat siang, dan lelucon norak pun butuh vitamin D agar jadi garing.” .... Hrra-Hrra-Hrra. Aku tak bermaksud mengejek, Endmin. Memang begitulah suara tawa Savra."
+      },
+      {
+        "title": "Dialog Kepercayaan 4",
+        "text": "Aku sudah memodifikasi banyak perangkat Originium. Tapi, yang paling kurindukan adalah tongkat yang diberikan nenekku sewaktu aku masih kecil. Sampai sekarang pun, aku masih ingat kata-katanya: “Tongkat ini akan menemani dalam perjalananmu untuk mengubah dunia.”"
+      },
+      {
+        "title": "Dialog Kepercayaan 5",
+        "text": "Nenekku bilang, menghabiskan seumur hidup untuk menjawab pertanyaan ilmiah mungkin memang romantis, tapi kalau tak ada teman, hidup bakal terasa sepi. Dulu, aku tak paham maksudnya. Kemudian, sekali waktu aku ingin berbagi kegembiraan karena berhasil menghasilkan penemuan baru, tapi kau tak ada. Dari kejadian itu, aku belajar tentang kesepian."
+      },
+      {
+        "title": "Obrolan 1",
+        "text": "Fluorite mengajariku suatu permainan kartu untuk mengisi waktu. Dia juga bilang, yang kalah harus mau melakukan apa pun untuk pemain yang menang. Kami main lima kali. Sekarang, dia harus memberiku lima sesi latihan langsung tentang “cara cepat menjadi lawan bicara yang menyenangkan”."
+      },
+      {
+        "title": "Obrolan 2",
+        "text": "Makan malam? Tidak. Aku tak bisa ikut. Aku memburu Aggelos tanpa melaporkannya kepada Kaptenku. Jadi, dia menghukumku dengan mencabut hak makan malamku di kantin."
+      },
+      {
+        "title": "Obrolan 3",
+        "text": "Kenapa aku malah pilih Z7 alih-alih proyek Litbang? Awalnya, aku memang tertarik pada Pusat Litbang, tapi ternyata yang mewawancaraiku adalah Kapten Akekuri. Menurutnya, perangkat Originium harus dibawa keluar lab dan diuji coba dalam skenario pertarungan sungguhan. Dengan begitu, masalahnya akan lebih mudah diidentifikasi. Aku sependapat dengannya, makanya aku bergabung ke timnya."
+      },
+      {
+        "title": "Obrolan 4",
+        "text": "Kenapa aku terobsesi pada lelucon garing? Semasa sekolah, orang-orang sering protes karena aku kurang punya selera humor. Aku sependapat. Kekuranganku ini harus diperbaiki."
+      },
+      {
+        "title": "Obrolan 5",
+        "text": "Nenekku bilang dia senang aku pergi dari rumah dan masuk Endfield. Menurutnya, ini kesempatan untuk mengalihkan perhatianku dari membaca dan perangkat Originium. Dia berharap aku bisa belajar bergaul dengan rekan-rekan timku, dan mungkin bahkan ... dapat teman baru."
+      },
+      {
+        "title": "Topik: Akekuri",
+        "text": "Kapten Akekuri? Dia merekrutku, dan dia sangat ramah. Kuikuti semua instruksinya. Dia memang bilang tim kami baik-baik saja, tapi dia sering bergadang dan mondar-mandir saat tengah malam. Dia tak mau jelaskan alasannya. Semoga kau bisa memberitahukan alasannya, Endmin."
+      },
+      {
+        "title": "Topik: Catcher",
+        "text": "Catcher bertanggung jawab menyiapkan ransum saat operasi lapangan. Kemahirannya menggunakan alat masak melampaui kemahiranku menggunakan orbiterku. Saat hujan turun, dia tak mau bicara, tapi dia juga tak menolak kehadiranku. Aku jadi bingung karenanya."
+      },
+      {
+        "title": "Topik: Fluorite",
+        "text": "Bisa dibilang, Fluorite adalah temanku, walau dia bersisik. Menurutku, ekornya yang kuat dan hebat itu menarik, tapi dia melarangku menyentuhnya. Fluorite juga teman bicara yang menyenangkan. Aku bisa belajar banyak darinya."
+      },
+      {
+        "title": "Topik: Estella",
+        "text": "Saat memasuki pertarungan, aku perlu mempertimbangkan untuk melindungi Estella. Warna kulit kami sama-sama reflektif dan mencolok. Dalam pertarungan, ini berbahaya karena kami jadi gampang terlihat."
+      },
+      {
+        "title": "Sumber Daya/Barang Koleksi Terdeteksi 1",
+        "text": "Bagus. Ada penemuan baru."
+      },
+      {
+        "title": "Sumber Daya/Barang Koleksi Terdeteksi 2",
+        "text": "Kita harus periksa penemuan penting itu."
+      },
+      {
+        "title": "Area yang Belum Dijelajahi Terdeteksi",
+        "text": "Biar kuselidiki misteri ini."
+      },
+      {
+        "title": "Musuh Kuat Ditemukan",
+        "text": "Unit musuh elite terdeteksi."
+      },
+      {
+        "title": "Penambangan 1",
+        "text": "Mineral punya banyak kegunaan. Kita harus mengumpulkannya."
+      },
+      {
+        "title": "Penambangan 2",
+        "text": "Ini akan meningkatkan efisiensi kita."
+      },
+      {
+        "title": "Membuka Kerat",
+        "text": "Tumpukan sumber daya kaya ditemukan. Kita harus memilahnya agar bisa mengidentifikasi material pemeliharaan gear."
+      },
+      {
+        "title": "Mendapatkan Aurylene",
+        "text": "Beberapa Aurylene tiba-tiba saja menjauh saat didekati. Kenapa? Apa ini semacam penolakan akibat energi?"
+      },
+      {
+        "title": "Menyingkirkan Hawar",
+        "text": "Apa ini berarti kita sudah lebih memahami Hawar ...?"
+      },
+      {
+        "title": "Istirahat",
+        "text": "Manusia bukan mesin, dan harus meluangkan waktu untuk istirahat."
+      },
+      {
+        "title": "Penggunaan Taktis 1",
+        "text": "Memulai penanganan darurat."
+      },
+      {
+        "title": "Penggunaan Taktis 2",
+        "text": "Kondisi kembali normal."
+      },
+      {
+        "title": "Peringatan Bahaya",
+        "text": "Perintah serangan musuh terdeteksi."
+      },
+      {
+        "title": "Cedera",
+        "text": "Kondisi kurang optimal, tapi masih bisa berfungsi."
+      },
+      {
+        "title": "0 HP",
+        "text": "Pikiran kacau. Bantuan ... tidak tersedia."
+      },
+      {
+        "title": "Penyemangat Tim 1",
+        "text": "Performa luar biasa."
+      },
+      {
+        "title": "Penyemangat Tim 2",
+        "text": "Kita berhasil mencapai sinergi tanpa kata."
+      },
+      {
+        "title": "Respons Penyemangat 1",
+        "text": "Terima kasih. Tapi, mestinya aku bisa lebih baik lagi."
+      },
+      {
+        "title": "Respons Penyemangat 2",
+        "text": "Hasilnya tak perlu diragukan."
+      },
+      {
+        "title": "Mulai Pertarungan 1",
+        "text": "Unit Arts optimal."
+      },
+      {
+        "title": "Mulai Pertarungan 2",
+        "text": "Fokus pada pertarungan. Akan kulepaskan tembakan pelindung."
+      },
+      {
+        "title": "Menang Pertarungan 1",
+        "text": "Pengetahuan baru didapatkan."
+      },
+      {
+        "title": "Menang Pertarungan 2",
+        "text": "Misi selesai. Gampang sekali."
+      },
+      {
+        "title": "Menang Pertarungan 3",
+        "text": "Semua anggota sudah berkontribusi besar bagi tim."
+      },
+      {
+        "title": "Menang Pertarungan 4",
+        "text": "Walau ada banyak variabel tak terduga dalam pertarungan, hasil kita tetap optimal."
+      },
+      {
+        "title": "Kalah Bertarung",
+        "text": "Berdasarkan perhitungan kerugian, evakuasi adalah solusi terbaik bagi tim."
+      },
+      {
+        "title": "Final Strike 1",
+        "text": "Cacatnya terlihat!"
+      },
+      {
+        "title": "Final Strike 2",
+        "text": "Huh! Lumpuhkan!"
+      },
+      {
+        "title": "Skill Tarung 1",
+        "text": "Arah sudah ditentukan."
+      },
+      {
+        "title": "Skill Tarung 2",
+        "text": "Target terkunci."
+      },
+      {
+        "title": "Skill Tarung 3",
+        "text": "Output maks."
+      },
+      {
+        "title": "Skill Kombo Siap 1",
+        "text": "Energi sudah penuh."
+      },
+      {
+        "title": "Skill Kombo Siap 2",
+        "text": "Unit siap beraksi."
+      },
+      {
+        "title": "Penggunaan Kombo 1",
+        "text": "Setrum sampai kritis."
+      },
+      {
+        "title": "Penggunaan Kombo 2",
+        "text": "Percepat kemenangan!"
+      },
+      {
+        "title": "Penuntas 1",
+        "text": "Semburan ion."
+      },
+      {
+        "title": "Penuntas 2",
+        "text": "Lonjakan tegangan."
+      },
+      {
+        "title": "Ultimate 1",
+        "text": "Kemenangan menggetarkan."
+      },
+      {
+        "title": "Ultimate 2",
+        "text": "Sirkuit diperkuat."
+      },
+      {
+        "title": "Ultimate 3",
+        "text": "Saatnya menghimpun kekuatan."
+      }
+    ]
   },
   "potentials": {
     "potential1": {

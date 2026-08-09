@@ -127,7 +127,329 @@
         "name": "Olahraga",
         "description": "Olahraga: Rutinitas Latihan Sepanjang Masa\nLatihan olahraga pertama yang dipelajarinya di kamp adalah 30 kali jongkok-berdiri per hari. Dia rutin melakukannya hingga 1.946 hari."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Persiapan Operasi 1",
+        "text": "Hmm? Misi baru?"
+      },
+      {
+        "title": "Persiapan Operasi 2",
+        "text": "Aku sudah siap."
+      },
+      {
+        "title": "Menambahkan ke Tim 1",
+        "text": "Kalau kau butuh perlindungan dan logistik, serahkan saja kepadaku."
+      },
+      {
+        "title": "Menambahkan ke Tim 2",
+        "text": "Semoga rencana misi ini sudah matang dan tak terlalu berisiko."
+      },
+      {
+        "title": "Berganti Senjata",
+        "text": "Praktis dan fleksibel. Ini pasti berguna untuk kita saat menyerbu dalam berbagai skenario."
+      },
+      {
+        "title": "Berganti Gear",
+        "text": "Gear standar .... Kami hanya pernah baca tentang senjata ini di buku panduan kamp latihan militer .... Versi aslinya ternyata lebih bagus daripada perkiraanku."
+      },
+      {
+        "title": "Aktivasi Matriks Kemampuan",
+        "text": "Biasanya aku punya rencana kontingensi cadangan. Rencana itu ... selalu bermanfaat."
+      },
+      {
+        "title": "Menonton Rekaman Pertarungan",
+        "text": "O ... ke. Nih! Semua poin intinya sudah kutulis .... Laporanku akan kutaruh di meja Kapten."
+      },
+      {
+        "title": "Promosi Operator 1",
+        "text": "Terima kasih. Akan kutunjukkan performa terbaikku dalam misi-misi mendatang kita."
+      },
+      {
+        "title": "Promosi Operator 2",
+        "text": "Sekarang, kau bisa beri aku tugas yang lebih berat. Aku yakin sekarang aku pasti bisa mengerjakannya."
+      },
+      {
+        "title": "Promosi Operator 3",
+        "text": "Terima kasih banyak atas persetujuanmu, Endmin. Sebagai balasannya, aku sudah selesaikan persiapan misi sampai ... sembilan puluh hari mendatang. Silakan tinjau sesempatmu."
+      },
+      {
+        "title": "Promosi Operator 4",
+        "text": "Kadang aku membayangkan apa yang kira-kira akan terjadi kalau aku menuruti keinginan keluargaku. Mungkin hidupku tak akan seperti ini. Mungkin bakalan lebih sederhana, tapi lebih nyaman .... Tapi, saat kuambil pedangku dan pergi dari rumah pagi itu, tekadku sudah bulat. Aku sama sekali tak menyesalinya."
+      },
+      {
+        "title": "Operator Siap Bertugas",
+        "text": "Catcher, Tim Op Z7. Tugasku melindungi dan mengurus dukungan logistik untuk tim. Spesialisasiku adalah operasi pertahanan, dan aku mahir menggunakan pedang .... Semoga aku bisa meningkatkan efektivitas kerja timmu."
+      },
+      {
+        "title": "Siaga 1",
+        "text": "Butuh perlindungan saat bertahan? Akan kutangani sebaik mungkin."
+      },
+      {
+        "title": "Siaga 2",
+        "text": "Menurutku, persiapan kita harus lebih matang."
+      },
+      {
+        "title": "Menugaskan ke Fasilitas",
+        "text": "Perintah diterima. Tugas ini sudah kutandai sebagai prioritas utama misiku."
+      },
+      {
+        "title": "Menyapa 1",
+        "text": "Salam, Endmin. Ada tugas lagi untukku?"
+      },
+      {
+        "title": "Menyapa 2",
+        "text": "Endmin, aku sudah susun sepuluh map ringkasan pascapertarungan untuk Tim Z7. Kau mau membacanya?"
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 1",
+        "text": "Kau mencariku, Endmin? Baiklah, aku punya waktu tiga puluh menit, lalu aku harus berlatih pedang selama lima sesi berturut-turut tanpa henti .... Setelah itu, waktuku luang terus."
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 2",
+        "text": "Belum lama ini, berdasarkan saran dari rekan-rekan, aku memperbaiki resep semur alam liarku .... Kalau kau penasaran, jangan sungkan-sungkan mencicipinya, Endmin."
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 3",
+        "text": "Setiap kali kembali ke Dijiang, aku selalu merasa luar biasa nyaman dan santai sampai-sampai tak bisa kugambarkan .... Antal ngotot bahwa ini karena kasur di asrama sangat nyaman .... Tentu saja, aku tak berniat menyanggah pendapatnya itu."
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 4",
+        "text": "Aku yakin sepenuhnya kepada timku saat menjalankan misi. Tapi, aku sama sekali tak yakin mereka akan menuruti perintah Kapten untuk beristirahat setelah misi. Ada yang malah bergadang semalaman di perpustakaan, ada juga yang malah menjahili anggota rekrutan baru di ruang bermain .... Mereka baru bisa dipaksa berhenti bertingkah tak jelas begitu kalau aku sendirilah yang “mengawal” mereka kembali ke kabin mereka."
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 5",
+        "text": "Dua hari lalu, aku menjenguk keluargaku. Mereka tak begitu setuju dengan pilihan karierku, tapi kuceritakan kepada mereka Tim Z7 itu sebenarnya seperti apa. Mereka tak berkomentar banyak, tapi malah memberiku beberapa ransel berisi makanan khas daerah kami. Z7 bakalan butuh enam bulan untuk menghabiskan semua makanan itu .... Endmin, menurutku kau juga harus dapat separuh isi ransel itu."
+      },
+      {
+        "title": "Obrolan Santai di Dijiang 6",
+        "text": "Hidup ini sangat memuaskan. Aku sungguh merasa berguna dan semua orang benar-benar menghargainya .... Bagiku, itulah makna menjadi Endfielder. Kadang, aku terlalu lelah sampai-sampai malah tak bisa tidur, tapi aku bisa memakluminya. Itu berarti aku berhasil mendapatkan kepercayaan seseorang."
+      },
+      {
+        "title": "Menawarkan Hadiah",
+        "text": "Ini cuma hadiah kecil, Endmin .... Tapi, kuharap kau mau menerimanya."
+      },
+      {
+        "title": "Menerima Hadiah",
+        "text": "Untukku? Terima kasih banyak, Endmin. Akan kusimpan di tempat yang aman."
+      },
+      {
+        "title": "Dialog Kepercayaan 1",
+        "text": "Oh, maaf, Endmin! Aku sedang memikirkan persiapan untuk misi berikutnya. Sebentar! Aku ingin tanya. Mana yang menurutmu lebih berguna: alat las genggam, modulator antigravitasi, atau masker tahan debu Originium? Hmm ... kubawa saja semuanya, deh."
+      },
+      {
+        "title": "Dialog Kepercayaan 2",
+        "text": "Keluargaku biasa-biasa saja. Orang tuaku tentara. Kakak laki-lakiku seorang instruktur militer di TGCC, sedangkan kakak perempuanku seorang pengawal bersenjata untuk Seš’qamam. Aku anak bungsu, makanya mereka selalu menjagaku. Seluruh keluargaku ingin aku hidup damai dan tak mengikuti jejak mereka di dunia militer .... Tapi, keluargaku tak selamanya bisa menjagaku, apalagi di Talos-II."
+      },
+      {
+        "title": "Dialog Kepercayaan 3",
+        "text": "Aku tak pernah suka masa kecilku sebelum usiaku sembilan tahun. Masa-masa itu membuatku tak tahan bau yodium dan peroksida .... Dulu, aku bahkan tak sanggup mengangkat botol air. Para dokter selalu saja menasihati keluargaku untuk melarangku keluar rumah. Aku hanya boleh bermain di luar saat ada acara-acara istimewa .... Sekarang pun, aku masih ingat bagaimana aku pulih dan bisa berjalan di bawah sinar matahari langsung untuk pertama kalinya. Rasanya seakan-akan aku hidup kembali."
+      },
+      {
+        "title": "Dialog Kepercayaan 4",
+        "text": "Sebagian orang mungkin menganggap Z7 adalah tim operasi yang biasa-biasa saja. Yah, memang ada benarnya, sih. Kapten Akekuri masih agak terlalu muda, gigitan Fluorite agak terlalu parah, sedangkan Estella dan Antal suka bertingkah tak jelas. Tapi, aku sepenuhnya bersedia tetap bertahan di Z7 .... Aku bahkan tak keberatan jadi anggota tetap dalam tim ini."
+      },
+      {
+        "title": "Dialog Kepercayaan 5",
+        "text": "Saat pertama kali bergabung ke Endfield, aku tak yakin aku mampu mendapatkan kepercayaan para seniorku .... Tapi, semua anggota Tim Z7, dan bahkan kau sendiri, Endmin, selalu meyakinkanku—bahwa aku pasti bisa mencapai jauh lebih banyak dari perkiraanku dan memenuhi harapan semua orang."
+      },
+      {
+        "title": "Obrolan 1",
+        "text": "Kamp latihan militernya biasa-biasa saja. Isinya cuma beberapa latihan pertarungan dengan sedikit unsur latihan bertahan hidup di medan. Kebanyakan orang sebenarnya tak berharap kamp latihan militer akan mengajarkan hal-hal yang benar-benar bermanfaat dalam pertarungan sungguhan .... Aku mungkin perkecualian karena aku menghabiskan satu sesi simulasi penuh hanya untuk berdebat dengan instrukturku bahwa demonstrasinya menyimpang dari posisi standar yang dijelaskan dalam buku panduan. Apa yang terjadi setelah itu? Yah, aku berhasil meyakinkannya sebelum sesi simulasi ketiga dimulai."
+      },
+      {
+        "title": "Obrolan 2",
+        "text": "Dalam keluargaku, sebenarnya akulah yang paling tak punya bakat menjadi tentara. Kekuatan fisik dan teknik tempurku jauh di bawah standar keluargaku .... Walau begitu, aku tak pernah menyerah, dan terus gigih berlatih keras—aku bangun dua jam lebih awal daripada kakak laki-lakiku, dan berlatih tiga kali lebih giat daripada kakak perempuanku .... Dan itu terus kupertahankan hingga kini."
+      },
+      {
+        "title": "Obrolan 3",
+        "text": "Kenapa aku mulai belajar memasak? Tak ada alasan tertentu, sih. Saat baru bergabung ke Z7, aku mencicipi makanan yang dimasak rekan-rekan timku. Pada hari kedua, aku minta bantuan Instruktur Lil’ Dodge. Begitulah, akhirnya selama beberapa minggu aku mengikuti Latihan Menjamin Keselamatan di Alam Liar."
+      },
+      {
+        "title": "Obrolan 4",
+        "text": "Sebelum bergabung ke Endfield, aku pernah magang dengan beberapa PMC, tapi mereka semua menyuruhku bersikap lebih “profesional” .... Sederhananya, mereka menyuruhku menerima saja bayaranku dan berhenti bertanya macam-macam. Mereka memang ada benarnya, sih, dan alasannya juga masuk akal. Sayangnya, aku tak bisa menuruti mereka."
+      },
+      {
+        "title": "Obrolan 5",
+        "text": "Semoga saja tak ada yang mengusulkan ide-ide aneh kepada Antal dan teman-temannya untuk penugasan berikutnya. Bulan ini saja, kami sudah cukup banyak menimbulkan masalah bagi Ahli Mesin Senjata kita .... Yah, tebakanmu benar. Ada setumpuk Laporan Masukan yang tak bisa diselesaikan Kapten, dan sekarang laporan itu menumpuk di kasurku. Tak usah khawatir. Kalau besoknya tak ada tugas untukku, aku akan lembur semalaman dan menyelesaikan semua laporan itu."
+      },
+      {
+        "title": "Topik: Akekuri",
+        "text": "Z7 punya Kapten yang bertanggung jawab dan sangat peduli kepada semua anggota .... Tapi, akan lebih baik kalau dia juga lebih memperhatikan dirinya sendiri. Saat rapat tim sekalipun, dia selalu saja mendahulukan keinginan orang lain daripada dirinya sendiri. *Berdesah* Jujur saja, kuharap dia mau mengaku saja bahwa dia suka camilan Higashi. Dengan begitu, aku bisa berhenti pura-pura bahwa aku “kebetulan” saja membuat camilan itu."
+      },
+      {
+        "title": "Topik: Fluorite",
+        "text": "Aku tahu perangai tentara bayaran Sentrapolis seperti dia. Orang-orang licik dan serakah, suka menyendiri, dan senyumnya lebih seram daripada geramannya .... Tapi, Fluorite mulai membahas berbagai teknik untuk melemparkan Siput Originium dengan Antal .... Jadi, mungkin kita bisa ... lihat saja dulu sebelum menilainya terlalu jauh."
+      },
+      {
+        "title": "Topik: Estella",
+        "text": "Entah kenapa, Estella selalu tampak ... kaget setiap kali dia baca laporanku. Aku kan cuma menjelaskan segala hal yang terjadi sepanjang misi ... dan hanya menambahkan beberapa ide jahil di bagian-bagian tertentu .... Isi laporanku sama sekali tak mengejutkan, kok. Isinya biasa saja, terutama kalau dibandingkan dengan ... karangan kreatif yang ditulisnya."
+      },
+      {
+        "title": "Topik: Antal",
+        "text": "Antal punya pengetahuan luas dan selalu senang menjawab macam-macam pertanyaan. Masalahnya, dia jadi kelewat bersemangat saat menjawab pertanyaan. Estella pernah bilang sambil lalu: “Kenapa kuping panjang punya telinga sepanjang itu?” Gara-gara itu, Antal pun memutuskan menguliahi kami tentang ekobiologi sampai seharian penuh. Penjelasannya akhirnya selesai setelah kami kembali ke Dijiang. Tapi, dia malah bilang bahwa penjelasannya tadi itu baru sebatas ringkasan, dan masih ada tujuh puluh persen materi yang belum dijelaskannya."
+      },
+      {
+        "title": "Sumber Daya/Barang Koleksi Terdeteksi 1",
+        "text": "Menurut pengalamanku, di sana ada item yang bisa dikumpulkan."
+      },
+      {
+        "title": "Sumber Daya/Barang Koleksi Terdeteksi 2",
+        "text": "Ada sesuatu di sana .... Sebaiknya kita periksa walau harus putar balik."
+      },
+      {
+        "title": "Area yang Belum Dijelajahi Terdeteksi",
+        "text": "Level ancaman tidak diketahui. Kita harus waspada."
+      },
+      {
+        "title": "Musuh Kuat Ditemukan",
+        "text": "Kalau harus bertarung, akan kusiapkan dulu jalur penyelamatan diri kita."
+      },
+      {
+        "title": "Penambangan 1",
+        "text": "Material langka. Kita harus cepat-cepat mengumpulkannya."
+      },
+      {
+        "title": "Penambangan 2",
+        "text": "Kita selalu lebih efisien kalau saling bahu-membahu .... Ayo kita gali bersama."
+      },
+      {
+        "title": "Membuka Kerat",
+        "text": "Bagus. Kita berhasil mengumpulkan banyak suplai yang bermanfaat."
+      },
+      {
+        "title": "Mendapatkan Aurylene",
+        "text": "Ini pastilah Aurylene yang disebutkan dalam buku panduan ...."
+      },
+      {
+        "title": "Menyingkirkan Hawar",
+        "text": "Hawar jauh lebih berbahaya daripada yang diduga orang-orang. Kita harus menanganinya dengan hati-hati."
+      },
+      {
+        "title": "Istirahat",
+        "text": "Agar bisa menyelesaikan misi, kita harus cukup istirahat. Begitulah yang tertulis di buku panduan kerja."
+      },
+      {
+        "title": "Penggunaan Taktis 1",
+        "text": "Pakai ini. Kami masih punya banyak."
+      },
+      {
+        "title": "Penggunaan Taktis 2",
+        "text": "... Aku salah perhitungan."
+      },
+      {
+        "title": "Peringatan Bahaya",
+        "text": "Hati-hati. Jangan terlalu memaksakan diri."
+      },
+      {
+        "title": "Cedera",
+        "text": "Pedangku masih utuh, kok."
+      },
+      {
+        "title": "0 HP",
+        "text": "Maaf .... Lagi-lagi aku membuat kalian semua kecewa ...."
+      },
+      {
+        "title": "Penyemangat Tim 1",
+        "text": "Manuver luar biasa."
+      },
+      {
+        "title": "Penyemangat Tim 2",
+        "text": "Kerja sama tim seperti ini patut dirayakan."
+      },
+      {
+        "title": "Respons Penyemangat 1",
+        "text": "Aku ... merasa tersanjung."
+      },
+      {
+        "title": "Respons Penyemangat 2",
+        "text": "Ini berkat bantuan kalian semua."
+      },
+      {
+        "title": "Mulai Pertarungan 1",
+        "text": "Sebaiknya kita cari aman saja dan mendekat dengan hati-hati."
+      },
+      {
+        "title": "Mulai Pertarungan 2",
+        "text": "Aku siap membantu."
+      },
+      {
+        "title": "Menang Pertarungan 1",
+        "text": "Areanya sudah dinetralkan? Sebaiknya kita periksa sekali lagi."
+      },
+      {
+        "title": "Menang Pertarungan 2",
+        "text": "Kita berhasil meraih kemenangan."
+      },
+      {
+        "title": "Menang Pertarungan 3",
+        "text": "Mengesankan .... Hanya kaulah yang bisa mewujudkannya."
+      },
+      {
+        "title": "Menang Pertarungan 4",
+        "text": "Bagaimanapun, kita berhasil memenuhi target misi."
+      },
+      {
+        "title": "Kalah Bertarung",
+        "text": "Sebagian besar pengalaman hidupku mengajariku satu hal: Terima saja kalau kalah, lalu berusahalah lebih baik lagi."
+      },
+      {
+        "title": "Final Strike 1",
+        "text": "Enyahlah."
+      },
+      {
+        "title": "Final Strike 2",
+        "text": "Giliranmu."
+      },
+      {
+        "title": "Skill Tarung 1",
+        "text": "Mundur!"
+      },
+      {
+        "title": "Skill Tarung 2",
+        "text": "Tahan!"
+      },
+      {
+        "title": "Skill Tarung 3",
+        "text": "Berlindung!"
+      },
+      {
+        "title": "Skill Kombo Siap 1",
+        "text": "Sudah selesai menunggunya."
+      },
+      {
+        "title": "Skill Kombo Siap 2",
+        "text": "Giliranku."
+      },
+      {
+        "title": "Penggunaan Kombo 1",
+        "text": "Makan, nih!"
+      },
+      {
+        "title": "Penggunaan Kombo 2",
+        "text": "Rasakan!"
+      },
+      {
+        "title": "Penuntas 1",
+        "text": "Kau tak akan bisa lolos."
+      },
+      {
+        "title": "Penuntas 2",
+        "text": "Tamat sudah."
+      },
+      {
+        "title": "Ultimate 1",
+        "text": "Tumbanglah kau!"
+      },
+      {
+        "title": "Ultimate 2",
+        "text": "Tak ada yang bisa lolos dariku!"
+      },
+      {
+        "title": "Ultimate 3",
+        "text": "MINGGIR!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

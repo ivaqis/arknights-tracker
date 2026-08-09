@@ -125,7 +125,333 @@
         "name": "Kultur",
         "description": "Kultur: Sunrise Industry \nSie hat Pläne für die Zukunft von Wuling, die deutlich über die Xiranit-Technologie hinausgehen."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Einsatzvorbereitung 1",
+        "text": "Egal, ob wir auf Gegner oder Gäste treffen, wir brechen erst auf, wenn wir bereit sind."
+      },
+      {
+        "title": "Einsatzvorbereitung 2",
+        "text": "Wie wäre es mit einer erfrischenden Tasse Tee, ehe wir aufbrechen?"
+      },
+      {
+        "title": "Wird zum Team hinzugefügt 1",
+        "text": "Da du meine Hilfe angefordert hast, liegt wohl ein kniffliger Fall vor. Wie kann ich helfen?"
+      },
+      {
+        "title": "Wird zum Team hinzugefügt 2",
+        "text": "Ich war schon seit Jahren nicht mehr auf einer Mission … hoffentlich bin ich nicht eingerostet."
+      },
+      {
+        "title": "Waffe wird gewechselt",
+        "text": "Selbst die beste Waffe braucht Zeit, um gemeistert zu werden. Wenn ich mich an diese gewöhnt habe, teile ich dir meine Gedanken mit."
+      },
+      {
+        "title": "Ausrüstung wird gewechselt",
+        "text": "Das neue Teil ist tatsächlich effektiver, aber ich hatte mich an das alte gewöhnt …"
+      },
+      {
+        "title": "Fähigkeitsmatrix-Aktivierung",
+        "text": "Mit jeder neuen Erkenntnis, die ich gewinne, wird mir klar, dass all mein Wissen nur ein Tropfen in einem Ozean ist."
+      },
+      {
+        "title": "Kampfaufzeichnungen ansehen",
+        "text": "*seufz* Ich hasse es, meine Tollpatschigkeit auf dem Bildschirm zu sehen … Wollen wir nicht lieber persönlich miteinander trainieren?"
+      },
+      {
+        "title": "Operator-Beförderung 1",
+        "text": "Ich habe nur meine Aufgaben erfüllt … diese Freundlichkeit ist nicht nötig."
+      },
+      {
+        "title": "Operator-Beförderung 2",
+        "text": "Schon gut, schon gut, das war wirklich genug Lob. Wenn du gerade Zeit hast, würdest du kurz die Unterlagen für meine aktuelle Forschung durchsehen?"
+      },
+      {
+        "title": "Operator-Beförderung 3",
+        "text": "Das ist wirklich viel zu großzügig von dir … Weißt du, ein einfaches gemeinsames Essen hätte auch völlig ausgereicht. Oder vielleicht solltest du mal ans Meer fahren, eine kleine, salzresistente Pflanze wäre ein perfektes Mitbringsel."
+      },
+      {
+        "title": "Operator-Beförderung 4",
+        "text": "… Ich weiß diese nette Geste wirklich zu schätzen. An eine Sache wollte ich dich erinnern: Bitte schau in Wuling vorbei, wenn du Zeit hast, und hol deine Medaille zur Ehrenbürgerschaft ab. Und versprich mir, sie nicht einfach einzupacken und abzuhauen. Wir wollen eine richtige Zeremonie zu deinen Ehren abhalten."
+      },
+      {
+        "title": "Operatorin meldet sich zum Dienst",
+        "text": "Endmin, ich würde gern ein paar Worte sagen, ehe ich meinen Dienst offiziell antrete. Als Vize verfüge ich über reichhaltige Erfahrung in administrativen Angelegenheiten. Allerdings … möchte ich hier bei Endfield als einfache Tianshi arbeiten und mich der Forschung widmen."
+      },
+      {
+        "title": "Warten 1",
+        "text": "Hast du gerade … nach mir gerufen? Soll ich dir Gesellschaft leisten?"
+      },
+      {
+        "title": "Warten 2",
+        "text": "Endmin, ich habe den Tianshi-Apparat um ein neues Modul erweitert. Wollen wir mal sehen, wie es sich schlägt?"
+      },
+      {
+        "title": "Zuweisung zur Anlage",
+        "text": "Wenn du mir vertraust, kannst du mir diese Angelegenheiten überlassen. Ich kann mich eigenständig darum kümmern."
+      },
+      {
+        "title": "Gruß 1",
+        "text": "Ich bin unterwegs zum Labor. Hast du Lust, mitzukommen?"
+      },
+      {
+        "title": "Gruß 2",
+        "text": "Was für ein toller Zufall! Ich war gerade auf dem Weg zu dir."
+      },
+      {
+        "title": "Dijiang-Geplauder 1",
+        "text": "Ich betrete die Dijiang zum ersten Mal, aber … meine holografische Projektion war schon hier und hat an Besprechungen teilgenommen."
+      },
+      {
+        "title": "Dijiang-Geplauder 2",
+        "text": "Ich habe über die riesige Chubby-Lung-Statue nachgedacht, um die du gebeten hattest … die Lieferung wäre möglich, aber … du solltest dir ganz genau überlegen, wo sie platziert werden soll."
+      },
+      {
+        "title": "Dijiang-Geplauder 3",
+        "text": "Unsere Kooperation mit Endfield … entschuldige, mit Wuling, wurde abgeschlossen und der Bericht über das Experiment wurde hochgeladen. Wenn du in den nächsten Tagen etwas Zeit findest, sieh ihn dir bitte mal an."
+      },
+      {
+        "title": "Dijiang-Geplauder 4",
+        "text": "Diesmal ist es nicht die Arbeit, die mich auf die Dijiang führt … Die Birnbäume in Wuling tragen gerade reife Früchte und ich dachte, ich würde allen ein paar mitbringen."
+      },
+      {
+        "title": "Dijiang-Geplauder 5",
+        "text": "Als Kind habe ich es geliebt, meine Meisterin zum Observatorium zu begleiten. Sie hat immer die Sterne gezählt und mir gezeigt, welcher von ihnen die Dijiang ist. Ich habe sie immer angesehen und mir vorgestellt, wie weit weg sie sein muss. Jetzt, wo ich die Dijiang direkt vor mir sehe, kommt diese Erinnerung mir weit entfernt vor."
+      },
+      {
+        "title": "Dijiang-Geplauder 6",
+        "text": "Es heißt, man solle viel lesen und weit reisen. Gelesen habe ich bereits eine Menge, aber ich habe noch nicht viele Orte besucht. Mit Hongshan, Wuling und der Dijiang komme ich erst auf drei. Das ist wohl nicht weiter überraschend, denn ich neige dazu, viele Jahre an einem Ort zu verbringen – zehn, zwanzig … vielleicht sogar ein ganzes Leben."
+      },
+      {
+        "title": "Geschenke anbieten",
+        "text": "Ich bin gerade von einer Geschäftsreise nach Hongshan zurückgekehrt und habe dir ein paar Geschenke mitgebracht. Sie sind einfach, aber ich habe jedes einzelne mit großer Sorgfalt ausgewählt … hoffentlich gefallen sie dir."
+      },
+      {
+        "title": "Geschenke annehmen",
+        "text": "Die Etikette würde vorschreiben, es sachgerecht einzulagern, aber ich würde dein Geschenk lieber in meiner Nähe haben, damit ich es jederzeit sehen kann."
+      },
+      {
+        "title": "Vertrauensgespräch 1",
+        "text": "Oh, Endmin! Könntest du das hier kurz halten, damit ich die Erde einfüllen kann? Hätte das Schicksal mich nicht nach Wuling geführt, wäre ich vielleicht in Hongshan geblieben und Farmerin oder Nongye Tianshi geworden. Meine Familie hat es immer geliebt, sich um Blumen und Pflanzen zu kümmern, daher war unser Zuhause stets voll von grünem Leben, das alle Besucher erfrischt hat. Deshalb habe ich bei meiner Mitarbeit an der Planung von Wuling City auch zuerst daran gedacht, welche Düfte die Besucher empfangen und welche Atmosphäre sie aufnehmen sollen."
+      },
+      {
+        "title": "Vertrauensgespräch 2",
+        "text": "Keine Sorge, ich bin nicht hier, um dich zur Akademie zu zerren. Auf der Fangxing-Straße hat ein neues Nudelrestaurant eröffnet, das Nudeln mit Schmorbraten serviert, und ich dachte, wir könnten es vielleicht zusammen ausprobieren. Aber ein anderes Thema, warum denkst du direkt an Arbeit, wenn du mich siehst? Vielleicht sollte ich darüber mal in Ruhe nachdenken."
+      },
+      {
+        "title": "Vertrauensgespräch 3",
+        "text": "Wuling veranstaltet einen „Dreibeinlauf“ und ich wollte fragen, ob du mit mir antreten würdest. Die Strecke führt von Osten nach Westen und dann von Norden nach Süden. Wenn wir es bis Sonnenuntergang schaffen, haben wir bestanden. Hast du Angst, dass wir es nicht schaffen könnten? Keine Sorge, letztes Jahr habe ich gewonnen. Wenn nötig trage ich dich einen Teil der Strecke. Du kannst dir sicher sein, dass wir es aufs Podest schaffen werden."
+      },
+      {
+        "title": "Vertrauensgespräch 4",
+        "text": "Was liest du da? Oh, einen Text über mich? Meinst du den Artikel, den wir veröffentlicht haben? Ah … ich verstehe, es geht um meine Familie. Da hättest du mich doch einfach direkt fragen können. Nach dem Tod meiner Eltern haben mein Onkel und meine Tante mich liebevoll großgezogen. Aber sie hatten auch eigene Verpflichtungen und konnten nicht immer an meiner Seite sein. Daher habe ich mich schon in jungen Jahren nach Gesellschaft gesehnt. Als ich jedoch endlich Freunde gefunden hatte, fehlten mir die Ruhe und der Frieden des Alleinseins."
+      },
+      {
+        "title": "Vertrauensgespräch 5",
+        "text": "Auch wenn der Frieden nach Wuling City zurückgekehrt ist, liegen noch viele Prüfungen und Herausforderungen vor uns. Aber keine Sorge, Endmin. Egal, wie schwierig die Lage auch sein mag, wir werden an deiner Seite stehen. Der Winter weicht schließlich immer dem Frühling. Wie ein altes Sprichwort sagt, enttäuscht die grüne Jahreszeit diejenigen nicht, die Schnee und Frost trotzen, denn sie wird wie versprochen wieder erwachen. Wenn der Frühling dann endlich da ist, sollten wir gemeinsam hinausgehen und die Schönheit der Natur bewundern."
+      },
+      {
+        "title": "Geplauder 1",
+        "text": "Dein Vorschlag passt gut zu unseren früheren Visionen, aber die technischen Barrieren waren lange Zeit zu hoch für uns. Nun jedoch steht uns ein neuer Pfad offen … Ah, entschuldige. Der Duft, der zum Fenster hereinzieht, hat mich abgelenkt. Die Blumen blühen dieses Jahr so früh, es ist eine Freude … Endmin, wo die Jahreszeit uns schon dazu einlädt, wollen wir dieses Gespräch draußen fortsetzen?"
+      },
+      {
+        "title": "Geplauder 2",
+        "text": "Viele der Pflanzen in Wuling City sind Geschenke, die Tianshi aus ihrer Heimat mitgebracht haben. Als ich zum ersten Mal gesehen habe, wie sie hier gedeihen, hatte ich das Gefühl, sie hätten ein Stück ihrer Heimat mitgebracht und in Wuling Wurzeln schlagen lassen. So hatten sie einen Ort, an den sie gehen konnten, sollte das Heimweh sich melden. Erst später ist mir klargeworden, dass nicht nur die Samen Wurzeln geschlagen hatten – sondern auch die Tianshi. Wuling war für sie nicht länger ein fremder Ort, sondern ihre Heimat."
+      },
+      {
+        "title": "Geplauder 3",
+        "text": "Der Lösung fünf Milliliter beifügen … Okay, die Farbänderung sieht normal aus – keine seltsamen Niederschläge oder Trübungen. Jetzt ein Katalysator, um den Geschmack zu betonen … Die Temperatur passt, nichts brennt an. Die Auflösungsgeschwindigkeit sieht gut aus … Hm, Endmin? Nein, nein, ich führe kein Experiment durch. Tatsächlich … koche ich. Mi Fu schimpft immer mit mir, weil ich nur von Fertignahrung und Lieferdiensten lebe, also wollte ich meine seltene Freizeit nutzen, um mir etwas zuzubereiten. Möchtest du mal probieren?"
+      },
+      {
+        "title": "Geplauder 4",
+        "text": "Puh … hättest du kurz Zeit? Ich habe gerade meine Joggingrunde beendet und möchte kurz durchatmen. J-ja, ich weiß, dass es fünf Uhr ist, aber das ist nicht ungewöhnlich. Um vier Uhr aufstehen, um fünf den Sport beenden, um halb sechs an den Schreibtisch … dieser Rhythmus begleitet mich schon seit mehr als zehn Jahren. Ich mochte es noch nie, lange zu schlafen. Es gibt zu viel, was ich erreichen möchte, also tausche ich Schlaf gegen Zeit. Aber … was führt dich um diese Uhrzeit allein ins Labor?"
+      },
+      {
+        "title": "Geplauder 5",
+        "text": "Bald jährt sich der Ehrentag meiner verstorbenen Wegbereiter, Endmin. Würdest du mich zum Garten der Klarheit begleiten, wenn dein Zeitplan es zulässt? Ich bereue es noch immer, dass ich ihre Überreste nicht zusammentragen und in ihre Heimat zurückbringen konnte. Und mir ist bewusst, dass kein Denkmal in Wuling sie zurückbringen wird. Trotzdem, wenn wir durch diese Denkmäler ihr Andenken auch nur einen Augenblick länger bewahren können, waren ihre Mühen nicht vergebens."
+      },
+      {
+        "title": "Thema: Wuling City",
+        "text": "Natürlich ist es mit großen Risiken verbunden, Wuling City direkt neben dem Riss zu erbauen. Das wusste ich besser als die meisten anderen. Aber niemand wollte den Ort verlassen, als die Stadt wiederaufgebaut wurde. Wuling hat die Pflichten der Forschungsstation geerbt und die Tianshi werden niemals aufgeben. Genauso wenig wie diese Stadt."
+      },
+      {
+        "title": "Thema: Wuling-Forschungsstation",
+        "text": "Meine Vorgänger haben den Erhalt ihrer wissenschaftlichen Errungenschaften höher geschätzt als ihre Leben. Für mich scheint ihr Verlust jedoch der größere zu sein. Xiranit lässt sich reproduzieren, die Verstorbenen aber können nicht zurückkehren. Ich weiß, dass auch auf dem Gebiet der Wissenschaft die Gelegenheiten für echte Neuanfänge selten sind. Dennoch wird es immer jene geben, die diesem Weg voller Entschlossenheit folgen. Vielleicht … waren meine Vorgänger sich dessen genau bewusst, als sie ihre Wahl getroffen haben."
+      },
+      {
+        "title": "Thema: Mi Fu",
+        "text": "Mi Fu ist … eine interessante Person. Als wir mit dem Bau von Wuling City begonnen haben, jagte eine Krise die nächste und ich habe mich oft in die Berge zurückgezogen, um zur Ruhe zu kommen. Lach nicht, „zur Ruhe kommen“ war nur eine Ausrede. Eigentlich habe ich dort heimlich geweint. Mi Fu gehörte damals noch zu den Bewohnern der Qingbo-Palisade und ging stets mit erhobenen Fäusten auf mich los. In jener Nacht hat sie jedoch weder angegriffen noch auch nur ein Wort gesagt. Sie hat einfach neben mir gesessen und mir bis zum Morgengrauen Gesellschaft geleistet."
+      },
+      {
+        "title": "Thema: Xiranit",
+        "text": "Im Augenblick stehe ich vor einer Wahl: ich kann meine Xiranit-Forschungen fortführen, oder mich anderen Projekten zuwenden. Ich weiß, dass meine Kollegen aus der Tianshi-Behörde die Forschung auch dann planmäßig weiterführen werden, wenn ich mich daraus zurückziehe. Und vielleicht wird es Zeit, dass ich meinen Beitrag dort leiste, wo ich am dringendsten gebraucht werde. Dennoch ist dieses Projekt vielleicht alles, was meine Wegbereiter mir hinterlassen haben. Ich kann es doch nicht einfach abgeben, oder?"
+      },
+      {
+        "title": "Thema: Chubby Lung",
+        "text": "Schnell, setz dich zu mir und hilf mir, diese Blind-Boxen zu öffnen. Nachdem die Xiranit-Schmiede des Instituts ausgemustert wurde, habe ich mich mit dem Hersteller daran gemacht, Xiranit-Elemente in die 10-Jahres-Jubiläums-Chubby-Lungs einzufügen. Man hat mir angeboten, mir ein vollständiges Set zuzuschicken, aber wo bleibt denn da der Spaß? Hehe . Außerdem stehen die Erfolgschancen bei eins zu zwölf. Verglichen mit dem Forscherdasein, wo selbst lebenslange Bemühungen nicht zwangsläufig zum Erfolg führen, sind das doch gute Chancen."
+      },
+      {
+        "title": "Ressource/Sammelobjekt entdeckt 1",
+        "text": "Hier gibt es etwas Wertvolles. Unsere Reise war nicht umsonst."
+      },
+      {
+        "title": "Ressource/Sammelobjekt entdeckt 2",
+        "text": "Ein gesegnetes Land … Ich frage mich, welche Wunder hier begraben liegen."
+      },
+      {
+        "title": "Unerforschter Bereich entdeckt",
+        "text": "Das „Unbekannte“ … Ein äußerst verlockendes Konzept …"
+      },
+      {
+        "title": "Starker Gegner entdeckt",
+        "text": "Das ist keine Begegnung unter Freunden. Pass also auf."
+      },
+      {
+        "title": "Abbau 1",
+        "text": "Als ich in der Schule war, konnte ich Mineralien genauso effizient wie du sammeln."
+      },
+      {
+        "title": "Abbau 2",
+        "text": "Ruhig. Ich helfe dir."
+      },
+      {
+        "title": "Kiste öffnen",
+        "text": "Das ist kein normales Objekt. Es könnte vielen Zwecken dienen."
+      },
+      {
+        "title": "Aurylen erhalten",
+        "text": "Es lohnt sich, genau zu verstehen, wie Aurylen gesammelt wird."
+      },
+      {
+        "title": "Eliminierung der Verderbnis",
+        "text": "Ich frage mich, ob es eine Möglichkeit gibt, die Verderbnis effektiver zu entfernen."
+      },
+      {
+        "title": "Ausruhen",
+        "text": "Eine Pause darf nie ausgelassen werden. Was vor dir liegt, könnte sich als noch schwieriger erweisen."
+      },
+      {
+        "title": "Taktische Nutzung 1",
+        "text": "Hier, nimm dieses Medikament."
+      },
+      {
+        "title": "Taktische Nutzung 2",
+        "text": "Viel besser."
+      },
+      {
+        "title": "Gefahrenwarnung",
+        "text": "Achtung!"
+      },
+      {
+        "title": "Verletzt",
+        "text": "Alles in Ordnung. Mach dir um mich keine Sorgen."
+      },
+      {
+        "title": "0 LP",
+        "text": "Es tut mir leid … Endmin …"
+      },
+      {
+        "title": "Teammotivation 1",
+        "text": "Alles sauber. Gut gemacht!"
+      },
+      {
+        "title": "Teammotivation 2",
+        "text": "Deine Ausführung war tadellos."
+      },
+      {
+        "title": "Motivationsreaktion 1",
+        "text": "Du schmeichelst mir."
+      },
+      {
+        "title": "Motivationsreaktion 2",
+        "text": "Ach, das war ein Teamerfolg."
+      },
+      {
+        "title": "Kampf beginnt 1",
+        "text": "Wir fürchten keinen harten Kampf, nur einen sinnlosen."
+      },
+      {
+        "title": "Kampf beginnt 2",
+        "text": "Bin schon unterwegs."
+      },
+      {
+        "title": "Kampfsieg 1",
+        "text": "Ehrlich gesagt war das kein hart erkämpfter Sieg."
+      },
+      {
+        "title": "Kampfsieg 2",
+        "text": "Glaub mir, Endmin. Der Sieg wird auch nächstes Mal uns gehören."
+      },
+      {
+        "title": "Kampfsieg 3",
+        "text": "Ich danke euch allen für eure Mühen."
+      },
+      {
+        "title": "Kampfsieg 4",
+        "text": "Wenn du nie aufgibst, verlierst du auch nie."
+      },
+      {
+        "title": "Niederlage im Kampf",
+        "text": "Solange wir standhaft bleiben, ist nichts wirklich verloren."
+      },
+      {
+        "title": "Abschlussangriff 1",
+        "text": "Säuberung."
+      },
+      {
+        "title": "Abschlussangriff 2",
+        "text": "Unterirdisch."
+      },
+      {
+        "title": "Kampffertigkeit 1",
+        "text": "Der Donner grollt!"
+      },
+      {
+        "title": "Kampffertigkeit 2",
+        "text": "Entfesselte Klingen!"
+      },
+      {
+        "title": "Kampffertigkeit 3",
+        "text": "Der Sturm erwacht!"
+      },
+      {
+        "title": "Kombofertigkeit bereit 1",
+        "text": "Bereit, wenn du es bist!"
+      },
+      {
+        "title": "Kombofertigkeit bereit 2",
+        "text": "Ich bin bei dir!"
+      },
+      {
+        "title": "Kombo wirken 1",
+        "text": "Ergib dich!"
+      },
+      {
+        "title": "Kombo wirken 2",
+        "text": "Ein sinnloser Kampf!"
+      },
+      {
+        "title": "Wuchtschlag 1",
+        "text": "Wie laienhaft."
+      },
+      {
+        "title": "Wuchtschlag 2",
+        "text": "Unfähig."
+      },
+      {
+        "title": "Ultimative Fertigkeit 1",
+        "text": "Knisternder Donner und rauschender Regen."
+      },
+      {
+        "title": "Ultimative Fertigkeit 2",
+        "text": "Ausbruch des Sturms, Bringer des Lebens."
+      },
+      {
+        "title": "Ultimative Fertigkeit 3",
+        "text": "Herrschaft des Blau, ein Sonnenstrahl."
+      }
+    ]
   },
   "potentials": {
     "potential1": {

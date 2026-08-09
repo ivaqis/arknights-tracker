@@ -123,7 +123,329 @@
         "name": "Fashion",
         "description": "Fashion: Splurging on Jewelry\nIt's not the shimmering glitter of jewelry, but the act of buying that brings her satisfaction. And she intends to truly spoil herself for this trip."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Operation Prep 1",
+        "text": "Well, well, Endmin, seems like fate brought you right to me."
+      },
+      {
+        "title": "Operation Prep 2",
+        "text": "Ah-ah, don't blink or I might just disappear on you."
+      },
+      {
+        "title": "Adding to Team 1",
+        "text": "Oh, so you trust me enough to spend that much? I'm flattered."
+      },
+      {
+        "title": "Adding to Team 2",
+        "text": "A little closer to the front, please? I'm not a fan of all this distance between us."
+      },
+      {
+        "title": "Switching Weapon",
+        "text": "In my family, we say our weapons are basically part of us. Mine just happens to give me a little height boost!"
+      },
+      {
+        "title": "Switching Gear",
+        "text": "A great journey isn't just about the destination — it's the shoes that carry you there. That's why I'm never stingy with myself when it comes to this."
+      },
+      {
+        "title": "Ability Matrix Activation",
+        "text": "I can't believe how far I've come! Home and those days feel like they're worlds away now."
+      },
+      {
+        "title": "Watching Combat Records",
+        "text": "Will others get to see these fights? Some might recognize my lance. It's probably best if they don't know my name..."
+      },
+      {
+        "title": "Operator Promotion 1",
+        "text": "No worries. Trust me, I'm a pro."
+      },
+      {
+        "title": "Operator Promotion 2",
+        "text": "Ha! I knew you'd get hooked on this feeling eventually! So, what's next on my plate?"
+      },
+      {
+        "title": "Operator Promotion 3",
+        "text": "Since it makes sense both professionally and personally, I don't mind if we get a little more personal here, right? C'mon, don't blush now! I totally understand what you're getting at!"
+      },
+      {
+        "title": "Operator Promotion 4",
+        "text": "I spent my whole childhood fighting for the top spot among my siblings, so staying ahead is just what I do. But here's the deal, Endmin — promise you'll always think of me first, yeah?"
+      },
+      {
+        "title": "Operator Reporting for Duty",
+        "text": "Well, well, look who it is — the legendary Endministrator. I picked up a couple of whispers on my way here. Curious to know which one's the most accurate? Since you don't know me well yet, here's my offer: how about I tell you a secret in exchange for a little something about you? Whaddya reckon?"
+      },
+      {
+        "title": "Standing by 1",
+        "text": "Where are we headed?"
+      },
+      {
+        "title": "Standing by 2",
+        "text": "Am I lookin' alright from this angle?"
+      },
+      {
+        "title": "Assigning to Facility",
+        "text": "Off we go, no time to waste!"
+      },
+      {
+        "title": "Greeting 1",
+        "text": "Hey, Endmin! How's it going?"
+      },
+      {
+        "title": "Greeting 2",
+        "text": "Endmin, mate! Ace to see you! Not avoiding me, are ya?"
+      },
+      {
+        "title": "Dijiang Idle Chatter 1",
+        "text": "Hey, Endmin, good to see ya again. And yep, you're still rocking that charm — just like five minutes ago, huh?"
+      },
+      {
+        "title": "Dijiang Idle Chatter 2",
+        "text": "I must say, you've really poured your heart into crafting Dijiang. It's incredible — just floating up here for a bit, and it's already covered the distance that took me years to travel."
+      },
+      {
+        "title": "Dijiang Idle Chatter 3",
+        "text": "What's that on your face? Uh-uh, other side... Haha, just messing with you. It's rare to see you all flustered like this!"
+      },
+      {
+        "title": "Dijiang Idle Chatter 4",
+        "text": "Y'know, Talos-II really looks like one giant sphere from up here on the Bridge. Guess that means no matter where we travel, we'll always circle back to each other."
+      },
+      {
+        "title": "Dijiang Idle Chatter 5",
+        "text": "I'm off on another adventure! Need somethin'? Spit it out quick, or you'll have to wait till next time!"
+      },
+      {
+        "title": "Dijiang Idle Chatter 6",
+        "text": "Still standing after last night's horror flick? Tsk, guess I'll have to up the stakes next time. Don't worry, I'll drag you into the next one too!"
+      },
+      {
+        "title": "Offering Gifts",
+        "text": "I went through quite a bit to bring this back for you. Does it spark any memories?"
+      },
+      {
+        "title": "Accepting Gifts",
+        "text": "A pretty girl like me has definitely gotten a lot of gifts, but this one from you is ... special."
+      },
+      {
+        "title": "Trust Dialog 1",
+        "text": "People can be pretty complicated sometimes. Back then, I didn't need to think much. My job was all about getting things from A to B. But when I barged into that circus, things got... *Sigh* I'll tell you the full story another time, yeah?"
+      },
+      {
+        "title": "Trust Dialog 2",
+        "text": "Back at my old job, my salary was basically a king's ransom compared to what I make now! *Chuckle* In my family, we never settle for anything less than fair. I'm sure you know exactly what made up for that gap. You're just... too shy to admit it."
+      },
+      {
+        "title": "Trust Dialog 3",
+        "text": "I've journeyed from the Band, endured the old frontier's cold, spent white nights in Hannabit Circuit's huts, watched the Seš'qamam's ship drift through the sky, and heard the endless rain by the Oathkeepers' fortress. And through it all, Endmin, your name echoed."
+      },
+      {
+        "title": "Trust Dialog 4",
+        "text": "Just call me Lamp. Avywenna is actually my family name. Hey, it's no joke to me, so don't laugh. Keep this secret between us, okay? I don't want anyone bad coming after you. Unless... Oh? you're up for looking out for me?"
+      },
+      {
+        "title": "Trust Dialog 5",
+        "text": "Endmin, Talos-II is huge. How many places have you actually visited? Oh, right ... then how many of them do you still remember? I can't wait for you to recall them all. The more memories we share, the better, right?"
+      },
+      {
+        "title": "Chat 1",
+        "text": "My family are Banders and Messenger work has been our calling for generations. So, what's your family like, Endmin?"
+      },
+      {
+        "title": "Chat 2",
+        "text": "Ta-da! This is my little corner. Not that I get back here much, but I like to keep it soft and cozy. A roamer like me's gotta have a place to kip, right?"
+      },
+      {
+        "title": "Chat 3",
+        "text": "Messengers have to safely deliver plenty of secrets, and every one of them comes with a costly price tag. But there is one thing more expensive than the delivery itself, and that is ... my silence on these matters."
+      },
+      {
+        "title": "Chat 4",
+        "text": "Nobody likes rejection ... so if we can talk things out, I'd much rather do that than get physical. But just so we're clear, I don't like being rejected."
+      },
+      {
+        "title": "Chat 5",
+        "text": "You remember old Laine, right? That grumpy guy never once smiled at me. But I've heard he's a respected retired employee, and when he left, people were crying their eyes out. Hmph, he even called me a \"troublemaker\" before sending me here. Well, if I'm trouble, at least I'm capable trouble!"
+      },
+      {
+        "title": "Topic: Endfield",
+        "text": "Endfield's now the place I've stayed the longest, apart from Alloycarrot where I grew up. Guess I might be getting used to this whole settling down thing."
+      },
+      {
+        "title": "Topic: Family Business",
+        "text": "My ancestors were truckers back when the Cosmic Gate was still open. The giant rigs once formed a shimmering trail of metal that cruised along the horizon. After that, my great-nan, nanna, and mum slogged for Sloan Security in the Band! Those old girls gave me a ton of grief when I decided to quit... Ahem. Just so you know, I didn't just ... stroll into your nice little place, Endmin."
+      },
+      {
+        "title": "Topic: Fashion",
+        "text": "My clothes? All about style and practicality! Remember this when you're in the outback: keep your kit sharp, and pull your head in."
+      },
+      {
+        "title": "Topic: Alloycarrot",
+        "text": "Crikey, I can't believe you've never visited Alloycarrot! Well, I'm not one to toot my own horn, but I've seen plenty of places around Talos-II, and nothing compares to the charm of our mining tunnels. The kids grow up in a world full of close mates and lively chatter. We always say, the only thing tougher than a big drill is our friendship!"
+      },
+      {
+        "title": "Resource/Collectible Detected 1",
+        "text": "My device is ticking. Maybe there's something nice nearby."
+      },
+      {
+        "title": "Resource/Collectible Detected 2",
+        "text": "Follow me! I left a treasure mark here last time I was around!"
+      },
+      {
+        "title": "Unexplored Area Detected",
+        "text": "Oh, I can't believe there are places I've never visited before!"
+      },
+      {
+        "title": "Powerful Enemy Discovered",
+        "text": "Looks like that guy's shut down any chance of negotiations."
+      },
+      {
+        "title": "Mining 1",
+        "text": "Witness the skills passed down by my Rim Billiton ancestors!"
+      },
+      {
+        "title": "Mining 2",
+        "text": "We Rim Billies always take care of one another!"
+      },
+      {
+        "title": "Opening a Crate",
+        "text": "Shhhh! We usually bury these good finds first before anyone else spots them..."
+      },
+      {
+        "title": "Acquiring Aurylene",
+        "text": "Aurylene?! How did you know I love stuff that shines?"
+      },
+      {
+        "title": "Eliminating the Blight",
+        "text": "Honestly, I actually see it as a way to keep myself safe from certain people."
+      },
+      {
+        "title": "Rest",
+        "text": "Aww, this warm and cozy vibe is just perfect. After being all messy and wet, finding a clean and toasty spot like this is a little slice of heaven."
+      },
+      {
+        "title": "Tactical Use 1",
+        "text": "Good thing I packed this one."
+      },
+      {
+        "title": "Tactical Use 2",
+        "text": "Gotta treat myself sometimes."
+      },
+      {
+        "title": "Danger Warning",
+        "text": "Get to somewhere safe!"
+      },
+      {
+        "title": "Injured",
+        "text": "Don't worry, I'm okay."
+      },
+      {
+        "title": "0 HP",
+        "text": "Lemme face home ... one last time."
+      },
+      {
+        "title": "Team Encouragement 1",
+        "text": "Nicely done! Ever thought about taking up my job?"
+      },
+      {
+        "title": "Team Encouragement 2",
+        "text": "Look at us, pulling together like a real brood!"
+      },
+      {
+        "title": "Encouragement Response 1",
+        "text": "Yep, that's just how awesome I am."
+      },
+      {
+        "title": "Encouragement Response 2",
+        "text": "This makes me feel like I'm at home."
+      },
+      {
+        "title": "Combat Begins 1",
+        "text": "The first step is always the hardest."
+      },
+      {
+        "title": "Combat Begins 2",
+        "text": "Let's show 'em what we got!"
+      },
+      {
+        "title": "Combat Victory 1",
+        "text": "Talk's cheap, mate. Gotta put in the hard yakka."
+      },
+      {
+        "title": "Combat Victory 2",
+        "text": "No worries, it's all part of our job."
+      },
+      {
+        "title": "Combat Victory 3",
+        "text": "That's right, hold on to that spirit!"
+      },
+      {
+        "title": "Combat Victory 4",
+        "text": "There's an old saying among the Messengers: To walk the right path, don't focus on where you step — keep your eyes on the horizon."
+      },
+      {
+        "title": "Combat Defeat",
+        "text": "Let's save this payment for when we take our revenge."
+      },
+      {
+        "title": "Final Strike 1",
+        "text": "Don't blink!"
+      },
+      {
+        "title": "Final Strike 2",
+        "text": "Here it comes!"
+      },
+      {
+        "title": "Battle Skill 1",
+        "text": "Zap alert!"
+      },
+      {
+        "title": "Battle Skill 2",
+        "text": "Make way."
+      },
+      {
+        "title": "Battle Skill 3",
+        "text": "Where ya running?"
+      },
+      {
+        "title": "Combo Skill Ready 1",
+        "text": "Don't forget about me!"
+      },
+      {
+        "title": "Combo Skill Ready 2",
+        "text": "You really kept me waiting!"
+      },
+      {
+        "title": "Combo Casting 1",
+        "text": "Play it by ear!"
+      },
+      {
+        "title": "Combo Casting 2",
+        "text": "Eyes on the prize."
+      },
+      {
+        "title": "Finisher 1",
+        "text": "Weak spot sighted!"
+      },
+      {
+        "title": "Finisher 2",
+        "text": "Gotcha."
+      },
+      {
+        "title": "Ultimate 1",
+        "text": "I'm not the gentle type."
+      },
+      {
+        "title": "Ultimate 2",
+        "text": "Incoming bad news!"
+      },
+      {
+        "title": "Ultimate 3",
+        "text": "Tremble before my strike!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

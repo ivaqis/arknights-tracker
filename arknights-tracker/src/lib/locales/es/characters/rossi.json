@@ -129,7 +129,337 @@
         "name": "Deportes",
         "description": "Deportes: Juego de la cacería\nRastrear a una presa es un proceso largo, pero Rossi es muy paciente. No hay necesidad de apresurarse, pues estamos cerca del rastro de sangre."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Preparación de la operación 1",
+        "text": "¡Esta es mi oportunidad de mostrarle a Endmin de qué estoy hecha!"
+      },
+      {
+        "title": "Preparación de la operación 2",
+        "text": "¡No voy a decepcionar a nadie!"
+      },
+      {
+        "title": "Añadir al equipo 1",
+        "text": "Rossi, de La manada. E-Endmin... ¿Cuál es nuestra misión?"
+      },
+      {
+        "title": "Añadir al equipo 2",
+        "text": "¡Voy a darlo todo, Endmin!"
+      },
+      {
+        "title": "Cambiar de arma",
+        "text": "¡Ah! ¡Esta arma está increíble! ¡Nunca vi algo así allá en el clan!"
+      },
+      {
+        "title": "Cambiar de equipamiento",
+        "text": "Es un poco difícil moverse con esto… ¿Oh? ¿Lo escogiste para mí, Endmin? ¡Entonces me lo quedo! Mmm… debe haber algún significado más profundo detrás de esto…"
+      },
+      {
+        "title": "Activación de la matriz de habilidades",
+        "text": "¡Yo soy descendiente de La manada!"
+      },
+      {
+        "title": "Viendo los registros de combate",
+        "text": "Así que así pelean los guerreros veteranos... Mmm... así... y luego así... ¡Ok, creo que ya le entendí!"
+      },
+      {
+        "title": "Ascenso de operador 1",
+        "text": "¿Pro... mo... ción? ¡Ah, entiendo! Tenemos ceremonias parecidas en el clan, aunque yo nunca viví una en carne propia. ¿Sabes qué? Esto no está... nada mal."
+      },
+      {
+        "title": "Ascenso de operador 2",
+        "text": "Jeje, lo estoy haciendo bastante bien, ¿verdad? Tengo que ser así de buena para cargar con las responsabilidades del clan. Después de todo, ¡voy a hacer famosa a La manada por todo Talos-II!"
+      },
+      {
+        "title": "Ascenso de operador 3",
+        "text": "¡Los ascensos son pan comido para alguien como yo! ¿Cuándo es el siguiente? ¡Yo estoy más que lista! ¿Hay que esperar el momento adecuado? Bueno... está bien, entonces."
+      },
+      {
+        "title": "Ascenso de operador 4",
+        "text": "¿Esto no prueba que ya soy la mejor operadora? Me pregunto si Catello la tuvo así de fácil. ¡La próxima que lo vea se lo voy a restregar en la cara!"
+      },
+      {
+        "title": "Operador reportándose para el deber",
+        "text": "¡Soy Rossina, nombre otorgado Wulfperl, que significa el tesoro de La manada! ¡Más te vale recordarlo! Ah... Endmin, puedes llamarme como tú prefieras..."
+      },
+      {
+        "title": "En espera 1",
+        "text": "La hora del derramamiento de sangre ha llegado. Es hora de cazar. Digo… es hora de comer."
+      },
+      {
+        "title": "En espera 2",
+        "text": "¡Presas, tengan cuidado! ¡Soy las garras de La manada!… ¿Eh? ¿Eso no suena bien? Como sea… ¡Auuuu!"
+      },
+      {
+        "title": "Asignando a la instalación",
+        "text": "¡Pan comido para una élite como yo!"
+      },
+      {
+        "title": "Saludo 1",
+        "text": "¡E-Endmin! ¿Tienes alguna misión para mí hoy?"
+      },
+      {
+        "title": "Saludo 2",
+        "text": "Endmin, ¿podrías compartir conmigo algo de tu experiencia de liderazgo?"
+      },
+      {
+        "title": "Charla casual en la Dijiang 1",
+        "text": "¿Cómo maneja Endfield a tantos operadores? Algo de... ¿sistemas? ¿Y algún tipo de... control central? No lo entiendo... pero definitivamente vale la pena aprenderlo."
+      },
+      {
+        "title": "Charla casual en la Dijiang 2",
+        "text": "Los lobos mayores del clan me dijeron que visitara más seguido la Dijiang. Dijeron que aquí podría aprender de liderazgo, sobre todo a tu lado. ¡Pero conseguir chance de alcanzarte es bien difícil!"
+      },
+      {
+        "title": "Charla casual en la Dijiang 3",
+        "text": "¡Los hermanos y hermanas mayores en la Dijiang siempre me tratan como niña! Pero yo ya soy una élite de La manada. La próxima se los voy a dejar claro: ¡esto tiene que parar! ...Aunque los bocadillos que me dan están bien buenos..."
+      },
+      {
+        "title": "Charla casual en la Dijiang 4",
+        "text": "¡Los asuntos del clan van primero! Pero si pasa algo urgente en Endfield, definitivamente correré de inmediato. Es que... No estoy segura de si de verdad necesitas mi ayuda... Eres tan capaz que seguramente puedes manejar crisis fácilmente, incluso sin mí. Pero igual quiero ser útil... Qué debería hacer..."
+      },
+      {
+        "title": "Charla casual en la Dijiang 5",
+        "text": "Escuché que Catello podía encontrarse en la Dijiang, pero ¿por qué también aquí es tan escurridizo? Mmm… ¿supongo que las viejas mañas no se quitan? Si no lo encuentro pronto, Nonno Rozzan se va a poner furioso. No me gustaría verlo enojado… Endmin, ¿sabes dónde podría encontrar a Catello?"
+      },
+      {
+        "title": "Charla casual en la Dijiang 6",
+        "text": "{F}¿Por qué tampoco puedo encontrar registros sobre ti en la Dijiang? Por fin aprendí a usar eso que llaman Archivo de Inteligencia, pero solo me salen resultados inútiles o mensajes de “Sin autorización”... Ugh... Endmin, ¿tienes tiempo para contarme tú misma tus hazañas heroicas?{M}¿Por qué tampoco puedo encontrar registros sobre ti en la Dijiang? Por fin aprendí a usar eso que llaman Archivo de Inteligencia, pero solo me salen resultados inútiles o mensajes de “Sin autorización”... Ugh... Endmin, ¿tienes tiempo para contarme tú mismo tus hazañas heroicas?"
+      },
+      {
+        "title": "Ofreciendo obsequios",
+        "text": "Endmin, ¡estos son los botines que junté! ¡Son todos para ti! No te preocupes, ¡voy a conseguir todavía más!"
+      },
+      {
+        "title": "Aceptando regalos",
+        "text": "¿Esto es... para mí? ¿De verdad puedo quedármelo? ¡Gracias! ¡Me aseguraré de entender el significado detrás de tu regalo!"
+      },
+      {
+        "title": "Diálogo de confianza 1",
+        "text": "¿Esto? Pues... Solo estoy tomando notas de tus palabras y acciones, Endmin. Creo que hasta los detalles valen la pena aprenderlos. Ah... ¡por favor no mires! ¡Son notas personales!"
+      },
+      {
+        "title": "Diálogo de confianza 2",
+        "text": "Y-yo he oído tantas leyendas sobre ti. ¡Siempre me pregunté qué tipo de persona serías! Pero ahora que por fin te conocí, siento que eres todavía más admirable de lo que dicen las historias. ¿Qué exactamente? Pues... tus métodos, tu liderazgo... N-no sé ni cómo ponerlo en palabras..."
+      },
+      {
+        "title": "Diálogo de confianza 3",
+        "text": "Los niños de La manada participan en la ceremonia de mayoría de edad a los trece. El clan se reúne para escoger un nombre otorgado para el nuevo “lobo”. El nombre de Catello es “Wulfgard”, y el mío es “Wulfperl”. Me encanta el nombre que me dio el clan. Cada vez que lo digo, siento la sangre de La manada corriendo por mí... ¿Qué te parece, Endmin?"
+      },
+      {
+        "title": "Diálogo de confianza 4",
+        "text": "Endmin, últimamente me ha ido bastante bien en las misiones, ¿verdad? Entonces... ¿podría pedirte una pequeña recompensa? Ah... nada complicado: ¡con que platiques más conmigo basta! ...¿Está bien?"
+      },
+      {
+        "title": "Diálogo de confianza 5",
+        "text": "Sé que todavía no tengo la habilidad suficiente para liderar a La manada, pero los ancianos insisten en que me encargue de los asuntos del clan… Así que quiero aprender más a tu lado, Endmin. Quiero aprender a convertirme en alguien confiable como tú, Perlica o M3… ¡Haré que todos me vean con otros ojos!"
+      },
+      {
+        "title": "Charla 1",
+        "text": "¡Los hermanos y hermanas mayores en Endfield me han enseñado un montón! Perlica me explicó cómo funcionan los Sinc. de Prot., Avywenna me llevó a las tiendas de ropa y joyería de la C.G.C.T. y Xaihi dijo que quiere discutir “complejidad temporal cuadrática” conmigo... Ni sé qué significa eso."
+      },
+      {
+        "title": "Charla 2",
+        "text": "Los hermanos y hermanas mayores de aquí me cuidan mucho. Hasta me dan regalos. ¡Pero yo pasé las pruebas La manada! ¡Soy una loba de verdad! A una loba madura no deberían gustarle cosas infantiles. ¡Debería preferir dagas y monedas! Por eso he juntado un montón de esas. ¡Cuando crezca un poco más, por fin podrán confiarme las misiones más peligrosas!"
+      },
+      {
+        "title": "Charla 3",
+        "text": "Siempre pensé que Nonno Rozzan era la persona más fuerte del mundo, pero no dejaba de decir: “siempre hay alguien más grande”, y te mencionaba todo el tiempo, Endmin. Después, oí montones de historias legendarias sobre ti en otros lados. Y yo así de: “¡Wow! ¿De verdad existe alguien como tú allá afuera?” Siempre he querido ver cómo eres en realidad. Desde que oí que despertaste, he estado planeando sorprenderte algún día... jeje."
+      },
+      {
+        "title": "Charla 4",
+        "text": "¡Mi primera daga fue una recompensa después de una cacería de emergencia! La cajita en la que venía estaba toda brillante y dorada; desde entonces la he guardado con cuidado. Esta también es mi favorita. Siempre la cargo conmigo, aunque no está muy filosa; sirve más que nada para cortar fruta. Si la quieres, Endmin... pues... ¡Te la doy cuando también me traiga la caja!"
+      },
+      {
+        "title": "Charla 5",
+        "text": "Sobre mi infancia… La manada siempre se metía en conflictos con los Rompehuesos. Mi hermano era quien me llevaba de un lado a otro buscando ayuda médica, y los miembros del clan también… ¡Oh! Ah… ¡no debería estar hablando de esto enfrente de ti! Olvídalo, Endmin. ¡Mejor hablemos de ti! He escuchado que…"
+      },
+      {
+        "title": "Tema: El Endministrator",
+        "text": "“El Originio nos abrirá un camino”. Ah… y-yo solo estaba practicando… Ay, no, no… ¿Me vas a odiar por esto? Sé que aprender de ti no se trata solo de copiar… pero pensé… que sonaba genial…"
+      },
+      {
+        "title": "Tema: Nombre clave",
+        "text": "Como miembro de La manada, podría usar mi nombre otorgado como nombre clave, como hace mi hermano, pero... Todavía nadie fuera del clan me ha llamado así de verdad, así que me daría un poco de pena. Y “Rossina” suena demasiado infantil... ¡ni de broma voy a usar eso! Al final me quedé con “Rossi” como nombre clave, por el color de mi capa."
+      },
+      {
+        "title": "Tema: El clan de los Rompehuesos",
+        "text": "¡No voy a dejar que se escape ni uno solo de esos brutos Rompehuesos! Esto es una vendetta de sangre entre La manada y los Rompehuesos. Demasiados lobos, demasiados miembros de mi familia, murieron a sus manos solo para salvarme. Esta es la venganza de La manada... y también la mía. ¡Somos el clan que guarda rencores por más tiempo en este mundo, y algún día vamos a saldar esta cuenta!"
+      },
+      {
+        "title": "Tema: Capa",
+        "text": "Esta manchada con sangre de mi estirpe... pero cada vez que la toco, siento una sensación increíble de paz, como si nunca se hubieran ido. Esta capa quema, recordándome que nunca debo olvidarme de la venganza, pero también me da valor y el calor de mi familia... Si, ellos siempre están conmigo."
+      },
+      {
+        "title": "Tema: Coleccionables",
+        "text": "Antes guardaba todas las dagas y monedas que juntaba en una caja especial de tesoros, pero la perdí durante la mudanza... y peor: tenía cosas bien vergonzosas adentro, manualidades que hice de niña. Me tomó una eternidad volver a encontrarla. ¡Ahora puedo guardar todo a salvo en la Dijiang! Mejor aún: puedo usar lo de guardar cosas como pretexto para convivir con los hermanos y hermanas mayores de aquí. No... digo, ¡para estudiar aquí!"
+      },
+      {
+        "title": "Tema: Habitantes del área salvaje",
+        "text": "Todo lo que la gente hace en el área salvaje es solo para sobrevivir. A veces veía niños de mi edad haciendo cosas horribles solo para salir adelante... A veces hasta los Rompesuelos tomaban riesgos desesperados solo para seguir vivos. Creo que todos deberían poder vivir según sus propias decisiones. Endmin, ¿puede Endfield cambiar todo esto, para que esos niños puedan perseguir sus sueños como yo?"
+      },
+      {
+        "title": "Recurso/Coleccionable detectado 1",
+        "text": "Confía en mí, ¡hay algo bueno por allá!"
+      },
+      {
+        "title": "Recurso/Coleccionable detectado 2",
+        "text": "La manada nunca pasa por alto ningún recurso en lo salvaje. ¡Vigilen bien esa zona!"
+      },
+      {
+        "title": "Zona inexplorada detectada",
+        "text": "Hay un olor raro por allá. ¡Vamos a ver qué es!"
+      },
+      {
+        "title": "Enemigo poderoso descubierto",
+        "text": "Huele a peligro. ¿Nos metemos?"
+      },
+      {
+        "title": "Minería 1",
+        "text": "¿Me puedes dar algunas de esas piedras? Quiero incrustarlas en mi daga."
+      },
+      {
+        "title": "Minería 2",
+        "text": "Hagámoslo juntos. ¡Terminaremos este trabajo en un abrir y cerrar de ojos!"
+      },
+      {
+        "title": "Abriendo una caja",
+        "text": "Mmm... Estaba pensando que, si no se abre, tal vez podría intentar morderlo."
+      },
+      {
+        "title": "Adquiriendo Aurileno",
+        "text": "¿Por qué hay Aurilenos que flotan por ahí y otros solo se quedan quietos? Es maravilloso."
+      },
+      {
+        "title": "Eliminando la Plaga",
+        "text": "¡Listo! ¡Ya no más de esa Plaga molesta!"
+      },
+      {
+        "title": "Descanso",
+        "text": "Come bien, duerme bien, descansa bien. ¡Esa es la sabiduría de La manada!"
+      },
+      {
+        "title": "Uso táctico 1",
+        "text": "¡Rápido, usa esto para recuperarte!"
+      },
+      {
+        "title": "Uso táctico 2",
+        "text": "¡Me siento mucho mejor ahora!"
+      },
+      {
+        "title": "Advertencia de peligro",
+        "text": "¡Cuidado! ¡Algo viene!"
+      },
+      {
+        "title": "Herido",
+        "text": "No hay tiempo... para lamerme las heridas..."
+      },
+      {
+        "title": "0 PV",
+        "text": "La manada... no va a dejar esto así..."
+      },
+      {
+        "title": "Ánimo del equipo 1",
+        "text": "¡Buen golpe!"
+      },
+      {
+        "title": "Ánimo del equipo 2",
+        "text": "¡Wow! ¡Trabajo en equipo perfecto!"
+      },
+      {
+        "title": "Respuesta al ánimo 1",
+        "text": "Jejeje, ¡tengo mejores trucos bajo la manga!"
+      },
+      {
+        "title": "Respuesta al ánimo 2",
+        "text": "¡Esta es la pelea que queremos!"
+      },
+      {
+        "title": "Comienza el combate 1",
+        "text": "¡La sangre de La manada está hirviendo!"
+      },
+      {
+        "title": "Comienza el combate 2",
+        "text": "¡No nos vamos a perder esta cacería!"
+      },
+      {
+        "title": "Victoria en el combate 1",
+        "text": "¡El nombre de La manada resonará por toda la tierra!"
+      },
+      {
+        "title": "Victoria en el combate 2",
+        "text": "¿Ya aprendiste la lección? ¡Esto es lo que pasa cuando te metes con La manada!"
+      },
+      {
+        "title": "Victoria en el combate 3",
+        "text": "Jejeje. Conmigo aquí, ¡la victoria está asegurada!"
+      },
+      {
+        "title": "Victoria en el combate 4",
+        "text": "Nos pegaron duro, ¡pero La manada no le teme a más cicatrices!"
+      },
+      {
+        "title": "Derrota en el combate",
+        "text": "Este pequeño tropiezo no significa nada... ¡Yo, Rossina, no me rendiré!"
+      },
+      {
+        "title": "Golpe final 1",
+        "text": "¡Toma esto!"
+      },
+      {
+        "title": "Golpe final 2",
+        "text": "¡Tiembla!"
+      },
+      {
+        "title": "Habilidad de batalla 1",
+        "text": "¡Háganlos pedazos!"
+      },
+      {
+        "title": "Habilidad de batalla 2",
+        "text": "¡Hora de cazar!"
+      },
+      {
+        "title": "Habilidad de batalla 3",
+        "text": "¡Garras abrasadoras!"
+      },
+      {
+        "title": "Habilidad de combo preparada 1",
+        "text": "¡Los vamos a cazar!"
+      },
+      {
+        "title": "Habilidad de combo preparada 2",
+        "text": "¡Los voy a hacer temblar!"
+      },
+      {
+        "title": "Lanzando combo 1",
+        "text": "¡No hay salida!"
+      },
+      {
+        "title": "Lanzando combo 2",
+        "text": "¡Te tengo!"
+      },
+      {
+        "title": "Remate 1",
+        "text": "¡Al suelo!"
+      },
+      {
+        "title": "Remate 2",
+        "text": "¡Auuuu!"
+      },
+      {
+        "title": "Habilidad máxima 1",
+        "text": "¡Hierve, sangre de La manada!"
+      },
+      {
+        "title": "Habilidad máxima 2",
+        "text": "¡La hoja soy yo!"
+      },
+      {
+        "title": "Habilidad máxima 3",
+        "text": "Espíritus de lobo, acompáñenme."
+      }
+    ]
   },
   "potentials": {
     "potential1": {

@@ -126,7 +126,329 @@
         "name": "Sports",
         "description": "Sports : pêche en mer\nLa pêche à l'ailette peut sembler aisée, mais il faut parfois lutter contre des vagues monstrueuses."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Préparation de l'opération 1",
+        "text": "Hein ? C'est déjà mon tour ?"
+      },
+      {
+        "title": "Préparation de l'opération 2",
+        "text": "Tu es là, alors on va avoir des résultats aujourd'hui, c'est sûr."
+      },
+      {
+        "title": "Intégration à l'équipe 1",
+        "text": "Ah... Je me suis tordu la cheville hier... J'ai mal aux hanches, et à la nuque..."
+      },
+      {
+        "title": "Intégration à l'équipe 2",
+        "text": "Tu as déjà plein de tape-durs dans l'équipe. Tu as vraiment besoin de moi ?"
+      },
+      {
+        "title": "Changement d'arme",
+        "text": "Hmm. Ça semble plus solide que le bambou. Au moins, celui-ci ne tombera pas en morceaux."
+      },
+      {
+        "title": "Changement d'équipement",
+        "text": "Ça, ça m'évitera les hématomes."
+      },
+      {
+        "title": "Activation de la matrice de capacités",
+        "text": "J'ai réussi à survivre à toute une semaine d'entraînement spécial. Je n'arrive pas à croire que j'aie pu travailler si dur..."
+      },
+      {
+        "title": "Visionnage d'archives de combat",
+        "text": "C'est mieux que ce qui passait à la télé chez moi, et il y a constamment du nouveau !"
+      },
+      {
+        "title": "Promotion d'opérateur 1",
+        "text": "Attends... cette cérémonie est pour moi ? Oh, ouah... Qu'est-ce je suis censé dire ? E-Eh bien... merci ?"
+      },
+      {
+        "title": "Promotion d'opérateur 2",
+        "text": "Pas besoin de continuer à m'encourager comme ça, Endmin. C'est bizarre, mais les encouragements m'affaiblissent, comme une fleur trop arrosée."
+      },
+      {
+        "title": "Promotion d'opérateur 3",
+        "text": "Ça doit être crevant d'assumer toutes les responsabilités, Endmin. Ahh. J'imagine que j'ai pas d'autre choix que de t'aider pour le moment."
+      },
+      {
+        "title": "Promotion d'opérateur 4",
+        "text": "Pourquoi est-ce que tu as l'air plus heureux que moi ? Je croyais que c'était *ma* promotion. Bon, d'accord. Allons fêter ça à la churrascaria. Je prendrai leurs meilleures brochettes et tu t'occuperas de l'addition."
+      },
+      {
+        "title": "Opératrice au rapport",
+        "text": "Désolé, c'est ici qu'on s'inscrit pour le boulot ? Ravi de te rencontrer. Je suis Alesh. J'aime lire et je peux pêcher à la ligne les yeux fermés. Content d'être à bord."
+      },
+      {
+        "title": "En attente 1",
+        "text": "Quelle belle journée. Parfaite pour faire la sieste."
+      },
+      {
+        "title": "En attente 2",
+        "text": "Pas un sou en poche, l'histoire de ma vie..."
+      },
+      {
+        "title": "Affectation à une installation",
+        "text": "Ahh... Au moment où tu as dit « travail », toute mon énergie s'est évaporée. Je vote pour la sieste avant le boulot, Endmin."
+      },
+      {
+        "title": "Salutation 1",
+        "text": "Yo ! On n'arrête pas de se croiser. Comment se passe le boulot, aujourd'hui ?"
+      },
+      {
+        "title": "Salutation 2",
+        "text": "{F}Boss, t'es pas fatiguée ? Je peux t'apprendre comment glisser une sieste dans ton emploi du temps, tu sais.{M}Boss, t'es pas fatigué ? Je peux t'apprendre comment glisser une sieste dans ton emploi du temps, tu sais."
+      },
+      {
+        "title": "Bavardage sur le Dijiang 1",
+        "text": "Y a plus rien au programme ? Parfait. Je voulais justement voir le replay de cette émission de pêche."
+      },
+      {
+        "title": "Bavardage sur le Dijiang 2",
+        "text": "Cet endroit, là. Ouais, celui qui est couvert de neige. C'est le Nord, non ? Je n'aurais jamais vu ça si j'étais pas venu à Endfield. Quand j'ai embarqué dans le Dijiang, la vue depuis le pont m'était presque insupportable. Mais maintenant que j'y suis habitué, contempler Talos-II d'aussi haut est assez magique."
+      },
+      {
+        "title": "Bavardage sur le Dijiang 3",
+        "text": "Mes compétences de combat ? Je balance des coups d'épée en espérant faire très mal à quelque chose, boss. Mais tu peux aussi apprendre ma compétence spéciale en affrontant des hyenards géants, des lianes mangeuses d'hommes, des Aggeloi tout en métal et des types à qui tu dois un gros paquet d'argent."
+      },
+      {
+        "title": "Bavardage sur le Dijiang 4",
+        "text": "Tu vois, beaucoup de choses ennuient les gens de mon âge. La pêche à la ligne est ma seule échappatoire face à la sombre réalité. Quoi ? Je suis encore jeune ? Me prends pas pour un Aggelos de deux semaines, je suis bien plus vieux que... Attends, Endmin. T'as quel âge, déjà ?"
+      },
+      {
+        "title": "Bavardage sur le Dijiang 5",
+        "text": "J'ai feuilleté ce livre à propos des gens normaux. Tu sais, les trucs comme la survie et les luttes de l'humanité ne m'intéressent pas, en général... Mais j'ai l'impression que l'auteur est... quelqu'un qui a vraiment vécu ces choses. Ai, quoi ? Pourquoi ce sérieux, tout d'un coup ? Du calme, boss. Je dis juste que j'admire cet auteur, c'est tout."
+      },
+      {
+        "title": "Bavardage sur le Dijiang 6",
+        "text": "Mon seul avantage, c'est probablement d'être difficile à tuer. J'ai sacrément morflé par moments, mais il y a trop de gens qui m'auraient manqué, comme mes potes, le vieux logeur... et vous aussi, les gars. Le simple fait d'y penser me donne toujours la force de remonter en selle pour la deuxième manche."
+      },
+      {
+        "title": "Cadeaux offerts",
+        "text": "Tiens, boss. J'ai un truc sympa pour toi. La boutique faisait 50 % de réduction si on en achetait un autre. Une sacrée affaire, pas vrai ?"
+      },
+      {
+        "title": "Cadeaux acceptés",
+        "text": "Pour moi ? Nom de... En général, je reçois des lettres d'amour de voyous contrariés qui me demandent de rembourser, ou de types qui veulent me tuer. Je ne me serais jamais attendu à un vrai cadeau."
+      },
+      {
+        "title": "Dialogue à cœur ouvert 1",
+        "text": "T'as un coup de mou ? Allez, les jeunes doivent être pleins d'espoir. Je sais que c'est la cata, mais avec le temps, ce sera encore pire. Tu vois ? Tu te sens déjà beaucoup mieux, non ?"
+      },
+      {
+        "title": "Dialogue à cœur ouvert 2",
+        "text": "Pourquoi est-ce que j'ai rejoint Endfield ? Mon vieil enquiquineur de logeur. Voilà pourquoi. Il est toujours en colère, tu vois. Ma boutique d'ailettes ne marchait pas fort et je lui devais plusieurs mois de loyer. Alors il m'a trouvé un boulot sans me demander. Je sais pas ce qu'il a écrit dans mon CV, mais vous avez accepté... Alors me voilà."
+      },
+      {
+        "title": "Dialogue à cœur ouvert 3",
+        "text": "Qu'est-ce que t'as dans la main ? « Le bras droit prend la tête du gang de La Estrada »... ? La cara du type en photo me ressemble ? Bah, qui peut savoir. Oh allez, il faut vivre dans l'instant présent. Pas besoin de déterrer ce qui est censé rester enterré. Ce serait dommage que de vieilles histoires se dressent entre nous, tu penses pas ? Euh, pourquoi tu demandes le numéro de l'Agence de sécurité à Perlica ?"
+      },
+      {
+        "title": "Dialogue à cœur ouvert 4",
+        "text": "Je faisais partie d'Estrada Ursaña. La plupart l'appelait La Estrada. La ville est une grosse machine qui donne naissance à de petites frappes comme moi. J'ai grandi dans les bas-fonds, trouvé un groupe, rejoint un gang plus important et j'ai fini par en prendre la tête. Et puis, eh bien... tout m'a pété au visage. Bon sang... Si j'avais su que ça finirait comme ça, j'aurais rejoint la conserverie d'ailettes il y a vingt ans. Et maintenant, je vends des ailettes pour gagner ma vie."
+      },
+      {
+        "title": "Dialogue à cœur ouvert 5",
+        "text": "Pourquoi ce regard ? Cette cicatrice t'intrigue ? Ha, un homme ne livre pas ses histoires facilement. Le passé est le passé. Il faut l'abandonner et aller de l'avant... Ai ! Endmin ! T'en va pas ! OK, OK, je vais te le dire... c'est pas grand-chose. J'avais deux compagnons, à la vie à la mort. L'un m'a attaqué pendant que je protégeais l'autre. J'y ai perdu un œil et un pan de ma vie. Voilà. Rien de bien passionnant, hein ?"
+      },
+      {
+        "title": "Discussion 1",
+        "text": "La vie, c'est pas comme la pêche. Tu peux toujours récupérer un appât quand tu pêches. Mais dans la vie, il n'y a pas tellement d'échappatoire une fois que t'es en eaux troubles. C'est exactement pour *ÇA* qu'avoir une belle vie est important. De la vraie sagesse de baroudeur, Endmin."
+      },
+      {
+        "title": "Discussion 2",
+        "text": "Ma petite boutique d'ailettes ne se porte pas très bien. Je n'aurais même pas pu payer le loyer sans ma paye d'Endfield. Honnêtement, je ne m'attendais pas à devenir riche en vendant des ailettes. C'est pour ça que je laisse les gens marchander comme ils veulent, et que je leur fais crédit s'ils ont besoin. Même les jours de bonne pêche, je donnais simplement les ailettes en trop. La vie est pas facile pour tout le monde, tu sais. Une fois, un voleur est venu à ma boutique. Il a rien trouvé de valeur et il m'a laissé un message : « L'endroit le plus misérable que j'aie jamais vu. » Bah..."
+      },
+      {
+        "title": "Discussion 3",
+        "text": "Voilà ma philosophie dans la vie : tolérer les petits ennuis et esquiver les gros. N'agir *que* quand c'est impossible d'esquiver. Et alors, tu leur fais payer très cher et tu t'assures qu'ils ne se relèvent pas."
+      },
+      {
+        "title": "Discussion 4",
+        "text": "Est-ce que cet œil me pose problème ? Ouais... ça peut être embêtant, par moments. Par exemple, tu te tenais dans mon angle mort quand tu m'as salué à l'instant. Ha ha. Pas de problème. J'y suis habitué. Une vision parfaite, c'est pas si génial. C'est peut-être mieux de garder certaines choses dans l'ombre et de les rendre... mystérieuses."
+      },
+      {
+        "title": "Discussion 5",
+        "text": "L'émission de tarot d'hier m'a prédit que je serais super chanceux, aujourd'hui. Et devine quoi ? Je suis tombé dans ces égouts puants juste après être sorti de chez moi. Je me disais « Mec... ! La pire émission de tarot que j'aie jamais vue. » Et puis j'ai vu quelque chose briller dans les ordures... une bague en diamant. Alors, hé, j'avais peut-être de la chance au final. Mais je me sentais mal pour la personne qui l'avait perdue, alors j'ai utilisé ma super chance pour trouver ce pauvre type et lui rendre la bague. Ce que je dis, boss, c'est que si on utilise sa chance pour faire le bien, alors peut-être qu'on attirera encore plus de chance. T'es pas d'accord ?"
+      },
+      {
+        "title": "Thème : les gangs",
+        "text": "J'ai vécu dans ces maudits Confins, tu sais. Les gamins y grandissent avec une famille qui pue, ou pas de famille du tout. Je ne suis pas sûr de ce qui est pire. Moi ? J'avais pas de famille, pas d'éducation et pas de toit au-dessus de la tête. Alors ouais, je traînais dans les rues. Je passais mes journées à me battre avec d'autres gamins juste pour survivre. On se détestait, mais les menaces nous poussent à faire de drôles de choix. Étrangement, on s'est unis et on a formé une famille. On a même dicté nos propres règles dans cette zone de non-droit, c'est marrant, hein ?"
+      },
+      {
+        "title": "Thème : le logeur",
+        "text": "Mon vieux logeur m'a encore écrit. Il ne me demandait pas le loyer, il voulait savoir ce que je faisais en ce moment. Il m'a même traité de bon à rien et de fainéant, incapable de prendre soin de moi. Bon sang, difficile de croire qu'il a pu être un gros bonnet plus jeune... Attennnds. Pourquoi est-ce qu'il se préoccupe autant de ce qui m'arrive ? Il essaye d'être mon père ? Hé, je lui paye déjà sa retraite avec mon loyer... devenir garde-malade ne fait pas partie du contrat. Il n'arrête pas de se plaindre de ses genoux... Peut-être que je devrais lui trouver un appareil de massage. Sérieusement, ce vieux bougre devrait s'occuper de lui au lieu de me harceler. Et puis, s'il est si inquiet que ça, il peut passer ici au lieu de m'envoyer des lettres culpabilisantes."
+      },
+      {
+        "title": "Thème : la ville de Talos",
+        "text": "La ville de Talos a une signification spéciale pour Talos-II. Après la Guerre humiliante, le Trio Majeur a signé l'Accord de la Ceinture et a uni ses forces pour construire la ville de Talos. C'était la première ville neutre pour les terrans. C'est ce que disent les livres d'histoire. Une grande ville, toujours pas terminée après un siècle de travaux. Je devrais pouvoir le décrire mieux que ça : « Un homme, ratatiné et grisonnant, qui a levé sa lance et a pointé vers le soleil au-delà des collines. » Ça fait un peu plus cultivé, non ? Eh bien... lire des romans ursins n'est pas une perte de temps."
+      },
+      {
+        "title": "Thème : la drôle d'ailette (poisson)",
+        "text": "Alors cette drôle d'ailette que j'ai pêchée t'intrigue ? C'est une longue histoire. J'ai passé mon enfance à me battre, pas à lire. Je ne savais même pas prononcer « Arts de l'originium » correctement quand j'étais un petit voyou. Quand j'ai perdu un œil et que j'étais groggy et perdu, j'ai senti quelque chose qui nageait dans mon angle mort. C'était très ennuyeux de pêcher à la ligne, alors j'ai lancé mon appât le plus fort possible et... « BOUM ! » Tu connais la suite. Le vieux m'a dit que j'étais doué pour les Arts. C'est peut-être une malédiction, je ne sais pas."
+      },
+      {
+        "title": "Détection de ressource/objet à collecter 1",
+        "text": "Je devrais probablement aller voir. Ça en vaut peut-être la peine."
+      },
+      {
+        "title": "Détection de ressource/objet à collecter 2",
+        "text": "Ça a l'air d'avoir de la valeur. On va peut-être devenir riches."
+      },
+      {
+        "title": "Zone inexplorée détectée",
+        "text": "Attention. Il y a quelque chose de bizarre dans le coin."
+      },
+      {
+        "title": "Découverte d'un ennemi puissant",
+        "text": "Faites gaffe ! Il peut sacrément vous secouer."
+      },
+      {
+        "title": "Extraction 1",
+        "text": "Ça se vend bien, ça ?"
+      },
+      {
+        "title": "Extraction 2",
+        "text": "Ça brille. Et si on en trouvait d'autres ?"
+      },
+      {
+        "title": "Ouverture de caisse",
+        "text": "J'ai de la chance. Cette émission de tarot avait raison, finalement."
+      },
+      {
+        "title": "Obtention d'aurylène",
+        "text": "On dirait... des trucs magiques. Je peux y jeter encore un œil ?"
+      },
+      {
+        "title": "Élimination de la Gangrène",
+        "text": "Voilà. Vite fait, bien fait."
+      },
+      {
+        "title": "Repos",
+        "text": "J'ai fait une super sieste. Il est temps de passer aux choses sérieuses."
+      },
+      {
+        "title": "Utilisation de tactique 1",
+        "text": "Tes médocs ! Attrape."
+      },
+      {
+        "title": "Utilisation de tactique 2",
+        "text": "Pfiou. Je pensais être cuit."
+      },
+      {
+        "title": "Avertissement de danger",
+        "text": "Hé ! Bouge de là !"
+      },
+      {
+        "title": "Blessure",
+        "text": "Il en faut plus pour m'abattre."
+      },
+      {
+        "title": "0 PV",
+        "text": "Je ferai... tout ce qu'il faut..."
+      },
+      {
+        "title": "Encouragement de l'équipe 1",
+        "text": "On se sent bien aujourd'hui, hein ?"
+      },
+      {
+        "title": "Encouragement de l'équipe 2",
+        "text": "C'est plus facile avec un bon groupe."
+      },
+      {
+        "title": "Réaction face aux encouragements 1",
+        "text": "Je fais mon boulot, c'est tout."
+      },
+      {
+        "title": "Réaction face aux encouragements 2",
+        "text": "C'est grâce au groupe, tout ça."
+      },
+      {
+        "title": "Début du combat 1",
+        "text": "Là, il faut que je garde les yeux ouverts."
+      },
+      {
+        "title": "Début du combat 2",
+        "text": "Fais comme tu le sens. Je te couvre."
+      },
+      {
+        "title": "Victoire au combat 1",
+        "text": "Ça s'est un peu corsé, mais on a assuré."
+      },
+      {
+        "title": "Victoire au combat 2",
+        "text": "Je suis même pas fatigué."
+      },
+      {
+        "title": "Victoire au combat 3",
+        "text": "Pas mal. Tout le monde a fait sa part."
+      },
+      {
+        "title": "Victoire au combat 4",
+        "text": "C'était pas loin ! Mais je dois dire... une victoire est une victoire."
+      },
+      {
+        "title": "Défaite au combat",
+        "text": "Vous tracassez pas pour cette défaite. Faisons plus attention la prochaine fois, c'est tout. On va y arriver, d'accord ?"
+      },
+      {
+        "title": "Coup final 1",
+        "text": "Prends ça !"
+      },
+      {
+        "title": "Coup final 2",
+        "text": "Reste à terre !"
+      },
+      {
+        "title": "Compétence de combat 1",
+        "text": "Venez un peu par là !"
+      },
+      {
+        "title": "Compétence de combat 2",
+        "text": "On baisse d'un ton !"
+      },
+      {
+        "title": "Compétence de combat 3",
+        "text": "Ça va se RAFRAÎCHIR !"
+      },
+      {
+        "title": "Compétence de combo prête 1",
+        "text": "Il est temps de rendre les coups, non ?"
+      },
+      {
+        "title": "Compétence de combo prête 2",
+        "text": "Je suis prêt à écraser ces nazes."
+      },
+      {
+        "title": "Utilisation de combo 1",
+        "text": "On va voir ce qui mord !"
+      },
+      {
+        "title": "Utilisation de combo 2",
+        "text": "Lâchez ma ligne !"
+      },
+      {
+        "title": "Coup fatal 1",
+        "text": "Énervez pas mes ailettes !"
+      },
+      {
+        "title": "Coup fatal 2",
+        "text": "Je t'ai ferré !"
+      },
+      {
+        "title": "Ultime 1",
+        "text": "Je te tiens !"
+      },
+      {
+        "title": "Ultime 2",
+        "text": "Amuse-toi bien à jouer l'appât !"
+      },
+      {
+        "title": "Ultime 3",
+        "text": "Allez, on se régale !"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

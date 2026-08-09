@@ -120,7 +120,329 @@
         "name": "Accomplissement de soi",
         "description": "Accomplissement de soi : remue-méninges\nAutrefois, alors bien innocente, Estella pensait que le travail cérébral était plus simple que le travail physique."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Préparation de l'opération 1",
+        "text": "La pause est... déjà terminée ?"
+      },
+      {
+        "title": "Préparation de l'opération 2",
+        "text": "Je serai prête dans... deux petites minutes..."
+      },
+      {
+        "title": "Intégration à l'équipe 1",
+        "text": "Encore une mission ? Aaaah... OK... J'espère que ce sera fini avant que je tombe de fatigue..."
+      },
+      {
+        "title": "Intégration à l'équipe 2",
+        "text": "Comment vais-je explorer ces... secrets inavoués ? Hmm..."
+      },
+      {
+        "title": "Changement d'arme",
+        "text": "Ouah... Une arme d'une puissance ultime... Hnnngh... C'est trop lourd..."
+      },
+      {
+        "title": "Changement d'équipement",
+        "text": "Les ingénieurs de l'arsenal ont visiblement surestimé mon endurance au combat... Argh... Tant pis."
+      },
+      {
+        "title": "Activation de la matrice de capacités",
+        "text": "Oh, alors plus on s'améliore, moins on a de travail ? Cool..."
+      },
+      {
+        "title": "Visionnage d'archives de combat",
+        "text": "Le cerveau est boosté, le corps est renforcé... mais niveau endurance, c'est toujours la cata. Je pense que je suis maudite."
+      },
+      {
+        "title": "Promotion d'opérateur 1",
+        "text": "En voilà une promotion que je n'attendais pas... Je pensais que ça prendrait beaucoup, beaucoup... beaucoup plus de temps..."
+      },
+      {
+        "title": "Promotion d'opérateur 2",
+        "text": "Le résultat de mes efforts dépasse mes attentes... Endmin... Il me faut deux jours de congé pour prendre soin de moi."
+      },
+      {
+        "title": "Promotion d'opérateur 3",
+        "text": "Comment se fait-il que je sois encore promue... ? C'est les nouvelles directives managériales ? Il faudrait que j'en sache plus..."
+      },
+      {
+        "title": "Promotion d'opérateur 4",
+        "text": "Oooh ! Alors, je vais pouvoir donner des ordres à Akekuri ? Hé hé... Je vais tester deux-trois trucs."
+      },
+      {
+        "title": "Opératrice au rapport",
+        "text": "Je suis vraiment obligée de le refaire... ? Bonjour... Endministrator. Je m'appelle Estella. S'il te plaît, pas d'affectations trop intenses physiquement. Merci."
+      },
+      {
+        "title": "En attente 1",
+        "text": "Ahhh... Je suis toujours debout. Pour l'instant, je n'ai envie de rien faire..."
+      },
+      {
+        "title": "En attente 2",
+        "text": "J'en ai encore trop fait... Hngh... Je ferais bien de profiter de ma pause tant que je peux."
+      },
+      {
+        "title": "Affectation à une installation",
+        "text": "Une nouvelle affectation ? J'ai hâte... Si, si. Je le pense vraiment."
+      },
+      {
+        "title": "Salutation 1",
+        "text": "Endmin... Comment se passe ta pause ?"
+      },
+      {
+        "title": "Salutation 2",
+        "text": "Endmin, je ne te vois presque jamais souffler."
+      },
+      {
+        "title": "Bavardage sur le Dijiang 1",
+        "text": "Après que j'ai dit à Antal que je n'aimais pas son jeu mathématique, il ne m'en a plus jamais parlé. Hmm... Tout le monde devrait faire comme moi."
+      },
+      {
+        "title": "Bavardage sur le Dijiang 2",
+        "text": "Les ingénieurs de l'arsenal se plaignent que je casse trop vite mes lances... Franchement, c'est déjà un miracle que je sois capable de manier des armes aussi lourdes."
+      },
+      {
+        "title": "Bavardage sur le Dijiang 3",
+        "text": "Est-ce que M. André peut tourner la tête à 180° ? Hmm... Je devrais lui poser la question à l'occasion."
+      },
+      {
+        "title": "Bavardage sur le Dijiang 4",
+        "text": "Comme Akekuri adore les longauris, j'ai compilé plein de recettes à base de longauris pour les lui offrir... Après ça, elle ne m'a plus parlé pendant une semaine... Tellement bizarre..."
+      },
+      {
+        "title": "Bavardage sur le Dijiang 5",
+        "text": "J'ai l'habitude de partir seule en mission d'infiltration... C'est dur, mais il faut bien que quelqu'un s'y colle. Et puis... je suis meilleure en solo que les autres membres de l'équipe."
+      },
+      {
+        "title": "Bavardage sur le Dijiang 6",
+        "text": "Écouter du métal très fort a le don de me calmer... Ça peut sembler étonnant, mais j'aime cette impression de chaos qu'on ressent en pleine cacophonie. Ça m'aide... à oublier qui je suis."
+      },
+      {
+        "title": "Cadeaux offerts",
+        "text": "Endmin, j'ai quelque chose pour toi. Ne crains rien... Ce n'est rien de bizarre."
+      },
+      {
+        "title": "Cadeaux acceptés",
+        "text": "C'est... pour moi ? Eh bien, merci... Je n'ai pas l'habitude de recevoir des cadeaux de personnes hors de mon équipe."
+      },
+      {
+        "title": "Dialogue à cœur ouvert 1",
+        "text": "Rejoindre l'équipe d'assaut ? Non merci. Je suis sûre que je n'ai pas la force physique nécessaire... et je ne voudrais pas forcer les autres à devoir me porter."
+      },
+      {
+        "title": "Dialogue à cœur ouvert 2",
+        "text": "Quelqu'un au travail m'a déjà dit que je sous-utilisais les renseignements que je récupère... Mais je n'ai jamais pensé à utiliser ces secrets. C'est trop de travail... J'aime juste les découvrir."
+      },
+      {
+        "title": "Dialogue à cœur ouvert 3",
+        "text": "La malchance ? Mes parents parlent toujours du bon vieux temps, et que c'est par malchance que notre qualité de vie s'est dégradée... Mais... je crois que toute expérience mérite d'être vécue. C'est ce qui m'a permis de rencontrer mes collègues de l'équipe OP Z7."
+      },
+      {
+        "title": "Dialogue à cœur ouvert 4",
+        "text": "J'étais au fond du trou avant de rencontrer l'équipe Z7. Ahhh... C'était vraiment la cata... Un hacker venait de me voler tout mon argent et j'avais tellement faim... Au début, Akekuri et Fluorite m'ont laissé dormir avec les autres nomades qu'ils avaient secourus. Quand j'ai commencé à leur parler des Brise-Terres et de leurs patrouilles... Fluorite n'a pas caché son étonnement et m'a demandé comment j'avais fait... Ouais, je me souviens encore de la tête qu'elle faisait."
+      },
+      {
+        "title": "Dialogue à cœur ouvert 5",
+        "text": "Je veux mener une vie paisible et accepter ce que le sort me réserve... À une époque, j'ai pensé que c'était beaucoup demandé pour quelqu'un d'aussi malchanceux que moi. Puis je suis arrivée à Endfield... j'ai rejoint l'équipe Z7... et j'ai fait ta connaissance, Endmin... Merci de me tolérer à tes côtés."
+      },
+      {
+        "title": "Discussion 1",
+        "text": "Je n'ai pas eu une enfance facile. Je devais suivre ma famille, de point de chute en point de chute... C'était fatigant et difficile, mais c'était la vie de bon nombre de Talosiens. J'espère qu'un jour, ma vie sera plus simple et paisible..."
+      },
+      {
+        "title": "Discussion 2",
+        "text": "J'adore le bourdonnement métallique d'un riff distordu. Quand je suis sur le terrain, ça fait vriller mes oreilles et étrangement, je trouve que ça m'apaise..."
+      },
+      {
+        "title": "Discussion 3",
+        "text": "Ce n'est pas si difficile de travailler en territoire ennemi. Au contraire... C'est assez excitant de ne jamais savoir quand le danger va frapper... Et puis, du moment qu'on est bien préparé, rien ne peut nous prendre au dépourvu."
+      },
+      {
+        "title": "Discussion 4",
+        "text": "Excuse-moi, Endmin. N'hésite pas à me dire si je dépasse les bornes... Les RH m'en ont reparlé... Mais mes amis de l'équipe Z7 me disent de ne pas m'inquiéter, qu'être offensés par Estella fait partie de leur vie..."
+      },
+      {
+        "title": "Discussion 5",
+        "text": "Je viens de collecter des renseignements, Fluorite est en train de les analyser. Comment utilise-t-on ces infos pour comprendre le fonctionnement de leur esprit ? Hmm... J'espère que Fluorite partagera tous ses secrets avec moi... Tout ce qu'elle m'a dit, c'est : « C'est une question d'expérience. »"
+      },
+      {
+        "title": "Thème : Akekuri",
+        "text": "Hmm... Cette affectation injuste ne restera pas impunie. Tout le monde saura pour l'histoire du cupcake d'Akekuri... Hé hé... Estella, tu es une vilaine fille."
+      },
+      {
+        "title": "Thème : Catcher",
+        "text": "Catcher n'a aucun secret... En fait, il s'est presque mis à nu dans son rapport de performance au travail... Je ne pensais pas rencontrer un jour un tel phénomène."
+      },
+      {
+        "title": "Thème : Fluorite",
+        "text": "Je fais souvent équipe avec Fluorite. Elle rit à tout ce que je dis et m'encourage même à continuer dans ce sens... Hmm... J'imagine que... tout le monde n'est pas très au clair avec soi-même."
+      },
+      {
+        "title": "Thème : Antal",
+        "text": "Le Savra met du cœur à l'ouvrage... mais je crois qu'il en fait un peu trop parfois. Le travail est assez fatigant comme ça... Mais il a un sens de l'humour intéressant. Il ne manque jamais de nous faire rire, Fluorite et moi."
+      },
+      {
+        "title": "Détection de ressource/objet à collecter 1",
+        "text": "Ça a l'air pas mal, ça... On devrait le rapporter à la maison."
+      },
+      {
+        "title": "Détection de ressource/objet à collecter 2",
+        "text": "Regarde ça... Ça pourrait valoir le coup."
+      },
+      {
+        "title": "Zone inexplorée détectée",
+        "text": "Oooh... Il va falloir examiner la zone."
+      },
+      {
+        "title": "Découverte d'un ennemi puissant",
+        "text": "Une menace élevée... Je peux me contenter de rester en soutien ?"
+      },
+      {
+        "title": "Extraction 1",
+        "text": "Si seulement quelqu'un avait une plateforme d'extraction automatique..."
+      },
+      {
+        "title": "Extraction 2",
+        "text": "Je suis venue aider... mais n'en attendez pas trop de moi..."
+      },
+      {
+        "title": "Ouverture de caisse",
+        "text": "On n'aura pas fait le voyage pour rien."
+      },
+      {
+        "title": "Obtention d'aurylène",
+        "text": "Ahh... Je crois avoir déjà vu ça..."
+      },
+      {
+        "title": "Élimination de la Gangrène",
+        "text": "Super. On n'aura plus besoin de faire le grand tour."
+      },
+      {
+        "title": "Repos",
+        "text": "Je me sens un peu mieux... mais je ne serais pas contre une nouvelle pause."
+      },
+      {
+        "title": "Utilisation de tactique 1",
+        "text": "Essaie ça... Ça pourra peut-être t'aider..."
+      },
+      {
+        "title": "Utilisation de tactique 2",
+        "text": "Ça valait le coup de bien se préparer."
+      },
+      {
+        "title": "Avertissement de danger",
+        "text": "Attention... Mieux vaut éviter les blessures."
+      },
+      {
+        "title": "Blessure",
+        "text": "Ahhh... Cette arme est tellement lourde..."
+      },
+      {
+        "title": "0 PV",
+        "text": "Encore une fois, je n'ai pas été à la hauteur..."
+      },
+      {
+        "title": "Encouragement de l'équipe 1",
+        "text": "Ouah... Je ne pourrais jamais faire ça."
+      },
+      {
+        "title": "Encouragement de l'équipe 2",
+        "text": "Bien... Rien de tel que l'esprit d'équipe."
+      },
+      {
+        "title": "Réaction face aux encouragements 1",
+        "text": "J'aimerais ne pas avoir à refaire ça trop souvent..."
+      },
+      {
+        "title": "Réaction face aux encouragements 2",
+        "text": "Ouais... Tout le monde a assuré."
+      },
+      {
+        "title": "Début du combat 1",
+        "text": "Les longs combats, c'est pas mon fort... Qu'on en finisse vite."
+      },
+      {
+        "title": "Début du combat 2",
+        "text": "On doit vraiment se battre ? D'accord, allons-y."
+      },
+      {
+        "title": "Victoire au combat 1",
+        "text": "Ah... C'est terminé... Je m'en suis bien sortie, hein... ?"
+      },
+      {
+        "title": "Victoire au combat 2",
+        "text": "Ah... Bien contente de ne pas m'être évanouie en plein milieu."
+      },
+      {
+        "title": "Victoire au combat 3",
+        "text": "Bien... Au moins, ça n'a pas duré trop longtemps..."
+      },
+      {
+        "title": "Victoire au combat 4",
+        "text": "Tout le monde... a bien travaillé... Je suis contente de m'en être sortie..."
+      },
+      {
+        "title": "Défaite au combat",
+        "text": "Ça ne se terminera pas comme ça... La prochaine fois... je ferai encore mieux..."
+      },
+      {
+        "title": "Coup final 1",
+        "text": "Arrête de bouger !"
+      },
+      {
+        "title": "Coup final 2",
+        "text": "Là !"
+      },
+      {
+        "title": "Compétence de combat 1",
+        "text": "Gel... sonique !"
+      },
+      {
+        "title": "Compétence de combat 2",
+        "text": "Dispersion... explosive !"
+      },
+      {
+        "title": "Compétence de combat 3",
+        "text": "Aaaah... MEURS !"
+      },
+      {
+        "title": "Compétence de combo prête 1",
+        "text": "Enfin... Je suis en position."
+      },
+      {
+        "title": "Compétence de combo prête 2",
+        "text": "Désolée pour l'attente..."
+      },
+      {
+        "title": "Utilisation de combo 1",
+        "text": "Ho-HISSE !"
+      },
+      {
+        "title": "Utilisation de combo 2",
+        "text": "Ça arrive !"
+      },
+      {
+        "title": "Coup fatal 1",
+        "text": "Il faut viser le point... FAIBLE !"
+      },
+      {
+        "title": "Coup fatal 2",
+        "text": "Tu vas MOURIR !"
+      },
+      {
+        "title": "Ultime 1",
+        "text": "Bombe sonique... EN APPROCHE !"
+      },
+      {
+        "title": "Ultime 2",
+        "text": "Charge et... explosion !"
+      },
+      {
+        "title": "Ultime 3",
+        "text": "À mon signal, convergence !"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

@@ -119,7 +119,333 @@
         "name": "Sports",
         "description": "Sports: Martial Friendship \n\"Thank you for the lesson. Let our fists of no regrets cross.\" \"Well said. Do not hold back, and let Fate decide how the waters flow.\""
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Operation Prep 1",
+        "text": "Leading this op yourself? Not bad."
+      },
+      {
+        "title": "Operation Prep 2",
+        "text": "If there's a fight, I'm in."
+      },
+      {
+        "title": "Adding to Team 1",
+        "text": "I stand ready."
+      },
+      {
+        "title": "Adding to Team 2",
+        "text": "Show me how you run things."
+      },
+      {
+        "title": "Switching Weapon",
+        "text": "I am a weapon. I leave \"souvenirs\" on my opponents — bruises that they won't forget."
+      },
+      {
+        "title": "Switching Gear",
+        "text": "Are these for my safety, or my opponents'?"
+      },
+      {
+        "title": "Ability Matrix Activation",
+        "text": "I figured out some new tricks. When do I get to use them?"
+      },
+      {
+        "title": "Watching Combat Records",
+        "text": "HEH! Now that's a real fight! Are they part of your crew? Care for some sparring?"
+      },
+      {
+        "title": "Operator Promotion 1",
+        "text": "If I'm being honest, you're doing just as well. Recognition goes both ways. Alright, I'll follow your lead."
+      },
+      {
+        "title": "Operator Promotion 2",
+        "text": "Hah, this is new. Back in Wuling, I'm usually the one promoting the watchguards. It's been a long time since I stood on the receiving end myself."
+      },
+      {
+        "title": "Operator Promotion 3",
+        "text": "Leading a crew is night and day from going solo. You know what I mean, right? You've got people to manage, missions to juggle. It's just not as clean and slick as kicking ass yourself."
+      },
+      {
+        "title": "Operator Promotion 4",
+        "text": "I'm always wondering how you and Boss come up with those fancy words. The only trick I know is to give people a pat. What? You can give me a pat too? Tsk, aiya, saying it out loud ruins the point!"
+      },
+      {
+        "title": "Operator Reporting for Duty",
+        "text": "Enough talk. This time, I'll clean up the mess for you. But I do things directly. If something breaks, Endfield foots the bills."
+      },
+      {
+        "title": "Standing by 1",
+        "text": "Time for a real brawl!"
+      },
+      {
+        "title": "Standing by 2",
+        "text": "We're battle-forged teammates, right?"
+      },
+      {
+        "title": "Assigning to Facility",
+        "text": "Alright. But if any delicate stuff gets wrecked, don't blame me."
+      },
+      {
+        "title": "Greeting 1",
+        "text": "Yo, you're here!"
+      },
+      {
+        "title": "Greeting 2",
+        "text": "Busy? It's been a while since we last sparred."
+      },
+      {
+        "title": "Dijiang Idle Chatter 1",
+        "text": "I've barely been here a minute, yet I already spotted three suspicious individuals. Oh? Your friends? Your social circle is really something."
+      },
+      {
+        "title": "Dijiang Idle Chatter 2",
+        "text": "Why am I here? Came to visit some friends, since things quietened down at Wuling — Lifeng, Chen, Master Pan, and the little kitty... But just seeing you makes the trip worthwhile."
+      },
+      {
+        "title": "Dijiang Idle Chatter 3",
+        "text": "You're late. The souvenirs are gone. C'mon, what else could they be? Freshly fried sweet rice cakes, of course."
+      },
+      {
+        "title": "Dijiang Idle Chatter 4",
+        "text": "Dijiang's way too quiet compared to Wuling's streets and groves. It doesn't feel natural to me. Oh? I never told you how much I hate quiet places? Well, they're actually the loudest. Because when everything goes quiet, the voice in your mind starts talking, and it just won't stop."
+      },
+      {
+        "title": "Dijiang Idle Chatter 5",
+        "text": "No offense, but I'm not a fan of this place. I like actual skies and actual water — not these cold walls boxing you in. What? The training gym's free? You should've said that earlier! I'm booking it now!"
+      },
+      {
+        "title": "Dijiang Idle Chatter 6",
+        "text": "When I first started training, there was a night I stared at the starry sky, and I secretly swore to myself: I'll defeat as many opponents as the stars above. Maybe Dijiang was one of those stars. And to think I actually \"fought\" my way here. Kinda surprised."
+      },
+      {
+        "title": "Offering Gifts",
+        "text": "Here, take it. Made it myself... Don't laugh. If anyone else knows this, you're done."
+      },
+      {
+        "title": "Accepting Gifts",
+        "text": "C'mon, we're way past the gifting phase... Wait a sec. What phase are we at in our friendship right now?"
+      },
+      {
+        "title": "Trust Dialog 1",
+        "text": "I bond with people by fighting them. Only those who can take a win, a loss, and a beating are reliable. You? Hmm... I think you're way beyond \"reliable\"."
+      },
+      {
+        "title": "Trust Dialog 2",
+        "text": "When the boss took me in, I'd never seen so many kinds of snacks ... or tasted sweet rice cakes that good. So I stuffed my face for three months straight, till I couldn't even look at anything remotely sweet. Heh, even blood smells sweet. And I hate smelling blood in Wuling."
+      },
+      {
+        "title": "Trust Dialog 3",
+        "text": "Those who taught me how to fight...? Master was all bite but has a most gentle soul. I couldn't replicate her Crane Form and she nagged about that for years. Senior Master looked terrifying, but he was gentle. He worried over everything I ate, wore, and used. As for my Grand Master ... we never got along. Everyone says my temper is just like his. Both of us solved everything with our fists."
+      },
+      {
+        "title": "Trust Dialog 4",
+        "text": "While being inducted as a disciple, my masters read my fortunes. They said I'd only bond with my \"opponents\". I'll fight them, befriend them, and then go our separate ways. The boss. Little kitty. Even my masters. Everyone ended up as my opponent. But you're different — We never fought face-to-face. Our battles were more like back-to-back and side-by-side. I hope this ... can last a little longer."
+      },
+      {
+        "title": "Trust Dialog 5",
+        "text": "Coming to Endfield made me realize something. The Xiranite Dam, Wuling City, and Qingbo Stockade ... They are so small and barely visible on the map. Yet I kept running circles in that tiny world. My masters are right. Life is all about busting my way through an endless range of mountains and obstacles. And if I stay by your side, there'll always be another fight waiting, yeah?"
+      },
+      {
+        "title": "Chat 1",
+        "text": "These gauntlets look neat, right? Wanna try them on? No worries. They aren't that heavy. I got these custom-made sluggers when I became captain. Crafted with the first batch of Xiranite produced that year. Gotta hand it to the Tianshi artificers. These gauntlets move with my \"will\" and even share my rage — Ever seen how they work?"
+      },
+      {
+        "title": "Chat 2",
+        "text": "Martial training starts with bamboo mastery. The kind you see growing everywhere outside the city. For the silent stand, be like the winter bamboo, sunk into the ground and unmoving. Keep it up till spring to cultivate a strong chi that surges within, then release it for a spurt of growth. Such is the way of bamboo."
+      },
+      {
+        "title": "Chat 3",
+        "text": "When my training began, Grand Master told me to fight the bamboo. I pounded them till my knuckles were bruised and bleeding. Then he said, \"Don't fear bamboo. Make bamboo fear you.\" So I clenched my teeth and kept at it. Can't remember how long it took, but one day came when my fists stopped flinching. Then I fought stone, ferrium, and the Aggeloi... You gotta summon your courage and throw that punch. Only then you stand a chance of winning."
+      },
+      {
+        "title": "Chat 4",
+        "text": "Why do I have so much calligraphy in my room? Nothing's wrong with a little cultural pursuit, right...? My writing looks good? Hmm, really? The boss taught me. Told me it helps by clearing and focusing the mind. I write a word or two when I'm not out busting criminals. Honestly, it never really caught on to me. A brush stroke is no different than a sword swing."
+      },
+      {
+        "title": "Chat 5",
+        "text": "The Stockaders prefer fighting with fists. They hardly block and go straight for the hit. After arriving at Wuling, I found that the Wulingers preferred blades — for the longer reach, sharper edge, and refined elegance. I tried to learn, but the boss said my swordmancy looked ... awkward, like I was trying to wrestle a willow tree."
+      },
+      {
+        "title": "Topic: Name",
+        "text": "\"Mi Fu\" sounds weird? Well, it wasn't my name at first. Ruan Yi started calling me \"Traitor\" since the day I joined Wuling. And that little kitty ... she just keeps yapping \"Mad Woman\" at me. Tsk, like I really care... Actually, I got the name \"Mi Fu\" while I was kept in a medical room. The boss left me there for over a month, but I refused to say a word. One day, she was reading beside my bed and suddenly asked for my name. I just pointed at two random characters in her book. She looked at them and said, \"Perfect. Mi Fu it is, then.\" Hur. This name does have a good ring to it."
+      },
+      {
+        "title": "Topic: Zhuang Fangyi",
+        "text": "The boss ... just left? Hur. I honestly think she's more at home in your place. You got some really super projects. Big enough for her to soar around with. Wuling's actually a bit small for her, even though she picked it herself. Know what I mean? You'd better take good care of her! If she gets so much as a scratch, it's not just me you have to worry about. It'd be you versus everyone in Wuling."
+      },
+      {
+        "title": "Topic: Wuling",
+        "text": "I don't know when I became a true Wulinger. While the boss kept me in the med room for months, I watched them plan a future in the muddy wilderness. Something just clicked. They treated me as one of them and kept bringing me food. I started helping 'cause I hate owing favors. Then I found my name in the builders' list when they turned the sod for Fangxing Avenue. Then I remembered her words: \"It would be wonderful if your fists protected people.\""
+      },
+      {
+        "title": "Topic: Qingbo Stockade Secret Passage",
+        "text": "What a coincidence. You actually went to the secret passage on your first visit. I haven't been there for ten years. After I left, Tangtang kept sneaking in through the passage, so I sealed it myself. She shouldn't have come, and I shouldn't have gone back. I knew she would ... well, I didn't expect her to be so messed up putting a huge cross on my face in that graffiti... Stupid kitty, I'm going to settle this with her!"
+      },
+      {
+        "title": "Topic: Tangtang",
+        "text": "Tangtang... I have unfinished business with that little kitty. Did she give you any trouble? Wait, she actually did? Tsk, tsk, tsk... Don't worry, I'll handle her. She cares way too much about you. If you yelled at her, she'd probably spiral into depression. Now that would be a real headache."
+      },
+      {
+        "title": "Resource/Collectible Detected 1",
+        "text": "Something's over there. But remember, watchguard policy encourages returning lost property."
+      },
+      {
+        "title": "Resource/Collectible Detected 2",
+        "text": "Valuables spotted. Guess we can treat them as unclaimed property."
+      },
+      {
+        "title": "Unexplored Area Detected",
+        "text": "A new zone. We better run a patrol and make sure it's trouble-free."
+      },
+      {
+        "title": "Powerful Enemy Discovered",
+        "text": "Hah, I see a worthy opponent."
+      },
+      {
+        "title": "Mining 1",
+        "text": "The ore should still work if it's smashed up, right?"
+      },
+      {
+        "title": "Mining 2",
+        "text": "I got this. Two hits is all it takes."
+      },
+      {
+        "title": "Opening a Crate",
+        "text": "Solid find. Good thing we didn't wreck it."
+      },
+      {
+        "title": "Acquiring Aurylene",
+        "text": "Used to think they were ghosts. I only learned they're called Aurylenes after coming to Wuling."
+      },
+      {
+        "title": "Eliminating the Blight",
+        "text": "Hah. This goop can't stop me."
+      },
+      {
+        "title": "Rest",
+        "text": "C'mon, I'm still good to go...! Fine, if you say so."
+      },
+      {
+        "title": "Tactical Use 1",
+        "text": "Don't you dare fall here!"
+      },
+      {
+        "title": "Tactical Use 2",
+        "text": "Back in the fight!"
+      },
+      {
+        "title": "Danger Warning",
+        "text": "Keep your distance!"
+      },
+      {
+        "title": "Injured",
+        "text": "Heh. Now this feels like a real fight."
+      },
+      {
+        "title": "0 HP",
+        "text": "Our fists ... know no regrets..."
+      },
+      {
+        "title": "Team Encouragement 1",
+        "text": "Clean and sharp. Impressive!"
+      },
+      {
+        "title": "Team Encouragement 2",
+        "text": "Nice teamwork!"
+      },
+      {
+        "title": "Encouragement Response 1",
+        "text": "Just doing my job."
+      },
+      {
+        "title": "Encouragement Response 2",
+        "text": "Thanks, team."
+      },
+      {
+        "title": "Combat Begins 1",
+        "text": "Time to fight!"
+      },
+      {
+        "title": "Combat Begins 2",
+        "text": "Time to give them a proper lesson."
+      },
+      {
+        "title": "Combat Victory 1",
+        "text": "The boss will be glad to hear this."
+      },
+      {
+        "title": "Combat Victory 2",
+        "text": "Case closed."
+      },
+      {
+        "title": "Combat Victory 3",
+        "text": "You fight pretty well too!"
+      },
+      {
+        "title": "Combat Victory 4",
+        "text": "Team ... let me handle the hard part. Don't push yourself."
+      },
+      {
+        "title": "Combat Defeat",
+        "text": "Never concede if you're still on your feet."
+      },
+      {
+        "title": "Final Strike 1",
+        "text": "Stand down!"
+      },
+      {
+        "title": "Final Strike 2",
+        "text": "Hell yeah!"
+      },
+      {
+        "title": "Battle Skill 1",
+        "text": "No escape!"
+      },
+      {
+        "title": "Battle Skill 2",
+        "text": "Eat this!"
+      },
+      {
+        "title": "Battle Skill 3",
+        "text": "Your turn!"
+      },
+      {
+        "title": "Combo Skill Ready 1",
+        "text": "Knuckle up!"
+      },
+      {
+        "title": "Combo Skill Ready 2",
+        "text": "Let's rumble!"
+      },
+      {
+        "title": "Combo Casting 1",
+        "text": "Surrender now!"
+      },
+      {
+        "title": "Combo Casting 2",
+        "text": "Grit your teeth!"
+      },
+      {
+        "title": "Finisher 1",
+        "text": "Do not resist!"
+      },
+      {
+        "title": "Finisher 2",
+        "text": "End of the line!"
+      },
+      {
+        "title": "Ultimate 1",
+        "text": "I'll teach you the hard way!"
+      },
+      {
+        "title": "Ultimate 2",
+        "text": "You deserve ... the slammer!"
+      },
+      {
+        "title": "Ultimate 3",
+        "text": "I asked you nicely!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

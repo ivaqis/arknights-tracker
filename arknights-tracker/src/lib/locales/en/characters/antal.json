@@ -117,7 +117,329 @@
         "name": "Creative",
         "description": "Creative: Humor Sensitivity Training\nAntal believes that constant practice will make him the Master Guru of Lame Jokes."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Operation Prep 1",
+        "text": "Hmm. Another shift begins."
+      },
+      {
+        "title": "Operation Prep 2",
+        "text": "Who's the test subject this time?"
+      },
+      {
+        "title": "Adding to Team 1",
+        "text": "A mission for me? Good. I happen to be seeking field-testing opportunities for modified orbiters."
+      },
+      {
+        "title": "Adding to Team 2",
+        "text": "If you have a plan, just give your orders. I have faith in your judgment."
+      },
+      {
+        "title": "Switching Weapon",
+        "text": "A new and uncalibrated weapon. I must subject it to a round of performance evaluations."
+      },
+      {
+        "title": "Switching Gear",
+        "text": "The new gear presents significant improvements. However, it snags against my dermal scales."
+      },
+      {
+        "title": "Ability Matrix Activation",
+        "text": "Hmm... I appreciate the instructions. A new train of thought has been inspired."
+      },
+      {
+        "title": "Watching Combat Records",
+        "text": "A most impressive battle plan, Endministrator. I am glad to be part of your operations."
+      },
+      {
+        "title": "Operator Promotion 1",
+        "text": "A raise? I appreciate additional funds for procuring more Originium devices and Arts Units. My research and personal hoard shall grow."
+      },
+      {
+        "title": "Operator Promotion 2",
+        "text": "A promotion, but one that entails additional work in the future? Understood. So, is there any new mission for me?"
+      },
+      {
+        "title": "Operator Promotion 3",
+        "text": "Is this encouragement for my thirst for knowledge? I just finished a report on the Protocol Automation-Core. You can review it in case I missed anything."
+      },
+      {
+        "title": "Operator Promotion 4",
+        "text": "Life in Endfield is vastly different compared to my days in the Academy. Back then, I easily earned my GPA with my research, but this doesn't seem important now. I must learn and live with trusting my teammates and achieving results as a team."
+      },
+      {
+        "title": "Operator Reporting for Duty",
+        "text": "Antal of Op Z7 reporting for duty. I've studied Originium automation and occasionally help with modifying or repairing Originium devices. You may approach me for such tasks... And I have a question for you. What is the material of your mask? Carbon fiber?"
+      },
+      {
+        "title": "Standing by 1",
+        "text": "You have something to discuss with me?"
+      },
+      {
+        "title": "Standing by 2",
+        "text": "I am trying to compose a bad joke for you."
+      },
+      {
+        "title": "Assigning to Facility",
+        "text": "A new job assignment? Affirmative."
+      },
+      {
+        "title": "Greeting 1",
+        "text": "I am open to questions related to Originium devices, in addition to other things."
+      },
+      {
+        "title": "Greeting 2",
+        "text": "Curiously, your presence greatly amplifies my eagerness to share my vast knowledge."
+      },
+      {
+        "title": "Dijiang Idle Chatter 1",
+        "text": "May I inspect your weaponry, Endmin? Hmm. The only issue I see is the wearing down of certain components. Replacing a single precision Originium component will fix it. This repair job won't be much trouble. I offer this service for every individual in Team Z7."
+      },
+      {
+        "title": "Dijiang Idle Chatter 2",
+        "text": "My studies of Dijiang reveal that she is a pinnacle of engineering. Central Control, the Protorig Network Node, Life Support systems, and various parts of the vessel offer ample opportunities of learning. It has granted me the structure for my next thesis."
+      },
+      {
+        "title": "Dijiang Idle Chatter 3",
+        "text": "I have a joke based on Fluorite's personal experiences. How should one respond to a threatening message from an antagonist? Answer: Unsubscribe. You laugh. This joke is proven humorous. But why didn't the others laugh as you did?"
+      },
+      {
+        "title": "Dijiang Idle Chatter 4",
+        "text": "If your emotions are cold, join me in the outdoors. Solar radiation induces cerebral serotonin secretion that alleviates negative emotions. There was a fountain park near my Academy, one that offered serenity and plenty of solar exposure. When I studied in the Academy, the park was my resting grounds in moments of exhaustion."
+      },
+      {
+        "title": "Dijiang Idle Chatter 5",
+        "text": "My grandmother's reply arrived yesterday. She seems rather interested in a particular individual that I repeatedly mentioned in my letters to her. I shall relay her message to the said individual, which happens to be you, Endmin: \"You should know by now that a certain young Savra may be quite stubborn, albeit in a good-natured way. Please bear with him. I hope to share some tea with you and tell you more about how I raised that little scaley kid.\""
+      },
+      {
+        "title": "Dijiang Idle Chatter 6",
+        "text": "Many people gaze upon Talos-II from the decks of Dijiang. I did the same and though it offered a novel perspective, I did not share the nostalgia they felt. Perhaps my grandmother is to blame. She taught me: \"Do not obsess about the past. Seek and broaden your future.\""
+      },
+      {
+        "title": "Offering Gifts",
+        "text": "Conventions of socialization dictate that people exchange gifts to convey their feelings. I have prepared this particular gift for you, recipient."
+      },
+      {
+        "title": "Accepting Gifts",
+        "text": "I am grateful. I understand what it means to offer a gift, and I shall treasure this offering."
+      },
+      {
+        "title": "Trust Dialog 1",
+        "text": "Joining Endfield was not a difficult choice. You offer new technologies that are absent in the Academy. The scientific society can be overly conservative in the advancement of certain fields. Endfield, however, offers an admirable spirit of exploration, innovation, and practical applications."
+      },
+      {
+        "title": "Trust Dialog 2",
+        "text": "My book? It is indeed the Selection of Extreme Sudoku Challenges. Arithmetic puzzles help modulate my emotions during idle time. I have shared this pastime with members of Z7 but reception was negative. Perhaps you can give this a try, Endmin?"
+      },
+      {
+        "title": "Trust Dialog 3",
+        "text": "A bad joke for me? I shall hear it. \"Why does a Savra only drop cheesy jokes during the day? Because the sun's out, and even the cringe deserves a little vitamin D.\" ...Hrra-Hrra-Hrra. I did not mean to insult, Endmin. Such is the sound of a Savra's genuine laughter."
+      },
+      {
+        "title": "Trust Dialog 4",
+        "text": "I have modified plenty of Originium devices. But the one I miss the most is the staff my grandmother gave me when I was young. I remember her line to this day: \"It shall accompany you as you modify this world.\""
+      },
+      {
+        "title": "Trust Dialog 5",
+        "text": "My grandmother told me that spending a lifetime to answer a scientific question may be romantic, but lonely is a life without friends. I did not understand what she meant. Then came a time when I wanted to share the joy of a new discovery, but you were not around. This incident taught me about loneliness."
+      },
+      {
+        "title": "Chat 1",
+        "text": "Fluorite taught me a card game for passing the time. She also told me that the loser must do anything for the winner. We played five games. She is now obliged to give me five one-on-one sessions on \"quickly becoming a joyful partner in conversations\"."
+      },
+      {
+        "title": "Chat 2",
+        "text": "Having dinner? No. I cannot go. I have hunted down an Aggelos without reporting to my Captain. She has punished me by denying me night time feeding privileges at the canteen."
+      },
+      {
+        "title": "Chat 3",
+        "text": "Why did I choose Z7 instead of an R&D project? The R&D Center was my initial interest but Captain Akekuri was my interviewer. She believes that modified Originium devices should be taken out of the lab and subject to actual combat scenarios. This will better identify their issues. I concur, therefore I joined her team."
+      },
+      {
+        "title": "Chat 4",
+        "text": "Why do I obsess about bad jokes? During my schooling days people complained about my lack of humor. I agree with them. My defect must be corrected."
+      },
+      {
+        "title": "Chat 5",
+        "text": "My grandmother told me she was happy I left home for Endfield. She treated this as an opportunity to get me off the reading and Originium devices. She hoped I would learn about getting along with teammates and even ... make a friend."
+      },
+      {
+        "title": "Topic: Akekuri",
+        "text": "Captain Akekuri? She recruited me and is very friendly. I heed all her instructions. Though she says our team is doing okay, she often loses sleep and would pace about in the middle of the night. She refuses to divulge the reasons. I hope you may tell me why, Endmin."
+      },
+      {
+        "title": "Topic: Catcher",
+        "text": "Catcher is responsible for preparing the rations during field operations. He wields kitchenware better than how I wield my orbiters. When it rains, however, he refuses to talk but neither does he object to my presence. I find this rather perplexing."
+      },
+      {
+        "title": "Topic: Fluorite",
+        "text": "I consider Fluorite to be a fellow scaley friend of mine, to some degree. I find her strong, powerful tail attractive but she forbade me from making tactile assessments. Fluorite is also an artful conversationalist. I can learn much from her."
+      },
+      {
+        "title": "Topic: Estella",
+        "text": "When entering a battle, I need to consider defending Estella. We both share reflective and conspicuous skin tones. It is a key concern that dangerously exposes us in battle."
+      },
+      {
+        "title": "Resource/Collectible Detected 1",
+        "text": "Good. A new discovery has been made."
+      },
+      {
+        "title": "Resource/Collectible Detected 2",
+        "text": "We should take a look at that key discovery."
+      },
+      {
+        "title": "Unexplored Area Detected",
+        "text": "Allow me to investigate this mystery."
+      },
+      {
+        "title": "Powerful Enemy Discovered",
+        "text": "Elite hostile unit detected."
+      },
+      {
+        "title": "Mining 1",
+        "text": "Minerals serve multiple purposes. We should gather some."
+      },
+      {
+        "title": "Mining 2",
+        "text": "This will boost our efficiency."
+      },
+      {
+        "title": "Opening a Crate",
+        "text": "Rich resource stash found. We should sort through it to identify gear maintenance materials."
+      },
+      {
+        "title": "Acquiring Aurylene",
+        "text": "Some Aurylenes suddenly move away when we approach. Why? Can it be some form of energy-based repulsion?"
+      },
+      {
+        "title": "Eliminating the Blight",
+        "text": "Does this mean we have achieved better understanding of the Blight...?"
+      },
+      {
+        "title": "Rest",
+        "text": "People are not machines, and must set aside time for rest."
+      },
+      {
+        "title": "Tactical Use 1",
+        "text": "Initiating emergency treatment."
+      },
+      {
+        "title": "Tactical Use 2",
+        "text": "Nominal conditions restored."
+      },
+      {
+        "title": "Danger Warning",
+        "text": "Hostile attack order detected."
+      },
+      {
+        "title": "Injured",
+        "text": "Conditions sub-optimal, but still functional."
+      },
+      {
+        "title": "0 HP",
+        "text": "Train of thought derailed. Support ... unavailable."
+      },
+      {
+        "title": "Team Encouragement 1",
+        "text": "An outstanding performance."
+      },
+      {
+        "title": "Team Encouragement 2",
+        "text": "We achieved tacit synergy."
+      },
+      {
+        "title": "Encouragement Response 1",
+        "text": "Thank you, but I could've done better."
+      },
+      {
+        "title": "Encouragement Response 2",
+        "text": "A definitive outcome."
+      },
+      {
+        "title": "Combat Begins 1",
+        "text": "Arts Unit optimal."
+      },
+      {
+        "title": "Combat Begins 2",
+        "text": "Focus on the battle. I shall provide covering fire."
+      },
+      {
+        "title": "Combat Victory 1",
+        "text": "New knowledge gained."
+      },
+      {
+        "title": "Combat Victory 2",
+        "text": "Mission complete. It was a walk on a cake."
+      },
+      {
+        "title": "Combat Victory 3",
+        "text": "Everyone has been indispensable to the team."
+      },
+      {
+        "title": "Combat Victory 4",
+        "text": "Our results are optimal, despite the unexpected variables of combat."
+      },
+      {
+        "title": "Combat Defeat",
+        "text": "Tabulations of losses incurred showed that extraction was the best solution for the team."
+      },
+      {
+        "title": "Final Strike 1",
+        "text": "Flaw sighted!"
+      },
+      {
+        "title": "Final Strike 2",
+        "text": "Hmph! Paralyze!"
+      },
+      {
+        "title": "Battle Skill 1",
+        "text": "Direction set."
+      },
+      {
+        "title": "Battle Skill 2",
+        "text": "Target locked."
+      },
+      {
+        "title": "Battle Skill 3",
+        "text": "Max output."
+      },
+      {
+        "title": "Combo Skill Ready 1",
+        "text": "Fully energized."
+      },
+      {
+        "title": "Combo Skill Ready 2",
+        "text": "Unit prepped and hot."
+      },
+      {
+        "title": "Combo Casting 1",
+        "text": "Critical zap."
+      },
+      {
+        "title": "Combo Casting 2",
+        "text": "Hasten victory!"
+      },
+      {
+        "title": "Finisher 1",
+        "text": "Ion burst."
+      },
+      {
+        "title": "Finisher 2",
+        "text": "Voltaic surge."
+      },
+      {
+        "title": "Ultimate 1",
+        "text": "Victory electrified."
+      },
+      {
+        "title": "Ultimate 2",
+        "text": "Circuit amplified."
+      },
+      {
+        "title": "Ultimate 3",
+        "text": "Time to power up."
+      }
+    ]
   },
   "potentials": {
     "potential1": {

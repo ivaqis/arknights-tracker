@@ -128,7 +128,333 @@
         "name": "Tecnología",
         "description": "Tecnología: Colección de equipamiento \nEstantes de exhibición, y muchos. Son su único requisito para considerar que una casa es segura. De este modo, puede categorizar y acomodar cuidadosamente varios equipos por marca y función."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Preparación para la operación 1",
+        "text": "No pienso esperar más tiempo."
+      },
+      {
+        "title": "Preparación para la operación 2",
+        "text": "¿Debo acompañarte? Estoy a tu disposición."
+      },
+      {
+        "title": "Añadir al equipo 1",
+        "text": "Guía, y yo te seguiré. O que sea al revés."
+      },
+      {
+        "title": "Añadir al equipo 2",
+        "text": "Era de esperarse. Partamos."
+      },
+      {
+        "title": "Cambiar de arma",
+        "text": "Este instrumento afilado podría atravesar hasta al mar de sangre. Lo portaré con cuidado."
+      },
+      {
+        "title": "Cambiar de equipamiento",
+        "text": "La lógica de vestimenta de los Guardianes gira en torno a la hechicería Sarkaz. Pero confío en tus decisiones."
+      },
+      {
+        "title": "Activación de la matriz de habilidades",
+        "text": "Las impurezas han sido eliminadas. La sangre es más pura ahora."
+      },
+      {
+        "title": "Viendo los registros de combate",
+        "text": "Estos conocimientos tácticos son de gran valor. Ayudarán a los Guardianes en sus deberes."
+      },
+      {
+        "title": "Ascenso de operador 1",
+        "text": "¿Un reconocimiento oficial de Endfield o tu confianza personal?"
+      },
+      {
+        "title": "Ascenso de operador 2",
+        "text": "Gracias por el reconocimiento, Endministrator. Mis responsabilidades han crecido, pero en este momento solo siento alegría por ser digno de tu confianza."
+      },
+      {
+        "title": "Ascenso de operador 3",
+        "text": "Los honores vacíos ya no importan, colega. Mi sangre siempre está contigo."
+      },
+      {
+        "title": "Ascenso de operador 4",
+        "text": "Fuerzas inmensas compiten por el dominio de este mundo, y nos dejan apenas sobreviviendo entre las grietas. Aun así, me mostraste que el cambio, por pequeño que sea, tiene significado. Y yo... Estoy más que dispuesto a caminar contigo en esta búsqueda."
+      },
+      {
+        "title": "Operador reportándose al deber",
+        "text": "Camille Arno, Agaš'mekanaz de Seš'qa. Busco a un peligroso criminal Sarkaz que usa la hechicería como arma. Para ello, requiero la fuerza de Endfield... Y a cambio, juro ofrecerte la mía."
+      },
+      {
+        "title": "En espera 1",
+        "text": "Nacido en sangre, concluido en sangre."
+      },
+      {
+        "title": "En espera 2",
+        "text": "No dejo sombra... donde los culpables puedan ocultarse."
+      },
+      {
+        "title": "Asignar a una instalación",
+        "text": "Yo trabajo solo. Eliminar la necesidad de comunicarse aumenta la eficiencia."
+      },
+      {
+        "title": "Saludo 1",
+        "text": "¿Alguna orden?"
+      },
+      {
+        "title": "Saludo 2",
+        "text": "Endmin, este encuentro no fue casualidad. He estado esperando."
+      },
+      {
+        "title": "Charla casual en la Dijiang 1",
+        "text": "El espacio vertical en la Dijiang es vasto. A veces, por eficiencia, me desplazo por el techo... No, no es para evitar saludar a los demás."
+      },
+      {
+        "title": "Charla casual en la Dijiang 2",
+        "text": "Puedo oír las corrientes fluyendo por los cables de la Dijiang. Cada vez que Ingeniería ajusta los parámetros de la nave, el zumbido eléctrico cambia y tengo que reajustarme... Me irritan, sí, pero no les guardo rencor. Demuestran que la gente se esfuerza por mantener la nave en rumbo firme."
+      },
+      {
+        "title": "Charla casual en la Dijiang 3",
+        "text": "Me gustan los rompecabezas. Hay cierta satisfacción en reunir fragmentos dispersos y devolverlos a un todo. Además, es un pasatiempo que solo requiere una persona."
+      },
+      {
+        "title": "Charla casual en la Dijiang 4",
+        "text": "No esperaba que Seš'qa enviara a la operadora Last Rite a Endfield... Disfrutan de una alianza sincera, una que demuestra la solidaridad entre ambas organizaciones y la coincidencia de nuestras visiones. Como en los viejos tiempos... nada ha cambiado."
+      },
+      {
+        "title": "Charla casual en la Dijiang 5",
+        "text": "Dos alas en el cielo, y aun así dos hogares distintos. La tranquilidad de Seš'qa nació de nuestra hermandad. Pero la Dijiang... quizá la presencia de cierta persona ejerce el mismo efecto reconfortante."
+      },
+      {
+        "title": "Charla casual en la Dijiang 6",
+        "text": "Pocos comprenden su propio corazón, pero todos a bordo de la Dijiang avanzan hacia un objetivo claro. Durante mucho tiempo busqué la razón, y la encontré en ti, Endmin. Eres un ejemplo de liderazgo."
+      },
+      {
+        "title": "Ofrecer obsequios",
+        "text": "Tengo algo para ti de parte de Seš'qa. Tómalo. Los otros obsequios de nuestra dirigencia ya fueron entregados a tu oficina."
+      },
+      {
+        "title": "Aceptar obsequios",
+        "text": "No es un regalo de despedida, ¿verdad...? Muy bien, lo aceptaré."
+      },
+      {
+        "title": "Diálogo de confianza 1",
+        "text": "A lo largo de las décadas, te he vislumbrado unas cuantas veces desde lejos. Recuerdo que mi primera impresión de ti fue la de una “fuerza salvadora”. Pero ahora te siento más como alguien en quien confiar. No me preocupan las preferencias de los demás, pero sí encuentro más consuelo en la persona que tengo ahora frente a mí. Ya no te afectan las inclemencias del tiempo y tu cuerpo está libre de cicatrices."
+      },
+      {
+        "title": "Diálogo de confianza 2",
+        "text": "Sueño constantemente con mi familia en un jardín, rodeada de Rompesuelos violentos portando antorchas. Por más que corra, me quedo atrapado en el mismo lugar y nunca logro acercarme. En mis peores días... esos sueños aparecían cada noche. Pero después de llegar a Endfield, las pesadillas han comenzado a desvanecerse."
+      },
+      {
+        "title": "Diálogo de confianza 3",
+        "text": "Para mantener con vida a Char, le di mi sangre... la mitad entera de mi existencia. Por lo tanto, soy su hermano y también su creador. El mayor temor de un Vampiro es la corrupción y la contaminación de nuestra sangre. Él usó la mía para herir a otros... y por eso debo detener tal insensatez. Tengo que hacerlo."
+      },
+      {
+        "title": "Diálogo de confianza 4",
+        "text": "Hace mucho, solía desear poder desangrar la memoria para librarme de ese dolor punzante. Pero después de conocerte... Comprendí que fueron esos elementos intocables, inolvidables e irreversibles los que moldearon quien soy hoy. Así que, Endmin, te ayudaré a recuperar lo que has perdido."
+      },
+      {
+        "title": "Diálogo de confianza 5",
+        "text": "Sacrifiqué la mitad de mi sangre vital, y por eso me queda una sola ala... La otra, la que falta, palpita con un dolor constante, como si mi sangre anhelara lo que perdí. Y, sin embargo, los nuevos recuerdos que hemos creado están llenando ese vacío. Tal vez con el tiempo... el dolor de esa cicatriz deje de atormentarme."
+      },
+      {
+        "title": "Charla 1",
+        "text": "En el jardín de nuestra familia alguna vez hubo una planta conocida como el Regaliz del Diablo. Madre nos dijo que los Sarkaz llevaron este hilo de recuerdos desde Terra. Es un símbolo de nuestra esperanza de coexistir con este planeta: toda vida, ya sea humana o vegetal, encontrará un camino en tierras lejanas. Claro, mi yo más joven lo usaba principalmente como ingrediente para dulces de hechicería... El sabor es inusual, pero no de mala manera."
+      },
+      {
+        "title": "Charla 2",
+        "text": "Hay una taberna única en Seš'qa, construida por completo con cristal de espejo. Del techo cuelgan incontables gemas artificiales que brillan con hechicería. Todo el edificio irradia luz. Durante las visitas abiertas, los Sankta solían celebrar fiestas ahí. Son un grupo ruidoso y alborotador que no deja dormir a nadie. Aun así, esa vitalidad le hace bien a Seš'qa. Es prueba de que nuestros esfuerzos están dando resultado y derribando muchas barreras entre razas."
+      },
+      {
+        "title": "Charla 3",
+        "text": "¿La persona del catálogo de Hora de brujas...? Está bien, soy yo. Me envían muestras a cambio de fotos promocionales. Hace años, entré por casualidad en una tienda de hechicería y el que atendía me trató como si fuera un espécimen raro. Literalmente me retuvieron para que firmara un contrato en ese mismo momento. Sí me da pena si alguien conocido ve la foto, pero las muestras son raras... Endmin, ¿puedo preguntar a dónde piensas ir con ese folleto?"
+      },
+      {
+        "title": "Charla 4",
+        "text": "De niño perdía las llaves de la casa constantemente Eso provocó una pelea con Char, y por accidente rompí su caja musical. Después de disculparme, usó su componente central y me hizo una llave nueva... Me dijo que era un amuleto que siempre me guiaría de vuelta a casa. Ahora que mi familia ya no está y nuestra propiedad en Seš'qa fue vendida... ya no abre ninguna puerta ni tiene significado alguno."
+      },
+      {
+        "title": "Charla 5",
+        "text": "Las “lanzas demoníacas” carmesí son mis Artes de Originio. Puedo encapsular objetos con mi sangre para convertirlos en armas. Suelo utilizar mi propia sangre, ya que la del enemigo podría estar contaminada. La sangre de mis compañeros es... algo que no deseo explotar, ni siquiera con tu consentimiento."
+      },
+      {
+        "title": "Tema: Seš'qa",
+        "text": "Hace cien años, nadie habría imaginado que hoy la vista de la ciudad Sarkaz flotando en los cielos provocaría no irritación, sino ganas de visitarla y presenciar sus trucos de hechicería. Seš'qa es una pluma a la deriva, con incontables personas guiando cuidadosamente los vientos. Es su deseo que la ciudad itinerante sirva de vínculo para nuestros parientes que habitan en tierra y les dé esperanza."
+      },
+      {
+        "title": "Tema: Señor de la guerra de las tierras salvajes",
+        "text": "Jakub, el Señor de la guerra de las tierras salvajes... Sí, lo vi en persona. Muy pocos mencionarían su nombre hoy en día. Dejando de lado el odio personal, no estoy de acuerdo con su plan de destrozar la Franja de la Civilización. Y aun así, no puedo negar su habilidad y su liderazgo extraordinario. Si Jakub Meissen no fuera derrotado, sus Rompesuelos podrían haber logrado herir a Talos-II gravemente."
+      },
+      {
+        "title": "Tema: Hermano",
+        "text": "No me parezco en nada a Char. Pero hubo breves lapsos en los que vi su rostro en el espejo... Intenté imitar su sonrisa cínica y despreocupada, y aun así sigo sin entender su razonamiento: ¿cómo pudo ignorar la enemistad de sangre y unirse a los bandidos que mataron a nuestros padres? Ese enigma me carcome, y ansío conocer la verdad."
+      },
+      {
+        "title": "Tema: Guardianes de la sabiduría",
+        "text": "Pocos llevan el título de “Agaš'mekanaz”; Char fue quien me dio la oportunidad de convertirme en un Guardián. Los crímenes relacionados con la hechicería Sarkaz se resuelven con mayor facilidad por alguien de la misma sangre... Soy quien mejor conoce las Artes de Char, y solo yo puedo dedicar décadas sin descanso a rastrearlo. Convertir en enemigo a un ser querido causa dolor, y aun así los Guardianes seguimos siendo leales a nuestra misión. Yo no soy la excepción."
+      },
+      {
+        "title": "Tema: Padres",
+        "text": "Guiados por la legendaria Oradora, mis padres llegaron a Talos-II junto con muchos Sarkaz. Fueron de los primeros integrantes de Seš'qa y construyeron el Vitaoseo... El Señor de la guerra de las Tierras salvajes los mató. Recuerdo que Madre era un alma gentil, comprometida con fomentar la paz entre razas... Pero Char asegura haber visto un lado distinto de ella que yo no conozco... Sin importar lo que oculte el pasado, la traición... sigue siendo traición."
+      },
+      {
+        "title": "Recurso/Coleccionable detectado 1",
+        "text": "Sigue esas huellas de allá."
+      },
+      {
+        "title": "Recurso/Coleccionable detectado 2",
+        "text": "Esos objetos tienen un valor considerable. Llevarlos con nosotros beneficiará nuestra operación."
+      },
+      {
+        "title": "Zona inexplorada detectada",
+        "text": "Primera regla de un Guardián: siempre tomar nota del territorio inexplorado."
+      },
+      {
+        "title": "Enemigo poderoso descubierto",
+        "text": "Mantente alerta. Ese lleva el olor de la sangre."
+      },
+      {
+        "title": "Minería 1",
+        "text": "Estos minerales emiten un tintineo bastante agradable."
+      },
+      {
+        "title": "Minería 2",
+        "text": "Permíteme. Eso acelerará las cosas."
+      },
+      {
+        "title": "Abriendo una caja",
+        "text": "Con acción vienen los resultados."
+      },
+      {
+        "title": "Adquiriendo Aurileno",
+        "text": "Aurilenos... también son muy buenos huyendo."
+      },
+      {
+        "title": "Eliminando la Plaga",
+        "text": "La mancha de esta tierra ha sido eliminada."
+      },
+      {
+        "title": "Descanso",
+        "text": "Desde las sombras más profundas, una gota de sangre vuelve a extraerse."
+      },
+      {
+        "title": "Uso de item táctico 1",
+        "text": "¡Usa estos!"
+      },
+      {
+        "title": "Uso de item táctico 2",
+        "text": "La vida regresa a la sangre."
+      },
+      {
+        "title": "Advertencia de peligro",
+        "text": "¡Cuidado!"
+      },
+      {
+        "title": "Herido",
+        "text": "Hasta mi última gota de sangre..."
+      },
+      {
+        "title": "0 PV",
+        "text": "El mar de sangre... susurra su dolor..."
+      },
+      {
+        "title": "Ánimo al equipo 1",
+        "text": "Una jugada brillante."
+      },
+      {
+        "title": "Ánimo al equipo 2",
+        "text": "Magnífico. Mi sangre se enciende al verlo."
+      },
+      {
+        "title": "Respuesta al ánimo 1",
+        "text": "Solo cumplo con mi deber."
+      },
+      {
+        "title": "Respuesta al ánimo 2",
+        "text": "Lo logramos juntos."
+      },
+      {
+        "title": "Comienza el combate 1",
+        "text": "Resiste todo lo que quieras."
+      },
+      {
+        "title": "Comienza el combate 2",
+        "text": "La única manera es seguir adelante."
+      },
+      {
+        "title": "Victoria en combate 1",
+        "text": "La brisa se lleva el olor ferroso de la sangre. Todo sale según lo planeado."
+      },
+      {
+        "title": "Victoria en combate 2",
+        "text": "Una digna persecución. Bien ejecutada."
+      },
+      {
+        "title": "Victoria en combate 3",
+        "text": "El trabajo en equipo no es mi fuerte. Pero este día es una excepción."
+      },
+      {
+        "title": "Victoria en combate 4",
+        "text": "Nuestra sangre fue derramada, pero el enemigo lo pagó con creces. Completar la tarea... ya es una victoria suficiente."
+      },
+      {
+        "title": "Derrota en combate",
+        "text": "Por amargo que sea, este no es el final. Una deuda de sangre debe pagarse... y nuestra meta aún está por delante."
+      },
+      {
+        "title": "Golpe final 1",
+        "text": "¡Muy débil!"
+      },
+      {
+        "title": "Golpe final 2",
+        "text": "¡Perfóralos!"
+      },
+      {
+        "title": "Habilidad de batalla 1",
+        "text": "Última misericordia."
+      },
+      {
+        "title": "Habilidad de batalla 2",
+        "text": "La muerte espera."
+      },
+      {
+        "title": "Habilidad de batalla 3",
+        "text": "Retuércete de dolor."
+      },
+      {
+        "title": "Habilidad de combo preparada 1",
+        "text": "La hechicería está lista."
+      },
+      {
+        "title": "Habilidad de combo preparada 2",
+        "text": "Arrincónalos."
+      },
+      {
+        "title": "Lanzamiento de combo 1",
+        "text": "No hay escapatoria."
+      },
+      {
+        "title": "Lanzamiento de combo 2",
+        "text": "Sangra, impureza."
+      },
+      {
+        "title": "Remate 1",
+        "text": "Abraza tu final."
+      },
+      {
+        "title": "Remate 2",
+        "text": "Pobre tonto."
+      },
+      {
+        "title": "Habilidad máxima 1",
+        "text": "Oh, lluvia de rojo carmesí..."
+      },
+      {
+        "title": "Habilidad máxima 2",
+        "text": "Húndete en la noche interminable."
+      },
+      {
+        "title": "Habilidad máxima 3",
+        "text": "El pecado termina en la hoguera."
+      }
+    ]
   },
   "potentials": {
     "potential1": {

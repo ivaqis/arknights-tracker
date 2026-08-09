@@ -125,7 +125,333 @@
         "name": "Culture",
         "description": "Culture : industrie en plein essor \nElle a des projets d'avenir pour Wuling, et ils dépassent largement la technologie en xiranite."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Préparation de l'opération 1",
+        "text": "Nous nous préparons toujours, que ce soit pour affronter nos ennemis ou accueillir nos invités."
+      },
+      {
+        "title": "Préparation de l'opération 2",
+        "text": "Que diriez-vous d'une bonne tasse de thé avant de partir ?"
+      },
+      {
+        "title": "Intégration à l'équipe 1",
+        "text": "Ce doit être assez délicat pour que vous me sollicitiez. Comment puis-je vous aider ?"
+      },
+      {
+        "title": "Intégration à l'équipe 2",
+        "text": "Ça fait des années que je n'ai pas embarqué pour une mission... J'espère que je n'ai pas perdu la main."
+      },
+      {
+        "title": "Changement d'arme",
+        "text": "Il faut du temps pour maîtriser une arme, même la plus sophistiquée. Je donnerai mon avis après l'avoir utilisée."
+      },
+      {
+        "title": "Changement d'équipement",
+        "text": "Ce nouveau modèle est plus puissant, mais je m'étais habituée à l'ancien..."
+      },
+      {
+        "title": "Activation de la matrice de capacités",
+        "text": "Plus j'apprends de nouvelles choses, plus je me rends compte que mes connaissances ne sont rien de plus qu'une goutte d'eau dans l'océan."
+      },
+      {
+        "title": "Visionnage d'archives de combat",
+        "text": "*Soupir* Je déteste me voir à l'écran, j'ai l'air si maladroite... Et si on s'entraînait ensemble, plutôt ?"
+      },
+      {
+        "title": "Promotion d'opérateur 1",
+        "text": "Je n'ai fait que mon devoir... inutile de me remercier de la sorte."
+      },
+      {
+        "title": "Promotion d'opérateur 2",
+        "text": "Allez, ça suffit, trêve de compliments. Si vous avez un moment, j'aimerais que vous jetiez un œil à mes recherches."
+      },
+      {
+        "title": "Promotion d'opérateur 3",
+        "text": "C'est bien trop généreux de votre part, vraiment... Vous savez, on aurait pu se contenter de partager un bon repas. Ou alors, si vous alliez sur la côte, vous auriez pu m'offrir une petite plante halophile."
+      },
+      {
+        "title": "Promotion d'opérateur 4",
+        "text": "Je suis très touchée par votre gentillesse. Permettez-moi également de vous rappeler que lorsque vous en aurez l'occasion, je vous invite à vous rendre à Wuling pour recevoir votre médaille de citoyen d'honneur. Et promettez-moi de ne pas la récupérer sans nous en avertir. Nous aimerions tous organiser une cérémonie en votre honneur."
+      },
+      {
+        "title": "Opérateur au rapport",
+        "text": "Endmin, avant de prendre officiellement mes fonctions, j'aimerais prononcer quelques mots. En tant que vice-reine, j'ai une grande expérience des tâches administratives. Cependant... ici, à Endfield, j'aimerais travailler comme une Tianshi ordinaire et consacrer mon temps à la recherche."
+      },
+      {
+        "title": "En attente 1",
+        "text": "Vous m'avez appelée... ? Vous recherchez ma compagnie ?"
+      },
+      {
+        "title": "En attente 2",
+        "text": "Endmin, j'ai ajouté un nouveau module à l'appareillage des Tianshi. Que diriez-vous de voir comment ça fonctionne ?"
+      },
+      {
+        "title": "Affectation à une installation",
+        "text": "Si vous me faites confiance, je peux me charger de ces petits détails toute seule."
+      },
+      {
+        "title": "Salutation 1",
+        "text": "Je vais au labo. Tu veux venir avec moi, si c'est sur ton chemin ?"
+      },
+      {
+        "title": "Salutation 2",
+        "text": "Quelle agréable coïncidence. Je pensais justement venir te voir."
+      },
+      {
+        "title": "Bavardage sur le Dijiang 1",
+        "text": "C'est la première fois que je monte physiquement dans le Dijiang, mais... mon hologramme a déjà participé à des réunions ici même."
+      },
+      {
+        "title": "Bavardage sur le Dijiang 2",
+        "text": "J'ai bien réfléchi à votre demande sur cette statue géante de Choupi Lung... La livraison est possible, mais... réfléchissez bien à l'endroit où vous voulez la placer."
+      },
+      {
+        "title": "Bavardage sur le Dijiang 3",
+        "text": "Notre projet de coopération avec Endfield... je veux dire, avec Wuling, est terminé, et le rapport d'expérience est disponible en ligne. Si vous avez un peu de temps au cours des prochains jours, n'hésitez pas à y jeter un coup d'œil."
+      },
+      {
+        "title": "Bavardage sur le Dijiang 4",
+        "text": "Je ne suis pas venue dans le Dijiang pour travailler cette fois... Les poiriers de Wuling ont donné des fruits, alors je me suis dit que j'allais vous en apporter pour que vous puissiez tous en profiter."
+      },
+      {
+        "title": "Bavardage sur le Dijiang 5",
+        "text": "Quand j'étais petite, j'adorais accompagner ma maîtresse à l'observatoire. Elle comptait les étoiles et m'en montrait une en particulier, en me disant que c'était le Dijiang. Je la regardais en me demandant à quelle distance il pouvait bien se trouver. Aujourd'hui, alors que le Dijiang se trouve sous mes yeux, ce sont ces souvenirs qui me semblent lointains."
+      },
+      {
+        "title": "Bavardage sur le Dijiang 6",
+        "text": "On dit qu'il faut beaucoup lire et parcourir le monde. J'ai beaucoup lu, mais j'ai visité très peu d'endroits. Je ne suis allée qu'à Hongshan, à Wuling et au Dijiang. Ce n'est guère surprenant, car j'ai l'habitude de rester longtemps au même endroit : dix ans, vingt ans, voire toute une vie..."
+      },
+      {
+        "title": "Cadeaux offerts",
+        "text": "Je reviens d'un voyage d'affaires à Hongshan et je vous ai rapporté quelques cadeaux. Ce n'est pas grand-chose, mais j'ai choisi chacun d'entre eux avec soin... J'espère qu'ils vous plairont."
+      },
+      {
+        "title": "Cadeaux acceptés",
+        "text": "L'usage voudrait que je le range en lieu sûr, mais personnellement, je préfère l'avoir à portée de main et de vue."
+      },
+      {
+        "title": "Dialogue à cœur ouvert 1",
+        "text": "Oh, Endmin ! Vous pourriez tenir ça pendant que je mets de la terre ? Si le destin ne m'avait pas conduit à Wuling, je serais sans doute restée à Hongshan, à travailler dans les champs ou comme Tianshi Agri. Ma famille a toujours aimé cultiver les fleurs et les plantes. Notre maison en débordait, ce qui rafraîchissait tous ceux qui nous rendaient visite. C'est donc tout naturellement que, au moment de concevoir la ville de Wuling, je me suis demandé quel parfum et quelle ambiance allaient accueillir chaque visiteur."
+      },
+      {
+        "title": "Dialogue à cœur ouvert 2",
+        "text": "Pas de panique, je ne suis pas venue pour vous emmener à l'Académie. Il y a un nouveau restaurant sur l'avenue Fangxing qui sert des nouilles à la viande braisée, et je me disais qu'on pourrait y aller ensemble pour en goûter. Pourquoi vous pensez au travail chaque fois que vous me voyez, au juste ? Je devrais peut-être prendre le temps d'y réfléchir."
+      },
+      {
+        "title": "Dialogue à cœur ouvert 3",
+        "text": "Wuling organise une « Course à trois pattes » et je me demandais si ça vous intéresserait de participer avec moi. Le parcours s'étend d'est en ouest, puis du nord au sud. Si on termine avant le coucher du soleil, c'est gagné. Vous avez peur de ne pas y arriver ? Ne vous inquiétez pas, j'ai fini première l'année dernière. S'il le faut, je pourrai vous porter jusqu'à l'arrivée. Ne vous inquiétez pas, on va y arriver."
+      },
+      {
+        "title": "Dialogue à cœur ouvert 4",
+        "text": "Qu'est-ce que vous lisez ? Oh, c'est sur moi ? L'article qu'on a publié tout à l'heure ? Ah... Je vois, c'est sur ma famille. Vous auriez pu me poser la question directement. Après le décès de mes parents, mon oncle et ma tante m'ont élevée et ont pris grand soin de moi, mais ils avaient tous deux leurs propres responsabilités et ne pouvaient pas toujours être à mes côtés. Je rêvais donc, dès mon plus jeune âge, d'être plus entourée. Pourtant, dès que je me suis fait des amis, j'ai commencé à regretter le calme et la paix de la solitude."
+      },
+      {
+        "title": "Dialogue à cœur ouvert 5",
+        "text": "La paix est peut-être revenue dans la ville de Wuling, mais il est facile d'entrevoir les nombreux obstacles et défis qui nous attendent. Ne vous en faites pas, Endmin. Peu importe les difficultés, nous resterons à vos côtés. L'hiver cède toujours la place au printemps. Le dicton est juste : la saison verte ne déçoit pas ceux qui ont bravé la neige et le gel, car elle s'éveillera comme promis. Et lorsqu'arrivera enfin la beauté d'un nouveau printemps, nous irons la contempler ensemble."
+      },
+      {
+        "title": "Discussion 1",
+        "text": "Votre suggestion correspond bien à notre vision initiale, même si les contraintes techniques nous ont longtemps freinés. Maintenant qu'une nouvelle voie s'ouvre à nous... Ah, pardonnez-moi, je me suis laissée emporter par le parfum qui pénètre par la fenêtre. Cette année, les fleurs ont éclos si tôt, c'est merveilleux... Endmin, puisque la saison s'y prête, que diriez-vous de poursuivre notre conversation à l'extérieur ?"
+      },
+      {
+        "title": "Discussion 2",
+        "text": "La plupart des plantes qui poussent à Wuling sont des cadeaux que les Tianshi ont emportés avec eux depuis leur terre natale. La première fois que je les ai vues prendre racine ici, je me suis dit que c'était comme si les Tianshi avaient planté un morceau de chez eux dans le sol de Wuling, qu'ils pourraient contempler chaque fois qu'ils auraient le mal du pays. Ce n'est que bien plus tard que j'ai compris que les graines n'étaient pas les seules à avoir pris racine, mais eux aussi. À leurs yeux, Wuling n'est plus une terre étrangère, mais leur foyer."
+      },
+      {
+        "title": "Discussion 3",
+        "text": "J'ajoute cinq millilitres de solution... Bien, le changement de couleur a l'air normal, pas de résidus bizarres ni de coloration trouble. Ensuite, quelques gouttes de catalyseur pour faire ressortir la saveur... Température correcte, rien ne brûle. Le taux de dissolution m'a l'air correct... Oh, euh, Endmin ? Non, non, ce n'est pas une expérience. Pour tout vous dire, je suis en train de... cuisiner. Mi Fu critique toujours mon alimentation exclusivement composée de plats préparés ou à emporter, alors, comme j'ai enfin un peu de temps libre, j'ai décidé de me mettre aux fourneaux. Vous voulez goûter ?"
+      },
+      {
+        "title": "Discussion 4",
+        "text": "Pfiou... laissez-moi reprendre mon souffle. Je reviens de mon jogging matinal et j'ai besoin de retrouver mon souffle. Oui, je sais, il est cinq heures du matin, mais c'est tout à fait normal. Je me lève à quatre heures, je fais mon jogging jusqu'à cinq heures, et je suis au bureau à 5 h 30... C'est mon rythme depuis plus de dix ans. La grasse matinée est loin d'être ma tasse de thé. J'ai tellement de choses à faire et accomplir, que je préfère sacrifier mon sommeil pour gagner plus de temps. Hum... qu'est-ce qui vous amène au laboratoire à une heure pareille, au juste ?"
+      },
+      {
+        "title": "Discussion 5",
+        "text": "C'est bientôt l'anniversaire de la mort de mes aînés. Si vous avez un moment, accepteriez-vous de m'accompagner au Jardin de la sérénité ? Je regrette encore aujourd'hui de ne pas avoir pu rassembler leurs dépouilles pour les ramener sur leur terre natale. Je sais qu'aucun monument à Wuling ne pourra les ramener à la vie. Mais si ces lieux de mémoire permettent de préserver leur souvenir, ne serait-ce qu'un instant, alors leur sacrifice n'aura pas été vain."
+      },
+      {
+        "title": "Thème : la ville de Wuling",
+        "text": "Évidemment, construire la ville de Wuling juste à côté de la faille est extrêmement dangereux. J'en suis bien consciente. Cependant, personne ne voulait la déplacer lors de sa reconstruction. Wuling est devenue la nouvelle station scientifique. Les Tianshi ne renonceront jamais, et cette ville non plus."
+      },
+      {
+        "title": "Thème : la station scientifique de Wuling",
+        "text": "Mes prédécesseurs ont sacrifié leur vie pour protéger leurs découvertes scientifiques. Pourtant, c'est leur disparition qui me semble être la plus grande perte. Si la xiranite est reproductible, ceux qui nous ont quittés ne reviendront jamais. Je reconnais que les occasions de prendre un nouveau départ sont extrêmement rares lorsqu'on se consacre à la science. Et pourtant, certains choisissent toujours de s'engager dans cette voie avec détermination. Mes prédécesseurs en avaient peut-être tout à fait conscience au moment de faire leur choix."
+      },
+      {
+        "title": "Thème : Mi Fu",
+        "text": "Mi Fu est une personne fort intéressante. Au début de la construction de Wuling, je me réfugiais souvent dans les montagnes pour trouver la paix, car nous étions sans cesse confrontés à des difficultés. Ne vous moquez pas, mais, quand je dis « trouver la paix », c'était une excuse. En réalité, j'essuyais discrètement mes larmes. À l'époque, Mi Fu était encore à la palanque de Qingbo et elle se précipitait toujours sur moi les poings levés. Sauf ce soir-là, où elle n'a pas prononcé un mot. Elle s'est juste assise à mes côtés pour me tenir compagnie jusqu'à l'aube."
+      },
+      {
+        "title": "Thème : xiranite",
+        "text": "À l'heure actuelle, je dois faire un choix : continuer mes recherches sur la xiranite ou bien me tourner vers d'autres domaines. Je sais que, même si je me retire, mes collègues du Bureau des Tianshi les poursuivront comme prévu. Le moment est peut-être venu pour moi d'apporter ma contribution là où je suis le plus utile. Mais ce projet est sans doute l'unique héritage de mes aînés ; comment pourrais-je m'en détourner ?"
+      },
+      {
+        "title": "Thème : Choupi Lung",
+        "text": "Vite, installez-vous à côté de moi et aidez-moi à ouvrir ces boîtes mystères. Après le démantèlement de la forge de xiranite à l'institut, le fabricant et moi avons décidé d'incorporer des éléments en xiranite dans le Choupi Lung en édition limitée du 10e anniversaire. On a proposé de m'envoyer un ensemble complet, mais ce n'est pas très excitant. Hé hé. En plus, on a une chance sur douze de gagner, ce qui est plutôt généreux comparé aux incertitudes de la recherche scientifique, où même une vie entière de travail ne garantit pas le succès."
+      },
+      {
+        "title": "Détection de ressource/objet à collecter 1",
+        "text": "Il y a des objets précieux ici. Notre voyage n'aura pas été vain."
+      },
+      {
+        "title": "Détection de ressource/objet à collecter 2",
+        "text": "Quelle terre enchantée... Je me demande quelles merveilles sont enfouies ici."
+      },
+      {
+        "title": "Zone inexplorée détectée",
+        "text": "L'« inconnu »... C'est un concept profondément séduisant..."
+      },
+      {
+        "title": "Découverte d'un ennemi puissant",
+        "text": "Ce n'est pas une rencontre amicale. Agissez avec la plus grande prudence."
+      },
+      {
+        "title": "Extraction 1",
+        "text": "À l'école, j'étais aussi efficace que vous pour collecter du minerai."
+      },
+      {
+        "title": "Extraction 2",
+        "text": "Doucement. Je vais vous aider."
+      },
+      {
+        "title": "Ouverture de caisse",
+        "text": "Ça n'a rien d'un objet ordinaire. Il pourrait avoir plus d'une utilité."
+      },
+      {
+        "title": "Obtention d'aurylène",
+        "text": "Ça vaut la peine de se pencher sur la façon dont on collecte l'aurylène."
+      },
+      {
+        "title": "Élimination de la Gangrène",
+        "text": "Je me demande comment on peut se débarrasser plus efficacement de la Gangrène."
+      },
+      {
+        "title": "Se reposer",
+        "text": "N'hésitez pas à prendre une pause. Ce qui nous attend s'annonce encore plus éprouvant."
+      },
+      {
+        "title": "Utilisation de tactique 1",
+        "text": "Tenez, prenez ce médicament."
+      },
+      {
+        "title": "Utilisation de tactique 2",
+        "text": "Je me sens bien mieux."
+      },
+      {
+        "title": "Avertissement de danger",
+        "text": "Attention !"
+      },
+      {
+        "title": "Blessure",
+        "text": "Ce n'est rien. Ne vous en faites pas pour moi."
+      },
+      {
+        "title": "0 PV",
+        "text": "Toutes mes excuses... Endmin..."
+      },
+      {
+        "title": "Encouragement de l'équipe 1",
+        "text": "Net et précis. Bien joué !"
+      },
+      {
+        "title": "Encouragement de l'équipe 2",
+        "text": "Votre exécution était impeccable !"
+      },
+      {
+        "title": "Réaction face aux encouragements 1",
+        "text": "Je suis flatté."
+      },
+      {
+        "title": "Réaction face aux encouragements 2",
+        "text": "Oh, c'était un travail d'équipe."
+      },
+      {
+        "title": "Début du combat 1",
+        "text": "On ne craint pas les combats difficiles, juste ceux qui sont vains."
+      },
+      {
+        "title": "Début du combat 2",
+        "text": "J'arrive !"
+      },
+      {
+        "title": "Victoire au combat 1",
+        "text": "Pour être honnête, c'était les doigts dans le nez."
+      },
+      {
+        "title": "Victoire au combat 2",
+        "text": "La prochaine fois, la victoire sera à nous, Endmin, vous pouvez me croire."
+      },
+      {
+        "title": "Victoire au combat 3",
+        "text": "Merci à tous pour votre travail."
+      },
+      {
+        "title": "Victoire au combat 4",
+        "text": "Tant qu'on n'abandonne pas, on ne perd jamais vraiment."
+      },
+      {
+        "title": "Défaite au combat",
+        "text": "Tant qu'on tient encore debout, rien n'est vraiment perdu."
+      },
+      {
+        "title": "Coup final 1",
+        "text": "Purgeons cela."
+      },
+      {
+        "title": "Coup final 2",
+        "text": "Abominable."
+      },
+      {
+        "title": "Compétence de combat 1",
+        "text": "Le tonnerre gronde !"
+      },
+      {
+        "title": "Compétence de combat 2",
+        "text": "Les lames se déchaînent !"
+      },
+      {
+        "title": "Compétence de combat 3",
+        "text": "La tempête se lève !"
+      },
+      {
+        "title": "Compétence de combo prête 1",
+        "text": "Quand vous voulez !"
+      },
+      {
+        "title": "Compétence de combo prête 2",
+        "text": "Je suis avec vous !"
+      },
+      {
+        "title": "Utilisation de combo 1",
+        "text": "Renoncez donc !"
+      },
+      {
+        "title": "Utilisation de combo 2",
+        "text": "Il est vain de lutter !"
+      },
+      {
+        "title": "Coup fatal 1",
+        "text": "Quelle médiocrité !"
+      },
+      {
+        "title": "Coup fatal 2",
+        "text": "Incapable !"
+      },
+      {
+        "title": "Ultime 1",
+        "text": "Le tonnerre gronde en silence, puis vient l'averse."
+      },
+      {
+        "title": "Ultime 2",
+        "text": "La tempête éclate, puis donne vie."
+      },
+      {
+        "title": "Ultime 3",
+        "text": "Le soleil brille désormais dans le ciel dégagé."
+      }
+    ]
   },
   "potentials": {
     "potential1": {

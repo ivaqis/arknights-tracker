@@ -362,7 +362,9 @@
     "special_1_3_2": "Cancellare il peccato",
     "weponbox_1_3_2": "Distribuzione Tinta cremisi",
     "special_1_4_1": "Sguardo nostalgico al Nord dall'abisso",
-    "weponbox_1_4_1": "Distribuzione grado militare"
+    "weponbox_1_4_1": "Distribuzione grado militare",
+    "special_1_4_2": "Buongiorno dalla tua stella del mattino",
+    "weponbox_1_4_2": "Distribuzione abbagliante"
   },
   "pages": {
     "home": "Home",
@@ -455,7 +457,8 @@
     "theRootedRealm": "Il Regno radicato",
     "protocolPassBlightedSea": "Pass protocollare: mare contaminato",
     "gazeNorthToTheRiftSignIn": "Accesso Guarda a nord verso la spaccatura",
-    "protocolInvitationTheReturn": "Invito di protocollo: Il ritorno"
+    "protocolInvitationTheReturn": "Invito di protocollo: Il ritorno",
+    "bedazzlingDawnstarSignIn": "Accesso: Stella del mattino abbagliante"
   },
   "mouths": {
     "january": "Gennaio",

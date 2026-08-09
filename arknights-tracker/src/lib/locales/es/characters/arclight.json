@@ -122,7 +122,333 @@
         "name": "Deportes",
         "description": "Deportes: Corredor nocturno\nLas tierras salvajes son el mejor lugar para hacer ejercicio. Es ahí donde puede correr a sus anchas."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Preparación de la operación 1",
+        "text": "¿Tienes todo listo? Las tierras salvajes están llenas de peligro."
+      },
+      {
+        "title": "Preparación de la operación 2",
+        "text": "El viento nunca se detiene. Y yo tampoco."
+      },
+      {
+        "title": "Añadir al equipo 1",
+        "text": "Al fin, un soplo de aire fresco. Casi había olvidado el olor de la tierra."
+      },
+      {
+        "title": "Añadir al equipo 2",
+        "text": "Puedes ir tan rápido como puedas. No te preocupes. Yo siempre sigo el ritmo."
+      },
+      {
+        "title": "Cambiar de arma",
+        "text": "Puedo sentir que respira, y que está hecho para mí."
+      },
+      {
+        "title": "Cambiar de equipamiento",
+        "text": "Qué artesanía... Esta precisión es inusual, incluso entre todos productos de los Aldertones que he conocido."
+      },
+      {
+        "title": "Activación de la matriz de habilidades",
+        "text": "Mi Aldertone me enseñó algo diferente, pero tú apuntas a los mismos objetivos. He sido iluminada."
+      },
+      {
+        "title": "Viendo los registros de combate",
+        "text": "Vivir en las tierras salvajes te enseña cosas... Y esas lecciones ayudan a forjar una hoja afilada."
+      },
+      {
+        "title": "Ascenso de operador 1",
+        "text": "¿Ascenso...? ¿Significa que he ganado tu aprobación? Entonces me... me honra haber sido aprobada."
+      },
+      {
+        "title": "Ascenso de operador 2",
+        "text": "Con el honor viene el deber. Todo esto me recuerda que debo ayudar a más personas."
+      },
+      {
+        "title": "Ascenso de operador 3",
+        "text": "La naturaleza no nos enseña a sobrevivir. Solo deja un rastro para que lo sigamos. Alguna vez hice lo mejor por adaptarme... Ahora... Empiezo a entender cómo funciona."
+      },
+      {
+        "title": "Ascenso de operador 4",
+        "text": "He aprendido mucho viajando contigo. Empiezo a entender por qué los versos hanna me guiaron hasta ti. Usaré bien ese conocimiento."
+      },
+      {
+        "title": "Operador reportándose para el deber",
+        "text": "Soy Ekut. Mi distintivo es Arclight. No soy una tejedora de palabras entrenada, pero les deseo lo mejor, y que fluyan como un río creciente, Endfielders."
+      },
+      {
+        "title": "En espera 1",
+        "text": "El camino por delante ha sido revelado."
+      },
+      {
+        "title": "En espera 2",
+        "text": "Estoy preparada para un desempeño óptimo."
+      },
+      {
+        "title": "Asignando a una instalación",
+        "text": "Estoy en eso. Las Buscadoras de canciones nunca descansamos."
+      },
+      {
+        "title": "Saludo 1",
+        "text": "¿De dónde provienen los vientos hoy, Endmin?"
+      },
+      {
+        "title": "Saludo 2",
+        "text": "¿Regresas de un viaje a la superficie, Endmin? Hueles a tierras salvajes."
+      },
+      {
+        "title": "Charla casual en la Dijiang 1",
+        "text": "Reparar un corcel de hierro es como tratar a una pequeña bestia de quiste. Hay que escuchar con atención antes de aplicar el tratamiento."
+      },
+      {
+        "title": "Charla casual en la Dijiang 2",
+        "text": "Las estrellas aquí son distintas a las que vemos desde las tierras salvajes... Pero ambas perspectivas son igual de fascinantes."
+      },
+      {
+        "title": "Charla casual en la Dijiang 3",
+        "text": "Estoy estudiando esas nubes. Sus bordes afilados anuncian tormenta. Ten cuidado si tu próxima misión te lleva allí."
+      },
+      {
+        "title": "Charla casual en la Dijiang 4",
+        "text": "Qué lindo cabello, como piel de bestia mojada con el rocío del alba. ¿Nunca las has visto? Bueno, es simplemente hermoso."
+      },
+      {
+        "title": "Charla casual en la Dijiang 5",
+        "text": "¿Has visto alguna vez las Migraciones de la pradera? Un ejército de bestias y vagones persiguiendo la lluvia y las nubes. Esas son las cosas que deseo proteger."
+      },
+      {
+        "title": "Charla casual en la Dijiang 6",
+        "text": "A menudo te pierdes contemplando este mundo. Creo que entiendo cómo te sientes. Nuestros corazones siempre anhelan los lugares que amamos, por lejanos que estén."
+      },
+      {
+        "title": "Ofreciendo regalos",
+        "text": "Te traje algo. Un regalo de las tierras salvajes. Espero que te guste."
+      },
+      {
+        "title": "Aceptando regalos",
+        "text": "¿Para mí? Los regalos son importantes en las tierras salvajes... Este lo atesoraré."
+      },
+      {
+        "title": "Diálogo de confianza 1",
+        "text": "Recomiendo aprender lo básico para sobrevivir en la naturaleza, Endmin. Fabricar trampas artesanales para orejilargas es un buen comienzo. Puedo enseñarte eso."
+      },
+      {
+        "title": "Diálogo de confianza 2",
+        "text": "La vida en las tierras salvajes es difícil, pero también hermosa. Como el cielo despejado tras un monzón, como una bestia voladora naciendo bajo la luna."
+      },
+      {
+        "title": "Diálogo de confianza 3",
+        "text": "No hay nada misterioso en que los artefactos antiguos funcionen mejor cuando se improvisa. Yunta dos bestias de carga desconocidas al mismo carro y dales tiempo. A la larga se convertirán en un buen equipo."
+      },
+      {
+        "title": "Diálogo de confianza 4",
+        "text": "Comencé mi andar buscando respuestas. Las tierras salvajes han perdido su equilibrio, y debo hacer algo al respecto. Escuché a los lagos que susurran y a los bosques que murmuran. Y ahora, deseo escuchar tu voz."
+      },
+      {
+        "title": "Diálogo de confianza 5",
+        "text": "Tejeré estos relatos en la hanna de nuestro viaje. Eso tomará tiempo, pues muchas cosas son dignas de una canción. Cuando la hanna esté completa, tú serás la primera persona en oírla."
+      },
+      {
+        "title": "Charla 1",
+        "text": "Quienes desean vivir se harán escuchar. Y las Buscadoras de canciones que deambulan siempre escucharán. Tal es el propósito del Circuito Hannabit."
+      },
+      {
+        "title": "Charla 2",
+        "text": "Ser amigo de las tribus habitantes de Tierras salvajes es simple. Nos enfocamos en lo que importa: el clima, la comida y los peligros. Tan solo esto ya ocupa una buena parte de nuestro tiempo."
+      },
+      {
+        "title": "Charla 3",
+        "text": "Toda Buscadora de canciones del Circuito Hannabit conoce los hannas de memoria. No es difícil. Los versos abarcan cada aspecto de nuestra vida. Y del mismo modo, nosotros estamos tejidos dentro de los versos."
+      },
+      {
+        "title": "Charla 4",
+        "text": "Mi Aldertone me habló sobre Terra y las ciudades que se mueven para evitar las Catástrofes. Parece que hemos heredado nuestras prácticas ancestrales, solo que de otra forma."
+      },
+      {
+        "title": "Charla 5",
+        "text": "Puedes intercambiar cosas usadas en ciertos bazares de las tierras salvajes, pero hay que tener paciencia para encontrar un buen trato. Modifiqué un viejo dispositivo Kjersch para usarlo como comunicador. Fabrican cosas que funcionan bien en ambientes extremos."
+      },
+      {
+        "title": "Tema: Ciudades",
+        "text": "Talos-II es más grande de lo que pensaba. Antes creía que toda ciudad era solo una combinación distinta de acero, caminos y luces. Pero cuando las visité, comprendí que cada una tiene su propio pulso y energía. La diferencia es más clara que entre dos praderas de pastos distintos."
+      },
+      {
+        "title": "Tema: El Endministrator",
+        "text": "He viajado mucho, y hasta las tribus más lejanas cantan historias sobre ti. Aunque difieren mucho entre sí, hay algo que siempre se repite: la esperanza siempre va unida a tu nombre."
+      },
+      {
+        "title": "Tema: Canciones Hanna",
+        "text": "Un nómada moribundo cantó nuestra primera hanna y solo tenía tres versos. Esos versos dieron nombre al Circuito Hannabit. Y desde el primer Aldertone, la hanna guió a las Buscadoras de canciones en su andar, hasta que ellos también se volvieron parte de la canción."
+      },
+      {
+        "title": "Tema: Aldertones",
+        "text": "Los Aldertones rara vez hablan directamente. Orisha decía que en la hanna está todo el conocimiento que necesitamos. Me enseñó con sus actos. Debemos ayudarnos mutuamente para sobrevivir en este mundo."
+      },
+      {
+        "title": "Tema: Su tribu",
+        "text": "Crecí en una pequeña tribu con no más de cien almas. Era todo lo que conocía antes de comenzar mi viaje. Me enseñó a ordeñar pequeñas bestias de quiste, a montar mi corcel de hierro y a sobrevivir en las tierras salvajes. Nunca dejé ese lugar. Simplemente lo llevé conmigo."
+      },
+      {
+        "title": "Recurso/Coleccionable detectado 1",
+        "text": "Si ayuda a la supervivencia, tráelo."
+      },
+      {
+        "title": "Recurso/Coleccionable detectado 2",
+        "text": "Mi Aldertone estará interesado en esto."
+      },
+      {
+        "title": "Zona inexplorada detectada",
+        "text": "No te quedes atrás. Necesitamos verlo más de cerca."
+      },
+      {
+        "title": "Enemigo poderoso descubierto",
+        "text": "Siento peligro. Este no caerá fácilmente."
+      },
+      {
+        "title": "Minería 1",
+        "text": "Las bondades de la tierra."
+      },
+      {
+        "title": "Minería 2",
+        "text": "Déjamelo a mí. Soy bueno con el trabajo físico."
+      },
+      {
+        "title": "Abriendo una caja",
+        "text": "Una rareza en las tierras salvajes. Le daremos buen uso."
+      },
+      {
+        "title": "Adquiriendo Aurileno",
+        "text": "Solemos embotellarlas para tener luz."
+      },
+      {
+        "title": "Eliminar la Plaga",
+        "text": "Dejemos que la Naturaleza siga su curso."
+      },
+      {
+        "title": "Descanso",
+        "text": "Esto me recuerda a las fogatas en las tierras salvajes. Ambas comparten el mismo calor."
+      },
+      {
+        "title": "Uso táctico 1",
+        "text": "Controla tu respiración."
+      },
+      {
+        "title": "Uso táctico 2",
+        "text": "Regresar es mi fortaleza."
+      },
+      {
+        "title": "Advertencia de peligro",
+        "text": "No te detengas. Sigue avanzando."
+      },
+      {
+        "title": "Herida",
+        "text": "Sigo en la pelea, solo un poco más lenta."
+      },
+      {
+        "title": "0 PV",
+        "text": "Lo siento... Ojalá pudiera ayudarte más..."
+      },
+      {
+        "title": "Ánimo del equipo 1",
+        "text": "¡Respondiste como el relámpago!"
+      },
+      {
+        "title": "Ánimo del equipo 2",
+        "text": "Como viento y trueno, les dimos una tormenta."
+      },
+      {
+        "title": "Respuesta al ánimo 1",
+        "text": "Eso es lo que tenía planeado hacer."
+      },
+      {
+        "title": "Respuesta al ánimo 2",
+        "text": "Solo soy parte del equipo."
+      },
+      {
+        "title": "Comienza el combate 1",
+        "text": "Estoy en la onda."
+      },
+      {
+        "title": "Comienza el combate 2",
+        "text": "Te dejo ese lado."
+      },
+      {
+        "title": "Victoria en el combate 1",
+        "text": "A la serenidad volverán."
+      },
+      {
+        "title": "Victoria en el combate 2",
+        "text": "Rezo que la tierra los acepte a todos."
+      },
+      {
+        "title": "Victoria en el combate 3",
+        "text": "Así lo quiere la Naturaleza."
+      },
+      {
+        "title": "Victoria en el combate 4",
+        "text": "Todo ser de las tierras salvajes debe soportar dificultades para crecer."
+      },
+      {
+        "title": "Derrota en el combate",
+        "text": "Incluso la manada más experimentada de bestias colmilludas puede fallar al cazar su presa. Al menos aprendimos algo de esta cacería."
+      },
+      {
+        "title": "Golpe final 1",
+        "text": "¡Romper!"
+      },
+      {
+        "title": "Golpe final 2",
+        "text": "¡Quebrar!"
+      },
+      {
+        "title": "Habilidad de batalla 1",
+        "text": "¡Vientos furiosos!"
+      },
+      {
+        "title": "Habilidad de batalla 2",
+        "text": "¡Trueno retumbante!"
+      },
+      {
+        "title": "Habilidad de batalla 3",
+        "text": "¡Relámpago de arco!"
+      },
+      {
+        "title": "Habilidad de combo preparada 1",
+        "text": "¡Perfecto es este viento!"
+      },
+      {
+        "title": "Habilidad de combo preparada 2",
+        "text": "Barreré lo que queda."
+      },
+      {
+        "title": "Lanzando combo 1",
+        "text": "Tal es el camino óptimo."
+      },
+      {
+        "title": "Lanzando combo 2",
+        "text": "¡Veo una oportunidad!"
+      },
+      {
+        "title": "Remate 1",
+        "text": "Se acabó."
+      },
+      {
+        "title": "Remate 2",
+        "text": "Esta es mi oportunidad."
+      },
+      {
+        "title": "Habilidad máxima 1",
+        "text": "No escaparás de esto."
+      },
+      {
+        "title": "Habilidad máxima 2",
+        "text": "De las tormentas vino."
+      },
+      {
+        "title": "Habilidad máxima 3",
+        "text": "Como un relámpago, golpeó."
+      }
+    ]
   },
   "potentials": {
     "potential1": {

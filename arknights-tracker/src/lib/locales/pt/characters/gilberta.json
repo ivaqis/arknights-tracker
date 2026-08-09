@@ -120,7 +120,333 @@
         "name": "Cultura",
         "description": "Cultura: Nota de Rodapé Romântica\nQuem marcou a parte mais doce do romance? E quem rabiscou algo ao lado do desenho do final feliz?"
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Prep Operação 1",
+        "text": "Olá, Endmin. Ah, o tempo está tão adorável hoje."
+      },
+      {
+        "title": "Prep Operação 2",
+        "text": "Tudo pronto para uma viagem realmente longa?"
+      },
+      {
+        "title": "Adicionando à equipe 1",
+        "text": "Humm, que cores Talos usará para brilhar hoje?"
+      },
+      {
+        "title": "Adicionando à equipe 2",
+        "text": "Indo em direção ao nosso próximo destino?"
+      },
+      {
+        "title": "Trocando de arma",
+        "text": "Não importa qual arma nova eu ​​usarei. Vou só adicionar uma pitada de Artes... E olha só! Ela está flutuando no ar!"
+      },
+      {
+        "title": "Trocando de equipamento",
+        "text": "Humm, elas me vestem tão bem! Vou usá-las na próxima viagem. E aí, Endmin, tem alguma ideia de combinação e estilo?"
+      },
+      {
+        "title": "Ativação da Matriz de Capacidade",
+        "text": "Tenho algumas dicas para ter uma visão melhor da estrada. Amplie seus horizontes, aprenda com as experiências... e adicione uma pitada de imaginação!"
+      },
+      {
+        "title": "Assistindo a Registros de Combate",
+        "text": "Lembre-se de como se sentiu... Encontre a intensidade certa... E pronto!"
+      },
+      {
+        "title": "Promoção do Operador 1",
+        "text": "A promoção significa que... posso ir para lugares ainda mais distantes? Heheh. Já estou com tudo arrumado e pronto. Quando partimos?"
+      },
+      {
+        "title": "Promoção do Operador 2",
+        "text": "Eu quero ser o apoio de Endmin... Quer dizer, eu quero ser o apoio mais confiável de todos. Mas tem horas que fico meio preocupada em ser... qualificada o suficiente."
+      },
+      {
+        "title": "Promoção do Operador 3",
+        "text": "{F}Será que vou ganhar algo mais especial na próxima promoção...? O que eu espero? Hmm... que tal um dia de diversão juntas, Endmin?{M}Será que vou ganhar algo mais especial na próxima promoção...? O que eu espero? Hmm... que tal um dia de diversão juntos, Endmin?"
+      },
+      {
+        "title": "Promoção do Operador 4",
+        "text": "Cada vez que olhava para trás, para todas aquelas longas jornadas que completei, todas aquelas pequenas emoções simplesmente brotam dentro de mim. Esse foi o momento exato em que eu soube que... estou simplesmente apaixonada pelo meu trabalho."
+      },
+      {
+        "title": "Operador se apresentando para o trabalho",
+        "text": "Olá! Ah, você tem o aroma rosado das belas lembranças... como uma carta incompleta destinada a um lugar especial. Imagino onde isso possa ser."
+      },
+      {
+        "title": "Em espera 1",
+        "text": "Olha só! A Senhorita Mensageira Voadora tem uma carta especial para você!"
+      },
+      {
+        "title": "Em espera 2",
+        "text": "Olá! Vamos dar uma volta? As cores do céu estão absolutamente fabulosas hoje!"
+      },
+      {
+        "title": "Atribuindo a Instalação",
+        "text": "Não se preocupe, deixe comigo!"
+      },
+      {
+        "title": "Saudação 1",
+        "text": "Endmin! Que coincidência! Que tal darmos uma volta pela ponte?"
+      },
+      {
+        "title": "Saudação 2",
+        "text": "{F}Ocupada, Endmin? Não esqueça de fazer uma pausa, ok?{M}Ocupado, Endmin? Não esqueça de fazer uma pausa, ok?"
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 1",
+        "text": "Adoro colecionar batons de todos os tipos de cores e sabores. Não consigo deixar de me perguntar se eles acrescentam tons e matizes brilhantes às nossas palavras?"
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 2",
+        "text": "Talos adiciona um espectro brilhante de cores ao céu de Talos-II. Aqueles espetáculos inesperados com flashes de radiância... Não são simplesmente românticos, Endmin?"
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 3",
+        "text": "Olha o que eu trouxe, Endmin! Mini luminárias com todos os tipos de cores, MAIS um pequeno queimador de incenso da Witching Hour. Estou pensando se poderíamos... usá-las para decorar sua cabine, Endmin? Assim que as luzes se apagarem, seu aposento ficará tão brilhante quanto a noite estrelada! Vamos lá, o que você acha?"
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 4",
+        "text": "Hmm... Personagens de romances vivem escondendo seus sentimentos. Por quê? Havia tantos convites que eles não entregaram, tantas cartas que eles não enviaram e tantas coisas que eles não disseram... É tão obviamente simples, mas eles simplesmente não conseguiram encontrar coragem para expressar seus sentimentos... Agora eu poderia facilmente convidar você para uma aventura ou dar presentes divertidos... Onde está a diferença?"
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 5",
+        "text": "A Senhorita Akekuri me deu um talismã especial. Ela me disse que meus desejos eventualmente se realizarão se eu carregá-lo comigo. Agora, eu desejo que... todos que me contratarem para entregar cartas tenham seus desejos realizados! Heheh! Espero que este desejo não pareça muito ganancioso!"
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 6",
+        "text": "Sonho sempre com os lugares que visitei. E, em meio às minhas paisagens oníricas turvas, há sempre uma figura parada em silêncio, como se esperasse por uma pessoa... ou uma carta. Ultimamente, tenho conseguido ter uma visão mais clara dessa figura e é alguém com quem... estou bastante familiarizada."
+      },
+      {
+        "title": "Oferta de presentes",
+        "text": "Surpresa, Endmin! Escolhi algo superespecial, só para você. Vamos lá, adivinha o que é!"
+      },
+      {
+        "title": "Aceitando presentes",
+        "text": "É para mim? Ah, muito obrigada! Vai ficar no lugar mais visível da minha cabine!"
+      },
+      {
+        "title": "Diálogo de Confiança 1",
+        "text": "{F}A primeira carta que entreguei foi uma recomendação que a Cirurgiã Warfarin escreveu para mim. Eu estava um pouco nervosa quando embarquei na Dijiang. Warfarin me disse para: \"Esperar pela Endministrator\". E eu ficava pensando: \"Como é essa Endmin?\". Mas, ao vê-la pessoalmente depois do seu despertar acidental, todas as minhas preocupações simplesmente desapareceram. Tenho que admitir, ainda estou um pouco nervosa...{M}A primeira carta que entreguei foi uma recomendação que a Cirurgiã Warfarin escreveu para mim. Eu estava um pouco nervosa quando embarquei na Dijiang. Warfarin me disse para: \"Esperar pelo Endministrator\". E eu ficava pensando: \"Como é esse Endmin?\". Mas, ao vê-lo pessoalmente depois do seu despertar acidental, todas as minhas preocupações simplesmente desapareceram. Tenho que admitir, ainda estou um pouco nervosa..."
+      },
+      {
+        "title": "Diálogo de Confiança 2",
+        "text": "Adoro voos solo depois do pôr do sol. O céu noturno me permite contemplar as estrelas cintilantes. Talvez elas tenham muitas histórias próprias. Talvez, naqueles exatos momentos, houvesse outros que estivessem pensando a mesma coisa... e olhando para o mesmo céu noturno comigo..."
+      },
+      {
+        "title": "Diálogo de Confiança 3",
+        "text": "A solidão é a companheira dos mensageiros, mas eu nunca consegui me acostumar a ela. Sempre que chego a um lugar distante, pego minha bússola para me orientar em direção à Rhodes Island. A Cirurgiã Warfarin está lá, junto com memórias que nunca se apagarão. Agora, estou viajando por um caminho onde novos amigos e encontros me aguardam. Só de pensar nisso, sinto uma sensação de aconchego e esperança na jornada que tenho pela frente. É isso mesmo. Quero ser uma mensageira que nunca se sente sozinha."
+      },
+      {
+        "title": "Diálogo de Confiança 4",
+        "text": "Eu não sei... Ver uma estrela solitária me daria uma sensação indescritível de perda e arrependimento... Oh, brilha, brilha estrelinha, como eu me pergunto de longe... Você poderia estar, do outro lado desse céu tão vasto, ainda esperando sua estrela brilhar ao seu lado?"
+      },
+      {
+        "title": "Diálogo de Confiança 5",
+        "text": "Assim que saí da Floresta, notei a carta em branco ao meu lado. Parecia um símbolo da minha confusão... E eu sempre me perguntei por que eu era a única que a tinha. Deveria escrever algo nela? E a quem deveria entregar esta carta? Viajei muito, mas não consegui encontrar minhas respostas. Mas agora... acredito que devo anotar tudo o que senti e fantasiei... e entregá-la à pessoa que é mais importante e especial para mim."
+      },
+      {
+        "title": "Chat 1",
+        "text": "Uma viagem da qual eu mais me lembro? Humm... Endmin, você já ouviu falar de Alloycarrot? Os cautus que moram lá comem cenoura. O. Tempo. Todo! E eles têm todo tipo de receita com cenoura! Visitei a cidade duas vezes para entregar remédios à CGCT que administra as fazendas de cenoura. Se eu puder visitar o lugar novamente, espero poder ver o Grande Poço subterrâneo... Ah! E com certeza vou reservar um lugar na Pousada do Repolho... Não que eu odeie cenouras, só quero um pouco mais de variedade..."
+      },
+      {
+        "title": "Chat 2",
+        "text": "A ausência de peso é uma sensação constante que tenho. Sempre me sinto como um balão deslizando suavemente sobre a terra pesada. Mesmo assim, faço tudo o que posso para fazê-lo flutuar comigo. Parece fantasia, não é? Mas mesmo voando, eu projetava uma longa sombra sobre a terra — como se algo me prendesse à terra. Assim como estas letras me ligam... a você."
+      },
+      {
+        "title": "Chat 3",
+        "text": "E este livro? Bem, é uma antologia de contos de todos os tipos de mensageiros. Um deles navegou por uma catástrofe para salvar pessoas... apenas para ser chamado de um maldito arauto de desastres. Outro queria somente uma entrega pacífica, apenas para derrubar uma nação inteira por uma série de eventos inesperados. E há este mensageiro jovem, mas desajeitado, que perdeu as entregas no primeiro dia de trabalho... Heheheh. Eu amo cada conto deste livro."
+      },
+      {
+        "title": "Chat 4",
+        "text": "Ouvi muita gente falando sobre Terra em Nova Wrankwood. Alguns elogiaram sua cordialidade. Outros amaldiçoaram sua falta de misericórdia. Alguns odiaram sua devastação, e houve aqueles que sentiram falta de sua beleza... Enquanto atores e escritores dedicam vidas inteiras a essa parte da nossa história, os filósofos acreditam que devemos seguir em frente e adotar uma nova maneira de pensar... Eu, pessoalmente, trato Terra como um nome familiar, porém distante... Um mundo de belas paisagens e rostos familiares... E você, Endmin?"
+      },
+      {
+        "title": "Chat 5",
+        "text": "Nenhum mensageiro conseguiria adivinhar o conteúdo de uma carta. Mas quando vejo adesivos e decorações elegantes no envelope... imagino histórias aconchegantes e calorosas esperando para acontecer. Um envelope amassado pela chuva, por outro lado, me traz a sensação de uma jornada difícil ou de uma separação dolorosa... Os remetentes das cartas raramente compartilham seus sentimentos com os mensageiros. Eles nunca saberiam como alguém que nunca conheceram realmente compartilha sua felicidade e tristeza."
+      },
+      {
+        "title": "Tópico: Warfarin",
+        "text": "Cirurgiã Warfarin? Ela estava ótima e parecia ser a mesma de sempre. Mas houve uma vez em que Warfarin se lembrou errado do meu aniversário... e ela pareceu muito culpada enquanto se desculpava comigo... Não foi grande coisa. Aí ela me chamou pelo nome errado, em pânico... Nunca a vi assim. Como poderia descrever...? Humm. Ela parecia realmente confusa... e perdida. E mesmo depois que eu fui embora, ela ficou sozinha, pensativa, perto da mesa de jantar por muito, muito tempo..."
+      },
+      {
+        "title": "Tópico: Espadeiro misterioso",
+        "text": "Conheci uma senhora misteriosa na Rhodes Island há algum tempo. Ela empunhava uma lâmina de aparência única e estava parada à beira do lago tranquilo. De repente, sua lâmina brilhou. Deixou apenas uma leve ondulação nas águas do lago, mas partiu uma nuvem inteira em duas... Ela me entregou esta carta e esperava que eu pudesse entregá-la para Endministrator. E quando a Operadora Chen Qianyu finalmente se tornar independente, você poderá passá-la para ela..."
+      },
+      {
+        "title": "Tópico: Avywenna",
+        "text": "Avywenna está sempre fazendo entregas em lugares perigosos... Ela pode estar sorrindo o tempo todo, mas seus olhos escondem alguns segredos pesados... Segredos que ela não podia compartilhar com ninguém... Eu vi muitos outros mensageiros que compartilham o mesmo olhar... E sei o que isso significa..."
+      },
+      {
+        "title": "Tópico: As terras selvagens perigosas",
+        "text": "Talos-II está repleto de todos os tipos de perigos desconhecidos... Li o relatório de Ardelia. Os perigos de Talos-II são muito mais imprevisíveis do que os da distante Terra. Como os mensageiros precisam navegar por áreas com eventos frequentes de Praga, muitas vezes carregamos equipamentos para primeiros socorros ou evacuação. Como posso voar, costumo carregar conjuntos extras de equipamentos de emergência e deixá-los em áreas de descanso nas terras selvagens. Espero que isso possa ajudar as pessoas que se deparam com problemas."
+      },
+      {
+        "title": "Tópico: Eu",
+        "text": "Quando eu estava na Rhodes Island, pensava que a Cirurgiã Warfarin me daria algumas missões. Mas ela me disse que a Rhodes Island não estava em condições de se tornar conhecida do público. No entanto, como sou uma mensageira, ela me disse que seria melhor viajar a céu aberto. E foi exatamente isso que fiz — passei dois anos vagando por Talos-II, conhecendo este mundo antes de finalmente chegar aqui."
+      },
+      {
+        "title": "Recurso/Colecionável detectado 1",
+        "text": "Algo chama nossa atenção ali."
+      },
+      {
+        "title": "Recurso/Colecionável detectado 2",
+        "text": "Olhe ali! Talvez tenhamos uma surpresa!"
+      },
+      {
+        "title": "Área não explorada detectada",
+        "text": "De acordo com os padrões dos mensageiros: seja extremamente cauteloso ao entrar em territórios desconhecidos!"
+      },
+      {
+        "title": "Inimigo poderoso descoberto",
+        "text": "Tenha muito cuidado! Esse inimigo parece extremamente perigoso."
+      },
+      {
+        "title": "Mineração 1",
+        "text": "Vamos empacotar esses minerais!"
+      },
+      {
+        "title": "Mineração 2",
+        "text": "Estou aqui para ajudar. Heehee."
+      },
+      {
+        "title": "Abrindo um caixote",
+        "text": "Uau! É exatamente disso que precisamos!"
+      },
+      {
+        "title": "Adquirindo Aurileno",
+        "text": "Heheh, peguei antes que voasse para longe."
+      },
+      {
+        "title": "Eliminando a Praga",
+        "text": "Acabamos de abrir caminho para entregas futuras!"
+      },
+      {
+        "title": "Descansar",
+        "text": "O descanso adequado nos prepara para uma jornada mais longa."
+      },
+      {
+        "title": "Uso Tático 1",
+        "text": "Experimente isso. Deve ajudar!"
+      },
+      {
+        "title": "Uso Tático 2",
+        "text": "Ufa... Já me sinto melhor."
+      },
+      {
+        "title": "Aviso de Perigo",
+        "text": "Cuidado! Não se machuque!"
+      },
+      {
+        "title": "Ferida",
+        "text": "Meu corpo... está tão pesado..."
+      },
+      {
+        "title": "0 PV",
+        "text": "Eu quero voar... uma última vez..."
+      },
+      {
+        "title": "Encorajamento da Equipe 1",
+        "text": "Uau! Você consegue mesmo fazer isso?!"
+      },
+      {
+        "title": "Encorajamento da Equipe 2",
+        "text": "Incrível! Podemos fazer de novo?"
+      },
+      {
+        "title": "Resposta a Encorajamento 1",
+        "text": "Heheh. Você é muito gentil."
+      },
+      {
+        "title": "Resposta a Encorajamento 2",
+        "text": "Vamos continuar e terminar isso!"
+      },
+      {
+        "title": "Início do Combate 1",
+        "text": "Vamos acabar facilmente com essa luta!"
+      },
+      {
+        "title": "Início do Combate 2",
+        "text": "E eu esperava que você dissesse isso."
+      },
+      {
+        "title": "Vitória em Combate 1",
+        "text": "Heheh. Eu consegui, né?"
+      },
+      {
+        "title": "Vitória em Combate 2",
+        "text": "A melhor coisa que fiz hoje!"
+      },
+      {
+        "title": "Vitória em Combate 3",
+        "text": "Sim! Agora podemos continuar nossa jornada."
+      },
+      {
+        "title": "Vitória em Combate 4",
+        "text": "Conseguimos chegar ao fim... E as dificuldades valeram a pena."
+      },
+      {
+        "title": "Derrota em Combate",
+        "text": "O caminho pode ser cheio de dificuldades, mas começaremos nossa jornada novamente e garantiremos uma entrega bem-sucedida."
+      },
+      {
+        "title": "Golpe Final 1",
+        "text": "Saia da frente!"
+      },
+      {
+        "title": "Golpe Final 2",
+        "text": "Vá!"
+      },
+      {
+        "title": "Habilidade de Batalha 1",
+        "text": "Fiquem juntos, pessoal!"
+      },
+      {
+        "title": "Habilidade de Batalha 2",
+        "text": "Você não pode fugir da gravidade!"
+      },
+      {
+        "title": "Habilidade de Batalha 3",
+        "text": "É melhor prestar atenção onde pisa!"
+      },
+      {
+        "title": "Combo de Habilidades Pronto 1",
+        "text": "Campo de gravidade pronto!"
+      },
+      {
+        "title": "Combo de Habilidades Pronto 2",
+        "text": "Quem quer flutuar?"
+      },
+      {
+        "title": "Conjuração de Combo 1",
+        "text": "Agora, voe!"
+      },
+      {
+        "title": "Conjuração de Combo 2",
+        "text": "Divirta-se flutuando!"
+      },
+      {
+        "title": "Finalizador 1",
+        "text": "Surpresa!"
+      },
+      {
+        "title": "Finalizador 2",
+        "text": "Que tal isso?"
+      },
+      {
+        "title": "Habilidade Suprema 1",
+        "text": "Vamos deixar o mundo de pernas para o ar!"
+      },
+      {
+        "title": "Habilidade Suprema 2",
+        "text": "O poder da terra!"
+      },
+      {
+        "title": "Habilidade Suprema 3",
+        "text": "Aconchegue-se com a gravidade!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

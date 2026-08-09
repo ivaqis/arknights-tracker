@@ -122,7 +122,329 @@
         "name": "Sáng Tạo",
         "description": "Sáng Tạo: \"Món Quà\" Thủ Công\nSự im lặng của Fluorite thường là dấu hiệu báo trước một trò chơi khăm sắp xảy ra. Trớ trêu thay… Fluorite lại rất hay im lặng."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Chuẩn Bị Tác Chiến 1",
+        "text": "Ồ, ta sẵn sàng chơi rồi sao?"
+      },
+      {
+        "title": "Chuẩn Bị Tác Chiến 2",
+        "text": "Khoan đã, nhỡ ai đó chưa chuẩn bị thì sao?"
+      },
+      {
+        "title": "Đang thêm vào đội 1",
+        "text": "Bình yên và nụ cười, thưa quý ông quý bà."
+      },
+      {
+        "title": "Đang thêm vào đội 2",
+        "text": "Chà, xem ra tôi khá nổi tiếng nhỉ."
+      },
+      {
+        "title": "Đang đổi vũ khí",
+        "text": "Không tệ chút nào... Ngài có phiền nếu tôi chỉnh lại một chút không?"
+      },
+      {
+        "title": "Đang đổi trang bị",
+        "text": "Trang bị càng hào nhoáng, phiền toái càng nhiều, nhỉ?"
+      },
+      {
+        "title": "Kích hoạt Ma Trận Năng Lực",
+        "text": "Không ai muốn đấu tập với tôi à? Tiếc thật đấy."
+      },
+      {
+        "title": "Xem Hồ Sơ Chiến Đấu",
+        "text": "Nhiều bản ghi chiến đấu thế này... Endfield quả thật xứng đáng với chữ \"Tập Đoàn\"."
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 1",
+        "text": "Xem ra công việc thực sự mới chỉ bắt đầu thôi."
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 2",
+        "text": "Tôi rất vinh dự... nhưng chắc điều đó cũng đồng nghĩa với việc phải làm nhiệm vụ thực địa lâu hơn, nhỉ?"
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 3",
+        "text": "Lần tới hãy tặng tôi huy chương nhé. Tôi chả có cái nào cả."
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 4",
+        "text": "Nếu Viền Vành Đai là một phần của \"thế giới tốt đẹp hơn\" mà ta đang cố gắng xây dựng, thì đúng là vẫn còn rất nhiều việc cần làm nhỉ?"
+      },
+      {
+        "title": "Cán Viên đang báo cáo nhiệm vụ",
+        "text": "Kẻ Đánh Lén Đội Z7, Fluorite. Ngài có gì muốn nói không? Không? Vậy hay là hôm nay dừng ở đây nhé?"
+      },
+      {
+        "title": "Chờ Lệnh 1",
+        "text": "Lần này ai sẽ là người gặp xui nhỉ?"
+      },
+      {
+        "title": "Chờ Lệnh 2",
+        "text": "Đánh lạc hướng? Vô hiệu hóa? Hay... xóa sổ luôn?"
+      },
+      {
+        "title": "Phân Công Vào Công Trình",
+        "text": "Cứ yên tâm, tôi sẽ hoàn thành nhiệm vụ chuẩn không cần chỉnh."
+      },
+      {
+        "title": "Lời Chào 1",
+        "text": "Ngày bận rộn quá hả, đại anh hùng?"
+      },
+      {
+        "title": "Lời Chào 2",
+        "text": "Lần gần nhất ngài nghỉ ngơi là bao giờ vậy?"
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 1",
+        "text": "Ồ... cái này mới đây. Không có nhiệm vụ nào cho tôi hôm nay sao?"
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 2",
+        "text": "Có phải Akekuri vừa vào phòng huấn luyện, cười toe toét... cùng một thanh kiếm? Có lẽ tôi nên tránh tầm mắt của cô ấy thêm một chút..."
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 3",
+        "text": "Lần đầu cầm súng, tôi thậm chí còn không biết mở buồng đạn như thế nào. Nhưng khi cả đám địch lao về phía mình thì cũng chẳng còn lựa chọn nào khác... Thật lòng thì huấn luyện ở đây chỉ như gió thoảng so với hỗn loạn nơi tiền tuyến."
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 4",
+        "text": "Nếu không nhờ may mắn mà tôi và mấy người kia được xếp chung đội, chắc chúng tôi đã gây họa to rồi. Nhưng đừng lo, tôi sẽ trông chừng họ."
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 5",
+        "text": "Hồi nhỏ, chúng tôi hay nằm dài trên lưng những con Quái Thú Chở Hàng, tắm nắng suốt ngày để quên đói... Tôi không phàn nàn về đặc quyền nơi đây; chỉ thấy hơi tiếc nếu không tranh thủ đón chút ánh nắng ở độ cao thế này."
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 6",
+        "text": "Ngài giống Giám sát viên Perlica, khó mà ghét được. Những kẻ đầu sỏ ở vùng tiền tuyến thì cứ bám mãi vào địa vị và sĩ diện, nhưng mà, người ta sẽ đi theo một lãnh đạo thực thụ, dù có hay không có mấy cái danh."
+      },
+      {
+        "title": "Tặng Quà",
+        "text": "Đây, một món đồ nhỏ tặng ngài. Yên tâm, không có gì bất ngờ bật ra đâu."
+      },
+      {
+        "title": "Nhận quà",
+        "text": "À, có một \"đồng nghiệp\" của tôi từng nhận quà rồi phải gánh hết trách nhiệm... Sao ngài lắc đầu mạnh thế?"
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 1",
+        "text": "Kỹ năng đàm phán à? Thôi nào, đừng tâng bốc bọn du côn đường phố đó. Chúng kêu to lắm, nhưng chỉ cần ông chủ chúng lắc cái bát là chúng lại chạy về. Chúng chỉ là công cụ thôi, không có bản lĩnh, chẳng có kế hoạch. Chúng gây rối được đấy, nhưng cái mục ruỗng thực sự ư? Là mấy kẻ ngồi chễm chệ trên quyền lực và tài nguyên, bóp nghẹt những người còn lại."
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 2",
+        "text": "Tôi cũng từng gặp rắc rối trước khi gia nhập. Akekuri đã kéo tôi ra khỏi đó. Đội hình của cô ấy lúc ấy đang cứu thị trấn, đuổi đám Landbreaker. Còn dân địa phương? Họ thì chỉ chăm chăm nhìn vào nguồn tiếp tế của Endfield như lũ kền kền... Vậy ngài nói thử xem, ngài sẽ làm gì?"
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 3",
+        "text": "Tôi có sáu ông chú, tám bà dì, và hai mươi hai anh em... Đúng vậy, bọn tôi giống hệt lũ Cautus. Không phải ai cũng là ruột thịt, vài người cùng chạy loạn với tôi và mẹ. Có người đến sau, có người biến mất chẳng ai hay. Nhưng chỉ cần còn sát cánh dù chỉ trong khoảnh khắc ngắn ngủi. Thế cũng đã là gia đình rồi."
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 4",
+        "text": "Có người quên rằng mình có bốn chi, không phải chỉ hai chân để lê lết. Khi cúi đầu đủ lâu, người ta sẽ không còn giống con người nữa. Vùng tiền tuyến đầy rẫy những kẻ như thế. Nhưng nếu ngài đủ can đảm để ngẩng đầu lên thì sao? Vậy có lẽ ngài có cơ hội để giành lấy điều gì đó tốt đẹp hơn."
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 5",
+        "text": "Đây, hãy cầm lấy bức thư này. Hãy đốt nó ở hoang địa nếu tôi không trở về. Ngài có thể đọc nếu muốn, chỉ là vài điều nhỏ nhặt thôi. Người mà bức thư này dành cho đã không còn nữa. Xem ra tôi phải tự mình tìm ra câu trả lời mà họ từng kiếm tìm. Tôi chắc rằng vị đại anh hùng vĩ đại của Talos-II sẽ giúp tôi, phải không?"
+      },
+      {
+        "title": "Trò Chuyện 1",
+        "text": "Đây là một trong những quả bom dắt lưng của tôi. Chỉ cần chỉnh lớp keo dính một chút, nó sẽ nổ chính xác tại điểm cần thiết. À, đừng lo về sức công phá của nó. Thực ra, nó hiệu quả trong việc cản bước mục tiêu hơn là phá hủy mọi thứ."
+      },
+      {
+        "title": "Trò Chuyện 2",
+        "text": "Sau khi xem hồ sơ của tôi, Giám sát viên Perlica đặt cho tôi mật danh \"Fluorite\". Độc tính tự nhiên, nhưng lại hoàn hảo để tạo ra vô số sản phẩm công nghiệp. Tôi hiểu ý cô ấy sau khi lướt qua cuốn sách. Nhưng thật lòng mà nói? Đó là một lựa chọn khá là tinh quái."
+      },
+      {
+        "title": "Trò Chuyện 3",
+        "text": "Khi còn nhỏ, tôi và mẹ luôn phải chạy từ nơi này đến nơi khác. Cuối cùng, tôi phải tự sinh tồn nơi tiền tuyến. Có nơi phát cho chúng tôi ít lương khô để cầm cự, có nơi thì bắt đóng đủ thứ loại thuế vô lý. Nơi nào cũng như nhà, nhưng thật ra chẳng nơi nào là nhà cả. Các khu định cư nơi vùng tiền tuyến hiếm khi tồn tại lâu, và khái niệm \"quê nhà\" chẳng có ý nghĩa gì."
+      },
+      {
+        "title": "Trò Chuyện 4",
+        "text": "Vẻ đẹp luôn hiện hữu ở hoang địa. Động vật tháo chạy khỏi vùng Nhiễm Khuẩn không bao giờ thật sự biến mất, chúng chỉ thay đổi lộ trình mỗi năm. Cỏ mọc trở lại ngay khi Nhiễm Khuẩn rút đi. Thiên nhiên có nhịp điệu riêng, nó chỉ chịu đựng được đến một mức giới hạn... Đôi khi tôi tự hỏi liệu chúng ta có thực sự thuộc về sự cân bằng đó không."
+      },
+      {
+        "title": "Trò Chuyện 5",
+        "text": "Ở những vùng quê nghèo tôi từng sống, lúc nào cũng là bọn cưỡng chế đè đầu cưỡi cổ dân chúng. Chúng biết sự mong manh của trật tự, chỉ cần một tia lửa hỗn loạn là tất cả sụp đổ. Thế là chúng tạo ra một kiểu cân bằng méo mó bằng cách bắt dân cư làm con tin. Trừ khi ngài ở đủ gần để bóp cổ bọn chúng, nếu không sẽ chẳng có gì thay đổi."
+      },
+      {
+        "title": "Chủ đề: Akekuri",
+        "text": "Thử đoán xem, ai là người niêm phong cặp tai đó vào túi tang vật? Đúng vậy, ngay cả Đội trưởng tốt bụng cũng biết chẳng còn lựa chọn nào tốt hơn trên Talos-II. Gương mặt ấy, đầy nước mắt nhưng cố gắng kìm lại? Dễ thương thật."
+      },
+      {
+        "title": "Chủ đề: Catcher",
+        "text": "Cậu ta trông có vẻ đang tận hưởng, nhưng làm ơn nhẹ tay với cậu ấy. Những người chuẩn bị kỹ lưỡng nhất thường là người sợ mắc lỗi nhất. Không ai là không thể phạm sai lầm cả... Sao, tôi nên ngừng nhờ cậu ta giúp đỡ à? Phì, tại sao tôi phải làm vậy? Đừng lo, dù có sợ đến cứng người, cậu ấy vẫn sẽ vượt qua thôi. Cậu ấy luôn như vậy mà."
+      },
+      {
+        "title": "Chủ đề: Estella",
+        "text": "Đừng động vào danh sách nhạc của Estella, và đừng để cô ấy xông pha. Ngài nghĩ cô ấy kiểm soát được mọi thứ sao? Không không. Tốt nhất nên chuẩn bị sẵn để dọn dẹp mớ hỗn độn mà cô ấy sẽ gây ra, thưa ngài."
+      },
+      {
+        "title": "Chủ đề: Antal",
+        "text": "Con thằn lằn to ấy trông điềm tĩnh như băng, kể cả giữa chiến trận, có khi còn chẳng nhận ra là mình đang gặp nguy hiểm. Điều đó khiến Đội trưởng phát cáu... nhưng, ừm, đó là cách sống của cậu ấy mà. Tôi và cậu ta? Hmm... Tôi và cậu ta vẫn ổn... miễn là cậu ta nhớ cái đuôi của tôi không phải để ngắm."
+      },
+      {
+        "title": "Phát hiện Tài Nguyên/Có Thể Thu Thập 1",
+        "text": "Tôi đã tìm thấy thứ gì đó hay ho. Tôi lấy hết được chứ?"
+      },
+      {
+        "title": "Phát hiện Tài Nguyên/Có Thể Thu Thập 2",
+        "text": "Ngài có thấy cái gì ở đằng kia không? À mà thôi, quên đi."
+      },
+      {
+        "title": "Phát Hiện Khu Vực Chưa Khám Phá",
+        "text": "Chỗ này có vẻ thú vị. Hmm... trông có vẻ vui đấy."
+      },
+      {
+        "title": "Phát hiện Kẻ Địch Mạnh",
+        "text": "Mọi người ơi, có bạn mới đến chơi rồi này."
+      },
+      {
+        "title": "Khai thác 1",
+        "text": "À, lao động tay chân. Như những ngày cay đắng xưa kia."
+      },
+      {
+        "title": "Khai thác 2",
+        "text": "*Ngáp* Tới liền. Mọi người năng nổ thật đấy."
+      },
+      {
+        "title": "Mở Thùng",
+        "text": "Ồ, trông xịn thế. Mà lại không có thẻ tên sao? Hừm..."
+      },
+      {
+        "title": "Nhận Aurylene",
+        "text": "Tôi từng có một cái giống vậy. Hừm... Mà sau đó chuyện không hay đã xảy ra."
+      },
+      {
+        "title": "Xua Tan Nhiễm Khuẩn",
+        "text": "Giá như tôi có thể tiêu diệt vùng Nhiễm Khuẩn hồi đó..."
+      },
+      {
+        "title": "Nghỉ ngơi",
+        "text": "Cuối cùng cũng đến lúc bổ sung thêm bom."
+      },
+      {
+        "title": "Sử Dụng Vật Phẩm Chiến Thuật 1",
+        "text": "Thấy chưa? Tôi biết nó sẽ có ích mà."
+      },
+      {
+        "title": "Sử Dụng Vật Phẩm Chiến Thuật 2",
+        "text": "Chỉ là xui thôi. Thêm một vòng nữa."
+      },
+      {
+        "title": "Cảnh Báo Nguy Hiểm",
+        "text": "Cẩn thận, đừng để xui lây."
+      },
+      {
+        "title": "Bị Thương",
+        "text": "... Tôi bị trượt."
+      },
+      {
+        "title": "0 HP",
+        "text": "Lẽ ra tôi phải... đỡ được đòn đó."
+      },
+      {
+        "title": "Cổ Vũ Đội 1",
+        "text": "Ừm, cũng tạm ổn."
+      },
+      {
+        "title": "Cổ Vũ Đội 2",
+        "text": "Không tệ chút nào. Tiếc là chẳng ai quay lại cảnh đó."
+      },
+      {
+        "title": "Đáp Lại Lời Cổ Vũ 1",
+        "text": "Lời khen hay đấy, nhưng ngài khỏi cần tốn hơi."
+      },
+      {
+        "title": "Đáp Lại Lời Cổ Vũ 2",
+        "text": "Chúng tôi là đội tinh anh mà, đúng không?"
+      },
+      {
+        "title": "Bắt Đầu Chiến Đấu 1",
+        "text": "Lại quay về công việc cũ à?"
+      },
+      {
+        "title": "Bắt Đầu Chiến Đấu 2",
+        "text": "Chúng ta thật chăm chỉ! Cầu mong có thêm thưởng."
+      },
+      {
+        "title": "Thắng Trận 1",
+        "text": "Tốt, bớt được một mối lo."
+      },
+      {
+        "title": "Thắng Trận 2",
+        "text": "Chán vậy, đã cho chúng một cơ hội rồi đó."
+      },
+      {
+        "title": "Thắng Trận 3",
+        "text": "Đúng, chính xác. Chúng ta hoàn toàn không thể làm được nếu thiếu ngài."
+      },
+      {
+        "title": "Thắng Trận 4",
+        "text": "Hmph. Cũng ổn, nhưng vẫn chưa đủ."
+      },
+      {
+        "title": "Bại Trận",
+        "text": "Buồn bã cũng không giúp ích gì, hành động mới là điều quan trọng. Nào, mọi chuyện vẫn chưa kết thúc đâu."
+      },
+      {
+        "title": "Đòn Dứt Điểm 1",
+        "text": "*Huýt sáo* Bắt lấy!"
+      },
+      {
+        "title": "Đòn Dứt Điểm 2",
+        "text": "Xin hãy chú ý."
+      },
+      {
+        "title": "KN Chiến Đấu 1",
+        "text": "Của ngài đây."
+      },
+      {
+        "title": "KN Chiến Đấu 2",
+        "text": "Hy vọng ngài thích!"
+      },
+      {
+        "title": "KN Chiến Đấu 3",
+        "text": "Tích tắc!"
+      },
+      {
+        "title": "Chuẩn Bị KN Liên Hoàn 1",
+        "text": "Hmph. Bắt đầu trình diễn."
+      },
+      {
+        "title": "Chuẩn Bị KN Liên Hoàn 2",
+        "text": "Chúng thủng như miếng phô mai vậy."
+      },
+      {
+        "title": "Thi Triển Liên Hoàn 1",
+        "text": "Thưởng thức đi."
+      },
+      {
+        "title": "Thi Triển Liên Hoàn 2",
+        "text": "Cá là ngài sẽ thích."
+      },
+      {
+        "title": "Kết Liễu 1",
+        "text": "Bất ngờ chưa."
+      },
+      {
+        "title": "Kết Liễu 2",
+        "text": "Đến giờ đi ngủ rồi cưng."
+      },
+      {
+        "title": "Tuyệt Kỹ 1",
+        "text": "Có lẽ sống đủ lâu rồi nhỉ?"
+      },
+      {
+        "title": "Tuyệt Kỹ 2",
+        "text": "Cái này sẽ rất ồn đấy."
+      },
+      {
+        "title": "Tuyệt Kỹ 3",
+        "text": "Tới đường cùng rồi bạn hiền."
+      }
+    ]
   },
   "potentials": {
     "potential1": {

@@ -126,7 +126,329 @@
         "name": "Esportes",
         "description": "Esportes: Pesca Oceânica\nPescar barbatanas pode parecer um esporte pacífico, mas na verdade é uma luta contra ondas monstruosas."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Prep Operação 1",
+        "text": "Hein? Já é a minha vez?"
+      },
+      {
+        "title": "Prep Operação 2",
+        "text": "Já que você está por aqui, com certeza vamos pegar alguma coisa hoje."
+      },
+      {
+        "title": "Adicionando à equipe 1",
+        "text": "Ah... Torci meu tornozelo ontem... Meus quadris doem, e meu pescoço também..."
+      },
+      {
+        "title": "Adicionando à equipe 2",
+        "text": "Você já tem vários pesos pesados. Tem certeza de que precisa de mim para o trabalho?"
+      },
+      {
+        "title": "Trocando de arma",
+        "text": "Humm. Parece mais resistente que um pedaço de bambu. Pelo menos este não vai se quebrar em pedaços."
+      },
+      {
+        "title": "Trocando de equipamento",
+        "text": "Agora isso vai me ajudar a ficar longe dos hematomas."
+      },
+      {
+        "title": "Ativação da Matriz de Capacidade",
+        "text": "Na verdade, sobrevivi a uma semana inteira de treinamento especial. Não acredito que consegui me esforçar tanto."
+      },
+      {
+        "title": "Assistindo a Registros de Combate",
+        "text": "Isso é melhor do que tudo o que passava na TV em casa. Além disso, tem sempre coisa nova!"
+      },
+      {
+        "title": "Promoção do Operador 1",
+        "text": "Espere aí... Esta cerimônia é para mim? Nossa... o que eu digo? O-obrigado?"
+      },
+      {
+        "title": "Promoção do Operador 2",
+        "text": "Não precisa continuar me incentivando assim, Endmin. É estranho, mas elogios me fazem murchar como uma flor regada demais."
+      },
+      {
+        "title": "Promoção do Operador 3",
+        "text": "Deve ser cansativo assumir toda essa responsabilidade, Endmin. Ahh. Acho que não tenho escolha a não ser ajudar você por enquanto."
+      },
+      {
+        "title": "Promoção do Operador 4",
+        "text": "Por que você está parecendo mais feliz do que eu? Achei que essa fosse *minha* promoção. OK, então. Vamos comemorar na churrascaria. Eu só quero os melhores cortes de churrasco, e você vai pagar a conta."
+      },
+      {
+        "title": "Operador se apresentando para o trabalho",
+        "text": "Com licença, é aqui que nos candidatamos para o trabalho? Prazer em conhecê-lo. Meu nome é Alesh. Gosto de ler e consigo pescar de olhos fechados. Fico feliz por estar a bordo."
+      },
+      {
+        "title": "Em espera 1",
+        "text": "Que belo dia. Perfeito para a minha soneca."
+      },
+      {
+        "title": "Em espera 2",
+        "text": "Carteira vazia, a história da minha vida..."
+      },
+      {
+        "title": "Atribuindo a Instalação",
+        "text": "Ahh... No momento em que você diz \"trabalhar\", toda a minha energia simplesmente evapora. Eu voto em um cochilo antes da tarefa, Endmin."
+      },
+      {
+        "title": "Saudação 1",
+        "text": "Ei! Estou sempre encontrando você. Como está o trabalho hoje?"
+      },
+      {
+        "title": "Saudação 2",
+        "text": "Chefe, você não está cansado? Eu posso te ensinar a tirar um cochilo."
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 1",
+        "text": "Não sobrou nada na programação? Ótimo. Hora de assistir à reprise daquele programa de pesca."
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 2",
+        "text": "Aquele lugar. É. Aquele todo coberto de neve. É o norte, certo? Eu não estaria vendo isso se nunca tivesse entrado para a Endfield. Quando cheguei na Dijiang, a vista da ponte era quase insuportável. Agora que me acostumei, olhar para Talos-II daqui de cima parece mágico."
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 3",
+        "text": "Minhas habilidades de combate? Eu só balanço a espada esperando acertar algo, chefe. Mas você também pode aprender minha habilidade especial depois de lutar contra bestas carnívoras gigantes, videiras devoradoras de homens, Aggeloi de metal e caras que te devem um monte de grana."
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 4",
+        "text": "Sabe, gente da minha idade se cansa de muita coisa. Pescar é a única fuga que me resta dessa realidade cruel. O quê? Ainda sou jovem? Deixe disso, eu sou bem mais velho... Espere aí, Endmin. Quantos anos você tem mesmo?"
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 5",
+        "text": "Ando folheando um livro sobre pessoas comuns. Sabe, assuntos como sobrevivência e a luta da humanidade geralmente não me interessam... Mas sinto que o autor é como... como alguém que realmente viveu a vida. Aí, o que houve? Por que tão sério de repente? Relaxe, chefe. Só estou dizendo que admiro o autor, só isso."
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 6",
+        "text": "Ser difícil de matar é provavelmente minha única vantagem. Me acertaram feio algumas vezes, mas tinha muita gente que eu poderia perder, como meus amigos, o antigo senhorio... e vocês também. Só esse pensamento já basta para me fazer rastejar de volta para o segundo round."
+      },
+      {
+        "title": "Oferta de presentes",
+        "text": "Aqui, chefe. Tenho uma coisa legal para você. A loja oferece um desconto de 50% na compra de outro. Uma pechincha, né?"
+      },
+      {
+        "title": "Aceitando presentes",
+        "text": "Para mim? Minha nossa... Costumo receber cartas de amor de punks chateados me pedindo para pagar ou de caras que querem me matar. Nunca imaginei que receberia um presente de verdade."
+      },
+      {
+        "title": "Diálogo de Confiança 1",
+        "text": "Está se sentindo mal? Cara, os jovens deveriam ter esperança. Eu sei que as coisas estão terríveis, mas vão piorar a partir de agora. Viu? Você já está se sentindo bem melhor, não é?"
+      },
+      {
+        "title": "Diálogo de Confiança 2",
+        "text": "Por que entrei para a Endfield? Meu antigo senhorio rabugento. Foi por isso. Ele está sempre bravo, sabe? Minha loja de barbatanas não está indo muito bem e eu devia meses de aluguel a ele. Então ele me arranjou um emprego sem me perguntar. Não sei o que ele escreveu no meu currículo, mas você aceitou... Então aqui estou eu."
+      },
+      {
+        "title": "Diálogo de Confiança 3",
+        "text": "O que é isso na sua mão? \"Segundo em comando da gangue La Estrada\"...? O cara na foto se parece comigo? Quem sou eu para dizer. Vamos lá, a gente tem que viver o momento. Não adianta desenterrar o que é para ficar enterrado. Seria uma pena se deixássemos uma velha história empoeirada se intrometer, não acha? Ei, por que você está pedindo o número do Departamento de Segurança para Perlica?"
+      },
+      {
+        "title": "Diálogo de Confiança 4",
+        "text": "Eu costumava andar com a Estrada Ursaña. A maioria a chamava de La Estrada. A cidade é um lugar enorme que cria gente insignificante como eu. Cresci no sovaco da cidade, encontrei minha turma, entrei para uma gangue maior e, de alguma forma, acabei me tornando um dos líderes. Aí, bem... tudo explodiu na minha cara. Cara... Se eu soubesse que ia acabar assim, deveria ter entrado para a fábrica de conservas de barbatanas há vinte anos. Agora estou aqui vendendo barbatanas para viver."
+      },
+      {
+        "title": "Diálogo de Confiança 5",
+        "text": "Qual é a desse olhar? Curiosidade sobre a cicatriz? Ah, um homem com histórias não as conta facilmente. O que ficou para trás, ficou para trás. Tem que deixar para lá e seguir em frente... Ai! Endmin! A gente não vai embora de verdade! Tá bom, tá bom, vou te contar — não é nada especial. Tive duas coisas que me fizeram de bobo. Uma me deu uma patada quando eu estava dando cobertura para a outra. Perdi um olho e um pedaço da minha antiga vida ali mesmo. É isso. Simples e sem graça, não é?"
+      },
+      {
+        "title": "Chat 1",
+        "text": "A vida não é como pescar. Você sempre pode recuperar uma isca quando está pescando. Mas, na vida real, não há saída fácil quando se está em apuros. É exatamente por *ISSO* que viver uma vida feliz é importante. A verdadeira sabedoria de um velho garoto, Endmin."
+      },
+      {
+        "title": "Chat 2",
+        "text": "A minha pequena loja de barbatanas não está indo muito bem. Eu não conseguiria nem pagar o aluguel sem o salário da Endfield. Sinceramente, eu não esperava ganhar uma grana alta vendendo barbatanas. É por isso que deixo as pessoas pechincharem o quanto quiserem — e até mesmo vender fiado. Mesmo quando tinha sorte na pesca, simplesmente doava as barbatanas extras. A vida não é fácil para todos, sabe? Uma vez um ladrão entrou na minha casa. O ladrão não encontrou nada de valor e me deixou um bilhete. \"O lugar mais triste que eu já vi.\" Cara..."
+      },
+      {
+        "title": "Chat 3",
+        "text": "Aqui está minha filosofia de vida: tolere as pequenas coisas e evite as maiores. *Só* faça algo quando for impossível desviar. Aí você da a elas o inferno e garante que elas fiquem no chão."
+      },
+      {
+        "title": "Chat 4",
+        "text": "O olho está me dando trabalho? É... às vezes pode ser irritante. Por exemplo, você estava no meu ponto cego quando me cumprimentou. Haha. Tudo bem. Já estou acostumado com isso. Visão perfeita não é tão empolgante assim. Talvez seja melhor manter certas coisas no escuro e torná-las... misteriosas."
+      },
+      {
+        "title": "Chat 5",
+        "text": "O show de tarô de ontem previu que eu teria muita sorte hoje. E adivinha? Caí no esgoto fedorento logo depois de sair de casa. Pensei: \"Cara...! O show de tarô mais furado de todos os tempos\". Mas aí vi algo brilhante na lama — um anel de diamantes. Então, ei, talvez eu tenha tido sorte afinal. Mas me senti mal por quem o perdeu, e aí usei minha super sorte para encontrar o pobre coitado e devolvi o anel. O que estou dizendo é, chefe — se usarmos a sorte para fazer a coisa certa, talvez tenhamos ainda mais sorte. Concorda?"
+      },
+      {
+        "title": "Tópico: Gangues",
+        "text": "Eu vivia naquele caos das fronteiras, sabe? É onde as crianças crescem com uma família fedorenta – ou sem família alguma. Não o que é pior. Eu? Eu não tinha família, nem educação, nem um teto sobre a minha cabeça. Então, sim, eu vivia nas ruas. Passava os dias brigando com outras crianças só para sobreviver. Odiávamos uns aos outros, mas todas as ameaças nos obrigam a fazer escolhas estranhas. De alguma forma, nos unimos e criamos nossa própria família. Engraçado que até criamos nossas próprias regras naquele território sem lei."
+      },
+      {
+        "title": "Tópico: Senhorio",
+        "text": "O velho senhorio me escreveu de novo. Ele não estava cobrando o aluguel, mas está curioso sobre a minha situação recente. Até me chamou de preguiçoso e imprestável que não sabe cuidar de si mesmo. Cara, difícil acreditar que ele era alguém importante na juventude... Espera aí. Por que ele se importa tanto comigo? Será que está tentando fazer de mim um filho para ele? Cara, eu já estou financiando a aposentadoria dele pagando aluguel — serviço de motorista de cadeira de rodas não está no contrato. Ele ficou reclamando dos joelhos... Talvez eu devesse dar a ele um massageador automático. Sério, esse velho precisa se cuidar em vez de me encher o saco com essas bobagens. Além disso, se ele está tão preocupado, poderia simplesmente aparecer em vez de me culpar por meio de cartas."
+      },
+      {
+        "title": "Tópico: Cidade de Talos",
+        "text": "A Cidade de Talos tem um significado especial para Talos-II. Após a Guerra da Humilhação, os Três Grandes assinaram o Acordo do Cinturão e construíram juntos a Cidade de Talos. Foi a primeira cidade neutra para os Terranos. É o que os livros de história dizem. Uma cidade grandiosa, ainda incompleta após um século de construção. Talvez eu possa descrevê-la melhor: \"Um homem grisalho enrugado que ergueu sua lança e apontou para o sol além das colinas\". Muito mais culto, certo? Bem, eu não perdia tempo lendo romances Ursinos."
+      },
+      {
+        "title": "Tópico: Barbatana estranha (peixe)",
+        "text": "Então você está curioso sobre aquela barbatana estranha que eu peguei? Essa é uma longa história. Eu cresci lutando, não lendo. Eu nem conseguia dizer \"Artes de Originium\" direito quando era um jovem punk. Quando acabei de perder meu olho e estava me sentindo todo desorientado e confuso, senti algo nadando no meu ponto cego. Aquilo era muito irritante, então lancei minha isca com muita força e — \"BUUM!\" Você sabe o que aconteceu depois. O velho me disse que eu tenho talento para as Artes. Mas talvez seja uma maldição."
+      },
+      {
+        "title": "Recurso/Colecionável detectado 1",
+        "text": "Talvez seja melhor dar uma olhada. Pode ser que valha alguma coisa."
+      },
+      {
+        "title": "Recurso/Colecionável detectado 2",
+        "text": "Parece valioso. Acho que vamos ficar ricos."
+      },
+      {
+        "title": "Área não explorada detectada",
+        "text": "Cuidado. Há algo estranho por perto."
+      },
+      {
+        "title": "Inimigo poderoso descoberto",
+        "text": "Cuidado! Essa pode te dar uma surra e tanto."
+      },
+      {
+        "title": "Mineração 1",
+        "text": "Podemos realmente vender isso?"
+      },
+      {
+        "title": "Mineração 2",
+        "text": "Coisa brilhante. Vamos pegar mais."
+      },
+      {
+        "title": "Abrindo um caixote",
+        "text": "Sortudo. Parece que o show de tarô era legítimo."
+      },
+      {
+        "title": "Adquirindo Aurileno",
+        "text": "Parece... mágica. Posso dar outra olhada?"
+      },
+      {
+        "title": "Eliminando a Praga",
+        "text": "Pronto. Bacana e limpo."
+      },
+      {
+        "title": "Descansar",
+        "text": "Tirei uma ótima soneca. Hora de agir de verdade."
+      },
+      {
+        "title": "Uso Tático 1",
+        "text": "Seus remédios! Pegue."
+      },
+      {
+        "title": "Uso Tático 2",
+        "text": "Ufa. Pensei que estava acabado."
+      },
+      {
+        "title": "Aviso de Perigo",
+        "text": "Ei! Saia do caminho!"
+      },
+      {
+        "title": "Ferido",
+        "text": "Não é o bastante para me derrubar."
+      },
+      {
+        "title": "0 PV",
+        "text": "Farei... o que for preciso..."
+      },
+      {
+        "title": "Encorajamento da Equipe 1",
+        "text": "Tudo ótimo hoje, hein?"
+      },
+      {
+        "title": "Encorajamento da Equipe 2",
+        "text": "Uma boa gangue deixa tudo mais fácil."
+      },
+      {
+        "title": "Resposta a Encorajamento 1",
+        "text": "Só estou fazendo o meu trabalho."
+      },
+      {
+        "title": "Resposta a Encorajamento 2",
+        "text": "A gangue fez tudo acontecer."
+      },
+      {
+        "title": "Início do Combate 1",
+        "text": "É hora de cuidar do meu olho."
+      },
+      {
+        "title": "Início do Combate 2",
+        "text": "Faça do seu jeito. Eu dou cobertura."
+      },
+      {
+        "title": "Vitória em Combate 1",
+        "text": "As coisas ficaram um pouco intensas, mas conseguimos."
+      },
+      {
+        "title": "Vitória em Combate 2",
+        "text": "Eu nem me sinto cansado."
+      },
+      {
+        "title": "Vitória em Combate 3",
+        "text": "Nada mal. Cada um fez a sua parte."
+      },
+      {
+        "title": "Vitória em Combate 4",
+        "text": "Essa foi por pouco! Mesmo assim, preciso dizer: uma vitória é uma vitória."
+      },
+      {
+        "title": "Derrota em Combate",
+        "text": "Não se preocupe com a derrota. Vamos ter mais cuidado da próxima vez. Está tudo bem, certo?"
+      },
+      {
+        "title": "Golpe Final 1",
+        "text": "Tome isto!"
+      },
+      {
+        "title": "Golpe Final 2",
+        "text": "Fique abaixado!"
+      },
+      {
+        "title": "Habilidade de Batalha 1",
+        "text": "Venha LEVAR um pouco!"
+      },
+      {
+        "title": "Habilidade de Batalha 2",
+        "text": "Acalme-se!"
+      },
+      {
+        "title": "Habilidade de Batalha 3",
+        "text": "Hora de RELAXAR!"
+      },
+      {
+        "title": "Combo de Habilidades Pronto 1",
+        "text": "Hora de retaliar, ok?"
+      },
+      {
+        "title": "Combo de Habilidades Pronto 2",
+        "text": "Pronto para acabar com esses punks."
+      },
+      {
+        "title": "Conjuração de Combo 1",
+        "text": "Veja o que MORDE!"
+      },
+      {
+        "title": "Conjuração de Combo 2",
+        "text": "Fora da minha LINHA!"
+      },
+      {
+        "title": "Finalizador 1",
+        "text": "Não desperte minha BARBATANA!"
+      },
+      {
+        "title": "Finalizador 2",
+        "text": "Eu apenas joguei a isca!"
+      },
+      {
+        "title": "Habilidade Suprema 1",
+        "text": "Peguei!"
+      },
+      {
+        "title": "Habilidade Suprema 2",
+        "text": "Divirta-se sendo a isca!"
+      },
+      {
+        "title": "Habilidade Suprema 3",
+        "text": "Aproveite seu lanchinho!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

@@ -117,7 +117,337 @@
         "name": "Beneficenza",
         "description": "Beneficenza: giramondo\nVenditore ambulante, autista, guida turistica, restauratore e maestro in cucina. Da Pan odia i momenti morti: lo rendono inquieto."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Preparazione all'operazione 1",
+        "text": "Oh, Endmin! Hai fatto con i preparativi?"
+      },
+      {
+        "title": "Preparazione all'operazione 2",
+        "text": "Non si può sprecare il cibo in questo modo... EHI! Che bello vederti qui!"
+      },
+      {
+        "title": "Aggiunta alla squadra 1",
+        "text": "Finalmente un luogo dove posso lasciarmi andare! Ti va di dare un'occhiata alle mie abilità?"
+      },
+      {
+        "title": "Aggiunta alla squadra 2",
+        "text": "Se sei tu a dare gli ordini, ti seguirò ciecamente."
+      },
+      {
+        "title": "Cambio arma",
+        "text": "Oooh. Quest'arma è ben bilanciata. Ti sarà costata una fortuna."
+      },
+      {
+        "title": "Cambio equipaggiamento",
+        "text": "Era da un po' che non mi agghindavo per bene. NGH! AAAH! Beh, che ne pensi? Fa la sua figura, eh?"
+      },
+      {
+        "title": "Attivazione matrice delle abilità",
+        "text": "Se un piatto non ti viene bene, preparalo più spesso! Non cucino per darmi delle arie. Lo faccio per realizzare un grazioso e allegro banchetto!"
+      },
+      {
+        "title": "Visione delle registrazioni di combattimenti",
+        "text": "Non si è mai troppo vecchi per imparare. Il segreto è tenere le gambe in forma!"
+      },
+      {
+        "title": "Promozione operatore 1",
+        "text": "Non sono né la scelta migliore, né il guerriero più forte, perciò sono lusingato dalla tua gentilezza. Non ho vino con me, perciò mi scolerò quest'intera teiera in segno di gratitudine!"
+      },
+      {
+        "title": "Promozione operatore 2",
+        "text": "Anche se non ho chissà che talento, porto sempre a termine i miei compiti. Perciò, accetterò la promozione. Fammi un fischio quando hai bisogno di me. Non mi tirerò certo indietro."
+      },
+      {
+        "title": "Promozione operatore 3",
+        "text": "È molto carino da parte tua, ma significa che il mio negozio a Wuling dovrà rimanere chiuso per un po'... Quando hai tempo torneremo lì, ti organizzerò un banchetto... e chiederò ai miei parenti di occuparsi dell'attività."
+      },
+      {
+        "title": "Promozione operatore 4",
+        "text": "Durante la mia ultima visita a Hongshan, la mia maestra ha fatto di tutto per assegnarmi a un progetto dell'Accademia. Ha smesso quando le ho detto che ora lavoro per la Endfield. Sarò schietto, Endmin, per me è un vero ONORE avere un posto ufficiale a bordo della Dijiang. Ehi, perché stai arrossendo?"
+      },
+      {
+        "title": "Operatore a rapporto",
+        "text": "Oh, ci incontriamo di nuovo, Endmin. C'è qualche problema di tipo ingegneristico? Dimmi qual è e lo risolverò! Sarei ANCORA più felice se volessi assegnarmi un incarico nella mensa!"
+      },
+      {
+        "title": "Attesa 1",
+        "text": "Ora dove si va, Endmin?"
+      },
+      {
+        "title": "Attesa 2",
+        "text": "Hai un lavoro per me? Nessun problema."
+      },
+      {
+        "title": "Assegnazione a una struttura",
+        "text": "Non preoccuparti. Prenditi una pausa. Io sarò operativo non appena sarò riuscito a infilarmi gli abiti da lavoro."
+      },
+      {
+        "title": "Saluto 1",
+        "text": "Quando avrai tempo, ti cucinerò un bel banchetto!"
+      },
+      {
+        "title": "Saluto 2",
+        "text": "Vuoi mangiare qualcosa che non è disponibile nella mensa della Dijiang? Ci penso io."
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 1",
+        "text": "Hai perso di nuovo peso. Devi prenderti più cura della tua salute. Vuoi che ti cucini qualcosa?"
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 2",
+        "text": "Umpf. La mensa della Dijiang non mi dava soddisfazioni. Prima di contraddirmi, assaggia questo. L'ho cucinato io!"
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 3",
+        "text": "Ho sentito che hai parlato coi giovani con cui ho avuto quella discussione. Non preoccuparti. Non mi importa se sono Tianshi o chef. Non tutti sulla Dijiang hanno tempo di scambiare due parole con un vecchio panda."
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 4",
+        "text": "Vedo diverse tecnologie dell'Accademia sulla Dijiang, frutti del duro lavoro svolto dagli esperti di tecnologia orbitale dell'ASH... Un branco di vecchietti rumorosi e brontoloni che darebbero inizio a una guerra anche solo per decidere dove piazzare il più piccolo dei moduli diagnostici!"
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 5",
+        "text": "Le stanze del dormitorio della Endfield non sono abbastanza grandi! Non voglio mancare di rispetto, ma stamattina per stiracchiarmi mi sono fatto male a gomiti e ginocchia. TI PREGO! Fa' qualcosa!"
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 6",
+        "text": "Se vedi Andre, di' al Grande Gufo che deve condividere le sue ultime idee con un vecchio panda! Digli anche di smetterla di nascondersi da me!"
+      },
+      {
+        "title": "Offerta regali",
+        "text": "Eccoti, Endmin! Prendi qua! Ho una cosa speciale per te, dritta da Hongshan!"
+      },
+      {
+        "title": "Accettazione regali",
+        "text": "Mi sento davvero onorato!"
+      },
+      {
+        "title": "Dialogo fiducia 1",
+        "text": "So che hai un sacco di lavoro di ricerca da fare, quindi delega pure qualcosa a me! Sono fiero di essere stato chef, elettricista, carpentiere, autista e piccolo imprenditore. Insomma, posso fare QUALSIASI cosa. Oh, hai una domanda su questa fiala \"Dipendente dell'Avanguardia\"? Eh eh eh, io la uso per il tè."
+      },
+      {
+        "title": "Dialogo fiducia 2",
+        "text": "Endmin, fai visita alla sede dell'Accademia scientifica di Hongshan. Anche se non ti va di andare in un posto nuovo, i dibattiti tra studenti possono farsi davvero intensi. Forse non te lo ricordi, ma ci sono numerosi progetti pionieristici che citano i tuoi lavori... Aspetta, anche io ho citato una delle tue ricerche."
+      },
+      {
+        "title": "Dialogo fiducia 3",
+        "text": "Questo mio wok di ferro nero mi ripara da pioggia, fuoco e persino munizioni incise. Se necessario, posso indossarlo sulla schiena per avere un'ottima copertura posteriore! Beh, Endmin, se ci impegniamo al massimo, ne trarremo beneficio nei momenti di maggior bisogno. Mi sembra un buon affare. Direi di approfittarne."
+      },
+      {
+        "title": "Dialogo fiducia 4",
+        "text": "Io? Pan Yuan, l'amichevole vecchio panda di quartiere? AH! Al tempo, nessuno dell'ASH aveva mai osato mettermi in discussione. Il grande Pan Yuan poneva fine ai disaccordi scientifici in un istante e... Ugh. Beh, a volte basarsi sui puri e semplici fatti potrebbe inavvertitamente distruggere la carriera per cui qualcuno ha lavorato tanto duramente. Ho provato a redimermi, ma la testardaggine è una bella gatta da pelare... Tu prendi questa storia con le pinze, però."
+      },
+      {
+        "title": "Dialogo fiducia 5",
+        "text": "Una volta che avrai finito di occuparti delle tue questioni qui, sarebbe un onore per me se potessi visitare Hongshan. Non preoccuparti, avrai tutto il tempo di visitare i negozi del posto, mentre io potrò prepararti dei piatti tipici a casa mia! Poi, vieni con me all'Accademia. C'è un progetto che devo ancora finire, e vorrei tanto provare le nuove cose che ho visto insieme a te! Dato che ci sarai anche tu, non mi arrenderò finché non avrò superato quell'ostacolo!"
+      },
+      {
+        "title": "Chiacchierata 1",
+        "text": "Non esistono scorciatoie per il buon cibo. Devi continuare a provare e a mangiarti gli errori commessi lungo la strada. È l'unico modo per trovare la perfetta unione di sapori. Non sei d'accordo?"
+      },
+      {
+        "title": "Chiacchierata 2",
+        "text": "Tu sì che hai capito tutto! I problemi non si risolvono ignorandoli. Bisogna concentrarsi sulla questione, parlare dei disaccordi e poi amici come prima, no? Non bisogna tenersi tutto dentro. Ugh. Ti racconterò la storia più tardi. Mi ha lasciato con l'amaro in bocca."
+      },
+      {
+        "title": "Chiacchierata 3",
+        "text": "Wuling. Non si può menzionare senza parlare anche del meraviglioso paesaggio naturale, o del mio negozio, o delle partite di Mahjong giocate nonostante la Contaminazione acquatica. Lo so, potrei andare avanti all'infinito, ma casa mia mi manca molto! Forse Wuling mi ha abituato a una vita post-pensione fin troppo bella. Ehi, smettila di ridere. A proposito, visto che ne ho parlato... ti va una partita a Mahjong?"
+      },
+      {
+        "title": "Chiacchierata 4",
+        "text": "Ho visitato molte città e imparato da altri colleghi chef. Ognuno di loro è più che disposto a rivelare i metodi di cottura impiegati nei propri piatti. Tuttavia, per padroneggiare le arti culinarie... bisogna avere la giusta stoffa."
+      },
+      {
+        "title": "Chiacchierata 5",
+        "text": "Credevo che la vita da pensionato sarebbe stata a base di relax, cucina, tè e vivere alla giornata... Ma poi arrivi tu e mi scarichi addosso un'infinità di lavoro. Come dovrei sentirmi, eh? AH AH! Niente affatto male, in realtà!"
+      },
+      {
+        "title": "Argomento: gli infetti",
+        "text": "Diventare \"infetti\" non è più una condanna a morte. In molti la vedono come una semplice sfortuna e vanno avanti con la loro vita... Ma se visiti villaggi e cittadine fuori dalla Cintura, vedrai che la prospettiva sull'Oripatia è molto diversa."
+      },
+      {
+        "title": "Argomento: la spaccatura",
+        "text": "Abbiamo studiato la Vasta spaccatura sotto Wuling per anni. Posso usare il mio wok, se vuoi conoscerne le dimensioni esatte. Ma trovare una soluzione permanente... è ancora una bella sfida..."
+      },
+      {
+        "title": "Argomento: Zhuang Fangyi",
+        "text": "Oh, hai fatto visita alla viceré Zhuang? Non è cambiata affatto. Cerca ancora di passare per una tipa tosta, quando in realtà è un tortino dal cuore morbido. Adesso è infelice, nessuno la vuole intorno e... Ugh. Parliamone un'altra volta."
+      },
+      {
+        "title": "Argomento: Accademia scientifica di Hongshan (ASH)",
+        "text": "ASSURDO! Chi ha detto che l'ASH ammette solo candidati di origine yanese? Nessuno viene respinto per via delle proprie origini. Accettiamo chiunque possa lavorare bene con le altre due fazioni e abbia la pazienza necessaria per i lavori scientifici."
+      },
+      {
+        "title": "Argomento: Lifeng",
+        "text": "Lifeng è una bomba a mano. Mi stanco solo a guardarlo, per cui faccio del mio meglio per farlo rilassare. Per fortuna, è disposto a bighellonare con questo vecchio panda. È sveglio e capisce le cose per conto suo, ma non so se sia un bene o un male..."
+      },
+      {
+        "title": "Argomento: Valle IV",
+        "text": "La fabbrica del SIA migliorerà di molto le vite dei nomadi. Ciò nonostante, ognuno ha le sue idee, e le grandi iniziative andranno sempre incontro a degli intoppi. Dobbiamo solo farcene una ragione. Questo vecchio panda sta solo facendo del suo meglio e non si prenderà il merito per quel che abbiamo ottenuto a Valle IV!"
+      },
+      {
+        "title": "Individuazione risorsa/collezionabile 1",
+        "text": "Non è facile da trovare. Riempitevi le tasche più che potete."
+      },
+      {
+        "title": "Individuazione risorsa/collezionabile 2",
+        "text": "Una scoperta molto rara. È ora di delegare il lavoro di raccolta."
+      },
+      {
+        "title": "Individuazione zona non esplorata",
+        "text": "Qui c'è qualcosa che non va. Facciamo attenzione."
+      },
+      {
+        "title": "Individuazione nemico potente",
+        "text": "Occhio. Quello non promette niente di buono."
+      },
+      {
+        "title": "Estrazione 1",
+        "text": "Dei minerali di qualità!"
+      },
+      {
+        "title": "Estrazione 2",
+        "text": "Apprezziamo il tuo impegno!"
+      },
+      {
+        "title": "Apertura di una cassa",
+        "text": "Hai trovato la pentola d'oro! Ah ah! Ti sto solo prendendo in giro!"
+      },
+      {
+        "title": "Acquisizione di Aurylene",
+        "text": "Terrò io quest'Aurylene per te."
+      },
+      {
+        "title": "Eliminazione Contaminazione",
+        "text": "Contaminazione neutralizzata! Uff... che stanchezza."
+      },
+      {
+        "title": "Riposo",
+        "text": "Ho avuto la mia dose di cibo e sonno. Proseguiamo."
+      },
+      {
+        "title": "Utilizzo di gadget 1",
+        "text": "Niente panico! Ci sono io!"
+      },
+      {
+        "title": "Utilizzo di gadget 2",
+        "text": "Così va meglio."
+      },
+      {
+        "title": "Avviso di pericolo",
+        "text": "Occhio! Non farti colpire!"
+      },
+      {
+        "title": "Ferita",
+        "text": "Argh... Non sto molto bene."
+      },
+      {
+        "title": "Esaurimento PS",
+        "text": "Mi spiace... devo tirare un attimo il fiato!"
+      },
+      {
+        "title": "Incoraggiamento alla squadra 1",
+        "text": "Che mossa da professionista!"
+      },
+      {
+        "title": "Incoraggiamento alla squadra 2",
+        "text": "Siamo una bella squadra!"
+      },
+      {
+        "title": "Risposta all'incoraggiamento 1",
+        "text": "Prego!"
+      },
+      {
+        "title": "Risposta all'incoraggiamento 2",
+        "text": "Andiamo alla grande, squadra!"
+      },
+      {
+        "title": "Inizio combattimento 1",
+        "text": "Vuoi un pezzo di panda? VIENI A PRENDERLO!"
+      },
+      {
+        "title": "Inizio combattimento 2",
+        "text": "Dai gli ordini! Io mi occupo del resto!"
+      },
+      {
+        "title": "Vittoria in combattimento 1",
+        "text": "Ecco perché comandi tu!"
+      },
+      {
+        "title": "Vittoria in combattimento 2",
+        "text": "Una gran bella battaglia... Oh, beh, è ora di mangiare."
+      },
+      {
+        "title": "Vittoria in combattimento 3",
+        "text": "Ben detto! È stato divertente, e abbiamo vinto!"
+      },
+      {
+        "title": "Vittoria in combattimento 4",
+        "text": "C'è mancato poco. Hanno quasi rotto il mio wok di ferro."
+      },
+      {
+        "title": "Sconfitta in combattimento",
+        "text": "Niente paura. Farò da mangiare per la squadra e ci vendicheremo di questa sconfitta!"
+      },
+      {
+        "title": "Colpo finale 1",
+        "text": "Arriva!"
+      },
+      {
+        "title": "Colpo finale 2",
+        "text": "PRENDI QUA!"
+      },
+      {
+        "title": "Abilità di combattimento 1",
+        "text": "GIRA QUEL WOK!"
+      },
+      {
+        "title": "Abilità di combattimento 2",
+        "text": "MANGIA QUESTO!"
+      },
+      {
+        "title": "Abilità di combattimento 3",
+        "text": "VOLA VIA!"
+      },
+      {
+        "title": "Abilità combo pronta 1",
+        "text": "Serve una mano?"
+      },
+      {
+        "title": "Abilità combo pronta 2",
+        "text": "Guarda un po'!"
+      },
+      {
+        "title": "Esecuzione combo 1",
+        "text": "Guardami!"
+      },
+      {
+        "title": "Esecuzione combo 2",
+        "text": "Mangia la polvere!"
+      },
+      {
+        "title": "Mossa letale 1",
+        "text": "A mai più rivederci!"
+      },
+      {
+        "title": "Mossa letale 2",
+        "text": "OFFRE LA CASA!"
+      },
+      {
+        "title": "Abilità suprema 1",
+        "text": "ULTRA WOK!"
+      },
+      {
+        "title": "Abilità suprema 2",
+        "text": "ASSAGGIA IL PANDA SPECIAL!"
+      },
+      {
+        "title": "Abilità suprema 3",
+        "text": "È ora di... SPAZZOLARE IL PIATTO!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

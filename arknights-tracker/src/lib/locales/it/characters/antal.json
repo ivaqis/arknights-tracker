@@ -117,7 +117,329 @@
         "name": "Creatività",
         "description": "Creatività: lezioni sull'uso appropriato dell'ironia\nAntal vuole diventare il guru delle battutacce, e ci si dedica con fastidiosa costanza."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Preparazione all'operazione 1",
+        "text": "Mmh. Inizia un altro turno."
+      },
+      {
+        "title": "Preparazione all'operazione 2",
+        "text": "Chi è la cavia stavolta?"
+      },
+      {
+        "title": "Aggiunta alla squadra 1",
+        "text": "Una missione per me? Bene. Sono in cerca di opportunità per provare sul campo dei DOPE modificati."
+      },
+      {
+        "title": "Aggiunta alla squadra 2",
+        "text": "Se hai un piano, dammi gli ordini e basta. Mi fido del tuo giudizio."
+      },
+      {
+        "title": "Cambio arma",
+        "text": "Un'arma nuova e non calibrata. Devo sottoporla a un giro di valutazione delle prestazioni."
+      },
+      {
+        "title": "Cambio equipaggiamento",
+        "text": "Il nuovo equipaggiamento presenta delle migliorie sostanziali. Tuttavia, si impiglia sulle mie scaglie."
+      },
+      {
+        "title": "Attivazione matrice delle abilità",
+        "text": "Mmh... grazie per le indicazioni. Mi è venuta l'ispirazione per qualcosa di nuovo."
+      },
+      {
+        "title": "Visione delle registrazioni di combattimenti",
+        "text": "Un piano di combattimento notevole, Endministrator. Sono lieto di far parte delle tue operazioni."
+      },
+      {
+        "title": "Promozione operatore 1",
+        "text": "Un aumento? Sono lieto di ricevere fondi aggiuntivi per l'ottenimento di dispositivi a Originium e unità delle Arti. La mia ricerca e il mio patrimonio personale ne trarranno beneficio."
+      },
+      {
+        "title": "Promozione operatore 2",
+        "text": "Una promozione, ma che prevede del lavoro extra in futuro? Capito. Allora, c'è qualche nuova missione per me?"
+      },
+      {
+        "title": "Promozione operatore 3",
+        "text": "È un incoraggiamento per la mia sete di conoscenza? Ho appena finito un rapporto sul nucleo di automazione protocollare. Puoi esaminarlo per vedere se ho dimenticato qualcosa."
+      },
+      {
+        "title": "Promozione operatore 4",
+        "text": "La vita alla Endfield è molto diversa rispetto ai miei giorni all'Accademia. Allora ottenevo facilmente dei bei voti con le mie ricerche, ma adesso non sembra più avere importanza. Devo imparare e vivere fidandomi dei miei compagni, in modo da ottenere risultati come una squadra."
+      },
+      {
+        "title": "Operatore a rapporto",
+        "text": "Antal della Squadra Z7 a rapporto. Ho studiato l'automazione a base di Originium e, di tanto in tanto, contribuisco alla modifica o alla riparazione dei dispositivi a Originium. Puoi rivolgerti a me per svolgere lavori simili... E poi, ho una domanda per te. Di che materiale è fatta la tua maschera? Fibra di carbonio?"
+      },
+      {
+        "title": "Attesa 1",
+        "text": "Vuoi parlarmi di qualcosa?"
+      },
+      {
+        "title": "Attesa 2",
+        "text": "Sto cercando di elaborare una freddura per te."
+      },
+      {
+        "title": "Assegnazione a una struttura",
+        "text": "Un nuovo incarico? Affermativo."
+      },
+      {
+        "title": "Saluto 1",
+        "text": "Puoi farmi qualsiasi domanda legata ai dispositivi a Originium, o ad altri argomenti."
+      },
+      {
+        "title": "Saluto 2",
+        "text": "È strano, ma con te presente ho ancora più voglia di condividere le mie vaste conoscenze."
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 1",
+        "text": "Posso ispezionare i tuoi armamenti, Endmin? Mmh. L'unico problema che vedo è l'usura di certi componenti. Sostituire un singolo componente di precisione di Originium sistemerà tutto. Non ci vorrà molto per la riparazione. Offro questo servizio a tutti i membri della Squadra Z7."
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 2",
+        "text": "Secondo i miei studi, la Dijiang è una meraviglia ingegneristica. Il controllo centrale, il nodo della rete di Protorig, i sistemi di supporto vitale e varie parti della nave offrono grandi opportunità di apprendimento. Mi hanno dato lo spunto per strutturare la mia prossima tesi."
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 3",
+        "text": "Ho coniato una battuta basata sulle esperienze personali di Fluorite. Come si dovrebbe rispondere al messaggio minatorio di un antagonista? Semplice: bloccando il mittente. Stai ridendo. Il fatto che sia una battuta divertente è stato verificato. Ma perché gli altri non hanno riso come te?"
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 4",
+        "text": "Se sei in uno stato di freddezza emotiva, vieni fuori con me. La radiazione solare stimola la produzione di serotonina, che mitiga le emozioni negative. C'era un parco con una fontana vicino all'Accademia, un luogo tranquillo dove poter fare incetta di raggi solari. Quando studiavo, mi offriva riposo nei momenti di stanchezza estrema."
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 5",
+        "text": "Ieri mi è arrivata la risposta di mia nonna. Sembra interessata a una certa persona che ho nominato più volte nelle lettere che le ho mandato. Riferirò il suo messaggio alla suddetta persona, ovvero tu, Endmin: \"Ormai saprai che un certo giovane Savra sa essere piuttosto testardo, seppur sia buono di natura. Ti prego di stargli accanto. Spero di poterti offrire una tazza di tè e raccontarti di più su come ho cresciuto quel ragazzino coperto di scaglie\"."
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 6",
+        "text": "In molti guardano Talos-II dai ponti della Dijiang. Lo facevo anche io e, nonostante offrisse una prospettiva diversa, non provavo la stessa nostalgia che sentivano gli altri. Forse è per colpa di mia nonna. Mi diceva sempre di non rivangare il passato e focalizzarmi sul futuro."
+      },
+      {
+        "title": "Offerta regali",
+        "text": "Secondo le convenzioni sociali, le persone si scambiano regali per comunicare i propri sentimenti. A tal riguardo, ho preparato questo dono apposta per te."
+      },
+      {
+        "title": "Accettazione regali",
+        "text": "Ti sono grato. Capisco cosa significa offrire un dono, per questo conserverò con cura ciò che mi hai regalato."
+      },
+      {
+        "title": "Dialogo fiducia 1",
+        "text": "Unirsi alla Endfield non è stata una scelta difficile. Voi disponete di nuove tecnologie che all'Accademia non hanno. La società scientifica sa essere fin troppo conservatrice per quanto riguarda il progresso in certi campi. La Endfield, invece, eccelle per spirito d'esplorazione, innovazione e applicazioni pratiche."
+      },
+      {
+        "title": "Dialogo fiducia 2",
+        "text": "Il mio libro? Esatto, è proprio \"La raccolta delle sfide di sudoku più estreme\". I puzzle aritmetici mi aiutano a gestire le emozioni durante i periodi di inattività. Ho condiviso questo mio passatempo coi membri della Z7, ma non è stato apprezzato. Ti va di provare, Endmin?"
+      },
+      {
+        "title": "Dialogo fiducia 3",
+        "text": "Una freddura per me? L'ascolterò. \"Perché i Savra sparano freddure solo di giorno? Perché quando il sole spacca le pietre, serve qualcuno che faccia abbassare la temperatura.\"...Ahrra-rrah-rrah. Non intendevo offendere, Endmin. Questo è il suono che fa un Savra quando ride di gusto."
+      },
+      {
+        "title": "Dialogo fiducia 4",
+        "text": "Ho modificato diversi dispositivi a Originium. Quello che mi manca di più, però, è il bastone che mia nonna mi diede quando ero piccolo. Ricordo ancora cosa mi disse allora: \"Ti accompagnerà mentre plasmerai il mondo\"."
+      },
+      {
+        "title": "Dialogo fiducia 5",
+        "text": "Mia nonna una volta mi disse che passare tutta la vita a rispondere a un quesito scientifico sarà anche romantico, ma vivere senza amici ti condanna alla solitudine. Non capii cosa intendeva. Poi un giorno desiderai condividere la gioia di una nuova scoperta, solo che non c'eri. Quest'incidente mi ha insegnato cosa significa la solitudine."
+      },
+      {
+        "title": "Chiacchierata 1",
+        "text": "Fluorite mi ha insegnato un gioco di carte per passare il tempo. Tra l'altro, mi ha detto che chi perde deve fare qualsiasi cosa per chi vince. Abbiamo giocato cinque partite. Ora mi impartirà cinque lezioni individuali su \"come diventare un buon partner di conversazione\"."
+      },
+      {
+        "title": "Chiacchierata 2",
+        "text": "A cena? No. Non posso. Ho dato la caccia a un Aggelos senza riferirlo alla mia capitana. Mi ha punito negandomi il diritto di usufruire della mensa di notte."
+      },
+      {
+        "title": "Chiacchierata 3",
+        "text": "Perché ho scelto la Z7 invece di un progetto di R&S? Inizialmente ero interessato al centro R&S, ma ho svolto il colloquio con la capitana Akekuri. Lei crede che i dispositivi a Originium modificati dovrebbero essere testati sul campo, al di fuori del laboratorio. In questo modo, è più facile identificare eventuali problemi. Io sono d'accordo, per questo mi sono unito alla squadra."
+      },
+      {
+        "title": "Chiacchierata 4",
+        "text": "Perché sono ossessionato dalle freddure? Quando andavo a scuola, i compagni si lamentavano della mia mancanza di senso dell'umorismo. Io sono d'accordo con loro. È un difetto da correggere."
+      },
+      {
+        "title": "Chiacchierata 5",
+        "text": "Mia nonna era felice che me ne andassi di casa per unirmi alla Endfield. Secondo lei, era un modo per distogliermi dalla lettura e dai dispositivi a Originium. Sperava che scoprissi come andare d'accordo coi compagni di squadra e... che magari mi facessi qualche amico."
+      },
+      {
+        "title": "Argomento: Akekuri",
+        "text": "La capitana Akekuri? Mi ha reclutato lei. È molto amichevole. Ascolto tutte le sue istruzioni. Anche se dice che la squadra sta andando bene, spesso non dorme e fa su e giù nel cuore della notte. Si rifiuta di dirmi il perché. Spero che possa dirmelo tu, Endmin."
+      },
+      {
+        "title": "Argomento: Catcher",
+        "text": "Catcher ha il compito di preparare le razioni durante le operazioni sul campo. Padroneggia gli utensili da cucina meglio di come io utilizzo i miei DOPE. Quando piove, però, non parla. Eppure, non mi scaccia. Trovo che sia un atteggiamento difficile da interpretare."
+      },
+      {
+        "title": "Argomento: Fluorite",
+        "text": "Vedo Fluorite come una mia amica a scaglie, per certi versi. Credo che la sua possente coda sia attraente, ma lei non vuole che ne attesti la consistenza attraverso il tatto. Inoltre, è molto abile nell'arte della conversazione. Posso imparare molto da lei."
+      },
+      {
+        "title": "Argomento: Estella",
+        "text": "In battaglia penso sempre a difendere Estella. Entrambi abbiamo una pelle dai toni riflettenti e sgargianti. Rappresenta un grave pericolo in battaglia, poiché siamo più facili da individuare."
+      },
+      {
+        "title": "Individuazione risorsa/collezionabile 1",
+        "text": "Bene. Abbiamo fatto una nuova scoperta."
+      },
+      {
+        "title": "Individuazione risorsa/collezionabile 2",
+        "text": "Dobbiamo esaminare quella scoperta chiave."
+      },
+      {
+        "title": "Individuazione zona non esplorata",
+        "text": "Desidero indagare su questo mistero."
+      },
+      {
+        "title": "Individuazione nemico potente",
+        "text": "Rilevata unità ostile d'élite."
+      },
+      {
+        "title": "Estrazione 1",
+        "text": "I minerali assolvono a svariati scopi. Raccogliamone un po'."
+      },
+      {
+        "title": "Estrazione 2",
+        "text": "Così aumenteremo la nostra efficienza."
+      },
+      {
+        "title": "Apertura di una cassa",
+        "text": "Trovata una ricca fonte di risorse. Dovremmo esaminarla per vedere se contiene materiali per la manutenzione dell'equipaggiamento."
+      },
+      {
+        "title": "Acquisizione di Aurylene",
+        "text": "Tutt'a un tratto, l'Aurylene si allontana quando ci avviciniamo. Perché? Che sia una qualche forma di repulsione energetica?"
+      },
+      {
+        "title": "Eliminazione Contaminazione",
+        "text": "Significa forse che abbiamo acquisito una maggiore comprensione della Contaminazione?"
+      },
+      {
+        "title": "Riposo",
+        "text": "Le persone non sono macchine, per questo hanno bisogno di tempo per riposare."
+      },
+      {
+        "title": "Utilizzo di gadget 1",
+        "text": "Somministro cura di emergenza."
+      },
+      {
+        "title": "Utilizzo di gadget 2",
+        "text": "Condizioni di stabilità ripristinate."
+      },
+      {
+        "title": "Avviso di pericolo",
+        "text": "Rilevato attacco nemico in arrivo."
+      },
+      {
+        "title": "Ferita",
+        "text": "Condizioni non ottimali. Grado di funzionalità sufficiente."
+      },
+      {
+        "title": "Esaurimento PS",
+        "text": "I miei pensieri... sono svaniti. Il supporto... non è disponibile."
+      },
+      {
+        "title": "Incoraggiamento alla squadra 1",
+        "text": "Una prestazione eccellente."
+      },
+      {
+        "title": "Incoraggiamento alla squadra 2",
+        "text": "Abbiamo raggiunto la perfetta sinergia."
+      },
+      {
+        "title": "Risposta all'incoraggiamento 1",
+        "text": "Grazie, ma avrei potuto fare di meglio."
+      },
+      {
+        "title": "Risposta all'incoraggiamento 2",
+        "text": "Un esito definitivo."
+      },
+      {
+        "title": "Inizio combattimento 1",
+        "text": "Unità delle Arti a livello ottimale."
+      },
+      {
+        "title": "Inizio combattimento 2",
+        "text": "Concentrati sulla battaglia. Io penso al fuoco di copertura."
+      },
+      {
+        "title": "Vittoria in combattimento 1",
+        "text": "Ho acquisito nuove conoscenze."
+      },
+      {
+        "title": "Vittoria in combattimento 2",
+        "text": "Missione compiuta. È stato un gioco da ragazzi."
+      },
+      {
+        "title": "Vittoria in combattimento 3",
+        "text": "Sono stati tutti indispensabili per la squadra."
+      },
+      {
+        "title": "Vittoria in combattimento 4",
+        "text": "Abbiamo ottenuto risultati ottimali, nonostante le molte variabili del combattimento."
+      },
+      {
+        "title": "Sconfitta in combattimento",
+        "text": "Secondo le tabulazioni delle sconfitte subite, la fuga era l'opzione migliore per la squadra."
+      },
+      {
+        "title": "Colpo finale 1",
+        "text": "Falla rilevata!"
+      },
+      {
+        "title": "Colpo finale 2",
+        "text": "Umpf! Paralisi!"
+      },
+      {
+        "title": "Abilità di combattimento 1",
+        "text": "Direzione stabilita."
+      },
+      {
+        "title": "Abilità di combattimento 2",
+        "text": "Bersaglio agganciato."
+      },
+      {
+        "title": "Abilità di combattimento 3",
+        "text": "Energia al massimo."
+      },
+      {
+        "title": "Abilità combo pronta 1",
+        "text": "Carica completa."
+      },
+      {
+        "title": "Abilità combo pronta 2",
+        "text": "Unità pronta a partire."
+      },
+      {
+        "title": "Esecuzione combo 1",
+        "text": "Scossa critica."
+      },
+      {
+        "title": "Esecuzione combo 2",
+        "text": "Acceleriamo la vittoria!"
+      },
+      {
+        "title": "Mossa letale 1",
+        "text": "Esplosione di ioni."
+      },
+      {
+        "title": "Mossa letale 2",
+        "text": "Scarica voltaica."
+      },
+      {
+        "title": "Abilità suprema 1",
+        "text": "Una vittoria elettrizzante."
+      },
+      {
+        "title": "Abilità suprema 2",
+        "text": "Circuito amplificato."
+      },
+      {
+        "title": "Abilità suprema 3",
+        "text": "È ora di fare scintille."
+      }
+    ]
   },
   "potentials": {
     "potential1": {

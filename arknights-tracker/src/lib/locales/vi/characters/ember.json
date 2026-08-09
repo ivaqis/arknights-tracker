@@ -120,7 +120,333 @@
         "name": "Công Nghệ",
         "description": "Công Nghệ: Tự Sửa Chữa\nNgay cả những thiết bị tiên tiến nhất cũng cần được bảo trì đúng cách. Một người lính có nghĩa vụ phải am hiểu toàn diện về người bạn đồng hành gần gũi nhất của mình."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Chuẩn Bị Tác Chiến 1",
+        "text": "Mọi thứ đã sẵn sàng. Chờ lệnh của ngài."
+      },
+      {
+        "title": "Chuẩn Bị Tác Chiến 2",
+        "text": "Nhiệm vụ mới?"
+      },
+      {
+        "title": "Đang thêm vào đội 1",
+        "text": "Tôi sẽ phụ trách buổi họp chiến thuật."
+      },
+      {
+        "title": "Đang thêm vào đội 2",
+        "text": "Lên đường thôi. Chiến tranh chẳng bao giờ kết thúc. Chúng ta chỉ có thể tiếp tục tiến bước."
+      },
+      {
+        "title": "Đang đổi vũ khí",
+        "text": "Một món khí cụ thủ công tuyệt hảo. Tôi sẽ tận dụng nó một cách xứng đáng."
+      },
+      {
+        "title": "Đang đổi trang bị",
+        "text": "Đã lâu rồi tôi mới thấy trang bị đạt chuẩn như thế này."
+      },
+      {
+        "title": "Kích hoạt Ma Trận Năng Lực",
+        "text": "Sức của tôi đang hồi phục... nhưng vẫn chưa đủ."
+      },
+      {
+        "title": "Xem Hồ Sơ Chiến Đấu",
+        "text": "Làm việc nhóm xuất sắc... Cảm ơn. Tôi đã học hỏi được rất nhiều."
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 1",
+        "text": "Cảm ơn vì đã tin tưởng tôi. Tôi sẽ không làm ngài thất vọng."
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 2",
+        "text": "Tôi hiểu. Khi đã được giao những nhiệm vụ quan trọng hơn, tôi xin phép góp ý vào kế hoạch chiến đấu."
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 3",
+        "text": "Hồi còn ở trong Hội, chỉ huy sẽ trao huy chương trong những khoảnh khắc như thế này... Điều đó không cần thiết. Cứ để mọi thứ như vậy, bởi điều tôi tìm kiếm không phải là vinh quang."
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 4",
+        "text": "Tôi không thể nói khi nào Cuộc Thập Tự Chinh này sẽ kết thúc, nhưng tôi ngày càng nhận ra rằng nó cần được thực hiện với tất cả sự nghiêm túc... Tôi mong ngài cho phép tôi được đồng hành đến cuối con đường."
+      },
+      {
+        "title": "Cán Viên đang báo cáo nhiệm vụ",
+        "text": "Ember, Kỵ sĩ của Hội Lời Thề Thép báo cáo. Theo giao ước, tôi sẽ tuân theo mệnh lệnh của ngài cho đến khi Cuộc Thập Tự Chinh kết thúc."
+      },
+      {
+        "title": "Chờ Lệnh 1",
+        "text": "Cuộc Thập Tự Chinh của tôi vẫn chưa kết thúc..."
+      },
+      {
+        "title": "Chờ Lệnh 2",
+        "text": "Chiến trường không dung thứ cho sai lầm. Chúng ta phải rèn luyện không ngừng với tất cả sự tận tâm."
+      },
+      {
+        "title": "Phân Công Vào Công Trình",
+        "text": "Một sứ mệnh đặc biệt? Tôi hiểu... Tôi sẽ dốc toàn lực để hoàn thành."
+      },
+      {
+        "title": "Lời Chào 1",
+        "text": "Ngài cần tôi tham gia một nhiệm vụ chiến đấu?"
+      },
+      {
+        "title": "Lời Chào 2",
+        "text": "Chào mừng ngài trở lại, Endmin. Chúng ta sẽ đến cuộc chiến nào tiếp theo?"
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 1",
+        "text": "Dijiang là một con tàu được trang bị đầy đủ tiện nghi, nhưng không vì mục đích chiến tranh. Việc thiếu sẵn sàng cho sự tác chiến liên tục khiến tôi vẫn đang phải thích nghi."
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 2",
+        "text": "Huấn luyện ngay tại Hội? Hmm... Hồi đó, tôi từng một mình đối đầu cả một cụm Homoiossaron, nên chỉ huy thường sẽ điều cả đội tân binh ra đấu với tôi."
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 3",
+        "text": "Dưới ánh aurora là tuyến phòng thủ của những Hội Lời Thề Thép. Khi chiến tranh nổ ra, bầu trời bị phủ kín bởi lũ Aggeloi lơ lửng. Các tàu sân bay và máy bay hộ tống cũng sẽ tham chiến. Đợi đã, dãy núi này lại chạy theo hướng đó...? Xin lỗi, tôi có lẽ đã... nhầm vị trí rồi."
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 4",
+        "text": "Thả lính từ trên cao vào vùng chiến sự là tiêu chuẩn trong đơn vị của tôi. Nhưng ở nơi này, ngay cả khái niệm về độ cao cũng dần mờ nhạt."
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 5",
+        "text": "Các cán viên ở đây là đối thủ luyện tập tuyệt vời. Họ đề cao sự phối hợp và rất sáng tạo trong chiến thuật. Tôi đã học hỏi được rất nhiều từ họ. Là một Hội Lời Thề Thép, tôi phải luôn theo kịp và không ngừng cải thiện bản thân."
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 6",
+        "text": "Cơ Quan Tình Báo đã cho tôi truy cập vào một số nhật ký nhiệm vụ. Rất nhiều người đã hi sinh cho lý tưởng của họ, dù chưa từng đặt chân lên chiến trường. Có thể họ không hối tiếc, nhưng tôi tự hỏi: Chúng ta phải làm gì để không còn quá nhiều sự hi sinh vô ích như thế nữa?"
+      },
+      {
+        "title": "Tặng Quà",
+        "text": "Xin nhận lấy, Endmin."
+      },
+      {
+        "title": "Nhận quà",
+        "text": "Cảm ơn ngài. Tôi sẽ coi đây như một dấu hiệu tán thành từ ngài."
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 1",
+        "text": "Bộ giáp này được chế tạo rất tỉ mỉ. Với Hội Lời Thề Thép như chúng tôi, kỹ năng bảo trì và sửa chữa là điều bắt buộc phải học. Nhưng cuối cùng, thứ bảo vệ mạng sống nơi chiến trường không phải là bộ giáp. Mà chính là ý chí đứng lên, tư duy chiến lược, và lòng dũng cảm hành động."
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 2",
+        "text": "Xin cho phép tôi thanh toán chi phí điều trị cho cán viên dự bị đó. Trong Hội Lời Thề Thép, nhiều người sẵn sàng hi sinh, nhưng nếu thiếu một mục tiêu rõ ràng để chiến thắng, lòng quyết tâm đó chỉ khiến tất cả gặp nguy hiểm. *Thở dài* Tôi mải suy nghĩ mà hơi mạnh tay... Thật lòng xin lỗi."
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 3",
+        "text": "Có một truyền thống trong Hội Lời Thề Thép. Khi một đội hình suy yếu, Hội Lời Thề Thép phải rút lui để chiêu mộ đồng minh mới. Ngài có thể xem đó như một phần của Cuộc Thập Tự Chinh. Chúng tôi không vội, sẽ dành thời gian tìm ra người kế thừa xứng đáng. Tuy nhiên... có vẻ Cuộc Thập Tự Chinh của tôi đã kéo dài quá lâu rồi."
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 4",
+        "text": "Khi tôi giao lại di vật và tro cốt cho đồng đội đã ngã xuống, tôi gặp cha mẹ họ, anh em họ, và cả người thân yêu. Tôi từng ngăn một người bạn thân của họ không đi về phía Bắc để trả thù. Tôi trở thành người thường xuyên an ủi người khác, khuyên họ đừng hành động bồng bột. Có lẽ vì vậy mà chỉ huy mới ép tôi bắt đầu Cuộc Thập Tự Chinh càng sớm càng tốt."
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 5",
+        "text": "Đây là Claire, kia là Zhao, Nilla và Lucion. Người có ánh mắt sắc như dao đó là Fiyanggu, một tân binh. Không ai trong số họ thực sự uống rượu cả. Chúng tôi chỉ giả vờ nâng ly vì có nhà báo đến thăm. Họ đều là những chiến binh xuất chúng, và đó là lý do họ chọn hoàn thành nhiệm vụ vào ngày hôm đó. Nếu người kế thừa của họ cũng xuất sắc như vậy... Tôi không nghĩ mình đủ can đảm để gửi họ lên phương Bắc. Tại sao tôi lại nghĩ như vậy, Endmin? Tôi còn thiếu điều gì?"
+      },
+      {
+        "title": "Trò Chuyện 1",
+        "text": "Ember, mật danh này là do chính tôi chọn. Tôi không hề có ý trốn tránh sự thật là: Tôi chưa sẵn sàng trở lại mặt trận phương Bắc. Nhưng chừng nào tàn lửa còn cháy, Ember vẫn sẽ bùng lên. Endmin, tôi tin rằng Endfield sẽ giúp tôi tìm ra con đường của mình."
+      },
+      {
+        "title": "Trò Chuyện 2",
+        "text": "Các đơn vị an ninh tiêu chuẩn có thể đối phó với Kriosson, nhưng mọi chuyện sẽ hoàn toàn thay đổi khi Thrylissoron xuất hiện. Trong Hội Lời Thề Thép, các đội hình chiến thuật như chúng tôi được giao nhiệm vụ đột phá đội hình địch, vô hiệu hóa các Ankhor và ngăn chặn sự xuất hiện của những cụm Aggeloi nguy hiểm hơn. Đây là những nhiệm vụ vô cùng mạo hiểm, nhưng chúng tôi tự hào vì được thực hiện chúng."
+      },
+      {
+        "title": "Trò Chuyện 3",
+        "text": "Một đội hình khi suy yếu sẽ được rút về hậu phương để chiêu mộ binh sĩ mới, đó cũng là cách đặc biệt để Hội Lời Thề Thép tìm ra những chiến binh kế thừa. Những người đến thách đấu tôi thật ra chỉ mong được gia nhập; họ không có thù oán cá nhân gì với tôi cả. Tất nhiên, chỉ thắng thôi thì chưa đủ. Sức mạnh và kỹ năng là cần thiết, nhưng quan trọng là trận chiến tiết lộ gì về phẩm chất của người thách đấu."
+      },
+      {
+        "title": "Trò Chuyện 4",
+        "text": "Ngài tò mò về Khẩu Pháo Hộ Vệ của tôi sao? E rằng tôi đã để nó lại tại pháo đài của Hội Lời Thề Thép rồi. Tôi không thực sự chiến đấu bằng vũ khí tầm xa. Khẩu súng ấy giống như một phần con người tôi vậy. Việc để nó lại đó giống như một lời nhắc nhở, một ngày nào đó, tôi sẽ quay lại."
+      },
+      {
+        "title": "Trò Chuyện 5",
+        "text": "Khi tôi được điều khỏi tiền tuyến, chỉ huy không hề ấn định ngày trở về. Thực tế, tôi đã nghe về những cựu binh khác cũng nhận lệnh tương tự. Họ được đưa về hậu phương để chiêu mộ nhân sự, nhưng chẳng ai quay lại pháo đài cả. Có lẽ, đó là cách tôn trọng lặng lẽ để nói rằng họ đã được nghỉ hưu. Nhưng tôi không định đi theo con đường ấy. Đó là lý do chỉ huy đề cử tôi đến gặp ngài. Ông ấy tin rằng Endfield có thể giúp tôi tìm ra điều mà tôi vẫn còn thiếu. Tôi rất mong là ông ấy đúng."
+      },
+      {
+        "title": "Chủ đề: Hội Lời Thề Thép",
+        "text": "Trong Cuộc Chiến Aggeloi Đầu Tiên, một liên minh tinh nhuệ được thành lập để tiến công phương Bắc. Họ thề sẽ chiến đấu đến cùng, mở ra một cuộc chiến tiêu hao kéo dài, đầy khốc liệt. Đó chính là lúc những người đầu tiên của Hội Lời Thề Thép... Thực ra, chỉ huy từng kể với tôi rằng chính ngài, Endmin, là người giúp họ thiết lập lại liên lạc với hậu phương. Và giờ đây, tôi lại đang kể câu chuyện ấy cho chính ngài. Cảm giác thật sự rất khó tả."
+      },
+      {
+        "title": "Chủ đề: Cuộc Chiến Aggeloi",
+        "text": "Chiến thuật và công nghệ có thể cho chúng ta lợi thế trước Aggeloi, nhưng một khi trận chiến leo thang thành chiến tranh, tổn thất sinh mạng là điều không thể tránh khỏi. Sau khi Cuộc Chiến Aggeloi Đầu Tiên kết thúc, hoạt động của Ankhor và Aggeloi giảm sút đáng kể. Thế nhưng nhiều năm sau, khi tôi vẫn còn là một binh sĩ, mặt trận phương Bắc đã bắt đầu bùng nổ trở lại... Có lẽ cuộc chiến thực sự mới chỉ vừa bắt đầu."
+      },
+      {
+        "title": "Chủ đề: Tuyến Phòng Thủ Phía Bắc",
+        "text": "Tuyến Phòng Thủ Phương Bắc chưa bao giờ là một ranh giới cố định. Mỗi ngày trôi qua, chúng tôi đều chiến đấu để giữ từng tấc đất trước Aggeloi. Khi chiến sự trở nên khốc liệt, binh sĩ thậm chí còn mang vật liệu xây dựng ra chiến trường, xây pháo đài mới ngay trên vùng chiến lược vừa chiếm được. Chúng tôi không bao giờ rút lui khỏi tuyến phòng thủ, bởi chính chúng tôi là tuyến phòng thủ."
+      },
+      {
+        "title": "Chủ đề: Thuật Pháp Originium",
+        "text": "Thuật Pháp Originium của tôi giống như ngọn lửa bình thường, có thể đốt cháy vật liệu và thiêu rụi kẻ thù. Khi kiểm soát tốt, nó còn có thể được dùng để khử trùng vết thương và điều hòa thân nhiệt. Dù có thể hữu dụng nhưng chúng không thể thay thế Thuật Pháp Y Tế thực thụ. Điều tốt nhất luôn là sơ tán người bị thương và đưa họ đi chữa trị ngay lập tức."
+      },
+      {
+        "title": "Chủ đề: Vành Đai Văn Minh",
+        "text": "Ngay cả vào lúc khốc liệt nhất, nguồn cung Thuốc Ức Chế Oripathy đến tiền tuyến chưa bao giờ bị gián đoạn. Từng là một Người Nhiễm Bệnh, tôi thấu hiểu tầm quan trọng của điều đó. Thật khó tưởng tượng loài người đã sống như thế nào trong Thời Terra... Thảm họa Originium không còn xảy ra ở đây, Người Nhiễm Bệnh cũng không còn bị truy đuổi quy mô lớn nữa. Có lẽ, đó là minh chứng cho thấy chúng ta đã đi được một chặng đường rất dài?"
+      },
+      {
+        "title": "Phát hiện Tài Nguyên/Có Thể Thu Thập 1",
+        "text": "Tìm thấy tài nguyên hữu dụng. Chuẩn bị thu thập."
+      },
+      {
+        "title": "Phát hiện Tài Nguyên/Có Thể Thu Thập 2",
+        "text": "Phát hiện vật thể giá trị cao. Yêu cầu cho phép thu thập."
+      },
+      {
+        "title": "Phát Hiện Khu Vực Chưa Khám Phá",
+        "text": "Tín hiệu bất thường phía trước. Không khớp với mẫu của Ankhor đã biết. Chúng ta có nên điều tra không?"
+      },
+      {
+        "title": "Phát hiện Kẻ Địch Mạnh",
+        "text": "Đã phát hiện kẻ địch nguy hiểm cao. Hãy cảnh giác."
+      },
+      {
+        "title": "Khai thác 1",
+        "text": "Luôn bổ sung tiếp tế khi có thể. Đừng để thiếu hụt trong lúc then chốt."
+      },
+      {
+        "title": "Khai thác 2",
+        "text": "Thu thập khoáng sản? Để tôi hỗ trợ."
+      },
+      {
+        "title": "Mở Thùng",
+        "text": "Hy vọng thứ này có ích."
+      },
+      {
+        "title": "Nhận Aurylene",
+        "text": "Chúng ta sẽ thu thập cái này chứ? Rõ, tôi sẽ để mắt tới."
+      },
+      {
+        "title": "Xua Tan Nhiễm Khuẩn",
+        "text": "Giờ thì những chướng ngại này không còn cản bước ta nữa."
+      },
+      {
+        "title": "Nghỉ ngơi",
+        "text": "Nghỉ ngơi hoàn tất. Tiếp tục nhiệm vụ."
+      },
+      {
+        "title": "Sử Dụng Vật Phẩm Chiến Thuật 1",
+        "text": "Chuẩn bị hỗ trợ chiến thuật."
+      },
+      {
+        "title": "Sử Dụng Vật Phẩm Chiến Thuật 2",
+        "text": "Đã chuẩn bị. Quay lại chiến đấu."
+      },
+      {
+        "title": "Cảnh Báo Nguy Hiểm",
+        "text": "Chuẩn bị va chạm!"
+      },
+      {
+        "title": "Bị Thương",
+        "text": "Tôi sẽ trụ đến cùng."
+      },
+      {
+        "title": "0 HP",
+        "text": "Cuộc Thập Tự Chinh... không thể kết thúc tại đây..."
+      },
+      {
+        "title": "Cổ Vũ Đội 1",
+        "text": "Màn thể hiện xuất sắc."
+      },
+      {
+        "title": "Cổ Vũ Đội 2",
+        "text": "Động tác chiến đấu mẫu mực."
+      },
+      {
+        "title": "Đáp Lại Lời Cổ Vũ 1",
+        "text": "Mọi người đều xứng đáng được vinh danh."
+      },
+      {
+        "title": "Đáp Lại Lời Cổ Vũ 2",
+        "text": "Đó là nhờ sự phối hợp vững chắc của toàn đội."
+      },
+      {
+        "title": "Bắt Đầu Chiến Đấu 1",
+        "text": "Tới đây! Ta chính là đối thủ!"
+      },
+      {
+        "title": "Bắt Đầu Chiến Đấu 2",
+        "text": "Rõ. Tiếp cận kẻ địch."
+      },
+      {
+        "title": "Thắng Trận 1",
+        "text": "Một chiến thắng xứng đáng."
+      },
+      {
+        "title": "Thắng Trận 2",
+        "text": "Chúng ta đã chiến đấu với lòng dũng cảm và sự cẩn trọng. Làm tốt lắm, mọi người."
+      },
+      {
+        "title": "Thắng Trận 3",
+        "text": "Chiến thắng này là nhờ nỗ lực của cả đội."
+      },
+      {
+        "title": "Thắng Trận 4",
+        "text": "Tôi đã thể hiện không tốt... Nhưng tôi sẽ rút kinh nghiệm và hoàn thiện hơn. Tôi hứa."
+      },
+      {
+        "title": "Bại Trận",
+        "text": "Tôi đã lặp lại sai lầm sao...?"
+      },
+      {
+        "title": "Đòn Dứt Điểm 1",
+        "text": "Hãy cầm lấy!"
+      },
+      {
+        "title": "Đòn Dứt Điểm 2",
+        "text": "Ngừng vùng vẫy đi!"
+      },
+      {
+        "title": "KN Chiến Đấu 1",
+        "text": "Không gì cản được tôi!"
+      },
+      {
+        "title": "KN Chiến Đấu 2",
+        "text": "Hạ chúng đi!"
+      },
+      {
+        "title": "KN Chiến Đấu 3",
+        "text": "Xông về phía trước!"
+      },
+      {
+        "title": "Chuẩn Bị KN Liên Hoàn 1",
+        "text": "Sẵn sàng hỗ trợ!"
+      },
+      {
+        "title": "Chuẩn Bị KN Liên Hoàn 2",
+        "text": "Vào vị trí!"
+      },
+      {
+        "title": "Thi Triển Liên Hoàn 1",
+        "text": "Còn lâu mới qua được mắt!"
+      },
+      {
+        "title": "Thi Triển Liên Hoàn 2",
+        "text": "Đối mặt với kết cục đi!"
+      },
+      {
+        "title": "Kết Liễu 1",
+        "text": "Tan vỡ đi!"
+      },
+      {
+        "title": "Kết Liễu 2",
+        "text": "Thật đáng thương!"
+      },
+      {
+        "title": "Tuyệt Kỹ 1",
+        "text": "Lửa Thiêng Hội Lời Thề Thép!"
+      },
+      {
+        "title": "Tuyệt Kỹ 2",
+        "text": "Ta sẽ là hiện thân của Ánh Sáng!"
+      },
+      {
+        "title": "Tuyệt Kỹ 3",
+        "text": "Ánh sáng này sẽ cháy mãi muôn đời!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

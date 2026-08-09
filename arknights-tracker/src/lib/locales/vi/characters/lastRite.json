@@ -125,7 +125,337 @@
         "name": "Lòng Nhân Ái",
         "description": "Lòng Nhân Ái: Phục Vụ Cộng Đồng\nLast Rite thích chăm sóc người bệnh hoặc gặt lúa hơn là vung vũ khí lung tung."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Chuẩn Bị Tác Chiến 1",
+        "text": "Ta chuẩn bị đi à? À, tôi... chờ tôi một chút nhé..."
+      },
+      {
+        "title": "Chuẩn Bị Tác Chiến 2",
+        "text": "Tôi nhớ trong Cẩm Nang Vận Hành có ghi... À, tôi sắp xong rồi!"
+      },
+      {
+        "title": "Đang thêm vào đội 1",
+        "text": "Tới... lượt tôi à?"
+      },
+      {
+        "title": "Đang thêm vào đội 2",
+        "text": "Last Rite, chuẩn bị tấn công...! Ờm... Chúng ta đang tấn công, đúng không?"
+      },
+      {
+        "title": "Đang đổi vũ khí",
+        "text": "Không thành vấn đề. Miễn là nó đủ nặng."
+      },
+      {
+        "title": "Đang đổi trang bị",
+        "text": "Ồ... Tôi chưa từng thấy mẫu này bao giờ... Để tôi... xem lại sách hướng dẫn sử... Sử dụng một chút..."
+      },
+      {
+        "title": "Kích hoạt Ma Trận Năng Lực",
+        "text": "Tôi sẽ tiếp tục chiến đấu... theo cách của mình!"
+      },
+      {
+        "title": "Xem Hồ Sơ Chiến Đấu",
+        "text": "HÂY DA...! Tôi... tôi xin lỗi. Cảnh đó vừa rồi thật là... Kinh khủng..."
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 1",
+        "text": "Thăng... Bậc sao? *Há hốc* Thật ư?! Dành cho... tôi sao?"
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 2",
+        "text": "Mẹ ơi... Cha ơi... Tôi... Cuối cùng cũng làm được rồi..."
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 3",
+        "text": "Đã rõ. Tôi xin thề sẽ khai mở con đường lửa và máu nhân danh ngài, không chùn bước trước... Ừm... Sao ngài lại nhìn tôi... căng thẳng vậy?"
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 4",
+        "text": "Tôi nhận ra rằng mình có thể giúp ích nhiều hơn nếu ở lại. Nếu hợp đồng của tôi ở Seš'qa hết hạn, ngài có thể liên lạc với tôi... Ố-ôi không! Tôi không nên nói ra điều đó! Làm ơn... Đừng nói với ai hết nhé..."
+      },
+      {
+        "title": "Cán Viên đang báo cáo nhiệm vụ",
+        "text": "Người Liên Lạc của Seš'qa báo cáo... Tên tôi... Ý... ý tôi là, mật danh của tôi là Last Rite... Chỉ cần gọi vậy là được rồi..."
+      },
+      {
+        "title": "Chờ Lệnh 1",
+        "text": "Phải tiếp tục luyện tập. Tôi phải làm chủ được sức mạnh này..."
+      },
+      {
+        "title": "Chờ Lệnh 2",
+        "text": "Tôi hy vọng những trận chiến của chúng ta có thể mang lại hòa bình."
+      },
+      {
+        "title": "Phân Công Vào Công Trình",
+        "text": "Tôi hiểu! Tôi sẽ nỗ lực gấp mười lần...! Không, là một trăm hai mươi lần!"
+      },
+      {
+        "title": "Lời Chào 1",
+        "text": "Endministrator?! N-ngài thế nào rồi...?"
+      },
+      {
+        "title": "Lời Chào 2",
+        "text": "Ngài cần giúp gì không, Endmin?"
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 1",
+        "text": "Tôi có thể làm được. Chỉ cần nói một câu. Vâng, phải tự tin! Này, Endmin...!!! M... món tráng miệng hôm nay... n... n... ngon đúng không...?"
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 2",
+        "text": "Ôi không… đông quá… N... nếu ai đó tới gần tôi thì sao? Tôi chỉ muốn cuộn tròn trong thùng thôi…"
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 3",
+        "text": "N-n-ngài có biết chúng ta báo cáo thiệt hại ở đâu không? Tôi... ờm... lại làm hỏng khoang huấn luyện rồi..."
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 4",
+        "text": "Hngh... T-tôi dựa vào ngài một chút được không...? Tôi chỉ cần lấy ít lương khô thôi... Tôi... tôi ổn mà... Chỉ là... hơi đói một chút..."
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 5",
+        "text": "Tai nghe cá nhân, bộ công cụ đa năng, đơn vị thuật pháp cơ bản... À, chỉ là danh sách đồ cần mua thôi. Những thứ này rất khó tìm ở quê tôi. May là có mấy đồng nghiệp bên Bộ Phận Vận Chuyển giúp tôi mua trên đường đi. Mọi người thật tốt với tôi!"
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 6",
+        "text": "Endmin... tôi có thể... dán vài tờ rơi trong Dijiang không? Seš'qa giao cho tôi cả đống việc quảng bá. Nếu không đạt KPI thì họ sẽ lôi tôi về huấn luyện đặc biệt mất..."
+      },
+      {
+        "title": "Tặng Quà",
+        "text": "Endmin, xin ngài nhận món quà nhỏ này như là biểu tượng cho lòng biết ơn vĩnh cửu của tôi! Tôi... Tôi xin lỗi... Tôi không biết nói gì nữa..."
+      },
+      {
+        "title": "Nhận quà",
+        "text": "Cái này... là cho tôi sao...? N-n-ngài chắc chứ, Endmin? Trời ơi... Tôi nghĩ là... Tôi sắp ngất mất rồi."
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 1",
+        "text": "Hehehe... Endmin, Tân Wrankwood có một ngôi nhà làm hoàn toàn bằng kẹo thật à? Tôi có thể... xin nghỉ vài hôm để tới đó không? Và đừng lo, tôi sẽ ăn sạch mấy thứ trong đó cho xứng đáng với tiền bỏ ra! Ồ... Thì ra... chỉ là quảng cáo?"
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 2",
+        "text": "Mắt tối thâm quầng sao? À, tôi đang học các khóa sơ cứu và phòng ngừa bệnh cây cơ bản... nên dạo này ngủ ít lắm... Nhưng chúng hữu ích thật sự! Chặt mọi thứ bằng kiếm không thể giải quyết hết mọi vấn đề được! Làm vậy là không ổn chút nào! Chỉ là... học các Thuật Pháp Hồi Phục khó quá..."
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 3",
+        "text": "Last Rite. Witching Hour đặt mật danh đó cho tôi. Tôi là một Nachzehrer và từng làm nghề lo hậu sự ở quê nhà, họ muốn đặt cho tôi một cái tên \"làm nổi bật đặc tính sản phẩm\"... Nhưng tôi đâu phải là sản phẩm, do bộ trang phục này đó! Last Rite có nghĩa là những nghi lễ trang nghiêm dành cho người đã khuất! Sao họ lại dùng nó theo cách buồn cười như vậy được chứ...? Endmin... Tôi có thể nhờ ngài viết giúp một lá thư khiếu nại nữa được không? Làm ơn nhé?"
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 4",
+        "text": "Mọi người cứ trêu chọc tôi là hay \"để mình đói\", tôi cũng hiểu tại sao... Nhưng việc sử dụng thiên phú của Nachzehrer sẽ làm xáo trộn người đã khuất. Dù khả năng là rất thấp, nhưng tôi cấm bản thân làm điều đó... Tôi vẫn chưa hiểu hết mọi thứ vì ma thuật của chúng tôi khá phức tạp. Nên tôi đã chọn không khai thác năng lực của mình. Đó là lựa chọn an toàn nhất!"
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 5",
+        "text": "Tôi phải chia sẻ điều này với ngài, Endmin. Tôi không quan tâm chuyện gì sẽ xảy ra. Thực ra, n-n-ngài phải biết rằng... rằng Seš'qa đã bảo bọc tôi quá mức! Họ đặt cho tôi biệt danh \"Công chúa Chiến trường\" mà chẳng hề hỏi ý kiến gì cả! Tôi chưa từng muốn lừa dối ngài... Thật lòng xin lỗi. Có lẽ tôi nên từ chức. K-khoan đã, ngài đã biết chuyện này từ đầu sao?! Và ngài... chấp nhận sao?"
+      },
+      {
+        "title": "Trò Chuyện 1",
+        "text": "Tôi mong mình có thể dùng kiếm giỏi như những cán viên khác. Ai cũng có tư thế thật đẹp, chiêu thức thật gọn gàng, phòng thủ thật vững chắc. Tôi từng thử bắt chước, nhưng cứ vô tình ném kiếm đi mất. Có lẽ tôi chỉ có thể chiến đầu quờ quạng theo bản năng thôi... Đợi đã. Ngài bảo cú vung kiếm của tôi cũng rất đẹp sao? Tôi... Tôi không chắc lắm, nhưng... Ngài thật tốt khi nói vậy."
+      },
+      {
+        "title": "Trò Chuyện 2",
+        "text": "Nhiều bộ tộc cũng nhắc đến \"linh hồn\" vẫn tồn tại sau cái chết. Cha mẹ tôi dạy tôi rất nhiều nghi thức cầu nguyện, và tôi từng thực hiện đủ cả mỗi ngày ở nghĩa trang quê nhà. Hmm? Ồ, tôi từng nghe một chủng mà Sarkaz gọi là \"Vong Linh\". Họ nói rằng họ có thể xâm nhập vào đủ loại xác chết và khiến chúng sống lại... Đợi đã. Ngài định kể chuyện kinh dị cho tôi nghe à? ĐỪNG MÀ ĐỪNG MÀ! TÔI KHÔNG MUỐN NGHE!"
+      },
+      {
+        "title": "Trò Chuyện 3",
+        "text": "Tại sao ai cũng trêu chọc tôi vậy...? Lũ trẻ ở quê gọi tôi là \"Nhăm Nhăm Nhăm\" hoặc \"Cô Bé Bối Rối\". Những tiền bối ở Endfield cũng hay đặt biệt danh kỳ quặc cho tôi. Tôi phải tìm cách trông nghiêm nghị hơn mới được... Ồ! Tôi nghĩ ra rồi. Tôi có thể đeo mặt nạ như Endmin! Nếu tôi nói chuyện khi đeo mặt nạ thì sao nhỉ? Hả? Trông nó đáng sợ quá à? Ồ... Được rồi..."
+      },
+      {
+        "title": "Trò Chuyện 4",
+        "text": "Tôi đã làm bài kiểm tra tiêu chuẩn của cán viên. Tôi đạt điểm cao ở phần thể lực, nhưng phần kỹ thuật thì... Chà, nói sao nhỉ, Giám sát viên Perlica cuối cùng cũng cho tôi đạt! Tôi vẫn đang huấn luyện bù kể từ đó! À, còn ông bác già đã đưa hợp đồng cho tôi ở thành phố nổi... Perlica nói rằng ông ấy đang cố bảo vệ tôi. Tôi không hiểu lắm, nhưng Perlica nói thì luôn đúng!"
+      },
+      {
+        "title": "Trò Chuyện 5",
+        "text": "Seš'qa từ lâu đã bảo tồn kiến thức và công cụ ma thuật của người Sarkaz, nhưng số lượng Nachzehrer ở Talos-II thì rất ít. Nhiều kỹ thuật chiến đấu từng được truyền từ đời này sang đời khác giờ đã bị thất truyền. Theo các học giả, từng có rất nhiều Nachzehrer chiến đấu trên chiến trường Terra... Họ duy trì chiến tranh bằng cách hấp thụ sức mạnh từ đồng đội đã ngã xuống... Nhưng tôi nghĩ chúng ta không cần làm vậy nữa, nhỉ? Tôi có một luồng giá lạnh rất khó kiểm soát. Nếu tôi không cẩn thận, khí lạnh đó sẽ tràn ra xung quanh. Dù vậy, đó là loại sức mạnh mà tôi... Tôi cảm thấy thoải mái khi sử dụng."
+      },
+      {
+        "title": "Chủ đề: Thiên Phú và Quyền Lực",
+        "text": "Các giáo viên người Seš'qa từng bảo một Nachzehrer phải dùng ma thuật để điều khiển băng giá. Còn tôi thì không chuẩn, vì tôi để lạnh lan ra ngoài mà không kiềm chế được. Nhưng tôi lại rất giỏi trong việc kiềm chế bản năng hấp thụ người chết. Cái giá phải trả là... tôi hay đói. Không, tôi không sao! Tôi tiêu hao năng lượng rất nhanh. Thực ra, tôi đã ăn vặt ban đêm một thời gian rồi, nhưng không hiểu sao tôi vẫn sụt cân... Ừm... Endmin... mọi người có vừa nhìn chằm chằm vào tôi không vậy?"
+      },
+      {
+        "title": "Chủ đề: Trang bị chiến đấu",
+        "text": "Trang phục của tôi lạ lắm sao? Đây là một mẫu trang bị thử nghiệm của Witching Hour. Họ muốn tôi mặc bộ này trong chiến đấu để thu thập... uhm... dữ liệu thử nghiệm gì đó thì phải? Nhưng tôi đâu giỏi đánh nhau... Không hiểu sao họ lại thuê tôi nữa... Dù sao thì, bộ này tuyệt lắm! Vừa nhẹ, bền, lại còn có thể sấy khô tóc sau khi tắm xong! Nhưng mà quyển hướng dẫn chế độ chiến đấu dày như gạch, tôi không thể nào nhớ hết nổi..."
+      },
+      {
+        "title": "Chủ đề: Cái chết",
+        "text": "Tôi vẫn nhớ từng người được chôn cất tại nghĩa trang gia đình tôi trông coi. Những cụ già, đứa trẻ xấu số, lính đánh thuê từ thị trấn khác, và cả người xa lạ mắc chứng bệnh hóa đá... Mỗi người đều có một điều ước cuối cùng. Khi cử hành nghi lễ, những người đến tiễn biệt sẽ nói ra những lời ấy. Và đằng sau những lời nói đó... Tôi có thể cảm nhận được điều họ thực sự khao khát. Họ không yêu cầu ai phải thực hiện mong muốn của mình, họ chỉ mong được lắng nghe. Ghi nhớ những điều ước ấy là điều duy nhất tôi có thể làm. Mẹ tôi từng nói, một điều ước còn sót lại chính là bằng chứng cho thấy họ từng tồn tại."
+      },
+      {
+        "title": "Chủ đề: Seš'qa",
+        "text": "Witching Hour thường phải điều chỉnh lại trang phục chiến đấu cho tôi, nên tôi hay đi đến thành phố nổi. Khi Seš'qa đi xa khỏi các thành phố, họ sẽ thu gọn công trình du hành lại, nơi ấy sẽ trở nên rất yên tĩnh. Người dẫn đoàn từng giới thiệu tôi đến Endfield bảo rằng Seš'qa đi khắp Talos-II, mang theo những đoàn lính đánh thuê và pháp sư. Mục tiêu của họ là kết nối và hỗ trợ cộng đồng người Sarkaz trên khắp thế giới. Nhưng... nói thật lòng, tôi thấy họ giống một tổ chức kiếm lời hơn là từ thiện..."
+      },
+      {
+        "title": "Chủ đề: Định mệnh",
+        "text": "Ba tôi từng kể rằng Phòng Thương Mại Tổng Hợp Talos-II đã đào nhiều giếng ở quê nhà chúng tôi từ nhiều năm trước. Nhưng một tiền bối nhân viên Endfield bảo rằng chính Endfield mới là đơn vị chính của dự án ấy! Dù sao đi nữa, khá nhiều gia đình đã dọn đến từ khi có nước. Sau đó, các đoàn lái bắt đầu ghé qua làng tôi. Họ bảo tôi có thể thử vận may ở Seš'qa, và đó chính là cách tôi gặp được mọi người tại Endfield. Có lẽ đó là định mệnh?"
+      },
+      {
+        "title": "Chủ đề: \"Bạn bè\"",
+        "text": "Từ khi tôi còn rất nhỏ. Thỉnh thoảng tôi lại nghe thấy một giọng nói vang lên trong đầu. Giọng nói ấy nghe rất mệt mỏi, dường như luôn trong trạng thái ngủ say. Không có đứa con nào của bà được chôn ở nghĩa trang chúng tôi. Tôi nghĩ họ nằm ở phương Bắc xa xôi... Và mỗi khi tôi đói, bà sẽ ôm tôi vào lòng và vỗ về tôi. Nhưng những năm gần đây, bà ngủ ngày càng nhiều hơn, và giọng nói cũng yếu dần... Tôi thật sự mong có thể làm gì đó để giúp bà..."
+      },
+      {
+        "title": "Phát hiện Tài Nguyên/Có Thể Thu Thập 1",
+        "text": "Tôi thấy có tài nguyên đằng kia... Chúng ta có nên đến đó thu thập không?"
+      },
+      {
+        "title": "Phát hiện Tài Nguyên/Có Thể Thu Thập 2",
+        "text": "Trông có vẻ đẹp đấy... Nếu tôi không nhìn nhầm..."
+      },
+      {
+        "title": "Phát Hiện Khu Vực Chưa Khám Phá",
+        "text": "Trang phục chiến đấu của tôi đang phản ứng với gì đó. Phía đó có dị thường sao?"
+      },
+      {
+        "title": "Phát hiện Kẻ Địch Mạnh",
+        "text": "Hãy cẩn thận! Kẻ địch đó trông rất mạnh!"
+      },
+      {
+        "title": "Khai thác 1",
+        "text": "Nhân viên kho vũ khí... sẽ không giận đâu nhỉ?"
+      },
+      {
+        "title": "Khai thác 2",
+        "text": "Hãy để tôi làm. Tôi mạnh lắm."
+      },
+      {
+        "title": "Mở Thùng",
+        "text": "Quaoooo... Tôi chưa từng thấy thứ gì tuyệt như vậy..."
+      },
+      {
+        "title": "Nhận Aurylene",
+        "text": "Đẹp quá trời luôn... Ôi, xin lỗi! Tôi thu thập xong rồi!"
+      },
+      {
+        "title": "Xua Tan Nhiễm Khuẩn",
+        "text": "Hy vọng tôi đã không làm đổ cái thứ nhớp nháp đó ra khắp nơi..."
+      },
+      {
+        "title": "Nghỉ ngơi",
+        "text": "C-c-có ai muốn uống gì lạnh không? Tôi có thể làm lạnh cho nè..."
+      },
+      {
+        "title": "Sử Dụng Vật Phẩm Chiến Thuật 1",
+        "text": "Để tôi giúp nào!"
+      },
+      {
+        "title": "Sử Dụng Vật Phẩm Chiến Thuật 2",
+        "text": "Tôi... Tôi thấy đỡ hơn rồi..."
+      },
+      {
+        "title": "Cảnh Báo Nguy Hiểm",
+        "text": "Cẩn thận đó! Nguy hiểm!"
+      },
+      {
+        "title": "Bị Thương",
+        "text": "Tỉnh táo lên...! Tôi không thể gục lúc này..."
+      },
+      {
+        "title": "0 HP",
+        "text": "Phải bảo vệ họ…"
+      },
+      {
+        "title": "Cổ Vũ Đội 1",
+        "text": "Th... thật... ngầu quá..."
+      },
+      {
+        "title": "Cổ Vũ Đội 2",
+        "text": "Mọi người đều giỏi quá trời!"
+      },
+      {
+        "title": "Đáp Lại Lời Cổ Vũ 1",
+        "text": "Ngài... ngài quá khen rồi!"
+      },
+      {
+        "title": "Đáp Lại Lời Cổ Vũ 2",
+        "text": "L... là nhờ công của mọi người mà!"
+      },
+      {
+        "title": "Bắt Đầu Chiến Đấu 1",
+        "text": "Để tôi đi trước nhé!"
+      },
+      {
+        "title": "Bắt Đầu Chiến Đấu 2",
+        "text": "Cùng nhau cố gắng nào mọi người!"
+      },
+      {
+        "title": "Thắng Trận 1",
+        "text": "Hy vọng mình không làm hỏng trang phục chiến đấu..."
+      },
+      {
+        "title": "Thắng Trận 2",
+        "text": "Được tạo ra nhờ công nghệ tiên tiến từ Seš'qa! A... Tôi vẫn không bỏ được thói quen này..."
+      },
+      {
+        "title": "Thắng Trận 3",
+        "text": "C-c-cả nhóm mình làm rất tốt!"
+      },
+      {
+        "title": "Thắng Trận 4",
+        "text": "Mọi người đều ổn cả chứ...? Ồ... cảm giác còn sống thật tuyệt..."
+      },
+      {
+        "title": "Bại Trận",
+        "text": "Tôi... tôi xin lỗi! Lỗi là ở tôi cả! Tôi sẽ... Tôi sẽ sửa lại mọi thứ... Chúng ta... Làm lại được không?"
+      },
+      {
+        "title": "Đòn Dứt Điểm 1",
+        "text": "Đòn... cuối cùng!"
+      },
+      {
+        "title": "Đòn Dứt Điểm 2",
+        "text": "Nghiền ngươi!"
+      },
+      {
+        "title": "KN Chiến Đấu 1",
+        "text": "Lạnh một chút thôi."
+      },
+      {
+        "title": "KN Chiến Đấu 2",
+        "text": "Hãy để tuyết đóng băng."
+      },
+      {
+        "title": "KN Chiến Đấu 3",
+        "text": "Frost, hãy nghe ta!"
+      },
+      {
+        "title": "Chuẩn Bị KN Liên Hoàn 1",
+        "text": "Để tôi dọn chỗ này!"
+      },
+      {
+        "title": "Chuẩn Bị KN Liên Hoàn 2",
+        "text": "Tôi sẵn sàng rồi!"
+      },
+      {
+        "title": "Thi Triển Liên Hoàn 1",
+        "text": "Ăn thử băng này đi!"
+      },
+      {
+        "title": "Thi Triển Liên Hoàn 2",
+        "text": "Lần này sẽ cực lạnh đây!"
+      },
+      {
+        "title": "Kết Liễu 1",
+        "text": "Xin hãy ngừng đánh nhau…"
+      },
+      {
+        "title": "Kết Liễu 2",
+        "text": "Ngươi tiêu đời rồi!"
+      },
+      {
+        "title": "Tuyệt Kỹ 1",
+        "text": "Tối đa công suất, kích hoạt!"
+      },
+      {
+        "title": "Tuyệt Kỹ 2",
+        "text": "Mộ của ngươi đã được đào sẵn rồi!"
+      },
+      {
+        "title": "Tuyệt Kỹ 3",
+        "text": "Uh, Có lời trăn trối nào không?"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

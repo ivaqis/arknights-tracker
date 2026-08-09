@@ -120,7 +120,329 @@
         "name": "Rèn Luyện Tư Duy",
         "description": "Rèn Luyện Tư Duy: Động Não\nNgày xưa, Estella ngây thơ nghĩ rằng vận động trí óc dễ hơn vận động cơ bắp."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Chuẩn Bị Tác Chiến 1",
+        "text": "Giờ nghỉ... hết rồi sao?"
+      },
+      {
+        "title": "Chuẩn Bị Tác Chiến 2",
+        "text": "Cho tôi thêm... hai phút nữa thôi..."
+      },
+      {
+        "title": "Đang thêm vào đội 1",
+        "text": "Lại nhiệm vụ nữa à? Ái chà... Được rồi... Chỉ mong xong việc trước khi tôi kiệt sức..."
+      },
+      {
+        "title": "Đang thêm vào đội 2",
+        "text": "Giờ tôi nên khám phá mấy... bí mật khó nói kia thế nào đây? Hmm..."
+      },
+      {
+        "title": "Đang đổi vũ khí",
+        "text": "Quao... Một vũ khí tối thượng... Hnnngghh... Nặng quá trời luôn..."
+      },
+      {
+        "title": "Đang đổi trang bị",
+        "text": "Đám kỹ sư Kho Vũ Khí rõ ràng đã đánh giá quá cao sức bền của tôi rồi... Hự hự... Thôi kệ."
+      },
+      {
+        "title": "Kích hoạt Ma Trận Năng Lực",
+        "text": "Ồ, lên cấp thì được nghỉ nhiều hơn hả? Hay đấy..."
+      },
+      {
+        "title": "Xem Hồ Sơ Chiến Đấu",
+        "text": "Não nâng cấp, cơ thể thăng hạng... mà thể lực thì chẳng tiến triển gì. Xem ra tôi tiêu rồi."
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 1",
+        "text": "Được thăng bậc... ngoài mong đợi thật đấy... Tôi cứ tưởng sẽ còn rất, rất... rất lâu nữa cơ..."
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 2",
+        "text": "Không ngờ kết quả lại vượt cả kỳ vọng... Endmin... Tôi xin nghỉ hai ngày để tự chăm sóc bản thân một chút..."
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 3",
+        "text": "Tại sao tôi cứ bị thăng bậc hoài vậy...? Có phải tôi là chuột bạch trong một chiến lược quản lý mới không...? Phải điều tra thử mới được..."
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 4",
+        "text": "Chà chà! Vậy là tôi được sai bảo Akekuri rồi hả? He he he... Tới lúc thử quyền rồi."
+      },
+      {
+        "title": "Cán Viên đang báo cáo nhiệm vụ",
+        "text": "Sao tôi lại phải làm chuyện này nữa chứ...? Kính chào... Endministrator. Tôi là Estella. Xin ngài đừng giao cho tôi mấy nhiệm vụ tay chân nữa. Cảm ơn."
+      },
+      {
+        "title": "Chờ Lệnh 1",
+        "text": "Ha ha... vẫn còn thở được. Lúc này tôi chỉ muốn không làm gì cả..."
+      },
+      {
+        "title": "Chờ Lệnh 2",
+        "text": "Tôi lại làm việc quá sức rồi... Hngh... Phải tranh thủ tận hưởng lúc còn được nghỉ."
+      },
+      {
+        "title": "Phân Công Vào Công Trình",
+        "text": "Nhiệm vụ mới à? Tôi rất mong đợi... Thật đó. Thiệt tình."
+      },
+      {
+        "title": "Lời Chào 1",
+        "text": "Endmin... Ngài nghỉ ngơi ổn chứ?"
+      },
+      {
+        "title": "Lời Chào 2",
+        "text": "Endmin, tôi hiếm thấy ngài nghỉ ngơi tử tế lắm."
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 1",
+        "text": "Sau khi tôi bảo Antal là tôi không thích mấy trò đố toán của cậu ấy thì cậu ấy dừng gửi luôn. Hmm... Thật ra, mọi người nên noi gương tôi mới phải."
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 2",
+        "text": "Mấy Kỹ Sư Kho Vũ Khí cứ càm ràm vì tôi làm gãy giáo nhanh quá... Thành thật mà nói, việc tôi còn vung nổi mấy món vũ khí nặng như thế này đã là kỳ tích rồi."
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 3",
+        "text": "Ông Andre...? Không biết ông ấy xoay đầu 180 độ được không nhỉ...? Chà... Tôi phải hỏi ổng vụ này vào lần sau."
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 4",
+        "text": "Akekuri mê tai dài nên tôi đã sưu tầm một đống công thức nấu món tai dài rồi đưa cho cô ấy... Rồi cô ấy lặng thinh nguyên một tuần liền... Thật kỳ quặc..."
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 5",
+        "text": "Tôi quen làm nhiệm vụ xâm nhập một mình rồi... Phiền thì phiền, nhưng phải có người làm chứ. Nhất là vì... Tôi là người thích làm việc độc lập hơn."
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 6",
+        "text": "Nhạc nặng đô ồn ào khiến tôi cảm thấy bình tĩnh lại... Tắt mấy âm thanh đó thì dễ, nhưng tôi thích cảm giác mông lung trong giai điệu hỗn loạn đó. Nó giúp tôi... quên đi mình là ai."
+      },
+      {
+        "title": "Tặng Quà",
+        "text": "Endmin, ngài nhận món này chứ? Đừng sợ... Không có gì kỳ quặc đâu."
+      },
+      {
+        "title": "Nhận quà",
+        "text": "Là cho... tôi? À thì... Cảm ơn... Tôi ít khi được ai tặng quà, nhất là người không cùng đội với tôi."
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 1",
+        "text": "Tham gia đội đột kích à? Thôi, tôi xin. Tôi tự biết mình không đủ sức bền để theo nổi... Cũng không nên bắt người ta phải cõng tôi đi khắp nơi."
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 2",
+        "text": "Có người trong nghề nói tôi dùng thông tin tình báo chưa đủ... À... Thật ra tôi chưa bao giờ nghĩ đến chuyện tận dụng chúng. Nhiều việc lắm... Chắc là tôi chỉ thích thu thập thôi."
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 3",
+        "text": "Xui xẻo hả? Ba mẹ tôi cứ nhắc về thời hoàng kim suốt, rồi bảo là do xui xẻo nên cuộc sống ngày càng tệ... Nhưng, ừm... Tôi nghĩ mỗi trải nghiệm đều có ý nghĩa riêng. Nhờ vậy mà tôi gặp được mấy người trong Đội Tác Chiến Z7..."
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 4",
+        "text": "Trước khi gặp Đội Z7, tôi đúng là chạm đáy luôn. *Thở dài* Thời đó đúng là tai họa... Có một kẻ lừa hết sạch tiền tôi, tôi thì đói muốn xỉu... Lúc đầu, Akekuri với Fluorite cho tôi tá túc cùng mấy người du mục họ cứu. Khi tôi chia sẻ chi tiết về tổ chức Landbreaker với lịch tuần tra của họ... Fluorite nhìn tôi không chớp mắt rồi hỏi tôi làm sao có được thông tin đó... Ừ, tôi còn nhớ rõ cái ánh mắt của cô ấy lúc đó."
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 5",
+        "text": "Tôi chỉ muốn sống yên bình, chấp nhận mọi thứ đến với mình... Có lúc tôi nghĩ, với một người xui như tôi thì đó chỉ là mơ mộng viển vông. Nhưng rồi tôi đến Endfield... gia nhập Đội Z7... và gặp ngài, Endmin... Cảm ơn ngài đã chấp nhận sự hiện diện của tôi..."
+      },
+      {
+        "title": "Trò Chuyện 1",
+        "text": "Quá khứ của tôi không phải là mấy cú ngoặt kịch tính. Tôi chỉ theo gia đình lang bạt hết nơi này tới nơi khác... Ừ thì vất vả, mệt mỏi, nhưng phần lớn dân Talos nào chẳng thế. Tôi chỉ mong cuộc sống sắp tới nhẹ nhàng và dễ thở hơn một chút..."
+      },
+      {
+        "title": "Trò Chuyện 2",
+        "text": "Tôi thích âm thanh chói tai phát ra khi ai đó bẻ một đoạn riff méo mó. Ra ngoài trời nghe nó, tai tôi cứ tê tê, lạ mà dễ chịu..."
+      },
+      {
+        "title": "Trò Chuyện 3",
+        "text": "Làm việc sau phòng tuyến địch không khó lắm đâu. Ngược lại... khi không biết nguy hiểm sẽ ập đến lúc nào, cảm giác hồi hộp cũng khá thú vị. Nếu chuẩn bị kỹ thì chẳng bất ngờ được đâu."
+      },
+      {
+        "title": "Trò Chuyện 4",
+        "text": "Tôi xin lỗi, Endmin. Ngài mà thấy tôi làm gì khiến ngài khó chịu thì cứ nói... Bộ Phận HR nhắc tôi chuyện này rồi... Nhưng mấy người trong Đội Z7 bảo không sao cả. Bị Estella làm phật ý là một phần của cuộc sống rồi..."
+      },
+      {
+        "title": "Trò Chuyện 5",
+        "text": "Tôi thu thập thông tin còn Fluorite là người phân tích. Sao ngài dùng thông tin để hiểu được cả suy nghĩ của đối phương vậy? Hmm... Tôi hy vọng Fluorite sẽ chia sẻ bí quyết của cô ấy cho tôi... Nhưng thứ duy nhất cô ấy nói là: \"Do kinh nghiệm cả thôi.\""
+      },
+      {
+        "title": "Chủ đề: Akekuri",
+        "text": "Hmm... Sẽ có ngày mọi người phải trả giá cho việc phân công bất công này. Ai cũng sẽ biết bí mật cupcake của Akekuri thôi... Hừ hừ hừ... Estella, cô đúng là cô gái nham hiểm."
+      },
+      {
+        "title": "Chủ đề: Catcher",
+        "text": "Catcher thì chẳng có bí mật gì cả... Mọi thứ gần như được viết hết trong Báo Cáo Hiệu Suất Làm Việc của anh ấy... Tôi không ngờ lại gặp một người kỳ quặc như thế."
+      },
+      {
+        "title": "Chủ đề: Fluorite",
+        "text": "Tôi thường được ghép cặp với Fluorite. Cô ấy cứ cười mấy câu tôi nói, rồi còn khuyến khích tôi nói thêm nữa... Hmm... Tôi nghĩ là... con người và suy nghĩ của họ đúng là phức tạp."
+      },
+      {
+        "title": "Chủ đề: Antal",
+        "text": "Savra thì rất tận tâm... dù tôi nghĩ đôi khi anh ấy hơi thái quá. Làm việc đã đủ mệt rồi... Nhưng mấy trò đùa của anh ấy thì khá thú vị. Chúng luôn khiến tôi và Fluorite bật cười."
+      },
+      {
+        "title": "Phát hiện Tài Nguyên/Có Thể Thu Thập 1",
+        "text": "Cái kia trông khá ổn đấy... Nếu được, chúng ta nên mang nó về."
+      },
+      {
+        "title": "Phát hiện Tài Nguyên/Có Thể Thu Thập 2",
+        "text": "Nhìn kìa... Chắc đáng để điều tra."
+      },
+      {
+        "title": "Phát Hiện Khu Vực Chưa Khám Phá",
+        "text": "Ái chà... Có vẻ ta phải khám phá khu vực đó rồi."
+      },
+      {
+        "title": "Phát hiện Kẻ Địch Mạnh",
+        "text": "Nguy cơ thù địch ở mức cao... Tôi tiếp tục hỗ trợ được không?"
+      },
+      {
+        "title": "Khai thác 1",
+        "text": "Giá như ai đó mang theo giàn khai thác tự động thì tốt rồi..."
+      },
+      {
+        "title": "Khai thác 2",
+        "text": "Tôi có mặt để giúp đỡ... Nhưng đừng kỳ vọng nhiều quá từ tôi..."
+      },
+      {
+        "title": "Mở Thùng",
+        "text": "Giờ thì chuyến đi này cũng đáng công rồi."
+      },
+      {
+        "title": "Nhận Aurylene",
+        "text": "À... Tôi nghĩ tôi từng thấy cái này rồi..."
+      },
+      {
+        "title": "Xua Tan Nhiễm Khuẩn",
+        "text": "Quá tuyệt. Giờ ta không cần phải đi đường vòng nữa."
+      },
+      {
+        "title": "Nghỉ ngơi",
+        "text": "Tôi hồi phục được một chút... nhưng nghỉ thêm chút nữa thì vẫn tốt hơn."
+      },
+      {
+        "title": "Sử Dụng Vật Phẩm Chiến Thuật 1",
+        "text": "Thử cái này đi... Biết đâu sẽ giúp được..."
+      },
+      {
+        "title": "Sử Dụng Vật Phẩm Chiến Thuật 2",
+        "text": "Xem ra chuẩn bị kỹ cũng có ích thật."
+      },
+      {
+        "title": "Cảnh Báo Nguy Hiểm",
+        "text": "Coi chừng... Đừng để trúng đòn."
+      },
+      {
+        "title": "Bị Thương",
+        "text": "Hự hự... Vũ khí này nặng quá..."
+      },
+      {
+        "title": "0 HP",
+        "text": "Tôi lại làm mọi người thất vọng nữa rồi..."
+      },
+      {
+        "title": "Cổ Vũ Đội 1",
+        "text": "Chà... Tôi sẽ không bao giờ làm được chuyện đó đâu."
+      },
+      {
+        "title": "Cổ Vũ Đội 2",
+        "text": "Tốt... Những gì cần làm là phối hợp nhóm."
+      },
+      {
+        "title": "Đáp Lại Lời Cổ Vũ 1",
+        "text": "Tôi không muốn phải làm chuyện này thường xuyên đâu..."
+      },
+      {
+        "title": "Đáp Lại Lời Cổ Vũ 2",
+        "text": "Yeah... Mọi người đều góp phần cả."
+      },
+      {
+        "title": "Bắt Đầu Chiến Đấu 1",
+        "text": "Trận chiến kéo dài không phải sở trường của tôi... Nên hãy hoàn thành thật nhanh."
+      },
+      {
+        "title": "Bắt Đầu Chiến Đấu 2",
+        "text": "Chúng ta thực sự phải chiến đấu sao? Được rồi. Đi thôi."
+      },
+      {
+        "title": "Thắng Trận 1",
+        "text": "Hả... Xong rồi... Mình làm tốt lắm phải không...?"
+      },
+      {
+        "title": "Thắng Trận 2",
+        "text": "Hô... May mà khi tôi không ngất giữa chừng."
+      },
+      {
+        "title": "Thắng Trận 3",
+        "text": "Tốt... Ít nhất là kết thúc nhanh..."
+      },
+      {
+        "title": "Thắng Trận 4",
+        "text": "Mọi người... đã làm tốt... Tôi thật sự rất vui vì mình trụ được..."
+      },
+      {
+        "title": "Bại Trận",
+        "text": "Tôi không thể kết thúc thế này được... Lần tới... Tôi sẽ cố gắng hơn..."
+      },
+      {
+        "title": "Đòn Dứt Điểm 1",
+        "text": "Đứng yên!"
+      },
+      {
+        "title": "Đòn Dứt Điểm 2",
+        "text": "Ngay tại đó!"
+      },
+      {
+        "title": "KN Chiến Đấu 1",
+        "text": "Sóng âm... đóng băng!"
+      },
+      {
+        "title": "KN Chiến Đấu 2",
+        "text": "Vỡ nát... phát nổ!"
+      },
+      {
+        "title": "KN Chiến Đấu 3",
+        "text": "Haa... KẾT LIỄU!"
+      },
+      {
+        "title": "Chuẩn Bị KN Liên Hoàn 1",
+        "text": "Cuối cùng... Tôi đã vào vị trí."
+      },
+      {
+        "title": "Chuẩn Bị KN Liên Hoàn 2",
+        "text": "Xin lỗi vì để chờ lâu..."
+      },
+      {
+        "title": "Thi Triển Liên Hoàn 1",
+        "text": "Kéo lên nào!"
+      },
+      {
+        "title": "Thi Triển Liên Hoàn 2",
+        "text": "Đang lên đây!"
+      },
+      {
+        "title": "Kết Liễu 1",
+        "text": "Đánh trúng... ĐIỂM yếu!"
+      },
+      {
+        "title": "Kết Liễu 2",
+        "text": "Ngươi GỤC đi!"
+      },
+      {
+        "title": "Tuyệt Kỹ 1",
+        "text": "Bom sóng âm... OANH KÍCH!"
+      },
+      {
+        "title": "Tuyệt Kỹ 2",
+        "text": "Tấn công... và nổ thôi!"
+      },
+      {
+        "title": "Tuyệt Kỹ 3",
+        "text": "Âm thanh, hợp nhất!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

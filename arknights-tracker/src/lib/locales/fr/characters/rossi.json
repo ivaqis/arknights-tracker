@@ -129,7 +129,337 @@
         "name": "Sports",
         "description": "Sports : chasse au gibier\nTraquer une proie est un travail de longue haleine, mais Rossi est très patiente. Inutile de se précipiter, car l'odeur du sang approche."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Préparation de l'opération 1",
+        "text": "C'est ma chance de montrer à l'Endmin ce que je vaux !"
+      },
+      {
+        "title": "Préparation de l'opération 2",
+        "text": "Je ne décevrai personne !"
+      },
+      {
+        "title": "Intégration à l'équipe 1",
+        "text": "Rossi, de la Meute. E-Endmin... quelle est notre mission ?"
+      },
+      {
+        "title": "Intégration à l'équipe 2",
+        "text": "Je ferai de mon mieux, Endmin !"
+      },
+      {
+        "title": "Changement d'arme",
+        "text": "Ah ! Cette arme est incroyable ! Je n'avais jamais rien vu de tel, dans le clan !"
+      },
+      {
+        "title": "Changement d'équipement",
+        "text": "Ça entrave un peu les mouvements... OH ? C'est vous qui l'avez choisi, Endmin ? Dans ce cas, je prends ! Hmm... Ça signifie forcément quelque chose..."
+      },
+      {
+        "title": "Activation de la matrice de capacités",
+        "text": "Je suis une descendante de la Meute !"
+      },
+      {
+        "title": "Visionnage d'archives de combat",
+        "text": "Alors, c'est comme ça que se battent les guerriers chevronnés... Hmm... Comme ça... puis comme ça... OK, je crois que j'ai compris !"
+      },
+      {
+        "title": "Promotion d'opérateur 1",
+        "text": "Une pro... motion ? Ah, je vois ! Dans le clan, on a des cérémonies du genre, mais je n'en ai jamais fait l'expérience. Vous savez quoi ? Ce n'est pas... si désagréable."
+      },
+      {
+        "title": "Promotion d'opérateur 2",
+        "text": "Hé hé, je m'en sors plutôt bien, hein ? Il faut bien, pour assumer les responsabilités du clan. Après tout, je compte rendre la Meute célèbre à travers tout Talos-II !"
+      },
+      {
+        "title": "Promotion d'opérateur 3",
+        "text": "Décrocher une promotion, c'est du gâteau, pour quelqu'un comme moi ! À quand la prochaine ? Je suis prête ! Il faut que j'attende le bon moment ? Bon, d'accord..."
+      },
+      {
+        "title": "Promotion d'opérateur 4",
+        "text": "Ça prouve clairement que je suis la meilleure opératrice, non ? Je me demande si ça a été aussi facile pour Catello. La prochaine fois que je le verrai, je ne manquerai pas de le narguer !"
+      },
+      {
+        "title": "Opérateur au rapport",
+        "text": "Je suis Rossina, nom accordé Wulfperl, ce qui veut dire « le trésor de la Meute » ! Vous avez intérêt à vous en souvenir ! Ah... Endmin, vous pouvez m'appeler comme vous le souhaitez..."
+      },
+      {
+        "title": "En attente 1",
+        "text": "L'heure du bain du sang est arrivée. Allons chasser. Je veux dire... allons manger."
+      },
+      {
+        "title": "En attente 2",
+        "text": "Proies, prenez garde ! Je suis les pattes de la Meute ! Attendez... ça sonne mal ? Peu importe... Aouuuuh !"
+      },
+      {
+        "title": "Affectation à une installation",
+        "text": "Du gâteau, pour une recrue d'élite comme moi !"
+      },
+      {
+        "title": "Salutation 1",
+        "text": "E-Endmin ! Vous avez une mission pour moi, aujourd'hui ?"
+      },
+      {
+        "title": "Salutation 2",
+        "text": "Endmin, vous voulez bien me parler de votre expérience de commandement ?"
+      },
+      {
+        "title": "Bavardage sur le Dijiang 1",
+        "text": "Comment fait Endfield pour gérer tant d'opérateurs ? Apparemment, il y a des... systèmes ? Et une sorte de... contrôle central ? Je ne comprends pas... mais ça vaut le coup de se pencher sur la question !"
+      },
+      {
+        "title": "Bavardage sur le Dijiang 2",
+        "text": "Les aînés du clan m'ont dit de me rendre à bord du Dijiang plus souvent. Apparemment, c'est là que j'apprendrai à diriger, à vos côtés. Mais vous êtes difficile à trouver !"
+      },
+      {
+        "title": "Bavardage sur le Dijiang 3",
+        "text": "Les grands frères et sœurs du Dijiang me traitent toujours comme une gamine ! Mais au sein de la Meute, je fais déjà partie de l'élite. La prochaine fois, je le leur expliquerai clairement. Ça doit cesser ! Même si les collations qu'ils me donnent sont vraiment bonnes..."
+      },
+      {
+        "title": "Bavardage sur le Dijiang 4",
+        "text": "Les affaires du clan passent avant tout ! Mais en cas d'urgence à Endfield, je viendrai tout de suite. C'est juste que... je ne sais pas trop si vous avez besoin de mon aide. Vous savez faire tellement de choses, vous n'avez probablement pas besoin de moi pour gérer les crises. Pourtant, j'aimerais me rendre utile... Que dois-je faire ?"
+      },
+      {
+        "title": "Bavardage sur le Dijiang 5",
+        "text": "J'ai entendu dire que Catello était à bord du Dijiang, alors pourquoi reste-t-il si insaisissable ? J'imagine que les vieilles habitudes ont la peau dure... Si je ne le trouve pas rapidement, Nonno Rozzan sera furieux. Je n'ai vraiment pas envie de le voir en colère... Endmin, vous savez où se trouve Catello ?"
+      },
+      {
+        "title": "Bavardage sur le Dijiang 6",
+        "text": "Pourquoi est-ce que je ne trouve pas d'informations sur vous à bord du Dijiang ? Je me suis enfin décidée à utiliser cette « archive d'informations », mais je n'obtiens que des résultats inutiles ou des messages comme quoi je ne suis « Pas habilitée »... Rah... Endmin, vous pourriez me parler de vos exploits ?"
+      },
+      {
+        "title": "Cadeaux offerts",
+        "text": "Endmin, voici le butin que j'ai obtenu ! Tout est pour vous ! Et ne vous en faites pas, j'en ramènerai plus encore !"
+      },
+      {
+        "title": "Cadeaux acceptés",
+        "text": "C'est... pour moi ? Vraiment ? Merci ! Je vais tout faire pour comprendre le sens de votre cadeau !"
+      },
+      {
+        "title": "Dialogue à cœur ouvert 1",
+        "text": "Ça ? Eh bien... Je prends simplement des notes sur vos actes et vos paroles, Endmin. Je pense que même les petits détails valent leur pesant d'or. Ah... ne regardez pas, s'il vous plaît ! Mes notes sont personnelles !"
+      },
+      {
+        "title": "Dialogue à cœur ouvert 2",
+        "text": "J'ai entendu beaucoup de légendes à votre sujet. Je me suis toujours demandé quel genre de personne vous étiez ! Mais maintenant que j'ai fait votre connaissance, j'ai l'impression que vous êtes encore plus admirable que les histoires le suggèrent. Pourquoi ? Eh bien... Vos méthodes, votre commandement... J-Je ne trouve même pas les mots..."
+      },
+      {
+        "title": "Dialogue à cœur ouvert 3",
+        "text": "À treize ans, une cérémonie de passage à l'âge adulte est organisée pour les enfants de la Meute. Le clan se réunit pour choisir un nom accordé pour le nouveau « loup ». Le nom de Catello est « Wulfgard » et le mien est « Wulfperl ». J'adore le nom que le clan m'a donné. Chaque fois que je le prononce, je sens le sang de la Meute couler dans mes veines. Qu'est-ce que vous en pensez, Endmin ?"
+      },
+      {
+        "title": "Dialogue à cœur ouvert 4",
+        "text": "Endmin, je m'en sors plutôt bien, lors des missions, non ? Alors... est-ce que je pourrais vous demander une petite récompense ? Ah, rien d'extraordinaire, juste une petite discussion ! Vous êtes d'accord... ?"
+      },
+      {
+        "title": "Dialogue à cœur ouvert 5",
+        "text": "Je sais que je n'ai pas encore les compétences nécessaires pour diriger la Meute, mais les aînés insistent pour que je gère les affaires du clan... Donc, je veux en apprendre davantage à vos côtés, Endmin. Je veux apprendre à devenir digne de confiance, comme vous et Perlica, et M3... Je ferai en sorte que tout le monde me voie sous un nouveau jour !"
+      },
+      {
+        "title": "Discussion 1",
+        "text": "Les grands frères et sœurs d'Endfield m'ont beaucoup appris ! Perlica m'a expliqué comment fonctionnaient les Protosyncs, Avywenna m'a emmenée dans les boutiques de vêtements et de bijoux de la CCGT et... Xaihi m'a dit qu'elle voulait qu'on discute de la complexité du temps quadratique... Je ne sais même pas ce que ça veut dire."
+      },
+      {
+        "title": "Discussion 2",
+        "text": "Les grands frères et sœurs se sont tous bien occupés de moi. Ils m'ont même fait des cadeaux. Mais j'ai réussi les épreuves de la Meute ! Je suis un vrai loup ! Et les loups matures ne peuvent pas aimer les choses puériles. Ils préfèrent les dagues et l'argent ! Donc, j'ai fait en sorte d'en obtenir autant que possible. Quand je serai plus grande, on me confiera enfin les missions les plus dangereuses !"
+      },
+      {
+        "title": "Discussion 3",
+        "text": "J'ai toujours pensé que Nonno Rozzan était le plus fort du monde entier, mais selon lui, il y avait « quelqu'un de plus puissant encore ». Il parlait tout le temps de vous, Endmin. Et ailleurs, j'ai entendu beaucoup de légendes à votre sujet. Et j'ai eu du mal à croire qu'il existe réellement quelqu'un comme vous. J'ai toujours voulu vous voir de mes propres yeux. Depuis votre réveil, je prévois de vous surprendre... Hé hé."
+      },
+      {
+        "title": "Discussion 4",
+        "text": "J'ai reçu ma première dague en récompense après une chasse d'urgence ! Elle était dans une boîte brillante et dorée. Depuis, j'y fais très attention. Moi aussi, je l'adore. Je l'ai toujours sur moi, même si elle n'est pas très tranchante et qu'elle ne sert qu'à couper des fruits. Si elle vous plaît, Endmin... Eh bien, je vous l'offrirai lorsque j'aurai ramené la boîte !"
+      },
+      {
+        "title": "Discussion 5",
+        "text": "Mon enfance... Eh bien, la Meute était toujours prise dans des conflits avec les Broyeurs d'os. C'est mon frère qui m'a emmenée chercher des médecins, et les membres du clan... Oh ! Ah, je ne devrais pas parler de ça devant vous ! Oubliez donc, Endmin. Parlons plutôt de vous ! Apparemment..."
+      },
+      {
+        "title": "Thème : l'Endministrator",
+        "text": "« L'originium nous tracera un chemin. » Ah... Je... je m'entraînais, c'est tout... Oh, non, non... Vous me détestez, maintenant, hein ? Je sais qu'apprendre, ce n'est pas juste copier... Je trouvais juste... cette phrase vraiment cool..."
+      },
+      {
+        "title": "Thème : nom de code",
+        "text": "En tant que membre de la Meute, je pourrais utilise mon nom accordé comme nom de code, comme mon frère, mais... personne ne m'appelle comme ça en-dehors du clan, donc j'ai peur d'être un peu gênée. Et « Rossina », c'est un peu enfantin... Non, il était hors de question que j'utilise ce nom ! J'ai choisi « Rossi », comme la couleur de ma cape."
+      },
+      {
+        "title": "Thème : le clan des Broyeurs d'os",
+        "text": "Je ne laisserai pas une seule de ces brutes des Broyeurs d'os s'en sortir ! Une querelle sanglante oppose la Meute et les Broyeurs d'os. Trop de loups, trop de membres de ma famille sont morts de leurs mains pour me sauver. C'est la vengeance de la Meute et la mienne aussi. Nous sommes le clan le plus rancunier de ce monde et un jour, nous leur rendrons la pareille !"
+      },
+      {
+        "title": "Thème : sa cape",
+        "text": "Elle est tachée du sang de ma famille... Mais chaque fois que je la touche, je ressens un incroyable sentiment de paix, comme si je ne les avais jamais vraiment perdus. Cette cape me brûle, me rappelle de ne jamais oublier la vendetta, mais elle me donne aussi du courage et me rapproche de ma famille... Oui, ils sont toujours à mes côtés."
+      },
+      {
+        "title": "Thème : objets à collecter",
+        "text": "Autrefois, je gardais toutes les dagues et toutes les pièces que je trouvais dans une boîte aux trésors, mais je l'ai perdue quand j'ai déménagé... Le pire, c'est qu'il y avait des choses vraiment embarrassantes, dedans... Des trucs que j'avais bricolés, gamine... Il m'a fallu beaucoup de temps pour la retrouver. Maintenant, je vais la ranger en sécurité à bord du Dijiang. Mieux encore, je vais l'utiliser pour y ranger des choses, comme ça j'aurai une excuse pour passer du temps avec les grands frères et sœurs. Non, je veux dire, pour revenir étudier !"
+      },
+      {
+        "title": "Thème : les habitants des terres sauvages",
+        "text": "Tout ce que font les gens dans les terres sauvages, c'est pour survivre. Il m'est arrivé de voir des gamins de mon âge faire des choses terribles juste pour s'en sortir... Même les Brise-Terres prennent des risques pour ne pas mourir. Je pense juste que tout le monde devrait pouvoir vivre comme il l'entend. Endmin, est-ce qu'Endfield peut changer tout ça ? Pour que ces enfants puissent réaliser leurs rêves, comme moi ?"
+      },
+      {
+        "title": "Détection de ressource/objet à collecter 1",
+        "text": "Croyez-moi, il y a quelque chose d'intéressant, par là-bas !"
+      },
+      {
+        "title": "Détection de ressource/objet à collecter 2",
+        "text": "La Meute n'ignore aucune ressource, dans la nature. Ouvrez l'œil !"
+      },
+      {
+        "title": "Zone inexplorée détectée",
+        "text": "Il y a une odeur étrange, par là-bas. Allons voir ça !"
+      },
+      {
+        "title": "Découverte d'un ennemi puissant",
+        "text": "Ça sent le danger. On attaque ?"
+      },
+      {
+        "title": "Extraction 1",
+        "text": "Vous pourriez me laisser quelques-unes de ces pierres ? Je voudrais les incruster dans ma dague."
+      },
+      {
+        "title": "Extraction 2",
+        "text": "On y va ensemble, pour en finir en un rien de temps !"
+      },
+      {
+        "title": "Ouverture de caisse",
+        "text": "Hmm... Je me disais que si ça ne s'ouvrait pas, je pouvais essayer de le mordre."
+      },
+      {
+        "title": "Obtention d'aurylène",
+        "text": "Pourquoi l'aurylène flotte-t-elle parfois, alors que d'autres fois, elle reste immobile ? C'est vraiment merveilleux."
+      },
+      {
+        "title": "Élimination de la Gangrène",
+        "text": "Et voilà ! Nous sommes débarrassés de la Gangrène !"
+      },
+      {
+        "title": "Repos",
+        "text": "Mange bien, dors bien, récupère bien. Voilà la devise de la Meute !"
+      },
+      {
+        "title": "Utilisation de tactique 1",
+        "text": "Vite, utilisez ça pour reprendre du poil de la bête !"
+      },
+      {
+        "title": "Utilisation de tactique 2",
+        "text": "Je me sens bien mieux !"
+      },
+      {
+        "title": "Avertissement de danger",
+        "text": "Attention ! Quelque chose arrive !"
+      },
+      {
+        "title": "Blessure",
+        "text": "Pas le temps... de panser mes blessures..."
+      },
+      {
+        "title": "0 PV",
+        "text": "La Meute... ne laissera pas passer ça..."
+      },
+      {
+        "title": "Encouragement de l'équipe 1",
+        "text": "Joli coup !"
+      },
+      {
+        "title": "Encouragement de l'équipe 2",
+        "text": "Ouah ! Sacré travail d'équipe !"
+      },
+      {
+        "title": "Réaction face aux encouragements 1",
+        "text": "Héhé, j'ai encore d'autres tours dans mon sac !"
+      },
+      {
+        "title": "Réaction face aux encouragements 2",
+        "text": "Ça, c'est du combat !"
+      },
+      {
+        "title": "Début du combat 1",
+        "text": "Le sang de la Meute est en ébullition !"
+      },
+      {
+        "title": "Début du combat 2",
+        "text": "Je ne voudrais pas passer à côté de cette chasse !"
+      },
+      {
+        "title": "Victoire au combat 1",
+        "text": "Le nom de la Meute résonnera à travers tout le territoire !"
+      },
+      {
+        "title": "Victoire au combat 2",
+        "text": "Compris ? Voilà ce qui arrive quand on cherche des noises à la Meute !"
+      },
+      {
+        "title": "Victoire au combat 3",
+        "text": "Hé hé hé. Avec moi, la victoire est garantie !"
+      },
+      {
+        "title": "Victoire au combat 4",
+        "text": "La morsure est profonde, mais la Meute ne craint pas les cicatrices !"
+      },
+      {
+        "title": "Défaite au combat",
+        "text": "Ce petit contretemps est insignifiant... Moi, Rossina, je n'abandonnerai pas !"
+      },
+      {
+        "title": "Coup final 1",
+        "text": "Je vais te couper en morceaux !"
+      },
+      {
+        "title": "Coup final 2",
+        "text": "Tremble !"
+      },
+      {
+        "title": "Compétence de combat 1",
+        "text": "Déchiquetez-le !"
+      },
+      {
+        "title": "Compétence de combat 2",
+        "text": "C'est l'heure de la chasse !"
+      },
+      {
+        "title": "Compétence de combat 3",
+        "text": "Griffes brûlantes !"
+      },
+      {
+        "title": "Compétence de combo prête 1",
+        "text": "Nous les chasserons jusqu'au dernier !"
+      },
+      {
+        "title": "Compétence de combo prête 2",
+        "text": "Ils me craindront !"
+      },
+      {
+        "title": "Utilisation de combo 1",
+        "text": "Tu ne m'échapperas pas !"
+      },
+      {
+        "title": "Utilisation de combo 2",
+        "text": "Je te tiens !"
+      },
+      {
+        "title": "Coup fatal 1",
+        "text": "C'est terminé !"
+      },
+      {
+        "title": "Coup fatal 2",
+        "text": "Aouuuuh !"
+      },
+      {
+        "title": "Ultime 1",
+        "text": "Bous, sang de la Meute !"
+      },
+      {
+        "title": "Ultime 2",
+        "text": "Je suis la lame !"
+      },
+      {
+        "title": "Ultime 3",
+        "text": "Esprits lupins, soyez avec moi."
+      }
+    ]
   },
   "potentials": {
     "potential1": {

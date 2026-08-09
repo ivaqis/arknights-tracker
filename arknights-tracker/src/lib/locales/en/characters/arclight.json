@@ -122,7 +122,333 @@
         "name": "Sports",
         "description": "Sports: Night Runner\nThe wildlands is the best place to exercise. It is there where she could run to her heart's content."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Operation Prep 1",
+        "text": "Are you ready? The wildlands are filled with danger."
+      },
+      {
+        "title": "Operation Prep 2",
+        "text": "The wind never stops. Neither will I."
+      },
+      {
+        "title": "Adding to Team 1",
+        "text": "Finally, a breath of fresh air. I almost forgot the smell of the earth."
+      },
+      {
+        "title": "Adding to Team 2",
+        "text": "You can go as fast as you can. Don't worry. I always keep up."
+      },
+      {
+        "title": "Switching Weapon",
+        "text": "I can feel it breathing, and how it is a match made for me."
+      },
+      {
+        "title": "Switching Gear",
+        "text": "Such craftwork... This precision is rare, even amongst all the Aldertones' work I've known."
+      },
+      {
+        "title": "Ability Matrix Activation",
+        "text": "My Aldertone taught me differently, but you aim to reach the same goals. I have been enlightened."
+      },
+      {
+        "title": "Watching Combat Records",
+        "text": "Living in the wildlands teaches you things... And such lessons help forge a keen blade."
+      },
+      {
+        "title": "Operator Promotion 1",
+        "text": "Promotion...? It means that I've earned your approval? Then I ... I'm pleased to be approved."
+      },
+      {
+        "title": "Operator Promotion 2",
+        "text": "With honor comes duty. All of this serves as a reminder to help more people."
+      },
+      {
+        "title": "Operator Promotion 3",
+        "text": "Nature does not teach us survival. It merely leaves a trail for us. I once did my best to adapt... Now ... I'm beginning to understand how it works."
+      },
+      {
+        "title": "Operator Promotion 4",
+        "text": "I've learned much traveling with you. I'm starting to understand why the hanna verses led me here to your side. I shall use the knowledge well."
+      },
+      {
+        "title": "Operator Reporting for Duty",
+        "text": "I am Ekut. Callsign is Arclight. I am not a trained weaver of words, but I wish you well and may you flow like a rising river, Endfielders."
+      },
+      {
+        "title": "Standing by 1",
+        "text": "The path ahead has been revealed."
+      },
+      {
+        "title": "Standing by 2",
+        "text": "I'm primed for optimal performance."
+      },
+      {
+        "title": "Assigning to Facility",
+        "text": "On it. We Songseekers never rest."
+      },
+      {
+        "title": "Greeting 1",
+        "text": "Where do the winds hail from today, Endmin?"
+      },
+      {
+        "title": "Greeting 2",
+        "text": "Coming back from a trip to the surface, Endmin? You smell of the wildlands."
+      },
+      {
+        "title": "Dijiang Idle Chatter 1",
+        "text": "Repairing an iron steed is like treating a cystybeast. One must listen closely before administering the treatment."
+      },
+      {
+        "title": "Dijiang Idle Chatter 2",
+        "text": "The stars here are different from what we see from the wildlands... But both vantages are equally enthralling."
+      },
+      {
+        "title": "Dijiang Idle Chatter 3",
+        "text": "I am studying those clouds. Their sharp edges herald a storm. Be wary if your next mission takes you down there."
+      },
+      {
+        "title": "Dijiang Idle Chatter 4",
+        "text": "Your hair is lovely, like beast hide wet with the dew of dawn. You've never seen it? Well, it's just beautiful."
+      },
+      {
+        "title": "Dijiang Idle Chatter 5",
+        "text": "Ever seen the Prairie Migrations? An army of beasts and wagons chasing the rain and clouds. Such are the things I wish to protect."
+      },
+      {
+        "title": "Dijiang Idle Chatter 6",
+        "text": "You often lose yourself gazing upon this world. I think I know how you feel. Our hearts always yearn for places we care for, no matter how far away they may be."
+      },
+      {
+        "title": "Offering Gifts",
+        "text": "I brought you something. A gift of the wilds. I hope you like it."
+      },
+      {
+        "title": "Accepting Gifts",
+        "text": "For me? Gifts are important in the wildlands... I shall treasure this one."
+      },
+      {
+        "title": "Trust Dialog 1",
+        "text": "I recommend learning basic wildland survival, Endmin. Handcrafting long-ear traps is a good place to start. This I can teach you."
+      },
+      {
+        "title": "Trust Dialog 2",
+        "text": "Life in the wildlands is difficult, but it is also beautiful. Like the clear skies ending a long monsoon, like a hatching fowlbeast under the moon."
+      },
+      {
+        "title": "Trust Dialog 3",
+        "text": "There is nothing mysterious about old devices working better when cobbled together. Yoke two unfamiliar burdenbeasts to the same wagon and give them time. They will eventually become a good team."
+      },
+      {
+        "title": "Trust Dialog 4",
+        "text": "I started my wandering to look for answers. The wildlands have been unbalanced and I must do something. I listened to the lapping lakes and the whispering woods. And now, I wish to hear your voice."
+      },
+      {
+        "title": "Trust Dialog 5",
+        "text": "I shall weave these tales into the hanna of our journey. This will take time, for too many things are worthy of song. Once the hanna is complete, you shall be the first to hear it."
+      },
+      {
+        "title": "Chat 1",
+        "text": "Those who wish to live will make themselves heard. And the Songseekers who wander shall always hear. Such is the purpose of the Hannabit Circuit."
+      },
+      {
+        "title": "Chat 2",
+        "text": "Being a friend of the wildlander tribes is simple. We focus on what matters: the weather, the food, and the dangers. These alone take up much of our time."
+      },
+      {
+        "title": "Chat 3",
+        "text": "Every Songseeker of the Hannabit Circuit knows the hannas by heart. It isn't hard. The verses cover every aspect of our lives. Likewise, we are woven into the verses as well."
+      },
+      {
+        "title": "Chat 4",
+        "text": "My Aldertone told me about Terra and cities that move to avoid Catastrophes. It seems we have inherited our ancestral practice, but just in another form."
+      },
+      {
+        "title": "Chat 5",
+        "text": "You can trade used goods in certain wildland bazaars, but one must be patient to find a good deal. I modified an old Kjersch device for my communicator. They make things that work reliably in extreme environments."
+      },
+      {
+        "title": "Topic: Cities",
+        "text": "Talos-II is bigger than I thought. I once believed that every city is just another arrangement of steel, roads, and lights. But when I actually visited them, I realized every city had its own pulse and vibe. The distinction is more striking than two pastures of different grasses."
+      },
+      {
+        "title": "Topic: The Endministrator",
+        "text": "I have traveled much, and tales about you are sung by even the most distant of tribes. Though these stories may differ wildly, one amazing thing remains the same — hope is always bound to your name."
+      },
+      {
+        "title": "Topic: Hanna Songs",
+        "text": "A dying nomad sang our very first hanna and it had but three lines. These verses gave birth to the name of the Hannabit Circuit. And starting with the first Aldertone, the hanna has led the wandering Songseekers till they, too, become part of the song."
+      },
+      {
+        "title": "Topic: Aldertones",
+        "text": "The Aldertones rarely speak directly. Orisha said that the hanna contained all the knowledge we need. She taught me through her actions. We must help each other in order to survive in this world."
+      },
+      {
+        "title": "Topic: Her Tribe",
+        "text": "I grew up in a small tribe with no more than a hundred souls. It was all I knew before I started my journey. It taught me to milk the cystybeasts, ride my iron steed, and survive the wildlands. I never left it. I simply brought it with me."
+      },
+      {
+        "title": "Resource/Collectible Detected 1",
+        "text": "If it helps with survival, bring it."
+      },
+      {
+        "title": "Resource/Collectible Detected 2",
+        "text": "My Aldertone will be interested in these."
+      },
+      {
+        "title": "Unexplored Area Detected",
+        "text": "Keep up. We need a closer look."
+      },
+      {
+        "title": "Powerful Enemy Discovered",
+        "text": "I sense danger. This one won't go down easily."
+      },
+      {
+        "title": "Mining 1",
+        "text": "The bounties of the land."
+      },
+      {
+        "title": "Mining 2",
+        "text": "Let me do it. I'm good with physical work."
+      },
+      {
+        "title": "Opening a Crate",
+        "text": "A rarity in the wildlands. We'll make good use of it."
+      },
+      {
+        "title": "Acquiring Aurylene",
+        "text": "We usually bottle them to give light."
+      },
+      {
+        "title": "Eliminating the Blight",
+        "text": "We should let Nature take its course."
+      },
+      {
+        "title": "Rest",
+        "text": "This reminds me of campfires in the wildlands. Both seem to share the same warmth."
+      },
+      {
+        "title": "Tactical Use 1",
+        "text": "Steady your breathing."
+      },
+      {
+        "title": "Tactical Use 2",
+        "text": "Returning is my strength."
+      },
+      {
+        "title": "Danger Warning",
+        "text": "Don't stop. Keep moving."
+      },
+      {
+        "title": "Injured",
+        "text": "Still in the fight, just a bit slower."
+      },
+      {
+        "title": "0 HP",
+        "text": "Sorry ... I wish I could help you more..."
+      },
+      {
+        "title": "Team Encouragement 1",
+        "text": "You responded like lightning!"
+      },
+      {
+        "title": "Team Encouragement 2",
+        "text": "Like wind and thunder we gave them a storm."
+      },
+      {
+        "title": "Encouragement Response 1",
+        "text": "It's what I'm expected to do."
+      },
+      {
+        "title": "Encouragement Response 2",
+        "text": "Just being part of the team."
+      },
+      {
+        "title": "Combat Begins 1",
+        "text": "I'm in the flow."
+      },
+      {
+        "title": "Combat Begins 2",
+        "text": "I'll leave that side to you."
+      },
+      {
+        "title": "Combat Victory 1",
+        "text": "To serenity they shall return."
+      },
+      {
+        "title": "Combat Victory 2",
+        "text": "I pray that the land accepts you all."
+      },
+      {
+        "title": "Combat Victory 3",
+        "text": "Such is the will of Nature."
+      },
+      {
+        "title": "Combat Victory 4",
+        "text": "Every wildland being must endure hardship to grow."
+      },
+      {
+        "title": "Combat Defeat",
+        "text": "Even the most experienced tuskbeast pack can fail to bring down their prey. At least we learned something from this hunt."
+      },
+      {
+        "title": "Final Strike 1",
+        "text": "Break!"
+      },
+      {
+        "title": "Final Strike 2",
+        "text": "Shatter!"
+      },
+      {
+        "title": "Battle Skill 1",
+        "text": "Raging winds!"
+      },
+      {
+        "title": "Battle Skill 2",
+        "text": "Rolling thunder!"
+      },
+      {
+        "title": "Battle Skill 3",
+        "text": "Arcing flash!"
+      },
+      {
+        "title": "Combo Skill Ready 1",
+        "text": "Perfect is this wind!"
+      },
+      {
+        "title": "Combo Skill Ready 2",
+        "text": "I shall sweep the rest."
+      },
+      {
+        "title": "Combo Casting 1",
+        "text": "Such is the optimal path."
+      },
+      {
+        "title": "Combo Casting 2",
+        "text": "I spot an opening!"
+      },
+      {
+        "title": "Finisher 1",
+        "text": "It's over."
+      },
+      {
+        "title": "Finisher 2",
+        "text": "Here's my chance."
+      },
+      {
+        "title": "Ultimate 1",
+        "text": "You can't escape this."
+      },
+      {
+        "title": "Ultimate 2",
+        "text": "From the storms it came."
+      },
+      {
+        "title": "Ultimate 3",
+        "text": "Like a flash it struck."
+      }
+    ]
   },
   "potentials": {
     "potential1": {

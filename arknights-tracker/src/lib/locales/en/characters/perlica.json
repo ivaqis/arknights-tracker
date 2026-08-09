@@ -117,7 +117,345 @@
         "name": "Creative",
         "description": "Creative: Wildlands Speedster\nShe is the light and shadow of the Band, and her bike leaves trails in the snow and sand. However, she has only shared this secret with you."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Operation Prep 1",
+        "text": "All Operators accounted for. The team is ready for the mission."
+      },
+      {
+        "title": "Operation Prep 2",
+        "text": "Endfield Crisis Team ready for action."
+      },
+      {
+        "title": "Adding to Team 1",
+        "text": "Transferring command authority now, Endministrator."
+      },
+      {
+        "title": "Adding to Team 2",
+        "text": "Lead us in our next step forward, Endministrator."
+      },
+      {
+        "title": "Switching Weapon",
+        "text": "Time to come up with optimum tactics for wielding this weapon."
+      },
+      {
+        "title": "Switching Gear",
+        "text": "The fruit of the Automated Industry Complex."
+      },
+      {
+        "title": "Ability Matrix Activation",
+        "text": "Now I would just need to tune this ... to maximize the spoils of our victories."
+      },
+      {
+        "title": "Watching Combat Records",
+        "text": "We once fought on and never gave up ... for it is our wish to witness your return."
+      },
+      {
+        "title": "Operator Promotion 1",
+        "text": "Your approval is much appreciated, Endministrator. I shall carry on with greater effort."
+      },
+      {
+        "title": "Operator Promotion 2",
+        "text": "Though I am a little too young and untested, my mind is set. I shall fulfill my duties as Supervisor of Endfield Industries."
+      },
+      {
+        "title": "Operator Promotion 3",
+        "text": "Once again you've placed your faith in me, Endministrator... I shall live up to your expectations."
+      },
+      {
+        "title": "Operator Promotion 4",
+        "text": "I'm alright. Hearing your encouraging words just made me ... nostalgic about the past. It used to be the only reason I kept going. Now, I'm glad that I get to lead Endfield Industries, and stand by your side."
+      },
+      {
+        "title": "Operator Reporting for Duty",
+        "text": "I have always believed that you will lead us upon the right path once more. Welcome back to Endfield Industries, Endministrator."
+      },
+      {
+        "title": "Standing by 1",
+        "text": "Prepped and ready to go."
+      },
+      {
+        "title": "Standing by 2",
+        "text": "Operator Perlica standing by."
+      },
+      {
+        "title": "Assigning to Facility",
+        "text": "An efficient assignment. I shall do my best."
+      },
+      {
+        "title": "Greeting 1",
+        "text": "How are you holding up, Endministrator?"
+      },
+      {
+        "title": "Greeting 2",
+        "text": "Don't push yourself too hard, Endministrator. Keep yourself rested and well."
+      },
+      {
+        "title": "Dijiang Idle Chatter 1",
+        "text": "Since your awakening, Dijiang is becoming a livelier place with every passing day... And this makes me hopeful for the future, Endministrator."
+      },
+      {
+        "title": "Dijiang Idle Chatter 2",
+        "text": "You're looking much better, Endmin. Feel free to talk to me if there's anything you need."
+      },
+      {
+        "title": "Dijiang Idle Chatter 3",
+        "text": "Your needs are our top priority, Endmin. To see them met, I'll gladly set aside other tasks ... or ask Fiona to handle them."
+      },
+      {
+        "title": "Dijiang Idle Chatter 4",
+        "text": "The Central Ring is always this busy. It is a symbol of our obligations to this world. For more than a century, generations of Endfielders have devoted themselves to reviving the Civilization Band. Perhaps a day will come when Dijiang can finally land, and take a well-deserved rest within the haven we've built."
+      },
+      {
+        "title": "Dijiang Idle Chatter 5",
+        "text": "Many operators wouldn't spend too much time aboard Dijiang, especially our elites. They are sorely needed by the Civilization Band where danger lurks, and not by this orbital refuge. No matter, you will meet them soon. I shall make the proper introductions when the time comes."
+      },
+      {
+        "title": "Dijiang Idle Chatter 6",
+        "text": "When I last had a conversation like this, I was a girl barely half my current height. Times have changed. Dijiang received plenty of modifications and I grew up... But you, Endministrator... You remain the same as before."
+      },
+      {
+        "title": "Offering Gifts",
+        "text": "I've requested for a set of supplies on your behalf, Endmin. I hope it can help. There are times when you overwork yourself. But do remember: it is alright to count on me and Endfield Industries."
+      },
+      {
+        "title": "Accepting Gifts",
+        "text": "I really appreciate this, Endmin. I shall treasure it well."
+      },
+      {
+        "title": "Trust Dialog 1",
+        "text": "Endmin, don't miss your physical exams, and please avoid overworking yourself. Most importantly, never abuse your Originium Arts — Should other operators request your assistance to fix a Delta Bot again ... just turn them down!"
+      },
+      {
+        "title": "Trust Dialog 2",
+        "text": "When I was a little girl, I explored every corner of Dijiang and nicknamed every cabin. It was a time when I believed I would never see the surface again ... a time when I felt that Dijiang was my home. But to better support you, I left the ship and traveled across many places on Talos-II. Now, Dijiang looks more cramped than I remember ... but to me, it's still a vessel capable of holding the entirety of my memories."
+      },
+      {
+        "title": "Trust Dialog 3",
+        "text": "Chen is actually the first operator I personally recruited since becoming Supervisor of Endfield Industries. She is also my best friend. I ran into her unexpectedly during a joint project with HAS... Hehe. She kept saying I always wore a stiff face, and only decided to help because she got too worried about me. Perhaps it was the truth. I was an untested Supervisor and there were so many things I had to pick up. I barely had time to focus on the people and things around me. Her smile and candid personality probably kept me from taking many wrong turns."
+      },
+      {
+        "title": "Trust Dialog 4",
+        "text": "There's no need for concern, Endmin. Don't take Chen's teasing about me too seriously, of course I have off hours. What do I do for vacation? Hmm, mostly reading — literature and theoretical science, since they're relevant to upcoming work. It's not a break if I'm doing things for work? Well then ... I enjoy racing through frontier lands, alone on my bike. Endmin ... you're the only one who knows about this. The other operators will get worried if they learn about this secret. I know where they're coming from, but part of me yearns to hear the winds of this planet."
+      },
+      {
+        "title": "Trust Dialog 5",
+        "text": "Are you awake, Endmin? You should turn in early for today if you're feeling tired. I caught a glimpse of your sleepy face just now... I've actually been looking at that same sleepy face of yours for a decade. Back then, I visited the Sarcophagus with the other children, just to see you hibernating peacefully. But as time passed, I was the only one left. I'd come by often — after I passed the operator trials, after I became the Supervisor... Don't feel bad about this, Endmin. I actually have plans to tell you everything once we restore your memories."
+      },
+      {
+        "title": "Chat 1",
+        "text": "Endfield Industries is partnering with many organizations upon this land. The Accordatories, definitely. The TGCC is the best provider of modern logistics and supplies, and the UWST is a most reliable friend in the frontier. The HAS is always perched at the edge of the latest tech breakthrough, and we openly share our scientific findings with each other. Allies like these guarantee our ability to stand strong and firm in this cruel, new home."
+      },
+      {
+        "title": "Chat 2",
+        "text": "Never met Fiona in person? Ah... Fiona's condition is quite ... special. She told me that she enjoys being on air and connected with everyone via our combat comms. And Fiona is rather worried that if you ... met her in person, you might start treating her very differently."
+      },
+      {
+        "title": "Chat 3",
+        "text": "I look like a maestra in battle? I picked up the habit during combat training... They say Leithanians during the Age of Terra combined music with their innate gift for the Arts. My Arts instructor also happened to be a gifted musician. My aptitude for combat wasn't particularly outstanding, but I quickly mastered the techniques when I interpreted the flow of Arts as musical notations and tempos."
+      },
+      {
+        "title": "Chat 4",
+        "text": "The Aurora is also visible from Dijiang. It is the anomalous flower that bloomed upon Talos-II. The Northern Veil is enveloped in Æther, making the Aurora look like a wall that blocks our way. A utopia for countless souls once existed on the other side of this wall... Though naught is left but devastation... and enemies that occupy the ruins."
+      },
+      {
+        "title": "Chat 5",
+        "text": "What vendors should we add to Dijiang? Any ideas, Endmin? Oh, nothing special, just another regular survey from the Business Office. Dijiang doesn't have a large lounge area, and our resident crew isn't that big either... Auto-vendors work fine, but they do lack that human touch... What about a cozy café, Endmin? Would you grab a cup of coffee while you're on break?"
+      },
+      {
+        "title": "Topic: Their First Encounter",
+        "text": "Apologies, Endministrator... I know it's selfish, but I'd rather not bring up our past right now. I just hope you can find those memories on your own. This isn't a request from the Supervisor of Endfield Industries — It's from me."
+      },
+      {
+        "title": "Topic: Dijiang",
+        "text": "Impressive, isn't she? Picture the Techno-Protocol as the Originium Network, and Dijiang would be the Protorig master server. She is also the embodiment of the Terran Civilization that traveled through the Cosmic Gate, as well as all the events that followed our crossing. Dijiang has endured war and chaos, and now she cruises in the sea of outer space. Perhaps a day will come when humanity frees itself from the shackles of gravity ... and walks amidst the stars as our ancestors have dreamed."
+      },
+      {
+        "title": "Topic: M3",
+        "text": "There was a time when I addressed M3 as my elder sister. But she put an end to that after I became an actual Endfield operator. Truth be told, she felt like a true sister of mine. Kind, gentle, optimistic, and skilled in everything. I don't see her on Dijiang much these days. I know she is carrying out a mission of her own... And if possible, I hope that Endfield can share her burden."
+      },
+      {
+        "title": "Topic: Talos-II and Terra",
+        "text": "Very few people know that this distant world of Talos-II is actually where we all came from. And despite this knowledge, almost none could give up their nostalgia for Terra. Leaving Terra for Talos-II is akin to a babe who left its soft, comfortable cradle for their mother's embrace... But I felt the opposite. It was on Talos-II where I joined Endfield and met the Endministrator. Terra is now little more than a symbol of my mission."
+      },
+      {
+        "title": "Topic: Zeroth Directive",
+        "text": "I wasn't the only participant of the Zeroth Directive. But none of us knew the missions of the others. In the past, you always had plenty of preparations in place, even before you became aware of your situation. For this awakening, I've rehearsed executing the Zeroth Directive countless times... But when I met you again in person, all those words flowed out of me naturally with great ease."
+      },
+      {
+        "title": "Topic: Automated Industry Complex",
+        "text": "Endfield Industries spent our recent years focusing on the Automated Industry Complex. The goals of the AIC are evident in its name, and I believe you have extensive first-hand experience with it. Needless to say, our obsession with the Techno-Protocol isn't just about this. Originium is information. It is the crystallized manifestation of every ephemeral idea. Its final embodiment ... will let us \"manufacture\" and \"construct\" more than just industrial products."
+      },
+      {
+        "title": "Topic: Endfield Crisis Team",
+        "text": "You founded the Crisis Team, Endmin. It is a special operations team that you've led in person. The Crisis Team was a team of elites famed throughout Talos-II. Team leadership was later transferred to the Founder and M3, but its purpose and function still remained the same. When I became Supervisor and took over the team's leadership, I sorely felt the pressure from commanding a team of heroes ... as well as their fiery passion as they threw themselves in battle for our selfless goal and ideal."
+      },
+      {
+        "title": "Topic: Supervisor of Endfield Industries",
+        "text": "I heard M3 say that Endfield did not have a Supervisor back then. The Endministrator led the entire company, while M3, the Founder, and our elite operators provided support. We called this decision-making organization the Provenance. The Provenance managed the three major nexuses and has kept Endfield running till this day... Endfield was forced to change while you slept, but these changes kept us going ... and this was how I could stand by your side."
+      },
+      {
+        "title": "Resource/Collectible Detected 1",
+        "text": "Something seems to warrant closer scrutiny..."
+      },
+      {
+        "title": "Resource/Collectible Detected 2",
+        "text": "We seem to have high value supplies nearby. Keep an eye out for those."
+      },
+      {
+        "title": "Unexplored Area Detected",
+        "text": "Another area uncharted by humanity."
+      },
+      {
+        "title": "Powerful Enemy Discovered",
+        "text": "Stay alert. This hostile poses significant threat."
+      },
+      {
+        "title": "Mining 1",
+        "text": "Mineral ores form the foundation of industry. We should gather more."
+      },
+      {
+        "title": "Mining 2",
+        "text": "Let me help you."
+      },
+      {
+        "title": "Opening a Crate",
+        "text": "An impressive acquisition."
+      },
+      {
+        "title": "Acquiring Aurylene",
+        "text": "Aurylene is a fragment of a shattered universe. This one traveled massive distances to be here, right before us."
+      },
+      {
+        "title": "Eliminating the Blight",
+        "text": "The Blight no longer threatens the Endfield of today."
+      },
+      {
+        "title": "Rest",
+        "text": "R&R complete. Team, make ready to continue our operations."
+      },
+      {
+        "title": "Tactical Use 1",
+        "text": "Patching up. Stay alert."
+      },
+      {
+        "title": "Tactical Use 2",
+        "text": "Conditions stabilized."
+      },
+      {
+        "title": "Danger Warning",
+        "text": "Incoming! Unknown hazard!"
+      },
+      {
+        "title": "Injured",
+        "text": "I'm good... Focus on our objective..."
+      },
+      {
+        "title": "0 HP",
+        "text": "Protect yourself... Endmin..."
+      },
+      {
+        "title": "Team Encouragement 1",
+        "text": "Outstanding technique. Impressive."
+      },
+      {
+        "title": "Team Encouragement 2",
+        "text": "We are united as one!"
+      },
+      {
+        "title": "Encouragement Response 1",
+        "text": "We did it as a team."
+      },
+      {
+        "title": "Encouragement Response 2",
+        "text": "This is the power of Endfield."
+      },
+      {
+        "title": "Combat Begins 1",
+        "text": "Engaging. Stay safe, team."
+      },
+      {
+        "title": "Combat Begins 2",
+        "text": "All variables within estimates."
+      },
+      {
+        "title": "Combat Victory 1",
+        "text": "A definitive outcome achieved through strong teamwork."
+      },
+      {
+        "title": "Combat Victory 2",
+        "text": "Verify and report personal status, team."
+      },
+      {
+        "title": "Combat Victory 3",
+        "text": "Violence is never our objective. Let's press forward."
+      },
+      {
+        "title": "Combat Victory 4",
+        "text": "Check all injuries. Assume defensive formation and restore combat readiness."
+      },
+      {
+        "title": "Combat Defeat",
+        "text": "We won't let this happen again..."
+      },
+      {
+        "title": "Final Strike 1",
+        "text": "Concerto!"
+      },
+      {
+        "title": "Final Strike 2",
+        "text": "Sequence!"
+      },
+      {
+        "title": "Battle Skill 1",
+        "text": "Target locked!"
+      },
+      {
+        "title": "Battle Skill 2",
+        "text": "Strike command!"
+      },
+      {
+        "title": "Battle Skill 3",
+        "text": "Terminate!"
+      },
+      {
+        "title": "Combo Skill Ready 1",
+        "text": "Arts Unit hot!"
+      },
+      {
+        "title": "Combo Skill Ready 2",
+        "text": "Arts support ready!"
+      },
+      {
+        "title": "Combo Casting 1",
+        "text": "Push forward!"
+      },
+      {
+        "title": "Combo Casting 2",
+        "text": "Here's our chance!"
+      },
+      {
+        "title": "Finisher 1",
+        "text": "Now, fugue!"
+      },
+      {
+        "title": "Finisher 2",
+        "text": "Coda and finale!"
+      },
+      {
+        "title": "Ultimate 1",
+        "text": "Commence AL-7 annihilation!"
+      },
+      {
+        "title": "Ultimate 2",
+        "text": "Target locked. Fire!"
+      },
+      {
+        "title": "Ultimate 3",
+        "text": "Sterilize this area!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

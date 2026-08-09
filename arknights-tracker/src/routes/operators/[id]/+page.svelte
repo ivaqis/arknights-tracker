@@ -13,6 +13,7 @@
     import { levels as levelUpTable } from "$lib/data/levelUpTable.js";
     import { parseRichText, hyperlinkAction } from "$lib/utils/richText.js";
     import { getRarityColor } from "$lib/utils/colorUtils.js";
+    import { getImagePath } from "$lib/utils/imageUtils.js";
 
     import Icon from "$lib/components/Icon.svelte";
     import Tooltip from "$lib/components/Tooltip.svelte";
@@ -107,6 +108,7 @@
 
     $: skillsLocale = charLocale.skills || {};
     $: baseInfoLocale = charLocale.baseInfo || {};
+    $: voiceLines = skillsLocale?.voiceLines || baseInfoLocale?.voiceLines || charLocale?.voiceLines || [];
     $: skillsValuesData = charDetails.skills || {};
     $: charMaterials = charDetails.materials || {};
 
@@ -269,7 +271,7 @@
         { id: "guides", label: "menu.matchingWeapon" },
         { id: "artwork", label: "menu.artwork" },
         { id: "files", label: "menu.files" },
-        //{ id: "audio", label: "menu.audio" },
+        { id: "audio", label: "menu.audio" },
     ];
 
     function getWeaponObj(wpnId) {
@@ -1614,7 +1616,7 @@
                                                         title="Copy image"
                                                         on:click|stopPropagation={async () => {
                                                             try {
-                                                                const imageUrl = `/images/operators/arts/${id}_${realKey}.png`;
+                                                                const imageUrl = getImagePath(`${id}_${realKey}`, "operator-art");
                                                                 const response =
                                                                     await fetch(
                                                                         imageUrl,
@@ -1664,7 +1666,7 @@
                                                         class="flex items-center justify-center w-8 h-8 bg-black/60 hover:bg-[#FFD800] text-white hover:text-black backdrop-blur rounded-full transition-all duration-300 shadow-md group/down"
                                                         title="Dowanload Art"
                                                         on:click|stopPropagation={() => {
-                                                            const imageUrl = `/images/operators/arts/${id}_${realKey}.png`;
+                                                            const imageUrl = getImagePath(`${id}_${realKey}`, "operator-art");
                                                             const link =
                                                                 document.createElement(
                                                                     "a",
@@ -1873,6 +1875,44 @@
                                     class="text-gray-500 text-center italic mt-10"
                                 >
                                     {$t("global.noData") || "No Data"}
+                                </div>
+                            {/if}
+                        </div>
+                    {:else if activeTab === "audio"}
+                        <div class="flex flex-col gap-5 animate-fadeIn w-full">
+                            <h2
+                                class="text-3xl dark:text-[#FDFDFD] font-bold text-[#21272C] mb-4 drop-shadow-sm font-sdk text-left 2xl:text-right"
+                            >
+                                {$t("menu.audio")}
+                            </h2>
+
+                            {#if voiceLines && voiceLines.length > 0}
+                                <div class="grid grid-cols-1 gap-2 w-full">
+                                    {#each voiceLines as line}
+                                        <div
+                                            class="bg-white/90 backdrop-blur-md dark:bg-[#383838]/90 p-5 rounded-2xl dark:border-[#444444] shadow-xl border border-white/50 flex flex-col gap-2 transition-all hover:border-gray-300 dark:hover:border-[#555]"
+                                        >
+                                            {#if line.title}
+                                                <div class="font-bold text-base text-[#21272C] dark:text-[#E4E4E4] font-sdk border-b border-gray-100 dark:border-[#444444] pb-1.5">
+                                                    {line.title}
+                                                </div>
+                                            {/if}
+                                            {#if line.text}
+                                                <div
+                                                    class="text-gray-700 dark:text-[#E4E4E4] whitespace-pre-wrap text-sm leading-relaxed font-medium"
+                                                    use:hyperlinkAction
+                                                >
+                                                    {@html parseRichText(line.text)}
+                                                </div>
+                                            {/if}
+                                        </div>
+                                    {/each}
+                                </div>
+                            {:else}
+                                <div
+                                    class="text-gray-500 text-center italic mt-10"
+                                >
+                                    {$t("global.noData")}
                                 </div>
                             {/if}
                         </div>

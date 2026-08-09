@@ -128,7 +128,333 @@
         "name": "Technologie",
         "description": "Technologie: Kleidersammlung \nAusstellungsständer, jede Menge davon. Sie sind seine einzige Bedingung für einen sicheren Unterschlupf. Auf diese Weise kann er verschiedene Ausrüstungsgegenstände sorgfältig nach Marke und Funktion kategorisieren und anordnen."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Einsatzvorbereitung 1",
+        "text": "Ich habe nicht vor, noch länger zu warten."
+      },
+      {
+        "title": "Einsatzvorbereitung 2",
+        "text": "Soll ich mitkommen? Ich stehe dir zur Verfügung."
+      },
+      {
+        "title": "Wird zum Team hinzugefügt 1",
+        "text": "Geh voran, ich folge. Oder eben umgekehrt."
+      },
+      {
+        "title": "Wird zum Team hinzugefügt 2",
+        "text": "Das habe ich erwartet. Brechen wir auf."
+      },
+      {
+        "title": "Waffe wird gewechselt",
+        "text": "Dieses scharfe Instrument könnte sogar das Blutmeer durchbohren. Ich werde vorsichtig damit umgehen."
+      },
+      {
+        "title": "Ausrüstung wird gewechselt",
+        "text": "Bei der Einkleidungslogik der Bewahrer dreht sich alles um Sarkaz-Hexerei. Aber ich vertraue auf deine Entscheidungen."
+      },
+      {
+        "title": "Fähigkeitsmatrix-Aktivierung",
+        "text": "Die Verunreinigungen wurden beseitigt. Das Blut ist jetzt reiner."
+      },
+      {
+        "title": "Kampfaufzeichnungen ansehen",
+        "text": "Diese taktischen Einsichten sind sehr wertvoll. Sie werden den Bewahrern bei ihren Aufgaben helfen."
+      },
+      {
+        "title": "Operator-Beförderung 1",
+        "text": "Eine offizielle Anerkennung von Endfield oder dein persönliches Vertrauen?"
+      },
+      {
+        "title": "Operator-Beförderung 2",
+        "text": "Danke für das Lob, Endministrator. Ich habe jetzt mehr Verantwortung, aber in diesem Augenblick freue ich mich einfach über dein Vertrauen in mich."
+      },
+      {
+        "title": "Operator-Beförderung 3",
+        "text": "Leere Ehrungen zählen jetzt nicht mehr. Mein Blut ist immer bei dir."
+      },
+      {
+        "title": "Operator-Beförderung 4",
+        "text": "Unermessliche Kräfte ringen um die Vorherrschaft auf dieser Welt, sodass wir uns in den Nischen mühsam unseren Lebensunterhalt zusammenklauben müssen. Aber du hast mir gezeigt, dass selbst kleine Veränderungen eine Bedeutung haben. Und ich … Ich werde dich auf diesem Weg nur allzu gerne begleiten."
+      },
+      {
+        "title": "Operator meldet sich zum Dienst",
+        "text": "Camille Arno, Agaš’mekanaz von Seš’qa. Ich suche einen gefährlichen Sarkaz-Verbrecher, der Hexerei als Waffe einsetzt. Dafür benötige ich die Stärke von Endfield … Und als Gegenleistung biete ich dir meine eigene an."
+      },
+      {
+        "title": "Warten 1",
+        "text": "Geboren im Blut, geendet im Blut."
+      },
+      {
+        "title": "Warten 2",
+        "text": "Ich hinterlasse keinen Schatten … in dem sich die Schuldigen verbergen können."
+      },
+      {
+        "title": "Zuweisung zur Anlage",
+        "text": "Ich arbeite allein. Nicht kommunizieren zu müssen, steigert die Effizienz."
+      },
+      {
+        "title": "Gruß 1",
+        "text": "Irgendwelche Befehle?"
+      },
+      {
+        "title": "Gruß 2",
+        "text": "Endmin, dieses Treffen war kein Zufall. Ich habe darauf gewartet."
+      },
+      {
+        "title": "Dijiang-Geplauder 1",
+        "text": "Der vertikale Raum auf der Dijiang ist riesig. Aus Effizienzgründen gehe ich manchmal an der Decke. Nein, nicht, damit ich niemanden grüßen muss."
+      },
+      {
+        "title": "Dijiang-Geplauder 2",
+        "text": "Ich kann an Bord der Dijiang die Ströme durch die Kabel fließen hören. Wenn die Ingenieure Schiffsparameter anpassen, ändert sich das elektrische Summen, und ich muss nachjustieren … Sie ärgern mich zwar, aber ich bin nicht sauer. Sie beweisen, dass die Leute sich bemühen, das Schiff immer auf Kurs zu halten."
+      },
+      {
+        "title": "Dijiang-Geplauder 3",
+        "text": "Ich mag Puzzles. Es liegt eine gewisse Befriedigung darin, verstreute Fragmente zusammenzutragen und sie zu einem Ganzen zusammenzufügen. Außerdem benötigt man dafür nur eine Person."
+      },
+      {
+        "title": "Dijiang-Geplauder 4",
+        "text": "Ich hätte nicht gedacht, dass Seš’qa Operatorin Last Rite nach Endfield schickt … Man profitiert von einer aufrichtigen Partnerschaft, die die Solidarität der beiden Organisationen und die Übereinstimmung unserer Visionen beweist. Wie früher … nichts hat sich geändert."
+      },
+      {
+        "title": "Dijiang-Geplauder 5",
+        "text": "Zwei Flügel am Himmel – und doch zwei unterschiedliche Heimaten. Seš’qas Ruhe ist unserer Verwandtschaft entsprungen. Aber die Dijiang … vielleicht übt die Anwesenheit einer bestimmten Person dieselbe beruhigende Wirkung aus."
+      },
+      {
+        "title": "Dijiang-Geplauder 6",
+        "text": "Nur wenige verstehen ihr eigenes Herz, doch alle an Bord der Dijiang steuern auf ein klares Ziel zu. Lange habe ich nach dem Grund gesucht und ihn in dir gefunden, Endmin. Du hast echte Führungsqualitäten."
+      },
+      {
+        "title": "Geschenke anbieten",
+        "text": "Ich habe etwas von Seš’qa für dich. Nimm es. Die anderen Geschenke von unseren Anführern wurden an dein Büro geliefert."
+      },
+      {
+        "title": "Geschenke annehmen",
+        "text": "Das ist doch hoffentlich kein Abschiedsgeschenk … Nun gut, ich nehme es an."
+      },
+      {
+        "title": "Vertrauensgespräch 1",
+        "text": "Über die Jahrzehnte hinweg habe ich dich mehrmals aus der Ferne gesehen. Mein erster Eindruck von dir: Du bist jemand, der die Leute „retten“ kann. Aber jetzt bist du für mich mehr eine Vertrauensperson. Die Vorlieben anderer interessieren mich nicht, aber ich finde jetzt mehr Trost in der Person vor mir. Du bist nicht länger den Elementen ausgesetzt, und dein Körper ist von Narben befreit."
+      },
+      {
+        "title": "Vertrauensgespräch 2",
+        "text": "Ich träume ständig von meiner Familie in einem Garten, umgeben von tobenden, fackeltragenden Landbrechern. Egal wie schnell ich renne, ich bleibe an Ort und Stelle und komme niemals näher heran. In den schlimmsten Zeiten … traten die Träume jede Nacht auf. Aber nach meiner Ankunft bei Endfield begannen die Albträume langsam zu verschwinden."
+      },
+      {
+        "title": "Vertrauensgespräch 3",
+        "text": "Um Char am Leben zu erhalten, gab ich ihm mein Blut … die Hälfte meiner gesamten Existenz. Darum bin ich sowohl sein Bruder als auch sein Vater. Die größte Angst eines Vampirs ist die Verderbnis und Befleckung unseres Blutes. Er hat meines benutzt, um andere zu verletzen … Diese Dummheit muss ich beenden. Ich muss einfach."
+      },
+      {
+        "title": "Vertrauensgespräch 4",
+        "text": "Vor langer Zeit habe ich mir immer gewünscht, ich könnte meine Erinnerungen einfach ausbluten lassen, um mich von dem quälenden Schmerz zu befreien. Aber nachdem ich dich getroffen hatte … … wurde mir klar, dass es diese unantastbaren, unvergesslichen und unwiderruflichen Elemente waren, die mich zu dem gemacht haben, der ich heute bin. Endmin, ich werde dir also helfen, wiederzuerlangen, was du verloren hast."
+      },
+      {
+        "title": "Vertrauensgespräch 5",
+        "text": "Ich habe die Hälfte meines Lebensblutes geopfert, und so bleibt mir nur noch ein einziger Flügel … Der fehlende pocht vor anhaltendem Schmerz, als ob mein Blut nach dem dürstete, was ich verloren habe. Aber die neuen Erinnerungen, die wir gemeinsam erschaffen haben, füllen diese Leere. Vielleicht wird mich der Schmerz dieser Narbe … irgendwann nicht mehr quälen."
+      },
+      {
+        "title": "Geplauder 1",
+        "text": "In unserem Familiengarten wuchs einst eine Pflanze namens Teufelslakritz. Mutter erzählte uns, dass die Sarkaz diesen Faden der Erinnerung von Terra mitgebracht haben. Es ist ein Zeichen unserer Hoffnung auf ein friedliches Zusammenleben mit diesem Planeten – alles Leben, ob Mensch oder Pflanze, wird auch in fernen Ländern existieren können. Natürlich hat es mein jüngeres Ich hauptsächlich als Zutat für Hexerei-Süßigkeiten verwendet … Der Geschmack ist ungewöhnlich, aber nicht schlecht."
+      },
+      {
+        "title": "Geplauder 2",
+        "text": "Auf Seš’qa gibt es eine einzigartige Taverne, die komplett aus Spiegelglas besteht. Von den Decken hängen unzählige künstliche Edelsteine, die vor Hexerei glühen. Das ganze Gebäude erstrahlt im Licht. Während der öffentlichen Touren veranstalten die Sankta dort Feiern. Sie sind eine laute, rüpelhafte Bande, die die Leute um den Schlaf bringt. Aber eine derartige Lebendigkeit ist gut für Seš’qa. Das beweist, dass unsere Bemühungen Früchte tragen und viele Barrieren zwischen den Völkern beseitigen."
+      },
+      {
+        "title": "Geplauder 3",
+        "text": "Die Person aus dem Zauberstunde-Katalog …? Na gut, das bin ich. Ich bekomme Proben im Tausch für Werbefotos. Vor Jahren bin ich zufällig in einen Hexereiladen geraten, und der Verkäufer behandelte mich wie ein seltenes Exemplar. Ich wurde dort tatsächlich festgehalten und musste sofort einen Vertrag unterzeichnen. Es ist mir etwas unangenehm, wenn Bekannte das Bild sehen, aber die Proben sind selten … Endmin, darf ich dich fragen, was du mit diesem Katalog vorhast?"
+      },
+      {
+        "title": "Geplauder 4",
+        "text": "Als Kind habe ich ständig den Haustürschlüssel verloren. Das führte zu einem Streit mit Char, bei dem versehentlich seine Musikbox zu Bruch ging. Nachdem ich mich entschuldigt hatte, stellte er aus ihrer Kernkomponente einen neuen Schlüssel für mich her … Er sagte mir, es sei ein Glücksbringer, der mich immer wieder nach Hause führen würde. Jetzt, da meine Familie nicht mehr da ist und unser Seš’qa-Anwesen verkauft wurde … öffnet er keine Türen und hat keinerlei Bedeutung mehr."
+      },
+      {
+        "title": "Geplauder 5",
+        "text": "Die scharlachroten „Dämonenlanzen“ sind meine Originium-Techniken. Ich kann Gegenstände mit meinem Blut umhüllen und sie so in Waffen verwandeln. Normalerweise verwende ich mein eigenes Blut, da das des Gegners unrein sein könnte. Das Blut meiner Begleiter ist … etwas, das ich nicht ausnutzen möchte, selbst nicht mit deiner Zustimmung."
+      },
+      {
+        "title": "Thema: Seš’qa",
+        "text": "Vor hundert Jahren hätte sich niemand vorstellen können, dass heute der Anblick der in den Lüften schwebenden Sarkaz-Stadt nicht etwa Irritation, sondern die Sehnsucht hervorrufen würde, sie zu besuchen und ihre Zaubertricks mit eigenen Augen zu sehen. Seš’qa ist wie eine schwebende Feder – mit unzähligen Leuten, die sie sorgsam durch die Winde lenken. Sie wünschen sich, dass die schwebende Stadt als eine Art Anker für unsere landlebenden Verwandten dient und ihnen Hoffnung gibt."
+      },
+      {
+        "title": "Thema: Kriegsherr der Wildnis",
+        "text": "Jakub, der Kriegsherr der Wildnis … Ja, ich habe ihn wirklich gesehen. Heute wird sein Name nur von Wenigen erwähnt. Abgesehen vom persönlichen Hass stimme ich seinem Plan, den Zivilisationsgürtel zu zerschlagen, nicht zu. Dennoch kann ich seine Fertigkeiten und außergewöhnliche Führungsstärke nicht leugnen. Wäre Jakub Meissen nicht gefallen, könnten seine Landbrecher auf Talos-II vielleicht einen blutigen Erfolg erzielen."
+      },
+      {
+        "title": "Thema: Geschwister",
+        "text": "Ich bin überhaupt nicht wie Char. Aber es gab kurze Momente der Geistesabwesenheit, in denen ich sein Gesicht im Spiegel sah … Ich versuchte, sein lässiges, zynisches Grinsen nachzuahmen, verstehe aber immer noch nicht, was er sich dabei gedacht hat – wie konnte er die Blutfehde ignorieren und sich den Banditen anschließen, die unsere Eltern getötet haben? Ich kann dieses Rätsel nicht lösen, will die Wahrheit aber unbedingt erfahren."
+      },
+      {
+        "title": "Thema: Bewahrer der Weisheit",
+        "text": "Nur wenige tragen den Titel „Agaš’mekanaz“ – Char war es, der mir die Chance gegeben hat, Bewahrer zu werden. Verbrechen im Zusammenhang mit Sarkaz-Hexerei lassen sich leichter durch einen Verwandten aufklären … Ich bin derjenige, der Chars Techniken am besten kennt. Und nur ich allein kann Jahrzehnte ohne Pause damit verbringen, ihn aufzuspüren. Eine geliebte Person zum Feind zu machen, bedeutet Schmerz, doch wir Bewahrer bleiben unserer Pflicht treu. Das gilt auch für mich."
+      },
+      {
+        "title": "Thema: Eltern",
+        "text": "Unter Führung der legendären Sprecherin erreichten meine Eltern zusammen mit vielen Sarkaz Talos-II. Sie waren die ersten Mitglieder von Seš’qa und erbauten den Lebensgrat … Der Kriegsherr der Wildnis hat sie getötet. Ich erinnere mich an meine Mutter als sanfte Seele, die sich für den Frieden zwischen den Völkern eingesetzt hat … Aber Char behauptet, eine andere Seite von ihr gesehen zu haben, die ich nicht kenne … Ganz egal, was in der Vergangenheit geschehen ist: Verrat … ist immer noch Verrat."
+      },
+      {
+        "title": "Ressource/Sammelobjekt entdeckt 1",
+        "text": "Folge den Spuren da drüben."
+      },
+      {
+        "title": "Ressource/Sammelobjekt entdeckt 2",
+        "text": "Diese Gegenstände haben einen hohen Wert. Sie mitzunehmen, wird unsere Mission vereinfachen."
+      },
+      {
+        "title": "Unerforschter Bereich entdeckt",
+        "text": "Erste Regel für einen Bewahrer: unbekanntes Terrain stets im Auge behalten."
+      },
+      {
+        "title": "Starker Gegner entdeckt",
+        "text": "Bleib wachsam. Der da riecht nach Blut."
+      },
+      {
+        "title": "Abbau 1",
+        "text": "Diese Mineralien erzeugen einen recht entzückenden Klang."
+      },
+      {
+        "title": "Abbau 2",
+        "text": "Darf ich? Ich werde das Ganze etwas beschleunigen."
+      },
+      {
+        "title": "Kiste öffnen",
+        "text": "Handeln führt zu Ergebnissen."
+      },
+      {
+        "title": "Aurylen erhalten",
+        "text": "Aurylene … auch die sind ziemlich gut im Weglaufen."
+      },
+      {
+        "title": "Eliminierung der Verderbnis",
+        "text": "Der Makel dieses Landes wurde beseitigt."
+      },
+      {
+        "title": "Ausruhen",
+        "text": "Aus den tiefsten Schatten wird einmal mehr ein Tropfen Blut vergossen."
+      },
+      {
+        "title": "Taktische Nutzung 1",
+        "text": "Benutze die hier!"
+      },
+      {
+        "title": "Taktische Nutzung 2",
+        "text": "Das Leben kehrt zum Blut zurück."
+      },
+      {
+        "title": "Gefahrenwarnung",
+        "text": "Vorsicht!"
+      },
+      {
+        "title": "Verletzt",
+        "text": "Bis zu meinem letzten Blutstropfen …"
+      },
+      {
+        "title": "0 LP",
+        "text": "Das Meer aus Blut … flüstert von seiner Trauer …"
+      },
+      {
+        "title": "Teammotivation 1",
+        "text": "Eine hervorragende Aktion."
+      },
+      {
+        "title": "Teammotivation 2",
+        "text": "Herausragend. Beim Anblick kommt mein Blut in Wallung."
+      },
+      {
+        "title": "Motivationsreaktion 1",
+        "text": "Ich erfülle nur meine Pflicht."
+      },
+      {
+        "title": "Motivationsreaktion 2",
+        "text": "Das haben wir gemeinsam geschafft."
+      },
+      {
+        "title": "Kampf beginnt 1",
+        "text": "Ergib dich deinem Schicksal."
+      },
+      {
+        "title": "Kampf beginnt 2",
+        "text": "Es geht immer nur nach vorn."
+      },
+      {
+        "title": "Kampfsieg 1",
+        "text": "Die Brise trägt den metallischen Geruch des Blutes fort. Alles läuft nach Plan."
+      },
+      {
+        "title": "Kampfsieg 2",
+        "text": "Ein hervorragender Abschluss. Gut gemacht."
+      },
+      {
+        "title": "Kampfsieg 3",
+        "text": "Teamwork ist nicht meine Stärke. Aber der heutige Tag ist eine Ausnahme."
+      },
+      {
+        "title": "Kampfsieg 4",
+        "text": "Unser Blut wurde vergossen, aber der Gegner hat zehnfach dafür bezahlt. Der Abschluss der Aufgabe … ist Sieg genug."
+      },
+      {
+        "title": "Niederlage im Kampf",
+        "text": "Das ist zwar bitter, aber nicht das Ende. Eine Blutschuld muss beglichen werden … und unser Ziel liegt noch vor uns."
+      },
+      {
+        "title": "Abschlussangriff 1",
+        "text": "Zu schwach!"
+      },
+      {
+        "title": "Abschlussangriff 2",
+        "text": "Erstich sie!"
+      },
+      {
+        "title": "Kampffertigkeit 1",
+        "text": "Eine letzte Gnade."
+      },
+      {
+        "title": "Kampffertigkeit 2",
+        "text": "Der Tod erwartet dich."
+      },
+      {
+        "title": "Kampffertigkeit 3",
+        "text": "Winde dich vor Schmerzen."
+      },
+      {
+        "title": "Kombofertigkeit bereit 1",
+        "text": "Hexerei ist bereit."
+      },
+      {
+        "title": "Kombofertigkeit bereit 2",
+        "text": "Treib sie in die Enge."
+      },
+      {
+        "title": "Kombo wirken 1",
+        "text": "Es gibt kein Entkommen."
+      },
+      {
+        "title": "Kombo wirken 2",
+        "text": "Nun blute, Unreinheit."
+      },
+      {
+        "title": "Wuchtschlag 1",
+        "text": "Dein Ende naht."
+      },
+      {
+        "title": "Wuchtschlag 2",
+        "text": "Erbärmlicher Dummkopf."
+      },
+      {
+        "title": "Ultimative Fertigkeit 1",
+        "text": "O du scharlachroter Regen …"
+      },
+      {
+        "title": "Ultimative Fertigkeit 2",
+        "text": "Ertrinke in der endlosen Nacht."
+      },
+      {
+        "title": "Ultimative Fertigkeit 3",
+        "text": "Sünde endet auf dem Scheiterhaufen."
+      }
+    ]
   },
   "potentials": {
     "potential1": {

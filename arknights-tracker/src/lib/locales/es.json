@@ -364,7 +364,9 @@
     "special_1_3_2": "Expiador de pecados",
     "weponbox_1_3_2": "Solicitud de tono carmesí",
     "special_1_4_1": "El norte añora a la vigilante de la grieta",
-    "weponbox_1_4_1": "Solicitud de Grado militar"
+    "weponbox_1_4_1": "Solicitud de Grado militar",
+    "special_1_4_2": "Buenos días de parte de su estrella del amanecer",
+    "weponbox_1_4_2": "Solicitud de Deslumbrante"
   },
   "pages": {
     "home": "Inicio",
@@ -457,7 +459,8 @@
     "theRootedRealm": "El Reino Arraigado",
     "protocolPassBlightedSea": "Pase de protocolo: Mar contaminado",
     "gazeNorthToTheRiftSignIn": "Inicio de sesión de Mirada hacia el norte en la grieta",
-    "protocolInvitationTheReturn": "Invitación de Protocolo: El regreso"
+    "protocolInvitationTheReturn": "Invitación de Protocolo: El regreso",
+    "bedazzlingDawnstarSignIn": "Inicio de sesión de Estrella del amanecer deslumbrante"
   },
   "mouths": {
     "january": "Enero",

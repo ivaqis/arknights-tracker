@@ -122,7 +122,333 @@
         "name": "Sport",
         "description": "Sport: velocista notturna\nLe terre selvagge sono il luogo ideale per allenarsi: lì può correre quanto vuole."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Preparazione all'operazione 1",
+        "text": "È tutto pronto? Le terre selvagge sono piene di pericoli."
+      },
+      {
+        "title": "Preparazione all'operazione 2",
+        "text": "Il vento non si ferma mai. E nemmeno io."
+      },
+      {
+        "title": "Aggiunta alla squadra 1",
+        "text": "Finalmente una boccata d'aria fresca. Mi ero quasi dimenticata il profumo della terra."
+      },
+      {
+        "title": "Aggiunta alla squadra 2",
+        "text": "Vai pure più veloce che puoi. Non temere. Riesco sempre a starti dietro."
+      },
+      {
+        "title": "Cambio arma",
+        "text": "Ne sento il respiro. È un'arma che sembra fatta apposta per me."
+      },
+      {
+        "title": "Cambio equipaggiamento",
+        "text": "È di ottima fattura... Una precisione del genere è rara, persino tra i Cantori più abili."
+      },
+      {
+        "title": "Attivazione matrice delle abilità",
+        "text": "La mia Cantora mi ha insegnato diversamente, ma tu vuoi raggiungere gli stessi obiettivi. Mi sento illuminata."
+      },
+      {
+        "title": "Visione delle registrazioni di combattimenti",
+        "text": "Si impara molto vivendo nelle terre selvagge... Sono lezioni che ti plasmano come la cote affila una lama."
+      },
+      {
+        "title": "Promozione operatore 1",
+        "text": "Una promozione...? Significa che ho ottenuto la tua approvazione? Allora... sono lieta di essere stata approvata."
+      },
+      {
+        "title": "Promozione operatore 2",
+        "text": "L'onore comporta delle responsabilità. Tutto questo mi ricorda che abbiamo molte persone da aiutare."
+      },
+      {
+        "title": "Promozione operatore 3",
+        "text": "La natura non ci insegna la sopravvivenza. A malapena ci lascia un sentiero da seguire. Una volta, facevo del mio meglio per adattarmi... Ora... Inizio a capire come funziona tutto."
+      },
+      {
+        "title": "Promozione operatore 4",
+        "text": "Ho imparato molto viaggiando con te. Inizio a capire perché le strofe dell'hanna mi hanno condotto al tuo fianco. Sfrutterò al meglio questa conoscenza."
+      },
+      {
+        "title": "Operatore a rapporto",
+        "text": "Il mio nome è Ekut, conosciuta come Arclight. Non sono abile coi flussi di parole, ma ti auguro ogni bene e spero che tu possa scorrere come un fiume in piena, Endfielder."
+      },
+      {
+        "title": "Attesa 1",
+        "text": "Il sentiero dinanzi a noi è stato rivelato."
+      },
+      {
+        "title": "Attesa 2",
+        "text": "Sono carica e pronta a offrire prestazioni ottimali."
+      },
+      {
+        "title": "Assegnazione a una struttura",
+        "text": "Subito. Noi Cercatori dei canti non riposiamo mai."
+      },
+      {
+        "title": "Saluto 1",
+        "text": "Endmin, da dove soffia il vento oggi?"
+      },
+      {
+        "title": "Saluto 2",
+        "text": "Sei di ritorno da un viaggio sulla superficie, Endmin? Emani l'odore delle terre selvagge."
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 1",
+        "text": "Riparare un destriero di ferro è come curare una cistibestia. Bisogna ascoltare attentamente prima di somministrare il trattamento."
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 2",
+        "text": "Le stelle qui sono diverse rispetto a quelle che vediamo nelle terre selvagge... Ma entrambi i punti d'osservazione sono a loro modo affascinanti."
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 3",
+        "text": "Sto studiando quelle nubi. I loro bordi frastagliati indicano l'arrivo di una tempesta. Presta cautela se dovrai andare laggiù per la prossima missione."
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 4",
+        "text": "Hai dei capelli splendidi, sono come la pelliccia di una bestia umida di rugiada mattutina. Non l'hai mai vista? Oh, è bellissima."
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 5",
+        "text": "Hai mai visto le migrazioni delle praterie? Un esercito di bestie e carri che insegue la pioggia e le nuvole. Sono queste le cose che desidero proteggere."
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 6",
+        "text": "Spesso il tuo sguardo si perde mentre osservi questo mondo. So come ti senti. I nostri cuori anelano i luoghi a noi cari, a prescindere da quanto possano essere lontani."
+      },
+      {
+        "title": "Offerta regali",
+        "text": "Ti ho portato una cosa. Un dono dalle terre selvagge. Spero ti piaccia."
+      },
+      {
+        "title": "Accettazione regali",
+        "text": "Per me? I doni sono importanti nelle terre selvagge... ne avrò grande cura."
+      },
+      {
+        "title": "Dialogo fiducia 1",
+        "text": "Endmin, ti consiglio di imparare le basi della sopravvivenza nelle terre selvagge. Puoi cominciare col fabbricare a mano le trappole per i lungorecchi. Ti insegno io."
+      },
+      {
+        "title": "Dialogo fiducia 2",
+        "text": "La vita nelle terre selvagge è difficile, ma anche bella. Come i cieli tersi dopo la fine di un monsone, come la schiusa del crestalone sotto la luna."
+      },
+      {
+        "title": "Dialogo fiducia 3",
+        "text": "Non è un mistero: i dispositivi più vecchi funzionano meglio in gruppo. Lega due bestie da soma diverse allo stesso carro e dà loro del tempo. Finiranno per diventare un'ottima squadra."
+      },
+      {
+        "title": "Dialogo fiducia 4",
+        "text": "Ho iniziato il mio viaggio per cercare delle risposte. L'equilibrio delle terre selvagge è stato alterato: devo fare qualcosa. Ho ascoltato le increspature dei laghi e i sussurri dei boschi. Ora, però, desidero sentire la tua voce."
+      },
+      {
+        "title": "Dialogo fiducia 5",
+        "text": "Intesserò questi racconti nell'hanna del nostro viaggio. Ci vorrà del tempo, poiché ci sono troppe cose degne di essere messe in musica. Una volta che l'hanna sarà finita, sarai tu a sentirla prima di chiunque altro."
+      },
+      {
+        "title": "Chiacchierata 1",
+        "text": "Chi desidera vivere farà sentire la sua voce. E i Cercatori dei canti in viaggio la sentiranno sempre. È questo lo scopo del Circuito Hannabit."
+      },
+      {
+        "title": "Chiacchierata 2",
+        "text": "Diventare amici delle tribù delle terre selvagge è semplice. Noi ci concentriamo su ciò che conta: meteo, cibo e pericoli. Dedichiamo molto del nostro tempo a questi tre elementi."
+      },
+      {
+        "title": "Chiacchierata 3",
+        "text": "Ogni Cercatore dei canti del Circuito Hannabit conosce le hanna a memoria. Non è difficile. Le strofe parlano di ogni aspetto delle nostre vite. Al tempo stesso, ogni nostra sfaccettatura è a sua volta intrecciata nei versi."
+      },
+      {
+        "title": "Chiacchierata 4",
+        "text": "La mia Cantora mi ha raccontato di Terra e delle città che si spostano per evitare le catastrofi. A quanto pare, abbiamo ereditato questa pratica ancestrale, seppur in forma diversa."
+      },
+      {
+        "title": "Chiacchierata 5",
+        "text": "In alcuni bazaar delle terre selvagge puoi barattare articoli usati, ma bisogna essere pazienti per trovare un buon affare. Per fare la mia trasmittente, ho modificato un vecchio dispositivo di Kjersch. Sono oggetti che funzionano anche in condizioni estreme."
+      },
+      {
+        "title": "Argomento: città",
+        "text": "Talos-II è molto più grande di quanto pensassi. Un tempo, credevo che tutte le città fossero solo un ammasso di acciaio, strade e luci. Poi, però, quando le ho visitate, ho capito che ognuna di esse ha una propria atmosfera e unicità. La differenza è ancora più lampante che tra due pascoli composti da erbe diverse."
+      },
+      {
+        "title": "Argomento: l'Endministrator",
+        "text": "Ho viaggiato molto e persino la più remota delle tribù intona delle canzoni sulle tue gesta. Sono storie estremamente diverse tra loro, ma le accomuna qualcosa di incredibile: il tuo nome è sempre associato al concetto di speranza."
+      },
+      {
+        "title": "Argomento: canzoni hanna",
+        "text": "Un nomade in punto di morte intonò la nostra primissima hanna, che includeva appena tre strofe. Furono queste a dare origine al Circuito Hannabit. E, fin dal primo Cantore, l'hanna continua a guidare i Cercatori dei canti finché loro stessi non divengono parte della canzone."
+      },
+      {
+        "title": "Argomento: Cantori",
+        "text": "È raro che i Cantori parlino in modo diretto. Orisha diceva che l'hanna contiene tutte le informazioni di cui abbiamo bisogno. Mi ha insegnato attraverso le sue azioni. Dobbiamo aiutarci a vicenda per sopravvivere in questo mondo."
+      },
+      {
+        "title": "Argomento: la sua tribù",
+        "text": "Sono cresciuta in una piccola tribù che contava a malapena cento anime. Non conoscevo altro prima di intraprendere il mio viaggio. Lì ho imparato a mungere le cistibestie, a cavalcare il mio destriero di ferro e a sopravvivere alle terre selvagge. Non l'ho mai lasciata. L'ho semplicemente portata con me."
+      },
+      {
+        "title": "Individuazione risorsa/collezionabile 1",
+        "text": "Se contribuisce alla nostra sopravvivenza, diventerà di nostra proprietà."
+      },
+      {
+        "title": "Individuazione risorsa/collezionabile 2",
+        "text": "Cose del genere interesserebbero alla mia Cantora."
+      },
+      {
+        "title": "Individuazione zona non esplorata",
+        "text": "Andiamo avanti. Dobbiamo dare un'occhiata più da vicino."
+      },
+      {
+        "title": "Individuazione nemico potente",
+        "text": "Percepisco un pericolo. Non si farà sconfiggere facilmente."
+      },
+      {
+        "title": "Estrazione 1",
+        "text": "I frutti della terra."
+      },
+      {
+        "title": "Estrazione 2",
+        "text": "Faccio io. Me la cavo coi lavori fisici."
+      },
+      {
+        "title": "Apertura di una cassa",
+        "text": "Una rarità nelle terre selvagge. Ne faremo buon uso."
+      },
+      {
+        "title": "Acquisizione di Aurylene",
+        "text": "Di solito lo imbottigliamo per ricavare delle torce."
+      },
+      {
+        "title": "Eliminazione Contaminazione",
+        "text": "Dovremmo lasciare che la natura faccia il suo corso."
+      },
+      {
+        "title": "Riposo",
+        "text": "Mi ricorda i fuochi che accendevamo nelle terre selvagge. Entrambi condividono lo stesso calore."
+      },
+      {
+        "title": "Utilizzo di gadget 1",
+        "text": "Fa' respiri lunghi e regolari."
+      },
+      {
+        "title": "Utilizzo di gadget 2",
+        "text": "La mia forza sta tornando."
+      },
+      {
+        "title": "Avviso di pericolo",
+        "text": "Non fermarti. Continua a muoverti."
+      },
+      {
+        "title": "Ferita",
+        "text": "Posso ancora combattere, sono solo più lenta."
+      },
+      {
+        "title": "Esaurimento PS",
+        "text": "Mi spiace... Vorrei poterti essere più d'aiuto..."
+      },
+      {
+        "title": "Incoraggiamento alla squadra 1",
+        "text": "Hai agito veloce come un fulmine!"
+      },
+      {
+        "title": "Incoraggiamento alla squadra 2",
+        "text": "Come vento e fulmini, abbiamo scatenato una tempesta sul nemico."
+      },
+      {
+        "title": "Risposta all'incoraggiamento 1",
+        "text": "È ciò che ci si aspetta da me."
+      },
+      {
+        "title": "Risposta all'incoraggiamento 2",
+        "text": "Faccio solo la mia parte nella squadra."
+      },
+      {
+        "title": "Inizio combattimento 1",
+        "text": "Sono parte del flusso."
+      },
+      {
+        "title": "Inizio combattimento 2",
+        "text": "Lascerò a te quel lato."
+      },
+      {
+        "title": "Vittoria in combattimento 1",
+        "text": "Il nemico tornerà nell'oblio."
+      },
+      {
+        "title": "Vittoria in combattimento 2",
+        "text": "Prego affinché la terra accetti tutti voi."
+      },
+      {
+        "title": "Vittoria in combattimento 3",
+        "text": "Tale è il volere della natura."
+      },
+      {
+        "title": "Vittoria in combattimento 4",
+        "text": "Ogni essere delle terre selvagge deve superare le avversità per poter crescere."
+      },
+      {
+        "title": "Sconfitta in combattimento",
+        "text": "Persino la bestia feroce più esperta può farsi sfuggire la preda. Almeno abbiamo imparato qualcosa da questa caccia."
+      },
+      {
+        "title": "Colpo finale 1",
+        "text": "Rottura!"
+      },
+      {
+        "title": "Colpo finale 2",
+        "text": "Infrangimento!"
+      },
+      {
+        "title": "Abilità di combattimento 1",
+        "text": "Venti furiosi!"
+      },
+      {
+        "title": "Abilità di combattimento 2",
+        "text": "Rombo di tuono!"
+      },
+      {
+        "title": "Abilità di combattimento 3",
+        "text": "Arco folgorante!"
+      },
+      {
+        "title": "Abilità combo pronta 1",
+        "text": "Il vento soffia nella direzione giusta!"
+      },
+      {
+        "title": "Abilità combo pronta 2",
+        "text": "Spazzerò via gli altri."
+      },
+      {
+        "title": "Esecuzione combo 1",
+        "text": "Questa è la via da seguire."
+      },
+      {
+        "title": "Esecuzione combo 2",
+        "text": "Vedo un'apertura!"
+      },
+      {
+        "title": "Mossa letale 1",
+        "text": "È finita."
+      },
+      {
+        "title": "Mossa letale 2",
+        "text": "È la mia occasione."
+      },
+      {
+        "title": "Abilità suprema 1",
+        "text": "Non mi sfuggirai."
+      },
+      {
+        "title": "Abilità suprema 2",
+        "text": "E giunse dalla tempesta..."
+      },
+      {
+        "title": "Abilità suprema 3",
+        "text": "Colpì veloce come un fulmine."
+      }
+    ]
   },
   "potentials": {
     "potential1": {

@@ -122,7 +122,329 @@
         "name": "Creatività",
         "description": "Creatività: \"regali\" fatti a mano\nQuando Fluorite resta in silenzio, di solito significa che sta per fare uno scherzo a qualcuno. Purtroppo, Fluorite resta spesso in silenzio."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Preparazione all'operazione 1",
+        "text": "Oh, si va a giocare?"
+      },
+      {
+        "title": "Preparazione all'operazione 2",
+        "text": "Aspetta, e se qualcuno non fosse pronto?"
+      },
+      {
+        "title": "Aggiunta alla squadra 1",
+        "text": "Pace e felicità, signore e signori."
+      },
+      {
+        "title": "Aggiunta alla squadra 2",
+        "text": "Wow, pare che sia molto richiesta."
+      },
+      {
+        "title": "Cambio arma",
+        "text": "Non male... Ti spiace se faccio qualche modifica?"
+      },
+      {
+        "title": "Cambio equipaggiamento",
+        "text": "Più l'equipaggiamento è raffinato, più è una seccatura, eh?"
+      },
+      {
+        "title": "Attivazione matrice delle abilità",
+        "text": "Nessuno vuole allenarsi con me? Che peccato."
+      },
+      {
+        "title": "Visione delle registrazioni di combattimenti",
+        "text": "Quanti resoconti di battaglia... La Endfield Industries è senz'altro un'organizzazione... industriosa."
+      },
+      {
+        "title": "Promozione operatore 1",
+        "text": "Pare che il vero lavoro sia appena cominciato."
+      },
+      {
+        "title": "Promozione operatore 2",
+        "text": "È un vero onore... ma significa più ore sul campo, vero?"
+      },
+      {
+        "title": "Promozione operatore 3",
+        "text": "Magari mettici anche una medaglia, la prossima volta. Non ne ho mai ricevuta una."
+      },
+      {
+        "title": "Promozione operatore 4",
+        "text": "Se i margini della Cintura civilizzata fanno parte del \"mondo migliore\" che cerchiamo di costruire... significa che abbiamo un bel po' di lavoro da fare, eh?"
+      },
+      {
+        "title": "Operatore a rapporto",
+        "text": "Fluorite, guerrigliera della Squadra Z7. Hai qualcosa da dirmi? No? Allora perché non la chiudiamo qui?"
+      },
+      {
+        "title": "Attesa 1",
+        "text": "Chi avrà la sfortuna di mettersi sulla mia strada?"
+      },
+      {
+        "title": "Attesa 2",
+        "text": "È meglio distrarli? Neutralizzarli? O distruggerli e basta?"
+      },
+      {
+        "title": "Assegnazione a una struttura",
+        "text": "Non ti preoccupare, farò le cose come si deve."
+      },
+      {
+        "title": "Saluto 1",
+        "text": "Giornata piena, leggenda vivente?"
+      },
+      {
+        "title": "Saluto 2",
+        "text": "Quant'è passato dall'ultima volta che hai riposato un po'?"
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 1",
+        "text": "Beh... Questa è nuova. Oggi nessun incarico?"
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 2",
+        "text": "Ho appena visto Akekuri entrare in sala di addestramento con un sorriso sghembo... e una spada. Mi sa che starò fuori dai piedi per un altro po'..."
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 3",
+        "text": "La prima volta che ho preso in mano una pistola non sapevo nemmeno come aprire il tamburo. Ma con quei tizi che mi aggredivano, non è che avessi molta scelta... Sinceramente, l'addestramento qui è una passeggiata rispetto al caos della frontiera."
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 4",
+        "text": "Se non avessimo avuto la fortuna di finire nella stessa squadra, ora ci sarebbe il doppio dei guai. Ma non temere, li tengo d'occhio io."
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 5",
+        "text": "Da piccoli dormivamo tutto il giorno sulle bestie da soma, prendendo il sole per non sentire la fame... Non mi lamento di certo della nostra situazione ora; dico solo che sarebbe un peccato non godersi il sole a quest'altitudine."
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 6",
+        "text": "Sei proprio come la supervisora Perlica, non ti si può odiare. I grandi capi alla frontiera sfoggiano con orgoglio i loro titoli a ogni piè sospinto, ma la verità è che le persone seguono i veri leader, con o senza tutti quei fronzoli."
+      },
+      {
+        "title": "Offerta regali",
+        "text": "Ecco, una cosina per te. Non ti preoccupare, non salterà fuori niente."
+      },
+      {
+        "title": "Accettazione regali",
+        "text": "Mmh, una volta una mia \"collega\" ha accettato un regalo ed è finita in guai grossi... Perché scuoti la testa così?"
+      },
+      {
+        "title": "Dialogo fiducia 1",
+        "text": "Doti di negoziazione? Ti prego, non lusingare quei teppistelli. Fanno la voce grossa, ma appena il loro padrone agita la ciotola, corrono dritti da lui come bravi cagnolini. Sono semplici pedine senza spina dorsale né un piano. Certo, provocano dei bei disastri, ma il vero problema sono quelli che hanno tutto il potere e le risorse e ci spremono fino al midollo."
+      },
+      {
+        "title": "Dialogo fiducia 2",
+        "text": "Prima di entrare alla Endfield, mi sono messa in un guaio da cui mi ha tirata fuori Akekuri. La sua squadra stava salvando la città, cacciando via i Fenditerra. E la gente del posto era troppo presa a cercare di accaparrarsi le provviste della Endfield, come avvoltoi... Ora dimmi, tu che avresti fatto?"
+      },
+      {
+        "title": "Dialogo fiducia 3",
+        "text": "Ho sei zii, otto zie e ventidue fratelli e sorelle... Sì, siamo come i Cautus. Non sono tutti imparentati con me, sono solo persone che sono fuggite insieme a me e mia madre. Alcuni sono arrivati più tardi, mentre altri a un certo punto sono spariti. Ma siamo rimasti insieme, anche se solo per poco. Per me basta questo a formare una famiglia."
+      },
+      {
+        "title": "Dialogo fiducia 4",
+        "text": "Alcuni dimenticano che abbiamo quattro arti per trascinarci in giro, e non solo due. A stare chini abbastanza a lungo si smette di sembrare persone. La frontiera è piena di gente così. Ma se hai il coraggio di guardare in su... allora forse hai una possibilità di condurre una vita migliore."
+      },
+      {
+        "title": "Dialogo fiducia 5",
+        "text": "Ecco, prendi questa lettera. Se non torno, bruciala nelle terre selvagge. Leggila, se vuoi, sono solo dei pensieri. La persona a cui è destinata non c'è più. Immagino tocchi a me trovare le risposte che cercava. E la leggenda vivente di Talos-II mi aiuterà, vero?"
+      },
+      {
+        "title": "Chiacchierata 1",
+        "text": "Questa è una delle mie bombe preferite. Basta sistemare un po' la superficie adesiva ed esploderà esattamente dove deve. Ah, non ti spaventare. È più efficace a immobilizzare il bersaglio che a far saltare in aria le cose."
+      },
+      {
+        "title": "Chiacchierata 2",
+        "text": "Dopo aver visto il mio fascicolo, la supervisora Perlica mi ha assegnato il nome in codice \"Fluorite\". Nonostante la sua natura tossica, quel minerale si usa per creare prodotti industriali di ogni sorta. Capisco perché l'ha scelto, ma se devo essere sincera... la trovo una scelta un po' sfacciata."
+      },
+      {
+        "title": "Chiacchierata 3",
+        "text": "Quando ero piccola, io e mia madre fuggivamo da un luogo all'altro. Alla fine, ho dovuto sopravvivere per conto mio nella frontiera. In alcuni posti ci davano qualche razione di cereali, mentre in altri si inventavano tasse di ogni genere da farci pagare. Qualsiasi posto era casa, e al tempo stesso nessuno. Gli insediamenti della frontiera non duravano mai a lungo e l'idea di \"casa\" non ha mai significato molto per me."
+      },
+      {
+        "title": "Chiacchierata 4",
+        "text": "La bellezza non ha mai abbandonato le terre selvagge. Gli animali scacciati dalla Contaminazione non se ne vanno mai davvero, cambiano solo strada, anno dopo anno. L'erba torna a crescere non appena la Contaminazione si ritira. La natura ha un ritmo tutto suo e può sopportare solo fino a un certo punto... A volte mi chiedo se in quell'equilibrio ci sia davvero un posto anche per noi."
+      },
+      {
+        "title": "Chiacchierata 5",
+        "text": "Nelle zone remote in cui ho vissuto, sono sempre i \"tutori dell'ordine\" a spremere di più la gente. Sanno quanto è precaria la situazione; una scintilla di caos e crolla tutto. Perciò creano un loro equilibrio distorto tenendo in ostaggio la gente del posto. A meno di non essere abbastanza vicini da prenderli per la gola, non cambierà mai nulla."
+      },
+      {
+        "title": "Argomento: Akekuri",
+        "text": "Prova a indovinare. Chi credi abbia messo quelle orecchie nella busta delle prove? Già, perfino il nostro capitano dal cuore d'oro sa che su Talos-II non c'è altra scelta. E la faccia che ha fatto, mentre cercava di trattenere le lacrime... Adorabile."
+      },
+      {
+        "title": "Argomento: Catcher",
+        "text": "Può sembrare uno forte, ma vacci piano con lui. I più preparati sono sempre quelli che hanno più paura di fallire. Tutti commettiamo degli errori... Come dici? Dovrei smetterla di chiedergli favori? Pfft, e perché mai? Non temere, se la caverà, anche se ha una fifa blu. Se la cava sempre."
+      },
+      {
+        "title": "Argomento: Estella",
+        "text": "Non toccare la playlist di Estella e non lasciare che si metta realmente in pericolo. Credi che abbia tutto sotto controllo? Nah. Ti toccherà senz'altro rimediare ai suoi casini."
+      },
+      {
+        "title": "Argomento: Antal",
+        "text": "Quel lucertolone è freddo come il ghiaccio, perfino nel cuore della battaglia. Forse non si rende conto del pericolo. Fa uscire di testa il capitano... Ma che vuoi farci, è fatto così. Io e lui? Mmh... Andiamo d'accordo... a patto che si ricordi di non stare a fissarmi la coda."
+      },
+      {
+        "title": "Individuazione risorsa/collezionabile 1",
+        "text": "Ho trovato qualcosa di utile, posso prendermelo io?"
+      },
+      {
+        "title": "Individuazione risorsa/collezionabile 2",
+        "text": "Visto cosa c'è laggiù? Ah, fingi che non abbia detto nulla."
+      },
+      {
+        "title": "Individuazione zona non esplorata",
+        "text": "Ho trovato una zona interessante. Mmh... Sembra divertente."
+      },
+      {
+        "title": "Individuazione nemico potente",
+        "text": "Gente, abbiamo un nuovo amichetto."
+      },
+      {
+        "title": "Estrazione 1",
+        "text": "Ah, alla vecchia maniera. Proprio come si faceva una volta."
+      },
+      {
+        "title": "Estrazione 2",
+        "text": "*Sbadiglia* Arrivo. Certo che ne avete di voglia di lavorare..."
+      },
+      {
+        "title": "Apertura di una cassa",
+        "text": "Wooo, che roba! Chi prima arriva, meglio alloggia!"
+      },
+      {
+        "title": "Acquisizione di Aurylene",
+        "text": "Ne avevo già trovato uno, in passato... Quello che è successo dopo non è stato proprio bello."
+      },
+      {
+        "title": "Eliminazione Contaminazione",
+        "text": "Se allora fossi riuscita a eliminare la Contaminazione..."
+      },
+      {
+        "title": "Riposo",
+        "text": "Finalmente è ora di rifornirsi di bombe."
+      },
+      {
+        "title": "Utilizzo di gadget 1",
+        "text": "Visto? Sapevo che sarebbe tornato utile."
+      },
+      {
+        "title": "Utilizzo di gadget 2",
+        "text": "È stata solo sfortuna. Si ricomincia."
+      },
+      {
+        "title": "Avviso di pericolo",
+        "text": "Attenzione, non farti beccare."
+      },
+      {
+        "title": "Ferita",
+        "text": "... Mi è andata male."
+      },
+      {
+        "title": "Esaurimento PS",
+        "text": "Avrei dovuto... prevederlo."
+      },
+      {
+        "title": "Incoraggiamento alla squadra 1",
+        "text": "Wow, che spettacolo."
+      },
+      {
+        "title": "Incoraggiamento alla squadra 2",
+        "text": "Niente male. Peccato che nessuno abbia una videocamera."
+      },
+      {
+        "title": "Risposta all'incoraggiamento 1",
+        "text": "Bei discorsi, ma risparmia il fiato."
+      },
+      {
+        "title": "Risposta all'incoraggiamento 2",
+        "text": "Beh, dopotutto siamo una squadra d'élite."
+      },
+      {
+        "title": "Inizio combattimento 1",
+        "text": "Si riduce tutto a questo, eh?"
+      },
+      {
+        "title": "Inizio combattimento 2",
+        "text": "Sììì, ce la metteremo tutta! Speriamo anche in un lauto bonus."
+      },
+      {
+        "title": "Vittoria in combattimento 1",
+        "text": "Bene, un problema in meno."
+      },
+      {
+        "title": "Vittoria in combattimento 2",
+        "text": "Peccato, forse una possibilità potevano anche avercela..."
+      },
+      {
+        "title": "Vittoria in combattimento 3",
+        "text": "Sì, sì, non ce l'avremmo mai fatta senza di te."
+      },
+      {
+        "title": "Vittoria in combattimento 4",
+        "text": "Bah. Non male, ma avremmo potuto fare di meglio."
+      },
+      {
+        "title": "Sconfitta in combattimento",
+        "text": "Piagnucolare non serve a nulla, agire sì. Forza, non è ancora finita."
+      },
+      {
+        "title": "Colpo finale 1",
+        "text": "*Fischia* Prendi, bello!"
+      },
+      {
+        "title": "Colpo finale 2",
+        "text": "Attenzione, prego."
+      },
+      {
+        "title": "Abilità di combattimento 1",
+        "text": "Ecco qua."
+      },
+      {
+        "title": "Abilità di combattimento 2",
+        "text": "Spero sia di tuo gradimento!"
+      },
+      {
+        "title": "Abilità di combattimento 3",
+        "text": "Tic-tac!"
+      },
+      {
+        "title": "Abilità combo pronta 1",
+        "text": "Pfft. Si va in scena."
+      },
+      {
+        "title": "Abilità combo pronta 2",
+        "text": "Neanche una fetta di groviera ha così tanti buchi."
+      },
+      {
+        "title": "Esecuzione combo 1",
+        "text": "Goditela, mi raccomando."
+      },
+      {
+        "title": "Esecuzione combo 2",
+        "text": "Scommetto che ti piacerà."
+      },
+      {
+        "title": "Mossa letale 1",
+        "text": "Sorpresa!"
+      },
+      {
+        "title": "Mossa letale 2",
+        "text": "È ora della nanna, tesoruccio."
+      },
+      {
+        "title": "Abilità suprema 1",
+        "text": "Ormai hai vissuto abbastanza, no?"
+      },
+      {
+        "title": "Abilità suprema 2",
+        "text": "Questa farà un bel casino."
+      },
+      {
+        "title": "Abilità suprema 3",
+        "text": "Sei al capolinea, compare."
+      }
+    ]
   },
   "potentials": {
     "potential1": {

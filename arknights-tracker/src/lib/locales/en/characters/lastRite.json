@@ -125,7 +125,337 @@
         "name": "Charity",
         "description": "Charity: Community Service\nLast Rite prefers taking care of the sick or harvesting grain instead of swinging weapons around."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Operation Prep 1",
+        "text": "We're about to leave? Ah, uh ... just wait for me ... a sec..."
+      },
+      {
+        "title": "Operation Prep 2",
+        "text": "I remember the Operational Manual said — Oh, I-I'm almost done!"
+      },
+      {
+        "title": "Adding to Team 1",
+        "text": "It's ... my turn already?"
+      },
+      {
+        "title": "Adding to Team 2",
+        "text": "Last Rite, prepare to strike...! Um... We're attacking, right?"
+      },
+      {
+        "title": "Switching Weapon",
+        "text": "No problem. As long as it's hefty enough."
+      },
+      {
+        "title": "Switching Gear",
+        "text": "Wow... I've never seen this model before... Let me t-take another look at the use-user's guide..."
+      },
+      {
+        "title": "Ability Matrix Activation",
+        "text": "I will continue fighting ... in my own way!"
+      },
+      {
+        "title": "Watching Combat Records",
+        "text": "KYAAA...! I-I-I'm so sorry! That scene was a little ... terrifying..."
+      },
+      {
+        "title": "Operator Promotion 1",
+        "text": "Pro ... motion? *Gasp* Really?! F-for me?"
+      },
+      {
+        "title": "Operator Promotion 2",
+        "text": "Mom ... Dad ... I ... I finally did it..."
+      },
+      {
+        "title": "Operator Promotion 3",
+        "text": "Acknowledged. I shall forge a path through fire and blood in your name, and shall not falter in the face — Umm... Why are you looking so ... tense?"
+      },
+      {
+        "title": "Operator Promotion 4",
+        "text": "I realized that I can be a lot more helpful to everyone if I stay. If my contract with Seš'qa expires, you can contact me... O-oh no! I wasn't supposed to say that! Please... Don't tell anyone about this..."
+      },
+      {
+        "title": "Operator Reporting for Duty",
+        "text": "Seš'qa liaison, reporting in for duty... My name... I-I mean my codename's Last Rite... Just call me that..."
+      },
+      {
+        "title": "Standing by 1",
+        "text": "The training must continue. I must master this power..."
+      },
+      {
+        "title": "Standing by 2",
+        "text": "And I hope that our battles may bring about peace."
+      },
+      {
+        "title": "Assigning to Facility",
+        "text": "Understood! I shall throw in ten times the effort...! No, I mean, one hundred and twenty times!"
+      },
+      {
+        "title": "Greeting 1",
+        "text": "Endministrator?! H-ho-how are you...?"
+      },
+      {
+        "title": "Greeting 2",
+        "text": "Need help with anything, Endmin?"
+      },
+      {
+        "title": "Dijiang Idle Chatter 1",
+        "text": "I can do this. It's just one line. Yes, be confident! Hey, Endmin...!!! D-d-de-de-dessert's ... g-g-grrr-great today, right?"
+      },
+      {
+        "title": "Dijiang Idle Chatter 2",
+        "text": "Oh no ... it's so crowded... W-what if someone comes up to me? I should just go curl up in a crate..."
+      },
+      {
+        "title": "Dijiang Idle Chatter 3",
+        "text": "W-wo-would you happen to know where we can report damages? I ... uh ... smashed the training cabin ... again..."
+      },
+      {
+        "title": "Dijiang Idle Chatter 4",
+        "text": "Hngh... C-could I lean on you for a sec...? I just need to grab some hardtack... I-I'm okay... Just a little ... hungry..."
+      },
+      {
+        "title": "Dijiang Idle Chatter 5",
+        "text": "Personal stereo, omni-toolkit, basic Arts Unit... Ah, it's just a shopping list. These things are really hard to get in my hometown. Thankfully, a few colleagues at the Logistics Office offered to pick them up along the way. They're so nice to me!"
+      },
+      {
+        "title": "Dijiang Idle Chatter 6",
+        "text": "Endmin ... can I ... post some flyers in Dijiang? Seš'qa gave me a load of promotional work. If I don't meet my KPI, they'll drag me back for special training..."
+      },
+      {
+        "title": "Offering Gifts",
+        "text": "Endmin, please accept this humble token of my eternal and everlasting g-gratitude! I ... I'm so sorry... I don't know what to say..."
+      },
+      {
+        "title": "Accepting Gifts",
+        "text": "This is ... for me...? A-are you really sure, Endmin? Oh gosh... I ... I think I'm ... I think I'm gonna pass out..."
+      },
+      {
+        "title": "Trust Dialog 1",
+        "text": "Heheheh... Endmin, is it true they have a house made entirely of candy in New Wrankwood? Can I ... get a few days of leave to stay at that place? And don't worry, I'll chew through enough things to get our money's worth! Oh... It's ... it's just an ad?"
+      },
+      {
+        "title": "Trust Dialog 2",
+        "text": "Dark circles around my eyes? Oh, I'm taking courses on first aid and basic crop disease prevention... so I started sleeping less... But they're really useful! Chopping things to tiny bits with a sword won't fix all our problems! That's definitely a no-no! The only problem is ... lessons on the Arts of Restoration are so hard..."
+      },
+      {
+        "title": "Trust Dialog 3",
+        "text": "Last Rite. Witching Hour pegged this codename on me. Since I'm a Nachzehrer and worked as an undertaker back home, they wanted a name that \"highlighted the product features\"... But I'm not the product — it's this outfit! And the last rites are somber ceremonies meant for the departed! Why would they use it in such a laughable manner...? Endmin ... can I ask you to write another letter of protest for me? Please?"
+      },
+      {
+        "title": "Trust Dialog 4",
+        "text": "People keep joking about me letting myself go \"hungry\", and I kinda know why. But using my innate Nachzehrer abilities would disturb the dead. The chances are slim, but I forbid it... I haven't figured out everything due to the complexity of our witchcraft. So I chose not to tap into my powers. That is the safest course of action!"
+      },
+      {
+        "title": "Trust Dialog 5",
+        "text": "There's something I must share with you, Endmin. I don't care what happens after I do. Well, y-you must know that ... that Seš'qa grossly overpackaged me! They just named me \"Princess of the Battle Court\" without asking! I never wanted to lie to you... I'm truly sorry. Maybe I should just resign — W-wait, you knew this all along?! And you're ... okay with it?"
+      },
+      {
+        "title": "Chat 1",
+        "text": "I really wish I could use my blade like the other operators. Everybody's got beautiful sets of stances, hews, and guards. I tried copying their moves but somehow kept throwing my sword away by accident. I guess I can only fight with wild, instinctive swings... Wait. My swings are beautiful too? I ... I don't know about that, but ... I guess that's very kind of you."
+      },
+      {
+        "title": "Chat 2",
+        "text": "Many races do mention some kind of \"spirit\" that lingers after death. My parents taught me many prayer rituals, and I used to perform every last one of them at the cemetery back home on a daily basis. Hmm? Oh yeah, I've heard of a Sarkaz type called the \"Revenants\". It was said they could worm themselves into all sorts of carcasses and re-animate them... Wait. Are you trying to tell me a horror story? NAHNAHNAHNAH! I CAN'T HEAR YOU!"
+      },
+      {
+        "title": "Chat 3",
+        "text": "Why does everyone play tricks on me? The kids back home either called me \"Omnomnom\" or \"Little Miss Confused\". Senior Endfielders also kept giving me funny names. I need to figure out how to look more authoritarian... Oh! I have an idea. I can wear a mask like the Endmin! How do I look if I talk to people with this on? What? It's too scary? Oh... Fine..."
+      },
+      {
+        "title": "Chat 4",
+        "text": "I took the operator's standard test. I crushed the fitness part, but the technical stuff ... w-well, let's just say Supervisor Perlica ended up passing me anyway! I've been doing remedial training since then! Oh, and about that old gent who handed me the contract at the floating city... Perlica said he was trying to protect me. I don't really know what she meant, but Perlica is always right!"
+      },
+      {
+        "title": "Chat 5",
+        "text": "Seš'qa has always safeguarded the Sarkaz knowledge and devices of witchcraft, but there are so few Nachzehrers on Talos-II. Many warring techniques once passed down through the generations were lost to time. According to our scholars, many Nachzehrers fought upon the battlefields of Terra... and they sustained war itself by absorbing the power of fallen comrades... I don't think we need to do that anymore, right? I have a frigid aura I could barely contain. The frigidity would seep out of me if I'm not careful. Nevertheless, it's a power that I'm ... I'm more comfortable with."
+      },
+      {
+        "title": "Topic: Talent and Power",
+        "text": "Seš'qamam instructors told me that a proper Nachzehrer uses witchcraft to master the frost. And I wasn't being proper because my frigidity kept seeping out of me. Well, I'm really good at checking my urges to absorb the dead. The downside is that I get hungry easily... No, I'm alright. I burn through food pretty fast. In fact, I've been eating midnight snacks for a while now, but somehow I've still lost weight... Umm, Endmin ... was everyone staring at me just now?"
+      },
+      {
+        "title": "Topic: Combat Gear",
+        "text": "You hardly see outfits like mine? It's a prototyping loadout from the Witching Hour. They want me to wear this during combat to collect some ... uhm ... test data, I guess? But I'm not really good at fighting things. Wonder why they hired me for this... Anyway, this outfit's fabulous! It's light, sturdy, and even dries your hair after a shower! But the user manual for combat mode is a brick of a book, and it's hard to memorize everything..."
+      },
+      {
+        "title": "Topic: The Dead",
+        "text": "I remember everyone buried in the cemetery my family tended — the elderly, the unfortunate babe, the mercenary from another town, the stranger with rock disease... Each of them had a final wish. During the rites, those who came to say goodbye would speak those wishes aloud. And beneath their words ... I could feel what the departed truly longed for. They weren't asking anyone to fulfill their wishes — they just wanted to be heard. Remembering their wishes was the only thing I could do. As my Mom said, a wish that lingers behind is proof they once lived."
+      },
+      {
+        "title": "Topic: Seš'qa",
+        "text": "Witching Hour has to tweak my combat outfit from time to time, so I often make trips to the floating city. When Seš'qa gets far enough from other cities, they retract the touring facilities and the place goes really quiet. The caravaneer who introduced me to Endfield said that Seš'qa roams Talos-II bearing crews of mercenaries and witch-crafters. Their goal is to connect and support Sarkaz communities around the world. But ... if I'm being honest, they feel less like a charity and more like a profiteering venture..."
+      },
+      {
+        "title": "Topic: Fate",
+        "text": "Dad said that the TGCC dug several wells in our old place many years ago. But a senior Endfielder just told me that Endfield was the one that led the entire project! Anyway, quite a few families moved in after we had access to water. After that, the caravaneers began visiting our place. One of them told me I could try my luck at Seš'qa, and that was how I met everyone at Endfield. Maybe this was an act of Fate?"
+      },
+      {
+        "title": "Topic: \"Friends\"",
+        "text": "It began when I was still a very little girl. I would occasionally hear a voice talking to me. She sounded tired and exhausted, and probably slept most of the time. None of her children rested in our cemetery. I believe they were further north... And whenever I would go hungry, she would hold me close and comfort me. But in recent years, she slept longer and longer, and sounded even weaker than before. I really hope there's something I can do to help..."
+      },
+      {
+        "title": "Resource/Collectible Detected 1",
+        "text": "I see resources over there... Should we go and collect them?"
+      },
+      {
+        "title": "Resource/Collectible Detected 2",
+        "text": "That looks like something nice... If I'm not seeing things..."
+      },
+      {
+        "title": "Unexplored Area Detected",
+        "text": "My combat outfit is reacting to something. Is there an anomaly over there?"
+      },
+      {
+        "title": "Powerful Enemy Discovered",
+        "text": "Careful! That enemy looks really powerful!"
+      },
+      {
+        "title": "Mining 1",
+        "text": "The Ar-arsenal people ... won't get mad about this, right?"
+      },
+      {
+        "title": "Mining 2",
+        "text": "Let me do it. I'm strong."
+      },
+      {
+        "title": "Opening a Crate",
+        "text": "Woooooww... I've never seen nice things like these..."
+      },
+      {
+        "title": "Acquiring Aurylene",
+        "text": "It's so beautiful... Oh, sorry! I'm done gathering it!"
+      },
+      {
+        "title": "Eliminating the Blight",
+        "text": "I hope I didn't spill that dirty goop all over the place."
+      },
+      {
+        "title": "Rest",
+        "text": "A-an-anyone want something cold to drink? I can make them cold for you..."
+      },
+      {
+        "title": "Tactical Use 1",
+        "text": "Let me help you!"
+      },
+      {
+        "title": "Tactical Use 2",
+        "text": "I ... I feel better..."
+      },
+      {
+        "title": "Danger Warning",
+        "text": "Look out! Danger!"
+      },
+      {
+        "title": "Injured",
+        "text": "Stay awake...! I can't fall here..."
+      },
+      {
+        "title": "0 HP",
+        "text": "Must protect them..."
+      },
+      {
+        "title": "Team Encouragement 1",
+        "text": "Th-that's ... so cool..."
+      },
+      {
+        "title": "Team Encouragement 2",
+        "text": "Everyone's so incredible!"
+      },
+      {
+        "title": "Encouragement Response 1",
+        "text": "Y-you flatter me!"
+      },
+      {
+        "title": "Encouragement Response 2",
+        "text": "E-everyone made it happen!"
+      },
+      {
+        "title": "Combat Begins 1",
+        "text": "Let me take point!"
+      },
+      {
+        "title": "Combat Begins 2",
+        "text": "Let's do our best, people!"
+      },
+      {
+        "title": "Combat Victory 1",
+        "text": "I hope I didn't break my combat outfit..."
+      },
+      {
+        "title": "Combat Victory 2",
+        "text": "Made possible by Seš'qa's latest technology! Ah... I can't break this habit..."
+      },
+      {
+        "title": "Combat Victory 3",
+        "text": "W-we all did a good job!"
+      },
+      {
+        "title": "Combat Victory 4",
+        "text": "Is everyone okay...? Oh ... feels good to be alive..."
+      },
+      {
+        "title": "Combat Defeat",
+        "text": "I'm so sorry! It-it-it's all my fault! I'll ... I'll fix what went wrong. How about ... we try again?"
+      },
+      {
+        "title": "Final Strike 1",
+        "text": "Last ... swing!"
+      },
+      {
+        "title": "Final Strike 2",
+        "text": "Crush you!"
+      },
+      {
+        "title": "Battle Skill 1",
+        "text": "It's a bit cold."
+      },
+      {
+        "title": "Battle Skill 2",
+        "text": "Let the snow freeze."
+      },
+      {
+        "title": "Battle Skill 3",
+        "text": "Frost, heed me."
+      },
+      {
+        "title": "Combo Skill Ready 1",
+        "text": "I'll mop this up!"
+      },
+      {
+        "title": "Combo Skill Ready 2",
+        "text": "I'm ready!"
+      },
+      {
+        "title": "Combo Casting 1",
+        "text": "Now bite ice!"
+      },
+      {
+        "title": "Combo Casting 2",
+        "text": "This will be cold!"
+      },
+      {
+        "title": "Finisher 1",
+        "text": "Please stop fighting..."
+      },
+      {
+        "title": "Finisher 2",
+        "text": "You're going down!"
+      },
+      {
+        "title": "Ultimate 1",
+        "text": "Maximum power, activate!"
+      },
+      {
+        "title": "Ultimate 2",
+        "text": "Your grave has been dug!"
+      },
+      {
+        "title": "Ultimate 3",
+        "text": "Uh, any last words?"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

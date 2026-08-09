@@ -31,6 +31,42 @@ export function normalizeId(str) {
     return clean.replace(/\s+/g, "_").replace(/[^a-zA-Z0-9_\-.]/g, "");
 }
 
+export function resolveArtName(idOrName) {
+    if (!idOrName) return "";
+    let clean = idOrName.toString().trim();
+    if (clean.startsWith("http")) return clean;
+    if (clean.includes(".")) clean = clean.split(".")[0];
+    if (clean.startsWith("pic_")) return clean;
+
+    const parts = clean.split("_");
+    let charId = "";
+    let potPart = "";
+
+    const potIdx = parts.findIndex(p => p.startsWith("potential") || p.startsWith("ex"));
+    if (potIdx !== -1) {
+        charId = parts.slice(0, potIdx).join("_");
+        potPart = parts.slice(potIdx).join("_");
+    } else {
+        charId = parts[0];
+        potPart = parts.slice(1).join("_") || "potential1";
+    }
+
+    let potNum = "1";
+    if (potPart.includes("potential6") || potPart.includes("potential5")) potNum = "5";
+    else if (potPart.includes("potential3")) potNum = "3";
+    else if (potPart.includes("potential1")) potNum = "1";
+
+    if (potPart.includes("ex01")) {
+        potNum = "1_ex01";
+    }
+
+    const char = characters[charId] || Object.values(characters || {}).find(c => c.id === charId || c.gameId === charId);
+    if (char && char.gameId) {
+        return `pic_${potNum}_${char.gameId}`;
+    }
+    return clean;
+}
+
 export function getImagePath(idOrName, variant = 'operator-icon') {
     if (!idOrName) return "";
     if (idOrName.toString().startsWith("http")) return idOrName;
@@ -105,10 +141,10 @@ export function getImagePath(idOrName, variant = 'operator-icon') {
             return `/images/operators/facSkills/${withExt(name)}`;
 
         case 'operator-art':
-            return `/images/operators/arts/${withExt(name)}`;
+            return `/images/operators/arts/${withExt(resolveArtName(name), 'png')}`;
 
         case 'operator-art-lq':
-            return `/images/operators/artsLQ/${withExt(name)}`;
+            return `/images/operators/artsLQ/${withExt(resolveArtName(name), 'webp')}`;
             
         case 'contract-tag-icon':
             return `/images/crisisContract/tags/icon_${withExt(name)}`;

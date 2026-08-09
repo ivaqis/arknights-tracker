@@ -133,7 +133,333 @@
         "name": "Lifestyle",
         "description": "Lifestyle: Traveling Vacation\nDesserts are good. Soft beds are great. Traveling is also pretty nice — It is far better to commit one's life to the future instead of obsessing about the past."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Operation Prep 1",
+        "text": "I hate trouble, but boredom's worse."
+      },
+      {
+        "title": "Operation Prep 2",
+        "text": "Whatever comes next better be memorable."
+      },
+      {
+        "title": "Adding to Team 1",
+        "text": "I can do this. Alone."
+      },
+      {
+        "title": "Adding to Team 2",
+        "text": "I am the sword. I am fire incarnate."
+      },
+      {
+        "title": "Switching Weapon",
+        "text": "Nice blade. Hope it can tolerate the heat of my fire."
+      },
+      {
+        "title": "Switching Gear",
+        "text": "The weight won't slow down my attacks. Flame-resistant coating? Pfft."
+      },
+      {
+        "title": "Ability Matrix Activation",
+        "text": "So, how's that for my real power?"
+      },
+      {
+        "title": "Watching Combat Records",
+        "text": "Hmm, solid reference."
+      },
+      {
+        "title": "Operator Promotion 1",
+        "text": "What's this supposed to mean? Encouragement? Approval? Don't need those. All I did was run into a bunch of buggly things and turn them all to ash."
+      },
+      {
+        "title": "Operator Promotion 2",
+        "text": "Now that I've been promoted, my new authority level should give me a one-on-one annual review meeting, right? Good. Let's take a walk. I need some air."
+      },
+      {
+        "title": "Operator Promotion 3",
+        "text": "Back again? I don't need any token for a job well done. But if you insist, I'll keep it as a symbol and proof ... for all the memories we made together."
+      },
+      {
+        "title": "Operator Promotion 4",
+        "text": "You Endfielders seem to be increasingly reliant on me. I guess you leave me no choice, but to accept this honor. You may now address me as Endfield Operator Laevatain... Hey! What's up with that look on your face?"
+      },
+      {
+        "title": "Operator Reporting for Duty",
+        "text": "Haven't we met already? Hmph. Doesn't matter. You'll remember me by this sword and flame."
+      },
+      {
+        "title": "Standing by 1",
+        "text": "I hate fools who like to micro-manage. Thank goodness you're not one of them."
+      },
+      {
+        "title": "Standing by 2",
+        "text": "Looking for me? You finally remember something?"
+      },
+      {
+        "title": "Assigning to Facility",
+        "text": "Hmm, seems like a good place to waste my time in..."
+      },
+      {
+        "title": "Greeting 1",
+        "text": "Ah, here you are."
+      },
+      {
+        "title": "Greeting 2",
+        "text": "It's you... Oh, I wasn't waiting for you specifically."
+      },
+      {
+        "title": "Dijiang Idle Chatter 1",
+        "text": "Why are you idling here? C'mon, let's go to the Bridge. Then you can tell me all about the places you went in the past, and the destinations you have in store for the future."
+      },
+      {
+        "title": "Dijiang Idle Chatter 2",
+        "text": "Mmmm... I hereby offer my utmost appreciation to the Logistics Division for the all-you-can-eat ice cream bar. Need me to grab a few scoops for you?"
+      },
+      {
+        "title": "Dijiang Idle Chatter 3",
+        "text": "I got a mission. Wanna come with? No, no need for tele-protocol. I prefer the drop pod. I'm going in a deafening howl of fire, right on top of their heads."
+      },
+      {
+        "title": "Dijiang Idle Chatter 4",
+        "text": "Cold? I told them to lower the thermostat, because some dummy built this ship and forgot to leave a spot for fresh air. If you can't take the cold, stand a little closer."
+      },
+      {
+        "title": "Dijiang Idle Chatter 5",
+        "text": "When I have nothing to do, I would just eat ice cream and enjoy the view outside. I can do that all day. My mind is filled with countless fragments of shattered memories. Yet none of them gave me a look of the world or starry nights from this angle."
+      },
+      {
+        "title": "Dijiang Idle Chatter 6",
+        "text": "Still trapped in your memories? Hmph. If they're gone, they're gone. Just remember what happens from here on."
+      },
+      {
+        "title": "Offering Gifts",
+        "text": "Here. It's yours. Thanks for keeping me on your mind. Huh? Being able to remember someone you care about is gift enough...? Pfft..."
+      },
+      {
+        "title": "Accepting Gifts",
+        "text": "Hmm, I don't really like receiving presents, because I always end up forgetting about them. But this one's from you ... so it will be an exception."
+      },
+      {
+        "title": "Trust Dialog 1",
+        "text": "Laevatain? Yeah. Picked it myself. Got the idea from the sword. Some don't take it as my real name? Hmph, I tamed the thing so its name is mine. Just like those memories — I intend to rule over them, not be ruled by them."
+      },
+      {
+        "title": "Trust Dialog 2",
+        "text": "My mind is still filled with all sorts of fragmented memories. They didn't just vanish. I simply chose not to study them. Perhaps when I'm done taking care of these mundane chores, I'll follow these memories and start a new journey."
+      },
+      {
+        "title": "Trust Dialog 3",
+        "text": "Surtr... All her rage, her sense of loss, and her confusion ... remain in my memories. They feel so real and permanent. Yet when I recall the decision she made for herself in the end, I find some measure of solace."
+      },
+      {
+        "title": "Trust Dialog 4",
+        "text": "The duty of the reconveners? I don't care about that. It's probably something stuffed into my memories. I only agreed to fight by your side because of the people I met, the paths I walked, the decks I napped on, and the breakers I crushed... It's because of the memories that are truly mine, made here in this place."
+      },
+      {
+        "title": "Trust Dialog 5",
+        "text": "There's a time when I couldn't understand why you wouldn't just let go of the past. I only figured things out when I arrived at Endfield — You're the Endministrator, a vessel of everyone's expectations, and a projection of everyone's ideal of the world's savior. But nobody should allow their image to be molded by the wishful thinking of others. And that is why you must use your memories to rediscover your true self. If you need a companion for this journey, just give me a call. I won't care where you're headed."
+      },
+      {
+        "title": "Chat 1",
+        "text": "My shattered \"Ring\"? Treat it as my pet and \"Arts Unit\". The Arsenal Engineers of Endfield tried to figure out how it works. They also made an attempt to repair it... But the Ring acted out on its own, and put an end to that."
+      },
+      {
+        "title": "Chat 2",
+        "text": "You're here? Come look at this for me. Warfarin mailed me a jigsaw puzzle. She said it features the scenery, peoples, and histories of Terra... It's huge. I spent ages on this and it's still not done... Hey, quit staring at the torn edges. Also, I have nothing to do with the burned places. This was how it looked when I received it."
+      },
+      {
+        "title": "Chat 3",
+        "text": "When carrying out missions on Talos-II, I would dream of Dijiang as well as the people and events of Endfield at night. I am patiently waiting for my mind to forget every shard of the past that isn't mine, then fill the gaps with memories that I've forged myself."
+      },
+      {
+        "title": "Chat 4",
+        "text": "Why do I fight? Because a day will come when I stand atop a mountain, and gaze upon a world consumed by fire... Why give me that look? I was simply describing a nightmare that's been annoying me for quite a while. Set your worries aside. I will not let the vision come to pass, no matter the time nor place."
+      },
+      {
+        "title": "Chat 5",
+        "text": "Sometimes I'd see refugees roaming about the wildlands, or butchers who laid waste to entire cities. One minute, I'm pruning flowers in the garden; the next, I'm choking on chemicals in the lab. I fought shadowy figures whose faces I couldn't see, and I never knew why we were fighting... C'mon, stop dozing off. I barely got started."
+      },
+      {
+        "title": "Topic: Seš'qa",
+        "text": "My home? I've been to a place called Seš'qa. They had buildings, language, festivals, and witchcraft that ... felt familiar enough to be a \"home\". But I won't visit that place again unless there's a very good reason to — Their people were too warm and passionate. Some even called me a Diαblo... Ugh. Let's just say it got on my nerves and I messed up the place ... just a little bit..."
+      },
+      {
+        "title": "Topic: Yvonne",
+        "text": "That pink-haired Vouivre often asks me to test her Frost-e-Bytee. It never managed to put out my flames. But ... she does make pretty and chic-looking ice cream, and the taste is not half bad."
+      },
+      {
+        "title": "Topic: Hannabit Circuit",
+        "text": "A Songseeker of the Hannabit Circuit once told me this: \"Fire is a fiend in the hands of the wind, but a friend in the hands of humankind.\" The Songseeker showed no fear of fire. She even taught me how to create firelines on the other side of the wildlands. I managed to contain a spreading forest fire. The villagers who survived the disaster called us heroes, but my mind stayed fixed on the cloudbeast we saved. I let her keep the little one. What a shame."
+      },
+      {
+        "title": "Topic: TGCC",
+        "text": "I need something taken care of. HR Division told me to escalate this matter to you, personally. Here it is. A wanted poster. It's no big deal. Happened back when I just left Rhodes Island. A place called the Asphalt Roundabout tagged me for a few counts of arson. They should really blame themselves. A dirty business with plenty of flammable trash should at least expect some fires."
+      },
+      {
+        "title": "Topic: Sami",
+        "text": "I'll say this again. I've never been to Terra. In person. So don't talk to me about the sights, the people, or the culture of that place... Unless, of course, you're talking about Sami. I heard their \"home\" carried them to Talos-II. If we have a mission at that place, give me a call."
+      },
+      {
+        "title": "Resource/Collectible Detected 1",
+        "text": "See something there. If it's useless, we can use it to test our blades."
+      },
+      {
+        "title": "Resource/Collectible Detected 2",
+        "text": "Something worth remembering there."
+      },
+      {
+        "title": "Unexplored Area Detected",
+        "text": "We can go take a look. No worries. Just stay close behind me."
+      },
+      {
+        "title": "Powerful Enemy Discovered",
+        "text": "See that one? Need me to do some trimming?"
+      },
+      {
+        "title": "Mining 1",
+        "text": "Only true valuables survive the flame."
+      },
+      {
+        "title": "Mining 2",
+        "text": "Too slow. I hate standing around with nothing to do."
+      },
+      {
+        "title": "Opening a Crate",
+        "text": "I remember that you kinda like these."
+      },
+      {
+        "title": "Acquiring Aurylene",
+        "text": "Aurylene... A thing that's just as unreliable as my memories."
+      },
+      {
+        "title": "Eliminating the Blight",
+        "text": "Be cautious. This is far more dangerous than fire."
+      },
+      {
+        "title": "Rest",
+        "text": "Try getting closer to me if you're still feeling cold."
+      },
+      {
+        "title": "Tactical Use 1",
+        "text": "C'mon, spare me the theatrics."
+      },
+      {
+        "title": "Tactical Use 2",
+        "text": "Hmph. I'm better now."
+      },
+      {
+        "title": "Danger Warning",
+        "text": "Don't just stand there, move!"
+      },
+      {
+        "title": "Injured",
+        "text": "Tsk... This won't kill me."
+      },
+      {
+        "title": "0 HP",
+        "text": "Curse this ... memory of defeat..."
+      },
+      {
+        "title": "Team Encouragement 1",
+        "text": "Hmph. I'll remember that."
+      },
+      {
+        "title": "Team Encouragement 2",
+        "text": "Not bad. I'll handle the next one."
+      },
+      {
+        "title": "Encouragement Response 1",
+        "text": "I know."
+      },
+      {
+        "title": "Encouragement Response 2",
+        "text": "Just part of my job."
+      },
+      {
+        "title": "Combat Begins 1",
+        "text": "Now it's time to bring the pain."
+      },
+      {
+        "title": "Combat Begins 2",
+        "text": "About time."
+      },
+      {
+        "title": "Combat Victory 1",
+        "text": "This hardly counts as warm-up."
+      },
+      {
+        "title": "Combat Victory 2",
+        "text": "Victory goes without saying."
+      },
+      {
+        "title": "Combat Victory 3",
+        "text": "Guess I'll join your celebrations."
+      },
+      {
+        "title": "Combat Victory 4",
+        "text": "You did alright. Just leave the hard fighting to me next time."
+      },
+      {
+        "title": "Combat Defeat",
+        "text": "I will not allow this to happen again."
+      },
+      {
+        "title": "Final Strike 1",
+        "text": "Slash!"
+      },
+      {
+        "title": "Final Strike 2",
+        "text": "Perish!"
+      },
+      {
+        "title": "Battle Skill 1",
+        "text": "Melting flame!"
+      },
+      {
+        "title": "Battle Skill 2",
+        "text": "Incinerate!"
+      },
+      {
+        "title": "Battle Skill 3",
+        "text": "Be consumed!"
+      },
+      {
+        "title": "Combo Skill Ready 1",
+        "text": "I got this!"
+      },
+      {
+        "title": "Combo Skill Ready 2",
+        "text": "Inferno awaits!"
+      },
+      {
+        "title": "Combo Casting 1",
+        "text": "Burn to cinders!"
+      },
+      {
+        "title": "Combo Casting 2",
+        "text": "Turn to ash!"
+      },
+      {
+        "title": "Finisher 1",
+        "text": "There's no escape!"
+      },
+      {
+        "title": "Finisher 2",
+        "text": "You shall die!"
+      },
+      {
+        "title": "Ultimate 1",
+        "text": "Let that twilight burn!"
+      },
+      {
+        "title": "Ultimate 2",
+        "text": "I shall cremate darkness!"
+      },
+      {
+        "title": "Ultimate 3",
+        "text": "Your end is nigh!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

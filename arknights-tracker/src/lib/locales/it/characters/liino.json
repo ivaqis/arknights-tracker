@@ -136,7 +136,333 @@
         "name": "Belle arti",
         "description": "Belle arti: collezione di vecchi vinili\nLa nostalgia non è una cattiva abitudine. È il suo desiderio. Forse un giorno i suoi album diventeranno un pezzo prezioso nella collezione di qualcuno."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Preparazione all'operazione 1",
+        "text": "Eh? Ora di andare in scena?"
+      },
+      {
+        "title": "Preparazione all'operazione 2",
+        "text": "Si brilla! Il mio spettacolo sta per iniziare!"
+      },
+      {
+        "title": "Aggiunta alla squadra 1",
+        "text": "Canto, ballo e penso senza bisogno di preparativi, sono una idol stellare in ogni categoria!"
+      },
+      {
+        "title": "Aggiunta alla squadra 2",
+        "text": "Ovunque io vada, voglio essere la stella che cattura l'attenzione di tutti!"
+      },
+      {
+        "title": "Cambio arma",
+        "text": "Ne sceglieresti una tu? Qualcosa di semplice per una novellina come me!"
+      },
+      {
+        "title": "Cambio equipaggiamento",
+        "text": "È la prima volta che indosso questo costume di scena... Forse dovrei pensare a qualche passo di danza ben abbinato?"
+      },
+      {
+        "title": "Attivazione matrice delle abilità",
+        "text": "L'ho capito in un lampo! Come una stella che mi accende l'anima... Sto diventando proprio una luminare, eh?"
+      },
+      {
+        "title": "Visione delle registrazioni di combattimenti",
+        "text": "Che entrata in scena! Non posso usarla per il mio prossimo concerto? Uff, che spreco..."
+      },
+      {
+        "title": "Promozione operatore 1",
+        "text": "Oh, che dolce! Come posso ringraziarti... Ma certo! Ti riempirò di biglietti omaggio per i concerti finché non saremo pari, va bene?"
+      },
+      {
+        "title": "Promozione operatore 2",
+        "text": "Eh? Volevi solo questo da me? Mi aspettavo una lista di richieste lunga come il mio contratto di rinnovo. Sai cosa? È... una bella novità..."
+      },
+      {
+        "title": "Promozione operatore 3",
+        "text": "Bene, finalmente hai ceduto ai miei incanti, eh? Sapevo che era solo questione di... Cosa? \"Aiuterai a fare pubblicità alla Endfield\"? È questo che ti interessa?"
+      },
+      {
+        "title": "Promozione operatore 4",
+        "text": "Endmin, è ufficiale: hai un posto fisso nella mia lista VIP! Mi assicurerò che non ti perda nessuno dei miei \"momenti brillanti\"! Non riesci a crederci, eh? Dovresti prestare più attenzione! Se mi accorgo che ti distrai... Eh eh eh!"
+      },
+      {
+        "title": "Operatore a rapporto",
+        "text": "Endmin, ti sono mancata? Essendo la idol più brillante e carina di tutto Talos-II, ho diritto a un trattamento speciale? No...? Oh, i tuoi modi sono sempre rudi e diretti, eppure provo un grande affetto per te... che ci posso fare?"
+      },
+      {
+        "title": "Attesa 1",
+        "text": "Eh eh! Carina come posa, vero?"
+      },
+      {
+        "title": "Attesa 2",
+        "text": "La, la laaaa! Check microfono: fatto! Sono pronta!"
+      },
+      {
+        "title": "Assegnazione a una struttura",
+        "text": "Si possono avere due altoparlanti? Va bene anche uno solo! Devo controllare come si sente qui la mia voce..."
+      },
+      {
+        "title": "Saluto 1",
+        "text": "Endmin, ti unisci a me? Vado a esplorare possibili posti per concerti."
+      },
+      {
+        "title": "Saluto 2",
+        "text": "Eccoti qui, Endmin! Vieni ad ascoltare la mia demo!"
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 1",
+        "text": "Ciao, Endmin! Sei qui per guardare le mie prove? Ho appena perfezionato due acrobazie di mia invenzione! Non preoccuparti, ti ho già riservato i posti migliori!"
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 2",
+        "text": "La Dijiang è ENORME! Questo posto mi faceva paura all'inizio, ma poi ho pensato che... qui potrei fare un concerto a tema spaziale, sarebbe FANTASTICO! Non lo pensi anche tu, Endmin?"
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 3",
+        "text": "Eh eh, un altro accordo siglato! Sto pensando a una nuova scena... un palco circolare. Niente pubblico a sedere, saranno tutti parte dello show! Tanto brillante quanto interessante, non trovi?"
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 4",
+        "text": "Uff, la gente dovrebbe PROPRIO smetterla di inventarsi storie assurde sui Djall. Basta un sorriso e subito gridano \"ZITTA E PRENDI I MIEI SOLDI!\" Dai, davvero? Per favooore. Se fosse davvero così... Endmin, non muoverti e guardami in faccia. Dimmi... senti il bisogno incontrollabile di darmi tutto il tuo denaro?"
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 5",
+        "text": "Prima del mio debutto, ho dormito male per un'intera settimana. Passavo tutta la notte a provare e controllare ogni dettaglio dello spettacolo. Il pensiero di anche solo un singolo errore mi paralizzava. Ma poi... vedendo quanto era felice il pubblico, ho capito che tutta quella fatica non era stata vana."
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 6",
+        "text": "Consigliami dove fare il mio prossimo spettacolo, Endmin! Nuova Wrankwood ha un palco fluttuante e la sala concerti di Neo Tsukushi è splendida. La Fantoma... che ne dici di un'esibizione nell'oceano? Sarebbe memorabile! Mmh? Perché solo città della CCGT? Ovvio, perché è lì che ci sono i soldi!"
+      },
+      {
+        "title": "Offerta regali",
+        "text": "Eh eh, ho trovato questo piccolo souvenir mentre cercavo posti dove esibirmi! Tienilo tu e sii felice."
+      },
+      {
+        "title": "Accettazione regali",
+        "text": "*SUSSULTO* Grazie mille! Eh eh eh! Ricevo regali di ogni sorta, ma i tuoi... sono più speciali degli altri."
+      },
+      {
+        "title": "Dialogo fiducia 1",
+        "text": "L'entusiasmo di una grande esibizione mi resta addosso per giorni! Sì, è come quando un fabbro perfeziona un'arma, ma... una lama serve a spezzare cuori, mentre un grande spettacolo è lo specchio perfetto per l'anima."
+      },
+      {
+        "title": "Dialogo fiducia 2",
+        "text": "\"Sincerità\". È il profumo che uso, ha un odore incredibile. Lillà con una punta di rosa che dà un tocco spettacolare e sognante, per poi svanire in note essenziali di cedro... Tutto questo lo rende super memorabile, non credi anche tu?"
+      },
+      {
+        "title": "Dialogo fiducia 3",
+        "text": "Dato che sono una Djall, hanno inventato un sacco di storie assurde su di me: per esempio che le mie canzoni possono controllare la mente, o che uso strumenti stregati per manipolare il mio pubblico. La verità, Endmin, è che la magia nei miei orecchini e forcine serve proprio a contenere i miei poteri di Djall. Non c'è posto per nessun \"difetto\" sul mio palco che non sia parte dello spettacolo... inclusi i miei poteri innati."
+      },
+      {
+        "title": "Dialogo fiducia 4",
+        "text": "Quando ero piccola, sognavo spesso un'incantevole rosa violacea. Con una nave bianca come le nuvole volavamo tra i cieli infiniti, e la rosa mi raccontava storie sulle stelle... Ma un giorno è apparsa una tempesta rossa e la nave si è capovolta assieme alla rosa, finendo trascinata in un vortice oscuro. Poi mi sono svegliata tutta sola, e... da allora non ho più sognato."
+      },
+      {
+        "title": "Dialogo fiducia 5",
+        "text": "Ho sempre trattato il mondo come un enorme palcoscenico, che richiedeva più \"cuore\" per essere padroneggiato. Chiunque, me inclusa, fa del suo meglio per ricevere un applauso. Ma qualche volta... solo qualche volta... anch'io vorrei fare una pausa. Endmin, perché non resti qui ancora un po'? Solo quando ci sei tu mi sembra di riuscire a respirare... strano, eh?"
+      },
+      {
+        "title": "Chiacchierata 1",
+        "text": "Altri copioni da imparare per interviste \"a sorpresa\"... Bah. Continuano a chiedermi come ho iniziato. Non ho partecipato a nessun concorso, sono stata scoperta. Il mio debutto è stato un successo immediato e ho lavorato duramente per arrivare dove sono. Cos'è che i produttori di questi show non capiscono? È tanto difficile da credere?"
+      },
+      {
+        "title": "Chiacchierata 2",
+        "text": "Interagire con i fan, esibirsi sul palco... Do sempre il massimo in tutto quello che faccio, soprattutto per loro. Mi rifiuto di deluderli. Meritano un sogno la cui felicità perduri anche dopo il risveglio. Non importa se mi sento così stanca che potrei addormentarmi in piedi... Aspetto sempre che l'ultimo fan sia andato via prima anche solo di bere un bicchiere d'acqua. È il sacro dovere di una vera idol."
+      },
+      {
+        "title": "Chiacchierata 3",
+        "text": "Mi hanno spiegato bene quali sono gli \"argomenti assolutamente vietati\". Ma penso che... potrei parlarne con te. Per esempio, la mia routine giornaliera è pessima. Vado a letto tardi, mangio a orari casuali. E sono un incubo per lo staff perché esigo la perfezione nei miei spettacoli. Wow, dire tutto questo ad alta voce è un po' imbarazzante... Confessami un tuo segreto, Endmin, così saremo pari."
+      },
+      {
+        "title": "Chiacchierata 4",
+        "text": "Il mio modo preferito per rilassarmi? Alla stampa risponderei \"la musica\", per andare sul sicuro. Ma la verità è che amo dormire. Una volta a letto, posso dormire dodici ore di fila. Ho spaventato a morte una nuova assistente perché non riusciva a svegliarmi! Per fortuna il mio manager era lì e ha gridato \"In scena tra dieci secondi\"! Ero in piedi prima che potesse arrivare a \"nove\"."
+      },
+      {
+        "title": "Chiacchierata 5",
+        "text": "Questo mese mi ha scritto un vecchio membro dello staff. Voleva scusarsi per non aver detto nulla quando uno sponsor mi ha accusato di qualcosa che non avevo fatto. Ma non gli ho mai dato colpe... ha scelto il silenzio perché aveva bisogno di soldi per la sua famiglia, come tanta gente in difficoltà. Chi siamo noi per giudicarli?"
+      },
+      {
+        "title": "Argomento: CCGT",
+        "text": "Prima mi andavano bene tutte le norme e regole del CCGT, ma l'esperienza mi ha insegnato che non c'è una singola verità nella vita, e ho capito che anche la gente del CCGT può scegliere di vivere a modo suo. Perfino negli spettacoli tradizionali una idol può esibirsi con il suo stile personale."
+      },
+      {
+        "title": "Argomento: idol",
+        "text": "Endmin, cosa credi sia davvero una \"idol\"? Penso che ognuno abbia una sua risposta. Per me una \"idol\" è una nave che porta speranza e che deve volare abbastanza in alto da riuscire a compiere questo dovere... Il mio sogno è sempre stato di far volare Liino la nave fino al picco più alto di Talos-II, dove poi farò del mio meglio per illuminare ogni desiderio che porta con sé a bordo."
+      },
+      {
+        "title": "Argomento: giochi musicali",
+        "text": "Non pensi che i giochi musicali siano un ottimo modo per scaricare lo stress? Anche quando sono molto occupata, adoro affrontare qualche sfida super difficile nei pochi istanti di tempo libero. Non becco perfettamente ogni nota, ma superare un livello è sempre una soddisfazione! Non sono brava in quelli a scorrimento verticale, preferisco quelli a traccia singola come Diro Master o Rhythm Party!"
+      },
+      {
+        "title": "Argomento: Djall",
+        "text": "Mia madre mi aveva avvisato: le menti degli altri sono una tentazione per i Djall. Quando colpisco i loro cuori, devo sempre ricordare di colpire anche il mio... Rivelare un segreto nascosto per noi è facile come bere un bicchiere d'acqua: non dobbiamo nemmeno sforzarci. Ecco perché spesso dimentichiamo che le persone non amano quando la loro anima viene esposta."
+      },
+      {
+        "title": "Argomento: La Fantoma",
+        "text": "L'ultima volta che sono uscita con i miei genitori è stata al primo giorno di quell'Obsidian Festival. La città era dipinta di rosso da uno splendido tramonto. Mentre indicavo col dito un manifesto su un grattacielo, dove c'era una ragazza col microfono, chiesi a mia madre \"Mamma, posso diventare come lei?\" Mia madre sorrise, mi diede una pacca sulla testa e mi incoraggiò per la prima volta. \"Certo, succederà. Se la piccola Liino ci metterà tutto il suo cuore, diventerà la stella più luminosa di La Fantoma\"."
+      },
+      {
+        "title": "Individuazione risorsa/collezionabile 1",
+        "text": "C'è qualcosa, laggiù... Non riesco a smettere di guardare lì!"
+      },
+      {
+        "title": "Individuazione risorsa/collezionabile 2",
+        "text": "Eh? Sembra prezioso... Che ci attendano immense ricchezze?"
+      },
+      {
+        "title": "Individuazione zona non esplorata",
+        "text": "Un posto nuovo di zecca! Incrociamo le dita, magari qualcosa di interessante ci sorprenderà."
+      },
+      {
+        "title": "Individuazione nemico potente",
+        "text": "Ops, si è presentato un cattivone che non aveva invitato nessuno!"
+      },
+      {
+        "title": "Estrazione 1",
+        "text": "Wow. Questi minerali li avevo visti solo nelle enciclopedie..."
+      },
+      {
+        "title": "Estrazione 2",
+        "text": "Eh eh. Raccogliamo qualche dato per la motion capture!"
+      },
+      {
+        "title": "Apertura di una cassa",
+        "text": "Che fortuna! Ci vuole un assolo per celebrare il ritrovamento!"
+      },
+      {
+        "title": "Acquisizione di Aurylene",
+        "text": "Wow, l'Aurylene è veramente brillante! Deve valere una fortuna..."
+      },
+      {
+        "title": "Eliminazione Contaminazione",
+        "text": "Qui attorno è tutto... rivoltante. Mi rifiuto di esibirmi in un posto del genere!"
+      },
+      {
+        "title": "Riposo",
+        "text": "È già ora di fare una pausa? Fiù, mi serve dell'acqua! Datemi un momento!"
+      },
+      {
+        "title": "Utilizzo di gadget 1",
+        "text": "Ti copro io!"
+      },
+      {
+        "title": "Utilizzo di gadget 2",
+        "text": "Che piacevole tepore..."
+      },
+      {
+        "title": "Avvertimento a un compagno di squadra",
+        "text": "Giù! Non esporti troppo!"
+      },
+      {
+        "title": "Ferita",
+        "text": "Ugh... Che errore maldestro..."
+      },
+      {
+        "title": "Esaurimento PS",
+        "text": "Non vale... C'ero quasi..."
+      },
+      {
+        "title": "Incoraggiamento alla squadra 1",
+        "text": "Wow! Quello devo rivederlo!"
+      },
+      {
+        "title": "Incoraggiamento alla squadra 2",
+        "text": "Quand'è che riuscirò a muovermi come voi?"
+      },
+      {
+        "title": "Risposta all'incoraggiamento 1",
+        "text": "Unisciti a me sul palco per il prossimo concerto!"
+      },
+      {
+        "title": "Risposta all'incoraggiamento 2",
+        "text": "Sono in sintonia con la squadra!"
+      },
+      {
+        "title": "Inizio combattimento 1",
+        "text": "Bene, andiamo! È ora di brillare!"
+      },
+      {
+        "title": "Inizio combattimento 2",
+        "text": "Evitiamo le note stonate!"
+      },
+      {
+        "title": "Vittoria in combattimento 1",
+        "text": "Te l'avevo detto che non so combattere... Come? Abbiamo davvero vinto?"
+      },
+      {
+        "title": "Vittoria in combattimento 2",
+        "text": "Cala il sipario su questo trionfo! Non ho mai dubitato di noi."
+      },
+      {
+        "title": "Vittoria in combattimento 3",
+        "text": "Niente male! Hai saputo seguire il mio ritmo!"
+      },
+      {
+        "title": "Vittoria in combattimento 4",
+        "text": "Ora una bella pausa prima del prossimo spettacolo! Niente paura, terrò io in caldo il pubblico."
+      },
+      {
+        "title": "Sconfitta in combattimento",
+        "text": "Non ho brillato a sufficienza? No... Non tollero un finale così triste..."
+      },
+      {
+        "title": "Colpo finale 1",
+        "text": "Ciao-ciao!"
+      },
+      {
+        "title": "Colpo finale 2",
+        "text": "A terra!"
+      },
+      {
+        "title": "Abilità di combattimento 1",
+        "text": "Questa è per tutti voi!"
+      },
+      {
+        "title": "Abilità di combattimento 2",
+        "text": "Prestatemi orecchio!"
+      },
+      {
+        "title": "Abilità di combattimento 3",
+        "text": "Arriva il ritornello!"
+      },
+      {
+        "title": "Abilità combo pronta 1",
+        "text": "Ora tocca a me rispondere!"
+      },
+      {
+        "title": "Abilità combo pronta 2",
+        "text": "Il palco mi chiama!"
+      },
+      {
+        "title": "Esecuzione combo 1",
+        "text": "Ritorno della stella nascente!"
+      },
+      {
+        "title": "Esecuzione combo 2",
+        "text": "Lo spettacolo continua!"
+      },
+      {
+        "title": "Mossa letale 1",
+        "text": "Sei fuori tempo!"
+      },
+      {
+        "title": "Mossa letale 2",
+        "text": "Cala il sipario su di te!"
+      },
+      {
+        "title": "Abilità suprema 1",
+        "text": "Portiamo gioia in ogni cuore!"
+      },
+      {
+        "title": "Abilità suprema 2",
+        "text": "Guarda bene! La stella sta sorgendo!"
+      },
+      {
+        "title": "Abilità suprema 3",
+        "text": "Riempiamo il mondo di luce!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

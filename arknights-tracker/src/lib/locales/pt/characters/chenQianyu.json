@@ -119,7 +119,325 @@
         "name": "Caridade",
         "description": "Caridade: Defesa da Justiça\nAltruísmo. Essa é a essência de uma verdadeira guerreira."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Prep Operação 1",
+        "text": "Eu me preparar? Heh. Minhas lâminas estão sempre prontas, pois nunca descansam!"
+      },
+      {
+        "title": "Prep Operação 2",
+        "text": "Quero ficar na primeira fila desta vez. Quero ser a primeira a sair pela porta!"
+      },
+      {
+        "title": "Adicionando à equipe 1",
+        "text": "Já é a nossa vez? Ótimo. É preciso atacar na hora certa."
+      },
+      {
+        "title": "Adicionando à equipe 2",
+        "text": "Deixe comigo!"
+      },
+      {
+        "title": "Trocando de arma",
+        "text": "Uau. Isso é bem elegante. Mas também posso usar armamento padrão para desferir uma boa dose de pancada."
+      },
+      {
+        "title": "Trocando de equipamento",
+        "text": "Hum... Talvez um verdadeiro mestre devesse usar equipamentos mais leves."
+      },
+      {
+        "title": "Ativação da Matriz de Capacidade",
+        "text": "Com a prática vem a realização da arte do espadeiro!"
+      },
+      {
+        "title": "Assistindo a Registros de Combate",
+        "text": "Então isso... e continuar com isso? Certo, entendi!"
+      },
+      {
+        "title": "Promoção do Operador 1",
+        "text": "Pedi à Perlica que adiasse minha promoção até este momento! Só ficarei tranquila quando minha aprovação da Endfield for entregue pessoalmente por você, Endmin!"
+      },
+      {
+        "title": "Promoção do Operador 2",
+        "text": "{F}O que você acha? Será que consegui a promoção mais rápida já registrada? Afinal, eu pulei alguns anos no Tanjian Hall. Surpresa? Heheh. Eu sempre fui a melhor da minha turma.{M}O que você acha? Será que consegui a promoção mais rápida já registrada? Afinal, eu pulei alguns anos no Tanjian Hall. Surpreso? Heheh. Eu sempre fui a melhor da minha turma."
+      },
+      {
+        "title": "Promoção do Operador 3",
+        "text": "Pois é, descobri que sou ótima em outras coisas além de artes marciais. É impossível não acabar sendo a sua melhor operadora. Ah, seus elogios já estão me fazendo corar — continue assim!"
+      },
+      {
+        "title": "Promoção do Operador 4",
+        "text": "Ainda estou longe do auge. Dizem que a lâmina da minha mãe agitou as próprias nuvens, Endmin. E farei exatamente isso... e me tornarei aquela com quem você e Perlica sempre poderão contar!"
+      },
+      {
+        "title": "Operador se apresentando para o trabalho",
+        "text": "ENDMIN! COMO... Ah. Certo, continuem com o processo. Aqui vai. Operadora da Endfield Chen Qianyu se apresentando para o serviço!"
+      },
+      {
+        "title": "Em espera 1",
+        "text": "Olha isso! Hehe, incrível, não é?"
+      },
+      {
+        "title": "Em espera 2",
+        "text": "Aqui, Endmin! Heehee."
+      },
+      {
+        "title": "Atribuindo a Instalação",
+        "text": "E entendido. Não se preocupe, Endmin!"
+      },
+      {
+        "title": "Saudação 1",
+        "text": "{F}Como vai, Endmin? Interessada em treinar comigo?{M}Como vai, Endmin? Interessado em treinar comigo?"
+      },
+      {
+        "title": "Saudação 2",
+        "text": "Deixe o resto comigo, Endmin. Aproveite um descanso — você merece!"
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 1",
+        "text": "Uau! Quase não te vi, Endmin! Heheh. Eu estava tentando aperfeiçoar um movimento novo e não vi para onde estava indo."
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 2",
+        "text": "Nunca imaginei estar em um lugar *TÃO* alto em órbita depois de deixar Hongshan. Talos-II parece bem pequeno de onde estamos. Imagino onde eu e minha lâmina poderíamos alcançar... Talos, talvez? O que você acha, Endmin?"
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 3",
+        "text": "Endmin! Você leu aquela lenda das artes marciais que te emprestei? Não, não, não, não é um romance. É baseado em fatos que realmente ocorreram em Yan! O quê? Você não consegue imaginar alguém cujos \"dedos cortam como lâminas\"? Ah... Você tem razão... Mas os \"punhos que acalmaram as marés da primavera e do outono\" são ainda piores, certo?"
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 4",
+        "text": "O que estou fazendo? AI! Argh. Estou tentando relaxar os músculos. Ser uma Endfielder e correr todas essas missões me levou muito além da minha cota diária de treinamento... Ei, te interessaria relaxar um pouco? Eu até conheço alguns meridianos! Vamos lá! Tire essa jaqueta! Ah, e de nada!"
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 5",
+        "text": "Junte-se a mim em uma viagem ao Arsenal! Tenho uma espada para reivindicar. O que devo gravar no cabo? \"Basta um golpe para separar\" ou \"Uma vez conhecido, seja hábil\"? Endmin, por favor, me ajude a decidir!"
+      },
+      {
+        "title": "Conversa Ociosa da Dijiang 6",
+        "text": "Recentemente me deparei com um gargalo. Argh. Não tem nada a ver com técnica e acho que tem algo me incomodando por dentro. As lendas dizem que as melhores armas se adaptam à mente de quem as empunha... Mas... mas isso é só um pedaço de aço comum! Endmin! Por favor, me ajude com isso!"
+      },
+      {
+        "title": "Oferta de Presentes",
+        "text": "\"Um presente nada mais é do que um gesto gentil de sinceridade\". É o que diz o ditado. Mas se alguém for realmente sincero, nenhum presente será adequado o suficiente. Bem, só espero que você goste deste, Endmin!"
+      },
+      {
+        "title": "Aceitando presentes",
+        "text": "Para... mim?! UAU... Vou abrir agora mesmo!"
+      },
+      {
+        "title": "Diálogo de Confiança 1",
+        "text": "Perlica costumava falar sem parar sobre você, mas agora você está bem na minha frente! Parece um tanto sobrenatural, se você quer saber! O quê? Não! Não estou decepcionada! Fazer refeições e dividir o mesmo teto com a lenda suprema e invencível que é Perlica é a coisa mais interessante do mundo...! Calma aí. Você tem migalhas no rosto."
+      },
+      {
+        "title": "Diálogo de Confiança 2",
+        "text": "Depois que saí de casa, viajei pelo Cinturão por um tempo antes de me juntar à Endfield. Heheh. Eu realmente esperava ser uma heroína sem nome de feitos lendários — alguém que não deixa nada além de mistério. Mas, tendo vivenciado a vida fora de Hongshan, percebi que verdadeiras guerreiras não podem simplesmente ignorar as consequências de suas ações. Então... diminuí o ritmo e visitei menos lugares. Seja como for, vou compensar esta oportunidade perdida."
+      },
+      {
+        "title": "Diálogo de Confiança 3",
+        "text": "Acho que eu tinha uns dez... talvez onze anos. Eu estava praticando minha esgrima secretamente nas colinas atrás do Tanjian Hall quando me deparei com um Aggelos que se separou de seu grupo. Foi minha primeira batalha de verdade. Meu pai me elogiou quando voltei para casa com uma lâmina quebrada, mas também disse o seguinte: \"Você pode ter quebrado uma lâmina, mas há aqueles que nem sequer têm uma\". Acho que preciso enxergar além da imagem que meu pai tinha de si mesmo. O que ele disse me fez refletir, e isso continua até hoje."
+      },
+      {
+        "title": "Diálogo de Confiança 4",
+        "text": "Por que me tornei uma Endfielder? Humm... Essa é uma longa história. Se você quer mesmo saber quando me interessei... Acho que foi naquela ocasião em que ajudei um Liberi muito bem-vestido a tirar uma carroça de besta de carga da lama. Perly me deu um sorriso tão sincero. E pensei comigo mesma... talvez eu não precisasse mais viajar sozinha."
+      },
+      {
+        "title": "Diálogo de Confiança 5",
+        "text": "Yinglung deixou amigos para trás para assumir o manto do dever. E minha mãe me deixou para trás para assumir Chi Xiao. Acho que as pessoas que encontram uma verdadeira vocação simplesmente... abandonam as coisas menos importantes que têm. Mas a Endfield não faz isso. Tudo e todos são igualmente importantes e nada fica para trás — Se a Endfield assumiu uma visão para Talos-II, então brandirei outra lâmina para realizá-la!"
+      },
+      {
+        "title": "Chat 1",
+        "text": "Tirar Perlica do trabalho não vai ser fácil. Mas eu tenho um truque que usava com meus veteranos em esgrima. Se eu quisesse fazer eles começarem a trabalhar, eu simplesmente transferia todas as tarefas para eles. Agora, vamos inverter a situação. Podemos simplesmente terminar todo o trabalho de Perlica e ela não teria escolha a não ser tirar uma folga... O quê? Qual é, é uma técnica inteligente, não é?"
+      },
+      {
+        "title": "Chat 2",
+        "text": "Meu penteado? Fácil! Basta usar os dois chifres como guia para obter simetria. Minha vizinha, a vovó Wang, me contou que é um segredo do Forte e me ensinou esse truque... Que estranho? É a vida em um bairro típico de Dayuan. As pessoas ajudavam a criar os filhos dos vizinhos e todos nós crescemos no mesmo quintal. Pode-se dizer que éramos mais do que vizinhos. Parecia fazer parte de uma grande família."
+      },
+      {
+        "title": "Chat 3",
+        "text": "Muitas, muitas escolas inspiraram minha esgrima especial! A maior influência? Definitivamente meu mestre em Tanjian Hall. Ele me ensinou movimentos disciplinados, golpes eficientes — pura substância, sem rodeios. Depois vem o que minha mãe me demonstrava quando eu reclamava demais. Sua esgrima foi passada de geração em geração e era ultracomplexa. Cada movimento tinha um significado especial. Quanto ao resto... bem, eu os criei depois de ler sobre todas aquelas lendas de espadeiros. Uma guerreira de verdade deve ter uma ou duas técnicas características, certo?"
+      },
+      {
+        "title": "Chat 4",
+        "text": "Wuling é um lugar úmido e pegajoso, mas fiquei lá um pouco e me acostumei. As paredes sangravam gotas d'água toda vez que a Maré de Praga subia. Mas a comida de Wuling é simplesmente incrível e as pessoas de lá são... quer dizer, a maioria das pessoas, são bem legais. Lembranças ruins? NÃO! Definitivamente não consigo pensar em ninguém que eu odeie naquele lugar!"
+      },
+      {
+        "title": "Chat 5",
+        "text": "As pessoas me disseram que minha mãe me chamou de Qianyu. Ainda bem que é fácil escrever em yanês. Isso me poupou de muita dor quando meu Mestre me punia fazendo eu escrever meu nome mil vezes."
+      },
+      {
+        "title": "Tópico: Hongshan",
+        "text": "É possível ver a Cratera de Hongshan se olharmos para baixo da ponte da Dijiang. Saí daquele lugar há dois anos sem rumo. Mas todas aquelas estradas que percorri mal chegavam à largura de uma unha... Acho que vou viajar mais até ficar sem dedos, ou mesmo palmas, para medir toda a minha caminhada. Provavelmente teria deixado minha falta de rumo de lado quando isso acontecesse!"
+      },
+      {
+        "title": "Tópico: Mãe desaparecida",
+        "text": "Minha mãe tem uma espada carmesim. Ela me disse que era uma herança de família que uma heroína de Yan deu ao nosso ancestral. Lembro-me de como idosos de toda Hongshan visitavam nossa casa para ver a lâmina e relembrar suas histórias épicas. Então... minha mãe desapareceu com a espada. Conforme fui crescendo, percebi que não era apenas uma arma. Era um caminho. Uma crença. Ainda quero procurá-la. No entanto, sua pequena Qianyu fará isso com sua própria lâmina."
+      },
+      {
+        "title": "Tópico: Perlica",
+        "text": "{F}Perlica já era viciada em trabalho quando a conheci. Às vezes, ouvia por acaso que uma certa Endministrator era o motivo de ela se esforçar tanto. Senti muita pena da Perly — mas depois de te ver, meio que entendi o que ela quis dizer... Além da visão épica e do empreendimento em que ela está trabalhando, sinto que Perlica simplesmente deseja lutar ao seu lado.{M}Perlica já era viciada em trabalho quando a conheci. Às vezes, ouvia por acaso que um certo Endministrator era o motivo de ela se esforçar tanto. Senti muita pena da Perly — mas depois de te ver, meio que entendi o que ela quis dizer... Além da visão épica e do empreendimento em que ela está trabalhando, sinto que Perlica simplesmente deseja lutar ao seu lado."
+      },
+      {
+        "title": "Recurso/Colecionável detectado 1",
+        "text": "Humm, acho que vi algumas coisas boas ali?"
+      },
+      {
+        "title": "Recurso/Colecionável detectado 2",
+        "text": "Encontrei um tesouro! Vamos dar uma olhada!"
+      },
+      {
+        "title": "Área não explorada detectada",
+        "text": "Esperem. Nunca estivemos aqui antes, certo?"
+      },
+      {
+        "title": "Inimigo poderoso descoberto",
+        "text": "Perigo à frente. Deixa eu ver se esse é bom."
+      },
+      {
+        "title": "Mineração 1",
+        "text": "Não esperava por isso, não é? Minha esgrima especial para coisas rochosas!"
+      },
+      {
+        "title": "Mineração 2",
+        "text": "Deixe o resto comigo! É mais rápido com uma lâmina!"
+      },
+      {
+        "title": "Abrindo um caixote",
+        "text": "Eles geralmente escondem tomos secretos em caixas como esta."
+      },
+      {
+        "title": "Adquirindo Aurileno",
+        "text": "É redondo e brilhante... Oh, esse é o tamanho real do Aurileno."
+      },
+      {
+        "title": "Eliminando a Praga",
+        "text": "Não se pode parar uma enchente com uma única lâmina. Talvez fosse essa a sensação."
+      },
+      {
+        "title": "Descansar",
+        "text": "Bom descanso! As lâminas afiadas vão compensar o tempo perdido!"
+      },
+      {
+        "title": "Uso Tático 1",
+        "text": "Rápido! Pegue um pouco disso!"
+      },
+      {
+        "title": "Uso Tático 2",
+        "text": "Hoo... Estou me sentindo melhor!"
+      },
+      {
+        "title": "Aviso de Perigo",
+        "text": "Cuidado! Voltem!"
+      },
+      {
+        "title": "Ferida",
+        "text": "Hngh! Estou bem! Concentre-se na luta."
+      },
+      {
+        "title": "0 PV",
+        "text": "Droga... Ai..."
+      },
+      {
+        "title": "Encorajamento da Equipe 1",
+        "text": "Aquele seu movimento foi incrível!"
+      },
+      {
+        "title": "Encorajamento da Equipe 2",
+        "text": "Isso! Um trabalho em equipe perfeito!"
+      },
+      {
+        "title": "Resposta a Encorajamento 1",
+        "text": "Heh! Só estou fazendo o meu trabalho!"
+      },
+      {
+        "title": "Resposta a Encorajamento 2",
+        "text": "A unidade proporciona sinergia de lâminas!"
+      },
+      {
+        "title": "Início do Combate 1",
+        "text": "Uma lâmina desembainhada, sua luz liberada!"
+      },
+      {
+        "title": "Início do Combate 2",
+        "text": "Deixe comigo."
+      },
+      {
+        "title": "Vitória em Combate 1",
+        "text": "Hooo — Eu não esperaria nada menos."
+      },
+      {
+        "title": "Vitória em Combate 2",
+        "text": "Uma vitória fácil."
+      },
+      {
+        "title": "Vitória em Combate 3",
+        "text": "Muito bem!"
+      },
+      {
+        "title": "Vitória em Combate 4",
+        "text": "Essa foi por pouco! Rápido. Cuidem dos feridos!"
+      },
+      {
+        "title": "Derrota em Combate",
+        "text": "...Lutaremos contra eles novamente!"
+      },
+      {
+        "title": "Golpe Final 1",
+        "text": "Tome isto!"
+      },
+      {
+        "title": "Golpe Final 2",
+        "text": "Ali!"
+      },
+      {
+        "title": "Habilidade de Batalha 1",
+        "text": "Bata!"
+      },
+      {
+        "title": "Habilidade de Batalha 2",
+        "text": "Varra!"
+      },
+      {
+        "title": "Habilidade de Batalha 3",
+        "text": "Defenda!"
+      },
+      {
+        "title": "Combo de Habilidades Pronto 1",
+        "text": "Agora é a nossa chance!"
+      },
+      {
+        "title": "Combo de Habilidades Pronto 2",
+        "text": "Deixe comigo!"
+      },
+      {
+        "title": "Conjuração de Combo 1",
+        "text": "Minha vez!"
+      },
+      {
+        "title": "Conjuração de Combo 2",
+        "text": "Você está lutando comigo!"
+      },
+      {
+        "title": "Finalizador 1",
+        "text": "Fraqueza identificada!"
+      },
+      {
+        "title": "Finalizador 2",
+        "text": "Quebre!"
+      },
+      {
+        "title": "Habilidade Suprema 1",
+        "text": "Basta um golpe para separar!"
+      },
+      {
+        "title": "Habilidade Suprema 2",
+        "text": "Uma vez conhecido, seja hábil!"
+      },
+      {
+        "title": "Habilidade Suprema 3",
+        "text": "Faça o que tem que ser feito!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

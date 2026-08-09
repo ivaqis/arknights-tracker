@@ -122,7 +122,329 @@
         "name": "Creative",
         "description": "Creative: \"Gift\" Crafting\nFluorite's silence usually heralds an impending prank. Unfortunately, Fluorite is often silent."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Operation Prep 1",
+        "text": "Oh, we ready to play?"
+      },
+      {
+        "title": "Operation Prep 2",
+        "text": "Hold on, what if someone's not ready for it?"
+      },
+      {
+        "title": "Adding to Team 1",
+        "text": "Peace and smiles, ladies and gents."
+      },
+      {
+        "title": "Adding to Team 2",
+        "text": "Wow, looks like I'm quite the catch."
+      },
+      {
+        "title": "Switching Weapon",
+        "text": "Not bad... Mind if I tweak it a little?"
+      },
+      {
+        "title": "Switching Gear",
+        "text": "The fancier the gear, the bigger the hassle, right?"
+      },
+      {
+        "title": "Ability Matrix Activation",
+        "text": "Nobody wants to spar with me? What a shame."
+      },
+      {
+        "title": "Watching Combat Records",
+        "text": "So many battle records... Endfield sure lives up to the \"Industries\" part."
+      },
+      {
+        "title": "Operator Promotion 1",
+        "text": "Looks like the real work's just getting started."
+      },
+      {
+        "title": "Operator Promotion 2",
+        "text": "I'm truly honored ... but I guess it means even longer hours on field missions, yeah?"
+      },
+      {
+        "title": "Operator Promotion 3",
+        "text": "Maybe throw in a medal next time. Never had one before."
+      },
+      {
+        "title": "Operator Promotion 4",
+        "text": "If the Band Fringes are part of the \"better world\" we're trying to build, then we've got plenty of work to do, don't we?"
+      },
+      {
+        "title": "Operator Reporting for Duty",
+        "text": "Op Z7 skirmisher, Fluorite. Got anything to say? No? How about we just call it a day?"
+      },
+      {
+        "title": "Standing by 1",
+        "text": "Who's due for some bad luck this time?"
+      },
+      {
+        "title": "Standing by 2",
+        "text": "Distract them? Disable them? Or ... just destroy them?"
+      },
+      {
+        "title": "Assigning to Facility",
+        "text": "Relax, I'll get the job done right."
+      },
+      {
+        "title": "Greeting 1",
+        "text": "Busy day, huh, big hero?"
+      },
+      {
+        "title": "Greeting 2",
+        "text": "When was the last time you actually rested?"
+      },
+      {
+        "title": "Dijiang Idle Chatter 1",
+        "text": "Well ... this is new. No tasks for me today?"
+      },
+      {
+        "title": "Dijiang Idle Chatter 2",
+        "text": "Did Akekuri just stroll into the training room, grinning ... with a sword? Guess I'll stay out of her sight for a bit longer..."
+      },
+      {
+        "title": "Dijiang Idle Chatter 3",
+        "text": "The first time I picked up a gun, I didn't even know how to open the chamber. With a bunch of guys charging at me, it wasn't like I had a choice... Honestly, this training's a breeze compared to the chaos back in the frontier."
+      },
+      {
+        "title": "Dijiang Idle Chatter 4",
+        "text": "If it wasn't for pure luck that we ended up in the same team, we'd be doubling the trouble. But don't worry, I'll keep them in check."
+      },
+      {
+        "title": "Dijiang Idle Chatter 5",
+        "text": "When we were kids, we'd sleep all day on the burdenbeasts, sunbathing so we wouldn't feel hungry... Not that I'm complaining about the perks; I just think it'd be a shame not to soak up a little sunshine at this altitude."
+      },
+      {
+        "title": "Dijiang Idle Chatter 6",
+        "text": "You're like Supervisor Perlica — can't really hate you. The big shots out in the frontier love clinging to their status and pride, but honestly, people will follow a real leader, with or without all that."
+      },
+      {
+        "title": "Offering Gifts",
+        "text": "Here, a little gadget for you. Relax, nothing will pop out of it."
+      },
+      {
+        "title": "Accepting Gifts",
+        "text": "Hmm, a \"colleague\" of mine once accepted a gift and ended up taking the fall... Why are you shaking your head so hard?"
+      },
+      {
+        "title": "Trust Dialog 1",
+        "text": "Negotiation skills? Please, don't flatter those street punks. They bark loud, but the moment their boss shakes the bowl, they come trotting back. They're just tools — no spine, no plan. They make a mess, sure, but the real rot? It's the ones sitting on all the power and resources, squeezing the rest of us dry."
+      },
+      {
+        "title": "Trust Dialog 2",
+        "text": "I got in some trouble before I joined. Akekuri bailed me out. Her squad was busy saving the town, kicking out those Landbreakers. And the locals? They were too busy eyeing Endfield's supplies like vultures... Now, tell me, what would you have done?"
+      },
+      {
+        "title": "Trust Dialog 3",
+        "text": "I've got six uncles, eight aunts, and twenty-two siblings ... yeah, we're very much like the Cautuses. We weren't all related, just folks who fled with me and my mom. Some came later, some vanished who-knows-when. But we stuck together, even if it was only for a short while. That was family enough for me."
+      },
+      {
+        "title": "Trust Dialog 4",
+        "text": "Some people forget we've got four limbs, not just two to drag ourselves around. Stay hunched long enough, you stop looking like a person. The frontier's full of folks like that. But if you've got the guts to look up? Then maybe you've got a shot at something better."
+      },
+      {
+        "title": "Trust Dialog 5",
+        "text": "Here, take this letter. Burn it in the wildlands if I don't make it back. You can read it if you want, just a bunch of little things. The person it's meant for is gone. Guess it's up to me to find the answers they were looking for. I'm sure the big hero of Talos-II will help me, right?"
+      },
+      {
+        "title": "Chat 1",
+        "text": "This is one of my go-to bombs. Just tweak the adhesive surface, and it'll blow up exactly where it counts. Oh, don't stress about its power. It's way more effective at stalling the target than just blowing things up."
+      },
+      {
+        "title": "Chat 2",
+        "text": "After going over my file, Supervisor Perlica gave me the codename \"Fluorite\". It's naturally toxic, yet perfect for creating all kinds of industrial products. I get what she meant after skimming through the book. But, honestly? Kind of a cheeky choice."
+      },
+      {
+        "title": "Chat 3",
+        "text": "When I was a kid, my mom and I were always running from one place to the next. Eventually, I had to survive on my own in the frontier. Some places gave us reserved grain as rations, while others taxed us with all sorts of made-up fees. Everywhere felt like home, yet nowhere truly was. The settlements in the frontier never lasted long, and the idea of \"home\" never really meant anything."
+      },
+      {
+        "title": "Chat 4",
+        "text": "Beauty has always defined the wildlands. The animals driven away by the Blight never really leave — they just shift their paths each year. Grass creeps back the moment the Blight retreats. Nature has its own rhythm, and there's only so much it can take... Sometimes I wonder if we really belong in that balance."
+      },
+      {
+        "title": "Chat 5",
+        "text": "In the backwaters I've lived, it's always the enforcers who squeeze people the hardest. They know how fragile things are — one spark of chaos, and the whole place could crumble. So, they create a twisted balance by holding the locals hostage. Unless you're close enough to grab their throats, nothing's ever going to change."
+      },
+      {
+        "title": "Topic: Akekuri",
+        "text": "Take a wild guess — who do you think sealed those ears into the evidence bag? Yep, even our kind-hearted Captain knew there wasn't a better choice on Talos-II. And that face she made, all teary but holding it in? Adorable."
+      },
+      {
+        "title": "Topic: Catcher",
+        "text": "He might look like he's enjoying it, but go easy on him. The super-prepared ones are usually the most afraid of screwing up. No one's mistake-proof... What, I should stop asking him for favors? Pfft, why should I? Don't worry — he'll push through, even if he's scared stiff. He always does."
+      },
+      {
+        "title": "Topic: Estella",
+        "text": "Don't touch Estella's playlist, or let her chase danger for real. You think she's got everything under control? Uh-uh. Better keep a mop handy, my dear."
+      },
+      {
+        "title": "Topic: Antal",
+        "text": "That big lizard's cool as ice, even in the heat of battle — probably doesn't even realize he's in danger. It drives the Captain up the wall ... but hey, that's just how he rolls. Me and him? Hmm... We're totally cool ... as long as he remembers my tail's not for staring."
+      },
+      {
+        "title": "Resource/Collectible Detected 1",
+        "text": "Found something cool, mind if I take it all?"
+      },
+      {
+        "title": "Resource/Collectible Detected 2",
+        "text": "Did you see that over there? Oh, never mind, forget I said anything."
+      },
+      {
+        "title": "Unexplored Area Detected",
+        "text": "Found a nice spot. Hmm ... seems like fun."
+      },
+      {
+        "title": "Powerful Enemy Discovered",
+        "text": "Everyone, we've got a new buddy to play with."
+      },
+      {
+        "title": "Mining 1",
+        "text": "Ah, the good ol' DIY. Just like the bitter old days."
+      },
+      {
+        "title": "Mining 2",
+        "text": "*Yawn* Coming. Y'all are so productive."
+      },
+      {
+        "title": "Opening a Crate",
+        "text": "Wooo, what a find. And no name tag? Hmm..."
+      },
+      {
+        "title": "Acquiring Aurylene",
+        "text": "I had one of these before... What happened after wasn't so great."
+      },
+      {
+        "title": "Eliminating the Blight",
+        "text": "If only I could've eliminated the Blight back then..."
+      },
+      {
+        "title": "Rest",
+        "text": "Finally, time to restock on bombs."
+      },
+      {
+        "title": "Tactical Use 1",
+        "text": "See? I knew this would come in handy."
+      },
+      {
+        "title": "Tactical Use 2",
+        "text": "That was just bad luck. One more round."
+      },
+      {
+        "title": "Danger Warning",
+        "text": "Careful, don't get jinxed."
+      },
+      {
+        "title": "Injured",
+        "text": "...I slipped."
+      },
+      {
+        "title": "0 HP",
+        "text": "I should've ... caught that."
+      },
+      {
+        "title": "Team Encouragement 1",
+        "text": "Well, that was something."
+      },
+      {
+        "title": "Team Encouragement 2",
+        "text": "Not bad. Shame no one's here to film it."
+      },
+      {
+        "title": "Encouragement Response 1",
+        "text": "Nice words, but save yourself some breath."
+      },
+      {
+        "title": "Encouragement Response 2",
+        "text": "Well, we are an elite team, after all."
+      },
+      {
+        "title": "Combat Begins 1",
+        "text": "Back to my old gig, huh?"
+      },
+      {
+        "title": "Combat Begins 2",
+        "text": "We're so committed! Fingers crossed for a bonus."
+      },
+      {
+        "title": "Combat Victory 1",
+        "text": "Good, one less problem to worry about."
+      },
+      {
+        "title": "Combat Victory 2",
+        "text": "Too bad, they almost had a chance."
+      },
+      {
+        "title": "Combat Victory 3",
+        "text": "Yep, yep. We totally couldn't have done it without you."
+      },
+      {
+        "title": "Combat Victory 4",
+        "text": "Hmph. Not bad, but not quite enough."
+      },
+      {
+        "title": "Combat Defeat",
+        "text": "Moping won't get us anywhere, but action will. C'mon, this isn't over yet."
+      },
+      {
+        "title": "Final Strike 1",
+        "text": "*Whistle* Fetch!"
+      },
+      {
+        "title": "Final Strike 2",
+        "text": "Attention please."
+      },
+      {
+        "title": "Battle Skill 1",
+        "text": "Here you go."
+      },
+      {
+        "title": "Battle Skill 2",
+        "text": "Hope you like this!"
+      },
+      {
+        "title": "Battle Skill 3",
+        "text": "Tick tock!"
+      },
+      {
+        "title": "Combo Skill Ready 1",
+        "text": "Hmph. Show time."
+      },
+      {
+        "title": "Combo Skill Ready 2",
+        "text": "They've got more holes than cheese."
+      },
+      {
+        "title": "Combo Casting 1",
+        "text": "Savor this."
+      },
+      {
+        "title": "Combo Casting 2",
+        "text": "Bet you love it."
+      },
+      {
+        "title": "Finisher 1",
+        "text": "Surprise."
+      },
+      {
+        "title": "Finisher 2",
+        "text": "Bedtime, honey."
+      },
+      {
+        "title": "Ultimate 1",
+        "text": "Guess you've lived long enough?"
+      },
+      {
+        "title": "Ultimate 2",
+        "text": "This is gonna be loud."
+      },
+      {
+        "title": "Ultimate 3",
+        "text": "End of the road, pal."
+      }
+    ]
   },
   "potentials": {
     "potential1": {

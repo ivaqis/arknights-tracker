@@ -126,7 +126,329 @@
         "name": "Thể Thao",
         "description": "Thể Thao: Câu Cá Biển\nCâu cá biển có vẻ là một môn thể thao yên bình, nhưng thực chất đó là một cuộc chiến đấu vật lộn với những con sóng khổng lồ."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Chuẩn Bị Tác Chiến 1",
+        "text": "Hửm? Tới lượt tôi à?"
+      },
+      {
+        "title": "Chuẩn Bị Tác Chiến 2",
+        "text": "Có ngài ở đây thì hôm nay kiểu gì cũng bắt được thứ gì đó cho xem."
+      },
+      {
+        "title": "Đang thêm vào đội 1",
+        "text": "À... Hôm qua tôi bị trẹo mắt cá chân... Hông đau, cổ cũng đau nữa..."
+      },
+      {
+        "title": "Đang thêm vào đội 2",
+        "text": "Ngài có cả tá người giỏi đánh đấm rồi mà. Ngài chắc là cần tôi làm chuyện này không?"
+      },
+      {
+        "title": "Đang đổi vũ khí",
+        "text": "Hmm. Nhìn chắc chắn hơn que tre đấy. Ít nhất thì cái này sẽ không vỡ vụn đâu."
+      },
+      {
+        "title": "Đang đổi trang bị",
+        "text": "Giờ thì cái này sẽ giúp tôi không bị bầm tím nữa rồi."
+      },
+      {
+        "title": "Kích hoạt Ma Trận Năng Lực",
+        "text": "Tôi thực sự đã sống sót qua cả tuần huấn luyện đặc biệt. Không thể tin nổi là mình chịu khó tới vậy."
+      },
+      {
+        "title": "Xem Hồ Sơ Chiến Đấu",
+        "text": "Cái này còn hay hơn những gì chúng ta xem trên TV ở nhà, mà lần nào cũng có thứ mới mẻ!"
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 1",
+        "text": "Khoan đã, buổi lễ này là dành cho tôi sao? Ôi trời... tôi phải nói gì bây giờ? Tôi nghĩ là... cảm ơn?"
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 2",
+        "text": "Không cần phải động viên tôi thế đâu, Endmin. Kỳ thật, được khen nhiều quá tôi sẽ bị héo như hoa bị tưới quá tay vậy."
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 3",
+        "text": "Gánh hết trách nhiệm một mình chắc mệt lắm nhỉ, Endmin. À. Chắc tôi không còn lựa chọn nào khác ngoài việc giúp ngài một tay lúc này."
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 4",
+        "text": "Sao trông ngài còn vui hơn cả tôi vậy? Tôi tưởng đây là thăng bậc của *tôi* chứ. Được rồi, được rồi. Đi ăn mừng ở quán thịt nướng đi. Tôi chỉ muốn ăn phần BBQ ngon nhất, và ngài là người trả tiền đấy."
+      },
+      {
+        "title": "Cán Viên đang báo cáo nhiệm vụ",
+        "text": "Xin lỗi, đăng ký công việc ở đây phải không? Rất vui được gặp ngài. Tôi là Alesh. Tôi rất thích đọc sách, và có thể câu cá ngay cả khi nhắm mắt. Rất hân hạnh được tham gia."
+      },
+      {
+        "title": "Chờ Lệnh 1",
+        "text": "Hôm nay thật đẹp trời. Hoàn hảo để chợp mắt."
+      },
+      {
+        "title": "Chờ Lệnh 2",
+        "text": "Ví rỗng tuếch, câu chuyện đời tôi..."
+      },
+      {
+        "title": "Phân Công Vào Công Trình",
+        "text": "À... Chỉ cần nghe chữ \"làm việc\" thôi là năng lượng tan biến sạch. Tôi chọn chợp mắt trước làm việc sau, Endmin."
+      },
+      {
+        "title": "Lời Chào 1",
+        "text": "Ối! Lại đụng trúng ngài suốt. Hôm nay thế nào?"
+      },
+      {
+        "title": "Lời Chào 2",
+        "text": "Sếp à, ngài không mệt hả? Tôi có thể chỉ ngài cách lén chợp mắt, nếu ngài cần."
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 1",
+        "text": "Không còn gì trong lịch trình à? Quá tuyệt. Đến lúc xem lại chương trình câu cá rồi."
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 2",
+        "text": "Chỗ đó. Ừ. Chỗ phủ đầy tuyết đó. Ở phương bắc phải không? Nếu không gia nhập Endfield, có lẽ ta chẳng bao giờ thấy được cảnh đó. Lần đầu lên Dijiang, nhìn từ Cầu Tàu xuống, cảnh tượng đó thật choáng ngợp. Bây giờ quen rồi thì ngắm Talos-II từ trên cao thế này đúng là có chút huyền diệu."
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 3",
+        "text": "KN chiến đấu của tôi? Tôi chỉ biết vung kiếm và hy vọng trúng thứ gì đó đau thật đau thôi, sếp à. Nhưng ngài cũng có thể học được tuyệt kỹ của tôi sau khi đánh với mấy con Thú Ngà khổng lồ, dây leo ăn thịt người, bọn Aggeloi bọc thép, và mấy gã nợ tiền không chịu trả."
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 4",
+        "text": "Ngài biết đấy, đến tuổi này của ta dễ chán lắm. Câu cá là cách duy nhất để thoát khỏi thực tại tăm tối này. Gì cơ? Tôi vẫn trẻ á? Đừng có xạo kiểu khô ran đó nữa, tôi già lắm rồi... Đợi đã, Endmin. Ngài nói ngài bao nhiêu tuổi?"
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 5",
+        "text": "Tôi vừa giở cuốn tiểu thuyết xã hội. Ngài biết đấy, mấy chuyện như sinh tồn hay nhân loại vật lộn sống còn vốn không mấy hấp dẫn ta... Nhưng mà cảm giác tác giả ấy... giống như người thật sự từng sống trong hoàn cảnh đó vậy. Hửm, có chuyện gì sao? Sao tự dưng mặt nghiêm trọng thế? Thả lỏng đi nào sếp. Tôi chỉ nói là tôi nể người viết cuốn đó thôi mà."
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 6",
+        "text": "Sống dai có lẽ là ưu điểm duy nhất của tôi. Tôi từng ăn vài đòn đau điếng, nhưng trong đầu lúc đó cứ nghĩ tới những người ta có thể sẽ không bao giờ gặp lại, đám bạn, ông chủ nhà cũ... và cả mọi người nữa. Chỉ cần nghĩ vậy thôi là tôi lại lồm cồm bò dậy, chiến tiếp hiệp hai."
+      },
+      {
+        "title": "Tặng Quà",
+        "text": "Này, sếp. Tôi có thứ hay ho cho ngài. Cửa tiệm có khuyến mãi giảm nửa giá cho món thứ hai. Quá hời, đúng không?"
+      },
+      {
+        "title": "Nhận quà",
+        "text": "Cho tôi ư? Trời đất... Bình thường tôi chỉ nhận được thư tình của đám đòi nợ phiền phức hay mấy gã muốn lấy mạng tôi thôi. Chẳng bao giờ nghĩ sẽ có quà thật sự."
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 1",
+        "text": "Tụt hứng à? Trời ạ, người trẻ phải có hy vọng chứ. Tôi biết cuộc sống thảm thật, nhưng rồi nó sẽ còn thảm hơn nữa đấy. Thấy chưa? Ngài đỡ buồn hẳn rồi phải không?"
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 2",
+        "text": "Sao tôi lại gia nhập Endfield à? Là vì ông chủ nhà già của tôi đấy. Đó là lý do. Lão ấy cáu kỉnh suốt. Quầy cá của tôi thì làm ăn bết bát, tiền nhà cũng thiếu mấy tháng. Thế là lão kiếm cho tôi một công việc mà chẳng thèm hỏi ý kiến. Không biết lão viết gì trong sơ yếu lý lịch, mà rốt cuộc ngài lại duyệt... Vậy nên tôi ở đây."
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 3",
+        "text": "Ngài đang cầm gì thế? \"Gã Đầu Gấu Thứ Nhì Dẫn Dắt La Estrada\"...? Gã trong ảnh giống tôi á? Eo, ai biết được. Thôi nào, chúng ta phải sống cho hiện tại. Đừng đào sâu vào những thứ đáng lẽ ra nên bị chôn vùi. Thật xấu hổ nếu chúng ta để chuyện cũ xen vào hiện tại, phải không? Ừm, sao ngài lại hỏi Perlica số của Cục An Ninh?"
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 4",
+        "text": "Tôi từng lăn lộn với Estrada Ursaña. Đa số họ gọi nó là La Estrada. Thành phố rộng lớn này sinh ra mấy gã nhỏ bé như tôi. Tôi lớn lên trong cái xó tồi tàn nhất của nó, tụ tập một nhóm người, rồi nhập hội lớn hơn, và không biết bằng cách nào... tôi lại trở thành kẻ cầm đầu. Rồi thì... Mọi thứ ập vào mặt tôi thế đấy. Trời ạ... Biết trước thế này, hai chục năm trước tôi đã nên xin vào xưởng đóng hộp cá rồi. Giờ thì tôi ngồi đây, bán cá kiếm sống."
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 5",
+        "text": "Nhìn gì dữ vậy? Tò mò về cái sẹo này à? Haha, đàn ông đâu dễ chia sẻ. Cái gì đằng sau thì cứ nằm lại phía sau. Phải buông bỏ để bước tiếp thôi... Haiz! Endmin! Đừng đi thật chứ! Được rồi, được rồi, tôi kể mà. Cũng không hoành tráng lắm đâu. Tôi từng có hai người anh em vào sinh ra tử. Một người chém tôi khi tôi đang che giấu người còn lại. Tôi mất một con mắt và một phần đời cũ mình ở đó. Đó, hết rồi đó. Đơn giản và nhàm chán nhỉ?"
+      },
+      {
+        "title": "Trò Chuyện 1",
+        "text": "Đời đâu giống đi câu. Câu cá thì mồi ném ra có thể thu lại. Nhưng trong đời thực, một khi đã rơi vào nước sôi lửa bỏng thì không dễ gì có đường lui. *ĐÓ* là lý do sống hạnh phúc mới là quan trọng. Triết lý thật sự từ một old boy, Endmin à."
+      },
+      {
+        "title": "Trò Chuyện 2",
+        "text": "Cái quầy cá nhỏ của tôi không khá khẩm lắm. Không có lương từ Endfield thì chắc tôi không trả tiền nhà nổi. Nói thật, tôi chưa bao giờ mong kiếm được món hời nhờ bán cá. Vì vậy ai muốn mặc cả thì mặc cả, thiếu tiền thì tôi cho ghi sổ luôn. Ngay cả lúc câu được nhiều, tôi cũng đem mớ thừa tặng người khác. Sống chẳng dễ dàng gì mà. Có lần trộm lẻn vào nhà tôi. Hắn lục lọi chán chê rồi để lại mảnh giấy viết vội. \"Nơi đáng thương nhất từng thấy.\" Trời ạ..."
+      },
+      {
+        "title": "Trò Chuyện 3",
+        "text": "Đây là triết lý sống của đời tôi: Chịu đựng chuyện nhỏ, né tránh chuyện lớn. *Chỉ khi nào* không thể né được nữa mới phải làm gì đó. Đó là lúc phải đánh chúng nhừ tử và đảm bảo chúng không thể gượng dậy nổi."
+      },
+      {
+        "title": "Trò Chuyện 4",
+        "text": "Con mắt này có gây rắc rối cho tôi không à? Ừ thì... Thỉnh thoảng cũng bất tiện. Thí dụ ban nãy, ngài đứng ngay ở điểm mù khi tôi chào hỏi. Haha. Không sao đâu. Tôi quen rồi. Nhìn rõ quá cũng chẳng có gì hay ho. Có khi giữ vài thứ trong bóng tối để khiến chúng... bí ẩn hơn cũng là một cách tốt."
+      },
+      {
+        "title": "Trò Chuyện 5",
+        "text": "Chương trình tarot hôm qua nói hôm nay tôi sẽ cực kỳ may mắn. Đoán xem nào? Vừa bước ra khỏi nhà là tôi rơi ngay xuống cống ngập mùi. Tôi kiểu, \"Trời ạ...! Chương trình tarot tệ nhất mọi thời đại.\" Nhưng trong đống bùn, tôi thấy một thứ sáng loáng, đó là nhẫn kim cương. Có thể tôi gặp may thật ấy chứ. Nghĩ đến người đánh rơi đáng thương kia, tôi bèn dùng vận may siêu cấp của mình để lần ra họ và trả lại chiếc nhẫn. Tôi chỉ muốn nói là, sếp à, nếu chúng ta dùng vận may để làm điều đúng đắn, biết đâu may mắn lại tiếp tục mỉm cười với chúng ta. Ngài đồng ý không?"
+      },
+      {
+        "title": "Chủ đề: Các băng đảng",
+        "text": "Tôi sống ở vùng biên giới hỗn loạn, ngài biết đấy. Đó là nơi trẻ em lớn lên trong một gia đình tồi tệ hoặc không có gia đình. Không biết cái nào tệ hơn. Tôi ư? Tôi không có gia đình, không được học hành và không có mái nhà che đầu. Vâng, tôi đã chạy trên đường phố. Tôi đã dành cả ngày để đánh nhau với những đứa trẻ khác chỉ để sinh tồn. Chúng tôi ghét nhau vô cùng, nhưng những nơi nguy hiểm buộc chúng tôi phải đưa ra những lựa chọn buồn cười. Bằng cách nào đó, chúng tôi đã đến với nhau và tạo dựng gia đình riêng của mình. Thật buồn cười là chúng tôi thậm chí còn tự đặt ra luật lệ riêng cho mình trên bãi cỏ vô luật pháp đó."
+      },
+      {
+        "title": "Chủ đề: Chủ nhà",
+        "text": "Ông chủ nhà cũ lại viết thư cho tôi. Không phải đòi tiền nhà mà hỏi tình hình dạo gần đây thế nào. Thậm chí ổng còn gọi tôi là kẻ vô dụng lười biếng, không biết chăm sóc bản thân. Khó tin thật, ổng từng là nhân vật lẫy lừng hồi còn trẻ... Khoan đã. Sao ổng lại quan tâm tôi thế nhỉ? Ổng định nhận tôi làm con à? Này, tôi đang nuôi hưu trí cho lão bằng tiền thuê nhà rồi nhé, vác xe lăn không nằm trong hợp đồng đâu. Ổng cứ than đau đầu gối suốt... Hay tôi tặng ổng cái máy mát xa tự động nhỉ. Thật lòng thì, lão già đó nên tự lo cho bản thân đi, thay vì cứ lải nhải mấy chuyện vớ vẩn với tôi. Với lại, nếu thật sự lo thì cứ đến tận nơi mà nói, cần gì phải ám chỉ kiểu trách móc qua thư từ."
+      },
+      {
+        "title": "Chủ đề: Thành Phố Talos",
+        "text": "Thành phố Talos có ý nghĩa đặc biệt với Talos-II. Sau Chiến Tranh Nhục Nhã, Bộ Ba Quyền Lực ký Hiệp Ước Vành Đai và cùng nhau xây dựng nên thành phố Talos. Đó là thành phố trung lập *đầu tiên* của người Terra. Lịch sử nói thế đó. Một thành phố vĩ đại, nhưng đến nay, cả thế kỷ rồi mà vẫn chưa xây xong. Có lẽ tôi sẽ mô tả nó thế này: \"Một lão già thông tuệ, tóc bạc phơ giơ cao cây giáo chỉ về phía mặt trời sau rặng đồi.\" Nghe văn vẻ hơn nhiều đúng không? Chà, tôi đâu có uổng phí thời gian đọc tiểu thuyết Ursus đâu."
+      },
+      {
+        "title": "Chủ đề: Vây (cá) lạ",
+        "text": "Ngài tò mò về con cá kỳ lạ tôi câu được à? Đó là một câu chuyện dài đấy. Tôi lớn lên bằng nắm đấm chứ không phải sách vở. Hồi bé tôi còn chẳng phát âm đúng từ \"Thuật Pháp Originium\". Lúc mới mất mắt, người còn mơ màng rối rắm, tôi cứ cảm giác có gì đó bơi lượn trong điểm mù. Mỗi lần đi câu là nó lại gây khó chịu, thế là tôi quăng mồi thật mạnh và \"BÙM!\" Ngài biết chuyện gì xảy ra sau đó rồi đấy. Lão già bảo tôi có năng khiếu với Thuật Pháp. Tôi thì không biết đó là phúc hay họa nữa."
+      },
+      {
+        "title": "Phát hiện Tài Nguyên/Có Thể Thu Thập 1",
+        "text": "Chắc tôi phải xem thử. Biết đâu đáng giá thật."
+      },
+      {
+        "title": "Phát hiện Tài Nguyên/Có Thể Thu Thập 2",
+        "text": "Trông có vẻ giá trị. Có khi chúng ta sắp giàu rồi."
+      },
+      {
+        "title": "Phát Hiện Khu Vực Chưa Khám Phá",
+        "text": "Hãy cẩn thận. Có gì đó kỳ lạ quanh đây."
+      },
+      {
+        "title": "Phát hiện Kẻ Địch Mạnh",
+        "text": "Coi chừng! Con đó mà đánh trúng là thảm đấy."
+      },
+      {
+        "title": "Khai thác 1",
+        "text": "Chúng ta bán được thứ này thật à?"
+      },
+      {
+        "title": "Khai thác 2",
+        "text": "Lấp lánh ghê. Kiếm thêm đi nào."
+      },
+      {
+        "title": "Mở Thùng",
+        "text": "Hên quá. Hóa ra chương trình tarot nói đúng."
+      },
+      {
+        "title": "Nhận Aurylene",
+        "text": "Nhìn giống... Thứ phép thuật gì đó. Tôi xem lại chút được không?"
+      },
+      {
+        "title": "Xua Tan Nhiễm Khuẩn",
+        "text": "Ở kia. Sạch đẹp và sáng bóng."
+      },
+      {
+        "title": "Nghỉ ngơi",
+        "text": "Tôi vừa đánh một giấc ngon lành. Đến lúc hành động thật rồi."
+      },
+      {
+        "title": "Sử Dụng Vật Phẩm Chiến Thuật 1",
+        "text": "Thuốc đây! Bắt lấy."
+      },
+      {
+        "title": "Sử Dụng Vật Phẩm Chiến Thuật 2",
+        "text": "Phù. Tôi tưởng mình tiêu đời rồi."
+      },
+      {
+        "title": "Cảnh Báo Nguy Hiểm",
+        "text": "Này! Tránh ra mau!"
+      },
+      {
+        "title": "Bị Thương",
+        "text": "Chừng đó chưa đủ hạ tôi đâu."
+      },
+      {
+        "title": "0 HP",
+        "text": "Tôi sẽ làm... bất cứ điều gì cần thiết..."
+      },
+      {
+        "title": "Cổ Vũ Đội 1",
+        "text": "Hôm nay thấy phấn chấn nhỉ?"
+      },
+      {
+        "title": "Cổ Vũ Đội 2",
+        "text": "Một nhóm tốt thì chuyện gì cũng dễ hơn hẳn."
+      },
+      {
+        "title": "Đáp Lại Lời Cổ Vũ 1",
+        "text": "Tôi chỉ đang làm phần việc của mình."
+      },
+      {
+        "title": "Đáp Lại Lời Cổ Vũ 2",
+        "text": "Là nhờ cả đội đấy."
+      },
+      {
+        "title": "Bắt Đầu Chiến Đấu 1",
+        "text": "Phải luôn cảnh giác."
+      },
+      {
+        "title": "Bắt Đầu Chiến Đấu 2",
+        "text": "Cứ thoải mái tung hoành. Tôi yểm trợ cho."
+      },
+      {
+        "title": "Thắng Trận 1",
+        "text": "Tình hình hơi căng, nhưng ta làm được rồi."
+      },
+      {
+        "title": "Thắng Trận 2",
+        "text": "Tôi thậm chí còn chẳng thấy mệt."
+      },
+      {
+        "title": "Thắng Trận 3",
+        "text": "Không tệ chút nào. Ai cũng làm tốt phần của mình."
+      },
+      {
+        "title": "Thắng Trận 4",
+        "text": "Suýt nữa thì thua! Nhưng dù sao thì thắng vẫn là thắng."
+      },
+      {
+        "title": "Bại Trận",
+        "text": "Đừng bận tâm với thất bại. Lần sau chỉ cần cẩn thận hơn. Ta lo được mà, đúng không?"
+      },
+      {
+        "title": "Đòn Dứt Điểm 1",
+        "text": "Hãy cầm lấy!"
+      },
+      {
+        "title": "Đòn Dứt Điểm 2",
+        "text": "Nằm xuống!"
+      },
+      {
+        "title": "KN Chiến Đấu 1",
+        "text": "NHẬN lấy đi!"
+      },
+      {
+        "title": "KN Chiến Đấu 2",
+        "text": "Bình tĩnh lại nào!"
+      },
+      {
+        "title": "KN Chiến Đấu 3",
+        "text": "Đến lúc THƯ GIÃN rồi!"
+      },
+      {
+        "title": "Chuẩn Bị KN Liên Hoàn 1",
+        "text": "Đến lúc phản đòn rồi hả?"
+      },
+      {
+        "title": "Chuẩn Bị KN Liên Hoàn 2",
+        "text": "Sẵn sàng đập tan đám này."
+      },
+      {
+        "title": "Thi Triển Liên Hoàn 1",
+        "text": "Xem thứ gì CẮN đây!"
+      },
+      {
+        "title": "Thi Triển Liên Hoàn 2",
+        "text": "Đừng chắn ĐƯỜNG tôi!"
+      },
+      {
+        "title": "Kết Liễu 1",
+        "text": "Đừng động tới kết liễu của tôi!"
+      },
+      {
+        "title": "Kết Liễu 2",
+        "text": "Tôi vừa rắc mồi xong đấy!"
+      },
+      {
+        "title": "Tuyệt Kỹ 1",
+        "text": "Tóm được rồi!"
+      },
+      {
+        "title": "Tuyệt Kỹ 2",
+        "text": "Làm mồi nhử vui không!"
+      },
+      {
+        "title": "Tuyệt Kỹ 3",
+        "text": "Thưởng thức bữa phụ nào!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

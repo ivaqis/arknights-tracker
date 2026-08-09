@@ -93,7 +93,229 @@
         "name": "???",
         "description": ""
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Preparación de la operación 1",
+        "text": "Oigo al Originio cantar."
+      },
+      {
+        "title": "Preparación de la operación 2",
+        "text": "Endfield no dejará de progresar."
+      },
+      {
+        "title": "Añadir al equipo 1",
+        "text": "Estoy en posición, Dijiang."
+      },
+      {
+        "title": "Añadir al equipo 2",
+        "text": "Ya era hora."
+      },
+      {
+        "title": "Cambiar de arma",
+        "text": "No está nada mal."
+      },
+      {
+        "title": "Cambiar de equipamiento",
+        "text": "Un buen producto de la manufactura industrial."
+      },
+      {
+        "title": "Activación de la matriz de habilidades",
+        "text": "Reconozco esta sensación..."
+      },
+      {
+        "title": "Viendo los registros de combate",
+        "text": "Jamás olvidaré la visión de ellos."
+      },
+      {
+        "title": "Ascenso de operador 1",
+        "text": "Otro paso hacia adelante..."
+      },
+      {
+        "title": "Ascenso de operador 2",
+        "text": "Protegeré Endfield. Siempre."
+      },
+      {
+        "title": "Ascenso de operador 3",
+        "text": "El pasado y el presente deben convertirse en uno."
+      },
+      {
+        "title": "Ascenso de operador 4",
+        "text": "Escuché su voz, resonando como un susurro en sueños. Una y otra vez, he soñado con un mar infinito... uno que trae pena, despierta recuerdos... y fortalece mi determinación."
+      },
+      {
+        "title": "En espera 1",
+        "text": "¿Aún esperando algo?"
+      },
+      {
+        "title": "En espera 2",
+        "text": "El Originio nos abrirá un camino."
+      },
+      {
+        "title": "Aceptando regalos",
+        "text": "¡Muchas gracias!"
+      },
+      {
+        "title": "Recurso/Coleccionable detectado 1",
+        "text": "Mira, allá..."
+      },
+      {
+        "title": "Recurso/Coleccionable detectado 2",
+        "text": "¡Algo importante se encuentra por allá!"
+      },
+      {
+        "title": "Zona inexplorada detectada",
+        "text": "La zona cercana necesita una inspección adecuada."
+      },
+      {
+        "title": "Enemigo poderoso descubierto",
+        "text": "Hostil de alta amenaza. Acércate con precaución."
+      },
+      {
+        "title": "Minería 1",
+        "text": "Estos minerales podrían ser útiles."
+      },
+      {
+        "title": "Minería 2",
+        "text": "Déjame ayudarte."
+      },
+      {
+        "title": "Abriendo una caja",
+        "text": "Este es un viaje gratificante."
+      },
+      {
+        "title": "Adquiriendo Aurileno",
+        "text": "Esto me resulta familiar."
+      },
+      {
+        "title": "Eliminar la Plaga",
+        "text": "Eliminación de la Plaga confirmada."
+      },
+      {
+        "title": "Descanso",
+        "text": "Todos han descansado."
+      },
+      {
+        "title": "Uso táctico 1",
+        "text": "¿Te sientes mejor?"
+      },
+      {
+        "title": "Uso táctico 2",
+        "text": "Mucho mejor ahora."
+      },
+      {
+        "title": "Advertencia de peligro",
+        "text": "¡Algo se acerca! ¡Cuidado!"
+      },
+      {
+        "title": "Herida",
+        "text": "Todavía estoy en forma para pelear..."
+      },
+      {
+        "title": "0 PV",
+        "text": "Lo siento... Ahora depende de ti..."
+      },
+      {
+        "title": "Ánimo del equipo 1",
+        "text": "Hiciste un movimiento impecable."
+      },
+      {
+        "title": "Ánimo del equipo 2",
+        "text": "Estamos en perfecta sincronía."
+      },
+      {
+        "title": "Respuesta al ánimo 1",
+        "text": "Me halagas."
+      },
+      {
+        "title": "Respuesta al ánimo 2",
+        "text": "Nuestro trabajo en equipo sigue mejorando."
+      },
+      {
+        "title": "Comienza el combate 1",
+        "text": "Hora de pelear."
+      },
+      {
+        "title": "Comienza el combate 2",
+        "text": "Estoy contigo."
+      },
+      {
+        "title": "Victoria en el combate 1",
+        "text": "Dimos otro paso adelante, Endfielders."
+      },
+      {
+        "title": "Victoria en el combate 2",
+        "text": "Buen trabajo, equipo."
+      },
+      {
+        "title": "Victoria en el combate 3",
+        "text": "¡Manejamos bien esa batalla!"
+      },
+      {
+        "title": "Victoria en el combate 4",
+        "text": "¿Todos bien?"
+      },
+      {
+        "title": "Derrota en el combate",
+        "text": "No hay de qué preocuparse. Vamos a reagruparnos y solucionar esto."
+      },
+      {
+        "title": "Golpe final 1",
+        "text": "¡Toma esto!"
+      },
+      {
+        "title": "Golpe final 2",
+        "text": "¡Miren esto!"
+      },
+      {
+        "title": "Habilidad de batalla 1",
+        "text": "¡Al ataque!"
+      },
+      {
+        "title": "Habilidad de batalla 2",
+        "text": "¡Tritúrenlos!"
+      },
+      {
+        "title": "Habilidad de batalla 3",
+        "text": "¡Elimínenlos!"
+      },
+      {
+        "title": "Habilidad de combo preparada 1",
+        "text": "Lista para atacar."
+      },
+      {
+        "title": "Habilidad de combo preparada 2",
+        "text": "Confía en mí."
+      },
+      {
+        "title": "Lanzando combo 1",
+        "text": "¡Cristalización!"
+      },
+      {
+        "title": "Lanzando combo 2",
+        "text": "¡Enfrenta tu final!"
+      },
+      {
+        "title": "Remate 1",
+        "text": "¡Esto se acaba aquí!"
+      },
+      {
+        "title": "Remate 2",
+        "text": "¡Te atrapé!"
+      },
+      {
+        "title": "Habilidad máxima 1",
+        "text": "Sin segundas oportunidades."
+      },
+      {
+        "title": "Habilidad máxima 2",
+        "text": "Tu final te espera."
+      },
+      {
+        "title": "Habilidad máxima 3",
+        "text": "El show terminó."
+      }
+    ]
   },
   "potentials": {
     "potential1": {

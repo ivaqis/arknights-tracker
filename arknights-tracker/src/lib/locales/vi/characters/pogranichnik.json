@@ -137,7 +137,337 @@
         "name": "Rèn Luyện Tư Duy",
         "description": "Rèn Luyện Tư Duy: Bậc Thầy Cờ Vua\n\"Đây chẳng còn là một ván cờ nữa, mà giống như một trận chiến giành giật đến cùng\".— Mọi cán viên từng đấu cờ với Pogranichnik đều cảm thấy điều đó thật đúng với trải nghiệm của họ."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Chuẩn Bị Tác Chiến 1",
+        "text": "Đã vào vị trí, sẵn sàng đợi lệnh."
+      },
+      {
+        "title": "Chuẩn Bị Tác Chiến 2",
+        "text": "Sẵn sàng dỡ trại ngay khi có chỉ thị."
+      },
+      {
+        "title": "Đang thêm vào đội 1",
+        "text": "Một người lính sinh ra để chiến đấu."
+      },
+      {
+        "title": "Đang thêm vào đội 2",
+        "text": "Sống sót chưa bao giờ là miễn phí. Chúng ta luôn phải trả giá."
+      },
+      {
+        "title": "Đang đổi vũ khí",
+        "text": "Phải học cách điều khiển bạo lực, không vì thiện hay ác mà vì sinh tồn."
+      },
+      {
+        "title": "Đang đổi trang bị",
+        "text": "Đối với sĩ quan hậu cần, trang bị đầy đủ là bước đầu tiên để giành chiến thắng."
+      },
+      {
+        "title": "Kích hoạt Ma Trận Năng Lực",
+        "text": "Sự lơ là và bất cẩn là mối đe dọa chí mạng trên chiến trường."
+      },
+      {
+        "title": "Xem Hồ Sơ Chiến Đấu",
+        "text": "Một trận chiến có giá trị... Tinh thần chiến đấu của tôi đang sục sôi."
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 1",
+        "text": "Không cần huân chương hay nghi lễ. Tôi hoàn toàn hiểu ý nghĩa của việc này... Cảm ơn sự tín nhiệm của ngài, Endministrator của Tập Đoàn Endfield."
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 2",
+        "text": "Nếu điều này xảy ra ở pháo đài của Hội Lời Thề Thép, tối nay tôi hẳn phải làm chủ buổi tiệc."
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 3",
+        "text": "Dù là trên chiến trường hay bất cứ đâu, đây là một vinh dự. Cảm ơn sự tín nhiệm của ngài, Endministrator. Tôi sẽ chứng minh rằng niềm tin này là xứng đáng bằng hành động nơi tiền tuyến."
+      },
+      {
+        "title": "Thăng Bậc Cán Viên 4",
+        "text": "Chiến tranh trên Talos-II vẫn luôn khốc liệt. Vô số người đã tiến về phương Bắc, chiến đấu và ngã xuống để phần còn lại của thế giới được sống. Endmin, tôi tin rằng hành động của ngài sẽ đặt dấu chấm hết cho vòng lặp tàn khốc này."
+      },
+      {
+        "title": "Cán Viên đang báo cáo nhiệm vụ",
+        "text": "Pogranichnik, cán viên Rhodes Island và sĩ quan thuộc Hội Lời Thề Thép báo cáo. Tình hình cấp bách. Tôi kính mong ngài cung cấp nhanh kế hoạch tác chiến trong thời gian sớm nhất."
+      },
+      {
+        "title": "Chờ Lệnh 1",
+        "text": "Chúng ta cùng rà soát lại kế hoạch chiến đấu chứ?"
+      },
+      {
+        "title": "Chờ Lệnh 2",
+        "text": "Một chút lơ đễnh cũng có thể định đoạt sự sống và cái chết nơi chiến trường."
+      },
+      {
+        "title": "Phân Công Vào Công Trình",
+        "text": "Tôi chưa từng làm dạng công việc này... Nhưng xét về mặt chiến lược có thể đáng để thử."
+      },
+      {
+        "title": "Lời Chào 1",
+        "text": "Xin chào, Endministrator. Ngài lại đến kiểm tra hiện trường sao?"
+      },
+      {
+        "title": "Lời Chào 2",
+        "text": "Kính chào ngài, Endministrator."
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 1",
+        "text": "Dijiang rộng hơn tôi tưởng nhưng tôi gần như không cần làm quen toàn bộ bố cục bên trong. Tất cả là nhờ thiết kế tinh tế và hoàn hảo của người tạo ra nó. Đây là một khởi đầu tuyệt vời cho một giấc mơ lớn, Endmin, tôi háo hức chờ xem giấc mơ ấy sẽ tiếp diễn thế nào."
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 2",
+        "text": "Khu Phức Hợp Công Nghiệp Tự Động vượt xa sức tưởng tượng của tôi. Với Lõi Tự Động Hóa Giao Thức, chuỗi máy móc quân sự-công nghiệp của Terra cuối cùng đã có một trái tim mạnh mẽ, đảm bảo việc cung ứng tài nguyên ổn định đến mọi nơi nguy cấp trên hành tinh. Ngài sẽ cứu sống vô số sinh mệnh, Endmin. Tôi xin hứa điều đó với tất cả lòng thành."
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 3",
+        "text": "Kỹ Sư Kho Vũ Khí của Endfield thật đáng kinh ngạc. Họ hoàn thành bảo trì vũ khí cho toàn bộ nhân sự dù lịch trình gấp gáp... Hiệu suất như thế này rất hiếm, kể cả tại Mặt Trận Phương Bắc. Tôi không ngờ người đứng đầu Kho Vũ khí của ngài lại còn trẻ như vậy."
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 4",
+        "text": "Tôi đã xem qua chương trình luyện tập của huấn luyện viên Nhóc Dodge dành cho ngài. Nội dung rất thực tiễn với độ khó hợp lý. Tôi không định thay đổi gì, chỉ thêm một vài thử thách nhỏ dựa trên kinh nghiệm cá nhân... Nhưng tôi tin điều đó sẽ không gây trở ngại cho ngài, Endministrator."
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 5",
+        "text": "Trước khi ngài tỉnh, tôi đã không tham gia hoạt động của Endfield nhiều năm. Đối với tôi, phục vụ cho Rhodes Island, Endfield hay Hội Lời Thề Thép không có gì khác biệt. Tôi chỉ muốn bảo vệ những gì tôi tin là xứng đáng. Lần này, tôi sẽ tiến về phía trước và không chùn bước."
+      },
+      {
+        "title": "Trò Chuyện Nhàn Rỗi Dijiang 6",
+        "text": "Mỗi khi nhìn ra Talos-II tôi đều thấy cảm hứng dâng trào. Những đàn quái vật khổng lồ từng có thể nuốt chửng cả hành tinh, giờ bị dồn nén vào những lò luyện ở phương Bắc. Với thân xác máu thịt, những người lính là bức tường kiên cố chắn giữ chân kẻ thù. Đó là một trong những chiến công vĩ đại nhất của Hội Lời Thề Thép, chứng minh rằng chúng tôi xứng đáng gánh vác sứ mệnh duy trì nền văn minh."
+      },
+      {
+        "title": "Tặng Quà",
+        "text": "Tôi tình cờ tìm thấy vật này ở phương Bắc... Có thể sẽ hữu ích với ngài, Endministrator."
+      },
+      {
+        "title": "Nhận quà",
+        "text": "Cảm ơn món quà của ngài, Endministrator. Tôi xem đó như một sự tuyên dương. Xin hãy nhận vật nhỏ bé này như lời cảm tạ."
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 1",
+        "text": "Sau khi rời Rhodes Island, tôi đã đến thăm Tàu Mẹ Công Nghiệp của Công Đoàn. Không rõ vì lý do gì tôi lại muốn tận mắt chứng kiến kết quả mà một chương lịch sử đã để lại trên vùng đất này. Khi nhìn thấy thành phố kiên cường ấy, lòng tôi thực sự xúc động. Nếu con cháu Ursus có thể gác lại quá khứ, bắt đầu lại từ đầu và giành lấy vinh quang cùng danh dự của riêng mình, thì tôi, Khorsyn, không còn lý do gì để do dự nữa."
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 2",
+        "text": "Cuộc sống quân ngũ với Hội Lời Thề Thép đã dạy tôi ba điều: Thứ nhất, hãy tin tưởng đồng đội; Thứ hai, đừng dễ dàng thoái lui; Thứ ba, không phó mặc vận may. Ở phương Bắc, vi phạm bất kỳ nguyên tắc nào trong số đó cũng có thể đem đến tai họa cho chính bản thân hoặc cho đồng đội."
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 3",
+        "text": "Trong thời gian ở cùng Hội Lời Thề Thép, tôi đã tái tổ chức và huấn luyện đội Lính Khiên. Ý tưởng ấy nảy ra vào đêm trước khi tôi đến pháo đài Hội Lời Thề Thép. Những công trình đồ sộ hiện lên giữa rặng núi. Myrkwood của Sami trải dài trong bóng tối, như những ngọn lửa xanh sẫm len lỏi bên bờ sông. Hàng nghìn bia mộ xếp thẳng hàng, tạo thành một bức tường chắn kẻ thù phương Bắc. Hội Lời Thề Thép là tấm khiên bảo vệ Vành Đai Văn Minh, và tôi đã rèn nên một tấm khiên khác cho họ. Tôi tin rằng những binh sĩ này sẽ không bao giờ gục ngã."
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 4",
+        "text": "Hellagur giống một người thầy, một người bạn hơn. Tôi hiểu được những ân hận và day dứt của ông và đã học được rất nhiều từ suy nghĩ lẫn kỹ năng của ông. Giờ đây, không còn Tướng Quân Ursus Hellagur nữa, mà chỉ còn Khorsyn của Rhodes Island và Endfield. Có lúc tôi cảm thấy biết ơn vì không có quá khứ đè nặng trên vai. Nhưng cũng có lúc... tôi cảm thấy cô độc đến nhức nhối. Nếu điều tôi đang bảo vệ cuối cùng chỉ là một lý tưởng trống rỗng, thì nó cũng không khác gì ánh hào quang của Đế quốc Ursus. Endministrator, tôi hy vọng... ngài sẽ là người cho tôi câu trả lời."
+      },
+      {
+        "title": "Đối Thoại Tín Nhiệm 5",
+        "text": "Endmin, tôi tầm nhìn của ngài sẽ thành hiện thực. Mọi người ở Rhodes Island có thể trở lại với cuộc sống yên bình và hạnh phúc đời thường; Hội Lời Thề Thép có thể rèn gươm thành lưỡi cày và sum họp bên người thân yêu; sự sống có thể bén rễ sâu vào hành tinh cổ xưa này. Tôi mong được cùng ngài và bằng hữu của ngài ăn mừng chiến thắng. Ngay cả khi đối mặt với thất bại tàn khốc, tôi cầu mong ngài sẽ sống sót bằng mọi giá. Bởi nếu ngài làm được, thì mọi việc tôi đã làm đều xứng đáng."
+      },
+      {
+        "title": "Trò Chuyện 1",
+        "text": "Tân binh của Đội Tác Chiến Z7 thật sự xuất sắc. Dù chỉ được huấn luyện quân sự cơ bản, họ đã phát triển nhận thức chiến đấu ngang tầm với binh lính tiêu chuẩn. Thành tựu ấy hiếm có và xứng đáng được ghi nhận."
+      },
+      {
+        "title": "Trò Chuyện 2",
+        "text": "Tôi từng làm đủ mọi công việc ở phương Bắc. Ngoài vai trò chỉ huy, tôi còn kiêm nhiệm sĩ quan hậu cần và huấn luyện viên. Tôi đã rèn vũ khí, vắt sữa giống Tê Giác Bướu mới, thậm chí còn ủ rượu nho..."
+      },
+      {
+        "title": "Trò Chuyện 3",
+        "text": "Danh dự của một người lính là gì? E rằng ngay cả tôi cũng không thể đưa ra định nghĩa cụ thể. Nhưng nếu ngài có dịp đến pháo đài của Hội Lời Thề Thép, mong ngài hãy viếng thăm đài tưởng niệm của chúng tôi... Mỗi cái tên được khắc trên bia đá ấy từng mang trong mình một câu trả lời."
+      },
+      {
+        "title": "Trò Chuyện 4",
+        "text": "Đại Thủ Quỹ quản lý một kho tàng di sản khổng lồ. Chúng không chỉ chứa những cổ vật Hội Lời Thề Thép mà còn các công nghệ Terra hiện không thể khôi phục, cùng những hiện vật kỳ bí của Tiền Nhân. Tôi từng được trao quyền chọn một cổ vật để sử dụng, nhưng tôi đã từ chối. Tôi từng dựa vào hào quang của truyền thuyết. Phần đời còn lại, tôi muốn để lại một huyền thoại của chính mình."
+      },
+      {
+        "title": "Trò Chuyện 5",
+        "text": "Phần lớn thời gian, Hội Lời Thề Thép chiến đấu với Aggeloi, Ankhor và các thảm họa từ hoạt động của Ætherside. Cũng có những lúc hiếm hoi chúng tôi chạm trán hiện tượng khó lý giải: dấu vết của sinh vật khổng lồ, lời khai về những cá thể kỳ lạ... Đó là lý do tôi lập tức yêu cầu trở về Endfield khi nghe tin Endmin đã tỉnh lại."
+      },
+      {
+        "title": "Chủ đề: Hội Lời Thề Thép",
+        "text": "Phương Bắc thực ra rất khác với tưởng tượng của nhiều người. Sau một thế kỷ phát triển, các pháo đài Hội Lời Thề Thép đã trở thành trung tâm thương mại và giải trí sầm uất. Người dân đã quen với chiến tranh và tạo nên một lối sống sinh động đến bất ngờ. Ngoài pháo đài, tộc Samifjod đã lập các khu định cư trong Myrkwood để lưu giữ tri thức và văn hóa cổ. Các đoàn lữ hành của họ thường xuyên qua lại giữa rừng và thành trì. Endmin, ngài nên đến phương Bắc một lần. Đó là một nơi đẹp đẽ, tôi sẽ hân hạnh đồng hành nếu ngài mong muốn."
+      },
+      {
+        "title": "Chủ đề: Công Đoàn",
+        "text": "Tàu Mẹ Công Nghiệp, thành phố lớn nhất của Công Đoàn, nay mang nhiều cái tên khác nhau. Nhưng tôi biết khi còn ở Terra, tên của nó là Simonch. Nó từng chìm dưới lòng hồ bởi ách thống trị của Đế quốc Ursus. Tôi vẫn không rõ tại sao Đế quốc lại trục vớt nó rồi tái thiết thành một lãnh địa ngoài hành tinh. Dù thế nào, giờ đây nó là thành du mục lớn nhất Talos-II và là biểu tượng tinh thần với nhiều người."
+      },
+      {
+        "title": "Chủ đề: Lính Khiên",
+        "text": "Khi tôi chọn lựa những Lính Khiên đầu tiên, họ là những tân binh còn trẻ hơn tôi. Nhiệm vụ đầu tiên của tôi là tước bỏ sự hiếu chiến của họ, bởi họ là người bảo vệ, không phải kẻ tấn công. Tiếp đó, tôi truyền dạy toàn bộ chiến thuật tôi biết để họ không chỉ phòng ngự mà trở thành tiền tuyến sống. Cuối cùng, tôi bảo đảm họ thuần thục kỹ năng sinh tồn... Dù vậy, ở khía cạnh đó, tôi vẫn luôn cảm thấy chưa đủ. Hy sinh không bao giờ là mục tiêu. Đó chỉ là lựa chọn cuối cùng để tránh thêm những hy sinh khác."
+      },
+      {
+        "title": "Chủ đề: Ember",
+        "text": "Tôi từng nghe về Cô Ember, một chiến binh phi thường. Nhiệm vụ của cô ấy ở phương Nam không chỉ là tái lập đội hình đơn vị. Chỉ huy của cô ấy muốn trao cho cô một cơ hội để sống cuộc đời bình thường. Tôi tin ngài đã nhận ra điều đó, Endmin. Tiếc thay, cô ấy khó mà hiểu được ý nghĩa của lòng nhân hậu này. Một người lính có thể giảng hòa với quá khứ sẽ không bao giờ đi xa đến vậy."
+      },
+      {
+        "title": "Chủ đề: Samifjod",
+        "text": "Trái với lời đồn, người Samifjod không hề bài ngoại. Quả thật, họ đã sống hơn một thế kỷ dưới bóng bảo hộ còn sót lại của bởi Đức Cha. Nhưng họ vẫn luôn rộng lượng giúp đỡ những lữ khách tôn trọng truyền thống của Sami. Người Cyclops từng tặng Răng Sami cho người Seš'qa để cung cấp năng lượng cho pháo đài bay. Các Tư Tế Tuyết cũng sẵn lòng chia sẻ thuật pháp của họ với Hội Lời Thề Thép. Rõ ràng người Samifjod đã tìm ra cách của riêng mình để hòa nhập với cuộc sống mới trên Talos-II mà không đánh mất cội nguồn."
+      },
+      {
+        "title": "Phát hiện Tài Nguyên/Có Thể Thu Thập 1",
+        "text": "Biết đâu sẽ thấy cái này có ích."
+      },
+      {
+        "title": "Phát hiện Tài Nguyên/Có Thể Thu Thập 2",
+        "text": "Hãy để mắt đến khu vực kia nếu không muốn bỏ lỡ những vật phẩm thiết yếu."
+      },
+      {
+        "title": "Phát Hiện Khu Vực Chưa Khám Phá",
+        "text": "Duy trì đội hình, đặc biệt là ở những vùng chưa có người đặt chân."
+      },
+      {
+        "title": "Phát hiện Kẻ Địch Mạnh",
+        "text": "Hãy cảnh giác, kẻ địch nơi đó rất mạnh."
+      },
+      {
+        "title": "Khai thác 1",
+        "text": "Dù mục đích là tấn công hay phòng thủ, vật phẩm này đều hoàn hảo khi dùng để chế tác."
+      },
+      {
+        "title": "Khai thác 2",
+        "text": "Khi hợp lực không gì là bất khả thi."
+      },
+      {
+        "title": "Mở Thùng",
+        "text": "Những kho dự trữ chiến lược thế này có thể xoay chuyển cục diện."
+      },
+      {
+        "title": "Nhận Aurylene",
+        "text": "Ý nghĩa chiến lược của nó vượt xa giá trị tác chiến."
+      },
+      {
+        "title": "Xua Tan Nhiễm Khuẩn",
+        "text": "Các yếu tố bất lợi nên được loại bỏ ngay từ giai đoạn đầu chiến tranh."
+      },
+      {
+        "title": "Nghỉ ngơi",
+        "text": "Mọi cơ hội hồi phục đều quan trọng. Có thể đó là cơ hội duy nhất để chuẩn bị cho trận đánh tiếp theo."
+      },
+      {
+        "title": "Sử Dụng Vật Phẩm Chiến Thuật 1",
+        "text": "Cố gắng lên. Không cần vội."
+      },
+      {
+        "title": "Sử Dụng Vật Phẩm Chiến Thuật 2",
+        "text": "Đó là một sai sót."
+      },
+      {
+        "title": "Cảnh Báo Nguy Hiểm",
+        "text": "Toàn đơn vị! Đang đến!"
+      },
+      {
+        "title": "Bị Thương",
+        "text": "Chưa đến mức phải tuyệt vọng."
+      },
+      {
+        "title": "0 HP",
+        "text": "Đây không thể... là nơi kết thúc của tôi..."
+      },
+      {
+        "title": "Cổ Vũ Đội 1",
+        "text": "Một chiến lược sáng suốt."
+      },
+      {
+        "title": "Cổ Vũ Đội 2",
+        "text": "Một hành động chuẩn mực."
+      },
+      {
+        "title": "Đáp Lại Lời Cổ Vũ 1",
+        "text": "Quá khen rồi."
+      },
+      {
+        "title": "Đáp Lại Lời Cổ Vũ 2",
+        "text": "Ta đã chứng minh được sức mạnh của sự đoàn kết."
+      },
+      {
+        "title": "Bắt Đầu Chiến Đấu 1",
+        "text": "Chiến tranh chưa từng xót thương kẻ nào."
+      },
+      {
+        "title": "Bắt Đầu Chiến Đấu 2",
+        "text": "Giao chiến."
+      },
+      {
+        "title": "Thắng Trận 1",
+        "text": "Kế hoạch của chúng ta rất hiệu quả."
+      },
+      {
+        "title": "Thắng Trận 2",
+        "text": "Kết quả đã nói lên tất cả."
+      },
+      {
+        "title": "Thắng Trận 3",
+        "text": "Xứng đáng để ăn mừng."
+      },
+      {
+        "title": "Thắng Trận 4",
+        "text": "Mọi chiến thắng đều có cái giá của nó... Hãy trân quý những gì đã học, nhưng cũng đừng quên cái giá đã phải trả."
+      },
+      {
+        "title": "Bại Trận",
+        "text": "Đừng vì thất bại mà nản lòng. Hãy tiếp nhận và biến nó thành động lực để vươn cao hơn nữa."
+      },
+      {
+        "title": "Đòn Dứt Điểm 1",
+        "text": "Tránh ra!"
+      },
+      {
+        "title": "Đòn Dứt Điểm 2",
+        "text": "Thật đáng thương!"
+      },
+      {
+        "title": "KN Chiến Đấu 1",
+        "text": "Đừng thách thức định mệnh!"
+      },
+      {
+        "title": "KN Chiến Đấu 2",
+        "text": "Đừng sợ hãi!"
+      },
+      {
+        "title": "KN Chiến Đấu 3",
+        "text": "Đừng thoái lui!"
+      },
+      {
+        "title": "Chuẩn Bị KN Liên Hoàn 1",
+        "text": "Theo lệnh ngài."
+      },
+      {
+        "title": "Chuẩn Bị KN Liên Hoàn 2",
+        "text": "Chúng là của tôi."
+      },
+      {
+        "title": "Thi Triển Liên Hoàn 1",
+        "text": "Trăng khuyết!"
+      },
+      {
+        "title": "Thi Triển Liên Hoàn 2",
+        "text": "Bán nguyệt!"
+      },
+      {
+        "title": "Thi Triển Liên Hoàn 3",
+        "text": "Trăng tròn!"
+      },
+      {
+        "title": "Kết Liễu 1",
+        "text": "Yên nghỉ trong tĩnh lặng."
+      },
+      {
+        "title": "Kết Liễu 2",
+        "text": "Cái chết đón chờ."
+      },
+      {
+        "title": "Tuyệt Kỹ 1",
+        "text": "THEO LỆNH TÔI!"
+      },
+      {
+        "title": "Tuyệt Kỹ 2",
+        "text": "Binh sĩ, XUẤT KÍCH!"
+      },
+      {
+        "title": "Tuyệt Kỹ 3",
+        "text": "Lính Khiên! VÀO ĐỘI HÌNH!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

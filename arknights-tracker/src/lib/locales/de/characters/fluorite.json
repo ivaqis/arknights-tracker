@@ -122,7 +122,329 @@
         "name": "Kreatives",
         "description": "Kreatives: „Geschenke“-Herstellung\nWenn Fluorite so still ist, lässt ein Streich für gewöhnlich nicht lang auf sich warten. Leider ist Fluorite sehr oft still."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Einsatzvorbereitung 1",
+        "text": "Oh, sind wir bereit für etwas Spaß?"
+      },
+      {
+        "title": "Einsatzvorbereitung 2",
+        "text": "Moment mal, was ist, wenn jemand noch nicht bereit dafür ist?"
+      },
+      {
+        "title": "Wird zum Team hinzugefügt 1",
+        "text": "Frieden und gute Laune, Leute."
+      },
+      {
+        "title": "Wird zum Team hinzugefügt 2",
+        "text": "Wow, sieht so aus, als wäre ich ein guter Fang."
+      },
+      {
+        "title": "Waffe wird gewechselt",
+        "text": "Nicht schlecht … Kann ich das ein bisschen anpassen?"
+      },
+      {
+        "title": "Ausrüstung wird gewechselt",
+        "text": "Je schicker die Ausrüstung, desto größer der Aufwand, oder?"
+      },
+      {
+        "title": "Fähigkeitsmatrix wird aktiviert",
+        "text": "Will niemand mit mir trainieren? Echt schade."
+      },
+      {
+        "title": "Kampfaufzeichnungen ansehen",
+        "text": "So viele Kampfberichte … Endfield macht dem Namen „Industries“ wirklich alle Ehre."
+      },
+      {
+        "title": "Operator-Beförderung 1",
+        "text": "Die richtige Arbeit fängt jetzt erst an, was?"
+      },
+      {
+        "title": "Operator-Beförderung 2",
+        "text": "Ich fühle mich wirklich geehrt … Aber das bedeutet wohl auch, dass ich noch mehr Zeit mit Missionen verbringen muss, oder?"
+      },
+      {
+        "title": "Operator-Beförderung 3",
+        "text": "Vielleicht könntest du beim nächsten Mal noch eine Medaille dazulegen. Ich habe noch nie eine bekommen."
+      },
+      {
+        "title": "Operator-Beförderung 4",
+        "text": "Wenn der Rand des Zivilisationsgürtels Teil der „besseren Welt“ sein soll, die wir aufbauen wollen, dann haben wir noch eine Menge zu tun, oder?"
+      },
+      {
+        "title": "Operator meldet sich zum Dienst",
+        "text": "Scharmützler aus Team Z7, Fluorite. Hast du etwas zu sagen? Nein? Dann lassen wir es für heute gut sein, okay?"
+      },
+      {
+        "title": "Warten 1",
+        "text": "Wem kann ich heute etwas Pech bescheren?"
+      },
+      {
+        "title": "Warten 2",
+        "text": "Sie ablenken? Sie außer Gefecht setzen? Oder … Einfach vernichten?"
+      },
+      {
+        "title": "Zuweisung zur Anlage",
+        "text": "Keine Sorge, ich erledige das schon."
+      },
+      {
+        "title": "Gruß 1",
+        "text": "Viel los heute, du Held?"
+      },
+      {
+        "title": "Gruß 2",
+        "text": "Wann hast du dich das letzte Mal richtig ausgeruht?"
+      },
+      {
+        "title": "Dijiang-Geplauder 1",
+        "text": "Na so was! Das ist ja mal was Neues. Keine Aufgaben für mich heute?"
+      },
+      {
+        "title": "Dijiang-Geplauder 2",
+        "text": "Ist Akekuri gerade mit einem Grinsen im Gesicht … und einem Schwert in der Hand in den Trainingsraum spaziert? Ich glaube, ich halte mich lieber noch eine Weile von ihr fern …"
+      },
+      {
+        "title": "Dijiang-Geplauder 3",
+        "text": "Als ich zum ersten Mal eine Schusswaffe in die Hand nahm, wusste ich nicht einmal, wie man das Magazin öffnet. Aber als eine Horde Typen auf mich losstürmte, hatte ich keine Wahl … Ehrlich gesagt ist dieses Training ein Kinderspiel im Vergleich zum Chaos im Grenzgebiet."
+      },
+      {
+        "title": "Dijiang-Geplauder 4",
+        "text": "Hätten wir Glück gehabt und wären im selben Team gelandet, hätten wir für doppelt so viel Ärger gesorgt. Aber ich werde sie schon im Zaum halten."
+      },
+      {
+        "title": "Dijiang-Geplauder 5",
+        "text": "Als wir Kinder waren, haben wir den ganzen Tag auf den Monsterbestien geschlafen und uns gesonnt, damit wir keinen Hunger bekamen … Ich beschwere mich nicht über die Vorteile, ich finde nur, dass es schade wäre, in dieser Höhe keine Sonne zu tanken."
+      },
+      {
+        "title": "Dijiang-Geplauder 6",
+        "text": "Du bist wie Aufseherin Perlica: Man kann dich einfach nicht hassen. Die hohen Tiere im Grenzgebiet hängen an ihrem Status und ihrem Stolz. Aber wenn wir ganz ehrlich sind, werden die Leute einem echten Anführer folgen – mit oder ohne all diesen Kram."
+      },
+      {
+        "title": "Geschenke anbieten",
+        "text": "Hier ist ein kleines Gadget für dich. Keine Sorge, da springt dir nix entgegen."
+      },
+      {
+        "title": "Geschenke annehmen",
+        "text": "Hmm, ein „Kollege“ von mir hat einmal ein Geschenk angenommen und dafür später büßen müssen … Warum schüttelst du so heftig den Kopf?"
+      },
+      {
+        "title": "Vertrauensgespräch 1",
+        "text": "Verhandlungstalent? Ach, komm schon, schmier diesen Straßenjungs doch keinen Honig ums Maul. Die bellen zwar laut, aber sobald ihr Boss mit der Futterschüssel wedelt, kommen sie sofort zurück. Sie sind nicht anderes als Werkzeuge – rückgrat- und planlos. Klar, sie verursachen Chaos, aber wer ist wirklich schuld? Sie sind es, die die Macht und die Ressourcen haben und den Rest von uns ausnehmen."
+      },
+      {
+        "title": "Vertrauensgespräch 2",
+        "text": "Bevor ich eurer Gruppe beitrat, war ich in Schwierigkeiten geraten. Akekuri hat mich gerettet. Ihr Hilfstrupp war gerade dabei, die Stadt zu retten und die Landbrecher zu vertreiben. Und die Einheimischen? Die starrten wie die Geier auf Endfields Vorräte … Also, sag mir, was hättest du gemacht?"
+      },
+      {
+        "title": "Vertrauensgespräch 3",
+        "text": "Ich habe sechs Onkel, acht Tanten und 22 Geschwister … Ja, wir sind echt wie die Cautus. Wir waren nicht alle miteinander verwandt, sondern lediglich Leute, die mit mir und meiner Mutter geflohen sind. Einige kamen später hinzu, andere sind irgendwann verschwunden. Aber wir sind zusammengeblieben, auch wenn es nur für kurze Zeit war. Das war Familie genug für mich."
+      },
+      {
+        "title": "Vertrauensgespräch 4",
+        "text": "Manche Leute vergessen, dass wir vier Gliedmaßen haben und uns nicht nur mit zwei fortbewegen können. Wenn du lange genug gekrümmt dasitzt, siehst du irgendwann nicht mehr wie ein Mensch aus. An der Grenze gibt es jede Menge solcher Leute. Wenn du aber den Mut hast, aufzublicken, hast du vielleicht eine Chance auf etwas Besseres."
+      },
+      {
+        "title": "Vertrauensgespräch 5",
+        "text": "Hier, nimm diesen Brief. Verbrenne ihn in der Wildnis, falls ich nicht zurückkomme. Du kannst ihn lesen, wenn du willst. Es sind nur ein paar Kleinigkeiten. Der Empfänger ist nicht mehr. Ich schätze, es liegt jetzt an mir, die Antworten zu finden, nach denen er gesucht hat. Der große Held von Talos-II wird mir bestimmt helfen, oder?"
+      },
+      {
+        "title": "Geplauder 1",
+        "text": "Das ist eine meiner Lieblingsbomben. Du musst nur die Klebefläche ein bisschen verstellen, dann explodiert sie genau da, wo du willst. Mach dir keine Gedanken über die Sprengkraft. Sie ist viel besser darin, das Ziel aufzuhalten, als einfach nur Sachen in die Luft zu jagen."
+      },
+      {
+        "title": "Geplauder 2",
+        "text": "Nachdem Aufseherin Perlica meine Akte durchgesehen hatte, gab sie mir den Decknamen „Fluorite“. „Fluorit“ ist ein Mineral, das zwar giftig ist, sich aber perfekt für die Herstellung aller möglichen Industrieprodukte eignet. Nachdem ich das Buch überflogen habe, verstehe ich, was sie gemeint hat. Aber mal ehrlich? Das ist eine ziemlich freche Namenswahl."
+      },
+      {
+        "title": "Geplauder 3",
+        "text": "Als ich klein war, waren meine Mutter und ich ständig auf Achse. Irgendwann musste ich dann allein im Grenzgebiet zurechtkommen. An manchen Orten bekamen wir Getreide als Ration, an anderen mussten wir die unterschiedlichsten erfundenen Gebühren entrichten. Überall fühlte ich mich ein bisschen zu Hause, aber nirgendwo so richtig. Die Siedlungen in der Wildnis hielten nie lange und der Begriff „Zuhause“ hatte für mich nie eine echte Bedeutung."
+      },
+      {
+        "title": "Geplauder 4",
+        "text": "Die Wildnis war schon immer von Schönheit geprägt. Die von der Verderbnis vertriebenen Tiere verschwinden nie wirklich, sondern ändern nur jedes Jahr ihre Wege. Sobald sich die Verderbnis zurückzieht, wächst das Gras wieder nach. Die Natur hat ihren eigenen Rhythmus und ihre eigenen Grenzen … Manchmal frage ich mich, ob wir wirklich Teil dieses Gleichgewichts sind."
+      },
+      {
+        "title": "Geplauder 5",
+        "text": "In den Sümpfen, in denen ich gelebt habe, sind es immer die Vollstrecker, die die Menschen am härtesten drangsalieren. Sie wissen, wie zerbrechlich alles ist – ein Funke Chaos genügt, und der ganze Ort könnte zusammenbrechen. Also schaffen sie ein verdrehtes Gleichgewicht, indem sie die Einheimischen als Geiseln halten. Solange du ihnen nicht nah genug bist, um sie an der Kehle zu ergreifen, wird sich nie etwas ändern."
+      },
+      {
+        "title": "Thema: Akekuri",
+        "text": "Rate mal: Wer hat wohl die Ohren in den Beweismittelbeutel gesteckt? Sogar unsere gutherzige Hauptfrau wusste, dass es auf Talos-II keine bessere Wahl gab. Man sah ihr an, dass sie den Tränen nah war, aber sie konnte sich doch zusammenreißen. Einfach reizend."
+      },
+      {
+        "title": "Thema: Catcher",
+        "text": "Er sieht vielleicht so aus, als würde er es genießen, aber sei nicht zu streng mit ihm. Meistens haben diejenigen, die super vorbereitet sind, am meisten Angst, etwas zu vermasseln. Niemand ist perfekt … Was? Ich soll aufhören, ihn um Gefallen zu bitten? Pfft! Warum sollte ich? Keine Sorge, er wird es schaffen, auch wenn er Angst hat. Das tut er immer."
+      },
+      {
+        "title": "Thema: Estella",
+        "text": "Fass Estellas Playlist bloß nicht an und lass sie sich nicht in echte Gefahr begeben. Du denkst, sie hat alles im Griff? Guter Witz! Halt lieber schon mal einen Mopp bereit."
+      },
+      {
+        "title": "Thema: Antal",
+        "text": "Selbst in der Hitze des Gefechts bleibt die große Echse eiskalt – ihr ist wahrscheinlich gar nicht bewusst, dass sie in Gefahr ist. Das treibt den Hauptmann in den Wahnsinn … Aber so ist er nun mal. Er und ich? Hmm … Wir kommen super miteinander klar … Solange er nicht vergisst, dass man nicht auf meinen Schweif starren darf."
+      },
+      {
+        "title": "Ressource/Sammelobjekt entdeckt 1",
+        "text": "Ich hab was Cooles gefunden, kann ich das alles mitnehmen?"
+      },
+      {
+        "title": "Ressource/Sammelobjekt entdeckt 2",
+        "text": "Hast du das da drüben gesehen? Ach, vergiss es. Vergiss, dass ich etwas gesagt habe."
+      },
+      {
+        "title": "Unerforschter Bereich entdeckt",
+        "text": "Ich habe einen schönen Platz gefunden. Hmm … Das sieht nach Spaß aus."
+      },
+      {
+        "title": "Starker Gegner entdeckt",
+        "text": "Hey Leute, wir haben einen neuen Spielkameraden."
+      },
+      {
+        "title": "Abbau 1",
+        "text": "Ah, das gute alte Heimwerken! Genau wie in alten Zeiten."
+      },
+      {
+        "title": "Abbau 2",
+        "text": "*gähn* Ich komme ja schon. Gott, seid ihr alle fleißig."
+      },
+      {
+        "title": "Kiste öffnen",
+        "text": "Wow, was für ein Fund. Und kein Namensschild? Hmm …"
+      },
+      {
+        "title": "Aurylen erhalten",
+        "text": "So ein Ding hatte ich schon mal … Was danach passiert ist, war nicht so toll."
+      },
+      {
+        "title": "Eliminierung der Verderbnis",
+        "text": "Hätte ich doch nur damals die Verderbnis ausgerottet …"
+      },
+      {
+        "title": "Ausruhen",
+        "text": "Endlich Zeit, um die Bombenvorräte aufzustocken."
+      },
+      {
+        "title": "Taktische Nutzung 1",
+        "text": "Siehst du? Ich wusste doch, dass das nützlich sein würde."
+      },
+      {
+        "title": "Taktische Nutzung 2",
+        "text": "Das war einfach Pech. Noch eine Runde."
+      },
+      {
+        "title": "Gefahrenwarnung",
+        "text": "Vorsicht, lass dich nicht treffen."
+      },
+      {
+        "title": "Verletzt",
+        "text": "… Ich bin ausgerutscht."
+      },
+      {
+        "title": "0 LP",
+        "text": "Das hätte ich … abwehren müssen."
+      },
+      {
+        "title": "Teammotivation 1",
+        "text": "Das war ja mal was."
+      },
+      {
+        "title": "Teammotivation 2",
+        "text": "Nicht schlecht. Schade, dass niemand da war, um das zu filmen."
+      },
+      {
+        "title": "Motivationsreaktion 1",
+        "text": "Nette Worte, aber spar dir die Mühe."
+      },
+      {
+        "title": "Motivationsreaktion 2",
+        "text": "Na ja, wir sind schließlich ein Elite-Team."
+      },
+      {
+        "title": "Kampf beginnt 1",
+        "text": "Zurück zu meinem alten Job, was?"
+      },
+      {
+        "title": "Kampf beginnt 2",
+        "text": "Wir sind voll dabei! Drückt uns die Daumen für einen Bonus."
+      },
+      {
+        "title": "Kampfsieg 1",
+        "text": "Gut, ein Problem weniger."
+      },
+      {
+        "title": "Kampfsieg 2",
+        "text": "Tja, Chance vertan."
+      },
+      {
+        "title": "Kampfsieg 3",
+        "text": "Jaja. Ohne dich hätten wir das echt nicht geschafft."
+      },
+      {
+        "title": "Kampfsieg 4",
+        "text": "Hm. Nicht schlecht, aber das geht noch besser."
+      },
+      {
+        "title": "Niederlage im Kampf",
+        "text": "Mit Trübsalblasen kommen wir nicht weiter, aber mit Taten schon. Kommt schon, beim nächsten Mal schaffen wir’s!"
+      },
+      {
+        "title": "Abschlussangriff 1",
+        "text": "*pfeif* Fang!"
+      },
+      {
+        "title": "Abschlussangriff 2",
+        "text": "Aufgepasst!"
+      },
+      {
+        "title": "Kampffertigkeit 1",
+        "text": "Da, bitte."
+      },
+      {
+        "title": "Kampffertigkeit 2",
+        "text": "Ich hoffe, sie gefällt dir!"
+      },
+      {
+        "title": "Kampffertigkeit 3",
+        "text": "Tick tack!"
+      },
+      {
+        "title": "Kombofertigkeit bereit 1",
+        "text": "Ha! Showtime."
+      },
+      {
+        "title": "Kombofertigkeit bereit 2",
+        "text": "Die haben mehr Löcher als ein Schweizer Käse."
+      },
+      {
+        "title": "Kombo wirken 1",
+        "text": "Genieße es."
+      },
+      {
+        "title": "Kombo wirken 2",
+        "text": "Du wirst das hier lieben."
+      },
+      {
+        "title": "Wuchtschlag 1",
+        "text": "Überraschung."
+      },
+      {
+        "title": "Wuchtschlag 2",
+        "text": "Schlafenszeit, mein Süßer."
+      },
+      {
+        "title": "Ultimative Fertigkeit 1",
+        "text": "Dein Leben war lang genug, oder?"
+      },
+      {
+        "title": "Ultimative Fertigkeit 2",
+        "text": "Das wird laut werden."
+      },
+      {
+        "title": "Ultimative Fertigkeit 3",
+        "text": "Die Reise ist zu Ende, Kumpel."
+      }
+    ]
   },
   "potentials": {
     "potential1": {

@@ -118,7 +118,325 @@
         "name": "Créativité",
         "description": "Créativité : modification d'arme\nPour certains, l'amélioration de munitions gravées peut sembler ennuyeuse, mais lui aime tout particulièrement trouver des sujets sur lesquels tester ses balles."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Préparation de l'opération 1",
+        "text": "C'est vous qui commandez."
+      },
+      {
+        "title": "Préparation de l'opération 2",
+        "text": "On part maintenant ?"
+      },
+      {
+        "title": "Intégration à l'équipe 1",
+        "text": "Vous avez besoin de moi dans l'équipe ? J'accepte, mais assurez-vous que les autres suivent le rythme."
+      },
+      {
+        "title": "Intégration à l'équipe 2",
+        "text": "Une affectation de groupe... ? C'est compris. Je ferai ce qu'il faut."
+      },
+      {
+        "title": "Changement d'arme",
+        "text": "Elle est très équilibrée. Grazie."
+      },
+      {
+        "title": "Changement d'équipement",
+        "text": "Armé jusqu'aux dents... Sage décision."
+      },
+      {
+        "title": "Activation de la matrice de capacités",
+        "text": "Ce n'est que dans des situations vraiment désespérées qu'il faut utiliser les compétences que l'on maîtrise parfaitement."
+      },
+      {
+        "title": "Visionnage d'archives de combat",
+        "text": "La Meute chasse avec détermination. Seul le chemin le plus rapide vers la victoire l'intéresse."
+      },
+      {
+        "title": "Promotion d'opérateur 1",
+        "text": "Merci pour votre soutien, Endmin. Alors, puis-je être dispensé de rapport de mission cette fois ? Non... ? D'accord."
+      },
+      {
+        "title": "Promotion d'opérateur 2",
+        "text": "Comme vous le voyez, Endmin... vous me confiez les bonnes missions, et je laisse les résultats parler d'eux-mêmes."
+      },
+      {
+        "title": "Promotion d'opérateur 3",
+        "text": "Les loups gagnent leur place dans la Meute grâce au sang qu'ils ont fait couler. Éliminez assez de proies et vous gravirez les échelons. Endmin, cela signifie-t-il que vous approuvez ma chasse ?"
+      },
+      {
+        "title": "Promotion d'opérateur 4",
+        "text": "J'ai assisté à la chute de la Meute et au chaos qui s'en est suivi. C'est pour ça que j'ai décidé de trouver une nouvelle voie pour Rossi et les autres loups... Le destin nous a réunis, Endministrator. C'est un honneur de suivre cette voie avec vous."
+      },
+      {
+        "title": "Opérateur au rapport",
+        "text": "Catello Wulfgard Luppino, de l'unité d'intervention d'Endfield. Je représente la Meute. Confiez-moi n'importe quelle mission de mercenaire. Tant que notre contrat est en vigueur, je serai vos griffes et vos crocs."
+      },
+      {
+        "title": "En attente 1",
+        "text": "Une nouvelle affectation ?"
+      },
+      {
+        "title": "En attente 2",
+        "text": "Je suis là."
+      },
+      {
+        "title": "Affectation à une installation",
+        "text": "On manque de personnel ici aussi ?"
+      },
+      {
+        "title": "Salutation 1",
+        "text": "Endmin."
+      },
+      {
+        "title": "Salutation 2",
+        "text": "Vous avez besoin de moi, Endmin ? Je peux me libérer pour vous."
+      },
+      {
+        "title": "Bavardage sur le Dijiang 1",
+        "text": "Ce n'est pas facile de travailler avec les autres opérateurs. La voie de la Meute et ma nature solitaire ne plaisent pas à tout le monde. Mais si vous voulez m'intégrer... je m'adapterai et ferai en sorte que tout se passe bien."
+      },
+      {
+        "title": "Bavardage sur le Dijiang 2",
+        "text": "Je me sens plus chez moi dans les Confins qu'à bord du Dijiang. Un endroit aussi confortable, ça ramollit, mais Rossi adore cet endroit. Ce vaisseau satisfait sa curiosité."
+      },
+      {
+        "title": "Bavardage sur le Dijiang 3",
+        "text": "Je vais être franc avec vous. Étudier les autres clans des Brise-Terres ne m'a jamais intéressé. J'ai juste passé pas mal de temps dans les terres sauvages... et c'est tout naturellement que j'ai appris à survivre. Pour la Meute, le meilleur professeur, c'est l'instinct de survie. C'est notre seule croyance."
+      },
+      {
+        "title": "Bavardage sur le Dijiang 4",
+        "text": "Les opérateurs d'Endfield viennent des quatre coins de Talos-II, et je reconnais pas mal de visages familiers... ou devrais-je dire... de menaces familières. Je crois toujours en votre jugement, mais si la situation l'exige, j'espère que vous pourrez vous fier à mon instinct."
+      },
+      {
+        "title": "Bavardage sur le Dijiang 5",
+        "text": "Je vérifie toujours mes armes. Dans la nature, si on perd ses crocs, on est fichu. C'est pareil quand on a une arme défectueuse : toutes nos compétences et notre entraînement ne servent plus à rien. On se retrouve impuissants, sans défense et condamnés à une mort lente. Je l'ai appris quand j'étais jeune. Ça m'a marqué. Je ne serai plus jamais une proie."
+      },
+      {
+        "title": "Bavardage sur le Dijiang 6",
+        "text": "Ça fait un bail que je n'ai pas rendu visite à mon clan ni organisé de chasse avec eux. Je suis bien meilleur pour trouver de nouveaux terrains de chasse que pour mener des incursions en tant qu'Alpharion."
+      },
+      {
+        "title": "Cadeaux offerts",
+        "text": "Vous avez un moment, Endmin ? J'ai trouvé quelque chose d'intéressant lors de ma dernière mission... et je vous l'ai apporté."
+      },
+      {
+        "title": "Cadeaux acceptés",
+        "text": "C'est pour moi ? Grazie. J'en ferai bon usage."
+      },
+      {
+        "title": "Dialogue à cœur ouvert 1",
+        "text": "Je traite déjà mes cibles comme l'exige Endfield. Si je faisais comme avant, elles seraient *très, très* silencieuses dès que je mettrais la main sur elles..."
+      },
+      {
+        "title": "Dialogue à cœur ouvert 2",
+        "text": "J'imagine que vous avez compris que... devenir l'Alpharion de la Meute n'a jamais fait partie de mes objectifs. Rossi serait sans doute plus à même d'assumer ce rôle. Je doute aussi qu'Endfield soit un lieu de repos convenable pour Catello Wulfgard Luppino. La vision des Brise-Terres est diamétralement opposée à la vôtre. Pour autant, travailler avec Endfield est bien plus agréable que je ne l'aurais cru, Endmin."
+      },
+      {
+        "title": "Dialogue à cœur ouvert 3",
+        "text": "Pourquoi est-ce que je regarde sans cesse le ciel ? Eh bien, ça m'amuse. Pourquoi ça vous surprend ? Le ciel est une source d'informations gratuite. Il vous indique la météo, l'heure et votre orientation. Vous pouvez même le consulter pour prédire les actions de l'ennemi. Tous les chasseurs obéissent aux mêmes règles sous le ciel. Vous aussi, vous pourriez apprendre deux ou trois choses à ce sujet, Endmin."
+      },
+      {
+        "title": "Dialogue à cœur ouvert 4",
+        "text": "Mon identité de Brise-Terre découle d'un mauvais choix fait par mes ancêtres. Nous avons trahi la Ceinture civilisée pour rejoindre les seigneurs Brise-Terres, mais nous avons échoué à instaurer l'ordre et la justice dont nous rêvions. Je ne peux pas demander à mes ancêtres s'ils regrettent leur choix, mais comme je suis né dans un monde marqué par les conflits et les massacres dans les terres sauvages, je sais mieux que quiconque ce qu'est la survie. La superviseuse Perlica a affirmé que nous pouvions nous débarrasser de cette réputation de Brise-Terre en collaborant avec Endfield... pourtant, cette identité fait partie de moi. *Soupir* Ça vous déçoit, Endmin ?"
+      },
+      {
+        "title": "Dialogue à cœur ouvert 5",
+        "text": "La Meute est fondée sur une logique simple : les faibles doivent s'unir pour vaincre les plus forts et survivre dans ce monde sans pitié. Toutes les règles du clan et l'identité même des Brise-Terres reposent sur ce principe. Mais quelle est l'identité d'Endfield ? Une grande vision peut être à double tranchant. Alors que la Meute peut toujours repartir à la chasse, Endfield ne peut se permettre le moindre échec. Ce monde est sans pitié, Endministrator. Mais au moins, je fais partie de votre chasse, et je partagerai votre fardeau."
+      },
+      {
+        "title": "Discussion 1",
+        "text": "La force ne fait pas tout, j'en suis bien conscient, mais sur Talos-II, elle est indispensable pour survivre."
+      },
+      {
+        "title": "Discussion 2",
+        "text": "Rossi adore collectionner les objets complexes comme ceux-là. Je ne sais pas à quoi ils servent, mais si c'est pour elle... j'irai lui en chercher d'autres."
+      },
+      {
+        "title": "Discussion 3",
+        "text": "Une vision idéaliste déconnectée de la réalité détruit plus de vies qu'elle n'en sauve. Dans les Confins, la plupart l'apprennent à leurs dépens. Ce qui est vraiment tragique, c'est que certaines personnes sont prédestinées à faire partie des victimes."
+      },
+      {
+        "title": "Discussion 4",
+        "text": "Je préfère régler les problèmes moi-même. Non pas que je m'estime à même de tout régler, mais j'espère simplement soulager les autres."
+      },
+      {
+        "title": "Discussion 5",
+        "text": "Difficile de forcer un loup solitaire à abandonner son ancienne meute... Ça, c'est évident. Mais certains ont décidé de ne plus revenir, pour survivre ou pour ce qui leur tient à cœur... J'ai du mal à les comprendre, mais je ne les juge pas. Je reconnais juste la détermination derrière leurs choix."
+      },
+      {
+        "title": "Thème : la Meute",
+        "text": "À ce jour, je cherche encore à définir l'avenir de la Meute... Travailler pour Endfield n'est peut-être pas la meilleure solution, mais selon moi, c'est une étape importante et essentielle. Je sais bien qu'aucun étranger ne changera la mentalité de la Meute, mais il nous faut une occasion de commencer à changer. J'essaie de trouver un moyen de présenter cette « occasion » à la Meute."
+      },
+      {
+        "title": "Thème : Rossi",
+        "text": "Je devrais passer plus de temps avec Rossi, mais quand je la regarde maintenant... je m'étonne de voir à quel point elle a grandi. Elle partage le souffle de la nature sauvage et puise facilement dans le sang de la Meute. Que ce soit la maîtrise des armes, l'activation des Arts ou la chasse... tout lui venait naturellement. Ce n'est plus un petit bébé sans défense enveloppé dans des couvertures imbibées de sang. Non, c'est Wulfperl della famiglia Luppino. Je suis les crocs de la Meute, mais Rossi en sera toujours son cœur et son âme."
+      },
+      {
+        "title": "Thème : les Brise-Terres",
+        "text": "Les clans des Brise-Terres sont plus compliqués qu'on ne le pense. Mis à part les Broyeurs d'os et la Meute, il y a aussi les Pille-Sable, un clan étrange et mal organisé qui s'est fait un nom grâce à un seul bergantin. Ensuite, il y a les Balafrés, qui se tatouent des Versets de lien sur le corps... Et puis les Ombres-crânes, un groupe d'assassins sans pitié que nul n'ose croiser après le coucher du soleil. Ces petits clans ont survécu dans les terres sauvages, c'est donc tout à fait normal qu'ils connaissent de petites astuces pour rester en vie."
+      },
+      {
+        "title": "Détection de ressource/objet à collecter 1",
+        "text": "On peut récupérer quelque chose là-bas."
+      },
+      {
+        "title": "Détection de ressource/objet à collecter 2",
+        "text": "Butin spécial en vue. On devrait le prendre."
+      },
+      {
+        "title": "Zone inexplorée détectée",
+        "text": "On n'y est pas encore allés. Mieux vaut l'ajouter à notre liste."
+      },
+      {
+        "title": "Découverte d'un ennemi puissant",
+        "text": "Ça sent l'embrouille. Ce n'est pas un ennemi comme les autres."
+      },
+      {
+        "title": "Extraction 1",
+        "text": "J'espère que leur valeur est à la hauteur de nos efforts."
+      },
+      {
+        "title": "Extraction 2",
+        "text": "Je devrais peut-être m'en occuper... Non, finissons-en ensemble."
+      },
+      {
+        "title": "Ouverture de caisse",
+        "text": "Quel butin incroyable ! La chasse était fructueuse."
+      },
+      {
+        "title": "Obtention d'aurylène",
+        "text": "De l'aurylène... J'imagine que c'est précieux pour Endfield."
+      },
+      {
+        "title": "Élimination de la Gangrène",
+        "text": "Vous avez bien fait. La Gangrène ne fait que nuire à notre opération."
+      },
+      {
+        "title": "Repos",
+        "text": "Contrôle des munitions terminé. Place à la prochaine chasse."
+      },
+      {
+        "title": "Utilisation de tactique 1",
+        "text": "Attention. N'en fais pas trop."
+      },
+      {
+        "title": "Utilisation de tactique 2",
+        "text": "... J'ai repris mon souffle."
+      },
+      {
+        "title": "Avertissement de danger",
+        "text": "Esquive !"
+      },
+      {
+        "title": "Blessure",
+        "text": "C'est sur le combat qu'il faut se concentrer, pas sur moi."
+      },
+      {
+        "title": "0 PV",
+        "text": "Argh... Évacuation médic..."
+      },
+      {
+        "title": "Encouragement de l'équipe 1",
+        "text": "Jolis coups."
+      },
+      {
+        "title": "Encouragement de l'équipe 2",
+        "text": "Beau travail d'équipe."
+      },
+      {
+        "title": "Réaction face aux encouragements 1",
+        "text": "J'aurais pu faire mieux."
+      },
+      {
+        "title": "Réaction face aux encouragements 2",
+        "text": "Je ne fais que ce qui est nécessaire."
+      },
+      {
+        "title": "Début du combat 1",
+        "text": "Je guette la moindre ouverture."
+      },
+      {
+        "title": "Début du combat 2",
+        "text": "Ne vous occupez pas de moi. Je vais suivre votre rythme."
+      },
+      {
+        "title": "Victoire au combat 1",
+        "text": "Je n'en attendais pas moins."
+      },
+      {
+        "title": "Victoire au combat 2",
+        "text": "Exactement comme je l'avais prévu."
+      },
+      {
+        "title": "Victoire au combat 3",
+        "text": "On a gagné. C'est tout ce qui compte."
+      },
+      {
+        "title": "Victoire au combat 4",
+        "text": "C'était plus dur que je le pensais... mais nous sommes victorieux. C'est tout ce qui compte."
+      },
+      {
+        "title": "Défaite au combat",
+        "text": "Le chasseur peut parfois devenir la proie... Je propose qu'on reparte en chasse."
+      },
+      {
+        "title": "Coup final 1",
+        "text": "La ferme !"
+      },
+      {
+        "title": "Coup final 2",
+        "text": "Tu ne m'échapperas pas !"
+      },
+      {
+        "title": "Compétence de combat 1",
+        "text": "Ce sera rapide !"
+      },
+      {
+        "title": "Compétence de combat 2",
+        "text": "Le sang de la Meute !"
+      },
+      {
+        "title": "Compétence de combat 3",
+        "text": "Dégage de là !"
+      },
+      {
+        "title": "Compétence de combo prête 1",
+        "text": "Prêt à faire feu."
+      },
+      {
+        "title": "Compétence de combo prête 2",
+        "text": "À mon tour."
+      },
+      {
+        "title": "Utilisation de combo 1",
+        "text": "Je m'en occupe."
+      },
+      {
+        "title": "Utilisation de combo 2",
+        "text": "Recule !"
+      },
+      {
+        "title": "Coup fatal 1",
+        "text": "Ferme-la."
+      },
+      {
+        "title": "Coup fatal 2",
+        "text": "Tu vas tomber !"
+      },
+      {
+        "title": "Ultime 1",
+        "text": "Personne ne survivra !"
+      },
+      {
+        "title": "Ultime 2",
+        "text": "Vise la jugulaire !"
+      },
+      {
+        "title": "Ultime 3",
+        "text": "Festoyons, mes loups !"
+      }
+    ]
   },
   "potentials": {
     "potential1": {

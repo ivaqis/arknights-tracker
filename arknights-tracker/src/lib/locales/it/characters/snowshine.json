@@ -123,7 +123,325 @@
         "name": "Beneficenza",
         "description": "Beneficenza: altruista nata\nPer Snowshine, aiutare ogni tanto le persone a sbrigare commissioni e faccende è diventata una sorta di abitudine."
       }
-    }
+    },
+    "voiceLines": [
+      {
+        "title": "Preparazione all'operazione 1",
+        "text": "Attendo i tuoi ordini, Endministrator."
+      },
+      {
+        "title": "Preparazione all'operazione 2",
+        "text": "Endmin! Sei qui!"
+      },
+      {
+        "title": "Aggiunta alla squadra 1",
+        "text": "Una nuova missione sul campo? Sono prontissima!"
+      },
+      {
+        "title": "Aggiunta alla squadra 2",
+        "text": "Proteggerò tutti!"
+      },
+      {
+        "title": "Cambio arma",
+        "text": "Che arma magnifica! Ed è anche utilizzabile in ambienti estremi!"
+      },
+      {
+        "title": "Cambio equipaggiamento",
+        "text": "Chi l'ha costruita ci ha davvero ragionato a fondo."
+      },
+      {
+        "title": "Attivazione matrice delle abilità",
+        "text": "Mi sono allenata duramente! Bisogna essere pronti a ogni sorta di emergenza!"
+      },
+      {
+        "title": "Visione delle registrazioni di combattimenti",
+        "text": "Questi registri sono un riferimento prezioso! Sono una fonte di idee per le future operazioni di soccorso!"
+      },
+      {
+        "title": "Promozione operatore 1",
+        "text": "Mmh! Il duro lavoro ripaga sempre! Non deluderò la Endfield né nessun altro!"
+      },
+      {
+        "title": "Promozione operatore 2",
+        "text": "Questo significa che ho un'autonomia operativa maggiore, vero? Non temere! Conta pure su di me per soccorsi di emergenza, campionamento di dati, supporto logistico e ogni altro tipo di lavoro sul campo!"
+      },
+      {
+        "title": "Promozione operatore 3",
+        "text": "Stavolta ho potenziato tutte le mie unità delle Arti di soccorso che producono ghiaccio! Guarda, Endmin! Ho appena costruito un igloo temporaneo! Vieni, facciamo un pigiama party!"
+      },
+      {
+        "title": "Promozione operatore 4",
+        "text": "Il mio periodo alla Endfield mi ha insegnato tante cose nuove e mi ha regalato tanti magnifici ricordi... Grazie per aver riposto la tua fiducia in me, Endmin. D'ora in poi continuerò a scalare montagne sempre più alte... e salvare quante più persone posso."
+      },
+      {
+        "title": "Operatore a rapporto",
+        "text": "Salve! Sono un'operatrice della Rhodes Island, il mio nome in codice è Snowshine. Sono un'esperta di ricerca e soccorso, specializzata in operazioni a basse temperature. Inseriscimi nella tua squadra, se devi effettuare missioni nei campi di ghiaccio o sulle cime innevate."
+      },
+      {
+        "title": "Attesa 1",
+        "text": "Vuoi venire a fare snowboard con me, Endmin?"
+      },
+      {
+        "title": "Attesa 2",
+        "text": "La velocità del vento va bene; la visibilità è buona. Condizioni meteo perfette per fare snowboard!"
+      },
+      {
+        "title": "Assegnazione a una struttura",
+        "text": "Nessun problema! Ho svolto ogni tipo di incarico in questo posto! Sempre più facile che erigere fortificazioni!"
+      },
+      {
+        "title": "Saluto 1",
+        "text": "Salve, Endmin."
+      },
+      {
+        "title": "Saluto 2",
+        "text": "Hai bisogno di una mano, Endmin? Potrei essere la tua egida!"
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 1",
+        "text": "Imparo un sacco di cose nuove ogni volta che metto piede sulla Dijiang: ospita tecnologie e macchinari che non ho mai visto prima, teorie di combattimento speciali, piani di monitoraggio solidi... Riesco a malapena a stare al passo! La Endfield è fantastica! Dico sul serio!"
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 2",
+        "text": "Cosa? La mensa della Dijiang ha un bar all-you-can-eat?! Oh, chiedo scusa. Ero solo un po' sorpresa... No, certo che no! Non mangerò mica tutto! Dico davvero!"
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 3",
+        "text": "Endmin! Arrivi al momento giusto! Il mio pacco è appena arrivato e mi chiedevo se ti interessasse provare la fonduta di formaggio! Che gusto ha? Penso sia piuttosto... speciale? Tanti dei miei colleghi mi hanno detto che è \"un'esperienza unica e indimenticabile\"..."
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 4",
+        "text": "Uff! Lo stretching rende più flessibili le articolazioni. Questo esercizio aiuta a prevenire gli strappi muscolari e a tenere a bada l'ipotermia negli ambienti polari. Vuoi provare? Non preoccuparti, ho fatto l'assistente allenatrice nelle sessioni di addestramento, posso correggere la tua postura! Visto? Facile, no?"
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 5",
+        "text": "Ogni volta che vedo Lil' Dodge, mi ricorda il nostro capitano. Anche lui è un Perro. È una brava persona... Ma quando inizia una missione di soccorso, diventa severo tutto a un tratto. Ci fa persino ripetere più volte i controlli di calibrazione sulla trivella dell'acqua calda... \"Ogni minimo dettaglio è importante per una squadra di soccorso!\" Questo l'ho imparato da lui."
+      },
+      {
+        "title": "Chiacchiere sulla Dijiang 6",
+        "text": "La luce riflessa sulle nuvole di Talos-II sa essere meravigliosa. Mi ricorda l'aurora che conosco... e le visioni che ho nei sogni. Spesso, la vedo quando mi trovo sui monti più alti delle cime innevate del Nord. So che la luce è una forma pericolosa di energia dell'Æther, ma vederla è come incontrare una vecchia amica che mi osserva... e mi protegge da lontano..."
+      },
+      {
+        "title": "Offerta regali",
+        "text": "Endmin, accetta questo pensierino. Te l'ho portato dai campi innevati."
+      },
+      {
+        "title": "Accettazione regali",
+        "text": "È per me? Oh, grazie! È così caldo al tatto... Ne farò tesoro!"
+      },
+      {
+        "title": "Dialogo fiducia 1",
+        "text": "Guarda, Endmin! Ho usato le mie Arti di Originium per creare questa barriera di ghiaccio! È molto resistente, vero? Non preoccuparti! Colpiscila pure con più vigore, non le farai un graffio!"
+      },
+      {
+        "title": "Dialogo fiducia 2",
+        "text": "Hai riposato un po', Endmin? Ti vedo sempre correre da una parte all'altra senza mai fare una pausa... Mmh, dovresti trovare un equilibrio tra vita e lavoro. Ricordi l'ultimo allenamento della squadra di soccorso? Sono rimasta sorpresa quando ti ho portato in spalla: pesi meno di un cucciolo di bestia da soma!"
+      },
+      {
+        "title": "Dialogo fiducia 3",
+        "text": "Non tutte le operazioni di ricerca e soccorso si rivelano un successo... A volte, i cambiamenti improvvisi del meteo o del terreno sono più rapidi di quanto ci si aspetti. Per questo ricontrollo sempre il mio equipaggiamento, prima di partire in missione. Droni, videocamere termiche... tutte le attrezzature sono un ausilio importante per ogni operatore della squadra di soccorso. Sono il motivo per cui possiamo mettere in atto con sicurezza anche i piani di soccorso più audaci."
+      },
+      {
+        "title": "Dialogo fiducia 4",
+        "text": "Una volta ho salvato un padre e sua figlia da una valanga... Probabilmente avevano litigato e si ignoravano di proposito, anche una volta entrati nel rifugio temporaneo che avevo costruito. Ma quando la bufera soffiava più forte, il padre metteva sempre da parte del cibo per la ragazza e lei faceva del suo meglio per prendersi cura del vecchio... Alla fine sono stati portati in salvo, ma anche allora si rifiutavano di parlarsi. Quell'episodio mi ha fatto riflettere sul significato di un legame di parentela. Anche se non si trovano le parole giuste, una famiglia si supporta sempre a vicenda nei momenti cruciali..."
+      },
+      {
+        "title": "Dialogo fiducia 5",
+        "text": "Salvare vite non è un compito facile. Non ho mai pensato di poter salvare tutti senza fare sacrifici. Sono l'unica rimasta dei miei compagni della squadra di soccorso. I disastri della Contaminazione hanno procurato ad alcuni di noi delle disabilità invalidanti; altri hanno perduto il senno nelle gelide notti nevose... Ci sono stati momenti di confusione e momenti in cui ho percepito il morso della paura. Ma voi Endfielder siete fantastici e fortissimi! Sono convinta che tutti noi riusciremo a migliorare e raggiungere i nostri obiettivi grazie al tuo sostegno, Endmin!"
+      },
+      {
+        "title": "Chiacchierata 1",
+        "text": "Vuoi sapere di questo snowboard? È un regalo che mi ha fatto Lady Warfarin quando ho lasciato la Rhodes Island. La tavola è costruita con materiali rari, come il mio scudo. Ed è molto versatile nelle missioni della squadra di soccorso! Mmh... Endmin, ti interessa andare in snowboard? Ti faccio volentieri da insegnante!"
+      },
+      {
+        "title": "Chiacchierata 2",
+        "text": "L'organizzazione delle operazioni di ricerca e soccorso è di competenza dell'Unione di soccorso del Corridoio del Nord. Le nostre missioni spesso riguardano messaggeri che lavorano al Nord, mercanti itineranti e ricognitori militari che hanno smarrito la strada dopo aver subito un'imboscata da parte di Aggeloi o bestie varie. I miei compagni della squadra di soccorso vengono da tutte le parti del mondo e quasi tutti sono volontari. Le operazioni di soccorso erano una battaglia costante contro ghiaccio, neve e terreni accidentati, ma mi hanno dato la possibilità di incontrare persone di ogni sorta."
+      },
+      {
+        "title": "Chiacchierata 3",
+        "text": "Poco tempo fa un operatore mi ha chiesto come fare per unirsi a una squadra di soccorso. Non è difficile, dico davvero! Basta allenarsi costantemente a scalare montagne, sopportare ore di operazioni di salvataggio senza pause, padroneggiare alcune abilità di sopravvivenza polare, imparare a evitare gli Ankhor e le bestie più grandi, e terminare il corso di addestramento completo di primo soccorso... almeno fino al livello in cui sai occuparti di un'Oripatia improvvisa! Infine, supera la speciale prova sul campo ideata dal nostro capitano e diventerai un membro ufficiale della squadra di soccorso!"
+      },
+      {
+        "title": "Chiacchierata 4",
+        "text": "A me piacciono la neve, le montagne ricoperte di bianco e la bellezza luccicante che splende solo nel freddo glaciale... Per questo non voglio che siano fonte di ricordi dolorosi. Quando la gente vede le cime innevate, dovrebbe subito immaginare il panorama mozzafiato che si ammira dall'alto. E quando cade la neve, spero che pensi ai cristalli immacolati e alle infiorescenze di ghiaccio... *Sospira* Sarebbe molto triste se l'unica cosa a cui pensassero tutti fosse la catastrofe. Endmin, io continuerò a impegnarmi per raggiungere questi miei obiettivi."
+      },
+      {
+        "title": "Chiacchierata 5",
+        "text": "Mi stavi cercando ieri, Endmin? Non me ne sono accorta, scusa. Stavo facendo un pisolino per recuperare il sonno perduto. Sì, dormire era la prima cosa che facevo quando rientravo da una missione di soccorso... E a volte mi capitava di... dormire un po' troppo a lungo. Ma se c'è un'emergenza, non esitare a svegliarmi! Il suono della tua voce mi farà scattare in piedi ed essere pronta in men che non si dica, Endmin!"
+      },
+      {
+        "title": "Argomento: addestramento delle squadre di soccorso",
+        "text": "Certo! L'addestramento delle squadre di soccorso è importantissimo! Quando si verificano disastri naturali, come una valanga, le persone possono rifugiarsi velocemente in luoghi sicuri e solidi... E questo aumenta notevolmente le loro probabilità di sopravvivere! Ma ciò accade solo quando le persone sono preparate adeguatamente per affrontare un disastro... Perciò, Endmin, parteciperai alla prossima sessione di addestramento della squadra di soccorso, vero?"
+      },
+      {
+        "title": "Argomento: Gilberta",
+        "text": "Anche la signorina Gilberta si trova a bordo della Dijiang? Oh, è solo che ha dato anima e corpo per aiutarci in varie missioni di soccorso. Ha consegnato risorse essenziali, aviotrasportato feriti e ha persino lanciato un segnale SOS a mezz'aria durante una terribile bufera! La squadra di soccorso ha cercato di farle un regalo in segno di riconoscenza, ma lei ha rifiutato qualsiasi cosa. Alla fine, ha chiesto qualche foto del bel panorama dalle cime innevate. Che ne pensi di questa? Ho costruito la cornice con le mie mani!"
+      },
+      {
+        "title": "Argomento: sopravvivenza polare",
+        "text": "Sopravvivere nelle zone polari non è semplice... Come minimo, è necessario saper allestire un campeggio adeguato per evitare l'ipotermia durante le bufere notturne, trovare cibo edibile nei campi di ghiaccio contaminati, individuare appoggi resistenti per attraversare i ghiacciai... e, cosa più importante, creare un passaggio sicuro verso l'obiettivo. Ciò significa che devi imparare a evitare Aggeloi, bestie affamate e altri pericoli nelle zone disastrate."
+      },
+      {
+        "title": "Individuazione risorsa/collezionabile 1",
+        "text": "Dovremmo raccogliere queste risorse! Potrebbero tornarci utili per le operazioni di soccorso."
+      },
+      {
+        "title": "Individuazione risorsa/collezionabile 2",
+        "text": "Ha l'aria di essere una scoperta fantastica. Magari ci sarà utile per operazioni future!"
+      },
+      {
+        "title": "Individuazione zona non esplorata",
+        "text": "I nostri droni non hanno ancora analizzato quest'area. Dobbiamo stare all'erta!"
+      },
+      {
+        "title": "Individuazione nemico potente",
+        "text": "Facciamo attenzione! Quel nemico sembra molto pericoloso!"
+      },
+      {
+        "title": "Estrazione 1",
+        "text": "Minerali di alta qualità. Potremmo usarli per costruire rifugi temporanei..."
+      },
+      {
+        "title": "Estrazione 2",
+        "text": "Occupiamocene insieme. Faremo più in fretta."
+      },
+      {
+        "title": "Apertura di una cassa",
+        "text": "Aggiungiamolo alla nostra scorta di emergenza!"
+      },
+      {
+        "title": "Acquisizione di Aurylene",
+        "text": "Questo è Aurylene? Che bello... Dobbiamo conservarlo con cura!"
+      },
+      {
+        "title": "Eliminazione Contaminazione",
+        "text": "Eliminazione riuscita! Controllate se la vostra protezione dalla Contaminazione ha subito danni!"
+      },
+      {
+        "title": "Riposo",
+        "text": "Ti va del formaggio? È ottimo per recuperare vigore!"
+      },
+      {
+        "title": "Utilizzo di gadget 1",
+        "text": "Cura di emergenza somministrata!"
+      },
+      {
+        "title": "Utilizzo di gadget 2",
+        "text": "Mi dispiace! Fammi riprendere fiato!"
+      },
+      {
+        "title": "Avviso di pericolo",
+        "text": "Non facciamoci colpire!"
+      },
+      {
+        "title": "Ferita",
+        "text": "Sto bene. Posso resistere..."
+      },
+      {
+        "title": "Esaurimento PS",
+        "text": "Mi dispiace... Non ho superato la tempesta..."
+      },
+      {
+        "title": "Incoraggiamento alla squadra 1",
+        "text": "Splendido lavoro di squadra!"
+      },
+      {
+        "title": "Incoraggiamento alla squadra 2",
+        "text": "Fantastico lavoro!"
+      },
+      {
+        "title": "Risposta all'incoraggiamento 1",
+        "text": "Continuiamo così!"
+      },
+      {
+        "title": "Risposta all'incoraggiamento 2",
+        "text": "Grazie per il supporto!"
+      },
+      {
+        "title": "Inizio combattimento 1",
+        "text": "Libero la strada per i soccorsi!"
+      },
+      {
+        "title": "Inizio combattimento 2",
+        "text": "Sì! Congeliamoli!"
+      },
+      {
+        "title": "Vittoria in combattimento 1",
+        "text": "Uff, la battaglia è finita. Prendiamoci una pausa, per quanto possibile."
+      },
+      {
+        "title": "Vittoria in combattimento 2",
+        "text": "Stanno tutti dando il massimo. Anche io devo farmi avanti!"
+      },
+      {
+        "title": "Vittoria in combattimento 3",
+        "text": "Ottimo lavoro di squadra!"
+      },
+      {
+        "title": "Vittoria in combattimento 4",
+        "text": "Non lasciamoci abbattere. Resistiamo alla tempesta e avanziamo verso l'obiettivo! Risparmiamo le forze e raggiungeremo sani e salvi la zona sicura!"
+      },
+      {
+        "title": "Sconfitta in combattimento",
+        "text": "Non arrendiamoci! Attrezziamoci e prepariamoci! Poi ci riproviamo!"
+      },
+      {
+        "title": "Colpo finale 1",
+        "text": "Fendente gelido!"
+      },
+      {
+        "title": "Colpo finale 2",
+        "text": "Geluragano!"
+      },
+      {
+        "title": "Abilità di combattimento 1",
+        "text": "Indietro!"
+      },
+      {
+        "title": "Abilità di combattimento 2",
+        "text": "Di qua non si passa!"
+      },
+      {
+        "title": "Abilità di combattimento 3",
+        "text": "Protezione di Snowshine!"
+      },
+      {
+        "title": "Abilità combo pronta 1",
+        "text": "Pronta all'azione!"
+      },
+      {
+        "title": "Abilità combo pronta 2",
+        "text": "Pronta al salvataggio!"
+      },
+      {
+        "title": "Esecuzione combo 1",
+        "text": "Respira con me!"
+      },
+      {
+        "title": "Esecuzione combo 2",
+        "text": "Sono arrivati i soccorsi!"
+      },
+      {
+        "title": "Mossa letale 1",
+        "text": "Levati di mezzo!"
+      },
+      {
+        "title": "Mossa letale 2",
+        "text": "Ti annienterò!"
+      },
+      {
+        "title": "Abilità suprema 1",
+        "text": "Tempesta di ghiaccio!"
+      },
+      {
+        "title": "Abilità suprema 2",
+        "text": "Scudo di ghiaccio!"
+      },
+      {
+        "title": "Abilità suprema 3",
+        "text": "Ghiaccio e neve! Congelamento!"
+      }
+    ]
   },
   "potentials": {
     "potential1": {
