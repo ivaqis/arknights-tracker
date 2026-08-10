@@ -3,6 +3,7 @@ import { Table } from "@database/tables/Table.js";
 import { Prisma, PrismaClient } from "@generated/prisma-v2/index.js";
 
 export class UserBannerProfilesTable extends Table<Prisma.UserBannerProfileDelegate> {
+    public static readonly SPECIAL_PROFILE_ID = "special_banner_profile_stat";
 
     public constructor(prisma: PrismaClient) {
         super(prisma, prisma.userBannerProfile);

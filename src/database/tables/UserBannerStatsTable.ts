@@ -2,6 +2,7 @@ import { GlobalBannerStatsEntity } from "@database/entities/GlobalBannerStatsEnt
 import { UserBannerTypeStatEntity } from "@database/entities/UserBannerTypeStatEntity.js";
 import { UserBannerStatRecord } from "@database/records/UserBannerStatRecord.js";
 import { Table } from "@database/tables/Table.js";
+import { UserBannerProfilesTable } from "@database/tables/UserBannerProfilesTable.js";
 import { Prisma, PrismaClient } from "@generated/prisma-v2/index.js";
 import { DbBannerType } from "@models/banners/DbBannerType.js";
 import { IncludeRange } from "@models/IncludeRange.js";
@@ -102,6 +103,23 @@ export class UserBannerStatsTable extends Table<Prisma.UserBannerStatDelegate> {
         return entities.map(entity => new UserBannerStatRecord(entity));
     }
 
+    public async findSpecialProfileBannerStats(bannerId: string): Promise<UserBannerStatRecord | null> {
+        const entity = await this.table.findFirst({
+            where: {
+                bannerId,
+                bannerProfile: {
+                    publicId: UserBannerProfilesTable.SPECIAL_PROFILE_ID
+                }
+            }
+        });
+
+        if (!entity) {
+            return null;
+        }
+
+        return new UserBannerStatRecord(entity);
+    }
+
     public async getGlobalBannerStats(bannerId: string): Promise<GlobalBannerStatsEntity> {
         const entity = await this.table.aggregate({
             where: {
@@ -113,7 +131,12 @@ export class UserBannerStatsTable extends Table<Prisma.UserBannerStatDelegate> {
                     {
                         freePulls: { gt: 0 }
                     }
-                ]
+                ],
+                bannerProfile: {
+                    publicId: {
+                        not: UserBannerProfilesTable.SPECIAL_PROFILE_ID
+                    }
+                }
             },
             _count: {
                 profileId: true
@@ -134,84 +157,22 @@ export class UserBannerStatsTable extends Table<Prisma.UserBannerStatDelegate> {
             }
         });
 
+        const specialEntity = await this.findSpecialProfileBannerStats(bannerId);
+
         return {
             bannerId,
             totalUsers: entity._count.profileId,
-            unfreePulls: entity._sum.unfreePulls ?? 0,
-            total6: entity._sum.total6 ?? 0,
-            total5: entity._sum.total5 ?? 0,
-            won5050: entity._sum.won5050 ?? 0,
-            total5050: entity._sum.total5050 ?? 0,
-            freePulls: entity._sum.freePulls ?? 0,
-            free6: entity._sum.free6 ?? 0,
-            free5: entity._sum.free5 ?? 0,
-            freeWin5050: entity._sum.freeWin5050 ?? 0,
+            unfreePulls: (entity._sum.unfreePulls ?? 0) + (specialEntity?.unfreePulls.initValue ?? 0),
+            total6: (entity._sum.total6 ?? 0) + (specialEntity?.total6.initValue ?? 0),
+            total5: (entity._sum.total5 ?? 0) + (specialEntity?.total5.initValue ?? 0),
+            won5050: (entity._sum.won5050 ?? 0) + (specialEntity?.won5050.initValue ?? 0),
+            total5050: (entity._sum.total5050 ?? 0) + (specialEntity?.total5050.initValue ?? 0),
+            freePulls: (entity._sum.freePulls ?? 0) + (specialEntity?.freePulls.initValue ?? 0),
+            free6: (entity._sum.free6 ?? 0) + (specialEntity?.free6.initValue ?? 0),
+            free5: (entity._sum.free5 ?? 0) + (specialEntity?.free5.initValue ?? 0),
+            freeWin5050: (entity._sum.freeWin5050 ?? 0) + (specialEntity?.freeWin5050.initValue ?? 0),
             updatedAt: entity._max.updatedAt ?? new Date()
         };
-    }
-
-    public async countTotalPullsByBannerType(bannerType: string | null, pullsCount: IncludeRange): Promise<number> {
-        const query = Prisma.sql`
-            SELECT count(*)
-            FROM (SELECT S."profileId"
-                  FROM "UserBannerStat" S
-                  WHERE (S."unfreePulls" > 0 OR S."freePulls" > 0)
-                    AND ${bannerType ? Prisma.sql`S."bannerType" = ${bannerType}` : Prisma.sql`TRUE`}
-                  GROUP BY S."profileId"
-                  HAVING ${pullsCount.min !== undefined ? Prisma.sql`sum(S."unfreePulls") + sum(S."freePulls") >= ${pullsCount.min}` : Prisma.sql`TRUE`}
-                     AND ${pullsCount.max !== undefined ? Prisma.sql`sum(S."unfreePulls") + sum(S."freePulls") <= ${pullsCount.max}` : Prisma.sql`TRUE`}) AS groups`;
-
-        const result = await this.prisma.$queryRaw<{ count: bigint }[]>(query);
-
-        return Number(result[0].count);
-    }
-
-    public async countWinRateByBannerType(bannerType: string | null, winRate: IncludeRange): Promise<number> {
-        const query = Prisma.sql`
-            SELECT count(*)
-            FROM (SELECT S."profileId"
-                  FROM "UserBannerStat" S
-                  WHERE S.total5050 > 0
-                    AND ${bannerType ? Prisma.sql`S."bannerType" = ${bannerType}` : Prisma.sql`TRUE`}
-                  GROUP BY S."profileId"
-                  HAVING ${winRate.min !== undefined ? Prisma.sql`1.0 * sum(S.won5050) / sum(S.total5050) >= ${winRate.min}` : Prisma.sql`TRUE`}
-                     AND ${winRate.max !== undefined ? Prisma.sql`1.0 * sum(S.won5050) / sum(S.total5050) <= ${winRate.max}` : Prisma.sql`TRUE`}) AS groups`;
-
-        const result = await this.prisma.$queryRaw<{ count: bigint }[]>(query);
-
-        return Number(result[0].count);
-    }
-
-    public async countLuck6ByBannerType(bannerType: string | null, luckRate: IncludeRange): Promise<number> {
-        const query = Prisma.sql`
-            SELECT count(*)
-            FROM (SELECT S."profileId"
-                  FROM "UserBannerStat" S
-                  WHERE (S."unfreePulls" > 0 OR S."freePulls" > 0)
-                    AND ${bannerType ? Prisma.sql`S."bannerType" = ${bannerType}` : Prisma.sql`TRUE`}
-                  GROUP BY S."profileId"
-                  HAVING ${luckRate.min !== undefined ? Prisma.sql`1.0 * sum(S.total6) / (sum(S."unfreePulls") + sum(S."freePulls")) >= ${luckRate.min}` : Prisma.sql`TRUE`}
-                     AND ${luckRate.max !== undefined ? Prisma.sql`1.0 * sum(S.total6) / (sum(S."unfreePulls") + sum(S."freePulls")) <= ${luckRate.max}` : Prisma.sql`TRUE`}) AS groups`;
-
-        const result = await this.prisma.$queryRaw<{ count: bigint }[]>(query);
-
-        return Number(result[0].count);
-    }
-
-    public async countLuck5ByBannerType(bannerType: string | null, luckRate: IncludeRange): Promise<number> {
-        const query = Prisma.sql`
-            SELECT count(*)
-            FROM (SELECT S."profileId"
-                  FROM "UserBannerStat" S
-                  WHERE (S."unfreePulls" > 0 OR S."freePulls" > 0)
-                    AND ${bannerType ? Prisma.sql`S."bannerType" = ${bannerType}` : Prisma.sql`TRUE`}
-                  GROUP BY S."profileId"
-                  HAVING ${luckRate.min !== undefined ? Prisma.sql`1.0 * sum(S.total5) / (sum(S."unfreePulls") + sum(S."freePulls")) >= ${luckRate.min}` : Prisma.sql`TRUE`}
-                     AND ${luckRate.max !== undefined ? Prisma.sql`1.0 * sum(S.total5) / (sum(S."unfreePulls") + sum(S."freePulls")) <= ${luckRate.max}` : Prisma.sql`TRUE`}) AS groups`;
-
-        const result = await this.prisma.$queryRaw<{ count: bigint }[]>(query);
-
-        return Number(result[0].count);
     }
 
     public async getRatingStats(bannerType: string | null,
@@ -240,8 +201,10 @@ export class UserBannerStatsTable extends Table<Prisma.UserBannerStatDelegate> {
                                        sum(S.total5050)                                                  AS total_5050,
                                        1.0 * sum(S.won5050) / nullif(sum(S.total5050), 0)                AS win_5050_ratio
                                 FROM "UserBannerStat" S
-                                WHERE (S."unfreePulls" > 0 OR S."freePulls" > 0)
+                                         LEFT JOIN "UserBannerProfile" P ON S."profileId" = P."profileId"
+                                WHERE (S."unfreePulls" + S."freePulls" > 0)
                                   AND ${bannerType ? Prisma.sql`S."bannerType" = ${bannerType}` : Prisma.sql`TRUE`}
+                                  AND P."publicId" != ${UserBannerProfilesTable.SPECIAL_PROFILE_ID}
                                 GROUP BY S."profileId")
 
             SELECT count(*)                                                                                         AS total_users,

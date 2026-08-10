@@ -120,22 +120,6 @@ export class UserBannerStatsRepository extends Repository {
         return lastChar > lastWeapon ? lastChar : lastWeapon;
     }
 
-    public async countTotalPullsByBannerType(bannerType: DbBannerType | null, pullsCount: IncludeRange = {}): Promise<number> {
-        return this._userBannerStatsTable.countTotalPullsByBannerType(bannerType, pullsCount);
-    }
-
-    public async countWinRateByBannerType(bannerType: DbBannerType | null, winRate: IncludeRange = {}): Promise<number> {
-        return this._userBannerStatsTable.countWinRateByBannerType(bannerType, winRate);
-    }
-
-    public async countLuck6ByBannerType(bannerType: DbBannerType | null, luckRate: IncludeRange = {}): Promise<number> {
-        return this._userBannerStatsTable.countLuck6ByBannerType(bannerType, luckRate);
-    }
-
-    public async countLuck5ByBannerType(bannerType: DbBannerType | null, luckRate: IncludeRange = {}): Promise<number> {
-        return this._userBannerStatsTable.countLuck5ByBannerType(bannerType, luckRate);
-    }
-
     public async getRatingStats(bannerType: DbBannerType | null,
                                 totalPulls: number,
                                 total6Count: number,
