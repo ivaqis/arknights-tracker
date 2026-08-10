@@ -2,7 +2,7 @@ import { BannerType } from "@models/banners/BannerType.js";
 import { DbBannerType } from "@models/banners/DbBannerType.js";
 import { BannerEntity } from "@staticModels/banners/BannerEntity.js";
 import { BannerItemEntity } from "@staticModels/banners/BannerItemEntity.js";
-import { bannerRecords } from "@staticModels/instances.js";
+import { bannerRecords, legacyBannerIdSet } from "@staticModels/instances.js";
 
 export class Banner {
     private readonly _id: string;
@@ -119,5 +119,9 @@ export class Banner {
         }
 
         return item.rarity === rarity;
+    }
+
+    public isLegacy(): boolean {
+        return legacyBannerIdSet.has(this.id);
     }
 }

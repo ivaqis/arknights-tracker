@@ -9,6 +9,7 @@ import monumentGroups from "@static/monumentGroups.json" with { type: "json" };
 import monumentNames from "@static/monumentNames.json" with { type: "json" };
 import tacticalItemNames from "@static/tacticalItemNames.json" with { type: "json" };
 import weaponNames from "@static/weaponNames.json" with { type: "json" };
+import legacyBannerIds from "@static/legacyBannerIds.json" with { type: "json" };
 import { BannerRecords } from "@staticModels/banners/BannerRecords.js";
 import { BannerTypeRecords } from "@staticModels/bannerTypes/BannerTypeRecords.js";
 import { BannedWords } from "@staticModels/banwords/BannedWords.js";
@@ -19,6 +20,7 @@ import { TextList } from "@staticModels/TextList.js";
 
 export const bannerRecords = new BannerRecords(banners);
 export const bannerTypeRecords = new BannerTypeRecords(bannerTypes);
+export const legacyBannerIdSet: Set<string> = new Set(legacyBannerIds);
 
 export const charNameRecords = new ItemNameRecords(charNames, "CharNameRecords");
 export const weaponNameRecords = new ItemNameRecords(weaponNames, "WeaponNameRecords");
