@@ -11,10 +11,12 @@ export class UserBannerProfilesTable extends Table<Prisma.UserBannerProfileDeleg
 
     public async find(profileId: bigint): Promise<UserBannerProfileRecord | null> {
         const entity = await this.table.findUnique({
-            where: { profileId }
+            where: {
+                profileId,
+            }
         });
 
-        if (!entity) {
+        if (!entity || entity.publicId === UserBannerProfilesTable.SPECIAL_PROFILE_ID) {
             return null;
         }
 
@@ -22,6 +24,10 @@ export class UserBannerProfilesTable extends Table<Prisma.UserBannerProfileDeleg
     }
 
     public async findByPublicId(publicId: string): Promise<UserBannerProfileRecord | null> {
+        if (publicId === UserBannerProfilesTable.SPECIAL_PROFILE_ID) {
+            return null;
+        }
+
         const entity = await this.table.findUnique({
             where: {
                 publicId
@@ -42,7 +48,7 @@ export class UserBannerProfilesTable extends Table<Prisma.UserBannerProfileDeleg
             }
         });
 
-        if (!entity) {
+        if (!entity || entity.publicId === UserBannerProfilesTable.SPECIAL_PROFILE_ID) {
             return null;
         }
 
@@ -50,6 +56,10 @@ export class UserBannerProfilesTable extends Table<Prisma.UserBannerProfileDeleg
     }
 
     public async update(record: UserBannerProfileRecord): Promise<void> {
+        if (record.publicId === UserBannerProfilesTable.SPECIAL_PROFILE_ID) {
+            throw new Error("Unable to update special banner profile");
+        }
+
         await this.table.update({
             where: {
                 profileId: record.profileId
