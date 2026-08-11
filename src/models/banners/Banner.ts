@@ -1,5 +1,6 @@
 import { BannerType } from "@models/banners/BannerType.js";
 import { DbBannerType } from "@models/banners/DbBannerType.js";
+import { GlobalBannerDataType } from "@models/globalBannerStats/GlobalBannerDataType.js";
 import { BannerEntity } from "@staticModels/banners/BannerEntity.js";
 import { BannerItemEntity } from "@staticModels/banners/BannerItemEntity.js";
 import { bannerRecords, legacyBannerIdSet } from "@staticModels/instances.js";
@@ -13,6 +14,7 @@ export class Banner {
     private readonly _endTime: string | null;
     private readonly _startTimeAsia: string;
     private readonly _endTimeAsia: string | null;
+    private readonly _isLegacy: boolean;
 
     private readonly _featuredSet: Set<string>;
     private readonly _hardGuaranteedSet: Set<string>;
@@ -27,6 +29,7 @@ export class Banner {
         this._endTime = bannerEntity.endTime;
         this._startTimeAsia = bannerEntity.startTimeAsia;
         this._endTimeAsia = bannerEntity.endTimeAsia;
+        this._isLegacy = legacyBannerIdSet.has(this.id);
 
         this._featuredSet = new Set(bannerEntity.featured);
         this._hardGuaranteedSet = new Set(bannerEntity.hardGuaranteed);
@@ -35,6 +38,27 @@ export class Banner {
 
     public static get(bannerId: string): Banner | null {
         return bannerRecords.getBanner(bannerId);
+    }
+
+    public static getGlobalBannerDataType(bannerType: BannerType, isLegacy: boolean): GlobalBannerDataType {
+        switch (bannerType) {
+            case BannerType.CHAR_BEGINNER:
+                return GlobalBannerDataType.BEGINNER;
+            case BannerType.CHAR_STANDARD:
+                return GlobalBannerDataType.STANDARD;
+            case BannerType.CHAR_SPECIAL:
+                return isLegacy
+                    ? GlobalBannerDataType.SPECIAL_V1
+                    : GlobalBannerDataType.SPECIAL_V2;
+            case BannerType.CHAR_JOINT:
+                return isLegacy
+                    ? GlobalBannerDataType.JOINT_V1
+                    : GlobalBannerDataType.JOINT_V2;
+            case BannerType.WEAPON:
+                return isLegacy
+                    ? GlobalBannerDataType.WEAPON_V1
+                    : GlobalBannerDataType.WEAPON_V2;
+        }
     }
 
     private static getAllowedMap(allowed: BannerItemEntity[]): Map<string, BannerItemEntity> {
@@ -99,6 +123,26 @@ export class Banner {
         return this._endTimeAsia ?? null;
     }
 
+    public get isLegacy(): boolean {
+        return this._isLegacy;
+    }
+
+    public get globalBannerDataType(): GlobalBannerDataType {
+        return Banner.getGlobalBannerDataType(this._type, this._isLegacy);
+    }
+
+    public getFeaturedList(): string[] {
+        return [...this._featuredSet];
+    }
+
+    public getHardGuaranteedList(): string[] {
+        return [...this._hardGuaranteedSet];
+    }
+
+    public getAllowedList(): BannerItemEntity[] {
+        return [...this._allowedMap.values()];
+    }
+
     public isFeatured(itemId: string): boolean {
         return this._featuredSet.has(itemId);
     }
@@ -119,9 +163,5 @@ export class Banner {
         }
 
         return item.rarity === rarity;
-    }
-
-    public isLegacy(): boolean {
-        return legacyBannerIdSet.has(this.id);
     }
 }

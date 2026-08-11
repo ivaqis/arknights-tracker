@@ -12,6 +12,7 @@ import { UserCharBannerTypePullsTable } from "@database/tables/UserCharBannerTyp
 import { UserWeaponBannerPullsTable } from "@database/tables/UserWeaponBannerPullsTable.js";
 import { PrismaClient } from "@generated/prisma-v2/index.js";
 import { DbBannerType } from "@models/banners/DbBannerType.js";
+import { GlobalBannerStats } from "@models/globalBannerStats/GlobalBannerStats.js";
 import { IncludeRange } from "@models/IncludeRange.js";
 
 export class UserBannerStatsRepository extends Repository {
@@ -141,7 +142,9 @@ export class UserBannerStatsRepository extends Repository {
         return this._userBannerStatsTable.getRatingStats(bannerType, totalPulls, total6Count, total5Count, total5050Count, won5050Count);
     }
 
-    public async getGlobalBannerStats(bannerId: string): Promise<GlobalBannerStatsEntity> {
-        return this._userBannerStatsTable.getGlobalBannerStats(bannerId);
+    public async getGlobalBannerStats(bannerId: string): Promise<GlobalBannerStats> {
+        const entity = await this._userBannerStatsTable.getGlobalBannerStats(bannerId);
+
+        return GlobalBannerStats.createFromEntity(entity);
     }
 }
