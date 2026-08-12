@@ -120,7 +120,7 @@ export class PostImport extends StreamController<
 
         let lastPullTimeTs: number = 0;
 
-        if (requestedProfile) {
+        if (requestedProfile && requestedProfile.version.initValue === UserBannerProfileVersion.V_2) {
             const tempTime = await this._database.userBannerStats.getLastPullTimeTs(requestedProfile.profileId);
 
             if (tempTime !== null) {
