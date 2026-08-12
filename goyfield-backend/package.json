@@ -10,6 +10,7 @@
     "clean": "rimraf dist tsconfig.tsbuildinfo",
     "rebuild": "npm run clean && npm run build",
     "start": "node dist/src/main.js",
+    "start:local": "tsx src/main.ts",
     "prisma:v2:generate": "prisma generate --schema prisma/v2/schema.prisma",
     "prisma:v2:migrate": "prisma migrate deploy --schema prisma/v2/schema.prisma",
     "prisma:v2:create-migration": "prisma migrate dev --create-only --name dev --schema prisma/v2/schema.prisma"
