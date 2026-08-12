@@ -1,6 +1,7 @@
 import { avatarUploader, sightengine } from "@/serviceInstances.js";
 import { DeleteAvatar } from "@api/controllers/uploadAvatar/DeleteAvatar.js";
 import { UploadAvatar } from "@api/controllers/uploadAvatar/UploadAvatar.js";
+import { uploadLimiter } from "@api/middleware/rateLimiters/uploadLimiter.js";
 import { RequireAuth } from "@api/middleware/RequireAuth.js";
 import { RequireService } from "@api/middleware/RequireService.js";
 import { JsonRequestValidator } from "@api/middleware/validators/JsonRequestValidator.js";
@@ -14,6 +15,7 @@ export const avatarRouter = Router();
 avatarRouter.use(RequireService.require(avatarUploader, sightengine));
 
 avatarRouter.post("/upload",
+    uploadLimiter,
     JsonRequestValidator.isJson,
     RequireAuth.require(AuthType.FIREBASE),
     UploadAvatarRequestValidator.validate,

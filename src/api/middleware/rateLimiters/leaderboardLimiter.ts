@@ -1,3 +1,5 @@
+import { RateLimiterLogger } from "@api/middleware/RateLimiterLogger.js";
+import { RequestHandler } from "express";
 import rateLimit from "express-rate-limit";
 
 export const leaderboardLimiter = rateLimit({
@@ -9,4 +11,5 @@ export const leaderboardLimiter = rateLimit({
     },
     standardHeaders: true,
     legacyHeaders: false,
-});
+    logger: new RateLimiterLogger("LeaderboardLimiter"),
+}) as RequestHandler<any, any, any, any>;

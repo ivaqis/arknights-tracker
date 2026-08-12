@@ -2,6 +2,7 @@ import { authenticator, database, firebase } from "@/serviceInstances.js";
 import { Controller } from "@api/controllers/Controller.js";
 import { UserExist } from "@api/controllers/userExist/UserExist.js";
 import { UserList } from "@api/controllers/userList/UserList.js";
+import { generalLimiter } from "@api/middleware/rateLimiters/generalLimiter.js";
 import { RequireAuth } from "@api/middleware/RequireAuth.js";
 import { RequireService } from "@api/middleware/RequireService.js";
 import { RequestValidator } from "@api/middleware/validators/RequestValidator.js";
@@ -17,6 +18,7 @@ import { Router } from "express";
 export const userRouter = Router();
 
 userRouter.use(RequireService.require(database, firebase, authenticator));
+userRouter.use(generalLimiter);
 
 userRouter.use("/game-account", gameAccountRouter);
 userRouter.use("/profile", profileRouter);

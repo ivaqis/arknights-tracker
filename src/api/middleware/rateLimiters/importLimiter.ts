@@ -1,3 +1,6 @@
+
+import { RateLimiterLogger } from "@api/middleware/RateLimiterLogger.js";
+import { RequestHandler } from "express";
 import rateLimit from "express-rate-limit";
 
 export const importLimiter = rateLimit({
@@ -9,4 +12,5 @@ export const importLimiter = rateLimit({
     },
     standardHeaders: true,
     legacyHeaders: false,
-});
+    logger: new RateLimiterLogger("ImportLimiter")
+}) as RequestHandler<any, any, any, any>;

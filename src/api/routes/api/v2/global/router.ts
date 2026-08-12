@@ -1,6 +1,7 @@
 import { database } from "@/serviceInstances.js";
 import { Controller } from "@api/controllers/Controller.js";
 import { GlobalStats } from "@api/controllers/globalStats/GlobalStats.js";
+import { generalLimiter } from "@api/middleware/rateLimiters/generalLimiter.js";
 import { RequireService } from "@api/middleware/RequireService.js";
 import { GlobalStatsRequestValidator } from "@api/middleware/validators/globalStats/GlobalStatsRequestValidator.js";
 import { RequestValidator } from "@api/middleware/validators/RequestValidator.js";
@@ -11,6 +12,7 @@ export const globalRouter = Router();
 globalRouter.use(RequireService.require(database));
 
 globalRouter.get("/stats",
+    generalLimiter,
     RequestValidator.with(GlobalStatsRequestValidator),
     Controller.with(GlobalStats)
 );

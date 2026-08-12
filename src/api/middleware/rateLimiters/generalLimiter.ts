@@ -2,14 +2,14 @@ import { RateLimiterLogger } from "@api/middleware/RateLimiterLogger.js";
 import { RequestHandler } from "express";
 import rateLimit from "express-rate-limit";
 
-export const syncLimiter = rateLimit({
-    windowMs: 1 * 10 * 1000, // 15 minutes todo ПОМЕНЯТЬ 15 * 60 * 1000
-    max: 10,
+export const generalLimiter = rateLimit({
+    windowMs: 60 * 1000,
+    max: 60,
     message: {
-        message: "Too many sync attempts. Sync is allowed once every 7 minutes.",
+        message: "Too many requests",
         data: null
     },
     standardHeaders: true,
     legacyHeaders: false,
-    logger: new RateLimiterLogger("SyncLimiter"),
+    logger: new RateLimiterLogger("GeneralLimiter"),
 }) as RequestHandler<any, any, any, any>;
