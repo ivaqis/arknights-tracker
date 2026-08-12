@@ -12,17 +12,11 @@
     "start": "node dist/src/main.js",
     "prisma:v2:generate": "prisma generate --schema prisma/v2/schema.prisma",
     "prisma:v2:migrate": "prisma migrate deploy --schema prisma/v2/schema.prisma",
-    "prisma:v2:create-migration": "prisma migrate dev --create-only --name dev --schema prisma/v2/schema.prisma",
-    "prisma:v1:pg:generate": "prisma generate --schema prisma/v1/postgres/schema.prisma",
-    "prisma:v1:pg:migrate": "prisma migrate deploy --schema prisma/v1/postgres/schema.prisma",
-    "prisma:v1:pg:create-migration": "prisma migrate dev --create-only --name dev --schema prisma/v1/postgres/schema.prisma",
-    "prisma:v1:sqlite:generate": "prisma generate --schema prisma/v1/sqlite/schema.prisma",
-    "prisma:v1:sqlite:migrate": "prisma migrate deploy --schema prisma/v1/sqlite/schema.prisma",
-    "prisma:v1:sqlite:create-migration": "prisma migrate dev --create-only --name dev --schema prisma/v1/sqlite/schema.prisma"
+    "prisma:v2:create-migration": "prisma migrate dev --create-only --name dev --schema prisma/v2/schema.prisma"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "ivaqis, lolislayer1337",
+  "license": "Apache-2.0",
   "type": "module",
   "dependencies": {
     "@prisma/client": "5.19.0",
