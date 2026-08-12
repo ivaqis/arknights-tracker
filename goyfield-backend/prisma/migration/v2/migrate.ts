@@ -1,5 +1,0 @@
-migrate();
-
-async function migrate() {
-
-}
