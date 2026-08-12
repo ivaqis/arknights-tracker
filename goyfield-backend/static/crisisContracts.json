@@ -1,0 +1,239 @@
+[
+  {
+    "id": "indie_contract001",
+    "apiId": "6e5575e7972af7d4ae63a26b98b87e9f",
+    "isCurrent": true,
+    "indicators": [
+      {
+        "id": "activity_contract_tag_302",
+        "tagId": "102801",
+        "nameId": "Team: Weaken_1"
+      },
+      {
+        "id": "activity_contract_tag_303",
+        "tagId": "102802",
+        "nameId": "Team: Weaken_2"
+      },
+      {
+        "id": "activity_contract_tag_304",
+        "tagId": "102803",
+        "nameId": "Team: Weaken_3"
+      },
+      {
+        "id": "activity_contract_tag_124",
+        "tagId": "101001",
+        "nameId": "Edit: Effect Barrier_1"
+      },
+      {
+        "id": "activity_contract_tag_136",
+        "tagId": "102302",
+        "nameId": "Edit: Rush_2"
+      },
+      {
+        "id": "activity_contract_tag_209",
+        "tagId": "100803",
+        "nameId": "Team: Poor Basics_3"
+      },
+      {
+        "id": "activity_contract_tag_312",
+        "tagId": "103401",
+        "nameId": "Team: Encumbered_1"
+      },
+      {
+        "id": "activity_contract_tag_307",
+        "tagId": "103302",
+        "nameId": "Ambient: Synced Growth_2"
+      },
+      {
+        "id": "activity_contract_tag_127",
+        "tagId": "101402",
+        "nameId": "Team: Whittle Down_3"
+      },
+      {
+        "id": "activity_contract_tag_201",
+        "tagId": "100003",
+        "nameId": "Ambient: Overclock_3"
+      },
+      {
+        "id": "activity_contract_tag_306",
+        "tagId": "103203",
+        "nameId": "Ambient: Tremor_3"
+      },
+      {
+        "id": "activity_contract_tag_308",
+        "tagId": "103102",
+        "nameId": "Edit: Encasement_1"
+      },
+      {
+        "id": "activity_contract_tag_125",
+        "tagId": "101201",
+        "nameId": "Ambient: Partition_2"
+      },
+      {
+        "id": "activity_contract_tag_129",
+        "tagId": "101501",
+        "nameId": "Edit: Toxic Residue_1"
+      },
+      {
+        "id": "activity_contract_tag_130",
+        "tagId": "101502",
+        "nameId": "Edit: Toxic Residue_2"
+      },
+      {
+        "id": "activity_contract_tag_203",
+        "tagId": "100301",
+        "nameId": "Team: Battle Chill_1"
+      },
+      {
+        "id": "activity_contract_tag_204",
+        "tagId": "100302",
+        "nameId": "Team: Battle Chill_2"
+      },
+      {
+        "id": "activity_contract_tag_205",
+        "tagId": "100401",
+        "nameId": "Team: Heat Loss_1"
+      },
+      {
+        "id": "activity_contract_tag_206",
+        "tagId": "100402",
+        "nameId": "Team: Heat Loss_2"
+      },
+      {
+        "id": "activity_contract_tag_132",
+        "tagId": "101701",
+        "nameId": "Ambient: Thermolysis_1"
+      },
+      {
+        "id": "activity_contract_tag_135",
+        "tagId": "101603",
+        "nameId": "Edit: Flashfreeze_2"
+      },
+      {
+        "id": "activity_contract_tag_133",
+        "tagId": "101801",
+        "nameId": "Ambient: Biolysis_1"
+      },
+      {
+        "id": "activity_contract_tag_101",
+        "tagId": "100201",
+        "nameId": "Edit: Thrill_1"
+      },
+      {
+        "id": "activity_contract_tag_102",
+        "tagId": "100202",
+        "nameId": "Edit: Thrill_2"
+      },
+      {
+        "id": "activity_contract_tag_134",
+        "tagId": "101901",
+        "nameId": "Ambient: Electrolysis_1"
+      },
+      {
+        "id": "activity_contract_tag_210",
+        "tagId": "102401",
+        "nameId": "Ambient: Physicolysis_1"
+      },
+      {
+        "id": "activity_contract_tag_119",
+        "tagId": "101101",
+        "nameId": "Edit: Regeneration_1"
+      },
+      {
+        "id": "activity_contract_tag_120",
+        "tagId": "101102",
+        "nameId": "Edit: Regeneration_2"
+      },
+      {
+        "id": "activity_contract_tag_310",
+        "tagId": "102201",
+        "nameId": "Ambient: RE-Construct_2"
+      },
+      {
+        "id": "activity_contract_tag_311",
+        "tagId": "102202",
+        "nameId": "Ambient: RE-Construct_3"
+      },
+      {
+        "id": "activity_contract_tag_111_2",
+        "tagId": "102101",
+        "nameId": "Ambient: Time Limit_1"
+      },
+      {
+        "id": "activity_contract_tag_112_2",
+        "tagId": "102102",
+        "nameId": "Ambient: Time Limit_2"
+      },
+      {
+        "id": "activity_contract_tag_301",
+        "tagId": "102103",
+        "nameId": "Ambient: Time Limit_3"
+      },
+      {
+        "id": "activity_contract_tag_114",
+        "tagId": "900101",
+        "nameId": "Edit: Vitality_1"
+      },
+      {
+        "id": "activity_contract_tag_115",
+        "tagId": "900102",
+        "nameId": "Edit: Vitality_2"
+      },
+      {
+        "id": "activity_contract_tag_116",
+        "tagId": "900103",
+        "nameId": "Edit: Vitality_3"
+      },
+      {
+        "id": "activity_contract_tag_122",
+        "tagId": "100901",
+        "nameId": "Team: Restraint_1"
+      },
+      {
+        "id": "activity_contract_tag_123",
+        "tagId": "100902",
+        "nameId": "Team: Restraint_2"
+      },
+      {
+        "id": "activity_contract_tag_117",
+        "tagId": "100601",
+        "nameId": "Team: Decapitate_1"
+      },
+      {
+        "id": "activity_contract_tag_118",
+        "tagId": "100602",
+        "nameId": "Team: Decapitate_2"
+      },
+      {
+        "id": "activity_contract_tag_103",
+        "tagId": "101301",
+        "nameId": "Ambient: Hypoxia_1"
+      },
+      {
+        "id": "activity_contract_tag_104",
+        "tagId": "101303",
+        "nameId": "Ambient: Mire_3"
+      },
+      {
+        "id": "activity_contract_tag_107",
+        "tagId": "102001",
+        "nameId": "Ambient: Withering_1"
+      },
+      {
+        "id": "activity_contract_tag_108",
+        "tagId": "102002",
+        "nameId": "Ambient: Withering_2"
+      },
+      {
+        "id": "activity_contract_tag_207",
+        "tagId": "100501",
+        "nameId": "Team: Bent Edges_1"
+      },
+      {
+        "id": "activity_contract_tag_208",
+        "tagId": "100502",
+        "nameId": "Team: Bent Edges_2"
+      }
+    ]
+  }
+]

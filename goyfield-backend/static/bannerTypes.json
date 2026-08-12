@@ -1,0 +1,37 @@
+[
+    {
+        "type": "special",
+        "pullsLimit": 0,
+        "hardGuarantee": 120,
+        "softGuarantee": 80,
+        "softGuarantee5": 10
+    },
+    {
+        "type": "new-player",
+        "pullsLimit": 40,
+        "hardGuarantee": 0,
+        "softGuarantee": 40,
+        "softGuarantee5": 10
+    },
+    {
+        "type": "standard",
+        "pullsLimit": 0,
+        "hardGuarantee": 0,
+        "softGuarantee": 80,
+        "softGuarantee5": 10
+    },
+    {
+        "type": "joint",
+        "pullsLimit": 0,
+        "hardGuarantee": 0,
+        "softGuarantee": 80,
+        "softGuarantee5": 10
+    },
+    {
+        "type": "weapon",
+        "pullsLimit": 0,
+        "hardGuarantee": 80,
+        "softGuarantee": 40,
+        "softGuarantee5": 10
+    }
+]

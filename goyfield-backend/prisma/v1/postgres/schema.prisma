@@ -1,0 +1,82 @@
+generator client {
+    provider = "prisma-client-js"
+    output   = "../../../generated/prisma-v1"
+}
+
+datasource db {
+    provider = "postgresql"
+    url      = env("DATABASE_URL_V1")
+}
+
+model User {
+    uid       String           @id
+    updatedAt DateTime         @updatedAt
+    stats     UserBannerStat[]
+}
+
+model UserBannerStat {
+    uid                   String
+    bannerId              String // 'standard', 'special', 'special_banner_01' и т.д.
+    totalPulls            Int      @default(0)
+    lastUpdate            DateTime @default(now())
+    total6                Int      @default(0)
+    sumPity6              Int      @default(0)
+    total5                Int      @default(0)
+    sumPity5              Int      @default(0)
+    won5050               Int      @default(0)
+    total5050             Int      @default(0)
+    lastProcessedPullTime BigInt   @default(0)
+
+    user User @relation(fields: [uid], references: [uid])
+
+    @@id([uid, bannerId])
+    @@index([bannerId, totalPulls])
+    @@index([bannerId, sumPity6])
+}
+
+model ImportError {
+    id        Int      @id @default(autoincrement())
+    createdAt DateTime @default(now())
+    url       String
+    error     String
+    stack     String?
+    serverId  String?
+    solved    Boolean  @default(false)
+}
+
+model GlobalBannerStats {
+    bannerId     String   @id
+    totalPulls   BigInt   @default(0)
+    totalUsers   Int      @default(0)
+    total6       Int      @default(0)
+    total5       Int      @default(0)
+    limitedCount Int      @default(0)
+    lost5050     Int      @default(0)
+    updatedAt    DateTime @updatedAt
+}
+
+model GlobalTimeline {
+    bannerId String
+    date     String // формат "YYYY-MM-DD"
+    pulls    Int    @default(0)
+
+    @@id([bannerId, date])
+}
+
+model GlobalPityDistribution {
+    bannerId String
+    pity     Int
+    rarity   Int
+    count    Int    @default(0)
+
+    @@id([bannerId, rarity, pity])
+}
+
+model GlobalItemStats {
+    bannerId String
+    itemName String
+    rarity   Int
+    count    Int    @default(0)
+
+    @@id([bannerId, itemName])
+}

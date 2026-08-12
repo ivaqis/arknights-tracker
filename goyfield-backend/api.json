@@ -1,0 +1,1155 @@
+{
+    "openapi": "3.1.0",
+    "info": {
+        "title": "Goyfield API",
+        "description": "Goyfield backend API",
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "url": "https"
+        }
+    ],
+    "paths": {
+        "/api/user/profile/get": {
+            "get": {
+                "summary": "returns user profile",
+                "parameters": [
+                    {
+                        "name": "uid",
+                        "in": "query",
+                        "required": true,
+                        "allowEmptyValue": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "firebaseToken",
+                        "in": "query",
+                        "required": true,
+                        "allowEmptyValue": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetUserProfileResponse"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorResponse"
+                                }
+                            }
+                        }
+                    },
+                    "403": {
+                        "description": "No access",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorResponse"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Not found",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorResponse"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Internal server error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/user/profile/create": {
+            "post": {
+                "summary": "creates and returns new user profile",
+                "parameters": [
+                    {
+                        "name": "uid",
+                        "in": "query",
+                        "required": true,
+                        "allowEmptyValue": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "firebaseToken",
+                        "in": "query",
+                        "required": true,
+                        "allowEmptyValue": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/CreateUserProfileRequest"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "ok",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/CreateUserProfileResponse"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorResponse"
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorResponse"
+                                }
+                            }
+                        }
+                    },
+                    "403": {
+                        "description": "No access",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorResponse"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Not found",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorResponse"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Internal server error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/user/profile/update": {
+            "post": {
+                "summary": "updates and returns user profile",
+                "parameters": [
+                    {
+                        "name": "uid",
+                        "in": "query",
+                        "required": true,
+                        "allowEmptyValue": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "firebaseToken",
+                        "in": "query",
+                        "required": true,
+                        "allowEmptyValue": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/UpdateUserProfileRequest"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "ok",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/UpdateUserProfileResponse"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorResponse"
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorResponse"
+                                }
+                            }
+                        }
+                    },
+                    "403": {
+                        "description": "No access",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorResponse"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Not found",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorResponse"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Internal server error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/user/profile/delete": {
+            "delete": {
+                "summary": "deletes user profile",
+                "parameters": [
+                    {
+                        "name": "uid",
+                        "in": "query",
+                        "required": true,
+                        "allowEmptyValue": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "firebaseToken",
+                        "in": "query",
+                        "required": true,
+                        "allowEmptyValue": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "ok",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/DeleteUserProfileResponse"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorResponse"
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/DeleteUserProfileResponse"
+                                }
+                            }
+                        }
+                    },
+                    "403": {
+                        "description": "No access",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/DeleteUserProfileResponse"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Not found",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/DeleteUserProfileResponse"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Internal server error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "BaseResponse": {
+                "type": "object",
+                "required": [
+                    "message",
+                    "data"
+                ],
+                "properties": {
+                    "message": {
+                        "type": "string"
+                    },
+                    "data": {
+                        "type": "null"
+                    }
+                }
+            },
+            "ErrorResponse": {
+                "type": "object",
+                "allOf": [
+                    {
+                        "$ref": "#/components/schemas/BaseResponse"
+                    },
+                    {
+                        "properties": {
+                            "data": {
+                                "type": "null"
+                            }
+                        }
+                    }
+                ]
+            },
+            "GetUserProfileResponse": {
+                "type": "object",
+                "allOf": [
+                    {
+                        "$ref": "#/components/schemas/BaseResponse"
+                    },
+                    {
+                        "properties": {
+                            "data": {
+                                "$ref": "#/components/schemas/UserProfile"
+                            }
+                        }
+                    }
+                ]
+            },
+            "CreateUserProfileRequest": {
+                "type": "object",
+                "required": [
+                    "publicUid",
+                    "isPrivate",
+                    "avatarId",
+                    "backgroundId"
+                ],
+                "properties": {
+                    "publicUid": {
+                        "type": "string"
+                    },
+                    "isPrivate": {
+                        "type": "boolean"
+                    },
+                    "avatarId": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "backgroundId": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    }
+                }
+            },
+            "CreateUserProfileResponse": {
+                "type": "object",
+                "allOf": [
+                    {
+                        "$ref": "#/components/schemas/BaseResponse"
+                    },
+                    {
+                        "properties": {
+                            "data": {
+                                "$ref": "#/components/schemas/UserProfile"
+                            }
+                        }
+                    }
+                ]
+            },
+            "UpdateUserProfileRequest": {
+                "type": "object",
+                "required": [],
+                "properties": {
+                    "publicUid": {
+                        "type": "string"
+                    },
+                    "isPrivate": {
+                        "type": "boolean"
+                    },
+                    "avatarId": {
+                        "type": "string"
+                    },
+                    "backgroundId": {
+                        "type": "string"
+                    }
+                }
+            },
+            "UpdateUserProfileResponse": {
+                "type": "object",
+                "allOf": [
+                    {
+                        "$ref": "#/components/schemas/BaseResponse"
+                    },
+                    {
+                        "properties": {
+                            "data": {
+                                "$ref": "#/components/schemas/UserProfile"
+                            }
+                        }
+                    }
+                ]
+            },
+            "DeleteUserProfileResponse": {
+                "type": "object",
+                "allOf": [
+                    {
+                        "$ref": "#/components/schemas/BaseResponse"
+                    },
+                    {
+                        "properties": {
+                            "data": {
+                                "type": "object",
+                                "properties": {
+                                    "code": {
+                                        "type": "number"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            "UserProfile": {
+                "type": "object",
+                "required": [
+                    "publicUid",
+                    "isPrivate",
+                    "avatarId",
+                    "backgroundId",
+                    "gameProfiles"
+                ],
+                "properties": {
+                    "publicUid": {
+                        "type": "string"
+                    },
+                    "isPrivate": {
+                        "type": "boolean"
+                    },
+                    "avatarId": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "backgroundId": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "gameProfiles": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/IGameProfile"
+                        }
+                    }
+                }
+            },
+            "IGameProfile": {
+                "type": "object",
+                "required": [
+                    "gameProfile",
+                    "contract"
+                ],
+                "properties": {
+                    "gameProfile": {
+                        "$ref": "#/components/schemas/GameProfileEntity"
+                    },
+                    "contract": {
+                        "oneOf": [
+                            {
+                                "$ref": "#/components/schemas/ContractRecordEntity"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ]
+                    }
+                }
+            },
+            "GameProfileEntity": {
+                "type": "object",
+                "required": [
+                    "base",
+                    "dungeon",
+                    "bpSystem",
+                    "dailyMission",
+                    "weeklyMission",
+                    "seekSuspicion",
+                    "chars"
+                ],
+                "properties": {
+                    "base": {
+                        "$ref": "#/components/schemas/BaseEntity"
+                    },
+                    "dungeon": {
+                        "$ref": "#/components/schemas/DungeonEntity"
+                    },
+                    "bpSystem": {
+                        "$ref": "#/components/schemas/BpSystemEntity"
+                    },
+                    "dailyMission": {
+                        "$ref": "#/components/schemas/DailyMissionEntity"
+                    },
+                    "weeklyMission": {
+                        "$ref": "#/components/schemas/WeeklyMissionEntity"
+                    },
+                    "seekSuspicion": {
+                        "$ref": "#/components/schemas/SeekSuspicionEntity"
+                    },
+                    "chars": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/CharacterEntity"
+                        }
+                    }
+                }
+            },
+            "BaseEntity": {
+                "type": "object",
+                "required": [
+                    "serverId",
+                    "roleId",
+                    "name",
+                    "createTime",
+                    "saveTime",
+                    "lastLoginTime",
+                    "exp",
+                    "level",
+                    "worldLevel",
+                    "gender",
+                    "avatarUrl",
+                    "charNum",
+                    "weaponNum",
+                    "docNum"
+                ],
+                "properties": {
+                    "serverId": {
+                        "type": "string"
+                    },
+                    "roleId": {
+                        "type": "string"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "createTime": {
+                        "type": "string"
+                    },
+                    "saveTime": {
+                        "type": "string"
+                    },
+                    "lastLoginTime": {
+                        "type": "string"
+                    },
+                    "exp": {
+                        "type": "number"
+                    },
+                    "level": {
+                        "type": "number"
+                    },
+                    "worldLevel": {
+                        "type": "number"
+                    },
+                    "gender": {
+                        "type": "number"
+                    },
+                    "avatarUrl": {
+                        "type": "string"
+                    },
+                    "charNum": {
+                        "type": "number"
+                    },
+                    "weaponNum": {
+                        "type": "number"
+                    },
+                    "docNum": {
+                        "type": "number"
+                    }
+                }
+            },
+            "DungeonEntity": {
+                "type": "object",
+                "required": [
+                    "curStamina",
+                    "maxTs",
+                    "maxStamina"
+                ],
+                "properties": {
+                    "curStamina": {
+                        "type": "string"
+                    },
+                    "maxTs": {
+                        "type": "string"
+                    },
+                    "maxStamina": {
+                        "type": "string"
+                    }
+                }
+            },
+            "BpSystemEntity": {
+                "type": "object",
+                "required": [
+                    "curLevel",
+                    "maxLevel"
+                ],
+                "properties": {
+                    "curLevel": {
+                        "type": "number"
+                    },
+                    "maxLevel": {
+                        "type": "number"
+                    }
+                }
+            },
+            "DailyMissionEntity": {
+                "type": "object",
+                "required": [
+                    "dailyActivation",
+                    "maxDailyActivation"
+                ],
+                "properties": {
+                    "dailyActivation": {
+                        "type": "number"
+                    },
+                    "maxDailyActivation": {
+                        "type": "number"
+                    }
+                }
+            },
+            "WeeklyMissionEntity": {
+                "type": "object",
+                "required": [
+                    "score",
+                    "total"
+                ],
+                "properties": {
+                    "score": {
+                        "type": "number"
+                    },
+                    "total": {
+                        "type": "number"
+                    }
+                }
+            },
+            "SeekSuspicionEntity": {
+                "type": "object",
+                "required": [
+                    "count",
+                    "total"
+                ],
+                "properties": {
+                    "count": {
+                        "type": "number"
+                    },
+                    "total": {
+                        "type": "number"
+                    }
+                }
+            },
+            "CharacterEntity": {
+                "type": "object",
+                "required": [
+                    "id",
+                    "level",
+                    "potentialLevel",
+                    "ownTs",
+                    "skills",
+                    "bodyEquip",
+                    "armEquip",
+                    "firstAccessory",
+                    "secondAccessory",
+                    "tacticalItem",
+                    "weapon",
+                    "talent",
+                    "apiId"
+                ],
+                "properties": {
+                    "id": {
+                        "type": "string"
+                    },
+                    "level": {
+                        "type": "number"
+                    },
+                    "potentialLevel": {
+                        "type": "number"
+                    },
+                    "ownTs": {
+                        "type": "string"
+                    },
+                    "skills": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/CharSkillEntity"
+                        }
+                    },
+                    "bodyEquip": {
+                        "oneOf": [
+                            {
+                                "$ref": "#/components/schemas/EquipEntity"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ]
+                    },
+                    "armEquip": {
+                        "oneOf": [
+                            {
+                                "$ref": "#/components/schemas/EquipEntity"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ]
+                    },
+                    "firstAccessory": {
+                        "oneOf": [
+                            {
+                                "$ref": "#/components/schemas/EquipEntity"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ]
+                    },
+                    "secondAccessory": {
+                        "oneOf": [
+                            {
+                                "$ref": "#/components/schemas/EquipEntity"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ]
+                    },
+                    "tacticalItem": {
+                        "oneOf": [
+                            {
+                                "$ref": "#/components/schemas/TacticalItemEntity"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ]
+                    },
+                    "weapon": {
+                        "oneOf": [
+                            {
+                                "$ref": "#/components/schemas/WeaponEntity"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ]
+                    },
+                    "talent": {
+                        "$ref": "#/components/schemas/TalentEntity"
+                    },
+                    "apiId": {
+                        "type": "string"
+                    }
+                }
+            },
+            "CharSkillEntity": {
+                "type": "object",
+                "required": [
+                    "type",
+                    "level",
+                    "maxLevel"
+                ],
+                "properties": {
+                    "type": {
+                        "type": "string"
+                    },
+                    "level": {
+                        "type": "number"
+                    },
+                    "maxLevel": {
+                        "type": "number"
+                    }
+                }
+            },
+            "EquipEntity": {
+                "type": "object",
+                "required": [
+                    "id"
+                ],
+                "properties": {
+                    "id": {
+                        "type": "string"
+                    }
+                }
+            },
+            "TacticalItemEntity": {
+                "type": "object",
+                "required": [
+                    "id"
+                ],
+                "properties": {
+                    "id": {
+                        "type": "string"
+                    }
+                }
+            },
+            "WeaponEntity": {
+                "type": "object",
+                "required": [
+                    "id",
+                    "level",
+                    "refineLevel",
+                    "gem"
+                ],
+                "properties": {
+                    "id": {
+                        "type": "string"
+                    },
+                    "level": {
+                        "type": "number"
+                    },
+                    "refineLevel": {
+                        "type": "number"
+                    },
+                    "gem": {
+                        "oneOf": [
+                            {
+                                "$ref": "#/components/schemas/GemEntity"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ]
+                    }
+                }
+            },
+            "GemEntity": {
+                "type": "object",
+                "required": [
+                    "id",
+                    "presetId",
+                    "iconUrl"
+                ],
+                "properties": {
+                    "id": {
+                        "type": "string"
+                    },
+                    "presetId": {
+                        "type": "string"
+                    },
+                    "iconUrl": {
+                        "type": "string"
+                    }
+                }
+            },
+            "TalentEntity": {
+                "type": "object",
+                "required": [
+                    "attrNodes",
+                    "latestPassiveSkillNodes",
+                    "latestFactorySkillNodes",
+                    "latestSpaceshipSkillNodes"
+                ],
+                "properties": {
+                    "attrNodes": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "latestPassiveSkillNodes": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "latestFactorySkillNodes": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "latestSpaceshipSkillNodes": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    }
+                }
+            },
+            "ContractRecordEntity": {
+                "type": "object",
+                "required": [
+                    "recordId",
+                    "contractId",
+                    "ts",
+                    "passTs",
+                    "isPass",
+                    "indicatorCount",
+                    "passWave",
+                    "isBest",
+                    "indicators",
+                    "chars"
+                ],
+                "properties": {
+                    "recordId": {
+                        "type": "string"
+                    },
+                    "contractId": {
+                        "type": "string"
+                    },
+                    "ts": {
+                        "type": "string"
+                    },
+                    "passTs": {
+                        "type": "number"
+                    },
+                    "isPass": {
+                        "type": "boolean"
+                    },
+                    "indicatorCount": {
+                        "type": "number"
+                    },
+                    "passWave": {
+                        "type": "number"
+                    },
+                    "isBest": {
+                        "type": "boolean"
+                    },
+                    "indicators": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "chars": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/ContractCharEntity"
+                        }
+                    }
+                }
+            },
+            "ContractCharEntity": {
+                "type": "object",
+                "required": [
+                    "id",
+                    "level",
+                    "potentialLevel",
+                    "equips"
+                ],
+                "properties": {
+                    "id": {
+                        "type": "string"
+                    },
+                    "level": {
+                        "type": "number"
+                    },
+                    "potentialLevel": {
+                        "type": "number"
+                    },
+                    "weapon": {
+                        "oneOf": [
+                            {
+                                "$ref": "#/components/schemas/ContractWeaponEntity"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ]
+                    },
+                    "equips": {
+                        "type": "object",
+                        "properties": {
+                            "bodyEquip": {
+                                "oneOf": [
+                                    {
+                                        "$ref": "#/components/schemas/ContractEquipEntity"
+                                    },
+                                    {
+                                        "type": "null"
+                                    }
+                                ]
+                            },
+                            "armEquip": {
+                                "oneOf": [
+                                    {
+                                        "$ref": "#/components/schemas/ContractEquipEntity"
+                                    },
+                                    {
+                                        "type": "null"
+                                    }
+                                ]
+                            },
+                            "firstAccessory": {
+                                "oneOf": [
+                                    {
+                                        "$ref": "#/components/schemas/ContractEquipEntity"
+                                    },
+                                    {
+                                        "type": "null"
+                                    }
+                                ]
+                            },
+                            "secondAccessory": {
+                                "oneOf": [
+                                    {
+                                        "$ref": "#/components/schemas/ContractEquipEntity"
+                                    },
+                                    {
+                                        "type": "null"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            },
+            "ContractWeaponEntity": {
+                "type": "object",
+                "required": [
+                    "id",
+                    "level",
+                    "refineLevel",
+                    "weaponTerms"
+                ],
+                "properties": {
+                    "id": {
+                        "type": "string"
+                    },
+                    "level": {
+                        "type": "number"
+                    },
+                    "refineLevel": {
+                        "type": "number"
+                    },
+                    "weaponTerms": {
+                        "type": "array",
+                        "items": {
+                            "type": "number"
+                        }
+                    }
+                }
+            },
+            "ContractEquipEntity": {
+                "type": "object",
+                "required": [
+                    "id",
+                    "enhanceStatus"
+                ],
+                "properties": {
+                    "id": {
+                        "type": "string"
+                    },
+                    "enhanceStatus": {
+                        "type": "number"
+                    }
+                }
+            }
+        }
+    }
+}
