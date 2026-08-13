@@ -111,7 +111,7 @@ export const characters = {
     apiId: "7e6df1575604cc5872590f22af757e40",
     gameId: "chr_0024_deepfin"
   },
-  arсlight: {
+  arclight: {
     id: "arclight",
     name: "Arclight",
     rarity: 5,
