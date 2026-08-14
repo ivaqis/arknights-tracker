@@ -65,7 +65,7 @@ export class Weapon {
         return this._rarity;
     }
 
-    public get weaponType(): WeaponType {
+    public get type(): WeaponType {
         return this._weapon;
     }
 
