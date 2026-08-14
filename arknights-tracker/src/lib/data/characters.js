@@ -1,7 +1,7 @@
 // src/lib/data/characters.js
 
 export const characters = {
-  endministrator: {
+  endministrator2: {
     id: "endministrator2",
     name: "Endministrator",
     rarity: 6,
@@ -12,7 +12,7 @@ export const characters = {
     apiId: "93e76fbbc07f7b480cfe0870c6414494",
     gameId: "chr_0002_endminm"
   },
-  endministrator2: {
+  endministrator1: {
     id: "endministrator1",
     name: "Endministrator",
     rarity: 6,
