@@ -1,0 +1,52 @@
+{
+  "name": "goyfield-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cross-env NODE_ENV=dev nodemon --exec tsx src/main.ts",
+    "build": "tsc && tsc-alias",
+    "clean": "rimraf dist tsconfig.tsbuildinfo",
+    "rebuild": "npm run clean && npm run build",
+    "start": "node dist/src/main.js",
+    "start:local": "tsx src/main.ts",
+    "prisma:v2:generate": "prisma generate --schema prisma/v2/schema.prisma",
+    "prisma:v2:migrate": "prisma migrate deploy --schema prisma/v2/schema.prisma",
+    "prisma:v2:create-migration": "prisma migrate dev --create-only --name dev --schema prisma/v2/schema.prisma"
+  },
+  "keywords": [],
+  "author": "ivaqis, lolislayer1337",
+  "license": "Apache-2.0",
+  "type": "module",
+  "dependencies": {
+    "@prisma/client": "5.19.0",
+    "axios": "^1.16.0",
+    "body-parser": "^2.2.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.3.1",
+    "cross-env": "^10.1.0",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.5.2",
+    "winston": "^3.19.0",
+    "sharp": "^0.35.3",
+    "lru-cache": "^11.5.2",
+    "jsonwebtoken": "^9.0.3",
+    "ms": "^2.1.3"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "ts-node": "^10.9.2",
+    "tsc-alias": "^1.8.17",
+    "tsconfig-paths": "^4.2.0",
+    "tsx": "^4.23.10",
+    "nodemon": "^3.1.14",
+    "prisma": "5.19.0",
+    "rimraf": "^6.1.3",
+    "@types/node": "^26.0.0",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/ms": "^2.1.0"
+  }
+}

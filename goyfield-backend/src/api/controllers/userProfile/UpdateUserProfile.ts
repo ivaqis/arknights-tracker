@@ -1,0 +1,129 @@
+import { authenticator, database } from "@/serviceInstances.js";
+import { ResponseBody } from "@api/contracts/ResponseBody.js";
+import { UpdateUserProfileQuery } from "@api/contracts/userProfile/UpdateUserProfileQuery.js";
+import { UpdateUserProfileRequest } from "@api/contracts/userProfile/UpdateUserProfileRequest.js";
+import { UpdateUserProfileResponse } from "@api/contracts/userProfile/UpdateUserProfileResponse.js";
+import { Controller } from "@api/controllers/Controller.js";
+import { GetUserProfile } from "@api/controllers/userProfile/GetUserProfile.js";
+import { Database } from "@database/Database.js";
+import { ContractRecord } from "@models/contingencyContract/ContractRecord.js";
+import { Authenticator } from "@services/auth/Authenticator.js";
+import { bannedWords, crisisContractRecords } from "@staticModels/instances.js";
+import e from "express";
+
+export class UpdateUserProfile
+    extends Controller<
+        {},
+        UpdateUserProfileResponse,
+        UpdateUserProfileRequest,
+        UpdateUserProfileQuery
+    > {
+    public readonly name = "UpdateUserProfile";
+
+    private readonly _database: Database = database;
+    private readonly _auth: Authenticator = authenticator;
+
+    private readonly _uid: string;
+    private readonly _newUid?: string;
+    private readonly _isPrivate?: boolean;
+    private readonly _backgroundId?: string;
+
+    private constructor(req: e.Request<{}, ResponseBody<UpdateUserProfileResponse>, UpdateUserProfileRequest, UpdateUserProfileQuery>, res: e.Response<ResponseBody<UpdateUserProfileResponse>>) {
+        super(req, res);
+
+        this._uid = req.query.uid;
+        this._newUid = req.body.newUid;
+        this._isPrivate = req.body.isPrivate;
+        this._backgroundId = req.body.backgroundId;
+    }
+
+    public static async post(req: e.Request<{}, ResponseBody<UpdateUserProfileResponse>, UpdateUserProfileRequest, UpdateUserProfileQuery>, res: e.Response<ResponseBody<UpdateUserProfileResponse>>) {
+        const controller = new UpdateUserProfile(req, res);
+
+        await controller.safeExecute();
+    }
+
+    protected async execute(): Promise<void> {
+        const cred = Authenticator.getAuthCredentials(this.req)!;
+        const authData = await this._auth.authByFirebase(cred.cred);
+
+        if (!authData) {
+            this.status = 401;
+            this.message = "Unauthorized";
+
+            return;
+        }
+
+        const firebaseUid = authData.firebaseUid;
+
+        const profile = await this._database.users.findUserByPublicUid(this._uid);
+
+        if (!profile) {
+            this.status = 404;
+            this.message = "User not found";
+
+            return;
+        }
+
+        if (profile.firebaseUid.initValue !== firebaseUid) {
+            this.status = 403;
+            this.message = "No access";
+
+            return;
+        }
+
+        if (this._newUid) {
+            const exists = await this._database.users.isUserExist(this._uid);
+
+            if (exists) {
+                this.status = 400;
+                this.message = "User already exists";
+
+                return;
+            }
+
+            const isValid = bannedWords.containsAnyBanned(this._newUid);
+
+            if (!isValid) {
+                this.status = 400;
+                this.message = "Username contains banned words";
+
+                return;
+            }
+
+            profile.publicUid.value = this._newUid;
+        }
+
+        if (this._isPrivate !== undefined) {
+            profile.isPrivate.value = this._isPrivate;
+        }
+
+        if (this._backgroundId !== undefined) {
+            profile.backgroundId.value = this._backgroundId;
+        }
+
+        const newProfile = await this._database.users.updateUser(profile);
+        const gameProfiles = await this._database.gameProfiles.findByUid(profile.uid);
+        const gameProfilesData = gameProfiles.map(profile => profile.data.getEntity());
+        const gameUids = gameProfilesData.map(profile => profile.base.roleId);
+        const bestRecords = await this.getBestRecords(gameUids);
+        const pullStats = await GetUserProfile.getPullsStats(this._database, gameProfiles);
+
+        this.data = GetUserProfile.getRespData(newProfile, gameProfilesData, bestRecords, pullStats);
+
+        return;
+    }
+
+    private async getBestRecords(gameUids: string[]): Promise<Record<string, ContractRecord | null>> {
+        const currentContractId = crisisContractRecords.current.id;
+        const records: Record<string, ContractRecord | null> = {};
+
+        for (const uid of gameUids) {
+            const record = await this._database.contractLeaderboard.findBestByGameUid(uid, currentContractId);
+
+            records[uid] = record?.data ?? null;
+        }
+
+        return records;
+    }
+}

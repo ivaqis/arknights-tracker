@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "lib": ["ESNext"],
+    "outDir": "./dist",
+    "rootDir": ".",
+    "tsBuildInfoFile": "./tsconfig.tsbuildinfo",
+
+    "strict": true,
+    "noImplicitReturns": true,
+
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "incremental": true,
+
+    "baseUrl": ".",
+    "paths": {
+      "@static/*": ["static/*"],
+      "@generated/*": ["generated/*"],
+      "@utils/*": ["src/utils/*"],
+      "@database/*": ["src/database/*"],
+      "@staticModels/*": ["src/staticModels/*"],
+      "@api/*": ["src/api/*"],
+      "@services/*": ["src/services/*"],
+      "@models/*": ["src/models/*"],
+      "@errors/*": ["src/errors/*"],
+      "@/*": ["src/*"]
+    }
+  },
+  "include": ["./src"],
+  "exclude": ["node_modules", "dist"],
+  "tsc-alias": {
+    "resolveFullPaths": true,
+    "resolveFullExtension": ".js",
+  }
+}
