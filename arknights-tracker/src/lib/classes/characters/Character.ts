@@ -1,10 +1,14 @@
-import { CharacterClass } from "$lib/data/CharacterClass";
-import type { CharacterData } from "$lib/data/characters";
-import { ElementType } from "$lib/data/ElementType";
-import { characterByGameId, characterById, characterByName } from "$lib/data/mappings/characterMappings";
-import { WeaponType } from "$lib/data/WeaponType";
+import { CharacterClass } from "$lib/classes/characters/CharacterClass";
+import { ElementType } from "$lib/classes/ElementType";
+import { WeaponType } from "$lib/classes/weapons/WeaponType";
+import { type CharacterData, characters } from "$lib/data/characters";
+import { getMap } from "$lib/utils/collectionUtils";
 
 export class Character {
+    private static readonly characterById = getMap(Object.values(characters), (char) => char.id);
+    private static readonly characterByName = getMap(Object.values(characters), (char) => char.name);
+    private static readonly characterByGameId = getMap(Object.values(characters), (char) => char.gameId);
+
     private readonly _id: string;
     private readonly _name: string;
     private readonly _rarity: number;
@@ -15,7 +19,7 @@ export class Character {
     private readonly _gameId: string;
     private readonly _apiId: string | null;
 
-    private constructor(data: CharacterData) {
+    public constructor(data: CharacterData) {
         if (!ElementType.isElementType(data.element)) {
             throw new Error(`CharacterData.element is not ElementType: ${data.element}`);
         }
@@ -48,19 +52,19 @@ export class Character {
     }
 
     public static getById(id: string): Character | null {
-        const data = characterById.get(id);
+        const data = this.characterById.get(id);
 
         return this.create(data);
     }
 
     public static getByGameId(gameId: string): Character | null {
-        const data = characterByGameId.get(gameId);
+        const data = this.characterByGameId.get(gameId);
 
         return this.create(data);
     }
 
     public static getByName(name: string): Character | null {
-        const data = characterByName.get(name);
+        const data = this.characterByName.get(name);
 
         return this.create(data);
     }

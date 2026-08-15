@@ -1,8 +1,12 @@
-import { weaponByGameId, weaponById, weaponByName } from "$lib/data/mappings/weaponMappings";
-import type { WeaponData } from "$lib/data/weapons";
-import { WeaponType } from "$lib/data/WeaponType";
+import { WeaponType } from "$lib/classes/weapons/WeaponType";
+import { type WeaponData, weapons } from "$lib/data/weapons";
+import { getMap } from "$lib/utils/collectionUtils";
 
 export class Weapon {
+    private static readonly weaponById = getMap(Object.values(weapons), item => item.id);
+    private static readonly weaponByGameId = getMap(Object.values(weapons), item => item.gameId);
+    private static readonly weaponByName = getMap(Object.values(weapons), item => item.name);
+
     private readonly _id: string;
     private readonly _gameId: string;
     private readonly _name: string;
@@ -32,19 +36,19 @@ export class Weapon {
     }
 
     public static getById(id: string): Weapon | null {
-        const data = weaponById.get(id);
+        const data = this.weaponById.get(id);
 
         return this.create(data);
     }
 
     public static getByGameId(gameId: string): Weapon | null {
-        const data = weaponByGameId.get(gameId);
+        const data = this.weaponByGameId.get(gameId);
 
         return this.create(data);
     }
 
     public static getByName(name: string): Weapon | null {
-        const data = weaponByName.get(name);
+        const data = this.weaponByName.get(name);
 
         return this.create(data);
     }
