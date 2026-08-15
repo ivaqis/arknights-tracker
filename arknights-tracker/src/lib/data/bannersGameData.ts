@@ -1,0 +1,4223 @@
+import type { BannerGameData } from "$lib/classes/banners/BannerGameData";
+
+export const bannersGameData: BannerGameData[] = [
+    {
+        "id": "beginner",
+        "name": "New Horizons",
+        "type": "new-player",
+        "dbType": "new-player",
+        "startTime": "2026-01-22 03:00:00",
+        "endTime": null,
+        "startTimeAsia": "2026-01-22 03:00:00",
+        "endTimeAsia": null,
+        "featured": [],
+        "hardGuaranteed": [],
+        "allowed": [
+            {
+                "itemId": "chr_0025_ardelia",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0029_pograni",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0026_lastrite",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0009_azrila",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0015_lifeng",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0004_pelica",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0007_ikut",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0012_avywen",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0018_dapan",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0005_chen",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0006_wolfgd",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0011_seraph",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0014_aurora",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0024_deepfin",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0019_karin",
+                "rarity": 4
+            },
+            {
+                "itemId": "chr_0020_meurs",
+                "rarity": 4
+            },
+            {
+                "itemId": "chr_0021_whiten",
+                "rarity": 4
+            },
+            {
+                "itemId": "chr_0022_bounda",
+                "rarity": 4
+            },
+            {
+                "itemId": "chr_0023_antal",
+                "rarity": 4
+            }
+        ]
+    },
+    {
+        "id": "joint_1_2_2",
+        "name": "Fest of Brilliance",
+        "type": "joint",
+        "dbType": "joint",
+        "startTime": "2026-05-14 12:00:00",
+        "endTime": "2026-06-05 06:00:00",
+        "startTimeAsia": "2026-05-14 12:00:00",
+        "endTimeAsia": "2026-06-04 17:00:00",
+        "featured": [
+            "chr_0016_laevat",
+            "chr_0013_aglina"
+        ],
+        "hardGuaranteed": [],
+        "allowed": [
+            {
+                "itemId": "chr_0016_laevat",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0013_aglina",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0025_ardelia",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0029_pograni",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0004_pelica",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0007_ikut",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0012_avywen",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0018_dapan",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0005_chen",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0006_wolfgd",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0011_seraph",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0014_aurora",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0024_deepfin",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0019_karin",
+                "rarity": 4
+            },
+            {
+                "itemId": "chr_0020_meurs",
+                "rarity": 4
+            },
+            {
+                "itemId": "chr_0021_whiten",
+                "rarity": 4
+            },
+            {
+                "itemId": "chr_0022_bounda",
+                "rarity": 4
+            },
+            {
+                "itemId": "chr_0023_antal",
+                "rarity": 4
+            }
+        ]
+    },
+    {
+        "id": "special_1_0_1",
+        "name": "Scars of the Forge",
+        "type": "special",
+        "dbType": "special",
+        "startTime": "2025-12-09 04:00:00",
+        "endTime": "2026-02-07 12:00:00",
+        "startTimeAsia": "2025-12-09 04:00:00",
+        "endTimeAsia": "2026-02-07 12:00:00",
+        "featured": [
+            "chr_0016_laevat"
+        ],
+        "hardGuaranteed": [
+            "chr_0016_laevat"
+        ],
+        "allowed": [
+            {
+                "itemId": "chr_0016_laevat",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0013_aglina",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0017_yvonne",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0009_azrila",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0015_lifeng",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0025_ardelia",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0026_lastrite",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0029_pograni",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0004_pelica",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0007_ikut",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0012_avywen",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0018_dapan",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0005_chen",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0006_wolfgd",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0011_seraph",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0014_aurora",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0024_deepfin",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0019_karin",
+                "rarity": 4
+            },
+            {
+                "itemId": "chr_0020_meurs",
+                "rarity": 4
+            },
+            {
+                "itemId": "chr_0021_whiten",
+                "rarity": 4
+            },
+            {
+                "itemId": "chr_0022_bounda",
+                "rarity": 4
+            },
+            {
+                "itemId": "chr_0023_antal",
+                "rarity": 4
+            }
+        ]
+    },
+    {
+        "id": "special_1_0_2",
+        "name": "Hues of Passion",
+        "type": "special",
+        "dbType": "special",
+        "startTime": "2026-02-24 12:00:00",
+        "endTime": "2026-03-12 06:00:00",
+        "startTimeAsia": "2026-02-24 12:00:00",
+        "endTimeAsia": "2026-03-11 17:00:00",
+        "featured": [
+            "chr_0017_yvonne"
+        ],
+        "hardGuaranteed": [
+            "chr_0017_yvonne"
+        ],
+        "allowed": [
+            {
+                "itemId": "chr_0017_yvonne",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0013_aglina",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0016_laevat",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0009_azrila",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0015_lifeng",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0025_ardelia",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0026_lastrite",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0029_pograni",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0004_pelica",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0007_ikut",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0012_avywen",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0018_dapan",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0005_chen",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0006_wolfgd",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0011_seraph",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0014_aurora",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0024_deepfin",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0019_karin",
+                "rarity": 4
+            },
+            {
+                "itemId": "chr_0020_meurs",
+                "rarity": 4
+            },
+            {
+                "itemId": "chr_0021_whiten",
+                "rarity": 4
+            },
+            {
+                "itemId": "chr_0022_bounda",
+                "rarity": 4
+            },
+            {
+                "itemId": "chr_0023_antal",
+                "rarity": 4
+            }
+        ]
+    },
+    {
+        "id": "special_1_0_3",
+        "name": "The Floaty Messenger",
+        "type": "special",
+        "dbType": "special",
+        "startTime": "2026-02-07 12:00:00",
+        "endTime": "2026-02-24 12:00:00",
+        "startTimeAsia": "2026-02-07 12:00:00",
+        "endTimeAsia": "2026-02-24 12:00:00",
+        "featured": [
+            "chr_0013_aglina"
+        ],
+        "hardGuaranteed": [
+            "chr_0013_aglina"
+        ],
+        "allowed": [
+            {
+                "itemId": "chr_0013_aglina",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0016_laevat",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0017_yvonne",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0009_azrila",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0015_lifeng",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0025_ardelia",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0026_lastrite",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0029_pograni",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0004_pelica",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0007_ikut",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0012_avywen",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0018_dapan",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0005_chen",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0006_wolfgd",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0011_seraph",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0014_aurora",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0024_deepfin",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0019_karin",
+                "rarity": 4
+            },
+            {
+                "itemId": "chr_0020_meurs",
+                "rarity": 4
+            },
+            {
+                "itemId": "chr_0021_whiten",
+                "rarity": 4
+            },
+            {
+                "itemId": "chr_0022_bounda",
+                "rarity": 4
+            },
+            {
+                "itemId": "chr_0023_antal",
+                "rarity": 4
+            }
+        ]
+    },
+    {
+        "id": "special_1_1_1",
+        "name": "River's Daughter",
+        "type": "special",
+        "dbType": "special",
+        "startTime": "2026-03-12 07:00:00",
+        "endTime": "2026-03-29 12:00:00",
+        "startTimeAsia": "2026-03-11 18:00:00",
+        "endTimeAsia": "2026-03-29 12:00:00",
+        "featured": [
+            "chr_0027_tangtang"
+        ],
+        "hardGuaranteed": [
+            "chr_0027_tangtang"
+        ],
+        "allowed": [
+            {
+                "itemId": "chr_0027_tangtang",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0017_yvonne",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0013_aglina",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0009_azrila",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0015_lifeng",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0025_ardelia",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0026_lastrite",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0029_pograni",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0004_pelica",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0007_ikut",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0012_avywen",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0018_dapan",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0005_chen",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0006_wolfgd",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0011_seraph",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0014_aurora",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0024_deepfin",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0019_karin",
+                "rarity": 4
+            },
+            {
+                "itemId": "chr_0020_meurs",
+                "rarity": 4
+            },
+            {
+                "itemId": "chr_0021_whiten",
+                "rarity": 4
+            },
+            {
+                "itemId": "chr_0022_bounda",
+                "rarity": 4
+            },
+            {
+                "itemId": "chr_0023_antal",
+                "rarity": 4
+            }
+        ]
+    },
+    {
+        "id": "special_1_1_2",
+        "name": "Wolf Pearl",
+        "type": "special",
+        "dbType": "special",
+        "startTime": "2026-03-29 12:00:00",
+        "endTime": "2026-04-17 06:00:00",
+        "startTimeAsia": "2026-03-29 12:00:00",
+        "endTimeAsia": "2026-04-16 17:00:00",
+        "featured": [
+            "chr_0028_wulfa"
+        ],
+        "hardGuaranteed": [
+            "chr_0028_wulfa"
+        ],
+        "allowed": [
+            {
+                "itemId": "chr_0028_wulfa",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0027_tangtang",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0017_yvonne",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0009_azrila",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0015_lifeng",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0025_ardelia",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0026_lastrite",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0029_pograni",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0004_pelica",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0007_ikut",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0012_avywen",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0018_dapan",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0005_chen",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0006_wolfgd",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0011_seraph",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0014_aurora",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0024_deepfin",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0019_karin",
+                "rarity": 4
+            },
+            {
+                "itemId": "chr_0020_meurs",
+                "rarity": 4
+            },
+            {
+                "itemId": "chr_0021_whiten",
+                "rarity": 4
+            },
+            {
+                "itemId": "chr_0022_bounda",
+                "rarity": 4
+            },
+            {
+                "itemId": "chr_0023_antal",
+                "rarity": 4
+            }
+        ]
+    },
+    {
+        "id": "special_1_2_1",
+        "name": "Thunder of Renewal",
+        "type": "special",
+        "dbType": "special",
+        "startTime": "2026-04-17 07:00:00",
+        "endTime": "2026-05-22 12:00:00",
+        "startTimeAsia": "2026-04-16 18:00:00",
+        "endTimeAsia": "2026-05-22 12:00:00",
+        "featured": [
+            "chr_0030_zhuangfy"
+        ],
+        "hardGuaranteed": [
+            "chr_0030_zhuangfy"
+        ],
+        "allowed": [
+            {
+                "itemId": "chr_0030_zhuangfy",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0028_wulfa",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0027_tangtang",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0009_azrila",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0015_lifeng",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0025_ardelia",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0026_lastrite",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0029_pograni",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0004_pelica",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0007_ikut",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0012_avywen",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0018_dapan",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0005_chen",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0006_wolfgd",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0011_seraph",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0014_aurora",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0024_deepfin",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0019_karin",
+                "rarity": 4
+            },
+            {
+                "itemId": "chr_0020_meurs",
+                "rarity": 4
+            },
+            {
+                "itemId": "chr_0021_whiten",
+                "rarity": 4
+            },
+            {
+                "itemId": "chr_0022_bounda",
+                "rarity": 4
+            },
+            {
+                "itemId": "chr_0023_antal",
+                "rarity": 4
+            }
+        ]
+    },
+    {
+        "id": "special_1_3_1",
+        "name": "Fists of No Regrets",
+        "type": "special",
+        "dbType": "special",
+        "startTime": "2026-06-05 07:00:00",
+        "endTime": "2026-06-26 12:00:00",
+        "startTimeAsia": "2026-06-04 18:00:00",
+        "endTimeAsia": "2026-06-26 12:00:00",
+        "featured": [
+            "chr_0031_mifu"
+        ],
+        "hardGuaranteed": [
+            "chr_0031_mifu"
+        ],
+        "allowed": [
+            {
+                "itemId": "chr_0031_mifu",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0030_zhuangfy",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0028_wulfa",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0009_azrila",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0015_lifeng",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0025_ardelia",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0026_lastrite",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0029_pograni",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0004_pelica",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0007_ikut",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0012_avywen",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0018_dapan",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0005_chen",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0006_wolfgd",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0011_seraph",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0014_aurora",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0024_deepfin",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0019_karin",
+                "rarity": 4
+            },
+            {
+                "itemId": "chr_0020_meurs",
+                "rarity": 4
+            },
+            {
+                "itemId": "chr_0021_whiten",
+                "rarity": 4
+            },
+            {
+                "itemId": "chr_0022_bounda",
+                "rarity": 4
+            },
+            {
+                "itemId": "chr_0023_antal",
+                "rarity": 4
+            }
+        ]
+    },
+    {
+        "id": "special_1_3_2",
+        "name": "Expunger of Sin",
+        "type": "special",
+        "dbType": "special",
+        "startTime": "2026-06-26 12:00:00",
+        "endTime": "2026-07-16 06:00:00",
+        "startTimeAsia": "2026-06-26 12:00:00",
+        "endTimeAsia": "2026-07-15 17:00:00",
+        "featured": [
+            "chr_0033_camille"
+        ],
+        "hardGuaranteed": [
+            "chr_0033_camille"
+        ],
+        "allowed": [
+            {
+                "itemId": "chr_0033_camille",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0031_mifu",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0030_zhuangfy",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0009_azrila",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0015_lifeng",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0025_ardelia",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0026_lastrite",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0029_pograni",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0004_pelica",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0007_ikut",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0012_avywen",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0018_dapan",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0005_chen",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0006_wolfgd",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0011_seraph",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0014_aurora",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0024_deepfin",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0019_karin",
+                "rarity": 4
+            },
+            {
+                "itemId": "chr_0020_meurs",
+                "rarity": 4
+            },
+            {
+                "itemId": "chr_0021_whiten",
+                "rarity": 4
+            },
+            {
+                "itemId": "chr_0022_bounda",
+                "rarity": 4
+            },
+            {
+                "itemId": "chr_0023_antal",
+                "rarity": 4
+            }
+        ]
+    },
+    {
+        "id": "special_1_4_1",
+        "name": "North Yearns the Rift Vigile",
+        "type": "special",
+        "dbType": "special",
+        "startTime": "2026-07-16 07:00:00",
+        "endTime": "2026-08-09 12:00:00",
+        "startTimeAsia": "2026-07-15 18:00:00",
+        "endTimeAsia": "2026-08-09 12:00:00",
+        "featured": [
+            "chr_0032_lizhiyan"
+        ],
+        "hardGuaranteed": [
+            "chr_0032_lizhiyan"
+        ],
+        "allowed": [
+            {
+                "itemId": "chr_0032_lizhiyan",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0033_camille",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0031_mifu",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0009_azrila",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0015_lifeng",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0025_ardelia",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0026_lastrite",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0029_pograni",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0004_pelica",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0007_ikut",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0012_avywen",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0018_dapan",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0005_chen",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0006_wolfgd",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0011_seraph",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0014_aurora",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0024_deepfin",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0019_karin",
+                "rarity": 4
+            },
+            {
+                "itemId": "chr_0020_meurs",
+                "rarity": 4
+            },
+            {
+                "itemId": "chr_0021_whiten",
+                "rarity": 4
+            },
+            {
+                "itemId": "chr_0022_bounda",
+                "rarity": 4
+            },
+            {
+                "itemId": "chr_0023_antal",
+                "rarity": 4
+            }
+        ]
+    },
+    {
+        "id": "special_1_4_2",
+        "name": "Good Morning from Your Dawnstar",
+        "type": "special",
+        "dbType": "special",
+        "startTime": "2026-08-09 12:00:00",
+        "endTime": "2026-09-02 06:00:00",
+        "startTimeAsia": "2026-08-09 12:00:00",
+        "endTimeAsia": "2026-09-01 17:00:00",
+        "featured": [
+            "chr_0035_liino"
+        ],
+        "hardGuaranteed": [
+            "chr_0035_liino"
+        ],
+        "allowed": [
+            {
+                "itemId": "chr_0035_liino",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0032_lizhiyan",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0033_camille",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0009_azrila",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0015_lifeng",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0025_ardelia",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0026_lastrite",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0029_pograni",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0004_pelica",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0007_ikut",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0012_avywen",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0018_dapan",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0005_chen",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0006_wolfgd",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0011_seraph",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0014_aurora",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0024_deepfin",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0019_karin",
+                "rarity": 4
+            },
+            {
+                "itemId": "chr_0020_meurs",
+                "rarity": 4
+            },
+            {
+                "itemId": "chr_0021_whiten",
+                "rarity": 4
+            },
+            {
+                "itemId": "chr_0022_bounda",
+                "rarity": 4
+            },
+            {
+                "itemId": "chr_0023_antal",
+                "rarity": 4
+            }
+        ]
+    },
+    {
+        "id": "standard",
+        "name": "Basic Headhunting",
+        "type": "standard",
+        "dbType": "standard",
+        "startTime": "2026-01-22 03:00:00",
+        "endTime": null,
+        "startTimeAsia": "2026-01-22 03:00:00",
+        "endTimeAsia": null,
+        "featured": [],
+        "hardGuaranteed": [],
+        "allowed": [
+            {
+                "itemId": "chr_0025_ardelia",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0029_pograni",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0026_lastrite",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0009_azrila",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0015_lifeng",
+                "rarity": 6
+            },
+            {
+                "itemId": "chr_0004_pelica",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0007_ikut",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0012_avywen",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0018_dapan",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0005_chen",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0006_wolfgd",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0011_seraph",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0014_aurora",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0024_deepfin",
+                "rarity": 5
+            },
+            {
+                "itemId": "chr_0019_karin",
+                "rarity": 4
+            },
+            {
+                "itemId": "chr_0020_meurs",
+                "rarity": 4
+            },
+            {
+                "itemId": "chr_0021_whiten",
+                "rarity": 4
+            },
+            {
+                "itemId": "chr_0022_bounda",
+                "rarity": 4
+            },
+            {
+                "itemId": "chr_0023_antal",
+                "rarity": 4
+            }
+        ]
+    },
+    {
+        "id": "weaponbox_constant_1",
+        "name": "Solid Ice Issue",
+        "type": "weapon",
+        "dbType": "weap-standard",
+        "startTime": "2026-01-22 03:00:00",
+        "endTime": null,
+        "startTimeAsia": "2026-01-22 03:00:00",
+        "endTimeAsia": null,
+        "featured": [
+            "wpn_claym_0013"
+        ],
+        "hardGuaranteed": [
+            "wpn_claym_0013"
+        ],
+        "allowed": [
+            {
+                "itemId": "wpn_claym_0013",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_claym_0004",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_claym_0008",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_funnel_0008",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_lance_0011",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_sword_0014",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_pistol_0009",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_lance_0004",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0005",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0007",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0005",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0007",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_pistol_0006",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0011",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_lance_0013",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_lance_0006",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0020",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0018",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0019",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0015",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0004",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0012",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0014",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_pistol_0012",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_pistol_0004",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0014",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0012",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0015",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_lance_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_lance_0008",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_sword_0008",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_sword_0009",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_funnel_0001",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_funnel_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_pistol_0002",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_pistol_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_claym_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_claym_0009",
+                "rarity": 4
+            }
+        ]
+    },
+    {
+        "id": "weaponbox_constant_2",
+        "name": "Cosmic Voice Issue",
+        "type": "weapon",
+        "dbType": "weap-standard",
+        "startTime": "2026-01-22 03:00:00",
+        "endTime": null,
+        "startTimeAsia": "2026-01-22 03:00:00",
+        "endTimeAsia": null,
+        "featured": [
+            "wpn_funnel_0013"
+        ],
+        "hardGuaranteed": [
+            "wpn_funnel_0013"
+        ],
+        "allowed": [
+            {
+                "itemId": "wpn_funnel_0013",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_funnel_0008",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_funnel_0009",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_lance_0011",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_sword_0012",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_claym_0006",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_pistol_0008",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_lance_0004",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0005",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0007",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0005",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0007",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_pistol_0006",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0011",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_lance_0013",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_lance_0006",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0020",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0018",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0019",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0015",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0004",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0012",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0014",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_pistol_0012",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_pistol_0004",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0014",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0012",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0015",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_lance_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_lance_0008",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_sword_0008",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_sword_0009",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_funnel_0001",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_funnel_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_pistol_0002",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_pistol_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_claym_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_claym_0009",
+                "rarity": 4
+            }
+        ]
+    },
+    {
+        "id": "weaponbox_constant_3",
+        "name": "Far Expedition Issue",
+        "type": "weapon",
+        "dbType": "weap-standard",
+        "startTime": "2026-01-22 03:00:00",
+        "endTime": null,
+        "startTimeAsia": "2026-01-22 03:00:00",
+        "endTimeAsia": null,
+        "featured": [
+            "wpn_sword_0016"
+        ],
+        "hardGuaranteed": [
+            "wpn_sword_0016"
+        ],
+        "allowed": [
+            {
+                "itemId": "wpn_sword_0016",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_sword_0021",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_sword_0011",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_claym_0004",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_lance_0010",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_funnel_0009",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_pistol_0008",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_lance_0004",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0005",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0007",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0005",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0007",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_pistol_0006",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0011",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_lance_0013",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_lance_0006",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0020",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0018",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0019",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0015",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0004",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0012",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0014",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_pistol_0012",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_pistol_0004",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0014",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0012",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0015",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_lance_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_lance_0008",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_sword_0008",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_sword_0009",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_funnel_0001",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_funnel_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_pistol_0002",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_pistol_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_claym_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_claym_0009",
+                "rarity": 4
+            }
+        ]
+    },
+    {
+        "id": "weaponbox_constant_4",
+        "name": "Rising Mount Issue",
+        "type": "weapon",
+        "dbType": "weap-standard",
+        "startTime": "2026-01-22 03:00:00",
+        "endTime": null,
+        "startTimeAsia": "2026-01-22 03:00:00",
+        "endTimeAsia": null,
+        "featured": [
+            "wpn_lance_0012"
+        ],
+        "hardGuaranteed": [
+            "wpn_lance_0012"
+        ],
+        "allowed": [
+            {
+                "itemId": "wpn_lance_0012",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_lance_0010",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_lance_0011",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_sword_0013",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_claym_0004",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_funnel_0010",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_pistol_0009",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_lance_0004",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0005",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0007",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0005",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0007",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_pistol_0006",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0011",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_lance_0013",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_lance_0006",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0020",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0018",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0019",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0015",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0004",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0012",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0014",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_pistol_0012",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_pistol_0004",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0014",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0012",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0015",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_lance_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_lance_0008",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_sword_0008",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_sword_0009",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_funnel_0001",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_funnel_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_pistol_0002",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_pistol_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_claym_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_claym_0009",
+                "rarity": 4
+            }
+        ]
+    },
+    {
+        "id": "weaponbox_constant_5",
+        "name": "Thunderous Peal Issue",
+        "type": "weapon",
+        "dbType": "weap-standard",
+        "startTime": "2026-01-22 03:00:00",
+        "endTime": null,
+        "startTimeAsia": "2026-01-22 03:00:00",
+        "endTimeAsia": null,
+        "featured": [
+            "wpn_claym_0007"
+        ],
+        "hardGuaranteed": [
+            "wpn_claym_0007"
+        ],
+        "allowed": [
+            {
+                "itemId": "wpn_claym_0007",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_claym_0006",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_claym_0008",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_funnel_0010",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_lance_0010",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_sword_0013",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_pistol_0008",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_lance_0004",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0005",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0007",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0005",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0007",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_pistol_0006",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0011",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_lance_0013",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_lance_0006",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0020",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0018",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0019",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0015",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0004",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0012",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0014",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_pistol_0012",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_pistol_0004",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0014",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0012",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0015",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_lance_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_lance_0008",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_sword_0008",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_sword_0009",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_funnel_0001",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_funnel_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_pistol_0002",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_pistol_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_claym_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_claym_0009",
+                "rarity": 4
+            }
+        ]
+    },
+    {
+        "id": "weponbox_1_0_1",
+        "name": "Smelting Forge Issue",
+        "type": "weapon",
+        "dbType": "weap-special",
+        "startTime": "2025-12-09 04:00:00",
+        "endTime": "2026-03-12 06:00:00",
+        "startTimeAsia": "2025-12-09 04:00:00",
+        "endTimeAsia": "2026-03-11 17:00:00",
+        "featured": [
+            "wpn_sword_0006"
+        ],
+        "hardGuaranteed": [
+            "wpn_sword_0006"
+        ],
+        "allowed": [
+            {
+                "itemId": "wpn_sword_0006",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_sword_0014",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_pistol_0008",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_pistol_0009",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_funnel_0010",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_lance_0010",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_claym_0006",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_lance_0004",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0005",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0007",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0005",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0007",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_pistol_0006",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0011",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_lance_0013",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_lance_0006",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0020",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0018",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0019",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0015",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0004",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0012",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0014",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_pistol_0012",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_pistol_0004",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0014",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0012",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0015",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_lance_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_lance_0008",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_sword_0008",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_sword_0009",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_funnel_0001",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_funnel_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_pistol_0002",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_pistol_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_claym_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_claym_0009",
+                "rarity": 4
+            }
+        ]
+    },
+    {
+        "id": "weponbox_1_0_2",
+        "name": "Graffiti Issue",
+        "type": "weapon",
+        "dbType": "weap-special",
+        "startTime": "2026-02-24 12:00:00",
+        "endTime": "2026-04-17 06:00:00",
+        "startTimeAsia": "2026-02-24 12:00:00",
+        "endTimeAsia": "2026-04-16 17:00:00",
+        "featured": [
+            "wpn_pistol_0010"
+        ],
+        "hardGuaranteed": [
+            "wpn_pistol_0010"
+        ],
+        "allowed": [
+            {
+                "itemId": "wpn_pistol_0010",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_pistol_0008",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_sword_0011",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_sword_0014",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_lance_0011",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_funnel_0010",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_claym_0008",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_lance_0004",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0005",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0007",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0005",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0007",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_pistol_0006",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0011",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_lance_0013",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_lance_0006",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0020",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0018",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0019",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0015",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0004",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0012",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0014",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_pistol_0012",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_pistol_0004",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0014",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0012",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0015",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_lance_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_lance_0008",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_sword_0008",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_sword_0009",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_funnel_0001",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_funnel_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_pistol_0002",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_pistol_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_claym_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_claym_0009",
+                "rarity": 4
+            }
+        ]
+    },
+    {
+        "id": "weponbox_1_0_3",
+        "name": "Express Delivery Issue",
+        "type": "weapon",
+        "dbType": "weap-special",
+        "startTime": "2026-02-07 12:00:00",
+        "endTime": "2026-03-29 12:00:00",
+        "startTimeAsia": "2026-02-07 12:00:00",
+        "endTimeAsia": "2026-03-29 12:00:00",
+        "featured": [
+            "wpn_funnel_0011"
+        ],
+        "hardGuaranteed": [
+            "wpn_funnel_0011"
+        ],
+        "allowed": [
+            {
+                "itemId": "wpn_funnel_0011",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_funnel_0010",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_funnel_0009",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_pistol_0008",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_sword_0012",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_sword_0014",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_claym_0004",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_lance_0004",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0005",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0007",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0005",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0007",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_pistol_0006",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0011",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_lance_0013",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_lance_0006",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0020",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0018",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0019",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0015",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0004",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0012",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0014",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_pistol_0012",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_pistol_0004",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0014",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0012",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0015",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_lance_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_lance_0008",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_sword_0008",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_sword_0009",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_funnel_0001",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_funnel_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_pistol_0002",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_pistol_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_claym_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_claym_0009",
+                "rarity": 4
+            }
+        ]
+    },
+    {
+        "id": "weponbox_1_1_1",
+        "name": "Budding Anew Issue",
+        "type": "weapon",
+        "dbType": "weap-special",
+        "startTime": "2026-03-12 07:00:00",
+        "endTime": "2026-05-22 12:00:00",
+        "startTimeAsia": "2026-03-11 18:00:00",
+        "endTimeAsia": "2026-05-22 12:00:00",
+        "featured": [
+            "wpn_pistol_0011"
+        ],
+        "hardGuaranteed": [
+            "wpn_pistol_0011"
+        ],
+        "allowed": [
+            {
+                "itemId": "wpn_pistol_0011",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_pistol_0009",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_pistol_0008",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_funnel_0010",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_sword_0012",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_claym_0008",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_lance_0011",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_lance_0004",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0005",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0007",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0005",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0007",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_pistol_0006",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0011",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_lance_0013",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_lance_0006",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0020",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0018",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0019",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0015",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0004",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0012",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0014",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_pistol_0012",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_pistol_0004",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0014",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0012",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0015",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_lance_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_lance_0008",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_sword_0008",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_sword_0009",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_funnel_0001",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_funnel_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_pistol_0002",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_pistol_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_claym_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_claym_0009",
+                "rarity": 4
+            }
+        ]
+    },
+    {
+        "id": "weponbox_1_1_2",
+        "name": "Scarlet Pearl Issue",
+        "type": "weapon",
+        "dbType": "weap-special",
+        "startTime": "2026-03-29 12:00:00",
+        "endTime": "2026-06-26 12:00:00",
+        "startTimeAsia": "2026-03-29 12:00:00",
+        "endTimeAsia": "2026-06-26 12:00:00",
+        "featured": [
+            "wpn_sword_0022"
+        ],
+        "hardGuaranteed": [
+            "wpn_sword_0022"
+        ],
+        "allowed": [
+            {
+                "itemId": "wpn_sword_0022",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_sword_0011",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_sword_0013",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_pistol_0008",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_claym_0006",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_funnel_0008",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_lance_0010",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_lance_0004",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0005",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0007",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0005",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0007",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_pistol_0006",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0011",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_lance_0013",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_lance_0006",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0020",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0018",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0019",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0015",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0004",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0012",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0014",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_pistol_0012",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_pistol_0004",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0014",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0012",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0015",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_lance_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_lance_0008",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_sword_0008",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_sword_0009",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_funnel_0001",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_funnel_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_pistol_0002",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_pistol_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_claym_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_claym_0009",
+                "rarity": 4
+            }
+        ]
+    },
+    {
+        "id": "weponbox_1_2_1",
+        "name": "Drifting Raft Issue",
+        "type": "weapon",
+        "dbType": "weap-special",
+        "startTime": "2026-04-17 07:00:00",
+        "endTime": "2026-07-16 06:00:00",
+        "startTimeAsia": "2026-04-16 18:00:00",
+        "endTimeAsia": "2026-07-15 17:00:00",
+        "featured": [
+            "wpn_funnel_0015"
+        ],
+        "hardGuaranteed": [
+            "wpn_funnel_0015"
+        ],
+        "allowed": [
+            {
+                "itemId": "wpn_funnel_0015",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_funnel_0009",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_funnel_0010",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_sword_0013",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_lance_0011",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_pistol_0008",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_claym_0004",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_lance_0004",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0005",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0007",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0005",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0007",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_pistol_0006",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0011",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_lance_0013",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_lance_0006",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0020",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0018",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0019",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0015",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0004",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0012",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0014",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_pistol_0012",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_pistol_0004",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0014",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0012",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0015",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_lance_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_lance_0008",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_sword_0008",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_sword_0009",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_funnel_0001",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_funnel_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_pistol_0002",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_pistol_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_claym_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_claym_0009",
+                "rarity": 4
+            }
+        ]
+    },
+    {
+        "id": "weponbox_1_2_2",
+        "name": "Smelting Fire Issue",
+        "type": "weapon",
+        "dbType": "weap-special",
+        "startTime": "2026-05-14 12:00:00",
+        "endTime": "2026-06-05 06:00:00",
+        "startTimeAsia": "2026-05-14 12:00:00",
+        "endTimeAsia": "2026-06-04 17:00:00",
+        "featured": [
+            "wpn_sword_0006"
+        ],
+        "hardGuaranteed": [
+            "wpn_sword_0006"
+        ],
+        "allowed": [
+            {
+                "itemId": "wpn_sword_0006",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_sword_0012",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_sword_0014",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_pistol_0009",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_funnel_0008",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_lance_0010",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_claym_0006",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_lance_0004",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0005",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0007",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0005",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0007",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_pistol_0006",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0011",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_lance_0013",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_lance_0006",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0020",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0018",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0019",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0015",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0004",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0012",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0014",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_pistol_0012",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_pistol_0004",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0014",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0012",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0015",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_lance_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_lance_0008",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_sword_0008",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_sword_0009",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_funnel_0001",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_funnel_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_pistol_0002",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_pistol_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_claym_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_claym_0009",
+                "rarity": 4
+            }
+        ]
+    },
+    {
+        "id": "weponbox_1_2_3",
+        "name": "Swift Walker Issue",
+        "type": "weapon",
+        "dbType": "weap-special",
+        "startTime": "2026-05-14 12:00:00",
+        "endTime": "2026-06-05 06:00:00",
+        "startTimeAsia": "2026-05-14 12:00:00",
+        "endTimeAsia": "2026-06-04 17:00:00",
+        "featured": [
+            "wpn_funnel_0011"
+        ],
+        "hardGuaranteed": [
+            "wpn_funnel_0011"
+        ],
+        "allowed": [
+            {
+                "itemId": "wpn_funnel_0011",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_funnel_0009",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_funnel_0008",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_pistol_0008",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_sword_0014",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_claym_0004",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_lance_0010",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_lance_0004",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0005",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0007",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0005",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0007",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_pistol_0006",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0011",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_lance_0013",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_lance_0006",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0020",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0018",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0019",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0015",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0004",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0012",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0014",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_pistol_0012",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_pistol_0004",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0014",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0012",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0015",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_lance_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_lance_0008",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_sword_0008",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_sword_0009",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_funnel_0001",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_funnel_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_pistol_0002",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_pistol_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_claym_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_claym_0009",
+                "rarity": 4
+            }
+        ]
+    },
+    {
+        "id": "weponbox_1_3_1",
+        "name": "Scarlet Knot Issue",
+        "type": "weapon",
+        "dbType": "weap-special",
+        "startTime": "2026-06-05 07:00:00",
+        "endTime": "2026-08-09 12:00:00",
+        "startTimeAsia": "2026-06-04 18:00:00",
+        "endTimeAsia": "2026-08-09 12:00:00",
+        "featured": [
+            "wpn_claym_0017"
+        ],
+        "hardGuaranteed": [
+            "wpn_claym_0017"
+        ],
+        "allowed": [
+            {
+                "itemId": "wpn_claym_0017",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_claym_0006",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_claym_0008",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_pistol_0009",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_sword_0011",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_funnel_0008",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_lance_0010",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_lance_0004",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0005",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0007",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0005",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0007",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_pistol_0006",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0011",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_lance_0013",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_lance_0006",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0020",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0018",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0019",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0015",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0004",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0012",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0014",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_pistol_0012",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_pistol_0004",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0014",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0012",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0015",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_lance_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_lance_0008",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_sword_0008",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_sword_0009",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_funnel_0001",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_funnel_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_pistol_0002",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_pistol_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_claym_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_claym_0009",
+                "rarity": 4
+            }
+        ]
+    },
+    {
+        "id": "weponbox_1_3_2",
+        "name": "Crimson Hued Issue",
+        "type": "weapon",
+        "dbType": "weap-special",
+        "startTime": "2026-06-26 12:00:00",
+        "endTime": "2026-09-02 06:00:00",
+        "startTimeAsia": "2026-06-26 12:00:00",
+        "endTimeAsia": "2026-09-01 17:00:00",
+        "featured": [
+            "wpn_lance_0015"
+        ],
+        "hardGuaranteed": [
+            "wpn_lance_0015"
+        ],
+        "allowed": [
+            {
+                "itemId": "wpn_lance_0015",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_lance_0010",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_lance_0011",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_pistol_0009",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_sword_0012",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_funnel_0009",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_claym_0004",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_lance_0004",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0005",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0007",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0005",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0007",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_pistol_0006",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0011",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_lance_0013",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_lance_0006",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0020",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0018",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0019",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0015",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0004",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0012",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0014",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_pistol_0012",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_pistol_0004",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0014",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0012",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0015",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_lance_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_lance_0008",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_sword_0008",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_sword_0009",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_funnel_0001",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_funnel_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_pistol_0002",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_pistol_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_claym_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_claym_0009",
+                "rarity": 4
+            }
+        ]
+    },
+    {
+        "id": "weponbox_1_4_1",
+        "name": "Military Grade Issue",
+        "type": "weapon",
+        "dbType": "weap-special",
+        "startTime": "2026-07-16 07:00:00",
+        "endTime": null,
+        "startTimeAsia": "2026-07-15 18:00:00",
+        "endTimeAsia": null,
+        "featured": [
+            "wpn_funnel_0016"
+        ],
+        "hardGuaranteed": [
+            "wpn_funnel_0016"
+        ],
+        "allowed": [
+            {
+                "itemId": "wpn_funnel_0016",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_claym_0006",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_pistol_0008",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_sword_0013",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_lance_0011",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_funnel_0008",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_funnel_0009",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_lance_0004",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0005",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0007",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0005",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0007",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_pistol_0006",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0011",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_lance_0013",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_lance_0006",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0020",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0018",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0019",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0015",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0004",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0012",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0014",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_pistol_0012",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_pistol_0004",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0014",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0012",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0015",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_lance_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_lance_0008",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_sword_0008",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_sword_0009",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_funnel_0001",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_funnel_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_pistol_0002",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_pistol_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_claym_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_claym_0009",
+                "rarity": 4
+            }
+        ]
+    },
+    {
+        "id": "weponbox_1_4_2",
+        "name": "Bedazzled Issue",
+        "type": "weapon",
+        "dbType": "weap-special",
+        "startTime": "2026-08-09 12:00:00",
+        "endTime": null,
+        "startTimeAsia": "2026-08-09 12:00:00",
+        "endTimeAsia": null,
+        "featured": [
+            "wpn_lance_0014"
+        ],
+        "hardGuaranteed": [
+            "wpn_lance_0014"
+        ],
+        "allowed": [
+            {
+                "itemId": "wpn_lance_0014",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_claym_0008",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_pistol_0009",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_lance_0010",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_lance_0011",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_funnel_0008",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_sword_0012",
+                "rarity": 6
+            },
+            {
+                "itemId": "wpn_lance_0004",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0005",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0007",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0005",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0007",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_pistol_0006",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0011",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_lance_0013",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_lance_0006",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0020",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0018",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0019",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_sword_0015",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0004",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0012",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_funnel_0014",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_pistol_0012",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_pistol_0004",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0014",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0012",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_claym_0015",
+                "rarity": 5
+            },
+            {
+                "itemId": "wpn_lance_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_lance_0008",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_sword_0008",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_sword_0009",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_funnel_0001",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_funnel_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_pistol_0002",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_pistol_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_claym_0003",
+                "rarity": 4
+            },
+            {
+                "itemId": "wpn_claym_0009",
+                "rarity": 4
+            }
+        ]
+    }
+];
