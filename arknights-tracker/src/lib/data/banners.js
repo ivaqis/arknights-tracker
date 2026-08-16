@@ -3,6 +3,7 @@
 export const banners = [
   {
     id: "standard_01",
+    gameId: "standard",
     name: "Basic Headhunting",
     type: "standard",
     startTime: "2026-01-22 00:00:00",
@@ -22,6 +23,7 @@ export const banners = [
   },
   {
     id: "new_player_01",
+    gameId: "beginner",
     name: "New Horizons Headhunting",
     type: "new-player",
     startTime: "2026-01-22 00:00:00",
