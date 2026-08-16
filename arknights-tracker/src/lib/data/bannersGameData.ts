@@ -1,6 +1,6 @@
 import type { BannerGameData } from "$lib/classes/banners/BannerGameData";
 
-export const bannersGameData: BannerGameData[] = [
+export const bannersGameData: readonly BannerGameData[] = [
     {
         "id": "beginner",
         "name": "New Horizons",
