@@ -687,7 +687,8 @@
     "hobbies": "Sở thích",
     "goToEssences": "Đi đến Tinh hoa",
     "essenceLocations": "Vị trí Tinh hoa",
-    "recommendedOperators": "Toán thủ đề xuất"
+    "recommendedOperators": "Toán thủ đề xuất",
+    "costValue2": "Điểm KN tiêu hao"
   },
   "bioValues": {
     "Unknown": "Không rõ"

@@ -1645,6 +1645,23 @@
         },
         "battleSkill": {
             "elementType": "nature",
+            "costValue": {
+                "dataType": "float",
+                "data": [
+                    100.0,
+                    100.0,
+                    100.0,
+                    100.0,
+                    100.0,
+                    100.0,
+                    100.0,
+                    100.0,
+                    100.0,
+                    100.0,
+                    100.0,
+                    100.0
+                ]
+            },
             "gravityPullDmgMultiplier": {
                 "dataType": "percent",
                 "data": [

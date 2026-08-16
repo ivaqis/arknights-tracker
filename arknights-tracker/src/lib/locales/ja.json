@@ -645,7 +645,8 @@
     "hobbies": "趣味",
     "goToEssences": "エッセンスへ移動",
     "essenceLocations": "エッセンスの場所",
-    "recommendedOperators": "おすすめオペレーター"
+    "recommendedOperators": "おすすめオペレーター",
+    "costValue2": "SP消費"
   },
   "bioValues": {
     "Unknown": "不明"

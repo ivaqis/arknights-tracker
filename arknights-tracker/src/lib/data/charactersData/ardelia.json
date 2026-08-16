@@ -1636,6 +1636,23 @@
         },
         "battleSkill": {
             "elementType": "nature",
+            "costValue": {
+                "dataType": "float",
+                "data": [
+                    100.0,
+                    100.0,
+                    100.0,
+                    100.0,
+                    100.0,
+                    100.0,
+                    100.0,
+                    100.0,
+                    100.0,
+                    100.0,
+                    100.0,
+                    100.0
+                ]
+            },
             "dmgMultiplier": {
                 "dataType": "percent",
                 "data": [

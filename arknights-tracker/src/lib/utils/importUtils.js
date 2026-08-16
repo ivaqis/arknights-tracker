@@ -9,8 +9,10 @@ import { banners } from "$lib/data/banners";
 const normalize = (str) => str?.toLowerCase().replace(/[^a-z0-9]/g, "") || "";
 
 const sortPulls = (a, b) => {
-    const timeDiff = a.time.getTime() - b.time.getTime();
-    if (timeDiff !== 0) return timeDiff; 
+    const timeA = (a.time instanceof Date) ? a.time.getTime() : new Date(a.time).getTime();
+    const timeB = (b.time instanceof Date) ? b.time.getTime() : new Date(b.time).getTime();
+    const timeDiff = timeA - timeB;
+    if (timeDiff !== 0) return timeDiff;
     return (a.seqId || 0) - (b.seqId || 0);
 };
 
@@ -24,26 +26,26 @@ function resolveServerId(specificServerId) {
 
 function getServerOffset(specificServerId) {
     const sid = resolveServerId(specificServerId);
-    if (sid === "2") return 8; 
-    return -5; 
+    if (sid === "2") return 8;
+    return -5;
 }
 
 function getBannerDates(banner, specificServerId) {
     if (!banner) return { startStr: null, endStr: null };
     const sid = resolveServerId(specificServerId);
     const isAsia = sid === "2";
-    
+
     const startStr = (isAsia && banner.startTimeAsia) ? banner.startTimeAsia : banner.startTime;
     const endStr = (isAsia && banner.endTimeAsia) ? banner.endTimeAsia : banner.endTime;
-    
+
     return { startStr, endStr };
 }
 
 function parseDateWithServer(dateStr, serverId) {
     if (!dateStr) return null;
-    
+
     const offset = getServerOffset(serverId);
-    
+
     const sign = offset >= 0 ? "+" : "-";
     const pad = (n) => String(Math.abs(n)).padStart(2, '0');
     const isoStr = dateStr.replace(" ", "T") + `${sign}${pad(offset)}:00`;
@@ -52,7 +54,7 @@ function parseDateWithServer(dateStr, serverId) {
 
 function findBannerConfigByTime(timestamp, categoryContext, serverId) {
     const time = new Date(timestamp).getTime();
-    const BUFFER = 4 * 60 * 60 * 1000; 
+    const BUFFER = 4 * 60 * 60 * 1000;
 
     let targetType = null;
     if (categoryContext) {
@@ -67,7 +69,7 @@ function findBannerConfigByTime(timestamp, categoryContext, serverId) {
         const dates = getBannerDates(b, serverId);
         const start = parseDateWithServer(dates.startStr, serverId).getTime();
         const end = dates.endStr ? parseDateWithServer(dates.endStr, serverId).getTime() : Infinity;
-        
+
         if (time < (start - BUFFER) || time > (end + BUFFER)) return false;
 
         if (targetType) {
@@ -86,8 +88,8 @@ function findBannerConfigByTime(timestamp, categoryContext, serverId) {
     });
 
     if (candidates.length > 0) {
-        candidates.sort((a, b) => 
-            parseDateWithServer(getBannerDates(b, serverId).startStr, serverId).getTime() - 
+        candidates.sort((a, b) =>
+            parseDateWithServer(getBannerDates(b, serverId).startStr, serverId).getTime() -
             parseDateWithServer(getBannerDates(a, serverId).startStr, serverId).getTime()
         );
         return candidates[0];
@@ -103,7 +105,7 @@ function getDistinctBannerId(pull, serverId) {
     const foundBanner = findBannerConfigByTime(pull.time, rawId, serverId);
     if (foundBanner) return foundBanner.id;
     const d = new Date(pull.time);
-    return `gen_${rawId}_${d.getFullYear()}_${d.getMonth()}_w${Math.floor(d.getDate()/7)}`; 
+    return `gen_${rawId}_${d.getFullYear()}_${d.getMonth()}_w${Math.floor(d.getDate() / 7)}`;
 }
 
 export function getInternalBannerType(rawId) {
@@ -124,6 +126,27 @@ export function getWeaponCategory(bannerId) {
     return 'other';
 }
 
+const nameMap = {
+    "contingent measure": "Prominent Edge",
+    "prominent edge": "Prominent Edge"
+};
+Object.values(characters).forEach(c => {
+    if (c.name) nameMap[c.name.toLowerCase()] = c.name;
+    if (c.id) nameMap[c.id.toLowerCase()] = c.name;
+});
+Object.values(weapons).forEach(w => {
+    if (w.name) nameMap[w.name.toLowerCase()] = w.name;
+    if (w.id) nameMap[w.id.toLowerCase()] = w.name;
+});
+
+export function canonicalizeName(rawName) {
+    if (!rawName) return '';
+    const trimmed = String(rawName).trim();
+    const lower = trimmed.toLowerCase();
+    if (nameMap[lower]) return nameMap[lower];
+    return trimmed.charAt(0).toUpperCase() + trimmed.slice(1);
+}
+
 export function parseGachaLog(list) {
     if (!Array.isArray(list)) throw new Error("Invalid data array");
     const timeCounters = {};
@@ -134,17 +157,18 @@ export function parseGachaLog(list) {
             return rawName && rawName !== 'undefined' && rawName !== 'null';
         })
         .map((item, i) => {
-            const rawName = item.name || item.charName || item.weaponName || item.character || item.item_name;
+            const rawName = canonicalizeName(item.name || item.charName || item.weaponName || item.character || item.item_name);
+
             const rarity = Number(item.rarity || item.rank || item.rank_type);
             const seqId = Number(item.seqId || item.sequence || 0);
             const isNew = item.isNew === true || String(item.isNew) === "true" || item.is_new === true;
             const isFree = item.isFree === true || String(item.isFree) === "true";
             let dateObj;
-            if (item.gachaTs) dateObj = new Date(Number(item.gachaTs)); 
+            if (item.gachaTs) dateObj = new Date(Number(item.gachaTs));
             else if (item.ts) dateObj = new Date(Number(item.ts) * 1000);
             else if (item.time) dateObj = new Date(item.time);
             else dateObj = new Date(0);
-            
+
             const rawBannerId = item.bannerId || item.poolId || item.gacha_type;
             const internalId = getInternalBannerType(rawBannerId);
             const itemType = item.weaponName ? 'weapon' : 'character';
@@ -152,25 +176,61 @@ export function parseGachaLog(list) {
             if (timeCounters[tsStr] === undefined) timeCounters[tsStr] = 0;
             const localIdx = timeCounters[tsStr]++;
             let uniqueId = item.id || (seqId !== 0 ? `${dateObj.getTime()}_${rawName}_${seqId}` : `${dateObj.getTime()}_${rawName}_loc${localIdx}`);
-            return { 
-                id: uniqueId, 
-                time: dateObj, 
-                name: rawName, 
-                rarity, 
-                bannerId: internalId, 
-                seqId, 
-                isNew, 
-                isFree, 
-                type: itemType, 
-                rawPoolId: rawBannerId 
+            return {
+                id: uniqueId,
+                time: dateObj,
+                name: rawName,
+                rarity,
+                bannerId: internalId,
+                seqId,
+                isNew,
+                isFree,
+                type: itemType,
+                rawPoolId: rawBannerId
             };
         }).sort(sortPulls);
 }
 
 export function mergePulls(oldList, newList) {
+    const combined = [...(oldList || []), ...(newList || [])];
     const map = new Map();
-    oldList.forEach(p => map.set(p.id, p));
-    newList.forEach(p => map.set(p.id, p));
+
+    for (const p of combined) {
+        if (!p || !p.name || p.name === 'undefined' || p.name === 'null') continue;
+        if (!p.time) continue;
+        const d = p.time instanceof Date ? p.time : new Date(p.time);
+        if (Number.isNaN(d.getTime()) || d.getFullYear() < 2000) continue;
+        p.time = d;
+
+        p.name = canonicalizeName(p.name);
+
+        const seqId = Number(p.seqId || 0);
+        const timeMs = d.getTime();
+        
+        let dedupKey;
+        if (seqId > 0) {
+            dedupKey = `seq_${timeMs}_${seqId}`;
+        } else if (p.id) {
+            dedupKey = `id_${String(p.id).toLowerCase()}`;
+        } else {
+            dedupKey = `sig_${timeMs}_${p.name.toLowerCase()}`;
+        }
+
+        if (map.has(dedupKey)) {
+            const existing = map.get(dedupKey);
+            if (!existing.rawPoolId && p.rawPoolId) existing.rawPoolId = p.rawPoolId;
+            if (existing.isNew === undefined && p.isNew !== undefined) existing.isNew = p.isNew;
+            if (existing.isFree === undefined && p.isFree !== undefined) existing.isFree = p.isFree;
+            if (existing.status === undefined && p.status !== undefined) existing.status = p.status;
+            if (existing.isGuaranteed === undefined && p.isGuaranteed !== undefined) existing.isGuaranteed = p.isGuaranteed;
+        } else {
+            if (seqId > 0) {
+                p.id = `${timeMs}_${p.name}_${seqId}`;
+            }
+            map.set(dedupKey, p);
+        }
+    }
+
     return Array.from(map.values()).sort(sortPulls);
 }
 
@@ -178,12 +238,12 @@ export function calculatePity(pulls, bannerId, accountServerId = null) {
     const isSpecialCategory = bannerId?.includes('special') && !bannerId.includes('weap');
     const isJointCategory = bannerId?.includes('joint');
     let pityCounter = 0;
-    const bannerSpecificCounts = {}; 
+    const bannerSpecificCounts = {};
 
     return pulls.map((pull) => {
         const uniqueBannerKey = getDistinctBannerId(pull, accountServerId);
         if (!bannerSpecificCounts[uniqueBannerKey]) bannerSpecificCounts[uniqueBannerKey] = 0;
-        
+
         let isFreePull = false;
         if (typeof pull.isFree === 'boolean') {
             isFreePull = pull.isFree;
@@ -197,7 +257,7 @@ export function calculatePity(pulls, bannerId, accountServerId = null) {
         if (!isFreePull) {
             pityCounter++;
         }
-        
+
         if (pull.rarity === 6) {
             const currentPityValue = isFreePull ? 1 : pityCounter;
             if (!isFreePull) pityCounter = 0;
@@ -219,17 +279,17 @@ export function calculateBannerStats(pulls, bannerId, accountServerId = null) {
             if (isJointType) return b.type === 'joint' || b.id?.includes('joint');
             return b.type === 'special';
         });
-        
-        candidates.sort((a, b) => 
-            parseDateWithServer(getBannerDates(b, accountServerId).startStr, accountServerId).getTime() - 
+
+        candidates.sort((a, b) =>
+            parseDateWithServer(getBannerDates(b, accountServerId).startStr, accountServerId).getTime() -
             parseDateWithServer(getBannerDates(a, accountServerId).startStr, accountServerId).getTime()
         );
-        
+
         const lastPullTime = pulls.length > 0 ? pulls[pulls.length - 1].time.getTime() : Date.now();
-        const activeBanner = candidates.find(b => 
+        const activeBanner = candidates.find(b =>
             parseDateWithServer(getBannerDates(b, accountServerId).startStr, accountServerId).getTime() <= lastPullTime
         );
-        
+
         if (activeBanner) currentViewBanner = activeBanner;
         else if (candidates.length > 0) currentViewBanner = candidates[0];
     }
@@ -249,10 +309,10 @@ export function calculateBannerStats(pulls, bannerId, accountServerId = null) {
     let won5050 = 0, total5050 = 0;
     let hasReceivedRateUp = false;
     let currentPity6 = 0, currentPity5 = 0;
-    let currentBannerMileage = 0; 
+    let currentBannerMileage = 0;
 
     const bannerSpecificCounts = {};
-    const rateUpCounters = {}; 
+    const rateUpCounters = {};
 
     pulls.forEach((pull) => {
         const itemName = normalize(pull.name);
@@ -273,7 +333,7 @@ export function calculateBannerStats(pulls, bannerId, accountServerId = null) {
         bannerSpecificCounts[uniqueBannerKey]++;
 
         if (isFreePull) {
-            return; 
+            return;
         }
 
         let isHardPityTriggered = false;
@@ -289,7 +349,7 @@ export function calculateBannerStats(pulls, bannerId, accountServerId = null) {
         if (pull.rarity === 6) {
             count6++;
             sumPity6 += currentPity6 + 1;
-            
+
             let historicConfig = banners.find(b => b.id === uniqueBannerKey);
             if (!historicConfig) historicConfig = findBannerConfigByTime(pull.time, pull.rawPoolId, accountServerId);
             const featuredList = historicConfig?.featured6 || currentViewBanner?.featured6 || [];
@@ -301,9 +361,9 @@ export function calculateBannerStats(pulls, bannerId, accountServerId = null) {
             });
 
             if (isFeatured) {
-                if (!isHardPityTriggered) { 
-                    won5050++; 
-                    total5050++; 
+                if (!isHardPityTriggered) {
+                    won5050++;
+                    total5050++;
                     pull.status = "won";
                 } else {
                     pull.status = "guaranteed";
@@ -315,17 +375,17 @@ export function calculateBannerStats(pulls, bannerId, accountServerId = null) {
                 total5050++;
                 pull.status = "lost";
             }
-            
+
             currentPity6 = 0;
             currentPity5 = 0;
-            
+
         } else if (pull.rarity === 5) {
             count5++;
             sumPity5 += currentPity5 + 1;
-            
+
             currentPity5 = 0;
             currentPity6++;
-            
+
         } else {
             currentPity6++;
             currentPity5++;
@@ -337,15 +397,15 @@ export function calculateBannerStats(pulls, bannerId, accountServerId = null) {
         if (currentBannerMileage < 300) {
             mileage = { show: true, current: currentBannerMileage, max: 300, label: "selector_6" };
         }
-    } 
+    }
     else if (isWeaponType) {
         if (!bannerId.includes('constant')) {
             if (currentBannerMileage < 100) {
-                mileage = { 
-                    show: true, 
-                    current: currentBannerMileage, 
-                    max: 100, 
-                    label: "arms_offering" 
+                mileage = {
+                    show: true,
+                    current: currentBannerMileage,
+                    max: 100,
+                    label: "arms_offering"
                 };
             } else {
                 const offset = currentBannerMileage - 100;
@@ -382,7 +442,7 @@ export function calculateBannerStats(pulls, bannerId, accountServerId = null) {
 
     return {
         total, pity6: currentPity6, pity5: currentPity5, mileage,
-        guarantee120: hasReceivedRateUp ? 0 : activeRateUpCounter, 
+        guarantee120: hasReceivedRateUp ? 0 : activeRateUpCounter,
         hasReceivedRateUp, count6, count5,
         avg6: count6 ? (sumPity6 / count6).toFixed(1) : "0.0",
         avg5: count5 ? (sumPity5 / count5).toFixed(1) : "0.0",
@@ -394,25 +454,25 @@ export function calculateBannerStats(pulls, bannerId, accountServerId = null) {
 
 export function findLCSMatches(existingPulls, newPulls) {
     if (!existingPulls.length || !newPulls.length) return [];
-    
+
     const sortedExisting = [...existingPulls].sort(sortPulls);
     const sortedNew = [...newPulls].sort(sortPulls);
-    
+
     const n = sortedExisting.length;
     const m = sortedNew.length;
-    
+
     const dp = Array.from({ length: n + 1 }, () => new Int32Array(m + 1));
-    
+
     const getWeight = (p) => {
         if (p.rarity === 6) return 100;
         if (p.rarity === 5) return 10;
         if (p.rarity === 4) return 2;
         return 1;
     };
-    
+
     const norm = (s) => String(s || '').toLowerCase().trim();
     const isSameType = (a, b) => !a.type || !b.type || a.type === b.type;
-    
+
     for (let i = 1; i <= n; i++) {
         const oldP = sortedExisting[i - 1];
         const oldWeight = getWeight(oldP);
@@ -425,7 +485,7 @@ export function findLCSMatches(existingPulls, newPulls) {
             }
         }
     }
-    
+
     let i = n, j = m;
     const matches = [];
     while (i > 0 && j > 0) {
@@ -446,7 +506,7 @@ export function findLCSMatches(existingPulls, newPulls) {
 
 export function validateAccountConsistency(existingPulls, newPulls, isRecoveryEnabled = false) {
     if (!existingPulls.length || !newPulls.length) return;
-    
+
     if (isRecoveryEnabled) {
         const matches = findLCSMatches(existingPulls, newPulls);
         if (matches.length === 0) {
@@ -455,7 +515,7 @@ export function validateAccountConsistency(existingPulls, newPulls, isRecoveryEn
         }
         return;
     }
-    
+
     const validNew = newPulls.filter(p => p && p.time && typeof p.time.getTime === 'function' && !Number.isNaN(p.time.getTime()));
     if (validNew.length === 0) return;
 
@@ -470,11 +530,11 @@ export function validateAccountConsistency(existingPulls, newPulls, isRecoveryEn
     if (overlaps.length === 0) return;
     const existingSignatures = new Set(overlaps.map(p => `${p.time.getTime()}_${p.name}`));
     let hasMatch = false;
-    for (const p of sortedNew) { 
-        if (existingSignatures.has(`${p.time.getTime()}_${p.name}`)) { 
-            hasMatch = true; 
-            break; 
-        } 
+    for (const p of sortedNew) {
+        if (existingSignatures.has(`${p.time.getTime()}_${p.name}`)) {
+            hasMatch = true;
+            break;
+        }
     }
     if (!hasMatch) {
         const startDate = new Date(minNewTime).toLocaleDateString();

@@ -687,7 +687,8 @@
     "hobbies": "爱好",
     "goToEssences": "前往基质",
     "essenceLocations": "基质位置",
-    "recommendedOperators": "推荐干员"
+    "recommendedOperators": "推荐干员",
+    "costValue2": "技力消耗"
   },
   "bioValues": {
     "Unknown": "未知"
