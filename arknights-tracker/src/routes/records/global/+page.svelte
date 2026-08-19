@@ -1,13 +1,6 @@
 <script lang="ts">
     import { goto } from "$app/navigation";
     import type { GlobalBannerData } from "$lib/api/globalBannerStats/contracts/GlobalBannerData";
-    import type { GlobalBannerDataJointV1 } from "$lib/api/globalBannerStats/contracts/GlobalBannerDataJointV1";
-    import type { GlobalBannerDataJointV2 } from "$lib/api/globalBannerStats/contracts/GlobalBannerDataJointV2";
-    import type { GlobalBannerDataSpecialV1 } from "$lib/api/globalBannerStats/contracts/GlobalBannerDataSpecialV1";
-    import type { GlobalBannerDataSpecialV2 } from "$lib/api/globalBannerStats/contracts/GlobalBannerDataSpecialV2";
-    import { GlobalBannerDataType } from "$lib/api/globalBannerStats/contracts/GlobalBannerDataType";
-    import type { GlobalBannerDataWeaponV1 } from "$lib/api/globalBannerStats/contracts/GlobalBannerDataWeaponV1";
-    import type { GlobalBannerDataWeaponV2 } from "$lib/api/globalBannerStats/contracts/GlobalBannerDataWeaponV2";
     import type { GlobalBannerStatsResponse } from "$lib/api/globalBannerStats/contracts/GlobalBannerStatsResponse";
     import { fetchGlobalBannerStats } from "$lib/api/globalBannerStats/fetchGlobalBannerStats";
     import { ApiBannerType } from "$lib/classes/banners/ApiBannerType";
@@ -142,11 +135,13 @@
 
                     {#if stats.stats.featured}
 
+                        {@const featured = stats.stats.featured}
+
                         <FeaturedGlobalBannerStats
                             featuredList={featuredList}
-                            totalCount={stats.stats.featured?.totalCount}
-                            freeCount={stats.stats.featured?.freeCount}
-                            guaranteedCount={stats.stats.featured?.guaranteedCount}
+                            totalCount={featured.totalCount}
+                            freeCount={featured.freeCount ?? null}
+                            guaranteedCount={featured.guaranteedCount ?? null}
                         />
 
                     {/if}

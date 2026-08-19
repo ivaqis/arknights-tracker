@@ -8,10 +8,10 @@
     import { t } from "$lib/i18n";
     import { formatCount } from "$lib/utils/textUtils";
 
-    export let featuredList: (Character | Weapon)[] = [];
-    export let totalCount: number = 0;
-    export let freeCount: number | null = null;
-    export let guaranteedCount: number | null = null;
+    export let featuredList: (Character | Weapon)[];
+    export let totalCount: number;
+    export let freeCount: number | null;
+    export let guaranteedCount: number | null;
 
 </script>
 
