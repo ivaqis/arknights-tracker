@@ -10,6 +10,7 @@
     import { Weapon } from "$lib/classes/weapons/Weapon";
     import Button from "$lib/components/Button.svelte";
     import FeaturedGlobalBannerStats from "$lib/components/globalBannerStats/FeaturedGlobalBannerStats.svelte";
+    import GlobalBannerBoard from "$lib/components/globalBannerStats/GlobalBannerBoard.svelte";
     import GlobalBannerStats from "$lib/components/globalBannerStats/GlobalBannerStats.svelte";
     import OverviewGlobalBannerStats from "$lib/components/globalBannerStats/OverviewGlobalBannerStats.svelte";
     import Icon from "$lib/components/Icon.svelte";
@@ -177,6 +178,14 @@
                         medianPity={stats5.medianPity}
                         freeRate={stats5.freeRate}
                         freeCount={stats5.freeCount}
+                    />
+
+                </div>
+
+                <div class="lg:col-span-8 xl:col-span-8 flex flex-col gap-6">
+
+                    <GlobalBannerBoard
+                        banner={selectedBanner}
                     />
 
                 </div>
