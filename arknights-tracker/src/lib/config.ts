@@ -4,7 +4,7 @@ export const config = {
 
 function getApiBase(): string {
     const runtimeBase: string | undefined =
-        window !== undefined
+        typeof window !== "undefined"
         && "__CONFIG__" in window
         && typeof window.__CONFIG__ === "object"
         && window.__CONFIG__ !== null

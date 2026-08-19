@@ -126,6 +126,21 @@ export class Banner {
         return new Date(`${date}T${time}Z`);
     }
 
+    private static formatDate(date: Date, locale: string): string {
+        try {
+            return new Intl.DateTimeFormat(locale, {
+                day: "2-digit",
+                month: "2-digit",
+                year: "2-digit"
+            }).format(date);
+        } catch (e) {
+            const y = String(date.getFullYear()).slice(-2);
+            const m = String(date.getMonth() + 1).padStart(2, "0");
+            const d = String(date.getDate()).padStart(2, "0");
+            return `${d}.${m}.${y}`;
+        }
+    }
+
     public get id(): string {
         return this._id;
     }
@@ -230,5 +245,21 @@ export class Banner {
         }
 
         return rarity === undefined ? true : rarity === item.rarity;
+    }
+
+    public getFormattedStartTime(locale?: string): string {
+        const loc = locale === "my" ? "ms-MY" : locale ?? "en";
+
+        return Banner.formatDate(this._startTime, loc);
+    }
+
+    public getFormattedEndTime(locale?: string): string | null {
+        if (this._endTime === null) {
+            return null;
+        }
+
+        const loc = locale === "my" ? "ms-MY" : locale ?? "en";
+
+        return Banner.formatDate(this._endTime, loc);
     }
 }
