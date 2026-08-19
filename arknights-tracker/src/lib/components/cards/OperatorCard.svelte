@@ -18,6 +18,8 @@
     export let className = "";
     export let isNew = undefined;
     export let hideName = false;
+    export let hideClass = false;
+    export let hideElement = false;
     export let materialIcon = null;
     export let materialCount = 0;
     export let baseSkills = null;
@@ -227,19 +229,22 @@
             <div
                 class="absolute inset-0 z-20 {iconPadding} flex flex-col items-start pointer-events-none"
             >
-                <div class="pointer-events-auto">
-                    <Tooltip
-                        textKey={`classes.${operator.class}`}
-                        class={`flex items-center justify-center filter drop-shadow-md cursor-pointer ${iconSize}`}
-                    >
-                        <Icon
-                            name={operator.class}
-                            class="w-full h-full text-white rounded-md"
-                        />
-                    </Tooltip>
-                </div>
 
-                {#if operator.element}
+                {#if !hideClass}
+                    <div class="pointer-events-auto">
+                        <Tooltip
+                            textKey={`classes.${operator.class}`}
+                            class={`flex items-center justify-center filter drop-shadow-md cursor-pointer ${iconSize}`}
+                        >
+                            <Icon
+                                name={operator.class}
+                                class="w-full h-full text-white rounded-md"
+                            />
+                        </Tooltip>
+                    </div>
+                {/if}
+
+                {#if !hideElement && operator.element}
                     <div class="pointer-events-auto {variant === 'small' ? 'mt-[-1px]' : 'mt-[-3px]'}">
                         <Tooltip
                             textKey={`elements.${operator.element}`}

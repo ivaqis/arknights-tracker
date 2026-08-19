@@ -1,8 +1,10 @@
+import { ApiBannerType } from "$lib/classes/banners/ApiBannerType";
+import type { ITextable } from "$lib/classes/ITextable";
 import { WeaponType } from "$lib/classes/weapons/WeaponType";
 import { type WeaponData, weapons } from "$lib/data/weapons";
 import { getMap } from "$lib/utils/collectionUtils";
 
-export class Weapon {
+export class Weapon implements ITextable {
     private static readonly weaponById = getMap(Object.values(weapons), item => item.id);
     private static readonly weaponByGameId = getMap(Object.values(weapons), item => item.gameId);
     private static readonly weaponByName = getMap(Object.values(weapons), item => item.name);
@@ -75,5 +77,9 @@ export class Weapon {
 
     public get skills(): readonly string[] {
         return this._skills;
+    }
+
+    public get i18nKey(): string {
+        return `weaponsList.${this._id}`;
     }
 }

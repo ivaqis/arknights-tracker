@@ -1,12 +1,22 @@
 <script lang="ts">
     import { goto } from "$app/navigation";
     import type { GlobalBannerData } from "$lib/api/globalBannerStats/contracts/GlobalBannerData";
+    import type { GlobalBannerDataJointV1 } from "$lib/api/globalBannerStats/contracts/GlobalBannerDataJointV1";
+    import type { GlobalBannerDataJointV2 } from "$lib/api/globalBannerStats/contracts/GlobalBannerDataJointV2";
+    import type { GlobalBannerDataSpecialV1 } from "$lib/api/globalBannerStats/contracts/GlobalBannerDataSpecialV1";
+    import type { GlobalBannerDataSpecialV2 } from "$lib/api/globalBannerStats/contracts/GlobalBannerDataSpecialV2";
+    import { GlobalBannerDataType } from "$lib/api/globalBannerStats/contracts/GlobalBannerDataType";
+    import type { GlobalBannerDataWeaponV1 } from "$lib/api/globalBannerStats/contracts/GlobalBannerDataWeaponV1";
+    import type { GlobalBannerDataWeaponV2 } from "$lib/api/globalBannerStats/contracts/GlobalBannerDataWeaponV2";
     import type { GlobalBannerStatsResponse } from "$lib/api/globalBannerStats/contracts/GlobalBannerStatsResponse";
     import { fetchGlobalBannerStats } from "$lib/api/globalBannerStats/fetchGlobalBannerStats";
     import { ApiBannerType } from "$lib/classes/banners/ApiBannerType";
     import { Banner } from "$lib/classes/banners/Banner";
     import { BannerType } from "$lib/classes/banners/BannerType";
+    import { Character } from "$lib/classes/characters/Character";
+    import { Weapon } from "$lib/classes/weapons/Weapon";
     import Button from "$lib/components/Button.svelte";
+    import FeaturedGlobalBannerStats from "$lib/components/globalBannerStats/FeaturedGlobalBannerStats.svelte";
     import Icon from "$lib/components/Icon.svelte";
     import Select from "$lib/components/Select.svelte";
     import type { SelectOption } from "$lib/components/SelectOption";
@@ -50,6 +60,8 @@
 
     let stats: GlobalBannerData | null = null;
 
+    let featuredList: (Character | Weapon)[] = [];
+
     $: updateBannerStats(selectedBannerId);
 
     async function updateBannerStats(bannerId: string): Promise<void> {
@@ -62,6 +74,15 @@
         }
 
         stats = res?.stats ?? null;
+
+        featuredList = stats?.stats.featured?.ids.map(id => Character.getByGameId(id) ?? Weapon.getByGameId(id) ?? null).filter(item => item !== null) ?? [];
+    }
+
+    function getFeaturedList(stats: GlobalBannerData | null): (Character | Weapon)[] {
+        return stats?.stats.featured?.ids
+                .map(id => Character.getByGameId(id) ?? Weapon.getByGameId(id) ?? null)
+                .filter(item => item !== null)
+            ?? [];
     }
 
 </script>
@@ -110,5 +131,32 @@
         {/if}
 
     </div>
+
+    {#key stats}
+
+        {#if stats}
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+
+                <div class="lg:col-span-4 xl:col-span-3 flex flex-col gap-4">
+
+                    {#if stats.stats.featured}
+
+                        <FeaturedGlobalBannerStats
+                            featuredList={featuredList}
+                            totalCount={stats.stats.featured?.totalCount}
+                            freeCount={stats.stats.featured?.freeCount}
+                            guaranteedCount={stats.stats.featured?.guaranteedCount}
+                        />
+
+                    {/if}
+
+                </div>
+
+            </div>
+
+        {/if}
+
+    {/key}
 
 </div>
