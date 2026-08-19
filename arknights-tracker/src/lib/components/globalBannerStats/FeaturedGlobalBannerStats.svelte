@@ -10,8 +10,8 @@
 
     export let featuredList: (Character | Weapon)[];
     export let totalCount: number;
-    export let freeCount: number | null;
-    export let guaranteedCount: number | null;
+    export let freeCount: number | null = null;
+    export let guaranteedCount: number | null = null;
 
 </script>
 
@@ -113,7 +113,7 @@
 
     {/if}
 
-    <div class="pt-3">
+    <div class="pt-3 space-y-3">
 
         {#if featuredList.length > 1}
 

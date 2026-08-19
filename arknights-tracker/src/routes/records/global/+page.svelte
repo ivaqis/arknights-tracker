@@ -10,6 +10,8 @@
     import { Weapon } from "$lib/classes/weapons/Weapon";
     import Button from "$lib/components/Button.svelte";
     import FeaturedGlobalBannerStats from "$lib/components/globalBannerStats/FeaturedGlobalBannerStats.svelte";
+    import GlobalBannerStats from "$lib/components/globalBannerStats/GlobalBannerStats.svelte";
+    import OverviewGlobalBannerStats from "$lib/components/globalBannerStats/OverviewGlobalBannerStats.svelte";
     import Icon from "$lib/components/Icon.svelte";
     import Select from "$lib/components/Select.svelte";
     import type { SelectOption } from "$lib/components/SelectOption";
@@ -68,7 +70,7 @@
 
         stats = res?.stats ?? null;
 
-        featuredList = stats?.stats.featured?.ids.map(id => Character.getByGameId(id) ?? Weapon.getByGameId(id) ?? null).filter(item => item !== null) ?? [];
+        featuredList = getFeaturedList(stats);
     }
 
     function getFeaturedList(stats: GlobalBannerData | null): (Character | Weapon)[] {
@@ -129,22 +131,53 @@
 
         {#if stats}
 
+            {@const featured = stats.stats.featured}
+            {@const overview = stats.stats.overview}
+            {@const stats6 = stats.stats.stats6}
+            {@const stats5 = stats.stats.stats5}
+
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
 
                 <div class="lg:col-span-4 xl:col-span-3 flex flex-col gap-4">
 
-                    {#if stats.stats.featured}
-
-                        {@const featured = stats.stats.featured}
+                    {#if featured}
 
                         <FeaturedGlobalBannerStats
                             featuredList={featuredList}
                             totalCount={featured.totalCount}
-                            freeCount={featured.freeCount ?? null}
-                            guaranteedCount={featured.guaranteedCount ?? null}
+                            freeCount={featured.freeCount}
+                            guaranteedCount={featured.guaranteedCount}
                         />
 
                     {/if}
+
+                    <OverviewGlobalBannerStats
+                        totalUsers={overview.totalUsers}
+                        totalPulls={overview.totalPulls}
+                        freePulls={overview.freePulls}
+                        oroberylSpent={overview.oroberylSpent}
+                        arsenalTicketsSpent={overview.arsenalTicketsSpent}
+                    />
+
+                    <GlobalBannerStats
+                        rarity={6}
+                        totalRate={stats6.totalRate}
+                        totalCount={stats6.totalCount}
+                        medianPity={stats6.medianPity}
+                        winrate={stats6.winrate}
+                        freeRate={stats6.freeRate}
+                        freeCount={stats6.freeCount}
+                        freeWinrate={stats6.freeWinrate}
+                    />
+
+                    <GlobalBannerStats
+                        rarity={5}
+                        totalRate={stats5.totalRate}
+                        totalCount={stats5.totalCount}
+                        medianPity={stats5.medianPity}
+                        freeRate={stats5.freeRate}
+                        freeCount={stats5.freeCount}
+                    />
 
                 </div>
 

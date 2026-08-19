@@ -8,7 +8,7 @@
         {title}
     </span>
 
-    <div class="font-bold text-lg font-nums text-[#21272C] dark:text-[#FDFDFD]">
+    <div class="flex items-center gap-1.5 font-bold text-lg font-nums text-[#21272C] dark:text-[#FDFDFD]">
         <slot/>
     </div>
 
