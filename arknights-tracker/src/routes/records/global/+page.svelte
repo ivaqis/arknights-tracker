@@ -37,6 +37,10 @@
     $: selectBannerType(selectedBannerType);
     $: selectBanner(selectedBannerId);
 
+    $: hasBannerSelector =
+        selectedBannerType !== ApiBannerType.CHAR_BEGINNER
+        && selectedBannerType !== ApiBannerType.CHAR_STANDARD;
+
     function selectBannerType(bannerType: ApiBannerType): void {
         selectableBanners = Banner.getListByApiType(bannerType);
         bannerOptions = getBannerOptions(selectableBanners);
@@ -144,7 +148,7 @@
 
         </div>
 
-        {#if bannerOptions.length > 1}
+        {#if hasBannerSelector}
 
             <div class="w-full sm:w-1/2">
 
