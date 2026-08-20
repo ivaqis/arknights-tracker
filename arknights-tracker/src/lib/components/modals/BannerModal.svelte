@@ -19,7 +19,13 @@
     import Modal from "$lib/components/modals/Modal.svelte";
 
     export const bannerId = undefined;
+    /**
+     * @type {any}
+     */
     export let banner = null;
+    /**
+     * @type {string | null}
+     */
     export let pageContext = null;
 
     const dispatch = createEventDispatcher();

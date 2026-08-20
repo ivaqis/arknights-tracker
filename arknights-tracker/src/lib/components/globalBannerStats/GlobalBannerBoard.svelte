@@ -6,10 +6,8 @@
 
     export let banner: Banner;
 
-    export let clickHandler: (() => void) | undefined = undefined;
-
     let isActive = false;
-    let isUpcoming = false;
+    let isPast = false;
     let timeLeftStr: string | null = null;
 
     $: if (banner) {
@@ -19,7 +17,7 @@
     function updateStatus(banner: Banner) {
         const now = new Date();
 
-        isUpcoming = banner.endTime !== null && banner.endTime < now;
+        isPast = banner.endTime !== null && banner.endTime < now;
         isActive = banner.startTime < now && (!banner.endTime || banner.endTime > now);
 
         timeLeftStr = isActive && banner.endTime ? formatTimeLeft(banner.endTime) : null;
@@ -48,13 +46,7 @@
     }
 </script>
 
-<div
-    role="button"
-    tabindex="0"
-    on:click={clickHandler}
-    on:keydown={(e) => (e.key === "Enter" || e.key === " ") && clickHandler?.()}
-    class="relative w-full aspect-[21/9] bg-gray-200 dark:bg-[#1E1E1E] rounded-xl overflow-hidden shadow-2xl group border border-white/50 dark:border-[#444444] select-none cursor-pointer outline-none focus:ring-4 focus:ring-[#FACC15] transition-all"
->
+<div class="relative w-full aspect-[21/9] bg-gray-200 dark:bg-[#1E1E1E] rounded-xl overflow-hidden shadow-2xl group border border-white/50 dark:border-[#444444]  transition-all">
 
     <div
         class="absolute inset-0"
@@ -81,8 +73,8 @@
             <span
                 class="w-2 h-2 rounded-full {
                 isActive ? 'bg-[#FACC15] animate-pulse'
-                    : isUpcoming ? 'bg-blue-400'
-                    : 'bg-gray-400'}"
+                    : isPast ? 'bg-gray-400'
+                    : 'bg-blue-400'}"
             ></span>
 
             <span class="text-xs font-bold text-white font-nums tracking-wide leading-none">
@@ -93,7 +85,7 @@
 
                 {:else}
 
-                    {isActive ? $t("status.active") : isUpcoming ? $t("status.upcoming") : $t("status.ended")}
+                    {isActive ? $t("status.active") : isPast ? $t("status.ended") : $t("status.upcoming")}
 
                 {/if}
 

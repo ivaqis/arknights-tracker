@@ -14,8 +14,10 @@
     import GlobalBannerStats from "$lib/components/globalBannerStats/GlobalBannerStats.svelte";
     import OverviewGlobalBannerStats from "$lib/components/globalBannerStats/OverviewGlobalBannerStats.svelte";
     import Icon from "$lib/components/Icon.svelte";
+    import BannerModal from "$lib/components/modals/BannerModal.svelte";
     import Select from "$lib/components/Select.svelte";
     import type { SelectOption } from "$lib/components/SelectOption";
+    import { type BannerData, banners } from "$lib/data/banners";
     import { t } from "$lib/i18n";
     import { currentLocale } from "$lib/stores/locale";
 
@@ -28,6 +30,7 @@
     let selectableBanners: readonly Banner[] = Banner.getListByApiType(selectedBannerType);
     let selectedBanner: Banner = selectableBanners.at(-1) as Banner;
     let selectedBannerId: string = selectedBanner.gameId;
+    let selectedBannerRawData: BannerData | null = banners.find(item => item.id === selectedBannerId || item.gameId === selectedBannerId) ?? null;
 
     let bannerOptions: SelectOption[] = getBannerOptions(selectableBanners);
 
@@ -39,10 +42,12 @@
         bannerOptions = getBannerOptions(selectableBanners);
         selectedBanner = selectableBanners.at(-1)!;
         selectedBannerId = selectedBanner.gameId;
+        selectedBannerRawData = banners.find(item => item.id === selectedBannerId || item.gameId === selectedBannerId) ?? null;
     }
 
     function selectBanner(bannerGameId: string): void {
         selectedBanner = Banner.getByGameId(bannerGameId)!;
+        selectedBannerRawData = banners.find(item => item.id === selectedBannerId || item.gameId === selectedBannerId) ?? null;
     }
 
     function getBannerOptions(selectableBanners: readonly Banner[]): SelectOption[] {
@@ -81,7 +86,25 @@
             ?? [];
     }
 
+    let isModalOpen: boolean = false;
+
+    function openModal(): void {
+        if (selectedBannerRawData) {
+            isModalOpen = true;
+        }
+    }
+
 </script>
+
+{#if isModalOpen && selectedBannerRawData}
+
+    <BannerModal
+        banner={selectedBannerRawData}
+        pageContext="global"
+        on:close={() => isModalOpen = false}
+    />
+
+{/if}
 
 <div class="w-full max-w-[1800px] px-6 pb-20">
 
@@ -184,9 +207,19 @@
 
                 <div class="lg:col-span-8 xl:col-span-8 flex flex-col gap-6">
 
-                    <GlobalBannerBoard
-                        banner={selectedBanner}
-                    />
+                    <button
+                        tabindex="0"
+                        class="select-none cursor-pointer outline-none rounded-xl focus:ring-4 focus:ring-[#FACC15]"
+                        on:click={openModal}
+                        on:keydown={(e) => (e.key === "Enter" || e.key === " ") && openModal()}
+                    >
+
+                        <GlobalBannerBoard
+                            banner={selectedBanner}
+
+                        />
+
+                    </button>
 
                 </div>
 
