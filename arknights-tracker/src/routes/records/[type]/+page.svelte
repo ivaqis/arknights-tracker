@@ -725,7 +725,13 @@
         if (bannerTrans !== `banners.${bannerType}`) return bannerTrans;
         return typeTrans;
     })();
+
+    $: pageTitle = bannerTitle ? `${bannerTitle} - ${$t("pages.records")} | Goyfield` : `${$t("pages.records")} | Goyfield`;
 </script>
+
+<svelte:head>
+    <title>{pageTitle}</title>
+</svelte:head>
 
 <div class="max-w-[1600px] justify-start min-h-screen">
     <div class="flex items-center gap-4 mb-5">

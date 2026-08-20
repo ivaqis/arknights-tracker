@@ -794,7 +794,7 @@
 </script>
 
 <svelte:head>
-    <title>{username ? `${username} - Profile | Goyfield` : 'Player Profile | Goyfield'}</title>
+    <title>{username ? `${username} - ${$t("pages.profile")} | Goyfield` : `${$t("pages.profile")} | Goyfield`}</title>
 </svelte:head>
 
 <div class="max-w-[1800px] w-full mx-auto pb-20">

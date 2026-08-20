@@ -166,6 +166,10 @@
     }
 </script>
 
+<svelte:head>
+    <title>{$t("pages.changelog")} | Goyfield</title>
+</svelte:head>
+
 {#if bannerForModal}
     <BannerModal
         banner={bannerForModal}
@@ -179,7 +183,7 @@
             <h2
                 class="text-3xl md:text-5xl tracking-wide text-[#21272C] dark:text-[#FDFDFD]"
             >
-                {$t("pages.changelog") || "Changelog"}
+                {$t("pages.changelog")}
             </h2>
         </div>
     </div>

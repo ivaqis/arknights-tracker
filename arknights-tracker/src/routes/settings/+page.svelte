@@ -454,6 +454,10 @@
     }
 </script>
 
+<svelte:head>
+    <title>{$t("pages.settings")} | Goyfield</title>
+</svelte:head>
+
 <div class="max-w-[1000px] w-full pb-20">
     <h1
         class="font-sdk dark:text-[#FDFDFD] text-5xl font-black text-[#21272C] mb-8"

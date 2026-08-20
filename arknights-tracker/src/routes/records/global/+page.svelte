@@ -452,6 +452,10 @@
     }
 </script>
 
+<svelte:head>
+    <title>{$t("global.title")} - {$t("pages.records")} | Goyfield</title>
+</svelte:head>
+
 {#if isModalOpen && currentBanner}
     <BannerModal
         banner={currentBanner}
@@ -472,7 +476,7 @@
         <h2
             class="font-sdk text-4xl md:text-5xl tracking-wide text-[#21272C] dark:text-[#FDFDFD]"
         >
-            {$t("global.title") || "Global Statistics"}
+            {$t("global.title")}
         </h2>
     </div>
 

@@ -999,6 +999,10 @@
     }
 </script>
 
+<svelte:head>
+    <title>{$t("import.title")} - {$t("pages.records")} | Goyfield</title>
+</svelte:head>
+
 <div class="max-w-[1600px] justify-start">
     <div class="flex items-center gap-4 mb-8">
         <Button

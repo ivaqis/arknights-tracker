@@ -1288,6 +1288,10 @@
     }
 </script>
 
+<svelte:head>
+    <title>{$t("pages.profile")} | Goyfield</title>
+</svelte:head>
+
 <div class="max-w-[1800px] w-full mx-auto pb-20">
     {#if profile && profile.background}
         <div class="fixed inset-0 w-[100vw] h-[100vh] pointer-events-none z-0 flex items-center justify-center overflow-hidden">

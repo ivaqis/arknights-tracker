@@ -380,6 +380,10 @@
 
 <svelte:window bind:innerWidth={windowWidth} />
 
+<svelte:head>
+  <title>{$t("pages.records")} | Goyfield</title>
+</svelte:head>
+
 <SettingsModal
   isOpen={isSettingsOpen}
   onClose={() => (isSettingsOpen = false)}

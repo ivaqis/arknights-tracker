@@ -3,6 +3,7 @@
     import { goto } from "$app/navigation";
     import { onMount } from "svelte";
     import { splitEquipmentView } from "$lib/stores/settings.js";
+    import { t } from "$lib/i18n";
     import EquipmentDetailsView from "$lib/components/equipment/EquipmentDetailsView.svelte";
 
     $: id = $page.params.id;
@@ -13,5 +14,9 @@
         }
     });
 </script>
+
+<svelte:head>
+    <title>{$t("pages.equipment")} | Goyfield</title>
+</svelte:head>
 
 <EquipmentDetailsView {id} showBackButton={true} />

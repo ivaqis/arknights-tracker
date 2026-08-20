@@ -641,6 +641,10 @@
     }
 </script>
 
+<svelte:head>
+    <title>{$t("pages.equipment")} | Goyfield</title>
+</svelte:head>
+
 <svelte:window on:scroll={checkScroll} on:resize={checkScroll} />
 
 <div class="max-w-[100%] max-h-[100%] min-h-screen h-full {$splitEquipmentView ? 'flex flex-col xl:flex-row justify-between items-start' : ''}">
@@ -649,7 +653,7 @@
             <h2
                 class="text-3xl md:text-5xl tracking-wide text-[#21272C] dark:text-[#FDFDFD]"
             >
-                {$t("pages.equipment") || "Equipment"}
+                {$t("pages.equipment")}
             </h2>
             <span class="text-gray-400 text-xl md:text-3xl font-normal">
                 / {filteredEquipment.length}

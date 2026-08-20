@@ -387,6 +387,10 @@
   }
 </script>
 
+<svelte:head>
+  <title>{$t("seo.title")}</title>
+</svelte:head>
+
 <div
   class="min-h-screen w-full relative flex flex-col items-center py-10 px-4 sm:px-8 font-sans text-[#21272C] dark:text-[#FDFDFD]"
 >

@@ -708,7 +708,14 @@
             window.scrollTo({ top: 0, behavior: "smooth" });
         }
     }
+
+    $: operatorName = $t(`characters.${id}`) !== `characters.${id}` ? $t(`characters.${id}`) : (char.name || id);
+    $: pageTitle = operatorName ? `${operatorName} - ${$t("pages.operators")} | Goyfield` : `${$t("pages.operators")} | Goyfield`;
 </script>
+
+<svelte:head>
+    <title>{pageTitle}</title>
+</svelte:head>
 
 <svelte:window on:keydown={handleKeydown} on:keyup={handleKeyup} />
 

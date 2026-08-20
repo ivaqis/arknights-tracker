@@ -133,11 +133,15 @@
     }
 </script>
 
+<svelte:head>
+    <title>{$t("pages.weapons")} | Goyfield</title>
+</svelte:head>
+
 <div class="max-w-[100%] max-h-[100%] justify-start min-h-screen">
     
     <div class="flex items-baseline flex-wrap gap-2 md:gap-3 mb-8 font-sdk">
         <h2 class="text-3xl md:text-5xl tracking-wide text-[#21272C] dark:text-[#FDFDFD]">
-            {$t("pages.weapons") || "Weapons"}
+            {$t("pages.weapons")}
         </h2>
         <span class="text-gray-400 text-xl md:text-3xl font-normal">
             / {filteredWeapons.length}

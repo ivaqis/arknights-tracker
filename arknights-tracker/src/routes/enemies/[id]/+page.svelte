@@ -171,7 +171,12 @@
         }
     }
 
+    $: pageTitle = enemyName ? `${enemyName} - ${$t("pages.enemies")} | Goyfield` : `${$t("pages.enemies")} | Goyfield`;
 </script>
+
+<svelte:head>
+    <title>{pageTitle}</title>
+</svelte:head>
 
 <svelte:window 
     on:keydown={(e) => {
