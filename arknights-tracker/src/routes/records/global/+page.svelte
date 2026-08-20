@@ -42,11 +42,13 @@
         bannerOptions = getBannerOptions(selectableBanners);
         selectedBanner = selectableBanners.at(-1)!;
         selectedBannerId = selectedBanner.gameId;
-        selectedBannerRawData = banners.find(item => item.id === selectedBannerId || item.gameId === selectedBannerId) ?? null;
     }
 
     function selectBanner(bannerGameId: string): void {
-        selectedBanner = Banner.getByGameId(bannerGameId)!;
+        selectedBanner = selectedBanner.gameId === bannerGameId
+            ? selectedBanner
+            : Banner.getByGameId(bannerGameId)!;
+
         selectedBannerRawData = banners.find(item => item.id === selectedBannerId || item.gameId === selectedBannerId) ?? null;
     }
 
@@ -109,34 +111,43 @@
 <div class="w-full max-w-[1800px] px-6 pb-20">
 
     <div class="flex items-center gap-4 mb-8">
+
         <Button
             variant="roundSmall"
             color="white"
             onClick={() => goto("/records")}
         >
-            <Icon name="arrowLeft" class="w-5 h-5" />
+
+            <Icon
+                name="arrowLeft"
+                class="w-5 h-5"
+            />
+
         </Button>
-        <h2
-            class="font-sdk text-4xl md:text-5xl tracking-wide text-[#21272C] dark:text-[#FDFDFD]"
-        >
+
+        <h2 class="font-sdk text-4xl md:text-5xl tracking-wide text-[#21272C] dark:text-[#FDFDFD]">
             {$t("global.title") || "Global Statistics"}
         </h2>
+
     </div>
 
     <div class="flex flex-col sm:flex-row gap-4 mb-8 max-w-2xl">
 
         <div class="w-full sm:w-1/2">
+
             <Select
                 options={typeOptions}
                 bind:value={selectedBannerType}
                 variant="black"
                 placeholder={$t("global.selectType")}
             />
+
         </div>
 
         {#if bannerOptions.length > 1}
 
             <div class="w-full sm:w-1/2">
+
                 {#key selectedBannerType}
                     <Select
                         options={bannerOptions}
@@ -145,6 +156,7 @@
                         placeholder={$t("global.selectBanner")}
                     />
                 {/key}
+
             </div>
 
         {/if}
@@ -216,7 +228,6 @@
 
                         <GlobalBannerBoard
                             banner={selectedBanner}
-
                         />
 
                     </button>
