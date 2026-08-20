@@ -9,6 +9,7 @@
     import { Character } from "$lib/classes/characters/Character";
     import { Weapon } from "$lib/classes/weapons/Weapon";
     import Button from "$lib/components/Button.svelte";
+    import GlobalBannerTimelineChart from "$lib/components/charts/GlobalBannerTimelineChart.svelte";
     import FeaturedGlobalBannerStats from "$lib/components/globalBannerStats/FeaturedGlobalBannerStats.svelte";
     import GlobalBannerBoard from "$lib/components/globalBannerStats/GlobalBannerBoard.svelte";
     import GlobalBannerStats from "$lib/components/globalBannerStats/GlobalBannerStats.svelte";
@@ -20,6 +21,7 @@
     import { type BannerData, banners } from "$lib/data/banners";
     import { t } from "$lib/i18n";
     import { currentLocale } from "$lib/stores/locale";
+    import { getISODate } from "$lib/utils/textUtils";
 
     const typeOptions: SelectOption[] = BannerType.list.map(item => ({
         value: item.id,
@@ -235,6 +237,12 @@
                         />
 
                     </button>
+
+                    <GlobalBannerTimelineChart
+                        values={stats.timeline}
+                        minDate={selectedBanner.getISOStartTime()}
+                        maxDate={selectedBanner.getISOEndTime() ?? getISODate(new Date())}
+                    />
 
                 </div>
 

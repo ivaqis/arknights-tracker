@@ -5,6 +5,7 @@ import { GameBannerType } from "$lib/classes/banners/GameBannerType";
 import { type BannerData, banners } from "$lib/data/banners";
 import { bannersGameData } from "$lib/data/bannersGameData";
 import { getMap, getMappedList } from "$lib/utils/collectionUtils";
+import { getISODate } from "$lib/utils/textUtils";
 
 export class Banner {
     private static readonly _list: readonly Banner[] = this.getBannerList();
@@ -261,5 +262,17 @@ export class Banner {
         const loc = locale === "my" ? "ms-MY" : locale ?? "en";
 
         return Banner.formatDate(this._endTime, loc);
+    }
+
+    public getISOStartTime(): `${number}-${number}-${number}` {
+        return getISODate(this._startTime);
+    }
+
+    public getISOEndTime(): `${number}-${number}-${number}` | null {
+        if (this._endTime === null) {
+            return null;
+        }
+
+        return getISODate(this._endTime);
     }
 }
