@@ -684,10 +684,13 @@
         
         targetLevel = val;
     }
-    $: if (!shiftPressed) {
-        targetLevel = level;
-    }
+
+    $: pageTitle = weaponName ? `${weaponName} - ${$t("pages.weapons")} | Goyfield` : `${$t("pages.weapons")} | Goyfield`;
 </script>
+
+<svelte:head>
+    <title>{pageTitle}</title>
+</svelte:head>
 
 <svelte:window
     on:keydown={(e) => {

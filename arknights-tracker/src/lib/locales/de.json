@@ -645,7 +645,8 @@
     "hobbies": "Hobbys",
     "goToEssences": "Zu den Essenzen",
     "essenceLocations": "Essenzen-Standorte",
-    "recommendedOperators": "Empfohlene Operatoren"
+    "recommendedOperators": "Empfohlene Operatoren",
+    "costValue2": "FP-Kosten"
   },
   "bioValues": {
     "Unknown": "Unbekannt"

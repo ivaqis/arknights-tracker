@@ -99,9 +99,11 @@
 
 
     let selectedFormula;
-
-
 </script>
+
+<svelte:head>
+    <title>{$t("pages.recipeTree")} | Goyfield</title>
+</svelte:head>
 
 <div class="max-w-[100%] flex flex-col xl:flex-row">
 

@@ -945,6 +945,10 @@
     }
 </script>
 
+<svelte:head>
+    <title>{$t("pages.essences")} | Goyfield</title>
+</svelte:head>
+
 <div class="max-w-[100%] min-h-screen flex flex-col xl:flex-row gap-8">
     <div
         class="w-full xl:w-[45%] flex flex-col xl:border-r border-gray-200 dark:border-[#333] xl:pr-8"

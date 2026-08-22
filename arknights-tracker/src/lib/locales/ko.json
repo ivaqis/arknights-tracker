@@ -645,7 +645,8 @@
     "hobbies": "취미",
     "goToEssences": "에센스로 이동",
     "essenceLocations": "에센스 위치",
-    "recommendedOperators": "추천 오퍼레이터"
+    "recommendedOperators": "추천 오퍼레이터",
+    "costValue2": "스킬 게이지 소모"
   },
   "bioValues": {
     "Unknown": "알 수 없음"

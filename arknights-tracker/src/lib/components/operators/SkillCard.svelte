@@ -116,7 +116,7 @@
         let raw = rawArray[idx];
 
         if (valObj.dataType === "percent")
-            return parseFloat((raw * 100).toFixed(2)) + "%";
+            return parseFloat((raw * 100).toFixed(4)) + "%";
         return raw;
     }
 
@@ -194,11 +194,11 @@
                     result = Math.round(num * 100) + "%";
                 else if (format === "0") result = Math.round(num);
                 else if (format === "0.0") result = num.toFixed(1);
-                else result = parseFloat(num.toFixed(2));
+                else result = parseFloat(num.toFixed(4));
             } else {
                 if (isPercentData)
-                    result = parseFloat((num * 100).toFixed(2)) + "%";
-                else result = parseFloat(num.toFixed(2));
+                    result = parseFloat((num * 100).toFixed(4)) + "%";
+                else result = parseFloat(num.toFixed(4));
             }
 
             return `<span class="text-[#38BDF8] font-bold drop-shadow-sm">${result}</span>`;
@@ -357,6 +357,10 @@
     function getLabel(key, conditionKey = null) {
         const localized = getLocalizedLabel(key, conditionKey);
         if (localized) return localized;
+        if (key === "costValue" && skillKey !== "ultimate") {
+            const trans2 = $t("stats.costValue2");
+            if (trans2 && trans2 !== "stats.costValue2") return trans2;
+        }
         const translated = $t(`stats.${key}`);
         if (translated && translated !== `stats.${key}`) return translated;
         return key.replace(/([A-Z])/g, " $1").trim();

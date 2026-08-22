@@ -2,7 +2,7 @@
 
 import { writable, get } from 'svelte/store';
 import { browser } from '$app/environment';
-import { mergePulls, calculatePity, calculateBannerStats, validateAccountConsistency, findLCSMatches } from '$lib/utils/importUtils';
+import { mergePulls, calculatePity, calculateBannerStats, validateAccountConsistency, findLCSMatches, canonicalizeName } from '$lib/utils/importUtils';
 import { accountStore } from './accounts';
 import { uploadLocalData, user } from "$lib/stores/cloudStore";
 
@@ -11,10 +11,6 @@ const defaultData = {
     "special": { pulls: [], stats: {} },
     "new-player": { pulls: [], stats: {} },
     "joint": { pulls: [], stats: {} }
-};
-
-const nameFixes = {
-    "Contingent Measure": "Prominent Edge",
 };
 
 function createPullStore() {
@@ -41,16 +37,15 @@ function createPullStore() {
 
                 data[key].pulls.forEach(p => {
                     p.time = new Date(p.time);
-
-                    if (p.name === "Contingent Measure") {
-                        p.name = "Prominent Edge";
-                    }
+                    p.name = canonicalizeName(p.name);
                 });
-                
+
+                data[key].pulls = mergePulls(data[key].pulls, []);
+
                 if (serverId) {
                     data[key].pulls = calculatePity(data[key].pulls, key, serverId);
                 }
-                
+
                 data[key].stats = calculateBannerStats(data[key].pulls, key, serverId);
             }
         });
@@ -125,9 +120,7 @@ function createPullStore() {
             if (!browser) return;
 
             newPulls.forEach(p => {
-                if (nameFixes[p.name]) {
-                    p.name = nameFixes[p.name];
-                }
+                p.name = canonicalizeName(p.name);
             });
 
             await new Promise(r => setTimeout(r, 100));
@@ -193,7 +186,7 @@ function createPullStore() {
                             }
 
                             oldList.forEach(oldP => {
-                                const freshP = incomeList.find(p => p.id === oldP.id);
+                                const freshP = incomeList.find(p => p.id === oldP.id || (p.seqId > 0 && p.seqId === oldP.seqId && p.time.getTime() === oldP.time.getTime()));
                                 if (freshP) {
                                     if (!oldP.rawPoolId && freshP.rawPoolId) { oldP.rawPoolId = freshP.rawPoolId; hasEnriched = true; }
                                     if (!oldP.type && freshP.type) { oldP.type = freshP.type; hasEnriched = true; }
@@ -203,15 +196,15 @@ function createPullStore() {
 
                             const oldCounts = {};
                             oldList.forEach(p => {
-                                const timeVal = (p && p.time && typeof p.time.getTime === 'function') ? p.time.getTime() : 0;
-                                const sig = `${timeVal}_${p.name}`;
+                                const timeVal = (p && p.time && typeof p.time.getTime === 'function') ? p.time.getTime() : (p && p.time ? new Date(p.time).getTime() : 0);
+                                const sig = (p.seqId > 0) ? `${timeVal}_${p.seqId}` : `${timeVal}_${String(p.name || '').toLowerCase()}`;
                                 oldCounts[sig] = (oldCounts[sig] || 0) + 1;
                             });
                             const reallyNew = [];
                             const newCounts = {};
                             incomeList.forEach(p => {
-                                const timeVal = (p && p.time && typeof p.time.getTime === 'function') ? p.time.getTime() : 0;
-                                const sig = `${timeVal}_${p.name}`;
+                                const timeVal = (p && p.time && typeof p.time.getTime === 'function') ? p.time.getTime() : (p && p.time ? new Date(p.time).getTime() : 0);
+                                const sig = (p.seqId > 0) ? `${timeVal}_${p.seqId}` : `${timeVal}_${String(p.name || '').toLowerCase()}`;
                                 newCounts[sig] = (newCounts[sig] || 0) + 1;
                                 if (newCounts[sig] > (oldCounts[sig] || 0)) {
                                     reallyNew.push(p);

@@ -246,6 +246,10 @@
     }
 </script>
 
+<svelte:head>
+    <title>{$t("pages.leaderboard")} | Goyfield</title>
+</svelte:head>
+
 <div class="max-w-[1600px] mx-auto w-full pb-10">
     
     <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-6 font-sdk">

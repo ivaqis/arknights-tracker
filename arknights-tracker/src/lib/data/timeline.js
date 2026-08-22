@@ -1065,7 +1065,7 @@ export const rawEvents = [
     startTime: "2026-08-19 12:00:00",
     endTime: "2026-09-01 17:00:00",
     endTimeAsia: "2026-09-02 04:00:00",
-    icon: "ev11-v1.4.webp",
+    icon: "ev14-v1.0.webp",
     url: "",
     color: "#359abe",
     layer: 2,

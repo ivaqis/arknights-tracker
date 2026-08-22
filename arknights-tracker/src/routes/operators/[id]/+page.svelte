@@ -683,11 +683,11 @@
             }
             if (format) {
                 if (format.includes("%")) {
-                    result = parseFloat((result * 100).toFixed(2)) + "%";
+                    result = parseFloat((result * 100).toFixed(4)) + "%";
                 } else if (format === "0") {
                     result = Math.round(result);
                 } else {
-                    result = parseFloat(Number(result).toFixed(2));
+                    result = parseFloat(Number(result).toFixed(4));
                 }
             }
             return `<span class="text-[#38BDF8] font-bold drop-shadow-sm">${result}</span>`;
@@ -708,7 +708,14 @@
             window.scrollTo({ top: 0, behavior: "smooth" });
         }
     }
+
+    $: operatorName = $t(`characters.${id}`) !== `characters.${id}` ? $t(`characters.${id}`) : (char.name || id);
+    $: pageTitle = operatorName ? `${operatorName} - ${$t("pages.operators")} | Goyfield` : `${$t("pages.operators")} | Goyfield`;
 </script>
+
+<svelte:head>
+    <title>{pageTitle}</title>
+</svelte:head>
 
 <svelte:window on:keydown={handleKeydown} on:keyup={handleKeyup} />
 

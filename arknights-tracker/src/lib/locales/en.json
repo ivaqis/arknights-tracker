@@ -781,7 +781,8 @@
     "file3": "FILE 3",
     "file4": "FILE 4",
     "profile": "Profile",
-    "hobbies": "Hobbies"
+    "hobbies": "Hobbies",
+    "costValue2": "SP Cost"
   },
   "bioValues": {
     "Unknown": "Unknown"

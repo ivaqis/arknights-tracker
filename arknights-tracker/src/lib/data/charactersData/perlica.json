@@ -1635,6 +1635,23 @@
         },
         "battleSkill": {
             "elementType": "electric",
+            "costValue": {
+                "dataType": "float",
+                "data": [
+                    100.0,
+                    100.0,
+                    100.0,
+                    100.0,
+                    100.0,
+                    100.0,
+                    100.0,
+                    100.0,
+                    100.0,
+                    100.0,
+                    100.0,
+                    100.0
+                ]
+            },
             "dmgMultiplier": {
                 "dataType": "percent",
                 "data": [

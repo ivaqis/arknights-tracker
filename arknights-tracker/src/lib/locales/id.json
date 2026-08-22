@@ -645,7 +645,8 @@
     "hobbies": "Hobi",
     "goToEssences": "Buka Esensi",
     "essenceLocations": "Lokasi Esensi",
-    "recommendedOperators": "Operator yang Direkomendasikan"
+    "recommendedOperators": "Operator yang Direkomendasikan",
+    "costValue2": "Biaya SP"
   },
   "bioValues": {
     "Unknown": "Tidak Diketahui"

@@ -645,7 +645,8 @@
     "hobbies": "Interessi",
     "goToEssences": "Vai alle Essenze",
     "essenceLocations": "Posizioni delle essenze",
-    "recommendedOperators": "Operatori consigliati"
+    "recommendedOperators": "Operatori consigliati",
+    "costValue2": "Costo PA"
   },
   "bioValues": {
     "Unknown": "Sconosciuto"

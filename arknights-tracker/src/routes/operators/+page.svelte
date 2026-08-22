@@ -236,6 +236,10 @@
     }
 </script>
 
+<svelte:head>
+    <title>{$t("pages.operators")} | Goyfield</title>
+</svelte:head>
+
 <div class="max-w-[100%] max-h-[100%] justify-start min-h-screen">
 
     <div class="flex items-baseline flex-wrap gap-2 md:gap-3 mb-8 font-sdk">

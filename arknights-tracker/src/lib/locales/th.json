@@ -645,7 +645,8 @@
     "hobbies": "งานอดิเรก",
     "goToEssences": "ไปยังเอสเซนส์",
     "essenceLocations": "ตำแหน่งเอสเซนส์",
-    "recommendedOperators": "โอเปอเรเตอร์ที่แนะนำ"
+    "recommendedOperators": "โอเปอเรเตอร์ที่แนะนำ",
+    "costValue2": "SP ที่​ใช้"
   },
   "bioValues": {
     "Unknown": "ไม่ทราบ"

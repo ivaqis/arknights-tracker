@@ -12,7 +12,7 @@
     import { currentUiLocale } from "$lib/stores/locale";
     import { characters } from "$lib/data/characters";
     import { weapons } from "$lib/data/weapons";
-    import { getInternalBannerType } from "$lib/utils/importUtils";
+    import { getInternalBannerType, canonicalizeName } from "$lib/utils/importUtils";
 
     import LZString from "lz-string";
 
@@ -64,10 +64,10 @@
 
     onMount(() => {
         loadSavedTokens();
-        //checkMaintenanceStatus();
-        //timerInterval = setInterval(() => {
-        //    checkMaintenanceStatus();
-        //}, 1000);
+        const storedServer = localStorage.getItem("ark_server_id");
+        if (storedServer === "2" || storedServer === "3") {
+            selectedServer = storedServer;
+        }
     });
 
     onDestroy(() => {
@@ -85,8 +85,10 @@
 
     function saveTokenToStorage(name, url) {
         try {
-            if (savedTokens.some((t) => t.url === url)) return;
-            const newToken = { name, url, date: Date.now() };
+            const srv = selectedServer || extractServerFromUrl(url) || "3";
+            const finalUrl = updateServerInUrl(url, srv);
+            if (savedTokens.some((t) => t.url === finalUrl || t.url === url)) return;
+            const newToken = { name, url: finalUrl, server: srv, date: Date.now() };
             const newList = [newToken, ...savedTokens];
             localStorage.setItem("ark_saved_tokens", JSON.stringify(newList));
             savedTokens = newList;
@@ -129,9 +131,80 @@
         localStorage.setItem("ark_saved_tokens", JSON.stringify(newList));
     }
 
+    function extractServerFromUrl(url) {
+        if (!url) return null;
+        try {
+            const decoded = decodeURIComponent(url);
+            const match = decoded.match(/[?&](?:server|serverId|server_id)=([^&#\s]+)/i);
+            if (match && match[1]) {
+                const val = match[1].toLowerCase().trim();
+                if (val === '2' || val.includes('asia') || val === 'as') return '2';
+                if (val === '3' || val.includes('america') || val.includes('europe') || val.includes('global') || val === '1') return '3';
+                return val;
+            }
+        } catch (e) {
+            const match = url.match(/[?&](?:server|serverId|server_id)=([^&#\s]+)/i);
+            if (match && match[1]) return match[1].trim();
+        }
+        return null;
+    }
+
+    function updateServerInUrl(url, newServer) {
+        if (!url) return url;
+        if (url.includes("server=")) {
+            return url.replace(/([?&])server=[^&#\s]*/i, `$1server=${newServer}`);
+        }
+        if (url.includes("serverId=")) {
+            return url.replace(/([?&])serverId=[^&#\s]*/i, `$1server=${newServer}`);
+        }
+        if (url.includes("server_id=")) {
+            return url.replace(/([?&])server_id=[^&#\s]*/i, `$1server=${newServer}`);
+        }
+        if (url.startsWith("http")) {
+            const separator = url.includes("?") ? "&" : "?";
+            return `${url}${separator}server=${newServer}`;
+        }
+        return url;
+    }
+
+    function handleServerChange(newServer) {
+        selectedServer = newServer;
+        if (urlInput) {
+            if (urlInput.startsWith("http")) {
+                urlInput = updateServerInUrl(urlInput, newServer);
+                realImportUrl = updateServerInUrl(realImportUrl, newServer);
+            } else {
+                const encodedToken = encodeURIComponent(
+                    decodeURIComponent(urlInput),
+                );
+                const baseUrl =
+                    "https://ef-webview.gryphline.com/page/gacha_weapon?pool_id=weaponbox_constant_2&u8_token=";
+                const tail = `&platform=Android&channel=6&subChannel=6&lang=ru-ru&server=${selectedServer}`;
+                realImportUrl = baseUrl + encodedToken + tail;
+            }
+        }
+    }
+
     function selectToken(token) {
-        urlInput = token.url;
-        realImportUrl = token.url;
+        if (!token) return;
+        let srv = token.server || extractServerFromUrl(token.url);
+        if (!srv && token.name) {
+            const nameLower = token.name.toLowerCase();
+            if (nameLower.includes('asia') || nameLower.includes('азия')) {
+                srv = '2';
+            } else if (nameLower.includes('america') || nameLower.includes('америк') || nameLower.includes('europe') || nameLower.includes('европ')) {
+                srv = '3';
+            }
+        }
+        if (srv === "2" || srv === "3") {
+            selectedServer = srv;
+        }
+        let url = token.url || "";
+        if (url && (srv === "2" || srv === "3")) {
+            url = updateServerInUrl(url, srv);
+        }
+        urlInput = url;
+        realImportUrl = url;
         activeTab = "new";
         isSaveTokenEnabled = false;
         errorMsg = "";
@@ -147,8 +220,13 @@
             return;
         }
         if (rawValue.trim().startsWith("http")) {
-            urlInput = rawValue;
-            realImportUrl = rawValue;
+            const trimmed = rawValue.trim();
+            const srv = extractServerFromUrl(trimmed);
+            if (srv === "2" || srv === "3") {
+                selectedServer = srv;
+            }
+            urlInput = trimmed;
+            realImportUrl = trimmed;
             return;
         }
         let cleanToken = rawValue.trim();
@@ -172,7 +250,6 @@
             }
         }
         if (!cleanToken) return;
-        const encodedToken = encodeURIComponent(decodeURIComponent(cleanToken));
         urlInput = cleanToken;
         e.target.value = cleanToken;
     }
@@ -509,7 +586,7 @@
                 pullsMapped,
                 sId,
                 false,
-                isRecoveryEnabled
+                isRecoveryEnabled,
             );
 
             pendingData = pullsMapped;
@@ -549,16 +626,21 @@
                 const fileContent = event.target.result;
                 let parsedData;
 
-                if (platformTab === 'protorig') {
+                if (platformTab === "protorig") {
                     try {
                         parsedData = JSON.parse(fileContent);
                     } catch (parseErr) {
-                        throw new Error($t("import.protorig_parse_error") || "Invalid JSON format");
+                        throw new Error(
+                            $t("import.protorig_parse_error") ||
+                                "Invalid JSON format",
+                        );
                     }
                 } else {
                     let decompressed = "";
                     try {
-                        decompressed = LZString.decompressFromUTF16(fileContent) || LZString.decompress(fileContent);
+                        decompressed =
+                            LZString.decompressFromUTF16(fileContent) ||
+                            LZString.decompress(fileContent);
                     } catch (decErr) {
                         console.error("LZString decompress error:", decErr);
                     }
@@ -570,37 +652,46 @@
                 }
 
                 const allPulls = [];
-                if (platformTab === 'protorig') {
+                if (platformTab === "protorig") {
                     const chars = parsedData.characters || [];
                     const weaponsList = parsedData.weapons || [];
-                    chars.forEach(item => {
-                        allPulls.push({ ...item, recordType: 'character' });
+                    chars.forEach((item) => {
+                        allPulls.push({ ...item, recordType: "character" });
                     });
-                    weaponsList.forEach(item => {
-                        allPulls.push({ ...item, recordType: 'weapon' });
+                    weaponsList.forEach((item) => {
+                        allPulls.push({ ...item, recordType: "weapon" });
                     });
 
                     if (allPulls.length === 0) {
-                        throw new Error($t("import.protorig_no_pulls_error") || "No pulls found in the file");
+                        throw new Error(
+                            $t("import.protorig_no_pulls_error") ||
+                                "No pulls found in the file",
+                        );
                     }
                 } else {
                     const profilesObj = parsedData.profileData || {};
                     const profileKeys = Object.keys(profilesObj);
-                    let selectedProfileKey = profileKeys.find(k => k === 'main') || profileKeys[0];
+                    let selectedProfileKey =
+                        profileKeys.find((k) => k === "main") || profileKeys[0];
 
-                    if (!selectedProfileKey || !profilesObj[selectedProfileKey]) {
+                    if (
+                        !selectedProfileKey ||
+                        !profilesObj[selectedProfileKey]
+                    ) {
                         throw new Error($t("import.endmin_no_profiles_error"));
                     }
 
                     const profile = profilesObj[selectedProfileKey];
                     if (profile && profile.pulls) {
-                        Object.entries(profile.pulls).forEach(([poolKey, pullsList]) => {
-                            if (Array.isArray(pullsList)) {
-                                pullsList.forEach(item => {
-                                    allPulls.push(item);
-                                });
-                            }
-                        });
+                        Object.entries(profile.pulls).forEach(
+                            ([poolKey, pullsList]) => {
+                                if (Array.isArray(pullsList)) {
+                                    pullsList.forEach((item) => {
+                                        allPulls.push(item);
+                                    });
+                                }
+                            },
+                        );
                     }
 
                     if (allPulls.length === 0) {
@@ -608,134 +699,170 @@
                     }
                 }
 
-                const pullsMapped = allPulls.map((item) => {
-                    if (platformTab === 'protorig') {
-                        const itemId = item.charId || item.weaponId || "";
-                        let rawName = item.charName || item.weaponName || itemId;
-                        const type = item.recordType;
-                        let rarity = Number(item.rarity || 4);
+                const pullsMapped = allPulls
+                    .map((item) => {
+                        if (platformTab === "protorig") {
+                            const itemId = item.charId || item.weaponId || "";
+                            let rawName =
+                                item.charName || item.weaponName || itemId;
+                            const type = item.recordType;
+                            let rarity = Number(item.rarity || 4);
 
-                        if (type === "character") {
-                            const characterKey = Object.keys(characters).find(k => characters[k].gameId === itemId);
-                            if (characterKey && characters[characterKey]) {
-                                rawName = characters[characterKey].name;
-                                rarity = characters[characterKey].rarity;
+                            if (type === "character") {
+                                const characterKey = Object.keys(
+                                    characters,
+                                ).find((k) => characters[k].gameId === itemId || k === itemId || characters[k].id === itemId);
+                                if (characterKey && characters[characterKey]) {
+                                    rawName = characters[characterKey].name;
+                                    rarity = characters[characterKey].rarity;
+                                }
+                            } else {
+                                const weaponKey = Object.keys(weapons).find(
+                                    (k) => weapons[k].gameId === itemId || k === itemId || weapons[k].id === itemId,
+                                );
+                                if (weaponKey && weapons[weaponKey]) {
+                                    rawName = weapons[weaponKey].name;
+                                    rarity = weapons[weaponKey].rarity;
+                                }
                             }
+
+                            rawName = canonicalizeName(rawName);
+
+                            const seqId = Number(item.seqId || 0);
+                            const rawTime = item.gachaTs;
+                            let dateObj;
+                            if (rawTime) {
+                                const numTime = Number(rawTime);
+                                if (!Number.isNaN(numTime) && numTime > 0) {
+                                    if (numTime < 32503680000) {
+                                        dateObj = new Date(numTime * 1000);
+                                    } else {
+                                        dateObj = new Date(numTime);
+                                    }
+                                } else {
+                                    dateObj = new Date(rawTime);
+                                }
+                            }
+                            if (!dateObj || Number.isNaN(dateObj.getTime())) {
+                                dateObj = new Date(0);
+                            }
+                            const uniqueId = `${dateObj.getTime()}_${rawName}_${seqId}`;
+
+                            const rawBannerId = item.poolId || "standard";
+                            const internalId =
+                                getInternalBannerType(rawBannerId);
+
+                            return {
+                                id: uniqueId,
+                                time: dateObj,
+                                name: rawName,
+                                rarity,
+                                bannerId: internalId,
+                                seqId,
+                                isNew: item.isNew === true,
+                                isFree: item.isFree === true || false,
+                                type,
+                                rawPoolId: rawBannerId,
+                            };
                         } else {
-                            const weaponKey = Object.keys(weapons).find(k => weapons[k].gameId === itemId);
-                            if (weaponKey && weapons[weaponKey]) {
-                                rawName = weapons[weaponKey].name;
-                                rarity = weapons[weaponKey].rarity;
-                            }
-                        }
+                            const itemId = item.item_id || "";
+                            let rawName = itemId;
+                            let type = "character";
+                            let rarity = Number(item.rarity || 4);
 
-                        const seqId = Number(item.seqId || 0);
-                        const rawTime = item.gachaTs;
-                        let dateObj;
-                        if (rawTime) {
-                            const numTime = Number(rawTime);
-                            if (!Number.isNaN(numTime) && numTime > 0) {
-                                if (numTime < 32503680000) {
-                                    dateObj = new Date(numTime * 1000);
-                                } else {
-                                    dateObj = new Date(numTime);
+                            if (itemId.startsWith("chr_")) {
+                                const characterKey = Object.keys(
+                                    characters,
+                                ).find((k) => characters[k].gameId === itemId || k === itemId || characters[k].id === itemId);
+                                if (characterKey && characters[characterKey]) {
+                                    rawName = characters[characterKey].name;
+                                    type = "character";
+                                    rarity = characters[characterKey].rarity;
                                 }
-                            } else {
-                                dateObj = new Date(rawTime);
-                            }
-                        }
-                        if (!dateObj || Number.isNaN(dateObj.getTime())) {
-                            dateObj = new Date(0);
-                        }
-                        const uniqueId = `${dateObj.getTime()}_${rawName}_${seqId}`;
-
-                        const rawBannerId = item.poolId || "standard";
-                        const internalId = getInternalBannerType(rawBannerId);
-
-                        return {
-                            id: uniqueId,
-                            time: dateObj,
-                            name: rawName,
-                            rarity,
-                            bannerId: internalId,
-                            seqId,
-                            isNew: item.isNew === true,
-                            isFree: item.isFree === true || false,
-                            type,
-                            rawPoolId: rawBannerId
-                        };
-                    } else {
-                        const itemId = item.item_id || "";
-                        let rawName = itemId;
-                        let type = "character";
-                        let rarity = Number(item.rarity || 4);
-
-                        if (itemId.startsWith("chr_")) {
-                            const characterKey = Object.keys(characters).find(k => characters[k].gameId === itemId);
-                            if (characterKey && characters[characterKey]) {
-                                rawName = characters[characterKey].name;
-                                type = "character";
-                                rarity = characters[characterKey].rarity;
-                            }
-                        } else if (itemId.startsWith("wpn_")) {
-                            const weaponKey = Object.keys(weapons).find(k => weapons[k].gameId === itemId);
-                            if (weaponKey && weapons[weaponKey]) {
-                                rawName = weapons[weaponKey].name;
-                                type = "weapon";
-                                rarity = weapons[weaponKey].rarity;
-                            }
-                        }
-
-                        const seqId = Number(item.sequence_id || item.sequence || 0);
-                        const rawTime = item.timestamp || item.gachaTs || item.ts;
-                        let dateObj;
-                        if (rawTime) {
-                            const numTime = Number(rawTime);
-                            if (!Number.isNaN(numTime) && numTime > 0) {
-                                if (numTime < 32503680000) {
-                                    dateObj = new Date(numTime * 1000);
-                                } else {
-                                    dateObj = new Date(numTime);
+                            } else if (itemId.startsWith("wpn_")) {
+                                const weaponKey = Object.keys(weapons).find(
+                                    (k) => weapons[k].gameId === itemId || k === itemId || weapons[k].id === itemId,
+                                );
+                                if (weaponKey && weapons[weaponKey]) {
+                                    rawName = weapons[weaponKey].name;
+                                    type = "weapon";
+                                    rarity = weapons[weaponKey].rarity;
                                 }
-                            } else {
-                                dateObj = new Date(rawTime);
                             }
-                        }
-                        if (!dateObj || Number.isNaN(dateObj.getTime())) {
-                            dateObj = new Date(0);
-                        }
-                        const uniqueId = `${dateObj.getTime()}_${rawName}_${seqId}`;
 
-                        const rawBannerId = item.poolId || item.cardPoolType || "standard";
-                        const internalId = getInternalBannerType(rawBannerId);
+                            rawName = canonicalizeName(rawName);
 
-                        return {
-                            id: uniqueId,
-                            time: dateObj,
-                            name: rawName,
-                            rarity,
-                            bannerId: internalId,
-                            seqId,
-                            isNew: item.is_new === true || item.isNew === true,
-                            isFree: item.is_free === true || item.isFree === true,
-                            type,
-                            rawPoolId: rawBannerId
-                        };
-                    }
-                }).filter(p => p.time.getFullYear() >= 2000).sort((a, b) => a.time.getTime() - b.time.getTime() || a.seqId - b.seqId);
+                            const seqId = Number(
+                                item.sequence_id || item.sequence || 0,
+                            );
+                            const rawTime =
+                                item.timestamp || item.gachaTs || item.ts;
+                            let dateObj;
+                            if (rawTime) {
+                                const numTime = Number(rawTime);
+                                if (!Number.isNaN(numTime) && numTime > 0) {
+                                    if (numTime < 32503680000) {
+                                        dateObj = new Date(numTime * 1000);
+                                    } else {
+                                        dateObj = new Date(numTime);
+                                    }
+                                } else {
+                                    dateObj = new Date(rawTime);
+                                }
+                            }
+                            if (!dateObj || Number.isNaN(dateObj.getTime())) {
+                                dateObj = new Date(0);
+                            }
+                            const uniqueId = `${dateObj.getTime()}_${rawName}_${seqId}`;
+
+                            const rawBannerId =
+                                item.poolId || item.cardPoolType || "standard";
+                            const internalId =
+                                getInternalBannerType(rawBannerId);
+
+                            return {
+                                id: uniqueId,
+                                time: dateObj,
+                                name: rawName,
+                                rarity,
+                                bannerId: internalId,
+                                seqId,
+                                isNew:
+                                    item.is_new === true || item.isNew === true,
+                                isFree:
+                                    item.is_free === true ||
+                                    item.isFree === true,
+                                type,
+                                rawPoolId: rawBannerId,
+                            };
+                        }
+                    })
+                    .filter((p) => p.time.getFullYear() >= 2000)
+                    .sort(
+                        (a, b) =>
+                            a.time.getTime() - b.time.getTime() ||
+                            a.seqId - b.seqId,
+                    );
 
                 lastParsedPulls = pullsMapped;
-
             } catch (err) {
                 console.error("Error processing backup file:", err);
-                errorMsg = err.message || (platformTab === 'protorig' ? ($t("import.protorig_parse_error") || "Error parsing file") : $t("import.endmin_unknown_error"));
+                errorMsg =
+                    err.message ||
+                    (platformTab === "protorig"
+                        ? $t("import.protorig_parse_error") ||
+                          "Error parsing file"
+                        : $t("import.endmin_unknown_error"));
             } finally {
                 isLoading = false;
             }
         };
 
         reader.onerror = () => {
-            errorMsg = platformTab === 'protorig' ? ($t("import.protorig_parse_error") || "Error parsing file") : $t("import.endmin_read_error");
+            errorMsg =
+                platformTab === "protorig"
+                    ? $t("import.protorig_parse_error") || "Error parsing file"
+                    : $t("import.endmin_read_error");
             isLoading = false;
         };
 
@@ -759,71 +886,89 @@
             const parsedData = JSON.parse(toolsDevJsonInput.trim());
             const records = parsedData?.data?.records;
             if (!Array.isArray(records)) {
-                throw new Error($t("import.endmin_no_pulls_error") || "No pulls found");
+                throw new Error(
+                    $t("import.endmin_no_pulls_error") || "No pulls found",
+                );
             }
 
-            const pullsMapped = records.map((item) => {
-                const itemId = item.itemId || "";
-                let rawName = item.itemName || itemId;
-                let type = item.recordType === "character" ? "character" : "weapon";
-                let rarity = Number(item.rarity || 4);
+            const pullsMapped = records
+                .map((item) => {
+                    const itemId = item.itemId || "";
+                    let rawName = item.itemName || itemId;
+                    let type =
+                        item.recordType === "character"
+                            ? "character"
+                            : "weapon";
+                    let rarity = Number(item.rarity || 4);
 
-                if (type === "character") {
-                    const characterKey = Object.keys(characters).find(k => characters[k].gameId === itemId);
-                    if (characterKey && characters[characterKey]) {
-                        rawName = characters[characterKey].name;
-                        rarity = characters[characterKey].rarity;
-                    }
-                } else {
-                    const weaponKey = Object.keys(weapons).find(k => weapons[k].gameId === itemId);
-                    if (weaponKey && weapons[weaponKey]) {
-                        rawName = weapons[weaponKey].name;
-                        rarity = weapons[weaponKey].rarity;
-                    }
-                }
-
-                const seqId = Number(item.seqId || 0);
-                const rawTime = item.gachaTs || item.timestamp || item.ts;
-                let dateObj;
-                if (rawTime) {
-                    const numTime = Number(rawTime);
-                    if (!Number.isNaN(numTime) && numTime > 0) {
-                        if (numTime < 32503680000) {
-                            dateObj = new Date(numTime * 1000);
-                        } else {
-                            dateObj = new Date(numTime);
+                    if (type === "character") {
+                        const characterKey = Object.keys(characters).find(
+                            (k) => characters[k].gameId === itemId || k === itemId || characters[k].id === itemId,
+                        );
+                        if (characterKey && characters[characterKey]) {
+                            rawName = characters[characterKey].name;
+                            rarity = characters[characterKey].rarity;
                         }
                     } else {
-                        dateObj = new Date(rawTime);
+                        const weaponKey = Object.keys(weapons).find(
+                            (k) => weapons[k].gameId === itemId || k === itemId || weapons[k].id === itemId,
+                        );
+                        if (weaponKey && weapons[weaponKey]) {
+                            rawName = weapons[weaponKey].name;
+                            rarity = weapons[weaponKey].rarity;
+                        }
                     }
-                }
-                if (!dateObj || Number.isNaN(dateObj.getTime())) {
-                    dateObj = new Date(0);
-                }
-                const uniqueId = `${dateObj.getTime()}_${rawName}_${seqId}`;
 
-                const rawBannerId = item.poolId || "standard";
-                const internalId = getInternalBannerType(rawBannerId);
+                    rawName = canonicalizeName(rawName);
 
-                return {
-                    id: uniqueId,
-                    time: dateObj,
-                    name: rawName,
-                    rarity,
-                    bannerId: internalId,
-                    seqId,
-                    isNew: item.isNew === true,
-                    isFree: item.isFree === true || false,
-                    type,
-                    rawPoolId: rawBannerId
-                };
-            }).filter(p => p.time.getFullYear() >= 2000).sort((a, b) => a.time.getTime() - b.time.getTime() || a.seqId - b.seqId);
+                    const seqId = Number(item.seqId || 0);
+                    const rawTime = item.gachaTs || item.timestamp || item.ts;
+                    let dateObj;
+                    if (rawTime) {
+                        const numTime = Number(rawTime);
+                        if (!Number.isNaN(numTime) && numTime > 0) {
+                            if (numTime < 32503680000) {
+                                dateObj = new Date(numTime * 1000);
+                            } else {
+                                dateObj = new Date(numTime);
+                            }
+                        } else {
+                            dateObj = new Date(rawTime);
+                        }
+                    }
+                    if (!dateObj || Number.isNaN(dateObj.getTime())) {
+                        dateObj = new Date(0);
+                    }
+                    const uniqueId = `${dateObj.getTime()}_${rawName}_${seqId}`;
+
+                    const rawBannerId = item.poolId || "standard";
+                    const internalId = getInternalBannerType(rawBannerId);
+
+                    return {
+                        id: uniqueId,
+                        time: dateObj,
+                        name: rawName,
+                        rarity,
+                        bannerId: internalId,
+                        seqId,
+                        isNew: item.isNew === true,
+                        isFree: item.isFree === true || false,
+                        type,
+                        rawPoolId: rawBannerId,
+                    };
+                })
+                .filter((p) => p.time.getFullYear() >= 2000)
+                .sort(
+                    (a, b) =>
+                        a.time.getTime() - b.time.getTime() ||
+                        a.seqId - b.seqId,
+                );
 
             lastParsedPulls = pullsMapped;
-
         } catch (err) {
             console.error("Error processing endfieldtools.dev data:", err);
-            errorMsg = err.message || $t("import.error_format") || "Invalid format";
+            errorMsg =
+                err.message || $t("import.error_format") || "Invalid format";
         } finally {
             isLoading = false;
         }
@@ -843,10 +988,20 @@
         return bannerId;
     }
 
-    $: if (lastParsedPulls && (platformTab === 'endmin' || platformTab === 'toolsdev' || platformTab === 'protorig') && isRecoveryEnabled !== undefined) {
+    $: if (
+        lastParsedPulls &&
+        (platformTab === "endmin" ||
+            platformTab === "toolsdev" ||
+            platformTab === "protorig") &&
+        isRecoveryEnabled !== undefined
+    ) {
         runSmartImportPreview(lastParsedPulls);
     }
 </script>
+
+<svelte:head>
+    <title>{$t("import.title")} - {$t("pages.records")} | Goyfield</title>
+</svelte:head>
 
 <div class="max-w-[1600px] justify-start">
     <div class="flex items-center gap-4 mb-8">
@@ -934,8 +1089,8 @@
                         <button
                             class="font-bold transition-all whitespace-nowrap select-none
                                 {platformTab === tab.id
-                                    ? 'text-[#21272C] dark:text-[#FDFDFD] max-[719px]:bg-white max-[719px]:dark:bg-[#383838] max-[719px]:shadow-sm max-[719px]:rounded-lg max-[719px]:px-4 max-[719px]:py-2 max-[719px]:text-xs min-[720px]:border-b-2 min-[720px]:border-[#FFE145] min-[720px]:px-6 min-[720px]:py-3 min-[720px]:text-sm'
-                                    : 'text-gray-400 dark:text-[#B7B6B3] hover:text-gray-600 max-[719px]:text-gray-500 max-[719px]:dark:text-[#B7B6B3] max-[719px]:px-4 max-[719px]:py-2 max-[719px]:text-xs min-[720px]:border-b-2 min-[720px]:border-transparent min-[720px]:hover:bg-gray-50 min-[720px]:hover:dark:bg-[#424242] min-[720px]:px-6 min-[720px]:py-3 min-[720px]:text-sm'}"
+                                ? 'text-[#21272C] dark:text-[#FDFDFD] max-[719px]:bg-white max-[719px]:dark:bg-[#383838] max-[719px]:shadow-sm max-[719px]:rounded-lg max-[719px]:px-4 max-[719px]:py-2 max-[719px]:text-xs min-[720px]:border-b-2 min-[720px]:border-[#FFE145] min-[720px]:px-6 min-[720px]:py-3 min-[720px]:text-sm'
+                                : 'text-gray-400 dark:text-[#B7B6B3] hover:text-gray-600 max-[719px]:text-gray-500 max-[719px]:dark:text-[#B7B6B3] max-[719px]:px-4 max-[719px]:py-2 max-[719px]:text-xs min-[720px]:border-b-2 min-[720px]:border-transparent min-[720px]:hover:bg-gray-50 min-[720px]:hover:dark:bg-[#424242] min-[720px]:px-6 min-[720px]:py-3 min-[720px]:text-sm'}"
                             on:click={() => (platformTab = tab.id)}
                         >
                             {tab.label}
@@ -1154,7 +1309,9 @@
                     <div
                         class="mb-6 p-3 bg-orange-50/70 dark:bg-orange-600/10 border-l-2 border-orange-500 rounded-r-lg max-w-4xl text-sm text-gray-600 dark:text-[#B7B6B3]"
                     >
-                        <span class="font-bold text-orange-600 dark:text-orange-400">
+                        <span
+                            class="font-bold text-orange-600 dark:text-orange-400"
+                        >
                             {$t("import.warning") || "Warning"}:
                         </span>
                         {@html $t("import.tracker_backup_warning")}
@@ -1162,7 +1319,9 @@
 
                     {#each [{ text: $t("import.endmin_step1") }, { text: $t("import.endmin_step2") }, { text: $t("import.endmin_step3") }] as step, i}
                         <div
-                            class="relative border-l-2 pl-10 {i === 2 ? 'border-transparent pb-4' : 'border-gray-200 dark:border-[#FDFD1F]/50 pb-6'}"
+                            class="relative border-l-2 pl-10 {i === 2
+                                ? 'border-transparent pb-4'
+                                : 'border-gray-200 dark:border-[#FDFD1F]/50 pb-6'}"
                         >
                             <div
                                 class="absolute -left-[21px] top-0 w-10 h-10 rounded-full bg-[#FFE145] border-2 border-[#FFE145] shadow-sm flex items-center justify-center font-sdk font-bold text-xl text-[#21272C] z-10"
@@ -1180,7 +1339,9 @@
                     <div
                         class="mb-6 p-3 bg-orange-50/70 dark:bg-orange-600/10 border-l-2 border-orange-500 rounded-r-lg max-w-4xl text-sm text-gray-600 dark:text-[#B7B6B3]"
                     >
-                        <span class="font-bold text-orange-600 dark:text-orange-400">
+                        <span
+                            class="font-bold text-orange-600 dark:text-orange-400"
+                        >
                             {$t("import.warning") || "Warning"}:
                         </span>
                         {@html $t("import.tracker_backup_warning")}
@@ -1188,7 +1349,9 @@
 
                     {#each [{ text: $t("import.toolsdev_step1") }, { text: $t("import.toolsdev_step2") }, { text: $t("import.toolsdev_step3") }] as step, i}
                         <div
-                            class="relative border-l-2 pl-10 {i === 2 ? 'border-transparent pb-1' : 'border-gray-200 dark:border-[#FDFD1F]/50 pb-4'}"
+                            class="relative border-l-2 pl-10 {i === 2
+                                ? 'border-transparent pb-1'
+                                : 'border-gray-200 dark:border-[#FDFD1F]/50 pb-4'}"
                         >
                             <div
                                 class="absolute -left-[21px] top-0 w-10 h-10 rounded-full bg-[#FFE145] border-2 border-[#FFE145] shadow-sm flex items-center justify-center font-sdk font-bold text-xl text-[#21272C] z-10"
@@ -1214,7 +1377,9 @@
                     <div
                         class="mb-6 p-3 bg-orange-50/70 dark:bg-orange-600/10 border-l-2 border-orange-500 rounded-r-lg max-w-4xl text-sm text-gray-600 dark:text-[#B7B6B3]"
                     >
-                        <span class="font-bold text-orange-600 dark:text-orange-400">
+                        <span
+                            class="font-bold text-orange-600 dark:text-orange-400"
+                        >
                             {$t("import.warning") || "Warning"}:
                         </span>
                         {@html $t("import.tracker_backup_warning")}
@@ -1222,7 +1387,9 @@
 
                     {#each [{ text: $t("import.protorig_step1") }, { text: $t("import.protorig_step2") }, { text: $t("import.protorig_step3") }] as step, i}
                         <div
-                            class="relative border-l-2 pl-10 {i === 2 ? 'border-transparent pb-4' : 'border-gray-200 dark:border-[#FDFD1F]/50 pb-6'}"
+                            class="relative border-l-2 pl-10 {i === 2
+                                ? 'border-transparent pb-4'
+                                : 'border-gray-200 dark:border-[#FDFD1F]/50 pb-6'}"
                         >
                             <div
                                 class="absolute -left-[21px] top-0 w-10 h-10 rounded-full bg-[#FFE145] border-2 border-[#FFE145] shadow-sm flex items-center justify-center font-sdk font-bold text-xl text-[#21272C] z-10"
@@ -1309,29 +1476,41 @@
                 {/if}
 
                 <div class="mb-6 {platformTab === 'ios' ? '' : 'pl-10'}">
-                    {#if platformTab === 'endmin'}
+                    {#if platformTab === "endmin"}
                         <div class="max-w-4xl mb-6 relative group">
                             <label
                                 for="endmin-file-input"
                                 class="flex flex-col items-center justify-center w-full min-h-[160px] p-6 border-2 border-dashed rounded-lg cursor-pointer transition-all text-center
                                 {isDragging
                                     ? 'bg-white border-[#FFE145] dark:bg-[#424242] dark:border-[#FFE145]'
-                                    : 'bg-gray-50 border-gray-300 dark:bg-[#343434] dark:border-[#444444] hover:bg-white hover:border-[#FFE145] hover:dark:border-[#FFE145]'
-                                }"
-                                on:dragover|preventDefault={() => (isDragging = true)}
-                                on:dragenter|preventDefault={() => (isDragging = true)}
-                                on:dragleave|preventDefault={() => (isDragging = false)}
+                                    : 'bg-gray-50 border-gray-300 dark:bg-[#343434] dark:border-[#444444] hover:bg-white hover:border-[#FFE145] hover:dark:border-[#FFE145]'}"
+                                on:dragover|preventDefault={() =>
+                                    (isDragging = true)}
+                                on:dragenter|preventDefault={() =>
+                                    (isDragging = true)}
+                                on:dragleave|preventDefault={() =>
+                                    (isDragging = false)}
                                 on:drop|preventDefault={handleFileDrop}
                             >
-                                <div class="flex flex-col items-center justify-center pt-5 pb-6">
+                                <div
+                                    class="flex flex-col items-center justify-center pt-5 pb-6"
+                                >
                                     <div class="text-[#FFE145] mb-3">
-                                        <Icon name="import" style="width: 48px; height: 48px;" />
+                                        <Icon
+                                            name="import"
+                                            style="width: 48px; height: 48px;"
+                                        />
                                     </div>
-                                    <p class="mb-2 text-sm text-gray-500 dark:text-gray-400 font-semibold">
+                                    <p
+                                        class="mb-2 text-sm text-gray-500 dark:text-gray-400 font-semibold"
+                                    >
                                         {$t("import.endmin_drag_drop")}
                                     </p>
-                                    <p class="text-xs text-gray-400 dark:text-gray-500">
-                                        {selectedFileName || $t("import.endmin_files_label")}
+                                    <p
+                                        class="text-xs text-gray-400 dark:text-gray-500"
+                                    >
+                                        {selectedFileName ||
+                                            $t("import.endmin_files_label")}
                                     </p>
                                 </div>
                                 <input
@@ -1343,11 +1522,15 @@
                                 />
                             </label>
                         </div>
-                    {:else if platformTab === 'toolsdev'}
-                        <div class="max-w-4xl mb-6 relative flex flex-col gap-3">
+                    {:else if platformTab === "toolsdev"}
+                        <div
+                            class="max-w-4xl mb-6 relative flex flex-col gap-3"
+                        >
                             <textarea
                                 bind:value={toolsDevJsonInput}
-                                placeholder={$t("import.toolsdev_placeholder") || 'Paste JSON here...'}
+                                placeholder={$t(
+                                    "import.toolsdev_placeholder",
+                                ) || "Paste JSON here..."}
                                 class="w-full min-h-[160px] p-3 mb-3 bg-gray-50 dark:bg-[#343434] dark:border-[#444444] dark:text-[#E0E0E0] border border-gray-200 focus:bg-white focus:border-[#FFE145] focus:dark:border-[#FFE145] rounded-lg text-sm outline-none text-[#21272C] transition-colors font-mono resize-y"
                             ></textarea>
                             <div
@@ -1387,29 +1570,41 @@
                                 </Button>
                             </div>
                         </div>
-                    {:else if platformTab === 'protorig'}
+                    {:else if platformTab === "protorig"}
                         <div class="max-w-4xl mb-6 relative group">
                             <label
                                 for="protorig-file-input"
                                 class="flex flex-col items-center justify-center w-full min-h-[160px] p-6 border-2 border-dashed rounded-lg cursor-pointer transition-all text-center
                                 {isDragging
                                     ? 'bg-white border-[#FFE145] dark:bg-[#424242] dark:border-[#FFE145]'
-                                    : 'bg-gray-50 border-gray-300 dark:bg-[#343434] dark:border-[#444444] hover:bg-white hover:border-[#FFE145] hover:dark:border-[#FFE145]'
-                                }"
-                                on:dragover|preventDefault={() => (isDragging = true)}
-                                on:dragenter|preventDefault={() => (isDragging = true)}
-                                on:dragleave|preventDefault={() => (isDragging = false)}
+                                    : 'bg-gray-50 border-gray-300 dark:bg-[#343434] dark:border-[#444444] hover:bg-white hover:border-[#FFE145] hover:dark:border-[#FFE145]'}"
+                                on:dragover|preventDefault={() =>
+                                    (isDragging = true)}
+                                on:dragenter|preventDefault={() =>
+                                    (isDragging = true)}
+                                on:dragleave|preventDefault={() =>
+                                    (isDragging = false)}
                                 on:drop|preventDefault={handleFileDrop}
                             >
-                                <div class="flex flex-col items-center justify-center pt-5 pb-6">
+                                <div
+                                    class="flex flex-col items-center justify-center pt-5 pb-6"
+                                >
                                     <div class="text-[#FFE145] mb-3">
-                                        <Icon name="import" style="width: 48px; height: 48px;" />
+                                        <Icon
+                                            name="import"
+                                            style="width: 48px; height: 48px;"
+                                        />
                                     </div>
-                                    <p class="mb-2 text-sm text-gray-500 dark:text-gray-400 font-semibold">
+                                    <p
+                                        class="mb-2 text-sm text-gray-500 dark:text-gray-400 font-semibold"
+                                    >
                                         {$t("import.endmin_drag_drop")}
                                     </p>
-                                    <p class="text-xs text-gray-400 dark:text-gray-500">
-                                        {selectedFileName || $t("import.protorig_files_label")}
+                                    <p
+                                        class="text-xs text-gray-400 dark:text-gray-500"
+                                    >
+                                        {selectedFileName ||
+                                            $t("import.protorig_files_label")}
                                     </p>
                                 </div>
                                 <input
@@ -1425,188 +1620,210 @@
                         <div
                             class="flex items-end gap-0 border-b border-gray-200 dark:border-[#444444] w-full max-w-4xl mb-4"
                         >
-                        <button
-                            class="px-6 py-3 text-sm font-bold transition-all relative border-b-2
+                            <button
+                                class="px-6 py-3 text-sm font-bold transition-all relative border-b-2
                         {activeTab === 'new'
-                                ? 'text-[#21272C] dark:text-[#FDFDFD] border-[#FFE145]'
-                                : 'text-gray-400 hover:text-gray-600 hover:dark:bg-[#424242] dark:text-[#B7B6B3] border-transparent hover:bg-gray-50'}"
-                            on:click={() => (activeTab = "new")}
-                        >
-                            {$t("import.tab_new")}
-                        </button>
-                        <button
-                            class="px-6 py-3 text-sm font-bold transition-all relative flex items-center gap-2 border-b-2
+                                    ? 'text-[#21272C] dark:text-[#FDFDFD] border-[#FFE145]'
+                                    : 'text-gray-400 hover:text-gray-600 hover:dark:bg-[#424242] dark:text-[#B7B6B3] border-transparent hover:bg-gray-50'}"
+                                on:click={() => (activeTab = "new")}
+                            >
+                                {$t("import.tab_new")}
+                            </button>
+                            <button
+                                class="px-6 py-3 text-sm font-bold transition-all relative flex items-center gap-2 border-b-2
                         {activeTab === 'saved'
-                                ? 'text-[#21272C] border-[#FFE145] dark:text-[#FDFDFD]'
-                                : 'text-gray-400 hover:text-gray-600 hover:dark:bg-[#424242] dark:text-[#B7B6B3] border-transparent hover:bg-gray-50'}"
-                            on:click={() => (activeTab = "saved")}
-                        >
-                            {$t("import.tab_saved")}
-                            {#if savedTokens.length > 0}
-                                <span
-                                    class="bg-gray-100 text-gray-600 text-[10px] px-1.5 py-0.5 rounded-full leading-none"
-                                    >{savedTokens.length}</span
-                                >
-                            {/if}
-                        </button>
-                    </div>
-
-                    {#if activeTab === "new"}
-                        <div class="max-w-4xl mb-6 relative group">
-                            {#if platformTab === "android" || platformTab === "pc-web" || platformTab === "pc2" || platformTab === "pc3"}
-                                <div
-                                    class="flex gap-2 mb-3 p-1 bg-gray-100 dark:bg-[#2C2C2C] rounded-lg w-fit transition-all"
-                                >
-                                    <button
-                                        class="px-4 py-1.5 text-sm font-bold rounded-md transition-colors {selectedServer ===
-                                        '3'
-                                            ? 'bg-white dark:bg-[#444] text-[#21272C] dark:text-white shadow-sm'
-                                            : 'text-gray-500 hover:text-gray-700 dark:text-gray-400'}"
-                                        on:click={() => (selectedServer = "3")}
+                                    ? 'text-[#21272C] border-[#FFE145] dark:text-[#FDFDFD]'
+                                    : 'text-gray-400 hover:text-gray-600 hover:dark:bg-[#424242] dark:text-[#B7B6B3] border-transparent hover:bg-gray-50'}"
+                                on:click={() => (activeTab = "saved")}
+                            >
+                                {$t("import.tab_saved")}
+                                {#if savedTokens.length > 0}
+                                    <span
+                                        class="bg-gray-100 text-gray-600 text-[10px] px-1.5 py-0.5 rounded-full leading-none"
+                                        >{savedTokens.length}</span
                                     >
-                                        Americas / Europe
-                                    </button>
-                                    <button
-                                        class="px-4 py-1.5 text-sm font-bold rounded-md transition-colors {selectedServer ===
-                                        '2'
-                                            ? 'bg-white dark:bg-[#444] text-[#21272C] dark:text-white shadow-sm'
-                                            : 'text-gray-500 hover:text-gray-700 dark:text-gray-400'}"
-                                        on:click={() => (selectedServer = "2")}
-                                    >
-                                        Asia
-                                    </button>
-                                </div>
-                            {/if}
-
-                            <div class="relative">
-                                <input
-                                    type="text"
-                                    value={urlInput}
-                                    on:input={handleInputProcessing}
-                                    placeholder={platformTab === "android" ||
-                                    platformTab === "pc-web" ||
-                                    platformTab === "pc2" ||
-                                    platformTab === "pc3"
-                                        ? $t("import.placeholder_token") ||
-                                          "Paste Token here"
-                                        : $t("import.placeholder_url") ||
-                                          "Paste Link here"}
-                                    class="w-full p-4 bg-gray-50 border-2 border-gray-100 dark:bg-[#343434] dark:border-[#444444] dark:text-[#E0E0E0] focus:bg-white focus:border-[#FFE145] focus:dark:border-[#FFE145] rounded-md outline-none transition-all font-mono text-xs md:text-sm text-gray-700 placeholder-gray-400
-                {isInputError &&
-                                    errorMsg !==
-                                        $t('import.error_token_name') &&
-                                    errorMsg !==
-                                        'Token name is required for saving.'
-                                        ? '!border-red-500 bg-red-50'
-                                        : ''}"
-                                />
-
-                                <div
-                                    class="absolute right-4 top-1/2 -translate-y-1/2 text-gray-300 pointer-events-none"
-                                >
-                                    {#if (platformTab === "android" || platformTab === "pc-web" || platformTab === "pc2" || platformTab === "pc3") && urlInput && !urlInput.startsWith("http")}
-                                        <Icon
-                                            name="check"
-                                            style="width: 16px; height: 16px; color: green;"
-                                        />
-                                    {:else}
-                                        <div
-                                            class="bg-gray-50/90 dark:bg-[#343434]/80 p-1 rounded-lg"
-                                        >
-                                            <Icon
-                                                name="link"
-                                                style="width: 16px; height: 16px;"
-                                            />
-                                        </div>
-                                    {/if}
-                                </div>
-                            </div>
-
-                            {#if isInputError && errorMsg !== $t("import.error_token_name") && errorMsg !== "Token name is required for saving."}
-                                <div
-                                    class="absolute -bottom-6 left-0 text-red-600 text-xs font-bold px-2 py-1 rounded animate-in fade-in slide-in-from-top-1"
-                                >
-                                    {errorMsg}
-                                </div>
-                            {/if}
+                                {/if}
+                            </button>
                         </div>
-                    {:else}
-                        <div class="max-w-4xl mb-2 min-h-[100px]">
-                            {#if savedTokens.length === 0}
-                                <div
-                                    class="flex flex-col items-center justify-center py-6 border-2 dark:border-[#444444] dark:text-[#B7B6B3] border-dashed border-gray-200 rounded-lg text-gray-400"
-                                >
-                                    <Icon
-                                        name="noData"
-                                        style="width: 32px; height: 32px; opacity: 0.5;"
-                                    />
-                                    <span class="mt-2 text-sm font-medium"
-                                        >{$t("import.no_saved_tokens")}</span
+
+                        {#if activeTab === "new"}
+                            <div class="max-w-4xl mb-6 relative group">
+                                {#if platformTab !== "endmin" && platformTab !== "toolsdev" && platformTab !== "protorig"}
+                                    <div
+                                        class="flex gap-2 mb-3 p-1 bg-gray-100 dark:bg-[#2C2C2C] rounded-lg w-fit transition-all"
                                     >
-                                </div>
-                            {:else}
-                                <div class="grid gap-3 pb-3">
-                                    {#each savedTokens as token, i}
-                                        <div
-                                            class="group relative flex items-center justify-between p-4 bg-white border border-gray-200 dark:bg-[#343434] dark:border-[#444444] hover:border-[#FFE145] hover:border-[#FFE145] hover:shadow-sm transition-all text-left rounded-md overflow-hidden"
+                                        <button
+                                            class="px-4 py-1.5 text-sm font-bold rounded-md transition-colors {selectedServer ===
+                                            '3'
+                                                ? 'bg-white dark:bg-[#444] text-[#21272C] dark:text-white shadow-sm'
+                                                : 'text-gray-500 hover:text-gray-700 dark:text-gray-400'}"
+                                            on:click={() =>
+                                                handleServerChange("3")}
                                         >
-                                            <button
-                                                type="button"
-                                                class="absolute inset-0 w-full h-full z-0 cursor-pointer focus:outline-none"
-                                                on:click={() =>
-                                                    selectToken(token)}
-                                                aria-label="Select {token.name}"
-                                            ></button>
+                                            Americas / Europe
+                                        </button>
+                                        <button
+                                            class="px-4 py-1.5 text-sm font-bold rounded-md transition-colors {selectedServer ===
+                                            '2'
+                                                ? 'bg-white dark:bg-[#444] text-[#21272C] dark:text-white shadow-sm'
+                                                : 'text-gray-500 hover:text-gray-700 dark:text-gray-400'}"
+                                            on:click={() =>
+                                                handleServerChange("2")}
+                                        >
+                                            Asia
+                                        </button>
+                                    </div>
+                                {/if}
+
+                                <div class="relative">
+                                    <input
+                                        type="text"
+                                        value={urlInput}
+                                        on:input={handleInputProcessing}
+                                        placeholder={platformTab ===
+                                            "android" ||
+                                        platformTab === "pc-web" ||
+                                        platformTab === "pc2" ||
+                                        platformTab === "pc3"
+                                            ? $t("import.placeholder_token") ||
+                                              "Paste Token here"
+                                            : $t("import.placeholder_url") ||
+                                              "Paste Link here"}
+                                        class="w-full p-4 bg-gray-50 border-2 border-gray-100 dark:bg-[#343434] dark:border-[#444444] dark:text-[#E0E0E0] focus:bg-white focus:border-[#FFE145] focus:dark:border-[#FFE145] rounded-md outline-none transition-all font-mono text-xs md:text-sm text-gray-700 placeholder-gray-400
+                {isInputError &&
+                                        errorMsg !==
+                                            $t('import.error_token_name') &&
+                                        errorMsg !==
+                                            'Token name is required for saving.'
+                                            ? '!border-red-500 bg-red-50'
+                                            : ''}"
+                                    />
+
+                                    <div
+                                        class="absolute right-4 top-1/2 -translate-y-1/2 text-gray-300 pointer-events-none"
+                                    >
+                                        {#if (platformTab === "android" || platformTab === "pc-web" || platformTab === "pc2" || platformTab === "pc3") && urlInput && !urlInput.startsWith("http")}
+                                            <Icon
+                                                name="check"
+                                                style="width: 16px; height: 16px; color: green;"
+                                            />
+                                        {:else}
                                             <div
-                                                class="pl-2 relative z-10 pointer-events-none"
+                                                class="bg-gray-50/90 dark:bg-[#343434]/80 p-1 rounded-lg"
                                             >
-                                                <div
-                                                    class="font-bold text-[#21272C] dark:text-[#E0E0E0] text-lg font-sdk"
-                                                >
-                                                    {token.name}
-                                                </div>
-                                                <div
-                                                    class="text-xs text-gray-400 dark:text-[#B7B6B3] font-mono mt-1 truncate max-w-[250px] md:max-w-[400px]"
-                                                >
-                                                    {token.url}
-                                                </div>
-                                                <div
-                                                    class="text-[10px] text-gray-400 dark:text-[#B7B6B3] mt-2 font-medium"
-                                                >
-                                                    {new Date(
-                                                        token.date,
-                                                    ).toLocaleDateString()}
-                                                </div>
+                                                <Icon
+                                                    name="link"
+                                                    style="width: 16px; height: 16px;"
+                                                />
                                             </div>
+                                        {/if}
+                                    </div>
+                                </div>
+
+                                {#if isInputError && errorMsg !== $t("import.error_token_name") && errorMsg !== "Token name is required for saving."}
+                                    <div
+                                        class="absolute -bottom-6 left-0 text-red-600 text-xs font-bold px-2 py-1 rounded animate-in fade-in slide-in-from-top-1"
+                                    >
+                                        {errorMsg}
+                                    </div>
+                                {/if}
+                            </div>
+                        {:else}
+                            <div class="max-w-4xl mb-2 min-h-[100px]">
+                                {#if savedTokens.length === 0}
+                                    <div
+                                        class="flex flex-col items-center justify-center py-6 border-2 dark:border-[#444444] dark:text-[#B7B6B3] border-dashed border-gray-200 rounded-lg text-gray-400"
+                                    >
+                                        <Icon
+                                            name="noData"
+                                            style="width: 32px; height: 32px; opacity: 0.5;"
+                                        />
+                                        <span class="mt-2 text-sm font-medium"
+                                            >{$t(
+                                                "import.no_saved_tokens",
+                                            )}</span
+                                        >
+                                    </div>
+                                {:else}
+                                    <div class="grid gap-3 pb-3">
+                                        {#each savedTokens as token, i}
                                             <div
-                                                class="flex items-center gap-4 z-20 relative pointer-events-none"
+                                                class="group relative flex items-center justify-between p-4 bg-white border border-gray-200 dark:bg-[#343434] dark:border-[#444444] hover:border-[#FFE145] hover:border-[#FFE145] hover:shadow-sm transition-all text-left rounded-md overflow-hidden"
                                             >
                                                 <button
                                                     type="button"
-                                                    class="w-8 h-8 flex items-center justify-center text-gray-300 hover:text-white hover:bg-red-500 rounded transition-colors pointer-events-auto cursor-pointer focus:outline-none focus:ring-2 focus:ring-red-500"
-                                                    on:click|stopPropagation={() =>
-                                                        requestDeleteToken(i)}
+                                                    class="absolute inset-0 w-full h-full z-0 cursor-pointer focus:outline-none"
+                                                    on:click={() =>
+                                                        selectToken(token)}
+                                                    aria-label="Select {token.name}"
+                                                ></button>
+                                                <div
+                                                    class="pl-2 relative z-10 pointer-events-none"
                                                 >
-                                                    <Icon
-                                                        name="close"
-                                                        style="width: 18px; height: 18px;"
-                                                    />
-                                                </button>
+                                                    <div
+                                                        class="font-bold text-[#21272C] dark:text-[#E0E0E0] text-lg font-sdk flex items-center gap-2"
+                                                    >
+                                                        <span>{token.name}</span>
+                                                        {#if token.server === "2" || extractServerFromUrl(token.url) === "2"}
+                                                            <span
+                                                                class="text-xs px-2 py-0.5 rounded bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 font-sans font-semibold"
+                                                                >Asia</span
+                                                            >
+                                                        {:else}
+                                                            <span
+                                                                class="text-xs px-2 py-0.5 rounded bg-amber-100 dark:bg-amber-900/40 text-amber-700 dark:text-amber-300 font-sans font-semibold"
+                                                                >Americas / Europe</span
+                                                            >
+                                                        {/if}
+                                                    </div>
+                                                    <div
+                                                        class="text-xs text-gray-400 dark:text-[#B7B6B3] font-mono mt-1 truncate max-w-[250px] md:max-w-[400px]"
+                                                    >
+                                                        {token.url}
+                                                    </div>
+                                                    <div
+                                                        class="text-[10px] text-gray-400 dark:text-[#B7B6B3] mt-2 font-medium"
+                                                    >
+                                                        {new Date(
+                                                            token.date,
+                                                        ).toLocaleDateString()}
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="flex items-center gap-4 z-20 relative pointer-events-none"
+                                                >
+                                                    <button
+                                                        type="button"
+                                                        class="w-8 h-8 flex items-center justify-center text-gray-300 hover:text-white hover:bg-red-500 rounded transition-colors pointer-events-auto cursor-pointer focus:outline-none focus:ring-2 focus:ring-red-500"
+                                                        on:click|stopPropagation={() =>
+                                                            requestDeleteToken(
+                                                                i,
+                                                            )}
+                                                    >
+                                                        <Icon
+                                                            name="close"
+                                                            style="width: 18px; height: 18px;"
+                                                        />
+                                                    </button>
+                                                </div>
                                             </div>
-                                        </div>
-                                    {/each}
-                                </div>
-                            {/if}
-                        </div>
-                    {/if}
+                                        {/each}
+                                    </div>
+                                {/if}
+                            </div>
+                        {/if}
                     {/if}
 
                     <div class="flex flex-col gap-4 mt-2 max-w-4xl items-start">
-                        {#if activeTab === "new" && platformTab !== 'endmin' && platformTab !== 'toolsdev' && platformTab !== 'protorig'}
+                        {#if activeTab === "new" && platformTab !== "endmin" && platformTab !== "toolsdev" && platformTab !== "protorig"}
                             <div
                                 class="flex flex-col gap-2 transition-all w-full"
                             >
-                                <Checkbox bind:checked={isSaveTokenEnabled} variant="yellow" align="start">
+                                <Checkbox
+                                    bind:checked={isSaveTokenEnabled}
+                                    variant="yellow"
+                                    align="start"
+                                >
                                     <div>
                                         <span
                                             class="text-gray-600 dark:text-[#E0E0E0] group-hover:dark:text-[#FDFDFD] group-hover:text-black transition-colors cursor-pointer font-medium text-sm"
@@ -1668,8 +1885,12 @@
                             </div>
                         {/if}
 
-                        {#if platformTab !== 'endmin' && platformTab !== 'toolsdev' && platformTab !== 'protorig'}
-                            <Checkbox bind:checked={isGlobalStatsEnabled} variant="yellow" align="center">
+                        {#if platformTab !== "endmin" && platformTab !== "toolsdev" && platformTab !== "protorig"}
+                            <Checkbox
+                                bind:checked={isGlobalStatsEnabled}
+                                variant="yellow"
+                                align="center"
+                            >
                                 <span
                                     class="text-gray-600 dark:text-[#E0E0E0] group-hover:text-black group-hover:dark:text-[#FDFDFD] transition-colors cursor-pointer font-medium text-sm"
                                 >
@@ -1678,7 +1899,11 @@
                             </Checkbox>
                         {/if}
 
-                        <Checkbox bind:checked={isRecoveryEnabled} variant="red" align="center">
+                        <Checkbox
+                            bind:checked={isRecoveryEnabled}
+                            variant="red"
+                            align="center"
+                        >
                             <span
                                 class="text-gray-600 dark:text-[#E0E0E0] group-hover:text-black group-hover:dark:text-[#FDFDFD] transition-colors cursor-pointer font-medium text-sm flex items-center gap-1.5"
                             >
@@ -1697,7 +1922,7 @@
                             </span>
                         </Checkbox>
 
-                        {#if platformTab !== 'endmin' && platformTab !== 'toolsdev' && platformTab !== 'protorig'}
+                        {#if platformTab !== "endmin" && platformTab !== "toolsdev" && platformTab !== "protorig"}
                             <div
                                 class="w-fit mt-4 {isLoading
                                     ? 'opacity-60 pointer-events-none cursor-not-allowed'

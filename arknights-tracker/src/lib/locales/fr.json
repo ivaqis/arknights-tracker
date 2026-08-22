@@ -645,7 +645,8 @@
     "hobbies": "Loisirs",
     "goToEssences": "Aller aux Essences",
     "essenceLocations": "Emplacements des essences",
-    "recommendedOperators": "Opérateurs recommandés"
+    "recommendedOperators": "Opérateurs recommandés",
+    "costValue2": "Coût en PC"
   },
   "bioValues": {
     "Unknown": "Inconnu"

@@ -645,7 +645,8 @@
     "hobbies": "Hobbies",
     "goToEssences": "Ir para Essências",
     "essenceLocations": "Localizações das essências",
-    "recommendedOperators": "Operadores recomendados"
+    "recommendedOperators": "Operadores recomendados",
+    "costValue2": "Custos de PH"
   },
   "bioValues": {
     "Unknown": "Desconhecido"
