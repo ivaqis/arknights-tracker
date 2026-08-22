@@ -9,7 +9,7 @@
     import { getMap } from "$lib/utils/collectionUtils";
     import { getDateFromISOString, getISODate } from "$lib/utils/textUtils";
 
-    export let values: GlobalTimelineGenericData[] | null;
+    export let values: GlobalTimelineGenericData[];
 
     export let minDate: `${number}-${number}-${number}`;
     export let maxDate: `${number}-${number}-${number}`;
