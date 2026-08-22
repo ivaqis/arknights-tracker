@@ -284,6 +284,8 @@
   "emptyState": {
     "nothingSelected": "Nada seleccionado",
     "clickEquipmentHint": "Haz clic en el equipamiento de la izquierda para ver sus detalles.",
+    "clickWeaponHint": "Haz clic en un arma de la izquierda para ver sus detalles.",
+    "clickEnemyHint": "Haz clic en un enemigo de la izquierda para ver sus detalles.",
     "noData": "Sin entradas"
   },
   "buttons": {
@@ -920,7 +922,7 @@
     "preferredSkillMode": "Modo de visualización preferido para habilidades de combate",
     "preferredSkillModeList": "Lista",
     "preferredSkillModeTable": "Tabla",
-    "splitEquipmentView": "Mostrar detalles del equipamiento en la pantalla dividida",
+    "splitEquipmentView": "Mostrar detalles de equipamiento, armas y enemigos en pantalla dividida",
     "cache": {
       "title": "Caché",
       "desc": "Detalles y limpieza de caché",

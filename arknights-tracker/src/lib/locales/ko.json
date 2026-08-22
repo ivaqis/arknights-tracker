@@ -282,6 +282,8 @@
   "emptyState": {
     "nothingSelected": "선택된 항목 없음",
     "clickEquipmentHint": "왼쪽의 장비를 클릭하여 세부 정보를 표시합니다.",
+    "clickWeaponHint": "왼쪽의 무기를 클릭하여 세부 정보를 표시합니다.",
+    "clickEnemyHint": "왼쪽의 적을 클릭하여 세부 정보를 표시합니다.",
     "noData": "데이터 없음"
   },
   "buttons": {
@@ -918,7 +920,7 @@
     "toggleCtrlForZoom": "Ctrl을 누른 상태로 확대/축소",
     "preferredSkillModeList": "목록",
     "preferredSkillModeTable": "표",
-    "splitEquipmentView": "분할 화면에 장비 세부 정보 표시",
+    "splitEquipmentView": "분할 화면에 장비, 무기 및 적 세부 정보 표시",
     "cache": {
       "title": "캐시",
       "desc": "캐시 세부 정보 및 정리",

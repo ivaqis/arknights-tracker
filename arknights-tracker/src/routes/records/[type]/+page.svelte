@@ -726,11 +726,15 @@
         return typeTrans;
     })();
 
-    $: pageTitle = bannerTitle ? `${bannerTitle} - ${$t("pages.records")} | Goyfield` : `${$t("pages.records")} | Goyfield`;
+    $: pageTitle = bannerTitle ? `${bannerTitle} - ${$t("pages.records")} - Goyfield` : `${$t("pages.records")} - Goyfield`;
+    $: pageDescription = $t("seo.descriptions.recordsType", { name: bannerTitle || "" });
 </script>
 
 <svelte:head>
     <title>{pageTitle}</title>
+    <meta name="description" content={pageDescription} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={pageDescription} />
 </svelte:head>
 
 <div class="max-w-[1600px] justify-start min-h-screen">

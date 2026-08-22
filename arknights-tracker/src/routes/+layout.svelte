@@ -139,10 +139,7 @@
 <svelte:head>
     <title>{$t("seo.title")}</title>
     <link rel="canonical" href={`https://goyfield.moe${$page.url.pathname}`} />
-    <meta name="description" content={$t("seo.description")} />
     <meta name="keywords" content={$t("seo.keywords")} />
-    <meta property="og:title" content={$t("seo.title")} />
-    <meta property="og:description" content={$t("seo.description")} />
     <meta
         property="og:image"
         content="https://goyfield.moe/images/og-image.jpg"

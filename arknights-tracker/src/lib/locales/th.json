@@ -282,6 +282,8 @@
   "emptyState": {
     "nothingSelected": "ไม่ได้เลือกสิ่งใด",
     "clickEquipmentHint": "คลิกอุปกรณ์ทางด้านซ้ายเพื่อแสดงรายละเอียด",
+    "clickWeaponHint": "คลิกอาวุธทางด้านซ้ายเพื่อแสดงรายละเอียด",
+    "clickEnemyHint": "คลิกศัตรูทางด้านซ้ายเพื่อแสดงรายละเอียด",
     "noData": "ไม่มีข้อมูล"
   },
   "buttons": {
@@ -918,7 +920,7 @@
     "toggleCtrlForZoom": "กด Ctrl ค้างไว้เพื่อซูม",
     "preferredSkillModeList": "รายการ",
     "preferredSkillModeTable": "ตาราง",
-    "splitEquipmentView": "แสดงรายละเอียดอุปกรณ์บนหน้าจอแยก",
+    "splitEquipmentView": "แสดงรายละเอียดอุปกรณ์ อาวุธ และศัตรูบนหน้าจอแยก",
     "cache": {
       "title": "แคช",
       "desc": "รายละเอียดแคชและการล้างข้อมูล",

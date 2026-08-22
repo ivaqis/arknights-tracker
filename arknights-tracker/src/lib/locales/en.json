@@ -3,7 +3,31 @@
   "seo": {
     "title": "Goyfield - Arknights Endfield Pull Tracker",
     "description": "Advanced Pull Tracker for Arknights: Endfield. Track your pull history, calculate pity counters, and predict your next guaranteed operator or weapon.",
-    "keywords": "Arknights Endfield, Arknights, Gacha Tracker, Pull History, Operators, Аркнайтс Эндфилд, Аркнайтс, Трекер гачи, История круток, Оперативники, Гойфилд мое, Гойфилд, Goyfield"
+    "keywords": "Arknights Endfield, Arknights, Gacha Tracker, Pull History, Operators, Аркнайтс Эндфилд, Аркнайтс, Трекер гачи, История круток, Оперативники, Гойфилд мое, Гойфилд, Goyfield",
+    "descriptions": {
+      "history": "Chronology and schedule of all banners in Arknights: Endfield.",
+      "operators": "Database of all operators in Arknights: Endfield.",
+      "operatorDetail": "Stats and attributes of operator {name} in Arknights: Endfield.",
+      "weapons": "Weapons database for Arknights: Endfield.",
+      "weaponDetail": "Stats and attributes of weapon {name} in Arknights: Endfield.",
+      "events": "Calendar of events, activities, and banners in Arknights: Endfield.",
+      "changelog": "Patch and update changelog for Arknights: Endfield.",
+      "records": "Your pull records and gacha statistics in Arknights: Endfield.",
+      "import": "Import pull history from Arknights: Endfield into Goyfield.",
+      "global": "Global community pull statistics for Arknights: Endfield.",
+      "recordsType": "Statistics for {name} banner in Arknights: Endfield.",
+      "equipment": "Equipment database in Arknights: Endfield.",
+      "equipmentDetail": "Gear characteristics in Arknights: Endfield.",
+      "enemies": "Enemy database in Arknights: Endfield.",
+      "enemyDetail": "Detailed information about enemy {name} in Arknights: Endfield.",
+      "recipes": "Factory recipe database in Arknights: Endfield.",
+      "recipeTree": "Interactive crafting and production chain tree for Arknights: Endfield.",
+      "essences": "Weapon essence optimizer and checker for Arknights: Endfield.",
+      "leaderboard": "Leaderboard for Arknights: Endfield.",
+      "settings": "Goyfield settings.",
+      "profile": "Player profile on Goyfield.",
+      "userProfile": "Public player profile of {username} on Goyfield."
+    }
   },
   "hints": {
     "editPotential": "To change weapon potentials, click the pencil icon."
@@ -288,7 +312,9 @@
   "emptyState": {
     "noData": "No entries",
     "nothingSelected": "Nothing selected",
-    "clickEquipmentHint": "Click on an equipment on the left to display its details."
+    "clickEquipmentHint": "Click on an equipment on the left to display its details.",
+    "clickWeaponHint": "Click on a weapon on the left to display its details.",
+    "clickEnemyHint": "Click on an enemy on the left to display its details."
   },
   "buttons": {
     "saveBtn": "Save"
@@ -1051,7 +1077,7 @@
     "title": "Settings",
     "other": "Other",
     "disableDarkening": "Disable weapon and operator card darkening",
-    "splitEquipmentView": "Show equipment details on split screen",
+    "splitEquipmentView": "Show equipment, weapon, and enemy details on split screen",
     "toggleCtrlForZoom": "Hold Ctrl to zoom",
     "preferredSkillMode": "Preferred display mode for combat skills",
     "preferredSkillModeList": "List",

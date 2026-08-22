@@ -249,7 +249,10 @@
 </script>
 
 <svelte:head>
-    <title>{$t("pages.recipes")} | Goyfield</title>
+    <title>{$t("pages.recipes")} - Goyfield</title>
+    <meta name="description" content={$t("seo.descriptions.recipes")} />
+    <meta property="og:title" content={`${$t("pages.recipes")} - Goyfield`} />
+    <meta property="og:description" content={$t("seo.descriptions.recipes")} />
 </svelte:head>
 
 <svelte:window on:scroll={checkScroll} on:resize={checkScroll} />

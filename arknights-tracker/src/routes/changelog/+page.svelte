@@ -167,7 +167,10 @@
 </script>
 
 <svelte:head>
-    <title>{$t("pages.changelog")} | Goyfield</title>
+    <title>{$t("pages.changelog")} - Goyfield</title>
+    <meta name="description" content={$t("seo.descriptions.changelog")} />
+    <meta property="og:title" content={`${$t("pages.changelog")} - Goyfield`} />
+    <meta property="og:description" content={$t("seo.descriptions.changelog")} />
 </svelte:head>
 
 {#if bannerForModal}

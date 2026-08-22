@@ -286,6 +286,8 @@
   "emptyState": {
     "nothingSelected": "Chưa chọn gì",
     "clickEquipmentHint": "Nhấp vào trang bị bên trái để hiển thị chi tiết.",
+    "clickWeaponHint": "Nhấp vào vũ khí bên trái để hiển thị chi tiết.",
+    "clickEnemyHint": "Nhấp vào kẻ địch bên trái để hiển thị chi tiết.",
     "noData": "Không có dữ liệu"
   },
   "buttons": {
@@ -961,7 +963,7 @@
     "preferredSkillMode": "Chế độ hiển thị ưa thích cho kỹ năng chiến đấu",
     "preferredSkillModeList": "Danh sách",
     "preferredSkillModeTable": "Bảng",
-    "splitEquipmentView": "Hiển thị chi tiết trang bị trên màn hình chia nhỏ",
+    "splitEquipmentView": "Hiển thị chi tiết trang bị, vũ khí và kẻ địch trên màn hình chia nhỏ",
     "cache": {
       "title": "Bộ nhớ đệm",
       "desc": "Chi tiết và dọn dẹp bộ nhớ đệm",

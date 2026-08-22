@@ -282,6 +282,8 @@
   "emptyState": {
     "nothingSelected": "Tidak ada yang dipilih",
     "clickEquipmentHint": "Klik perlengkapan di sebelah kiri untuk menampilkan detailnya.",
+    "clickWeaponHint": "Klik senjata di sebelah kiri untuk menampilkan detailnya.",
+    "clickEnemyHint": "Klik musuh di sebelah kiri untuk menampilkan detailnya.",
     "noData": "Tidak ada entri"
   },
   "buttons": {
@@ -918,7 +920,7 @@
     "toggleCtrlForZoom": "Tahan Ctrl untuk memperbesar",
     "preferredSkillModeList": "Daftar",
     "preferredSkillModeTable": "Tabel",
-    "splitEquipmentView": "Tampilkan detail perlengkapan di layar terpisah",
+    "splitEquipmentView": "Tampilkan detail perlengkapan, senjata, dan musuh di layar terpisah",
     "cache": {
       "title": "Cache",
       "desc": "Detail dan pembersihan cache",

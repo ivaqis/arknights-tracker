@@ -286,6 +286,8 @@
   "emptyState": {
     "nothingSelected": "未选择任何内容",
     "clickEquipmentHint": "点击左侧的装备以显示其详细信息。",
+    "clickWeaponHint": "点击左侧的武器以显示其详细信息。",
+    "clickEnemyHint": "点击左侧的敌人以显示其详细信息。",
     "noData": "无记录"
   },
   "buttons": {
@@ -961,7 +963,7 @@
     "preferredSkillMode": "战斗技能的首选显示模式",
     "preferredSkillModeList": "列表",
     "preferredSkillModeTable": "表格",
-    "splitEquipmentView": "在分屏上显示装备详情",
+    "splitEquipmentView": "在分屏上显示装备、武器和敌人详情",
     "cache": {
       "title": "缓存",
       "desc": "缓存详情与清理",

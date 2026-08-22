@@ -282,6 +282,8 @@
   "emptyState": {
     "nothingSelected": "Nichts ausgewählt",
     "clickEquipmentHint": "Klicken Sie auf die Ausrüstung links, um deren Details anzuzeigen.",
+    "clickWeaponHint": "Klicken Sie auf eine Waffe links, um deren Details anzuzeigen.",
+    "clickEnemyHint": "Klicken Sie auf einen Gegner links, um dessen Details anzuzeigen.",
     "noData": "Keine Einträge"
   },
   "buttons": {
@@ -918,7 +920,7 @@
     "toggleCtrlForZoom": "Halte Ctrl gedrückt, um zu zoomen",
     "preferredSkillModeList": "Liste",
     "preferredSkillModeTable": "Tabelle",
-    "splitEquipmentView": "Ausrüstungsdetails auf dem geteilten Bildschirm anzeigen",
+    "splitEquipmentView": "Ausrüstungs-, Waffen- und Gegnerdetails auf geteiltem Bildschirm anzeigen",
     "cache": {
       "title": "Cache",
       "desc": "Cache-Details und -Bereinigung",

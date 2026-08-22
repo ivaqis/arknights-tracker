@@ -247,7 +247,10 @@
 </script>
 
 <svelte:head>
-    <title>{$t("pages.leaderboard")} | Goyfield</title>
+    <title>{$t("pages.leaderboard")} - Goyfield</title>
+    <meta name="description" content={$t("seo.descriptions.leaderboard")} />
+    <meta property="og:title" content={`${$t("pages.leaderboard")} - Goyfield`} />
+    <meta property="og:description" content={$t("seo.descriptions.leaderboard")} />
 </svelte:head>
 
 <div class="max-w-[1600px] mx-auto w-full pb-10">

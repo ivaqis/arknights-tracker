@@ -1289,7 +1289,10 @@
 </script>
 
 <svelte:head>
-    <title>{$t("pages.profile")} | Goyfield</title>
+    <title>{$t("pages.profile")} - Goyfield</title>
+    <meta name="description" content={$t("seo.descriptions.profile")} />
+    <meta property="og:title" content={`${$t("pages.profile")} - Goyfield`} />
+    <meta property="og:description" content={$t("seo.descriptions.profile")} />
 </svelte:head>
 
 <div class="max-w-[1800px] w-full mx-auto pb-20">

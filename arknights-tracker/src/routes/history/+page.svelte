@@ -245,7 +245,10 @@
 </script>
 
 <svelte:head>
-    <title>{$t("pages.bannerHistory")} | Goyfield</title>
+    <title>{$t("pages.bannerHistory")} - Goyfield</title>
+    <meta name="description" content={$t("seo.descriptions.history")} />
+    <meta property="og:title" content={`${$t("pages.bannerHistory")} - Goyfield`} />
+    <meta property="og:description" content={$t("seo.descriptions.history")} />
 </svelte:head>
 
 <div class="relative flex flex-col w-full text-[#21272C] dark:text-[#FDFDFD]">

@@ -286,6 +286,8 @@
   "emptyState": {
     "nothingSelected": "未選擇任何內容",
     "clickEquipmentHint": "點擊左側的裝備以顯示其詳細資訊。",
+    "clickWeaponHint": "點擊左側的武器以顯示其詳細資訊。",
+    "clickEnemyHint": "點擊左側的敵人以顯示其詳細資訊。",
     "noData": "無記錄"
   },
   "buttons": {
@@ -961,7 +963,7 @@
     "preferredSkillMode": "戰鬥技能的首選顯示模式",
     "preferredSkillModeList": "列表",
     "preferredSkillModeTable": "表格",
-    "splitEquipmentView": "在分割畫面上顯示裝備詳情",
+    "splitEquipmentView": "在分割畫面上顯示裝備、武器與敵人詳情",
     "cache": {
       "title": "快取",
       "desc": "快取詳情與清理",
