@@ -22,6 +22,9 @@
     import { t } from "$lib/i18n";
     import { currentLocale } from "$lib/stores/locale";
     import { getISODate } from "$lib/utils/textUtils";
+    import GlobalPityDistributionChart from "$lib/components/charts/GlobalPityDistributionChart.svelte";
+    import { GameBannerType } from "$lib/classes/banners/GameBannerType";
+    import GlobalItemStatList from "$lib/components/globalBannerStats/GlobalItemStatList.svelte";
 
     const typeOptions: SelectOption[] = BannerType.list.map(item => ({
         value: item.id,
@@ -249,6 +252,38 @@
                         minDate={selectedBanner.getISOStartTime()}
                         maxDate={selectedBanner.getISOEndTime() ?? getISODate(new Date())}
                     />
+
+                    <GlobalPityDistributionChart
+                        values={stats.pityDistribution6}
+                        rarity={6}
+                        maxPity={selectedBanner.gameType === GameBannerType.WEAPON || selectedBanner.gameType === GameBannerType.CHAR_BEGINNER ? 40 : 80}
+                    />
+
+                    {#if stats.pityDistribution5}
+
+                        <GlobalPityDistributionChart
+                            values={stats.pityDistribution5}
+                            rarity={5}
+                            maxPity={10}
+                        />
+
+                    {/if}
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                        <GlobalItemStatList
+                            items={stats.items6}
+                            rarity={6}
+                            banner={selectedBanner}
+                        />
+
+                        <GlobalItemStatList
+                            items={stats.items5}
+                            rarity={5}
+                            banner={selectedBanner}
+                        />
+
+                    </div>
 
                 </div>
 
