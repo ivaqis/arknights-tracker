@@ -263,6 +263,8 @@
   "emptyState": {
     "nothingSelected": "Tiada yang dipilih",
     "clickEquipmentHint": "Klik peralatan di sebelah kiri untuk menunjukkan butirannya.",
+    "clickWeaponHint": "Klik senjata di sebelah kiri untuk menunjukkan butirannya.",
+    "clickEnemyHint": "Klik musuh di sebelah kiri untuk menunjukkan butirannya.",
     "noData": "Tiada entri"
   },
   "buttons": {
@@ -527,7 +529,7 @@
     "preferredSkillMode": "Mod paparan pilihan untuk kemahiran tempur",
     "preferredSkillModeList": "Senarai",
     "preferredSkillModeTable": "Jadual",
-    "splitEquipmentView": "Paparkan butiran peralatan pada skrin pisah",
+    "splitEquipmentView": "Paparkan butiran peralatan, senjata dan musuh pada skrin pisah",
     "cache": {
       "title": "Cache",
       "desc": "Butiran dan pembersihan cache",

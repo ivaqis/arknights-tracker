@@ -274,7 +274,7 @@
       </div>
     </div>
 
-    <div class="flex justify-between items-center dark:border-[#444444] border-b {hideBorders ? 'border-gray-100/20' : 'border-gray-100'} pb-4 h-[72px]">
+    <div class="flex justify-between items-center {showTabs ? 'dark:border-[#444444] border-b pb-4 h-[72px]' : ' h-[62px]'} {hideBorders ? 'border-gray-100/20' : 'border-gray-100'}">
       <div class="flex flex-col justify-center">
         <div class="font-medium text-[#21272C] dark:text-[#FDFDFD] flex items-center gap-1">
           {$t("page.rating.lucky5")} 5 <Icon name="star" class="w-4 h-4" />

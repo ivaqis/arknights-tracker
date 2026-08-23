@@ -1055,7 +1055,7 @@ export const rawEvents = [
     color: "#DDB62A",
     layer: 3,
     type: "inGame",
-    iconPosition: 40,
+    iconPosition: 48,
     version: "1.4",
   },
   {

@@ -7,6 +7,8 @@
   
   export let text = "";
   export let textKey = "";
+  export let disabled = false;
+  export let disableOnTouch = false;
   
   let className = "";
   export { className as class };
@@ -57,7 +59,8 @@
   }
 
   async function show(e) {
-    if (!browser) return; 
+    if (!browser || disabled) return; 
+    if (disableOnTouch && (window.matchMedia("(pointer: coarse)").matches || "ontouchstart" in window)) return;
     open = true;
     if (e) {
       dispatch(e.type, e);

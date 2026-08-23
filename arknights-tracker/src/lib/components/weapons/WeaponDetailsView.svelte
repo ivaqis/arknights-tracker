@@ -15,6 +15,10 @@
     import { accountStore } from "$lib/stores/accounts";
     import { levels as weaponLevelUpTable } from "$lib/data/weaponLevelUpTable.js";
     import { getRarityColor } from "$lib/utils/colorUtils.js";
+    import { essences } from "$lib/data/items/essences.js";
+    import { locations } from "$lib/data/locations.js";
+    import { enemies } from "$lib/data/enemies.js";
+    import { parseRichText, hyperlinkAction } from "$lib/utils/richText.js";
 
     import Icon from "$lib/components/Icon.svelte";
     import Tooltip from "$lib/components/Tooltip.svelte";
@@ -26,10 +30,6 @@
     import MapPreview from "$lib/components/MapPreview.svelte";
     import OperatorCard from "$lib/components/cards/OperatorCard.svelte";
     import WeaponCard from "$lib/components/cards/WeaponCard.svelte";
-    import { essences } from "$lib/data/items/essences.js";
-    import { locations } from "$lib/data/locations.js";
-    import { enemies } from "$lib/data/enemies.js";
-    import { parseRichText, hyperlinkAction } from "$lib/utils/richText.js";
 
     export let id = "";
     export let showBackButton = true;
@@ -47,9 +47,12 @@
     let showPotHint = false;
 
     function formatNumberForSelection(num) {
-        if (num === undefined || num === null) return '0';
+        if (num === undefined || num === null) return "0";
         const formatted = num.toLocaleString("ru-RU");
-        return formatted.replace(/[\s\u00A0\u202F]/g, '<span class="select-none"> </span>');
+        return formatted.replace(
+            /[\s\u00A0\u202F]/g,
+            '<span class="select-none"> </span>',
+        );
     }
 
     onMount(() => {
@@ -113,7 +116,7 @@
             activeDraggingSkill = skillKey;
             const container = e.currentTarget;
             draggingContainerRect = container.getBoundingClientRect();
-            if (browser) document.body.classList.add('dragging-rank');
+            if (browser) document.body.classList.add("dragging-rank");
             updateRankFromX(e.clientX, skillKey);
         }
     }
@@ -126,7 +129,7 @@
         const rank = Math.min(9, Math.max(1, Math.ceil(percentage * 9)));
         manualSkillRanks = {
             ...manualSkillRanks,
-            [skillKey]: rank
+            [skillKey]: rank,
         };
     }
 
@@ -140,7 +143,7 @@
         isDraggingRank = false;
         activeDraggingSkill = null;
         draggingContainerRect = null;
-        if (browser) document.body.classList.remove('dragging-rank');
+        if (browser) document.body.classList.remove("dragging-rank");
     }
 
     $: loadWeaponData(id, $currentLocale);
@@ -245,10 +248,30 @@
     }
 
     $: essenceOptions = [
-        { value: 0, label: $t("stats.none") || "No Essence", textColor: "text-gray-400 dark:text-gray-500", iconColor: "text-gray-400 dark:text-gray-500" },
-        { value: 1, label: ($t("stats.essence") || "Essence") + " (1/3)", textColor: "text-red-500 dark:text-red-400", iconColor: "text-red-500" },
-        { value: 2, label: ($t("stats.essence") || "Essence") + " (2/3)", textColor: "text-orange-500 dark:text-orange-400", iconColor: "text-orange-500" },
-        { value: 3, label: ($t("stats.essence") || "Essence") + " (3/3)", textColor: "text-green-500 dark:text-green-400", iconColor: "text-green-500" },
+        {
+            value: 0,
+            label: $t("stats.none") || "No Essence",
+            textColor: "text-gray-400 dark:text-gray-500",
+            iconColor: "text-gray-400 dark:text-gray-500",
+        },
+        {
+            value: 1,
+            label: ($t("stats.essence") || "Essence") + " (1/3)",
+            textColor: "text-red-500 dark:text-red-400",
+            iconColor: "text-red-500",
+        },
+        {
+            value: 2,
+            label: ($t("stats.essence") || "Essence") + " (2/3)",
+            textColor: "text-orange-500 dark:text-orange-400",
+            iconColor: "text-orange-500",
+        },
+        {
+            value: 3,
+            label: ($t("stats.essence") || "Essence") + " (3/3)",
+            textColor: "text-green-500 dark:text-green-400",
+            iconColor: "text-green-500",
+        },
     ];
 
     let isEditingPot = false;
@@ -321,25 +344,38 @@
         const pLevel = urlParams.get("level");
         const pRefine = urlParams.get("refine");
         const pSkills = urlParams.get("skills");
-        if (paramId !== loadedId || pLevel !== loadedLevelParam || pRefine !== loadedRefineParam || pSkills !== loadedSkillsParam) {
+        if (
+            paramId !== loadedId ||
+            pLevel !== loadedLevelParam ||
+            pRefine !== loadedRefineParam ||
+            pSkills !== loadedSkillsParam
+        ) {
             loadedId = paramId;
             loadedLevelParam = pLevel;
             loadedRefineParam = pRefine;
             loadedSkillsParam = pSkills;
             if (pLevel !== null) {
                 const parsedLevel = parseInt(pLevel);
-                if (!isNaN(parsedLevel) && parsedLevel >= 1 && parsedLevel <= maxLevel) {
+                if (
+                    !isNaN(parsedLevel) &&
+                    parsedLevel >= 1 &&
+                    parsedLevel <= maxLevel
+                ) {
                     level = parsedLevel;
                 }
             }
             if (pRefine !== null) {
                 const parsedRefine = parseInt(pRefine);
-                if (!isNaN(parsedRefine) && parsedRefine >= 0 && parsedRefine <= 5) {
+                if (
+                    !isNaN(parsedRefine) &&
+                    parsedRefine >= 0 &&
+                    parsedRefine <= 5
+                ) {
                     previewPot = parsedRefine;
                 }
             }
             if (pSkills !== null) {
-                const parsedSkills = pSkills.split(",").map(s => parseInt(s));
+                const parsedSkills = pSkills.split(",").map((s) => parseInt(s));
                 const ranks = {};
                 parsedSkills.forEach((val, idx) => {
                     if (!isNaN(val) && val >= 1 && val <= 9) {
@@ -435,11 +471,11 @@
             ];
 
             if (isCumulative) {
-                ascensions.forEach(asc => {
+                ascensions.forEach((asc) => {
                     if (level >= asc.cap) phasesNeeded.push(asc.key);
                 });
             } else {
-                const exactAsc = ascensions.find(a => a.cap === level);
+                const exactAsc = ascensions.find((a) => a.cap === level);
                 if (exactAsc) phasesNeeded.push(exactAsc.key);
             }
 
@@ -454,7 +490,7 @@
             });
         }
 
-        if (typeof weaponLevelUpTable !== 'undefined') {
+        if (typeof weaponLevelUpTable !== "undefined") {
             const curveKey = `weapon_upgrade_curve_${weaponBase.rarity || 5}star`;
             const curveData = weaponLevelUpTable[curveKey]?.list;
 
@@ -467,11 +503,15 @@
                     totalExp = curveData[currentIndex]?.lvUpExpSum || 0;
                     totalGold = curveData[currentIndex]?.lvUpGoldSum || 0;
                 } else {
-                    const currentExpSum = curveData[currentIndex]?.lvUpExpSum || 0;
-                    const prevExpSum = curveData[currentIndex - 1]?.lvUpExpSum || 0;
-                    const currentGoldSum = curveData[currentIndex]?.lvUpGoldSum || 0;
-                    const prevGoldSum = curveData[currentIndex - 1]?.lvUpGoldSum || 0;
-                    
+                    const currentExpSum =
+                        curveData[currentIndex]?.lvUpExpSum || 0;
+                    const prevExpSum =
+                        curveData[currentIndex - 1]?.lvUpExpSum || 0;
+                    const currentGoldSum =
+                        curveData[currentIndex]?.lvUpGoldSum || 0;
+                    const prevGoldSum =
+                        curveData[currentIndex - 1]?.lvUpGoldSum || 0;
+
                     totalExp = currentExpSum - prevExpSum;
                     totalGold = currentGoldSum - prevGoldSum;
                 }
@@ -482,9 +522,9 @@
 
                 if (totalExp > 0) {
                     const expItems = [
-                        { id: "armsInspSet", val: 10000 }, 
-                        { id: "armsInspKit", val: 1000 }, 
-                        { id: "armsInspector", val: 200 }
+                        { id: "armsInspSet", val: 10000 },
+                        { id: "armsInspKit", val: 1000 },
+                        { id: "armsInspector", val: 200 },
                     ];
 
                     let remaining = totalExp;
@@ -492,13 +532,15 @@
                         if (remaining <= 0) break;
                         const count = Math.floor(remaining / item.val);
                         if (count > 0) {
-                            required[item.id] = (required[item.id] || 0) + count;
+                            required[item.id] =
+                                (required[item.id] || 0) + count;
                             remaining -= count * item.val;
                         }
                     }
                     if (remaining > 0 && expItems.length > 0) {
                         const smallest = expItems[expItems.length - 1];
-                        required[smallest.id] = (required[smallest.id] || 0) + 1;
+                        required[smallest.id] =
+                            (required[smallest.id] || 0) + 1;
                     }
                 }
             }
@@ -593,7 +635,10 @@
         if (!text || !bb) return text;
         return text.replace(/\{([^}]+)\}/g, (match, content) => {
             let [expr, format] = content.split(":");
-            let mathStr = expr.replace(/\b(\d+),(\d+)\b/g, (m, f) => Object.keys(bb)[f] || m);
+            let mathStr = expr.replace(
+                /\b(\d+),(\d+)\b/g,
+                (m, f) => Object.keys(bb)[f] || m,
+            );
             for (const key in bb) {
                 const regex = new RegExp(`\\b${key}\\b`, "g");
                 mathStr = mathStr.replace(regex, `(${bb[key]})`);
@@ -665,23 +710,23 @@
 
     function handleInput(e) {
         const val = parseInt(e.target.value);
-        
+
         if (shiftPressed) {
             const diff = val - level;
-            
+
             if (Math.abs(diff) >= 5) {
                 const change = diff > 0 ? 10 : -10;
                 let nextLevel = Math.round(level / 10) * 10 + change;
-                
+
                 if (nextLevel < 1) nextLevel = 1;
                 if (nextLevel > maxLevel) nextLevel = maxLevel;
-                
+
                 level = nextLevel;
             }
         } else {
             level = val;
         }
-        
+
         targetLevel = val;
     }
 </script>
@@ -703,515 +748,569 @@
 {#if !weapons[id]}
     <NotFound />
 {:else}
-<div class="{showBackButton ? 'min-h-screen md:px-8 md:py-3' : 'md:px-1 md:py-1 pb-10'} font-sans transition-colors">
-    {#if showBackButton}
-        <div class="w-full max-w-[1500px] mx-auto mb-6">
-            <Button variant="roundSmall" color="white" onClick={() => history.back()}>
-                <Icon name="arrowLeft" class="w-5 h-5" />
-            </Button>
-        </div>
-    {/if}
+    <div
+        class="{showBackButton
+            ? 'min-h-screen md:px-8 md:py-3'
+            : 'md:px-1 md:py-1 pb-10'} font-sans transition-colors"
+    >
+        {#if showBackButton}
+            <div class="w-full max-w-[1500px] mx-auto mb-6">
+                <Button
+                    variant="roundSmall"
+                    color="white"
+                    onClick={() => history.back()}
+                >
+                    <Icon name="arrowLeft" class="w-5 h-5" />
+                </Button>
+            </div>
+        {/if}
 
-    {#snippet weaponCardSnippet()}
-        <div
-            class="bg-white dark:bg-[#2b2b2b] rounded-3xl flex flex-col overflow-hidden border border-gray-200 dark:border-[#444] transition-colors"
-        >
+        {#snippet weaponCardSnippet()}
             <div
-                class="relative min-h-[210px] flex p-6 overflow-hidden bg-white dark:bg-[#2b2b2b]"
+                class="bg-white dark:bg-[#2b2b2b] rounded-3xl flex flex-col overflow-hidden border border-gray-200 dark:border-[#444] transition-colors"
             >
                 <div
-                    class="absolute inset-0 z-0 pointer-events-none card-gradient pointer-events-none"
-                    style="--rarity-color: {rarityColor};"
-                ></div>
-
-                <div
-                    class="absolute right-[-50px] md:right-[0px] top-1/2 -translate-y-1/2 w-[300px] h-[300px] pt-10 z-10 pointer-events-none"
+                    class="relative min-h-[210px] flex p-6 overflow-hidden bg-white dark:bg-[#2b2b2b]"
                 >
-                    <Image
-                        {id}
-                        variant="weapon-icon"
-                        interactive={true}
-                        className="w-full h-full object-contain drop-shadow-xl blur-[0.3px] rotate-[0.01deg] backface-hidden transform-gpu scale-100"
-                        alt={weaponName}
-                    />
-                </div>
-
-                <div class="relative z-20 flex flex-col gap-4 h-full w-[65%]">
                     <div
-                        class="flex items-start gap-3 w-full max-w-full min-h-[36px]"
+                        class="absolute inset-0 z-0 pointer-events-none card-gradient pointer-events-none"
+                        style="--rarity-color: {rarityColor};"
+                    ></div>
+
+                    <div
+                        class="absolute right-[-50px] md:right-[0px] top-1/2 -translate-y-1/2 w-[300px] h-[300px] pt-10 z-10 pointer-events-none"
                     >
-                        {#if !isEditingPot}
-                            <h1
-                                class="font-sdk text-3xl md:text-4xl font-bold text-[#21272C] dark:text-[#FDFDFD] leading-tight shrink drop-shadow-sm break-words transition-opacity duration-200"
-                            >
-                                {weaponName}
-                            </h1>
+                        <Image
+                            {id}
+                            variant="weapon-icon"
+                            interactive={true}
+                            className="w-full h-full object-contain drop-shadow-xl blur-[0.3px] rotate-[0.01deg] backface-hidden transform-gpu scale-100"
+                            alt={weaponName}
+                        />
+                    </div>
 
-                            <div
-                                class="flex items-center shrink-0 mt-2 relative"
-                            >
-                                {#if !isEditingPot}
-                                    <div
-                                        class="flex items-center gap-1 transition-opacity"
-                                    >
-                                        {#if isOwned}
-                                            <div
-                                                class="mr-1 bg-gradient-to-br from-[#F9B90C] to-[#E3A000] text-white text-[13px] font-black px-2 py-0.5 rounded shadow-sm border border-white/20 leading-none"
-                                            >
-                                                P{currentPot}
-                                            </div>
-                                        {/if}
+                    <div
+                        class="relative z-20 flex flex-col gap-4 h-full w-[65%]"
+                    >
+                        <div
+                            class="flex items-start gap-3 w-full max-w-full min-h-[36px]"
+                        >
+                            {#if !isEditingPot}
+                                <h1
+                                    class="font-sdk text-3xl md:text-4xl font-bold text-[#21272C] dark:text-[#FDFDFD] leading-tight shrink drop-shadow-sm break-words transition-opacity duration-200"
+                                >
+                                    {weaponName}
+                                </h1>
 
-                                        <Tooltip
-                                            text={$t("stats.editPotential") ||
-                                                "Edit Potential"}
+                                <div
+                                    class="flex items-center shrink-0 mt-2 relative"
+                                >
+                                    {#if !isEditingPot}
+                                        <div
+                                            class="flex items-center gap-1 transition-opacity"
                                         >
-                                            <button
-                                                on:click={() => {
-                                                    startEditing();
-                                                    closePotHint();
-                                                }}
-                                                class="w-7 h-7 flex items-center justify-center rounded-lg bg-gray-100 dark:bg-[#383838] text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-[#444] hover:bg-gray-200 dark:hover:bg-[#444] transition-all"
-                                            >
-                                                <Icon
-                                                    name="pen"
-                                                    class="w-3.5 h-3.5 opacity-80"
-                                                />
-                                            </button>
-                                        </Tooltip>
+                                            {#if isOwned}
+                                                <div
+                                                    class="mr-1 bg-gradient-to-br from-[#F9B90C] to-[#E3A000] text-white text-[13px] font-black px-2 py-0.5 rounded shadow-sm border border-white/20 leading-none"
+                                                >
+                                                    P{currentPot}
+                                                </div>
+                                            {/if}
 
-                                        <div class="relative">
                                             <Tooltip
-                                                text={$t("stats.addEssence") || "Add essence"}
+                                                text={$t(
+                                                    "stats.editPotential",
+                                                ) || "Edit Potential"}
                                             >
                                                 <button
-                                                    on:click={() => showEssenceDropdown = !showEssenceDropdown}
+                                                    on:click={() => {
+                                                        startEditing();
+                                                        closePotHint();
+                                                    }}
                                                     class="w-7 h-7 flex items-center justify-center rounded-lg bg-gray-100 dark:bg-[#383838] text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-[#444] hover:bg-gray-200 dark:hover:bg-[#444] transition-all"
                                                 >
                                                     <Icon
-                                                        name="essence"
-                                                        class="w-4 h-4 opacity-80"
-                                                        style="color: {getEssenceColor(currentEssence) || 'currentColor'}"
+                                                        name="pen"
+                                                        class="w-3.5 h-3.5 opacity-80"
                                                     />
                                                 </button>
                                             </Tooltip>
 
-                                            {#if showEssenceDropdown}
-                                                <!-- svelte-ignore a11y_click_events_have_key_events -->
-                                                <!-- svelte-ignore a11y_no_static_element_interactions -->
-                                                <div 
-                                                    class="absolute top-full mt-2 left-0 w-44 bg-white dark:bg-[#383838] border border-gray-200 dark:border-[#444] rounded-lg shadow-xl py-1 z-[150] animate-fadeIn text-xs"
+                                            <div class="relative">
+                                                <Tooltip
+                                                    text={$t(
+                                                        "stats.addEssence",
+                                                    ) || "Add essence"}
                                                 >
-                                                    {#each essenceOptions as opt}
-                                                        <button
-                                                            on:click={() => selectEssence(opt.value)}
-                                                            class="w-full text-left px-3 py-2 hover:bg-gray-100 dark:hover:bg-[#444] font-bold flex items-center gap-2 transition-colors {opt.textColor}"
-                                                        >
-                                                            <Icon name="essence" class="w-3.5 h-3.5" style="color: {getEssenceColor(opt.value) || 'currentColor'}" />
-                                                            <span>{opt.label}</span>
-                                                            {#if currentEssence === opt.value}
-                                                                <Icon name="check" class="w-3.5 h-3.5 text-green-500 ml-auto" />
-                                                            {/if}
-                                                        </button>
-                                                    {/each}
-                                                </div>
-                                                <button 
-                                                    type="button"
-                                                    class="fixed inset-0 z-[140] cursor-default bg-transparent w-full h-full border-none p-0 m-0 outline-none block"
-                                                    aria-label="Close menu"
-                                                    on:click={() => showEssenceDropdown = false}
-                                                ></button>
-                                            {/if}
-                                        </div>
-
-                                        {#if showPotHint}
-                                            <div
-                                                class="z-99 absolute top-full mt-3 right-0 w-52 bg-gray-900 dark:bg-[#1E1E1E] text-white text-xs rounded-lg shadow-2xl p-2.5 z-[150] animate-fadeIn border border-gray-700/50"
-                                            >
-                                                <span
-                                                    class="absolute bottom-full right-2.5 border-[5px] border-transparent border-b-gray-900 dark:border-b-[#1E1E1E]"
-                                                ></span>
-
-                                                <div
-                                                    class="flex items-start justify-between gap-2"
-                                                >
-                                                    <span
-                                                        class="leading-relaxed font-medium tracking-wide"
-                                                    >
-                                                        {$t(
-                                                            "hints.editPotential",
-                                                        )}
-                                                    </span>
                                                     <button
-                                                        on:click={closePotHint}
-                                                        class="text-gray-400 hover:text-white shrink-0 p-0.5 rounded transition-colors focus:outline-none"
+                                                        on:click={() =>
+                                                            (showEssenceDropdown =
+                                                                !showEssenceDropdown)}
+                                                        class="w-7 h-7 flex items-center justify-center rounded-lg bg-gray-100 dark:bg-[#383838] text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-[#444] hover:bg-gray-200 dark:hover:bg-[#444] transition-all"
                                                     >
                                                         <Icon
-                                                            name="close"
-                                                            class="w-3.5 h-3.5"
+                                                            name="essence"
+                                                            class="w-4 h-4 opacity-80"
+                                                            style="color: {getEssenceColor(
+                                                                currentEssence,
+                                                            ) ||
+                                                                'currentColor'}"
                                                         />
                                                     </button>
-                                                </div>
+                                                </Tooltip>
+
+                                                {#if showEssenceDropdown}
+                                                    <!-- svelte-ignore a11y_click_events_have_key_events -->
+                                                    <!-- svelte-ignore a11y_no_static_element_interactions -->
+                                                    <div
+                                                        class="absolute top-full mt-2 left-0 w-44 bg-white dark:bg-[#383838] border border-gray-200 dark:border-[#444] rounded-lg shadow-xl py-1 z-[150] animate-fadeIn text-xs"
+                                                    >
+                                                        {#each essenceOptions as opt}
+                                                            <button
+                                                                on:click={() =>
+                                                                    selectEssence(
+                                                                        opt.value,
+                                                                    )}
+                                                                class="w-full text-left px-3 py-2 hover:bg-gray-100 dark:hover:bg-[#444] font-bold flex items-center gap-2 transition-colors {opt.textColor}"
+                                                            >
+                                                                <Icon
+                                                                    name="essence"
+                                                                    class="w-3.5 h-3.5"
+                                                                    style="color: {getEssenceColor(
+                                                                        opt.value,
+                                                                    ) ||
+                                                                        'currentColor'}"
+                                                                />
+                                                                <span
+                                                                    >{opt.label}</span
+                                                                >
+                                                                {#if currentEssence === opt.value}
+                                                                    <Icon
+                                                                        name="check"
+                                                                        class="w-3.5 h-3.5 text-green-500 ml-auto"
+                                                                    />
+                                                                {/if}
+                                                            </button>
+                                                        {/each}
+                                                    </div>
+                                                    <button
+                                                        type="button"
+                                                        class="fixed inset-0 z-[140] cursor-default bg-transparent w-full h-full border-none p-0 m-0 outline-none block"
+                                                        aria-label="Close menu"
+                                                        on:click={() =>
+                                                            (showEssenceDropdown = false)}
+                                                    ></button>
+                                                {/if}
                                             </div>
-                                        {/if}
-                                    </div>
-                                {:else}
+
+                                            {#if showPotHint}
+                                                <div
+                                                    class="z-99 absolute top-full mt-3 right-0 w-52 bg-gray-900 dark:bg-[#1E1E1E] text-white text-xs rounded-lg shadow-2xl p-2.5 z-[150] animate-fadeIn border border-gray-700/50"
+                                                >
+                                                    <span
+                                                        class="absolute bottom-full right-2.5 border-[5px] border-transparent border-b-gray-900 dark:border-b-[#1E1E1E]"
+                                                    ></span>
+
+                                                    <div
+                                                        class="flex items-start justify-between gap-2"
+                                                    >
+                                                        <span
+                                                            class="leading-relaxed font-medium tracking-wide"
+                                                        >
+                                                            {$t(
+                                                                "hints.editPotential",
+                                                            )}
+                                                        </span>
+                                                        <button
+                                                            on:click={closePotHint}
+                                                            class="text-gray-400 hover:text-white shrink-0 p-0.5 rounded transition-colors focus:outline-none"
+                                                        >
+                                                            <Icon
+                                                                name="close"
+                                                                class="w-3.5 h-3.5"
+                                                            />
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            {/if}
+                                        </div>
+                                    {:else}
+                                        <div
+                                            class="flex items-center gap-1 bg-white dark:bg-[#383838] border border-gray-200 dark:border-[#444] p-1.5 rounded-lg shadow-sm animate-fadeIn"
+                                        ></div>
+                                    {/if}
+                                </div>
+                            {:else}
+                                <div
+                                    class="flex items-center gap-1 bg-white dark:bg-[#383838] border border-gray-200 dark:border-[#444] p-1.5 rounded-lg shadow-sm animate-fadeIn"
+                                >
+                                    {#if accountPots[id] !== undefined}
+                                        <Tooltip
+                                            text={$t("stats.reset") || "Reset"}
+                                        >
+                                            <button
+                                                on:click={resetPot}
+                                                class="w-8 h-8 rounded text-red-500 hover:bg-red-50 dark:hover:bg-red-900/30 flex items-center justify-center transition-colors"
+                                            >
+                                                <Icon
+                                                    name="refresh"
+                                                    class="w-4 h-4"
+                                                />
+                                            </button>
+                                        </Tooltip>
+                                        <div
+                                            class="w-[1px] h-6 bg-gray-300 dark:bg-gray-600 mx-1"
+                                        ></div>
+                                    {/if}
+
+                                    <button
+                                        on:click={() => changeDraft(-1)}
+                                        class="w-8 h-8 rounded bg-gray-100 hover:bg-gray-200 dark:bg-[#444] dark:hover:bg-[#555] flex items-center justify-center transition-colors disabled:opacity-50 text-gray-700 dark:text-gray-300"
+                                        disabled={draftPot === -1}
+                                    >
+                                        <span
+                                            class="font-bold text-lg leading-none"
+                                            >-</span
+                                        >
+                                    </button>
+
+                                    <span
+                                        class="font-nums font-bold px-2 text-center text-[#21272C] dark:text-white uppercase tracking-wider"
+                                    >
+                                        {draftPot === -1 ? "" : `P${draftPot}`}
+                                    </span>
+
+                                    <button
+                                        on:click={() => changeDraft(1)}
+                                        class="w-8 h-8 rounded bg-gray-100 hover:bg-gray-200 dark:bg-[#444] dark:hover:bg-[#555] flex items-center justify-center transition-colors disabled:opacity-50 text-gray-700 dark:text-gray-300"
+                                        disabled={draftPot >= 9999}
+                                    >
+                                        <span
+                                            class="font-bold text-lg leading-none"
+                                            >+</span
+                                        >
+                                    </button>
+
                                     <div
-                                        class="flex items-center gap-1 bg-white dark:bg-[#383838] border border-gray-200 dark:border-[#444] p-1.5 rounded-lg shadow-sm animate-fadeIn"
+                                        class="w-[1px] h-6 bg-gray-300 dark:bg-gray-600 mx-1"
                                     ></div>
-                                {/if}
-                            </div>
-                        {:else}
-                            <div
-                                class="flex items-center gap-1 bg-white dark:bg-[#383838] border border-gray-200 dark:border-[#444] p-1.5 rounded-lg shadow-sm animate-fadeIn"
-                            >
-                                {#if accountPots[id] !== undefined}
+
                                     <Tooltip
-                                        text={$t("stats.reset") || "Reset"}
+                                        text={$t("settings.account.cancel") ||
+                                            "Cancel"}
                                     >
                                         <button
-                                            on:click={resetPot}
-                                            class="w-8 h-8 rounded text-red-500 hover:bg-red-50 dark:hover:bg-red-900/30 flex items-center justify-center transition-colors"
+                                            on:click={cancelEdit}
+                                            class="w-8 h-8 rounded text-gray-500 hover:bg-gray-200 dark:hover:bg-[#444] flex items-center justify-center transition-colors"
                                         >
                                             <Icon
-                                                name="refresh"
+                                                name="close"
                                                 class="w-4 h-4"
                                             />
                                         </button>
                                     </Tooltip>
-                                    <div
-                                        class="w-[1px] h-6 bg-gray-300 dark:bg-gray-600 mx-1"
-                                    ></div>
-                                {/if}
 
-                                <button
-                                    on:click={() => changeDraft(-1)}
-                                    class="w-8 h-8 rounded bg-gray-100 hover:bg-gray-200 dark:bg-[#444] dark:hover:bg-[#555] flex items-center justify-center transition-colors disabled:opacity-50 text-gray-700 dark:text-gray-300"
-                                    disabled={draftPot === -1}
-                                >
-                                    <span class="font-bold text-lg leading-none"
-                                        >-</span
+                                    <Tooltip
+                                        text={$t("settings.account.save") ||
+                                            "Save"}
                                     >
-                                </button>
+                                        <button
+                                            on:click={savePot}
+                                            class="w-8 h-8 ml-1 rounded bg-[#FFC107] hover:bg-[#F9B90C] text-black flex items-center justify-center transition-colors"
+                                        >
+                                            <Icon name="save" class="w-4 h-4" />
+                                        </button>
+                                    </Tooltip>
+                                </div>
+                            {/if}
+                        </div>
 
-                                <span
-                                    class="font-nums font-bold px-2 text-center text-[#21272C] dark:text-white uppercase tracking-wider"
-                                >
-                                    {draftPot === -1 ? "" : `P${draftPot}`}
-                                </span>
-
-                                <button
-                                    on:click={() => changeDraft(1)}
-                                    class="w-8 h-8 rounded bg-gray-100 hover:bg-gray-200 dark:bg-[#444] dark:hover:bg-[#555] flex items-center justify-center transition-colors disabled:opacity-50 text-gray-700 dark:text-gray-300"
-                                    disabled={draftPot >= 9999}
-                                >
-                                    <span class="font-bold text-lg leading-none"
-                                        >+</span
-                                    >
-                                </button>
-
+                        <div class="flex items-center gap-4">
+                            <Tooltip text={weaponTypeLabel}>
                                 <div
-                                    class="w-[1px] h-6 bg-gray-300 dark:bg-gray-600 mx-1"
-                                ></div>
-
-                                <Tooltip
-                                    text={$t("settings.account.cancel") ||
-                                        "Cancel"}
+                                    class="w-9 h-9 rounded bg-[#21272C] flex items-center justify-center shadow-sm"
                                 >
-                                    <button
-                                        on:click={cancelEdit}
-                                        class="w-8 h-8 rounded text-gray-500 hover:bg-gray-200 dark:hover:bg-[#444] flex items-center justify-center transition-colors"
-                                    >
-                                        <Icon name="close" class="w-4 h-4" />
-                                    </button>
-                                </Tooltip>
-
-                                <Tooltip
-                                    text={$t("settings.account.save") || "Save"}
-                                >
-                                    <button
-                                        on:click={savePot}
-                                        class="w-8 h-8 ml-1 rounded bg-[#FFC107] hover:bg-[#F9B90C] text-black flex items-center justify-center transition-colors"
-                                    >
-                                        <Icon name="save" class="w-4 h-4" />
-                                    </button>
-                                </Tooltip>
-                            </div>
-                        {/if}
-                    </div>
-
-                    <div class="flex items-center gap-4">
-                        <Tooltip text={weaponTypeLabel}>
+                                    <Icon
+                                        name={safeWeaponType}
+                                        class="w-6 h-6 text-white"
+                                    />
+                                </div>
+                            </Tooltip>
                             <div
-                                class="w-9 h-9 rounded bg-[#21272C] flex items-center justify-center shadow-sm"
-                            >
-                                <Icon
-                                    name={safeWeaponType}
-                                    class="w-6 h-6 text-white"
-                                />
-                            </div>
-                        </Tooltip>
-                        <div
-                            class="w-[2px] h-6 bg-gray-300 dark:bg-[#555] rounded"
-                        ></div>
-                        <div class="flex -space-x-1">
-                            {#each Array(weaponBase.rarity || 5) as _}
-                                <Icon
-                                    name="strokeStar"
-                                    class="w-9 h-9"
-                                    style="color: {rarityColor}; stroke-opacity: 100%;"
-                                />
-                            {/each}
-                        </div>
-                    </div>
-
-                    <div class="flex items-center gap-3 mt-auto">
-                        <div
-                            class="w-9 h-9 rounded bg-[#8F8F8F] flex items-center justify-center shadow-sm"
-                        >
-                            <Icon name="atk" class="w-5 h-5 text-white" />
-                        </div>
-                        <span
-                            class="text-[15px] font-bold text-[#21272C] dark:text-[#E4E4E4]"
-                            >{tOrFallback("stats.baseAtk", "Base ATK")}</span
-                        >
-                        <span
-                            class="text-3xl font-sdk font-bold text-[#21272C] dark:text-[#E4E4E4] leading-none ml-2 drop-shadow-sm"
-                            style="text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);"
-                            >{@html formatNumberForSelection(baseAtk)}</span
-                        >
-                    </div>
-                </div>
-            </div>
-
-            <div
-                class="px-6 pt-5 bg-white dark:bg-[#383838] flex flex-col md:flex-row items-start md:items-center gap-5 md:gap-4 border-t border-gray-200 dark:border-[#444] transition-colors"
-            >
-                <div
-                    class="flex items-center gap-1 shrink-0 w-full md:w-auto justify-between md:justify-start"
-                >
-                    <div class="flex items-center gap-1.5">
-                        <div
-                            class="flex flex-col gap-1 shrink-0 h-full justify-center"
-                        >
-                            <button
-                                on:click={setMaxAll}
-                                class="text-[9px] font-bold px-2.5 py-[4px] bg-gray-200 dark:bg-[#4A4A4A] hover:bg-gray-300 dark:hover:bg-[#555] rounded text-gray-700 hover:text-black dark:text-gray-200 uppercase leading-none transition-colors border border-gray-200 dark:border-transparent shadow-sm"
-                                >MAX</button
-                            >
-                            <button
-                                on:click={setMinAll}
-                                class="text-[9px] font-bold px-2.5 py-[4px] bg-gray-200 dark:bg-[#4A4A4A] hover:bg-gray-300 dark:hover:bg-[#555] rounded text-gray-700 hover:text-black dark:text-gray-200 uppercase leading-none transition-colors border border-gray-200 dark:border-transparent shadow-sm"
-                                >MIN</button
-                            >
-                        </div>
-                        <div
-                            class="bg-gray-200 dark:bg-[#4A4A4A] w-[75px] rounded-md px-3 py-1.5 flex items-baseline gap-1 shadow-sm shrink-0"
-                        >
-                            <span
-                                class="text-[28px] font-bold text-[#21272C] dark:text-white font-nums leading-none"
-                                >{level}</span
-                            >
-                            <span
-                                class="text-[11px] font-bold text-gray-500 dark:text-gray-300 uppercase tracking-widest"
-                                >LV.</span
-                            >
-                        </div>
-                    </div>
-
-                    <div class="relative pot-dropdown-container">
-                        <button
-                            on:click={() =>
-                                (isPotDropdownOpen = !isPotDropdownOpen)}
-                            class="flex h-[40px] items-center gap-3 bg-gray-200 dark:bg-[#4A4A4A] text-[16px] font-bold rounded-md px-3 py-1.5 outline-none border border-gray-200 dark:border-transparent cursor-pointer hover:bg-gray-300 dark:hover:bg-[#555] transition-colors shadow-sm"
-                        >
-                            <span class="text-[#21272C] dark:text-white">P{previewPot}</span>
-                            <Icon
-                                name="arrowDown"
-                                class="pt-0.5 w-3 h-3 text-[#21272C] dark:text-white transition-transform {isPotDropdownOpen
-                                    ? 'rotate-180'
-                                    : ''}"
-                            />
-                        </button>
- 
-                        {#if isPotDropdownOpen}
-                            <div
-                                class="absolute top-full right-0 md:left-0 mt-1 w-full min-w-[120px] bg-white dark:bg-[#2C2C2C] border border-gray-200 dark:border-[#444] rounded-md shadow-[0_8px_20px_rgba(0,0,0,0.3)] overflow-hidden z-[60] animate-fadeIn"
-                            >
-                                {#each Array(6) as _, i}
-                                    <button
-                                        class="w-full text-left px-3 py-2 text-[13px] font-bold font-nums transition-colors hover:bg-gray-100 dark:hover:bg-[#4A4A4A] {previewPot ===
-                                        i
-                                            ? 'bg-gray-50 dark:bg-[#383838] text-[#F9B90C]'
-                                            : 'text-gray-700 dark:text-[#E4E4E4]'}"
-                                        on:click={() => {
-                                            previewPot = i;
-                                            isPotDropdownOpen = false;
-                                        }}
-                                    >
-                                        P{i}
-                                    </button>
+                                class="w-[2px] h-6 bg-gray-300 dark:bg-[#555] rounded"
+                            ></div>
+                            <div class="flex -space-x-1">
+                                {#each Array(weaponBase.rarity || 5) as _}
+                                    <Icon
+                                        name="strokeStar"
+                                        class="w-9 h-9"
+                                        style="color: {rarityColor}; stroke-opacity: 100%;"
+                                    />
                                 {/each}
                             </div>
-                        {/if}
-                    </div>
-                </div>
+                        </div>
 
-                <div class="flex items-center gap-4 w-full flex-1">
-                    <div class="flex-1 relative flex items-center md:px-4">
-                        <input
-                            type="range"
-                            min="1"
-                            max={maxLevel}
-                            step="1"
-                            value={targetLevel}
-                            on:input={handleInput}
-                            class="touch-none w-full h-2 bg-gray-200 dark:bg-[#2C2C2C] rounded-lg appearance-none cursor-pointer accent-[#F9B90C] outline-none"
-                        />
-                    </div>
-
-                    <button
-                        on:click={() => (showStatsTable = true)}
-                        class="shrink-0 flex items-center gap-1.5 bg-gray-200 dark:bg-[#4A4A4A] hover:bg-gray-300 dark:hover:bg-[#555] px-4 py-2 rounded-md text-[13px] text-[#21272C] dark:text-gray-200 font-medium transition-colors shadow-sm"
-                    >
-                        <Icon name="table" class="w-4 h-4" />
-                        <span>{tOrFallback("stats.table", "Table")}</span>
-                    </button>
-                </div>
-            </div>
-
-            <div
-                class="p-6 flex flex-col gap-3 bg-white dark:bg-[#383838] transition-colors"
-            >
-                {#if weaponLocale.skills}
-                    {#each weaponLocale.skills as skillData, index}
-                        {@const skillIndex = index + 1}
-                        {@const skillKey = `skill${skillIndex}`}
-                        {@const state = getSkillState(
-                            skillIndex,
-                            level,
-                            previewPot,
-                            manualSkillRanks,
-                        )}
-                        {@const bb = getSkillBb(skillIndex, state.rank)}
-
-                        <div class="flex flex-col gap-1">
+                        <div class="flex items-center gap-3 mt-auto">
                             <div
-                                class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-2 items-start w-full"
+                                class="w-9 h-9 rounded bg-[#8F8F8F] flex items-center justify-center shadow-sm"
                             >
-                                <div class="flex items-center gap-2 shrink-0">
-                                    <Icon name="circle" class="w-3 h-3 text-[#888888]" />
-                                    <div class="flex gap-1 items-center">
-                                        <h3
-                                            class="font-medium text-[#21272C] dark:text-[#E4E4E4] text-[15px] leading-tight"
+                                <Icon name="atk" class="w-5 h-5 text-white" />
+                            </div>
+                            <span
+                                class="text-[15px] font-bold text-[#21272C] dark:text-[#E4E4E4]"
+                                >{tOrFallback(
+                                    "stats.baseAtk",
+                                    "Base ATK",
+                                )}</span
+                            >
+                            <span
+                                class="text-3xl font-sdk font-bold text-[#21272C] dark:text-[#E4E4E4] leading-none ml-2 drop-shadow-sm"
+                                style="text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);"
+                                >{@html formatNumberForSelection(baseAtk)}</span
+                            >
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="px-6 pt-5 bg-white dark:bg-[#383838] flex flex-col md:flex-row items-start md:items-center gap-5 md:gap-4 border-t border-gray-200 dark:border-[#444] transition-colors"
+                >
+                    <div
+                        class="flex items-center gap-1 shrink-0 w-full md:w-auto justify-between md:justify-start"
+                    >
+                        <div class="flex items-center gap-1.5">
+                            <div
+                                class="flex flex-col gap-1 shrink-0 h-full justify-center"
+                            >
+                                <button
+                                    on:click={setMaxAll}
+                                    class="text-[9px] font-bold px-2.5 py-[4px] bg-gray-200 dark:bg-[#4A4A4A] hover:bg-gray-300 dark:hover:bg-[#555] rounded text-gray-700 hover:text-black dark:text-gray-200 uppercase leading-none transition-colors border border-gray-200 dark:border-transparent shadow-sm"
+                                    >MAX</button
+                                >
+                                <button
+                                    on:click={setMinAll}
+                                    class="text-[9px] font-bold px-2.5 py-[4px] bg-gray-200 dark:bg-[#4A4A4A] hover:bg-gray-300 dark:hover:bg-[#555] rounded text-gray-700 hover:text-black dark:text-gray-200 uppercase leading-none transition-colors border border-gray-200 dark:border-transparent shadow-sm"
+                                    >MIN</button
+                                >
+                            </div>
+                            <div
+                                class="bg-gray-200 dark:bg-[#4A4A4A] w-[75px] rounded-md px-3 py-1.5 flex items-baseline gap-1 shadow-sm shrink-0"
+                            >
+                                <span
+                                    class="text-[28px] font-bold text-[#21272C] dark:text-white font-nums leading-none"
+                                    >{level}</span
+                                >
+                                <span
+                                    class="text-[11px] font-bold text-gray-500 dark:text-gray-300 uppercase tracking-widest"
+                                    >LV.</span
+                                >
+                            </div>
+                        </div>
+
+                        <div class="relative pot-dropdown-container">
+                            <button
+                                on:click={() =>
+                                    (isPotDropdownOpen = !isPotDropdownOpen)}
+                                class="flex h-[40px] items-center gap-3 bg-gray-200 dark:bg-[#4A4A4A] text-[16px] font-bold rounded-md px-3 py-1.5 outline-none border border-gray-200 dark:border-transparent cursor-pointer hover:bg-gray-300 dark:hover:bg-[#555] transition-colors shadow-sm"
+                            >
+                                <span class="text-[#21272C] dark:text-white"
+                                    >P{previewPot}</span
+                                >
+                                <Icon
+                                    name="arrowDown"
+                                    class="pt-0.5 w-3 h-3 text-[#21272C] dark:text-white transition-transform {isPotDropdownOpen
+                                        ? 'rotate-180'
+                                        : ''}"
+                                />
+                            </button>
+
+                            {#if isPotDropdownOpen}
+                                <div
+                                    class="absolute top-full right-0 md:left-0 mt-1 w-full min-w-[120px] bg-white dark:bg-[#2C2C2C] border border-gray-200 dark:border-[#444] rounded-md shadow-[0_8px_20px_rgba(0,0,0,0.3)] overflow-hidden z-[60] animate-fadeIn"
+                                >
+                                    {#each Array(6) as _, i}
+                                        <button
+                                            class="w-full text-left px-3 py-2 text-[13px] font-bold font-nums transition-colors hover:bg-gray-100 dark:hover:bg-[#4A4A4A] {previewPot ===
+                                            i
+                                                ? 'bg-gray-50 dark:bg-[#383838] text-[#F9B90C]'
+                                                : 'text-gray-700 dark:text-[#E4E4E4]'}"
+                                            on:click={() => {
+                                                previewPot = i;
+                                                isPotDropdownOpen = false;
+                                            }}
                                         >
-                                            {skillData.name}
-                                        </h3>
+                                            P{i}
+                                        </button>
+                                    {/each}
+                                </div>
+                            {/if}
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-4 w-full flex-1">
+                        <div class="flex-1 relative flex items-center md:px-4">
+                            <input
+                                type="range"
+                                min="1"
+                                max={maxLevel}
+                                step="1"
+                                value={targetLevel}
+                                on:input={handleInput}
+                                class="touch-none w-full h-2 bg-gray-200 dark:bg-[#2C2C2C] rounded-lg appearance-none cursor-pointer accent-[#F9B90C] outline-none"
+                            />
+                        </div>
+
+                        <button
+                            on:click={() => (showStatsTable = true)}
+                            class="shrink-0 flex items-center gap-1.5 bg-gray-200 dark:bg-[#4A4A4A] hover:bg-gray-300 dark:hover:bg-[#555] px-4 py-2 rounded-md text-[13px] text-[#21272C] dark:text-gray-200 font-medium transition-colors shadow-sm"
+                        >
+                            <Icon name="table" class="w-4 h-4" />
+                            <span>{tOrFallback("stats.table", "Table")}</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div
+                    class="p-6 flex flex-col gap-3 bg-white dark:bg-[#383838] transition-colors"
+                >
+                    {#if weaponLocale.skills}
+                        {#each weaponLocale.skills as skillData, index}
+                            {@const skillIndex = index + 1}
+                            {@const skillKey = `skill${skillIndex}`}
+                            {@const state = getSkillState(
+                                skillIndex,
+                                level,
+                                previewPot,
+                                manualSkillRanks,
+                            )}
+                            {@const bb = getSkillBb(skillIndex, state.rank)}
+
+                            <div class="flex flex-col gap-1">
+                                <div
+                                    class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-2 items-start w-full"
+                                >
+                                    <div
+                                        class="flex items-center gap-2 shrink-0"
+                                    >
+                                        <Icon
+                                            name="circle"
+                                            class="w-3 h-3 text-[#888888]"
+                                        />
+                                        <div class="flex gap-1 items-center">
+                                            <h3
+                                                class="font-medium text-[#21272C] dark:text-[#E4E4E4] text-[15px] leading-tight"
+                                            >
+                                                {skillData.name}
+                                            </h3>
+                                            <span
+                                                class="pt-1 block sm:hidden min-w-[40px] flex text-xs font-bold text-gray-400 dark:text-gray-500 font-nums tracking-wider"
+                                            >
+                                                (Lv. {state.rank})
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="hidden sm:block flex-1"></div>
+
+                                    <div
+                                        class="flex items-center gap-3 w-full sm:w-auto pl-5 sm:pl-0 mt-1 sm:mt-0"
+                                    >
+                                        <!-- svelte-ignore a11y_no_static_element_interactions -->
+                                        <div
+                                            class="hidden sm:flex gap-[4px] bg-gray-100 dark:bg-[#2b2b2b] px-3 py-1.5 rounded-full border border-gray-200 dark:border-[#444] select-none"
+                                            on:mousedown={(e) =>
+                                                startDraggingRank(e, skillKey)}
+                                            on:contextmenu|preventDefault
+                                        >
+                                            {#each Array(9) as _, i}
+                                                <button
+                                                    type="button"
+                                                    aria-label="Set level {i +
+                                                        1}"
+                                                    title="Level {i + 1}"
+                                                    class="w-[7px] h-[13px] rounded-full transform rotate-[30deg] border-[1.5px] transition-all duration-200 cursor-pointer outline-none shrink-0 flex items-center justify-center hover:scale-110 focus:ring-1 focus:ring-[#F9B90C]
+            {i < state.rank
+                                                        ? 'bg-[#21272C] border-[#21272C] dark:bg-white dark:border-white shadow-sm'
+                                                        : i < state.upper
+                                                          ? 'bg-gray-300 border-gray-300 dark:bg-[#555] dark:border-[#555]'
+                                                          : 'bg-transparent border-gray-400 dark:border-[#666] hover:bg-gray-200 dark:hover:bg-[#444]'}"
+                                                    on:click={() =>
+                                                        (manualSkillRanks = {
+                                                            ...manualSkillRanks,
+                                                            [skillKey]: i + 1,
+                                                        })}
+                                                ></button>
+                                            {/each}
+                                        </div>
+
+                                        <div class="block sm:hidden w-full">
+                                            <input
+                                                type="range"
+                                                min="1"
+                                                max="9"
+                                                step="1"
+                                                value={manualSkillRanks[
+                                                    skillKey
+                                                ] ||
+                                                    state.rank ||
+                                                    1}
+                                                on:input={(e) =>
+                                                    (manualSkillRanks = {
+                                                        ...manualSkillRanks,
+                                                        [skillKey]: parseInt(
+                                                            e.target.value,
+                                                        ),
+                                                    })}
+                                                class="touch-none w-full h-2 bg-gray-200 dark:bg-[#2C2C2C] rounded-lg appearance-none cursor-pointer accent-[#F9B90C]"
+                                            />
+                                        </div>
+
+                                        <div
+                                            class="hidden sm:flex text-gray-400 dark:text-[#555] text-xs font-bold pl-1"
+                                        >
+                                            |
+                                        </div>
+
                                         <span
-                                            class="pt-1 block sm:hidden min-w-[40px] flex text-xs font-bold text-gray-400 dark:text-gray-500 font-nums tracking-wider"
+                                            class="hidden sm:flex text-[14px] font-bold text-[#21272C] dark:text-white font-nums w-8 text-center shrink-0"
                                         >
-                                            (Lv. {state.rank})
+                                            {state.rank}/{state.upper}
                                         </span>
                                     </div>
                                 </div>
 
-                                <div class="hidden sm:block flex-1"></div>
-
                                 <div
-                                    class="flex items-center gap-3 w-full sm:w-auto pl-5 sm:pl-0 mt-1 sm:mt-0"
+                                    class="text-[14px] text-gray-700 dark:text-[#A0A0A0] leading-relaxed pl-[20px] whitespace-pre-wrap"
+                                    use:hyperlinkAction
                                 >
-                                    <!-- svelte-ignore a11y_no_static_element_interactions -->
-                                    <div
-                                        class="hidden sm:flex gap-[4px] bg-gray-100 dark:bg-[#2b2b2b] px-3 py-1.5 rounded-full border border-gray-200 dark:border-[#444] select-none"
-                                        on:mousedown={(e) => startDraggingRank(e, skillKey)}
-                                        on:contextmenu|preventDefault
-                                    >
-                                        {#each Array(9) as _, i}
-                                            <button
-                                                type="button"
-                                                aria-label="Set level {i + 1}"
-                                                title="Level {i + 1}"
-                                                class="w-[7px] h-[13px] rounded-full transform rotate-[30deg] border-[1.5px] transition-all duration-200 cursor-pointer outline-none shrink-0 flex items-center justify-center hover:scale-110 focus:ring-1 focus:ring-[#F9B90C]
-            {i < state.rank
-                                                    ? 'bg-[#21272C] border-[#21272C] dark:bg-white dark:border-white shadow-sm'
-                                                    : i < state.upper
-                                                      ? 'bg-gray-300 border-gray-300 dark:bg-[#555] dark:border-[#555]'
-                                                      : 'bg-transparent border-gray-400 dark:border-[#666] hover:bg-gray-200 dark:hover:bg-[#444]'}"
-                                                on:click={() =>
-                                                    (manualSkillRanks = {
-                                                        ...manualSkillRanks,
-                                                        [skillKey]: i + 1,
-                                                    })}
-                                            ></button>
-                                        {/each}
-                                    </div>
-
-                                    <div class="block sm:hidden w-full">
-                                        <input
-                                            type="range"
-                                            min="1"
-                                            max="9"
-                                            step="1"
-                                            value={manualSkillRanks[skillKey] ||
-                                                state.rank ||
-                                                1}
-                                            on:input={(e) =>
-                                                (manualSkillRanks = {
-                                                    ...manualSkillRanks,
-                                                    [skillKey]: parseInt(
-                                                        e.target.value,
-                                                    ),
-                                                })}
-                                            class="touch-none w-full h-2 bg-gray-200 dark:bg-[#2C2C2C] rounded-lg appearance-none cursor-pointer accent-[#F9B90C]"
-                                        />
-                                    </div>
-
-                                    <div
-                                        class="hidden sm:flex text-gray-400 dark:text-[#555] text-xs font-bold pl-1"
-                                    >
-                                        |
-                                    </div>
-
-                                    <span
-                                        class="hidden sm:flex text-[14px] font-bold text-[#21272C] dark:text-white font-nums w-8 text-center shrink-0"
-                                    >
-                                        {state.rank}/{state.upper}
-                                    </span>
+                                    {@html parseRichText(
+                                        interpolateBlackboard(
+                                            skillData.description,
+                                            bb,
+                                        ),
+                                    )}
                                 </div>
                             </div>
+                        {/each}
+                    {/if}
+                </div>
 
-                            <div
-                                class="text-[14px] text-gray-700 dark:text-[#A0A0A0] leading-relaxed pl-[20px] whitespace-pre-wrap"
-                                use:hyperlinkAction
-                            >
-                                {@html parseRichText(
-                                    interpolateBlackboard(
-                                        skillData.description,
-                                        bb,
-                                    ),
-                                )}
-                            </div>
-                        </div>
-                    {/each}
-                {/if}
-            </div>
-
-            <div
-                class="px-6 py-5 border-t border-gray-200 dark:border-[#444] bg-white dark:bg-[#383838] transition-colors"
-            >
-                <p
-                    class="text-[13px] text-gray-500 dark:text-[#888] leading-relaxed text-justify"
+                <div
+                    class="px-6 py-5 border-t border-gray-200 dark:border-[#444] bg-white dark:bg-[#383838] transition-colors"
                 >
-                    {weaponLocale.decoDesc}
-                </p>
+                    <p
+                        class="text-[13px] text-gray-500 dark:text-[#888] leading-relaxed text-justify"
+                    >
+                        {weaponLocale.decoDesc}
+                    </p>
+                </div>
             </div>
-        </div>
-    {/snippet}
+        {/snippet}
 
-    {#snippet recOpsCardSnippet()}
-        <div
-            class="bg-white dark:bg-[#2b2b2b] p-6 rounded-3xl border border-gray-200 dark:border-[#444] flex flex-col gap-4 transition-colors"
-        >
+        {#snippet recOpsCardSnippet()}
+            <div
+                class="bg-white dark:bg-[#2b2b2b] p-6 rounded-3xl border border-gray-200 dark:border-[#444] flex flex-col gap-4 transition-colors"
+            >
                 <h2
                     class="text-2xl font-bold text-[#21272C] dark:text-[#FDFDFD] font-sdk border-b border-gray-100 dark:border-[#444] pb-3"
                 >
@@ -1220,13 +1319,18 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
                     <div class="flex flex-col gap-3">
-                        <div class="flex items-center gap-2 text-sm font-bold text-gray-700 dark:text-gray-300">
+                        <div
+                            class="flex items-center gap-2 text-sm font-bold text-gray-700 dark:text-gray-300"
+                        >
                             <span>{$t("stats.matchingSkills")}</span>
                         </div>
                         {#if skillOps.length > 0}
                             <div class="flex flex-wrap gap-3">
                                 {#each skillOps as opObj}
-                                    <OperatorCard operator={opObj} variant="small" />
+                                    <OperatorCard
+                                        operator={opObj}
+                                        variant="small"
+                                    />
                                 {/each}
                             </div>
                         {:else}
@@ -1236,14 +1340,21 @@
                         {/if}
                     </div>
 
-                    <div class="flex flex-col gap-3 md:border-l md:border-gray-200 md:dark:border-[#444] md:pl-6">
-                        <div class="flex items-center gap-2 text-sm font-bold text-gray-700 dark:text-gray-300">
+                    <div
+                        class="flex flex-col gap-3 md:border-l md:border-gray-200 md:dark:border-[#444] md:pl-6"
+                    >
+                        <div
+                            class="flex items-center gap-2 text-sm font-bold text-gray-700 dark:text-gray-300"
+                        >
                             <span>{$t("stats.matchingStats")}</span>
                         </div>
                         {#if attrOps.length > 0}
                             <div class="flex flex-wrap gap-3">
                                 {#each attrOps as opObj}
-                                    <OperatorCard operator={opObj} variant="small" />
+                                    <OperatorCard
+                                        operator={opObj}
+                                        variant="small"
+                                    />
                                 {/each}
                             </div>
                         {:else}
@@ -1254,14 +1365,18 @@
                     </div>
                 </div>
             </div>
-    {/snippet}
+        {/snippet}
 
-    {#snippet essenceLocsCardSnippet()}
-        <div
-            class="bg-white dark:bg-[#2b2b2b] p-6 rounded-3xl border border-gray-200 dark:border-[#444] flex flex-col gap-4 transition-colors"
-        >
-                <div class="flex items-center justify-between border-b border-gray-100 dark:border-[#444] pb-3 gap-3 flex-wrap">
-                    <h2 class="text-2xl font-bold text-[#21272C] dark:text-[#FDFDFD] font-sdk">
+        {#snippet essenceLocsCardSnippet()}
+            <div
+                class="bg-white dark:bg-[#2b2b2b] p-6 rounded-3xl border border-gray-200 dark:border-[#444] flex flex-col gap-4 transition-colors"
+            >
+                <div
+                    class="flex items-center justify-between border-b border-gray-100 dark:border-[#444] pb-3 gap-3 flex-wrap"
+                >
+                    <h2
+                        class="text-2xl font-bold text-[#21272C] dark:text-[#FDFDFD] font-sdk"
+                    >
                         {$t("stats.essenceLocations")} (3/3)
                     </h2>
                     <button
@@ -1277,7 +1392,9 @@
                     {#each essenceLocationsList as loc (loc.id)}
                         {@const rColor = getRegionColor(loc.region)}
                         {@const locTitle = $t(`energyPoints.${loc.id}`)}
-                        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 p-4 rounded-2xl bg-gray-50/70 dark:bg-[#333]/50 border border-gray-100 dark:border-[#444]/60">
+                        <div
+                            class="flex flex-col md:flex-row md:items-center justify-between gap-4 p-4 rounded-2xl bg-gray-50/70 dark:bg-[#333]/50 border border-gray-100 dark:border-[#444]/60"
+                        >
                             <div class="flex flex-col gap-2.5 min-w-0 flex-1">
                                 <div class="flex items-center gap-2.5">
                                     <Icon
@@ -1285,17 +1402,25 @@
                                         class="w-6 h-6 shrink-0"
                                         style="color: {rColor};"
                                     />
-                                    <span class="font-bold text-base text-gray-900 dark:text-white leading-snug break-words">
+                                    <span
+                                        class="font-bold text-base text-gray-900 dark:text-white leading-snug break-words"
+                                    >
                                         {locTitle}
                                     </span>
                                 </div>
 
                                 {#if loc.enemyIds && loc.enemyIds.length > 0}
-                                    <div class="flex flex-col gap-1.5 pl-0.5 pt-1">
-                                        <span class="text-xs font-semibold text-gray-500 dark:text-gray-400 shrink-0">
+                                    <div
+                                        class="flex flex-col gap-1.5 pl-0.5 pt-1"
+                                    >
+                                        <span
+                                            class="text-xs font-semibold text-gray-500 dark:text-gray-400 shrink-0"
+                                        >
                                             {$t("pages.enemies")}:
                                         </span>
-                                        <div class="flex items-center gap-2 flex-wrap">
+                                        <div
+                                            class="flex items-center gap-2 flex-wrap"
+                                        >
                                             {#each getSortedEnemies(loc.enemyIds) as enemyObj}
                                                 <WeaponCard
                                                     weapon={enemyObj}
@@ -1309,31 +1434,52 @@
                                     </div>
                                 {/if}
                             </div>
-                            <MapPreview url={loc.url} title={locTitle} variant="mini" onZoom={onZoomImage} />
+                            <MapPreview
+                                url={loc.url}
+                                title={locTitle}
+                                variant="mini"
+                                onZoom={onZoomImage}
+                            />
                         </div>
                     {/each}
                 </div>
             </div>
-    {/snippet}
+        {/snippet}
 
-    {#snippet materialsCardSnippet()}
-        <div
-            class="bg-white dark:bg-[#2b2b2b] p-6 rounded-3xl border border-gray-200 dark:border-[#444] flex flex-col gap-4 transition-colors"
-        >
-                <div class="flex flex-col md:flex-row md:items-center justify-between border-b border-gray-100 dark:border-[#444] pb-3 gap-4">
+        {#snippet materialsCardSnippet()}
+            <div
+                class="bg-white dark:bg-[#2b2b2b] p-6 rounded-3xl border border-gray-200 dark:border-[#444] flex flex-col gap-4 transition-colors"
+            >
+                <div
+                    class="flex flex-col md:flex-row md:items-center justify-between border-b border-gray-100 dark:border-[#444] pb-3 gap-4"
+                >
                     <div class="flex items-center gap-2">
-                        <h2 class="text-2xl font-bold text-[#21272C] dark:text-[#FDFDFD] font-sdk">
+                        <h2
+                            class="text-2xl font-bold text-[#21272C] dark:text-[#FDFDFD] font-sdk"
+                        >
                             {tOrFallback("stats.materials", "Материалы")}
                         </h2>
                     </div>
-                    
+
                     <div class="flex items-center gap-4 flex-wrap">
-                        <label class="flex items-center gap-1.5 text-xs md:text-sm font-medium text-gray-600 dark:text-[#B7B6B3] cursor-pointer select-none hover:text-black dark:hover:text-white transition-colors">
-                            <input type="checkbox" bind:checked={showAscension} class="accent-[#F9B90C] w-3.5 h-3.5 md:w-4 md:h-4 cursor-pointer rounded" />
+                        <label
+                            class="flex items-center gap-1.5 text-xs md:text-sm font-medium text-gray-600 dark:text-[#B7B6B3] cursor-pointer select-none hover:text-black dark:hover:text-white transition-colors"
+                        >
+                            <input
+                                type="checkbox"
+                                bind:checked={showAscension}
+                                class="accent-[#F9B90C] w-3.5 h-3.5 md:w-4 md:h-4 cursor-pointer rounded"
+                            />
                             {tOrFallback("stats.ascension", "Возвышение")}
                         </label>
-                        <label class="flex items-center gap-1.5 text-xs md:text-sm font-medium text-gray-600 dark:text-[#B7B6B3] cursor-pointer select-none hover:text-black dark:hover:text-white transition-colors">
-                            <input type="checkbox" bind:checked={isCumulative} class="accent-[#F9B90C] w-3.5 h-3.5 md:w-4 md:h-4 cursor-pointer rounded" />
+                        <label
+                            class="flex items-center gap-1.5 text-xs md:text-sm font-medium text-gray-600 dark:text-[#B7B6B3] cursor-pointer select-none hover:text-black dark:hover:text-white transition-colors"
+                        >
+                            <input
+                                type="checkbox"
+                                bind:checked={isCumulative}
+                                class="accent-[#F9B90C] w-3.5 h-3.5 md:w-4 md:h-4 cursor-pointer rounded"
+                            />
                             {tOrFallback("stats.cumulative", "Кумулятивно")}
                         </label>
                     </div>
@@ -1345,20 +1491,28 @@
                             <ItemCard item={mat} amount={mat.amount} />
                         {/each}
                     {:else}
-                        <div class="w-full text-center text-gray-500 dark:text-[#B7B6B3] text-sm py-4 italic">
-                            {level === 1 
-                                ? tOrFallback("systemNames.noMaterialsNeeded", "Материалы не требуются") 
-                                : tOrFallback("stats.maxed", "Достигнут максимальный уровень")}
+                        <div
+                            class="w-full text-center text-gray-500 dark:text-[#B7B6B3] text-sm py-4 italic"
+                        >
+                            {level === 1
+                                ? tOrFallback(
+                                      "systemNames.noMaterialsNeeded",
+                                      "Материалы не требуются",
+                                  )
+                                : tOrFallback(
+                                      "stats.maxed",
+                                      "Достигнут максимальный уровень",
+                                  )}
                         </div>
                     {/if}
                 </div>
             </div>
-    {/snippet}
+        {/snippet}
 
-    {#snippet imagesCardSnippet()}
-        <div
-            class="bg-white dark:bg-[#2b2b2b] p-6 rounded-3xl border border-gray-200 dark:border-[#444] flex flex-col gap-4 transition-colors"
-        >
+        {#snippet imagesCardSnippet()}
+            <div
+                class="bg-white dark:bg-[#2b2b2b] p-6 rounded-3xl border border-gray-200 dark:border-[#444] flex flex-col gap-4 transition-colors"
+            >
                 <h2
                     class="text-2xl font-bold text-[#21272C] dark:text-[#FDFDFD] font-sdk border-b border-gray-100 dark:border-[#444] pb-3"
                 >
@@ -1375,8 +1529,7 @@
                             role="button"
                             tabindex="0"
                             class="relative w-full aspect-square flex items-center justify-center group-hover:bg-black/10 p-8 cursor-zoom-in outline-none focus:bg-white/5 transition-colors"
-                            on:click={() =>
-                                openImageZoom("weapon-icon")}
+                            on:click={() => openImageZoom("weapon-icon")}
                             on:keydown={(e) =>
                                 (e.key === "Enter" || e.key === " ") &&
                                 openImageZoom("weapon-icon")}
@@ -1424,9 +1577,15 @@
                                 }}
                             >
                                 {#if copiedImageId === "icon"}
-                                    <Icon name="success" class="w-3.5 h-3.5 text-yellow-400" />
+                                    <Icon
+                                        name="success"
+                                        class="w-3.5 h-3.5 text-yellow-400"
+                                    />
                                 {:else}
-                                    <Icon name="copy" class="w-4 h-4 transition-transform group-hover/copy:scale-110" />
+                                    <Icon
+                                        name="copy"
+                                        class="w-4 h-4 transition-transform group-hover/copy:scale-110"
+                                    />
                                 {/if}
                             </button>
 
@@ -1442,7 +1601,10 @@
                                     document.body.removeChild(link);
                                 }}
                             >
-                                <Icon name="import" class="w-4 h-4 transition-transform group-hover/down:scale-110" />
+                                <Icon
+                                    name="import"
+                                    class="w-4 h-4 transition-transform group-hover/down:scale-110"
+                                />
                             </button>
                         </div>
                     </div>
@@ -1454,8 +1616,7 @@
                             role="button"
                             tabindex="0"
                             class="relative w-full h-[400px] aspect-square group-hover:bg-black/10 cursor-zoom-in outline-none focus:bg-white/5 transition-colors overflow-hidden"
-                            on:click={() =>
-                                openImageZoom("weapons-big")}
+                            on:click={() => openImageZoom("weapons-big")}
                             on:keydown={(e) =>
                                 (e.key === "Enter" || e.key === " ") &&
                                 openImageZoom("weapons-big")}
@@ -1507,9 +1668,15 @@
                                 }}
                             >
                                 {#if copiedImageId === "big"}
-                                    <Icon name="success" class="w-3.5 h-3.5 text-yellow-400" />
+                                    <Icon
+                                        name="success"
+                                        class="w-3.5 h-3.5 text-yellow-400"
+                                    />
                                 {:else}
-                                    <Icon name="copy" class="w-4 h-4 transition-transform group-hover/copy:scale-110" />
+                                    <Icon
+                                        name="copy"
+                                        class="w-4 h-4 transition-transform group-hover/copy:scale-110"
+                                    />
                                 {/if}
                             </button>
 
@@ -1525,83 +1692,90 @@
                                     document.body.removeChild(link);
                                 }}
                             >
-                                <Icon name="import" class="w-4 h-4 transition-transform group-hover/down:scale-110" />
+                                <Icon
+                                    name="import"
+                                    class="w-4 h-4 transition-transform group-hover/down:scale-110"
+                                />
                             </button>
                         </div>
                     </div>
                 </div>
             </div>
-    {/snippet}
+        {/snippet}
 
-    {#snippet descCardSnippet()}
-        <div
-            class="bg-white dark:bg-[#2b2b2b] p-6 rounded-3xl border border-gray-200 dark:border-[#444] flex flex-col gap-4 transition-colors"
-        >
-            <h2
-                class="text-2xl font-bold text-[#21272C] dark:text-[#FDFDFD] font-sdk border-b border-gray-100 dark:border-[#444] pb-3"
-            >
-                {tOrFallback("menu.description", "Описание")}
-            </h2>
+        {#snippet descCardSnippet()}
             <div
-                class="text-gray-700 dark:text-[#A0A0A0] whitespace-pre-wrap text-[14.5px] leading-relaxed"
+                class="bg-white dark:bg-[#2b2b2b] p-6 rounded-3xl border border-gray-200 dark:border-[#444] flex flex-col gap-4 transition-colors"
             >
-                {weaponLocale.description}
+                <h2
+                    class="text-2xl font-bold text-[#21272C] dark:text-[#FDFDFD] font-sdk border-b border-gray-100 dark:border-[#444] pb-3"
+                >
+                    {tOrFallback("menu.description", "Описание")}
+                </h2>
+                <div
+                    class="text-gray-700 dark:text-[#A0A0A0] whitespace-pre-wrap text-[14.5px] leading-relaxed"
+                >
+                    {weaponLocale.description}
+                </div>
             </div>
-        </div>
-    {/snippet}
+        {/snippet}
 
-    {#if showBackButton}
-        <div class="w-full max-w-[1500px] mx-auto flex flex-col gap-6 xl:hidden">
-            {@render weaponCardSnippet()}
-            {@render materialsCardSnippet()}
-            {#if skillOps.length > 0 || attrOps.length > 0}
-                {@render recOpsCardSnippet()}
-            {/if}
-            {#if essenceLocationsList.length > 0}
-                {@render essenceLocsCardSnippet()}
-            {/if}
-            {@render imagesCardSnippet()}
-            {@render descCardSnippet()}
-        </div>
-
-        <div class="w-full max-w-[1500px] mx-auto hidden xl:grid xl:grid-cols-12 gap-8 items-start">
-            <div class="col-span-7 flex flex-col gap-6 md:min-w-[500px]">
+        {#if showBackButton}
+            <div
+                class="w-full max-w-[1500px] mx-auto flex flex-col gap-6 xl:hidden"
+            >
                 {@render weaponCardSnippet()}
+                {@render materialsCardSnippet()}
                 {#if skillOps.length > 0 || attrOps.length > 0}
                     {@render recOpsCardSnippet()}
                 {/if}
                 {#if essenceLocationsList.length > 0}
                     {@render essenceLocsCardSnippet()}
                 {/if}
-            </div>
-
-            <div class="col-span-5 flex flex-col gap-6">
-                {@render materialsCardSnippet()}
                 {@render imagesCardSnippet()}
                 {@render descCardSnippet()}
             </div>
-        </div>
-    {:else}
-        <div class="flex flex-col gap-6 w-full">
-            {@render weaponCardSnippet()}
-            {@render materialsCardSnippet()}
-            {#if skillOps.length > 0 || attrOps.length > 0}
-                {@render recOpsCardSnippet()}
-            {/if}
-            {#if essenceLocationsList.length > 0}
-                {@render essenceLocsCardSnippet()}
-            {/if}
-            {@render imagesCardSnippet()}
-            {@render descCardSnippet()}
-        </div>
-    {/if}
-</div>
+
+            <div
+                class="w-full max-w-[1500px] mx-auto hidden xl:grid xl:grid-cols-12 gap-8 items-start"
+            >
+                <div class="col-span-7 flex flex-col gap-6 md:min-w-[500px]">
+                    {@render weaponCardSnippet()}
+                    {#if skillOps.length > 0 || attrOps.length > 0}
+                        {@render recOpsCardSnippet()}
+                    {/if}
+                    {#if essenceLocationsList.length > 0}
+                        {@render essenceLocsCardSnippet()}
+                    {/if}
+                </div>
+
+                <div class="col-span-5 flex flex-col gap-6">
+                    {@render materialsCardSnippet()}
+                    {@render imagesCardSnippet()}
+                    {@render descCardSnippet()}
+                </div>
+            </div>
+        {:else}
+            <div class="flex flex-col gap-6 w-full">
+                {@render weaponCardSnippet()}
+                {@render materialsCardSnippet()}
+                {#if skillOps.length > 0 || attrOps.length > 0}
+                    {@render recOpsCardSnippet()}
+                {/if}
+                {#if essenceLocationsList.length > 0}
+                    {@render essenceLocsCardSnippet()}
+                {/if}
+                {@render imagesCardSnippet()}
+                {@render descCardSnippet()}
+            </div>
+        {/if}
+    </div>
 {/if}
 
 <TableModal
     bind:isOpen={showStatsTable}
     title={tOrFallback("stats.attributesTable", "Attributes Table")}
-    isTableCopied={isTableCopied}
+    {isTableCopied}
     maxWidthClass="max-w-sm"
     on:copy={copyStatsTable}
 >
@@ -1616,22 +1790,16 @@
                 >
                 <th
                     class="py-3 px-4 border-b border-gray-200 dark:border-[#444]"
-                    >{tOrFallback(
-                        "stats.baseAtk",
-                        "Base ATK",
-                    )}</th
+                    >{tOrFallback("stats.baseAtk", "Base ATK")}</th
                 >
             </tr>
         </thead>
-        <tbody
-            class="text-sm font-nums text-gray-800 dark:text-gray-300"
-        >
+        <tbody class="text-sm font-nums text-gray-800 dark:text-gray-300">
             {#each Array(90) as _, i}
                 <tr
                     class="hover:bg-gray-100 dark:hover:bg-[#3d3d3d] transition-colors border-b border-gray-100 dark:border-[#333] even:bg-gray-50/50 dark:even:bg-[#383838]/50"
                 >
-                    <td
-                        class="py-2 px-4 text-gray-500 dark:text-gray-400"
+                    <td class="py-2 px-4 text-gray-500 dark:text-gray-400"
                         >{i + 1}</td
                     >
                     <td
@@ -1682,7 +1850,8 @@
 {/if}
 
 <style>
-    :global(body.dragging-rank), :global(body.dragging-rank *) {
+    :global(body.dragging-rank),
+    :global(body.dragging-rank *) {
         cursor: pointer !important;
         user-select: none !important;
         -webkit-user-select: none !important;

@@ -105,3 +105,20 @@ html {
   html::-webkit-scrollbar-thumb {
     border: 3px solid transparent; 
   }
+
+@keyframes nav-progress {
+  0% {
+    transform: translateX(-100%) scaleX(0.2);
+  }
+  50% {
+    transform: translateX(0%) scaleX(0.7);
+  }
+  100% {
+    transform: translateX(100%) scaleX(0.2);
+  }
+}
+
+.animate-nav-progress {
+  animation: nav-progress 1.2s ease-in-out infinite;
+  transform-origin: left;
+}

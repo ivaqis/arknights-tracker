@@ -152,6 +152,7 @@
 {#if operator && operator.id}
     <a
         href={`/operators/${operator.id}`}
+        data-sveltekit-preload-data="off"
         class="{rootClass} block no-underline focus:outline-none focus:ring-2 focus:ring-[#F9B90C] rounded-[6px]"
         on:mouseenter={() => (isHovered = true)}
         on:mouseleave={() => (isHovered = false)}

@@ -263,6 +263,8 @@
   "emptyState": {
     "nothingSelected": "Mitään ei ole valittu",
     "clickEquipmentHint": "Napsauta vasemmalla olevaa varustetta nähdäksesi sen tiedot.",
+    "clickWeaponHint": "Napsauta vasemmalla olevaa asetta nähdäksesi sen tiedot.",
+    "clickEnemyHint": "Napsauta vasemmalla olevaa vihollista nähdäksesi sen tiedot.",
     "noData": "Ei merkintöjä"
   },
   "buttons": {
@@ -527,7 +529,7 @@
     "preferredSkillMode": "Ensisijainen näyttötila taistelutaidoille",
     "preferredSkillModeList": "Luettelo",
     "preferredSkillModeTable": "Taulukko",
-    "splitEquipmentView": "Näytä varusteen tiedot jaetulla näytöllä",
+    "splitEquipmentView": "Näytä varusteiden, aseiden ja vihollisten tiedot jaetulla näytöllä",
     "cache": {
       "title": "Välimuisti",
       "desc": "Välimuistin tiedot ja tyhjennys",

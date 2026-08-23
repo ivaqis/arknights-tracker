@@ -312,6 +312,7 @@
                       on:keydown={(e) => e.key === 'Enter' && handleBarClick(item.id)}
                     >
                       <Tooltip
+                        disableOnTouch={true}
                         class="w-full h-full flex flex-col-reverse {hasBanner(item.id) ? 'cursor-pointer' : 'cursor-default'}"
                         on:mouseenter={() => handleBarHover(idx)}
                         on:mouseleave={handleBarLeave}

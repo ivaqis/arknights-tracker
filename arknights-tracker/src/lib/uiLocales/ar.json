@@ -263,6 +263,8 @@
   "emptyState": {
     "nothingSelected": "لم يتم تحديد شيء",
     "clickEquipmentHint": "انقر على المعدات على اليسار لعرض تفاصيلها.",
+    "clickWeaponHint": "انقر على السلاح على اليسار لعرض تفاصيله.",
+    "clickEnemyHint": "انقر على العدو على اليسار لعرض تفاصيله.",
     "noData": "لا توجد إدخالات"
   },
   "buttons": {
@@ -527,7 +529,7 @@
     "preferredSkillMode": "وضع العرض المفضل لمهارات القتال",
     "preferredSkillModeList": "قائمة",
     "preferredSkillModeTable": "جدول",
-    "splitEquipmentView": "عرض تفاصيل المعدات على الشاشة المقسمة",
+    "splitEquipmentView": "عرض تفاصيل العتاد والأسلحة والأعداء على الشاشة المقسمة",
     "cache": {
       "title": "ذاكرة التخزين المؤقت",
       "desc": "تفاصيل ذاكرة التخزين المؤقت ومسحها",

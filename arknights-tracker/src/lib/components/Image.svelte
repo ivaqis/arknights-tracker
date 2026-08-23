@@ -17,7 +17,7 @@
     export let interactive = false;
     export let priority = false;
     export let loading = "lazy";
-    export let fetchpriority = "auto";
+    export let fetchpriority = "low";
 
     $: rawId = id || (item?.icon) || (item?.id) || (item?.name);
     $: initialSrc = getImagePath(rawId, variant);

@@ -188,6 +188,7 @@
         this={asLink ? "a" : "div"}
         href={asLink ? itemUrl : undefined}
         role={asLink ? "link" : "presentation"}
+        data-sveltekit-preload-data="off"
         class="{rootClass} no-underline focus:outline-none focus:ring-2 focus:ring-[#F9B90C] rounded-[6px]"
         on:click={(e) => {
             if (onClick) {

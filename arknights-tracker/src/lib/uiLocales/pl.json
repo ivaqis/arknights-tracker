@@ -263,6 +263,8 @@
   "emptyState": {
     "nothingSelected": "Nic nie wybrano",
     "clickEquipmentHint": "Kliknij wyposażenie po lewej stronie, aby wyświetlić jego szczegóły.",
+    "clickWeaponHint": "Kliknij broń po lewej stronie, aby wyświetlić jej szczegóły.",
+    "clickEnemyHint": "Kliknij wroga po lewej stronie, aby wyświetlić jego szczegóły.",
     "noData": "Brak wpisów"
   },
   "buttons": {
@@ -527,7 +529,7 @@
     "preferredSkillMode": "Preferowany tryb wyświetlania umiejętności bojowych",
     "preferredSkillModeList": "Lista",
     "preferredSkillModeTable": "Tabela",
-    "splitEquipmentView": "Wyświetl szczegóły wyposażenia na podzielonym ekranie",
+    "splitEquipmentView": "Wyświetl szczegóły wyposażenia, broni i wrogów na podzielonym ekranie",
     "cache": {
       "title": "Pamięć podręczna",
       "desc": "Szczegóły i czyszczenie pamięci podręcznej",
