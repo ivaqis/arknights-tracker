@@ -1,10 +1,14 @@
-import { ApiBannerType } from "$lib/classes/banners/ApiBannerType";
+import type { IImageIcon } from "$lib/classes/icons/IImageIcon";
+import { ImageVariant } from "$lib/classes/icons/ImageVariant";
 import type { ITextable } from "$lib/classes/ITextable";
+import type { Rarity } from "$lib/classes/Rarity";
 import { WeaponType } from "$lib/classes/weapons/WeaponType";
 import { type WeaponData, weapons } from "$lib/data/weapons";
 import { getMap } from "$lib/utils/collectionUtils";
 
-export class Weapon implements ITextable {
+export class Weapon implements ITextable, IImageIcon {
+    private static readonly IMAGE_VARIANT = ImageVariant.WEAPON_ICON;
+
     private static readonly weaponById = getMap(Object.values(weapons), item => item.id);
     private static readonly weaponByGameId = getMap(Object.values(weapons), item => item.gameId);
     private static readonly weaponByName = getMap(Object.values(weapons), item => item.name);
@@ -67,8 +71,8 @@ export class Weapon implements ITextable {
         return this._name;
     }
 
-    public get rarity(): number {
-        return this._rarity;
+    public get rarity(): Rarity {
+        return this._rarity as Rarity;
     }
 
     public get type(): WeaponType {
@@ -81,5 +85,12 @@ export class Weapon implements ITextable {
 
     public get i18nKey(): string {
         return `weaponsList.${this._id}`;
+    }
+
+    public get iconId(): string {
+        return this._id;
+    }
+    public get imageVariant(): ImageVariant {
+        return Weapon.IMAGE_VARIANT;
     }
 }

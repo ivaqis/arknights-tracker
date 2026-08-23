@@ -94,7 +94,7 @@
 
             {#each displayedValues as data}
 
-                {@const height = data.count / maxValue}
+                {@const height = data.count / maxValue * 100}
 
                 <div
                     class="flex-1 bg-gray-100 dark:bg-[#2C2C2C] relative group flex items-end rounded-t-sm"

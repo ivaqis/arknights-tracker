@@ -1,12 +1,12 @@
 <script lang="ts">
     import type { GlobalItemStatData } from "$lib/api/globalBannerStats/contracts/items/GlobalItemStatData";
-    import type { Rarity } from "$lib/classes/Rarity";
-    import { Character } from "$lib/classes/characters/Character";
-    import { Weapon } from "$lib/classes/weapons/Weapon";
     import type { Banner } from "$lib/classes/banners/Banner";
+    import { Character } from "$lib/classes/characters/Character";
+    import type { Rarity } from "$lib/classes/Rarity";
+    import { Weapon } from "$lib/classes/weapons/Weapon";
     import Icon from "$lib/components/Icon.svelte";
-    import { t } from "$lib/i18n";
     import Image from "$lib/components/Image.svelte";
+    import { t } from "$lib/i18n";
     import { formatCount, formatRate } from "$lib/utils/textUtils";
 
     export let items: GlobalItemStatData[];
@@ -16,13 +16,9 @@
 
     let displayedData: DisplayedItemData[] | null;
     let headerColor: string;
-    let itemColor: string;
 
     $: displayedData = getDisplayedItemData(items, banner);
-    $: {
-        headerColor = getHeaderColor(rarity);
-        itemColor = getItemColor(rarity);
-    }
+    $: headerColor = getHeaderColor(rarity);
 
     function getDisplayedItemData(items: GlobalItemStatData[], banner: Banner): DisplayedItemData[] | null {
         if (items.length === 0) {
@@ -47,7 +43,7 @@
             });
         }
 
-        result.sort((a, b) => a.count - b.count);
+        result.sort((a, b) => b.count - a.count);
 
         return result;
     }
@@ -108,11 +104,11 @@
             <tr>
 
                 <th class="px-4 py-3 font-bold">
-                    {$t("global.name") || "Name"}
+                    {$t("global.name")}
                 </th>
 
                 <th class="px-4 py-3 font-bold text-right">
-                    {$t("global.total") || "Total"}
+                    {$t("global.total")}
                 </th>
 
                 <th class="px-4 py-3 font-bold text-right">
@@ -129,7 +125,7 @@
 
                 {#each displayedData as data}
 
-                    {@const isWeapon = data.item instanceof Weapon}
+                    {@const itemColor = getItemColor(data.item.rarity)}
 
                     <tr class="hover:bg-gray-50 dark:hover:bg-[#444] transition-colors group">
 
@@ -138,16 +134,20 @@
                             {#if data.isFeatured}
 
                                 <div
-                                    class="absolute left-0 top-0 bottom-0 w-1 bg-[{itemColor}]"
+                                    class="absolute left-0 top-0 bottom-0 w-1"
+                                    style="background-color: {itemColor};"
                                 ></div>
 
                             {/if}
 
-                            <div class="w-10 h-10 rounded-full bg-gray-200 dark:bg-[#1E1E1E] overflow-hidden border-2 border-[{itemColor}] shrink-0">
+                            <div
+                                class="w-10 h-10 rounded-full bg-gray-200 dark:bg-[#1E1E1E] overflow-hidden border-2 shrink-0"
+                                style="border-color: {itemColor};"
+                            >
 
                                 <Image
-                                    id={data.item.gameId}
-                                    variant={isWeapon ? "weapon-icon" : "operator-icon"}
+                                    id={data.item.iconId}
+                                    variant={data.item.imageVariant}
                                     className="w-full h-full object-cover transform scale-110"
                                     alt={data.item.name}
                                 />
@@ -155,8 +155,8 @@
                             </div>
 
                             <span title={data.item.name}>
-                                    {$t(isWeapon ? `weaponsList.${data.item.id}` : `characters.${data.item.id}`)}
-                                </span>
+                                {$t(data.item.i18nKey)}
+                            </span>
 
                         </td>
 
@@ -189,8 +189,8 @@
                             />
 
                             <span class="text-xs">
-                                    {$t("global.noData")}
-                                </span>
+                                {$t("global.noData")}
+                            </span>
 
                         </div>
 
