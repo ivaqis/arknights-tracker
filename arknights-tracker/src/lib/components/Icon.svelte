@@ -485,10 +485,22 @@
         "height": "10",
         "fill": "none"
     },
+    "headhuntingMenuIcon": {
+        "viewBox": "0 0 69 69",
+        "width": "69",
+        "height": "69",
+        "fill": "none"
+    },
     "event": {
-        "viewBox": "0 0 16 16",
-        "width": "16",
-        "height": "16",
+        "viewBox": "0 0 89 80",
+        "width": "89",
+        "height": "80",
+        "fill": "none"
+    },
+    "clock": {
+        "viewBox": "0 0 24 24",
+        "width": "24",
+        "height": "24",
         "fill": "none"
     },
     "atkEvent": {

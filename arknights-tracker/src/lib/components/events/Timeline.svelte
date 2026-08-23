@@ -616,7 +616,7 @@
         }
 
         return {
-            icon: "event",
+            icon: "clock",
             label: "Limited Event",
             bg: glassStyle,
         };

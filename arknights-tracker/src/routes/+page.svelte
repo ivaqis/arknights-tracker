@@ -56,6 +56,24 @@
     return $t("timer.left_m", { m: minutes });
   }
 
+  function getTimeStatus(endTimeStr) {
+    if (!endTimeStr) return { timeLeft: null, status: "normal" };
+    const end = parseWithServerOffset(endTimeStr);
+    const diff = end - now;
+    if (diff <= 0) return { timeLeft: null, status: "ended" };
+
+    const timeLeft = formatTimeLeft(endTimeStr);
+    const hoursLeft = diff / (1000 * 60 * 60);
+
+    if (hoursLeft <= 24) {
+      return { timeLeft, status: "critical" };
+    }
+    if (hoursLeft <= 72) {
+      return { timeLeft, status: "warning" };
+    }
+    return { timeLeft, status: "normal" };
+  }
+
   function getRarityStyle(id) {
     const item = allItems.find((i) => i.id === id);
     const rarity = item?.rarity || 3;
@@ -129,13 +147,11 @@
 
   let selectedBanner = null;
 
-  $: currentBannerTimeLeft = (() => {
+  $: currentBannerEndStr = (() => {
     const b = activeBanners[currentBannerIndex];
     if (!b || b.type === "inGamePermanent") return "";
     const isAsia = currentServerId === "2";
-    const endStr = isAsia && b.endTimeAsia ? b.endTimeAsia : b.endTime;
-    if (!endStr) return "";
-    return formatTimeLeft(endStr) || "";
+    return isAsia && b.endTimeAsia ? b.endTimeAsia : b.endTime || "";
   })();
 
   $: activePromocodes = promocodes
@@ -239,7 +255,7 @@
       return { icon: "headhunting", label: "Headhunting", bg: glassStyle };
     }
 
-    return { icon: "event", label: "Limited Event", bg: glassStyle };
+    return { icon: "clock", label: "Limited Event", bg: glassStyle };
   }
   $: eventsWithBadges = activeEvents
     .map((e) => ({
@@ -412,7 +428,7 @@
           <h2
             class="text-sm font-bold text-[#21272C] dark:text-[#FDFDFD] flex items-center gap-2"
           >
-            <span class="w-2 h-2 bg-[#FACC15] rounded-full"></span>
+            <Icon name="headhuntingMenuIcon" class="w-5 h-5 shrink-0" />
             {$t("home.current_banners")}
           </h2>
           <div class="flex gap-1.5">
@@ -457,22 +473,37 @@
                 <div
                   class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60 pointer-events-none"
                 ></div>
-                {#if currentBannerTimeLeft}
-                  <div
-                    class="absolute bottom-3 left-3 z-20 pointer-events-none"
-                  >
+                {#if currentBannerEndStr}
+                  {@const status = getTimeStatus(currentBannerEndStr)}
+                  {#if status.timeLeft}
                     <div
-                      class="inline-flex items-center gap-2 px-2.5 py-1 bg-black/40 backdrop-blur-md border border-white/20 rounded-full shadow-md"
+                      class="absolute bottom-3 left-3 z-20 pointer-events-none"
                     >
-                      <span
-                        class="w-1.5 h-1.5 rounded-full bg-[#FACC15] animate-pulse"
-                      ></span>
-                      <span
-                        class="text-[11px] font-bold text-white font-nums leading-none"
-                        >{currentBannerTimeLeft}</span
+                      <div
+                        class="inline-flex items-center gap-2 px-2.5 py-1 bg-black/40 backdrop-blur-md border {status.status === 'critical'
+                          ? 'border-red-500/50'
+                          : status.status === 'warning'
+                            ? 'border-orange-500/50'
+                            : 'border-white/20'} rounded-full shadow-md"
                       >
+                        <span
+                          class="w-1.5 h-1.5 rounded-full {status.status === 'critical'
+                            ? 'bg-red-500 shadow-[0_0_6px_#ef4444]'
+                            : status.status === 'warning'
+                              ? 'bg-orange-500 shadow-[0_0_4px_#fb923c]'
+                              : 'bg-green-400 shadow-[0_0_4px_#4ade80]'} animate-pulse"
+                        ></span>
+                        <span
+                          class="text-[11px] font-bold {status.status === 'critical'
+                            ? 'text-red-300'
+                            : status.status === 'warning'
+                              ? 'text-orange-300'
+                              : 'text-white'} font-nums leading-none"
+                          >{status.timeLeft}</span
+                        >
+                      </div>
                     </div>
-                  </div>
+                  {/if}
                 {/if}
               </div>
             {/key}
@@ -514,16 +545,16 @@
       >
         <div class="flex items-center justify-between mb-2">
           <h3
-            class="text-sm font-bold text-[#21272C] dark:text-[#FDFDFD] flex items-center gap-2"
+            class="text-sm font-bold text-[#21272C] dark:text-[#FDFDFD] flex items-center gap-1.5"
           >
-            <span class="w-2 h-2 bg-green-400 rounded-full"></span>
-            {$t("home.activeEvents") || "Текущие события"}
+            <Icon name="event" class="w-6 h-6 shrink-0" />
+            {$t("home.activeEvents")}
           </h3>
           <button
             on:click={() => goto("/events")}
             class="text-[11px] font-bold text-gray-500 hover:text-[#FACC15] dark:text-gray-400 dark:hover:text-[#FACC15] transition-colors flex items-center gap-1 group mr-2"
           >
-            {$t("home.goToTimeline") || "Перейти в ленту событий"}
+            {$t("home.goToTimeline")}
             →
           </button>
         </div>
@@ -595,28 +626,33 @@
                     </div>
                   </div>
                   {#if event.displayEndTime && event.type !== "inGamePermanent"}
-                    {@const diff = parseWithServerOffset(event.displayEndTime) - now}
-                    {@const daysLeft = Math.floor(diff / (1000 * 60 * 60 * 24))}
-                    {@const isEndingSoon = daysLeft <= 3 && daysLeft >= 0}
-
-                    <div
-                      class="inline-flex items-center gap-1.5 px-2.5 py-1 bg-black/40 backdrop-blur-md border {isEndingSoon
-                        ? 'border-orange-500/50'
-                        : 'border-white/20'} rounded-full shadow-md w-fit"
-                    >
-                      <span
-                        class="w-1.5 h-1.5 rounded-full {isEndingSoon
-                          ? 'bg-orange-500 shadow-[0_0_4px_#fb923c]'
-                          : 'bg-green-400 shadow-[0_0_4px_#4ade80]'} animate-pulse"
-                      ></span>
-                      <span
-                        class="text-[10px] font-bold {isEndingSoon
-                          ? 'text-orange-300'
-                          : 'text-white'} font-nums leading-none"
+                    {@const status = getTimeStatus(event.displayEndTime)}
+                    {#if status.timeLeft}
+                      <div
+                        class="inline-flex items-center gap-1.5 px-2.5 py-1 bg-black/40 backdrop-blur-md border {status.status === 'critical'
+                          ? 'border-red-500/50'
+                          : status.status === 'warning'
+                            ? 'border-orange-500/50'
+                            : 'border-white/20'} rounded-full shadow-md w-fit"
                       >
-                        {formatTimeLeft(event.displayEndTime)}
-                      </span>
-                    </div>
+                        <span
+                          class="w-1.5 h-1.5 rounded-full {status.status === 'critical'
+                            ? 'bg-red-500 shadow-[0_0_6px_#ef4444]'
+                            : status.status === 'warning'
+                              ? 'bg-orange-500 shadow-[0_0_4px_#fb923c]'
+                              : 'bg-green-400 shadow-[0_0_4px_#4ade80]'} animate-pulse"
+                        ></span>
+                        <span
+                          class="text-[10px] font-bold {status.status === 'critical'
+                            ? 'text-red-300'
+                            : status.status === 'warning'
+                              ? 'text-orange-300'
+                              : 'text-white'} font-nums leading-none"
+                        >
+                          {status.timeLeft}
+                        </span>
+                      </div>
+                    {/if}
                   {/if}
                 </div>
               </div>

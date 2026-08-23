@@ -128,7 +128,7 @@
 
     const typeIcons = {
         signIn: "signIn",
-        inGame: "event",
+        inGame: "clock",
         inGamePermanent: "permanent",
         web: "link",
         mailEvent: "mail",
