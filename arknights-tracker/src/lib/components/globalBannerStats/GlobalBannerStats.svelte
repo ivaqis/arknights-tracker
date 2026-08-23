@@ -6,6 +6,7 @@
     import { formatCount, formatRate } from "$lib/utils/textUtils";
 
     export let rarity: Rarity;
+    export let mode5050: "50:50" | "25:75" = "50:50";
 
     export let totalRate: number;
     export let totalCount: number;
@@ -34,15 +35,25 @@
     <div class="pt-3 space-y-3">
 
         <GlobalBannerStatParam
-            title={$t("global.rate")}
-        >
-            {formatRate(totalRate, 3)}
-        </GlobalBannerStatParam>
-
-        <GlobalBannerStatParam
             title={$t("global.count")}
         >
             {formatCount(totalCount)}
+        </GlobalBannerStatParam>
+
+        {#if freeCount !== null}
+
+            <GlobalBannerStatParam
+                title={$t("global.freeCount")}
+            >
+                {formatCount(freeCount)}
+            </GlobalBannerStatParam>
+
+        {/if}
+
+        <GlobalBannerStatParam
+            title={$t("global.rate")}
+        >
+            {formatRate(totalRate, 3)}
         </GlobalBannerStatParam>
 
         {#if medianPity !== null}
@@ -58,7 +69,7 @@
         {#if winrate !== null}
 
             <GlobalBannerStatParam
-                title={$t("global.won")}
+                title={`${$t("global.won")} ${mode5050}`}
             >
                 {formatRate(winrate, 2)}
             </GlobalBannerStatParam>
@@ -75,20 +86,10 @@
 
         {/if}
 
-        {#if freeCount !== null}
-
-            <GlobalBannerStatParam
-                title={$t("global.freeCount")}
-            >
-                {formatCount(freeCount)}
-            </GlobalBannerStatParam>
-
-        {/if}
-
         {#if freeWinrate !== null}
 
             <GlobalBannerStatParam
-                title={$t("global.freeWon")}
+                title={`${$t("global.won")} ${mode5050} (${$t("global.free")})`}
             >
                 {formatRate(freeWinrate, 2)}
             </GlobalBannerStatParam>

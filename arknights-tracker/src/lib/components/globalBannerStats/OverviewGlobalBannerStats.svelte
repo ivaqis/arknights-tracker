@@ -34,7 +34,7 @@
         {#if freePulls !== null}
 
             <GlobalBannerStatParam
-                title={$t("global.freeCount")}
+                title={$t("global.freePulls")}
             >
                 {formatCount(freePulls)}
             </GlobalBannerStatParam>

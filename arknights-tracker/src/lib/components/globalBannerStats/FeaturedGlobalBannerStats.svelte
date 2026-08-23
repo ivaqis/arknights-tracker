@@ -128,7 +128,7 @@
         {#if freeCount !== null}
 
             <GlobalBannerStatParam
-                title={$t("global.freeCount")}
+                title={$t("global.freeObtained")}
             >
                 {formatCount(freeCount)}
             </GlobalBannerStatParam>

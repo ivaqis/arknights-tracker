@@ -1029,6 +1029,7 @@
     "totalUsers": "Total Users",
     "totalPulls": "Total Pulls",
     "spent": "Oroberyl Spent",
+    "spentArsenal": "Arsenal Tickets Spent",
     "pull": "pulls",
     "pullsPerDay": "Pulls per Day",
     "percent6": "6★ Rate",
@@ -1045,7 +1046,13 @@
     "pulls": "pulls",
     "roll": "Roll",
     "percent": "Percent",
-    "pull_one": "Pull"
+    "pull_one": "Pull",
+    "free": "Free",
+    "freeObtained": "Obtained for Free",
+    "freeRate": "Rate (Free pulls)",
+    "freeCount": "Free Count",
+    "freePulls": "Free pulls",
+    "guaranteedCount": "Hard Guaranteed"
   },
   "settings": {
     "title": "Settings",

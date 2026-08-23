@@ -6,13 +6,16 @@
     import { ApiBannerType } from "$lib/classes/banners/ApiBannerType";
     import { Banner } from "$lib/classes/banners/Banner";
     import { BannerType } from "$lib/classes/banners/BannerType";
+    import { GameBannerType } from "$lib/classes/banners/GameBannerType";
     import { Character } from "$lib/classes/characters/Character";
     import { Weapon } from "$lib/classes/weapons/Weapon";
     import Button from "$lib/components/Button.svelte";
     import GlobalBannerTimelineChart from "$lib/components/charts/GlobalBannerTimelineChart.svelte";
+    import GlobalPityDistributionChart from "$lib/components/charts/GlobalPityDistributionChart.svelte";
     import FeaturedGlobalBannerStats from "$lib/components/globalBannerStats/FeaturedGlobalBannerStats.svelte";
     import GlobalBannerBoard from "$lib/components/globalBannerStats/GlobalBannerBoard.svelte";
     import GlobalBannerStats from "$lib/components/globalBannerStats/GlobalBannerStats.svelte";
+    import GlobalItemStatList from "$lib/components/globalBannerStats/GlobalItemStatList.svelte";
     import OverviewGlobalBannerStats from "$lib/components/globalBannerStats/OverviewGlobalBannerStats.svelte";
     import Icon from "$lib/components/Icon.svelte";
     import BannerModal from "$lib/components/modals/BannerModal.svelte";
@@ -22,9 +25,6 @@
     import { t } from "$lib/i18n";
     import { currentLocale } from "$lib/stores/locale";
     import { getISODate } from "$lib/utils/textUtils";
-    import GlobalPityDistributionChart from "$lib/components/charts/GlobalPityDistributionChart.svelte";
-    import { GameBannerType } from "$lib/classes/banners/GameBannerType";
-    import GlobalItemStatList from "$lib/components/globalBannerStats/GlobalItemStatList.svelte";
 
     const typeOptions: SelectOption[] = BannerType.list.map(item => ({
         value: item.id,
@@ -212,6 +212,7 @@
 
                     <GlobalBannerStats
                         rarity={6}
+                        mode5050={selectedBanner.gameType === GameBannerType.WEAPON ? "25:75" : "50:50"}
                         totalRate={stats6.totalRate}
                         totalCount={stats6.totalCount}
                         medianPity={stats6.medianPity}
