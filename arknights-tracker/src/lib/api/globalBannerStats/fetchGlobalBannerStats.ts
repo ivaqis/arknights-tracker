@@ -10,7 +10,7 @@ export async function fetchGlobalBannerStats(bannerId: string): Promise<GlobalBa
         const json = await res.json() as ResponseBody<GlobalBannerStatsResponse>;
 
         if (!res.ok) {
-            throw new Error(`Global stats fetching failed: ${res.status} ${res.statusText}\nmessage: ${json.message}`);
+            throw new Error(`Global stats fetching failed: ${res.status} ${res.statusText}\nmessage: ${json.message}\nurl: ${url}`);
         }
 
         if (json.data) {

@@ -1,5 +1,6 @@
 <script lang="ts">
-    import { goto } from "$app/navigation";
+    import { browser } from "$app/environment";
+    import { goto, replaceState } from "$app/navigation";
     import type { GlobalBannerData } from "$lib/api/globalBannerStats/contracts/GlobalBannerData";
     import type { GlobalBannerStatsResponse } from "$lib/api/globalBannerStats/contracts/GlobalBannerStatsResponse";
     import { fetchGlobalBannerStats } from "$lib/api/globalBannerStats/fetchGlobalBannerStats";
@@ -26,40 +27,34 @@
     import { currentLocale } from "$lib/stores/locale";
     import { getISODate } from "$lib/utils/textUtils";
 
+    export let data;
+
     const typeOptions: SelectOption[] = BannerType.list.map(item => ({
         value: item.id,
         label: $t(item.i18nKey)
     }));
 
-    let selectedBannerType: ApiBannerType = ApiBannerType.CHAR_SPECIAL;
-    let selectableBanners: readonly Banner[] = Banner.getListByApiType(selectedBannerType);
-    let selectedBanner: Banner = selectableBanners.at(-1) as Banner;
-    let selectedBannerId: string = selectedBanner.gameId;
-    let selectedBannerRawData: BannerData | null = banners.find(item => item.id === selectedBannerId || item.gameId === selectedBannerId) ?? null;
+    let currentBannerType: ApiBannerType;
+    let selectableBanners: readonly Banner[];
+    let currentBanner: Banner;
+    let currentBannerRawData: BannerData | null;
 
-    let bannerOptions: SelectOption[] = getBannerOptions(selectableBanners);
+    let bannerOptions: SelectOption[];
 
-    $: selectBannerType(selectedBannerType);
-    $: selectBanner(selectedBannerId);
+    $: {
+        currentBanner = data.banner;
+        currentBannerRawData = banners.find(item => item.id === currentBanner.id) ?? null;
+        // stats = null;
+    }
+    $: if (currentBannerType !== currentBanner.apiType) {
+        currentBannerType = currentBanner.apiType;
+        selectableBanners = Banner.getListByApiType(currentBanner.apiType);
+        bannerOptions = getBannerOptions(selectableBanners);
+    }
 
     $: hasBannerSelector =
-        selectedBannerType !== ApiBannerType.CHAR_BEGINNER
-        && selectedBannerType !== ApiBannerType.CHAR_STANDARD;
-
-    function selectBannerType(bannerType: ApiBannerType): void {
-        selectableBanners = Banner.getListByApiType(bannerType);
-        bannerOptions = getBannerOptions(selectableBanners);
-        selectedBanner = selectableBanners.at(-1)!;
-        selectedBannerId = selectedBanner.gameId;
-    }
-
-    function selectBanner(bannerGameId: string): void {
-        selectedBanner = selectedBanner.gameId === bannerGameId
-            ? selectedBanner
-            : Banner.getByGameId(bannerGameId)!;
-
-        selectedBannerRawData = banners.find(item => item.id === selectedBannerId || item.gameId === selectedBannerId) ?? null;
-    }
+        currentBannerType !== ApiBannerType.CHAR_BEGINNER
+        && currentBannerType !== ApiBannerType.CHAR_STANDARD;
 
     function getBannerOptions(selectableBanners: readonly Banner[]): SelectOption[] {
         return selectableBanners.toReversed().map(item => ({
@@ -74,7 +69,7 @@
 
     let featuredList: (Character | Weapon)[] = [];
 
-    $: updateBannerStats(selectedBannerId);
+    $: updateBannerStats(currentBanner.gameId);
 
     async function updateBannerStats(bannerId: string): Promise<void> {
         let res: GlobalBannerStatsResponse | null = null;
@@ -97,10 +92,36 @@
             ?? [];
     }
 
+    let selectedBannerId: string;
+    let selectedBannerType: ApiBannerType;
+
+    $: selectedBannerId = currentBanner.gameId;
+    $: selectedBannerType = currentBannerType;
+
+    $: if (selectedBannerId !== currentBanner.gameId) {
+        selectBannerId(selectedBannerId);
+    }
+    $: if (selectedBannerType !== currentBannerType) {
+        const banners = Banner.getListByApiType(selectedBannerType);
+        const banner = banners.at(-1)!;
+
+        selectBannerId(banner.gameId);
+    }
+
+    function selectBannerId(bannerId: string): void {
+        if (!browser) {
+            return;
+        }
+
+        goto(`/records/global?id=${bannerId}`, {
+            replaceState: true
+        });
+    }
+
     let isModalOpen: boolean = false;
 
     function openModal(): void {
-        if (selectedBannerRawData) {
+        if (currentBannerRawData) {
             isModalOpen = true;
         }
     }
@@ -113,10 +134,10 @@
     </title>
 </svelte:head>
 
-{#if isModalOpen && selectedBannerRawData}
+{#if isModalOpen && currentBannerRawData}
 
     <BannerModal
-        banner={selectedBannerRawData}
+        banner={currentBannerRawData}
         pageContext="global"
         on:close={() => isModalOpen = false}
     />
@@ -163,7 +184,7 @@
 
             <div class="w-full sm:w-1/2">
 
-                {#key selectedBannerType}
+                {#key currentBannerType}
                     <Select
                         options={bannerOptions}
                         bind:value={selectedBannerId}
@@ -212,7 +233,7 @@
 
                     <GlobalBannerStats
                         rarity={6}
-                        mode5050={selectedBanner.gameType === GameBannerType.WEAPON ? "25:75" : "50:50"}
+                        mode5050={currentBanner.gameType === GameBannerType.WEAPON ? "25:75" : "50:50"}
                         totalRate={stats6.totalRate}
                         totalCount={stats6.totalCount}
                         medianPity={stats6.medianPity}
@@ -243,21 +264,21 @@
                     >
 
                         <GlobalBannerBoard
-                            banner={selectedBanner}
+                            banner={currentBanner}
                         />
 
                     </button>
 
                     <GlobalBannerTimelineChart
                         values={stats.timeline}
-                        minDate={selectedBanner.getISOStartTime()}
-                        maxDate={selectedBanner.getISOEndTime() ?? getISODate(new Date())}
+                        minDate={currentBanner.getISOStartTime()}
+                        maxDate={currentBanner.getISOEndTime() ?? getISODate(new Date())}
                     />
 
                     <GlobalPityDistributionChart
                         values={stats.pityDistribution6}
                         rarity={6}
-                        maxPity={selectedBanner.gameType === GameBannerType.WEAPON || selectedBanner.gameType === GameBannerType.CHAR_BEGINNER ? 40 : 80}
+                        maxPity={currentBanner.gameType === GameBannerType.WEAPON || currentBanner.gameType === GameBannerType.CHAR_BEGINNER ? 40 : 80}
                     />
 
                     {#if stats.pityDistribution5}
@@ -275,13 +296,13 @@
                         <GlobalItemStatList
                             items={stats.items6}
                             rarity={6}
-                            banner={selectedBanner}
+                            banner={currentBanner}
                         />
 
                         <GlobalItemStatList
                             items={stats.items5}
                             rarity={5}
-                            banner={selectedBanner}
+                            banner={currentBanner}
                         />
 
                     </div>

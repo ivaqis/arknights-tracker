@@ -15,6 +15,8 @@ export class Banner {
     private static readonly _byGameType: Map<string, readonly Banner[]> = getMappedList(this._list, item => item.gameType);
     private static readonly _byApiType: Map<string, readonly Banner[]> = getMappedList(this._list, item => item.apiType);
 
+    public static readonly STANDARD: Banner = this.getByGameId("standard")!;
+
     private readonly _id: string;
     private readonly _gameId: string;
     private readonly _name: string;
