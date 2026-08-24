@@ -19,10 +19,7 @@ function getApiBase(): string {
             ? import.meta.env.VITE_API_BASE
             : undefined;
 
-    const prodApiBase: string | undefined = import.meta.env.PROD ? "/api" : undefined;
-
     return runtimeBase
         ?? viteApiBase
-        ?? prodApiBase
         ?? "http://localhost:3001/api";
 }
