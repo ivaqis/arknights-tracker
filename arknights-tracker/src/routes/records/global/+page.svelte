@@ -1,6 +1,6 @@
 <script lang="ts">
     import { browser } from "$app/environment";
-    import { goto, replaceState } from "$app/navigation";
+    import { goto } from "$app/navigation";
     import type { GlobalBannerData } from "$lib/api/globalBannerStats/contracts/GlobalBannerData";
     import type { GlobalBannerStatsResponse } from "$lib/api/globalBannerStats/contracts/GlobalBannerStatsResponse";
     import { fetchGlobalBannerStats } from "$lib/api/globalBannerStats/fetchGlobalBannerStats";
