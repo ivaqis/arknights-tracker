@@ -675,8 +675,9 @@
                         </div>
                     {/if}
                 {:else}
-                    <div class="text-center py-10 text-gray-500 dark:text-gray-400 italic">
-                        Failed to load details.
+                    <div class="text-center py-10 text-gray-500 dark:text-gray-400 flex flex-col items-center justify-center gap-2">
+                        <Icon name="noData" class="w-8 h-8 opacity-40" />
+                        <span class="text-sm font-medium">{$t("emptyState.noData")}</span>
                     </div>
                 {/if}
             </div>
