@@ -50,8 +50,8 @@
     "globalBtn": "Globale Statistik",
     "settingsBtn": "Einstellungen",
     "totalCost": "Gesamtkosten (Oroberyl)",
-    "openOfficialSource": "Offizieller Post",
-    "detailsOfficialSource": "Details auf der offiziellen Seite ansehen",
+    "openOfficialSource": "Offizielle Webseite",
+    "detailsOfficialSource": "Details auf der offiziellen Webseite ansehen",
     "rating": {
       "ratingTitle": "Deine Bewertung",
       "luckyTotal": "Gesamtziehungen",
@@ -129,7 +129,11 @@
     "bannerTypes": {
       "bannerHistoryGraph": "Banner-Verlauf",
       "pieGraph": "Verteilung"
-    }
+    },
+    "openXSource": "Offizieller Beitrag",
+    "detailsXSource": "Beitrag auf x.com ansehen",
+    "openWebEvent": "Web-Event",
+    "detailsWebEvent": "Zur Event-Seite gehen"
   },
   "bannerTypes": {
     "standard": "Standard-Rekrutierung",
@@ -324,7 +328,9 @@
     "emptyPageMsg": "Wie leer es hier ist",
     "equipmentType": "Ausrüstungstyp",
     "gearTemplate": "Ausrüstungsvorlage",
-    "blueprintLocation": "Ausrüstungsvorlagen-Standort"
+    "blueprintLocation": "Ausrüstungsvorlagen-Standort",
+    "rewards": "Belohnungen",
+    "dayN": "Tag {n}"
   },
   "status": {
     "won": "Gewonnen 50:50",

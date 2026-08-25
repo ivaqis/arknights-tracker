@@ -6,8 +6,6 @@
   import { banners } from "$lib/data/banners.js";
   import { promocodes } from "$lib/data/promocodes.js";
   import { rawEvents } from "$lib/data/timeline.js";
-  import { currencies } from "$lib/data/items/currencies";
-  import { progression } from "$lib/data/items/progression";
   import { fade } from "svelte/transition";
   import { weaponRotations } from "$lib/data/weaponRotations.js";
   import { weapons } from "$lib/data/weapons.js";
@@ -20,14 +18,13 @@
   import BannerModal from "$lib/components/modals/BannerModal.svelte";
   import SupportModal from "$lib/components/modals/SupportModal.svelte";
   import Tooltip from "$lib/components/Tooltip.svelte";
+  import ItemTags from "$lib/components/ItemTags.svelte";
 
   let now = new Date();
   let timer;
   let currentServerId = "3";
   let showServerTime = false;
   let isSupportOpen = false;
-
-  const allItems = [...currencies, ...progression];
 
   function parseWithServerOffset(dateStr) {
     if (!dateStr) return new Date(9999, 11, 31);
@@ -72,22 +69,6 @@
       return { timeLeft, status: "warning" };
     }
     return { timeLeft, status: "normal" };
-  }
-
-  function getRarityStyle(id) {
-    const item = allItems.find((i) => i.id === id);
-    const rarity = item?.rarity || 3;
-    switch (rarity) {
-      case 5:
-      case 6:
-        return "bg-amber-50 border-amber-300 text-amber-800 hover:border-amber-500 dark:bg-amber-900/40 dark:border-amber-700 dark:text-amber-200 dark:hover:border-amber-400";
-      case 4:
-        return "bg-purple-50 border-purple-300 text-purple-800 hover:border-purple-500 dark:bg-purple-900/40 dark:border-purple-700 dark:text-purple-200 dark:hover:border-purple-400";
-      case 3:
-        return "bg-blue-50 border-blue-300 text-blue-800 hover:border-blue-500 dark:bg-blue-900/40 dark:border-blue-700 dark:text-blue-200 dark:hover:border-blue-400";
-      default:
-        return "bg-gray-100 border-gray-300 text-gray-700 hover:border-gray-400 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-300 dark:hover:border-gray-400";
-    }
   }
 
   $: activeBanners = banners
@@ -187,17 +168,6 @@
     return `(${text})`;
   }
 
-  function sortRewards(rewards) {
-    return [...rewards].sort((a, b) => {
-      const itemA = allItems.find((i) => i.id === a.id);
-      const itemB = allItems.find((i) => i.id === b.id);
-      const rarityA = itemA?.rarity || 0;
-      const rarityB = itemB?.rarity || 0;
-      if (rarityB !== rarityA) return rarityB - rarityA;
-      return b.count - a.count;
-    });
-  }
-
   let copiedCode = null;
   async function copyCode(code) {
     try {
@@ -229,29 +199,47 @@
   });
 
   function getEventBadge(event) {
+    if (!event) return null;
     const origType = (event.originalType || "").toLowerCase();
+    const type = (event.type || "").toLowerCase();
     const glassStyle =
       "bg-black/40 backdrop-blur-md border border-white/10 shadow-sm";
 
-    if (event.type === "mailEvent")
+    if (type === "mailevent")
       return { icon: "mail", label: "Mail Event", bg: glassStyle };
-    if (event.type === "protoPass")
+    if (type === "protopass")
       return { icon: "protoPass", label: "Proto Pass", bg: glassStyle };
-    if (event.type === "web")
+    if (type === "web")
       return { icon: "link", label: "Web", bg: glassStyle };
-    if (event.type === "signIn")
+    if (type === "signin")
       return { icon: "signIn", label: "Sign-In", bg: glassStyle };
-    if (event.type === "inGamePermanent")
+    if (type === "ingamepermanent")
       return { icon: "permanent", label: "Permanent Event", bg: glassStyle };
 
     if (
-      event.type === "banner" ||
-      event.type === "standard" ||
-      event.type === "special" ||
-      event.type === "new-player"
+      type === "weapon" ||
+      type === "weap-special" ||
+      type === "weap-standard" ||
+      origType === "weapon" ||
+      origType === "weap-special" ||
+      origType === "weap-standard" ||
+      event.isWeapon === true
     ) {
-      if (origType === "weapon")
-        return { icon: "atkEvent", label: "Arsenal Issue", bg: glassStyle };
+      return { icon: "atkEvent", label: "Arsenal Issue", bg: glassStyle };
+    }
+
+    if (
+      type === "banner" ||
+      type === "standard" ||
+      type === "special" ||
+      type === "new-player" ||
+      type === "headhunting" ||
+      origType === "standard" ||
+      origType === "special" ||
+      origType === "new-player" ||
+      origType === "banner" ||
+      origType === "headhunting"
+    ) {
       return { icon: "headhunting", label: "Headhunting", bg: glassStyle };
     }
 
@@ -734,27 +722,10 @@
                   </div>
                 </div>
 
-                <div
-                  class="flex-1 flex flex-wrap gap-1.5 items-center min-w-0 py-1 md:py-0"
-                >
-                  {#each sortRewards(promo.rewards) as reward}
-                    <Tooltip text={$t(`items.${reward.id}`)}>
-                      <div
-                        class="flex items-center rounded-full px-2 py-0.5 border text-[11px] transition-colors {getRarityStyle(
-                          reward.id,
-                        )}"
-                      >
-                        <span class="font-bold mr-1">{reward.count}</span>
-                        <Image
-                          id={reward.id}
-                          variant="item"
-                          size={16}
-                          className="object-contain"
-                        />
-                      </div>
-                    </Tooltip>
-                  {/each}
-                </div>
+                <ItemTags
+                  rewards={promo.rewards}
+                  className="flex-1 min-w-0 py-1 md:py-0"
+                />
 
                 <div
                   class="w-full md:w-auto text-left md:text-right shrink-0 md:pl-2 flex flex-row md:flex-col items-center md:items-end justify-start md:justify-center gap-2 md:gap-0 mt-1 md:mt-0"

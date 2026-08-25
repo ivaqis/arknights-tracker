@@ -50,8 +50,8 @@
     "globalBtn": "Thống kê toàn cầu",
     "settingsBtn": "Cài đặt",
     "totalCost": "Tổng Oroberyl tiêu hao",
-    "openOfficialSource": "Bài viết chính thức",
-    "detailsOfficialSource": "Xem chi tiết trên trang chủ",
+    "openOfficialSource": "Trang web chính thức",
+    "detailsOfficialSource": "Xem chi tiết trên trang web chính thức",
     "rating": {
       "ratingTitle": "Đánh giá của bạn",
       "luckyTotal": "Tổng lượt quay",
@@ -129,7 +129,11 @@
     "bannerTypes": {
       "bannerHistoryGraph": "Lịch sử Banner",
       "pieGraph": "Phân bổ"
-    }
+    },
+    "openXSource": "Bài viết chính thức",
+    "detailsXSource": "Xem bài viết trên x.com",
+    "openWebEvent": "Sự kiện Web",
+    "detailsWebEvent": "Đi đến trang sự kiện"
   },
   "bannerTypes": {
     "standard": "Chiêu mộ Tiêu chuẩn",
@@ -328,7 +332,9 @@
     "emptyPageMsg": "Ở đây trống trải quá",
     "equipmentType": "Loại thiết bị",
     "gearTemplate": "Mẫu Trang Bị",
-    "blueprintLocation": "Vị trí bản thiết kế trang bị"
+    "blueprintLocation": "Vị trí bản thiết kế trang bị",
+    "rewards": "Phần thưởng",
+    "dayN": "Ngày {n}"
   },
   "status": {
     "won": "Thắng 50:50",

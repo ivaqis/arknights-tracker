@@ -45,7 +45,7 @@
     "globalBtn": "Statystyki globalne",
     "settingsBtn": "Ustawienia",
     "totalCost": "Całkowity koszt Oroberylu",
-    "openOfficialSource": "Oficjalny post",
+    "openOfficialSource": "Oficjalna strona",
     "detailsOfficialSource": "Zobacz szczegóły na oficjalnej stronie",
     "rating": {
       "ratingTitle": "Twój ranking",
@@ -123,7 +123,11 @@
     "bannerTypes": {
       "bannerHistoryGraph": "Historia banerów",
       "pieGraph": "Dystrybucja"
-    }
+    },
+    "openXSource": "Oficjalny post",
+    "detailsXSource": "Zobacz post na x.com",
+    "openWebEvent": "Wydarzenie sieciowe",
+    "detailsWebEvent": "Przejdź do strony wydarzenia"
   },
   "import": {
     "title": "Importuj historię rekrutacji",
@@ -302,7 +306,9 @@
     "sortByRelease": "Według daty wydania",
     "sortByWait": "Według dni bez powrotu",
     "allBanners": "Wszystkie Banery",
-    "emptyPageMsg": "Tak tu pusto"
+    "emptyPageMsg": "Tak tu pusto",
+    "rewards": "Nagrody",
+    "dayN": "Dzień {n}"
   },
   "status": {
     "won": "Wygrana 50:50",

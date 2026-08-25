@@ -17,6 +17,8 @@
     import BannerStats from "$lib/components/modals/BannerStats.svelte";
     import Tooltip from "$lib/components/Tooltip.svelte";
     import Modal from "$lib/components/modals/Modal.svelte";
+    import ItemTags from "$lib/components/ItemTags.svelte";
+    import EventBadge from "$lib/components/events/EventBadge.svelte";
 
     export const bannerId = undefined;
     export let banner = null;
@@ -202,9 +204,23 @@
 
     const itemMap = { ...characters, ...weapons };
 
+    $: isWeaponBanner =
+        banner?.type === "weapon" ||
+        banner?.originalType === "weapon" ||
+        banner?.type === "weap-special" ||
+        banner?.type === "weap-standard" ||
+        banner?.isWeapon === true ||
+        (Array.isArray(banner?.passWeapons) && banner.passWeapons.length > 0) ||
+        (Array.isArray(banner?.featuredWeapons) && banner.featuredWeapons.length > 0);
+
     $: featuredItems = (() => {
         if (!banner) return [];
-        const ids = [...(banner.featured6 || []), ...(banner.featured5 || [])];
+        const ids = [
+            ...(banner.featured6 || []),
+            ...(banner.featured5 || []),
+            ...(banner.passWeapons || []),
+            ...(banner.featuredWeapons || []),
+        ];
         return ids
             .map((id) => {
                 const item = itemMap[id];
@@ -216,7 +232,12 @@
 
     $: featuredList = (() => {
         if (!banner) return [];
-        return [...(banner.featured6 || []), ...(banner.featured5 || [])];
+        return [
+            ...(banner.featured6 || []),
+            ...(banner.featured5 || []),
+            ...(banner.passWeapons || []),
+            ...(banner.featuredWeapons || []),
+        ];
     })();
 
     const checkIsFeatured = (itemName) => {
@@ -419,12 +440,89 @@
               minutes: Math.floor((diff / 60000) % 60),
           }
         : { days: 0, hours: 0, minutes: 0 };
+
+    $: isGroupedRewards =
+        Array.isArray(banner?.rewards) &&
+        banner.rewards.length > 0 &&
+        (banner.rewards[0]?.day !== undefined ||
+            banner.rewards[0]?.items !== undefined ||
+            banner.rewards[0]?.label !== undefined);
+
+    function marquee(node, _dep) {
+        let anim = null;
+
+        function start() {
+            const parent = node.parentElement;
+            if (!parent) return;
+
+            const overflow = node.scrollWidth - parent.clientWidth;
+            if (overflow <= 2) return;
+
+            if (anim) {
+                anim.cancel();
+            }
+
+            const duration = Math.max(2000, overflow * 40);
+
+            anim = node.animate(
+                [
+                    { transform: "translateX(0)", offset: 0 },
+                    { transform: "translateX(0)", offset: 0.15 },
+                    { transform: `translateX(-${overflow + 4}px)`, offset: 0.85 },
+                    { transform: `translateX(-${overflow + 4}px)`, offset: 1 },
+                ],
+                {
+                    duration,
+                    iterations: Infinity,
+                    direction: "alternate",
+                    easing: "ease-in-out",
+                },
+            );
+        }
+
+        function stop() {
+            if (anim) {
+                anim.cancel();
+                anim = null;
+            }
+            node.style.transform = "";
+        }
+
+        const anchor = node.closest("a") || node.parentElement;
+        if (anchor) {
+            anchor.addEventListener("mouseenter", start);
+            anchor.addEventListener("mouseleave", stop);
+            anchor.addEventListener("touchstart", start, { passive: true });
+            anchor.addEventListener("touchend", stop, { passive: true });
+        }
+
+        return {
+            update() {
+                stop();
+            },
+            destroy() {
+                stop();
+                if (anchor) {
+                    anchor.removeEventListener("mouseenter", start);
+                    anchor.removeEventListener("mouseleave", stop);
+                    anchor.removeEventListener("touchstart", start);
+                    anchor.removeEventListener("touchend", stop);
+                }
+            },
+        };
+    }
 </script>
 
 <Modal isOpen={!!banner} on:close={close}>
     <div
         class="bg-white dark:bg-[#383838] rounded-2xl shadow-2xl max-w-md w-full overflow-hidden relative animate-in zoom-in-95 duration-200 flex flex-col cursor-auto"
     >
+            {#if banner}
+                <div class="absolute top-3 left-3 z-20 pointer-events-none">
+                    <EventBadge event={banner} />
+                </div>
+            {/if}
+
             <button
                 class="hover:bg-[#FACC15] text-white hover:text-[#21272C] absolute top-3 right-3 z-20 p-2 bg-black/30 text-white rounded-full transition-colors backdrop-blur-md cursor-pointer"
                 on:click={close}
@@ -610,34 +708,160 @@
                             </div>
                         {/if}
                     </div>
-                    {#if banner.url}
+                    {#if banner.webUrl}
                         <a
-                            href={banner.url}
+                            href={banner.webUrl}
                             target="_blank"
                             rel="noopener noreferrer"
-                            class="group flex items-center justify-between px-4 py-3 rounded-xl border dark:border-[#444444] border-gray-200 hover:border-[#E9CF49] hover:dark:border-[#77776A] hover:dark:bg-[#4E4E45] hover:bg-[#fff9f5] transition-all duration-200"
+                            class="group flex items-center justify-between px-3.5 py-2.5 rounded-xl border dark:border-[#444444] border-gray-200 hover:border-[#E9CF49] hover:dark:border-[#77776A] hover:dark:bg-[#4E4E45] hover:bg-[#fff9f5] transition-all duration-200"
                         >
-                            <div class="flex items-center gap-3">
+                            <div class="flex items-center gap-2.5 min-w-0 flex-1 overflow-hidden">
                                 <div
-                                    class="w-8 h-8 rounded-full bg-gray-100 group-hover:bg-[#E9CF49]/10 flex items-center justify-center text-gray-500 dark:text-[#E0E0E0] dark:bg-[#2C2C2C] group-hover:text-[#D4BE48] transition-colors"
+                                    class="w-8 h-8 shrink-0 rounded-full bg-gray-100 group-hover:bg-[#E9CF49]/10 flex items-center justify-center text-gray-500 dark:text-[#E0E0E0] dark:bg-[#2C2C2C] group-hover:text-[#D4BE48] transition-colors"
                                 >
-                                    <Icon name="sendToLink" class="w-4 h-4" />
+                                    <Icon name="link" class="w-4 h-4" />
                                 </div>
-                                <div class="flex flex-col">
-                                    <span
-                                        class="font-bold text-sm text-gray-900 dark:text-[#FDFDFD] group-hover:text-[#E9CF49] transition-colors"
-                                        >{$t("page.openOfficialSource")}</span
-                                    >
-                                    <span class="text-xs text-gray-400"
-                                        >{$t(
-                                            "page.detailsOfficialSource",
-                                        )}</span
-                                    >
+                                <div class="flex flex-col min-w-0 flex-1 overflow-hidden leading-tight">
+                                    <div class="overflow-hidden w-full">
+                                        <span
+                                            use:marquee={$currentUiLocale}
+                                            class="font-bold text-sm text-gray-900 dark:text-[#FDFDFD] group-hover:text-[#E9CF49] transition-colors whitespace-nowrap block w-fit"
+                                            >{$t("page.openWebEvent")}</span
+                                        >
+                                    </div>
+                                    <div class="overflow-hidden w-full mt-0.5">
+                                        <span
+                                            use:marquee={$currentUiLocale}
+                                            class="text-xs text-gray-400 whitespace-nowrap block w-fit"
+                                            >{$t("page.detailsWebEvent")}</span
+                                        >
+                                    </div>
                                 </div>
                             </div>
+                            <Icon name="sendToLink" class="w-3.5 h-3.5 shrink-0 text-gray-400 group-hover:text-[#D4BE48] transition-colors ml-2" />
                         </a>
                     {/if}
+
+                    {#if banner.officialUrl || banner.url}
+                        <div class="grid {banner.officialUrl && banner.url ? 'grid-cols-1 sm:grid-cols-2' : 'grid-cols-1'} gap-2">
+                            {#if banner.officialUrl}
+                                <a
+                                    href={banner.officialUrl}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="group flex items-center justify-between px-3.5 py-2.5 rounded-xl border dark:border-[#444444] border-gray-200 hover:border-[#E9CF49] hover:dark:border-[#77776A] hover:dark:bg-[#4E4E45] hover:bg-[#fff9f5] transition-all duration-200 min-w-0"
+                                >
+                                    <div class="flex items-center gap-2.5 min-w-0 flex-1 overflow-hidden">
+                                        <div
+                                            class="w-8 h-8 shrink-0 rounded-full bg-gray-100 group-hover:bg-[#E9CF49]/10 flex items-center justify-center text-gray-500 dark:text-[#E0E0E0] dark:bg-[#2C2C2C] group-hover:text-[#D4BE48] transition-colors"
+                                        >
+                                            <Icon name="gryphline" class="w-4 h-4" />
+                                        </div>
+                                        <div class="flex flex-col min-w-0 flex-1 overflow-hidden leading-tight">
+                                            <div class="overflow-hidden w-full">
+                                                <span
+                                                    use:marquee={$currentUiLocale}
+                                                    class="font-bold text-sm text-gray-900 dark:text-[#FDFDFD] group-hover:text-[#E9CF49] transition-colors whitespace-nowrap block w-fit"
+                                                    >{$t("page.openOfficialSource")}</span
+                                                >
+                                            </div>
+                                            <div class="overflow-hidden w-full mt-0.5">
+                                                <span
+                                                    use:marquee={$currentUiLocale}
+                                                    class="text-xs text-gray-400 whitespace-nowrap block w-fit"
+                                                    >{$t("page.detailsOfficialSource")}</span
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <Icon name="sendToLink" class="w-3.5 h-3.5 shrink-0 text-gray-400 group-hover:text-[#D4BE48] transition-colors ml-2" />
+                                </a>
+                            {/if}
+
+                            {#if banner.url}
+                                <a
+                                    href={banner.url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="group flex items-center justify-between px-3.5 py-2.5 rounded-xl border dark:border-[#444444] border-gray-200 hover:border-[#E9CF49] hover:dark:border-[#77776A] hover:dark:bg-[#4E4E45] hover:bg-[#fff9f5] transition-all duration-200 min-w-0"
+                                >
+                                    <div class="flex items-center gap-2.5 min-w-0 flex-1 overflow-hidden">
+                                        <div
+                                            class="w-8 h-8 shrink-0 rounded-full bg-gray-100 group-hover:bg-[#E9CF49]/10 flex items-center justify-center text-gray-500 dark:text-[#E0E0E0] dark:bg-[#2C2C2C] group-hover:text-[#D4BE48] transition-colors"
+                                        >
+                                            <Icon name="twitter" class="w-4 h-4" />
+                                        </div>
+                                        <div class="flex flex-col min-w-0 flex-1 overflow-hidden leading-tight">
+                                            <div class="overflow-hidden w-full">
+                                                <span
+                                                    use:marquee={$currentUiLocale}
+                                                    class="font-bold text-sm text-gray-900 dark:text-[#FDFDFD] group-hover:text-[#E9CF49] transition-colors whitespace-nowrap block w-fit"
+                                                    >{$t("page.openXSource")}</span
+                                                >
+                                            </div>
+                                            <div class="overflow-hidden w-full mt-0.5">
+                                                <span
+                                                    use:marquee={$currentUiLocale}
+                                                    class="text-xs text-gray-400 whitespace-nowrap block w-fit"
+                                                    >{$t("page.detailsXSource")}</span
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <Icon name="sendToLink" class="w-3.5 h-3.5 shrink-0 text-gray-400 group-hover:text-[#D4BE48] transition-colors ml-2" />
+                                </a>
+                            {/if}
+                        </div>
+                    {/if}
                 </div>
+
+                {#if banner.rewards && banner.rewards.length > 0}
+                    <div class="space-y-3">
+                        <div class="flex items-center gap-2">
+                            <span
+                                class="text-gray-400 text-[10px] font-bold uppercase tracking-widest"
+                            >
+                                {$t("systemNames.rewards")}
+                            </span>
+                            <div
+                                class="h-px flex-1 bg-gray-100 dark:bg-[#444444]"
+                            ></div>
+                        </div>
+
+                        {#if isGroupedRewards}
+                            <div class="space-y-2.5">
+                                {#each banner.rewards as group, index}
+                                    <div class="space-y-1">
+                                        <div class="text-xs font-bold text-gray-700 dark:text-gray-300">
+                                            {#if group.label}
+                                                {group.label}
+                                            {:else if group.name}
+                                                {group.name}
+                                            {:else if group.day !== undefined}
+                                                {$t("systemNames.dayN", {
+                                                    n: group.day,
+                                                })}
+                                            {:else}
+                                                {$t("systemNames.dayN", {
+                                                    n: index + 1,
+                                                })}
+                                            {/if}
+                                        </div>
+                                        <ItemTags
+                                            rewards={group.items ||
+                                                group.rewards ||
+                                                (group.id ? [group] : [])}
+                                        />
+                                    </div>
+                                {/each}
+                            </div>
+                        {:else}
+                            <div class="flex flex-wrap gap-2">
+                                <ItemTags rewards={banner.rewards} />
+                            </div>
+                        {/if}
+                    </div>
+                {/if}
 
                 {#if featuredItems.length > 0}
                     <div class="space-y-3">
@@ -645,9 +869,8 @@
                             <span
                                 class="text-gray-400 text-[10px] font-bold uppercase tracking-widest"
                             >
-                                {#if isWeaponBanner}
-                                    {$t("page.banner.featuredWeapons") ||
-                                        "Featured Weapons"}
+                                {#if isWeaponBanner || featuredItems.every((item) => item.isWeapon)}
+                                    {$t("page.banner.featuredWeapons")}
                                 {:else}
                                     {$t("systemNames.featuredCharacters")}
                                 {/if}

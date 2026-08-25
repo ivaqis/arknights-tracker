@@ -66,7 +66,15 @@
     }));
 
     $: displayBanners = banners
-        .filter((b) => b.version === $selectedVersionStore)
+        .filter(
+            (b) =>
+                b.version === $selectedVersionStore &&
+                b.showOnMain !== false &&
+                b.id !== "standard_01" &&
+                b.id !== "new_player_01" &&
+                !b.id.includes("constant") &&
+                b.endTime !== null,
+        )
         .sort(
             (a, b) =>
                 new Date(a.startTime).getTime() -

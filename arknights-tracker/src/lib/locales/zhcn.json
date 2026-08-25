@@ -50,8 +50,8 @@
     "globalBtn": "全服统计",
     "settingsBtn": "设置",
     "totalCost": "总消耗欧泊 (Oroberyl)",
-    "openOfficialSource": "官方公告",
-    "detailsOfficialSource": "查看官网详情",
+    "openOfficialSource": "官方网站",
+    "detailsOfficialSource": "在官方网站查看详情",
     "rating": {
       "ratingTitle": "您的欧气评价",
       "luckyTotal": "总寻访次数",
@@ -129,7 +129,11 @@
     "bannerTypes": {
       "bannerHistoryGraph": "卡池历史趋势",
       "pieGraph": "分布图"
-    }
+    },
+    "openXSource": "官方动态",
+    "detailsXSource": "在 x.com 查看帖子",
+    "openWebEvent": "网页活动",
+    "detailsWebEvent": "前往活动页面"
   },
   "bannerTypes": {
     "standard": "标准寻访",
@@ -328,7 +332,9 @@
     "emptyPageMsg": "这里好空啊",
     "equipmentType": "装备类型",
     "gearTemplate": "装备制造模板",
-    "blueprintLocation": "装备图纸位置"
+    "blueprintLocation": "装备图纸位置",
+    "rewards": "奖励",
+    "dayN": "第 {n} 天"
   },
   "status": {
     "won": "胜出 50:50",

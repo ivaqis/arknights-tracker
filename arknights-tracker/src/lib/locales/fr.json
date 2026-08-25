@@ -50,8 +50,8 @@
     "globalBtn": "Stats Globales",
     "settingsBtn": "Paramètres",
     "totalCost": "Coût Total en Orobéryl",
-    "openOfficialSource": "Post Officiel",
-    "detailsOfficialSource": "Voir détails sur le site officiel",
+    "openOfficialSource": "Site officiel",
+    "detailsOfficialSource": "Voir les détails sur le site officiel",
     "rating": {
       "ratingTitle": "Votre Évaluation",
       "luckyTotal": "Tirages Totaux",
@@ -129,7 +129,11 @@
     "bannerTypes": {
       "bannerHistoryGraph": "Historique des bannières",
       "pieGraph": "Distribution"
-    }
+    },
+    "openXSource": "Publication officielle",
+    "detailsXSource": "Voir la publication sur x.com",
+    "openWebEvent": "Événement Web",
+    "detailsWebEvent": "Aller à la page de l'événement"
   },
   "bannerTypes": {
     "standard": "Recrutement Standard",
@@ -324,7 +328,9 @@
     "emptyPageMsg": "Comme c'est vide ici",
     "equipmentType": "Type d'équipement",
     "gearTemplate": "Modèle d'équipement",
-    "blueprintLocation": "Emplacement du schéma d'équipement"
+    "blueprintLocation": "Emplacement du schéma d'équipement",
+    "rewards": "Récompenses",
+    "dayN": "Jour {n}"
   },
   "status": {
     "won": "Gagné 50:50",

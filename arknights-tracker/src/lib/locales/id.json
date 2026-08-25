@@ -50,7 +50,7 @@
     "globalBtn": "Statistik Global",
     "settingsBtn": "Pengaturan",
     "totalCost": "Total Biaya Oroberyl",
-    "openOfficialSource": "Postingan Resmi",
+    "openOfficialSource": "Situs Resmi",
     "detailsOfficialSource": "Lihat detail di situs resmi",
     "rating": {
       "ratingTitle": "Peringkat Anda",
@@ -129,7 +129,11 @@
     "bannerTypes": {
       "bannerHistoryGraph": "Riwayat Banner",
       "pieGraph": "Distribusi"
-    }
+    },
+    "openXSource": "Postingan Resmi",
+    "detailsXSource": "Lihat postingan di x.com",
+    "openWebEvent": "Acara Web",
+    "detailsWebEvent": "Buka halaman acara"
   },
   "bannerTypes": {
     "standard": "Headhunting Standar",
@@ -324,7 +328,9 @@
     "emptyPageMsg": "Kosong sekali di sini",
     "equipmentType": "Tipe Peralatan",
     "gearTemplate": "Templat Gear",
-    "blueprintLocation": "Lokasi Templat Perlengkapan"
+    "blueprintLocation": "Lokasi Templat Perlengkapan",
+    "rewards": "Hadiah",
+    "dayN": "Hari {n}"
   },
   "status": {
     "won": "Menang 50:50",

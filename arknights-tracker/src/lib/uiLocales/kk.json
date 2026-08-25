@@ -45,8 +45,8 @@
     "globalBtn": "Жаһандық статистика",
     "settingsBtn": "Баптаулар",
     "totalCost": "Жалпы Ороберил шығыны",
-    "openOfficialSource": "Ресми жазба",
-    "detailsOfficialSource": "Толығырақ ресми сайтта көру",
+    "openOfficialSource": "Ресми сайт",
+    "detailsOfficialSource": "Ресми сайтта мәліметтерді көру",
     "rating": {
       "ratingTitle": "Сіздің рейтингіңіз",
       "luckyTotal": "Барлық айналдырулар",
@@ -123,7 +123,11 @@
     "bannerTypes": {
       "bannerHistoryGraph": "Баннерлер тарихы",
       "pieGraph": "Үлестірілу"
-    }
+    },
+    "openXSource": "Ресми жазба",
+    "detailsXSource": "x.com-да жазбаны көру",
+    "openWebEvent": "Веб-оқиға",
+    "detailsWebEvent": "Оқиға бетіне өту"
   },
   "import": {
     "title": "Жалдау тарихын импорттау",
@@ -302,7 +306,9 @@
     "sortByRelease": "Шығарылым күні бойынша",
     "sortByWait": "Рерансыз күндер бойынша",
     "allBanners": "Барлық баннерлер",
-    "emptyPageMsg": "Мұнда өте бос"
+    "emptyPageMsg": "Мұнда өте бос",
+    "rewards": "Марапаттар",
+    "dayN": "{n}-күн"
   },
   "status": {
     "won": "50:50 ұтып алды",

@@ -570,24 +570,26 @@
     }
 
     function getEventBadge(event) {
+        if (!event) return null;
         const origType = (event.originalType || "").toLowerCase();
+        const type = (event.type || "").toLowerCase();
 
         const glassStyle =
             "bg-black/30 backdrop-blur-md border border-white/10 shadow-sm";
 
-        if (event.type === "mailEvent") {
+        if (type === "mailevent") {
             return { icon: "mail", label: "Mail Event", bg: glassStyle };
         }
-        if (event.type === "protoPass") {
+        if (type === "protopass") {
             return { icon: "protoPass", label: "Proto Pass", bg: glassStyle };
         }
-        if (event.type === "web") {
+        if (type === "web") {
             return { icon: "link", label: "Web", bg: glassStyle };
         }
-        if (event.type === "signIn") {
+        if (type === "signin") {
             return { icon: "signIn", label: "Sign-In", bg: glassStyle };
         }
-        if (event.type === "inGamePermanent") {
+        if (type === "ingamepermanent") {
             return {
                 icon: "permanent",
                 label: "Permanent Event",
@@ -596,18 +598,33 @@
         }
 
         if (
-            event.type === "banner" ||
-            event.type === "standard" ||
-            event.type === "special" ||
-            event.type === "new-player"
+            type === "weapon" ||
+            type === "weap-special" ||
+            type === "weap-standard" ||
+            origType === "weapon" ||
+            origType === "weap-special" ||
+            origType === "weap-standard" ||
+            event.isWeapon === true
         ) {
-            if (origType === "weapon") {
-                return {
-                    icon: "atkEvent",
-                    label: "Arsenal Issue",
-                    bg: glassStyle,
-                };
-            }
+            return {
+                icon: "atkEvent",
+                label: "Arsenal Issue",
+                bg: glassStyle,
+            };
+        }
+
+        if (
+            type === "banner" ||
+            type === "standard" ||
+            type === "special" ||
+            type === "new-player" ||
+            type === "headhunting" ||
+            origType === "standard" ||
+            origType === "special" ||
+            origType === "new-player" ||
+            origType === "banner" ||
+            origType === "headhunting"
+        ) {
             return {
                 icon: "headhunting",
                 label: "Headhunting",
@@ -774,17 +791,17 @@
                                 {event.connectRight ? 'rounded-r-none border-r-0' : 'rounded-r'}"
                                 style="background-color: {event.color}; --hover-outline-color: color-mix(in srgb, {event.color}, white 20%); border-right: {event.connectRight ? 'none' : `4px solid ${event.color}`};">
                                 <div
-                                    class="absolute top-0 right-0 bottom-0 w-[250px] z-0 transition-transform"
+                                    class="absolute top-0 right-0 bottom-0 w-[250px] max-w-full z-0 transition-transform"
                                 >
                                     <Image
                                         item={event}
                                         variant={getVariant(event)}
                                         className="w-full h-full"
                                         style={`
-                            object-position: right ${event.iconPosition || 50}%;
-                            -webkit-mask-image: linear-gradient(to right, transparent 0%, black 50%);
-                            mask-image: linear-gradient(to right, transparent 0%, black 50%);
-                        `}
+                                            object-position: right ${event.iconPosition || 50}%;
+                                            -webkit-mask-image: linear-gradient(to right, transparent 0%, black 50%);
+                                            mask-image: linear-gradient(to right, transparent 0%, black 50%);
+                                        `}
                                     />
                                 </div>
 
@@ -798,12 +815,9 @@
                                 class="relative z-20 h-full w-full pointer-events-none"
                             >
                                 <div
-                                    class="sticky left-0 inline-flex items-center {isShortEvent(
-                                        event,
-                                    )
+                                    class="sticky left-0 inline-flex items-center {isShortEvent(event)
                                         ? 'gap-1.5 px-2'
-                                        : 'gap-2 px-3'} h-full max-w-full pointer-events-auto"
-                                >
+                                        : 'gap-2 px-3'} h-full max-w-full pointer-events-auto">
                                     {#if badge}
                                         <div
                                             class="flex items-center gap-1.5 rounded px-1.5 py-0.5 text-white shrink-0 shadow-sm border border-white/10 {badge.bg}"

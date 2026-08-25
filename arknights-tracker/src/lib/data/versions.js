@@ -2,6 +2,11 @@
 
 export const changelogData = [
     {
+        version: "1.0",
+        characters: ["laevatain", "gilberta", "yvonne"],
+        weapons: ["forgebornScathe", "deliveryGuaranteed", "artzyTyrannical"]
+    },
+    {
         version: "1.1",
         characters: ["rossi", "tangtang"],
         weapons: ["homeLonging", "brigandsCalling", "lupineScarlet", "gloriousMemory"],

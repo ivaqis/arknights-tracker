@@ -50,8 +50,8 @@
     "globalBtn": "Statistiche Globali",
     "settingsBtn": "Impostazioni",
     "totalCost": "Costo Totale Oroberyl",
-    "openOfficialSource": "Post Ufficiale",
-    "detailsOfficialSource": "Vedi dettagli sul sito ufficiale",
+    "openOfficialSource": "Sito ufficiale",
+    "detailsOfficialSource": "Visualizza i dettagli sul sito ufficiale",
     "rating": {
       "ratingTitle": "La tua Valutazione",
       "luckyTotal": "Estrazioni Totali",
@@ -129,7 +129,11 @@
     "bannerTypes": {
       "bannerHistoryGraph": "Cronologia Banner",
       "pieGraph": "Distribuzione"
-    }
+    },
+    "openXSource": "Post ufficiale",
+    "detailsXSource": "Visualizza il post su x.com",
+    "openWebEvent": "Evento Web",
+    "detailsWebEvent": "Vai alla pagina dell'evento"
   },
   "bannerTypes": {
     "standard": "Ricerca Standard",
@@ -324,7 +328,9 @@
     "emptyPageMsg": "Com'è vuoto qui",
     "equipmentType": "Tipo di equipaggiamento",
     "gearTemplate": "Schema per l'equipaggiamento",
-    "blueprintLocation": "Posizione modello equipaggiamento"
+    "blueprintLocation": "Posizione modello equipaggiamento",
+    "rewards": "Ricompense",
+    "dayN": "Giorno {n}"
   },
   "status": {
     "won": "Vinto 50:50",

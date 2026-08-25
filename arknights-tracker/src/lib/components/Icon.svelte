@@ -623,12 +623,6 @@
         "height": "20",
         "fill": "currentColor"
     },
-    "twitter": {
-        "viewBox": "0 0 14 14",
-        "width": "30",
-        "height": "20",
-        "fill": "none"
-    },
     "skport": {
         "viewBox": "0 0 17 14",
         "width": "30",

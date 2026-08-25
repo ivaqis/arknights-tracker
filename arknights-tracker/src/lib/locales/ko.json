@@ -50,8 +50,8 @@
     "globalBtn": "전체 통계",
     "settingsBtn": "설정",
     "totalCost": "총 오로베릴 소모량",
-    "openOfficialSource": "공식 게시물",
-    "detailsOfficialSource": "공식 사이트에서 상세 보기",
+    "openOfficialSource": "공식 사이트",
+    "detailsOfficialSource": "공식 사이트에서 상세 내용 보기",
     "rating": {
       "ratingTitle": "나의 평가",
       "luckyTotal": "총 횟수",
@@ -129,7 +129,11 @@
     "bannerTypes": {
       "bannerHistoryGraph": "배너 기록",
       "pieGraph": "분포도"
-    }
+    },
+    "openXSource": "공식 게시글",
+    "detailsXSource": "x.com에서 게시글 보기",
+    "openWebEvent": "웹 이벤트",
+    "detailsWebEvent": "이벤트 페이지로 이동"
   },
   "bannerTypes": {
     "standard": "통상 헤드헌팅",
@@ -324,7 +328,9 @@
     "emptyPageMsg": "여기 정말 텅 비었네",
     "equipmentType": "장비 유형",
     "gearTemplate": "장비 제작 템플릿",
-    "blueprintLocation": "장비 도안 위치"
+    "blueprintLocation": "장비 도안 위치",
+    "rewards": "보상",
+    "dayN": "{n}일차"
   },
   "status": {
     "won": "승리 50:50",

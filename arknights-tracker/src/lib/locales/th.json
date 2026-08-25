@@ -50,8 +50,8 @@
     "globalBtn": "สถิติทั่วโลก",
     "settingsBtn": "การตั้งค่า",
     "totalCost": "รวม Oroberyl ที่ใช้",
-    "openOfficialSource": "โพสต์อย่างเป็นทางการ",
-    "detailsOfficialSource": "ดูรายละเอียดในเว็บไซต์ทางการ",
+    "openOfficialSource": "เว็บไซต์ทางการ",
+    "detailsOfficialSource": "ดูรายละเอียดบนเว็บไซต์ทางการ",
     "rating": {
       "ratingTitle": "การประเมินของคุณ",
       "luckyTotal": "จำนวนสุ่มทั้งหมด",
@@ -129,7 +129,11 @@
     "bannerTypes": {
       "bannerHistoryGraph": "กราฟประวัติแบนเนอร์",
       "pieGraph": "การกระจายตัว"
-    }
+    },
+    "openXSource": "โพสต์ทางการ",
+    "detailsXSource": "ดูโพสต์บน x.com",
+    "openWebEvent": "เว็บอีเวนต์",
+    "detailsWebEvent": "ไปยังหน้ากิจกรรม"
   },
   "bannerTypes": {
     "standard": "การเฟ้นหามาตรฐาน",
@@ -324,7 +328,9 @@
     "emptyPageMsg": "ที่นี่ว่างเปล่าจัง",
     "equipmentType": "ประเภทอุปกรณ์",
     "gearTemplate": "เทม​เพล​ต​อุปกรณ์",
-    "blueprintLocation": "ตำแหน่งพิมพ์เขียวอุปกรณ์"
+    "blueprintLocation": "ตำแหน่งพิมพ์เขียวอุปกรณ์",
+    "rewards": "รางวัล",
+    "dayN": "วันที่ {n}"
   },
   "status": {
     "won": "ชนะ 50:50",

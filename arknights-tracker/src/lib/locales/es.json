@@ -50,7 +50,7 @@
     "globalBtn": "Estadísticas Globales",
     "settingsBtn": "Ajustes",
     "totalCost": "Costo Total de Oroberilo",
-    "openOfficialSource": "Post Oficial",
+    "openOfficialSource": "Sitio oficial",
     "detailsOfficialSource": "Ver detalles en el sitio oficial",
     "rating": {
       "ratingTitle": "Tu Calificación",
@@ -129,7 +129,11 @@
     "bannerTypes": {
       "bannerHistoryGraph": "Historial de banners",
       "pieGraph": "Distribución"
-    }
+    },
+    "openXSource": "Publicación oficial",
+    "detailsXSource": "Ver publicación en x.com",
+    "openWebEvent": "Evento web",
+    "detailsWebEvent": "Ir a la página del evento"
   },
   "bannerTypes": {
     "standard": "Búsqueda Estándar",
@@ -326,7 +330,9 @@
     "emptyPageMsg": "Qué vacío está aquí",
     "equipmentType": "Tipo de equipamiento",
     "gearTemplate": "Molde de equipamiento",
-    "blueprintLocation": "Ubicación de plantilla de equipamiento"
+    "blueprintLocation": "Ubicación de plantilla de equipamiento",
+    "rewards": "Recompensas",
+    "dayN": "Día {n}"
   },
   "status": {
     "won": "Ganado 50:50",

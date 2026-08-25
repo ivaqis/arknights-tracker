@@ -50,8 +50,8 @@
     "globalBtn": "全服統計",
     "settingsBtn": "設定",
     "totalCost": "總消耗歐泊 (Oroberyl)",
-    "openOfficialSource": "官方公告",
-    "detailsOfficialSource": "查看官網詳情",
+    "openOfficialSource": "官方網站",
+    "detailsOfficialSource": "在官方網站查看詳情",
     "rating": {
       "ratingTitle": "您的歐氣評價",
       "luckyTotal": "總尋訪次數",
@@ -129,7 +129,11 @@
     "bannerTypes": {
       "bannerHistoryGraph": "卡池歷史趨勢",
       "pieGraph": "分佈圖"
-    }
+    },
+    "openXSource": "官方動態",
+    "detailsXSource": "在 x.com 查看貼文",
+    "openWebEvent": "網頁活動",
+    "detailsWebEvent": "前往活動頁面"
   },
   "bannerTypes": {
     "standard": "標準尋訪",
@@ -328,7 +332,9 @@
     "emptyPageMsg": "這裡好空啊",
     "equipmentType": "裝備類型",
     "gearTemplate": "裝備製造模板",
-    "blueprintLocation": "裝備圖紙位置"
+    "blueprintLocation": "裝備圖紙位置",
+    "rewards": "獎勵",
+    "dayN": "第 {n} 天"
   },
   "status": {
     "won": "勝出 50:50",
