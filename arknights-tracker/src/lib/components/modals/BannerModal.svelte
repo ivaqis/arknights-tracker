@@ -136,13 +136,22 @@
         if (!banner) return false;
         const id = (banner.id || "").toLowerCase();
         const type = (banner.type || "").toLowerCase();
+        const origType = (banner.originalType || "").toLowerCase();
         const ctx = (pageContext || "").toLowerCase();
         return (
             type === "weapon" ||
+            type === "weap-special" ||
+            type === "weap-standard" ||
+            origType === "weapon" ||
+            origType === "weap-special" ||
+            origType === "weap-standard" ||
             id.includes("weap") ||
             id.includes("wepon") ||
             ctx.includes("weap") ||
-            ctx.includes("wepon")
+            ctx.includes("wepon") ||
+            banner.isWeapon === true ||
+            (Array.isArray(banner.passWeapons) && banner.passWeapons.length > 0) ||
+            (Array.isArray(banner.featuredWeapons) && banner.featuredWeapons.length > 0)
         );
     })();
 
@@ -203,15 +212,6 @@
     })();
 
     const itemMap = { ...characters, ...weapons };
-
-    $: isWeaponBanner =
-        banner?.type === "weapon" ||
-        banner?.originalType === "weapon" ||
-        banner?.type === "weap-special" ||
-        banner?.type === "weap-standard" ||
-        banner?.isWeapon === true ||
-        (Array.isArray(banner?.passWeapons) && banner.passWeapons.length > 0) ||
-        (Array.isArray(banner?.featuredWeapons) && banner.featuredWeapons.length > 0);
 
     $: featuredItems = (() => {
         if (!banner) return [];
