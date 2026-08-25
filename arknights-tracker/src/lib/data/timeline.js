@@ -1136,5 +1136,20 @@ export const rawEvents = [
     type: "signIn",
     iconPosition: 30,
     version: "1.4"
+  },
+  {
+    id: "ev16-v1.4",
+    title: "events.aForestMantledInSnowSignIn",
+    name: "A Forest Mantled in Snow Sign-In",
+    startTime: "2026-08-26 12:00:00",
+    endTime: "2026-09-01 17:00:00",
+    endTimeAsia: "2026-09-02 04:00:00",
+    icon: "ev16-v1.4.webp",
+    url: "",
+    color: "#8951c9ff",
+    layer: 5,
+    type: "signIn",
+    iconPosition: 30,
+    version: "1.4"
   }
 ];
