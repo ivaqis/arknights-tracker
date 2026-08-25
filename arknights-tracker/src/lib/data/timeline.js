@@ -158,12 +158,13 @@ export const rawEvents = [
     endTime: "2026-03-11 17:00:00",
     endTimeAsia: "2026-03-12 06:00:00",
     icon: "ev10-v1.0.webp",
-    url: "",
+    url: "https://x.com/AKEndfield/status/2013937117659807941?s=20",
     color: "#dacb9f",
     layer: 16,
     type: "protoPass",
     iconPosition: 22,
-    version: "1.0"
+    version: "1.0",
+    passWeapons: ["umbralTorch", "opusEtchFigure", "navigator"]
   },
   {
     id: "ev11-v1.0",

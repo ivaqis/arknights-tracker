@@ -29,6 +29,7 @@
     import NotFound from "$lib/components/NotFound.svelte";
     import TableModal from "$lib/components/modals/TableModal.svelte";
     import WeaponCard from "$lib/components/cards/WeaponCard.svelte";
+    import AscensionIcon from "$lib/components/operators/AscensionIcon.svelte";
 
     function formatBirthDate(raw, lang) {
         if (typeof raw !== "string" || !/^\d{1,2}-\d{1,2}$/.test(raw))
@@ -267,6 +268,14 @@
     let isCumulative = true;
     let isTotalMode = false;
     let isTableCopied = false;
+
+    $: currentAscension = (() => {
+        if (level > 80) return 4;
+        if (level > 60) return 3;
+        if (level > 40) return 2;
+        if (level > 20) return 1;
+        return 0;
+    })();
 
     const audioLanguages = [
         { id: "zh", label: "CN" },
@@ -1090,16 +1099,23 @@
                                     class="w-full sm:flex-1 min-w-0 sm:min-w-[350px] max-w-[550px] bg-white/90 backdrop-blur-md dark:bg-[#383838]/90 dark:border-[#444444] p-6 rounded-2xl shadow-xl border border-white/50 flex flex-col gap-5"
                                 >
                                     <div class="flex flex-col gap-2">
-                                        <div class="flex items-baseline gap-1">
-                                            <span
-                                                class="text-6xl font-sdk font-bold dark:text-[#FDFDFD] text-[#21272C] leading-none"
-                                            >
-                                                {level}
-                                            </span>
-                                            <span
-                                                class="text-xl font-bold text-gray-400 dark:text-[#B7B6B3] uppercase"
-                                                >Lv.</span
-                                            >
+                                        <div class="flex items-center justify-between">
+                                            <div class="flex items-baseline gap-1">
+                                                <span
+                                                    class="text-6xl font-sdk font-bold dark:text-[#FDFDFD] text-[#21272C] leading-none"
+                                                >
+                                                    {level}
+                                                </span>
+                                                <span
+                                                    class="text-xl font-bold text-gray-400 dark:text-[#B7B6B3] uppercase"
+                                                    >Lv.</span
+                                                >
+                                            </div>
+                                            <AscensionIcon
+                                                ascension={currentAscension}
+                                                size={60}
+                                                className="text-[#21272C] dark:text-[#FDFDFD]"
+                                            />
                                         </div>
 
                                         <div
