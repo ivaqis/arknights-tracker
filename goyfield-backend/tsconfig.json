@@ -32,7 +32,9 @@
       "@models/*": ["src/models/*"],
       "@errors/*": ["src/errors/*"],
       "@/*": ["src/*"]
-    }
+    },
+
+    "ignoreDeprecations": "6.0"
   },
   "include": ["./src"],
   "exclude": ["node_modules", "dist"],
