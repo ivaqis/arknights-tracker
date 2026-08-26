@@ -391,7 +391,7 @@ app.post('/api/import', importLimiter, async (req, res) => {
     }
 });
 
-app.post('/api/sync-history', async (req, res) => {
+app.post('/api/sync-history', syncLimiter, async (req, res) => {
     const { uid, serverId, pulls } = req.body;
 
     if (!uid || !pulls || !Array.isArray(pulls)) {
