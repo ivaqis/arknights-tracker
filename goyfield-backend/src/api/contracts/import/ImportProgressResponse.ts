@@ -1,6 +1,6 @@
-import { BannerType } from "@models/banners/BannerType.js";
+import { ImportProgressData } from "@api/contracts/import/ImportProgressData.js";
+import { StreamResponse } from "@api/contracts/StreamResponse.js";
 
-export interface ImportProgressResponse {
-    type: BannerType;
-    count: number;
+export interface ImportProgressResponse extends StreamResponse<ImportProgressData> {
+    type: "progress";
 }

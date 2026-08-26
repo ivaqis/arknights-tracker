@@ -1,8 +1,6 @@
-import { BannersPullsEntity } from "@models/pulls/entities/BannersPullsEntity.js";
+import { PostImportCompleteData } from "@api/contracts/import/PostImportCompleteData.js";
+import { StreamResponse } from "@api/contracts/StreamResponse.js";
 
-export interface PostImportCompleteResponse {
-    profileId: string | null;
-    token: string;
-    serverId: string;
-    pulls: BannersPullsEntity
+export interface PostImportCompleteResponse extends StreamResponse<PostImportCompleteData> {
+    type: "complete";
 }

@@ -6,7 +6,7 @@ import * as core from "express-serve-static-core";
 
 export abstract class StreamController<
     Params extends core.ParamsDictionary = core.ParamsDictionary,
-    ResBody = any,
+    ResBody extends StreamResponse<any> = any,
     ReqBody = any,
     ReqQuery = core.Query
 > {
@@ -26,7 +26,7 @@ export abstract class StreamController<
     public static with<
         T extends StreamController<Params, ResBody, ReqBody, ReqQuery>,
         Params extends core.ParamsDictionary,
-        ResBody,
+        ResBody extends StreamResponse<any>,
         ReqBody,
         ReqQuery
     >(
@@ -63,7 +63,7 @@ export abstract class StreamController<
 
     protected abstract execute(): Promise<void>;
 
-    protected send(data: StreamResponse<ResBody>): void {
+    protected send(data: ResBody | ErrorStreamResponse): void {
         const res = this._res;
 
         res.write(`data: ${JSON.stringify(data)}\n\n`);
