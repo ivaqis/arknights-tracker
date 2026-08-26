@@ -3,7 +3,7 @@ import type { ResponseBody } from "$lib/api/ResponseBody";
 import { config } from "$lib/config";
 
 export async function fetchGlobalBannerStats(bannerId: string): Promise<GlobalBannerStatsResponse | null> {
-    const url = `${config.API_BASE}/v2/global/stats?bannerId=${bannerId}`;
+    const url = `${config.API_BASE}/api/v2/global/stats?bannerId=${bannerId}`;
 
     try {
         const res = await fetch(url);
