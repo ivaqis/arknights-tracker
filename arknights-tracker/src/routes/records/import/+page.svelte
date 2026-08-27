@@ -1,27 +1,21 @@
 <script>
-    import { onMount, onDestroy } from "svelte";
-    import { user, checkSync } from "$lib/stores/cloudStore";
-    import { get } from "svelte/store";
-    import { t } from "$lib/i18n";
     import { goto } from "$app/navigation";
-    import { pullData } from "$lib/stores/pulls";
-    import { parseGachaLog } from "$lib/utils/importUtils";
-    import { currentUid } from "$lib/stores/auth";
-    import { accountStore } from "$lib/stores/accounts";
     import { API_BASE } from "$lib/api";
-    import { currentUiLocale } from "$lib/stores/locale";
-    import { characters } from "$lib/data/characters";
-    import { weapons } from "$lib/data/weapons";
-    import { getInternalBannerType, canonicalizeName } from "$lib/utils/importUtils";
-
-    import LZString from "lz-string";
-
     import Button from "$lib/components/Button.svelte";
     import Checkbox from "$lib/components/Checkbox.svelte";
     import CodeBlock from "$lib/components/CodeBlock.svelte";
-    import Tooltip from "$lib/components/Tooltip.svelte";
     import Icon from "$lib/components/Icon.svelte";
     import ConfirmationModal from "$lib/components/modals/ConfirmationModal.svelte";
+    import Tooltip from "$lib/components/Tooltip.svelte";
+    import { characters } from "$lib/data/characters";
+    import { weapons } from "$lib/data/weapons";
+    import { t } from "$lib/i18n";
+    import { accountStore } from "$lib/stores/accounts";
+    import { pullData } from "$lib/stores/pulls";
+    import { canonicalizeName, getInternalBannerType, parseGachaLog } from "$lib/utils/importUtils";
+    import LZString from "lz-string";
+    import { onDestroy, onMount } from "svelte";
+    import { get } from "svelte/store";
 
     let platformTab = "pc-web";
     let urlInput = "";
