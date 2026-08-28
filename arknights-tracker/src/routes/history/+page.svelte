@@ -54,11 +54,11 @@
     const sortOptions = [
         {
             value: "max_wait",
-            label: $t("systemNames.sortByWait") || "By days without rerun",
+            label: $t("systemNames.sortByWait"),
         },
         {
             value: "release",
-            label: $t("systemNames.sortByRelease") || "By release date",
+            label: $t("systemNames.sortByRelease"),
         },
     ];
 
@@ -91,6 +91,7 @@
                         startMs: parseDate(b.startTime).getTime(),
                         endMs: parseDate(b.endTime).getTime(),
                     }))
+                    .filter((b) => b.startMs <= now.getTime())
                     .sort((a, b) => a.startMs - b.startMs)
                     .map((b, idx, arr) => {
                         const startVIndex = Math.max(
@@ -137,8 +138,15 @@
                 const isCurrentlyActive =
                     now.getTime() >= lastBanner.startMs &&
                     now.getTime() <= lastBanner.endMs;
-                const latestVersion = versions[versions.length - 1]?.version;
-                const isCurrentVersion = lastBanner.version === latestVersion;
+                const lastVersionIndex = versions.findIndex(
+                    (v) => v.version === lastBanner.version,
+                );
+                const currentVersionIndex = versions.reduce(
+                    (latestIdx, v, idx) =>
+                        v.time <= now.getTime() ? idx : latestIdx,
+                    0,
+                );
+                const isCurrentVersion = lastVersionIndex === currentVersionIndex;
                 const diffMs = now.getTime() - lastBanner.endMs;
                 const daysWaiting = Math.round(diffMs / 86400000);
                 const daysLeft = isCurrentlyActive
@@ -149,14 +157,11 @@
                           (now.getTime() - lastBanner.startMs) / 86400000,
                       )
                     : 0;
-                const lastVersionIndex = versions.findIndex(
-                    (v) => v.version === lastBanner.version,
-                );
                 let versionsWaiting = 0;
                 if (lastVersionIndex !== -1 && !isCurrentlyActive) {
                     versionsWaiting = Math.max(
                         0,
-                        versions.length - 1 - lastVersionIndex,
+                        currentVersionIndex - lastVersionIndex,
                     );
                 }
 
@@ -375,8 +380,7 @@
                                         >
                                             {banner.version}
                                             • <span class="text-green-400"
-                                                >{$t("status.active") ||
-                                                    "Active"}</span
+                                                >{$t("status.active")}</span
                                             >
                                         </span>
                                         <span
@@ -405,7 +409,7 @@
                                     class="absolute z-30 px-2 py-0.5 bg-gray-200/80 dark:bg-[#383838]/85 backdrop-blur-sm rounded-full text-[9px] font-bold text-gray-600 dark:text-gray-300 pointer-events-none shadow-sm border border-gray-300 dark:border-[#4c4c4c]"
                                     style="left: {centerX}px; transform: translateX(-50%);"
                                 >
-                                    {banner.gapDays}{$t("systemNames.d") || "d"}
+                                    {banner.gapDays}{$t("systemNames.d")}
                                 </div>
                             {/if}
                         {/each}
@@ -450,7 +454,7 @@
                                             <span
                                                 class="text-[9px] font-bold text-green-400 whitespace-nowrap"
                                             >
-                                                {lastBanner.version} • {$t("status.active") || "Активен"}
+                                                {lastBanner.version} • {$t("status.active")}
                                             </span>
                                             <span
                                                 class="text-[9px] font-bold whitespace-nowrap"

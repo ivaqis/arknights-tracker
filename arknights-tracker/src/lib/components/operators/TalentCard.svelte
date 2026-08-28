@@ -130,7 +130,7 @@
     <div class="flex-1 flex flex-col gap-2">
         <div class="flex items-center gap-2 mb-1">
             <span
-                class="px-2 py-0.5 bg-gray-100 dark:text-[#E4E4E4] dark:bg-[#2C2C2C] rounded text-[10px] font-bold uppercase text-gray-500 tracking-wider"
+                class="px-2 py-0.5 bg-gray-200 dark:text-[#E4E4E4] dark:bg-[#2C2C2C] rounded text-[10px] font-bold uppercase text-gray-500 tracking-wider"
             >
                 {$t(
                     type === "indicator"

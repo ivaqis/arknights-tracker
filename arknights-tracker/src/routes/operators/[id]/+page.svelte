@@ -1114,7 +1114,7 @@
                                             <AscensionIcon
                                                 ascension={currentAscension}
                                                 size={60}
-                                                className="text-[#21272C] dark:text-[#FDFDFD]"
+                                                className="text-[#FDFDFD]"
                                             />
                                         </div>
 
@@ -2149,7 +2149,7 @@
                                 class="flex flex-col gap-4 animate-fadeIn w-full relative"
                             >
                                 <div
-                                    class="flex items-center justify-between gap-3 flex-wrap"
+                                    class="flex items-center justify-end gap-3 flex-wrap"
                                 >
                                     <h2
                                         class="text-3xl dark:text-[#FDFDFD] font-bold text-[#21272C] font-sdk"
@@ -2199,7 +2199,7 @@
                                                                 )}
                                                             class="w-10 h-10 rounded-xl flex items-center justify-center transition-all cursor-pointer shadow-sm {isPlaying
                                                                 ? 'bg-[#FFD800] text-black scale-105'
-                                                                : 'bg-gray-100 dark:bg-[#444] text-gray-700 dark:text-gray-200 hover:bg-[#FFD800] hover:text-black dark:hover:bg-[#FFD800] dark:hover:text-black'}"
+                                                                : 'bg-gray-200 dark:bg-[#444] text-gray-700 dark:text-gray-200 hover:bg-[#FFD800] hover:text-black dark:hover:bg-[#FFD800] dark:hover:text-black'}"
                                                             title={isPlaying
                                                                 ? "Pause"
                                                                 : "Play"}
@@ -2226,7 +2226,7 @@
                                                                 downloadAudio(
                                                                     line.voId,
                                                                 )}
-                                                            class="w-9 h-9 rounded-xl flex items-center justify-center transition-all cursor-pointer text-gray-500 dark:text-gray-400 hover:text-black dark:hover:text-white bg-gray-100/60 dark:bg-[#444]/60 hover:bg-[#FFD800] hover:text-black dark:hover:bg-[#FFD800] dark:hover:text-black"
+                                                            class="w-9 h-9 rounded-xl flex items-center justify-center transition-all cursor-pointer text-gray-500 dark:text-gray-400 hover:text-black dark:hover:text-black bg-gray-200/60 dark:bg-[#444]/60 hover:bg-[#FFD800] hover:text-black dark:hover:bg-[#FFD800] dark:hover:text-black"
                                                             title="Download Audio"
                                                         >
                                                             <Icon
@@ -2242,7 +2242,7 @@
                                                 >
                                                     {#if line.title}
                                                         <div
-                                                            class="font-bold text-base text-[#21272C] dark:text-[#E4E4E4] font-sdk border-b border-gray-100 dark:border-[#444444] pb-1.5"
+                                                            class="font-bold text-[#21272C] dark:text-[#E4E4E4] font-sdk border-b border-gray-100 dark:border-[#444444] pb-1.5"
                                                         >
                                                             {line.title}
                                                         </div>

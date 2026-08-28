@@ -788,68 +788,88 @@
 
         <div class="grid grid-cols-2 gap-4">
           <div class="flex flex-col gap-1 items-center md:items-left justify-between">
-            <div class="flex items-center justify-center gap-1.5 flex-wrap">
-              <span class="text-xs font-bold text-gray-800 dark:text-gray-100 select-none leading-none">
-                {$t("home.currentWeek") || "Current Week"}
-              </span>
-              <span class="px-1.5 py-0.5 rounded text-[9px] font-bold font-nums bg-[#05D774]/15 text-[#05D774] border border-[#05D774]/10 select-none inline-block leading-none">
-                {getWeeklyResetCountdown(now)}
-              </span>
-            </div>
-            <span class="text-[9px] text-gray-400 dark:text-[#9CA3AF] font-medium font-nums leading-none select-none mt-1">
-              ({formatWeekLabel(currentWeekConfig, $currentUiLocale)})
-            </span>
-            <div class="flex gap-2.5 justify-center md:justify-left flex-wrap mt-2">
-              {#if currentWeekly6}
-                <div class="flex flex-col items-center gap-1.5 shrink-0">
-                  <WeaponCard weapon={currentWeekly6} variant="small" isEquipment={false} />
-                  <div class="flex items-center gap-0.5 text-[10px] font-black text-gray-800 dark:text-white leading-none font-nums">
-                    <Icon name="arsenalTicket" class="w-3.5 h-3.5 text-white" style="filter: drop-shadow(0 0 2px #3b82f6) drop-shadow(0 0 4px #3b82f6);" />
-                    <span>2480</span>
-                  </div>
-                </div>
-              {/if}
-              {#if currentWeekly5}
-                <div class="flex flex-col items-center gap-1.5 shrink-0">
-                  <WeaponCard weapon={currentWeekly5} variant="small" isEquipment={false} />
-                  <div class="flex items-center gap-0.5 text-[10px] font-black text-gray-800 dark:text-white leading-none font-nums">
-                    <Icon name="arsenalTicket" class="w-3.5 h-3.5 text-white" style="filter: drop-shadow(0 0 2px #3b82f6) drop-shadow(0 0 4px #3b82f6);" />
-                    <span>400</span>
-                  </div>
-                </div>
+            <div class="flex flex-col gap-1 items-center">
+              <div class="flex items-center justify-center gap-1.5 flex-wrap">
+                <span class="text-xs font-bold text-gray-800 dark:text-gray-100 select-none leading-none">
+                  {$t("home.currentWeek")}
+                </span>
+                <span class="px-1.5 py-0.5 rounded text-[9px] font-bold font-nums bg-[#05D774]/15 text-[#05D774] border border-[#05D774]/10 select-none inline-block leading-none">
+                  {getWeeklyResetCountdown(now)}
+                </span>
+              </div>
+              {#if currentWeekConfig}
+                <span class="text-[9px] text-gray-400 dark:text-[#9CA3AF] font-medium font-nums leading-none select-none mt-1">
+                  ({formatWeekLabel(currentWeekConfig, $currentUiLocale)})
+                </span>
               {/if}
             </div>
+            {#if currentWeekly6 || currentWeekly5}
+              <div class="flex gap-2.5 justify-center md:justify-left flex-wrap mt-2">
+                {#if currentWeekly6}
+                  <div class="flex flex-col items-center gap-1.5 shrink-0">
+                    <WeaponCard weapon={currentWeekly6} variant="small" isEquipment={false} />
+                    <div class="flex items-center gap-0.5 text-[10px] font-black text-gray-800 dark:text-white leading-none font-nums">
+                      <Icon name="arsenalTicket" class="w-3.5 h-3.5 text-white" style="filter: drop-shadow(0 0 2px #3b82f6) drop-shadow(0 0 4px #3b82f6);" />
+                      <span>2480</span>
+                    </div>
+                  </div>
+                {/if}
+                {#if currentWeekly5}
+                  <div class="flex flex-col items-center gap-1.5 shrink-0">
+                    <WeaponCard weapon={currentWeekly5} variant="small" isEquipment={false} />
+                    <div class="flex items-center gap-0.5 text-[10px] font-black text-gray-800 dark:text-white leading-none font-nums">
+                      <Icon name="arsenalTicket" class="w-3.5 h-3.5 text-white" style="filter: drop-shadow(0 0 2px #3b82f6) drop-shadow(0 0 4px #3b82f6);" />
+                      <span>400</span>
+                    </div>
+                  </div>
+                {/if}
+              </div>
+            {:else}
+              <div class="flex-1 flex flex-col items-center justify-center min-h-[96px] py-3 text-gray-400 dark:text-[#7A7A7A] w-full">
+                <Icon name="noData" class="w-8 h-8 mb-1.5 opacity-40" />
+                <span class="text-xs font-medium">{$t("global.noData")}</span>
+              </div>
+            {/if}
           </div>
 
           <div class="flex flex-col gap-1 items-center md:items-left justify-between">
             <div class="flex flex-col gap-1 items-center">
               <span class="text-xs font-bold text-gray-800 dark:text-gray-100 select-none leading-none">
-                {$t("home.nextWeek") || "Next Week"}
+                {$t("home.nextWeek")}
               </span>
-              <span class="text-[9px] text-gray-400 dark:text-[#9CA3AF] font-medium font-nums leading-none select-none mt-1">
-                ({formatWeekLabel(nextWeekConfig, $currentUiLocale)})
-              </span>
-            </div>
-            <div class="flex gap-2.5 flex-wrap justify-center md:justify-left mt-2">
-              {#if nextWeekly6}
-                <div class="flex flex-col items-center gap-1.5 shrink-0">
-                  <WeaponCard weapon={nextWeekly6} variant="small" isEquipment={false} />
-                  <div class="flex items-center gap-0.5 text-[10px] font-black text-gray-800 dark:text-white leading-none font-nums">
-                    <Icon name="arsenalTicket" class="w-3.5 h-3.5 text-white" style="filter: drop-shadow(0 0 2px #3b82f6) drop-shadow(0 0 4px #3b82f6);" />
-                    <span>2480</span>
-                  </div>
-                </div>
-              {/if}
-              {#if nextWeekly5}
-                <div class="flex flex-col items-center gap-1.5 shrink-0">
-                  <WeaponCard weapon={nextWeekly5} variant="small" isEquipment={false} />
-                  <div class="flex items-center gap-0.5 text-[10px] font-black text-gray-800 dark:text-white leading-none font-nums">
-                    <Icon name="arsenalTicket" class="w-3.5 h-3.5 text-white" style="filter: drop-shadow(0 0 2px #3b82f6) drop-shadow(0 0 4px #3b82f6);" />
-                    <span>400</span>
-                  </div>
-                </div>
+              {#if nextWeekConfig}
+                <span class="text-[9px] text-gray-400 dark:text-[#9CA3AF] font-medium font-nums leading-none select-none mt-1">
+                  ({formatWeekLabel(nextWeekConfig, $currentUiLocale)})
+                </span>
               {/if}
             </div>
+            {#if nextWeekly6 || nextWeekly5}
+              <div class="flex gap-2.5 flex-wrap justify-center md:justify-left mt-2">
+                {#if nextWeekly6}
+                  <div class="flex flex-col items-center gap-1.5 shrink-0">
+                    <WeaponCard weapon={nextWeekly6} variant="small" isEquipment={false} />
+                    <div class="flex items-center gap-0.5 text-[10px] font-black text-gray-800 dark:text-white leading-none font-nums">
+                      <Icon name="arsenalTicket" class="w-3.5 h-3.5 text-white" style="filter: drop-shadow(0 0 2px #3b82f6) drop-shadow(0 0 4px #3b82f6);" />
+                      <span>2480</span>
+                    </div>
+                  </div>
+                {/if}
+                {#if nextWeekly5}
+                  <div class="flex flex-col items-center gap-1.5 shrink-0">
+                    <WeaponCard weapon={nextWeekly5} variant="small" isEquipment={false} />
+                    <div class="flex items-center gap-0.5 text-[10px] font-black text-gray-800 dark:text-white leading-none font-nums">
+                      <Icon name="arsenalTicket" class="w-3.5 h-3.5 text-white" style="filter: drop-shadow(0 0 2px #3b82f6) drop-shadow(0 0 4px #3b82f6);" />
+                      <span>400</span>
+                    </div>
+                  </div>
+                {/if}
+              </div>
+            {:else}
+              <div class="flex-1 flex flex-col items-center justify-center min-h-[96px] py-3 text-gray-400 dark:text-[#7A7A7A] w-full">
+                <Icon name="noData" class="w-8 h-8 mb-1.5 opacity-40" />
+                <span class="text-xs font-medium">{$t("global.noData")}</span>
+              </div>
+            {/if}
           </div>
         </div>
 
@@ -857,40 +877,54 @@
           <div class="flex flex-col gap-1 items-center md:items-left justify-between">
             <div class="flex items-center justify-center gap-1.5 flex-wrap">
               <span class="text-xs font-bold text-gray-800 dark:text-gray-100 select-none leading-none">
-                {$t("home.today") || "Today"}
+                {$t("home.today")}
               </span>
               <span class="px-1.5 py-0.5 rounded text-[9px] font-bold font-nums bg-[#05D774]/15 text-[#05D774] border border-[#05D774]/10 select-none inline-block leading-none">
                 {getDailyResetCountdown(now)}
               </span>
             </div>
-            <div class="flex gap-2.5 flex-wrap justify-center md:justify-left mt-2">
-              {#each todayWeapons as wpn}
-                <div class="flex flex-col items-center gap-1.5 shrink-0">
-                  <WeaponCard weapon={wpn} variant="small" isEquipment={false} />
-                  <div class="flex items-center gap-0.5 text-[10px] font-black text-gray-800 dark:text-white leading-none font-nums">
-                    <Icon name="arsenalTicket" class="w-3.5 h-3.5 text-white" style="filter: drop-shadow(0 0 2px #3b82f6) drop-shadow(0 0 4px #3b82f6);" />
-                    <span>{wpn.rarity === 6 ? 2480 : 400}</span>
+            {#if todayWeapons && todayWeapons.length > 0}
+              <div class="flex gap-2.5 flex-wrap justify-center md:justify-left mt-2">
+                {#each todayWeapons as wpn}
+                  <div class="flex flex-col items-center gap-1.5 shrink-0">
+                    <WeaponCard weapon={wpn} variant="small" isEquipment={false} />
+                    <div class="flex items-center gap-0.5 text-[10px] font-black text-gray-800 dark:text-white leading-none font-nums">
+                      <Icon name="arsenalTicket" class="w-3.5 h-3.5 text-white" style="filter: drop-shadow(0 0 2px #3b82f6) drop-shadow(0 0 4px #3b82f6);" />
+                      <span>{wpn.rarity === 6 ? 2480 : 400}</span>
+                    </div>
                   </div>
-                </div>
-              {/each}
-            </div>
+                {/each}
+              </div>
+            {:else}
+              <div class="flex-1 flex flex-col items-center justify-center min-h-[96px] py-3 text-gray-400 dark:text-[#7A7A7A] w-full">
+                <Icon name="noData" class="w-8 h-8 mb-1.5 opacity-40" />
+                <span class="text-xs font-medium">{$t("global.noData")}</span>
+              </div>
+            {/if}
           </div>
 
           <div class="flex flex-col gap-1 items-center md:items-left justify-between">
             <span class="text-xs font-bold text-gray-800 dark:text-gray-100 select-none leading-none">
-              {$t("home.tomorrow") || "Tomorrow"}
+              {$t("home.tomorrow")}
             </span>
-            <div class="flex gap-2.5 flex-wrap justify-center md:justify-left mt-2">
-              {#each tomorrowWeapons as wpn}
-                <div class="flex flex-col items-center gap-1.5 shrink-0">
-                  <WeaponCard weapon={wpn} variant="small" isEquipment={false} />
-                  <div class="flex items-center gap-0.5 text-[10px] font-black text-gray-800 dark:text-white leading-none font-nums">
-                    <Icon name="arsenalTicket" class="w-3.5 h-3.5 text-white" style="filter: drop-shadow(0 0 2px #3b82f6) drop-shadow(0 0 4px #3b82f6);" />
-                    <span>{wpn.rarity === 6 ? 2480 : 400}</span>
+            {#if tomorrowWeapons && tomorrowWeapons.length > 0}
+              <div class="flex gap-2.5 flex-wrap justify-center md:justify-left mt-2">
+                {#each tomorrowWeapons as wpn}
+                  <div class="flex flex-col items-center gap-1.5 shrink-0">
+                    <WeaponCard weapon={wpn} variant="small" isEquipment={false} />
+                    <div class="flex items-center gap-0.5 text-[10px] font-black text-gray-800 dark:text-white leading-none font-nums">
+                      <Icon name="arsenalTicket" class="w-3.5 h-3.5 text-white" style="filter: drop-shadow(0 0 2px #3b82f6) drop-shadow(0 0 4px #3b82f6);" />
+                      <span>{wpn.rarity === 6 ? 2480 : 400}</span>
+                    </div>
                   </div>
-                </div>
-              {/each}
-            </div>
+                {/each}
+              </div>
+            {:else}
+              <div class="flex-1 flex flex-col items-center justify-center min-h-[96px] py-3 text-gray-400 dark:text-[#7A7A7A] w-full">
+                <Icon name="noData" class="w-8 h-8 mb-1.5 opacity-40" />
+                <span class="text-xs font-medium">{$t("global.noData")}</span>
+              </div>
+            {/if}
           </div>
         </div>
       </div>
@@ -1032,7 +1066,7 @@
             <thead class="sticky top-0 shadow-sm text-xs font-bold text-gray-600 dark:text-[#E4E4E4] z-40">
                 <tr>
                     <th class="sticky top-0 z-40 py-3 px-2 border-b dark:border-[#444] bg-gray-50 dark:bg-[#383838] text-[11px] font-bold">№</th>
-                    <th class="sticky top-0 z-40 py-3 px-2 border-b dark:border-[#444] bg-gray-50 dark:bg-[#383838] text-[11px] font-bold">{$t("home.duration") || "Dates"}</th>
+                    <th class="sticky top-0 z-40 py-3 px-2 border-b dark:border-[#444] bg-gray-50 dark:bg-[#383838] text-[11px] font-bold">{$t("home.duration")}</th>
                     <th class="sticky top-0 z-40 py-3 px-2 border-b dark:border-[#444] bg-gray-50 dark:bg-[#383838]">
                         <div class="flex items-center justify-center gap-0.5 select-none">
                             <span class="font-nums font-black text-amber-500 text-[11px]">6</span>
@@ -1045,13 +1079,13 @@
                             <Icon name="star" class="w-3 h-3 fill-yellow-500 text-yellow-500" />
                         </div>
                     </th>
-                    <th class="sticky top-0 z-40 py-3 px-2 border-b dark:border-[#444] bg-gray-50 dark:bg-[#383838] text-[11px] font-bold">{$t("weekdays.mon") || "Mon"}</th>
-                    <th class="sticky top-0 z-40 py-3 px-2 border-b dark:border-[#444] bg-gray-50 dark:bg-[#383838] text-[11px] font-bold">{$t("weekdays.tue") || "Tue"}</th>
-                    <th class="sticky top-0 z-40 py-3 px-2 border-b dark:border-[#444] bg-gray-50 dark:bg-[#383838] text-[11px] font-bold">{$t("weekdays.wed") || "Wed"}</th>
-                    <th class="sticky top-0 z-40 py-3 px-2 border-b dark:border-[#444] bg-gray-50 dark:bg-[#383838] text-[11px] font-bold">{$t("weekdays.thu") || "Thu"}</th>
-                    <th class="sticky top-0 z-40 py-3 px-2 border-b dark:border-[#444] bg-gray-50 dark:bg-[#383838] text-[11px] font-bold">{$t("weekdays.fri") || "Fri"}</th>
-                    <th class="sticky top-0 z-40 py-3 px-2 border-b dark:border-[#444] bg-gray-50 dark:bg-[#383838] text-[11px] font-bold">{$t("weekdays.sat") || "Sat"}</th>
-                    <th class="sticky top-0 z-40 py-3 px-2 border-b dark:border-[#444] bg-gray-50 dark:bg-[#383838] text-[11px] font-bold">{$t("weekdays.sun") || "Sun"}</th>
+                    <th class="sticky top-0 z-40 py-3 px-2 border-b dark:border-[#444] bg-gray-50 dark:bg-[#383838] text-[11px] font-bold">{$t("weekdays.mon")}</th>
+                    <th class="sticky top-0 z-40 py-3 px-2 border-b dark:border-[#444] bg-gray-50 dark:bg-[#383838] text-[11px] font-bold">{$t("weekdays.tue")}</th>
+                    <th class="sticky top-0 z-40 py-3 px-2 border-b dark:border-[#444] bg-gray-50 dark:bg-[#383838] text-[11px] font-bold">{$t("weekdays.wed")}</th>
+                    <th class="sticky top-0 z-40 py-3 px-2 border-b dark:border-[#444] bg-gray-50 dark:bg-[#383838] text-[11px] font-bold">{$t("weekdays.thu")}</th>
+                    <th class="sticky top-0 z-40 py-3 px-2 border-b dark:border-[#444] bg-gray-50 dark:bg-[#383838] text-[11px] font-bold">{$t("weekdays.fri")}</th>
+                    <th class="sticky top-0 z-40 py-3 px-2 border-b dark:border-[#444] bg-gray-50 dark:bg-[#383838] text-[11px] font-bold">{$t("weekdays.sat")}</th>
+                    <th class="sticky top-0 z-40 py-3 px-2 border-b dark:border-[#444] bg-gray-50 dark:bg-[#383838] text-[11px] font-bold">{$t("weekdays.sun")}</th>
                 </tr>
             </thead>
             <tbody class="text-[11px] font-nums text-gray-800 dark:text-gray-300">
