@@ -1,40 +1,49 @@
 // src/lib/stores/accounts.js
 
-import { writable, get } from 'svelte/store';
-import { browser } from '$app/environment';
-import { currentUid } from './auth';
+import { writable, get } from "svelte/store";
+import { browser } from "$app/environment";
+import { currentUid } from "$lib/stores/auth.js";
 
-const ACCOUNTS_KEY = 'ark_tracker_accounts_meta';
-const SELECTED_ID_KEY = 'ark_tracker_selected_account_id';
+const ACCOUNTS_KEY = "ark_tracker_accounts_meta";
+const SELECTED_ID_KEY = "ark_tracker_selected_account_id";
 
 const defaultAccounts = [
-    { id: 'main', name: 'Main Account', serverUid: null }
+    {
+        id: "main",
+        name: "Main Account",
+        serverUid: null
+    }
 ];
 
 function generateId() {
     if (browser && self.crypto && self.crypto.randomUUID) {
         return self.crypto.randomUUID();
     }
+
     return Date.now().toString(36) + Math.random().toString(36).substr(2);
 }
 
 function createAccountStore() {
     let initialAccounts = defaultAccounts;
-    let initialSelected = 'main';
+    let initialSelected = "main";
 
     if (browser) {
         const storedAccounts = localStorage.getItem(ACCOUNTS_KEY);
+
         if (storedAccounts) {
             try {
                 initialAccounts = JSON.parse(storedAccounts);
-            } catch (e) { console.error(e); }
+            } catch (e) {
+                console.error(e);
+            }
         }
 
         const storedSelected = localStorage.getItem(SELECTED_ID_KEY);
+
         if (storedSelected && initialAccounts.find(a => a.id === storedSelected)) {
             initialSelected = storedSelected;
         } else {
-            initialSelected = initialAccounts[0]?.id || 'main';
+            initialSelected = initialAccounts[0]?.id || "main";
         }
     }
 
@@ -43,14 +52,14 @@ function createAccountStore() {
 
     const syncAuthStore = (accts, selId) => {
         const currentAcc = accts.find(a => a.id === selId);
-        
+
         if (currentAcc && currentAcc.serverUid) {
             console.log(`[Accounts] Switching to UID: ${currentAcc.serverUid}`);
             currentUid.set(currentAcc.serverUid);
             if (browser) localStorage.setItem("user_uid", currentAcc.serverUid);
         } else {
             console.log(`[Accounts] No Server UID for this account.`);
-            currentUid.set(null); 
+            currentUid.set(null);
             if (browser) localStorage.removeItem("user_uid");
         }
     };
@@ -75,7 +84,7 @@ function createAccountStore() {
             accounts.update(list => {
                 let maxNum = 0;
                 const regex = /^Account\s+(\d+)$/;
-                
+
                 list.forEach(a => {
                     const match = a.name.match(regex);
                     if (match) {
@@ -86,31 +95,31 @@ function createAccountStore() {
 
                 const newName = `Account ${maxNum + 1}`;
                 const newId = generateId();
-                
+
                 const newAccount = {
                     id: newId,
                     name: newName,
                     serverUid: null,
-                    serverId: '3'
+                    serverId: "3"
                 };
 
                 selectedId.set(newId);
-                
+
                 return [...list, newAccount];
             });
         },
 
         addAccount: (gameUid, nickname, serverId = null) => {
-            const effectiveServerId = serverId || '3';
+            const effectiveServerId = serverId || "3";
             const currentSelectedId = get(selectedId);
 
             accounts.update(list => {
                 const existingIndex = list.findIndex(a => a.serverUid === gameUid);
                 if (existingIndex >= 0) {
                     const newList = [...list];
-                    newList[existingIndex] = { 
-                        ...newList[existingIndex], 
-                        serverId: effectiveServerId 
+                    newList[existingIndex] = {
+                        ...newList[existingIndex],
+                        serverId: effectiveServerId
                     };
                     selectedId.set(newList[existingIndex].id);
                     return newList;
@@ -131,12 +140,12 @@ function createAccountStore() {
                     }
                 }
 
-                const newId = generateId(); 
-                const newList = [...list, { 
-                    id: newId, 
+                const newId = generateId();
+                const newList = [...list, {
+                    id: newId,
                     name: nickname || `Account ${list.length + 1}`,
                     serverId: effectiveServerId,
-                    serverUid: gameUid 
+                    serverUid: gameUid
                 }];
                 selectedId.set(newId);
                 return newList;
@@ -179,26 +188,26 @@ function createAccountStore() {
                         if (updates.name !== undefined) newProps.name = updates.name;
                         if (updates.uid !== undefined) newProps.serverUid = updates.uid;
                         if (updates.serverId !== undefined) newProps.serverId = updates.serverId;
-                        
+
                         return { ...acc, ...newProps };
                     }
                     return acc;
                 });
             });
-            
+
             if (get(selectedId) === id && updates.uid) {
-                 syncAuthStore(get(accounts), id);
+                syncAuthStore(get(accounts), id);
             }
         },
 
         selectAccount: (id) => {
             selectedId.set(id);
         },
-        
+
         setServerUid: (serverUid) => {
             const currentSelected = get(selectedId);
             console.log(`[Accounts] Linking UID ${serverUid} to Account ${currentSelected}`);
-            
+
             accounts.update(list => {
                 return list.map(acc => {
                     if (acc.id === currentSelected) {
@@ -210,29 +219,29 @@ function createAccountStore() {
         },
 
         clearCurrentData: () => {
-             const current = get(selectedId);
-             if (browser && current) {
-                 localStorage.removeItem(`ark_tracker_data_${current}`);
-                 
-                 accounts.update(list => {
+            const current = get(selectedId);
+            if (browser && current) {
+                localStorage.removeItem(`ark_tracker_data_${current}`);
+
+                accounts.update(list => {
                     return list.map(acc => {
                         if (acc.id === current) {
-                            return { 
-                                ...acc, 
+                            return {
+                                ...acc,
                                 serverUid: null,
-                                serverId: '3'
+                                serverId: "3"
                             };
                         }
                         return acc;
                     });
-                 });
+                });
 
-                 currentUid.set(null);
-                 if (browser) localStorage.removeItem("user_uid");
+                currentUid.set(null);
+                if (browser) localStorage.removeItem("user_uid");
 
-                 window.dispatchEvent(new CustomEvent('ark_tracker_clear_data', { detail: { id: current } }));
-                 console.log("[Accounts] Account fully cleared.");
-             }
+                window.dispatchEvent(new CustomEvent("ark_tracker_clear_data", { detail: { id: current } }));
+                console.log("[Accounts] Account fully cleared.");
+            }
         }
     };
 }
