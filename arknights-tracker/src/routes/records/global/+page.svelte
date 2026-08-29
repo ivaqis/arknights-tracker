@@ -992,7 +992,7 @@
                             >
                                 <Icon
                                     name="noData"
-                                    className="w-8 h-8 mb-2 opacity-30"
+                                    class="w-7 h-7 mb-2 opacity-30"
                                 />
                                 <span class="text-xs font-medium opacity-50"
                                     >{$t("global.noData") || "No Data"}</span
@@ -1094,7 +1094,7 @@
                         >
                             <Icon
                                 name="noData"
-                                className="w-8 h-8 mb-2 opacity-50"
+                                class="w-7 h-7 mb-2 opacity-50"
                             />
                             <span class="text-xs"
                                 >{$t("global.noData") || "No Data"}</span
@@ -1211,7 +1211,7 @@
                                             >
                                                 <Icon
                                                     name="noData"
-                                                    className="w-8 h-8 opacity-50"
+                                                    class="w-7 h-7 opacity-50"
                                                 />
                                                 <span class="text-xs"
                                                     >{$t("global.noData") ||
@@ -1319,7 +1319,7 @@
                                             >
                                                 <Icon
                                                     name="noData"
-                                                    className="w-8 h-8 opacity-50"
+                                                    class="w-7 h-7 opacity-50"
                                                 />
                                                 <span class="text-xs"
                                                     >{$t("global.noData") ||
