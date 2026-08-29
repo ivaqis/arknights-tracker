@@ -1148,7 +1148,7 @@ export const rawEvents = [
   },
   {
     id: "ev16-v1.4",
-    title: "events.aForestMantledInSnowSignIn",
+    title: "events.aForestMantledInSnow",
     name: "A Forest Mantled in Snow Sign-In",
     startTime: "2026-08-26 12:00:00",
     endTime: "2026-09-01 17:00:00",

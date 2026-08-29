@@ -524,9 +524,9 @@
                                 </div>
                             </Tooltip>
                             <div class="w-[2px] h-5 bg-gray-300 dark:bg-[#555] rounded"></div>
-                            <div class="flex -space-x-1">
+                            <div class="flex">
                                 {#each Array(rarity || 1) as _}
-                                    <Icon name="strokeStar" class="w-9 h-9" style="color: {rarityColor}; stroke-opacity: 100%;" />
+                                    <Icon name="star" class="w-8 h-8" style="color: {rarityColor};" />
                                 {/each}
                             </div>
                         </div>

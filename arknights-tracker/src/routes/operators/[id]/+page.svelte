@@ -951,12 +951,12 @@
                             class="hidden md:block w-[1px] h-8 bg-gray-300 dark:bg-gray-500"
                         ></div>
 
-                        <div class="flex items-center gap-0 -space-x-1">
+                        <div class="flex items-center gap-0">
                             {#each Array(char.rarity || 1) as _}
                                 <Icon
-                                    name="strokeStar"
-                                    class="w-10 h-10"
-                                    style="color: {rarityColor}; stroke-opacity: 50%"
+                                    name="star"
+                                    class="w-9 h-9"
+                                    style="color: {rarityColor};"
                                 />
                             {/each}
                         </div>

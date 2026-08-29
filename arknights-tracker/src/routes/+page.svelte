@@ -249,7 +249,7 @@
     .map((e) => ({
       ...e,
       badge: getEventBadge(e),
-      name: $t(e.title) !== e.title ? $t(e.title) : e.title,
+      name: $t(e.title) !== e.title ? $t(e.title) : e.name || e.title,
     }))
     .sort((a, b) => {
       const isAPerm = a.type === "inGamePermanent";
@@ -505,7 +505,7 @@
                   activeBanners.length;
               }}
             >
-              <Icon name="chevronLeft" className="w-6 h-6" />
+              <Icon name="chevronLeft" class="w-5 h-5" />
             </button>
             <button
               type="button"
@@ -516,7 +516,7 @@
                   (currentBannerIndex + 1) % activeBanners.length;
               }}
             >
-              <Icon name="chevronRight" className="w-6 h-6" />
+              <Icon name="chevronRight" class="w-5 h-5" />
             </button>
           {:else}
             <div
@@ -610,7 +610,7 @@
                     <div
                       class="font-bold text-[13px] text-white truncate w-full drop-shadow-md"
                     >
-                      {$t(event.title) || event.title}
+                      {event.name}
                     </div>
                   </div>
                   {#if event.displayEndTime && event.type !== "inGamePermanent"}

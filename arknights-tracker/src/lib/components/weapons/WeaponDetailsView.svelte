@@ -1025,7 +1025,7 @@
                             {/if}
                         </div>
 
-                        <div class="flex items-center gap-4">
+                        <div class="flex items-center gap-3">
                             <Tooltip text={weaponTypeLabel}>
                                 <div
                                     class="w-9 h-9 rounded bg-[#21272C] flex items-center justify-center shadow-sm"
@@ -1039,12 +1039,12 @@
                             <div
                                 class="w-[2px] h-6 bg-gray-300 dark:bg-[#555] rounded"
                             ></div>
-                            <div class="flex -space-x-1">
+                            <div class="flex">
                                 {#each Array(weaponBase.rarity || 5) as _}
                                     <Icon
-                                        name="strokeStar"
-                                        class="w-9 h-9"
-                                        style="color: {rarityColor}; stroke-opacity: 100%;"
+                                        name="star"
+                                        class="w-8 h-8"
+                                        style="color: {rarityColor};"
                                     />
                                 {/each}
                             </div>

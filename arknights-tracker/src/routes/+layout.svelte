@@ -49,7 +49,7 @@
 
     onMount(() => {
         if (browser) {
-            fetch('/images/icons.svg?v=5')
+            fetch('/images/icons.svg?v=6')
                 .then(res => {
                     if (res.ok) return res.text();
                     throw new Error('Failed to load icons.svg');

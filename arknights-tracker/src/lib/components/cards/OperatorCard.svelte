@@ -282,10 +282,7 @@
                                 class="relative z-10 w-full h-full drop-shadow-sm"
                                 style:color={rarityColor}
                             >
-                                <Icon
-                                    name="strokeStar"
-                                    class="w-5 h-5 fill-current"
-                                />
+                                <Icon name="star" class="w-5 h-5 fill-current" />
                             </div>
                         </div>
                     {/each}
