@@ -158,7 +158,7 @@
 
                 <Icon
                     name="noData"
-                    className="w-8 h-8 mb-2 opacity-50"
+                    class="w-8 h-8 mb-2 opacity-50"
                 />
 
                 <span class="text-xs">
