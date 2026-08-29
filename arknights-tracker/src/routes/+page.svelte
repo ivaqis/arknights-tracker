@@ -6,8 +6,6 @@
   import { banners } from "$lib/data/banners.js";
   import { promocodes } from "$lib/data/promocodes.js";
   import { rawEvents } from "$lib/data/timeline.js";
-  import { currencies } from "$lib/data/items/currencies";
-  import { progression } from "$lib/data/items/progression";
   import { fade } from "svelte/transition";
   import { weaponRotations } from "$lib/data/weaponRotations.js";
   import { weapons } from "$lib/data/weapons.js";
@@ -20,14 +18,13 @@
   import BannerModal from "$lib/components/modals/BannerModal.svelte";
   import SupportModal from "$lib/components/modals/SupportModal.svelte";
   import Tooltip from "$lib/components/Tooltip.svelte";
+  import ItemTags from "$lib/components/ItemTags.svelte";
 
   let now = new Date();
   let timer;
   let currentServerId = "3";
   let showServerTime = false;
   let isSupportOpen = false;
-
-  const allItems = [...currencies, ...progression];
 
   function parseWithServerOffset(dateStr) {
     if (!dateStr) return new Date(9999, 11, 31);
@@ -56,20 +53,22 @@
     return $t("timer.left_m", { m: minutes });
   }
 
-  function getRarityStyle(id) {
-    const item = allItems.find((i) => i.id === id);
-    const rarity = item?.rarity || 3;
-    switch (rarity) {
-      case 5:
-      case 6:
-        return "bg-amber-50 border-amber-300 text-amber-800 hover:border-amber-500 dark:bg-amber-900/40 dark:border-amber-700 dark:text-amber-200 dark:hover:border-amber-400";
-      case 4:
-        return "bg-purple-50 border-purple-300 text-purple-800 hover:border-purple-500 dark:bg-purple-900/40 dark:border-purple-700 dark:text-purple-200 dark:hover:border-purple-400";
-      case 3:
-        return "bg-blue-50 border-blue-300 text-blue-800 hover:border-blue-500 dark:bg-blue-900/40 dark:border-blue-700 dark:text-blue-200 dark:hover:border-blue-400";
-      default:
-        return "bg-gray-100 border-gray-300 text-gray-700 hover:border-gray-400 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-300 dark:hover:border-gray-400";
+  function getTimeStatus(endTimeStr) {
+    if (!endTimeStr) return { timeLeft: null, status: "normal" };
+    const end = parseWithServerOffset(endTimeStr);
+    const diff = end - now;
+    if (diff <= 0) return { timeLeft: null, status: "ended" };
+
+    const timeLeft = formatTimeLeft(endTimeStr);
+    const hoursLeft = diff / (1000 * 60 * 60);
+
+    if (hoursLeft <= 24) {
+      return { timeLeft, status: "critical" };
     }
+    if (hoursLeft <= 72) {
+      return { timeLeft, status: "warning" };
+    }
+    return { timeLeft, status: "normal" };
   }
 
   $: activeBanners = banners
@@ -129,13 +128,11 @@
 
   let selectedBanner = null;
 
-  $: currentBannerTimeLeft = (() => {
+  $: currentBannerEndStr = (() => {
     const b = activeBanners[currentBannerIndex];
     if (!b || b.type === "inGamePermanent") return "";
     const isAsia = currentServerId === "2";
-    const endStr = isAsia && b.endTimeAsia ? b.endTimeAsia : b.endTime;
-    if (!endStr) return "";
-    return formatTimeLeft(endStr) || "";
+    return isAsia && b.endTimeAsia ? b.endTimeAsia : b.endTime || "";
   })();
 
   $: activePromocodes = promocodes
@@ -171,17 +168,6 @@
     return `(${text})`;
   }
 
-  function sortRewards(rewards) {
-    return [...rewards].sort((a, b) => {
-      const itemA = allItems.find((i) => i.id === a.id);
-      const itemB = allItems.find((i) => i.id === b.id);
-      const rarityA = itemA?.rarity || 0;
-      const rarityB = itemB?.rarity || 0;
-      if (rarityB !== rarityA) return rarityB - rarityA;
-      return b.count - a.count;
-    });
-  }
-
   let copiedCode = null;
   async function copyCode(code) {
     try {
@@ -213,39 +199,57 @@
   });
 
   function getEventBadge(event) {
+    if (!event) return null;
     const origType = (event.originalType || "").toLowerCase();
+    const type = (event.type || "").toLowerCase();
     const glassStyle =
       "bg-black/40 backdrop-blur-md border border-white/10 shadow-sm";
 
-    if (event.type === "mailEvent")
+    if (type === "mailevent")
       return { icon: "mail", label: "Mail Event", bg: glassStyle };
-    if (event.type === "protoPass")
+    if (type === "protopass")
       return { icon: "protoPass", label: "Proto Pass", bg: glassStyle };
-    if (event.type === "web")
+    if (type === "web")
       return { icon: "link", label: "Web", bg: glassStyle };
-    if (event.type === "signIn")
+    if (type === "signin")
       return { icon: "signIn", label: "Sign-In", bg: glassStyle };
-    if (event.type === "inGamePermanent")
+    if (type === "ingamepermanent")
       return { icon: "permanent", label: "Permanent Event", bg: glassStyle };
 
     if (
-      event.type === "banner" ||
-      event.type === "standard" ||
-      event.type === "special" ||
-      event.type === "new-player"
+      type === "weapon" ||
+      type === "weap-special" ||
+      type === "weap-standard" ||
+      origType === "weapon" ||
+      origType === "weap-special" ||
+      origType === "weap-standard" ||
+      event.isWeapon === true
     ) {
-      if (origType === "weapon")
-        return { icon: "atkEvent", label: "Arsenal Issue", bg: glassStyle };
+      return { icon: "atkEvent", label: "Arsenal Issue", bg: glassStyle };
+    }
+
+    if (
+      type === "banner" ||
+      type === "standard" ||
+      type === "special" ||
+      type === "new-player" ||
+      type === "headhunting" ||
+      origType === "standard" ||
+      origType === "special" ||
+      origType === "new-player" ||
+      origType === "banner" ||
+      origType === "headhunting"
+    ) {
       return { icon: "headhunting", label: "Headhunting", bg: glassStyle };
     }
 
-    return { icon: "event", label: "Limited Event", bg: glassStyle };
+    return { icon: "clock", label: "Limited Event", bg: glassStyle };
   }
   $: eventsWithBadges = activeEvents
     .map((e) => ({
       ...e,
       badge: getEventBadge(e),
-      name: $t(e.title) !== e.title ? $t(e.title) : e.title,
+      name: $t(e.title) !== e.title ? $t(e.title) : e.name || e.title,
     }))
     .sort((a, b) => {
       const isAPerm = a.type === "inGamePermanent";
@@ -389,6 +393,9 @@
 
 <svelte:head>
   <title>{$t("seo.title")}</title>
+  <meta name="description" content={$t("seo.description")} />
+  <meta property="og:title" content={$t("seo.title")} />
+  <meta property="og:description" content={$t("seo.description")} />
 </svelte:head>
 
 <div
@@ -409,7 +416,7 @@
           <h2
             class="text-sm font-bold text-[#21272C] dark:text-[#FDFDFD] flex items-center gap-2"
           >
-            <span class="w-2 h-2 bg-[#FACC15] rounded-full"></span>
+            <Icon name="headhuntingMenuIcon" class="w-5 h-5 shrink-0" />
             {$t("home.current_banners")}
           </h2>
           <div class="flex gap-1.5">
@@ -454,22 +461,37 @@
                 <div
                   class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60 pointer-events-none"
                 ></div>
-                {#if currentBannerTimeLeft}
-                  <div
-                    class="absolute bottom-3 left-3 z-20 pointer-events-none"
-                  >
+                {#if currentBannerEndStr}
+                  {@const status = getTimeStatus(currentBannerEndStr)}
+                  {#if status.timeLeft}
                     <div
-                      class="inline-flex items-center gap-2 px-2.5 py-1 bg-black/40 backdrop-blur-md border border-white/20 rounded-full shadow-md"
+                      class="absolute bottom-3 left-3 z-20 pointer-events-none"
                     >
-                      <span
-                        class="w-1.5 h-1.5 rounded-full bg-[#FACC15] animate-pulse"
-                      ></span>
-                      <span
-                        class="text-[11px] font-bold text-white font-nums leading-none"
-                        >{currentBannerTimeLeft}</span
+                      <div
+                        class="inline-flex items-center gap-2 px-2.5 py-1 bg-black/40 backdrop-blur-md border {status.status === 'critical'
+                          ? 'border-red-500/50'
+                          : status.status === 'warning'
+                            ? 'border-orange-500/50'
+                            : 'border-white/20'} rounded-full shadow-md"
                       >
+                        <span
+                          class="w-1.5 h-1.5 rounded-full {status.status === 'critical'
+                            ? 'bg-red-500 shadow-[0_0_6px_#ef4444]'
+                            : status.status === 'warning'
+                              ? 'bg-orange-500 shadow-[0_0_4px_#fb923c]'
+                              : 'bg-green-400 shadow-[0_0_4px_#4ade80]'} animate-pulse"
+                        ></span>
+                        <span
+                          class="text-[11px] font-bold {status.status === 'critical'
+                            ? 'text-red-300'
+                            : status.status === 'warning'
+                              ? 'text-orange-300'
+                              : 'text-white'} font-nums leading-none"
+                          >{status.timeLeft}</span
+                        >
+                      </div>
                     </div>
-                  </div>
+                  {/if}
                 {/if}
               </div>
             {/key}
@@ -483,7 +505,7 @@
                   activeBanners.length;
               }}
             >
-              <Icon name="chevronLeft" className="w-6 h-6" />
+              <Icon name="chevronLeft" class="w-5 h-5" />
             </button>
             <button
               type="button"
@@ -494,7 +516,7 @@
                   (currentBannerIndex + 1) % activeBanners.length;
               }}
             >
-              <Icon name="chevronRight" className="w-6 h-6" />
+              <Icon name="chevronRight" class="w-5 h-5" />
             </button>
           {:else}
             <div
@@ -511,16 +533,16 @@
       >
         <div class="flex items-center justify-between mb-2">
           <h3
-            class="text-sm font-bold text-[#21272C] dark:text-[#FDFDFD] flex items-center gap-2"
+            class="text-sm font-bold text-[#21272C] dark:text-[#FDFDFD] flex items-center gap-1.5"
           >
-            <span class="w-2 h-2 bg-green-400 rounded-full"></span>
-            {$t("home.activeEvents") || "Текущие события"}
+            <Icon name="event" class="w-6 h-6 shrink-0" />
+            {$t("home.activeEvents")}
           </h3>
           <button
             on:click={() => goto("/events")}
             class="text-[11px] font-bold text-gray-500 hover:text-[#FACC15] dark:text-gray-400 dark:hover:text-[#FACC15] transition-colors flex items-center gap-1 group mr-2"
           >
-            {$t("home.goToTimeline") || "Перейти в ленту событий"}
+            {$t("home.goToTimeline")}
             →
           </button>
         </div>
@@ -588,32 +610,37 @@
                     <div
                       class="font-bold text-[13px] text-white truncate w-full drop-shadow-md"
                     >
-                      {$t(event.title) || event.title}
+                      {event.name}
                     </div>
                   </div>
                   {#if event.displayEndTime && event.type !== "inGamePermanent"}
-                    {@const diff = parseWithServerOffset(event.displayEndTime) - now}
-                    {@const daysLeft = Math.floor(diff / (1000 * 60 * 60 * 24))}
-                    {@const isEndingSoon = daysLeft <= 3 && daysLeft >= 0}
-
-                    <div
-                      class="inline-flex items-center gap-1.5 px-2.5 py-1 bg-black/40 backdrop-blur-md border {isEndingSoon
-                        ? 'border-orange-500/50'
-                        : 'border-white/20'} rounded-full shadow-md w-fit"
-                    >
-                      <span
-                        class="w-1.5 h-1.5 rounded-full {isEndingSoon
-                          ? 'bg-orange-500 shadow-[0_0_4px_#fb923c]'
-                          : 'bg-green-400 shadow-[0_0_4px_#4ade80]'} animate-pulse"
-                      ></span>
-                      <span
-                        class="text-[10px] font-bold {isEndingSoon
-                          ? 'text-orange-300'
-                          : 'text-white'} font-nums leading-none"
+                    {@const status = getTimeStatus(event.displayEndTime)}
+                    {#if status.timeLeft}
+                      <div
+                        class="inline-flex items-center gap-1.5 px-2.5 py-1 bg-black/40 backdrop-blur-md border {status.status === 'critical'
+                          ? 'border-red-500/50'
+                          : status.status === 'warning'
+                            ? 'border-orange-500/50'
+                            : 'border-white/20'} rounded-full shadow-md w-fit"
                       >
-                        {formatTimeLeft(event.displayEndTime)}
-                      </span>
-                    </div>
+                        <span
+                          class="w-1.5 h-1.5 rounded-full {status.status === 'critical'
+                            ? 'bg-red-500 shadow-[0_0_6px_#ef4444]'
+                            : status.status === 'warning'
+                              ? 'bg-orange-500 shadow-[0_0_4px_#fb923c]'
+                              : 'bg-green-400 shadow-[0_0_4px_#4ade80]'} animate-pulse"
+                        ></span>
+                        <span
+                          class="text-[10px] font-bold {status.status === 'critical'
+                            ? 'text-red-300'
+                            : status.status === 'warning'
+                              ? 'text-orange-300'
+                              : 'text-white'} font-nums leading-none"
+                        >
+                          {status.timeLeft}
+                        </span>
+                      </div>
+                    {/if}
                   {/if}
                 </div>
               </div>
@@ -695,27 +722,10 @@
                   </div>
                 </div>
 
-                <div
-                  class="flex-1 flex flex-wrap gap-1.5 items-center min-w-0 py-1 md:py-0"
-                >
-                  {#each sortRewards(promo.rewards) as reward}
-                    <Tooltip text={$t(`items.${reward.id}`)}>
-                      <div
-                        class="flex items-center rounded-full px-2 py-0.5 border text-[11px] transition-colors {getRarityStyle(
-                          reward.id,
-                        )}"
-                      >
-                        <span class="font-bold mr-1">{reward.count}</span>
-                        <Image
-                          id={reward.id}
-                          variant="item"
-                          size={16}
-                          className="object-contain"
-                        />
-                      </div>
-                    </Tooltip>
-                  {/each}
-                </div>
+                <ItemTags
+                  rewards={promo.rewards}
+                  className="flex-1 min-w-0 py-1 md:py-0"
+                />
 
                 <div
                   class="w-full md:w-auto text-left md:text-right shrink-0 md:pl-2 flex flex-row md:flex-col items-center md:items-end justify-start md:justify-center gap-2 md:gap-0 mt-1 md:mt-0"
@@ -778,68 +788,88 @@
 
         <div class="grid grid-cols-2 gap-4">
           <div class="flex flex-col gap-1 items-center md:items-left justify-between">
-            <div class="flex items-center justify-center gap-1.5 flex-wrap">
-              <span class="text-xs font-bold text-gray-800 dark:text-gray-100 select-none leading-none">
-                {$t("home.currentWeek") || "Current Week"}
-              </span>
-              <span class="px-1.5 py-0.5 rounded text-[9px] font-bold font-nums bg-[#05D774]/15 text-[#05D774] border border-[#05D774]/10 select-none inline-block leading-none">
-                {getWeeklyResetCountdown(now)}
-              </span>
-            </div>
-            <span class="text-[9px] text-gray-400 dark:text-[#9CA3AF] font-medium font-nums leading-none select-none mt-1">
-              ({formatWeekLabel(currentWeekConfig, $currentUiLocale)})
-            </span>
-            <div class="flex gap-2.5 justify-center md:justify-left flex-wrap mt-2">
-              {#if currentWeekly6}
-                <div class="flex flex-col items-center gap-1.5 shrink-0">
-                  <WeaponCard weapon={currentWeekly6} variant="small" isEquipment={false} />
-                  <div class="flex items-center gap-0.5 text-[10px] font-black text-gray-800 dark:text-white leading-none font-nums">
-                    <Icon name="arsenalTicket" class="w-3.5 h-3.5 text-white" style="filter: drop-shadow(0 0 2px #3b82f6) drop-shadow(0 0 4px #3b82f6);" />
-                    <span>2480</span>
-                  </div>
-                </div>
-              {/if}
-              {#if currentWeekly5}
-                <div class="flex flex-col items-center gap-1.5 shrink-0">
-                  <WeaponCard weapon={currentWeekly5} variant="small" isEquipment={false} />
-                  <div class="flex items-center gap-0.5 text-[10px] font-black text-gray-800 dark:text-white leading-none font-nums">
-                    <Icon name="arsenalTicket" class="w-3.5 h-3.5 text-white" style="filter: drop-shadow(0 0 2px #3b82f6) drop-shadow(0 0 4px #3b82f6);" />
-                    <span>400</span>
-                  </div>
-                </div>
+            <div class="flex flex-col gap-1 items-center">
+              <div class="flex items-center justify-center gap-1.5 flex-wrap">
+                <span class="text-xs font-bold text-gray-800 dark:text-gray-100 select-none leading-none">
+                  {$t("home.currentWeek")}
+                </span>
+                <span class="px-1.5 py-0.5 rounded text-[9px] font-bold font-nums bg-[#05D774]/15 text-[#05D774] border border-[#05D774]/10 select-none inline-block leading-none">
+                  {getWeeklyResetCountdown(now)}
+                </span>
+              </div>
+              {#if currentWeekConfig}
+                <span class="text-[9px] text-gray-400 dark:text-[#9CA3AF] font-medium font-nums leading-none select-none mt-1">
+                  ({formatWeekLabel(currentWeekConfig, $currentUiLocale)})
+                </span>
               {/if}
             </div>
+            {#if currentWeekly6 || currentWeekly5}
+              <div class="flex gap-2.5 justify-center md:justify-left flex-wrap mt-2">
+                {#if currentWeekly6}
+                  <div class="flex flex-col items-center gap-1.5 shrink-0">
+                    <WeaponCard weapon={currentWeekly6} variant="small" isEquipment={false} />
+                    <div class="flex items-center gap-0.5 text-[10px] font-black text-gray-800 dark:text-white leading-none font-nums">
+                      <Icon name="arsenalTicket" class="w-3.5 h-3.5 text-white" style="filter: drop-shadow(0 0 2px #3b82f6) drop-shadow(0 0 4px #3b82f6);" />
+                      <span>2480</span>
+                    </div>
+                  </div>
+                {/if}
+                {#if currentWeekly5}
+                  <div class="flex flex-col items-center gap-1.5 shrink-0">
+                    <WeaponCard weapon={currentWeekly5} variant="small" isEquipment={false} />
+                    <div class="flex items-center gap-0.5 text-[10px] font-black text-gray-800 dark:text-white leading-none font-nums">
+                      <Icon name="arsenalTicket" class="w-3.5 h-3.5 text-white" style="filter: drop-shadow(0 0 2px #3b82f6) drop-shadow(0 0 4px #3b82f6);" />
+                      <span>400</span>
+                    </div>
+                  </div>
+                {/if}
+              </div>
+            {:else}
+              <div class="flex-1 flex flex-col items-center justify-center min-h-[96px] py-3 text-gray-400 dark:text-[#7A7A7A] w-full">
+                <Icon name="noData" class="w-8 h-8 mb-1.5 opacity-40" />
+                <span class="text-xs font-medium">{$t("global.noData")}</span>
+              </div>
+            {/if}
           </div>
 
           <div class="flex flex-col gap-1 items-center md:items-left justify-between">
             <div class="flex flex-col gap-1 items-center">
               <span class="text-xs font-bold text-gray-800 dark:text-gray-100 select-none leading-none">
-                {$t("home.nextWeek") || "Next Week"}
+                {$t("home.nextWeek")}
               </span>
-              <span class="text-[9px] text-gray-400 dark:text-[#9CA3AF] font-medium font-nums leading-none select-none mt-1">
-                ({formatWeekLabel(nextWeekConfig, $currentUiLocale)})
-              </span>
-            </div>
-            <div class="flex gap-2.5 flex-wrap justify-center md:justify-left mt-2">
-              {#if nextWeekly6}
-                <div class="flex flex-col items-center gap-1.5 shrink-0">
-                  <WeaponCard weapon={nextWeekly6} variant="small" isEquipment={false} />
-                  <div class="flex items-center gap-0.5 text-[10px] font-black text-gray-800 dark:text-white leading-none font-nums">
-                    <Icon name="arsenalTicket" class="w-3.5 h-3.5 text-white" style="filter: drop-shadow(0 0 2px #3b82f6) drop-shadow(0 0 4px #3b82f6);" />
-                    <span>2480</span>
-                  </div>
-                </div>
-              {/if}
-              {#if nextWeekly5}
-                <div class="flex flex-col items-center gap-1.5 shrink-0">
-                  <WeaponCard weapon={nextWeekly5} variant="small" isEquipment={false} />
-                  <div class="flex items-center gap-0.5 text-[10px] font-black text-gray-800 dark:text-white leading-none font-nums">
-                    <Icon name="arsenalTicket" class="w-3.5 h-3.5 text-white" style="filter: drop-shadow(0 0 2px #3b82f6) drop-shadow(0 0 4px #3b82f6);" />
-                    <span>400</span>
-                  </div>
-                </div>
+              {#if nextWeekConfig}
+                <span class="text-[9px] text-gray-400 dark:text-[#9CA3AF] font-medium font-nums leading-none select-none mt-1">
+                  ({formatWeekLabel(nextWeekConfig, $currentUiLocale)})
+                </span>
               {/if}
             </div>
+            {#if nextWeekly6 || nextWeekly5}
+              <div class="flex gap-2.5 flex-wrap justify-center md:justify-left mt-2">
+                {#if nextWeekly6}
+                  <div class="flex flex-col items-center gap-1.5 shrink-0">
+                    <WeaponCard weapon={nextWeekly6} variant="small" isEquipment={false} />
+                    <div class="flex items-center gap-0.5 text-[10px] font-black text-gray-800 dark:text-white leading-none font-nums">
+                      <Icon name="arsenalTicket" class="w-3.5 h-3.5 text-white" style="filter: drop-shadow(0 0 2px #3b82f6) drop-shadow(0 0 4px #3b82f6);" />
+                      <span>2480</span>
+                    </div>
+                  </div>
+                {/if}
+                {#if nextWeekly5}
+                  <div class="flex flex-col items-center gap-1.5 shrink-0">
+                    <WeaponCard weapon={nextWeekly5} variant="small" isEquipment={false} />
+                    <div class="flex items-center gap-0.5 text-[10px] font-black text-gray-800 dark:text-white leading-none font-nums">
+                      <Icon name="arsenalTicket" class="w-3.5 h-3.5 text-white" style="filter: drop-shadow(0 0 2px #3b82f6) drop-shadow(0 0 4px #3b82f6);" />
+                      <span>400</span>
+                    </div>
+                  </div>
+                {/if}
+              </div>
+            {:else}
+              <div class="flex-1 flex flex-col items-center justify-center min-h-[96px] py-3 text-gray-400 dark:text-[#7A7A7A] w-full">
+                <Icon name="noData" class="w-8 h-8 mb-1.5 opacity-40" />
+                <span class="text-xs font-medium">{$t("global.noData")}</span>
+              </div>
+            {/if}
           </div>
         </div>
 
@@ -847,40 +877,54 @@
           <div class="flex flex-col gap-1 items-center md:items-left justify-between">
             <div class="flex items-center justify-center gap-1.5 flex-wrap">
               <span class="text-xs font-bold text-gray-800 dark:text-gray-100 select-none leading-none">
-                {$t("home.today") || "Today"}
+                {$t("home.today")}
               </span>
               <span class="px-1.5 py-0.5 rounded text-[9px] font-bold font-nums bg-[#05D774]/15 text-[#05D774] border border-[#05D774]/10 select-none inline-block leading-none">
                 {getDailyResetCountdown(now)}
               </span>
             </div>
-            <div class="flex gap-2.5 flex-wrap justify-center md:justify-left mt-2">
-              {#each todayWeapons as wpn}
-                <div class="flex flex-col items-center gap-1.5 shrink-0">
-                  <WeaponCard weapon={wpn} variant="small" isEquipment={false} />
-                  <div class="flex items-center gap-0.5 text-[10px] font-black text-gray-800 dark:text-white leading-none font-nums">
-                    <Icon name="arsenalTicket" class="w-3.5 h-3.5 text-white" style="filter: drop-shadow(0 0 2px #3b82f6) drop-shadow(0 0 4px #3b82f6);" />
-                    <span>{wpn.rarity === 6 ? 2480 : 400}</span>
+            {#if todayWeapons && todayWeapons.length > 0}
+              <div class="flex gap-2.5 flex-wrap justify-center md:justify-left mt-2">
+                {#each todayWeapons as wpn}
+                  <div class="flex flex-col items-center gap-1.5 shrink-0">
+                    <WeaponCard weapon={wpn} variant="small" isEquipment={false} />
+                    <div class="flex items-center gap-0.5 text-[10px] font-black text-gray-800 dark:text-white leading-none font-nums">
+                      <Icon name="arsenalTicket" class="w-3.5 h-3.5 text-white" style="filter: drop-shadow(0 0 2px #3b82f6) drop-shadow(0 0 4px #3b82f6);" />
+                      <span>{wpn.rarity === 6 ? 2480 : 400}</span>
+                    </div>
                   </div>
-                </div>
-              {/each}
-            </div>
+                {/each}
+              </div>
+            {:else}
+              <div class="flex-1 flex flex-col items-center justify-center min-h-[96px] py-3 text-gray-400 dark:text-[#7A7A7A] w-full">
+                <Icon name="noData" class="w-8 h-8 mb-1.5 opacity-40" />
+                <span class="text-xs font-medium">{$t("global.noData")}</span>
+              </div>
+            {/if}
           </div>
 
           <div class="flex flex-col gap-1 items-center md:items-left justify-between">
             <span class="text-xs font-bold text-gray-800 dark:text-gray-100 select-none leading-none">
-              {$t("home.tomorrow") || "Tomorrow"}
+              {$t("home.tomorrow")}
             </span>
-            <div class="flex gap-2.5 flex-wrap justify-center md:justify-left mt-2">
-              {#each tomorrowWeapons as wpn}
-                <div class="flex flex-col items-center gap-1.5 shrink-0">
-                  <WeaponCard weapon={wpn} variant="small" isEquipment={false} />
-                  <div class="flex items-center gap-0.5 text-[10px] font-black text-gray-800 dark:text-white leading-none font-nums">
-                    <Icon name="arsenalTicket" class="w-3.5 h-3.5 text-white" style="filter: drop-shadow(0 0 2px #3b82f6) drop-shadow(0 0 4px #3b82f6);" />
-                    <span>{wpn.rarity === 6 ? 2480 : 400}</span>
+            {#if tomorrowWeapons && tomorrowWeapons.length > 0}
+              <div class="flex gap-2.5 flex-wrap justify-center md:justify-left mt-2">
+                {#each tomorrowWeapons as wpn}
+                  <div class="flex flex-col items-center gap-1.5 shrink-0">
+                    <WeaponCard weapon={wpn} variant="small" isEquipment={false} />
+                    <div class="flex items-center gap-0.5 text-[10px] font-black text-gray-800 dark:text-white leading-none font-nums">
+                      <Icon name="arsenalTicket" class="w-3.5 h-3.5 text-white" style="filter: drop-shadow(0 0 2px #3b82f6) drop-shadow(0 0 4px #3b82f6);" />
+                      <span>{wpn.rarity === 6 ? 2480 : 400}</span>
+                    </div>
                   </div>
-                </div>
-              {/each}
-            </div>
+                {/each}
+              </div>
+            {:else}
+              <div class="flex-1 flex flex-col items-center justify-center min-h-[96px] py-3 text-gray-400 dark:text-[#7A7A7A] w-full">
+                <Icon name="noData" class="w-8 h-8 mb-1.5 opacity-40" />
+                <span class="text-xs font-medium">{$t("global.noData")}</span>
+              </div>
+            {/if}
           </div>
         </div>
       </div>
@@ -1022,7 +1066,7 @@
             <thead class="sticky top-0 shadow-sm text-xs font-bold text-gray-600 dark:text-[#E4E4E4] z-40">
                 <tr>
                     <th class="sticky top-0 z-40 py-3 px-2 border-b dark:border-[#444] bg-gray-50 dark:bg-[#383838] text-[11px] font-bold">№</th>
-                    <th class="sticky top-0 z-40 py-3 px-2 border-b dark:border-[#444] bg-gray-50 dark:bg-[#383838] text-[11px] font-bold">{$t("home.duration") || "Dates"}</th>
+                    <th class="sticky top-0 z-40 py-3 px-2 border-b dark:border-[#444] bg-gray-50 dark:bg-[#383838] text-[11px] font-bold">{$t("home.duration")}</th>
                     <th class="sticky top-0 z-40 py-3 px-2 border-b dark:border-[#444] bg-gray-50 dark:bg-[#383838]">
                         <div class="flex items-center justify-center gap-0.5 select-none">
                             <span class="font-nums font-black text-amber-500 text-[11px]">6</span>
@@ -1035,13 +1079,13 @@
                             <Icon name="star" class="w-3 h-3 fill-yellow-500 text-yellow-500" />
                         </div>
                     </th>
-                    <th class="sticky top-0 z-40 py-3 px-2 border-b dark:border-[#444] bg-gray-50 dark:bg-[#383838] text-[11px] font-bold">{$t("weekdays.mon") || "Mon"}</th>
-                    <th class="sticky top-0 z-40 py-3 px-2 border-b dark:border-[#444] bg-gray-50 dark:bg-[#383838] text-[11px] font-bold">{$t("weekdays.tue") || "Tue"}</th>
-                    <th class="sticky top-0 z-40 py-3 px-2 border-b dark:border-[#444] bg-gray-50 dark:bg-[#383838] text-[11px] font-bold">{$t("weekdays.wed") || "Wed"}</th>
-                    <th class="sticky top-0 z-40 py-3 px-2 border-b dark:border-[#444] bg-gray-50 dark:bg-[#383838] text-[11px] font-bold">{$t("weekdays.thu") || "Thu"}</th>
-                    <th class="sticky top-0 z-40 py-3 px-2 border-b dark:border-[#444] bg-gray-50 dark:bg-[#383838] text-[11px] font-bold">{$t("weekdays.fri") || "Fri"}</th>
-                    <th class="sticky top-0 z-40 py-3 px-2 border-b dark:border-[#444] bg-gray-50 dark:bg-[#383838] text-[11px] font-bold">{$t("weekdays.sat") || "Sat"}</th>
-                    <th class="sticky top-0 z-40 py-3 px-2 border-b dark:border-[#444] bg-gray-50 dark:bg-[#383838] text-[11px] font-bold">{$t("weekdays.sun") || "Sun"}</th>
+                    <th class="sticky top-0 z-40 py-3 px-2 border-b dark:border-[#444] bg-gray-50 dark:bg-[#383838] text-[11px] font-bold">{$t("weekdays.mon")}</th>
+                    <th class="sticky top-0 z-40 py-3 px-2 border-b dark:border-[#444] bg-gray-50 dark:bg-[#383838] text-[11px] font-bold">{$t("weekdays.tue")}</th>
+                    <th class="sticky top-0 z-40 py-3 px-2 border-b dark:border-[#444] bg-gray-50 dark:bg-[#383838] text-[11px] font-bold">{$t("weekdays.wed")}</th>
+                    <th class="sticky top-0 z-40 py-3 px-2 border-b dark:border-[#444] bg-gray-50 dark:bg-[#383838] text-[11px] font-bold">{$t("weekdays.thu")}</th>
+                    <th class="sticky top-0 z-40 py-3 px-2 border-b dark:border-[#444] bg-gray-50 dark:bg-[#383838] text-[11px] font-bold">{$t("weekdays.fri")}</th>
+                    <th class="sticky top-0 z-40 py-3 px-2 border-b dark:border-[#444] bg-gray-50 dark:bg-[#383838] text-[11px] font-bold">{$t("weekdays.sat")}</th>
+                    <th class="sticky top-0 z-40 py-3 px-2 border-b dark:border-[#444] bg-gray-50 dark:bg-[#383838] text-[11px] font-bold">{$t("weekdays.sun")}</th>
                 </tr>
             </thead>
             <tbody class="text-[11px] font-nums text-gray-800 dark:text-gray-300">

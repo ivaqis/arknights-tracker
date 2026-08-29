@@ -50,7 +50,7 @@
     "globalBtn": "Estadísticas Globales",
     "settingsBtn": "Ajustes",
     "totalCost": "Costo Total de Oroberilo",
-    "openOfficialSource": "Post Oficial",
+    "openOfficialSource": "Sitio oficial",
     "detailsOfficialSource": "Ver detalles en el sitio oficial",
     "rating": {
       "ratingTitle": "Tu Calificación",
@@ -129,7 +129,11 @@
     "bannerTypes": {
       "bannerHistoryGraph": "Historial de banners",
       "pieGraph": "Distribución"
-    }
+    },
+    "openXSource": "Publicación oficial",
+    "detailsXSource": "Ver publicación en x.com",
+    "openWebEvent": "Evento web",
+    "detailsWebEvent": "Ir a la página del evento"
   },
   "bannerTypes": {
     "standard": "Búsqueda Estándar",
@@ -284,6 +288,8 @@
   "emptyState": {
     "nothingSelected": "Nada seleccionado",
     "clickEquipmentHint": "Haz clic en el equipamiento de la izquierda para ver sus detalles.",
+    "clickWeaponHint": "Haz clic en un arma de la izquierda para ver sus detalles.",
+    "clickEnemyHint": "Haz clic en un enemigo de la izquierda para ver sus detalles.",
     "noData": "Sin entradas"
   },
   "buttons": {
@@ -324,7 +330,9 @@
     "emptyPageMsg": "Qué vacío está aquí",
     "equipmentType": "Tipo de equipamiento",
     "gearTemplate": "Molde de equipamiento",
-    "blueprintLocation": "Ubicación de plantilla de equipamiento"
+    "blueprintLocation": "Ubicación de plantilla de equipamiento",
+    "rewards": "Recompensas",
+    "dayN": "Día {n}"
   },
   "status": {
     "won": "Ganado 50:50",
@@ -460,7 +468,8 @@
     "protocolPassBlightedSea": "Pase de protocolo: Mar contaminado",
     "gazeNorthToTheRiftSignIn": "Inicio de sesión de Mirada hacia el norte en la grieta",
     "protocolInvitationTheReturn": "Invitación de Protocolo: El regreso",
-    "bedazzlingDawnstarSignIn": "Inicio de sesión de Estrella del amanecer deslumbrante"
+    "bedazzlingDawnstarSignIn": "Inicio de sesión de Estrella del amanecer deslumbrante",
+    "aForestMantledInSnow": "Un bosque cubierto de nieve"
   },
   "mouths": {
     "january": "Enero",
@@ -920,7 +929,7 @@
     "preferredSkillMode": "Modo de visualización preferido para habilidades de combate",
     "preferredSkillModeList": "Lista",
     "preferredSkillModeTable": "Tabla",
-    "splitEquipmentView": "Mostrar detalles del equipamiento en la pantalla dividida",
+    "splitEquipmentView": "Mostrar detalles de equipamiento, armas y enemigos en pantalla dividida",
     "cache": {
       "title": "Caché",
       "desc": "Detalles y limpieza de caché",

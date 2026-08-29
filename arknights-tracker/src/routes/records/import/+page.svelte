@@ -994,7 +994,10 @@
 </script>
 
 <svelte:head>
-    <title>{$t("import.title")} - {$t("pages.records")} | Goyfield</title>
+    <title>{$t("import.title")} - {$t("pages.records")} - Goyfield</title>
+    <meta name="description" content={$t("seo.descriptions.import")} />
+    <meta property="og:title" content={`${$t("import.title")} - ${$t("pages.records")} - Goyfield`} />
+    <meta property="og:description" content={$t("seo.descriptions.import")} />
 </svelte:head>
 
 <div class="max-w-[1600px] justify-start">

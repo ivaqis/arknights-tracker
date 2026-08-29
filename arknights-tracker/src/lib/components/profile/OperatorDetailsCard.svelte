@@ -726,9 +726,9 @@
                                     </Tooltip>
                                 </div>
 
-                                <div class="flex items-center gap-0 -space-x-2 ml-[-3px]">
+                                <div class="flex items-center gap-0 -space-x-1 ml-[-3px]">
                                     {#each Array(opData.rarity || 1) as _}
-                                        <Icon name="strokeStar" class="w-10 h-10 text-gray-600 dark:text-white" style="stroke-opacity: 20%" />
+                                        <Icon name="star" class="w-10 h-10 text-gray-600 dark:text-white" style="stroke-opacity: 20%" />
                                     {/each}
                                 </div>
                             </div>
@@ -907,9 +907,9 @@
                                             {wpnName}
                                         </h4>
                                     </div>
-                                    <div class="flex items-center mt-2 select-none -space-x-1.5 mr-[-67px] z-40">
+                                    <div class="flex items-center mt-2 select-none -space-x-1 mr-[-67px] z-40">
                                         {#each Array(wpnStatic?.rarity || wpn.rarity || 5) as _}
-                                            <Icon name="strokeStar" class="shrink-0 w-7 h-7 text-gray-600 dark:text-white" />
+                                            <Icon name="star" class="shrink-0 w-7 h-7 text-gray-600 dark:text-white" />
                                         {/each}
                                     </div>
                                 </div>

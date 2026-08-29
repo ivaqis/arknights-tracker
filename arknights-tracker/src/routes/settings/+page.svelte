@@ -442,7 +442,10 @@
 </script>
 
 <svelte:head>
-    <title>{$t("pages.settings")} | Goyfield</title>
+    <title>{$t("pages.settings")} - Goyfield</title>
+    <meta name="description" content={$t("seo.descriptions.settings")} />
+    <meta property="og:title" content={`${$t("pages.settings")} - Goyfield`} />
+    <meta property="og:description" content={$t("seo.descriptions.settings")} />
 </svelte:head>
 
 <div class="max-w-[1000px] w-full pb-20">
@@ -965,13 +968,13 @@
                 ></span>
             </button>
             <span class="text-sm font-bold dark:text-[#E0E0E0] text-gray-800">
-                {$t("settings.splitEquipmentView") || "Show equipment details on split screen"}
+                {$t("settings.splitEquipmentView")}
             </span>
         </div>
 
         <div class="mt-4 flex flex-col items-start gap-2">
             <span class="text-sm font-bold dark:text-[#E0E0E0] text-gray-800">
-                {$t("settings.preferredSkillMode") || "Preferred display mode for combat skills"}
+                {$t("settings.preferredSkillMode")}
             </span>
             <div class="w-80">
                 <Select

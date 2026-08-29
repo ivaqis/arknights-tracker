@@ -6,7 +6,7 @@
     import { syncStatus, user, initAuth, checkSync, justSynced } from "$lib/stores/cloudStore";
     import { t } from "$lib/i18n";
     import { fly } from "svelte/transition";
-    import { page } from "$app/stores";
+    import { page, navigating } from "$app/stores";
     import { fade } from "svelte/transition";
     import { isDarkMode } from "$lib/stores/theme";
     import { browser } from "$app/environment";
@@ -49,7 +49,7 @@
 
     onMount(() => {
         if (browser) {
-            fetch('/images/icons.svg?v=5')
+            fetch('/images/icons.svg?v=6')
                 .then(res => {
                     if (res.ok) return res.text();
                     throw new Error('Failed to load icons.svg');
@@ -139,10 +139,7 @@
 <svelte:head>
     <title>{$t("seo.title")}</title>
     <link rel="canonical" href={`https://goyfield.moe${$page.url.pathname}`} />
-    <meta name="description" content={$t("seo.description")} />
     <meta name="keywords" content={$t("seo.keywords")} />
-    <meta property="og:title" content={$t("seo.title")} />
-    <meta property="og:description" content={$t("seo.description")} />
     <meta
         property="og:image"
         content="https://goyfield.moe/images/og-image.jpg"
@@ -182,6 +179,13 @@
         else document.documentElement.classList.remove("sidebar-closed");
     </script>
 </svelte:head>
+
+{#if $navigating}
+    <div class="fixed top-0 left-0 right-0 h-[3px] z-[999999] pointer-events-none overflow-hidden bg-[#FFE145]/20">
+        <div class="w-full h-full bg-[#FFE145] shadow-[0_0_8px_#FFE145] animate-nav-progress"></div>
+    </div>
+{/if}
+
 {#if $isI18nReady}
     {#if $user}
         <SyncModal />

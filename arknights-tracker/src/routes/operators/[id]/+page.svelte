@@ -1,4 +1,5 @@
 <script>
+    import { browser } from "$app/environment";
     import { page } from "$app/stores";
     import { t } from "$lib/i18n";
     import { fade, fly } from "svelte/transition";
@@ -28,6 +29,7 @@
     import NotFound from "$lib/components/NotFound.svelte";
     import TableModal from "$lib/components/modals/TableModal.svelte";
     import WeaponCard from "$lib/components/cards/WeaponCard.svelte";
+    import AscensionIcon from "$lib/components/operators/AscensionIcon.svelte";
 
     function formatBirthDate(raw, lang) {
         if (typeof raw !== "string" || !/^\d{1,2}-\d{1,2}$/.test(raw))
@@ -110,7 +112,11 @@
 
     $: skillsLocale = charLocale.skills || {};
     $: baseInfoLocale = charLocale.baseInfo || {};
-    $: voiceLines = skillsLocale?.voiceLines || baseInfoLocale?.voiceLines || charLocale?.voiceLines || [];
+    $: voiceLines =
+        skillsLocale?.voiceLines ||
+        baseInfoLocale?.voiceLines ||
+        charLocale?.voiceLines ||
+        [];
     $: skillsValuesData = charDetails.skills || {};
     $: charMaterials = charDetails.materials || {};
 
@@ -253,8 +259,6 @@
         },
     };
 
-
-
     $: rarityColor = getRarityColor(char.rarity || 1);
 
     let activeTab = "about";
@@ -265,19 +269,30 @@
     let isTotalMode = false;
     let isTableCopied = false;
 
+    $: currentAscension = (() => {
+        if (level > 80) return 4;
+        if (level > 60) return 3;
+        if (level > 40) return 2;
+        if (level > 20) return 1;
+        return 0;
+    })();
+
     const audioLanguages = [
         { id: "zh", label: "CN" },
         { id: "en", label: "EN" },
         { id: "ja", label: "JP" },
         { id: "ko", label: "KO" },
     ];
-    let selectedAudioLang = "en";
+    let selectedAudioLang = (browser && localStorage.getItem("operator_audio_lang")) || "en";
     let currentAudio = null;
     let currentPlayingVoId = null;
     let isAudioLoading = false;
 
     function changeAudioLang(langId) {
         selectedAudioLang = langId;
+        if (browser) {
+            localStorage.setItem("operator_audio_lang", langId);
+        }
         if (currentAudio) {
             currentAudio.pause();
             currentAudio = null;
@@ -312,9 +327,13 @@
         const audio = new Audio(audioUrl);
         currentAudio = audio;
 
-        audio.addEventListener("canplaythrough", () => {
-            isAudioLoading = false;
-        }, { once: true });
+        audio.addEventListener(
+            "canplaythrough",
+            () => {
+                isAudioLoading = false;
+            },
+            { once: true },
+        );
 
         const handleAudioError = () => {
             currentPlayingVoId = null;
@@ -330,8 +349,6 @@
             currentAudio = null;
             isAudioLoading = false;
         });
-
-        audio.addEventListener("error", handleAudioError);
 
         audio.play().catch(handleAudioError);
     }
@@ -644,7 +661,7 @@
 
     const BLACKBOARD_FALLBACKS = {
         PhysicalAndSpellInflictionEnhance: ["OriginiumArts"],
-        NormalSkillDamageIncrease: ["NormalSkillEfficiency"]
+        NormalSkillDamageIncrease: ["NormalSkillEfficiency"],
     };
 
     function interpolateBlackboard(text, bb) {
@@ -653,9 +670,11 @@
 
         return text.replace(/\{([^}]+)\}/g, (match, content) => {
             let [expr, format] = content.split(":");
-            
+
             let localBb = { ...bb };
-            for (const [key, fallbacks] of Object.entries(BLACKBOARD_FALLBACKS)) {
+            for (const [key, fallbacks] of Object.entries(
+                BLACKBOARD_FALLBACKS,
+            )) {
                 if (localBb[key] === undefined) {
                     for (const fallbackKey of fallbacks) {
                         if (localBb[fallbackKey] !== undefined) {
@@ -666,7 +685,10 @@
                 }
             }
 
-            let mathStr = expr.replace(/\b(\d+),(\d+)\b/g, (m, f) => Object.keys(bb)[f] || m);
+            let mathStr = expr.replace(
+                /\b(\d+),(\d+)\b/g,
+                (m, f) => Object.keys(bb)[f] || m,
+            );
 
             for (const key in localBb) {
                 const regex = new RegExp(`\\b${key}\\b`, "gi");
@@ -709,12 +731,23 @@
         }
     }
 
-    $: operatorName = $t(`characters.${id}`) !== `characters.${id}` ? $t(`characters.${id}`) : (char.name || id);
-    $: pageTitle = operatorName ? `${operatorName} - ${$t("pages.operators")} | Goyfield` : `${$t("pages.operators")} | Goyfield`;
+    $: operatorName =
+        $t(`characters.${id}`) !== `characters.${id}`
+            ? $t(`characters.${id}`)
+            : char.name || id;
+    $: pageTitle = operatorName
+        ? `${operatorName} - ${$t("pages.operators")} - Goyfield`
+        : `${$t("pages.operators")} - Goyfield`;
+    $: pageDescription = $t("seo.descriptions.operatorDetail", {
+        name: operatorName || id,
+    });
 </script>
 
 <svelte:head>
     <title>{pageTitle}</title>
+    <meta name="description" content={pageDescription} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={pageDescription} />
 </svelte:head>
 
 <svelte:window on:keydown={handleKeydown} on:keyup={handleKeyup} />
@@ -722,975 +755,1251 @@
 {#if !char.id}
     <NotFound />
 {:else}
-<div class="min-h-screen relative flex flex-col md:px-8 md:py-3">
-    <div
-        class="fixed top-0 left-0 w-[100svw] h-[100svh] flex items-center justify-center pointer-events-none z-0 transition-opacity duration-500 will-change-transform {activeTab ===
-        'about'
-            ? 'opacity-100'
-            : 'opacity-60'}"
-        style="transform: translateZ(0);"
-    >
+    <div class="min-h-screen relative flex flex-col md:px-8 md:py-3">
         <div
-            class="h-[110%] max-w-none object-cover opacity-100 mask-image-gradient"
+            class="fixed top-0 left-0 w-[100svw] h-[100svh] flex items-center justify-center pointer-events-none z-0 transition-opacity duration-500 will-change-transform {activeTab ===
+            'about'
+                ? 'opacity-100'
+                : 'opacity-60'}"
+            style="transform: translateZ(0);"
         >
-            <Image id={char.id} variant="operator-splash" size="100%" />
+            <div
+                class="h-[110%] max-w-none object-cover opacity-100 mask-image-gradient"
+            >
+                <Image id={char.id} variant="operator-splash" size="100%" />
+            </div>
+            <div
+                class="absolute inset-0 bg-gradient-to-r dark:from-[#5E5E5E] from-[#F9F9F9] via-[#F9F9F9]/80 to-transparent lg:via-[#F9F9F9]/40 z-10 opacity-20"
+            ></div>
         </div>
-        <div
-            class="absolute inset-0 bg-gradient-to-r dark:from-[#5E5E5E] from-[#F9F9F9] via-[#F9F9F9]/80 to-transparent lg:via-[#F9F9F9]/40 z-10 opacity-20"
-        ></div>
-    </div>
 
-    <div
-        class="relative z-20 w-full max-w-[1600px] mx-auto flex flex-col 2xl:flex-row justify-between gap-8 h-full"
-    >
         <div
-            class="flex flex-col gap-4 2xl:sticky 2xl:top-8 2xl:self-start z-30 w-full 2xl:w-[380px] shrink-0"
+            class="relative z-20 w-full max-w-[1600px] mx-auto flex flex-col 2xl:flex-row justify-between gap-8 h-full"
         >
-            <div class="flex flex-col gap-1">
-                <div class="mb-2">
-                    <Button
-                        variant="roundSmall"
-                        color="white"
-                        onClick={() => history.back()}
-                    >
-                        <Icon name="arrowLeft" class="w-5 h-5" />
-                    </Button>
-                </div>
-
-                <div
-                    class="flex items-start md:items-center flex-wrap gap-3 w-full max-w-full min-h-[36px]"
-                >
-                    <h1
-                        class="font-sdk text-4xl md:text-5xl font-bold text-[#21272C] dark:text-[#FDFDFD] leading-tight shrink drop-shadow-sm break-words transition-opacity duration-200"
-                    >
-                        {$t(`characters.${id}`) || char.name}
-                    </h1>
+            <div
+                class="flex flex-col gap-4 2xl:sticky 2xl:top-8 2xl:self-start z-30 w-full 2xl:w-[380px] shrink-0"
+            >
+                <div class="flex flex-col gap-1">
+                    <div class="mb-2">
+                        <Button
+                            variant="roundSmall"
+                            color="white"
+                            onClick={() => history.back()}
+                        >
+                            <Icon name="arrowLeft" class="w-5 h-5" />
+                        </Button>
+                    </div>
 
                     <div
-                        class="flex items-center shrink-0 relative mt-1 md:mt-0"
+                        class="flex items-start md:items-center flex-wrap gap-3 w-full max-w-full min-h-[36px]"
                     >
-                        {#if !isEditingPot}
-                            <div
-                                class="flex items-center gap-3 transition-opacity"
-                            >
-                                {#if isOwned}
-                                    <div
-                                        class="bg-gradient-to-br from-[#F9B90C] to-[#E3A000] text-white text-[13px] font-black px-2 py-0.5 rounded shadow-sm border border-white/20 leading-none"
-                                    >
-                                        P{currentPot}
-                                    </div>
-                                {/if}
+                        <h1
+                            class="font-sdk text-4xl md:text-5xl font-bold text-[#21272C] dark:text-[#FDFDFD] leading-tight shrink drop-shadow-sm break-words transition-opacity duration-200"
+                        >
+                            {$t(`characters.${id}`) || char.name}
+                        </h1>
 
-                                <Tooltip
-                                    text={$t("stats.editPotential") ||
-                                        "Edit Potential"}
+                        <div
+                            class="flex items-center shrink-0 relative mt-1 md:mt-0"
+                        >
+                            {#if !isEditingPot}
+                                <div
+                                    class="flex items-center gap-3 transition-opacity"
                                 >
-                                    <button
-                                        on:click={startEditing}
-                                        class="w-7 h-7 flex items-center justify-center rounded-lg bg-gray-100 dark:bg-[#383838] text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-[#444] hover:bg-gray-200 dark:hover:bg-[#444] transition-all"
-                                    >
-                                        <Icon
-                                            name="pen"
-                                            class="w-3.5 h-3.5 opacity-80"
-                                        />
-                                    </button>
-                                </Tooltip>
-                            </div>
-                        {:else}
-                            <div
-                                class="flex items-center gap-1 bg-white dark:bg-[#383838] border border-gray-200 dark:border-[#444] p-1.5 rounded-lg shadow-sm animate-fadeIn"
-                            >
-                                {#if accountPots[id] !== undefined}
+                                    {#if isOwned}
+                                        <div
+                                            class="bg-gradient-to-br from-[#F9B90C] to-[#E3A000] text-white text-[13px] font-black px-2 py-0.5 rounded shadow-sm border border-white/20 leading-none"
+                                        >
+                                            P{currentPot}
+                                        </div>
+                                    {/if}
+
                                     <Tooltip
-                                        text={$t("stats.reset") || "Reset"}
+                                        text={$t("stats.editPotential") ||
+                                            "Edit Potential"}
                                     >
                                         <button
-                                            on:click={resetPot}
-                                            class="w-8 h-8 rounded text-red-500 hover:bg-red-50 dark:hover:bg-red-900/30 flex items-center justify-center transition-colors"
+                                            on:click={startEditing}
+                                            class="w-7 h-7 flex items-center justify-center rounded-lg bg-gray-100 dark:bg-[#383838] text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-[#444] hover:bg-gray-200 dark:hover:bg-[#444] transition-all"
                                         >
                                             <Icon
-                                                name="refresh"
+                                                name="pen"
+                                                class="w-3.5 h-3.5 opacity-80"
+                                            />
+                                        </button>
+                                    </Tooltip>
+                                </div>
+                            {:else}
+                                <div
+                                    class="flex items-center gap-1 bg-white dark:bg-[#383838] border border-gray-200 dark:border-[#444] p-1.5 rounded-lg shadow-sm animate-fadeIn"
+                                >
+                                    {#if accountPots[id] !== undefined}
+                                        <Tooltip
+                                            text={$t("stats.reset") || "Reset"}
+                                        >
+                                            <button
+                                                on:click={resetPot}
+                                                class="w-8 h-8 rounded text-red-500 hover:bg-red-50 dark:hover:bg-red-900/30 flex items-center justify-center transition-colors"
+                                            >
+                                                <Icon
+                                                    name="refresh"
+                                                    class="w-4 h-4"
+                                                />
+                                            </button>
+                                        </Tooltip>
+                                        <div
+                                            class="w-[1px] h-6 bg-gray-300 dark:bg-gray-600 mx-1"
+                                        ></div>
+                                    {/if}
+
+                                    <button
+                                        on:click={() => changeDraft(-1)}
+                                        class="w-8 h-8 rounded bg-gray-100 hover:bg-gray-200 dark:bg-[#444] dark:hover:bg-[#555] flex items-center justify-center transition-colors disabled:opacity-50 text-gray-700 dark:text-gray-300"
+                                        disabled={draftPot ===
+                                            (isAlwaysOwned ? 0 : -1)}
+                                    >
+                                        <span
+                                            class="font-bold text-lg leading-none"
+                                            >-</span
+                                        >
+                                    </button>
+
+                                    <span
+                                        class="font-nums font-bold px-2 text-center text-[#21272C] dark:text-white uppercase tracking-wider"
+                                    >
+                                        {draftPot === -1 ? "" : `P${draftPot}`}
+                                    </span>
+
+                                    <button
+                                        on:click={() => changeDraft(1)}
+                                        class="w-8 h-8 rounded bg-gray-100 hover:bg-gray-200 dark:bg-[#444] dark:hover:bg-[#555] flex items-center justify-center transition-colors disabled:opacity-50 text-gray-700 dark:text-gray-300"
+                                        disabled={draftPot >= 9999}
+                                    >
+                                        <span
+                                            class="font-bold text-lg leading-none"
+                                            >+</span
+                                        >
+                                    </button>
+
+                                    <div
+                                        class="w-[1px] h-6 bg-gray-300 dark:bg-gray-600 mx-1"
+                                    ></div>
+
+                                    <Tooltip
+                                        text={$t("settings.account.cancel") ||
+                                            "Cancel"}
+                                    >
+                                        <button
+                                            on:click={cancelEdit}
+                                            class="w-8 h-8 rounded text-gray-500 hover:bg-gray-200 dark:hover:bg-[#444] flex items-center justify-center transition-colors"
+                                        >
+                                            <Icon
+                                                name="close"
                                                 class="w-4 h-4"
                                             />
                                         </button>
                                     </Tooltip>
-                                    <div
-                                        class="w-[1px] h-6 bg-gray-300 dark:bg-gray-600 mx-1"
-                                    ></div>
-                                {/if}
 
-                                <button
-                                    on:click={() => changeDraft(-1)}
-                                    class="w-8 h-8 rounded bg-gray-100 hover:bg-gray-200 dark:bg-[#444] dark:hover:bg-[#555] flex items-center justify-center transition-colors disabled:opacity-50 text-gray-700 dark:text-gray-300"
-                                    disabled={draftPot ===
-                                        (isAlwaysOwned ? 0 : -1)}
-                                >
-                                    <span class="font-bold text-lg leading-none"
-                                        >-</span
+                                    <Tooltip
+                                        text={$t("settings.account.save") ||
+                                            "Save"}
                                     >
-                                </button>
+                                        <button
+                                            on:click={savePot}
+                                            class="w-8 h-8 ml-1 rounded bg-[#FFC107] hover:bg-[#F9B90C] text-black flex items-center justify-center transition-colors"
+                                        >
+                                            <Icon name="save" class="w-4 h-4" />
+                                        </button>
+                                    </Tooltip>
+                                </div>
+                            {/if}
+                        </div>
+                    </div>
 
+                    <div
+                        class="flex flex-col md:flex-row md:items-center gap-2 md:gap-4 mt-2"
+                    >
+                        <div class="flex items-center gap-4">
+                            <Tooltip text={$t(`classes.${char.class}`)}>
+                                <div
+                                    class="w-10 h-10 rounded flex items-center justify-center shadow-sm"
+                                >
+                                    <Icon
+                                        name={char.class}
+                                        class="w-10 h-10 text-white rounded-md"
+                                    />
+                                </div>
+                            </Tooltip>
+
+                            <div
+                                class="w-[1px] h-8 bg-gray-300 dark:bg-gray-500"
+                            ></div>
+
+                            <Tooltip text={$t(`elements.${char.element}`)}>
+                                <div
+                                    class="w-10 h-10 rounded flex items-center justify-center shadow-sm"
+                                >
+                                    <Icon
+                                        name={char.element}
+                                        class="w-10 h-10 text-white rounded-md"
+                                    />
+                                </div>
+                            </Tooltip>
+                        </div>
+
+                        <div
+                            class="hidden md:block w-[1px] h-8 bg-gray-300 dark:bg-gray-500"
+                        ></div>
+
+                        <div class="flex items-center gap-0">
+                            {#each Array(char.rarity || 1) as _}
+                                <Icon
+                                    name="star"
+                                    class="w-9 h-9"
+                                    style="color: {rarityColor};"
+                                />
+                            {/each}
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap gap-2 mt-2 items-center">
+                        {#if char.weapon}
+                            <div
+                                class="flex items-center gap-2 px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-xs font-bold tracking-wide text-gray-500 shadow-sm"
+                                title={$t(`weapons.${char.weapon}`)}
+                            >
+                                <Icon
+                                    name={char.weapon}
+                                    class="w-4 h-4 text-gray-700"
+                                />
                                 <span
-                                    class="font-nums font-bold px-2 text-center text-[#21272C] dark:text-white uppercase tracking-wider"
+                                    >{$t(`weapons.${char.weapon}`) ||
+                                        char.weapon}</span
                                 >
-                                    {draftPot === -1 ? "" : `P${draftPot}`}
-                                </span>
+                            </div>
+                        {/if}
 
-                                <button
-                                    on:click={() => changeDraft(1)}
-                                    class="w-8 h-8 rounded bg-gray-100 hover:bg-gray-200 dark:bg-[#444] dark:hover:bg-[#555] flex items-center justify-center transition-colors disabled:opacity-50 text-gray-700 dark:text-gray-300"
-                                    disabled={draftPot >= 9999}
+                        {#if baseInfoLocale.tags && baseInfoLocale.tags.length > 0}
+                            {#each baseInfoLocale.tags as tag}
+                                <div
+                                    class="px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-xs font-bold tracking-wide text-gray-500 shadow-sm"
                                 >
-                                    <span class="font-bold text-lg leading-none"
-                                        >+</span
-                                    >
-                                </button>
+                                    {tag}
+                                </div>
+                            {/each}
+                        {:else if char.tags}
+                            {#each char.tags as tag}
+                                <div
+                                    class="px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-xs font-bold tracking-wide text-gray-500 shadow-sm"
+                                >
+                                    {$t(`tags.${tag}`) || tag}
+                                </div>
+                            {/each}
+                        {/if}
+                    </div>
+
+                    <div class="flex flex-col items-start gap-2 mt-2 w-fit">
+                        {#each [{ label: "bio.faction", localizedVal: baseInfoLocale.blocTag, rawVal: char.faction }, { label: "bio.race", localizedVal: baseInfoLocale.raceTag, rawVal: char.race }, { label: "bio.birth", type: "date", localizedVal: null, rawVal: char.birthDate }] as item}
+                            <div
+                                class="flex items-stretch min-h-[32px] rounded-lg overflow-hidden shadow-sm text-sm"
+                            >
+                                <div
+                                    class="bg-[#333] text-white px-4 flex items-center justify-center font-bold whitespace-nowrap min-w-[120px]"
+                                >
+                                    {$t(item.label) || item.label}
+                                </div>
 
                                 <div
-                                    class="w-[1px] h-6 bg-gray-300 dark:bg-gray-600 mx-1"
-                                ></div>
-
-                                <Tooltip
-                                    text={$t("settings.account.cancel") ||
-                                        "Cancel"}
+                                    class="bg-[#E5E5E5] text-[#333] px-4 py-1.5 flex items-center font-medium leading-tight"
                                 >
-                                    <button
-                                        on:click={cancelEdit}
-                                        class="w-8 h-8 rounded text-gray-500 hover:bg-gray-200 dark:hover:bg-[#444] flex items-center justify-center transition-colors"
-                                    >
-                                        <Icon name="close" class="w-4 h-4" />
-                                    </button>
-                                </Tooltip>
+                                    {#if item.localizedVal}
+                                        {item.localizedVal}
+                                    {:else if item.type === "date" && formatBirthDate(item.rawVal, $currentLocale)}
+                                        {formatBirthDate(
+                                            item.rawVal,
+                                            $currentLocale,
+                                        )}
+                                    {:else}
+                                        {$t(
+                                            `bioValues.${item.rawVal || "Unknown"}`,
+                                        ) ||
+                                            item.rawVal ||
+                                            "-"}
+                                    {/if}
+                                </div>
+                            </div>
+                        {/each}
 
-                                <Tooltip
-                                    text={$t("settings.account.save") || "Save"}
+                        {#if charDetails?.cv && Object.keys(charDetails.cv).length > 0}
+                            <div
+                                class="flex items-stretch min-h-[32px] rounded-lg overflow-hidden shadow-sm text-sm"
+                            >
+                                <div
+                                    class="bg-[#333] text-white px-2 flex items-center justify-center font-bold whitespace-nowrap min-w-[100px]"
                                 >
-                                    <button
-                                        on:click={savePot}
-                                        class="w-8 h-8 ml-1 rounded bg-[#FFC107] hover:bg-[#F9B90C] text-black flex items-center justify-center transition-colors"
-                                    >
-                                        <Icon name="save" class="w-4 h-4" />
-                                    </button>
-                                </Tooltip>
+                                    {$t("stats.voiceOver")}
+                                </div>
+
+                                <div
+                                    class="bg-[#E5E5E5] text-[#333] px-3 py-1.5 flex flex-col justify-center gap-0.5 font-medium text-sm"
+                                >
+                                    {#each Object.entries(charDetails.cv) as [langKey, name]}
+                                        {#if name}
+                                            <div
+                                                class="leading-tight whitespace-nowrap"
+                                            >
+                                                <strong
+                                                    class="uppercase text-gray-700"
+                                                    >{langKey}:</strong
+                                                >
+                                                {name}
+                                            </div>
+                                        {/if}
+                                    {/each}
+                                </div>
                             </div>
                         {/if}
                     </div>
                 </div>
 
                 <div
-                    class="flex flex-col md:flex-row md:items-center gap-2 md:gap-4 mt-2"
+                    class="flex flex-col gap-2 w-full md:max-w-[240px] max-w-[550px]"
                 >
-                    <div class="flex items-center gap-4">
-                        <Tooltip text={$t(`classes.${char.class}`)}>
-                            <div
-                                class="w-10 h-10 rounded flex items-center justify-center shadow-sm"
-                            >
-                                <Icon
-                                    name={char.class}
-                                    class="w-10 h-10 text-white rounded-md"
-                                />
-                            </div>
-                        </Tooltip>
-
-                        <div
-                            class="w-[1px] h-8 bg-gray-300 dark:bg-gray-500"
-                        ></div>
-
-                        <Tooltip text={$t(`elements.${char.element}`)}>
-                            <div
-                                class="w-10 h-10 rounded flex items-center justify-center shadow-sm"
-                            >
-                                <Icon
-                                    name={char.element}
-                                    class="w-10 h-10 text-white rounded-md"
-                                />
-                            </div>
-                        </Tooltip>
-                    </div>
-
-                    <div
-                        class="hidden md:block w-[1px] h-8 bg-gray-300 dark:bg-gray-500"
-                    ></div>
-
-                    <div class="flex items-center gap-0 -space-x-1">
-                        {#each Array(char.rarity || 1) as _}
-                            <Icon
-                                name="strokeStar"
-                                class="w-10 h-10"
-                                style="color: {rarityColor}; stroke-opacity: 50%"
-                            />
-                        {/each}
-                    </div>
-                </div>
-
-                <div class="flex flex-wrap gap-2 mt-2 items-center">
-                    {#if char.weapon}
-                        <div
-                            class="flex items-center gap-2 px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-xs font-bold tracking-wide text-gray-500 shadow-sm"
-                            title={$t(`weapons.${char.weapon}`)}
+                    {#each menuItems as item}
+                        <Button
+                            variant="menuButton"
+                            active={activeTab === item.id}
+                            onClick={() => (activeTab = item.id)}
+                            className="transition-all duration-300 {activeTab !==
+                            item.id
+                                ? 'opacity-70 hover:opacity-100'
+                                : 'scale-105'}"
                         >
-                            <Icon
-                                name={char.weapon}
-                                class="w-4 h-4 text-gray-700"
-                            />
-                            <span
-                                >{$t(`weapons.${char.weapon}`) ||
-                                    char.weapon}</span
-                            >
-                        </div>
-                    {/if}
-
-                    {#if baseInfoLocale.tags && baseInfoLocale.tags.length > 0}
-                        {#each baseInfoLocale.tags as tag}
-                            <div
-                                class="px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-xs font-bold tracking-wide text-gray-500 shadow-sm"
-                            >
-                                {tag}
-                            </div>
-                        {/each}
-                    {:else if char.tags}
-                        {#each char.tags as tag}
-                            <div
-                                class="px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-xs font-bold tracking-wide text-gray-500 shadow-sm"
-                            >
-                                {$t(`tags.${tag}`) || tag}
-                            </div>
-                        {/each}
-                    {/if}
-                </div>
-
-                <div class="flex flex-col items-start gap-2 mt-2 w-fit">
-                    {#each [{ label: "bio.faction", localizedVal: baseInfoLocale.blocTag, rawVal: char.faction }, { label: "bio.race", localizedVal: baseInfoLocale.raceTag, rawVal: char.race }, { label: "bio.birth", type: "date", localizedVal: null, rawVal: char.birthDate }] as item}
-                        <div
-                            class="flex items-stretch min-h-[32px] rounded-lg overflow-hidden shadow-sm text-sm"
-                        >
-                            <div
-                                class="bg-[#333] text-white px-4 flex items-center justify-center font-bold whitespace-nowrap min-w-[120px]"
-                            >
-                                {$t(item.label) || item.label}
-                            </div>
-
-                            <div
-                                class="bg-[#E5E5E5] text-[#333] px-4 py-1.5 flex items-center font-medium leading-tight"
-                            >
-                                {#if item.localizedVal}
-                                    {item.localizedVal}
-                                {:else if item.type === "date" && formatBirthDate(item.rawVal, $currentLocale)}
-                                    {formatBirthDate(
-                                        item.rawVal,
-                                        $currentLocale,
-                                    )}
-                                {:else}
-                                    {$t(
-                                        `bioValues.${item.rawVal || "Unknown"}`,
-                                    ) ||
-                                        item.rawVal ||
-                                        "-"}
-                                {/if}
-                            </div>
-                        </div>
+                            {$t(item.label) || item.id}
+                        </Button>
                     {/each}
-
-                    {#if charDetails?.cv && Object.keys(charDetails.cv).length > 0}
-                        <div
-                            class="flex items-stretch min-h-[32px] rounded-lg overflow-hidden shadow-sm text-sm"
-                        >
-                            <div
-                                class="bg-[#333] text-white px-2 flex items-center justify-center font-bold whitespace-nowrap min-w-[100px]"
-                            >
-                                {$t("stats.voiceOver")}
-                            </div>
-
-                            <div
-                                class="bg-[#E5E5E5] text-[#333] px-3 py-1.5 flex flex-col justify-center gap-0.5 font-medium text-sm"
-                            >
-                                {#each Object.entries(charDetails.cv) as [langKey, name]}
-                                    {#if name}
-                                        <div class="leading-tight whitespace-nowrap"><strong class="uppercase text-gray-700">{langKey}:</strong> {name}</div>
-                                    {/if}
-                                {/each}
-                            </div>
-                        </div>
-                    {/if}
                 </div>
             </div>
 
-            <div class="flex flex-col gap-2 w-full md:max-w-[240px] max-w-[550px]">
-                {#each menuItems as item}
-                    <Button
-                        variant="menuButton"
-                        active={activeTab === item.id}
-                        onClick={() => (activeTab = item.id)}
-                        className="transition-all duration-300 {activeTab !==
-                        item.id
-                            ? 'opacity-70 hover:opacity-100'
-                            : 'scale-105'}"
+            <div
+                id="tab-content"
+                class="relative z-10 w-full flex-1 2xl:max-w-[1300px] 2xl:ml-auto grid items-start min-w-0 scroll-mt-5"
+            >
+                {#key activeTab}
+                    <div
+                        in:fly={{ y: 15, duration: 100 }}
+                        class="col-start-1 row-start-1 flex flex-col gap-1 min-w-0 w-full {activeTab ===
+                        'about'
+                            ? '2xl:max-w-[400px] 2xl:ml-auto'
+                            : ''}"
                     >
-                        {$t(item.label) || item.id}
-                    </Button>
-                {/each}
-            </div>
-        </div>
-
-        <div
-            id="tab-content"
-            class="relative z-10 w-full flex-1 2xl:max-w-[1300px] 2xl:ml-auto grid items-start min-w-0 scroll-mt-5"
-        >
-            {#key activeTab}
-                <div
-                    in:fly={{ y: 15, duration: 100 }}
-                    class="col-start-1 row-start-1 flex flex-col gap-1 min-w-0 w-full {activeTab ===
-                    'about'
-                        ? '2xl:max-w-[400px] 2xl:ml-auto'
-                        : ''}"
-                >
-                    {#if activeTab === "about"}
-                        <div class="flex flex-wrap gap-5 items-start">
-                            <div
-                                class="w-full sm:flex-1 min-w-0 sm:min-w-[350px] max-w-[550px] bg-white/90 backdrop-blur-md dark:bg-[#383838]/90 dark:border-[#444444] p-6 rounded-2xl shadow-xl border border-white/50 flex flex-col gap-5"
-                            >
-                            <div class="flex flex-col gap-2">
-                                <div class="flex items-baseline gap-1">
-                                    <span
-                                        class="text-6xl font-sdk font-bold dark:text-[#FDFDFD] text-[#21272C] leading-none"
-                                    >
-                                        {level}
-                                    </span>
-                                    <span
-                                        class="text-xl font-bold text-gray-400 dark:text-[#B7B6B3] uppercase"
-                                        >Lv.</span
-                                    >
-                                </div>
-
+                        {#if activeTab === "about"}
+                            <div class="flex flex-wrap gap-5 items-start">
                                 <div
-                                    class="w-full relative h-6 flex items-center"
+                                    class="w-full sm:flex-1 min-w-0 sm:min-w-[350px] max-w-[550px] bg-white/90 backdrop-blur-md dark:bg-[#383838]/90 dark:border-[#444444] p-6 rounded-2xl shadow-xl border border-white/50 flex flex-col gap-5"
                                 >
-                                    <input
-                                        type="range"
-                                        min="1"
-                                        max={maxLevel}
-                                        step="1"
-                                        value={level}
-                                        on:input={handleInput}
-                                        class="touch-none w-full h-2 bg-gray-200 dark:bg-[#2C2C2C] rounded-lg appearance-none cursor-pointer accent-[#F9B90C] outline-none"
-                                    />
-                                </div>
-                            </div>
+                                    <div class="flex flex-col gap-2">
+                                        <div class="flex items-center justify-between">
+                                            <div class="flex items-baseline gap-1">
+                                                <span
+                                                    class="text-6xl font-sdk font-bold dark:text-[#FDFDFD] text-[#21272C] leading-none"
+                                                >
+                                                    {level}
+                                                </span>
+                                                <span
+                                                    class="text-xl font-bold text-gray-400 dark:text-[#B7B6B3] uppercase"
+                                                    >Lv.</span
+                                                >
+                                            </div>
+                                            <AscensionIcon
+                                                ascension={currentAscension}
+                                                size={60}
+                                                className="text-[#FDFDFD]"
+                                            />
+                                        </div>
 
-                            <div
-                                class="bg-[#333] rounded h-[36px] flex dark:bg-[#424242] items-center justify-between px-4 text-white shadow-sm"
-                            >
-                                <span class="font-bold text-sm">
-                                    {$t("stats.attributes") || "Attributes"}
-                                </span>
-
-                                <button
-                                    on:click={() => (showStatsTable = true)}
-                                    class="flex items-center gap-2 text-sm font-normal text-gray-300 hover:text-white transition-colors"
-                                >
-                                    <div
-                                        class="w-[1px] h-4 bg-gray-500 mx-1"
-                                    ></div>
-                                    <span class="flex gap-0.5 items-center"
-                                        ><Icon name="table" class="w-4 h-4" />
-                                        {$t("stats.table") || "Table"}</span
-                                    >
-                                </button>
-                            </div>
-
-                            <div class="flex flex-col gap-3 px-1">
-                                {#each ["str", "agi", "int", "will"] as attr}
-                                    {@const styles = getAttrStyles(
-                                        attr,
-                                        charStats.mainAttribute,
-                                        charStats.secondaryAttribute,
-                                    )}
-                                    {@const isMain =
-                                        attr === charStats.mainAttribute}
+                                        <div
+                                            class="w-full relative h-6 flex items-center"
+                                        >
+                                            <input
+                                                type="range"
+                                                min="1"
+                                                max={maxLevel}
+                                                step="1"
+                                                value={level}
+                                                on:input={handleInput}
+                                                class="touch-none w-full h-2 bg-gray-200 dark:bg-[#2C2C2C] rounded-lg appearance-none cursor-pointer accent-[#F9B90C] outline-none"
+                                            />
+                                        </div>
+                                    </div>
 
                                     <div
-                                        class="flex items-center justify-between h-[40px]"
+                                        class="bg-[#333] rounded h-[36px] flex dark:bg-[#424242] items-center justify-between px-4 text-white shadow-sm"
                                     >
-                                        <div class="flex items-center gap-3">
-                                            <Tooltip
-                                                text={$t(
-                                                    isMain
-                                                        ? "stats.mainAttr"
-                                                        : attr ===
-                                                            charStats.secondaryAttribute
-                                                          ? "stats.secAttr"
-                                                          : "",
-                                                )}
+                                        <span class="font-bold text-sm">
+                                            {$t("stats.attributes") ||
+                                                "Attributes"}
+                                        </span>
+
+                                        <button
+                                            on:click={() =>
+                                                (showStatsTable = true)}
+                                            class="flex items-center gap-2 text-sm font-normal text-gray-300 hover:text-white transition-colors"
+                                        >
+                                            <div
+                                                class="w-[1px] h-4 bg-gray-500 mx-1"
+                                            ></div>
+                                            <span
+                                                class="flex gap-0.5 items-center"
+                                                ><Icon
+                                                    name="table"
+                                                    class="w-4 h-4"
+                                                />
+                                                {$t("stats.table") ||
+                                                    "Table"}</span
+                                            >
+                                        </button>
+                                    </div>
+
+                                    <div class="flex flex-col gap-3 px-1">
+                                        {#each ["str", "agi", "int", "will"] as attr}
+                                            {@const styles = getAttrStyles(
+                                                attr,
+                                                charStats.mainAttribute,
+                                                charStats.secondaryAttribute,
+                                            )}
+                                            {@const isMain =
+                                                attr ===
+                                                charStats.mainAttribute}
+
+                                            <div
+                                                class="flex items-center justify-between h-[40px]"
                                             >
                                                 <div
-                                                    class="w-10 h-10 rounded flex items-center justify-center {styles.bg}"
+                                                    class="flex items-center gap-3"
+                                                >
+                                                    <Tooltip
+                                                        text={$t(
+                                                            isMain
+                                                                ? "stats.mainAttr"
+                                                                : attr ===
+                                                                    charStats.secondaryAttribute
+                                                                  ? "stats.secAttr"
+                                                                  : "",
+                                                        )}
+                                                    >
+                                                        <div
+                                                            class="w-10 h-10 rounded flex items-center justify-center {styles.bg}"
+                                                        >
+                                                            <Icon
+                                                                name={attr}
+                                                                class="w-6 h-6 {styles.icon}"
+                                                            />
+                                                        </div>
+                                                    </Tooltip>
+                                                    <span
+                                                        class="text-lg font-bold text-[#21272C] dark:text-[#E4E4E4]"
+                                                    >
+                                                        {$t(`stats.${attr}`) ||
+                                                            attr}
+                                                    </span>
+                                                </div>
+                                                <span
+                                                    class="text-2xl font-sdk font-bold text-[#21272C] dark:text-[#E4E4E4]"
+                                                >
+                                                    {calculateStat(
+                                                        charStats.attributes[
+                                                            attr
+                                                        ],
+                                                        level,
+                                                    )}
+                                                </span>
+                                            </div>
+                                        {/each}
+
+                                        <div
+                                            class="flex items-center justify-between h-[40px]"
+                                        >
+                                            <div
+                                                class="flex items-center gap-3"
+                                            >
+                                                <div
+                                                    class="w-10 h-10 rounded bg-[#8F8F8F] flex items-center justify-center"
                                                 >
                                                     <Icon
-                                                        name={attr}
-                                                        class="w-6 h-6 {styles.icon}"
+                                                        name="hp"
+                                                        class="w-6 h-6 text-white"
                                                     />
                                                 </div>
-                                            </Tooltip>
+                                                <span
+                                                    class="text-lg font-bold text-[#21272C] dark:text-[#E4E4E4]"
+                                                    >{$t("stats.baseHp") ||
+                                                        "Base HP"}</span
+                                                >
+                                            </div>
                                             <span
-                                                class="text-lg font-bold text-[#21272C] dark:text-[#E4E4E4]"
+                                                class="text-2xl font-sdk font-bold text-[#21272C] dark:text-[#E4E4E4]"
                                             >
-                                                {$t(`stats.${attr}`) || attr}
+                                                {calculateStat(
+                                                    charStats.hp,
+                                                    level,
+                                                )}
                                             </span>
                                         </div>
-                                        <span
-                                            class="text-2xl font-sdk font-bold text-[#21272C] dark:text-[#E4E4E4]"
-                                        >
-                                            {calculateStat(
-                                                charStats.attributes[attr],
-                                                level,
-                                            )}
-                                        </span>
-                                    </div>
-                                {/each}
 
-                                <div
-                                    class="flex items-center justify-between h-[40px]"
-                                >
-                                    <div class="flex items-center gap-3">
                                         <div
-                                            class="w-10 h-10 rounded bg-[#8F8F8F] flex items-center justify-center"
+                                            class="flex items-center justify-between h-[40px]"
                                         >
-                                            <Icon
-                                                name="hp"
-                                                class="w-6 h-6 text-white"
-                                            />
+                                            <div
+                                                class="flex items-center gap-3"
+                                            >
+                                                <div
+                                                    class="w-10 h-10 rounded bg-[#8F8F8F] flex items-center justify-center"
+                                                >
+                                                    <Icon
+                                                        name="atk"
+                                                        class="w-6 h-6 text-white"
+                                                    />
+                                                </div>
+                                                <span
+                                                    class="text-lg font-bold text-[#21272C] dark:text-[#E4E4E4]"
+                                                    >{$t("stats.baseAtk") ||
+                                                        "Base ATK"}</span
+                                                >
+                                            </div>
+                                            <span
+                                                class="text-2xl font-sdk font-bold text-[#21272C] dark:text-[#E4E4E4]"
+                                            >
+                                                {calculateStat(
+                                                    charStats.atk,
+                                                    level,
+                                                )}
+                                            </span>
                                         </div>
-                                        <span
-                                            class="text-lg font-bold text-[#21272C] dark:text-[#E4E4E4]"
-                                            >{$t("stats.baseHp") ||
-                                                "Base HP"}</span
-                                        >
                                     </div>
-                                    <span
-                                        class="text-2xl font-sdk font-bold text-[#21272C] dark:text-[#E4E4E4]"
-                                    >
-                                        {calculateStat(charStats.hp, level)}
-                                    </span>
                                 </div>
 
                                 <div
-                                    class="flex items-center justify-between h-[40px]"
+                                    class="w-full sm:flex-1 min-w-0 sm:min-w-[350px] max-w-[550px] bg-white/90 backdrop-blur-md p-6 dark:bg-[#383838]/90 dark:border-[#444444] rounded-2xl shadow-xl border border-white/50 flex flex-col gap-4"
                                 >
-                                    <div class="flex items-center gap-3">
-                                        <div
-                                            class="w-10 h-10 rounded bg-[#8F8F8F] flex items-center justify-center"
-                                        >
-                                            <Icon
-                                                name="atk"
-                                                class="w-6 h-6 text-white"
-                                            />
+                                    <div
+                                        class="flex flex-col md:flex-row md:items-center justify-between border-b border-gray-100 pb-3 dark:border-[#444444] gap-1"
+                                    >
+                                        <div class="flex items-center gap-2">
+                                            <span
+                                                class="font-bold text-[#21272C] text-lg dark:text-[#FDFDFD] mr-2"
+                                            >
+                                                {$t("stats.materials") ||
+                                                    "Materials"}
+                                            </span>
                                         </div>
-                                        <span
-                                            class="text-lg font-bold text-[#21272C] dark:text-[#E4E4E4]"
-                                            >{$t("stats.baseAtk") ||
-                                                "Base ATK"}</span
+
+                                        <div
+                                            class="flex items-center gap-2 flex-wrap"
                                         >
+                                            <label
+                                                class="flex items-center gap-1.5 text-xs md:text-sm font-medium text-gray-600 dark:text-[#B7B6B3] cursor-pointer select-none hover:text-black dark:hover:text-white transition-colors"
+                                            >
+                                                <input
+                                                    type="checkbox"
+                                                    bind:checked={showAscension}
+                                                    class="accent-[#F9B90C] w-3.5 h-3.5 md:w-4 md:h-4 cursor-pointer rounded"
+                                                />
+                                                {$t("stats.ascension") ||
+                                                    "Ascension"}
+                                            </label>
+                                            <label
+                                                class="flex items-center gap-1.5 text-xs md:text-sm font-medium text-gray-600 dark:text-[#B7B6B3] cursor-pointer select-none hover:text-black dark:hover:text-white transition-colors"
+                                            >
+                                                <input
+                                                    type="checkbox"
+                                                    bind:checked={isCumulative}
+                                                    class="accent-[#F9B90C] w-3.5 h-3.5 md:w-4 md:h-4 cursor-pointer rounded"
+                                                />
+                                                {$t("stats.cumulative") ||
+                                                    "Cumulative"}
+                                            </label>
+                                        </div>
                                     </div>
-                                    <span
-                                        class="text-2xl font-sdk font-bold text-[#21272C] dark:text-[#E4E4E4]"
+
+                                    <div
+                                        class="flex flex-wrap justify-center gap-2 pt-1"
                                     >
-                                        {calculateStat(charStats.atk, level)}
-                                    </span>
+                                        {#if neededMaterials.length > 0}
+                                            {#each neededMaterials as mat (mat.id)}
+                                                <ItemCard
+                                                    item={mat}
+                                                    amount={mat.amount}
+                                                />
+                                            {/each}
+                                        {:else}
+                                            <div
+                                                class="w-full text-center text-gray-400 text-sm py-4 italic"
+                                            >
+                                                {level === 1
+                                                    ? $t(
+                                                          "systemNames.noMaterialsNeeded",
+                                                      ) || "No materials needed"
+                                                    : $t("stats.maxed") ||
+                                                      "Max level reached"}
+                                            </div>
+                                        {/if}
+                                    </div>
                                 </div>
                             </div>
-                            </div>
-
+                        {:else if activeTab === "skills"}
                             <div
-                                class="w-full sm:flex-1 min-w-0 sm:min-w-[350px] max-w-[550px] bg-white/90 backdrop-blur-md p-6 dark:bg-[#383838]/90 dark:border-[#444444] rounded-2xl shadow-xl border border-white/50 flex flex-col gap-4"
+                                class="flex flex-col gap-5 animate-fadeIn w-full"
                             >
-                            <div
-                                class="flex flex-col md:flex-row md:items-center justify-between border-b border-gray-100 pb-3 dark:border-[#444444] gap-1"
-                            >
-                                <div class="flex items-center gap-2">
-                                    <span
-                                        class="font-bold text-[#21272C] text-lg dark:text-[#FDFDFD] mr-2"
-                                    >
-                                        {$t("stats.materials") || "Materials"}
-                                    </span>
-                                </div>
+                                <h2
+                                    class="text-3xl dark:text-[#FDFDFD] mb-1 font-bold text-[#21272C] drop-shadow-sm font-sdk text-left 2xl:text-right"
+                                >
+                                    {$t("menu.combatSkills") || "Combat Skills"}
+                                </h2>
 
-                                <div class="flex items-center gap-2 flex-wrap">
-                                    <label
-                                        class="flex items-center gap-1.5 text-xs md:text-sm font-medium text-gray-600 dark:text-[#B7B6B3] cursor-pointer select-none hover:text-black dark:hover:text-white transition-colors"
-                                    >
-                                        <input
-                                            type="checkbox"
-                                            bind:checked={showAscension}
-                                            class="accent-[#F9B90C] w-3.5 h-3.5 md:w-4 md:h-4 cursor-pointer rounded"
-                                        />
-                                        {$t("stats.ascension") || "Ascension"}
-                                    </label>
-                                    <label
-                                        class="flex items-center gap-1.5 text-xs md:text-sm font-medium text-gray-600 dark:text-[#B7B6B3] cursor-pointer select-none hover:text-black dark:hover:text-white transition-colors"
-                                    >
-                                        <input
-                                            type="checkbox"
-                                            bind:checked={isCumulative}
-                                            class="accent-[#F9B90C] w-3.5 h-3.5 md:w-4 md:h-4 cursor-pointer rounded"
-                                        />
-                                        {$t("stats.cumulative") || "Cumulative"}
-                                    </label>
-                                </div>
-                            </div>
-
-                            <div
-                                class="flex flex-wrap justify-center gap-2 pt-1"
-                            >
-                                {#if neededMaterials.length > 0}
-                                    {#each neededMaterials as mat (mat.id)}
-                                        <ItemCard
-                                            item={mat}
-                                            amount={mat.amount}
-                                        />
+                                <div
+                                    class="flex flex-wrap items-start gap-5 w-full justify-start 2xl:justify-end"
+                                >
+                                    {#each skillKeys as key}
+                                        {#if skillsValuesData[key]}
+                                            <SkillCard
+                                                charId={id}
+                                                skillKey={key}
+                                                element={char.element}
+                                                skillData={skillsLocale[key] ||
+                                                    {}}
+                                                skillValues={skillsValuesData[
+                                                    key
+                                                ]}
+                                                blackboard={charDetails.blackboard}
+                                                weaponType={char.weapon}
+                                                materialsData={getSkillMaterials(
+                                                    charMaterials,
+                                                    key,
+                                                )}
+                                                {itemsDb}
+                                                charLevel={level}
+                                                {charDetails}
+                                            />
+                                        {/if}
                                     {/each}
-                                {:else}
-                                    <div
-                                        class="w-full text-center text-gray-400 text-sm py-4 italic"
-                                    >
-                                        {level === 1
-                                            ? $t(
-                                                  "systemNames.noMaterialsNeeded",
-                                              ) || "No materials needed"
-                                            : $t("stats.maxed") ||
-                                              "Max level reached"}
-                                    </div>
-                                {/if}
+                                </div>
                             </div>
-                            </div>
-                        </div>
-                    {:else if activeTab === "skills"}
-                        <div class="flex flex-col gap-5 animate-fadeIn w-full">
-                            <h2
-                                class="text-3xl dark:text-[#FDFDFD] mb-1 font-bold text-[#21272C] drop-shadow-sm font-sdk text-left 2xl:text-right"
-                            >
-                                {$t("menu.combatSkills") || "Combat Skills"}
-                            </h2>
+                        {:else if activeTab === "talents"}
+                            <div class="flex flex-col gap-5 animate-fadeIn">
+                                <h2
+                                    class="text-3xl dark:text-[#FDFDFD] mb-2 font-bold text-[#21272C] drop-shadow-sm font-sdk text-left 2xl:text-right"
+                                >
+                                    {$t("menu.talents") || "Talents"}
+                                </h2>
 
-                            <div
-                                class="flex flex-wrap items-start gap-5 w-full justify-start 2xl:justify-end"
-                            >
-                                {#each skillKeys as key}
-                                    {#if skillsValuesData[key]}
-                                        <SkillCard
-                                            charId={id}
-                                            skillKey={key}
-                                            element={char.element}
-                                            skillData={skillsLocale[key] || {}}
-                                            skillValues={skillsValuesData[key]}
-                                            blackboard={charDetails.blackboard}
-                                            weaponType={char.weapon}
-                                            materialsData={getSkillMaterials(
-                                                charMaterials,
-                                                key,
-                                            )}
-                                            {itemsDb}
-                                            charLevel={level}
-                                            {charDetails}
-                                        />
+                                {#if skillsLocale?.talent1 || charMaterials?.talent1 || skillsLocale?.talent2 || charMaterials?.talent2}
+                                    <section>
+                                        <div
+                                            class="grid grid-cols-1 md:grid-cols-2 gap-5 w-full items-start justify-items-start 2xl:justify-items-end"
+                                        >
+                                            {#if skillsLocale?.talent1 || charMaterials?.talent1}
+                                                <div
+                                                    class="w-full max-w-[550px]"
+                                                >
+                                                    <TalentCard
+                                                        charId={id}
+                                                        type="talent"
+                                                        dataKey="talent1"
+                                                        materials={charMaterials?.talent1}
+                                                        indicatorType={charDetails?.indicatorType}
+                                                        localizedData={skillsLocale?.talent1}
+                                                        blackboard={charDetails?.blackboard}
+                                                    />
+                                                </div>
+                                            {/if}
+
+                                            {#if skillsLocale?.talent2 || charMaterials?.talent2}
+                                                <div
+                                                    class="w-full max-w-[550px]"
+                                                >
+                                                    <TalentCard
+                                                        charId={id}
+                                                        type="talent"
+                                                        dataKey="talent2"
+                                                        materials={charMaterials?.talent2}
+                                                        localizedData={skillsLocale?.talent2}
+                                                        indicatorType={charDetails?.indicatorType}
+                                                        blackboard={charDetails?.blackboard}
+                                                    />
+                                                </div>
+                                            {/if}
+                                        </div>
+                                    </section>
+                                {/if}
+
+                                {#if charDetails?.facSkills}
+                                    {@const fac1Keys = Object.keys(
+                                        charDetails.facSkills,
+                                    )
+                                        .filter((k) =>
+                                            k.startsWith("facSkill1_"),
+                                        )
+                                        .sort()}
+                                    {@const fac2Keys = Object.keys(
+                                        charDetails.facSkills,
+                                    )
+                                        .filter((k) =>
+                                            k.startsWith("facSkill2_"),
+                                        )
+                                        .sort()}
+
+                                    {@const fac1 =
+                                        charDetails.facSkills[fac1Keys[0]]}
+                                    {@const fac2 =
+                                        charDetails.facSkills[fac2Keys[0]]}
+
+                                    {@const hasBase1 =
+                                        skillsLocale?.baseSkill1 ||
+                                        charMaterials?.baseSkill1}
+                                    {@const hasBase2 =
+                                        skillsLocale?.baseSkill2 ||
+                                        charMaterials?.baseSkill2}
+
+                                    {#if (fac1 && hasBase1) || (fac2 && hasBase2)}
+                                        <section>
+                                            <div
+                                                class="grid grid-cols-1 md:grid-cols-2 gap-5 w-full items-start justify-items-start 2xl:justify-items-end"
+                                            >
+                                                {#if fac1 && hasBase1}
+                                                    <div
+                                                        class="w-full max-w-[550px]"
+                                                    >
+                                                        <TalentCard
+                                                            charId={id}
+                                                            type="base"
+                                                            index={0}
+                                                            dataKey="baseSkill1"
+                                                            materials={charMaterials?.baseSkill1}
+                                                            localizedData={skillsLocale?.baseSkill1}
+                                                            facSkillImage={fac1.name}
+                                                            blackboard={charDetails?.blackboard}
+                                                            postfixes={fac1Keys
+                                                                .map(
+                                                                    (k) =>
+                                                                        charDetails
+                                                                            .facSkills[
+                                                                            k
+                                                                        ]
+                                                                            ?.skillNamePostfix,
+                                                                )
+                                                                .filter(
+                                                                    Boolean,
+                                                                )}
+                                                        />
+                                                    </div>
+                                                {/if}
+
+                                                {#if fac2 && hasBase2}
+                                                    <div
+                                                        class="w-full max-w-[550px]"
+                                                    >
+                                                        <TalentCard
+                                                            charId={id}
+                                                            type="base"
+                                                            index={1}
+                                                            dataKey="baseSkill2"
+                                                            materials={charMaterials?.baseSkill2}
+                                                            localizedData={skillsLocale?.baseSkill2}
+                                                            facSkillImage={fac2.name}
+                                                            blackboard={charDetails?.blackboard}
+                                                            postfixes={fac2Keys
+                                                                .map(
+                                                                    (k) =>
+                                                                        charDetails
+                                                                            .facSkills[
+                                                                            k
+                                                                        ]
+                                                                            ?.skillNamePostfix,
+                                                                )
+                                                                .filter(
+                                                                    Boolean,
+                                                                )}
+                                                        />
+                                                    </div>
+                                                {/if}
+                                            </div>
+                                        </section>
                                     {/if}
-                                {/each}
+
+                                    {#if skillsLocale?.indicator || charMaterials?.indicator}
+                                        <section>
+                                            <div
+                                                class="grid grid-cols-1 md:grid-cols-2 gap-5 w-full items-start justify-items-start 2xl:justify-items-end"
+                                            >
+                                                <div
+                                                    class="w-full max-w-[550px]"
+                                                >
+                                                    <TalentCard
+                                                        charId={id}
+                                                        type="indicator"
+                                                        dataKey="indicator"
+                                                        maxLevels={4}
+                                                        materials={charMaterials?.indicator}
+                                                        indicatorType={charDetails?.indicatorType}
+                                                        localizedData={skillsLocale?.indicator}
+                                                    />
+                                                </div>
+                                            </div>
+                                        </section>
+                                    {/if}
+                                {/if}
                             </div>
-                        </div>
-                    {:else if activeTab === "talents"}
-                        <div class="flex flex-col gap-5 animate-fadeIn">
-                            <h2
-                                class="text-3xl dark:text-[#FDFDFD] mb-2 font-bold text-[#21272C] drop-shadow-sm font-sdk text-left 2xl:text-right"
+                        {:else if activeTab === "files"}
+                            <div
+                                class="flex flex-col gap-5 animate-fadeIn w-full"
                             >
-                                {$t("menu.talents") || "Talents"}
-                            </h2>
+                                <h2
+                                    class="text-3xl dark:text-[#FDFDFD] font-bold text-[#21272C] mb-4 drop-shadow-sm font-sdk text-left 2xl:text-right"
+                                >
+                                    {$t("menu.files")}
+                                </h2>
 
-                            {#if skillsLocale?.talent1 || charMaterials?.talent1 || skillsLocale?.talent2 || charMaterials?.talent2}
-                                <section>
-                                    <div
-                                        class="grid grid-cols-1 md:grid-cols-2 gap-5 w-full items-start justify-items-start 2xl:justify-items-end"
-                                    >
-                                        {#if skillsLocale?.talent1 || charMaterials?.talent1}
-                                            <div
-                                                class="w-full max-w-[550px]"
-                                            >
-                                                <TalentCard
-                                                    charId={id}
-                                                    type="talent"
-                                                    dataKey="talent1"
-                                                    materials={charMaterials?.talent1}
-                                                    indicatorType={charDetails?.indicatorType}
-                                                    localizedData={skillsLocale?.talent1}
-                                                    blackboard={charDetails?.blackboard}
-                                                />
-                                            </div>
-                                        {/if}
-
-                                        {#if skillsLocale?.talent2 || charMaterials?.talent2}
-                                            <div
-                                                class="w-full max-w-[550px]"
-                                            >
-                                                <TalentCard
-                                                    charId={id}
-                                                    type="talent"
-                                                    dataKey="talent2"
-                                                    materials={charMaterials?.talent2}
-                                                    localizedData={skillsLocale?.talent2}
-                                                    indicatorType={charDetails?.indicatorType}
-                                                    blackboard={charDetails?.blackboard}
-                                                />
-                                            </div>
-                                        {/if}
-                                    </div>
-                                </section>
-                            {/if}
-
-                            {#if charDetails?.facSkills}
-                                {@const fac1Keys = Object.keys(
-                                    charDetails.facSkills,
-                                )
-                                    .filter((k) => k.startsWith("facSkill1_"))
-                                    .sort()}
-                                {@const fac2Keys = Object.keys(
-                                    charDetails.facSkills,
-                                )
-                                    .filter((k) => k.startsWith("facSkill2_"))
-                                    .sort()}
-
-                                {@const fac1 =
-                                    charDetails.facSkills[fac1Keys[0]]}
-                                {@const fac2 =
-                                    charDetails.facSkills[fac2Keys[0]]}
-
-                                {@const hasBase1 =
-                                    skillsLocale?.baseSkill1 ||
-                                    charMaterials?.baseSkill1}
-                                {@const hasBase2 =
-                                    skillsLocale?.baseSkill2 ||
-                                    charMaterials?.baseSkill2}
-
-                                {#if (fac1 && hasBase1) || (fac2 && hasBase2)}
-                                    <section>
-                                        <div
-                                            class="grid grid-cols-1 md:grid-cols-2 gap-5 w-full items-start justify-items-start 2xl:justify-items-end"
-                                        >
-                                            {#if fac1 && hasBase1}
-                                                <div
-                                                    class="w-full max-w-[550px]"
-                                                >
-                                                    <TalentCard
-                                                        charId={id}
-                                                        type="base"
-                                                        index={0}
-                                                        dataKey="baseSkill1"
-                                                        materials={charMaterials?.baseSkill1}
-                                                        localizedData={skillsLocale?.baseSkill1}
-                                                        facSkillImage={fac1.name}
-                                                        blackboard={charDetails?.blackboard}
-                                                        postfixes={fac1Keys
-                                                            .map(
-                                                                (k) =>
-                                                                    charDetails
-                                                                        .facSkills[
-                                                                        k
-                                                                    ]
-                                                                        ?.skillNamePostfix,
-                                                            )
-                                                            .filter(Boolean)}
-                                                    />
-                                                </div>
-                                            {/if}
-
-                                            {#if fac2 && hasBase2}
-                                                <div
-                                                    class="w-full max-w-[550px]"
-                                                >
-                                                    <TalentCard
-                                                        charId={id}
-                                                        type="base"
-                                                        index={1}
-                                                        dataKey="baseSkill2"
-                                                        materials={charMaterials?.baseSkill2}
-                                                        localizedData={skillsLocale?.baseSkill2}
-                                                        facSkillImage={fac2.name}
-                                                        blackboard={charDetails?.blackboard}
-                                                        postfixes={fac2Keys
-                                                            .map(
-                                                                (k) =>
-                                                                    charDetails
-                                                                        .facSkills[
-                                                                        k
-                                                                    ]
-                                                                        ?.skillNamePostfix,
-                                                            )
-                                                            .filter(Boolean)}
-                                                    />
-                                                </div>
-                                            {/if}
-                                        </div>
-                                    </section>
-                                {/if}
-
-                                {#if skillsLocale?.indicator || charMaterials?.indicator}
-                                    <section>
-                                        <div
-                                            class="grid grid-cols-1 md:grid-cols-2 gap-5 w-full items-start justify-items-start 2xl:justify-items-end"
-                                        >
-                                            <div
-                                                class="w-full max-w-[550px]"
-                                            >
-                                                <TalentCard
-                                                    charId={id}
-                                                    type="indicator"
-                                                    dataKey="indicator"
-                                                    maxLevels={4}
-                                                    materials={charMaterials?.indicator}
-                                                    indicatorType={charDetails?.indicatorType}
-                                                    localizedData={skillsLocale?.indicator}
-                                                />
-                                            </div>
-                                        </div>
-                                    </section>
-                                {/if}
-                            {/if}
-                        </div>
-                    {:else if activeTab === "files"}
-                        <div class="flex flex-col gap-5 animate-fadeIn w-full">
-                            <h2
-                                class="text-3xl dark:text-[#FDFDFD] font-bold text-[#21272C] mb-4 drop-shadow-sm font-sdk text-left 2xl:text-right"
-                            >
-                                {$t("menu.files")}
-                            </h2>
-
-                            {#if hasTags || hasFiles}
-                                {#each expertTags as [tagKey, tagData], index}
-                                    <div
-                                        class="bg-white/90 backdrop-blur-md dark:bg-[#383838]/90 p-6 rounded-2xl dark:border-[#444444] shadow-xl border border-white/50 flex flex-col gap-3"
-                                    >
-                                        <div class="flex items-center justify-between gap-3 border-b border-gray-100 dark:border-[#444444] pb-1.5 flex-wrap">
-                                            <h3
-                                                class="font-bold text-lg text-[#21272C] dark:text-[#E4E4E4]"
-                                            >
-                                                {$t("stats.profile")}: {index + 1}
-                                            </h3>
-                                            {#if tagData?.name}
-                                                <span class="px-3 py-0.5 bg-gray-100 dark:bg-[#444] rounded-full text-xs font-semibold text-gray-700 dark:text-gray-200 border border-gray-200 dark:border-[#555]">
-                                                    {tagData.name}
-                                                </span>
-                                            {/if}
-                                        </div>
-                                        {#if tagData?.description}
-                                            <div
-                                                class="text-gray-700 dark:text-[#E4E4E4] whitespace-pre-wrap text-sm leading-relaxed font-medium"
-                                                use:hyperlinkAction
-                                            >
-                                                {@html parseRichText(tagData.description)}
-                                            </div>
-                                        {/if}
-                                    </div>
-                                {/each}
-
-                                {#each hobbyTags as [tagKey, tagData], index}
-                                    <div
-                                        class="bg-white/90 backdrop-blur-md dark:bg-[#383838]/90 p-6 rounded-2xl dark:border-[#444444] shadow-xl border border-white/50 flex flex-col gap-3"
-                                    >
-                                        <div class="flex items-center justify-between gap-3 border-b border-gray-100 dark:border-[#444444] pb-1.5 flex-wrap">
-                                            <h3
-                                                class="font-bold text-lg text-[#21272C] dark:text-[#E4E4E4]"
-                                            >
-                                                {$t("stats.hobbies")}: {index + 1}
-                                            </h3>
-                                            {#if tagData?.name}
-                                                <span class="px-3 py-0.5 bg-gray-100 dark:bg-[#444] rounded-full text-xs font-semibold text-gray-700 dark:text-gray-200 border border-gray-200 dark:border-[#555]">
-                                                    {tagData.name}
-                                                </span>
-                                            {/if}
-                                        </div>
-                                        {#if tagData?.description}
-                                            <div
-                                                class="text-gray-700 dark:text-[#E4E4E4] whitespace-pre-wrap text-sm leading-relaxed font-medium"
-                                                use:hyperlinkAction
-                                            >
-                                                {@html parseRichText(tagData.description)}
-                                            </div>
-                                        {/if}
-                                    </div>
-                                {/each}
-
-                                {#if skillsLocale?.files}
-                                    {#each Object.entries(skillsLocale.files) as [fileKey, fileContent]}
+                                {#if hasTags || hasFiles}
+                                    {#each expertTags as [tagKey, tagData], index}
                                         <div
                                             class="bg-white/90 backdrop-blur-md dark:bg-[#383838]/90 p-6 rounded-2xl dark:border-[#444444] shadow-xl border border-white/50 flex flex-col gap-3"
                                         >
-                                            <h3
-                                                class="font-bold text-lg text-[#21272C] dark:text-[#E4E4E4] border-b border-gray-100 dark:border-[#444444] pb-1"
-                                            >
-                                                {formatFileTitle(fileKey)}
-                                            </h3>
                                             <div
-                                                class="text-gray-700 dark:text-[#E4E4E4] whitespace-pre-wrap text-sm leading-relaxed font-medium"
-                                                use:hyperlinkAction
-                                            >
-                                                {@html parseRichText(fileContent)}
-                                            </div>
-                                        </div>
-                                    {/each}
-                                {/if}
-                            {:else}
-                                <div
-                                    class="text-gray-500 text-center italic mt-10"
-                                >
-                                    {$t("global.noData")}
-                                </div>
-                            {/if}
-                        </div>
-                    {:else if activeTab === "potentials"}
-                        <div class="flex flex-col gap-5 animate-fadeIn w-full potentials-wrapper">
-                            <h2
-                                class="text-3xl dark:text-[#FDFDFD] font-bold text-[#21272C] mb-4 drop-shadow-sm font-sdk text-left 2xl:text-right"
-                            >
-                                {$t("menu.potentials") || "Potentials"}
-                            </h2>
-
-                            {#if charLocale?.potentials}
-                                <div class="flex flex-col gap-4">
-                                    {#each Object.entries(charLocale.potentials) as [potKey, potData]}
-                                        {@const bbData =
-                                            charDetails.blackboard?.[potKey]}
-                                        <div
-                                            class="bg-white/90 backdrop-blur-md dark:bg-[#383838]/90 p-5 rounded-2xl dark:border-[#444444] shadow-xl border border-white/50 flex gap-4 items-start transition-transform"
-                                        >
-                                            <div class="relative flex items-center justify-center shrink-0 w-14 h-14 mt-0.5">
-                                                <div 
-                                                    class="absolute -inset-6 rounded-full dark:hidden pointer-events-none" 
-                                                    style="background: radial-gradient(circle, rgba(0,0,0,0.28) 0%, rgba(0,0,0,0.1) 25%, rgba(0,0,0,0) 50%);"
-                                                ></div>
-                                                <PotentialIcon
-                                                    pot={parseInt(potKey.replace("potential", ""))}
-                                                    size={48}
-                                                    showNumber={true}
-                                                />
-                                            </div>
-
-                                            <div
-                                                class="flex flex-col gap-1 w-full"
+                                                class="flex items-center justify-between gap-3 border-b border-gray-100 dark:border-[#444444] pb-1.5 flex-wrap"
                                             >
                                                 <h3
-                                                    class="font-bold text-lg text-[#21272C] dark:text-[#E4E4E4] dark:border-[#444444] border-b border-gray-100 pb-1.5"
+                                                    class="font-bold text-lg text-[#21272C] dark:text-[#E4E4E4]"
                                                 >
-                                                    {potData.name}
+                                                    {$t("stats.profile")}: {index +
+                                                        1}
                                                 </h3>
+                                                {#if tagData?.name}
+                                                    <span
+                                                        class="px-3 py-0.5 bg-gray-100 dark:bg-[#444] rounded-full text-xs font-semibold text-gray-700 dark:text-gray-200 border border-gray-200 dark:border-[#555]"
+                                                    >
+                                                        {tagData.name}
+                                                    </span>
+                                                {/if}
+                                            </div>
+                                            {#if tagData?.description}
                                                 <div
-                                                    class="text-gray-700 text-sm dark:text-[#E4E4E4] leading-relaxed font-medium mt-1"
+                                                    class="text-gray-700 dark:text-[#E4E4E4] whitespace-pre-wrap text-sm leading-relaxed font-medium"
                                                     use:hyperlinkAction
                                                 >
                                                     {@html parseRichText(
-                                                        interpolateBlackboard(
-                                                            potData.description,
-                                                            bbData,
-                                                        ),
+                                                        tagData.description,
+                                                    )}
+                                                </div>
+                                            {/if}
+                                        </div>
+                                    {/each}
+
+                                    {#each hobbyTags as [tagKey, tagData], index}
+                                        <div
+                                            class="bg-white/90 backdrop-blur-md dark:bg-[#383838]/90 p-6 rounded-2xl dark:border-[#444444] shadow-xl border border-white/50 flex flex-col gap-3"
+                                        >
+                                            <div
+                                                class="flex items-center justify-between gap-3 border-b border-gray-100 dark:border-[#444444] pb-1.5 flex-wrap"
+                                            >
+                                                <h3
+                                                    class="font-bold text-lg text-[#21272C] dark:text-[#E4E4E4]"
+                                                >
+                                                    {$t("stats.hobbies")}: {index +
+                                                        1}
+                                                </h3>
+                                                {#if tagData?.name}
+                                                    <span
+                                                        class="px-3 py-0.5 bg-gray-100 dark:bg-[#444] rounded-full text-xs font-semibold text-gray-700 dark:text-gray-200 border border-gray-200 dark:border-[#555]"
+                                                    >
+                                                        {tagData.name}
+                                                    </span>
+                                                {/if}
+                                            </div>
+                                            {#if tagData?.description}
+                                                <div
+                                                    class="text-gray-700 dark:text-[#E4E4E4] whitespace-pre-wrap text-sm leading-relaxed font-medium"
+                                                    use:hyperlinkAction
+                                                >
+                                                    {@html parseRichText(
+                                                        tagData.description,
+                                                    )}
+                                                </div>
+                                            {/if}
+                                        </div>
+                                    {/each}
+
+                                    {#if skillsLocale?.files}
+                                        {#each Object.entries(skillsLocale.files) as [fileKey, fileContent]}
+                                            <div
+                                                class="bg-white/90 backdrop-blur-md dark:bg-[#383838]/90 p-6 rounded-2xl dark:border-[#444444] shadow-xl border border-white/50 flex flex-col gap-3"
+                                            >
+                                                <h3
+                                                    class="font-bold text-lg text-[#21272C] dark:text-[#E4E4E4] border-b border-gray-100 dark:border-[#444444] pb-1"
+                                                >
+                                                    {formatFileTitle(fileKey)}
+                                                </h3>
+                                                <div
+                                                    class="text-gray-700 dark:text-[#E4E4E4] whitespace-pre-wrap text-sm leading-relaxed font-medium"
+                                                    use:hyperlinkAction
+                                                >
+                                                    {@html parseRichText(
+                                                        fileContent,
                                                     )}
                                                 </div>
                                             </div>
-                                        </div>
-                                    {/each}
-                                </div>
-                            {:else}
-                                <div
-                                    class="text-gray-500 text-center italic mt-10"
-                                >
-                                    {$t("global.noData") || "No Data"}
-                                </div>
-                            {/if}
-                        </div>
-                    {:else if activeTab === "guides"}
-                        <div class="flex flex-col gap-5 animate-fadeIn w-full">
-                            <h2
-                                class="text-3xl dark:text-[#FDFDFD] font-bold text-[#21272C] mb-4 drop-shadow-sm font-sdk text-left 2xl:text-right"
+                                        {/each}
+                                    {/if}
+                                {:else}
+                                    <div
+                                        class="text-gray-500 text-center italic mt-10"
+                                    >
+                                        {$t("global.noData")}
+                                    </div>
+                                {/if}
+                            </div>
+                        {:else if activeTab === "potentials"}
+                            <div
+                                class="flex flex-col gap-5 animate-fadeIn w-full potentials-wrapper"
                             >
-                                {$t("menu.matchingWeapon")}
-                            </h2>
-
-                            <div class="flex flex-col gap-5 w-full">
-                                <div
-                                    class="bg-white/90 backdrop-blur-md dark:bg-[#383838]/90 p-6 rounded-2xl dark:border-[#444444] shadow-xl border border-white/50 flex flex-col gap-4"
+                                <h2
+                                    class="text-3xl dark:text-[#FDFDFD] font-bold text-[#21272C] mb-4 drop-shadow-sm font-sdk text-left 2xl:text-right"
                                 >
-                                    <h3
-                                        class="font-bold text-lg text-[#21272C] dark:text-[#E4E4E4] border-b border-gray-100 dark:border-[#444444] pb-2"
-                                    >
-                                        {$t("stats.matchingSkills")}
-                                    </h3>
-                                    {#if skillWeapons.length > 0}
-                                        <div class="flex flex-wrap gap-4">
-                                            {#each skillWeapons as weaponObj}
-                                                <WeaponCard weapon={weaponObj} />
-                                            {/each}
-                                        </div>
-                                    {:else}
-                                        <div class="text-gray-500 italic text-sm">
-                                            {$t("global.noData")}
-                                        </div>
-                                    {/if}
-                                </div>
+                                    {$t("menu.potentials") || "Potentials"}
+                                </h2>
 
-                                <div
-                                    class="bg-white/90 backdrop-blur-md dark:bg-[#383838]/90 p-6 rounded-2xl dark:border-[#444444] shadow-xl border border-white/50 flex flex-col gap-4"
-                                >
-                                    <h3
-                                        class="font-bold text-lg text-[#21272C] dark:text-[#E4E4E4] border-b border-gray-100 dark:border-[#444444] pb-2"
+                                {#if charLocale?.potentials}
+                                    <div class="flex flex-col gap-4">
+                                        {#each Object.entries(charLocale.potentials) as [potKey, potData]}
+                                            {@const bbData =
+                                                charDetails.blackboard?.[
+                                                    potKey
+                                                ]}
+                                            <div
+                                                class="bg-white/90 backdrop-blur-md dark:bg-[#383838]/90 p-5 rounded-2xl dark:border-[#444444] shadow-xl border border-white/50 flex gap-4 items-start transition-transform"
+                                            >
+                                                <div
+                                                    class="relative flex items-center justify-center shrink-0 w-14 h-14 mt-0.5"
+                                                >
+                                                    <div
+                                                        class="absolute -inset-6 rounded-full dark:hidden pointer-events-none"
+                                                        style="background: radial-gradient(circle, rgba(0,0,0,0.28) 0%, rgba(0,0,0,0.1) 25%, rgba(0,0,0,0) 50%);"
+                                                    ></div>
+                                                    <PotentialIcon
+                                                        pot={parseInt(
+                                                            potKey.replace(
+                                                                "potential",
+                                                                "",
+                                                            ),
+                                                        )}
+                                                        size={48}
+                                                        showNumber={true}
+                                                    />
+                                                </div>
+
+                                                <div
+                                                    class="flex flex-col gap-1 w-full"
+                                                >
+                                                    <h3
+                                                        class="font-bold text-lg text-[#21272C] dark:text-[#E4E4E4] dark:border-[#444444] border-b border-gray-100 pb-1.5"
+                                                    >
+                                                        {potData.name}
+                                                    </h3>
+                                                    <div
+                                                        class="text-gray-700 text-sm dark:text-[#E4E4E4] leading-relaxed font-medium mt-1"
+                                                        use:hyperlinkAction
+                                                    >
+                                                        {@html parseRichText(
+                                                            interpolateBlackboard(
+                                                                potData.description,
+                                                                bbData,
+                                                            ),
+                                                        )}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        {/each}
+                                    </div>
+                                {:else}
+                                    <div
+                                        class="text-gray-500 text-center italic mt-10"
                                     >
-                                        {$t("stats.matchingStats")}
-                                    </h3>
-                                    {#if attrWeapons.length > 0}
-                                        <div class="flex flex-wrap gap-4">
-                                            {#each attrWeapons as weaponObj}
-                                                <WeaponCard weapon={weaponObj} />
-                                            {/each}
-                                        </div>
-                                    {:else}
-                                        <div class="text-gray-500 italic text-sm">
-                                            {$t("global.noData")}
-                                        </div>
-                                    {/if}
+                                        {$t("global.noData") || "No Data"}
+                                    </div>
+                                {/if}
+                            </div>
+                        {:else if activeTab === "guides"}
+                            <div
+                                class="flex flex-col gap-5 animate-fadeIn w-full"
+                            >
+                                <h2
+                                    class="text-3xl dark:text-[#FDFDFD] font-bold text-[#21272C] mb-4 drop-shadow-sm font-sdk text-left 2xl:text-right"
+                                >
+                                    {$t("menu.matchingWeapon")}
+                                </h2>
+
+                                <div class="flex flex-col gap-5 w-full">
+                                    <div
+                                        class="bg-white/90 backdrop-blur-md dark:bg-[#383838]/90 p-6 rounded-2xl dark:border-[#444444] shadow-xl border border-white/50 flex flex-col gap-4"
+                                    >
+                                        <h3
+                                            class="font-bold text-lg text-[#21272C] dark:text-[#E4E4E4] border-b border-gray-100 dark:border-[#444444] pb-2"
+                                        >
+                                            {$t("stats.matchingSkills")}
+                                        </h3>
+                                        {#if skillWeapons.length > 0}
+                                            <div class="flex flex-wrap gap-4">
+                                                {#each skillWeapons as weaponObj}
+                                                    <WeaponCard
+                                                        weapon={weaponObj}
+                                                    />
+                                                {/each}
+                                            </div>
+                                        {:else}
+                                            <div
+                                                class="text-gray-500 italic text-sm"
+                                            >
+                                                {$t("global.noData")}
+                                            </div>
+                                        {/if}
+                                    </div>
+
+                                    <div
+                                        class="bg-white/90 backdrop-blur-md dark:bg-[#383838]/90 p-6 rounded-2xl dark:border-[#444444] shadow-xl border border-white/50 flex flex-col gap-4"
+                                    >
+                                        <h3
+                                            class="font-bold text-lg text-[#21272C] dark:text-[#E4E4E4] border-b border-gray-100 dark:border-[#444444] pb-2"
+                                        >
+                                            {$t("stats.matchingStats")}
+                                        </h3>
+                                        {#if attrWeapons.length > 0}
+                                            <div class="flex flex-wrap gap-4">
+                                                {#each attrWeapons as weaponObj}
+                                                    <WeaponCard
+                                                        weapon={weaponObj}
+                                                    />
+                                                {/each}
+                                            </div>
+                                        {:else}
+                                            <div
+                                                class="text-gray-500 italic text-sm"
+                                            >
+                                                {$t("global.noData")}
+                                            </div>
+                                        {/if}
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    {:else if activeTab === "artwork"}
-                        <div class="flex flex-col gap-5 animate-fadeIn w-full">
-                            <h2
-                                class="text-3xl dark:text-[#FDFDFD] font-bold text-[#21272C] mb-4 drop-shadow-sm font-sdk text-left 2xl:text-right"
+                        {:else if activeTab === "artwork"}
+                            <div
+                                class="flex flex-col gap-5 animate-fadeIn w-full"
                             >
-                                {$t("menu.artwork") || "Artwork"}
-                            </h2>
-
-                            {#if charLocale?.arts}
-                                <div
-                                    class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full items-start justify-items-start 2xl:justify-items-end"
+                                <h2
+                                    class="text-3xl dark:text-[#FDFDFD] font-bold text-[#21272C] mb-4 drop-shadow-sm font-sdk text-left 2xl:text-right"
                                 >
-                                    {#each Object.entries(charLocale.arts) as [artKey, artData]}
-                                        {@const realKey =
-                                            artKey === "potential6"
-                                                ? "potential5"
-                                                : artKey}
+                                    {$t("menu.artwork") || "Artwork"}
+                                </h2>
 
+                                {#if charLocale?.arts}
+                                    <div
+                                        class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full items-start justify-items-start 2xl:justify-items-end"
+                                    >
+                                        {#each Object.entries(charLocale.arts) as [artKey, artData]}
+                                            {@const realKey =
+                                                artKey === "potential6"
+                                                    ? "potential5"
+                                                    : artKey}
+
+                                            <div
+                                                class="w-full max-w-[550px] bg-white/90 backdrop-blur-md dark:bg-[#383838]/90 group flex flex-col shadow-xl rounded-2xl overflow-hidden border border-white/50 transition-all dark:border-[#444444]"
+                                            >
+                                                <div
+                                                    role="button"
+                                                    tabindex="0"
+                                                    class="relative w-full aspect-[16/9] bg-gradient-to-br from-[#3A3A3A] to-[#1A1A1A] flex flex-col items-center justify-center overflow-hidden cursor-zoom-in outline-none focus:ring-4 focus:ring-gray-300"
+                                                    on:click={() =>
+                                                        (selectedArtId = `${id}_${realKey}`)}
+                                                    on:keydown={(e) =>
+                                                        (e.key === "Enter" ||
+                                                            e.key === " ") &&
+                                                        (selectedArtId = `${id}_${realKey}`)}
+                                                >
+                                                    <Image
+                                                        id={`${id}_${realKey}`}
+                                                        variant="operator-art"
+                                                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                                                        alt={artData.name}
+                                                    />
+
+                                                    <div
+                                                        class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500 pointer-events-none"
+                                                    ></div>
+
+                                                    <div
+                                                        class="absolute top-3 left-3 bg-black/60 backdrop-blur text-white text-[10px] font-bold px-2.5 py-1 rounded-full shadow-sm z-10 pointer-events-none"
+                                                    >
+                                                        Phase {realKey.replace(
+                                                            "potential",
+                                                            "",
+                                                        )}
+                                                    </div>
+
+                                                    <div
+                                                        class="absolute top-3 right-3 z-20 flex items-center gap-2"
+                                                    >
+                                                        <button
+                                                            class="flex items-center justify-center w-8 h-8 bg-black/60 hover:bg-[#FFD800] text-white hover:text-black backdrop-blur rounded-full transition-all duration-300 shadow-md group/copy"
+                                                            title="Copy image"
+                                                            on:click|stopPropagation={async () => {
+                                                                try {
+                                                                    const imageUrl =
+                                                                        getImagePath(
+                                                                            `${id}_${realKey}`,
+                                                                            "operator-art",
+                                                                        );
+                                                                    const response =
+                                                                        await fetch(
+                                                                            imageUrl,
+                                                                        );
+                                                                    const blob =
+                                                                        await response.blob();
+                                                                    await navigator.clipboard.write(
+                                                                        [
+                                                                            new ClipboardItem(
+                                                                                {
+                                                                                    [blob.type]:
+                                                                                        blob,
+                                                                                },
+                                                                            ),
+                                                                        ],
+                                                                    );
+
+                                                                    copiedArtId =
+                                                                        realKey;
+
+                                                                    setTimeout(
+                                                                        () => {
+                                                                            if (
+                                                                                copiedArtId ===
+                                                                                realKey
+                                                                            )
+                                                                                copiedArtId =
+                                                                                    null;
+                                                                        },
+                                                                        2000,
+                                                                    );
+                                                                } catch (err) {
+                                                                    console.error(
+                                                                        "Error copying:",
+                                                                        err,
+                                                                    );
+                                                                }
+                                                            }}
+                                                        >
+                                                            {#if copiedArtId === realKey}
+                                                                <Icon
+                                                                    name="success"
+                                                                    class="w-3.5 h-3.5 text-yellow-400"
+                                                                />
+                                                            {:else}
+                                                                <Icon
+                                                                    name="copy"
+                                                                    class="w-4 h-4 transition-transform group-hover/copy:scale-110"
+                                                                />
+                                                            {/if}
+                                                        </button>
+                                                        <button
+                                                            class="flex items-center justify-center w-8 h-8 bg-black/60 hover:bg-[#FFD800] text-white hover:text-black backdrop-blur rounded-full transition-all duration-300 shadow-md group/down"
+                                                            title="Dowanload Art"
+                                                            on:click|stopPropagation={() => {
+                                                                const imageUrl =
+                                                                    getImagePath(
+                                                                        `${id}_${realKey}`,
+                                                                        "operator-art",
+                                                                    );
+                                                                const link =
+                                                                    document.createElement(
+                                                                        "a",
+                                                                    );
+                                                                link.href =
+                                                                    imageUrl;
+                                                                link.download = `${id}_${realKey}.png`;
+                                                                document.body.appendChild(
+                                                                    link,
+                                                                );
+                                                                link.click();
+                                                                document.body.removeChild(
+                                                                    link,
+                                                                );
+                                                            }}
+                                                        >
+                                                            <Icon
+                                                                name="import"
+                                                                class="w-4 h-4 transition-transform group-hover/down:scale-110"
+                                                            />
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                                <div
+                                                    class="flex flex-col p-5 h-full dark:border-[#444444]"
+                                                >
+                                                    <div
+                                                        class="flex justify-between items-start gap-4 mb-3"
+                                                    >
+                                                        <h3
+                                                            class="font-bold text-xl text-[#21272C] dark:text-[#E4E4E4] leading-tight line-clamp-2"
+                                                        >
+                                                            {artData.name}
+                                                        </h3>
+                                                    </div>
+                                                    <p
+                                                        class="text-gray-600 text-sm dark:text-[#E4E4E4] leading-relaxed mb-4 flex-grow italic"
+                                                    >
+                                                        "{artData.description}"
+                                                    </p>
+                                                    <div
+                                                        class="flex items-center gap-2 mt-auto pt-3 border-t border-gray-100 dark:border-[#444444]"
+                                                    >
+                                                        <div
+                                                            class="w-6 h-6 rounded-full bg-gray-200 flex items-center justify-center text-gray-400 dark:text-[#B7B6B3] shrink-0"
+                                                        >
+                                                            <Icon
+                                                                name="person"
+                                                                class="w-3 h-3"
+                                                            />
+                                                        </div>
+                                                        <span
+                                                            class="text-xs font-bold text-gray-500 dark:text-[#B7B6B3]"
+                                                        >
+                                                            {artData.author}
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        {/each}
                                         <div
                                             class="w-full max-w-[550px] bg-white/90 backdrop-blur-md dark:bg-[#383838]/90 group flex flex-col shadow-xl rounded-2xl overflow-hidden border border-white/50 transition-all dark:border-[#444444]"
                                         >
                                             <div
                                                 role="button"
                                                 tabindex="0"
-                                                class="relative w-full aspect-[16/9] bg-gradient-to-br from-[#3A3A3A] to-[#1A1A1A] flex flex-col items-center justify-center overflow-hidden cursor-zoom-in outline-none focus:ring-4 focus:ring-gray-300"
+                                                class="relative w-full aspect-[4/3] bg-gradient-to-br from-[#3A3A3A] to-[#1A1A1A] flex flex-col items-center justify-center overflow-hidden cursor-zoom-in outline-none focus:ring-4 focus:ring-gray-300"
                                                 on:click={() =>
-                                                    (selectedArtId = `${id}_${realKey}`)}
+                                                    (selectedArtId = `splash_${id}`)}
                                                 on:keydown={(e) =>
                                                     (e.key === "Enter" ||
                                                         e.key === " ") &&
-                                                    (selectedArtId = `${id}_${realKey}`)}
+                                                    (selectedArtId = `splash_${id}`)}
                                             >
-                                                <Image
-                                                    id={`${id}_${realKey}`}
-                                                    variant="operator-art"
-                                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                                                    alt={artData.name}
+                                                <img
+                                                    src={`/images/operators/splash/${id}.png`}
+                                                    class="w-full h-full object-cover"
+                                                    alt="Splash Art"
+                                                    loading="lazy"
+                                                    on:error={(e) =>
+                                                        (e.target.style.display =
+                                                            "none")}
                                                 />
 
                                                 <div
@@ -1700,10 +2009,7 @@
                                                 <div
                                                     class="absolute top-3 left-3 bg-black/60 backdrop-blur text-white text-[10px] font-bold px-2.5 py-1 rounded-full shadow-sm z-10 pointer-events-none"
                                                 >
-                                                    Phase {realKey.replace(
-                                                        "potential",
-                                                        "",
-                                                    )}
+                                                    Splash
                                                 </div>
 
                                                 <div
@@ -1714,7 +2020,7 @@
                                                         title="Copy image"
                                                         on:click|stopPropagation={async () => {
                                                             try {
-                                                                const imageUrl = getImagePath(`${id}_${realKey}`, "operator-art");
+                                                                const imageUrl = `/images/operators/splash/${id}.png`;
                                                                 const response =
                                                                     await fetch(
                                                                         imageUrl,
@@ -1733,13 +2039,12 @@
                                                                 );
 
                                                                 copiedArtId =
-                                                                    realKey;
-
+                                                                    "splash";
                                                                 setTimeout(
                                                                     () => {
                                                                         if (
                                                                             copiedArtId ===
-                                                                            realKey
+                                                                            "splash"
                                                                         )
                                                                             copiedArtId =
                                                                                 null;
@@ -1754,24 +2059,31 @@
                                                             }
                                                         }}
                                                     >
-                                                        {#if copiedArtId === realKey}
-                                                            <Icon name="success" class="w-3.5 h-3.5 text-yellow-400" />
+                                                        {#if copiedArtId === "splash"}
+                                                            <Icon
+                                                                name="success"
+                                                                class="w-3.5 h-3.5 text-yellow-400"
+                                                            />
                                                         {:else}
-                                                            <Icon name="copy" class="w-4 h-4 transition-transform group-hover/copy:scale-110" />
+                                                            <Icon
+                                                                name="copy"
+                                                                class="w-4 h-4 transition-transform group-hover/copy:scale-110"
+                                                            />
                                                         {/if}
                                                     </button>
+
                                                     <button
                                                         class="flex items-center justify-center w-8 h-8 bg-black/60 hover:bg-[#FFD800] text-white hover:text-black backdrop-blur rounded-full transition-all duration-300 shadow-md group/down"
-                                                        title="Dowanload Art"
+                                                        title="Download Art"
                                                         on:click|stopPropagation={() => {
-                                                            const imageUrl = getImagePath(`${id}_${realKey}`, "operator-art");
+                                                            const imageUrl = `/images/operators/splash/${id}.png`;
                                                             const link =
                                                                 document.createElement(
                                                                     "a",
                                                                 );
                                                             link.href =
                                                                 imageUrl;
-                                                            link.download = `${id}_${realKey}.png`;
+                                                            link.download = `${id}_splash.png`;
                                                             document.body.appendChild(
                                                                 link,
                                                             );
@@ -1798,458 +2110,361 @@
                                                     <h3
                                                         class="font-bold text-xl text-[#21272C] dark:text-[#E4E4E4] leading-tight line-clamp-2"
                                                     >
-                                                        {artData.name}
+                                                        Splash Art
                                                     </h3>
                                                 </div>
                                                 <p
                                                     class="text-gray-600 text-sm dark:text-[#E4E4E4] leading-relaxed mb-4 flex-grow italic"
-                                                >
-                                                    "{artData.description}"
-                                                </p>
+                                                ></p>
                                                 <div
                                                     class="flex items-center gap-2 mt-auto pt-3 border-t border-gray-100 dark:border-[#444444]"
                                                 >
                                                     <div
                                                         class="w-6 h-6 rounded-full bg-gray-200 flex items-center justify-center text-gray-400 dark:text-[#B7B6B3] shrink-0"
                                                     >
-                                                        <Icon name="person" class="w-3 h-3" />
+                                                        <Icon
+                                                            name="person"
+                                                            class="w-3 h-3"
+                                                        />
                                                     </div>
                                                     <span
                                                         class="text-xs font-bold text-gray-500 dark:text-[#B7B6B3]"
                                                     >
-                                                        {artData.author}
+                                                        Official
                                                     </span>
                                                 </div>
                                             </div>
                                         </div>
-                                    {/each}
-                                    <div
-                                        class="w-full max-w-[550px] bg-white/90 backdrop-blur-md dark:bg-[#383838]/90 group flex flex-col shadow-xl rounded-2xl overflow-hidden border border-white/50 transition-all dark:border-[#444444]"
-                                    >
-                                        <div
-                                            role="button"
-                                            tabindex="0"
-                                            class="relative w-full aspect-[4/3] bg-gradient-to-br from-[#3A3A3A] to-[#1A1A1A] flex flex-col items-center justify-center overflow-hidden cursor-zoom-in outline-none focus:ring-4 focus:ring-gray-300"
-                                            on:click={() =>
-                                                (selectedArtId = `splash_${id}`)}
-                                            on:keydown={(e) =>
-                                                (e.key === "Enter" ||
-                                                    e.key === " ") &&
-                                                (selectedArtId = `splash_${id}`)}
-                                        >
-                                            <img
-                                                src={`/images/operators/splash/${id}.png`}
-                                                class="w-full h-full object-cover"
-                                                alt="Splash Art"
-                                                loading="lazy"
-                                                on:error={(e) =>
-                                                    (e.target.style.display =
-                                                        "none")}
-                                            />
-
-                                            <div
-                                                class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500 pointer-events-none"
-                                            ></div>
-
-                                            <div
-                                                class="absolute top-3 left-3 bg-black/60 backdrop-blur text-white text-[10px] font-bold px-2.5 py-1 rounded-full shadow-sm z-10 pointer-events-none"
-                                            >
-                                                Splash
-                                            </div>
-
-                                            <div
-                                                class="absolute top-3 right-3 z-20 flex items-center gap-2"
-                                            >
-                                                <button
-                                                    class="flex items-center justify-center w-8 h-8 bg-black/60 hover:bg-[#FFD800] text-white hover:text-black backdrop-blur rounded-full transition-all duration-300 shadow-md group/copy"
-                                                    title="Copy image"
-                                                    on:click|stopPropagation={async () => {
-                                                        try {
-                                                            const imageUrl = `/images/operators/splash/${id}.png`;
-                                                            const response =
-                                                                await fetch(
-                                                                    imageUrl,
-                                                                );
-                                                            const blob =
-                                                                await response.blob();
-                                                            await navigator.clipboard.write(
-                                                                [
-                                                                    new ClipboardItem(
-                                                                        {
-                                                                            [blob.type]:
-                                                                                blob,
-                                                                        },
-                                                                    ),
-                                                                ],
-                                                            );
-
-                                                            copiedArtId =
-                                                                "splash";
-                                                            setTimeout(() => {
-                                                                if (
-                                                                    copiedArtId ===
-                                                                    "splash"
-                                                                )
-                                                                    copiedArtId =
-                                                                        null;
-                                                            }, 2000);
-                                                        } catch (err) {
-                                                            console.error(
-                                                                "Error copying:",
-                                                                err,
-                                                            );
-                                                        }
-                                                    }}
-                                                >
-                                                    {#if copiedArtId === "splash"}
-                                                        <Icon name="success" class="w-3.5 h-3.5 text-yellow-400" />
-                                                    {:else}
-                                                        <Icon name="copy" class="w-4 h-4 transition-transform group-hover/copy:scale-110" />
-                                                    {/if}
-                                                </button>
-
-                                                <button
-                                                    class="flex items-center justify-center w-8 h-8 bg-black/60 hover:bg-[#FFD800] text-white hover:text-black backdrop-blur rounded-full transition-all duration-300 shadow-md group/down"
-                                                    title="Download Art"
-                                                    on:click|stopPropagation={() => {
-                                                        const imageUrl = `/images/operators/splash/${id}.png`;
-                                                        const link =
-                                                            document.createElement(
-                                                                "a",
-                                                            );
-                                                        link.href = imageUrl;
-                                                        link.download = `${id}_splash.png`;
-                                                        document.body.appendChild(
-                                                            link,
-                                                        );
-                                                        link.click();
-                                                        document.body.removeChild(
-                                                            link,
-                                                        );
-                                                    }}
-                                                >
-                                                    <Icon
-                                                        name="import"
-                                                        class="w-4 h-4 transition-transform group-hover/down:scale-110"
-                                                    />
-                                                </button>
-                                            </div>
-                                        </div>
-
-                                        <div
-                                            class="flex flex-col p-5 h-full dark:border-[#444444]"
-                                        >
-                                            <div
-                                                class="flex justify-between items-start gap-4 mb-3"
-                                            >
-                                                <h3
-                                                    class="font-bold text-xl text-[#21272C] dark:text-[#E4E4E4] leading-tight line-clamp-2"
-                                                >
-                                                    Splash Art
-                                                </h3>
-                                            </div>
-                                            <p
-                                                class="text-gray-600 text-sm dark:text-[#E4E4E4] leading-relaxed mb-4 flex-grow italic"
-                                            ></p>
-                                            <div
-                                                class="flex items-center gap-2 mt-auto pt-3 border-t border-gray-100 dark:border-[#444444]"
-                                            >
-                                                <div
-                                                    class="w-6 h-6 rounded-full bg-gray-200 flex items-center justify-center text-gray-400 dark:text-[#B7B6B3] shrink-0"
-                                                >
-                                                    <Icon name="person" class="w-3 h-3" />
-                                                </div>
-                                                <span
-                                                    class="text-xs font-bold text-gray-500 dark:text-[#B7B6B3]"
-                                                >
-                                                    Official
-                                                </span>
-                                            </div>
-                                        </div>
                                     </div>
-                                </div>
-                            {:else}
-                                <div
-                                    class="text-gray-500 text-center italic mt-10"
-                                >
-                                    {$t("global.noData") || "No Data"}
-                                </div>
-                            {/if}
-                        </div>
-                    {:else if activeTab === "audio"}
-                        <div class="flex flex-col gap-4 animate-fadeIn w-full relative">
-                            <div class="flex items-center justify-between gap-3 flex-wrap">
-                                <h2
-                                    class="text-3xl dark:text-[#FDFDFD] font-bold text-[#21272C] font-sdk"
-                                >
-                                    {$t("menu.audio")}
-                                </h2>
-                            </div>
-
-                            <div class="sticky top-16 md:top-4 z-20 self-end flex items-center gap-1.5 bg-white/90 dark:bg-[#2b2b2b]/95 backdrop-blur-md p-1.5 rounded-2xl border border-gray-200/80 dark:border-[#444] shadow-lg transition-all">
-                                {#each audioLanguages as langOption}
-                                    <button
-                                        on:click={() => changeAudioLang(langOption.id)}
-                                        class="px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer {selectedAudioLang === langOption.id ? 'bg-[#FFD800] text-black shadow-sm' : 'text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white hover:bg-gray-100 dark:hover:bg-[#383838]'}"
+                                {:else}
+                                    <div
+                                        class="text-gray-500 text-center italic mt-10"
                                     >
-                                        {langOption.label}
-                                    </button>
-                                {/each}
+                                        {$t("global.noData") || "No Data"}
+                                    </div>
+                                {/if}
                             </div>
-
-                            {#if voiceLines && voiceLines.length > 0}
-                                <div class="grid grid-cols-1 gap-2.5 w-full">
-                                    {#each voiceLines as line}
-                                        {@const isPlaying = currentPlayingVoId === line.voId}
-                                        <div
-                                            class="bg-white/90 backdrop-blur-md dark:bg-[#383838]/90 p-5 rounded-2xl dark:border-[#444444] shadow-xl border flex items-start gap-4 transition-all hover:border-gray-300 dark:hover:border-[#555] {isPlaying ? 'border-[#FFD800] dark:border-[#FFD800] ring-1 ring-[#FFD800]' : 'border-white/50'}"
-                                        >
-                                            {#if line.voId}
-                                                <div class="flex items-center gap-1.5 shrink-0 mt-0.5">
-                                                    <button
-                                                        on:click={() => playAudio(line.voId)}
-                                                        class="w-10 h-10 rounded-xl flex items-center justify-center transition-all cursor-pointer shadow-sm {isPlaying ? 'bg-[#FFD800] text-black scale-105' : 'bg-gray-100 dark:bg-[#444] text-gray-700 dark:text-gray-200 hover:bg-[#FFD800] hover:text-black dark:hover:bg-[#FFD800] dark:hover:text-black'}"
-                                                        title={isPlaying ? "Pause" : "Play"}
-                                                    >
-                                                        {#if isPlaying && isAudioLoading}
-                                                            <div class="w-4 h-4 border-2 border-black border-t-transparent rounded-full animate-spin"></div>
-                                                        {:else if isPlaying}
-                                                            <Icon name="pause" class="w-4 h-4 fill-current" />
-                                                        {:else}
-                                                            <Icon name="play" class="w-4 h-4 fill-current ml-0.5" />
-                                                        {/if}
-                                                    </button>
-
-                                                    <button
-                                                        on:click={() => downloadAudio(line.voId)}
-                                                        class="w-9 h-9 rounded-xl flex items-center justify-center transition-all cursor-pointer text-gray-500 dark:text-gray-400 hover:text-black dark:hover:text-white bg-gray-100/60 dark:bg-[#444]/60 hover:bg-[#FFD800] hover:text-black dark:hover:bg-[#FFD800] dark:hover:text-black"
-                                                        title="Download Audio"
-                                                    >
-                                                        <Icon name="import" class="w-4 h-4" />
-                                                    </button>
-                                                </div>
-                                            {/if}
-
-                                            <div class="flex flex-col gap-1.5 flex-1 min-w-0">
-                                                {#if line.title}
-                                                    <div class="font-bold text-base text-[#21272C] dark:text-[#E4E4E4] font-sdk border-b border-gray-100 dark:border-[#444444] pb-1.5">
-                                                        {line.title}
-                                                    </div>
-                                                {/if}
-                                                {#if line.text}
-                                                    <div
-                                                        class="text-gray-700 dark:text-[#E4E4E4] whitespace-pre-wrap text-sm leading-relaxed font-medium"
-                                                        use:hyperlinkAction
-                                                    >
-                                                        {@html parseRichText(line.text)}
-                                                    </div>
-                                                {/if}
-                                            </div>
-                                        </div>
-                                    {/each}
-                                </div>
-                            {:else}
-                                <div
-                                    class="text-gray-500 text-center italic mt-10"
-                                >
-                                    {$t("global.noData")}
-                                </div>
-                            {/if}
-                        </div>
-                    {:else}
-                        <div class="text-white text-xl font-bold mt-10">
-                            WIP: {activeTab} section
-                        </div>
-                    {/if}
-                    <div class="flex md:hidden items-center justify-between w-full mt-5 gap-4 {activeTab ===
-                    'about'
-                        ? 'max-w-[550px]'
-                        : ''}">
-                        <div class="flex-1 flex justify-start overflow-hidden">
-                            {#if prevTab}
-                                <button
-                                    on:click={() => switchTab(prevTab.id)}
-                                    class="flex items-center gap-2 px-4 py-3 bg-white/90 backdrop-blur-md dark:bg-[#383838]/90 rounded-2xl shadow-sm border border-white/50 dark:border-[#444444] active:scale-95 transition-all group max-w-full"
-                                >
-                                    <Icon name="arrowLeft" class="w-5 h-5 shrink-0 text-gray-400" />
-                                    <span class="font-bold text-sm text-[#21272C] dark:text-[#E4E4E4] truncate">{$t(prevTab.label) || prevTab.id}</span>
-                                </button>
-                            {/if}
-                        </div>
-                        
-                        <div class="flex-1 flex justify-end overflow-hidden ">
-                            {#if nextTab}
-                                <button
-                                    on:click={() => switchTab(nextTab.id)}
-                                    class="flex items-center justify-end gap-2 px-4 py-3 bg-white/90 backdrop-blur-md dark:bg-[#383838]/90 rounded-2xl shadow-sm border border-white/50 dark:border-[#444444] active:scale-95 transition-all group max-w-full"
-                                >
-                                    <span class="font-bold text-sm text-[#21272C] dark:text-[#E4E4E4] truncate">{$t(nextTab.label) || nextTab.id}</span>
-                                    <Icon name="arrowLeft" class="rotate-180 w-5 h-5 shrink-0 text-gray-400" />
-                                </button>
-                            {/if}
-                        </div>
-                    </div>
-                </div>
-            {/key}
-        </div>
-    </div>
-</div>
-
-<TableModal
-    bind:isOpen={showStatsTable}
-    title={$t("stats.attributesTable") || "Attributes Table"}
-    isTableCopied={isTableCopied}
-    maxWidthClass="max-w-4xl"
-    on:copy={copyStatsTable}
->
-    <table class="w-full text-center border-collapse">
-        <thead
-            class="bg-gray-50 dark:bg-[#383838] font-bold sticky top-0 shadow-sm text-sm text-gray-600 dark:text-[#E4E4E4]"
-        >
-            <tr>
-                <th
-                    class="py-3 px-2 border-b text-gray-600 dark:text-[#E4E4E4] dark:border-[#444]"
-                    >{$t("stats.level") || "Level"}</th
-                >
-                <th
-                    class="py-3 px-2 border-b text-gray-600 dark:text-[#E4E4E4] dark:border-[#444]"
-                    >{$t("stats.baseHp") || "Base HP"}</th
-                >
-                <th
-                    class="py-3 px-2 border-b text-gray-600 dark:text-[#E4E4E4] dark:border-[#444]"
-                    >{$t("stats.baseAtk") || "Base ATK"}</th
-                >
-
-                {#each ["str", "agi", "int", "will"] as attr}
-                    {@const isMain =
-                        attr === charStats.mainAttribute}
-                    {@const isSec =
-                        attr === charStats.secondaryAttribute}
-
-                    <th
-                        class="py-3 px-2 border-b align-middle dark:border-[#444]"
-                    >
-                        <div class="flex justify-center w-full">
-                            <Tooltip
-                                text={$t(
-                                    isMain
-                                        ? "stats.mainAttr"
-                                        : isSec
-                                          ? "stats.secAttr"
-                                          : "",
-                                )}
+                        {:else if activeTab === "audio"}
+                            <div
+                                class="flex flex-col gap-4 animate-fadeIn w-full relative"
                             >
                                 <div
-                                    class="px-2 py-1 rounded transition-colors text-xs font-bold tracking-wider {isMain
-                                        ? 'bg-[#FFEE00] text-[#21272C]  shadow-sm'
-                                        : ''} {isSec
-                                        ? 'bg-[#3B3B3B] dark:bg-[#323232] text-white shadow-sm'
-                                        : ''} {!isMain && !isSec
-                                        ? 'text-gray-600 dark:text-[#E4E4E4]'
-                                        : ''}"
+                                    class="flex items-center justify-end gap-3 flex-wrap"
                                 >
-                                    {$t(`stats.${attr}`) || attr}
+                                    <h2
+                                        class="text-3xl dark:text-[#FDFDFD] font-bold text-[#21272C] font-sdk"
+                                    >
+                                        {$t("menu.audio")}
+                                    </h2>
                                 </div>
-                            </Tooltip>
-                        </div>
-                    </th>
-                {/each}
-            </tr>
-        </thead>
-        <tbody
-            class="text-sm font-nums text-gray-800 dark:text-gray-300"
-        >
-            {#each Array(90) as _, i}
-                {@const lvl = i + 1}
-                <tr
-                    class="hover:bg-gray-100 dark:hover:bg-[#3d3d3d] transition-colors border-b border-gray-100 dark:border-[#333] even:bg-gray-50/50 dark:even:bg-[#383838]/50"
-                >
-                    <td
-                        class="py-2 px-4 text-gray-500 dark:text-gray-400"
-                        >{lvl}</td
-                    >
-                    <td
-                        class="py-2 px-4 font-bold text-[#21272C] dark:text-white"
-                        >{calculateStat(charStats.hp, lvl)}</td
-                    >
-                    <td
-                        class="py-2 px-4 font-bold text-[#21272C] dark:text-white"
-                        >{calculateStat(charStats.atk, lvl)}</td
-                    >
-                    <td
-                        class="py-2 px-4 font-bold text-[#21272C] dark:text-white"
-                        >{calculateStat(
-                            charStats.attributes.str,
-                            lvl,
-                        )}</td
-                    >
-                    <td
-                        class="py-2 px-4 font-bold text-[#21272C] dark:text-white"
-                        >{calculateStat(
-                            charStats.attributes.agi,
-                            lvl,
-                        )}</td
-                    >
-                    <td
-                        class="py-2 px-4 font-bold text-[#21272C] dark:text-white"
-                        >{calculateStat(
-                            charStats.attributes.int,
-                            lvl,
-                        )}</td
-                    >
-                    <td
-                        class="py-2 px-4 font-bold text-[#21272C] dark:text-white"
-                        >{calculateStat(
-                            charStats.attributes.will,
-                            lvl,
-                        )}</td
-                    >
-                </tr>
-            {/each}
-        </tbody>
-    </table>
-</TableModal>
-{#if selectedArtId}
-    <div
-        role="dialog"
-        aria-modal="true"
-        tabindex="-1"
-        class="md:ml-[var(--sb-w)] fixed inset-0 z-[100] flex items-center justify-center bg-black/90 backdrop-blur-md p-4 md:p-10 animate-fadeIn outline-none cursor-zoom-out overflow-hidden"
-        on:click={() => (selectedArtId = null)}
-        on:keydown={(e) =>
-            (e.key === "Enter" || e.key === " ") && (selectedArtId = null)}
-    >
-        <div
-            role="presentation"
-            class="relative max-w-full max-h-[90vh] flex items-center justify-center cursor-auto"
-            on:click|stopPropagation
-            on:keydown|stopPropagation
-        >
-            {#if selectedArtId.startsWith("splash_")}
-                <img
-                    src={`/images/operators/splash/${selectedArtId.replace("splash_", "")}.png`}
-                    class="max-w-full max-h-[90vh] object-contain rounded-lg drop-shadow-2xl select-none"
-                    alt="Splash Art Full"
-                />
-            {:else}
-                <Image
-                    id={selectedArtId}
-                    interactive={true}
-                    variant="operator-art"
-                    className="max-w-full max-h-[90vh] object-contain rounded-lg drop-shadow-2xl select-none"
-                />
-            {/if}
 
-            <button
-                class="absolute -top-4 -right-4 md:top-4 md:right-4 p-3 bg-black/40 hover:bg-[#FFD800] text-white hover:text-black rounded-full transition-colors backdrop-blur-sm z-10 shadow-lg"
-                on:click={() => (selectedArtId = null)}
-            >
-                <Icon name="close" class="w-6 h-6" />
-            </button>
+                                <div
+                                    class="sticky top-16 md:top-4 z-20 self-end flex items-center gap-1.5 bg-white/90 dark:bg-[#2b2b2b]/95 backdrop-blur-md p-1.5 rounded-2xl border border-gray-200/80 dark:border-[#444] shadow-lg transition-all"
+                                >
+                                    {#each audioLanguages as langOption}
+                                        <button
+                                            on:click={() =>
+                                                changeAudioLang(langOption.id)}
+                                            class="px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer {selectedAudioLang ===
+                                            langOption.id
+                                                ? 'bg-[#FFD800] text-black shadow-sm'
+                                                : 'text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white hover:bg-gray-100 dark:hover:bg-[#383838]'}"
+                                        >
+                                            {langOption.label}
+                                        </button>
+                                    {/each}
+                                </div>
+
+                                {#if voiceLines && voiceLines.length > 0}
+                                    <div
+                                        class="grid grid-cols-1 gap-2.5 w-full"
+                                    >
+                                        {#each voiceLines as line}
+                                            {@const isPlaying =
+                                                currentPlayingVoId ===
+                                                line.voId}
+                                            <div
+                                                class="bg-white/90 backdrop-blur-md dark:bg-[#383838]/90 p-5 rounded-2xl dark:border-[#444444] shadow-xl border flex items-start gap-4 transition-all hover:border-gray-300 dark:hover:border-[#555] {isPlaying
+                                                    ? 'border-[#FFD800] dark:border-[#FFD800] ring-1 ring-[#FFD800]'
+                                                    : 'border-white/50'}"
+                                            >
+                                                {#if line.voId}
+                                                    <div
+                                                        class="flex items-center gap-1.5 shrink-0 mt-0.5"
+                                                    >
+                                                        <button
+                                                            on:click={() =>
+                                                                playAudio(
+                                                                    line.voId,
+                                                                )}
+                                                            class="w-10 h-10 rounded-xl flex items-center justify-center transition-all cursor-pointer shadow-sm {isPlaying
+                                                                ? 'bg-[#FFD800] text-black scale-105'
+                                                                : 'bg-gray-200 dark:bg-[#444] text-gray-700 dark:text-gray-200 hover:bg-[#FFD800] hover:text-black dark:hover:bg-[#FFD800] dark:hover:text-black'}"
+                                                            title={isPlaying
+                                                                ? "Pause"
+                                                                : "Play"}
+                                                        >
+                                                            {#if isPlaying && isAudioLoading}
+                                                                <div
+                                                                    class="w-4 h-4 border-2 border-black border-t-transparent rounded-full animate-spin"
+                                                                ></div>
+                                                            {:else if isPlaying}
+                                                                <Icon
+                                                                    name="pause"
+                                                                    class="w-4 h-4 fill-current"
+                                                                />
+                                                            {:else}
+                                                                <Icon
+                                                                    name="play"
+                                                                    class="w-4 h-4 fill-current ml-0.5"
+                                                                />
+                                                            {/if}
+                                                        </button>
+
+                                                        <button
+                                                            on:click={() =>
+                                                                downloadAudio(
+                                                                    line.voId,
+                                                                )}
+                                                            class="w-9 h-9 rounded-xl flex items-center justify-center transition-all cursor-pointer text-gray-500 dark:text-gray-400 hover:text-black dark:hover:text-black bg-gray-200/60 dark:bg-[#444]/60 hover:bg-[#FFD800] hover:text-black dark:hover:bg-[#FFD800] dark:hover:text-black"
+                                                            title="Download Audio"
+                                                        >
+                                                            <Icon
+                                                                name="import"
+                                                                class="w-4 h-4"
+                                                            />
+                                                        </button>
+                                                    </div>
+                                                {/if}
+
+                                                <div
+                                                    class="flex flex-col gap-1.5 flex-1 min-w-0"
+                                                >
+                                                    {#if line.title}
+                                                        <div
+                                                            class="font-bold text-[#21272C] dark:text-[#E4E4E4] font-sdk border-b border-gray-100 dark:border-[#444444] pb-1.5"
+                                                        >
+                                                            {line.title}
+                                                        </div>
+                                                    {/if}
+                                                    {#if line.text}
+                                                        <div
+                                                            class="text-gray-700 dark:text-[#E4E4E4] whitespace-pre-wrap text-sm leading-relaxed font-medium"
+                                                            use:hyperlinkAction
+                                                        >
+                                                            {@html parseRichText(
+                                                                line.text,
+                                                            )}
+                                                        </div>
+                                                    {/if}
+                                                </div>
+                                            </div>
+                                        {/each}
+                                    </div>
+                                {:else}
+                                    <div
+                                        class="text-gray-500 text-center italic mt-10"
+                                    >
+                                        {$t("global.noData")}
+                                    </div>
+                                {/if}
+                            </div>
+                        {:else}
+                            <div class="text-white text-xl font-bold mt-10">
+                                WIP: {activeTab} section
+                            </div>
+                        {/if}
+                        <div
+                            class="flex md:hidden items-center justify-between w-full mt-5 gap-4 {activeTab ===
+                            'about'
+                                ? 'max-w-[550px]'
+                                : ''}"
+                        >
+                            <div
+                                class="flex-1 flex justify-start overflow-hidden"
+                            >
+                                {#if prevTab}
+                                    <button
+                                        on:click={() => switchTab(prevTab.id)}
+                                        class="flex items-center gap-2 px-4 py-3 bg-white/90 backdrop-blur-md dark:bg-[#383838]/90 rounded-2xl shadow-sm border border-white/50 dark:border-[#444444] active:scale-95 transition-all group max-w-full"
+                                    >
+                                        <Icon
+                                            name="arrowLeft"
+                                            class="w-5 h-5 shrink-0 text-gray-400"
+                                        />
+                                        <span
+                                            class="font-bold text-sm text-[#21272C] dark:text-[#E4E4E4] truncate"
+                                            >{$t(prevTab.label) ||
+                                                prevTab.id}</span
+                                        >
+                                    </button>
+                                {/if}
+                            </div>
+
+                            <div
+                                class="flex-1 flex justify-end overflow-hidden"
+                            >
+                                {#if nextTab}
+                                    <button
+                                        on:click={() => switchTab(nextTab.id)}
+                                        class="flex items-center justify-end gap-2 px-4 py-3 bg-white/90 backdrop-blur-md dark:bg-[#383838]/90 rounded-2xl shadow-sm border border-white/50 dark:border-[#444444] active:scale-95 transition-all group max-w-full"
+                                    >
+                                        <span
+                                            class="font-bold text-sm text-[#21272C] dark:text-[#E4E4E4] truncate"
+                                            >{$t(nextTab.label) ||
+                                                nextTab.id}</span
+                                        >
+                                        <Icon
+                                            name="arrowLeft"
+                                            class="rotate-180 w-5 h-5 shrink-0 text-gray-400"
+                                        />
+                                    </button>
+                                {/if}
+                            </div>
+                        </div>
+                    </div>
+                {/key}
+            </div>
         </div>
     </div>
-{/if}
 
+    <TableModal
+        bind:isOpen={showStatsTable}
+        title={$t("stats.attributesTable") || "Attributes Table"}
+        {isTableCopied}
+        maxWidthClass="max-w-4xl"
+        on:copy={copyStatsTable}
+    >
+        <table class="w-full text-center border-collapse">
+            <thead
+                class="bg-gray-50 dark:bg-[#383838] font-bold sticky top-0 shadow-sm text-sm text-gray-600 dark:text-[#E4E4E4]"
+            >
+                <tr>
+                    <th
+                        class="py-3 px-2 border-b text-gray-600 dark:text-[#E4E4E4] dark:border-[#444]"
+                        >{$t("stats.level") || "Level"}</th
+                    >
+                    <th
+                        class="py-3 px-2 border-b text-gray-600 dark:text-[#E4E4E4] dark:border-[#444]"
+                        >{$t("stats.baseHp") || "Base HP"}</th
+                    >
+                    <th
+                        class="py-3 px-2 border-b text-gray-600 dark:text-[#E4E4E4] dark:border-[#444]"
+                        >{$t("stats.baseAtk") || "Base ATK"}</th
+                    >
+
+                    {#each ["str", "agi", "int", "will"] as attr}
+                        {@const isMain = attr === charStats.mainAttribute}
+                        {@const isSec = attr === charStats.secondaryAttribute}
+
+                        <th
+                            class="py-3 px-2 border-b align-middle dark:border-[#444]"
+                        >
+                            <div class="flex justify-center w-full">
+                                <Tooltip
+                                    text={$t(
+                                        isMain
+                                            ? "stats.mainAttr"
+                                            : isSec
+                                              ? "stats.secAttr"
+                                              : "",
+                                    )}
+                                >
+                                    <div
+                                        class="px-2 py-1 rounded transition-colors text-xs font-bold tracking-wider {isMain
+                                            ? 'bg-[#FFEE00] text-[#21272C]  shadow-sm'
+                                            : ''} {isSec
+                                            ? 'bg-[#3B3B3B] dark:bg-[#323232] text-white shadow-sm'
+                                            : ''} {!isMain && !isSec
+                                            ? 'text-gray-600 dark:text-[#E4E4E4]'
+                                            : ''}"
+                                    >
+                                        {$t(`stats.${attr}`) || attr}
+                                    </div>
+                                </Tooltip>
+                            </div>
+                        </th>
+                    {/each}
+                </tr>
+            </thead>
+            <tbody class="text-sm font-nums text-gray-800 dark:text-gray-300">
+                {#each Array(90) as _, i}
+                    {@const lvl = i + 1}
+                    <tr
+                        class="hover:bg-gray-100 dark:hover:bg-[#3d3d3d] transition-colors border-b border-gray-100 dark:border-[#333] even:bg-gray-50/50 dark:even:bg-[#383838]/50"
+                    >
+                        <td class="py-2 px-4 text-gray-500 dark:text-gray-400"
+                            >{lvl}</td
+                        >
+                        <td
+                            class="py-2 px-4 font-bold text-[#21272C] dark:text-white"
+                            >{calculateStat(charStats.hp, lvl)}</td
+                        >
+                        <td
+                            class="py-2 px-4 font-bold text-[#21272C] dark:text-white"
+                            >{calculateStat(charStats.atk, lvl)}</td
+                        >
+                        <td
+                            class="py-2 px-4 font-bold text-[#21272C] dark:text-white"
+                            >{calculateStat(charStats.attributes.str, lvl)}</td
+                        >
+                        <td
+                            class="py-2 px-4 font-bold text-[#21272C] dark:text-white"
+                            >{calculateStat(charStats.attributes.agi, lvl)}</td
+                        >
+                        <td
+                            class="py-2 px-4 font-bold text-[#21272C] dark:text-white"
+                            >{calculateStat(charStats.attributes.int, lvl)}</td
+                        >
+                        <td
+                            class="py-2 px-4 font-bold text-[#21272C] dark:text-white"
+                            >{calculateStat(charStats.attributes.will, lvl)}</td
+                        >
+                    </tr>
+                {/each}
+            </tbody>
+        </table>
+    </TableModal>
+    {#if selectedArtId}
+        <div
+            role="dialog"
+            aria-modal="true"
+            tabindex="-1"
+            class="md:ml-[var(--sb-w)] fixed inset-0 z-[100] flex items-center justify-center bg-black/90 backdrop-blur-md p-4 md:p-10 animate-fadeIn outline-none cursor-zoom-out overflow-hidden"
+            on:click={() => (selectedArtId = null)}
+            on:keydown={(e) =>
+                (e.key === "Enter" || e.key === " ") && (selectedArtId = null)}
+        >
+            <div
+                role="presentation"
+                class="relative max-w-full max-h-[90vh] flex items-center justify-center cursor-auto"
+                on:click|stopPropagation
+                on:keydown|stopPropagation
+            >
+                {#if selectedArtId.startsWith("splash_")}
+                    <img
+                        src={`/images/operators/splash/${selectedArtId.replace("splash_", "")}.png`}
+                        class="max-w-full max-h-[90vh] object-contain rounded-lg drop-shadow-2xl select-none"
+                        alt="Splash Art Full"
+                    />
+                {:else}
+                    <Image
+                        id={selectedArtId}
+                        interactive={true}
+                        variant="operator-art"
+                        className="max-w-full max-h-[90vh] object-contain rounded-lg drop-shadow-2xl select-none"
+                    />
+                {/if}
+
+                <button
+                    class="absolute -top-4 -right-4 md:top-4 md:right-4 p-3 bg-black/40 hover:bg-[#FFD800] text-white hover:text-black rounded-full transition-colors backdrop-blur-sm z-10 shadow-lg"
+                    on:click={() => (selectedArtId = null)}
+                >
+                    <Icon name="close" class="w-6 h-6" />
+                </button>
+            </div>
+        </div>
+    {/if}
 {/if}
 
 <style>

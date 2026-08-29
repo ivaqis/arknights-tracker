@@ -791,10 +791,15 @@
             addNotification("error", $t("profile.copy_failed") || "Failed to copy");
         });
     }
+    $: pageTitle = username ? `${username} - ${$t("pages.profile")} - Goyfield` : `${$t("pages.profile")} - Goyfield`;
+    $: pageDescription = $t("seo.descriptions.userProfile", { username: username || "" });
 </script>
 
 <svelte:head>
-    <title>{username ? `${username} - ${$t("pages.profile")} | Goyfield` : `${$t("pages.profile")} | Goyfield`}</title>
+    <title>{pageTitle}</title>
+    <meta name="description" content={pageDescription} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={pageDescription} />
 </svelte:head>
 
 <div class="max-w-[1800px] w-full mx-auto pb-20">

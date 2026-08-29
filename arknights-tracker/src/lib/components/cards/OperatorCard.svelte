@@ -154,6 +154,7 @@
 {#if operator && operator.id}
     <a
         href={`/operators/${operator.id}`}
+        data-sveltekit-preload-data="off"
         class="{rootClass} block no-underline focus:outline-none focus:ring-2 focus:ring-[#F9B90C] rounded-[6px]"
         on:mouseenter={() => (isHovered = true)}
         on:mouseleave={() => (isHovered = false)}
@@ -286,10 +287,7 @@
                                 class="relative z-10 w-full h-full drop-shadow-sm"
                                 style:color={rarityColor}
                             >
-                                <Icon
-                                    name="strokeStar"
-                                    class="w-5 h-5 fill-current"
-                                />
+                                <Icon name="star" class="w-5 h-5 fill-current" />
                             </div>
                         </div>
                     {/each}

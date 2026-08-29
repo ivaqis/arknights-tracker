@@ -50,8 +50,8 @@
     "globalBtn": "全体統計",
     "settingsBtn": "設定",
     "totalCost": "オロベリル総消費数",
-    "openOfficialSource": "公式投稿",
-    "detailsOfficialSource": "公式サイトで詳細を見る",
+    "openOfficialSource": "公式サイト",
+    "detailsOfficialSource": "公式サイトで詳細を確認",
     "rating": {
       "ratingTitle": "あなたの評価",
       "luckyTotal": "総ガチャ回数",
@@ -129,7 +129,11 @@
     "bannerTypes": {
       "bannerHistoryGraph": "ガチャ履歴グラフ",
       "pieGraph": "分布図"
-    }
+    },
+    "openXSource": "公式投稿",
+    "detailsXSource": "x.com でポストを見る",
+    "openWebEvent": "Webイベント",
+    "detailsWebEvent": "イベントページへ移動"
   },
   "bannerTypes": {
     "standard": "通常探索",
@@ -282,6 +286,8 @@
   "emptyState": {
     "nothingSelected": "何も選択されていません",
     "clickEquipmentHint": "左側の装備をクリックして詳細を表示します。",
+    "clickWeaponHint": "左側の武器をクリックして詳細を表示します。",
+    "clickEnemyHint": "左側の敵をクリックして詳細を表示します。",
     "noData": "エントリーなし"
   },
   "buttons": {
@@ -322,7 +328,9 @@
     "emptyPageMsg": "ここはなんて空っぽなんだろう",
     "equipmentType": "装備タイプ",
     "gearTemplate": "装備設計図",
-    "blueprintLocation": "装備設計図の場所"
+    "blueprintLocation": "装備設計図の場所",
+    "rewards": "報酬",
+    "dayN": "{n}日目"
   },
   "status": {
     "won": "勝利 50:50",
@@ -458,7 +466,8 @@
     "protocolPassBlightedSea": "協約通行証・蝕海",
     "gazeNorthToTheRiftSignIn": "臨淵北望スタンプ",
     "protocolInvitationTheReturn": "協約招待：帰還",
-    "bedazzlingDawnstarSignIn": "煌めく明星スタンプ"
+    "bedazzlingDawnstarSignIn": "煌めく明星スタンプ",
+    "aForestMantledInSnow": "深き森の雪景スタンプ"
   },
   "mouths": {
     "january": "1月",
@@ -918,7 +927,7 @@
     "toggleCtrlForZoom": "Ctrlキーを押したままズーム",
     "preferredSkillModeList": "リスト",
     "preferredSkillModeTable": "テーブル",
-    "splitEquipmentView": "装備の詳細を分割画面で表示する",
+    "splitEquipmentView": "装備・武器・敵の詳細を分割画面で表示する",
     "cache": {
       "title": "キャッシュ",
       "desc": "キャッシュの詳細と消去",

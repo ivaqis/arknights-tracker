@@ -16,7 +16,10 @@
 </script>
 
 <svelte:head>
-    <title>{$t("pages.equipment")} | Goyfield</title>
+    <title>{$t("pages.equipment")} - Goyfield</title>
+    <meta name="description" content={$t("seo.descriptions.equipmentDetail")} />
+    <meta property="og:title" content={`${$t("pages.equipment")} - Goyfield`} />
+    <meta property="og:description" content={$t("seo.descriptions.equipmentDetail")} />
 </svelte:head>
 
 <EquipmentDetailsView {id} showBackButton={true} />

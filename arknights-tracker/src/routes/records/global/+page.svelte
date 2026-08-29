@@ -129,9 +129,26 @@
 </script>
 
 <svelte:head>
+
     <title>
-        {$t("global.title")} - {$t("pages.records")} | Goyfield
+        {$t("global.title")} - {$t("pages.records")} - Goyfield
     </title>
+
+    <meta
+        name="description"
+        content={$t("seo.descriptions.global")}
+    />
+
+    <meta
+        property="og:title"
+        content={`${$t("global.title")} - ${$t("pages.records")} - Goyfield`}
+    />
+
+    <meta
+        property="og:description"
+        content={$t("seo.descriptions.global")}
+    />
+
 </svelte:head>
 
 {#if isModalOpen && currentBannerRawData}

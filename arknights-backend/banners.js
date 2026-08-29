@@ -242,7 +242,7 @@ const BANNERS = [
     type: "weapon",
     startTime: "2026-07-15 22:00:00",
     startTimeAsia: "2026-07-16 11:00:00",
-    endTime: "2026-09-25 11:59:59",
+    endTime: "2026-09-24 11:59:59",
     featured6: ["type42SolemnPhalanx"],
   },
   {
@@ -259,9 +259,44 @@ const BANNERS = [
     name: "Bedazzled Issue",
     type: "weapon",
     startTime: "2026-08-09 12:00:00",
-    endTime: "2026-10-20 17:00:00",
-    endTimeAsia: "2026-10-20 04:00:00",
+    endTime: "2026-10-14 17:00:00",
+    endTimeAsia: "2026-10-15 04:00:00",
     featured6: ["bedazzlingNightDebut"],
+  },
+  {
+    id: "special_1_5_1",
+    name: "Winter Hunt",
+    type: "special",
+    startTime: "2026-09-01 22:00:00",
+    startTimeAsia: "2026-09-02 11:00:00",
+    endTime: "2026-09-30 11:59:59",
+    featured6: ["typhoeus"]
+  },
+  {
+    id: "weponbox_1_5_1",
+    name: "Deep Cold Issue",
+    type: "weapon",
+    startTime: "2026-09-01 22:00:00",
+    startTimeAsia: "2026-09-02 11:00:00",
+    endTime: "2026-11-11 15:59:57",
+    featured6: ["umbraOfFrigidEventide"]
+  },
+  {
+    id: "special_1_5_2",
+    name: "Resplendent Spectrum",
+    type: "special",
+    startTime: "2026-09-24 12:00:00",
+    endTime: "2026-10-14 17:00:00",
+    endTimeAsia: "2026-10-15 04:00:00",
+    featured6: ["yvonne"]
+  },
+  {
+    id: "weponbox_1_5_2",
+    name: "Tag Artist Issue",
+    type: "weapon",
+    startTime: "2026-09-24 12:00:00",
+    endTime: "2026-11-23 11:59:59",
+    featured6: ["artzyTyrannical"]
   }
 ];
 

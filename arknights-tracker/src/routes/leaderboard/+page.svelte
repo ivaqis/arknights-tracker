@@ -247,7 +247,10 @@
 </script>
 
 <svelte:head>
-    <title>{$t("pages.leaderboard")} | Goyfield</title>
+    <title>{$t("pages.leaderboard")} - Goyfield</title>
+    <meta name="description" content={$t("seo.descriptions.leaderboard")} />
+    <meta property="og:title" content={`${$t("pages.leaderboard")} - Goyfield`} />
+    <meta property="og:description" content={$t("seo.descriptions.leaderboard")} />
 </svelte:head>
 
 <div class="max-w-[1600px] mx-auto w-full pb-10">
@@ -672,8 +675,9 @@
                         </div>
                     {/if}
                 {:else}
-                    <div class="text-center py-10 text-gray-500 dark:text-gray-400 italic">
-                        Failed to load details.
+                    <div class="text-center py-10 text-gray-500 dark:text-gray-400 flex flex-col items-center justify-center gap-2">
+                        <Icon name="noData" class="w-8 h-8 opacity-40" />
+                        <span class="text-sm font-medium">{$t("emptyState.noData")}</span>
                     </div>
                 {/if}
             </div>

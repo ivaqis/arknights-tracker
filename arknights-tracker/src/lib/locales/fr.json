@@ -50,8 +50,8 @@
     "globalBtn": "Stats Globales",
     "settingsBtn": "Paramètres",
     "totalCost": "Coût Total en Orobéryl",
-    "openOfficialSource": "Post Officiel",
-    "detailsOfficialSource": "Voir détails sur le site officiel",
+    "openOfficialSource": "Site officiel",
+    "detailsOfficialSource": "Voir les détails sur le site officiel",
     "rating": {
       "ratingTitle": "Votre Évaluation",
       "luckyTotal": "Tirages Totaux",
@@ -129,7 +129,11 @@
     "bannerTypes": {
       "bannerHistoryGraph": "Historique des bannières",
       "pieGraph": "Distribution"
-    }
+    },
+    "openXSource": "Publication officielle",
+    "detailsXSource": "Voir la publication sur x.com",
+    "openWebEvent": "Événement Web",
+    "detailsWebEvent": "Aller à la page de l'événement"
   },
   "bannerTypes": {
     "standard": "Recrutement Standard",
@@ -282,6 +286,8 @@
   "emptyState": {
     "nothingSelected": "Rien n'est sélectionné",
     "clickEquipmentHint": "Cliquez sur l'équipement à gauche pour afficher ses détails.",
+    "clickWeaponHint": "Cliquez sur une arme à gauche pour afficher ses détails.",
+    "clickEnemyHint": "Cliquez sur un ennemi à gauche pour afficher ses détails.",
     "noData": "Aucune entrée"
   },
   "buttons": {
@@ -322,7 +328,9 @@
     "emptyPageMsg": "Comme c'est vide ici",
     "equipmentType": "Type d'équipement",
     "gearTemplate": "Modèle d'équipement",
-    "blueprintLocation": "Emplacement du schéma d'équipement"
+    "blueprintLocation": "Emplacement du schéma d'équipement",
+    "rewards": "Récompenses",
+    "dayN": "Jour {n}"
   },
   "status": {
     "won": "Gagné 50:50",
@@ -458,7 +466,8 @@
     "protocolPassBlightedSea": "Pass de Protocole : Marée gangrénée",
     "gazeNorthToTheRiftSignIn": "Connexion - Regard tourné vers le nord et vers la faille",
     "protocolInvitationTheReturn": "Invitation du Protocole : le retour",
-    "bedazzlingDawnstarSignIn": "Connexion - Étoile du matin étincelante"
+    "bedazzlingDawnstarSignIn": "Connexion - Étoile du matin étincelante",
+    "aForestMantledInSnow": "Une forêt drapée de neige"
   },
   "mouths": {
     "january": "Janvier",
@@ -918,7 +927,7 @@
     "preferredSkillMode": "Mode d'affichage préféré pour les compétences de combat",
     "preferredSkillModeList": "Liste",
     "preferredSkillModeTable": "Tableau",
-    "splitEquipmentView": "Afficher les détails de l'équipement sur l'écran partagé",
+    "splitEquipmentView": "Afficher les détails de l'équipement, des armes et des ennemis sur l'écran partagé",
     "cache": {
       "title": "Cache",
       "desc": "Détails et nettoyage du cache",

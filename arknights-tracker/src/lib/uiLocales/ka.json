@@ -45,7 +45,7 @@
     "globalBtn": "გლობალური სტატისტიკა",
     "settingsBtn": "პარამეტრები",
     "totalCost": "ჯამური Oroberyl-ის ხარჯი",
-    "openOfficialSource": "ოფიციალური პოსტი",
+    "openOfficialSource": "ოფიციალური საიტი",
     "detailsOfficialSource": "დეტალების ნახვა ოფიციალურ საიტზე",
     "rating": {
       "ratingTitle": "თქვენი რეიტინგი",
@@ -123,7 +123,11 @@
     "bannerTypes": {
       "bannerHistoryGraph": "ბანერების ისტორია",
       "pieGraph": "განაწილება"
-    }
+    },
+    "openXSource": "ოფიციალური პოსტი",
+    "detailsXSource": "პოსტის ნახვა x.com-ზე",
+    "openWebEvent": "ვებ ღონისძიება",
+    "detailsWebEvent": "ღონისძიების გვერდზე გადასვლა"
   },
   "import": {
     "title": "რეკრუტირების ისტორიის იმპორტი",
@@ -263,6 +267,8 @@
   "emptyState": {
     "nothingSelected": "არაფერია არჩეული",
     "clickEquipmentHint": "დააწკაპუნეთ აღჭურვილობაზე მარცხნივ დეტალების სანახავად.",
+    "clickWeaponHint": "დააწკაპუნეთ იარაღზე მარცხნივ დეტალების სანახავად.",
+    "clickEnemyHint": "დააწკაპუნეთ მტერზე მარცხნივ დეტალების სანახავად.",
     "noData": "ჩანაწერები არ არის"
   },
   "buttons": {
@@ -300,7 +306,9 @@
     "sortByRelease": "გამოშვების თარიღით",
     "sortByWait": "რერანის გარეშე დღეებით",
     "allBanners": "ყველა ბანერი",
-    "emptyPageMsg": "აქ ძალიან ცარიელია"
+    "emptyPageMsg": "აქ ძალიან ცარიელია",
+    "rewards": "ჯილდოები",
+    "dayN": "დღე {n}"
   },
   "status": {
     "won": "მოიგო 50:50",
@@ -527,7 +535,7 @@
     "preferredSkillMode": "საბრძოლო უნარების ჩვენების სასურველი რეჟიმი",
     "preferredSkillModeList": "სია",
     "preferredSkillModeTable": "ცხრილი",
-    "splitEquipmentView": "აღჭურვილობის დეტალების გაყოფილ ეკრანზე ჩვენება",
+    "splitEquipmentView": "აღჭურვილობის, იარაღისა და მტრების დეტალების გაყოფილ ეკრანზე ჩვენება",
     "cache": {
       "title": "ქეში",
       "desc": "ქეშის დეტალები და გასუფთავება",

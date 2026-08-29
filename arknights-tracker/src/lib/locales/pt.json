@@ -50,7 +50,7 @@
     "globalBtn": "Estatísticas Globais",
     "settingsBtn": "Configurações",
     "totalCost": "Custo Total de Oroberilo",
-    "openOfficialSource": "Post Oficial",
+    "openOfficialSource": "Site oficial",
     "detailsOfficialSource": "Ver detalhes no site oficial",
     "rating": {
       "ratingTitle": "Sua Avaliação",
@@ -129,7 +129,11 @@
     "bannerTypes": {
       "bannerHistoryGraph": "Histórico de banners",
       "pieGraph": "Distribuição"
-    }
+    },
+    "openXSource": "Publicação oficial",
+    "detailsXSource": "Ver publicação no x.com",
+    "openWebEvent": "Evento Web",
+    "detailsWebEvent": "Ir para a página do evento"
   },
   "bannerTypes": {
     "standard": "Busca Padrão",
@@ -282,6 +286,8 @@
   "emptyState": {
     "nothingSelected": "Nada selecionado",
     "clickEquipmentHint": "Clique no equipamento à esquerda para mostrar seus detalhes.",
+    "clickWeaponHint": "Clique em uma arma à esquerda para mostrar seus detalhes.",
+    "clickEnemyHint": "Clique em um inimigo à esquerda para mostrar seus detalhes.",
     "noData": "Sem entradas"
   },
   "buttons": {
@@ -322,7 +328,9 @@
     "emptyPageMsg": "Como está vazio aqui",
     "equipmentType": "Tipo de equipamento",
     "gearTemplate": "Gabarito de Equipamento",
-    "blueprintLocation": "Localização do modelo de equipamento"
+    "blueprintLocation": "Localização do modelo de equipamento",
+    "rewards": "Recompensas",
+    "dayN": "Dia {n}"
   },
   "status": {
     "won": "Ganho 50:50",
@@ -458,7 +466,8 @@
     "protocolPassBlightedSea": "Passe do Protocolo: Mar Contaminado pela Praga",
     "gazeNorthToTheRiftSignIn": "Login em Olhe para a Fenda ao Norte",
     "protocolInvitationTheReturn": "Convite para o Protocolo: O Retorno",
-    "bedazzlingDawnstarSignIn": "Login em Estrela do Alvorecer Deslumbrante"
+    "bedazzlingDawnstarSignIn": "Login em Estrela do Alvorecer Deslumbrante",
+    "aForestMantledInSnow": "Uma Floresta Coberta de Neve"
   },
   "mouths": {
     "january": "Janeiro",
@@ -918,7 +927,7 @@
     "toggleCtrlForZoom": "Segure Ctrl para dar zoom",
     "preferredSkillModeList": "Lista",
     "preferredSkillModeTable": "Tabela",
-    "splitEquipmentView": "Mostrar detalhes do equipamento na tela dividida",
+    "splitEquipmentView": "Mostrar detalhes de equipamentos, armas e inimigos na tela dividida",
     "cache": {
       "title": "Cache",
       "desc": "Detalhes e limpeza de cache",
