@@ -527,11 +527,11 @@
             }
             if (format) {
                 if (format.includes("%")) {
-                    result = parseFloat((result * 100).toFixed(2)) + "%";
+                    result = parseFloat((result * 100).toFixed(4)) + "%";
                 } else if (format === "0") {
                     result = Math.round(result);
                 } else {
-                    result = parseFloat(Number(result).toFixed(2));
+                    result = parseFloat(Number(result).toFixed(4));
                 }
             }
             return `<span class="text-[#38BDF8] font-bold drop-shadow-sm">${result}</span>`;
@@ -791,10 +791,15 @@
             addNotification("error", $t("profile.copy_failed") || "Failed to copy");
         });
     }
+    $: pageTitle = username ? `${username} - ${$t("pages.profile")} - Goyfield` : `${$t("pages.profile")} - Goyfield`;
+    $: pageDescription = $t("seo.descriptions.userProfile", { username: username || "" });
 </script>
 
 <svelte:head>
-    <title>{username ? `${username} - Profile | Goyfield` : 'Player Profile | Goyfield'}</title>
+    <title>{pageTitle}</title>
+    <meta name="description" content={pageDescription} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={pageDescription} />
 </svelte:head>
 
 <div class="max-w-[1800px] w-full mx-auto pb-20">

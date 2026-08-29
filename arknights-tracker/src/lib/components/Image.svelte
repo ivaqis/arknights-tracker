@@ -2,29 +2,29 @@
     const loadedCache = new Set();
 </script>
 
-<script>
+<script lang="ts">
     import { getImagePath } from "$lib/utils/imageUtils";
 
     import Icon from "$lib/components/Icon.svelte";
 
-    export let item = null; 
-    export let id = null;
-    export let variant = ""; 
-    export let alt = "";
-    export let size = "100%";
-    export let className = ""; 
-    export let style = "";
-    export let interactive = false;
-    export let priority = false;
-    export let loading = "lazy";
-    export let fetchpriority = "auto";
+    export let item: {icon?: string; id?: string; name?: string} | null = null;
+    export let id: string | null = null;
+    export let variant: string = "";
+    export let alt: string = "";
+    export let size: `${number}%` | number = "100%";
+    export let className: string = "";
+    export let style: string = "";
+    export let interactive: boolean = false;
+    export let priority: boolean = false;
+    export let loading: "lazy" | "eager" = "lazy";
+    export let fetchpriority: "auto" | "high" | "low" = "low";
 
     $: rawId = id || (item?.icon) || (item?.id) || (item?.name);
     $: initialSrc = getImagePath(rawId, variant);
 
     const FALLBACK_EXTS = ['.webp', '.png', '.jpg', '.jpeg', '.gif'];
 
-    function getCandidates(url) {
+    function getCandidates(url: string): string[] {
         if (!url || url.startsWith("data:") || url.startsWith("http://") || url.startsWith("https://")) {
             return [url];
         }
@@ -43,7 +43,7 @@
         return list;
     }
 
-    let candidates = [];
+    let candidates: string[] = [];
     let candidateIndex = 0;
     let currentSrc = "";
     let hasError = false;
@@ -59,7 +59,8 @@
         isVisible = isInstant;
     }
 
-    function imageHandler(node) {
+    function imageHandler(node: any, p0?: string) {
+        // я хз зачем тут p0 но без него ошибка
         function handleLoad() {
             if (currentSrc) loadedCache.add(currentSrc);
             isVisible = true;

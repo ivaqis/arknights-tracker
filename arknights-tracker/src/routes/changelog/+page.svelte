@@ -66,7 +66,15 @@
     }));
 
     $: displayBanners = banners
-        .filter((b) => b.version === $selectedVersionStore)
+        .filter(
+            (b) =>
+                b.version === $selectedVersionStore &&
+                b.showOnMain !== false &&
+                b.id !== "standard_01" &&
+                b.id !== "new_player_01" &&
+                !b.id.includes("constant") &&
+                b.endTime !== null,
+        )
         .sort(
             (a, b) =>
                 new Date(a.startTime).getTime() -
@@ -128,7 +136,7 @@
 
     const typeIcons = {
         signIn: "signIn",
-        inGame: "event",
+        inGame: "clock",
         inGamePermanent: "permanent",
         web: "link",
         mailEvent: "mail",
@@ -166,6 +174,13 @@
     }
 </script>
 
+<svelte:head>
+    <title>{$t("pages.changelog")} - Goyfield</title>
+    <meta name="description" content={$t("seo.descriptions.changelog")} />
+    <meta property="og:title" content={`${$t("pages.changelog")} - Goyfield`} />
+    <meta property="og:description" content={$t("seo.descriptions.changelog")} />
+</svelte:head>
+
 {#if bannerForModal}
     <BannerModal
         banner={bannerForModal}
@@ -179,7 +194,7 @@
             <h2
                 class="text-3xl md:text-5xl tracking-wide text-[#21272C] dark:text-[#FDFDFD]"
             >
-                {$t("pages.changelog") || "Changelog"}
+                {$t("pages.changelog")}
             </h2>
         </div>
     </div>

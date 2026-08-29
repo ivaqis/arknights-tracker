@@ -2,6 +2,7 @@
     export let ascension = 0;
     export let size = 34;
     export let className = "";
+    export let color = "currentColor";
 
     const paths = [
         {
@@ -37,13 +38,13 @@
             <g class="transition-all duration-300 {isActive ? 'drop-shadow-[0_4px_4px_rgba(0,0,0,0.35)]' : ''}">
                 <path 
                     d={p.fill} 
-                    fill="white" 
+                    fill={color} 
                     class="transition-all duration-300" 
                     opacity={isActive ? "1" : "0.25"}
                 />
                 <path 
                     d={p.stroke} 
-                    stroke="white" 
+                    stroke={color} 
                     stroke-width="1.5" 
                     class="transition-all duration-300" 
                     opacity={isActive ? "1" : "0.45"}

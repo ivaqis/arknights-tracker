@@ -18,6 +18,8 @@
     export let className = "";
     export let isNew = undefined;
     export let hideName = false;
+    export let hideClass = false;
+    export let hideElement = false;
     export let materialIcon = null;
     export let materialCount = 0;
     export let baseSkills = null;
@@ -152,6 +154,7 @@
 {#if operator && operator.id}
     <a
         href={`/operators/${operator.id}`}
+        data-sveltekit-preload-data="off"
         class="{rootClass} block no-underline focus:outline-none focus:ring-2 focus:ring-[#F9B90C] rounded-[6px]"
         on:mouseenter={() => (isHovered = true)}
         on:mouseleave={() => (isHovered = false)}
@@ -227,19 +230,22 @@
             <div
                 class="absolute inset-0 z-20 {iconPadding} flex flex-col items-start pointer-events-none"
             >
-                <div class="pointer-events-auto">
-                    <Tooltip
-                        textKey={`classes.${operator.class}`}
-                        class={`flex items-center justify-center filter drop-shadow-md cursor-pointer ${iconSize}`}
-                    >
-                        <Icon
-                            name={operator.class}
-                            class="w-full h-full text-white rounded-md"
-                        />
-                    </Tooltip>
-                </div>
 
-                {#if operator.element}
+                {#if !hideClass}
+                    <div class="pointer-events-auto">
+                        <Tooltip
+                            textKey={`classes.${operator.class}`}
+                            class={`flex items-center justify-center filter drop-shadow-md cursor-pointer ${iconSize}`}
+                        >
+                            <Icon
+                                name={operator.class}
+                                class="w-full h-full text-white rounded-md"
+                            />
+                        </Tooltip>
+                    </div>
+                {/if}
+
+                {#if !hideElement && operator.element}
                     <div class="pointer-events-auto {variant === 'small' ? 'mt-[-1px]' : 'mt-[-3px]'}">
                         <Tooltip
                             textKey={`elements.${operator.element}`}
@@ -281,10 +287,7 @@
                                 class="relative z-10 w-full h-full drop-shadow-sm"
                                 style:color={rarityColor}
                             >
-                                <Icon
-                                    name="strokeStar"
-                                    class="w-5 h-5 fill-current"
-                                />
+                                <Icon name="star" class="w-5 h-5 fill-current" />
                             </div>
                         </div>
                     {/each}

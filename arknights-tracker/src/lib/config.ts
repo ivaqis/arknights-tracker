@@ -4,7 +4,7 @@ export const config = {
 
 function getApiBase(): string {
     const runtimeBase: string | undefined =
-        window !== undefined
+        typeof window !== "undefined"
         && "__CONFIG__" in window
         && typeof window.__CONFIG__ === "object"
         && window.__CONFIG__ !== null
@@ -19,10 +19,7 @@ function getApiBase(): string {
             ? import.meta.env.VITE_API_BASE
             : undefined;
 
-    const prodApiBase: string | undefined = import.meta.env.PROD ? "/api" : undefined;
-
     return runtimeBase
         ?? viteApiBase
-        ?? prodApiBase
-        ?? "http://localhost:3001/api";
+        ?? "http://localhost:3001";
 }

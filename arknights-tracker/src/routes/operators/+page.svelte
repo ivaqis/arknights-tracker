@@ -236,6 +236,13 @@
     }
 </script>
 
+<svelte:head>
+    <title>{$t("pages.operators")} - Goyfield</title>
+    <meta name="description" content={$t("seo.descriptions.operators")} />
+    <meta property="og:title" content={`${$t("pages.operators")} - Goyfield`} />
+    <meta property="og:description" content={$t("seo.descriptions.operators")} />
+</svelte:head>
+
 <div class="max-w-[100%] max-h-[100%] justify-start min-h-screen">
 
     <div class="flex items-baseline flex-wrap gap-2 md:gap-3 mb-8 font-sdk">

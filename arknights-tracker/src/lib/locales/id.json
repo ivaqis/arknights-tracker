@@ -50,7 +50,7 @@
     "globalBtn": "Statistik Global",
     "settingsBtn": "Pengaturan",
     "totalCost": "Total Biaya Oroberyl",
-    "openOfficialSource": "Postingan Resmi",
+    "openOfficialSource": "Situs Resmi",
     "detailsOfficialSource": "Lihat detail di situs resmi",
     "rating": {
       "ratingTitle": "Peringkat Anda",
@@ -129,7 +129,11 @@
     "bannerTypes": {
       "bannerHistoryGraph": "Riwayat Banner",
       "pieGraph": "Distribusi"
-    }
+    },
+    "openXSource": "Postingan Resmi",
+    "detailsXSource": "Lihat postingan di x.com",
+    "openWebEvent": "Acara Web",
+    "detailsWebEvent": "Buka halaman acara"
   },
   "bannerTypes": {
     "standard": "Headhunting Standar",
@@ -282,6 +286,8 @@
   "emptyState": {
     "nothingSelected": "Tidak ada yang dipilih",
     "clickEquipmentHint": "Klik perlengkapan di sebelah kiri untuk menampilkan detailnya.",
+    "clickWeaponHint": "Klik senjata di sebelah kiri untuk menampilkan detailnya.",
+    "clickEnemyHint": "Klik musuh di sebelah kiri untuk menampilkan detailnya.",
     "noData": "Tidak ada entri"
   },
   "buttons": {
@@ -322,7 +328,9 @@
     "emptyPageMsg": "Kosong sekali di sini",
     "equipmentType": "Tipe Peralatan",
     "gearTemplate": "Templat Gear",
-    "blueprintLocation": "Lokasi Templat Perlengkapan"
+    "blueprintLocation": "Lokasi Templat Perlengkapan",
+    "rewards": "Hadiah",
+    "dayN": "Hari {n}"
   },
   "status": {
     "won": "Menang 50:50",
@@ -458,7 +466,8 @@
     "protocolPassBlightedSea": "Tiket Akses Protokol: Laut Hawar",
     "gazeNorthToTheRiftSignIn": "Sign In Tataplah Celah di Utara",
     "protocolInvitationTheReturn": "Undangan Protokol: Kembalinya",
-    "bedazzlingDawnstarSignIn": "Sign In Bintang Fajar Gemerlap"
+    "bedazzlingDawnstarSignIn": "Sign In Bintang Fajar Gemerlap",
+    "aForestMantledInSnow": "Hutan Berselimut Salju"
   },
   "mouths": {
     "january": "Januari",
@@ -645,7 +654,8 @@
     "hobbies": "Hobi",
     "goToEssences": "Buka Esensi",
     "essenceLocations": "Lokasi Esensi",
-    "recommendedOperators": "Operator yang Direkomendasikan"
+    "recommendedOperators": "Operator yang Direkomendasikan",
+    "costValue2": "Biaya SP"
   },
   "bioValues": {
     "Unknown": "Tidak Diketahui"
@@ -902,7 +912,7 @@
     "name": "Nama",
     "total": "Total",
     "featuredList": "Unggulan",
-    "pityDist": "Distribusi Pity 6",
+    "pityDist": "Distribusi Pity",
     "noData": "Tidak Ada Data",
     "won": "Menang",
     "pulls": "pull",
@@ -917,7 +927,7 @@
     "toggleCtrlForZoom": "Tahan Ctrl untuk memperbesar",
     "preferredSkillModeList": "Daftar",
     "preferredSkillModeTable": "Tabel",
-    "splitEquipmentView": "Tampilkan detail perlengkapan di layar terpisah",
+    "splitEquipmentView": "Tampilkan detail perlengkapan, senjata, dan musuh di layar terpisah",
     "cache": {
       "title": "Cache",
       "desc": "Detail dan pembersihan cache",

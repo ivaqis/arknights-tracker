@@ -50,8 +50,8 @@
     "globalBtn": "全服统计",
     "settingsBtn": "设置",
     "totalCost": "总消耗欧泊 (Oroberyl)",
-    "openOfficialSource": "官方公告",
-    "detailsOfficialSource": "查看官网详情",
+    "openOfficialSource": "官方网站",
+    "detailsOfficialSource": "在官方网站查看详情",
     "rating": {
       "ratingTitle": "您的欧气评价",
       "luckyTotal": "总寻访次数",
@@ -129,7 +129,11 @@
     "bannerTypes": {
       "bannerHistoryGraph": "卡池历史趋势",
       "pieGraph": "分布图"
-    }
+    },
+    "openXSource": "官方动态",
+    "detailsXSource": "在 x.com 查看帖子",
+    "openWebEvent": "网页活动",
+    "detailsWebEvent": "前往活动页面"
   },
   "bannerTypes": {
     "standard": "标准寻访",
@@ -286,6 +290,8 @@
   "emptyState": {
     "nothingSelected": "未选择任何内容",
     "clickEquipmentHint": "点击左侧的装备以显示其详细信息。",
+    "clickWeaponHint": "点击左侧的武器以显示其详细信息。",
+    "clickEnemyHint": "点击左侧的敌人以显示其详细信息。",
     "noData": "无记录"
   },
   "buttons": {
@@ -326,7 +332,9 @@
     "emptyPageMsg": "这里好空啊",
     "equipmentType": "装备类型",
     "gearTemplate": "装备制造模板",
-    "blueprintLocation": "装备图纸位置"
+    "blueprintLocation": "装备图纸位置",
+    "rewards": "奖励",
+    "dayN": "第 {n} 天"
   },
   "status": {
     "won": "胜出 50:50",
@@ -463,7 +471,8 @@
     "protocolPassBlightedSea": "协议通行证·蚀海",
     "gazeNorthToTheRiftSignIn": "踞渊北眺签到",
     "protocolInvitationTheReturn": "协议邀约：重归",
-    "bedazzlingDawnstarSignIn": "明耀晨星签到"
+    "bedazzlingDawnstarSignIn": "明耀晨星签到",
+    "aForestMantledInSnow": "深林覆雪签到"
   },
   "mouths": {
     "january": "一月",
@@ -687,7 +696,8 @@
     "hobbies": "爱好",
     "goToEssences": "前往基质",
     "essenceLocations": "基质位置",
-    "recommendedOperators": "推荐干员"
+    "recommendedOperators": "推荐干员",
+    "costValue2": "技力消耗"
   },
   "bioValues": {
     "Unknown": "未知"
@@ -944,7 +954,7 @@
     "name": "名称",
     "total": "总计",
     "featuredList": "UP角色",
-    "pityDist": "6 保底分布",
+    "pityDist": "保底分布",
     "noData": "无数据",
     "won": "命中",
     "pulls": "抽",
@@ -960,7 +970,7 @@
     "preferredSkillMode": "战斗技能的首选显示模式",
     "preferredSkillModeList": "列表",
     "preferredSkillModeTable": "表格",
-    "splitEquipmentView": "在分屏上显示装备详情",
+    "splitEquipmentView": "在分屏上显示装备、武器和敌人详情",
     "cache": {
       "title": "缓存",
       "desc": "缓存详情与清理",

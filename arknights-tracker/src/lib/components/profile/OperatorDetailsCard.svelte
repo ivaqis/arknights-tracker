@@ -76,11 +76,11 @@
             }
             if (format) {
                 if (format.includes("%")) {
-                    result = parseFloat((result * 100).toFixed(2)) + "%";
+                    result = parseFloat((result * 100).toFixed(4)) + "%";
                 } else if (format === "0") {
                     result = Math.round(result);
                 } else {
-                    result = parseFloat(Number(result).toFixed(2));
+                    result = parseFloat(Number(result).toFixed(4));
                 }
             }
             return `<span class="text-[#38BDF8] font-bold drop-shadow-sm">${result}</span>`;
@@ -186,11 +186,11 @@
                         result = Math.round(num * 100) + "%";
                     else if (format === "0") result = Math.round(num);
                     else if (format === "0.0") result = num.toFixed(1);
-                    else result = parseFloat(num.toFixed(2));
+                    else result = parseFloat(num.toFixed(4));
                 } else {
                     if (isPercentData)
-                        result = parseFloat((num * 100).toFixed(2)) + "%";
-                    else result = parseFloat(num.toFixed(2));
+                        result = parseFloat((num * 100).toFixed(4)) + "%";
+                    else result = parseFloat(num.toFixed(4));
                 }
 
                 return `<span class="text-[#38BDF8] font-bold drop-shadow-sm">${result}</span>`;
@@ -600,6 +600,11 @@
         const localized = charLocale?.skills?.[skillKey]?.[skillKey]?.[key];
         if (localized) return localized;
 
+        if (key === "costValue" && skillKey !== "ultimate") {
+            const trans2 = $t("stats.costValue2");
+            if (trans2 && trans2 !== "stats.costValue2") return trans2;
+        }
+
         const tKey = `stats.${key}`;
         const trans = $t(tKey);
         if (trans && trans !== tKey) return trans;
@@ -610,8 +615,8 @@
             "def": "stats.def",
             "cooldown": "stats.coolDown",
             "cool_down": "stats.coolDown",
-            "costvalue": "stats.costValue",
-            "cost_value": "stats.costValue"
+            "costvalue": skillKey !== "ultimate" ? "stats.costValue2" : "stats.costValue",
+            "cost_value": skillKey !== "ultimate" ? "stats.costValue2" : "stats.costValue"
         };
         const mappedKey = statsKeyMap[key.toLowerCase()];
         if (mappedKey) {
@@ -663,7 +668,7 @@
             const suffix = isTimeStat ? (safeLang === "ru" ? " сек." : "s") : "";
 
             if (isPercent) {
-                const curPct = Math.round(currentVal * 100);
+                const curPct = parseFloat((currentVal * 100).toFixed(4));
                 currentStr = `${curPct}%`;
             } else {
                 const curValFormatted = currentVal % 1 === 0 ? currentVal.toString() : currentVal.toFixed(1);
@@ -721,9 +726,9 @@
                                     </Tooltip>
                                 </div>
 
-                                <div class="flex items-center gap-0 -space-x-2 ml-[-3px]">
+                                <div class="flex items-center gap-0 -space-x-1 ml-[-3px]">
                                     {#each Array(opData.rarity || 1) as _}
-                                        <Icon name="strokeStar" class="w-10 h-10 text-gray-600 dark:text-white" style="stroke-opacity: 20%" />
+                                        <Icon name="star" class="w-10 h-10 text-gray-600 dark:text-white" style="stroke-opacity: 20%" />
                                     {/each}
                                 </div>
                             </div>
@@ -902,9 +907,9 @@
                                             {wpnName}
                                         </h4>
                                     </div>
-                                    <div class="flex items-center mt-2 select-none -space-x-1.5 mr-[-67px] z-40">
+                                    <div class="flex items-center mt-2 select-none -space-x-1 mr-[-67px] z-40">
                                         {#each Array(wpnStatic?.rarity || wpn.rarity || 5) as _}
-                                            <Icon name="strokeStar" class="shrink-0 w-7 h-7 text-gray-600 dark:text-white" />
+                                            <Icon name="star" class="shrink-0 w-7 h-7 text-gray-600 dark:text-white" />
                                         {/each}
                                     </div>
                                 </div>

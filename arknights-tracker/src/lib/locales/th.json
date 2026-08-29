@@ -50,8 +50,8 @@
     "globalBtn": "สถิติทั่วโลก",
     "settingsBtn": "การตั้งค่า",
     "totalCost": "รวม Oroberyl ที่ใช้",
-    "openOfficialSource": "โพสต์อย่างเป็นทางการ",
-    "detailsOfficialSource": "ดูรายละเอียดในเว็บไซต์ทางการ",
+    "openOfficialSource": "เว็บไซต์ทางการ",
+    "detailsOfficialSource": "ดูรายละเอียดบนเว็บไซต์ทางการ",
     "rating": {
       "ratingTitle": "การประเมินของคุณ",
       "luckyTotal": "จำนวนสุ่มทั้งหมด",
@@ -129,7 +129,11 @@
     "bannerTypes": {
       "bannerHistoryGraph": "กราฟประวัติแบนเนอร์",
       "pieGraph": "การกระจายตัว"
-    }
+    },
+    "openXSource": "โพสต์ทางการ",
+    "detailsXSource": "ดูโพสต์บน x.com",
+    "openWebEvent": "เว็บอีเวนต์",
+    "detailsWebEvent": "ไปยังหน้ากิจกรรม"
   },
   "bannerTypes": {
     "standard": "การเฟ้นหามาตรฐาน",
@@ -282,6 +286,8 @@
   "emptyState": {
     "nothingSelected": "ไม่ได้เลือกสิ่งใด",
     "clickEquipmentHint": "คลิกอุปกรณ์ทางด้านซ้ายเพื่อแสดงรายละเอียด",
+    "clickWeaponHint": "คลิกอาวุธทางด้านซ้ายเพื่อแสดงรายละเอียด",
+    "clickEnemyHint": "คลิกศัตรูทางด้านซ้ายเพื่อแสดงรายละเอียด",
     "noData": "ไม่มีข้อมูล"
   },
   "buttons": {
@@ -322,7 +328,9 @@
     "emptyPageMsg": "ที่นี่ว่างเปล่าจัง",
     "equipmentType": "ประเภทอุปกรณ์",
     "gearTemplate": "เทม​เพล​ต​อุปกรณ์",
-    "blueprintLocation": "ตำแหน่งพิมพ์เขียวอุปกรณ์"
+    "blueprintLocation": "ตำแหน่งพิมพ์เขียวอุปกรณ์",
+    "rewards": "รางวัล",
+    "dayN": "วันที่ {n}"
   },
   "status": {
     "won": "ชนะ 50:50",
@@ -458,7 +466,8 @@
     "protocolPassBlightedSea": "บัตร​ผ่าน​โปร​โต​คอล​: ทะเล​เสื่อมสลาย",
     "gazeNorthToTheRiftSignIn": "ลงชื่อ​เข้าสู่ระบบ​มอง​ทางเหนือ​สู่​รอยแยก",
     "protocolInvitationTheReturn": "คำเชิญ​แห่ง​โปร​โต​คอล​: การ​หวนคืน",
-    "bedazzlingDawnstarSignIn": "ลงชื่อ​เข้าสู่ระบบ​ดาวรุ่ง​เจิด​จรัส"
+    "bedazzlingDawnstarSignIn": "ลงชื่อ​เข้าสู่ระบบ​ดาวรุ่ง​เจิด​จรัส",
+    "aForestMantledInSnow": "ป่า​ที่​ปกคลุม​ด้วย​หิมะ"
   },
   "mouths": {
     "january": "มกราคม",
@@ -645,7 +654,8 @@
     "hobbies": "งานอดิเรก",
     "goToEssences": "ไปยังเอสเซนส์",
     "essenceLocations": "ตำแหน่งเอสเซนส์",
-    "recommendedOperators": "โอเปอเรเตอร์ที่แนะนำ"
+    "recommendedOperators": "โอเปอเรเตอร์ที่แนะนำ",
+    "costValue2": "SP ที่​ใช้"
   },
   "bioValues": {
     "Unknown": "ไม่ทราบ"
@@ -902,7 +912,7 @@
     "name": "ชื่อ",
     "total": "รวม",
     "featuredList": "หน้าตู้",
-    "pityDist": "การกระจายตัว Pity 6",
+    "pityDist": "การกระจายตัว Pity",
     "noData": "ไม่มีข้อมูล",
     "won": "ชนะ",
     "pulls": "ครั้ง",
@@ -917,7 +927,7 @@
     "toggleCtrlForZoom": "กด Ctrl ค้างไว้เพื่อซูม",
     "preferredSkillModeList": "รายการ",
     "preferredSkillModeTable": "ตาราง",
-    "splitEquipmentView": "แสดงรายละเอียดอุปกรณ์บนหน้าจอแยก",
+    "splitEquipmentView": "แสดงรายละเอียดอุปกรณ์ อาวุธ และศัตรูบนหน้าจอแยก",
     "cache": {
       "title": "แคช",
       "desc": "รายละเอียดแคชและการล้างข้อมูล",

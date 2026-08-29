@@ -50,8 +50,8 @@
     "globalBtn": "全服統計",
     "settingsBtn": "設定",
     "totalCost": "總消耗歐泊 (Oroberyl)",
-    "openOfficialSource": "官方公告",
-    "detailsOfficialSource": "查看官網詳情",
+    "openOfficialSource": "官方網站",
+    "detailsOfficialSource": "在官方網站查看詳情",
     "rating": {
       "ratingTitle": "您的歐氣評價",
       "luckyTotal": "總尋訪次數",
@@ -129,7 +129,11 @@
     "bannerTypes": {
       "bannerHistoryGraph": "卡池歷史趨勢",
       "pieGraph": "分佈圖"
-    }
+    },
+    "openXSource": "官方動態",
+    "detailsXSource": "在 x.com 查看貼文",
+    "openWebEvent": "網頁活動",
+    "detailsWebEvent": "前往活動頁面"
   },
   "bannerTypes": {
     "standard": "標準尋訪",
@@ -286,6 +290,8 @@
   "emptyState": {
     "nothingSelected": "未選擇任何內容",
     "clickEquipmentHint": "點擊左側的裝備以顯示其詳細資訊。",
+    "clickWeaponHint": "點擊左側的武器以顯示其詳細資訊。",
+    "clickEnemyHint": "點擊左側的敵人以顯示其詳細資訊。",
     "noData": "無記錄"
   },
   "buttons": {
@@ -326,7 +332,9 @@
     "emptyPageMsg": "這裡好空啊",
     "equipmentType": "裝備類型",
     "gearTemplate": "裝備製造模板",
-    "blueprintLocation": "裝備圖紙位置"
+    "blueprintLocation": "裝備圖紙位置",
+    "rewards": "獎勵",
+    "dayN": "第 {n} 天"
   },
   "status": {
     "won": "勝出 50:50",
@@ -463,7 +471,8 @@
     "protocolPassBlightedSea": "協議通行證·蝕海",
     "gazeNorthToTheRiftSignIn": "踞淵北眺簽到",
     "protocolInvitationTheReturn": "協議邀約：重歸",
-    "bedazzlingDawnstarSignIn": "明耀晨星簽到"
+    "bedazzlingDawnstarSignIn": "明耀晨星簽到",
+    "aForestMantledInSnow": "深林覆雪簽到"
   },
   "mouths": {
     "january": "一月",
@@ -687,7 +696,8 @@
     "hobbies": "愛好",
     "goToEssences": "前往基質",
     "essenceLocations": "基質位置",
-    "recommendedOperators": "推薦幹員"
+    "recommendedOperators": "推薦幹員",
+    "costValue2": "技力消耗"
   },
   "bioValues": {
     "Unknown": "未知"
@@ -944,7 +954,7 @@
     "name": "名稱",
     "total": "總計",
     "featuredList": "UP角色",
-    "pityDist": "6 保底分佈",
+    "pityDist": "保底分佈",
     "noData": "無資料",
     "won": "命中",
     "pulls": "抽",
@@ -960,7 +970,7 @@
     "preferredSkillMode": "戰鬥技能的首選顯示模式",
     "preferredSkillModeList": "列表",
     "preferredSkillModeTable": "表格",
-    "splitEquipmentView": "在分割畫面上顯示裝備詳情",
+    "splitEquipmentView": "在分割畫面上顯示裝備、武器與敵人詳情",
     "cache": {
       "title": "快取",
       "desc": "快取詳情與清理",

@@ -6,13 +6,15 @@ import type { GlobalBannerDataSpecialV2 } from "$lib/api/globalBannerStats/contr
 import type { GlobalBannerDataStandard } from "$lib/api/globalBannerStats/contracts/GlobalBannerDataStandard";
 import type { GlobalBannerDataWeaponV1 } from "$lib/api/globalBannerStats/contracts/GlobalBannerDataWeaponV1";
 import type { GlobalBannerDataWeaponV2 } from "$lib/api/globalBannerStats/contracts/GlobalBannerDataWeaponV2";
+import type { GlobalBannerDataGeneric } from "$lib/api/globalBannerStats/contracts/GlobalBannerDataGeneric";
 
 export type GlobalBannerData =
-    | GlobalBannerDataBeginner
-    | GlobalBannerDataStandard
-    | GlobalBannerDataSpecialV1
-    | GlobalBannerDataSpecialV2
-    | GlobalBannerDataJointV1
-    | GlobalBannerDataJointV2
-    | GlobalBannerDataWeaponV1
-    | GlobalBannerDataWeaponV2;
+    & GlobalBannerDataGeneric
+    & (GlobalBannerDataBeginner
+        | GlobalBannerDataStandard
+        | GlobalBannerDataSpecialV1
+        | GlobalBannerDataSpecialV2
+        | GlobalBannerDataJointV1
+        | GlobalBannerDataJointV2
+        | GlobalBannerDataWeaponV1
+        | GlobalBannerDataWeaponV2);

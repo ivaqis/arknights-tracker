@@ -50,8 +50,8 @@
     "globalBtn": "Statistiche Globali",
     "settingsBtn": "Impostazioni",
     "totalCost": "Costo Totale Oroberyl",
-    "openOfficialSource": "Post Ufficiale",
-    "detailsOfficialSource": "Vedi dettagli sul sito ufficiale",
+    "openOfficialSource": "Sito ufficiale",
+    "detailsOfficialSource": "Visualizza i dettagli sul sito ufficiale",
     "rating": {
       "ratingTitle": "La tua Valutazione",
       "luckyTotal": "Estrazioni Totali",
@@ -129,7 +129,11 @@
     "bannerTypes": {
       "bannerHistoryGraph": "Cronologia Banner",
       "pieGraph": "Distribuzione"
-    }
+    },
+    "openXSource": "Post ufficiale",
+    "detailsXSource": "Visualizza il post su x.com",
+    "openWebEvent": "Evento Web",
+    "detailsWebEvent": "Vai alla pagina dell'evento"
   },
   "bannerTypes": {
     "standard": "Ricerca Standard",
@@ -282,6 +286,8 @@
   "emptyState": {
     "nothingSelected": "Nessuna selezione",
     "clickEquipmentHint": "Fai clic sull'equipaggiamento a sinistra per visualizzare i dettagli.",
+    "clickWeaponHint": "Fai clic su un'arma a sinistra per visualizzare i dettagli.",
+    "clickEnemyHint": "Fai clic su un nemico a sinistra per visualizzare i dettagli.",
     "noData": "Nessuna voce"
   },
   "buttons": {
@@ -322,7 +328,9 @@
     "emptyPageMsg": "Com'è vuoto qui",
     "equipmentType": "Tipo di equipaggiamento",
     "gearTemplate": "Schema per l'equipaggiamento",
-    "blueprintLocation": "Posizione modello equipaggiamento"
+    "blueprintLocation": "Posizione modello equipaggiamento",
+    "rewards": "Ricompense",
+    "dayN": "Giorno {n}"
   },
   "status": {
     "won": "Vinto 50:50",
@@ -458,7 +466,8 @@
     "protocolPassBlightedSea": "Pass protocollare: mare contaminato",
     "gazeNorthToTheRiftSignIn": "Accesso Guarda a nord verso la spaccatura",
     "protocolInvitationTheReturn": "Invito di protocollo: Il ritorno",
-    "bedazzlingDawnstarSignIn": "Accesso: Stella del mattino abbagliante"
+    "bedazzlingDawnstarSignIn": "Accesso: Stella del mattino abbagliante",
+    "aForestMantledInSnow": "Una foresta ammantata di neve"
   },
   "mouths": {
     "january": "Gennaio",
@@ -645,7 +654,8 @@
     "hobbies": "Interessi",
     "goToEssences": "Vai alle Essenze",
     "essenceLocations": "Posizioni delle essenze",
-    "recommendedOperators": "Operatori consigliati"
+    "recommendedOperators": "Operatori consigliati",
+    "costValue2": "Costo PA"
   },
   "bioValues": {
     "Unknown": "Sconosciuto"
@@ -902,7 +912,7 @@
     "name": "Nome",
     "total": "Totale",
     "featuredList": "In Evidenza",
-    "pityDist": "Distribuzione Pity 6",
+    "pityDist": "Distribuzione Pity",
     "noData": "Nessun Dato",
     "won": "Vinto",
     "pulls": "estrazioni",
@@ -917,7 +927,7 @@
     "toggleCtrlForZoom": "Tieni premuto Ctrl per zoomare",
     "preferredSkillModeList": "Elenco",
     "preferredSkillModeTable": "Tabella",
-    "splitEquipmentView": "Mostra i dettagli dell'equipaggiamento nello schermo diviso",
+    "splitEquipmentView": "Mostra i dettagli di equipaggiamento, armi e nemici nello schermo diviso",
     "cache": {
       "title": "Cache",
       "desc": "Dettagli e pulizia della cache",

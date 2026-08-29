@@ -1,4 +1,4 @@
-export function getMap<K, V>(list: V[], getKeyFn: (item: V) => K): Map<K, V> {
+export function getMap<K, V>(list: readonly V[], getKeyFn: (item: V) => K): Map<K, V> {
     const map = new Map<K, V>();
 
     for (const item of list) {
@@ -8,7 +8,7 @@ export function getMap<K, V>(list: V[], getKeyFn: (item: V) => K): Map<K, V> {
     return map;
 }
 
-export function getMappedList<K, V>(list: V[], getKeyFn: (item: V) => K): Map<K, V[]> {
+export function getMappedList<K, V>(list: readonly V[], getKeyFn: (item: V) => K): Map<K, V[]> {
     const map = new Map<K, V[]>();
 
     for (const item of list) {

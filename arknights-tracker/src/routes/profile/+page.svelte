@@ -715,11 +715,11 @@
             }
             if (format) {
                 if (format.includes("%")) {
-                    result = parseFloat((result * 100).toFixed(2)) + "%";
+                    result = parseFloat((result * 100).toFixed(4)) + "%";
                 } else if (format === "0") {
                     result = Math.round(result);
                 } else {
-                    result = parseFloat(Number(result).toFixed(2));
+                    result = parseFloat(Number(result).toFixed(4));
                 }
             }
             return `<span class="text-[#38BDF8] font-bold drop-shadow-sm">${result}</span>`;
@@ -1287,6 +1287,13 @@
         return "";
     }
 </script>
+
+<svelte:head>
+    <title>{$t("pages.profile")} - Goyfield</title>
+    <meta name="description" content={$t("seo.descriptions.profile")} />
+    <meta property="og:title" content={`${$t("pages.profile")} - Goyfield`} />
+    <meta property="og:description" content={$t("seo.descriptions.profile")} />
+</svelte:head>
 
 <div class="max-w-[1800px] w-full mx-auto pb-20">
     {#if profile && profile.background}

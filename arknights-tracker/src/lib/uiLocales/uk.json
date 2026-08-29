@@ -45,7 +45,7 @@
     "globalBtn": "Глобальна статистика",
     "settingsBtn": "Налаштування",
     "totalCost": "Загальні витрати Ороберилу",
-    "openOfficialSource": "Офіційний пост",
+    "openOfficialSource": "Офіційний сайт",
     "detailsOfficialSource": "Переглянути деталі на офіційному сайті",
     "rating": {
       "ratingTitle": "Ваш рейтинг",
@@ -123,7 +123,11 @@
     "bannerTypes": {
       "bannerHistoryGraph": "Історія банерів",
       "pieGraph": "Розподіл"
-    }
+    },
+    "openXSource": "Офіційний пост",
+    "detailsXSource": "Переглянути публікацію в x.com",
+    "openWebEvent": "Вебподія",
+    "detailsWebEvent": "Перейти на сторінку події"
   },
   "import": {
     "title": "Імпорт історії пошуку талантів",
@@ -263,6 +267,8 @@
   "emptyState": {
     "nothingSelected": "Нічого не вибрано",
     "clickEquipmentHint": "Натисніть на спорядження зліва, щоб відобразити його деталі.",
+    "clickWeaponHint": "Натисніть на зброю зліва, щоб відобразити її деталі.",
+    "clickEnemyHint": "Натисніть на ворога зліва, щоб відобразити його деталі.",
     "noData": "Немає записів"
   },
   "buttons": {
@@ -300,7 +306,9 @@
     "sortByRelease": "За датою виходу",
     "sortByWait": "За днями без рерану",
     "allBanners": "Усі банери",
-    "emptyPageMsg": "Тут так порожньо"
+    "emptyPageMsg": "Тут так порожньо",
+    "rewards": "Нагороди",
+    "dayN": "День {n}"
   },
   "status": {
     "won": "Виграно 50:50",
@@ -511,7 +519,7 @@
     "name": "Ім'я",
     "total": "Всього",
     "featuredList": "Цільові",
-    "pityDist": "Розподіл гаранту 6",
+    "pityDist": "Розподіл гаранту",
     "noData": "Немає даних",
     "won": "Виграно",
     "pulls": "круток",
@@ -527,7 +535,7 @@
     "preferredSkillMode": "Бажаний режим відображення бойових навичок",
     "preferredSkillModeList": "Список",
     "preferredSkillModeTable": "Таблиця",
-    "splitEquipmentView": "Відображати деталі спорядження на другій частині екрана",
+    "splitEquipmentView": "Відображати деталі спорядження, зброї та ворогів на другій частині екрана",
     "cache": {
       "title": "Кеш",
       "desc": "Деталізація кешу та його очищення",

@@ -45,8 +45,8 @@
     "globalBtn": "Statistik Global",
     "settingsBtn": "Tetapan",
     "totalCost": "Jumlah Kos Oroberyl",
-    "openOfficialSource": "Siaran Rasmi",
-    "detailsOfficialSource": "Lihat butiran di laman rasmi",
+    "openOfficialSource": "Laman Web Rasmi",
+    "detailsOfficialSource": "Lihat butiran di laman web rasmi",
     "rating": {
       "ratingTitle": "Penilaian Anda",
       "luckyTotal": "Jumlah Tarikan",
@@ -123,7 +123,11 @@
     "bannerTypes": {
       "bannerHistoryGraph": "Sejarah Banner",
       "pieGraph": "Pengedaran"
-    }
+    },
+    "openXSource": "Hantaran Rasmi",
+    "detailsXSource": "Lihat hantaran di x.com",
+    "openWebEvent": "Acara Web",
+    "detailsWebEvent": "Pergi ke halaman acara"
   },
   "import": {
     "title": "Import Rekod Headhunting",
@@ -263,6 +267,8 @@
   "emptyState": {
     "nothingSelected": "Tiada yang dipilih",
     "clickEquipmentHint": "Klik peralatan di sebelah kiri untuk menunjukkan butirannya.",
+    "clickWeaponHint": "Klik senjata di sebelah kiri untuk menunjukkan butirannya.",
+    "clickEnemyHint": "Klik musuh di sebelah kiri untuk menunjukkan butirannya.",
     "noData": "Tiada entri"
   },
   "buttons": {
@@ -300,7 +306,9 @@
     "sortByRelease": "Mengikut tarikh pelepasan",
     "sortByWait": "Mengikut hari tanpa rerun",
     "allBanners": "Semua Banner",
-    "emptyPageMsg": "Agak kosong di sini"
+    "emptyPageMsg": "Agak kosong di sini",
+    "rewards": "Ganjaran",
+    "dayN": "Hari {n}"
   },
   "status": {
     "won": "Menang 50:50",
@@ -511,7 +519,7 @@
     "name": "Nama",
     "total": "Jumlah",
     "featuredList": "Pilihan",
-    "pityDist": "Pengedaran Pity 6",
+    "pityDist": "Pengedaran Pity",
     "noData": "Tiada Data",
     "won": "Menang",
     "pulls": "tarikan",
@@ -527,7 +535,7 @@
     "preferredSkillMode": "Mod paparan pilihan untuk kemahiran tempur",
     "preferredSkillModeList": "Senarai",
     "preferredSkillModeTable": "Jadual",
-    "splitEquipmentView": "Paparkan butiran peralatan pada skrin pisah",
+    "splitEquipmentView": "Paparkan butiran peralatan, senjata dan musuh pada skrin pisah",
     "cache": {
       "title": "Cache",
       "desc": "Butiran dan pembersihan cache",

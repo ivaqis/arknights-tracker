@@ -1,30 +1,27 @@
 <script>
-    import { t } from "$lib/i18n";
-    import { get } from "svelte/store";
     import { browser } from "$app/environment";
-    import { onMount } from "svelte";
-    import { accountStore } from "$lib/stores/accounts";
-    import { pullData } from "$lib/stores/pulls";
-    import { analytics } from "$lib/firebase";
-    import { logEvent } from "firebase/analytics";
-    import { currentUid } from "$lib/stores/auth";
-    import { fade } from "svelte/transition";
-    import { onDestroy } from "svelte";
-    import { disableDarkening, preferredSkillMode, splitEquipmentView } from "$lib/stores/settings";
-    import { addNotification } from "$lib/stores/notifications";
-    import { currentLocale, currentUiLocale } from "$lib/stores/locale";
-    import { ctrlForZoom } from "$lib/stores/dragPlateSettings.js";
-    import { manualPotentials } from "$lib/stores/potentials";
-    import { weaponEssences } from "$lib/stores/weaponEssences";
-
-    import Select from "$lib/components/Select.svelte";
+    import Button from "$lib/components/Button.svelte";
     import Checkbox from "$lib/components/Checkbox.svelte";
     import Icon from "$lib/components/Icon.svelte";
-    import Tooltip from "$lib/components/Tooltip.svelte";
-    import Button from "$lib/components/Button.svelte";
-    import ConfirmationModal from "$lib/components/modals/ConfirmationModal.svelte";
-    import SyncModal from "$lib/components/modals/SyncModal.svelte";
     import CacheModal from "$lib/components/modals/CacheModal.svelte";
+    import ConfirmationModal from "$lib/components/modals/ConfirmationModal.svelte";
+    import Select from "$lib/components/Select.svelte";
+    import Tooltip from "$lib/components/Tooltip.svelte";
+    import { analytics } from "$lib/firebase";
+    import { t } from "$lib/i18n";
+    import { accountStore } from "$lib/stores/accounts";
+    import { checkSync, initAuth, login, logout, syncStatus, uploadLocalData, user } from "$lib/stores/cloudStore";
+    import { ctrlForZoom } from "$lib/stores/dragPlateSettings.js";
+    import { currentUiLocale } from "$lib/stores/locale";
+    import { addNotification } from "$lib/stores/notifications";
+    import { manualPotentials } from "$lib/stores/potentials";
+    import { pullData } from "$lib/stores/pulls";
+    import { disableDarkening, preferredSkillMode, splitEquipmentView } from "$lib/stores/settings";
+    import { weaponEssences } from "$lib/stores/weaponEssences";
+    import { logEvent } from "firebase/analytics";
+    import { onMount } from "svelte";
+    import { get } from "svelte/store";
+    import { fade } from "svelte/transition";
 
     let showCacheModal = false;
     let isEmailVisible = false;
@@ -64,16 +61,6 @@
     function toggleSplitEquipmentView() {
         splitEquipmentView.update((v) => !v);
     }
-
-    import {
-        user,
-        login,
-        logout,
-        syncStatus,
-        checkSync,
-        uploadLocalData,
-        initAuth,
-    } from "$lib/stores/cloudStore";
 
     const { accounts, selectedId } = accountStore;
 
@@ -453,6 +440,13 @@
         showRenameModal = false;
     }
 </script>
+
+<svelte:head>
+    <title>{$t("pages.settings")} - Goyfield</title>
+    <meta name="description" content={$t("seo.descriptions.settings")} />
+    <meta property="og:title" content={`${$t("pages.settings")} - Goyfield`} />
+    <meta property="og:description" content={$t("seo.descriptions.settings")} />
+</svelte:head>
 
 <div class="max-w-[1000px] w-full pb-20">
     <h1
@@ -974,13 +968,13 @@
                 ></span>
             </button>
             <span class="text-sm font-bold dark:text-[#E0E0E0] text-gray-800">
-                {$t("settings.splitEquipmentView") || "Show equipment details on split screen"}
+                {$t("settings.splitEquipmentView")}
             </span>
         </div>
 
         <div class="mt-4 flex flex-col items-start gap-2">
             <span class="text-sm font-bold dark:text-[#E0E0E0] text-gray-800">
-                {$t("settings.preferredSkillMode") || "Preferred display mode for combat skills"}
+                {$t("settings.preferredSkillMode")}
             </span>
             <div class="w-80">
                 <Select

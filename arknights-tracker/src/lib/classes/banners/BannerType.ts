@@ -4,7 +4,8 @@ import { type ApiBannerTypeData, bannerTypes } from "$lib/data/bannerTypes";
 import { getMap } from "$lib/utils/collectionUtils";
 
 export class BannerType {
-    private static readonly bannerTypeById: Map<string, ApiBannerTypeData> = getMap(bannerTypes, item => item.id);
+    private static readonly _list: readonly BannerType[] = bannerTypes.map(item => new BannerType(item));
+    private static readonly _bannerTypeById: Map<string, BannerType> = getMap(this._list, item => item.id);
 
     private readonly _id: ApiBannerType;
     private readonly _gameType: GameBannerType;
@@ -36,18 +37,14 @@ export class BannerType {
         this._color = data.color ?? null;
     }
 
-    public static getByApiBannerType(apiBannerType: ApiBannerType): BannerType | null {
-        const data = this.bannerTypeById.get(apiBannerType);
-
-        return this.create(data);
+    public static get list(): readonly BannerType[] {
+        return this._list;
     }
 
-    private static create(data: ApiBannerTypeData | null | undefined): BannerType | null {
-        if (!data) {
-            return null;
-        }
+    public static getByApiBannerType(apiBannerType: ApiBannerType): BannerType | null {
+        const data = this._bannerTypeById.get(apiBannerType);
 
-        return new BannerType(data);
+        return data ?? null;
     }
 
     public get id(): ApiBannerType {

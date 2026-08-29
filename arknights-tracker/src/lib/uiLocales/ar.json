@@ -45,7 +45,7 @@
     "globalBtn": "الإحصائيات العالمية",
     "settingsBtn": "الإعدادات",
     "totalCost": "التكلفة الإجمالية للأوروبريل",
-    "openOfficialSource": "المنشور الرسمي",
+    "openOfficialSource": "الموقع الرسمي",
     "detailsOfficialSource": "عرض التفاصيل على الموقع الرسمي",
     "rating": {
       "ratingTitle": "تقييمك",
@@ -123,7 +123,11 @@
     "bannerTypes": {
       "bannerHistoryGraph": "تاريخ البانرات",
       "pieGraph": "التوزيع"
-    }
+    },
+    "openXSource": "المنشور الرسمي",
+    "detailsXSource": "عرض المنشور على x.com",
+    "openWebEvent": "حدث الويب",
+    "detailsWebEvent": "الانتقال إلى صفحة الحدث"
   },
   "import": {
     "title": "استيراد سجلات البحث عن المواهب",
@@ -263,6 +267,8 @@
   "emptyState": {
     "nothingSelected": "لم يتم تحديد شيء",
     "clickEquipmentHint": "انقر على المعدات على اليسار لعرض تفاصيلها.",
+    "clickWeaponHint": "انقر على السلاح على اليسار لعرض تفاصيله.",
+    "clickEnemyHint": "انقر على العدو على اليسار لعرض تفاصيله.",
     "noData": "لا توجد إدخالات"
   },
   "buttons": {
@@ -300,7 +306,9 @@
     "sortByRelease": "حسب تاريخ الإصدار",
     "sortByWait": "حسب الأيام بدون إعادة تشغيل",
     "allBanners": "جميع البانرات",
-    "emptyPageMsg": "المكان فارغ جداً هنا"
+    "emptyPageMsg": "المكان فارغ جداً هنا",
+    "rewards": "المكافآت",
+    "dayN": "اليوم {n}"
   },
   "status": {
     "won": "ربح 50:50",
@@ -511,7 +519,7 @@
     "name": "الاسم",
     "total": "المجموع",
     "featuredList": "المميزة",
-    "pityDist": "توزيع الشفقة 6",
+    "pityDist": "توزيع الشفقة",
     "noData": "لا توجد بيانات",
     "won": "ربح",
     "pulls": "سحبات",
@@ -527,7 +535,7 @@
     "preferredSkillMode": "وضع العرض المفضل لمهارات القتال",
     "preferredSkillModeList": "قائمة",
     "preferredSkillModeTable": "جدول",
-    "splitEquipmentView": "عرض تفاصيل المعدات على الشاشة المقسمة",
+    "splitEquipmentView": "عرض تفاصيل العتاد والأسلحة والأعداء على الشاشة المقسمة",
     "cache": {
       "title": "ذاكرة التخزين المؤقت",
       "desc": "تفاصيل ذاكرة التخزين المؤقت ومسحها",

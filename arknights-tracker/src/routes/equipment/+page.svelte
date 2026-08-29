@@ -52,6 +52,9 @@
         if (queryId && allEquipment.some(e => e.id === queryId)) {
             selectedEquipmentId = queryId;
             isBottomSheetOpen = true;
+            if (typeof localStorage !== "undefined" && $splitEquipmentView) {
+                localStorage.setItem("last_selected_equipment_id", queryId);
+            }
         } else if (!queryId) {
             selectedEquipmentId = "";
             isBottomSheetOpen = false;
@@ -62,6 +65,13 @@
         if (queryId && allEquipment.some(e => e.id === queryId)) {
             if (!$splitEquipmentView) {
                 goto(`/equipment/${queryId}`, { replaceState: true });
+            } else {
+                localStorage.setItem("last_selected_equipment_id", queryId);
+            }
+        } else if (!queryId && $splitEquipmentView) {
+            const savedId = localStorage.getItem("last_selected_equipment_id");
+            if (savedId && allEquipment.some(e => e.id === savedId)) {
+                selectEquipment(savedId, true);
             }
         }
     });
@@ -71,6 +81,7 @@
             selectedEquipmentId = "";
             isBottomSheetOpen = false;
             if ($splitEquipmentView) {
+                localStorage.removeItem("last_selected_equipment_id");
                 const url = new URL(window.location.href);
                 url.searchParams.delete("id");
                 goto(url.pathname, { replaceState: true, noScroll: true, keepFocus: true });
@@ -81,6 +92,7 @@
         selectedEquipmentId = eqId;
         isBottomSheetOpen = true;
         if ($splitEquipmentView) {
+            localStorage.setItem("last_selected_equipment_id", eqId);
             const url = new URL(window.location.href);
             url.searchParams.set("id", eqId);
             goto(url.search, { replaceState: true, noScroll: true, keepFocus: true });
@@ -477,11 +489,11 @@
             }
             if (format) {
                 if (format.includes("%")) {
-                    result = parseFloat((result * 100).toFixed(2)) + "%";
+                    result = parseFloat((result * 100).toFixed(4)) + "%";
                 } else if (format === "0") {
                     result = Math.round(result);
                 } else {
-                    result = parseFloat(Number(result).toFixed(2));
+                    result = parseFloat(Number(result).toFixed(4));
                 }
             }
             return result;
@@ -641,6 +653,13 @@
     }
 </script>
 
+<svelte:head>
+    <title>{$t("pages.equipment")} - Goyfield</title>
+    <meta name="description" content={$t("seo.descriptions.equipment")} />
+    <meta property="og:title" content={`${$t("pages.equipment")} - Goyfield`} />
+    <meta property="og:description" content={$t("seo.descriptions.equipment")} />
+</svelte:head>
+
 <svelte:window on:scroll={checkScroll} on:resize={checkScroll} />
 
 <div class="max-w-[100%] max-h-[100%] min-h-screen h-full {$splitEquipmentView ? 'flex flex-col xl:flex-row justify-between items-start' : ''}">
@@ -649,7 +668,7 @@
             <h2
                 class="text-3xl md:text-5xl tracking-wide text-[#21272C] dark:text-[#FDFDFD]"
             >
-                {$t("pages.equipment") || "Equipment"}
+                {$t("pages.equipment")}
             </h2>
             <span class="text-gray-400 text-xl md:text-3xl font-normal">
                 / {filteredEquipment.length}

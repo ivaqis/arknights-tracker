@@ -3,7 +3,31 @@
   "seo": {
     "title": "Goyfield - Трекер круток для Arknights Endfield",
     "description": "Отслеживайте свою историю круток в Arknights Endfield. Просматривайте статистику, считайте гарант и анализируйте свою удачу.",
-    "keywords": "Arknights Endfield, Arknights, Gacha Tracker, Pull History, Гойфилд мое, Operators, Аркнайтс Эндфилд, Аркнайтс, Трекер гачи, История круток, Оперативники, Гойфилд, Goyfield"
+    "keywords": "Arknights Endfield, Arknights, Gacha Tracker, Pull History, Гойфилд мое, Operators, Аркнайтс Эндфилд, Аркнайтс, Трекер гачи, История круток, Оперативники, Гойфилд, Goyfield",
+    "descriptions": {
+      "history": "Хронология и расписание всех баннеров в Arknights: Endfield.",
+      "operators": "База данных всех оперативников Arknights: Endfield.",
+      "operatorDetail": "Характеристики оперативника {name} в Arknights: Endfield.",
+      "weapons": "База данных оружия Arknights: Endfield.",
+      "weaponDetail": "Характеристики оружия {name} в Arknights: Endfield.",
+      "events": "Календарь событий, ивентов и баннеров Arknights: Endfield.",
+      "changelog": "Журнал изменений патчей Arknights: Endfield.",
+      "records": "Статистика и трекер ваших круток в Arknights: Endfield.",
+      "import": "Импорт истории круток из Arknights: Endfield в Goyfield.",
+      "global": "Глобальная статистика круток сообщества Arknights: Endfield.",
+      "recordsType": "Статистика для баннера {name} в Arknights: Endfield.",
+      "equipment": "База данных снаряжения в Arknights: Endfield.",
+      "equipmentDetail": "Характеристики экипировки в Arknights: Endfield.",
+      "enemies": "База врагов Arknights: Endfield.",
+      "enemyDetail": "Подробная информация о противнике {name} в Arknights: Endfield.",
+      "recipes": "База рецептов завода в Arknights: Endfield.",
+      "recipeTree": "Интерактивное дерево производственных цепочек крафта Arknights: Endfield.",
+      "essences": "Оптимизатор и проверщик эссенций оружия для Arknights: Endfield.",
+      "leaderboard": "Таблица лидеров Arknights: Endfield.",
+      "settings": "Настройки Goyfield.",
+      "profile": "Профиль игрока на Goyfield.",
+      "userProfile": "Публичный профиль игрока {username} на Goyfield."
+    }
   },
   "hints": {
     "editPotential": "Для изменения потенциалов оружия нажмите на карандашик."
@@ -52,8 +76,12 @@
     "globalBtn": "Глобальная статистика",
     "settingsBtn": "Настройки",
     "totalCost": "Стоимость всех наймов",
-    "openOfficialSource": "Официальный пост",
-    "detailsOfficialSource": "Посмотреть детали на оффициальном сайте",
+    "openOfficialSource": "Официальный сайт",
+    "detailsOfficialSource": "Посмотреть детали на официальном сайте",
+    "openXSource": "Официальный пост",
+    "detailsXSource": "Посмотреть публикацию в x.com",
+    "openWebEvent": "Веб-событие",
+    "detailsWebEvent": "Перейти на страницу события",
     "rating": {
       "ratingTitle": "Ваш рейтинг",
       "luckyTotal": "Всего наймов",
@@ -286,7 +314,9 @@
   "emptyState": {
     "noData": "Нет записей",
     "nothingSelected": "Ничего не выбрано",
-    "clickEquipmentHint": "Нажмите на снаряжение слева, чтобы отобразить его детали."
+    "clickEquipmentHint": "Нажмите на снаряжение слева, чтобы отобразить его детали.",
+    "clickWeaponHint": "Нажмите на оружие слева, чтобы отобразить его детали.",
+    "clickEnemyHint": "Нажмите на врага слева, чтобы отобразить его детали."
   },
   "buttons": {
     "saveBtn": "Сохранить"
@@ -314,6 +344,8 @@
     "d": "д",
     "hLeft": "ч осталось",
     "featuredCharacters": "Представленные операторы",
+    "rewards": "Награды",
+    "dayN": "День {n}",
     "noMaterialsNeeded": "Материалы не требуются",
     "new": "Новый",
     "version": "Версия",
@@ -465,7 +497,8 @@
     "protocolPassBlightedSea": "Протопропуск «Моровые волны»",
     "gazeNorthToTheRiftSignIn": "Событие входа «Вид на северный разлом»",
     "protocolInvitationTheReturn": "Протокольное приглашение «Возвращение»",
-    "bedazzlingDawnstarSignIn": "Событие входа «Ослепительная утренняя звезда»"
+    "bedazzlingDawnstarSignIn": "Событие входа «Ослепительная утренняя звезда»",
+    "aForestMantledInSnow": "Лес, укрытый снегом"
   },
   "mouths": {
     "january": "Январь",
@@ -781,7 +814,8 @@
     "file3": "ФАЙЛ 3",
     "file4": "ФАЙЛ 4",
     "profile": "Профиль",
-    "hobbies": "Хобби"
+    "hobbies": "Хобби",
+    "costValue2": "Расход ОН"
   },
   "bioValues": {
     "Unknown": "Неизвестно"
@@ -1031,7 +1065,8 @@
     "median6": "Медиана 6★",
     "totalUsers": "Пользователей",
     "totalPulls": "Всего круток",
-    "spent": "Потрачено оберилла",
+    "spent": "Потрачено ороберилла",
+    "spentArsenal": "Потрачено билетов арсенала",
     "pull": "кр.",
     "pullsPerDay": "Круток в день",
     "percent6": "Шанс 6★",
@@ -1041,19 +1076,25 @@
     "list": "Список",
     "name": "Имя",
     "featuredList": "Состав баннера",
-    "pityDist": "Распределение пити 6",
+    "pityDist": "Распределение пити",
     "noData": "Нет данных",
     "won": "Выигранно",
     "pulls": "круток",
     "roll": "Крутка",
     "total": "Всего",
-    "percent": "Процент"
+    "percent": "Процент",
+    "free": "беспл.",
+    "freeCount": "Бесплатных",
+    "freeObtained": "Получено бесплатно",
+    "freeRate": "Шанс (беспл.)",
+    "freePulls": "Беспл. круток",
+    "guaranteedCount": "По гаранту"
   },
   "settings": {
     "title": "Настройки",
     "other": "Прочее",
     "disableDarkening": "Отключить затемнение карточек оружия и оперативников",
-    "splitEquipmentView": "Отображать детали снаряжения на второй части экрана",
+    "splitEquipmentView": "Отображать детали снаряжения, оружия и врагов на второй части экрана",
     "toggleCtrlForZoom": "Удерживать Ctrl для приближения",
     "preferredSkillMode": "Предпочитаемый режим отображения боевых навыков",
     "preferredSkillModeList": "Список",

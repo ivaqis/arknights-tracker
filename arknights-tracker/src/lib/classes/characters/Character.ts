@@ -1,10 +1,16 @@
 import { CharacterClass } from "$lib/classes/characters/CharacterClass";
 import { ElementType } from "$lib/classes/ElementType";
+import type { IImageIcon } from "$lib/classes/icons/IImageIcon";
+import { ImageVariant } from "$lib/classes/icons/ImageVariant";
+import type { ITextable } from "$lib/classes/ITextable";
+import type { Rarity } from "$lib/classes/Rarity";
 import { WeaponType } from "$lib/classes/weapons/WeaponType";
 import { type CharacterData, characters } from "$lib/data/characters";
 import { getMap } from "$lib/utils/collectionUtils";
 
-export class Character {
+export class Character implements ITextable, IImageIcon {
+    private static readonly IMAGE_VARIANT = ImageVariant.OPERATOR_ICON;
+
     private static readonly characterById = getMap(Object.values(characters), (char) => char.id);
     private static readonly characterByName = getMap(Object.values(characters), (char) => char.name);
     private static readonly characterByGameId = getMap(Object.values(characters), (char) => char.gameId);
@@ -77,8 +83,8 @@ export class Character {
         return this._name;
     }
 
-    public get rarity(): number {
-        return this._rarity;
+    public get rarity(): Rarity {
+        return this._rarity as Rarity;
     }
 
     public get element(): ElementType {
@@ -103,5 +109,17 @@ export class Character {
 
     public get apiId(): string | null {
         return this._apiId;
+    }
+
+    public get i18nKey(): string {
+        return `characters.${this._id}`;
+    }
+
+    public get iconId(): string {
+        return this._id;
+    }
+
+    public get imageVariant(): ImageVariant {
+        return Character.IMAGE_VARIANT;
     }
 }

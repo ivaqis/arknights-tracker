@@ -380,6 +380,13 @@
 
 <svelte:window bind:innerWidth={windowWidth} />
 
+<svelte:head>
+  <title>{$t("pages.records")} - Goyfield</title>
+  <meta name="description" content={$t("seo.descriptions.records")} />
+  <meta property="og:title" content={`${$t("pages.records")} - Goyfield`} />
+  <meta property="og:description" content={$t("seo.descriptions.records")} />
+</svelte:head>
+
 <SettingsModal
   isOpen={isSettingsOpen}
   onClose={() => (isSettingsOpen = false)}

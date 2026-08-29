@@ -50,8 +50,8 @@
     "globalBtn": "Thống kê toàn cầu",
     "settingsBtn": "Cài đặt",
     "totalCost": "Tổng Oroberyl tiêu hao",
-    "openOfficialSource": "Bài viết chính thức",
-    "detailsOfficialSource": "Xem chi tiết trên trang chủ",
+    "openOfficialSource": "Trang web chính thức",
+    "detailsOfficialSource": "Xem chi tiết trên trang web chính thức",
     "rating": {
       "ratingTitle": "Đánh giá của bạn",
       "luckyTotal": "Tổng lượt quay",
@@ -129,7 +129,11 @@
     "bannerTypes": {
       "bannerHistoryGraph": "Lịch sử Banner",
       "pieGraph": "Phân bổ"
-    }
+    },
+    "openXSource": "Bài viết chính thức",
+    "detailsXSource": "Xem bài viết trên x.com",
+    "openWebEvent": "Sự kiện Web",
+    "detailsWebEvent": "Đi đến trang sự kiện"
   },
   "bannerTypes": {
     "standard": "Chiêu mộ Tiêu chuẩn",
@@ -286,6 +290,8 @@
   "emptyState": {
     "nothingSelected": "Chưa chọn gì",
     "clickEquipmentHint": "Nhấp vào trang bị bên trái để hiển thị chi tiết.",
+    "clickWeaponHint": "Nhấp vào vũ khí bên trái để hiển thị chi tiết.",
+    "clickEnemyHint": "Nhấp vào kẻ địch bên trái để hiển thị chi tiết.",
     "noData": "Không có dữ liệu"
   },
   "buttons": {
@@ -326,7 +332,9 @@
     "emptyPageMsg": "Ở đây trống trải quá",
     "equipmentType": "Loại thiết bị",
     "gearTemplate": "Mẫu Trang Bị",
-    "blueprintLocation": "Vị trí bản thiết kế trang bị"
+    "blueprintLocation": "Vị trí bản thiết kế trang bị",
+    "rewards": "Phần thưởng",
+    "dayN": "Ngày {n}"
   },
   "status": {
     "won": "Thắng 50:50",
@@ -463,7 +471,8 @@
     "protocolPassBlightedSea": "Thẻ Giao Thức: Biển Nhiễm Khuẩn",
     "gazeNorthToTheRiftSignIn": "Điểm Danh Dõi Về Khe Nứt Phương Bắc",
     "protocolInvitationTheReturn": "Lời Mời Giao Thức: Trở Về",
-    "bedazzlingDawnstarSignIn": "Điểm Danh Ánh Sao Mai Lộng Lẫy"
+    "bedazzlingDawnstarSignIn": "Điểm Danh Ánh Sao Mai Lộng Lẫy",
+    "aForestMantledInSnow": "Rừng Khoác Áo Tuyết"
   },
   "mouths": {
     "january": "Tháng 1",
@@ -687,7 +696,8 @@
     "hobbies": "Sở thích",
     "goToEssences": "Đi đến Tinh hoa",
     "essenceLocations": "Vị trí Tinh hoa",
-    "recommendedOperators": "Toán thủ đề xuất"
+    "recommendedOperators": "Toán thủ đề xuất",
+    "costValue2": "Điểm KN tiêu hao"
   },
   "bioValues": {
     "Unknown": "Không rõ"
@@ -944,7 +954,7 @@
     "name": "Tên",
     "total": "Tổng",
     "featuredList": "Tiêu biểu",
-    "pityDist": "Phân bổ Pity 6",
+    "pityDist": "Phân bổ Pity",
     "noData": "Không có dữ liệu",
     "won": "Thắng",
     "pulls": "lượt quay",
@@ -960,7 +970,7 @@
     "preferredSkillMode": "Chế độ hiển thị ưa thích cho kỹ năng chiến đấu",
     "preferredSkillModeList": "Danh sách",
     "preferredSkillModeTable": "Bảng",
-    "splitEquipmentView": "Hiển thị chi tiết trang bị trên màn hình chia nhỏ",
+    "splitEquipmentView": "Hiển thị chi tiết trang bị, vũ khí và kẻ địch trên màn hình chia nhỏ",
     "cache": {
       "title": "Bộ nhớ đệm",
       "desc": "Chi tiết và dọn dẹp bộ nhớ đệm",

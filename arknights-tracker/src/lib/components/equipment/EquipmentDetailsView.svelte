@@ -161,11 +161,11 @@
             }
             if (format) {
                 if (format.includes("%")) {
-                    result = parseFloat((result * 100).toFixed(2)) + "%";
+                    result = parseFloat((result * 100).toFixed(4)) + "%";
                 } else if (format === "0") {
                     result = Math.round(result);
                 } else {
-                    result = parseFloat(Number(result).toFixed(2));
+                    result = parseFloat(Number(result).toFixed(4));
                 }
             }
             return `<span class="text-[#38BDF8] font-bold drop-shadow-sm">${result}</span>`;
@@ -524,9 +524,9 @@
                                 </div>
                             </Tooltip>
                             <div class="w-[2px] h-5 bg-gray-300 dark:bg-[#555] rounded"></div>
-                            <div class="flex -space-x-1">
+                            <div class="flex">
                                 {#each Array(rarity || 1) as _}
-                                    <Icon name="strokeStar" class="w-9 h-9" style="color: {rarityColor}; stroke-opacity: 100%;" />
+                                    <Icon name="star" class="w-8 h-8" style="color: {rarityColor};" />
                                 {/each}
                             </div>
                         </div>

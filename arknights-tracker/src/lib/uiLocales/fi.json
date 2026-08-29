@@ -45,7 +45,7 @@
     "globalBtn": "Globaalit tilastot",
     "settingsBtn": "Asetukset",
     "totalCost": "Oroberylin kokonaiskustannus",
-    "openOfficialSource": "Virallinen julkaisu",
+    "openOfficialSource": "Virallinen sivusto",
     "detailsOfficialSource": "Katso tiedot viralliselta sivustolta",
     "rating": {
       "ratingTitle": "Sijoituksesi",
@@ -123,7 +123,11 @@
     "bannerTypes": {
       "bannerHistoryGraph": "Bannereiden historia",
       "pieGraph": "Jakauma"
-    }
+    },
+    "openXSource": "Virallinen julkaisu",
+    "detailsXSource": "Katso julkaisu x.comissa",
+    "openWebEvent": "Web-tapahtuma",
+    "detailsWebEvent": "Siirry tapahtumasivulle"
   },
   "import": {
     "title": "Tuo rekrytointihistoria",
@@ -263,6 +267,8 @@
   "emptyState": {
     "nothingSelected": "Mitään ei ole valittu",
     "clickEquipmentHint": "Napsauta vasemmalla olevaa varustetta nähdäksesi sen tiedot.",
+    "clickWeaponHint": "Napsauta vasemmalla olevaa asetta nähdäksesi sen tiedot.",
+    "clickEnemyHint": "Napsauta vasemmalla olevaa vihollista nähdäksesi sen tiedot.",
     "noData": "Ei merkintöjä"
   },
   "buttons": {
@@ -300,7 +306,9 @@
     "sortByRelease": "Julkaisupäivän mukaan",
     "sortByWait": "Päiviä ilman uusintaa -mukaan",
     "allBanners": "Kaikki bannerit",
-    "emptyPageMsg": "Täällä on niin tyhjää"
+    "emptyPageMsg": "Täällä on niin tyhjää",
+    "rewards": "Palkinnot",
+    "dayN": "Päivä {n}"
   },
   "status": {
     "won": "Voitettu 50:50",
@@ -511,7 +519,7 @@
     "name": "Nimi",
     "total": "Yhteensä",
     "featuredList": "Kohde",
-    "pityDist": "Pityn jakauma 6",
+    "pityDist": "Pityn jakauma",
     "noData": "Ei tietoja",
     "won": "Voitettu",
     "pulls": "vetoa",
@@ -527,7 +535,7 @@
     "preferredSkillMode": "Ensisijainen näyttötila taistelutaidoille",
     "preferredSkillModeList": "Luettelo",
     "preferredSkillModeTable": "Taulukko",
-    "splitEquipmentView": "Näytä varusteen tiedot jaetulla näytöllä",
+    "splitEquipmentView": "Näytä varusteiden, aseiden ja vihollisten tiedot jaetulla näytöllä",
     "cache": {
       "title": "Välimuisti",
       "desc": "Välimuistin tiedot ja tyhjennys",

@@ -1,6 +1,6 @@
-import { BannersPullsEntity } from "@models/pulls/entities/BannersPullsEntity.js";
+import { GetImportCompleteData } from "@api/contracts/import/GetImportCompleteData.js";
+import { StreamResponse } from "@api/contracts/StreamResponse.js";
 
-export interface GetImportCompleteResponse {
-    serverId: string;
-    pulls: BannersPullsEntity;
+export interface GetImportCompleteResponse extends StreamResponse<GetImportCompleteData> {
+    type: "complete";
 }

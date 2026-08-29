@@ -45,8 +45,8 @@
     "globalBtn": "Жаһандық статистика",
     "settingsBtn": "Баптаулар",
     "totalCost": "Жалпы Ороберил шығыны",
-    "openOfficialSource": "Ресми жазба",
-    "detailsOfficialSource": "Толығырақ ресми сайтта көру",
+    "openOfficialSource": "Ресми сайт",
+    "detailsOfficialSource": "Ресми сайтта мәліметтерді көру",
     "rating": {
       "ratingTitle": "Сіздің рейтингіңіз",
       "luckyTotal": "Барлық айналдырулар",
@@ -123,7 +123,11 @@
     "bannerTypes": {
       "bannerHistoryGraph": "Баннерлер тарихы",
       "pieGraph": "Үлестірілу"
-    }
+    },
+    "openXSource": "Ресми жазба",
+    "detailsXSource": "x.com-да жазбаны көру",
+    "openWebEvent": "Веб-оқиға",
+    "detailsWebEvent": "Оқиға бетіне өту"
   },
   "import": {
     "title": "Жалдау тарихын импорттау",
@@ -263,6 +267,8 @@
   "emptyState": {
     "nothingSelected": "Ештеңе таңдалмаған",
     "clickEquipmentHint": "Толық мәліметтерін көру үшін сол жақтағы жабдықты басыңыз.",
+    "clickWeaponHint": "Толық мәліметтерді көру үшін сол жақтағы қаруды басыңыз.",
+    "clickEnemyHint": "Толық мәліметтерді көру үшін сол жақтағы жауды басыңыз.",
     "noData": "Жазбалар жоқ"
   },
   "buttons": {
@@ -300,7 +306,9 @@
     "sortByRelease": "Шығарылым күні бойынша",
     "sortByWait": "Рерансыз күндер бойынша",
     "allBanners": "Барлық баннерлер",
-    "emptyPageMsg": "Мұнда өте бос"
+    "emptyPageMsg": "Мұнда өте бос",
+    "rewards": "Марапаттар",
+    "dayN": "{n}-күн"
   },
   "status": {
     "won": "50:50 ұтып алды",
@@ -511,7 +519,7 @@
     "name": "Аты",
     "total": "Барлығы",
     "featuredList": "Мақсатты",
-    "pityDist": "6 гарантының үлестірілуі",
+    "pityDist": "Гарантының үлестірілуі",
     "noData": "Деректер жоқ",
     "won": "Ұтып алынды",
     "pulls": "айналдырулар",
@@ -527,7 +535,7 @@
     "preferredSkillMode": "Жауынгерлік дағдыларды көрсетудің қалаулы режимі",
     "preferredSkillModeList": "Тізім",
     "preferredSkillModeTable": "Кесте",
-    "splitEquipmentView": "Жабдық мәліметтерін экранның екінші бөлігінде көрсету",
+    "splitEquipmentView": "Жабдық, қару және жау мәліметтерін экранның екінші бөлігінде көрсету",
     "cache": {
       "title": "Кэш",
       "desc": "Кэш мәліметтері және оны тазарту",

@@ -99,9 +99,14 @@
 
 
     let selectedFormula;
-
-
 </script>
+
+<svelte:head>
+    <title>{$t("pages.recipeTree")} - Goyfield</title>
+    <meta name="description" content={$t("seo.descriptions.recipeTree")} />
+    <meta property="og:title" content={`${$t("pages.recipeTree")} - Goyfield`} />
+    <meta property="og:description" content={$t("seo.descriptions.recipeTree")} />
+</svelte:head>
 
 <div class="max-w-[100%] flex flex-col xl:flex-row">
 
