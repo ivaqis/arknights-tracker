@@ -2550,5 +2550,9 @@
     "cupriumTechnique": "Technique de cuprium",
     "hetoniteTechnique": "Technique d'hétonite",
     "pyrroliteTechnique": "Technique de pyrrolite"
+  },
+  "audio_player": {
+    "playback_error": "Échec du chargement de l'audio",
+    "open_raw": "Open raw"
   }
 }

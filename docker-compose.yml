@@ -31,6 +31,7 @@ services:
       context: ./arknights-tracker
     environment:
       PUBLIC_API_BASE: "http://localhost:3001/api"
+      PUBLIC_AUDIO_BASE: ""
     ports:
       - "3000:3000"
     depends_on:

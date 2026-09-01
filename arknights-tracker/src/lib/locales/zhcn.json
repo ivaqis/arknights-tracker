@@ -2593,5 +2593,9 @@
     "cupriumTechnique": "赤铜工艺",
     "hetoniteTechnique": "赫铜工艺",
     "pyrroliteTechnique": "灼铜工艺"
+  },
+  "audio_player": {
+    "playback_error": "音频加载失败",
+    "open_raw": "Open raw"
   }
 }

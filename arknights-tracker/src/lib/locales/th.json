@@ -2550,5 +2550,9 @@
     "cupriumTechnique": "เทคนิค​คู​เพ​รี​ยม",
     "hetoniteTechnique": "เทคนิค​เฮ​โท​ไนต์",
     "pyrroliteTechnique": "เทคนิค​ไพร์​โร​ไลท์"
+  },
+  "audio_player": {
+    "playback_error": "ไม่สามารถโหลดเสียงได้",
+    "open_raw": "Open raw"
   }
 }

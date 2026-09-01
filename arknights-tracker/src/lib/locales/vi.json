@@ -2593,5 +2593,9 @@
     "cupriumTechnique": "Kỹ Thuật Đồng",
     "hetoniteTechnique": "Kỹ Thuật Huyết Đồng",
     "pyrroliteTechnique": "Kỹ Thuật Nham Đồng"
+  },
+  "audio_player": {
+    "playback_error": "Không thể tải âm thanh",
+    "open_raw": "Open raw"
   }
 }

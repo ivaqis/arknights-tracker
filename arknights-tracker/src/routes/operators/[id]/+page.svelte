@@ -17,6 +17,7 @@
     import { getRarityColor } from "$lib/utils/colorUtils.js";
     import { getImagePath } from "$lib/utils/imageUtils.js";
     import { addNotification } from "$lib/stores/notifications.js";
+    import { AUDIO_BASE } from "$lib/api.js";
 
     import Icon from "$lib/components/Icon.svelte";
     import Tooltip from "$lib/components/Tooltip.svelte";
@@ -310,7 +311,7 @@
                 currentPlayingVoId = null;
                 return;
             } else {
-                currentAudio.play();
+                currentAudio.play().catch(handleAudioError);
                 return;
             }
         }
@@ -320,7 +321,8 @@
             currentAudio = null;
         }
 
-        const audioUrl = `/audio/${selectedAudioLang}/${char.gameId}/${voId}.mp3`;
+        const cleanBase = AUDIO_BASE.replace(/\/+$/, "");
+        const audioUrl = `${cleanBase}/${selectedAudioLang}/${char.gameId}/${voId}.mp3`;
         isAudioLoading = true;
         currentPlayingVoId = voId;
 
@@ -340,7 +342,16 @@
             currentAudio = null;
             isAudioLoading = false;
             try {
-                addNotification("error", $t("global.noData"));
+                addNotification(
+                    "error",
+                    $t("audio_player.playback_error"),
+                    {
+                        action: {
+                            text: $t("audio_player.open_raw"),
+                            url: audioUrl,
+                        },
+                    },
+                );
             } catch (e) {}
         };
 
@@ -355,10 +366,12 @@
 
     function downloadAudio(voId) {
         if (!voId || !char.gameId) return;
-        const audioUrl = `/audio/${selectedAudioLang}/${char.gameId}/${voId}.mp3`;
+        const cleanBase = AUDIO_BASE.replace(/\/+$/, "");
+        const audioUrl = `${cleanBase}/${selectedAudioLang}/${char.gameId}/${voId}.mp3`;
         const link = document.createElement("a");
         link.href = audioUrl;
         link.download = `${voId}_${selectedAudioLang}.mp3`;
+        link.target = "_blank";
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);

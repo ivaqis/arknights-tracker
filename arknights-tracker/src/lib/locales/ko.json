@@ -2550,5 +2550,9 @@
     "cupriumTechnique": "적동 기술",
     "hetoniteTechnique": "혁동 기술",
     "pyrroliteTechnique": "작동 기술"
+  },
+  "audio_player": {
+    "playback_error": "오디오를 로드하지 못했습니다",
+    "open_raw": "Open raw"
   }
 }

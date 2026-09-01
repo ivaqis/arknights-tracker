@@ -2713,5 +2713,9 @@
     "cupriumTechnique": "Cuprium Technique",
     "hetoniteTechnique": "Hetonite Technique",
     "pyrroliteTechnique": "Pyrrolite Technique"
+  },
+  "audio_player": {
+    "playback_error": "Failed to load audio",
+    "open_raw": "Open raw"
   }
 }

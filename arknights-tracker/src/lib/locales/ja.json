@@ -2550,5 +2550,9 @@
     "cupriumTechnique": "赤銅工程",
     "hetoniteTechnique": "緋銅工程",
     "pyrroliteTechnique": "焔銅工程"
+  },
+  "audio_player": {
+    "playback_error": "音声の読み込みに失敗しました",
+    "open_raw": "Open raw"
   }
 }
