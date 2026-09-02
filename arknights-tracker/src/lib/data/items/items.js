@@ -3142,5 +3142,157 @@ export const items = {
         "groupId": "other",
         "type": "sanity",
         "material": null
+    },
+    "item_arrow_chip_bomb": {
+        "id": "item_arrow_chip_bomb",
+        "iconId": "item_arrow_chip_bomb",
+        "rarity": 5,
+        "groupId": "device",
+        "type": "arrow_chip",
+        "material": null
+    },
+    "item_arrow_chip_frozen": {
+        "id": "item_arrow_chip_frozen",
+        "iconId": "item_arrow_chip_frozen",
+        "rarity": 5,
+        "groupId": "device",
+        "type": "arrow_chip",
+        "material": null
+    },
+    "item_arrow_chip_multiple": {
+        "id": "item_arrow_chip_multiple",
+        "iconId": "item_arrow_chip_multiple",
+        "rarity": 5,
+        "groupId": "device",
+        "type": "arrow_chip",
+        "material": null
+    },
+    "item_arrow_chip_penetrate": {
+        "id": "item_arrow_chip_penetrate",
+        "iconId": "item_arrow_chip_penetrate",
+        "rarity": 5,
+        "groupId": "device",
+        "type": "arrow_chip",
+        "material": null
+    },
+    "item_arrow_chip_shield_breaker": {
+        "id": "item_arrow_chip_shield_breaker",
+        "iconId": "item_arrow_chip_shield_breaker",
+        "rarity": 5,
+        "groupId": "device",
+        "type": "arrow_chip",
+        "material": null
+    },
+    "item_drop_babyents_1": {
+        "id": "item_drop_babyents_1",
+        "iconId": "item_drop_babyents_1",
+        "rarity": 4,
+        "groupId": "gatherable",
+        "type": "drop",
+        "material": null
+    },
+    "item_drop_slwood_1": {
+        "id": "item_drop_slwood_1",
+        "iconId": "item_drop_slwood_1",
+        "rarity": 1,
+        "groupId": "gatherable",
+        "type": "drop",
+        "material": null
+    },
+    "item_activity_copper_poly": {
+        "id": "item_activity_copper_poly",
+        "iconId": "item_activity_copper_poly",
+        "rarity": 4,
+        "groupId": "product",
+        "type": "ingot",
+        "material": "copper_poly"
+    },
+    "item_activity_copper_poly_cmpt": {
+        "id": "item_activity_copper_poly_cmpt",
+        "iconId": "item_activity_copper_poly_cmpt",
+        "rarity": 4,
+        "groupId": "product",
+        "type": "part",
+        "material": "copper_poly"
+    },
+    "item_activity_copper_poly_gas": {
+        "id": "item_activity_copper_poly_gas",
+        "iconId": "item_activity_copper_poly_gas",
+        "rarity": 4,
+        "groupId": "product",
+        "type": "gas",
+        "material": "copper_poly"
+    },
+    "item_activity_copper_poly_tool": {
+        "id": "item_activity_copper_poly_tool",
+        "iconId": "item_activity_copper_poly_tool",
+        "rarity": 4,
+        "groupId": "product",
+        "type": "tool",
+        "material": "copper_poly"
+    },
+    "item_activity_copper_xiranite_tool": {
+        "id": "item_activity_copper_xiranite_tool",
+        "iconId": "item_activity_copper_xiranite_tool",
+        "rarity": 3,
+        "groupId": "product",
+        "type": "tool",
+        "material": "copper_xiranite"
+    },
+    "item_activity_xiranite_box": {
+        "id": "item_activity_xiranite_box",
+        "iconId": "item_activity_xiranite_box",
+        "rarity": 3,
+        "groupId": "product",
+        "type": "lung_box",
+        "material": "xiranite"
+    },
+    "item_activity_xiranite_enr_box": {
+        "id": "item_activity_xiranite_enr_box",
+        "iconId": "item_activity_xiranite_enr_box",
+        "rarity": 4,
+        "groupId": "product",
+        "type": "lung_box",
+        "material": "xiranite_enr"
+    },
+    "item_activity_xiranite_enr_lung": {
+        "id": "item_activity_xiranite_enr_lung",
+        "iconId": "item_activity_xiranite_enr_lung",
+        "rarity": 5,
+        "groupId": "product",
+        "type": "lung",
+        "material": "xiranite_enr"
+    },
+    "item_activity_xiranite_enr_nugget": {
+        "id": "item_activity_xiranite_enr_nugget",
+        "iconId": "item_activity_xiranite_enr_nugget",
+        "rarity": 4,
+        "groupId": "product",
+        "type": "ingot",
+        "material": "xiranite_enr"
+    },
+    "item_activity_xiranite_lung": {
+        "id": "item_activity_xiranite_lung",
+        "iconId": "item_activity_xiranite_lung",
+        "rarity": 4,
+        "groupId": "product",
+        "type": "lung",
+        "material": "xiranite"
+    },
+    "item_activity_xiranite_nugget": {
+        "id": "item_activity_xiranite_nugget",
+        "iconId": "item_activity_xiranite_nugget",
+        "rarity": 3,
+        "groupId": "product",
+        "type": "ingot",
+        "material": "xiranite"
+    },
+    "item_slwood_1_hshog_1_1": {
+        "id": "item_slwood_1_hshog_1_1",
+        "iconId": "item_slwood_1_hshog_1_1",
+        "rarity": 4,
+        "groupId": "usable",
+        "type": "other",
+        "material": null
     }
 };

@@ -1991,28 +1991,6 @@ export const machineCrafts = {
         ],
         "craftTimeMs": 2000
     },
-    "xiranite_oven_xiranite_powder_2": {
-        "id": "xiranite_oven_xiranite_powder_2",
-        "formulaGroupId": "group_xiranite_oven_gasliquid",
-        "buildingId": "xiranite_oven_1",
-        "ingredients": [
-            {
-                "count": 1,
-                "itemId": "item_carbon_mtl"
-            },
-            {
-                "count": 1,
-                "itemId": "item_liquid_water"
-            }
-        ],
-        "outcomes": [
-            {
-                "count": 1,
-                "itemId": "item_xiranite_powder"
-            }
-        ],
-        "craftTimeMs": 2000
-    },
     "xiranite_oven_xiranite_powder_1": {
         "id": "xiranite_oven_xiranite_powder_1",
         "formulaGroupId": "group_xiranite_oven_liquid",
@@ -6373,6 +6351,268 @@ export const machineCrafts = {
             {
                 "count": 1,
                 "itemId": "item_equip_script_4_3"
+            }
+        ],
+        "craftTimeMs": 10000
+    },
+    "xiranite_oven_xiranite_powder_2": {
+        "id": "xiranite_oven_xiranite_powder_2",
+        "formulaGroupId": "group_xiranite_oven_gasliquid",
+        "buildingId": "xiranite_oven_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_carbon_mtl"
+            },
+            {
+                "count": 1,
+                "itemId": "item_liquid_water"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_xiranite_powder"
+            }
+        ],
+        "craftTimeMs": 2000
+    },
+    "component_activity_copper_poly_cmpt": {
+        "id": "component_activity_copper_poly_cmpt",
+        "formulaGroupId": "group_component_normal",
+        "buildingId": "component_mc_1",
+        "ingredients": [
+            {
+                "count": 5,
+                "itemId": "item_activity_copper_poly"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_activity_copper_poly_cmpt"
+            }
+        ],
+        "craftTimeMs": 10000
+    },
+    "furnance_activity_xiranite_enr_nugget_1": {
+        "id": "furnance_activity_xiranite_enr_nugget_1",
+        "formulaGroupId": "group_furnance_normal",
+        "buildingId": "furnance_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_xiranite_enr_powder"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_activity_xiranite_enr_nugget"
+            }
+        ],
+        "craftTimeMs": 10000
+    },
+    "furnance_activity_xiranite_nugget_1": {
+        "id": "furnance_activity_xiranite_nugget_1",
+        "formulaGroupId": "group_furnance_normal",
+        "buildingId": "furnance_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_xiranite_powder"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_activity_xiranite_nugget"
+            }
+        ],
+        "craftTimeMs": 2000
+    },
+    "gas_reactor_activity_copper_poly_gas_1": {
+        "id": "gas_reactor_activity_copper_poly_gas_1",
+        "formulaGroupId": "group_gas_reactor_gas",
+        "buildingId": "gas_reactor_1",
+        "ingredients": [
+            {
+                "count": 2,
+                "itemId": "item_gas_copper"
+            },
+            {
+                "count": 1,
+                "itemId": "item_gas_xiranite"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_activity_copper_poly_gas"
+            }
+        ],
+        "craftTimeMs": 2000
+    },
+    "liquid_transmuter_2_activity_copper_poly_1": {
+        "id": "liquid_transmuter_2_activity_copper_poly_1",
+        "formulaGroupId": "group_transmuter_2_solidtrans",
+        "buildingId": "transmuter_2",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_activity_copper_poly_gas"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_activity_copper_poly"
+            }
+        ],
+        "craftTimeMs": 2000
+    },
+    "liquid_transmuter_2_activity_copper_poly_gas_1": {
+        "id": "liquid_transmuter_2_activity_copper_poly_gas_1",
+        "formulaGroupId": "group_transmuter_2_gastrans",
+        "buildingId": "transmuter_2",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_activity_copper_poly"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_activity_copper_poly_gas"
+            }
+        ],
+        "craftTimeMs": 2000
+    },
+    "shaper_activity_xiranite_box_1": {
+        "id": "shaper_activity_xiranite_box_1",
+        "formulaGroupId": "group_shaper_normal",
+        "buildingId": "shaper_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_activity_xiranite_nugget"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_activity_xiranite_box"
+            }
+        ],
+        "craftTimeMs": 2000
+    },
+    "shaper_gas_activity_xiranite_enr_box_1": {
+        "id": "shaper_gas_activity_xiranite_enr_box_1",
+        "formulaGroupId": "group_shaper_gas",
+        "buildingId": "shaper_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_activity_xiranite_enr_nugget"
+            },
+            {
+                "count": 5,
+                "itemId": "item_gas_inert"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_activity_xiranite_enr_box"
+            }
+        ],
+        "craftTimeMs": 10000
+    },
+    "tools_proc_activity_copper_poly_tool_1": {
+        "id": "tools_proc_activity_copper_poly_tool_1",
+        "formulaGroupId": "group_tools_normal",
+        "buildingId": "tools_assebling_mc_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_activity_copper_poly_cmpt"
+            },
+            {
+                "count": 1,
+                "itemId": "item_xiranite_enr_powder"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_activity_copper_poly_tool"
+            }
+        ],
+        "craftTimeMs": 10000
+    },
+    "tools_proc_activity_xiranite_copper_tool_1": {
+        "id": "tools_proc_activity_xiranite_copper_tool_1",
+        "formulaGroupId": "group_tools_normal",
+        "buildingId": "tools_assebling_mc_1",
+        "ingredients": [
+            {
+                "count": 4,
+                "itemId": "item_copper_cmpt"
+            },
+            {
+                "count": 1,
+                "itemId": "item_xiranite_powder"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_activity_copper_xiranite_tool"
+            }
+        ],
+        "craftTimeMs": 2000
+    },
+    "tools_proc_activity_xiranite_enr_lung": {
+        "id": "tools_proc_activity_xiranite_enr_lung",
+        "formulaGroupId": "group_tools_normal",
+        "buildingId": "tools_assebling_mc_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_activity_xiranite_enr_box"
+            },
+            {
+                "count": 1,
+                "itemId": "item_activity_copper_poly_tool"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_activity_xiranite_enr_lung"
+            }
+        ],
+        "craftTimeMs": 10000
+    },
+    "tools_proc_activity_xiranite_lung": {
+        "id": "tools_proc_activity_xiranite_lung",
+        "formulaGroupId": "group_tools_normal",
+        "buildingId": "tools_assebling_mc_1",
+        "ingredients": [
+            {
+                "count": 5,
+                "itemId": "item_activity_xiranite_box"
+            },
+            {
+                "count": 5,
+                "itemId": "item_activity_copper_xiranite_tool"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_activity_xiranite_lung"
             }
         ],
         "craftTimeMs": 10000

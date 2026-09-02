@@ -2,6 +2,7 @@ export const machineCraftGroups = {
     "group_component_normal": {
         "id": "group_component_normal",
         "craftList": [
+            "component_activity_copper_poly_cmpt",
             "component_iron_cmpt_1",
             "component_glass_cmpt_1",
             "component_iron_enr_cmpt_1",
@@ -190,6 +191,8 @@ export const machineCraftGroups = {
     "group_furnance_normal": {
         "id": "group_furnance_normal",
         "craftList": [
+            "furnance_activity_xiranite_nugget_1",
+            "furnance_activity_xiranite_enr_nugget_1",
             "furnance_iron_nugget_1",
             "furnance_iron_nugget_2",
             "furnance_quartz_glass_1",
@@ -244,6 +247,10 @@ export const machineCraftGroups = {
     "group_tools_normal": {
         "id": "group_tools_normal",
         "craftList": [
+            "tools_proc_activity_xiranite_copper_tool_1",
+            "tools_proc_activity_copper_poly_tool_1",
+            "tools_proc_activity_xiranite_lung",
+            "tools_proc_activity_xiranite_enr_lung",
             "tools_proc_bomb_1_1",
             "tools_proc_battery_1_1",
             "tools_proc_battery_2_1",
@@ -327,6 +334,7 @@ export const machineCraftGroups = {
     "group_shaper_normal": {
         "id": "group_shaper_normal",
         "craftList": [
+            "shaper_activity_xiranite_box_1",
             "shaper_iron_bottle_1",
             "shaper_glass_bottle_1",
             "shaper_iron_enr_bottle_1",
@@ -511,6 +519,7 @@ export const machineCraftGroups = {
     "group_gas_reactor_gas": {
         "id": "group_gas_reactor_gas",
         "craftList": [
+            "gas_reactor_activity_copper_poly_gas_1",
             "gas_reactor_gas_copper_enr2_1"
         ]
     },
@@ -526,6 +535,7 @@ export const machineCraftGroups = {
     "group_shaper_gas": {
         "id": "group_shaper_gas",
         "craftList": [
+            "shaper_gas_activity_xiranite_enr_box_1",
             "shaper_gas_copper_jar_1"
         ]
     },
@@ -554,6 +564,7 @@ export const machineCraftGroups = {
     "group_transmuter_2_gastrans": {
         "id": "group_transmuter_2_gastrans",
         "craftList": [
+            "liquid_transmuter_2_activity_copper_poly_gas_1",
             "liquid_transmuter_2_gas_gas_xiranite_1",
             "liquid_transmuter_2_gas_gas_xiranite_enr_1",
             "liquid_transmuter_2_gas_gas_copper_1",
@@ -564,6 +575,7 @@ export const machineCraftGroups = {
     "group_transmuter_2_solidtrans": {
         "id": "group_transmuter_2_solidtrans",
         "craftList": [
+            "liquid_transmuter_2_activity_copper_poly_1",
             "liquid_transmuter_2_solid_xiranite_powder_1",
             "liquid_transmuter_2_solid_xiranite_enr_powder_1",
             "liquid_transmuter_2_solid_copper_nugget_1",
