@@ -1878,5 +1878,99 @@ export const manualCrafts = {
                 "itemId": "item_device_xiranite_radar_1"
             }
         ]
+    },
+    "hdwk_slwood_1_hshog_1_1": {
+        "id": "hdwk_slwood_1_hshog_1_1",
+        "ingredients": [
+            {
+                "count": 2,
+                "itemId": "item_drop_slwood_1"
+            },
+            {
+                "count": 1,
+                "itemId": "item_drop_hshog_1"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_slwood_1_hshog_1_1"
+            }
+        ]
+    },
+    "item_arrow_chip_bomb": {
+        "id": "item_arrow_chip_bomb",
+        "ingredients": [
+            {
+                "count": 10,
+                "itemId": "item_copper_enr2_cmpt"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_arrow_chip_bomb"
+            }
+        ]
+    },
+    "item_arrow_chip_frozen": {
+        "id": "item_arrow_chip_frozen",
+        "ingredients": [
+            {
+                "count": 10,
+                "itemId": "item_copper_enr2_cmpt"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_arrow_chip_frozen"
+            }
+        ]
+    },
+    "item_arrow_chip_multiple": {
+        "id": "item_arrow_chip_multiple",
+        "ingredients": [
+            {
+                "count": 10,
+                "itemId": "item_copper_enr2_cmpt"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_arrow_chip_multiple"
+            }
+        ]
+    },
+    "item_arrow_chip_penetrate": {
+        "id": "item_arrow_chip_penetrate",
+        "ingredients": [
+            {
+                "count": 10,
+                "itemId": "item_copper_enr2_cmpt"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_arrow_chip_penetrate"
+            }
+        ]
+    },
+    "item_arrow_chip_shield_breaker": {
+        "id": "item_arrow_chip_shield_breaker",
+        "ingredients": [
+            {
+                "count": 10,
+                "itemId": "item_copper_enr2_cmpt"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_arrow_chip_shield_breaker"
+            }
+        ]
     }
 };
