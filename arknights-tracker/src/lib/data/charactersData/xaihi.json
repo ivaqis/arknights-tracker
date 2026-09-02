@@ -1913,7 +1913,7 @@
                     0.0003
                 ]
             },
-            "intellectRaisesAmpLimit": {
+            "maxAmpFromInt": {
                 "dataType": "percent",
                 "data": [
                     0.3,

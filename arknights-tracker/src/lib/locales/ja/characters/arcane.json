@@ -85,7 +85,7 @@
         "imprisonmentAndSusceptibilityDurationS": "牢獄と脆弱持続時間（秒）",
         "baseSusceptibility": "基礎脆弱効果",
         "maxBonusSusceptibilityFromWill": "意志による最大追加脆弱効果",
-        "willRequiredForMaxBonusSusceptibility": "最大追加脆弱効果に必要な意志"
+        "willForMaxBonusSusceptibility": "脆弱効果の最大追加に対応する意志"
       },
       "baseDmgMultiplier": "基礎ダメージ倍率",
       "baseStagger": "基礎ブレイク値",
@@ -99,7 +99,7 @@
         "main": "<@ba.key>破晦陣</>を生成し、範囲内の敵に<@ba.natur>自然ダメージ</>を与える。\n<@ba.key>破晦陣</>内の敵が終撃または操作オペレーターの<#ba.lastcombo>重攻撃</>を受けたとき、<@ba.key>破晦陣</>がその敵に<@ba.key>集中攻撃</>を発動し、範囲ダメージを与える。（最大2回まで発動）\n<@ba.key>集中攻撃</>が2回発動すると、必殺技は<@ba.key>破晦訣明</>に切り替わる。\n<@ba.key>破晦訣明</>：前方広範囲の敵に<@ba.natur>自然ダメージ</>を与える。",
         "conditionName1": "陣訣・知",
         "conditionDesc1": "/*知性(<@ba.vup>{floor:deck_wisd:0}</>) ≥ 意志(<@ba.vup>{floor:deck_will:0}</>)、<@ba.key>陣訣・知</>発動中*/",
-        "conditionPostDesc1": "<@ba.key>陣訣・知</>：\n- <@ba.key>破晦陣</>を生成する際、範囲内の敵に強制的に<#ba.corrupt>腐食</>状態にする。",
+        "conditionPostDesc1": "<@ba.key>陣訣・知</>：\n- <@ba.key>破晦陣</>を生成する際、範囲内の敵を強制的に<#ba.corrupt>腐食</>状態にする。",
         "conditionDescInactive1": "/*知性(<@ba.vup>{floor:deck_wisd:0}</>) ＜ 意志(<@ba.vup>{floor:deck_will:0}</>)、<@ba.key>陣訣・知</>未発動*/",
         "conditionName2": "陣訣・意",
         "conditionDesc2": "/*意志(<@ba.vup>{floor:deck_will:0}</>) ＞ 知性(<@ba.vup>{floor:deck_wisd:0}</>)、<@ba.key>陣訣・意</>発動中*/",

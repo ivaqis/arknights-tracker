@@ -402,7 +402,11 @@
     "special_1_4_1": "Притяжение разлома",
     "weponbox_1_4_1": "Поставка «Военный стандарт»",
     "special_1_4_2": "Приветствие утренней звезды",
-    "weponbox_1_4_2": "Поставка «Ослепление»"
+    "weponbox_1_4_2": "Поставка «Ослепление»",
+    "special_1_5_1": "Зимняя охота",
+    "weponbox_1_5_1": "Поставка «Лютый мороз»",
+    "weponbox_1_5_2": "Поставка «Теггер»",
+    "special_1_5_2": "Красочный блеск"
   },
   "pages": {
     "home": "Главная",
@@ -498,7 +502,17 @@
     "gazeNorthToTheRiftSignIn": "Событие входа «Вид на северный разлом»",
     "protocolInvitationTheReturn": "Протокольное приглашение «Возвращение»",
     "bedazzlingDawnstarSignIn": "Событие входа «Ослепительная утренняя звезда»",
-    "aForestMantledInSnow": "Лес, укрытый снегом"
+    "aForestMantledInSnow": "Лес, укрытый снегом",
+    "seasonOfVirtuality": "Сезон виртуальности",
+    "seasonOfIllusion": "Сезон иллюзий",
+    "runnersSteeplechase": "Гонка с препятствиями",
+    "snowOverDeepWoods": "Снег в дремучей чаще",
+    "aicSupportChubbyLungAttacks": "Поддержка АПК: Атака пухлика-луна",
+    "ridgelineFlowsOfAutumnSignIn": "Вход «Осенние потоки горных хребтов»",
+    "trialOfTheBow": "Испытание стрелка",
+    "protocolPassGloomwald": "Протопропуск «Мраколесье»",
+    "orbipomMerge": "OrbiPom! СЛИЯНИЕ!",
+    "fletchedIrontipSignIn": "Вход «Оперенная железная стрела»"
   },
   "mouths": {
     "january": "Январь",
@@ -1045,7 +1059,26 @@
     "heavyXiragen": "Тяжелый ксираген",
     "crimsonSpearleaf": "Багровый копьелист",
     "talosCap": "Талосник",
-    "protocolith": "Протоколит"
+    "protocolith": "Протоколит",
+    "caudalGoldscales": "Золотые хвостовые чешуйки",
+    "yazhenSeeds": "Семена ячжэня",
+    "reedRyeSeeds": "Семена тростниковой ржи",
+    "tartpepperSeeds": "Семена терпкого перца",
+    "redjadeGinsengSeeds": "Семена нефритового женьшеня",
+    "amberRiceSeeds": "Семена янтарного риса",
+    "protoXiranCuprium": "Протоксиранокуприй",
+    "protoXiranCupriumPart": "Протоксиранокуприевая деталь",
+    "protoXiranCupriumGas": "Протоксиранокуприевый газ",
+    "protoXiranCupriumFrame": "Протоксиранокуприевый каркас",
+    "protoCupriumFrame": "Протокуприевый каркас",
+    "protoChubbyLungShell": "Протопанцирь пухлика-луна",
+    "protoChubbyLungHeavyShell": "Тяжелый протопанцирь пухлика-луна",
+    "heavyXiraniteChubbyLung": "Пухлик-лун из тяжелого ксиранита",
+    "protoHeavyXiranite": "Тяжелый протоксиранит",
+    "xiraniteChubbyLung": "Ксиранитовый пухлик-лун",
+    "protoXiranite": "Протоксиранит",
+    "tenderMoss": "Мягкий мох",
+    "slugSprig": "Росток слизня"
   },
   "common": {
     "copy": "Копировать",
@@ -1286,7 +1319,8 @@
     "mifu": "Ми Фу",
     "camille": "Камиль",
     "arcane": "Премудрость",
-    "liino": "Лиино"
+    "liino": "Лиино",
+    "typhoeus": "Тифея"
   },
   "weaponsList": {
     "custom_weapon": "Кастомное оружие",
@@ -1366,7 +1400,9 @@
     "junctionPoint": "Узловая точка",
     "goldenAge": "Золотой век",
     "farsight": "Дальновидность",
-    "bedazzlingNightDebut": "Блестящий ночной дебют"
+    "bedazzlingNightDebut": "Блестящий ночной дебют",
+    "umbraOfFrigidEventide": "Тень закатной стужи",
+    "sufferingsEnd": "Конец страданий"
   },
   "cookies": {
     "title": "Мы используем куки",
@@ -1484,7 +1520,14 @@
     "world_energy_point11_4": "Сильный аллювий энергии: ЗО северного Улина",
     "world_energy_point11_5": "Сильный аллювий энергии: ЗО северного Улина",
     "world_energy_point11_6": "Сильный аллювий энергии: ЗО северного Улина",
-    "world_energy_point11_7": "Сильный аллювий энергии: ЗО северного Улина"
+    "world_energy_point11_7": "Сильный аллювий энергии: ЗО северного Улина",
+    "world_energy_point12_1": "Аллювий энергии: Снежный лес",
+    "world_energy_point12_2": "Аллювий энергии: Снежный лес",
+    "world_energy_point12_3": "Аллювий энергии: Снежный лес",
+    "world_energy_point12_4": "Сильный аллювий энергии: Снежный лес",
+    "world_energy_point12_5": "Сильный аллювий энергии: Снежный лес",
+    "world_energy_point12_6": "Сильный аллювий энергии: Снежный лес",
+    "world_energy_point12_7": "Сильный аллювий энергии: Снежный лес"
   },
   "enemies": {
     "eny_0007_mimicw": "Роющий нидвурм",
@@ -1570,7 +1613,15 @@
     "eny_0122_kltdbud": "Моротень элитного бойца спецопергруппы «Инлун»",
     "eny_0123_klcap": "Моротень спецопергруппы «Инлун» с глевией",
     "eny_0124_kltdcap": "Моротень капитана спецопергруппы «Инлун»",
-    "eny_0125_fdcentur": "Хилиарх Аллейхреос"
+    "eny_0125_fdcentur": "Хилиарх Аллейхреос",
+    "eny_0127_bigents": "Ярость Мраколесья",
+    "eny_0128_babyents": "Древесный странник",
+    "eny_0129_slwood": "Древесный слизень",
+    "tatget_001_normal": "Базовая цель",
+    "tatget_002_endurance": "Стандартная цель",
+    "tatget_003_expand": "Цель-барьер",
+    "tatget_004_armor": "Тяжелая цель",
+    "tatget_005_shield": "Энергетический щит"
   },
   "essencesPage": {
     "optimizer": "Оптимизатор фарма",
@@ -1851,7 +1902,22 @@
     "item_equip_t4_suit_usp02_body_04": "Легкая броня «Вечный ксиранит» К1",
     "item_equip_t4_suit_usp02_edc_04": "Крепежная пластина «Вечный ксиранит»",
     "item_equip_t4_suit_usp02_hand_03": "Обмотки «Вечный ксиранит»",
-    "item_equip_t4_suit_usp02_hand_04": "Краги «Вечный ксиранит»"
+    "item_equip_t4_suit_usp02_hand_04": "Краги «Вечный ксиранит»",
+    "item_equip_t4_parts_wuling00_body_04": "Штурмовая броня «Полевые работы АПК»",
+    "item_equip_t4_parts_wuling00_body_05": "Медицинская броня «Полевые работы АПК»",
+    "item_equip_t4_parts_wuling00_edc_04": "Штурмовой тычковый нож «Полевые работы АПК»",
+    "item_equip_t4_parts_wuling00_edc_05": "Аккумулятор «Полевые работы АПК»",
+    "item_equip_t4_parts_wuling00_hand_04": "Штурмовые перчатки «Полевые работы АПК»",
+    "item_equip_t4_parts_wuling00_hand_05": "Медицинские перчатки «Полевые работы АПК»",
+    "item_equip_t4_suit_burst01_body_02": "Легкая броня «Спад прилива» К1",
+    "item_equip_t4_suit_burst01_body_03": "Тяжелая броня «Вздымающаяся волна»",
+    "item_equip_t4_suit_burst01_edc_03": "Антиморовый газовый резак К1",
+    "item_equip_t4_suit_burst01_hand_02": "Перчатки «Глубокое погружение»",
+    "item_equip_t4_suit_spellburst_body_01": "Броня «Далекий бастион»",
+    "item_equip_t4_suit_spellburst_edc_01": "Система связи «Далекий бастион»",
+    "item_equip_t4_suit_spellburst_hand_01": "Рукавицы «Далекий бастион»",
+    "item_equip_t4_suit_usp02_edc_05": "Крепежная пластина «Вечный ксиранит» К1",
+    "item_equip_t4_suit_usp02_edc_06": "Тяжелая пластина «Вечный ксиранит»"
   },
   "packs": {
     "none": "Некомплектное",
@@ -1901,7 +1967,8 @@
     "suit_combo_cd01": "Циньбо",
     "suit_expend_spell01": "Ксиранад",
     "suit_crush_fracture": "Потертое лезвие",
-    "suit_generaltype": "Полевые работы АПК"
+    "suit_generaltype": "Полевые работы АПК",
+    "suit_spellburst": "Далекий бастион"
   },
   "equipmentTypes": {
     "body": "Броня",
@@ -1970,7 +2037,8 @@
     "wiki_group_monster_hongshan": "Разбойники-цанцзэй",
     "wiki_group_monster_animal": "Дикая фауна",
     "wiki_group_monster_kl": "Моротени",
-    "wiki_group_monster_js": "Сотворенный"
+    "wiki_group_monster_js": "Сотворенный",
+    "wiki_group_monster_witchcraft": "Порождения колдовства"
   },
   "resitances": {
     "heatRez": "Тепловая СОПР",
@@ -2743,6 +2811,7 @@
   },
   "audio_player": {
     "playback_error": "Не удалось загрузить аудио",
+    "not_found": "Аудио не найдено (404)",
     "open_raw": "Open raw"
   }
 }

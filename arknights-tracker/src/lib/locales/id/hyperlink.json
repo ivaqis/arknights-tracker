@@ -23,6 +23,14 @@
     "name": "Status Fisik: Lift",
     "desc": "Mengakibatkan <#ba.noguard>Vulnerability</> kepada musuh. Jika musuh sudah terkena <#ba.noguard>Vulnerable</>, <#ba.noguard>Vulnerability</> akan bertambah sebanyak 1 tumpuk lagi dan menimbulkan <@ba.phy>Physical DMG</> dan <@ba.poise>Stagger</>."
   },
+  "ba.arrowenergy": {
+    "name": "Tanda",
+    "desc": "Typhoeus akan mendapatkan Tanda saat dia memakai tumpukan <@ba.naturalinflict>Nature Infliction</> kepada musuh atau saat mengakibatkan <#ba.naturalburst>Nature Burst</> kepada musuh. Lalu, skill kombonya bisa mengubah Tanda menjadi <#ba.arrownum>Panah Berburu</>."
+  },
+  "ba.arrownum": {
+    "name": "Panah Berburu",
+    "desc": "Saat berada dalam kondisi <@ba.key>Melayang</>, Typhoeus bisa memakai Panah Berburu untuk memperkuat tembakannya dan menimbulkan DMG lebih besar sekaligus mengaktifkan <#ba.naturalburst>Nature Burst</>."
+  },
   "ba.burning": {
     "name": "Arts Reaction: Combustion",
     "desc": "Musuh yang terkena <@ba.burning>Combustion</> akan terkena <@ba.fire>Heat DMG</> seiring waktu.\n<@ba.burning>Combustion</> = <#ba.spellinflict>Infliction selain Heat</> (<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.fireinflict>Heat Infliction</>"
@@ -260,8 +268,8 @@
     "desc": "Target yang terkena Susceptible akan terkena DMG yang lebih besar untuk sementara berdasarkan elemen Susceptible-nya. Angkanya menunjukkan besaran peningkatannya. Efek yang tipenya sama bisa ditumpuk."
   },
   "ba.weak": {
-    "name": "Weaken",
-    "desc": "Target yang terkena Weakened akan menimbulkan DMG yang lebih kecil untuk sementara. Angkanya menunjukkan besaran pengurangannya. Efek yang tipenya sama bisa ditumpuk secara nonlinier."
+    "name": "Weakness",
+    "desc": "Target yang terkena Weakness akan menimbulkan DMG yang lebih kecil untuk sementara. Angkanya menunjukkan besaran pengurangannya. Efek yang tipenya sama bisa ditumpuk secara nonlinier."
   },
   "fac.hub": {
     "name": "Protokol Automasi Canggih",

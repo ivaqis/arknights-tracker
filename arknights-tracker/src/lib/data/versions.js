@@ -33,5 +33,12 @@ export const changelogData = [
         weapons: ["junctionPoint", "type42SolemnPhalanx", "goldenAge", "farsight", "bedazzlingNightDebut"],
         equipment: ["item_equip_t4_suit_fire_natr01_hand_04", "item_equip_t4_suit_fire_natr01_edc_04", "item_equip_t4_parts_wuling00_body_01", "item_equip_t4_parts_wuling00_body_02", "item_equip_t4_parts_wuling00_body_03", "item_equip_t4_parts_wuling00_hand_01", "item_equip_t4_parts_wuling00_hand_02", "item_equip_t4_parts_wuling00_hand_03", "item_equip_t4_parts_wuling00_edc_01", "item_equip_t4_parts_wuling00_edc_02", "item_equip_t4_parts_wuling00_edc_03", "item_equip_t4_suit_heal01_body_03", "item_equip_t4_suit_heal01_hand_03", "item_equip_t4_suit_usp02_body_03", "item_equip_t4_suit_usp02_body_04", "item_equip_t4_suit_usp02_hand_03", "item_equip_t4_suit_usp02_hand_04", "item_equip_t4_suit_usp02_edc_04", "item_equip_t4_parts_wuling02_body_01", "item_equip_t4_parts_wuling02_body_02", "item_equip_t4_parts_wuling02_hand_01", "item_equip_t4_parts_wuling02_hand_02", "item_equip_t4_parts_wuling02_edc_01"],
         enemies: ["eny_0125_fdcentur", "eny_0119_kltiger", "eny_0120_klbear", "eny_0123_klcap", "eny_0124_kltdcap", "eny_0118_klhog", "eny_0117_klhound", "eny_0121_klbud", "eny_0122_kltdbud"]
+    },
+    {
+        version: "1.5",
+        characters: ["typhoeus"],
+        weapons: ["umbraOfFrigidEventide", "sufferingsEnd"],
+        equipment: ["item_equip_t4_suit_burst01_body_02", "item_equip_t4_suit_burst01_body_03", "item_equip_t4_suit_burst01_hand_02", "item_equip_t4_suit_burst01_edc_03", "item_equip_t4_parts_wuling00_body_04", "item_equip_t4_parts_wuling00_body_05", "item_equip_t4_parts_wuling00_hand_04", "item_equip_t4_parts_wuling00_hand_05", "item_equip_t4_parts_wuling00_edc_04", "item_equip_t4_parts_wuling00_edc_05", "item_equip_t4_suit_usp02_edc_05", "item_equip_t4_suit_usp02_edc_06", "item_equip_t4_suit_spellburst_body_01", "item_equip_t4_suit_spellburst_hand_01", "item_equip_t4_suit_spellburst_edc_01"],
+        enemies: ["eny_0127_bigents", "eny_0128_babyents", "eny_0129_slwood"]
     }
 ];

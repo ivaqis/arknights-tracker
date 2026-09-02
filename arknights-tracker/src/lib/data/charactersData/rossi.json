@@ -1852,7 +1852,7 @@
                     5.0
                 ]
             },
-            "criticalRateBoost": {
+            "criticalRate": {
                 "dataType": "percent",
                 "data": [
                     0.15,

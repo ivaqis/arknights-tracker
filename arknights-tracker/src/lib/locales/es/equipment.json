@@ -563,6 +563,18 @@
     "decoDesc": "Un conjunto de equipamiento de combate diseñado por Endfield Industries para el entrenamiento de operadores. Esta serie tiene buena recepción en el mercado debido a su excelente relación calidad-precio. \n“¿Me das unas cuantas piezas más, por favor? Sirven como buenos materiales de construcción”.",
     "setBonus": "Efecto de conjunto de 3 piezas: el portador obtiene DAÑ infligido <@ba.vup>+{dmg_up:0%}</> para todo tipo de DAÑ, <@ba.vup>{1-dmg_taken_down:0%}</> de Reducción de DAÑ contra todo tipo de DAÑ y Eficiencia de ganancia máxima <@ba.vup>+{ultimate_gain_up:0%}</>."
   },
+  "item_equip_t4_parts_wuling00_body_04": {
+    "name": "Armadura de asalto para Trabajo de campo del CAI",
+    "description": "Diseñado de forma independiente por Endfield Industries y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
+    "decoDesc": "Un conjunto de equipamiento de combate diseñado por Endfield Industries para el entrenamiento de operadores. Esta serie tiene buena recepción en el mercado debido a su excelente relación calidad-precio. \n“Más resistente. Más pesada. Más afilada”.",
+    "setBonus": "Efecto de conjunto de 3 piezas: el portador obtiene DAÑ infligido <@ba.vup>+{dmg_up:0%}</> para todo tipo de DAÑ, <@ba.vup>{1-dmg_taken_down:0%}</> de Reducción de DAÑ contra todo tipo de DAÑ y Eficiencia de ganancia máxima <@ba.vup>+{ultimate_gain_up:0%}</>."
+  },
+  "item_equip_t4_parts_wuling00_body_05": {
+    "name": "Armadura médica para Trabajo de campo del CAI",
+    "description": "Diseñado de forma independiente por Endfield Industries y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
+    "decoDesc": "Un conjunto de equipamiento de combate diseñado por Endfield Industries para el entrenamiento de operadores. Esta serie tiene buena recepción en el mercado debido a su excelente relación calidad-precio. \nEl equipamiento básico para Trabajo de campo del CAI puede incorporar puertos de conexión para módulos médicos que permiten monitorear mejor los signos vitales del usuario.",
+    "setBonus": "Efecto de conjunto de 3 piezas: el portador obtiene DAÑ infligido <@ba.vup>+{dmg_up:0%}</> para todo tipo de DAÑ, <@ba.vup>{1-dmg_taken_down:0%}</> de Reducción de DAÑ contra todo tipo de DAÑ y Eficiencia de ganancia máxima <@ba.vup>+{ultimate_gain_up:0%}</>."
+  },
   "item_equip_t4_parts_wuling00_edc_01": {
     "name": "Machete para trabajo de campo del CAI",
     "description": "Diseñado de forma independiente por Endfield Industries y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
@@ -581,6 +593,18 @@
     "decoDesc": "Un conjunto de equipamiento de combate diseñado por Endfield Industries para el entrenamiento de operadores. Esta serie tiene buena recepción en el mercado debido a su excelente relación calidad-precio. \n“Espero con ansias una nueva operación de combate, así como la gente espera con ansias el siguiente amanecer”.",
     "setBonus": "Efecto de conjunto de 3 piezas: el portador obtiene DAÑ infligido <@ba.vup>+{dmg_up:0%}</> para todo tipo de DAÑ, <@ba.vup>{1-dmg_taken_down:0%}</> de Reducción de DAÑ contra todo tipo de DAÑ y Eficiencia de ganancia máxima <@ba.vup>+{ultimate_gain_up:0%}</>."
   },
+  "item_equip_t4_parts_wuling00_edc_04": {
+    "name": "Cuchillo de empuje de asalto para Trabajo de campo del CAI",
+    "description": "Diseñado de forma independiente por Endfield Industries y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
+    "decoDesc": "Un conjunto de equipamiento de combate diseñado por Endfield Industries para el entrenamiento de operadores. Esta serie tiene buena recepción en el mercado debido a su excelente relación calidad-precio. \nEl mango y la hoja de este cuchillo de empuje fueron ajustados y reequilibrados para reducir la fatiga de la muñeca del usuario.",
+    "setBonus": "Efecto de conjunto de 3 piezas: el portador obtiene DAÑ infligido <@ba.vup>+{dmg_up:0%}</> para todo tipo de DAÑ, <@ba.vup>{1-dmg_taken_down:0%}</> de Reducción de DAÑ contra todo tipo de DAÑ y Eficiencia de ganancia máxima <@ba.vup>+{ultimate_gain_up:0%}</>."
+  },
+  "item_equip_t4_parts_wuling00_edc_05": {
+    "name": "Batería externa para trabajo de campo del CAI",
+    "description": "Diseñado de forma independiente por Endfield Industries y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
+    "decoDesc": "Un conjunto de equipamiento de combate diseñado por Endfield Industries para el entrenamiento de operadores. Esta serie tiene buena recepción en el mercado debido a su excelente relación calidad-precio. \nEsta batería externa es mucho más pequeña y resistente que las baterías que avanzan por las líneas de producción de la Fábrica del CAI.",
+    "setBonus": "Efecto de conjunto de 3 piezas: el portador obtiene DAÑ infligido <@ba.vup>+{dmg_up:0%}</> para todo tipo de DAÑ, <@ba.vup>{1-dmg_taken_down:0%}</> de Reducción de DAÑ contra todo tipo de DAÑ y Eficiencia de ganancia máxima <@ba.vup>+{ultimate_gain_up:0%}</>."
+  },
   "item_equip_t4_parts_wuling00_hand_01": {
     "name": "Guantes para trabajo de campo del CAI",
     "description": "Diseñado de forma independiente por Endfield Industries y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
@@ -596,7 +620,19 @@
   "item_equip_t4_parts_wuling00_hand_03": {
     "name": "Vendas para trabajo de campo del CAI",
     "description": "Diseñado de forma independiente por Endfield Industries y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
-    "decoDesc": "Un conjunto de equipamiento de combate diseñado por Endfield Industries para el entrenamiento de operadores. Esta serie tiene buena recepción en el mercado debido a su excelente relación calidad-precio. \nEquipo de protección especial para las manos. Fueron diseñadas para operadores de campo de batalla que necesitan manejar maquinaria compleja.",
+    "decoDesc": "Un conjunto de equipamiento de combate diseñado por Endfield Industries para el entrenamiento de operadores. Esta serie tiene buena recepción en el mercado debido a su excelente relación calidad-precio. \nEquipo de protección especial para las manos. Se diseñaron para operadores que necesitan manejar maquinaria compleja en el campo de batalla.",
+    "setBonus": "Efecto de conjunto de 3 piezas: el portador obtiene DAÑ infligido <@ba.vup>+{dmg_up:0%}</> para todo tipo de DAÑ, <@ba.vup>{1-dmg_taken_down:0%}</> de Reducción de DAÑ contra todo tipo de DAÑ y Eficiencia de ganancia máxima <@ba.vup>+{ultimate_gain_up:0%}</>."
+  },
+  "item_equip_t4_parts_wuling00_hand_04": {
+    "name": "Guantes de asalto para Trabajo de campo del CAI",
+    "description": "Diseñado de forma independiente por Endfield Industries y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
+    "decoDesc": "Un conjunto de equipamiento de combate diseñado por Endfield Industries para el entrenamiento de operadores. Esta serie tiene buena recepción en el mercado debido a su excelente relación calidad-precio. \nUn diseño más estilizado que incorpora un sistema de montaje universal para armas de fuego. El usuario ya no tiene que preocuparse por perder un arma durante el combate.",
+    "setBonus": "Efecto de conjunto de 3 piezas: el portador obtiene DAÑ infligido <@ba.vup>+{dmg_up:0%}</> para todo tipo de DAÑ, <@ba.vup>{1-dmg_taken_down:0%}</> de Reducción de DAÑ contra todo tipo de DAÑ y Eficiencia de ganancia máxima <@ba.vup>+{ultimate_gain_up:0%}</>."
+  },
+  "item_equip_t4_parts_wuling00_hand_05": {
+    "name": "Guantes médicos para Trabajo de campo del CAI",
+    "description": "Diseñado de forma independiente por Endfield Industries y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
+    "decoDesc": "Un conjunto de equipamiento de combate diseñado por Endfield Industries para el entrenamiento de operadores. Esta serie tiene buena recepción en el mercado debido a su excelente relación calidad-precio. \n“¿Tratamiento completado? ¿Eso es todo? ¿Un golpecito en la muñeca...? Oye. ¿Por qué hay una jeringa enorme en tu guante?”.",
     "setBonus": "Efecto de conjunto de 3 piezas: el portador obtiene DAÑ infligido <@ba.vup>+{dmg_up:0%}</> para todo tipo de DAÑ, <@ba.vup>{1-dmg_taken_down:0%}</> de Reducción de DAÑ contra todo tipo de DAÑ y Eficiencia de ganancia máxima <@ba.vup>+{ultimate_gain_up:0%}</>."
   },
   "item_equip_t4_parts_wuling01_body_01": {
@@ -606,7 +642,7 @@
     "setBonus": ""
   },
   "item_equip_t4_parts_wuling01_body_02": {
-    "name": "Armadura de redentor",
+    "name": "Armadura de Redentor",
     "description": "Diseñado por los Espadachines de Hongshan y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
     "decoDesc": "Este equipo es sinónimo del difícil camino que está por venir. “La misión aún no ha terminado, por lo que el viaje aún no está completo.”",
     "setBonus": ""
@@ -650,31 +686,31 @@
   "item_equip_t4_parts_wuling02_body_01": {
     "name": "Armadura pesada de Trotagrietas",
     "description": "Diseñado por los Espadachines de Hongshan y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
-    "decoDesc": "La Agencia de Espadachines diseñó este conjunto especial de equipo para combatientes que realizan operaciones frecuentes en zonas de alto riesgo. \n“Para recorrer la gran grieta, visto un traje de jade de Xiranita”.",
+    "decoDesc": "La Agencia de Espadachines diseñó este equipo especial para los combatientes que suelen realizar misiones en zonas de alto riesgo. \n“Recorro la Gran grieta, ataviado con un traje de jade”.",
     "setBonus": ""
   },
   "item_equip_t4_parts_wuling02_body_02": {
     "name": "Armadura ligera de Trotagrietas",
     "description": "Diseñado por los Espadachines de Hongshan y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
-    "decoDesc": "La Agencia de Espadachines diseñó este conjunto especial de equipo para combatientes que realizan operaciones frecuentes en zonas de alto riesgo. \n“Al contemplar el invierno, la vida y la muerte se vuelven claras como el día”.",
+    "decoDesc": "La Agencia de Espadachines diseñó este equipo especial para los combatientes que suelen realizar misiones en zonas de alto riesgo. \n“Contemplo el invierno, y los augurios de muerte son claros como el día”.",
     "setBonus": ""
   },
   "item_equip_t4_parts_wuling02_edc_01": {
     "name": "Losa de armadura de Trotagrietas",
     "description": "Diseñado por los Espadachines de Hongshan y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
-    "decoDesc": "La Agencia de Espadachines diseñó este conjunto especial de equipo para combatientes que realizan operaciones frecuentes en zonas de alto riesgo. \n“Con herramientas para tallar la piedra, marca la cabecera de mi lecho eterno”.",
+    "decoDesc": "La Agencia de Espadachines diseñó este equipo especial para los combatientes que suelen realizar misiones en zonas de alto riesgo. \n“Tallaré la piedra y marcaré la cabecera de mi lecho eterno”.",
     "setBonus": ""
   },
   "item_equip_t4_parts_wuling02_hand_01": {
     "name": "Guantes de Trotagrietas",
     "description": "Diseñado por los Espadachines de Hongshan y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
-    "decoDesc": "La Agencia de Espadachines diseñó este conjunto especial de equipo para combatientes que realizan operaciones frecuentes en zonas de alto riesgo. \n“Cuando oigo rugir el trueno, todo temor que albergue queda purgado”.",
+    "decoDesc": "La Agencia de Espadachines diseñó este equipo especial para los combatientes que suelen realizar misiones en zonas de alto riesgo. \n“Oigo el trueno, y todo miedo desaparece de mi interior”.",
     "setBonus": ""
   },
   "item_equip_t4_parts_wuling02_hand_02": {
     "name": "Manos de Trotagrietas",
     "description": "Diseñado por los Espadachines de Hongshan y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
-    "decoDesc": "La Agencia de Espadachines diseñó este conjunto especial de equipo para combatientes que realizan operaciones frecuentes en zonas de alto riesgo. \n“El estandarte se despliega, un sudario para tenderme a descansar”.",
+    "decoDesc": "La Agencia de Espadachines diseñó este equipo especial para los combatientes que suelen realizar misiones en zonas de alto riesgo. \n“Despliego el estandarte de guerra, será mi sudario si caigo”.",
     "setBonus": ""
   },
   "item_equip_t4_suit_atb01_body_01": {
@@ -917,6 +953,18 @@
     "decoDesc": "Equipo diseñado por la Agencia de Espadachines para quienes trabajan cerca de la Ola de plaga. \nEsto es un fragmento de memoria sobre la Ola de Plaga: Las olas impasibles siempre han rechazado la noción de vida.",
     "setBonus": "Efecto de conjunto de 3 piezas: DAÑ de habilidades infligido del portador <@ba.vup>+{skill_dmg_up:0%}</>.\nDespués de que el portador aplique <@ba.key>{stack_cond}</> o más acumulaciones de <#ba.spellinflict>Imposición de artes</> al enemigo, el portador obtiene <@ba.key>DAÑ por artes infligido</> <@ba.vup>+{spell_dmg_up:0%}</> durante {duration} s. Este efecto no se puede acumular."
   },
+  "item_equip_t4_suit_burst01_body_02": {
+    "name": "Armadura ligera de Marea Baja T1",
+    "description": "Diseñado por los Espadachines de Hongshan y ensamblado por el CAI. Este equipo puede mejorar las capacidades de combate del portador.",
+    "decoDesc": "Equipo diseñado por la Agencia de Espadachines para quienes trabajan cerca de la Ola de plaga. \nEsto es un fragmento de memoria sobre la Ola de plaga: Las olas impasibles siempre han rechazado la noción de vida.",
+    "setBonus": "Efecto de conjunto de 3 piezas: DAÑ de habilidades infligido del portador <@ba.vup>+{skill_dmg_up:0%}</>.\nDespués de que el portador aplique <@ba.key>{stack_cond}</> o más acumulaciones de <#ba.spellinflict>Imposición de artes</> al enemigo, el portador obtiene <@ba.key>DAÑ por artes infligido</> <@ba.vup>+{spell_dmg_up:0%}</> durante {duration} s. Este efecto no se puede acumular."
+  },
+  "item_equip_t4_suit_burst01_body_03": {
+    "name": "Armadura pesada de Oleaje",
+    "description": "Diseñado por los Espadachines de Hongshan y ensamblado por el CAI. Este equipo puede mejorar las capacidades de combate del portador.",
+    "decoDesc": "Equipo diseñado por la Agencia de Espadachines para quienes trabajan cerca de la Ola de plaga. \nEste es un desafío provocador contra la Ola de plaga: Ya no permitiremos que detenga nuestro avance.",
+    "setBonus": "Efecto de conjunto de 3 piezas: DAÑ de habilidades infligido del portador <@ba.vup>+{skill_dmg_up:0%}</>.\nDespués de que el portador aplique <@ba.key>{stack_cond}</> o más acumulaciones de <#ba.spellinflict>Imposición de artes</> al enemigo, el portador obtiene <@ba.key>DAÑ por artes infligido</> <@ba.vup>+{spell_dmg_up:0%}</> durante {duration} s. Este efecto no se puede acumular."
+  },
   "item_equip_t4_suit_burst01_edc_01": {
     "name": "Tubo de O2 Río Suspendido",
     "description": "Diseñado por los Espadachines de Hongshan y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
@@ -929,10 +977,22 @@
     "decoDesc": "Equipo diseñado por la Agencia de Espadachines para quienes trabajan cerca de la Ola de plaga. \nEsto es un toque de temor respecto a la Ola de plaga: ¿Cuándo se hará visible la calamidad suspendida?",
     "setBonus": "Efecto de conjunto de 3 piezas: DAÑ de habilidades infligido del portador <@ba.vup>+{skill_dmg_up:0%}</>.\nDespués de que el portador aplique <@ba.key>{stack_cond}</> o más acumulaciones de <#ba.spellinflict>Imposición de artes</> al enemigo, el portador obtiene <@ba.key>DAÑ por artes infligido</> <@ba.vup>+{spell_dmg_up:0%}</> durante {duration} s. Este efecto no se puede acumular."
   },
+  "item_equip_t4_suit_burst01_edc_03": {
+    "name": "Antorcha de corte turbia T1",
+    "description": "Diseñado por los Espadachines de Hongshan y ensamblado por el CAI. Este equipo puede mejorar las capacidades de combate del portador.",
+    "decoDesc": "Equipo diseñado por la Agencia de Espadachines para quienes trabajan cerca de la Ola de plaga. \nEsto es un toque de temor respecto a la Ola de plaga: ¿Cuándo se hará visible la calamidad suspendida?",
+    "setBonus": "Efecto de conjunto de 3 piezas: DAÑ de habilidades infligido del portador <@ba.vup>+{skill_dmg_up:0%}</>.\nDespués de que el portador aplique <@ba.key>{stack_cond}</> o más acumulaciones de <#ba.spellinflict>Imposición de artes</> al enemigo, el portador obtiene <@ba.key>DAÑ por artes infligido</> <@ba.vup>+{spell_dmg_up:0%}</> durante {duration} s. Este efecto no se puede acumular."
+  },
   "item_equip_t4_suit_burst01_hand_01": {
     "name": "Guanteletes de Marea Alta",
     "description": "Diseñado por los Espadachines de Hongshan y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
     "decoDesc": "Equipo diseñado por la Agencia de Espadachines para quienes trabajan cerca de la Ola de plaga. \nEsta es una pregunta sobre la Ola de plaga: ¿El colapso de las presas antiguas empieza desde dentro?",
+    "setBonus": "Efecto de conjunto de 3 piezas: DAÑ de habilidades infligido del portador <@ba.vup>+{skill_dmg_up:0%}</>.\nDespués de que el portador aplique <@ba.key>{stack_cond}</> o más acumulaciones de <#ba.spellinflict>Imposición de artes</> al enemigo, el portador obtiene <@ba.key>DAÑ por artes infligido</> <@ba.vup>+{spell_dmg_up:0%}</> durante {duration} s. Este efecto no se puede acumular."
+  },
+  "item_equip_t4_suit_burst01_hand_02": {
+    "name": "Guantes de Hundimiento profundo",
+    "description": "Diseñado por los Espadachines de Hongshan y ensamblado por el CAI. Este equipo puede mejorar las capacidades de combate del portador.",
+    "decoDesc": "Equipo diseñado por la Agencia de Espadachines para quienes trabajan cerca de la Ola de plaga. \nEste es un momento de reflexión sobre la Ola de plaga: ¿Hacia dónde fluirá la destrucción silenciosa...?",
     "setBonus": "Efecto de conjunto de 3 piezas: DAÑ de habilidades infligido del portador <@ba.vup>+{skill_dmg_up:0%}</>.\nDespués de que el portador aplique <@ba.key>{stack_cond}</> o más acumulaciones de <#ba.spellinflict>Imposición de artes</> al enemigo, el portador obtiene <@ba.key>DAÑ por artes infligido</> <@ba.vup>+{spell_dmg_up:0%}</> durante {duration} s. Este efecto no se puede acumular."
   },
   "item_equip_t4_suit_combo_cd01_body_01": {
@@ -1202,7 +1262,7 @@
   "item_equip_t4_suit_heal01_body_03": {
     "name": "Coraza LYNX T1",
     "description": "Diseñado por Rhodes Island y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
-    "decoDesc": "El equipo preferido de los médicos. La gente suele referirse a los combatientes que visten la Coraza LYNX como “botiquines andantes”. Estos salvavidas suelen llenar cada bolsillo y soporte de su armadura con suministros médicos de emergencia.",
+    "decoDesc": "El equipo preferido de los médicos. \nLa gente suele referirse a los combatientes que visten la Coraza LYNX como “botiquines andantes”. Estos salvavidas suelen llenar cada bolsillo y soporte de su armadura con suministros médicos de emergencia.",
     "setBonus": "Efecto de conjunto de 3 piezas: Eficiencia del tratamiento de PV del portador <@ba.vup>+{heal_up:0%}</>. \nDespués de que el portador aplique tratamiento de PV a un objetivo aliado, ese objetivo también obtiene <@ba.vup>{1-dmg_taken_down:0%}</> de reducción de DAÑ contra todo tipo de DAÑ por {duration}s. Si dicho tratamiento excede los PV Máx. del objetivo, el objetivo obtiene <@ba.vup>{1-dmg_taken_down2:0%}</> de reducción de DAÑ contra todo tipo de DAÑ. Los efectos antes mencionados no se pueden acumular."
   },
   "item_equip_t4_suit_heal01_edc_01": {
@@ -1323,43 +1383,43 @@
     "name": "Blindaje de etertecnología",
     "description": "Diseñado por los Laboratorios de Etertecnología Portátiles y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
     "decoDesc": "Equipo protector experimental y ligero. \n“La gente de Hongshan usa la pluma como símil de ligereza. Las soluciones antigravedad de nuestros laboratorios están a un pasito”.",
-    "setBonus": "Efecto de conjunto de 3 piezas: ATQ del portador <@ba.vup>+{atk_up:0%}</>. \nDespués de que el portador aplique <#ba.noguard>Vulnerabilidad</>, el portador obtiene <@ba.pd>DAÑ físico</> <@ba.vup>+{phy_dmg_up:0%}</> durante {duration} s. Este efecto puede alcanzar {max_stack:0} acumulación(es). Si el objetivo ya tiene {stack_cond:0} acumulación(es) de <#ba.noguard>Vulnerabilidad</>, el portador obtiene DAÑ físico adicional <@ba.vup>+{phy_dmg_up2:0%}</> por {duration2} s. Este efecto no se puede acumular."
+    "setBonus": "Efecto de conjunto de 3 piezas: ATQ del portador <@ba.vup>+{atk_up:0%}</>.\nDespués de que el portador aplique <#ba.noguard>Vulnerabilidad</>, obtiene <@ba.pd>DAÑ físico infligido</> <@ba.vup>+{phy_dmg_up:0%}</> durante {duration} s. Este efecto puede alcanzar {max_stack:0} acumulaciónes. Si el objetivo tiene {stack_cond:0} acumulaciones de <#ba.noguard>Vulnerabilidad</>, el portador obtiene <@ba.pd>DAÑ físico infligido</> adicional <@ba.vup>+{phy_dmg_up2:0%}</> durante {duration2} s. Este efecto no se puede acumular."
   },
   "item_equip_t4_suit_poise01_edc_01": {
     "name": "Banda de análisis de etertecnología",
     "description": "Diseñado por los Laboratorios de Etertecnología Portátiles y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
     "decoDesc": "Equipo de protección experimental y liviano.\n“Estamos explorando los medios para analizar digitalmente los signos del crecimiento de la Plaga. Todos son bienvenidos a inscribirse en las pruebas de producto.”",
-    "setBonus": "Efecto de conjunto de 3 piezas: ATQ del portador <@ba.vup>+{atk_up:0%}</>. \nDespués de que el portador aplique <#ba.noguard>Vulnerabilidad</>, el portador obtiene <@ba.pd>DAÑ físico</> <@ba.vup>+{phy_dmg_up:0%}</> durante {duration} s. Este efecto puede alcanzar {max_stack:0} acumulación(es). Si el objetivo ya tiene {stack_cond:0} acumulación(es) de <#ba.noguard>Vulnerabilidad</>, el portador obtiene DAÑ físico adicional <@ba.vup>+{phy_dmg_up2:0%}</> por {duration2} s. Este efecto no se puede acumular."
+    "setBonus": "Efecto de conjunto de 3 piezas: ATQ del portador <@ba.vup>+{atk_up:0%}</>.\nDespués de que el portador aplique <#ba.noguard>Vulnerabilidad</>, obtiene <@ba.pd>DAÑ físico infligido</> <@ba.vup>+{phy_dmg_up:0%}</> durante {duration} s. Este efecto puede alcanzar {max_stack:0} acumulaciónes. Si el objetivo tiene {stack_cond:0} acumulaciones de <#ba.noguard>Vulnerabilidad</>, el portador obtiene <@ba.pd>DAÑ físico infligido</> adicional <@ba.vup>+{phy_dmg_up2:0%}</> durante {duration2} s. Este efecto no se puede acumular."
   },
   "item_equip_t4_suit_poise01_edc_02": {
     "name": "Estabilizador de etertecnología",
     "description": "Diseñado por los Laboratorios de Etertecnología Portátiles y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
     "decoDesc": "Equipo protector experimental y ligero. \n“Mantén el estabilizador encendido en todo momento, gracias. Esto evitará que salgas volando como un globo sin amarre durante las fluctuaciones de parámetros”.",
-    "setBonus": "Efecto de conjunto de 3 piezas: ATQ del portador <@ba.vup>+{atk_up:0%}</>. \nDespués de que el portador aplique <#ba.noguard>Vulnerabilidad</>, el portador obtiene <@ba.pd>DAÑ físico</> <@ba.vup>+{phy_dmg_up:0%}</> durante {duration} s. Este efecto puede alcanzar {max_stack:0} acumulación(es). Si el objetivo ya tiene {stack_cond:0} acumulación(es) de <#ba.noguard>Vulnerabilidad</>, el portador obtiene DAÑ físico adicional <@ba.vup>+{phy_dmg_up2:0%}</> por {duration2} s. Este efecto no se puede acumular."
+    "setBonus": "Efecto de conjunto de 3 piezas: ATQ del portador <@ba.vup>+{atk_up:0%}</>.\nDespués de que el portador aplique <#ba.noguard>Vulnerabilidad</>, obtiene <@ba.pd>DAÑ físico infligido</> <@ba.vup>+{phy_dmg_up:0%}</> durante {duration} s. Este efecto puede alcanzar {max_stack:0} acumulaciónes. Si el objetivo tiene {stack_cond:0} acumulaciones de <#ba.noguard>Vulnerabilidad</>, el portador obtiene <@ba.pd>DAÑ físico infligido</> adicional <@ba.vup>+{phy_dmg_up2:0%}</> durante {duration2} s. Este efecto no se puede acumular."
   },
   "item_equip_t4_suit_poise01_edc_03": {
     "name": "Estabilizador de etertecnología T1",
     "description": "Diseñado por los Laboratorios de Etertecnología Portátiles y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
     "decoDesc": "Equipo protector experimental y ligero. \n“Mantén el estabilizador puesto en todo momento, gracias. Esto evitará que salgas volando como un globo sin amarre durante fluctuaciones de parámetros.”",
-    "setBonus": "Efecto de conjunto de 3 piezas: ATQ del portador <@ba.vup>+{atk_up:0%}</>. \nDespués de que el portador aplique <#ba.noguard>Vulnerabilidad</>, el portador obtiene <@ba.pd>DAÑ físico</> <@ba.vup>+{phy_dmg_up:0%}</> durante {duration} s. Este efecto puede alcanzar {max_stack:0} acumulación(es). Si el objetivo ya tiene {stack_cond:0} acumulación(es) de <#ba.noguard>Vulnerabilidad</>, el portador obtiene DAÑ físico adicional <@ba.vup>+{phy_dmg_up2:0%}</> por {duration2} s. Este efecto no se puede acumular."
+    "setBonus": "Efecto de conjunto de 3 piezas: ATQ del portador <@ba.vup>+{atk_up:0%}</>.\nDespués de que el portador aplique <#ba.noguard>Vulnerabilidad</>, obtiene <@ba.pd>DAÑ físico infligido</> <@ba.vup>+{phy_dmg_up:0%}</> durante {duration} s. Este efecto puede alcanzar {max_stack:0} acumulaciónes. Si el objetivo tiene {stack_cond:0} acumulaciones de <#ba.noguard>Vulnerabilidad</>, el portador obtiene <@ba.pd>DAÑ físico infligido</> adicional <@ba.vup>+{phy_dmg_up2:0%}</> durante {duration2} s. Este efecto no se puede acumular."
   },
   "item_equip_t4_suit_poise01_edc_04": {
     "name": "Reloj de etertecnología",
     "description": "Diseñado por los Laboratorios de Etertecnología Portátiles y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
     "decoDesc": "Equipo protector experimental y ligero. \n“Algunos usuarios sospechan que nuestros productos ejercen efectos hemo-mutagénicos. Estas afirmaciones no son más que acusaciones infundadas.”",
-    "setBonus": "Efecto de conjunto de 3 piezas: ATQ del portador <@ba.vup>+{atk_up:0%}</>. \nDespués de que el portador aplique <#ba.noguard>Vulnerabilidad</>, el portador obtiene <@ba.pd>DAÑ físico</> <@ba.vup>+{phy_dmg_up:0%}</> durante {duration} s. Este efecto puede alcanzar {max_stack:0} acumulación(es). Si el objetivo ya tiene {stack_cond:0} acumulación(es) de <#ba.noguard>Vulnerabilidad</>, el portador obtiene DAÑ físico adicional <@ba.vup>+{phy_dmg_up2:0%}</> por {duration2} s. Este efecto no se puede acumular."
+    "setBonus": "Efecto de conjunto de 3 piezas: ATQ del portador <@ba.vup>+{atk_up:0%}</>.\nDespués de que el portador aplique <#ba.noguard>Vulnerabilidad</>, obtiene <@ba.pd>DAÑ físico infligido</> <@ba.vup>+{phy_dmg_up:0%}</> durante {duration} s. Este efecto puede alcanzar {max_stack:0} acumulaciónes. Si el objetivo tiene {stack_cond:0} acumulaciones de <#ba.noguard>Vulnerabilidad</>, el portador obtiene <@ba.pd>DAÑ físico infligido</> adicional <@ba.vup>+{phy_dmg_up2:0%}</> durante {duration2} s. Este efecto no se puede acumular."
   },
   "item_equip_t4_suit_poise01_hand_01": {
     "name": "Guantes de etertecnología",
     "description": "Diseñado por los Laboratorios de Etertecnología Portátiles y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
     "decoDesc": "Equipo protector experimental y ligero. \n“Lleva siempre almohadillas de protección adicionales cuando utilices nuestros productos. Si experimentas alucinaciones auditivas o visuales, por favor, QUÍTATE INMEDIATAMENTE nuestros productos y come algo de comida”.",
-    "setBonus": "Efecto de conjunto de 3 piezas: ATQ del portador <@ba.vup>+{atk_up:0%}</>. \nDespués de que el portador aplique <#ba.noguard>Vulnerabilidad</>, el portador obtiene <@ba.pd>DAÑ físico</> <@ba.vup>+{phy_dmg_up:0%}</> durante {duration} s. Este efecto puede alcanzar {max_stack:0} acumulación(es). Si el objetivo ya tiene {stack_cond:0} acumulación(es) de <#ba.noguard>Vulnerabilidad</>, el portador obtiene DAÑ físico adicional <@ba.vup>+{phy_dmg_up2:0%}</> por {duration2} s. Este efecto no se puede acumular."
+    "setBonus": "Efecto de conjunto de 3 piezas: ATQ del portador <@ba.vup>+{atk_up:0%}</>.\nDespués de que el portador aplique <#ba.noguard>Vulnerabilidad</>, obtiene <@ba.pd>DAÑ físico infligido</> <@ba.vup>+{phy_dmg_up:0%}</> durante {duration} s. Este efecto puede alcanzar {max_stack:0} acumulaciónes. Si el objetivo tiene {stack_cond:0} acumulaciones de <#ba.noguard>Vulnerabilidad</>, el portador obtiene <@ba.pd>DAÑ físico infligido</> adicional <@ba.vup>+{phy_dmg_up2:0%}</> durante {duration2} s. Este efecto no se puede acumular."
   },
   "item_equip_t4_suit_poise01_hand_02": {
     "name": "Guantes livianos de etertecnología",
     "description": "Diseñado por los Laboratorios de Etertecnología Portátiles y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
     "decoDesc": "Equipo protector experimental y ligero. \n“Siempre usa acolchado extra al usar nuestros productos. Si presentas alucinaciones auditivas o visuales, por favor QUÍTATE nuestros productos DE INMEDIATO y come algo.”",
-    "setBonus": "Efecto de conjunto de 3 piezas: ATQ del portador <@ba.vup>+{atk_up:0%}</>. \nDespués de que el portador aplique <#ba.noguard>Vulnerabilidad</>, el portador obtiene <@ba.pd>DAÑ físico</> <@ba.vup>+{phy_dmg_up:0%}</> durante {duration} s. Este efecto puede alcanzar {max_stack:0} acumulación(es). Si el objetivo ya tiene {stack_cond:0} acumulación(es) de <#ba.noguard>Vulnerabilidad</>, el portador obtiene DAÑ físico adicional <@ba.vup>+{phy_dmg_up2:0%}</> por {duration2} s. Este efecto no se puede acumular."
+    "setBonus": "Efecto de conjunto de 3 piezas: ATQ del portador <@ba.vup>+{atk_up:0%}</>.\nDespués de que el portador aplique <#ba.noguard>Vulnerabilidad</>, obtiene <@ba.pd>DAÑ físico infligido</> <@ba.vup>+{phy_dmg_up:0%}</> durante {duration} s. Este efecto puede alcanzar {max_stack:0} acumulaciónes. Si el objetivo tiene {stack_cond:0} acumulaciones de <#ba.noguard>Vulnerabilidad</>, el portador obtiene <@ba.pd>DAÑ físico infligido</> adicional <@ba.vup>+{phy_dmg_up2:0%}</> durante {duration2} s. Este efecto no se puede acumular."
   },
   "item_equip_t4_suit_pulse_cryst01_body_01": {
     "name": "Traje disruptor de Laboratorios Pulso",
@@ -1391,70 +1451,100 @@
     "decoDesc": "Equipo con diseños novedosos. \nLa mayoría no podía entender por qué la Compañía Endfield Industries añadió un mejor aislamiento térmico para sus EPP de la serie Laboratorios Pulso.",
     "setBonus": "Efecto de conjunto de 3 piezas: Intensidad de Artes del portador <@ba.vup>+{phy_spell_up:0}</>. \nDespués de que el portador aplique <#ba.conduct>Electrificación</>, el portador obtiene <@ba.pulse>DAÑ eléctrico</><@ba.vup> +{pulse_dmg_up:0%}</> durante {duration} s. Después de que el portador aplique <#ba.frozen>Solidificación</>, el portador obtiene <@ba.cryst>DAÑ criogénico</><@ba.vup> +{cryst_dmg_up:0%}</> durante {duration2} s. Los efectos antes mencionados no se pueden acumular."
   },
+  "item_equip_t4_suit_spellburst_body_01": {
+    "name": "Armadura de Baluarte profundo",
+    "description": "Diseñado de forma independiente por Endfield Industries y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
+    "decoDesc": "Diseñado por Endfield, tomando como referencia el equipamiento estándar del EFEY. \n“No creo que tengamos que enfrentarnos directamente a la Plaga...”\n“Entendido. Es hora de añadir un conjunto completo de placas de acero para brindar una defensa integral”.",
+    "setBonus": "Efecto de conjunto de 3 piezas: DAÑ por Artes infligido por el portador <@ba.vup>+{spell_dmg_up:0%}</>.\nCuando el usuario aplica <#ba.naturalburst>Ráfaga de naturaleza</> o <#ba.crystburst>Ráfaga criogénica</>, obtiene Intensidad de artes <@ba.vup>+{phy_spell_up:0}</> durante {duration} s. Acumulaciones Máx. de este efecto: {max_stack}. La duración de cada acumulación se cuenta por separado. El efecto solo se activa una vez cada 0.1 s."
+  },
+  "item_equip_t4_suit_spellburst_edc_01": {
+    "name": "Comunicador de Baluarte profundo",
+    "description": "Diseñado de forma independiente por Endfield Industries y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
+    "decoDesc": "Diseñado por Endfield, tomando como referencia el equipamiento estándar del EFEY. \n“¿Deberíamos reducir el tiempo de carga...?”\n“Entendido. ¡Añadiremos baterías de Xiranita al comunicador de El protocolo para maximizar su duración de funcionamiento!”",
+    "setBonus": "Efecto de conjunto de 3 piezas: DAÑ por Artes infligido por el portador <@ba.vup>+{spell_dmg_up:0%}</>.\nCuando el usuario aplica <#ba.naturalburst>Ráfaga de naturaleza</> o <#ba.crystburst>Ráfaga criogénica</>, obtiene Intensidad de artes <@ba.vup>+{phy_spell_up:0}</> durante {duration} s. Acumulaciones Máx. de este efecto: {max_stack}. La duración de cada acumulación se cuenta por separado. El efecto solo se activa una vez cada 0.1 s."
+  },
+  "item_equip_t4_suit_spellburst_hand_01": {
+    "name": "Guanteletes de Baluarte profundo",
+    "description": "Diseñado de forma independiente por Endfield Industries y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
+    "decoDesc": "Diseñado por Endfield, tomando como referencia el equipamiento estándar del EFEY. \n“La medida de contingencia debería incluir...”\n“Entendido. ¡Engrosaremos las escamas de armadura de los dedos para que sirvan tanto para defender como para atacar!”",
+    "setBonus": "Efecto de conjunto de 3 piezas: DAÑ por Artes infligido por el portador <@ba.vup>+{spell_dmg_up:0%}</>.\nCuando el usuario aplica <#ba.naturalburst>Ráfaga de naturaleza</> o <#ba.crystburst>Ráfaga criogénica</>, obtiene Intensidad de artes <@ba.vup>+{phy_spell_up:0}</> durante {duration} s. Acumulaciones Máx. de este efecto: {max_stack}. La duración de cada acumulación se cuenta por separado. El efecto solo se activa una vez cada 0.1 s."
+  },
   "item_equip_t4_suit_usp02_body_01": {
     "name": "Armadura de Xiranita eterna",
     "description": "Diseñado por los Espadachines de Hongshan y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
     "decoDesc": "Legado de un Tianshi “loco”. \nA la mayoría le costaría encontrar una relación entre el trabajo de cocina y la Xiranita. Sin embargo, un residente de Wuling en particular encuentra inspiración para sus diseños cuando come en un restaurante.",
-    "setBonus": "Efecto de conjunto de 3 piezas: PV del portador <@ba.vup>+{hp_up}</>.\nDespués de que el portador aplique <#ba.enhance>Amp</>, <#ba.guard>Protegido</>, <#ba.vulnerable>Susceptibilidad</> o <#ba.weak>Debilitado</>, los demás compañeros obtienen DAÑ infligido <@ba.vup>+{dmg_up:0%}</> durante {duration} s. Este efecto no se puede acumular."
+    "setBonus": "Efecto de conjunto de 3 piezas: PV del portador <@ba.vup>+{hp_up}</>.\nDespués de que el portador aplique <#ba.enhance>Amp</>, <#ba.guard>Protección</>, <#ba.vulnerable>Susceptibilidad</> o <#ba.weak>Debilidad</>, los demás compañeros obtienen DAÑ infligido <@ba.vup>+{dmg_up:0%}</> durante {duration} s. Este efecto no puede acumularse."
   },
   "item_equip_t4_suit_usp02_body_03": {
     "name": "Armadura ligera de Xiranita eterna",
     "description": "Diseñado por los Espadachines de Hongshan y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
-    "decoDesc": "Legado de un Tianshi “loco”. \n“Yo digo que es demasiado pesada. Mira. Es tan austera como los restos blanqueados de las bestias aleatorias junto al camino. Hay que viajar ligero, ¿sí? ¡LIGERO!”.",
-    "setBonus": "Efecto de conjunto de 3 piezas: PV del portador <@ba.vup>+{hp_up}</>.\nDespués de que el portador aplique <#ba.enhance>Amp</>, <#ba.guard>Protegido</>, <#ba.vulnerable>Susceptibilidad</> o <#ba.weak>Debilitado</>, los demás compañeros obtienen DAÑ infligido <@ba.vup>+{dmg_up:0%}</> durante {duration} s. Este efecto no se puede acumular."
+    "decoDesc": "Legado de un Tianshi “loco”. \n“Yo digo que es demasiado pesada. Mira. Es tan austera como los restos blanqueados de las bestias aleatorias junto al camino. Hay que viajar ligero, ¿no crees? ¡LIGERO!”",
+    "setBonus": "Efecto de conjunto de 3 piezas: PV del portador <@ba.vup>+{hp_up}</>.\nDespués de que el portador aplique <#ba.enhance>Amp</>, <#ba.guard>Protección</>, <#ba.vulnerable>Susceptibilidad</> o <#ba.weak>Debilidad</>, los demás compañeros obtienen DAÑ infligido <@ba.vup>+{dmg_up:0%}</> durante {duration} s. Este efecto no puede acumularse."
   },
   "item_equip_t4_suit_usp02_body_04": {
     "name": "Armadura ligera de Xiranita eterna T1",
     "description": "Diseñado por los Espadachines de Hongshan y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
-    "decoDesc": "Legado de un Tianshi “loco”. \n“Yo digo que es demasiado pesada. Mira. Es tan austera como los restos blanqueados de las bestias aleatorias junto al camino. Hay que viajar ligero, ¿sí? ¡LIGERO!”.",
-    "setBonus": "Efecto de conjunto de 3 piezas: PV del portador <@ba.vup>+{hp_up}</>.\nDespués de que el portador aplique <#ba.enhance>Amp</>, <#ba.guard>Protegido</>, <#ba.vulnerable>Susceptibilidad</> o <#ba.weak>Debilitado</>, los demás compañeros obtienen DAÑ infligido <@ba.vup>+{dmg_up:0%}</> durante {duration} s. Este efecto no se puede acumular."
+    "decoDesc": "Legado de un Tianshi “loco”. \n“Yo digo que es demasiado pesada. Mira. Es tan austera como los restos blanqueados de las bestias aleatorias junto al camino. Hay que viajar ligero, ¿no crees? ¡LIGERO!”",
+    "setBonus": "Efecto de conjunto de 3 piezas: PV del portador <@ba.vup>+{hp_up}</>.\nDespués de que el portador aplique <#ba.enhance>Amp</>, <#ba.guard>Protección</>, <#ba.vulnerable>Susceptibilidad</> o <#ba.weak>Debilidad</>, los demás compañeros obtienen DAÑ infligido <@ba.vup>+{dmg_up:0%}</> durante {duration} s. Este efecto no puede acumularse."
   },
   "item_equip_t4_suit_usp02_edc_01": {
     "name": "Núcleo de energía de Xiranita eterna",
     "description": "Diseñado por los Espadachines de Hongshan y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
     "decoDesc": "Legado de un Tianshi “loco”. \n... Una vez caminó por las calles con un gran bowl de tofu guisado en Rocío de bambú y afirmó que acababa de idear la tecnología de refrigeración de próxima generación basada en Xiranita.",
-    "setBonus": "Efecto de conjunto de 3 piezas: PV del portador <@ba.vup>+{hp_up}</>.\nDespués de que el portador aplique <#ba.enhance>Amp</>, <#ba.guard>Protegido</>, <#ba.vulnerable>Susceptibilidad</> o <#ba.weak>Debilitado</>, los demás compañeros obtienen DAÑ infligido <@ba.vup>+{dmg_up:0%}</> durante {duration} s. Este efecto no se puede acumular."
+    "setBonus": "Efecto de conjunto de 3 piezas: PV del portador <@ba.vup>+{hp_up}</>.\nDespués de que el portador aplique <#ba.enhance>Amp</>, <#ba.guard>Protección</>, <#ba.vulnerable>Susceptibilidad</> o <#ba.weak>Debilidad</>, los demás compañeros obtienen DAÑ infligido <@ba.vup>+{dmg_up:0%}</> durante {duration} s. Este efecto no puede acumularse."
   },
   "item_equip_t4_suit_usp02_edc_02": {
     "name": "Núcleo de energía de Xiranita eterna T1",
     "description": "Diseñado por los Espadachines de Hongshan y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
     "decoDesc": "Legado de un Tianshi “loco”. \n... Una vez caminó por las calles con un gran bowl de tofu guisado en Rocío de bambú y afirmó que acababa de idear la tecnología de refrigeración de próxima generación basada en Xiranita.",
-    "setBonus": "Efecto de conjunto de 3 piezas: PV del portador <@ba.vup>+{hp_up}</>.\nDespués de que el portador aplique <#ba.enhance>Amp</>, <#ba.guard>Protegido</>, <#ba.vulnerable>Susceptibilidad</> o <#ba.weak>Debilitado</>, los demás compañeros obtienen DAÑ infligido <@ba.vup>+{dmg_up:0%}</> durante {duration} s. Este efecto no se puede acumular."
+    "setBonus": "Efecto de conjunto de 3 piezas: PV del portador <@ba.vup>+{hp_up}</>.\nDespués de que el portador aplique <#ba.enhance>Amp</>, <#ba.guard>Protección</>, <#ba.vulnerable>Susceptibilidad</> o <#ba.weak>Debilidad</>, los demás compañeros obtienen DAÑ infligido <@ba.vup>+{dmg_up:0%}</> durante {duration} s. Este efecto no puede acumularse."
   },
   "item_equip_t4_suit_usp02_edc_03": {
     "name": "Brazo auxiliar de Xiranita eterna",
     "description": "Diseñado por los Espadachines de Hongshan y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
     "decoDesc": "Legado de un Tianshi “loco”. \n... Se decía que el Tianshi loco vio un “ciclo autoalimentado” en una olla caliente servida por un chef Ursus. Esta inspiración le permitió más que duplicar la duración de potencia del equipo protector de Xiranita eterna.",
-    "setBonus": "Efecto de conjunto de 3 piezas: PV del portador <@ba.vup>+{hp_up}</>.\nDespués de que el portador aplique <#ba.enhance>Amp</>, <#ba.guard>Protegido</>, <#ba.vulnerable>Susceptibilidad</> o <#ba.weak>Debilitado</>, los demás compañeros obtienen DAÑ infligido <@ba.vup>+{dmg_up:0%}</> durante {duration} s. Este efecto no se puede acumular."
+    "setBonus": "Efecto de conjunto de 3 piezas: PV del portador <@ba.vup>+{hp_up}</>.\nDespués de que el portador aplique <#ba.enhance>Amp</>, <#ba.guard>Protección</>, <#ba.vulnerable>Susceptibilidad</> o <#ba.weak>Debilidad</>, los demás compañeros obtienen DAÑ infligido <@ba.vup>+{dmg_up:0%}</> durante {duration} s. Este efecto no puede acumularse."
   },
   "item_equip_t4_suit_usp02_edc_04": {
     "name": "Losa de refuerzo de Xiranita eterna",
     "description": "Diseñado por los Espadachines de Hongshan y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
     "decoDesc": "Legado de un Tianshi “loco”. \nLos Tianshi responsables de llevar el diseño heredado a la línea de producción también se dieron cuenta de que era demasiado austero. Por ello, diseñaron placas protectoras adicionales para complementar las defensas.",
-    "setBonus": "Efecto de conjunto de 3 piezas: PV del portador <@ba.vup>+{hp_up}</>.\nDespués de que el portador aplique <#ba.enhance>Amp</>, <#ba.guard>Protegido</>, <#ba.vulnerable>Susceptibilidad</> o <#ba.weak>Debilitado</>, los demás compañeros obtienen DAÑ infligido <@ba.vup>+{dmg_up:0%}</> durante {duration} s. Este efecto no se puede acumular."
+    "setBonus": "Efecto de conjunto de 3 piezas: PV del portador <@ba.vup>+{hp_up}</>.\nDespués de que el portador aplique <#ba.enhance>Amp</>, <#ba.guard>Protección</>, <#ba.vulnerable>Susceptibilidad</> o <#ba.weak>Debilidad</>, los demás compañeros obtienen DAÑ infligido <@ba.vup>+{dmg_up:0%}</> durante {duration} s. Este efecto no puede acumularse."
+  },
+  "item_equip_t4_suit_usp02_edc_05": {
+    "name": "Losa de refuerzo de Xiranita eterna T1",
+    "description": "Diseñado por los Espadachines de Hongshan y ensamblado por el CAI. Este equipo puede mejorar las capacidades de combate del portador.",
+    "decoDesc": "Legado de un Tianshi “loco”. \nLos Tianshi responsables de llevar el diseño heredado a la línea de producción también se dieron cuenta de que era demasiado austero. Por ello, diseñaron losas protectoras adicionales para complementar las defensas.",
+    "setBonus": "Efecto de conjunto de 3 piezas: PV del portador <@ba.vup>+{hp_up}</>.\nDespués de que el portador aplique <#ba.enhance>Amp</>, <#ba.guard>Protección</>, <#ba.vulnerable>Susceptibilidad</> o <#ba.weak>Debilidad</>, los demás compañeros obtienen DAÑ infligido <@ba.vup>+{dmg_up:0%}</> durante {duration} s. Este efecto no puede acumularse."
+  },
+  "item_equip_t4_suit_usp02_edc_06": {
+    "name": "Losa pesada de Xiranita eterna",
+    "description": "Diseñado por los Espadachines de Hongshan y ensamblado por el CAI. Este equipo puede mejorar las capacidades de combate del portador.",
+    "decoDesc": "Legado de un Tianshi “loco”. \nAl engrosar las losas de armadura hasta extremos desmesurados, las vulnerabilidades defensivas del equipamiento de Xiranita eterna dejarían de ser problemas críticos capaces de comprometer los diseños generales.",
+    "setBonus": "Efecto de conjunto de 3 piezas: PV del portador <@ba.vup>+{hp_up}</>.\nDespués de que el portador aplique <#ba.enhance>Amp</>, <#ba.guard>Protección</>, <#ba.vulnerable>Susceptibilidad</> o <#ba.weak>Debilidad</>, los demás compañeros obtienen DAÑ infligido <@ba.vup>+{dmg_up:0%}</> durante {duration} s. Este efecto no puede acumularse."
   },
   "item_equip_t4_suit_usp02_hand_01": {
     "name": "Guantes de Xiranita eterna",
     "description": "Diseñado por los Espadachines de Hongshan y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
     "decoDesc": "Legado de un Tianshi “loco”. \n...Pasaron los días y el Tianshi loco empezó a rechazar cualquier comida que “no aportara inspiración”. Tras quedar en los puros huesos, pronto desapareció en las tierras salvajes en busca de “Xiranita comestible”.",
-    "setBonus": "Efecto de conjunto de 3 piezas: PV del portador <@ba.vup>+{hp_up}</>.\nDespués de que el portador aplique <#ba.enhance>Amp</>, <#ba.guard>Protegido</>, <#ba.vulnerable>Susceptibilidad</> o <#ba.weak>Debilitado</>, los demás compañeros obtienen DAÑ infligido <@ba.vup>+{dmg_up:0%}</> durante {duration} s. Este efecto no se puede acumular."
+    "setBonus": "Efecto de conjunto de 3 piezas: PV del portador <@ba.vup>+{hp_up}</>.\nDespués de que el portador aplique <#ba.enhance>Amp</>, <#ba.guard>Protección</>, <#ba.vulnerable>Susceptibilidad</> o <#ba.weak>Debilidad</>, los demás compañeros obtienen DAÑ infligido <@ba.vup>+{dmg_up:0%}</> durante {duration} s. Este efecto no puede acumularse."
   },
   "item_equip_t4_suit_usp02_hand_02": {
     "name": "Guantes de Xiranita eterna T1",
     "description": "Diseñado por los Espadachines de Hongshan y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
     "decoDesc": "Legado de un Tianshi “loco”. \n...Pasaron los días y el Tianshi loco empezó a rechazar cualquier comida que “no aportara inspiración”. Tras quedar en los puros huesos, pronto desapareció en las tierras salvajes en busca de “Xiranita comestible”.",
-    "setBonus": "Efecto de conjunto de 3 piezas: PV del portador <@ba.vup>+{hp_up}</>.\nDespués de que el portador aplique <#ba.enhance>Amp</>, <#ba.guard>Protegido</>, <#ba.vulnerable>Susceptibilidad</> o <#ba.weak>Debilitado</>, los demás compañeros obtienen DAÑ infligido <@ba.vup>+{dmg_up:0%}</> durante {duration} s. Este efecto no se puede acumular."
+    "setBonus": "Efecto de conjunto de 3 piezas: PV del portador <@ba.vup>+{hp_up}</>.\nDespués de que el portador aplique <#ba.enhance>Amp</>, <#ba.guard>Protección</>, <#ba.vulnerable>Susceptibilidad</> o <#ba.weak>Debilidad</>, los demás compañeros obtienen DAÑ infligido <@ba.vup>+{dmg_up:0%}</> durante {duration} s. Este efecto no puede acumularse."
   },
   "item_equip_t4_suit_usp02_hand_03": {
     "name": "Envolturas de Xiranita eterna",
     "description": "Diseñado por los Espadachines de Hongshan y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
     "decoDesc": "Legado de un Tianshi “loco”. \n“¿A quién demonios se le ocurrió tejer Xiranita en la fibra? ¿Están locos?”.",
-    "setBonus": "Efecto de conjunto de 3 piezas: PV del portador <@ba.vup>+{hp_up}</>.\nDespués de que el portador aplique <#ba.enhance>Amp</>, <#ba.guard>Protegido</>, <#ba.vulnerable>Susceptibilidad</> o <#ba.weak>Debilitado</>, los demás compañeros obtienen DAÑ infligido <@ba.vup>+{dmg_up:0%}</> durante {duration} s. Este efecto no se puede acumular."
+    "setBonus": "Efecto de conjunto de 3 piezas: PV del portador <@ba.vup>+{hp_up}</>.\nDespués de que el portador aplique <#ba.enhance>Amp</>, <#ba.guard>Protección</>, <#ba.vulnerable>Susceptibilidad</> o <#ba.weak>Debilidad</>, los demás compañeros obtienen DAÑ infligido <@ba.vup>+{dmg_up:0%}</> durante {duration} s. Este efecto no puede acumularse."
   },
   "item_equip_t4_suit_usp02_hand_04": {
     "name": "Manos de Xiranita eterna",
     "description": "Diseñado por los Espadachines de Hongshan y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
     "decoDesc": "Legado de un Tianshi “loco”. \nÚsalas, póntelas... Deja que el poder corra por tu piel, que la energía impregne tu carne y tu sangre.",
-    "setBonus": "Efecto de conjunto de 3 piezas: PV del portador <@ba.vup>+{hp_up}</>.\nDespués de que el portador aplique <#ba.enhance>Amp</>, <#ba.guard>Protegido</>, <#ba.vulnerable>Susceptibilidad</> o <#ba.weak>Debilitado</>, los demás compañeros obtienen DAÑ infligido <@ba.vup>+{dmg_up:0%}</> durante {duration} s. Este efecto no se puede acumular."
+    "setBonus": "Efecto de conjunto de 3 piezas: PV del portador <@ba.vup>+{hp_up}</>.\nDespués de que el portador aplique <#ba.enhance>Amp</>, <#ba.guard>Protección</>, <#ba.vulnerable>Susceptibilidad</> o <#ba.weak>Debilidad</>, los demás compañeros obtienen DAÑ infligido <@ba.vup>+{dmg_up:0%}</> durante {duration} s. Este efecto no puede acumularse."
   }
 }

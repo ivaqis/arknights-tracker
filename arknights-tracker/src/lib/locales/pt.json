@@ -372,7 +372,11 @@
     "special_1_4_1": "À Beira do Abismo, Eis que Vigia o Norte",
     "weponbox_1_4_1": "Distribuição Grau Militar",
     "special_1_4_2": "Bom Dia da Sua Estrela do Alvorecer",
-    "weponbox_1_4_2": "Distribuição Deslumbrante"
+    "weponbox_1_4_2": "Distribuição Deslumbrante",
+    "special_1_5_1": "Caçada de Inverno",
+    "weponbox_1_5_1": "Distribuição Frio Intenso",
+    "weponbox_1_5_2": "Distribuição Grafiteiro",
+    "special_1_5_2": "Espectro Resplandecente"
   },
   "pages": {
     "home": "Início",
@@ -467,7 +471,17 @@
     "gazeNorthToTheRiftSignIn": "Login em Olhe para a Fenda ao Norte",
     "protocolInvitationTheReturn": "Convite para o Protocolo: O Retorno",
     "bedazzlingDawnstarSignIn": "Login em Estrela do Alvorecer Deslumbrante",
-    "aForestMantledInSnow": "Uma Floresta Coberta de Neve"
+    "aForestMantledInSnow": "Uma Floresta Coberta de Neve",
+    "seasonOfVirtuality": "Temporada da Virtualidade",
+    "seasonOfIllusion": "Temporada da Ilusão",
+    "runnersSteeplechase": "Corrida de Obstáculos para Corredores",
+    "snowOverDeepWoods": "Neve Sobre Florestas Densas",
+    "aicSupportChubbyLungAttacks": "Apoio do CAI: Ataques de Chubby Lung",
+    "ridgelineFlowsOfAutumnSignIn": "Login em Fluxos de Outono na Crista da Montanha",
+    "trialOfTheBow": "Desafio do Arco",
+    "protocolPassGloomwald": "Passe do Protocolo: Gloomwald",
+    "orbipomMerge": "OrbiPom! COMBINAR!",
+    "fletchedIrontipSignIn": "Login em Ponta de Ferro Emplumada"
   },
   "mouths": {
     "january": "Janeiro",
@@ -880,7 +894,26 @@
     "heavyXiragen": "Xiragênio Pesado",
     "crimsonSpearleaf": "Folha de Lança Carmesim",
     "talosCap": "Boina de Talos",
-    "protocolith": "Protocolito"
+    "protocolith": "Protocolito",
+    "caudalGoldscales": "Escamas Douradas Caudais",
+    "yazhenSeeds": "Sementes de Broto-Agulha",
+    "reedRyeSeeds": "Sementes de Centeio de Junco",
+    "tartpepperSeeds": "Sementes de Pimenta Azeda",
+    "redjadeGinsengSeeds": "Sementes de Ginseng Redjade",
+    "amberRiceSeeds": "Sementes de Arroz Âmbar",
+    "protoXiranCuprium": "Xiran-Cuprium Proto",
+    "protoXiranCupriumPart": "Peça de Xiran-Cuprium Proto",
+    "protoXiranCupriumGas": "Gás de Xiran-Cuprium Proto",
+    "protoXiranCupriumFrame": "Estrutura de Xiran-Cuprium Proto",
+    "protoCupriumFrame": "Estrutura de Cuprium Proto",
+    "protoChubbyLungShell": "Carapaça de Chubby Lung Proto",
+    "protoChubbyLungHeavyShell": "Carapaça Pesada de Chubby Lung Proto",
+    "heavyXiraniteChubbyLung": "Chubby Lung de Xiranita Pesada",
+    "protoHeavyXiranite": "Xiranita Pesada Proto",
+    "xiraniteChubbyLung": "Chubby Lung de Xiranita",
+    "protoXiranite": "Xiranita Proto",
+    "tenderMoss": "Musgo Tenro",
+    "slugSprig": "Broto de Lesma"
   },
   "common": {
     "copy": "Copiar",
@@ -1117,7 +1150,8 @@
     "mifu": "Mi Fu",
     "camille": "Camille",
     "arcane": "Arcane",
-    "liino": "Liino"
+    "liino": "Liino",
+    "typhoeus": "Typhoeus"
   },
   "weaponsList": {
     "custom_weapon": "Arma Personalizada",
@@ -1197,7 +1231,9 @@
     "junctionPoint": "Ponto de Junção",
     "goldenAge": "Era de Ouro",
     "farsight": "Visão Longínqua",
-    "bedazzlingNightDebut": "Estreia Noturna Deslumbrante"
+    "bedazzlingNightDebut": "Estreia Noturna Deslumbrante",
+    "umbraOfFrigidEventide": "Sombra do Anoitecer Frígido",
+    "sufferingsEnd": "Fim do Sofrimento"
   },
   "cookies": {
     "title": "Usamos cookies",
@@ -1315,7 +1351,14 @@
     "world_energy_point11_4": "Aluvião de Energia Severo: Zona de Exclusão do Norte de Wuling",
     "world_energy_point11_5": "Aluvião de Energia Severo: Zona de Exclusão do Norte de Wuling",
     "world_energy_point11_6": "Aluvião de Energia Severo: Zona de Exclusão do Norte de Wuling",
-    "world_energy_point11_7": "Aluvião de Energia Severo: Zona de Exclusão do Norte de Wuling"
+    "world_energy_point11_7": "Aluvião de Energia Severo: Zona de Exclusão do Norte de Wuling",
+    "world_energy_point12_1": "Aluvião de Energia: Floresta Nevada",
+    "world_energy_point12_2": "Aluvião de Energia: Floresta Nevada",
+    "world_energy_point12_3": "Aluvião de Energia: Floresta Nevada",
+    "world_energy_point12_4": "Aluvião de Energia Severo: Floresta Nevada",
+    "world_energy_point12_5": "Aluvião de Energia Severo: Floresta Nevada",
+    "world_energy_point12_6": "Aluvião de Energia Severo: Floresta Nevada",
+    "world_energy_point12_7": "Aluvião de Energia Severo: Floresta Nevada"
   },
   "enemies": {
     "eny_0007_mimicw": "Verminídeo Escavador de Túneis",
@@ -1401,7 +1444,15 @@
     "eny_0122_kltdbud": "Sombra da Praga de Elite da FTEY",
     "eny_0123_klcap": "Sombra da Praga de Guja da FTEY",
     "eny_0124_kltdcap": "Sombra da Praga de Capitão da FTEY",
-    "eny_0125_fdcentur": "Alleikhreos, Quiliarca"
+    "eny_0125_fdcentur": "Alleikhreos, Quiliarca",
+    "eny_0127_bigents": "Fúria de Gloomwald",
+    "eny_0128_babyents": "Andarilho da Mata",
+    "eny_0129_slwood": "Lesma da Madeira",
+    "tatget_001_normal": "Alvo Básico",
+    "tatget_002_endurance": "Alvo Padrão",
+    "tatget_003_expand": "Alvo de Barreira",
+    "tatget_004_armor": "Alvo Pesado",
+    "tatget_005_shield": "Escudo de Energia"
   },
   "essencesPage": {
     "optimizer": "Otimizador de Farm",
@@ -1682,7 +1733,22 @@
     "item_equip_t4_suit_usp02_body_04": "Armadura Leve de Xiranita Eterna T1",
     "item_equip_t4_suit_usp02_edc_04": "Placa de Suporte de Xiranita Eterna",
     "item_equip_t4_suit_usp02_hand_03": "Bandagens de Xiranita Eterna",
-    "item_equip_t4_suit_usp02_hand_04": "Mãos de Xiranita Eterna"
+    "item_equip_t4_suit_usp02_hand_04": "Mãos de Xiranita Eterna",
+    "item_equip_t4_parts_wuling00_body_04": "Armadura de Assalto CAI de Campo",
+    "item_equip_t4_parts_wuling00_body_05": "Armadura de Médico CAI de Campo",
+    "item_equip_t4_parts_wuling00_edc_04": "Punhal de Assalto CAI de Campo",
+    "item_equip_t4_parts_wuling00_edc_05": "Banco de Energia CAI de Campo",
+    "item_equip_t4_parts_wuling00_hand_04": "Luvas de Assalto CAI de Campo",
+    "item_equip_t4_parts_wuling00_hand_05": "Luvas de Médico CAI de Campo",
+    "item_equip_t4_suit_burst01_body_02": "Armadura Leve Maré Baixa T1",
+    "item_equip_t4_suit_burst01_body_03": "Armadura Pesada Ondulação",
+    "item_equip_t4_suit_burst01_edc_03": "Maçarico de Corte Turvo T1",
+    "item_equip_t4_suit_burst01_hand_02": "Luvas Deepsink",
+    "item_equip_t4_suit_spellburst_body_01": "Armadura Muralha Profunda",
+    "item_equip_t4_suit_spellburst_edc_01": "Comunicações Muralha Profunda",
+    "item_equip_t4_suit_spellburst_hand_01": "Manoplas Muralha Profunda",
+    "item_equip_t4_suit_usp02_edc_05": "Placa de Suporte de Xiranita Eterna T1",
+    "item_equip_t4_suit_usp02_edc_06": "Placa Pesada de Xiranita Eterna"
   },
   "packs": {
     "none": "Não Definido",
@@ -1732,7 +1798,8 @@
     "suit_combo_cd01": "Qingbo",
     "suit_expend_spell01": "Fluxo de Xiranita",
     "suit_crush_fracture": "Borda Grisalha",
-    "suit_generaltype": "CAI de Campo"
+    "suit_generaltype": "CAI de Campo",
+    "suit_spellburst": "Muralha Profunda"
   },
   "equipmentTypes": {
     "body": "Armadura",
@@ -1800,7 +1867,8 @@
     "wiki_group_monster_hongshan": "Piratas Cangzei",
     "wiki_group_monster_animal": "Vida Selvagem",
     "wiki_group_monster_kl": "Sombras da Praga",
-    "wiki_group_monster_js": "Fundite"
+    "wiki_group_monster_js": "Fundite",
+    "wiki_group_monster_witchcraft": "Criação da Feitiçaria"
   },
   "resitances": {
     "heatRez": "Resistência Térmica",
@@ -2572,6 +2640,7 @@
   },
   "audio_player": {
     "playback_error": "Falha ao carregar o áudio",
+    "not_found": "Áudio não encontrado (404)",
     "open_raw": "Open raw"
   }
 }

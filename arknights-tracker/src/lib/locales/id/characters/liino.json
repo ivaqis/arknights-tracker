@@ -39,7 +39,7 @@
     "battleSkill": {
       "name": "Dazzling Focus",
       "description": "Liino akan menimbulkan <@ba.pulse>Electric DMG</> kepada musuh, lalu masuk ke kondisi <@ba.key>Vocalist Stance</>. Selagi kondisi ini aktif, jika ada musuh di sekitarnya, Liino akan melancarkan ATK Tambahan (yang akan menimbulkan <@ba.pulse>Electric DMG</> kepada musuh) secara berkala.\n<@ba.key>Vocalist Stance</>: Selagi kondisi ini aktif, Liino akan memberikan ATK Boost kepada seluruh tim. Setelah masuk ke pertarungan, Liino juga akan memberikan <@ba.heal>HP Treatment</> terus-menerus kepada operator dalam jangkauan.\n<@ba.info>Selama Vocalist Stance, skill tarungnya akan digantikan dengan End Stance. Jika digunakan, Vocalist Stance akan berakhir lebih awal tanpa memakai SP, kemudian skill tarung akan masuk ke cooldown singkat.</>",
-      "firstAtkMultiplier": "Pengganda ATK Pertama",
+      "1stAtkMultiplier": "Pengganda ATK ke-1",
       "additionalAtkDmgMultiplier": "Tambahan Pengganda ATK DMG",
       "additionalAtkIntervalS": "Interval ATK Tambahan (dtk)",
       "beatIntervalS": "Interval Irama (dtk)",
@@ -60,12 +60,12 @@
     },
     "ultimate": {
       "name": "Dawnstar Concerto",
-      "description": "Liino akan memberikan <@ba.heal>HP Treatment</> kepada seluruh tim, masuk ke kondisi <@ba.key>Cosmovoice Stance</> pada saat bersamaan, melepaskan pertunjukan Stage Pyrotechnics terus-menerus yang akan menimbulkan <@ba.pulse>Electric DMG</>, lalu mengaktifkan <@ba.key>Electrifying Extravaganza</> yang akan menimbulkan <@ba.pulse>Electric DMG</> dan mengakibatkan <#ba.conduct>Electrification</> secara paksa kepada musuh di dalam area efek (AOE) besar.\n<@ba.key>Cosmovoice Stance</>: Kondisi ini akan menggantikan kondisi <@ba.key>Vocalist Stance</> Liino. Selagi aktif, kondisi ini akan memberikan <#ba.pulseenhance>Electric Amp</> dan <#ba.naturalenhance>Nature Amp</> kepada seluruh tim (efek akan ditingkatkan lagi oleh atribut Will) serta ATK Boost. Irama lagu Liino juga akan menimbulkan <@ba.pulse>Electric DMG</> kepada musuh di dalam AOE dan memberikan <@ba.heal>HP Treatment</> terus-menerus kepada operator rekan di dalam AOE. Saat berakhir, kondisi ini akan menimbulkan DMG 3 kali lipat dari satu irama saja kepada musuh di dalam AOE dan memberikan HP Treatment 3 kali lipat dari satu irama saja kepada seluruh tim. Efek ini tidak akan aktif jika kondisi berakhir lebih awal. \nSelama kondisi ini, skill tarungnya akan digantikan dengan End Stance. <@ba.info>Jika skill tarung digunakan selama kondisi Cosmovoice Stance, kondisi ini akan berakhir lebih awal dan tidak akan memakai SP.</>",
+      "description": "Liino akan memberikan <@ba.heal>HP Treatment</> kepada seluruh tim, masuk ke kondisi <@ba.key>Cosmovoice Stance</> pada saat bersamaan, melepaskan pertunjukan Stage Pyrotechnics terus-menerus yang akan menimbulkan <@ba.pulse>Electric DMG</>, lalu mengaktifkan <@ba.key>Electrifying Extravaganza</> yang akan menimbulkan <@ba.pulse>Electric DMG</> dan mengakibatkan <#ba.conduct>Electrification</> secara paksa kepada musuh di dalam area efek (AOE) besar.\n<@ba.key>Cosmovoice Stance</>: Kondisi ini akan menggantikan kondisi <@ba.key>Vocalist Stance</> Liino. Selagi aktif, kondisi ini akan memberikan <#ba.pulseenhance>Electric Amp</> dan <#ba.naturalenhance>Nature Amp</> kepada seluruh tim (efek akan ditingkatkan lagi oleh atribut Will) serta ATK Boost. Irama lagu Liino juga akan menimbulkan <@ba.pulse>Electric DMG</> kepada musuh di dalam AOE dan memberikan <@ba.heal>HP Treatment</> terus-menerus kepada operator rekan di dalam AOE. Saat berakhir, Liino akan menimbulkan DMG 3 kali lebih besar dari satu irama saja kepada musuh di dalam AOE, serta memberikan HP treatment 3 kali lebih besar dari satu irama saja kepada seluruh tim. Efek ini tidak akan aktif jika kondisi ini berakhir lebih awal. \n<@ba.info>Selama kondisi ini aktif, skill tarungnya akan diganti dengan End Stance. Jika skill tarung digunakan selama kondisi Cosmovoice Stance, kondisi ini akan berakhir lebih awal dan tidak akan memakai SP.</>",
       "stagePyrotechnicsDmgMultiplier": "Pengganda DMG Stage Pyrotechnics",
       "electrifyingExtravaganzaDmgMultiplier": "Pengganda DMG Electrifying Extravaganza",
       "atkBoost": "ATK Boost",
       "ampIncreasePerWill": "Peningkatan Amp per Will",
-      "maxAmpFromWill": "MAX Amp dari Will",
+      "maxAmpFromWill": "Amp MAKS dari Will",
       "baseTreatmentFor1stTreatment": "Treatment Dasar untuk Treatment ke-1",
       "treatmentIncreasePerAgility": "Peningkatan Treatment per Agility",
       "dmgMultiplierPerBeat": "Pengganda DMG per Irama",
@@ -170,7 +170,7 @@
       },
       {
         "voId": "chr_0035_liino_chrup_skill_01",
-        "title": "Aktivasi Matriks Kemampuan",
+        "title": "Aktivasi Nodus Talent",
         "text": "Aku bisa langsung paham! Bagaikan bintang yang menerangi jiwaku .... Aku jadi sangat bersinar, iya ‘kan?"
       },
       {

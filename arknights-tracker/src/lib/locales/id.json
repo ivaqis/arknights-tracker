@@ -372,7 +372,11 @@
     "special_1_4_1": "Penjaga Celah Merindukan Utara",
     "weponbox_1_4_1": "Edisi Standar Militer",
     "special_1_4_2": "Selamat Pagi dari Bintang Fajarmu",
-    "weponbox_1_4_2": "Edisi Terpesona"
+    "weponbox_1_4_2": "Edisi Terpesona",
+    "special_1_5_1": "Perburuan Musim Dingin",
+    "weponbox_1_5_1": "Edisi Dingin Menusuk Tulang",
+    "weponbox_1_5_2": "Edisi Gaya Seniman",
+    "special_1_5_2": "Spektrum Cerah"
   },
   "pages": {
     "home": "Beranda",
@@ -467,7 +471,17 @@
     "gazeNorthToTheRiftSignIn": "Sign In Tataplah Celah di Utara",
     "protocolInvitationTheReturn": "Undangan Protokol: Kembalinya",
     "bedazzlingDawnstarSignIn": "Sign In Bintang Fajar Gemerlap",
-    "aForestMantledInSnow": "Hutan Berselimut Salju"
+    "aForestMantledInSnow": "Hutan Berselimut Salju",
+    "seasonOfVirtuality": "Musim Virtualitas",
+    "seasonOfIllusion": "Musim Ilusi",
+    "runnersSteeplechase": "Halang Rintang Pelari",
+    "snowOverDeepWoods": "Salju di Kedalaman Hutan",
+    "aicSupportChubbyLungAttacks": "Dukungan AIC: Serangan Lung Gembul",
+    "ridgelineFlowsOfAutumnSignIn": "Sign In Aliran Musim Gugur di Pegunungan",
+    "trialOfTheBow": "Ujian Busur",
+    "protocolPassGloomwald": "Tiket Akses Protokol: Gloomwald",
+    "orbipomMerge": "OrbiPom! MERGE!",
+    "fletchedIrontipSignIn": "Sign In Mata Panah Besi Bersirip"
   },
   "mouths": {
     "january": "Januari",
@@ -880,7 +894,26 @@
     "heavyXiragen": "Xiragen Berat",
     "crimsonSpearleaf": "Crimson Spearleaf",
     "talosCap": "Topi Talos",
-    "protocolith": "Protocolith"
+    "protocolith": "Protocolith",
+    "caudalGoldscales": "Sisik Emas Kaudal",
+    "yazhenSeeds": "Benih Yazhen",
+    "reedRyeSeeds": "Benih Reed Rye",
+    "tartpepperSeeds": "Benih Tartpepper",
+    "redjadeGinsengSeeds": "Benih Redjade Ginseng",
+    "amberRiceSeeds": "Benih Padi Amber",
+    "protoXiranCuprium": "Proto Xiran-Cuprium",
+    "protoXiranCupriumPart": "Bagian Proto Xiran-Cuprium",
+    "protoXiranCupriumGas": "Gas Proto Xiran-Cuprium",
+    "protoXiranCupriumFrame": "Rangka Proto Xiran-Cuprium",
+    "protoCupriumFrame": "Rangka Proto Cuprium",
+    "protoChubbyLungShell": "Cangkang Proto Lung Gembul",
+    "protoChubbyLungHeavyShell": "Cangkang Berat Proto Lung Gembul",
+    "heavyXiraniteChubbyLung": "Lung Gembul Xiranite Berat",
+    "protoHeavyXiranite": "Proto Xiranite Berat",
+    "xiraniteChubbyLung": "Lung Gembul Xiranite",
+    "protoXiranite": "Proto Xiranite",
+    "tenderMoss": "Lumut Muda",
+    "slugSprig": "Tunas Siput"
   },
   "common": {
     "copy": "Salin",
@@ -1117,7 +1150,8 @@
     "mifu": "Mi Fu",
     "camille": "Camille",
     "arcane": "Arcane",
-    "liino": "Liino"
+    "liino": "Liino",
+    "typhoeus": "Typhoeus"
   },
   "weaponsList": {
     "custom_weapon": "Senjata Kustom",
@@ -1197,7 +1231,9 @@
     "junctionPoint": "Junction Point",
     "goldenAge": "Golden Age",
     "farsight": "Farsight",
-    "bedazzlingNightDebut": "Bedazzling Night Debut"
+    "bedazzlingNightDebut": "Bedazzling Night Debut",
+    "umbraOfFrigidEventide": "Umbra of Frigid Eventide",
+    "sufferingsEnd": "Suffering’s End"
   },
   "cookies": {
     "title": "Kami menggunakan cookie",
@@ -1315,7 +1351,14 @@
     "world_energy_point11_4": "Aluvium Energi Parah: ZE Wuling Utara",
     "world_energy_point11_5": "Aluvium Energi Parah: ZE Wuling Utara",
     "world_energy_point11_6": "Aluvium Energi Parah: ZE Wuling Utara",
-    "world_energy_point11_7": "Aluvium Energi Parah: ZE Wuling Utara"
+    "world_energy_point11_7": "Aluvium Energi Parah: ZE Wuling Utara",
+    "world_energy_point12_1": "Aluvium Energi: Hutan Salju",
+    "world_energy_point12_2": "Aluvium Energi: Hutan Salju",
+    "world_energy_point12_3": "Aluvium Energi: Hutan Salju",
+    "world_energy_point12_4": "Aluvium Energi Parah: Hutan Salju",
+    "world_energy_point12_5": "Aluvium Energi Parah: Hutan Salju",
+    "world_energy_point12_6": "Aluvium Energi Parah: Hutan Salju",
+    "world_energy_point12_7": "Aluvium Energi Parah: Hutan Salju"
   },
   "enemies": {
     "eny_0007_mimicw": "Nidwyrm Penggali",
@@ -1401,7 +1444,15 @@
     "eny_0122_kltdbud": "Bayang-bayang Hawar Elite Satgassus Yinglung",
     "eny_0123_klcap": "Bayang-bayang Hawar Glaiver Satgassus Yinglung",
     "eny_0124_kltdcap": "Bayang-bayang Hawar Kapten Satgassus Yinglung",
-    "eny_0125_fdcentur": "Alleikhreos, Chiliarch"
+    "eny_0125_fdcentur": "Alleikhreos, Chiliarch",
+    "eny_0127_bigents": "Amarah Gloomwald",
+    "eny_0128_babyents": "Pengembara Kayu",
+    "eny_0129_slwood": "Siput Kayu",
+    "tatget_001_normal": "Target Biasa",
+    "tatget_002_endurance": "Target Standar",
+    "tatget_003_expand": "Target Penghalang",
+    "tatget_004_armor": "Target Berat",
+    "tatget_005_shield": "Perisai Energi"
   },
   "essencesPage": {
     "optimizer": "Pengoptimal Farming",
@@ -1682,7 +1733,22 @@
     "item_equip_t4_suit_usp02_body_04": "Armor Ringan Eternal Xiranite T1",
     "item_equip_t4_suit_usp02_edc_04": "Lempeng Penopang Eternal Xiranite",
     "item_equip_t4_suit_usp02_hand_03": "Bebat Tangan Eternal Xiranite",
-    "item_equip_t4_suit_usp02_hand_04": "Pelindung Tangan Eternal Xiranite"
+    "item_equip_t4_suit_usp02_hand_04": "Pelindung Tangan Eternal Xiranite",
+    "item_equip_t4_parts_wuling00_body_04": "Armor Serbu Misi Lapangan AIC",
+    "item_equip_t4_parts_wuling00_body_05": "Armor Medis Misi Lapangan AIC",
+    "item_equip_t4_parts_wuling00_edc_04": "Pisau Tinju Serbu Misi Lapangan AIC",
+    "item_equip_t4_parts_wuling00_edc_05": "Bank Daya Misi Lapangan AIC",
+    "item_equip_t4_parts_wuling00_hand_04": "Sarung Tangan Serbu Misi Lapangan AIC",
+    "item_equip_t4_parts_wuling00_hand_05": "Sarung Tangan Medis Misi Lapangan AIC",
+    "item_equip_t4_suit_burst01_body_02": "Armor Ringan Tide Fall T1",
+    "item_equip_t4_suit_burst01_body_03": "Armor Berat Wave Swell",
+    "item_equip_t4_suit_burst01_edc_03": "Obor Pemotong Arus Keruh T1",
+    "item_equip_t4_suit_burst01_hand_02": "Sarung Tangan Deepsink",
+    "item_equip_t4_suit_spellburst_body_01": "Armor Deep Rampart",
+    "item_equip_t4_suit_spellburst_edc_01": "Komunikator Deep Rampart",
+    "item_equip_t4_suit_spellburst_hand_01": "Gauntlet Deep Rampart",
+    "item_equip_t4_suit_usp02_edc_05": "Lempeng Penopang Eternal Xiranite T1",
+    "item_equip_t4_suit_usp02_edc_06": "Lempeng Berat Eternal Xiranite"
   },
   "packs": {
     "none": "Nonset",
@@ -1732,7 +1798,8 @@
     "suit_combo_cd01": "Qingbo",
     "suit_expend_spell01": "Xiranflow",
     "suit_crush_fracture": "Tepian Serabut",
-    "suit_generaltype": "Misi Lapangan AIC"
+    "suit_generaltype": "Misi Lapangan AIC",
+    "suit_spellburst": "Deep Rampart"
   },
   "equipmentTypes": {
     "body": "Armor",
@@ -1800,7 +1867,8 @@
     "wiki_group_monster_hongshan": "Perompak Cangzei",
     "wiki_group_monster_animal": "Margasatwa",
     "wiki_group_monster_kl": "Bayang-bayang Hawar",
-    "wiki_group_monster_js": "Foundite"
+    "wiki_group_monster_js": "Foundite",
+    "wiki_group_monster_witchcraft": "Makhluk Sihir"
   },
   "resitances": {
     "heatRez": "Resistansi Heat",
@@ -2572,6 +2640,7 @@
   },
   "audio_player": {
     "playback_error": "Gagal memuat audio",
+    "not_found": "Audio tidak ditemukan (404)",
     "open_raw": "Open raw"
   }
 }

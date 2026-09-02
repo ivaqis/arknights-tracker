@@ -5,12 +5,12 @@
     "decoDesc": "Une arme couramment utilisée dans les Confins. Personne ne sait qui l'a conçue, mais cette pièce en particulier peut être facilement produite par des machines industrielles ordinaires.",
     "skills": [
       {
-        "name": "Force accrue [P]",
+        "name": "Force [P]",
         "description": "Force <@ba.vup>+{str}</>."
       },
       {
-        "name": "ATQ accrue [P]",
-        "description": "Attaque <@ba.vup>+{atk:0.0%}</>."
+        "name": "ATQ [P]",
+        "description": "ATQ <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Suppression : Renforcement d'urgence",
@@ -24,12 +24,12 @@
     "decoDesc": "Le tout dernier produit autonome des Industries Mieszko. Sa conception est basée sur une relique déterrée par la Cabale de la Tranquillité. L'arme en elle-même est équipée de technologies hautement confidentielles qui lui permettent de trancher quasiment tout sans difficulté.",
     "skills": [
       {
-        "name": "Trait principal accru [G]",
+        "name": "Trait principal [G]",
         "description": "Trait principal <@ba.vup>+{mainattr}</>."
       },
       {
-        "name": "ATQ accrue [G]",
-        "description": "Attaque <@ba.vup>+{atk:0.0%}</>."
+        "name": "ATQ [G]",
+        "description": "ATQ <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Suppression : Entailles cumulées",
@@ -43,11 +43,11 @@
     "decoDesc": "Un produit haut de gamme du centre d'assistance de Marchenord. Cette lame à chaîne a été conçue avec d'anciennes technologies. Bien qu'elle ne soit plus produite en quantité, cette arme continue à prouver sa fiabilité sur le terrain.",
     "skills": [
       {
-        "name": "Volonté accrue [G]",
+        "name": "Volonté [G]",
         "description": "Volonté <@ba.vup>+{will}</>."
       },
       {
-        "name": "PV accrus [G]",
+        "name": "PV [G]",
         "description": "PV max <@ba.vup>+{hp:0.0%}</>."
       },
       {
@@ -62,11 +62,11 @@
     "decoDesc": "Une arme spécialisée fabriquée par Endfield. La flamberge est équipée de circuits en originium entrelacés afin d'améliorer les performances de l'essence. Cette conception a été inspirée par divers phénomènes observés sur Talos.",
     "skills": [
       {
-        "name": "Force accrue [G]",
+        "name": "Force [G]",
         "description": "Force <@ba.vup>+{str}</>."
       },
       {
-        "name": "PV accrus [G]",
+        "name": "PV [G]",
         "description": "PV max <@ba.vup>+{hp:0.0%}</>."
       },
       {
@@ -81,11 +81,11 @@
     "decoDesc": "Une arme spéciale à édition limitée provenant de Goetia. La forme de cet espadon est probablement basée sur une vieille légende. Elle semble capable d'arracher des gémissements de terreur au royaume des rêves.",
     "skills": [
       {
-        "name": "Force accrue [G]",
+        "name": "Force [G]",
         "description": "Force <@ba.vup>+{str}</>."
       },
       {
-        "name": "Taux de coups critiques accru [G]",
+        "name": "Taux de coups critiques [G]",
         "description": "Taux de coups critiques <@ba.vup>+{crirate:0.0%}</>."
       },
       {
@@ -100,11 +100,11 @@
     "decoDesc": "Un espadon standard conçu par le fort Forgefane. Bien peu de gens ont réussi à la maîtriser, mais cette arme reste pourtant simple à manier et a longtemps constitué le choix le plus prisé des nouvelles recrues.",
     "skills": [
       {
-        "name": "Volonté accrue [P]",
+        "name": "Volonté [P]",
         "description": "Volonté <@ba.vup>+{will}</>."
       },
       {
-        "name": "PV accrus [P]",
+        "name": "PV [P]",
         "description": "PV max <@ba.vup>+{hp:0.0%}</>."
       },
       {
@@ -119,7 +119,7 @@
     "decoDesc": "Une des armes standard pour opérateur des Industries Endfield. Conçue par Darhoff, ingénieur de l'arsenal d'Endfield, c'est souvent une bonne option pour ceux qui participent aux attaques.",
     "skills": [
       {
-        "name": "Trait principal accru [P]",
+        "name": "Trait principal [P]",
         "description": "Trait principal <@ba.vup>+{mainattr}</>."
       },
       {
@@ -134,11 +134,11 @@
     "decoDesc": "Un espadon standard développé par les spadamanciens de Hongshan. L'arme est recouverte d'un revêtement spécial qui la protège à la perfection, même dans les environnements les plus extrêmes et hostiles.",
     "skills": [
       {
-        "name": "Force accrue [M]",
+        "name": "Force [M]",
         "description": "Force <@ba.vup>+{str}</>."
       },
       {
-        "name": "Vitesse de gain d'ultime accrue [M]",
+        "name": "Vitesse ULT [M]",
         "description": "Vitesse de gain d'ultime <@ba.vup>+{usgs:0.0%}</>."
       },
       {
@@ -153,11 +153,11 @@
     "decoDesc": "Une arme spéciale des Industries Mieszko, produite en quantité limitée. Il s'agit du concept final du projet de collaboration entre les sociétés d'armement et Cromwell, expert et major des chevaliers.",
     "skills": [
       {
-        "name": "Force accrue [M]",
+        "name": "Force [M]",
         "description": "Force <@ba.vup>+{str}</>."
       },
       {
-        "name": "PV accrus [M]",
+        "name": "PV [M]",
         "description": "PV max <@ba.vup>+{hp:0.0%}</>."
       },
       {
@@ -172,12 +172,12 @@
     "decoDesc": "Une arme étrange produite par Goetia. La lame a été ciselée dans un bloc de glace qui semble des plus ordinaires, mais dont la surface a en fait été imprégnée par une forme particulière d'Arts de l'originium, qui la rend indestructible.",
     "skills": [
       {
-        "name": "Force accrue [G]",
+        "name": "Force [G]",
         "description": "Force <@ba.vup>+{str}</>."
       },
       {
-        "name": "ATQ accrue [G]",
-        "description": "Attaque <@ba.vup>+{atk:0.0%}</>."
+        "name": "ATQ [G]",
+        "description": "ATQ <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Détonation : Glaciation",
@@ -191,11 +191,11 @@
     "decoDesc": "Un espadon de qualité produit par les spadamanciens de Hongshan. Plus léger que les autres espadons, il n'en reste pas moins mortel.",
     "skills": [
       {
-        "name": "Force accrue [M]",
+        "name": "Force [M]",
         "description": "Force <@ba.vup>+{str}</>."
       },
       {
-        "name": "Intensité des Arts accrue [M]",
+        "name": "Intensité des Arts [M]",
         "description": "Intensité des Arts <@ba.vup>+{physpell:0}</>."
       },
       {
@@ -210,16 +210,16 @@
     "decoDesc": "Une arme standard produite par les Industries Endfield. Elle a été conçue par l'équipe des prototypes créatifs, qui a été fondée par Opéro, ingénieur en chef de l'arsenal. On peut équiper cette arme de différents modules, selon les besoins du combat à venir.",
     "skills": [
       {
-        "name": "Force accrue [M]",
+        "name": "Force [M]",
         "description": "Force <@ba.vup>+{str}</>."
       },
       {
-        "name": "PV accrus [M]",
+        "name": "PV [M]",
         "description": "PV max <@ba.vup>+{hp:0.0%}</>."
       },
       {
         "name": "Efficacité : Volonté tenace",
-        "description": "Octroie <@ba.vup>+{second_attr_up:0.0%}</> de trait secondaire.\nLorsqu'il applique l'effet <#ba.knockdown>Renversement</> ou <#ba.weak>Affaiblissement</>, l'utilisateur gagne <@ba.vup>+{def_up:0.0%}</> de DÉF pendant {duration:0} s.\n<@ba.info>Les effets du même nom ne sont pas cumulables.</>"
+        "description": "Octroie <@ba.vup>+{second_attr_up:0.0%}</> de trait secondaire.\nLorsqu'il applique <#ba.knockdown>Renversement</> ou <#ba.weak>Faiblesse</>, l'utilisateur gagne <@ba.vup>+{def_up:0.0%}</> de DÉF pendant {duration:0} s.\n<@ba.info>Les effets du même nom ne sont pas cumulables.</>"
       }
     ]
   },
@@ -229,11 +229,11 @@
     "decoDesc": "Ce prototype a été produit par les Laboratoires Æthertech portatifs. La lame en elle-même est constituée de matériaux innovants qui lui confèrent un poids exceptionnellement léger sans pour autant compromettre son potentiel destructeur.",
     "skills": [
       {
-        "name": "Force accrue [G]",
+        "name": "Force [G]",
         "description": "Force <@ba.vup>+{str}</>."
       },
       {
-        "name": "Intensité des Arts accrue [G]",
+        "name": "Intensité des Arts [G]",
         "description": "Intensité des Arts <@ba.vup>+{physpell:0}</>."
       },
       {
@@ -248,12 +248,12 @@
     "decoDesc": "Les spadamanciens de Hongshan ont mis plus de dix ans à concevoir et à produire cet espadon. Il est particulièrement bien proportionné et permet d'assener des coups puissants et féroces. Il s'agit là d'une arme lourde exemplaire.",
     "skills": [
       {
-        "name": "Force accrue [G]",
+        "name": "Force [G]",
         "description": "Force <@ba.vup>+{str}</>."
       },
       {
-        "name": "ATQ accrue [G]",
-        "description": "Attaque <@ba.vup>+{atk:0.0%}</>."
+        "name": "ATQ [G]",
+        "description": "ATQ <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Combativité : Frappe amaranthe",
@@ -267,11 +267,11 @@
     "decoDesc": "Une arme avancée pour opérateur, fabriquée par les Industries Endfield. L'arsenal d'Endfield a utilisé les modèles d'André pour créer un drone capable de stocker les Arts afin de les lancer rapidement en cas d'urgence.",
     "skills": [
       {
-        "name": "Intelligence accrue [P]",
+        "name": "Intelligence [P]",
         "description": "Intelligence <@ba.vup>+{wisd}</>."
       },
       {
-        "name": "Arts accrus [P]",
+        "name": "DÉG des Arts [P]",
         "description": "DÉG des Arts infligés <@ba.vup>+{spelldam:0.0%}</>."
       },
       {
@@ -286,7 +286,7 @@
     "decoDesc": "Une des armes standard pour opérateur des Industries Endfield. Conçue par Jiminy, ingénieur de l'arsenal d'Endfield, cette unité des Arts s'est révélée extrêmement populaire auprès des opérateurs nouvellement promus.",
     "skills": [
       {
-        "name": "Trait principal accru [P]",
+        "name": "Trait principal [P]",
         "description": "Trait principal <@ba.vup>+{mainattr}</>."
       },
       {
@@ -301,12 +301,12 @@
     "decoDesc": "Une des unités des Arts fabriquée par les Industries Endfield. Elle arbore une conception structurelle audacieuse et une superbe conductivité des Arts, mais elle est incroyablement difficile à contrôler. Maîtriser cette arme était considéré comme une preuve de compétence chez les opérateurs.",
     "skills": [
       {
-        "name": "Volonté accrue [P]",
+        "name": "Volonté [P]",
         "description": "Volonté <@ba.vup>+{will}</>."
       },
       {
-        "name": "ATQ accrue [P]",
-        "description": "Attaque <@ba.vup>+{atk:0.0%}</>."
+        "name": "ATQ [P]",
+        "description": "ATQ <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Suppression : Renforcement d'urgence",
@@ -320,11 +320,11 @@
     "decoDesc": "Une unité des Arts développée par les Industries RAYTHEAN. Cette arme particulière est connue pour sa conception minimaliste et légère. Sa production nécessite moitié moins de matériaux qu'une unité des Arts standard.",
     "skills": [
       {
-        "name": "Intelligence accrue [M]",
+        "name": "Intelligence [M]",
         "description": "Intelligence <@ba.vup>+{wisd}</>."
       },
       {
-        "name": "DÉG électriques accrus [M]",
+        "name": "DÉG électriques [M]",
         "description": "DÉG électriques infligés <@ba.vup>+{electrondam:0.0%}</>."
       },
       {
@@ -339,12 +339,12 @@
     "decoDesc": "Une des unités des Arts à l'apparence étrange produite par Goetia. Sa conception contre-intuitive inclut une compatibilité aux Arts de l'originium volontairement réduite, simplement pour souligner la logique obscure de la sorcellerie de l'ancienne Teekaz.",
     "skills": [
       {
-        "name": "Intelligence accrue [M]",
+        "name": "Intelligence [M]",
         "description": "Intelligence <@ba.vup>+{wisd}</>."
       },
       {
-        "name": "ATQ accrue [M]",
-        "description": "Attaque <@ba.vup>+{atk:0.0%}</>."
+        "name": "ATQ [M]",
+        "description": "ATQ <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Crépuscule : Bûcher éclatant",
@@ -358,11 +358,11 @@
     "decoDesc": "Un produit contractuel des Laboratoires Æthertech portatifs. Ses composants en métal sont gravés à la main par des adeptes de la concæption afin de créer des empreintes correspondant à celles des pièces de tillite. Il en résulte une unité des Arts aux circuits de lancement des Arts uniques.",
     "skills": [
       {
-        "name": "Volonté accrue [G]",
+        "name": "Volonté [G]",
         "description": "Volonté <@ba.vup>+{will}</>."
       },
       {
-        "name": "DÉG naturels accrus [G]",
+        "name": "DÉG naturels [G]",
         "description": "DÉG naturels infligés <@ba.vup>+{naturaldam:0.0%}</>."
       },
       {
@@ -377,11 +377,11 @@
     "decoDesc": "Une unité des Arts développée par les spadamanciens de Hongshan et fabriquée à base de xiranite. Étant donnée la nature changeante de ce matériau rare, seuls les utilisateurs aux niveaux de concentration et de précision les plus élevés sont capables de manier cette unité des Arts efficacement.",
     "skills": [
       {
-        "name": "Volonté accrue [M]",
+        "name": "Volonté [M]",
         "description": "Volonté <@ba.vup>+{will}</>."
       },
       {
-        "name": "Vitesse de gain d'ultime accrue [M]",
+        "name": "Vitesse ULT [M]",
         "description": "Vitesse de gain d'ultime <@ba.vup>+{usgs:0.0%}</>."
       },
       {
@@ -396,11 +396,11 @@
     "decoDesc": "Une unité des Arts développée par le centre d'assistance de Marchenord. C'est indubitablement l'unité possédant la meilleure conductivité aux Arts de l'originium. Seuls les magiciens les plus doués peuvent maîtriser cette arme.",
     "skills": [
       {
-        "name": "Trait principal accru [G]",
+        "name": "Trait principal [G]",
         "description": "Trait principal <@ba.vup>+{mainattr}</>."
       },
       {
-        "name": "Intensité des Arts accrue [G]",
+        "name": "Intensité des Arts [G]",
         "description": "Intensité des Arts <@ba.vup>+{physpell:0}</>."
       },
       {
@@ -415,11 +415,11 @@
     "decoDesc": "Une des unités des Arts développées par Goetia. À l'exception de ses circuits de base en originium, le reste de cette unité a été construit dans un matériau inconnu. A-t-elle vraiment été conçue sur Talos-II ?",
     "skills": [
       {
-        "name": "Intelligence accrue [G]",
+        "name": "Intelligence [G]",
         "description": "Intelligence <@ba.vup>+{wisd}</>."
       },
       {
-        "name": "Arts accrus [G]",
+        "name": "DÉG des Arts [G]",
         "description": "DÉG des Arts infligés <@ba.vup>+{spelldam:0.0%}</>."
       },
       {
@@ -434,11 +434,11 @@
     "decoDesc": "Une des unités des Arts développées par les Industries Mieszko. Elle est composée d'un châssis en acier D64 et est équipée d'un ensemble de modules personnalisables. L'apparence de l'arme rappelle les feux d'artifice tirés lors des spectacles des majors des chevaliers d'antan.",
     "skills": [
       {
-        "name": "Volonté accrue [G]",
+        "name": "Volonté [G]",
         "description": "Volonté <@ba.vup>+{will}</>."
       },
       {
-        "name": "PV accrus [G]",
+        "name": "PV [G]",
         "description": "PV max <@ba.vup>+{hp:0.0%}</>."
       },
       {
@@ -453,11 +453,11 @@
     "decoDesc": "Un produit classique, mais de qualité fabriqué par RAYTHEAN. Son prototype date de la Première guerre des Aggeloi. L'arme a reçu de nombreuses améliorations et optimisations depuis cette époque ; la version moderne possède une puissance incroyable, qui améliore la protection et la sécurité de son utilisateur.",
     "skills": [
       {
-        "name": "Volonté accrue [G]",
+        "name": "Volonté [G]",
         "description": "Volonté <@ba.vup>+{will}</>."
       },
       {
-        "name": "Vitesse de gain d'ultime accrue [G]",
+        "name": "Vitesse ULT [G]",
         "description": "Vitesse de gain d'ultime <@ba.vup>+{usgs:0.0%}</>."
       },
       {
@@ -472,11 +472,11 @@
     "decoDesc": "Une unité des Arts conçue par les Industries Mieszko pour la Cabale de la Tranquillité. Chaque étape de sa conception, son étude, sa production et son optimisation a été supervisée par un ecclésiastique de la Cabale.",
     "skills": [
       {
-        "name": "Volonté accrue [M]",
+        "name": "Volonté [M]",
         "description": "Volonté <@ba.vup>+{will}</>."
       },
       {
-        "name": "Efficacité des soins accrue [M]",
+        "name": "Efficacité des soins [M]",
         "description": "Efficacité des soins <@ba.vup>+{heal:0.0%}</>."
       },
       {
@@ -491,11 +491,11 @@
     "decoDesc": "Un produit de la série d'élite des Industries Mieszko. Cette arme offre une excellente conductivité aux Arts de l'originium, ce qui en fait un choix plus pratique que ses équivalents qui privilégient la forme au fond.",
     "skills": [
       {
-        "name": "Intelligence accrue [G]",
+        "name": "Intelligence [G]",
         "description": "Intelligence <@ba.vup>+{wisd}</>."
       },
       {
-        "name": "Efficacité des soins accrue [G]",
+        "name": "Efficacité des soins [G]",
         "description": "Efficacité des soins <@ba.vup>+{heal:0.0%}</>."
       },
       {
@@ -510,11 +510,11 @@
     "decoDesc": "Une arme standard produite par les Industries Endfield. Elle a été conçue par l'équipe des prototypes créatifs, qui a été fondée par Opéro, ingénieur en chef de l'arsenal. Sa puissance dépend du niveau de maîtrise des Arts de l'originium de son utilisateur.",
     "skills": [
       {
-        "name": "Intelligence accrue [M]",
+        "name": "Intelligence [M]",
         "description": "Intelligence <@ba.vup>+{wisd}</>."
       },
       {
-        "name": "Intensité des Arts accrue [M]",
+        "name": "Intensité des Arts [M]",
         "description": "Intensité des Arts <@ba.vup>+{physpell:0}</>."
       },
       {
@@ -529,12 +529,12 @@
     "decoDesc": "Une unité des Arts développée par les spadamanciens de Hongshan. Elle se distingue par l'utilisation audacieuse de nouveaux amalgames de xiranite. Ces matériaux affichent d'excellentes performances et améliorent l'efficacité des sorts, mais cette unité des Arts n'est pas simple d'utilisation.",
     "skills": [
       {
-        "name": "Volonté accrue [G]",
+        "name": "Volonté [G]",
         "description": "Volonté <@ba.vup>+{will}</>."
       },
       {
-        "name": "ATQ accrue [G]",
-        "description": "Attaque <@ba.vup>+{atk:0.0%}</>."
+        "name": "ATQ [G]",
+        "description": "ATQ <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Suppression : transmission éclair",
@@ -548,11 +548,11 @@
     "decoDesc": "Un ensemble d'unité des Arts standard conçu et développé par les spadamanciens de Hongshan. Ces armes sont actuellement confiées aux membres des Forces spéciales de Yinglung. Connues pour leurs excellentes performances et leur stabilité, elles sont également particulièrement fiables en environnement difficile.",
     "skills": [
       {
-        "name": "Intelligence accrue [G]",
+        "name": "Intelligence [G]",
         "description": "Intelligence <@ba.vup>+{wisd}</>."
       },
       {
-        "name": "Vitesse de gain d'ultime accrue [G]",
+        "name": "Vitesse ULT [G]",
         "description": "Vitesse de gain d'ultime <@ba.vup>+{usgs:0.0%}</>."
       },
       {
@@ -567,11 +567,11 @@
     "decoDesc": "Un produit classique des Industries Endfield. De nombreuses unités ont été utilisées lors de l'expédition polaire. Ces unités des Arts possèdent un revêtement jaune d'or éclatant qui leur permet de rester bien visibles, même dans les pires tempêtes de neige.",
     "skills": [
       {
-        "name": "Volonté accrue [G]",
+        "name": "Volonté [G]",
         "description": "Volonté <@ba.vup>+{will}</>."
       },
       {
-        "name": "DÉG électriques accrus [G]",
+        "name": "DÉG électriques [G]",
         "description": "DÉG électriques infligés <@ba.vup>+{electrondam:0.0%}</>."
       },
       {
@@ -586,16 +586,54 @@
     "decoDesc": "Elle se base sur un produit récompensé lors d'un concours de design, organisé par les Industries Mieszko. C'est seulement grâce à la compréhension profonde des environnements en apesanteur de son concepteur que son accélération de projectiles d'une précision à la microseconde près et ses incroyables performances en vol ont pu voir le jour.",
     "skills": [
       {
-        "name": "Intelligence accrue [G]",
+        "name": "Intelligence [G]",
         "description": "Intelligence <@ba.vup>+{wisd}</>."
       },
       {
-        "name": "Vitesse de gain d'ultime accrue [G]",
+        "name": "Vitesse ULT [G]",
         "description": "Vitesse de gain d'ultime <@ba.vup>+{usgs:0.0%}</>."
       },
       {
         "name": "Efficacité : Cercle vertueux",
         "description": "<@ba.vup>+{nature_dmg_up:0.0%}</> de DÉG naturels infligés.\nLorsque l'utilisateur applique une <#ba.spellvul>sensibilité aux Arts</> ou une <#ba.spellinflict>altération des Arts</> avec une compétence de combo, son ATQ augmente de <@ba.vup>{atk_up:0.0%}</>, tandis que celle des autres opérateurs de l'équipe augmente de <@ba.vup>{atk_up2:0.0%}</>. Durée : {duration:0} s.\n<@ba.info>Cumuls max. pour les effets du même nom : {max_stack:0}. La durée de chaque cumul est décomptée séparément.</>"
+      }
+    ]
+  },
+  "umbraOfFrigidEventide": {
+    "name": "Umbra of Frigid Eventide",
+    "description": "Le soleil n'était pas encore levé.\nLe guerrier de la tribu du Pin glacé était déjà réveillé. Il tenait un court crayon de charbon et le papier sous ses doigts n'était guère plus grand que sa paume.\nChaque espace comptait, car il avait tant à écrire. Il traçait les mots avec soin et les lisait à voix haute. Il tentait de ne pas faire de bruit, mais la personne à ses côtés s'agita. La femme ouvrit l'œil qu'il lui restait, lui donna un méchant coup de pied et lui lança sèchement : « Silence. »\nLe guerrier lui adressa un sourire niais, puis commença à réciter ses mots en silence dans sa tête : « Chère Maman, la glace a fondu et nous apercevons la mousse verte. Elle est agréable. Elle est belle. Je crois que le printemps est arrivé chez toi. La rivière doit couler sous ta cabane perchée et apporter de l'eau aux plantes du jardin. Les aviliaires sont sûrement revenus nicher sous le toit, et volent dans la maison lorsque tu ouvres la fenêtre pour venir se poser dans ta main. Peut-être qu'un jour, je pourrai voler jusqu'à la maison comme les aviliaires, rester à tes côtés là où le printemps est éternel, et... »\nC'était un mot dont sa mère parlait souvent. Le guerrier s'en souvenait, mais avait oublié comment le tracer. N'ayant d'autre choix, il s'arrêta d'écrire et lança à la femme un regard plein de résignation, un appel à l'aide.\nLe ton agacé de la femme cachait mal sa curiosité sous-jacente : « Pourquoi tu t'arrêtes d'écrire ? »\n« Il y a un mot, mais je n'arrive pas à le tracer. »\n« Et quel est ce mot ? »\n« Sa-Sanctuaire. »\n« Tu ne l'as jamais appris ? »\n« Maman est partie avant de m'enseigner ce mot. »\n« Ooooooh », la femme étira ce son, comme si elle était frustrée. Elle leva alors la main et dessina dans l'air un entrelacs de courbes et de lignes droites, telles les traces laissées par un aviliaire virevoltant dans les airs.\nLa femme commença par écrire le mot rapidement. Les yeux fatigués du guerrier avaient du mal à suivre le bout de son doigt. Elle vit ses sourcils froncés, rit, puis écrivit le mot à nouveau.\nEnsemble, le crayon de charbon du guerrier, le doigt de la femme, les lignes sur le papier et la forme dans l'air composèrent le mot. Il se posa sur le papier comme un aviliaire qui atterrit en douceur.\nLe papier était désormais couvert de mots. Il afficha un sourire satisfait et le jeta dans le feu de camp. Celui-ci crépita en brûlant, sa lumière dansante se reflétant dans le regard de la femme avant de s'éteindre au coin de ses yeux.\n« Tu crois qu'elle ne l'aurait jamais reçu ? »\nLe guerrier acquiesça. La femme poussa un soupir. Un silence s'installa avant qu'elle ne reprenne soudain la parole. « Comment t'appelles-tu, petit ? »\n« Björn, du Pin glacé. »\nLa femme fouilla dans ses souvenirs à voix haute, fragment par fragment : « La tribu du Pin glacé... Oh oui, je me souviens de ta cheftaine... Une guerrière courageuse, vraiment admirable. Elle a honoré le credo des guerriers lorsqu'elle est tombée. »\n« J'ai de la chance, car j'ai grandi auprès d'elle », acquiesça le guerrier, rougissant avec gratitude.\n« Puisse-t-elle retourner auprès de Sami, là où le printemps est éternel, le... »\n« Le sanctuaire », dit le guerrier en même temps que la femme, qui sourit.\nLe soleil n'était pas encore levé, mais les cornes retentissaient. Les Aggeloi apparaissaient à l'horizon, marchant vers le front en une puissante armée.\nLe guerrier du Pin glacé était déjà debout. Il saisit sa lance et porta la femme. Avec les soldats, ils se tournèrent vers la marée aggeloïde.\nDerrière eux, le feu dévorait le papier. Des braises éparses s'échappaient des langues de feu vacillantes et s'envolaient vers le lointain.",
+    "decoDesc": "Une arme forgée au fort Forgefane. Dotée d'un châssis épuré et profilé, son revêtement spécial est particulièrement adapté aux environnements faiblement éclairés.",
+    "skills": [
+      {
+        "name": "Agilité [G]",
+        "description": "Agilité <@ba.vup>+{agi}</>."
+      },
+      {
+        "name": "ATQ [G]",
+        "description": "ATQ <@ba.vup>+{atk:0.0%}</>"
+      },
+      {
+        "name": "Détonation : Instinct du chasseur",
+        "description": "Dégâts des Arts infligés <@ba.vup>+{spell_dmg_up:0.0%}</>.\nAprès avoir utilisé une compétence de combat, l'utilisateur gagne <@ba.vup>+{phy_spell_up:0}</> d'intensité des Arts et {wind_grant:0} cumuls de <@ba.key>Forme du vent</> pendant {wind_duration:0} s.\n<@ba.info>Tout cet effet ne peut pas être cumulé. Cumuls max. de <@ba.key>Forme du vent</> : {wind_grant:0}.</>\nLorsque l'utilisateur applique une <#ba.spellburst>explosion des Arts</>, <#ba.consume>consomme</> 1 cumul de <@ba.key>Forme du vent</> pour octroyer à l'utilisateur <@ba.vup>+{spell_dmg_up2:0.0%}</> de DÉG des Arts infligés pendant {spell_dmg_duration:0} s.\n<@ba.info>L'effet est cumulable {spell_dmg_max_stack:0} fois. La durée de chaque cumul est décomptée séparément. Cet effet ne se déclenche qu'une fois toutes les 0,1 s.</>"
+      }
+    ]
+  },
+  "sufferingsEnd": {
+    "name": "Suffering's End",
+    "description": "« La souffrance prendra fin. La paix régnera... pour tous les Sarkaz... »\nLe vieux Sarkaz méditait sur ces mots en nettoyant l'unité des Arts dans sa main. Autour de lui, un flot incessant de touristes venus avec leurs proches et leurs amis. Les Liches créaient de spectaculaires feux d'artifice grâce à leurs Arts tandis que des enfants grimpaient sur les guerriers Gargouilles. Des personnes de toutes confessions, tribus et races applaudissaient, comme le jour où Seš'qa avait pris son envol, et lors de chaque journée portes ouvertes célébrant la fin de la guerre.\n« Est-ce... la \"Fin de la souffrance\", pour nous... ? »\nLe vieux Sarkaz rangea rapidement ses affaires. Il avait déjà économisé assez de crédits T pour voyager dans diverses villes de la Ceinture. Depuis des années, il prévoyait de quitter Seš'qa pour visiter la Ceinture civilisée.\n\nLe voyage fut paisible et sans incident jusqu'à ce fameux jour. Il était allongé sur un énorme rocher à contempler les étoiles, lorsque la bouilloire à café en originium s'éteignit soudain d'un claquement sonore. Il fut d'abord perplexe, puis il entendit des explosions, des cris et des hurlements.\nD'un regard alerte, il observa l'ignibrume qui se répandait. Une famille de trois personnes fuyait à pied à travers les terres sauvages, poursuivie par une trentaine de silhouettes bigarrées et armées. Des Brise-Terres. Le vieux Sarkaz assista à la poursuite... et ne fit rien. Il se rallongea pour se reposer.\n\nIl était simplement trop vieux, trop ordinaire. Il n'était ni un guerrier Gargouille doté d'une constitution aussi robuste qu'une forteresse, ni un Liche maniant des Arts ésotériques et mortels, ni un Nachzehrer doté d'une force terrifiante et impossible. Il était simplement un Sarkaz métissé qui avait eu la chance de survivre à la Guerre des Aggeloi, à la Guerre humiliante et à la Guerre jakubine qui terrassa le seigneur de guerre des terres sauvages. Tout ce qu'il connaissait, c'étaient de vieilles astuces de survie.\nMais une dizaine de secondes à peine passa avant que le Sarkaz sorte son unité des Arts et bondisse du grand rocher. Il se rappela l'Oratrice folle qui avait prononcé un discours et fait une promesse aux Sarkaz, un texte qu'elle n'avait clairement pas écrit elle-même. Pourtant, il y a des choses qui ne changent jamais. Pour que la souffrance cesse, quelqu'un doit agir.\nIl nettoya doucement son unité des Arts. Le châssis reflétait le visage d'un Sarkaz profondément marqué et vieilli par toutes les années qui s'étaient écoulées.\n\nUne flèche s'enfonça dans le père en fuite, son enfant dans les bras. Tous deux s'effondrèrent. La femme jeta son communicateur et tenta de tirer son homme en lieu sûr. En vain. Les Brise-Terres étaient sur eux. La nuit des terres sauvages devint instantanément silencieuse.\nLes Brise-Terres hurlaient et riaient en approchant de la famille frappée de toutes parts. Sans pitié, ils brandirent leurs armes. L'homme et la femme tentèrent, en vain, de protéger leur enfant. La lumière des torches brillait sur les sabres, les carreaux d'arbalète et les larmes du pauvre enfant.\nUne grande ombre dotée d'une paire de cornes apparut soudain derrière les Brise-Terres. Sans trompette ni tambour, une obscurité plus noire que la nuit se répandit sur la scène. Un à un, elle saisit les Brise-Terres qui hurlaient de désespoir alors que la vie les fuyait. Les autres étaient terrifiés. Ils cherchaient désespérément l'origine de cette attaque soudaine. Ce furent des mots portés par la brise nocturne qui les trouvèrent. Des mots prononcés dans un sarkaz ancien et rauque...\n« Ma souffrance a pris fin. Mais la vôtre... ne fait que commencer. »",
+    "decoDesc": "L'une des étranges unités des Arts produites par Goetia. Elle semble imprégnée d'une forme particulière d'Arts de l'originium qui procure à son porteur un profond sentiment de sécurité.",
+    "skills": [
+      {
+        "name": "Agilité [G]",
+        "description": "Agilité <@ba.vup>+{agi}</>."
+      },
+      {
+        "name": "DÉG naturels [G]",
+        "description": "DÉG naturels infligés <@ba.vup>+{naturaldam:0.0%}</>."
+      },
+      {
+        "name": "Détonation : Au bout de la longue nuit",
+        "description": "Octroie <@ba.vup>+{phy_spell_up:0}</> d'intensité des Arts.\nLorsqu'il applique une <#ba.spellburst>explosion des Arts</>, l'utilisateur gagne <@ba.vup>+{nature_dmg_up:0.0%}</> de DÉG naturels infligés pendant {duration:0} s.\n<@ba.info>Cumuls max. pour cet effet : {max_stack:0}. La durée de chaque cumul est décomptée séparément. Cet effet ne se déclenche qu'une fois toutes les 0,1 s.</>\nÀ {max_stack:0} cumuls, l'effet mentionné octroie <@ba.vup>+{nature_dmg_up2:0.0%}</> de DÉG naturels infligés.\n<@ba.info>L'effet ne peut pas être cumulé.</>"
       }
     ]
   },
@@ -605,12 +643,12 @@
     "decoDesc": "Une des armes avancées pour opérateur fabriquées par Endfield. Cette arme profilée et légère est bien équilibrée et rappelle souvent les lances standard autrefois maniées par les opérateurs de l'avant-garde de Rhodes Island.",
     "skills": [
       {
-        "name": "Agilité accrue [P]",
+        "name": "Agilité [P]",
         "description": "Agilité <@ba.vup>+{agi}</>."
       },
       {
-        "name": "ATQ accrue [P]",
-        "description": "Attaque <@ba.vup>+{atk:0.0%}</>."
+        "name": "ATQ [P]",
+        "description": "ATQ <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Inspiration : Début d'une saga",
@@ -624,11 +662,11 @@
     "decoDesc": "Une lance expérimentale conçue par les Industries Endfield et produite en quantité très limitée. Cette arme arbore une conception modulaire qui permet de la démanteler et de la réassembler sur le champ de bataille dans des conditions complexes et hostiles.",
     "skills": [
       {
-        "name": "Force accrue [M]",
+        "name": "Force [M]",
         "description": "Force <@ba.vup>+{str}</>."
       },
       {
-        "name": "Vitesse de gain d'ultime accrue [M]",
+        "name": "Vitesse ULT [M]",
         "description": "Vitesse de gain d'ultime <@ba.vup>+{usgs:0.0%}</>."
       },
       {
@@ -643,11 +681,11 @@
     "decoDesc": "Un produit classique du processus spécial de fabrication personnalisable de RAYTHEAN. Cette arme est basée sur un modèle de lance militaire standard et est dotée d'un ensemble de fonctionnalités spéciales et de composants esthétiques personnalisables.",
     "skills": [
       {
-        "name": "Volonté accrue [M]",
+        "name": "Volonté [M]",
         "description": "Volonté <@ba.vup>+{will}</>."
       },
       {
-        "name": "DÉG électriques accrus [M]",
+        "name": "DÉG électriques [M]",
         "description": "DÉG électriques infligés <@ba.vup>+{electrondam:0.0%}</>."
       },
       {
@@ -662,11 +700,11 @@
     "decoDesc": "Une vieille arme du centre d'assistance de Marchenord à la maniabilité plus que douteuse. Elle peut cependant infliger d'énormes dégâts. En raison de son poids considérable, elle n'est pas très populaire, mais les amateurs de coups puissants et exubérants l'apprécient généralement.",
     "skills": [
       {
-        "name": "Agilité accrue [G]",
+        "name": "Agilité [G]",
         "description": "Agilité <@ba.vup>+{agi}</>."
       },
       {
-        "name": "Vitesse de gain d'ultime accrue [G]",
+        "name": "Vitesse ULT [G]",
         "description": "Vitesse de gain d'ultime <@ba.vup>+{usgs:0.0%}</>."
       },
       {
@@ -681,11 +719,11 @@
     "decoDesc": "Une lance standard fabriquée à fort Forgefane pour armer les simples soldats. Elle est équipée d'une pointe extrêmement effilée spécialement conçue pour combattre les Aggeloi.",
     "skills": [
       {
-        "name": "Volonté accrue [P]",
+        "name": "Volonté [P]",
         "description": "Volonté <@ba.vup>+{will}</>."
       },
       {
-        "name": "Arts accrus [P]",
+        "name": "DÉG des Arts [P]",
         "description": "DÉG des Arts infligés <@ba.vup>+{spelldam:0.0%}</>."
       },
       {
@@ -700,7 +738,7 @@
     "decoDesc": "L'une des armes standard pour opérateur fabriquées par les Industries Endfield. Conçue personnellement par Opéro, ingénieur en chef de l'arsenal d'Endfield, elle bénéficie d'une conception ergonomique très appréciée des opérateurs d'Endfield nouvellement promus.",
     "skills": [
       {
-        "name": "Trait principal accru [P]",
+        "name": "Trait principal [P]",
         "description": "Trait principal <@ba.vup>+{mainattr}</>."
       },
       {
@@ -715,11 +753,11 @@
     "decoDesc": "Un produit de milieu de gamme des Industries Mieszko. Cette lance est aussi rare que recherchée, tant pour son style ancien qui rappelle les carreaux de baliste que pour son efficacité sur le terrain.",
     "skills": [
       {
-        "name": "Agilité accrue [G]",
+        "name": "Agilité [G]",
         "description": "Agilité <@ba.vup>+{agi}</>."
       },
       {
-        "name": "DÉG physiques accrus [G]",
+        "name": "DÉG physiques [G]",
         "description": "DÉG physiques infligés <@ba.vup>+{phydam:0.0%}</>."
       },
       {
@@ -734,12 +772,12 @@
     "decoDesc": "Une arme expérimentale fabriquée selon les normes les plus élevées du centre d'assistance de Marchenord. Le prototype a été conçu par le centre de recherche aérospatiale, aujourd'hui disparu. Un ensemble de propulseurs à compression d'originium rend cette lance extrêmement performante.",
     "skills": [
       {
-        "name": "Trait principal accru [G]",
+        "name": "Trait principal [G]",
         "description": "Trait principal <@ba.vup>+{mainattr}</>."
       },
       {
-        "name": "ATQ accrue [G]",
-        "description": "Attaque <@ba.vup>+{atk:0.0%}</>."
+        "name": "ATQ [G]",
+        "description": "ATQ <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Suppression : Astrophysique",
@@ -753,11 +791,11 @@
     "decoDesc": "Une lance expérimentale développée par les spadamanciens de Hongshan. Le manche de cette arme a été forgé dans un alliage spécial lui conférant force et résistance.",
     "skills": [
       {
-        "name": "Agilité accrue [G]",
+        "name": "Agilité [G]",
         "description": "Agilité <@ba.vup>+{agi}</>."
       },
       {
-        "name": "DÉG physiques accrus [G]",
+        "name": "DÉG physiques [G]",
         "description": "DÉG physiques infligés <@ba.vup>+{phydam:0.0%}</>."
       },
       {
@@ -772,11 +810,11 @@
     "decoDesc": "Une arme standard produite par les Industries Endfield. Elle a été conçue par l'équipe des prototypes créatifs, qui a été fondée par Opéro, ingénieur en chef de l'arsenal. Ses utilisateurs peuvent apporter leurs propres modifications au module de pointe.",
     "skills": [
       {
-        "name": "Volonté accrue [M]",
+        "name": "Volonté [M]",
         "description": "Volonté <@ba.vup>+{will}</>."
       },
       {
-        "name": "DÉG physiques accrus [M]",
+        "name": "DÉG physiques [M]",
         "description": "DÉG physiques infligés <@ba.vup>+{phydam:0.0%}</>."
       },
       {
@@ -791,16 +829,16 @@
     "decoDesc": "Une série de produits de qualité optimale par les Industries Mieszko, dont les artistes les plus populaires peuvent commander un exemplaire sur mesure. Son apparence semblable à un microphone, bien qu'ayant un côté onirique, cache des performances et une force extraordinaires. Cette arme a fait forte impression à toutes les personnes qui l'ont testée.",
     "skills": [
       {
-        "name": "Volonté accrue [G]",
+        "name": "Volonté [G]",
         "description": "Volonté <@ba.vup>+{will}</>."
       },
       {
-        "name": "Efficacité des soins accrue [G]",
+        "name": "Efficacité des soins [G]",
         "description": "Efficacité des soins <@ba.vup>+{heal:0.0%}</>."
       },
       {
         "name": "Cure : Rideau scintillant",
-        "description": "<@ba.vup>+{primary_attr_up:0.0%}</> de trait principal.\nLorsque la compétence de l'utilisateur soigne d'autres opérateurs de l'équipe, l'opérateur recevant les soins gagne également <@ba.vup>+{atk_up:0.0%}</> d'ATQ pendant {duration:0} s.\n<@ba.info>Cumuls max. pour les effets du même nom : {max_stack:0}. La durée de chaque cumul est décomptée séparément. Chaque opérateur ne peut bénéficier de cet effet qu'une fois toutes les 0,1 s maximum.</>"
+        "description": "<@ba.vup>+{primary_attr_up:0.0%}</> de trait principal.\nLorsque la compétence de l'utilisateur soigne d'autres opérateurs de l'équipe, l'opérateur recevant les soins gagne également <@ba.vup>+{atk_up:0.0%}</> d'ATQ pendant {duration:0} s.\n<@ba.info>Cumuls max. pour les effets du même nom : {max_stack:0}. La durée de chaque cumul est décomptée séparément. Chaque opérateur ne peut bénéficier de cet effet qu'une fois toutes les 0,1 s maximum.</>"
       }
     ]
   },
@@ -810,11 +848,11 @@
     "decoDesc": "L'une des armes d'hast produites par Goetia. Une édition spéciale commémorative a été mise sur le marché à l'occasion de la journée portes ouvertes de Seš'qa. Le corps de la lance a été recouvert d'un revêtement spécial à la fois fonctionnel et élégant.",
     "skills": [
       {
-        "name": "Agilité accrue [G]",
+        "name": "Agilité [G]",
         "description": "Agilité <@ba.vup>+{agi}</>."
       },
       {
-        "name": "DÉG thermiques accrus [G]",
+        "name": "DÉG thermiques [G]",
         "description": "DÉG thermiques infligés <@ba.vup>+{firedam:0.0%}</>."
       },
       {
@@ -829,11 +867,11 @@
     "decoDesc": "L'un des produits haut de gamme des Industries Mieszko. La pointe de la lance est constituée d'un alliage spécial, aussi solide qu'affûté. Ces armes élégantes et magnifiques ont un coût de production élevé et sont généralement maniées par des personnes souhaitant afficher leur prestige.",
     "skills": [
       {
-        "name": "Volonté accrue [G]",
+        "name": "Volonté [G]",
         "description": "Volonté <@ba.vup>+{will}</>."
       },
       {
-        "name": "Efficacité des soins accrue [G]",
+        "name": "Efficacité des soins [G]",
         "description": "Efficacité des soins <@ba.vup>+{heal:0.0%}</>."
       },
       {
@@ -848,7 +886,7 @@
     "decoDesc": "Une des armes standard pour opérateur des Industries Endfield. Conçue par Peco, ingénieur de l'arsenal d'Endfield, grâce à elle, la maîtrise des munitions gravées et des armes à feu n'est plus réservée aux Sankta.",
     "skills": [
       {
-        "name": "Trait principal accru [P]",
+        "name": "Trait principal [P]",
         "description": "Trait principal <@ba.vup>+{mainattr}</>."
       },
       {
@@ -863,12 +901,12 @@
     "decoDesc": "Un produit de milieu de gamme des Industries Mieszko. Ces pistolets sont la combinaison parfaite du style latéran ancien et d'une production industrielle moderne. Un revêtement métallique bleu apporte la touche finale à ces œuvres d'art uniques en leur genre.",
     "skills": [
       {
-        "name": "Intelligence accrue [P]",
+        "name": "Intelligence [P]",
         "description": "Intelligence <@ba.vup>+{wisd}</>."
       },
       {
-        "name": "ATQ accrue [P]",
-        "description": "Attaque <@ba.vup>+{atk:0.0%}</>."
+        "name": "ATQ [P]",
+        "description": "ATQ <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Suppression : Renforcement d'urgence",
@@ -882,11 +920,11 @@
     "decoDesc": "Des armes à feu standard fabriquées par le fort Forgefane pour les simples soldats de l'Ordre du serment d'acier. Ces armes sont extrêmement populaires en raison de la simplicité de leur mécanisme de tir et de leur incroyable puissance d'arrêt.",
     "skills": [
       {
-        "name": "Force accrue [P]",
+        "name": "Force [P]",
         "description": "Force <@ba.vup>+{str}</>."
       },
       {
-        "name": "Arts accrus [P]",
+        "name": "DÉG des Arts [P]",
         "description": "DÉG des Arts infligés <@ba.vup>+{spelldam:0.0%}</>."
       },
       {
@@ -901,11 +939,11 @@
     "decoDesc": "Les Industries RAYTHEAN ont développé ces pistolets à haute énergie pour un usage dans les Confins. Leur fiabilité dans les environnements complexes en font des armes prisées par les explorateurs des terres sauvages.",
     "skills": [
       {
-        "name": "Force accrue [M]",
+        "name": "Force [M]",
         "description": "Force <@ba.vup>+{str}</>."
       },
       {
-        "name": "DÉG thermiques accrus [M]",
+        "name": "DÉG thermiques [M]",
         "description": "DÉG thermiques infligés <@ba.vup>+{firedam:0.0%}</>."
       },
       {
@@ -920,11 +958,11 @@
     "decoDesc": "Le concept de l'année selon les Industries Mieszko. Célébrons ainsi le souvenir de la grande navigatrice, qui nous a conduits jusqu'à Talos-II au terme d'un voyage sans fin.",
     "skills": [
       {
-        "name": "Intelligence accrue [G]",
+        "name": "Intelligence [G]",
         "description": "Intelligence <@ba.vup>+{wisd}</>."
       },
       {
-        "name": "DÉG cryogéniques accrus [G]",
+        "name": "DÉG cryogéniques [G]",
         "description": "DÉG cryogéniques infligés <@ba.vup>+{crystdam:0.0%}</>."
       },
       {
@@ -939,11 +977,11 @@
     "decoDesc": "Un projet contractuel développé par les Laboratoires Æthertech portatifs. Les adeptes de la concæption ont osé équiper cette arme d'un canon tapissé de rélicolithe sur lequel on a gravé des motifs spéciaux.",
     "skills": [
       {
-        "name": "Agilité accrue [M]",
+        "name": "Agilité [M]",
         "description": "Agilité <@ba.vup>+{agi}</>."
       },
       {
-        "name": "Arts accrus [M]",
+        "name": "DÉG des Arts [M]",
         "description": "DÉG des Arts infligés <@ba.vup>+{spelldam:0.0%}</>."
       },
       {
@@ -958,11 +996,11 @@
     "decoDesc": "Arme à feu développée par les spadamanciens de Hongshan. Afin de respecter les exigences de conception de base des armes de l'ASH, ce modèle allie légèreté, maniabilité et prise en main optimale.",
     "skills": [
       {
-        "name": "Agilité accrue [G]",
+        "name": "Agilité [G]",
         "description": "Agilité <@ba.vup>+{agi}</>."
       },
       {
-        "name": "DÉG cryogéniques accrus [G]",
+        "name": "DÉG cryogéniques [G]",
         "description": "DÉG cryogéniques infligés <@ba.vup>+{crystdam:0.0%}</>."
       },
       {
@@ -977,11 +1015,11 @@
     "decoDesc": "Une œuvre légendaire du centre d'assistance de Marchenord, qui incarne à la perfection le style et les vertus des armes de Marchenord. Elle possède une puissance de feu dévastatrice et une fiabilité totale, mais son maniement et son recul sont proprement épouvantables.",
     "skills": [
       {
-        "name": "Trait principal accru [G]",
+        "name": "Trait principal [G]",
         "description": "Trait principal <@ba.vup>+{mainattr}</>."
       },
       {
-        "name": "Taux de coups critiques accru [G]",
+        "name": "Taux de coups critiques [G]",
         "description": "Taux de coups critiques <@ba.vup>+{crirate:0.0%}</>."
       },
       {
@@ -996,11 +1034,11 @@
     "decoDesc": "Des armes à feu spéciales fabriquées par les Industries RAYTHEAN. Ces armes expérimentales sont extrêmement difficiles à utiliser. Seul un nombre limité de prototypes a été lancé sur le marché de l'armement.",
     "skills": [
       {
-        "name": "Trait principal accru [G]",
+        "name": "Trait principal [G]",
         "description": "Trait principal <@ba.vup>+{mainattr}</>."
       },
       {
-        "name": "Arts accrus [G]",
+        "name": "DÉG des Arts [G]",
         "description": "DÉG des Arts infligés <@ba.vup>+{spelldam:0.0%}</>."
       },
       {
@@ -1015,11 +1053,11 @@
     "decoDesc": "L'un des produits les plus populaires des Industries Mieszko, issu de leur série Beaux-arts. Le style de ces armes à feu est aussi poussé que leurs performances. Leur prix sur le marché de seconde main prouve combien elles sont populaires.",
     "skills": [
       {
-        "name": "Intelligence accrue [G]",
+        "name": "Intelligence [G]",
         "description": "Intelligence <@ba.vup>+{wisd}</>."
       },
       {
-        "name": "Taux de coups critiques accru [G]",
+        "name": "Taux de coups critiques [G]",
         "description": "Taux de coups critiques <@ba.vup>+{crirate:0.0%}</>."
       },
       {
@@ -1034,12 +1072,12 @@
     "decoDesc": "Arme à feu développée par les spadamanciens de Hongshan. Conçue à partir de matériaux durables et résistants, cette arme au design épuré est également légère et facile à transporter. Elle sert dans tous types d'environnements et de situations complexes.",
     "skills": [
       {
-        "name": "Agilité accrue [G]",
+        "name": "Agilité [G]",
         "description": "Agilité <@ba.vup>+{agi}</>."
       },
       {
-        "name": "ATQ accrue [G]",
-        "description": "Attaque <@ba.vup>+{atk:0.0%}</>."
+        "name": "ATQ [G]",
+        "description": "ATQ <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Détonation : Fléau du brigand",
@@ -1053,11 +1091,11 @@
     "decoDesc": "Une arme standard produite par les Industries Endfield. Elle a été conçue par l'équipe des prototypes créatifs, qui a été fondée par Opéro, ingénieur en chef de l'arsenal. On a utilisé des matériaux légers, pratiques et durables pour la forger.",
     "skills": [
       {
-        "name": "Agilité accrue [M]",
+        "name": "Agilité [M]",
         "description": "Agilité <@ba.vup>+{agi}</>."
       },
       {
-        "name": "Vitesse de gain d'ultime accrue [M]",
+        "name": "Vitesse ULT [M]",
         "description": "Vitesse de gain d'ultime <@ba.vup>+{usgs:0.0%}</>."
       },
       {
@@ -1072,7 +1110,7 @@
     "decoDesc": "Une des armes standard pour opérateur des Industries Endfield. Conçue par Tarr, ingénieur de l'arsenal d'Endfield, cette épée est souvent la première arme de nombreux opérateurs de terrain.",
     "skills": [
       {
-        "name": "Trait principal accru [P]",
+        "name": "Trait principal [P]",
         "description": "Trait principal <@ba.vup>+{mainattr}</>."
       },
       {
@@ -1087,11 +1125,11 @@
     "decoDesc": "Une des armes d'élite pour opérateur fabriquées par Endfield. Cette épée possède une poignée adhérente d'un seul tenant et des mécanismes de stockage d'énergie déclenchés par la pression afin d'améliorer son potentiel de dégâts.",
     "skills": [
       {
-        "name": "Agilité accrue [M]",
+        "name": "Agilité [M]",
         "description": "Agilité <@ba.vup>+{agi}</>."
       },
       {
-        "name": "DÉG physiques accrus [M]",
+        "name": "DÉG physiques [M]",
         "description": "DÉG physiques infligés <@ba.vup>+{phydam:0.0%}</>."
       },
       {
@@ -1106,12 +1144,12 @@
     "decoDesc": "Une des armes les plus affûtées fabriquées par Goetia. Des procédés de fusion spéciaux ont permis d'obtenir une lame entièrement rouge. L'unité des Arts est en fait constituée d'originium liquéfié spécial, qui ressemble à une larme de sang versée par une forge.",
     "skills": [
       {
-        "name": "Intelligence accrue [G]",
+        "name": "Intelligence [G]",
         "description": "Intelligence <@ba.vup>+{wisd}</>."
       },
       {
-        "name": "ATQ accrue [G]",
-        "description": "Attaque <@ba.vup>+{atk:0.0%}</>."
+        "name": "ATQ [G]",
+        "description": "ATQ <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Crépuscule : Plainte flamboyante",
@@ -1125,11 +1163,11 @@
     "decoDesc": "Une des armes fabriquées par le fort Forgefane. Cette épée possède une architecture traditionnelle qui la rend extrêmement durable et solide. La lame lourde et épaisse a laissé d'innombrables cicatrices sur le permafrost, au fur et à mesure de l'évolution des lignes de front.",
     "skills": [
       {
-        "name": "Intelligence accrue [M]",
+        "name": "Intelligence [M]",
         "description": "Intelligence <@ba.vup>+{wisd}</>."
       },
       {
-        "name": "Vitesse de gain d'ultime accrue [M]",
+        "name": "Vitesse ULT [M]",
         "description": "Vitesse de gain d'ultime <@ba.vup>+{usgs:0.0%}</>."
       },
       {
@@ -1144,11 +1182,11 @@
     "decoDesc": "Une des armes avancées pour opérateur fabriquées par Endfield. Son architecture modulaire minimaliste a permis d'obtenir une arme légère à l'équilibre et au maniement exceptionnels. La lame elle-même est extrêmement durable.",
     "skills": [
       {
-        "name": "Agilité accrue [P]",
+        "name": "Agilité [P]",
         "description": "Agilité <@ba.vup>+{agi}</>."
       },
       {
-        "name": "DÉG physiques accrus [P]",
+        "name": "DÉG physiques [P]",
         "description": "DÉG physiques infligés <@ba.vup>+{phydam:0.0%}</>."
       },
       {
@@ -1163,12 +1201,12 @@
     "decoDesc": "Un produit de milieu de gamme des Industries Mieszko. Cette épée arbore un style chic d'avant-garde à un prix modique au vu de ses performances. À sa sortie, cette arme est devenue l'un des choix les plus prisés de l'année à la CCGT.",
     "skills": [
       {
-        "name": "Intelligence accrue [P]",
+        "name": "Intelligence [P]",
         "description": "Intelligence <@ba.vup>+{wisd}</>."
       },
       {
-        "name": "ATQ accrue [P]",
-        "description": "Attaque <@ba.vup>+{atk:0.0%}</>."
+        "name": "ATQ [P]",
+        "description": "ATQ <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Poursuite : Cycle infini",
@@ -1182,11 +1220,11 @@
     "decoDesc": "Une solution de défense personnelle légère et futuriste produite par les Industries RAYTHEAN. Cette épée possède une lame en alliage spécial et s'est révélée très populaire chez certains « professionnels ».",
     "skills": [
       {
-        "name": "Intelligence accrue [G]",
+        "name": "Intelligence [G]",
         "description": "Intelligence <@ba.vup>+{wisd}</>."
       },
       {
-        "name": "DÉG thermiques accrus [G]",
+        "name": "DÉG thermiques [G]",
         "description": "DÉG thermiques infligés <@ba.vup>+{firedam:0.0%}</>."
       },
       {
@@ -1201,11 +1239,11 @@
     "decoDesc": "Une épée ornementale de qualité forgée par les spadamanciens de Hongshan. On en fait souvent cadeau pour récompenser les personnes ayant accompli des prouesses. Son nom a été choisi à la suite d'un vote interne à l'Académie des sciences de Hongshan.",
     "skills": [
       {
-        "name": "Trait principal accru [G]",
+        "name": "Trait principal [G]",
         "description": "Trait principal <@ba.vup>+{mainattr}</>."
       },
       {
-        "name": "Taux de coups critiques accru [G]",
+        "name": "Taux de coups critiques [G]",
         "description": "Taux de coups critiques <@ba.vup>+{crirate:0.0%}</>."
       },
       {
@@ -1220,12 +1258,12 @@
     "decoDesc": "Un produit de base de l'ensemble Pionnier développé par le centre d'assistance de Marchenord. Le Coupe-thermite V4 a été produit grâce à des matériaux thermiques brevetés et offre des capacités de coupe puissantes. Apprécié par de nombreux ingénieurs du STUT.",
     "skills": [
       {
-        "name": "Volonté accrue [G]",
+        "name": "Volonté [G]",
         "description": "Volonté <@ba.vup>+{will}</>."
       },
       {
-        "name": "ATQ accrue [G]",
-        "description": "Attaque <@ba.vup>+{atk:0.0%}</>."
+        "name": "ATQ [G]",
+        "description": "ATQ <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Flux : Libération thermique",
@@ -1239,11 +1277,11 @@
     "decoDesc": "Une épée haut de gamme produite par les Industries Mieszko. La lame est finement sculptée et gravée, mais aussi très fiable et performante. Cette arme a été accueillie favorablement par l'élite de la CCGT et la haute société.",
     "skills": [
       {
-        "name": "Trait principal accru [G]",
+        "name": "Trait principal [G]",
         "description": "Trait principal <@ba.vup>+{mainattr}</>."
       },
       {
-        "name": "DÉG physiques accrus [G]",
+        "name": "DÉG physiques [G]",
         "description": "DÉG physiques infligés <@ba.vup>+{phydam:0.0%}</>."
       },
       {
@@ -1258,11 +1296,11 @@
     "decoDesc": "Une des armes fabriquées dans les fourneaux du fort Forgefane. La poignée a été produite grâce à un procédé de tréfilage spécial afin d'améliorer sa tenue et son amortissement. La lame elle-même a été forgée à partir d'un minerai rare extrait dans les terres sauvages.",
     "skills": [
       {
-        "name": "Trait principal accru [G]",
+        "name": "Trait principal [G]",
         "description": "Trait principal <@ba.vup>+{mainattr}</>."
       },
       {
-        "name": "Intensité des Arts accrue [G]",
+        "name": "Intensité des Arts [G]",
         "description": "Intensité des Arts <@ba.vup>+{physpell:0}</>."
       },
       {
@@ -1277,11 +1315,11 @@
     "decoDesc": "Une arme de qualité produite par les spadamanciens de Hongshan, et aussi la seule qu'ils aient produite qui a été ne serait-ce qu'un peu populaire. On en trouve de nombreuses copies dans les terres sauvages.",
     "skills": [
       {
-        "name": "Agilité accrue [M]",
+        "name": "Agilité [M]",
         "description": "Agilité <@ba.vup>+{agi}</>."
       },
       {
-        "name": "DÉG physiques accrus [M]",
+        "name": "DÉG physiques [M]",
         "description": "DÉG physiques infligés <@ba.vup>+{phydam:0.0%}</>."
       },
       {
@@ -1296,12 +1334,12 @@
     "decoDesc": "Une arme sortie des fourneaux de fort Forgefane. Elle a été reforgée de nombreuses fois, mais son tranchant reste imprégné d'une forte sensation de domination.",
     "skills": [
       {
-        "name": "Volonté accrue [G]",
+        "name": "Volonté [G]",
         "description": "Volonté <@ba.vup>+{will}</>."
       },
       {
-        "name": "ATQ accrue [G]",
-        "description": "Attaque <@ba.vup>+{atk:0.0%}</>."
+        "name": "ATQ [G]",
+        "description": "ATQ <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Flux : Réincarnation",
@@ -1315,11 +1353,11 @@
     "decoDesc": "L'une des armes forgées au fort Forgefane. Cette pièce raffinée et élégante est généralement utilisée par l'Ordre du serment d'acier lors de cérémonies plutôt qu'au combat. Il n'en reste pas moins que la lame a subi plusieurs phases de polissage, ce qui lui confère un tranchant exceptionnel.",
     "skills": [
       {
-        "name": "Agilité accrue [G]",
+        "name": "Agilité [G]",
         "description": "Agilité <@ba.vup>+{agi}</>."
       },
       {
-        "name": "Taux de coups critiques accru [G]",
+        "name": "Taux de coups critiques [G]",
         "description": "Taux de coups critiques <@ba.vup>+{crirate:0.0%}</>."
       },
       {
@@ -1334,12 +1372,12 @@
     "decoDesc": "Une épée aussi affûtée qu'un rasoir, née dans les terres sauvages. Chaque forgeron y applique ses propres décorations.",
     "skills": [
       {
-        "name": "Agilité accrue [M]",
+        "name": "Agilité [M]",
         "description": "Agilité <@ba.vup>+{agi}</>."
       },
       {
-        "name": "ATQ accrue [M]",
-        "description": "Attaque <@ba.vup>+{atk:0.0%}</>."
+        "name": "ATQ [M]",
+        "description": "ATQ <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Altération : Interrogation sincère",
@@ -1353,12 +1391,12 @@
     "decoDesc": "Une arme standard produite par les Industries Endfield. Elle a été conçue par l'équipe des prototypes créatifs, qui a été fondée par Opéro, ingénieur en chef de l'arsenal. Sa garde possède des modules auxiliaires optionnels.",
     "skills": [
       {
-        "name": "Agilité accrue [M]",
+        "name": "Agilité [M]",
         "description": "Agilité <@ba.vup>+{agi}</>."
       },
       {
-        "name": "ATQ accrue [M]",
-        "description": "Attaque <@ba.vup>+{atk:0.0%}</>."
+        "name": "ATQ [M]",
+        "description": "ATQ <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Flux : Avantage effréné",
@@ -1372,11 +1410,11 @@
     "decoDesc": "Le produit phare de la série Explorateurs du monde sauvage du centre d'assistance de Marchenord. Son approche pratique et sa portabilité en font un indispensable pour les explorateurs et pêcheurs amateurs.",
     "skills": [
       {
-        "name": "Force accrue [M]",
+        "name": "Force [M]",
         "description": "Force <@ba.vup>+{str}</>."
       },
       {
-        "name": "DÉG cryogéniques accrus [M]",
+        "name": "DÉG cryogéniques [M]",
         "description": "DÉG cryogéniques infligés <@ba.vup>+{crystdam:0.0%}</>."
       },
       {
@@ -1391,12 +1429,12 @@
     "decoDesc": "Une arme de qualité produite par les Industries Endfield. Elle renferme plusieurs innovations, notamment l'utilisation d'un matériau expérimental à base d'originium pour la lame afin de lui conférer une excellente conductivité énergétique.",
     "skills": [
       {
-        "name": "Agilité accrue [G]",
+        "name": "Agilité [G]",
         "description": "Agilité <@ba.vup>+{agi}</>."
       },
       {
-        "name": "ATQ accrue [G]",
-        "description": "Attaque <@ba.vup>+{atk:0.0%}</>."
+        "name": "ATQ [G]",
+        "description": "ATQ <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Altération : Souhait de longue date",
@@ -1410,11 +1448,11 @@
     "decoDesc": "Une épée très prisée produite par les Industries RAYTHEAN. Un grand nombre de ces épées ont été importées clandestinement dans des régions situées hors de la Ceinture civilisée, car les Brise-Terres les apprécient tout particulièrement. De nombreux utilisateurs apportent également des modifications spécifiques à cette arme.",
     "skills": [
       {
-        "name": "Agilité accrue [G]",
+        "name": "Agilité [G]",
         "description": "Agilité <@ba.vup>+{agi}</>."
       },
       {
-        "name": "Taux de coups critiques accru [G]",
+        "name": "Taux de coups critiques [G]",
         "description": "Taux de coups critiques <@ba.vup>+{crirate:0.0%}</>."
       },
       {
@@ -1425,15 +1463,15 @@
   },
   "farsight": {
     "name": "Farsight",
-    "description": "Cette terre n'a peut-être rien de spécial. \nLes mêmes vieilles plaines, le même vieil air et la même vieille mer. Le ciel est différent, par contre. Il y a une énorme planète qu'on peut voir clairement, même en plein jour. Et il n'y a pas de lunes jumelles la nuit. Mais la vie n'est pas très différente de ce qu'elle était sur Terra. \nEst-ce que c'est une bonne chose ? Je ne sais pas. \nJe suis là à cause de l'enrôlement obligatoire général, mais ça paye et il y a à manger. Rien d'autre. \n\nMais le temps passant, j'ai commencé à en ressentir les différences. \nLes Terres étaient exemptes d'originium. Bon sang, même les frontières étaient une vaste blague. Je pensais que c'était une sorte de travail de pionnier colombien, où les gens traînent toute la journée dans les terres sauvages pour trouver quelque chose à manger. Mais aujourd'hui, quelqu'un qui avait l'air d'appartenir à l'aristocratie leithanienne m'a demandé, à moi, un travailleur forcé, de lui expliquer les spécificités de certaines pièces de machines et la façon d'utiliser ces machines. \nEt ce cher noble ne plaisantait pas. \nUrsus, leithanien, colombien... Toutes ces étiquettes différentes sont maintenant réduites aux idées d'équipier, d'ami et de part'naire. \nJ'aime bien la façon dont les choses ont tourné, c'est super ! Mais comment c'est arrivé ? Je ne sais pas vraiment. \nJ'ai posé quelques questions autour de moi et ils n'y comprennent pas grand-chose non plus. Alors je n'ai pas eu de réponse pendant un bon moment, jusqu'à ce que... \n\n« C'est quoi, Endfield ? » \nJ'ai posé cette question à l'immense chef d'équipe sarkaz quand je me suis présenté au travail pour la première fois. End-field, ça me semblait un peu contre-indiqué comme nom pour une entreprise qui travaille dans les Confins. \nIl n'a rien dit. À la place, il nous a emmenés à la proue du vaisseau qui servait de QG temporaire à Endfield. Et il nous a dit de bien regarder la planète et le monde. \nLa planète et le monde... On n'avait quasiment jamais utilisé ces termes, avant. \nLe chef d'équipe a vu ma confusion et il a souri. Il m'a dit que c'était ça, la signification d'Endfield. \n« Ça veut dire qu'on doit utiliser de nouveaux mots qui sonnent bien ? » \n« Ça veut dire qu'on a laissé notre passé sur Terra. » \n\nIl avait peut-être raison. \nAvant qu'on décide de traverser le Portail cosmique pour arriver ici, moi et tous les autres, on avait laissé quelque chose sur Terra, pour toujours. \nLes gens qui luttaient dans les puits de mines, ceux qui parcouraient les terres sauvages, ceux qui travaillaient dans les villes, ceux qui faisaient des concerts dans les tours... On était tous à bord de ce vaisseau, épaule contre épaule, prêts à bâtir un avenir ensemble. \nLe destin nous avait laissé le choix. On a choisi de faire différemment du passé pour créer un nouveau mode de vie. \n\nÀ quoi ressemblera ce monde ? Aucune idée. \nParce qu'on est en train de le construire. \nDes bâtiments vont se dresser et des cultures vont sortir de terre. \nVoilà notre réponse retentissante, le monde qu'on est en train de construire.",
+    "description": "Cette terre n'a peut-être rien de spécial. \nLes mêmes vieilles plaines, le même vieil air et la même vieille mer. Le ciel est différent, par contre. Il y a une énorme planète qu'on peut voir clairement, même en plein jour. Et il n'y a pas de lunes jumelles la nuit. Mais la vie n'est pas très différente de ce qu'elle était sur Terra. \nEst-ce que c'est une bonne chose ? Je ne sais pas. \nJe suis là à cause de la mobilisation générale, mais ça paye et il y a à manger. Rien d'autre. \n\nMais le temps passant, j'ai commencé à ressentir les différences. \nLes Terres étaient exemptes d'originium. Bon sang, même les frontières étaient une vaste blague. Je pensais que c'était une sorte de travail de pionnier colombien, où les gens traînent toute la journée dans les terres sauvages pour trouver quelque chose à manger. Mais aujourd'hui, quelqu'un qui avait l'air d'appartenir à l'aristocratie leithanienne m'a demandé, à moi, un travailleur forcé, de lui expliquer les spécificités de certaines pièces de machines et la façon d'utiliser ces machines. \nEt ce cher noble ne plaisantait pas. \nUrsusien, leithanien, colombien... Toutes ces étiquettes différentes sont maintenant réduites aux idées d'équipier, d'ami et de partenaire. \nJ'aime bien la façon dont les choses ont tourné, c'est super ! Mais comment c'est arrivé ? Je ne sais pas vraiment. \nJ'ai posé quelques questions autour de moi et ils n'y comprennent pas grand-chose non plus. Alors, je n'ai pas eu de réponse pendant un bon moment, jusqu'à ce que... \n\n« C'est quoi, Endfield ? » \nJ'ai posé cette question à l'immense chef d'équipe sarkaz quand je me suis présenté au travail pour la première fois. End-field, ça me semblait un peu contre-indiqué comme nom pour une entreprise qui travaille dans les Confins. \nIl n'a rien dit. À la place, il nous a emmenés à la proue du vaisseau qui servait de QG temporaire à Endfield. Et il nous a dit de bien regarder la planète et le monde. \nLa planète et le monde... On n'avait quasiment jamais utilisé ces termes, avant. \nLe chef d'équipe a vu ma confusion et il a souri. Il m'a dit que c'était ça, la signification d'Endfield. \n« Ça veut dire qu'on doit utiliser de nouveaux mots qui sonnent bien ? » \n« Ça veut dire qu'on a laissé notre passé sur Terra. » \n\nIl avait peut-être raison. \nAvant qu'on décide de traverser le Portail cosmique pour arriver ici, moi et tous les autres, on avait laissé quelque chose sur Terra, pour toujours. \nLes gens qui luttaient dans les puits de mine, ceux qui parcouraient les terres sauvages, ceux qui travaillaient dans les villes, ceux qui faisaient des concerts dans les tours... On était tous à bord de ce vaisseau, épaule contre épaule, prêts à bâtir un avenir ensemble. \nLe destin nous avait laissé le choix. On a choisi de faire différemment du passé pour créer un nouveau mode de vie. \n\nÀ quoi ressemblera ce monde ? Aucune idée. \nParce qu'on est en train de le construire. \nDes bâtiments vont se dresser et des cultures vont sortir de terre. \nVoilà notre réponse retentissante, le monde qu'on est en train de construire.",
     "decoDesc": "L'un des nombreux prototypes créés par les Industries Endfield pour tester des spécifications. L'objet, créé à partir de matériaux de qualité, devait servir d'arme universelle. Il porte l'espoir des ingénieurs de l'arsenal des Industries Endfield.",
     "skills": [
       {
-        "name": "Trait principal accru [G]",
+        "name": "Trait principal [G]",
         "description": "Trait principal <@ba.vup>+{mainattr}</>."
       },
       {
-        "name": "Intensité des Arts accrue [G]",
+        "name": "Intensité des Arts [G]",
         "description": "Intensité des Arts <@ba.vup>+{physpell:0}</>."
       },
       {

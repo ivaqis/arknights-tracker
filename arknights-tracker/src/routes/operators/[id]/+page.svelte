@@ -337,14 +337,36 @@
             { once: true },
         );
 
-        const handleAudioError = () => {
+        let hasHandledError = false;
+        const handleAudioError = async () => {
+            if (hasHandledError) return;
+            hasHandledError = true;
+
             currentPlayingVoId = null;
             currentAudio = null;
             isAudioLoading = false;
+
+            let is404 = false;
+            try {
+                const res = await fetch(audioUrl, { method: "HEAD" });
+                if (res.status === 404) {
+                    is404 = true;
+                }
+            } catch (e) {
+                try {
+                    const res = await fetch(audioUrl, { method: "GET" });
+                    if (res.status === 404) {
+                        is404 = true;
+                    }
+                } catch (_) {}
+            }
+
             try {
                 addNotification(
                     "error",
-                    $t("audio_player.playback_error"),
+                    is404
+                        ? $t("audio_player.not_found")
+                        : $t("audio_player.playback_error"),
                     {
                         action: {
                             text: $t("audio_player.open_raw"),
@@ -354,6 +376,8 @@
                 );
             } catch (e) {}
         };
+
+        audio.addEventListener("error", handleAudioError);
 
         audio.addEventListener("ended", () => {
             currentPlayingVoId = null;

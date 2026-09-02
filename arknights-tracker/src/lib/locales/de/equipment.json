@@ -563,6 +563,18 @@
     "decoDesc": "Ein Set Kampfausrüstung, das von Endfield Industries für das Training von Operatoren entwickelt wurde. Die Reihe ist aufgrund des hervorragenden Preis-Leistungs-Verhältnisses wirklich gut angenommen worden. \n„Kann ich bitte noch ein paar davon haben? Sie eignen sich wirklich gut als Baumaterial.“",
     "setBonus": "3-Stück-Setbonus: Der verursachte SDN des Trägers erhöht sich für alle Arten von SDN um <@ba.vup>+{dmg_up:0%}</>, <@ba.vup>{1-dmg_taken_down:0%}</> SDN-Reduzierung für alle Arten von SDN und Ultimative Effizienzsteigerung <@ba.vup>+{ultimate_gain_up:0%}</>."
   },
+  "item_equip_t4_parts_wuling00_body_04": {
+    "name": "AIK-Sturmangriff-Einsatzrüstung",
+    "description": "Dieses Ausrüstungsteil wurde von Endfield Industries eigenständig entworfen und von der AIK-Fabrik zusammengesetzt. Es verbessert die Kampffertigkeiten seines Trägers.",
+    "decoDesc": "Ein Set Kampfausrüstung, das von Endfield Industries für das Training von Operatoren entwickelt wurde. Die Reihe ist aufgrund des hervorragenden Preis-Leistungs-Verhältnisses wirklich gut angenommen worden. \n„Robuster. Schwerer. Schärfer.“",
+    "setBonus": "3-Stück-Setbonus: Der verursachte SDN des Trägers erhöht sich für alle Arten von SDN um <@ba.vup>+{dmg_up:0%}</>, <@ba.vup>{1-dmg_taken_down:0%}</> SDN-Reduzierung für alle Arten von SDN und Ultimative Effizienzsteigerung <@ba.vup>+{ultimate_gain_up:0%}</>."
+  },
+  "item_equip_t4_parts_wuling00_body_05": {
+    "name": "AIK-Einsatzrüstung für Sanitäter",
+    "description": "Dieses Ausrüstungsteil wurde von Endfield Industries eigenständig entworfen und von der AIK-Fabrik zusammengesetzt. Es verbessert die Kampffertigkeiten seines Trägers.",
+    "decoDesc": "Ein Set Kampfausrüstung, das von Endfield Industries für das Training von Operatoren entwickelt wurde. Die Reihe ist aufgrund des hervorragenden Preis-Leistungs-Verhältnisses wirklich gut angenommen worden. \nDie Standard-AIK-Einsatzausrüstung kann für die bessere Überwachung der Vitalfunktionen des Trägers mit medizinischen Modulanschlüssen ausgestattet werden.",
+    "setBonus": "3-Stück-Setbonus: Der verursachte SDN des Trägers erhöht sich für alle Arten von SDN um <@ba.vup>+{dmg_up:0%}</>, <@ba.vup>{1-dmg_taken_down:0%}</> SDN-Reduzierung für alle Arten von SDN und Ultimative Effizienzsteigerung <@ba.vup>+{ultimate_gain_up:0%}</>."
+  },
   "item_equip_t4_parts_wuling00_edc_01": {
     "name": "AIK-Einsatzmachete",
     "description": "Dieses Ausrüstungsteil wurde von Endfield Industries eigenständig entworfen und mit dem AIK zusammengesetzt. Es verbessert die Kampffertigkeiten seines Trägers.",
@@ -581,6 +593,18 @@
     "decoDesc": "Ein Set Kampfausrüstung, das von Endfield Industries für das Training von Operatoren entwickelt wurde. Die Reihe ist aufgrund des hervorragenden Preis-Leistungs-Verhältnisses wirklich gut angenommen worden. \n„Ich freue mich auf neue Kampfeinsätze, wie andere Leute sich auf den nächsten Sonnenaufgang freuen.“",
     "setBonus": "3-Stück-Setbonus: Der verursachte SDN des Trägers erhöht sich für alle Arten von SDN um <@ba.vup>+{dmg_up:0%}</>, <@ba.vup>{1-dmg_taken_down:0%}</> SDN-Reduzierung für alle Arten von SDN und Ultimative Effizienzsteigerung <@ba.vup>+{ultimate_gain_up:0%}</>."
   },
+  "item_equip_t4_parts_wuling00_edc_04": {
+    "name": "AIK-Sturmangriff-Einsatzdruckmesser",
+    "description": "Dieses Ausrüstungsteil wurde von Endfield Industries eigenständig entworfen und von der AIK-Fabrik zusammengesetzt. Es verbessert die Kampffertigkeiten seines Trägers.",
+    "decoDesc": "Ein Set Kampfausrüstung, das von Endfield Industries für das Training von Operatoren entwickelt wurde. Die Reihe ist aufgrund des hervorragenden Preis-Leistungs-Verhältnisses wirklich gut angenommen worden. \nDer Griff und die Klinge dieses Druckmessers wurden zum Wohle des Handgelenks des Trägers angepasst und angeglichen, um schnellem Ermüden vorzukommen.",
+    "setBonus": "3-Stück-Setbonus: Der verursachte SDN des Trägers erhöht sich für alle Arten von SDN um <@ba.vup>+{dmg_up:0%}</>, <@ba.vup>{1-dmg_taken_down:0%}</> SDN-Reduzierung für alle Arten von SDN und Ultimative Effizienzsteigerung <@ba.vup>+{ultimate_gain_up:0%}</>."
+  },
+  "item_equip_t4_parts_wuling00_edc_05": {
+    "name": "AIK-Einsatz-Powerbank",
+    "description": "Dieses Ausrüstungsteil wurde von Endfield Industries eigenständig entworfen und von der AIK-Fabrik zusammengesetzt. Es verbessert die Kampffertigkeiten seines Trägers.",
+    "decoDesc": "Ein Set Kampfausrüstung, das von Endfield Industries für das Training von Operatoren entwickelt wurde. Die Reihe ist aufgrund des hervorragenden Preis-Leistungs-Verhältnisses wirklich gut angenommen worden. \nJeder sieht, dass diese Powerbank viel kleiner und robuster ist als die Batterien, die auf den Transportbändern der AIK-Fabrik entlangrumpeln.",
+    "setBonus": "3-Stück-Setbonus: Der verursachte SDN des Trägers erhöht sich für alle Arten von SDN um <@ba.vup>+{dmg_up:0%}</>, <@ba.vup>{1-dmg_taken_down:0%}</> SDN-Reduzierung für alle Arten von SDN und Ultimative Effizienzsteigerung <@ba.vup>+{ultimate_gain_up:0%}</>."
+  },
   "item_equip_t4_parts_wuling00_hand_01": {
     "name": "AIK-Einsatzhandschuhe",
     "description": "Dieses Ausrüstungsteil wurde von Endfield Industries eigenständig entworfen und mit dem AIK zusammengesetzt. Es verbessert die Kampffertigkeiten seines Trägers.",
@@ -596,7 +620,19 @@
   "item_equip_t4_parts_wuling00_hand_03": {
     "name": "AIK-Einsatzwickel",
     "description": "Dieses Ausrüstungsteil wurde von Endfield Industries eigenständig entworfen und mit dem AIK zusammengesetzt. Es verbessert die Kampffertigkeiten seines Trägers.",
-    "decoDesc": "Ein Set Kampfausrüstung, das von Endfield Industries für das Training von Operatoren entwickelt wurde. Die Reihe ist aufgrund des hervorragenden Preis-Leistungs-Verhältnisses wirklich gut angenommen worden. \nSpezielle Schutzausrüstung für die Hände. Diese Ausrüstung ist für Operatoren gedacht, die im Kampf komplexe Maschinen bedienen müssen.",
+    "decoDesc": "Ein Set Kampfausrüstung, das von Endfield Industries für das Training von Operatoren entwickelt wurde. Die Reihe ist aufgrund des hervorragenden Preis-Leistungs-Verhältnisses wirklich gut angenommen worden. \nSpezielle Schutzausrüstung für die Hände. Diese Ausrüstung ist für Operatoren gedacht, die auf dem Schlachtfeld komplexe Maschinen bedienen müssen.",
+    "setBonus": "3-Stück-Setbonus: Der verursachte SDN des Trägers erhöht sich für alle Arten von SDN um <@ba.vup>+{dmg_up:0%}</>, <@ba.vup>{1-dmg_taken_down:0%}</> SDN-Reduzierung für alle Arten von SDN und Ultimative Effizienzsteigerung <@ba.vup>+{ultimate_gain_up:0%}</>."
+  },
+  "item_equip_t4_parts_wuling00_hand_04": {
+    "name": "AIK-Sturmangriff-Einsatzhandschuhe",
+    "description": "Dieses Ausrüstungsteil wurde von Endfield Industries eigenständig entworfen und von der AIK-Fabrik zusammengesetzt. Es verbessert die Kampffertigkeiten seines Trägers.",
+    "decoDesc": "Ein Set Kampfausrüstung, das von Endfield Industries für das Training von Operatoren entwickelt wurde. Die Reihe ist aufgrund des hervorragenden Preis-Leistungs-Verhältnisses wirklich gut angenommen worden. \nEin schlankeres Design mit einem Rundum-Montagesystem für Waffen. Der Träger muss im Kampf nicht mehr befürchten, eine Waffe zu verlieren.",
+    "setBonus": "3-Stück-Setbonus: Der verursachte SDN des Trägers erhöht sich für alle Arten von SDN um <@ba.vup>+{dmg_up:0%}</>, <@ba.vup>{1-dmg_taken_down:0%}</> SDN-Reduzierung für alle Arten von SDN und Ultimative Effizienzsteigerung <@ba.vup>+{ultimate_gain_up:0%}</>."
+  },
+  "item_equip_t4_parts_wuling00_hand_05": {
+    "name": "AIK-Einsatz-Handschuhe für Sanitäter",
+    "description": "Dieses Ausrüstungsteil wurde von Endfield Industries eigenständig entworfen und von der AIK-Fabrik zusammengesetzt. Es verbessert die Kampffertigkeiten seines Trägers.",
+    "decoDesc": "Ein Set Kampfausrüstung, das von Endfield Industries für das Training von Operatoren entwickelt wurde. Die Reihe ist aufgrund des hervorragenden Preis-Leistungs-Verhältnisses wirklich gut angenommen worden. \n„Behandlung abgeschlossen? Das ist alles? Ein Schlag aufs Handgelenk …? Hey. Warum hast du eine riesige Spritze am Handschuh?“",
     "setBonus": "3-Stück-Setbonus: Der verursachte SDN des Trägers erhöht sich für alle Arten von SDN um <@ba.vup>+{dmg_up:0%}</>, <@ba.vup>{1-dmg_taken_down:0%}</> SDN-Reduzierung für alle Arten von SDN und Ultimative Effizienzsteigerung <@ba.vup>+{ultimate_gain_up:0%}</>."
   },
   "item_equip_t4_parts_wuling01_body_01": {
@@ -650,31 +686,31 @@
   "item_equip_t4_parts_wuling02_body_01": {
     "name": "Schwere Rissforscher-Rüstung",
     "description": "Dieses Ausrüstungsteil wurde von den Hongshan-Schwertkämpfern entworfen und mit der AIK-Fabrik zusammengesetzt. Es kann die Kampffertigkeiten seines Trägers verbessern.",
-    "decoDesc": "Die Schwertkämpfer-Behörde hat diese Ausrüstung speziell für Kampftrupps entworfen, die häufig Missionen in gefährlichen Umgebungen ausführen. \n„Für die Reise zum großen Riss legte ich eine Rüstung aus Xiranit-Jade an.“",
+    "decoDesc": "Die Schwertkämpfer-Behörde hat diese Ausrüstung speziell für Kampftrupps entworfen, die häufig Missionen in gefährlichen Umgebungen ausführen. \n„Ich erkunde den großen Riss mit einer schützenden Rüstung aus Jade.“",
     "setBonus": ""
   },
   "item_equip_t4_parts_wuling02_body_02": {
     "name": "Leichte Rissforscher-Rüstung",
     "description": "Dieses Ausrüstungsteil wurde von den Hongshan-Schwertkämpfern entworfen und mit der AIK-Fabrik zusammengesetzt. Es kann die Kampffertigkeiten seines Trägers verbessern.",
-    "decoDesc": "Die Schwertkämpfer-Behörde hat diese Ausrüstung speziell für Kampftrupps entworfen, die häufig Missionen in gefährlichen Umgebungen ausführen. \n„Der Blick in den Winter hebt Leben und Tod glasklar hervor.“",
+    "decoDesc": "Die Schwertkämpfer-Behörde hat diese Ausrüstung speziell für Kampftrupps entworfen, die häufig Missionen in gefährlichen Umgebungen ausführen. \n„Der Blick in den Winter hebt die Anzeichen des Lebens und des Todes glasklar hervor.“",
     "setBonus": ""
   },
   "item_equip_t4_parts_wuling02_edc_01": {
     "name": "Rissforscher-Rüstungsteil",
     "description": "Dieses Ausrüstungsteil wurde von den Hongshan-Schwertkämpfern entworfen und mit der AIK-Fabrik zusammengesetzt. Es kann die Kampffertigkeiten seines Trägers verbessern.",
-    "decoDesc": "Die Schwertkämpfer-Behörde hat diese Ausrüstung speziell für Kampftrupps entworfen, die häufig Missionen in gefährlichen Umgebungen ausführen. \n„Markiert den Ort meiner ewigen Ruhestätte mit Werkzeugen, die den Stein durchdringen.“",
+    "decoDesc": "Die Schwertkämpfer-Behörde hat diese Ausrüstung speziell für Kampftrupps entworfen, die häufig Missionen in gefährlichen Umgebungen ausführen. \n„Ich werde den Stein behauen und den Ort meiner ewigen Ruhestätte markieren.“",
     "setBonus": ""
   },
   "item_equip_t4_parts_wuling02_hand_01": {
     "name": "Rissforscher-Handschuhe",
     "description": "Dieses Ausrüstungsteil wurde von den Hongshan-Schwertkämpfern entworfen und mit der AIK-Fabrik zusammengesetzt. Es kann die Kampffertigkeiten seines Trägers verbessern.",
-    "decoDesc": "Die Schwertkämpfer-Behörde hat diese Ausrüstung speziell für Kampftrupps entworfen, die häufig Missionen in gefährlichen Umgebungen ausführen. \n„Das Grollen des Donners vertreibt jede Furcht, die ich empfinde.“",
+    "decoDesc": "Die Schwertkämpfer-Behörde hat diese Ausrüstung speziell für Kampftrupps entworfen, die häufig Missionen in gefährlichen Umgebungen ausführen. \n„Das Grollen des Donners vertreibt alle Furcht, die ich empfinde.“",
     "setBonus": ""
   },
   "item_equip_t4_parts_wuling02_hand_02": {
     "name": "Rissforscher-Handschutz",
     "description": "Dieses Ausrüstungsteil wurde von den Hongshan-Schwertkämpfern entworfen und mit der AIK-Fabrik zusammengesetzt. Es kann die Kampffertigkeiten seines Trägers verbessern.",
-    "decoDesc": "Die Schwertkämpfer-Behörde hat diese Ausrüstung speziell für Kampftrupps entworfen, die häufig Missionen in gefährlichen Umgebungen ausführen. \n„Das Banner ist entfaltet. Dieser Schleier soll mich zur Ruhe betten.“",
+    "decoDesc": "Die Schwertkämpfer-Behörde hat diese Ausrüstung speziell für Kampftrupps entworfen, die häufig Missionen in gefährlichen Umgebungen ausführen. \n„So entrolle ich das Kriegsbanner, das zu meinem Leichentuch werden soll, wenn ich falle.“",
     "setBonus": ""
   },
   "item_equip_t4_suit_atb01_body_01": {
@@ -917,6 +953,18 @@
     "decoDesc": "Diese Ausrüstung wurde von der Schwertkämpfer-Behörde für Truppen entworfen, die in der Nähe der Verderbnisflut im Einsatz sind. \nEine Erinnerung an die Verderbnisflut: Die Gefühlslosen Wellen haben allein die Idee des Lebens schon immer abgelehnt.",
     "setBonus": "3-Stück-Setbonus: Verursachter Fertigkeits-SDN des Trägers <@ba.vup>+{skill_dmg_up:0%}</>.\nNachdem der Träger einen Gegner mit <@ba.key>{stack_cond}</> oder mehr <#ba.spellinflict>Technikkumulierungen</> belegt hat, erhöht sich der <@ba.key>verursachte Technik-SDN</> des Trägers {duration} Sek. lang um <@ba.vup>+{spell_dmg_up:0%}</>. Dieser Effekt kann nicht kumuliert werden."
   },
+  "item_equip_t4_suit_burst01_body_02": {
+    "name": "Leichte Tiden-Rüstung S1",
+    "description": "Dieses Ausrüstungsteil wurde von den Hongshan-Schwertkämpfern entworfen und von der AIK-Fabrik zusammengesetzt. Es kann die Kampffertigkeiten seines Trägers verbessern.",
+    "decoDesc": "Diese Ausrüstung wurde von der Schwertkämpfer-Behörde für Truppen entworfen, die in der Nähe der Verderbnisflut im Einsatz sind. \nEine Erinnerung an die Verderbnisflut: Die Gefühlslosen Wellen haben allein die Idee des Lebens schon immer abgelehnt.",
+    "setBonus": "3-Stück-Setbonus: Verursachter Fertigkeits-SDN des Trägers <@ba.vup>+{skill_dmg_up:0%}</>.\nNachdem der Träger einen Gegner mit <@ba.key>{stack_cond}</> oder mehr <#ba.spellinflict>Technikkumulierungen</> belegt hat, erhöht sich der <@ba.key>verursachte Technik-SDN</> des Trägers {duration} Sek. lang um <@ba.vup>+{spell_dmg_up:0%}</>. Dieser Effekt kann nicht kumuliert werden."
+  },
+  "item_equip_t4_suit_burst01_body_03": {
+    "name": "Schwere Wellengang-Rüstung",
+    "description": "Dieses Ausrüstungsteil wurde von den Hongshan-Schwertkämpfern entworfen und von der AIK-Fabrik zusammengesetzt. Es kann die Kampffertigkeiten seines Trägers verbessern.",
+    "decoDesc": "Diese Ausrüstung wurde von der Schwertkämpfer-Behörde für Truppen entworfen, die in der Nähe der Verderbnisflut im Einsatz sind. \nDamit wird die Verderbnisflut spöttisch herausgefordert: Wir lassen uns von ihr nicht mehr länger am Vorwärtskommen hindern.",
+    "setBonus": "3-Stück-Setbonus: Verursachter Fertigkeits-SDN des Trägers <@ba.vup>+{skill_dmg_up:0%}</>.\nNachdem der Träger einen Gegner mit <@ba.key>{stack_cond}</> oder mehr <#ba.spellinflict>Technikkumulierungen</> belegt hat, erhöht sich der <@ba.key>verursachte Technik-SDN</> des Trägers {duration} Sek. lang um <@ba.vup>+{spell_dmg_up:0%}</>. Dieser Effekt kann nicht kumuliert werden."
+  },
   "item_equip_t4_suit_burst01_edc_01": {
     "name": "Hängefluss-Sauerstoffzylinder",
     "description": "Dieses Ausrüstungsteil wurde von den Hongshan-Schwertkämpfern entworfen und mit der AIK-Fabrik zusammengesetzt. Es kann die Kampffertigkeiten seines Trägers verbessern.",
@@ -929,10 +977,22 @@
     "decoDesc": "Diese Ausrüstung wurde von der Schwertkämpfer-Behörde für Truppen entworfen, die in der Nähe der Verderbnisflut im Einsatz sind. \nEin Einblick in die Angst, die die Verderbnisflut auslöst: Wann wird die eigentliche Katastrophe zutage treten?",
     "setBonus": "3-Stück-Setbonus: Verursachter Fertigkeits-SDN des Trägers <@ba.vup>+{skill_dmg_up:0%}</>.\nNachdem der Träger einen Gegner mit <@ba.key>{stack_cond}</> oder mehr <#ba.spellinflict>Technikkumulierungen</> belegt hat, erhöht sich der <@ba.key>verursachte Technik-SDN</> des Trägers {duration} Sek. lang um <@ba.vup>+{spell_dmg_up:0%}</>. Dieser Effekt kann nicht kumuliert werden."
   },
+  "item_equip_t4_suit_burst01_edc_03": {
+    "name": "Trüber Schneidbrenner S1",
+    "description": "Dieses Ausrüstungsteil wurde von den Hongshan-Schwertkämpfern entworfen und von der AIK-Fabrik zusammengesetzt. Es kann die Kampffertigkeiten seines Trägers verbessern.",
+    "decoDesc": "Diese Ausrüstung wurde von der Schwertkämpfer-Behörde für Truppen entworfen, die in der Nähe der Verderbnisflut im Einsatz sind. \nEin Einblick in die Angst, die die Verderbnisflut auslöst: Wann wird die eigentliche Katastrophe zutage treten?",
+    "setBonus": "3-Stück-Setbonus: Verursachter Fertigkeits-SDN des Trägers <@ba.vup>+{skill_dmg_up:0%}</>.\nNachdem der Träger einen Gegner mit <@ba.key>{stack_cond}</> oder mehr <#ba.spellinflict>Technikkumulierungen</> belegt hat, erhöht sich der <@ba.key>verursachte Technik-SDN</> des Trägers {duration} Sek. lang um <@ba.vup>+{spell_dmg_up:0%}</>. Dieser Effekt kann nicht kumuliert werden."
+  },
   "item_equip_t4_suit_burst01_hand_01": {
     "name": "Sturmflut-Fingerhandschuhe",
     "description": "Dieses Ausrüstungsteil wurde von den Hongshan-Schwertkämpfern entworfen und mit der AIK-Fabrik zusammengesetzt. Es kann die Kampffertigkeiten seines Trägers verbessern.",
     "decoDesc": "Diese Ausrüstung wurde von der Schwertkämpfer-Behörde für Truppen entworfen, die in der Nähe der Verderbnisflut im Einsatz sind. \nEine Frage bezüglich der Verderbnisflut: Brechen alte Dämme von innen heraus?",
+    "setBonus": "3-Stück-Setbonus: Verursachter Fertigkeits-SDN des Trägers <@ba.vup>+{skill_dmg_up:0%}</>.\nNachdem der Träger einen Gegner mit <@ba.key>{stack_cond}</> oder mehr <#ba.spellinflict>Technikkumulierungen</> belegt hat, erhöht sich der <@ba.key>verursachte Technik-SDN</> des Trägers {duration} Sek. lang um <@ba.vup>+{spell_dmg_up:0%}</>. Dieser Effekt kann nicht kumuliert werden."
+  },
+  "item_equip_t4_suit_burst01_hand_02": {
+    "name": "Handschuhe des Versinkens",
+    "description": "Dieses Ausrüstungsteil wurde von den Hongshan-Schwertkämpfern entworfen und von der AIK-Fabrik zusammengesetzt. Es kann die Kampffertigkeiten seines Trägers verbessern.",
+    "decoDesc": "Diese Ausrüstung wurde von der Schwertkämpfer-Behörde für Truppen entworfen, die in der Nähe der Verderbnisflut im Einsatz sind. \nEine Gelegenheit, kurz über die Verderbnisflut nachzudenken: Wohin wird die stille Zerstörung fließen …?",
     "setBonus": "3-Stück-Setbonus: Verursachter Fertigkeits-SDN des Trägers <@ba.vup>+{skill_dmg_up:0%}</>.\nNachdem der Träger einen Gegner mit <@ba.key>{stack_cond}</> oder mehr <#ba.spellinflict>Technikkumulierungen</> belegt hat, erhöht sich der <@ba.key>verursachte Technik-SDN</> des Trägers {duration} Sek. lang um <@ba.vup>+{spell_dmg_up:0%}</>. Dieser Effekt kann nicht kumuliert werden."
   },
   "item_equip_t4_suit_combo_cd01_body_01": {
@@ -1202,7 +1262,7 @@
   "item_equip_t4_suit_heal01_body_03": {
     "name": "LUCHS-Kürass-S1",
     "description": "Dieses Ausrüstungsteil wurde von Rhodes Island entworfen und mit der AIK-Fabrik zusammengesetzt. Es verbessert die Kampffertigkeiten seines Trägers.",
-    "decoDesc": "Die vom Sanitätspersonal bevorzugte Ausrüstung. Man bezeichnet Kämpfer im LUCHS-Kürass auch als „Wandelnde Medikamentenkoffer“. Diese Lebensretter verstauen oft so viele medizinische Notfallvorräte in ihrem Kürass, wie sie tragen können.",
+    "decoDesc": "Die vom Sanitätspersonal bevorzugte Ausrüstung. \nMan bezeichnet Kämpfer im LUCHS-Kürass auch als „Wandelnde Medikamentenkoffer“. Diese Lebensretter verstauen oft so viele medizinische Notfallvorräte in ihrem Kürass, wie sie tragen können.",
     "setBonus": "3-Stück-Setbonus: LP-Behandlungseffizienz des Trägers <@ba.vup>+{heal_up:0%}</>. \nNachdem der Träger LP bei einem verbündeten Ziel wiederhergestellt hat, erhält das Ziel zusätzlich {duration} Sek. lang <@ba.vup>{1-dmg_taken_down:0%}</> SDN-Reduzierung für alle Arten von SDN. Übersteigt der Behandlungseffekt die max. LP des Ziels, erhält dieses stattdessen <@ba.vup>{1-dmg_taken_down2:0%}</> SDN-Reduzierung für alle Arten von SDN. Diese Effekt können nicht kumuliert werden."
   },
   "item_equip_t4_suit_heal01_edc_01": {
@@ -1323,43 +1383,43 @@
     "name": "Æthertech-Panzerung",
     "description": "Dieses Ausrüstungsteil wurde vom Mobilen Æthertech-Labor entworfen und mit der AIK-Fabrik zusammengesetzt. Es kann die Kampffertigkeiten seines Trägers verbessern.",
     "decoDesc": "Ein Prototyp für leichte Schutzausrüstung. \n„Leute aus Hongshan vergleichen leichte Gegenstände oft mit Federn. Die Antischwerkrafttechnologie, die unsere Labore zur Verfügung stellen, steht kurz vor der Perfektion.“",
-    "setBonus": "3-Stück-Setbonus: ANG des Trägers <@ba.vup>+{atk_up:0%}</>. \nNachdem der Träger ein Ziel mit <#ba.noguard>Anfälligkeit</> belegt hat, erhält er <@ba.pd>Physischen SDN</> <@ba.vup>+{phy_dmg_up:0%}</> für {duration} Sek. Dieser Effekt kann {max_stack:0}-mal kumuliert werden. Wenn ein Ziel bereits {stack_cond:0} Kumulierung(en) von <#ba.noguard>Anfälligkeit</> aufweist, erhält der Träger zusätzlich <@ba.vup>+{phy_dmg_up2:0%}</> Physischen SDN für {duration2} Sek. Dieser Effekt kann nicht kumuliert werden."
+    "setBonus": "3-Stück-Setbonus: ANG des Trägers <@ba.vup>+{atk_up:0%}</>.\nNachdem der Träger ein Ziel mit <#ba.noguard>Anfälligkeit</> belegt hat, erhält er für {duration} Sek. <@ba.pd>Verursachter Physischer SDN</> <@ba.vup>+{phy_dmg_up:0%}</>. Dieser Effekt kann {max_stack:0}-mal kumuliert werden. Wenn ein Ziel bereits {stack_cond:0} Kumulierung(en) von <#ba.noguard>Anfälligkeit</> aufweist, erhält der Träger zusätzlich für {duration2} Sek. <@ba.pd>Verursachter Physischer SDN</> <@ba.vup>+{phy_dmg_up2:0%}</>. Dieser Effekt kann nicht kumuliert werden."
   },
   "item_equip_t4_suit_poise01_edc_01": {
     "name": "Æthertech-Analyseband",
     "description": "Dieses Ausrüstungsteil wurde vom Mobilen Æthertech-Labor entworfen und mit der AIK-Fabrik zusammengesetzt. Es kann die Kampffertigkeiten seines Trägers verbessern.",
     "decoDesc": "Ein Prototyp für leichte Schutzausrüstung. \n„Wir erforschen Möglichkeiten, Anzeichen für sich ausbreitende Verderbnis digital zu analysieren. Probanden für Produkttests sind willkommen.“",
-    "setBonus": "3-Stück-Setbonus: ANG des Trägers <@ba.vup>+{atk_up:0%}</>. \nNachdem der Träger ein Ziel mit <#ba.noguard>Anfälligkeit</> belegt hat, erhält er <@ba.pd>Physischen SDN</> <@ba.vup>+{phy_dmg_up:0%}</> für {duration} Sek. Dieser Effekt kann {max_stack:0}-mal kumuliert werden. Wenn ein Ziel bereits {stack_cond:0} Kumulierung(en) von <#ba.noguard>Anfälligkeit</> aufweist, erhält der Träger zusätzlich <@ba.vup>+{phy_dmg_up2:0%}</> Physischen SDN für {duration2} Sek. Dieser Effekt kann nicht kumuliert werden."
+    "setBonus": "3-Stück-Setbonus: ANG des Trägers <@ba.vup>+{atk_up:0%}</>.\nNachdem der Träger ein Ziel mit <#ba.noguard>Anfälligkeit</> belegt hat, erhält er für {duration} Sek. <@ba.pd>Verursachter Physischer SDN</> <@ba.vup>+{phy_dmg_up:0%}</>. Dieser Effekt kann {max_stack:0}-mal kumuliert werden. Wenn ein Ziel bereits {stack_cond:0} Kumulierung(en) von <#ba.noguard>Anfälligkeit</> aufweist, erhält der Träger zusätzlich für {duration2} Sek. <@ba.pd>Verursachter Physischer SDN</> <@ba.vup>+{phy_dmg_up2:0%}</>. Dieser Effekt kann nicht kumuliert werden."
   },
   "item_equip_t4_suit_poise01_edc_02": {
     "name": "Æthertech-Stabilisator",
     "description": "Dieses Ausrüstungsteil wurde vom Mobilen Æthertech-Labor entworfen und mit der AIK-Fabrik zusammengesetzt. Es kann die Kampffertigkeiten seines Trägers verbessern.",
     "decoDesc": "Ein Prototyp für leichte Schutzausrüstung. \n„Lege diesen Stabilisator niemals ab, vielen Dank. Dadurch wird verhindert, dass du wie ein Luftballon davonschwebst, wenn es zu Werteschwankungen kommt.“",
-    "setBonus": "3-Stück-Setbonus: ANG des Trägers <@ba.vup>+{atk_up:0%}</>. \nNachdem der Träger ein Ziel mit <#ba.noguard>Anfälligkeit</> belegt hat, erhält er <@ba.pd>Physischen SDN</> <@ba.vup>+{phy_dmg_up:0%}</> für {duration} Sek. Dieser Effekt kann {max_stack:0}-mal kumuliert werden. Wenn ein Ziel bereits {stack_cond:0} Kumulierung(en) von <#ba.noguard>Anfälligkeit</> aufweist, erhält der Träger zusätzlich <@ba.vup>+{phy_dmg_up2:0%}</> Physischen SDN für {duration2} Sek. Dieser Effekt kann nicht kumuliert werden."
+    "setBonus": "3-Stück-Setbonus: ANG des Trägers <@ba.vup>+{atk_up:0%}</>.\nNachdem der Träger ein Ziel mit <#ba.noguard>Anfälligkeit</> belegt hat, erhält er für {duration} Sek. <@ba.pd>Verursachter Physischer SDN</> <@ba.vup>+{phy_dmg_up:0%}</>. Dieser Effekt kann {max_stack:0}-mal kumuliert werden. Wenn ein Ziel bereits {stack_cond:0} Kumulierung(en) von <#ba.noguard>Anfälligkeit</> aufweist, erhält der Träger zusätzlich für {duration2} Sek. <@ba.pd>Verursachter Physischer SDN</> <@ba.vup>+{phy_dmg_up2:0%}</>. Dieser Effekt kann nicht kumuliert werden."
   },
   "item_equip_t4_suit_poise01_edc_03": {
     "name": "Æthertech-Stabilisator S1",
     "description": "Dieses Ausrüstungsteil wurde vom Mobilen Æthertech-Labor entworfen und mit der AIK-Fabrik zusammengesetzt. Es kann die Kampffertigkeiten seines Trägers verbessern.",
     "decoDesc": "Ein Prototyp für leichte Schutzausrüstung. \n„Lege diesen Stabilisator niemals ab, vielen Dank. Dadurch wird verhindert, dass du wie ein Luftballon davonschwebst, wenn es zu Werteschwankungen kommt.“",
-    "setBonus": "3-Stück-Setbonus: ANG des Trägers <@ba.vup>+{atk_up:0%}</>. \nNachdem der Träger ein Ziel mit <#ba.noguard>Anfälligkeit</> belegt hat, erhält er <@ba.pd>Physischen SDN</> <@ba.vup>+{phy_dmg_up:0%}</> für {duration} Sek. Dieser Effekt kann {max_stack:0}-mal kumuliert werden. Wenn ein Ziel bereits {stack_cond:0} Kumulierung(en) von <#ba.noguard>Anfälligkeit</> aufweist, erhält der Träger zusätzlich <@ba.vup>+{phy_dmg_up2:0%}</> Physischen SDN für {duration2} Sek. Dieser Effekt kann nicht kumuliert werden."
+    "setBonus": "3-Stück-Setbonus: ANG des Trägers <@ba.vup>+{atk_up:0%}</>.\nNachdem der Träger ein Ziel mit <#ba.noguard>Anfälligkeit</> belegt hat, erhält er für {duration} Sek. <@ba.pd>Verursachter Physischer SDN</> <@ba.vup>+{phy_dmg_up:0%}</>. Dieser Effekt kann {max_stack:0}-mal kumuliert werden. Wenn ein Ziel bereits {stack_cond:0} Kumulierung(en) von <#ba.noguard>Anfälligkeit</> aufweist, erhält der Träger zusätzlich für {duration2} Sek. <@ba.pd>Verursachter Physischer SDN</> <@ba.vup>+{phy_dmg_up2:0%}</>. Dieser Effekt kann nicht kumuliert werden."
   },
   "item_equip_t4_suit_poise01_edc_04": {
     "name": "Æthertech-Armbanduhr",
     "description": "Dieses Ausrüstungsteil wurde vom Mobilen Æthertech-Labor entworfen und mit der AIK-Fabrik zusammengesetzt. Es kann die Kampffertigkeiten seines Trägers verbessern.",
     "decoDesc": "Ein Prototyp für leichte Schutzausrüstung. \n„Manche Nutzer schreiben unseren Produkten hämo-mutagene Effekte zu. Diese Behauptungen sind völlig aus der Luft gegriffen.“",
-    "setBonus": "3-Stück-Setbonus: ANG des Trägers <@ba.vup>+{atk_up:0%}</>. \nNachdem der Träger ein Ziel mit <#ba.noguard>Anfälligkeit</> belegt hat, erhält er <@ba.pd>Physischen SDN</> <@ba.vup>+{phy_dmg_up:0%}</> für {duration} Sek. Dieser Effekt kann {max_stack:0}-mal kumuliert werden. Wenn ein Ziel bereits {stack_cond:0} Kumulierung(en) von <#ba.noguard>Anfälligkeit</> aufweist, erhält der Träger zusätzlich <@ba.vup>+{phy_dmg_up2:0%}</> Physischen SDN für {duration2} Sek. Dieser Effekt kann nicht kumuliert werden."
+    "setBonus": "3-Stück-Setbonus: ANG des Trägers <@ba.vup>+{atk_up:0%}</>.\nNachdem der Träger ein Ziel mit <#ba.noguard>Anfälligkeit</> belegt hat, erhält er für {duration} Sek. <@ba.pd>Verursachter Physischer SDN</> <@ba.vup>+{phy_dmg_up:0%}</>. Dieser Effekt kann {max_stack:0}-mal kumuliert werden. Wenn ein Ziel bereits {stack_cond:0} Kumulierung(en) von <#ba.noguard>Anfälligkeit</> aufweist, erhält der Träger zusätzlich für {duration2} Sek. <@ba.pd>Verursachter Physischer SDN</> <@ba.vup>+{phy_dmg_up2:0%}</>. Dieser Effekt kann nicht kumuliert werden."
   },
   "item_equip_t4_suit_poise01_hand_01": {
     "name": "Æthertech-Handschuhe",
     "description": "Dieses Ausrüstungsteil wurde vom Mobilen Æthertech-Labor entworfen und mit der AIK-Fabrik zusammengesetzt. Es kann die Kampffertigkeiten seines Trägers verbessern.",
     "decoDesc": "Ein Prototyp für leichte Schutzausrüstung. \n„Tragen Sie stets eine zusätzliche Polsterung, wenn Sie unsere Produkte verwenden. Sollten Sie akustische oder visuelle Halluzinationen wahrnehmen, LEGEN Sie unsere Produkte SOFORT AB und nehmen Sie Nahrung zu sich.“",
-    "setBonus": "3-Stück-Setbonus: ANG des Trägers <@ba.vup>+{atk_up:0%}</>. \nNachdem der Träger ein Ziel mit <#ba.noguard>Anfälligkeit</> belegt hat, erhält er <@ba.pd>Physischen SDN</> <@ba.vup>+{phy_dmg_up:0%}</> für {duration} Sek. Dieser Effekt kann {max_stack:0}-mal kumuliert werden. Wenn ein Ziel bereits {stack_cond:0} Kumulierung(en) von <#ba.noguard>Anfälligkeit</> aufweist, erhält der Träger zusätzlich <@ba.vup>+{phy_dmg_up2:0%}</> Physischen SDN für {duration2} Sek. Dieser Effekt kann nicht kumuliert werden."
+    "setBonus": "3-Stück-Setbonus: ANG des Trägers <@ba.vup>+{atk_up:0%}</>.\nNachdem der Träger ein Ziel mit <#ba.noguard>Anfälligkeit</> belegt hat, erhält er für {duration} Sek. <@ba.pd>Verursachter Physischer SDN</> <@ba.vup>+{phy_dmg_up:0%}</>. Dieser Effekt kann {max_stack:0}-mal kumuliert werden. Wenn ein Ziel bereits {stack_cond:0} Kumulierung(en) von <#ba.noguard>Anfälligkeit</> aufweist, erhält der Träger zusätzlich für {duration2} Sek. <@ba.pd>Verursachter Physischer SDN</> <@ba.vup>+{phy_dmg_up2:0%}</>. Dieser Effekt kann nicht kumuliert werden."
   },
   "item_equip_t4_suit_poise01_hand_02": {
     "name": "Leichte Æthertech-Handschuhe",
     "description": "Dieses Ausrüstungsteil wurde vom Mobilen Æthertech-Labor entworfen und mit der AIK-Fabrik zusammengesetzt. Es kann die Kampffertigkeiten seines Trägers verbessern.",
     "decoDesc": "Ein Prototyp für leichte Schutzausrüstung. \n„Tragen Sie stets eine zusätzliche Polsterung, wenn Sie unsere Produkte verwenden. Sollten Sie akustische oder visuelle Halluzinationen wahrnehmen, LEGEN Sie unsere Produkte SOFORT AB und nehmen Sie Nahrung zu sich.“",
-    "setBonus": "3-Stück-Setbonus: ANG des Trägers <@ba.vup>+{atk_up:0%}</>. \nNachdem der Träger ein Ziel mit <#ba.noguard>Anfälligkeit</> belegt hat, erhält er <@ba.pd>Physischen SDN</> <@ba.vup>+{phy_dmg_up:0%}</> für {duration} Sek. Dieser Effekt kann {max_stack:0}-mal kumuliert werden. Wenn ein Ziel bereits {stack_cond:0} Kumulierung(en) von <#ba.noguard>Anfälligkeit</> aufweist, erhält der Träger zusätzlich <@ba.vup>+{phy_dmg_up2:0%}</> Physischen SDN für {duration2} Sek. Dieser Effekt kann nicht kumuliert werden."
+    "setBonus": "3-Stück-Setbonus: ANG des Trägers <@ba.vup>+{atk_up:0%}</>.\nNachdem der Träger ein Ziel mit <#ba.noguard>Anfälligkeit</> belegt hat, erhält er für {duration} Sek. <@ba.pd>Verursachter Physischer SDN</> <@ba.vup>+{phy_dmg_up:0%}</>. Dieser Effekt kann {max_stack:0}-mal kumuliert werden. Wenn ein Ziel bereits {stack_cond:0} Kumulierung(en) von <#ba.noguard>Anfälligkeit</> aufweist, erhält der Träger zusätzlich für {duration2} Sek. <@ba.pd>Verursachter Physischer SDN</> <@ba.vup>+{phy_dmg_up2:0%}</>. Dieser Effekt kann nicht kumuliert werden."
   },
   "item_equip_t4_suit_pulse_cryst01_body_01": {
     "name": "Pulser-Labs-Störungsanzug",
@@ -1391,70 +1451,100 @@
     "decoDesc": "Ausrüstung mit einem neuartigen Design. \nFür viele war es ein Rätsel, warum Endfield Industries die PSA seiner Pulser-Labs-Reihe mit besserer Thermalisolation ausgestattet hat.",
     "setBonus": "3-Stück-Setbonus: Technik-Intensität des Trägers <@ba.vup>+{phy_spell_up:0}</>. \nNachdem der Träger ein Ziel mit <#ba.conduct>Elektrifizierung</> belegt hat, erhält er <@ba.pulse>Elektrischer SDN</><@ba.vup> +{pulse_dmg_up:0%}</> für {duration} Sek. Nachdem der Träger ein Ziel mit <#ba.frozen>Erstarrung</> belegt hat, erhält er <@ba.vup>+{cryst_dmg_up:0%}</> <@ba.cryst>Kryo-SDN</> für {duration2} Sek. Dieser Effekt kann nicht kumuliert werden."
   },
+  "item_equip_t4_suit_spellburst_body_01": {
+    "name": "Tiefer-Wall-Rüstung",
+    "description": "Dieses Ausrüstungsteil wurde von Endfield Industries eigenständig entworfen und von der AIK-Fabrik zusammengesetzt. Es verbessert die Kampffertigkeiten seines Trägers.",
+    "decoDesc": "Dieses Ausrüstungsteil wurde von Endfield in Anlehnung an die Standardausrüstung der YSE entworfen. \n„Ich glaube nicht, dass wir uns der Verderbnis direkt stellen müssen …“\n„Alles klar. Höchste Zeit, unserer integrierten Verteidigung ein umfassendes Set an Stahlpanzerung zu verpassen.“",
+    "setBonus": "3-Stück-Setbonus: Verursachter Technik-SDN des Trägers <@ba.vup>+{spell_dmg_up:0%}</>.\nWenn der Träger <#ba.naturalburst>Naturexplosion</> oder <#ba.crystburst>Kryo-Explosion</> verursacht, erhält der Träger {duration} Sek lang Technik-Intensität <@ba.vup>+{phy_spell_up:0}</>. Max. Kumulierungen für diesen Effekt: {max_stack}. Die Dauer der einzelnen Kumulierungen wird separat gezählt. Der Effekt wird nur einmal alle 0,1 Sek. ausgelöst."
+  },
+  "item_equip_t4_suit_spellburst_edc_01": {
+    "name": "Tiefer-Wall-Funkgerät",
+    "description": "Dieses Ausrüstungsteil wurde von Endfield Industries eigenständig entworfen und von der AIK-Fabrik zusammengesetzt. Es verbessert die Kampffertigkeiten seines Trägers.",
+    "decoDesc": "Dieses Ausrüstungsteil wurde von Endfield in Anlehnung an die Standardausrüstung der YSE entworfen. \n„Sollten wir die Zeit für das Aufladen verkürzen …“\n„Alles klar. Für eine maximale Betriebsdauer werden wir die Protokoll-Funkgeräte mit Xiranit-Batterien ausstatten!“",
+    "setBonus": "3-Stück-Setbonus: Verursachter Technik-SDN des Trägers <@ba.vup>+{spell_dmg_up:0%}</>.\nWenn der Träger <#ba.naturalburst>Naturexplosion</> oder <#ba.crystburst>Kryo-Explosion</> verursacht, erhält der Träger {duration} Sek lang Technik-Intensität <@ba.vup>+{phy_spell_up:0}</>. Max. Kumulierungen für diesen Effekt: {max_stack}. Die Dauer der einzelnen Kumulierungen wird separat gezählt. Der Effekt wird nur einmal alle 0,1 Sek. ausgelöst."
+  },
+  "item_equip_t4_suit_spellburst_hand_01": {
+    "name": "Tiefer-Wall-Kampfhandschuhe",
+    "description": "Dieses Ausrüstungsteil wurde von Endfield Industries eigenständig entworfen und von der AIK-Fabrik zusammengesetzt. Es verbessert die Kampffertigkeiten seines Trägers.",
+    "decoDesc": "Dieses Ausrüstungsteil wurde von Endfield in Anlehnung an die Standardausrüstung der YSE entworfen. \n„Sollte die Notfallmaßnahme beinhalten …“\n„Alles klar. Verstärke die Panzerschuppen an den Fingern und sorge dafür, dass sie sich sowohl beim Angriff als auch bei der Verteidigung bewähren!“",
+    "setBonus": "3-Stück-Setbonus: Verursachter Technik-SDN des Trägers <@ba.vup>+{spell_dmg_up:0%}</>.\nWenn der Träger <#ba.naturalburst>Naturexplosion</> oder <#ba.crystburst>Kryo-Explosion</> verursacht, erhält der Träger {duration} Sek lang Technik-Intensität <@ba.vup>+{phy_spell_up:0}</>. Max. Kumulierungen für diesen Effekt: {max_stack}. Die Dauer der einzelnen Kumulierungen wird separat gezählt. Der Effekt wird nur einmal alle 0,1 Sek. ausgelöst."
+  },
   "item_equip_t4_suit_usp02_body_01": {
     "name": "Ewiges-Xiranit-Rüstung",
     "description": "Dieses Ausrüstungsteil wurde von den Hongshan-Schwertkämpfern entworfen und mit der AIK-Fabrik zusammengesetzt. Es kann die Kampffertigkeiten seines Trägers verbessern.",
     "decoDesc": "Das Vermächtnis eines „wahnsinnigen“ Tianshi. \nVielen würde es schwerfallen, eine Verbindungen zwischen Küchenarbeit und Xiranit herzustellen. Einem gewissen Bewohner Wulings kam jedoch beim Essen in einem Restaurant die Idee für einen Entwurf.",
-    "setBonus": "3-Stück-Setbonus: LP des Trägers <@ba.vup>+{hp_up}</>.\nNachdem der Träger ein Ziel mit <#ba.enhance>Verstärkung</>, <#ba.guard>Geschützt</>, <#ba.vulnerable>Empfänglichkeit</> oder <#ba.weak>Geschwächt</> belegt hat, erhalten andere Teammitglieder <@ba.vup>+{dmg_up:0%}</> auf den verursachten SDN für {duration} Sek. Dieser Effekt kann nicht kumuliert werden."
+    "setBonus": "3-Stück-Setbonus: LP des Trägers <@ba.vup>+{hp_up}</>.\nNachdem der Träger ein Ziel mit <#ba.enhance>Verstärkung</>, <#ba.guard>Schutz</>, <#ba.vulnerable>Empfänglichkeit</> oder <#ba.weak>Schwäche</> belegt hat, erhalten andere Teammitglieder <@ba.vup>+{dmg_up:0%}</> auf den verursachten SDN für {duration} Sek. Dieser Effekt kann nicht kumuliert werden."
   },
   "item_equip_t4_suit_usp02_body_03": {
     "name": "Leichte Ewiges-Xiranit-Rüstung",
     "description": "Dieses Ausrüstungsteil wurde von den Hongshan-Schwertkämpfern entworfen und mit der AIK-Fabrik zusammengesetzt. Es kann die Kampffertigkeiten seines Trägers verbessern.",
     "decoDesc": "Das Vermächtnis eines „wahnsinnigen“ Tianshi. \n„Das Ding ist eindeutig viel zu schwer. Sieh mal. Das Ding liegt brach wie die bleichen Knochen eines Viehs auf der Straße. Man muss immer mit leichtem Gepäck reisen, ja? Mit LEICHTEM Gepäck!“",
-    "setBonus": "3-Stück-Setbonus: LP des Trägers <@ba.vup>+{hp_up}</>.\nNachdem der Träger ein Ziel mit <#ba.enhance>Verstärkung</>, <#ba.guard>Geschützt</>, <#ba.vulnerable>Empfänglichkeit</> oder <#ba.weak>Geschwächt</> belegt hat, erhalten andere Teammitglieder <@ba.vup>+{dmg_up:0%}</> auf den verursachten SDN für {duration} Sek. Dieser Effekt kann nicht kumuliert werden."
+    "setBonus": "3-Stück-Setbonus: LP des Trägers <@ba.vup>+{hp_up}</>.\nNachdem der Träger ein Ziel mit <#ba.enhance>Verstärkung</>, <#ba.guard>Schutz</>, <#ba.vulnerable>Empfänglichkeit</> oder <#ba.weak>Schwäche</> belegt hat, erhalten andere Teammitglieder <@ba.vup>+{dmg_up:0%}</> auf den verursachten SDN für {duration} Sek. Dieser Effekt kann nicht kumuliert werden."
   },
   "item_equip_t4_suit_usp02_body_04": {
     "name": "Leichte Ewiges-Xiranit-Rüstung S1",
     "description": "Dieses Ausrüstungsteil wurde von den Hongshan-Schwertkämpfern entworfen und mit der AIK-Fabrik zusammengesetzt. Es kann die Kampffertigkeiten seines Trägers verbessern.",
     "decoDesc": "Das Vermächtnis eines „wahnsinnigen“ Tianshi. \n„Das Ding ist eindeutig viel zu schwer. Sieh mal. Das Ding liegt brach wie die bleichen Knochen eines Viehs auf der Straße. Man muss immer mit leichtem Gepäck reisen, ja? Mit LEICHTEM Gepäck!“",
-    "setBonus": "3-Stück-Setbonus: LP des Trägers <@ba.vup>+{hp_up}</>.\nNachdem der Träger ein Ziel mit <#ba.enhance>Verstärkung</>, <#ba.guard>Geschützt</>, <#ba.vulnerable>Empfänglichkeit</> oder <#ba.weak>Geschwächt</> belegt hat, erhalten andere Teammitglieder <@ba.vup>+{dmg_up:0%}</> auf den verursachten SDN für {duration} Sek. Dieser Effekt kann nicht kumuliert werden."
+    "setBonus": "3-Stück-Setbonus: LP des Trägers <@ba.vup>+{hp_up}</>.\nNachdem der Träger ein Ziel mit <#ba.enhance>Verstärkung</>, <#ba.guard>Schutz</>, <#ba.vulnerable>Empfänglichkeit</> oder <#ba.weak>Schwäche</> belegt hat, erhalten andere Teammitglieder <@ba.vup>+{dmg_up:0%}</> auf den verursachten SDN für {duration} Sek. Dieser Effekt kann nicht kumuliert werden."
   },
   "item_equip_t4_suit_usp02_edc_01": {
     "name": "Ewiges-Xiranit-Energiekern",
     "description": "Dieses Ausrüstungsteil wurde von den Hongshan-Schwertkämpfern entworfen und mit der AIK-Fabrik zusammengesetzt. Es kann die Kampffertigkeiten seines Trägers verbessern.",
     "decoDesc": "Das Vermächtnis eines „wahnsinnigen“ Tianshi. \n… Einmal spazierte er mit einer großen Schüssel in Bambus-Tau gekochtem Tofu die Straße hinunter und verkündete, er hätte gerade die nächste Generation der Xiranit-Gefriertechnologie erdacht.",
-    "setBonus": "3-Stück-Setbonus: LP des Trägers <@ba.vup>+{hp_up}</>.\nNachdem der Träger ein Ziel mit <#ba.enhance>Verstärkung</>, <#ba.guard>Geschützt</>, <#ba.vulnerable>Empfänglichkeit</> oder <#ba.weak>Geschwächt</> belegt hat, erhalten andere Teammitglieder <@ba.vup>+{dmg_up:0%}</> auf den verursachten SDN für {duration} Sek. Dieser Effekt kann nicht kumuliert werden."
+    "setBonus": "3-Stück-Setbonus: LP des Trägers <@ba.vup>+{hp_up}</>.\nNachdem der Träger ein Ziel mit <#ba.enhance>Verstärkung</>, <#ba.guard>Schutz</>, <#ba.vulnerable>Empfänglichkeit</> oder <#ba.weak>Schwäche</> belegt hat, erhalten andere Teammitglieder <@ba.vup>+{dmg_up:0%}</> auf den verursachten SDN für {duration} Sek. Dieser Effekt kann nicht kumuliert werden."
   },
   "item_equip_t4_suit_usp02_edc_02": {
     "name": "Ewiges-Xiranit-Energiekern S1",
     "description": "Dieses Ausrüstungsteil wurde von den Hongshan-Schwertkämpfern entworfen und mit der AIK-Fabrik zusammengesetzt. Es kann die Kampffertigkeiten seines Trägers verbessern.",
     "decoDesc": "Das Vermächtnis eines „wahnsinnigen“ Tianshi. \n… Einmal spazierte er mit einer großen Schüssel in Bambus-Tau gekochtem Tofu die Straße hinunter und verkündete, er hätte gerade die nächste Generation der Xiranit-Gefriertechnologie erdacht.",
-    "setBonus": "3-Stück-Setbonus: LP des Trägers <@ba.vup>+{hp_up}</>.\nNachdem der Träger ein Ziel mit <#ba.enhance>Verstärkung</>, <#ba.guard>Geschützt</>, <#ba.vulnerable>Empfänglichkeit</> oder <#ba.weak>Geschwächt</> belegt hat, erhalten andere Teammitglieder <@ba.vup>+{dmg_up:0%}</> auf den verursachten SDN für {duration} Sek. Dieser Effekt kann nicht kumuliert werden."
+    "setBonus": "3-Stück-Setbonus: LP des Trägers <@ba.vup>+{hp_up}</>.\nNachdem der Träger ein Ziel mit <#ba.enhance>Verstärkung</>, <#ba.guard>Schutz</>, <#ba.vulnerable>Empfänglichkeit</> oder <#ba.weak>Schwäche</> belegt hat, erhalten andere Teammitglieder <@ba.vup>+{dmg_up:0%}</> auf den verursachten SDN für {duration} Sek. Dieser Effekt kann nicht kumuliert werden."
   },
   "item_equip_t4_suit_usp02_edc_03": {
     "name": "Ewiges-Xiranit-Hilfsarm",
     "description": "Dieses Ausrüstungsteil wurde von den Hongshan-Schwertkämpfern entworfen und mit der AIK-Fabrik zusammengesetzt. Es kann die Kampffertigkeiten seines Trägers verbessern.",
     "decoDesc": "Das Vermächtnis eines „wahnsinnigen“ Tianshi. \n… Es heißt, dass der wahnsinnige Tianshi einmal im Eintopf eines Ursus-Kochs ein „sich selbst nährendes System“ gesehen haben soll. Dank dieser Inspiration konnte er die Energie-Laufzeit von Ausrüstung aus Ewigem Xiranit mehr als verdoppeln.",
-    "setBonus": "3-Stück-Setbonus: LP des Trägers <@ba.vup>+{hp_up}</>.\nNachdem der Träger ein Ziel mit <#ba.enhance>Verstärkung</>, <#ba.guard>Geschützt</>, <#ba.vulnerable>Empfänglichkeit</> oder <#ba.weak>Geschwächt</> belegt hat, erhalten andere Teammitglieder <@ba.vup>+{dmg_up:0%}</> auf den verursachten SDN für {duration} Sek. Dieser Effekt kann nicht kumuliert werden."
+    "setBonus": "3-Stück-Setbonus: LP des Trägers <@ba.vup>+{hp_up}</>.\nNachdem der Träger ein Ziel mit <#ba.enhance>Verstärkung</>, <#ba.guard>Schutz</>, <#ba.vulnerable>Empfänglichkeit</> oder <#ba.weak>Schwäche</> belegt hat, erhalten andere Teammitglieder <@ba.vup>+{dmg_up:0%}</> auf den verursachten SDN für {duration} Sek. Dieser Effekt kann nicht kumuliert werden."
   },
   "item_equip_t4_suit_usp02_edc_04": {
     "name": "Ewiges-Xiranit-Schutzteil",
     "description": "Dieses Ausrüstungsteil wurde von den Hongshan-Schwertkämpfern entworfen und mit der AIK-Fabrik zusammengesetzt. Es kann die Kampffertigkeiten seines Trägers verbessern.",
     "decoDesc": "Das Vermächtnis eines „wahnsinnigen“ Tianshi. \nAuch dem Tianshi, der den ursprünglichen Entwurf zur Produktion freigeben wollte, fiel auf, dass er etwas rudimentär ausgefallen war. Er entwarf daher kurzerhand zusätzliche Schutzteile, um die Verteidigung zu verbessern.",
-    "setBonus": "3-Stück-Setbonus: LP des Trägers <@ba.vup>+{hp_up}</>.\nNachdem der Träger ein Ziel mit <#ba.enhance>Verstärkung</>, <#ba.guard>Geschützt</>, <#ba.vulnerable>Empfänglichkeit</> oder <#ba.weak>Geschwächt</> belegt hat, erhalten andere Teammitglieder <@ba.vup>+{dmg_up:0%}</> auf den verursachten SDN für {duration} Sek. Dieser Effekt kann nicht kumuliert werden."
+    "setBonus": "3-Stück-Setbonus: LP des Trägers <@ba.vup>+{hp_up}</>.\nNachdem der Träger ein Ziel mit <#ba.enhance>Verstärkung</>, <#ba.guard>Schutz</>, <#ba.vulnerable>Empfänglichkeit</> oder <#ba.weak>Schwäche</> belegt hat, erhalten andere Teammitglieder <@ba.vup>+{dmg_up:0%}</> auf den verursachten SDN für {duration} Sek. Dieser Effekt kann nicht kumuliert werden."
+  },
+  "item_equip_t4_suit_usp02_edc_05": {
+    "name": "Ewiges-Xiranit-Schutzteil S1",
+    "description": "Dieses Ausrüstungsteil wurde von den Hongshan-Schwertkämpfern entworfen und von der AIK-Fabrik zusammengesetzt. Es kann die Kampffertigkeiten seines Trägers verbessern.",
+    "decoDesc": "Das Vermächtnis eines „wahnsinnigen“ Tianshi. \nAuch dem Tianshi, der den ursprünglichen Entwurf zur Produktion freigeben wollte, fiel auf, dass er etwas rudimentär ausgefallen war. Er entwarf daher kurzerhand zusätzliche Schutzteile, um die Verteidigung zu verbessern.",
+    "setBonus": "3-Stück-Setbonus: LP des Trägers <@ba.vup>+{hp_up}</>.\nNachdem der Träger ein Ziel mit <#ba.enhance>Verstärkung</>, <#ba.guard>Schutz</>, <#ba.vulnerable>Empfänglichkeit</> oder <#ba.weak>Schwäche</> belegt hat, erhalten andere Teammitglieder <@ba.vup>+{dmg_up:0%}</> auf den verursachten SDN für {duration} Sek. Dieser Effekt kann nicht kumuliert werden."
+  },
+  "item_equip_t4_suit_usp02_edc_06": {
+    "name": "Ewiges-Xiranit-„Schwerer Schutz“",
+    "description": "Dieses Ausrüstungsteil wurde von den Hongshan-Schwertkämpfern entworfen und von der AIK-Fabrik zusammengesetzt. Es kann die Kampffertigkeiten seines Trägers verbessern.",
+    "decoDesc": "Das Vermächtnis eines „wahnsinnigen“ Tianshi. \nFür die Ausrüstung aus Ewigem Xiranit würde das extreme Verstärken der Panzerplatten dafür sorgen, dass die Schwachstellen in puncto Verteidigung keine gravierenden Probleme mehr darstellen, die das Gesamtdesign gefährden könnten.",
+    "setBonus": "3-Stück-Setbonus: LP des Trägers <@ba.vup>+{hp_up}</>.\nNachdem der Träger ein Ziel mit <#ba.enhance>Verstärkung</>, <#ba.guard>Schutz</>, <#ba.vulnerable>Empfänglichkeit</> oder <#ba.weak>Schwäche</> belegt hat, erhalten andere Teammitglieder <@ba.vup>+{dmg_up:0%}</> auf den verursachten SDN für {duration} Sek. Dieser Effekt kann nicht kumuliert werden."
   },
   "item_equip_t4_suit_usp02_hand_01": {
     "name": "Ewiges-Xiranit-Handschuhe",
     "description": "Dieses Ausrüstungsteil wurde von den Hongshan-Schwertkämpfern entworfen und mit der AIK-Fabrik zusammengesetzt. Es kann die Kampffertigkeiten seines Trägers verbessern.",
     "decoDesc": "Das Vermächtnis eines „wahnsinnigen“ Tianshi. \n… Mehrere Tage vergingen und der wahnsinnige Tianshi begann, sich zu weigern „uninspirierende“ Nahrung zu sich zu nehmen. Als er nur noch aus Haut und Knochen bestand, verschwand er in die Wildnis, um nach „schmackhaftem Xiranit“ zu suchen.",
-    "setBonus": "3-Stück-Setbonus: LP des Trägers <@ba.vup>+{hp_up}</>.\nNachdem der Träger ein Ziel mit <#ba.enhance>Verstärkung</>, <#ba.guard>Geschützt</>, <#ba.vulnerable>Empfänglichkeit</> oder <#ba.weak>Geschwächt</> belegt hat, erhalten andere Teammitglieder <@ba.vup>+{dmg_up:0%}</> auf den verursachten SDN für {duration} Sek. Dieser Effekt kann nicht kumuliert werden."
+    "setBonus": "3-Stück-Setbonus: LP des Trägers <@ba.vup>+{hp_up}</>.\nNachdem der Träger ein Ziel mit <#ba.enhance>Verstärkung</>, <#ba.guard>Schutz</>, <#ba.vulnerable>Empfänglichkeit</> oder <#ba.weak>Schwäche</> belegt hat, erhalten andere Teammitglieder <@ba.vup>+{dmg_up:0%}</> auf den verursachten SDN für {duration} Sek. Dieser Effekt kann nicht kumuliert werden."
   },
   "item_equip_t4_suit_usp02_hand_02": {
     "name": "Ewiges-Xiranit-Handschuhe S1",
     "description": "Dieses Ausrüstungsteil wurde von den Hongshan-Schwertkämpfern entworfen und mit der AIK-Fabrik zusammengesetzt. Es kann die Kampffertigkeiten seines Trägers verbessern.",
     "decoDesc": "Das Vermächtnis eines „wahnsinnigen“ Tianshi. \n… Mehrere Tage vergingen und der wahnsinnige Tianshi begann, sich zu weigern „uninspirierende“ Nahrung zu sich zu nehmen. Als er nur noch aus Haut und Knochen bestand, verschwand er in die Wildnis, um nach „schmackhaftem Xiranit“ zu suchen.",
-    "setBonus": "3-Stück-Setbonus: LP des Trägers <@ba.vup>+{hp_up}</>.\nNachdem der Träger ein Ziel mit <#ba.enhance>Verstärkung</>, <#ba.guard>Geschützt</>, <#ba.vulnerable>Empfänglichkeit</> oder <#ba.weak>Geschwächt</> belegt hat, erhalten andere Teammitglieder <@ba.vup>+{dmg_up:0%}</> auf den verursachten SDN für {duration} Sek. Dieser Effekt kann nicht kumuliert werden."
+    "setBonus": "3-Stück-Setbonus: LP des Trägers <@ba.vup>+{hp_up}</>.\nNachdem der Träger ein Ziel mit <#ba.enhance>Verstärkung</>, <#ba.guard>Schutz</>, <#ba.vulnerable>Empfänglichkeit</> oder <#ba.weak>Schwäche</> belegt hat, erhalten andere Teammitglieder <@ba.vup>+{dmg_up:0%}</> auf den verursachten SDN für {duration} Sek. Dieser Effekt kann nicht kumuliert werden."
   },
   "item_equip_t4_suit_usp02_hand_03": {
     "name": "Ewiges-Xiranit-Wickel",
     "description": "Dieses Ausrüstungsteil wurde von den Hongshan-Schwertkämpfern entworfen und mit der AIK-Fabrik zusammengesetzt. Es kann die Kampffertigkeiten seines Trägers verbessern.",
     "decoDesc": "Das Vermächtnis eines „wahnsinnigen“ Tianshi. \n„Wer beim Riss hat Xiranit in die Fasern eingewebt? Hast du den Verstand verloren?“",
-    "setBonus": "3-Stück-Setbonus: LP des Trägers <@ba.vup>+{hp_up}</>.\nNachdem der Träger ein Ziel mit <#ba.enhance>Verstärkung</>, <#ba.guard>Geschützt</>, <#ba.vulnerable>Empfänglichkeit</> oder <#ba.weak>Geschwächt</> belegt hat, erhalten andere Teammitglieder <@ba.vup>+{dmg_up:0%}</> auf den verursachten SDN für {duration} Sek. Dieser Effekt kann nicht kumuliert werden."
+    "setBonus": "3-Stück-Setbonus: LP des Trägers <@ba.vup>+{hp_up}</>.\nNachdem der Träger ein Ziel mit <#ba.enhance>Verstärkung</>, <#ba.guard>Schutz</>, <#ba.vulnerable>Empfänglichkeit</> oder <#ba.weak>Schwäche</> belegt hat, erhalten andere Teammitglieder <@ba.vup>+{dmg_up:0%}</> auf den verursachten SDN für {duration} Sek. Dieser Effekt kann nicht kumuliert werden."
   },
   "item_equip_t4_suit_usp02_hand_04": {
     "name": "Ewiges-Xiranit-Handschutz",
     "description": "Dieses Ausrüstungsteil wurde von den Hongshan-Schwertkämpfern entworfen und mit der AIK-Fabrik zusammengesetzt. Es kann die Kampffertigkeiten seines Trägers verbessern.",
     "decoDesc": "Das Vermächtnis eines „wahnsinnigen“ Tianshi. \nTrag sie, zieh sie an … Lass die Energie durch deine Haut fließen. Spüre, wie die Kraft dir in Fleisch und Blut übergeht.",
-    "setBonus": "3-Stück-Setbonus: LP des Trägers <@ba.vup>+{hp_up}</>.\nNachdem der Träger ein Ziel mit <#ba.enhance>Verstärkung</>, <#ba.guard>Geschützt</>, <#ba.vulnerable>Empfänglichkeit</> oder <#ba.weak>Geschwächt</> belegt hat, erhalten andere Teammitglieder <@ba.vup>+{dmg_up:0%}</> auf den verursachten SDN für {duration} Sek. Dieser Effekt kann nicht kumuliert werden."
+    "setBonus": "3-Stück-Setbonus: LP des Trägers <@ba.vup>+{hp_up}</>.\nNachdem der Träger ein Ziel mit <#ba.enhance>Verstärkung</>, <#ba.guard>Schutz</>, <#ba.vulnerable>Empfänglichkeit</> oder <#ba.weak>Schwäche</> belegt hat, erhalten andere Teammitglieder <@ba.vup>+{dmg_up:0%}</> auf den verursachten SDN für {duration} Sek. Dieser Effekt kann nicht kumuliert werden."
   }
 }

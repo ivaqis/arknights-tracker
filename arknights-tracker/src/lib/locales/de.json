@@ -372,7 +372,11 @@
     "special_1_4_1": "Sehnsucht der Riss-Wächterin nach dem Norden",
     "weponbox_1_4_1": "Militär-Standard-Ausgabe",
     "special_1_4_2": "Dein Morgenstern begrüßt den Tag",
-    "weponbox_1_4_2": "Blendend-Ausgabe"
+    "weponbox_1_4_2": "Blendend-Ausgabe",
+    "special_1_5_1": "Winterjagd",
+    "weponbox_1_5_1": "Eiskalt-Ausgabe",
+    "weponbox_1_5_2": "Künstler-Schriftzug-Ausgabe",
+    "special_1_5_2": "Strahlendes Spektrum"
   },
   "pages": {
     "home": "Home",
@@ -467,7 +471,17 @@
     "gazeNorthToTheRiftSignIn": "Blicke nach Norden zum Riss – Anmeldung",
     "protocolInvitationTheReturn": "Protokoll-Einladung: Die Rückkehr",
     "bedazzlingDawnstarSignIn": "Blendender Morgenstern – Anmeldung",
-    "aForestMantledInSnow": "Ein verschneiter Wald"
+    "aForestMantledInSnow": "Ein verschneiter Wald",
+    "seasonOfVirtuality": "Saison der Virtualität",
+    "seasonOfIllusion": "Saison der Illusionen",
+    "runnersSteeplechase": "Der Hindernislauf der Läufer",
+    "snowOverDeepWoods": "Schnee über tiefen Wäldern",
+    "aicSupportChubbyLungAttacks": "AIK-Unterstützung: Chubby-Lung-Angriffe",
+    "ridgelineFlowsOfAutumnSignIn": "„Herbstströme am Bergrücken“-Anmeldung",
+    "trialOfTheBow": "Prüfung des Bogens",
+    "protocolPassGloomwald": "Protokollpass: Finstereiche",
+    "orbipomMerge": "OrbiPom! VERSCHMELZEN!",
+    "fletchedIrontipSignIn": "Befiederte Eisenspitze: Anmeldung"
   },
   "mouths": {
     "january": "Januar",
@@ -880,7 +894,26 @@
     "heavyXiragen": "Schweres Xiragen",
     "crimsonSpearleaf": "Blutrotes Speerblatt",
     "talosCap": "Taloskappe",
-    "protocolith": "Protokolith"
+    "protocolith": "Protokolith",
+    "caudalGoldscales": "Goldene Schwanzschuppen",
+    "yazhenSeeds": "Yazhen-Saat",
+    "reedRyeSeeds": "Schilfroggen-Saat",
+    "tartpepperSeeds": "Scharfpaprika-Saat",
+    "redjadeGinsengSeeds": "Rotjade-Ginseng-Saat",
+    "amberRiceSeeds": "Bernsteinreis-Saat",
+    "protoXiranCuprium": "Proto-Xiran-Cuprium",
+    "protoXiranCupriumPart": "Proto-Xiran-Cuprium-Teil",
+    "protoXiranCupriumGas": "Proto-Xiran-Cuprium-Gas",
+    "protoXiranCupriumFrame": "Proto-Xiran-Cuprium-Rahmen",
+    "protoCupriumFrame": "Proto-Cuprium-Rahmen",
+    "protoChubbyLungShell": "Proto-Geschoss Chubby Lung",
+    "protoChubbyLungHeavyShell": "Proto-Schweres-Geschoss Chubby Lung",
+    "heavyXiraniteChubbyLung": "Schweres-Xiranit-Chubby-Lung",
+    "protoHeavyXiranite": "Proto-Schweres-Xiranit",
+    "xiraniteChubbyLung": "Xiranit-Chubby-Lung",
+    "protoXiranite": "Proto-Xiranit",
+    "tenderMoss": "Zartmoos",
+    "slugSprig": "Schneckenspross"
   },
   "common": {
     "copy": "Kopieren",
@@ -1116,7 +1149,8 @@
     "mifu": "Mi Fu",
     "camille": "Camille",
     "arcane": "Arkan",
-    "liino": "Liino"
+    "liino": "Liino",
+    "typhoeus": "Typhoeus"
   },
   "weaponsList": {
     "custom_weapon": "Benutzerdefinierte Waffe",
@@ -1196,7 +1230,9 @@
     "junctionPoint": "Knotenpunkt",
     "goldenAge": "Goldenes Zeitalter",
     "farsight": "Weitsicht",
-    "bedazzlingNightDebut": "Debüt der blendenden Nacht"
+    "bedazzlingNightDebut": "Debüt der blendenden Nacht",
+    "umbraOfFrigidEventide": "Umbra der eisigen Abenddämmerung",
+    "sufferingsEnd": "Ende des Leidens"
   },
   "cookies": {
     "title": "Wir verwenden Cookies",
@@ -1314,7 +1350,14 @@
     "world_energy_point11_4": "Schweres Energie-Alluvium: Sperrzone Nord-Wuling",
     "world_energy_point11_5": "Schweres Energie-Alluvium: Sperrzone Nord-Wuling",
     "world_energy_point11_6": "Schweres Energie-Alluvium: Sperrzone Nord-Wuling",
-    "world_energy_point11_7": "Schweres Energie-Alluvium: Sperrzone Nord-Wuling"
+    "world_energy_point11_7": "Schweres Energie-Alluvium: Sperrzone Nord-Wuling",
+    "world_energy_point12_1": "Energie-Alluvium: Verschneiter Wald",
+    "world_energy_point12_2": "Energie-Alluvium: Verschneiter Wald",
+    "world_energy_point12_3": "Energie-Alluvium: Verschneiter Wald",
+    "world_energy_point12_4": "Schweres Energie-Alluvium: Verschneiter Wald",
+    "world_energy_point12_5": "Schweres Energie-Alluvium: Verschneiter Wald",
+    "world_energy_point12_6": "Schweres Energie-Alluvium: Verschneiter Wald",
+    "world_energy_point12_7": "Schweres Energie-Alluvium: Verschneiter Wald"
   },
   "enemies": {
     "eny_0007_mimicw": "Tunnel-Nidwurm",
@@ -1400,7 +1443,15 @@
     "eny_0122_kltdbud": "YSE-Elite-Verderbnisschatten",
     "eny_0123_klcap": "YSE-Glefenträger-Verderbnisschatten",
     "eny_0124_kltdcap": "YSE-Hauptmann-Verderbnisschatten",
-    "eny_0125_fdcentur": "Alleikhreos, Chiliarch"
+    "eny_0125_fdcentur": "Alleikhreos, Chiliarch",
+    "eny_0127_bigents": "Finstereiches Zorn",
+    "eny_0128_babyents": "Schnitzkunst-Wanderer",
+    "eny_0129_slwood": "Schnitzkunst-Schnecke",
+    "tatget_001_normal": "Einfaches Ziel",
+    "tatget_002_endurance": "Standard-Ziel",
+    "tatget_003_expand": "Barriereziel",
+    "tatget_004_armor": "Schweres Ziel",
+    "tatget_005_shield": "Energieschild"
   },
   "essencesPage": {
     "optimizer": "Farming-Optimierer",
@@ -1681,7 +1732,22 @@
     "item_equip_t4_suit_usp02_body_04": "Leichte Ewiges-Xiranit-Rüstung S1",
     "item_equip_t4_suit_usp02_edc_04": "Ewiges-Xiranit-Schutzteil",
     "item_equip_t4_suit_usp02_hand_03": "Ewiges-Xiranit-Wickel",
-    "item_equip_t4_suit_usp02_hand_04": "Ewiges-Xiranit-Handschutz"
+    "item_equip_t4_suit_usp02_hand_04": "Ewiges-Xiranit-Handschutz",
+    "item_equip_t4_parts_wuling00_body_04": "AIK-Sturmangriff-Einsatzrüstung",
+    "item_equip_t4_parts_wuling00_body_05": "AIK-Einsatzrüstung für Sanitäter",
+    "item_equip_t4_parts_wuling00_edc_04": "AIK-Sturmangriff-Einsatzdruckmesser",
+    "item_equip_t4_parts_wuling00_edc_05": "AIK-Einsatz-Powerbank",
+    "item_equip_t4_parts_wuling00_hand_04": "AIK-Sturmangriff-Einsatzhandschuhe",
+    "item_equip_t4_parts_wuling00_hand_05": "AIK-Einsatz-Handschuhe für Sanitäter",
+    "item_equip_t4_suit_burst01_body_02": "Leichte Tiden-Rüstung S1",
+    "item_equip_t4_suit_burst01_body_03": "Schwere Wellengang-Rüstung",
+    "item_equip_t4_suit_burst01_edc_03": "Trüber Schneidbrenner S1",
+    "item_equip_t4_suit_burst01_hand_02": "Handschuhe des Versinkens",
+    "item_equip_t4_suit_spellburst_body_01": "Tiefer-Wall-Rüstung",
+    "item_equip_t4_suit_spellburst_edc_01": "Tiefer-Wall-Funkgerät",
+    "item_equip_t4_suit_spellburst_hand_01": "Tiefer-Wall-Kampfhandschuhe",
+    "item_equip_t4_suit_usp02_edc_05": "Ewiges-Xiranit-Schutzteil S1",
+    "item_equip_t4_suit_usp02_edc_06": "Ewiges-Xiranit-„Schwerer Schutz“"
   },
   "packs": {
     "none": "Ohne Set",
@@ -1731,7 +1797,8 @@
     "suit_combo_cd01": "Qingbo",
     "suit_expend_spell01": "Xiranfluss",
     "suit_crush_fracture": "Graukant",
-    "suit_generaltype": "AIK-Einsatz"
+    "suit_generaltype": "AIK-Einsatz",
+    "suit_spellburst": "Tiefer Wall"
   },
   "equipmentTypes": {
     "body": "Rüstung",
@@ -1799,7 +1866,8 @@
     "wiki_group_monster_hongshan": "Cangzei-Piraten",
     "wiki_group_monster_animal": "Fauna",
     "wiki_group_monster_kl": "Verderbnisschatten",
-    "wiki_group_monster_js": "Fundit"
+    "wiki_group_monster_js": "Fundit",
+    "wiki_group_monster_witchcraft": "Geschöpf der Hexerei"
   },
   "resitances": {
     "heatRez": "Heat Resistance",
@@ -2571,6 +2639,7 @@
   },
   "audio_player": {
     "playback_error": "Audio konnte nicht geladen werden",
+    "not_found": "Audio nicht gefunden (404)",
     "open_raw": "Open raw"
   }
 }

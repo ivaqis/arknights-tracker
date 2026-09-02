@@ -563,6 +563,18 @@
     "decoDesc": "Un set di equipaggiamento da combattimento progettato dalla Endfield Industries per l'addestramento degli operatori. Questa serie è molto apprezzata dal mercato per il suo ottimo rapporto qualità-prezzo. \n\"Posso averne ancora, per favore? È un ottimo materiale da costruzione\".",
     "setBonus": "Effetto set da 3 pezzi: il personaggio ottiene <@ba.vup>+{dmg_up:0%}</> di danni inflitti per tutti i tipi di danni, <@ba.vup>{1-dmg_taken_down:0%}</> di riduzione dei danni contro tutti i tipi di danni, nonché <@ba.vup>+{ultimate_gain_up:0%}</> di velocità di incremento dell'energia suprema."
   },
+  "item_equip_t4_parts_wuling00_body_04": {
+    "name": "Armatura d'assalto per lavoro sul campo del SIA",
+    "description": "Progettato in via indipendente dalla Endfield Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità di combattimento di chi lo usa.",
+    "decoDesc": "Un set di equipaggiamento da combattimento progettato dalla Endfield Industries per l'addestramento degli operatori. Questa serie è molto apprezzata dal mercato per il suo ottimo rapporto qualità-prezzo. \n\"Più robusto. Più pesante. Più affilato.\"",
+    "setBonus": "Effetto set da 3 pezzi: il personaggio ottiene <@ba.vup>+{dmg_up:0%}</> di danni inflitti per tutti i tipi di danni, <@ba.vup>{1-dmg_taken_down:0%}</> di riduzione dei danni contro tutti i tipi di danni, nonché <@ba.vup>+{ultimate_gain_up:0%}</> di velocità di incremento dell'energia suprema."
+  },
+  "item_equip_t4_parts_wuling00_body_05": {
+    "name": "Armatura medica per lavoro sul campo del SIA",
+    "description": "Progettato in via indipendente dalla Endfield Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità di combattimento di chi lo usa.",
+    "decoDesc": "Un set di equipaggiamento da combattimento progettato dalla Endfield Industries per l'addestramento degli operatori. Questa serie è molto apprezzata dal mercato per il suo ottimo rapporto qualità-prezzo. \nL'equipaggiamento base per lavoro sul campo del SIA può essere dotato di porte di connessione per moduli medici, consentendo un miglior monitoraggio dei parametri vitali di chi lo indossa.",
+    "setBonus": "Effetto set da 3 pezzi: il personaggio ottiene <@ba.vup>+{dmg_up:0%}</> di danni inflitti per tutti i tipi di danni, <@ba.vup>{1-dmg_taken_down:0%}</> di riduzione dei danni contro tutti i tipi di danni, nonché <@ba.vup>+{ultimate_gain_up:0%}</> di velocità di incremento dell'energia suprema."
+  },
   "item_equip_t4_parts_wuling00_edc_01": {
     "name": "Machete per lavoro sul campo del SIA",
     "description": "Progettato in via indipendente dalla Endfield Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità di combattimento di chi lo usa.",
@@ -581,6 +593,18 @@
     "decoDesc": "Un set di equipaggiamento da combattimento progettato dalla Endfield Industries per l'addestramento degli operatori. Questa serie è molto apprezzata dal mercato per il suo ottimo rapporto qualità-prezzo. \n\"Attendo con impazienza una nuova operazione di combattimento, proprio come la gente attende con impazienza l'alba\".",
     "setBonus": "Effetto set da 3 pezzi: il personaggio ottiene <@ba.vup>+{dmg_up:0%}</> di danni inflitti per tutti i tipi di danni, <@ba.vup>{1-dmg_taken_down:0%}</> di riduzione dei danni contro tutti i tipi di danni, nonché <@ba.vup>+{ultimate_gain_up:0%}</> di velocità di incremento dell'energia suprema."
   },
+  "item_equip_t4_parts_wuling00_edc_04": {
+    "name": "Pugnale a scatto d'assalto per lavoro sul campo del SIA",
+    "description": "Progettato in via indipendente dalla Endfield Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità di combattimento di chi lo usa.",
+    "decoDesc": "Un set di equipaggiamento da combattimento progettato dalla Endfield Industries per l'addestramento degli operatori. Questa serie è molto apprezzata dal mercato per il suo ottimo rapporto qualità-prezzo.\nIl manico e la lama di questo pugnale a scatto sono stati ottimizzati e riequilibrati per ridurre l'affaticamento del polso di chi lo utilizza.",
+    "setBonus": "Effetto set da 3 pezzi: il personaggio ottiene <@ba.vup>+{dmg_up:0%}</> di danni inflitti per tutti i tipi di danni, <@ba.vup>{1-dmg_taken_down:0%}</> di riduzione dei danni contro tutti i tipi di danni, nonché <@ba.vup>+{ultimate_gain_up:0%}</> di velocità di incremento dell'energia suprema."
+  },
+  "item_equip_t4_parts_wuling00_edc_05": {
+    "name": "Batteria portatile per lavoro sul campo del SIA",
+    "description": "Progettato in via indipendente dalla Endfield Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità di combattimento di chi lo usa.",
+    "decoDesc": "Un set di equipaggiamento da combattimento progettato dalla Endfield Industries per l'addestramento degli operatori. Questa serie è molto apprezzata dal mercato per il suo ottimo rapporto qualità-prezzo.\nQuesta batteria portatile è chiaramente molto più compatta e resistente rispetto alle batterie che scorrono sui nastri trasportatori delle fabbriche del SIA.",
+    "setBonus": "Effetto set da 3 pezzi: il personaggio ottiene <@ba.vup>+{dmg_up:0%}</> di danni inflitti per tutti i tipi di danni, <@ba.vup>{1-dmg_taken_down:0%}</> di riduzione dei danni contro tutti i tipi di danni, nonché <@ba.vup>+{ultimate_gain_up:0%}</> di velocità di incremento dell'energia suprema."
+  },
   "item_equip_t4_parts_wuling00_hand_01": {
     "name": "Guanti per lavoro sul campo del SIA",
     "description": "Progettato in via indipendente dalla Endfield Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità di combattimento di chi lo usa.",
@@ -596,7 +620,19 @@
   "item_equip_t4_parts_wuling00_hand_03": {
     "name": "Fasce per lavoro sul campo del SIA",
     "description": "Progettato in via indipendente dalla Endfield Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità di combattimento di chi lo usa.",
-    "decoDesc": "Un set di equipaggiamento da combattimento progettato dalla Endfield Industries per l'addestramento degli operatori. Questa serie è molto apprezzata dal mercato per il suo ottimo rapporto qualità-prezzo. \nEquipaggiamento protettivo speciale per le mani. Progettato per operatori sul campo di battaglia che devono azionare macchinari complessi.",
+    "decoDesc": "Un set di equipaggiamento da combattimento progettato dalla Endfield Industries per l'addestramento degli operatori. Questa serie è molto apprezzata dal mercato per il suo ottimo rapporto qualità-prezzo. \nEquipaggiamento protettivo speciale per le mani. Progettato per operatori che devono azionare macchinari complessi sul campo di battaglia.",
+    "setBonus": "Effetto set da 3 pezzi: il personaggio ottiene <@ba.vup>+{dmg_up:0%}</> di danni inflitti per tutti i tipi di danni, <@ba.vup>{1-dmg_taken_down:0%}</> di riduzione dei danni contro tutti i tipi di danni, nonché <@ba.vup>+{ultimate_gain_up:0%}</> di velocità di incremento dell'energia suprema."
+  },
+  "item_equip_t4_parts_wuling00_hand_04": {
+    "name": "Guanti d'assalto per lavoro sul campo del SIA",
+    "description": "Progettato in via indipendente dalla Endfield Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità di combattimento di chi lo usa.",
+    "decoDesc": "Un set di equipaggiamento da combattimento progettato dalla Endfield Industries per l'addestramento degli operatori. Questa serie è molto apprezzata dal mercato per il suo ottimo rapporto qualità-prezzo.\nUn design più snello dotato di un sistema di montaggio universale per armi da fuoco. Chi lo indossa non dovrà più preoccuparsi di perdere l'arma durante il combattimento.",
+    "setBonus": "Effetto set da 3 pezzi: il personaggio ottiene <@ba.vup>+{dmg_up:0%}</> di danni inflitti per tutti i tipi di danni, <@ba.vup>{1-dmg_taken_down:0%}</> di riduzione dei danni contro tutti i tipi di danni, nonché <@ba.vup>+{ultimate_gain_up:0%}</> di velocità di incremento dell'energia suprema."
+  },
+  "item_equip_t4_parts_wuling00_hand_05": {
+    "name": "Guanti medici per lavoro sul campo del SIA",
+    "description": "Progettato in via indipendente dalla Endfield Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità di combattimento di chi lo usa.",
+    "decoDesc": "Un set di equipaggiamento da combattimento progettato dalla Endfield Industries per l'addestramento degli operatori. Questa serie è molto apprezzata dal mercato per il suo ottimo rapporto qualità-prezzo. \n\"Cura terminata? Tutto qui? Un buffetto...? Ehi. Perché hai una siringa gigante sul guanto?\"",
     "setBonus": "Effetto set da 3 pezzi: il personaggio ottiene <@ba.vup>+{dmg_up:0%}</> di danni inflitti per tutti i tipi di danni, <@ba.vup>{1-dmg_taken_down:0%}</> di riduzione dei danni contro tutti i tipi di danni, nonché <@ba.vup>+{ultimate_gain_up:0%}</> di velocità di incremento dell'energia suprema."
   },
   "item_equip_t4_parts_wuling01_body_01": {
@@ -650,31 +686,31 @@
   "item_equip_t4_parts_wuling02_body_01": {
     "name": "Armatura pesante per l'esplorazione della spaccatura",
     "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità di combattimento di chi lo usa.",
-    "decoDesc": "Il Dipartimento degli Spadamanti ha progettato questo speciale set di equipaggiamento per i combattenti che operano frequentemente in zone ad alto rischio. \n\"Per esplorare la grande spaccatura, indosso un'armatura di giada di xiranite\".",
+    "decoDesc": "Il Dipartimento degli Spadamanti ha progettato questo speciale set di equipaggiamento per i combattenti che svolgono spesso missioni in zone ad alto rischio. \n\"Esploro la grande spaccatura, e lo faccio con un'armatura di giada\".",
     "setBonus": ""
   },
   "item_equip_t4_parts_wuling02_body_02": {
     "name": "Armatura leggera per l'esplorazione della spaccatura",
     "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità di combattimento di chi lo usa.",
-    "decoDesc": "Il Dipartimento degli Spadamanti ha progettato questo speciale set di equipaggiamento per i combattenti che operano frequentemente in zone ad alto rischio. \n\"Mentre osservo l'inverno, la vita e la morte diventano chiare come la luce del giorno\".",
+    "decoDesc": "Il Dipartimento degli Spadamanti ha progettato questo speciale set di equipaggiamento per i combattenti che svolgono spesso missioni in zone ad alto rischio. \n\"Osservo l'inverno e i presagi di morte sono chiari come la luce del giorno\".",
     "setBonus": ""
   },
   "item_equip_t4_parts_wuling02_edc_01": {
     "name": "Lastra per armatura per l'esplorazione della spaccatura",
     "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità di combattimento di chi lo usa.",
-    "decoDesc": "Il Dipartimento degli Spadamanti ha progettato questo speciale set di equipaggiamento per i combattenti che operano frequentemente in zone ad alto rischio. \n\"Con strumenti per scalfire la pietra, segna la testata del mio letto eterno\".",
+    "decoDesc": "Il Dipartimento degli Spadamanti ha progettato questo speciale set di equipaggiamento per i combattenti che svolgono spesso missioni in zone ad alto rischio. \n\"Scalfirò la pietra e segnerò la testata del mio letto eterno\".",
     "setBonus": ""
   },
   "item_equip_t4_parts_wuling02_hand_01": {
     "name": "Guanti per l'esplorazione della spaccatura",
     "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità di combattimento di chi lo usa.",
-    "decoDesc": "Il Dipartimento degli Spadamanti ha progettato questo speciale set di equipaggiamento per i combattenti che operano frequentemente in zone ad alto rischio. \n\"Quando sento il rombo del tuono, tutte le mie paure svaniscono\".",
+    "decoDesc": "Il Dipartimento degli Spadamanti ha progettato questo speciale set di equipaggiamento per i combattenti che svolgono spesso missioni in zone ad alto rischio. \n\"Sento il rombo del tuono e tutte le mie paure svaniscono\".",
     "setBonus": ""
   },
   "item_equip_t4_parts_wuling02_hand_02": {
     "name": "Mani per l'esplorazione della spaccatura",
     "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità di combattimento di chi lo usa.",
-    "decoDesc": "Il Dipartimento degli Spadamanti ha progettato questo speciale set di equipaggiamento per i combattenti che operano frequentemente in zone ad alto rischio. \n\"Lo stendardo è dispiegato, un sudario per il riposo eterno\".",
+    "decoDesc": "Il Dipartimento degli Spadamanti ha progettato questo speciale set di equipaggiamento per i combattenti che svolgono spesso missioni in zone ad alto rischio. \n\"Dispiego lo stendardo di guerra, sudario funebre se dovessi cadere\".",
     "setBonus": ""
   },
   "item_equip_t4_suit_atb01_body_01": {
@@ -917,6 +953,18 @@
     "decoDesc": "Equipaggiamento progettato dal Dipartimento degli Spadamanti per coloro che lavorano vicino alla Contaminazione acquatica. \nQuesto è un ricordo circa la Contaminazione acquatica: le maree insensibili hanno sempre rifiutato la nozione della vita.",
     "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{skill_dmg_up:0%}</> di danni da abilità inflitti.\nQuando il personaggio applica <@ba.key>{stack_cond}</> o più accumuli di <#ba.spellinflict>Afflizioni da Arti</> al nemico, infligge <@ba.vup>+{spell_dmg_up:0%}</> di <@ba.key>danni da Arti</> per {duration} s. Questo effetto non si accumula."
   },
+  "item_equip_t4_suit_burst01_body_02": {
+    "name": "Armatura leggera della bassa marea T1",
+    "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità di combattimento di chi lo usa.",
+    "decoDesc": "Equipaggiamento progettato dal Dipartimento degli Spadamanti per coloro che lavorano vicino alla Contaminazione acquatica. \nQuesto è un ricordo circa la Contaminazione acquatica: le maree insensibili hanno sempre rifiutato la nozione della vita.",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{skill_dmg_up:0%}</> di danni da abilità inflitti.\nQuando il personaggio applica <@ba.key>{stack_cond}</> o più accumuli di <#ba.spellinflict>Afflizioni da Arti</> al nemico, infligge <@ba.vup>+{spell_dmg_up:0%}</> di <@ba.key>danni da Arti</> per {duration} s. Questo effetto non si accumula."
+  },
+  "item_equip_t4_suit_burst01_body_03": {
+    "name": "Armatura pesante Onda crescente",
+    "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità di combattimento di chi lo usa.",
+    "decoDesc": "Equipaggiamento progettato dal Dipartimento degli Spadamanti per coloro che lavorano vicino alla Contaminazione acquatica. \nQuesta è una sfida provocatoria contro la Contaminazione acquatica: non permetteremo più che ostacoli il nostro cammino.",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{skill_dmg_up:0%}</> di danni da abilità inflitti.\nQuando il personaggio applica <@ba.key>{stack_cond}</> o più accumuli di <#ba.spellinflict>Afflizioni da Arti</> al nemico, infligge <@ba.vup>+{spell_dmg_up:0%}</> di <@ba.key>danni da Arti</> per {duration} s. Questo effetto non si accumula."
+  },
   "item_equip_t4_suit_burst01_edc_01": {
     "name": "Tubo di ossigeno del fiume sospeso",
     "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità combattive di chi lo usa.",
@@ -929,10 +977,22 @@
     "decoDesc": "Equipaggiamento progettato dal Dipartimento degli Spadamanti per coloro che lavorano vicino alla Contaminazione acquatica. \nQuesto è un pizzico di paura nei confronti della Contaminazione acquatica: quando si manifesterà la calamità incombente?",
     "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{skill_dmg_up:0%}</> di danni da abilità inflitti.\nQuando il personaggio applica <@ba.key>{stack_cond}</> o più accumuli di <#ba.spellinflict>Afflizioni da Arti</> al nemico, infligge <@ba.vup>+{spell_dmg_up:0%}</> di <@ba.key>danni da Arti</> per {duration} s. Questo effetto non si accumula."
   },
+  "item_equip_t4_suit_burst01_edc_03": {
+    "name": "Torcia tagliente torbida T1",
+    "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità di combattimento di chi lo usa.",
+    "decoDesc": "Equipaggiamento progettato dal Dipartimento degli Spadamanti per coloro che lavorano vicino alla Contaminazione acquatica. \nQuesto è un pizzico di paura nei confronti della Contaminazione acquatica: quando si manifesterà la calamità incombente?",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{skill_dmg_up:0%}</> di danni da abilità inflitti.\nQuando il personaggio applica <@ba.key>{stack_cond}</> o più accumuli di <#ba.spellinflict>Afflizioni da Arti</> al nemico, infligge <@ba.vup>+{spell_dmg_up:0%}</> di <@ba.key>danni da Arti</> per {duration} s. Questo effetto non si accumula."
+  },
   "item_equip_t4_suit_burst01_hand_01": {
     "name": "Coprimani dell'alta marea",
     "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità combattive di chi lo usa.",
     "decoDesc": "Equipaggiamento progettato dal Dipartimento degli Spadamanti per coloro che lavorano vicino alla Contaminazione acquatica. \nQuesta è una domanda riguardo alla Contaminazione acquatica: il crollo delle antiche dighe inizia dall'interno?",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{skill_dmg_up:0%}</> di danni da abilità inflitti.\nQuando il personaggio applica <@ba.key>{stack_cond}</> o più accumuli di <#ba.spellinflict>Afflizioni da Arti</> al nemico, infligge <@ba.vup>+{spell_dmg_up:0%}</> di <@ba.key>danni da Arti</> per {duration} s. Questo effetto non si accumula."
+  },
+  "item_equip_t4_suit_burst01_hand_02": {
+    "name": "Guanti da immersione",
+    "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità di combattimento di chi lo usa.",
+    "decoDesc": "Equipaggiamento progettato dal Dipartimento degli Spadamanti per coloro che lavorano vicino alla Contaminazione acquatica. \nQuesto è un momento di riflessione sulla Contaminazione acquatica: dove scorrerebbe la distruzione silenziosa...?",
     "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{skill_dmg_up:0%}</> di danni da abilità inflitti.\nQuando il personaggio applica <@ba.key>{stack_cond}</> o più accumuli di <#ba.spellinflict>Afflizioni da Arti</> al nemico, infligge <@ba.vup>+{spell_dmg_up:0%}</> di <@ba.key>danni da Arti</> per {duration} s. Questo effetto non si accumula."
   },
   "item_equip_t4_suit_combo_cd01_body_01": {
@@ -1202,7 +1262,7 @@
   "item_equip_t4_suit_heal01_body_03": {
     "name": "Corazza LYNX O1",
     "description": "Progettato dalla Rhodes Island e assemblato dal SIA, questo equipaggiamento migliora le capacità di combattimento di chi lo usa.",
-    "decoDesc": "L'equipaggiamento preferito dai medici. Di solito, le persone si riferiscono ai combattenti che indossano la corazza LYNX come \"kit medici ambulanti\". Spesso quegli angeli custodi si riempiono ogni tasca dell'armatura con presidi medici d'emergenza.",
+    "decoDesc": "L'equipaggiamento preferito dai medici. \nDi solito, le persone si riferiscono ai combattenti che indossano la corazza LYNX come \"kit medici ambulanti\". Spesso quegli angeli custodi si riempiono ogni tasca dell'armatura con presidi medici d'emergenza.",
     "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{heal_up:0%}</> di efficacia della Cura PS. \nQuando il personaggio fornisce Cura PS a un bersaglio alleato, quest'ultimo ottiene anche un <@ba.vup>{1-dmg_taken_down:0%}</> di riduzione dei danni contro ogni tipo di danno per {duration} s. Se con la Cura i PS superano i PS massimi, il bersaglio ottiene invece un <@ba.vup>{1-dmg_taken_down2:0%}</> di riduzione dei danni contro tutti i tipi di danni. Gli effetti descritti non si accumulano."
   },
   "item_equip_t4_suit_heal01_edc_01": {
@@ -1323,43 +1383,43 @@
     "name": "Piastre Æthertech",
     "description": "Progettato dalla Portable Æthertech Labs e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
     "decoDesc": "Uno sperimentale equipaggiamento protettivo leggero. \n\"Gli abitanti di Hongshan usano le piume come metro di paragone per il peso. Le soluzioni anti-gravità proposte dai nostri laboratori si avvicinano molto a quell'unità di misura.\"",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{atk_up:0%}</> di ATT. \nQuando il personaggio applica <#ba.noguard>Vulnerabilità</>, ottiene <@ba.vup>+{phy_dmg_up:0%}</> di <@ba.pd>danni fisici</> per {duration} s. Accumuli massimi: {max_stack:0}. Se il bersaglio ha già {stack_cond:0} accumulo/i di <#ba.noguard>Vulnerabilità</>, il personaggio ottiene un ulteriore <@ba.vup>+{phy_dmg_up2:0%}</> di danni fisici per {duration2} s. Questo effetto non si accumula."
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{atk_up:0%}</> di ATT.\nQuando il personaggio applica <#ba.noguard>Vulnerabilità</>, ottiene <@ba.vup>+{phy_dmg_up:0%}</> di <@ba.pd>danni fisici inflitti</> per {duration} s. Accumuli massimi: {max_stack:0}. Se il bersaglio ha {stack_cond:0} accumuli di <#ba.noguard>Vulnerabilità</>, il personaggio ottiene un ulteriore <@ba.vup>+{phy_dmg_up2:0%}</> di <@ba.pd>danni fisici inflitti</> per {duration2} s. Questo effetto non si accumula."
   },
   "item_equip_t4_suit_poise01_edc_01": {
     "name": "Fascia di analisi Æthertech",
     "description": "Progettato dalla Portable Æthertech Labs e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
     "decoDesc": "Uno sperimentale equipaggiamento protettivo leggero. \n\"Stiamo cercando dei modi per analizzare digitalmente i segnali di crescita della Contaminazione. Si accettano volontari per la sperimentazione.\"",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{atk_up:0%}</> di ATT. \nQuando il personaggio applica <#ba.noguard>Vulnerabilità</>, ottiene <@ba.vup>+{phy_dmg_up:0%}</> di <@ba.pd>danni fisici</> per {duration} s. Accumuli massimi: {max_stack:0}. Se il bersaglio ha già {stack_cond:0} accumulo/i di <#ba.noguard>Vulnerabilità</>, il personaggio ottiene un ulteriore <@ba.vup>+{phy_dmg_up2:0%}</> di danni fisici per {duration2} s. Questo effetto non si accumula."
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{atk_up:0%}</> di ATT.\nQuando il personaggio applica <#ba.noguard>Vulnerabilità</>, ottiene <@ba.vup>+{phy_dmg_up:0%}</> di <@ba.pd>danni fisici inflitti</> per {duration} s. Accumuli massimi: {max_stack:0}. Se il bersaglio ha {stack_cond:0} accumuli di <#ba.noguard>Vulnerabilità</>, il personaggio ottiene un ulteriore <@ba.vup>+{phy_dmg_up2:0%}</> di <@ba.pd>danni fisici inflitti</> per {duration2} s. Questo effetto non si accumula."
   },
   "item_equip_t4_suit_poise01_edc_02": {
     "name": "Stabilizzatore Æthertech",
     "description": "Progettato dalla Portable Æthertech Labs e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
     "decoDesc": "Uno sperimentale equipaggiamento protettivo leggero. \n\"Tieni sempre addosso lo stabilizzatore, grazie. Così facendo, eviterai di catapultarti in cielo come una mongolfiera impazzita durante la fluttuazione dei parametri.\"",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{atk_up:0%}</> di ATT. \nQuando il personaggio applica <#ba.noguard>Vulnerabilità</>, ottiene <@ba.vup>+{phy_dmg_up:0%}</> di <@ba.pd>danni fisici</> per {duration} s. Accumuli massimi: {max_stack:0}. Se il bersaglio ha già {stack_cond:0} accumulo/i di <#ba.noguard>Vulnerabilità</>, il personaggio ottiene un ulteriore <@ba.vup>+{phy_dmg_up2:0%}</> di danni fisici per {duration2} s. Questo effetto non si accumula."
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{atk_up:0%}</> di ATT.\nQuando il personaggio applica <#ba.noguard>Vulnerabilità</>, ottiene <@ba.vup>+{phy_dmg_up:0%}</> di <@ba.pd>danni fisici inflitti</> per {duration} s. Accumuli massimi: {max_stack:0}. Se il bersaglio ha {stack_cond:0} accumuli di <#ba.noguard>Vulnerabilità</>, il personaggio ottiene un ulteriore <@ba.vup>+{phy_dmg_up2:0%}</> di <@ba.pd>danni fisici inflitti</> per {duration2} s. Questo effetto non si accumula."
   },
   "item_equip_t4_suit_poise01_edc_03": {
     "name": "Stabilizzatore Æthertech O1",
     "description": "Progettato dalla Portable Æthertech Labs e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
     "decoDesc": "Uno sperimentale equipaggiamento protettivo leggero. \n\"Tieni sempre addosso lo stabilizzatore, grazie. Così facendo, eviterai di catapultarti in cielo come una mongolfiera impazzita durante la fluttuazione dei parametri.\"",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{atk_up:0%}</> di ATT. \nQuando il personaggio applica <#ba.noguard>Vulnerabilità</>, ottiene <@ba.vup>+{phy_dmg_up:0%}</> di <@ba.pd>danni fisici</> per {duration} s. Accumuli massimi: {max_stack:0}. Se il bersaglio ha già {stack_cond:0} accumulo/i di <#ba.noguard>Vulnerabilità</>, il personaggio ottiene un ulteriore <@ba.vup>+{phy_dmg_up2:0%}</> di danni fisici per {duration2} s. Questo effetto non si accumula."
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{atk_up:0%}</> di ATT.\nQuando il personaggio applica <#ba.noguard>Vulnerabilità</>, ottiene <@ba.vup>+{phy_dmg_up:0%}</> di <@ba.pd>danni fisici inflitti</> per {duration} s. Accumuli massimi: {max_stack:0}. Se il bersaglio ha {stack_cond:0} accumuli di <#ba.noguard>Vulnerabilità</>, il personaggio ottiene un ulteriore <@ba.vup>+{phy_dmg_up2:0%}</> di <@ba.pd>danni fisici inflitti</> per {duration2} s. Questo effetto non si accumula."
   },
   "item_equip_t4_suit_poise01_edc_04": {
     "name": "Orologio Æthertech",
     "description": "Progettato dalla Portable Æthertech Labs e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
     "decoDesc": "Uno sperimentale equipaggiamento protettivo leggero. \n\"Alcuni utenti sostengono che i nostri prodotti provochino effetti emomutageni. Sono accuse assolutamente prive di fondamento.\"",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{atk_up:0%}</> di ATT. \nQuando il personaggio applica <#ba.noguard>Vulnerabilità</>, ottiene <@ba.vup>+{phy_dmg_up:0%}</> di <@ba.pd>danni fisici</> per {duration} s. Accumuli massimi: {max_stack:0}. Se il bersaglio ha già {stack_cond:0} accumulo/i di <#ba.noguard>Vulnerabilità</>, il personaggio ottiene un ulteriore <@ba.vup>+{phy_dmg_up2:0%}</> di danni fisici per {duration2} s. Questo effetto non si accumula."
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{atk_up:0%}</> di ATT.\nQuando il personaggio applica <#ba.noguard>Vulnerabilità</>, ottiene <@ba.vup>+{phy_dmg_up:0%}</> di <@ba.pd>danni fisici inflitti</> per {duration} s. Accumuli massimi: {max_stack:0}. Se il bersaglio ha {stack_cond:0} accumuli di <#ba.noguard>Vulnerabilità</>, il personaggio ottiene un ulteriore <@ba.vup>+{phy_dmg_up2:0%}</> di <@ba.pd>danni fisici inflitti</> per {duration2} s. Questo effetto non si accumula."
   },
   "item_equip_t4_suit_poise01_hand_01": {
     "name": "Guanti Æthertech",
     "description": "Progettato dalla Portable Æthertech Labs e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
     "decoDesc": "Uno sperimentale equipaggiamento protettivo leggero. \n\"Indossare sempre imbottiture extra durante l'utilizzo dei nostri prodotti. In caso di allucinazioni auditive o visive, TOGLIERSI IMMEDIATAMENTE di dosso i prodotti e mangiare qualcosa.\"",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{atk_up:0%}</> di ATT. \nQuando il personaggio applica <#ba.noguard>Vulnerabilità</>, ottiene <@ba.vup>+{phy_dmg_up:0%}</> di <@ba.pd>danni fisici</> per {duration} s. Accumuli massimi: {max_stack:0}. Se il bersaglio ha già {stack_cond:0} accumulo/i di <#ba.noguard>Vulnerabilità</>, il personaggio ottiene un ulteriore <@ba.vup>+{phy_dmg_up2:0%}</> di danni fisici per {duration2} s. Questo effetto non si accumula."
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{atk_up:0%}</> di ATT.\nQuando il personaggio applica <#ba.noguard>Vulnerabilità</>, ottiene <@ba.vup>+{phy_dmg_up:0%}</> di <@ba.pd>danni fisici inflitti</> per {duration} s. Accumuli massimi: {max_stack:0}. Se il bersaglio ha {stack_cond:0} accumuli di <#ba.noguard>Vulnerabilità</>, il personaggio ottiene un ulteriore <@ba.vup>+{phy_dmg_up2:0%}</> di <@ba.pd>danni fisici inflitti</> per {duration2} s. Questo effetto non si accumula."
   },
   "item_equip_t4_suit_poise01_hand_02": {
     "name": "Guanti leggeri Æthertech",
     "description": "Progettato dalla Portable Æthertech Labs e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
     "decoDesc": "Uno sperimentale equipaggiamento protettivo leggero. \n\"Indossare sempre imbottiture extra durante l'utilizzo dei nostri prodotti. In caso di allucinazioni auditive o visive, TOGLIERSI IMMEDIATAMENTE di dosso i prodotti e mangiare qualcosa.\"",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{atk_up:0%}</> di ATT. \nQuando il personaggio applica <#ba.noguard>Vulnerabilità</>, ottiene <@ba.vup>+{phy_dmg_up:0%}</> di <@ba.pd>danni fisici</> per {duration} s. Accumuli massimi: {max_stack:0}. Se il bersaglio ha già {stack_cond:0} accumulo/i di <#ba.noguard>Vulnerabilità</>, il personaggio ottiene un ulteriore <@ba.vup>+{phy_dmg_up2:0%}</> di danni fisici per {duration2} s. Questo effetto non si accumula."
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{atk_up:0%}</> di ATT.\nQuando il personaggio applica <#ba.noguard>Vulnerabilità</>, ottiene <@ba.vup>+{phy_dmg_up:0%}</> di <@ba.pd>danni fisici inflitti</> per {duration} s. Accumuli massimi: {max_stack:0}. Se il bersaglio ha {stack_cond:0} accumuli di <#ba.noguard>Vulnerabilità</>, il personaggio ottiene un ulteriore <@ba.vup>+{phy_dmg_up2:0%}</> di <@ba.pd>danni fisici inflitti</> per {duration2} s. Questo effetto non si accumula."
   },
   "item_equip_t4_suit_pulse_cryst01_body_01": {
     "name": "Tuta perturbante a impulsi",
@@ -1391,70 +1451,100 @@
     "decoDesc": "Equipaggiamento dal design innovativo. \nIn molti non sono riusciti a capire perché la Endfield Industries abbia aggiunto un miglior isolamento termico ai DPI a impulsi.",
     "setBonus": "Effetto set da 3 pezzi: Intensità delle Arti <@ba.vup>+{phy_spell_up:0}</>. \nQuando il personaggio applica <#ba.conduct>Elettrificazione</>, ottiene <@ba.vup>+{pulse_dmg_up:0%}</> di <@ba.pulse>danni da elettricità</> per {duration} s. Quando il personaggio applica <#ba.frozen>Solidificazione</>, ottiene <@ba.vup>+{cryst_dmg_up:0%}</> di <@ba.cryst>danni da ghiaccio</> per {duration2} s. Gli effetti descritti non si accumulano."
   },
+  "item_equip_t4_suit_spellburst_body_01": {
+    "name": "Armatura del bastione profondo",
+    "description": "Progettato in via indipendente dalla Endfield Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità di combattimento di chi lo usa.",
+    "decoDesc": "Progettata dalla Endfield dopo aver preso a riferimento l'equipaggiamento standard della STEY. \n\"Non credo sia necessario affrontare direttamente la Contaminazione...\"\n\"Ricevuto. È il momento di aggiungere un intero set di piastre d'acciaio per una difesa integrata\".",
+    "setBonus": "Effetto set da 3 pezzi: Danni da Arti inflitti <@ba.vup>+{spell_dmg_up:0%}</>.\nQuando il personaggio attiva <#ba.naturalburst>Esplosione di natura</> o <#ba.crystburst>Esplosione di ghiaccio</>, incrementa l'intensità delle Arti di <@ba.vup>+{phy_spell_up:0}</> per {duration} s. Accumuli massimi: {max_stack}. Ciascun accumulo ha una sua durata indipendente. L'effetto si attiva una sola volta ogni 0,1 s."
+  },
+  "item_equip_t4_suit_spellburst_edc_01": {
+    "name": "Comunicatore del bastione profondo",
+    "description": "Progettato in via indipendente dalla Endfield Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità di combattimento di chi lo usa.",
+    "decoDesc": "Progettato dalla Endfield dopo aver preso come riferimento l'equipaggiamento standard della squadra tattica d'élite di Yinglung. \n\"Dovremmo ridurre i tempi di ricarica…\"\n\"Ricevuto. Aggiungeremo batterie di xiranite ai comunicatori protocollari per massimizzare la durata operativa!\"",
+    "setBonus": "Effetto set da 3 pezzi: Danni da Arti inflitti <@ba.vup>+{spell_dmg_up:0%}</>.\nQuando il personaggio attiva <#ba.naturalburst>Esplosione di natura</> o <#ba.crystburst>Esplosione di ghiaccio</>, incrementa l'intensità delle Arti di <@ba.vup>+{phy_spell_up:0}</> per {duration} s. Accumuli massimi: {max_stack}. Ciascun accumulo ha una sua durata indipendente. L'effetto si attiva una sola volta ogni 0,1 s."
+  },
+  "item_equip_t4_suit_spellburst_hand_01": {
+    "name": "Coprimani del bastione profondo",
+    "description": "Progettato in via indipendente dalla Endfield Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità di combattimento di chi lo usa.",
+    "decoDesc": "Progettati dalla Endfield dopo aver preso come riferimento l'equipaggiamento standard della squadra tattica d'élite di Yinglung. \n\"Dovremmo pensare agli imprevisti…\"\n\"Ricevuto. Rinforziamo le scaglie dell'armatura delle dita, così sarà utile sia per la difesa che per l'attacco!\"",
+    "setBonus": "Effetto set da 3 pezzi: Danni da Arti inflitti <@ba.vup>+{spell_dmg_up:0%}</>.\nQuando il personaggio attiva <#ba.naturalburst>Esplosione di natura</> o <#ba.crystburst>Esplosione di ghiaccio</>, incrementa l'intensità delle Arti di <@ba.vup>+{phy_spell_up:0}</> per {duration} s. Accumuli massimi: {max_stack}. Ciascun accumulo ha una sua durata indipendente. L'effetto si attiva una sola volta ogni 0,1 s."
+  },
   "item_equip_t4_suit_usp02_body_01": {
     "name": "Armatura di xiranite eterna",
     "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità combattive di chi lo usa.",
     "decoDesc": "Eredità di un Tianshi \"folle\". \n... Pochi riuscirebbero a trovare un collegamento tra le attività culinarie e la xiranite. Eppure, un residente di Wuling in particolare riesce a trarne ispirazione quando pasteggia al ristorante.",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{hp_up}</> di PS.\nQuando il personaggio applica <#ba.enhance>Amplificazione</>, <#ba.guard>Protezione</>, <#ba.vulnerable>Suscettibilità</> o <#ba.weak>Indebolimento</>, gli altri compagni di squadra infliggono <@ba.vup>+{dmg_up:0%}</> di danni per {duration} s. Questo effetto non si accumula."
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{hp_up}</> di PS.\nQuando il personaggio attiva <#ba.enhance>Amplificazione</>, <#ba.guard>Protezione</>, <#ba.vulnerable>Suscettibilità</> o <#ba.weak>Debolezza</>, gli altri compagni di squadra infliggono <@ba.vup>+{dmg_up:0%}</> di danni per {duration} s. Questo effetto non si accumula."
   },
   "item_equip_t4_suit_usp02_body_03": {
     "name": "Armatura di xiranite eterna leggera",
     "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità di combattimento di chi lo usa.",
     "decoDesc": "Eredità di un Tianshi \"folle\". \n\"Secondo me è troppo pesante. Guarda. È ridotto all'osso come i resti sbiancati delle bestie lungo la strada. Bisogna viaggiare leggeri, capito? LEGGERI!\"",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{hp_up}</> di PS.\nQuando il personaggio applica <#ba.enhance>Amplificazione</>, <#ba.guard>Protezione</>, <#ba.vulnerable>Suscettibilità</> o <#ba.weak>Indebolimento</>, gli altri compagni di squadra infliggono <@ba.vup>+{dmg_up:0%}</> di danni per {duration} s. Questo effetto non si accumula."
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{hp_up}</> di PS.\nQuando il personaggio attiva <#ba.enhance>Amplificazione</>, <#ba.guard>Protezione</>, <#ba.vulnerable>Suscettibilità</> o <#ba.weak>Debolezza</>, gli altri compagni di squadra infliggono <@ba.vup>+{dmg_up:0%}</> di danni per {duration} s. Questo effetto non si accumula."
   },
   "item_equip_t4_suit_usp02_body_04": {
     "name": "Armatura di xiranite eterna leggera O1",
     "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità di combattimento di chi lo usa.",
     "decoDesc": "Eredità di un Tianshi \"folle\". \n\"Secondo me è troppo pesante. Guarda. È ridotto all'osso come i resti sbiancati delle bestie lungo la strada. Bisogna viaggiare leggeri, capito? LEGGERI!\"",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{hp_up}</> di PS.\nQuando il personaggio applica <#ba.enhance>Amplificazione</>, <#ba.guard>Protezione</>, <#ba.vulnerable>Suscettibilità</> o <#ba.weak>Indebolimento</>, gli altri compagni di squadra infliggono <@ba.vup>+{dmg_up:0%}</> di danni per {duration} s. Questo effetto non si accumula."
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{hp_up}</> di PS.\nQuando il personaggio attiva <#ba.enhance>Amplificazione</>, <#ba.guard>Protezione</>, <#ba.vulnerable>Suscettibilità</> o <#ba.weak>Debolezza</>, gli altri compagni di squadra infliggono <@ba.vup>+{dmg_up:0%}</> di danni per {duration} s. Questo effetto non si accumula."
   },
   "item_equip_t4_suit_usp02_edc_01": {
     "name": "Nucleo energetico di xiranite eterna",
     "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità combattive di chi lo usa.",
     "decoDesc": "Eredità di un Tianshi \"folle\". \n... Un tempo, percorreva le strade con un'ampia ciotola di tofu stufato nel latte Rugiada di bambù, e sosteneva di aver creato una tecnologia refrigerante di nuova generazione a base di xiranite.",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{hp_up}</> di PS.\nQuando il personaggio applica <#ba.enhance>Amplificazione</>, <#ba.guard>Protezione</>, <#ba.vulnerable>Suscettibilità</> o <#ba.weak>Indebolimento</>, gli altri compagni di squadra infliggono <@ba.vup>+{dmg_up:0%}</> di danni per {duration} s. Questo effetto non si accumula."
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{hp_up}</> di PS.\nQuando il personaggio attiva <#ba.enhance>Amplificazione</>, <#ba.guard>Protezione</>, <#ba.vulnerable>Suscettibilità</> o <#ba.weak>Debolezza</>, gli altri compagni di squadra infliggono <@ba.vup>+{dmg_up:0%}</> di danni per {duration} s. Questo effetto non si accumula."
   },
   "item_equip_t4_suit_usp02_edc_02": {
     "name": "Nucleo energetico di xiranite eterna O1",
     "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità combattive di chi lo usa.",
     "decoDesc": "Eredità di un Tianshi \"folle\". \n... Un tempo, percorreva le strade con un'ampia ciotola di tofu stufato nel latte Rugiada di bambù, e sosteneva di aver creato una tecnologia refrigerante di nuova generazione a base di xiranite.",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{hp_up}</> di PS.\nQuando il personaggio applica <#ba.enhance>Amplificazione</>, <#ba.guard>Protezione</>, <#ba.vulnerable>Suscettibilità</> o <#ba.weak>Indebolimento</>, gli altri compagni di squadra infliggono <@ba.vup>+{dmg_up:0%}</> di danni per {duration} s. Questo effetto non si accumula."
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{hp_up}</> di PS.\nQuando il personaggio attiva <#ba.enhance>Amplificazione</>, <#ba.guard>Protezione</>, <#ba.vulnerable>Suscettibilità</> o <#ba.weak>Debolezza</>, gli altri compagni di squadra infliggono <@ba.vup>+{dmg_up:0%}</> di danni per {duration} s. Questo effetto non si accumula."
   },
   "item_equip_t4_suit_usp02_edc_03": {
     "name": "Braccio secondario di xiranite eterna",
     "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità combattive di chi lo usa.",
     "decoDesc": "Eredità di un Tianshi \"folle\". \n... Si dice che il folle Tianshi vide un \"ciclo di autonutrimento\" in una pentola di brodo servita da uno chef Ursus. Questa ispirazione gli permise di incrementare la durata energetica dell'equipaggiamento protettivo di xiranite eterna ben oltre il doppio.",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{hp_up}</> di PS.\nQuando il personaggio applica <#ba.enhance>Amplificazione</>, <#ba.guard>Protezione</>, <#ba.vulnerable>Suscettibilità</> o <#ba.weak>Indebolimento</>, gli altri compagni di squadra infliggono <@ba.vup>+{dmg_up:0%}</> di danni per {duration} s. Questo effetto non si accumula."
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{hp_up}</> di PS.\nQuando il personaggio attiva <#ba.enhance>Amplificazione</>, <#ba.guard>Protezione</>, <#ba.vulnerable>Suscettibilità</> o <#ba.weak>Debolezza</>, gli altri compagni di squadra infliggono <@ba.vup>+{dmg_up:0%}</> di danni per {duration} s. Questo effetto non si accumula."
   },
   "item_equip_t4_suit_usp02_edc_04": {
     "name": "Placca di sostegno di xiranite eterna",
     "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità di combattimento di chi lo usa.",
     "decoDesc": "Eredità di un Tianshi \"folle\". \nIl Tianshi responsabile del passaggio del progetto originale alla fase di produzione si rese anche conto che era troppo scarno. Pertanto, progettò delle lastre protettive aggiuntive per rafforzare le difese.",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{hp_up}</> di PS.\nQuando il personaggio applica <#ba.enhance>Amplificazione</>, <#ba.guard>Protezione</>, <#ba.vulnerable>Suscettibilità</> o <#ba.weak>Indebolimento</>, gli altri compagni di squadra infliggono <@ba.vup>+{dmg_up:0%}</> di danni per {duration} s. Questo effetto non si accumula."
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{hp_up}</> di PS.\nQuando il personaggio attiva <#ba.enhance>Amplificazione</>, <#ba.guard>Protezione</>, <#ba.vulnerable>Suscettibilità</> o <#ba.weak>Debolezza</>, gli altri compagni di squadra infliggono <@ba.vup>+{dmg_up:0%}</> di danni per {duration} s. Questo effetto non si accumula."
+  },
+  "item_equip_t4_suit_usp02_edc_05": {
+    "name": "Placca di sostegno di xiranite eterna T1",
+    "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità di combattimento di chi lo usa.",
+    "decoDesc": "Eredità di un Tianshi \"folle\". \nIl Tianshi responsabile del passaggio del progetto originale alla fase di produzione si rese anche conto che era troppo scarno. Pertanto, progettò delle lastre protettive aggiuntive per rafforzare le difese.",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{hp_up}</> di PS.\nQuando il personaggio attiva <#ba.enhance>Amplificazione</>, <#ba.guard>Protezione</>, <#ba.vulnerable>Suscettibilità</> o <#ba.weak>Debolezza</>, gli altri compagni di squadra infliggono <@ba.vup>+{dmg_up:0%}</> di danni per {duration} s. Questo effetto non si accumula."
+  },
+  "item_equip_t4_suit_usp02_edc_06": {
+    "name": "Placca pesante di xiranite eterna",
+    "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità di combattimento di chi lo usa.",
+    "decoDesc": "Eredità di un Tianshi \"folle\". \nSe le lastre per l'armatura venissero realizzate con il massimo spessore possibile, le vulnerabilità difensive dell'equipaggiamento di xiranite eterna non sarebbero più problemi critici tali da compromettere i progetti complessivi.",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{hp_up}</> di PS.\nQuando il personaggio attiva <#ba.enhance>Amplificazione</>, <#ba.guard>Protezione</>, <#ba.vulnerable>Suscettibilità</> o <#ba.weak>Debolezza</>, gli altri compagni di squadra infliggono <@ba.vup>+{dmg_up:0%}</> di danni per {duration} s. Questo effetto non si accumula."
   },
   "item_equip_t4_suit_usp02_hand_01": {
     "name": "Guanti di xiranite eterna",
     "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità combattive di chi lo usa.",
     "decoDesc": "Eredità di un Tianshi \"folle\". \n... I giorni passavano, e il folle Tianshi iniziava a rifiutare qualsiasi cibo che \"non regalasse ispirazione\". Dopo essersi ridotto a pelle e ossa, sparì presto nelle terre selvagge in cerca di \"xiranite appetibile\".",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{hp_up}</> di PS.\nQuando il personaggio applica <#ba.enhance>Amplificazione</>, <#ba.guard>Protezione</>, <#ba.vulnerable>Suscettibilità</> o <#ba.weak>Indebolimento</>, gli altri compagni di squadra infliggono <@ba.vup>+{dmg_up:0%}</> di danni per {duration} s. Questo effetto non si accumula."
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{hp_up}</> di PS.\nQuando il personaggio attiva <#ba.enhance>Amplificazione</>, <#ba.guard>Protezione</>, <#ba.vulnerable>Suscettibilità</> o <#ba.weak>Debolezza</>, gli altri compagni di squadra infliggono <@ba.vup>+{dmg_up:0%}</> di danni per {duration} s. Questo effetto non si accumula."
   },
   "item_equip_t4_suit_usp02_hand_02": {
     "name": "Guanti di xiranite eterna O1",
     "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità combattive di chi lo usa.",
     "decoDesc": "Eredità di un Tianshi \"folle\". \n... I giorni passavano, e il folle Tianshi iniziava a rifiutare qualsiasi cibo che \"non regalasse ispirazione\". Dopo essersi ridotto a pelle e ossa, sparì presto nelle terre selvagge in cerca di \"xiranite appetibile\".",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{hp_up}</> di PS.\nQuando il personaggio applica <#ba.enhance>Amplificazione</>, <#ba.guard>Protezione</>, <#ba.vulnerable>Suscettibilità</> o <#ba.weak>Indebolimento</>, gli altri compagni di squadra infliggono <@ba.vup>+{dmg_up:0%}</> di danni per {duration} s. Questo effetto non si accumula."
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{hp_up}</> di PS.\nQuando il personaggio attiva <#ba.enhance>Amplificazione</>, <#ba.guard>Protezione</>, <#ba.vulnerable>Suscettibilità</> o <#ba.weak>Debolezza</>, gli altri compagni di squadra infliggono <@ba.vup>+{dmg_up:0%}</> di danni per {duration} s. Questo effetto non si accumula."
   },
   "item_equip_t4_suit_usp02_hand_03": {
     "name": "Fasce di xiranite eterna",
     "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità di combattimento di chi lo usa.",
     "decoDesc": "Eredità di un Tianshi \"folle\". \n\"Chi diavolo ha intessuto la xiranite nella fibra? Siete pazzi?\"",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{hp_up}</> di PS.\nQuando il personaggio applica <#ba.enhance>Amplificazione</>, <#ba.guard>Protezione</>, <#ba.vulnerable>Suscettibilità</> o <#ba.weak>Indebolimento</>, gli altri compagni di squadra infliggono <@ba.vup>+{dmg_up:0%}</> di danni per {duration} s. Questo effetto non si accumula."
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{hp_up}</> di PS.\nQuando il personaggio attiva <#ba.enhance>Amplificazione</>, <#ba.guard>Protezione</>, <#ba.vulnerable>Suscettibilità</> o <#ba.weak>Debolezza</>, gli altri compagni di squadra infliggono <@ba.vup>+{dmg_up:0%}</> di danni per {duration} s. Questo effetto non si accumula."
   },
   "item_equip_t4_suit_usp02_hand_04": {
     "name": "Mani di xiranite eterna",
     "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità di combattimento di chi lo usa.",
     "decoDesc": "Eredità di un Tianshi \"folle\". \nIndossala... lascia che il potere scorra attraverso la tua pelle, lascia che l'energia ti permei la carne e il sangue.",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{hp_up}</> di PS.\nQuando il personaggio applica <#ba.enhance>Amplificazione</>, <#ba.guard>Protezione</>, <#ba.vulnerable>Suscettibilità</> o <#ba.weak>Indebolimento</>, gli altri compagni di squadra infliggono <@ba.vup>+{dmg_up:0%}</> di danni per {duration} s. Questo effetto non si accumula."
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{hp_up}</> di PS.\nQuando il personaggio attiva <#ba.enhance>Amplificazione</>, <#ba.guard>Protezione</>, <#ba.vulnerable>Suscettibilità</> o <#ba.weak>Debolezza</>, gli altri compagni di squadra infliggono <@ba.vup>+{dmg_up:0%}</> di danni per {duration} s. Questo effetto non si accumula."
   }
 }

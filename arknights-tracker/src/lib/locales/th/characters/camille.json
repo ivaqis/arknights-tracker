@@ -43,7 +43,7 @@
       "dmgMultiplier": "ตัวคูณ​ DMG",
       "stagger": "เซ​ไป​เซ​มา",
       "firefangVesperwingsDurationS": "ระยะเวลา​ของ​ไฟร์​แฟง​เวส​เปอร์​วิง​ก์​ (วินาที​)",
-      "weaknessEffect": "เอฟเฟกต์​จุดอ่อน",
+      "weakness": "จุดอ่อน",
       "heatSusceptibility": "อ่อนไหว​ต่อ​การ​โจมตี​ความร้อน",
       "explosionDmgMultiplier": "ตัวคูณ​ DMG การระเบิด"
     },
@@ -54,9 +54,9 @@
       "stagger": "เซ​ไป​เซ​มา",
       "spRecovery": "การฟื้นฟู​ SP",
       "hunterPursuitDmgMultiplier": "ตัวคูณ​ DMG การ​ไล่​ล่า​ของ​นัก​ล่า",
-      "hunterPursuitStagger": "การ​ไล่​ล่า​ของ​นัก​ล่า​ทำให้​ติด​สถานะ​เซ​ไป​เซ​มา",
-      "hunterPursuitSpRecovery": "การฟื้นฟู​ SP การ​ไล่​ล่า​ของ​นัก​ล่า",
-      "ultimateEnergyGain": "การ​ได้​พลังงาน​อัล​ติ​เมท"
+      "hunterPursuitStagger": "สถานะ​เซ​ไป​เซ​มาจาก​การ​ไล่​ล่า​ของ​นัก​ล่า",
+      "hunterPursuitSpRecovery": "ฟื้นฟู​ SP จาก​การ​ไล่​ล่า​ของ​นัก​ล่า",
+      "ultimateEnergyGain": "ได้รับ​พลังงาน​อัล​ติ​เมท"
     },
     "ultimate": {
       "name": "แดง​โลหิต​สาด​กระหน่ำ",
@@ -64,7 +64,7 @@
       "dmgMultiplier": "ตัวคูณ​ DMG",
       "stagger": "เซ​ไป​เซ​มา",
       "spRecovery": "การฟื้นฟู​ SP",
-      "hunterPursuitStateDurationS": "ระยะเวลา​สถานะ​การ​ไล่​ล่า​ (วิ​)"
+      "hunterPursuitStateDurationS": "ระยะเวลา​สถานะ​การ​ไล่​ล่า​ (วินาที​)"
     },
     "indicator": {
       "levels": [
@@ -162,7 +162,7 @@
       },
       {
         "voId": "chr_0033_camille_chrup_skill_01",
-        "title": "การ​เปิด​ใช้งาน​เมทริกซ์​ความสามารถ",
+        "title": "การ​เปิด​ใช้งาน​โหนด​พรสวรรค์",
         "text": "กำจัด​มลทิน​เรียบร้อย​ เลือด​ฉัน​บริสุทธิ์​ขึ้น​กว่า​เดิม"
       },
       {

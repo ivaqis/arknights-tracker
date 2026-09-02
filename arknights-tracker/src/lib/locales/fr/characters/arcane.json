@@ -28,7 +28,7 @@
   "skills": {
     "basicAttack": {
       "name": "Interdiction de l'artillerie",
-      "description": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 5 séquences qui inflige des <@ba.natur>DÉG naturels</>. Si vous contrôlez l'opératrice, le <#ba.lastcombo>Coup final</> inflige également Déséquilibre <@ba.poise>{poise:0}</> fois. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.natur>DÉG naturels</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.natur>DÉG naturels</> et restaure quelques PC.",
+      "description": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 5 séquences qui inflige des <@ba.natur>DÉG naturels</>. Si vous contrôlez l'opératrice, le <#ba.lastcombo>Coup final</> inflige également <@ba.poise>{poise:0}</> points de Déséquilibre. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.natur>DÉG naturels</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.natur>DÉG naturels</> et restaure quelques PC.",
       "batkSeq1Multiplier": "Multiplicateur d'ATQ-B SÉQ 1",
       "batkSeq2Multiplier": "Multiplicateur d'ATQ-B SÉQ 2",
       "batkSeq3Multiplier": "Multiplicateur d'ATQ-B SÉQ 3",
@@ -85,7 +85,7 @@
         "imprisonmentAndSusceptibilityDurationS": "Durée de sensibilité et d'Emprisonnement (s)",
         "baseSusceptibility": "Sensibilité de base",
         "maxBonusSusceptibilityFromWill": "Bonus max. de sensibilité par Volonté",
-        "willRequiredForMaxBonusSusceptibility": "Volonté requise pour le bonus max. de sensibilité"
+        "willForMaxBonusSusceptibility": "Volonté pour le bonus max. de sensibilité"
       },
       "baseDmgMultiplier": "Multiplicateur de DÉG de base",
       "baseStagger": "Déséquilibre de base",
@@ -140,7 +140,7 @@
     },
     "talent2": {
       "levels": [
-        "La <#ba.corrupt>Corrosion</> appliquée par Arcane dure <@ba.vup>{duration_add:0}</> s de plus et fait passer la réduction de résistance max. à <@ba.vup>{1+corrupt_rate:0.00}</> fois sa valeur d'origine.",
+        "La <#ba.corrupt>Corrosion</> appliquée par Arcane dure <@ba.vup>{duration_add:0}</> s de plus et fait passer la réduction de résistance max. à <@ba.vup>{1+corrupt_rate:0.00}</> fois sa valeur d'origine.",
         "La <#ba.corrupt>Corrosion</> appliquée par Arcane dure <@ba.vup>{duration_add:0}</> s de plus et fait passer la réduction de résistance max. à <@ba.vup>{1+corrupt_rate:0.0}</> fois sa valeur d'origine."
       ],
       "name": "Armes affûtées"
@@ -218,7 +218,7 @@
       },
       {
         "voId": "chr_0032_lizhiyan_chrup_skill_01",
-        "title": "Activation de la matrice de capacités",
+        "title": "Activation du nœud de talent",
         "text": "Aiguisez vos sens au maximum, et vous l'emporterez, quelle que soit la situation."
       },
       {

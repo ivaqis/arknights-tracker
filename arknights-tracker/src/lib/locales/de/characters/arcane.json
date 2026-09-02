@@ -85,7 +85,7 @@
         "imprisonmentAndSusceptibilityDurationS": "Dauer von Gefangenschaft und Empfänglichkeit (Sek.)",
         "baseSusceptibility": "Standard-Empfänglichkeit",
         "maxBonusSusceptibilityFromWill": "Max. Bonus-Empfänglichkeit durch Wille",
-        "willRequiredForMaxBonusSusceptibility": "Der für eine max. Bonus-Empfänglichkeit erforderliche Wille"
+        "willForMaxBonusSusceptibility": "Für MAX. Bonus-Empfänglichkeit erforderlicher Wille"
       },
       "baseDmgMultiplier": "Standard-SDN-Multiplikator",
       "baseStagger": "Standard-Taumeln",
@@ -140,7 +140,7 @@
     },
     "talent2": {
       "levels": [
-        "Von Arkan gewirkte <#ba.corrupt>Korrosion</> dauert <@ba.vup>{duration_add:0}</> Sek. länger an. Die max. Resistenzverringerung wird auf das <@ba.vup>{1+corrupt_rate:0.00}</>-Fache des Ursprungswerts erhöht.",
+        "Von Arkan gewirkte <#ba.corrupt>Korrosion</> dauert <@ba.vup>{duration_add:0}</> Sek. länger an. Die max. Resistenzverringerung wird auf das <@ba.vup>{1+corrupt_rate:0.00}</>-Fache des Ursprungswerts erhöht.",
         "Von Arkan gewirkte <#ba.corrupt>Korrosion</> dauert <@ba.vup>{duration_add:0}</> Sek. länger an. Die max. Resistenzverringerung wird auf das <@ba.vup>{1+corrupt_rate:0.0}</>-Fache des Ursprungswerts erhöht."
       ],
       "name": "Waffentraining"
@@ -218,7 +218,7 @@
       },
       {
         "voId": "chr_0032_lizhiyan_chrup_skill_01",
-        "title": "Fähigkeitsmatrix-Aktivierung",
+        "title": "Talentknoten-Aktivierung",
         "text": "Wenn du dich extrem perfektionierst, kannst du dich stets ruhig durchsetzen, egal in welcher Situation."
       },
       {

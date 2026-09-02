@@ -43,7 +43,7 @@
       "dmgMultiplier": "Множитель УРН",
       "stagger": "Ошеломление",
       "firefangVesperwingsDurationS": "Длит. «Огнезубых крыланов» (сек.)",
-      "weaknessEffect": "Эффект слабости",
+      "weakness": "Слабость",
       "heatSusceptibility": "Восприимчивость к теплу",
       "explosionDmgMultiplier": "Множитель УРН взрыва"
     },
@@ -162,7 +162,7 @@
       },
       {
         "voId": "chr_0033_camille_chrup_skill_01",
-        "title": "Активация Матрицы умений",
+        "title": "Активация карты талантов",
         "text": "Примеси устранены. Кровь стала чище."
       },
       {

@@ -356,6 +356,54 @@ export const weaponRotations = {
       "weekly6": "rapidAscent",
       "weekly5": "objRazorhorn",
       "dailyTemplate": "B"
+    },
+    {
+      "week": 33,
+      "startDate": "2026/09/03",
+      "endDate": "2026/09/10",
+      "weekly6": "oblivion",
+      "weekly5": "fortmaker",
+      "dailyTemplate": "C"
+    },
+    {
+      "week": 34,
+      "startDate": "2026/09/10",
+      "endDate": "2026/09/17",
+      "weekly6": "jet",
+      "weekly5": "rationalFarewell",
+      "dailyTemplate": "A"
+    },
+    {
+      "week": 35,
+      "startDate": "2026/09/17",
+      "endDate": "2026/09/24",
+      "weekly6": "exemplar",
+      "weekly5": "objArtsIdentifier",
+      "dailyTemplate": "B"
+    },
+    {
+      "week": 36,
+      "startDate": "2026/09/24",
+      "endDate": "2026/10/01",
+      "weekly6": "whiteNightNova",
+      "weekly5": "chimericJustice",
+      "dailyTemplate": "C"
+    },
+    {
+      "week": 37,
+      "startDate": "2026/10/01",
+      "endDate": "2026/10/08",
+      "weekly6": "wedge",
+      "weekly5": "seekerOfDarkLung",
+      "dailyTemplate": "A"
+    },
+    {
+      "week": 38,
+      "startDate": "2026/10/08",
+      "endDate": "2026/10/15",
+      "weekly6": "chivalricVirtues",
+      "weekly5": "objVelocitous",
+      "dailyTemplate": "C"
     }
   ]
 };

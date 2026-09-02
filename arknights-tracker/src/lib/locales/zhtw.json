@@ -376,7 +376,11 @@
     "special_1_4_1": "臨淵望北",
     "weponbox_1_4_1": "軍列申領",
     "special_1_4_2": "晨星於此閃耀",
-    "weponbox_1_4_2": "明曜申領"
+    "weponbox_1_4_2": "明曜申領",
+    "special_1_5_1": "冬獵",
+    "weponbox_1_5_1": "幽寒申領",
+    "weponbox_1_5_2": "點繪申領",
+    "special_1_5_2": "絢麗異彩"
   },
   "pages": {
     "home": "首頁",
@@ -472,7 +476,17 @@
     "gazeNorthToTheRiftSignIn": "踞淵北眺簽到",
     "protocolInvitationTheReturn": "協議邀約：重歸",
     "bedazzlingDawnstarSignIn": "明耀晨星簽到",
-    "aForestMantledInSnow": "深林覆雪簽到"
+    "aForestMantledInSnow": "深林覆雪簽到",
+    "seasonOfVirtuality": "虛像賽季",
+    "seasonOfIllusion": "錯視賽季",
+    "runnersSteeplechase": "跑者運動會",
+    "snowOverDeepWoods": "雪降深林",
+    "aicSupportChubbyLungAttacks": "集成援助·泡泡出擊",
+    "ridgelineFlowsOfAutumnSignIn": "陵水渡秋簽到",
+    "trialOfTheBow": "挽弓試煉",
+    "protocolPassGloomwald": "協議通行證·幽林",
+    "orbipomMerge": "融合！山團團！",
+    "fletchedIrontipSignIn": "鏃礪括羽簽到"
   },
   "mouths": {
     "january": "一月",
@@ -922,7 +936,26 @@
     "heavyXiragen": "重息壤氣",
     "crimsonSpearleaf": "紅矛葉",
     "talosCap": "塔羅斯菌",
-    "protocolith": "協議紋石"
+    "protocolith": "協議紋石",
+    "caudalGoldscales": "尾尖金甲",
+    "yazhenSeeds": "芽針種子",
+    "reedRyeSeeds": "灰蘆麥種子",
+    "tartpepperSeeds": "苦葉椒種子",
+    "redjadeGinsengSeeds": "瓊葉蔘種子",
+    "amberRiceSeeds": "金石稻種子",
+    "protoXiranCuprium": "實驗息壤銅錠",
+    "protoXiranCupriumPart": "實驗息壤銅零件",
+    "protoXiranCupriumGas": "實驗息壤銅氣",
+    "protoXiranCupriumFrame": "實驗息壤銅骨骼",
+    "protoCupriumFrame": "實驗銅骨骼",
+    "protoChubbyLungShell": "實驗龍泡泡外殼",
+    "protoChubbyLungHeavyShell": "實驗龍泡泡重殼",
+    "heavyXiraniteChubbyLung": "重息壤龍泡泡",
+    "protoHeavyXiranite": "實驗重息壤塊",
+    "xiraniteChubbyLung": "息壤龍泡泡",
+    "protoXiranite": "實驗息壤塊",
+    "tenderMoss": "柔嫩苔蘚",
+    "slugSprig": "蟲角嫩枝"
   },
   "common": {
     "copy": "複製",
@@ -1160,7 +1193,8 @@
     "mifu": "弭弗",
     "camille": "卡繆",
     "arcane": "訣",
-    "liino": "梨諾"
+    "liino": "梨諾",
+    "typhoeus": "提弗洛斯"
   },
   "weaponsList": {
     "custom_weapon": "自訂武器",
@@ -1240,7 +1274,9 @@
     "junctionPoint": "聯結點",
     "goldenAge": "黃金時代",
     "farsight": "遙望",
-    "bedazzlingNightDebut": "曜夜的首演"
+    "bedazzlingNightDebut": "曜夜的首演",
+    "umbraOfFrigidEventide": "寒夜幽影",
+    "sufferingsEnd": "苦難的盡頭"
   },
   "cookies": {
     "title": "我們使用 Cookie",
@@ -1358,7 +1394,14 @@
     "world_energy_point11_4": "重度能量淤積點·北部禁區",
     "world_energy_point11_5": "重度能量淤積點·北部禁區",
     "world_energy_point11_6": "重度能量淤積點·北部禁區",
-    "world_energy_point11_7": "重度能量淤積點·北部禁區"
+    "world_energy_point11_7": "重度能量淤積點·北部禁區",
+    "world_energy_point12_1": "能量淤積點·雪松林",
+    "world_energy_point12_2": "能量淤積點·雪松林",
+    "world_energy_point12_3": "能量淤積點·雪松林",
+    "world_energy_point12_4": "重度能量淤積點·雪松林",
+    "world_energy_point12_5": "重度能量淤積點·雪松林",
+    "world_energy_point12_6": "重度能量淤積點·雪松林",
+    "world_energy_point12_7": "重度能量淤積點·雪松林"
   },
   "enemies": {
     "eny_0007_mimicw": "潛地虯獸",
@@ -1444,7 +1487,15 @@
     "eny_0122_kltdbud": "蝕影應龍尖兵",
     "eny_0123_klcap": "蝕影應龍破陣手",
     "eny_0124_kltdcap": "蝕影應龍隊長",
-    "eny_0125_fdcentur": "阿萊克琉斯，千夫長"
+    "eny_0125_fdcentur": "阿萊克琉斯，千夫長",
+    "eny_0127_bigents": "幽林之怒",
+    "eny_0128_babyents": "徘徊樹傀",
+    "eny_0129_slwood": "蟲體樹傀",
+    "tatget_001_normal": "新手標靶",
+    "tatget_002_endurance": "標準標靶",
+    "tatget_003_expand": "屏障標靶",
+    "tatget_004_armor": "重型標靶",
+    "tatget_005_shield": "能量護盾"
   },
   "essencesPage": {
     "optimizer": "刷取優化器",
@@ -1725,7 +1776,22 @@
     "item_equip_t4_suit_usp02_body_04": "長息輕護甲·I",
     "item_equip_t4_suit_usp02_edc_04": "長息加固板",
     "item_equip_t4_suit_usp02_hand_03": "長息裹手",
-    "item_equip_t4_suit_usp02_hand_04": "長息手套"
+    "item_equip_t4_suit_usp02_hand_04": "長息手套",
+    "item_equip_t4_parts_wuling00_body_04": "集成實訓突襲護甲",
+    "item_equip_t4_parts_wuling00_body_05": "集成實訓醫療護甲",
+    "item_equip_t4_parts_wuling00_edc_04": "集成實訓突襲刺刃",
+    "item_equip_t4_parts_wuling00_edc_05": "集成實訓供能栓",
+    "item_equip_t4_parts_wuling00_hand_04": "集成實訓突襲護手",
+    "item_equip_t4_parts_wuling00_hand_05": "集成實訓醫療護手",
+    "item_equip_t4_suit_burst01_body_02": "落潮輕甲·I",
+    "item_equip_t4_suit_burst01_body_03": "湧浪重裝甲",
+    "item_equip_t4_suit_burst01_edc_03": "濁流切割炬·I",
+    "item_equip_t4_suit_burst01_hand_02": "沉水手套",
+    "item_equip_t4_suit_spellburst_body_01": "險關裝甲",
+    "item_equip_t4_suit_spellburst_edc_01": "險關通訊器",
+    "item_equip_t4_suit_spellburst_hand_01": "險關手甲",
+    "item_equip_t4_suit_usp02_edc_05": "長息加固板·I",
+    "item_equip_t4_suit_usp02_edc_06": "長息重護板"
   },
   "packs": {
     "none": "無套裝",
@@ -1775,7 +1841,8 @@
     "suit_combo_cd01": "清波",
     "suit_expend_spell01": "壤流",
     "suit_crush_fracture": "舊鋒",
-    "suit_generaltype": "集成實訓"
+    "suit_generaltype": "集成實訓",
+    "suit_spellburst": "險關"
   },
   "equipmentTypes": {
     "body": "護甲",
@@ -1843,7 +1910,8 @@
     "wiki_group_monster_hongshan": "滄賊",
     "wiki_group_monster_animal": "野外生物",
     "wiki_group_monster_kl": "蝕影",
-    "wiki_group_monster_js": "造裔"
+    "wiki_group_monster_js": "造裔",
+    "wiki_group_monster_witchcraft": "巫術造物"
   },
   "resitances": {
     "heatRez": "灼熱抗性",
@@ -2615,6 +2683,7 @@
   },
   "audio_player": {
     "playback_error": "音訊載入失敗",
+    "not_found": "音訊未找到 (404)",
     "open_raw": "Open raw"
   }
 }

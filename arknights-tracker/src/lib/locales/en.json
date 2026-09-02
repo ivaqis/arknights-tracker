@@ -402,7 +402,11 @@
     "special_1_4_1": "North Yearns the Rift Vigile",
     "weponbox_1_4_1": "Military Grade Issue",
     "special_1_4_2": "Good Morning from Your Dawnstar",
-    "weponbox_1_4_2": "Bedazzled Issue"
+    "weponbox_1_4_2": "Bedazzled Issue",
+    "special_1_5_1": "Winter Hunt",
+    "weponbox_1_5_1": "Deep Cold Issue",
+    "weponbox_1_5_2": "Tag Artist Issue",
+    "special_1_5_2": "Resplendent Spectrum"
   },
   "pages": {
     "home": "Home",
@@ -498,7 +502,17 @@
     "gazeNorthToTheRiftSignIn": "Gaze North to the Rift Sign-In",
     "protocolInvitationTheReturn": "Protocol Invitation: The Return",
     "bedazzlingDawnstarSignIn": "Bedazzling Dawnstar Sign-In",
-    "aForestMantledInSnow": "A Forest Mantled in Snow"
+    "aForestMantledInSnow": "A Forest Mantled in Snow",
+    "seasonOfVirtuality": "Season of Virtuality",
+    "seasonOfIllusion": "Season of Illusion",
+    "runnersSteeplechase": "Runners' Steeplechase",
+    "snowOverDeepWoods": "Snow Over Deep Woods",
+    "aicSupportChubbyLungAttacks": "AIC Support: Chubby Lung Attacks",
+    "ridgelineFlowsOfAutumnSignIn": "Ridgeline Flows of Autumn Sign-In",
+    "trialOfTheBow": "Trial of the Bow",
+    "protocolPassGloomwald": "Protocol Pass: Gloomwald",
+    "orbipomMerge": "OrbiPom! MERGE!",
+    "fletchedIrontipSignIn": "Fletched Irontip Sign-In"
   },
   "mouths": {
     "january": "January",
@@ -1045,7 +1059,26 @@
     "heavyXiragen": "Heavy Xiragen",
     "crimsonSpearleaf": "Crimson Spearleaf",
     "talosCap": "Talos Cap",
-    "protocolith": "Protocolith"
+    "protocolith": "Protocolith",
+    "caudalGoldscales": "Caudal Goldscales",
+    "yazhenSeeds": "Yazhen Seeds",
+    "reedRyeSeeds": "Reed Rye Seeds",
+    "tartpepperSeeds": "Tartpepper Seeds",
+    "redjadeGinsengSeeds": "Redjade Ginseng Seeds",
+    "amberRiceSeeds": "Amber Rice Seeds",
+    "protoXiranCuprium": "Proto Xiran-Cuprium",
+    "protoXiranCupriumPart": "Proto Xiran-Cuprium Part",
+    "protoXiranCupriumGas": "Proto Xiran-Cuprium Gas",
+    "protoXiranCupriumFrame": "Proto Xiran-Cuprium Frame",
+    "protoCupriumFrame": "Proto Cuprium Frame",
+    "protoChubbyLungShell": "Proto Chubby Lung Shell",
+    "protoChubbyLungHeavyShell": "Proto Chubby Lung Heavy Shell",
+    "heavyXiraniteChubbyLung": "Heavy Xiranite Chubby Lung",
+    "protoHeavyXiranite": "Proto Heavy Xiranite",
+    "xiraniteChubbyLung": "Xiranite Chubby Lung",
+    "protoXiranite": "Proto Xiranite",
+    "tenderMoss": "Tender Moss",
+    "slugSprig": "Slug Sprig"
   },
   "common": {
     "copy": "Copy",
@@ -1283,7 +1316,8 @@
     "mifu": "Mi Fu",
     "camille": "Camille",
     "arcane": "Arcane",
-    "liino": "Liino"
+    "liino": "Liino",
+    "typhoeus": "Typhoeus"
   },
   "weaponsList": {
     "custom_weapon": "Custom Weapon",
@@ -1363,7 +1397,9 @@
     "junctionPoint": "Junction Point",
     "goldenAge": "Golden Age",
     "farsight": "Farsight",
-    "bedazzlingNightDebut": "Bedazzling Night Debut"
+    "bedazzlingNightDebut": "Bedazzling Night Debut",
+    "umbraOfFrigidEventide": "Umbra of Frigid Eventide",
+    "sufferingsEnd": "Suffering's End"
   },
   "cookies": {
     "title": "We use cookies",
@@ -1481,7 +1517,14 @@
     "world_energy_point11_4": "Severe Energy Alluvium: North Wuling EZ",
     "world_energy_point11_5": "Severe Energy Alluvium: North Wuling EZ",
     "world_energy_point11_6": "Severe Energy Alluvium: North Wuling EZ",
-    "world_energy_point11_7": "Severe Energy Alluvium: North Wuling EZ"
+    "world_energy_point11_7": "Severe Energy Alluvium: North Wuling EZ",
+    "world_energy_point12_1": "Energy Alluvium: Snowy Forest",
+    "world_energy_point12_2": "Energy Alluvium: Snowy Forest",
+    "world_energy_point12_3": "Energy Alluvium: Snowy Forest",
+    "world_energy_point12_4": "Severe Energy Alluvium: Snowy Forest",
+    "world_energy_point12_5": "Severe Energy Alluvium: Snowy Forest",
+    "world_energy_point12_6": "Severe Energy Alluvium: Snowy Forest",
+    "world_energy_point12_7": "Severe Energy Alluvium: Snowy Forest"
   },
   "enemies": {
     "eny_0007_mimicw": "Tunneling Nidwyrm",
@@ -1567,7 +1610,15 @@
     "eny_0122_kltdbud": "YSTF Elite Blightshade",
     "eny_0123_klcap": "YSTF Glaiver Blightshade",
     "eny_0124_kltdcap": "YSTF Captain Blightshade",
-    "eny_0125_fdcentur": "Alleikhreos, Chiliarch"
+    "eny_0125_fdcentur": "Alleikhreos, Chiliarch",
+    "eny_0127_bigents": "Gloomwald's Rage",
+    "eny_0128_babyents": "Woodcraft Wanderer",
+    "eny_0129_slwood": "Woodcraft Slug",
+    "tatget_001_normal": "Basic Target",
+    "tatget_002_endurance": "Standard Target",
+    "tatget_003_expand": "Barrier Target",
+    "tatget_004_armor": "Heavy Target",
+    "tatget_005_shield": "Energy Shield"
   },
   "essencesPage": {
     "optimizer": "Farming Optimizer",
@@ -1848,7 +1899,22 @@
     "item_equip_t4_suit_usp02_body_04": "Eternal Xiranite Light Armor T1",
     "item_equip_t4_suit_usp02_edc_04": "Eternal Xiranite Bracing Slab",
     "item_equip_t4_suit_usp02_hand_03": "Eternal Xiranite Wraps",
-    "item_equip_t4_suit_usp02_hand_04": "Eternal Xiranite Hands"
+    "item_equip_t4_suit_usp02_hand_04": "Eternal Xiranite Hands",
+    "item_equip_t4_parts_wuling00_body_04": "AIC Fieldwork Assault Armor",
+    "item_equip_t4_parts_wuling00_body_05": "AIC Fieldwork Medic Armor",
+    "item_equip_t4_parts_wuling00_edc_04": "AIC Fieldwork Assault Push Knife",
+    "item_equip_t4_parts_wuling00_edc_05": "AIC Fieldwork Power Bank",
+    "item_equip_t4_parts_wuling00_hand_04": "AIC Fieldwork Assault Gloves",
+    "item_equip_t4_parts_wuling00_hand_05": "AIC Fieldwork Medic Gloves",
+    "item_equip_t4_suit_burst01_body_02": "Tide Fall Light Armor T1",
+    "item_equip_t4_suit_burst01_body_03": "Wave Swell Heavy Armor",
+    "item_equip_t4_suit_burst01_edc_03": "Turbid Cutting Torch T1",
+    "item_equip_t4_suit_burst01_hand_02": "Deepsink Gloves",
+    "item_equip_t4_suit_spellburst_body_01": "Deep Rampart Armor",
+    "item_equip_t4_suit_spellburst_edc_01": "Deep Rampart Comms",
+    "item_equip_t4_suit_spellburst_hand_01": "Deep Rampart Gauntlets",
+    "item_equip_t4_suit_usp02_edc_05": "Eternal Xiranite Bracing Slab T1",
+    "item_equip_t4_suit_usp02_edc_06": "Eternal Xiranite Heavy Slab"
   },
   "packs": {
     "none": "Non-Set",
@@ -1898,7 +1964,8 @@
     "suit_combo_cd01": "Qingbo",
     "suit_expend_spell01": "Xiranflow",
     "suit_crush_fracture": "Grizzled Edge",
-    "suit_generaltype": "AIC Fieldwork"
+    "suit_generaltype": "AIC Fieldwork",
+    "suit_spellburst": "Deep Rampart"
   },
   "equipmentTypes": {
     "body": "Armor",
@@ -1967,7 +2034,8 @@
     "wiki_group_monster_hongshan": "Cangzei Pirates",
     "wiki_group_monster_animal": "Wildlife",
     "wiki_group_monster_kl": "Blightshades",
-    "wiki_group_monster_js": "Foundite"
+    "wiki_group_monster_js": "Foundite",
+    "wiki_group_monster_witchcraft": "Witchcraft Creation"
   },
   "resitances": {
     "heatRez": "Heat Resistance",
@@ -2740,6 +2808,7 @@
   },
   "audio_player": {
     "playback_error": "Failed to load audio",
+    "not_found": "Audio Not Found (404)",
     "open_raw": "Open raw"
   }
 }

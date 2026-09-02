@@ -1,0 +1,576 @@
+{
+  "baseInfo": {
+    "tags": [
+      "Damage Dealer",
+      "Arts Burst"
+    ],
+    "behaviourHateTags": [
+      "Technology"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Rhodes Island",
+    "expertTags": [
+      "Natural Lore",
+      "Outdoors Survival"
+    ],
+    "giftPreferTags": [
+      "Wuling Traveler's Choice"
+    ],
+    "hobbyTags": [
+      "Lifestyle",
+      "Nature"
+    ],
+    "raceTag": "Sarkaz"
+  },
+  "skills": {
+    "basicAttack": {
+      "name": "Wildlands Huntress",
+      "description": "BASIC ATTACK: \nAn attack with up to 5 sequences that deals <@ba.natur>Nature DMG</>. As the controlled operator, <#ba.lastcombo>Final Strike</> also deals <@ba.poise>{poise:0}</> Stagger. \n\nDIVE ATTACK: \nBasic attack performed in mid-air becomes a dive attack that deals <@ba.natur>Nature DMG</> to nearby enemies. \n\nFINISHER: \nBasic attack performed near a Staggered enemy becomes a finisher that deals massive <@ba.natur>Nature DMG</> and recovers some SP.",
+      "batkSeq1Multiplier": "BATK SEQ 1 Multiplier",
+      "batkSeq2Multiplier": "BATK SEQ 2 Multiplier",
+      "batkSeq3Multiplier": "BATK SEQ 3 Multiplier",
+      "batkSeq4Multiplier": "BATK SEQ 4 Multiplier",
+      "batkSeq5Multiplier": "BATK SEQ 5 Multiplier",
+      "finisherAtkMultiplier": "Finisher ATK Multiplier",
+      "diveAtkMultiplier": "Dive ATK Multiplier"
+    },
+    "battleSkill": {
+      "name": "Piercing Arrows of the Woods",
+      "description": "Typhoeus leaps into the air and enters a short <@ba.key>Hovering</> state, during which she can unleash 5 Aerial Basic Attacks (ABATK). Each ABATK can shoot arrows at up to 2 targets and deal <@ba.natur>Nature DMG</>.\nWhenever an ABATK hits an enemy with <#ba.naturalinflict>Nature Infliction</>, it consumes 1 stack of <#ba.naturalinflict>Nature Infliction</>, grants Typhoeus 1 <#ba.arrowenergy>Sign</>, and gives additional Ultimate Energy.\nIf Typhoeus has <#ba.arrownum>Hunting Arrow(s)</>, she consumes 1 <#ba.arrownum>Hunting Arrow</> and converts the ABATK into a <@ba.key>Power Shot</>.\n<@ba.key>Power Shot</>: After hitting an enemy, Power Shot forcibly applies 1 instance of <#ba.naturalburst>Nature Burst</>; if the target's <#ba.naturalinflict>Nature Infliction</> is consumed, then increase the DMG dealt by this <#ba.naturalburst>Nature Burst</> to <@ba.vup>{enchence_burst_damage_rate:0.0}</> times the original.\n<@ba.info>If Typhoeus is the controlled operator, her 5th ABATK is regarded as a Final Strike and a Power Shot, and does not consume Hunting Arrows.</>",
+      "initialAerialShotDmgMultiplier": "Initial Aerial Shot DMG Multiplier",
+      "abatkDmg": "ABATK DMG",
+      "aerialFinalStrikeDmg": "Aerial Final Strike DMG",
+      "aerialFinalStrikeStagger": "Aerial Final Strike Stagger",
+      "powerShotNatureBurstDmgMultiplier": "Power Shot Nature Burst DMG Multiplier",
+      "additionalUltimateEnergy": "Additional Ultimate Energy"
+    },
+    "comboSkill": {
+      "name": "Rampant Thorns",
+      "description": "COMBO TRIGGER: When Typhoeus reaches max <#ba.arrowenergy>Signs</>.\nTyphoeus converts all her <#ba.arrowenergy>Signs</> to <#ba.arrownum>Hunting Arrows</> and resets her Aerial Basic Attack (ABATK) attempts.\nTyphoeus focuses her \"Huntress's Gaze\" and launches a barrage at the target that creates a <@ba.key>Barrage Array</> at the target area. Enemies in the <@ba.key>Barrage Array</> take <@ba.natur>Nature DMG</> over time, are <#ba.slow>slowed</>, and suffer increased <#ba.naturalburst>Nature Burst</> DMG Taken.\n<@ba.info>Every 2 Signs convert to 1 Hunting Arrow.</>",
+      "huntresssGazeHitDmg": "\"Huntress's Gaze\" Hit DMG",
+      "stagger": "Stagger",
+      "ultimateEnergyGain": "Ultimate Energy Gain",
+      "areaDmgOverTime": "Area DMG Over Time",
+      "slow": "Slow",
+      "natureBurstDmgBoost": "Nature Burst DMG Boost"
+    },
+    "ultimate": {
+      "name": "Call of Ice Mountain",
+      "description": "Typhoeus fires an Imbued Arrow that explodes after hitting the enemy and deals massive <@ba.natur>Nature DMG</> to enemies within the area of effect (AOE). She then enters a <@ba.key>Hovering</> state and her Aerial Basic Attack (ABATK) attempts are reset.\nFor her next 5 ABATKs, hitting an enemy triggers a <@ba.key>Hail of Arrows</> that deals <@ba.natur>Nature DMG</> at the target's location. Her 5th <@ba.key>Hail of Arrows</> is an empowered <@ba.key>Hail of Arrows</> that deals higher DMG.\nCasting the ultimate gives <@ba.vup>{arrow_num_given:0}</> <#ba.arrownum>Hunting Arrows</> immediately.",
+      "imbuedArrowExplosionDmg": "Imbued Arrow Explosion DMG",
+      "imbuedArrowStagger": "Imbued Arrow Stagger",
+      "normalHailOfArrowsDmg": "Normal Hail of Arrows DMG",
+      "empoweredHailOfArrowsDmg": "Empowered Hail of Arrows DMG"
+    },
+    "indicator": {
+      "levels": [
+        "Operator Agility +10.",
+        "Operator Agility +15.",
+        "Operator Agility +15.",
+        "Operator Agility +20."
+      ],
+      "name": "Skirmisher"
+    },
+    "talent1": {
+      "levels": [
+        "Whenever a <#ba.naturalburst>Nature Burst</> is triggered on an enemy, Typhoeus gains 1 <#ba.arrowenergy>Sign</>. DMG dealt by attacks empowered by consuming <#ba.arrownum>Hunting Arrows</> is increased to <@ba.vup>{atk_scale_enhence:0.0}</> times the original.\nWhen entering battle, Typhoeus immediately gains <@ba.vup>{energy_enterfight:0}</> <#ba.arrowenergy>Sign(s)</>.\nTyphoeus can have up to 4 <#ba.arrownum>Hunting Arrows</> and 8 <#ba.arrowenergy>Signs</>.\n<@ba.info>If Nature Burst is simultaneously triggered on multiple enemies, this only counts as one instance of Nature Burst when tallying the Signs gained by Typhoeus.</>",
+        "Whenever a <#ba.naturalburst>Nature Burst</> is triggered on an enemy, Typhoeus gains 1 <#ba.arrowenergy>Sign</>. DMG dealt by attacks empowered by consuming <#ba.arrownum>Hunting Arrows</> is increased to <@ba.vup>{atk_scale_enhence:0.0}</> times the original.\nWhen entering battle, Typhoeus immediately gains <@ba.vup>{energy_enterfight:0}</> <#ba.arrowenergy>Sign(s)</>.\nTyphoeus can have up to 4 <#ba.arrownum>Hunting Arrows</> and 8 <#ba.arrowenergy>Signs</>.\n<@ba.info>If Nature Burst is simultaneously triggered on multiple enemies, this only counts as one instance of Nature Burst when tallying the Signs gained by Typhoeus.</>",
+        "Whenever a <#ba.naturalburst>Nature Burst</> is triggered on an enemy, Typhoeus gains 1 <#ba.arrowenergy>Sign</>. DMG dealt by attacks empowered by consuming <#ba.arrownum>Hunting Arrows</> is increased to <@ba.vup>{atk_scale_enhence:0.0}</> times the original.\nWhen entering battle, Typhoeus immediately gains <@ba.vup>{energy_enterfight:0}</> <#ba.arrowenergy>Sign(s)</>.\nTyphoeus can have up to 4 <#ba.arrownum>Hunting Arrows</> and 8 <#ba.arrowenergy>Signs</>.\n<@ba.info>If Nature Burst is simultaneously triggered on multiple enemies, this only counts as one instance of Nature Burst when tallying the Signs gained by Typhoeus.</>"
+      ],
+      "name": "Prey Checklist"
+    },
+    "talent2": {
+      "levels": [
+        "When <@ba.key>Hovering</>, Typhoeus activates a <@ba.key>Protective Barrier</> that reduces her DMG Taken by <@ba.vup>{damage_resist:0%}</> and makes her harder to interrupt while it is active. The <@ba.key>Protective Barrier</> is shattered when Typhoeus takes DMG, and cannot be activated again for <@ba.vup>{sheild_cd:0}</>s afterwards.",
+        "When <@ba.key>Hovering</>, Typhoeus activates a <@ba.key>Protective Barrier</> that reduces her DMG Taken by <@ba.vup>{damage_resist:0%}</> and makes her harder to interrupt while it is active. The <@ba.key>Protective Barrier</> is shattered when Typhoeus takes DMG, and cannot be activated again for <@ba.vup>{sheild_cd:0}</>s afterwards."
+      ],
+      "name": "Huntress's Focus"
+    },
+    "baseSkill1": {
+      "levels": [
+        "Assign to Growth Chamber to grant rare mineral growth rate +20%",
+        "Assign to Growth Chamber to grant rare mineral growth rate +30%"
+      ],
+      "name": "Lithic Murmurs"
+    },
+    "baseSkill2": {
+      "levels": [
+        "Assign to Growth Chamber to grant fungal matter growth rate +20%",
+        "Assign to Growth Chamber to grant fungal matter growth rate +30%"
+      ],
+      "name": "Life in the Spores"
+    },
+    "files": {
+      "main": "[CODENAME] Typhoeus\nGENDER: Female\nAUTHENTICATION: Rhodes Island\nDOB: January 13\nRACE: Sarkaz\n[ORIPATHY INFECTION STATUS]\nOripathy negative, based on medical examination reports.\n\n[INTEGRATED PHYSICAL EXAMINATION]\nPHYSIOLOGICAL STRENGTH: Excellent\nCOMBAT SKILL: Excellent\nTACTICAL ACUMEN: Normal\nORIGINIUM ARTS ASSIMILATION: Standard",
+      "humanResources": "Operator Typhoeus, a reconvener from Rhodes Island. She crossed paths with the Endministrator during her journey in search of the lost legends of Sami, and later joined Endfield Industries at the Endministrator's personal invitation.\n\nWhen speaking with Miss Typhoeus, the composure and steadiness she displayed far surpassed that of most adults, yet her insatiable curiosity and those ill-timed probing glances still betrayed a childlike nature beneath. Per protocol, I had many questions to ask her, but the moment she brought out her notebook, I could never seem to find the right opportunity to pose a single one.\nIt was hard to imagine that one person could have so many questions that even I grew tired of answering them. I once reminded her that many of her questions could be answered in the Operator Onboarding Manual, but she twirled her pen and said calmly that she was fascinated by the way I told things.\nAfter three hours of questioning, she left satisfied. Before she closed her notebook, I caught a glimpse of her evaluation of me:\n\"Three heads, knows everything, answers every question, every legend needs a character like that.\"\n— Martin Marvin Malen, Assistant, HR Division, Endfield Industries",
+      "file1": "Having an operator like Typhoeus, who excels at wilderness survival, join us has made our work in the north go much more smoothly.\nAlthough Endfield works closely with the Order of Steel Oath, they are often too occupied with their own battles to spare much time for us. More often than not, they lead us to the site of a rift, then must return to the front lines, leaving the rest of the work to us.\nThe polar environment is harsh, with year-round snow cover and extremely low temperatures, creating many difficulties for our monitoring work. A sudden blizzard destroyed our camp and knocked out all our instruments. In despair, we wrapped ourselves in every blanket we had, waiting to be consumed by the frozen wasteland. Fortunately, Operator Typhoeus arrived just in time.\nAlong with her came an entire animal leg.\nIn the ruins, Typhoeus lit a campfire and brought warmth with a Sami-style barbecue. She then ventured alone into the blizzard, returning with wood and bark, and in just one afternoon, built a log cabin large enough for four people using nothing but primitive materials.\nThough she knew nothing about the facilities we brought, she was still able to set up a stable environment for them to run properly according to our needs. When we faced the rifts head-on, she efficiently cleared away the attacking swarms of Aggeloi using her hunting experience, assisting us in placing the equipment and retrieving critical data.\nAside from her outdoors survival skills, what everyone trusted most was her remarkably accurate intuition.\nYes, relying on a colleague's intuition for work does not sound like something a professional would say. But when all our navigation facilities were down, her instincts were what allowed us to narrowly dodge danger and evacuate safely. Throughout the journey, we were constantly on edge, yet she never showed a hint of fear, always calmly pointing the way through the snowstorm for everyone.\nSome speculate that it was the Cyclops living in the mountains who taught Typhoeus how to see the future. But I believe that this is simply the way the Sami people coexist with nature. By placing themselves within it and becoming part of it, they can keenly perceive nature's breath, its pulse, its heartbeat, and in doing so, receive the revelations that nature bestows.",
+      "file2": "\"Endfield is a legitimate enterprise. You need to learn to distinguish fact from rumor. Not all those legends are true.\"\nEvery time a new employee joins Endfield, the veteran staff makes a point of reminding them of this.\nThat was until Operator Typhoeus joined Endfield, and all that effort went down the drain. With her rambling, mystical tales, this girl blurred the line between rumor and reality, turning us from a company with a certain legendary flair into ... a legend, plain and simple.\nThe mysterious characters flashing across the screens, the crying sounds echoing from the bridge late at night, the lighting fixtures in the Engineering Division that never seem to stay fixed, always flickering on and off when someone is alone. These little coincidences, easily dismissed with a laugh, were gathered and woven together by Typhoeus into a spine-chilling legend.\n\nLong ago, the equipment aboard the sky vessel Dijiang was constantly breaking down. The poor craftsmen had no choice but to take shelter in the workshop, forging and repairing day and night without rest. Yet after a full year of toil, the number of machines awaiting repair only grew, piling up around them like an unbroken mountain range.\nConsumed by rage, his last shred of kindness was spent. He transformed into a vengeful spirit and entered the machinery itself, vowing to take revenge on every careless soul who cut corners in their operations.\nThe lights flickering in the night are the sign of his patrol.\n— An entry from Typhoeus's notebook.\n\nAfter this story spread across Dijiang, the number of damage reports on the Engineering Division's repair list for that month dropped significantly.\nAfter looking into the matter, the stunned Mr. Andre gave a fair assessment of the story: this was not a story, but an indisputable fact.\nAnd this was just one chapter among the many legends Typhoeus had written for Endfield. In her notebook, the Endministrator was the great sage holding the Stone of Origin, Supervisor Perlica was the lightning mage wielding the power of thunder, Miss Chen was a ranger carrying a longsword. And everything Endfield did on Talos-II was planting great stone swords across the land to maintain peace in the world and protect all living things.\nA twelve-year-old child would find these tales childish, but for the Endfield operators with their heads full of whimsy, they were just right.\n\"When I am working now, I imagine myself as a mysterious Sami Snowpriest. When the equipment overheats, I shout out ancient invocations...\" And with that, Andre picked up the cooling gun from the corner, aimed it at the machine, and cried out, \"O wind and snow, descend upon the mortal world!\"",
+      "file3": "War Song of the Samifjod\nSun melts the snow,\nUnder the frozen earth, shadows flee. \nBut our wandering does not end. \nSun splits the clouds, \nIn the forest, rain departs. \nBut our warfare does not stop. \nLift shields, don plates, \nFate holds us here. \nUnder the sun, \nWe bleed and fight.\n\nAfter arriving on Talos-II from Terra, the Feranmut Sami ended His years-long drift and chose a plot of land within the polar circle, settling there along with the Myrkwood He carried on His back. Under the Feranmut's protection, the Sami people enjoyed a brief period of peace. But soon, with the destruction of the Cosmic Gate and the outbreak of the First Aggeloi War, the Feranmut Sami gave His life to protect the Sami people, falling in the North Pole. The Sami people barely had time to mourn before they had to join in the construction of the Oathkeepers' fortress. What followed was a long campaign that has continued to this very day.\nWhen Typhoeus awoke on Rhodes Island and learned of her people's current mission, she immediately packed her bags and headed north. But after traveling a great distance to the Oathkeeper's fortress, a Sami Snowpriest just back from the battlefield gave her a pat on the back of the head, a slap reeking of earth, and turned her away at the door.\n\"Come back when you are taller than your bow, then you can go to war.\"\nThough Typhoeus insisted that she was simply petite, no one believed her. After all, her hands had yet to develop the thick calluses that came from years of drawing a bow.\nLost and dejected, she could only board a wagon bound for Myrkwood to meet the kin she had never known. This was the Sami she remembered, the environment, the customs, the language, the accents, all preserved. Yet at the same time, it all felt foreign to her. In the settlement, there were only the elderly, the wounded, and the children. Those who could still bear arms had all chosen to head to the front lines, guarding that line forged of flesh and blood, holding back the Aggeloi's march southward.\nTyphoeus, lost and adrift, remained in Myrkwood. She soon learned that after the fall of Sami, His legends had also been shattered. The elders who knew the old tales had turned to bone on the battlefield alongside Sami himself before they could pass the stories on. So Typhoeus, unable to fight on the front lines, decided to gather those legends and preserve them.\n\nEndmin, did you know? The fall of Sami was Sami's own choice. The people accepted Him and followed without hesitation.\nI found a Foldartal used for divination in Myrkwood. On it was recorded a \"communication\" between the Snowpriest and Sami.\nBefore He descended upon the north, He had warned the people of Myrkwood that He had long foreseen a cruel and protracted war. He would have to go north and, at some future moment, sacrifice Himself to protect all living things.\nHe gave His people the chance to leave...\nBut on the Foldartal were the people's response—\nThe will of Sami is the will of the Sami people. The mission of Sami is the mission of the Sami people. We will go north with you.\nThe hunt never ends.",
+      "file4": "After the fall of Sami, most of the Sami people accepted the outcome. They live atop the Feranmut's remains, carrying on His will, fighting the Aggelos to protect Talos-II.\nYet there were still Snowpriests who believed that Sami had not truly died. His soul had merely been lost within the rifts, fallen into a deep slumber. One day, Sami would wake from His dream and return to His people. They traveled to the rifts across Talos-II, setting up altars and performing rituals, trying to call Sami's soul back from the fissures. But none who went ever returned. Later, with the northern front growing ever more urgent, no one was willing to continue the attempt.\nIn a snowy forest near the Wuling Very Large Rift, Typhoeus found the manuscripts left behind by one of those Sami Snowpriests. The manuscripts detailed all her attempts to awaken Sami. Though Typhoeus was able to confirm through her own exploration that the ritual had failed and the Snowpriestess had vanished without a trace, the girl still caught a faint whiff of possibility from the remaining materials.\nUnfortunately, after months of study, Typhoeus had made no progress.\nShe asked every Snowpriest and shaman in the Order of Steel Oath and Myrkwood, but they all just shook their heads, believing it to be a doomed endeavor.\nEven after hitting so many dead ends, Typhoeus did not lose heart. The Snowpriestess's unique insights on dreams in the manuscripts taught the girl to perceive special revelations within the dreamscapes of others.\n\n\"I don't know why, but lately I keep dreaming of being chased by a gigantic monster. The ground beneath my feet keeps swaying, as if I am standing on a suspension bridge. I toss and turn all night long...\"\n\"Simple. That monster is hunting you, and you have been cornered.\"\n\"What should I do?\"\n\"Become stronger. Do not be the prey. Be the hunter instead.\"\n\"I think I get it now.\"\n\nAfter that conversation with Typhoeus, the operator mapped out a full month of intensive training for himself. The exhaustion and sense of accomplishment from the workouts let him sleep soundly through the night. Before long, Endfield colleagues began showing up at Typhoeus's door with all sorts of dreams, asking her to read and interpret them.\nAnd Typhoeus, after listening to everyone's dreams, drew inspiration from them to craft a legend of her own, one that wove together the Feranmut Sami, dreams, and the Snowpriests.\nSoon, Typhoeus finished writing the ending. She thought the matter would settle just like the story itself. So she gathered her notes and set off to share the conclusion with those who had been waiting eagerly. But halfway there, she brushed past a young girl in the corridor.\nTyphoeus did not recognize her, yet she felt a strangely familiar presence emanating from her.\nIt was a presence that had accompanied her people through swamps and forests, through winters and into springs, from birth all the way to death.\nBy the time Typhoeus came to her senses, the girl had already walked far away.\nLater, she learned from others the girl's codename: Last Rite.\nDriven by a mysterious premonition, she tore out the ending she had written and wrote that codename on a fresh page instead."
+    },
+    "tags": {
+      "expert1": {
+        "name": "Natural Lore",
+        "description": "Natural Lore: Guide of the Wild\nEverything has meaning deep in the wilderness, be it a snowflake on the shoulder, or a gust of wind that lifts the hair."
+      },
+      "expert2": {
+        "name": "Outdoors Survival",
+        "description": "Outdoors Survival: Law of the Icefields\nEven the most merciless icefields show mercy to the little huntress who respects the law of the wildlands."
+      },
+      "hobby1": {
+        "name": "Lifestyle",
+        "description": "Lifestyle: Samifjod's Stew\nThe stew is bubbling over the campfire. You'd never guess the ingredients she threw into the pot."
+      },
+      "hobby2": {
+        "name": "Nature",
+        "description": "Nature: Wild Refuge\nDon't panic if you can't find her. She just felt tainted by the smell of steel and ferrium and chose to hide in the wilderness for the time being."
+      }
+    },
+    "voiceLines": [
+      {
+        "voId": "chr_0034_typhoea_chrbark_squad_01",
+        "title": "Operation Prep 1",
+        "text": "Prepare carefully. Take all the weapons and tools you need. It would be embarrassing to turn back halfway because you forgot something."
+      },
+      {
+        "voId": "chr_0034_typhoea_chrbark_squad_02",
+        "title": "Operation Prep 2",
+        "text": "An outdoor trip must be properly planned. Be mindful of where you go, what you eat, and what you say."
+      },
+      {
+        "voId": "chr_0034_typhoea_chrbark_join_01",
+        "title": "Adding to Team 1",
+        "text": "Got a mission for me? Go on, say it."
+      },
+      {
+        "voId": "chr_0034_typhoea_chrbark_join_02",
+        "title": "Adding to Team 2",
+        "text": "Pop quiz: Is there any wild forage that you can eat raw? Ideally, none of them? Correct. You passed."
+      },
+      {
+        "voId": "chr_0034_typhoea_chrbark_weap_01",
+        "title": "Switching Weapon",
+        "text": "Thank you, but the wilderness also provides us with weapons. I can make arrows with branches. Would you like to see?"
+      },
+      {
+        "voId": "chr_0034_typhoea_chrbark_gear_01",
+        "title": "Switching Gear",
+        "text": "I'm not cold, and I don't fear any danger. All these pieces of gear are unnecessary. You'd be worried? Then... I guess I'll have them."
+      },
+      {
+        "voId": "chr_0034_typhoea_chrup_skill_01",
+        "title": "Talent Node Activation",
+        "text": "Dispelling the fog has revealed many things to us."
+      },
+      {
+        "voId": "chr_0034_typhoea_chrup_level_01",
+        "title": "Watching Combat Records",
+        "text": "I think I'd prefer to be in the fight myself."
+      },
+      {
+        "voId": "chr_0034_typhoea_chrup_promt01_01",
+        "title": "Operator Promotion 1",
+        "text": "Alright then. I'm glad you're treating me as a good companion."
+      },
+      {
+        "voId": "chr_0034_typhoea_chrup_promt02_01",
+        "title": "Operator Promotion 2",
+        "text": "People say that earning your approval is a good thing, but it doesn't feel that special. I'll do whatever I can for you, no matter how you feel about me."
+      },
+      {
+        "voId": "chr_0034_typhoea_chrup_promt03_01",
+        "title": "Operator Promotion 3",
+        "text": "Recognition? Does that mean the same as your \"approval\" ... or that you trust me more now...? And do you trust my abilities, or me as a person?"
+      },
+      {
+        "voId": "chr_0034_typhoea_chrup_promt04_01",
+        "title": "Operator Promotion 4",
+        "text": "Congratulations? I thought we've moved beyond flattery. A simple glance will suffice between good friends."
+      },
+      {
+        "voId": "chr_0034_typhoea_introduce_01",
+        "title": "Operator Reporting for Duty",
+        "text": "Endmin, I sought you out and fulfilled my promise. What about yours? Have you found a good story to share with me?"
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_switch_01",
+        "title": "Standing by 1",
+        "text": "Prophecy has no hold on us. The ending is ours to write."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_switch_02",
+        "title": "Standing by 2",
+        "text": "Legends aren't always too far off... They can happen right next to us."
+      },
+      {
+        "voId": "chr_0034_typhoea_sim_assign_work_01",
+        "title": "Assigning to Facility",
+        "text": "I did learn how to operate machines, but my memories ... have melted away like snow in spring."
+      },
+      {
+        "voId": "chr_0034_typhoea_sim_hello_lower_01",
+        "title": "Greeting 1",
+        "text": "Myrkwood will rain today. Take an umbrella."
+      },
+      {
+        "voId": "chr_0034_typhoea_sim_hello_max_01",
+        "title": "Greeting 2",
+        "text": "I wish you pleasant dreams."
+      },
+      {
+        "voId": "chr_0034_typhoea_sim_talk_lv01_01",
+        "title": "Dijiang Idle Chatter 1",
+        "text": "I took a walk around the Bridge. People asked if they could play with my bow for a bit... Strange. Why aren't they afraid of me?"
+      },
+      {
+        "voId": "chr_0034_typhoea_sim_talk_lv02_01",
+        "title": "Dijiang Idle Chatter 2",
+        "text": "Why am I visiting? Nothing much. I guess I don't need a reason to come and see you, do I? Now, if you'll excuse me, I'll be taking my leave."
+      },
+      {
+        "voId": "chr_0034_typhoea_sim_talk_lv02_02",
+        "title": "Dijiang Idle Chatter 3",
+        "text": "I met a lot of people after coming here. They shared many interesting stories with me. And yes, I've noted them down in a notebook, but I left a whole page blank for you — the last page. Now, you'd best give me a very long story."
+      },
+      {
+        "voId": "chr_0034_typhoea_sim_talk_max_01",
+        "title": "Dijiang Idle Chatter 4",
+        "text": "Senior Endfielders at the Arsenal upgraded my arrowheads. They gave me a signal arrow that explodes in mid-air, forming a glowing Endfield logo. They said I could use the flare to signal Dijiang in an emergency. But I'm not afraid of danger or being on my own... This is my trial, and mine alone."
+      },
+      {
+        "voId": "chr_0034_typhoea_sim_talk_max_02",
+        "title": "Dijiang Idle Chatter 5",
+        "text": "This place isn't like the other camps I've visited. There's no bonfire, snow, or trees. But when I fall asleep on the floor, I can feel a powerful heart that goes \"Thump! Thump!\" No, it isn't the pulse of the Land. It's the pulse of Dijiang itself."
+      },
+      {
+        "voId": "chr_0034_typhoea_sim_talk_max_03",
+        "title": "Dijiang Idle Chatter 6",
+        "text": "I just had a dream and I couldn't go back to sleep. I saw the stars awake and heard them whispering to each other. What once sank will rise again. What still dreams will stir and wake. These will change Samivegr's fate... But when did the stars learn how to talk? It felt so weird. Hmm... Am I still dreaming?"
+      },
+      {
+        "voId": "chr_0034_typhoea_sim_gift_give_01",
+        "title": "Offering Gifts",
+        "text": "Oh, I brought something from the north. Don't worry, they won't spoil. I preserved their beauty with my Originium Arts. Huh, your hands are freezing? Oh no, I should've been more thoughtful. *Hoo-hoo*... Alright, feeling warmer already?"
+      },
+      {
+        "voId": "chr_0034_typhoea_sim_gift_recv_01",
+        "title": "Accepting Gifts",
+        "text": "Many thanks. I will take them wherever I go. Perhaps the future has a wonderful story lying in wait for us."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_self_line01",
+        "title": "Trust Dialog 1",
+        "text": "Calm down, Endmin. No need to panic. I will protect you. Now tell me, what made you so upset...? The giant, tied-up beast outside your door...? I hunted it down for you. On my own. Kept it alive, too. I spent several days lurking in the woods to bring it down. If you don't like it, I'll take it away. The hide is top quality, you know."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_self_line02",
+        "title": "Trust Dialog 2",
+        "text": "Stop moving, and bear with me. I'm almost done. I'll be taking you to a Sami ruin that has been sealed away for many years. You need proper protection against the injunctions and witchcraft. And don't wrinkle your nose. This is the smell of fresh earth and moss. You'll get used to it. Great. Now you smell like ... a proper Samifjod."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_self_line03",
+        "title": "Trust Dialog 3",
+        "text": "Cold? I'll add more wood to the campfire. The sleeping bags are laid out so just turn in and rest. I'll have the watch tonight. Hmm...? No, I'm not tired. I have herbs to keep me awake. Don't touch them! Do you want to sleep or what...? Uh. Sorry. I wasn't being mean on purpose. It's just ... the herbs have a strong smell. You really helped me a lot today, and I just want you to be properly rested."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_self_line04",
+        "title": "Trust Dialog 4",
+        "text": "No. I don't show my notebook to anyone. Not even if they ask really nicely. I've told you all the stories already, so you shouldn't be curious about it. Wait. You'll tell me a story about Yinglung Pass if I lend you the notebook...? Okay, but only for a bit... Who's the stick figure with a black square on its head? That's you. The stick figure holding a triangle? That's my bow! What are you talking about? Give back my notebook, now!"
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_self_line05",
+        "title": "Trust Dialog 5",
+        "text": "After leaving Rhodes Island, I traveled to all sorts of places and met different people. Every destination ended up like Samivegr. The characters would leave and their tales would gradually fade. I was alone, but I had gathered a huge trove of stories. The loneliness does not affect me... And I can hunt on my own. But the stories are so beautiful. They must be shared with friends and remembered. It would be a shame if I were the only one who remembers them."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_chat_line01",
+        "title": "Chat 1",
+        "text": "Open up your hands. Here ... the berries of Myrkwood. They might be a little sour but try to keep it down. They'll make you lucky for an entire month."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_chat_line02",
+        "title": "Chat 2",
+        "text": "People said you've not been sleeping well. Hang this Foldartal tablet by your bed. It will ward off unclean entities that try to sneak into your dreams. The runes say that the spell will grind any trespasser to dust, cast it into the coldest lake of Samivegr, and freeze it stiff forever."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_chat_line03",
+        "title": "Chat 3",
+        "text": "Do not worry, Endmin. I spent years in the wilderness. Being lost is no longer a concern of mine. The stars, winds, and trees, all of them can point the way for me. And I don't think just sticking to the same direction means you'll never get lost. Take a look at the path beneath our feet. Always it spreads, and in all directions. New opportunities and discoveries await, no matter the way we choose to take. Have no fear. I will walk with you."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_chat_line04",
+        "title": "Chat 4",
+        "text": "Your blade is dull? Give it to me. I have a honing stone. You've been negligent. That's not normal. Are you worried about something? Don't hide it from me. The eyes of a good hunter watch the prey, but they also watch out for their companions... Fine. Keep it to yourself, then. I know that certain experiences are not story material. They should not be told again nor reminisced upon."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_chat_line05",
+        "title": "Chat 5",
+        "text": "No, I don't get it. Our battery is almost dry. Must you read this report by today? And no! You can't read with the moonlight. You'll strain your eyes. Make full use of the day with its sunshine, for the night is meant only for descending into darkness. Says who? Says every generation of wise Samifjod. Now look in my eyes. Tell me, Endmin, do I have to knock you senseless?"
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_about_line01",
+        "title": "Topic: Feranmut Sami",
+        "text": "I was shocked when I learned that Feranmut Sami fell to protect our people. It's hard to imagine how we Samifjod could go about our lives without His protection. At the northern forts, I saw my people still hunting in the blizzard amidst His great carcass. In the fields of war, I witnessed our Snowpriests fighting the Aggeloi with everything they had... And I learned that He and His indomitable will remain with us. Oblivion comes not from death, but from surrender."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_about_line02",
+        "title": "Topic: Amma",
+        "text": "I know Amma. I remember Her. Only fragments of the ancient beast lord's legend survived on Talos-II. My people tried to remember, but She left us too soon and our memories were too unreliable... I tried to look for those who could recite the entire Ammataru, only to find a few lines and phrases. It's okay. We still have the bits and pieces. As long as we remember, they'll be like seeds ... and sprout into a whole, new legend."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_about_line03",
+        "title": "Topic: Order of Steel Oath",
+        "text": "The Oathkeepers are good neighbors, and that's a rare gem. We share campfires, weapons, Arts, and food with each other. Together we faced the cold, the northern winds, the Aggeloi, and the Ankhors. Their fallen became one with our permafrost, and their scions sprouted and grew in our forests. But they aren't us, and will never become us. No. We don't push them away. Our duties differ. Their crusades will end in triumph, but the Samifjod's hunt never ceases."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_about_line04",
+        "title": "Topic: Myrkwood",
+        "text": "We are hospitable, mind you. But fighting off the Aggeloi and Ankhors is very frustrating. Worse, we got these \"adventure seekers\" coming in with their RVs and camp trucks. They wanna see how we angle for fins, hunt beasts, chop trees, make a big pot of stew at the campfire, sleep in the fire's warmth, then open our eyes to a new day ahead of us... It's just everyday stuff. What's so special about it?"
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_about_line05",
+        "title": "Topic: Demons",
+        "text": "The old shadows are now but a footnote in the history of Sami. Those tales are very old, like a wet notebook where the writings have become smudges of misfortune. That's why people don't really want to look deeper. Endmin, we've flipped through those pages of the past... Now we face enemies that can at least be seen."
+      },
+      {
+        "voId": "chr_0034_typhoea_explore_point_common_01",
+        "title": "Resource/Collectible Detected 1",
+        "text": "Wait. I saw something there."
+      },
+      {
+        "voId": "chr_0034_typhoea_explore_point_valub_01",
+        "title": "Resource/Collectible Detected 2",
+        "text": "Instincts tell me to take a closer look around here."
+      },
+      {
+        "voId": "chr_0034_typhoea_explore_find_locked_01",
+        "title": "Unexplored Area Detected",
+        "text": "Perhaps the unknown territory will give a different answer."
+      },
+      {
+        "voId": "chr_0034_typhoea_explore_find_danger_01",
+        "title": "Powerful Enemy Discovered",
+        "text": "Danger ahead. Proceed carefully."
+      },
+      {
+        "voId": "chr_0034_typhoea_interact_mine_valub_01",
+        "title": "Mining 1",
+        "text": "Precious minerals. Just take what we need. Don't be greedy."
+      },
+      {
+        "voId": "chr_0034_typhoea_interact_mine_valub_echo2_01",
+        "title": "Mining 2",
+        "text": "I can help. A special technique can knock this bit off."
+      },
+      {
+        "voId": "chr_0034_typhoea_interact_treasure_valub_01",
+        "title": "Opening a Crate",
+        "text": "The generosity of fate."
+      },
+      {
+        "voId": "chr_0034_typhoea_interact_etherium_01",
+        "title": "Acquiring Aurylene",
+        "text": "Aurylenes ... it takes a hunter's skill to close in and catch them."
+      },
+      {
+        "voId": "chr_0034_typhoea_interact_blight_break_01",
+        "title": "Eliminating the Blight",
+        "text": "I hope it hasn't hurt any other living beings."
+      },
+      {
+        "voId": "chr_0034_typhoea_interact_rest_01",
+        "title": "Rest",
+        "text": "I feel ... more spirited."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_suppuse_using_01",
+        "title": "Tactical Use 1",
+        "text": "You're wounded. I can help."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_suppuse_getheal_01",
+        "title": "Tactical Use 2",
+        "text": "I'm much better now. No worries."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_remind_danger_01",
+        "title": "Danger Warning",
+        "text": "Watch out!"
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_hurt_lowhp_01",
+        "title": "Injured",
+        "text": "No. I'm far from spent."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_dead_01",
+        "title": "0 HP",
+        "text": "Sorry, couldn't make it to the end."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_remind_praise_01",
+        "title": "Team Encouragement 1",
+        "text": "Good job! I'm honored to travel with you."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_remind_praise_02",
+        "title": "Team Encouragement 2",
+        "text": "Fighting as a team... I like it."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_remind_praise_echo2_01",
+        "title": "Encouragement Response 1",
+        "text": "It's nothing. Just doing my part."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_remind_praise_echo2_02",
+        "title": "Encouragement Response 2",
+        "text": "You're a great team too."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_intobattle_01",
+        "title": "Combat Begins 1",
+        "text": "Don't panic. We can handle this."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_intobattle_echo2_01",
+        "title": "Combat Begins 2",
+        "text": "Feeling the flow? Good."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_outbattle_nor_01",
+        "title": "Combat Victory 1",
+        "text": "I like how this ended."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_outbattle_nor_02",
+        "title": "Combat Victory 2",
+        "text": "Let's not enjoy our victory too much. We should be alert."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_outbattle_nor_echo2_01",
+        "title": "Combat Victory 3",
+        "text": "My story always has a place for everyone."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_outbattle_hard_01",
+        "title": "Combat Victory 4",
+        "text": "A story has its ups and downs. But those who endure can turn the next page."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_battle_defeat_01",
+        "title": "Combat Defeat",
+        "text": "We didn't give up, not even in the final moment. We mastered our fears, and that is the best ending."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_attack_last_01",
+        "title": "Final Strike 1",
+        "text": "Move."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_attack_last_02",
+        "title": "Final Strike 2",
+        "text": "Stay quiet."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_skill_nor_01",
+        "title": "Battle Skill 1",
+        "text": "Watch and strike!"
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_skill_nor_02",
+        "title": "Battle Skill 2",
+        "text": "No where to run!"
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_skill_nor_03",
+        "title": "Battle Skill 3",
+        "text": "Good timing."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_skill_comb_ready_01",
+        "title": "Combo Skill Ready 1",
+        "text": "The prey is now trapped."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_skill_comb_ready_02",
+        "title": "Combo Skill Ready 2",
+        "text": "Time to choose our prey."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_skill_comb_release_01",
+        "title": "Combo Casting 1",
+        "text": "It's over."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_skill_comb_release_02",
+        "title": "Combo Casting 2",
+        "text": "Don't resist!"
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_attack_extra_01",
+        "title": "Finisher 1",
+        "text": "You made a wrong move."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_attack_extra_02",
+        "title": "Finisher 2",
+        "text": "Quit scampering."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_skill_ultimate_01",
+        "title": "Ultimate 1",
+        "text": "Coward. I'll pin you down."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_skill_ultimate_02",
+        "title": "Ultimate 2",
+        "text": "No one escapes my sight."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_skill_ultimate_03",
+        "title": "Ultimate 3",
+        "text": "You should fear me."
+      }
+    ]
+  },
+  "potentials": {
+    "potential1": {
+      "description": "When <@ba.key>Hovering</>, ATK <@ba.vup>+{atk_up:0%}</> and ABATK DMG Dealt is increased to <@ba.vup>{atk_scale_base:0.0}</> times the original. \nTalent <@ba.key>Huntress's Focus</> improved: <@ba.key>Protective Barrier</> reactivation time <@ba.vup>{decrease_cd:0}</>s.",
+      "name": "Samifjod Fletching"
+    },
+    "potential2": {
+      "description": "Agility <@ba.vup>+{Agi:0}</>, Arts Intensity <@ba.vup>+{PhysicalAndSpellInflictionEnhance:0}</>.",
+      "name": "Huntress's Stride"
+    },
+    "potential3": {
+      "description": "Combo skill <@ba.key>Rampant Thorns</> improved: Length of cooldown <@ba.vup>{coolDown:0}</>s. Enemies in the <@ba.key>Barrage Array</> suffer <#ba.naturalburst>Nature Burst</> DMG Taken <@ba.vup>+{persistent_naturalburst_increase:0%}</>.",
+      "name": "Thorny Trap"
+    },
+    "potential4": {
+      "description": "Ultimate <@ba.key>Call of Ice Mountain</> improved: Ultimate Energy cost <@ba.vup>-{1-costvalue:0%}</>.",
+      "name": "No Escape"
+    },
+    "potential5": {
+      "description": "Ultimate <@ba.key>Call of Ice Mountain</> improved: Gains <#ba.arrownum>Hunting Arrows</> <@ba.vup>+{arrow_num_given:0}</>. Ultimate DMG Dealt is increased to <@ba.vup>{potential_damge_up:0.0}</> times the original, while Nature Burst DMG Multiplier of <@ba.key>Power Shot</> is increased to <@ba.vup>{potential_damage_rate:0.0}</> times the original.",
+      "name": "Fatal Shot"
+    }
+  },
+  "arts": {
+    "potential1": {
+      "name": "Warmth of Winter Sun",
+      "author": "南野 あき",
+      "description": "The forest snowed a bit yesterday. Though the weather's cold, the sun is still bright and can warm up your face with its rosy rays."
+    },
+    "potential3": {
+      "name": "Little Huntress",
+      "author": "狂zip",
+      "description": "You'll never hear the end of the legendary huntress of the wilds, because exhaustion always overtakes her whenever she reaches the middle of the story."
+    },
+    "potential5": {
+      "name": "Deep in the Icefield She Glances",
+      "author": "LM7",
+      "description": "From afar she turns around to gaze at you, her eyes are like the icefields of Samivegr, deep yet serene."
+    }
+  }
+}

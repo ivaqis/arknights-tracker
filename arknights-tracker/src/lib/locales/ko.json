@@ -372,7 +372,11 @@
     "special_1_4_1": "벼랑 끝, 북쪽을 향한 시선",
     "weponbox_1_4_1": "제대 신청",
     "special_1_4_2": "빛나는 새벽의 별",
-    "weponbox_1_4_2": "찬란 신청"
+    "weponbox_1_4_2": "찬란 신청",
+    "special_1_5_1": "겨울 사냥",
+    "weponbox_1_5_1": "한기 신청",
+    "weponbox_1_5_2": "점묘 신청",
+    "special_1_5_2": "찬란한 색채"
   },
   "pages": {
     "home": "홈",
@@ -467,7 +471,17 @@
     "gazeNorthToTheRiftSignIn": "심연에서 북쪽을 바라보며 출석 체크",
     "protocolInvitationTheReturn": "프로토콜의 초대: 귀환",
     "bedazzlingDawnstarSignIn": "찬란한 샛별 출석 체크",
-    "aForestMantledInSnow": "눈 덮인 깊은 숲 출석 체크"
+    "aForestMantledInSnow": "눈 덮인 깊은 숲 출석 체크",
+    "seasonOfVirtuality": "허상의 회상",
+    "seasonOfIllusion": "착시의 회상",
+    "runnersSteeplechase": "러너 운동회",
+    "snowOverDeepWoods": "눈 내리는 깊은 숲",
+    "aicSupportChubbyLungAttacks": "통합 지원 · 버블 출동!",
+    "ridgelineFlowsOfAutumnSignIn": "능수도에 스미는 가을 출석 체크",
+    "trialOfTheBow": "궁술 시련",
+    "protocolPassGloomwald": "프로토콜 통행증 · 깊은 숲",
+    "orbipomMerge": "융합! 버블!",
+    "fletchedIrontipSignIn": "벼린 화살 출석 체크"
   },
   "mouths": {
     "january": "1월",
@@ -880,7 +894,26 @@
     "heavyXiragen": "중식양 기체",
     "crimsonSpearleaf": "붉은 창 잎",
     "talosCap": "탈로스 버섯",
-    "protocolith": "프로토콜 문양석"
+    "protocolith": "프로토콜 문양석",
+    "caudalGoldscales": "꼬리 금갑",
+    "yazhenSeeds": "야침 씨앗",
+    "reedRyeSeeds": "회보리 씨앗",
+    "tartpepperSeeds": "쓴맛 나는 고추 씨앗",
+    "redjadeGinsengSeeds": "홍옥 인삼 씨앗",
+    "amberRiceSeeds": "금석벼 씨앗",
+    "protoXiranCuprium": "실험용 식양 구리 덩어리",
+    "protoXiranCupriumPart": "실험용 식양 구리 부품",
+    "protoXiranCupriumGas": "실험용 기체 식양 구리",
+    "protoXiranCupriumFrame": "실험용 식양 구리 골격",
+    "protoCupriumFrame": "실험용 구리 골격",
+    "protoChubbyLungShell": "실험용 드래곤 버블 외피",
+    "protoChubbyLungHeavyShell": "실험용 드래곤 버블 중외피",
+    "heavyXiraniteChubbyLung": "중식양 드래곤 버블",
+    "protoHeavyXiranite": "실험용 중식양 덩어리",
+    "xiraniteChubbyLung": "식양 드래곤 버블",
+    "protoXiranite": "실험용 식양 덩어리",
+    "tenderMoss": "부드러운 이끼",
+    "slugSprig": "벌레 나뭇가지"
   },
   "common": {
     "copy": "복사",
@@ -1117,7 +1150,8 @@
     "mifu": "미브",
     "camille": "카뮤",
     "arcane": "결",
-    "liino": "리노"
+    "liino": "리노",
+    "typhoeus": "티프로스"
   },
   "weaponsList": {
     "custom_weapon": "커스텀 무기",
@@ -1197,7 +1231,9 @@
     "junctionPoint": "공명점",
     "goldenAge": "전성기",
     "farsight": "조망",
-    "bedazzlingNightDebut": "찬란한 밤의 데뷔"
+    "bedazzlingNightDebut": "찬란한 밤의 데뷔",
+    "umbraOfFrigidEventide": "추운 밤의 그림자",
+    "sufferingsEnd": "고난의 끝"
   },
   "cookies": {
     "title": "쿠키 사용 안내",
@@ -1315,7 +1351,14 @@
     "world_energy_point11_4": "고위 에너지 응집점 · 북쪽 금지 구역",
     "world_energy_point11_5": "고위 에너지 응집점 · 북쪽 금지 구역",
     "world_energy_point11_6": "고위 에너지 응집점 · 북쪽 금지 구역",
-    "world_energy_point11_7": "고위 에너지 응집점 · 북쪽 금지 구역"
+    "world_energy_point11_7": "고위 에너지 응집점 · 북쪽 금지 구역",
+    "world_energy_point12_1": "에너지 응집점 · 눈 덮인 소나무 숲",
+    "world_energy_point12_2": "에너지 응집점 · 눈 덮인 소나무 숲",
+    "world_energy_point12_3": "에너지 응집점 · 눈 덮인 소나무 숲",
+    "world_energy_point12_4": "고위 에너지 응집점 · 눈 덮인 소나무 숲",
+    "world_energy_point12_5": "고위 에너지 응집점 · 눈 덮인 소나무 숲",
+    "world_energy_point12_6": "고위 에너지 응집점 · 눈 덮인 소나무 숲",
+    "world_energy_point12_7": "고위 에너지 응집점 · 눈 덮인 소나무 숲"
   },
   "enemies": {
     "eny_0007_mimicw": "터널링 니드웜",
@@ -1401,7 +1444,15 @@
     "eny_0122_kltdbud": "그림자에 물든 응룡 대원 · 정예",
     "eny_0123_klcap": "그림자에 물든 응룡 대원 · 돌파",
     "eny_0124_kltdcap": "그림자에 물든 응룡 대장",
-    "eny_0125_fdcentur": "알레이크레오스, 천부장"
+    "eny_0125_fdcentur": "알레이크레오스, 천부장",
+    "eny_0127_bigents": "깊은 숲의 분노",
+    "eny_0128_babyents": "배회 나무 골렘",
+    "eny_0129_slwood": "벌레 나무 골렘",
+    "tatget_001_normal": "초보자용 표적",
+    "tatget_002_endurance": "표준 표적",
+    "tatget_003_expand": "보호벽 표적",
+    "tatget_004_armor": "중장형 표적",
+    "tatget_005_shield": "에너지 보호"
   },
   "essencesPage": {
     "optimizer": "파밍 최적화",
@@ -1682,7 +1733,22 @@
     "item_equip_t4_suit_usp02_body_04": "식양의 숨결 경량 방어구 · I",
     "item_equip_t4_suit_usp02_edc_04": "식양의 숨결 강화판",
     "item_equip_t4_suit_usp02_hand_03": "식양의 숨결 보호대",
-    "item_equip_t4_suit_usp02_hand_04": "식양의 숨결 장갑"
+    "item_equip_t4_suit_usp02_hand_04": "식양의 숨결 장갑",
+    "item_equip_t4_parts_wuling00_body_04": "통합 실전 훈련 습격 방어구",
+    "item_equip_t4_parts_wuling00_body_05": "통합 실전 훈련 의료 방어구",
+    "item_equip_t4_parts_wuling00_edc_04": "통합 실전 훈련 습격 단검",
+    "item_equip_t4_parts_wuling00_edc_05": "통합 실전 훈련 동력 공급 장치",
+    "item_equip_t4_parts_wuling00_hand_04": "통합 실전 훈련 습격 보호 장갑",
+    "item_equip_t4_parts_wuling00_hand_05": "통합 실전 훈련 의료 보호 장갑",
+    "item_equip_t4_suit_burst01_body_02": "낙조 경갑 · I",
+    "item_equip_t4_suit_burst01_body_03": "파도 중장갑",
+    "item_equip_t4_suit_burst01_edc_03": "탁류 화염 절단기 · I",
+    "item_equip_t4_suit_burst01_hand_02": "잠수 장갑",
+    "item_equip_t4_suit_spellburst_body_01": "관문 장갑",
+    "item_equip_t4_suit_spellburst_edc_01": "관문 통신기",
+    "item_equip_t4_suit_spellburst_hand_01": "관문 금속 장갑",
+    "item_equip_t4_suit_usp02_edc_05": "식양의 숨결 강화판 · I",
+    "item_equip_t4_suit_usp02_edc_06": "식양의 숨결 중보호판"
   },
   "packs": {
     "none": "세트 없음",
@@ -1732,7 +1798,8 @@
     "suit_combo_cd01": "청파",
     "suit_expend_spell01": "식양의 흐름",
     "suit_crush_fracture": "고검의 잔향",
-    "suit_generaltype": "통합 실전 훈련"
+    "suit_generaltype": "통합 실전 훈련",
+    "suit_spellburst": "관문"
   },
   "equipmentTypes": {
     "body": "방어구",
@@ -1800,7 +1867,8 @@
     "wiki_group_monster_hongshan": "창적",
     "wiki_group_monster_animal": "야외 생물",
     "wiki_group_monster_kl": "침식의 그림자",
-    "wiki_group_monster_js": "파운다이트"
+    "wiki_group_monster_js": "파운다이트",
+    "wiki_group_monster_witchcraft": "주술 피조물"
   },
   "resitances": {
     "heatRez": "열기 저항",
@@ -2572,6 +2640,7 @@
   },
   "audio_player": {
     "playback_error": "오디오를 로드하지 못했습니다",
+    "not_found": "오디오를 찾을 수 없습니다 (404)",
     "open_raw": "Open raw"
   }
 }

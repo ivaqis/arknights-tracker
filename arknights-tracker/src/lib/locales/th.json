@@ -372,7 +372,11 @@
     "special_1_4_1": "เหนือ​คะนึง​พิทักษ์​ รอยแยก​มิ​เลือน",
     "weponbox_1_4_1": "ตั๋ว​ระดับ​ทหาร",
     "special_1_4_2": "อรุณสวัสดิ์​จาก​ดารา​พรายแสง​ของ​เธอ",
-    "weponbox_1_4_2": "ตั๋ว​ระยิบระยับ"
+    "weponbox_1_4_2": "ตั๋ว​ระยิบระยับ",
+    "special_1_5_1": "ไล่​ล่า​กลาง​เหมันต์",
+    "weponbox_1_5_1": "ตั๋ว​หนาว​ยะเยือก",
+    "weponbox_1_5_2": "ตั๋ว​ศิลปิน​แท็ก",
+    "special_1_5_2": "สเปกตรัม​เจิด​จรัส"
   },
   "pages": {
     "home": "หน้าแรก",
@@ -467,7 +471,17 @@
     "gazeNorthToTheRiftSignIn": "ลงชื่อ​เข้าสู่ระบบ​มอง​ทางเหนือ​สู่​รอยแยก",
     "protocolInvitationTheReturn": "คำเชิญ​แห่ง​โปร​โต​คอล​: การ​หวนคืน",
     "bedazzlingDawnstarSignIn": "ลงชื่อ​เข้าสู่ระบบ​ดาวรุ่ง​เจิด​จรัส",
-    "aForestMantledInSnow": "ป่า​ที่​ปกคลุม​ด้วย​หิมะ"
+    "aForestMantledInSnow": "ป่า​ที่​ปกคลุม​ด้วย​หิมะ",
+    "seasonOfVirtuality": "ฤดูกาล​แห่ง​ภาพเสมือน",
+    "seasonOfIllusion": "ฤดูกาล​แห่ง​ภาพลวงตา",
+    "runnersSteeplechase": "วิบาก​นัก​วิ่ง",
+    "snowOverDeepWoods": "หิมะ​โปรย​เหนือ​ป่า​ลึก",
+    "aicSupportChubbyLungAttacks": "AIC สนับสนุน​: หลง​จ้ำม่ำ​โจมตี",
+    "ridgelineFlowsOfAutumnSignIn": "ลงชื่อ​เข้าสู่ระบบ​สายธาร​เทือกเขา​ยาม​ใบไม้​ร่วง",
+    "trialOfTheBow": "บท​ทดสอบ​แห่ง​ธนู",
+    "protocolPassGloomwald": "บัตร​ผ่าน​โปร​โต​คอล​: กลู​ม​วัล​ด์",
+    "orbipomMerge": "OrbiPom! รวม​!",
+    "fletchedIrontipSignIn": "ลงชื่อ​เข้าสู่ระบบ​ปลาย​เหล็ก​ติด​ขนนก"
   },
   "mouths": {
     "january": "มกราคม",
@@ -880,7 +894,26 @@
     "heavyXiragen": "ซี​รา​เจน​หนัก",
     "crimsonSpearleaf": "ใบ​หอก​สีชา​ด",
     "talosCap": "เห็ด​ทาล​อส",
-    "protocolith": "โปร​โต​โค​ลิ​ธ"
+    "protocolith": "โปร​โต​โค​ลิ​ธ",
+    "caudalGoldscales": "เกล็ด​ทอง​ส่วน​หาง",
+    "yazhenSeeds": "เมล็ด​หน่อ​เข็ม",
+    "reedRyeSeeds": "เมล็ดข้าว​ไรย์​กก",
+    "tartpepperSeeds": "เมล็ด​พริก​เปรี้ยว",
+    "redjadeGinsengSeeds": "เมล็ด​โสม​หยก​แดง",
+    "amberRiceSeeds": "เมล็ดข้าว​สี​อำพัน",
+    "protoXiranCuprium": "โปร​โต​ซี​ราน​-​คู​เพ​รี​ยม",
+    "protoXiranCupriumPart": "ชิ้นส่วน​โปร​โต​ซี​ราน​-​คู​เพ​รี​ยม",
+    "protoXiranCupriumGas": "ก๊าซ​โปร​โต​ซี​ราน​-​คู​เพ​รี​ยม",
+    "protoXiranCupriumFrame": "กรอบ​โปร​โต​ซี​ราน​-​คู​เพ​รี​ยม",
+    "protoCupriumFrame": "กรอบ​โปร​โต​คู​เพ​รี​ยม",
+    "protoChubbyLungShell": "เปลือก​โปร​โต​หลง​จ้ำม่ำ",
+    "protoChubbyLungHeavyShell": "เปลือก​หนัก​โปร​โต​หลง​จ้ำม่ำ",
+    "heavyXiraniteChubbyLung": "หลง​จ้ำม่ำ​ซี​เรน​ไนต์​หนัก",
+    "protoHeavyXiranite": "โปร​โต​ซี​เรน​ไนต์​หนัก",
+    "xiraniteChubbyLung": "หลง​จ้ำม่ำ​ซี​เรน​ไนต์",
+    "protoXiranite": "โปร​โต​ซี​เรน​ไนต์",
+    "tenderMoss": "มอส​นุ่มนวล",
+    "slugSprig": "หน่อ​อ่อน​ทาก"
   },
   "common": {
     "copy": "คัดลอก",
@@ -1117,7 +1150,8 @@
     "mifu": "หมี่​ฟู่",
     "camille": "คา​มิลล์",
     "arcane": "ปริศนา",
-    "liino": "หลี​นั่​ว"
+    "liino": "หลี​นั่​ว",
+    "typhoeus": "ไท​ฟี​อุส"
   },
   "weaponsList": {
     "custom_weapon": "อาวุธแบบกำหนดเอง",
@@ -1197,7 +1231,9 @@
     "junctionPoint": "จุด​เชื่อมต่อ",
     "goldenAge": "ยุคทอง",
     "farsight": "สุดลูกหูลูกตา",
-    "bedazzlingNightDebut": "เด​บิว​ต์​คืน​เจิด​จรัส"
+    "bedazzlingNightDebut": "เด​บิว​ต์​คืน​เจิด​จรัส",
+    "umbraOfFrigidEventide": "เงามืด​แห่ง​สนธยา​เยือกแข็ง",
+    "sufferingsEnd": "จุดจบ​แห่ง​ความทุกข์​ทน"
   },
   "cookies": {
     "title": "เราใช้คุกกี้",
@@ -1315,7 +1351,14 @@
     "world_energy_point11_4": "อัล​ลู​เวีย​ม​พลังงาน​รุนแรง​: เขต​ EZ อู่​หลิง​ทางเหนือ",
     "world_energy_point11_5": "อัล​ลู​เวีย​ม​พลังงาน​รุนแรง​: เขต​ EZ อู่​หลิง​ทางเหนือ",
     "world_energy_point11_6": "อัล​ลู​เวีย​ม​พลังงาน​รุนแรง​: เขต​ EZ อู่​หลิง​ทางเหนือ",
-    "world_energy_point11_7": "อัล​ลู​เวีย​ม​พลังงาน​รุนแรง​: เขต​ EZ อู่​หลิง​ทางเหนือ"
+    "world_energy_point11_7": "อัล​ลู​เวีย​ม​พลังงาน​รุนแรง​: เขต​ EZ อู่​หลิง​ทางเหนือ",
+    "world_energy_point12_1": "อัล​ลู​เวีย​ม​พลังงาน​: ป่า​ขาวโพลน",
+    "world_energy_point12_2": "อัล​ลู​เวีย​ม​พลังงาน​: ป่า​ขาวโพลน",
+    "world_energy_point12_3": "อัล​ลู​เวีย​ม​พลังงาน​: ป่า​ขาวโพลน",
+    "world_energy_point12_4": "อัล​ลู​เวีย​ม​พลังงาน​รุนแรง​: ป่า​ขาวโพลน",
+    "world_energy_point12_5": "อัล​ลู​เวีย​ม​พลังงาน​รุนแรง​: ป่า​ขาวโพลน",
+    "world_energy_point12_6": "อัล​ลู​เวีย​ม​พลังงาน​รุนแรง​: ป่า​ขาวโพลน",
+    "world_energy_point12_7": "อัล​ลู​เวีย​ม​พลังงาน​รุนแรง​: ป่า​ขาวโพลน"
   },
   "enemies": {
     "eny_0007_mimicw": "นิด​เ​วิ​ร์​ม​ใต้พิภพ",
@@ -1401,7 +1444,15 @@
     "eny_0122_kltdbud": "เงา​เสื่อมโทรม​ YSTF ระดับสูง",
     "eny_0123_klcap": "เงา​เสื่อมโทรม​พล​เกล​ฟ​ YSTF",
     "eny_0124_kltdcap": "เงา​เสื่อมโทรม​ผู้กอง​ YSTF",
-    "eny_0125_fdcentur": "อัล​เล​เคร​ออส​, ผู้​บังคับ​กองพัน"
+    "eny_0125_fdcentur": "อัล​เล​เคร​ออส​, ผู้​บังคับ​กองพัน",
+    "eny_0127_bigents": "ความ​พิโรธ​แห่ง​กลู​ม​วัล​ด์",
+    "eny_0128_babyents": "โก​เล​ม​ไม้​พเนจร",
+    "eny_0129_slwood": "ทาก​งาน​ไม้",
+    "tatget_001_normal": "เป้าหมาย​ทั่วไป",
+    "tatget_002_endurance": "เป้าหมาย​มาตรฐาน",
+    "tatget_003_expand": "เป้าหมาย​บาร์​เรีย",
+    "tatget_004_armor": "เป้าหมาย​หนัก",
+    "tatget_005_shield": "โล่​พลังงาน"
   },
   "essencesPage": {
     "optimizer": "เครื่องมือเพิ่มประสิทธิภาพการฟาร์ม",
@@ -1682,7 +1733,22 @@
     "item_equip_t4_suit_usp02_body_04": "เกราะ​เบา​ซี​เรน​ไนต์​นิรันดร์​ T1",
     "item_equip_t4_suit_usp02_edc_04": "แผ่น​เสริม​เกราะ​ซี​เรน​ไนต์​นิรันดร์",
     "item_equip_t4_suit_usp02_hand_03": "ผ้า​พัน​มือ​ซี​เรน​ไนต์​นิรันดร์",
-    "item_equip_t4_suit_usp02_hand_04": "เกราะ​มือ​ซี​เรน​ไนต์​นิรันดร์"
+    "item_equip_t4_suit_usp02_hand_04": "เกราะ​มือ​ซี​เรน​ไนต์​นิรันดร์",
+    "item_equip_t4_parts_wuling00_body_04": "ชุด​เกราะ​จู่โจม​ภาค​สนาม​ AIC",
+    "item_equip_t4_parts_wuling00_body_05": "ชุด​เกราะ​พยาบาล​ภาค​สนาม​ AIC",
+    "item_equip_t4_parts_wuling00_edc_04": "มีด​แทง​จู่โจม​ภาค​สนาม​ AIC",
+    "item_equip_t4_parts_wuling00_edc_05": "แบตเตอรี่​สำรอง​ภาค​สนาม​ AIC",
+    "item_equip_t4_parts_wuling00_hand_04": "ถุงมือ​จู่โจม​ภาค​สนาม​ AIC",
+    "item_equip_t4_parts_wuling00_hand_05": "ถุงมือ​พยาบาล​ภาค​สนาม​ AIC",
+    "item_equip_t4_suit_burst01_body_02": "เกราะ​เบา​คลื่น​สลาย​ T1",
+    "item_equip_t4_suit_burst01_body_03": "เกราะ​หนัก​คลื่น​โหม",
+    "item_equip_t4_suit_burst01_edc_03": "หัว​ตัด​พ่น​ไฟ​ที่​ขุ่นมัว​ T1",
+    "item_equip_t4_suit_burst01_hand_02": "ถุงมือ​จม​ลึก",
+    "item_equip_t4_suit_spellburst_body_01": "ชุด​เกราะ​ปราการ​ห้วง​ลึก",
+    "item_equip_t4_suit_spellburst_edc_01": "อุปกรณ์​สื่อสาร​ปราการ​ห้วง​ลึก",
+    "item_equip_t4_suit_spellburst_hand_01": "เกราะ​มือ​ปราการ​ห้วง​ลึก",
+    "item_equip_t4_suit_usp02_edc_05": "แผ่น​เสริม​เกราะ​ซี​เรน​ไนต์​นิรันดร์​ T1",
+    "item_equip_t4_suit_usp02_edc_06": "แผ่น​เสริม​เกราะ​หนัก​ซี​เรน​ไนต์​นิรันดร์"
   },
   "packs": {
     "none": "ยัง​ไม่ได้​กำหนด",
@@ -1732,7 +1798,8 @@
     "suit_combo_cd01": "ชิง​ป๋อ",
     "suit_expend_spell01": "ซี​เรน​โฟลว์",
     "suit_crush_fracture": "กริซ​เซิล​เอ​ด​จ์",
-    "suit_generaltype": "ภาค​สนาม​ AIC"
+    "suit_generaltype": "ภาค​สนาม​ AIC",
+    "suit_spellburst": "ปราการ​ห้วง​ลึก"
   },
   "equipmentTypes": {
     "body": "เกราะ",
@@ -1800,7 +1867,8 @@
     "wiki_group_monster_hongshan": "โจรสลัด​คัง​เซย",
     "wiki_group_monster_animal": "สัตว์ป่า",
     "wiki_group_monster_kl": "เงา​เสื่อมโทรม",
-    "wiki_group_monster_js": "ฟาวน์​ได​ท์"
+    "wiki_group_monster_js": "ฟาวน์​ได​ท์",
+    "wiki_group_monster_witchcraft": "วัตถุ​เวทมนตร์"
   },
   "resitances": {
     "heatRez": "การต้าน​ทาน​ความร้อน",
@@ -2572,6 +2640,7 @@
   },
   "audio_player": {
     "playback_error": "ไม่สามารถโหลดเสียงได้",
+    "not_found": "ไม่พบไฟล์เสียง (404)",
     "open_raw": "Open raw"
   }
 }

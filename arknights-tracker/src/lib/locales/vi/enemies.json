@@ -387,8 +387,8 @@
     ]
   },
   "eny_0082_hsbear": {
-    "name": "Người Gõ Trống Trời",
-    "nickname": "Người Gõ Trống Trời",
+    "name": "Thiên Cổ Yêu Thú",
+    "nickname": "Thiên Cổ Yêu Thú",
     "description": "Một con quái gầm rú sinh trưởng nơi miền hoang dã. Con quái này có nguồn gốc từ Talos-II. Nó sử dụng lớp màng cứng trên đầu và cổ để phát ra tiếng gào rú đủ mạnh để làm rung chuyển cả núi rừng.",
     "abilities": [
       "Kẻ địch có HP thấp sẽ bước vào trạng thái Điên Cuồng. Trong trạng thái này, kẻ địch thực hiện đòn tấn công tụ kích thường xuyên hơn, gây ST cao hơn và được Giảm ST. Gián đoạn kẻ địch đúng lúc để chấm dứt trạng thái Điên Cuồng."
@@ -572,7 +572,7 @@
   "eny_0105_wgslime2": {
     "name": "Dòng Chảy Bùn δ",
     "nickname": "Dòng Chảy Bùn δ",
-    "description": "\"Tholeroygran\" (ID lưu trữ: ACM311δ) là một biến thể được nạp năng lượng của ACM311. Nó sử dụng các đường dẫn năng lượng độc đáo và do đó duy trì nhiệt độ cân bằng nội môi thấp hơn đáng kể so với điểm đông của các thành phần cấu tạo.",
+    "description": "\"Tholeroygran Dinedon\" (ID lưu trữ: ACM311δ) là một biến thể được nạp năng lượng của ACM311. Nó sử dụng các đường dẫn năng lượng độc đáo và do đó duy trì nhiệt độ cân bằng nội môi thấp hơn đáng kể so với điểm đóng băng của các thành phần cấu tạo.",
     "abilities": [
       "Kẻ địch này có thể nhanh chóng tiếp cận từ xa. Đòn tấn công của nó có thể gây trạng thái Nhiễm Băng lên các cán viên khi trúng."
     ]
@@ -651,7 +651,7 @@
     "nickname": "Bóng Nhiễm Khuẩn Quái Lông Nhọn",
     "description": "Hiện thân của năng lượng Æther tồn dư, phóng chiếu hình dạng bên ngoài của một Quái Lông Nhọn. Bóng Nhiễm Khuẩn này có vẻ thể hiện những đòn tấn công lăn và bật nhảy hung hãn hơn nhiều so với bản thể còn sống, dù đó có lẽ cũng chỉ là ảo giác.",
     "abilities": [
-      "Sau một khoảng thời gian tụ lực ngắn, Bóng Nhiễm Khuẩn Quái Lông Nhọn có thể triệu hồi nhiều tia sét và kích hoạt Năng Lượng Bóng Nhiễm Khuẩn trong phạm vi lớn. Hãy nhanh chóng làm gián đoạn con thú khi nó bắt đầu tụ lực."
+      "Sau một khoảng thời gian tụ lực ngắn, Bóng Nhiễm Khuẩn Quái Lông có thể triệu hồi nhiều tia sét và kích hoạt Năng Lượng Bóng Nhiễm Khuẩn trong phạm vi lớn. Hãy nhanh chóng làm gián đoạn con thú khi nó bắt đầu tụ lực."
     ]
   },
   "eny_0119_kltiger": {
@@ -713,6 +713,72 @@
     "abilities": [
       "Khi thanh Suy Sụp của Alleikhreos, Thiên Phu Trưởng chạm đến Điểm Suy Sụp, hắn sẽ rơi ra một Vũ Khí Tạo Tác. Hãy điều khiển cán viên đang điều khiển đến gần để nhặt và dùng vũ khí đó tấn công hắn.",
       "Khi tình thế trở nên bất lợi với Alleikhreos, Thiên Phu Trưởng, hắn sẽ triệu hồi các phân thân từ khe nứt để tấn công đối thủ."
+    ]
+  },
+  "eny_0127_bigents": {
+    "name": "Cơn Thịnh Nộ Của Gloomwald",
+    "nickname": "Cơn Thịnh Nộ Của Gloomwald",
+    "description": "Một con rối chiến đấu khổng lồ do Nữ Tư Tế Tuyết tạo nên. Nó từng phụng mệnh chủ nhân, rong ruổi lùng sục khắp miền sương mù vô tận, cho đến khoảnh khắc nhận ra mình đã bị ruồng bỏ. Kể từ đó, nó trở thành vật chứa hội tụ toàn bộ cơn thịnh nộ của khu rừng tuyết thâm u.",
+    "abilities": [
+      "Cơn Thịnh Nộ Của Gloomwald sẽ để lại dây leo trên mặt đất. Cán viên giẫm phải dây leo sẽ liên tục nhận ST và bị Làm Chậm.",
+      "Cơn Thịnh Nộ Của Gloomwald sẽ triệu hồi Mộc Ngẫu Lãng Du hỗ trợ trong giao tranh."
+    ]
+  },
+  "eny_0128_babyents": {
+    "name": "Mộc Ngẫu Lãng Du",
+    "nickname": "Mộc Ngẫu Lãng Du",
+    "description": "Một con rối chiến đấu nhỏ do Nữ Tư Tế Tuyết tạo nên, đảm nhiệm việc bảo vệ an nguy cho Rừng Tuyết. Chớ xem thường đôi nắm đấm bằng gỗ của nó, bởi chúng có thể dễ dàng đập vỡ cả đá tảng.",
+    "abilities": [
+      "Mộc Ngẫu Lãng Du không có tầng khiên sẽ trói cán viên để hấp thụ năng lượng và phục hồi tầng lá chắn.",
+      "Các Mộc Ngẫu Lãng Du sẽ phối hợp với nhau khi tấn công."
+    ]
+  },
+  "eny_0129_slwood": {
+    "name": "Mộc Ngẫu Dạng Sên",
+    "nickname": "Mộc Ngẫu Dạng Sên",
+    "description": "Một con rối chiến đấu do Nữ Tư Tế Tuyết tạo nên, có hình dáng mô phỏng Sên Originium. Mộc ngẫu này di chuyển vô cùng nhanh nhẹn và đặc biệt giỏi đào hang.",
+    "abilities": [
+      "Mộc Ngẫu Dạng Sên có thể đào xuống lòng đất để lén tiếp cận đối thủ."
+    ]
+  },
+  "tatget_001_normal": {
+    "name": "Bia Cơ Bản",
+    "nickname": "Bia Cơ Bản",
+    "description": "Bia mục tiêu cơ bản dành cho cung thủ mới tập.",
+    "abilities": [
+      "Mục tiêu cơ bản. HP: 1."
+    ]
+  },
+  "tatget_002_endurance": {
+    "name": "Bia Tiêu Chuẩn",
+    "nickname": "Bia Tiêu Chuẩn",
+    "description": "Một bia mục tiêu tiêu chuẩn, thiết yếu cho việc nâng cao kỹ năng bắn cung.",
+    "abilities": [
+      "Mục tiêu bền bỉ. HP: 2."
+    ]
+  },
+  "tatget_003_expand": {
+    "name": "Bia Chắn",
+    "nickname": "Bia Chắn",
+    "description": "Một bia mục tiêu đặc biệt có thể thay đổi kích thước và che chắn các bia mục tiêu phía sau. Hãy thử phá vỡ nó trước.",
+    "abilities": [
+      "Mục tiêu nhiễu loạn có thể thay đổi kích thước. HP: 3."
+    ]
+  },
+  "tatget_004_armor": {
+    "name": "Bia Hạng Nặng",
+    "nickname": "Bia Hạng Nặng",
+    "description": "Một bia mục tiêu đặc biệt làm từ hợp kim cường độ cao. Bia rất cứng cáp và được các cung thủ sở hữu sức mạnh vượt trội ưa chuộng.",
+    "abilities": [
+      "Mục tiêu bọc giáp. HP: 4."
+    ]
+  },
+  "tatget_005_shield": {
+    "name": "Khiên Năng Lượng",
+    "nickname": "Khiên Năng Lượng",
+    "description": "Khiên năng lượng được thiết kế cho bia mục tiêu. Các cung thủ thông thạo thích tạo khiên cho bia mục tiêu của mình để giúp chúng tồn tại thêm vài giây.",
+    "abilities": [
+      "Một lớp khiên có thể áp dụng lên bất kỳ mục tiêu nào. HP: 2. Mục tiêu có Khiên không thể bị đóng băng, không thể bị chủ động áp dụng Nhựa, và tầng Nhựa trên mục tiêu có Khiên sẽ không kích nổ khi nhận ST."
     ]
   }
 }

@@ -25,7 +25,7 @@
   "skills": {
     "basicAttack": {
       "name": "Manumancienne aux épées",
-      "description": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 4 séquences qui inflige des <@ba.pd>DÉG physiques</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également Déséquilibre <@ba.poise>{poise:0}</> fois. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.pd>DÉG physiques</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.pd>DÉG physiques</> et restaure quelques PC.",
+      "description": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 4 séquences qui inflige des <@ba.pd>DÉG physiques</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également <@ba.poise>{poise:0}</> points de Déséquilibre. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.pd>DÉG physiques</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.pd>DÉG physiques</> et restaure quelques PC.",
       "batkSeq1Multiplier": "Multiplicateur d'ATQ-B SÉQ 1",
       "batkSeq2Multiplier": "Multiplicateur d'ATQ-B SÉQ 2",
       "batkSeq3Multiplier": "Multiplicateur d'ATQ-B SÉQ 3",
@@ -35,7 +35,7 @@
     },
     "battleSkill": {
       "name": "Triplex de Qingbo",
-      "description": "Continuez à utiliser la compétence de combat de Mi Fu afin qu'elle libère 3 attaques différentes. La première compétence de combat est <@ba.key>Attrape-nuages</>.\n<@ba.key>ATTAQUE 1 - Attrape-nuages</> : coûte <@ba.vup>100</> PC et <#ba.return>restaure</><@ba.vup> 50</> PC après le lancement. Mi Fu lance un grappin avec ses gants de boxe, qui inflige des <@ba.pd>DÉG physiques</> à la cible et aux ennemis à proximité, puis tente de les attirer à elle. Après avoir lancé l'ATTAQUE 1, la compétence de combat suivante est temporairement remplacée par <@ba.key>Piste broyante</>.\n<@ba.key>ATTAQUE 2 - Piste broyante</> : coûte <@ba.vup>50</> PC. Mi Fu lance une tempête de coups qui infligent des <@ba.pd>DÉG physiques</>. Le dernier coup applique <#ba.crush>Broyage</>. Si ce Broyage <#ba.consume>consomme</> au moins 3 cumuls de <#ba.noguard>Vulnérabilité</> d'une cible unique, alors la compétence de combat suivante est temporairement remplacée par <@ba.key>Fissure planétaire</>.\n<@ba.key>ATTAQUE 3 - Fissure planétaire</> : coûte <@ba.vup>50</> PC. Mi Fu inflige de gros <@ba.pd>DÉG physiques</> sur une zone donnée. Ces DÉG ne comptent pas comme des DÉG de compétence de combat, mais comme des DÉG de <#ba.crush>Broyage</>.",
+      "description": "Continuez à utiliser la compétence de combat de Mi Fu afin qu'elle libère 3 attaques différentes. La première compétence de combat est <@ba.key>Attrape-nuages</>.\n<@ba.key>ATTAQUE 1 - Attrape-nuages</> : coûte <@ba.vup>100</> PC et <#ba.return>restitue</><@ba.vup> 50</> PC après le lancement. Mi Fu lance un grappin avec ses gants de boxe, qui inflige des <@ba.pd>DÉG physiques</> à la cible et aux ennemis à proximité, puis tente de les attirer à elle. Après avoir lancé l'ATTAQUE 1, la compétence de combat suivante est temporairement remplacée par <@ba.key>Piste broyante</>.\n<@ba.key>ATTAQUE 2 - Piste broyante</> : coûte <@ba.vup>50</> PC. Mi Fu lance une tempête de coups qui infligent des <@ba.pd>DÉG physiques</>. Le dernier coup applique <#ba.crush>Broyage</>. Si ce Broyage <#ba.consume>consomme</> au moins 3 cumuls de <#ba.noguard>Vulnérabilité</> d'une cible unique, alors la compétence de combat suivante est temporairement remplacée par <@ba.key>Fissure planétaire</>.\n<@ba.key>ATTAQUE 3 - Fissure planétaire</> : coûte <@ba.vup>50</> PC. Mi Fu inflige de gros <@ba.pd>DÉG physiques</> sur une zone donnée. Ces DÉG ne comptent pas comme des DÉG de compétence de combat, mais comme des DÉG de <#ba.crush>Broyage</>.",
       "cloudtrapperDmgMultiplier": "Multiplicateur de DÉG d'Attrape-nuages",
       "trailAndMangleDmgMultiplier": "Multiplicateur de DÉG de Piste broyante",
       "trailAndMangleStagger": "Déséquilibre de Piste broyante",
@@ -153,7 +153,7 @@
       },
       {
         "voId": "chr_0031_mifu_chrup_skill_01",
-        "title": "Activation de la matrice de capacités",
+        "title": "Activation du nœud de talent",
         "text": "J'ai découvert quelques techniques. Quand est-ce que je pourrai les utiliser ?"
       },
       {

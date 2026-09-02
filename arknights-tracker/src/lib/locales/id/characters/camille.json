@@ -43,7 +43,7 @@
       "dmgMultiplier": "Pengganda DMG",
       "stagger": "Stagger",
       "firefangVesperwingsDurationS": "Durasi Firefang Vesperwing (dtk)",
-      "weaknessEffect": "Efek Weakness",
+      "weakness": "Weakness",
       "heatSusceptibility": "Heat Susceptibility",
       "explosionDmgMultiplier": "Pengganda DMG Ledakan"
     },
@@ -162,7 +162,7 @@
       },
       {
         "voId": "chr_0033_camille_chrup_skill_01",
-        "title": "Aktivasi Matriks Kemampuan",
+        "title": "Aktivasi Nodus Talent",
         "text": "Semua kotoran sudah dibersihkan. Sekarang, darah ini sudah lebih murni."
       },
       {

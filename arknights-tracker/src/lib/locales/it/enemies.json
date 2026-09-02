@@ -572,7 +572,7 @@
   "eny_0105_wgslime2": {
     "name": "Fangoflutto δ",
     "nickname": "Fangoflutto δ",
-    "description": "Il \"Tholeroygran\" (ID archivio: ACM311δ) è una variante energizzata dell'ACM311. Poiché sfrutta percorsi energetici unici, può mantenere una temperatura omeostatica notevolmente inferiore ai punti di congelamento della sua materia costitutiva.",
+    "description": "Il \"Tholeroygran Dinedon\" (ID archivio: ACM311δ) è una variante energizzata dell'ACM311. Poiché sfrutta percorsi energetici unici, può mantenere una temperatura omeostatica notevolmente inferiore ai punti di congelamento della sua materia costitutiva.",
     "abilities": [
       "Questo nemico può coprire grandi distanze in un batter d'occhio. I suoi attacchi possono applicare Afflizione da ghiaccio agli operatori."
     ]
@@ -713,6 +713,72 @@
     "abilities": [
       "Quando la barra di vacillamento di Alleikhreos, Chiliarch colpisce il nodo di vacillamento, rilascia un'Arma di Foundite. Avvicinati con l'operatore controllato per raccoglierla e usarla per attaccarlo.",
       "Quando la fortuna lo abbandona, Alleikhreos, Chiliarch evoca copie dalla spaccatura per attaccare i suoi avversari."
+    ]
+  },
+  "eny_0127_bigents": {
+    "name": "Furia di Gloomwald",
+    "nickname": "Furia di Gloomwald",
+    "description": "Una enorme marionetta da battaglia creata da una sacerdotessa delle nevi. Aveva seguito il comando della sua maestra, vagando e perlustrando un regno sconfinato di nebbia, finché non si rese conto di essere stato abbandonato, diventando così ricettacolo dell'intera furia di una profonda foresta innevata.",
+    "abilities": [
+      "La Furia di Gloomwald lascia dei rampicanti sul terreno. Un operatore che li calpesta subisce continuamente danni e viene rallentato.",
+      "La Furia di Gloomwald evoca dei girovaghi del bosco che offrono ausilio in battaglia."
+    ]
+  },
+  "eny_0128_babyents": {
+    "name": "Girovago del bosco",
+    "nickname": "Girovago del bosco",
+    "description": "Una piccola marionetta da battaglia creata da una sacerdotessa delle nevi. Ha il compito di proteggere la Foresta innevata. Non sottovalutare i suoi pugni di legno: possono frantumare la pietra senza alcuno sforzo.",
+    "abilities": [
+      "Un girovago del bosco senza accumuli di scudi intrappola gli operatori per assorbire la loro energia e ripristinare gli accumuli di scudo.",
+      "I girovaghi del bosco collaborano tra loro durante gli attacchi."
+    ]
+  },
+  "eny_0129_slwood": {
+    "name": "Lumaca del bosco",
+    "nickname": "Lumaca del bosco",
+    "description": "Una marionetta da battaglia creata da una sacerdotessa delle nevi. La sua forma ricorda quella dell'origilumaca. Questa creazione di legno si muove rapidamente ed è un'eccellente scavatrice.",
+    "abilities": [
+      "Le lumache del bosco possono scavare sottoterra per cogliere di sorpresa gli avversari."
+    ]
+  },
+  "tatget_001_normal": {
+    "name": "Bersaglio base",
+    "nickname": "Bersaglio base",
+    "description": "Un bersaglio semplice per arcieri alle prime armi.",
+    "abilities": [
+      "Un bersaglio base. PS: 1."
+    ]
+  },
+  "tatget_002_endurance": {
+    "name": "Bersaglio standard",
+    "nickname": "Bersaglio standard",
+    "description": "Un bersaglio standard, indispensabile per migliorare le abilità di tiro con l'arco.",
+    "abilities": [
+      "Un bersaglio resistente. PS: 2."
+    ]
+  },
+  "tatget_003_expand": {
+    "name": "Bersaglio barriera",
+    "nickname": "Bersaglio barriera",
+    "description": "Un bersaglio speciale che può cambiare dimensione e bloccare altri bersagli dietro di sé. Per prima cosa, prova a infrangerlo.",
+    "abilities": [
+      "Un bersaglio di disturbo che cambia dimensioni. PS: 3."
+    ]
+  },
+  "tatget_004_armor": {
+    "name": "Bersaglio pesante",
+    "nickname": "Bersaglio pesante",
+    "description": "Un bersaglio speciale realizzato in lega ad alta resistenza. È resistente e molto apprezzato dagli arcieri che possiedono grande forza.",
+    "abilities": [
+      "Un bersaglio corazzato. PS: 4."
+    ]
+  },
+  "tatget_005_shield": {
+    "name": "Scudo energetico",
+    "nickname": "Scudo energetico",
+    "description": "Uno scudo energetico progettato per i bersagli. Gli arcieri esperti amano proteggere i bersagli per farli durare qualche secondo in più.",
+    "abilities": [
+      "Uno scudo che può essere applicato a qualsiasi bersaglio. PS: 2. I bersagli protetti non possono essere congelati, non è possibile applicare attivamente Resina su di essi e gli accumuli di Resina sui bersagli protetti non detonano quando subiscono danni."
     ]
   }
 }

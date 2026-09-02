@@ -47,7 +47,7 @@
         "conditionDescInactive1": "/*Trí Tuệ (<@ba.vup>{floor:deck_wisd:0}</>) ＜ Ý Chí (<@ba.vup>{floor:deck_will:0}</>), <@ba.key>Trận Huyền Thuật: TRÍ TUỆ</> sẽ KHÔNG ĐƯỢC KÍCH HOẠT.*/",
         "conditionName2": "Trận Huyền Thuật: Ý CHÍ",
         "conditionDesc2": "/*Ý Chí (<@ba.vup>{floor:deck_will:0}</>) ＞ Trí Tuệ (<@ba.vup>{floor:deck_wisd:0}</>), <@ba.key>Trận Huyền Thuật: Ý CHÍ</> sẽ được KÍCH HOẠT.*/",
-        "conditionPostDesc2": "<@ba.key>Trận Huyền Thuật: Ý CHÍ</>:\n- Gây nhiều ST hơn, đồng thời trận huyền thuật còn <@ba.key>kéo</> các kẻ địch vào trong khu vực ảnh hưởng.",
+        "conditionPostDesc2": "<@ba.key>Trận Huyền Thuật: Ý CHÍ</>:\n- Khi gây ST, đồng thời trận huyền thuật còn <@ba.key>kéo</> các kẻ địch vào trong khu vực ảnh hưởng.",
         "conditionDescInactive2": "/*Ý Chí (<@ba.vup>{floor:deck_will:0}</>) ≤ Trí Tuệ (<@ba.vup>{floor:deck_wisd:0}</>), <@ba.key>Trận Huyền Thuật: Ý CHÍ</> sẽ KHÔNG ĐƯỢC KÍCH HOẠT.*/"
       },
       "condition1": {
@@ -85,7 +85,7 @@
         "imprisonmentAndSusceptibilityDurationS": "Thời Gian Giam Cầm và Yếu Hóa (giây)",
         "baseSusceptibility": "Yếu Hóa Cơ Bản",
         "maxBonusSusceptibilityFromWill": "Thưởng Tối Đa Yếu Hóa từ Ý Chí",
-        "willRequiredForMaxBonusSusceptibility": "Yêu Cầu Ý Chí để nhận Thưởng Tối Đa Yếu Hóa"
+        "willForMaxBonusSusceptibility": "Ý Chí để nhận Thưởng TỐI ĐA Yếu Hóa"
       },
       "baseDmgMultiplier": "Hệ Số ST Cơ Bản",
       "baseStagger": "Suy Sụp Cơ Bản",
@@ -218,7 +218,7 @@
       },
       {
         "voId": "chr_0032_lizhiyan_chrup_skill_01",
-        "title": "Kích Hoạt Ma Trận Năng Lực",
+        "title": "Kích hoạt Mốc Thiên Phú",
         "text": "Rèn giũa bản thân đến đỉnh cao hoàn mỹ, rồi sẽ bình tĩnh mà chiến thắng trong mọi tình thế."
       },
       {

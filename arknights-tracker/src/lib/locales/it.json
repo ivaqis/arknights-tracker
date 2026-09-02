@@ -372,7 +372,11 @@
     "special_1_4_1": "Sguardo nostalgico al Nord dall'abisso",
     "weponbox_1_4_1": "Distribuzione grado militare",
     "special_1_4_2": "Buongiorno dalla tua stella del mattino",
-    "weponbox_1_4_2": "Distribuzione abbagliante"
+    "weponbox_1_4_2": "Distribuzione abbagliante",
+    "special_1_5_1": "Caccia invernale",
+    "weponbox_1_5_1": "Distribuzione Freddo profondo",
+    "weponbox_1_5_2": "Distribuzione Artista dei graffiti",
+    "special_1_5_2": "Spettro radioso"
   },
   "pages": {
     "home": "Home",
@@ -467,7 +471,17 @@
     "gazeNorthToTheRiftSignIn": "Accesso Guarda a nord verso la spaccatura",
     "protocolInvitationTheReturn": "Invito di protocollo: Il ritorno",
     "bedazzlingDawnstarSignIn": "Accesso: Stella del mattino abbagliante",
-    "aForestMantledInSnow": "Una foresta ammantata di neve"
+    "aForestMantledInSnow": "Una foresta ammantata di neve",
+    "seasonOfVirtuality": "Stagione della virtualità",
+    "seasonOfIllusion": "Stagione dell'illusione",
+    "runnersSteeplechase": "Corsa a ostacoli dei corridori",
+    "snowOverDeepWoods": "Neve nelle profondità del bosco",
+    "aicSupportChubbyLungAttacks": "Supporto SIA: Attacco del cicciodrago",
+    "ridgelineFlowsOfAutumnSignIn": "Accesso Flussi autunnali sul crinale",
+    "trialOfTheBow": "Prova dell'arco",
+    "protocolPassGloomwald": "Pass protocollare: Gloomwald",
+    "orbipomMerge": "OrbiPom! FUSIONE!",
+    "fletchedIrontipSignIn": "Accesso Freccia di ferro ordinaria"
   },
   "mouths": {
     "january": "Gennaio",
@@ -880,7 +894,26 @@
     "heavyXiragen": "Xirageno pesante",
     "crimsonSpearleaf": "Foglialancia cremisi",
     "talosCap": "Cappuccetto di Talos",
-    "protocolith": "Protocolite"
+    "protocolith": "Protocolite",
+    "caudalGoldscales": "Scaglie caudali dorate",
+    "yazhenSeeds": "Semi di yazhen",
+    "reedRyeSeeds": "Semi di segale",
+    "tartpepperSeeds": "Semi di amaroncino",
+    "redjadeGinsengSeeds": "Semi di ginseng giadarossa",
+    "amberRiceSeeds": "Semi di riso ambrato",
+    "protoXiranCuprium": "Xiran-cuprium prototipo",
+    "protoXiranCupriumPart": "Parte xiran-cuprium prototipo",
+    "protoXiranCupriumGas": "Gas xiran-cuprium prototipo",
+    "protoXiranCupriumFrame": "Telaio xiran-cuprium prototipo",
+    "protoCupriumFrame": "Telaio di cuprium prototipo",
+    "protoChubbyLungShell": "Guscio di cicciodrago prototipo",
+    "protoChubbyLungHeavyShell": "Guscio pesante di cicciodrago prototipo",
+    "heavyXiraniteChubbyLung": "Cicciodrago di xiranite pesante",
+    "protoHeavyXiranite": "Xiranite pesante prototipo",
+    "xiraniteChubbyLung": "Cicciodrago di xiranite",
+    "protoXiranite": "Xiranite prototipo",
+    "tenderMoss": "Muschio tenero",
+    "slugSprig": "Ramoscello di lumaca"
   },
   "common": {
     "copy": "Copia",
@@ -1117,7 +1150,8 @@
     "mifu": "Mi Fu",
     "camille": "Camille",
     "arcane": "Arcana",
-    "liino": "Liino"
+    "liino": "Liino",
+    "typhoeus": "Typhoeus"
   },
   "weaponsList": {
     "custom_weapon": "Arma Personalizzata",
@@ -1197,7 +1231,9 @@
     "junctionPoint": "Punto di congiunzione",
     "goldenAge": "Epoca d'oro",
     "farsight": "Lungimiranza",
-    "bedazzlingNightDebut": "Debutto notturno abbagliante"
+    "bedazzlingNightDebut": "Debutto notturno abbagliante",
+    "umbraOfFrigidEventide": "Ombra del gelido crepuscolo",
+    "sufferingsEnd": "Fine della sofferenza"
   },
   "cookies": {
     "title": "Utilizziamo i cookie",
@@ -1315,7 +1351,14 @@
     "world_energy_point11_4": "Sedimento energetico ostico: Area interdetta di Wuling Nord",
     "world_energy_point11_5": "Sedimento energetico ostico: Area interdetta di Wuling Nord",
     "world_energy_point11_6": "Sedimento energetico ostico: Area interdetta di Wuling Nord",
-    "world_energy_point11_7": "Sedimento energetico ostico: Area interdetta di Wuling Nord"
+    "world_energy_point11_7": "Sedimento energetico ostico: Area interdetta di Wuling Nord",
+    "world_energy_point12_1": "Sedimento energetico: Foresta innevata",
+    "world_energy_point12_2": "Sedimento energetico: Foresta innevata",
+    "world_energy_point12_3": "Sedimento energetico: Foresta innevata",
+    "world_energy_point12_4": "Sedimento energetico ostico: Foresta innevata",
+    "world_energy_point12_5": "Sedimento energetico ostico: Foresta innevata",
+    "world_energy_point12_6": "Sedimento energetico ostico: Foresta innevata",
+    "world_energy_point12_7": "Sedimento energetico ostico: Foresta innevata"
   },
   "enemies": {
     "eny_0007_mimicw": "Drago delle sabbie",
@@ -1401,7 +1444,15 @@
     "eny_0122_kltdbud": "Ombra contaminante élite STEY",
     "eny_0123_klcap": "Ombra contaminante Maestro di falcione STEY",
     "eny_0124_kltdcap": "Ombra contaminante Capitano STEY",
-    "eny_0125_fdcentur": "Alleikhreos, Chiliarch"
+    "eny_0125_fdcentur": "Alleikhreos, Chiliarch",
+    "eny_0127_bigents": "Furia di Gloomwald",
+    "eny_0128_babyents": "Girovago del bosco",
+    "eny_0129_slwood": "Lumaca del bosco",
+    "tatget_001_normal": "Bersaglio base",
+    "tatget_002_endurance": "Bersaglio standard",
+    "tatget_003_expand": "Bersaglio barriera",
+    "tatget_004_armor": "Bersaglio pesante",
+    "tatget_005_shield": "Scudo energetico"
   },
   "essencesPage": {
     "optimizer": "Ottimizzatore farming",
@@ -1682,7 +1733,22 @@
     "item_equip_t4_suit_usp02_body_04": "Armatura di xiranite eterna leggera O1",
     "item_equip_t4_suit_usp02_edc_04": "Placca di sostegno di xiranite eterna",
     "item_equip_t4_suit_usp02_hand_03": "Fasce di xiranite eterna",
-    "item_equip_t4_suit_usp02_hand_04": "Mani di xiranite eterna"
+    "item_equip_t4_suit_usp02_hand_04": "Mani di xiranite eterna",
+    "item_equip_t4_parts_wuling00_body_04": "Armatura d'assalto per lavoro sul campo del SIA",
+    "item_equip_t4_parts_wuling00_body_05": "Armatura medica per lavoro sul campo del SIA",
+    "item_equip_t4_parts_wuling00_edc_04": "Pugnale a scatto d'assalto per lavoro sul campo del SIA",
+    "item_equip_t4_parts_wuling00_edc_05": "Batteria portatile per lavoro sul campo del SIA",
+    "item_equip_t4_parts_wuling00_hand_04": "Guanti d'assalto per lavoro sul campo del SIA",
+    "item_equip_t4_parts_wuling00_hand_05": "Guanti medici per lavoro sul campo del SIA",
+    "item_equip_t4_suit_burst01_body_02": "Armatura leggera della bassa marea T1",
+    "item_equip_t4_suit_burst01_body_03": "Armatura pesante Onda crescente",
+    "item_equip_t4_suit_burst01_edc_03": "Torcia tagliente torbida T1",
+    "item_equip_t4_suit_burst01_hand_02": "Guanti da immersione",
+    "item_equip_t4_suit_spellburst_body_01": "Armatura del bastione profondo",
+    "item_equip_t4_suit_spellburst_edc_01": "Comunicatore del bastione profondo",
+    "item_equip_t4_suit_spellburst_hand_01": "Coprimani del bastione profondo",
+    "item_equip_t4_suit_usp02_edc_05": "Placca di sostegno di xiranite eterna T1",
+    "item_equip_t4_suit_usp02_edc_06": "Placca pesante di xiranite eterna"
   },
   "packs": {
     "none": "Senza set",
@@ -1732,7 +1798,8 @@
     "suit_combo_cd01": "Qingbo",
     "suit_expend_spell01": "Xiranflow",
     "suit_crush_fracture": "Bordo grigio",
-    "suit_generaltype": "Lavoro sul campo del SIA"
+    "suit_generaltype": "Lavoro sul campo del SIA",
+    "suit_spellburst": "Bastione profondo"
   },
   "equipmentTypes": {
     "body": "Armatura",
@@ -1800,7 +1867,8 @@
     "wiki_group_monster_hongshan": "Pirati di Cangzei",
     "wiki_group_monster_animal": "Fauna",
     "wiki_group_monster_kl": "Ombre contaminanti",
-    "wiki_group_monster_js": "Foundite"
+    "wiki_group_monster_js": "Foundite",
+    "wiki_group_monster_witchcraft": "Creatura stregata"
   },
   "resitances": {
     "heatRez": "Resistenza al fuoco",
@@ -2572,6 +2640,7 @@
   },
   "audio_player": {
     "playback_error": "Impossibile caricare l'audio",
+    "not_found": "Audio non trovato (404)",
     "open_raw": "Open raw"
   }
 }

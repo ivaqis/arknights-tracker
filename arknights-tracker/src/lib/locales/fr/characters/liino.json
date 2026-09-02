@@ -27,7 +27,7 @@
   "skills": {
     "basicAttack": {
       "name": "Battement de cœur scintillant",
-      "description": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 5 séquences qui inflige des <@ba.pulse>DÉG électriques</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également Déséquilibre <@ba.poise>{poise:0}</> fois. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.pulse>DÉG électriques</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.pulse>DÉG électriques</> et restaure quelques PC.",
+      "description": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 5 séquences qui inflige des <@ba.pulse>DÉG électriques</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également <@ba.poise>{poise:0}</> points de Déséquilibre. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.pulse>DÉG électriques</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.pulse>DÉG électriques</> et restaure quelques PC.",
       "batkSeq1Multiplier": "Multiplicateur d'ATQ-B SÉQ 1",
       "batkSeq2Multiplier": "Multiplicateur d'ATQ-B SÉQ 2",
       "batkSeq3Multiplier": "Multiplicateur d'ATQ-B SÉQ 3",
@@ -38,8 +38,8 @@
     },
     "battleSkill": {
       "name": "Concentration fulgurante",
-      "description": "Liino inflige des <@ba.pulse>DÉG électriques</> aux ennemis et adopte la <@ba.key>posture Chanteuse</>. Lorsque cette posture est active, si des ennemis sont à proximité, Liino lance régulièrement une ATQ supplémentaire (qui inflige des <@ba.pulse>DÉG électriques</> aux ennemis).\n<@ba.key>Posture Chanteuse</> : lorsque cette posture est active, Liino octroie un bonus d'ATQ à toute l'équipe. Une fois le combat commencé, Liino <@ba.heal>soigne</> également en continu les opérateurs à portée.\n<@ba.info>Lorsque la posture Chanteuse est active, sa compétence de combat est remplacée par la posture Fin. L'utiliser interrompt prématurément la posture Chanteuse et ne consomme pas de PC, après quoi la compétence de combat connaîtra un court temps de recharge.</>",
-      "firstAtkMultiplier": "Premier multiplicateur d'ATQ",
+      "description": "Liino inflige des <@ba.pulse>DÉG électriques</> aux ennemis et adopte la <@ba.key>posture Chanteuse</>. Lorsque cette posture est active, si des ennemis sont à proximité, Liino lance régulièrement une ATQ supplémentaire (qui inflige des <@ba.pulse>DÉG électriques</> aux ennemis).\n<@ba.key>Posture Chanteuse</> : lorsque cette posture est active, Liino octroie un bonus d'ATQ à toute l'équipe. Une fois le combat commencé, Liino <@ba.heal>soigne</> également en continu les opérateurs à portée.\n<@ba.info>Lorsque la posture Chanteuse est active, sa compétence de combat est remplacée par la posture Fin. L'utiliser interrompt prématurément la posture Chanteuse et ne consomme pas de PC, après quoi la compétence de combat connaîtra un court temps de recharge.</>",
+      "1stAtkMultiplier": "Multiplicateur de 1ère ATQ",
       "additionalAtkDmgMultiplier": "Multiplicateur de DÉG d'ATQ supplémentaire",
       "additionalAtkIntervalS": "Intervalle d'ATQ supplémentaire (s)",
       "beatIntervalS": "Intervalle de temps (s)",
@@ -60,7 +60,7 @@
     },
     "ultimate": {
       "name": "Concerto de l'étoile du matin",
-      "description": "Liino <@ba.heal>soigne</> toute l'équipe, active en même temps sa <@ba.key>posture Cosmovoix</>, déverse un déluge continu de Pyrotechnie scénique qui inflige des <@ba.pulse>DÉG électriques</>, et déclenche une <@ba.key>Extravagance électrifiante</> qui inflige des <@ba.pulse>DÉG électriques</> et applique de force <#ba.conduct>Électrification</> aux ennemis dans une large zone.\n<@ba.key>Posture Cosmovoix</> : cette posture remplace la <@ba.key>posture Chanteuse</> de Liino. Lorsqu'elle est active, elle octroie une <#ba.pulseenhance>amplification électrique</> et une <#ba.naturalenhance>amplification naturelle</> à toute l'équipe (les effets sont renforcés par le trait Volonté), ainsi qu'un bonus ATQ accrue. Le rythme de la chanson de Liino inflige également des <@ba.pulse>DÉG électriques</> aux ennemis dans la zone d'effet et <@ba.heal>soignent</> en continu les opérateurs alliés dans la zone d'effet. Lorsque cette posture prend fin, les ennemis dans la zone d'effet subissent 3 fois les dégâts d'un seul temps de ce rythme et l'équipe reçoit 3 fois les soins d'un seul temps de ce rythme. Cet effet ne se déclenche pas si la posture est interrompue prématurément. \nPendant la posture, sa compétence de combat est remplacée par la posture Fin. <@ba.info>Si la compétence de combat est utilisée pendant la posture Cosmovoix, cette dernière s'interrompt prématurément et la compétence ne consomme pas de PC.</>",
+      "description": "Liino <@ba.heal>soigne</> toute l'équipe, active en même temps sa <@ba.key>posture Cosmovoix</>, déverse un déluge continu de Pyrotechnie scénique qui inflige des <@ba.pulse>DÉG électriques</>, et déclenche une <@ba.key>Extravagance électrifiante</> qui inflige des <@ba.pulse>DÉG électriques</> et applique de force <#ba.conduct>Électrification</> aux ennemis dans une large zone.\n<@ba.key>Posture Cosmovoix</> : cette posture remplace la <@ba.key>posture Chanteuse</> de Liino. Lorsqu'elle est active, elle octroie une <#ba.pulseenhance>amplification électrique</> et une <#ba.naturalenhance>amplification naturelle</> à toute l'équipe (les effets sont renforcés par le trait Volonté), ainsi qu'un bonus d'ATQ accru. Le rythme de la chanson de Liino inflige également des <@ba.pulse>DÉG électriques</> aux ennemis dans la zone d'effet et <@ba.heal>soigne</> en continu les opérateurs alliés dans la zone d'effet. Lorsque cette posture prend fin, les ennemis dans la zone d'effet subissent 3 fois les dégâts d'un seul temps de ce rythme et l'équipe reçoit 3 fois les soins d'un seul temps de ce rythme. Cet effet ne se déclenche pas si la posture est interrompue prématurément.\n<@ba.info>Pendant la posture, sa compétence de combat est remplacée par la posture Fin. Si la compétence de combat est utilisée pendant la posture Cosmovoix, cette dernière s'interrompt prématurément et la compétence ne consomme pas de PC.</>",
       "stagePyrotechnicsDmgMultiplier": "Multiplicateur de DÉG de Pyrotechnie scénique",
       "electrifyingExtravaganzaDmgMultiplier": "Multiplicateur de DÉG d'Extravagance électrifiante",
       "atkBoost": "ATQ accrue",
@@ -170,7 +170,7 @@
       },
       {
         "voId": "chr_0035_liino_chrup_skill_01",
-        "title": "Activation de la matrice de capacités",
+        "title": "Activation du nœud de talent",
         "text": "J'ai compris tout de suite ! Comme si mon âme s'embrasait... Je deviens de plus en plus brillante, hein ?"
       },
       {

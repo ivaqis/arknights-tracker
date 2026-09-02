@@ -19,7 +19,7 @@
   "skills": {
     "basicAttack": {
       "name": "Séquence destructrice",
-      "description": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 5 séquences qui inflige des <@ba.pd>DÉG physiques</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également Déséquilibre <@ba.poise>{poise:0}</> fois. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.pd>DÉG physiques</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.pd>DÉG physiques</> et restaure quelques PC.",
+      "description": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 5 séquences qui inflige des <@ba.pd>DÉG physiques</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également <@ba.poise>{poise:0}</> points de Déséquilibre. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.pd>DÉG physiques</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.pd>DÉG physiques</> et restaure quelques PC.",
       "batkSeq1Multiplier": "Multiplicateur d'ATQ-B SÉQ 1",
       "batkSeq2Multiplier": "Multiplicateur d'ATQ-B SÉQ 2",
       "batkSeq3Multiplier": "Multiplicateur d'ATQ-B SÉQ 3",
@@ -80,9 +80,9 @@
       "levels": []
     },
     "files": {
-      "main": "<@profile.key>NOM DE CODE : Endministrator\nSEXE : ■■\nAUTHENTIFICATION : ■■\nDATE DE NAISSANCE : ■■\nRACE : ■■\n\nVous ne vous souvenez de rien.\nVotre mémoire est en lambeaux, tels des rêves réduits en poussière, disparaissant à la moindre pensée.\nIl arrive que cela vous perturbe, ou vous mette mal à l'aise, mais cela vous offre un moment de calme pendant lequel vous pouvez vous poser et réfléchir.\nLa plupart du temps, cependant, vous ne pouvez vous permettre de douter. Vous vous contentez de faire confiance à ceux qui vous entourent, et vous allez de l'avant.\nPeut-être avez-vous dissimulé ces souvenirs, rien qu'un moment...\nAinsi, vous ne vous souvenez de rien.</>",
-      "humanResources": "<@profile.key>Vous avez vécu toute l'histoire de Talos-II...</>",
-      "file1": "<@profile.key>Mais... qu'allez-vous faire de son avenir ?</>"
+      "main": "NOM DE CODE : Endministrator\nSEXE : ■■\nAUTHENTIFICATION : ■■\nDATE DE NAISSANCE : ■■\nRACE : ■■\n\nVous ne vous souvenez de rien.\nVotre mémoire est en lambeaux, tels des rêves réduits en poussière, disparaissant à la moindre pensée.\nIl arrive que cela vous perturbe, ou vous mette mal à l'aise, mais cela vous offre un moment de calme pendant lequel vous pouvez vous poser et réfléchir.\nLa plupart du temps, cependant, vous ne pouvez vous permettre de douter. Vous vous contentez de faire confiance à ceux qui vous entourent, et vous allez de l'avant.\nPeut-être avez-vous dissimulé ces souvenirs, rien qu'un moment...\nAinsi, vous ne vous souvenez de rien.",
+      "humanResources": "Vous avez vécu toute l'histoire de Talos-II...",
+      "file1": "Mais... qu'allez-vous faire de son avenir ?"
     },
     "tags": {
       "expert1": {
@@ -127,7 +127,7 @@
       },
       {
         "voId": "chr_0002_endminm_chrup_skill_01",
-        "title": "Activation de la matrice de capacités",
+        "title": "Activation du nœud de talent",
         "text": "Ce sentiment m'est familier..."
       },
       {
@@ -374,7 +374,7 @@
   },
   "potentials": {
     "potential1": {
-      "description": "Renforce la compétence de combat <@ba.key>Séquence constructive</> : <#ba.consume>consommer</> des <#ba.originium>cristaux d'originium</> <#ba.return>restaure</> <@ba.vup>{atb_return:0}</> PC.",
+      "description": "Renforce la compétence de combat <@ba.key>Séquence constructive</> : <#ba.consume>consommer</> des <#ba.originium>cristaux d'originium</> <#ba.return>restitue</> <@ba.vup>{atb_return:0}</> PC.",
       "name": "Ultime éveil"
     },
     "potential2": {

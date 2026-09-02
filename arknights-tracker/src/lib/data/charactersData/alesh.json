@@ -1818,7 +1818,7 @@
                     3.0
                 ]
             },
-            "chanceToCatchTheRareFin": {
+            "rareFinChance": {
                 "dataType": "percent",
                 "data": [
                     0.1,
@@ -1869,7 +1869,7 @@
                     15.0
                 ]
             },
-            "bonusSpRecovery": {
+            "additionalSpRecovery": {
                 "dataType": "float",
                 "data": [
                     10.0,
@@ -1991,7 +1991,7 @@
                     25.0
                 ]
             },
-            "bonusSpRecoveryPerTargetDefeated": {
+            "additionalSpRecoveryPerTargetDefeated": {
                 "dataType": "float",
                 "data": [
                     12.0,
@@ -2008,7 +2008,7 @@
                     15.0
                 ]
             },
-            "spRecoveryLimit": {
+            "maxSpRecovery": {
                 "dataType": "float",
                 "data": [
                     100.0,

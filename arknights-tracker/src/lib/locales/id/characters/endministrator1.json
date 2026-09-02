@@ -80,9 +80,9 @@
       "levels": []
     },
     "files": {
-      "main": "<@profile.key>NAMA SANDI: Endministrator \nGENDER: ■■ \nAUTENTIKASI: ■■ \nTANGGAL LAHIR: ■■ \nRAS: ■■ \n\nKau tak ingat apa pun. \nKenanganmu hanya berupa serpihan, bagaikan mimpi yang hancur menjadi debu, lenyap seketika. \nKadang itu membuatmu gelisah, kadang tak nyaman, tapi justru memberimu waktu yang sunyi untuk bernapas dan berpikir. \nTapi, sering kali, hampir tak ada jeda untuk ragu. Kau hanya perlu percaya apa yang ada di hadapanmu dan terus maju. \nMungkin kau memendam kenangan masa lalu walau hanya sebentar .... \n... dan kau tak ingat apa-apa. </>",
-      "humanResources": "<@profile.key>Kau sudah melewati seluruh sejarah Talos-II ....</>",
-      "file1": "<@profile.key>Tapi ... seperti apa masa depan yang akan kauwujudkan untuknya?</>"
+      "main": "NAMA SANDI: Endministrator \nGENDER: ■■ \nAUTENTIKASI: ■■ \nTANGGAL LAHIR: ■■ \nRAS: ■■ \n\nKau tak ingat apa pun. \nKenanganmu hanya berupa serpihan, bagaikan mimpi yang hancur menjadi debu, lenyap seketika. \nKadang itu membuatmu gelisah, kadang tak nyaman, tapi justru memberimu waktu yang sunyi untuk bernapas dan berpikir. \nTapi, sering kali, hampir tak ada jeda untuk ragu. Kau hanya perlu percaya apa yang ada di hadapanmu dan terus maju. \nMungkin kau memendam kenangan masa lalu walau hanya sebentar .... \n... dan kau tak ingat apa-apa.",
+      "humanResources": "Kau sudah melewati seluruh sejarah Talos-II ....",
+      "file1": "Tapi ... seperti apa masa depan yang akan kauwujudkan untuknya?"
     },
     "tags": {
       "expert1": {
@@ -127,7 +127,7 @@
       },
       {
         "voId": "chr_0003_endminf_chrup_skill_01",
-        "title": "Aktivasi Matriks Kemampuan",
+        "title": "Aktivasi Nodus Talent",
         "text": "Aku tahu perasaan ini ...."
       },
       {

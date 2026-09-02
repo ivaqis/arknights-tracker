@@ -23,6 +23,14 @@
     "name": "Stato fisico: Sospensione",
     "desc": "Applica <#ba.noguard>Vulnerabilità</> ai nemici. Se il nemico è già <#ba.noguard>Vulnerabile</>, aggiunge 1 accumulo di <#ba.noguard>Vulnerabilità</> e infligge <@ba.phy>danni fisici</> e <@ba.poise>Vacillamento</>."
   },
+  "ba.arrowenergy": {
+    "name": "Segno",
+    "desc": "Typhoeus ottiene Segni quando consuma gli accumuli di <@ba.naturalinflict>Afflizione da natura</> del nemico o quando attiva <#ba.naturalburst>Esplosione di natura</> sui nemici. La sua abilità combo può quindi convertire i Segni in <#ba.arrownum>Frecce da caccia</>."
+  },
+  "ba.arrownum": {
+    "name": "Freccia da caccia",
+    "desc": "Quando Typhoeus si trova nello stato <@ba.key>Orbitante</>, può consumare Frecce da caccia per potenziare i suoi colpi, infliggendo danni maggiori e attivando anche <#ba.naturalburst>Esplosione di natura</>."
+  },
   "ba.burning": {
     "name": "Reazione delle Arti: Combustione",
     "desc": "Un nemico affetto da <@ba.burning>Combustione</> subisce progressivamente <@ba.fire>danni da fuoco</>.\n<@ba.burning>Combustione</>: un'<#ba.spellinflict>Afflizione non da fuoco</> (<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.fireinflict>Afflizione da fuoco</>."
@@ -260,8 +268,8 @@
     "desc": "I bersagli soggetti a Suscettibilità subiscono temporaneamente più danni di un determinato elemento. Il numero visualizzato rappresenta il grado di incremento. Gli effetti dello stesso tipo possono accumularsi."
   },
   "ba.weak": {
-    "name": "Indebolimento",
-    "desc": "I bersagli soggetti a Indebolimento infliggono temporaneamente danni ridotti. Il numero visualizzato rappresenta il grado di riduzione. Gli effetti dello stesso tipo possono accumularsi in maniera non lineare."
+    "name": "Debolezza",
+    "desc": "Un bersaglio soggetto a Debolezza infligge temporaneamente danni ridotti. Il numero visualizzato rappresenta il grado di riduzione. Gli effetti dello stesso tipo possono accumularsi in maniera non lineare."
   },
   "fac.hub": {
     "name": "Nucleo di automazione protocollare",

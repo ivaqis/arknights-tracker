@@ -372,7 +372,11 @@
     "special_1_4_1": "Face à la faille, regardant vers le nord",
     "weponbox_1_4_1": "Tirage de type militaire",
     "special_1_4_2": "Bonjour de votre étoile de l'aube",
-    "weponbox_1_4_2": "Tirage éblouissant"
+    "weponbox_1_4_2": "Tirage éblouissant",
+    "special_1_5_1": "Chasse hivernale",
+    "weponbox_1_5_1": "Tirage du froid mordant",
+    "weponbox_1_5_2": "Tirage de graffeuse",
+    "special_1_5_2": "Spectre resplendissant"
   },
   "pages": {
     "home": "Accueil",
@@ -467,7 +471,17 @@
     "gazeNorthToTheRiftSignIn": "Connexion - Regard tourné vers le nord et vers la faille",
     "protocolInvitationTheReturn": "Invitation du Protocole : le retour",
     "bedazzlingDawnstarSignIn": "Connexion - Étoile du matin étincelante",
-    "aForestMantledInSnow": "Une forêt drapée de neige"
+    "aForestMantledInSnow": "Une forêt drapée de neige",
+    "seasonOfVirtuality": "Saison de la virtualité",
+    "seasonOfIllusion": "Saison de l'illusion",
+    "runnersSteeplechase": "Course d'obstacles des joggeurs",
+    "snowOverDeepWoods": "Neige sur les bois profonds",
+    "aicSupportChubbyLungAttacks": "Soutien du GIA : Attaque de Choupi Lung",
+    "ridgelineFlowsOfAutumnSignIn": "Connexion - Les flux d'arête de l'automne",
+    "trialOfTheBow": "Épreuve de l'arc",
+    "protocolPassGloomwald": "Pass de Protocole : Gloomwald",
+    "orbipomMerge": "OrbiPom ! FUSION !",
+    "fletchedIrontipSignIn": "Connexion - Pointe de fer empennée"
   },
   "mouths": {
     "january": "Janvier",
@@ -880,7 +894,26 @@
     "heavyXiragen": "Xiragène lourd",
     "crimsonSpearleaf": "Lancéolée écarlate",
     "talosCap": "Cèpe de Talos",
-    "protocolith": "Protocolite"
+    "protocolith": "Protocolite",
+    "caudalGoldscales": "Écailles d'or caudales",
+    "yazhenSeeds": "Graines de chardille",
+    "reedRyeSeeds": "Graines de seigle sauvage",
+    "tartpepperSeeds": "Graines de poivriaigre",
+    "redjadeGinsengSeeds": "Graines de ginseng roujade",
+    "amberRiceSeeds": "Graines de riz ambré",
+    "protoXiranCuprium": "Proto-xiran-cuprium",
+    "protoXiranCupriumPart": "Pièce en proto-xiran-cuprium",
+    "protoXiranCupriumGas": "Proto-xiran-cuprium gazeux",
+    "protoXiranCupriumFrame": "Châssis en proto-xiran-cuprium",
+    "protoCupriumFrame": "Proto-châssis en cuprium",
+    "protoChubbyLungShell": "Proto-coque de Choupi Lung",
+    "protoChubbyLungHeavyShell": "Proto-coque lourde de Choupi Lung",
+    "heavyXiraniteChubbyLung": "Choupi Lung à xiranite lourde",
+    "protoHeavyXiranite": "Proto-xiranite lourde",
+    "xiraniteChubbyLung": "Choupi Lung à xiranite",
+    "protoXiranite": "Proto-xiranite",
+    "tenderMoss": "Mousse tendre",
+    "slugSprig": "Pousse de limace"
   },
   "common": {
     "copy": "Copier",
@@ -1117,7 +1150,8 @@
     "mifu": "Mi Fu",
     "camille": "Camille",
     "arcane": "Arcane",
-    "liino": "Liino"
+    "liino": "Liino",
+    "typhoeus": "Typhoeus"
   },
   "weaponsList": {
     "custom_weapon": "Arme personnalisée",
@@ -1197,7 +1231,9 @@
     "junctionPoint": "Point de jonction",
     "goldenAge": "Âge d'or",
     "farsight": "Clairvoyance",
-    "bedazzlingNightDebut": "Première par une soirée éblouissante"
+    "bedazzlingNightDebut": "Première par une soirée éblouissante",
+    "umbraOfFrigidEventide": "Ombre du crépuscule glacé",
+    "sufferingsEnd": "Fin de la souffrance"
   },
   "cookies": {
     "title": "Nous utilisons des cookies",
@@ -1315,7 +1351,14 @@
     "world_energy_point11_4": "Alluvion d'énergie intense : ZE du nord de Wuling",
     "world_energy_point11_5": "Alluvion d'énergie intense : ZE du nord de Wuling",
     "world_energy_point11_6": "Alluvion d'énergie intense : ZE du nord de Wuling",
-    "world_energy_point11_7": "Alluvion d'énergie intense : ZE du nord de Wuling"
+    "world_energy_point11_7": "Alluvion d'énergie intense : ZE du nord de Wuling",
+    "world_energy_point12_1": "Alluvion d'énergie : Forêt enneigée",
+    "world_energy_point12_2": "Alluvion d'énergie : Forêt enneigée",
+    "world_energy_point12_3": "Alluvion d'énergie : Forêt enneigée",
+    "world_energy_point12_4": "Alluvion d'énergie intense : Forêt enneigée",
+    "world_energy_point12_5": "Alluvion d'énergie intense : Forêt enneigée",
+    "world_energy_point12_6": "Alluvion d'énergie intense : Forêt enneigée",
+    "world_energy_point12_7": "Alluvion d'énergie intense : Forêt enneigée"
   },
   "enemies": {
     "eny_0007_mimicw": "Nidwyrm tunnelier",
@@ -1401,7 +1444,15 @@
     "eny_0122_kltdbud": "Gangrénombre élite des FSY",
     "eny_0123_klcap": "Gangrénombre lancier des FSY",
     "eny_0124_kltdcap": "Gangrénombre capitaine des FSY",
-    "eny_0125_fdcentur": "Alleikhreos, Chiliarque"
+    "eny_0125_fdcentur": "Alleikhreos, Chiliarque",
+    "eny_0127_bigents": "Rage de Gloomwald",
+    "eny_0128_babyents": "Vagabond sylvain",
+    "eny_0129_slwood": "Limace sylvaine",
+    "tatget_001_normal": "Cible de base",
+    "tatget_002_endurance": "Cible standard",
+    "tatget_003_expand": "Cible-barrière",
+    "tatget_004_armor": "Cible lourde",
+    "tatget_005_shield": "Bouclier d'énergie"
   },
   "essencesPage": {
     "optimizer": "Optimiseur de farm",
@@ -1682,7 +1733,22 @@
     "item_equip_t4_suit_usp02_body_04": "Armure légère en xiranite éternelle G1",
     "item_equip_t4_suit_usp02_edc_04": "Plaque fortifiante en xiranite éternelle",
     "item_equip_t4_suit_usp02_hand_03": "Bandes pour mains en xiranite éternelle",
-    "item_equip_t4_suit_usp02_hand_04": "Équipement pour mains en xiranite éternelle"
+    "item_equip_t4_suit_usp02_hand_04": "Équipement pour mains en xiranite éternelle",
+    "item_equip_t4_parts_wuling00_body_04": "Armure d'assaut de terrain du GIA",
+    "item_equip_t4_parts_wuling00_body_05": "Armure médicale de terrain du GIA",
+    "item_equip_t4_parts_wuling00_edc_04": "Poignard d'assaut à propulsion de terrain du GIA",
+    "item_equip_t4_parts_wuling00_edc_05": "Batterie de terrain du GIA",
+    "item_equip_t4_parts_wuling00_hand_04": "Gants d'assaut de terrain du GIA",
+    "item_equip_t4_parts_wuling00_hand_05": "Gants médicaux de terrain du GIA",
+    "item_equip_t4_suit_burst01_body_02": "Armure légère de décrue G1",
+    "item_equip_t4_suit_burst01_body_03": "Armure lourde de houle",
+    "item_equip_t4_suit_burst01_edc_03": "Chalumeau trouble G1",
+    "item_equip_t4_suit_burst01_hand_02": "Gants de plongée",
+    "item_equip_t4_suit_spellburst_body_01": "Armure de rempart profond",
+    "item_equip_t4_suit_spellburst_edc_01": "Communicateur de rempart profond",
+    "item_equip_t4_suit_spellburst_hand_01": "Gantelets de rempart profond",
+    "item_equip_t4_suit_usp02_edc_05": "Plaque fortifiante en xiranite éternelle G1",
+    "item_equip_t4_suit_usp02_edc_06": "Plaque lourde en xiranite éternelle"
   },
   "packs": {
     "none": "Unique",
@@ -1732,7 +1798,8 @@
     "suit_combo_cd01": "Qingbo",
     "suit_expend_spell01": "Xiranflux",
     "suit_crush_fracture": "Fil émoussé",
-    "suit_generaltype": "Terrain du GIA"
+    "suit_generaltype": "Terrain du GIA",
+    "suit_spellburst": "Rempart profond"
   },
   "equipmentTypes": {
     "body": "Armure",
@@ -1800,7 +1867,8 @@
     "wiki_group_monster_hongshan": "Pirates cangzei",
     "wiki_group_monster_animal": "Faune",
     "wiki_group_monster_kl": "Les Gangrénombres",
-    "wiki_group_monster_js": "Fondamentaux"
+    "wiki_group_monster_js": "Fondamentaux",
+    "wiki_group_monster_witchcraft": "Créations de magie noire"
   },
   "resitances": {
     "heatRez": "Résistance thermique",
@@ -2572,6 +2640,7 @@
   },
   "audio_player": {
     "playback_error": "Échec du chargement de l'audio",
+    "not_found": "Audio introuvable (404)",
     "open_raw": "Open raw"
   }
 }

@@ -43,7 +43,7 @@
       "dmgMultiplier": "傷害倍率",
       "stagger": "失衡值",
       "firefangVesperwingsDurationS": "銜火血翼持續時間（秒）",
-      "weaknessEffect": "虛弱效果",
+      "weakness": "虛弱效果",
       "heatSusceptibility": "灼熱脆弱效果",
       "explosionDmgMultiplier": "爆裂傷害倍率"
     },

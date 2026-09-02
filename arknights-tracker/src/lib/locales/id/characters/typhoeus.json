@@ -1,0 +1,576 @@
+{
+  "baseInfo": {
+    "tags": [
+      "Damage Dealer",
+      "Arts Burst"
+    ],
+    "behaviourHateTags": [
+      "Teknologi"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Rhodes Island",
+    "expertTags": [
+      "Kisah Alam",
+      "Bertahan Hidup di Alam"
+    ],
+    "giftPreferTags": [
+      "Pilihan Pelancong Wuling"
+    ],
+    "hobbyTags": [
+      "Gaya Hidup",
+      "Alam"
+    ],
+    "raceTag": "Sarkaz"
+  },
+  "skills": {
+    "basicAttack": {
+      "name": "Wildlands Huntress",
+      "description": "SERANGAN DASAR: \nSerangan dengan maksimum 5 tahap yang akan menimbulkan <@ba.natur>Nature DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>{poise:0}</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.natur>Nature DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi penuntas yang akan menimbulkan <@ba.natur>Nature DMG</> sangat besar dan memulihkan sebagian SP.",
+      "batkSeq1Multiplier": "Pengganda BATK SEQ 1",
+      "batkSeq2Multiplier": "Pengganda BATK SEQ 2",
+      "batkSeq3Multiplier": "Pengganda BATK SEQ 3",
+      "batkSeq4Multiplier": "Pengganda BATK SEQ 4",
+      "batkSeq5Multiplier": "Pengganda BATK SEQ 5",
+      "finisherAtkMultiplier": "Pengganda ATK Penuntas",
+      "diveAtkMultiplier": "Pengganda ATK Menukik"
+    },
+    "battleSkill": {
+      "name": "Piercing Arrows of the Woods",
+      "description": "Typhoeus akan melompat dan memasuki kondisi <@ba.key>Melayang</> sebentar, yang membuatnya bisa melancarkan 5 Serangan Dasar dari Udara (ABATK). Setiap ABATK bisa menembakkan panah kepada maksimum 2 musuh dan menimbulkan <@ba.natur>Nature DMG</>.\nSetiap kali ABATK menghantam musuh yang sedang terkena tumpukan <#ba.naturalinflict>Nature Infliction</>, serangan itu akan memakai 1 tumpuk <#ba.naturalinflict>Nature Infliction</>, memberikan 1 <#ba.arrowenergy>Tanda</> kepada Typhoeus, dan memberikan tambahan Energi Ultimate.\nJika Typhoeus punya <#ba.arrownum>Panah Berburu</>, dia akan memakai 1 <#ba.arrownum>Panah Berburu</> dan mengubah ABATK itu menjadi <@ba.key>Power Shot</>.\n<@ba.key>Power Shot</>: Setelah menghantam musuh, Power Shot akan secara paksa mengakibatkan 1 <#ba.naturalburst>Nature Burst</>; jika <#ba.naturalinflict>Nature Infliction</> pada target terpakai, DMG yang ditimbulkan oleh <#ba.naturalburst>Nature Burst</> ini akan meningkat menjadi <@ba.vup>{enchence_burst_damage_rate:0.0}</> kali nilai aslinya.\n<@ba.info>Jika Typhoeus adalah operator terkontrol, ABATK-nya yang ke-5 akan dianggap sebagai Final Strike dan Power Shot, dan tidak akan memakai Panah Berburu.</>",
+      "initialAerialShotDmgMultiplier": "Pengganda DMG Tembakan Udara Awal",
+      "abatkDmg": "ABATK DMG",
+      "aerialFinalStrikeDmg": "DMG Final Strike dari Udara",
+      "aerialFinalStrikeStagger": "Stagger Final Strike dari Udara",
+      "powerShotNatureBurstDmgMultiplier": "Pengganda Nature Burst DMG dari Power Shot",
+      "additionalUltimateEnergy": "Tambahan Energi Ultimate"
+    },
+    "comboSkill": {
+      "name": "Rampant Thorns",
+      "description": "PEMICU KOMBO: Saat Typhoeus mencapai <#ba.arrowenergy>Tanda</> maks.\nTyphoeus akan mengubah semua <#ba.arrowenergy>Tanda</> miliknya menjadi <#ba.arrownum>Panah Berburu</> dan mereset upaya Serangan Dasar dari Udaranya (ABATK).\nTyphoeus akan memusatkan “Huntress’s Gaze” dan meluncurkan rentetan ke target yang akan menghasilkan <@ba.key>Rangkaian Rentetan</> di area target. Musuh di dalam <@ba.key>Rangkaian Rentetan</> akan terkena <@ba.natur>Nature DMG</> over time, terkena efek <#ba.slow>slow</>, dan terkena <#ba.naturalburst>Nature Burst</> DMG Taken yang lebih banyak.\n<@ba.info>Setiap 2 Tanda bisa diubah menjadi 1 Panah Berburu.</>",
+      "huntresssGazeHitDmg": "DMG Hantaman “Huntress’s Gaze”",
+      "stagger": "Stagger",
+      "ultimateEnergyGain": "Perolehan Energi Ultimate",
+      "areaDmgOverTime": "Area DMG Over Time",
+      "slow": "Slow",
+      "natureBurstDmgBoost": "Boost untuk Nature Burst DMG"
+    },
+    "ultimate": {
+      "name": "Call of Ice Mountain",
+      "description": "Typhoeus akan menembakkan Panah Berenergi yang akan meledak setelah mengenai musuh dan akan menimbulkan <@ba.natur>Nature DMG</> sangat besar kepada musuh di dalam area efek (AOE). Lalu, dia akan memasuki kondisi <@ba.key>Melayang</> dan upaya Serangan Dasar dari Udaranya (ABATK) akan direset.\nUntuk 5 ABATK-nya yang berikutnya, jika berhasil menghantam musuh, <@ba.key>Hail of Arrows</> akan aktif dan menimbulkan <@ba.natur>Nature DMG</> di lokasi target. <@ba.key>Hail of Arrows</> yang ke-5 akan menjadi <@ba.key>Hail of Arrows</> yang lebih kuat dan menimbulkan DMG lebih besar.\nPenggunaan ultimate akan langsung memberikan <@ba.vup>{arrow_num_given:0}</> <#ba.arrownum>Panah Berburu</>.",
+      "imbuedArrowExplosionDmg": "DMG Ledakan Panah Berenergi",
+      "imbuedArrowStagger": "Stagger Panah Berenergi",
+      "normalHailOfArrowsDmg": "DMG dari Hail of Arrows Normal",
+      "empoweredHailOfArrowsDmg": "DMG dari Hail of Arrows yang Diperkuat"
+    },
+    "indicator": {
+      "levels": [
+        "Agility Operator +10.",
+        "Agility Operator +15.",
+        "Agility Operator +15.",
+        "Agility Operator +20."
+      ],
+      "name": "Skirmisher"
+    },
+    "talent1": {
+      "levels": [
+        "Setiap kali <#ba.naturalburst>Nature Burst</> diaktifkan pada musuh, Typhoeus akan mendapatkan 1 <#ba.arrowenergy>Tanda</>. DMG yang ditimbulkan oleh serangan yang diperkuat dengan memakai <#ba.arrownum>Panah Berburu</> akan meningkat menjadi <@ba.vup>{atk_scale_enhence:0.0}</> kali nilai aslinya.\nSaat memasuki pertarungan, Typhoeus akan langsung mendapatkan <@ba.vup>{energy_enterfight:0}</> <#ba.arrowenergy>Tanda</>.\nTyphoeus bisa punya maksimum 4 <#ba.arrownum>Panah Berburu</> dan 8 <#ba.arrowenergy>Tanda</>.\n<@ba.info>Jika Nature Burst diaktifkan serentak pada beberapa musuh, ini hanya akan dihitung sebagai satu hantaman Nature Burst saat menghitung Tanda yang didapatkan oleh Typhoeus.</>",
+        "Setiap kali <#ba.naturalburst>Nature Burst</> diaktifkan pada musuh, Typhoeus akan mendapatkan 1 <#ba.arrowenergy>Tanda</>. DMG yang ditimbulkan oleh serangan yang diperkuat dengan memakai <#ba.arrownum>Panah Berburu</> akan meningkat menjadi <@ba.vup>{atk_scale_enhence:0.0}</> kali nilai aslinya.\nSaat memasuki pertarungan, Typhoeus akan langsung mendapatkan <@ba.vup>{energy_enterfight:0}</> <#ba.arrowenergy>Tanda</>.\nTyphoeus bisa punya maksimum 4 <#ba.arrownum>Panah Berburu</> dan 8 <#ba.arrowenergy>Tanda</>.\n<@ba.info>Jika Nature Burst diaktifkan serentak pada beberapa musuh, ini hanya akan dihitung sebagai satu hantaman Nature Burst saat menghitung Tanda yang didapatkan oleh Typhoeus.</>",
+        "Setiap kali <#ba.naturalburst>Nature Burst</> diaktifkan pada musuh, Typhoeus akan mendapatkan 1 <#ba.arrowenergy>Tanda</>. DMG yang ditimbulkan oleh serangan yang diperkuat dengan memakai <#ba.arrownum>Panah Berburu</> akan meningkat menjadi <@ba.vup>{atk_scale_enhence:0.0}</> kali nilai aslinya.\nSaat memasuki pertarungan, Typhoeus akan langsung mendapatkan <@ba.vup>{energy_enterfight:0}</> <#ba.arrowenergy>Tanda</>.\nTyphoeus bisa punya maksimum 4 <#ba.arrownum>Panah Berburu</> dan 8 <#ba.arrowenergy>Tanda</>.\n<@ba.info>Jika Nature Burst diaktifkan serentak pada beberapa musuh, ini hanya akan dihitung sebagai satu hantaman Nature Burst saat menghitung Tanda yang didapatkan oleh Typhoeus.</>"
+      ],
+      "name": "Prey Checklist"
+    },
+    "talent2": {
+      "levels": [
+        "Saat <@ba.key>Melayang</>, Typhoeus akan mengaktifkan <@ba.key>Penghalang Pelindung</> yang akan mengurangi DMG Taken miliknya sebesar <@ba.vup>{damage_resist:0%}</> dan membuatnya lebih sulit disela selama efek itu aktif. <@ba.key>Penghalang Pelindung</> itu akan hancur saat Typhoeus menerima DMG dan tidak bisa diaktifkan lagi selama <@ba.vup>{sheild_cd:0}</> dtk setelahnya.",
+        "Saat <@ba.key>Melayang</>, Typhoeus akan mengaktifkan <@ba.key>Penghalang Pelindung</> yang akan mengurangi DMG Taken miliknya sebesar <@ba.vup>{damage_resist:0%}</> dan membuatnya lebih sulit disela selama efek itu aktif. <@ba.key>Penghalang Pelindung</> itu akan hancur saat Typhoeus menerima DMG dan tidak bisa diaktifkan lagi selama <@ba.vup>{sheild_cd:0}</> dtk setelahnya."
+      ],
+      "name": "Huntress’s Focus"
+    },
+    "baseSkill1": {
+      "levels": [
+        "Saat ditugaskan ke Ruang Pertumbuhan, laju pertumbuhan mineral langka akan meningkat sebesar +20%",
+        "Saat ditugaskan ke Ruang Pertumbuhan, laju pertumbuhan mineral langka akan meningkat sebesar +30%"
+      ],
+      "name": "Lithic Murmurs"
+    },
+    "baseSkill2": {
+      "levels": [
+        "Saat ditugaskan ke Ruang Pertumbuhan, laju pertumbuhan material fungi akan meningkat sebesar +20%",
+        "Saat ditugaskan ke Ruang Pertumbuhan, laju pertumbuhan material fungi akan meningkat sebesar +30%"
+      ],
+      "name": "Life in the Spores"
+    },
+    "files": {
+      "main": "[NAMA SANDI]: Typhoeus\nGENDER: Perempuan\nAUTENTIKASI: Rhodes Island\nTANGGAL LAHIR: 13 Januari\nRAS: Sarkaz\n[STATUS INFEKSI ORIPATI]\nNegatif Oripati, berdasarkan laporan pemeriksaan medis.\n\n[PEMERIKSAAN FISIK TERPADU]\nKEKUATAN FISIOLOGIS: Sangat Baik\nKEMAMPUAN TEMPUR: Sangat Baik\nKECERDASAN TAKTIS: Normal\nASIMILASI ORIGINIUM ARTS: Standar",
+      "humanResources": "Operator Typhoeus, seorang reconvener dari Rhodes Island. Dia bertemu dengan Endministrator saat melakukan perjalanan mencari legenda Sami yang hilang, dan kemudian bergabung dengan Endfield Industries atas undangan pribadi Endministrator.\n\nSaat berbicara dengan Nona Typhoeus, ketenangan dan keteguhan yang dia tunjukkan jauh melampaui kebanyakan orang dewasa, tapi rasa ingin tahunya yang tak pernah puas dan tatapan menyelidiknya yang sering kurang tepat waktu itu masih memperlihatkan sifat kekanak-kanakannya. Sesuai protokol, banyak pertanyaan harus kuajukan kepadanya, tapi saat dia mengeluarkan buku catatannya, aku tak punya kesempatan untuk mengajukan satu pun.\nSulit dipercaya ada orang yang punya begitu banyak pertanyaan sampai-sampai aku lelah menjawabnya. Dia sudah kuingatkan bahwa sebagian besar pertanyaannya sudah ada jawabannya di Panduan Orientasi Operator, tapi dia memutar penanya dan dengan tenang berkata bahwa dia tertarik dengan caraku menjelaskan berbagai hal.\nSetelah tiga jam bertanya, dia pergi dengan puas. Sebelum dia menutup buku catatannya, aku melihat sekilas penilaiannya tentang diriku:\n“Tiga kepala, tahu segalanya, menjawab setiap pertanyaan, setiap legenda butuh karakter seperti itu.”\n— Martin Marvin Malen, Asisten, Divisi SDM, Endfield Industries",
+      "file1": "Bergabungnya operator seperti Typhoeus, yang ahli bertahan hidup di alam liar, membuat pekerjaan kami di utara jauh lebih lancar.\nWalau Endfield bekerja sama erat dengan Order of Steel Oath, mereka sering kali terlalu sibuk dengan pertarungan mereka sendiri sehingga tak punya banyak waktu untuk kami. Bahkan, setelah membawa kami ke lokasi celah, mereka biasanya harus kembali ke garis depan dan menyerahkan sisa pekerjaan kepada kami.\nLingkungan kutub sangat keras, berselimut salju sepanjang tahun dan suhunya sangat rendah, sehingga sangat menyulitkan tugas pemantauan kami. Suatu ketika, badai salju tiba-tiba datang dan membuat kamp kami hancur serta merusak semua instrumen kami. Dalam keputusasaan, kami membungkus diri dengan semua selimut yang kami miliki, menunggu ditelan oleh padang es ini. Untungnya, Operator Typhoeus tiba tepat waktu.\nDia datang membawa sepotong kaki hewan utuh.\nDi reruntuhan itu, Typhoeus menyalakan api unggun dan membawa kehangatan dengan barbeku ala Sami. Dia kemudian menerjang badai salju itu seorang diri, kembali dengan membawa kayu dan kulit kayu, dan membangun kabin kayu yang cukup besar untuk empat orang dengan menggunakan bahan-bahan sederhana hanya dalam satu sore.\nWalau tak tahu apa-apa tentang fasilitas yang kami bawa, dia tetap bisa menyiapkan lingkungan yang stabil agar fasilitas kami bisa berfungsi sesuai kebutuhan kami. Saat kami berhadapan langsung dengan celah, dengan efisien dia menyingkirkan segerombolan Aggelos yang menyerang menggunakan pengalaman berburunya, lalu membantu kami memasang peralatan dan mengambil data penting.\nSelain kemampuan bertahan hidup di alam, yang paling dipercaya semua orang adalah intuisinya yang sangat akurat.\nMengandalkan intuisi rekan kerja untuk pekerjaan memang terdengar kurang profesional, tapi saat semua fasilitas navigasi tak berfungsi, hanya instingnya yang bisa kami andalkan untuk menjauhkan diri dari bahaya dan melakukan evakuasi dengan aman. Sepanjang perjalanan, walau kami terus merasa tegang, dia tak pernah menunjukkan rasa takut dan selalu dengan tenang menunjukkan jalan menembus badai salju untuk semua orang.\nBeberapa orang berspekulasi bahwa Typhoeus belajar melihat masa depan dari Cyclop yang tinggal di pegunungan. Tapi, aku yakin bahwa ini memang cara orang Sami hidup berdampingan dengan alam. Dengan menempatkan diri di dalam alam dan menjadi bagian darinya, mereka bisa merasakan hembusan napas alam, denyut nadinya, detak jantungnya, dan dengan demikian, mendapatkan wahyu yang diberikan oleh alam.",
+      "file2": "“Endfield adalah perusahaan yang sah. Mulailah membedakan fakta dan rumor. Tidak semua legenda itu benar.”\nSetiap kali ada karyawan baru yang bergabung dengan Endfield, para staf veteran selalu mengingatkan mereka tentang ini.\nTapi, semua upaya itu jadi sia-sia saat Operator Typhoeus bergabung dengan Endfield. Gadis ini mengaburkan batas antara rumor dan kenyataan dengan ocehan kisah-kisah mistisnya, sehingga membuat kami, perusahaan dengan sedikit pesona legendaris, menjadi ... sebuah legenda, sesederhana itu.\nSosok-sosok misterius yang ada di layar, suara tangisan yang bergema dari anjungan komando pada larut malam, lampu-lampu di Divisi Teknik yang entah kenapa selalu rusak dan sering berkedip-kedip saat ada yang sedang sendirian. Kebetulan-kebetulan kecil yang tak pernah dianggap serius ini dikumpulkan dan dirangkai oleh Typhoeus menjadi sebuah legenda yang menyeramkan.\n\nDahulu kala, peralatan di pesawat Dijiang terus-menerus rusak. Sang perajin yang malang itu pun terpaksa menginap di bengkel, menempa dan melakukan perbaikan siang dan malam tanpa istirahat. Tapi, setelah bekerja keras selama setahun penuh, jumlah mesin yang menunggu perbaikan malah bertambah, menumpuk di sekitarnya bagaikan deretan pegunungan yang tak terputus.\nKarena diliputi amarah, sisa-sisa kebaikannya pun habis. Dia pun berubah menjadi roh pendendam dan merasuki mesin-mesin itu, lalu bersumpah untuk membalas dendam pada setiap orang ceroboh yang mengoperasikan mesin secara asal-asalan.\nLampu-lampu yang berkedip di malam hari adalah tanda bahwa dia sedang berpatroli.\n— Entri dari buku catatan Typhoeus.\n\nSetelah cerita ini menyebar di seluruh Dijiang, jumlah laporan kerusakan pada daftar perbaikan Divisi Teknik bulan itu langsung turun drastis.\nSetelah menyelidikinya, Pak Andre yang takjub pun memberikan penilaian yang adil terhadap cerita itu: ini bukan sekadar cerita, melainkan fakta yang tak terbantahkan.\nIni baru satu bab di antara banyak legenda yang ditulis Typhoeus untuk Endfield. Di buku catatannya, Endministrator adalah orang bijak agung yang memegang Batu Origin, Pengawas Perlica adalah penyihir petir yang punya kekuatan petir, Nona Chen adalah pengembara yang membawa pedang panjang. Dan yang dilakukan Endfield di Talos-II selama ini adalah menancapkan pedang batu besar di seluruh negeri demi menjaga kedamaian dunia dan melindungi semua makhluk hidup.\nSeorang anak berusia dua belas tahun mungkin akan menganggap kisah-kisah ini kekanak-kanakan, tapi bagi para operator Endfield yang penuh dengan imajinasi, kisah-kisah itu terasa sangat pas.\n“Sekarang, aku bekerja sambil membayangkan diriku sebagai Snowpriest Sami yang misterius. Saat peralatan mulai terlalu panas, aku meneriakkan mantra kuno ....” Lalu, Andre mengambil senapan pendingin dari sudut ruangan, mengarahkannya ke mesin itu, dan berseru, “Wahai angin dan salju, turunlah ke dunia fana!”",
+      "file3": "Nyanyian Perang Samifjod\nMatahari melelehkan salju,\nDi bawah tanah yang membeku, bayangan melarikan diri. \nTapi, pengembaraan kami belum berakhir. \nMatahari membelah awan, \nDi dalam hutan, hujan mereda. \nTapi, peperangan kami belum usai. \nAngkat perisai, kenakan pelat, \nTakdir menahan kami di sini. \nDi bawah matahari, \nKami menumpahkan darah dan berjuang.\n\nSetelah tiba di Talos-II dari Terra, Feranmut Sami mengakhiri pengembaraan-Nya selama bertahun-tahun, memilih sebidang tanah di lingkar kutub dan menetap di sana bersama Myrkwood yang Dia bawa di punggung-Nya. Di bawah perlindungan Feranmut, orang Sami menikmati masa damai yang singkat. Tak lama kemudian, setelah kehancuran Gerbang Kosmis serta meletusnya Perang Aggelos Pertama, Feranmut Sami mengorbankan diri-Nya untuk melindungi orang Sami dan gugur di Kutub Utara. Orang Sami hampir tidak sempat berduka karena harus ikut membangun benteng Oathkeeper. Setelah itu, mereka melakukan kampanye panjang yang terus berlanjut hingga sekarang.\nSaat Typhoeus terbangun di Rhodes Island dan mengetahui misi bangsanya saat ini, dia langsung mengemasi barang-barangnya dan pergi ke utara. Tapi, setelah menempuh perjalanan panjang ke benteng Oathkeeper, seorang Snowpriest Sami yang baru kembali dari medan pertarungan menepuk belakang kepalanya, sebuah tamparan yang berbau tanah, dan mengusirnya di depan pintu.\n“Kembalilah setelah kau lebih tinggi dari busurmu dan pantas pergi berperang.”\nWalau Typhoeus bersikeras bahwa tubuhnya memang mungil dari sananya, tak seorang pun percaya. Lagi pula, tangannya memang belum dipenuhi kapalan tebal yang didapat dari menarik busur selama bertahun-tahun.\nKarena merasa bingung dan sedih, dia lalu menumpang gerobak yang menuju ke Myrkwood untuk bertemu dengan kerabat yang belum pernah dikenalnya. Inilah Sami yang diingatnya, lingkungan, adat istiadat, bahasa, aksen, semuanya masih sama. Tapi pada saat yang sama, semua itu terasa asing baginya. Di permukiman itu, hanya ada orang tua, orang terluka, dan anak-anak. Mereka yang masih mampu mengangkat senjata telah memilih untuk pergi ke garis depan, melindungi garis yang terbuat dari darah dan daging, menahan laju Aggelos ke selatan.\nTyphoeus yang tersesat dan terombang-ambing itu pun menetap di Myrkwood. Tak lama setelahnya, dia mengetahui bahwa setelah kejatuhan Sami, legendanya juga telah hancur. Para tetua yang mengetahui kisah-kisah lama itu sudah berubah menjadi tulang di medan pertarungan bersama Sami sebelum mereka sempat mewariskan kisah-kisah itu. Jadi, karena tidak bisa ikut bertarung di garis depan, Typhoeus memutuskan untuk mengumpulkan legenda-legenda itu dan melestarikannya.\n\nEndmin, tahukah kau? Kejatuhan Sami adalah pilihan Sami sendiri. Rakyat menerima dan mengikuti-Nya tanpa ragu.\nAku menemukan Foldartal yang digunakan untuk meramal di Myrkwood. Di situ tercatat “komunikasi” antara Snowpriest dan Sami.\nSebelum turun ke utara, Dia telah memperingatkan penduduk Myrkwood bahwa Dia telah lama meramalkan perang yang kejam dan berlarut-larut. Dia harus pergi ke utara dan, suatu saat nanti, akan mengorbankan diri-Nya untuk melindungi semua makhluk hidup.\nDia memberi rakyat-Nya kesempatan untuk pergi ....\nTapi, pada Foldartal itu terdapat jawaban rakyat—\nKehendak Sami adalah kehendak orang Sami. Misi Sami adalah misi orang Sami. Kami akan pergi ke utara bersamamu.\nPerburuan ini tak pernah berakhir.",
+      "file4": "Setelah kejatuhan Sami, sebagian besar orang Sami bisa menerima kenyataan itu. Mereka hidup di atas sisa-sisa tubuh Feranmut, meneruskan kehendak-Nya, bertarung melawan Aggelos demi melindungi Talos-II.\nTapi, masih ada Snowpriest yang percaya bahwa Sami belum benar-benar mati. Jiwa-Nya hanya tersesat di dalam celah, tertidur lelap. Suatu hari nanti, Sami akan terbangun dari mimpi-Nya dan kembali kepada rakyat-Nya. Mereka melakukan perjalanan ke berbagai celah di seluruh Talos-II, mendirikan altar dan melakukan ritual, mencoba memanggil kembali jiwa Sami dari dalam retakan. Tapi, tak ada satu pun dari mereka yang kembali. Kemudian, karena front utara makin genting, tak ada lagi yang mau melanjutkan upaya itu.\nDi hutan salju dekat Celah Raksasa Wuling, Typhoeus menemukan naskah yang ditinggalkan oleh salah satu Snowpriest Sami itu. Naskah itu merinci semua upayanya untuk membangunkan Sami. Walau Typhoeus bisa memastikan melalui eksplorasinya sendiri bahwa ritual itu telah gagal dan Snowpriest tersebut lenyap tanpa jejak, gadis itu masih merasakan secercah harapan dari sisa-sisa materi tersebut.\nSayangnya, setelah mempelajarinya selama berbulan-bulan, upaya Typhoeus tidak mengalami kemajuan.\nDia menanyai setiap Snowpriest dan dukun di Order of Steel Oath dan Myrkwood, tapi mereka semua menggelengkan kepala, karena menganggap upaya itu akan sia-sia.\nWalau berkali-kali hanya menemukan jalan buntu, Typhoeus tidak patah semangat. Wawasan unik sang Snowpriest tentang mimpi dalam naskah itu mengajari gadis itu untuk merasakan wahyu khusus di alam mimpi orang lain.\n\n“Entah kenapa akhir-akhir ini aku terus bermimpi dikejar oleh monster raksasa. Tanah di bawah kakiku terus bergoyang, seolah-olah aku berdiri di jembatan gantung. Aku tak bisa tidur sepanjang malam ....”\n“Sederhana saja. Monster itu sedang memburumu, dan kau sudah tersudut.”\n“Apa yang harus kulakukan?”\n“Jadilah lebih kuat. Jangan menjadi mangsa. Jadilah pemburunya.”\n“Sepertinya aku sudah paham.”\n\nSetelah mengobrol dengan Typhoeus, operator itu pun menyusun rencana latihan intensif selama sebulan penuh untuk dirinya sendiri. Rasa lelah dan kepuasan dari latihan tersebut membuatnya tidur nyenyak sepanjang malam. Tak lama kemudian, rekan-rekan Endfield jadi sering mendatangi Typhoeus untuk menceritakan berbagai macam mimpi mereka dan memintanya untuk menafsirkannya.\nSetelah mendengarkan mimpi semua orang, Typhoeus terinspirasi oleh mimpi-mimpi itu dan menciptakan legendanya sendiri, legenda yang merangkai kisah tentang Feranmut Sami, mimpi, dan para Snowpriest.\nTyphoeus akhirnya selesai menulis akhir kisah itu. Dia merasa masalahnya akan terselesaikan seperti kisah itu. Jadi dia mengumpulkan catatannya dan berangkat untuk menceritakan kesimpulan itu kepada mereka yang menunggu dengan antusias. Tapi di tengah jalan, dia berpapasan dengan seorang gadis muda di koridor.\nTyphoeus tidak mengenalinya, tapi dia merasakan pancaran kehadiran yang tidak asing darinya.\nKehadiran itulah yang telah menemani rakyatnya melintasi rawa-rawa dan hutan-hutan, melewati musim dingin hingga memasuki musim semi, dari kelahiran sampai kematian.\nSaat Typhoeus tersadar, gadis itu sudah berjalan menjauh.\nNantinya, dari orang lain, dia mengetahui nama sandi gadis itu: Last Rite.\nTerdorong oleh firasat misterius, dia merobek akhir kisah yang ditulisnya dan menuliskan nama sandi itu di halaman baru."
+    },
+    "tags": {
+      "expert1": {
+        "name": "Kisah Alam",
+        "description": "Kisah Alam: Panduan Alam Liar\nSegala sesuatu memiliki makna di kedalaman alam liar, baik kepingan salju di bahu, atau embusan angin yang menerbangkan rambut."
+      },
+      "expert2": {
+        "name": "Bertahan Hidup di Alam",
+        "description": "Bertahan Hidup di Alam: Hukum Padang Es\nBahkan padang es yang paling kejam pun menunjukkan belas kasihan kepada pemburu kecil yang menghormati hukum alam liar."
+      },
+      "hobby1": {
+        "name": "Gaya Hidup",
+        "description": "Gaya Hidup: Semur Samifjod\nSemur itu mendidih di atas api unggun. Kamu pasti tidak akan pernah menduga bahan-bahan apa saja yang dia masukkan ke dalam panci."
+      },
+      "hobby2": {
+        "name": "Alam",
+        "description": "Alam: Bersembunyi di Alam Liar\nJangan panik jika kamu tidak bisa menemukannya. Dia hanya merasa tercemar oleh bau baja dan ferrium, lalu memilih bersembunyi di alam liar untuk sementara waktu."
+      }
+    },
+    "voiceLines": [
+      {
+        "voId": "chr_0034_typhoea_chrbark_squad_01",
+        "title": "Persiapan Operasi 1",
+        "text": "Bersiaplah dengan cermat. Bawa semua senjata dan alat yang kaubutuhkan. Bakal memalukan kalau kita harus kembali di tengah jalan gara-gara ada yang kelupaan."
+      },
+      {
+        "voId": "chr_0034_typhoea_chrbark_squad_02",
+        "title": "Persiapan Operasi 2",
+        "text": "Perjalanan di luar ruangan harus direncanakan dengan baik. Perhatikan ke mana kau pergi, apa yang kaumakan, dan apa yang kauucapkan."
+      },
+      {
+        "voId": "chr_0034_typhoea_chrbark_join_01",
+        "title": "Menambahkan ke Tim 1",
+        "text": "Punya misi untukku? Ayo, katakan saja."
+      },
+      {
+        "voId": "chr_0034_typhoea_chrbark_join_02",
+        "title": "Menambahkan ke Tim 2",
+        "text": "Kuis dadakan: Adakah tanaman liar yang bisa kaumakan mentah-mentah? Idealnya, tidak ada? Benar. Kau lulus."
+      },
+      {
+        "voId": "chr_0034_typhoea_chrbark_weap_01",
+        "title": "Berganti Senjata",
+        "text": "Terima kasih, tapi alam liar juga menyediakan senjata untuk kita. Aku bisa buat panah dari dahan. Mau lihat?"
+      },
+      {
+        "voId": "chr_0034_typhoea_chrbark_gear_01",
+        "title": "Berganti Gear",
+        "text": "Aku tak kedinginan, dan aku tak takut bahaya apa pun. Semua gear ini tak diperlukan. Kau khawatir? Kalau begitu ... kusimpan saja ini."
+      },
+      {
+        "voId": "chr_0034_typhoea_chrup_skill_01",
+        "title": "Aktivasi Nodus Talent",
+        "text": "Setelah menghalau kabut, banyak hal terungkap untuk kita."
+      },
+      {
+        "voId": "chr_0034_typhoea_chrup_level_01",
+        "title": "Menonton Rekaman Pertarungan",
+        "text": "Kurasa aku lebih suka ikut bertarung."
+      },
+      {
+        "voId": "chr_0034_typhoea_chrup_promt01_01",
+        "title": "Promosi Operator 1",
+        "text": "Baiklah. Aku senang kau menganggapku rekan yang baik."
+      },
+      {
+        "voId": "chr_0034_typhoea_chrup_promt02_01",
+        "title": "Promosi Operator 2",
+        "text": "Orang bilang mendapatkan persetujuanmu adalah hal yang baik, tapi rasanya tak terlalu istimewa. Aku akan berbuat sebaik mungkin untukmu, apa pun perasaanmu terhadapku."
+      },
+      {
+        "voId": "chr_0034_typhoea_chrup_promt03_01",
+        "title": "Promosi Operator 3",
+        "text": "Pengakuan? Apa itu artinya sama dengan “persetujuanmu” ... atau kau lebih percaya kepadaku sekarang ...? Dan apakah kau menaruh kepercayaan pada kemampuanku, atau kepadaku sebagai manusia?"
+      },
+      {
+        "voId": "chr_0034_typhoea_chrup_promt04_01",
+        "title": "Promosi Operator 4",
+        "text": "Selamat? Kukira kita sudah tak perlu saling memuji. Kalau sudah berteman baik, tatapan singkat saja sudah cukup."
+      },
+      {
+        "voId": "chr_0034_typhoea_introduce_01",
+        "title": "Operator Siap Bertugas",
+        "text": "Endmin, aku mencarimu dan menepati janjiku. Bagaimana dengan janjimu? Sudahkah kau menemukan cerita yang bagus untuk diceritakan kepadaku?"
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_switch_01",
+        "title": "Siaga 1",
+        "text": "Ramalan tak ada pengaruhnya bagi kita. Kitalah yang berhak menulis akhir ceritanya."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_switch_02",
+        "title": "Siaga 2",
+        "text": "Legenda tak selalu sebatas khayalan .... Bahkan bisa terjadi persis di sebelah kita."
+      },
+      {
+        "voId": "chr_0034_typhoea_sim_assign_work_01",
+        "title": "Menugaskan ke Fasilitas",
+        "text": "Aku memang belajar cara mengoperasikan mesin, tapi ingatanku ... mencair seperti salju di musim semi."
+      },
+      {
+        "voId": "chr_0034_typhoea_sim_hello_lower_01",
+        "title": "Menyapa 1",
+        "text": "Hujan akan turun di Myrkwood hari ini. Bawalah payung."
+      },
+      {
+        "voId": "chr_0034_typhoea_sim_hello_max_01",
+        "title": "Menyapa 2",
+        "text": "Semoga mimpimu indah."
+      },
+      {
+        "voId": "chr_0034_typhoea_sim_talk_lv01_01",
+        "title": "Obrolan Santai di Dijiang 1",
+        "text": "Aku berjalan-jalan di sekitar Anjungan Komando. Orang-orang bertanya apakah mereka boleh memainkan panahku sebentar .... Aneh. Kok mereka tak takut kepadaku, ya?"
+      },
+      {
+        "voId": "chr_0034_typhoea_sim_talk_lv02_01",
+        "title": "Obrolan Santai di Dijiang 2",
+        "text": "Kenapa aku berkunjung? Tidak ada apa-apa. Aku tak butuh alasan untuk menemuimu, ‘kan? Nah, permisi, aku pamit dulu."
+      },
+      {
+        "voId": "chr_0034_typhoea_sim_talk_lv02_02",
+        "title": "Obrolan Santai di Dijiang 3",
+        "text": "Aku bertemu banyak orang setelah datang ke sini. Mereka berbagi banyak cerita menarik denganku. Dan ya, aku sudah mencatatnya di buku catatan, tapi aku membiarkan satu halaman kosong untukmu—halaman terakhir. Sekarang, kau harus memberiku cerita yang sangat panjang."
+      },
+      {
+        "voId": "chr_0034_typhoea_sim_talk_max_01",
+        "title": "Obrolan Santai di Dijiang 4",
+        "text": "Para Endfielder senior di Gudang Senjata meng-upgrade mata panahku. Mereka memberiku panah sinyal yang meledak di udara, membentuk logo Endfield Industries yang bersinar. Kata mereka aku bisa pakai suar itu untuk memberi sinyal kepada Dijiang dalam keadaan darurat. Tapi aku tak takut bahaya atau sendirian .... Ini adalah ujianku, dan akulah yang harus menjalaninya."
+      },
+      {
+        "voId": "chr_0034_typhoea_sim_talk_max_02",
+        "title": "Obrolan Santai di Dijiang 5",
+        "text": "Tempat ini tidak seperti kamp lain yang pernah kukunjungi. Tidak ada api unggun, salju, atau pepohonan. Tapi saat aku tertidur di lantai, aku bisa merasakan jantung berdegup kencang yang berbunyi “Dug! Dug!” Bukan, itu bukan denyut dari Negeri. Itu denyut Dijiang sendiri."
+      },
+      {
+        "voId": "chr_0034_typhoea_sim_talk_max_03",
+        "title": "Obrolan Santai di Dijiang 6",
+        "text": "Aku baru saja bermimpi dan aku tak bisa tidur lagi. Kulihat bintang-bintang terbangun dan saling berbisik. Yang tenggelam akan bangkit kembali. Yang masih bermimpi akan bergerak dan bangun. Semua ini akan mengubah nasib Samivegr .... Tapi sejak kapan bintang-bintang belajar cara bicara? Rasanya aneh sekali. Hmm .... Apa aku masih bermimpi?"
+      },
+      {
+        "voId": "chr_0034_typhoea_sim_gift_give_01",
+        "title": "Menawarkan Hadiah",
+        "text": "Oh, aku bawa sesuatu dari utara. Jangan khawatir, tak akan membusuk, kok. Kujaga keindahannya dengan Originium Arts-ku. Hah, tanganmu membeku? Oh tidak, aku harusnya lebih pengertian. *Hoo-hoo* .... Baiklah, sudah merasa lebih hangat?"
+      },
+      {
+        "voId": "chr_0034_typhoea_sim_gift_recv_01",
+        "title": "Menerima Hadiah",
+        "text": "Trims banyak. Aku akan membawanya ke mana pun aku pergi. Mungkin masa depan punya cerita indah yang menanti kita."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_self_line01",
+        "title": "Dialog Kepercayaan 1",
+        "text": "Tenanglah, Endmin. Tak perlu panik. Aku akan melindungimu. Sekarang katakan, apa yang membuatmu begitu kesal ...? Binatang buas raksasa yang terikat di luar pintumu ...? Aku memburunya untukmu. Sendirian. Aku juga membiarkannya hidup. Aku menghabiskan beberapa hari mengintai di hutan untuk menangkapnya. Kalau kau tidak suka, aku akan membawanya pergi. Kulitnya berkualitas tinggi, lho."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_self_line02",
+        "title": "Dialog Kepercayaan 2",
+        "text": "Jangan bergerak terus, bersabarlah saja. Aku hampir selesai. Aku akan membawamu ke reruntuhan Sami yang sudah bertahun-tahun disegel. Kau butuh perlindungan yang tepat terhadap kutukan dan ilmu sihir. Jangan kerutkan hidungmu. Ini bau tanah segar dan lumut. Nanti juga kau terbiasa. Bagus. Sekarang baumu seperti ... Samifjod sejati."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_self_line03",
+        "title": "Dialog Kepercayaan 3",
+        "text": "Kedinginan? Aku akan menambahkan lebih banyak kayu ke api unggun. Kantong tidur sudah digelar, jadi masuklah dan istirahat. Aku akan berjaga malam ini. Hmm ...? Tidak, aku tak lelah. Aku punya tanaman herbal yang bisa membuatku tetap terjaga. Jangan sentuh! Kau mau tidur atau mau apa, sih ...? Uh. Maaf. Aku tak bermaksud jahat. Hanya saja ... tanaman herbal ini baunya menyengat. Kau benar-benar banyak membantuku hari ini, dan aku hanya ingin kau beristirahat dengan baik."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_self_line04",
+        "title": "Dialog Kepercayaan 4",
+        "text": "Tidak. Aku tak akan menunjukkan buku catatanku kepada siapa pun. Bahkan kalaupun mereka memintanya dengan sangat sopan. Aku sudah menceritakan semuanya kepadamu, jadi kau tak perlu penasaran lagi. Tunggu. Kau mau bercerita tentang Terusan Yinglung kalau aku mau meminjamkan buku catatan ini kepadamu ...? Oke, tapi sebentar saja .... Gambar manusia kecil yang kepalanya berbentuk kotak hitam ini siapa? Itu kau. Gambar manusia yang pegang segitiga? Itu panahku! Apa maksudmu, sih? Kembalikan buku catatanku, sekarang!"
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_self_line05",
+        "title": "Dialog Kepercayaan 5",
+        "text": "Setelah meninggalkan Rhodes Island, aku bepergian ke berbagai tempat dan bertemu dengan berbagai macam orang. Setiap tujuan berakhir seperti Samivegr. Mereka akan pergi dan kisah mereka perlahan akan memudar. Aku sendirian, tapi aku berhasil mengumpulkan banyak sekali cerita. Kesepian tak memengaruhiku .... Aku juga bisa berburu sendiri. Tapi cerita-cerita itu sangat indah. Cerita itu harus dibagikan kepada teman-teman dan diingat. Sayang sekali kalau hanya aku yang mengingatnya."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_chat_line01",
+        "title": "Obrolan 1",
+        "text": "Buka tanganmu. Ini ... buah beri dari Myrkwood. Rasanya mungkin agak asam, tapi coba telan saja. Buah ini akan membuatmu beruntung selama sebulan penuh."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_chat_line02",
+        "title": "Obrolan 2",
+        "text": "Orang-orang bilang kau kurang tidur. Gantung lempengan Foldartal ini di dekat tempat tidurmu. Ini akan menangkal entitas jahat yang berusaha menyelinap ke dalam mimpimu. Menurut aksaranya, mantra ini akan menggiling penyusup mana pun menjadi debu, melemparkannya ke danau terdingin di Samivegr, dan membekukannya selamanya."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_chat_line03",
+        "title": "Obrolan 3",
+        "text": "Jangan khawatir, Endmin. Aku menghabiskan bertahun-tahun di alam liar. Aku tak lagi khawatir akan tersesat. Bintang, angin, dan pepohonan, semuanya bisa menunjukkan jalan untukku. Dan kurasa bukan berarti dengan terus berada di satu arah, maka kita tak akan pernah tersesat. Lihatlah jalan di bawah kaki kita. Jalan ini selalu menyebar, ke segala arah. Peluang dan penemuan baru menanti, apa pun jalan yang kita pilih. Jangan takut. Aku akan berjalan bersamamu."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_chat_line04",
+        "title": "Obrolan 4",
+        "text": "Pedangmu tumpul? Berikan kepadaku. Aku punya batu asah. Kau ceroboh. Itu tak wajar. Kau mencemaskan sesuatu? Jangan sembunyikan dariku. Mata pemburu yang baik akan mengawasi mangsa, tapi juga menjaga rekan mereka .... Baiklah. Simpan saja sendiri kalau begitu. Aku tahu pengalaman tertentu tak bisa dijadikan cerita. Tak seharusnya diceritakan lagi atau dikenang kembali."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_chat_line05",
+        "title": "Obrolan 5",
+        "text": "Tidak, aku tak paham. Baterai kita hampir habis. Apa kau harus membaca laporan ini hari ini juga? Tidak! Kau tak boleh membaca dengan cahaya bulan. Nanti matamu rusak. Manfaatkan siang hari dengan sinar mataharinya dengan baik, karena malam hari ditakdirkan untuk turun ke dalam kegelapan. Kata siapa? Kata setiap generasi Samifjod yang bijak. Sekarang tatap mataku. Katakan, Endmin, haruskah aku memukulmu sampai pingsan?"
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_about_line01",
+        "title": "Topik: Feranmut Sami",
+        "text": "Aku terkejut saat tahu bahwa Feranmut Sami tumbang demi melindungi kaum kami. Sulit membayangkan bagaimana kami, orang Samifjod, bisa menjalani hidup tanpa perlindungannya. Di benteng utara, kulihat kaumku masih berburu dalam badai salju di tengah bangkainya yang agung. Di medan perang, kusaksikan Snowpriest kami berusaha sekuat tenaga melawan Aggelos .... Dan aku pun tahu bahwa dia dan kehendaknya yang gigih akan tetap bersama kita. Kebinasaan muncul bukan dari kematian, tapi muncul saat kita menyerah."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_about_line02",
+        "title": "Topik: Amma",
+        "text": "Aku tahu Amma. Aku ingat dia. Yang tersisa di Talos-II hanyalah kepingan legenda tentang satwa penguasa kuno itu. Bangsaku berusaha mengingat, tapi dia meninggalkan kami terlalu dini dan ingatan kami tak bisa diandalkan .... Aku berusaha mencari orang-orang yang bisa membacakan seluruh Ammataru, tapi yang kudapatkan hanya beberapa baris dan frasa. Tak apa. Kami masih punya kepingan-kepingannya. Selama kami masih ingat, kepingan itu akan menjadi seperti benih ... dan bertunas menjadi legenda baru yang utuh."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_about_line03",
+        "title": "Topik: Order of Steel Oath",
+        "text": "Oathkeeper adalah tetangga yang baik, dan itu sungguh langka. Kami saling berbagi api unggun, senjata, Arts, dan makanan. Bersama-sama, kami menghadapi hawa dingin, angin utara, Aggelos, dan Ankhor. Mereka yang gugur menyatu dengan lapisan es kami, dan keturunan mereka bertunas dan tumbuh di hutan kami. Tapi mereka bukan kami, dan tak akan pernah menjadi kami. Tidak. Kami tidak mengusir mereka. Tugas kami berbeda. Perang suci mereka akan berakhir dengan kemenangan, tapi perburuan Samifjod tak akan pernah berhenti."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_about_line04",
+        "title": "Topik: Myrkwood",
+        "text": "Asal tahu saja, kami sangat ramah. Tapi melawan para Aggelos dan Ankhor memang sangat membuat frustrasi. Lebih parahnya, ada “pencari petualangan” yang datang dengan RV dan truk kemah mereka. Mereka ingin melihat bagaimana kami memancing ikan, berburu binatang buas, menebang pohon, membuat sepanci besar semur di api unggun, tidur dalam kehangatan api, lalu membuka mata menyambut hari yang baru di depan kita .... Itu hanya hal biasa. Apa istimewanya?"
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_about_line05",
+        "title": "Topik: Iblis",
+        "text": "Bayang-bayang masa lalu sekarang hanyalah catatan kaki dalam sejarah Sami. Kisah-kisah ini sangat tua, seperti buku catatan basah yang tulisannya berubah menjadi noda kemalangan. Itulah sebabnya, orang-orang tak terlalu ingin melihat lebih jauh. Endmin, kami sudah membalik lembaran masa lalu itu .... Sekarang kami menghadapi musuh yang setidaknya bisa dilihat."
+      },
+      {
+        "voId": "chr_0034_typhoea_explore_point_common_01",
+        "title": "Sumber Daya/Barang Koleksi Terdeteksi 1",
+        "text": "Tunggu. Sepertinya aku lihat sesuatu di sana."
+      },
+      {
+        "voId": "chr_0034_typhoea_explore_point_valub_01",
+        "title": "Sumber Daya/Barang Koleksi Terdeteksi 2",
+        "text": "Naluriku menyuruhku untuk memeriksa lebih cermat di sekitar sini."
+      },
+      {
+        "voId": "chr_0034_typhoea_explore_find_locked_01",
+        "title": "Area yang Belum Dijelajahi Terdeteksi",
+        "text": "Mungkin wilayah yang belum terpetakan akan memberikan jawaban yang berbeda."
+      },
+      {
+        "voId": "chr_0034_typhoea_explore_find_danger_01",
+        "title": "Musuh Kuat Ditemukan",
+        "text": "Ada bahaya di depan. Maju dengan hati-hati."
+      },
+      {
+        "voId": "chr_0034_typhoea_interact_mine_valub_01",
+        "title": "Penambangan 1",
+        "text": "Mineral yang berharga. Ambil saja yang kita butuhkan. Jangan serakah."
+      },
+      {
+        "voId": "chr_0034_typhoea_interact_mine_valub_echo2_01",
+        "title": "Penambangan 2",
+        "text": "Aku bisa bantu. Ada teknik khusus yang bisa merontokkan bagian ini."
+      },
+      {
+        "voId": "chr_0034_typhoea_interact_treasure_valub_01",
+        "title": "Membuka Kerat",
+        "text": "Kemurahan hati dari takdir."
+      },
+      {
+        "voId": "chr_0034_typhoea_interact_etherium_01",
+        "title": "Mendapatkan Aurylene",
+        "text": "Aurylene ... butuh keahlian pemburu untuk mendekat dan menangkapnya."
+      },
+      {
+        "voId": "chr_0034_typhoea_interact_blight_break_01",
+        "title": "Menyingkirkan Hawar",
+        "text": "Semoga saja ini belum menyakiti makhluk hidup lain."
+      },
+      {
+        "voId": "chr_0034_typhoea_interact_rest_01",
+        "title": "Istirahat",
+        "text": "Aku merasa ... lebih bersemangat."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_suppuse_using_01",
+        "title": "Penggunaan Taktis 1",
+        "text": "Kau terluka. Aku bisa bantu."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_suppuse_getheal_01",
+        "title": "Penggunaan Taktis 2",
+        "text": "Aku sudah jauh lebih mendingan. Jangan khawatir."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_remind_danger_01",
+        "title": "Peringatan Bahaya",
+        "text": "Awas!"
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_hurt_lowhp_01",
+        "title": "Cedera",
+        "text": "Tidak. Aku masih belum kelelahan."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_dead_01",
+        "title": "0 HP",
+        "text": "Maaf, tak bisa bertahan sampai akhir."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_remind_praise_01",
+        "title": "Penyemangat Tim 1",
+        "text": "Bagus! Aku merasa terhormat bisa bepergian bersamamu."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_remind_praise_02",
+        "title": "Penyemangat Tim 2",
+        "text": "Bertarung bersama ... aku suka itu."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_remind_praise_echo2_01",
+        "title": "Respons Penyemangat 1",
+        "text": "Bukan apa-apa. Ini memang sudah tugasku."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_remind_praise_echo2_02",
+        "title": "Respons Penyemangat 2",
+        "text": "Kalian juga tim yang hebat."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_intobattle_01",
+        "title": "Mulai Pertarungan 1",
+        "text": "Jangan panik. Kita bisa tangani ini."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_intobattle_echo2_01",
+        "title": "Mulai Pertarungan 2",
+        "text": "Bisa rasakan alirannya? Bagus."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_outbattle_nor_01",
+        "title": "Menang Pertarungan 1",
+        "text": "Aku suka akhir ceritanya."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_outbattle_nor_02",
+        "title": "Menang Pertarungan 2",
+        "text": "Jangan terlalu menikmati kemenangan kita. Kita harus tetap waspada."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_outbattle_nor_echo2_01",
+        "title": "Menang Pertarungan 3",
+        "text": "Ceritaku selalu punya tempat untuk semua orang."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_outbattle_hard_01",
+        "title": "Menang Pertarungan 4",
+        "text": "Setiap cerita punya pasang surut. Tapi yang mampu bertahan bisa membalik halaman berikutnya."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_battle_defeat_01",
+        "title": "Kalah Bertarung",
+        "text": "Kita tak menyerah, bahkan hingga saat terakhir. Kita menguasai rasa takut kita, dan itu adalah akhir terbaik."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_attack_last_01",
+        "title": "Final Strike 1",
+        "text": "Minggir."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_attack_last_02",
+        "title": "Final Strike 2",
+        "text": "Tetap tenang."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_skill_nor_01",
+        "title": "Skill Tarung 1",
+        "text": "Awasi dan serang!"
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_skill_nor_02",
+        "title": "Skill Tarung 2",
+        "text": "Kau tak akan bisa lari ke mana pun!"
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_skill_nor_03",
+        "title": "Skill Tarung 3",
+        "text": "Waktunya pas."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_skill_comb_ready_01",
+        "title": "Skill Kombo Siap 1",
+        "text": "Mangsanya sekarang sudah terperangkap."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_skill_comb_ready_02",
+        "title": "Skill Kombo Siap 2",
+        "text": "Ini saatnya memilih mangsa kita."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_skill_comb_release_01",
+        "title": "Penggunaan Kombo 1",
+        "text": "Tamat sudah."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_skill_comb_release_02",
+        "title": "Penggunaan Kombo 2",
+        "text": "Jangan melawan!"
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_attack_extra_01",
+        "title": "Penuntas 1",
+        "text": "Kau salah langkah."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_attack_extra_02",
+        "title": "Penuntas 2",
+        "text": "Jangan berlarian terus."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_skill_ultimate_01",
+        "title": "Ultimate 1",
+        "text": "Pengecut. Akan kulumpuhkan kau."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_skill_ultimate_02",
+        "title": "Ultimate 2",
+        "text": "Tak ada yang bisa lolos dari pandanganku."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_skill_ultimate_03",
+        "title": "Ultimate 3",
+        "text": "Takutlah akan aku."
+      }
+    ]
+  },
+  "potentials": {
+    "potential1": {
+      "description": "Saat <@ba.key>Melayang</>, ATK <@ba.vup>+{atk_up:0%}</> dan DMG Dealt dari ABATK akan meningkat menjadi <@ba.vup>{atk_scale_base:0.0}</> kali dari aslinya. \nTalent <@ba.key>Huntress’s Focus</> meningkat: waktu reaktivasi <@ba.key>Penghalang Pelindung</> menjadi <@ba.vup>{decrease_cd:0}</> dtk.",
+      "name": "Samifjod Fletching"
+    },
+    "potential2": {
+      "description": "Agility <@ba.vup>+{Agi:0}</>, Intensitas Arts <@ba.vup>+{PhysicalAndSpellInflictionEnhance:0}</>.",
+      "name": "Huntress’s Stride"
+    },
+    "potential3": {
+      "description": "Skill kombo <@ba.key>Rampant Thorns</> meningkat: Durasi cooldown menjadi <@ba.vup>{coolDown:0}</> dtk. Musuh di dalam <@ba.key>Rangkaian Rentetan</> akan terkena <#ba.naturalburst>Nature Burst</> DMG Taken <@ba.vup>+{persistent_naturalburst_increase:0%}</>.",
+      "name": "Thorny Trap"
+    },
+    "potential4": {
+      "description": "Ultimate <@ba.key>Call of Ice Mountain</> meningkat: Biaya Energi Ultimate <@ba.vup>-{1-costvalue:0%}</>.",
+      "name": "No Escape"
+    },
+    "potential5": {
+      "description": "Ultimate <@ba.key>Call of Ice Mountain</> meningkat: Memperoleh <#ba.arrownum>Panah Berburu</> <@ba.vup>+{arrow_num_given:0}</>. DMG Dealt dari ultimate meningkat menjadi <@ba.vup>{potential_damge_up:0.0}</> kali nilai aslinya, sementara pengganda Nature Burst DMG dari <@ba.key>Power Shot</> meningkat menjadi <@ba.vup>{potential_damage_rate:0.0}</> kali nilai aslinya.",
+      "name": "Fatal Shot"
+    }
+  },
+  "arts": {
+    "potential1": {
+      "name": "Hangatnya Mentari Musim Dingin",
+      "author": "南野 あき",
+      "description": "Kemarin salju turun sedikit di hutan. Walau cuacanya dingin, matahari masih bersinar terang dan mampu menghangatkan wajahmu dengan sinar kemerahannya."
+    },
+    "potential3": {
+      "name": "Pemburu Kecil",
+      "author": "狂zip",
+      "description": "Kamu tak akan pernah mendengar akhir kisah sang pemburu legendaris dari alam liar karena kelelahan selalu melandanya setiap kali dia mencapai pertengahan cerita."
+    },
+    "potential5": {
+      "name": "Tatapannya Menyapu Padang Salju",
+      "author": "LM7",
+      "description": "Dari kejauhan dia menoleh untuk menatapmu, matanya bagaikan padang es Samivegr, dalam tapi tenang."
+    }
+  }
+}

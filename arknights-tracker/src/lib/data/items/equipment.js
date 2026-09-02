@@ -4639,6 +4639,192 @@ export const equipment = {
       ]
     ]
   },
+  "item_equip_t4_parts_wuling00_body_04": {
+    "level": 60,
+    "tier": "T3.5",
+    "partType": 0,
+    "rarity": 5,
+    "pack": "suit_generaltype",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          48
+        ]
+      },
+      {
+        "attrType": "Main",
+        "values": [
+          74,
+          81,
+          88,
+          96
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Sub",
+        "values": [
+          49,
+          53,
+          58,
+          63
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "OriginiumArts",
+        "values": [
+          17.7,
+          19.469999313354492,
+          21.239999771118164,
+          23.010000228881836
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "dmg_up": 0.20000000298023224,
+      "dmg_taken_down": 0.8999999761581421,
+      "ultimate_gain_up": 0.10000000149011612
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 20
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 20
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 4
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 30
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 2
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_parts_wuling00_body_05": {
+    "level": 60,
+    "tier": "T3.5",
+    "partType": 0,
+    "rarity": 5,
+    "pack": "suit_generaltype",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          48
+        ]
+      },
+      {
+        "attrType": "Main",
+        "values": [
+          74,
+          81,
+          88,
+          96
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Sub",
+        "values": [
+          49,
+          53,
+          58,
+          63
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "HealOutputIncrease",
+        "values": [
+          0.0885,
+          0.09735000133514404,
+          0.10620000213384628,
+          0.11505000293254852
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "dmg_up": 0.20000000298023224,
+      "dmg_taken_down": 0.8999999761581421,
+      "ultimate_gain_up": 0.10000000149011612
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 20
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 20
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 4
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 30
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 2
+        }
+      ]
+    ]
+  },
   "item_equip_t4_parts_wuling00_edc_01": {
     "level": 60,
     "tier": "T3.5",
@@ -4918,6 +5104,192 @@ export const equipment = {
       ]
     ]
   },
+  "item_equip_t4_parts_wuling00_edc_04": {
+    "level": 60,
+    "tier": "T3.5",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_generaltype",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          18
+        ]
+      },
+      {
+        "attrType": "Main",
+        "values": [
+          27,
+          29,
+          32,
+          35
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Sub",
+        "values": [
+          18,
+          19,
+          21,
+          23
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "OriginiumArts",
+        "values": [
+          35.4,
+          38.939998626708984,
+          42.47999954223633,
+          46.02000045776367
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "dmg_up": 0.20000000298023224,
+      "dmg_taken_down": 0.8999999761581421,
+      "ultimate_gain_up": 0.10000000149011612
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 20
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 20
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 4
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 30
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 2
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_parts_wuling00_edc_05": {
+    "level": 60,
+    "tier": "T3.5",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_generaltype",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          18
+        ]
+      },
+      {
+        "attrType": "Main",
+        "values": [
+          27,
+          29,
+          32,
+          35
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Sub",
+        "values": [
+          18,
+          19,
+          21,
+          23
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "HealOutputIncrease",
+        "values": [
+          0.177,
+          0.19470000267028809,
+          0.21240000426769257,
+          0.23010000586509705
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "dmg_up": 0.20000000298023224,
+      "dmg_taken_down": 0.8999999761581421,
+      "ultimate_gain_up": 0.10000000149011612
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 20
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 20
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 4
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 30
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 2
+        }
+      ]
+    ]
+  },
   "item_equip_t4_parts_wuling00_hand_01": {
     "level": 60,
     "tier": "T3.5",
@@ -5145,6 +5517,192 @@ export const equipment = {
           0.16226397454738617,
           0.1770152449607849,
           0.19176651537418365
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "dmg_up": 0.20000000298023224,
+      "dmg_taken_down": 0.8999999761581421,
+      "ultimate_gain_up": 0.10000000149011612
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 20
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 20
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 4
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 30
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 2
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_parts_wuling00_hand_04": {
+    "level": 60,
+    "tier": "T3.5",
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_generaltype",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          36
+        ]
+      },
+      {
+        "attrType": "Main",
+        "values": [
+          55,
+          60,
+          66,
+          71
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Sub",
+        "values": [
+          37,
+          40,
+          44,
+          48
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "OriginiumArts",
+        "values": [
+          29.5,
+          32.45000076293945,
+          35.400001525878906,
+          38.349998474121094
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "dmg_up": 0.20000000298023224,
+      "dmg_taken_down": 0.8999999761581421,
+      "ultimate_gain_up": 0.10000000149011612
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 20
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 20
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 4
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 30
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 2
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_parts_wuling00_hand_05": {
+    "level": 60,
+    "tier": "T3.5",
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_generaltype",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          36
+        ]
+      },
+      {
+        "attrType": "Main",
+        "values": [
+          55,
+          60,
+          66,
+          71
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Sub",
+        "values": [
+          37,
+          40,
+          44,
+          48
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "HealOutputIncrease",
+        "values": [
+          0.1475,
+          0.16224999725818634,
+          0.1770000010728836,
+          0.19175000488758087
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -6035,7 +6593,6 @@ export const equipment = {
     ]
   },
   "item_equip_t4_suit_atb01_body_01": {
-    "url": "https://oem.re/0ubaIIO",
     "level": 70,
     "tier": "T4",
     "partType": 0,
@@ -6126,10 +6683,10 @@ export const equipment = {
           "amount": 5
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0ubaIIO"
   },
   "item_equip_t4_suit_atb01_body_02": {
-    "url": "https://oem.re/0ubaIIO",
     "level": 70,
     "tier": "T4",
     "partType": 0,
@@ -6220,10 +6777,10 @@ export const equipment = {
           "amount": 5
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0ubaIIO"
   },
   "item_equip_t4_suit_atb01_body_03": {
-    "url": "https://oem.re/0ubaIIO",
     "level": 70,
     "tier": "T4",
     "partType": 0,
@@ -6314,10 +6871,10 @@ export const equipment = {
           "amount": 5
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0ubaIIO"
   },
   "item_equip_t4_suit_atb01_body_04": {
-    "url": "https://oem.re/0adp8l6",
     "level": 70,
     "tier": "T4",
     "partType": 0,
@@ -6408,7 +6965,8 @@ export const equipment = {
           "amount": 5
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0adp8l6"
   },
   "item_equip_t4_suit_atb01_body_05": {
     "level": 70,
@@ -6495,7 +7053,6 @@ export const equipment = {
     "url": "https://oem.re/1aPV20g"
   },
   "item_equip_t4_suit_atb01_edc_01": {
-    "url": "https://oem.re/0ubaIIO",
     "level": 70,
     "tier": "T4",
     "partType": 2,
@@ -6586,10 +7143,10 @@ export const equipment = {
           "amount": 5
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0ubaIIO"
   },
   "item_equip_t4_suit_atb01_edc_02": {
-    "url": "https://oem.re/0adp8l6",
     "level": 70,
     "tier": "T4",
     "partType": 2,
@@ -6680,10 +7237,10 @@ export const equipment = {
           "amount": 5
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0adp8l6"
   },
   "item_equip_t4_suit_atb01_edc_03": {
-    "url": "https://oem.re/0JjtRDB",
     "level": 70,
     "tier": "T4.1",
     "partType": 2,
@@ -6754,10 +7311,10 @@ export const equipment = {
           "amount": 5
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0JjtRDB"
   },
   "item_equip_t4_suit_atb01_edc_04": {
-    "url": "https://oem.re/0adp8l6",
     "level": 70,
     "tier": "T4",
     "partType": 2,
@@ -6848,10 +7405,10 @@ export const equipment = {
           "amount": 5
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0adp8l6"
   },
   "item_equip_t4_suit_atb01_edc_05": {
-    "url": "https://oem.re/0JjtRDB",
     "level": 70,
     "tier": "T4.1",
     "partType": 2,
@@ -6922,10 +7479,10 @@ export const equipment = {
           "amount": 5
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0JjtRDB"
   },
   "item_equip_t4_suit_atb01_edc_06": {
-    "url": "https://oem.re/0PPNGEr",
     "level": 70,
     "tier": "T4.2",
     "partType": 2,
@@ -6996,10 +7553,10 @@ export const equipment = {
           "amount": 25
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0PPNGEr"
   },
   "item_equip_t4_suit_atb01_hand_01": {
-    "url": "https://oem.re/0ubaIIO",
     "level": 70,
     "tier": "T4",
     "partType": 1,
@@ -7090,10 +7647,10 @@ export const equipment = {
           "amount": 5
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0ubaIIO"
   },
   "item_equip_t4_suit_atb01_hand_02": {
-    "url": "https://oem.re/0hN2HgW",
     "level": 70,
     "tier": "T4.1",
     "partType": 1,
@@ -7174,10 +7731,10 @@ export const equipment = {
           "amount": 5
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0hN2HgW"
   },
   "item_equip_t4_suit_atb01_hand_03": {
-    "url": "https://oem.re/0PPNGEr",
     "level": 70,
     "tier": "T4.2",
     "partType": 1,
@@ -7248,10 +7805,10 @@ export const equipment = {
           "amount": 25
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0PPNGEr"
   },
   "item_equip_t4_suit_atk02_body_01": {
-    "url": "https://oem.re/0JuaamP",
     "level": 70,
     "tier": "T4",
     "partType": 0,
@@ -7342,10 +7899,10 @@ export const equipment = {
           "amount": 5
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0JuaamP"
   },
   "item_equip_t4_suit_atk02_body_02": {
-    "url": "https://oem.re/0hN2HgW",
     "level": 70,
     "tier": "T4.1",
     "partType": 0,
@@ -7426,10 +7983,10 @@ export const equipment = {
           "amount": 5
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0hN2HgW"
   },
   "item_equip_t4_suit_atk02_body_03": {
-    "url": "https://oem.re/0hN2HgW",
     "level": 70,
     "tier": "T4.1",
     "partType": 0,
@@ -7510,10 +8067,10 @@ export const equipment = {
           "amount": 5
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0hN2HgW"
   },
   "item_equip_t4_suit_atk02_body_04": {
-    "url": "https://oem.re/0JuaamP",
     "level": 70,
     "tier": "T4",
     "partType": 0,
@@ -7604,10 +8161,10 @@ export const equipment = {
           "amount": 5
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0JuaamP"
   },
   "item_equip_t4_suit_atk02_edc_01": {
-    "url": "https://oem.re/0JuaamP",
     "level": 70,
     "tier": "T4",
     "partType": 2,
@@ -7698,10 +8255,10 @@ export const equipment = {
           "amount": 5
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0JuaamP"
   },
   "item_equip_t4_suit_atk02_edc_02": {
-    "url": "https://oem.re/0hN2HgW",
     "level": 70,
     "tier": "T4.1",
     "partType": 2,
@@ -7782,10 +8339,10 @@ export const equipment = {
           "amount": 5
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0hN2HgW"
   },
   "item_equip_t4_suit_atk02_edc_03": {
-    "url": "https://oem.re/0hN2HgW",
     "level": 70,
     "tier": "T4.1",
     "partType": 2,
@@ -7866,7 +8423,8 @@ export const equipment = {
           "amount": 5
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0hN2HgW"
   },
   "item_equip_t4_suit_atk02_edc_04": {
     "level": 70,
@@ -8055,7 +8613,6 @@ export const equipment = {
     ]
   },
   "item_equip_t4_suit_atk02_hand_01": {
-    "url": "https://oem.re/0JuaamP",
     "level": 70,
     "tier": "T4",
     "partType": 1,
@@ -8146,10 +8703,10 @@ export const equipment = {
           "amount": 5
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0JuaamP"
   },
   "item_equip_t4_suit_atk02_hand_02": {
-    "url": "https://oem.re/0JuaamP",
     "level": 70,
     "tier": "T4",
     "partType": 1,
@@ -8240,10 +8797,10 @@ export const equipment = {
           "amount": 5
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0JuaamP"
   },
   "item_equip_t4_suit_attri01_body_01": {
-    "url": "https://oem.re/0KEz0NC",
     "level": 70,
     "tier": "T4",
     "partType": 0,
@@ -8334,10 +8891,10 @@ export const equipment = {
           "amount": 5
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0KEz0NC"
   },
   "item_equip_t4_suit_attri01_body_02": {
-    "url": "https://oem.re/0KEz0NC",
     "level": 70,
     "tier": "T4",
     "partType": 0,
@@ -8428,10 +8985,10 @@ export const equipment = {
           "amount": 5
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0KEz0NC"
   },
   "item_equip_t4_suit_attri01_body_03": {
-    "url": "https://oem.re/0KEz0NC",
     "level": 70,
     "tier": "T4",
     "partType": 0,
@@ -8522,10 +9079,10 @@ export const equipment = {
           "amount": 5
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0KEz0NC"
   },
   "item_equip_t4_suit_attri01_body_04": {
-    "url": "https://oem.re/0mCv8JR",
     "level": 70,
     "tier": "T4",
     "partType": 0,
@@ -8616,7 +9173,8 @@ export const equipment = {
           "amount": 5
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0mCv8JR"
   },
   "item_equip_t4_suit_attri01_body_05": {
     "level": 70,
@@ -8703,7 +9261,6 @@ export const equipment = {
     "url": "https://oem.re/1aPV20g"
   },
   "item_equip_t4_suit_attri01_edc_02": {
-    "url": "https://oem.re/047kLHQ",
     "level": 70,
     "tier": "T4.2",
     "partType": 2,
@@ -8774,10 +9331,10 @@ export const equipment = {
           "amount": 25
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/047kLHQ"
   },
   "item_equip_t4_suit_attri01_edc_03": {
-    "url": "https://oem.re/0KEz0NC",
     "level": 70,
     "tier": "T4",
     "partType": 2,
@@ -8868,10 +9425,10 @@ export const equipment = {
           "amount": 5
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0KEz0NC"
   },
   "item_equip_t4_suit_attri01_edc_04": {
-    "url": "https://oem.re/0KEz0NC",
     "level": 70,
     "tier": "T4",
     "partType": 2,
@@ -8962,10 +9519,10 @@ export const equipment = {
           "amount": 5
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0KEz0NC"
   },
   "item_equip_t4_suit_attri01_edc_05": {
-    "url": "https://oem.re/0mCv8JR",
     "level": 70,
     "tier": "T4",
     "partType": 2,
@@ -9056,7 +9613,8 @@ export const equipment = {
           "amount": 5
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0mCv8JR"
   },
   "item_equip_t4_suit_attri01_edc_06": {
     "level": 70,
@@ -9404,7 +9962,6 @@ export const equipment = {
     "url": "https://oem.re/1aPV20g"
   },
   "item_equip_t4_suit_attri01_hand_03": {
-    "url": "https://oem.re/047kLHQ",
     "level": 70,
     "tier": "T4.2",
     "partType": 1,
@@ -9475,10 +10032,10 @@ export const equipment = {
           "amount": 25
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/047kLHQ"
   },
   "item_equip_t4_suit_burst01_body_01": {
-    "url": "https://oem.re/1b0BkJu",
     "level": 70,
     "tier": "T4",
     "partType": 0,
@@ -9570,10 +10127,140 @@ export const equipment = {
           "amount": 5
         }
       ]
+    ],
+    "url": "https://oem.re/1b0BkJu"
+  },
+  "item_equip_t4_suit_burst01_body_02": {
+    "url": "https://oem.re/0skdX7F",
+    "level": 70,
+    "tier": "T4.3",
+    "partType": 0,
+    "rarity": 5,
+    "pack": "suit_burst01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "UltimateSpGainScalar",
+        "values": [
+          0.1232142857142857,
+          0.13553571701049805,
+          0.14785714447498322,
+          0.16017857193946838
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "skill_dmg_up": 0.20000000298023224,
+      "stack_cond": 2,
+      "spell_dmg_up": 0.3499999940395355,
+      "duration": 15
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 360
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 50
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_suit_burst01_body_03": {
+    "url": "https://oem.re/0skdX7F",
+    "level": 70,
+    "tier": "T4.3",
+    "partType": 0,
+    "rarity": 5,
+    "pack": "suit_burst01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "CrystAndPulseDamageIncrease",
+        "values": [
+          0.11499999999999999,
+          0.1264999955892563,
+          0.1379999965429306,
+          0.14949999749660492
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "skill_dmg_up": 0.20000000298023224,
+      "stack_cond": 2,
+      "spell_dmg_up": 0.3499999940395355,
+      "duration": 15
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 360
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_burst01_edc_01": {
-    "url": "https://oem.re/1b0BkJu",
     "level": 70,
     "tier": "T4",
     "partType": 2,
@@ -9665,10 +10352,10 @@ export const equipment = {
           "amount": 5
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/1b0BkJu"
   },
   "item_equip_t4_suit_burst01_edc_02": {
-    "url": "https://oem.re/1b0BkJu",
     "level": 70,
     "tier": "T4",
     "partType": 2,
@@ -9760,10 +10447,75 @@ export const equipment = {
           "amount": 5
         }
       ]
+    ],
+    "url": "https://oem.re/1b0BkJu"
+  },
+  "item_equip_t4_suit_burst01_edc_03": {
+    "url": "https://oem.re/0skdX7F",
+    "level": 70,
+    "tier": "T4.3",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_burst01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "FireAndNaturalDamageIncrease",
+        "values": [
+          0.22999999999999998,
+          0.2529999911785126,
+          0.2759999930858612,
+          0.29899999499320984
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "skill_dmg_up": 0.20000000298023224,
+      "stack_cond": 2,
+      "spell_dmg_up": 0.3499999940395355,
+      "duration": 15
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 360
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_burst01_hand_01": {
-    "url": "https://oem.re/1b0BkJu",
     "level": 70,
     "tier": "T4",
     "partType": 1,
@@ -9855,10 +10607,75 @@ export const equipment = {
           "amount": 5
         }
       ]
+    ],
+    "url": "https://oem.re/1b0BkJu"
+  },
+  "item_equip_t4_suit_burst01_hand_02": {
+    "url": "https://oem.re/0skdX7F",
+    "level": 70,
+    "tier": "T4.3",
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_burst01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          42
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "AllSkillDamageIncrease",
+        "values": [
+          0.23,
+          0.2529999911785126,
+          0.2759999930858612,
+          0.29899999499320984
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "skill_dmg_up": 0.20000000298023224,
+      "stack_cond": 2,
+      "spell_dmg_up": 0.3499999940395355,
+      "duration": 15
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 360
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_combo_cd01_body_01": {
-    "url": "https://oem.re/04lAVU4",
     "level": 70,
     "tier": "T4.2",
     "partType": 0,
@@ -9930,10 +10747,10 @@ export const equipment = {
           "amount": 25
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/04lAVU4"
   },
   "item_equip_t4_suit_combo_cd01_body_02": {
-    "url": "https://oem.re/0PPNGEr",
     "level": 70,
     "tier": "T4.2",
     "partType": 0,
@@ -10005,10 +10822,10 @@ export const equipment = {
           "amount": 25
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0PPNGEr"
   },
   "item_equip_t4_suit_combo_cd01_edc_01": {
-    "url": "https://oem.re/04lAVU4",
     "level": 70,
     "tier": "T4.2",
     "partType": 2,
@@ -10080,10 +10897,10 @@ export const equipment = {
           "amount": 25
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/04lAVU4"
   },
   "item_equip_t4_suit_combo_cd01_edc_02": {
-    "url": "https://oem.re/04lAVU4",
     "level": 70,
     "tier": "T4.2",
     "partType": 2,
@@ -10155,10 +10972,10 @@ export const equipment = {
           "amount": 25
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/04lAVU4"
   },
   "item_equip_t4_suit_combo_cd01_edc_03": {
-    "url": "https://oem.re/0ojmwhM",
     "level": 70,
     "tier": "T4.2",
     "partType": 2,
@@ -10230,10 +11047,10 @@ export const equipment = {
           "amount": 25
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0ojmwhM"
   },
   "item_equip_t4_suit_combo_cd01_edc_04": {
-    "url": "https://oem.re/0AvUSn4",
     "level": 70,
     "tier": "T4.2",
     "partType": 2,
@@ -10305,10 +11122,10 @@ export const equipment = {
           "amount": 25
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0AvUSn4"
   },
   "item_equip_t4_suit_combo_cd01_hand_01": {
-    "url": "https://oem.re/04lAVU4",
     "level": 70,
     "tier": "T4.2",
     "partType": 1,
@@ -10380,10 +11197,10 @@ export const equipment = {
           "amount": 25
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/04lAVU4"
   },
   "item_equip_t4_suit_combo_cd01_hand_02": {
-    "url": "https://oem.re/0PPNGEr",
     "level": 70,
     "tier": "T4.2",
     "partType": 1,
@@ -10455,10 +11272,10 @@ export const equipment = {
           "amount": 25
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0PPNGEr"
   },
   "item_equip_t4_suit_criti01_body_01": {
-    "url": "https://oem.re/0O8Wj6w",
     "level": 70,
     "tier": "T4",
     "partType": 0,
@@ -10551,10 +11368,10 @@ export const equipment = {
           "amount": 5
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0O8Wj6w"
   },
   "item_equip_t4_suit_criti01_body_02": {
-    "url": "https://oem.re/0O8Wj6w",
     "level": 70,
     "tier": "T4",
     "partType": 0,
@@ -10647,10 +11464,10 @@ export const equipment = {
           "amount": 5
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0O8Wj6w"
   },
   "item_equip_t4_suit_criti01_body_03": {
-    "url": "https://oem.re/0O8Wj6w",
     "level": 70,
     "tier": "T4",
     "partType": 0,
@@ -10743,7 +11560,8 @@ export const equipment = {
           "amount": 5
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0O8Wj6w"
   },
   "item_equip_t4_suit_criti01_body_04": {
     "level": 70,
@@ -10841,7 +11659,6 @@ export const equipment = {
     ]
   },
   "item_equip_t4_suit_criti01_body_06": {
-    "url": "https://oem.re/0JjtRDB",
     "level": 70,
     "tier": "T4.1",
     "partType": 0,
@@ -10924,7 +11741,8 @@ export const equipment = {
           "amount": 5
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0JjtRDB"
   },
   "item_equip_t4_suit_criti01_edc_01": {
     "level": 70,
@@ -11212,7 +12030,6 @@ export const equipment = {
     ]
   },
   "item_equip_t4_suit_criti01_edc_04": {
-    "url": "https://oem.re/0adp8l6",
     "level": 70,
     "tier": "T4",
     "partType": 2,
@@ -11305,7 +12122,8 @@ export const equipment = {
           "amount": 5
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0adp8l6"
   },
   "item_equip_t4_suit_criti01_edc_05": {
     "level": 70,
@@ -11403,7 +12221,6 @@ export const equipment = {
     ]
   },
   "item_equip_t4_suit_criti01_edc_06": {
-    "url": "https://oem.re/0JjtRDB",
     "level": 70,
     "tier": "T4.1",
     "partType": 2,
@@ -11486,10 +12303,10 @@ export const equipment = {
           "amount": 5
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0JjtRDB"
   },
   "item_equip_t4_suit_criti01_hand_01": {
-    "url": "https://oem.re/0O8Wj6w",
     "level": 70,
     "tier": "T4",
     "partType": 1,
@@ -11582,10 +12399,10 @@ export const equipment = {
           "amount": 5
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0O8Wj6w"
   },
   "item_equip_t4_suit_criti01_hand_02": {
-    "url": "https://oem.re/0adp8l6",
     "level": 70,
     "tier": "T4",
     "partType": 1,
@@ -11678,10 +12495,10 @@ export const equipment = {
           "amount": 5
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0adp8l6"
   },
   "item_equip_t4_suit_criti01_hand_03": {
-    "url": "https://oem.re/0O8Wj6w",
     "level": 70,
     "tier": "T4",
     "partType": 1,
@@ -11774,10 +12591,10 @@ export const equipment = {
           "amount": 5
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0O8Wj6w"
   },
   "item_equip_t4_suit_criti01_hand_04": {
-    "url": "https://oem.re/0JjtRDB",
     "level": 70,
     "tier": "T4.1",
     "partType": 1,
@@ -11860,10 +12677,10 @@ export const equipment = {
           "amount": 5
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0JjtRDB"
   },
   "item_equip_t4_suit_crush_fracture_body_01": {
-    "url": "https://oem.re/05bID7X",
     "level": 70,
     "tier": "T4.2",
     "partType": 0,
@@ -11935,10 +12752,10 @@ export const equipment = {
           "amount": 25
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/05bID7X"
   },
   "item_equip_t4_suit_crush_fracture_body_02": {
-    "url": "https://oem.re/0AvUSn4",
     "level": 70,
     "tier": "T4.2",
     "partType": 0,
@@ -12010,10 +12827,10 @@ export const equipment = {
           "amount": 25
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0AvUSn4"
   },
   "item_equip_t4_suit_crush_fracture_edc_01": {
-    "url": "https://oem.re/05bID7X",
     "level": 70,
     "tier": "T4.2",
     "partType": 2,
@@ -12085,10 +12902,10 @@ export const equipment = {
           "amount": 25
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/05bID7X"
   },
   "item_equip_t4_suit_crush_fracture_edc_02": {
-    "url": "https://oem.re/0AvUSn4",
     "level": 70,
     "tier": "T4.2",
     "partType": 2,
@@ -12160,10 +12977,10 @@ export const equipment = {
           "amount": 25
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0AvUSn4"
   },
   "item_equip_t4_suit_crush_fracture_hand_01": {
-    "url": "https://oem.re/05bID7X",
     "level": 70,
     "tier": "T4.2",
     "partType": 1,
@@ -12235,10 +13052,10 @@ export const equipment = {
           "amount": 25
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/05bID7X"
   },
   "item_equip_t4_suit_crush_fracture_hand_02": {
-    "url": "https://oem.re/0AvUSn4",
     "level": 70,
     "tier": "T4.2",
     "partType": 1,
@@ -12310,10 +13127,10 @@ export const equipment = {
           "amount": 25
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0AvUSn4"
   },
   "item_equip_t4_suit_expend_spell01_body_02": {
-    "url": "https://oem.re/0ojmwhM",
     "level": 70,
     "tier": "T4.2",
     "partType": 0,
@@ -12385,10 +13202,10 @@ export const equipment = {
           "amount": 25
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0ojmwhM"
   },
   "item_equip_t4_suit_expend_spell01_edc_02": {
-    "url": "https://oem.re/0ojmwhM",
     "level": 70,
     "tier": "T4.2",
     "partType": 2,
@@ -12460,10 +13277,10 @@ export const equipment = {
           "amount": 25
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0ojmwhM"
   },
   "item_equip_t4_suit_expend_spell01_hand_02": {
-    "url": "https://oem.re/0ojmwhM",
     "level": 70,
     "tier": "T4.2",
     "partType": 1,
@@ -12535,10 +13352,10 @@ export const equipment = {
           "amount": 25
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0ojmwhM"
   },
   "item_equip_t4_suit_fire_natr01_body_01": {
-    "url": "https://oem.re/0VHBT5t",
     "level": 70,
     "tier": "T4",
     "partType": 0,
@@ -12631,7 +13448,8 @@ export const equipment = {
           "amount": 5
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0VHBT5t"
   },
   "item_equip_t4_suit_fire_natr01_body_02": {
     "level": 70,
@@ -12719,7 +13537,6 @@ export const equipment = {
     ]
   },
   "item_equip_t4_suit_fire_natr01_edc_01": {
-    "url": "https://oem.re/0VHBT5t",
     "level": 70,
     "tier": "T4",
     "partType": 2,
@@ -12812,10 +13629,10 @@ export const equipment = {
           "amount": 5
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0VHBT5t"
   },
   "item_equip_t4_suit_fire_natr01_edc_02": {
-    "url": "https://oem.re/0VHBT5t",
     "level": 70,
     "tier": "T4",
     "partType": 2,
@@ -12898,7 +13715,8 @@ export const equipment = {
           "amount": 5
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0VHBT5t"
   },
   "item_equip_t4_suit_fire_natr01_edc_03": {
     "level": 70,
@@ -13147,7 +13965,6 @@ export const equipment = {
     ]
   },
   "item_equip_t4_suit_fire_natr01_hand_02": {
-    "url": "https://oem.re/0VHBT5t",
     "level": 70,
     "tier": "T4",
     "partType": 1,
@@ -13240,10 +14057,10 @@ export const equipment = {
           "amount": 5
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0VHBT5t"
   },
   "item_equip_t4_suit_fire_natr01_hand_03": {
-    "url": "https://oem.re/0VHBT5t",
     "level": 70,
     "tier": "T4",
     "partType": 1,
@@ -13336,7 +14153,8 @@ export const equipment = {
           "amount": 5
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0VHBT5t"
   },
   "item_equip_t4_suit_fire_natr01_hand_04": {
     "level": 70,
@@ -13405,7 +14223,6 @@ export const equipment = {
     "url": "https://oem.re/0P5HOCM"
   },
   "item_equip_t4_suit_heal01_body_01": {
-    "url": "https://oem.re/02EJym9",
     "level": 70,
     "tier": "T4",
     "partType": 0,
@@ -13497,10 +14314,10 @@ export const equipment = {
           "amount": 5
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/02EJym9"
   },
   "item_equip_t4_suit_heal01_body_02": {
-    "url": "https://oem.re/02EJym9",
     "level": 70,
     "tier": "T4",
     "partType": 0,
@@ -13592,7 +14409,8 @@ export const equipment = {
           "amount": 5
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/02EJym9"
   },
   "item_equip_t4_suit_heal01_body_03": {
     "level": 70,
@@ -13660,7 +14478,6 @@ export const equipment = {
     "url": "https://oem.re/0P5HOCM"
   },
   "item_equip_t4_suit_heal01_edc_01": {
-    "url": "https://oem.re/02EJym9",
     "level": 70,
     "tier": "T4",
     "partType": 2,
@@ -13752,7 +14569,8 @@ export const equipment = {
           "amount": 5
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/02EJym9"
   },
   "item_equip_t4_suit_heal01_edc_02": {
     "level": 70,
@@ -13829,7 +14647,6 @@ export const equipment = {
     ]
   },
   "item_equip_t4_suit_heal01_edc_03": {
-    "url": "https://oem.re/02EJym9",
     "level": 70,
     "tier": "T4",
     "partType": 2,
@@ -13921,10 +14738,10 @@ export const equipment = {
           "amount": 5
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/02EJym9"
   },
   "item_equip_t4_suit_heal01_edc_04": {
-    "url": "https://oem.re/0kSjuAp",
     "level": 70,
     "tier": "T4",
     "partType": 2,
@@ -14006,7 +14823,8 @@ export const equipment = {
           "amount": 5
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0kSjuAp"
   },
   "item_equip_t4_suit_heal01_edc_05": {
     "level": 70,
@@ -14103,7 +14921,6 @@ export const equipment = {
     ]
   },
   "item_equip_t4_suit_heal01_hand_01": {
-    "url": "https://oem.re/02EJym9",
     "level": 70,
     "tier": "T4",
     "partType": 1,
@@ -14195,10 +15012,10 @@ export const equipment = {
           "amount": 5
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/02EJym9"
   },
   "item_equip_t4_suit_heal01_hand_02": {
-    "url": "https://oem.re/0aUrI8p",
     "level": 70,
     "tier": "T4",
     "partType": 1,
@@ -14290,7 +15107,8 @@ export const equipment = {
           "amount": 5
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0aUrI8p"
   },
   "item_equip_t4_suit_heal01_hand_03": {
     "level": 70,
@@ -14442,7 +15260,6 @@ export const equipment = {
     ]
   },
   "item_equip_t4_suit_phy01_body_02": {
-    "url": "https://oem.re/0aUrI8p",
     "level": 70,
     "tier": "T4",
     "partType": 0,
@@ -14534,10 +15351,10 @@ export const equipment = {
           "amount": 5
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0aUrI8p"
   },
   "item_equip_t4_suit_phy01_body_03": {
-    "url": "https://oem.re/047kLHQ",
     "level": 70,
     "tier": "T4.2",
     "partType": 0,
@@ -14609,10 +15426,10 @@ export const equipment = {
           "amount": 25
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/047kLHQ"
   },
   "item_equip_t4_suit_phy01_body_04": {
-    "url": "https://oem.re/05bID7X",
     "level": 70,
     "tier": "T4.2",
     "partType": 0,
@@ -14684,7 +15501,8 @@ export const equipment = {
           "amount": 25
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/05bID7X"
   },
   "item_equip_t4_suit_phy01_edc_01": {
     "level": 70,
@@ -14845,7 +15663,6 @@ export const equipment = {
     ]
   },
   "item_equip_t4_suit_phy01_edc_03": {
-    "url": "https://oem.re/0aUrI8p",
     "level": 70,
     "tier": "T4",
     "partType": 2,
@@ -14937,10 +15754,10 @@ export const equipment = {
           "amount": 5
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0aUrI8p"
   },
   "item_equip_t4_suit_phy01_edc_04": {
-    "url": "https://oem.re/047kLHQ",
     "level": 70,
     "tier": "T4.2",
     "partType": 2,
@@ -15012,10 +15829,10 @@ export const equipment = {
           "amount": 25
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/047kLHQ"
   },
   "item_equip_t4_suit_phy01_hand_01": {
-    "url": "https://oem.re/0aUrI8p",
     "level": 70,
     "tier": "T4",
     "partType": 1,
@@ -15107,10 +15924,10 @@ export const equipment = {
           "amount": 5
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0aUrI8p"
   },
   "item_equip_t4_suit_phy01_hand_02": {
-    "url": "https://oem.re/0aUrI8p",
     "level": 70,
     "tier": "T4",
     "partType": 1,
@@ -15202,10 +16019,10 @@ export const equipment = {
           "amount": 5
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0aUrI8p"
   },
   "item_equip_t4_suit_phy01_hand_03": {
-    "url": "https://oem.re/047kLHQ",
     "level": 70,
     "tier": "T4.2",
     "partType": 1,
@@ -15277,10 +16094,10 @@ export const equipment = {
           "amount": 25
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/047kLHQ"
   },
   "item_equip_t4_suit_poise01_body_01": {
-    "url": "https://oem.re/0kSjuAp",
     "level": 70,
     "tier": "T4",
     "partType": 0,
@@ -15375,10 +16192,10 @@ export const equipment = {
           "amount": 5
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0kSjuAp"
   },
   "item_equip_t4_suit_poise01_edc_01": {
-    "url": "https://oem.re/0kSjuAp",
     "level": 70,
     "tier": "T4",
     "partType": 2,
@@ -15473,10 +16290,10 @@ export const equipment = {
           "amount": 5
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0kSjuAp"
   },
   "item_equip_t4_suit_poise01_edc_02": {
-    "url": "https://oem.re/0kSjuAp",
     "level": 70,
     "tier": "T4",
     "partType": 2,
@@ -15571,7 +16388,8 @@ export const equipment = {
           "amount": 5
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0kSjuAp"
   },
   "item_equip_t4_suit_poise01_edc_03": {
     "level": 70,
@@ -15748,7 +16566,6 @@ export const equipment = {
     ]
   },
   "item_equip_t4_suit_poise01_hand_01": {
-    "url": "https://oem.re/0kSjuAp",
     "level": 70,
     "tier": "T4",
     "partType": 1,
@@ -15843,7 +16660,8 @@ export const equipment = {
           "amount": 5
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0kSjuAp"
   },
   "item_equip_t4_suit_poise01_hand_02": {
     "level": 70,
@@ -15933,7 +16751,6 @@ export const equipment = {
     ]
   },
   "item_equip_t4_suit_pulse_cryst01_body_01": {
-    "url": "https://oem.re/0mCv8JR",
     "level": 70,
     "tier": "T4",
     "partType": 0,
@@ -16026,7 +16843,8 @@ export const equipment = {
           "amount": 5
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0mCv8JR"
   },
   "item_equip_t4_suit_pulse_cryst01_edc_01": {
     "level": 70,
@@ -16114,7 +16932,6 @@ export const equipment = {
     ]
   },
   "item_equip_t4_suit_pulse_cryst01_edc_02": {
-    "url": "https://oem.re/0mCv8JR",
     "level": 70,
     "tier": "T4",
     "partType": 2,
@@ -16197,7 +17014,8 @@ export const equipment = {
           "amount": 5
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0mCv8JR"
   },
   "item_equip_t4_suit_pulse_cryst01_edc_03": {
     "level": 70,
@@ -16275,7 +17093,6 @@ export const equipment = {
     ]
   },
   "item_equip_t4_suit_pulse_cryst01_hand_01": {
-    "url": "https://oem.re/0mCv8JR",
     "level": 70,
     "tier": "T4",
     "partType": 1,
@@ -16368,10 +17185,205 @@ export const equipment = {
           "amount": 5
         }
       ]
+    ],
+    "url": "https://oem.re/0mCv8JR"
+  },
+  "item_equip_t4_suit_spellburst_body_01": {
+    "url": "https://oem.re/0TQF7uk",
+    "level": 70,
+    "tier": "T4.3",
+    "partType": 0,
+    "rarity": 5,
+    "pack": "suit_spellburst",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "OriginiumArts",
+        "values": [
+          20.7,
+          22.770000457763672,
+          24.84000015258789,
+          26.90999984741211
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "phy_spell_up": 16,
+      "spell_dmg_up": 0.1599999964237213,
+      "max_stack": 3,
+      "duration": 20
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 360
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 50
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_suit_spellburst_edc_01": {
+    "url": "https://oem.re/0TQF7uk",
+    "level": 70,
+    "tier": "T4.3",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_spellburst",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "OriginiumArts",
+        "values": [
+          41.4,
+          45.540000915527344,
+          49.68000030517578,
+          53.81999969482422
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "phy_spell_up": 16,
+      "spell_dmg_up": 0.1599999964237213,
+      "max_stack": 3,
+      "duration": 20
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 360
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 50
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_suit_spellburst_hand_01": {
+    "url": "https://oem.re/0TQF7uk",
+    "level": 70,
+    "tier": "T4.3",
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_spellburst",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          42
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "OriginiumArts",
+        "values": [
+          34.5,
+          37.95000076293945,
+          41.400001525878906,
+          44.849998474121094
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "phy_spell_up": 16,
+      "spell_dmg_up": 0.1599999964237213,
+      "max_stack": 3,
+      "duration": 20
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 360
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_usp02_body_01": {
-    "url": "https://oem.re/0WoEsSM",
     "level": 70,
     "tier": "T4",
     "partType": 0,
@@ -16462,7 +17474,8 @@ export const equipment = {
           "amount": 5
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0WoEsSM"
   },
   "item_equip_t4_suit_usp02_body_03": {
     "level": 70,
@@ -16583,7 +17596,6 @@ export const equipment = {
     "url": "https://oem.re/0nzgEg7"
   },
   "item_equip_t4_suit_usp02_edc_01": {
-    "url": "https://oem.re/0WoEsSM",
     "level": 70,
     "tier": "T4",
     "partType": 2,
@@ -16674,10 +17686,10 @@ export const equipment = {
           "amount": 5
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0WoEsSM"
   },
   "item_equip_t4_suit_usp02_edc_02": {
-    "url": "https://oem.re/0WoEsSM",
     "level": 70,
     "tier": "T4",
     "partType": 2,
@@ -16768,10 +17780,10 @@ export const equipment = {
           "amount": 5
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0WoEsSM"
   },
   "item_equip_t4_suit_usp02_edc_03": {
-    "url": "https://oem.re/1b0BkJu",
     "level": 70,
     "tier": "T4",
     "partType": 2,
@@ -16862,7 +17874,8 @@ export const equipment = {
           "amount": 5
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/1b0BkJu"
   },
   "item_equip_t4_suit_usp02_edc_04": {
     "level": 70,
@@ -16918,8 +17931,135 @@ export const equipment = {
     ],
     "url": "https://oem.re/0nzgEg7"
   },
+  "item_equip_t4_suit_usp02_edc_05": {
+    "url": "https://oem.re/0TQF7uk",
+    "level": 70,
+    "tier": "T4.3",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_usp02",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "UltimateSpGainScalar",
+        "values": [
+          0.2464285714285714,
+          0.2710714340209961,
+          0.29571428894996643,
+          0.32035714387893677
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "hp_up": 1000,
+      "dmg_up": 0.1599999964237213,
+      "duration": 15
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 360
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 50
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_suit_usp02_edc_06": {
+    "url": "https://oem.re/0TQF7uk",
+    "level": 70,
+    "tier": "T4.3",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_usp02",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "UltimateSpGainScalar",
+        "values": [
+          0.2464285714285714,
+          0.2710714340209961,
+          0.29571428894996643,
+          0.32035714387893677
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "hp_up": 1000,
+      "dmg_up": 0.1599999964237213,
+      "duration": 15
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 360
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 50
+        }
+      ]
+    ]
+  },
   "item_equip_t4_suit_usp02_hand_01": {
-    "url": "https://oem.re/0WoEsSM",
     "level": 70,
     "tier": "T4",
     "partType": 1,
@@ -17010,10 +18150,10 @@ export const equipment = {
           "amount": 5
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0WoEsSM"
   },
   "item_equip_t4_suit_usp02_hand_02": {
-    "url": "https://oem.re/0WoEsSM",
     "level": 70,
     "tier": "T4",
     "partType": 1,
@@ -17104,7 +18244,8 @@ export const equipment = {
           "amount": 5
         }
       ]
-    ]
+    ],
+    "url": "https://oem.re/0WoEsSM"
   },
   "item_equip_t4_suit_usp02_hand_03": {
     "level": 70,

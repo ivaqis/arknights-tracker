@@ -376,7 +376,11 @@
     "special_1_4_1": "Đứng Canh Khe Nứt Bứt Rứt Nhớ Quê",
     "weponbox_1_4_1": "Gói Rút Cấp Quân Dụng",
     "special_1_4_2": "Lời Chào Từ Sao Mai",
-    "weponbox_1_4_2": "Gói Rút Chói Rạng"
+    "weponbox_1_4_2": "Gói Rút Chói Rạng",
+    "special_1_5_1": "Cuộc Săn Mùa Đông",
+    "weponbox_1_5_1": "Gói Rút Cực Hàn",
+    "weponbox_1_5_2": "Gói Rút Thẻ Họa Sĩ",
+    "special_1_5_2": "Sắc Màu Rực Rỡ"
   },
   "pages": {
     "home": "Trang chủ",
@@ -472,7 +476,17 @@
     "gazeNorthToTheRiftSignIn": "Điểm Danh Dõi Về Khe Nứt Phương Bắc",
     "protocolInvitationTheReturn": "Lời Mời Giao Thức: Trở Về",
     "bedazzlingDawnstarSignIn": "Điểm Danh Ánh Sao Mai Lộng Lẫy",
-    "aForestMantledInSnow": "Rừng Khoác Áo Tuyết"
+    "aForestMantledInSnow": "Rừng Khoác Áo Tuyết",
+    "seasonOfVirtuality": "Mùa Hư Ảo",
+    "seasonOfIllusion": "Mùa Ảo Mộng",
+    "runnersSteeplechase": "Giải Chạy Vượt Chướng Ngại",
+    "snowOverDeepWoods": "Tuyết Phủ Rừng Sâu",
+    "aicSupportChubbyLungAttacks": "Hỗ Trợ KPH: Chubby Lung Tấn Công",
+    "ridgelineFlowsOfAutumnSignIn": "Điểm Danh Dòng Thu Trên Sống Núi",
+    "trialOfTheBow": "Khảo Nghiệm Cung Thủ",
+    "protocolPassGloomwald": "Thẻ Giao Thức: Gloomwald",
+    "orbipomMerge": "OrbiPom! HỢP NHẤT!",
+    "fletchedIrontipSignIn": "Điểm Danh Thiết Vũ Tiễn"
   },
   "mouths": {
     "january": "Tháng 1",
@@ -922,7 +936,26 @@
     "heavyXiragen": "Khí Xiranite Đậm Đặc",
     "crimsonSpearleaf": "Thương Diệp Huyết Sắc",
     "talosCap": "Nấm Mũ Talos",
-    "protocolith": "Thạch Giao Thức"
+    "protocolith": "Thạch Giao Thức",
+    "caudalGoldscales": "Vảy Đuôi Hoàng Kim",
+    "yazhenSeeds": "Hạt Mầm Lá Kim",
+    "reedRyeSeeds": "Hạt Hắc Mạch",
+    "tartpepperSeeds": "Hạt Ớt Chua",
+    "redjadeGinsengSeeds": "Hạt Hồng Sâm",
+    "amberRiceSeeds": "Hạt Gạo Hổ Phách",
+    "protoXiranCuprium": "Xiranite-Đồng Nguyên Mẫu",
+    "protoXiranCupriumPart": "Mảnh Xiranite-Đồng Nguyên Mẫu",
+    "protoXiranCupriumGas": "Khí Xiranite-Đồng Nguyên Mẫu",
+    "protoXiranCupriumFrame": "Khung Xiranite-Đồng Nguyên Mẫu",
+    "protoCupriumFrame": "Khung Đồng Nguyên Mẫu",
+    "protoChubbyLungShell": "Vỏ Chubby Lung Nguyên Mẫu",
+    "protoChubbyLungHeavyShell": "Vỏ Nặng Chubby Lung Nguyên Mẫu",
+    "heavyXiraniteChubbyLung": "Xiranite Nặng Chubby Lung",
+    "protoHeavyXiranite": "Xiranite Nặng Nguyên Mẫu",
+    "xiraniteChubbyLung": "Xiranite Chubby Lung",
+    "protoXiranite": "Xiranite Nguyên Mẫu",
+    "tenderMoss": "Rêu Non",
+    "slugSprig": "Mầm Sên"
   },
   "common": {
     "copy": "Sao chép",
@@ -1160,7 +1193,8 @@
     "mifu": "Mi Fu",
     "camille": "Camille",
     "arcane": "Arcane",
-    "liino": "Liino"
+    "liino": "Liino",
+    "typhoeus": "Typhoeus"
   },
   "weaponsList": {
     "custom_weapon": "Vũ Khí Tùy Chỉnh",
@@ -1240,7 +1274,9 @@
     "junctionPoint": "Giao Thoa",
     "goldenAge": "Thời Đại Hoàng Kim",
     "farsight": "Viễn Kiến",
-    "bedazzlingNightDebut": "Màn Ra Mắt Đêm Chói Rạng"
+    "bedazzlingNightDebut": "Màn Ra Mắt Đêm Chói Rạng",
+    "umbraOfFrigidEventide": "Hàn Ảnh Mộ Dạ",
+    "sufferingsEnd": "Hồi Kết Khổ Đau"
   },
   "cookies": {
     "title": "Chúng tôi sử dụng cookie",
@@ -1358,7 +1394,14 @@
     "world_energy_point11_4": "Năng Lượng Bồi Tích Dữ Dội: Khu Cấm Bắc Võ Lăng",
     "world_energy_point11_5": "Năng Lượng Bồi Tích Dữ Dội: Khu Cấm Bắc Võ Lăng",
     "world_energy_point11_6": "Năng Lượng Bồi Tích Dữ Dội: Khu Cấm Bắc Võ Lăng",
-    "world_energy_point11_7": "Năng Lượng Bồi Tích Dữ Dội: Khu Cấm Bắc Võ Lăng"
+    "world_energy_point11_7": "Năng Lượng Bồi Tích Dữ Dội: Khu Cấm Bắc Võ Lăng",
+    "world_energy_point12_1": "Năng Lượng Bồi Tích: Rừng Tuyết",
+    "world_energy_point12_2": "Năng Lượng Bồi Tích: Rừng Tuyết",
+    "world_energy_point12_3": "Năng Lượng Bồi Tích: Rừng Tuyết",
+    "world_energy_point12_4": "Năng Lượng Bồi Tích Dữ Dội: Rừng Tuyết",
+    "world_energy_point12_5": "Năng Lượng Bồi Tích Dữ Dội: Rừng Tuyết",
+    "world_energy_point12_6": "Năng Lượng Bồi Tích Dữ Dội: Rừng Tuyết",
+    "world_energy_point12_7": "Năng Lượng Bồi Tích Dữ Dội: Rừng Tuyết"
   },
   "enemies": {
     "eny_0007_mimicw": "Nidwyrm Đào Hầm",
@@ -1444,7 +1487,15 @@
     "eny_0122_kltdbud": "Bóng Nhiễm Khuẩn ĐĐNY Tinh Anh",
     "eny_0123_klcap": "Bóng Nhiễm Khuẩn ĐĐNY Đao Thủ",
     "eny_0124_kltdcap": "Bóng Nhiễm Khuẩn ĐĐNY Trưởng Nhóm",
-    "eny_0125_fdcentur": "Alleikhreos, Thiên Phu Trưởng"
+    "eny_0125_fdcentur": "Alleikhreos, Thiên Phu Trưởng",
+    "eny_0127_bigents": "Cơn Thịnh Nộ Của Gloomwald",
+    "eny_0128_babyents": "Mộc Ngẫu Lãng Du",
+    "eny_0129_slwood": "Mộc Ngẫu Dạng Sên",
+    "tatget_001_normal": "Bia Cơ Bản",
+    "tatget_002_endurance": "Bia Tiêu Chuẩn",
+    "tatget_003_expand": "Bia Chắn",
+    "tatget_004_armor": "Bia Hạng Nặng",
+    "tatget_005_shield": "Khiên Năng Lượng"
   },
   "essencesPage": {
     "optimizer": "Tối ưu hóa Cày cuốc",
@@ -1725,7 +1776,22 @@
     "item_equip_t4_suit_usp02_body_04": "Khinh Giáp Xiranite Vĩnh Cửu T1",
     "item_equip_t4_suit_usp02_edc_04": "Phiến Gia Cố Xiranite Vĩnh Cửu",
     "item_equip_t4_suit_usp02_hand_03": "Băng Quấn Xiranite Vĩnh Cửu",
-    "item_equip_t4_suit_usp02_hand_04": "Tay Giáp Xiranite Vĩnh Cửu"
+    "item_equip_t4_suit_usp02_hand_04": "Tay Giáp Xiranite Vĩnh Cửu",
+    "item_equip_t4_parts_wuling00_body_04": "Giáp Đột Kích Thực Địa Khu Phức Hợp",
+    "item_equip_t4_parts_wuling00_body_05": "Giáp Y Tế Thực Địa Khu Phức Hợp",
+    "item_equip_t4_parts_wuling00_edc_04": "Dao Đẩy Đột Kích Thực Địa Khu Phức Hợp",
+    "item_equip_t4_parts_wuling00_edc_05": "Pin Dự Phòng Thực Địa Khu Phức Hợp",
+    "item_equip_t4_parts_wuling00_hand_04": "Găng Tay Đột Kích Thực Địa Khu Phức Hợp",
+    "item_equip_t4_parts_wuling00_hand_05": "Găng Tay Y Tế Thực Địa Khu Phức Hợp",
+    "item_equip_t4_suit_burst01_body_02": "Giáp Hạng Nhẹ Triều Hạ T1",
+    "item_equip_t4_suit_burst01_body_03": "Giáp Hạng Nặng Sóng Dâng",
+    "item_equip_t4_suit_burst01_edc_03": "Đuốc Cắt U Ám T1",
+    "item_equip_t4_suit_burst01_hand_02": "Găng Tay Đầm Lầy",
+    "item_equip_t4_suit_spellburst_body_01": "Giáp Thành Lũy Thâm Sâu",
+    "item_equip_t4_suit_spellburst_edc_01": "Bộ Đàm Thành Lũy Thâm Sâu",
+    "item_equip_t4_suit_spellburst_hand_01": "Găng Tay Thành Lũy Thâm Sâu",
+    "item_equip_t4_suit_usp02_edc_05": "Phiến Gia Cố Xiranite Vĩnh Cửu T1",
+    "item_equip_t4_suit_usp02_edc_06": "Phiến Nặng Xiranite Vĩnh Cửu"
   },
   "packs": {
     "none": "Không Theo Bộ",
@@ -1775,7 +1841,8 @@
     "suit_combo_cd01": "Thanh Ba",
     "suit_expend_spell01": "Xiranflow",
     "suit_crush_fracture": "Lão Luyện",
-    "suit_generaltype": "Thực Địa Khu Phức Hợp"
+    "suit_generaltype": "Thực Địa Khu Phức Hợp",
+    "suit_spellburst": "Thành Lũy Thâm Sâu"
   },
   "equipmentTypes": {
     "body": "Giáp",
@@ -1843,7 +1910,8 @@
     "wiki_group_monster_hongshan": "Hải Tặc Cangzei",
     "wiki_group_monster_animal": "Động Vật Hoang Dã",
     "wiki_group_monster_kl": "Bóng Nhiễm Khuẩn",
-    "wiki_group_monster_js": "Foundite"
+    "wiki_group_monster_js": "Foundite",
+    "wiki_group_monster_witchcraft": "Tạo Vật Phù Thuật"
   },
   "resitances": {
     "heatRez": "Kháng Nhiệt",
@@ -2615,6 +2683,7 @@
   },
   "audio_player": {
     "playback_error": "Không thể tải âm thanh",
+    "not_found": "Không tìm thấy âm thanh (404)",
     "open_raw": "Open raw"
   }
 }

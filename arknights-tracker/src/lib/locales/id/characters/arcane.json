@@ -85,7 +85,7 @@
         "imprisonmentAndSusceptibilityDurationS": "Durasi Imprisonment dan Susceptibility (dtk)",
         "baseSusceptibility": "Susceptibility Dasar",
         "maxBonusSusceptibilityFromWill": "Bonus Maks Susceptibility dari Will",
-        "willRequiredForMaxBonusSusceptibility": "Will yang Dibutuhkan untuk Bonus Maks Susceptibility"
+        "willForMaxBonusSusceptibility": "Will untuk Bonus MAKS Susceptibility"
       },
       "baseDmgMultiplier": "Pengganda DMG Dasar",
       "baseStagger": "Stagger Dasar",
@@ -218,7 +218,7 @@
       },
       {
         "voId": "chr_0032_lizhiyan_chrup_skill_01",
-        "title": "Aktivasi Matriks Kemampuan",
+        "title": "Aktivasi Nodus Talent",
         "text": "Asah dirimu hingga mencapai kesempurnaan, agar bisa menang dengan tenang dalam situasi apa pun."
       },
       {

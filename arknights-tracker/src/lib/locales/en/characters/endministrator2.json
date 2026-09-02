@@ -80,9 +80,9 @@
       "levels": []
     },
     "files": {
-      "main": "<@profile.key>CODENAME: Endministrator \nGENDER: ■■ \nAUTHENTICATION: ■■ \nDOB: ■■ \nRACE: ■■ \n\nYou remember nothing. \nYour memories lie in fragments, like dreams crushed to dust, disappearing at the slightest thought. \nSometimes it makes you unsettled, sometimes uneasy, yet it grants you a quiet moment to breathe and think. \nMost of the time, however, there is no pause for doubt. You simply just trust those before you and press on. \nPerhaps you have tucked your past memories away, even if just for a little while... \n...and so, you remember nothing. </>",
-      "humanResources": "<@profile.key>You have lived through all of Talos-II's history...</>",
-      "file1": "<@profile.key>But ... what will you make of its future?</>"
+      "main": "CODENAME: Endministrator \nGENDER: ■■ \nAUTHENTICATION: ■■ \nDOB: ■■ \nRACE: ■■ \n\nYou remember nothing. \nYour memories lie in fragments, like dreams crushed to dust, disappearing at the slightest thought. \nSometimes it makes you unsettled, sometimes uneasy, yet it grants you a quiet moment to breathe and think. \nMost of the time, however, there is no pause for doubt. You simply just trust those before you and press on. \nPerhaps you have tucked your past memories away, even if just for a little while... \n...and so, you remember nothing.",
+      "humanResources": "You have lived through all of Talos-II's history...",
+      "file1": "But ... what will you make of its future?"
     },
     "tags": {
       "expert1": {
@@ -127,7 +127,7 @@
       },
       {
         "voId": "chr_0002_endminm_chrup_skill_01",
-        "title": "Ability Matrix Activation",
+        "title": "Talent Node Activation",
         "text": "I recognize this feeling..."
       },
       {

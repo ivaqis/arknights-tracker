@@ -372,7 +372,11 @@
     "special_1_4_1": "臨淵望北",
     "weponbox_1_4_1": "戦列・申請",
     "special_1_4_2": "キラキラ綺羅星",
-    "weponbox_1_4_2": "明星・申請"
+    "weponbox_1_4_2": "明星・申請",
+    "special_1_5_1": "冬狩",
+    "weponbox_1_5_1": "極寒・申請",
+    "weponbox_1_5_2": "点描・申請",
+    "special_1_5_2": "超爆盛れカラフル"
   },
   "pages": {
     "home": "ホーム",
@@ -467,7 +471,17 @@
     "gazeNorthToTheRiftSignIn": "臨淵北望スタンプ",
     "protocolInvitationTheReturn": "協約招待：帰還",
     "bedazzlingDawnstarSignIn": "煌めく明星スタンプ",
-    "aForestMantledInSnow": "深き森の雪景スタンプ"
+    "aForestMantledInSnow": "深き森の雪景スタンプ",
+    "seasonOfVirtuality": "虚像シーズン",
+    "seasonOfIllusion": "錯覚シーズン",
+    "runnersSteeplechase": "ランナー競技会",
+    "snowOverDeepWoods": "雪降る深き森",
+    "aicSupportChubbyLungAttacks": "集成支援・龍泡泡出撃",
+    "ridgelineFlowsOfAutumnSignIn": "「陵水の秋」スタンプ",
+    "trialOfTheBow": "弓の試練",
+    "protocolPassGloomwald": "協約通行証・樹海",
+    "orbipomMerge": "バブル、合体！",
+    "fletchedIrontipSignIn": "「弓の練磨」スタンプ"
   },
   "mouths": {
     "january": "1月",
@@ -880,7 +894,26 @@
     "heavyXiragen": "重息壌ガス",
     "crimsonSpearleaf": "赤槍葉",
     "talosCap": "タロス茸",
-    "protocolith": "協約紋石"
+    "protocolith": "協約紋石",
+    "caudalGoldscales": "尾先の金鱗",
+    "yazhenSeeds": "芽針の種",
+    "reedRyeSeeds": "灰麦の種",
+    "tartpepperSeeds": "苦葉椒の種",
+    "redjadeGinsengSeeds": "玉葉人参の種",
+    "amberRiceSeeds": "金石稲の種",
+    "protoXiranCuprium": "実験用息壌銅塊",
+    "protoXiranCupriumPart": "実験用息壌銅部品",
+    "protoXiranCupriumGas": "実験用息壌銅ガス",
+    "protoXiranCupriumFrame": "実験用息壌銅フレーム",
+    "protoCupriumFrame": "実験用銅フレーム",
+    "protoChubbyLungShell": "実験用龍泡泡シェル",
+    "protoChubbyLungHeavyShell": "実験用龍泡泡ヘビーシェル",
+    "heavyXiraniteChubbyLung": "重息壌龍泡泡",
+    "protoHeavyXiranite": "実験用重息壌ブロック",
+    "xiraniteChubbyLung": "息壌龍泡泡",
+    "protoXiranite": "実験用息壌ブロック",
+    "tenderMoss": "柔らかな苔",
+    "slugSprig": "触角の若枝"
   },
   "common": {
     "copy": "コピー",
@@ -1117,7 +1150,8 @@
     "mifu": "ミ・フ",
     "camille": "カミーユ",
     "arcane": "オクギ",
-    "liino": "リーノ"
+    "liino": "リーノ",
+    "typhoeus": "ティフォロス"
   },
   "weaponsList": {
     "custom_weapon": "カスタム武器",
@@ -1197,7 +1231,9 @@
     "junctionPoint": "連結点",
     "goldenAge": "黄金時代",
     "farsight": "ファーサイト",
-    "bedazzlingNightDebut": "プリズムナイトデビュー"
+    "bedazzlingNightDebut": "プリズムナイトデビュー",
+    "umbraOfFrigidEventide": "寒夜の影",
+    "sufferingsEnd": "苦難の果"
   },
   "cookies": {
     "title": "クッキーを使用しています",
@@ -1315,7 +1351,14 @@
     "world_energy_point11_4": "重度超域活性点・北部封鎖区域",
     "world_energy_point11_5": "重度超域活性点・北部封鎖区域",
     "world_energy_point11_6": "重度超域活性点・北部封鎖区域",
-    "world_energy_point11_7": "重度超域活性点・北部封鎖区域"
+    "world_energy_point11_7": "重度超域活性点・北部封鎖区域",
+    "world_energy_point12_1": "超域活性点・雪松林",
+    "world_energy_point12_2": "超域活性点・雪松林",
+    "world_energy_point12_3": "超域活性点・雪松林",
+    "world_energy_point12_4": "重度超域活性点・雪松林",
+    "world_energy_point12_5": "重度超域活性点・雪松林",
+    "world_energy_point12_6": "重度超域活性点・雪松林",
+    "world_energy_point12_7": "重度超域活性点・雪松林"
   },
   "enemies": {
     "eny_0007_mimicw": "潜地蛟獣",
@@ -1401,7 +1444,15 @@
     "eny_0122_kltdbud": "応龍精鋭先鋒の蝕影",
     "eny_0123_klcap": "応龍突撃兵の蝕影",
     "eny_0124_kltdcap": "応龍隊長の蝕影",
-    "eny_0125_fdcentur": "千人隊長アレイクレウス"
+    "eny_0125_fdcentur": "千人隊長アレイクレウス",
+    "eny_0127_bigents": "樹海の怒",
+    "eny_0128_babyents": "巡回ゴーレム",
+    "eny_0129_slwood": "ムシ型ゴーレム",
+    "tatget_001_normal": "的・入門",
+    "tatget_002_endurance": "的・標準",
+    "tatget_003_expand": "的・妨害",
+    "tatget_004_armor": "的・重量型",
+    "tatget_005_shield": "エネルギーシールド"
   },
   "essencesPage": {
     "optimizer": "育成オプティマイザー",
@@ -1682,7 +1733,22 @@
     "item_equip_t4_suit_usp02_body_04": "流転軽防具Ⅰ",
     "item_equip_t4_suit_usp02_edc_04": "流転補強板",
     "item_equip_t4_suit_usp02_hand_03": "流転ハンドガード",
-    "item_equip_t4_suit_usp02_hand_04": "流転グローブ"
+    "item_equip_t4_suit_usp02_hand_04": "流転グローブ",
+    "item_equip_t4_parts_wuling00_body_04": "集成訓練強襲防具",
+    "item_equip_t4_parts_wuling00_body_05": "集成訓練医療防具",
+    "item_equip_t4_parts_wuling00_edc_04": "集成訓練強襲ナイフ",
+    "item_equip_t4_parts_wuling00_edc_05": "集成訓練電力プラグ",
+    "item_equip_t4_parts_wuling00_hand_04": "集成訓練強襲プロテクター",
+    "item_equip_t4_parts_wuling00_hand_05": "集成訓練医療プロテクター",
+    "item_equip_t4_suit_burst01_body_02": "干潮軽防具Ⅰ",
+    "item_equip_t4_suit_burst01_body_03": "奔浪ヘビーアーマー",
+    "item_equip_t4_suit_burst01_edc_03": "濁流ホットカッターⅠ",
+    "item_equip_t4_suit_burst01_hand_02": "沈水グローブ",
+    "item_equip_t4_suit_spellburst_body_01": "天険防具",
+    "item_equip_t4_suit_spellburst_edc_01": "天険通信機",
+    "item_equip_t4_suit_spellburst_hand_01": "天険ガントレット",
+    "item_equip_t4_suit_usp02_edc_05": "流転補強板Ⅰ",
+    "item_equip_t4_suit_usp02_edc_06": "流転重量プレート"
   },
   "packs": {
     "none": "セットなし",
@@ -1732,7 +1798,8 @@
     "suit_combo_cd01": "清波",
     "suit_expend_spell01": "壌流",
     "suit_crush_fracture": "旧鋒",
-    "suit_generaltype": "集成訓練"
+    "suit_generaltype": "集成訓練",
+    "suit_spellburst": "天険"
   },
   "equipmentTypes": {
     "body": "胴",
@@ -1800,7 +1867,8 @@
     "wiki_group_monster_hongshan": "滄賊",
     "wiki_group_monster_animal": "野生の生物",
     "wiki_group_monster_kl": "蝕影",
-    "wiki_group_monster_js": "造裔"
+    "wiki_group_monster_js": "造裔",
+    "wiki_group_monster_witchcraft": "巫術の造物"
   },
   "resitances": {
     "heatRez": "灼熱耐性",
@@ -2572,6 +2640,7 @@
   },
   "audio_player": {
     "playback_error": "音声の読み込みに失敗しました",
+    "not_found": "音声が見つかりません (404)",
     "open_raw": "Open raw"
   }
 }

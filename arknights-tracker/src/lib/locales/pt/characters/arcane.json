@@ -65,11 +65,11 @@
       "description": {
         "conditionName1": "Conjunto Arcane: INT",
         "conditionDesc1": "/*Inteligência (<@ba.vup>{floor:deck_wisd:0}</>) ≥ Vontade (<@ba.vup>{floor:deck_will:0}</>), <@ba.key>Conjunto Arcane: INT</> está ATIVO.*/",
-        "conditionPostDesc1": "ACIONADOR DO COMBO: Quando <#ba.naturalinflict>Inflição da Natureza</> ou pelo menos 2 acúmulos de <#ba.spellinflict>Inflição de Artes do tipo não Natureza</> são aplicados ao inimigo.\nArcane ataca o alvo e prepara 4 <@ba.key>Dublês Táticos</> que aplicam <#ba.naturalvul>Suscetibilidade à Natureza</> e <#ba.crystvul>Suscetibilidade Crio</> e causam <@ba.natur>DNO Natureza</> ao alvo e aos inimigos próximos. Além disso, aplica <@ba.key>Aprisionamento</> ao alvo em questão. Quando o <@ba.key>Aprisionamento</> terminar, os <@ba.key>Dublês Táticos</> atacarão o alvo em questão para causar DNO Explosão.\n<@ba.key>Aprisionamento</>: uma penalidade que deixa todas as ações mais lentas.\n<@ba.key>Conjunto Arcane: INT</>:\n- Atingir um inimigo sob <@ba.key>Aprisionamento</> com a habilidade de batalha de Arcane <#ba.return>devolve</> PH, encerra o <@ba.key>Aprisionamento</> mais cedo, causa DNO Explosão, aplica outra instância de <#ba.naturalvul>Suscetibilidade à Natureza</> e <#ba.crystvul>Suscetibilidade Crio</> e causa vários acertos de DNO de bônus após um curto atraso.\n- O tempo de recarga do Combo de Habilidades é menor.",
+        "conditionPostDesc1": "ACIONADOR DO COMBO: Quando <#ba.naturalinflict>Inflição da Natureza</> ou pelo menos 2 acúmulos de <#ba.spellinflict>Inflição de Artes do tipo não Natureza</> são aplicados ao inimigo.\nArcane avança em direção ao alvo e prepara 4 <@ba.key>Dublês Táticos</> que aplicam <#ba.naturalvul>Suscetibilidade à Natureza</> e <#ba.crystvul>Suscetibilidade Crio</> e causam <@ba.natur>DNO Natureza</> ao alvo e aos inimigos próximos. Além disso, aplica <@ba.key>Aprisionamento</> ao alvo em questão. Quando o <@ba.key>Aprisionamento</> terminar, os <@ba.key>Dublês Táticos</> atacarão o alvo em questão para causar DNO Explosão.\n<@ba.key>Aprisionamento</>: uma penalidade que deixa todas as ações mais lentas.\n<@ba.key>Conjunto Arcane: INT</>:\n- Atingir um inimigo sob <@ba.key>Aprisionamento</> com a habilidade de batalha de Arcane <#ba.return>devolve</> PH, encerra o <@ba.key>Aprisionamento</> mais cedo, causa DNO Explosão, aplica outra instância de <#ba.naturalvul>Suscetibilidade à Natureza</> e <#ba.crystvul>Suscetibilidade Crio</> e causa vários acertos de DNO de bônus após um curto atraso.\n- O tempo de recarga do Combo de Habilidades é menor.",
         "conditionDescInactive1": "/*Inteligência (<@ba.vup>{floor:deck_wisd:0}</>) < Vontade (<@ba.vup>{floor:deck_will:0}</>), <@ba.key>Conjunto Arcane: INT</> NÃO está ATIVO.*/",
         "conditionName2": "Conjunto Arcane: VON",
         "conditionDesc2": "/*Vontade (<@ba.vup>{floor:deck_will:0}</>) > Inteligência (<@ba.vup>{floor:deck_wisd:0}</>), <@ba.key>Conjunto Arcane: VON</> está ATIVO.*/",
-        "conditionPostDesc2": "ACIONADOR DO COMBO: Quando uma <#ba.spellinflict>Inflição de Artes</> é aplicada a um inimigo.\nArcane ataca o alvo e prepara 4 <@ba.key>Dublês Táticos</> que causam <@ba.natur>DNO Natureza</> e aplicam outro acúmulo de <#ba.spellinflict>Inflição de Artes</> do mesmo elemento, <#ba.naturalvul>Suscetibilidade à Natureza</> e <#ba.crystvul>Suscetibilidade Crio</> ao alvo e aos inimigos próximos. Além disso, aplica <@ba.key>Aprisionamento</> ao alvo em questão. Quando o <@ba.key>Aprisionamento</> terminar, os <@ba.key>Dublês Táticos</> atacarão o alvo em questão para causar DNO Explosão.\n<@ba.key>Aprisionamento</>: uma penalização que torna todas as ações mais lentas.\n<@ba.key>Conjunto Arcane: VON</>:\n- Aplicar <@ba.key>Aprisionamento</> via conjuração de um combo de habilidades também irá <@ba.key>atrair</> inimigos próximo ao alvo.\n- O atributo de Vontade pode aumentar ainda mais os efeitos de <#ba.naturalvul>Suscetibilidade à Natureza</> e <#ba.crystvul>Suscetibilidade Crio</> aplicados pelo combo de habilidades.",
+        "conditionPostDesc2": "ACIONADOR DO COMBO: Quando uma <#ba.spellinflict>Inflição de Artes</> é aplicada a um inimigo.\nArcane avança em direção ao alvo e prepara 4 <@ba.key>Dublês Táticos</> que causam <@ba.natur>DNO Natureza</> e aplicam outro acúmulo de <#ba.spellinflict>Inflição de Artes</> do mesmo elemento, <#ba.naturalvul>Suscetibilidade à Natureza</> e <#ba.crystvul>Suscetibilidade Crio</> ao alvo e aos inimigos próximos. Além disso, aplica <@ba.key>Aprisionamento</> ao alvo em questão. Quando o <@ba.key>Aprisionamento</> terminar, os <@ba.key>Dublês Táticos</> atacarão o alvo em questão para causar DNO Explosão.\n<@ba.key>Aprisionamento</>: uma penalização que torna todas as ações mais lentas.\n<@ba.key>Conjunto Arcane: VON</>:\n- Aplicar <@ba.key>Aprisionamento</> via conjuração de um combo de habilidades também irá <@ba.key>atrair</> inimigos próximo ao alvo.\n- O atributo de Vontade pode aumentar ainda mais os efeitos de <#ba.naturalvul>Suscetibilidade à Natureza</> e <#ba.crystvul>Suscetibilidade Crio</> aplicados pelo combo de habilidades.",
         "conditionDescInactive2": "/*Vontade (<@ba.vup>{floor:deck_will:0}</>) ≤ Inteligência (<@ba.vup>{floor:deck_wisd:0}</>), <@ba.key>Conjunto Arcane: VON</> NÃO está ATIVO.*/"
       },
       "condition1": {
@@ -85,7 +85,7 @@
         "imprisonmentAndSusceptibilityDurationS": "Duração do Aprisionamento e da Suscetibilidade (s)",
         "baseSusceptibility": "Suscetibilidade Base",
         "maxBonusSusceptibilityFromWill": "Suscetibilidade de Bônus Máxima por Vontade",
-        "willRequiredForMaxBonusSusceptibility": "Vontade Necessária para Suscetibilidade de Bônus Máxima"
+        "willForMaxBonusSusceptibility": "Vontade para Suscetibilidade de Bônus MÁX"
       },
       "baseDmgMultiplier": "Multiplicador DNO Base",
       "baseStagger": "Desorientação Base",
@@ -218,7 +218,7 @@
       },
       {
         "voId": "chr_0032_lizhiyan_chrup_skill_01",
-        "title": "Ativação da Matriz de Capacidade",
+        "title": "Ativação do Nó de Talentos",
         "text": "Aprimore-se até a perfeição extrema e você poderá prevalecer com calma, não importa a situação."
       },
       {
@@ -608,7 +608,7 @@
       "name": "Coração de Ferrium Gelado"
     },
     "potential3": {
-      "description": "Talento <@ba.key>Aprimoramento de Armas</> melhorado:A \n<#ba.corrupt>Corrosão</> aplicada por Arcane dura <@ba.vup>{duration_add:0}</> s a mais, e a Redução de Resistência Máxima é aumentada em <@ba.vup>{corrupt_rate:0%}</> da original.",
+      "description": "Talento <@ba.key>Aprimoramento de Armas</> melhorado:\nA <#ba.corrupt>Corrosão</> aplicada por Arcane dura <@ba.vup>{duration_add:0}</> s a mais, e a Redução de Resistência Máxima é aumentada em <@ba.vup>{corrupt_rate:0%}</> da original.",
       "name": "Portadora da Pedra"
     },
     "potential4": {

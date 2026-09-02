@@ -23,6 +23,14 @@
     "name": "物理異常 - 浮遊",
     "desc": "敵に<#ba.noguard>クラッシュ</>を付与する。敵がすでに<#ba.noguard>クラッシュ</>状態の場合、<#ba.noguard>クラッシュ</>段階が1増加し、<@ba.phy>物理ダメージ</>と<@ba.poise>ブレイク値</>を与える。"
   },
+  "ba.arrowenergy": {
+    "name": "啓示",
+    "desc": "ティフォロスは敵の<@ba.naturalinflict>自然付着</>を消費するか、敵が<#ba.naturalburst>自然爆発</>を受けることで啓示を蓄積できる。連携技を発動すると、蓄積した啓示を<#ba.arrownum>猟矢</>に変換する。"
+  },
+  "ba.arrownum": {
+    "name": "猟矢",
+    "desc": "ティフォロスは<@ba.key>浮遊</>状態のとき、猟矢が消費され、自身の攻撃が強化される。そのことによって、より高いダメージを与えられると同時に、追加で<#ba.naturalburst>自然爆発</>を発動させることもできる。"
+  },
   "ba.burning": {
     "name": "アーツ異常 - 燃焼",
     "desc": "<@ba.burning>燃焼</>状態の敵は、持続的に<@ba.fire>灼熱ダメージ</>を受ける。\n<@ba.burning>燃焼</>=他の<#ba.spellinflict>アーツ付着</>（<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>）+<@ba.fireinflict>灼熱付着</>"
