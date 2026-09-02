@@ -572,7 +572,7 @@
   "eny_0105_wgslime2": {
     "name": "Coulifange δ",
     "nickname": "Coulifange δ",
-    "description": "Le « tholéroygran » (ID d'archive : ACM311δ) est une variante énergisée de l'ACM311. Il exploite des canaux énergétiques uniques pour maintenir une température homéostatique bien inférieure aux points de congélation de la matière qui le compose.",
+    "description": "Le « dinedon tholéroygran » (ID d'archive : ACM311δ) est une variante énergisée de l'ACM311. Il exploite des canaux énergétiques uniques pour maintenir une température homéostatique bien inférieure aux points de congélation de la matière qui le compose.",
     "abilities": [
       "L'ennemi peut rapidement réduire la distance. Ses attaques infligent une altération cryogénique si elles touchent les opérateurs."
     ]
@@ -713,6 +713,72 @@
     "abilities": [
       "Lorsque sa jauge de Déséquilibre atteint le nœud de déséquilibre, Alleikhreos le Chiliarque lâche une arme fondamentale. Approchez-vous-en avec l'opérateur contrôlé pour la ramasser et l'utiliser contre lui.",
       "Lorsqu'il est en difficulté, Alleikhreos le Chiliarque invoque des doubles depuis la faille pour attaquer ses adversaires."
+    ]
+  },
+  "eny_0127_bigents": {
+    "name": "Rage de Gloomwald",
+    "nickname": "Rage de Gloomwald",
+    "description": "Une marionnette de combat géante créée par une prêtresse des neiges. Lorsque sa maîtresse lui a ordonné de parcourir sans s'arrêter l'immense royaume brumeux, elle a obéi, jusqu'au jour où elle a compris qu'elle avait été abandonnée. Elle est alors devenue le réceptacle de toute la colère d'une profonde forêt enneigée.",
+    "abilities": [
+      "Rage de Gloomwald laissera des lianes au sol. Tout opérateur qui marche dessus subit des DÉG continus et est ralenti.",
+      "Rage de Gloomwald invoquera des vagabonds sylvains pour lui venir en aide."
+    ]
+  },
+  "eny_0128_babyents": {
+    "name": "Vagabond sylvain",
+    "nickname": "Vagabond sylvain",
+    "description": "Une petite marionnette de combat créée par une prêtresse des neiges. Elle est chargée de protéger la forêt enneigée. Ne sous-estimez pas ses poings de bois : ils peuvent briser la pierre sans effort.",
+    "abilities": [
+      "Les vagabonds sylvains sans cumul de bouclier piègent les opérateurs afin d'absorber leur énergie et de restaurer leurs cumuls de bouclier.",
+      "Les vagabonds sylvains lanceront des attaques coordonnées."
+    ]
+  },
+  "eny_0129_slwood": {
+    "name": "Limace sylvaine",
+    "nickname": "Limace sylvaine",
+    "description": "Une marionnette de combat créée par une prêtresse des neiges. Sa forme rappelle celle de la limace d'originium. Cette créature sylvaine se déplace rapidement et n'a pas son pareil pour creuser.",
+    "abilities": [
+      "Les limaces sylvaines peuvent s'enfouir sous terre pour surprendre leurs adversaires."
+    ]
+  },
+  "tatget_001_normal": {
+    "name": "Cible de base",
+    "nickname": "Cible de base",
+    "description": "Une cible simple destinée aux archers débutants.",
+    "abilities": [
+      "Une cible de base. PV : 1."
+    ]
+  },
+  "tatget_002_endurance": {
+    "name": "Cible standard",
+    "nickname": "Cible standard",
+    "description": "Une cible standard, indispensable pour progresser en tir à l'arc.",
+    "abilities": [
+      "Une cible résistante. PV : 2."
+    ]
+  },
+  "tatget_003_expand": {
+    "name": "Cible-barrière",
+    "nickname": "Cible-barrière",
+    "description": "Une cible spéciale capable de changer de taille et de protéger celles qui se trouvent derrière. Essayez de la faire éclater en premier.",
+    "abilities": [
+      "Une cible perturbatrice qui change de taille. PV : 3."
+    ]
+  },
+  "tatget_004_armor": {
+    "name": "Cible lourde",
+    "nickname": "Cible lourde",
+    "description": "Une cible spéciale en alliage haute résistance. Elle est robuste et appréciée par les archers dotés d'une grande force.",
+    "abilities": [
+      "Une cible cuirassée. PV : 4."
+    ]
+  },
+  "tatget_005_shield": {
+    "name": "Bouclier d'énergie",
+    "nickname": "Bouclier d'énergie",
+    "description": "Un bouclier d'énergie conçu pour les cibles. Les archers expérimentés aiment protéger leurs cibles pour qu'elles résistent quelques secondes de plus.",
+    "abilities": [
+      "Un bouclier pouvant être appliqué à n'importe quelle cible. PV : 2. Les cibles protégées ne peuvent pas être gelées, il n'est pas possible de leur appliquer activement de la résine, et les cumuls de résine sur les cibles protégées n'explosent pas lorsqu'elles subissent des DÉG."
     ]
   }
 }

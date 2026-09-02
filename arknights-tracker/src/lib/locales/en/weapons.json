@@ -5,12 +5,12 @@
     "decoDesc": "A weapon commonly seen in the frontiers. No one knows who came up with the basic designs. This particular piece can be easily produced by common industrial machinery.",
     "skills": [
       {
-        "name": "Strength Boost [S]",
+        "name": "Strength [S]",
         "description": "Strength <@ba.vup>+{str}</>"
       },
       {
-        "name": "ATK Boost [S]",
-        "description": "Attack <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATK [S]",
+        "description": "ATK <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Suppression: Emergency Boost",
@@ -24,12 +24,12 @@
     "decoDesc": "The latest standalone product from Mieszko Industries. Designs were based on a relic unearthed by the Cabal of Tranquility. The weapon itself was furnished with highly classified technologies, allowing it to cut through almost anything with ease.",
     "skills": [
       {
-        "name": "Main Attribute Boost [L]",
+        "name": "Main Attribute [L]",
         "description": "Main attribute <@ba.vup>+{mainattr}</>"
       },
       {
-        "name": "Attack Boost [L]",
-        "description": "Attack <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATK [L]",
+        "description": "ATK <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Suppression: Stacked Hew",
@@ -43,11 +43,11 @@
     "decoDesc": "A high-end product of Northmarch Support Hub. This chain cutter was designed with older technology. Though no longer mass produced, the weapon continues to prove its reliability in the field.",
     "skills": [
       {
-        "name": "Will Boost [L]",
+        "name": "Will [L]",
         "description": "Will <@ba.vup>+{will}</>"
       },
       {
-        "name": "HP Boost [L]",
+        "name": "HP [L]",
         "description": "Max HP <@ba.vup>+{hp:0.0%}</>"
       },
       {
@@ -62,11 +62,11 @@
     "decoDesc": "A specialized weapon manufactured by Endfield. The flamberge was furnished with interlaced Originium circuitry to enhance essence performance. This setup was inspired by various phenomena observed on Talos.",
     "skills": [
       {
-        "name": "Strength Boost [L]",
+        "name": "Strength [L]",
         "description": "Strength <@ba.vup>+{str}</>"
       },
       {
-        "name": "HP Boost [L]",
+        "name": "HP [L]",
         "description": "Max HP <@ba.vup>+{hp:0.0%}</>"
       },
       {
@@ -81,11 +81,11 @@
     "decoDesc": "A special limited-release weapon from the Witching Hour. The appearance of the greatsword is probably based on an ancient legend. It seems capable of ripping wails of anguish out of the realm of dreams.",
     "skills": [
       {
-        "name": "Strength Boost [L]",
+        "name": "Strength [L]",
         "description": "Strength <@ba.vup>+{str}</>"
       },
       {
-        "name": "Critical Rate Boost [L]",
+        "name": "Critical Rate [L]",
         "description": "Critical Rate <@ba.vup>+{crirate:0.0%}</>"
       },
       {
@@ -100,11 +100,11 @@
     "decoDesc": "A standard greatsword made by Fort Forgefane. Although very few have mastered this weapon, the weapon is easy to wield and has been the most popular choice amongst raw recruits for many years.",
     "skills": [
       {
-        "name": "Will Boost [S]",
+        "name": "Will [S]",
         "description": "Will <@ba.vup>+{will}</>"
       },
       {
-        "name": "HP Boost [S]",
+        "name": "HP [S]",
         "description": "Max HP <@ba.vup>+{hp:0.0%}</>"
       },
       {
@@ -119,7 +119,7 @@
     "decoDesc": "One of the standard-issue operator weapons manufactured by Endfield Industries. This weapon is designed by Endfield Arsenal Engineer Darhoff. Its designs offer a viable option for those taking part in assault operations.",
     "skills": [
       {
-        "name": "Main Attribute Boost [S]",
+        "name": "Main Attribute [S]",
         "description": "Main attribute <@ba.vup>+{mainattr}</>"
       },
       {
@@ -134,11 +134,11 @@
     "decoDesc": "A standard greatsword developed by Hongshan Swordmancers. The weapon is furnished with a new specialized coating that offers excellent protection, even if the weapon were to be used in extreme and hostile environments.",
     "skills": [
       {
-        "name": "Strength Boost [M]",
+        "name": "Strength [M]",
         "description": "Strength <@ba.vup>+{str}</>"
       },
       {
-        "name": "Ultimate Gain Efficiency Boost [M]",
+        "name": "ULT Efficiency [M]",
         "description": "Ultimate Gain Efficiency <@ba.vup>+{usgs:0.0%}</>"
       },
       {
@@ -153,11 +153,11 @@
     "decoDesc": "A special Mieszko Industries weapon with a limited production run. This was the final design of the collaborative project pursued by the arms company and the Knights Major expert Cromwell.",
     "skills": [
       {
-        "name": "Strength Boost [M]",
+        "name": "Strength [M]",
         "description": "Strength <@ba.vup>+{str}</>"
       },
       {
-        "name": "HP Boost [M]",
+        "name": "HP [M]",
         "description": "Max HP <@ba.vup>+{hp:0.0%}</>"
       },
       {
@@ -172,12 +172,12 @@
     "decoDesc": "A strange weapon released by Witching Hour. The blade body is chiseled out of an ordinary-looking block of ice, but its surface is infused with a special form of Originium Arts that made it literally indestructible.",
     "skills": [
       {
-        "name": "Strength Boost [L]",
+        "name": "Strength [L]",
         "description": "Strength <@ba.vup>+{str}</>"
       },
       {
-        "name": "Attack Boost [L]",
-        "description": "Attack <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATK [L]",
+        "description": "ATK <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Detonate: Bonechilling",
@@ -191,11 +191,11 @@
     "decoDesc": "A quality greatsword manufactured by Hongshan Swordmancers. When compared to other greatswords, this one is lighter but just as deadly.",
     "skills": [
       {
-        "name": "Strength Boost [M]",
+        "name": "Strength [M]",
         "description": "Strength <@ba.vup>+{str}</>"
       },
       {
-        "name": "Arts Intensity Boost [M]",
+        "name": "Arts Intensity [M]",
         "description": "Arts Intensity <@ba.vup>+{physpell:0}</>"
       },
       {
@@ -210,16 +210,16 @@
     "decoDesc": "A standard weapon produced by Endfield Industries. Design is provided by the Creative Prototyping Team founded by Senior Arsenal Engineer Opero. The weapon can be furnished with various modules according to the needs of actual battle.",
     "skills": [
       {
-        "name": "Strength Boost [M]",
+        "name": "Strength [M]",
         "description": "Strength <@ba.vup>+{str}</>"
       },
       {
-        "name": "HP Boost [M]",
+        "name": "HP [M]",
         "description": "Max HP <@ba.vup>+{hp:0.0%}</>"
       },
       {
         "name": "Efficacy: Tenacious Will",
-        "description": "Secondary Attribute <@ba.vup>+{second_attr_up:0.0%}</>.\nWhen the wielder applies <#ba.knockdown>Knocked Down</> or <#ba.weak>Weakened</>, the wielder gains DEF <@ba.vup>+{def_up:0.0%}</> for {duration:0}s.\n<@ba.info>Effects of the same name cannot stack.</>"
+        "description": "Secondary Attribute <@ba.vup>+{second_attr_up:0.0%}</>.\nWhen the wielder applies <#ba.knockdown>Knocked Down</> or <#ba.weak>Weakness</>, the wielder gains DEF <@ba.vup>+{def_up:0.0%}</> for {duration:0}s.\n<@ba.info>Effects of the same name cannot stack.</>"
       }
     ]
   },
@@ -229,11 +229,11 @@
     "decoDesc": "A prototype produced by Portable Æthertech Labs. The body of the blade is constructed with novel materials that give this weapon its exceptionally light weight without compromising its potential for destruction.",
     "skills": [
       {
-        "name": "Strength Boost [L]",
+        "name": "Strength [L]",
         "description": "Strength <@ba.vup>+{str}</>"
       },
       {
-        "name": "Arts Intensity Boost [L]",
+        "name": "Arts Intensity [L]",
         "description": "Arts Intensity <@ba.vup>+{physpell:0}</>"
       },
       {
@@ -248,12 +248,12 @@
     "decoDesc": "A greatsword that took Hongshan Swordmancers over ten years to design and produce. Its dimensions are well-proportioned and it strikes with incredible power and ferocity. It is an exemplary piece of heavy weaponry.",
     "skills": [
       {
-        "name": "Strength Boost [L]",
+        "name": "Strength [L]",
         "description": "Strength <@ba.vup>+{str}</>"
       },
       {
-        "name": "Attack Boost [L]",
-        "description": "Attack <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATK [L]",
+        "description": "ATK <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Combative: Amaranthine Cleave",
@@ -267,11 +267,11 @@
     "decoDesc": "One of the advanced weaponry manufactured by Endfield for their operators. The Endfield arsenal adopted Andre's blueprints to create a drone capable of storing Arts so that they can be quickly cast in emergencies.",
     "skills": [
       {
-        "name": "Intellect Boost [S]",
+        "name": "Intellect [S]",
         "description": "Intellect <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Arts Boost [S]",
+        "name": "Arts DMG [S]",
         "description": "Arts DMG Dealt <@ba.vup>+{spelldam:0.0%}</>"
       },
       {
@@ -286,7 +286,7 @@
     "decoDesc": "One of the standard-issue operator weapons manufactured by Endfield Industries. This weapon is designed by Endfield Arsenal Engineer Jiminy. The Arts Unit is extremely popular with newly minted Endfield operators.",
     "skills": [
       {
-        "name": "Main Attribute Boost [S]",
+        "name": "Main Attribute [S]",
         "description": "Main attribute <@ba.vup>+{mainattr}</>"
       },
       {
@@ -301,12 +301,12 @@
     "decoDesc": "One of the Arts units manufactured by Endfield Industries. It sports bold structural designs, superb Arts conductance, but is incredibly difficult to control. Mastering this weapon was considered a proof of competency amongst operators.",
     "skills": [
       {
-        "name": "Will Boost [S]",
+        "name": "Will [S]",
         "description": "Will <@ba.vup>+{will}</>"
       },
       {
-        "name": "ATK Boost [S]",
-        "description": "Attack <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATK [S]",
+        "description": "ATK <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Suppression: Emergency Boost",
@@ -320,11 +320,11 @@
     "decoDesc": "An Arts unit developed by RAYTHEAN Industries. This particular weapon is known for its minimalist and lightweight designs. Making it requires only half of the materials needed to produce a standard-issue Arts unit.",
     "skills": [
       {
-        "name": "Intellect Boost [M]",
+        "name": "Intellect [M]",
         "description": "Intellect <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Electric DMG Boost [M]",
+        "name": "Electric DMG [M]",
         "description": "Electric DMG Dealt <@ba.vup>+{electrondam:0.0%}</>"
       },
       {
@@ -339,12 +339,12 @@
     "decoDesc": "One of the strange-looking Arts units released by Witching Hour. Its counter-intuitive designs include a deliberately reduced Originium Arts compatibility just to highlight the dark logic of Ancient Teekaz witchcraft.",
     "skills": [
       {
-        "name": "Intellect Boost [M]",
+        "name": "Intellect [M]",
         "description": "Intellect <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "ATK Boost [M]",
-        "description": "Attack <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATK [M]",
+        "description": "ATK <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Twilight: Lustrous Pyre",
@@ -358,11 +358,11 @@
     "decoDesc": "A contracted product from Portable Æthertech Labs. Features metal components hand-engraved by cræft-adepts to create etch figures that match those of the tillite parts. The result is an Arts unit with unique Arts casting circuitry.",
     "skills": [
       {
-        "name": "Will Boost [L]",
+        "name": "Will [L]",
         "description": "Will <@ba.vup>+{will}</>"
       },
       {
-        "name": "Nature DMG Boost [L]",
+        "name": "Nature DMG [L]",
         "description": "Nature DMG Dealt <@ba.vup>+{naturaldam:0.0%}</>"
       },
       {
@@ -377,11 +377,11 @@
     "decoDesc": "An Arts unit developed by Hongshan Swordmancers and made using Xiranite. Given the fickle nature of this rare material, only wielders capable of the highest levels of focus and precision could wield this Arts unit effectively.",
     "skills": [
       {
-        "name": "Will Boost [M]",
+        "name": "Will [M]",
         "description": "Will <@ba.vup>+{will}</>"
       },
       {
-        "name": "Ultimate Gain Efficiency Boost [M]",
+        "name": "ULT Efficiency [M]",
         "description": "Ultimate Gain Efficiency <@ba.vup>+{usgs:0.0%}</>"
       },
       {
@@ -396,11 +396,11 @@
     "decoDesc": "An Arts unit developed by Northmarch Support Hub. It is, without question, the unit with the best Originium Arts conductance. Only the most capable casters could master this weapon.",
     "skills": [
       {
-        "name": "Main Attribute Boost [L]",
+        "name": "Main Attribute [L]",
         "description": "Main attribute <@ba.vup>+{mainattr}</>"
       },
       {
-        "name": "Arts Intensity Boost [L]",
+        "name": "Arts Intensity [L]",
         "description": "Arts Intensity <@ba.vup>+{physpell:0}</>"
       },
       {
@@ -415,11 +415,11 @@
     "decoDesc": "One of the Arts units developed by Witching Hour. With the exception of its basic Originium circuitries, the rest of the unit was constructed using an unknown material. Can this really be built in Talos-II?",
     "skills": [
       {
-        "name": "Intellect Boost [L]",
+        "name": "Intellect [L]",
         "description": "Intellect <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Arts Boost [L]",
+        "name": "Arts DMG [L]",
         "description": "Arts DMG Dealt <@ba.vup>+{spelldam:0.0%}</>"
       },
       {
@@ -434,11 +434,11 @@
     "decoDesc": "One of the Arts units developed by Mieszko Industries. The weapon features special D64 steel chassis and a suite of customizable modules. Its appearance reminds people of firework displays of knight majors from the past.",
     "skills": [
       {
-        "name": "Will Boost [L]",
+        "name": "Will [L]",
         "description": "Will <@ba.vup>+{will}</>"
       },
       {
-        "name": "HP Boost [L]",
+        "name": "HP [L]",
         "description": "Max HP <@ba.vup>+{hp:0.0%}</>"
       },
       {
@@ -453,11 +453,11 @@
     "decoDesc": "A classical top-tier product of RAYTHEAN. Its prototype was deployed in the First Aggeloi War. The weapon has received numerous upgrades and optimizations since then, with the modern version offering incredible firepower that translates into greater protection and safety of the delivery.",
     "skills": [
       {
-        "name": "Will Boost [L]",
+        "name": "Will [L]",
         "description": "Will <@ba.vup>+{will}</>"
       },
       {
-        "name": "Ultimate Gain Efficiency Boost [L]",
+        "name": "ULT Efficiency [L]",
         "description": "Ultimate Gain Efficiency <@ba.vup>+{usgs:0.0%}</>"
       },
       {
@@ -472,11 +472,11 @@
     "decoDesc": "An Arts Unit designed by Mieszko Industries for Cabal of Tranquility. Every step from product design, verification, manufacturing, to tuning has been carried out under the guidance of a Cabal cleric.",
     "skills": [
       {
-        "name": "Will Boost [M]",
+        "name": "Will [M]",
         "description": "Will <@ba.vup>+{will}</>"
       },
       {
-        "name": "Treatment Efficiency Boost [M]",
+        "name": "Treatment Efficiency [M]",
         "description": "Treatment Efficiency <@ba.vup>+{heal:0.0%}</>."
       },
       {
@@ -491,11 +491,11 @@
     "decoDesc": "A product from the elite series of Mieszko Industries. This weapon offers excellent Originium Arts conductance, making it more practical than other fashionable pieces that focused on style over substance.",
     "skills": [
       {
-        "name": "Intellect Boost [L]",
+        "name": "Intellect [L]",
         "description": "Intellect <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Treatment Efficiency Boost [L]",
+        "name": "Treatment Efficiency [L]",
         "description": "Treatment Efficiency <@ba.vup>+{heal:0.0%}</>."
       },
       {
@@ -510,11 +510,11 @@
     "decoDesc": "A standard weapon produced by Endfield Industries. Design is provided by the Creative Prototyping Team founded by Senior Arsenal Engineer Opero. Power is determined by the user's mastery in the Originium Arts.",
     "skills": [
       {
-        "name": "Intellect Boost [M]",
+        "name": "Intellect [M]",
         "description": "Intellect <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Arts Intensity Boost [M]",
+        "name": "Arts Intensity [M]",
         "description": "Arts Intensity <@ba.vup>+{physpell:0}</>"
       },
       {
@@ -529,12 +529,12 @@
     "decoDesc": "An Arts Unit developed by Hongshan Swordmancers. The weapon features a bold integration of novel Xiranite amalgams. Though the materials offer excellent performance that greatly improves casting efficiency, this Arts Unit can be quite challenging to use.",
     "skills": [
       {
-        "name": "Will Boost [L]",
+        "name": "Will [L]",
         "description": "Will <@ba.vup>+{will}</>"
       },
       {
-        "name": "Attack Boost [L]",
-        "description": "Attack <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATK [L]",
+        "description": "ATK <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Suppression: Streaming Blitz",
@@ -548,11 +548,11 @@
     "decoDesc": "A set of standard Arts Units designed and developed by the Hongshan Swordmancers. These weapons are currently issued to members of the Yinglung Special Task Force. They are known for their excellent performance and stability, as well as their reliability in unforgiving environments.",
     "skills": [
       {
-        "name": "Intellect Boost [L]",
+        "name": "Intellect [L]",
         "description": "Intellect <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Ultimate Gain Efficiency Boost [L]",
+        "name": "ULT Efficiency [L]",
         "description": "Ultimate Gain Efficiency <@ba.vup>+{usgs:0.0%}</>"
       },
       {
@@ -567,11 +567,11 @@
     "decoDesc": "A classical product of Endfield Industries. Numerous units were deployed during the Polar Expedition. These Arts Units have conspicuous golden-yellow coating, making them clearly visible, even in heavy snowstorms.",
     "skills": [
       {
-        "name": "Will Boost [L]",
+        "name": "Will [L]",
         "description": "Will <@ba.vup>+{will}</>"
       },
       {
-        "name": "Electric DMG Boost [L]",
+        "name": "Electric DMG [L]",
         "description": "Electric DMG Dealt <@ba.vup>+{electrondam:0.0%}</>"
       },
       {
@@ -586,16 +586,54 @@
     "decoDesc": "Based on a winning entry of a concept design competition organized by Mieszko Industries. Projectile acceleration with microsecond-scale precision and outstanding hovering performance are features made possible by incorporating the designer's unique understanding of zero gravity environments.",
     "skills": [
       {
-        "name": "Intellect Boost [L]",
+        "name": "Intellect [L]",
         "description": "Intellect <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Ultimate Gain Efficiency Boost [L]",
+        "name": "ULT Efficiency [L]",
         "description": "Ultimate Gain Efficiency <@ba.vup>+{usgs:0.0%}</>"
       },
       {
         "name": "Efficacy: Feedback Loop",
         "description": "Nature DMG Dealt <@ba.vup>+{nature_dmg_up:0.0%}</>.\nWhen the wielder applies <#ba.spellvul>Arts Susceptibility</> or <#ba.spellinflict>Arts Infliction</> with a combo skill, the wielder gains ATK <@ba.vup>+{atk_up:0.0%}</> while other operators in the team gain ATK <@ba.vup>+{atk_up2:0.0%}</>. Duration: {duration:0}s.\n<@ba.info>Max stacks for effects of the same name: {max_stack:0}. Duration of each stack is counted separately.</>"
+      }
+    ]
+  },
+  "umbraOfFrigidEventide": {
+    "name": "Umbra of Frigid Eventide",
+    "description": "The sun had yet to rise.\nThe warrior of the Coldpine Tribe was already awake. His hand held a short charcoal pen and the paper beneath it was barely larger than his palm.\nEvery space counted, for there was a lot that he wanted to write. He scratched the words carefully and read every word out loud. Though he tried to keep his voice low, the one next to him stirred. The woman opened her remaining eye, gave him a vicious kick and a cold rasp: \"Quiet.\"\nThe warrior gave her a foolish smile, then started reciting his writings silently in his mind: \"Dear Mamma, the ice has melted and we could see the green mosses. They feel good. They look lovely. I believe spring has arrived at your place. The river must be flowing beneath your treehouse and giving water to the plants in the garden. The fowls have probably returned to roost beneath the roof, fluttering into the house when you open the window so they can rest in your hand. Perhaps a day will come when I can fly home to you like the fowls, and stay by your side where spring is eternal, and...\"\nIt was a word that his mother often spoke of. The warrior remembered it but forgot how it was shaped. Left with no choice, he stopped writing and gave the woman a look of resignation and a sincere need for help.\nThe woman's annoyed words did not hide an undertone of curiosity: \"Why stop writing?\"\n\"There's a word, but I can't shape it.\"\n\"And what is that word?\"\n\"Sa-Sanctuary.\"\n\"You never learned it?\"\n\"Mamma left me before she taught me the word.\"\n\"Ooooooh,\" the woman dragged it out as though frustrated. She then raised her hand and drew it in the air, a criss-crossing pattern of curved arcs and straight lines, like the mid-air trails left by a darting fowl.\nThe woman wrote out the word quickly at first. The warrior's tired eyes could barely keep track of her fingertip. She saw his knotted brows and chuckled, and then wrote the word out again.\nTogether, the warrior's charcoal pen, the woman's finger, the lines on the paper, and the shape in the air formed the word. It came together like a fowl making a slow landing on the ground.\nThe paper was now full of words. He gave a satisfied smile and then chucked it into the campfire. It crackled as it burned, and the firelight danced in the woman's eye before spluttering out at the corner of her gaze.\n\"You believe this would never reach her?\"\nThe warrior nodded. The woman let out a sigh. There was a moment of silence before she suddenly spoke again. \"What is your name, child?\"\n\"Björn, of the Coldpines.\"\nThe woman reminisced as she voiced out her memories, one fragment at a time: \"The Coldpine Tribe... Oh yes, I remember your Chieftain... A brave warrior, and very admirable. She honored the warrior's creed when she fell.\"\n\"I am fortunate, for I grew up with her,\" the warrior's face was flushed as he nodded at her with gratitude.\n\"May she return to Sami's side, a place of eternal spring, the...\"\n\"The Sanctuary,\" the warrior said the word together with the woman as she smiled.\nThe sun had yet to rise, but the horns were trumpeting. The Aggeloi appeared at the horizon, marching towards the frontlines as a mighty host.\nThe Coldpine warrior was already on his feet. He took up the spear and carried the woman. Together with the soldiers, he turned to face the Aggeloid tide.\nBehind them, the fires consumed the paper. Stray embers flew out of flickering tongues and floated to a faraway place.",
+    "decoDesc": "A weapon forged by Fort Forgefane. Housed in a sleek streamlined chassis with a special coating designed for combat operations in poorly-lit environments.",
+    "skills": [
+      {
+        "name": "Agility [L]",
+        "description": "Agility <@ba.vup>+{agi}</>"
+      },
+      {
+        "name": "ATK [L]",
+        "description": "ATK <@ba.vup>+{atk:0.0%}</>"
+      },
+      {
+        "name": "Detonate: Hunter Instinct",
+        "description": "Arts DMG Dealt <@ba.vup>+{spell_dmg_up:0.0%}</>.\nAfter the wielder casts a battle skill, the wielder gains Arts Intensity <@ba.vup>+{phy_spell_up:0}</> and {wind_grant:0} stacks of <@ba.key>Windform</> for {wind_duration:0}s.\n<@ba.info>This entire effect cannot stack. Max <@ba.key>Windform</> stacks: {wind_grant:0}.</>\nWhen the wielder applies an <#ba.spellburst>Arts Burst</>, <#ba.consume>consume</> 1 stack of <@ba.key>Windform</> to grant the wielder Arts DMG Dealt <@ba.vup>+{spell_dmg_up2:0.0%}</> for {spell_dmg_duration:0}s.\n<@ba.info>This effect can reach {spell_dmg_max_stack:0} stacks. Duration of each stack is counted separately. Effect only triggers once every 0.1s.</>"
+      }
+    ]
+  },
+  "sufferingsEnd": {
+    "name": "Suffering's End",
+    "description": "\"Suffering will end. There shall be peace ... for all Sarkaz...\"\nThe ancient Sarkaz mulled over these words as he cleaned the Arts Unit in his hand. Surrounding him was an endless stream of tourists who came with loved ones and friends. Liches created spectacular displays of fireworks with their Arts while children clambered on the Gargoyle warriors. People of every creed and tribe and race cheered, just as they did on the day when Seš'qa took to the skies, and on every Open Day that celebrated the end of the war.\n\"Is this ... our 'Suffering's End'...?\"\nThe ancient Sarkaz packed his belongings quickly. He had already saved enough T-Creds to travel to various Band cities. For years he had planned to leave Seš'qa and visit the Civilization Band.\n\nThe journey was smooth and without event till that very day. He was lying on a giant boulder to gaze at the stars when the Originium coffee kettle suddenly switched itself off with a resounding snap. He was initially confused until he heard explosions, shouting, and screaming.\nWith alert eyes he gazed at the spreading hazefyre. A family of three was fleeing across the wilderness on foot while a mob of thirty mottled figures bearing arms chased after them. Landbreakers. The ancient Sarkaz witnessed the pursuit ... and did nothing. He laid himself back to rest again.\n\nHe was simply too old, and too ordinary. He was neither a Gargoyle blessed with a constitution as sturdy as a bastion, nor a Lich wielding esoteric and deadly Arts, nor a Nachzehrer with their terrifying and impossible strengths. He was simply a mixed Sarkaz lucky enough to outlive the Aggeloi War, the Humiliation War, and the Jakubine War that crushed the Warlord of the Wilds. The odd tricks of survival were the only thing he knew.\nBut barely a dozen seconds passed when the Sarkaz took out his Arts Unit and leaped down from the great boulder. He remembered the mad Speaker who gave a speech and promise to the Sarkaz, a piece of oratorical text that was obviously not written by herself. Nevertheless, there is something that never changes. If suffering were to end, someone has to do something about it.\nHe gently cleaned his Arts Unit. The chassis reflected the face of a Sarkaz who had aged far, far beyond yesteryear.\n\nAn arrow buried itself in the fleeing father who carried his child. Both collapsed to the ground. The woman threw away her comm device and tried to drag her man to safety. It was in vain. The breakers were upon them. The night in the wilderness instantly grew silent.\nThe breakers howled and laughed as they approached the stricken family from all sides. Mercilessly they raised their weapons. The man and woman tried, in vain, to shield their child. Torchlight glinted off the sabers, crossbow bolts, as well as the tears of the poor kid.\nA great shadow wearing two horns suddenly appeared behind the breakers. With neither sound nor warning, a blackness darker than the night spread across the scene. One by one it seized the breakers who howled with despair as life was snuffed out of them. The rest of them were terrified. Desperately they searched to find where the unannounced attack came from. Words echoing in the night breeze found them first, words spoken in old, raspy Sarkazian —\n\"My suffering has ended. But yours ... has just begun.\"",
+    "decoDesc": "One of the strange Arts Units from Witching Hour. It seems to be imbued with a rather odd form of Originium Arts that gives the wielder an unfathomable sense of safety.",
+    "skills": [
+      {
+        "name": "Agility [L]",
+        "description": "Agility <@ba.vup>+{agi}</>"
+      },
+      {
+        "name": "Nature DMG [L]",
+        "description": "Nature DMG Dealt <@ba.vup>+{naturaldam:0.0%}</>"
+      },
+      {
+        "name": "Detonate: Dawn of the Long Night",
+        "description": "Arts Intensity <@ba.vup>+{phy_spell_up:0}</>.\nWhen the wielder applies an <#ba.spellburst>Arts Burst</>, the wielder gains Nature DMG Dealt <@ba.vup>+{nature_dmg_up:0.0%}</> for {duration:0}s.\n<@ba.info>Max stacks for this effect: {max_stack:0}. Duration of each stack is counted separately. Effect only triggers once every 0.1s.</>\nAt {max_stack:0} stacks, the aforementioned effect grants an additional Nature DMG Dealt <@ba.vup>+{nature_dmg_up2:0.0%}</>.\n<@ba.info>This effect cannot stack.</>"
       }
     ]
   },
@@ -605,12 +643,12 @@
     "decoDesc": "One of the advanced weaponry manufactured by Endfield for their operators. This streamlined and lightweight weapon is well-balanced and would remind many people of the standard-issue lances once wielded by Vanguard class operators of Rhodes Island.",
     "skills": [
       {
-        "name": "Agility Boost [S]",
+        "name": "Agility [S]",
         "description": "Agility <@ba.vup>+{agi}</>"
       },
       {
-        "name": "ATK Boost [S]",
-        "description": "Attack <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATK [S]",
+        "description": "ATK <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Inspiring: Start of a Saga",
@@ -624,11 +662,11 @@
     "decoDesc": "An experimental lance designed by Endfield Industries with a very limited production run. This weapon features modular designs to support dismantling and reassembling in complex and hostile battlefield conditions.",
     "skills": [
       {
-        "name": "Strength Boost [M]",
+        "name": "Strength [M]",
         "description": "Strength <@ba.vup>+{str}</>"
       },
       {
-        "name": "Ultimate Gain Efficiency Boost [M]",
+        "name": "ULT Efficiency [M]",
         "description": "Ultimate Gain Efficiency <@ba.vup>+{usgs:0.0%}</>"
       },
       {
@@ -643,11 +681,11 @@
     "decoDesc": "A classical product of RAYTHEAN's customizable manufacturing process. The weapon is based on a standard military lance, and features a diverse suite of special functions and customizable aesthetic components.",
     "skills": [
       {
-        "name": "Will Boost [M]",
+        "name": "Will [M]",
         "description": "Will <@ba.vup>+{will}</>"
       },
       {
-        "name": "Electric DMG Boost [M]",
+        "name": "Electric DMG [M]",
         "description": "Electric DMG Dealt <@ba.vup>+{electrondam:0.0%}</>"
       },
       {
@@ -662,11 +700,11 @@
     "decoDesc": "An old weapon from the Northmarch Support Hub with extremely poor handling. But it also features an incredible capacity for damage. Its massive weight might make it unpopular with most, but strong wielders who enjoy powerful, over-the-top moves rate it rather positively.",
     "skills": [
       {
-        "name": "Agility Boost [L]",
+        "name": "Agility [L]",
         "description": "Agility <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Ultimate Gain Efficiency Boost [L]",
+        "name": "ULT Efficiency [L]",
         "description": "Ultimate Gain Efficiency <@ba.vup>+{usgs:0.0%}</>"
       },
       {
@@ -681,11 +719,11 @@
     "decoDesc": "A standard-issue lance made by Fort Forgefane to arm the common soldiery. Furnished with an extremely sharp tip specifically designed for fighting the Aggeloi.",
     "skills": [
       {
-        "name": "Will Boost [S]",
+        "name": "Will [S]",
         "description": "Will <@ba.vup>+{will}</>"
       },
       {
-        "name": "Arts Boost [S]",
+        "name": "Arts DMG [S]",
         "description": "Arts DMG Dealt <@ba.vup>+{spelldam:0.0%}</>"
       },
       {
@@ -700,7 +738,7 @@
     "decoDesc": "One of the standard-issue operator weapons manufactured by Endfield Industries. This weapon is personally designed by senior Endfield Arsenal Engineer Opero. It can be wielded effectively by even newly minted Endfield operators, thanks to its ergonomic designs.",
     "skills": [
       {
-        "name": "Main Attribute Boost [S]",
+        "name": "Main Attribute [S]",
         "description": "Main attribute <@ba.vup>+{mainattr}</>"
       },
       {
@@ -715,11 +753,11 @@
     "decoDesc": "A mid-tier product of Mieszko Industries. The lance is rare yet highly sought after, thanks to vintage designs that make it resemble a ballista bolt as well as its effective field performance.",
     "skills": [
       {
-        "name": "Agility Boost [L]",
+        "name": "Agility [L]",
         "description": "Agility <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Physical DMG Boost [L]",
+        "name": "Physical DMG [L]",
         "description": "Physical DMG Dealt <@ba.vup>+{phydam:0.0%}</>"
       },
       {
@@ -734,12 +772,12 @@
     "decoDesc": "An experimental weapon manufactured to the highest standards of Northmarch Support Hub. The prototype was designed by the now-disbanded Aerospace Research Center. An array of Originium compression jet engines gives this lance its turbo performance.",
     "skills": [
       {
-        "name": "Main Attribute Boost [L]",
+        "name": "Main Attribute [L]",
         "description": "Main attribute <@ba.vup>+{mainattr}</>"
       },
       {
-        "name": "Attack Boost [L]",
-        "description": "Attack <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATK [L]",
+        "description": "ATK <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Suppression: Astrophysics",
@@ -753,11 +791,11 @@
     "decoDesc": "An experimental lance developed by Hongshan Swordmancers. The shaft of the weapon was forged using a special alloy to achieve both strength and resilience.",
     "skills": [
       {
-        "name": "Agility Boost [L]",
+        "name": "Agility [L]",
         "description": "Agility <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Physical DMG Boost [L]",
+        "name": "Physical DMG [L]",
         "description": "Physical DMG Dealt <@ba.vup>+{phydam:0.0%}</>"
       },
       {
@@ -772,11 +810,11 @@
     "decoDesc": "A standard weapon produced by Endfield Industries. Design is provided by the Creative Prototyping Team founded by Senior Arsenal Engineer Opero. Wielders are free to make their own adjustments to the spearhead module.",
     "skills": [
       {
-        "name": "Will Boost [M]",
+        "name": "Will [M]",
         "description": "Will <@ba.vup>+{will}</>"
       },
       {
-        "name": "Physical DMG Boost [M]",
+        "name": "Physical DMG [M]",
         "description": "Physical DMG Dealt <@ba.vup>+{phydam:0.0%}</>"
       },
       {
@@ -791,11 +829,11 @@
     "decoDesc": "A top-of-the-line product series from Mieszko Industries, tailor-made to order for popular thespians of the performing arts. The dreamy and conspicuously loud microphone-like design is coupled with extraordinary performance and power. This weapon has left quite an impression on every tester who tried it out.",
     "skills": [
       {
-        "name": "Will Boost [L]",
+        "name": "Will [L]",
         "description": "Will <@ba.vup>+{will}</>"
       },
       {
-        "name": "Treatment Efficiency Boost [L]",
+        "name": "Treatment Efficiency [L]",
         "description": "Treatment Efficiency <@ba.vup>+{heal:0.0%}</>."
       },
       {
@@ -810,11 +848,11 @@
     "decoDesc": "One of the polearms produced by the Witching Hour. A special commemorative edition was released on Seš'qa Open Day. The body of the lance underwent a special plating technique to provide a finish that is both extremely functional and aesthetically pleasing.",
     "skills": [
       {
-        "name": "Agility Boost [L]",
+        "name": "Agility [L]",
         "description": "Agility <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Heat DMG Boost [L]",
+        "name": "Heat DMG [L]",
         "description": "Heat DMG Dealt <@ba.vup>+{firedam:0.0%}</>"
       },
       {
@@ -829,11 +867,11 @@
     "decoDesc": "One of the top-end products of Mieszko Industries. The tip of the lance is constructed using a special alloy that features incredible toughness and razor-sharp edges. Such weapons are elegant, sublime, and incredibly expensive to make, and are usually wielded by individuals who wish to highlight their prestige.",
     "skills": [
       {
-        "name": "Will Boost [L]",
+        "name": "Will [L]",
         "description": "Will <@ba.vup>+{will}</>"
       },
       {
-        "name": "Treatment Efficiency Boost [L]",
+        "name": "Treatment Efficiency [L]",
         "description": "Treatment Efficiency <@ba.vup>+{heal:0.0%}</>."
       },
       {
@@ -848,7 +886,7 @@
     "decoDesc": "One of the standard-issue operator weapons manufactured by Endfield Industries. This weapon is designed by Endfield Arsenal Engineer Peco. Mastery of etched ammo and firearms is no longer a skill exclusive to the Sankta.",
     "skills": [
       {
-        "name": "Main Attribute Boost [S]",
+        "name": "Main Attribute [S]",
         "description": "Main attribute <@ba.vup>+{mainattr}</>"
       },
       {
@@ -863,12 +901,12 @@
     "decoDesc": "A mid-tier product of Mieszko Industries. These pistols are perfect combinations of vintage Lateran designs with modern industrial construction. Blue metallic coating gave the finishing touches for these unique works of art.",
     "skills": [
       {
-        "name": "Intellect Boost [S]",
+        "name": "Intellect [S]",
         "description": "Intellect <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "ATK Boost [S]",
-        "description": "Attack <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATK [S]",
+        "description": "ATK <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Suppression: Emergency Boost",
@@ -882,11 +920,11 @@
     "decoDesc": "Standard-issue guns made by Fort Forgefane for the common soldiery under the Order of Steel Oath. These weapons are extremely popular due to their simple firing mechanism and incredible stopping power.",
     "skills": [
       {
-        "name": "Strength Boost [S]",
+        "name": "Strength [S]",
         "description": "Strength <@ba.vup>+{str}</>"
       },
       {
-        "name": "Arts Boost [S]",
+        "name": "Arts DMG [S]",
         "description": "Arts DMG Dealt <@ba.vup>+{spelldam:0.0%}</>"
       },
       {
@@ -901,11 +939,11 @@
     "decoDesc": "RAYTHEAN Industries developed these high energy pistols for frontiers use. Decent reliability in adverse environments makes them a standard-issue weapon amongst wildland explorers.",
     "skills": [
       {
-        "name": "Strength Boost [M]",
+        "name": "Strength [M]",
         "description": "Strength <@ba.vup>+{str}</>"
       },
       {
-        "name": "Heat DMG Boost [M]",
+        "name": "Heat DMG [M]",
         "description": "Heat DMG Dealt <@ba.vup>+{firedam:0.0%}</>"
       },
       {
@@ -920,11 +958,11 @@
     "decoDesc": "A novel concept of the year by Mieszko Industries. Let's use it to celebrate the memories of the great Navigator who led us in our unending journey across Talos-II.",
     "skills": [
       {
-        "name": "Intellect Boost [L]",
+        "name": "Intellect [L]",
         "description": "Intellect <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Cryo DMG Boost [L]",
+        "name": "Cryo DMG [L]",
         "description": "Cryo DMG Dealt <@ba.vup>+{crystdam:0.0%}</>"
       },
       {
@@ -939,11 +977,11 @@
     "decoDesc": "A contracted project developed by Portable Æthertech Labs. Cræft-adepts boldly furnished this weapon lined with relicolith, upon which special patterns have been engraved.",
     "skills": [
       {
-        "name": "Agility Boost [M]",
+        "name": "Agility [M]",
         "description": "Agility <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Arts Boost [M]",
+        "name": "Arts DMG [M]",
         "description": "Arts DMG Dealt <@ba.vup>+{spelldam:0.0%}</>"
       },
       {
@@ -958,11 +996,11 @@
     "decoDesc": "Guns developed by Hongshan Swordmancers. To comply with the basic design approaches of HAS weaponry, weight-saving features as well as grip and handling optimizations have been employed.",
     "skills": [
       {
-        "name": "Agility Boost [L]",
+        "name": "Agility [L]",
         "description": "Agility <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Cryo DMG Boost [L]",
+        "name": "Cryo DMG [L]",
         "description": "Cryo DMG Dealt <@ba.vup>+{crystdam:0.0%}</>"
       },
       {
@@ -977,11 +1015,11 @@
     "decoDesc": "A legendary work of Northmarch Support Hub that perfectly embodies the style and virtues of Northmarch weapons. Features devastating firepower, total reliability, and absolutely abysmal handling and recoil.",
     "skills": [
       {
-        "name": "Main Attribute Boost [L]",
+        "name": "Main Attribute [L]",
         "description": "Main attribute <@ba.vup>+{mainattr}</>"
       },
       {
-        "name": "Critical Rate Boost [L]",
+        "name": "Critical Rate [L]",
         "description": "Critical Rate <@ba.vup>+{crirate:0.0%}</>"
       },
       {
@@ -996,11 +1034,11 @@
     "decoDesc": "Special guns manufactured by RAYTHEAN Industries. These experimental weapons are extremely difficult to use. Only a limited number of prototypes were released to the arms market.",
     "skills": [
       {
-        "name": "Main Attribute Boost [L]",
+        "name": "Main Attribute [L]",
         "description": "Main attribute <@ba.vup>+{mainattr}</>"
       },
       {
-        "name": "Arts Boost [L]",
+        "name": "Arts DMG [L]",
         "description": "Arts DMG Dealt <@ba.vup>+{spelldam:0.0%}</>"
       },
       {
@@ -1015,11 +1053,11 @@
     "decoDesc": "One of the most popular products from Mieszko Industries from their bold Fine Artists Collab series. These firearms feature great styles that match their wildly violent performance. Their popularity is proven by the premium they command in secondary markets.",
     "skills": [
       {
-        "name": "Intellect Boost [L]",
+        "name": "Intellect [L]",
         "description": "Intellect <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Critical Rate Boost [L]",
+        "name": "Critical Rate [L]",
         "description": "Critical Rate <@ba.vup>+{crirate:0.0%}</>"
       },
       {
@@ -1034,12 +1072,12 @@
     "decoDesc": "Guns developed by Hongshan Swordmancers. Constructed using durable and reliable materials with simple designs, they are also light and easy to carry around. Very useful in all sorts of complex environments and situations.",
     "skills": [
       {
-        "name": "Agility Boost [L]",
+        "name": "Agility [L]",
         "description": "Agility <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Attack Boost [L]",
-        "description": "Attack <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATK [L]",
+        "description": "ATK <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Detonate: Brigand's Bane",
@@ -1053,11 +1091,11 @@
     "decoDesc": "A standard weapon produced by Endfield Industries. Design is provided by the Creative Prototyping Team founded by Senior Arsenal Engineer Opero. The weapon is constructed using lightweight, practical, and durable materials.",
     "skills": [
       {
-        "name": "Agility Boost [M]",
+        "name": "Agility [M]",
         "description": "Agility <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Ultimate Gain Efficiency Boost [M]",
+        "name": "ULT Efficiency [M]",
         "description": "Ultimate Gain Efficiency <@ba.vup>+{usgs:0.0%}</>"
       },
       {
@@ -1072,7 +1110,7 @@
     "decoDesc": "One of the standard-issue operator weapons manufactured by Endfield Industries. This weapon is designed by Endfield Arsenal Engineer Tarr. It is often the very first weapon of many field operators.",
     "skills": [
       {
-        "name": "Main Attribute Boost [S]",
+        "name": "Main Attribute [S]",
         "description": "Main attribute <@ba.vup>+{mainattr}</>"
       },
       {
@@ -1087,11 +1125,11 @@
     "decoDesc": "One of the elite weaponry manufactured by Endfield for their operators. The sword features a seamless grip-and-guard hilt and stress-triggered energy storage mechanisms to enhance its damage potential.",
     "skills": [
       {
-        "name": "Agility Boost [M]",
+        "name": "Agility [M]",
         "description": "Agility <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Physical DMG Boost [M]",
+        "name": "Physical DMG [M]",
         "description": "Physical DMG Dealt <@ba.vup>+{phydam:0.0%}</>"
       },
       {
@@ -1106,12 +1144,12 @@
     "decoDesc": "One of the razor-edged weaponry forged by Witching Hour. Special smelting processes resulted in a wholly red blade. The Arts Unit is actually a special liquefied Originium that resembles a tear of blood shed from a forge.",
     "skills": [
       {
-        "name": "Intellect Boost [L]",
+        "name": "Intellect [L]",
         "description": "Intellect <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Attack Boost [L]",
-        "description": "Attack <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATK [L]",
+        "description": "ATK <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Twilight: Blazing Wail",
@@ -1125,11 +1163,11 @@
     "decoDesc": "One of the weapons made by Fort Forgefane. The sword features traditional architecture that made it extremely durable and sturdy. The thick, heavy blade left countless scars upon the permafrost as the frontlines shifted with the times.",
     "skills": [
       {
-        "name": "Intellect Boost [M]",
+        "name": "Intellect [M]",
         "description": "Intellect <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Ultimate Gain Efficiency Boost [M]",
+        "name": "ULT Efficiency [M]",
         "description": "Ultimate Gain Efficiency <@ba.vup>+{usgs:0.0%}</>"
       },
       {
@@ -1144,11 +1182,11 @@
     "decoDesc": "One of the advanced weaponry manufactured by Endfield for their operators. Minimalist modular architecture resulted in a lightweight weapon with excellent balance and handling. The blade itself is extremely durable.",
     "skills": [
       {
-        "name": "Agility Boost [S]",
+        "name": "Agility [S]",
         "description": "Agility <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Physical DMG Boost [S]",
+        "name": "Physical DMG [S]",
         "description": "Physical DMG Dealt <@ba.vup>+{phydam:0.0%}</>"
       },
       {
@@ -1163,12 +1201,12 @@
     "decoDesc": "A mid-tier product of Mieszko Industries. The sword features chic, avant garde designs plus amazing cost performance index, making it one of the most fashionable choices of the year in the TGCC.",
     "skills": [
       {
-        "name": "Intellect Boost [S]",
+        "name": "Intellect [S]",
         "description": "Intellect <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "ATK Boost [S]",
-        "description": "Attack <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATK [S]",
+        "description": "ATK <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Pursuit: Unending Cycle",
@@ -1182,11 +1220,11 @@
     "decoDesc": "A next-gen lightweight personal defense solution released by RAYTHEAN Industries. The sword has a special alloy blade and proved quite popular amongst certain \"professionals\".",
     "skills": [
       {
-        "name": "Intellect Boost [L]",
+        "name": "Intellect [L]",
         "description": "Intellect <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Heat DMG Boost [L]",
+        "name": "Heat DMG [L]",
         "description": "Heat DMG Dealt <@ba.vup>+{firedam:0.0%}</>"
       },
       {
@@ -1201,11 +1239,11 @@
     "decoDesc": "A high-end ornamental sword from Hongshan Swordmancers. The weapon is often used as an award for outstanding individuals. The name is finalized after an internal voting process in Hongshan Academy of Sciences.",
     "skills": [
       {
-        "name": "Main Attribute Boost [L]",
+        "name": "Main Attribute [L]",
         "description": "Main attribute <@ba.vup>+{mainattr}</>"
       },
       {
-        "name": "Critical Rate Boost [L]",
+        "name": "Critical Rate [L]",
         "description": "Critical Rate <@ba.vup>+{crirate:0.0%}</>"
       },
       {
@@ -1220,12 +1258,12 @@
     "decoDesc": "A basic product from the Pioneer-series released by Northmarch Support Hub. The Mk IV Thermite Cutter was constructed using patented thermal materials and delivers powerful cutting performance. Positively reviewed by many UWST engineers.",
     "skills": [
       {
-        "name": "Will Boost [L]",
+        "name": "Will [L]",
         "description": "Will <@ba.vup>+{will}</>"
       },
       {
-        "name": "Attack Boost [L]",
-        "description": "Attack <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATK [L]",
+        "description": "ATK <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Flow: Thermal Release",
@@ -1239,11 +1277,11 @@
     "decoDesc": "A high-end sword released by Mieszko Industries. The finely sculpted and engraved blade also offered reliable performance. This weapon was well-received by TGCC elites and upper society.",
     "skills": [
       {
-        "name": "Main Attribute Boost [L]",
+        "name": "Main Attribute [L]",
         "description": "Main attribute <@ba.vup>+{mainattr}</>"
       },
       {
-        "name": "Physical DMG Boost [L]",
+        "name": "Physical DMG [L]",
         "description": "Physical DMG Dealt <@ba.vup>+{phydam:0.0%}</>"
       },
       {
@@ -1258,11 +1296,11 @@
     "decoDesc": "One of the weapons from the furnaces of Fort Forgefane. The grip was constructed using a special rod drawing process to enhance force damping and grip. The blade itself was forged with a rare mineral quarried from the wildlands.",
     "skills": [
       {
-        "name": "Main Attribute Boost [L]",
+        "name": "Main Attribute [L]",
         "description": "Main attribute <@ba.vup>+{mainattr}</>"
       },
       {
-        "name": "Arts Intensity Boost [L]",
+        "name": "Arts Intensity [L]",
         "description": "Arts Intensity <@ba.vup>+{physpell:0}</>"
       },
       {
@@ -1277,11 +1315,11 @@
     "decoDesc": "A first tier weapon released by Hongshan Swordmancers and also the only one that achieved decent popularity in the market. Many copies have been found in the wildlands, though.",
     "skills": [
       {
-        "name": "Agility Boost [M]",
+        "name": "Agility [M]",
         "description": "Agility <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Physical DMG Boost [M]",
+        "name": "Physical DMG [M]",
         "description": "Physical DMG Dealt <@ba.vup>+{phydam:0.0%}</>"
       },
       {
@@ -1296,12 +1334,12 @@
     "decoDesc": "A weapon from the furnaces of Fort Forgefane. Though it has undergone multiple rounds of recasting, the subsumed edge is still imbued with an intimidating force of domination.",
     "skills": [
       {
-        "name": "Will Boost [L]",
+        "name": "Will [L]",
         "description": "Will <@ba.vup>+{will}</>"
       },
       {
-        "name": "Attack Boost [L]",
-        "description": "Attack <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATK [L]",
+        "description": "ATK <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Flow: Reincarnation",
@@ -1315,11 +1353,11 @@
     "decoDesc": "One of the weapons forged by Fort Forgefane. This fine and elegant piece is often used by Order of Steel Oath during ceremonies instead of frontline combat. Nevertheless, the blade has undergone multiple rounds of polishing and sports a razor sharp edge.",
     "skills": [
       {
-        "name": "Agility Boost [L]",
+        "name": "Agility [L]",
         "description": "Agility <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Critical Rate Boost [L]",
+        "name": "Critical Rate [L]",
         "description": "Critical Rate <@ba.vup>+{crirate:0.0%}</>"
       },
       {
@@ -1334,12 +1372,12 @@
     "decoDesc": "A razor sharp sword born of the wildlands. Different weaponsmiths would apply decorative wrappings on the weapon in very different ways.",
     "skills": [
       {
-        "name": "Agility Boost [M]",
+        "name": "Agility [M]",
         "description": "Agility <@ba.vup>+{agi}</>"
       },
       {
-        "name": "ATK Boost [M]",
-        "description": "Attack <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATK [M]",
+        "description": "ATK <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Infliction: Sincere Interrogation",
@@ -1353,12 +1391,12 @@
     "decoDesc": "A standard weapon produced by Endfield Industries. Design is provided by the Creative Prototyping Team founded by Senior Arsenal Engineer Opero. The hilt features auxiliary modules that can be taken off.",
     "skills": [
       {
-        "name": "Agility Boost [M]",
+        "name": "Agility [M]",
         "description": "Agility <@ba.vup>+{agi}</>"
       },
       {
-        "name": "ATK Boost [M]",
-        "description": "Attack <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATK [M]",
+        "description": "ATK <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Flow: Unbridled Edge",
@@ -1372,11 +1410,11 @@
     "decoDesc": "The flagship product of the Outdoor Explorer series of Northmarch Support Hub. Rigged outdoor design approaches and portability made it one of the top recommendations by many explorers and hobby anglers.",
     "skills": [
       {
-        "name": "Strength Boost [M]",
+        "name": "Strength [M]",
         "description": "Strength <@ba.vup>+{str}</>"
       },
       {
-        "name": "Cryo DMG Boost [M]",
+        "name": "Cryo DMG [M]",
         "description": "Cryo DMG Dealt <@ba.vup>+{crystdam:0.0%}</>"
       },
       {
@@ -1391,12 +1429,12 @@
     "decoDesc": "A quality weapon manufactured by Endfield Industries. Innovations include using an experimental Originium-based material as the blade body to give it excellent energy conductivity.",
     "skills": [
       {
-        "name": "Agility Boost [L]",
+        "name": "Agility [L]",
         "description": "Agility <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Attack Boost [L]",
-        "description": "Attack <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATK [L]",
+        "description": "ATK <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Infliction: Long Time Wish",
@@ -1410,11 +1448,11 @@
     "decoDesc": "A popular sword produced by RAYTHEAN Industries. Plenty have been smuggled to regions outside the Civilization Band as they proved to be quite the catch amongst the Landbreakers. Many users also furnish them with specialized modifications.",
     "skills": [
       {
-        "name": "Agility Boost [L]",
+        "name": "Agility [L]",
         "description": "Agility <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Critical Rate Boost [L]",
+        "name": "Critical Rate [L]",
         "description": "Critical Rate <@ba.vup>+{crirate:0.0%}</>"
       },
       {
@@ -1425,15 +1463,15 @@
   },
   "farsight": {
     "name": "Farsight",
-    "description": "This land might not be anything special. \nSame old plains, same old air, and same old sea. The skies are different, though. There is a huge planet that we could clearly see in the day. There are also no twin moons at night. Life is hardly different from that in Terra. \nIs that a good thing? I don't know. \nI'm here because of national conscription, but It pays and there's food. That's all there's to it. \n\nBut as time went on, I started to feel the differences. \nThe land has no Originium. Heck, even the national borders felt like a joke. I thought this was some Columbian frontier pioneering work, where people slogged all day in the wilderness for something to eat. But just today, someone who looked like Leithanian nobility asked me, a worker conscript, about the specifications of machine parts and how to use some machinery. \nAnd mister nobleman wasn't joking around. \nUrsusian, Leithanian, Columbian... All these divisive labels are now being reduced to crew mate, freund, and pardner. \nI like how things turned out, it's great! But how did it happen? I don't really know. \nI asked around a bit and they're just as confused as I am. So I didn't get my answer for a while until... \n\n\"What is Endfield?\" \nI asked the huge Sarkaz team lead this question when I first reported to work. Endfield sounds like a really unlucky name for a company working on the frontiers. \nHe did not say anything. Instead, he brought us to the tip of the ship temporarily serving as the Endfield HQ. Told us to have a good look at the planet and the world. \nPlanet and world... We hardly used those terms before. \nThe team lead saw my confusion and smiled. He told me they are the meaning behind Endfield. \n\"Meaning that we gotta use new, pretty words?\" \n\"Meaning that we left our past on Terra.\" \n\nPerhaps he was right. \nBefore I decided to walk through the Cosmic Gate to reach this place, I, and everyone else, have forever left something back in Terra. \nPeople who struggled in the mine shafts, who roamed the wilderness, who worked in the cities, who gave concerts at the spires... Everyone standing shoulder to shoulder aboard the ship, ready to build a future together. \nFate gave us a choice. We chose something different from the past to create a new way of life. \n\nWhat is this world going to be like? don't know. \nBecause we're building it right now. \nBuildings will rise from the ground and crops will sprout from the earth. \nThis is our resounding answer about the world we're making.",
+    "description": "This land might not be anything special. \nSame old plains, same old air, and same old sea. The skies are different, though. There is a huge planet that we could clearly see in the day. There are also no twin moons at night. Life is hardly different from that in Terra. \nIs that a good thing? I don't know. \nI'm here because of national conscription, but It pays and there's food. That's all there's to it. \n\nBut as time went on, I started to feel the differences. \nThe land has no Originium. Heck, even the national borders felt like a joke. I thought this was some Columbian frontier pioneering work, where people slogged all day in the wilderness for something to eat. But just today, someone who looked like Leithanian nobility asked me, a worker conscript, about the specifications of machine parts and how to use some machinery. \nAnd mister nobleman wasn't joking around. \nUrsusian, Leithanian, Columbian... All these divisive labels are now being reduced to crew mate, friend, and partner. \nI like how things turned out, it's great! But how did it happen? I don't really know. \nI asked around a bit and they're just as confused as I am. So I didn't get my answer for a while until... \n\n\"What is Endfield?\" \nI asked the huge Sarkaz team lead this question when I first reported to work. Endfield sounds like a really unlucky name for a company working on the frontiers. \nHe did not say anything. Instead, he brought us to the tip of the ship temporarily serving as the Endfield HQ. Told us to have a good look at the planet and the world. \nPlanet and world... We hardly used those terms before. \nThe team lead saw my confusion and smiled. He told me they are the meaning behind Endfield. \n\"Meaning that we gotta use new, pretty words?\" \n\"Meaning that we left our past on Terra.\" \n\nPerhaps he was right. \nBefore I decided to walk through the Cosmic Gate to reach this place, I, and everyone else, had forever left something back in Terra. \nPeople who struggled in the mine shafts, who roamed the wilderness, who worked in the cities, who gave concerts at the spires... Everyone standing shoulder to shoulder aboard the ship, ready to build a future together. \nFate gave us a choice. We chose something different from the past to create a new way of life. \n\nWhat is this world going to be like? I don't know. \nBecause we're building it right now. \nBuildings will rise from the ground and crops will sprout from the earth. \nThis is our resounding answer about the world we're making.",
     "decoDesc": "One of the many prototypes manufactured by Endfield Industries for testing out various specifications. This weapon was intended as a general-purpose platform constructed using high-end materials. It is a vessel of hope for the arsenal engineers of Endfield Industries.",
     "skills": [
       {
-        "name": "Main Attribute Boost [L]",
+        "name": "Main Attribute [L]",
         "description": "Main attribute <@ba.vup>+{mainattr}</>"
       },
       {
-        "name": "Arts Intensity Boost [L]",
+        "name": "Arts Intensity [L]",
         "description": "Arts Intensity <@ba.vup>+{physpell:0}</>"
       },
       {

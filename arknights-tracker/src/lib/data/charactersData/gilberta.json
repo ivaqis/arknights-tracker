@@ -1872,7 +1872,7 @@
                     5.0
                 ]
             },
-            "slowEffect": {
+            "slow": {
                 "dataType": "percent",
                 "data": [
                     0.8,
@@ -1906,7 +1906,7 @@
                     0.3
                 ]
             },
-            "artsSusceptibilityIncreasePerVulnerabilityStack": {
+            "artsSusceptibilityBoostPerVulnerability": {
                 "dataType": "percent",
                 "data": [
                     0.018,

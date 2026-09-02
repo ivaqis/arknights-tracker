@@ -572,7 +572,7 @@
   "eny_0105_wgslime2": {
     "name": "Mudflow δ",
     "nickname": "Mudflow δ",
-    "description": "The \"Tholeroygran \" (archive ID: ACM311δ) is an energized variant of ACM311. It utilizes unique energy pathways and thus maintains a homeostatic temperature significantly below the freezing points of its constituent matter.",
+    "description": "The \"Tholeroygran Dinedon\" (archive ID: ACM311δ) is an energized variant of ACM311. It utilizes unique energy pathways and thus maintains a homeostatic temperature significantly below the freezing points of its constituent matter.",
     "abilities": [
       "This enemy can quickly close the distance from afar. Its attacks can apply Cryo Infliction to operators upon hit."
     ]
@@ -651,7 +651,7 @@
     "nickname": "Quillbeast Blightshade",
     "description": "A manifestation of residual Æther energy that projects the outward form of a quillbeast. This blightshade seems to exhibit far more aggressive rolling and bouncing attacks than its living counterpart, though it may just be a matter of imagination.",
     "abilities": [
-      "After a short charge-up, the Quillbeast Blightshade can summon multiple bolts of lightning and activates Blightshade Energy within a large area. Interrupt the beast quickly when it starts charging up."
+      "After a short charge-up, the Quillbeast Blightshade can summon multiple bolts of lightning and activate Blightshade Energy within a large area. Interrupt the beast quickly when it starts charging up."
     ]
   },
   "eny_0119_kltiger": {
@@ -713,6 +713,72 @@
     "abilities": [
       "When the Stagger meter of Alleikhreos, Chiliarch hits the Stagger Node, he would drop a Foundite Weapon. Approach it with the controlled operator to pick it up and use the weapon to attack him.",
       "When things turn against Alleikhreos, Chiliarch, he will summon doubles from the rift to attack his opponents."
+    ]
+  },
+  "eny_0127_bigents": {
+    "name": "Gloomwald's Rage",
+    "nickname": "Gloomwald's Rage",
+    "description": "A giant battle puppet created by a Snowpriestess. It had taken its master's command to roam and scour the boundless realm of mist until the moment when it realized that it was abandoned, until it became the vessel bearing the entire rage of a deep snowy forest.",
+    "abilities": [
+      "Gloomwald's Rage will leave vines on the ground. An operator who steps on them will continuously take DMG and become Slowed.",
+      "Gloomwald's Rage will summon Woodcraft Wanderers to assist it in battle."
+    ]
+  },
+  "eny_0128_babyents": {
+    "name": "Woodcraft Wanderer",
+    "nickname": "Woodcraft Wanderer",
+    "description": "A small battle puppet created by a Snowpriestess. It is in charge of keeping the Snowy Forest safe. Do not underestimate its fists of wood, for they can smash through stone with hardly any effort.",
+    "abilities": [
+      "A Woodcraft Wanderer with zero shield stacks will trap operators to absorb their energy and restore its shield stacks.",
+      "Woodcraft Wanderers will work with each other when attacking."
+    ]
+  },
+  "eny_0129_slwood": {
+    "name": "Woodcraft Slug",
+    "nickname": "Woodcraft Slug",
+    "description": "A battle puppet created by a Snowpriestess. Its shape resembles that of the Originium Slug. This woodcraft can move quickly and is an excellent burrower.",
+    "abilities": [
+      "Woodcraft Slugs can burrow underground to sneak up on their opponents."
+    ]
+  },
+  "tatget_001_normal": {
+    "name": "Basic Target",
+    "nickname": "Basic Target",
+    "description": "A basic target for novice archers.",
+    "abilities": [
+      "A basic target. HP: 1."
+    ]
+  },
+  "tatget_002_endurance": {
+    "name": "Standard Target",
+    "nickname": "Standard Target",
+    "description": "A standard target, essential for improving one's archery.",
+    "abilities": [
+      "A durable target. HP: 2."
+    ]
+  },
+  "tatget_003_expand": {
+    "name": "Barrier Target",
+    "nickname": "Barrier Target",
+    "description": "A special target that can change its size and block other targets behind it. Try to shatter it first.",
+    "abilities": [
+      "A disruptive, size-changing target. HP: 3."
+    ]
+  },
+  "tatget_004_armor": {
+    "name": "Heavy Target",
+    "nickname": "Heavy Target",
+    "description": "A special target made of high-strength alloy. It is tough, and well-received by archers with immense strength.",
+    "abilities": [
+      "An armored target. HP: 4."
+    ]
+  },
+  "tatget_005_shield": {
+    "name": "Energy Shield",
+    "nickname": "Energy Shield",
+    "description": "An energy shield designed for targets. Master archers enjoy shielding their targets to make them last a few seconds longer.",
+    "abilities": [
+      "A shield that can be applied to any target. HP: 2. Shielded targets cannot be frozen, Resin cannot be actively applied on them, and Resin stacks on shielded targets do not detonate when taking DMG."
     ]
   }
 }

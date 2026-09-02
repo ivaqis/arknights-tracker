@@ -39,7 +39,7 @@
     "battleSkill": {
       "name": "闪耀焦点",
       "description": "对敌人造成<@ba.pulse>电磁伤害</>，随后进入<@ba.key>演唱姿态</>，期间若附近有敌人，则每隔一段时间追加攻击，对敌人造成<@ba.pulse>电磁伤害</>。\n<@ba.key>演唱姿态</>：持续期间提升全队攻击力，并在进入战斗后持续<@ba.heal>治疗</>范围内干员。\n<@ba.info>持续期间战技替换为姿态中止，施放将提前结束演唱姿态且不消耗技力，战技进入短暂冷却。</>",
-      "firstAtkMultiplier": "初次伤害倍率",
+      "1stAtkMultiplier": "初次伤害倍率",
       "additionalAtkDmgMultiplier": "追加攻击伤害倍率",
       "additionalAtkIntervalS": "追加攻击间隔时间（秒）",
       "beatIntervalS": "歌声间隔时间（秒）",

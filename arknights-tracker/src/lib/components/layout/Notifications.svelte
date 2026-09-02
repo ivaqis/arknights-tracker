@@ -52,6 +52,26 @@
                 </span>
               {/if}
             </span>
+            {#if notification.action}
+              {#if notification.action.url}
+                <a
+                  href={notification.action.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-xs text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 underline mt-1 w-fit"
+                >
+                  {notification.action.text}
+                </a>
+              {:else if notification.action.onClick}
+                <button
+                  type="button"
+                  on:click={notification.action.onClick}
+                  class="text-xs text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 underline mt-1 text-left w-fit"
+                >
+                  {notification.action.text}
+                </button>
+              {/if}
+            {/if}
           </div>
         </div>
 

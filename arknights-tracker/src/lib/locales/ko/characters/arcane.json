@@ -85,7 +85,7 @@
         "imprisonmentAndSusceptibilityDurationS": "구속 및 취약 지속 시간(초)",
         "baseSusceptibility": "기초 취약 효과",
         "maxBonusSusceptibilityFromWill": "의지가 제공하는 최대 추가 취약 효과",
-        "willRequiredForMaxBonusSusceptibility": "최대 추가 취약 효과에 필요한 의지 수치"
+        "willForMaxBonusSusceptibility": "최대 추가 취약 효과에 해당하는 의지 수치"
       },
       "baseDmgMultiplier": "기초 피해 배율",
       "baseStagger": "기초 불균형치",
@@ -134,7 +134,7 @@
     "talent1": {
       "levels": [
         "자신의 지능 수치 ≥ 의지 수치일 경우, 스킬 형태가 <@ba.key>진결 · 지혜</>로 전환됩니다. 그 반대의 경우 스킬 형태가 <@ba.key>진결 · 의지</>로 전환됩니다.\n<@ba.info>두 진결의 능력치 조건은 오퍼레이터 레벨 증가, 재능, 잠재 능력, 장비 및 무기가 제공하는 패널 능력치의 영향만 받습니다.</>",
-        "자신의 지능 수치 ≥ 의지 수치일 경우, 스킬 형태가 <@ba.key>진결 · 지혜</>로 전환됩니다. 그 반대의 경우 스킬 형태가 <@ba.key>진결 · 의지</>로 전환됩니다.\n궁극기 <@ba.key>어스름 파훼</>의 효과가 강화됩니다.\n<@ba.key>진결 · 지혜</>:\n- 궁극기 지속 중, 자신이 <@ba.vup>{enhance_rate:0%}</> <#ba.spellenhance>아츠 증폭</>을 획득합니다.\n<@ba.key>진결 · 의지</>:\n- 궁극기 1단계 <@ba.key>어스름 파훼의 진</> 및 2단계 <@ba.key>어스름 파훼의 깨달음</>이 적에게 피해를 줄 때, <@ba.vup>[의지×{spell_vul_rate_per_will:0.00%}]</>의 <#ba.naturalvul>자연 취약</> 및 <#ba.crystvul>냉기 취약</>(최대 <@ba.vup>{spell_vul_rate:0.0%}</>)을 부여합니다. <@ba.vup>{duration:0}</>초 동안 지속, 해당 효과는 중첩되지 않습니다.\n<@ba.info>두 진결의 능력치 조건은 오퍼레이터 레벨 증가, 재능, 잠재 능력, 장비 및 무기가 제공하는 패널 능력치의 영향만 받습니다.</>"
+        "자신의 지능 수치 ≥ 의지 수치일 경우, 스킬 형태가 <@ba.key>진결 · 지혜</>로 전환됩니다. 그 반대의 경우 스킬 형태가 <@ba.key>진결 · 의지</>로 전환됩니다.\n궁극기 <@ba.key>어스름 파훼</>의 효과가 강화됩니다.\n<@ba.key>진결 · 지혜</>:\n- 궁극기 지속 중, 자신은 <@ba.vup>{enhance_rate:0%}</>의 <#ba.spellenhance>아츠 증폭</>을 획득합니다.\n<@ba.key>진결 · 의지</>:\n- 궁극기 1단계 <@ba.key>어스름 파훼의 진</> 및 2단계 <@ba.key>어스름 파훼의 깨달음</>이 적에게 피해를 줄 때, <@ba.vup>[의지×{spell_vul_rate_per_will:0.00%}]</>의 <#ba.naturalvul>자연 취약</> 및 <#ba.crystvul>냉기 취약</>(최대 <@ba.vup>{spell_vul_rate:0.0%}</>)을 부여합니다. <@ba.vup>{duration:0}</>초 동안 지속, 해당 효과는 중첩되지 않습니다.\n<@ba.info>두 진결의 능력치 조건은 오퍼레이터 레벨 증가, 재능, 잠재 능력, 장비 및 무기가 제공하는 패널 능력치의 영향만 받습니다.</>"
       ],
       "name": "전략 수립"
     },
@@ -584,17 +584,17 @@
       {
         "voId": "chr_0032_lizhiyan_mono_skill_ultimate_01",
         "title": "궁극기 1",
-        "text": "흐름은 반복돼도 내가 곧 중심이다!"
+        "text": "내가 곧 진형이 되리라!"
       },
       {
         "voId": "chr_0032_lizhiyan_mono_skill_ultimate_02",
         "title": "궁극기 2",
-        "text": "내가 온 세상을 아우르겠다!"
+        "text": "인간의 뜻을 짊어지리라!"
       },
       {
         "voId": "chr_0032_lizhiyan_mono_skill_ultimate_03",
         "title": "궁극기 3",
-        "text": "산과 바다를 평정하고, 바람을 잠재우리라!"
+        "text": "풍파를 평정하리라!"
       }
     ]
   },

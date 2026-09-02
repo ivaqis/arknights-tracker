@@ -23,6 +23,14 @@
     "name": "物理异常 - 击飞",
     "desc": "对敌人造成<#ba.noguard>破防</>，如果敌人已经<#ba.noguard>破防</>，则叠加一层<#ba.noguard>破防</>，造成<@ba.phy>物理伤害</>并累积<@ba.poise>失衡值</>。"
   },
+  "ba.arrowenergy": {
+    "name": "启示",
+    "desc": "提弗洛斯消耗敌人身上的<@ba.naturalinflict>自然附着</>和敌人受到<#ba.naturalburst>自然爆发</>时可以积攒它，使用连携技可以将它转换成<#ba.arrownum>猎矢</>。"
+  },
+  "ba.arrownum": {
+    "name": "猎矢",
+    "desc": "提弗洛斯可以在<@ba.key>浮空</>状态时消耗它来强化自己的射击，造成更高的伤害同时还能额外触发<#ba.naturalburst>自然爆发</>。"
+  },
   "ba.burning": {
     "name": "法术异常 - 燃烧",
     "desc": "<@ba.burning>燃烧</>状态下，敌人持续受到<@ba.fire>灼热伤害</>。\n<@ba.burning>燃烧</> = 其他<#ba.spellinflict>法术附着</>（<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>）+ <@ba.fireinflict>灼热附着</>"

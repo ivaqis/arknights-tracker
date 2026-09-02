@@ -14,7 +14,7 @@
     "blocTag": "Seš’qa",
     "expertTags": [
       "Situationsbezogene Analyse",
-      "Beweglich-\nkeit"
+      "Beweglich-keit"
     ],
     "giftPreferTags": [
       "Von Wuling-Schwertkämpfern empfohlen"
@@ -43,7 +43,7 @@
       "dmgMultiplier": "SDN-Multiplikator",
       "stagger": "Taumeln",
       "firefangVesperwingsDurationS": "Dauer der Feuerzahn-Vesperflügel (Sek.)",
-      "weaknessEffect": "Schwäche-Effekt",
+      "weakness": "Schwäche",
       "heatSusceptibility": "Hitze-Empfänglichkeit",
       "explosionDmgMultiplier": "Explosions-SDN-Multiplikator"
     },
@@ -117,7 +117,7 @@
         "description": "Situationsbezogene Analyse: Einsicht des Bewahrers \nEr ist geschickt darin, etwas zu enthüllen, egal wie sorgfältig es verborgen wurde."
       },
       "expert2": {
-        "name": "Beweglich-\nkeit",
+        "name": "Beweglich-keit",
         "description": "Beweglichkeit: Hämosensibler Tracker \nKein lebendes Wesen voller Blut könnte ihm jemals entkommen."
       },
       "hobby1": {
@@ -162,7 +162,7 @@
       },
       {
         "voId": "chr_0033_camille_chrup_skill_01",
-        "title": "Fähigkeitsmatrix-Aktivierung",
+        "title": "Talentknoten-Aktivierung",
         "text": "Die Verunreinigungen wurden beseitigt. Das Blut ist jetzt reiner."
       },
       {

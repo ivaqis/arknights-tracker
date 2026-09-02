@@ -43,7 +43,7 @@
       "dmgMultiplier": "Hệ Số ST",
       "stagger": "Suy Sụp",
       "firefangVesperwingsDurationS": "Hiệu Lực Dơi Quái Lửa (giây)",
-      "weaknessEffect": "Hiệu Ứng Suy Yếu",
+      "weakness": "Suy Yếu",
       "heatSusceptibility": "Yếu Hóa Nhiệt",
       "explosionDmgMultiplier": "Hệ Số ST Nổ"
     },
@@ -64,7 +64,7 @@
       "dmgMultiplier": "Hệ Số ST",
       "stagger": "Suy Sụp",
       "spRecovery": "Hồi Điểm KN",
-      "hunterPursuitStateDurationS": "Hiệu Lực Trạng Thái Thợ Săn Truy Kích"
+      "hunterPursuitStateDurationS": "Hiệu Lực Trạng Thái Thợ Săn Truy Kích (giây)"
     },
     "indicator": {
       "levels": [
@@ -162,7 +162,7 @@
       },
       {
         "voId": "chr_0033_camille_chrup_skill_01",
-        "title": "Kích hoạt Ma Trận Năng Lực",
+        "title": "Kích hoạt Mốc Thiên Phú",
         "text": "Tạp chất đã được loại bỏ. Dòng máu giờ đã thuần khiết hơn."
       },
       {

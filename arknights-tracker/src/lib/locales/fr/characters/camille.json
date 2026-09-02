@@ -28,7 +28,7 @@
   "skills": {
     "basicAttack": {
       "name": "Absolution sanguine",
-      "description": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 5 séquences qui inflige des <@ba.fire>DÉG thermiques</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également Déséquilibre <@ba.poise>{poise:0}</> fois. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.fire>DÉG thermiques</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.fire>DÉG thermiques</> et restaure quelques PC.",
+      "description": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 5 séquences qui inflige des <@ba.fire>DÉG thermiques</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également <@ba.poise>{poise:0}</> points de Déséquilibre. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.fire>DÉG thermiques</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.fire>DÉG thermiques</> et restaure quelques PC.",
       "batkSeq1Multiplier": "Multiplicateur d'ATQ-B SÉQ 1",
       "batkSeq2Multiplier": "Multiplicateur d'ATQ-B SÉQ 2",
       "batkSeq3Multiplier": "Multiplicateur d'ATQ-B SÉQ 3",
@@ -43,7 +43,7 @@
       "dmgMultiplier": "Multiplicateur de DÉG",
       "stagger": "Déséquilibre",
       "firefangVesperwingsDurationS": "Durée d'Ailes vespérales de feu (s)",
-      "weaknessEffect": "Effet Faiblesse",
+      "weakness": "Faiblesse",
       "heatSusceptibility": "Sensibilité thermique",
       "explosionDmgMultiplier": "Multiplicateur de DÉG d'explosion"
     },
@@ -162,7 +162,7 @@
       },
       {
         "voId": "chr_0033_camille_chrup_skill_01",
-        "title": "Activation de la matrice de capacités",
+        "title": "Activation du nœud de talent",
         "text": "C'en est fini des impuretés. Le sang est désormais pur."
       },
       {

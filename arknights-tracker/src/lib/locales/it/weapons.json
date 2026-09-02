@@ -5,12 +5,12 @@
     "decoDesc": "Un'arma comunemente utilizzata alla frontiera. Nessuno sa chi l'abbia progettata. Questo pezzo, in particolare, è facilmente realizzabile con i macchinari industriali più comuni.",
     "skills": [
       {
-        "name": "Potenziam. Forza (S)",
+        "name": "Forza [S]",
         "description": "Forza <@ba.vup>+{str}</>"
       },
       {
-        "name": "Potenziamento ATT (S)",
-        "description": "Attacco <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATT [S]",
+        "description": "ATT <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Soppressione: Potenziamento d'emergenza",
@@ -24,12 +24,12 @@
     "decoDesc": "L'ultimo prodotto stand-alone della Mieszko Industries. I progetti erano basati su una reliquia rinvenuta dalla Cabala della Tranquillità. L'arma era dotata di tecnologie segrete che le permettevano di tagliare agilmente qualunque cosa.",
     "skills": [
       {
-        "name": "Potenziam. attributo principale (L)",
+        "name": "Attributo principale [L]",
         "description": "Attributo principale <@ba.vup>+{mainattr}</>"
       },
       {
-        "name": "Potenziamento attacco (L)",
-        "description": "Attacco <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATT [L]",
+        "description": "ATT <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Soppressione: Raffica sferzante",
@@ -43,11 +43,11 @@
     "decoDesc": "Questo taglia catene, un prodotto di fascia alta del Polo di supporto Northmarch, è stato progettato con una tecnologia antiquata. Anche se non viene più prodotta in massa, l'arma continua a dimostrare la propria affidabilità sul campo.",
     "skills": [
       {
-        "name": "Potenziam. Volontà (L)",
+        "name": "Volontà [L]",
         "description": "Volontà <@ba.vup>+{will}</>"
       },
       {
-        "name": "Potenziamento PS (L)",
+        "name": "PS [L]",
         "description": "PS massimi <@ba.vup>+{hp:0.0%}</>"
       },
       {
@@ -62,11 +62,11 @@
     "decoDesc": "Questa flamberga è un'arma specializzata prodotta dalla Endfield e, prendendo ispirazione da vari fenomeni osservati su Talos, è stata dotata di un circuito integrato a base di Originium che migliora le prestazioni dell'essenza.",
     "skills": [
       {
-        "name": "Potenziam. Forza (L)",
+        "name": "Forza [L]",
         "description": "Forza <@ba.vup>+{str}</>"
       },
       {
-        "name": "Potenziamento PS (L)",
+        "name": "PS [L]",
         "description": "PS massimi <@ba.vup>+{hp:0.0%}</>"
       },
       {
@@ -81,11 +81,11 @@
     "decoDesc": "Una speciale arma in edizione limitata della Witching Hour. L'aspetto dello spadone è probabilmente basato su un'antica leggenda. A vederlo, sembra persino in grado di strappare grida di terrore dal regno dei sogni.",
     "skills": [
       {
-        "name": "Potenziam. Forza (L)",
+        "name": "Forza [L]",
         "description": "Forza <@ba.vup>+{str}</>"
       },
       {
-        "name": "Potenziamento probabilità di critico (L)",
+        "name": "Probabilità di critico [L]",
         "description": "Probabilità di critico <@ba.vup>+{crirate:0.0%}</>"
       },
       {
@@ -100,11 +100,11 @@
     "decoDesc": "Uno spadone d'ordinanza creato dalla Fort Forgefane. Sebbene siano in pochi a padroneggiare quest'arma, lo spadone è facile da impugnare ed è il preferito delle nuove reclute da molti anni.",
     "skills": [
       {
-        "name": "Potenziam. Volontà (S)",
+        "name": "Volontà [S]",
         "description": "Volontà <@ba.vup>+{will}</>"
       },
       {
-        "name": "Potenziamento PS (S)",
+        "name": "PS [S]",
         "description": "PS massimi <@ba.vup>+{hp:0.0%}</>"
       },
       {
@@ -119,7 +119,7 @@
     "decoDesc": "Una delle armi d'ordinanza prodotte dalla Endfield Industries, progettata personalmente da Darhoff, ingegnere dell'arsenale della Endfield. Il suo design la rende una scelta funzionale per gli operatori assegnati alle operazioni d'assalto.",
     "skills": [
       {
-        "name": "Potenziam. attributo principale (S)",
+        "name": "Attributo principale [S]",
         "description": "Attributo principale <@ba.vup>+{mainattr}</>"
       },
       {
@@ -134,11 +134,11 @@
     "decoDesc": "Uno spadone d'ordinanza sviluppato dalla Spadamanti Hongshan. L'arma è dotata di un nuovo rivestimento specializzato che offre una protezione eccellente anche nelle condizioni più ostili ed estreme.",
     "skills": [
       {
-        "name": "Potenziam. Forza (M)",
+        "name": "Forza [M]",
         "description": "Forza <@ba.vup>+{str}</>"
       },
       {
-        "name": "Potenziam. vel. di incremento dell'energia suprema (M)",
+        "name": "Velocità SUP [M]",
         "description": "Velocità di incremento dell'energia suprema <@ba.vup>+{usgs:0.0%}</>"
       },
       {
@@ -153,11 +153,11 @@
     "decoDesc": "Un'arma speciale della Mieszko Industries prodotta in serie limitata. Questo era l'ultimo design del progetto di collaborazione tra l'azienda e Cromwell, l'esperto del Torneo dei cavalieri.",
     "skills": [
       {
-        "name": "Potenziam. Forza (M)",
+        "name": "Forza [M]",
         "description": "Forza <@ba.vup>+{str}</>"
       },
       {
-        "name": "Potenziamento PS (M)",
+        "name": "PS [M]",
         "description": "PS massimi <@ba.vup>+{hp:0.0%}</>"
       },
       {
@@ -172,12 +172,12 @@
     "decoDesc": "Un'arma alquanto peculiare prodotta dalla Witching Hour. La lama è ricavata da un blocco di ghiaccio dall'aspetto normalissimo, ma una rara tipologia di Arti di Originium ne rende la superficie letteralmente indistruttibile.",
     "skills": [
       {
-        "name": "Potenziam. Forza (L)",
+        "name": "Forza [L]",
         "description": "Forza <@ba.vup>+{str}</>"
       },
       {
-        "name": "Potenziamento attacco (L)",
-        "description": "Attacco <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATT [L]",
+        "description": "ATT <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Detonazione: Gelo puro",
@@ -191,11 +191,11 @@
     "decoDesc": "Uno spadone di qualità prodotto dalla Spadamanti Hongshan. È più leggero di altri spadoni, ma ugualmente letale.",
     "skills": [
       {
-        "name": "Potenziam. Forza (M)",
+        "name": "Forza [M]",
         "description": "Forza <@ba.vup>+{str}</>"
       },
       {
-        "name": "Potenziamento Intensità delle Arti (M)",
+        "name": "Intensità delle Arti [M]",
         "description": "Intensità delle Arti <@ba.vup>+{physpell:0}</>"
       },
       {
@@ -210,16 +210,16 @@
     "decoDesc": "Un'arma d'ordinanza prodotta dalla Endfield Industries e progettata dal team di prototipazione creativa istituito da Opero, ingegnere dell'arsenale senior. Può essere dotata di moduli diversi a seconda delle esigenze di combattimento.",
     "skills": [
       {
-        "name": "Potenziam. Forza (M)",
+        "name": "Forza [M]",
         "description": "Forza <@ba.vup>+{str}</>"
       },
       {
-        "name": "Potenziamento PS (M)",
+        "name": "PS [M]",
         "description": "PS massimi <@ba.vup>+{hp:0.0%}</>"
       },
       {
         "name": "Efficacia: Volontà incrollabile",
-        "description": "<@ba.vup>+{second_attr_up:0.0%}</> all'attributo secondario.\nQuando l'attaccante applica <#ba.knockdown>Abbattimento</> o <#ba.weak>Indebolimento</>, ottiene <@ba.vup>+{def_up:0.0%}</> di DIF per {duration:0} s.\n<@ba.info>Gli effetti dello stesso tipo non si accumulano.</>"
+        "description": "<@ba.vup>+{second_attr_up:0.0%}</> all'attributo secondario.\nQuando l'attaccante attiva <#ba.knockdown>Abbattimento</> o <#ba.weak>Debolezza</>, ottiene <@ba.vup>+{def_up:0.0%}</> di DIF per {duration:0} s.\n<@ba.info>Gli effetti dello stesso tipo non si accumulano.</>"
       }
     ]
   },
@@ -229,11 +229,11 @@
     "decoDesc": "Un prototipo prodotto dalla Portable Æthertech Labs. Il corpo della lama è realizzato con materiali innovativi che le conferiscono una leggerezza eccezionale senza comprometterne il potenziale distruttivo.",
     "skills": [
       {
-        "name": "Potenziam. Forza (L)",
+        "name": "Forza [L]",
         "description": "Forza <@ba.vup>+{str}</>"
       },
       {
-        "name": "Potenziamento Intensità delle Arti (L)",
+        "name": "Intensità delle Arti [L]",
         "description": "Intensità delle Arti <@ba.vup>+{physpell:0}</>"
       },
       {
@@ -248,12 +248,12 @@
     "decoDesc": "Sono serviti più di dieci anni alla Spadamanti Hongshan per progettare e produrre questo spadone. Vanta dimensioni proporzionate e colpisce con incredibile potenza e ferocia, il che lo rende un armamento pesante di tutto rispetto.",
     "skills": [
       {
-        "name": "Potenziam. Forza (L)",
+        "name": "Forza [L]",
         "description": "Forza <@ba.vup>+{str}</>"
       },
       {
-        "name": "Potenziamento attacco (L)",
-        "description": "Attacco <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATT [L]",
+        "description": "ATT <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Combattività: Fendente amaranto",
@@ -267,11 +267,11 @@
     "decoDesc": "Una delle armi avanzate prodotte dalla Endfield per i suoi operatori. L'arsenale della Endfield ha sfruttato i progetti di Andre per creare un drone in grado di immagazzinare le Arti per poi lanciarle rapidamente in caso di emergenza.",
     "skills": [
       {
-        "name": "Potenziam. Intelletto (S)",
+        "name": "Intelletto [S]",
         "description": "Intelletto <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Potenziamento Arti (S)",
+        "name": "Danni da Arti [S]",
         "description": "Danni da Arti inflitti <@ba.vup>+{spelldam:0.0%}</>"
       },
       {
@@ -286,7 +286,7 @@
     "decoDesc": "Una delle armi d'ordinanza prodotte dalla Endfield Industries, progettata personalmente da Jiminy, ingegnera dell'arsenale della Endfield. Quest'unità delle Arti è molto amata dagli operatori freschi di reclutamento.",
     "skills": [
       {
-        "name": "Potenziam. attributo principale (S)",
+        "name": "Attributo principale [S]",
         "description": "Attributo principale <@ba.vup>+{mainattr}</>"
       },
       {
@@ -301,12 +301,12 @@
     "decoDesc": "Questa unità delle Arti prodotta dalla Endfield Industries vanta un design strutturale audace e una magnifica conduttanza delle Arti, ma è molto difficile da controllare. Gli operatori che riescono a padroneggiarla dimostrano un vero talento.",
     "skills": [
       {
-        "name": "Potenziam. Volontà (S)",
+        "name": "Volontà [S]",
         "description": "Volontà <@ba.vup>+{will}</>"
       },
       {
-        "name": "Potenziamento ATT (S)",
-        "description": "Attacco <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATT [S]",
+        "description": "ATT <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Soppressione: Potenziamento d'emergenza",
@@ -320,11 +320,11 @@
     "decoDesc": "Questa unità delle Arti sviluppata dalla RAYTHEAN Industries è nota per il design minimalista e il peso esiguo. Crearla richiede solo la metà dei materiali necessari per produrre un'unità delle Arti standard.",
     "skills": [
       {
-        "name": "Potenziam. Intelletto (M)",
+        "name": "Intelletto [M]",
         "description": "Intelletto <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Potenziamento danni da elettricità (M)",
+        "name": "Danni da elettricità [M]",
         "description": "Danni da elettricità inflitti <@ba.vup>+{electrondam:0.0%}</>"
       },
       {
@@ -339,12 +339,12 @@
     "decoDesc": "Una delle bizzarre unità delle Arti prodotte dalla Witching Hour. Ha un design controintuitivo con una ridotta compatibilità con le Arti di Originium, che serve solo a evidenziare la contorta logica della stregoneria degli antichi Teekaz.",
     "skills": [
       {
-        "name": "Potenziam. Intelletto (M)",
+        "name": "Intelletto [M]",
         "description": "Intelletto <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Potenziamento attacco (M)",
-        "description": "Attacco <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATT [M]",
+        "description": "ATT <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Crepuscolo: Pira splendente",
@@ -358,11 +358,11 @@
     "decoDesc": "Realizzato dalla Portable Æthertech Labs, questo prodotto è dotato di componenti metallici incisi a mano da adepti cræft per creare acqueforti corrispondenti a quelle delle parti in tillite. Il risultato è un'unità delle Arti con un circuito di lancio unico.",
     "skills": [
       {
-        "name": "Potenziam. Volontà (L)",
+        "name": "Volontà [L]",
         "description": "Volontà <@ba.vup>+{will}</>"
       },
       {
-        "name": "Potenziamento danni da natura (L)",
+        "name": "Danni da natura [L]",
         "description": "Danni da natura inflitti <@ba.vup>+{naturaldam:0.0%}</>"
       },
       {
@@ -377,11 +377,11 @@
     "decoDesc": "Un'unità delle Arti sviluppata dalla Spadamanti Hongshan utilizzando la xiranite. Data la natura mutevole del raro materiale che la compone, può essere utilizzata efficacemente solo da chi possiede altissimi livelli di concentrazione e precisione.",
     "skills": [
       {
-        "name": "Potenziam. Volontà (M)",
+        "name": "Volontà [M]",
         "description": "Volontà <@ba.vup>+{will}</>"
       },
       {
-        "name": "Potenziam. vel. di incremento dell'energia suprema (M)",
+        "name": "Velocità SUP [M]",
         "description": "Velocità di incremento dell'energia suprema <@ba.vup>+{usgs:0.0%}</>"
       },
       {
@@ -396,11 +396,11 @@
     "decoDesc": "Un'unità delle Arti sviluppata dal Polo di supporto Northmarch. Senza dubbio, è quella con la migliore conduttanza delle Arti di Originium. Solo gli artisti più capaci sono in grado di maneggiarla.",
     "skills": [
       {
-        "name": "Potenziam. attributo principale (L)",
+        "name": "Attributo principale [L]",
         "description": "Attributo principale <@ba.vup>+{mainattr}</>"
       },
       {
-        "name": "Potenziamento Intensità delle Arti (L)",
+        "name": "Intensità delle Arti [L]",
         "description": "Intensità delle Arti <@ba.vup>+{physpell:0}</>"
       },
       {
@@ -415,11 +415,11 @@
     "decoDesc": "Un'unità delle Arti sviluppata dalla Witching Hour. Al di là dei suoi basilari circuiti di Originium, il resto dell'unità è stato costruito con un materiale ignoto. Si può davvero realizzare qualcosa del genere su Talos-II?",
     "skills": [
       {
-        "name": "Potenziam. Intelletto (L)",
+        "name": "Intelletto [L]",
         "description": "Intelletto <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Potenziamento Arti (L)",
+        "name": "Danni da Arti [L]",
         "description": "Danni da Arti inflitti <@ba.vup>+{spelldam:0.0%}</>"
       },
       {
@@ -434,11 +434,11 @@
     "decoDesc": "Sviluppata dalla Mieszko Industries, quest'unità delle Arti è dotata di uno speciale telaio d'acciaio D64 e una serie di moduli personalizzabili. Il suo aspetto ricorda i fuochi d'artificio degli antichi Tornei cavallereschi.",
     "skills": [
       {
-        "name": "Potenziam. Volontà (L)",
+        "name": "Volontà [L]",
         "description": "Volontà <@ba.vup>+{will}</>"
       },
       {
-        "name": "Potenziamento PS (L)",
+        "name": "PS [L]",
         "description": "PS massimi <@ba.vup>+{hp:0.0%}</>"
       },
       {
@@ -453,11 +453,11 @@
     "decoDesc": "Un classico di altissima qualità della RAYTHEAN, il cui prototipo è stato utilizzato nella Prima guerra degli Aggeloi. Da allora l'arma è stata sottoposta a numerosi aggiornamenti e ottimizzazioni, e la sua versione moderna offre un'incredibile potenza di fuoco che garantisce una maggiore protezione e, di conseguenza, consegne più sicure.",
     "skills": [
       {
-        "name": "Potenziam. Volontà (L)",
+        "name": "Volontà [L]",
         "description": "Volontà <@ba.vup>+{will}</>"
       },
       {
-        "name": "Potenziam. vel. di incremento dell'energia suprema (L)",
+        "name": "Velocità SUP [L]",
         "description": "Velocità di incremento dell'energia suprema <@ba.vup>+{usgs:0.0%}</>"
       },
       {
@@ -472,11 +472,11 @@
     "decoDesc": "Un'unità delle Arti progettata dalla Mieszko Industries per la Cabala della Tranquillità. Ogni singola fase, dalla progettazione alla convalida fino alla produzione e al perfezionamento, è stata supervisionata da un chierico della Cabala.",
     "skills": [
       {
-        "name": "Potenziam. Volontà (M)",
+        "name": "Volontà [M]",
         "description": "Volontà <@ba.vup>+{will}</>"
       },
       {
-        "name": "Potenziamento efficacia della Cura (M)",
+        "name": "Efficacia della Cura [M]",
         "description": "<@ba.vup>+{heal:0.0%}</> di efficacia della Cura"
       },
       {
@@ -491,11 +491,11 @@
     "decoDesc": "Un prodotto appartenente alla linea d'élite della Mieszko Industries. Quest'arma offre un'eccellente conduttanza delle Arti di Originium, il che la rende più pratica rispetto ad altre opzioni molto popolari che si concentrano più sullo stile che sulla sostanza.",
     "skills": [
       {
-        "name": "Potenziam. Intelletto (L)",
+        "name": "Intelletto [L]",
         "description": "Intelletto <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Potenziamento efficacia della Cura (L)",
+        "name": "Efficacia della Cura [L]",
         "description": "<@ba.vup>+{heal:0.0%}</> di efficacia della Cura"
       },
       {
@@ -510,11 +510,11 @@
     "decoDesc": "Un'arma d'ordinanza prodotta dalla Endfield Industries e progettata dal team di prototipazione creativa istituito da Opero, ingegnere dell'arsenale senior. La sua potenza dipende dalla padronanza delle Arti di Originium dell'utente.",
     "skills": [
       {
-        "name": "Potenziam. Intelletto (M)",
+        "name": "Intelletto [M]",
         "description": "Intelletto <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Potenziamento Intensità delle Arti (M)",
+        "name": "Intensità delle Arti [M]",
         "description": "Intensità delle Arti <@ba.vup>+{physpell:0}</>"
       },
       {
@@ -529,12 +529,12 @@
     "decoDesc": "Un'unità delle Arti sviluppata dalla Spadamanti Hongshan e caratterizzata da un'integrazione coraggiosa di nuovi amalgami di xiranite. I materiali impiegati per questa unità delle Arti offrono prestazioni eccellenti che ne migliorano notevolmente l'efficacia, ma l'utilizzo può essere difficoltoso.",
     "skills": [
       {
-        "name": "Potenziam. Volontà (L)",
+        "name": "Volontà [L]",
         "description": "Volontà <@ba.vup>+{will}</>"
       },
       {
-        "name": "Potenziamento attacco (L)",
-        "description": "Attacco <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATT [L]",
+        "description": "ATT <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Soppressione: Lampo folgorante",
@@ -548,11 +548,11 @@
     "decoDesc": "Un set di unità delle Arti standard progettate e sviluppate dagli Spadamanti Hongshan. Queste armi sono attualmente in dotazione ai membri della squadra tattica d'élite di Yinglung. Sono note per la solidità e le prestazioni eccellenti, nonché per la loro affidabilità in ambienti ostili.",
     "skills": [
       {
-        "name": "Potenziam. Intelletto (L)",
+        "name": "Intelletto [L]",
         "description": "Intelletto <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Potenziam. vel. di incremento dell'energia suprema (L)",
+        "name": "Velocità SUP [L]",
         "description": "Velocità di incremento dell'energia suprema <@ba.vup>+{usgs:0.0%}</>"
       },
       {
@@ -567,11 +567,11 @@
     "decoDesc": "Un prodotto classico della Endfield Industries, molto utilizzato durante la Spedizione polare. Queste unità delle Arti vantano un vistoso rivestimento giallo-oro che le rende immediatamente visibili, anche nelle tormente più forti.",
     "skills": [
       {
-        "name": "Potenziam. Volontà (L)",
+        "name": "Volontà [L]",
         "description": "Volontà <@ba.vup>+{will}</>"
       },
       {
-        "name": "Potenziamento danni da elettricità (L)",
+        "name": "Danni da elettricità [L]",
         "description": "Danni da elettricità inflitti <@ba.vup>+{electrondam:0.0%}</>"
       },
       {
@@ -586,16 +586,54 @@
     "decoDesc": "Sulla base del progetto vincitore di un concorso di design concettuale organizzato dalla Mieszko Industries. L'accelerazione del proiettile con una precisione nell'ordine dei microsecondi e le eccezionali prestazioni di orbita sono rese possibili dall'integrazione della conoscenza unica degli ambienti a gravità zero da parte del progettista.",
     "skills": [
       {
-        "name": "Potenziam. Intelletto (L)",
+        "name": "Intelletto [L]",
         "description": "Intelletto <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Potenziam. vel. di incremento dell'energia suprema (L)",
+        "name": "Velocità SUP [L]",
         "description": "Velocità di incremento dell'energia suprema <@ba.vup>+{usgs:0.0%}</>"
       },
       {
         "name": "Efficacia: Ciclo di feedback",
         "description": "Danni da natura inflitti <@ba.vup>+{nature_dmg_up:0.0%}</>.\nDopo aver applicato <#ba.spellvul>Suscettibilità alle Arti</> o <#ba.spellinflict>Afflizione da Arti</> con un'abilità combo, l'attaccante ottiene <@ba.vup>+{atk_up:0.0%}</> di ATT mentre gli altri operatori nella squadra ottengono <@ba.vup>+{atk_up2:0.0%}</> di ATT. Durata: {duration:0} s.\n<@ba.info>Accumuli massimi per gli effetti dello stesso tipo: {max_stack:0}. Ciascun accumulo ha una sua durata indipendente.</>"
+      }
+    ]
+  },
+  "umbraOfFrigidEventide": {
+    "name": "Umbra of Frigid Eventide",
+    "description": "Il sole non era ancora sorto.\nIl guerriero della Tribù del Pino Freddo era già sveglio. Stringeva in mano una piccola matita carboncino e il foglio su cui scriveva era appena più grande del palmo della sua mano.\nOgni spazio contava, perché aveva molte cose da scrivere. Tracciava con cura le parole, leggendole una per una ad alta voce. Sebbene cercasse di non farsi sentire, la donna accanto a lui aprì l'occhio che le restava, gli assestò un calcio violento e disse con freddezza: \"Silenzio\".\nIl guerriero le rivolse un sorriso impacciato e, senza osare fiatare, riprese a recitare mentalmente ciò che stava scrivendo: \"Cara mamma, il ghiaccio si è sciolto e abbiamo visto del muschio verde. È piacevole al tatto. È molto bello. Credo che da te sia arrivata la primavera. Il fiume starà scorrendo sotto la tua casa sull'albero e irrigando le piante del giardino. I crestaloni saranno probabilmente tornati a posarsi sotto il tetto e, quando aprirai la finestra, voleranno dentro casa per posarsi sulla tua mano. Forse un giorno anch'io potrò volare a casa da te come i crestaloni e restare al tuo fianco, dove la primavera è eterna, e…\"\nEra una parola che sua madre pronunciava spesso. Il guerriero la ricordava, ma aveva dimenticato come si scrivesse. Non avendo altra scelta, smise di scrivere e rivolse alla donna uno sguardo che evocava rassegnazione e una sincera richiesta d'aiuto.\nNelle parole infastidite della donna si avvertiva una punta di curiosità: \"Perché hai smesso di scrivere?\"\n\"C'è una parola a cui non so dare forma.\"\n\"E qual è questa parola?\"\n\"S-Santuario.\"\n\"Non l'hai mai imparata?\"\n\"La mamma se n'è andata prima di insegnarmela.\"\n\"Ooooooh…\" La donna trascinò la vocale con tono dispiaciuto. Poi alzò una mano e tracciò la parola nell'aria: un intreccio di archi sinuosi e linee rette, simile alle scie lasciate in aria da un crestalone che sfreccia nel cielo.\nLa prima volta la tracciò così rapidamente che gli occhi stanchi del guerriero riuscirono a malapena a seguire la punta del suo dito. Vedendo le sue sopracciglia aggrottate, ridacchiò e tracciò di nuovo la parola.\nInsieme, il carboncino del guerriero, il dito della donna, le linee sul foglio e la forma nell'aria diedero vita a quella parola. Prese forma lentamente, come un crestalone che scende dolcemente dal cielo per posarsi a terra.\nIl foglio era ormai pieno di parole. Il guerriero sorrise soddisfatto e lo gettò nel fuoco del bivacco. La carta crepitò mentre bruciava e la luce del fuoco danzò nell'occhio della donna, prima di spegnersi all'angolo del suo sguardo.\n\"Credi che non le arriverà mai?\"\nIl guerriero annuì. La donna sospirò. Seguì un momento di silenzio, poi all'improvviso parlò di nuovo: \"Come ti chiami, ragazzo?\"\n\"Björn, della Tribù del Pino Freddo.\"\nLa donna si abbandonò ai ricordi, esprimendoli un frammento alla volta: \"La Tribù del Pino Freddo… Ah, sì. Ricordo la vostra capotribù… Una guerriera coraggiosa, davvero ammirevole. Cadde senza mai venir meno al suo credo.\"\n\"Sono stato fortunato: sono cresciuto con lei\". Il volto del guerriero si arrossì mentre annuiva con gratitudine.\n\"Possa ella tornare al fianco di Sami, in un luogo di eterna primavera, il…\"\n\"Il Santuario\". Il guerriero pronunciò quella parola insieme alla donna, mentre lei sorrideva.\nIl sole non era ancora sorto, ma i corni da guerra già risuonavano. Gli Aggeloi apparvero all'orizzonte, avanzando verso il fronte come un'immensa armata.\nIl guerriero della Tribù del Pino Freddo era già in piedi. Raccolse la lancia, aiutò la donna a rialzarsi e, insieme ai soldati, si diresse contro la marea aggeloide.\nAlle loro spalle, il fuoco consumò lentamente il foglio. Alcune scintille si levarono dalle fiamme e si dispersero, trasportate lontano dal vento.",
+    "decoDesc": "Un'arma forgiata dalla Fort Forgefane. Racchiusa in un telaio elegante e aerodinamico, con un rivestimento speciale progettato per operazioni di combattimento in ambienti scarsamente illuminati.",
+    "skills": [
+      {
+        "name": "Agilità [L]",
+        "description": "Agilità <@ba.vup>+{agi}</>"
+      },
+      {
+        "name": "ATT [L]",
+        "description": "ATT <@ba.vup>+{atk:0.0%}</>"
+      },
+      {
+        "name": "Detonazione: Istinto del cacciatore",
+        "description": "<@ba.vup>+{spell_dmg_up:0.0%}</> di danni da Arti inflitti.\nDopo aver usato un'abilità di combattimento, l'attaccante ottiene <@ba.vup>+{phy_spell_up:0}</> di Intensità delle Arti e {wind_grant:0} accumuli di <@ba.key>Forma del vento</> per {wind_duration:0} s.\n<@ba.info>L'intero effetto non si accumula. Accumuli massimi di <@ba.key>Forma del vento</>: {wind_grant:0}.</>\nQuando l'attaccante applica un'<#ba.spellburst>Esplosione delle Arti</>, <#ba.consume>consuma</> 1 accumulo di <@ba.key>Forma del vento</> per conferire all'attaccante <@ba.vup>+{spell_dmg_up2:0.0%}</> di danni da Arti inflitti per {spell_dmg_duration:0} s.\n<@ba.info>Questo effetto può raggiungere {spell_dmg_max_stack:0} accumuli. Ciascun accumulo ha una sua durata indipendente. L'effetto si attiva una sola volta ogni 0,1 s.</>"
+      }
+    ]
+  },
+  "sufferingsEnd": {
+    "name": "Suffering's End",
+    "description": "\"La sofferenza avrà fine. Per tutti i Sarkaz... arriverà la pace...\"\nL'anziano Sarkaz ripensava a quelle parole mentre puliva l'unità delle Arti che teneva in mano. Intorno a lui si susseguiva un flusso incessante di turisti, giunti con familiari e amici. I Lich creavano spettacolari fuochi d'artificio con le loro Arti, mentre i bambini si arrampicavano sui guerrieri Gargoyle. Persone di ogni credo, tribù e razza esultavano, proprio come fecero il giorno in cui Seš'qa aveva preso il volo e come facevano a ogni open day che celebrava la fine della guerra.\n\"È questa... la nostra 'Fine della sofferenza'?\"\nL'anziano Sarkaz raccolse rapidamente i suoi effetti personali. Aveva già messo da parte abbastanza Crediti-T per viaggiare tra le varie città della Cintura e da anni progettava di lasciare Seš'qa per visitare la Cintura civilizzata.\n\nIl viaggio procedette senza intoppi fino a quel giorno. Era disteso su un enorme masso a osservare il cielo stellato quando il bollitore da caffè all'Originium accanto a lui si spense all'improvviso con un sonoro scatto. All'inizio rimase soltanto perplesso, poi udì esplosioni, grida e urla.\nCon lo sguardo vigile osservò la brumafiamma che si propagava. Una famiglia di tre persone fuggiva a piedi attraverso le terre selvagge, inseguita da una trentina di figure indistinte armate. Fenditerra. L'anziano Sarkaz assistette alla scena... e non fece nulla. Si distese di nuovo sul masso per riposare.\n\nEra semplicemente troppo vecchio e troppo ordinario. Non era un Gargoyle dotato di un corpo solido come un bastione, né un Lich capace di brandire Arti esoteriche e letali, né un Nachzehrer dalla terrificante forza sovrumana. Era soltanto un Sarkaz di sangue misto che aveva avuto la fortuna di sopravvivere alla Guerra degli Aggeloi, alla Guerra del Disonore e alla Guerra jakubina, che aveva annientato il Signore della guerra delle terre selvagge. Conosceva soltanto qualche strano trucco per sopravvivere.\nMa non era trascorsa neppure una decina di secondi quando il Sarkaz estrasse l'unità delle Arti e balzò giù dall'enorme masso. Gli tornò in mente quella folle oratrice che aveva tenuto un discorso e fatto una promessa ai Sarkaz: un testo che chiaramente non aveva scritto lei. Eppure c'è una cosa che non cambia mai: perché la sofferenza abbia fine, qualcuno deve fare qualcosa.\nPulì delicatamente l'unità delle Arti. Sulla superficie dell'involucro si rifletteva il volto di un Sarkaz estremamente più vecchio di quello che ricordava.\n\nUna freccia colpì il padre in fuga che stringeva il proprio bambino tra le braccia, facendoli entrambi crollare a terra. La madre gettò via il dispositivo di comunicazione e cercò disperatamente di trascinare in salvo il marito, ma invano. Fu allora che i Fenditerra li raggiunsero e le terre selvagge, immerse nella notte, piombarono all'improvviso nel silenzio.\nI Fenditerra avanzarono da ogni lato, ululando e schernendo la famiglia. Sollevarono le armi senza alcuna pietà. Il padre e la madre spalancarono le braccia nel disperato tentativo di proteggere il loro bambino, mentre la luce delle torce si rifletteva sulle lame, sui dardi delle balestre e sulle lacrime che rigavano il volto del piccolo.\nAll'improvviso, alle spalle dei Fenditerra apparve una grande figura sormontata da due corna. Nessun rumore. Nessun preavviso. Un'oscurità più nera della notte si diffuse tutt'intorno e, uno dopo l'altro, i Fenditerra ne vennero inghiottiti, urlando mentre la vita li abbandonava. Il panico si impadronì dei superstiti. Cercarono disperatamente di capire da dove fosse arrivato quell'attacco, ma tutto ciò che riuscirono a udire furono le parole trasportate dal vento della notte, pronunciate nell'antica lingua dei Sarkaz, con voce roca...\n\"La mia sofferenza è giunta al termine. La vostra, invece... è appena cominciata.\"",
+    "decoDesc": "Una delle strane unità delle Arti della Witching Hour. Sembra essere intrisa di una forma piuttosto insolita di Arti di Originium che trasmette al portatore un misterioso senso di sicurezza.",
+    "skills": [
+      {
+        "name": "Agilità [L]",
+        "description": "Agilità <@ba.vup>+{agi}</>"
+      },
+      {
+        "name": "Danni da natura [L]",
+        "description": "Danni da natura inflitti <@ba.vup>+{naturaldam:0.0%}</>"
+      },
+      {
+        "name": "Detonazione: Alba della lunga notte",
+        "description": "<@ba.vup>+{phy_spell_up:0}</> di intensità delle Arti.\nQuando l'attaccante applica un'<#ba.spellburst>Esplosione delle Arti</>, ottiene <@ba.vup>+{nature_dmg_up:0.0%}</> di danni da natura inflitti per {duration:0} s.\n<@ba.info>Accumuli massimi: {max_stack:0}. Ciascun accumulo ha una sua durata indipendente. L'effetto si attiva una sola volta ogni 0,1 s.</>\nAl raggiungimento di {max_stack:0} accumuli, l'effetto descritto conferisce un ulteriore <@ba.vup>+{nature_dmg_up2:0.0%}</> di danni da natura inflitti.\n<@ba.info>Questo effetto non si accumula.</>"
       }
     ]
   },
@@ -605,12 +643,12 @@
     "decoDesc": "Una delle armi avanzate prodotte dalla Endfield per i suoi operatori. Quest'arma leggera dal design affusolato presenta un buon bilanciamento e ricorda a molti le lance d'ordinanza un tempo utilizzate dagli operatori di classe Avanguardia della Rhodes Island.",
     "skills": [
       {
-        "name": "Potenziam. Agilità (S)",
+        "name": "Agilità [S]",
         "description": "Agilità <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Potenziamento ATT (S)",
-        "description": "Attacco <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATT [S]",
+        "description": "ATT <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Ispirazione: L'inizio di una saga",
@@ -624,11 +662,11 @@
     "decoDesc": "Una lancia sperimentale progettata dalla Endfield Industries e prodotta per brevissimo tempo. Quest'arma è dotata di design modulari che consentono operazioni di smontaggio e rimontaggio in campi di battaglia complessi e ostili.",
     "skills": [
       {
-        "name": "Potenziam. Forza (M)",
+        "name": "Forza [M]",
         "description": "Forza <@ba.vup>+{str}</>"
       },
       {
-        "name": "Potenziam. vel. di incremento dell'energia suprema (M)",
+        "name": "Velocità SUP [M]",
         "description": "Velocità di incremento dell'energia suprema <@ba.vup>+{usgs:0.0%}</>"
       },
       {
@@ -643,11 +681,11 @@
     "decoDesc": "Un classico del processo manifatturiero personalizzabile della RAYTHEAN, quest'arma è basata su una lancia militare d'ordinanza e vanta una vasta gamma di funzioni speciali e componenti estetici adattabili.",
     "skills": [
       {
-        "name": "Potenziam. Volontà (M)",
+        "name": "Volontà [M]",
         "description": "Volontà <@ba.vup>+{will}</>"
       },
       {
-        "name": "Potenziamento danni da elettricità (M)",
+        "name": "Danni da elettricità [M]",
         "description": "Danni da elettricità inflitti <@ba.vup>+{electrondam:0.0%}</>"
       },
       {
@@ -662,11 +700,11 @@
     "decoDesc": "Una vecchia arma del Polo di supporto Northmarch, poco maneggevole, ma con un'incredibile capacità offensiva. Pochi la usano, visto il suo ingente peso, ma i più forzuti la apprezzano per eseguire mosse potenti e plateali.",
     "skills": [
       {
-        "name": "Potenziam. Agilità (L)",
+        "name": "Agilità [L]",
         "description": "Agilità <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Potenziam. vel. di incremento dell'energia suprema (L)",
+        "name": "Velocità SUP [L]",
         "description": "Velocità di incremento dell'energia suprema <@ba.vup>+{usgs:0.0%}</>"
       },
       {
@@ -681,11 +719,11 @@
     "decoDesc": "Questa lancia d'ordinanza creata dalla Fort Forgefane per i soldati comuni è dotata di una punta estremamente affilata, progettata apposta per combattere contro gli Aggeloi.",
     "skills": [
       {
-        "name": "Potenziam. Volontà (S)",
+        "name": "Volontà [S]",
         "description": "Volontà <@ba.vup>+{will}</>"
       },
       {
-        "name": "Potenziamento Arti (S)",
+        "name": "Danni da Arti [S]",
         "description": "Danni da Arti inflitti <@ba.vup>+{spelldam:0.0%}</>"
       },
       {
@@ -700,7 +738,7 @@
     "decoDesc": "Una delle armi d'ordinanza prodotte dalla Endfield Industries, progettata personalmente da Opero, ingegnere dell'arsenale senior della Endfield. Grazie al suo design ergonomico, può essere utilizzata agevolmente anche dagli operatori freschi di reclutamento.",
     "skills": [
       {
-        "name": "Potenziam. attributo principale (S)",
+        "name": "Attributo principale [S]",
         "description": "Attributo principale <@ba.vup>+{mainattr}</>"
       },
       {
@@ -715,11 +753,11 @@
     "decoDesc": "Un prodotto di fascia media della Mieszko Industries. È una lancia rara ma molto popolare per via dell'aspetto vintage, che ricorda il dardo di una balestra, e per le sue ottime prestazioni sul campo.",
     "skills": [
       {
-        "name": "Potenziam. Agilità (L)",
+        "name": "Agilità [L]",
         "description": "Agilità <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Potenziamento danni fisici (L)",
+        "name": "Danni fisici [L]",
         "description": "Danni fisici inflitti <@ba.vup>+{phydam:0.0%}</>"
       },
       {
@@ -734,12 +772,12 @@
     "decoDesc": "Un'arma sperimentale prodotta secondo gli standard più elevati del Polo di supporto Northmarch, il cui prototipo era stato progettato dall'ormai chiuso Centro di ricerca aerospaziale. La lancia deve le sue prestazioni turbo a una serie di motori aerei a compressione ad Originium.",
     "skills": [
       {
-        "name": "Potenziam. attributo principale (L)",
+        "name": "Attributo principale [L]",
         "description": "Attributo principale <@ba.vup>+{mainattr}</>"
       },
       {
-        "name": "Potenziamento attacco (L)",
-        "description": "Attacco <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATT [L]",
+        "description": "ATT <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Soppressione: Astrofisica",
@@ -753,11 +791,11 @@
     "decoDesc": "Una lancia sperimentale sviluppata dalla Spadamanti Hongshan. L'asta dell'arma è stata forgiata con una lega speciale che le conferisce forza e resistenza.",
     "skills": [
       {
-        "name": "Potenziam. Agilità (L)",
+        "name": "Agilità [L]",
         "description": "Agilità <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Potenziamento danni fisici (L)",
+        "name": "Danni fisici [L]",
         "description": "Danni fisici inflitti <@ba.vup>+{phydam:0.0%}</>"
       },
       {
@@ -772,11 +810,11 @@
     "decoDesc": "Un'arma d'ordinanza prodotta dalla Endfield Industries e progettata dal team di prototipazione creativa istituito da Opero, ingegnere dell'arsenale senior. Chi la brandisce è libero di apportare modifiche al modulo della punta.",
     "skills": [
       {
-        "name": "Potenziam. Volontà (M)",
+        "name": "Volontà [M]",
         "description": "Volontà <@ba.vup>+{will}</>"
       },
       {
-        "name": "Potenziamento danni fisici (M)",
+        "name": "Danni fisici [M]",
         "description": "Danni fisici inflitti <@ba.vup>+{phydam:0.0%}</>"
       },
       {
@@ -791,11 +829,11 @@
     "decoDesc": "Una serie di prodotti di punta della Mieszko Industries, realizzata su misura per i più famosi artisti teatrali. Il design accattivante e sgargiante a forma di microfono si unisce a prestazioni e potenza straordinarie. Quest'arma ha lasciato un'impressione indelebile su tutti coloro che l'hanno provata.",
     "skills": [
       {
-        "name": "Potenziam. Volontà (L)",
+        "name": "Volontà [L]",
         "description": "Volontà <@ba.vup>+{will}</>"
       },
       {
-        "name": "Potenziamento efficacia della Cura (L)",
+        "name": "Efficacia della Cura [L]",
         "description": "<@ba.vup>+{heal:0.0%}</> di efficacia della Cura"
       },
       {
@@ -810,11 +848,11 @@
     "decoDesc": "Un'arma ad asta realizzata dalla Witching Hour che, in occasione dell'open day di Seš'qa, ne produsse una speciale edizione commemorativa. Il corpo della lancia è stato trattato con una speciale placcatura per ottenere una finitura funzionale e al contempo esteticamente gradevole.",
     "skills": [
       {
-        "name": "Potenziam. Agilità (L)",
+        "name": "Agilità [L]",
         "description": "Agilità <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Potenziamento danni da fuoco (L)",
+        "name": "Danni da fuoco [L]",
         "description": "Danni da fuoco inflitti <@ba.vup>+{firedam:0.0%}</>"
       },
       {
@@ -829,11 +867,11 @@
     "decoDesc": "Uno dei migliori prodotti della Mieszko Industries. La punta della lancia è realizzata con una lega speciale che offre un'invidiabile robustezza e lame affilate come rasoi. Queste armi sono eleganti, raffinate e incredibilmente costose da produrre, e vengono solitamente impugnate da persone che desiderano mostrare il proprio prestigio.",
     "skills": [
       {
-        "name": "Potenziam. Volontà (L)",
+        "name": "Volontà [L]",
         "description": "Volontà <@ba.vup>+{will}</>"
       },
       {
-        "name": "Potenziamento efficacia della Cura (L)",
+        "name": "Efficacia della Cura [L]",
         "description": "<@ba.vup>+{heal:0.0%}</> di efficacia della Cura"
       },
       {
@@ -848,7 +886,7 @@
     "decoDesc": "Armi d'ordinanza prodotte dalla Endfield Industries, progettate personalmente da Peco, ingegnere dell'arsenale della Endfield. Le munizioni incise e le armi da fuoco non sono più un'esclusiva dei Sankta.",
     "skills": [
       {
-        "name": "Potenziam. attributo principale (S)",
+        "name": "Attributo principale [S]",
         "description": "Attributo principale <@ba.vup>+{mainattr}</>"
       },
       {
@@ -863,12 +901,12 @@
     "decoDesc": "Prodotto di fascia media della Mieszko Industries, queste pistole sono la combinazione perfetta tra il design classico di Laterano e una costruzione industriale moderna. Il rivestimento blu metallico è la ciliegina sulla torta di queste magnifiche opere d'arte.",
     "skills": [
       {
-        "name": "Potenziam. Intelletto (S)",
+        "name": "Intelletto [S]",
         "description": "Intelletto <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Potenziamento ATT (S)",
-        "description": "Attacco <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATT [S]",
+        "description": "ATT <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Soppressione: Potenziamento d'emergenza",
@@ -882,11 +920,11 @@
     "decoDesc": "Pistole d'ordinanza create dalla Fort Forgefane per i soldati comuni dell'Ordine del Giuramento d'acciaio. Queste armi erano molto popolari per via del meccanismo di fuoco semplificato e per l'incredibile potere d'arresto.",
     "skills": [
       {
-        "name": "Potenziam. Forza (S)",
+        "name": "Forza [S]",
         "description": "Forza <@ba.vup>+{str}</>"
       },
       {
-        "name": "Potenziamento Arti (S)",
+        "name": "Danni da Arti [S]",
         "description": "Danni da Arti inflitti <@ba.vup>+{spelldam:0.0%}</>"
       },
       {
@@ -901,11 +939,11 @@
     "decoDesc": "La RAYTHEAN Industries ha sviluppato queste pistole ad alta energia apposta per la frontiera. Grazie alla loro affidabilità in ambienti ostili, sono diventate lo standard tra gli esploratori delle terre selvagge.",
     "skills": [
       {
-        "name": "Potenziam. Forza (M)",
+        "name": "Forza [M]",
         "description": "Forza <@ba.vup>+{str}</>"
       },
       {
-        "name": "Potenziamento danni da fuoco (M)",
+        "name": "Danni da fuoco [M]",
         "description": "Danni da fuoco inflitti <@ba.vup>+{firedam:0.0%}</>"
       },
       {
@@ -920,11 +958,11 @@
     "decoDesc": "La novità dell'anno della Mieszko Industries. Usiamole per celebrare il ricordo del grande navigatore che ci ha guidati nel nostro interminabile viaggio su Talos-II.",
     "skills": [
       {
-        "name": "Potenziam. Intelletto (L)",
+        "name": "Intelletto [L]",
         "description": "Intelletto <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Potenziamento danni da ghiaccio (L)",
+        "name": "Danni da ghiaccio [L]",
         "description": "Danni da ghiaccio inflitti <@ba.vup>+{crystdam:0.0%}</>"
       },
       {
@@ -939,11 +977,11 @@
     "decoDesc": "Un progetto su commissione sviluppato dalla Portable Æthertech Labs. Gli adepti cræft sono stati così audaci da rivestire le armi con la recolite, sulla quale sono stati incisi dei motivi speciali.",
     "skills": [
       {
-        "name": "Potenziam. Agilità (M)",
+        "name": "Agilità [M]",
         "description": "Agilità <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Potenziamento Arti (M)",
+        "name": "Danni da Arti [M]",
         "description": "Danni da Arti inflitti <@ba.vup>+{spelldam:0.0%}</>"
       },
       {
@@ -958,11 +996,11 @@
     "decoDesc": "Pistole sviluppate dalla Spadamanti Hongshan. Per rispettare gli approcci basilari al design delle armi della ASH, sono state implementate funzioni di riduzione del peso e ottimizzazioni a impugnatura e maneggevolezza.",
     "skills": [
       {
-        "name": "Potenziam. Agilità (L)",
+        "name": "Agilità [L]",
         "description": "Agilità <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Potenziamento danni da ghiaccio (L)",
+        "name": "Danni da ghiaccio [L]",
         "description": "Danni da ghiaccio inflitti <@ba.vup>+{crystdam:0.0%}</>"
       },
       {
@@ -977,11 +1015,11 @@
     "decoDesc": "Un'opera leggendaria del Polo di supporto Northmarch che incarna alla perfezione stile e qualità delle armi Northmarch. Vantano potenza di fuoco devastante, grande affidabilità, comodità d'uso e un rinculo di livello infimo.",
     "skills": [
       {
-        "name": "Potenziam. attributo principale (L)",
+        "name": "Attributo principale [L]",
         "description": "Attributo principale <@ba.vup>+{mainattr}</>"
       },
       {
-        "name": "Potenziamento probabilità di critico (L)",
+        "name": "Probabilità di critico [L]",
         "description": "Probabilità di critico <@ba.vup>+{crirate:0.0%}</>"
       },
       {
@@ -996,11 +1034,11 @@
     "decoDesc": "Speciali pistole sperimentali fabbricate dalla RAYTHEAN Industries ed estremamente difficili da usare. Sul mercato delle armi è stato immesso solo un numero limitato di prototipi.",
     "skills": [
       {
-        "name": "Potenziam. attributo principale (L)",
+        "name": "Attributo principale [L]",
         "description": "Attributo principale <@ba.vup>+{mainattr}</>"
       },
       {
-        "name": "Potenziamento Arti (L)",
+        "name": "Danni da Arti [L]",
         "description": "Danni da Arti inflitti <@ba.vup>+{spelldam:0.0%}</>"
       },
       {
@@ -1015,11 +1053,11 @@
     "decoDesc": "Uno dei prodotti più amati della Mieszko Industries, dall'audace linea dedicata alle collaborazioni con artisti d'eccellenza. Queste armi da fuoco si distinguono per lo stile accattivante, perfettamente abbinato alle loro prestazioni eccezionalmente violente. La loro popolarità è dimostrata dal sovrapprezzo applicato nei mercati secondari.",
     "skills": [
       {
-        "name": "Potenziam. Intelletto (L)",
+        "name": "Intelletto [L]",
         "description": "Intelletto <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Potenziamento probabilità di critico (L)",
+        "name": "Probabilità di critico [L]",
         "description": "Probabilità di critico <@ba.vup>+{crirate:0.0%}</>"
       },
       {
@@ -1034,12 +1072,12 @@
     "decoDesc": "Pistole sviluppate dalla Spadamanti Hongshan. Prodotte con materiali resistenti e affidabili, queste armi sono semplici, leggere e facili da maneggiare. Molto utili in ogni genere di situazione o ambiente di una certa complessità.",
     "skills": [
       {
-        "name": "Potenziam. Agilità (L)",
+        "name": "Agilità [L]",
         "description": "Agilità <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Potenziamento attacco (L)",
-        "description": "Attacco <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATT [L]",
+        "description": "ATT <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Detonazione: Flagello del fuorilegge",
@@ -1053,11 +1091,11 @@
     "decoDesc": "Un'arma d'ordinanza prodotta dalla Endfield Industries e progettata dal team di prototipazione creativa istituito da Opero, ingegnere dell'arsenale senior. Quest'arma utilizza materiali leggeri, pratici e durevoli.",
     "skills": [
       {
-        "name": "Potenziam. Agilità (M)",
+        "name": "Agilità [M]",
         "description": "Agilità <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Potenziam. vel. di incremento dell'energia suprema (M)",
+        "name": "Velocità SUP [M]",
         "description": "Velocità di incremento dell'energia suprema <@ba.vup>+{usgs:0.0%}</>"
       },
       {
@@ -1072,7 +1110,7 @@
     "decoDesc": "Una delle armi d'ordinanza prodotte dalla Endfield Industries, progettata personalmente da Tarr, ingegnere dell'arsenale della Endfield. Questa spada è spesso la primissima arma di molti operatori sul campo.",
     "skills": [
       {
-        "name": "Potenziam. attributo principale (S)",
+        "name": "Attributo principale [S]",
         "description": "Attributo principale <@ba.vup>+{mainattr}</>"
       },
       {
@@ -1087,11 +1125,11 @@
     "decoDesc": "Una delle armi d'élite prodotte dalla Endfield per i suoi operatori. La spada vanta un'elsa con impugnatura e guardia, nonché meccanismi di immagazzinamento dell'energia che ne aumentano il potenziale offensivo.",
     "skills": [
       {
-        "name": "Potenziam. Agilità (M)",
+        "name": "Agilità [M]",
         "description": "Agilità <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Potenziamento danni fisici (M)",
+        "name": "Danni fisici [M]",
         "description": "Danni fisici inflitti <@ba.vup>+{phydam:0.0%}</>"
       },
       {
@@ -1106,12 +1144,12 @@
     "decoDesc": "Un'arma affilatissima forgiata dalla Witching Hour usando processi di fusione particolari che hanno dato vita a una lama totalmente rossa. L'unità delle Arti di cui è dotata utilizza uno speciale Originium liquefatto che ricorda la prima goccia di sangue versata da una forgia.",
     "skills": [
       {
-        "name": "Potenziam. Intelletto (L)",
+        "name": "Intelletto [L]",
         "description": "Intelletto <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Potenziamento attacco (L)",
-        "description": "Attacco <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATT [L]",
+        "description": "ATT <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Crepuscolo: Lamento ardente",
@@ -1125,11 +1163,11 @@
     "decoDesc": "Questa spada creata dalla Fort Forgefane vanta un design tradizionale che l'ha resa estremamente durevole e robusta. La lama, spessa e pesante, ha lasciato innumerevoli cicatrici sul permafrost, mentre il fronte si spostava col passare del tempo.",
     "skills": [
       {
-        "name": "Potenziam. Intelletto (M)",
+        "name": "Intelletto [M]",
         "description": "Intelletto <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Potenziam. vel. di incremento dell'energia suprema (M)",
+        "name": "Velocità SUP [M]",
         "description": "Velocità di incremento dell'energia suprema <@ba.vup>+{usgs:0.0%}</>"
       },
       {
@@ -1144,11 +1182,11 @@
     "decoDesc": "Una delle armi avanzate prodotte dalla Endfield per i suoi operatori. Il design minimalista modulare ha generato un'arma leggera perfettamente bilanciata e maneggevole. Inoltre, la lama è estremamente durevole.",
     "skills": [
       {
-        "name": "Potenziam. Agilità (S)",
+        "name": "Agilità [S]",
         "description": "Agilità <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Potenziamento danni fisici (S)",
+        "name": "Danni fisici [S]",
         "description": "Danni fisici inflitti <@ba.vup>+{phydam:0.0%}</>"
       },
       {
@@ -1163,12 +1201,12 @@
     "decoDesc": "Prodotto di fascia media della Mieszko Industries, questa spada vanta un design accattivante e all'avanguardia, oltre a un ottimo rapporto qualità-prezzo. Ciò la rende uno dei modelli più venduti dell'anno nella CCGT.",
     "skills": [
       {
-        "name": "Potenziam. Intelletto (S)",
+        "name": "Intelletto [S]",
         "description": "Intelletto <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Potenziamento ATT (S)",
-        "description": "Attacco <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATT [S]",
+        "description": "ATT <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Inseguimento: Ciclo infinito",
@@ -1182,11 +1220,11 @@
     "decoDesc": "Una leggera soluzione di ultima generazione per la difesa personale venduta dalla RAYTHEAN Industries. La lama è realizzata con una lega speciale e la spada è particolarmente apprezzata da certi \"professionisti\".",
     "skills": [
       {
-        "name": "Potenziam. Intelletto (L)",
+        "name": "Intelletto [L]",
         "description": "Intelletto <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Potenziamento danni da fuoco (L)",
+        "name": "Danni da fuoco [L]",
         "description": "Danni da fuoco inflitti <@ba.vup>+{firedam:0.0%}</>"
       },
       {
@@ -1201,11 +1239,11 @@
     "decoDesc": "Una spada ornamentale di fascia alta della Spadamanti Hongshan, spesso data in premio a persone di grande merito. Il nome è stato scelto dall'Accademia scientifica di Hongshan dopo una votazione interna.",
     "skills": [
       {
-        "name": "Potenziam. attributo principale (L)",
+        "name": "Attributo principale [L]",
         "description": "Attributo principale <@ba.vup>+{mainattr}</>"
       },
       {
-        "name": "Potenziamento probabilità di critico (L)",
+        "name": "Probabilità di critico [L]",
         "description": "Probabilità di critico <@ba.vup>+{crirate:0.0%}</>"
       },
       {
@@ -1220,12 +1258,12 @@
     "decoDesc": "La Tagliatrice termitica v4 è un prodotto base della linea \"pionieri\" del Polo di supporto Northmarch ed è stata costruita con materiali termici brevettati. Vanta eccellenti capacità di taglio e ha raccolto molti consensi tra gli ingegneri dell'USLT.",
     "skills": [
       {
-        "name": "Potenziam. Volontà (L)",
+        "name": "Volontà [L]",
         "description": "Volontà <@ba.vup>+{will}</>"
       },
       {
-        "name": "Potenziamento attacco (L)",
-        "description": "Attacco <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATT [L]",
+        "description": "ATT <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Flusso: Rilascio termico",
@@ -1239,11 +1277,11 @@
     "decoDesc": "Questa spada di fascia alta, venduta dalla Mieszko Industries, è stata recepita positivamente dall'élite della CCGT e dall'alta società. La lama, molto curata e dalle incisioni raffinate, offre prestazioni elevate.",
     "skills": [
       {
-        "name": "Potenziam. attributo principale (L)",
+        "name": "Attributo principale [L]",
         "description": "Attributo principale <@ba.vup>+{mainattr}</>"
       },
       {
-        "name": "Potenziamento danni fisici (L)",
+        "name": "Danni fisici [L]",
         "description": "Danni fisici inflitti <@ba.vup>+{phydam:0.0%}</>"
       },
       {
@@ -1258,11 +1296,11 @@
     "decoDesc": "Una delle armi uscite dalle fornaci dalla Fort Forgefane. L'impugnatura è stata realizzata tramite uno speciale procedimento di trafilatura, che ne amplifica le capacità di attenuazione e la maneggevolezza, mentre la lama è stata forgiata con un raro minerale estratto nelle terre selvagge.",
     "skills": [
       {
-        "name": "Potenziam. attributo principale (L)",
+        "name": "Attributo principale [L]",
         "description": "Attributo principale <@ba.vup>+{mainattr}</>"
       },
       {
-        "name": "Potenziamento Intensità delle Arti (L)",
+        "name": "Intensità delle Arti [L]",
         "description": "Intensità delle Arti <@ba.vup>+{physpell:0}</>"
       },
       {
@@ -1277,11 +1315,11 @@
     "decoDesc": "Un'arma di fascia alta prodotta dalla Spadamanti Hongshan, nonché l'unica ad aver riscosso un discreto successo sul mercato, anche se nelle terre selvagge se ne trovano molte copie non autorizzate.",
     "skills": [
       {
-        "name": "Potenziam. Agilità (M)",
+        "name": "Agilità [M]",
         "description": "Agilità <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Potenziamento danni fisici (M)",
+        "name": "Danni fisici [M]",
         "description": "Danni fisici inflitti <@ba.vup>+{phydam:0.0%}</>"
       },
       {
@@ -1296,12 +1334,12 @@
     "decoDesc": "Un'arma uscita dalle fornaci della Fort Forgefane. Malgrado le ripetute rifusioni, la lama continua a emanare un'aura minacciosa e autoritaria.",
     "skills": [
       {
-        "name": "Potenziam. Volontà (L)",
+        "name": "Volontà [L]",
         "description": "Volontà <@ba.vup>+{will}</>"
       },
       {
-        "name": "Potenziamento attacco (L)",
-        "description": "Attacco <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATT [L]",
+        "description": "ATT <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Flusso: Reincarnazione",
@@ -1315,11 +1353,11 @@
     "decoDesc": "Forgiato dalla Fort Forgefane, questo elegante e raffinato pezzo viene spesso utilizzato dall'Ordine del Giuramento d'acciaio durante le cerimonie, mentre è poco impiegato nei combattimenti in prima linea. In ogni caso, la lama è stata sottoposta a molteplici lucidature e vanta un bordo affilatissimo.",
     "skills": [
       {
-        "name": "Potenziam. Agilità (L)",
+        "name": "Agilità [L]",
         "description": "Agilità <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Potenziamento probabilità di critico (L)",
+        "name": "Probabilità di critico [L]",
         "description": "Probabilità di critico <@ba.vup>+{crirate:0.0%}</>"
       },
       {
@@ -1334,12 +1372,12 @@
     "decoDesc": "Una spada affilatissima, figlia delle terre selvagge. Diversi armaioli la impreziosirebbero ognuno a modo proprio.",
     "skills": [
       {
-        "name": "Potenziam. Agilità (M)",
+        "name": "Agilità [M]",
         "description": "Agilità <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Potenziamento attacco (M)",
-        "description": "Attacco <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATT [M]",
+        "description": "ATT <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Afflizione: Onesto scrutinio",
@@ -1353,12 +1391,12 @@
     "decoDesc": "Un'arma d'ordinanza prodotta dalla Endfield Industries e progettata dal team di prototipazione creativa istituito da Opero, ingegnere dell'arsenale senior. L'elsa presenta dei moduli ausiliari smontabili.",
     "skills": [
       {
-        "name": "Potenziam. Agilità (M)",
+        "name": "Agilità [M]",
         "description": "Agilità <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Potenziamento attacco (M)",
-        "description": "Attacco <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATT [M]",
+        "description": "ATT <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Flusso: Senza limiti",
@@ -1372,11 +1410,11 @@
     "decoDesc": "Il prodotto di punta della linea per avventurieri del Polo di supporto Northmarch. L'approccio progettuale incentrato su robustezza e portabilità la rendono una delle scelte più apprezzate da molti esploratori e appassionati di pesca.",
     "skills": [
       {
-        "name": "Potenziam. Forza (M)",
+        "name": "Forza [M]",
         "description": "Forza <@ba.vup>+{str}</>"
       },
       {
-        "name": "Potenziamento danni da ghiaccio (M)",
+        "name": "Danni da ghiaccio [M]",
         "description": "Danni da ghiaccio inflitti <@ba.vup>+{crystdam:0.0%}</>"
       },
       {
@@ -1391,12 +1429,12 @@
     "decoDesc": "Un'arma di qualità prodotta dalla Endfield Industries. La lama adotta un innovativo materiale sperimentale a base di Originium che conferisce all'arma un'eccellente conduttività energetica.",
     "skills": [
       {
-        "name": "Potenziam. Agilità (L)",
+        "name": "Agilità [L]",
         "description": "Agilità <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Potenziamento attacco (L)",
-        "description": "Attacco <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATT [L]",
+        "description": "ATT <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Afflizione: Desiderio di lunga data",
@@ -1410,11 +1448,11 @@
     "decoDesc": "Una popolare spada prodotta dalla RAYTHEAN Industries. Molte sono state portate di nascosto fuori dalla Cintura civilizzata, poiché molto apprezzate tra i Fenditerra. Spesso vengono poi apportate modifiche mirate.",
     "skills": [
       {
-        "name": "Potenziam. Agilità (L)",
+        "name": "Agilità [L]",
         "description": "Agilità <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Potenziamento probabilità di critico (L)",
+        "name": "Probabilità di critico [L]",
         "description": "Probabilità di critico <@ba.vup>+{crirate:0.0%}</>"
       },
       {
@@ -1425,15 +1463,15 @@
   },
   "farsight": {
     "name": "Farsight",
-    "description": "Questa terra potrebbe non avere niente di speciale. \nLe solite vecchie pianure, la solita vecchia aria e il solito vecchio mare. Tuttavia, i cieli sono diversi. C'è un grosso pianeta chiaramente visibile di giorno e non ci sono le lune gemelle di notte. La vita è quasi identica a quella di Terra. \nÈ un bene? Non lo so. \nSono qui per la leva obbligatoria, mi pagano e c'è cibo. Tutto qui. \n\nMa con il passare del tempo, ho iniziato a percepire le differenze. \nIntanto, l'assenza di Originium. Accidenti, persino i confini nazionali sembravano una presa in giro. Pensavo che fossero una sorta di lavoro pionieristico alla frontiera di Colombia, dove la gente sgobbava tutto il giorno nelle terre selvagge per qualcosa da mangiare. Ma proprio oggi, un tipo che sembrava un nobile di Leithanien ha chiesto a me, una recluta, le specifiche di alcuni pezzi di una macchina e come usare alcuni macchinari. \nE il nobiluomo non stava scherzando. \nAbitanti di Ursus, Leithanien, Colombia... Tutte queste etichette divisive ora sono state ridotte a compagni, amici e colleghi. \nMi piace come sono andate le cose, è fantastico! Ma come è successo? Non ne ho idea. \nHo chiesto un po' in giro, ma gli altri sono confusi quanto me. Quindi non ho avuto una risposta finché... \n\n\"Cos'è la Endfield?\" \nHo fatto questa domanda al gigante caposquadra Sarkaz quando ho iniziato a lavorare. Endfield suona proprio sfortunato come nome per un'azienda che lavora sulle frontiere. \nLui non ha detto niente. Invece, ci ha portati sulla punta della nave temporaneamente utilizzata come QG della Endfield. Ci ha detto di guardare bene il pianeta e il mondo. \nPianeta e mondo... Prima usavamo raramente questi termini. \nIl caposquadra ha visto la mia confusione e ha sorriso. Mi ha detto che è ciò che significa la Endfield. \n\"Significa che dobbiamo utilizzare parole nuove e belle?\" \n\"Significa che abbiamo lasciato il nostro passato su Terra.\" \n\nForse aveva ragione. \nPrima di decidere di attraversare il Portale cosmico per arrivare qui, io e chiunque altro abbiamo lasciato per sempre qualcosa su Terra. \nLa gente che ha faticato nei pozzi minerari, che ha vagato nelle terre selvagge, che ha lavorato nelle città, che ha tenuto concerti tra le guglie... Tutti fianco a fianco sulla nave, pronti a costruire un futuro insieme. \nIl destino ci ha posto di fronte a una scelta. Abbiamo scelto qualcosa di diverso dal passato per creare un nuovo modo di vivere. \n\nCome diventerà questo mondo? Non lo so. \nPerché lo stiamo costruendo proprio adesso. \nI palazzi si ergeranno dal suolo e le colture germoglieranno dalla terra. \nQuesta è la nostra risposta fragorosa sul mondo che stiamo costruendo.",
+    "description": "Questa terra potrebbe non avere niente di speciale.\nLe solite vecchie pianure, la solita vecchia aria e il solito vecchio mare. Tuttavia, i cieli sono diversi. C'è un grosso pianeta chiaramente visibile di giorno e non ci sono le lune gemelle di notte. La vita è quasi identica a quella di Terra.\nÈ un bene? Non lo so.\nSono qui per la leva obbligatoria, mi pagano e c'è cibo. Tutto qui.\n\nMa con il passare del tempo, ho iniziato a percepire le differenze.\nIntanto, l'assenza di Originium. Accidenti, persino i confini nazionali sembravano una presa in giro. Pensavo che si trattasse di una sorta di lavoro pionieristico alla frontiera di Colombia, dove la gente sgobbava tutto il giorno nelle terre selvagge per qualcosa da mangiare. Ma proprio oggi, un tipo che sembrava un nobile di Leithanien ha chiesto a me, una recluta addetta ai lavori, le specifiche di alcuni pezzi di una macchina e come usare alcuni macchinari.\nE il nobiluomo non stava scherzando.\nAbitanti di Ursus, Leithanien, Colombia... Tutte queste etichette divisive ora sono state ridotte a compagni, amici e colleghi.\nMi piace come sono andate le cose, è fantastico! Ma come è successo? Non ne ho idea.\nHo chiesto un po' in giro, ma gli altri sono confusi quanto me. Quindi non ho avuto una risposta finché...\n\n\"Cos'è la Endfield?\"\nHo fatto questa domanda al gigante caposquadra Sarkaz quando ho iniziato a lavorare. Endfield suona proprio sfortunato come nome per un'azienda che lavora sulle frontiere.\nLui non ha detto niente. Invece, ci ha portati sulla punta della nave temporaneamente utilizzata come QG della Endfield. Ci ha detto di guardare bene il pianeta e il mondo.\nPianeta e mondo... Prima usavamo raramente questi termini. \nIl caposquadra ha visto la mia confusione e ha sorriso. Mi ha detto che è ciò che significa la Endfield.\n\"Significa che dobbiamo utilizzare parole nuove e belle?\"\n\"Significa che abbiamo lasciato il nostro passato su Terra.\"\n\nForse aveva ragione.\nPrima di decidere di attraversare il Portale cosmico per arrivare qui, io e chiunque altro abbiamo lasciato per sempre qualcosa su Terra.\nLa gente che ha faticato nei pozzi minerari, che ha vagato nelle terre selvagge, che ha lavorato nelle città, che ha tenuto concerti tra le guglie... Tutti fianco a fianco sulla nave, pronti a costruire un futuro insieme.\nIl destino ci ha posto di fronte a una scelta. Abbiamo scelto qualcosa di diverso dal passato per creare un nuovo modo di vivere.\n\nCome diventerà questo mondo? Non lo so.\nPerché lo stiamo costruendo proprio adesso.\nI palazzi si ergeranno dal suolo e le colture germoglieranno dalla terra.\nQuesta è la nostra risposta fragorosa sul mondo che stiamo costruendo.",
     "decoDesc": "Uno dei tanti prototipi realizzati dalla Endfield Industries per testare diverse specifiche. Quest'arma è stata concepita come una piattaforma multiuso costruita con materiali di alta qualità. Gli ingegneri dell'arsenale della Endfield Industries vi riversano grandi speranze.",
     "skills": [
       {
-        "name": "Potenziam. attributo principale (L)",
+        "name": "Attributo principale [L]",
         "description": "Attributo principale <@ba.vup>+{mainattr}</>"
       },
       {
-        "name": "Potenziamento Intensità delle Arti (L)",
+        "name": "Intensità delle Arti [L]",
         "description": "Intensità delle Arti <@ba.vup>+{physpell:0}</>"
       },
       {

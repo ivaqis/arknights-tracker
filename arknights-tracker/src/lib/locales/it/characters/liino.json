@@ -39,10 +39,10 @@
     "battleSkill": {
       "name": "Concentrazione abbagliante",
       "description": "Liino infligge <@ba.pulse>danni da elettricità</> ai nemici e poi assume la sua <@ba.key>Posa da cantante</>. Mentre questa posa è attiva, se ci sono nemici vicini, Liino esegue regolarmente un ATT aggiuntivo (che infligge <@ba.pulse>danni da elettricità</> ai nemici).\n<@ba.key>Posa da cantante</>: mentre questa posa è attiva, Liino conferisce a tutta la squadra un potenziamento dell'ATT. Dopo essere entrata in battaglia, Liino fornisce inoltre <@ba.heal>Cura PS</> continua agli operatori nel raggio d'azione.\n<@ba.info>Durante la Posa da cantante, la sua abilità di combattimento è sostituita con la Posa di termine. Usarla fa terminare anticipatamente la Posa da cantante senza consumare PA, dopodiché l'abilità di combattimento entrerà in un breve tempo di recupero.</>",
-      "firstAtkMultiplier": "Moltiplicatore ATT iniziale",
+      "1stAtkMultiplier": "Moltiplicatore primo ATT",
       "additionalAtkDmgMultiplier": "Moltiplicatore danni ATT aggiuntivo",
       "additionalAtkIntervalS": "Intervallo ATT aggiuntivo (s)",
-      "beatIntervalS": "Intervallo battito (s)",
+      "beatIntervalS": "Intervallo battiti (s)",
       "vocalistStanceDurationS": "Durata Posa da cantante (s)",
       "atkBoost": "Potenziamento ATT",
       "baseTreatment": "Cura base",
@@ -60,7 +60,7 @@
     },
     "ultimate": {
       "name": "Concerto della stella del mattino",
-      "description": "Liino conferisce <@ba.heal>Cura PS</> a tutta la squadra, allo stesso tempo assume la sua <@ba.key>Posa cosmovoce</>, scatena una dimostrazione ininterrotta di effetti pirotecnici che infliggono <@ba.pulse>danni da elettricità</>, quindi attiva uno <@ba.key>Spettacolo elettrizzante</> che infligge <@ba.pulse>danni da elettricità</> e applica <#ba.conduct>Elettrificazione</> forzata ai nemici in un ampio raggio d'azione.\n<@ba.key>Posa cosmovoce</>: questa posa sostituisce <@ba.key>Posa da cantante</> di Liino. Mentre è attiva, la posa conferisce a tutta la squadra <#ba.pulseenhance>Amplificazione elettrica</>, <#ba.naturalenhance>Amplificazione naturale</> (gli effetti sono aumentati ulteriormente dall'attributo della Volontà) e potenziamento dell'ATT. I battiti della canzone di Liino infliggono anche <@ba.pulse>danni da elettricità</> ai nemici nel raggio d'azione e conferiscono <@ba.heal>Cura PS</> continua agli operatori alleati nel raggio d'azione. Quando la posa termina, infligge 3 volte la quantità di danni ai nemici da un singolo battito nel raggio d'azione e conferisce 3 volte la quantità di Cura PS a tutta la squadra da un singolo battito. Questo effetto non si attiva se la posa finisce in anticipo. \nDurante la posa, la sua abilità di combattimento è sostituita con la Posa di termine. <@ba.info>Usando l'abilità di combattimento durante Posa cosmovoce fa terminare anticipatamente la posa e non consuma PA.</>",
+      "description": "Liino conferisce <@ba.heal>Cura PS</> a tutta la squadra, allo stesso tempo assume la sua <@ba.key>Posa cosmovoce</>, scatena una dimostrazione ininterrotta di effetti pirotecnici che infliggono <@ba.pulse>danni da elettricità</>, quindi attiva uno <@ba.key>Spettacolo elettrizzante</> che infligge <@ba.pulse>danni da elettricità</> e applica forzatamente <#ba.conduct>Elettrificazione</> ai nemici in un ampio raggio d'azione.\n<@ba.key>Posa cosmovoce</>: questa posa sostituisce <@ba.key>Posa da cantante</> di Liino. Mentre è attiva, la posa conferisce a tutta la squadra <#ba.pulseenhance>Amplificazione elettrica</>, <#ba.naturalenhance>Amplificazione naturale</> (gli effetti sono aumentati ulteriormente dall'attributo della Volontà) e potenziamento dell'ATT. I battiti della canzone di Liino infliggono anche <@ba.pulse>danni da elettricità</> ai nemici nel raggio d'azione e conferiscono <@ba.heal>Cura PS</> continua agli operatori alleati nel raggio d'azione. Quando la posa termina, Liino infligge 3 volte la quantità di danni ai nemici da un singolo battito nel raggio d'azione e conferisce 3 volte la quantità di Cura PS a tutta la squadra da un singolo battito. Questo effetto non si attiva se la posa finisce in anticipo. \n<@ba.info>Durante la posa, la sua abilità di combattimento è sostituita con la Posa di termine. Usando l'abilità di combattimento durante Posa cosmovoce fa terminare anticipatamente la posa e non consuma PA.</>",
       "stagePyrotechnicsDmgMultiplier": "Moltiplicatore danni Effetti pirotecnici",
       "electrifyingExtravaganzaDmgMultiplier": "Moltiplicatore danni Spettacolo elettrizzante",
       "atkBoost": "Potenziamento ATT",
@@ -70,7 +70,7 @@
       "treatmentIncreasePerAgility": "Aumento Cura basato su Agilità",
       "dmgMultiplierPerBeat": "Moltiplicatore danni per battito",
       "baseTreatmentPerBeat": "Cura base per battito",
-      "beatIntervalS": "Intervallo battito (s)",
+      "beatIntervalS": "Intervallo battiti (s)",
       "cosmovoiceStanceDurationS": "Durata Posa cosmovoce (s)",
       "electrifyingExtravaganzaStagger": "Vacillamento Spettacolo elettrizzante"
     },
@@ -170,7 +170,7 @@
       },
       {
         "voId": "chr_0035_liino_chrup_skill_01",
-        "title": "Attivazione matrice delle abilità",
+        "title": "Attivazione nodo talento",
         "text": "L'ho capito in un lampo! Come una stella che mi accende l'anima... Sto diventando proprio una luminare, eh?"
       },
       {
@@ -552,7 +552,7 @@
     },
     "potential2": {
       "description": "Volontà <@ba.vup>+{Will:0}</>, <@ba.vup>+{HealOutputIncrease:0%} di efficacia della Cura</>.",
-      "name": "Prove di collaborazione"
+      "name": "Prove rigorose"
     },
     "potential3": {
       "description": "Abilità combo <@ba.key>Incantevole armonia</> migliorata: tempo di recupero di <@ba.vup>{coolDown:0}</> s. Moltiplicatore danni e Cura PS aumentano a <@ba.vup>{heal_value:0.0}</> volte rispetto all'originale.",

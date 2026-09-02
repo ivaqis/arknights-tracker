@@ -1,0 +1,576 @@
+{
+  "baseInfo": {
+    "tags": [
+      "Schadensverurs.",
+      "Technikexplosion"
+    ],
+    "behaviourHateTags": [
+      "Technologie"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Rhodes Island",
+    "expertTags": [
+      "Natürliche Hintergrundgeschichte",
+      "Überleben im Freien"
+    ],
+    "giftPreferTags": [
+      "Von Reisenden in Wuling empfohlen"
+    ],
+    "hobbyTags": [
+      "Lifestyle",
+      "Natur"
+    ],
+    "raceTag": "Sarkaz"
+  },
+  "skills": {
+    "basicAttack": {
+      "name": "Wildnisjägerin",
+      "description": "STANDARDANGRIFF: \nEin Angriff mit bis zu 5 Sequenzen, der <@ba.natur>Natur-SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>{poise:0}</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.natur>Natur-SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlägen, die massiven <@ba.natur>Natur-SDN</> zufügen und ein wenig FP wiederherstellen.",
+      "batkSeq1Multiplier": "STD-ANG-SEQ-1-Multiplikator",
+      "batkSeq2Multiplier": "STD-ANG-SEQ-2-Multiplikator",
+      "batkSeq3Multiplier": "STD-ANG-SEQ-3-Multiplikator",
+      "batkSeq4Multiplier": "STD-ANG-SEQ-4-Multiplikator",
+      "batkSeq5Multiplier": "STD-ANG-SEQ-5-Multiplikator",
+      "finisherAtkMultiplier": "Wuchtschlag-ANG-Multiplikator",
+      "diveAtkMultiplier": "Sturz-ANG-Multiplikator"
+    },
+    "battleSkill": {
+      "name": "Durchbohrende Pfeile des Waldes",
+      "description": "Typhoeus springt hoch und wechselt kurzzeitig in den Zustand <@ba.key>Schweben</>, in dem sie 5 Luft-Standardangriffe (LSTDANG) ausführen kann. Jeder LSTDANG kann Pfeile auf bis zu 2 Gegner verschießen und ihnen <@ba.natur>Natur-SDN</> zufügen.\nWann immer ein LSTDANG einen Gegner mit <#ba.naturalinflict>Natur-Kumulierung(en)</> trifft, verbraucht er 1 <#ba.naturalinflict>Natur</>-Kumulierung, gewährt Typhoeus 1 <#ba.arrowenergy>Zeichen</> und verleiht zusätzliche Ultimative Energie.\nWenn Typhoeus mindestens einen <#ba.arrownum>Jagdpfeil</> hat, verbraucht sie 1 <#ba.arrownum>Jagdpfeil</> und verwandelt den LSTDANG in einen <@ba.key>Energieschuss</>.\n<@ba.key>Energieschuss</>: Wenn Typhoeus einen Gegner mit einem Energieschuss trifft, wird dieser mit 1 Instanz von <#ba.naturalburst>Naturexplosion</> belegt. Wenn die <#ba.naturalinflict>Natur-Kumulierung</> des Gegners verbraucht wurde, erhöht sich der verursachte SDN durch die <#ba.naturalburst>Naturexplosion</> auf das <@ba.vup>{enchence_burst_damage_rate:0.0}</>-Fache des Ursprungswertes.\n<@ba.info>Wenn Typhoeus der gesteuerte Operator ist, wird ihr 5. LSTDANG zu einem Abschlussangriff und Energieschuss, der keine Jagdpfeile verbraucht.</>",
+      "initialAerialShotDmgMultiplier": "Ausgangs-Luftschuss-SDN-Multiplikator",
+      "abatkDmg": "LSTDANG-SDN",
+      "aerialFinalStrikeDmg": "Luft-Abschlussangriff-SDN",
+      "aerialFinalStrikeStagger": "Luft-Abschlussangriff-Taumeln",
+      "powerShotNatureBurstDmgMultiplier": "Energieschuss-Naturexplosions-SDN-Multiplikator",
+      "additionalUltimateEnergy": "Zusätzliche Ultimative Energie"
+    },
+    "comboSkill": {
+      "name": "Wuchernde Dornen",
+      "description": "KOMBOAUSLÖSER: Wenn Typhoeus die max. Anzahl an <#ba.arrowenergy>Zeichen</> erreicht.\nTyphoeus verwandelt all ihre <#ba.arrowenergy>Zeichen</> in <#ba.arrownum>Jagdpfeile</> und ihre Versuche für ihren Luft-Standardangriff (LSTDANG) werden zurückgesetzt.\nTyphoeus fokussiert ihren „Blick der Jägerin“ und verschießt ein Sperrfeuer auf den Gegner, das eine <@ba.key>Sperrfeuerreihe</> im Zielbereich erstellt. Gegner in der <@ba.key>Sperrfeuerreihe</> werden <#ba.slow>verlangsamt</> und erleiden kontinuierlichen <@ba.natur>Natur-SDN</> sowie erhöhten erlittenen <#ba.naturalburst>Naturexplosion</>-SDN.\n<@ba.info>Je 2 Zeichen werden in 1 Jagdpfeil verwandelt.</>",
+      "huntresssGazeHitDmg": "„Blick der Jägerin“-Treffer-SDN",
+      "stagger": "Taumeln",
+      "ultimateEnergyGain": "Ultimative-Energie-Erhalt",
+      "areaDmgOverTime": "Kontinuierlicher Flächen-SDN",
+      "slow": "Verlangsamen",
+      "natureBurstDmgBoost": "Naturexplosion-SDN-Boost"
+    },
+    "ultimate": {
+      "name": "Ruf des eisigen Berges",
+      "description": "Typhoeus feuert einen Aufgeladenen Pfeil ab, der nach dem Treffer an einem Gegner explodiert und Gegnern im Wirkungsbereich massiven <@ba.natur>Natur-SDN</> zufügt. Sie wechselt dann in den Zustand <@ba.key>Schweben</>, und die Versuche für ihren Luft-Standardangriff (LSTDANG) werden zurückgesetzt.\nIhre nächsten 5 LSTDANG lösen bei Treffern an Gegnern einen <@ba.key>Pfeilhagel</> aus, der <@ba.natur>Natur-SDN</> an der Position des Ziels verursacht. Ihr 5. <@ba.key>Pfeilhagel</> ist ein verstärkter <@ba.key>Pfeilhagel</>, der höheren SDN verursacht.\nDas Wirken der Ultimativen Fertigkeit verleiht sofort <@ba.vup>{arrow_num_given:0}</> <#ba.arrownum>Jagdpfeile</>.",
+      "imbuedArrowExplosionDmg": "Aufgeladener-Pfeil-Explosions-SDN",
+      "imbuedArrowStagger": "Aufgeladener-Pfeil-Taumeln",
+      "normalHailOfArrowsDmg": "Normaler-Pfeilhagel-SDN",
+      "empoweredHailOfArrowsDmg": "Verstärkter-Pfeilhagel-SDN"
+    },
+    "indicator": {
+      "levels": [
+        "Operator-Beweglichkeit +10.",
+        "Operator-Beweglichkeit +15.",
+        "Operator-Beweglichkeit +15.",
+        "Operator-Beweglichkeit +20."
+      ],
+      "name": "Scharmützler"
+    },
+    "talent1": {
+      "levels": [
+        "Wann immer eine <#ba.naturalburst>Naturexplosion</> bei einem Gegner ausgelöst wird, erhält Typhoeus 1 <#ba.arrowenergy>Zeichen</>. Von Angriffen verursachter SDN, der durch den Verbrauch von <#ba.arrownum>Jagdpfeilen</> verstärkt wurde, erhöht sich auf das <@ba.vup>{atk_scale_enhence:0.0}</>-Fache des Ursprungswertes.\nZu Kampfbeginn erhält Typhoeus sofort <@ba.vup>{energy_enterfight:0}</> <#ba.arrowenergy>Zeichen</>.\nTyphoeus kann bis zu 4 <#ba.arrownum>Jagdpfeile</> und bis zu 8 <#ba.arrowenergy>Zeichen</> haben.\n<@ba.info>Wird gleichzeitig bei mehreren Gegnern eine Naturexplosion ausgelöst, zählen diese Explosionen für die Berechnung der Zeichen, die Typhoeus erhält, nur als eine Naturexplosion.</>",
+        "Wann immer eine <#ba.naturalburst>Naturexplosion</> bei einem Gegner ausgelöst wird, erhält Typhoeus 1 <#ba.arrowenergy>Zeichen</>. Von Angriffen verursachter SDN, der durch den Verbrauch von <#ba.arrownum>Jagdpfeilen</> verstärkt wurde, erhöht sich auf das <@ba.vup>{atk_scale_enhence:0.0}</>-Fache des Ursprungswertes.\nZu Kampfbeginn erhält Typhoeus sofort <@ba.vup>{energy_enterfight:0}</> <#ba.arrowenergy>Zeichen</>.\nTyphoeus kann bis zu 4 <#ba.arrownum>Jagdpfeile</> und bis zu 8 <#ba.arrowenergy>Zeichen</> haben.\n<@ba.info>Wird gleichzeitig bei mehreren Gegnern eine Naturexplosion ausgelöst, zählen diese Explosionen für die Berechnung der Zeichen, die Typhoeus erhält, nur als eine Naturexplosion.</>",
+        "Wann immer eine <#ba.naturalburst>Naturexplosion</> bei einem Gegner ausgelöst wird, erhält Typhoeus 1 <#ba.arrowenergy>Zeichen</>. Von Angriffen verursachter SDN, der durch den Verbrauch von <#ba.arrownum>Jagdpfeilen</> verstärkt wurde, erhöht sich auf das <@ba.vup>{atk_scale_enhence:0.0}</>-Fache des Ursprungswertes.\nZu Kampfbeginn erhält Typhoeus sofort <@ba.vup>{energy_enterfight:0}</> <#ba.arrowenergy>Zeichen</>.\nTyphoeus kann bis zu 4 <#ba.arrownum>Jagdpfeile</> und bis zu 8 <#ba.arrowenergy>Zeichen</> haben.\n<@ba.info>Wird gleichzeitig bei mehreren Gegnern eine Naturexplosion ausgelöst, zählen diese Explosionen für die Berechnung der Zeichen, die Typhoeus erhält, nur als eine Naturexplosion.</>"
+      ],
+      "name": "Beute-Checkliste"
+    },
+    "talent2": {
+      "levels": [
+        "Wenn Typhoeus <@ba.key>schwebt</>, aktiviert sie eine <@ba.key>Schutzbarriere</>, die ihren Erlittenen SDN um <@ba.vup>{damage_resist:0%}</> senkt. Solange die Barriere aktiv ist, ist es zudem schwieriger, Typhoeus zu unterbrechen. Die <@ba.key>Schutzbarriere</> zersplittert, wenn Typhoeus SDN erleidet und kann anschließend für <@ba.vup>{sheild_cd:0}</> Sek. nicht erneut aktiviert werden.",
+        "Wenn Typhoeus <@ba.key>schwebt</>, aktiviert sie eine <@ba.key>Schutzbarriere</>, die ihren Erlittenen SDN um <@ba.vup>{damage_resist:0%}</> senkt. Solange die Barriere aktiv ist, ist es zudem schwieriger, Typhoeus zu unterbrechen. Die <@ba.key>Schutzbarriere</> zersplittert, wenn Typhoeus SDN erleidet und kann anschließend für <@ba.vup>{sheild_cd:0}</> Sek. nicht erneut aktiviert werden."
+      ],
+      "name": "Fokus der Jägerin"
+    },
+    "baseSkill1": {
+      "levels": [
+        "Wachstumskammer zuweisen, um Wachstumsrate von seltenen Mineralien um +20 % zu erhöhen.",
+        "Wachstumskammer zuweisen, um Wachstumsrate von seltenen Mineralien um +30 % zu erhöhen."
+      ],
+      "name": "Das Raunen der Steine"
+    },
+    "baseSkill2": {
+      "levels": [
+        "Wachstumskammer zuweisen, um Wachstumsrate von Pilzmaterial um +20 % zu erhöhen.",
+        "Wachstumskammer zuweisen, um Wachstumsrate von Pilzmaterial um +30 % zu erhöhen."
+      ],
+      "name": "Leben in den Sporen"
+    },
+    "files": {
+      "main": "[DECKNAME]: Typhoeus\nGESCHLECHT: Weiblich\nAUTHENTIFIZIERUNG: Rhodes Island\nGEB.: 13. Januar\nSPEZIES: Sarkaz\n[ORIPATHIE-INFEKTIONSSTATUS]\nOripathie-negativ, basierend auf ärztlichen Befunden.\n\n[INTEGRIERTE PHYSISCHE UNTERSUCHUNG]\nPHYSIOLOGISCHE STÄRKE: Ausgezeichnet\nKAMPFFERTIGKEIT: Ausgezeichnet\nTAKTISCHER SCHARFSINN: Normal\nORIGINIUM-TECHNIKEN-ASSIMILIERUNG: Standard",
+      "humanResources": "Operator Typhoeus, eine Wiederherstellerin von Rhodes Island. Sie begegnete dem Endministrator, während sie auf der Suche nach den verlorenen Legenden von Sami war, und später schloss sie sich auf persönliche Einladung des Endministrators Endfield Industries an.\n\nBeim Gespräch mit Fräulein Typhoeus überschritten ihre Gefasstheit und ihre Selbstbeherrschung die der meisten Erwachsenen bei Weitem, und doch verrieten ihre unstillbare Neugier und die unzeitigen forschenden Blicke das kindliche Wesen unter dieser Fassade. Dem Protokoll nach musste ich ihr zahlreiche Fragen stellen, aber sobald sie ihr Notizbuch gezückt hatte, fand ich irgendwie nie die richtige Gelegenheit für auch nur eine einzige.\nEs war schwer vorstellbar, dass eine Person so viele Fragen hatte, und irgendwann wurde sogar ich müde, sie zu beantworten. Einmal erwähnte ich, dass das Grundwissen-Handbuch für Operatoren viele ihrer Fragen beantworten könnte, aber sie drehte ihren Stift in ihrer Hand und entgegnete ruhig, dass sie fasziniert davon sei, wie ich Dinge erzählte.\nNach drei Stunden Befragung ging sie sichtlich zufrieden. Bevor sie ihr Notizbuch schloss, konnte ich einen Blick auf ihre Bewertung meiner Person erhaschen:\n„Drei Köpfe, weiß alles, beantwortet alle Fragen, jede Legende braucht einen solchen Charakter.“\n– Martin Marvin Malen, Assistent, Personalabteilung, Endfield Industries",
+      "file1": "Nun, da wir eine Operatorin wie Typhoeus haben, die auf das Überleben in der Wildnis spezialisiert ist, wird unser Werk im Norden deutlich reibungsloser vonstatten gehen.\nObwohl Endfield eng mit dem Orden des Stahlschwurs zusammenarbeitet, sind diese oft mit ihren eigenen Schlachten zu beschäftigt, um viel Zeit für uns zu entbehren. Zumeist führen sie uns nur zur Position eines Risses, bevor sie zurück an die Front müssen. Der Rest der Arbeit bleibt dann an uns hängen.\nDie Polarumgebung ist unwirtlich; das ganze Jahr über liegt Schnee, und die Temperaturen sind extrem niedrig. Dies erschwert unsere Überwachungsaufgaben enorm. Ein plötzlicher Schneesturm zerstörte unser Lager und legte sämtliche Geräte lahm. In unserer Verzweiflung wickelten wir uns in alle Decken, die wir hatten, und warteten darauf, vom gefrorenen Ödland verschlungen zu werden. Zum Glück kam Operator Typhoeus gerade noch rechtzeitig.\nSie hatte eine ganze Tierkeule im Schlepptau.\nIn den Ruinen machte Typhoeus ein Lagerfeuer, und sie spendete uns Wärme mit einem Barbecue nach Sami-Art. Dann brach sie alleine auf in den Schneesturm und kehrte zurück mit Holz und Rinde. Binnen eines Nachmittags baute sie aus einfachstem Material eine Holzhütte, die vier Personen Platz bot.\nObwohl sie nichts von den Anlagen wusste, die wir mit uns brachten, konnte sie doch eine stabile Umgebung einrichten, in der sie unseren Anforderungen entsprechend problemlos einsetzbar waren. Als wir die Risse frontal angingen, konnte sie dank ihrer Jagderfahrung die angreifenden Aggeloi-Schwärme effektiv bekämpfen, und sie half uns dabei, die Ausrüstung aufzubauen und kritische Daten zu erheben.\nAbgesehen von ihrem Talent für das Überleben im Freien vertrauten die anderen vor allem auf ihre erstaunlich präzise Intuition.\nJa, sich bei der Arbeit auf die Intuition eines Kollegen zu verlassen, klingt nicht sonderlich professionell. Aber als unsere sämtlichen Navigationseinrichtungen ausfielen, waren es ihre Instinkte, die uns ein haarscharfes Überleben und eine sichere Evakuation sicherten. Die ganze Reise über waren wir stets in Gefahr, aber sie zeigte nicht einen Hauch von Angst und wies allen stets sicher den Weg durch den Schneesturm.\nManche sind der Meinung, der Zyklop in den Bergen habe Typhoeus beigebracht, die Zukunft zu sehen. Aber ich glaube, dass dies einfach die Art und Weise ist, wie die Sami mit der Natur koexistieren. Sie leben inmitten ihrer Umgebung und werden ein Teil von ihr; so nehmen sie den Atem der Natur wahr, ihren Puls, ihren Herzschlag, und damit kommen die Offenbarungen, die die Natur gewährt.",
+      "file2": "„Endfield ist ein legitimes Unternehmen. Du musst lernen, Tatsachen von Gerüchten zu unterscheiden. Nicht all diese Legenden sind auch wahr.“\nJedes Mal, wenn ein neuer Mitarbeiter sich Endfield anschließt, weist das eingesessene Personal ihn ausdrücklich hierauf hin.\nZumindest bis Operator Typhoeus zu Endfield stieß und alle Mühen zunichte gemacht wurden. Mit ihren ausufernden, mystischen Geschichten ließ dieses Mädchen die Grenze zwischen Gerücht und Realität verschwimmen, und so wurden wir von einem Unternehmen mit einem gewissen legendären Flair zu … schlichtweg einer Legende.\nDie mysteriösen Zeichen, die über die Bildschirme huschen, die heulenden Geräusche, die nachts von der Brücke hallen, die Lichtanlage in der Ingenieurabteilung, die nie so richtig laufen will und immer dann flackert, wenn man gerade alleine ist. Diese kleinen Zufälle, die man leicht mit einem Lachen abtun kann, wurden von Typhoeus gesammelt und zu einer Legende verwoben, die es einem kalt den Rücken hinunterlaufen lässt.\n\nVor langer Zeit fielen die Geräte auf dem Himmelsschiff Dijiang ständig aus. Den armen Handwerkern blieb keine Wahl: Sie mussten Unterschlupf in der Werkstatt suchen, wo sie den ganzen Tag und die ganze Nacht schmiedeten und reparierten, ohne Unterlass. Doch nach einem ganzen Jahr Schufterei war die Warteliste der zu reparierenden Maschinen nur größer geworden, und sie türmten sich um sie herum zu einem wahren Gebirge auf.\nVerzehrt von Wut verließ ihn der letzte Funken Güte. Er verwandelte sich in einen Rachegeist und fuhr in die Maschine, um an jeder schlampigen Seele, der es bei ihrer Arbeit an Sorgfalt mangelte, Vergeltung zu üben.\nDie Beleuchtung, die nachts flackert, ist Zeichen seiner Streife.\n– Ein Eintrag aus Typhoeus’ Notizbuch\n\nNachdem sich diese Geschichte auf der Dijiang verbreitet hatte, gingen die Schadensmeldungen auf der Reparaturliste der Ingenieurabteilung für diesen Monat sprungartig zurück.\nNachdem er der Sache nachgegangen war, tat der überraschte Herr André seine faire Einschätzung der Geschichte kund: Sie war keine bloße Erzählung, sondern unbestreitbare Tatsache.\nUnd dies war nur ein Kapitel der zahlreichen Legenden, die Typhoeus für Endfield geschrieben hatte. In ihrem Notizbuch war der Endministrator die weise Lichtgestalt, die den Stein des Ursprungs in Händen hält, Aufseherin Perlica war die Blitzmagierin, die über den Donner gebietet, Fräulein Chen eine Waldläuferin mit einem Langschwert. Und alles, was Endfield auf Talos-II tat, war große Steinschwerter in den Boden des Landes zu rammen, um für Frieden auf der Welt zu sorgen und alle Lebewesen zu beschützen.\nEin zwölfjähriges Kind würde diese Märchen kindisch finden, aber für die Endfield-Operatoren mit ihren Köpfen voller Flausen waren sie genau richtig.\n„Wenn ich jetzt arbeite, stelle ich mir vor, ich wäre ein mysteriöser Sami-Schneepriester. Wenn sich die Geräte überhitzen, rufe ich uralte Zauberformeln …“ Mit diesen Worten nahm André sich die Kühlkanone aus der Ecke; er zielte auf die Maschine und sprach: „Oh Wind und Schnee, steigt herab auf die Welt der Sterblichen!“",
+      "file3": "Kriegslied der Samifjod\nDie Sonne schmilzt den Schnee,\nUnter gefror’ner Erde flieh’n die Schatten. \nDoch unser Wandern endet nicht. \nDie Sonne teilt die Wolken, \nDer Regen über den Wald hält inne. \nDoch uns’re Kriege enden nicht. \nHebt den Schild, tragt die Platten, \nDas Schicksal hält uns hier. \nUnter der Sonne, \nBluten wir und kämpfen wir.\n\nNach seiner Ankunft auf Talos-II von Terra endete die jahrelange Reise von Feranmut Sami; er erkor sich ein Stück Land an der Polarkreisfront als Heimat und ließ sich dort nieder zusammen mit dem Düsterwald, den er auf dem Rücken trug. Unter dem Schutz des Feranmut genoss das Volk der Sami eine kurze Zeit des Friedens. Aber schon bald folgten die Zerstörung des Kosmischen Tors und der Ausbruch des Ersten Aggeloi-Kriegs, und Feranmut Sami gab am Nordpol sein Leben, um das Volk der Sami zu beschützen. Das Volk der Sami hatte kaum Zeit zu trauern, bevor sie beim Bau der Festung der Eidwächter mithelfen mussten. Es folgte ein langer Feldzug, der bis zum heutigen Tage weitergeht.\nAls Typhoeus auf Rhodes Island erwachte und von der aktuellen Mission ihres Volkes erfuhr, packte sie sofort ihre Sachen und machte sich auf den Weg nach Norden. Aber nachdem sie den weiten Weg zur Festung der Eidwächter hinter sich gebracht hatte, verpasste ein Sami-Schneepriester, der gerade vom Schlachtfeld kam, ihr einen Klaps auf den Hinterkopf, der nach Erde müffelte, und er wies sie am Eingang ab.\n„Komm wieder, wenn du größer bist als dein Bogen. Dann kannst du in den Krieg ziehen.“\nObwohl Typhoeus darauf bestand, dass sie einfach nur kleingewachsen war, glaubte ihr niemand. Schließlich mussten sich erst noch die dicken Schwielen an ihren Händen bilden, die durch den jahrelangen Umgang mit dem Bogen entstanden.\nDa sie verloren und abgelehnt war, blieb ihr nur, auf einen Wagen in Richtung Düsterwald zu steigen, um ihr Volk zu suchen, das sie nie kennengelernt hatte. Dies war der Sami, an den sie sich erinnerte, die Umgebung, die Tradition, die Sprache, die Akzente, alles war wie früher. Doch gleichzeitig kam ihr alles so fremd vor. In der Siedlung waren nur die Alten, die Verwundeten, und die Kinder. Alle, die noch Waffen führen konnten, waren an die Front gezogen, um die mit Fleisch und Blut geschmiedete Verteidigungslinie zu bewachen. Sie bekämpften den Marsch der Aggeloi gen Süden.\nTyphoeus war verloren und ziellos und blieb im Düsterwald. Bald erfuhr sie, dass nach dem Fall Samis seine Legenden ebenfalls zersplittert waren. Die Ältesten, die die alten Sagen kannten, waren auf dem Schlachtfeld neben Sami gefallen, bevor sie die Geschichten weiterreichen konnten. Also entschloss sich Typhoeus, die nicht an der Front kämpfen konnte, diese Legenden zu sammeln und zu bewahren.\n\nEndmin, wusstest du das? Der Fall Samis war seine eigene Entscheidung. Das Volk akzeptierte Ihn und folgte ohne zu zögern.\nIch habe im Düsterwald eine Foldartal-Tafel gefunden, mit der man weissagen kann. Auf ihr befand sich eine „Unterhaltung“ zwischen dem Schneepriester und Sami.\nBevor er in den Norden herabstieg, hatte er das Volk des Düsterwaldes gewarnt, dass er vor langer Zeit einen grausamen und langwierigen Krieg vorhergesehen hatte. Er würde nach Norden ziehen und sich irgendwann in der Zukunft opfern müssen, um alle Lebewesen zu beschützen.\nEr gab seinem Volk die Gelegenheit zu gehen.\nAber auf der Foldartal-Tafel ist die Antwort des Volkes verzeichnet:\nDer Wille des Sami ist der Wille des Volks der Sami. Der Mission des Sami ist die Mission des Volks der Sami. Wir werden mit dir nach Norden ziehen.\nDie Jagd endet nie.",
+      "file4": "Nach dem Fall von Sami akzeptierte der Großteil des Volks der Sami das Ergebnis. Sie leben auf den Überresten des Feranmut, folgen weiter seinem Willen und kämpfen gegen die Aggeloi, um Talos-II zu beschützen.\nUnd doch gab es noch immer Schneepriester, die glaubten, dass Sami nicht wirklich gestorben war. Dass seine Seele lediglich in den Rissen verloren war, in einen tiefen Schlaf verfallen. Eines Tages würde Sami aus seinem Schlummer erwachen und zu seinem Volk zurückkehren. Sie reisten zu den Rissen auf Talos-II, errichteten Altäre und führten Rituale durch, um Samis Seele aus den Rissbrüchen zu rufen. Aber keiner von jenen, die auszogen, kehrte jemals zurück. Später, als es an der Nordfront immer enger wurde, war niemand mehr bereit, den Versuch fortzusetzen.\nIn einem verschneiten Wald beim Riesigen Wuling-Riss fand Typhoeus die Manuskripte, die eine dieser Sami-Schneepriester zurückgelassen hatte. Die Manuskripte beschrieben ihre Versuche, Sami zu erwecken. Obwohl Typhoeus durch ihre eigene Erkundung bestätigen konnte, dass das Ritual gescheitert und die Schneepriesterin spurlos verschwunden war, spürte das Mädchen, welches Potenzial das verbleibende Material hatte.\nLeider machte Typhoeus auch nach Monaten des Studiums keinerlei Fortschritte.\nSie bat jeden Schneepriester, jeden Schamanen des Ordens des Stahlschwurs und im Düsterwald um Hilfe, aber sie schüttelten nur den Kopf angesichts dieser Unternehmung, die sie als hoffnungslos betrachteten.\nSelbst nach so vielen Sackgassen ließ sich Typhoeus nicht entmutigen. Das einzigartige Wissen über Träume, das die Schneepriesterin in den Manuskripten festgehalten hatte, lehrten das Mädchen, besondere Beziehungen in den Traumlandschaften anderer zu erkennen.\n\n„Ich weiß nicht warum, aber in letzter Zeit träume ich davon, von einem gigantischen Monster verfolgt zu werden. Der Boden unter meinen Füßen wankt, als würde ich auf einer Hängebrücke stehen. Ich werfe mich die ganze Nacht von einer Seite auf die andere …“\n„Ganz einfach. Das Monster jagt dich, und du bist in die Enge gedrängt.“\n„Was soll ich tun?“\n„Werde stärker. Hör auf die Beute zu sein. Werde stattdessen zum Jäger.“\n„Ich glaube, dass ich es jetzt verstehe.“\n\nNach dieser Unterhaltung mit Typhoeus stürzte sich der Operator in einen ganzen Monat voller intensiver Trainingseinheiten. Die Erschöpfung und das Gefühl, durch die Workouts etwas erreicht zu haben, ließen ihn nachts seelenruhig schlafen. Schon bald tauchten Endfield-Kollegen bei Typhoeus auf mit allen möglichen Träumen, die sie lesen und deuten sollte.\nUnd nachdem Typhoeus sich alle diese Träume angehört hatte, ließ sie sich dazu inspirieren, an ihrer eigenen Legende zu arbeiten, die den Feranmut Sami, Träume und die Schneepriester in sich vereinen würde.\nSchon bald hatte Typhoeus diese Geschichte vollendet. Sie dachte, dass die Sache damit erledigt wäre, wie die Legende selbst. So sammelte sie ihre Aufzeichnungen und machte sich auf, um das Ende mit jenen zu teilen, die gespannt darauf warteten. Auf halbem Wege begegnete ihr jedoch ein junges Mädchen auf dem Gang.\nTyphoeus erkannte sie nicht, doch spürte sie eine merkwürdig vertraute Präsenz von ihr ausgehen.\nEine Präsenz, die ihr Volk durch Sümpfe und Wälder begleitet hatte, durch Winter und Frühling, von der Geburt bis zum Tod.\nAls Typhoeus wieder klar denken konnte, war das Mädchen bereits viele Gänge weiter.\nSpäter erfuhr sie von anderen, dass das Mädchen den Decknamen „Last Rite“ trug.\nGetrieben von einer mysteriösen Vorahnung riss sie das Ende aus ihrem Buch, das sie geschrieben hatte, und notierte sich stattdessen diesen Decknamen auf einer leeren Seite."
+    },
+    "tags": {
+      "expert1": {
+        "name": "Natürliche Hintergrundgeschichte",
+        "description": "Natürliche Hintergrundgeschichte: Experte für die Wildnis\nTief in der Wildnis hat alles eine Bedeutung: sei es eine Schneeflocke auf der Schulter oder ein Windhauch, der das Haar anhebt."
+      },
+      "expert2": {
+        "name": "Überleben im Freien",
+        "description": "Überleben im Freien: Gesetze der Eisfelder\nSelbst die harschesten Eisfelder lassen der Kleinen Jägerin, die die Gesetze der Wildnis respektiert, Gnade zuteilwerden."
+      },
+      "hobby1": {
+        "name": "Lifestyle",
+        "description": "Lifestyle: Eintöpfe der Samifjod\nDer Eintopf köchelt über dem Lagerfeuer. Es ist unmöglich, die Zutaten zu erraten, die sie in den Topf geworfen hat."
+      },
+      "hobby2": {
+        "name": "Natur",
+        "description": "Natur: Wilder Rückzugsort\nMach dir keine Sorgen, wenn du sie nicht findest. Vom Geruch nach Stahl und Ferrium ist ihr schwindelig geworden, und sie hat sich vorerst in die Wildnis zurückgezogen."
+      }
+    },
+    "voiceLines": [
+      {
+        "voId": "chr_0034_typhoea_chrbark_squad_01",
+        "title": "Einsatzvorbereitung 1",
+        "text": "Bereite dich gut vor. Nimm alle Waffen und Werkzeuge mit, die du brauchst. Es wäre peinlich, auf halbem Wege umkehren zu müssen, weil du etwas vergessen hast."
+      },
+      {
+        "voId": "chr_0034_typhoea_chrbark_squad_02",
+        "title": "Einsatzvorbereitung 2",
+        "text": "Eine Reise nach draußen muss gut geplant werden. Pass auf, wohin du gehst, was du isst und was du sagst."
+      },
+      {
+        "voId": "chr_0034_typhoea_chrbark_join_01",
+        "title": "Wird zum Team hinzugefügt 1",
+        "text": "Hast du eine Mission für mich? Los, sag schon."
+      },
+      {
+        "voId": "chr_0034_typhoea_chrbark_join_02",
+        "title": "Wird zum Team hinzugefügt 2",
+        "text": "Quizfrage: Welche Dinge, die man in der Wildnis sammeln kann, sollte man roh essen? Am besten gar keine? Korrekt. Du hast bestanden."
+      },
+      {
+        "voId": "chr_0034_typhoea_chrbark_weap_01",
+        "title": "Waffe wird gewechselt",
+        "text": "Danke, aber die Wildnis versorgt uns mit Waffen. Ich kann Pfeile aus Ästen herstellen. Möchtest du das sehen?"
+      },
+      {
+        "voId": "chr_0034_typhoea_chrbark_gear_01",
+        "title": "Ausrüstung wird gewechselt",
+        "text": "Mir ist nicht kalt und ich fürchte keine Gefahr. All diese Ausrüstungsteile sind unnötig. Würdest du dir sonst Sorgen machen? Dann … Nehme ich sie wohl."
+      },
+      {
+        "voId": "chr_0034_typhoea_chrup_skill_01",
+        "title": "Talentknoten-Aktivierung",
+        "text": "Der gelichtete Nebel gibt vieles preis."
+      },
+      {
+        "voId": "chr_0034_typhoea_chrup_level_01",
+        "title": "Kampfaufzeichnungen ansehen",
+        "text": "Ich bin wohl lieber selbst im Kampfgetümmel."
+      },
+      {
+        "voId": "chr_0034_typhoea_chrup_promt01_01",
+        "title": "Operator-Beförderung 1",
+        "text": "Na gut. Freut mich, dass du mich als gute Begleitung betrachtest."
+      },
+      {
+        "voId": "chr_0034_typhoea_chrup_promt02_01",
+        "title": "Operator-Beförderung 2",
+        "text": "Man sagt, es ist gut, deine Zustimmung zu gewinnen, aber so besonders fühlt sich das nicht an. Ich werde für dich tun, was immer ich kann, egal was du über mich denkst."
+      },
+      {
+        "voId": "chr_0034_typhoea_chrup_promt03_01",
+        "title": "Operator-Beförderung 3",
+        "text": "Anerkennung? Ist das dasselbe wie deine „Zustimmung“ … oder vertraust du mir jetzt mehr …? Und vertraust du meinen Fähigkeiten oder mir als Person?"
+      },
+      {
+        "voId": "chr_0034_typhoea_chrup_promt04_01",
+        "title": "Operator-Beförderung 4",
+        "text": "Herzlichen Glückwunsch? Ich dachte, wir hätten die Schmeicheleien hinter uns gelassen. Zwischen guten Freunden reicht ein Blick."
+      },
+      {
+        "voId": "chr_0034_typhoea_introduce_01",
+        "title": "Operator meldet sich zum Dienst",
+        "text": "Endmin, ich habe dich aufgesucht und mein Versprechen erfüllt. Wie steht es mit deinem? Hast du schon eine gute Geschichte, die du mit mir teilen möchtest?"
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_switch_01",
+        "title": "Warten 1",
+        "text": "Wir müssen der Prophezeiung nicht gehorchen. Wir schreiben das Ende selbst."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_switch_02",
+        "title": "Warten 2",
+        "text": "Legenden sind nie weit weg … Sie können sich direkt hier bei uns abspielen."
+      },
+      {
+        "voId": "chr_0034_typhoea_sim_assign_work_01",
+        "title": "Zuweisung zur Anlage",
+        "text": "Ich habe zwar gelernt, Maschinen zu bedienen, aber meine Erinnerungen … sind geschmolzen wie Schnee im Frühling."
+      },
+      {
+        "voId": "chr_0034_typhoea_sim_hello_lower_01",
+        "title": "Gruß 1",
+        "text": "Im Düsterwald regnet es heute. Nimm einen Schirm mit."
+      },
+      {
+        "voId": "chr_0034_typhoea_sim_hello_max_01",
+        "title": "Gruß 2",
+        "text": "Ich wünsche dir angenehme Träume."
+      },
+      {
+        "voId": "chr_0034_typhoea_sim_talk_lv01_01",
+        "title": "Dijiang-Geplauder 1",
+        "text": "Ich war auf der Brücke spazieren. Die Leute fragten, ob sie mit meinem Bogen spielen dürfen … Seltsam. Warum haben sie keine Angst vor mir?"
+      },
+      {
+        "voId": "chr_0034_typhoea_sim_talk_lv02_01",
+        "title": "Dijiang-Geplauder 2",
+        "text": "Warum ich hier bin? Gibt keinen großen Grund. Ich darf dich wohl noch besuchen kommen, oder? Und jetzt entschuldige mich bitte, ich muss weg."
+      },
+      {
+        "voId": "chr_0034_typhoea_sim_talk_lv02_02",
+        "title": "Dijiang-Geplauder 3",
+        "text": "Seit ich hier bin, habe ich viele Leute kennengelernt. Sie haben mir viele interessante Geschichten erzählt. Und ja, ich habe sie in ein Notizbuch geschrieben, aber ich habe eine ganze Seite für dich leergelassen – die letzte Seite. Und jetzt solltest du mir eine sehr lange Geschichte erzählen."
+      },
+      {
+        "voId": "chr_0034_typhoea_sim_talk_max_01",
+        "title": "Dijiang-Geplauder 4",
+        "text": "Die leitenden Endfielder im Arsenal haben meine Pfeilköpfe verbessert. Sie haben mir einen Signalpfeil gegeben, der in der Luft explodiert und ein Endfield-Logo erstrahlen lässt. Damit kann ich die Dijiang im Notfall rufen. Aber ich habe keine Angst vor Gefahren oder davor allein zu sein … Das hier ist meine Prüfung. Meine ganz allein."
+      },
+      {
+        "voId": "chr_0034_typhoea_sim_talk_max_02",
+        "title": "Dijiang-Geplauder 5",
+        "text": "Dieser Ort ist nicht wie die anderen Lager, die ich besucht habe. Kein Lagerfeuer, kein Schnee, keine Bäume. Aber wenn ich auf dem Boden einschlafe, spüre ich ein mächtiges Herz, das donnernd schlägt. Nein, es ist nicht der Puls des Landes. Es ist der Puls der Dijiang."
+      },
+      {
+        "voId": "chr_0034_typhoea_sim_talk_max_03",
+        "title": "Dijiang-Geplauder 6",
+        "text": "Ich habe gerade geträumt und konnte nicht mehr einschlafen. Ich habe gesehen, dass die Sterne wach waren und konnte hören, was sie einander zuflüstern. Was einst versank, wird sich wieder erheben. Was noch immer träumt, wird erwachen. Diese werden Samivegrs Schicksal verändern … Doch wann haben die Sterne gelernt, zu sprechen? Das kam mir merkwürdig vor. Hmm … Träume ich noch immer?"
+      },
+      {
+        "voId": "chr_0034_typhoea_sim_gift_give_01",
+        "title": "Geschenke anbieten",
+        "text": "Oh, ich habe etwas aus dem Norden mitgebracht. Keine Angst, das verdirbt nicht. Ich habe seine Schönheit mit meinen Originium-Techniken haltbar gemacht. Was, deine Hände frieren ein? Oh nein, daran hätte ich denken müssen. *Hoho* … Gut, ist dir jetzt wieder wärmer?"
+      },
+      {
+        "voId": "chr_0034_typhoea_sim_gift_recv_01",
+        "title": "Geschenke annehmen",
+        "text": "Vielen Dank. Ich werde das auf all meinen Wegen mit mir nehmen. Vielleicht hat die Zukunft ja eine wunderschöne Geschichte für uns parat."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_self_line01",
+        "title": "Vertrauensgespräch 1",
+        "text": "Beruhige dich, Endmin. Kein Grund zur Panik. Ich werde dich beschützen. Also, was macht dir solchen Kummer? Die riesige, verzurrte Bestie vor deiner Tür …? Die habe ich für dich gejagt. Ganz alleine. Hab sie lebendig gefangen. Bin dafür einige Tage durch die Wälder gepirscht. Wenn du sie nicht willst, bringe ich sie wieder weg. Das Fell ist nämlich beste Qualität."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_self_line02",
+        "title": "Vertrauensgespräch 2",
+        "text": "Halt still und hab Geduld. Ich bin gleich fertig. Ich bringe dich zu einer Sami-Ruine, die seit vielen Jahren unberührt ist. Du brauchst ordentlichen Schutz gegen die Attacken und Hexereien. Und rümpf nicht die Nase. Das ist der Duft von frischer Erde und Moos. Du wirst dich dran gewöhnen. Gut. Jetzt riechst du wie … ein echter Samifjod."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_self_line03",
+        "title": "Vertrauensgespräch 3",
+        "text": "Ist dir kalt? Ich leg noch Holz nach. Die Schlafsäcke sind vorbereitet, du kannst dich also jederzeit hinlegen. Ich übernehme heute Nacht die Wache. Hm …? Nein, ich bin nicht müde. Ich habe Kräuter, die mich wach halten. Hände weg davon! Du möchtest doch schlafen, oder? Ähm. Tut mir leid. Ich wollte nicht absichtlich gemein sein. Aber … die Kräuter haben einen echt intensiven Geruch. Du hast mir heute sehr geholfen, und ich wollte, dass du dich gut ausruhen kannst."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_self_line04",
+        "title": "Vertrauensgespräch 4",
+        "text": "Nein. Ich zeige mein Notizbuch niemandem. Nicht einmal wenn du nett darum bittest. Ich hab dir die Geschichten ohnehin schon erzählt, also kein Grund neugierig zu sein. Warte mal. Du erzählst mir eine Geschichte über den Yinglung-Pass, wenn ich dir das Notizbuch leihe? Gut, aber nur kurz … Wer ist das Strichmännchen mit dem schwarzen Kasten auf dem Kopf? Das bist du. Das Strichmännchen, das das Dreieck hält? Das ist mein Bogen! Was redest du da? Gib mir sofort mein Notizbuch wieder!"
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_self_line05",
+        "title": "Vertrauensgespräch 5",
+        "text": "Nachdem ich Rhodes Island verlassen habe, bin ich an alle möglichen Orte gereist und habe die verschiedensten Leute kennengelernt. Am Ende war jeder Ort wie Samivegr. Die Charaktere gingen weg, und ihre Geschichten verblassten nach und nach. Ich war allein, aber ich hatte einen gewaltigen Schatzhort an Geschichten angesammelt. Die Einsamkeit macht mir nichts aus … Und jagen kann ich auch alleine. Aber die Geschichten sind so wunderschön. Man muss sie mit Freunden teilen und sich erinnern. Es wäre eine Schande, wenn nur ich mich an sie erinnern könnte."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_chat_line01",
+        "title": "Geplauder 1",
+        "text": "Öffne deine Hände. Hier … die Beeren des Düsterwalds. Sind vielleicht ein wenig sauer, aber bitte iss sie dennoch. Sie bringen einen ganzen Monat lang Glück."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_chat_line02",
+        "title": "Geplauder 2",
+        "text": "Man erzählt sich, dass du nicht gut schläfst. Häng diese Foldartal-Tafel bei deinem Bett auf. Sie wehrt unreine Wesen ab, die sich in deine Träume schleichen wollen. Die Runen sagen, dass der Zauber jeden Eindringling zu Staub zermalmen, ihn in den kältesten See von Samivegr werfen und ihn auf ewig gefrieren wird."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_chat_line03",
+        "title": "Geplauder 3",
+        "text": "Keine Sorge, Endmin. Ich habe Jahre in der Wildnis verbracht. Ich habe keine Angst mehr davor, mich zu verlaufen. Die Sterne, der Wind und die Bäume weisen mir den Weg. Und ich glaube nicht, dass man einfach nur immer in die gleiche Richtung gehen muss, um sich nie zu verlaufen. Sieh dir den Pfad unter deinen Füßen an. Er breitet sich immer aus, in alle Richtungen. Neue Chancen und Entdeckungen erwarten uns, ganz gleich, für welchen Weg wir uns entscheiden. Keine Angst. Ich werde dich begleiten."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_chat_line04",
+        "title": "Geplauder 4",
+        "text": "Deine Klinge ist stumpf? Gib sie mir. Ich habe einen Schleifstein. Du warst nachlässig. So kenne ich dich nicht. Machst du dir Sorgen wegen etwas? Verbirg es nicht vor mir. Die Augen eines guten Jägers beobachten die Beute, aber sie geben auch auf seine Begleiter acht. Gut. Dann behalt es eben für dich. Ich weiß, dass gewisse Erlebnisse nicht für Geschichten geeignet sind. Man sollte nicht von ihnen erzählen oder in ihnen schwelgen."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_chat_line05",
+        "title": "Geplauder 5",
+        "text": "Nein, ich verstehe es nicht. Unser Akku ist fast leer. Musst du diesen Bericht noch heute lesen? Und nein! Du darfst nicht im Mondlicht lesen. Da machst du dir nur die Augen kaputt. Nutze den Tag mit seinem Sonnenschein, denn die Nacht ist nur dafür da, in der Dunkelheit zu versinken. Sagt wer? Sagt jede Generation der weisen Samifjod. Und jetzt schau mir in die Augen. Sag mir, Endmin, muss ich dich erst bewusstlos schlagen?"
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_about_line01",
+        "title": "Thema: Feranmut Sami",
+        "text": "Ich war schockiert zu erfahren, dass Feranmut Sami fiel, um unser Volk zu beschützen. Ich kann mir kaum vorstellen, was wir Samifjod ohne Seinen Schutz machen würden. In den Forts des Nordens habe ich gesehen, wie mein Volk noch immer im Schneesturm unter Seinem großen Leichnam auf der Jagd war. Auf den Schlachtfeldern habe ich erlebt, wie unsere Schneepriester im Kampf gegen die Aggeloi alles gegeben haben … Und ich habe erfahren, dass Er und Sein unbezähmbarer Wille bei uns bleiben werden. Vergessenheit kommt nicht mit dem Tod, sondern mit der Kapitulation."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_about_line02",
+        "title": "Thema: Amma",
+        "text": "Ich kenne Amma. Ich erinnere mich an Sie. Nur Bruchstücke der Legende der uralten Bestienlady haben auf Talos-II überlebt. Viele haben versucht, sich zu erinnern, aber Sie verließ uns zu früh, und unser Gedächtnis war noch nicht zuverlässig genug … Ich habe versucht, jene zu finden, die die gesamte Ammataru aufsagen konnten, fand jedoch nur einige wenige Zeilen und Phrasen. Das ist in Ordnung. Immerhin haben wir diese kleinen Teile. Solange wir uns erinnern, werden sie wie Samen sein … aus denen eine ganze, neue Legende wachsen wird."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_about_line03",
+        "title": "Thema: Orden des Stahlschwurs",
+        "text": "Die Eidwächter sind gute Nachbarn; das ist ein seltener Segen. Wir teilen Lagerfeuer, Waffen, Techniken und Essen miteinander. Gemeinsam haben wir uns der Kälte, den Nordwinden, den Aggeloi und den Ankhors gestellt. Ihre Gefallenen wurden eins mit unserem Permafrost, und ihre Nachkommen sprossen und wuchsen in unseren Wäldern. Aber sie sind nicht wir, und werden niemals zu uns werden. Nein. Wir stoßen sie nicht weg. Unsere Pflichten unterscheiden sich. Ihre Kreuzzüge werden im Triumph enden, aber die Jagd der Samifjod endet nie."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_about_line04",
+        "title": "Thema: Düsterwald",
+        "text": "Versteh mich nicht falsch, wir sind gastfreundlich. Aber gegen die Aggeloi und die Ankhors zu kämpfen ist höchst frustrierend. Schlimmer noch sind diese Wochenendabenteurer mit ihren Wohnmobilen und fahrbaren Lagern. Sie wollen sehen, wie wir Flössler angeln, Tiere jagen, Bäume fällen, einen großen Kessel Eintopf auf dem Lagerfeuer zubereiten, in der Wärme des Feuers schlafen und dann erwachen, um einen neuen Tag anzugehen … Das ist einfach nur Alltag. Was ist daran so besonders?"
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_about_line05",
+        "title": "Thema: Dämonen",
+        "text": "Die alten Schatten sind nun nur noch eine Fußnote in der Geschichte der Sami. Diese Geschichten sind sehr alt, wie ein nasses Notizbuch, in dem die Schrift sich in Geschmier des Unheils verwandelt hat. Deswegen wollen die Leute nicht tiefer blicken. Endmin, wir haben in diesen Seiten der Vergangenheit geblättert … Nun haben wir es mit Feinden zu tun, die wir zumindest sehen können."
+      },
+      {
+        "voId": "chr_0034_typhoea_explore_point_common_01",
+        "title": "Ressource/Sammelobjekt entdeckt 1",
+        "text": "Warte mal. Ich hab da etwas gesehen."
+      },
+      {
+        "voId": "chr_0034_typhoea_explore_point_valub_01",
+        "title": "Ressource/Sammelobjekt entdeckt 2",
+        "text": "Mein Instinkt sagt mir, dass ich mich hier genauer umsehen sollte."
+      },
+      {
+        "voId": "chr_0034_typhoea_explore_find_locked_01",
+        "title": "Unerforschter Bereich entdeckt",
+        "text": "Vielleicht gibt mir das unbekannte Territorium ja eine andere Antwort."
+      },
+      {
+        "voId": "chr_0034_typhoea_explore_find_danger_01",
+        "title": "Starker Gegner entdeckt",
+        "text": "Gefahr voraus. Vorsicht jetzt."
+      },
+      {
+        "voId": "chr_0034_typhoea_interact_mine_valub_01",
+        "title": "Abbau 1",
+        "text": "Wertvolle Mineralien. Nimm nur, was wir brauchen. Nicht gierig werden."
+      },
+      {
+        "voId": "chr_0034_typhoea_interact_mine_valub_echo2_01",
+        "title": "Abbau 2",
+        "text": "Ich kann dir helfen. Mit einer Spezialtechnik kann man das abklopfen."
+      },
+      {
+        "voId": "chr_0034_typhoea_interact_treasure_valub_01",
+        "title": "Kiste öffnen",
+        "text": "Die Großzügigkeit des Schicksals."
+      },
+      {
+        "voId": "chr_0034_typhoea_interact_etherium_01",
+        "title": "Aurylen erhalten",
+        "text": "Aurylene … Nur ein Jäger kann sich ihnen nähern und sie fangen."
+      },
+      {
+        "voId": "chr_0034_typhoea_interact_blight_break_01",
+        "title": "Eliminierung der Verderbnis",
+        "text": "Hoffentlich hat das Ding keinen anderen Lebewesen etwas getan."
+      },
+      {
+        "voId": "chr_0034_typhoea_interact_rest_01",
+        "title": "Ausruhen",
+        "text": "Ich fühle mich … erfüllt von Kampfgeist."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_suppuse_using_01",
+        "title": "Taktische Nutzung 1",
+        "text": "Du bist verletzt. Ich kann dir helfen."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_suppuse_getheal_01",
+        "title": "Taktische Nutzung 2",
+        "text": "Jetzt geht es mir viel besser. Keine Sorge."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_remind_danger_01",
+        "title": "Gefahrenwarnung",
+        "text": "Vorsicht!"
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_hurt_lowhp_01",
+        "title": "Verletzt",
+        "text": "Nein. Noch kann ich kämpfen."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_dead_01",
+        "title": "0 LP",
+        "text": "Ich habe es leider nicht bis zum Ende geschafft."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_remind_praise_01",
+        "title": "Teammotivation 1",
+        "text": "Gut gemacht! Es ist mir eine Ehre, mit dir reisen zu dürfen."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_remind_praise_02",
+        "title": "Teammotivation 2",
+        "text": "Als Team zu kämpfen … Gefällt mir."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_remind_praise_echo2_01",
+        "title": "Motivationsreaktion 1",
+        "text": "Alles in Ordnung. Ich leiste nur meinen Beitrag."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_remind_praise_echo2_02",
+        "title": "Motivationsreaktion 2",
+        "text": "Ihr seid ebenfalls ein tolles Team."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_intobattle_01",
+        "title": "Kampf beginnt 1",
+        "text": "Keine Panik. Das bekommen wir hin."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_intobattle_echo2_01",
+        "title": "Kampf beginnt 2",
+        "text": "Fühlst du den Fluss? Gut."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_outbattle_nor_01",
+        "title": "Kampfsieg 1",
+        "text": "So gefällt mir das."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_outbattle_nor_02",
+        "title": "Kampfsieg 2",
+        "text": "Feiern wir unseren Sieg nicht zu sehr. Wir sollten auf der Hut sein."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_outbattle_nor_echo2_01",
+        "title": "Kampfsieg 3",
+        "text": "In meiner Geschichte gibt es für jeden einen Platz."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_outbattle_hard_01",
+        "title": "Kampfsieg 4",
+        "text": "Eine Geschichte hat ihre Höhen und Tiefen. Aber wer einen langen Atem hat, darf umblättern."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_battle_defeat_01",
+        "title": "Niederlage im Kampf",
+        "text": "Wir haben bis zum allerletzten Augenblick nicht aufgegeben. Wir haben unsere Ängste besiegt und das ist das bestmögliche Ende."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_attack_last_01",
+        "title": "Abschlussangriff 1",
+        "text": "Beweg dich."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_attack_last_02",
+        "title": "Abschlussangriff 2",
+        "text": "Bleib leise."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_skill_nor_01",
+        "title": "Kampffertigkeit 1",
+        "text": "Beobachte und schlag zu!"
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_skill_nor_02",
+        "title": "Kampffertigkeit 2",
+        "text": "Es gibt keinen Ausweg!"
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_skill_nor_03",
+        "title": "Kampffertigkeit 3",
+        "text": "Gutes Timing."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_skill_comb_ready_01",
+        "title": "Kombofertigkeit bereit 1",
+        "text": "Die Beute sitzt nun in der Falle."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_skill_comb_ready_02",
+        "title": "Kombofertigkeit bereit 2",
+        "text": "Wir müssen uns unsere Beute aussuchen."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_skill_comb_release_01",
+        "title": "Kombo wirken 1",
+        "text": "Es ist aus."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_skill_comb_release_02",
+        "title": "Kombo wirken 2",
+        "text": "Widerstand ist zwecklos!"
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_attack_extra_01",
+        "title": "Wuchtschlag 1",
+        "text": "Das war eine falsche Bewegung."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_attack_extra_02",
+        "title": "Wuchtschlag 2",
+        "text": "Hört auf zu zappeln."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_skill_ultimate_01",
+        "title": "Ultimative Fertigkeit 1",
+        "text": "Feigling. Ich halte dich fest."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_skill_ultimate_02",
+        "title": "Ultimative Fertigkeit 2",
+        "text": "Niemand entkommt mir."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_skill_ultimate_03",
+        "title": "Ultimative Fertigkeit 3",
+        "text": "Du solltest mich fürchten."
+      }
+    ]
+  },
+  "potentials": {
+    "potential1": {
+      "description": "Während des <@ba.key>Schwebens</>: ANG <@ba.vup>+{atk_up:0%}</> und Verursachter LSTDANG-SDN wird auf das <@ba.vup>{atk_scale_base:0.0}</>-fache des Ursprungswertes erhöht. \nTalent <@ba.key>Fokus der Jägerin</> verbessert: Reaktivierungszeit von <@ba.key>Schutzbarriere</> <@ba.vup>{decrease_cd:0}</> Sek.",
+      "name": "Samifjod-Pfeilkunst"
+    },
+    "potential2": {
+      "description": "Beweglichkeit <@ba.vup>+{Agi:0}</>, Technik-Intensität <@ba.vup>+{PhysicalAndSpellInflictionEnhance:0}</>.",
+      "name": "Schreiten der Jägerin"
+    },
+    "potential3": {
+      "description": "Kombofertigkeit <@ba.key>Wuchernde Dornen</> verbessert. Abklingzeit: <@ba.vup>{coolDown:0}</> Sek. Gegner in der <@ba.key>Sperrfeuerreihe</> erleiden <#ba.naturalburst>Naturexplosion</>-SDN <@ba.vup>+{persistent_naturalburst_increase:0%}</>.",
+      "name": "Dornenfalle"
+    },
+    "potential4": {
+      "description": "Ultimative Fertigkeit <@ba.key>Ruf des eisigen Berges</> verbessert: Ultimative Energiekosten <@ba.vup>-{1-costvalue:0%}</>.",
+      "name": "Kein Entkommen"
+    },
+    "potential5": {
+      "description": "Ultimative Fertigkeit <@ba.key>Ruf des eisigen Berges</> verbessert: Erzeugt jetzt <@ba.vup>+{arrow_num_given:0}</> <#ba.arrownum>Jagdpfeile</>. Der Multiplikator für den verursachten SDN der Ultimativen Fertigkeit erhöht sich auf das <@ba.vup>{potential_damge_up:0.0}</>-Fache des Ursprungswertes und der SDN-Multiplikator der durch den <@ba.key>Energieschuss</> ausgelösten Naturexplosion erhöht sich auf das <@ba.vup>{potential_damage_rate:0.0}</>-Fache des Ursprungswertes.",
+      "name": "Tödlicher Schuss"
+    }
+  },
+  "arts": {
+    "potential1": {
+      "name": "Wärmende Wintersonne",
+      "author": "南野 あき",
+      "description": "Im Wald hat es gestern ein wenig geschneit. Auch bei kaltem Wetter kann die helle Sonne mit ihren rosigen Strahlen dein Gesicht erwärmen."
+    },
+    "potential3": {
+      "name": "Kleine Jägerin",
+      "author": "狂zip",
+      "description": "Der legendären Jägerin der Wildnis gelingt es nie, eine Geschichte zu Ende zu erzählen, denn wenn sie an der Hälfte angelangt ist, überkommt sie die Erschöpfung."
+    },
+    "potential5": {
+      "name": "Tief im Eisfeld, ein Blick von ihr",
+      "author": "LM7",
+      "description": "Dort steht sie, in weiter Ferne. Sie dreht sich um, und ihre Augen erblicken dich. Diese Augen, den Eisfeldern von Samivegr gleich, tiefgründig und doch gelassen."
+    }
+  }
+}

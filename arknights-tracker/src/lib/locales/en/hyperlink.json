@@ -23,6 +23,14 @@
     "name": "Physical Status: Lift",
     "desc": "Applies <#ba.noguard>Vulnerability</> on an enemy. If the enemy is already <#ba.noguard>Vulnerable</>, then add 1 stack of <#ba.noguard>Vulnerability</>, and deal <@ba.phy>Physical DMG</> and <@ba.poise>Stagger</>."
   },
+  "ba.arrowenergy": {
+    "name": "Sign",
+    "desc": "Typhoeus gains Signs when she consumes the enemy's <@ba.naturalinflict>Nature Infliction</> stacks or when triggering <#ba.naturalburst>Nature Burst</> on enemies. Her combo skill can then convert the Signs into <#ba.arrownum>Hunting Arrows</>."
+  },
+  "ba.arrownum": {
+    "name": "Hunting Arrow",
+    "desc": "When Typhoeus is in her <@ba.key>Hovering</> state, she can consume Hunting Arrows to empower her shots, dealing higher DMG while also triggering <#ba.naturalburst>Nature Burst</>."
+  },
   "ba.burning": {
     "name": "Arts Reaction: Combustion",
     "desc": "An enemy with <@ba.burning>Combustion</> takes <@ba.fire>Heat DMG</> over time.\n<@ba.burning>Combustion</> = A <#ba.spellinflict>non-Heat Infliction</> (<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.fireinflict>Heat Infliction</>"
@@ -260,8 +268,8 @@
     "desc": "Susceptible targets temporarily take more DMG of the element it is Susceptible to. The number represents the degree of increase. Effects of the same type can stack."
   },
   "ba.weak": {
-    "name": "Weaken",
-    "desc": "Weakened targets temporarily deal reduced DMG. The number represents the degree of reduction. Effects of the same type can stack non-linearly."
+    "name": "Weakness",
+    "desc": "A target with Weakness temporarily deals reduced DMG. The number represents the degree of reduction. Effects of the same type can stack non-linearly."
   },
   "fac.hub": {
     "name": "Protocol Automation-Core",
@@ -360,7 +368,7 @@
     "desc": "The Reed Rye is a type of plantable crop gatherable from the wilderness. It can also be acquired by cultivating <#item.portSoilSp1>Reed Rye Plots</>.\nIt can be directly used for crafting <#sys.manualCraftDish>Fine Food & Meds</> (Fine F&M)."
   },
   "item.plantSpSeed1": {
-    "name": "Reed Rye Seed",
+    "name": "Reed Rye Seeds",
     "desc": "Seeds produced by seed-picking <#item.plantSp1>Reed Rye</> plants with AIC Factory facilities.\nTake Reed Rye Seed and <#item.carbonMtl>Carbon</>, then go to the <#sys.manualCraftField>Planting</> screen to craft them into <#item.portSoilSp1>Reed Rye Plots</>."
   },
   "item.portSoilBbflower": {

@@ -572,7 +572,7 @@
   "eny_0105_wgslime2": {
     "name": "Schlammlawine δ",
     "nickname": "Schlammlawine δ",
-    "description": "Der „Tholeroygran“ (Archiv-ID: ACM311δ) ist eine energetisierte Variante von ACM311. Er verwendet einzigartige Energielinien und hält so eine homöostatische Temperatur, die deutlich unter den Gefrierpunkten seiner Bestandteile liegt.",
+    "description": "Der „Tholeroygran Dinedon“ (Archiv-ID: ACM311δ) ist eine energetisierte Variante von ACM311. Er verwendet einzigartige Energielinien und hält so eine homöostatische Temperatur, die deutlich unter den Gefrierpunkten seiner Bestandteile liegt.",
     "abilities": [
       "Dieser Gegner ist wie der Blitz bei dir! Seine Angriffe belegen Operatoren bei einem Treffer mit Kryo."
     ]
@@ -651,7 +651,7 @@
     "nickname": "Federbiest-Verderbnisschatten",
     "description": "Eine Manifestation von Æther-Energie-Rückständen, die die Gestalt eines Federbiests angenommen hat. Dieser Verderbnisschatten scheint sehr viel aggressivere Roll- und Sprungangriffe auszuführen als sein lebendiges Gegenstück, aber vielleicht ist das auch nur Einbildung.",
     "abilities": [
-      "Nach einer kurzen Aufladung kann der Federbiest-Verderbnisschatten mehrere Blitze heraufbeschwören, und er aktiviert Verderbnisschatten-Energie in einem großen Bereich. Wenn sich das Biest auflädt, musst du es schnell unterbrechen."
+      "Nach einer kurzen Aufladung kann der Federbiest-Verderbnisschatten mehrere Blitze heraufbeschwören und Verderbnisschatten-Energie in einem großen Bereich aktivieren. Wenn sich das Biest auflädt, musst du es schnell unterbrechen."
     ]
   },
   "eny_0119_kltiger": {
@@ -713,6 +713,72 @@
     "abilities": [
       "Wenn die Taumeln-Anzeige von Alleikhreos, Chiliarch den Taumel-Knoten erreicht, lässt er eine Fundit-Waffe fallen. Nähere dich ihr mit dem gesteuerten Operator, um die Waffe aufzuheben und ihn damit anzugreifen.",
       "Wenn sich das Blatt gegen Alleikhreos, Chiliarch wendet, beschwört er Doppelgänger aus dem Riss, um seine Gegner anzugreifen."
+    ]
+  },
+  "eny_0127_bigents": {
+    "name": "Finstereiches Zorn",
+    "nickname": "Finstereiches Zorn",
+    "description": "Eine riesige, von der Schneepriesterin erschaffene Kampfmarionette. Sie war dem Befehl ihrer Meisterin gefolgt, das grenzenlose Reich des Nebels zu durchstreifen und zu durchkämmen, bis zu jenem Augenblick, als sie erkannte, dass sie verlassen worden war, bis sie zu dem Gefäß wurde, das den ganzen Zorn eines tiefen verschneiten Waldes in sich trug.",
+    "abilities": [
+      "Finstereiches Zorn hinterlässt Ranken auf dem Boden. Operatoren, die auf diese Ranken treten, erleiden fortlaufend SDN und werden verlangsamt.",
+      "Finstereiches Zorn beschwört Schnitzkunst-Wanderer, die ihn im Kampf unterstützen."
+    ]
+  },
+  "eny_0128_babyents": {
+    "name": "Schnitzkunst-Wanderer",
+    "nickname": "Schnitzkunst-Wanderer",
+    "description": "Eine kleine, von der Schneepriesterin erschaffene Kampfmarionette. Ihre Aufgabe ist die Sicherung des Verschneiten Waldes. Unterschätze nicht ihre Fäuste aus Holz, denn sie können mühelos Stein zertrümmern.",
+    "abilities": [
+      "Ein Schnitzkunst-Wanderer ohne Schild-Kumulierungen kann Operatoren einfangen, um ihre Energie zu absorbieren und seine Schild-Kumulierungen wiederherzustellen.",
+      "Schnitzkunst-Wanderer stimmen ihre Angriffe aufeinander ab."
+    ]
+  },
+  "eny_0129_slwood": {
+    "name": "Schnitzkunst-Schnecke",
+    "nickname": "Schnitzkunst-Schnecke",
+    "description": "Eine von der Schneepriesterin erschaffene Kampfmarionette. Ihre Form entspricht der der Originium-Schnecke. Diese Schnitzkunst-Schnecke ist schnell und eignet sich hervorragend zum Graben.",
+    "abilities": [
+      "Schnitzkunst-Schnecken können sich in den Boden eingraben, um sich an Gegner heranzuschleichen."
+    ]
+  },
+  "tatget_001_normal": {
+    "name": "Einfaches Ziel",
+    "nickname": "Einfaches Ziel",
+    "description": "Ein einfaches Ziel für angehende Bogenschützen.",
+    "abilities": [
+      "Ein einfaches Ziel. LP: 1."
+    ]
+  },
+  "tatget_002_endurance": {
+    "name": "Standard-Ziel",
+    "nickname": "Standard-Ziel",
+    "description": "Ein Standard-Ziel, das unerlässlich ist, um besser im Bogenschießen zu werden.",
+    "abilities": [
+      "Ein robustes Ziel. LP: 2."
+    ]
+  },
+  "tatget_003_expand": {
+    "name": "Barriereziel",
+    "nickname": "Barriereziel",
+    "description": "Ein Spezialziel, das seine Größe verändern und andere Ziele hinter sich schützen kann. Versuche, es zuerst zu zersplittern.",
+    "abilities": [
+      "Ein unberechenbares Ziel, das seine Größe ändern kann. LP: 3."
+    ]
+  },
+  "tatget_004_armor": {
+    "name": "Schweres Ziel",
+    "nickname": "Schweres Ziel",
+    "description": "Ein Spezialziel aus einer besonders starken Legierung. Es hält einiges aus und ist bei besonders starken Bogenschützen beliebt.",
+    "abilities": [
+      "Ein gepanzertes Ziel. LP: 4."
+    ]
+  },
+  "tatget_005_shield": {
+    "name": "Energieschild",
+    "nickname": "Energieschild",
+    "description": "Ein Energieschild für Ziele. Meister-Bogenschützen versehen ihre Ziele gerne mit Schilden, damit sie ein paar Sekunden länger durchhalten.",
+    "abilities": [
+      "Ein Schild, der auf jedes Ziel angewendet werden kann. LP: 2. Geschützte Ziele können nicht eingefroren werden, Harz kann nicht aktiv auf sie angewendet werden und Harz-Kumulierungen auf geschützten Zielen explodieren nicht, wenn SDN erlitten wird."
     ]
   }
 }

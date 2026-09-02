@@ -5,12 +5,12 @@
     "decoDesc": "Un arma comúnmente vista en las fronteras. Nadie sabe a quién se le ocurrió el diseño básico. Esta pieza en concreto puede fabricarse fácilmente con maquinaria industrial común.",
     "skills": [
       {
-        "name": "Refuerzo de fuerza [P]",
+        "name": "Fuerza [P]",
         "description": "Fuerza <@ba.vup>+{str}</>"
       },
       {
-        "name": "Refuerzo de ATQ [P]",
-        "description": "Ataque <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATQ [P]",
+        "description": "ATQ <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Supresión: impulso de emergencia",
@@ -24,12 +24,12 @@
     "decoDesc": "El producto independiente más reciente de Mieszko Industries. Los diseños están basados en una reliquia hallada por la Cábala de la Tranquilidad. El arma en sí estaba equipada con tecnologías altamente clasificadas, lo que le permitía cortar casi cualquier cosa con facilidad.",
     "skills": [
       {
-        "name": "Refuerzo de atributo principal [G]",
+        "name": "Atributo principal [G]",
         "description": "Atributo principal <@ba.vup>+{mainattr}</>"
       },
       {
-        "name": "Refuerzo de Ataque [G]",
-        "description": "Ataque <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATQ [G]",
+        "description": "ATQ <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Supresión: Corte apilado",
@@ -43,11 +43,11 @@
     "decoDesc": "Un producto de alta gama de la Base de apoyo de Northmarch. Este cortador de cadenas fue diseñado con tecnología más antigua. Aunque ya no se produce en masa, el arma aún demuestra su confiabilidad en el campo.",
     "skills": [
       {
-        "name": "Refuerzo de voluntad [G]",
+        "name": "Voluntad [G]",
         "description": "Voluntad <@ba.vup>+{will}</>"
       },
       {
-        "name": "Refuerzo de PV [G]",
+        "name": "PV [G]",
         "description": "PV Máx. <@ba.vup>+{hp:0.0%}</>"
       },
       {
@@ -62,11 +62,11 @@
     "decoDesc": "Un arma especializada que fue fabricada por Endfield. Esta espada ondulada fue equipada con circuitos de Originio entrelazados para mejorar el rendimiento de las esencias. Esta composición se inspiró en varios fenómenos observados en Talos.",
     "skills": [
       {
-        "name": "Refuerzo de fuerza [G]",
+        "name": "Fuerza [G]",
         "description": "Fuerza <@ba.vup>+{str}</>"
       },
       {
-        "name": "Refuerzo de PV [G]",
+        "name": "PV [G]",
         "description": "PV Máx. <@ba.vup>+{hp:0.0%}</>"
       },
       {
@@ -81,11 +81,11 @@
     "decoDesc": "Un arma especial de edición limitada de Hora de brujas. La apariencia de la gran espada probablemente se basa en una leyenda antigua. Parece capaz de arrancar lamentos de angustia desde el reino de los sueños.",
     "skills": [
       {
-        "name": "Refuerzo de fuerza [G]",
+        "name": "Fuerza [G]",
         "description": "Fuerza <@ba.vup>+{str}</>"
       },
       {
-        "name": "Refuerzo de índice crít. [G]",
+        "name": "Índice crítico [G]",
         "description": "Índice crítico <@ba.vup>+{crirate:0.0%}</>"
       },
       {
@@ -100,11 +100,11 @@
     "decoDesc": "Una gran espada estándar forjada por el Fuerte Forgefane. Aunque muy pocos han dominado esta arma, es fácil de empuñar y ha sido la opción más popular entre los reclutas novatos durante muchos años.",
     "skills": [
       {
-        "name": "Refuerzo de voluntad [P]",
+        "name": "Voluntad [P]",
         "description": "Voluntad <@ba.vup>+{will}</>"
       },
       {
-        "name": "Refuerzo de PV [P]",
+        "name": "PV [P]",
         "description": "PV Máx. <@ba.vup>+{hp:0.0%}</>"
       },
       {
@@ -119,7 +119,7 @@
     "decoDesc": "Una de las armas de serie estándar para operadores fabricadas por Endfield Industries. Esta arma fue diseñada por el Ingeniero de Arsenal Endfield Darhoff. Sus diseños ofrecen una opción viable para quienes participan en operaciones de asalto.",
     "skills": [
       {
-        "name": "Refuerzo de atributo principal [P]",
+        "name": "Atributo principal [P]",
         "description": "Atributo principal <@ba.vup>+{mainattr}</>"
       },
       {
@@ -134,11 +134,11 @@
     "decoDesc": "Una gran espada estándar desarrollada por los Espadachines de Hongshan. El arma está equipada con un nuevo recubrimiento especializado que ofrece una excelente protección, incluso si se utiliza en entornos extremos y hostiles.",
     "skills": [
       {
-        "name": "Refuerzo de fuerza [M]",
+        "name": "Fuerza [M]",
         "description": "Fuerza <@ba.vup>+{str}</>"
       },
       {
-        "name": "Refuerzo de Eficiencia de ganancia máxima [M]",
+        "name": "Eficiencia MÁX. [M]",
         "description": "Eficiencia de ganancia máxima <@ba.vup>+{usgs:0.0%}</>"
       },
       {
@@ -153,11 +153,11 @@
     "decoDesc": "Un arma especial de Mieszko Industries con una serie de producción limitada. Este fue el diseño final del proyecto de colaboración llevado a cabo por la empresa armamentística y el experto Principal de caballeros, Cromwell.",
     "skills": [
       {
-        "name": "Refuerzo de fuerza [M]",
+        "name": "Fuerza [M]",
         "description": "Fuerza <@ba.vup>+{str}</>"
       },
       {
-        "name": "Refuerzo de PV [M]",
+        "name": "PV [M]",
         "description": "PV Máx. <@ba.vup>+{hp:0.0%}</>"
       },
       {
@@ -172,12 +172,12 @@
     "decoDesc": "Una extraña arma lanzada por Hora de brujas. El cuerpo de la hoja está esculpido a partir de un bloque de hielo de apariencia común, pero su superficie está incrustada con una forma especial de Artes de Originio que la hace literalmente indestructible.",
     "skills": [
       {
-        "name": "Refuerzo de fuerza [G]",
+        "name": "Fuerza [G]",
         "description": "Fuerza <@ba.vup>+{str}</>"
       },
       {
-        "name": "Refuerzo de Ataque [G]",
-        "description": "Ataque <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATQ [G]",
+        "description": "ATQ <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Detonación: espeluznante",
@@ -191,11 +191,11 @@
     "decoDesc": "Una gran espada de calidad fabricada por los Espadachines de Hongshan. En comparación con otras grandes espadas, esta es más ligera, pero igual de letal.",
     "skills": [
       {
-        "name": "Refuerzo de fuerza [M]",
+        "name": "Fuerza [M]",
         "description": "Fuerza <@ba.vup>+{str}</>"
       },
       {
-        "name": "Refuerzo de Intensidad de artes [M]",
+        "name": "Intensidad de artes [M]",
         "description": "Intensidad de artes <@ba.vup>+{physpell:0}</>"
       },
       {
@@ -210,16 +210,16 @@
     "decoDesc": "Un arma estándar producida por Endfield Industries. El diseño fue proporcionado por el Equipo de Prototipos Creativos fundado por el Ingeniero Principal del Arsenal, Opero. El arma puede equiparse con diversos módulos según las necesidades del combate en acción.",
     "skills": [
       {
-        "name": "Refuerzo de fuerza [M]",
+        "name": "Fuerza [M]",
         "description": "Fuerza <@ba.vup>+{str}</>"
       },
       {
-        "name": "Refuerzo de PV [M]",
+        "name": "PV [M]",
         "description": "PV Máx. <@ba.vup>+{hp:0.0%}</>"
       },
       {
         "name": "Eficacia: Voluntad tenaz",
-        "description": "Atributo secundario <@ba.vup>+{second_attr_up:0.0%}</>.\nCuando el portador aplique <#ba.knockdown>Derribado</> o <#ba.weak>Debilitado</>, el portador obtiene DEF <@ba.vup>+{def_up:0.0%}</> durante {duration:0} s.\n<@ba.info>Los efectos con el mismo nombre no se acumulan.</>"
+        "description": "Atributo secundario <@ba.vup>+{second_attr_up:0.0%}</>.\nCuando el portador aplique <#ba.knockdown>Derribado</> o <#ba.weak>Debilidad</>, el portador obtiene DEF <@ba.vup>+{def_up:0.0%}</> durante {duration:0} s.\n<@ba.info>Los efectos con el mismo nombre no se pueden acumular.</>"
       }
     ]
   },
@@ -229,11 +229,11 @@
     "decoDesc": "Un prototipo producido por los Laboratorios de Etertecnología Portátiles. El cuerpo de la hoja está construido con materiales novedosos que le dan a esta arma su peso excepcionalmente ligero sin comprometer su potencial destructivo.",
     "skills": [
       {
-        "name": "Refuerzo de fuerza [G]",
+        "name": "Fuerza [G]",
         "description": "Fuerza <@ba.vup>+{str}</>"
       },
       {
-        "name": "Refuerzo de Intensidad de artes [G]",
+        "name": "Intensidad de artes [G]",
         "description": "Intensidad de artes <@ba.vup>+{physpell:0}</>"
       },
       {
@@ -248,12 +248,12 @@
     "decoDesc": "Una gran espada que a los Espadachines de Hongshan les tomó más de diez años diseñar y producir. Sus dimensiones están bien proporcionadas y golpea con una potencia y ferocidad increíbles. Es una pieza ejemplar de armamento pesado.",
     "skills": [
       {
-        "name": "Refuerzo de fuerza [G]",
+        "name": "Fuerza [G]",
         "description": "Fuerza <@ba.vup>+{str}</>"
       },
       {
-        "name": "Refuerzo de Ataque [G]",
-        "description": "Ataque <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATQ [G]",
+        "description": "ATQ <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Combativo: Corte amarantino",
@@ -267,11 +267,11 @@
     "decoDesc": "Una de las armas avanzadas fabricadas por Endfield para sus operadores. El Arsenal de Endfield adoptó los planos de Andre para crear un dron capaz de almacenar Artes, de modo que puedan lanzarse rápidamente en emergencias.",
     "skills": [
       {
-        "name": "Refuerzo de intelecto [P]",
+        "name": "Intelecto [P]",
         "description": "Intelecto <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Refuerzo de artes [P]",
+        "name": "DAÑ por Artes [P]",
         "description": "DAÑ por artes infligido <@ba.vup>+{spelldam:0.0%}</>"
       },
       {
@@ -286,7 +286,7 @@
     "decoDesc": "Una de las armas de serie estándar para operadores fabricadas por Endfield Industries. Esta arma fue diseñada por el Ingeniero de Arsenal Endfield, Jiminy. La Unidad de las Artes es extremadamente popular entre los operadores recién asignados en Endfield.",
     "skills": [
       {
-        "name": "Refuerzo de atributo principal [P]",
+        "name": "Atributo principal [P]",
         "description": "Atributo principal <@ba.vup>+{mainattr}</>"
       },
       {
@@ -301,12 +301,12 @@
     "decoDesc": "Una de las unidades de las Artes fabricadas por la Compañía Endfield Industries. Presenta diseños estructurales audaces, una magnífica conductividad de las Artes, pero es increíblemente difícil de controlar. Dominar esta arma se consideraba una prueba de destreza entre los operadores.",
     "skills": [
       {
-        "name": "Refuerzo de voluntad [P]",
+        "name": "Voluntad [P]",
         "description": "Voluntad <@ba.vup>+{will}</>"
       },
       {
-        "name": "Refuerzo de ATQ [P]",
-        "description": "Ataque <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATQ [P]",
+        "description": "ATQ <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Supresión: impulso de emergencia",
@@ -320,11 +320,11 @@
     "decoDesc": "Una unidad de las Artes desarrollada por RAYTHEAN Industries. Esta arma en particular es conocida por sus diseños minimalistas y ligeros. Para fabricarla, solo se necesita la mitad de los materiales necesarios para producir una unidad de las Artes estándar.",
     "skills": [
       {
-        "name": "Refuerzo de intelecto [M]",
+        "name": "Intelecto [M]",
         "description": "Intelecto <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Refuerzo de DAÑ eléc. [M]",
+        "name": "DAÑ eléctrico [M]",
         "description": "DAÑ eléctrico infligido <@ba.vup>+{electrondam:0.0%}</>"
       },
       {
@@ -339,12 +339,12 @@
     "decoDesc": "Una de las unidades de las Artes de apariencia extraña lanzadas por Hora de brujas. Sus diseños contraintuitivos incluyen una compatibilidad deliberadamente reducida de las Artes de Originio solo para resaltar la oscura lógica de la brujería del Antiguo Teekaz.",
     "skills": [
       {
-        "name": "Refuerzo de intelecto [M]",
+        "name": "Intelecto [M]",
         "description": "Intelecto <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Refuerzo de ATQ [M]",
-        "description": "Ataque <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATQ [M]",
+        "description": "ATQ <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Crepúsculo: pira lustrosa",
@@ -358,11 +358,11 @@
     "decoDesc": "Un producto contraído de los Laboratorios de Etertecnología Portátiles. Presenta componentes metálicos grabados a mano por expertos artesanos para crear figuras grabadas que coinciden con las de las piezas de tillita. El resultado es una unidad de las Artes con circuitos únicos de lanzamiento de las Artes.",
     "skills": [
       {
-        "name": "Refuerzo de voluntad [G]",
+        "name": "Voluntad [G]",
         "description": "Voluntad <@ba.vup>+{will}</>"
       },
       {
-        "name": "Refuerzo de DAÑ por naturaleza [G]",
+        "name": "DAÑ por naturaleza [G]",
         "description": "DAÑ por naturaleza infligido <@ba.vup>+{naturaldam:0.0%}</>"
       },
       {
@@ -377,11 +377,11 @@
     "decoDesc": "Una unidad de las Artes desarrollada por los Espadachines de Hongshan y fabricada con Xiranita. Dada la naturaleza cambiante de este raro material, solo los portadores capaces de los más altos niveles de concentración y precisión pueden manejar esta unidad de las Artes con eficacia.",
     "skills": [
       {
-        "name": "Refuerzo de voluntad [M]",
+        "name": "Voluntad [M]",
         "description": "Voluntad <@ba.vup>+{will}</>"
       },
       {
-        "name": "Refuerzo de Eficiencia de ganancia máxima [M]",
+        "name": "Eficiencia MÁX. [M]",
         "description": "Eficiencia de ganancia máxima <@ba.vup>+{usgs:0.0%}</>"
       },
       {
@@ -396,11 +396,11 @@
     "decoDesc": "Una Unidad de las Artes desarrollada por la Base de apoyo de Northmarch. Es, sin duda, la unidad con la mejor conductancia de las Artes de Originio. Solo los hechiceros más capaces podrían dominar esta arma.",
     "skills": [
       {
-        "name": "Refuerzo de atributo principal [G]",
+        "name": "Atributo principal [G]",
         "description": "Atributo principal <@ba.vup>+{mainattr}</>"
       },
       {
-        "name": "Refuerzo de Intensidad de artes [G]",
+        "name": "Intensidad de artes [G]",
         "description": "Intensidad de artes <@ba.vup>+{physpell:0}</>"
       },
       {
@@ -415,11 +415,11 @@
     "decoDesc": "Una de las unidades de las Artes desarrolladas por Hora de brujas. A excepción de sus circuitos básicos de Originio, el resto de la unidad se construyó con un material desconocido. ¿Realmente se puede fabricar eso en Talos-II?",
     "skills": [
       {
-        "name": "Refuerzo de intelecto [G]",
+        "name": "Intelecto [G]",
         "description": "Intelecto <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Refuerzo de artes [G]",
+        "name": "DAÑ por Artes [G]",
         "description": "DAÑ por artes infligido <@ba.vup>+{spelldam:0.0%}</>"
       },
       {
@@ -434,11 +434,11 @@
     "decoDesc": "Una de las Unidades de las Artes desarrolladas por Mieszko Industries. El arma cuenta con una base de acero D64 y una serie de módulos personalizables. Su apariencia recuerda a los espectáculos de fuegos artificiales de los grandes caballeros del pasado.",
     "skills": [
       {
-        "name": "Refuerzo de voluntad [G]",
+        "name": "Voluntad [G]",
         "description": "Voluntad <@ba.vup>+{will}</>"
       },
       {
-        "name": "Refuerzo de PV [G]",
+        "name": "PV [G]",
         "description": "PV Máx. <@ba.vup>+{hp:0.0%}</>"
       },
       {
@@ -453,11 +453,11 @@
     "decoDesc": "Un producto clásico de alta gama de RAYTHEAN. Su prototipo fue mostrado en la Primera Guerra de Aggeloi. Desde entonces, el arma ha recibido numerosas mejoras y optimizaciones, la versión moderna ofrece una increíble potencia de fuego que se traduce en mayor protección y seguridad en su uso.",
     "skills": [
       {
-        "name": "Refuerzo de voluntad [G]",
+        "name": "Voluntad [G]",
         "description": "Voluntad <@ba.vup>+{will}</>"
       },
       {
-        "name": "Refuerzo de Eficiencia de ganancia máxima [G]",
+        "name": "Eficiencia MÁX. [G]",
         "description": "Eficiencia de ganancia máxima <@ba.vup>+{usgs:0.0%}</>"
       },
       {
@@ -472,11 +472,11 @@
     "decoDesc": "Una Unidad de las Artes diseñada por Mieszko Industries para la Cábala de la Tranquilidad. Cada paso, desde el diseño del producto, la verificación, la fabricación hasta el ajuste, se llevó a cabo bajo la supervisión de un clérigo de la Cabal.",
     "skills": [
       {
-        "name": "Refuerzo de voluntad [M]",
+        "name": "Voluntad [M]",
         "description": "Voluntad <@ba.vup>+{will}</>"
       },
       {
-        "name": "Refuerzo de efic. del trat. [M]",
+        "name": "Eficiencia del tratamiento [M]",
         "description": "Eficiencia del tratamiento <@ba.vup>+{heal:0.0%}</>."
       },
       {
@@ -491,11 +491,11 @@
     "decoDesc": "Un producto de la serie élite de Mieszko Industries. Esta arma ofrece una excelente conductividad de las Artes de Originio. Esto la hace más práctica que otras armas de moda que se enfocan más en el estilo que en la sustancia.",
     "skills": [
       {
-        "name": "Refuerzo de intelecto [G]",
+        "name": "Intelecto [G]",
         "description": "Intelecto <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Refuerzo de efic. del trat. [G]",
+        "name": "Eficiencia del tratamiento [G]",
         "description": "Eficiencia del tratamiento <@ba.vup>+{heal:0.0%}</>."
       },
       {
@@ -510,11 +510,11 @@
     "decoDesc": "Un arma estándar producida por Endfield Industries. El diseño fue proporcionado por el Equipo de Prototipos Creativos fundado por el Ingeniero Principal del Arsenal, Opero. Su poder se determina por el dominio del usuario en las Artes de Originio.",
     "skills": [
       {
-        "name": "Refuerzo de intelecto [M]",
+        "name": "Intelecto [M]",
         "description": "Intelecto <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Refuerzo de Intensidad de artes [M]",
+        "name": "Intensidad de artes [M]",
         "description": "Intensidad de artes <@ba.vup>+{physpell:0}</>"
       },
       {
@@ -529,12 +529,12 @@
     "decoDesc": "Una Unidad de las Artes desarrollada por los Espadachines de Hongshan. El arma presenta una audaz integración de novedosas amalgamas de Xiranita. Aunque los materiales ofrecen un rendimiento excelente que mejora considerablemente la eficiencia de lanzamiento, esta Unidad de las Artes puede resultar bastante difícil de usar.",
     "skills": [
       {
-        "name": "Refuerzo de voluntad [G]",
+        "name": "Voluntad [G]",
         "description": "Voluntad <@ba.vup>+{will}</>"
       },
       {
-        "name": "Refuerzo de Ataque [G]",
-        "description": "Ataque <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATQ [G]",
+        "description": "ATQ <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Supresión: Relámpago continuo",
@@ -548,11 +548,11 @@
     "decoDesc": "Un conjunto estándar de Unidades de las Artes diseñadas y desarrolladas por los Espadachines de Hongshan. Estas armas se entregan actualmente a miembros del Equipo de Fuerzas Especiales de Yinglung. Son conocidas por su excelente rendimiento y estabilidad, así como por su fiabilidad en entornos inclementes.",
     "skills": [
       {
-        "name": "Refuerzo de intelecto [G]",
+        "name": "Intelecto [G]",
         "description": "Intelecto <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Refuerzo de Eficiencia de ganancia máxima [G]",
+        "name": "Eficiencia MÁX. [G]",
         "description": "Eficiencia de ganancia máxima <@ba.vup>+{usgs:0.0%}</>"
       },
       {
@@ -567,11 +567,11 @@
     "decoDesc": "Un producto clásico de Endfield Industries. Numerosas unidades se desplegaron durante la Expedición polar. Estas Unidades de las Artes cuentan con un recubrimiento amarillo dorado muy llamativo, lo que las hace claramente visibles incluso en fuertes tormentas de nieve.",
     "skills": [
       {
-        "name": "Refuerzo de voluntad [G]",
+        "name": "Voluntad [G]",
         "description": "Voluntad <@ba.vup>+{will}</>"
       },
       {
-        "name": "Refuerzo de DAÑ eléc. [G]",
+        "name": "DAÑ eléctrico [G]",
         "description": "DAÑ eléctrico infligido <@ba.vup>+{electrondam:0.0%}</>"
       },
       {
@@ -586,16 +586,54 @@
     "decoDesc": "Basada en una propuesta ganadora de un concurso de diseño conceptual organizado por Mieszko Industries. La aceleración de proyectiles con precisión a escala de microsegundos y su extraordinario rendimiento de levitación son características posibles gracias a la incorporación de la singular comprensión del diseñador sobre los entornos de gravedad cero.",
     "skills": [
       {
-        "name": "Refuerzo de intelecto [G]",
+        "name": "Intelecto [G]",
         "description": "Intelecto <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Refuerzo de Eficiencia de ganancia máxima [G]",
+        "name": "Eficiencia MÁX. [G]",
         "description": "Eficiencia de ganancia máxima <@ba.vup>+{usgs:0.0%}</>"
       },
       {
         "name": "Eficacia: Bucle de retroalimentación",
         "description": "DAÑ por naturaleza infligido <@ba.vup>+{nature_dmg_up:0.0%}</>.\nCuando el portador aplica <#ba.spellvul>Susceptibilidad a Artes</> o <#ba.spellinflict>Imposición de artes</> con una habilidad de combo, el portador obtiene ATQ <@ba.vup>+{atk_up:0.0%}</>, mientras que los otros operadores en el equipo obtienen ATQ <@ba.vup>+{atk_up2:0.0%}</>. Duración: {duration:0} s.\n<@ba.info>Acumulaciones Máx. por efectos con el mismo nombre: {max_stack:0}. La duración de cada acumulación se cuenta por separado.</>"
+      }
+    ]
+  },
+  "umbraOfFrigidEventide": {
+    "name": "Umbra of Frigid Eventide",
+    "description": "El sol todavía no había salido.\nEl guerrero de la Tribu Coldpine ya estaba despierto. En la mano llevaba un pequeño lápiz de carbón y el papel que tenía debajo era apenas más grande que su palma.\nCada espacio era esencial, pues había mucho de lo que quería escribir. Garabateó cada palabra minuciosamente y luego procedió a leerlas en voz alta. Aunque intentó mantener la voz baja, la persona que estaba a su lado se movió. La mujer abrió el ojo que le quedaba, le dio una patada contundente y le ordenó con voz áspera: “Cállate”.\nEl guerrero le dedicó una sonrisa burlona y comenzó a recitar sus escritos en silencio: “Querida madre, el hielo se derritió y pudimos ver los musgos verdes. Se sienten bien. Se ven preciosos. Ya llegó la primavera donde estás tú, ¿no? El río debe estar fluyendo bajo tu casa del árbol y brindándoles agua a las plantas de tu jardín. Quizá las aves hayan vuelto a posarse bajo el techo o a revolotear hacia tu casa cuando abriste la ventana para posarse en tu mano. Quizá llegue el día en el que pueda volar de regreso a casa contigo como las aves y quedarme a tu lado, donde la primavera es eterna y...”.\nSeguía una palabra que su madre usaba a menudo. El guerrero la recordaba, no así la forma de dicha palabra. Al no tener otra opción, dejó de escribir. Luego, le lanzó una mirada de resignación y le pidió ayuda a la mujer.\nLas palabras irritadas de la mujer no ocultaban su dejo de curiosidad: “¿Por qué dejaste de escribir?”.\n“Hay una palabra a la cual no puedo darle forma”.\n“¿Y cuál es esa palabra?”.\n“Sa-Santuario”.\n“¿Nunca la aprendiste?”.\n“Mi madre me dejó antes de que pudiera enseñarme esa palabra”.\n“Oooooh”, expresó la mujer con un cierto tono de frustración. Luego levantó la mano y la movió en el aire mientras trazaba un patrón entrecruzado de líneas curvas y rectas, como las estelas que deja en el aire un ave al volar en picada.\nAl principio, la mujer escribió la palabra con rapidez. Los ojos fatigados del guerrero apenas podían seguir el movimiento de sus dedos. Al ver que él fruncía el ceño, ella se rio entre dientes y luego volvió a escribir la palabra.\nEn conjunto, el lápiz de carbón del guerrero, el dedo de la mujer, las líneas en el papel y la silueta en el aire formaron la palabra. Todo fue tomando forma como si un ave aterrizara lentamente en el suelo.\nEl papel ahora estaba repleto de palabras. Él esbozó una sonrisa de satisfacción y luego lo arrojó a la fogata. Crepitaba mientras ardía y la luz del fuego bailaba en los ojos de la mujer antes de apagarse en los cantos de su mirada.\n“¿Crees que ella nunca lo recibiría?”.\nEl guerrero asintió. La mujer soltó un suspiro. Hubo un momento de silencio antes de que ella hablara de nuevo. “¿Cuál es tu nombre, joven?”.\n“Björn, de la Tribu Coldpine”.\nLa mujer se enzarzó en sus recuerdos mientras los iba contando, fragmento por fragmento: “La Tribu Coldpine... Ah, sí, recuerdo a tu Jefa... Una valiente y admirable guerrera. Al caer, honró el credo del guerrero”.\n“Tengo la dicha de haber crecido con ella”, dijo el guerrero con el rostro sonrojado mientras le asentía con gratitud.\n“Que regrese al lado de Sami, un lugar con una perpetua primavera, el...”.\n“El Santuario”, repitió el guerrero junto con la mujer mientras ella sonreía.\nEl sol aún no había salido, pero ya se oían las fanfarrias. Los Aggeloi aparecieron en el horizonte; avanzaban hacia el frente como un poderoso ejército.\nEl guerrero de Coldpine ya se había puesto de pie. Tomó la lanza y cargó a la mujer. Junto con los soldados, se dirigió hacia la oleada de Aggeloides.\nA sus espaldas, las llamas consumieron el papel. Las brasas saltaban de las llamas crepitantes y flotaban hacia un lugar lejano.",
+    "decoDesc": "Un arma forjada en el Fuerte Forgefane. Está alojada en un armazón elegante y aerodinámico con un revestimiento especial diseñado para operaciones de combate en entornos con poca iluminación.",
+    "skills": [
+      {
+        "name": "Agilidad [G]",
+        "description": "Agilidad <@ba.vup>+{agi}</>"
+      },
+      {
+        "name": "ATQ [G]",
+        "description": "ATQ <@ba.vup>+{atk:0.0%}</>"
+      },
+      {
+        "name": "Detonación: Instinto de cazador",
+        "description": "DAÑ por Artes infligido <@ba.vup>+{spell_dmg_up:0.0%}</>.\nDespués de que el portador lance una habilidad de batalla, obtiene Intensidad de Artes <@ba.vup>+{phy_spell_up:0}</> y {wind_grant:0} acumulaciones de <@ba.key>Forma de viento</> durante {wind_duration:0} s.\n<@ba.info>Este efecto completo no se puede acumular. Acumulaciones Máx. de <@ba.key>Forma de viento</>: {wind_grant:0}.</>\nCuando el portador aplique una <#ba.spellburst>Ráfaga de Artes</>, <#ba.consume>consume</> 1 acumulación de <@ba.key>Forma de viento</> para otorgarle DAÑ por Artes infligido <@ba.vup>+{spell_dmg_up2:0.0%}</> durante {spell_dmg_duration:0} s.\n<@ba.info>Este efecto puede alcanzar {spell_dmg_max_stack:0} acumulaciones. La duración de cada acumulación se cuenta por separado. El efecto solo se activa una vez cada 0.1 s.</>"
+      }
+    ]
+  },
+  "sufferingsEnd": {
+    "name": "Suffering's End",
+    "description": "“El sufrimiento llegará a su fin. Habrá paz... para todo Sarkaz...”.\nEl anciano Sarkaz reflexionó sobre esas palabras mientras limpiaba la Unidad de las Artes que tenía en la mano. A su alrededor había una multitud interminable de turistas que habían venido con sus seres queridos y amistades. Los Liches crearon impresionantes espectáculos de fuegos artificiales con sus Artes, mientras los niños trepaban en los guerreros Gárgola. Seres de todos los credos, tribus y razas vitorearon, tal como lo hicieron el día en que Seš'qa alzó el vuelo y en cada Jornada de puertas abiertas que celebraba el fin de la guerra.\n“¿Este es nuestro... ‘Fin del sufrimiento’?”\nEl anciano Sarkaz empacó sus pertenencias con rapidez. Ya había ahorrado suficientes T-Creds para viajar a varias ciudades de la Franja. Durante años, había planeado irse de Seš'qa y visitar la Franja de la Civilización.\n\nEl viaje transcurrió sin contratiempos ni incidentes hasta ese mismo día. Estaba contemplando las estrellas recostado sobre una roca gigante; de repente, la cafetera de Originio se apagó con un chasquido resonante. Al principio estaba confundido, hasta que escuchó explosiones, gritos y alaridos.\nCon mirada atenta, observó cómo se extendía la bruma ardiente. Una familia de tres personas huía a pie por el Área silvestre mientras una turba de treinta figuras de aspecto variopinto y armadas los perseguía. Rompesuelos. El anciano Sarkaz presenció la persecución... pero no hizo nada. Se recostó de nuevo para descansar.\n\nSimplemente era demasiado viejo y demasiado ordinario. No era una Gárgola dotada de una complexión tan robusta como un bastión, un Lich que dominara Artes esotéricas y letales ni un Nachzehrer con fuerza aterradora e imparable. No era más que un Sarkaz mixto que tuvo la suerte de sobrevivir a la Guerra de Aggeloi, la Guerra de la humillación y la Guerra Jakubina que acabó con el Señor de la guerra de las tierras salvajes. Lo único que sabía era usar trucos extraños para sobrevivir.\nSin embargo, tras solo unos cuantos segundos, el Sarkaz sacó su Unidad de las Artes y saltó desde la gran roca. Recordó a la loca Oradora, quien pronunció un discurso y le hizo una promesa a Sarkaz. Fue un texto oratorio que, obviamente, no había escrito ella misma. Sin embargo, hay algo que nunca cambia. Para que el sufrimiento termine, alguien debe hacer algo al respecto.\nCon sutileza, limpió su Unidad de las Artes. El cuerpo reflejaba el rostro de un Sarkaz que había envejecido muchísimo más allá de lo que era antaño.\n\nUna flecha se clavó en el padre que huía mientras cargaba a su hijo. Ambos cayeron al suelo. La mujer tiró su dispositivo de comunicación e intentó arrastrar a su pareja a un lugar seguro. Todo fue en vano. Los rompedores los emboscaron. De repente, la noche en el Área silvestre quedó en completo silencio.\nLos rompedores gritaban y se reían mientras se acercaban por todos lados a la familia afectada. Sin piedad, alzaron sus armas. El hombre y la mujer intentaron, en vano, proteger a su hijo. La luz de las antorchas se reflejaba en los sables, en los proyectiles de las ballestas y también en las lágrimas del pobre niño.\nDe repente, una gran sombra con dos cuernos apareció detrás de los rompedores. Sin ningún ruido ni aviso, una oscuridad más densa que la noche se extendió por todo el lugar. Uno por uno, se apoderó de los rompedores, quienes gritaban de desesperación mientras la vida se les escapaba. El resto estaba aterrorizado. Con desesperación, buscaron de dónde provino el ataque sorpresa. Las primeras en llegar fueron unas palabras que resonaban en la brisa nocturna, palabras pronunciadas en un viejo y ronco Sarkaziano...\n“Mi sufrimiento ha llegado a su fin. Pero el tuyo... acaba de comenzar”.",
+    "decoDesc": "Una de las extrañas Unidades de las Artes de Hora de brujas. Parece estar imbuida de una peculiar forma de Artes de Originio que brinda al portador una insondable sensación de seguridad.",
+    "skills": [
+      {
+        "name": "Agilidad [G]",
+        "description": "Agilidad <@ba.vup>+{agi}</>"
+      },
+      {
+        "name": "DAÑ por naturaleza [G]",
+        "description": "DAÑ por naturaleza infligido <@ba.vup>+{naturaldam:0.0%}</>"
+      },
+      {
+        "name": "Detonación: Amanecer de la larga noche",
+        "description": "Intensidad de artes <@ba.vup>+{phy_spell_up:0}</>.\nCuando el portador aplique una <#ba.spellburst>Ráfaga de artes</>, obtiene DAÑ por naturaleza infligido <@ba.vup>+{nature_dmg_up:0.0%}</> durante {duration:0} s.\n<@ba.info>Acumulaciones Máx. de este efecto: {max_stack:0}. La duración de cada acumulación se cuenta por separado. El efecto solo se activa una vez cada 0.1 s.</>\nCon {max_stack:0} acumulaciones, el efecto mencionado otorga DAÑ por naturaleza infligido adicional <@ba.vup>+{nature_dmg_up2:0.0%}</>.\n<@ba.info>Este efecto no puede acumularse.</>"
       }
     ]
   },
@@ -605,12 +643,12 @@
     "decoDesc": "Una de las armas avanzadas fabricadas por Endfield para sus operadores. Esta arma aerodinámica y ligera está bien equilibrada y recordará a muchos a las lanzas reglamentarias que en su día empuñaron los operadores de clase de Vanguardia de Rhodes Island.",
     "skills": [
       {
-        "name": "Refuerzo de agilidad [C]",
+        "name": "Agilidad [P]",
         "description": "Agilidad <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Refuerzo de ATQ [P]",
-        "description": "Ataque <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATQ [P]",
+        "description": "ATQ <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Inspirador: inicio de una saga",
@@ -624,11 +662,11 @@
     "decoDesc": "Una lanza experimental diseñada por la Compañía Endfield Industries con una serie de producción muy limitada. Esta arma presenta un diseño modular que permite desmantelarla y volverla a ensamblar en condiciones complejas y hostiles en el campo de batalla.",
     "skills": [
       {
-        "name": "Refuerzo de fuerza [M]",
+        "name": "Fuerza [M]",
         "description": "Fuerza <@ba.vup>+{str}</>"
       },
       {
-        "name": "Refuerzo de Eficiencia de ganancia máxima [M]",
+        "name": "Eficiencia MÁX. [M]",
         "description": "Eficiencia de ganancia máxima <@ba.vup>+{usgs:0.0%}</>"
       },
       {
@@ -643,11 +681,11 @@
     "decoDesc": "Un producto clásico del proceso de fabricación personalizable de RAYTHEAN. El arma se basa en una lanza militar estándar y cuenta con un conjunto variado de funciones especiales y componentes estéticos personalizables.",
     "skills": [
       {
-        "name": "Refuerzo de voluntad [M]",
+        "name": "Voluntad [M]",
         "description": "Voluntad <@ba.vup>+{will}</>"
       },
       {
-        "name": "Refuerzo de DAÑ eléc. [M]",
+        "name": "DAÑ eléctrico [M]",
         "description": "DAÑ eléctrico infligido <@ba.vup>+{electrondam:0.0%}</>"
       },
       {
@@ -662,11 +700,11 @@
     "decoDesc": "Un arma antigua de la Base de apoyo de Northmarch con un manejo extremadamente deficiente. Pero también posee una capacidad de daño increíble. Su enorme peso podría volverla impopular para la mayoría, pero los usuarios fuertes que disfrutan movimientos poderosos y exagerados la valoran bastante bien.",
     "skills": [
       {
-        "name": "Refuerzo de agilidad [G]",
+        "name": "Agilidad [G]",
         "description": "Agilidad <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Refuerzo de Eficiencia de ganancia máxima [G]",
+        "name": "Eficiencia MÁX. [G]",
         "description": "Eficiencia de ganancia máxima <@ba.vup>+{usgs:0.0%}</>"
       },
       {
@@ -681,11 +719,11 @@
     "decoDesc": "Una lanza estándar fabricada por la Fuerte Forgefane para dotar de armas a las tropas comunes. Provista de una punta extremadamente afilada diseñada específicamente para luchar contra los Aggeloi.",
     "skills": [
       {
-        "name": "Refuerzo de voluntad [P]",
+        "name": "Voluntad [P]",
         "description": "Voluntad <@ba.vup>+{will}</>"
       },
       {
-        "name": "Refuerzo de artes [P]",
+        "name": "DAÑ por Artes [P]",
         "description": "DAÑ por artes infligido <@ba.vup>+{spelldam:0.0%}</>"
       },
       {
@@ -700,7 +738,7 @@
     "decoDesc": "Una de las armas de serie estándar para operadores fabricadas por Endfield Industries. Esta arma fue diseñada personalmente por el Ingeniero de Arsenal principal de Endfield, Opero. Gracias a su diseño ergonómico, puede ser manejada eficazmente incluso por operadores recién asignados en Endfield.",
     "skills": [
       {
-        "name": "Refuerzo de atributo principal [P]",
+        "name": "Atributo principal [P]",
         "description": "Atributo principal <@ba.vup>+{mainattr}</>"
       },
       {
@@ -715,11 +753,11 @@
     "decoDesc": "Un producto de gama media de Mieszko Industries. La lanza es rara pero muy codiciada gracias a sus diseños vintage que se asemejan al proyectil de una balista, así como a su eficaz rendimiento en el campo de batalla.",
     "skills": [
       {
-        "name": "Refuerzo de agilidad [G]",
+        "name": "Agilidad [G]",
         "description": "Agilidad <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Refuerzo de DAÑ físico [G]",
+        "name": "DAÑ físico [G]",
         "description": "DAÑ físico infligido <@ba.vup>+{phydam:0.0%}</>"
       },
       {
@@ -734,12 +772,12 @@
     "decoDesc": "Un arma experimental fabricada en función de los más altos estándares de la Base de apoyo de Northmarch. El prototipo fue diseñado por el ahora disuelto Centro de investigación aeroespacial. Un conjunto de motores a reacción de compresión de Originio le otorgan a esta lanza su rendimiento turbo.",
     "skills": [
       {
-        "name": "Refuerzo de atributo principal [G]",
+        "name": "Atributo principal [G]",
         "description": "Atributo principal <@ba.vup>+{mainattr}</>"
       },
       {
-        "name": "Refuerzo de Ataque [G]",
-        "description": "Ataque <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATQ [G]",
+        "description": "ATQ <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Supresión: astrofísica",
@@ -753,11 +791,11 @@
     "decoDesc": "Una lanza experimental desarrollada por los Espadachines de Hongshan. El asta del arma fue forjada con una aleación especial para conseguir tanto fuerza como resistencia.",
     "skills": [
       {
-        "name": "Refuerzo de agilidad [G]",
+        "name": "Agilidad [G]",
         "description": "Agilidad <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Refuerzo de DAÑ físico [G]",
+        "name": "DAÑ físico [G]",
         "description": "DAÑ físico infligido <@ba.vup>+{phydam:0.0%}</>"
       },
       {
@@ -772,11 +810,11 @@
     "decoDesc": "Un arma estándar producida por Endfield Industries. El diseño fue proporcionado por el Equipo de Prototipos Creativos fundado por el Ingeniero Principal del Arsenal, Opero. Quienes la portan, tienen libertad para hacer sus propios ajustes al módulo de la punta de la lanza.",
     "skills": [
       {
-        "name": "Refuerzo de voluntad [M]",
+        "name": "Voluntad [M]",
         "description": "Voluntad <@ba.vup>+{will}</>"
       },
       {
-        "name": "Refuerzo de DAÑ físico [M]",
+        "name": "DAÑ físico [M]",
         "description": "DAÑ físico infligido <@ba.vup>+{phydam:0.0%}</>"
       },
       {
@@ -791,11 +829,11 @@
     "decoDesc": "Una serie de productos de gama alta de Mieszko Industries, hecha a la medida para populares intérpretes de las artes escénicas. Su diseño onírico, llamativo y similar a un micrófono se combina con un rendimiento y una potencia extraordinarios. Esta arma dejó una gran impresión en todos los evaluadores que la probaron.",
     "skills": [
       {
-        "name": "Refuerzo de voluntad [G]",
+        "name": "Voluntad [G]",
         "description": "Voluntad <@ba.vup>+{will}</>"
       },
       {
-        "name": "Refuerzo de efic. del trat. [G]",
+        "name": "Eficiencia del tratamiento [G]",
         "description": "Eficiencia del tratamiento <@ba.vup>+{heal:0.0%}</>."
       },
       {
@@ -810,11 +848,11 @@
     "decoDesc": "Una de las armas de asta producidas por Hora de brujas. Se lanzó una edición conmemorativa especial durante la Jornada de puertas abiertas de Seš'qa. El cuerpo de la lanza pasó por una técnica especial de revestimiento para darle un acabado que a la vez es extremadamente funcional y estéticamente atractivo.",
     "skills": [
       {
-        "name": "Refuerzo de agilidad [G]",
+        "name": "Agilidad [G]",
         "description": "Agilidad <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Refuerzo de DAÑ por calor [G]",
+        "name": "DAÑ por calor [G]",
         "description": "DAÑ por calor infligido <@ba.vup>+{firedam:0.0%}</>"
       },
       {
@@ -829,11 +867,11 @@
     "decoDesc": "Uno de los productos de gama más alta de Mieszko Industries. La punta de la lanza está construida con una aleación especial que posee una resistencia increíble y filos sumamente afilados. Estas armas son elegantes, sublimes e increíblemente costosas de fabricar, y suelen empuñarlas individuos que desean destacar su prestigio.",
     "skills": [
       {
-        "name": "Refuerzo de voluntad [G]",
+        "name": "Voluntad [G]",
         "description": "Voluntad <@ba.vup>+{will}</>"
       },
       {
-        "name": "Refuerzo de efic. del trat. [G]",
+        "name": "Eficiencia del tratamiento [G]",
         "description": "Eficiencia del tratamiento <@ba.vup>+{heal:0.0%}</>."
       },
       {
@@ -848,7 +886,7 @@
     "decoDesc": "Una de las armas de serie estándar para operadores fabricadas por Endfield Industries. Esta arma fue diseñada por el Ingeniero de Arsenal Endfield, Peco. El dominio de la munición grabada y las armas de fuego ya no es una habilidad exclusiva de los Sankta.",
     "skills": [
       {
-        "name": "Refuerzo de atributo principal [P]",
+        "name": "Atributo principal [P]",
         "description": "Atributo principal <@ba.vup>+{mainattr}</>"
       },
       {
@@ -863,12 +901,12 @@
     "decoDesc": "Un producto de categoría media de Mieszko Industries. Esta pistola es una combinación perfecta de diseños Lateranos vintage con una construcción industrial moderna. Un revestimiento metálico azul le da el toque final a esta obra de arte única.",
     "skills": [
       {
-        "name": "Refuerzo de intelecto [P]",
+        "name": "Intelecto [P]",
         "description": "Intelecto <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Refuerzo de ATQ [P]",
-        "description": "Ataque <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATQ [P]",
+        "description": "ATQ <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Supresión: impulso de emergencia",
@@ -882,11 +920,11 @@
     "decoDesc": "Armas estándar fabricadas por Fuerte Forgefane para los soldados rasos bajo la Orden del juramento de acero. Estas armas son extremadamente populares por su mecanismo de disparo sencillo y su increíble poder de detención.",
     "skills": [
       {
-        "name": "Refuerzo de fuerza [P]",
+        "name": "Fuerza [P]",
         "description": "Fuerza <@ba.vup>+{str}</>"
       },
       {
-        "name": "Refuerzo de artes [P]",
+        "name": "DAÑ por Artes [P]",
         "description": "DAÑ por artes infligido <@ba.vup>+{spelldam:0.0%}</>"
       },
       {
@@ -901,11 +939,11 @@
     "decoDesc": "RAYTHEAN Industries desarrolló estas pistolas de alta energía para uso en las fronteras. Su confiabilidad en entornos adversos las vuelve un arma estándar entre los exploradores de las tierras salvajes.",
     "skills": [
       {
-        "name": "Refuerzo de fuerza [M]",
+        "name": "Fuerza [M]",
         "description": "Fuerza <@ba.vup>+{str}</>"
       },
       {
-        "name": "Refuerzo de DAÑ por calor [M]",
+        "name": "DAÑ por calor [M]",
         "description": "DAÑ por calor infligido <@ba.vup>+{firedam:0.0%}</>"
       },
       {
@@ -920,11 +958,11 @@
     "decoDesc": "Un concepto innovador del año realizado por Mieszko Industries. Usémoslo para celebrar los recuerdos del gran Navegante que nos guió en nuestro interminable viaje a través de Talos-II.",
     "skills": [
       {
-        "name": "Refuerzo de intelecto [G]",
+        "name": "Intelecto [G]",
         "description": "Intelecto <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Refuerzo de DAÑ crio. [G]",
+        "name": "DAÑ criogénico [G]",
         "description": "DAÑ criogénico infligido <@ba.vup>+{crystdam:0.0%}</>"
       },
       {
@@ -939,11 +977,11 @@
     "decoDesc": "Un proyecto por encargo desarrollado por los Laboratorios de Etertecnología Portátiles. Los Adeptos de Cræft equiparon esta arma con relicolito recubierto, sobre el cual se han grabado patrones especiales.",
     "skills": [
       {
-        "name": "Refuerzo de agilidad [M]",
+        "name": "Agilidad [M]",
         "description": "Agilidad <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Refuerzo de artes [M]",
+        "name": "DAÑ por artes [M]",
         "description": "DAÑ por artes infligido <@ba.vup>+{spelldam:0.0%}</>"
       },
       {
@@ -958,11 +996,11 @@
     "decoDesc": "Armas desarrolladas por Espadachines de Hongshan. Para cumplir con los enfoques básicos de diseño del armamento A.C.H., se emplearon funciones de ahorro de peso, así como optimizaciones de agarre y manejo.",
     "skills": [
       {
-        "name": "Refuerzo de agilidad [G]",
+        "name": "Agilidad [G]",
         "description": "Agilidad <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Refuerzo de DAÑ crio. [G]",
+        "name": "DAÑ criogénico [G]",
         "description": "DAÑ criogénico infligido <@ba.vup>+{crystdam:0.0%}</>"
       },
       {
@@ -977,11 +1015,11 @@
     "decoDesc": "Una obra legendaria de la Base de apoyo de Northmarch que refleja a la perfección el estilo y las virtudes de las armas de Northmarch. Presenta una potencia de fuego devastadora, una fiabilidad total, y un manejo y retroceso absolutamente abismales.",
     "skills": [
       {
-        "name": "Refuerzo de atributo principal [G]",
+        "name": "Atributo principal [G]",
         "description": "Atributo principal <@ba.vup>+{mainattr}</>"
       },
       {
-        "name": "Refuerzo de índice crít. [G]",
+        "name": "Índice crítico [G]",
         "description": "Índice crítico <@ba.vup>+{crirate:0.0%}</>"
       },
       {
@@ -996,11 +1034,11 @@
     "decoDesc": "Armas especiales fabricadas por RAYTHEAN Industries. Estas armas experimentales son extremadamente difíciles de usar. Solo se lanzó al mercado de armas una cantidad limitada de prototipos.",
     "skills": [
       {
-        "name": "Refuerzo de atributo principal [G]",
+        "name": "Atributo principal [G]",
         "description": "Atributo principal <@ba.vup>+{mainattr}</>"
       },
       {
-        "name": "Refuerzo de artes [G]",
+        "name": "DAÑ por Artes [G]",
         "description": "DAÑ por artes infligido <@ba.vup>+{spelldam:0.0%}</>"
       },
       {
@@ -1015,11 +1053,11 @@
     "decoDesc": "Uno de los productos más populares de Mieszko Industries de su atrevida serie de Colaboración de Artistas Plásticos. Estas armas de fuego tienen estilos geniales que están a la altura de su desempeño brutalmente violento. Su popularidad se demuestra por la prima que alcanzan en los mercados secundarios.",
     "skills": [
       {
-        "name": "Refuerzo de intelecto [G]",
+        "name": "Intelecto [G]",
         "description": "Intelecto <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Refuerzo de índice crít. [G]",
+        "name": "Índice crítico [G]",
         "description": "Índice crítico <@ba.vup>+{crirate:0.0%}</>"
       },
       {
@@ -1034,12 +1072,12 @@
     "decoDesc": "Armas desarrolladas por Espadachines de Hongshan. Fabricadas con materiales duraderos y confiables con diseños simples; también son livianas y fáciles de transportar. Muy útiles en todo tipo de entornos y situaciones complejas.",
     "skills": [
       {
-        "name": "Refuerzo de agilidad [G]",
+        "name": "Agilidad [G]",
         "description": "Agilidad <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Refuerzo de Ataque [G]",
-        "description": "Ataque <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATQ [G]",
+        "description": "ATQ <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Detonar: Azote del bandido",
@@ -1053,11 +1091,11 @@
     "decoDesc": "Un arma estándar producida por Endfield Industries. El diseño fue proporcionado por el Equipo de Prototipos Creativos fundado por el Ingeniero Principal del Arsenal, Opero. El arma está construida con materiales ligeros, prácticos y duraderos.",
     "skills": [
       {
-        "name": "Refuerzo de agilidad [M]",
+        "name": "Agilidad [M]",
         "description": "Agilidad <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Refuerzo de Eficiencia de ganancia máxima [M]",
+        "name": "Eficiencia MÁX. [M]",
         "description": "Eficiencia de ganancia máxima <@ba.vup>+{usgs:0.0%}</>"
       },
       {
@@ -1072,7 +1110,7 @@
     "decoDesc": "Una de las armas de serie estándar para operadores fabricadas por Endfield Industries. Esta arma fue diseñada por el Ingeniero de Arsenal Endfield, Tarr. A menudo, es la primera arma de muchos operadores de campo.",
     "skills": [
       {
-        "name": "Refuerzo de atributo principal [P]",
+        "name": "Atributo principal [P]",
         "description": "Atributo principal <@ba.vup>+{mainattr}</>"
       },
       {
@@ -1087,11 +1125,11 @@
     "decoDesc": "Una de las armas de élite fabricadas por Endfield para sus operadores. La espada cuenta con una empuñadura y guarda sin costuras, además de mecanismos de almacenamiento de energía activados por estrés para aumentar su potencial de daño.",
     "skills": [
       {
-        "name": "Refuerzo de agilidad [M]",
+        "name": "Agilidad [M]",
         "description": "Agilidad <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Refuerzo de DAÑ físico [M]",
+        "name": "DAÑ físico [M]",
         "description": "DAÑ físico infligido <@ba.vup>+{phydam:0.0%}</>"
       },
       {
@@ -1106,12 +1144,12 @@
     "decoDesc": "Una de las armas con filo cortante forjadas por Hora de brujas. Los procesos especiales de fundición dieron como resultado una hoja completamente roja. La Unidad de las Artes es en realidad un Originio derretido especial que recuerda a una lágrima de sangre derramada por una forja.",
     "skills": [
       {
-        "name": "Refuerzo de intelecto [G]",
+        "name": "Intelecto [G]",
         "description": "Intelecto <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Refuerzo de Ataque [G]",
-        "description": "Ataque <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATQ [G]",
+        "description": "ATQ <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Crepúsculo: Lamento abrasador",
@@ -1125,11 +1163,11 @@
     "decoDesc": "Una de las armas fabricadas por el Fuerte Forgefane. La espada presenta una arquitectura tradicional que la hace extremadamente duradera y robusta. La gruesa y pesada hoja dejó innumerables cicatrices sobre el permafrost mientras las líneas del frente cambiaban con el paso del tiempo.",
     "skills": [
       {
-        "name": "Refuerzo de intelecto [M]",
+        "name": "Intelecto [M]",
         "description": "Intelecto <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Refuerzo de Eficiencia de ganancia máxima [M]",
+        "name": "Eficiencia MÁX. [M]",
         "description": "Eficiencia de ganancia máxima <@ba.vup>+{usgs:0.0%}</>"
       },
       {
@@ -1144,11 +1182,11 @@
     "decoDesc": "Una de las armas avanzadas fabricadas por Endfield para sus operadores. Una arquitectura modular minimalista dio como resultado un arma ligera con un equilibrio y manejo excelentes. La hoja en sí es extremadamente resistente.",
     "skills": [
       {
-        "name": "Refuerzo de agilidad [C]",
+        "name": "Agilidad [P]",
         "description": "Agilidad <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Refuerzo de DAÑ físico [P]",
+        "name": "DAÑ físico [P]",
         "description": "DAÑ físico infligido <@ba.vup>+{phydam:0.0%}</>"
       },
       {
@@ -1163,12 +1201,12 @@
     "decoDesc": "Un producto de gama media de Mieszko Industries. La espada presenta un diseño elegante y vanguardista, además de un increíble índice de costo-rendimiento, lo que la convierte en una de las opciones más modernas del año en la C.G.C.T..",
     "skills": [
       {
-        "name": "Refuerzo de intelecto [P]",
+        "name": "Intelecto [P]",
         "description": "Intelecto <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Refuerzo de ATQ [P]",
-        "description": "Ataque <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATQ [P]",
+        "description": "ATQ <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Persecución: ciclo sin fin",
@@ -1182,11 +1220,11 @@
     "decoDesc": "Una solución de defensa personal ligera de última generación lanzada por RAYTHEAN Industries. La espada tiene una hoja de aleación especial y ha demostrado ser bastante popular entre ciertos “profesionales”.",
     "skills": [
       {
-        "name": "Refuerzo de intelecto [G]",
+        "name": "Intelecto [G]",
         "description": "Intelecto <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Refuerzo de DAÑ por calor [G]",
+        "name": "DAÑ por calor [G]",
         "description": "DAÑ por calor infligido <@ba.vup>+{firedam:0.0%}</>"
       },
       {
@@ -1201,11 +1239,11 @@
     "decoDesc": "Una espada ornamental de alta gama de los Espadachines de Hongshan. El arma se usa con frecuencia como premio para individuos sobresalientes. El nombre se decide tras un proceso de votación interna en la Academia científica Hongshan.",
     "skills": [
       {
-        "name": "Refuerzo de atributo principal [G]",
+        "name": "Atributo principal [G]",
         "description": "Atributo principal <@ba.vup>+{mainattr}</>"
       },
       {
-        "name": "Refuerzo de índice crít. [G]",
+        "name": "Índice crítico [G]",
         "description": "Índice crítico <@ba.vup>+{crirate:0.0%}</>"
       },
       {
@@ -1220,12 +1258,12 @@
     "decoDesc": "Un producto básico de la serie Pionero lanzado por la Base de apoyo de Northmarch. El Cortador de termita Mk IV fue construido utilizando materiales térmicos patentados y ofrece un rendimiento de corte poderoso. Ha recibido críticas positivas de muchos ingenieros de los S.T.U.T.",
     "skills": [
       {
-        "name": "Refuerzo de voluntad [G]",
+        "name": "Voluntad [G]",
         "description": "Voluntad <@ba.vup>+{will}</>"
       },
       {
-        "name": "Refuerzo de Ataque [G]",
-        "description": "Ataque <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATQ [G]",
+        "description": "ATQ <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Flujo: liberación térmica",
@@ -1239,11 +1277,11 @@
     "decoDesc": "Una espada de alta gama lanzada por Mieszko Industries. Su hoja finamente esculpida y grabada también ofrece un rendimiento confiable. El arma fue bien recibida por las élites y la alta sociedad de la C.G.C.T.",
     "skills": [
       {
-        "name": "Refuerzo de atributo principal [G]",
+        "name": "Atributo principal [G]",
         "description": "Atributo principal <@ba.vup>+{mainattr}</>"
       },
       {
-        "name": "Refuerzo de DAÑ físico [G]",
+        "name": "DAÑ físico [G]",
         "description": "DAÑ físico infligido <@ba.vup>+{phydam:0.0%}</>"
       },
       {
@@ -1258,11 +1296,11 @@
     "decoDesc": "Una de las armas forjadas en los hornos de Fuerte Forgefane. El mango fue construido utilizando un proceso especial de laminado para mejorar la absorción de fuerza y el agarre. La hoja en sí fue forjada con un mineral raro extraído de las tierras salvajes.",
     "skills": [
       {
-        "name": "Refuerzo de atributo principal [G]",
+        "name": "Atributo principal [G]",
         "description": "Atributo principal <@ba.vup>+{mainattr}</>"
       },
       {
-        "name": "Refuerzo de Intensidad de artes [G]",
+        "name": "Intensidad de artes [G]",
         "description": "Intensidad de artes <@ba.vup>+{physpell:0}</>"
       },
       {
@@ -1277,11 +1315,11 @@
     "decoDesc": "Una arma de primera categoría lanzada por los Espadachines de Hongshan y también la única que alcanzó una popularidad considerable en el mercado. Sin embargo, se han encontrado muchas copias en las tierras salvajes.",
     "skills": [
       {
-        "name": "Refuerzo de agilidad [M]",
+        "name": "Agilidad [M]",
         "description": "Agilidad <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Refuerzo de DAÑ físico [M]",
+        "name": "DAÑ físico [M]",
         "description": "DAÑ físico infligido <@ba.vup>+{phydam:0.0%}</>"
       },
       {
@@ -1296,12 +1334,12 @@
     "decoDesc": "Una arma forjada en los hornos del Fuerte Forgefane. Aunque ha pasado por múltiples rondas de reforjado, el filo absorbido aún está incrustado con una imponente fuerza de dominación.",
     "skills": [
       {
-        "name": "Refuerzo de voluntad [G]",
+        "name": "Voluntad [G]",
         "description": "Voluntad <@ba.vup>+{will}</>"
       },
       {
-        "name": "Refuerzo de Ataque [G]",
-        "description": "Ataque <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATQ [G]",
+        "description": "ATQ <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Flujo: Reencarnación",
@@ -1315,11 +1353,11 @@
     "decoDesc": "Una de las armas forjadas por Fuerte Forgefane. Esta pieza fina y elegante suele ser utilizada por la Orden del juramento de acero durante ceremonias, en lugar de combate en primera línea. Aun así, la hoja ha pasado por múltiples rondas de pulido y tiene un filo como de navaja.",
     "skills": [
       {
-        "name": "Refuerzo de agilidad [G]",
+        "name": "Agilidad [G]",
         "description": "Agilidad <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Refuerzo de índice crít. [G]",
+        "name": "Índice crítico [G]",
         "description": "Índice crítico <@ba.vup>+{crirate:0.0%}</>"
       },
       {
@@ -1334,12 +1372,12 @@
     "decoDesc": "Una espada de filo ultrafino nacida de las tierras salvajes. Distintos herreros aplicaban envolturas decorativas en la espada de maneras muy diversas.",
     "skills": [
       {
-        "name": "Refuerzo de agilidad [M]",
+        "name": "Agilidad [M]",
         "description": "Agilidad <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Refuerzo de ATQ [M]",
-        "description": "Ataque <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATQ [M]",
+        "description": "ATQ <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Imposición: Interrogación sincera",
@@ -1353,12 +1391,12 @@
     "decoDesc": "Un arma estándar producida por Endfield Industries. El diseño fue proporcionado por el Equipo de Prototipos Creativos fundado por el Ingeniero Principal del Arsenal, Opero. La empuñadura cuenta con módulos auxiliares que pueden retirarse.",
     "skills": [
       {
-        "name": "Refuerzo de agilidad [M]",
+        "name": "Agilidad [M]",
         "description": "Agilidad <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Refuerzo de ATQ [M]",
-        "description": "Ataque <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATQ [M]",
+        "description": "ATQ <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Flujo: Filo desenfrenado",
@@ -1372,11 +1410,11 @@
     "decoDesc": "El producto insignia de la serie Outdoor Explorer de la Base de apoyo de Northmarch. Su enfoque de diseño adaptado para exteriores y portabilidad lo convirtieron en una de las principales recomendaciones por muchos exploradores y aficionados a la pesca.",
     "skills": [
       {
-        "name": "Refuerzo de fuerza [M]",
+        "name": "Fuerza [M]",
         "description": "Fuerza <@ba.vup>+{str}</>"
       },
       {
-        "name": "Refuerzo de DAÑ crio. [M]",
+        "name": "DAÑ criogénico [M]",
         "description": "DAÑ criogénico infligido <@ba.vup>+{crystdam:0.0%}</>"
       },
       {
@@ -1391,12 +1429,12 @@
     "decoDesc": "Un arma de calidad fabricada por Endfield Industries. Entre sus innovaciones figura el uso de un material experimental a base de Originio, como el cuerpo de la hoja, lo que le proporciona una excelente conductividad de energía.",
     "skills": [
       {
-        "name": "Refuerzo de agilidad [G]",
+        "name": "Agilidad [G]",
         "description": "Agilidad <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Refuerzo de Ataque [G]",
-        "description": "Ataque <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATQ [G]",
+        "description": "ATQ <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Imposición: Deseo de toda una vida",
@@ -1410,11 +1448,11 @@
     "decoDesc": "Una espada popular producida por RAYTHEAN Industries. Muchas han sido traficadas a regiones fuera de la Franja de la Civilización, ya que resultaron ser muy codiciadas entre los Rompesuelos. Muchos usuarios también las equipan con modificaciones especializadas.",
     "skills": [
       {
-        "name": "Refuerzo de agilidad [G]",
+        "name": "Agilidad [G]",
         "description": "Agilidad <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Refuerzo de índice crít. [G]",
+        "name": "Índice crítico [G]",
         "description": "Índice crítico <@ba.vup>+{crirate:0.0%}</>"
       },
       {
@@ -1425,15 +1463,15 @@
   },
   "farsight": {
     "name": "Farsight",
-    "description": "Puede que esta tierra no tenga nada de especial. \nLas mismas llanuras de siempre, el mismo aire de siempre y el mismo mar de siempre. Aunque el cielo es distinto. Hay un planeta enorme que podemos ver claramente durante el día. Y tampoco hay lunas gemelas por la noche. La vida apenas es diferente de la de Terra. \n¿Eso es bueno? No lo sé. \nEstoy aquí por el reclutamiento nacional, pero pagan y hay comida. Eso es todo. \n\nPero con el paso del tiempo, empecé a notar las diferencias. \nLa tierra no tiene Originio. Demonios, incluso las fronteras nacionales parecían una broma. Pensé que esto era algún trabajo pionero de frontera Columbiana, donde la gente se parte el lomo todo el día en el Área silvestre por algo de comer. Pero justo hoy, alguien que parecía de la nobleza leithaniana me preguntó a mí, un trabajador reclutado, sobre las especificaciones de unas piezas mecánicas y cómo usar cierta maquinaria. \nY el señor noble no estaba bromeando. \nUrsusiano, Leithaniano, Columbiano... Todas esas etiquetas divisorias ahora se reducen a compañero de equipo, freund y pardner. \nMe gusta cómo resultaron las cosas, ¡es genial! ¿Pero cómo ocurrió? La verdad, no lo sé. \nPregunté un poco por ahí y están tan confundidos como yo. Así que no obtuve mi respuesta durante un tiempo hasta que... \n\n“¿Qué es Endfield?”. \nLe hice esta pregunta al enorme líder de equipo Sarkaz cuando me presenté a trabajar por primera vez. Endfield suena como un nombre de muy mala suerte para una compañía que trabaja en las fronteras. \nNo dijo nada. En cambio, nos llevó a la punta de la nave que servía temporalmente como CG de Endfield. Nos dijo que observáramos bien el planeta y el mundo. \nPlaneta y mundo... Antes casi no usábamos esos términos. \nEl líder de equipo vio mi confusión y sonrió. Me dijo que ese era el significado detrás de Endfield. \n“¿Eso significa que tenemos que usar palabras nuevas y bonitas?”. \n“Significa que dejamos nuestro pasado en Terra”. \n\nQuizá tenía razón. \nAntes de decidir atravesar la Puerta cósmica para llegar a este lugar, yo, y todos los demás, dejamos algo en Terra para siempre. \nPersonas que lucharon en los pozos mineros, que recorrieron el Área silvestre, que trabajaron en las ciudades, que dieron conciertos en las agujas... Todos de pie hombro con hombro a bordo de la nave, listos para construir un futuro juntos. \nEl destino nos dio una elección. Elegimos algo distinto del pasado para crear una nueva forma de vida. \n\n¿Cómo será este mundo? No lo sé. \nPorque lo estamos construyendo ahora mismo. \nLos edificios se alzarán desde el suelo y los cultivos brotarán de la tierra. \nEsta es nuestra respuesta contundente sobre el mundo que estamos creando.",
+    "description": "Puede que esta tierra no tenga nada de especial. \nLas mismas llanuras de siempre, el mismo aire de siempre y el mismo mar de siempre. Aunque el cielo es distinto. Hay un planeta enorme que podemos ver claramente durante el día. Y tampoco hay lunas gemelas por la noche. La vida apenas es diferente de la de Terra. \n¿Eso es bueno? No lo sé. \nEstoy aquí por el reclutamiento nacional, pero pagan y hay comida. Eso es todo. \n\nPero con el paso del tiempo, empecé a notar las diferencias. \nLa tierra no tiene Originio. Demonios, incluso las fronteras nacionales parecían una broma. Pensé que esto era algún trabajo pionero de frontera Columbiana, donde la gente se parte el lomo todo el día en el Área silvestre por algo de comer. Pero justo hoy, alguien que parecía de la nobleza leithaniana me preguntó a mí, un trabajador reclutado, sobre las especificaciones de unas piezas mecánicas y cómo usar cierta maquinaria. \nY el señor noble no estaba bromeando. \nUrsusiano, Leithaniano, Columbiano... Todas esas etiquetas divisorias ahora se reducen a compañero de equipo, amigo y socio. \nMe gusta cómo resultaron las cosas, ¡es genial! ¿Pero cómo ocurrió? La verdad, no lo sé. \nPregunté un poco por ahí y están tan confundidos como yo. Así que no obtuve mi respuesta durante un tiempo hasta que... \n\n“¿Qué es Endfield?”. \nLe hice esta pregunta al enorme líder de equipo Sarkaz cuando me presenté a trabajar por primera vez. Endfield suena como un nombre de muy mala suerte para una compañía que trabaja en las fronteras. \nNo dijo nada. En cambio, nos llevó a la punta de la nave que servía temporalmente como CG de Endfield. Nos dijo que observáramos bien el planeta y el mundo. \nPlaneta y mundo... Antes casi no usábamos esos términos. \nEl líder de equipo vio mi confusión y sonrió. Me dijo que ese era el significado detrás de Endfield. \n“¿Eso significa que tenemos que usar palabras nuevas y bonitas?”. \n“Significa que dejamos nuestro pasado en Terra”. \n\nQuizá tenía razón. \nAntes de decidir atravesar la Puerta cósmica para llegar a este lugar, yo, y todos los demás, habíamos dejado algo en Terra para siempre. \nPersonas que lucharon en los pozos mineros, que recorrieron el Área silvestre, que trabajaron en las ciudades, que dieron conciertos en las agujas... Todos de pie hombro con hombro a bordo de la nave, listos para construir un futuro juntos. \nEl destino nos dio una elección. Elegimos algo distinto del pasado para crear una nueva forma de vida. \n\n¿Cómo será este mundo? No lo sé. \nPorque lo estamos construyendo ahora mismo. \nLos edificios se alzarán desde el suelo y los cultivos brotarán de la tierra. \nEsta es nuestra respuesta contundente sobre el mundo que estamos creando.",
     "decoDesc": "Uno de los muchos prototipos fabricados por Endfield Industries para probar diversas especificaciones. Esta arma fue concebida como una plataforma de uso general construida con materiales de alta gama. Es un recipiente de esperanza para los Ingenieros del Arsenal de Endfield Industries.",
     "skills": [
       {
-        "name": "Refuerzo de atributo principal [G]",
+        "name": "Atributo principal [G]",
         "description": "Atributo principal <@ba.vup>+{mainattr}</>"
       },
       {
-        "name": "Refuerzo de Intensidad de artes [G]",
+        "name": "Intensidad de artes [G]",
         "description": "Intensidad de artes <@ba.vup>+{physpell:0}</>"
       },
       {

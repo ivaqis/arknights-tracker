@@ -334,4 +334,4 @@ export const fullBottles = {
         "emptyBottleId": "item_iron_enr_bottle",
         "liquidId": "item_liquid_xiranite_lowpoly"
     }
-}
+};

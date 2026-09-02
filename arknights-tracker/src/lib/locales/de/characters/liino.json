@@ -39,7 +39,7 @@
     "battleSkill": {
       "name": "Extremer Fokus",
       "description": "Liino fügt Gegnern <@ba.pulse>Elektrischen SDN</> zu und nimmt dann ihre <@ba.key>Vokalist-Haltung</> ein. Wenn Gegner in der Nähe sind, solange diese Haltung aktiv ist, führt Liino regelmäßig einen zusätzlichen ANG (der Gegnern <@ba.pulse>Elektrischen SDN</> zufügt) aus.\n<@ba.key>Vokalist-Haltung</>: Liino gewährt dem gesamten Team während dieser Haltung einen ANG-Boost. Nachdem Liino den Kampf betritt, gewährt sie Operatoren in Reichweite auch kontinuierlich <@ba.heal>LP-Behandlung</>.\n<@ba.info>In der Vokalist-Haltung wird ihre Kampffertigkeit durch die Ende-Haltung ersetzt. Das Wirken beendet die Vokalist-Haltung vorzeitig, ohne FP zu verbrauchen. Die Kampffertigkeit bekommt dann eine kurze Abklingzeit.</>",
-      "firstAtkMultiplier": "Erster-ANG-Multiplikator",
+      "1stAtkMultiplier": "1.-ANG-Multiplikator",
       "additionalAtkDmgMultiplier": "Zusätzlicher ANG-SDN-Multiplikator",
       "additionalAtkIntervalS": "Zeitintervall für zusätzlichen ANG (Sek.)",
       "beatIntervalS": "Beat-Intervall (Sek.)",
@@ -60,7 +60,7 @@
     },
     "ultimate": {
       "name": "Morgenstern-Concerto",
-      "description": "Liino gewährt dem gesamten Team eine <@ba.heal>LP-Behandlung</>, wechselt gleichzeitig in die <@ba.key>„Stimme des Kosmos“-Haltung</>, entfesselt ein anhaltendes Feuerwerk aus Phasen-Pyrotechnik, das <@ba.pulse>Elektrischen SDN</> verursacht, und löst ein <@ba.key>Elektrifizierendes Spektakel</> aus, das <@ba.pulse>Elektrischen SDN</> verursacht, und belegt Gegner in einem großen Wirkungsbereich gewaltsam mit <#ba.conduct>Elektrifizierung</>.\n<@ba.key>„Stimme des Kosmos“-Haltung</>: Diese Haltung ersetzt Liinos <@ba.key>Vokalist-Haltung</>. Solange die Haltung aktiv ist, gewährt sie dem gesamten Team <#ba.pulseenhance>Elektrik-Verstärkung</> und <#ba.naturalenhance>Natur-Verstärkung</> (Effekte werden durch das Attribut Wille beeinflusst) sowie einen ANG-Boost. Die Beats von Liinos Song fügen Gegnern im Wirkungsbereich außerdem <@ba.pulse>Elektrischen SDN</> zu und gewähren verbündeten Operatoren im Wirkungsbereich <@ba.heal>LP-Behandlung</>. Wenn die Haltung endet, fügt sie Gegnern im Wirkungsbereich den 3-fachen SDN durch einen einzelnen Beat zu und gewährt dem gesamten Team im Wirkungsbereich die 3-fache LP-Behandlung durch einen Einzel-Beat. Dieser Effekt wird nicht ausgelöst, wenn die Haltung frühzeitig endet. \nIhre Kampffertigkeit wird während der Haltung durch die Ende-Haltung ersetzt. <@ba.info>Wird die Kampffertigkeit in der „Stimme des Kosmos“-Haltung gewirkt, wird diese vorzeitig beendet und verbraucht keine FP.</>",
+      "description": "Liino gewährt dem gesamten Team eine <@ba.heal>LP-Behandlung</>, wechselt gleichzeitig in die <@ba.key>„Stimme des Kosmos“-Haltung</>, entfesselt ein anhaltendes Feuerwerk aus Phasen-Pyrotechnik, das <@ba.pulse>Elektrischen SDN</> verursacht, und löst ein <@ba.key>Elektrifizierendes Spektakel</> aus, das <@ba.pulse>Elektrischen SDN</> verursacht, und belegt Gegner in einem großen Wirkungsbereich gewaltsam mit <#ba.conduct>Elektrifizierung</>.\n<@ba.key>„Stimme des Kosmos“-Haltung</>: Diese Haltung ersetzt Liinos <@ba.key>Vokalist-Haltung</>. Solange die Haltung aktiv ist, gewährt sie dem gesamten Team <#ba.pulseenhance>Elektrik-Verstärkung</> und <#ba.naturalenhance>Natur-Verstärkung</> (Effekte werden durch das Attribut Wille beeinflusst) sowie einen ANG-Boost. Die Beats von Liinos Song fügen Gegnern im Wirkungsbereich außerdem <@ba.pulse>Elektrischen SDN</> zu und gewähren verbündeten Operatoren im Wirkungsbereich <@ba.heal>LP-Behandlung</>. Wenn die Haltung endet, fügt Liino Gegnern im Wirkungsbereich den 3-fachen SDN durch einen einzelnen Beat zu und gewährt dem gesamten Team die 3-fache LP-Behandlung durch einen Einzel-Beat. Der Effekt wird nicht ausgelöst, wenn die Haltung frühzeitig endet. \n<@ba.info>Während der Haltung wird ihre Kampffertigkeit durch „Haltung beenden“ ersetzt. Wird die Kampffertigkeit in der „Stimme des Kosmos“-Haltung gewirkt, wird diese vorzeitig beendet und verbraucht keine FP.</>",
       "stagePyrotechnicsDmgMultiplier": "Phasen-Pyrotechnik-SDN-Multiplikator",
       "electrifyingExtravaganzaDmgMultiplier": "„Elektrifizierendes Spektakel“-SDN-Multiplikator",
       "atkBoost": "ANG-Boost",
@@ -170,7 +170,7 @@
       },
       {
         "voId": "chr_0035_liino_chrup_skill_01",
-        "title": "Fähigkeitsmatrix-Aktivierung",
+        "title": "Talentknoten-Aktivierung",
         "text": "Ich habe es im Nu verstanden! So wie ein Stern, der meine Seele entfacht … Ich werde zu einem echten Star, was?"
       },
       {

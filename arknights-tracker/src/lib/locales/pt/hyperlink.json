@@ -23,6 +23,14 @@
     "name": "Status Físico: Levantar",
     "desc": "Aplica <#ba.noguard>Vulnerabilidade</> a um inimigo. Se o inimigo já estiver <#ba.noguard>Vulnerável</>, então adiciona 1 acúmulo de <#ba.noguard>Vulnerabilidade</> e causa <@ba.phy>DNO Físico</> e <@ba.poise>Desorientação</>."
   },
+  "ba.arrowenergy": {
+    "name": "Sinal",
+    "desc": "Typhoeus ganha Sinais ao consumir acúmulos de <@ba.naturalinflict>Inflição da Natureza</> do inimigo ou ao acionar <#ba.naturalburst>Explosão da Natureza</> em inimigos. Seu combo de habilidades pode converter os Sinais em <#ba.arrownum>Flechas de Caça</>."
+  },
+  "ba.arrownum": {
+    "name": "Flecha de Caça",
+    "desc": "Quando Typhoeus está em seu estado <@ba.key>Pairando</>, ela pode consumir Flechas de Caça para potencializar seus disparos, causando DNO maior enquanto também aciona <#ba.naturalburst>Explosão da Natureza</>."
+  },
   "ba.burning": {
     "name": "Reação de Artes: Combustão",
     "desc": "Um inimigo com <@ba.burning>Combustão</> recebe <@ba.fire>DNO Térmico</> ao longo do tempo.\n<@ba.burning>Combustão</> = Uma <#ba.spellinflict>Inflição Não Térmica</> (<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.fireinflict>Inflição Térmica</>"
@@ -260,8 +268,8 @@
     "desc": "Alvos suscetíveis sofrem temporariamente mais DNO do elemento ao qual são suscetíveis. O número representa o grau de aumento. Efeitos do mesmo tipo podem se acumular."
   },
   "ba.weak": {
-    "name": "Enfraquecer",
-    "desc": "Alvos enfraquecidos causam temporariamente DNO reduzido. O número representa o grau de redução. Efeitos do mesmo tipo podem se acumular de forma não linear."
+    "name": "Fraqueza",
+    "desc": "Alvos afetados por Fraqueza causam DNO reduzido temporariamente. O número representa o grau de redução. Efeitos do mesmo tipo podem se acumular de forma não linear."
   },
   "fac.hub": {
     "name": "Núcleo de Automação do Protocolo",
@@ -360,7 +368,7 @@
     "desc": "O Centeio de Junco é um tipo de cultura plantável que pode ser coletada na natureza. Ele também pode ser obtido por meio de cultivo de <#item.portSoilSp1>Lotes de Centeio de Junco</>.\nEle pode ser usado diretamente na confecção de <#sys.manualCraftDish>Alimentos e Medicamentos Finos</> (A&M Finos)."
   },
   "item.plantSpSeed1": {
-    "name": "Semente de Centeio de Junco",
+    "name": "Sementes de Centeio de Junco",
     "desc": "Sementes produzidas pela coleta de sementes de plantas de <#item.plantSp1>Centeio de Junco</> nas instalações da Fábrica do CAI.\nPegue Sementes de Centeio de Junco e <#item.carbonMtl>Carbono</> e, em seguida, vá até a tela <#sys.manualCraftField>Plantio</> para confeccioná-los em <#item.portSoilSp1>Lotes de Centeio de Junco</>."
   },
   "item.portSoilBbflower": {

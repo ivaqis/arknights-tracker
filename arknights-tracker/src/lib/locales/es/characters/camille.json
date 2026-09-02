@@ -43,7 +43,7 @@
       "dmgMultiplier": "Multiplicador de DAÑ",
       "stagger": "Tambaleo",
       "firefangVesperwingsDurationS": "Duración de Vesperalas de colmillo ígneo (s)",
-      "weaknessEffect": "Efecto de debilidad",
+      "weakness": "Debilidad",
       "heatSusceptibility": "Susceptibilidad al calor",
       "explosionDmgMultiplier": "Multiplicador de DAÑ por explosión"
     },
@@ -55,7 +55,7 @@
       "spRecovery": "Recuperación de PH",
       "hunterPursuitDmgMultiplier": "Multiplicador de DAÑ de Persecución del cazador",
       "hunterPursuitStagger": "Tambaleo por Persecución del cazador",
-      "hunterPursuitSpRecovery": "Recuperación de PH. por Persecución del cazador",
+      "hunterPursuitSpRecovery": "Recuperación de PH por Persecución del cazador",
       "ultimateEnergyGain": "Ganancia de Energía máxima"
     },
     "ultimate": {
@@ -162,7 +162,7 @@
       },
       {
         "voId": "chr_0033_camille_chrup_skill_01",
-        "title": "Activación de la matriz de habilidades",
+        "title": "Activación de Nodo de talento",
         "text": "Las impurezas han sido eliminadas. La sangre es más pura ahora."
       },
       {

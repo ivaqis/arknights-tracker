@@ -1696,7 +1696,7 @@
                     10.0
                 ]
             },
-            "slowEffect": {
+            "slow": {
                 "dataType": "percent",
                 "data": [
                     0.3,

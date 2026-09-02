@@ -1,5 +1,3 @@
-// src/lib/api.js
-
 const runtimeBase =
     typeof window !== 'undefined' && window.__CONFIG__ && window.__CONFIG__.API_BASE
         ? window.__CONFIG__.API_BASE
@@ -9,6 +7,16 @@ export const API_BASE =
     runtimeBase ??
     import.meta.env.VITE_API_BASE ??
     (import.meta.env.PROD ? '/api' : 'http://localhost:3001/api');
+
+const runtimeAudioBase =
+    typeof window !== 'undefined' && window.__CONFIG__ && window.__CONFIG__.AUDIO_BASE
+        ? window.__CONFIG__.AUDIO_BASE
+        : undefined;
+
+export const AUDIO_BASE =
+    runtimeAudioBase ??
+    import.meta.env.VITE_AUDIO_BASE ??
+    '/audio';
 
 export async function fetchGlobalStats(uid, poolId) {
     try {
