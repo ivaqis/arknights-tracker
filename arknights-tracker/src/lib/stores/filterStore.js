@@ -220,8 +220,11 @@ export function getDefaultItemSortParams() {
                 "balloon_recycle",
                 "hulu",
                 "tool",
+                "lung_box",
+                "lung",
                 "xiranite_radar",
                 "xiranite_nexus",
+                "arrow_chip",
                 "muck",
                 "full_bottle",
                 "full_gas_jar",
@@ -256,6 +259,8 @@ export function getDefaultItemSortParams() {
                 "xiranite_enr",
                 "copper",
                 "copper_enr",
+                "copper_xiranite",
+                "copper_poly",
                 "carbon",
                 "carbon_enr",
                 "plant_flower_1",
@@ -275,7 +280,7 @@ export function getDefaultItemSortParams() {
                 "nonMaterial"
             ],
             rarity: [1, 2, 3, 4, 5, 6],
-            events: ["nonEvent", "ev4-v1.2"],
+            events: ["nonEvent", "ev4-v1.2", "ev3-v1.5"],
             localeName: "a-z"
         }
     };

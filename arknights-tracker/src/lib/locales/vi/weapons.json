@@ -5,11 +5,11 @@
     "decoDesc": "Một loại vũ khí thường thấy ở vùng tiền tuyến. Không ai biết ai là người nghĩ ra những thiết kế cơ bản. Mảnh đặc biệt này có thể dễ dàng được sản xuất bằng máy móc công nghiệp thông thường.",
     "skills": [
       {
-        "name": "Tăng Cường Sức Mạnh [Nhỏ]",
+        "name": "Sức Mạnh [Nhỏ]",
         "description": "Sức Mạnh <@ba.vup>+{str}</>"
       },
       {
-        "name": "Tăng Cường Tấn Công [Nhỏ]",
+        "name": "Tấn Công [Nhỏ]",
         "description": "Tấn Công <@ba.vup>+{atk:0.0%}</>"
       },
       {
@@ -24,11 +24,11 @@
     "decoDesc": "Sản phẩm độc lập mới nhất của Tập Đoàn Mieszko. Các thiết kế dựa trên di tích được khai quật bởi Tu Hội Tĩnh Lặng. Bản thân vũ khí này được trang bị công nghệ tối mật, cho phép nó dễ dàng cắt xuyên qua hầu hết mọi thứ.",
     "skills": [
       {
-        "name": "Tăng Cường Thuộc Tính Chính [Lớn]",
+        "name": "Thuộc Tính Chính [Lớn]",
         "description": "Thuộc tính chính <@ba.vup>+{mainattr}</>"
       },
       {
-        "name": "Tăng Cường Tấn Công [Lớn]",
+        "name": "Tấn Công [Lớn]",
         "description": "Tấn Công <@ba.vup>+{atk:0.0%}</>"
       },
       {
@@ -43,11 +43,11 @@
     "decoDesc": "Một sản phẩm cao cấp của Trung Tâm Hỗ Trợ Northmarch. Máy cắt xích này được thiết kế theo công nghệ cũ. Mặc dù không còn được sản xuất hàng loạt, loại vũ khí này vẫn tiếp tục chứng minh được độ tin cậy của nó trên chiến trường.",
     "skills": [
       {
-        "name": "Tăng Cường Ý Chí [Lớn]",
+        "name": "Ý Chí [Lớn]",
         "description": "Ý Chí <@ba.vup>+{will}</>"
       },
       {
-        "name": "Tăng Cường HP [Lớn]",
+        "name": "HP [Lớn]",
         "description": "HP Tối Đa <@ba.vup>+{hp:0.0%}</>"
       },
       {
@@ -62,11 +62,11 @@
     "decoDesc": "Một loại vũ khí chuyên dụng do Endfield sản xuất. Flamberge được trang bị các mạch dẫn Originium đan xen nhằm tăng cường hiệu suất tinh hoa. Thiết kế này được lấy cảm hứng từ nhiều hiện tượng quan sát được trên hành tinh Talos.",
     "skills": [
       {
-        "name": "Tăng Cường Sức Mạnh [Lớn]",
+        "name": "Sức Mạnh [Lớn]",
         "description": "Sức Mạnh <@ba.vup>+{str}</>"
       },
       {
-        "name": "Tăng Cường HP [Lớn]",
+        "name": "HP [Lớn]",
         "description": "HP Tối Đa <@ba.vup>+{hp:0.0%}</>"
       },
       {
@@ -81,11 +81,11 @@
     "decoDesc": "Một vũ khí phiên bản giới hạn đặc biệt của Witching Hour. Hình dáng của thanh Đại Kiếm này có lẽ dựa trên một truyền thuyết cổ xưa. Nó dường như có khả năng giật phăng những lời than khóc đau khổ từ cõi ác mộng.",
     "skills": [
       {
-        "name": "Tăng Cường Sức Mạnh [Lớn]",
+        "name": "Sức Mạnh [Lớn]",
         "description": "Sức Mạnh <@ba.vup>+{str}</>"
       },
       {
-        "name": "Tăng Cường Tỷ Lệ Bạo Kích [Lớn]",
+        "name": "Tỷ Lệ Bạo Kích [Lớn]",
         "description": "Tỷ Lệ Bạo Kích <@ba.vup>+{crirate:0.0%}</>"
       },
       {
@@ -100,11 +100,11 @@
     "decoDesc": "Một thanh Đại Kiếm tiêu chuẩn do Pháo Đài Forgefane chế tạo. Mặc dù rất ít người thành thạo vũ khí này, nhưng nó rất dễ sử dụng và luôn là lựa chọn phổ biến nhất của các tân binh trong nhiều năm.",
     "skills": [
       {
-        "name": "Tăng Cường Ý Chí [Nhỏ]",
+        "name": "Ý Chí [Nhỏ]",
         "description": "Ý Chí <@ba.vup>+{will}</>"
       },
       {
-        "name": "Tăng Cường HP [Nhỏ]",
+        "name": "HP [Nhỏ]",
         "description": "HP Tối Đa <@ba.vup>+{hp:0.0%}</>"
       },
       {
@@ -119,7 +119,7 @@
     "decoDesc": "Một trong những vũ khí cán viên tiêu chuẩn của cán viên do Tập Đoàn Endfield sản xuất. Vũ khí này được thiết kế bởi Kỹ Sư Darhoff của Kho Vũ Khí Endfield. Thiết kế của nó cung cấp một lựa chọn khả thi cho những người tham gia các chiến dịch tấn công.",
     "skills": [
       {
-        "name": "Tăng Cường Thuộc Tính Chính [Nhỏ]",
+        "name": "Thuộc Tính Chính [Nhỏ]",
         "description": "Thuộc tính chính <@ba.vup>+{mainattr}</>"
       },
       {
@@ -134,11 +134,11 @@
     "decoDesc": "Một thanh Đại Kiếm tiêu chuẩn do các Cục Kiếm Sĩ Hongshan phát triển. Vũ khí được phủ một lớp phủ chuyên dụng mới, cung cấp khả năng bảo vệ tuyệt vời, ngay cả khi sử dụng trong môi trường khắc nghiệt và cực đoan.",
     "skills": [
       {
-        "name": "Tăng Cường Sức Mạnh [Vừa]",
+        "name": "Sức Mạnh [Vừa]",
         "description": "Sức Mạnh <@ba.vup>+{str}</>"
       },
       {
-        "name": "Tăng Hiệu Quả Nhận Tuyệt Kỹ [Vừa]",
+        "name": "Hiệu Quả Nhận TK [Vừa]",
         "description": "Hiệu Quả Nhận Tuyệt Kỹ <@ba.vup>+{usgs:0.0%}</>"
       },
       {
@@ -153,11 +153,11 @@
     "decoDesc": "Một loại vũ khí đặc biệt của Tập Đoàn Mieszko với số lượng sản xuất hạn chế. Đây là thiết kế cuối cùng của dự án hợp tác giữa công ty vũ khí và chuyên gia Cromwell của Tướng Quân Kỵ Sĩ.",
     "skills": [
       {
-        "name": "Tăng Cường Sức Mạnh [Vừa]",
+        "name": "Sức Mạnh [Vừa]",
         "description": "Sức Mạnh <@ba.vup>+{str}</>"
       },
       {
-        "name": "Tăng Cường HP [Vừa]",
+        "name": "HP [Vừa]",
         "description": "HP Tối Đa <@ba.vup>+{hp:0.0%}</>"
       },
       {
@@ -172,11 +172,11 @@
     "decoDesc": "Một vũ khí kỳ lạ được Witching Hour tạo ra. Thân kiếm được đẽo từ một khối băng trông bình thường, nhưng bề mặt được dung hợp một loại Thuật Pháp Originium đặc biệt khiến nó gần như không thể bị phá hủy.",
     "skills": [
       {
-        "name": "Tăng Cường Sức Mạnh [Lớn]",
+        "name": "Sức Mạnh [Lớn]",
         "description": "Sức Mạnh <@ba.vup>+{str}</>"
       },
       {
-        "name": "Tăng Cường Tấn Công [Lớn]",
+        "name": "Tấn Công [Lớn]",
         "description": "Tấn Công <@ba.vup>+{atk:0.0%}</>"
       },
       {
@@ -191,11 +191,11 @@
     "decoDesc": "Một thanh Đại Kiếm chất lượng cao do Cục Kiếm Sĩ Hongshan chế tác. So với các loại đại kiếm khác, thanh này nhẹ hơn nhưng cũng nguy hiểm không kém.",
     "skills": [
       {
-        "name": "Tăng Cường Sức Mạnh [Vừa]",
+        "name": "Sức Mạnh [Vừa]",
         "description": "Sức Mạnh <@ba.vup>+{str}</>"
       },
       {
-        "name": "Thưởng Công Phép [Vừa]",
+        "name": "Công Phép [Vừa]",
         "description": "Công Phép <@ba.vup>+{physpell:0}</>"
       },
       {
@@ -210,11 +210,11 @@
     "decoDesc": "Vũ khí tiêu chuẩn do Tập Đoàn Endfield sản xuất. Thiết kế được thực hiện bởi Nhóm Tạo Mẫu Sáng Tạo do Kỹ Sư Kho Vũ Khí Cao Cấp Opero thành lập. Vũ khí có thể được trang bị nhiều mô-đun khác nhau tùy theo nhu cầu chiến đấu thực tế.",
     "skills": [
       {
-        "name": "Tăng Cường Sức Mạnh [Vừa]",
+        "name": "Sức Mạnh [Vừa]",
         "description": "Sức Mạnh <@ba.vup>+{str}</>"
       },
       {
-        "name": "Tăng Cường HP [Vừa]",
+        "name": "HP [Vừa]",
         "description": "HP Tối Đa <@ba.vup>+{hp:0.0%}</>"
       },
       {
@@ -229,11 +229,11 @@
     "decoDesc": "Một nguyên mẫu do Phòng Thí Nghiệm Æthertech Di Động chế tạo. Thân lưỡi được làm từ vật liệu mới, khiến vũ khí này nhẹ đến mức đáng kinh ngạc mà vẫn không hề suy giảm sức hủy diệt.",
     "skills": [
       {
-        "name": "Tăng Cường Sức Mạnh [Lớn]",
+        "name": "Sức Mạnh [Lớn]",
         "description": "Sức Mạnh <@ba.vup>+{str}</>"
       },
       {
-        "name": "Thưởng Công Phép [Lớn]",
+        "name": "Công Phép [Lớn]",
         "description": "Công Phép <@ba.vup>+{physpell:0}</>"
       },
       {
@@ -248,11 +248,11 @@
     "decoDesc": "Một thanh đại kiếm được Cục Kiếm Sĩ Hongshan dành hơn mười năm để thiết kế và chế tạo. Kích thước của nó được cân chỉnh hài hòa, mỗi nhát chém đều mang uy lực và sự hung mãnh đáng kinh ngạc. Đây là một bảo kiếm mẫu mực của dòng vũ khí hạng nặng.",
     "skills": [
       {
-        "name": "Tăng Cường Sức Mạnh [Lớn]",
+        "name": "Sức Mạnh [Lớn]",
         "description": "Sức Mạnh <@ba.vup>+{str}</>"
       },
       {
-        "name": "Tăng Cường Tấn Công [Lớn]",
+        "name": "Tấn Công [Lớn]",
         "description": "Tấn Công <@ba.vup>+{atk:0.0%}</>"
       },
       {
@@ -267,11 +267,11 @@
     "decoDesc": "Một trong những vũ khí tiên tiến được Endfield sản xuất cho các cán viên của họ. Kho vũ khí Endfield đã áp dụng bản thiết kế của Andre để chế tạo máy bay không người lái có khả năng lưu trữ Thuật Pháp để có thể nhanh chóng sử dụng trong trường hợp khẩn cấp.",
     "skills": [
       {
-        "name": "Tăng Cường Trí Tuệ [Nhỏ]",
+        "name": "Trí Tuệ [Nhỏ]",
         "description": "Trí Tuệ <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Công Phép [Nhỏ]",
+        "name": "ST Thuật Pháp [Nhỏ]",
         "description": "ST Thuật Pháp Gây Ra <@ba.vup>+{spelldam:0.0%}</>"
       },
       {
@@ -286,7 +286,7 @@
     "decoDesc": "Một trong những vũ khí cán viên tiêu chuẩn của Tập Đoàn Endfield. Vũ khí này được thiết kế bởi Kỹ Sư Jiminy của Kho Vũ Khí Endfield. Đơn Vị Thuật Pháp rất được các tân binh Endfield ưa chuộng.",
     "skills": [
       {
-        "name": "Tăng Cường Thuộc Tính Chính [Nhỏ]",
+        "name": "Thuộc Tính Chính [Nhỏ]",
         "description": "Thuộc tính chính <@ba.vup>+{mainattr}</>"
       },
       {
@@ -301,11 +301,11 @@
     "decoDesc": "Một trong những đơn vị Thuật Pháp do Tập Đoàn Endfield sản xuất. Nó có thiết kế cấu trúc táo bạo, khả năng dẫn truyền Thuật Pháp tuyệt vời, nhưng cực kỳ khó kiểm soát. Thông thạo vũ khí này được xem là minh chứng cho năng lực của cán viên.",
     "skills": [
       {
-        "name": "Tăng Cường Ý Chí [Nhỏ]",
+        "name": "Ý Chí [Nhỏ]",
         "description": "Ý Chí <@ba.vup>+{will}</>"
       },
       {
-        "name": "Tăng Cường Tấn Công [Nhỏ]",
+        "name": "Tấn Công [Nhỏ]",
         "description": "Tấn Công <@ba.vup>+{atk:0.0%}</>"
       },
       {
@@ -320,11 +320,11 @@
     "decoDesc": "Một đơn vị Thuật Pháp do Công Nghiệp RAYTHEAN phát hành. Loại vũ khí đặc biệt này được biết đến với thiết kế tối giản và nhẹ. Để chế tạo nó chỉ cần một nửa số vật liệu cần thiết để sản xuất một đơn vị Thuật Pháp tiêu chuẩn.",
     "skills": [
       {
-        "name": "Tăng Cường Trí Tuệ [Vừa]",
+        "name": "Trí Tuệ [Vừa]",
         "description": "Trí Tuệ <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Tăng Cường ST Điện [Vừa]",
+        "name": "ST Điện [Vừa]",
         "description": "ST Điện Gây Ra <@ba.vup>+{electrondam:0.0%}</>"
       },
       {
@@ -339,11 +339,11 @@
     "decoDesc": "Một trong những đơn vị Thuật Pháp có vẻ ngoài kỳ lạ do Witching Hour phát hành. Thiết kế phản trực giác của nó bao gồm dụng ý giảm khả năng tương thích Thuật Pháp Originium chỉ để làm nổi bật logic đen tối của phép thuật Teekaz cổ đại.",
     "skills": [
       {
-        "name": "Tăng Cường Trí Tuệ [Vừa]",
+        "name": "Trí Tuệ [Vừa]",
         "description": "Trí Tuệ <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Tăng Cường Tấn Công [Vừa]",
+        "name": "Tấn Công [Vừa]",
         "description": "Tấn Công <@ba.vup>+{atk:0.0%}</>"
       },
       {
@@ -358,11 +358,11 @@
     "decoDesc": "Một sản phẩm theo hợp đồng từ Phòng Thí Nghiệm Æthertech Di Động. Có các linh kiện kim loại được khắc bằng tay nghề của thợ thủ công để tạo ra các hình khắc phù hợp với các bộ phận trầm tích. Kết quả là một đơn vị Thuật Pháp với mạch đúc Thuật Pháp độc đáo.",
     "skills": [
       {
-        "name": "Tăng Cường Ý Chí [Lớn]",
+        "name": "Ý Chí [Lớn]",
         "description": "Ý Chí <@ba.vup>+{will}</>"
       },
       {
-        "name": "Tăng Cường ST Tự Nhiên [Lớn]",
+        "name": "ST Tự Nhiên [Lớn]",
         "description": "ST Tự Nhiên Gây Ra <@ba.vup>+{naturaldam:0.0%}</>"
       },
       {
@@ -377,11 +377,11 @@
     "decoDesc": "Một đơn vị Thuật Pháp do Cục Kiếm Sĩ Hongshan phát triển và sản xuất bằng Xiranite. Với bản chất thất thường của vật liệu quý hiếm này, chỉ những người sử dụng có khả năng tập trung và chính xác ở mức cao nhất mới có thể sử dụng hiệu quả đơn vị Thuật Pháp này.",
     "skills": [
       {
-        "name": "Tăng Cường Ý Chí [Vừa]",
+        "name": "Ý Chí [Vừa]",
         "description": "Ý Chí <@ba.vup>+{will}</>"
       },
       {
-        "name": "Tăng Hiệu Quả Nhận Tuyệt Kỹ [Vừa]",
+        "name": "Hiệu Quả Nhận TK [Vừa]",
         "description": "Hiệu Quả Nhận Tuyệt Kỹ <@ba.vup>+{usgs:0.0%}</>"
       },
       {
@@ -396,11 +396,11 @@
     "decoDesc": "Một đơn vị Thuật Pháp do Trung Tâm Hỗ Trợ Northmarch phát triển. Đây chắc chắn là đơn vị có khả năng dẫn truyền Thuật Pháp Originium tốt nhất. Chỉ những pháp sư có khả năng thi triển cao nhất mới có thể làm chủ được vũ khí này.",
     "skills": [
       {
-        "name": "Tăng Cường Thuộc Tính Chính [Lớn]",
+        "name": "Thuộc Tính Chính [Lớn]",
         "description": "Thuộc tính chính <@ba.vup>+{mainattr}</>"
       },
       {
-        "name": "Thưởng Công Phép [Lớn]",
+        "name": "Công Phép [Lớn]",
         "description": "Công Phép <@ba.vup>+{physpell:0}</>"
       },
       {
@@ -415,11 +415,11 @@
     "decoDesc": "Một trong những đơn vị Thuật Pháp do Witching Hour phát triển. Ngoại trừ các mạch Originium cơ bản, phần còn lại của đơn vị được chế tạo bằng một vật liệu không rõ lai lịch. Liệu thứ này có thực sự chế tạo được ở Talos-II không?",
     "skills": [
       {
-        "name": "Tăng Cường Trí Tuệ [Lớn]",
+        "name": "Trí Tuệ [Lớn]",
         "description": "Trí Tuệ <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Công Phép [Lớn]",
+        "name": "ST Thuật Pháp [Lớn]",
         "description": "ST Thuật Pháp Gây Ra <@ba.vup>+{spelldam:0.0%}</>"
       },
       {
@@ -434,11 +434,11 @@
     "decoDesc": "Một trong những đơn vị Thuật Pháp được phát triển bởi Tập Đoàn Mieszko. Vũ khí này có khung thép D64 đặc biệt và một bộ mô-đun tùy chỉnh. Vẻ ngoài của nó gợi nhớ đến màn bắn pháo hoa của các hiệp sĩ thời xưa.",
     "skills": [
       {
-        "name": "Tăng Cường Ý Chí [Lớn]",
+        "name": "Ý Chí [Lớn]",
         "description": "Ý Chí <@ba.vup>+{will}</>"
       },
       {
-        "name": "Tăng Cường HP [Lớn]",
+        "name": "HP [Lớn]",
         "description": "HP Tối Đa <@ba.vup>+{hp:0.0%}</>"
       },
       {
@@ -453,11 +453,11 @@
     "decoDesc": "Một sản phẩm kinh điển hàng đầu của RAYTHEAN. Nguyên mẫu của nó đã được triển khai trong Cuộc Chiến Aggeloi Đầu Tiên. Vũ khí này đã được nâng cấp và tối ưu hóa nhiều lần kể từ đó, với phiên bản hiện đại sở hữu hỏa lực đáng kinh ngạc, cung cấp khả năng bảo vệ và an toàn cao hơn khi vận chuyển.",
     "skills": [
       {
-        "name": "Tăng Cường Ý Chí [Lớn]",
+        "name": "Ý Chí [Lớn]",
         "description": "Ý Chí <@ba.vup>+{will}</>"
       },
       {
-        "name": "Tăng Hiệu Quả Nhận Tuyệt Kỹ [Lớn]",
+        "name": "Hiệu Quả Nhận TK [Lớn]",
         "description": "Hiệu Quả Nhận Tuyệt Kỹ <@ba.vup>+{usgs:0.0%}</>"
       },
       {
@@ -472,11 +472,11 @@
     "decoDesc": "Một Đơn Vị Thuật Pháp được Tập Đoàn Mieszko thiết kế cho Tu Hội Tĩnh Lặng. Mọi bước từ thiết kế sản phẩm, kiểm tra, sản xuất đến tinh chỉnh đều được thực hiện dưới sự hướng dẫn của một giáo sĩ Tu Hội.",
     "skills": [
       {
-        "name": "Tăng Cường Ý Chí [Vừa]",
+        "name": "Ý Chí [Vừa]",
         "description": "Ý Chí <@ba.vup>+{will}</>"
       },
       {
-        "name": "Tăng Tốc Hiệu Quả Điều Trị [Vừa]",
+        "name": "Hiệu Quả Điều Trị [Vừa]",
         "description": "Hiệu Quả Điều Trị <@ba.vup>+{heal:0.0%}</>."
       },
       {
@@ -491,11 +491,11 @@
     "decoDesc": "Một sản phẩm thuộc dòng sản phẩm cao cấp của Tập Đoàn Mieszko. Vũ khí này sở hữu độ dẫn Thuật Pháp Originium tuyệt vời, khiến nó trở nên thiết thực hơn so với các sản phẩm thời trang khác chỉ chú trọng đến kiểu dáng hơn là chất liệu.",
     "skills": [
       {
-        "name": "Tăng Cường Trí Tuệ [Lớn]",
+        "name": "Trí Tuệ [Lớn]",
         "description": "Trí Tuệ <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Tăng Tốc Hiệu Quả Điều Trị [Lớn]",
+        "name": "Hiệu Quả Điều Trị [Lớn]",
         "description": "Hiệu Quả Điều Trị <@ba.vup>+{heal:0.0%}</>."
       },
       {
@@ -510,11 +510,11 @@
     "decoDesc": "Một vũ khí tiêu chuẩn do Tập Đoàn Endfield sản xuất. Thiết kế được thực hiện bởi Nhóm Tạo Mẫu Sáng Tạo do Kỹ Sư Kho Vũ Khí Cao Cấp Opero thành lập. Sức mạnh được xác định bởi độ thành thạo của người dùng trong Thuật Pháp Originium.",
     "skills": [
       {
-        "name": "Tăng Cường Trí Tuệ [Vừa]",
+        "name": "Trí Tuệ [Vừa]",
         "description": "Trí Tuệ <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Thưởng Công Phép [Vừa]",
+        "name": "Công Phép [Vừa]",
         "description": "Công Phép <@ba.vup>+{physpell:0}</>"
       },
       {
@@ -529,11 +529,11 @@
     "decoDesc": "Đơn Vị Thuật Pháp do Cục Kiếm Sĩ Hongshan phát triển. Điểm nổi bật của vũ khí là việc mạnh dạn ứng dụng các hợp kim Xiranite hoàn toàn mới. Nhờ vật liệu có hiệu quả vượt trội, hiệu suất thi triển được cải thiện đáng kể, thế nhưng, Đơn Vị Thuật Pháp này cũng khá khó làm chủ.",
     "skills": [
       {
-        "name": "Tăng Cường Ý Chí [Lớn]",
+        "name": "Ý Chí [Lớn]",
         "description": "Ý Chí <@ba.vup>+{will}</>"
       },
       {
-        "name": "Tăng Cường Tấn Công [Lớn]",
+        "name": "Tấn Công [Lớn]",
         "description": "Tấn Công <@ba.vup>+{atk:0.0%}</>"
       },
       {
@@ -548,11 +548,11 @@
     "decoDesc": "Một bộ Đơn Vị Thuật Pháp tiêu chuẩn do Cục Kiếm Sĩ Hongshan thiết kế và phát triển. Những vũ khí này hiện được cấp phát cho các thành viên của Đội Đặc Nhiệm Yinglung. Chúng nổi tiếng nhờ hiệu năng vượt trội, độ ổn định cao, cũng như độ tin cậy trong những môi trường khắc nghiệt.",
     "skills": [
       {
-        "name": "Tăng Cường Trí Tuệ [Lớn]",
+        "name": "Trí Tuệ [Lớn]",
         "description": "Trí Tuệ <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Tăng Hiệu Quả Nhận Tuyệt Kỹ [Lớn]",
+        "name": "Hiệu Quả Nhận TK [Lớn]",
         "description": "Hiệu Quả Nhận Tuyệt Kỹ <@ba.vup>+{usgs:0.0%}</>"
       },
       {
@@ -567,11 +567,11 @@
     "decoDesc": "Cực phẩm của Tập Đoàn Endfield. Rất nhiều đơn vị đã được triển khai trong Cuộc Thám Hiểm Vùng Cực. Những Đơn Vị Thuật Pháp này được phủ lớp sơn vàng kim nổi bật, giúp dễ dàng nhận diện ngay cả giữa bão tuyết dày đặc.",
     "skills": [
       {
-        "name": "Tăng Cường Ý Chí [Lớn]",
+        "name": "Ý Chí [Lớn]",
         "description": "Ý Chí <@ba.vup>+{will}</>"
       },
       {
-        "name": "Tăng Cường ST Điện [Lớn]",
+        "name": "ST Điện [Lớn]",
         "description": "ST Điện Gây Ra <@ba.vup>+{electrondam:0.0%}</>"
       },
       {
@@ -586,16 +586,54 @@
     "decoDesc": "Được phát triển dựa trên tác phẩm đoạt giải trong cuộc thi thiết kế ý tưởng do Tập Đoàn Mieszko tổ chức. Khả năng gia tốc đạn thể với độ chính xác đến cấp micro giây cùng hiệu suất lơ lửng vượt trội là thành quả từ việc kết hợp hiểu biết độc đáo của nhà thiết kế về môi trường không trọng lực.",
     "skills": [
       {
-        "name": "Tăng Cường Trí Tuệ [Lớn]",
+        "name": "Trí Tuệ [Lớn]",
         "description": "Trí Tuệ <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Tăng Hiệu Quả Nhận Tuyệt Kỹ [Lớn]",
+        "name": "Hiệu Quả Nhận TK [Lớn]",
         "description": "Hiệu Quả Nhận Tuyệt Kỹ <@ba.vup>+{usgs:0.0%}</>"
       },
       {
         "name": "Hiệu Lực: Vòng Lặp Phản Hồi",
         "description": "ST Tự Nhiên Gây Ra <@ba.vup>+{nature_dmg_up:0.0%}</>.\nKhi người thi triển áp dụng <#ba.spellvul>Yếu Hóa Thuật Pháp</> hoặc <#ba.spellinflict>Nhiễm Thuật Pháp</> bằng KN liên hoàn, người thi triển nhận Tấn Công <@ba.vup>+{atk_up:0.0%}</>, trong khi các cán viên khác trong đội nhận Tấn Công<@ba.vup>+{atk_up2:0.0%}</>. Thời gian hiệu lực: {duration:0} giây.\n<@ba.info>Số tầng tối đa của hiệu ứng cùng tên: {max_stack:0}. Thời gian duy trì của mỗi tầng được tính riêng.</>"
+      }
+    ]
+  },
+  "umbraOfFrigidEventide": {
+    "name": "Umbra of Frigid Eventide",
+    "description": "Mặt trời còn chưa mọc.\nNgười chiến binh của Bộ Tộc Hàn Tùng đã thức giấc. Trong tay anh là một mẩu bút than ngắn ngủn, còn tờ giấy bên dưới chỉ nhỉnh hơn lòng bàn tay đôi chút.\nTừng khoảng trống đều quý giá, bởi anh còn rất nhiều điều muốn viết. Anh cẩn thận nắn nót từng chữ, viết đến đâu khẽ đọc thành tiếng đến đó. Dẫu đã cố hạ giọng hết mức, người nằm bên cạnh vẫn cựa mình. Người phụ nữ hé bên mắt còn lại, đạp anh một cú không chút nương tay rồi khàn giọng quát lạnh: \"Im đi.\"\nNgười chiến binh nhoẻn miệng cười ngây ngô với cô, rồi tiếp tục nhẩm những dòng mình đã viết trong đầu: \"Mẹ thân yêu, băng đã tan rồi, bọn con đã nhìn thấy rêu xanh. Sờ vào thích lắm. Trông cũng đẹp lắm. Con nghĩ chỗ mẹ chắc đã vào xuân. Dòng sông dưới căn nhà trên cây hẳn đang chảy trở lại, mang nước về tưới cho cây cối trong vườn. Đàn thú lông vũ chắc cũng đã bay về làm tổ dưới mái nhà. Mỗi khi mẹ mở cửa sổ, chúng sẽ vỗ cánh bay vào nhà để có thể đậu trên tay mẹ. Có lẽ rồi sẽ đến một ngày, con cũng có thể bay về bên mẹ như những cánh chim ấy, ở lại cạnh mẹ, tại nơi mùa xuân kéo dài mãi mãi, nơi được gọi là…\"\nĐó là một từ mẹ anh vẫn thường nhắc đến. Anh nhớ từ ấy, nhưng lại quên mất hình hài của nó trên trang giấy. Không còn cách nào khác, anh đành dừng bút, đưa mắt nhìn người phụ nữ với vẻ bất lực cùng lời cầu cứu chân thành.\nGiọng người phụ nữ tuy cáu kỉnh, nhưng vẫn không giấu được chút tò mò: \"Sao không viết tiếp?\"\n\"Có một từ… nhưng tôi không biết viết.\"\n\"Từ gì?\"\n\"Th-Thánh Địa.\"\n\"Cậu chưa từng học à?\"\n\"Mẹ đã rời xa tôi trước khi kịp dạy tôi chữ ấy.\"\n\"Ồồồồ…\" Người phụ nữ kéo dài giọng, như thể bực mình đến chẳng biết nói sao. Sau đó, cô giơ tay lên, vạch giữa không trung những đường nét đan cài, khi cong khi thẳng, tựa những vệt bay do một cánh chim đang lao vun vút để lại.\nBan đầu, cô viết chữ ấy rất nhanh. Đôi mắt mỏi mệt của người chiến binh gần như không sao theo kịp đầu ngón tay cô. Thấy đôi mày anh cau chặt, cô khẽ bật cười rồi viết lại lần nữa, lần này chậm rãi hơn.\nMẩu bút than trong tay người chiến binh, đầu ngón tay người phụ nữ, những nét than trên trang giấy và hình chữ giữa không trung cùng hợp thành một từ. Từng nét dần ghép lại, tựa một cánh chim chầm chậm sà xuống mặt đất.\nTờ giấy giờ đã kín chữ. Anh mỉm cười mãn nguyện, rồi ném nó vào đống lửa trại. Tờ giấy cháy lên với những tiếng lép bép. Ánh lửa chập chờn nhảy múa trong mắt người phụ nữ, rồi lịm đi nơi khóe mắt cô.\n\"Cậu tin rằng lá thư ấy sẽ chẳng bao giờ đến được với bà ấy sao?\"\nNgười chiến binh gật đầu. Người phụ nữ khẽ thở dài. Sự im lặng phủ xuống trong giây lát, trước khi cô bất chợt lên tiếng lần nữa: \"Cậu tên gì, nhóc con?\"\n\"Björn, người Hàn Tùng.\"\nNgười phụ nữ lần giở ký ức, chậm rãi thốt lên từng mảnh vụn: \"Bộ Tộc Hàn Tùng… À phải, ta nhớ Tộc Trưởng của các cậu… Một chiến binh quả cảm, rất đáng kính phục. Bà ấy đã giữ trọn tín điều của người chiến binh cho đến khi ngã xuống.\"\n\"Tôi thật may mắn vì đã được lớn lên bên bà ấy.\" Gương mặt người chiến binh ửng đỏ. Anh gật đầu với cô, ánh mắt đầy biết ơn.\n\"Nguyện bà ấy được trở về bên Sami, miền đất của mùa xuân vĩnh hằng, nơi được gọi là…\"\n\"Thánh Cảnh.\" Người chiến binh đồng thanh thốt lên cùng cô. Người phụ nữ mỉm cười.\nMặt trời vẫn chưa mọc, nhưng tiếng tù và đã vang dậy. Từ phía đường chân trời, Aggeloi hiện ra, cuồn cuộn tiến về tiền tuyến như một đại quân.\nNgười chiến binh Hàn Tùng đã đứng bật dậy. Anh cầm lấy ngọn giáo, cõng người phụ nữ lên lưng. Cùng những người lính, anh xoay người đối mặt với triều Aggeloid đang ập tới.\nPhía sau họ, ngọn lửa nuốt chửng tờ giấy. Những tàn lửa lẻ loi thoát khỏi đầu lưỡi lửa chập chờn, phiêu dạt về một chốn xa xăm.",
+    "decoDesc": "Một vũ khí do Pháo Đài Forgefane rèn đúc. Vũ khí sở hữu phần khung vỏ thuôn gọn, liền mạch, cùng lớp phủ đặc chế dành cho các hoạt động tác chiến trong môi trường thiếu sáng.",
+    "skills": [
+      {
+        "name": "Nhanh Nhẹn [Lớn]",
+        "description": "Nhanh Nhẹn <@ba.vup>+{agi}</>"
+      },
+      {
+        "name": "Tấn Công [Lớn]",
+        "description": "Tấn Công <@ba.vup>+{atk:0.0%}</>"
+      },
+      {
+        "name": "Kích Nổ: Bản Năng Thợ Săn",
+        "description": "ST Thuật Pháp Gây Ra <@ba.vup>+{spell_dmg_up:0.0%}</>.\nSau khi người thi triển kích hoạt KN chiến đấu, người đó nhận Công Phép <@ba.vup>+{phy_spell_up:0}</> và {wind_grant:0} cộng dồn <@ba.key>Phong Thể</> trong {wind_duration:0} giây.\n<@ba.info>Toàn bộ hiệu ứng này không thể cộng dồn. Số cộng dồn <@ba.key>Phong Thể</> tối đa: {wind_grant:0}.</>\nKhi người thi triển tung ra một <#ba.spellburst>Bùng Nổ Thuật Pháp</>, <#ba.consume>tiêu hao</> 1 cộng dồn <@ba.key>Phong Thể</> để tăng ST Thuật Pháp Gây Ra <@ba.vup>+{spell_dmg_up2:0.0%}</> cho người thi triển trong {spell_dmg_duration:0} giây.\n<@ba.info>Hiệu ứng này có thể đạt tối đa {spell_dmg_max_stack:0} cộng dồn. Thời gian hiệu lực của mỗi cộng dồn được tính riêng. Hiệu ứng chỉ kích hoạt 1 lần mỗi 0,1 giây.</>"
+      }
+    ]
+  },
+  "sufferingsEnd": {
+    "name": "Suffering's End",
+    "description": "\"Khổ đau rồi sẽ chấm dứt. Bình yên sẽ đến... với mọi Sarkaz...\"\nLão Sarkaz ngẫm đi ngẫm lại những lời ấy trong lúc lau chùi Đơn Vị Thuật Pháp trên tay. Xung quanh ông, dòng du khách đi cùng người thân và bạn bè nối nhau không dứt. Những Lich dùng Thuật Pháp dệt nên các màn pháo hoa rực rỡ, còn lũ trẻ thì hí hửng trèo lên người các chiến binh Gargoyle. Bất kể tín ngưỡng, bộ tộc hay chủng tộc, tất cả đều hân hoan reo mừng - hệt như ngày Seš'qa cất mình lên bầu trời, và như mọi Ngày Hội Mở kỷ niệm chiến tranh kết thúc sau đó.\n\"Đây... chính là 'Hồi Kết Khổ Đau' mà chúng ta hằng mong đợi sao...?\n\"Lão Sarkaz nhanh chóng thu dọn hành trang. Ông đã dành dụm đủ T-Cred để đi qua nhiều thành phố thuộc Vành Đai Văn Minh. Suốt bao năm, ông vẫn ấp ủ kế hoạch rời Seš'qa, lên đường thăm thú Vành Đai Văn Minh.\n\nHành trình diễn ra thuận lợi, không chút sóng gió - cho đến ngày hôm ấy. Ông đang nằm trên một tảng đá khổng lồ, ngước nhìn trời sao, thì chiếc ấm pha cà phê Originium đột ngột tắt ngúm với một tiếng \"tách\" giòn vang. Ban đầu, ông còn ngơ ngác chưa hiểu chuyện gì, cho đến khi nghe thấy tiếng nổ, tiếng quát tháo và những tiếng thét kinh hoàng.\nĐôi mắt lập tức trở nên cảnh giác, ông nhìn về phía làn hỏa sương đang lan rộng. Một gia đình ba người đang cuống cuồng chạy bộ giữa vùng hoang dã, phía sau là một toán chừng ba mươi bóng người lố nhố, tay lăm lăm vũ khí, ráo riết đuổi theo. Landbreaker. Lão Sarkaz dõi theo cuộc truy đuổi... rồi không làm gì cả. Ông lại ngả lưng xuống tảng đá.\n\nÔng đã quá già, mà cũng quá đỗi tầm thường. Ông không phải Gargoyle với thể chất vững chãi như thành lũy, không phải Lich nắm giữ những Thuật Pháp bí hiểm và chết chóc, càng không phải Nachzehrer sở hữu thứ sức mạnh kinh hoàng đến mức khó lòng tin nổi. Ông chỉ là một Sarkaz lai bình thường, may mắn sống sót qua Cuộc Chiến Aggeloi, Chiến Tranh Nhục Nhã và Chiến Tranh Jakubine- cuộc chiến đã đánh gục Chiến Thần Vùng Hoang. Ngoài vài mánh khóe vụn vặt để giữ mạng, ông chẳng biết gì khác.\nThế nhưng chưa đầy mười giây sau, lão Sarkaz đã rút Đơn Vị Thuật Pháp, bật người nhảy xuống khỏi tảng đá lớn. Ông nhớ đến vị Người Nói điên rồ năm nào - người đã đứng trước toàn thể Sarkaz, đọc một bài diễn văn và trao cho họ một lời hứa. Một bài diễn văn hiển nhiên chẳng phải do chính bà tự viết. Dẫu vậy, có một điều chưa từng thay đổi. Nếu muốn khổ đau chấm dứt, ắt phải có người đứng ra làm điều gì đó.\nÔng khẽ lau Đơn Vị Thuật Pháp. Trên lớp vỏ bóng loáng phản chiếu gương mặt của một Sarkaz đã già nua hơn thuở trước quá đỗi.\n\nMột mũi tên cắm phập vào người đàn ông đang ôm con chạy trốn. Cả hai cùng đổ gục xuống đất. Người phụ nữ vứt bỏ thiết bị liên lạc, cố kéo chồng mình đến nơi an toàn. Nhưng vô ích. Bọn Landbreaker đã đuổi kịp họ. Cả vùng hoang dã bỗng lặng phắc trong đêm.\nBọn chúng tru hú, cười rộ lên, từ bốn phía khép vòng vây quanh gia đình đang nằm bất lực dưới đất. Chẳng chút thương xót, chúng đồng loạt giương vũ khí. Người đàn ông và người phụ nữ tuyệt vọng lấy thân mình che chắn cho đứa trẻ. Ánh đuốc lóe lên trên những lưỡi đao, đầu tên nỏ... và cả những giọt nước mắt trên gương mặt đứa bé đáng thương.\nĐột nhiên, một bóng đen khổng lồ với đôi sừng hiện ra phía sau bọn Landbreaker. Không một tiếng động. Không một lời cảnh báo. Một màn hắc ám còn đen hơn cả bóng đêm tràn ra, bao phủ toàn bộ khung cảnh. Nó lần lượt nuốt chửng từng tên Landbreaker. Chúng gào rú trong tuyệt vọng khi sinh mệnh lần lượt bị dập tắt. Những kẻ còn lại kinh hãi tột độ. Chúng cuống cuồng nhìn quanh, cố tìm xem đòn tập kích vô thanh vô tức kia đến từ đâu. Nhưng trước khi chúng tìm thấy kẻ ra tay, những lời theo gió đêm vọng đến đã tìm thấy chúng trước. Một giọng nói cất lên bằng cổ ngữ Sarkaz, già nua và khàn đục —\n\"Khổ đau của ta đã chấm dứt. Còn của các ngươi... chỉ vừa mới bắt đầu.\"",
+    "decoDesc": "Một trong những Đơn Vị Thuật Pháp kỳ lạ đến từ Witching Hour. Dường như nó được truyền vào một dạng Thuật Pháp Originium hết sức khác thường, mang đến cho người sử dụng cảm giác an tâm sâu sắc đến mức khó lòng lý giải.",
+    "skills": [
+      {
+        "name": "Nhanh Nhẹn [Lớn]",
+        "description": "Nhanh Nhẹn <@ba.vup>+{agi}</>"
+      },
+      {
+        "name": "ST Tự Nhiên [Lớn]",
+        "description": "ST Tự Nhiên Gây Ra <@ba.vup>+{naturaldam:0.0%}</>"
+      },
+      {
+        "name": "Kích Nổ: Bình Minh Đêm Dài",
+        "description": "Công Phép <@ba.vup>+{phy_spell_up:0}</>.\nKhi người thi triển gây <#ba.spellburst>Bùng Nổ Thuật Pháp</>, ST Tự Nhiên Gây Ra tăng <@ba.vup>+{nature_dmg_up:0.0%}</> trong {duration:0} giây.\n<@ba.info>Hiệu ứng này cộng dồn tối đa {max_stack:0} tầng. Thời lượng của mỗi tầng hiệu ứng sẽ được tính riêng. Hiệu ứng chỉ kích hoạt 1 lần mỗi 0,1 giây.</>\nKhi đạt {max_stack:0} tầng, hiệu ứng nói trên tăng thêm <@ba.vup>+{nature_dmg_up2:0.0%}</> ST Tự Nhiên gây ra.\n<@ba.info>Hiệu ứng này không thể cộng dồn.</>"
       }
     ]
   },
@@ -605,11 +643,11 @@
     "decoDesc": "Một trong những vũ khí tiên tiến được Endfield sản xuất cho cán viên của họ. Loại vũ khí nhẹ và hợp lý này cân bằng tốt và sẽ khiến nhiều người nhớ đến những cây giáo tiêu chuẩn từng được cán viên hệ Tiên phong của Rhodes Island sử dụng.",
     "skills": [
       {
-        "name": "Tăng Cường Nhanh Nhẹn [Nhỏ]",
+        "name": "Nhanh Nhẹn [Nhỏ]",
         "description": "Nhanh Nhẹn <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Tăng Cường Tấn Công [Nhỏ]",
+        "name": "Tấn Công [Nhỏ]",
         "description": "Tấn Công <@ba.vup>+{atk:0.0%}</>"
       },
       {
@@ -624,11 +662,11 @@
     "decoDesc": "Một cây giáo thử nghiệm do Tập Đoàn Endfield thiết kế với số lượng sản xuất rất hạn chế. Vũ khí này có thiết kế dạng mô-đun để hỗ trợ tháo dỡ và lắp ráp lại trong điều kiện chiến trường phức tạp và khắc nghiệt.",
     "skills": [
       {
-        "name": "Tăng Cường Sức Mạnh [Vừa]",
+        "name": "Sức Mạnh [Vừa]",
         "description": "Sức Mạnh <@ba.vup>+{str}</>"
       },
       {
-        "name": "Tăng Hiệu Quả Nhận Tuyệt Kỹ [Vừa]",
+        "name": "Hiệu Quả Nhận TK [Vừa]",
         "description": "Hiệu Quả Nhận Tuyệt Kỹ <@ba.vup>+{usgs:0.0%}</>"
       },
       {
@@ -643,11 +681,11 @@
     "decoDesc": "Một sản phẩm cơ bản của quy trình sản xuất tùy chỉnh của RAYTHEAN. Vũ khí này được thiết kế theo giáo quân sự tiêu chuẩn, có nhiều chức năng đặc biệt đa dạng và các linh kiện thẩm mỹ có thể tùy chỉnh.",
     "skills": [
       {
-        "name": "Tăng Cường Ý Chí [Vừa]",
+        "name": "Ý Chí [Vừa]",
         "description": "Ý Chí <@ba.vup>+{will}</>"
       },
       {
-        "name": "Tăng Cường ST Điện [Vừa]",
+        "name": "ST Điện [Vừa]",
         "description": "ST Điện Gây Ra <@ba.vup>+{electrondam:0.0%}</>"
       },
       {
@@ -662,11 +700,11 @@
     "decoDesc": "Một vũ khí đời cũ từ Trung Tâm Hỗ Trợ Northmarch, nổi tiếng là cực kỳ khó sử dụng. Bù lại, sức phá hoại của nó lại đáng kinh ngạc. Trọng lượng đồ sộ khiến phần lớn người dùng không mấy mặn mà, nhưng với những ai đủ khỏe để vung nó và yêu thích các chiêu thức mạnh mẽ, phô trương, món vũ khí này lại được đánh giá khá cao.",
     "skills": [
       {
-        "name": "Tăng Cường Nhanh Nhẹn [Lớn]",
+        "name": "Nhanh Nhẹn [Lớn]",
         "description": "Nhanh Nhẹn <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Tăng Hiệu Quả Nhận Tuyệt Kỹ [Lớn]",
+        "name": "Hiệu Quả Nhận TK [Lớn]",
         "description": "Hiệu Quả Nhận Tuyệt Kỹ <@ba.vup>+{usgs:0.0%}</>"
       },
       {
@@ -681,11 +719,11 @@
     "decoDesc": "Một cây giáo tiêu chuẩn do Pháo Đài Forgefane sản xuất để trang bị cho binh lính thường. Được trang bị một đầu cực kỳ sắc bén được thiết kế riêng để chiến đấu với Aggeloi.",
     "skills": [
       {
-        "name": "Tăng Cường Ý Chí [Nhỏ]",
+        "name": "Ý Chí [Nhỏ]",
         "description": "Ý Chí <@ba.vup>+{will}</>"
       },
       {
-        "name": "Công Phép [Nhỏ]",
+        "name": "ST Thuật Pháp [Nhỏ]",
         "description": "ST Thuật Pháp Gây Ra <@ba.vup>+{spelldam:0.0%}</>"
       },
       {
@@ -700,7 +738,7 @@
     "decoDesc": "Một trong những vũ khí cán viên tiêu chuẩn của Tập Đoàn Endfield. Vũ khí này được thiết kế riêng bởi Kỹ Sư Cấp Cao của Kho Vũ Khí Endfield, Opero. Nhờ thiết kế công thái học, ngay cả những cán viên Endfield mới được đào tạo cũng có thể sử dụng hiệu quả.",
     "skills": [
       {
-        "name": "Tăng Cường Thuộc Tính Chính [Nhỏ]",
+        "name": "Thuộc Tính Chính [Nhỏ]",
         "description": "Thuộc tính chính <@ba.vup>+{mainattr}</>"
       },
       {
@@ -715,11 +753,11 @@
     "decoDesc": "Một sản phẩm tầm trung của Tập Đoàn Mieszko. Cây giáo này hiếm nhưng lại được săn đón nhiều, nhờ thiết kế cổ điển làm nó giống với bu lông Quái Bắn Đá cũng như hiệu suất chiến đấu hiệu quả của nó.",
     "skills": [
       {
-        "name": "Tăng Cường Nhanh Nhẹn [Lớn]",
+        "name": "Nhanh Nhẹn [Lớn]",
         "description": "Nhanh Nhẹn <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Tăng Cường ST Vật Lý [Lớn]",
+        "name": "ST Vật Lý [Lớn]",
         "description": "ST Vật Lý Gây Ra <@ba.vup>+{phydam:0.0%}</>"
       },
       {
@@ -734,11 +772,11 @@
     "decoDesc": "Một vũ khí thử nghiệm được sản xuất theo tiêu chuẩn cao nhất của Trung Tâm Hỗ Trợ Northmarch. Nguyên mẫu được thiết kế bởi Trung Tâm Nghiên Cứu Hàng Không Vũ Trụ hiện đã giải thể. Một loạt động cơ phản lực nén Originium mang lại cho cây thương này hiệu suất tăng áp.",
     "skills": [
       {
-        "name": "Tăng Cường Thuộc Tính Chính [Lớn]",
+        "name": "Thuộc Tính Chính [Lớn]",
         "description": "Thuộc tính chính <@ba.vup>+{mainattr}</>"
       },
       {
-        "name": "Tăng Cường Tấn Công [Lớn]",
+        "name": "Tấn Công [Lớn]",
         "description": "Tấn Công <@ba.vup>+{atk:0.0%}</>"
       },
       {
@@ -753,11 +791,11 @@
     "decoDesc": "Một cây giáo thử nghiệm do Cục Kiếm Sĩ Hongshan phát triển. Cán của vũ khí được rèn bằng hợp kim đặc biệt để đạt được cả độ bền và khả năng phục hồi.",
     "skills": [
       {
-        "name": "Tăng Cường Nhanh Nhẹn [Lớn]",
+        "name": "Nhanh Nhẹn [Lớn]",
         "description": "Nhanh Nhẹn <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Tăng Cường ST Vật Lý [Lớn]",
+        "name": "ST Vật Lý [Lớn]",
         "description": "ST Vật Lý Gây Ra <@ba.vup>+{phydam:0.0%}</>"
       },
       {
@@ -772,11 +810,11 @@
     "decoDesc": "Một vũ khí tiêu chuẩn do Tập Đoàn Endfield sản xuất. Thiết kế được thực hiện bởi Nhóm Tạo Mẫu Sáng Tạo do Kỹ Sư Kho Vũ Khí Cao Cấp Opero thành lập. Người sử dụng có thể tự do điều chỉnh mô-đun mũi nhọn của mình.",
     "skills": [
       {
-        "name": "Tăng Cường Ý Chí [Vừa]",
+        "name": "Ý Chí [Vừa]",
         "description": "Ý Chí <@ba.vup>+{will}</>"
       },
       {
-        "name": "Tăng Cường ST Vật Lý [Vừa]",
+        "name": "ST Vật Lý [Vừa]",
         "description": "ST Vật Lý Gây Ra <@ba.vup>+{phydam:0.0%}</>"
       },
       {
@@ -791,11 +829,11 @@
     "decoDesc": "Một dòng sản phẩm cao cấp đến từ Tập Đoàn Mieszko, được chế tác riêng theo đơn đặt hàng dành cho những nghệ sĩ biểu diễn nổi tiếng. Thiết kế tựa micro vừa mộng mơ vừa nổi bật đến chói mắt, kết hợp cùng hiệu năng và uy lực vượt trội. Món vũ khí này đã để lại ấn tượng sâu sắc với mọi người thử nghiệm từng cầm nó trên tay.",
     "skills": [
       {
-        "name": "Tăng Cường Ý Chí [Lớn]",
+        "name": "Ý Chí [Lớn]",
         "description": "Ý Chí <@ba.vup>+{will}</>"
       },
       {
-        "name": "Tăng Tốc Hiệu Quả Điều Trị [Lớn]",
+        "name": "Hiệu Quả Điều Trị [Lớn]",
         "description": "Hiệu Quả Điều Trị <@ba.vup>+{heal:0.0%}</>."
       },
       {
@@ -810,11 +848,11 @@
     "decoDesc": "Một vũ khí cán dài do Witching Hour chế tạo. Nhân dịp Ngày Hội Mở Seš'qa, một phiên bản kỷ niệm đặc biệt của vũ khí này đã được ra mắt. Thân giáo được xử lý bằng kỹ thuật mạ đặc biệt, tạo nên lớp hoàn thiện vừa bền bỉ trong thực chiến, vừa tinh xảo về thẩm mỹ.",
     "skills": [
       {
-        "name": "Tăng Cường Nhanh Nhẹn [Lớn]",
+        "name": "Nhanh Nhẹn [Lớn]",
         "description": "Nhanh Nhẹn <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Tăng Cường ST Nhiệt [Lớn]",
+        "name": "ST Nhiệt [Lớn]",
         "description": "ST Nhiệt Gây Ra <@ba.vup>+{firedam:0.0%}</>"
       },
       {
@@ -829,11 +867,11 @@
     "decoDesc": "Một trong những sản phẩm cao cấp nhất của Tập Đoàn Mieszko. Mũi giáo được chế tạo từ hợp kim đặc biệt, sở hữu độ bền đáng kinh ngạc cùng phần lưỡi sắc bén như dao cạo. Những vũ khí như thế này vừa thanh nhã, vừa cao quý, lại có chi phí chế tác vô cùng đắt đỏ, nên thường được sử dụng bởi những người muốn khẳng định uy thế của mình.",
     "skills": [
       {
-        "name": "Tăng Cường Ý Chí [Lớn]",
+        "name": "Ý Chí [Lớn]",
         "description": "Ý Chí <@ba.vup>+{will}</>"
       },
       {
-        "name": "Tăng Tốc Hiệu Quả Điều Trị [Lớn]",
+        "name": "Hiệu Quả Điều Trị [Lớn]",
         "description": "Hiệu Quả Điều Trị <@ba.vup>+{heal:0.0%}</>."
       },
       {
@@ -848,7 +886,7 @@
     "decoDesc": "Một trong những vũ khí cán viên tiêu chuẩn của Tập Đoàn Endfield. Vũ khí này được thiết kế bởi Kỹ Sư Peco của Kho Vũ Khí Endfield. Thành thạo sử dụng đạn khắc và súng không còn là kỹ năng độc quyền của Sankta nữa.",
     "skills": [
       {
-        "name": "Tăng Cường Thuộc Tính Chính [Nhỏ]",
+        "name": "Thuộc Tính Chính [Nhỏ]",
         "description": "Thuộc tính chính <@ba.vup>+{mainattr}</>"
       },
       {
@@ -863,11 +901,11 @@
     "decoDesc": "Một sản phẩm tầm trung của Tập Đoàn Mieszko. Súng lục này là sự kết hợp hoàn hảo giữa thiết kế Lateran cổ điển với kết cấu công nghiệp hiện đại. Lớp phủ kim loại màu xanh lam tạo nên nét hoàn thiện cho tác phẩm nghệ thuật độc đáo này.",
     "skills": [
       {
-        "name": "Tăng Cường Trí Tuệ [Nhỏ]",
+        "name": "Trí Tuệ [Nhỏ]",
         "description": "Trí Tuệ <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Tăng Cường Tấn Công [Nhỏ]",
+        "name": "Tấn Công [Nhỏ]",
         "description": "Tấn Công <@ba.vup>+{atk:0.0%}</>"
       },
       {
@@ -882,11 +920,11 @@
     "decoDesc": "Khẩu súng tiêu chuẩn do Pháo Đài Forgefane sản xuất để trang bị cho binh lính thông thường của Hội Lời Thề Thép. Loại vũ khí này cực kỳ phổ biến do cơ chế khai hỏa đơn giản và sức sát thương đáng kinh ngạc.",
     "skills": [
       {
-        "name": "Tăng Cường Sức Mạnh [Nhỏ]",
+        "name": "Sức Mạnh [Nhỏ]",
         "description": "Sức Mạnh <@ba.vup>+{str}</>"
       },
       {
-        "name": "Công Phép [Nhỏ]",
+        "name": "ST Thuật Pháp [Nhỏ]",
         "description": "ST Thuật Pháp Gây Ra <@ba.vup>+{spelldam:0.0%}</>"
       },
       {
@@ -901,11 +939,11 @@
     "decoDesc": "Công Nghiệp RAYTHEAN đã phát triển loại súng lục năng lượng cao này để sử dụng ở vùng tiền tuyến. Độ tin cậy tốt trong môi trường khắc nghiệt khiến đây trở thành vũ khí tiêu chuẩn trong số những nhà thám hiểm vùng hoang địa.",
     "skills": [
       {
-        "name": "Tăng Cường Sức Mạnh [Vừa]",
+        "name": "Sức Mạnh [Vừa]",
         "description": "Sức Mạnh <@ba.vup>+{str}</>"
       },
       {
-        "name": "Tăng Cường ST Nhiệt [Vừa]",
+        "name": "ST Nhiệt [Vừa]",
         "description": "ST Nhiệt Gây Ra <@ba.vup>+{firedam:0.0%}</>"
       },
       {
@@ -920,11 +958,11 @@
     "decoDesc": "Một ý tưởng mới lạ của năm do Tập Đoàn Mieszko thực hiện. Hãy cùng tôn vinh Người Chế Ngự vĩ đại đã dẫn dắt chúng ta trong hành trình bất tận xuyên qua Talos-II.",
     "skills": [
       {
-        "name": "Tăng Cường Trí Tuệ [Lớn]",
+        "name": "Trí Tuệ [Lớn]",
         "description": "Trí Tuệ <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Tăng Cường ST Băng [Lớn]",
+        "name": "ST Băng [Lớn]",
         "description": "ST Băng Gây Ra <@ba.vup>+{crystdam:0.0%}</>"
       },
       {
@@ -939,11 +977,11 @@
     "decoDesc": "Một dự án theo hợp đồng do Phòng Thí Nghiệm Æthertech Di Động phát triển. Những người thợ thủ công lành nghề đã mạnh dạn trang bị cho vũ khí này lớp lót bằng đá di tích, trên đó có khắc những họa tiết đặc biệt.",
     "skills": [
       {
-        "name": "Tăng Cường Nhanh Nhẹn [Vừa]",
+        "name": "Nhanh Nhẹn [Vừa]",
         "description": "Nhanh Nhẹn <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Công Phép [Vừa]",
+        "name": "ST Thuật Pháp [Vừa]",
         "description": "ST Thuật Pháp Gây Ra <@ba.vup>+{spelldam:0.0%}</>"
       },
       {
@@ -958,11 +996,11 @@
     "decoDesc": "Những khẩu súng do Cục Kiếm Sĩ Hongshan phát triển. Để tuân theo triết lý thiết kế cơ bản của Học Viện vũ khí, chúng được tối ưu hóa trọng lượng cũng như cải thiện độ bám và khả năng thao tác.",
     "skills": [
       {
-        "name": "Tăng Cường Nhanh Nhẹn [Lớn]",
+        "name": "Nhanh Nhẹn [Lớn]",
         "description": "Nhanh Nhẹn <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Tăng Cường ST Băng [Lớn]",
+        "name": "ST Băng [Lớn]",
         "description": "ST Băng Gây Ra <@ba.vup>+{crystdam:0.0%}</>"
       },
       {
@@ -977,11 +1015,11 @@
     "decoDesc": "Một sản phẩm trứ danh của Trung Tâm Hỗ Trợ Northmarch thể hiện hoàn hảo phong cách và ưu điểm của vũ khí Northmarch. Có hỏa lực hủy diệt, độ tin cậy tuyệt đối cùng cảm giác cầm nắm và độ giật cực kỳ tệ.",
     "skills": [
       {
-        "name": "Tăng Cường Thuộc Tính Chính [Lớn]",
+        "name": "Thuộc Tính Chính [Lớn]",
         "description": "Thuộc tính chính <@ba.vup>+{mainattr}</>"
       },
       {
-        "name": "Tăng Cường Tỷ Lệ Bạo Kích [Lớn]",
+        "name": "Tỷ Lệ Bạo Kích [Lớn]",
         "description": "Tỷ Lệ Bạo Kích <@ba.vup>+{crirate:0.0%}</>"
       },
       {
@@ -996,11 +1034,11 @@
     "decoDesc": "Khẩu súng đặc biệt do Công Nghiệp RAYTHEAN sản xuất. Loại vũ khí thử nghiệm này cực kỳ khó sử dụng. Chỉ có một số lượng hạn chế các nguyên mẫu được tung ra thị trường vũ khí.",
     "skills": [
       {
-        "name": "Tăng Cường Thuộc Tính Chính [Lớn]",
+        "name": "Thuộc Tính Chính [Lớn]",
         "description": "Thuộc tính chính <@ba.vup>+{mainattr}</>"
       },
       {
-        "name": "Công Phép [Lớn]",
+        "name": "ST Thuật Pháp [Lớn]",
         "description": "ST Thuật Pháp Gây Ra <@ba.vup>+{spelldam:0.0%}</>"
       },
       {
@@ -1015,11 +1053,11 @@
     "decoDesc": "Một trong những sản phẩm phổ biến nhất của Tập Đoàn Mieszko thuộc dòng sản phẩm Hợp Tác Với Nghệ Sĩ táo bạo. Những khẩu súng này sở hữu kiểu dáng tuyệt vời, xứng tầm với hiệu suất mạnh mẽ. Sự phổ biến của nó được chứng minh bằng mức giá cao cấp trên thị trường thứ cấp.",
     "skills": [
       {
-        "name": "Tăng Cường Trí Tuệ [Lớn]",
+        "name": "Trí Tuệ [Lớn]",
         "description": "Trí Tuệ <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Tăng Cường Tỷ Lệ Bạo Kích [Lớn]",
+        "name": "Tỷ Lệ Bạo Kích [Lớn]",
         "description": "Tỷ Lệ Bạo Kích <@ba.vup>+{crirate:0.0%}</>"
       },
       {
@@ -1034,11 +1072,11 @@
     "decoDesc": "Những khẩu súng do Cục Kiếm Sĩ Hongshan phát triển. Được chế tạo từ vật liệu bền bỉ và đáng tin cậy với thiết kế đơn giản, đồng thời nhẹ và dễ mang theo. Rất hữu dụng trong nhiều môi trường và tình huống phức tạp.",
     "skills": [
       {
-        "name": "Tăng Cường Nhanh Nhẹn [Lớn]",
+        "name": "Nhanh Nhẹn [Lớn]",
         "description": "Nhanh Nhẹn <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Tăng Cường Tấn Công [Lớn]",
+        "name": "Tấn Công [Lớn]",
         "description": "Tấn Công <@ba.vup>+{atk:0.0%}</>"
       },
       {
@@ -1053,11 +1091,11 @@
     "decoDesc": "Một vũ khí tiêu chuẩn do Tập Đoàn Endfield sản xuất. Thiết kế được thực hiện bởi Nhóm Tạo Mẫu Sáng Tạo do Kỹ Sư Kho Vũ Khí Cao Cấp Opero thành lập. Vũ khí này được chế tạo bằng vật liệu nhẹ, thiết thực và bền.",
     "skills": [
       {
-        "name": "Tăng Cường Nhanh Nhẹn [Vừa]",
+        "name": "Nhanh Nhẹn [Vừa]",
         "description": "Nhanh Nhẹn <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Tăng Hiệu Quả Nhận Tuyệt Kỹ [Vừa]",
+        "name": "Hiệu Quả Nhận TK [Vừa]",
         "description": "Hiệu Quả Nhận Tuyệt Kỹ <@ba.vup>+{usgs:0.0%}</>"
       },
       {
@@ -1072,7 +1110,7 @@
     "decoDesc": "Một trong những vũ khí cán viên tiêu chuẩn của Tập Đoàn Endfield. Vũ khí này được thiết kế bởi Kỹ Sư Tarr của Kho Vũ Khí Endfield. Nó thường là vũ khí đầu tiên của nhiều cán viên ngoài hiện trường.",
     "skills": [
       {
-        "name": "Tăng Cường Thuộc Tính Chính [Nhỏ]",
+        "name": "Thuộc Tính Chính [Nhỏ]",
         "description": "Thuộc tính chính <@ba.vup>+{mainattr}</>"
       },
       {
@@ -1087,11 +1125,11 @@
     "decoDesc": "Một trong những vũ khí tiên tiến được Endfield sản xuất cho cán viên. Thanh kiếm có chuôi kiếm liền mạch và cơ chế lưu trữ năng lượng kích hoạt ứng suất để tăng khả năng sát thương.",
     "skills": [
       {
-        "name": "Tăng Cường Nhanh Nhẹn [Vừa]",
+        "name": "Nhanh Nhẹn [Vừa]",
         "description": "Nhanh Nhẹn <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Tăng Cường ST Vật Lý [Vừa]",
+        "name": "ST Vật Lý [Vừa]",
         "description": "ST Vật Lý Gây Ra <@ba.vup>+{phydam:0.0%}</>"
       },
       {
@@ -1106,11 +1144,11 @@
     "decoDesc": "CMột trong những vũ khí sắc bén do Witching Hour rèn. Quá trình nấu chảy đặc biệt đã tạo ra một lưỡi kiếm đỏ rực. Đơn Vị Thuật Pháp thực chất là một Originium hóa lỏng đặc biệt, trông giống như giọt máu nhỏ ra từ lò rèn.",
     "skills": [
       {
-        "name": "Tăng Cường Trí Tuệ [Lớn]",
+        "name": "Trí Tuệ [Lớn]",
         "description": "Trí Tuệ <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Tăng Cường Tấn Công [Lớn]",
+        "name": "Tấn Công [Lớn]",
         "description": "Tấn Công <@ba.vup>+{atk:0.0%}</>"
       },
       {
@@ -1125,11 +1163,11 @@
     "decoDesc": "Một trong những vũ khí do Pháo Đài Forgefane chế tạo. Thanh kiếm có thiết kế truyền thống khiến nó cực kỳ bền và chắc chắn. Lưỡi kiếm dày, nặng để lại vô số vết xước trên lớp băng vĩnh cửu khi tiền tuyến thay đổi theo thời gian.",
     "skills": [
       {
-        "name": "Tăng Cường Trí Tuệ [Vừa]",
+        "name": "Trí Tuệ [Vừa]",
         "description": "Trí Tuệ <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Tăng Hiệu Quả Nhận Tuyệt Kỹ [Vừa]",
+        "name": "Hiệu Quả Nhận TK [Vừa]",
         "description": "Hiệu Quả Nhận Tuyệt Kỹ <@ba.vup>+{usgs:0.0%}</>"
       },
       {
@@ -1144,11 +1182,11 @@
     "decoDesc": "Một trong những vũ khí tiên tiến được Endfield sản xuất cho các cán viên. Kết cấu mô-đun tối giản tạo ra một vũ khí nhẹ với sự cân bằng và khả năng xử lý tuyệt vời. Bản thân lưỡi kiếm cực kỳ bền.",
     "skills": [
       {
-        "name": "Tăng Cường Nhanh Nhẹn [Nhỏ]",
+        "name": "Nhanh Nhẹn [Nhỏ]",
         "description": "Nhanh Nhẹn <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Tăng Cường ST Vật Lý [Nhỏ]",
+        "name": "ST Vật Lý [Nhỏ]",
         "description": "ST Vật Lý Gây Ra <@ba.vup>+{phydam:0.0%}</>"
       },
       {
@@ -1163,11 +1201,11 @@
     "decoDesc": "Một sản phẩm tầm trung của Tập Đoàn Mieszko. Thanh kiếm sở hữu thiết kế sang trọng, tiên phong cùng chỉ số hiệu suất chi phí đáng kinh ngạc, khiến nó trở thành một trong những lựa chọn thời trang nhất năm tại Phòng Thương Mại Tổng Hợp Talos-II.",
     "skills": [
       {
-        "name": "Tăng Cường Trí Tuệ [Nhỏ]",
+        "name": "Trí Tuệ [Nhỏ]",
         "description": "Trí Tuệ <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Tăng Cường Tấn Công [Nhỏ]",
+        "name": "Tấn Công [Nhỏ]",
         "description": "Tấn Công <@ba.vup>+{atk:0.0%}</>"
       },
       {
@@ -1182,11 +1220,11 @@
     "decoDesc": "Một giải pháp Phòng Thủ cá nhân nhẹ thế hệ tiếp theo do Công Nghiệp RAYTHEAN phát hành. Thanh kiếm có lưỡi hợp kim đặc biệt và được một số \"chuyên gia\" ưa chuộng.",
     "skills": [
       {
-        "name": "Tăng Cường Trí Tuệ [Lớn]",
+        "name": "Trí Tuệ [Lớn]",
         "description": "Trí Tuệ <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Tăng Cường ST Nhiệt [Lớn]",
+        "name": "ST Nhiệt [Lớn]",
         "description": "ST Nhiệt Gây Ra <@ba.vup>+{firedam:0.0%}</>"
       },
       {
@@ -1201,11 +1239,11 @@
     "decoDesc": "Một thanh kiếm trang trí cao cấp của Cục Kiếm Sĩ Hongshan. Thanh kiếm này thường được dùng làm phần thưởng cho những cá nhân xuất sắc. Tên gọi này được quyết định sau quá trình bỏ phiếu nội bộ tại Học Viện Khoa Học Hongshan.",
     "skills": [
       {
-        "name": "Tăng Cường Thuộc Tính Chính [Lớn]",
+        "name": "Thuộc Tính Chính [Lớn]",
         "description": "Thuộc tính chính <@ba.vup>+{mainattr}</>"
       },
       {
-        "name": "Tăng Cường Tỷ Lệ Bạo Kích [Lớn]",
+        "name": "Tỷ Lệ Bạo Kích [Lớn]",
         "description": "Tỷ Lệ Bạo Kích <@ba.vup>+{crirate:0.0%}</>"
       },
       {
@@ -1220,11 +1258,11 @@
     "decoDesc": "Một sản phẩm cơ bản thuộc dòng Mở Đường do Trung Tâm Hỗ Trợ Northmarch phát hành. Kiếm Cắt Nhiệt Mk IV được chế tạo bằng các vật liệu chịu nhiệt đã được cấp bằng sáng chế, mang lại hiệu suất cắt cực mạnh. Nhận được đánh giá tích cực từ nhiều kỹ sư của Công Đoàn.",
     "skills": [
       {
-        "name": "Tăng Cường Ý Chí [Lớn]",
+        "name": "Ý Chí [Lớn]",
         "description": "Ý Chí <@ba.vup>+{will}</>"
       },
       {
-        "name": "Tăng Cường Tấn Công [Lớn]",
+        "name": "Tấn Công [Lớn]",
         "description": "Tấn Công <@ba.vup>+{atk:0.0%}</>"
       },
       {
@@ -1239,11 +1277,11 @@
     "decoDesc": "Một thanh kiếm cao cấp do Tập Đoàn Mieszko phát hành. Lưỡi kiếm được chạm khắc và điêu khắc tinh xảo cũng mang lại hiệu suất đáng tin cậy. Vũ khí này được giới tinh hoa Phòng Thương Mại Tổng Hợp Talos-II và tầng lớp thượng lưu đón nhận nồng nhiệt.",
     "skills": [
       {
-        "name": "Tăng Cường Thuộc Tính Chính [Lớn]",
+        "name": "Thuộc Tính Chính [Lớn]",
         "description": "Thuộc tính chính <@ba.vup>+{mainattr}</>"
       },
       {
-        "name": "Tăng Cường ST Vật Lý [Lớn]",
+        "name": "ST Vật Lý [Lớn]",
         "description": "ST Vật Lý Gây Ra <@ba.vup>+{phydam:0.0%}</>"
       },
       {
@@ -1258,11 +1296,11 @@
     "decoDesc": "Một trong những vũ khí từ lò nung của Pháo Đài Forgefane. Chuôi kiếm được chế tạo bằng quy trình kéo thanh đặc biệt để tăng cường khả năng giảm lực và độ bám. Bản thân lưỡi kiếm được rèn bằng một loại khoáng sản quý hiếm khai thác từ vùng hoang địa.",
     "skills": [
       {
-        "name": "Tăng Cường Thuộc Tính Chính [Lớn]",
+        "name": "Thuộc Tính Chính [Lớn]",
         "description": "Thuộc tính chính <@ba.vup>+{mainattr}</>"
       },
       {
-        "name": "Thưởng Công Phép [Lớn]",
+        "name": "Công Phép [Lớn]",
         "description": "Công Phép <@ba.vup>+{physpell:0}</>"
       },
       {
@@ -1277,11 +1315,11 @@
     "decoDesc": "Một vũ khí hạng nhất do Cục Kiếm Sĩ Hongshan sáng tạo và cũng là vũ khí duy nhất đạt được sự ưa chuộng đáng kể trên thị trường. Tuy nhiên, đã có rất nhiều bản sao xuất hiện ở hoang địa.",
     "skills": [
       {
-        "name": "Tăng Cường Nhanh Nhẹn [Vừa]",
+        "name": "Nhanh Nhẹn [Vừa]",
         "description": "Nhanh Nhẹn <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Tăng Cường ST Vật Lý [Vừa]",
+        "name": "ST Vật Lý [Vừa]",
         "description": "ST Vật Lý Gây Ra <@ba.vup>+{phydam:0.0%}</>"
       },
       {
@@ -1296,11 +1334,11 @@
     "decoDesc": "Một vũ khí được rèn từ lò nung của Pháo Đài Forgefane. Mặc dù đã trải qua nhiều lần đúc lại, lưỡi kiếm vẫn mang trong mình sức mạnh thống trị đáng sợ.",
     "skills": [
       {
-        "name": "Tăng Cường Ý Chí [Lớn]",
+        "name": "Ý Chí [Lớn]",
         "description": "Ý Chí <@ba.vup>+{will}</>"
       },
       {
-        "name": "Tăng Cường Tấn Công [Lớn]",
+        "name": "Tấn Công [Lớn]",
         "description": "Tấn Công <@ba.vup>+{atk:0.0%}</>"
       },
       {
@@ -1315,11 +1353,11 @@
     "decoDesc": "Một trong những vũ khí do Pháo Đài Forgefane rèn nên. Thanh kiếm tinh xảo và trang nhã này thường được Hội Lời Thề Thép dùng cho nghi lễ thay vì chiến đấu ở tiền tuyến. Tuy nhiên, lưỡi kiếm đã được mài bóng nhiều lần nên sắc bén như dao cạo.",
     "skills": [
       {
-        "name": "Tăng Cường Nhanh Nhẹn [Lớn]",
+        "name": "Nhanh Nhẹn [Lớn]",
         "description": "Nhanh Nhẹn <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Tăng Cường Tỷ Lệ Bạo Kích [Lớn]",
+        "name": "Tỷ Lệ Bạo Kích [Lớn]",
         "description": "Tỷ Lệ Bạo Kích <@ba.vup>+{crirate:0.0%}</>"
       },
       {
@@ -1334,11 +1372,11 @@
     "decoDesc": "Một thanh kiếm sắc như dao sinh ra từ hoang địa. Những thợ rèn khác nhau sẽ áp dụng lớp trang trí trên vũ khí theo những cách rất khác nhau.",
     "skills": [
       {
-        "name": "Tăng Cường Nhanh Nhẹn [Vừa]",
+        "name": "Nhanh Nhẹn [Vừa]",
         "description": "Nhanh Nhẹn <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Tăng Cường Tấn Công [Vừa]",
+        "name": "Tấn Công [Vừa]",
         "description": "Tấn Công <@ba.vup>+{atk:0.0%}</>"
       },
       {
@@ -1353,11 +1391,11 @@
     "decoDesc": "Một vũ khí tiêu chuẩn do Tập Đoàn Endfield sản xuất. Thiết kế được thực hiện bởi Nhóm Tạo Mẫu Sáng Tạo do Kỹ Sư Kho Vũ Khí Cao Cấp Opero thành lập. Chuôi kiếm có các mô-đun phụ trợ có thể tháo rời.",
     "skills": [
       {
-        "name": "Tăng Cường Nhanh Nhẹn [Vừa]",
+        "name": "Nhanh Nhẹn [Vừa]",
         "description": "Nhanh Nhẹn <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Tăng Cường Tấn Công [Vừa]",
+        "name": "Tấn Công [Vừa]",
         "description": "Tấn Công <@ba.vup>+{atk:0.0%}</>"
       },
       {
@@ -1372,11 +1410,11 @@
     "decoDesc": "Sản phẩm chủ lực của dòng Khám Phá Ngoài Trời của Trung Tâm Hỗ Trợ Northmarch. Thiết kế thân thiện với thiên nhiên và tính cơ động đã khiến sản phẩm này trở thành một trong những sản phẩm được nhiều nhà thám hiểm và những người đam mê câu cá khuyên dùng.",
     "skills": [
       {
-        "name": "Tăng Cường Sức Mạnh [Vừa]",
+        "name": "Sức Mạnh [Vừa]",
         "description": "Sức Mạnh <@ba.vup>+{str}</>"
       },
       {
-        "name": "Tăng Cường ST Băng [Vừa]",
+        "name": "ST Băng [Vừa]",
         "description": "ST Băng Gây Ra <@ba.vup>+{crystdam:0.0%}</>"
       },
       {
@@ -1391,11 +1429,11 @@
     "decoDesc": "Một loại vũ khí chất lượng được sản xuất bởi Tập Đoàn Endfield. Điểm cải tiến nằm ở việc sử dụng vật liệu thử nghiệm dựa trên Originium làm thân lưỡi, giúp nó đạt khả năng dẫn truyền năng lượng vượt trội.",
     "skills": [
       {
-        "name": "Tăng Cường Nhanh Nhẹn [Lớn]",
+        "name": "Nhanh Nhẹn [Lớn]",
         "description": "Nhanh Nhẹn <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Tăng Cường Tấn Công [Lớn]",
+        "name": "Tấn Công [Lớn]",
         "description": "Tấn Công <@ba.vup>+{atk:0.0%}</>"
       },
       {
@@ -1410,11 +1448,11 @@
     "decoDesc": "Một thanh kiếm nổi tiếng từ nhà sản xuất Công Nghiệp RAYTHEAN. Rất nhiều thanh đã được tuồn lậu ra các vùng bên ngoài Vành Đai Văn Minh vì được lũ Landbreaker khá ưa chuộng. Nhiều người dùng cũng độ kiếm với các công năng riêng biệt.",
     "skills": [
       {
-        "name": "Tăng Cường Nhanh Nhẹn [Lớn]",
+        "name": "Nhanh Nhẹn [Lớn]",
         "description": "Nhanh Nhẹn <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Tăng Cường Tỷ Lệ Bạo Kích [Lớn]",
+        "name": "Tỷ Lệ Bạo Kích [Lớn]",
         "description": "Tỷ Lệ Bạo Kích <@ba.vup>+{crirate:0.0%}</>"
       },
       {
@@ -1425,15 +1463,15 @@
   },
   "farsight": {
     "name": "Farsight",
-    "description": "Mảnh đất này có lẽ cũng chẳng có gì đặc biệt. \nVẫn là những đồng bằng ấy, bầu không khí ấy, và biển cả cũng chẳng khác là bao. Chỉ có bầu trời là khác. Ban ngày, ta có thể nhìn thấy rõ một hành tinh khổng lồ lơ lửng phía trên. Đêm xuống, nơi đây cũng không có mặt trăng đôi. Cuộc sống ở đây, xét cho cùng, cũng chẳng khác Terra là mấy. \nĐó có phải chuyện tốt không? Tôi không biết. \nTôi đến đây vì lệnh nghĩa vụ toàn quốc. Nhưng công việc này có lương, lại có cái ăn. Chỉ vậy thôi. \n\nNhưng thời gian trôi qua, tôi bắt đầu cảm nhận được những khác biệt. \nMảnh đất này không có Originium. Quái thật, ngay cả khái niệm biên giới quốc gia cũng như một trò đùa. Ban đầu, cứ tưởng đây chỉ là một cuộc khai phá tiền tuyến kiểu Columbia, nơi người ta phải cắm mặt làm lụng cả ngày giữa hoang dã chỉ để kiếm miếng ăn. Vậy mà ngay hôm nay, một người trông chẳng khác gì quý tộc Leithania lại hỏi tôi, một lao động nhập ngũ, về thông số linh kiện máy móc và cách vận hành thiết bị. \nMà ngài quý tộc đó không hề đùa. \nUrsus, Leithania, Columbia... Những nhãn mác từng chia rẽ chúng tôi giờ dần được thay bằng những cách gọi như đồng đội, \"bạn bè\", \"đồng nghiệp\". \nTôi thích mọi chuyện thành ra như vậy. Thật sự rất tốt. Nhưng vì sao lại được như thế? Tôi cũng không rõ. \nTôi đã hỏi thử vài người, nhưng họ cũng mơ hồ chẳng kém gì tôi. Vì vậy, phải một thời gian sau tôi mới tìm được câu trả lời... \n\n\"Endfield là gì?\" \nTôi đã hỏi đội trưởng Sarkaz cao lớn câu đó vào ngày đầu tiên trình diện. Với một công ty hoạt động ở miền tiền tuyến, cái tên Endfield nghe chẳng may mắn chút nào. \nAnh ấy không trả lời ngay. Thay vào đó, anh dẫn chúng tôi đến mũi con tàu đang tạm thời được dùng làm Tổng Bộ Endfield, bảo chúng tôi hãy nhìn thật kỹ hành tinh này, và cả thế giới này. \nHành tinh và thế giới... Trước kia, chúng tôi gần như chẳng bao giờ dùng đến những từ như vậy. \nThấy tôi bối rối, đội trưởng mỉm cười. Anh nói với tôi rằng, đó chính là ý nghĩa đằng sau Endfield. \n\"Nghĩa là chúng ta phải dùng mấy từ mới mẻ, hoa mỹ hơn à?\" \n\"Nghĩa là chúng ta đã để quá khứ của mình lại Terra.\" \n\nCó lẽ anh ấy nói đúng. \nTrước khi quyết định bước qua Cổng Không Gian để đến nơi này, tôi, cũng như tất cả mọi người khác, đều đã mãi mãi để lại một điều gì đó ở Terra. \nNhững người từng vật lộn trong hầm mỏ, những người từng rong ruổi nơi hoang dã, những người làm việc trong các đô thị, những người từng tổ chức hòa nhạc trên những ngọn tháp cao... Giờ đây tất cả đều đứng vai kề vai trên con tàu này, sẵn sàng cùng nhau xây dựng tương lai. \nSố phận đã trao cho chúng tôi một lựa chọn. Và chúng tôi đã chọn một điều khác với quá khứ, để tạo nên một cách sống hoàn toàn mới. \n\nThế giới này rồi sẽ trở thành nơi như thế nào? Tôi không biết. \nVì chúng tôi vẫn đang xây dựng nó ngay lúc này. \nNhững tòa nhà sẽ vươn lên từ mặt đất, và cây trồng sẽ nảy mầm từ lòng đất. \nĐó chính là câu trả lời vang dội của chúng tôi về thế giới mà mình đang kiến tạo.",
+    "description": "Mảnh đất này có lẽ cũng chẳng có gì đặc biệt. \nVẫn là những đồng bằng ấy, bầu không khí ấy, và biển cả cũng chẳng khác là bao. Chỉ có bầu trời là khác. Ban ngày, ta có thể nhìn thấy rõ một hành tinh khổng lồ lơ lửng phía trên. Đêm xuống, nơi đây cũng không có mặt trăng đôi. Cuộc sống ở đây, xét cho cùng, cũng chẳng khác Terra là mấy. \nĐó có phải chuyện tốt không? Tôi không biết. \nTôi đến đây theo lệnh trưng dụng quốc gia. Nhưng công việc này có lương, lại có cái ăn. Chỉ vậy thôi. \n\nNhưng thời gian trôi qua, tôi bắt đầu cảm nhận được những khác biệt. \nMảnh đất này không có Originium. Quái thật, ngay cả khái niệm biên giới quốc gia cũng như một trò đùa. Ban đầu, tôi cứ tưởng đây chỉ là một công cuộc khai phá biên cương kiểu Columbia, nơi người ta phải cắm mặt làm lụng cả ngày giữa hoang dã chỉ để kiếm miếng ăn. Vậy mà ngay hôm nay, một người trông chẳng khác gì quý tộc người Leithanian lại hỏi tôi, một lao động bị trưng dụng, về thông số linh kiện máy móc và cách vận hành thiết bị. \nMà ngài quý tộc đó không hề đùa. \nUrsus, người Leithanian, Columbia... Những nhãn mác từng chia rẽ chúng tôi giờ dần được thay bằng những cách gọi như đồng đội, bạn bè và cộng sự. \nTôi thích mọi chuyện thành ra như vậy. Thật sự rất tốt. Nhưng vì sao lại được như thế? Tôi cũng không rõ. \nTôi đã hỏi thử vài người, nhưng họ cũng mơ hồ chẳng kém gì tôi. Vì vậy, phải một thời gian sau tôi mới tìm được câu trả lời... \n\n\"Endfield là gì?\" \nTôi đã hỏi đội trưởng Sarkaz cao lớn câu đó vào ngày đầu tiên trình diện. Với một công ty hoạt động ở miền tiền tuyến, cái tên Endfield nghe chẳng may mắn chút nào. \nAnh ấy không trả lời. Thay vào đó, anh dẫn chúng tôi đến mũi con tàu đang tạm thời được dùng làm Tổng Bộ Endfield, bảo chúng tôi hãy nhìn thật kỹ hành tinh này, và cả thế giới này. \nHành tinh và thế giới... Trước kia, chúng tôi gần như chẳng bao giờ dùng đến những từ như vậy. \nThấy tôi bối rối, đội trưởng mỉm cười. Anh nói với tôi rằng, đó chính là ý nghĩa đằng sau Endfield. \n\"Nghĩa là chúng ta phải dùng mấy từ mới mẻ, hoa mỹ hơn à?\" \n\"Nghĩa là chúng ta đã để quá khứ của mình lại Terra.\" \n\nCó lẽ anh ấy nói đúng. \nTrước khi quyết định bước qua Cổng Không Gian để đến nơi này, tôi, cũng như tất cả mọi người khác, đều đã mãi mãi để lại một điều gì đó ở Terra. \nNhững người từng vật lộn trong hầm mỏ, những người từng rong ruổi nơi hoang dã, những người làm việc trong các đô thị, những người từng tổ chức hòa nhạc trên những ngọn tháp cao... Giờ đây tất cả đều đứng vai kề vai trên con tàu này, sẵn sàng cùng nhau xây dựng tương lai. \nSố phận đã trao cho chúng tôi một lựa chọn. Và chúng tôi đã chọn một điều khác với quá khứ, để tạo nên một cách sống hoàn toàn mới. \n\nThế giới này rồi sẽ trở thành nơi như thế nào? Tôi không biết. \nVì chúng tôi vẫn đang xây dựng nó ngay lúc này. \nNhững tòa nhà sẽ vươn lên từ mặt đất, và cây trồng sẽ nảy mầm từ lòng đất. \nĐó chính là câu trả lời vang dội của chúng tôi về thế giới mà mình đang kiến tạo.",
     "decoDesc": "Một trong nhiều nguyên mẫu do Tập Đoàn Endfield chế tạo nhằm kiểm nghiệm các thông số kỹ thuật khác nhau. Món vũ khí này vốn được định hướng là một nền tảng đa dụng, chế tạo từ các vật liệu cao cấp. Với các kỹ sư kho vũ khí của Tập Đoàn Endfield, nó là vật chứa đựng hy vọng.",
     "skills": [
       {
-        "name": "Tăng Cường Thuộc Tính Chính [Lớn]",
+        "name": "Thuộc Tính Chính [Lớn]",
         "description": "Thuộc tính chính <@ba.vup>+{mainattr}</>"
       },
       {
-        "name": "Thưởng Công Phép [Lớn]",
+        "name": "Công Phép [Lớn]",
         "description": "Công Phép <@ba.vup>+{physpell:0}</>"
       },
       {

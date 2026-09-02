@@ -85,7 +85,7 @@
         "imprisonmentAndSusceptibilityDurationS": "囹圄及脆弱持续时间（秒）",
         "baseSusceptibility": "基础脆弱效果",
         "maxBonusSusceptibilityFromWill": "意志提供最大额外脆弱效果",
-        "willRequiredForMaxBonusSusceptibility": "最大额外脆弱效果所需意志值"
+        "willForMaxBonusSusceptibility": "最大额外脆弱效果对应意志值"
       },
       "baseDmgMultiplier": "基础伤害倍率",
       "baseStagger": "基础失衡值",

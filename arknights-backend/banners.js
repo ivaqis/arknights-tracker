@@ -242,7 +242,7 @@ const BANNERS = [
     type: "weapon",
     startTime: "2026-07-15 22:00:00",
     startTimeAsia: "2026-07-16 11:00:00",
-    endTime: "2026-09-24 11:59:59",
+    endTime: "2026-09-30 11:59:59",
     featured6: ["type42SolemnPhalanx"],
   },
   {

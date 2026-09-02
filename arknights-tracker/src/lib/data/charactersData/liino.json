@@ -1679,7 +1679,7 @@
                     25.0
                 ]
             },
-            "firstAtkMultiplier": {
+            "1stAtkMultiplier": {
                 "dataType": "percent",
                 "data": [
                     1.07,

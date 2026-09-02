@@ -80,9 +80,9 @@
       "levels": []
     },
     "files": {
-      "main": "<@profile.key>CODINOME: Endministrator \nGÊNERO: ■■ \nAUTENTICAÇÃO: ■■ \nDATA DE NASCIMENTO: ■■ \nRAÇA: ■■ \n\nVocê não se lembra de nada. \nSuas memórias estão em pedaços, como sonhos reduzidos a pó, desaparecendo ao menor pensamento. \nÀs vezes, isso deixa você impaciente, às vezes, desconfortável, mas ainda assim proporciona a você um momento de silêncio para respirar e pensar. \nNa maioria das vezes, porém, não há pausa para dúvidas. Você simplesmente confia em quem está diante de você e segue em frente. \nTalvez você tenha escondido suas memórias do passado, mesmo que por pouco tempo... \n...e, por isso, não se lembra de nada. </>",
-      "humanResources": "<@profile.key>Você viveu por toda a história de Talos-II...</>",
-      "file1": "<@profile.key>Mas... o que você fará com seu futuro?</>"
+      "main": "CODINOME: Endministrator \nGÊNERO: ■■ \nAUTENTICAÇÃO: ■■ \nDATA DE NASCIMENTO: ■■ \nRAÇA: ■■ \n\nVocê não se lembra de nada. \nSuas memórias estão em pedaços, como sonhos reduzidos a pó, desaparecendo ao menor pensamento. \nÀs vezes, isso deixa você impaciente, às vezes, desconfortável, mas ainda assim proporciona a você um momento de silêncio para respirar e pensar. \nNa maioria das vezes, porém, não há pausa para dúvidas. Você simplesmente confia em quem está diante de você e segue em frente. \nTalvez você tenha escondido suas memórias do passado, mesmo que por pouco tempo... \n...e, por isso, não se lembra de nada.",
+      "humanResources": "Você viveu por toda a história de Talos-II...",
+      "file1": "Mas... o que você fará com seu futuro?"
     },
     "tags": {
       "expert1": {
@@ -127,7 +127,7 @@
       },
       {
         "voId": "chr_0002_endminm_chrup_skill_01",
-        "title": "Ativação da Matriz de Capacidade",
+        "title": "Ativação do Nó de Talentos",
         "text": "Eu conheço esse sentimento..."
       },
       {

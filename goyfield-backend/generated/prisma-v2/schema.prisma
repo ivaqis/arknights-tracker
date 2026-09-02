@@ -1,0 +1,275 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../../generated/prisma-v2"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model FirebaseUser {
+  firebaseUid String   @id
+  createdAt   DateTime @default(now())
+
+  user User?
+}
+
+model User {
+  uid             BigInt   @id @default(autoincrement())
+  publicUid       String   @unique
+  firebaseUid     String?  @unique
+  isPrivate       Boolean  @default(false)
+  avatarId        String?
+  backgroundId    String?
+  displayAvatar   Boolean  @default(true)
+  uploadCount     Int      @default(0)
+  lastUploadReset DateTime @default(now())
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  firebaseUser FirebaseUser? @relation(fields: [firebaseUid], references: [firebaseUid], onDelete: Cascade)
+
+  userGameProfiles UserGameProfile[]
+
+  @@index([firebaseUid])
+  @@index([publicUid])
+}
+
+model UserGameProfile {
+  gameUid         String  @id
+  serverId        String
+  uid             BigInt
+  level           Int
+  data            String // json
+  bannerProfileId BigInt? @unique
+
+  user              User               @relation(fields: [uid], references: [uid], onDelete: Cascade)
+  userBannerProfile UserBannerProfile? @relation(fields: [bannerProfileId], references: [profileId])
+
+  userContractLeaderboards UserContractLeaderboard[]
+  userMonumentLeaderboards UserMonumentLeaderboard[]
+  userMonumentGroups       UserMonumentGroup[]
+
+  @@index([uid, serverId])
+  @@index([bannerProfileId])
+}
+
+model UserContractLeaderboard {
+  id             String   @id @default(uuid())
+  recordId       String   @unique
+  gameUid        String
+  contractId     String
+  indicatorCount Int
+  clearTimeSec   Int
+  data           String // json
+  updatedAt      DateTime @updatedAt
+
+  userGameProfile UserGameProfile @relation(fields: [gameUid], references: [gameUid], onDelete: Cascade)
+
+  userContractCharacters UserContractCharacter[]
+
+  @@index([gameUid, contractId])
+  @@index([contractId])
+  @@index([recordId])
+}
+
+model UserContractCharacter {
+  userRecordId String
+  charId       String
+
+  userContractLeaderboard UserContractLeaderboard @relation(fields: [userRecordId], references: [id], onDelete: Cascade)
+
+  @@id([userRecordId, charId])
+}
+
+model UserMonumentLeaderboard {
+  id           String   @id @default(uuid())
+  userGroupId  String
+  gameUid      String
+  dungeonId    String
+  groupId      String
+  isHard       Boolean
+  clearTimeSec Int
+  data         String // json
+  updatedAt    DateTime @updatedAt
+
+  userGameProfile   UserGameProfile   @relation(fields: [gameUid], references: [gameUid], onDelete: Cascade)
+  userMonumentGroup UserMonumentGroup @relation(fields: [userGroupId], references: [id])
+
+  userMonumentCharacters UserMonumentCharacter[]
+
+  @@unique([gameUid, dungeonId])
+  @@index([gameUid, dungeonId])
+  @@index([dungeonId])
+  @@index([groupId, isHard])
+  @@index([userGroupId])
+}
+
+model UserMonumentGroup {
+  id      String  @id @default(uuid())
+  gameUid String
+  groupId String
+  isHard  Boolean
+
+  userGameProfile UserGameProfile @relation(fields: [gameUid], references: [gameUid], onDelete: Cascade)
+
+  userMonumentLeaderboards UserMonumentLeaderboard[]
+  userMonumentCharacters   UserMonumentCharacter[]
+
+  @@unique([gameUid, groupId, isHard])
+  @@index([groupId, isHard, gameUid])
+}
+
+model UserMonumentCharacter {
+  recordId    String
+  userGroupId String
+  charId      String
+
+  userMonumentLeaderboard UserMonumentLeaderboard @relation(fields: [recordId], references: [id], onDelete: Cascade)
+  userMonumentGroup       UserMonumentGroup       @relation(fields: [userGroupId], references: [id], onDelete: Cascade)
+
+  @@id([recordId, charId])
+  @@index([userGroupId, charId])
+}
+
+model UserBannerProfile {
+  profileId BigInt   @id @default(autoincrement())
+  publicId  String   @unique @default(uuid())
+  privateId String   @unique @default(uuid())
+  version   Int      @default(2)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  userGameProfile UserGameProfile?
+
+  userBannerStats         UserBannerStat[]
+  userCharBannerTypePulls UserCharBannerTypePulls[]
+  userCharBannerPulls     UserCharBannerPulls[]
+  userWeaponBannerPulls   UserWeaponBannerPulls[]
+  bannerTokenIds          BannerTokenId[]
+  bannerPullsIds          BannerPullsId[]
+
+  @@index([publicId])
+  @@index([privateId])
+}
+
+model BannerTokenId {
+  id        String   @id
+  profileId BigInt
+  createdAt DateTime @default(now())
+
+  bannerProfile UserBannerProfile @relation(fields: [profileId], references: [profileId])
+}
+
+model BannerPullsId {
+  id        String   @id
+  period    Int
+  profileId BigInt
+  createdAt DateTime @default(now())
+
+  bannerProfile UserBannerProfile @relation(fields: [profileId], references: [profileId])
+}
+
+model UserBannerStat {
+  profileId   BigInt
+  bannerId    String
+  bannerType  String
+  unfreePulls Int      @default(0)
+  total6      Int      @default(0)
+  total5      Int      @default(0)
+  won5050     Int      @default(0)
+  total5050   Int      @default(0)
+  freePulls   Int      @default(0)
+  free6       Int      @default(0)
+  free5       Int      @default(0)
+  freeWin5050 Int      @default(0)
+  updatedAt   DateTime @updatedAt
+
+  bannerProfile         UserBannerProfile      @relation(fields: [profileId], references: [profileId])
+  userCharBannerPulls   UserCharBannerPulls?
+  userWeaponBannerPulls UserWeaponBannerPulls?
+
+  @@id([profileId, bannerId])
+  @@index([bannerId])
+  @@index([bannerType, profileId])
+}
+
+model UserCharBannerTypePulls {
+  profileId       BigInt
+  bannerType      String
+  last6Pull       Int      @default(0) // unfree
+  last5Pull       Int      @default(0) // unfree
+  lastWin5050Pull Int      @default(0) // unfree
+  lastPullTimeTs  BigInt   @default(0)
+  updatedAt       DateTime @updatedAt
+
+  bannerProfile UserBannerProfile @relation(fields: [profileId], references: [profileId])
+
+  @@id([profileId, bannerType])
+}
+
+model UserCharBannerPulls {
+  profileId        BigInt
+  bannerId         String
+  last6LimitedPull Int      @default(0) // unfree
+  updatedAt        DateTime @updatedAt
+
+  bannerProfile UserBannerProfile @relation(fields: [profileId], references: [profileId])
+  bannerStat    UserBannerStat    @relation(fields: [profileId, bannerId], references: [profileId, bannerId])
+
+  @@id([profileId, bannerId])
+}
+
+model UserWeaponBannerPulls {
+  profileId       BigInt
+  bannerId        String
+  last6Pull       Int      @default(0)
+  last5Pull       Int      @default(0)
+  lastWin5050Pull Int      @default(0) // фактически используется как last6LimitedPull
+  lastPullTimeTs  BigInt   @default(0)
+  updatedAt       DateTime @updatedAt
+
+  bannerProfile UserBannerProfile @relation(fields: [profileId], references: [profileId])
+  bannerStat    UserBannerStat    @relation(fields: [profileId, bannerId], references: [profileId, bannerId])
+
+  @@id([profileId, bannerId])
+}
+
+model GlobalBannerTimeline {
+  bannerId        String
+  date            String // "YYYY-MM-DD"
+  totalPullsCount Int    @default(0)
+  freePullsCount  Int    @default(0)
+
+  @@id([bannerId, date])
+}
+
+model GlobalPityDistribution {
+  bannerId String
+  pity     Int
+  rarity   Int
+  count    Int    @default(0)
+
+  @@id([bannerId, pity, rarity])
+}
+
+model GlobalItemStats {
+  bannerId String
+  itemId   String
+  rarity   Int
+  count    Int    @default(0)
+
+  @@id([bannerId, itemId])
+  @@index([bannerId, rarity])
+}
+
+model ImportError {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now())
+  url       String
+  message   String
+  stack     String?
+  serverId  String?
+  solved    Boolean  @default(false)
+}

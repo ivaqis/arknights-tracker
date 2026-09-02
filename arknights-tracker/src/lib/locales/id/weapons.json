@@ -5,12 +5,12 @@
     "decoDesc": "Senjata yang biasa digunakan di perbatasan. Tak ada yang tahu siapa yang merancang desain dasarnya. Senjata ini bisa diproduksi dengan mudah menggunakan mesin industri biasa.",
     "skills": [
       {
-        "name": "Strength Boost [S]",
+        "name": "Strength [S]",
         "description": "Strength <@ba.vup>+{str}</>"
       },
       {
-        "name": "ATK Boost [S]",
-        "description": "Serangan <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATK [S]",
+        "description": "ATK <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Suppression: Emergency Boost",
@@ -24,12 +24,12 @@
     "decoDesc": "Produk lepasan terbaru dari Mieszko Industries. Desainnya didasarkan pada relikui yang digali oleh Cabal of Tranquility. Senjata ini dilengkapi dengan teknologi yang sangat rahasia sehingga mampu memotong hampir segala macam benda dengan mudah.",
     "skills": [
       {
-        "name": "Main Attribute Boost [L]",
+        "name": "Atribut Utama [L]",
         "description": "Atribut utama <@ba.vup>+{mainattr}</>"
       },
       {
-        "name": "Attack Boost [L]",
-        "description": "Serangan <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATK [L]",
+        "description": "ATK <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Suppression: Stacked Hew",
@@ -43,11 +43,11 @@
     "decoDesc": "Produk kelas atas dari Hub Pendukung Northmarch. Pemotong rantai ini dirancang dengan teknologi lama. Walaupun sudah tidak diproduksi secara massal, senjata ini terus membuktikan keandalannya di lapangan.",
     "skills": [
       {
-        "name": "Will Boost [L]",
+        "name": "Will [L]",
         "description": "Will <@ba.vup>+{will}</>"
       },
       {
-        "name": "HP Boost [L]",
+        "name": "HP [L]",
         "description": "HP Maks <@ba.vup>+{hp:0.0%}</>"
       },
       {
@@ -62,11 +62,11 @@
     "decoDesc": "Senjata khusus yang diproduksi oleh Endfield. Flamberge ini dilengkapi dengan jalinan sirkuit Originium untuk meningkatkan performa esensi. Susunan ini terinspirasi oleh berbagai fenomena yang muncul di Talos.",
     "skills": [
       {
-        "name": "Strength Boost [L]",
+        "name": "Strength [L]",
         "description": "Strength <@ba.vup>+{str}</>"
       },
       {
-        "name": "HP Boost [L]",
+        "name": "HP [L]",
         "description": "HP Maks <@ba.vup>+{hp:0.0%}</>"
       },
       {
@@ -81,11 +81,11 @@
     "decoDesc": "Senjata khusus edisi terbatas dari Witching Hour. Tampilan pedang besar ini mungkin didasarkan pada suatu legenda kuno. Pedang ini tampaknya mampu menarik keluar ratapan kesedihan dari alam mimpi.",
     "skills": [
       {
-        "name": "Strength Boost [L]",
+        "name": "Strength [L]",
         "description": "Strength <@ba.vup>+{str}</>"
       },
       {
-        "name": "Critical Rate Boost [L]",
+        "name": "Critical Rate [L]",
         "description": "Critical Rate <@ba.vup>+{crirate:0.0%}</>"
       },
       {
@@ -100,11 +100,11 @@
     "decoDesc": "Pedang besar standar buatan Fort Forgefane. Walau hanya sedikit yang bisa menguasainya, pedang ini sangat mudah digunakan dan sudah bertahun-tahun menjadi pilihan utama para rekrutan baru.",
     "skills": [
       {
-        "name": "Will Boost [S]",
+        "name": "Will [S]",
         "description": "Will <@ba.vup>+{will}</>"
       },
       {
-        "name": "HP Boost [S]",
+        "name": "HP [S]",
         "description": "HP Maks <@ba.vup>+{hp:0.0%}</>"
       },
       {
@@ -119,7 +119,7 @@
     "decoDesc": "Salah satu senjata edisi standar yang diproduksi oleh Endfield Industries untuk operator. Senjata ini dirancang oleh Ahli Mesin Senjata Endfield, Darhoff. Desainnya menawarkan opsi yang tepat bagi orang-orang yang terlibat dalam operasi penyerbuan.",
     "skills": [
       {
-        "name": "Main Attribute Boost [S]",
+        "name": "Atribut Utama [S]",
         "description": "Atribut utama <@ba.vup>+{mainattr}</>"
       },
       {
@@ -134,11 +134,11 @@
     "decoDesc": "Pedang besar standar yang dikembangkan oleh Hongshan Swordmancers. Senjata ini dilengkapi dengan lapisan khusus yang memberikan perlindungan luar biasa, bahkan saat digunakan dalam lingkungan ekstrem dan berbahaya sekalipun.",
     "skills": [
       {
-        "name": "Strength Boost [M]",
+        "name": "Strength [M]",
         "description": "Strength <@ba.vup>+{str}</>"
       },
       {
-        "name": "Ultimate Gain Efficiency Boost [M]",
+        "name": "Efisiensi ULT [M]",
         "description": "Efisiensi Perolehan Ultimate <@ba.vup>+{usgs:0.0%}</>"
       },
       {
@@ -153,11 +153,11 @@
     "decoDesc": "Senjata khusus dari Mieszko Industries yang diproduksi dalam jumlah terbatas. Senjata ini adalah desain akhir dari proyek kolaboratif yang dikerjakan oleh perusahaan senjata ini bersama Cromwell, ahli Jawara Kesatria.",
     "skills": [
       {
-        "name": "Strength Boost [M]",
+        "name": "Strength [M]",
         "description": "Strength <@ba.vup>+{str}</>"
       },
       {
-        "name": "HP Boost [M]",
+        "name": "HP [M]",
         "description": "HP Maks <@ba.vup>+{hp:0.0%}</>"
       },
       {
@@ -172,12 +172,12 @@
     "decoDesc": "Senjata unik yang diproduksi Witching Hour. Bilahnya dipahat dari balok es biasa, tapi permukaannya diisi dengan Originium Arts khusus sehingga benar-benar tak bisa dihancurkan.",
     "skills": [
       {
-        "name": "Strength Boost [L]",
+        "name": "Strength [L]",
         "description": "Strength <@ba.vup>+{str}</>"
       },
       {
-        "name": "Attack Boost [L]",
-        "description": "Serangan <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATK [L]",
+        "description": "ATK <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Detonate: Bonechilling",
@@ -191,11 +191,11 @@
     "decoDesc": "Pedang besar berkualitas yang diproduksi oleh Hongshan Swordmancers. Jika dibandingkan pedang besar lainnya, pedang ini lebih ringan, tapi tetap mematikan.",
     "skills": [
       {
-        "name": "Strength Boost [M]",
+        "name": "Strength [M]",
         "description": "Strength <@ba.vup>+{str}</>"
       },
       {
-        "name": "Arts Intensity Boost [M]",
+        "name": "Intensitas Arts [M]",
         "description": "Intensitas Arts <@ba.vup>+{physpell:0}</>"
       },
       {
@@ -210,16 +210,16 @@
     "decoDesc": "Senjata standar yang diproduksi oleh Endfield Industries. Desainnya dibuat oleh Tim Kreatif Prototipe yang didirikan oleh Ahli Mesin Senjata Senior, Opero. Senjata ini bisa dilengkapi berbagai modul sesuai kebutuhan pertarungan yang sesungguhnya.",
     "skills": [
       {
-        "name": "Strength Boost [M]",
+        "name": "Strength [M]",
         "description": "Strength <@ba.vup>+{str}</>"
       },
       {
-        "name": "HP Boost [M]",
+        "name": "HP [M]",
         "description": "HP Maks <@ba.vup>+{hp:0.0%}</>"
       },
       {
         "name": "Efficacy: Tenacious Will",
-        "description": "Atribut Sekunder <@ba.vup>+{second_attr_up:0.0%}</>.\nSaat mengakibatkan <#ba.knockdown>Knocked Down</> atau <#ba.weak>Weakened</>, si pemakai akan mendapatkan DEF <@ba.vup>+{def_up:0.0%}</> selama {duration:0} dtk.\n<@ba.info>Efek yang namanya sama tidak bisa ditumpuk.</>"
+        "description": "Atribut Sekunder <@ba.vup>+{second_attr_up:0.0%}</>.\nSaat mengakibatkan <#ba.knockdown>Knocked Down</> atau <#ba.weak>Weakness</>, si pemakai akan mendapatkan DEF <@ba.vup>+{def_up:0.0%}</> selama {duration:0} dtk.\n<@ba.info>Efek yang namanya sama tidak bisa ditumpuk.</>"
       }
     ]
   },
@@ -229,11 +229,11 @@
     "decoDesc": "Prototipe yang diproduksi oleh Lab Æthertech Portabel. Bilah pedang ini terbuat dari material baru yang menjadikan senjata ini luar biasa ringan tanpa mengurangi potensi daya hancurnya.",
     "skills": [
       {
-        "name": "Strength Boost [L]",
+        "name": "Strength [L]",
         "description": "Strength <@ba.vup>+{str}</>"
       },
       {
-        "name": "Arts Intensity Boost [L]",
+        "name": "Intensitas Arts [L]",
         "description": "Intensitas Arts <@ba.vup>+{physpell:0}</>"
       },
       {
@@ -248,12 +248,12 @@
     "decoDesc": "Hongshan Swordmancers butuh lebih dari sepuluh tahun untuk merancang dan memproduksi pedang besar ini. Dimensinya proporsional dan mampu menyerang dengan kekuatan serta keganasan luar biasa. Inilah contoh senjata berat yang sempurna.",
     "skills": [
       {
-        "name": "Strength Boost [L]",
+        "name": "Strength [L]",
         "description": "Strength <@ba.vup>+{str}</>"
       },
       {
-        "name": "Attack Boost [L]",
-        "description": "Serangan <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATK [L]",
+        "description": "ATK <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Combative: Amaranthine Cleave",
@@ -267,11 +267,11 @@
     "decoDesc": "Salah satu senjata tingkat lanjut yang diproduksi oleh Endfield untuk operator mereka. Persenjataan Endfield menggunakan cetak biru Andre untuk menciptakan drone yang mampu menyimpan Arts sehingga bisa digunakan dengan cepat dalam keadaan darurat.",
     "skills": [
       {
-        "name": "Intellect Boost [S]",
+        "name": "Intellect [S]",
         "description": "Intellect <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Arts Boost [S]",
+        "name": "Arts DMG [S]",
         "description": "Arts DMG Dealt <@ba.vup>+{spelldam:0.0%}</>"
       },
       {
@@ -286,7 +286,7 @@
     "decoDesc": "Salah satu senjata edisi standar yang diproduksi oleh Endfield Industries untuk operator. Senjata ini dirancang oleh Ahli Mesin Senjata Endfield, Jiminy. Unit Arts ini sangat populer di kalangan operator baru Endfield.",
     "skills": [
       {
-        "name": "Main Attribute Boost [S]",
+        "name": "Atribut Utama [S]",
         "description": "Atribut utama <@ba.vup>+{mainattr}</>"
       },
       {
@@ -301,12 +301,12 @@
     "decoDesc": "Salah satu unit Arts yang diproduksi oleh Endfield Industries. Unit ini punya desain struktur yang tegas dan konduktans Arts yang luar biasa, tapi sangat sulit dikendalikan. Penguasaan senjata ini dianggap sebagai bukti kompetensi di kalangan operator.",
     "skills": [
       {
-        "name": "Will Boost [S]",
+        "name": "Will [S]",
         "description": "Will <@ba.vup>+{will}</>"
       },
       {
-        "name": "ATK Boost [S]",
-        "description": "Serangan <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATK [S]",
+        "description": "ATK <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Suppression: Emergency Boost",
@@ -320,11 +320,11 @@
     "decoDesc": "Unit Arts yang dikembangkan oleh RAYTHEAN Industries. Senjata ini dikenal karena desainnya yang minimalis dan ringan. Pembuatannya hanya butuh setengah dari material yang dibutuhkan untuk memproduksi unit Arts standar.",
     "skills": [
       {
-        "name": "Intellect Boost [M]",
+        "name": "Intellect [M]",
         "description": "Intellect <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Electric DMG Boost [M]",
+        "name": "Electric DMG [M]",
         "description": "Electric DMG Dealt <@ba.vup>+{electrondam:0.0%}</>"
       },
       {
@@ -339,12 +339,12 @@
     "decoDesc": "Salah satu unit Arts berpenampilan aneh yang dirilis oleh Witching Hour. Desainnya yang tidak masuk akal ini mencakup kompatibilitas Originium Arts yang sengaja dikurangi untuk menonjolkan logika gelap dari ilmu sihir Teekaz Kuno.",
     "skills": [
       {
-        "name": "Intellect Boost [M]",
+        "name": "Intellect [M]",
         "description": "Intellect <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "ATK Boost [M]",
-        "description": "Serangan <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATK [M]",
+        "description": "ATK <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Twilight: Lustrous Pyre",
@@ -358,11 +358,11 @@
     "decoDesc": "Produk kontrak dari Lab Æthertech Portabel. Senjata ini punya komponen logam yang diukir dengan tangan oleh ahli cræft untuk membuat gambar ukir yang sesuai dengan bagian tilitnya. Hasilnya adalah unit Arts dengan sirkuit penggunaan Arts yang unik.",
     "skills": [
       {
-        "name": "Will Boost [L]",
+        "name": "Will [L]",
         "description": "Will <@ba.vup>+{will}</>"
       },
       {
-        "name": "Nature DMG Boost [L]",
+        "name": "Nature DMG [L]",
         "description": "Nature DMG Dealt <@ba.vup>+{naturaldam:0.0%}</>"
       },
       {
@@ -377,11 +377,11 @@
     "decoDesc": "Unit Arts yang dikembangkan oleh Hongshan Swordmancers dan dibuat menggunakan Xiranite. Karena material langka ini sifatnya berubah-ubah, yang bisa menggunakan unit Arts ini dengan efektif hanyalah pengguna yang punya fokus dan presisi tingkat tinggi.",
     "skills": [
       {
-        "name": "Will Boost [M]",
+        "name": "Will [M]",
         "description": "Will <@ba.vup>+{will}</>"
       },
       {
-        "name": "Ultimate Gain Efficiency Boost [M]",
+        "name": "Efisiensi ULT [M]",
         "description": "Efisiensi Perolehan Ultimate <@ba.vup>+{usgs:0.0%}</>"
       },
       {
@@ -396,11 +396,11 @@
     "decoDesc": "Unit Arts yang dikembangkan oleh Hub Pendukung Northmarch. Tak diragukan lagi, ini adalah unit dengan konduktans Originium Arts paling baik. Hanya Caster yang paling cakaplah yang bisa menguasai senjata ini.",
     "skills": [
       {
-        "name": "Main Attribute Boost [L]",
+        "name": "Atribut Utama [L]",
         "description": "Atribut utama <@ba.vup>+{mainattr}</>"
       },
       {
-        "name": "Arts Intensity Boost [L]",
+        "name": "Intensitas Arts [L]",
         "description": "Intensitas Arts <@ba.vup>+{physpell:0}</>"
       },
       {
@@ -415,11 +415,11 @@
     "decoDesc": "Salah satu unit Arts yang dikembangkan oleh Witching Hour. Kecuali sirkuit Originium dasarnya, bagian unit lainnya dibuat menggunakan material yang tak diketahui. Apa ini benar-benar bisa dibuat di Talos-II?",
     "skills": [
       {
-        "name": "Intellect Boost [L]",
+        "name": "Intellect [L]",
         "description": "Intellect <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Arts Boost [L]",
+        "name": "Arts DMG [L]",
         "description": "Arts DMG Dealt <@ba.vup>+{spelldam:0.0%}</>"
       },
       {
@@ -434,11 +434,11 @@
     "decoDesc": "Salah satu Unit Arts yang dikembangkan oleh Mieszko Industries. Senjata ini menggunakan rangka baja D64 khusus dan sejumlah modul yang bisa disesuaikan. Desainnya mengingatkan orang-orang akan pertunjukan kembang api para kesatria besar masa lalu.",
     "skills": [
       {
-        "name": "Will Boost [L]",
+        "name": "Will [L]",
         "description": "Will <@ba.vup>+{will}</>"
       },
       {
-        "name": "HP Boost [L]",
+        "name": "HP [L]",
         "description": "HP Maks <@ba.vup>+{hp:0.0%}</>"
       },
       {
@@ -453,11 +453,11 @@
     "decoDesc": "Produk unggulan klasik dari RAYTHEAN. Prototipenya pernah digunakan dalam Perang Aggelos Pertama. Sejak itu, senjata ini telah mengalami banyak upgrade dan optimasi. Versi modernnya menawarkan daya tembak luar biasa, yang memberikan perlindungan dan keamanan pengantaran yang lebih baik.",
     "skills": [
       {
-        "name": "Will Boost [L]",
+        "name": "Will [L]",
         "description": "Will <@ba.vup>+{will}</>"
       },
       {
-        "name": "Ultimate Gain Efficiency Boost [L]",
+        "name": "Efisiensi ULT [L]",
         "description": "Efisiensi Perolehan Ultimate <@ba.vup>+{usgs:0.0%}</>"
       },
       {
@@ -472,11 +472,11 @@
     "decoDesc": "Unit Arts rancangan Mieszko Industries untuk Cabal of Tranquility. Seluruh prosesnya, mulai dari desain, verifikasi, produksi, hingga penyetelan, dilakukan di bawah pengawasan biarawan Tarekat.",
     "skills": [
       {
-        "name": "Will Boost [M]",
+        "name": "Will [M]",
         "description": "Will <@ba.vup>+{will}</>"
       },
       {
-        "name": "Treatment Efficiency Boost [M]",
+        "name": "Efisiensi Treatment [M]",
         "description": "Efisiensi Treatment <@ba.vup>+{heal:0.0%}</>."
       },
       {
@@ -491,11 +491,11 @@
     "decoDesc": "Produk dari seri elite keluaran Mieszko Industries. Senjata ini menawarkan konduksi Originium Arts yang sangat baik, jauh lebih praktis dibanding pilihan-pilihan lain yang mengedepankan gaya tapi mengorbankan fungsi.",
     "skills": [
       {
-        "name": "Intellect Boost [L]",
+        "name": "Intellect [L]",
         "description": "Intellect <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Treatment Efficiency Boost [L]",
+        "name": "Efisiensi Treatment [L]",
         "description": "Efisiensi Treatment <@ba.vup>+{heal:0.0%}</>."
       },
       {
@@ -510,11 +510,11 @@
     "decoDesc": "Senjata standar yang diproduksi oleh Endfield Industries. Desainnya dibuat oleh Tim Kreatif Prototipe yang didirikan oleh Ahli Mesin Senjata Senior, Opero. Kekuatan senjata ini ditentukan oleh penguasaan Originium Arts penggunanya.",
     "skills": [
       {
-        "name": "Intellect Boost [M]",
+        "name": "Intellect [M]",
         "description": "Intellect <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Arts Intensity Boost [M]",
+        "name": "Intensitas Arts [M]",
         "description": "Intensitas Arts <@ba.vup>+{physpell:0}</>"
       },
       {
@@ -529,12 +529,12 @@
     "decoDesc": "Unit Arts yang dikembangkan oleh Hongshan Swordmancers. Senjata ini terang-terangan mengadopsi amalgam Xiranite baru. Materialnya memang menawarkan performa yang membuat efisiensi penggunaannya meningkat banyak, tapi Unit Arts ini kadang agak sulit digunakan.",
     "skills": [
       {
-        "name": "Will Boost [L]",
+        "name": "Will [L]",
         "description": "Will <@ba.vup>+{will}</>"
       },
       {
-        "name": "Attack Boost [L]",
-        "description": "Serangan <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATK [L]",
+        "description": "ATK <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Suppression: Streaming Blitz",
@@ -548,11 +548,11 @@
     "decoDesc": "Satu set Unit Arts standar yang dirancang dan dikembangkan oleh Hongshan Swordmancers. Senjata ini saat ini diberikan kepada anggota Satuan Tugas Khusus Yinglung. Senjata ini terkenal akan performa dan kestabilannya yang luar biasa, serta keandalannya di lingkungan yang tak kenal ampun.",
     "skills": [
       {
-        "name": "Intellect Boost [L]",
+        "name": "Intellect [L]",
         "description": "Intellect <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Ultimate Gain Efficiency Boost [L]",
+        "name": "Efisiensi ULT [L]",
         "description": "Efisiensi Perolehan Ultimate <@ba.vup>+{usgs:0.0%}</>"
       },
       {
@@ -567,11 +567,11 @@
     "decoDesc": "Produk klasik Endfield Industries. Banyak unit ini dikerahkan dalam Ekspedisi Kutub. Unit Arts ini dilapisi warna kuning keemasan yang mencolok sehingga mudah dilihat, bahkan dalam badai salju sekalipun.",
     "skills": [
       {
-        "name": "Will Boost [L]",
+        "name": "Will [L]",
         "description": "Will <@ba.vup>+{will}</>"
       },
       {
-        "name": "Electric DMG Boost [L]",
+        "name": "Electric DMG [L]",
         "description": "Electric DMG Dealt <@ba.vup>+{electrondam:0.0%}</>"
       },
       {
@@ -586,16 +586,54 @@
     "decoDesc": "Dibuat berdasarkan entri pemenang kompetisi desain konsep yang diselenggarakan oleh Mieszko Industries. Berkat pemahaman unik sang desainer tentang lingkungan nol gravitasi, fitur akselerasi proyektil dengan keakuratan berskala mikrodetik dan kemampuan melayang yang luar biasa berhasil diwujudkan.",
     "skills": [
       {
-        "name": "Intellect Boost [L]",
+        "name": "Intellect [L]",
         "description": "Intellect <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Ultimate Gain Efficiency Boost [L]",
+        "name": "Efisiensi ULT [L]",
         "description": "Efisiensi Perolehan Ultimate <@ba.vup>+{usgs:0.0%}</>"
       },
       {
         "name": "Efficacy: Feedback Loop",
         "description": "Nature DMG Dealt <@ba.vup>+{nature_dmg_up:0.0%}</>.\nSaat mengakibatkan <#ba.spellvul>Arts Susceptibility</> atau <#ba.spellinflict>Arts Infliction</> dengan skill kombo, si pemakai akan mendapatkan ATK <@ba.vup>+{atk_up:0.0%}</> sedangkan operator lain di dalam tim akan mendapatkan ATK <@ba.vup>+{atk_up2:0.0%}</>. Durasi: {duration:0} dtk.\n<@ba.info>Tumpukan maks untuk efek yang namanya sama: {max_stack:0}. Durasi setiap tumpukan dihitung sendiri-sendiri.</>"
+      }
+    ]
+  },
+  "umbraOfFrigidEventide": {
+    "name": "Umbra of Frigid Eventide",
+    "description": "Matahari belum terbit.\nPrajurit suku Coldpine itu sudah bangun. Tangannya memegang pena arang pendek dan kertas di bawahnya nyaris tak lebih besar dari telapak tangannya.\nSetiap ruang di kertas itu sangat berarti, karena ada banyak hal yang ingin dia tulis. Dia menggoreskan kata-kata itu dengan hati-hati dan membaca setiap katanya dengan lantang. Walau sudah berusaha merendahkan suaranya, orang di sebelahnya terbangun. Wanita itu membuka matanya yang tersisa, memberinya tendangan keras dan teguran dingin: “Diam.”\nPrajurit itu memberinya senyum konyol, lalu mulai membaca tulisannya dalam hati: “Ibu tersayang, es telah mencair dan lumut-lumut hijau sudah terlihat. Rasanya menyenangkan dan tampak indah. Aku yakin musim semi telah tiba di tempat Ibu. Sungai pasti mengalir di bawah rumah pohon Ibu dan mengairi tanaman di kebun. Kawanan fowlbeast mungkin telah kembali bertengger di bawah atap, mengepakkan sayap, dan masuk ke dalam rumah agar hinggap di tangan Ibu saat Ibu membuka jendela. Mungkin suatu hari nanti akan tiba saatnya aku bisa terbang pulang ke tempat Ibu layaknya kawanan fowlbeast itu dan menemanimu di tempat yang punya musim semi yang abadi, dan ....”\nItulah kata yang sering diucapkan ibunya. Prajurit itu mengingatnya, tapi lupa bagaimana bentuknya. Karena tak punya pilihan, dia berhenti menulis, menatap wanita itu dengan pasrah, lalu meminta bantuan dengan tulus.\nKata-kata kesal wanita itu tak berhasil menyembunyikan rasa ingin tahunya: “Kenapa berhenti menulis?”\n“Ada satu kata yang tak bisa kubentuk.”\n“Kata apa?”\n“Su-Suaka.”\n“Kau tak pernah mempelajarinya?”\n“Ibu meninggalkanku sebelum sempat mengajariku kata itu.”\n“Ooooooh,” wanita itu bergumam panjang seolah frustrasi. Dia kemudian mengangkat tangannya dan menggambarnya di udara, sebuah pola silang yang terdiri dari lengkungan dan garis lurus, seperti jejak di udara yang ditinggalkan oleh fowlbeast yang melesat.\nWanita itu awalnya menuliskan kata tersebut dengan cepat. Mata lelah si prajurit nyaris tak bisa mengikuti ujung jarinya. Dia melihat alis si prajurit yang berkerut dan terkekeh, lalu menuliskan kata itu lagi.\nBersama-sama, pena arang si prajurit, jari si wanita, garis-garis di atas kertas, dan bentuk di udara akhirnya merangkai kata tersebut. Semuanya menyatu bagaikan fowlbeast yang mendarat perlahan di tanah.\nKertas itu kini penuh dengan kata-kata. Dia tersenyum puas lalu melemparkannya ke dalam api unggun. Kertas itu bergemeretak saat terbakar, dan cahaya api menari-nari di mata wanita itu sebelum padam di sudut pandangannya.\n“Kau yakin ini tak akan pernah sampai kepadanya?”\nPrajurit itu mengangguk. Wanita itu menghela napas, lalu terdiam sesaat sebelum tiba-tiba berbicara lagi. “Siapa namamu, Nak?”\n“Björn, dari suku Coldpine.”\nWanita itu bernostalgia sambil menceritakan kenangannya satu per satu: “Suku Coldpine .... Oh ya, aku ingat Ketua kalian .... Seorang prajurit yang gagah berani dan sangat mengagumkan. Dia menjunjung tinggi kehormatan prajurit saat dia gugur.”\n“Aku beruntung, karena bisa tumbuh besar bersamanya,” wajah si prajurit memerah saat mengangguk kepadanya dengan penuh rasa syukur.\n“Semoga dia kembali ke sisi Sami, tempat musim semi abadi, sebuah ....”\n“Suaka,” si prajurit mengucapkan kata itu bersamaan dengan wanita itu, yang mengucapkannya sambil tersenyum.\nMatahari belum terbit, tapi terompet-terompet sudah berbunyi. Kawanan Aggelos muncul di cakrawala, berbaris menuju garis depan sebagai pasukan yang perkasa.\nPrajurit Coldpine itu berdiri. Dia mengambil tombaknya dan menggendong wanita tersebut. Bersama para prajurit lainnya, dia berbalik untuk menghadapi gelombang Aggelos itu.\nDi belakang mereka, api melahap kertas itu. Bara api beterbangan dari jilatan api yang berkedip-kedip dan melayang ke tempat yang jauh.",
+    "decoDesc": "Senjata yang ditempa oleh Fort Forgefane. Dibalut sasis ramping aerodinamis dengan lapisan khusus yang dirancang untuk operasi pertempuran di lingkungan minim cahaya.",
+    "skills": [
+      {
+        "name": "Agility [L]",
+        "description": "Agility <@ba.vup>+{agi}</>"
+      },
+      {
+        "name": "ATK [L]",
+        "description": "ATK <@ba.vup>+{atk:0.0%}</>"
+      },
+      {
+        "name": "Detonate: Hunter Instinct",
+        "description": "Arts DMG Dealt <@ba.vup>+{spell_dmg_up:0.0%}</>.\nSetelah menggunakan skill tarung, si pemakai akan mendapatkan Intensitas Arts <@ba.vup>+{phy_spell_up:0}</> dan {wind_grant:0} tumpukan <@ba.key>Windform</> selama {wind_duration:0} dtk.\n<@ba.info>Seluruh efek ini tidak bisa ditumpuk. Maks tumpukan <@ba.key>Windform</>: {wind_grant:0}.</>\nSaat si pemakai mengakibatkan <#ba.spellburst>Arts Burst</>, 1 tumpuk <@ba.key>Windform</> akan <#ba.consume>dipakai</> untuk memberikan Arts DMG Dealt <@ba.vup>+{spell_dmg_up2:0.0%}</> kepada si pemakai selama {spell_dmg_duration:0} dtk.\n<@ba.info>Efek ini bisa mencapai {spell_dmg_max_stack:0} tumpuk. Durasi setiap tumpukan dihitung sendiri-sendiri. Efek ini hanya bisa diaktifkan satu kali setiap 0,1 dtk.</>"
+      }
+    ]
+  },
+  "sufferingsEnd": {
+    "name": "Suffering's End",
+    "description": "“Penderitaan akan berakhir. Akan ada kedamaian ... bagi semua Sarkaz ....”\nSarkaz kuno itu merenungkan kata-kata tersebut saat sedang membersihkan Unit Arts di tangannya. Di sekelilingnya, para turis berdatangan tanpa henti bersama orang-orang terkasih dan teman-teman. Para Lich menciptakan pertunjukan kembang api yang spektakuler dengan Arts mereka sementara anak-anak memanjat para prajurit Gargoyle. Orang-orang dari setiap kepercayaan, suku, dan ras bersorak gembira, seperti yang mereka lakukan pada hari ketika Seš’qa mengudara, dan pada setiap Pameran yang merayakan akhir perang.\n“Inikah ... ‘Akhir Penderitaan’ kita ...?”\nSarkaz kuno itu mengemasi barang-barangnya dengan cepat. Dia telah mengumpulkan cukup banyak T-Cred untuk bepergian ke berbagai kota Sentrapolis. Selama bertahun-tahun, dia berencana untuk meninggalkan Seš’qa dan mengunjungi Sentrapolis.\n\nPerjalanan itu berjalan lancar dan tanpa masalah hingga hari itu tiba. Dia sedang berbaring di atas batu raksasa untuk menatap bintang-bintang saat ketel kopi Originium itu tiba-tiba mati dengan bunyi nyaring. Awalnya dia merasa kebingungan, sampai akhirnya dia mendengar ledakan, teriakan, dan jeritan.\nDengan waspada, dia menatap hazefyre yang menyebar. Ada keluarga beranggotakan tiga orang sedang melarikan diri melintasi alam liar dengan berjalan kaki, sementara gerombolan yang terdiri dari tiga puluh sosok belang-belang bersenjata mengejar mereka. Landbreaker. Sarkaz kuno itu menyaksikan pengejaran tersebut ... dan tak melakukan apa-apa. Dia kembali berbaring untuk beristirahat.\n\nDia sudah terlalu tua, dan terlalu biasa. Dia bukanlah seorang Gargoyle yang diberkati dengan tubuh sekuat benteng, juga bukan seorang Lich yang menggunakan Arts yang esoteris dan mematikan, bukan pula seorang Nachzehrer dengan kekuatan mereka yang mengerikan. Dia hanyalah seorang Sarkaz blasteran yang cukup beruntung bisa bertahan hidup lebih lama dari Perang Aggelos, Perang Hina, dan Perang Jakubin yang telah menghancurkan Panglima Perang Alam Liar. Yang dia tahu hanyalah trik-trik bertahan hidup yang aneh.\nTapi, tak sampai beberapa belas detik kemudian, Sarkaz itu mengeluarkan Unit Arts-nya dan melompat turun dari batu besar itu. Dia teringat pada sang Pembicara gila yang memberikan pidato dan janji kepada para Sarkaz, dengan teks orasi yang jelas-jelas tak ditulis sendiri olehnya. Walau demikian, ada hal yang tak akan pernah berubah. Jika ingin penderitaan berakhir, harus ada seseorang yang melakukan sesuatu untuk mengatasinya.\nDengan lembut dia membersihkan Unit Arts-nya. Sasisnya memantulkan wajah seorang Sarkaz yang telah sangat menua, jauh melampaui masa lalu.\n\nSebuah panah menancap pada sang ayah yang sedang melarikan diri sambil menggendong anaknya. Keduanya pun tersungkur ke tanah. Sang istri lalu membuang perangkat komunikasinya dan berusaha menyeret suaminya ke tempat yang aman. Semuanya sia-sia. Kawanan breaker sudah mengepung mereka. Malam di alam liar itu seketika menjadi sunyi.\nKawanan breaker itu melolong dan tertawa saat mereka mengepung keluarga malang tersebut. Mereka mengangkat senjata tanpa belas kasihan. Pria dan wanita itu berusaha, dengan sia-sia, untuk melindungi anak mereka. Cahaya obor terpantul dari pedang, panah busur silang, dan dari air mata anak malang itu.\nSebuah bayangan besar dengan dua tanduk tiba-tiba muncul di belakang kawanan breaker. Tanpa suara dan peringatan, kegelapan yang lebih pekat dari malam pun menyelimuti tempat itu. Satu per satu, kegelapan itu mencengkeram kawanan breaker yang melolong putus asa saat nyawa mereka direnggut. Breaker lainnya ketakutan. Dengan putus asa, mereka mencari asal serangan mendadak itu. Tapi, kata-kata yang bergema dalam angin malam lebih dulu menemukan mereka, kata-kata yang diucapkan dalam bahasa Sarkaz tua yang serak—\n“Penderitaanku telah berakhir. Tapi penderitaan kalian ... baru saja dimulai.”",
+    "decoDesc": "Salah satu Unit Arts aneh dari Witching Hour. Senjata ini tampaknya dipenuhi Originium Arts berwujud tak wajar yang memberikan rasa aman tak terbayangkan kepada si pemakai.",
+    "skills": [
+      {
+        "name": "Agility [L]",
+        "description": "Agility <@ba.vup>+{agi}</>"
+      },
+      {
+        "name": "Nature DMG [L]",
+        "description": "Nature DMG Dealt <@ba.vup>+{naturaldam:0.0%}</>"
+      },
+      {
+        "name": "Detonate: Dawn of the Long Night",
+        "description": "Intensitas Arts <@ba.vup>+{phy_spell_up:0}</>.\nSaat mengakibatkan <#ba.spellburst>Arts Burst</>, si pemakai akan mendapatkan Nature DMG Dealt <@ba.vup>+{nature_dmg_up:0.0%}</> selama {duration:0} dtk.\n<@ba.info>Tumpukan maks untuk efek ini: {max_stack:0}. Durasi setiap tumpukan dihitung sendiri-sendiri. Efek ini hanya bisa diaktifkan satu kali setiap 0,1 dtk.</>\nSaat mencapai {max_stack:0} tumpuk, efek ini akan memberikan tambahan Nature DMG Dealt <@ba.vup>+{nature_dmg_up2:0.0%}</>.\n<@ba.info>Efek ini tidak bisa ditumpuk.</>"
       }
     ]
   },
@@ -605,12 +643,12 @@
     "decoDesc": "Salah satu senjata tingkat lanjut yang diproduksi oleh Endfield untuk operator senior mereka. Senjata yang ramping dan ringan ini sangat seimbang dan membuat banyak orang teringat pada tombak edisi standar yang pernah digunakan oleh operator Vanguard di Rhodes Island.",
     "skills": [
       {
-        "name": "Agility Boost [S]",
+        "name": "Agility [S]",
         "description": "Agility <@ba.vup>+{agi}</>"
       },
       {
-        "name": "ATK Boost [S]",
-        "description": "Serangan <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATK [S]",
+        "description": "ATK <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Inspiring: Start of a Saga",
@@ -624,11 +662,11 @@
     "decoDesc": "Tombak eksperimental yang dirancang oleh Endfield Industries dan diproduksi dalam jumlah sangat terbatas. Senjata ini punya desain modular sehingga bisa dibongkar dan dirakit ulang di tengah kondisi medan pertarungan yang kompleks dan tidak bersahabat.",
     "skills": [
       {
-        "name": "Strength Boost [M]",
+        "name": "Strength [M]",
         "description": "Strength <@ba.vup>+{str}</>"
       },
       {
-        "name": "Ultimate Gain Efficiency Boost [M]",
+        "name": "Efisiensi ULT [M]",
         "description": "Efisiensi Perolehan Ultimate <@ba.vup>+{usgs:0.0%}</>"
       },
       {
@@ -643,11 +681,11 @@
     "decoDesc": "Produk klasik dari proses manufaktur RAYTHEAN yang bisa disesuaikan. Senjata ini dibuat berdasarkan tombak militer standar dan punya serangkaian fungsi khusus dan komponen estetika yang bisa disesuaikan.",
     "skills": [
       {
-        "name": "Will Boost [M]",
+        "name": "Will [M]",
         "description": "Will <@ba.vup>+{will}</>"
       },
       {
-        "name": "Electric DMG Boost [M]",
+        "name": "Electric DMG [M]",
         "description": "Electric DMG Dealt <@ba.vup>+{electrondam:0.0%}</>"
       },
       {
@@ -662,11 +700,11 @@
     "decoDesc": "Senjata kuno dari Hub Pendukung Northmarch yang sangat sulit dikendalikan. Walau begitu, senjata ini mampu menghasilkan damage yang luar biasa. Kebanyakan orang mungkin tidak suka senjata ini karena sangat berat, tapi di mata pengguna berfisik kuat yang menyukai gerakan dahsyat dan berlebihan, senjata ini cukup bagus.",
     "skills": [
       {
-        "name": "Agility Boost [L]",
+        "name": "Agility [L]",
         "description": "Agility <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Ultimate Gain Efficiency Boost [L]",
+        "name": "Efisiensi ULT [L]",
         "description": "Efisiensi Perolehan Ultimate <@ba.vup>+{usgs:0.0%}</>"
       },
       {
@@ -681,11 +719,11 @@
     "decoDesc": "Tombak standar yang dibuat oleh Fort Forgefane untuk mempersenjatai prajurit biasa. Punya ujung yang sangat tajam dan dirancang khusus untuk menghadapi Aggelos.",
     "skills": [
       {
-        "name": "Will Boost [S]",
+        "name": "Will [S]",
         "description": "Will <@ba.vup>+{will}</>"
       },
       {
-        "name": "Arts Boost [S]",
+        "name": "Arts DMG [S]",
         "description": "Arts DMG Dealt <@ba.vup>+{spelldam:0.0%}</>"
       },
       {
@@ -700,7 +738,7 @@
     "decoDesc": "Salah satu senjata edisi standar yang diproduksi oleh Endfield Industries untuk operator. Senjata ini dirancang sendiri oleh Ahli Mesin Senjata senior Endfield, Opero. Desainnya yang ergonomis membuat senjata ini mudah digunakan secara efektif, bahkan oleh para operator baru Endfield sekalipun.",
     "skills": [
       {
-        "name": "Main Attribute Boost [S]",
+        "name": "Atribut Utama [S]",
         "description": "Atribut utama <@ba.vup>+{mainattr}</>"
       },
       {
@@ -715,11 +753,11 @@
     "decoDesc": "Produk kelas menengah dari Mieszko Industries. Tombak ini langka tapi sangat dicari karena desain klasiknya yang menyerupai panah ballista serta performanya yang efektif di lapangan.",
     "skills": [
       {
-        "name": "Agility Boost [L]",
+        "name": "Agility [L]",
         "description": "Agility <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Physical DMG Boost [L]",
+        "name": "Physical DMG [L]",
         "description": "Physical DMG Dealt <@ba.vup>+{phydam:0.0%}</>"
       },
       {
@@ -734,12 +772,12 @@
     "decoDesc": "Senjata eksperimental yang diproduksi dengan standar tertinggi oleh Hub Pendukung Northmarch. Prototipenya dirancang oleh Pusat Penelitian Antariksa yang sudah dibubarkan. Performa turbo pada tombak ini dihasilkan oleh serangkaian mesin jet kompresi Originium.",
     "skills": [
       {
-        "name": "Main Attribute Boost [L]",
+        "name": "Atribut Utama [L]",
         "description": "Atribut utama <@ba.vup>+{mainattr}</>"
       },
       {
-        "name": "Attack Boost [L]",
-        "description": "Serangan <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATK [L]",
+        "description": "ATK <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Suppression: Astrophysics",
@@ -753,11 +791,11 @@
     "decoDesc": "Tombak eksperimental yang dikembangkan oleh Hongshan Swordmancers. Gagangnya ditempa menggunakan logam paduan khusus agar kuat dan berdaya tahan tinggi.",
     "skills": [
       {
-        "name": "Agility Boost [L]",
+        "name": "Agility [L]",
         "description": "Agility <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Physical DMG Boost [L]",
+        "name": "Physical DMG [L]",
         "description": "Physical DMG Dealt <@ba.vup>+{phydam:0.0%}</>"
       },
       {
@@ -772,11 +810,11 @@
     "decoDesc": "Senjata standar yang diproduksi oleh Endfield Industries. Desainnya dibuat oleh Tim Kreatif Prototipe yang didirikan oleh Ahli Mesin Senjata Senior, Opero. Penggunanya bebas mengatur modul ujung tombak sesuai kebutuhan.",
     "skills": [
       {
-        "name": "Will Boost [M]",
+        "name": "Will [M]",
         "description": "Will <@ba.vup>+{will}</>"
       },
       {
-        "name": "Physical DMG Boost [M]",
+        "name": "Physical DMG [M]",
         "description": "Physical DMG Dealt <@ba.vup>+{phydam:0.0%}</>"
       },
       {
@@ -791,11 +829,11 @@
     "decoDesc": "Seri produk unggulan Mieszko Industries, dibuat khusus sesuai pesanan para aktor seni pertunjukan terkenal. Desainnya yang indah dan mencolok dengan bentuk seperti mikrofon berpadu dengan performa dan kekuatan yang luar biasa. Senjata ini membuat semua orang yang mengujinya terkesan.",
     "skills": [
       {
-        "name": "Will Boost [L]",
+        "name": "Will [L]",
         "description": "Will <@ba.vup>+{will}</>"
       },
       {
-        "name": "Treatment Efficiency Boost [L]",
+        "name": "Efisiensi Treatment [L]",
         "description": "Efisiensi Treatment <@ba.vup>+{heal:0.0%}</>."
       },
       {
@@ -810,11 +848,11 @@
     "decoDesc": "Salah satu senjata galah yang diproduksi oleh Witching Hour. Edisi peringatan khusus dirilis pada Hari Pameran Seš’qa. Bilah tombak ini diproses dengan teknik pelapisan khusus untuk memberikan hasil akhir yang sangat fungsional sekaligus memanjakan mata.",
     "skills": [
       {
-        "name": "Agility Boost [L]",
+        "name": "Agility [L]",
         "description": "Agility <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Heat DMG Boost [L]",
+        "name": "Heat DMG [L]",
         "description": "Heat DMG Dealt <@ba.vup>+{firedam:0.0%}</>"
       },
       {
@@ -829,11 +867,11 @@
     "decoDesc": "Salah satu produk unggulan Mieszko Industries. Ujung tombaknya terbuat dari logam paduan khusus yang memberikan ketahanan luar biasa dan tepian setajam silet. Senjata ini memancarkan keanggunan serta kemewahan, dan biaya pembuatannya sangat mahal. Biasanya, senjata ini digunakan oleh orang-orang yang ingin menonjolkan gengsi.",
     "skills": [
       {
-        "name": "Will Boost [L]",
+        "name": "Will [L]",
         "description": "Will <@ba.vup>+{will}</>"
       },
       {
-        "name": "Treatment Efficiency Boost [L]",
+        "name": "Efisiensi Treatment [L]",
         "description": "Efisiensi Treatment <@ba.vup>+{heal:0.0%}</>."
       },
       {
@@ -848,7 +886,7 @@
     "decoDesc": "Salah satu senjata edisi standar yang diproduksi oleh Endfield Industries untuk operator. Senjata ini dirancang oleh Ahli Mesin Senjata Endfield, Peco. Penguasaan amunisi ukir dan senjata api kini bukan lagi kemampuan yang hanya dimiliki para Sankta.",
     "skills": [
       {
-        "name": "Main Attribute Boost [S]",
+        "name": "Atribut Utama [S]",
         "description": "Atribut utama <@ba.vup>+{mainattr}</>"
       },
       {
@@ -863,12 +901,12 @@
     "decoDesc": "Produk kelas menengah dari Mieszko Industries. Pistol ini adalah kombinasi sempurna antara desain klasik Laterano dan konstruksi industri modern. Lapisan metalik birunya memberikan sentuhan akhir pada karya seni yang unik ini.",
     "skills": [
       {
-        "name": "Intellect Boost [S]",
+        "name": "Intellect [S]",
         "description": "Intellect <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "ATK Boost [S]",
-        "description": "Serangan <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATK [S]",
+        "description": "ATK <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Suppression: Emergency Boost",
@@ -882,11 +920,11 @@
     "decoDesc": "Senapan edisi standar yang dibuat oleh Fort Forgefane untuk prajurit biasa di Order of Steel Oath. Senjata ini sangat populer karena mekanisme tembaknya yang sederhana dan daya hentinya yang luar biasa.",
     "skills": [
       {
-        "name": "Strength Boost [S]",
+        "name": "Strength [S]",
         "description": "Strength <@ba.vup>+{str}</>"
       },
       {
-        "name": "Arts Boost [S]",
+        "name": "Arts DMG [S]",
         "description": "Arts DMG Dealt <@ba.vup>+{spelldam:0.0%}</>"
       },
       {
@@ -901,11 +939,11 @@
     "decoDesc": "RAYTHEAN Industries mengembangkan pistol berenergi tinggi ini untuk digunakan di perbatasan. Keandalannya di lingkungan yang tak bersahabat membuat pistol ini menjadi senjata standar di kalangan penjelajah alam liar.",
     "skills": [
       {
-        "name": "Strength Boost [M]",
+        "name": "Strength [M]",
         "description": "Strength <@ba.vup>+{str}</>"
       },
       {
-        "name": "Heat DMG Boost [M]",
+        "name": "Heat DMG [M]",
         "description": "Heat DMG Dealt <@ba.vup>+{firedam:0.0%}</>"
       },
       {
@@ -920,11 +958,11 @@
     "decoDesc": "Konsep inovatif tahun ini dari Mieszko Industries. Mari kita gunakan untuk mengenang sang Navigator agung yang memimpin perjalanan tak berujung kita melintasi Talos-II.",
     "skills": [
       {
-        "name": "Intellect Boost [L]",
+        "name": "Intellect [L]",
         "description": "Intellect <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Cryo DMG Boost [L]",
+        "name": "Cryo DMG [L]",
         "description": "Cryo DMG Dealt <@ba.vup>+{crystdam:0.0%}</>"
       },
       {
@@ -939,11 +977,11 @@
     "decoDesc": "Proyek kontrak yang dikembangkan oleh Lab Æthertech Portabel. Para ahli cræft dengan berani melengkapi senjata ini dengan lapisan relicolith, yang diukir dengan pola khusus.",
     "skills": [
       {
-        "name": "Agility Boost [M]",
+        "name": "Agility [M]",
         "description": "Agility <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Arts Boost [M]",
+        "name": "Arts DMG [M]",
         "description": "Arts DMG Dealt <@ba.vup>+{spelldam:0.0%}</>"
       },
       {
@@ -958,11 +996,11 @@
     "decoDesc": "Senapan yang dikembangkan oleh Hongshan Swordmancers. Fitur penghematan berat serta optimasi pegangan serta bentuknya pun digunakan agar sesuai dengan prinsip desain dasar senjata HAS.",
     "skills": [
       {
-        "name": "Agility Boost [L]",
+        "name": "Agility [L]",
         "description": "Agility <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Cryo DMG Boost [L]",
+        "name": "Cryo DMG [L]",
         "description": "Cryo DMG Dealt <@ba.vup>+{crystdam:0.0%}</>"
       },
       {
@@ -977,11 +1015,11 @@
     "decoDesc": "Karya legendaris dari Hub Pendukung Northmarch yang mewujudkan gaya dan keunggulan senjata Northmarch dengan sempurna. Senjata ini punya daya tembak dahsyat, keandalan sempurna, penanganan yang sulit, serta hentakan yang luar biasa.",
     "skills": [
       {
-        "name": "Main Attribute Boost [L]",
+        "name": "Atribut Utama [L]",
         "description": "Atribut utama <@ba.vup>+{mainattr}</>"
       },
       {
-        "name": "Critical Rate Boost [L]",
+        "name": "Critical Rate [L]",
         "description": "Critical Rate <@ba.vup>+{crirate:0.0%}</>"
       },
       {
@@ -996,11 +1034,11 @@
     "decoDesc": "Senapan khusus yang diproduksi oleh RAYTHEAN Industries. Senjata eksperimental ini sangat sulit digunakan. Prototipenya dirilis ke pasar senjata dalam jumlah sangat terbatas.",
     "skills": [
       {
-        "name": "Main Attribute Boost [L]",
+        "name": "Atribut Utama [L]",
         "description": "Atribut utama <@ba.vup>+{mainattr}</>"
       },
       {
-        "name": "Arts Boost [L]",
+        "name": "Arts DMG [L]",
         "description": "Arts DMG Dealt <@ba.vup>+{spelldam:0.0%}</>"
       },
       {
@@ -1015,11 +1053,11 @@
     "decoDesc": "Salah satu produk paling populer dari Mieszko Industries lewat seri Kolaborasi Perupa mereka yang berani. Senjata api ini memadukan gaya memukau yang sepadan dengan performanya yang sangat buas. Popularitasnya terbukti lewat harganya yang tinggi di pasar sekunder.",
     "skills": [
       {
-        "name": "Intellect Boost [L]",
+        "name": "Intellect [L]",
         "description": "Intellect <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Critical Rate Boost [L]",
+        "name": "Critical Rate [L]",
         "description": "Critical Rate <@ba.vup>+{crirate:0.0%}</>"
       },
       {
@@ -1034,12 +1072,12 @@
     "decoDesc": "Senapan yang dikembangkan oleh Hongshan Swordmancers. Senjata ini ringan dan mudah dibawa-bawa karena terbuat dari material yang tahan lama dan andal dengan desain yang sederhana. Sangat berguna dalam berbagai lingkungan dan situasi sulit.",
     "skills": [
       {
-        "name": "Agility Boost [L]",
+        "name": "Agility [L]",
         "description": "Agility <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Attack Boost [L]",
-        "description": "Serangan <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATK [L]",
+        "description": "ATK <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Detonate: Brigand’s Bane",
@@ -1053,11 +1091,11 @@
     "decoDesc": "Senjata standar yang diproduksi oleh Endfield Industries. Desainnya dibuat oleh Tim Kreatif Prototipe yang didirikan oleh Ahli Mesin Senjata Senior, Opero. Senjata ini dibuat dari material yang ringan, praktis, dan tahan lama.",
     "skills": [
       {
-        "name": "Agility Boost [M]",
+        "name": "Agility [M]",
         "description": "Agility <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Ultimate Gain Efficiency Boost [M]",
+        "name": "Efisiensi ULT [M]",
         "description": "Efisiensi Perolehan Ultimate <@ba.vup>+{usgs:0.0%}</>"
       },
       {
@@ -1072,7 +1110,7 @@
     "decoDesc": "Salah satu senjata edisi standar yang diproduksi oleh Endfield Industries untuk operator. Senjata ini dirancang oleh Ahli Mesin Senjata Endfield, Tarr, dan kerap digunakan sebagai senjata pertama oleh para operator lapangan.",
     "skills": [
       {
-        "name": "Main Attribute Boost [S]",
+        "name": "Atribut Utama [S]",
         "description": "Atribut utama <@ba.vup>+{mainattr}</>"
       },
       {
@@ -1087,11 +1125,11 @@
     "decoDesc": "Salah satu senjata elite yang diproduksi oleh Endfield untuk operator mereka. Pedang ini punya gagang mulus berpelindung dan mekanisme penyimpanan energi yang dipicu oleh tekanan untuk menaikkan potensi damage-nya.",
     "skills": [
       {
-        "name": "Agility Boost [M]",
+        "name": "Agility [M]",
         "description": "Agility <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Physical DMG Boost [M]",
+        "name": "Physical DMG [M]",
         "description": "Physical DMG Dealt <@ba.vup>+{phydam:0.0%}</>"
       },
       {
@@ -1106,12 +1144,12 @@
     "decoDesc": "Salah satu senjata tajam yang ditempa oleh Witching Hour. Proses peleburan khususnya menghasilkan mata pedang yang seluruhnya berwarna merah. Unit Arts-nya sebenarnya adalah Originium cair khusus yang menyerupai tetesan darah yang tumpah dari tempaan.",
     "skills": [
       {
-        "name": "Intellect Boost [L]",
+        "name": "Intellect [L]",
         "description": "Intellect <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Attack Boost [L]",
-        "description": "Serangan <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATK [L]",
+        "description": "ATK <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Twilight: Blazing Wail",
@@ -1125,11 +1163,11 @@
     "decoDesc": "Salah satu senjata yang dibuat oleh Fort Forgefane. Pedang ini punya arsitektur tradisional yang membuatnya sangat awet dan kokoh. Mata pedangnya yang tebal dan berat meninggalkan banyak sekali bekas luka di lapisan es abadi seiring dengan pergeseran wilayah garis depan.",
     "skills": [
       {
-        "name": "Intellect Boost [M]",
+        "name": "Intellect [M]",
         "description": "Intellect <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Ultimate Gain Efficiency Boost [M]",
+        "name": "Efisiensi ULT [M]",
         "description": "Efisiensi Perolehan Ultimate <@ba.vup>+{usgs:0.0%}</>"
       },
       {
@@ -1144,11 +1182,11 @@
     "decoDesc": "Salah satu senjata tingkat lanjut yang diproduksi oleh Endfield untuk operator mereka. Arsitektur modularnya yang minimalis menghasilkan senjata ringan dengan keseimbangan dan penanganan yang sangat baik. Mata pedangnya sendiri sangat awet.",
     "skills": [
       {
-        "name": "Agility Boost [S]",
+        "name": "Agility [S]",
         "description": "Agility <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Physical DMG Boost [S]",
+        "name": "Physical DMG [S]",
         "description": "Physical DMG Dealt <@ba.vup>+{phydam:0.0%}</>"
       },
       {
@@ -1163,12 +1201,12 @@
     "decoDesc": "Produk kelas menengah dari Mieszko Industries. Pedang ini menyuguhkan desain yang anggun dan avant garde serta rasio biaya-performa yang luar biasa. Tak heran, senjata ini menjadi salah satu pilihan paling modern tahun ini di TGCC.",
     "skills": [
       {
-        "name": "Intellect Boost [S]",
+        "name": "Intellect [S]",
         "description": "Intellect <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "ATK Boost [S]",
-        "description": "Serangan <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATK [S]",
+        "description": "ATK <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Pursuit: Unending Cycle",
@@ -1182,11 +1220,11 @@
     "decoDesc": "Solusi pertahanan diri ringan generasi terbaru yang dirilis oleh RAYTHEAN Industries. Pedang ini punya mata pedang dari logam paduan khusus dan terbukti cukup populer di kalangan “profesional” tertentu.",
     "skills": [
       {
-        "name": "Intellect Boost [L]",
+        "name": "Intellect [L]",
         "description": "Intellect <@ba.vup>+{wisd}</>"
       },
       {
-        "name": "Heat DMG Boost [L]",
+        "name": "Heat DMG [L]",
         "description": "Heat DMG Dealt <@ba.vup>+{firedam:0.0%}</>"
       },
       {
@@ -1201,11 +1239,11 @@
     "decoDesc": "Pedang hiasan papan atas dari Hongshan Swordmancers. Senjata ini banyak dijadikan penghargaan bagi individu berprestasi. Namanya dipilih melalui pemungutan suara internal di Hongshan Academy of Sciences.",
     "skills": [
       {
-        "name": "Main Attribute Boost [L]",
+        "name": "Atribut Utama [L]",
         "description": "Atribut utama <@ba.vup>+{mainattr}</>"
       },
       {
-        "name": "Critical Rate Boost [L]",
+        "name": "Critical Rate [L]",
         "description": "Critical Rate <@ba.vup>+{crirate:0.0%}</>"
       },
       {
@@ -1220,12 +1258,12 @@
     "decoDesc": "Produk dasar dari seri Pioneer yang dirilis oleh Hub Pendukung Northmarch. Pemotong Termit Mk IV ini dibuat menggunakan material termit yang dipatenkan dan memberikan performa potong yang kuat. Mendapatkan ulasan positif dari banyak ahli mesin UWST.",
     "skills": [
       {
-        "name": "Will Boost [L]",
+        "name": "Will [L]",
         "description": "Will <@ba.vup>+{will}</>"
       },
       {
-        "name": "Attack Boost [L]",
-        "description": "Serangan <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATK [L]",
+        "description": "ATK <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Flow: Thermal Release",
@@ -1239,11 +1277,11 @@
     "decoDesc": "Pedang papan atas yang dirilis oleh Mieszko Industries. Mata pedangnya yang dipahat dan diukir dengan halus ini juga punya performa yang andal. Senjata ini diterima dengan baik di kalangan para elite TGCC dan masyarakat kelas atas.",
     "skills": [
       {
-        "name": "Main Attribute Boost [L]",
+        "name": "Atribut Utama [L]",
         "description": "Atribut utama <@ba.vup>+{mainattr}</>"
       },
       {
-        "name": "Physical DMG Boost [L]",
+        "name": "Physical DMG [L]",
         "description": "Physical DMG Dealt <@ba.vup>+{phydam:0.0%}</>"
       },
       {
@@ -1258,11 +1296,11 @@
     "decoDesc": "Salah satu senjata yang dibuat di tungku Fort Forgefane. Pegangannya dibuat melalui proses penarikan batang khusus untuk meningkatkan peredaman gaya dan genggamannya. Bilahnya sendiri ditempa dengan mineral langka yang ditambang dari alam liar.",
     "skills": [
       {
-        "name": "Main Attribute Boost [L]",
+        "name": "Atribut Utama [L]",
         "description": "Atribut utama <@ba.vup>+{mainattr}</>"
       },
       {
-        "name": "Arts Intensity Boost [L]",
+        "name": "Intensitas Arts [L]",
         "description": "Intensitas Arts <@ba.vup>+{physpell:0}</>"
       },
       {
@@ -1277,11 +1315,11 @@
     "decoDesc": "Senjata kelas satu keluaran Hongshan Swordmancers dan satu-satunya yang cukup populer di pasar. Tapi, ada banyak tiruannya di alam liar.",
     "skills": [
       {
-        "name": "Agility Boost [M]",
+        "name": "Agility [M]",
         "description": "Agility <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Physical DMG Boost [M]",
+        "name": "Physical DMG [M]",
         "description": "Physical DMG Dealt <@ba.vup>+{phydam:0.0%}</>"
       },
       {
@@ -1296,12 +1334,12 @@
     "decoDesc": "Senjata dari tungku Fort Forgefane. Walau sudah berkali-kali ditempa ulang, bilahnya tetap mengandung kekuatan dominasi yang membuat musuh gentar.",
     "skills": [
       {
-        "name": "Will Boost [L]",
+        "name": "Will [L]",
         "description": "Will <@ba.vup>+{will}</>"
       },
       {
-        "name": "Attack Boost [L]",
-        "description": "Serangan <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATK [L]",
+        "description": "ATK <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Flow: Reincarnation",
@@ -1315,11 +1353,11 @@
     "decoDesc": "Salah satu senjata buatan Fort Forgefane. Senjata yang indah dan elegan ini banyak digunakan oleh Order of Steel Oath dalam berbagai upacara, bukan untuk pertarungan di garis depan. Terlepas dari itu, bilahnya sudah berkali-kali dipoles sehingga ujungnya sangat tajam.",
     "skills": [
       {
-        "name": "Agility Boost [L]",
+        "name": "Agility [L]",
         "description": "Agility <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Critical Rate Boost [L]",
+        "name": "Critical Rate [L]",
         "description": "Critical Rate <@ba.vup>+{crirate:0.0%}</>"
       },
       {
@@ -1334,12 +1372,12 @@
     "decoDesc": "Pedang setajam silet yang terlahir dari alam liar. Setiap pandai besi punya cara berbeda untuk memasang hiasan pada gagang senjatanya.",
     "skills": [
       {
-        "name": "Agility Boost [M]",
+        "name": "Agility [M]",
         "description": "Agility <@ba.vup>+{agi}</>"
       },
       {
-        "name": "ATK Boost [M]",
-        "description": "Serangan <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATK [M]",
+        "description": "ATK <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Infliction: Sincere Interrogation",
@@ -1353,12 +1391,12 @@
     "decoDesc": "Senjata standar yang diproduksi oleh Endfield Industries. Desainnya dibuat oleh Tim Kreatif Prototipe yang didirikan oleh Ahli Mesin Senjata Senior, Opero. Pegangannya dilengkapi modul bantuan yang bisa dilepas.",
     "skills": [
       {
-        "name": "Agility Boost [M]",
+        "name": "Agility [M]",
         "description": "Agility <@ba.vup>+{agi}</>"
       },
       {
-        "name": "ATK Boost [M]",
-        "description": "Serangan <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATK [M]",
+        "description": "ATK <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Flow: Unbridled Edge",
@@ -1372,11 +1410,11 @@
     "decoDesc": "Produk unggulan dari seri Penjelajah Alam keluaran Hub Pendukung Northmarch. Pendekatan desain outdoor yang kokoh dan portabilitasnya membuat pedang ini direkomendasikan banyak penjelajah dan pehobi memancing.",
     "skills": [
       {
-        "name": "Strength Boost [M]",
+        "name": "Strength [M]",
         "description": "Strength <@ba.vup>+{str}</>"
       },
       {
-        "name": "Cryo DMG Boost [M]",
+        "name": "Cryo DMG [M]",
         "description": "Cryo DMG Dealt <@ba.vup>+{crystdam:0.0%}</>"
       },
       {
@@ -1391,12 +1429,12 @@
     "decoDesc": "Senjata berkualitas yang diproduksi oleh Endfield Industries. Inovasinya mencakup penggunaan material eksperimental berbasis Originium di badan bilahnya untuk memberikan konduksi energi yang sangat baik.",
     "skills": [
       {
-        "name": "Agility Boost [L]",
+        "name": "Agility [L]",
         "description": "Agility <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Attack Boost [L]",
-        "description": "Serangan <@ba.vup>+{atk:0.0%}</>"
+        "name": "ATK [L]",
+        "description": "ATK <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Infliction: Long Time Wish",
@@ -1410,11 +1448,11 @@
     "decoDesc": "Pedang populer yang diproduksi oleh RAYTHEAN Industries. Pedang ini banyak diselundupkan ke wilayah di luar Sentrapolis karena terbukti sangat laris di kalangan Landbreaker. Banyak pengguna juga melakukan modifikasi khusus pada pedang ini.",
     "skills": [
       {
-        "name": "Agility Boost [L]",
+        "name": "Agility [L]",
         "description": "Agility <@ba.vup>+{agi}</>"
       },
       {
-        "name": "Critical Rate Boost [L]",
+        "name": "Critical Rate [L]",
         "description": "Critical Rate <@ba.vup>+{crirate:0.0%}</>"
       },
       {
@@ -1429,11 +1467,11 @@
     "decoDesc": "Salah satu dari sekian banyak prototipe yang diproduksi oleh Endfield Industries untuk menguji berbagai macam spesifikasi. Senjata ini dirancang sebagai platform serbaguna yang dibuat menggunakan material berkualitas terbaik. Senjata ini merupakan wadah harapan bagi para ahli mesin senjata dari Endfield Industries.",
     "skills": [
       {
-        "name": "Main Attribute Boost [L]",
+        "name": "Atribut Utama [L]",
         "description": "Atribut utama <@ba.vup>+{mainattr}</>"
       },
       {
-        "name": "Arts Intensity Boost [L]",
+        "name": "Intensitas Arts [L]",
         "description": "Intensitas Arts <@ba.vup>+{physpell:0}</>"
       },
       {

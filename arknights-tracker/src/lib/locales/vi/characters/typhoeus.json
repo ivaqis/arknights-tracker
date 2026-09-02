@@ -1,0 +1,576 @@
+{
+  "baseInfo": {
+    "tags": [
+      "Chủ Công",
+      "Bùng Nổ Thuật Pháp"
+    ],
+    "behaviourHateTags": [
+      "Công Nghệ"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Rhodes Island",
+    "expertTags": [
+      "Tri Thức Thiên Nhiên",
+      "Sinh Tồn Ngoài Trời"
+    ],
+    "giftPreferTags": [
+      "Lựa Chọn Của Lữ Khách Võ Lăng"
+    ],
+    "hobbyTags": [
+      "Phong Cách Sống",
+      "Tự Nhiên"
+    ],
+    "raceTag": "Sarkaz"
+  },
+  "skills": {
+    "basicAttack": {
+      "name": "Nữ Thợ Săn Hoang Dã",
+      "description": "ĐÒN ĐÁNH THƯỜNG: \nMột đòn tấn công gồm tối đa 5 chuỗi gây <@ba.natur>ST Tự Nhiên</>. Với cán viên đang điều khiển, <#ba.lastcombo>Đòn Dứt Điểm</> cũng gây <@ba.poise>{poise:0}</> Suy Sụp. \n\nĐÒN BỔ NHÀO: \nĐòn Đánh Thường thi triển trên không trở thành đòn bổ nhào gây <@ba.natur>ST Tự Nhiên</> cho kẻ địch gần đó. \n\nKẾT LIỄU: \nĐòn Đánh Thường thi triển lên kẻ địch bị Suy Sụp trở thành tấn công kết liễu gây lượng lớn <@ba.natur>ST Tự Nhiên</> và hồi một phần Điểm KN.",
+      "batkSeq1Multiplier": "Hệ Số Trình Tự Đòn Đánh Thường 1",
+      "batkSeq2Multiplier": "Hệ Số Trình Tự Đòn Đánh Thường 2",
+      "batkSeq3Multiplier": "Hệ Số Trình Tự Đòn Đánh Thường 3",
+      "batkSeq4Multiplier": "Hệ Số Trình Tự Đòn Đánh Thường 4",
+      "batkSeq5Multiplier": "Hệ Số Trình Tự Đòn Đánh Thường 5",
+      "finisherAtkMultiplier": "Hệ Số Đòn Kết Liễu",
+      "diveAtkMultiplier": "Hệ Số Đòn Bổ Nhào"
+    },
+    "battleSkill": {
+      "name": "Mũi Tên Xuyên Rừng",
+      "description": "Typhoeus nhảy lên không trung và bước vào trạng thái <@ba.key>Lơ Lửng</> trong thời gian ngắn. Trong thời gian này, cô có thể thực hiện 5 Đòn Đánh Thường Trên Không (ĐĐTTK). Mỗi ĐĐTTK có thể bắn tên vào tối đa 2 mục tiêu và gây <@ba.natur>ST Tự Nhiên</>.\nMỗi khi ĐĐTTK đánh trúng kẻ địch đang có <#ba.naturalinflict>Nhiễm Tự Nhiên</>, tiêu hao 1 tầng <#ba.naturalinflict>Nhiễm Tự Nhiên</>, giúp Typhoeus nhận 1 <#ba.arrowenergy>Dấu Ấn</> và nhận thêm Năng Lượng Tuyệt Kỹ.\nNếu Typhoeus có <#ba.arrownum>Mũi Tên Săn</>, cô sẽ tiêu hao 1 <#ba.arrownum>Mũi Tên Săn</> và chuyển ĐĐTTK thành <@ba.key>Phát Bắn Cường Hóa</>.\n<@ba.key>Phát Bắn Cường Hóa</>: Sau khi đánh trúng kẻ địch, Phát Bắn Cường Hóa cưỡng chế áp dụng 1 lần <#ba.naturalburst>Bùng Nổ Tự Nhiên</>; nếu <#ba.naturalinflict>Nhiễm Tự Nhiên</> của mục tiêu bị tiêu hao, ST gây ra bởi lần <#ba.naturalburst>Bùng Nổ Tự Nhiên</> này tăng lên bằng <@ba.vup>{enchence_burst_damage_rate:0.0}</> lần so với ban đầu.\n<@ba.info>Nếu Typhoeus là cán viên đang điều khiển, ĐĐTTK thứ 5 của cô được tính là Đòn Dứt Điểm và Phát Bắn Cường Hóa, đồng thời không tiêu hao Mũi Tên Săn.</>",
+      "initialAerialShotDmgMultiplier": "Hệ Số ST Phát Bắn Trên Không Ban Đầu",
+      "abatkDmg": "ST ĐĐTTK",
+      "aerialFinalStrikeDmg": "ST Đòn Dứt Điểm Trên Không",
+      "aerialFinalStrikeStagger": "Suy Sụp Do Đòn Dứt Điểm Trên Không",
+      "powerShotNatureBurstDmgMultiplier": "Hệ Số ST Bùng Nổ Tự Nhiên Phát Bắn Cường Hóa",
+      "additionalUltimateEnergy": "Năng Lượng Tuyệt Kỹ Bổ Sung"
+    },
+    "comboSkill": {
+      "name": "Gai Nhọn Nổi Loạn",
+      "description": "KÍCH HOẠT LIÊN HOÀN: Khi Typhoeus đạt tối đa <#ba.arrowenergy>Dấu Ấn</>.\nTyphoeus chuyển đổi toàn bộ <#ba.arrowenergy>Dấu Ấn</> thành <#ba.arrownum>Mũi Tên Săn</> và đặt lại số lần Đòn Đánh Thường Trên Không (ĐĐTTK).\nTyphoeus tập trung \"Ánh Nhìn Săn Mồi\" và bắn liên tiếp vào mục tiêu, tạo ra trận <@ba.key>Tập Kích Cụm</> tại khu vực mục tiêu. Kẻ địch trong trận <@ba.key>Tập Kích Cụm</> chịu <@ba.natur>ST Tự Nhiên</> theo thời gian, bị <#ba.slow>làm chậm</> và chịu thêm ST từ <#ba.naturalburst>Bùng Nổ Tự Nhiên</>.\n<@ba.info>Cứ mỗi 2 Dấu Ấn sẽ chuyển hóa thành 1 Mũi Tên Săn.</>",
+      "huntresssGazeHitDmg": "ST Trúng Đòn \"Ánh Nhìn Săn Mồi\"",
+      "stagger": "Suy Sụp",
+      "ultimateEnergyGain": "Tăng Năng Lượng Tuyệt Kỹ",
+      "areaDmgOverTime": "ST Diện Rộng Theo Thời Gian",
+      "slow": "Chậm",
+      "natureBurstDmgBoost": "Tăng ST Bùng Nổ Tự Nhiên"
+    },
+    "ultimate": {
+      "name": "Tiếng Gọi Núi Băng",
+      "description": "Typhoeus bắn một Mũi Tên Quán Năng, phát nổ sau khi trúng kẻ địch và gây lượng lớn <@ba.natur>ST Tự Nhiên</> cho kẻ địch trong phạm vi ảnh hưởng (AOE). Sau đó, cô bước vào trạng thái <@ba.key>Lơ Lửng</> và đặt lại số Đòn Đánh Thường Trên Không (ĐĐTTK).\nTrong 5 ĐĐTTK tiếp theo, mỗi khi đánh trúng kẻ địch, Typhoeus sẽ kích hoạt <@ba.key>Mưa Tên</> gây <@ba.natur>ST Tự Nhiên</> tại vị trí của mục tiêu. Lần <@ba.key>Mưa Tên</> thứ 5 của cô là <@ba.key>Mưa Tên</> cường hóa, gây ST cao hơn.\nKhi thi triển Tuyệt Kỹ, Typhoeus lập tức nhận <@ba.vup>{arrow_num_given:0}</> <#ba.arrownum>Mũi Tên Săn</>.",
+      "imbuedArrowExplosionDmg": "Mũi Tên Quán Năng ST Nổ",
+      "imbuedArrowStagger": "Suy Sụp Mũi Tên Quán Năng",
+      "normalHailOfArrowsDmg": "ST Mưa Tên Thường",
+      "empoweredHailOfArrowsDmg": "ST Mưa Tên Cường Hóa"
+    },
+    "indicator": {
+      "levels": [
+        "Nhanh Nhẹn Cho Cán Viên +10.",
+        "Nhanh Nhẹn Cho Cán Viên +15.",
+        "Nhanh Nhẹn Cho Cán Viên +15.",
+        "Nhanh Nhẹn Cho Cán Viên +20."
+      ],
+      "name": "Kẻ Đánh Lén"
+    },
+    "talent1": {
+      "levels": [
+        "Mỗi khi kích hoạt <#ba.naturalburst>Bùng Nổ Tự Nhiên</> lên kẻ địch, Typhoeus nhận 1 <#ba.arrowenergy>Dấu Ấn</>. ST gây ra bởi các đòn tấn công được cường hóa nhờ tiêu hao <#ba.arrownum>Mũi Tên Săn</> tăng lên bằng <@ba.vup>{atk_scale_enhence:0.0}</> lần so với ban đầu.\nKhi vào trận, Typhoeus lập tức nhận <@ba.vup>{energy_enterfight:0}</> <#ba.arrowenergy>Dấu Ấn</>.\nTyphoeus có thể sở hữu tối đa 4 <#ba.arrownum>Mũi Tên Săn</> và 8 <#ba.arrowenergy>Dấu Ấn</>.\n<@ba.info>Nếu Bùng Nổ Tự Nhiên được kích hoạt đồng thời lên nhiều kẻ địch, hiệu ứng này chỉ được tính là 1 lần Bùng Nổ Tự Nhiên khi tính số Dấu Ấn Typhoeus nhận được.</>",
+        "Mỗi khi kích hoạt <#ba.naturalburst>Bùng Nổ Tự Nhiên</> lên kẻ địch, Typhoeus nhận 1 <#ba.arrowenergy>Dấu Ấn</>. ST gây ra bởi các đòn tấn công được cường hóa nhờ tiêu hao <#ba.arrownum>Mũi Tên Săn</> tăng lên bằng <@ba.vup>{atk_scale_enhence:0.0}</> lần so với ban đầu.\nKhi vào trận, Typhoeus lập tức nhận <@ba.vup>{energy_enterfight:0}</> <#ba.arrowenergy>Dấu Ấn</>.\nTyphoeus có thể sở hữu tối đa 4 <#ba.arrownum>Mũi Tên Săn</> và 8 <#ba.arrowenergy>Dấu Ấn</>.\n<@ba.info>Nếu Bùng Nổ Tự Nhiên được kích hoạt đồng thời lên nhiều kẻ địch, hiệu ứng này chỉ được tính là 1 lần Bùng Nổ Tự Nhiên khi tính số Dấu Ấn Typhoeus nhận được.</>",
+        "Mỗi khi kích hoạt <#ba.naturalburst>Bùng Nổ Tự Nhiên</> lên kẻ địch, Typhoeus nhận 1 <#ba.arrowenergy>Dấu Ấn</>. ST gây ra bởi các đòn tấn công được cường hóa nhờ tiêu hao <#ba.arrownum>Mũi Tên Săn</> tăng lên bằng <@ba.vup>{atk_scale_enhence:0.0}</> lần so với ban đầu.\nKhi vào trận, Typhoeus lập tức nhận <@ba.vup>{energy_enterfight:0}</> <#ba.arrowenergy>Dấu Ấn</>.\nTyphoeus có thể sở hữu tối đa 4 <#ba.arrownum>Mũi Tên Săn</> và 8 <#ba.arrowenergy>Dấu Ấn</>.\n<@ba.info>Nếu Bùng Nổ Tự Nhiên được kích hoạt đồng thời lên nhiều kẻ địch, hiệu ứng này chỉ được tính là 1 lần Bùng Nổ Tự Nhiên khi tính số Dấu Ấn Typhoeus nhận được.</>"
+      ],
+      "name": "Danh Sách Con Mồi"
+    },
+    "talent2": {
+      "levels": [
+        "Khi đang <@ba.key>Bay Lơ Lửng</>, Typhoeus kích hoạt một <@ba.key>Lá Chắn Bảo Hộ</>, giúp giảm <@ba.vup>{damage_resist:0%}</> ST Phải Chịu và khiến cô khó bị gián đoạn hơn trong thời gian lá chắn có hiệu lực. <@ba.key>Lá Chắn Bảo Hộ</> sẽ tan vỡ khi Typhoeus chịu ST, và không thể kích hoạt lại trong <@ba.vup>{sheild_cd:0}</> giây sau đó.",
+        "Khi đang <@ba.key>Bay Lơ Lửng</>, Typhoeus kích hoạt một <@ba.key>Lá Chắn Bảo Hộ</>, giúp giảm <@ba.vup>{damage_resist:0%}</> ST Phải Chịu và khiến cô khó bị gián đoạn hơn trong thời gian lá chắn có hiệu lực. <@ba.key>Lá Chắn Bảo Hộ</> sẽ tan vỡ khi Typhoeus chịu ST, và không thể kích hoạt lại trong <@ba.vup>{sheild_cd:0}</> giây sau đó."
+      ],
+      "name": "Tâm Thợ Săn"
+    },
+    "baseSkill1": {
+      "levels": [
+        "Khi phân công vào Buồng Phát Triển, tăng tốc độ tăng trưởng khoáng sản quý hiếm thêm 20%",
+        "Khi phân công vào Buồng Phát Triển, tăng tốc độ tăng trưởng khoáng sản quý hiếm thêm 30%"
+      ],
+      "name": "Lời Thì Thầm Của Đá"
+    },
+    "baseSkill2": {
+      "levels": [
+        "Khi phân công vào Buồng Phát Triển, tăng tốc độ tăng trưởng vật chất nấm thêm 20%",
+        "Khi phân công vào Buồng Phát Triển, tăng tốc độ tăng trưởng vật chất nấm thêm 30%"
+      ],
+      "name": "Mầm Sống Trong Bào Tử"
+    },
+    "files": {
+      "main": "MẬT DANH: Typhoeus\nGIỚI TÍNH: Nữ\nNHẬN DẠNG: Rhodes Island\nNGÀY SINH: 13 tháng 01\nCHỦNG TỘC: Sarkaz\n[TÌNH TRẠNG NHIỄM ORIPATHY]\nÂm tính với Oripathy, theo báo cáo kiểm tra y tế.\n\n[KHÁM SỨC KHỎE TỔNG HỢP]\nTHỂ CHẤT: Xuất Sắc\nKN CHIẾN ĐẤU: Xuất Sắc\nTƯ DUY CHIẾN THUẬT: Bình Thường\nĐỒNG HÓA THUẬT PHÁP ORIGINIUM: Cơ Bản",
+      "humanResources": "Cán Viên Typhoeus, một Người Trở Về đến từ Rhodes Island. Trong hành trình tìm kiếm những truyền thuyết đã thất lạc của Sami, cô tình cờ gặp Endministrator. Sau đó, cô gia nhập Tập Đoàn Endfield theo lời mời đích thân của Endministrator.\n\nKhi trò chuyện với cô Typhoeus, sự điềm tĩnh và chững chạc mà cô thể hiện vượt xa phần lớn người trưởng thành. Thế nhưng, trí tò mò dường như không bao giờ được thỏa mãn, cùng những ánh mắt dò xét thường xuất hiện chẳng đúng lúc, vẫn để lộ nét trẻ con ẩn sâu bên trong cô.\nTheo quy trình, tôi vốn có rất nhiều câu hỏi cần đặt ra. Nhưng ngay khi cô lấy cuốn sổ tay ra, tôi lại chẳng thể tìm được thời điểm thích hợp để hỏi lấy một câu.\nThật khó tưởng tượng một người lại có thể đặt nhiều câu hỏi đến mức ngay cả tôi cũng thấy mệt vì phải trả lời. Có lần, tôi nhắc cô rằng phần lớn những điều ấy đều có thể tìm thấy trong Cẩm Nang Cán Viên Mới. Thế nhưng, cô chỉ bình thản xoay cây bút trong tay rồi nói rằng mình rất thích cách tôi kể chuyện.\nSau ba giờ hỏi đáp, cô cuối cùng cũng hài lòng rời đi. Trước khi cô khép sổ, tôi thoáng nhìn thấy dòng đánh giá cô viết về mình:\"Có ba cái đầu, chuyện gì cũng biết, hỏi gì cũng trả lời được. Truyền thuyết nào cũng cần một nhân vật như vậy.\"\n— Martin Marvin Malen, Trợ Lý, Bộ Phận HR, Tập Đoàn Endfield",
+      "file1": "Việc một Cán Viên thành thạo kỹ năng sinh tồn nơi hoang dã như Typhoeus gia nhập đã giúp công việc của chúng tôi tại phương Bắc diễn ra thuận lợi hơn rất nhiều.\nDù Endfield duy trì quan hệ hợp tác chặt chẽ với Hội Lời Thề Thép, họ thường bận đối phó với những trận chiến của riêng mình nên không thể dành quá nhiều thời gian hỗ trợ chúng tôi. Thường thì họ chỉ dẫn chúng tôi đến khu vực Khe Nứt rồi phải lập tức trở lại tiền tuyến, để chúng tôi tự lo phần việc còn lại.\nMôi trường vùng cực vô cùng khắc nghiệt, tuyết phủ quanh năm, nhiệt độ lại xuống cực thấp, gây ra không ít khó khăn cho công tác quan trắc. Có lần, một trận bão tuyết bất ngờ phá hủy doanh trại và khiến toàn bộ thiết bị của chúng tôi ngừng hoạt động. Trong tuyệt vọng, chúng tôi quấn lên người tất cả chăn mền còn sót lại, chỉ biết chờ hoang nguyên băng giá nuốt chửng mình. May thay, Cán Viên Typhoeus đã xuất hiện kịp lúc.\nCùng với cô là nguyên một chiếc đùi thú.\nGiữa đống đổ nát, Typhoeus nhóm lửa trại, dùng món thịt nướng kiểu Sami để mang lại hơi ấm cho mọi người. Sau đó, cô một mình bước vào bão tuyết, mang về gỗ và vỏ cây, rồi chỉ trong một buổi chiều đã dựng nên một căn nhà gỗ đủ chỗ cho bốn người hoàn toàn bằng những vật liệu thô sơ.\nDù không biết gì về những thiết bị chúng tôi mang theo, cô vẫn có thể dựa trên yêu cầu của chúng tôi để bố trí một môi trường vận hành ổn định cho chúng. Khi phải trực tiếp đối mặt với các Khe Nứt, cô vận dụng kinh nghiệm săn bắn để nhanh chóng tiêu diệt từng đàn Aggeloi đang tấn công, hỗ trợ chúng tôi lắp đặt thiết bị và thu hồi những dữ liệu quan trọng.\nBên cạnh kỹ năng sinh tồn ngoài trời, điều khiến mọi người tin tưởng cô nhất chính là trực giác chính xác đến khó tin.\nPhải, dựa vào trực giác của một đồng nghiệp để làm việc nghe chẳng chuyên nghiệp chút nào. Thế nhưng, khi toàn bộ thiết bị dẫn đường đều ngừng hoạt động, chính bản năng của cô đã giúp chúng tôi nhiều lần tránh hiểm trong gang tấc và rút lui an toàn. Suốt hành trình, tất cả chúng tôi đều căng thẳng tột độ, vậy mà cô chưa từng sợ hãi dù chỉ một chút, lúc nào cũng bình tĩnh dẫn đường cho mọi người giữa cơn bão tuyết.\nCó người suy đoán rằng chính những Cyclops sống trên núi đã dạy Typhoeus cách nhìn thấy tương lai. Nhưng theo tôi, đây chỉ đơn giản là cách người Sami chung sống với tự nhiên. Họ đặt mình vào giữa thiên nhiên, hòa thành một phần của nó, nhờ đó có thể nhạy bén cảm nhận từng hơi thở, từng nhịp đập, từng tiếng tim của đất trời, rồi đón nhận những lời mặc khải mà tự nhiên ban tặng.",
+      "file2": "\"Endfield là một tập đoàn chính quy. Mọi người phải học cách phân biệt sự thật với lời đồn. Không phải truyền thuyết nào cũng có thật.\"\nMỗi khi có nhân viên mới gia nhập Endfield, các tiền bối đều đặc biệt nhắc nhở họ như vậy.\nCho đến khi Cán Viên Typhoeus gia nhập Endfield, và mọi nỗ lực ấy lập tức đổ sông đổ biển. Với những câu chuyện huyền bí được cô kể miên man không dứt, cô gái ấy đã xóa nhòa ranh giới giữa lời đồn và hiện thực, biến chúng tôi từ một công ty phảng phất sắc màu truyền kỳ thành... một truyền thuyết đúng nghĩa.\nNhững ký tự bí ẩn chợt lóe lên trên màn hình, tiếng khóc văng vẳng trên Cầu Tàu lúc đêm khuya, những thiết bị chiếu sáng trong Bộ Phận Kỹ Thuật sửa mãi không xong, cứ hễ có người ở một mình là lại chập chờn sáng tắt. Những trùng hợp vụn vặt vốn chỉ cần cười xòa là có thể bỏ qua ấy, qua bàn tay Typhoeus, lại được góp nhặt và đan thành một truyền thuyết khiến người nghe lạnh sống lưng.\n\nTừ rất lâu về trước, thiết bị trên thiên hạm Dijiang liên tục gặp sự cố. Những người thợ đáng thương không còn cách nào khác ngoài trú lại trong xưởng, ngày đêm rèn đúc, sửa chữa, không một phút nghỉ ngơi. Thế nhưng sau tròn một năm lao lực, số máy móc chờ sửa chẳng những không giảm mà còn ngày một nhiều hơn, chất thành từng tầng quanh họ, trải dài như một dãy núi không có điểm cuối.\nCơn giận dữ cuối cùng đã thiêu rụi chút lòng nhân từ còn sót lại trong người thợ ấy. Ông hóa thành một oán linh, nhập vào chính những cỗ máy, thề sẽ trả thù tất cả những kẻ bất cẩn, làm việc qua loa và cắt xén quy trình vận hành.\nÁnh đèn chập chờn trong đêm chính là dấu hiệu cho thấy ông đang đi tuần.\n- Trích sổ tay của Typhoeus.\n\nSau khi câu chuyện này lan truyền khắp Dijiang, số báo cáo hư hỏng được gửi đến Bộ Phận Kỹ Thuật trong tháng đó đã giảm đáng kể.\nSau khi tìm hiểu sự việc, ông Andre vô cùng kinh ngạc, nhưng vẫn đưa ra một nhận xét hết sức công bằng: Đây không phải chuyện kể, mà là sự thật không thể chối cãi.\nVà đó mới chỉ là một chương trong vô số truyền thuyết Typhoeus đã viết cho Endfield. Trong sổ tay của cô, Endministrator là vị hiền giả vĩ đại nắm giữ Đá Khởi Nguyên, Giám Sát Viên Perlica là pháp sư sấm sét điều khiển lôi đình, còn cô Chen là một kiếm khách mang theo trường kiếm. Mọi việc Endfield thực hiện trên Talos-II đều được cô kể lại thành hành trình dựng những thanh cự kiếm bằng đá trên khắp đại địa, nhằm gìn giữ hòa bình thế giới và bảo vệ muôn loài.\nMột đứa trẻ mười hai tuổi có lẽ sẽ thấy những câu chuyện ấy quá ngây ngô. Nhưng với các cán viên Endfield có đầu óc đầy trí tưởng tượng, chúng lại vừa vặn đến hoàn hảo.\n\"Bây giờ mỗi khi làm việc, tôi đều tưởng tượng mình là một Tư Tế Tuyết Sami bí ẩn. Hễ thiết bị quá nhiệt, tôi sẽ đọc lớn những câu chú cổ xưa...\" Nói rồi, Andre cầm khẩu súng làm mát ở góc phòng lên, chĩa vào cỗ máy và hô vang: \"Hỡi gió tuyết, hãy giáng xuống cõi phàm trần!\"",
+      "file3": "Chiến Ca Người Samifjod\nMặt trời làm tuyết tan,\nBóng tối dưới tầng đất đóng băng tháo chạy. \nNhưng bước chân phiêu bạt của ta chưa dừng. \nMặt trời xé toạc tầng mây, \nMưa trong rừng cũng dần lui bước. \nNhưng cuộc chiến của ta chẳng ngừng. \nNâng khiên, khoác giáp, \nĐịnh mệnh giữ chúng ta lại nơi đây. \nDưới ánh mặt trời, \nChúng ta đổ máu và chiến đấu.\n\nSau khi từ Terra đặt chân lên Talos-II, Cự Thú Sami kết thúc cuộc phiêu bạt kéo dài nhiều năm, chọn một miền đất nằm trong vòng cực làm nơi dừng chân, đồng thời đưa Myrkwood trên lưng Ngài an cư tại đó. Dưới sự che chở của Cự Thú, người Sami được hưởng một quãng bình yên ngắn ngủi. Nhưng chẳng bao lâu sau, Cổng Không Gian bị phá hủy, Cuộc Chiến Aggeloi Đầu Tiên bùng nổ. Để bảo vệ người Sami, Cự Thú Sami đã hy sinh mạng sống và ngã xuống nơi Cực Bắc. Người Sami còn chưa kịp than khóc thì đã phải tham gia xây dựng pháo đài của Hội Lời Thề Thép. Sau đó là một cuộc chinh chiến trường kỳ, kéo dài mãi cho đến tận ngày nay.\nKhi tỉnh lại trên Rhodes Island và biết được sứ mệnh mà dân tộc mình đang gánh vác, Typhoeus lập tức thu xếp hành trang, lên đường tiến về phương Bắc. Thế nhưng, sau khi vượt qua một chặng đường dài để đến pháo đài của Hội Lời Thề Thép, cô lại bị một Tư Tế Tuyết Sami vừa trở về từ chiến trường vỗ bốp vào sau đầu bằng bàn tay nồng mùi đất, rồi chặn ngay ngoài cửa.\n\"Bao giờ cao hơn cây cung của mình thì hãy quay lại. Khi ấy mới được ra chiến trường.\"\nDù Typhoeus một mực khẳng định rằng mình chỉ hơi nhỏ người, chẳng ai tin cô. Dù sao, đôi tay cô ấy vẫn chưa có những vết chai dày chỉ hình thành sau nhiều năm kéo cung.\nLạc lõng và thất vọng, cô chỉ còn cách lên một cỗ xe hướng về Myrkwood để gặp những người đồng tộc mà mình chưa từng biết đến. Đó chính là Sami trong ký ức của cô. Cảnh vật, tập tục, ngôn ngữ, giọng nói... tất cả đều được lưu giữ nguyên vẹn. Thế nhưng, đồng thời, mọi thứ lại khiến cô cảm thấy vô cùng xa lạ. Trong khu định cư chỉ còn người già, người bị thương và trẻ nhỏ. Tất cả những ai vẫn còn có thể cầm vũ khí đều đã chọn tiến ra tiền tuyến, lấy máu thịt giữ vững phòng tuyến ấy, ngăn bước Aggeloi tràn xuống phương Nam.\nTyphoeus, khi ấy vẫn chẳng biết phải đi đâu, đành ở lại Myrkwood. Chẳng bao lâu sau, cô biết rằng khi Sami ngã xuống, những truyền thuyết về Ngài cũng tan vỡ theo. Các bậc cao niên từng biết những câu chuyện cổ đã hóa thành xương trắng trên chiến trường bên cạnh chính Sami, trước khi kịp truyền lại chúng cho thế hệ sau. Không thể chiến đấu nơi tiền tuyến, Typhoeus quyết định đi tìm những truyền thuyết còn sót lại và lưu giữ chúng.\n\nEndmin, ngài có biết không? Sami ngã xuống là lựa chọn của chính Ngài. Người dân đã chấp nhận lựa chọn ấy và đi theo Ngài không chút do dự.\nTôi từng tìm thấy tại Myrkwood một phiến Vỏ Cây Cổ Ngữ dùng để bói toán. Trên đó ghi lại một \"cuộc đối thoại\" giữa Tư Tế Tuyết và Sami.\nTrước khi tiến về phương Bắc, Ngài đã cảnh báo người dân Myrkwood rằng từ lâu Ngài đã nhìn thấy một cuộc chiến tàn khốc và kéo dài. Ngài buộc phải đi về phương Bắc, rồi đến một thời khắc nào đó trong tương lai, hy sinh chính mình để bảo vệ muôn loài.\nNgài đã trao cho người dân cơ hội rời đi...\nNhưng trên phiến Vỏ Cây Cổ Ngữ, câu trả lời của họ đã được khắc lại:\nÝ chí của Sami cũng là ý chí của người Sami. Sứ mệnh của Sami cũng là sứ mệnh của người Sami. Chúng con sẽ cùng Ngài tiến về phương Bắc.\nCuộc săn không bao giờ kết thúc.",
+      "file4": "Sau khi Sami ngã xuống, phần lớn người Sami đều chấp nhận kết cục ấy. Họ sinh sống trên di hài của Cự Thú, tiếp nối ý chí của Ngài, chiến đấu chống lại Aggeloi để bảo vệ Talos-II.\nThế nhưng, vẫn có những Tư Tế Tuyết tin rằng Sami chưa thật sự chết. Linh hồn Ngài chỉ bị lạc trong các Khe Nứt và chìm vào một giấc ngủ sâu. Một ngày nào đó, Sami sẽ tỉnh khỏi giấc mộng và trở về bên người dân của mình. Họ tìm đến các Khe Nứt trên khắp Talos-II, dựng tế đàn và tiến hành nghi lễ, cố gọi linh hồn Sami trở về từ những vết nứt ấy. Nhưng không một ai lên đường mà có thể quay lại. Về sau, khi chiến sự ở mặt trận phương Bắc ngày càng cấp bách, cũng chẳng còn ai sẵn lòng tiếp tục những thử nghiệm đó.\nTrong một khu rừng tuyết gần Khe Nứt Cực Lớn Võ Lăng, Typhoeus tìm thấy những bản thảo do một Tư Tế Tuyết Sami như thế để lại. Chúng ghi chép tỉ mỉ mọi lần bà cố đánh thức Sami. Dù qua quá trình tự mình điều tra, Typhoeus đã xác nhận nghi lễ thất bại và vị Nữ Tư Tế Tuyết cũng biến mất không để lại dấu vết, cô gái vẫn cảm nhận được một tia hy vọng mong manh từ những tài liệu còn sót lại.\nĐáng tiếc, sau nhiều tháng nghiên cứu, Typhoeus vẫn không đạt được tiến triển nào.\nCô tìm đến mọi Tư Tế Tuyết và pháp sư ở Hội Lời Thề Thép lẫn Myrkwood để hỏi ý kiến, nhưng tất cả chỉ lắc đầu, cho rằng đó là một nỗ lực đã được định sẵn sẽ thất bại.\nDù liên tiếp đi vào ngõ cụt, Typhoeus vẫn không nản lòng. Những kiến giải độc đáo về giấc mơ trong bản thảo của vị Nữ Tư Tế Tuyết đã giúp cô học được cách nhận ra những điềm báo đặc biệt ẩn trong cõi mộng của người khác.\n\n\"Không hiểu sao gần đây tôi cứ mơ thấy mình bị một con quái vật khổng lồ truy đuổi. Mặt đất dưới chân liên tục chao đảo, cứ như tôi đang đứng trên một cây cầu treo. Đêm nào tôi cũng trằn trọc mãi không ngủ được...\"\n\"Đơn giản thôi. Con quái vật ấy đang săn đuổi anh, còn anh đã bị dồn vào đường cùng.\"\n\"Vậy tôi phải làm gì?\"\n\"Hãy trở nên mạnh hơn. Đừng làm con mồi. Hãy trở thành thợ săn.\"\n\"Tôi nghĩ là mình hiểu rồi.\"\n\nSau cuộc trò chuyện với Typhoeus, vị cán viên ấy đã tự lên cho mình một kế hoạch huấn luyện cường độ cao kéo dài suốt một tháng. Sự mệt mỏi cùng cảm giác thỏa mãn sau mỗi buổi tập giúp anh ngủ ngon suốt đêm. Chẳng bao lâu sau, các đồng nghiệp Endfield bắt đầu tìm đến trước cửa phòng Typhoeus, mang theo đủ loại giấc mơ và nhờ cô giải nghĩa.\nCòn Typhoeus, sau khi lắng nghe những giấc mơ ấy, đã lấy chúng làm nguồn cảm hứng để viết nên một truyền thuyết của riêng mình - một câu chuyện đan xen Cự Thú Sami, những giấc mộng và các Tư Tế Tuyết.\nChẳng bao lâu, Typhoeus đã viết xong phần kết. Cô nghĩ rằng mọi chuyện rồi cũng sẽ khép lại, giống như chính câu chuyện ấy. Vì thế, cô thu dọn ghi chép và lên đường chia sẻ kết cục với những người vẫn đang háo hức chờ đợi. Nhưng đi được nửa đường, cô vô tình lướt qua một cô gái trẻ ngoài hành lang.\nTyphoeus không hề nhận ra cô gái ấy, nhưng lại cảm thấy từ người cô tỏa ra một sự hiện diện quen thuộc đến kỳ lạ.\nĐó là sự hiện diện đã đồng hành cùng dân tộc cô băng qua đầm lầy và rừng sâu, đi hết mùa đông rồi bước vào mùa xuân, từ lúc chào đời cho đến khi lìa xa cõi thế.\nKhi Typhoeus hoàn hồn, cô gái kia đã đi xa.\nMãi sau đó, cô mới biết mật danh của người ấy là Last Rite.\nBị thôi thúc bởi một linh cảm khó gọi thành tên, Typhoeus xé bỏ phần kết mình vừa viết, rồi ghi mật danh ấy lên một trang giấy mới."
+    },
+    "tags": {
+      "expert1": {
+        "name": "Tri Thức Thiên Nhiên",
+        "description": "Tri Thức Thiên Nhiên: Người Dẫn Lối Hoang Dã\nGiữa chốn hoang dã sâu thẳm, vạn vật đều mang một ý nghĩa riêng - dù là bông tuyết đậu trên vai hay cơn gió khẽ nâng mái tóc."
+      },
+      "expert2": {
+        "name": "Sinh Tồn Ngoài Trời",
+        "description": "Sinh Tồn Ngoài Trời: Luật Lệ Đồng Băng\nNgay cả đồng băng khắc nghiệt nhất cũng sẽ rộng lòng với cô thợ săn nhỏ biết tôn trọng quy luật của miền hoang địa."
+      },
+      "hobby1": {
+        "name": "Phong Cách Sống",
+        "description": "Phong Cách Sống: Món Hầm Samifjod\nNồi hầm sôi ùng ục trên bếp lửa. Chẳng ai có thể đoán được cô đã ném những nguyên liệu gì vào đó."
+      },
+      "hobby2": {
+        "name": "Tự Nhiên",
+        "description": "Thiên Nhiên: Chốn Ẩn Náu Hoang Dã\nĐừng hoảng nếu không tìm thấy cô. Chỉ là mùi thép và sắt khiến cô thấy ngột ngạt, nên cô tạm lánh mình nơi hoang địa mà thôi."
+      }
+    },
+    "voiceLines": [
+      {
+        "voId": "chr_0034_typhoea_chrbark_squad_01",
+        "title": "Chuẩn Bị Tác Chiến 1",
+        "text": "Chuẩn bị cho thật kỹ nhé. Hãy mang theo đầy đủ vũ khí và dụng cụ cần thiết. Nếu đi được nửa đường mới phải quay lại vì quên đồ thì xấu hổ lắm."
+      },
+      {
+        "voId": "chr_0034_typhoea_chrbark_squad_02",
+        "title": "Chuẩn Bị Tác Chiến 2",
+        "text": "Một chuyến đi ngoài trời phải được lên kế hoạch cẩn thận. Hãy chú ý mình đi đâu, ăn gì và nói gì."
+      },
+      {
+        "voId": "chr_0034_typhoea_chrbark_join_01",
+        "title": "Đang thêm vào Đội 1",
+        "text": "Có nhiệm vụ cho tôi sao? Cứ nói đi."
+      },
+      {
+        "voId": "chr_0034_typhoea_chrbark_join_02",
+        "title": "Đang thêm vào Đội 2",
+        "text": "Câu hỏi nhanh: Có loại thực vật hoang dã nào có thể ăn sống không? Tốt nhất là không ăn gì cả, đúng không? Chính xác. Ngài vượt qua rồi."
+      },
+      {
+        "voId": "chr_0034_typhoea_chrbark_weap_01",
+        "title": "Đang Đổi Vũ Khí",
+        "text": "Cảm ơn ngài, nhưng thiên nhiên cũng có thể cung cấp vũ khí cho chúng ta. Tôi có thể dùng cành cây để làm tên. Ngài muốn xem không?"
+      },
+      {
+        "voId": "chr_0034_typhoea_chrbark_gear_01",
+        "title": "Đang Đổi Trang Bị",
+        "text": "Tôi không lạnh, cũng chẳng sợ nguy hiểm. Những trang bị này đều không cần thiết. Ngài sẽ lo sao? Vậy thì... tôi nhận vậy."
+      },
+      {
+        "voId": "chr_0034_typhoea_chrup_skill_01",
+        "title": "Kích hoạt Mốc Thiên Phú",
+        "text": "Sau khi màn sương tan đi, chúng ta đã khám phá ra rất nhiều điều."
+      },
+      {
+        "voId": "chr_0034_typhoea_chrup_level_01",
+        "title": "Xem Hồ Sơ Chiến Đấu",
+        "text": "Tôi nghĩ mình vẫn thích trực tiếp tham chiến hơn."
+      },
+      {
+        "voId": "chr_0034_typhoea_chrup_promt01_01",
+        "title": "Thăng Bậc Cán Viên 1",
+        "text": "Được thôi. Tôi rất vui vì ngài xem tôi là một người bạn đồng hành đáng tin cậy."
+      },
+      {
+        "voId": "chr_0034_typhoea_chrup_promt02_01",
+        "title": "Thăng Bậc Cán Viên 2",
+        "text": "Nghe nói được ngài công nhận là chuyện rất đáng mừng, nhưng tôi lại không thấy có gì đặc biệt lắm. Dù ngài nghĩ sao về tôi, tôi vẫn sẽ làm mọi điều có thể để giúp ngài."
+      },
+      {
+        "voId": "chr_0034_typhoea_chrup_promt03_01",
+        "title": "Thăng Bậc Cán Viên 3",
+        "text": "Công nhận sao? Ý ngài là giống với \"được ngài chấp thuận\"... hay là giờ ngài tin tưởng tôi hơn rồi...? Mà ngài tin vào năng lực của tôi, hay tin chính con người tôi?"
+      },
+      {
+        "voId": "chr_0034_typhoea_chrup_promt04_01",
+        "title": "Thăng Bậc Cán Viên 4",
+        "text": "Chúc mừng sao? Tôi tưởng giữa chúng ta đã không còn cần mấy lời khách sáo ấy nữa. Bạn tốt chỉ cần nhìn nhau một cái là hiểu rồi."
+      },
+      {
+        "voId": "chr_0034_typhoea_introduce_01",
+        "title": "Cán Viên Đang Báo Cáo Nhiệm Vụ",
+        "text": "Endmin, tôi đã chủ động tìm đến ngài và thực hiện lời hứa của mình. Còn lời hứa của ngài thì sao? Ngài đã tìm được câu chuyện nào hay để kể cho tôi chưa?"
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_switch_01",
+        "title": "Chờ Lệnh 1",
+        "text": "Lời tiên tri không thể trói buộc chúng ta. Chính chúng ta sẽ tự viết nên cái kết."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_switch_02",
+        "title": "Chờ Lệnh 2",
+        "text": "Truyền thuyết không phải lúc nào cũng xa vời... Đôi khi, chúng xảy ra ngay bên cạnh chúng ta."
+      },
+      {
+        "voId": "chr_0034_typhoea_sim_assign_work_01",
+        "title": "Phân Công Vào Công Trình",
+        "text": "Tôi từng học cách vận hành máy móc, nhưng những ký ức ấy... đã tan đi như tuyết mùa xuân."
+      },
+      {
+        "voId": "chr_0034_typhoea_sim_hello_lower_01",
+        "title": "Lời Chào 1",
+        "text": "Hôm nay Myrkwood sẽ có mưa. Nhớ mang theo ô nhé."
+      },
+      {
+        "voId": "chr_0034_typhoea_sim_hello_max_01",
+        "title": "Lời Chào 2",
+        "text": "Chúc ngài có những giấc mơ đẹp."
+      },
+      {
+        "voId": "chr_0034_typhoea_sim_talk_lv01_01",
+        "title": "Tán Gẫu Ở Dijiang 1",
+        "text": "Tôi vừa đi dạo quanh Cầu Tàu. Có mấy người hỏi liệu họ có thể chơi thử cây cung của tôi không... Lạ thật. Sao mọi người không sợ tôi nhỉ?"
+      },
+      {
+        "voId": "chr_0034_typhoea_sim_talk_lv02_01",
+        "title": "Tán Gẫu Ở Dijiang 2",
+        "text": "Tại sao tôi đến thăm ngài sao? Không có chuyện gì đặc biệt cả. Chắc tôi đâu cần lý do mới được đến gặp ngài, đúng không? Giờ thì xin phép, tôi đi đây."
+      },
+      {
+        "voId": "chr_0034_typhoea_sim_talk_lv02_02",
+        "title": "Tán Gẫu Ở Dijiang 3",
+        "text": "Từ khi đến đây, tôi đã gặp rất nhiều người. Họ kể cho tôi nghe đủ chuyện thú vị. Tất nhiên là tôi đã ghi tất cả vào sổ, nhưng vẫn chừa riêng cho ngài một trang - trang cuối cùng. Vì vậy, tốt nhất ngài nên kể cho tôi một câu chuyện thật dài."
+      },
+      {
+        "voId": "chr_0034_typhoea_sim_talk_max_01",
+        "title": "Tán Gẫu Ở Dijiang 4",
+        "text": "Các nhân viên Endfield ở Kho Vũ Khí đã nâng cấp đầu mũi tên cho tôi. Họ còn tặng tôi một mũi tên tín hiệu, khi nổ giữa không trung sẽ tạo thành logo Endfield phát sáng. Họ bảo trong tình huống khẩn cấp, tôi có thể dùng nó để gọi Dijiang. Nhưng tôi không sợ nguy hiểm, cũng không sợ phải ở một mình... Đây là thử thách của tôi, và tôi phải tự mình vượt qua."
+      },
+      {
+        "voId": "chr_0034_typhoea_sim_talk_max_02",
+        "title": "Tán Gẫu Ở Dijiang 5",
+        "text": "Nơi này không giống những trại tôi từng ghé qua. Không có lửa trại, không có tuyết, cũng chẳng có cây cối. Nhưng khi nằm ngủ trên sàn, tôi có thể cảm nhận được một trái tim mạnh mẽ đang đập \"thình thịch, thình thịch\". Không, đó không phải nhịp đập của vùng đất. Đó là nhịp đập của chính Dijiang."
+      },
+      {
+        "voId": "chr_0034_typhoea_sim_talk_max_03",
+        "title": "Tán Gẫu Ở Dijiang 6",
+        "text": "Tôi vừa gặp một giấc mơ, rồi không sao ngủ lại được. Tôi thấy những vì sao cũng đang thức và nghe chúng khe khẽ thì thầm với nhau. Thứ từng chìm sâu sẽ lại trỗi dậy. Kẻ vẫn còn say mộng sẽ cựa mình tỉnh giấc. Tất cả sẽ thay đổi vận mệnh của Samivegr... Nhưng từ bao giờ những vì sao lại biết nói vậy? Kỳ lạ quá. Chẳng lẽ tôi vẫn còn đang mơ?"
+      },
+      {
+        "voId": "chr_0034_typhoea_sim_gift_give_01",
+        "title": "Tặng Quà",
+        "text": "À, tôi có mang theo một thứ từ phương Bắc về. Đừng lo, chúng sẽ không hỏng đâu. Tôi đã dùng Thuật Pháp Originium để giữ nguyên vẻ đẹp của chúng. Hửm, tay ngài lạnh quá sao? Ôi không, đáng lẽ tôi phải chu đáo hơn mới phải. Hoo-hoo... Được rồi, giờ đã thấy ấm hơn chưa?"
+      },
+      {
+        "voId": "chr_0034_typhoea_sim_gift_recv_01",
+        "title": "Nhận Quà",
+        "text": "Cảm ơn rất nhiều. Dù đi đâu, tôi cũng sẽ mang chúng theo bên mình. Biết đâu ở phía trước đang có một câu chuyện tuyệt vời chờ đợi chúng ta."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_self_line01",
+        "title": "Đối Thoại Tín Nhiệm 1",
+        "text": "Bình tĩnh nào, Endmin. Không cần hoảng đâu. Tôi sẽ bảo vệ ngài. Giờ nói tôi nghe xem, chuyện gì khiến ngài kích động đến vậy...? Con thú khổng lồ bị trói ngoài cửa phòng ngài sao...? Tôi săn nó về cho ngài đấy. Một mình tôi làm. Tôi còn cố giữ nó sống nữa. Tôi đã mai phục trong rừng suốt mấy ngày mới hạ được nó. Nếu ngài không thích thì tôi sẽ mang đi. Da của nó có chất lượng rất tốt đấy."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_self_line02",
+        "title": "Đối Thoại Tín Nhiệm 2",
+        "text": "Đừng cử động, cố chịu một chút nhé. Tôi sắp xong rồi. Tôi sẽ đưa ngài đến một di tích Sami đã bị phong ấn suốt nhiều năm. Ngài cần được bảo vệ cẩn thận trước những cấm chế và phù thuật ở đó. Đừng nhăn mũi nữa. Đây là mùi đất ẩm và rêu tươi. Rồi ngài sẽ quen thôi. Tốt rồi. Giờ ngài có mùi giống... một người Samifjod chính hiệu."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_self_line03",
+        "title": "Đối Thoại Tín Nhiệm 3",
+        "text": "Lạnh sao? Tôi sẽ bỏ thêm củi vào lửa. Túi ngủ đã trải sẵn rồi, ngài cứ nằm xuống nghỉ đi. Đêm nay tôi sẽ canh. Hmm...? Không, tôi không mệt. Tôi có thảo dược giúp tỉnh táo. Đừng động vào chúng! Ngài có muốn ngủ hay không vậy...? Uh... Xin lỗi. Tôi không cố ý cáu với ngài đâu. Chỉ là... mùi của những loại thảo dược ấy rất nồng. Hôm nay ngài đã giúp tôi rất nhiều, nên tôi chỉ muốn ngài được nghỉ ngơi cho tử tế."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_self_line04",
+        "title": "Đối Thoại Tín Nhiệm 4",
+        "text": "Không. Tôi không cho ai xem sổ tay của mình cả. Dù họ có năn nỉ đến đâu cũng không. Tôi đã kể hết những câu chuyện trong đó cho ngài nghe rồi, nên ngài không cần tò mò nữa. Khoan đã. Nếu tôi cho ngài mượn sổ, ngài sẽ kể tôi nghe một câu chuyện về Đèo Yinglung sao...? Được thôi, nhưng chỉ một lát thôi đấy... Người que đội hình vuông màu đen trên đầu là ai sao? Là ngài đấy. Còn người que cầm hình tam giác? Đó là cây cung của tôi! Ngài đang nói gì vậy? Trả sổ lại cho tôi ngay!"
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_self_line05",
+        "title": "Đối Thoại Tín Nhiệm 5",
+        "text": "Sau khi rời Rhodes Island, tôi đã đi qua rất nhiều nơi và gặp đủ kiểu người. Nhưng cuối cùng, nơi nào cũng trở thành một Samivegr khác. Những nhân vật lần lượt rời đi, còn câu chuyện của họ cũng dần phai nhạt. Tôi chỉ có một mình, nhưng đã góp nhặt được cả một kho tàng chuyện kể. Sự cô độc hay những cuộc săn đều không ảnh hưởng đến tôi... Tôi có thể tự mình săn bắn. Nhưng những câu chuyện đó đẹp lắm. Chúng cần được sẻ chia với bạn bè và được mọi người ghi nhớ. Nếu cuối cùng chỉ còn mình tôi nhớ đến chúng... thì đáng tiếc quá."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_chat_line01",
+        "title": "Trò Chuyện 1",
+        "text": "Xòe tay ra nào. Đây... quả mọng từ Myrkwood. Có thể hơi chua, nhưng cố nuốt xuống nhé. Ăn chúng rồi, ngài sẽ gặp may suốt cả tháng."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_chat_line02",
+        "title": "Trò Chuyện 2",
+        "text": "Nghe nói gần đây ngài ngủ không ngon. Hãy treo phiến Vỏ Cây Cổ Ngữ này bên giường. Nó sẽ xua đuổi những thực thể Bất Tịnh định lẻn vào giấc mơ của ngài. Phù văn trên đó nói rằng thuật thức sẽ nghiền nát mọi kẻ xâm nhập thành tro bụi, ném chúng xuống hồ nước lạnh nhất Samivegr rồi đóng băng vĩnh viễn."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_chat_line03",
+        "title": "Trò Chuyện 3",
+        "text": "Đừng lo, Endmin. Tôi đã sống ngoài hoang dã nhiều năm rồi. Lạc đường không còn là điều khiến tôi bận tâm. Những vì sao, ngọn gió và cây cối, tất cả đều có thể chỉ đường cho tôi. Hơn nữa, tôi không nghĩ cứ đi mãi theo một hướng thì sẽ không bao giờ bị lạc. Hãy nhìn con đường dưới chân chúng ta đi. Nó luôn trải rộng về mọi phía. Dù chọn lối nào, phía trước vẫn có những cơ hội và khám phá mới đang chờ đợi. Đừng sợ. Tôi sẽ đi cùng ngài."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_chat_line04",
+        "title": "Trò Chuyện 4",
+        "text": "Kiếm của ngài cùn rồi sao? Đưa tôi. Tôi có đá mài đây. Ngài bất cẩn quá. Bình thường ngài đâu có như vậy. Có chuyện gì khiến ngài lo lắng sao? Đừng giấu tôi. Đôi mắt của một thợ săn giỏi không chỉ dõi theo con mồi, mà còn phải để tâm đến đồng đội... Thôi được. Nếu ngài không muốn nói thì cứ giữ cho riêng mình. Tôi hiểu có những trải nghiệm không nên biến thành chuyện kể. Chúng không cần được nhắc lại, cũng chẳng đáng để hồi tưởng."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_chat_line05",
+        "title": "Trò Chuyện 5",
+        "text": "Không, tôi không hiểu. Pin của chúng ta sắp cạn rồi. Ngài nhất định phải đọc xong báo cáo này ngay hôm nay sao? Và không! Ngài không được đọc nhờ ánh trăng. Làm vậy sẽ hại mắt đấy. Ban ngày có ánh nắng thì phải tận dụng cho tốt, còn ban đêm sinh ra là để chìm vào bóng tối. Ai nói vậy sao? Bao thế hệ hiền giả Samifjod đều nói như thế. Giờ nhìn vào mắt tôi đi. Nói xem, Endmin... tôi có phải đánh ngài ngất đi thì ngài mới chịu ngủ không?"
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_about_line01",
+        "title": "Chủ Đề: Cự Thú Sami",
+        "text": "Khi biết Cự Thú Sami đã ngã xuống để bảo vệ dân tộc mình, tôi thật sự rất bàng hoàng. Thật khó tưởng tượng người Samifjod chúng tôi sẽ tiếp tục sống thế nào nếu không còn được Ngài che chở. Tại những pháo đài phương Bắc, tôi đã thấy đồng bào mình vẫn săn bắn giữa bão tuyết, ngay bên xác thể khổng lồ của Ngài. Trên chiến trường, tôi đã chứng kiến các Tư Tế Tuyết chống lại Aggeloi bằng mọi giá... Và rồi tôi hiểu rằng Ngài cùng ý chí bất khuất của mình vẫn luôn ở bên chúng tôi. Thứ khiến một người rơi vào quên lãng không phải là cái chết, mà là sự đầu hàng."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_about_line02",
+        "title": "Chủ Đề: Amma",
+        "text": "Tôi biết Amma. Tôi vẫn nhớ Ngài. Trên Talos-II, truyền thuyết về vị Thú Vương cổ xưa ấy chỉ còn sót lại những mảnh vụn rời rạc. Người dân của tôi đã cố gắng ghi nhớ, nhưng Ngài rời xa chúng tôi quá sớm, còn ký ức của con người lại chẳng đáng tin đến thế... Tôi từng đi tìm những người có thể đọc trọn vẹn Ammataru, nhưng cuối cùng chỉ thu thập được vài câu, vài đoạn ngắn. Không sao cả. Ít nhất chúng ta vẫn còn những mảnh chuyện ấy. Chỉ cần vẫn còn người ghi nhớ, chúng sẽ giống như những hạt giống... rồi một ngày nảy mầm thành một truyền thuyết hoàn toàn mới."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_about_line03",
+        "title": "Chủ Đề: Hội Lời Thề Thép",
+        "text": "Hội Lời Thề Thép là những người láng giềng tốt, mà điều đó hiếm có lắm. Chúng tôi cùng chia sẻ lửa trại, vũ khí, Thuật Pháp và lương thực. Chúng tôi đã sát cánh đối mặt với giá rét, gió Bắc, Aggeloi và Ankhor. Những người đã ngã xuống của họ hòa mình vào lớp băng vĩnh cửu của chúng tôi, còn hậu duệ của họ đâm chồi và lớn lên giữa những cánh rừng nơi đây. Nhưng họ không phải chúng tôi, và cũng sẽ không bao giờ trở thành chúng tôi. Không, chúng tôi không hề xua đuổi họ. Chỉ là mỗi bên mang một sứ mệnh khác nhau. Những cuộc thập tự chinh của họ rồi sẽ khép lại trong khải hoàn, nhưng cuộc săn của người Samifjod thì không bao giờ kết thúc."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_about_line04",
+        "title": "Chủ Đề: Myrkwood",
+        "text": "Nói trước nhé, chúng tôi rất hiếu khách. Nhưng suốt ngày phải đánh đuổi Aggeloi và Ankhor thì đúng là mệt mỏi. Chưa kể còn có những \"nhà thám hiểm\" lái RV và xe cắm trại đến đây. Họ muốn xem chúng tôi câu cá, săn thú, đốn cây, nấu một nồi hầm thật lớn bên lửa trại, ngủ trong hơi ấm của ngọn lửa, rồi mở mắt đón một ngày mới... Toàn những chuyện thường ngày thôi mà. Có gì đặc biệt đến thế chứ?"
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_about_line05",
+        "title": "Chủ Đề: Quỷ",
+        "text": "Những bóng tối thuở xưa giờ chỉ còn là một chú thích nhỏ trong lịch sử Sami. Những câu chuyện ấy đã quá cổ xưa, giống như một cuốn sổ bị thấm nước, nơi con chữ nhòe báo hiệu bất hạnh. Có lẽ vì thế mà chẳng mấy ai muốn đào sâu thêm. Endmin, chúng ta đã cùng lật qua những trang quá khứ ấy rồi... Giờ đây, ít nhất những kẻ thù trước mắt vẫn còn là thứ có thể nhìn thấy."
+      },
+      {
+        "voId": "chr_0034_typhoea_explore_point_common_01",
+        "title": "Phát hiện Tài Nguyên/Đồ Sưu Tập 1",
+        "text": "Khoan đã. Tôi vừa thấy gì đó ở đằng kia."
+      },
+      {
+        "voId": "chr_0034_typhoea_explore_point_valub_01",
+        "title": "Phát hiện Tài Nguyên/Đồ Sưu Tập 2",
+        "text": "Trực giác mách bảo tôi nên kiểm tra kỹ khu vực này."
+      },
+      {
+        "voId": "chr_0034_typhoea_explore_find_locked_01",
+        "title": "Phát Hiện Khu Vực Chưa Khám Phá",
+        "text": "Biết đâu vùng đất chưa được khám phá sẽ cho chúng ta một câu trả lời khác."
+      },
+      {
+        "voId": "chr_0034_typhoea_explore_find_danger_01",
+        "title": "Phát hiện Kẻ Địch Mạnh",
+        "text": "Phía trước có nguy hiểm. Hãy cẩn thận khi tiến lên."
+      },
+      {
+        "voId": "chr_0034_typhoea_interact_mine_valub_01",
+        "title": "Khai thác 1",
+        "text": "Khoáng sản quý đấy. Chỉ lấy vừa đủ thôi, đừng tham quá."
+      },
+      {
+        "voId": "chr_0034_typhoea_interact_mine_valub_echo2_01",
+        "title": "Khai thác 2",
+        "text": "Để tôi giúp. Có một kỹ thuật đặc biệt có thể làm vỡ phần này ra."
+      },
+      {
+        "voId": "chr_0034_typhoea_interact_treasure_valub_01",
+        "title": "Mở Thùng",
+        "text": "Món quà hào phóng của định mệnh."
+      },
+      {
+        "voId": "chr_0034_typhoea_interact_etherium_01",
+        "title": "Nhận Aurylene",
+        "text": "Aurylene... Phải có kỹ năng của thợ săn mới áp sát và bắt được chúng."
+      },
+      {
+        "voId": "chr_0034_typhoea_interact_blight_break_01",
+        "title": "Loại Bỏ Nhiễm Khuẩn",
+        "text": "Mong là nó chưa làm hại sinh vật nào khác."
+      },
+      {
+        "voId": "chr_0034_typhoea_interact_rest_01",
+        "title": "Nghỉ ngơi",
+        "text": "Tôi cảm thấy... tràn đầy sức sống hơn rồi."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_suppuse_using_01",
+        "title": "Sử Dụng Vật Phẩm Chiến Thuật 1",
+        "text": "Ngài bị thương rồi. Để tôi giúp."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_suppuse_getheal_01",
+        "title": "Sử Dụng Vật Phẩm Chiến Thuật 2",
+        "text": "Tôi đỡ nhiều rồi. Đừng lo."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_remind_danger_01",
+        "title": "Cảnh Báo Nguy Hiểm",
+        "text": "Coi chừng!"
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_hurt_lowhp_01",
+        "title": "Bị Thương",
+        "text": "Không. Tôi vẫn còn sức."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_dead_01",
+        "title": "0 HP",
+        "text": "Xin lỗi... tôi không thể đồng hành đến cuối cùng."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_remind_praise_01",
+        "title": "Cổ Vũ Đội 1",
+        "text": "Rất tốt! Được đồng hành cùng ngài là vinh dự của tôi."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_remind_praise_02",
+        "title": "Cổ Vũ Đội 2",
+        "text": "Cùng nhau chiến đấu... Tôi thích cảm giác này."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_remind_praise_echo2_01",
+        "title": "Đáp Lại Lời Cổ Vũ 1",
+        "text": "Không có gì đâu. Tôi chỉ làm phần việc của mình thôi."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_remind_praise_echo2_02",
+        "title": "Đáp Lại Lời Cổ Vũ 2",
+        "text": "Ngài cũng là một đồng đội rất tuyệt."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_intobattle_01",
+        "title": "Bắt Đầu Chiến Đấu 1",
+        "text": "Đừng hoảng. Chúng ta xử lý được."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_intobattle_echo2_01",
+        "title": "Bắt Đầu Chiến Đấu 2",
+        "text": "Cảm nhận được dòng chảy rồi chứ? Tốt lắm."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_outbattle_nor_01",
+        "title": "Thắng Trận 1",
+        "text": "Tôi thích kết cục này."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_outbattle_nor_02",
+        "title": "Thắng Trận 2",
+        "text": "Đừng vội say sưa với chiến thắng. Chúng ta vẫn phải cảnh giác."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_outbattle_nor_echo2_01",
+        "title": "Thắng Trận 3",
+        "text": "Trong câu chuyện của tôi, luôn có chỗ dành cho tất cả mọi người."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_outbattle_hard_01",
+        "title": "Thắng Trận 4",
+        "text": "Câu chuyện nào cũng có lúc thăng trầm. Nhưng chỉ cần kiên trì, chúng ta sẽ có thể lật sang trang tiếp theo."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_battle_defeat_01",
+        "title": "Bại Trận",
+        "text": "Chúng ta đã không bỏ cuộc, kể cả đến giây phút cuối cùng. Chúng ta đã chiến thắng nỗi sợ của chính mình, và đó chính là cái kết tuyệt vời nhất."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_attack_last_01",
+        "title": "Đòn Dứt Điểm 1",
+        "text": "Di chuyển."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_attack_last_02",
+        "title": "Đòn Dứt Điểm 2",
+        "text": "Im lặng nào."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_skill_nor_01",
+        "title": "KN Chiến Đấu 1",
+        "text": "Quan sát rồi ra đòn!"
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_skill_nor_02",
+        "title": "KN Chiến Đấu 2",
+        "text": "Chạy đâu cho thoát!"
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_skill_nor_03",
+        "title": "KN Chiến Đấu 3",
+        "text": "Đúng lúc lắm."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_skill_comb_ready_01",
+        "title": "Chuẩn Bị KN Liên Hoàn 1",
+        "text": "Con mồi đã sa bẫy."
+      },
+      {
+        "voId": "chr_0034_typhoea_combat_skill_comb_ready_02",
+        "title": "Chuẩn Bị KN Liên Hoàn 2",
+        "text": "Đến lúc chọn con mồi rồi."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_skill_comb_release_01",
+        "title": "Thi Triển Liên Hoàn 1",
+        "text": "Kết thúc rồi."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_skill_comb_release_02",
+        "title": "Thi Triển Liên Hoàn 2",
+        "text": "Chống cự cũng vô ích!"
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_attack_extra_01",
+        "title": "Kết Liễu 1",
+        "text": "Ngươi đi sai nước rồi."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_attack_extra_02",
+        "title": "Kết Liễu 2",
+        "text": "Đừng có chạy nháo nhào nữa."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_skill_ultimate_01",
+        "title": "Tuyệt Kỹ 1",
+        "text": "Đồ hèn nhát. Ta sẽ ghim ngươi tại chỗ."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_skill_ultimate_02",
+        "title": "Tuyệt Kỹ 2",
+        "text": "Không ai thoát khỏi tầm mắt ta."
+      },
+      {
+        "voId": "chr_0034_typhoea_mono_skill_ultimate_03",
+        "title": "Tuyệt Kỹ 3",
+        "text": "Hãy dè chừng đi."
+      }
+    ]
+  },
+  "potentials": {
+    "potential1": {
+      "description": "Khi đang <@ba.key>Lơ Lửng</>, Tấn Công <@ba.vup>+{atk_up:0%}</> và ST ĐĐTTK Gây Ra tăng lên <@ba.vup>{atk_scale_base:0.0}</> lần so với ban đầu. \nThiên Phú <@ba.key>Tâm Thợ Săn</> được cường hóa: thời gian tái kích hoạt <@ba.key>Lá Chắn Bảo Hộ</> là <@ba.vup>{decrease_cd:0}</> giây.",
+      "name": "Kỹ Nghệ Chế Tên Samifjod"
+    },
+    "potential2": {
+      "description": "Nhanh Nhẹn <@ba.vup>+{Agi:0}</>, Công Phép <@ba.vup>+{PhysicalAndSpellInflictionEnhance:0}</>.",
+      "name": "Bước Chân Nữ Thợ Săn"
+    },
+    "potential3": {
+      "description": "KN liên hoàn <@ba.key>Gai Nhọn Nổi Loạn</> được nâng cấp: Thời gian hồi chiêu giảm còn <@ba.vup>{coolDown:0}</> giây. Kẻ địch trong <@ba.key>Tập Kích Cụm</> chịu thêm <@ba.vup>+{persistent_naturalburst_increase:0%}</> ST <#ba.naturalburst>Bùng Nổ Tự Nhiên</>.",
+      "name": "Bẫy Gai"
+    },
+    "potential4": {
+      "description": "Tuyệt Kỹ <@ba.key>Tiếng Gọi Núi Băng</> được cường hóa: Tiêu hao Năng Lượng Tuyệt Kỹ <@ba.vup>-{1-costvalue:0%}</>.",
+      "name": "Không Lối Thoát"
+    },
+    "potential5": {
+      "description": "Tuyệt Kỹ <@ba.key>Tiếng Gọi Núi Băng</> được cường hóa: Tăng <#ba.arrownum>Mũi Tên Săn</> <@ba.vup>+{arrow_num_given:0}</>. ST Tuyệt Kỹ Gây Ra được tăng lên <@ba.vup>{potential_damge_up:0.0}</> lần so với ban đầu, trong khi Hệ Số ST Bùng Nổ Tự Nhiên của <@ba.key>Phát Bắn Cường Hóa</> được tăng lên <@ba.vup>{potential_damage_rate:0.0}</> lần so với ban đầu.",
+      "name": "Phát Bắn Đoạt Mệnh"
+    }
+  },
+  "arts": {
+    "potential1": {
+      "name": "Nắng Ấm Mùa Đông",
+      "author": "南野 あき",
+      "description": "Hôm qua, khu rừng có một trận tuyết nhẹ. Dù trời lạnh, ánh mặt trời vẫn rực rỡ, những tia nắng ửng hồng dịu dàng sưởi ấm gương mặt."
+    },
+    "potential3": {
+      "name": "Cô Thợ Săn Nhỏ",
+      "author": "狂zip",
+      "description": "Bạn sẽ chẳng bao giờ được nghe trọn câu chuyện về nữ thợ săn huyền thoại chốn hoang dã, bởi cứ kể đến giữa chừng là cô ấy lại kiệt sức."
+    },
+    "potential5": {
+      "name": "Giữa Băng Nguyên Sâu Thẳm, Nàng Ngoảnh Nhìn",
+      "author": "LM7",
+      "description": "Từ phương xa, cô ấy ngoảnh lại nhìn bạn. Đôi mắt cô tựa đồng băng Samivegr, sâu thẳm mà tĩnh lặng."
+    }
+  }
+}

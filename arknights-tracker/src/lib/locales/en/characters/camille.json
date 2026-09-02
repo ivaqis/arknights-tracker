@@ -43,7 +43,7 @@
       "dmgMultiplier": "DMG Multiplier",
       "stagger": "Stagger",
       "firefangVesperwingsDurationS": "Firefang Vesperwings Duration (s)",
-      "weaknessEffect": "Weakness Effect",
+      "weakness": "Weakness",
       "heatSusceptibility": "Heat Susceptibility",
       "explosionDmgMultiplier": "Explosion DMG Multiplier"
     },
@@ -162,7 +162,7 @@
       },
       {
         "voId": "chr_0033_camille_chrup_skill_01",
-        "title": "Ability Matrix Activation",
+        "title": "Talent Node Activation",
         "text": "The impurities have been stripped away. The blood is purer now."
       },
       {

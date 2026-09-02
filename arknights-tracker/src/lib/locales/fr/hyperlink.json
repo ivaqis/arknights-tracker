@@ -23,6 +23,14 @@
     "name": "Statut physique : Soulèvement",
     "desc": "Rend l'ennemi <#ba.noguard>vulnérable</>. S'il est déjà <#ba.noguard>vulnérable</>, ajoute 1 cumul de <#ba.noguard>Vulnérabilité</> et inflige des <@ba.phy>DÉG physiques</> ainsi que <@ba.poise>Déséquilibre</>."
   },
+  "ba.arrowenergy": {
+    "name": "Signe",
+    "desc": "Typhoeus gagne des signes lorsqu'elle consomme les cumuls d'<@ba.naturalinflict>altération naturelle</> de l'ennemi ou déclenche une <#ba.naturalburst>explosion naturelle</> sur les ennemis. Elle peut ensuite convertir ces signes en <#ba.arrownum>flèches de chasse</> grâce à sa compétence de combo."
+  },
+  "ba.arrownum": {
+    "name": "Flèche de chasse",
+    "desc": "Lorsque Typhoeus est en état de <@ba.key>Surplomb</>, elle peut utiliser des flèches de chasse pour renforcer ses tirs, et ainsi infliger plus de DÉG tout en déclenchant une <#ba.naturalburst>explosion naturelle</>."
+  },
   "ba.burning": {
     "name": "Réaction aux Arts : Combustion",
     "desc": "Un ennemi victime de <@ba.burning>Combustion</> subit des <@ba.fire>DÉG thermiques</> continus.\n<@ba.burning>Combustion</> = une <#ba.spellinflict>altération non thermique</> (<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.fireinflict>altération thermique</>"
@@ -260,8 +268,8 @@
     "desc": "Les cibles sensibles subissent temporairement plus de DÉG de l'élément auquel elles sont sensibles. Le numéro représente le degré d'augmentation. Les effets du même type sont cumulables."
   },
   "ba.weak": {
-    "name": "Affaiblissement",
-    "desc": "Les cibles affaiblies infligent temporairement des DÉG réduits. Le numéro indique le degré de réduction. Les effets du même type peuvent être cumulés de façon non linéaire."
+    "name": "Faiblesse",
+    "desc": "Une cible victime de Faiblesse inflige temporairement des DÉG réduits. Le numéro indique le degré de réduction. Les effets du même type peuvent être cumulés de façon non linéaire."
   },
   "fac.hub": {
     "name": "Noyau d'automatisation du Protocole",
@@ -360,7 +368,7 @@
     "desc": "Le seigle sauvage est une plante cultivable que l'on trouve à l'état naturel. Vous pouvez également le faire pousser sur des <#item.portSoilSp1>parcelles de seigle sauvage</>.\nIl peut être utilisé tel quel pour fabriquer des <#sys.manualCraftDish>plats et des médicaments de qualité</> (P&M de qualité)."
   },
   "item.plantSpSeed1": {
-    "name": "Graine de seigle sauvage",
+    "name": "Graines de seigle sauvage",
     "desc": "Des graines prélevées sur du <#item.plantSp1>seigle sauvage</> grâce aux installations de l'usine du GIA.\nSélectionnez ces graines ainsi que du <#item.carbonMtl>carbone</>, puis accédez à l'écran <#sys.manualCraftField>Plantation</> pour en faire des <#item.portSoilSp1>parcelles de seigle sauvage</>."
   },
   "item.portSoilBbflower": {

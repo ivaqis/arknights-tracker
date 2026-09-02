@@ -572,7 +572,7 @@
   "eny_0105_wgslime2": {
     "name": "Mudflow δ",
     "nickname": "Mudflow δ",
-    "description": "“Tholeroygran” (ID arsip: ACM311δ) adalah varian ACM311 yang berisi energi. Karena memanfaatkan jalur energi yang unik, suhu homeostatiknya bisa terus jauh di bawah titik beku materi penyusunnya.",
+    "description": "“Tholeroygran Dinedon” (ID arsip: ACM311δ) adalah varian ACM311 yang berisi energi. Karena memanfaatkan jalur energi yang unik, suhu homeostatiknya bisa terus jauh di bawah titik beku materi penyusunnya.",
     "abilities": [
       "Musuh ini bisa mendekat dengan cepat dari kejauhan. Serangannya bisa mengakibatkan Cryo Infliction kepada operator yang terhantam."
     ]
@@ -713,6 +713,72 @@
     "abilities": [
       "Saat indikator Stagger Alleikhreos, Chiliarch mencapai Nodus Stagger, dia akan menjatuhkan Senjata Foundite. Dekati dengan operator terkontrol untuk mengambilnya dan gunakan senjata tersebut untuk menyerangnya.",
       "Saat Alleikhreos, Chiliarch, mulai terdesak, dia akan memanggil duplikat-duplikatnya dari celah untuk menyerang lawannya."
+    ]
+  },
+  "eny_0127_bigents": {
+    "name": "Amarah Gloomwald",
+    "nickname": "Amarah Gloomwald",
+    "description": "Boneka tempur raksasa yang dibuat oleh seorang Snowpriest. Boneka ini mematuhi perintah tuannya untuk berkelana dan menjelajahi alam kabut yang tak terbatas, tapi akhirnya dia sadar bahwa dia telah ditinggalkan. Boneka ini pun menjadi wadah yang menampung seluruh amarah hutan salju yang lebat.",
+    "abilities": [
+      "Amarah Gloomwald akan meninggalkan sulur di tanah. Operator yang menginjaknya akan terkena DMG dan efek Slow terus-menerus.",
+      "Amarah Gloomwald akan memanggil Pengembara Kayu untuk membantunya dalam pertarungan."
+    ]
+  },
+  "eny_0128_babyents": {
+    "name": "Pengembara Kayu",
+    "nickname": "Pengembara Kayu",
+    "description": "Boneka tempur kecil yang dibuat oleh seorang Snowpriest. Boneka ini bertugas menjaga keamanan Hutan Salju. Jangan remehkan tinju kayunya, karena tinjunya bisa menghancurkan batu dengan mudah.",
+    "abilities": [
+      "Pengembara Kayu yang tidak punya tumpukan perisai akan menjebak operator untuk menyerap energi mereka dan memulihkan tumpukan perisainya.",
+      "Pengembara Kayu akan saling bekerja sama saat menyerang."
+    ]
+  },
+  "eny_0129_slwood": {
+    "name": "Siput Kayu",
+    "nickname": "Siput Kayu",
+    "description": "Boneka tempur yang dibuat oleh seorang Snowpriest. Bentuknya menyerupai Siput Originium. Kerajinan kayu ini bisa bergerak dengan cepat dan merupakan penggali yang andal.",
+    "abilities": [
+      "Siput Kayu bisa menggali di bawah tanah untuk mendekati lawan mereka."
+    ]
+  },
+  "tatget_001_normal": {
+    "name": "Target Biasa",
+    "nickname": "Target Biasa",
+    "description": "Target biasa untuk pemanah pemula.",
+    "abilities": [
+      "Target biasa. HP: 1."
+    ]
+  },
+  "tatget_002_endurance": {
+    "name": "Target Standar",
+    "nickname": "Target Standar",
+    "description": "Target standar, sangat penting untuk mengasah kemampuan memanah.",
+    "abilities": [
+      "Target yang tahan lama. HP: 2."
+    ]
+  },
+  "tatget_003_expand": {
+    "name": "Target Penghalang",
+    "nickname": "Target Penghalang",
+    "description": "Target spesial yang ukurannya bisa berubah dan bisa menghalangi target di belakangnya. Coba hancurkan dulu target yang ini.",
+    "abilities": [
+      "Target pengganggu yang ukurannya bisa berubah. HP: 3."
+    ]
+  },
+  "tatget_004_armor": {
+    "name": "Target Berat",
+    "nickname": "Target Berat",
+    "description": "Target spesial yang terbuat dari campuran berkekuatan tinggi. Target ini kokoh dan disukai oleh para pemanah yang kekuatannya luar biasa.",
+    "abilities": [
+      "Target berarmor. HP: 4."
+    ]
+  },
+  "tatget_005_shield": {
+    "name": "Perisai Energi",
+    "nickname": "Perisai Energi",
+    "description": "Perisai energi yang dirancang untuk target. Para ahli panahan suka memasangkan perisai pada targetnya agar bisa bertahan beberapa detik lebih lama.",
+    "abilities": [
+      "Perisai yang bisa dipasang pada target mana saja. HP: 2. Target berperisai tidak bisa dibekukan, Resin tidak bisa diakibatkan secara aktif pada mereka, dan tumpukan Resin pada target berperisai tidak akan meledak saat terkena DMG."
     ]
   }
 }

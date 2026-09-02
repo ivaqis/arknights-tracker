@@ -43,7 +43,7 @@
       "dmgMultiplier": "피해 배율",
       "stagger": "불균형치",
       "firefangVesperwingsDurationS": "타오르는 핏빛 날개 지속 시간(초)",
-      "weaknessEffect": "허약 효과",
+      "weakness": "허약 효과",
       "heatSusceptibility": "열기 취약 효과",
       "explosionDmgMultiplier": "폭발 피해 배율"
     },
@@ -77,8 +77,8 @@
     },
     "talent1": {
       "levels": [
-        "연계 스킬 <@ba.key>영혼의 가시</> 효과 강화: <@ba.key>타오르는 핏빛 날개</>가 <@ba.key>배회</>하는 상태의 적을 명중할 때, <@ba.heal>[{heal_base:0}+지능×{heal_sub_multi:0.##}]</>포인트만큼의 생명력을 회복하고 <#ba.combo>연타</>를 획득합니다. {combo_duration}초 동안 지속. <@ba.key>추적</> 사용 시에는 목표가 <@ba.key>배회</> 효과를 받는 상태가 아닐 때도 위의 효과가 발동합니다.",
-        "연계 스킬 <@ba.key>영혼의 가시</> 효과 강화: <@ba.key>타오르는 핏빛 날개</>가 <@ba.key>배회</>하는 상태의 적을 명중할 때, <@ba.heal>[{heal_base:0}+지능×{heal_sub_multi:0.##}]</>포인트만큼의 생명력을 회복하고 <#ba.combo>연타</>를 획득합니다. {combo_duration}초 동안 지속. <@ba.key>추적</> 사용 시에는 목표가 <@ba.key>배회</> 효과를 받는 상태가 아닐 때도 위의 효과가 발동합니다."
+        "연계 스킬 <@ba.key>영혼의 가시</> 효과 강화: <@ba.key>타오르는 핏빛 날개</>가 <@ba.key>배회</>하는 상태의 적을 명중할 때, <@ba.heal>[{heal_base:0}+지능×{heal_sub_multi:0.##}]</>포인트만큼의 생명력을 회복하고 <#ba.combo>연타</>를 획득합니다. {combo_duration}초 동안 지속. <@ba.key>추적</> 사용 시에는 목표가 <@ba.key>배회</> 효과를 받는 상태가 아닐 때도 상기 효과가 발동합니다.",
+        "연계 스킬 <@ba.key>영혼의 가시</> 효과 강화: <@ba.key>타오르는 핏빛 날개</>가 <@ba.key>배회</>하는 상태의 적을 명중할 때, <@ba.heal>[{heal_base:0}+지능×{heal_sub_multi:0.##}]</>포인트만큼의 생명력을 회복하고 <#ba.combo>연타</>를 획득합니다. {combo_duration}초 동안 지속. <@ba.key>추적</> 사용 시에는 목표가 <@ba.key>배회</> 효과를 받는 상태가 아닐 때도 상기 효과가 발동합니다."
       ],
       "name": "죄를 쫓는 자"
     },

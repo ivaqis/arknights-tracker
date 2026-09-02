@@ -80,9 +80,9 @@
       "levels": []
     },
     "files": {
-      "main": "<@profile.key>MẬT DANH: Endministrator \nGIỚI TÍNH: ■■ \nNHẬN DẠNG: ■■ \nNGÀY SINH: ■■ \nCHỦNG TỘC: ■■ \n\nBạn không nhớ gì cả. \nKý ức của bạn vỡ vụn, như những giấc mơ bị nghiền nát thành tro bụi, tan biến ngay khi vừa chạm tới. \nĐôi khi nó khiến bạn bồn chồn, đôi khi bất an, nhưng nó lại cho bạn một khoảnh khắc yên tĩnh để hít thở và suy ngẫm. \nTuy nhiên, phần lớn thời gian, bạn chẳng có dịp để nghi ngờ. Bạn chỉ biết tin tưởng những gì trước mắt và tiếp tục. \nCó lẽ bạn đã cất giữ quá khứ của mình ở một nơi nào đó, dù chỉ là trong chốc lát... \n...và vì vậy, bạn chẳng nhớ được gì. </>",
-      "humanResources": "<@profile.key>Bạn đã sống qua toàn bộ lịch sử của Talos-II...</>",
-      "file1": "<@profile.key>Nhưng... bạn sẽ nghĩ gì về tương lai của nó?</>"
+      "main": "MẬT DANH: Endministrator \nGIỚI TÍNH: ■■ \nNHẬN DẠNG: ■■ \nNGÀY SINH: ■■ \nCHỦNG TỘC: ■■ \n\nBạn không nhớ gì cả. \nKý ức của bạn vỡ vụn, như những giấc mơ bị nghiền nát thành tro bụi, tan biến ngay khi vừa chạm tới. \nĐôi khi nó khiến bạn bồn chồn, đôi khi bất an, nhưng nó lại cho bạn một khoảnh khắc yên tĩnh để hít thở và suy ngẫm. \nTuy nhiên, phần lớn thời gian, bạn chẳng có dịp để nghi ngờ. Bạn chỉ biết tin tưởng những gì trước mắt và tiếp tục. \nCó lẽ bạn đã cất giữ quá khứ của mình ở một nơi nào đó, dù chỉ là trong chốc lát... \n...và vì vậy, bạn chẳng nhớ được gì.",
+      "humanResources": "Bạn đã sống qua toàn bộ lịch sử của Talos-II...",
+      "file1": "Nhưng... bạn sẽ nghĩ gì về tương lai của nó?"
     },
     "tags": {
       "expert1": {
@@ -127,7 +127,7 @@
       },
       {
         "voId": "chr_0002_endminm_chrup_skill_01",
-        "title": "Kích hoạt Ma Trận Năng Lực",
+        "title": "Kích hoạt Mốc Thiên Phú",
         "text": "Tôi nhớ rõ cảm giác này..."
       },
       {

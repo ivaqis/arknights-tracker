@@ -85,7 +85,7 @@
         "imprisonmentAndSusceptibilityDurationS": "Durata Prigionia e Suscettibilità (s)",
         "baseSusceptibility": "Suscettibilità base",
         "maxBonusSusceptibilityFromWill": "Suscettibilità max bonus da Volontà",
-        "willRequiredForMaxBonusSusceptibility": "Volontà richiesta per suscettibilità max bonus"
+        "willForMaxBonusSusceptibility": "Volontà per Suscettibilità MAX bonus"
       },
       "baseDmgMultiplier": "Moltiplicatore danni base",
       "baseStagger": "Vacillamento base",
@@ -218,7 +218,7 @@
       },
       {
         "voId": "chr_0032_lizhiyan_chrup_skill_01",
-        "title": "Attivazione matrice delle abilità",
+        "title": "Attivazione nodo talento",
         "text": "Affinati fino alla perfezione e riuscirai a prevalere con calma, in qualunque situazione."
       },
       {

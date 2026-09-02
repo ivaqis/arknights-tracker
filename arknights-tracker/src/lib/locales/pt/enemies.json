@@ -572,7 +572,7 @@
   "eny_0105_wgslime2": {
     "name": "Lamacento δ",
     "nickname": "Lamacento δ",
-    "description": "O \"Tholeroygran\" (ID do arquivo: ACM311δ) é uma variante energizada do ACM311. Ele utiliza vias energéticas únicas e, portanto, mantém uma temperatura homeostática significativamente abaixo dos pontos de congelamento de sua matéria constituinte.",
+    "description": "O \"Tholeroygran Dinedon\" (ID do arquivo: ACM311δ) é uma variante energizada do ACM311. Ele utiliza vias energéticas únicas e, portanto, mantém uma temperatura homeostática significativamente abaixo dos pontos de congelamento de sua matéria constituinte.",
     "abilities": [
       "Este inimigo pode encurtar a distância rapidamente. Seus ataques podem aplicar Inflição Crio aos operadores atingidos."
     ]
@@ -713,6 +713,72 @@
     "abilities": [
       "Quando o medidor de Desorientação de Alleikhreos, Quiliarca, atingir o Nó de Desorientação, ele soltará uma Arma de Fundite. Aproxime-se dela com o operador controlado para pegá-la e use a arma para atacá-lo.",
       "Quando as coisas se complicarem para Alleikhreos, Quiliarca, ele invocará dublês da fenda para atacar seus oponentes."
+    ]
+  },
+  "eny_0127_bigents": {
+    "name": "Fúria de Gloomwald",
+    "nickname": "Fúria de Gloomwald",
+    "description": "Uma marionete de batalha gigante criada por uma Sacerdotisa da Neve. Ela obedecera às ordens de seu mestre para vagar e vasculhar o reino de névoa sem limites, até o momento em que percebeu que fora abandonada, até se tornar o receptáculo de toda a fúria de uma floresta profundamente nevada.",
+    "abilities": [
+      "Fúria de Gloomwald deixará videiras no chão. Um operador que pisar nelas receberá DNO contínuo e ficará mais Lento.",
+      "Fúria de Gloomwald invocará Andarilhos da Mata para auxiliar na batalha."
+    ]
+  },
+  "eny_0128_babyents": {
+    "name": "Andarilho da Mata",
+    "nickname": "Andarilho da Mata",
+    "description": "Uma pequena marionete de batalha criada por uma Sacerdotisa da Neve. Ela é responsável por manter a Floresta Nevada em segurança. Não subestime seus punhos de madeira, pois eles podem esmagar pedra com quase nenhum esforço.",
+    "abilities": [
+      "Um Andarilho da Mata com zero acúmulos de escudo irá capturar operadores para absorver sua energia e restaurar seus acúmulos de escudo.",
+      "Os Andarilhos da Mata trabalharão uns com os outros ao atacarem."
+    ]
+  },
+  "eny_0129_slwood": {
+    "name": "Lesma da Madeira",
+    "nickname": "Lesma da Madeira",
+    "description": "Uma marionete de batalha criada por uma Sacerdotisa da Neve. Seu formato lembra o da Lesma do Originium. Ela consegue se mover rapidamente e é uma excelente escavadora.",
+    "abilities": [
+      "As Lesmas da Madeira podem cavar túneis subterrâneos para surpreender seus oponentes."
+    ]
+  },
+  "tatget_001_normal": {
+    "name": "Alvo Básico",
+    "nickname": "Alvo Básico",
+    "description": "Um alvo básico para arqueiros iniciantes.",
+    "abilities": [
+      "Um alvo básico. PV: 1."
+    ]
+  },
+  "tatget_002_endurance": {
+    "name": "Alvo Padrão",
+    "nickname": "Alvo Padrão",
+    "description": "Um alvo padrão, essencial para aprimorar a habilidade com arco e flecha.",
+    "abilities": [
+      "Um alvo durável. PV: 2."
+    ]
+  },
+  "tatget_003_expand": {
+    "name": "Alvo de Barreira",
+    "nickname": "Alvo de Barreira",
+    "description": "Um alvo especial que pode mudar de tamanho e bloquear outros alvos atrás dele. Tente fragmentá-lo primeiro.",
+    "abilities": [
+      "Um alvo disruptivo de tamanho variável. PV: 3."
+    ]
+  },
+  "tatget_004_armor": {
+    "name": "Alvo Pesado",
+    "nickname": "Alvo Pesado",
+    "description": "Um alvo especial feito de liga de alta resistência. Ele é resistente e bem recebido por arqueiros de imensa força.",
+    "abilities": [
+      "Um alvo blindado. PV: 4."
+    ]
+  },
+  "tatget_005_shield": {
+    "name": "Escudo de Energia",
+    "nickname": "Escudo de Energia",
+    "description": "Um escudo de energia desenvolvido para alvos. Os mestres arqueiros gostam de colocar escudos em seus alvos para fazer com que eles durem mais alguns segundos.",
+    "abilities": [
+      "Um escudo que pode ser aplicado a qualquer alvo. PV: 2. Alvos protegidos por escudos não podem ser congelados, Resina não pode ser aplicada ativamente neles e acúmulos de Resina em alvos protegidos não detonam ao sofrerem DNO."
     ]
   }
 }

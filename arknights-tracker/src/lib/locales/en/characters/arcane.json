@@ -85,7 +85,7 @@
         "imprisonmentAndSusceptibilityDurationS": "Imprisonment and Susceptibility Duration (s)",
         "baseSusceptibility": "Base Susceptibility",
         "maxBonusSusceptibilityFromWill": "Max Bonus Susceptibility from Will",
-        "willRequiredForMaxBonusSusceptibility": "Will Required for Max Bonus Susceptibility"
+        "willForMaxBonusSusceptibility": "Will for MAX Bonus Susceptibility"
       },
       "baseDmgMultiplier": "Base DMG Multiplier",
       "baseStagger": "Base Stagger",
@@ -218,7 +218,7 @@
       },
       {
         "voId": "chr_0032_lizhiyan_chrup_skill_01",
-        "title": "Ability Matrix Activation",
+        "title": "Talent Node Activation",
         "text": "Hone yourself to extreme perfection, and you can calmly prevail, no matter the situation."
       },
       {

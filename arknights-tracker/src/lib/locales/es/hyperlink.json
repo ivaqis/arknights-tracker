@@ -23,6 +23,14 @@
     "name": "Estado físico: Levantar",
     "desc": "Aplica <#ba.noguard>Vulnerabilidad</> a un enemigo. Si el enemigo ya está <#ba.noguard>Vulnerable</>, entonces añade 1 acumulación de <#ba.noguard>Vulnerabilidad</> y causa <@ba.phy>DAÑ físico</> y <@ba.poise>Tambaleo</>."
   },
+  "ba.arrowenergy": {
+    "name": "Signo",
+    "desc": "Typhoeus obtiene Signos cuando consume las acumulaciones de <@ba.naturalinflict>Imposición de naturaleza</> de los enemigos o cuando activa <#ba.naturalburst>Ráfaga de naturaleza</> sobre ellos. Su habilidad de combo puede convertir los Signos en <#ba.arrownum>Flechas de caza</>."
+  },
+  "ba.arrownum": {
+    "name": "Flecha de caza",
+    "desc": "Cuando Typhoeus esté en estado <@ba.key>Flotante</>, podrá consumir Flechas de caza para potenciar sus disparos, infligir más DAÑ y activar <#ba.naturalburst>Ráfaga de naturaleza</>."
+  },
   "ba.burning": {
     "name": "Reacción a artes: Combustión",
     "desc": "Un enemigo con <@ba.burning>Combustión</> recibe <@ba.fire>DAÑ por calor</> continuo.\n<@ba.burning>Combustión</> = Una <#ba.spellinflict>Imposición que no sea de calor</> (<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.fireinflict>Imposición de calor</>"
@@ -260,8 +268,8 @@
     "desc": "Los objetivos susceptibles reciben temporalmente más DAÑ del elemento al cual son susceptibles. El número representa el nivel del aumento. Los efectos del mismo tipo se pueden acumular."
   },
   "ba.weak": {
-    "name": "Debilitar",
-    "desc": "Los objetivos debilitados infligen DAÑ reducido temporalmente. El número representa el nivel de la reducción. Los efectos del mismo tipo se pueden acumular de forma no linear."
+    "name": "Debilidad",
+    "desc": "Un objetivo con Debilidad inflige DAÑ reducido temporalmente. El número representa el grado de reducción. Los efectos del mismo tipo se pueden acumular de forma no lineal."
   },
   "fac.hub": {
     "name": "Núcleo de automatización de protocolos",
@@ -360,7 +368,7 @@
     "desc": "El Centeno de caña es un tipo de cultivo plantable que se recolecta en las tierras salvajes. También puede obtenerse cultivando <#item.portSoilSp1>Terrenos de centeno de caña</>.\nPuede usarse directamente para fabricar <#sys.manualCraftDish>Comida & medicinas buenas</> (C&M buena)."
   },
   "item.plantSpSeed1": {
-    "name": "Semilla de centeno de caña",
+    "name": "Semillas de centeno de caña",
     "desc": "Semillas producidas al recolectar semillas de plantas de <#item.plantSp1>Centeno de caña</> con instalaciones de la Fábrica del CAI.\nToma Semilla de centeno de caña y <#item.carbonMtl>Carbono</>, luego ve a la pantalla de <#sys.manualCraftField>Cultivo</> para fabricarlas en Terrenos de <#item.portSoilSp1>centeno de caña</>."
   },
   "item.portSoilBbflower": {

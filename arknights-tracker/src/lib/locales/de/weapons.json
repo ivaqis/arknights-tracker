@@ -5,12 +5,12 @@
     "decoDesc": "Ein Waffenmodell, das man im Grenzgebiet häufig antrifft. Niemand weiß, wer das Grunddesign entworfen hat. Dieses spezielle Stück kann ganz einfach mit gewöhnlichen Industriemaschinen produziert werden.",
     "skills": [
       {
-        "name": "Stärke-Boost [S]",
+        "name": "Stärke [S]",
         "description": "Stärke <@ba.vup>+{str}</>."
       },
       {
-        "name": "ANG-Boost [S]",
-        "description": "Angriff <@ba.vup>+{atk:0.0%}</>."
+        "name": "ANG [S]",
+        "description": "ANG <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Unterdrückung: Notfall-Boost",
@@ -24,12 +24,12 @@
     "decoDesc": "Das neueste unabhängige Produkt von Mieszko Industries. Das Design basiert auf einem Relikt, das der Orden der Stille ausgegraben hat. Die Waffe selbst wurde mit streng geheimen Technologien versehen und durchtrennt fast jedes Material mit Leichtigkeit.",
     "skills": [
       {
-        "name": "Hauptattribut-Boost [L]",
+        "name": "Hauptattribut [L]",
         "description": "Hauptattribut <@ba.vup>+{mainattr}</>."
       },
       {
-        "name": "Angriffs-Boost [L]",
-        "description": "Angriff <@ba.vup>+{atk:0.0%}</>."
+        "name": "ANG [L]",
+        "description": "ANG <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Unterdrückung: Kumulierter Schlag",
@@ -43,11 +43,11 @@
     "decoDesc": "Ein hochwertiges Produkt des Northmarch-Support-Zentrums. Dieser Kettenschneider wurde auf Grundlage älterer Technologie entworfen. Zwar wird er nicht mehr in großen Stückzahlen produziert, aber ist im Kampf weiterhin ein verlässlicher Begleiter.",
     "skills": [
       {
-        "name": "Willens-Boost [L]",
+        "name": "Wille [L]",
         "description": "Wille <@ba.vup>+{will}</>."
       },
       {
-        "name": "LP-Boost [L]",
+        "name": "LP [L]",
         "description": "Max. LP <@ba.vup>+{hp:0.0%}</>."
       },
       {
@@ -62,11 +62,11 @@
     "decoDesc": "Eine von Endfield Industries produzierte Spezialwaffe. Eine Flamberge wurde mit überlappenden Originium-Schaltkreisen ausgestattet, um die Essenzleistung zu verbessern. Die Inspiration für dieses Modell lieferten verschiedene auf Talos beobachtbare Phänomene.",
     "skills": [
       {
-        "name": "Stärke-Boost [L]",
+        "name": "Stärke [L]",
         "description": "Stärke <@ba.vup>+{str}</>."
       },
       {
-        "name": "LP-Boost [L]",
+        "name": "LP [L]",
         "description": "Max. LP <@ba.vup>+{hp:0.0%}</>."
       },
       {
@@ -81,11 +81,11 @@
     "decoDesc": "Eine limitierte Sonderanfertigung der Zauberstunde. Die Form des Großschwertes wurde möglicherweise von einer alten Legende inspiriert. Die Waffe scheint Schmerzensschreie direkt aus dem Traumreich reißen zu können.",
     "skills": [
       {
-        "name": "Stärke-Boost [L]",
+        "name": "Stärke [L]",
         "description": "Stärke <@ba.vup>+{str}</>."
       },
       {
-        "name": "Kritische-Rate-Boost [L]",
+        "name": "Kritische Rate [L]",
         "description": "Kritische Rate <@ba.vup>+{crirate:0.0%}</>."
       },
       {
@@ -100,11 +100,11 @@
     "decoDesc": "Ein Standard-Großschwert aus der Schmelzofenfestung. Diese Waffe mag leicht zu handhaben sein und ist seit vielen Jahren bei jungen Rekruten die erste Wahl, aber nur wenige haben sie je gemeistert.",
     "skills": [
       {
-        "name": "Willens-Boost [S]",
+        "name": "Wille [S]",
         "description": "Wille <@ba.vup>+{will}</>."
       },
       {
-        "name": "LP-Boost [S]",
+        "name": "LP [S]",
         "description": "Max. LP <@ba.vup>+{hp:0.0%}</>."
       },
       {
@@ -119,7 +119,7 @@
     "decoDesc": "Eine der von Endfield Industries produzierten Standardwaffen für Operatoren. Diese Waffe wurde vom Endfield-Waffeningenieur Darhoff entworfen. Dank ihres Designs ist sie eine verlässliche Option für Einsätze, die Sturmangriffe beinhalten.",
     "skills": [
       {
-        "name": "Hauptattribut-Boost [S]",
+        "name": "Hauptattribut [S]",
         "description": "Hauptattribut <@ba.vup>+{mainattr}</>."
       },
       {
@@ -134,11 +134,11 @@
     "decoDesc": "Ein Standard-Großschwert, das von Hongshan-Schwertkämpfern entwickelt wurde. Die Waffe ist mit einer neuartigen, speziellen Beschichtung versehen, die selbst unter extremen, lebensfeindlichen Umweltbedingungen ausgezeichneten Schutz bietet.",
     "skills": [
       {
-        "name": "Stärke-Boost [M]",
+        "name": "Stärke [M]",
         "description": "Stärke <@ba.vup>+{str}</>."
       },
       {
-        "name": "Ultimative-Effizienzsteigerung-Boost [M]",
+        "name": "ULT-Effizienz [M]",
         "description": "Ultimative Effizienzsteigerung <@ba.vup>+{usgs:0.0%}</>."
       },
       {
@@ -153,11 +153,11 @@
     "decoDesc": "Eine Spezialwaffe von Mieszko Industries, von der nur eine begrenzte Anzahl an Exemplaren gefertigt wurde. Es war der letzte Entwurf, der aus der Zusammenarbeit des Waffenherstellers mit dem Rittermajor-Experten Cromwell entstanden ist.",
     "skills": [
       {
-        "name": "Stärke-Boost [M]",
+        "name": "Stärke [M]",
         "description": "Stärke <@ba.vup>+{str}</>."
       },
       {
-        "name": "LP-Boost [M]",
+        "name": "LP [M]",
         "description": "Max. LP <@ba.vup>+{hp:0.0%}</>."
       },
       {
@@ -172,12 +172,12 @@
     "decoDesc": "Eine seltsame Waffe, die Zauberstunde auf den Markt gebracht hat. Die Klinge wurde aus einem gewöhnlich wirkenden Eisblock herausgearbeitet. Ihre Oberfläche wurde aber mit einer besonderen Art von Originium-Techniken versehen, wodurch sie buchstäblich unzerbrechlich ist.",
     "skills": [
       {
-        "name": "Stärke-Boost [L]",
+        "name": "Stärke [L]",
         "description": "Stärke <@ba.vup>+{str}</>."
       },
       {
-        "name": "Angriffs-Boost [L]",
-        "description": "Angriff <@ba.vup>+{atk:0.0%}</>."
+        "name": "ANG [L]",
+        "description": "ANG <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Zünden: Eiskalt",
@@ -191,11 +191,11 @@
     "decoDesc": "Ein hochwertiges Großschwert, das von Hongshan-Schwertkämpfern hergestellt wird. Leichter als andere Großschwerter, aber genauso tödlich.",
     "skills": [
       {
-        "name": "Stärke-Boost [M]",
+        "name": "Stärke [M]",
         "description": "Stärke <@ba.vup>+{str}</>."
       },
       {
-        "name": "Technik-Intensitäts-Boost [M]",
+        "name": "Technik-Intensität [M]",
         "description": "Technik-Intensität <@ba.vup>+{physpell:0}</>."
       },
       {
@@ -210,16 +210,16 @@
     "decoDesc": "Eine Standardwaffe, die von Endfield Industries produziert wird. Das Design stammt von der Prototyp-Entwicklungsabteilung, die von Waffeningenieur Opero gegründet wurde. Die Waffe kann mit verschiedenen Modulen erweitert und so an spezifische Kampfumstände angepasst werden.",
     "skills": [
       {
-        "name": "Stärke-Boost [M]",
+        "name": "Stärke [M]",
         "description": "Stärke <@ba.vup>+{str}</>."
       },
       {
-        "name": "LP-Boost [M]",
+        "name": "LP [M]",
         "description": "Max. LP <@ba.vup>+{hp:0.0%}</>."
       },
       {
         "name": "Wirksamkeit: Unbändiger Wille",
-        "description": "Sekundärattribut <@ba.vup>+{second_attr_up:0.0%}</>.\nWenn der Anwender <#ba.knockdown>Niedergeschlagen</> oder <#ba.weak>Geschwächt</> bewirkt, erhält er VERT <@ba.vup>+{def_up:0.0%}</> für {duration:0} Sek.\n<@ba.info>Effekte desselben Namens sind nicht kumulierbar.</>"
+        "description": "Sekundärattribut <@ba.vup>+{second_attr_up:0.0%}</>.\nWenn der Anwender <#ba.knockdown>Niedergeschlagen</> oder <#ba.weak>Schwäche</> bewirkt, erhält er VERT <@ba.vup>+{def_up:0.0%}</> für {duration:0} Sek.\n<@ba.info>Effekte desselben Namens sind nicht kumulierbar.</>"
       }
     ]
   },
@@ -229,11 +229,11 @@
     "decoDesc": "Ein vom Mobilen Æthertech-Labor produzierter Prototyp. Die Klinge besteht aus neuartigen Materialien, die dieser Waffe ihr außergewöhnlich geringes Gewicht verleihen, ohne ihr Zerstörungspotenzial zu beeinträchtigen.",
     "skills": [
       {
-        "name": "Stärke-Boost [L]",
+        "name": "Stärke [L]",
         "description": "Stärke <@ba.vup>+{str}</>."
       },
       {
-        "name": "Technik-Intensitäts-Boost [L]",
+        "name": "Technik-Intensität [L]",
         "description": "Technik-Intensität <@ba.vup>+{physpell:0}</>."
       },
       {
@@ -248,12 +248,12 @@
     "decoDesc": "Ein Großschwert, für dessen Entwurf und Herstellung die Hongshan-Schwertkämpfer mehr als zehn Jahre gebraucht haben. Seine Maße sind gut proportioniert und es trifft mit unglaublicher Stärke und Wucht. Ein musterhaftes Beispiel für eine schwere Waffe.",
     "skills": [
       {
-        "name": "Stärke-Boost [L]",
+        "name": "Stärke [L]",
         "description": "Stärke <@ba.vup>+{str}</>."
       },
       {
-        "name": "Angriffs-Boost [L]",
-        "description": "Angriff <@ba.vup>+{atk:0.0%}</>."
+        "name": "ANG [L]",
+        "description": "ANG <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Kämpferisch: Amaranthspaltung",
@@ -267,11 +267,11 @@
     "decoDesc": "Eine der fortschrittlichen Waffen, die Endfield für seine Operatoren produziert. Das Endfield-Arsenal hat auf Grundlage von Andrés Bauplänen eine Drohne entwickelt, die Techniken speichern und im Notfall schnell freisetzen kann.",
     "skills": [
       {
-        "name": "Intellekt-Boost [S]",
+        "name": "Intellekt [S]",
         "description": "Intellekt <@ba.vup>+{wisd}</>."
       },
       {
-        "name": "Technik-Boost [S]",
+        "name": "Technik-SDN [S]",
         "description": "Verursachter Technik-SDN <@ba.vup>+{spelldam:0.0%}</>."
       },
       {
@@ -286,7 +286,7 @@
     "decoDesc": "Eine der von Endfield Industries produzierten Standardwaffen für Operatoren. Diese Waffe wurde vom Endfield-Waffeningenieur Jiminy entworfen. Die Tech-Einheit ist äußerst beliebt bei frischgebackenen Endfield-Operatoren.",
     "skills": [
       {
-        "name": "Hauptattribut-Boost [S]",
+        "name": "Hauptattribut [S]",
         "description": "Hauptattribut <@ba.vup>+{mainattr}</>."
       },
       {
@@ -301,12 +301,12 @@
     "decoDesc": "Eine von Endfield Industries produzierte Tech-Einheit. Sie verfügt über ein gewagtes Design und eine fantastische Technik-Leitfähigkeit, ihre Steuerung ist jedoch höchst anspruchsvoll. Es gilt als ein Beweis des Könnens unter Operatoren, diese Waffe zu meistern.",
     "skills": [
       {
-        "name": "Willens-Boost [S]",
+        "name": "Wille [S]",
         "description": "Wille <@ba.vup>+{will}</>."
       },
       {
-        "name": "ANG-Boost [S]",
-        "description": "Angriff <@ba.vup>+{atk:0.0%}</>."
+        "name": "ANG [S]",
+        "description": "ANG <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Unterdrückung: Notfall-Boost",
@@ -320,11 +320,11 @@
     "decoDesc": "Eine von RAYTHEAN Industries entwickelte Tech-Einheit. Diese Waffe ist für ihr minimalistisches Design und ihr geringes Gewicht bekannt. Dank dieser Eigenschaften sind für ihre Herstellung nur halb so viele Materialien nötig wie für eine Standard-Tech-Einheit.",
     "skills": [
       {
-        "name": "Intellekt-Boost [M]",
+        "name": "Intellekt [M]",
         "description": "Intellekt <@ba.vup>+{wisd}</>."
       },
       {
-        "name": "Elektrischer-SDN-Boost [M]",
+        "name": "Elektrischer SDN [M]",
         "description": "Verursachter Elektrischer SDN <@ba.vup>+{electrondam:0.0%}</>."
       },
       {
@@ -339,12 +339,12 @@
     "decoDesc": "Eine der seltsamsten Tech-Einheiten, die die Zauberstunde hervorgebracht hat. Zu den der Intuition widersprechenden Funktionen gehört eine absichtliche Reduzierung der Kompatibilität mit Originium-Techniken, um die düstere Logik der alten Teekaz-Magie hervorzuheben.",
     "skills": [
       {
-        "name": "Intellekt-Boost [M]",
+        "name": "Intellekt [M]",
         "description": "Intellekt <@ba.vup>+{wisd}</>."
       },
       {
-        "name": "ANG-Boost [M]",
-        "description": "Angriff <@ba.vup>+{atk:0.0%}</>."
+        "name": "ANG [M]",
+        "description": "ANG <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Abenddämmerung: Leuchtender Scheiterhaufen",
@@ -358,11 +358,11 @@
     "decoDesc": "Ein von den Mobilen Æthertech-Laboren in Auftrag gegebenes Produkt. Die verbauten Metall-Komponenten wurden von Cræft-Meistern so graviert, dass Ätzfiguren entstanden sind, die zu den Tillit-Teilen passen. Das Ergebnis ist eine Tech-Einheit mit einzigartigen Technik-Schaltkreisen.",
     "skills": [
       {
-        "name": "Willens-Boost [L]",
+        "name": "Wille [L]",
         "description": "Wille <@ba.vup>+{will}</>."
       },
       {
-        "name": "Natur-SDN-Boost [L]",
+        "name": "Natur-SDN [L]",
         "description": "Verursachter Natur-SDN <@ba.vup>+{naturaldam:0.0%}</>."
       },
       {
@@ -377,11 +377,11 @@
     "decoDesc": "Eine von den Hongshan-Schwertkämpfern entwickelte und mithilfe von Xiranit hergestellte Tech-Einheit. Aufgrund der instabilen Natur dieses seltenen Materials sind nur jene Anwender, die besonders präzise und konzentriert arbeiten können, in der Lage, diese Tech-Einheit effektiv zu verwenden.",
     "skills": [
       {
-        "name": "Willens-Boost [M]",
+        "name": "Wille [M]",
         "description": "Wille <@ba.vup>+{will}</>."
       },
       {
-        "name": "Ultimative-Effizienzsteigerung-Boost [M]",
+        "name": "ULT-Effizienz [M]",
         "description": "Ultimative Effizienzsteigerung <@ba.vup>+{usgs:0.0%}</>."
       },
       {
@@ -396,11 +396,11 @@
     "decoDesc": "Eine vom Northmarch-Support-Zentrum entwickelte Tech-Einheit. Sie ist ganz ohne Frage die Einheit mit der besten Leitfähigkeit für Originium-Techniken. Nur die besten Wirker können diese Waffe meistern.",
     "skills": [
       {
-        "name": "Hauptattribut-Boost [L]",
+        "name": "Hauptattribut [L]",
         "description": "Hauptattribut <@ba.vup>+{mainattr}</>."
       },
       {
-        "name": "Technik-Intensitäts-Boost [L]",
+        "name": "Technik-Intensität [L]",
         "description": "Technik-Intensität <@ba.vup>+{physpell:0}</>."
       },
       {
@@ -415,11 +415,11 @@
     "decoDesc": "Eine der von Zauberstunde entwickelten Tech-Einheiten. Abgesehen von den gewöhnlichen Originium-Schaltkreisen besteht die Einheit aus einem unbekannten Material. Kann man so etwas wirklich auf Talos-II herstellen?",
     "skills": [
       {
-        "name": "Intellekt-Boost [L]",
+        "name": "Intellekt [L]",
         "description": "Intellekt <@ba.vup>+{wisd}</>."
       },
       {
-        "name": "Technik-Boost [L]",
+        "name": "Technik-SDN [L]",
         "description": "Verursachter Technik-SDN <@ba.vup>+{spelldam:0.0%}</>."
       },
       {
@@ -434,11 +434,11 @@
     "decoDesc": "Eine von Mieszko Industries entwickelte Tech-Einheit. Sie hat eine besondere Hülle aus D64-Stahl und eine Vielzahl anpassbarer Module. Das Aussehen der Waffe erinnert einige an die Feuerwerksshow der Major-Ritter aus vergangenen Zeiten.",
     "skills": [
       {
-        "name": "Willens-Boost [L]",
+        "name": "Wille [L]",
         "description": "Wille <@ba.vup>+{will}</>."
       },
       {
-        "name": "LP-Boost [L]",
+        "name": "LP [L]",
         "description": "Max. LP <@ba.vup>+{hp:0.0%}</>."
       },
       {
@@ -453,11 +453,11 @@
     "decoDesc": "Ein klassisches, erstklassiges Produkt von RAYTHEAN, dessen Prototyp erstmals im Ersten Aggeloi-Krieg eingesetzt wurde. Seitdem wurde die Waffe zahlreiche Male verbessert und optimiert. Die derzeitige Version bietet unglaubliche Feuerkraft, was wiederum besseren Schutz und mehr Sicherheit bedeutet.",
     "skills": [
       {
-        "name": "Willens-Boost [L]",
+        "name": "Wille [L]",
         "description": "Wille <@ba.vup>+{will}</>."
       },
       {
-        "name": "Ultimative-Effizienzsteigerung-Boost [L]",
+        "name": "ULT-Effizienz [L]",
         "description": "Ultimative Effizienzsteigerung <@ba.vup>+{usgs:0.0%}</>."
       },
       {
@@ -472,11 +472,11 @@
     "decoDesc": "Eine Tech-Einheit, die von Mieszko Industries für den Orden der Stille entworfen wurde. Jeder Schritt des Entwicklungsprozesses, vom Design, über Abnahme, Herstellung und Optimierung, geschah unter der Aufsicht eines Ordensklerikers.",
     "skills": [
       {
-        "name": "Willens-Boost [M]",
+        "name": "Wille [M]",
         "description": "Wille <@ba.vup>+{will}</>."
       },
       {
-        "name": "Behandlungseffizienz-Boost [M]",
+        "name": "Behandlungseffizienz [M]",
         "description": "Behandlungseffizienz <@ba.vup>+{heal:0.0%}</>."
       },
       {
@@ -491,11 +491,11 @@
     "decoDesc": "Ein Produkt aus der Elite-Reihe von Mieszko Industries. Diese Waffe bietet erstklassige Leitfähigkeit für Originium-Techniken, wodurch sie viel praktischer ist als andere Waffen, die eleganter sein mögen. Funktionalität geht eben über Stil.",
     "skills": [
       {
-        "name": "Intellekt-Boost [L]",
+        "name": "Intellekt [L]",
         "description": "Intellekt <@ba.vup>+{wisd}</>."
       },
       {
-        "name": "Behandlungseffizienz-Boost [L]",
+        "name": "Behandlungseffizienz [L]",
         "description": "Behandlungseffizienz <@ba.vup>+{heal:0.0%}</>."
       },
       {
@@ -510,11 +510,11 @@
     "decoDesc": "Eine Standardwaffe, die von Endfield Industries produziert wird. Das Design stammt von der Prototyp-Entwicklungsabteilung, die von Waffeningenieur Opero gegründet wurde. Wie viel Energie es hat, hängt davon ab, ob der Anwender die Originium-Techniken gemeistert hat.",
     "skills": [
       {
-        "name": "Intellekt-Boost [M]",
+        "name": "Intellekt [M]",
         "description": "Intellekt <@ba.vup>+{wisd}</>."
       },
       {
-        "name": "Technik-Intensitäts-Boost [M]",
+        "name": "Technik-Intensität [M]",
         "description": "Technik-Intensität <@ba.vup>+{physpell:0}</>."
       },
       {
@@ -529,12 +529,12 @@
     "decoDesc": "Diese Tech-Einheit wurde von den Hongshan-Schwertkämpfern entwickelt. In die Waffe wurde mutig eine neue Xiranit-Mischung integriert. Dieses Material bietet eine hervorragende Leistung, die die Wirkeffizienz deutlich verbessern kann, allerdings ist die Handhabung dieser Tech-Einheit anfangs eine Herausforderung.",
     "skills": [
       {
-        "name": "Willens-Boost [L]",
+        "name": "Wille [L]",
         "description": "Wille <@ba.vup>+{will}</>."
       },
       {
-        "name": "Angriffs-Boost [L]",
-        "description": "Angriff <@ba.vup>+{atk:0.0%}</>."
+        "name": "ANG [L]",
+        "description": "ANG <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Unterdrückung: Fließender Blitz",
@@ -548,11 +548,11 @@
     "decoDesc": "Ein von den Hongshan-Schwertkämpfern entwickeltes und hergestelltes Set Standard-Tech-Einheiten. Waffen dieser Art werden aktuell an die Mitglieder der Yinglung-Sondereinheit ausgegeben. Sie sind für ihre exzellente Leistung und Robustheit bekannt und man kann sich selbst in den harschesten Umgebungen stets auf sie verlassen.",
     "skills": [
       {
-        "name": "Intellekt-Boost [L]",
+        "name": "Intellekt [L]",
         "description": "Intellekt <@ba.vup>+{wisd}</>."
       },
       {
-        "name": "Ultimative-Effizienzsteigerung-Boost [L]",
+        "name": "ULT-Effizienz [L]",
         "description": "Ultimative Effizienzsteigerung <@ba.vup>+{usgs:0.0%}</>."
       },
       {
@@ -567,11 +567,11 @@
     "decoDesc": "Ein typisches Produkt von Endfield Industries. Während der Polarexpeditionen wurden zahlreiche Einheiten entwickelt. Die auffällige gelbe Lackierung dieser Tech-Einheiten macht sie selbst in schweren Schneestürmen gut sichtbar.",
     "skills": [
       {
-        "name": "Willens-Boost [L]",
+        "name": "Wille [L]",
         "description": "Wille <@ba.vup>+{will}</>."
       },
       {
-        "name": "Elektrischer-SDN-Boost [L]",
+        "name": "Elektrischer SDN [L]",
         "description": "Verursachter Elektrischer SDN <@ba.vup>+{electrondam:0.0%}</>."
       },
       {
@@ -586,16 +586,54 @@
     "decoDesc": "Der Entwurf basiert auf der Gewinner-Einreichung bei einem von Mieszko Industries organisierten Wettbewerb. Geschosse werden auf die Mikrosekunde genau beschleunigt und die hervorragende Schwebkraft wird durch das umfangreiche Wissen des Ingenieurs über Umgebungen mit geringer Schwerkraft ermöglicht.",
     "skills": [
       {
-        "name": "Intellekt-Boost [L]",
+        "name": "Intellekt [L]",
         "description": "Intellekt <@ba.vup>+{wisd}</>."
       },
       {
-        "name": "Ultimative-Effizienzsteigerung-Boost [L]",
+        "name": "ULT-Effizienz [L]",
         "description": "Ultimative Effizienzsteigerung <@ba.vup>+{usgs:0.0%}</>."
       },
       {
         "name": "Wirksamkeit: Rückkopplungsschleife",
         "description": "Verursachter Natur-SDN <@ba.vup>+{nature_dmg_up:0.0%}</>.\nWenn der Anwender mit einer Kombofertigkeit ein Ziel mit <#ba.spellvul>Technik-Empfänglichkeit</> oder einer <#ba.spellinflict>Technikkumulierung</> belegt, erhält der Anwender ANG <@ba.vup>+{atk_up:0.0%}</> und andere Operatoren im Team erhalten ANG <@ba.vup>+{atk_up2:0.0%}</>. Dauer: {duration:0} Sek.\n<@ba.info>Max. Kumulierungen für Effekte desselben Namens: {max_stack:0}. Die Dauer der einzelnen Kumulierungen wird separat gezählt.</>"
+      }
+    ]
+  },
+  "umbraOfFrigidEventide": {
+    "name": "Umbra of Frigid Eventide",
+    "description": "Die Sonne war noch nicht aufgegangen.\nAber der Krieger des Schneekiefer-Stamms war schon wach. Er hielt einen kurzen Kohlestift in der Hand und das Papier, das vor ihm lag, war gerade einmal so groß wie seine Handfläche.\nJeder Millimeter zählte, denn er wollte so viele Dinge niederschreiben. Sorgfältig kritzelte er den Text aufs Papier und las dabei jedes Wort laut vor. Zwar versuchte er, leise zu sein, aber dennoch rührte sich die Person neben ihm. Die Frau öffnete ihr verbliebenes Auge, gab ihm einen kräftigen Tritt und raunte ihm unfreundlich ein „Ruhe!“ zu.\nDer Krieger grinste sie verschmitzt an und begann dann, seine Aufzeichnungen still in Gedanken zu rezitieren: „Liebe Mutter, das Eis ist geschmolzen und das grüne Moos ist zum Vorschein gekommen. Es fühlt sich gut an. Und sieht wunderschön aus. Vermutlich ist der Frühling auch bei dir eingekehrt. Der Fluss rauscht unterhalb deines Baumhauses und wässert die Pflanzen im Garten. Die Vögel haben wahrscheinlich wieder ihr Quartier unter dem Dach bezogen. Sobald du das Fenster öffnest, flattern sie ins Haus und setzen sich auf deine Hand. Vielleicht wird einst der Tag kommen, an dem ich den Vögeln gleich zu dir nach Hause fliegen kann. Dann bleibe ich dort bei dir, wo der Frühling ewig währt und …“\nEs war ein Wort, das seine Mutter oft erwähnt hatte. Der Krieger erinnerte sich daran, hatte aber dessen Schreibweise vergessen. Da ihm keine andere Wahl blieb, hörte er auf zu schreiben und warf der Frau einen resignierten Blick zu, der aufrichtige Hilflosigkeit verriet.\nIn den verärgerten Worten der Frau schwang ein unverhohlen neugieriger Unterton mit: „Warum schreibst du nicht mehr?“\n„Es gibt da dieses Wort, aber ich weiß nicht, wie man es schreibt.“\n„Und um welches Wort handelt es sich?“\n„Hei-Heiligtum.“\n„Das hast du nie gelernt?“\n„Mama hat mich verlassen, bevor sie mir dieses Wort beibringen konnte.“\n„Ooooooh“, stieß die Frau aus, als wäre sie frustriert. Dann malte sie das Zeichen in die Luft: ein sich kreuzendes Muster aus geschwungenen Bögen und geraden Linien. Ähnlich den Spuren, die ein pfeilschnell fliegender Vogel hinterlässt.\nZunächst schrieb die Frau das Wort schnell. Die müden Augen des Kriegers konnten ihr dabei kaum folgen. Seine gerunzelte Stirn ließ sie kichern und sie schrieb das Wort erneut in die Luft.\nDer Kohlestift des Kriegers, der Finger der Frau, die Linien auf dem Papier und die Formen in der Luft – sie alle haben zusammen das Wort entstehen lassen. Alles hat einen Einklang gebildet, ähnlich wie bei der langsamen Landung eines Vogels.\nDas Papier war nun mit vielen Worten gefüllt. Er lächelte zufrieden und warf es dann ins Lagerfeuer. Von den Flammen umschlossen, fand es knisternd sein Ende, während das Licht des Feuers im Auge der Frau tanzte.\n„Glaubst du, dass sie das nie erreichen würde?“\nDer Krieger nickte. Die Frau stieß einen Seufzer aus. Nach einer kurzen Stille fragte sie plötzlich: „Wie heißt du, mein Kind?“\n„Björn, vom Stamm der Schneekiefer.“\nDie Frau schwelgte in Erinnerungen, während sie ihre Erinnerungen Stück für Stück in Worte fasste: „Der Schneekiefer-Stamm … Oh ja, ich erinnere mich an deinen Häuptling … Eine mutige und sehr bewundernswerte Kriegerin. Als sie starb, folgte sie dem Credo der Krieger.“\n„Ich kann mich glücklich schätzen, mit ihr aufgewachsen zu sein.“ Das Gesicht des Kriegers färbte sich rot, als er ihr dankbar zunickte.\n„Möge sie an die Seite von Sami zurückkehren, ein Ort des ewigen Frühlings, das …“\n„Das Heiligtum“, sagten der Krieger und die Frau im Einklang, während ihr ein sanftes Lächeln über die Lippen huschte.\nDie Sonne war noch nicht aufgegangen, aber die Hörner ertönten bereits. Am Horizont erschienen die Aggeloi als mächtige Streitmacht auf dem Weg zur Front.\nDer Krieger der Schneekiefer war bereits auf den Beinen. Er nahm seinen Speer und trug die Frau davon. Er wandte sich gemeinsam mit den Soldaten der anrollenden Aggeloi-Welle zu.\nHinter ihnen verschlang das Feuer das Papier. Die flackernden Feuerzungen schossen glühende Asche hinauf, die vom Wind an einen weit entfernten Ort getragen wurde.",
+    "decoDesc": "Eine von der Schmelzofenfestung geschmiedete Waffe. Sie verfügt über eine elegante Hülle mit einer speziellen Beschichtung, die Operatoren das Kämpfen in spärlich beleuchteten Gebieten erleichtern soll.",
+    "skills": [
+      {
+        "name": "Beweglichkeit [L]",
+        "description": "Beweglichkeit <@ba.vup>+{agi}</>."
+      },
+      {
+        "name": "ANG [L]",
+        "description": "ANG <@ba.vup>+{atk:0.0%}</>"
+      },
+      {
+        "name": "Zünden: Jagdinstinkt",
+        "description": "Verursachter Technik-SDN <@ba.vup>+{spell_dmg_up:0.0%}</>.\nNachdem der Anwender eine Kampffertigkeit gewirkt hat, erhält er für {wind_duration:0} Sek. Technik-Intensität <@ba.vup>+{phy_spell_up:0}</> und {wind_grant:0} Kumulierungen <@ba.key>Windform</>.\n<@ba.info>Dieser Effekt kann nicht kumuliert werden. Max. Anzahl an <@ba.key>Windform</>-Kumulierungen: {wind_grant:0}.</>\nWenn der Anwender mit einer <#ba.spellburst>Technikexplosion</> trifft, wird 1 Kumulierung <@ba.key>Windform</> <#ba.consume>verbraucht</> und der Anwender erhält für {spell_dmg_duration:0} Sek. Verursachter Technik-SDN <@ba.vup>+{spell_dmg_up2:0.0%}</>.\n<@ba.info>Dieser Effekt kann bis zu {spell_dmg_max_stack:0}-mal kumuliert werden. Die Dauer der einzelnen Kumulierungen wird separat gezählt. Der Effekt wird nur einmal alle 0,1 Sek. ausgelöst.</>"
+      }
+    ]
+  },
+  "sufferingsEnd": {
+    "name": "Suffering's End",
+    "description": "„Das Leiden wird ein Ende haben. Frieden wird kommen … für alle Sarkaz …“\nDer uralte Sarkaz dachte über die Worte nach, während er die Tech-Einheit in seiner Hand säuberte. Ein endloser Strom von Touristen hatte sich um ihn geschart, die mit ihren Familien und Freunden vor Ort waren. Die Lichs zauberten mit ihren Techniken spektakuläre Feuerwerke, während die Kinder auf den Gargoyle-Kriegern herumkletterten. Egal, welcher Gattung, welchem Stamm oder welcher Spezies sie angehörten – die Leute jubelten begeistert, genauso wie an dem Tag, als Seš’qa in den Himmel aufgestiegen war, und genauso wie an jedem Tag der offenen Tür, an dem das Kriegsende gefeiert wurde.\n„Ist dies … unser ‚Ende des Leidens‘ …?“\nDer uralte Sarkaz packte schnell seine Sachen zusammen. Er hatte bereits genügend T-Kreditscheine für seine Reise zu zahlreichen Städten im Gürtel gespart. Schon jahrelang hatte er geplant, Seš’qa zu verlassen und den Zivilisationsgürtel zu besuchen.\n\nBis genau zu diesem Tag war die Reise angenehm und ereignislos verlaufen. Er lag auf einem riesigen Felsen und blickte zu den Sternen hinauf. Plötzlich schaltete sich der Originium-Kaffeekessel mit einem lauten Klack von selbst aus. Zunächst war er verwirrt, doch dann hörte er Explosionen, Rufe und Schreie.\nMit wachen Augen blickte er auf das sich ausbreitende Nebelfeuer. Eine dreiköpfige Familie floh zu Fuß durch die Wildnis, während eine Meute von dreißig bewaffneten, fleckigen Gestalten ihnen hinterherjagte. Landbrecher. Der uralte Sarkaz sah die Verfolgungsjagd mit an … und unternahm nichts. Er legte sich wieder hin, um sich weiter auszuruhen.\n\nEr war einfach zu alt und zu gewöhnlich. Schließlich war er kein Gargoyle, der kräftig wie eine Bastion gebaut war, oder ein Lich, der sich auf das Wirken esoterischer und tödlicher Techniken versteht, noch war er ein Nachzehrer mit angsteinflößenden und überirdischen Kräften. Er war lediglich ein Sarkaz gemischter Abstammung, dem es gelungen war, den Aggeloi-Krieg, den Demütigungskrieg und den Jakub-Krieg zu überleben, der den Kriegsherrn der Wildnis ausgelöscht hat. Er kannte nur abwegige Überlebenstricks.\nKeine zwölf Sekunden später schnappte sich der Sarkaz seine Tech-Einheit und sprang vom großen Felsen herunter. Er erinnerte sich an die verrückte Sprecherin, die eine Rede gehalten und den Sarkaz Versprechen gemacht hatte. Offensichtlich war es eine Rede, die sie nicht selbst geschrieben hatte. Einige Dinge ändern sich schließlich nie. Wenn das Leiden enden soll, dann muss jemand etwas unternehmen.\nEr säuberte vorsichtig seine Tech-Einheit. Im Chassis spiegelte sich das Antlitz eines Sarkaz, der älter als die Zeit selbst geworden zu sein schien.\n\nEin Pfeil hatte sich in den fliehenden Vater gebohrt, der sein Kind auf dem Arm trug. Beide stürzten zu Boden. Die Frau warf ihr Kommunikationsgerät zur Seite und versuchte, den Mann in Sicherheit zu zerren. Doch das Unterfangen war vergeblich. Die Brecher hatten sie eingeholt. In die nächtliche Wildnis kehrte unverzüglich Stille ein.\nDie Brecher heulten und lachten, während sie sich der geschundenen Familie von allen Seiten näherten. Gnadenlos hoben sie ihre Waffen. Der Mann und die Frau versuchten, ihr Kind zu schützen. Das Fackellicht spiegelte sich in den Säbeln und Armbrustbolzen sowie in den Tränen des Jungen.\nPlötzlich erschien hinter den Brechern ein großer Schatten mit zwei Hörnern. Eine noch düsterere Dunkelheit als die Nacht legte sich geräuschlos und ohne Warnung über die Szenerie. Sie packte einen Brecher nach dem anderen, der verzweifelt aufheulte, als das Leben aus ihm hinausgedrückt wurde. Die Übrigen waren zu Tode erschrocken. Sie versuchten verzweifelt, herauszufinden, woher dieser unerwartete Angriff kam. In der nächtlichen Brise waren zuerst Worte zu hören. Worte, die in der alten, kratzenden Stimme eines Sarkaz gesprochen wurden …\n„Mein Leiden ist zu Ende. Aber das eure … hat gerade erst begonnen.“",
+    "decoDesc": "Eine der eigentümlichen Tech-Einheiten der Zauberstunde. Sie scheint von einer seltsamen Art von Originium-Techniken durchdrungen zu sein, die ihrem Träger ein unergründliches Gefühl der Sicherheit vermittelt.",
+    "skills": [
+      {
+        "name": "Beweglichkeit [L]",
+        "description": "Beweglichkeit <@ba.vup>+{agi}</>."
+      },
+      {
+        "name": "Natur-SDN [L]",
+        "description": "Verursachter Natur-SDN <@ba.vup>+{naturaldam:0.0%}</>."
+      },
+      {
+        "name": "Zünden: Morgengrauen nach einer langen Nacht",
+        "description": "Technik-Intensität <@ba.vup>+{phy_spell_up:0}</>.\nWenn der Anwender mit einer <#ba.spellburst>Technikexplosion</> trifft, erhält er für {duration:0} Sek. Verursachter Natur-SDN <@ba.vup>+{nature_dmg_up:0.0%}</>.\n<@ba.info>Max. Kumulierungen für diesen Effekt: {max_stack:0}. Die Dauer der einzelnen Kumulierungen wird separat gezählt. Der Effekt wird nur einmal alle 0,1 Sek. ausgelöst.</>\nBei {max_stack:0} Kumulierungen verleiht der zuvor genannte Effekt zusätzlich Verursachter Natur-SDN <@ba.vup>+{nature_dmg_up2:0.0%}</>.\n<@ba.info>Dieser Effekt kann nicht kumuliert werden.</>"
       }
     ]
   },
@@ -605,12 +643,12 @@
     "decoDesc": "Eine der von Endfield Industries produzierten fortschrittlichen Waffen für Operatoren. Diese schnittige, leichte Waffe ist gut ausbalanciert und erinnert viele an die Standard-Lanzen, mit denen die Vorhut-Operatoren von Rhodes Island früher ausgestattet wurden.",
     "skills": [
       {
-        "name": "Beweglichkeits-Boost [S]",
+        "name": "Beweglichkeit [S]",
         "description": "Beweglichkeit <@ba.vup>+{agi}</>."
       },
       {
-        "name": "ANG-Boost [S]",
-        "description": "Angriff <@ba.vup>+{atk:0.0%}</>."
+        "name": "ANG [S]",
+        "description": "ANG <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Inspirierend: Beginn einer Saga",
@@ -624,11 +662,11 @@
     "decoDesc": "Ein experimentelles Lanzenmodell von Endfield Industries, von dem nur sehr wenige Exemplare produziert wurden. Die Waffe besteht aus vielen Einzelmodulen und lässt sich in komplexen Kampfsituationen nach Bedarf auseinandernehmen und zusammensetzen.",
     "skills": [
       {
-        "name": "Stärke-Boost [M]",
+        "name": "Stärke [M]",
         "description": "Stärke <@ba.vup>+{str}</>."
       },
       {
-        "name": "Ultimative-Effizienzsteigerung-Boost [M]",
+        "name": "ULT-Effizienz [M]",
         "description": "Ultimative Effizienzsteigerung <@ba.vup>+{usgs:0.0%}</>."
       },
       {
@@ -643,11 +681,11 @@
     "decoDesc": "Ein Klassiker aus dem anpassbaren Herstellungsverfahren von RAYTHEAN. Diese Waffe basiert auf einer Standard-Lanze für Militärs, verfügt aber über eine große Auswahl an Spezialfunktionen. Ihr Aussehen kann durch verschiedene Komponenten verändert werden.",
     "skills": [
       {
-        "name": "Willens-Boost [M]",
+        "name": "Wille [M]",
         "description": "Wille <@ba.vup>+{will}</>."
       },
       {
-        "name": "Elektrischer-SDN-Boost [M]",
+        "name": "Elektrischer SDN [M]",
         "description": "Verursachter Elektrischer SDN <@ba.vup>+{electrondam:0.0%}</>."
       },
       {
@@ -662,11 +700,11 @@
     "decoDesc": "Eine alte Waffe des Northmarch-Support-Zentrums mit äußerst schlechter Handhabung. Besitzt aber zugleich ein enormes Zerstörungspotenzial. Aufgrund ihres kolossalen Gewichts mag sie bei den meisten unbeliebt sein, aber kräftige Anwender, die gern mächtige, ausschweifende Kampfbewegungen ausführen, dürften damit auf ihre Kosten kommen.",
     "skills": [
       {
-        "name": "Beweglichkeits-Boost [L]",
+        "name": "Beweglichkeit [L]",
         "description": "Beweglichkeit <@ba.vup>+{agi}</>."
       },
       {
-        "name": "Ultimative-Effizienzsteigerung-Boost [L]",
+        "name": "ULT-Effizienz [L]",
         "description": "Ultimative Effizienzsteigerung <@ba.vup>+{usgs:0.0%}</>."
       },
       {
@@ -681,11 +719,11 @@
     "decoDesc": "Eine Standardlanze, die in der Schmelzofenfestung für die Ausrüstung einfacher Soldaten gefertigt wird. Sie verfügt über eine besonders scharfe Spitze, um gegen Aggeloi eingesetzt zu werden.",
     "skills": [
       {
-        "name": "Willens-Boost [S]",
+        "name": "Wille [S]",
         "description": "Wille <@ba.vup>+{will}</>."
       },
       {
-        "name": "Technik-Boost [S]",
+        "name": "Technik-SDN [S]",
         "description": "Verursachter Technik-SDN <@ba.vup>+{spelldam:0.0%}</>."
       },
       {
@@ -700,7 +738,7 @@
     "decoDesc": "Eine der von Endfield Industries produzierten Standardwaffen für Operatoren, die vom erfahrenen Endfield-Waffeningenieur Opero höchstpersönlich entworfen wurde. Dank ihres ergonomischen Designs haben selbst frischgebackene Endfield-Operatoren keinerlei Probleme mit dieser Waffe.",
     "skills": [
       {
-        "name": "Hauptattribut-Boost [S]",
+        "name": "Hauptattribut [S]",
         "description": "Hauptattribut <@ba.vup>+{mainattr}</>."
       },
       {
@@ -715,11 +753,11 @@
     "decoDesc": "Ein Mittelklasseprodukt von Mieszko Industries. Diese Lanze ist selten, jedoch aufgrund des Retro-Designs, das an ein Ballistengeschoss erinnert, und ihrer Zuverlässigkeit im Kampf sehr begehrt.",
     "skills": [
       {
-        "name": "Beweglichkeits-Boost [L]",
+        "name": "Beweglichkeit [L]",
         "description": "Beweglichkeit <@ba.vup>+{agi}</>."
       },
       {
-        "name": "Physischer-SDN-Boost [L]",
+        "name": "Physischer SDN [L]",
         "description": "Verursachter Physischer SDN <@ba.vup>+{phydam:0.0%}</>."
       },
       {
@@ -734,12 +772,12 @@
     "decoDesc": "Eine experimentelle Waffe, die nach allen Regeln der Kunst vom Northmarch-Support-Zentrum hergestellt wird. Der Prototyp ist im mittlerweile aufgelösten Raumfahrtforschungszentrum entstanden. Ihre hohe Leistung verdankt die Lanze einer Reihe von Originium-Kompressions-Düsentriebwerken.",
     "skills": [
       {
-        "name": "Hauptattribut-Boost [L]",
+        "name": "Hauptattribut [L]",
         "description": "Hauptattribut <@ba.vup>+{mainattr}</>."
       },
       {
-        "name": "Angriffs-Boost [L]",
-        "description": "Angriff <@ba.vup>+{atk:0.0%}</>."
+        "name": "ANG [L]",
+        "description": "ANG <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Unterdrückung: Astrophysik",
@@ -753,11 +791,11 @@
     "decoDesc": "Eine von den Hongshan-Schwertkämpfern entwickelte experimentelle Lanze. Der Schaft der Waffe wurde mit einer speziellen Legierung geschmiedet, um sowohl Stärke als auch Robustheit zu gewährleisten.",
     "skills": [
       {
-        "name": "Beweglichkeits-Boost [L]",
+        "name": "Beweglichkeit [L]",
         "description": "Beweglichkeit <@ba.vup>+{agi}</>."
       },
       {
-        "name": "Physischer-SDN-Boost [L]",
+        "name": "Physischer SDN [L]",
         "description": "Verursachter Physischer SDN <@ba.vup>+{phydam:0.0%}</>."
       },
       {
@@ -772,11 +810,11 @@
     "decoDesc": "Eine Standardwaffe, die von Endfield Industries produziert wird. Das Design stammt von der Prototyp-Entwicklungsabteilung, die von Waffeningenieur Opero gegründet wurde. Es steht Anwendern frei, das Speerspitzenmodul nach ihren Wünschen anzupassen.",
     "skills": [
       {
-        "name": "Willens-Boost [M]",
+        "name": "Wille [M]",
         "description": "Wille <@ba.vup>+{will}</>."
       },
       {
-        "name": "Physischer-SDN-Boost [M]",
+        "name": "Physischer SDN [M]",
         "description": "Verursachter Physischer SDN <@ba.vup>+{phydam:0.0%}</>."
       },
       {
@@ -791,16 +829,16 @@
     "decoDesc": "Ein Produkt aus der hochwertigsten Reihe von Mieszko Industries, das nur auf Bestellung für angesehene Bühnendarsteller maßgefertigt wird. Das verträumte, an ein Mikrofon erinnernde Design wird mit einer herausragenden Leistung und beeindruckender Stärke kombiniert. Diese Waffe hat bei jedem ihrer Tester einen bleibenden Eindruck hinterlassen.",
     "skills": [
       {
-        "name": "Willens-Boost [L]",
+        "name": "Wille [L]",
         "description": "Wille <@ba.vup>+{will}</>."
       },
       {
-        "name": "Behandlungseffizienz-Boost [L]",
+        "name": "Behandlungseffizienz [L]",
         "description": "Behandlungseffizienz <@ba.vup>+{heal:0.0%}</>."
       },
       {
         "name": "Pharmakon: Schimmernder Vorhang",
-        "description": "Hauptattribut <@ba.vup>+{primary_attr_up:0.0%}</>.\nWenn die Fertigkeit des Anwenders anderen Operatoren im Team LP-Behandlung gewährt, erhält der geheilte Operator auch {duration:0} Sek. lang <@ba.vup>+{atk_up:0.0%}</> ANG.\n<@ba.info>Max. Kumulierungen für Effekte desselben Namens: {max_stack:0}. Die Dauer der einzelnen Kumulierungen wird separat gezählt. Jeder Operator erlangt diesen Effekt maximal alle 0,1 Sek. </>"
+        "description": "Hauptattribut <@ba.vup>+{primary_attr_up:0.0%}</>.\nWenn die Fertigkeit des Anwenders anderen Operatoren im Team LP-Behandlung gewährt, erhält der geheilte Operator auch {duration:0} Sek. lang <@ba.vup>+{atk_up:0.0%}</> ANG.\n<@ba.info>Max. Kumulierungen für Effekte desselben Namens: {max_stack:0}. Die Dauer der einzelnen Kumulierungen wird separat gezählt. Jeder Operator erlangt diesen Effekt maximal alle 0,1 Sek. </>"
       }
     ]
   },
@@ -810,11 +848,11 @@
     "decoDesc": "Eine der Stangenwaffen, die die Zauberstunde herstellt. Am Tag der offenen Tür in Seš’qa erschien eine spezielle Gedenkausgabe. Die Lanze wurde einem speziellen Beschichtungsverfahren unterzogen, um eine Oberfläche anzufertigen, die sowohl äußerst funktional als auch ästhetisch ansprechend ist.",
     "skills": [
       {
-        "name": "Beweglichkeits-Boost [L]",
+        "name": "Beweglichkeit [L]",
         "description": "Beweglichkeit <@ba.vup>+{agi}</>."
       },
       {
-        "name": "Hitze-SDN-Boost [L]",
+        "name": "Hitze-SDN [L]",
         "description": "Verursachter Hitze-SDN <@ba.vup>+{firedam:0.0%}</>."
       },
       {
@@ -829,11 +867,11 @@
     "decoDesc": "Eines der hochwertigsten Produkte von Mieszko Industries. Die Spitze der Lanze wird aus einer speziellen Legierung gefertigt, die eine unglaubliche Robustheit und Klingenschärfe ermöglicht. Solche Waffen sind elegant, erhaben und in der Herstellung unglaublich teuer. Meist werden sie von Personen getragen, die ihre gehobene Stellung betonen möchten.",
     "skills": [
       {
-        "name": "Willens-Boost [L]",
+        "name": "Wille [L]",
         "description": "Wille <@ba.vup>+{will}</>."
       },
       {
-        "name": "Behandlungseffizienz-Boost [L]",
+        "name": "Behandlungseffizienz [L]",
         "description": "Behandlungseffizienz <@ba.vup>+{heal:0.0%}</>."
       },
       {
@@ -848,7 +886,7 @@
     "decoDesc": "Eine der von Endfield Industries produzierten Standardwaffen für Operatoren. Diese Waffe wurde vom Endfield-Waffeningenieur Peco entworfen. Die Sankta sind nicht mehr die einzigen, die meisterhaft mit geätzter Munition und Feuerwaffen umgehen können.",
     "skills": [
       {
-        "name": "Hauptattribut-Boost [S]",
+        "name": "Hauptattribut [S]",
         "description": "Hauptattribut <@ba.vup>+{mainattr}</>."
       },
       {
@@ -863,12 +901,12 @@
     "decoDesc": "Ein Mittelklasseprodukt von Mieszko Industries. Diese Pistolen vereinen das Beste eines Retro-Designs aus Lateran mit moderner industrieller Fertigung. Die glänzenden blauen Elemente verleihen diesen Kunstwerken den letzten Schliff.",
     "skills": [
       {
-        "name": "Intellekt-Boost [S]",
+        "name": "Intellekt [S]",
         "description": "Intellekt <@ba.vup>+{wisd}</>."
       },
       {
-        "name": "ANG-Boost [S]",
-        "description": "Angriff <@ba.vup>+{atk:0.0%}</>."
+        "name": "ANG [S]",
+        "description": "ANG <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Unterdrückung: Notfall-Boost",
@@ -882,11 +920,11 @@
     "decoDesc": "Von der Schmelzofenfestung gefertigte Standardschusswaffen zur Ausrüstung einfacher Soldaten aus dem Orden des Stahlschwurs. Aufgrund ihres vereinfachten Feuermechanismus und der unglaublichen Stoppwirkung sind diese Waffen sehr beliebt.",
     "skills": [
       {
-        "name": "Stärke-Boost [S]",
+        "name": "Stärke [S]",
         "description": "Stärke <@ba.vup>+{str}</>."
       },
       {
-        "name": "Technik-Boost [S]",
+        "name": "Technik-SDN [S]",
         "description": "Verursachter Technik-SDN <@ba.vup>+{spelldam:0.0%}</>."
       },
       {
@@ -901,11 +939,11 @@
     "decoDesc": "RAYTHEAN Industries hat diese Pistolen mit hohem Energieverbrauch für den Einsatz im Grenzgebiet entwickelt. Die Waffen halten auch in raueren Umgebungen recht gut durch und gehören inzwischen zur Standardausrüstung für Erkunder in der Wildnis.",
     "skills": [
       {
-        "name": "Stärke-Boost [M]",
+        "name": "Stärke [M]",
         "description": "Stärke <@ba.vup>+{str}</>."
       },
       {
-        "name": "Hitze-SDN-Boost [M]",
+        "name": "Hitze-SDN [M]",
         "description": "Verursachter Hitze-SDN <@ba.vup>+{firedam:0.0%}</>."
       },
       {
@@ -920,11 +958,11 @@
     "decoDesc": "Ein neuartiges Konzept dieses Jahres von Mieszko Industries. Sie ist den Erinnerungen an die große Navigatorin gewidmet, der wir auf unserer endlosen Reise über Talos-II folgen.",
     "skills": [
       {
-        "name": "Intellekt-Boost [L]",
+        "name": "Intellekt [L]",
         "description": "Intellekt <@ba.vup>+{wisd}</>."
       },
       {
-        "name": "Kryo-SDN-Boost [L]",
+        "name": "Kryo-SDN [L]",
         "description": "Verursachter Kryo-SDN <@ba.vup>+{crystdam:0.0%}</>."
       },
       {
@@ -939,11 +977,11 @@
     "decoDesc": "Ein vom Mobilen Æthertech-Labor in Auftrag gegebenes Produkt. Cræft-Meister haben den Lauf der Waffe mit Relicolit verstärkt, auf das spezielle Muster eingraviert sind.",
     "skills": [
       {
-        "name": "Beweglichkeits-Boost [M]",
+        "name": "Beweglichkeit [M]",
         "description": "Beweglichkeit <@ba.vup>+{agi}</>."
       },
       {
-        "name": "Technik-Boost [M]",
+        "name": "Technik-SDN [M]",
         "description": "Verursachter Technik-SDN <@ba.vup>+{spelldam:0.0%}</>."
       },
       {
@@ -958,11 +996,11 @@
     "decoDesc": "Von den Hongshan-Schwertkämpfern entwickelte Schusswaffen. Um gemäß dem HAW-Arsenal mit einem einfachen Design aufzuwarten, wurde an Gewicht gespart und Griff und Handhabung optimiert.",
     "skills": [
       {
-        "name": "Beweglichkeits-Boost [L]",
+        "name": "Beweglichkeit [L]",
         "description": "Beweglichkeit <@ba.vup>+{agi}</>."
       },
       {
-        "name": "Kryo-SDN-Boost [L]",
+        "name": "Kryo-SDN [L]",
         "description": "Verursachter Kryo-SDN <@ba.vup>+{crystdam:0.0%}</>."
       },
       {
@@ -977,11 +1015,11 @@
     "decoDesc": "Eine legendäre Waffe des Northmarch-Support-Zentrums, die den Stil und die Tugenden von Northmarch-Waffen repräsentiert. Sie verfügt über eine zerstörerische Feuerkraft und ist jederzeit zuverlässig, die Handhabung und der Rückstoß sind jedoch unterirdisch.",
     "skills": [
       {
-        "name": "Hauptattribut-Boost [L]",
+        "name": "Hauptattribut [L]",
         "description": "Hauptattribut <@ba.vup>+{mainattr}</>."
       },
       {
-        "name": "Kritische-Rate-Boost [L]",
+        "name": "Kritische Rate [L]",
         "description": "Kritische Rate <@ba.vup>+{crirate:0.0%}</>."
       },
       {
@@ -996,11 +1034,11 @@
     "decoDesc": "Spezial-Schusswaffen, die von RAYTHEAN Industries hergestellt wurden. Die Handhabung dieser experimentellen Waffen ist extrem schwierig. Nur wenige Prototypen haben es bis auf den Waffenmarkt geschafft.",
     "skills": [
       {
-        "name": "Hauptattribut-Boost [L]",
+        "name": "Hauptattribut [L]",
         "description": "Hauptattribut <@ba.vup>+{mainattr}</>."
       },
       {
-        "name": "Technik-Boost [L]",
+        "name": "Technik-SDN [L]",
         "description": "Verursachter Technik-SDN <@ba.vup>+{spelldam:0.0%}</>."
       },
       {
@@ -1015,11 +1053,11 @@
     "decoDesc": "Eines der beliebtesten Produkte von Mieszko Industries aus ihrer Reihe von Kollaborationen mit bekannten Künstlern. Diese Feuerwaffen vereinen Feuerkraft mit Stil. Aufgrund ihrer Beliebtheit sind selbst gebrauchte Exemplare noch überaus kostspielig.",
     "skills": [
       {
-        "name": "Intellekt-Boost [L]",
+        "name": "Intellekt [L]",
         "description": "Intellekt <@ba.vup>+{wisd}</>."
       },
       {
-        "name": "Kritische-Rate-Boost [L]",
+        "name": "Kritische Rate [L]",
         "description": "Kritische Rate <@ba.vup>+{crirate:0.0%}</>."
       },
       {
@@ -1034,12 +1072,12 @@
     "decoDesc": "Von den Hongshan-Schwertkämpfern entwickelte Schusswaffen. Sie bestehen aus haltbaren verlässlichen Materialien und ihr Design ist simpel. Sie sind leicht, portabel und äußerst nützlich in den verschiedensten Umgebungen und Situationen.",
     "skills": [
       {
-        "name": "Beweglichkeits-Boost [L]",
+        "name": "Beweglichkeit [L]",
         "description": "Beweglichkeit <@ba.vup>+{agi}</>."
       },
       {
-        "name": "Angriffs-Boost [L]",
-        "description": "Angriff <@ba.vup>+{atk:0.0%}</>."
+        "name": "ANG [L]",
+        "description": "ANG <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Zünden: Banditenschlächter",
@@ -1053,11 +1091,11 @@
     "decoDesc": "Eine Standardwaffe, die von Endfield Industries produziert wird. Das Design stammt von der Prototyp-Entwicklungsabteilung, die von Waffeningenieur Opero gegründet wurde. Die Waffe wurde aus leichten, praktischen und robusten Materialien gefertigt.",
     "skills": [
       {
-        "name": "Beweglichkeits-Boost [M]",
+        "name": "Beweglichkeit [M]",
         "description": "Beweglichkeit <@ba.vup>+{agi}</>."
       },
       {
-        "name": "Ultimative-Effizienzsteigerung-Boost [M]",
+        "name": "ULT-Effizienz [M]",
         "description": "Ultimative Effizienzsteigerung <@ba.vup>+{usgs:0.0%}</>."
       },
       {
@@ -1072,7 +1110,7 @@
     "decoDesc": "Eine der von Endfield Industries produzierten Standardwaffen für Operatoren. Diese Waffe wurde vom Endfield-Waffeningenieur Tarr entworfen. Für viele Operatoren ist sie die erste Waffe, die sie in den Händen halten.",
     "skills": [
       {
-        "name": "Hauptattribut-Boost [S]",
+        "name": "Hauptattribut [S]",
         "description": "Hauptattribut <@ba.vup>+{mainattr}</>."
       },
       {
@@ -1087,11 +1125,11 @@
     "decoDesc": "Eine der auserlesensten Waffen, die Endfield für seine Operatoren produziert. Das Schwert verfügt über einen schnittigen Griff mit Handschutz und einen Energiespeicher, dessen Reserven bei Stress freigesetzt werden, um das Schadenspotenzial zu erhöhen.",
     "skills": [
       {
-        "name": "Beweglichkeits-Boost [M]",
+        "name": "Beweglichkeit [M]",
         "description": "Beweglichkeit <@ba.vup>+{agi}</>."
       },
       {
-        "name": "Physischer-SDN-Boost [M]",
+        "name": "Physischer SDN [M]",
         "description": "Verursachter Physischer SDN <@ba.vup>+{phydam:0.0%}</>."
       },
       {
@@ -1106,12 +1144,12 @@
     "decoDesc": "Eine der rasiermesserscharfen Waffen, die von der Zauberstunde produziert werden. Durch besondere Schmelzprozesse wurde eine vollständig rote Klinge erzeugt. Die Tech-Einheit ist in Wirklichkeit eine spezielle Form flüssigen Originiums und erinnert an einen Tropfen Blut aus einer Schmiede.",
     "skills": [
       {
-        "name": "Intellekt-Boost [L]",
+        "name": "Intellekt [L]",
         "description": "Intellekt <@ba.vup>+{wisd}</>."
       },
       {
-        "name": "Angriffs-Boost [L]",
-        "description": "Angriff <@ba.vup>+{atk:0.0%}</>."
+        "name": "ANG [L]",
+        "description": "ANG <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Abenddämmerung: Loderndes Heulen",
@@ -1125,11 +1163,11 @@
     "decoDesc": "Eine der in der Schmelzofenfestung produzierten Waffen. Dieses Schwert wurde nach einem traditionellen Muster gefertigt und ist extrem haltbar und belastbar. Die dicke, schwere Klinge hat zahlreiche Narben auf dem Permafrost hinterlassen, während die Fronten sich mit der Zeit verschoben haben.",
     "skills": [
       {
-        "name": "Intellekt-Boost [M]",
+        "name": "Intellekt [M]",
         "description": "Intellekt <@ba.vup>+{wisd}</>."
       },
       {
-        "name": "Ultimative-Effizienzsteigerung-Boost [M]",
+        "name": "ULT-Effizienz [M]",
         "description": "Ultimative Effizienzsteigerung <@ba.vup>+{usgs:0.0%}</>."
       },
       {
@@ -1144,11 +1182,11 @@
     "decoDesc": "Eine der fortschrittlichen Waffen, die Endfield für seine Operatoren produziert. Durch das minimalistische Modulardesign ist eine leichte Waffe entstanden, die perfekt ausbalanciert und einfach zu handhaben ist. Die Klinge selbst ist extrem robust.",
     "skills": [
       {
-        "name": "Beweglichkeits-Boost [S]",
+        "name": "Beweglichkeit [S]",
         "description": "Beweglichkeit <@ba.vup>+{agi}</>."
       },
       {
-        "name": "Physischer-SDN-Boost [S]",
+        "name": "Physischer SDN [S]",
         "description": "Verursachter Physischer SDN <@ba.vup>+{phydam:0.0%}</>."
       },
       {
@@ -1163,12 +1201,12 @@
     "decoDesc": "Ein Mittelklasseprodukt von Mieszko Industries. Das Schwert besticht durch ein schickes Avantgarde-Design und ein fantastisches Preis-Leistungs-Verhältnis. Damit ist es derzeit eine der angesagtesten Waffen in der TAHK.",
     "skills": [
       {
-        "name": "Intellekt-Boost [S]",
+        "name": "Intellekt [S]",
         "description": "Intellekt <@ba.vup>+{wisd}</>."
       },
       {
-        "name": "ANG-Boost [S]",
-        "description": "Angriff <@ba.vup>+{atk:0.0%}</>."
+        "name": "ANG [S]",
+        "description": "ANG <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Verfolgung: Unendlicher Kreislauf",
@@ -1182,11 +1220,11 @@
     "decoDesc": "Eine fortschrittliche leichte Waffe zur Selbstverteidigung von RAYTHEAN Industries. Das Schwert verfügt über eine Klinge mit besonderer Legierung und wurde unter gewissen „Profis“ extrem beliebt.",
     "skills": [
       {
-        "name": "Intellekt-Boost [L]",
+        "name": "Intellekt [L]",
         "description": "Intellekt <@ba.vup>+{wisd}</>."
       },
       {
-        "name": "Hitze-SDN-Boost [L]",
+        "name": "Hitze-SDN [L]",
         "description": "Verursachter Hitze-SDN <@ba.vup>+{firedam:0.0%}</>."
       },
       {
@@ -1201,11 +1239,11 @@
     "decoDesc": "Ein hochklassiges, stark verziertes Schwert von den Hongshan-Schwertkämpfern. Diese Waffe wird oft für herausragende Leistungen verliehen. Die gesamte Hongshan-Akademie der Wissenschaften stimmte über ihren Namen ab.",
     "skills": [
       {
-        "name": "Hauptattribut-Boost [L]",
+        "name": "Hauptattribut [L]",
         "description": "Hauptattribut <@ba.vup>+{mainattr}</>."
       },
       {
-        "name": "Kritische-Rate-Boost [L]",
+        "name": "Kritische Rate [L]",
         "description": "Kritische Rate <@ba.vup>+{crirate:0.0%}</>."
       },
       {
@@ -1220,12 +1258,12 @@
     "decoDesc": "Eine einfache Waffe aus der Pionier-Reihe des Northmarch-Support-Zentrums. Der Thermitschneider Mk IV wurde aus patentierten Thermomaterialien hergestellt und erbringt eine hervorragende Schnittleistung. Viele GBT-Ingenieure haben die Waffe positiv bewertet.",
     "skills": [
       {
-        "name": "Willens-Boost [L]",
+        "name": "Wille [L]",
         "description": "Wille <@ba.vup>+{will}</>."
       },
       {
-        "name": "Angriffs-Boost [L]",
-        "description": "Angriff <@ba.vup>+{atk:0.0%}</>."
+        "name": "ANG [L]",
+        "description": "ANG <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Strömung: Thermale Aktivierung",
@@ -1239,11 +1277,11 @@
     "decoDesc": "Ein hochwertiges Schwert, das von Mieszko Industries herausgebracht wurde. Die sorgfältig geformte und gravierte Klinge bietet eine zuverlässige Leistung. Diese Waffe kam bei der Elite der TAHK und den oberen Gesellschaftsschichten gut an.",
     "skills": [
       {
-        "name": "Hauptattribut-Boost [L]",
+        "name": "Hauptattribut [L]",
         "description": "Hauptattribut <@ba.vup>+{mainattr}</>."
       },
       {
-        "name": "Physischer-SDN-Boost [L]",
+        "name": "Physischer SDN [L]",
         "description": "Verursachter Physischer SDN <@ba.vup>+{phydam:0.0%}</>."
       },
       {
@@ -1258,11 +1296,11 @@
     "decoDesc": "Eine der Waffen, die in den Öfen der Schmelzofenfestung produziert wird. Die Kraftdämpfung und die Griffigkeit wurden durch besondere Strangziehverfahren optimiert. Die Klinge selbst wurde aus einem seltenen Mineral geschmiedet, das in der Wildnis abgebaut wird.",
     "skills": [
       {
-        "name": "Hauptattribut-Boost [L]",
+        "name": "Hauptattribut [L]",
         "description": "Hauptattribut <@ba.vup>+{mainattr}</>."
       },
       {
-        "name": "Technik-Intensitäts-Boost [L]",
+        "name": "Technik-Intensität [L]",
         "description": "Technik-Intensität <@ba.vup>+{physpell:0}</>."
       },
       {
@@ -1277,11 +1315,11 @@
     "decoDesc": "Eine Waffe der Spitzenklasse der Hongshan-Schwertkämpfer. Auch die einzige ihrer Waffen, die sich auf dem Markt großer Beliebtheit erfreut. In der Wildnis findet man jedoch auch viele Kopien davon.",
     "skills": [
       {
-        "name": "Beweglichkeits-Boost [M]",
+        "name": "Beweglichkeit [M]",
         "description": "Beweglichkeit <@ba.vup>+{agi}</>."
       },
       {
-        "name": "Physischer-SDN-Boost [M]",
+        "name": "Physischer SDN [M]",
         "description": "Verursachter Physischer SDN <@ba.vup>+{phydam:0.0%}</>."
       },
       {
@@ -1296,12 +1334,12 @@
     "decoDesc": "Eine Waffe aus den Öfen der Schmelzofenfestung. Auch wenn sie mehrmals umgeschmolzen wurde, ist die Klinge noch immer von einer Ehrfurcht gebietenden Aura der Dominanz umgeben.",
     "skills": [
       {
-        "name": "Willens-Boost [L]",
+        "name": "Wille [L]",
         "description": "Wille <@ba.vup>+{will}</>."
       },
       {
-        "name": "Angriffs-Boost [L]",
-        "description": "Angriff <@ba.vup>+{atk:0.0%}</>."
+        "name": "ANG [L]",
+        "description": "ANG <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Strömung: Reinkarnation",
@@ -1315,11 +1353,11 @@
     "decoDesc": "Eine der von der Schmelzofenfestung hergestellten Waffen. Dieses elegante Stück wird häufig vom Orden des Stahlschwurs für Zeremonien verwendet anstatt bei Kämpfen an der Front. Dennoch wurde das Schwert mehrfach poliert und schmückt sich mit einer rasiermesserscharfen Klinge.",
     "skills": [
       {
-        "name": "Beweglichkeits-Boost [L]",
+        "name": "Beweglichkeit [L]",
         "description": "Beweglichkeit <@ba.vup>+{agi}</>."
       },
       {
-        "name": "Kritische-Rate-Boost [L]",
+        "name": "Kritische Rate [L]",
         "description": "Kritische Rate <@ba.vup>+{crirate:0.0%}</>."
       },
       {
@@ -1334,12 +1372,12 @@
     "decoDesc": "Ein rasiermesserscharfes Schwert aus der Wildnis. Jeder Waffenschmied wickelt derartige Waffen auf eigene Art und Weise in dekorative Stoffe.",
     "skills": [
       {
-        "name": "Beweglichkeits-Boost [M]",
+        "name": "Beweglichkeit [M]",
         "description": "Beweglichkeit <@ba.vup>+{agi}</>."
       },
       {
-        "name": "ANG-Boost [M]",
-        "description": "Angriff <@ba.vup>+{atk:0.0%}</>."
+        "name": "ANG [M]",
+        "description": "ANG <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Zufügung: Ernsthafte Befragung",
@@ -1353,12 +1391,12 @@
     "decoDesc": "Eine Standardwaffe, die von Endfield Industries produziert wird. Das Design stammt von der Prototyp-Entwicklungsabteilung, die von Waffeningenieur Opero gegründet wurde. Sie ist am Griff mit abnehmbaren Hilfsmodulen versehen.",
     "skills": [
       {
-        "name": "Beweglichkeits-Boost [M]",
+        "name": "Beweglichkeit [M]",
         "description": "Beweglichkeit <@ba.vup>+{agi}</>."
       },
       {
-        "name": "ANG-Boost [M]",
-        "description": "Angriff <@ba.vup>+{atk:0.0%}</>."
+        "name": "ANG [M]",
+        "description": "ANG <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Strömung: Ungezügelter Vorteil",
@@ -1372,11 +1410,11 @@
     "decoDesc": "Das Vorzeigeprodukt der Naturentdecker-Reihe des Northmarch-Support-Zentrums. Viele Entdecker und Angler schwören darauf, denn es ist leicht zu transportieren und dank des Outdoor-Designs äußerst robust.",
     "skills": [
       {
-        "name": "Stärke-Boost [M]",
+        "name": "Stärke [M]",
         "description": "Stärke <@ba.vup>+{str}</>."
       },
       {
-        "name": "Kryo-SDN-Boost [M]",
+        "name": "Kryo-SDN [M]",
         "description": "Verursachter Kryo-SDN <@ba.vup>+{crystdam:0.0%}</>."
       },
       {
@@ -1391,12 +1429,12 @@
     "decoDesc": "Eine hochwertige Waffe, die von Endfield Industries hergestellt wird. Die Klinge der innovativen Waffe wurde aus Originium-basierten Materialien gefertigt, wodurch sie Energie auf exzellente Weise leitet.",
     "skills": [
       {
-        "name": "Beweglichkeits-Boost [L]",
+        "name": "Beweglichkeit [L]",
         "description": "Beweglichkeit <@ba.vup>+{agi}</>."
       },
       {
-        "name": "Angriffs-Boost [L]",
-        "description": "Angriff <@ba.vup>+{atk:0.0%}</>."
+        "name": "ANG [L]",
+        "description": "ANG <@ba.vup>+{atk:0.0%}</>"
       },
       {
         "name": "Zufügung: Sehnlicher Wunsch",
@@ -1410,11 +1448,11 @@
     "decoDesc": "Ein Schwert, hergestellt von RAYTHEAN Industries. Viele davon wurden in Regionen außerhalb des Zivilisationsgürtels geschmuggelt, da sie bei den Landbrechern ziemlich beliebt waren. Viele Träger statten sie mit speziellen Modifikationen aus.",
     "skills": [
       {
-        "name": "Beweglichkeits-Boost [L]",
+        "name": "Beweglichkeit [L]",
         "description": "Beweglichkeit <@ba.vup>+{agi}</>."
       },
       {
-        "name": "Kritische-Rate-Boost [L]",
+        "name": "Kritische Rate [L]",
         "description": "Kritische Rate <@ba.vup>+{crirate:0.0%}</>."
       },
       {
@@ -1425,15 +1463,15 @@
   },
   "farsight": {
     "name": "Farsight",
-    "description": "Dieses Land ist vielleicht nichts Besonderes. \nDieselben alten Ebenen, dieselbe alte Luft, dasselbe alte Meer. Aber der Himmel ist anders. Es gibt einen riesigen Planeten, den wir tagsüber deutlich sehen konnten. Und es gibt nachts keine Zwillingsmonde. Das Leben ist kaum anders als in Terra. \nIst das gut? Das weiß ich nicht. \nIch bin wegen der nationalen Arbeitspflicht hier, aber ich bekomme Geld und etwas zu essen. Mehr ist es nicht. \n\nAber mit der Zeit habe ich angefangen, die Unterschiede zu bemerken. \nDas Land hat kein Originium. Scheiße, sogar die Landesgrenzen kamen mir wie ein Witz vor. Ich dachte, das wäre eine columbianische Pionierarbeit im Grenzgebiet, wo die Leute den ganzen Tag in der Wildnis schuften, um etwas zu essen. Aber erst heute hat jemand, der aussah wie leithanischer Adel, mich – einen Zwangsarbeiter – gefragt, wie eine Maschine funktioniert. \nUnd der blaublütige Herr hat keine Witze gemacht. \nUrsisch, leithanisch, columbianisch … Diese spalterischen Etiketten werden jetzt reduziert auf Crewmitglied, Freund und Partner. \nIch finde es schön, wie alles gekommen ist. Es ist toll! Aber wie ist das passiert? Das weiß ich nicht so richtig. \nIch habe mich ein wenig umgehört, und die sind ebenso verwirrt wie ich. Also habe ich eine ganze Weile keine Antwort bekommen, bis … \n\n„Was ist Endfield?“ \nDiese Frage habe ich dem riesigen sarkazischen Teamleiter an meinem ersten Tag gestellt. Endfield klingt nach einem sehr unglücklich gewählten Namen für eine Firma, die im Grenzgebiet tätig ist. \nEr hat nichts gesagt. Stattdessen hat er uns zur Spitze des Schiffs gebracht, das vorübergehend als Endfield-Hauptquartier gedient hat. Er hat gesagt, wir sollen uns den Planeten und die Welt einmal gut ansehen. \nPlanet und Welt … Vorher hatten wir diese Begriffe fast nie verwendet. \nDer Teamleiter hat gesehen, dass ich verwirrt war, und hat gelächelt. Er hat gesagt, sie seien die Bedeutung hinter Endfield. \n„Du meinst, dass wir neue, hübsche Wörter verwenden müssen?“ \n„Ich meine, dass wir unsere Vergangenheit auf Terra gelassen haben.“ \n\nVielleicht hatte er recht. \nBevor ich beschlossen habe, durch das Kosmische Tor zu gehen, um herzukommen, habe ich – haben wir alle – etwas für immer in Terra zurückgelassen. \nMenschen, die in den Bergwerken geschuftet haben, die durch die Wildnis gezogen sind, die in den Städten gearbeitet haben, die Konzerte an den Türmen gegeben haben … Alle standen Schulter an Schulter an Bord des Schiffs, bereit, gemeinsam eine Zukunft aufzubauen. \nDas Schicksal hat uns vor eine Wahl gestellt. Wir haben etwas gewählt, was anders als die Vergangenheit war, um eine neue Lebensweise zu erschaffen. \n\nWie diese Welt sein wird, das weiß ich nicht. \nWeil wir gerade dabei sind, sie aufzubauen. \nGebäude werden sich aus dem Boden erheben, Feldfrüchte werden aus der Erde sprießen. \nDas ist unsere lautstarke Antwort, welche Welt wir erschaffen.",
+    "description": "Dieses Land ist vielleicht nichts Besonderes. \nDieselben alten Ebenen, dieselbe alte Luft, dasselbe alte Meer. Aber der Himmel ist anders. Es gibt einen riesigen Planeten, den wir tagsüber deutlich sehen konnten. Und es gibt nachts keine Zwillingsmonde. Das Leben ist kaum anders als auf Terra. \nIst das gut? Das weiß ich nicht. \nIch bin wegen der nationalen Arbeitspflicht hier, aber ich bekomme Geld und etwas zu essen. Mehr ist es nicht. \n\nAber mit der Zeit habe ich angefangen, die Unterschiede zu bemerken. \nDas Land hat kein Originium. Scheiße, sogar die Landesgrenzen kamen mir wie ein Witz vor. Ich dachte, das wäre eine columbianische Pionierarbeit im Grenzgebiet, wo die Leute den ganzen Tag in der Wildnis schuften, um etwas zu essen. Aber erst heute hat jemand, der aussah wie leithanischer Adel, mich – einen Zwangsarbeiter – gefragt, wie eine Maschine funktioniert. \nUnd der blaublütige Herr hat keine Witze gemacht. \nUrsisch, leithanisch, columbianisch … Diese spalterischen Etiketten werden jetzt reduziert auf Crewmitglied, Freund und Partner. \nIch finde es schön, wie alles gekommen ist. Es ist toll! Aber wie ist das passiert? Das weiß ich nicht so richtig. \nIch habe mich ein wenig umgehört, und die sind ebenso verwirrt wie ich. Also habe ich eine ganze Weile keine Antwort bekommen, bis … \n\n„Was ist Endfield?“ \nDiese Frage habe ich dem riesigen sarkazischen Teamleiter an meinem ersten Tag gestellt. Endfield klingt nach einem sehr unglücklich gewählten Namen für eine Firma, die im Grenzgebiet tätig ist. \nEr hat nichts gesagt. Stattdessen hat er uns zur Spitze des Schiffs gebracht, das vorübergehend als Endfield-Hauptquartier gedient hat. Er hat gesagt, wir sollen uns den Planeten und die Welt einmal gut ansehen. \nPlanet und Welt … Vorher hatten wir diese Begriffe fast nie verwendet. \nDer Teamleiter hat gesehen, dass ich verwirrt war, und hat gelächelt. Er hat gesagt, sie seien die Bedeutung hinter Endfield. \n„Du meinst, dass wir neue, hübsche Wörter verwenden müssen?“ \n„Ich meine, dass wir unsere Vergangenheit auf Terra gelassen haben.“ \n\nVielleicht hatte er recht. \nBevor ich beschlossen habe, durch das Kosmische Tor zu gehen, um herzukommen, hatte ich – hatten wir alle – etwas für immer auf Terra zurückgelassen. \nMenschen, die in den Bergwerken geschuftet haben, die durch die Wildnis gezogen sind, die in den Städten gearbeitet haben, die Konzerte an den Türmen gegeben haben … Alle standen Schulter an Schulter an Bord des Schiffs, bereit, gemeinsam eine Zukunft aufzubauen. \nDas Schicksal hat uns vor eine Wahl gestellt. Wir haben etwas gewählt, was anders als die Vergangenheit war, um eine neue Lebensweise zu erschaffen. \n\nWie diese Welt sein wird,  das weiß ich nicht. \nWeil wir gerade dabei sind, sie aufzubauen. \nGebäude werden sich aus dem Boden erheben, Feldfrüchte werden aus der Erde sprießen. \nDas ist unsere lautstarke Antwort, welche Welt wir erschaffen.",
     "decoDesc": "Einer der vielen Prototypen, die Endfield Industries herstellt, um verschiedene Konfigurationen testen zu können. Diese Waffe war als Mehrzweck-Plattform gedacht und wurde aus hochwertigen Materialien gefertigt. Sie trägt die Hoffnungen der Waffeningenieure von Endfield Industries in sich.",
     "skills": [
       {
-        "name": "Hauptattribut-Boost [L]",
+        "name": "Hauptattribut [L]",
         "description": "Hauptattribut <@ba.vup>+{mainattr}</>."
       },
       {
-        "name": "Technik-Intensitäts-Boost [L]",
+        "name": "Technik-Intensität [L]",
         "description": "Technik-Intensität <@ba.vup>+{physpell:0}</>."
       },
       {

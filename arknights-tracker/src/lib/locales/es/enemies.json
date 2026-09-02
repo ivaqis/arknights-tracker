@@ -572,7 +572,7 @@
   "eny_0105_wgslime2": {
     "name": "Flujo de lodo δ",
     "nickname": "Flujo de lodo δ",
-    "description": "El “Tholeroygran” (ID de archivo: ACM311δ) es una variante energizada del ACM311. Utiliza vías de energía únicas y, por lo tanto, mantiene una temperatura homeostática muy por debajo de los puntos de congelación de las sustancias que lo componen.",
+    "description": "El “Tholeroygran Dinedon” (ID de archivo: ACM311δ) es una variante energizada de ACM311. Utiliza vías de energía únicas y, por lo tanto, mantiene una temperatura homeostática muy por debajo de los puntos de congelación de las sustancias que lo componen.",
     "abilities": [
       "Este enemigo puede cerrar la distancia rápidamente desde lejos. Sus ataques pueden aplicar Imp. crio. a los operadores al impactar."
     ]
@@ -651,7 +651,7 @@
     "nickname": "Sombra contaminada de Bestia pluma",
     "description": "Una manifestación de energía residual de Éter que proyecta la forma externa de una bestia pluma. Esta sombra contaminada parece exhibir ataques giratorios y de rebote mucho más agresivos que su contraparte viva, aunque quizá solo sea cosa de la imaginación.",
     "abilities": [
-      "Tras una breve carga, la Sombra contaminada de bestia pluma puede invocar múltiples relámpagos y activar la energía de Sombra contaminada en una zona amplia. Interrumpe a la bestia rápidamente cuando empiece a cargar."
+      "Tras una breve carga, la Sombra contaminada de Bestia pluma puede invocar múltiples rayos y activar Energía de Sombra contaminada en una zona amplia. Interrumpe a la bestia rápidamente cuando empiece a cargar."
     ]
   },
   "eny_0119_kltiger": {
@@ -713,6 +713,72 @@
     "abilities": [
       "Cuando el medidor de Tambaleo de Alleikhreos, Quiliarca llegue al Nodo de Tambaleo, soltará un Arma de fundita. Acércate con el operador controlado para recogerla y usa el arma para atacarlo.",
       "Cuando las cosas se vuelvan en contra de Alleikhreos, Quiliarca, invocará dobles desde la grieta para atacar a sus oponentes."
+    ]
+  },
+  "eny_0127_bigents": {
+    "name": "Furia de Gloomwald",
+    "nickname": "Furia de Gloomwald",
+    "description": "Una marioneta de batalla gigantesca creada por una Sacerdotisa de la nieve. Había obedecido la orden de su maestro de vagar y recorrer el ilimitado reino de niebla hasta el momento en que comprendió que había sido abandonado, hasta convertirse en el recipiente que contenía toda la furia de un profundo bosque nevado.",
+    "abilities": [
+      "La Furia de Gloomwald dejará enredaderas en el suelo. El operador que las pise recibirá DAÑ de forma continua y quedará Ralentizado.",
+      "Furia de Gloomwald invocará Errantes de madera para que le ayuden en la batalla."
+    ]
+  },
+  "eny_0128_babyents": {
+    "name": "Errante de madera",
+    "nickname": "Errante de madera",
+    "description": "Una pequeña marioneta de batalla creada por una Sacerdotisa de la nieve. Se encarga de mantener a salvo el Bosque nevado. No subestimes sus puños de madera, pues pueden destrozar piedra casi sin esfuerzo.",
+    "abilities": [
+      "Un Errante de madera con cero acumulaciones de escudo atrapará a los operadores para absorber su energía y recuperar acumulaciones de escudo.",
+      "Los Errantes de madera colaborarán entre sí al atacar."
+    ]
+  },
+  "eny_0129_slwood": {
+    "name": "Babosa de madera",
+    "nickname": "Babosa de madera",
+    "description": "Una marioneta de batalla creada por una Sacerdotisa de la nieve. Su forma se asemeja a la de una Babosa de Originio. Esta creación de madera puede moverse rápidamente y es una excelente excavadora.",
+    "abilities": [
+      "Las Babosas de madera pueden excavar bajo tierra para acercarse sigilosamente a sus oponentes."
+    ]
+  },
+  "tatget_001_normal": {
+    "name": "Objetivo Básico",
+    "nickname": "Objetivo Básico",
+    "description": "Un objetivo Básico para arqueros principiantes.",
+    "abilities": [
+      "Un objetivo básico. PV: 1."
+    ]
+  },
+  "tatget_002_endurance": {
+    "name": "Objetivo estándar",
+    "nickname": "Objetivo estándar",
+    "description": "Un objetivo estándar, indispensable para mejorar las habilidades de arquería.",
+    "abilities": [
+      "Un objetivo duradero. PV: 2."
+    ]
+  },
+  "tatget_003_expand": {
+    "name": "Objetivo con Barrera",
+    "nickname": "Objetivo con Barrera",
+    "description": "Un objetivo especial que puede cambiar de tamaño y bloquear otros objetivos situados detrás. Intenta quebrarlo primero.",
+    "abilities": [
+      "Un objetivo disruptivo que cambia de tamaño. PV: 3."
+    ]
+  },
+  "tatget_004_armor": {
+    "name": "Objetivo pesado",
+    "nickname": "Objetivo pesado",
+    "description": "Un objetivo especial hecho de una aleación de alta resistencia. Es resistente y muy apreciado por los arqueros de fuerza extraordinaria.",
+    "abilities": [
+      "Un objetivo acorazado. PV: 4."
+    ]
+  },
+  "tatget_005_shield": {
+    "name": "Escudo de Energía",
+    "nickname": "Escudo de Energía",
+    "description": "Un escudo de Energía diseñado para los objetivos. A los Maestros arqueros les gusta proteger sus objetivos para que duren unos segundos más.",
+    "abilities": [
+      "Un escudo que puede aplicarse a cualquier objetivo. PV: 2. Los objetivos protegidos no pueden congelarse, no se les puede aplicar Resina activamente y las acumulaciones de Resina en los objetivos protegidos no detonan al recibir daño."
     ]
   }
 }

@@ -39,15 +39,15 @@
     "battleSkill": {
       "name": "Foco Deslumbrante",
       "description": "Liino causa <@ba.pulse>DNO Elétrico</> aos inimigos e, em seguida, entra em sua <@ba.key>Postura da Vocalista</>. Enquanto essa postura estiver ativa, se houver inimigos por perto, Liino realizará regularmente um ATQ Adicional (que causa <@ba.pulse>DNO Elétrico</> aos inimigos).\n<@ba.key>Postura da Vocalista</>: enquanto essa postura está ativa, Liino concede Potencialização ATQ à equipe inteira. Após entrar em batalha, Liino também concede continuamente <@ba.heal>Tratamento de PV</> aos operadores dentro do alcance.\n<@ba.info>Durante a Postura da Vocalista, sua habilidade de batalha é substituída por Encerrar Postura. Conjurá-la encerrará a Postura da Vocalista mais cedo sem consumir PH algum, e sua habilidade de batalha entrará em um rápido tempo de recarga.</>",
-      "firstAtkMultiplier": "Multiplicador Primeiro ATQ",
+      "1stAtkMultiplier": "Multiplicador 1º ATQ",
       "additionalAtkDmgMultiplier": "Multiplicador DNO ATQ Adicional",
       "additionalAtkIntervalS": "Intervalo de ATQ adicional (s)",
       "beatIntervalS": "Intervalo da Batida (s)",
       "vocalistStanceDurationS": "Duração da Postura da Vocalista (s)",
       "atkBoost": "Potencialização ATQ",
       "baseTreatment": "Tratamento Base",
-      "treatmentIncreasePerAgility": "Aumento do Tratamento por Agilidade",
-      "stagger": "Desorientar"
+      "treatmentIncreasePerAgility": "Aumento de Tratamento por Agilidade",
+      "stagger": "Desorientação"
     },
     "comboSkill": {
       "name": "Harmonia Encantadora",
@@ -60,14 +60,14 @@
     },
     "ultimate": {
       "name": "Show da Estrela do Alvorecer",
-      "description": "Liino concede <@ba.heal>Tratamento de PV</> para a equipe inteira, entra em sua <@ba.key>Postura Voz Cósmica</> ao mesmo tempo, libera uma exibição contínua de Pirotecnia de Palco que causa <@ba.pulse>DNO Elétrico</> e, em seguida, aciona uma <@ba.key>Extravagância Eletrizante</> que causa <@ba.pulse>DNO Elétrico</> e aplica <#ba.conduct>Eletrificação</> à força a inimigos em uma grande área de efeito (ADE).\n<@ba.key>Postura Voz Cósmica</>: essa postura substitui a <@ba.key>Postura da Vocalista</> de Liino. Enquanto ativa, a postura concede <#ba.pulseenhance>Amp Elétrica</> e <#ba.naturalenhance>Amp Natureza</> à equipe inteira (os efeitos são aumentados ainda mais pelo atributo de Vontade), bem como uma Potencialização ATQ. As batidas da canção de Liino também causam <@ba.pulse>DNO Elétrico</> aos inimigos na ADE e concedem <@ba.heal>Tratamento de PV</> contínuo aos operadores aliados na ADE. Ao término da postura, causa 3 vezes a quantidade de DNO de uma única batida aos inimigos na ADE e concede 3 vezes a quantidade de Tratamento de PV de uma única batida à equipe inteira. Esse efeito não é aplicado se a postura terminou mais cedo. \nDurante a postura, sua habilidade de batalha é substituída por Encerrar Postura. <@ba.info>Conjurar a habilidade de batalha durante a Postura Voz Cósmica a encerra mais cedo e não consome PH algum.</>",
+      "description": "Liino concede <@ba.heal>Tratamento de PV</> à equipe inteira, entra em seu modo de <@ba.key>Postura Voz Cósmica</> ao mesmo tempo, libera uma exibição contínua de Pirotecnia de Palco que causa <@ba.pulse>DNO Elétrico</> e, em seguida, aciona uma <@ba.key>Extravagância Eletrizante</> que causa <@ba.pulse>DNO Elétrico</> à força e aplica <#ba.conduct>Eletrificação</> a inimigos em uma grande área de efeito (ADE).\n<@ba.key>Postura Voz Cósmica</>: essa postura substitui a <@ba.key>Postura da Vocalista</> de Liino. Enquanto ativa, a postura concede <#ba.pulseenhance>Amp Elétrica</> e <#ba.naturalenhance>Amp Natureza</> à equipe inteira (os efeitos são amplificados ainda mais pelo atributo de Vontade), bem como uma Potencialização ATQ. As batidas da canção de Liino também causam <@ba.pulse>DNO Elétrico</> aos inimigos na ADE e fornecem <@ba.heal>Tratamento de PV</> ininterrupto aos operadores aliados na ADE. Ao término da postura, Liino causa 3 vezes o DNO de uma batida aos inimigos na ADE e concede 3 vezes a quantidade de Tratamento de PV de uma única batida à equipe inteira. Esse efeito não é aplicado se a postura terminou mais cedo. \n<@ba.info>Durante a postura, sua habilidade de batalha é substituída por Encerrar Postura. Conjurar a habilidade de batalha durante a Postura Voz Cósmica a encerra mais cedo e não consome PH algum.</>",
       "stagePyrotechnicsDmgMultiplier": "Multiplicador DNO Pirotecnia de Palco",
       "electrifyingExtravaganzaDmgMultiplier": "Multiplicador DNO Extravagância Eletrizante",
       "atkBoost": "Potencialização ATQ",
       "ampIncreasePerWill": "Aumento Amp por Vontade",
       "maxAmpFromWill": "Amp MÁX. de Vontade",
       "baseTreatmentFor1stTreatment": "Tratamento Base para o 1º Tratamento",
-      "treatmentIncreasePerAgility": "Aumento do Tratamento por Agilidade",
+      "treatmentIncreasePerAgility": "Aumento de Tratamento por Agilidade",
       "dmgMultiplierPerBeat": "Multiplicador DNO por Batida",
       "baseTreatmentPerBeat": "Tratamento Base por Batida",
       "beatIntervalS": "Intervalo da Batida (s)",
@@ -170,7 +170,7 @@
       },
       {
         "voId": "chr_0035_liino_chrup_skill_01",
-        "title": "Ativação da Matriz de Capacidade",
+        "title": "Ativação do Nó de Talentos",
         "text": "Entendi em um instante! Assim como uma estrela que acende minha alma... Estou me tornando uma verdadeira celebridade, não é?"
       },
       {

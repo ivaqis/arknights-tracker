@@ -23,6 +23,14 @@
     "name": "Trạng Thái Vật Lý: Hất Tung",
     "desc": "Thi triển <#ba.noguard>Trừ Giáp</> lên kẻ địch. Nếu kẻ địch đã ở trạng thái <#ba.noguard>Yếu Đuối</> thì sẽ cộng thêm 1 lần <#ba.noguard>Trừ Giáp</> cũng như gây <@ba.phy>ST Vật Lý</> và <@ba.poise>Suy Sụp</>."
   },
+  "ba.arrowenergy": {
+    "name": "Dấu Ấn",
+    "desc": "Typhoeus nhận Dấu Ấn khi tiêu hao các tầng <@ba.naturalinflict>Nhiễm Tự Nhiên</> của kẻ địch hoặc khi kích hoạt <#ba.naturalburst>Bùng Nổ Tự Nhiên</> lên kẻ địch. Sau đó, KN liên hoàn của cô ấy có thể chuyển đổi Dấu Ấn thành <#ba.arrownum>Mũi Tên Săn</>."
+  },
+  "ba.arrownum": {
+    "name": "Mũi Tên Săn",
+    "desc": "Khi Typhoeus ở trạng thái <@ba.key>Lơ Lửng</>, cô ấy có thể tiêu hao Mũi Tên Săn để cường hóa phát bắn, gây ST cao hơn, đồng thời kích hoạt <#ba.naturalburst>Bùng Nổ Tự Nhiên</>."
+  },
   "ba.burning": {
     "name": "Phản Ứng Thuật Pháp: Thiêu Đốt",
     "desc": "Kẻ địch bị <@ba.burning>Thiêu Đốt</> phải chịu <@ba.fire>ST Nhiệt</> theo thời gian.\n<@ba.burning>Thiêu Đốt</> = <#ba.spellinflict>Không Nhiễm Nhiệt</> (<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.fireinflict>Nhiễm Nhiệt</>"
@@ -261,7 +269,7 @@
   },
   "ba.weak": {
     "name": "Suy Yếu",
-    "desc": "Các mục tiêu bị Suy Yếu tạm thời giảm ST nhận. Con số hiển thị mức giảm ST. Các hiệu ứng cùng loại có thể cộng dồn phi tuyến tính."
+    "desc": "Mục tiêu có Suy Yếu tạm thời gây ít ST hơn. Con số biểu thị mức giảm ST. Các hiệu ứng cùng loại có thể cộng dồn phi tuyến tính."
   },
   "fac.hub": {
     "name": "Lõi Tự Động Hóa Giao Thức",

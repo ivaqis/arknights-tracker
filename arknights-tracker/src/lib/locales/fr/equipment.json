@@ -459,37 +459,37 @@
     "name": "Armure lourde de catastrophe",
     "description": "Conçu par l'Armurerie de Triglava et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
     "decoDesc": "Une pièce d'exosquelette équipée par les producteurs de cristaux au parc des sciences de l'originium.\nCette armure est dotée d'un système de stimulation microélectrique qui réduit de manière significative la fatigue de celui qui la porte. Les membres de l’équipe sont très satisfaits de cette création revigorante.",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{ultimate_gain_up:0%}</> de vitesse de gain d'ultime.\nLe porteur <#ba.return>récupère</> <@ba.vup>{atb_recover:0}</> PC en utilisant une compétence de combat. L'effet ne se déclenche qu'une seule fois par combat."
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{ultimate_gain_up:0%}</> de vitesse de gain d'ultime.\nLorsque le porteur utilise une compétence de combat, l'action <#ba.return>restitue</> <@ba.vup>{atb_recover:0}</> PC. L'effet ne se déclenche qu'une seule fois par combat."
   },
   "item_equip_t3_suit_usp01_body_02": {
     "name": "Armure lourde de catastrophe G1",
     "description": "Conçu par l'Armurerie de Triglava et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
     "decoDesc": "Une pièce d'exosquelette équipée par les producteurs de cristaux au parc des sciences de l'originium.\nCette armure est dotée d'un système de stimulation microélectrique qui réduit de manière significative la fatigue de celui qui la porte. Les membres de l’équipe sont très satisfaits de cette création revigorante.",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{ultimate_gain_up:0%}</> de vitesse de gain d'ultime.\nLe porteur <#ba.return>récupère</> <@ba.vup>{atb_recover:0}</> PC en utilisant une compétence de combat. L'effet ne se déclenche qu'une seule fois par combat."
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{ultimate_gain_up:0%}</> de vitesse de gain d'ultime.\nLorsque le porteur utilise une compétence de combat, l'action <#ba.return>restitue</> <@ba.vup>{atb_recover:0}</> PC. L'effet ne se déclenche qu'une seule fois par combat."
   },
   "item_equip_t3_suit_usp01_edc_01": {
     "name": "Cartouche de gaze de catastrophe",
     "description": "Conçu par l'Armurerie de Triglava et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
     "decoDesc": "Une pièce d'exosquelette équipée par les producteurs de cristaux au parc des sciences de l'originium.\nBien que sur Talos-II, l'oripathie puisse être contrôlée et traitée, il est quand même conseillé aux utilisateurs de porter une protection respiratoire de base.",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{ultimate_gain_up:0%}</> de vitesse de gain d'ultime.\nLe porteur <#ba.return>récupère</> <@ba.vup>{atb_recover:0}</> PC en utilisant une compétence de combat. L'effet ne se déclenche qu'une seule fois par combat."
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{ultimate_gain_up:0%}</> de vitesse de gain d'ultime.\nLorsque le porteur utilise une compétence de combat, l'action <#ba.return>restitue</> <@ba.vup>{atb_recover:0}</> PC. L'effet ne se déclenche qu'une seule fois par combat."
   },
   "item_equip_t3_suit_usp01_edc_02": {
     "name": "Cartouche de gaze de catastrophe G1",
     "description": "Conçu par l'Armurerie de Triglava et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
     "decoDesc": "Une pièce d'exosquelette équipée par les producteurs de cristaux au parc des sciences de l'originium.\nBien que sur Talos-II, l'oripathie puisse être contrôlée et traitée, il est quand même conseillé aux utilisateurs de porter une protection respiratoire de base.",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{ultimate_gain_up:0%}</> de vitesse de gain d'ultime.\nLe porteur <#ba.return>récupère</> <@ba.vup>{atb_recover:0}</> PC en utilisant une compétence de combat. L'effet ne se déclenche qu'une seule fois par combat."
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{ultimate_gain_up:0%}</> de vitesse de gain d'ultime.\nLorsque le porteur utilise une compétence de combat, l'action <#ba.return>restitue</> <@ba.vup>{atb_recover:0}</> PC. L'effet ne se déclenche qu'une seule fois par combat."
   },
   "item_equip_t3_suit_usp01_edc_03": {
     "name": "Filtre de catastrophe",
     "description": "Conçu par l'Armurerie de Triglava et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
     "decoDesc": "Une pièce d'exosquelette équipée par les producteurs de cristaux au parc des sciences de l'originium. \nCes filtres, compatibles avec le masque de catastrophe, peuvent être branchés ou débranchés facilement.",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{ultimate_gain_up:0%}</> de vitesse de gain d'ultime.\nLe porteur <#ba.return>récupère</> <@ba.vup>{atb_recover:0}</> PC en utilisant une compétence de combat. L'effet ne se déclenche qu'une seule fois par combat."
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{ultimate_gain_up:0%}</> de vitesse de gain d'ultime.\nLorsque le porteur utilise une compétence de combat, l'action <#ba.return>restitue</> <@ba.vup>{atb_recover:0}</> PC. L'effet ne se déclenche qu'une seule fois par combat."
   },
   "item_equip_t3_suit_usp01_hand_01": {
     "name": "Gants de catastrophe",
     "description": "Conçu par l'Armurerie de Triglava et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
     "decoDesc": "Une pièce d'exosquelette équipée par les producteurs de cristaux au parc des sciences de l'originium.\nLes ajustements clés de cet équipement incluent des structures de soutien au niveau des articulations des doigts, ainsi qu'une force de préhension accrue. Ces gants améliorent considérablement les performances de travail lors de la découpe et de la manipulation des plaques de cristal taillées dans les blocs d'originium.",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{ultimate_gain_up:0%}</> de vitesse de gain d'ultime.\nLe porteur <#ba.return>récupère</> <@ba.vup>{atb_recover:0}</> PC en utilisant une compétence de combat. L'effet ne se déclenche qu'une seule fois par combat."
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{ultimate_gain_up:0%}</> de vitesse de gain d'ultime.\nLorsque le porteur utilise une compétence de combat, l'action <#ba.return>restitue</> <@ba.vup>{atb_recover:0}</> PC. L'effet ne se déclenche qu'une seule fois par combat."
   },
   "item_equip_t3_suit_will01_body_01": {
     "name": "Veste résistante de Mordvolt G1",
@@ -563,6 +563,18 @@
     "decoDesc": "Un équipement de combat conçu par les Industries Endfield pour l'entraînement de ses opérateurs. Une série populaire sur le marché, en raison de son bon rapport qualité-prix. \n« Pourrais-je avoir encore quelques pièces ? Ce sont de bons matériaux de construction. »",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pour tous les types de DÉG, <@ba.vup>-{1-dmg_taken_down:0%}</> de réduction des DÉG contre tous les types de DÉG et <@ba.vup>+{ultimate_gain_up:0%}</> de vitesse de gain d'ultime."
   },
+  "item_equip_t4_parts_wuling00_body_04": {
+    "name": "Armure d'assaut de terrain du GIA",
+    "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "Un équipement de combat conçu par les Industries Endfield pour l'entraînement de ses opérateurs. Une série populaire sur le marché, en raison de son bon rapport qualité-prix.\n« Plus robuste. Plus lourde. Plus précise. »",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pour tous les types de DÉG, <@ba.vup>-{1-dmg_taken_down:0%}</> de réduction des DÉG contre tous les types de DÉG et <@ba.vup>+{ultimate_gain_up:0%}</> de vitesse de gain d'ultime."
+  },
+  "item_equip_t4_parts_wuling00_body_05": {
+    "name": "Armure médicale de terrain du GIA",
+    "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "Un équipement de combat conçu par les Industries Endfield pour l'entraînement de ses opérateurs. Une série populaire sur le marché, en raison de son bon rapport qualité-prix. \nLes équipements de terrain du GIA de base peuvent intégrer des ports de connexion de modules médicaux afin d'améliorer la surveillance des constantes vitales de leur porteur.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pour tous les types de DÉG, <@ba.vup>-{1-dmg_taken_down:0%}</> de réduction des DÉG contre tous les types de DÉG et <@ba.vup>+{ultimate_gain_up:0%}</> de vitesse de gain d'ultime."
+  },
   "item_equip_t4_parts_wuling00_edc_01": {
     "name": "Machette de terrain du GIA",
     "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
@@ -581,6 +593,18 @@
     "decoDesc": "Un équipement de combat conçu par les Industries Endfield pour l'entraînement de ses opérateurs. Une série populaire sur le marché, en raison de son bon rapport qualité-prix. \n« J'attends la prochaine opération de combat aussi impatiemment que le reste des gens attendent le lever de soleil à venir. »",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pour tous les types de DÉG, <@ba.vup>-{1-dmg_taken_down:0%}</> de réduction des DÉG contre tous les types de DÉG et <@ba.vup>+{ultimate_gain_up:0%}</> de vitesse de gain d'ultime."
   },
+  "item_equip_t4_parts_wuling00_edc_04": {
+    "name": "Poignard d'assaut à propulsion de terrain du GIA",
+    "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "Un équipement de combat conçu par les Industries Endfield pour l'entraînement de ses opérateurs. Une série populaire sur le marché, en raison de son bon rapport qualité-prix. \nLa poignée et la lame de ce poignard ont été optimisées et rééquilibrées afin de réduire la fatigue du poignet de l'utilisateur.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pour tous les types de DÉG, <@ba.vup>-{1-dmg_taken_down:0%}</> de réduction des DÉG contre tous les types de DÉG et <@ba.vup>+{ultimate_gain_up:0%}</> de vitesse de gain d'ultime."
+  },
+  "item_equip_t4_parts_wuling00_edc_05": {
+    "name": "Batterie de terrain du GIA",
+    "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "Un équipement de combat conçu par les Industries Endfield pour l'entraînement de ses opérateurs. Une série populaire sur le marché, en raison de son bon rapport qualité-prix. \nCette batterie est bien plus compacte et robuste que celles qui défilent sur les lignes de production de l'usine du GIA.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pour tous les types de DÉG, <@ba.vup>-{1-dmg_taken_down:0%}</> de réduction des DÉG contre tous les types de DÉG et <@ba.vup>+{ultimate_gain_up:0%}</> de vitesse de gain d'ultime."
+  },
   "item_equip_t4_parts_wuling00_hand_01": {
     "name": "Gants de terrain du GIA",
     "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
@@ -597,6 +621,18 @@
     "name": "Bandes pour mains de terrain du GIA",
     "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
     "decoDesc": "Un équipement de combat conçu par les Industries Endfield pour l'entraînement de ses opérateurs. Une série populaire sur le marché, en raison de son bon rapport qualité-prix. \nDe l'équipement de protection spécial pour les mains, conçu pour les opérateurs qui doivent manipuler des machines complexes en combat.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pour tous les types de DÉG, <@ba.vup>-{1-dmg_taken_down:0%}</> de réduction des DÉG contre tous les types de DÉG et <@ba.vup>+{ultimate_gain_up:0%}</> de vitesse de gain d'ultime."
+  },
+  "item_equip_t4_parts_wuling00_hand_04": {
+    "name": "Gants d'assaut de terrain du GIA",
+    "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "Un équipement de combat conçu par les Industries Endfield pour l'entraînement de ses opérateurs. Une série populaire sur le marché, en raison de son bon rapport qualité-prix. \nCe design plus épuré intègre un système d'accroche universel pour les armes à feu. Le porteur n'a ainsi plus à craindre de perdre une arme en plein combat.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pour tous les types de DÉG, <@ba.vup>-{1-dmg_taken_down:0%}</> de réduction des DÉG contre tous les types de DÉG et <@ba.vup>+{ultimate_gain_up:0%}</> de vitesse de gain d'ultime."
+  },
+  "item_equip_t4_parts_wuling00_hand_05": {
+    "name": "Gants médicaux de terrain du GIA",
+    "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "Un équipement de combat conçu par les Industries Endfield pour l'entraînement de ses opérateurs. Une série populaire sur le marché, en raison de son bon rapport qualité-prix. \n« Soins terminés ? C'est tout ? Une tape sur le poignet...? Hé. Pourquoi tenez-vous une énorme seringue ? »",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pour tous les types de DÉG, <@ba.vup>-{1-dmg_taken_down:0%}</> de réduction des DÉG contre tous les types de DÉG et <@ba.vup>+{ultimate_gain_up:0%}</> de vitesse de gain d'ultime."
   },
   "item_equip_t4_parts_wuling01_body_01": {
@@ -650,31 +686,31 @@
   "item_equip_t4_parts_wuling02_body_01": {
     "name": "Armure lourde d'arpenteur de faille",
     "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
-    "decoDesc": "Le bureau des spadamanciens a conçu cet équipement pour les combattants qui partent souvent en mission dans les zones les plus à risque. \n« Pour arpenter la faille immense, j'enfile une tenue en jade de xiranite. »",
+    "decoDesc": "Le bureau des spadamanciens a conçu cet équipement pour les combattants qui partent souvent en mission dans les zones les plus à risque.\n« J'arpente la faille immense dans une tenue en jade. »",
     "setBonus": ""
   },
   "item_equip_t4_parts_wuling02_body_02": {
     "name": "Armure légère d'arpenteur de faille",
     "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
-    "decoDesc": "Le bureau des spadamanciens a conçu cet équipement à destination des combattants qui partent souvent en mission dans les zones les plus à risque. \n« Tandis que je contemple l'hiver, la vie et la mort deviennent claires comme de l'eau de roche. »",
+    "decoDesc": "Le bureau des spadamanciens a conçu cet équipement pour les combattants qui partent souvent en mission dans les zones les plus à risque.\n« Je contemple l'hiver et les présages de la mort sont clairs comme de l'eau de roche. »",
     "setBonus": ""
   },
   "item_equip_t4_parts_wuling02_edc_01": {
     "name": "Plaque d'armure d'arpenteur de faille",
     "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
-    "decoDesc": "Le bureau des spadamanciens a conçu cet équipement pour les combattants qui partent souvent en mission dans les zones les plus à risque. \n« Sur la pierre qui ornera mon sommeil éternel, inscrivez mon épitaphe à l'aide d'outils de sculpture. »",
+    "decoDesc": "Le bureau des spadamanciens a conçu cet équipement pour les combattants qui partent souvent en mission dans les zones les plus à risque.\n« Je taillerai la pierre pour graver la tête du lit où je reposerai éternellement. »",
     "setBonus": ""
   },
   "item_equip_t4_parts_wuling02_hand_01": {
     "name": "Gants d'arpenteur de faille",
     "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
-    "decoDesc": "Le bureau des spadamanciens a conçu cet équipement pour les combattants qui partent souvent en mission dans les zones les plus à risque. \n« Quand j'entends rugir le tonnerre, ma peur disparaît. »",
+    "decoDesc": "Le bureau des spadamanciens a conçu cet équipement pour les combattants qui partent souvent en mission dans les zones les plus à risque.\n« J'entends le tonnerre et toute peur disparaît. »",
     "setBonus": ""
   },
   "item_equip_t4_parts_wuling02_hand_02": {
     "name": "Équipement de mains d'arpenteur de faille",
     "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
-    "decoDesc": "Le bureau des spadamanciens a conçu cet équipement pour les combattants qui partent souvent en mission dans les zones les plus à risque. \n« La bannière s'est déployée et deviendra le linceul dans lequel on m'enterrera. »",
+    "decoDesc": "Le bureau des spadamanciens a conçu cet équipement pour les combattants qui partent souvent en mission dans les zones les plus à risque.\n« Je déploie l'étendard de guerre, mon linceul funèbre si je venais à tomber. »",
     "setBonus": ""
   },
   "item_equip_t4_suit_atb01_body_01": {
@@ -917,6 +953,18 @@
     "decoDesc": "Un équipement conçu par le Bureau des spadamanciens pour ceux qui travaillent près de la Marée gangrénée.\nC'est un fragment de souvenir à propos de la Marée gangrénée : les crues insensibles ont toujours rejeté la notion de vie.",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{skill_dmg_up:0%}</> de DÉG de compétence.\nLorsque le porteur applique <@ba.key>{stack_cond}</> cumul(s) ou plus d'<#ba.spellinflict>altération des Arts</> à l'ennemi, il inflige <@ba.vup>+{spell_dmg_up:0%}</> de <@ba.key>DÉG des Arts</> pendant {duration} s. L'effet ne peut pas être cumulé."
   },
+  "item_equip_t4_suit_burst01_body_02": {
+    "name": "Armure légère de décrue G1",
+    "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "Un équipement conçu par le Bureau des spadamanciens pour ceux qui travaillent près de la Marée gangrénée. \nC'est un fragment de souvenir à propos de la Marée gangrénée : les crues impitoyables se sont toujours opposées à la notion de vie.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{skill_dmg_up:0%}</> de DÉG de compétence.\nLorsque le porteur applique <@ba.key>{stack_cond}</> cumul(s) ou plus d'<#ba.spellinflict>altération des Arts</> à l'ennemi, il inflige <@ba.vup>+{spell_dmg_up:0%}</> de <@ba.key>DÉG des Arts</> pendant {duration} s. L'effet ne peut pas être cumulé."
+  },
+  "item_equip_t4_suit_burst01_body_03": {
+    "name": "Armure lourde de houle",
+    "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "Un équipement conçu par le Bureau des spadamanciens pour ceux qui travaillent près de la Marée gangrénée. \nC'est un défi lancé à la Marée gangrénée : nous ne la laisserons plus jamais nous barrer la route.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{skill_dmg_up:0%}</> de DÉG de compétence.\nLorsque le porteur applique <@ba.key>{stack_cond}</> cumul(s) ou plus d'<#ba.spellinflict>altération des Arts</> à l'ennemi, il inflige <@ba.vup>+{spell_dmg_up:0%}</> de <@ba.key>DÉG des Arts</> pendant {duration} s. L'effet ne peut pas être cumulé."
+  },
   "item_equip_t4_suit_burst01_edc_01": {
     "name": "Tube à O2 de la rivière suspendue",
     "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
@@ -929,10 +977,22 @@
     "decoDesc": "Un équipement conçu par le Bureau des spadamanciens pour ceux qui travaillent près de la Marée gangrénée.\nC'est une pointe d'inquiétude vis-à-vis de la Marée gangrénée : quand la calamité en surplomb se révèlera-t-elle ?",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{skill_dmg_up:0%}</> de DÉG de compétence.\nLorsque le porteur applique <@ba.key>{stack_cond}</> cumul(s) ou plus d'<#ba.spellinflict>altération des Arts</> à l'ennemi, il inflige <@ba.vup>+{spell_dmg_up:0%}</> de <@ba.key>DÉG des Arts</> pendant {duration} s. L'effet ne peut pas être cumulé."
   },
+  "item_equip_t4_suit_burst01_edc_03": {
+    "name": "Chalumeau trouble G1",
+    "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "Un équipement conçu par le Bureau des spadamanciens pour ceux qui travaillent près de la Marée gangrénée. \nC'est une pointe d'inquiétude vis-à-vis de la Marée gangrénée : quand la calamité qui nous menace se révélera-t-elle ?",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{skill_dmg_up:0%}</> de DÉG de compétence.\nLorsque le porteur applique <@ba.key>{stack_cond}</> cumul(s) ou plus d'<#ba.spellinflict>altération des Arts</> à l'ennemi, il inflige <@ba.vup>+{spell_dmg_up:0%}</> de <@ba.key>DÉG des Arts</> pendant {duration} s. L'effet ne peut pas être cumulé."
+  },
   "item_equip_t4_suit_burst01_hand_01": {
     "name": "Gantelets de raz-de-marée",
     "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
     "decoDesc": "Un équipement conçu par le Bureau des spadamanciens pour ceux qui travaillent près de la Marée gangrénée.\nC'est une question à propos de la Marée gangrénée : l'effondrement des anciens barrages part-il de l'intérieur ?",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{skill_dmg_up:0%}</> de DÉG de compétence.\nLorsque le porteur applique <@ba.key>{stack_cond}</> cumul(s) ou plus d'<#ba.spellinflict>altération des Arts</> à l'ennemi, il inflige <@ba.vup>+{spell_dmg_up:0%}</> de <@ba.key>DÉG des Arts</> pendant {duration} s. L'effet ne peut pas être cumulé."
+  },
+  "item_equip_t4_suit_burst01_hand_02": {
+    "name": "Gants de plongée",
+    "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "Un équipement conçu par le Bureau des spadamanciens pour ceux qui travaillent près de la Marée gangrénée. \nC'est une réflexion à propos de la Marée gangrénée : jusqu'où s'écoule la destruction silencieuse...?",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{skill_dmg_up:0%}</> de DÉG de compétence.\nLorsque le porteur applique <@ba.key>{stack_cond}</> cumul(s) ou plus d'<#ba.spellinflict>altération des Arts</> à l'ennemi, il inflige <@ba.vup>+{spell_dmg_up:0%}</> de <@ba.key>DÉG des Arts</> pendant {duration} s. L'effet ne peut pas être cumulé."
   },
   "item_equip_t4_suit_combo_cd01_body_01": {
@@ -1202,7 +1262,7 @@
   "item_equip_t4_suit_heal01_body_03": {
     "name": "Cuirasse LYNX G1",
     "description": "Conçu par Rhodes Island et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
-    "decoDesc": "L'équipement favori des médecins. Les gens appellent généralement les combattants qui portent la cuirasse LYNX des « trousses médicales sur pattes ». Ces sauveteurs remplissent généralement toutes les poches et les supports de leur armure de fournitures médicales d'urgence.",
+    "decoDesc": "L'équipement favori des médecins.\nLes gens appellent généralement les combattants qui portent la cuirasse LYNX des « trousses médicales sur pattes ». Ces sauveteurs remplissent souvent toutes les poches et les supports de leur armure de fournitures médicales d'urgence.",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{heal_up:0%}</> d'efficacité des soins. \nLorsque le porteur soigne une cible alliée, celle-ci bénéficie également d'une réduction des DÉG de <@ba.vup>-{1-dmg_taken_down:0%}</> contre tous les types de DÉG pendant {duration} s. Si les soins dépassent les PV max de la cible, elle bénéficie alors d'une réduction des DÉG de <@ba.vup>-{1-dmg_taken_down2:0%}</> contre tous les types de DÉG. Ces effets ne se cumulent pas."
   },
   "item_equip_t4_suit_heal01_edc_01": {
@@ -1257,109 +1317,109 @@
     "name": "Armure légère de spadamancien",
     "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
     "decoDesc": "Un des produits initialement commercialisés par le bureau des spadamanciens.\nLa première page de ces modèles d'armes est agrémentée de ces mots : « La spadamancie pour guerrier solitaire. »",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{poise_up:0%}</> de bonus d'efficacité de Déséquilibre.\nLorsque le porteur applique un <#ba.physicalstatus>statut physique</>, il porte également 1 coup qui inflige {atk_scale:0%} de son ATQ en DÉG physiques, ainsi que [Déséquilibre <@ba.poise>{poise}</> fois]. Temps de recharge de l'effet : {duration} s."
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{poise_up:0%}</> de bonus d'efficacité de Déséquilibre.\nLorsque le porteur applique un <#ba.physicalstatus>statut physique</>, il porte également 1 coup qui inflige {atk_scale:0%} de son ATQ en DÉG physiques, ainsi que [<@ba.poise>{poise}</> points de Déséquilibre]. Temps de recharge de l'effet : {duration} s."
   },
   "item_equip_t4_suit_phy01_body_02": {
     "name": "Armure lourde de spadamancien",
     "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
     "decoDesc": "Un des produits initialement commercialisés par le Bureau des spadamanciens.\nLes Tianshi se sont basés sur le concept de « capacité gargantuesque » et sont parvenus à « absorber et neutraliser » les attaques basées sur l'énergie.",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{poise_up:0%}</> de bonus d'efficacité de Déséquilibre.\nLorsque le porteur applique un <#ba.physicalstatus>statut physique</>, il porte également 1 coup qui inflige {atk_scale:0%} de son ATQ en DÉG physiques, ainsi que [Déséquilibre <@ba.poise>{poise}</> fois]. Temps de recharge de l'effet : {duration} s."
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{poise_up:0%}</> de bonus d'efficacité de Déséquilibre.\nLorsque le porteur applique un <#ba.physicalstatus>statut physique</>, il porte également 1 coup qui inflige {atk_scale:0%} de son ATQ en DÉG physiques, ainsi que [<@ba.poise>{poise}</> points de Déséquilibre]. Temps de recharge de l'effet : {duration} s."
   },
   "item_equip_t4_suit_phy01_body_03": {
     "name": "Armure lourde de spadamancien G1",
     "description": "Conçu par les spadamanciens de Hongshan et assemblé par l'usine du GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
     "decoDesc": "Un des produits initialement commercialisés par le Bureau des spadamanciens.\nLes Tianshi se sont basés sur le concept « esprit vide et vallée ouverte » pour concevoir cette armure lourde de spadamancien et sont parvenus à la doter de la capacité à « neutraliser l'énergie ».",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{poise_up:0%}</> de bonus d'efficacité de Déséquilibre.\nLorsque le porteur applique un <#ba.physicalstatus>statut physique</>, il porte également 1 coup qui inflige {atk_scale:0%} de son ATQ en DÉG physiques, ainsi que [Déséquilibre <@ba.poise>{poise}</> fois]. Temps de recharge de l'effet : {duration} s."
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{poise_up:0%}</> de bonus d'efficacité de Déséquilibre.\nLorsque le porteur applique un <#ba.physicalstatus>statut physique</>, il porte également 1 coup qui inflige {atk_scale:0%} de son ATQ en DÉG physiques, ainsi que [<@ba.poise>{poise}</> points de Déséquilibre]. Temps de recharge de l'effet : {duration} s."
   },
   "item_equip_t4_suit_phy01_body_04": {
     "name": "Armure en fibres de spadamancien",
     "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
     "decoDesc": "L'un des produits initialement commercialisés par le bureau des spadamanciens.\nLa première page des plans de cette arme est agrémentée de ces mots : « Les braves partent vers le Nord. »",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{poise_up:0%}</> de bonus d'efficacité de Déséquilibre.\nLorsque le porteur applique un <#ba.physicalstatus>statut physique</>, il porte également 1 coup qui inflige {atk_scale:0%} de son ATQ en DÉG physiques, ainsi que [Déséquilibre <@ba.poise>{poise}</> fois]. Temps de recharge de l'effet : {duration} s."
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{poise_up:0%}</> de bonus d'efficacité de Déséquilibre.\nLorsque le porteur applique un <#ba.physicalstatus>statut physique</>, il porte également 1 coup qui inflige {atk_scale:0%} de son ATQ en DÉG physiques, ainsi que [<@ba.poise>{poise}</> points de Déséquilibre]. Temps de recharge de l'effet : {duration} s."
   },
   "item_equip_t4_suit_phy01_edc_01": {
     "name": "Balise NAV de spadamancien",
     "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
     "decoDesc": "Un des produits initialement commercialisés par le Bureau des spadamanciens.\nLa plupart des environnements gangrénés sont extrêmement dangereux. Le moindre faux pas peut mener vers une voie sans issue, comme ce fut le cas pour Wuling il y a de nombreuses années.",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{poise_up:0%}</> de bonus d'efficacité de Déséquilibre.\nLorsque le porteur applique un <#ba.physicalstatus>statut physique</>, il porte également 1 coup qui inflige {atk_scale:0%} de son ATQ en DÉG physiques, ainsi que [Déséquilibre <@ba.poise>{poise}</> fois]. Temps de recharge de l'effet : {duration} s."
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{poise_up:0%}</> de bonus d'efficacité de Déséquilibre.\nLorsque le porteur applique un <#ba.physicalstatus>statut physique</>, il porte également 1 coup qui inflige {atk_scale:0%} de son ATQ en DÉG physiques, ainsi que [<@ba.poise>{poise}</> points de Déséquilibre]. Temps de recharge de l'effet : {duration} s."
   },
   "item_equip_t4_suit_phy01_edc_02": {
     "name": "Microfiltre de spadamancien",
     "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
     "decoDesc": "Un des produits initialement commercialisés par le Bureau des spadamanciens.\n« Une bouffée de fumée dans un environnement gangréné peut vous tuer, alors portez votre respirateur correctement ! »",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{poise_up:0%}</> de bonus d'efficacité de Déséquilibre.\nLorsque le porteur applique un <#ba.physicalstatus>statut physique</>, il porte également 1 coup qui inflige {atk_scale:0%} de son ATQ en DÉG physiques, ainsi que [Déséquilibre <@ba.poise>{poise}</> fois]. Temps de recharge de l'effet : {duration} s."
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{poise_up:0%}</> de bonus d'efficacité de Déséquilibre.\nLorsque le porteur applique un <#ba.physicalstatus>statut physique</>, il porte également 1 coup qui inflige {atk_scale:0%} de son ATQ en DÉG physiques, ainsi que [<@ba.poise>{poise}</> points de Déséquilibre]. Temps de recharge de l'effet : {duration} s."
   },
   "item_equip_t4_suit_phy01_edc_03": {
     "name": "Silex de spadamancien",
     "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
     "decoDesc": "Un des produits initialement commercialisés par le Bureau des spadamanciens.\nFondamentalement, le silex surcharge et vide les réserves d'énergie de l'armure du spadamancien. Il ne brille que lorsque son porteur est en danger de mort.",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{poise_up:0%}</> de bonus d'efficacité de Déséquilibre.\nLorsque le porteur applique un <#ba.physicalstatus>statut physique</>, il porte également 1 coup qui inflige {atk_scale:0%} de son ATQ en DÉG physiques, ainsi que [Déséquilibre <@ba.poise>{poise}</> fois]. Temps de recharge de l'effet : {duration} s."
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{poise_up:0%}</> de bonus d'efficacité de Déséquilibre.\nLorsque le porteur applique un <#ba.physicalstatus>statut physique</>, il porte également 1 coup qui inflige {atk_scale:0%} de son ATQ en DÉG physiques, ainsi que [<@ba.poise>{poise}</> points de Déséquilibre]. Temps de recharge de l'effet : {duration} s."
   },
   "item_equip_t4_suit_phy01_edc_04": {
     "name": "Dague de spadamancien",
     "description": "Conçu par les spadamanciens de Hongshan et assemblé par l'usine du GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
     "decoDesc": "L'un des produits vendus par le bureau des spadamanciens à ses débuts.\nUne lame tactique extrêmement affûtée, et l'une des premières armes produites selon les techniques des spadamanciens de Hongshan. Cet équipement a indubitablement posé de solides bases pour la série Yinglung qui sortira ensuite.",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{poise_up:0%}</> de bonus d'efficacité de Déséquilibre.\nLorsque le porteur applique un <#ba.physicalstatus>statut physique</>, il porte également 1 coup qui inflige {atk_scale:0%} de son ATQ en DÉG physiques, ainsi que [Déséquilibre <@ba.poise>{poise}</> fois]. Temps de recharge de l'effet : {duration} s."
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{poise_up:0%}</> de bonus d'efficacité de Déséquilibre.\nLorsque le porteur applique un <#ba.physicalstatus>statut physique</>, il porte également 1 coup qui inflige {atk_scale:0%} de son ATQ en DÉG physiques, ainsi que [<@ba.poise>{poise}</> points de Déséquilibre]. Temps de recharge de l'effet : {duration} s."
   },
   "item_equip_t4_suit_phy01_hand_01": {
     "name": "Gants TAC de spadamancien",
     "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
     "decoDesc": "Un des produits initialement commercialisés par le Bureau des spadamanciens.\n« Fin de l'année. J'ai mené ma lame vers le sud. Neuf têtes ont poussé sur la montagne, et elle rugit sans cesse. Un jour propice. »",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{poise_up:0%}</> de bonus d'efficacité de Déséquilibre.\nLorsque le porteur applique un <#ba.physicalstatus>statut physique</>, il porte également 1 coup qui inflige {atk_scale:0%} de son ATQ en DÉG physiques, ainsi que [Déséquilibre <@ba.poise>{poise}</> fois]. Temps de recharge de l'effet : {duration} s."
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{poise_up:0%}</> de bonus d'efficacité de Déséquilibre.\nLorsque le porteur applique un <#ba.physicalstatus>statut physique</>, il porte également 1 coup qui inflige {atk_scale:0%} de son ATQ en DÉG physiques, ainsi que [<@ba.poise>{poise}</> points de Déséquilibre]. Temps de recharge de l'effet : {duration} s."
   },
   "item_equip_t4_suit_phy01_hand_02": {
     "name": "Gantelets TAC de spadamancien",
     "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
     "decoDesc": "Un des produits initialement commercialisés par le Bureau des spadamanciens.\nLe processus de validation des gants tactiques inclut ce test particulier : « Créer une fleur en origami à 24 pliures avec du papier de Xuan en portant ces gantelets. »",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{poise_up:0%}</> de bonus d'efficacité de Déséquilibre.\nLorsque le porteur applique un <#ba.physicalstatus>statut physique</>, il porte également 1 coup qui inflige {atk_scale:0%} de son ATQ en DÉG physiques, ainsi que [Déséquilibre <@ba.poise>{poise}</> fois]. Temps de recharge de l'effet : {duration} s."
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{poise_up:0%}</> de bonus d'efficacité de Déséquilibre.\nLorsque le porteur applique un <#ba.physicalstatus>statut physique</>, il porte également 1 coup qui inflige {atk_scale:0%} de son ATQ en DÉG physiques, ainsi que [<@ba.poise>{poise}</> points de Déséquilibre]. Temps de recharge de l'effet : {duration} s."
   },
   "item_equip_t4_suit_phy01_hand_03": {
     "name": "Gantelets TAC de spadamancien G1",
     "description": "Conçu par les spadamanciens de Hongshan et assemblé par l'usine du GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
     "decoDesc": "Un des produits initialement commercialisés par le Bureau des spadamanciens.\nLe processus de validation des gants tactiques inclut ce test particulier : « Créer une fleur en origami à 24 pliures avec du papier de Xuan en portant ces gants. »",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{poise_up:0%}</> de bonus d'efficacité de Déséquilibre.\nLorsque le porteur applique un <#ba.physicalstatus>statut physique</>, il porte également 1 coup qui inflige {atk_scale:0%} de son ATQ en DÉG physiques, ainsi que [Déséquilibre <@ba.poise>{poise}</> fois]. Temps de recharge de l'effet : {duration} s."
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{poise_up:0%}</> de bonus d'efficacité de Déséquilibre.\nLorsque le porteur applique un <#ba.physicalstatus>statut physique</>, il porte également 1 coup qui inflige {atk_scale:0%} de son ATQ en DÉG physiques, ainsi que [<@ba.poise>{poise}</> points de Déséquilibre]. Temps de recharge de l'effet : {duration} s."
   },
   "item_equip_t4_suit_poise01_body_01": {
     "name": "Revêtement Æthertech",
     "description": "Conçu par les Laboratoires Æthertech portatifs et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
     "decoDesc": "De l'équipement de protection ultraléger expérimental.\n« Le peuple de Hongshan utilise des plumes pour évaluer la légèreté. Les solutions antigravité proposées par nos laboratoires sont sur le point d'aboutir. »",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{atk_up:0%}</> d'ATQ. \nLorsque le porteur applique <#ba.noguard>Vulnérabilité</>, il inflige <@ba.vup>+{phy_dmg_up:0%}</> de <@ba.pd>DÉG physiques</> pendant {duration} s. Cet effet peut être cumulé {max_stack:0} fois. Lorsque la cible a déjà {stack_cond:0} cumul(s) de <#ba.noguard>Vulnérabilité</>, le porteur inflige <@ba.vup>+{phy_dmg_up2:0%}</> de DÉG physiques supplémentaires pendant {duration2} s. L'effet ne peut pas être cumulé."
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{atk_up:0%}</> d'ATQ.\nLorsque le porteur applique <#ba.noguard>Vulnérabilité</>, il inflige <@ba.vup>+{phy_dmg_up:0%}</> de <@ba.pd>DÉG physiques</> pendant {duration} s. Cet effet peut être cumulé {max_stack:0} fois. Lorsque la cible a {stack_cond:0} cumuls de <#ba.noguard>Vulnérabilité</>, le porteur inflige <@ba.vup>+{phy_dmg_up2:0%}</> de <@ba.pd>DÉG physiques</> supplémentaires pendant {duration2} s. L'effet ne peut pas être cumulé."
   },
   "item_equip_t4_suit_poise01_edc_01": {
     "name": "Bande d'analyse Æthertech",
     "description": "Conçu par les Laboratoires Æthertech portatifs et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
     "decoDesc": "De l'équipement de protection ultra-léger expérimental. \n« Nous recherchons des moyens d'analyser numériquement les signes de croissance de la Gangrène. Tout le monde est invité à s'inscrire à des essais de produits. »",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{atk_up:0%}</> d'ATQ. \nLorsque le porteur applique <#ba.noguard>Vulnérabilité</>, il inflige <@ba.vup>+{phy_dmg_up:0%}</> de <@ba.pd>DÉG physiques</> pendant {duration} s. Cet effet peut être cumulé {max_stack:0} fois. Lorsque la cible a déjà {stack_cond:0} cumul(s) de <#ba.noguard>Vulnérabilité</>, le porteur inflige <@ba.vup>+{phy_dmg_up2:0%}</> de DÉG physiques supplémentaires pendant {duration2} s. L'effet ne peut pas être cumulé."
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{atk_up:0%}</> d'ATQ.\nLorsque le porteur applique <#ba.noguard>Vulnérabilité</>, il inflige <@ba.vup>+{phy_dmg_up:0%}</> de <@ba.pd>DÉG physiques</> pendant {duration} s. Cet effet peut être cumulé {max_stack:0} fois. Lorsque la cible a {stack_cond:0} cumuls de <#ba.noguard>Vulnérabilité</>, le porteur inflige <@ba.vup>+{phy_dmg_up2:0%}</> de <@ba.pd>DÉG physiques</> supplémentaires pendant {duration2} s. L'effet ne peut pas être cumulé."
   },
   "item_equip_t4_suit_poise01_edc_02": {
     "name": "Stabilisateur Æthertech",
     "description": "Conçu par les Laboratoires Æthertech portatifs et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
     "decoDesc": "De l'équipement de protection ultra-léger expérimental.\n« Portez ce stabilisateur en permanence, je vous prie. Cela vous empêchera d'être projeté dans les airs comme un ballon de baudruche percé à cause d'une simple fluctuation des paramètres. »",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{atk_up:0%}</> d'ATQ. \nLorsque le porteur applique <#ba.noguard>Vulnérabilité</>, il inflige <@ba.vup>+{phy_dmg_up:0%}</> de <@ba.pd>DÉG physiques</> pendant {duration} s. Cet effet peut être cumulé {max_stack:0} fois. Lorsque la cible a déjà {stack_cond:0} cumul(s) de <#ba.noguard>Vulnérabilité</>, le porteur inflige <@ba.vup>+{phy_dmg_up2:0%}</> de DÉG physiques supplémentaires pendant {duration2} s. L'effet ne peut pas être cumulé."
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{atk_up:0%}</> d'ATQ.\nLorsque le porteur applique <#ba.noguard>Vulnérabilité</>, il inflige <@ba.vup>+{phy_dmg_up:0%}</> de <@ba.pd>DÉG physiques</> pendant {duration} s. Cet effet peut être cumulé {max_stack:0} fois. Lorsque la cible a {stack_cond:0} cumuls de <#ba.noguard>Vulnérabilité</>, le porteur inflige <@ba.vup>+{phy_dmg_up2:0%}</> de <@ba.pd>DÉG physiques</> supplémentaires pendant {duration2} s. L'effet ne peut pas être cumulé."
   },
   "item_equip_t4_suit_poise01_edc_03": {
     "name": "Stabilisateur Æthertech G1",
     "description": "Conçu par les Laboratoires Æthertech portatifs et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
     "decoDesc": "De l'équipement de protection ultra-léger expérimental.\n« Portez ce stabilisateur en permanence, je vous prie. Cela vous empêchera d'être projeté dans les airs comme un ballon de baudruche percé à cause d'une simple fluctuation des paramètres. »",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{atk_up:0%}</> d'ATQ. \nLorsque le porteur applique <#ba.noguard>Vulnérabilité</>, il inflige <@ba.vup>+{phy_dmg_up:0%}</> de <@ba.pd>DÉG physiques</> pendant {duration} s. Cet effet peut être cumulé {max_stack:0} fois. Lorsque la cible a déjà {stack_cond:0} cumul(s) de <#ba.noguard>Vulnérabilité</>, le porteur inflige <@ba.vup>+{phy_dmg_up2:0%}</> de DÉG physiques supplémentaires pendant {duration2} s. L'effet ne peut pas être cumulé."
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{atk_up:0%}</> d'ATQ.\nLorsque le porteur applique <#ba.noguard>Vulnérabilité</>, il inflige <@ba.vup>+{phy_dmg_up:0%}</> de <@ba.pd>DÉG physiques</> pendant {duration} s. Cet effet peut être cumulé {max_stack:0} fois. Lorsque la cible a {stack_cond:0} cumuls de <#ba.noguard>Vulnérabilité</>, le porteur inflige <@ba.vup>+{phy_dmg_up2:0%}</> de <@ba.pd>DÉG physiques</> supplémentaires pendant {duration2} s. L'effet ne peut pas être cumulé."
   },
   "item_equip_t4_suit_poise01_edc_04": {
     "name": "Montre Æthertech",
     "description": "Conçu par les Laboratoires Æthertech portatifs et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
     "decoDesc": "De l'équipement de protection ultra-léger expérimental.\n« Certains utilisateurs soupçonnent nos produits d'avoir des effets hémomutagènes. Ces accusations sont sans fondement. »",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{atk_up:0%}</> d'ATQ. \nLorsque le porteur applique <#ba.noguard>Vulnérabilité</>, il inflige <@ba.vup>+{phy_dmg_up:0%}</> de <@ba.pd>DÉG physiques</> pendant {duration} s. Cet effet peut être cumulé {max_stack:0} fois. Lorsque la cible a déjà {stack_cond:0} cumul(s) de <#ba.noguard>Vulnérabilité</>, le porteur inflige <@ba.vup>+{phy_dmg_up2:0%}</> de DÉG physiques supplémentaires pendant {duration2} s. L'effet ne peut pas être cumulé."
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{atk_up:0%}</> d'ATQ.\nLorsque le porteur applique <#ba.noguard>Vulnérabilité</>, il inflige <@ba.vup>+{phy_dmg_up:0%}</> de <@ba.pd>DÉG physiques</> pendant {duration} s. Cet effet peut être cumulé {max_stack:0} fois. Lorsque la cible a {stack_cond:0} cumuls de <#ba.noguard>Vulnérabilité</>, le porteur inflige <@ba.vup>+{phy_dmg_up2:0%}</> de <@ba.pd>DÉG physiques</> supplémentaires pendant {duration2} s. L'effet ne peut pas être cumulé."
   },
   "item_equip_t4_suit_poise01_hand_01": {
     "name": "Gants Æthertech",
     "description": "Conçu par les Laboratoires Æthertech portatifs et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
     "decoDesc": "De l'équipement de protection ultra-léger expérimental.\n« Portez toujours une couche de rembourrage supplémentaire en utilisant nos produits. Si vous souffrez d'hallucinations auditives ou visuelles, veuillez RETIRER nos produits IMMÉDIATEMENT et vous alimenter. »",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{atk_up:0%}</> d'ATQ. \nLorsque le porteur applique <#ba.noguard>Vulnérabilité</>, il inflige <@ba.vup>+{phy_dmg_up:0%}</> de <@ba.pd>DÉG physiques</> pendant {duration} s. Cet effet peut être cumulé {max_stack:0} fois. Lorsque la cible a déjà {stack_cond:0} cumul(s) de <#ba.noguard>Vulnérabilité</>, le porteur inflige <@ba.vup>+{phy_dmg_up2:0%}</> de DÉG physiques supplémentaires pendant {duration2} s. L'effet ne peut pas être cumulé."
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{atk_up:0%}</> d'ATQ.\nLorsque le porteur applique <#ba.noguard>Vulnérabilité</>, il inflige <@ba.vup>+{phy_dmg_up:0%}</> de <@ba.pd>DÉG physiques</> pendant {duration} s. Cet effet peut être cumulé {max_stack:0} fois. Lorsque la cible a {stack_cond:0} cumuls de <#ba.noguard>Vulnérabilité</>, le porteur inflige <@ba.vup>+{phy_dmg_up2:0%}</> de <@ba.pd>DÉG physiques</> supplémentaires pendant {duration2} s. L'effet ne peut pas être cumulé."
   },
   "item_equip_t4_suit_poise01_hand_02": {
     "name": "Gants légers Æthertech",
     "description": "Conçu par les Laboratoires Æthertech portatifs et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
     "decoDesc": "De l'équipement de protection ultra-léger expérimental.\n« Portez toujours une couche de rembourrage supplémentaire en utilisant nos produits. Si vous souffrez d'hallucinations auditives ou visuelles, veuillez RETIRER nos produits IMMÉDIATEMENT et vous alimenter. »",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{atk_up:0%}</> d'ATQ. \nLorsque le porteur applique <#ba.noguard>Vulnérabilité</>, il inflige <@ba.vup>+{phy_dmg_up:0%}</> de <@ba.pd>DÉG physiques</> pendant {duration} s. Cet effet peut être cumulé {max_stack:0} fois. Lorsque la cible a déjà {stack_cond:0} cumul(s) de <#ba.noguard>Vulnérabilité</>, le porteur inflige <@ba.vup>+{phy_dmg_up2:0%}</> de DÉG physiques supplémentaires pendant {duration2} s. L'effet ne peut pas être cumulé."
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{atk_up:0%}</> d'ATQ.\nLorsque le porteur applique <#ba.noguard>Vulnérabilité</>, il inflige <@ba.vup>+{phy_dmg_up:0%}</> de <@ba.pd>DÉG physiques</> pendant {duration} s. Cet effet peut être cumulé {max_stack:0} fois. Lorsque la cible a {stack_cond:0} cumuls de <#ba.noguard>Vulnérabilité</>, le porteur inflige <@ba.vup>+{phy_dmg_up2:0%}</> de <@ba.pd>DÉG physiques</> supplémentaires pendant {duration2} s. L'effet ne peut pas être cumulé."
   },
   "item_equip_t4_suit_pulse_cryst01_body_01": {
     "name": "Combi disruptive de Pulser Labs",
@@ -1391,70 +1451,100 @@
     "decoDesc": "Un équipement au style novateur.\nIl a été globalement difficile de comprendre pourquoi les Industries Endfield avaient ajouté une meilleure isolation thermique à leur ensemble d'EPI Pulser Labs.",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{phy_spell_up:0}</> d'intensité des Arts. \nLorsque le porteur applique <#ba.conduct>Électrification</>, il inflige <@ba.vup>+{pulse_dmg_up:0%}</> de <@ba.pulse>DÉG électriques</> pendant {duration} s. Lorsque le porteur applique <#ba.frozen>Solidification</>, il inflige <@ba.vup>+{cryst_dmg_up:0%}</> de <@ba.cryst>DÉG cryogéniques</> pendant {duration2} s. Ces effets ne se cumulent pas."
   },
+  "item_equip_t4_suit_spellburst_body_01": {
+    "name": "Armure de rempart profond",
+    "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "Conçu par Endfield après avoir étudié l'équipement standard des FSY. \n« Je ne pense pas qu'il soit nécessaire d'affronter la Gangrène de front... »\n« Compris. Nous allons ajouter une série complète de plaques d'acier pour garantir une défense intégrée. »",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{spell_dmg_up:0%}</> de DÉG des Arts infligés.\nLorsque le porteur applique une <#ba.naturalburst>explosion naturelle</> ou une <#ba.crystburst>explosion cryogénique</>, il gagne <@ba.vup>+{phy_spell_up:0}</> d'intensité des Arts pendant {duration} s. Cumuls max. pour cet effet : {max_stack}. La durée de chaque cumul est décomptée séparément. Cet effet ne se déclenche qu'une fois toutes les 0,1 s."
+  },
+  "item_equip_t4_suit_spellburst_edc_01": {
+    "name": "Communicateur de rempart profond",
+    "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "Conçu par Endfield après avoir étudié l'équipement standard des FSY. \n« Serait-il possible de réduire le temps de charge... »\n« Compris. Nous allons ajouter des batteries de xiranite aux communicateurs du Protocole pour optimiser leur durée d'utilisation ! »",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{spell_dmg_up:0%}</> de DÉG des Arts infligés.\nLorsque le porteur applique une <#ba.naturalburst>explosion naturelle</> ou une <#ba.crystburst>explosion cryogénique</>, il gagne <@ba.vup>+{phy_spell_up:0}</> d'intensité des Arts pendant {duration} s. Cumuls max. pour cet effet : {max_stack}. La durée de chaque cumul est décomptée séparément. Cet effet ne se déclenche qu'une fois toutes les 0,1 s."
+  },
+  "item_equip_t4_suit_spellburst_hand_01": {
+    "name": "Gantelets de rempart profond",
+    "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "Conçu par Endfield après avoir étudié l'équipement standard des FSY. \n« La mesure d'urgence pourrait-elle inclure... »\n« Compris. Nous allons épaissir les plaques d'armure des doigts et les rendre efficaces en défense comme en attaque ! »",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{spell_dmg_up:0%}</> de DÉG des Arts infligés.\nLorsque le porteur applique une <#ba.naturalburst>explosion naturelle</> ou une <#ba.crystburst>explosion cryogénique</>, il gagne <@ba.vup>+{phy_spell_up:0}</> d'intensité des Arts pendant {duration} s. Cumuls max. pour cet effet : {max_stack}. La durée de chaque cumul est décomptée séparément. Cet effet ne se déclenche qu'une fois toutes les 0,1 s."
+  },
   "item_equip_t4_suit_usp02_body_01": {
     "name": "Armure en xiranite éternelle",
     "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
     "decoDesc": "L'héritage d'un Tianshi « fou ».\nLa plupart des gens ne voient pas de lien entre les ustensiles de cuisine et la xiranite. Mais un certain habitant de Wuling trouve son inspiration en matière de design en dînant au restaurant.",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{hp_up}</> PV.\nLorsque le porteur applique <#ba.enhance>amplification</>, <#ba.guard>protégé</>, <#ba.vulnerable>sensible</> ou <#ba.weak>affaibli</>, les autres coéquipiers bénéficient de <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pendant {duration} s. L'effet ne peut pas être cumulé."
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{hp_up}</> PV.\nLorsque le porteur applique une <#ba.enhance>amplification</>, <#ba.guard>protection</>, <#ba.vulnerable>sensibilité</> ou <#ba.weak>Faiblesse</>, les autres coéquipiers bénéficient de <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pendant {duration} s. L'effet ne peut pas être cumulé."
   },
   "item_equip_t4_suit_usp02_body_03": {
     "name": "Armure légère en xiranite éternelle",
     "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
     "decoDesc": "L'héritage d'un Tianshi « fou ». \n« C'est bien trop lourd. Regardez ça, c'est aussi compact que les ossements des animaux sauvages près de la route. Il faut voyager léger, compris ? LÉGER ! »",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{hp_up}</> PV.\nLorsque le porteur applique <#ba.enhance>amplification</>, <#ba.guard>protégé</>, <#ba.vulnerable>sensible</> ou <#ba.weak>affaibli</>, les autres coéquipiers bénéficient de <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pendant {duration} s. L'effet ne peut pas être cumulé."
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{hp_up}</> PV.\nLorsque le porteur applique une <#ba.enhance>amplification</>, <#ba.guard>protection</>, <#ba.vulnerable>sensibilité</> ou <#ba.weak>Faiblesse</>, les autres coéquipiers bénéficient de <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pendant {duration} s. L'effet ne peut pas être cumulé."
   },
   "item_equip_t4_suit_usp02_body_04": {
     "name": "Armure légère en xiranite éternelle G1",
     "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
     "decoDesc": "L'héritage d'un Tianshi « fou ». \n« C'est bien trop lourd. Regardez ça, c'est aussi compact que les ossements des animaux sauvages près de la route. Il faut voyager léger, compris ? LÉGER ! »",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{hp_up}</> PV.\nLorsque le porteur applique <#ba.enhance>amplification</>, <#ba.guard>protégé</>, <#ba.vulnerable>sensible</> ou <#ba.weak>affaibli</>, les autres coéquipiers bénéficient de <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pendant {duration} s. L'effet ne peut pas être cumulé."
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{hp_up}</> PV.\nLorsque le porteur applique une <#ba.enhance>amplification</>, <#ba.guard>protection</>, <#ba.vulnerable>sensibilité</> ou <#ba.weak>Faiblesse</>, les autres coéquipiers bénéficient de <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pendant {duration} s. L'effet ne peut pas être cumulé."
   },
   "item_equip_t4_suit_usp02_edc_01": {
     "name": "Noyau d'énergie en xiranite éternelle",
     "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
     "decoDesc": "L'héritage d'un Tianshi « fou ».\nUn jour, il a parcouru les rues avec un grand bol de tofu mijoté dans de la rosée de bambou et a prétendu qu'il venait de concocter la prochaine génération de réfrigérateurs à base de xiranite...",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{hp_up}</> PV.\nLorsque le porteur applique <#ba.enhance>amplification</>, <#ba.guard>protégé</>, <#ba.vulnerable>sensible</> ou <#ba.weak>affaibli</>, les autres coéquipiers bénéficient de <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pendant {duration} s. L'effet ne peut pas être cumulé."
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{hp_up}</> PV.\nLorsque le porteur applique une <#ba.enhance>amplification</>, <#ba.guard>protection</>, <#ba.vulnerable>sensibilité</> ou <#ba.weak>Faiblesse</>, les autres coéquipiers bénéficient de <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pendant {duration} s. L'effet ne peut pas être cumulé."
   },
   "item_equip_t4_suit_usp02_edc_02": {
     "name": "Noyau d'énergie en xiranite éternelle G1",
     "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
     "decoDesc": "L'héritage d'un Tianshi « fou ».\nUn jour, il a parcouru les rues avec un grand bol de tofu mijoté dans de la rosée de bambou et a prétendu qu'il venait de concocter la prochaine génération de réfrigérateurs à base de xiranite...",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{hp_up}</> PV.\nLorsque le porteur applique <#ba.enhance>amplification</>, <#ba.guard>protégé</>, <#ba.vulnerable>sensible</> ou <#ba.weak>affaibli</>, les autres coéquipiers bénéficient de <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pendant {duration} s. L'effet ne peut pas être cumulé."
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{hp_up}</> PV.\nLorsque le porteur applique une <#ba.enhance>amplification</>, <#ba.guard>protection</>, <#ba.vulnerable>sensibilité</> ou <#ba.weak>Faiblesse</>, les autres coéquipiers bénéficient de <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pendant {duration} s. L'effet ne peut pas être cumulé."
   },
   "item_equip_t4_suit_usp02_edc_03": {
     "name": "Bras auxiliaire en xiranite éternelle",
     "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
     "decoDesc": "L'héritage d'un Tianshi « fou ».\n... On disait que le Tianshi fou avait vu un « cycle d'auto-alimentation » dans un pot-au-feu servi par un chef ursus. Cette inspiration lui a permis de plus que doubler la durée d'alimentation de l'équipement de protection en xiranite éternelle.",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{hp_up}</> PV.\nLorsque le porteur applique <#ba.enhance>amplification</>, <#ba.guard>protégé</>, <#ba.vulnerable>sensible</> ou <#ba.weak>affaibli</>, les autres coéquipiers bénéficient de <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pendant {duration} s. L'effet ne peut pas être cumulé."
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{hp_up}</> PV.\nLorsque le porteur applique une <#ba.enhance>amplification</>, <#ba.guard>protection</>, <#ba.vulnerable>sensibilité</> ou <#ba.weak>Faiblesse</>, les autres coéquipiers bénéficient de <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pendant {duration} s. L'effet ne peut pas être cumulé."
   },
   "item_equip_t4_suit_usp02_edc_04": {
     "name": "Plaque fortifiante en xiranite éternelle",
     "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
     "decoDesc": "L'héritage d'un Tianshi « fou ». \nLe Tianshi qui a proposé le design d'origine à l'atelier de production a compris qu'il était trop minimaliste. Il a donc ajouté des plaques de protection pour améliorer sa défense.",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{hp_up}</> PV.\nLorsque le porteur applique <#ba.enhance>amplification</>, <#ba.guard>protégé</>, <#ba.vulnerable>sensible</> ou <#ba.weak>affaibli</>, les autres coéquipiers bénéficient de <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pendant {duration} s. L'effet ne peut pas être cumulé."
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{hp_up}</> PV.\nLorsque le porteur applique une <#ba.enhance>amplification</>, <#ba.guard>protection</>, <#ba.vulnerable>sensibilité</> ou <#ba.weak>Faiblesse</>, les autres coéquipiers bénéficient de <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pendant {duration} s. L'effet ne peut pas être cumulé."
+  },
+  "item_equip_t4_suit_usp02_edc_05": {
+    "name": "Plaque fortifiante en xiranite éternelle G1",
+    "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "L'héritage d'un Tianshi « fou ». \nLe Tianshi qui a proposé le design d'origine à l'atelier de production a compris qu'il était trop minimaliste. Il a donc ajouté des plaques de protection pour améliorer sa défense.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{hp_up}</> PV.\nLorsque le porteur applique une <#ba.enhance>amplification</>, <#ba.guard>protection</>, <#ba.vulnerable>sensibilité</> ou <#ba.weak>Faiblesse</>, les autres coéquipiers bénéficient de <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pendant {duration} s. L'effet ne peut pas être cumulé."
+  },
+  "item_equip_t4_suit_usp02_edc_06": {
+    "name": "Plaque lourde en xiranite éternelle",
+    "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "L'héritage d'un Tianshi « fou ». \nEn épaississant les plaques d'armure à l'extrême, nous comblerons les failles de défense de l'équipement en xiranite éternelle qui peuvent compromettre la conception globale.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{hp_up}</> PV.\nLorsque le porteur applique une <#ba.enhance>amplification</>, <#ba.guard>protection</>, <#ba.vulnerable>sensibilité</> ou <#ba.weak>Faiblesse</>, les autres coéquipiers bénéficient de <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pendant {duration} s. L'effet ne peut pas être cumulé."
   },
   "item_equip_t4_suit_usp02_hand_01": {
     "name": "Gants en xiranite éternelle",
     "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
     "decoDesc": "L'héritage d'un Tianshi « fou ».\n... Les jours ont passé et le Tianshi fou a commencé à refuser toute nourriture qui « n'est pas source d'inspiration ». Amaigri à l'extrême, il est parti dans les terres sauvages à la recherche de « xiranite savoureuse ».",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{hp_up}</> PV.\nLorsque le porteur applique <#ba.enhance>amplification</>, <#ba.guard>protégé</>, <#ba.vulnerable>sensible</> ou <#ba.weak>affaibli</>, les autres coéquipiers bénéficient de <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pendant {duration} s. L'effet ne peut pas être cumulé."
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{hp_up}</> PV.\nLorsque le porteur applique une <#ba.enhance>amplification</>, <#ba.guard>protection</>, <#ba.vulnerable>sensibilité</> ou <#ba.weak>Faiblesse</>, les autres coéquipiers bénéficient de <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pendant {duration} s. L'effet ne peut pas être cumulé."
   },
   "item_equip_t4_suit_usp02_hand_02": {
     "name": "Gants en xiranite éternelle G1",
     "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
     "decoDesc": "L'héritage d'un Tianshi « fou ».\n... Les jours ont passé et le Tianshi fou a commencé à refuser toute nourriture qui « n'est pas source d'inspiration ». Amaigri à l'extrême, il est parti dans les terres sauvages à la recherche de « xiranite savoureuse ».",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{hp_up}</> PV.\nLorsque le porteur applique <#ba.enhance>amplification</>, <#ba.guard>protégé</>, <#ba.vulnerable>sensible</> ou <#ba.weak>affaibli</>, les autres coéquipiers bénéficient de <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pendant {duration} s. L'effet ne peut pas être cumulé."
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{hp_up}</> PV.\nLorsque le porteur applique une <#ba.enhance>amplification</>, <#ba.guard>protection</>, <#ba.vulnerable>sensibilité</> ou <#ba.weak>Faiblesse</>, les autres coéquipiers bénéficient de <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pendant {duration} s. L'effet ne peut pas être cumulé."
   },
   "item_equip_t4_suit_usp02_hand_03": {
     "name": "Bandes pour mains en xiranite éternelle",
     "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
     "decoDesc": "L'héritage d'un Tianshi « fou ». \n« Mais qui a eu l'idée de tisser de la xiranite dans les fibres ? Vous êtes dingue ? »",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{hp_up}</> PV.\nLorsque le porteur applique <#ba.enhance>amplification</>, <#ba.guard>protégé</>, <#ba.vulnerable>sensible</> ou <#ba.weak>affaibli</>, les autres coéquipiers bénéficient de <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pendant {duration} s. L'effet ne peut pas être cumulé."
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{hp_up}</> PV.\nLorsque le porteur applique une <#ba.enhance>amplification</>, <#ba.guard>protection</>, <#ba.vulnerable>sensibilité</> ou <#ba.weak>Faiblesse</>, les autres coéquipiers bénéficient de <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pendant {duration} s. L'effet ne peut pas être cumulé."
   },
   "item_equip_t4_suit_usp02_hand_04": {
     "name": "Équipement pour mains en xiranite éternelle",
     "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
     "decoDesc": "L'héritage d'un Tianshi « fou ». \nEnfilez-le... et laissez son pouvoir couler dans vos veines, l'énergie imprégner votre chair et votre sang.",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{hp_up}</> PV.\nLorsque le porteur applique <#ba.enhance>amplification</>, <#ba.guard>protégé</>, <#ba.vulnerable>sensible</> ou <#ba.weak>affaibli</>, les autres coéquipiers bénéficient de <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pendant {duration} s. L'effet ne peut pas être cumulé."
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{hp_up}</> PV.\nLorsque le porteur applique une <#ba.enhance>amplification</>, <#ba.guard>protection</>, <#ba.vulnerable>sensibilité</> ou <#ba.weak>Faiblesse</>, les autres coéquipiers bénéficient de <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pendant {duration} s. L'effet ne peut pas être cumulé."
   }
 }

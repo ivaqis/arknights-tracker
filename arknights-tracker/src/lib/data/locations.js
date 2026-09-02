@@ -256,5 +256,25 @@ export const locations = {
       60,
       60
     ]
+  },
+  "world_energy_point12_7": {
+    "id": "world_energy_point12_7",
+    "url": "https://oem.re/0ZUEJBe",
+    "region": "wuling",
+    "costStamina": 80,
+    "enemyIds": [
+      "eny_0007_mimicw",
+      "eny_0073_slimerg",
+      "eny_0100_slimerg2",
+      "eny_0128_babyents",
+      "eny_0129_slwood"
+    ],
+    "enemyLevels": [
+      60,
+      60,
+      60,
+      60,
+      60
+    ]
   }
 };

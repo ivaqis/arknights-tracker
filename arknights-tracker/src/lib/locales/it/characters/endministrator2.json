@@ -80,9 +80,9 @@
       "levels": []
     },
     "files": {
-      "main": "<@profile.key>NOME IN CODICE: Endministrator \nGENERE: ■■ \nAFFILIAZIONE: ■■ \nDATA DI NASCITA: ■■ \nRAZZA: ■■ \n\nNon ricordi nulla. \nGli echi del tuo passato sono ridotti in frantumi e come sabbia ti scivolano tra le dita al minimo accenno di un pensiero. \nTalvolta, questo ti fa provare un senso di inquietudine, altre una sensazione di disagio, eppure ti dona sempre un momento di calma per respirare e riflettere. \nLa maggior parte delle volte, però, non puoi permetterti di nutrire dei dubbi. Devi solo fidarti di chi ti sta accanto e proseguire per la tua strada. \nForse hai riposto i tuoi ricordi in qualche angolo remoto della tua mente, anche se solo momentaneamente... \nE, per questo, non ricordi nulla. </>",
-      "humanResources": "<@profile.key>Hai vissuto l'intera storia di Talos-II...</>",
-      "file1": "<@profile.key>Ma... in che modo influenzerai il suo futuro?</>"
+      "main": "NOME IN CODICE: Endministrator \nGENERE: ■■ \nAFFILIAZIONE: ■■ \nDATA DI NASCITA: ■■ \nRAZZA: ■■ \n\nNon ricordi nulla. \nGli echi del tuo passato sono ridotti in frantumi e come sabbia ti scivolano tra le dita al minimo accenno di un pensiero. \nTalvolta, questo ti fa provare un senso di inquietudine, altre una sensazione di disagio, eppure ti dona sempre un momento di calma per respirare e riflettere. \nLa maggior parte delle volte, però, non puoi permetterti di nutrire dei dubbi. Devi solo fidarti di chi ti sta accanto e proseguire per la tua strada. \nForse hai riposto i tuoi ricordi in qualche angolo remoto della tua mente, anche se solo momentaneamente... \nE, per questo, non ricordi nulla.",
+      "humanResources": "Hai vissuto l'intera storia di Talos-II...",
+      "file1": "Ma... in che modo influenzerai il suo futuro?"
     },
     "tags": {
       "expert1": {
@@ -127,7 +127,7 @@
       },
       {
         "voId": "chr_0002_endminm_chrup_skill_01",
-        "title": "Attivazione matrice delle abilità",
+        "title": "Attivazione nodo talento",
         "text": "Riconosco questa sensazione..."
       },
       {

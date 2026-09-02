@@ -39,7 +39,7 @@
     "battleSkill": {
       "name": "Enfoque deslumbrante",
       "description": "Liino inflige <@ba.pulse>DAÑ eléctrico</> a los enemigos y luego entra en su <@ba.key>Postura de vocalista</>. Mientras esta postura está activa, si hay enemigos cerca, Liino realizará un ATQ adicional que inflige <@ba.pulse>DAÑ eléctrico</> a los enemigos periódicamente.\n<@ba.key>Postura de vocalista</>: Mientras esta postura está activa, Liino otorga un Refuerzo de ATQ a todo el equipo. Tras entrar en combate, Liino también otorgará <@ba.heal>Tratamiento de PV</> continuo a los operadores dentro del alcance.\n<@ba.info>Durante la Postura de vocalista, su habilidad de batalla se reemplaza por Postura final. Al lanzar esta habilidad, la Postura de vocalista terminará antes de tiempo sin consumir PH, después la habilidad de batalla entrará en un breve tiempo de enfriamiento.</>",
-      "firstAtkMultiplier": "Multiplicador de Primer ATQ",
+      "1stAtkMultiplier": "Multiplicador del 1.er ATQ",
       "additionalAtkDmgMultiplier": "Multiplicador de DAÑ de ATQ adicional",
       "additionalAtkIntervalS": "Intervalo de ATQ adicional (s)",
       "beatIntervalS": "Intervalo de Pulso (s)",
@@ -60,7 +60,7 @@
     },
     "ultimate": {
       "name": "Concierto de Estrella del amanecer",
-      "description": "Liino otorga <@ba.heal>Tratamiento de PV</> a todo el equipo, entra al mismo tiempo en su <@ba.key>Postura de cosmovoz</>, desata un espectáculo continuo de Pirotecnia escénica que inflige <@ba.pulse>DAÑ eléctrico</> y luego activa una <@ba.key>Extravaganza electrizante</> que inflige <@ba.pulse>DAÑ eléctrico</> y aplica <#ba.conduct>Electrificación</> forzada a los enemigos en un área de efecto (ADE) grande.\n<@ba.key>Postura de cosmovoz</>: Esta postura reemplaza la <@ba.key>Postura de vocalista</> de Liino. Mientras está activa, la postura otorga a todo el equipo <#ba.pulseenhance>Amp eléctrica</> y <#ba.naturalenhance>Amp de naturaleza</> (los efectos también aumentan más por el atributo Voluntad), además de un Refuerzo de ATQ. Los pulsos de la canción de Liino también infligen <@ba.pulse>DAÑ eléctrico</> a los enemigos en el ADE y otorgan <@ba.heal>Tratamiento de PV</> continuo a los operadores aliados en el ADE. Cuando la postura termina, inflige a los enemigos en el ADE 3 veces el DAÑ de un solo pulso y otorga a todo el equipo 3 veces el Tratamiento de PV de un solo pulso. Este efecto no se activa si la postura termina antes de tiempo. \nDurante la postura, su habilidad de batalla se reemplaza por Postura final. <@ba.info>Lanzar la habilidad de batalla durante la Postura de cosmovoz la termina antes de tiempo y no consume ningún PH.</>",
+      "description": "Liino otorga <@ba.heal>Tratamiento de PV</> a todo el equipo, entra al mismo tiempo en su <@ba.key>Postura de cosmovoz</>, desata un espectáculo continuo de Pirotecnia escénica que inflige <@ba.pulse>DAÑ eléctrico</> y luego activa una <@ba.key>Extravaganza electrizante</> que inflige <@ba.pulse>DAÑ eléctrico</> y aplica <#ba.conduct>Electrificación</> forzada a los enemigos en un área de efecto (ADE) Grande.\n<@ba.key>Postura de cosmovoz</>: esta postura reemplaza la <@ba.key>Postura de vocalista</> de Liino. Mientras está activa, la postura otorga a todo el equipo <#ba.pulseenhance>Amp eléctrica</> y <#ba.naturalenhance>Amp de naturaleza</> (los efectos también aumentan más por el atributo de Voluntad), además de un Refuerzo de ATQ. Los pulsos de la canción de Liino también infligen <@ba.pulse>DAÑ eléctrico</> a los enemigos en el ADE y otorgan <@ba.heal>Tratamiento de PV</> continuo a los operadores aliados en el ADE. Cuando la postura termina, Liino inflige a los enemigos en el ADE 3 veces el DAÑ de un solo pulso y otorga a todo el equipo 3 veces el Tratamiento de PV de un solo pulso. Este efecto no se activa si la postura termina antes de tiempo. \n<@ba.info>Durante la postura, su habilidad de batalla se reemplaza por Terminar postura. Lanzar la habilidad de batalla durante la Postura de cosmovoz la termina antes de tiempo y no consume PH.</>",
       "stagePyrotechnicsDmgMultiplier": "Multiplicador de DAÑ de Pirotecnia escénica",
       "electrifyingExtravaganzaDmgMultiplier": "Multiplicador de DAÑ de Extravaganza electrizante",
       "atkBoost": "Refuerzo de ATQ",
@@ -106,8 +106,8 @@
     },
     "baseSkill2": {
       "levels": [
-        "Asignar al Nexus de control para otorgar a todos los operadores regeneración del Estado de ánimo de +12 %",
-        "Asignar al Nexus de control para otorgar a todos los operadores regeneración del Estado de ánimo de +16 %"
+        "Asignar al Nexus de control para otorgar a todos los operadores Regeneración del Estado de ánimo de +12 %",
+        "Asignar al Nexus de control para otorgar a todos los operadores Regeneración del Estado de ánimo de +16 %"
       ],
       "name": "La vibra del escenario que perdura"
     },
@@ -170,7 +170,7 @@
       },
       {
         "voId": "chr_0035_liino_chrup_skill_01",
-        "title": "Activación de la Matriz de habilidades",
+        "title": "Activación de Nodo de talento",
         "text": "¡Lo entendí en un instante! Como una estrella encendiendo mi alma... Me estoy convirtiendo en toda una celebridad, ¿no crees?"
       },
       {

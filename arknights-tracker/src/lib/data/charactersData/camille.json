@@ -1730,7 +1730,7 @@
                     45.0
                 ]
             },
-            "weaknessEffect": {
+            "weakness": {
                 "dataType": "percent",
                 "data": [
                     0.05,

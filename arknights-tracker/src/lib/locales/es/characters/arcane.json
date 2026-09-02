@@ -85,7 +85,7 @@
         "imprisonmentAndSusceptibilityDurationS": "Duración de Aprisionamiento y Susceptibilidad (s)",
         "baseSusceptibility": "Susceptibilidad base",
         "maxBonusSusceptibilityFromWill": "Susceptibilidad adicional Máx. por Voluntad",
-        "willRequiredForMaxBonusSusceptibility": "Voluntad requerida para la Susceptibilidad adicional Máx."
+        "willForMaxBonusSusceptibility": "Voluntad para Bonificación MÁX. de Susceptibilidad"
       },
       "baseDmgMultiplier": "Multiplicador de DAÑ base",
       "baseStagger": "Tambaleo base",
@@ -218,7 +218,7 @@
       },
       {
         "voId": "chr_0032_lizhiyan_chrup_skill_01",
-        "title": "Activación de la Matriz de habilidades",
+        "title": "Activación de Nodo de talento",
         "text": "Mejora hasta alcanzar la perfección absoluta y podrás salir airoso con serenidad, sea cual sea la situación."
       },
       {
@@ -608,7 +608,7 @@
       "name": "Corazón de ferrio gélido"
     },
     "potential3": {
-      "description": "Talento <@ba.key>Perfeccionamiento de armas</> mejorado:La \n<#ba.corrupt>Corrosión</> aplicada por Arcane dura <@ba.vup>{duration_add:0}</> s más, y la Reducción máxima de resistencia aumenta en <@ba.vup>{corrupt_rate:0%}</> de la original.",
+      "description": "Talento <@ba.key>Perfeccionamiento de armas</> mejorado:\nLa <#ba.corrupt>Corrosión</> aplicada por Arcane dura <@ba.vup>{duration_add:0}</> s más, y la Reducción máxima de resistencia aumenta en <@ba.vup>{corrupt_rate:0%}</> de la original.",
       "name": "Portador de piedra"
     },
     "potential4": {

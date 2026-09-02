@@ -1866,7 +1866,7 @@
                         0.08
                     ]
                 },
-                "willRequiredForMaxBonusSusceptibility": {
+                "willForMaxBonusSusceptibility": {
                     "dataType": "float",
                     "data": [
                         560.0,

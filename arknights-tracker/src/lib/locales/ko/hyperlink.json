@@ -23,6 +23,14 @@
     "name": "물리 이상 - 띄우기",
     "desc": "적에게 <#ba.noguard>방어 불능</> 피해를 줍니다. <#ba.noguard>방어 불능</> 상태의 적이라면, <#ba.noguard>방어 불능</> 1스택을 쌓고, <@ba.phy>물리 피해</>를 주며 <@ba.poise>불균형치</>를 쌓습니다."
   },
+  "ba.arrowenergy": {
+    "name": "계시",
+    "desc": "티프로스가 적에게 부여된 <@ba.naturalinflict>자연 부착</>을 소모하거나 적이 <#ba.naturalburst>자연 폭발</> 피해를 받으면 계시를 쌓을 수 있습니다. 연계 스킬을 사용하면 계시를 <#ba.arrownum>사냥 화살</>로 전환할 수 있습니다."
+  },
+  "ba.arrownum": {
+    "name": "사냥 화살",
+    "desc": "티프로스는 <@ba.key>공중에 뜸</> 상태에서 사냥용 화살을 소모해 사격을 강화할 수 있습니다. 강화된 사격은 더 높은 피해를 주고 <#ba.naturalburst>자연 폭발</>을 추가로 발동합니다."
+  },
   "ba.burning": {
     "name": "아츠 이상 - 연소",
     "desc": "<@ba.burning>연소</> 상태에서 적은 지속적으로 <@ba.fire>열기 피해</>를 받습니다.\n<@ba.burning>연소</> = 기타 <#ba.spellinflict>아츠 부착</>(<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.fireinflict>열기 부착</>"

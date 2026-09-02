@@ -383,6 +383,30 @@ export const weapons = {
       "keyword"
     ]
   },
+  "umbraOfFrigidEventide": {
+    "id": "umbraOfFrigidEventide",
+    "gameId": "wpn_funnel_0019",
+    "name": "Umbra of Frigid Eventide",
+    "rarity": 6,
+    "weapon": "artsUnit",
+    "skills": [
+      "attr_agi",
+      "attr_atk",
+      "burst"
+    ]
+  },
+  "sufferingsEnd": {
+    "id": "sufferingsEnd",
+    "gameId": "wpn_funnel_0020",
+    "name": "Suffering's End",
+    "rarity": 6,
+    "weapon": "artsUnit",
+    "skills": [
+      "attr_agi",
+      "attr_naturaldam",
+      "burst"
+    ]
+  },
   "pathfindersBeacon": {
     "id": "pathfindersBeacon",
     "gameId": "wpn_lance_0003",

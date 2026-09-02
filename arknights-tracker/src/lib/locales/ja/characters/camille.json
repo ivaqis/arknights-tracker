@@ -43,7 +43,7 @@
       "dmgMultiplier": "ダメージ倍率",
       "stagger": "ブレイク値",
       "firefangVesperwingsDurationS": "燃える血の翼持続時間（秒）",
-      "weaknessEffect": "弱体化効果",
+      "weakness": "弱体化効果",
       "heatSusceptibility": "灼熱脆弱効果",
       "explosionDmgMultiplier": "爆発ダメージ倍率"
     },
@@ -358,7 +358,7 @@
       {
         "voId": "chr_0033_camille_interact_mine_valub_01",
         "title": "鉱物採集1",
-        "text": "音色が心地よい……"
+        "text": "音色は心地よい……"
       },
       {
         "voId": "chr_0033_camille_interact_mine_valub_echo2_01",

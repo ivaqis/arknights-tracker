@@ -341,5 +341,16 @@ export const characters = {
     birthDate: "27-07",
     apiId: "",
     gameId: "chr_0035_liino"
+  },
+  typhoeus: {
+    id: "typhoeus",
+    name: "Typhoeus",
+    rarity: 6,
+    element: "nature",
+    class: "striker",
+    weapon: "artsUnit",
+    birthDate: "13-01",
+    apiId: "",
+    gameId: "chr_0034_typhoea"
   }
 };

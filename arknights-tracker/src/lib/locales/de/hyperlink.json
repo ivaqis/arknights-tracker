@@ -23,6 +23,14 @@
     "name": "Physischer Zustand: Anheben",
     "desc": "Belegt einen Gegner mit <#ba.noguard>Anfälligkeit</>. Wenn der Gegner bereits mit dem Status <#ba.noguard>Anfällig</> belegt ist, erhält er 1 weitere Kumulierung <#ba.noguard>Anfälligkeit</>, erleidet <@ba.phy>Physischen SDN</> und wird mit dem Status <@ba.poise>Taumeln</> belegt."
   },
+  "ba.arrowenergy": {
+    "name": "Zeichen",
+    "desc": "Typhoeus erhält Zeichen, wenn sie die <@ba.naturalinflict>Natur</>-Kumulierungen ihrer Gegner verbraucht oder wenn sie eine <#ba.naturalburst>Naturexplosion</> an Gegnern auslöst. Ihre Kombofertigkeit kann diese Zeichen in <#ba.arrownum>Jagdpfeile</> verwandeln."
+  },
+  "ba.arrownum": {
+    "name": "Jagdpfeil",
+    "desc": "Befindet Typhoeus sich in der <@ba.key>Schwebe</>, kann sie Jagdpfeile verbrauchen, um ihre Schüsse zu verstärken, höheren SDN zu verursachen und <#ba.naturalburst>Naturexplosion</> auszulösen."
+  },
   "ba.burning": {
     "name": "Technikreaktion: Verbrannt",
     "desc": "Ein mit <@ba.burning>Verbrannt</> belegter Gegner erleidet kontinuierlichen <@ba.fire>Hitze-SDN</>.\n<@ba.burning>Verbrannt</> = <#ba.spellinflict>Nicht-Hitze-Kumulierung</> (<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.fireinflict>Hitze</>"
@@ -260,8 +268,8 @@
     "desc": "Empfängliche Ziele erleiden vorübergehend mehr SDN desjenigen Elements, für das sie empfänglich sind. Die Zahl gibt das Ausmaß der Erhöhung an. Effekte desselben Typs können kumuliert werden."
   },
   "ba.weak": {
-    "name": "Schwächen",
-    "desc": "Geschwächte Ziele verursachen vorübergehend weniger SDN. Die Zahl gibt das Ausmaß der Verringerung an. Effekte desselben Typs können nichtlinear kumuliert werden."
+    "name": "Schwäche",
+    "desc": "Ein Ziel mit Schwäche verursacht vorübergehend weniger SDN. Die Zahl gibt das Ausmaß der Verringerung an. Effekte desselben Typs können nichtlinear kumuliert werden."
   },
   "fac.hub": {
     "name": "Protokoll-Automationskern",

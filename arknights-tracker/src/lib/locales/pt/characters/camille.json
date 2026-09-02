@@ -41,9 +41,9 @@
       "name": "Exorcismo Flamejante",
       "description": "Camille invoca <@ba.key>Vesperferas Presas de Fogo</> que voam na direção do inimigo para causar <@ba.fire>DNO Térmico</> e aplicar <#ba.fireinflict>Inflição Térmica</> nos inimigos em uma pequena área de efeito. As <@ba.key>Vesperferas Presas de Fogo</> então <@ba.key>pairam</> temporariamente ao redor do alvo e aplicam <#ba.weak>Fraqueza</> e <#ba.firevul>Suscetibilidade Térmica</> ao alvo em questão durante a pairagem. Quando o inimigo é derrotado, as <@ba.key>Vesperferas Presas de Fogo</> voam para outro inimigo próximo, causam <@ba.fire>DNO Térmico</> e aplicam <#ba.fireinflict>Inflição Térmica</>, <#ba.weak>Fraqueza</> e <#ba.firevul>Suscetibilidade Térmica</> ao novo alvo.\nAtingir um inimigo com <@ba.key>Vesperferas Presas de Fogo</> <@ba.key>pairando</> sobre ele usando o combo de habilidades de Camille aciona uma explosão após um breve atraso. Essa explosão causa <@ba.fire>DNO Térmico</> adicional.",
       "dmgMultiplier": "Multiplicador DNO",
-      "stagger": "Desorientar",
+      "stagger": "Desorientação",
       "firefangVesperwingsDurationS": "Duração das Vesperferas Presas de Fogo (s)",
-      "weaknessEffect": "Efeito de Fraqueza",
+      "weakness": "Fraqueza",
       "heatSusceptibility": "Suscetibilidade Térmica",
       "explosionDmgMultiplier": "Multiplicador DNO Explosão"
     },
@@ -51,7 +51,7 @@
       "name": "Espinho no Coração",
       "description": "ACIONADOR DO COMBO: quando <#ba.fireinflict>Inflição Térmica</> de um inimigo é <#ba.consume>consumida</> ou <#ba.absorb>absorvida</>.\nRealiza um avanço de retorno que causa <@ba.fire>DNO Térmico</> e recupera algum PH.",
       "dmgMultiplier": "Multiplicador DNO",
-      "stagger": "Desorientar",
+      "stagger": "Desorientação",
       "spRecovery": "Recuperação de PH",
       "hunterPursuitDmgMultiplier": "Multiplicador DNO Perseguição do Caçador",
       "hunterPursuitStagger": "Desorientação Perseguição do Caçador",
@@ -62,7 +62,7 @@
       "name": "Derrame Sanguíneo",
       "description": "Camille voa até o céu, dispara uma saraivada de lanças e continua com um ataque de varredura. Isso causa <@ba.fire>DNO Térmico</> e aplica <#ba.fireinflict>Inflição Térmica</> aos alvos atingidos e, ao mesmo tempo, recupera PH. \nApós a conjuração da habilidade suprema, a habilidade de batalha de Camille é transformada temporariamente em <@ba.key>Perseguição do Caçador</>.\n<@ba.key>Perseguição do Caçador</> é tratado como um combo de habilidades e não gera custos de PH. É um ataque de investida que causa <@ba.fire>DNO Térmico</> e recupera PH.",
       "dmgMultiplier": "Multiplicador DNO",
-      "stagger": "Desorientar",
+      "stagger": "Desorientação",
       "spRecovery": "Recuperação de PH",
       "hunterPursuitStateDurationS": "Duração do Estado de Perseguição do Caçador (s)"
     },
@@ -162,7 +162,7 @@
       },
       {
         "voId": "chr_0033_camille_chrup_skill_01",
-        "title": "Ativação da Matriz de Capacidade",
+        "title": "Ativação do Nó de Talentos",
         "text": "As impurezas foram removidas. O sangue está mais puro agora."
       },
       {

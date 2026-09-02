@@ -80,9 +80,9 @@
       "levels": []
     },
     "files": {
-      "main": "<@profile.key>NOMBRE CLAVE: Endministrator \nGÉNERO: ■■ \nAUTENTICACIÓN: ■■ \nFecha de nacimiento: ■■ \nRAZA: ■■ \n\nNo recuerdas nada. \nTus recuerdos yacen en fragmentos, como sueños pulverizados en polvo, que desaparecen al menor pensamiento. \nA veces te desasosiega, a veces te incomoda, pero te concede un momento de calma para respirar y pensar. \nSin embargo, la mayoría de las veces no hay pausa para la duda. Simplemente confías en quienes están frente a ti y sigues adelante. \nQuizá hayas guardado tus recuerdos del pasado, aunque sea por un rato... \n...y así, no recuerdas nada. </>",
-      "humanResources": "<@profile.key>Has vivido toda la historia de Talos-II...</>",
-      "file1": "<@profile.key>Pero... ¿qué harás con su futuro?</>"
+      "main": "NOMBRE CLAVE: Endministrator \nGÉNERO: ■■ \nAUTENTICACIÓN: ■■ \nFecha de nacimiento: ■■ \nRAZA: ■■ \n\nNo recuerdas nada. \nTus recuerdos yacen en fragmentos, como sueños pulverizados en polvo, que desaparecen al menor pensamiento. \nA veces te desasosiega, a veces te incomoda, pero te concede un momento de calma para respirar y pensar. \nSin embargo, la mayoría de las veces no hay pausa para la duda. Simplemente confías en quienes están frente a ti y sigues adelante. \nQuizá hayas guardado tus recuerdos del pasado, aunque sea por un rato... \n...y así, no recuerdas nada.",
+      "humanResources": "Has vivido toda la historia de Talos-II...",
+      "file1": "Pero... ¿qué harás con su futuro?"
     },
     "tags": {
       "expert1": {
@@ -127,7 +127,7 @@
       },
       {
         "voId": "chr_0003_endminf_chrup_skill_01",
-        "title": "Activación de la matriz de habilidades",
+        "title": "Activación de Nodo de talento",
         "text": "Reconozco esta sensación..."
       },
       {

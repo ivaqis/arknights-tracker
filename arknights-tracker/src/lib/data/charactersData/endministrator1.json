@@ -2108,9 +2108,7 @@
             "usp": 15
         },
         "potential4": {
-            "MaxHp": 0.1,
-            "EtherDamageTakenScalar": -0.1,
-            "Agi": 25
+            "MaxHp": 0.1
         },
         "potential5": {
             "cd_minus": 2

@@ -150,7 +150,7 @@
     "setBonus": ""
   },
   "item_equip_t2_parts_tundra01_edc_02": {
-    "name": "矿场传动轮\n",
+    "name": "矿场传动轮",
     "description": "本装备由终末地工业自研，使用集成工业系统制造，能够提高使用者的作战能力。",
     "decoDesc": "多用于矿场作业的防护装备。\n《四号谷地安全防护标准》要求劳动保护装备至少需要软性保护及硬性保护两层防护结构。",
     "setBonus": ""
@@ -276,7 +276,7 @@
     "setBonus": "3件套组效果：装备者智识<@ba.vup>+{wisd_up}</>。\n当装备者生命值高于{hp_ratio:0%}时，造成的<@ba.key>法术伤害</><@ba.vup>+{spell_dmg_up:0%}</>。"
   },
   "item_equip_t2_suit_wisd01_hand_01": {
-    "name": "蚀电屏蔽手套\n",
+    "name": "蚀电屏蔽手套",
     "description": "本装备由终末地工业自研，使用集成工业系统制造，能够提高使用者的作战能力。",
     "decoDesc": "特殊环境作业时必备的防护装备。\n为了避免被异常爆发的电流击伤，在侵蚀灾害现场抢修电路的工程师们必须穿上特制防护服。",
     "setBonus": "3件套组效果：装备者智识<@ba.vup>+{wisd_up}</>。\n当装备者生命值高于{hp_ratio:0%}时，造成的<@ba.key>法术伤害</><@ba.vup>+{spell_dmg_up:0%}</>。"
@@ -563,10 +563,22 @@
     "decoDesc": "终末地为干员训练而设计的作战装备组，因为过于物美价廉而广受市场欢迎。\n“能不能多卖给我几件，我拿去盖房子。”",
     "setBonus": "3件套组效果：装备者造成的所有类型伤害<@ba.vup>+{dmg_up:0%}</>，受到的所有类型伤害<@ba.vup>-{1-dmg_taken_down:0%}</>，终结技充能效率<@ba.vup>+{ultimate_gain_up:0%}</>。"
   },
+  "item_equip_t4_parts_wuling00_body_04": {
+    "name": "集成实训突袭护甲",
+    "description": "本装备由终末地工业自研，使用集成工业系统制造，能够提高使用者的作战能力。",
+    "decoDesc": "终末地为干员训练而设计的作战装备组，因为过于物美价廉而广受市场欢迎。\n更坚固，更沉重，也更锐利。",
+    "setBonus": "3件套组效果：装备者造成的所有类型伤害<@ba.vup>+{dmg_up:0%}</>，受到的所有类型伤害<@ba.vup>-{1-dmg_taken_down:0%}</>，终结技充能效率<@ba.vup>+{ultimate_gain_up:0%}</>。"
+  },
+  "item_equip_t4_parts_wuling00_body_05": {
+    "name": "集成实训医疗护甲",
+    "description": "本装备由终末地工业自研，使用集成工业系统制造，能够提高使用者的作战能力。",
+    "decoDesc": "终末地为干员训练而设计的作战装备组，因为过于物美价廉而广受市场欢迎。\n在基础集成实训装备款式上额外增加了医护模块接入口，能有效监测使用者体征。",
+    "setBonus": "3件套组效果：装备者造成的所有类型伤害<@ba.vup>+{dmg_up:0%}</>，受到的所有类型伤害<@ba.vup>-{1-dmg_taken_down:0%}</>，终结技充能效率<@ba.vup>+{ultimate_gain_up:0%}</>。"
+  },
   "item_equip_t4_parts_wuling00_edc_01": {
     "name": "集成实训排障刀",
     "description": "本装备由终末地工业自研，使用集成工业系统制造，能够提高使用者的作战能力。",
-    "decoDesc": "终末地为干员训练而设计的作战装备组，因为过于物美价廉而广受市场欢迎。\n功能颇多的刀具，在能够有效破坏天使等敌人的防护结构的同时，亦可作为工业排障工具使用。",
+    "decoDesc": "终末地为干员训练而设计的作战装备组，因为过于物美价廉而广受市场欢迎。\n功能颇多的刀具，既能有效破坏天使等敌人的防护结构，亦可作为工业排障工具使用。",
     "setBonus": "3件套组效果：装备者造成的所有类型伤害<@ba.vup>+{dmg_up:0%}</>，受到的所有类型伤害<@ba.vup>-{1-dmg_taken_down:0%}</>，终结技充能效率<@ba.vup>+{ultimate_gain_up:0%}</>。"
   },
   "item_equip_t4_parts_wuling00_edc_02": {
@@ -581,6 +593,18 @@
     "decoDesc": "终末地为干员训练而设计的作战装备组，因为过于物美价廉而广受市场欢迎。\n“我会期待一切尚未到来的作战任务，就像人类期待第二天的光明。”",
     "setBonus": "3件套组效果：装备者造成的所有类型伤害<@ba.vup>+{dmg_up:0%}</>，受到的所有类型伤害<@ba.vup>-{1-dmg_taken_down:0%}</>，终结技充能效率<@ba.vup>+{ultimate_gain_up:0%}</>。"
   },
+  "item_equip_t4_parts_wuling00_edc_04": {
+    "name": "集成实训突袭刺刃",
+    "description": "本装备由终末地工业自研，使用集成工业系统制造，能够提高使用者的作战能力。",
+    "decoDesc": "终末地为干员训练而设计的作战装备组，因为过于物美价廉而广受市场欢迎。\n该款刺刃额外调整了柄及刃的重量，有效减轻了使用者的腕部压力。",
+    "setBonus": "3件套组效果：装备者造成的所有类型伤害<@ba.vup>+{dmg_up:0%}</>，受到的所有类型伤害<@ba.vup>-{1-dmg_taken_down:0%}</>，终结技充能效率<@ba.vup>+{ultimate_gain_up:0%}</>。"
+  },
+  "item_equip_t4_parts_wuling00_edc_05": {
+    "name": "集成实训供能栓",
+    "description": "本装备由终末地工业自研，使用集成工业系统制造，能够提高使用者的作战能力。",
+    "decoDesc": "终末地为干员训练而设计的作战装备组，因为过于物美价廉而广受市场欢迎。\n比起在各地集成工业产线上呼啸狂奔的电池前辈们，这一款供能栓明显更小巧，也更坚固。",
+    "setBonus": "3件套组效果：装备者造成的所有类型伤害<@ba.vup>+{dmg_up:0%}</>，受到的所有类型伤害<@ba.vup>-{1-dmg_taken_down:0%}</>，终结技充能效率<@ba.vup>+{ultimate_gain_up:0%}</>。"
+  },
   "item_equip_t4_parts_wuling00_hand_01": {
     "name": "集成实训手套",
     "description": "本装备由终末地工业自研，使用集成工业系统制造，能够提高使用者的作战能力。",
@@ -590,13 +614,25 @@
   "item_equip_t4_parts_wuling00_hand_02": {
     "name": "集成实训护手",
     "description": "本装备由终末地工业自研，使用集成工业系统制造，能够提高使用者的作战能力。",
-    "decoDesc": "终末地为干员训练而设计的作战装备组，因为过于物美价廉而广受市场欢迎。\n“完美的手感，我感觉你们已经可以去抢占劳动保障品的市场销售额度了。”",
+    "decoDesc": "终末地为干员训练而设计的作战装备组，因为过于物美价廉而广受市场欢迎。\n“完美的手感，我感觉你们已经可以去抢占劳动防护用品的市场销售份额了。”",
     "setBonus": "3件套组效果：装备者造成的所有类型伤害<@ba.vup>+{dmg_up:0%}</>，受到的所有类型伤害<@ba.vup>-{1-dmg_taken_down:0%}</>，终结技充能效率<@ba.vup>+{ultimate_gain_up:0%}</>。"
   },
   "item_equip_t4_parts_wuling00_hand_03": {
     "name": "集成实训缠带",
     "description": "本装备由终末地工业自研，使用集成工业系统制造，能够提高使用者的作战能力。",
-    "decoDesc": "终末地为干员训练而设计的作战装备组，因为过于物美价廉而广受市场欢迎。\n特殊的手部防护装备，为即便在战场上亦需操作复杂设备的干员而设计。",
+    "decoDesc": "终末地为干员训练而设计的作战装备组，因为过于物美价廉而广受市场欢迎。\n特殊的手部防护装备，为即便身处战场亦需操作复杂设备的干员而设计。",
+    "setBonus": "3件套组效果：装备者造成的所有类型伤害<@ba.vup>+{dmg_up:0%}</>，受到的所有类型伤害<@ba.vup>-{1-dmg_taken_down:0%}</>，终结技充能效率<@ba.vup>+{ultimate_gain_up:0%}</>。"
+  },
+  "item_equip_t4_parts_wuling00_hand_04": {
+    "name": "集成实训突袭护手",
+    "description": "本装备由终末地工业自研，使用集成工业系统制造，能够提高使用者的作战能力。",
+    "decoDesc": "终末地为干员训练而设计的作战装备组，因为过于物美价廉而广受市场欢迎。\n线条更流畅，额外增加了万用型铳械固定扣，保证使用者在战场上不会出现遗失武器的情况。",
+    "setBonus": "3件套组效果：装备者造成的所有类型伤害<@ba.vup>+{dmg_up:0%}</>，受到的所有类型伤害<@ba.vup>-{1-dmg_taken_down:0%}</>，终结技充能效率<@ba.vup>+{ultimate_gain_up:0%}</>。"
+  },
+  "item_equip_t4_parts_wuling00_hand_05": {
+    "name": "集成实训医疗护手",
+    "description": "本装备由终末地工业自研，使用集成工业系统制造，能够提高使用者的作战能力。",
+    "decoDesc": "终末地为干员训练而设计的作战装备组，因为过于物美价廉而广受市场欢迎。\n“你用手腕打了我一下就说治疗完了……嗯？你这护手上怎么还有注射器啊……”",
     "setBonus": "3件套组效果：装备者造成的所有类型伤害<@ba.vup>+{dmg_up:0%}</>，受到的所有类型伤害<@ba.vup>-{1-dmg_taken_down:0%}</>，终结技充能效率<@ba.vup>+{ultimate_gain_up:0%}</>。"
   },
   "item_equip_t4_parts_wuling01_body_01": {
@@ -606,7 +642,7 @@
     "setBonus": ""
   },
   "item_equip_t4_parts_wuling01_body_02": {
-    "name": "纾难护甲\n",
+    "name": "纾难护甲",
     "description": "本装备由宏山选剑局设计，使用集成工业系统制造，能够提高使用者的作战能力。",
     "decoDesc": "象征着艰辛前路的装备。“事未竟，路犹长。”",
     "setBonus": ""
@@ -650,31 +686,31 @@
   "item_equip_t4_parts_wuling02_body_01": {
     "name": "涉渊重甲",
     "description": "本装备由宏山选剑局设计，使用集成工业系统制造，能够提高使用者的作战能力。",
-    "decoDesc": "选剑局为了需要频繁往复危险区域的作战人员所设计的特殊装备组。\n“吾执玉壤，以涉大渊。”",
+    "decoDesc": "选剑局为频繁往返危险区域的作战人员所设计的特殊装备组。\n“吾执玉壤，以涉大渊。”",
     "setBonus": ""
   },
   "item_equip_t4_parts_wuling02_body_02": {
     "name": "涉渊轻甲",
     "description": "本装备由宏山选剑局设计，使用集成工业系统制造，能够提高使用者的作战能力。",
-    "decoDesc": "选剑局为了需要频繁往复危险区域的作战人员所设计的特殊装备组。\n“吾观冬景，以明生死。”",
+    "decoDesc": "选剑局为频繁往返危险区域的作战人员所设计的特殊装备组。\n“吾观冬景，以明生死。”",
     "setBonus": ""
   },
   "item_equip_t4_parts_wuling02_edc_01": {
     "name": "涉渊护甲板",
     "description": "本装备由宏山选剑局设计，使用集成工业系统制造，能够提高使用者的作战能力。",
-    "decoDesc": "选剑局为了需要频繁往复危险区域的作战人员所设计的特殊装备组。\n“吾琢金石，以为墓碣。”",
+    "decoDesc": "选剑局为频繁往返危险区域的作战人员所设计的特殊装备组。\n“吾琢金石，以为墓碣。”",
     "setBonus": ""
   },
   "item_equip_t4_parts_wuling02_hand_01": {
     "name": "涉渊护手",
     "description": "本装备由宏山选剑局设计，使用集成工业系统制造，能够提高使用者的作战能力。",
-    "decoDesc": "选剑局为了需要频繁往复危险区域的作战人员所设计的特殊装备组。\n“吾鸣蛰雷，以壮肝胆。”",
+    "decoDesc": "选剑局为频繁往返危险区域的作战人员所设计的特殊装备组。\n“吾鸣蛰雷，以壮肝胆。”",
     "setBonus": ""
   },
   "item_equip_t4_parts_wuling02_hand_02": {
     "name": "涉渊手套",
     "description": "本装备由宏山选剑局设计，使用集成工业系统制造，能够提高使用者的作战能力。",
-    "decoDesc": "选剑局为了需要频繁往复危险区域的作战人员所设计的特殊装备组。\n“吾展旗旌，以备裹骸。”",
+    "decoDesc": "选剑局为频繁往返危险区域的作战人员所设计的特殊装备组。\n“吾展旗旌，以备裹骸。”",
     "setBonus": ""
   },
   "item_equip_t4_suit_atb01_body_01": {
@@ -834,7 +870,7 @@
     "setBonus": "3件套组效果：装备者攻击力<@ba.vup>+{atk_up:0%}</>。\n当装备者施放连携技时，获得一层<@ba.key>碾骨重压</>，下一次的战技伤害<@ba.vup>+{dmg_up:0%}</>，<@ba.key>碾骨重压</>最多可叠加{max_stack:0}层。"
   },
   "item_equip_t4_suit_attri01_body_02": {
-    "name": "碾骨重护甲·壹型\n",
+    "name": "碾骨重护甲·壹型",
     "description": "本装备由终末地工业参考荒野手工艺品设计，使用集成工业系统制造，能够提高使用者的作战能力。",
     "decoDesc": "设计灵感来自于碾骨氏族的装备。\n厚重护甲不单单具有防护能力，在荒地行人眼中，它也代表着一种冷酷残忍的行事风格。",
     "setBonus": "3件套组效果：装备者攻击力<@ba.vup>+{atk_up:0%}</>。\n当装备者施放连携技时，获得一层<@ba.key>碾骨重压</>，下一次的战技伤害<@ba.vup>+{dmg_up:0%}</>，<@ba.key>碾骨重压</>最多可叠加{max_stack:0}层。"
@@ -917,6 +953,18 @@
     "decoDesc": "选剑局为侵蚀潮周边作业所设计的套组装备。\n它是一段有关侵蚀潮的记忆：无情大潮始终拒绝生命。",
     "setBonus": "3件套组效果：装备者所有技能伤害<@ba.vup>+{skill_dmg_up:0%}</>。\n装备者使敌人达到<@ba.key>{stack_cond}</>层及以上<#ba.spellinflict>法术附着</>后，造成的<@ba.key>法术伤害</><@ba.vup>+{spell_dmg_up:0%}</>，持续{duration}秒，该效果无法叠加。"
   },
+  "item_equip_t4_suit_burst01_body_02": {
+    "name": "落潮轻甲·壹型",
+    "description": "本装备由宏山选剑局设计，使用集成工业系统制造，能够提高使用者的作战能力。",
+    "decoDesc": "选剑局为侵蚀潮周边作业所设计的套组装备。\n它是一段有关侵蚀潮的记忆：无情大潮始终拒绝生命。",
+    "setBonus": "3件套组效果：装备者所有技能伤害<@ba.vup>+{skill_dmg_up:0%}</>。\n装备者使敌人达到<@ba.key>{stack_cond}</>层及以上<#ba.spellinflict>法术附着</>后，造成的<@ba.key>法术伤害</><@ba.vup>+{spell_dmg_up:0%}</>，持续{duration}秒，该效果无法叠加。"
+  },
+  "item_equip_t4_suit_burst01_body_03": {
+    "name": "涌浪重装甲",
+    "description": "本装备由宏山选剑局设计，使用集成工业系统制造，能够提高使用者的作战能力。",
+    "decoDesc": "选剑局为侵蚀潮周边作业所设计的套组装备。\n它是一丝有关侵蚀潮的挑衅：我们的前路怎能就此截断？",
+    "setBonus": "3件套组效果：装备者所有技能伤害<@ba.vup>+{skill_dmg_up:0%}</>。\n装备者使敌人达到<@ba.key>{stack_cond}</>层及以上<#ba.spellinflict>法术附着</>后，造成的<@ba.key>法术伤害</><@ba.vup>+{spell_dmg_up:0%}</>，持续{duration}秒，该效果无法叠加。"
+  },
   "item_equip_t4_suit_burst01_edc_01": {
     "name": "悬河供氧栓",
     "description": "本装备由宏山选剑局设计，使用集成工业系统制造，能够提高使用者的作战能力。",
@@ -929,10 +977,22 @@
     "decoDesc": "选剑局为侵蚀潮周边作业所设计的套组装备。\n它是一缕有关侵蚀潮的恐惧：高悬灾厄何时坠入眼眸？",
     "setBonus": "3件套组效果：装备者所有技能伤害<@ba.vup>+{skill_dmg_up:0%}</>。\n装备者使敌人达到<@ba.key>{stack_cond}</>层及以上<#ba.spellinflict>法术附着</>后，造成的<@ba.key>法术伤害</><@ba.vup>+{spell_dmg_up:0%}</>，持续{duration}秒，该效果无法叠加。"
   },
+  "item_equip_t4_suit_burst01_edc_03": {
+    "name": "浊流切割炬·壹型",
+    "description": "本装备由宏山选剑局设计，使用集成工业系统制造，能够提高使用者的作战能力。",
+    "decoDesc": "选剑局为侵蚀潮周边作业所设计的套组装备。\n它是一缕有关侵蚀潮的恐惧：高悬灾厄何时坠入眼眸？",
+    "setBonus": "3件套组效果：装备者所有技能伤害<@ba.vup>+{skill_dmg_up:0%}</>。\n装备者使敌人达到<@ba.key>{stack_cond}</>层及以上<#ba.spellinflict>法术附着</>后，造成的<@ba.key>法术伤害</><@ba.vup>+{spell_dmg_up:0%}</>，持续{duration}秒，该效果无法叠加。"
+  },
   "item_equip_t4_suit_burst01_hand_01": {
     "name": "潮涌手甲",
     "description": "本装备由宏山选剑局设计，使用集成工业系统制造，能够提高使用者的作战能力。",
     "decoDesc": "选剑局为侵蚀潮周边作业所设计的套组装备。\n它是一声有关侵蚀潮的疑问：古老堤堰是否溃自其内？\n",
+    "setBonus": "3件套组效果：装备者所有技能伤害<@ba.vup>+{skill_dmg_up:0%}</>。\n装备者使敌人达到<@ba.key>{stack_cond}</>层及以上<#ba.spellinflict>法术附着</>后，造成的<@ba.key>法术伤害</><@ba.vup>+{spell_dmg_up:0%}</>，持续{duration}秒，该效果无法叠加。"
+  },
+  "item_equip_t4_suit_burst01_hand_02": {
+    "name": "沉水手套",
+    "description": "本装备由宏山选剑局设计，使用集成工业系统制造，能够提高使用者的作战能力。",
+    "decoDesc": "选剑局为侵蚀潮周边作业所设计的套组装备。\n它是一声有关侵蚀潮的叩问：寂静的毁灭将流向何方……",
     "setBonus": "3件套组效果：装备者所有技能伤害<@ba.vup>+{skill_dmg_up:0%}</>。\n装备者使敌人达到<@ba.key>{stack_cond}</>层及以上<#ba.spellinflict>法术附着</>后，造成的<@ba.key>法术伤害</><@ba.vup>+{spell_dmg_up:0%}</>，持续{duration}秒，该效果无法叠加。"
   },
   "item_equip_t4_suit_combo_cd01_body_01": {
@@ -984,7 +1044,7 @@
     "setBonus": "3件套组效果：装备者连携技冷却缩减<@ba.vup>+{1-comboskill_cooldown:0%}</>。\n当装备者施放连携技时，所有技能伤害<@ba.vup>+{spell_up:0%}</>，持续{duration}秒。该效果最多叠加{max_stack}层，每层单独计算持续时间。"
   },
   "item_equip_t4_suit_criti01_body_01": {
-    "name": "M.I.警用护甲\n",
+    "name": "M.I.警用护甲",
     "description": "本装备由梅什科工业设计，使用集成工业系统制造，能够提高使用者的作战能力。",
     "decoDesc": "M.I.警用系列装备。\n它最初服役于人类与天使对抗的一线战场。",
     "setBonus": "3件套组效果：装备者暴击率<@ba.vup>+{crit_up:0%}</>。\n当装备者触发暴击后，{duration}秒内<@ba.vup>+{atk_up:0%}</>攻击力，该效果最多叠加{max_stack:0}层。层数叠满后，额外<@ba.vup>+{crit_up2:0%}</>暴击率，该效果无法叠加。"
@@ -1008,7 +1068,7 @@
     "setBonus": "3件套组效果：装备者暴击率<@ba.vup>+{crit_up:0%}</>。\n当装备者触发暴击后，{duration}秒内<@ba.vup>+{atk_up:0%}</>攻击力，该效果最多叠加{max_stack:0}层。层数叠满后，额外<@ba.vup>+{crit_up2:0%}</>暴击率，该效果无法叠加。"
   },
   "item_equip_t4_suit_criti01_body_06": {
-    "name": "M.I.警用护甲·壹型\n",
+    "name": "M.I.警用护甲·壹型",
     "description": "本装备由梅什科工业设计，使用集成工业系统制造，能够提高使用者的作战能力。\n",
     "decoDesc": "M.I.警用系列装备。\n它最初服役于人类与天使对抗的一线战场。",
     "setBonus": "3件套组效果：装备者暴击率<@ba.vup>+{crit_up:0%}</>。\n当装备者触发暴击后，{duration}秒内<@ba.vup>+{atk_up:0%}</>攻击力，该效果最多叠加{max_stack:0}层。层数叠满后，额外<@ba.vup>+{crit_up2:0%}</>暴击率，该效果无法叠加。"
@@ -1038,7 +1098,7 @@
     "setBonus": "3件套组效果：装备者暴击率<@ba.vup>+{crit_up:0%}</>。\n当装备者触发暴击后，{duration}秒内<@ba.vup>+{atk_up:0%}</>攻击力，该效果最多叠加{max_stack:0}层。层数叠满后，额外<@ba.vup>+{crit_up2:0%}</>暴击率，该效果无法叠加。"
   },
   "item_equip_t4_suit_criti01_edc_05": {
-    "name": "M.I.警用刺刃·壹型\n",
+    "name": "M.I.警用刺刃·壹型",
     "description": "本装备由梅什科工业设计，使用集成工业系统制造，能够提高使用者的作战能力。",
     "decoDesc": "M.I.警用系列装备。\n握柄中填装了源石火药。抵住目标，扣下扳机，短刃会瞬间撕开敌人的装甲和血肉，就像切蛋糕一般顺滑。",
     "setBonus": "3件套组效果：装备者暴击率<@ba.vup>+{crit_up:0%}</>。\n当装备者触发暴击后，{duration}秒内<@ba.vup>+{atk_up:0%}</>攻击力，该效果最多叠加{max_stack:0}层。层数叠满后，额外<@ba.vup>+{crit_up2:0%}</>暴击率，该效果无法叠加。"
@@ -1202,7 +1262,7 @@
   "item_equip_t4_suit_heal01_body_03": {
     "name": "生物辅助胸甲·壹型",
     "description": "本装备由罗德岛设计，使用集成工业系统制造，能够提高使用者的作战能力。",
-    "decoDesc": "医疗者们爱用的装备。穿着生物辅助胸甲的作战人员通常会被人戏称为“移动药品库”，他们通常会在护甲各处塞满急救药物。",
+    "decoDesc": "医疗者们爱用的装备。\n穿着生物辅助胸甲的作战人员通常会被人戏称为“移动药品库”，他们通常会在护甲各处塞满急救药物。",
     "setBonus": "3件套组效果：装备者治疗效率<@ba.vup>+{heal_up:0%}</>。\n当装备者治疗我方目标后，使该目标在{duration}秒内受到的所有类型伤害<@ba.vup>-{1-dmg_taken_down:0%}</>；如果该目标受到的治疗量溢出，则受到的所有类型伤害<@ba.vup>-{1-dmg_taken_down2:0%}</>。上述效果无法叠加。"
   },
   "item_equip_t4_suit_heal01_edc_01": {
@@ -1323,43 +1383,43 @@
     "name": "轻超域护板",
     "description": "本装备由轻超域技术实验室设计，使用集成工业系统制造，能够提高使用者的作战能力。",
     "decoDesc": "轻巧的实验型防护装备。\n“宏山人会以羽毛比喻重量之轻，本实验室的反重力系列产品距此标准仅有一步之遥。”",
-    "setBonus": "3件套组效果：装备者攻击力<@ba.vup>+{atk_up:0%}</>。\n装备者施加<#ba.noguard>破防</>后，<@ba.pd>物理伤害</><@ba.vup>+{phy_dmg_up:0%}</>，持续{duration}秒，最多可叠加{max_stack:0}层。若使目标达到{stack_cond:0}层<#ba.noguard>破防</>，物理伤害额外<@ba.vup>+{phy_dmg_up2:0%}</>，持续{duration2}秒，该效果无法叠加。"
+    "setBonus": "3件套组效果：装备者攻击力<@ba.vup>+{atk_up:0%}</>。\n装备者施加<#ba.noguard>破防</>后，<@ba.pd>物理伤害</><@ba.vup>+{phy_dmg_up:0%}</>，持续{duration}秒，最多可叠加{max_stack:0}层。若使目标达到{stack_cond:0}层<#ba.noguard>破防</>，<@ba.pd>物理伤害</>额外<@ba.vup>+{phy_dmg_up2:0%}</>，持续{duration2}秒，该效果无法叠加。"
   },
   "item_equip_t4_suit_poise01_edc_01": {
     "name": "轻超域分析环",
     "description": "本装备由轻超域技术实验室设计，使用集成工业系统制造，能够提高使用者的作战能力。",
     "decoDesc": "轻巧的实验型防护装备。\n“本实验室正在潜心研究侵蚀扩散痕迹的数据化分析方法，欢迎报名参与产品试用。”",
-    "setBonus": "3件套组效果：装备者攻击力<@ba.vup>+{atk_up:0%}</>。\n装备者施加<#ba.noguard>破防</>后，<@ba.pd>物理伤害</><@ba.vup>+{phy_dmg_up:0%}</>，持续{duration}秒，最多可叠加{max_stack:0}层。若使目标达到{stack_cond:0}层<#ba.noguard>破防</>，物理伤害额外<@ba.vup>+{phy_dmg_up2:0%}</>，持续{duration2}秒，该效果无法叠加。"
+    "setBonus": "3件套组效果：装备者攻击力<@ba.vup>+{atk_up:0%}</>。\n装备者施加<#ba.noguard>破防</>后，<@ba.pd>物理伤害</><@ba.vup>+{phy_dmg_up:0%}</>，持续{duration}秒，最多可叠加{max_stack:0}层。若使目标达到{stack_cond:0}层<#ba.noguard>破防</>，<@ba.pd>物理伤害</>额外<@ba.vup>+{phy_dmg_up2:0%}</>，持续{duration2}秒，该效果无法叠加。"
   },
   "item_equip_t4_suit_poise01_edc_02": {
     "name": "轻超域稳定盘",
     "description": "本装备由轻超域技术实验室设计，使用集成工业系统制造，能够提高使用者的作战能力。",
     "decoDesc": "轻巧的实验型防护装备。\n“为了避免参数混乱导致您像气球一样飘向高空，请随身携带配套稳定盘，谢谢。”",
-    "setBonus": "3件套组效果：装备者攻击力<@ba.vup>+{atk_up:0%}</>。\n装备者施加<#ba.noguard>破防</>后，<@ba.pd>物理伤害</><@ba.vup>+{phy_dmg_up:0%}</>，持续{duration}秒，最多可叠加{max_stack:0}层。若使目标达到{stack_cond:0}层<#ba.noguard>破防</>，物理伤害额外<@ba.vup>+{phy_dmg_up2:0%}</>，持续{duration2}秒，该效果无法叠加。"
+    "setBonus": "3件套组效果：装备者攻击力<@ba.vup>+{atk_up:0%}</>。\n装备者施加<#ba.noguard>破防</>后，<@ba.pd>物理伤害</><@ba.vup>+{phy_dmg_up:0%}</>，持续{duration}秒，最多可叠加{max_stack:0}层。若使目标达到{stack_cond:0}层<#ba.noguard>破防</>，<@ba.pd>物理伤害</>额外<@ba.vup>+{phy_dmg_up2:0%}</>，持续{duration2}秒，该效果无法叠加。"
   },
   "item_equip_t4_suit_poise01_edc_03": {
     "name": "轻超域稳定盘·壹型",
     "description": "本装备由轻超域技术实验室设计，使用集成工业系统制造，能够提高使用者的作战能力。",
     "decoDesc": "轻巧的实验型防护装备。\n“为了避免参数混乱导致您像气球一样飘向高空，请随身携带配套稳定盘，谢谢。”",
-    "setBonus": "3件套组效果：装备者攻击力<@ba.vup>+{atk_up:0%}</>。\n装备者施加<#ba.noguard>破防</>后，<@ba.pd>物理伤害</><@ba.vup>+{phy_dmg_up:0%}</>，持续{duration}秒，最多可叠加{max_stack:0}层。若使目标达到{stack_cond:0}层<#ba.noguard>破防</>，物理伤害额外<@ba.vup>+{phy_dmg_up2:0%}</>，持续{duration2}秒，该效果无法叠加。"
+    "setBonus": "3件套组效果：装备者攻击力<@ba.vup>+{atk_up:0%}</>。\n装备者施加<#ba.noguard>破防</>后，<@ba.pd>物理伤害</><@ba.vup>+{phy_dmg_up:0%}</>，持续{duration}秒，最多可叠加{max_stack:0}层。若使目标达到{stack_cond:0}层<#ba.noguard>破防</>，<@ba.pd>物理伤害</>额外<@ba.vup>+{phy_dmg_up2:0%}</>，持续{duration2}秒，该效果无法叠加。"
   },
   "item_equip_t4_suit_poise01_edc_04": {
     "name": "轻超域腕表",
     "description": "本装备由轻超域技术实验室设计，使用集成工业系统制造，能够提高使用者的作战能力。",
     "decoDesc": "轻巧的实验型防护装备。\n“部分消费者质疑本实验室产品会导致使用者的血液在一定程度上发生异变，这完全是无稽之谈。”",
-    "setBonus": "3件套组效果：装备者攻击力<@ba.vup>+{atk_up:0%}</>。\n装备者施加<#ba.noguard>破防</>后，<@ba.pd>物理伤害</><@ba.vup>+{phy_dmg_up:0%}</>，持续{duration}秒，最多可叠加{max_stack:0}层。若使目标达到{stack_cond:0}层<#ba.noguard>破防</>，物理伤害额外<@ba.vup>+{phy_dmg_up2:0%}</>，持续{duration2}秒，该效果无法叠加。"
+    "setBonus": "3件套组效果：装备者攻击力<@ba.vup>+{atk_up:0%}</>。\n装备者施加<#ba.noguard>破防</>后，<@ba.pd>物理伤害</><@ba.vup>+{phy_dmg_up:0%}</>，持续{duration}秒，最多可叠加{max_stack:0}层。若使目标达到{stack_cond:0}层<#ba.noguard>破防</>，<@ba.pd>物理伤害</>额外<@ba.vup>+{phy_dmg_up2:0%}</>，持续{duration2}秒，该效果无法叠加。"
   },
   "item_equip_t4_suit_poise01_hand_01": {
     "name": "轻超域护手",
     "description": "本装备由轻超域技术实验室设计，使用集成工业系统制造，能够提高使用者的作战能力。",
     "decoDesc": "轻巧的实验型防护装备。\n“请在佩戴本实验室产品时额外装配内衬装备，若您出现幻听、幻视等症状，请卸下本实验室产品并及时进食。”",
-    "setBonus": "3件套组效果：装备者攻击力<@ba.vup>+{atk_up:0%}</>。\n装备者施加<#ba.noguard>破防</>后，<@ba.pd>物理伤害</><@ba.vup>+{phy_dmg_up:0%}</>，持续{duration}秒，最多可叠加{max_stack:0}层。若使目标达到{stack_cond:0}层<#ba.noguard>破防</>，物理伤害额外<@ba.vup>+{phy_dmg_up2:0%}</>，持续{duration2}秒，该效果无法叠加。"
+    "setBonus": "3件套组效果：装备者攻击力<@ba.vup>+{atk_up:0%}</>。\n装备者施加<#ba.noguard>破防</>后，<@ba.pd>物理伤害</><@ba.vup>+{phy_dmg_up:0%}</>，持续{duration}秒，最多可叠加{max_stack:0}层。若使目标达到{stack_cond:0}层<#ba.noguard>破防</>，<@ba.pd>物理伤害</>额外<@ba.vup>+{phy_dmg_up2:0%}</>，持续{duration2}秒，该效果无法叠加。"
   },
   "item_equip_t4_suit_poise01_hand_02": {
-    "name": "轻超域轻护手\n",
+    "name": "轻超域轻护手",
     "description": "本装备由轻超域技术实验室设计，使用集成工业系统制造，能够提高使用者的作战能力。",
     "decoDesc": "轻巧的实验型防护装备。\n“请在佩戴本实验室产品时额外装配内衬装备，若您出现幻听、幻视等症状，请卸下本实验室产品并及时进食。”",
-    "setBonus": "3件套组效果：装备者攻击力<@ba.vup>+{atk_up:0%}</>。\n装备者施加<#ba.noguard>破防</>后，<@ba.pd>物理伤害</><@ba.vup>+{phy_dmg_up:0%}</>，持续{duration}秒，最多可叠加{max_stack:0}层。若使目标达到{stack_cond:0}层<#ba.noguard>破防</>，物理伤害额外<@ba.vup>+{phy_dmg_up2:0%}</>，持续{duration2}秒，该效果无法叠加。"
+    "setBonus": "3件套组效果：装备者攻击力<@ba.vup>+{atk_up:0%}</>。\n装备者施加<#ba.noguard>破防</>后，<@ba.pd>物理伤害</><@ba.vup>+{phy_dmg_up:0%}</>，持续{duration}秒，最多可叠加{max_stack:0}层。若使目标达到{stack_cond:0}层<#ba.noguard>破防</>，<@ba.pd>物理伤害</>额外<@ba.vup>+{phy_dmg_up2:0%}</>，持续{duration2}秒，该效果无法叠加。"
   },
   "item_equip_t4_suit_pulse_cryst01_body_01": {
     "name": "脉冲式干扰服",
@@ -1391,6 +1451,24 @@
     "decoDesc": "设计新颖的装备。\n很少有人能理解终末地工业为什么要提高脉冲系列装备的低温耐受能力。",
     "setBonus": "3件套组效果：装备者源石技艺强度<@ba.vup>+{phy_spell_up:0}</>。\n当装备者施加<#ba.conduct>导电</>后，<@ba.pulse>电磁伤害</><@ba.vup>+{pulse_dmg_up:0%}</>，持续{duration}秒，该效果无法叠加；当装备者施加<#ba.frozen>冻结</>后，<@ba.cryst>寒冷伤害</><@ba.vup>+{cryst_dmg_up:0%}</>，持续{duration2}秒，该效果无法叠加。"
   },
+  "item_equip_t4_suit_spellburst_body_01": {
+    "name": "险关装甲",
+    "description": "本装备由终末地工业自研，使用集成工业系统制造，能够提高使用者的作战能力。",
+    "decoDesc": "终末地工业参考应龙制式套装所设计出的装备。\n“咱们应该不太会直面侵蚀……”\n“明白，加一整套综合防护钢板！”",
+    "setBonus": "3件套组效果：装备者法术伤害<@ba.vup>+{spell_dmg_up:0%}</>。\n当装备者造成<#ba.naturalburst>自然爆发</>、<#ba.crystburst>寒冷爆发</>时，源石技艺强度<@ba.vup>+{phy_spell_up:0}</>，持续{duration}秒。该效果最多叠加{max_stack}层，每层单独计算持续时间，每0.1秒最多触发一次。"
+  },
+  "item_equip_t4_suit_spellburst_edc_01": {
+    "name": "险关通信器",
+    "description": "本装备由终末地工业自研，使用集成工业系统制造，能够提高使用者的作战能力。",
+    "decoDesc": "终末地工业参考应龙制式套装所设计出的装备。\n“是不是要减少充能时间……”\n“明白，协议通信器加上息壤电池，续航完全拉满！”",
+    "setBonus": "3件套组效果：装备者法术伤害<@ba.vup>+{spell_dmg_up:0%}</>。\n当装备者造成<#ba.naturalburst>自然爆发</>、<#ba.crystburst>寒冷爆发</>时，源石技艺强度<@ba.vup>+{phy_spell_up:0}</>，持续{duration}秒。该效果最多叠加{max_stack}层，每层单独计算持续时间，每0.1秒最多触发一次。"
+  },
+  "item_equip_t4_suit_spellburst_hand_01": {
+    "name": "险关手甲",
+    "description": "本装备由终末地工业自研，使用集成工业系统制造，能够提高使用者的作战能力。",
+    "decoDesc": "终末地工业参考应龙制式套装所设计出的装备。\n“应急方案是不是要考虑到……”\n“明白，护指部分加厚，防御攻击双管齐下！”",
+    "setBonus": "3件套组效果：装备者法术伤害<@ba.vup>+{spell_dmg_up:0%}</>。\n当装备者造成<#ba.naturalburst>自然爆发</>、<#ba.crystburst>寒冷爆发</>时，源石技艺强度<@ba.vup>+{phy_spell_up:0}</>，持续{duration}秒。该效果最多叠加{max_stack}层，每层单独计算持续时间，每0.1秒最多触发一次。"
+  },
   "item_equip_t4_suit_usp02_body_01": {
     "name": "长息装甲",
     "description": "本装备由宏山选剑局设计，使用集成工业系统制造，能够提高使用者的作战能力。",
@@ -1400,13 +1478,13 @@
   "item_equip_t4_suit_usp02_body_03": {
     "name": "长息轻护甲",
     "description": "本装备由宏山选剑局设计，使用集成工业系统制造，能够提高使用者的作战能力。",
-    "decoDesc": "某位“疯狂”天师的遗世之作。\n“要我说，太重了，你看它简陋的就像路边的野兽骨头，轻者愈轻，明白吗！要减轻！”",
+    "decoDesc": "某位“疯狂”天师的遗世之作。\n“要我说，太重了，你看它简陋得就像路边的野兽骨头，轻者愈轻，明白吗！要减轻！”",
     "setBonus": "3件套组效果：装备者生命值<@ba.vup>+{hp_up}</>。\n装备者施加<#ba.enhance>增幅</>、<#ba.guard>庇护</>、<#ba.vulnerable>脆弱</>、<#ba.weak>虚弱</>后，使其他队友造成的伤害<@ba.vup>+{dmg_up:0%}</>，持续{duration}秒。该效果无法叠加。"
   },
   "item_equip_t4_suit_usp02_body_04": {
     "name": "长息轻护甲·壹型",
     "description": "本装备由宏山选剑局设计，使用集成工业系统制造，能够提高使用者的作战能力。",
-    "decoDesc": "某位“疯狂”天师的遗世之作。\n“要我说，太重了，你看它简陋的就像路边的野兽骨头，轻者愈轻，明白吗！要减轻！”",
+    "decoDesc": "某位“疯狂”天师的遗世之作。\n“要我说，太重了，你看它简陋得就像路边的野兽骨头，轻者愈轻，明白吗！要减轻！”",
     "setBonus": "3件套组效果：装备者生命值<@ba.vup>+{hp_up}</>。\n装备者施加<#ba.enhance>增幅</>、<#ba.guard>庇护</>、<#ba.vulnerable>脆弱</>、<#ba.weak>虚弱</>后，使其他队友造成的伤害<@ba.vup>+{dmg_up:0%}</>，持续{duration}秒。该效果无法叠加。"
   },
   "item_equip_t4_suit_usp02_edc_01": {
@@ -1431,6 +1509,18 @@
     "name": "长息加固板",
     "description": "本装备由宏山选剑局设计，使用集成工业系统制造，能够提高使用者的作战能力。",
     "decoDesc": "某位“疯狂”天师的遗世之作。\n将这款遗世之作推进至实装阶段的天师们明显也意识到了它过于简陋，因此补充设计了额外的防护装甲。",
+    "setBonus": "3件套组效果：装备者生命值<@ba.vup>+{hp_up}</>。\n装备者施加<#ba.enhance>增幅</>、<#ba.guard>庇护</>、<#ba.vulnerable>脆弱</>、<#ba.weak>虚弱</>后，使其他队友造成的伤害<@ba.vup>+{dmg_up:0%}</>，持续{duration}秒。该效果无法叠加。"
+  },
+  "item_equip_t4_suit_usp02_edc_05": {
+    "name": "长息加固板·壹型",
+    "description": "本装备由宏山选剑局设计，使用集成工业系统制造，能够提高使用者的作战能力。",
+    "decoDesc": "某位“疯狂”天师的遗世之作。\n将这款遗世之作推进至实装阶段的天师们明显也意识到了它过于简陋，因此补充设计了额外的防护装甲。",
+    "setBonus": "3件套组效果：装备者生命值<@ba.vup>+{hp_up}</>。\n装备者施加<#ba.enhance>增幅</>、<#ba.guard>庇护</>、<#ba.vulnerable>脆弱</>、<#ba.weak>虚弱</>后，使其他队友造成的伤害<@ba.vup>+{dmg_up:0%}</>，持续{duration}秒。该效果无法叠加。"
+  },
+  "item_equip_t4_suit_usp02_edc_06": {
+    "name": "长息重护板",
+    "description": "本装备由宏山选剑局设计，使用集成工业系统制造，能够提高使用者的作战能力。",
+    "decoDesc": "某位“疯狂”天师的遗世之作。\n只要疯狂增加装甲板的厚度，长息系列的防御性漏洞就不再是影响综合设计的致命问题。",
     "setBonus": "3件套组效果：装备者生命值<@ba.vup>+{hp_up}</>。\n装备者施加<#ba.enhance>增幅</>、<#ba.guard>庇护</>、<#ba.vulnerable>脆弱</>、<#ba.weak>虚弱</>后，使其他队友造成的伤害<@ba.vup>+{dmg_up:0%}</>，持续{duration}秒。该效果无法叠加。"
   },
   "item_equip_t4_suit_usp02_hand_01": {

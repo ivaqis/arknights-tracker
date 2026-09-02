@@ -43,7 +43,7 @@
       "dmgMultiplier": "Moltiplicatore danni",
       "stagger": "Vacillamento",
       "firefangVesperwingsDurationS": "Durata vesprivoli zannafuoco (s)",
-      "weaknessEffect": "Effetto Debolezza",
+      "weakness": "Debolezza",
       "heatSusceptibility": "Suscettibilità al fuoco",
       "explosionDmgMultiplier": "Moltiplicatore danni Esplosione"
     },
@@ -56,7 +56,7 @@
       "hunterPursuitDmgMultiplier": "Moltiplicatore danni Caccia spietata",
       "hunterPursuitStagger": "Vacillamento Caccia spietata",
       "hunterPursuitSpRecovery": "Recupero PA Caccia spietata",
-      "ultimateEnergyGain": "Incremento energia suprema"
+      "ultimateEnergyGain": "Incremento Energia suprema"
     },
     "ultimate": {
       "name": "Diluvio di sangue",
@@ -162,7 +162,7 @@
       },
       {
         "voId": "chr_0033_camille_chrup_skill_01",
-        "title": "Attivazione matrice delle abilità",
+        "title": "Attivazione nodo talento",
         "text": "Le impurità sono state eliminate. Ora il sangue è più puro."
       },
       {
