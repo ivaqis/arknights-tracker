@@ -1380,7 +1380,7 @@ export const rawEvents = [
     startTimeAsia: "2026-09-02 11:00:00",
     endTime: "2026-10-14 17:00:00",
     endTimeAsia: "2026-10-15 04:00:00",
-    icon: "ev15-v1.5.webp",
+    icon: "ev15-v1.5-v2.webp",
     url: "https://x.com/AKEndfield/status/2093926690494054845?s=20",
     color: "#4585E9",
     layer: 16,

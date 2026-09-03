@@ -2684,6 +2684,7 @@
   "audio_player": {
     "playback_error": "Không thể tải âm thanh",
     "not_found": "Không tìm thấy âm thanh (404)",
+    "download_error": "Lỗi tải xuống",
     "open_raw": "Open raw"
   }
 }

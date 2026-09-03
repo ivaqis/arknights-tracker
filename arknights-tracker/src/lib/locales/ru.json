@@ -2812,6 +2812,7 @@
   "audio_player": {
     "playback_error": "Не удалось загрузить аудио",
     "not_found": "Аудио не найдено (404)",
+    "download_error": "Ошибка скачивания",
     "open_raw": "Open raw"
   }
 }

@@ -2684,6 +2684,7 @@
   "audio_player": {
     "playback_error": "音訊載入失敗",
     "not_found": "音訊未找到 (404)",
+    "download_error": "下載錯誤",
     "open_raw": "Open raw"
   }
 }

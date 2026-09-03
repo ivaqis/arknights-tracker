@@ -2641,6 +2641,7 @@
   "audio_player": {
     "playback_error": "音声の読み込みに失敗しました",
     "not_found": "音声が見つかりません (404)",
+    "download_error": "ダウンロードエラー",
     "open_raw": "Open raw"
   }
 }

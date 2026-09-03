@@ -347,6 +347,7 @@
             isAudioLoading = false;
 
             let is404 = false;
+            let isDownloadError = false;
             try {
                 const res = await fetch(audioUrl, { method: "HEAD" });
                 if (res.status === 404) {
@@ -357,16 +358,30 @@
                     const res = await fetch(audioUrl, { method: "GET" });
                     if (res.status === 404) {
                         is404 = true;
+                    } else if (res.ok) {
+                        const text = await res.text();
+                        if (text.includes("0x00000000")) {
+                            isDownloadError = true;
+                        }
                     }
-                } catch (_) {}
+                } catch (_) {
+                    if (typeof navigator === "undefined" || navigator.onLine) {
+                        is404 = true;
+                    }
+                }
             }
 
             try {
+                let errorMsg = $t("audio_player.playback_error");
+                if (isDownloadError) {
+                    errorMsg = $t("audio_player.download_error");
+                } else if (is404) {
+                    errorMsg = $t("audio_player.not_found");
+                }
+
                 addNotification(
                     "error",
-                    is404
-                        ? $t("audio_player.not_found")
-                        : $t("audio_player.playback_error"),
+                    errorMsg,
                     {
                         action: {
                             text: $t("audio_player.open_raw"),
@@ -388,17 +403,63 @@
         audio.play().catch(handleAudioError);
     }
 
-    function downloadAudio(voId) {
+    async function downloadAudio(voId) {
         if (!voId || !char.gameId) return;
         const cleanBase = AUDIO_BASE.replace(/\/+$/, "");
         const audioUrl = `${cleanBase}/${selectedAudioLang}/${char.gameId}/${voId}.mp3`;
-        const link = document.createElement("a");
-        link.href = audioUrl;
-        link.download = `${voId}_${selectedAudioLang}.mp3`;
-        link.target = "_blank";
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
+        try {
+            const res = await fetch(audioUrl);
+            const isOk = res.ok;
+            const blob = await res.blob();
+            if (blob.size <= 128) {
+                const text = await blob.text();
+                if (text.includes("0x00000000")) {
+                    addNotification(
+                        "error",
+                        $t("audio_player.download_error"),
+                        {
+                            action: {
+                                text: $t("audio_player.open_raw"),
+                                url: audioUrl,
+                            },
+                        },
+                    );
+                    return;
+                }
+            }
+            if (!isOk) {
+                const is404 = res.status === 404;
+                addNotification(
+                    "error",
+                    is404
+                        ? $t("audio_player.not_found")
+                        : $t("audio_player.playback_error"),
+                    {
+                        action: {
+                            text: $t("audio_player.open_raw"),
+                            url: audioUrl,
+                        },
+                    },
+                );
+                return;
+            }
+            const blobUrl = URL.createObjectURL(blob);
+            const link = document.createElement("a");
+            link.href = blobUrl;
+            link.download = `${voId}_${selectedAudioLang}.mp3`;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            setTimeout(() => URL.revokeObjectURL(blobUrl), 1000);
+        } catch (e) {
+            const link = document.createElement("a");
+            link.href = audioUrl;
+            link.download = `${voId}_${selectedAudioLang}.mp3`;
+            link.target = "_blank";
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
     }
 
     onDestroy(() => {
@@ -2185,18 +2246,14 @@
                             <div
                                 class="flex flex-col gap-4 animate-fadeIn w-full relative"
                             >
-                                <div
-                                    class="flex items-center justify-end gap-3 flex-wrap"
+                                <h2
+                                    class="text-3xl dark:text-[#FDFDFD] mb-1 font-bold text-[#21272C] drop-shadow-sm font-sdk text-left 2xl:text-right"
                                 >
-                                    <h2
-                                        class="text-3xl dark:text-[#FDFDFD] font-bold text-[#21272C] font-sdk"
-                                    >
-                                        {$t("menu.audio")}
-                                    </h2>
-                                </div>
+                                    {$t("menu.audio")}
+                                </h2>
 
                                 <div
-                                    class="sticky top-16 md:top-4 z-20 self-end flex items-center gap-1.5 bg-white/90 dark:bg-[#2b2b2b]/95 backdrop-blur-md p-1.5 rounded-2xl border border-gray-200/80 dark:border-[#444] shadow-lg transition-all"
+                                    class="sticky top-16 md:top-4 z-20 self-start 2xl:self-end flex items-center gap-1.5 flex-wrap bg-white/90 dark:bg-[#2b2b2b]/95 backdrop-blur-md p-1.5 rounded-2xl border border-gray-200/80 dark:border-[#444] shadow-lg transition-all max-w-full"
                                 >
                                     {#each audioLanguages as langOption}
                                         <button

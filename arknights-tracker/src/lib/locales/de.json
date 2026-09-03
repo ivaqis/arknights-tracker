@@ -2640,6 +2640,7 @@
   "audio_player": {
     "playback_error": "Audio konnte nicht geladen werden",
     "not_found": "Audio nicht gefunden (404)",
+    "download_error": "Download-Fehler",
     "open_raw": "Open raw"
   }
 }

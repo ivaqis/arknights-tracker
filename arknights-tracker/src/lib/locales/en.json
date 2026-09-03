@@ -2809,6 +2809,7 @@
   "audio_player": {
     "playback_error": "Failed to load audio",
     "not_found": "Audio Not Found (404)",
+    "download_error": "Download error",
     "open_raw": "Open raw"
   }
 }

@@ -2641,6 +2641,7 @@
   "audio_player": {
     "playback_error": "Impossibile caricare l'audio",
     "not_found": "Audio non trovato (404)",
+    "download_error": "Errore di download",
     "open_raw": "Open raw"
   }
 }
