@@ -19,7 +19,7 @@
     import { disableDarkening, preferredSkillMode, splitEquipmentView } from "$lib/stores/settings";
     import { weaponEssences } from "$lib/stores/weaponEssences";
     import { logEvent } from "firebase/analytics";
-    import { onMount } from "svelte";
+    import { onDestroy, onMount } from "svelte";
     import { get } from "svelte/store";
     import { fade } from "svelte/transition";
 

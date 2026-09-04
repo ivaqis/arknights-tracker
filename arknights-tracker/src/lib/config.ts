@@ -19,7 +19,9 @@ function getApiBase(): string {
             ? import.meta.env.VITE_API_BASE
             : undefined;
 
-    return runtimeBase
+    const rawBase = runtimeBase
         ?? viteApiBase
-        ?? "http://localhost:3001";
+        ?? (import.meta.env.PROD ? "" : "http://localhost:3001");
+
+    return rawBase.replace(/\/api\/v2\/?$/, "").replace(/\/$/, "");
 }

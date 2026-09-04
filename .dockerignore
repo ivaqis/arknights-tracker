@@ -1,2 +1,8 @@
-*.db
-*.db-journal
+node_modules
+.git
+.github
+.env
+.env.*
+*.log
+.vscode
+.idea

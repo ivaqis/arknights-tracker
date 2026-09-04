@@ -1,8 +1,6 @@
-// src/lib/stores/pulls.js
-
 import { writable, get } from 'svelte/store';
 import { browser } from '$app/environment';
-import { mergePulls, calculatePity, calculateBannerStats, validateAccountConsistency, findLCSMatches, canonicalizeName } from '$lib/utils/importUtils';
+import { mergePulls, mergePullsWithReport, isWeaponBanner, calculatePity, calculateBannerStats, validateAccountConsistency, findLCSMatches, canonicalizeName } from '$lib/utils/importUtils';
 import { accountStore } from './accounts';
 import { uploadLocalData, user } from "$lib/stores/cloudStore";
 
@@ -119,11 +117,10 @@ function createPullStore() {
         smartImport: async (newPulls, serverId = '3', commit = true, isRecoveryEnabled = false) => {
             if (!browser) return;
 
-            newPulls.forEach(p => {
-                p.name = canonicalizeName(p.name);
-            });
-
-            await new Promise(r => setTimeout(r, 100));
+            const cleanIncoming = (newPulls || []).map(p => ({
+                ...p,
+                name: canonicalizeName(p.name)
+            }));
 
             return new Promise((resolve, reject) => {
                 update(currentData => {
@@ -141,11 +138,11 @@ function createPullStore() {
                         });
 
                         if (allCurrentPulls.length > 0) {
-                            validateAccountConsistency(allCurrentPulls, newPulls, isRecoveryEnabled);
+                            validateAccountConsistency(allCurrentPulls, cleanIncoming, isRecoveryEnabled);
                         }
 
                         const incomingByBanner = {};
-                        newPulls.forEach(p => {
+                        cleanIncoming.forEach(p => {
                             const bid = p.bannerId || 'standard';
                             if (!incomingByBanner[bid]) incomingByBanner[bid] = [];
                             incomingByBanner[bid].push(p);
@@ -156,7 +153,7 @@ function createPullStore() {
                         Object.keys(incomingByBanner).forEach(bid => {
                             let targetKey = bid;
                             const isKnownKey = newData[bid] || bid === 'standard' || bid === 'special' || bid === 'new-player' || bid === 'joint';
-                            const isWeaponKey = bid.includes('weapon') || bid.includes('wepon') || bid.includes('constant');
+                            const isWeaponKey = isWeaponBanner(bid);
 
                             if (!isKnownKey && !isWeaponKey) {
                                 targetKey = 'standard';
@@ -169,7 +166,6 @@ function createPullStore() {
                             const oldList = newData[targetKey].pulls;
                             const incomeList = incomingByBanner[bid];
 
-                            let hasEnriched = isRecoveryEnabled;
                             if (isRecoveryEnabled) {
                                 const matches = findLCSMatches(oldList, incomeList);
                                 matches.forEach(m => {
@@ -185,41 +181,15 @@ function createPullStore() {
                                 });
                             }
 
-                            oldList.forEach(oldP => {
-                                const freshP = incomeList.find(p => p.id === oldP.id || (p.seqId > 0 && p.seqId === oldP.seqId && p.time.getTime() === oldP.time.getTime()));
-                                if (freshP) {
-                                    if (!oldP.rawPoolId && freshP.rawPoolId) { oldP.rawPoolId = freshP.rawPoolId; hasEnriched = true; }
-                                    if (!oldP.type && freshP.type) { oldP.type = freshP.type; hasEnriched = true; }
-                                    if (oldP.isNew === undefined && freshP.isNew !== undefined) { oldP.isNew = freshP.isNew; hasEnriched = true; }
-                                }
-                            });
+                            const { merged: mergedList, addedCount, hasEnriched } = mergePullsWithReport(oldList, incomeList);
 
-                            const oldCounts = {};
-                            oldList.forEach(p => {
-                                const timeVal = (p && p.time && typeof p.time.getTime === 'function') ? p.time.getTime() : (p && p.time ? new Date(p.time).getTime() : 0);
-                                const sig = (p.seqId > 0) ? `${timeVal}_${p.seqId}` : `${timeVal}_${String(p.name || '').toLowerCase()}`;
-                                oldCounts[sig] = (oldCounts[sig] || 0) + 1;
-                            });
-                            const reallyNew = [];
-                            const newCounts = {};
-                            incomeList.forEach(p => {
-                                const timeVal = (p && p.time && typeof p.time.getTime === 'function') ? p.time.getTime() : (p && p.time ? new Date(p.time).getTime() : 0);
-                                const sig = (p.seqId > 0) ? `${timeVal}_${p.seqId}` : `${timeVal}_${String(p.name || '').toLowerCase()}`;
-                                newCounts[sig] = (newCounts[sig] || 0) + 1;
-                                if (newCounts[sig] > (oldCounts[sig] || 0)) {
-                                    reallyNew.push(p);
-                                }
-                            });
-
-                            if (reallyNew.length > 0 || hasEnriched) {
-                                const mergedList = mergePulls(oldList, reallyNew);
-
+                            if (addedCount > 0 || hasEnriched || isRecoveryEnabled) {
                                 const pullsWithPity = calculatePity(mergedList, targetKey, serverId);
                                 newData[targetKey].pulls = pullsWithPity;
                                 newData[targetKey].stats = calculateBannerStats(pullsWithPity, targetKey, serverId);
 
-                                report.addedCount[targetKey] = (report.addedCount[targetKey] || 0) + reallyNew.length;
-                                report.totalAdded += reallyNew.length;
+                                report.addedCount[targetKey] = (report.addedCount[targetKey] || 0) + addedCount;
+                                report.totalAdded += addedCount;
                                 hasUpdates = true;
                             }
                         });

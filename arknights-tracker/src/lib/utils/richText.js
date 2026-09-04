@@ -85,16 +85,16 @@ const buffIconMap = {
 export function parseRichText(text) {
     if (!text) return "";
     const styles = {
-        "ba.natur": "text-[#ade131] font-bold", // Природный
-        "ba.fire": "text-[#f45511] font-bold", // Огненный
-        "ba.cryst": "text-[#08edfb] font-bold", // Кристаллический
-        "ba.pulse": "text-[#ffcc00] font-bold", // Электрический
-        "ba.phy": "text-[#7d582d] font-bold", // Физический
-        "ba.poise": "text-[#ffd399] font-bold", // Ошеломление
-        "ba.vup": "text-[#22BBFF] font-bold", // Повышение
-        "ba.key": "text-[#00a8ff] font-bold", // Ключевые термины
-        "ba.conduct": "text-[#ffcc00] font-bold", // Электризация
-        "ba.spelldmg": "text-[#E3BC55] font-bold", // Урон от искусств
+        "ba.natur": "text-[#ade131] font-bold",
+        "ba.fire": "text-[#f45511] font-bold",
+        "ba.cryst": "text-[#08edfb] font-bold",
+        "ba.pulse": "text-[#ffcc00] font-bold",
+        "ba.phy": "text-[#7d582d] font-bold",
+        "ba.poise": "text-[#ffd399] font-bold",
+        "ba.vup": "text-[#22BBFF] font-bold",
+        "ba.key": "text-[#00a8ff] font-bold",
+        "ba.conduct": "text-[#ffcc00] font-bold",
+        "ba.spelldmg": "text-[#E3BC55] font-bold",
         "ba.info": "text-gray-500 dark:text-[#A0A0A0] italic font-normal text-[13px]",
         "ba.heal": "text-[#ade131] font-bold",
         "ba.consume": "text-[#E3BC55] font-bold",

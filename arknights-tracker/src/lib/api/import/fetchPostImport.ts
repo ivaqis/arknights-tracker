@@ -3,12 +3,15 @@ import { parseStream } from "$lib/api/parseStream";
 import { config } from "$lib/config";
 
 export async function fetchPostImport(token: string, serverIds: string[], privateId: string | null): Promise<AsyncGenerator<PostImportGenericResponse, void, unknown>> {
-    const url = `${config.API_BASE}/api/v2/import?token=${token}&serverIds=${serverIds.join(",")}`;
+    const encodedToken = encodeURIComponent(token);
+    const encodedServerIds = encodeURIComponent(serverIds.join(","));
+    const url = `${config.API_BASE}/api/v2/import?token=${encodedToken}&serverIds=${encodedServerIds}`;
 
     const response = await fetch(url, {
         method: "POST",
         headers: {
-            "Content-Type": "application/json"
+            "Content-Type": "application/json",
+            "Accept": "text/event-stream"
         },
         body: JSON.stringify({ privateId: privateId })
     });

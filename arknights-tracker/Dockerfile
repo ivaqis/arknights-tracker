@@ -21,8 +21,9 @@ COPY --from=build /app/build ./build
 COPY --from=build /app/package*.json ./
 COPY entrypoint.sh /app/entrypoint.sh
 
-RUN npm ci --omit=dev
-RUN chmod +x /app/entrypoint.sh
+RUN npm ci --omit=dev && chmod +x /app/entrypoint.sh && chown -R node:node /app
+
+USER node
 
 EXPOSE 3000
 

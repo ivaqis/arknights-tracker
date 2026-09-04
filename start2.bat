@@ -21,6 +21,7 @@ if %errorlevel% neq 0 (
 echo [1/3] Installing/Checking modules...
 cd goyfield-backend
 call npm install --quiet
+call npm run prisma:v2:generate
 cd ../arknights-tracker
 call npm install --quiet
 cd ..

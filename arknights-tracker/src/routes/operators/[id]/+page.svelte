@@ -775,9 +775,17 @@
     $: pageTitle = operatorName
         ? `${operatorName} - ${$t("pages.operators")} - Goyfield`
         : `${$t("pages.operators")} - Goyfield`;
-    $: pageDescription = $t("seo.descriptions.operatorDetail", {
+    $: baseDesc = $t("seo.descriptions.operatorDetail", {
         name: operatorName || id,
     });
+    $: metaDetails = [
+        char?.rarity ? `${char.rarity}★` : "",
+        char?.element,
+        char?.class,
+        char?.weapon ? `(${char.weapon})` : ""
+    ].filter(Boolean).join(" ");
+    $: pageDescription = metaDetails ? `${metaDetails}. ${baseDesc}` : baseDesc;
+    $: imageUrl = `${$page.url.origin}${getImagePath(char.id || id, "operator-icon")}`;
 </script>
 
 <svelte:head>
@@ -785,6 +793,11 @@
     <meta name="description" content={pageDescription} />
     <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={pageDescription} />
+    <meta property="og:image" content={imageUrl} />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={pageDescription} />
+    <meta name="twitter:image" content={imageUrl} />
 </svelte:head>
 
 <svelte:window on:keydown={handleKeydown} on:keyup={handleKeyup} />

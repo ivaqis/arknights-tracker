@@ -500,35 +500,31 @@
             }
 
             if (p.rarity >= 5) {
-                if (bannerType === "standard" || bannerType === "new-player") {
-                    p.status = "normal";
-                } else if (!banner) {
-                    p.status = "won";
-                } else {
-                    const hasFeatured5 =
-                        banner.featured5 && banner.featured5.length > 0;
-
-                    if (p.rarity === 5 && !hasFeatured5) {
-                        p.status = "normal";
+                if (bannerType !== "standard" && bannerType !== "new-player") {
+                    if (!banner) {
+                        p.status = "won";
                     } else {
-                        const featured = isFeatured(p.name, banner, p.rarity);
+                        const hasFeatured5 =
+                            banner.featured5 && banner.featured5.length > 0;
 
-                        if (featured) {
-                            if (isHardPityTriggered && p.rarity === 6) {
-                                p.status = "guaranteed";
+                        if (p.rarity !== 5 || hasFeatured5) {
+                            const featured = isFeatured(p.name, banner, p.rarity);
+
+                            if (featured) {
+                                if (isHardPityTriggered && p.rarity === 6) {
+                                    p.status = "guaranteed";
+                                } else {
+                                    p.status = "won";
+                                }
+                                if (p.rarity === 6) {
+                                    rateUpCounters[bid] = 0;
+                                }
                             } else {
-                                p.status = "won";
+                                p.status = "lost";
                             }
-                            if (p.rarity === 6) {
-                                rateUpCounters[bid] = 0;
-                            }
-                        } else {
-                            p.status = "lost";
                         }
                     }
                 }
-            } else {
-                p.status = "normal";
             }
 
             return p;
@@ -1195,7 +1191,7 @@
                                             >
                                                 <span>{row.pity}</span>
 
-                                                {#if row.rarity >= 5 && row.status && row.status !== "normal" && !row.isFree}
+                                                {#if row.rarity >= 5 && row.status && !row.isFree}
                                                     {#if row.rarity === 6 || !isWeapon}
                                                         {#if row.status === "won"}
                                                             {#if isWeaponType || (!bannerType.includes("standard") && !bannerType.includes("new"))}

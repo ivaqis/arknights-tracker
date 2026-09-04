@@ -6,7 +6,7 @@ const runtimeBase =
 export const API_BASE =
     runtimeBase ??
     import.meta.env.VITE_API_BASE ??
-    (import.meta.env.PROD ? '/api' : 'http://localhost:3001/api');
+    (import.meta.env.PROD ? '/api/v2' : 'http://localhost:3001/api/v2');
 
 const runtimeAudioBase =
     typeof window !== 'undefined' && window.__CONFIG__ && window.__CONFIG__.AUDIO_BASE

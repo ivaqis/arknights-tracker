@@ -20,32 +20,26 @@ export async function* parseStream<T extends StreamResponse<any>>(response: Resp
 
             buffer += decoder.decode(value, { stream: true });
 
-            buffer = buffer.replaceAll("\r", "");
+            const lines = buffer.split("\n");
+            buffer = lines.pop() || "";
 
-            let separatorIndex = buffer.indexOf("\n\n");
-
-            while (separatorIndex !== -1) {
-                const rawEvent = buffer.slice(0, separatorIndex);
-                buffer = buffer.slice(separatorIndex + 2);
-
-                separatorIndex = buffer.indexOf("\n\n");
-
-                if (!rawEvent.trim()) {
+            for (const line of lines) {
+                const trimmed = line.trim();
+                if (!trimmed?.startsWith("data:")) {
                     continue;
                 }
 
-                const dataLines = rawEvent
-                    .split("\n")
-                    .filter((line) => line.startsWith("data:"))
-                    .map((line) => line.slice(5).replace(/^ /, ""));
-
-                if (dataLines.length !== 1) {
+                const jsonStr = trimmed.slice(5).trim();
+                if (!jsonStr) {
                     continue;
                 }
 
-                const data = JSON.parse(dataLines[0]) as T;
-
-                yield data;
+                try {
+                    const data = JSON.parse(jsonStr) as T;
+                    yield data;
+                } catch (e) {
+                    console.error("Stream parse error:", e);
+                }
             }
         }
     } finally {

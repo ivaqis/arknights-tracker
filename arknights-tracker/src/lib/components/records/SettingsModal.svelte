@@ -12,7 +12,7 @@
   import Button from "$lib/components/Button.svelte";
   import Checkbox from "$lib/components/Checkbox.svelte";
   import MultiSelect from "$lib/components/MultiSelect.svelte";
-  import { getWeaponCategory } from "$lib/utils/importUtils.js";
+  import { getWeaponCategory } from "$lib/utils/importUtils";
   import {
     recordsExcludedBannerTypes,
     recordsExcludedBanners,

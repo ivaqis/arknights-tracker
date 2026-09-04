@@ -1,21 +1,24 @@
 <script>
+    import { t } from "$lib/i18n";
     import { goto } from "$app/navigation";
-    import { API_BASE } from "$lib/api";
+    import { pullData } from "$lib/stores/pulls";
+    import { PullParser } from "$lib/classes/pulls/PullParser";
+    import { fetchPostImport } from "$lib/api/import/fetchPostImport";
+    import { fetchSyncPulls } from "$lib/api/syncPulls/fetchSyncPulls";
+    import { accountStore } from "$lib/stores/accounts";
+    import { onMount } from "svelte";
+    import { get } from "svelte/store";
+
     import Button from "$lib/components/Button.svelte";
     import Checkbox from "$lib/components/Checkbox.svelte";
-    import CodeBlock from "$lib/components/CodeBlock.svelte";
     import Icon from "$lib/components/Icon.svelte";
     import ConfirmationModal from "$lib/components/modals/ConfirmationModal.svelte";
     import Tooltip from "$lib/components/Tooltip.svelte";
-    import { characters } from "$lib/data/characters";
-    import { weapons } from "$lib/data/weapons";
-    import { t } from "$lib/i18n";
-    import { accountStore } from "$lib/stores/accounts";
-    import { pullData } from "$lib/stores/pulls";
-    import { canonicalizeName, getInternalBannerType, parseGachaLog } from "$lib/utils/importUtils";
-    import LZString from "lz-string";
-    import { onDestroy, onMount } from "svelte";
-    import { get } from "svelte/store";
+
+    import FileDropzone from "$lib/components/records/import/FileDropzone.svelte";
+    import SavedTokensList from "$lib/components/records/import/SavedTokensList.svelte";
+    import ImportPreviewReport from "$lib/components/records/import/ImportPreviewReport.svelte";
+    import ImportInstructions from "$lib/components/records/import/ImportInstructions.svelte";
 
     let platformTab = "pc-web";
     let urlInput = "";
@@ -23,49 +26,24 @@
     let isLoading = false;
     let previewReport = null;
     let pendingData = null;
+    let signedSyncToken = null;
     let errorMsg = "";
     let isGlobalStatsEnabled = true;
-    let isOverwriteEnabled = false;
     let isRecoveryEnabled = false;
     let activeTab = "new";
     let selectedServer = "3";
     let isSaveTokenEnabled = false;
     let tokenName = "";
     let savedTokens = [];
-    let isMaintenance = false;
-    let timerInterval;
-
-    //Maintanance
-    //const maintenanceStartTime = new Date("2026-03-11T17:00:00-05:00").getTime();
-
-    //function checkMaintenanceStatus() {
-    //    const now = Date.now();
-    //    if (now >= maintenanceStartTime) {
-    //        isMaintenance = true;
-    //    } else {
-    //        isMaintenance = false;
-    //    }
-    //}
-
-    const ALLOWED_DOMAINS = ["ef-webview.gryphline.com"];
     let isInputError = false;
-
-    const powerShellScript = `Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex "&{$((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/ivaqis/arknights-pull-url/refs/heads/main/endfield-url.ps1'))}"`;
-    const powerShellScript2 = `$f=[System.IO.File]::Open("$env:LOCALAPPDATA\\PlatformProcess\\Cache\\data_1",3,1,3); $t=(New-Object System.IO.StreamReader($f,[System.Text.Encoding]::ASCII)).ReadToEnd(); $f.Close(); $m=[regex]::Matches($t,"u8_token=([^&\\s\\x00]+)"); if($m.Count){ $m[$m.Count-1].Groups[1].Value | Set-Clipboard }`;
-    const powerShellScript3 = `Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex "&{$((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/ivaqis/arknights-pull-url/refs/heads/main/endfield-url2.ps1'))}"`;
-    const browserBookmarklet = `javascript:(async()=>{try{let e=null;for(let[t,n]of Object.entries(sessionStorage))if(t.startsWith("APP_ROLE_U8_TOKEN:")){e=n.toString().split(":")[0];break}if(!e)throw new Error("Token not found. Please log in and refresh the page.");await navigator.clipboard.writeText(e),alert("Success! Token copied to clipboard.")}catch(e){alert("Error: "+e.message)}})();`;
-    const toolsdevBookmarklet = `javascript:(async()=>{try{let e=localStorage.getItem("headhunt_user_data_v2");if(!e)throw new Error("Data not found.");await navigator.clipboard.writeText(e),alert("Success! Data copied to clipboard.")}catch(e){alert("Error: "+e.message)}})();`;
+    let selectedFileName = "";
+    let lastParsedPulls = null;
+    let toolsDevJsonInput = "";
+    let isDeleteModalOpen = false;
+    let tokenToDeleteIndex = null;
 
     onMount(() => {
         loadSavedTokens();
-        const storedServer = localStorage.getItem("ark_server_id");
-        if (storedServer === "2" || storedServer === "3") {
-            selectedServer = storedServer;
-        }
-    });
-
-    onDestroy(() => {
-        if (timerInterval) clearInterval(timerInterval);
     });
 
     function loadSavedTokens() {
@@ -74,6 +52,32 @@
             if (raw) savedTokens = JSON.parse(raw);
         } catch (e) {
             console.error(e);
+        }
+    }
+
+    function extractServerFromUrl(url) {
+        if (!url) return null;
+        try {
+            const parsed = new URL(url);
+            return parsed.searchParams.get("server");
+        } catch {
+            const match = url.match(/[?&]server=([^&#\s]+)/);
+            return match ? match[1] : null;
+        }
+    }
+
+    function updateServerInUrl(url, server) {
+        if (!url || !server) return url;
+        try {
+            const parsed = new URL(url);
+            parsed.searchParams.set("server", server);
+            return parsed.toString();
+        } catch {
+            if (url.includes("server=")) {
+                return url.replace(/([?&]server=)[^&#\s]*/, `$1${server}`);
+            }
+            const sep = url.includes("?") ? "&" : "?";
+            return `${url}${sep}server=${server}`;
         }
     }
 
@@ -91,9 +95,6 @@
         }
     }
 
-    let isDeleteModalOpen = false;
-    let tokenToDeleteIndex = null;
-
     function requestDeleteToken(index) {
         tokenToDeleteIndex = index;
         isDeleteModalOpen = true;
@@ -101,12 +102,10 @@
 
     function confirmDeleteToken() {
         if (tokenToDeleteIndex === null) return;
-
         const newList = [...savedTokens];
         newList.splice(tokenToDeleteIndex, 1);
         savedTokens = newList;
         localStorage.setItem("ark_saved_tokens", JSON.stringify(newList));
-
         isDeleteModalOpen = false;
         tokenToDeleteIndex = null;
     }
@@ -116,51 +115,6 @@
         tokenToDeleteIndex = null;
     }
 
-    function deleteToken(index) {
-        if (!confirm($t("import.delete_confirm") || "Delete this saved token?"))
-            return;
-        const newList = [...savedTokens];
-        newList.splice(index, 1);
-        savedTokens = newList;
-        localStorage.setItem("ark_saved_tokens", JSON.stringify(newList));
-    }
-
-    function extractServerFromUrl(url) {
-        if (!url) return null;
-        try {
-            const decoded = decodeURIComponent(url);
-            const match = decoded.match(/[?&](?:server|serverId|server_id)=([^&#\s]+)/i);
-            if (match && match[1]) {
-                const val = match[1].toLowerCase().trim();
-                if (val === '2' || val.includes('asia') || val === 'as') return '2';
-                if (val === '3' || val.includes('america') || val.includes('europe') || val.includes('global') || val === '1') return '3';
-                return val;
-            }
-        } catch (e) {
-            const match = url.match(/[?&](?:server|serverId|server_id)=([^&#\s]+)/i);
-            if (match && match[1]) return match[1].trim();
-        }
-        return null;
-    }
-
-    function updateServerInUrl(url, newServer) {
-        if (!url) return url;
-        if (url.includes("server=")) {
-            return url.replace(/([?&])server=[^&#\s]*/i, `$1server=${newServer}`);
-        }
-        if (url.includes("serverId=")) {
-            return url.replace(/([?&])serverId=[^&#\s]*/i, `$1server=${newServer}`);
-        }
-        if (url.includes("server_id=")) {
-            return url.replace(/([?&])server_id=[^&#\s]*/i, `$1server=${newServer}`);
-        }
-        if (url.startsWith("http")) {
-            const separator = url.includes("?") ? "&" : "?";
-            return `${url}${separator}server=${newServer}`;
-        }
-        return url;
-    }
-
     function handleServerChange(newServer) {
         selectedServer = newServer;
         if (urlInput) {
@@ -168,13 +122,7 @@
                 urlInput = updateServerInUrl(urlInput, newServer);
                 realImportUrl = updateServerInUrl(realImportUrl, newServer);
             } else {
-                const encodedToken = encodeURIComponent(
-                    decodeURIComponent(urlInput),
-                );
-                const baseUrl =
-                    "https://ef-webview.gryphline.com/page/gacha_weapon?pool_id=weaponbox_constant_2&u8_token=";
-                const tail = `&platform=Android&channel=6&subChannel=6&lang=ru-ru&server=${selectedServer}`;
-                realImportUrl = baseUrl + encodedToken + tail;
+                realImportUrl = PullParser.buildImportUrl(urlInput, selectedServer);
             }
         }
     }
@@ -184,10 +132,10 @@
         let srv = token.server || extractServerFromUrl(token.url);
         if (!srv && token.name) {
             const nameLower = token.name.toLowerCase();
-            if (nameLower.includes('asia') || nameLower.includes('азия')) {
-                srv = '2';
-            } else if (nameLower.includes('america') || nameLower.includes('америк') || nameLower.includes('europe') || nameLower.includes('европ')) {
-                srv = '3';
+            if (nameLower.includes("asia") || nameLower.includes("азия")) {
+                srv = "2";
+            } else if (nameLower.includes("america") || nameLower.includes("америк") || nameLower.includes("europe") || nameLower.includes("европ")) {
+                srv = "3";
             }
         }
         if (srv === "2" || srv === "3") {
@@ -202,6 +150,36 @@
         activeTab = "new";
         isSaveTokenEnabled = false;
         errorMsg = "";
+    }
+
+    function parseInputToken(raw) {
+        let clean = (raw || "").trim();
+        if (clean.includes("token")) {
+            try {
+                const jsonMatch = clean.match(/"token"\s*:\s*"([^"]+)"/);
+                if (jsonMatch && jsonMatch[1]) clean = jsonMatch[1];
+                else {
+                    if (clean.startsWith("'") || clean.startsWith('"')) clean = clean.slice(1, -1);
+                    const obj = JSON.parse(clean);
+                    if (obj.token) clean = obj.token;
+                }
+            } catch {
+                clean = clean.replace(/^{"token":"/, "").replace(/"}$/, "");
+            }
+        }
+        let token = clean;
+        let sId = selectedServer;
+        if (clean.startsWith("http")) {
+            try {
+                const parsed = new URL(clean);
+                const u8 = parsed.searchParams.get("u8_token");
+                if (u8) token = u8;
+                const s = parsed.searchParams.get("server");
+                if (s) sId = s;
+            } catch {}
+        }
+        token = decodeURIComponent(token).trim();
+        return { token, serverId: sId };
     }
 
     function handleInputProcessing(e) {
@@ -223,43 +201,56 @@
             realImportUrl = trimmed;
             return;
         }
-        let cleanToken = rawValue.trim();
-        if (cleanToken.includes("token")) {
-            try {
-                const jsonMatch = cleanToken.match(/"token"\s*:\s*"([^"]+)"/);
-                if (jsonMatch && jsonMatch[1]) cleanToken = jsonMatch[1];
-                else {
-                    if (
-                        cleanToken.startsWith("'") ||
-                        cleanToken.startsWith('"')
-                    )
-                        cleanToken = cleanToken.slice(1, -1);
-                    const obj = JSON.parse(cleanToken);
-                    if (obj.token) cleanToken = obj.token;
-                }
-            } catch (err) {
-                cleanToken = cleanToken
-                    .replace(/^{"token":"/, "")
-                    .replace(/"}$/, "");
-            }
-        }
-        if (!cleanToken) return;
-        urlInput = cleanToken;
-        e.target.value = cleanToken;
+        const { token } = parseInputToken(rawValue);
+        if (!token) return;
+        urlInput = token;
+        e.target.value = token;
     }
 
     $: if (urlInput) {
         if (!urlInput.startsWith("http")) {
-            const encodedToken = encodeURIComponent(
-                decodeURIComponent(urlInput),
-            );
-            const baseUrl =
-                "https://ef-webview.gryphline.com/page/gacha_weapon?pool_id=weaponbox_constant_2&u8_token=";
-            const tail = `&platform=Android&channel=6&subChannel=6&lang=ru-ru&server=${selectedServer}`;
-            realImportUrl = baseUrl + encodedToken + tail;
+            realImportUrl = PullParser.buildImportUrl(urlInput, selectedServer);
         } else {
             realImportUrl = urlInput;
         }
+    }
+
+    function mapBackendError(backendMsg) {
+        if (!backendMsg) return $t("import.error_unknown");
+        if (backendMsg.includes("Invalid token") || backendMsg.includes("Token is invalid")) {
+            return $t("import.error_invalid_token");
+        }
+        if (backendMsg.includes("Invalid domain")) {
+            return $t("import.error_domain");
+        }
+        if (backendMsg.includes("No pulls found") || backendMsg.includes("expired")) {
+            return $t("import.error_no_data");
+        }
+        if (backendMsg.includes("Profile not found")) {
+            return $t("import.error_format");
+        }
+        return backendMsg;
+    }
+
+    function mapStreamCatchError(err) {
+        const code = err?.code || "";
+        const msg = err?.message || "";
+        if (code === "ACCOUNT_MISMATCH_RECOVERY" || msg === "ACCOUNT_MISMATCH_RECOVERY") {
+            return $t("import.error_account_mismatch_recovery");
+        }
+        if (code === "ACCOUNT_MISMATCH" || msg === "ACCOUNT_MISMATCH") {
+            return $t("import.error_account_mismatch", err?.params || {});
+        }
+        if (msg === "RATE_LIMIT") {
+            return $t("import.error_rate_limit");
+        }
+        if (msg === "NETWORK_ERROR" || msg.includes("Failed to fetch")) {
+            return $t("import.error_network");
+        }
+        if (msg) {
+            return msg;
+        }
+        return $t("import.error_unknown");
     }
 
     async function handleUrlImport() {
@@ -269,7 +260,7 @@
 
         if (!urlToSend || !urlToSend.trim()) {
             isInputError = true;
-            errorMsg = $t("import.error_empty") || "Link or Token is required";
+            errorMsg = $t("import.error_empty");
             return;
         }
 
@@ -277,156 +268,72 @@
             const alreadyExists = savedTokens.some((t) => t.url === urlToSend);
             if (!alreadyExists) {
                 isInputError = true;
-                errorMsg =
-                    $t("import.error_token_name") ||
-                    "Token name is required for saving";
+                errorMsg = $t("import.error_token_name");
                 return;
             }
         }
 
         if (urlToSend.startsWith("http:") && !urlToSend.startsWith("https:")) {
             isInputError = true;
-            errorMsg =
-                $t("import.error_https") || "Only HTTPS links are allowed";
+            errorMsg = $t("import.error_https");
+            return;
+        }
+
+        const { token, serverId } = parseInputToken(urlToSend);
+        if (!token) {
+            isInputError = true;
+            errorMsg = $t("import.error_format");
             return;
         }
 
         isLoading = true;
         pendingData = null;
-        let lastPullTimes = {};
-        const currentPullData = get(pullData);
-        if (currentPullData && !isOverwriteEnabled && !isRecoveryEnabled) {
-            Object.entries(currentPullData).forEach(([catId, cat]) => {
-                let maxTimeForCat = 0;
-                if (cat.pulls && Array.isArray(cat.pulls)) {
-                    cat.pulls.forEach((p) => {
-                        const t = new Date(p.time).getTime();
-                        if (t > maxTimeForCat) maxTimeForCat = t;
-                    });
-                }
-                lastPullTimes[catId] = maxTimeForCat;
-            });
-        }
+        signedSyncToken = null;
 
         previewReport = {
             status: "loading",
             totalAdded: 0,
-            addedCount: {},
+            addedCount: {}
         };
 
+        const primaryServer = (serverId === "2" || serverId === "3") ? serverId : (selectedServer === "2" || selectedServer === "3" ? selectedServer : "3");
+        const serverCandidates = primaryServer === "2" ? ["2", "3"] : ["3", "2"];
+        const selectedAccId = get(accountStore.selectedId);
+        let currentPrivateId = null;
+        if (typeof window !== "undefined" && selectedAccId && !isRecoveryEnabled) {
+            currentPrivateId = localStorage.getItem(`ark_banner_private_id_${selectedAccId}`) || null;
+        }
+
         try {
-            const response = await fetch(`${API_BASE}/import`, {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({
-                    rawUrl: urlToSend,
-                    overwrite: isOverwriteEnabled,
-                    lastPullTimes,
-                }),
-            });
+            const stream = await fetchPostImport(token, serverCandidates, currentPrivateId);
 
-            if (response.status === 429) {
-                throw new Error("RATE_LIMIT");
-            }
-
-            if (response.status >= 500) {
-                throw new Error("NETWORK_ERROR");
-            }
-
-            if (!response.ok) {
-                throw new Error(`HTTP Error ${response.status}`);
-            }
-
-            const reader = response.body.getReader();
-            const decoder = new TextDecoder();
-            let buffer = "";
-
-            while (true) {
-                const { done, value } = await reader.read();
-                if (done) break;
-
-                buffer += decoder.decode(value, { stream: true });
-                const lines = buffer.split("\n");
-                buffer = lines.pop();
-
-                for (const line of lines) {
-                    if (!line.trim()) continue;
-                    let msg;
-                    try {
-                        msg = JSON.parse(line);
-                    } catch (e) {
-                        console.error("Stream parse error:", e);
-                        continue;
+            for await (const msg of stream) {
+                if (msg.type === "progress") {
+                    const progressData = msg.data || {};
+                    const bannerType = PullParser.normalizeBannerKey(progressData.type || "standard");
+                    const count = Number(progressData.count || 0);
+                    const newAddedCount = { ...previewReport.addedCount };
+                    if (count > 0) {
+                        newAddedCount[bannerType] = count;
                     }
-                    console.log("Stream received:", msg);
-
-                    if (msg.type === "progress") {
-                        const { poolId, count } = msg;
-                        const currentPoolCount =
-                            previewReport.addedCount[poolId] || 0;
-                        previewReport.totalAdded += count;
-
-                        previewReport.addedCount = {
-                            ...previewReport.addedCount,
-                            [poolId]: currentPoolCount + count,
-                        };
-
-                        previewReport = previewReport;
-                        await new Promise((r) => setTimeout(r, 0));
-                    } else if (msg.type === "complete") {
-                        console.log("Import Complete!");
-                        await handleImportComplete(msg.data, urlToSend);
-                    } else if (msg.type === "error") {
-                        const backendMsg = msg.message || "";
-
-                        if (backendMsg.includes("Token is invalid")) {
-                            errorMsg =
-                                $t("import.error_invalid_token") ||
-                                "Token is invalid or expired.";
-                        } else if (backendMsg.includes("Invalid domain")) {
-                            errorMsg =
-                                $t("import.error_domain") ||
-                                "Invalid game link. Domain not supported";
-                        } else if (
-                            backendMsg.includes("No pulls found") ||
-                            backendMsg.includes("expired")
-                        ) {
-                            errorMsg =
-                                $t("import.error_no_data") ||
-                                "No pulls found or Link Expired";
-                        } else if (backendMsg.includes("No token found")) {
-                            errorMsg =
-                                $t("import.error_format") ||
-                                "Invalid URL/Token format";
-                        } else {
-                            errorMsg = backendMsg;
-                        }
-
-                        previewReport = null;
-                        isLoading = false;
-                        return;
-                    }
+                    const totalAdded = Object.values(newAddedCount).reduce((sum, c) => sum + c, 0);
+                    previewReport = {
+                        ...previewReport,
+                        addedCount: newAddedCount,
+                        totalAdded
+                    };
+                } else if (msg.type === "complete") {
+                    await handleImportComplete(msg.data, urlToSend);
+                } else if (msg.type === "error") {
+                    errorMsg = mapBackendError(msg.message);
+                    previewReport = null;
+                    isLoading = false;
+                    return;
                 }
             }
         } catch (err) {
             console.error("Import Error:", err);
-
-            if (err.message === "RATE_LIMIT") {
-                errorMsg =
-                    $t("import.error_rate_limit") ||
-                    "Too many requests. Please wait a minute.";
-            } else if (
-                err.message === "NETWORK_ERROR" ||
-                err.message.includes("Failed to fetch")
-            ) {
-                errorMsg = $t("import.error_network") || "Bad Gateway";
-            } else {
-                errorMsg =
-                    err.message ||
-                    $t("import.error_unknown") ||
-                    "Unknown Error";
-            }
-
+            errorMsg = mapStreamCatchError(err);
             previewReport = null;
             pendingData = null;
         } finally {
@@ -435,59 +342,25 @@
     }
 
     async function handleImportComplete(data, urlToSend) {
-        const importedUid = data.uid;
-        const backendServerId = data.serverId;
-        if (importedUid) {
-            const accounts = get(accountStore.accounts) || [];
-            const selectedId = get(accountStore.selectedId);
-            const currentAcc = accounts.find((a) => a.id === selectedId);
-
-            if (currentAcc) {
-                if (accountStore.updateAccount) {
-                    const shortUid =
-                        importedUid.length > 4
-                            ? importedUid.slice(-4)
-                            : importedUid;
-                    const shouldRename =
-                        currentAcc.name === "Main Account" ||
-                        currentAcc.name.startsWith("Account") ||
-                        currentAcc.name.startsWith("Doctor");
-
-                    accountStore.updateAccount(currentAcc.id, {
-                        uid: importedUid,
-                        serverId: backendServerId,
-                        name: shouldRename
-                            ? `Account ${shortUid}`
-                            : currentAcc.name,
-                    });
-                }
-            } else {
-                if (accountStore.addAccount) {
-                    const shortUid =
-                        importedUid.length > 4
-                            ? importedUid.slice(-4)
-                            : importedUid;
-                    accountStore.addAccount(
-                        importedUid,
-                        `Account ${shortUid}`,
-                        backendServerId,
-                    );
-                }
-            }
-        }
+        if (!data) return;
+        signedSyncToken = data.token || null;
+        const backendServerId = data.serverId || selectedServer || "3";
 
         if (isSaveTokenEnabled && tokenName.trim()) {
             saveTokenToStorage(tokenName.trim(), urlToSend);
         }
 
-        const rawData = data.list;
-        const cleanPulls = parseGachaLog(rawData);
+        const pullsObj = data.pulls || {};
+        const rawList = Array.isArray(data.list)
+            ? data.list
+            : Object.values(pullsObj).flat();
 
+        const cleanPulls = PullParser.parseGachaLog(rawList);
         const report = await pullData.smartImport(
             cleanPulls,
             backendServerId,
             false,
-            isRecoveryEnabled,
+            isRecoveryEnabled
         );
         pendingData = cleanPulls;
         previewReport = report;
@@ -497,67 +370,37 @@
         if (!pendingData) return;
         isLoading = true;
         try {
-            const accounts = get(accountStore.accounts);
+            const accounts = get(accountStore.accounts) || [];
             const selectedId = get(accountStore.selectedId);
-
             const currentAcc = accounts.find((a) => a.id === selectedId);
-            const sId = currentAcc?.serverId || "3";
-            const uid = currentAcc?.serverUid;
-            if (uid && typeof window !== "undefined") {
-                localStorage.setItem("ark_active_uid", uid);
+            const sId = currentAcc?.serverId || selectedServer || "3";
+
+            if (signedSyncToken) {
+                try {
+                    const syncData = await fetchSyncPulls(signedSyncToken, true);
+                    const profile = syncData?.profile;
+                    if (profile?.privateId && typeof window !== "undefined" && selectedId) {
+                        localStorage.setItem(`ark_banner_private_id_${selectedId}`, profile.privateId);
+                    }
+                } catch (e) {
+                    console.error("Sync import failed:", e);
+                }
             }
+
             await pullData.smartImport(
                 pendingData,
                 sId,
                 true,
-                isRecoveryEnabled,
+                isRecoveryEnabled
             );
-
-            if (uid) {
-                const currentLocalData = get(pullData);
-                let allLocalPulls = [];
-
-                Object.values(currentLocalData).forEach((cat) => {
-                    if (cat.pulls && Array.isArray(cat.pulls)) {
-                        allLocalPulls.push(...cat.pulls);
-                    }
-                });
-
-                console.log(
-                    `[Ratings] Sending ${allLocalPulls.length} pulls on backend for syncing...`,
-                );
-
-                await fetch(`${API_BASE}/sync-history`, {
-                    method: "POST",
-                    headers: { "Content-Type": "application/json" },
-                    body: JSON.stringify({
-                        uid: uid,
-                        serverId: sId,
-                        pulls: allLocalPulls,
-                    }),
-                });
-            }
 
             goto("/records");
         } catch (err) {
             console.error(err);
-            errorMsg = err.message;
+            errorMsg = mapStreamCatchError(err);
             isLoading = false;
         }
     }
-
-    function cancelImport() {
-        pendingData = null;
-        previewReport = null;
-        urlInput = "";
-        realImportUrl = "";
-    }
-
-    function handleInput() {}
-
-    let selectedFileName = "";
-    let lastParsedPulls = null;
-    let toolsDevJsonInput = "";
 
     $: if (platformTab) {
         selectedFileName = "";
@@ -587,26 +430,32 @@
             previewReport = report;
         } catch (err) {
             console.error("Import Error:", err);
-            errorMsg = err.message;
+            errorMsg = mapStreamCatchError(err);
         } finally {
             isLoading = false;
         }
     }
 
-    let isDragging = false;
-
-    async function handleFileSelect(e) {
-        const file = e.target.files[0];
-        if (file) processFile(file);
-    }
-
-    function handleFileDrop(e) {
-        isDragging = false;
-        const file = e.dataTransfer?.files?.[0];
-        if (file) processFile(file);
+    function mapFileImportError(err, platform) {
+        const msg = err?.message || "";
+        if (msg === "PROTORIG_PARSE_ERROR") return $t("import.protorig_parse_error");
+        if (msg === "PROTORIG_NO_PULLS_ERROR") return $t("import.protorig_no_pulls_error");
+        if (msg === "TRACKMYPULLS_PARSE_ERROR") return $t("import.trackmypulls_parse_error");
+        if (msg === "TRACKMYPULLS_NO_PULLS_ERROR") return $t("import.trackmypulls_no_pulls_error");
+        if (msg === "ENDMIN_DECOMPRESS_ERROR") return $t("import.endmin_decompress_error");
+        if (msg === "ENDMIN_NO_PROFILES_ERROR") return $t("import.endmin_no_profiles_error");
+        if (msg === "ENDMIN_NO_PULLS_ERROR") return $t("import.endmin_no_pulls_error");
+        if (msg === "TOOLSDEV_EMPTY_ERROR") return $t("import.endmin_no_pulls_error");
+        if (msg === "TOOLSDEV_PARSE_ERROR") return $t("import.error_format");
+        if (platform === "protorig") return $t("import.protorig_parse_error");
+        if (platform === "trackmypulls") return $t("import.trackmypulls_parse_error");
+        if (platform === "endmin") return $t("import.endmin_unknown_error");
+        if (msg) return msg;
+        return $t("import.error_unknown");
     }
 
     async function processFile(file) {
+        if (!file) return;
         errorMsg = "";
         isInputError = false;
         selectedFileName = file.name;
@@ -618,245 +467,27 @@
         reader.onload = async (event) => {
             try {
                 const fileContent = event.target.result;
-                let parsedData;
-
                 if (platformTab === "protorig") {
-                    try {
-                        parsedData = JSON.parse(fileContent);
-                    } catch (parseErr) {
-                        throw new Error(
-                            $t("import.protorig_parse_error") ||
-                                "Invalid JSON format",
-                        );
-                    }
+                    lastParsedPulls = PullParser.parseProtorigBackup(fileContent);
+                } else if (platformTab === "trackmypulls") {
+                    lastParsedPulls = PullParser.parseTrackMyPullsBackup(fileContent);
                 } else {
-                    let decompressed = "";
-                    try {
-                        decompressed =
-                            LZString.decompressFromUTF16(fileContent) ||
-                            LZString.decompress(fileContent);
-                    } catch (decErr) {
-                        console.error("LZString decompress error:", decErr);
-                    }
-
-                    if (!decompressed) {
-                        throw new Error($t("import.endmin_decompress_error"));
-                    }
-                    parsedData = JSON.parse(decompressed);
+                    lastParsedPulls = PullParser.parseEndminBackup(fileContent);
                 }
-
-                const allPulls = [];
-                if (platformTab === "protorig") {
-                    const chars = parsedData.characters || [];
-                    const weaponsList = parsedData.weapons || [];
-                    chars.forEach((item) => {
-                        allPulls.push({ ...item, recordType: "character" });
-                    });
-                    weaponsList.forEach((item) => {
-                        allPulls.push({ ...item, recordType: "weapon" });
-                    });
-
-                    if (allPulls.length === 0) {
-                        throw new Error(
-                            $t("import.protorig_no_pulls_error") ||
-                                "No pulls found in the file",
-                        );
-                    }
-                } else {
-                    const profilesObj = parsedData.profileData || {};
-                    const profileKeys = Object.keys(profilesObj);
-                    let selectedProfileKey =
-                        profileKeys.find((k) => k === "main") || profileKeys[0];
-
-                    if (
-                        !selectedProfileKey ||
-                        !profilesObj[selectedProfileKey]
-                    ) {
-                        throw new Error($t("import.endmin_no_profiles_error"));
-                    }
-
-                    const profile = profilesObj[selectedProfileKey];
-                    if (profile && profile.pulls) {
-                        Object.entries(profile.pulls).forEach(
-                            ([poolKey, pullsList]) => {
-                                if (Array.isArray(pullsList)) {
-                                    pullsList.forEach((item) => {
-                                        allPulls.push(item);
-                                    });
-                                }
-                            },
-                        );
-                    }
-
-                    if (allPulls.length === 0) {
-                        throw new Error($t("import.endmin_no_pulls_error"));
-                    }
-                }
-
-                const pullsMapped = allPulls
-                    .map((item) => {
-                        if (platformTab === "protorig") {
-                            const itemId = item.charId || item.weaponId || "";
-                            let rawName =
-                                item.charName || item.weaponName || itemId;
-                            const type = item.recordType;
-                            let rarity = Number(item.rarity || 4);
-
-                            if (type === "character") {
-                                const characterKey = Object.keys(
-                                    characters,
-                                ).find((k) => characters[k].gameId === itemId || k === itemId || characters[k].id === itemId);
-                                if (characterKey && characters[characterKey]) {
-                                    rawName = characters[characterKey].name;
-                                    rarity = characters[characterKey].rarity;
-                                }
-                            } else {
-                                const weaponKey = Object.keys(weapons).find(
-                                    (k) => weapons[k].gameId === itemId || k === itemId || weapons[k].id === itemId,
-                                );
-                                if (weaponKey && weapons[weaponKey]) {
-                                    rawName = weapons[weaponKey].name;
-                                    rarity = weapons[weaponKey].rarity;
-                                }
-                            }
-
-                            rawName = canonicalizeName(rawName);
-
-                            const seqId = Number(item.seqId || 0);
-                            const rawTime = item.gachaTs;
-                            let dateObj;
-                            if (rawTime) {
-                                const numTime = Number(rawTime);
-                                if (!Number.isNaN(numTime) && numTime > 0) {
-                                    if (numTime < 32503680000) {
-                                        dateObj = new Date(numTime * 1000);
-                                    } else {
-                                        dateObj = new Date(numTime);
-                                    }
-                                } else {
-                                    dateObj = new Date(rawTime);
-                                }
-                            }
-                            if (!dateObj || Number.isNaN(dateObj.getTime())) {
-                                dateObj = new Date(0);
-                            }
-                            const uniqueId = `${dateObj.getTime()}_${rawName}_${seqId}`;
-
-                            const rawBannerId = item.poolId || "standard";
-                            const internalId =
-                                getInternalBannerType(rawBannerId);
-
-                            return {
-                                id: uniqueId,
-                                time: dateObj,
-                                name: rawName,
-                                rarity,
-                                bannerId: internalId,
-                                seqId,
-                                isNew: item.isNew === true,
-                                isFree: item.isFree === true || false,
-                                type,
-                                rawPoolId: rawBannerId,
-                            };
-                        } else {
-                            const itemId = item.item_id || "";
-                            let rawName = itemId;
-                            let type = "character";
-                            let rarity = Number(item.rarity || 4);
-
-                            if (itemId.startsWith("chr_")) {
-                                const characterKey = Object.keys(
-                                    characters,
-                                ).find((k) => characters[k].gameId === itemId || k === itemId || characters[k].id === itemId);
-                                if (characterKey && characters[characterKey]) {
-                                    rawName = characters[characterKey].name;
-                                    type = "character";
-                                    rarity = characters[characterKey].rarity;
-                                }
-                            } else if (itemId.startsWith("wpn_")) {
-                                const weaponKey = Object.keys(weapons).find(
-                                    (k) => weapons[k].gameId === itemId || k === itemId || weapons[k].id === itemId,
-                                );
-                                if (weaponKey && weapons[weaponKey]) {
-                                    rawName = weapons[weaponKey].name;
-                                    type = "weapon";
-                                    rarity = weapons[weaponKey].rarity;
-                                }
-                            }
-
-                            rawName = canonicalizeName(rawName);
-
-                            const seqId = Number(
-                                item.sequence_id || item.sequence || 0,
-                            );
-                            const rawTime =
-                                item.timestamp || item.gachaTs || item.ts;
-                            let dateObj;
-                            if (rawTime) {
-                                const numTime = Number(rawTime);
-                                if (!Number.isNaN(numTime) && numTime > 0) {
-                                    if (numTime < 32503680000) {
-                                        dateObj = new Date(numTime * 1000);
-                                    } else {
-                                        dateObj = new Date(numTime);
-                                    }
-                                } else {
-                                    dateObj = new Date(rawTime);
-                                }
-                            }
-                            if (!dateObj || Number.isNaN(dateObj.getTime())) {
-                                dateObj = new Date(0);
-                            }
-                            const uniqueId = `${dateObj.getTime()}_${rawName}_${seqId}`;
-
-                            const rawBannerId =
-                                item.poolId || item.cardPoolType || "standard";
-                            const internalId =
-                                getInternalBannerType(rawBannerId);
-
-                            return {
-                                id: uniqueId,
-                                time: dateObj,
-                                name: rawName,
-                                rarity,
-                                bannerId: internalId,
-                                seqId,
-                                isNew:
-                                    item.is_new === true || item.isNew === true,
-                                isFree:
-                                    item.is_free === true ||
-                                    item.isFree === true,
-                                type,
-                                rawPoolId: rawBannerId,
-                            };
-                        }
-                    })
-                    .filter((p) => p.time.getFullYear() >= 2000)
-                    .sort(
-                        (a, b) =>
-                            a.time.getTime() - b.time.getTime() ||
-                            a.seqId - b.seqId,
-                    );
-
-                lastParsedPulls = pullsMapped;
             } catch (err) {
                 console.error("Error processing backup file:", err);
-                errorMsg =
-                    err.message ||
-                    (platformTab === "protorig"
-                        ? $t("import.protorig_parse_error") ||
-                          "Error parsing file"
-                        : $t("import.endmin_unknown_error"));
+                errorMsg = mapFileImportError(err, platformTab);
             } finally {
                 isLoading = false;
             }
         };
 
         reader.onerror = () => {
-            errorMsg =
-                platformTab === "protorig"
-                    ? $t("import.protorig_parse_error") || "Error parsing file"
-                    : $t("import.endmin_read_error");
+            errorMsg = platformTab === "protorig"
+                ? $t("import.protorig_parse_error")
+                : platformTab === "trackmypulls"
+                ? $t("import.trackmypulls_read_error")
+                : $t("import.endmin_read_error");
             isLoading = false;
         };
 
@@ -867,7 +498,7 @@
         errorMsg = "";
         isInputError = false;
         if (!toolsDevJsonInput.trim()) {
-            errorMsg = $t("import.error_empty") || "Link or Token is required";
+            errorMsg = $t("import.error_empty");
             isInputError = true;
             return;
         }
@@ -877,118 +508,31 @@
         pendingData = null;
 
         try {
-            const parsedData = JSON.parse(toolsDevJsonInput.trim());
-            const records = parsedData?.data?.records;
-            if (!Array.isArray(records)) {
-                throw new Error(
-                    $t("import.endmin_no_pulls_error") || "No pulls found",
-                );
-            }
-
-            const pullsMapped = records
-                .map((item) => {
-                    const itemId = item.itemId || "";
-                    let rawName = item.itemName || itemId;
-                    let type =
-                        item.recordType === "character"
-                            ? "character"
-                            : "weapon";
-                    let rarity = Number(item.rarity || 4);
-
-                    if (type === "character") {
-                        const characterKey = Object.keys(characters).find(
-                            (k) => characters[k].gameId === itemId || k === itemId || characters[k].id === itemId,
-                        );
-                        if (characterKey && characters[characterKey]) {
-                            rawName = characters[characterKey].name;
-                            rarity = characters[characterKey].rarity;
-                        }
-                    } else {
-                        const weaponKey = Object.keys(weapons).find(
-                            (k) => weapons[k].gameId === itemId || k === itemId || weapons[k].id === itemId,
-                        );
-                        if (weaponKey && weapons[weaponKey]) {
-                            rawName = weapons[weaponKey].name;
-                            rarity = weapons[weaponKey].rarity;
-                        }
-                    }
-
-                    rawName = canonicalizeName(rawName);
-
-                    const seqId = Number(item.seqId || 0);
-                    const rawTime = item.gachaTs || item.timestamp || item.ts;
-                    let dateObj;
-                    if (rawTime) {
-                        const numTime = Number(rawTime);
-                        if (!Number.isNaN(numTime) && numTime > 0) {
-                            if (numTime < 32503680000) {
-                                dateObj = new Date(numTime * 1000);
-                            } else {
-                                dateObj = new Date(numTime);
-                            }
-                        } else {
-                            dateObj = new Date(rawTime);
-                        }
-                    }
-                    if (!dateObj || Number.isNaN(dateObj.getTime())) {
-                        dateObj = new Date(0);
-                    }
-                    const uniqueId = `${dateObj.getTime()}_${rawName}_${seqId}`;
-
-                    const rawBannerId = item.poolId || "standard";
-                    const internalId = getInternalBannerType(rawBannerId);
-
-                    return {
-                        id: uniqueId,
-                        time: dateObj,
-                        name: rawName,
-                        rarity,
-                        bannerId: internalId,
-                        seqId,
-                        isNew: item.isNew === true,
-                        isFree: item.isFree === true || false,
-                        type,
-                        rawPoolId: rawBannerId,
-                    };
-                })
-                .filter((p) => p.time.getFullYear() >= 2000)
-                .sort(
-                    (a, b) =>
-                        a.time.getTime() - b.time.getTime() ||
-                        a.seqId - b.seqId,
-                );
-
-            lastParsedPulls = pullsMapped;
+            lastParsedPulls = PullParser.parseToolsDevJson(toolsDevJsonInput);
         } catch (err) {
             console.error("Error processing endfieldtools.dev data:", err);
-            errorMsg =
-                err.message || $t("import.error_format") || "Invalid format";
+            errorMsg = mapFileImportError(err, "toolsdev");
         } finally {
             isLoading = false;
         }
     }
 
     function getBannerName(bannerId) {
-        const bannersKey = `banners.${bannerId}`;
+        const norm = PullParser.normalizeBannerKey(bannerId);
+        const bannersKey = `banners.${norm}`;
         const bannersTrans = $t(bannersKey);
         if (bannersTrans !== bannersKey) {
             return bannersTrans;
         }
-        const typesKey = `bannerTypes.${bannerId}`;
+        const typesKey = `bannerTypes.${norm}`;
         const typesTrans = $t(typesKey);
         if (typesTrans !== typesKey) {
             return typesTrans;
         }
-        return bannerId;
+        return norm;
     }
 
-    $: if (
-        lastParsedPulls &&
-        (platformTab === "endmin" ||
-            platformTab === "toolsdev" ||
-            platformTab === "protorig") &&
-        isRecoveryEnabled !== undefined
-    ) {
+    $: if (lastParsedPulls && (platformTab === "endmin" || platformTab === "toolsdev" || platformTab === "protorig" || platformTab === "trackmypulls") && isRecoveryEnabled !== undefined) {
         runSmartImportPreview(lastParsedPulls);
     }
 </script>
@@ -1016,1103 +560,417 @@
         </h2>
     </div>
 
-    {#if !isMaintenance}
+    <div
+        class="bg-white p-8 md:p-12 rounded-xl dark:bg-[#383838] dark:border-[#444444] shadow-sm border border-gray-100 relative min-h-[400px]"
+    >
         <div
-            class="bg-white p-8 md:p-12 rounded-xl dark:bg-[#383838] dark:border-[#444444] shadow-sm border border-gray-100 relative min-h-[400px]"
+            class="bg-white dark:bg-[#343434] border border-gray-200 dark:border-[#444444] rounded-xl p-4 mb-3 shadow-sm"
         >
-            <div
-                class="bg-white dark:bg-[#343434] border border-gray-200 dark:border-[#444444] rounded-xl p-4 mb-3 shadow-sm"
-            >
-                <div class="flex items-start gap-3">
-                    <div class="mt-0.5 text-[#FACC15] shrink-0">
-                        <Icon name="info" class="w-5 h-5" />
+            <div class="flex items-start gap-3">
+                <div class="mt-0.5 text-[#FACC15] shrink-0">
+                    <Icon name="info" class="w-5 h-5" />
+                </div>
+                <div class="flex-1">
+                    <h3
+                        class="text-gray-800 dark:text-[#E0E0E0] font-bold text-base uppercase tracking-wider mb-4 border-b border-gray-100 dark:border-[#444] pb-2"
+                    >
+                        {$t("import.faq_security_title")}
+                    </h3>
+
+                    <div class="mb-3">
+                        <h4
+                            class="font-bold text-[#21272C] dark:text-[#FDFDFD] mb-1 text-sm"
+                        >
+                            {$t("import.faq_q1")}
+                        </h4>
+                        <p
+                            class="text-sm text-gray-600 dark:text-[#B7B6B3] leading-relaxed"
+                        >
+                            {@html $t("import.faq_security_desc1")}
+                        </p>
                     </div>
-                    <div class="flex-1">
-                        <h3
-                            class="text-gray-800 dark:text-[#E0E0E0] font-bold text-base uppercase tracking-wider mb-4 border-b border-gray-100 dark:border-[#444] pb-2"
+
+                    <div class="mb-3">
+                        <h4
+                            class="font-bold text-[#21272C] dark:text-[#FDFDFD] mb-1 text-sm"
                         >
-                            {$t("import.faq_security_title") ||
-                                "FAQ: Account Security"}
-                        </h3>
-
-                        <div class="mb-3">
-                            <h4
-                                class="font-bold text-[#21272C] dark:text-[#FDFDFD] mb-1 text-sm"
-                            >
-                                {$t("import.faq_q1") ||
-                                    "Is it dangerous to use scripts?"}
-                            </h4>
-                            <p
-                                class="text-sm text-gray-600 dark:text-[#B7B6B3] leading-relaxed"
-                            >
-                                {@html $t("import.faq_security_desc1") ||
-                                    "Sharing authorization tokens with third-party sites and executing scripts always carries risks."}
-                            </p>
-                        </div>
-
-                        <div class="mb-3">
-                            <h4
-                                class="font-bold text-[#21272C] dark:text-[#FDFDFD] mb-1 text-sm"
-                            >
-                                {$t("import.faq_q2") ||
-                                    "Is Goyfield.moe dangerous?"}
-                            </h4>
-                            <p
-                                class="text-sm text-gray-600 dark:text-[#B7B6B3] leading-relaxed"
-                            >
-                                {@html $t("import.faq_security_desc2") ||
-                                    "Goyfield.moe never saves your personal information, such as tokens and links. Your token is only processed to retrieve pulls and is never saved. If you have any concerns about the scripts, you can inspect them personally. If you are concerned about sending your token to the site backend server, you can deploy the site locally following the instructions on GitHub, as this is an open-source project."}
-                            </p>
-                        </div>
-
-                        <div
-                            class="mb-1 text-sm text-gray-500 dark:text-[#999] bg-gray-50 dark:bg-[#2C2C2C] border-l-2 border-[#FACC15] p-3 rounded-r-lg"
+                            {$t("import.faq_q2")}
+                        </h4>
+                        <p
+                            class="text-sm text-gray-600 dark:text-[#B7B6B3] leading-relaxed"
                         >
-                            <span
-                                class="font-bold text-gray-700 dark:text-[#E0E0E0]"
-                                >{$t("import.note") || "Note"}:</span
-                            >
-                            {@html $t("import.faq_security_desc3") ||
-                                "Running the PowerShell scripts does not require running PowerShell as administrator."}
-                        </div>
+                            {@html $t("import.faq_security_desc2")}
+                        </p>
+                    </div>
+
+                    <div
+                        class="mb-1 text-sm text-gray-500 dark:text-[#999] bg-gray-50 dark:bg-[#2C2C2C] border-l-2 border-[#FACC15] p-3 rounded-r-lg"
+                    >
+                        <span
+                            class="font-bold text-gray-700 dark:text-[#E0E0E0]"
+                            >{$t("import.note")}:</span
+                        >
+                        {@html $t("import.faq_security_desc3")}
                     </div>
                 </div>
             </div>
-            <div class="w-full mb-4 mt-4 sm:mb-6 sm:mt-6 overflow-hidden">
-                <div
-                    class="flex w-full overflow-x-auto no-scrollbar max-[719px]:bg-gray-100 max-[719px]:dark:bg-[#2b2b2b] max-[719px]:p-1 max-[719px]:rounded-xl max-[719px]:border max-[719px]:border-gray-200/50 max-[719px]:dark:border-gray-800/50 max-[719px]:gap-1 max-[719px]:items-center min-[720px]:border-b min-[720px]:border-gray-200 min-[720px]:dark:border-[#444444] min-[720px]:gap-0 min-[720px]:items-end min-[720px]:pb-1"
-                >
-                    {#each [{ id: "pc-web", label: $t("import.tab_pc") }, { id: "pc1", label: $t("import.tab_pc1") }, { id: "pc2", label: $t("import.tab_pc2") }, { id: "pc3", label: $t("import.tab_pc3") }, { id: "pc-manual", label: $t("import.tab_pc_manual") }, { id: "android", label: $t("import.tab_android") }, { id: "ios", label: $t("import.tab_ios") }, { id: "endmin", label: "endmin.moe" }, { id: "toolsdev", label: "endfieldtools.dev" }, { id: "protorig", label: "PROTORIG.app" }] as tab}
-                        <button
-                            class="font-bold transition-all whitespace-nowrap select-none
-                                {platformTab === tab.id
+        </div>
+        <div class="w-full mb-4 mt-4 sm:mb-6 sm:mt-6 overflow-hidden">
+            <div
+                class="flex w-full overflow-x-auto no-scrollbar max-[719px]:bg-gray-100 max-[719px]:dark:bg-[#2b2b2b] max-[719px]:p-1 max-[719px]:rounded-xl max-[719px]:border max-[719px]:border-gray-200/50 max-[719px]:dark:border-gray-800/50 max-[719px]:gap-1 max-[719px]:items-center min-[720px]:border-b min-[720px]:border-gray-200 min-[720px]:dark:border-[#444444] min-[720px]:gap-0 min-[720px]:items-end min-[720px]:pb-1"
+            >
+                {#each [{ id: "pc-web", label: $t("import.tab_pc") }, { id: "pc1", label: $t("import.tab_pc1") }, { id: "pc2", label: $t("import.tab_pc2") }, { id: "pc3", label: $t("import.tab_pc3") }, { id: "pc-manual", label: $t("import.tab_pc_manual") }, { id: "android", label: $t("import.tab_android") }, { id: "ios", label: $t("import.tab_ios") }, { id: "endmin", label: "endmin.moe" }, { id: "toolsdev", label: "endfieldtools.dev" }, { id: "protorig", label: "PROTORIG.app" }, { id: "trackmypulls", label: "trackmypulls.com" }] as tab}
+                    <button
+                        class="font-bold transition-all whitespace-nowrap select-none
+                            {platformTab === tab.id
                                 ? 'text-[#21272C] dark:text-[#FDFDFD] max-[719px]:bg-white max-[719px]:dark:bg-[#383838] max-[719px]:shadow-sm max-[719px]:rounded-lg max-[719px]:px-4 max-[719px]:py-2 max-[719px]:text-xs min-[720px]:border-b-2 min-[720px]:border-[#FFE145] min-[720px]:px-6 min-[720px]:py-3 min-[720px]:text-sm'
                                 : 'text-gray-400 dark:text-[#B7B6B3] hover:text-gray-600 max-[719px]:text-gray-500 max-[719px]:dark:text-[#B7B6B3] max-[719px]:px-4 max-[719px]:py-2 max-[719px]:text-xs min-[720px]:border-b-2 min-[720px]:border-transparent min-[720px]:hover:bg-gray-50 min-[720px]:hover:dark:bg-[#424242] min-[720px]:px-6 min-[720px]:py-3 min-[720px]:text-sm'}"
-                            on:click={() => (platformTab = tab.id)}
-                        >
-                            {tab.label}
-                        </button>
-                    {/each}
-                </div>
-            </div>
-            {#if platformTab === "android"}
-                <div
-                    class="mb-4 p-4 bg-yellow-50 dark:bg-yellow-600/30 border border-yellow-100 dark:border-yellow-500/20 rounded-lg flex items-start gap-3 transition-colors"
-                >
-                    <div
-                        class="text-yellow-600 dark:text-yellow-400 mt-0.5 flex-shrink-0"
+                        on:click={() => (platformTab = tab.id)}
                     >
-                        <Icon name="info" style="width: 20px; height: 20px;" />
+                        {tab.label}
+                    </button>
+                {/each}
+            </div>
+        </div>
+
+        <ImportInstructions {platformTab} />
+
+        <div class="mb-6 {platformTab === 'ios' ? '' : 'pl-10'}">
+            {#if platformTab === 'endmin'}
+                <FileDropzone
+                    accept=".endmin"
+                    {selectedFileName}
+                    filesLabel={$t("import.endmin_files_label")}
+                    inputId="endmin-file-input"
+                    on:select={(e) => processFile(e.detail)}
+                />
+            {:else if platformTab === 'toolsdev'}
+                <div class="max-w-4xl mb-6 relative flex flex-col gap-3">
+                    <textarea
+                        bind:value={toolsDevJsonInput}
+                        placeholder={$t("import.toolsdev_placeholder")}
+                        class="w-full min-h-[160px] p-3 mb-3 bg-gray-50 dark:bg-[#343434] dark:border-[#444444] dark:text-[#E0E0E0] border border-gray-200 focus:bg-white focus:border-[#FFE145] focus:dark:border-[#FFE145] rounded-lg text-sm outline-none text-[#21272C] transition-colors font-mono resize-y"
+                    ></textarea>
+                    <div
+                        class="w-fit {isLoading
+                            ? 'opacity-60 pointer-events-none cursor-not-allowed'
+                            : ''}"
+                    >
+                        <Button
+                            variant="yellow"
+                            onClick={() => {
+                                if (!isLoading) handleToolsDevImport();
+                            }}
+                            disabled={isLoading}
+                        >
+                            <div
+                                slot="icon"
+                                class="text-gray-800 dark:text-gray-800"
+                            >
+                                {#if isLoading}
+                                    <Icon
+                                        name="loading"
+                                        class="w-4 h-4 animate-spin"
+                                    />
+                                {:else}
+                                    <Icon
+                                        name="import"
+                                        class="w-[30px] h-[30px]"
+                                    />
+                                {/if}
+                            </div>
+                            <span>
+                                {isLoading
+                                    ? $t("import.importing")
+                                    : $t("page.importBtn")}
+                            </span>
+                        </Button>
+                    </div>
+                </div>
+            {:else if platformTab === 'protorig'}
+                <FileDropzone
+                    accept=".json"
+                    {selectedFileName}
+                    filesLabel={$t("import.protorig_files_label")}
+                    inputId="protorig-file-input"
+                    on:select={(e) => processFile(e.detail)}
+                />
+            {:else if platformTab === 'trackmypulls'}
+                <FileDropzone
+                    accept=".json"
+                    {selectedFileName}
+                    filesLabel={$t("import.trackmypulls_files_label")}
+                    inputId="trackmypulls-file-input"
+                    on:select={(e) => processFile(e.detail)}
+                />
+            {:else}
+                <div
+                    class="flex items-end gap-0 border-b border-gray-200 dark:border-[#444444] w-full max-w-4xl mb-4"
+                >
+                    <button
+                        class="px-6 py-3 text-sm font-bold transition-all relative border-b-2
+                    {activeTab === 'new'
+                                ? 'text-[#21272C] dark:text-[#FDFDFD] border-[#FFE145]'
+                                : 'text-gray-400 hover:text-gray-600 hover:dark:bg-[#424242] dark:text-[#B7B6B3] border-transparent hover:bg-gray-50'}"
+                            on:click={() => (activeTab = "new")}
+                        >
+                            {$t("import.tab_new")}
+                        </button>
+                        <button
+                            class="px-6 py-3 text-sm font-bold transition-all relative flex items-center gap-2 border-b-2
+                    {activeTab === 'saved'
+                                ? 'text-[#21272C] border-[#FFE145] dark:text-[#FDFDFD]'
+                                : 'text-gray-400 hover:text-gray-600 hover:dark:bg-[#424242] dark:text-[#B7B6B3] border-transparent hover:bg-gray-50'}"
+                            on:click={() => (activeTab = "saved")}
+                        >
+                            {$t("import.tab_saved")}
+                            {#if savedTokens.length > 0}
+                                <span
+                                    class="bg-gray-100 text-gray-600 text-[10px] px-1.5 py-0.5 rounded-full leading-none"
+                                    >{savedTokens.length}</span
+                                >
+                            {/if}
+                        </button>
                     </div>
 
-                    <div
-                        class="text-sm text-red-900 dark:text-red-100 leading-relaxed font-medium"
-                    >
-                        {@html $t("import.android_note")}
+                    {#if activeTab === "new"}
+                        <div class="max-w-4xl mb-6 relative group">
+                            {#if platformTab !== "endmin" && platformTab !== "toolsdev" && platformTab !== "protorig"}
+                                <div
+                                    class="flex gap-2 mb-3 p-1 bg-gray-100 dark:bg-[#2C2C2C] rounded-lg w-fit transition-all"
+                                >
+                                    <button
+                                        class="px-4 py-1.5 text-sm font-bold rounded-md transition-colors {selectedServer ===
+                                        '3'
+                                            ? 'bg-white dark:bg-[#444] text-[#21272C] dark:text-white shadow-sm'
+                                            : 'text-gray-500 hover:text-gray-700 dark:text-gray-400'}"
+                                        on:click={() =>
+                                            handleServerChange("3")}
+                                    >
+                                        Americas / Europe
+                                    </button>
+                                    <button
+                                        class="px-4 py-1.5 text-sm font-bold rounded-md transition-colors {selectedServer ===
+                                        '2'
+                                            ? 'bg-white dark:bg-[#444] text-[#21272C] dark:text-white shadow-sm'
+                                            : 'text-gray-500 hover:text-gray-700 dark:text-gray-400'}"
+                                        on:click={() =>
+                                            handleServerChange("2")}
+                                    >
+                                        Asia
+                                    </button>
+                                </div>
+                            {/if}
+
+                        <div class="relative">
+                            <input
+                                type="text"
+                                value={urlInput}
+                                on:input={handleInputProcessing}
+                                placeholder={platformTab === "android" ||
+                                platformTab === "pc-web" ||
+                                platformTab === "pc2" ||
+                                platformTab === "pc3"
+                                    ? $t("import.placeholder_token")
+                                    : $t("import.placeholder_url")}
+                                class="w-full p-4 bg-gray-50 border-2 border-gray-100 dark:bg-[#343434] dark:border-[#444444] dark:text-[#E0E0E0] focus:bg-white focus:border-[#FFE145] focus:dark:border-[#FFE145] rounded-md outline-none transition-all font-mono text-xs md:text-sm text-gray-700 placeholder-gray-400
+            {isInputError && errorMsg !== $t('import.error_token_name')
+                ? '!border-red-500 bg-red-50'
+                : ''}"
+                            />
+
+                                <div
+                                    class="absolute right-4 top-1/2 -translate-y-1/2 text-gray-300 pointer-events-none"
+                                >
+                                    {#if (platformTab === "android" || platformTab === "pc-web" || platformTab === "pc2" || platformTab === "pc3") && urlInput && !urlInput.startsWith("http")}
+                                        <Icon
+                                            name="check"
+                                            class="w-4 h-4 text-green-600"
+                                        />
+                                    {:else}
+                                        <div
+                                            class="bg-gray-50/90 dark:bg-[#343434]/80 p-1 rounded-lg"
+                                        >
+                                            <Icon
+                                                name="link"
+                                                class="w-4 h-4"
+                                            />
+                                        </div>
+                                    {/if}
+                                </div>
+                            </div>
+
+                        {#if isInputError && errorMsg !== $t("import.error_token_name")}
+                            <div
+                                class="absolute -bottom-6 left-0 text-red-600 text-xs font-bold px-2 py-1 rounded animate-in fade-in slide-in-from-top-1"
+                            >
+                                {errorMsg}
+                            </div>
+                        {/if}
                     </div>
-                </div>
+                {:else}
+                    <SavedTokensList
+                        {savedTokens}
+                        on:select={(e) => selectToken(e.detail)}
+                        on:delete={(e) => requestDeleteToken(e.detail)}
+                    />
+                {/if}
             {/if}
 
-            <div class="ml-2 pt-2">
-                {#if platformTab === "ios"}
-                    {#each [{ text: $t("import.ios_step1") }, { text: $t("import.ios_step2") }, { text: $t("import.ios_step3"), subList: [$t("import.ios_step3_1"), $t("import.ios_step3_2"), $t("import.ios_step3_3")] }, { text: $t("import.ios_step4") }, { text: $t("import.ios_step5") }, { text: $t("import.ios_step6") }, { text: $t("import.ios_step7") }, { text: $t("import.ios_step8") }, { text: $t("import.ios_step9") }, { text: $t("import.ios_step10") }, { text: $t("import.ios_step11") }] as step, i}
-                        <div
-                            class="relative border-l-2 border-gray-200 dark:border-[#FDFD1F]/50 pb-10 pl-10 last:border-transparent last:pb-0"
-                        >
-                            <div
-                                class="absolute -left-[21px] top-0 w-10 h-10 rounded-full bg-[#FFE145] border-2 border-[#FFE145] shadow-sm flex items-center justify-center font-sdk font-bold text-xl text-[#21272C] z-10"
-                            >
-                                {i + 1}
-                            </div>
-                            <div
-                                class="text-lg text-[#21272C] dark:text-[#E0E0E0] pt-1 font-medium leading-relaxed max-w-4xl"
-                            >
-                                {@html step.text}
-                                {#if step.subList}
-                                    <ul
-                                        class="list-disc pl-5 mt-3 space-y-2 text-gray-600 text-base dark:border-[#444444] dark:bg-[#343434] dark:text-[#E0E0E0] bg-gray-50 p-4 rounded-lg border border-gray-100"
+            <div class="flex flex-col gap-4 mt-2 max-w-4xl items-start">
+                {#if activeTab === "new" && platformTab !== 'endmin' && platformTab !== 'toolsdev' && platformTab !== 'protorig' && platformTab !== 'trackmypulls'}
+                    <div
+                        class="flex flex-col gap-2 transition-all w-full"
+                    >
+                        <Checkbox bind:checked={isSaveTokenEnabled} variant="yellow" align="start">
+                            <div>
+                                <span
+                                    class="text-gray-600 dark:text-[#E0E0E0] group-hover:dark:text-[#FDFDFD] group-hover:text-black transition-colors cursor-pointer font-medium text-sm"
+                                >
+                                    {$t(
+                                        platformTab === "android" ||
+                                            platformTab === "pc-web" ||
+                                            platformTab === "pc2" ||
+                                            platformTab === "pc3"
+                                            ? "import.save_label_token"
+                                            : "import.save_label_url",
+                                    )}
+                                </span>
+                                {#if isSaveTokenEnabled}
+                                    <div
+                                        class="text-gray-400 text-xs mt-1 max-w-md"
                                     >
-                                        {#each step.subList as subItem}
-                                            <li>{@html subItem}</li>
-                                        {/each}
-                                    </ul>
-                                {/if}
-                            </div>
-                        </div>
-                    {/each}
-
-                    <div class="relative border-l-2 border-transparent pl-10">
-                        <div
-                            class="absolute -left-[21px] top-0 w-10 h-10 rounded-full bg-[#FFE145] border-2 border-[#FFE145] shadow-sm flex items-center justify-center font-sdk font-bold text-xl text-[#21272C] z-10"
-                        >
-                            12
-                        </div>
-                        <p
-                            class="text-lg text-[#21272C] dark:text-[#E0E0E0] font-medium mb-4 pt-1"
-                        >
-                            {$t("import.ios_step12")}
-                        </p>
-
-                        <div class="mb-6"></div>
-                    </div>
-                {:else if platformTab === "pc1" || platformTab === "pc2" || platformTab === "pc3"}
-                    <div
-                        class="relative border-l-2 dark:border-[#FDFD1F]/50 border-gray-200 pb-1 pl-10"
-                    >
-                        <div
-                            class="absolute -left-[21px] top-0 w-10 h-10 rounded-full bg-[#FFE145] shadow-sm flex items-center justify-center font-sdk font-bold text-xl text-[#21272C] z-10"
-                        >
-                            1
-                        </div>
-                        <div
-                            class="text-lg dark:text-[#E0E0E0] text-[#21272C] pt-1 font-medium leading-relaxed max-w-4xl mb-4"
-                        >
-                            {$t("import.step2_pre")}
-                            <Tooltip text={$t("import.ps_tooltip")}>
-                                <span class="underline decoration-dotted"
-                                    >{$t("import.step2_ps")}</span
-                                >
-                            </Tooltip>
-                            {$t("import.step2_post")}
-                        </div>
-                        <div class="max-w-4xl">
-                            <CodeBlock
-                                script={{
-                                    pc1: powerShellScript,
-                                    pc2: powerShellScript2,
-                                    pc3: powerShellScript3,
-                                }[platformTab]}
-                                language="POWERSHELL"
-                            />
-
-                            <div class="flex justify-end">
-                                <a
-                                    href="https://github.com/ivaqis/arknights-pull-url"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    class="flex items-center gap-1.5 text-xs text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 transition-all italic group"
-                                >
-                                    {#if platformTab === "pc1" || platformTab === "pc3"}
-                                        <span
-                                            >{$t("import.script_details")}</span
-                                        >
-                                        <Icon
-                                            name="sendToLink"
-                                            class="w-3.5 h-3.5 opacity-60 group-hover:opacity-100 transition-opacity"
-                                        />
-                                    {/if}
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div
-                        class="relative border-l-2 border-transparent pl-10 pb-4"
-                    >
-                        <div
-                            class="absolute -left-[21px] top-0 w-10 h-10 rounded-full bg-[#FFE145] shadow-sm flex items-center justify-center font-sdk font-bold text-xl text-[#21272C] z-10"
-                        >
-                            2
-                        </div>
-                        <p
-                            class="text-lg text-[#21272C] dark:text-[#E0E0E0] font-medium pt-1"
-                        >
-                            {#if platformTab === "pc1"}
-                                {$t("import.step3")}
-                            {:else}
-                                {$t("import.android_s11")}
-                            {/if}
-                        </p>
-                    </div>
-                {:else if platformTab === "pc-manual"}
-                    <div
-                        class="relative border-l-2 dark:border-[#FDFD1F]/50 border-gray-200 pb-10 pl-10"
-                    >
-                        <div
-                            class="absolute -left-[21px] top-0 w-10 h-10 rounded-full bg-[#FFE145] shadow-sm flex items-center justify-center font-sdk font-bold text-xl text-[#21272C] z-10"
-                        >
-                            1
-                        </div>
-                        <div
-                            class="text-lg dark:text-[#E0E0E0] text-[#21272C] pt-1 font-medium leading-relaxed max-w-4xl"
-                        >
-                            {$t("import.manual_text_pre")}
-                            <code
-                                class="select-all bg-gray-100 dark:bg-[#444] px-1.5 py-0.5 rounded font-mono text-sm"
-                                >%LocalAppData%\PlatformProcess\Cache\data_1</code
-                            >,
-                            {$t("import.manual_text_mid")}
-                            <span
-                                class="text-blue-500 font-mono text-sm break-all"
-                                >"https://ef-webview.gryphline.com/...u8_token=..."</span
-                            >
-                            {$t("import.manual_text_post")}
-                        </div>
-                    </div>
-                    <div
-                        class="relative border-l-2 border-transparent pl-10 pb-4"
-                    >
-                        <div
-                            class="absolute -left-[21px] top-0 w-10 h-10 rounded-full bg-[#FFE145] shadow-sm flex items-center justify-center font-sdk font-bold text-xl text-[#21272C] z-10"
-                        >
-                            2
-                        </div>
-                        <p
-                            class="text-lg text-[#21272C] dark:text-[#E0E0E0] font-medium pt-1"
-                        >
-                            {$t("import.step3")}
-                        </p>
-                    </div>
-                {:else if platformTab === "android"}
-                    {#each [{ text: $t("import.android_s1") }, { text: $t("import.android_s2") }, { text: $t("import.android_s3"), subList: [$t("import.android_s3_sub1"), $t("import.android_s3_sub2"), $t("import.android_s3_sub3")] }, { text: $t("import.android_s4") }, { text: $t("import.android_s5") }, { text: $t("import.android_s6") }, { text: $t("import.android_s7") }, { text: $t("import.android_s8") }, { text: $t("import.android_s9") }, { text: $t("import.android_s10") }] as step, i}
-                        <div
-                            class="relative dark:border-[#FDFD1F]/50 border-l-2 border-gray-200 pb-10 pl-10 last:border-transparent"
-                        >
-                            <div
-                                class="absolute -left-[21px] top-0 w-10 h-10 rounded-full bg-[#FFE145] border-2 border-[#FFE145] shadow-sm flex items-center justify-center font-sdk font-bold text-xl text-[#21272C] z-10"
-                            >
-                                {i + 1}
-                            </div>
-                            <div
-                                class="text-lg text-[#21272C] dark:text-[#E0E0E0] pt-1 font-medium leading-relaxed max-w-4xl"
-                            >
-                                {@html step.text}
-                                {#if step.subList}
-                                    <ul
-                                        class="list-disc pl-5 mt-3 space-y-2 dark:text-[#E0E0E0] text-gray-600 text-sm bg-gray-50 dark:bg-[#343434] dark:border-[#444444] p-4 rounded-lg border border-gray-100"
-                                    >
-                                        {#each step.subList as subItem}
-                                            <li>{@html subItem}</li>
-                                        {/each}
-                                    </ul>
-                                {/if}
-                            </div>
-                        </div>
-                    {/each}
-
-                    <div class="relative border-l-2 border-transparent pl-10">
-                        <div
-                            class="absolute -left-[21px] top-0 w-10 h-10 rounded-full bg-[#FFE145] border-2 border-[#FFE145] shadow-sm flex items-center justify-center font-sdk font-bold text-xl text-[#21272C] z-10"
-                        >
-                            11
-                        </div>
-                        <p
-                            class="text-lg text-[#21272C] dark:text-[#E0E0E0] font-medium mb-4 pt-1"
-                        >
-                            {$t("import.android_s11")}
-                        </p>
-                    </div>
-                {:else if platformTab === "endmin"}
-                    <div
-                        class="mb-6 p-3 bg-orange-50/70 dark:bg-orange-600/10 border-l-2 border-orange-500 rounded-r-lg max-w-4xl text-sm text-gray-600 dark:text-[#B7B6B3]"
-                    >
-                        <span
-                            class="font-bold text-orange-600 dark:text-orange-400"
-                        >
-                            {$t("import.warning") || "Warning"}:
-                        </span>
-                        {@html $t("import.tracker_backup_warning")}
-                    </div>
-
-                    {#each [{ text: $t("import.endmin_step1") }, { text: $t("import.endmin_step2") }, { text: $t("import.endmin_step3") }] as step, i}
-                        <div
-                            class="relative border-l-2 pl-10 {i === 2
-                                ? 'border-transparent pb-4'
-                                : 'border-gray-200 dark:border-[#FDFD1F]/50 pb-6'}"
-                        >
-                            <div
-                                class="absolute -left-[21px] top-0 w-10 h-10 rounded-full bg-[#FFE145] border-2 border-[#FFE145] shadow-sm flex items-center justify-center font-sdk font-bold text-xl text-[#21272C] z-10"
-                            >
-                                {i + 1}
-                            </div>
-                            <div
-                                class="text-lg text-[#21272C] dark:text-[#E0E0E0] pt-1 font-medium leading-relaxed max-w-4xl pb-3"
-                            >
-                                {@html step.text}
-                            </div>
-                        </div>
-                    {/each}
-                {:else if platformTab === "toolsdev"}
-                    <div
-                        class="mb-6 p-3 bg-orange-50/70 dark:bg-orange-600/10 border-l-2 border-orange-500 rounded-r-lg max-w-4xl text-sm text-gray-600 dark:text-[#B7B6B3]"
-                    >
-                        <span
-                            class="font-bold text-orange-600 dark:text-orange-400"
-                        >
-                            {$t("import.warning") || "Warning"}:
-                        </span>
-                        {@html $t("import.tracker_backup_warning")}
-                    </div>
-
-                    {#each [{ text: $t("import.toolsdev_step1") }, { text: $t("import.toolsdev_step2") }, { text: $t("import.toolsdev_step3") }] as step, i}
-                        <div
-                            class="relative border-l-2 pl-10 {i === 2
-                                ? 'border-transparent pb-1'
-                                : 'border-gray-200 dark:border-[#FDFD1F]/50 pb-4'}"
-                        >
-                            <div
-                                class="absolute -left-[21px] top-0 w-10 h-10 rounded-full bg-[#FFE145] border-2 border-[#FFE145] shadow-sm flex items-center justify-center font-sdk font-bold text-xl text-[#21272C] z-10"
-                            >
-                                {i + 1}
-                            </div>
-                            <div
-                                class="text-lg text-[#21272C] dark:text-[#E0E0E0] pt-1 font-medium leading-relaxed max-w-4xl pb-3"
-                            >
-                                {@html step.text}
-                            </div>
-                            {#if i === 1}
-                                <div class="max-w-4xl mt-3 mb-2">
-                                    <CodeBlock
-                                        script={toolsdevBookmarklet}
-                                        language="JAVA SCRIPT"
-                                    />
-                                </div>
-                            {/if}
-                        </div>
-                    {/each}
-                {:else if platformTab === "protorig"}
-                    <div
-                        class="mb-6 p-3 bg-orange-50/70 dark:bg-orange-600/10 border-l-2 border-orange-500 rounded-r-lg max-w-4xl text-sm text-gray-600 dark:text-[#B7B6B3]"
-                    >
-                        <span
-                            class="font-bold text-orange-600 dark:text-orange-400"
-                        >
-                            {$t("import.warning") || "Warning"}:
-                        </span>
-                        {@html $t("import.tracker_backup_warning")}
-                    </div>
-
-                    {#each [{ text: $t("import.protorig_step1") }, { text: $t("import.protorig_step2") }, { text: $t("import.protorig_step3") }] as step, i}
-                        <div
-                            class="relative border-l-2 pl-10 {i === 2
-                                ? 'border-transparent pb-4'
-                                : 'border-gray-200 dark:border-[#FDFD1F]/50 pb-6'}"
-                        >
-                            <div
-                                class="absolute -left-[21px] top-0 w-10 h-10 rounded-full bg-[#FFE145] border-2 border-[#FFE145] shadow-sm flex items-center justify-center font-sdk font-bold text-xl text-[#21272C] z-10"
-                            >
-                                {i + 1}
-                            </div>
-                            <div
-                                class="text-lg text-[#21272C] dark:text-[#E0E0E0] pt-1 font-medium leading-relaxed max-w-4xl pb-3"
-                            >
-                                {@html step.text}
-                            </div>
-                        </div>
-                    {/each}
-                {:else}
-                    <div
-                        class="relative border-l-2 dark:border-[#FDFD1F]/50 border-gray-200 pb-10 pl-10"
-                    >
-                        <div
-                            class="absolute -left-[21px] top-0 w-10 h-10 rounded-full bg-[#FFE145] border-2 border-[#FFE145] shadow-sm flex items-center justify-center font-sdk font-bold text-xl text-[#21272C] z-10"
-                        >
-                            1
-                        </div>
-                        <div
-                            class="text-lg dark:text-[#E0E0E0] text-[#21272C] pt-1 font-medium leading-relaxed max-w-4xl"
-                        >
-                            {$t("import.pc_web_step1")}
-                            <a
-                                href="https://act.skport.com/endfield/recordBook"
-                                target="_blank"
-                                class="text-blue-600 underline"
-                                >act.skport.com/endfield/recordBook</a
-                            >
-                        </div>
-                    </div>
-
-                    <div
-                        class="relative border-l-2 dark:border-[#FDFD1F]/50 border-gray-200 pb-3 pl-10"
-                    >
-                        <div
-                            class="absolute -left-[21px] top-0 w-10 h-10 rounded-full bg-[#FFE145] border-2 border-[#FFE145] shadow-sm flex items-center justify-center font-sdk font-bold text-xl text-[#21272C] z-10"
-                        >
-                            2
-                        </div>
-                        <div
-                            class="text-lg dark:text-[#E0E0E0] text-[#21272C] pt-1 font-medium leading-relaxed max-w-4xl mb-4"
-                        >
-                            {$t("import.pc_web_step2")}
-                        </div>
-                        <div class="max-w-4xl">
-                            <CodeBlock
-                                script={browserBookmarklet}
-                                language="JAVA SCRIPT"
-                            />
-                        </div>
-                    </div>
-
-                    <div
-                        class="relative border-l-2 dark:border-[#FDFD1F]/50 border-gray-200 pb-10 pl-10"
-                    >
-                        <div
-                            class="absolute -left-[21px] top-0 w-10 h-10 rounded-full bg-[#FFE145] border-2 border-[#FFE145] shadow-sm flex items-center justify-center font-sdk font-bold text-xl text-[#21272C] z-10"
-                        >
-                            3
-                        </div>
-                        <div
-                            class="text-lg dark:text-[#E0E0E0] text-[#21272C] pt-1 font-medium leading-relaxed max-w-4xl"
-                        >
-                            {$t("import.pc_web_step3")}
-                        </div>
-                    </div>
-
-                    <div class="relative border-l-2 border-transparent pl-10">
-                        <div
-                            class="absolute -left-[21px] top-0 w-10 h-10 rounded-full bg-[#FFE145] border-2 border-[#FFE145] shadow-sm flex items-center justify-center font-sdk font-bold text-xl text-[#21272C] z-10"
-                        >
-                            4
-                        </div>
-                        <p
-                            class="text-lg text-[#21272C] dark:text-[#E0E0E0] font-medium mb-4 pt-1"
-                        >
-                            {$t("import.android_s11")}
-                        </p>
-                    </div>
-                {/if}
-
-                <div class="mb-6 {platformTab === 'ios' ? '' : 'pl-10'}">
-                    {#if platformTab === "endmin"}
-                        <div class="max-w-4xl mb-6 relative group">
-                            <label
-                                for="endmin-file-input"
-                                class="flex flex-col items-center justify-center w-full min-h-[160px] p-6 border-2 border-dashed rounded-lg cursor-pointer transition-all text-center
-                                {isDragging
-                                    ? 'bg-white border-[#FFE145] dark:bg-[#424242] dark:border-[#FFE145]'
-                                    : 'bg-gray-50 border-gray-300 dark:bg-[#343434] dark:border-[#444444] hover:bg-white hover:border-[#FFE145] hover:dark:border-[#FFE145]'}"
-                                on:dragover|preventDefault={() =>
-                                    (isDragging = true)}
-                                on:dragenter|preventDefault={() =>
-                                    (isDragging = true)}
-                                on:dragleave|preventDefault={() =>
-                                    (isDragging = false)}
-                                on:drop|preventDefault={handleFileDrop}
-                            >
-                                <div
-                                    class="flex flex-col items-center justify-center pt-5 pb-6"
-                                >
-                                    <div class="text-[#FFE145] mb-3">
-                                        <Icon
-                                            name="import"
-                                            style="width: 48px; height: 48px;"
-                                        />
+                                        {$t(
+                                            platformTab === "android" ||
+                                                platformTab === "pc-web" ||
+                                                platformTab === "pc2" ||
+                                                platformTab === "pc3"
+                                                ? "import.save_desc_token"
+                                                : "import.save_desc_url",
+                                        )}
                                     </div>
-                                    <p
-                                        class="mb-2 text-sm text-gray-500 dark:text-gray-400 font-semibold"
-                                    >
-                                        {$t("import.endmin_drag_drop")}
-                                    </p>
-                                    <p
-                                        class="text-xs text-gray-400 dark:text-gray-500"
-                                    >
-                                        {selectedFileName ||
-                                            $t("import.endmin_files_label")}
-                                    </p>
-                                </div>
+                                {/if}
+                            </div>
+                        </Checkbox>
+
+                        {#if isSaveTokenEnabled}
+                            <div class="pl-8 mb-1 relative">
                                 <input
-                                    id="endmin-file-input"
-                                    type="file"
-                                    accept=".endmin"
-                                    class="hidden"
-                                    on:change={handleFileSelect}
+                                    type="text"
+                                    bind:value={tokenName}
+                                    placeholder={$t("import.token_name_placeholder")}
+                                    class="w-full md:w-2/3 p-2.5 bg-gray-50 dark:bg-[#343434] dark:border-[#444444] dark:text-[#E0E0E0] border border-gray-200 focus:bg-white focus:border-[#FFE145] focus:dark:border-[#FFE145] rounded-md text-sm outline-none text-[#21272C] transition-all
+            {isInputError && errorMsg === $t('import.error_token_name')
+                ? '!border-red-500 bg-red-50'
+                : ''}"
                                 />
-                            </label>
-                        </div>
-                    {:else if platformTab === "toolsdev"}
-                        <div
-                            class="max-w-4xl mb-6 relative flex flex-col gap-3"
-                        >
-                            <textarea
-                                bind:value={toolsDevJsonInput}
-                                placeholder={$t(
-                                    "import.toolsdev_placeholder",
-                                ) || "Paste JSON here..."}
-                                class="w-full min-h-[160px] p-3 mb-3 bg-gray-50 dark:bg-[#343434] dark:border-[#444444] dark:text-[#E0E0E0] border border-gray-200 focus:bg-white focus:border-[#FFE145] focus:dark:border-[#FFE145] rounded-lg text-sm outline-none text-[#21272C] transition-colors font-mono resize-y"
-                            ></textarea>
-                            <div
-                                class="w-fit {isLoading
-                                    ? 'opacity-60 pointer-events-none cursor-not-allowed'
-                                    : ''}"
-                            >
-                                <Button
-                                    variant="yellow"
-                                    onClick={() => {
-                                        if (!isLoading) handleToolsDevImport();
-                                    }}
-                                    disabled={isLoading}
-                                >
-                                    <div
-                                        slot="icon"
-                                        class="text-gray-800 dark:text-gray-800"
-                                    >
-                                        {#if isLoading}
-                                            <Icon
-                                                name="loading"
-                                                class="w-4 h-4 animate-spin"
-                                            />
-                                        {:else}
-                                            <Icon
-                                                name="import"
-                                                style="width: 30px; height: 30px;"
-                                            />
-                                        {/if}
-                                    </div>
-                                    <span>
-                                        {isLoading
-                                            ? $t("import.importing") ||
-                                              "Scanning..."
-                                            : $t("page.importBtn")}
-                                    </span>
-                                </Button>
-                            </div>
-                        </div>
-                    {:else if platformTab === "protorig"}
-                        <div class="max-w-4xl mb-6 relative group">
-                            <label
-                                for="protorig-file-input"
-                                class="flex flex-col items-center justify-center w-full min-h-[160px] p-6 border-2 border-dashed rounded-lg cursor-pointer transition-all text-center
-                                {isDragging
-                                    ? 'bg-white border-[#FFE145] dark:bg-[#424242] dark:border-[#FFE145]'
-                                    : 'bg-gray-50 border-gray-300 dark:bg-[#343434] dark:border-[#444444] hover:bg-white hover:border-[#FFE145] hover:dark:border-[#FFE145]'}"
-                                on:dragover|preventDefault={() =>
-                                    (isDragging = true)}
-                                on:dragenter|preventDefault={() =>
-                                    (isDragging = true)}
-                                on:dragleave|preventDefault={() =>
-                                    (isDragging = false)}
-                                on:drop|preventDefault={handleFileDrop}
-                            >
-                                <div
-                                    class="flex flex-col items-center justify-center pt-5 pb-6"
-                                >
-                                    <div class="text-[#FFE145] mb-3">
-                                        <Icon
-                                            name="import"
-                                            style="width: 48px; height: 48px;"
-                                        />
-                                    </div>
-                                    <p
-                                        class="mb-2 text-sm text-gray-500 dark:text-gray-400 font-semibold"
-                                    >
-                                        {$t("import.endmin_drag_drop")}
-                                    </p>
-                                    <p
-                                        class="text-xs text-gray-400 dark:text-gray-500"
-                                    >
-                                        {selectedFileName ||
-                                            $t("import.protorig_files_label")}
-                                    </p>
-                                </div>
-                                <input
-                                    id="protorig-file-input"
-                                    type="file"
-                                    accept=".json"
-                                    class="hidden"
-                                    on:change={handleFileSelect}
-                                />
-                            </label>
-                        </div>
-                    {:else}
-                        <div
-                            class="flex items-end gap-0 border-b border-gray-200 dark:border-[#444444] w-full max-w-4xl mb-4"
-                        >
-                            <button
-                                class="px-6 py-3 text-sm font-bold transition-all relative border-b-2
-                        {activeTab === 'new'
-                                    ? 'text-[#21272C] dark:text-[#FDFDFD] border-[#FFE145]'
-                                    : 'text-gray-400 hover:text-gray-600 hover:dark:bg-[#424242] dark:text-[#B7B6B3] border-transparent hover:bg-gray-50'}"
-                                on:click={() => (activeTab = "new")}
-                            >
-                                {$t("import.tab_new")}
-                            </button>
-                            <button
-                                class="px-6 py-3 text-sm font-bold transition-all relative flex items-center gap-2 border-b-2
-                        {activeTab === 'saved'
-                                    ? 'text-[#21272C] border-[#FFE145] dark:text-[#FDFDFD]'
-                                    : 'text-gray-400 hover:text-gray-600 hover:dark:bg-[#424242] dark:text-[#B7B6B3] border-transparent hover:bg-gray-50'}"
-                                on:click={() => (activeTab = "saved")}
-                            >
-                                {$t("import.tab_saved")}
-                                {#if savedTokens.length > 0}
-                                    <span
-                                        class="bg-gray-100 text-gray-600 text-[10px] px-1.5 py-0.5 rounded-full leading-none"
-                                        >{savedTokens.length}</span
-                                    >
-                                {/if}
-                            </button>
-                        </div>
 
-                        {#if activeTab === "new"}
-                            <div class="max-w-4xl mb-6 relative group">
-                                {#if platformTab !== "endmin" && platformTab !== "toolsdev" && platformTab !== "protorig"}
+                                {#if isInputError && errorMsg === $t("import.error_token_name")}
                                     <div
-                                        class="flex gap-2 mb-3 p-1 bg-gray-100 dark:bg-[#2C2C2C] rounded-lg w-fit transition-all"
-                                    >
-                                        <button
-                                            class="px-4 py-1.5 text-sm font-bold rounded-md transition-colors {selectedServer ===
-                                            '3'
-                                                ? 'bg-white dark:bg-[#444] text-[#21272C] dark:text-white shadow-sm'
-                                                : 'text-gray-500 hover:text-gray-700 dark:text-gray-400'}"
-                                            on:click={() =>
-                                                handleServerChange("3")}
-                                        >
-                                            Americas / Europe
-                                        </button>
-                                        <button
-                                            class="px-4 py-1.5 text-sm font-bold rounded-md transition-colors {selectedServer ===
-                                            '2'
-                                                ? 'bg-white dark:bg-[#444] text-[#21272C] dark:text-white shadow-sm'
-                                                : 'text-gray-500 hover:text-gray-700 dark:text-gray-400'}"
-                                            on:click={() =>
-                                                handleServerChange("2")}
-                                        >
-                                            Asia
-                                        </button>
-                                    </div>
-                                {/if}
-
-                                <div class="relative">
-                                    <input
-                                        type="text"
-                                        value={urlInput}
-                                        on:input={handleInputProcessing}
-                                        placeholder={platformTab ===
-                                            "android" ||
-                                        platformTab === "pc-web" ||
-                                        platformTab === "pc2" ||
-                                        platformTab === "pc3"
-                                            ? $t("import.placeholder_token") ||
-                                              "Paste Token here"
-                                            : $t("import.placeholder_url") ||
-                                              "Paste Link here"}
-                                        class="w-full p-4 bg-gray-50 border-2 border-gray-100 dark:bg-[#343434] dark:border-[#444444] dark:text-[#E0E0E0] focus:bg-white focus:border-[#FFE145] focus:dark:border-[#FFE145] rounded-md outline-none transition-all font-mono text-xs md:text-sm text-gray-700 placeholder-gray-400
-                {isInputError &&
-                                        errorMsg !==
-                                            $t('import.error_token_name') &&
-                                        errorMsg !==
-                                            'Token name is required for saving.'
-                                            ? '!border-red-500 bg-red-50'
-                                            : ''}"
-                                    />
-
-                                    <div
-                                        class="absolute right-4 top-1/2 -translate-y-1/2 text-gray-300 pointer-events-none"
-                                    >
-                                        {#if (platformTab === "android" || platformTab === "pc-web" || platformTab === "pc2" || platformTab === "pc3") && urlInput && !urlInput.startsWith("http")}
-                                            <Icon
-                                                name="check"
-                                                style="width: 16px; height: 16px; color: green;"
-                                            />
-                                        {:else}
-                                            <div
-                                                class="bg-gray-50/90 dark:bg-[#343434]/80 p-1 rounded-lg"
-                                            >
-                                                <Icon
-                                                    name="link"
-                                                    style="width: 16px; height: 16px;"
-                                                />
-                                            </div>
-                                        {/if}
-                                    </div>
-                                </div>
-
-                                {#if isInputError && errorMsg !== $t("import.error_token_name") && errorMsg !== "Token name is required for saving."}
-                                    <div
-                                        class="absolute -bottom-6 left-0 text-red-600 text-xs font-bold px-2 py-1 rounded animate-in fade-in slide-in-from-top-1"
+                                        class="absolute -bottom-5 left-8 text-red-600 text-xs font-bold px-1 rounded animate-in fade-in slide-in-from-top-1"
                                     >
                                         {errorMsg}
                                     </div>
                                 {/if}
                             </div>
-                        {:else}
-                            <div class="max-w-4xl mb-2 min-h-[100px]">
-                                {#if savedTokens.length === 0}
-                                    <div
-                                        class="flex flex-col items-center justify-center py-6 border-2 dark:border-[#444444] dark:text-[#B7B6B3] border-dashed border-gray-200 rounded-lg text-gray-400"
-                                    >
-                                        <Icon
-                                            name="noData"
-                                            style="width: 32px; height: 32px; opacity: 0.5;"
-                                        />
-                                        <span class="mt-2 text-sm font-medium"
-                                            >{$t(
-                                                "import.no_saved_tokens",
-                                            )}</span
-                                        >
-                                    </div>
-                                {:else}
-                                    <div class="grid gap-3 pb-3">
-                                        {#each savedTokens as token, i}
-                                            <div
-                                                class="group relative flex items-center justify-between p-4 bg-white border border-gray-200 dark:bg-[#343434] dark:border-[#444444] hover:border-[#FFE145] hover:border-[#FFE145] hover:shadow-sm transition-all text-left rounded-md overflow-hidden"
-                                            >
-                                                <button
-                                                    type="button"
-                                                    class="absolute inset-0 w-full h-full z-0 cursor-pointer focus:outline-none"
-                                                    on:click={() =>
-                                                        selectToken(token)}
-                                                    aria-label="Select {token.name}"
-                                                ></button>
-                                                <div
-                                                    class="pl-2 relative z-10 pointer-events-none"
-                                                >
-                                                    <div
-                                                        class="font-bold text-[#21272C] dark:text-[#E0E0E0] text-lg font-sdk flex items-center gap-2"
-                                                    >
-                                                        <span>{token.name}</span>
-                                                        {#if token.server === "2" || extractServerFromUrl(token.url) === "2"}
-                                                            <span
-                                                                class="text-xs px-2 py-0.5 rounded bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 font-sans font-semibold"
-                                                                >Asia</span
-                                                            >
-                                                        {:else}
-                                                            <span
-                                                                class="text-xs px-2 py-0.5 rounded bg-amber-100 dark:bg-amber-900/40 text-amber-700 dark:text-amber-300 font-sans font-semibold"
-                                                                >Americas / Europe</span
-                                                            >
-                                                        {/if}
-                                                    </div>
-                                                    <div
-                                                        class="text-xs text-gray-400 dark:text-[#B7B6B3] font-mono mt-1 truncate max-w-[250px] md:max-w-[400px]"
-                                                    >
-                                                        {token.url}
-                                                    </div>
-                                                    <div
-                                                        class="text-[10px] text-gray-400 dark:text-[#B7B6B3] mt-2 font-medium"
-                                                    >
-                                                        {new Date(
-                                                            token.date,
-                                                        ).toLocaleDateString()}
-                                                    </div>
-                                                </div>
-                                                <div
-                                                    class="flex items-center gap-4 z-20 relative pointer-events-none"
-                                                >
-                                                    <button
-                                                        type="button"
-                                                        class="w-8 h-8 flex items-center justify-center text-gray-300 hover:text-white hover:bg-red-500 rounded transition-colors pointer-events-auto cursor-pointer focus:outline-none focus:ring-2 focus:ring-red-500"
-                                                        on:click|stopPropagation={() =>
-                                                            requestDeleteToken(
-                                                                i,
-                                                            )}
-                                                    >
-                                                        <Icon
-                                                            name="close"
-                                                            style="width: 18px; height: 18px;"
-                                                        />
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        {/each}
-                                    </div>
-                                {/if}
-                            </div>
                         {/if}
-                    {/if}
-
-                    <div class="flex flex-col gap-4 mt-2 max-w-4xl items-start">
-                        {#if activeTab === "new" && platformTab !== "endmin" && platformTab !== "toolsdev" && platformTab !== "protorig"}
-                            <div
-                                class="flex flex-col gap-2 transition-all w-full"
-                            >
-                                <Checkbox
-                                    bind:checked={isSaveTokenEnabled}
-                                    variant="yellow"
-                                    align="start"
-                                >
-                                    <div>
-                                        <span
-                                            class="text-gray-600 dark:text-[#E0E0E0] group-hover:dark:text-[#FDFDFD] group-hover:text-black transition-colors cursor-pointer font-medium text-sm"
-                                        >
-                                            {$t(
-                                                platformTab === "android" ||
-                                                    platformTab === "pc-web" ||
-                                                    platformTab === "pc2" ||
-                                                    platformTab === "pc3"
-                                                    ? "import.save_label_token"
-                                                    : "import.save_label_url",
-                                            )}
-                                        </span>
-                                        {#if isSaveTokenEnabled}
-                                            <div
-                                                class="text-gray-400 text-xs mt-1 max-w-md"
-                                            >
-                                                {$t(
-                                                    platformTab === "android" ||
-                                                        platformTab ===
-                                                            "pc-web" ||
-                                                        platformTab === "pc2" ||
-                                                        platformTab === "pc3"
-                                                        ? "import.save_desc_token"
-                                                        : "import.save_desc_url",
-                                                )}
-                                            </div>
-                                        {/if}
-                                    </div>
-                                </Checkbox>
-
-                                {#if isSaveTokenEnabled}
-                                    <div class="pl-8 mb-1 relative">
-                                        <input
-                                            type="text"
-                                            bind:value={tokenName}
-                                            placeholder={$t(
-                                                "import.token_name_placeholder",
-                                            )}
-                                            class="w-full md:w-2/3 p-2.5 bg-gray-50 dark:bg-[#343434] dark:border-[#444444] dark:text-[#E0E0E0] border border-gray-200 focus:bg-white focus:border-[#FFE145] focus:dark:border-[#FFE145] rounded-md text-sm outline-none text-[#21272C] transition-all
-                    {isInputError &&
-                                            (errorMsg ===
-                                                $t('import.error_token_name') ||
-                                                errorMsg ===
-                                                    'Token name is required for saving.')
-                                                ? '!border-red-500 bg-red-50'
-                                                : ''}"
-                                        />
-
-                                        {#if isInputError && (errorMsg === $t("import.error_token_name") || errorMsg === "Token name is required for saving.")}
-                                            <div
-                                                class="absolute -bottom-5 left-8 text-red-600 text-xs font-bold px-1 rounded animate-in fade-in slide-in-from-top-1"
-                                            >
-                                                {errorMsg}
-                                            </div>
-                                        {/if}
-                                    </div>
-                                {/if}
-                            </div>
-                        {/if}
-
-                        {#if platformTab !== "endmin" && platformTab !== "toolsdev" && platformTab !== "protorig"}
-                            <Checkbox
-                                bind:checked={isGlobalStatsEnabled}
-                                variant="yellow"
-                                align="center"
-                            >
-                                <span
-                                    class="text-gray-600 dark:text-[#E0E0E0] group-hover:text-black group-hover:dark:text-[#FDFDFD] transition-colors cursor-pointer font-medium text-sm"
-                                >
-                                    {$t("import.enableGlobalStats")}
-                                </span>
-                            </Checkbox>
-                        {/if}
-
-                        <Checkbox
-                            bind:checked={isRecoveryEnabled}
-                            variant="red"
-                            align="center"
-                        >
-                            <span
-                                class="text-gray-600 dark:text-[#E0E0E0] group-hover:text-black group-hover:dark:text-[#FDFDFD] transition-colors cursor-pointer font-medium text-sm flex items-center gap-1.5"
-                            >
-                                {$t("import.recoveryStats") ||
-                                    "Восстановление записей"}
-                                <Tooltip
-                                    text={$t("import.recoveryTooltip") ||
-                                        "При нажатии данного чекбокса история круток принудительно восстановиться если данная процедура приминима, может помочь при частичной потере записей о крутках"}
-                                >
-                                    <span
-                                        class="text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-400 mt-0.5 inline-flex items-center"
-                                    >
-                                        <Icon name="info" class="m-1 w-4 h-4" />
-                                    </span>
-                                </Tooltip>
-                            </span>
-                        </Checkbox>
-
-                        {#if platformTab !== "endmin" && platformTab !== "toolsdev" && platformTab !== "protorig"}
-                            <div
-                                class="w-fit mt-4 {isLoading
-                                    ? 'opacity-60 pointer-events-none cursor-not-allowed'
-                                    : ''}"
-                            >
-                                <Button
-                                    variant="yellow"
-                                    onClick={() => {
-                                        if (!isLoading) handleUrlImport();
-                                    }}
-                                    disabled={isLoading}
-                                >
-                                    <div
-                                        slot="icon"
-                                        class="text-gray-800 dark:text-gray-800"
-                                    >
-                                        {#if isLoading}
-                                            <Icon
-                                                name="loading"
-                                                class="w-4 h-4 animate-spin"
-                                            />
-                                        {:else}
-                                            <Icon
-                                                name="import"
-                                                style="width: 30px; height: 30px;"
-                                            />
-                                        {/if}
-                                    </div>
-                                    <span>
-                                        {isLoading
-                                            ? $t("import.importing") ||
-                                              "Scanning..."
-                                            : $t("page.importBtn")}
-                                    </span>
-                                </Button>
-                            </div>
-                        {/if}
-                    </div>
-                </div>
-
-                {#if errorMsg && !isInputError}
-                    <div
-                        class="mt-5 p-4 bg-red-50 dark:text-red-300 text-red-600 dark:bg-[#902E2E] dark:border-[#444444] rounded-lg border border-red-100 flex items-center gap-2 animate-in fade-in slide-in-from-top-2"
-                    >
-                        <Icon name="close" style="width: 20px; height: 20px;" />
-                        {errorMsg}
                     </div>
                 {/if}
 
-                {#if previewReport}
-                    <div
-                        class="mt-5 p-5 rounded-lg bg-gray-50 dark:bg-[#343434] dark:border-[#444444] border border-gray-200 animate-in fade-in slide-in-from-bottom-2"
+                {#if platformTab !== 'endmin' && platformTab !== 'toolsdev' && platformTab !== 'protorig' && platformTab !== 'trackmypulls'}
+                    <Checkbox bind:checked={isGlobalStatsEnabled} variant="yellow" align="center">
+                        <span
+                            class="text-gray-600 dark:text-[#E0E0E0] group-hover:text-black group-hover:dark:text-[#FDFDFD] transition-colors cursor-pointer font-medium text-sm"
+                        >
+                            {$t("import.enableGlobalStats")}
+                        </span>
+                    </Checkbox>
+                {/if}
+
+                <Checkbox bind:checked={isRecoveryEnabled} variant="red" align="center">
+                    <span
+                        class="text-gray-600 dark:text-[#E0E0E0] group-hover:text-black group-hover:dark:text-[#FDFDFD] transition-colors cursor-pointer font-medium text-sm flex items-center gap-1.5"
                     >
-                        {#if previewReport.status === "up_to_date"}
-                            <div
-                                class="flex items-center gap-3 dark:text-green-500 text-green-600 font-bold text-lg"
+                        {$t("import.recoveryStats")}
+                        <Tooltip text={$t("import.recoveryTooltip")}>
+                            <span
+                                class="text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-400 mt-0.5 inline-flex items-center"
                             >
-                                <Icon
-                                    name="check"
-                                    style="width: 24px; height: 24px;"
-                                />
-                                {$t("import.statusUpToDate")}
-                            </div>
-                        {:else}
-                            <h3
-                                class="font-bold text-lg gap-4 dark:text-[#E0E0E0] text-[#21272C] mb-4 flex items-center gap-2"
+                                <Icon name="info" class="m-1 w-4 h-4" />
+                            </span>
+                        </Tooltip>
+                    </span>
+                </Checkbox>
+
+                {#if platformTab !== 'endmin' && platformTab !== 'toolsdev' && platformTab !== 'protorig' && platformTab !== 'trackmypulls'}
+                    <div
+                        class="w-fit mt-4 {isLoading
+                            ? 'opacity-60 pointer-events-none cursor-not-allowed'
+                            : ''}"
+                    >
+                        <Button
+                            variant="yellow"
+                            onClick={() => {
+                                if (!isLoading) handleUrlImport();
+                            }}
+                            disabled={isLoading}
+                        >
+                            <div
+                                slot="icon"
+                                class="text-gray-800 dark:text-gray-800"
                             >
                                 {#if isLoading}
-                                    <span class="relative flex h-3 w-3 mr-1">
-                                        <span
-                                            class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#D0926E] opacity-75"
-                                        ></span>
-                                        <span
-                                            class="relative inline-flex rounded-full h-3 w-3 bg-[#D0926E]"
-                                        ></span>
-                                    </span>
-                                    {$t("import.processing") ||
-                                        "Scanning Servers..."}
+                                    <Icon
+                                        name="loading"
+                                        class="w-4 h-4 animate-spin"
+                                    />
                                 {:else}
                                     <Icon
                                         name="import"
-                                        style="width: 20px; height: 20px;"
+                                        class="w-[30px] h-[30px]"
                                     />
-                                    {$t("import.newFound")}
-                                {/if}
-
-                                <span class="text-[#D0926E] ml-1"
-                                    >+{previewReport.totalAdded}</span
-                                >
-                            </h3>
-
-                            <div class="space-y-2 mb-3 ml-1">
-                                {#each Object.entries(previewReport.addedCount) as [bannerId, count]}
-                                    <div
-                                        class="flex justify-between dark:bg-[#373737] dark:border-[#444444] items-center bg-white p-3 rounded border border-gray-100 shadow-sm max-w-md transition-all duration-300"
-                                    >
-                                        <span
-                                            class="text-gray-700 dark:text-[#E0E0E0] font-medium flex items-center gap-2"
-                                        >
-                                            {getBannerName(bannerId)}
-                                        </span>
-                                        <span
-                                            class="bg-[#FFE145] text-[#21272C] text-xs font-bold px-2 py-1 rounded-md transition-all"
-                                        >
-                                            +{count}
-                                        </span>
-                                    </div>
-                                {/each}
-
-                                {#if isLoading && Object.keys(previewReport.addedCount).length === 0}
-                                    <div
-                                        class="text-sm text-gray-500 italic ml-2"
-                                    >
-                                        {$t("import.waiting_response") ||
-                                            "Waiting for response..."}
-                                    </div>
                                 {/if}
                             </div>
-
-                            {#if !isLoading}
-                                <div
-                                    class="w-48 animate-in fade-in zoom-in duration-300"
-                                >
-                                    <Button
-                                        variant="black2"
-                                        onClick={confirmSave}
-                                    >
-                                        <div slot="icon">
-                                            <Icon
-                                                name="save"
-                                                class="w-4 h-4 text-white"
-                                            />
-                                        </div>
-                                        {$t("buttons.saveBtn") || "Save"}
-                                    </Button>
-                                </div>
-                            {/if}
-                        {/if}
+                            <span>
+                                {isLoading
+                                    ? $t("import.importing")
+                                    : $t("page.importBtn")}
+                            </span>
+                        </Button>
                     </div>
                 {/if}
             </div>
         </div>
-    {:else}
-        <div
-            class="min-h-[60vh] w-full flex flex-col items-center justify-center px-4 sm:px-8 font-sans"
-        >
+
+        {#if errorMsg && !isInputError}
             <div
-                class="bg-white/80 dark:bg-[#383838]/80 backdrop-blur-md rounded-xl shadow-sm border border-gray-100 dark:border-[#444444] p-8 max-w-md w-full text-center flex flex-col items-center animate-fade-in"
+                class="mt-5 p-4 bg-red-50 dark:text-red-300 text-red-600 dark:bg-[#902E2E] dark:border-[#444444] rounded-lg border border-red-100 flex items-center gap-2 animate-in fade-in slide-in-from-top-2"
             >
-                <div
-                    class="w-16 h-16 mb-5 text-[#FACC15] flex items-center justify-center bg-yellow-50 dark:bg-[#4a4220] rounded-full shadow-inner"
-                >
-                    <Icon
-                        name="settings"
-                        class="w-9 h-9 animate-[spin_4s_linear_infinite]"
-                    />
-                </div>
-
-                <h2
-                    class="text-xl font-bold text-[#21272C] dark:text-[#FDFDFD] mb-3"
-                >
-                    {$t("maintenance_title")}
-                </h2>
-
-                <p
-                    class="text-sm text-gray-500 dark:text-[#B7B6B3] leading-relaxed"
-                >
-                    {$t("maintenance_desc")}
-                </p>
-
-                <button
-                    on:click={() => (window.location.href = "/records")}
-                    class="mt-6 px-6 py-2 bg-gray-100 hover:bg-gray-200 dark:bg-[#2C2C2C] dark:hover:bg-[#1E1E1E] text-gray-700 dark:text-[#E0E0E0] text-sm font-bold rounded-lg transition-colors"
-                >
-                    {$t("home.go_back") || "Go back"}
-                </button>
+                <Icon name="close" class="w-5 h-5" />
+                {errorMsg}
             </div>
-        </div>
-    {/if}
+        {/if}
+
+        <ImportPreviewReport
+            {previewReport}
+            {isLoading}
+            getBannerName={getBannerName}
+            on:save={confirmSave}
+        />
+    </div>
 </div>
+
 <ConfirmationModal
     isOpen={isDeleteModalOpen}
-    title={$t("import.delete_token_title") || "Delete Token"}
-    description={$t("import.delete_confirm") ||
-        "Are you sure you want to delete this saved token?"}
-    confirmText={$t("settings.account.delete") || "Delete"}
+    title={$t("import.delete_token_title")}
+    description={$t("import.delete_confirm")}
+    confirmText={$t("settings.account.delete")}
     isDestructive={true}
     on:confirm={confirmDeleteToken}
     on:close={cancelDeleteToken}
 />
 
 <style>
-    /* Hide scrollbar on mobile devices (< 720px) */
     @media (max-width: 719px) {
         .no-scrollbar {
             scrollbar-width: none;
@@ -2123,7 +981,6 @@
         }
     }
 
-    /* Styled thin scrollbar for PC/Tablet (>= 720px) to scroll if tabs overflow */
     @media (min-width: 720px) {
         .no-scrollbar::-webkit-scrollbar {
             height: 5px;
@@ -2132,17 +989,17 @@
             background: transparent;
         }
         .no-scrollbar::-webkit-scrollbar-thumb {
-            background: #d1d5db; /* gray-300 */
+            background: #d1d5db;
             border-radius: 9999px;
         }
         :global(.dark) .no-scrollbar::-webkit-scrollbar-thumb {
-            background: #4b5563; /* gray-600 */
+            background: #4b5563;
         }
         .no-scrollbar::-webkit-scrollbar-thumb:hover {
-            background: #9ca3af; /* gray-400 */
+            background: #9ca3af;
         }
         :global(.dark) .no-scrollbar::-webkit-scrollbar-thumb:hover {
-            background: #6b7280; /* gray-500 */
+            background: #6b7280;
         }
     }
 </style>

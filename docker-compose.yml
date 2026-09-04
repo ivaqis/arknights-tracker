@@ -1,27 +1,36 @@
 services:
   db:
-    image: postgres:16
+    image: postgres:17
+    container_name: goyfield-postgres
+    restart: unless-stopped
     environment:
-      POSTGRES_DB: arknights
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: ${POSTGRES_DB:?POSTGRES_DB is required}
+      POSTGRES_USER: ${POSTGRES_USER:?POSTGRES_USER is required}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?POSTGRES_PASSWORD is required}
+    ports:
+      - "${POSTGRES_PORT:-5432}:5432"
     volumes:
       - pgdata:/var/lib/postgresql/data
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U postgres -d arknights"]
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
       interval: 5s
       timeout: 5s
       retries: 10
 
   backend:
     build:
-      context: ./arknights-backend
+      context: ./goyfield-backend
+    restart: unless-stopped
     ports:
-      - "3001:3001"
+      - "${BACKEND_PORT:-3001}:3001"
     environment:
-      DB_PROVIDER: "postgres"
-      DATABASE_URL: "postgresql://postgres:postgres@db:5432/arknights?schema=public"
-      ADMIN_SECRET: "change_me"
+      NODE_ENV: ${NODE_ENV:-production}
+      PORT: 3001
+      DATABASE_URL: "postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB}?schema=public"
+      ADMIN_SECRET: ${ADMIN_SECRET:?ADMIN_SECRET is required}
+      SIGN_SECRET: ${SIGN_SECRET:?SIGN_SECRET is required}
+      SIGN_ISSUER: ${SIGN_ISSUER:-goyfield}
+      LOGGING_LEVEL: ${LOGGING_LEVEL:-info}
     depends_on:
       db:
         condition: service_healthy
@@ -29,11 +38,12 @@ services:
   frontend:
     build:
       context: ./arknights-tracker
+    restart: unless-stopped
     environment:
-      PUBLIC_API_BASE: "http://localhost:3001/api"
-      PUBLIC_AUDIO_BASE: ""
+      PUBLIC_API_BASE: ${PUBLIC_API_BASE:-http://localhost:3001/api/v2}
+      PUBLIC_AUDIO_BASE: ${PUBLIC_AUDIO_BASE:-""}
     ports:
-      - "3000:3000"
+      - "${FRONTEND_PORT:-3000}:3000"
     depends_on:
       - backend
 

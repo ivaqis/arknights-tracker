@@ -3,7 +3,7 @@ import type { SyncPullsResponse } from "$lib/api/syncPulls/contracts/SyncPullsRe
 import { config } from "$lib/config";
 
 export async function fetchSyncPulls(token: string, confirm: boolean): Promise<SyncPullsResponse> {
-    const url = `${config.API_BASE}/api/v2/import/sync?token=${token}`;
+    const url = `${config.API_BASE}/api/v2/import/sync?token=${encodeURIComponent(token)}`;
 
     const response = await fetch(url, {
         method: "POST",

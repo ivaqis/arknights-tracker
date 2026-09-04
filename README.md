@@ -13,10 +13,17 @@ A functional pull tracker and global statistics database for Arknights: Endfield
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Firebase](https://firebase.google.com/) (Authentication, Firestore, Analytics)
 
-**Backend (`/arknights-backend`):**
+**Backend (`/goyfield-backend`):**
 - [Node.js](https://nodejs.org/) & [Express.js](https://expressjs.com/)
+- [TypeScript](https://www.typescriptlang.org/)
 - [Prisma ORM](https://www.prisma.io/)
-- [PostgreSQL](https://www.postgresql.org/) or [SQLite](https://www.sqlite.org/) (Database for storing statistics)
+- [PostgreSQL](https://www.postgresql.org/) (Database for storing statistics, users, and leaderboards)
+
+---
+
+## API Documentation
+
+The backend API endpoints, parameters, and responses are documented in [`goyfield-backend/API.md`](goyfield-backend/API.md).
 
 ---
 
@@ -33,12 +40,12 @@ Since the game and the tracker receive regular updates, here is how you can get 
 ## How to run the tracker locally
 
 ### Prerequisites
-Make sure you have [Node.js](https://nodejs.org/) installed on your computer.
+Make sure you have [Node.js](https://nodejs.org/) (version 20 or higher) and [PostgreSQL](https://www.postgresql.org/) installed on your computer.
 
 ### Method 1: Using the launch script (Windows only)
 1. Open the downloaded project folder.
-2. Double-click the `start.bat` file.
-3. It will automatically install the necessary modules, start both servers, and open the site in your browser at `http://localhost:5173`.
+2. Double-click the launch script (`start2.bat`).
+3. It will automatically install the necessary modules, generate the Prisma client, start both servers, and open the site in your browser at `http://localhost:5173`.
 *(Do not close the console window while using the site!)*
 
 ### Method 2: Manual launch
@@ -46,20 +53,42 @@ Make sure you have [Node.js](https://nodejs.org/) installed on your computer.
 #### Step 1: Start the Backend
 1. Open your command line.
 2. Navigate to the backend folder using the `cd` command (replace with your actual path):
-   `cd path_to_your_folder/arknights-backend`
-3. Install the required modules (you only need to do this once):
-   `npm install`
-4. Start the server:
-   `node server.js`
+   ```bash
+   cd path_to_your_folder/goyfield-backend
+   ```
+3. Configure your environment variables by creating `.env` (refer to `.env.example`).
+4. Install the required modules (you only need to do this once):
+   ```bash
+   npm install
+   ```
+5. Generate the Prisma client:
+   ```bash
+   npm run prisma:v2:generate
+   ```
+6. Apply database migrations:
+   ```bash
+   npm run prisma:v2:migrate
+   ```
+7. Start the server:
+   ```bash
+   npm run dev
+   ```
+   *(Alternatively, run `npm run start:local` or build with `npm run build` and run `npm start`)*
 
 #### Step 2: Start the Frontend
 1. Open a second command line window.
 2. Navigate to the frontend folder:
-   `cd path_to_your_folder/arknights-tracker`
+   ```bash
+   cd path_to_your_folder/arknights-tracker
+   ```
 3. Install the website modules:
-   `npm install`
+   ```bash
+   npm install
+   ```
 4. Start the site in developer mode:
-   `npm run dev`
+   ```bash
+   npm run dev
+   ```
 
 #### Step 3: View the site
 Now open your favorite browser and type the following into the address bar:
@@ -71,28 +100,18 @@ When importing pulls, the site will automatically detect that you are running it
 
 # Docker deployment
 
-This repo supports both PostgreSQL and SQLite deployments via separate compose files and provider-specific Prisma schemas/migrations.
+This repo uses Docker Compose to run PostgreSQL, the backend (`goyfield-backend`), and the frontend (`arknights-tracker`).
 
-## PostgreSQL (recommended)
 ```bash
 docker compose up --build
 ```
 
-## SQLite
-```bash
-docker compose -f docker-compose.sqlite.yml up --build
-```
-
 ## Database migrations
-Prisma uses provider-specific schemas and migrations:
-- PostgreSQL: `arknights-backend/prisma/postgres`
-- SQLite: `arknights-backend/prisma/sqlite`
+Prisma schema and migrations are located in `goyfield-backend/prisma/v2`:
+- Schema: `goyfield-backend/prisma/v2/schema.prisma`
 
-Helper scripts (run inside `arknights-backend`):
+Helper scripts (run inside `goyfield-backend`):
 ```bash
-npm run generate:pg
-npm run migrate:pg
-
-npm run generate:sqlite
-npm run migrate:sqlite
+npm run prisma:v2:generate
+npm run prisma:v2:migrate
 ```
