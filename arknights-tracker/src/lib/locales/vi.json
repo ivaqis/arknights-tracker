@@ -215,7 +215,7 @@
     "pc_web_step2": "Trên thanh dấu trang (nhấn Ctrl + Shift + B để hiển thị), nhấp vào 'Thêm trang', đặt tên bất kỳ và dán mã này vào trường URL:",
     "pc_web_step3": "Trong khi ở trên trang web, hãy nhấp vào dấu trang đó — liên kết sẽ được sao chép.",
     "pc_web_hint": "Phương pháp này an toàn và hoạt động trực tiếp thông qua trình duyệt của bạn.",
-    "tab_ios": "iOS (Beta)",
+    "tab_ios": "iOS ",
     "wip": "Đang phát triển",
     "manual_text_pre": "Đi tới tệp",
     "manual_text_mid": " mở nó bằng Notepad, cuộn xuống dưới cùng và tìm một liên kết giống như",
@@ -2458,7 +2458,8 @@
     "not_synced_btn": "Liên Kết Hồ Sơ",
     "unauthorized": "Vui lòng đăng nhập để tham gia",
     "last_update": "Cập Nhật Cuối",
-    "loading_details": "Đang tải chi tiết..."
+    "loading_details": "Đang tải chi tiết...",
+    "echoesOfWar": "Tiếng Vọng Nơi Chiến Trận"
   },
   "profile": {
     "title": "Hồ Sơ Người Chơi",

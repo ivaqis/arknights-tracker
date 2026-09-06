@@ -208,7 +208,7 @@
     "tab_pc2": "PC 2",
     "tab_pc_manual": "PC (ด้วยตนเอง)",
     "tab_android": "Android",
-    "tab_ios": "iOS (Beta)",
+    "tab_ios": "iOS ",
     "wip": "กำลังพัฒนา",
     "manual_text_pre": "ไปที่ไฟล์",
     "manual_text_mid": " เปิดด้วย Notepad เลื่อนลงไปล่างสุด และค้นหาลิงก์ในรูปแบบ",
@@ -2415,7 +2415,8 @@
     "not_synced_btn": "เชื่อมโยงโปรไฟล์",
     "unauthorized": "กรุณาเข้าสู่ระบบ",
     "last_update": "อัปเดตล่าสุด",
-    "loading_details": "กำลังโหลดรายละเอียด..."
+    "loading_details": "กำลังโหลดรายละเอียด...",
+    "echoesOfWar": "เสียงสะท้อน​แห่ง​สงคราม"
   },
   "profile": {
     "title": "โปรไฟล์ผู้เล่น",

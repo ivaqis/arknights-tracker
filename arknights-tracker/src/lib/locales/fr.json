@@ -208,7 +208,7 @@
     "tab_pc2": "PC 2",
     "tab_pc_manual": "PC Manuel",
     "tab_android": "Android",
-    "tab_ios": "iOS (Beta)",
+    "tab_ios": "iOS ",
     "wip": "En cours de développement",
     "manual_text_pre": "Allez dans le fichier",
     "manual_text_mid": " ouvrez-le avec le Bloc-notes, faites défiler tout en bas et trouvez un lien du type",
@@ -2415,7 +2415,8 @@
     "not_synced_btn": "Lier le Profil",
     "unauthorized": "Veuillez vous connecter",
     "last_update": "Dernière Mise à Jour",
-    "loading_details": "Chargement des détails..."
+    "loading_details": "Chargement des détails...",
+    "echoesOfWar": "Échos guerriers"
   },
   "profile": {
     "title": "Profil du Joueur",

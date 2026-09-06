@@ -208,7 +208,7 @@
     "tab_pc2": "PC 2",
     "tab_pc_manual": "PC Manual",
     "tab_android": "Android",
-    "tab_ios": "iOS (Beta)",
+    "tab_ios": "iOS",
     "wip": "Em Desenvolvimento",
     "manual_text_pre": "Vá até o arquivo",
     "manual_text_mid": " abra-o com o Bloco de Notas, role até o final e encontre um link como",
@@ -2415,7 +2415,8 @@
     "not_synced_btn": "Vincular Perfil",
     "unauthorized": "Faça login para participar",
     "last_update": "Última Atualização",
-    "loading_details": "Carregando detalhes..."
+    "loading_details": "Carregando detalhes...",
+    "echoesOfWar": "Ecos da Guerra"
   },
   "profile": {
     "title": "Perfil do Jogador",

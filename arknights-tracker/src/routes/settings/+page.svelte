@@ -777,7 +777,7 @@
             class="bg-gray-200 rounded-xl p-5 dark:bg-[#383838] dark:border-[#444444] dark:text-[#B7B6B3] mb-3 flex items-start gap-3 text-gray-600 text-sm leading-relaxed"
         >
             <div class="mt-0.5 flex-shrink-0">
-                <Icon name="info" class="w-4.5 h-4.5 text-gray-400" />
+                <Icon name="info" class="w-4 h-4 text-gray-400" />
             </div>
             <p>{$t("settings.backup.description")}</p>
         </div>
@@ -810,7 +810,7 @@
             class="bg-gray-200 rounded-xl p-5 mb-5 dark:bg-[#383838] dark:border-[#444444] dark:text-[#B7B6B3] flex items-start gap-3 text-gray-600 text-sm leading-relaxed"
         >
             <div class="mt-0.5 flex-shrink-0">
-                <Icon name="info" class="w-4.5 h-4.5 text-gray-400" />
+                <Icon name="info" class="w-4 h-4 text-gray-400" />
             </div>
             <p>{$t("settings.feedback.text")}</p>
         </div>

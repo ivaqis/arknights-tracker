@@ -558,7 +558,7 @@
                 bind:checked={$recordsEnableDragDrop}
               >
                 <span class="text-sm font-medium dark:text-[#E0E0E0]">
-                  {$t("page.recordsSettings.dragMode")} (Beta)
+                  {$t("page.recordsSettings.dragMode")}
                 </span>
               </Checkbox>
 

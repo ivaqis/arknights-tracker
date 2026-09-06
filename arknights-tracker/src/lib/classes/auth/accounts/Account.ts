@@ -33,17 +33,20 @@ export class Account {
     }
 
     public static toJsonList(accounts: Account[]): string {
-        return JSON.stringify(accounts.map(account => account.toData()));
+        return JSON.stringify(accounts.map(account => (typeof account?.toData === 'function' ? account.toData() : account)));
     }
 
-    public static createFromData(updateCallback: () => void, isExist: (value: AccountUniqueConstraint) => boolean, data: AccountData): Account {
+    public static createFromData(updateCallback: () => void, isExist: (value: AccountUniqueConstraint) => boolean, data: any): Account {
+        if (data instanceof Account) {
+            return data;
+        }
         return new Account(
             updateCallback,
             isExist,
-            data.id,
-            data.name,
-            data.serverUid,
-            data.serverId
+            data?.id ?? data?._id ?? this.DEFAULT_ID,
+            data?.name ?? data?._name ?? this.DEFAULT_NAME,
+            data?.serverUid ?? data?._serverUid ?? null,
+            data?.serverId ?? data?._serverId ?? null
         );
     }
 
@@ -139,5 +142,9 @@ export class Account {
             serverUid: this.serverUid,
             serverId: this.serverId
         };
+    }
+
+    public toJSON(): AccountData {
+        return this.toData();
     }
 }

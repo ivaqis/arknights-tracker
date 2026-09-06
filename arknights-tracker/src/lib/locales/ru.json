@@ -2593,7 +2593,8 @@
     "not_synced_btn": "Связать профиль",
     "unauthorized": "Пожалуйста, войдите, чтобы участвовать",
     "last_update": "Последнее обновление",
-    "loading_details": "Загрузка деталей..."
+    "loading_details": "Загрузка деталей...",
+    "echoesOfWar": "Эхо войны"
   },
   "profile": {
     "title": "Профиль игрока",

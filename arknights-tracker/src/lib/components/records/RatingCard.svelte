@@ -2,7 +2,7 @@
   import { t } from "$lib/i18n.js";
   import { pullData } from "$lib/stores/pulls.js";
   import { bannerTypes } from "$lib/data/bannerTypes.js";
-  import { fetchGlobalStats } from "$lib/api.js";
+  import { fetchRankingRate } from "$lib/api.js";
   import { browser } from "$app/environment";
   import { accountStore } from "$lib/stores/accounts.js";
 
@@ -13,11 +13,14 @@
   export let customGameUid = undefined;
   export let isProfile = false;
   export let hideBorders = false;
+  export let activeTab = "total";
+  export let showTabs = true;
+  export let profileStats = undefined;
 
   const { accounts, selectedId } = accountStore;
-  
+
   $: currentAccount = $accounts.find(a => a.id === $selectedId);
-  $: gameUid = customGameUid || currentAccount?.serverUid; 
+  $: gameUid = customGameUid || currentAccount?.serverUid;
 
   const totalTab = {
       id: "total",
@@ -32,32 +35,128 @@
         .sort((a, b) => a.order - b.order)
   ];
 
-  export let activeTab = "total";
-  export let showTabs = true;
-  $: localStore = $pullData[activeTab] || { pulls: [], stats: {} };
-  $: localStats = localStore.stats || {};
-  $: localTotal = localStore.pulls?.length || 0;
-  $: localAvg6 = localStats.avg6 ? parseFloat(localStats.avg6) : 0;
-  $: localAvg5 = localStats.avg5 ? parseFloat(localStats.avg5) : 0;
-  $: localWinRate = localStats.winRate?.percent ? parseFloat(localStats.winRate.percent) : 0;
-  
-  let serverData = null;
-  
-  $: displayTotal = serverData?.myStats?.total ?? localTotal;
-  $: displayAvg6 = serverData?.myStats?.avg6 ? parseFloat(serverData.myStats.avg6) : localAvg6;
-  $: displayWinRate = serverData?.myStats?.winRate ? parseFloat(serverData.myStats.winRate) : localWinRate;
+  $: currentProfileStat = (() => {
+      const statsObj = profileStats || currentAccount?.pulls?.stats || currentAccount?.pulls;
+      if (!statsObj) return null;
+      if (activeTab === "total") return statsObj.all || statsObj.stats?.all || null;
+      return statsObj[activeTab] || statsObj.stats?.[activeTab] || null;
+  })();
 
-  const safeParse = (val) => {
-      if (val === null || val === undefined) return null;
+  $: localStats = (() => {
+      if (activeTab === "total") {
+          let total = 0;
+          let count5 = 0;
+          let count6 = 0;
+          let sumPity6 = 0;
+          let sumPity5 = 0;
+          let total5050 = 0;
+          let won5050 = 0;
+
+          for (const key of Object.keys($pullData || {})) {
+              const store = $pullData[key];
+              if (!store) continue;
+              const count = store.pulls?.length || 0;
+              const st = store.stats || {};
+              total += count;
+              count5 += (st.count5 || 0);
+              count6 += (st.count6 || 0);
+              if (st.avg6 && st.count6) {
+                  sumPity6 += parseFloat(st.avg6) * st.count6;
+              }
+              if (st.avg5 && st.count5) {
+                  sumPity5 += parseFloat(st.avg5) * st.count5;
+              }
+              total5050 += (st.winRate?.total || 0);
+              won5050 += (st.winRate?.won || 0);
+          }
+
+          return {
+              total,
+              count5,
+              count6,
+              avg6: count6 > 0 ? (sumPity6 / count6).toFixed(1) : "0.0",
+              avg5: count5 > 0 ? (sumPity5 / count5).toFixed(1) : "0.0",
+              total5050,
+              won5050,
+              winRate: total5050 > 0 ? ((won5050 / total5050) * 100).toFixed(1) : "0.0"
+          };
+      }
+
+      const store = $pullData?.[activeTab] || { pulls: [], stats: {} };
+      const st = store.stats || {};
+      const pulls = store.pulls || [];
+      return {
+          total: pulls.length,
+          count5: st.count5 || 0,
+          count6: st.count6 || 0,
+          avg6: st.avg6 || "0.0",
+          avg5: st.avg5 || "0.0",
+          total5050: st.winRate?.total || 0,
+          won5050: st.winRate?.won || 0,
+          winRate: st.winRate?.percent !== undefined ? st.winRate.percent : "0.0"
+      };
+  })();
+
+  let serverData = null;
+  let lastFetchKey = "";
+
+  $: if (currentProfileStat) {
+      serverData = currentProfileStat;
+  } else if (browser && activeTab) {
+      const queryType = activeTab === "total" ? "all" : activeTab;
+      const fetchKey = `${queryType}_${localStats.total}_${localStats.count6}_${localStats.count5}_${localStats.total5050}_${localStats.won5050}`;
+      if (fetchKey !== lastFetchKey) {
+          lastFetchKey = fetchKey;
+          loadRankings(queryType, localStats);
+      }
+  }
+
+  async function loadRankings(bannerType, stats) {
+      if (!browser || !stats || stats.total === 0) {
+          serverData = null;
+          return;
+      }
+      try {
+          const isEvent = bannerType === "all" || ["special", "joint", "weap-special", "weap-standard"].includes(bannerType);
+          const params = {
+              bannerType,
+              totalPulls: stats.total,
+              total5Pulls: Math.min(stats.count5, stats.total),
+              total6Pulls: Math.min(stats.count6, stats.total),
+              countMe: true
+          };
+          if (isEvent) {
+              params.total5050 = stats.total5050;
+              params.won5050 = Math.min(stats.won5050, stats.total5050);
+          }
+          const res = await fetchRankingRate(params);
+          serverData = res;
+      } catch (e) {
+          serverData = null;
+      }
+  }
+
+  const parseRating = (val) => {
+      if (!val) return null;
+      if (typeof val === "object" && typeof val.from === "number" && typeof val.to === "number") {
+          return ((val.from + val.to) / 2) * 100;
+      }
       const num = parseFloat(val);
       return isNaN(num) ? null : num;
   };
 
-  $: rankTotal = safeParse(serverData?.rankTotal);
-  $: rankLuck6 = safeParse(serverData?.rankLuck6);
-  $: rank5050 = safeParse(serverData?.rank5050);
-  $: rankLuck5 = safeParse(serverData?.rankLuck5);
+  $: rankTotal = parseRating(serverData?.totalPulls?.rating ?? serverData?.rankTotal);
+  $: rankLuck6 = parseRating(serverData?.luck6?.rating ?? serverData?.rankLuck6);
+  $: rank5050 = parseRating(serverData?.luck5050?.rating ?? serverData?.rank5050);
+  $: rankLuck5 = parseRating(serverData?.luck5?.rating ?? serverData?.rankLuck5);
   $: totalUsers = serverData?.totalUsers || 0;
+
+  $: displayTotal = serverData?.totalPulls?.count ?? serverData?.myStats?.total ?? localStats.total;
+  $: displayAvg6 = serverData?.luck6?.avg ?? serverData?.myStats?.avg6 ?? localStats.avg6;
+  $: displayAvg5 = serverData?.luck5?.avg ?? serverData?.myStats?.avg5 ?? localStats.avg5;
+  $: displayWinRate = serverData?.luck5050?.winRate !== undefined && serverData?.luck5050?.winRate !== null
+      ? (serverData.luck5050.winRate * 100).toFixed(1)
+      : (serverData?.myStats?.winRate ?? localStats.winRate);
 
   const getRankValue = (rank) => {
       if (rank === null) return null;
@@ -79,32 +178,10 @@
   };
 
   function formatVal(val) {
-    return val !== null && val !== undefined && !isNaN(val) ? val : "0";
-  }
-
-  $: if (browser && activeTab) {
-      if (gameUid) {
-          const queryId = activeTab === "total" ? "all" : activeTab;
-          loadRankings(queryId, gameUid);
-      } else {
-          serverData = null; 
-      }
-  }
-
-  async function loadRankings(poolId, uid) {
-    if (!browser || !uid) return;
-    try {
-      const response = await fetchGlobalStats(uid, poolId);
-      if (uid !== gameUid) return; 
-      if (response && (response.code === 0 || response.found)) {
-         serverData = response.data || response;
-      } else {
-         serverData = null;
-      }
-    } catch (e) {
-      console.error("Fetch Failed", e);
-      serverData = null;
-    }
+      if (val === null || val === undefined) return "0";
+      const num = Number(val);
+      if (isNaN(num)) return "0";
+      return num.toFixed(1);
   }
 </script>
 
@@ -114,7 +191,7 @@
     : 'bg-white dark:bg-[#383838] dark:border-[#444444] border-gray-100 dark:border-[#444444]'}">
   <div class="flex justify-between items-center mb-4 relative z-20">
     <h3 class="text-xl font-bold dark:text-[#FDFDFD] font-sdk text-[#21272C]">
-      {isProfile ? ($t("profile.pulls_rating") || "Рейтинг круток") : $t("page.rating.ratingTitle")}
+      {isProfile ? $t("profile.pulls_rating") : $t("page.rating.ratingTitle")}
     </h3>
 
     <div class="group relative flex items-center py-1 pl-4 text-gray-400/90 dark:text-[#7A7A7A]">
@@ -192,11 +269,11 @@
                   {$t(getRankLabel(rankTotal))} {getRankValue(rankTotal)}%
               </div>
               <div class="text-sm text-gray-400 dark:text-[#B7B6B3] font-semibold">
-                {displayTotal.toLocaleString("ru-RU")}
+                {Number(displayTotal).toLocaleString("ru-RU")}
               </div>
           {:else}
               <div class="flex items-center gap-2 opacity-50 justify-end">
-                  <span class="text-sm font-medium text-gray-700 dark:text-[#B7B6B3]">{$t("page.rating.noData") || "No Data"}</span>
+                  <span class="text-sm font-medium text-gray-700 dark:text-[#B7B6B3]">{$t("page.rating.noData")}</span>
                   <Icon name="noData" class="w-4 h-4 text-[#A0A0A0]" />
               </div>
           {/if}
@@ -234,7 +311,7 @@
               </div>
           {:else}
               <div class="flex items-center gap-2 opacity-50 justify-end">
-                  <span class="text-sm font-medium text-gray-700 dark:text-[#B7B6B3]">{$t("page.rating.noData") || "No Data"}</span>
+                  <span class="text-sm font-medium text-gray-700 dark:text-[#B7B6B3]">{$t("page.rating.noData")}</span>
                   <Icon name="noData" class="w-4 h-4 text-[#A0A0A0]" />
               </div>
           {/if}
@@ -267,7 +344,7 @@
             </div>
         {:else}
             <div class="flex items-center gap-2 opacity-50 justify-end">
-                <span class="text-sm font-medium text-gray-700 dark:text-[#B7B6B3]">{$t("page.rating.noData") || "No Data"}</span>
+                <span class="text-sm font-medium text-gray-700 dark:text-[#B7B6B3]">{$t("page.rating.noData")}</span>
                 <Icon name="noData" class="w-4 h-4 text-[#A0A0A0]" />
             </div>
         {/if}
@@ -295,11 +372,11 @@
                {$t(getRankLabel(rankLuck5))} {getRankValue(rankLuck5)}%
             </div>
             <div class="text-sm font-semibold dark:text-[#E3BC55] text-[#E3BC55]">
-              {formatVal(serverData?.myStats?.avg5 ?? localAvg5)} <span class="dark:text-[#E3BC55] text-[#E3BC55] font-semibold">{$t("page.rating.avg")}</span>
+              {formatVal(displayAvg5)} <span class="dark:text-[#E3BC55] text-[#E3BC55] font-semibold">{$t("page.rating.avg")}</span>
             </div>
         {:else}
             <div class="flex items-center gap-2 opacity-50 justify-end">
-                <span class="text-sm font-medium text-gray-700 dark:text-[#B7B6B3]">{$t("page.rating.noData") || "No Data"}</span>
+                <span class="text-sm font-medium text-gray-700 dark:text-[#B7B6B3]">{$t("page.rating.noData")}</span>
                 <Icon name="noData" class="w-4 h-4 text-[#A0A0A0]" />
             </div>
         {/if}
@@ -317,7 +394,7 @@
             }
             onClick={() => (activeTab = tab.id)}
           >
-            {$t(tab.i18nKey) || tab.id}
+            {$t(tab.i18nKey)}
           </Button>
         {/each}
       </div>

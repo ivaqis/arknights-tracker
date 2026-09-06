@@ -2415,7 +2415,8 @@
     "not_synced_btn": "프로필 연동",
     "unauthorized": "참여하려면 로그인하세요",
     "last_update": "마지막 업데이트",
-    "loading_details": "상세 정보 불러오는 중..."
+    "loading_details": "상세 정보 불러오는 중...",
+    "echoesOfWar": "전쟁의 메아리"
   },
   "profile": {
     "title": "플레이어 프로필",

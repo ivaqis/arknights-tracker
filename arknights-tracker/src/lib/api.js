@@ -39,6 +39,31 @@ export async function fetchGlobalStats(uid, poolId) {
     }
 }
 
+export async function fetchRankingRate(params) {
+    try {
+        const searchParams = new URLSearchParams();
+        searchParams.set('bannerType', params.bannerType);
+        searchParams.set('totalPulls', String(params.totalPulls));
+        searchParams.set('total5Pulls', String(params.total5Pulls));
+        searchParams.set('total6Pulls', String(params.total6Pulls));
+        if (params.total5050 !== undefined && params.total5050 !== null) {
+            searchParams.set('total5050', String(params.total5050));
+        }
+        if (params.won5050 !== undefined && params.won5050 !== null) {
+            searchParams.set('won5050', String(params.won5050));
+        }
+        searchParams.set('countMe', params.countMe !== undefined ? String(params.countMe) : 'true');
+
+        const res = await fetch(`${API_BASE}/rankings/rate?${searchParams.toString()}`);
+        if (!res.ok) return null;
+        const json = await res.json();
+        return json.data?.stats ?? null;
+    } catch (e) {
+        console.error('fetchRankingRate Error:', e);
+        return null;
+    }
+}
+
 export async function getUserProfile(uid, token = null) {
     try {
         const headers = {};

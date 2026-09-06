@@ -208,7 +208,7 @@
     "tab_pc2": "PC 2",
     "tab_pc_manual": "PC Manuale",
     "tab_android": "Android",
-    "tab_ios": "iOS (Beta)",
+    "tab_ios": "iOS",
     "wip": "Lavori in corso",
     "manual_text_pre": "Vai al file",
     "manual_text_mid": " aprilo con il Blocco note, scorri fino in fondo e trova un link simile a",
@@ -2415,7 +2415,8 @@
     "not_synced_btn": "Collega Profilo",
     "unauthorized": "Effettua l'accesso per partecipare",
     "last_update": "Ultimo Aggiornamento",
-    "loading_details": "Caricamento dettagli..."
+    "loading_details": "Caricamento dettagli...",
+    "echoesOfWar": "Echi di guerra"
   },
   "profile": {
     "title": "Profilo Giocatore",

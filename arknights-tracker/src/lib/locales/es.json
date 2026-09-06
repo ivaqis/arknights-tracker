@@ -213,7 +213,7 @@
     "pc_web_step3": "Mientras esté en el sitio web, haga clic en ese marcador y el enlace se copiará.",
     "pc_web_hint": "Este método es seguro y funciona directamente a través de su navegador.",
     "tab_android": "Android",
-    "tab_ios": "iOS (Beta)",
+    "tab_ios": "iOS",
     "wip": "En Progreso",
     "manual_text_pre": "Ve al archivo",
     "manual_text_mid": ", baja hasta el final y encuentra un enlace como",
@@ -2417,7 +2417,8 @@
     "not_synced_btn": "Vincular Perfil",
     "unauthorized": "Inicia sesión para participar",
     "last_update": "Última Actualización",
-    "loading_details": "Cargando detalles..."
+    "loading_details": "Cargando detalles...",
+    "echoesOfWar": "Ecos de guerra"
   },
   "profile": {
     "title": "Perfil del Jugador",

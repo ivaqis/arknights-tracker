@@ -306,10 +306,10 @@
 
         {#if filteredOperators.length === 0}
             <div
-                class="text-center py-20 text-gray-400 italic flex flex-col items-center justify-center"
+                class="text-center py-20 text-gray-400 italic flex flex-col items-center justify-center bg-gray-50 dark:bg-[#2C2C2C] rounded-2xl border border-dashed border-gray-200 dark:border-[#444]"
             >
-                <Icon name="noData" class="w-4 h-4" />
-                <p class="text-sm">
+                <Icon name="noData" class="w-10 h-10 mb-3 opacity-30" />
+                <p class="text-sm font-medium">
                     {$t("emptyState.noData")}
                 </p>
             </div>

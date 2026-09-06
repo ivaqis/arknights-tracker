@@ -2590,7 +2590,8 @@
     "not_synced_btn": "Link Profile",
     "unauthorized": "Please log in to participate",
     "last_update": "Last Update",
-    "loading_details": "Loading details..."
+    "loading_details": "Loading details...",
+    "echoesOfWar": "Echoes of War"
   },
   "profile": {
     "title": "Player Profile",

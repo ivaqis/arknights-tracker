@@ -2415,7 +2415,8 @@
     "not_synced_btn": "プロファイル連携",
     "unauthorized": "参加するにはログインしてください",
     "last_update": "最終更新",
-    "loading_details": "詳細を読み込み中..."
+    "loading_details": "詳細を読み込み中...",
+    "echoesOfWar": "戦争残響"
   },
   "profile": {
     "title": "プレイヤープロファイル",

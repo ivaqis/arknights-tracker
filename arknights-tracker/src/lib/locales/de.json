@@ -208,7 +208,7 @@
     "tab_pc2": "PC 2",
     "tab_pc_manual": "PC Manuell",
     "tab_android": "Android",
-    "tab_ios": "iOS (Beta)",
+    "tab_ios": "iOS",
     "wip": "In Arbeit",
     "manual_text_pre": "Gehe zur Datei",
     "manual_text_mid": " öffnen Sie sie mit dem Editor, scrollen Sie ganz nach unten und suchen Sie nach einem Link wie",
@@ -2414,7 +2414,8 @@
     "not_synced_btn": "Profil verknüpfen",
     "unauthorized": "Bitte melde dich an, um teilzunehmen",
     "last_update": "Letztes Update",
-    "loading_details": "Details werden geladen..."
+    "loading_details": "Details werden geladen...",
+    "echoesOfWar": "Echos des Krieges"
   },
   "profile": {
     "title": "Spielerprofil",

@@ -1311,7 +1311,7 @@
         </div>
     {:else if !$user}
         <div class="flex items-center justify-center min-h-[70vh] relative z-10" in:fade>
-            <div class="bg-white/5 border border-white/10 p-8 rounded-2xl max-w-lg text-center backdrop-blur-md shadow-2xl flex flex-col items-center">
+            <div class="bg-white/5 border border-white/10 p-8 rounded-2xl max-w-lg text-center flex flex-col items-center">
                 <h2 class="text-2xl font-bold dark:text-white text-gray-900 mb-4 font-sdk">
                     {$t("profile.sync_title")}
                 </h2>
@@ -1329,7 +1329,7 @@
         </div>
     {:else if needsRegistration}
         <div class="flex items-center justify-center min-h-[70vh] relative z-10" in:fade>
-            <div class="bg-white/5 border border-white/10 p-8 rounded-2xl w-full max-w-md backdrop-blur-md shadow-2xl flex flex-col items-center">
+            <div class="bg-white/5 border border-white/10 p-8 rounded-2xl w-full max-w-md flex flex-col items-center">
                 <h2 class="text-2xl font-bold dark:text-white text-gray-900 mb-6 font-sdk">
                     {$t("profile.register_title")}
                 </h2>

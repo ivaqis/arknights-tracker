@@ -47,7 +47,7 @@
 
     let entries = [];
     let loading = true;
-    let selectedEvent = "contract"; // "contract" or "monument"
+    let selectedEvent = "contract";
     let serverFilter = "all"; // "all", "3" (Americas/Europe), "2" (Asia)
 
     let selectedEntry = null;
@@ -265,7 +265,7 @@
         </div>
 
         {#if !$user}
-            <div class="bg-white/5 border border-white/10 px-4 py-3 rounded-xl max-w-sm flex items-center gap-3">
+            <div class="bg-white/5 border border-white/10 px-4 py-2 rounded-xl max-w-sm flex items-center gap-3">
                 <Icon name="info" class="w-5 h-5 text-[#FFE145] shrink-0" />
                 <div class="text-xs text-gray-300 leading-normal">
                     {$t("leaderboard.not_synced_desc")}
@@ -281,14 +281,6 @@
         
         <div class="flex bg-gray-100 dark:bg-black/30 p-1 rounded-xl shrink-0">
             <button
-                on:click={() => selectedEvent = "contract"}
-                class="px-5 py-2.5 rounded-lg text-sm font-bold font-sdk transition-colors flex items-center gap-2
-                {selectedEvent === 'contract' ? 'bg-[#FFE145] text-gray-900' : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 hover:dark:text-gray-300'}"
-            >
-                <Icon name="contract" class="w-6 h-6" />
-                {$t("leaderboard.contract")}
-            </button>
-            <button
                 on:click={() => selectedEvent = "monument"}
                 disabled
                 class="px-5 py-2.5 rounded-lg text-sm font-bold font-sdk transition-colors cursor-not-allowed flex items-center gap-2
@@ -296,6 +288,23 @@
             >
                 <Icon name="monument" class="w-5 h-5" />
                 {$t("leaderboard.monument")}
+            </button>
+            <button
+                on:click={() => selectedEvent = "echoesOfWar"}
+                disabled
+                class="px-5 py-2.5 rounded-lg text-sm font-bold font-sdk transition-colors cursor-not-allowed flex items-center gap-2
+                {selectedEvent === 'echoesOfWar' ? 'bg-[#FFE145] text-gray-900' : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 hover:dark:text-gray-300'}"
+            >
+                <Icon name="echoesOfWar" class="w-5 h-5" />
+                {$t("leaderboard.echoesOfWar")}
+            </button>
+            <button
+                on:click={() => selectedEvent = "contract"}
+                class="px-5 py-2.5 rounded-lg text-sm font-bold font-sdk transition-colors flex items-center gap-2
+                {selectedEvent === 'contract' ? 'bg-[#FFE145] text-gray-900' : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 hover:dark:text-gray-300'}"
+            >
+                <Icon name="contract" class="w-6 h-6" />
+                {$t("leaderboard.contract")}
             </button>
         </div>
 
@@ -314,8 +323,11 @@
             <Icon name="loading" class="w-10 h-10 text-[#FFE145] animate-spin" />
         </div>
     {:else if filteredEntries.length === 0}
-        <div class="bg-white dark:bg-[#383838] border border-white/10 rounded-2xl p-12 text-center text-gray-500 text-sm shadow-sm">
-            {$t("leaderboard.no_entries")}
+        <div class="text-center py-20 text-gray-400 italic flex flex-col items-center justify-center bg-gray-50 dark:bg-[#2C2C2C] rounded-2xl border border-dashed border-gray-200 dark:border-[#444]">
+            <Icon name="noData" class="w-10 h-10 mb-3 opacity-30" />
+            <p class="text-sm font-medium">
+                {$t("leaderboard.no_entries")}
+            </p>
         </div>
     {:else}
         <div class="bg-white dark:bg-[#383838] border border-gray-200 dark:border-white/10 rounded-2xl overflow-hidden shadow-sm" in:fade>
@@ -636,7 +648,7 @@
                             <div class="flex justify-between items-center mb-2">
                                 <span class="text-gray-500 dark:text-gray-400">Event:</span>
                                 <span class="text-gray-900 dark:text-white font-bold font-sdk">
-                                    {$t("leaderboard.monument")}
+                                    {$t(`leaderboard.${selectedEvent}`)}
                                 </span>
                             </div>
                             <div class="flex justify-between items-center">

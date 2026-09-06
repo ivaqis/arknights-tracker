@@ -2610,5 +2610,12 @@
   <symbol id="pause" viewBox="0 0 24 24">
     <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" fill="currentColor"/>
   </symbol>
+
+  <symbol id="echoesOfWar" viewBox="0 0 57 86">
+    <path d="M24 0H33V1H31V4H32V5H31V12H32V14H31V31L34 34H40L42 32H44L50 34L52.5 35L57 32V38L55 36H35L32 41L34 50V58L32.5 59L31 68L28 69H27L25 68L22 70V50L25 41L22 36H2L0 38V32L4 35L8 34L13 32H15L17 34H23L26 31V14H25V12H26V5H25V4H26V1H24V0Z" fill="currentColor"/>
+    <path d="M26 71L28.5 72L31 70L30.5 75L28.5 77H27L26 75V71Z" fill="currentColor"/>
+    <path d="M33 63L35 62V77L34 83L32 86L30 83L32 80V72.5L33 63Z" fill="currentColor"/>
+    <path d="M28 78L31 77L30 79L29 80L28 79V78Z" fill="currentColor"/>
+  </symbol>
   
 </svg>

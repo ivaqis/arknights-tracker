@@ -22,9 +22,32 @@ export class AccountStore {
     public constructor() {
         const initialAccounts: Account[] = this.getInitialAccounts();
         const initialSelectedId: string = this.getInitialSelectedAccountId(initialAccounts);
-        const initialCurrentAccount: Account = initialAccounts.find(account => account.id === initialSelectedId)!;
+        const initialCurrentAccount: Account = initialAccounts.find(account => account.id === initialSelectedId) || initialAccounts[0];
 
-        this._accounts = writable(initialAccounts);
+        const rawAccountsStore = writable<Account[]>(initialAccounts);
+        const normalizeAccount = (item: any): Account => {
+            if (item instanceof Account) {
+                return item;
+            }
+            return Account.createFromData(this._updateCallback, this._isExistCallback, item);
+        };
+        const normalizeAccounts = (items: any[]): Account[] => {
+            if (!Array.isArray(items) || items.length === 0) {
+                return [ Account.createDefault(this._updateCallback, this._isExistCallback) ];
+            }
+            return items.map(normalizeAccount);
+        };
+
+        this._accounts = {
+            subscribe: rawAccountsStore.subscribe,
+            set: (value: any[]) => {
+                rawAccountsStore.set(normalizeAccounts(value));
+            },
+            update: (updater: (value: Account[]) => any[]) => {
+                rawAccountsStore.update(current => normalizeAccounts(updater(current)));
+            }
+        };
+
         this._selectedId = writable(initialSelectedId);
         this._currentAccount = writable(initialCurrentAccount);
 
@@ -44,16 +67,29 @@ export class AccountStore {
             return [ Account.createDefault(this._updateCallback, this._isExistCallback) ];
         }
 
-        const stored = localStorage.getItem(AccountStore.ACCOUNTS_KEY);
+        let stored = localStorage.getItem(AccountStore.ACCOUNTS_KEY);
+
+        if (!stored) {
+            const legacy = localStorage.getItem("ark_tracker_accounts");
+            if (legacy) {
+                try {
+                    const parsed = JSON.parse(legacy);
+                    if (parsed && Array.isArray(parsed.accounts)) {
+                        stored = JSON.stringify(parsed.accounts);
+                    }
+                } catch (e) {}
+            }
+        }
 
         if (!stored) {
             return [ Account.createDefault(this._updateCallback, this._isExistCallback) ];
         }
 
         try {
-            const data = JSON.parse(stored) as AccountData[];
+            const data = JSON.parse(stored) as any[];
 
-            return data.map(item => Account.createFromData(this._updateCallback, this._isExistCallback, item));
+            const list = data.map(item => Account.createFromData(this._updateCallback, this._isExistCallback, item));
+            return list.length > 0 ? list : [ Account.createDefault(this._updateCallback, this._isExistCallback) ];
         } catch (e) {
             if (e instanceof Error) {
                 console.error(e.stack ?? e.name);
@@ -70,20 +106,32 @@ export class AccountStore {
             return Account.DEFAULT_ID;
         }
 
-        const stored = localStorage.getItem(AccountStore.SELECTED_ID_KEY);
+        let stored = localStorage.getItem(AccountStore.SELECTED_ID_KEY);
 
         if (!stored) {
-            return Account.DEFAULT_ID;
+            const legacy = localStorage.getItem("ark_tracker_accounts");
+            if (legacy) {
+                try {
+                    const parsed = JSON.parse(legacy);
+                    if (parsed && (parsed.selectedId || parsed._selectedId)) {
+                        stored = parsed.selectedId || parsed._selectedId;
+                    }
+                } catch (e) {}
+            }
+        }
+
+        if (!stored) {
+            return accounts[0]?.id || Account.DEFAULT_ID;
         }
 
         if (accounts.some(account => account.id === stored)) {
             return stored;
         }
 
-        return Account.DEFAULT_ID;
+        return accounts[0]?.id || Account.DEFAULT_ID;
     }
 
-    public get accounts(): Readable<readonly Account[]> {
+    public get accounts(): Writable<Account[]> {
         return this._accounts;
     }
 
@@ -154,9 +202,13 @@ export class AccountStore {
     }
 
     public createEmptyAccount(): Account {
-        return this.createAccount({
+        const account = this.createAccount({
             serverId: "3"
         });
+
+        this.selectAccount(account.id);
+
+        return account;
     }
 
     public updateAccount(id: string, updates: AccountUpdates): Account | null {
@@ -260,7 +312,7 @@ export class AccountStore {
             uid: null
         });
 
-        window.dispatchEvent(new CustomEvent("ark_tracker_clear_data", { detail: { id: current } }));
+        window.dispatchEvent(new CustomEvent("ark_tracker_clear_data", { detail: { id: current.id } }));
         console.log("[Accounts] Account fully cleared.");
     }
 
@@ -316,14 +368,14 @@ export class AccountStore {
 
         const updateSelectedAccount = (accounts: Account[], selectedId: string) => {
             this._currentAccount.update(current => {
-                if (current.id === selectedId) {
+                if (current && current.id === selectedId) {
                     return current;
                 }
 
-                const selected = accounts.find(account => account.id === selectedId);
+                const selected = accounts.find(account => account.id === selectedId) || accounts[0];
 
                 if (!selected) {
-                    throw new Error(`Account with id ${selectedId} not found.`);
+                    return Account.createDefault(this._updateCallback, this._isExistCallback);
                 }
 
                 return selected;
@@ -333,13 +385,17 @@ export class AccountStore {
         this._accounts.subscribe(accounts => {
             updateSelectedAccount(accounts, get(this._selectedId));
 
-            localStorage.setItem(AccountStore.ACCOUNTS_KEY, Account.toJsonList(accounts));
+            const json = Account.toJsonList(accounts);
+            localStorage.setItem(AccountStore.ACCOUNTS_KEY, json);
+            localStorage.setItem("ark_tracker_accounts", JSON.stringify({ accounts: accounts.map(a => a.toData()), selectedId: get(this._selectedId) }));
         });
 
         this._selectedId.subscribe(accountId => {
-            updateSelectedAccount(get(this._accounts), accountId);
+            const accounts = get(this._accounts);
+            updateSelectedAccount(accounts, accountId);
 
             localStorage.setItem(AccountStore.SELECTED_ID_KEY, accountId);
+            localStorage.setItem("ark_tracker_accounts", JSON.stringify({ accounts: accounts.map(a => a.toData()), selectedId: accountId }));
         });
     }
 }

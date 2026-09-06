@@ -208,7 +208,7 @@
     "tab_pc2": "PC 2",
     "tab_pc_manual": "PC Manual",
     "tab_android": "Android",
-    "tab_ios": "iOS (Beta)",
+    "tab_ios": "iOS",
     "wip": "Dalam Pengembangan",
     "manual_text_pre": "Pergi ke file",
     "manual_text_mid": " buka dengan Notepad, gulir ke paling bawah dan temukan tautan seperti",
@@ -2415,7 +2415,8 @@
     "not_synced_btn": "Tautkan Profil",
     "unauthorized": "Silakan login untuk berpartisipasi",
     "last_update": "Pembaruan Terakhir",
-    "loading_details": "Memuat detail..."
+    "loading_details": "Memuat detail...",
+    "echoesOfWar": "Gema Perang"
   },
   "profile": {
     "title": "Profil Pemain",

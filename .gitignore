@@ -8,3 +8,4 @@ dist/
 *.db
 *.db-journal
 accountData.json
+generated/
