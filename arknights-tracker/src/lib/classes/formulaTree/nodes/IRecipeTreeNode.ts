@@ -11,7 +11,7 @@ export interface IRecipeTreeNode<T extends RecipeTreeNodeType> {
     get stage(): number;
     set stage(value: number);
     get parent(): IItemRecipeTreeNode | null;
-    get children(): readonly RecipeTreeNodeGeneric[];
+    get children(): RecipeTreeNodeGeneric[];
 
     addChild(child: RecipeTreeNodeGeneric): void;
     resetChildren(): void;

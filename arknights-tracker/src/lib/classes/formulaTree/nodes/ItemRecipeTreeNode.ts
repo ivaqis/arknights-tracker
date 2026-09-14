@@ -10,9 +10,9 @@ export class ItemRecipeTreeNode
     implements IItemRecipeTreeNode {
 
     private readonly _item: IItem;
-    private readonly _recipe: NodeRecipeGeneric;
+    private readonly _recipe: NodeRecipeGeneric | null;
 
-    public constructor(parent: IItemRecipeTreeNode | null, item: IItem, recipe: NodeRecipeGeneric) {
+    public constructor(parent: IItemRecipeTreeNode | null, item: IItem, recipe: NodeRecipeGeneric | null) {
         super(parent);
         this._item = item;
         this._recipe = recipe;
@@ -30,7 +30,7 @@ export class ItemRecipeTreeNode
         return this._item;
     }
 
-    public get recipe(): NodeRecipeGeneric {
+    public get recipe(): NodeRecipeGeneric | null {
         return this._recipe;
     }
 }

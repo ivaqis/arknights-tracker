@@ -50,14 +50,34 @@ export class RecipeTree implements IRecipeTree {
         return this._maxStage;
     }
 
-    public get startNode(): RecipeTreeNodeGeneric {
-        return this.getStartNode();
+    public get startNode(): IItemRecipeTreeNode | null {
+        return this._startNode;
     }
 
-    public setStartNode(item: IItem, recipe: NodeRecipeGeneric): void {
+    public setStartNode(item: IItem, recipe?: NodeRecipeGeneric | null): void {
+        if (!recipe) {
+            recipe = this.getNodeRecipe(item);
+        }
+
         this._startNode = new ItemRecipeTreeNode(null, item, recipe);
 
         this.updateNode(this._startNode);
+    }
+
+    public setRecipe(node: IItemRecipeTreeNode, recipe: NodeRecipeGeneric): IItemRecipeTreeNode {
+        const parent = node.parent;
+
+        const newNode = new ItemRecipeTreeNode(parent, node.item, recipe);
+
+        if (parent) {
+            const index = parent.children.findIndex(n => n === node);
+
+            parent.children[index] = newNode;
+        }
+
+        this.updateNode(newNode);
+
+        return newNode;
     }
 
     public updateNode(startNode: IItemRecipeTreeNode): void {
@@ -85,9 +105,9 @@ export class RecipeTree implements IRecipeTree {
 
             const formula = node.recipe;
 
-            if (formula.type === RecipeType.MACHINE
-                || formula.type === RecipeType.MANUAL
-                || formula.type === RecipeType.HUB
+            if (formula?.type === RecipeType.MACHINE
+                || formula?.type === RecipeType.MANUAL
+                || formula?.type === RecipeType.HUB
             ) {
                 const ingredients = formula.recipe.ingredients;
 
@@ -106,9 +126,9 @@ export class RecipeTree implements IRecipeTree {
                 for (let i = children.length - 1; i >= 0; i--) {
                     stack.push(children[i]);
                 }
-            } else if (formula.type === RecipeType.PUMPING
-                || formula.type === RecipeType.MINING
-                || formula.type === RecipeType.GAS_MINING
+            } else if (formula?.type === RecipeType.PUMPING
+                || formula?.type === RecipeType.MINING
+                || formula?.type === RecipeType.GAS_MINING
             ) {
                 const resourcePoint = formula.recipe.resourcePoint;
                 const child = new ResourcePointRecipeTreeNode(
@@ -193,7 +213,7 @@ export class RecipeTree implements IRecipeTree {
     }
 
     public getIterator(): Generator<RecipeTreeNodeGeneric, void, unknown> {
-        return this.startNode.getIterator();
+        return this.getStartNode().getIterator();
     }
 
     private clearItemList() {
@@ -214,7 +234,7 @@ export class RecipeTree implements IRecipeTree {
         return this._itemUsageMap.get(itemId) ?? 0;
     }
 
-    private getNodeRecipe(item: IItem): NodeRecipeGeneric {
+    private getNodeRecipe(item: IItem): NodeRecipeGeneric | null {
         const itemId = item.gameId;
 
         let recipe: NodeRecipeGeneric | null = null;
@@ -233,10 +253,6 @@ export class RecipeTree implements IRecipeTree {
                 ?? this.getFirstPumpRecipe(itemId)
                 ?? this.getFirstManualCraft(itemId)
                 ?? this.getFirstHubCraft(itemId);
-        }
-
-        if (recipe === null) {
-            throw new Error(`Recipe for ${itemId} not found`);
         }
 
         return recipe;

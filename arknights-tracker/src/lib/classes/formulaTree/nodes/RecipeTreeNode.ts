@@ -16,7 +16,7 @@ export abstract class RecipeTreeNode<T extends RecipeTreeNodeType = RecipeTreeNo
         this._parent = parent;
     }
 
-    public get children(): readonly RecipeTreeNodeGeneric[] {
+    public get children(): RecipeTreeNodeGeneric[] {
         return this._children;
     }
 

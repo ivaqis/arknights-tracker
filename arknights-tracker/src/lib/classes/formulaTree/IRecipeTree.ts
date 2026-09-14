@@ -4,11 +4,11 @@ import type { RecipeTreeNodeGeneric } from "$lib/classes/formulaTree/nodes/Recip
 import type { IItem } from "$lib/classes/gameData/items/IItem";
 
 export interface IRecipeTree {
-    get startNode(): RecipeTreeNodeGeneric | null;
+    get startNode(): IItemRecipeTreeNode | null;
     get maxLayer(): number;
     get maxStage(): number;
 
-    setStartNode(item: IItem, recipe: NodeRecipeGeneric): void;
+    setStartNode(item: IItem, recipe?: NodeRecipeGeneric | null): void;
     updateNode(startNode: IItemRecipeTreeNode): void;
     updateItemList(): void;
     updateNodePositions(): void;

@@ -17,6 +17,7 @@
     export let showTooltip: boolean = false;
     export let showHoverEffect: boolean | undefined = undefined;
     export let size: CardSize = CardSize.DEFAULT;
+    export let interactiveImages: boolean = true;
 
     let textSize: string;
     let eventStarSize: string;
@@ -63,7 +64,7 @@
                 id={icon.iconId}
                 variant={icon.imageVariant}
                 alt={item.id}
-                interactive={true}
+                interactive={interactiveImages}
                 className="w-full h-full object-contain blur-[0.3px] rotate-[0.01deg] backface-hidden transform-gpu transition-all duration-300"
             />
         </div>
@@ -75,7 +76,7 @@
                     <Image
                         id={subIcon.iconId}
                         variant={subIcon.imageVariant}
-                        interactive={true}
+                        interactive={interactiveImages}
                         className="w-full h-full object-contain blur-[0.3px] rotate-[0.01deg] backface-hidden transform-gpu transition-all duration-300"
                     />
                 </div>

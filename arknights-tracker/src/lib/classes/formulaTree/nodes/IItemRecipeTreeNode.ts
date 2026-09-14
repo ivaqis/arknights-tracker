@@ -5,6 +5,5 @@ import type { IItem } from "$lib/classes/gameData/items/IItem";
 
 export interface IItemRecipeTreeNode extends IRecipeTreeNode<RecipeTreeNodeType.ITEM> {
     get item(): IItem;
-    get recipe(): NodeRecipeGeneric;
-    set recipe(value: NodeRecipeGeneric);
+    get recipe(): NodeRecipeGeneric | null;
 }

@@ -11,6 +11,7 @@
 
     export let showTooltip: boolean = false;
     export let size: CardSize = CardSize.DEFAULT;
+    export let interactiveImages: boolean = false;
 
 </script>
 
@@ -34,6 +35,7 @@
                 id={bgIcon.iconId}
                 variant={bgIcon.imageVariant}
                 className="w-full h-full object-contain blur-[0.3px] rotate-[0.01deg] backface-hidden transform-gpu transition-all duration-300"
+                interactive={interactiveImages}
             />
         </div>
 
@@ -43,6 +45,7 @@
                     id={icon.iconId}
                     variant={icon.imageVariant}
                     className="w-full h-full object-contain blur-[0.3px] rotate-[0.01deg] backface-hidden transform-gpu transition-all duration-300"
+                    interactive={interactiveImages}
                 />
             </div>
         </div>

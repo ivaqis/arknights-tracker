@@ -5,7 +5,7 @@
     import Icon from "$lib/components/Icon.svelte";
     import ItemStackCardLegacy from "$lib/components/cards/ItemStackCardLegacy.svelte";
     import BuildingTreeNode from "$lib/components/recipes/BuildingTreeNode.svelte";
-    import ForceNodeContinuationButton from "$lib/components/recipes/ForceNodeContinuationButton.svelte";
+    import ForceNodeContinuationButton from "$lib/components/recipes/tree/ForceNodeContinuationButton.svelte";
     import ResourcePointCardLegacy from "$lib/components/cards/ResourcePointCardLegacy.svelte";
 
     export let startItemId;
