@@ -101,10 +101,10 @@ export class RecipeTree implements IRecipeTree {
                     node.addChild(child);
                 }
 
-                const childrenCopy = [...node.children];
+                const children = node.children;
 
-                while (childrenCopy.length > 0) {
-                    stack.push(childrenCopy.pop()!);
+                for (let i = children.length - 1; i >= 0; i--) {
+                    stack.push(children[i]);
                 }
             } else if (formula.type === RecipeType.PUMPING
                 || formula.type === RecipeType.MINING
@@ -149,12 +149,12 @@ export class RecipeTree implements IRecipeTree {
         let layer = 0;
 
         for (const node of startNode.getIterator()) {
-            const childrenCopy = [...node.children];
+            const children = node.children;
 
-            while (childrenCopy.length > 0) {
-                const child = childrenCopy.pop()!;
+            for (let i = children.length - 1; i >= 0; i--) {
+                const child = children[i];
 
-                child.selfChildIndex = childrenCopy.length;
+                child.selfChildIndex = i;
             }
 
             if (node.parent) {

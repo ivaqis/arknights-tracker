@@ -60,6 +60,17 @@ export abstract class RecipeTreeNode<T extends RecipeTreeNodeType = RecipeTreeNo
 
     public *getIterator(): Generator<RecipeTreeNodeGeneric, void, unknown> {
         const stack: RecipeTreeNodeGeneric[] = [this.getNode()];
+
+        while (stack.length > 0) {
+            const node = stack.pop()!;
+            const children = node.children;
+
+            for (let i = children.length - 1; i >= 0; i--) {
+                stack.push(children[i]);
+            }
+
+            yield node;
+        }
     }
 
     protected abstract getNode(): RecipeTreeNodeGeneric;
