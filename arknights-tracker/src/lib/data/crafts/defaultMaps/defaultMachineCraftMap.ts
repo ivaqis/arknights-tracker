@@ -1,5 +1,33 @@
 import type { DefaultCraftMap } from "$lib/data/types/crafts/DefaultCraftMap";
 
 export const defaultMachineCraftMap: DefaultCraftMap = {
-    "item_crystal_shell": "furnance_crystal_shell_1"
+    "item_crystal_shell": "furnance_crystal_shell_1",
+    "item_gas_copper": "liquid_transmuter_2_gas_gas_copper_1",
+    "item_xiranite_powder": "xiranite_oven_xiranite_powder_2",
+    "item_carbon_mtl": "furnance_carbon_material_6",
+    "item_liquid_sewage": "furnance_copper_nugget_1",
+    "item_liquid_xiranite": "pool_liquid_liquid_xiranite_2",
+    "item_liquid_xiranite_lowpoly": "pool_liquid_xiranite_poly_2",
+    "item_liquid_xiranite_poly": "pool_liquid_xiranite_poly_2",
+    "item_liquid_xiranite_enr": "pool_liquid_xiranite_enr_2",
+    "item_liquid_copper": "pool_liquid_copper_2",
+    "item_liquid_copper_enr": "liquid_purifier_copper_enr_1",
+    "item_liquid_plant_grass_1": "pool_liquid_plant_grass_1_2",
+    "item_liquid_plant_grass_2": "pool_liquid_plant_grass_2_1",
+    "item_gas_water": "liquid_transmuter_1_gas_gas_water_1",
+    "item_gas_acid": "liquid_transmuter_1_gas_gas_acid_1",
+    "item_gas_xiranite_enr": "liquid_purifier_gas_xiranite_enr_2",
+    "item_gas_copper_enr": "liquid_purifier_gas_copper_enr_2",
+    "item_gas_copper_enr2": "gas_reactor_gas_copper_enr2_1",
+    "item_carbon_powder": "grinder_carbon_powder_1",
+    "item_carbon_enr_powder": "thickener_carbon_enr_powder_1",
+    "item_glass_bottle": "shaper_glass_bottle_1",
+    "item_iron_bottle": "shaper_iron_bottle_1",
+    "item_glass_enr_bottle": "shaper_glass_enr_bottle_1",
+    "item_iron_enr_bottle": "shaper_iron_enr_bottle_1",
+    "item_copper_bottle": "shaper_copper_bottle_1",
+    "item_copper_enr_bottle": "shaper_copper_enr_bottle_1",
+    "item_activity_xiranite_enr_bottle": "shaper_activity_xiranite_enr_bottle_1",
+    "item_copper_jar": "shaper_gas_copper_jar_1",
+
 };

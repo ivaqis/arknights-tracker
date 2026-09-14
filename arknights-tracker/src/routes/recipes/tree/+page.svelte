@@ -467,7 +467,7 @@
                                         recipeSource={RecipeSource.MANUAL}
                                     >
 
-                                        {#each hubAsOutcome.list as recipe}
+                                        {#each manualAsOutcome.list as recipe}
 
                                             {@const formula: NodeRecipeGeneric = { type: RecipeType.MANUAL, recipe }}
 
