@@ -174,7 +174,83 @@
                 style:width="{getXpx(tree.maxStage) + 500}px"
                 style:height="{getYpx(tree.maxLayer) + 500}px"
             >
-                <!--                todo -->
+
+                <svg
+                    width="{getXpx(tree.maxStage) + 500}"
+                    height="{getYpx(tree.maxLayer) + 500}"
+                    viewBox="0 0 {getXpx(tree.maxStage) + 500} {getYpx(tree.maxLayer) + 500}"
+                >
+
+                    <g transform="translate({getXpx(tree.maxStage) + 500}, 0) scale(-1, 1)">
+
+                        {#each tree.getIterator() as node}
+
+                            {#if node.type === RecipeTreeNodeType.ITEM && node.recipe !== null}
+
+                                <circle
+                                    cx="{getPointXItemNodeLeft(node.stage)}"
+                                    cy="{getPointYNode(node.layer)}"
+                                    r="{pointRadiusPx}"
+                                    fill="currentColor"
+                                />
+
+                            {/if}
+
+                            {#if node.parent !== null}
+
+                                <circle
+                                    cx="{getPointXItemNodeRight(node.stage)}"
+                                    cy="{getPointYNode(node.layer)}"
+                                    r="{pointRadiusPx}"
+                                    fill="currentColor"
+                                />
+
+                            {/if}
+
+                            {#if node.children.length !== 0}
+
+                                <circle
+                                    cx="{getPointXBuildingNodeLeft(node.stage)}"
+                                    cy="{getPointYNode(node.layer)}"
+                                    r="{pointRadiusPx}"
+                                    fill="currentColor"
+                                />
+
+                                <circle
+                                    cx="{getPointXBuildingNodeRight(node.stage)}"
+                                    cy="{getPointYNode(node.layer)}"
+                                    r="{pointRadiusPx}"
+                                    fill="currentColor"
+                                />
+
+                                <path
+                                    d="{getLinePath(getPointXItemNodeLeft(node.stage), getPointYNode(node.layer),
+                                    getPointXBuildingNodeRight(node.stage), getPointYNode(node.layer))}"
+                                    stroke="currentColor"
+                                    fill="none"
+                                    stroke-width="{lineWidthPx}"
+                                />
+
+                            {/if}
+
+                            {#each node.children as child}
+
+                                <path
+                                    d="{getLinePath(getPointXBuildingNodeLeft(node.stage), getPointYNode(node.layer),
+                                    getPointXItemNodeRight(child.stage), getPointYNode(child.layer))}"
+                                    stroke="currentColor"
+                                    fill="none"
+                                    stroke-width="{lineWidthPx}"
+                                />
+
+                            {/each}
+
+                        {/each}
+
+                    </g>
+
+                </svg>
+
             </div>
 
             {#each tree.getIterator() as node}
