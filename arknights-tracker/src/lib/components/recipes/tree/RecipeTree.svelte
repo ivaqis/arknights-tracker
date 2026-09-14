@@ -15,6 +15,9 @@
     import Icon from "$lib/components/Icon.svelte";
     import BuildingRecipeTreeNode from "$lib/components/recipes/tree/BuildingRecipeTreeNode.svelte";
     import ForceNodeContinuationButton from "$lib/components/recipes/tree/ForceNodeContinuationButton.svelte";
+    import { defaultHubCraftMap } from "$lib/data/crafts/defaultMaps/defaultHubCraftMap";
+    import { defaultMachineCraftMap } from "$lib/data/crafts/defaultMaps/defaultMachineCraftMap";
+    import { defaultManualCraftMap } from "$lib/data/crafts/defaultMaps/defaultManualCraftMap";
 
     export let machineCraftSearcher: IMachineCraftSearcher;
     export let manualCraftSearcher: IManualCraftSearcher;
@@ -33,7 +36,17 @@
 
     export const changeRecipe: (node: IItemRecipeTreeNode, recipe: NodeRecipeGeneric) => void = setItemNodeRecipe;
 
-    let tree: IRecipeTree = new RecipeTree(machineCraftSearcher, manualCraftSearcher, hubCraftSearcher, minerRecipeSearcher, gasMinerRecipeSearcher, pumpRecipeSearcher);
+    let tree: IRecipeTree = new RecipeTree(
+        machineCraftSearcher,
+        manualCraftSearcher,
+        hubCraftSearcher,
+        minerRecipeSearcher,
+        gasMinerRecipeSearcher,
+        pumpRecipeSearcher,
+        defaultMachineCraftMap,
+        defaultManualCraftMap,
+        defaultHubCraftMap
+    );
 
     function forceTreeUpdate() {
         tree = tree;

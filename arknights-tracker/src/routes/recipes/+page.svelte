@@ -367,9 +367,9 @@
     const machineCraftFactory: IMachineCraftFactory = new MachineCraftFactory(itemStorage, crafterStorage);
     const manualCraftFactory: IManualCraftFactory = new ManualCraftFactory(itemStorage);
 
-    const machineCraftSearcher: IMachineCraftSearcher = new MachineCraftSearcher(machineCraftStorage, machineCraftFactory);
-    const manualCraftSearcher: IManualCraftSearcher = new ManualCraftSearcher(manualCraftStorage, manualCraftFactory);
-    const hubCraftSearcher: IManualCraftSearcher = new ManualCraftSearcher(hubCraftStorage, manualCraftFactory);
+    const machineCraftSearcher: IMachineCraftSearcher = new MachineCraftSearcher(machineCraftStorage, machineCraftFactory, machineCraftDataStorage);
+    const manualCraftSearcher: IManualCraftSearcher = new ManualCraftSearcher(manualCraftStorage, manualCraftFactory, manualCraftDataStorage);
+    const hubCraftSearcher: IManualCraftSearcher = new ManualCraftSearcher(hubCraftStorage, manualCraftFactory, hubCraftDataStorage);
     const minerRecipeSearcher: IMinerRecipeSearcher = new MinerRecipeSearcher(minerStorage);
     const gasMinerRecipeSearcher: IMinerRecipeSearcher = new MinerRecipeSearcher(gasMinerStorage);
     const pumpRecipeSearcher: IPumpRecipeSearcher = new PumpRecipeSearcher(pumpStorage);

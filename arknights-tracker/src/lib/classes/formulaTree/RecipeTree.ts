@@ -18,6 +18,7 @@ import type { IMachineCraftSearcher } from "$lib/classes/searchers/recipes/IMach
 import type { IManualCraftSearcher } from "$lib/classes/searchers/recipes/IManualCraftSearcher";
 import type { IMinerRecipeSearcher } from "$lib/classes/searchers/recipes/IMinerRecipeSearcher";
 import type { IPumpRecipeSearcher } from "$lib/classes/searchers/recipes/IPumpRecipeSearcher";
+import type { DefaultCraftMap } from "$lib/data/types/crafts/DefaultCraftMap";
 
 export class RecipeTree implements IRecipeTree {
     private readonly _machineCraftSearcher: IMachineCraftSearcher;
@@ -27,19 +28,27 @@ export class RecipeTree implements IRecipeTree {
     private readonly _gasMinerRecipeSearcher: IMinerRecipeSearcher;
     private readonly _pumpRecipeSearcher: IPumpRecipeSearcher;
 
+    private readonly _defaultMachineCraftMap: DefaultCraftMap;
+    private readonly _defaultManualCraftMap: DefaultCraftMap;
+    private readonly _defaultHubCraftMap: DefaultCraftMap;
+
     private readonly _itemUsageMap: Map<string, number> = new Map();
 
     private _startNode: IItemRecipeTreeNode | null = null;
     private _maxLayer: number = 0;
     private _maxStage: number = 0;
 
-    public constructor(machineCraftSearcher: IMachineCraftSearcher, manualCraftSearcher: IManualCraftSearcher, hubCraftSearcher: IManualCraftSearcher, minerRecipeSearcher: IMinerRecipeSearcher, gasMinerRecipeSearcher: IMinerRecipeSearcher, pumpRecipeSearcher: IPumpRecipeSearcher) {
+    public constructor(machineCraftSearcher: IMachineCraftSearcher, manualCraftSearcher: IManualCraftSearcher, hubCraftSearcher: IManualCraftSearcher, minerRecipeSearcher: IMinerRecipeSearcher, gasMinerRecipeSearcher: IMinerRecipeSearcher, pumpRecipeSearcher: IPumpRecipeSearcher, defaultMachineCraftMap: DefaultCraftMap, defaultManualCraftMap: DefaultCraftMap, defaultHubCraftMap: DefaultCraftMap) {
         this._machineCraftSearcher = machineCraftSearcher;
         this._manualCraftSearcher = manualCraftSearcher;
         this._hubCraftSearcher = hubCraftSearcher;
         this._minerRecipeSearcher = minerRecipeSearcher;
         this._gasMinerRecipeSearcher = gasMinerRecipeSearcher;
         this._pumpRecipeSearcher = pumpRecipeSearcher;
+
+        this._defaultMachineCraftMap = defaultMachineCraftMap;
+        this._defaultManualCraftMap = defaultManualCraftMap;
+        this._defaultHubCraftMap = defaultHubCraftMap;
     }
 
     public get maxLayer(): number {
@@ -246,19 +255,82 @@ export class RecipeTree implements IRecipeTree {
             recipe = this.getFirstMinerRecipe(itemId)
                 ?? this.getFirstGasMinerRecipe(itemId)
                 ?? this.getFirstPumpRecipe(itemId)
+                ?? this.getDefaultMachineCraft(itemId)
                 ?? this.getFirstMachineCraft(itemId)
+                ?? this.getDefaultManualCraft(itemId)
                 ?? this.getFirstManualCraft(itemId)
+                ?? this.getDefaultHubCraft(itemId)
                 ?? this.getFirstHubCraft(itemId);
         } else {
             recipe = this.getFirstMinerRecipe(itemId)
                 ?? this.getFirstGasMinerRecipe(itemId)
+                ?? this.getDefaultMachineCraft(itemId)
                 ?? this.getFirstMachineCraft(itemId)
                 ?? this.getFirstPumpRecipe(itemId)
+                ?? this.getDefaultManualCraft(itemId)
                 ?? this.getFirstManualCraft(itemId)
+                ?? this.getDefaultHubCraft(itemId)
                 ?? this.getFirstHubCraft(itemId);
         }
 
         return recipe;
+    }
+
+    private getDefaultMachineCraft(itemId: string): INodeRecipe<RecipeType.MACHINE, IMachineCraft> | null {
+        const recipeId = this._defaultMachineCraftMap[itemId];
+
+        if (!recipeId) {
+            return null;
+        }
+
+        const recipe = this._machineCraftSearcher.findRecipe(recipeId);
+
+        if (!recipe) {
+            return null;
+        }
+
+        return {
+            type: RecipeType.MACHINE,
+            recipe
+        };
+    }
+
+    private getDefaultManualCraft(itemId: string): INodeRecipe<RecipeType.MANUAL, IManualCraft> | null {
+        const recipeId = this._defaultManualCraftMap[itemId];
+
+        if (!recipeId) {
+            return null;
+        }
+
+        const recipe = this._manualCraftSearcher.findRecipe(recipeId);
+
+        if (!recipe) {
+            return null;
+        }
+
+        return {
+            type: RecipeType.MANUAL,
+            recipe
+        };
+    }
+
+    private getDefaultHubCraft(itemId: string): INodeRecipe<RecipeType.HUB, IManualCraft> | null {
+        const recipeId = this._defaultHubCraftMap[itemId];
+
+        if (!recipeId) {
+            return null;
+        }
+
+        const recipe = this._hubCraftSearcher.findRecipe(recipeId);
+
+        if (!recipe) {
+            return null;
+        }
+
+        return {
+            type: RecipeType.HUB,
+            recipe
+        };
     }
 
     private getFirstMachineCraft(itemId: string): INodeRecipe<RecipeType.MACHINE, IMachineCraft> | null {
