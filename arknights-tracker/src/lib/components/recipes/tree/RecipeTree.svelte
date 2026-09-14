@@ -330,7 +330,7 @@
 
                 {/if}
 
-                {#if node.type === RecipeTreeNodeType.ITEM && node.children.length === 0}
+                {#if node.type === RecipeTreeNodeType.ITEM && node.children.length === 0 && node.recipe !== null}
 
                     <div
                         class="absolute flex items-center h-[110px]"
