@@ -74,6 +74,9 @@ export class RecipeTree implements IRecipeTree {
 
             parent.children[index] = newNode;
         }
+        else {
+            this._startNode = newNode;
+        }
 
         this.updateNode(newNode);
 

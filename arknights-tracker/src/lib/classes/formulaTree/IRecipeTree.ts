@@ -9,6 +9,7 @@ export interface IRecipeTree {
     get maxStage(): number;
 
     setStartNode(item: IItem, recipe?: NodeRecipeGeneric | null): void;
+    setRecipe(node: IItemRecipeTreeNode, recipe: NodeRecipeGeneric): IItemRecipeTreeNode;
     updateNode(startNode: IItemRecipeTreeNode): void;
     updateItemList(): void;
     updateNodePositions(): void;

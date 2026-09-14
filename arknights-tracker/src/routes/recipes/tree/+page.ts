@@ -27,7 +27,7 @@ export const load: PageLoad = ({ url }) => {
     }
 
     return {
-        itemId,
+        itemId: itemId as string,
         recipeType: recipeType as RecipeType | null,
         buildingId,
         recipeId

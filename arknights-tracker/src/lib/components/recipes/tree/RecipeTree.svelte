@@ -13,8 +13,8 @@
     import ResourcePointCard from "$lib/components/cards/ResourcePointCard.svelte";
     import DragPlate from "$lib/components/dragPlate/DragPlate.svelte";
     import Icon from "$lib/components/Icon.svelte";
-    import ForceNodeContinuationButton from "$lib/components/recipes/tree/ForceNodeContinuationButton.svelte";
     import BuildingRecipeTreeNode from "$lib/components/recipes/tree/BuildingRecipeTreeNode.svelte";
+    import ForceNodeContinuationButton from "$lib/components/recipes/tree/ForceNodeContinuationButton.svelte";
 
     export let machineCraftSearcher: IMachineCraftSearcher;
     export let manualCraftSearcher: IManualCraftSearcher;
@@ -31,7 +31,7 @@
     export let selectedItemNode: IItemRecipeTreeNode | null = null;
     export let selectedBuildingNode: IItemRecipeTreeNode | null = null;
 
-    export const updateTree: () => void = forceTreeUpdate;
+    export const changeRecipe: (node: IItemRecipeTreeNode, recipe: NodeRecipeGeneric) => void = setItemNodeRecipe;
 
     let tree: IRecipeTree = new RecipeTree(machineCraftSearcher, manualCraftSearcher, hubCraftSearcher, minerRecipeSearcher, gasMinerRecipeSearcher, pumpRecipeSearcher);
 
@@ -73,11 +73,15 @@
         isBottomSheetOpen = true;
     }
 
-    $: isItemNodeSelected = (node: IItemRecipeTreeNode) => node === selectedItemNode;
-    $: isBuildingNodeSelected = (node: IItemRecipeTreeNode) => node === selectedBuildingNode;
-
     function continueNode(node: IItemRecipeTreeNode) {
         tree.updateNode(node);
+        forceTreeUpdate();
+    }
+
+    function setItemNodeRecipe(node: IItemRecipeTreeNode, recipe: NodeRecipeGeneric) {
+        selectedItemNode = tree.setRecipe(node, recipe);
+        selectedBuildingNode = null;
+
         forceTreeUpdate();
     }
 
@@ -271,8 +275,9 @@
 
                             <ItemStackCard
                                 item={node.item}
-                                highlight={isItemNodeSelected(node)}
+                                highlight={node === selectedItemNode}
                                 interactiveImages={false}
+                                showHoverEffect={true}
                             />
 
                         </button>
@@ -303,7 +308,7 @@
 
                             <BuildingRecipeTreeNode
                                 node={node}
-                                highlight={isBuildingNodeSelected(node)}
+                                highlight={node === selectedBuildingNode}
                             />
 
                         </button>
