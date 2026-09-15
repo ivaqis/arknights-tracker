@@ -2,7 +2,7 @@
     import { t } from "$lib/i18n.js";
     import { onMount, onDestroy, tick } from "svelte";
     import { browser } from "$app/environment";
-    import { rawEvents } from "$lib/data/timeline.js";
+    import { rawEvents } from "$lib/data/timeline";
     import { banners } from "$lib/data/banners.js";
     import { currentLocale, currentUiLocale } from "$lib/stores/locale.js";
 

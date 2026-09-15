@@ -1,4 +1,4 @@
-import {manualCrafts} from "$lib/data/crafts/manualCrafts.js";
+import { manualCrafts } from "$lib/data/crafts/manualCrafts";
 
 export class ManualCraft {
     _craftObj;

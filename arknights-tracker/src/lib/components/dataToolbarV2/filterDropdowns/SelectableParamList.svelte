@@ -1,18 +1,24 @@
-<script>
-    export let paramList = [];
-    export let maxSelectedParams = -1;
+<script lang="ts" generics="TParam extends ParamId">
+    import type { ParamBoxStyle } from "$lib/components/dataToolbarV2/paramBoxes/ParamBoxStyle";
+    import type { ParamId } from "$lib/components/dataToolbarV2/paramBoxes/ParamId";
+    import type { TextParamBoxProps } from "$lib/components/dataToolbarV2/paramBoxes/TextParamBoxProps";
+    import type { Component } from "svelte";
 
-    export let getLocaleFunc;
-    export let paramBox;
+    export let paramList: TParam[] = [];
+    export let maxSelectedParams: number = -1;
+
+    export let getLocaleFunc: ((param: TParam) => string) = (param) => String(param);
+    export let paramBox: Component<TextParamBoxProps<TParam>>;
 
     // bindable
-    export let selectedParamSet = new Set();
+    export let selectedParamSet: Set<TParam> = new Set();
 
     $: if (!selectedParamSet) {
         selectedParamSet = new Set();
     }
 
-    let currentSet;
+    let currentSet: Set<TParam>;
+
     $: if (currentSet !== selectedParamSet) {
         currentSet = selectedParamSet;
 
@@ -21,7 +27,7 @@
         }
     }
 
-    let queue = [];
+    let queue: TParam[] | undefined = [];
     $: if (maxSelectedParams > 0) {
         syncQueue();
     } else {
@@ -36,22 +42,26 @@
         }
     }
 
-    function deleteParamFromQueue(param) {
-        if (!queue) return;
+    function deleteParamFromQueue(param: TParam) {
+        if (!queue)
+            return;
 
         queue.splice(queue.indexOf(param), 1);
     }
 
-    function deleteFirstParamFromQueue() {
-        if (!queue) return null;
+    function deleteFirstParamFromQueue(): TParam | null {
+        if (!queue)
+            return null;
 
-        if (queue.length <= maxSelectedParams) return null;
+        if (queue.length <= maxSelectedParams)
+            return null;
 
-        return queue.shift();
+        return queue.shift() ?? null;
     }
 
-    function addParamToQueue(param) {
-        if (!queue) return null;
+    function addParamToQueue(param: TParam): TParam | null {
+        if (!queue)
+            return null;
 
         queue.push(param);
 
@@ -62,7 +72,7 @@
         selectedParamSet = selectedParamSet;
     }
 
-    function toggleParam(param) {
+    function toggleParam(param: TParam) {
         let wasDeleted = selectedParamSet.delete(param);
 
         if (!wasDeleted) {
@@ -82,7 +92,10 @@
 
     $: isManualMode = selectedParamSet.size !== 0;
 
-    $: isParamSelected = (param) => isManualMode && selectedParamSet.has(param);
+    let isParamSelected: (param: TParam) => boolean;
+    let getBoxStyleMode: (param: TParam) => ParamBoxStyle;
+
+    $: isParamSelected = (param: TParam) => isManualMode && selectedParamSet.has(param);
 
     $: getBoxStyleMode = (param) => {
         if (!isManualMode) {

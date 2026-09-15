@@ -1,21 +1,23 @@
-<script>
+<script lang="ts">
+    import type { SortDirection } from "$lib/classes/SortDirection";
     import Icon from "$lib/components/Icon.svelte";
     import { t } from "$lib/i18n";
 
-    export let showSortDropdownButton = false;
-    export let showSortDirectionButton = false;
-    export let showFilterDropdownButton = false;
-    export let showSearchInput = false;
-    export let showGroupButton = false;
-    export let showExportExcelButton = false;
+    export let showSortDropdownButton: boolean = false;
+    export let showSortDirectionButton: boolean = false;
+    export let showFilterDropdownButton: boolean = false;
+    export let showSearchInput: boolean = false;
+    export let showGroupButton: boolean = false;
+    export let showExportExcelButton: boolean = false;
 
-    export let sortDirection = "desc"; // "desc | "asc"
-    export let searchString = "";
-    export let isGrouped = false;
+    // bindable
+    export let sortDirection: SortDirection = "desc";
+    export let searchString: string = "";
+    export let isGrouped: boolean = false;
 
-    export let isFilterActive = false;
-    export let onFilterReset = () => {};
-    export let onExportExcel = () => {};
+    export let isFilterActive: boolean = false;
+    export let onFilterReset: () => void = () => {};
+    export let onExportExcel: () => void = () => {};
 
     let isFilterDropdownOpen = false;
     let isSortDropdownOpen = false;
@@ -111,7 +113,7 @@
                     class="w-3 h-4 text-current pointer-events-none dark:text-[#E0E0E0]"
                 />
 
-            {:else if sortDirection === "asc"}
+            {:else}
 
                 <Icon
                     name="asc"

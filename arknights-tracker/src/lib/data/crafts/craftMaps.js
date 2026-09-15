@@ -1,11 +1,11 @@
-import { gasMiners } from "$lib/data/buildings/gasMiners.js";
-import { miners } from "$lib/data/buildings/miners.js";
-import { powerStations } from "$lib/data/buildings/powerStations.js";
-import { pumps } from "$lib/data/buildings/pumps.js";
-import { hubCrafts } from "$lib/data/crafts/hubCrafts.js";
-import { machineCrafts } from "$lib/data/crafts/machineCrafts.js";
-import { manualCrafts } from "$lib/data/crafts/manualCrafts.js";
-import { fuel } from "$lib/data/items/fuel.js";
+import { gasMiners } from "$lib/data/buildings/gasMiners";
+import { miners } from "$lib/data/buildings/miners";
+import { powerStations } from "$lib/data/buildings/powerStations";
+import { pumps } from "$lib/data/buildings/pumps";
+import { hubCrafts } from "$lib/data/crafts/hubCrafts";
+import { machineCrafts } from "$lib/data/crafts/machineCrafts";
+import { manualCrafts } from "$lib/data/crafts/manualCrafts";
+import { fuel } from "$lib/data/items/fuel";
 
 export const machineCraftItemAsIncome = getCraftItemAs("ingredients", machineCrafts);
 export const machineCraftItemAsOutcome = getCraftItemAs("outcomes", machineCrafts);

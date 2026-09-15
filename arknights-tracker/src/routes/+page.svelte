@@ -5,7 +5,7 @@
   import { goto } from "$app/navigation";
   import { banners } from "$lib/data/banners.js";
   import { promocodes } from "$lib/data/promocodes.js";
-  import { rawEvents } from "$lib/data/timeline.js";
+  import { rawEvents } from "$lib/data/timeline";
   import { fade } from "svelte/transition";
   import { weaponRotations } from "$lib/data/weaponRotations.js";
   import { weapons } from "$lib/data/weapons.js";

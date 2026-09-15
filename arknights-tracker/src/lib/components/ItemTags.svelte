@@ -2,7 +2,7 @@
     import { t } from "$lib/i18n.js";
     import { currencies } from "$lib/data/items/currencies.js";
     import { progression } from "$lib/data/items/progression.js";
-    import { items } from "$lib/data/items/items.js";
+    import { items } from "$lib/data/items/items";
 
     import Tooltip from "$lib/components/Tooltip.svelte";
     import Image from "$lib/components/Image.svelte";

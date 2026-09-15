@@ -1,74 +1,55 @@
-<script>
-    import { t } from "$lib/i18n.js";
-    import { ResourcePoint } from "$lib/classes/items/ResourcePoint.js";
-    
-    import Tooltip from "$lib/components/Tooltip.svelte";
+<script lang="ts">
+    import type { IResourcePoint } from "$lib/classes/gameData/resourcePoints/IResourcePoint";
+    import { CardSize } from "$lib/components/cards/CardSize";
+    import CardTemplate from "$lib/components/cards/CardTemplate.svelte";
     import Image from "$lib/components/Image.svelte";
+    import { t } from "$lib/i18n";
 
-    export let itemId = "";
+    export let resourcePoint: IResourcePoint;
+    export let url: string | null = null;
+    export let tooltipText: string | null = null;
 
-    export let size = "default"; // "default" | "small" | "micro"
+    export let showTooltip: boolean = false;
+    export let size: CardSize = CardSize.DEFAULT;
+    export let interactiveImages: boolean = false;
 
-    export let showTooltip = false;
-
-    $: resourcePoint = ResourcePoint.getResourcePointFromItemId(itemId);
-    $: item = resourcePoint?.getItem();
-
-    $: iconId = item?.iconId;
-    $: resourceIconId = resourcePoint?.bgIconId;
-
-    $: tooltipText = showTooltip && resourcePoint ? $t(`resourcePointNames.${resourcePoint.id}`) : "";
-
-    let boxSize = (() => {
-        switch (size) {
-            case "small": return "w-[80px] h-[80px]";
-            case "micro": return "w-[60px] h-[60px]";
-
-            case "default":
-            default: return "w-[110px] h-[110px]";
-        }
-    })();
-
-    let isHovered = false;
 </script>
 
-<Tooltip
-    text={tooltipText}
+<CardTemplate
+    size={size}
+    tooltipText={showTooltip ? tooltipText ?? $t(resourcePoint.i18nKey) : undefined}
+    url={url}
 >
 
-    <div class="relative flex flex-col cursor-pointer select-none group flex-shrink-0 {boxSize} no-underline focus:outline-none focus:ring-2 focus:ring-[#F9B90C] rounded-[6px]"
-         role="presentation"
-         on:mouseenter={() => (isHovered = true)}
-         on:mouseleave={() => (isHovered = false)}>
+    <div
+        class="w-full h-full bg-[#777676]"
+    ></div>
 
-        <div
-            class="absolute inset-0 border-[2px] border-white rounded-[6px] z-30 pointer-events-none transition-opacity duration-200 opacity-0 group-hover:opacity-100"
-        ></div>
+    {#key resourcePoint}
 
-        <div class="relative w-full h-full rounded-[6px] overflow-hidden bg-[#777676]">
+        {@const bgIcon = resourcePoint.bgIcon}
+        {@const icon = resourcePoint.item.icon}
 
-            <div class="absolute inset-0 flex items-center justify-center z-0">
-                <Image
-                    id={resourceIconId}
-                    variant="item-icon-bg"
-                    className="w-full h-full object-contain blur-[0.3px] rotate-[0.01deg] backface-hidden transform-gpu transition-all duration-300"
-                />
-            </div>
-
-            {#if (iconId)}
-                <div class="absolute inset-0 flex items-center justify-center z-0 left-[25%]">
-                    <div class="w-2/3 h-2/3">
-                        <Image
-                            id={iconId}
-                            variant="item-icon"
-                            className="w-full h-full object-contain blur-[0.3px] rotate-[0.01deg] backface-hidden transform-gpu transition-all duration-300"
-                        />
-                    </div>
-                </div>
-            {/if}
-
+        <div class="absolute inset-0 flex items-center justify-center z-0">
+            <Image
+                id={bgIcon.iconId}
+                variant={bgIcon.imageVariant}
+                className="w-full h-full object-contain blur-[0.3px] rotate-[0.01deg] backface-hidden transform-gpu transition-all duration-300"
+                interactive={interactiveImages}
+            />
         </div>
 
-    </div>
+        <div class="absolute inset-0 flex items-center justify-center z-0 left-[25%]">
+            <div class="w-2/3 h-2/3">
+                <Image
+                    id={icon.iconId}
+                    variant={icon.imageVariant}
+                    className="w-full h-full object-contain blur-[0.3px] rotate-[0.01deg] backface-hidden transform-gpu transition-all duration-300"
+                    interactive={interactiveImages}
+                />
+            </div>
+        </div>
 
-</Tooltip>
+    {/key}
+
+</CardTemplate>

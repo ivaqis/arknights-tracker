@@ -1,6 +1,6 @@
-import {items} from "$lib/data/items/items.js";
-import {Building} from "$lib/classes/buildings/Building.js";
-import {itemId2EventId} from "$lib/data/items/itemMaps.js";
+import { Building } from "$lib/classes/buildings/Building.js";
+import { itemId2EventId } from "$lib/data/items/itemMaps.js";
+import { items } from "$lib/data/items/items";
 
 export class Item {
     _itemObj;

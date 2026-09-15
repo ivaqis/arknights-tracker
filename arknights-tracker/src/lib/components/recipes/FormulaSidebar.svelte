@@ -24,7 +24,7 @@
     import SidebarCraftSourceLabel from "$lib/components/recipes/SidebarCraftSourceLabel.svelte";
     import SidebarSectorLabel from "$lib/components/recipes/SidebarSectorLabel.svelte";
     import { t } from "$lib/i18n";
-    import { getRecipeTreeLinkParameters } from "$lib/utils/linkUtils.js";
+    import { getRecipeTreeLinkParameters } from "$lib/utils/linkUtils";
 
     export let currentItemId = ""; // only if mode is "recipes" or "tree"
     export let currentBuildingId = ""; // only if mode is "building"

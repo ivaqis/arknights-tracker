@@ -1,6 +1,6 @@
-import {Item} from "$lib/classes/items/Item.js";
-import {resourcePoints} from "$lib/data/items/resourcePoints.js";
-import {itemId2ResourcePointId} from "$lib/data/items/itemMaps.js";
+import { Item } from "$lib/classes/items/Item.js";
+import { itemId2ResourcePointId } from "$lib/data/items/itemMaps.js";
+import { resourcePoints } from "$lib/data/items/resourcePoints";
 
 export class ResourcePoint {
     _resourcePointObj;

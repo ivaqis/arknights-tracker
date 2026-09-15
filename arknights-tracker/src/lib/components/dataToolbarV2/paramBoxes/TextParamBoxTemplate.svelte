@@ -1,7 +1,8 @@
-<script>
+<script lang="ts">
+    import type { ParamBoxStyle } from "$lib/components/dataToolbarV2/paramBoxes/ParamBoxStyle";
     import ParamBoxTemplate from "$lib/components/dataToolbarV2/paramBoxes/ParamBoxTemplate.svelte";
 
-    export let styleMode = "default";
+    export let styleMode: ParamBoxStyle = "default";
 </script>
 
 <ParamBoxTemplate styleMode={styleMode}>

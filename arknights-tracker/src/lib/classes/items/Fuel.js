@@ -1,5 +1,5 @@
-import {Item} from "$lib/classes/items/Item.js";
-import {fuel} from "$lib/data/items/fuel.js";
+import { Item } from "$lib/classes/items/Item.js";
+import { fuel } from "$lib/data/items/fuel";
 
 export class Fuel extends Item {
     _fuelObj;
