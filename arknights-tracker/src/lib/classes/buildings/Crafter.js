@@ -1,5 +1,5 @@
-import {Building} from "$lib/classes/buildings/Building.js";
-import {crafters} from "$lib/data/buildings/crafters.js";
+import { Building } from "$lib/classes/buildings/Building";
+import { crafters } from "$lib/data/buildings/crafters";
 
 export class Crafter extends Building {
     _crafterObj;

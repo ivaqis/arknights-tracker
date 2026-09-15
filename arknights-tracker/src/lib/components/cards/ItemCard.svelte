@@ -1,6 +1,6 @@
 <script>
     import { t } from "$lib/i18n.js";
-    import { craftableItemsList } from "$lib/data/crafts/craftableItemsList.js";
+    import { craftableItemsList } from "$lib/data/crafts/craftableItemsList";
     import { goto } from "$app/navigation";
 
     import Image from "$lib/components/Image.svelte";

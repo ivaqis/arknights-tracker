@@ -1,6 +1,5 @@
 <script>
     import { t } from "$lib/i18n.js";
-    import { goto } from "$app/navigation";
     import { pullData } from "$lib/stores/pulls.js";
     import { manualPotentials } from "$lib/stores/potentials.js";
     import { accountStore } from "$lib/stores/accounts.js";
@@ -11,7 +10,7 @@
     import Tooltip from "$lib/components/Tooltip.svelte";
     import Image from "$lib/components/Image.svelte";
     import PotentialIcon from "$lib/components/operators/PotentialIcon.svelte";
-    import { getBaseSkillLocale, getBaseSkillMappedFilter } from "$lib/utils/filterUtils.js";
+    import { getBaseSkillLocale, getBaseSkillMappedFilter } from "$lib/utils/filterUtils";
 
     export let operator = {};
     export let variant = "default"; // "small" | "default"

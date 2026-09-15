@@ -13,10 +13,10 @@
         operatorFilters,
         operatorOwnedOnly,
         operatorSearch
-    } from "$lib/stores/filterStore";
+    } from "$lib/stores/filterStore.js";
     import { manualPotentials } from "$lib/stores/potentials";
     import { pullData } from "$lib/stores/pulls";
-    import { filterCheck, filterCheckLowerCase, getBaseSkillMappedFilter } from "$lib/utils/filterUtils.js";
+    import { filterCheck, filterCheckLowerCase, getBaseSkillMappedFilter } from "$lib/utils/filterUtils";
 
     $: selectedFilters = $operatorFilters;
     $: searchQuery = $operatorSearch;

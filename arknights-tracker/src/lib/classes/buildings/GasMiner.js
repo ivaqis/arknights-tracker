@@ -1,6 +1,6 @@
 import { Building } from "$lib/classes/buildings/Building.js";
 import { GasMiningFormula } from "$lib/classes/crafts/GasMiningFormula.js";
-import { gasMiners } from "$lib/data/buildings/gasMiners.js";
+import { gasMiners } from "$lib/data/buildings/gasMiners";
 
 export class GasMiner extends Building {
     _gasMinerObj;

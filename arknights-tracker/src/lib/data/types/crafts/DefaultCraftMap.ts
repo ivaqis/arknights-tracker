@@ -1,0 +1,1 @@
+export type DefaultCraftMap = Readonly<Record<string, string | undefined>>;

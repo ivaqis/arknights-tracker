@@ -1,27 +1,32 @@
-<script>
-    import { FactoryEvent } from "$lib/classes/events/FactoryEvent.js";
+<script lang="ts">
+    import { ItemFieldComparatorName } from "$lib/classes/comparators/items/ItemFieldComparatorName";
+    import { FactoryEvent } from "$lib/classes/events/legacy/FactoryEvent.js";
     import DropdownTemplate from "$lib/components/dataToolbarV2/DropdownTemplate.svelte";
     import SelectableParamList from "$lib/components/dataToolbarV2/filterDropdowns/SelectableParamList.svelte";
     import GroupTitle from "$lib/components/dataToolbarV2/GroupTitle.svelte";
     import RarityParamBox from "$lib/components/dataToolbarV2/paramBoxes/RarityParamBox.svelte";
     import TextParamBox from "$lib/components/dataToolbarV2/paramBoxes/TextParamBox.svelte";
     import { t } from "$lib/i18n";
+    import type { RecipeFilterGroup, RecipeFilterValue } from "$lib/stores/filters/recipes/RecipeFilterValueMap";
+    import type { RecipeSelectedFilterMap } from "$lib/stores/filters/recipes/RecipeSelectedFilterMap";
+    import type { RecipeSortParamMap } from "$lib/stores/filters/recipes/RecipeSortParamMap";
 
-    export let filters = {};
+    export let filters: RecipeSortParamMap;
 
-    export let selectedFilters = {};
+    export let selectedFilters: RecipeSelectedFilterMap = {};
 
-    export let onFilterReset = () => {selectedFilters = {}};
+    export let onFilterReset = () => { selectedFilters = {} };
 
-    function toggleFilterGroup(groupName) {
+    function toggleFilterGroup<K extends RecipeFilterGroup>(groupName: K) {
         if (!selectedFilters[groupName]) {
-            selectedFilters[groupName] = new Set();
+            selectedFilters[groupName] = new Set() as RecipeSelectedFilterMap[K];
         }
 
-        let set = selectedFilters[groupName];
+        const set = selectedFilters[groupName]!;
+        const filterParams = filters[groupName] as RecipeFilterValue<K>[];
 
         if (set.size === 0) {
-            for (let filter of filters[groupName]) {
+            for (const filter of filterParams) {
                 set.add(filter);
             }
         } else {
@@ -46,7 +51,7 @@
 
         <GroupTitle
             asButton={true}
-            onClick={() => toggleFilterGroup("rarity")}
+            onClick={() => toggleFilterGroup(ItemFieldComparatorName.RARITY)}
         >
             {$t("sort.rarity")}
         </GroupTitle>
@@ -63,7 +68,7 @@
 
         <GroupTitle
             asButton={true}
-            onClick={() => toggleFilterGroup("events")}
+            onClick={() => toggleFilterGroup(ItemFieldComparatorName.EVENT)}
         >
             {$t("sort.eventsTitle")}
         </GroupTitle>
@@ -81,7 +86,7 @@
 
         <GroupTitle
             asButton={true}
-            onClick={() => toggleFilterGroup("itemGroups")}
+            onClick={() => toggleFilterGroup(ItemFieldComparatorName.ITEM_GROUP)}
         >
             {$t("sort.itemGroup")}
         </GroupTitle>
@@ -99,7 +104,7 @@
 
         <GroupTitle
             asButton={true}
-            onClick={() => toggleFilterGroup("itemTypes")}
+            onClick={() => toggleFilterGroup(ItemFieldComparatorName.ITEM_TYPE)}
         >
             {$t("sort.itemTypesTitle")}
         </GroupTitle>
@@ -117,7 +122,7 @@
 
         <GroupTitle
             asButton={true}
-            onClick={() => toggleFilterGroup("itemMaterials")}
+            onClick={() => toggleFilterGroup(ItemFieldComparatorName.ITEM_MATERIAL)}
         >
             {$t("sort.itemMaterialsTitle")}
         </GroupTitle>

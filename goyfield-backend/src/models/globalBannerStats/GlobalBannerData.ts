@@ -1,11 +1,13 @@
 import { GlobalBannerDataBeginner } from "@models/globalBannerStats/entities/GlobalBannerDataBeginner.js";
 import { GlobalBannerDataJointV1 } from "@models/globalBannerStats/entities/GlobalBannerDataJointV1.js";
 import { GlobalBannerDataJointV2 } from "@models/globalBannerStats/entities/GlobalBannerDataJointV2.js";
+import { GlobalBannerDataRerun } from "@models/globalBannerStats/entities/GlobalBannerDataRerun.js";
 import { GlobalBannerDataSpecialV1 } from "@models/globalBannerStats/entities/GlobalBannerDataSpecialV1.js";
 import { GlobalBannerDataSpecialV2 } from "@models/globalBannerStats/entities/GlobalBannerDataSpecialV2.js";
 import { GlobalBannerDataStandard } from "@models/globalBannerStats/entities/GlobalBannerDataStandard.js";
 import { GlobalBannerDataWeaponV1 } from "@models/globalBannerStats/entities/GlobalBannerDataWeaponV1.js";
 import { GlobalBannerDataWeaponV2 } from "@models/globalBannerStats/entities/GlobalBannerDataWeaponV2.js";
+import { GlobalBannerDataWeaponRerun } from "@models/globalBannerStats/GlobalBannerDataWeaponRerun.js";
 
 export type GlobalBannerData =
     | GlobalBannerDataBeginner
@@ -14,5 +16,7 @@ export type GlobalBannerData =
     | GlobalBannerDataSpecialV2
     | GlobalBannerDataJointV1
     | GlobalBannerDataJointV2
+    | GlobalBannerDataRerun
     | GlobalBannerDataWeaponV1
-    | GlobalBannerDataWeaponV2;
+    | GlobalBannerDataWeaponV2
+    | GlobalBannerDataWeaponRerun;

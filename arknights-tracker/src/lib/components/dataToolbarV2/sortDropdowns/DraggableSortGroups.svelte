@@ -1,20 +1,23 @@
-<script>
-    import { DraggableList } from "$lib/classes/dragndrop/DraggableList.js";
+<script lang="ts" generics="TGroup extends DraggableItem">
+    import type { DraggableItem } from "$lib/classes/dragndrop/DraggableItem";
+    import { DraggableList } from "$lib/classes/dragndrop/DraggableList";
+    import type { IDraggableList } from "$lib/classes/dragndrop/IDraggableList";
     import Icon from "$lib/components/Icon.svelte";
     import { flip } from "svelte/animate";
 
-    export let openableGroups = false;
+    export let openableGroups: boolean = false;
 
-    export let getLocaleFunc = (group) => group?.toString() ?? "null";
+    export let getLocaleFunc: (group: TGroup) => string = (group) => group?.toString() ?? "null";
 
     // bindable
-    export let groupList = []; // if bound, it will be updated on change order of elements
-    export let draggedGroup = null;
-    export let openedGroup = null;
+    export let groupList: TGroup[] = []; // if bound, it will be updated on change order of elements
+    export let draggedGroup: TGroup | null = null;
+    export let openedGroup: TGroup | null = null;
 
-    function toggleGroupOpen(group) {
+    function toggleGroupOpen(group: TGroup) {
         if (openedGroup === group) {
             openedGroup = null;
+
             return;
         }
 
@@ -25,9 +28,9 @@
         openedGroup = null;
     }
 
-    $: isGroupOpened = (group) => openableGroups && openedGroup === group;
+    $: isGroupOpened = (group: TGroup) => openableGroups && openedGroup === group;
 
-    let dragList = new DraggableList(groupList);
+    let dragList: IDraggableList<TGroup> = new DraggableList(groupList);
 
     $: draggedGroup = dragList.draggedItemId;
 
@@ -43,16 +46,16 @@
         dragList = dragList;
     }
 
-    function updateItemList(itemList) {
+    function updateItemList(itemList: TGroup[]) {
         dragList.itemList = itemList;
     }
 
     let currentCursorPosX = 0;
     let currentCursorPosY = 0;
 
-    $: isGroupDragged = (group) => dragList.draggedItemId === group;
+    $: isGroupDragged = (group: TGroup) => dragList.draggedItemId === group;
 
-    function startDrag(event, group) {
+    function startDrag(event: PointerEvent & { currentTarget: EventTarget & HTMLDivElement }, group: TGroup) {
         currentCursorPosX = event.clientX;
         currentCursorPosY = event.clientY;
 
@@ -69,8 +72,9 @@
         forceDragListUpdate();
     }
 
-    function onGroupEnter(group) {
-        if (!dragList.draggedItemId) return;
+    function onGroupEnter(group: TGroup) {
+        if (!dragList.draggedItemId)
+            return;
 
         let wasModified = dragList.onEnter(group);
 
@@ -81,8 +85,9 @@
         }
     }
 
-    function onGroupLeave(group) {
-        if (!dragList.draggedItemId) return;
+    function onGroupLeave(group: TGroup) {
+        if (!dragList.draggedItemId)
+            return;
 
         dragList.onLeave(group);
 
@@ -91,34 +96,40 @@
 
 
     function handleWindowPointerUp() {
-        if (!dragList.draggedItemId) return;
+        if (!dragList.draggedItemId)
+            return;
 
         endDrag();
 
         document.body.classList.remove("cursor-grabbing");
     }
 
-    function handleWindowPointerMove(event) {
-        if (!dragList.draggedItemId) return;
+    function handleWindowPointerMove(event: PointerEvent & { currentTarget: EventTarget & Window }) {
+        if (!dragList.draggedItemId)
+            return;
 
         currentCursorPosX = event.clientX;
         currentCursorPosY = event.clientY;
     }
 
 
-    let groupTouchHovered = null;
+    let groupTouchHovered: TGroup | null = null;
 
-    function handleWindowTouchMove(event) {
-        if (!dragList.draggedItemId) return;
+    function handleWindowTouchMove(event: TouchEvent & { currentTarget: EventTarget & Window }) {
+        if (!dragList.draggedItemId)
+            return;
 
         const touch = event.touches[0];
-        if (!touch) return;
+
+        if (!touch)
+            return;
 
         const elementUnderPointer = document.elementFromPoint(touch.clientX, touch.clientY);
-        const groupItem = elementUnderPointer.closest("[data-group]");
-        const newGroup = groupItem?.dataset.group ?? null;
+        const groupItem = elementUnderPointer?.closest<HTMLElement>("[data-group]");
+        const newGroup = (groupItem?.dataset.group ?? null) as TGroup | null;
 
-        if (newGroup === groupTouchHovered) return;
+        if (newGroup === groupTouchHovered)
+            return;
 
         if (groupTouchHovered) {
             onGroupLeave(groupTouchHovered);

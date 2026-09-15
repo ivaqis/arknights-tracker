@@ -27,10 +27,10 @@
         equipmentSearch,
         getEquipmentFilters,
         getEquipmentSortOptions
-    } from "$lib/stores/filterStore";
+    } from "$lib/stores/filterStore.js";
     import { currentLocale } from "$lib/stores/locale";
     import { manualPotentials } from "$lib/stores/potentials";
-    import { filterCheck, filterCheckLowerCase } from "$lib/utils/filterUtils.js";
+    import { filterCheck, filterCheckLowerCase } from "$lib/utils/filterUtils";
     import { onDestroy, onMount } from "svelte";
 
     $: selectedFilters = $equipmentFilters;

@@ -6,13 +6,13 @@
 <script>
     import { t } from "$lib/i18n";
     import { currentLocale } from "$lib/stores/locale";
-    import { changelogData } from "$lib/data/versions.js";
-    import { equipment } from "$lib/data/items/equipment.js";
-    import { characters } from "$lib/data/characters.js";
-    import { weapons } from "$lib/data/weapons.js";
-    import { enemies } from "$lib/data/enemies.js";
-    import { banners } from "$lib/data/banners.js";
-    import { rawEvents } from "$lib/data/timeline.js";
+    import { changelogData } from "$lib/data/versions";
+    import { equipment } from "$lib/data/items/equipment";
+    import { characters } from "$lib/data/characters";
+    import { weapons } from "$lib/data/weapons";
+    import { enemies } from "$lib/data/enemies";
+    import { banners } from "$lib/data/banners";
+    import { rawEvents } from "$lib/data/timeline";
 
     import Select from "$lib/components/Select.svelte";
     import WeaponCard from "$lib/components/cards/WeaponCard.svelte";

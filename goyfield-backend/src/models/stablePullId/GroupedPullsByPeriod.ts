@@ -8,7 +8,9 @@ export interface GroupedPullsByPeriod {
     [BannerType.CHAR_BEGINNER]: PeriodPulls<CharPull>,
     [BannerType.CHAR_SPECIAL]: PeriodPulls<CharPull>,
     [BannerType.CHAR_JOINT]: PeriodPulls<CharPull>,
-    [BannerType.WEAPON]: PeriodPulls<WeaponPull>
+    [BannerType.WEAPON]: PeriodPulls<WeaponPull>,
+    [BannerType.CHAR_RERUN]: PeriodPulls<CharPull>,
+    [BannerType.WEAPON_RERUN]: PeriodPulls<WeaponPull>
 }
 
 export namespace GroupedPullsByPeriod {
@@ -18,7 +20,9 @@ export namespace GroupedPullsByPeriod {
             [BannerType.CHAR_BEGINNER]: PeriodPulls.createEmpty(),
             [BannerType.CHAR_SPECIAL]: PeriodPulls.createEmpty(),
             [BannerType.CHAR_JOINT]: PeriodPulls.createEmpty(),
-            [BannerType.WEAPON]: PeriodPulls.createEmpty()
+            [BannerType.WEAPON]: PeriodPulls.createEmpty(),
+            [BannerType.CHAR_RERUN]: PeriodPulls.createEmpty(),
+            [BannerType.WEAPON_RERUN]: PeriodPulls.createEmpty(),
         };
     }
 }

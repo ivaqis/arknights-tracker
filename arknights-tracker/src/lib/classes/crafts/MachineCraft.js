@@ -1,5 +1,5 @@
-import {machineCrafts} from "$lib/data/crafts/machineCrafts.js";
-import {Crafter} from "$lib/classes/buildings/Crafter.js";
+import { Crafter } from "$lib/classes/buildings/Crafter.js";
+import { machineCrafts } from "$lib/data/crafts/machineCrafts";
 
 export class MachineCraft {
     _craftObj;

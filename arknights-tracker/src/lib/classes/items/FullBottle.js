@@ -1,5 +1,5 @@
-import {Item} from "$lib/classes/items/Item.js";
-import {fullBottles} from "$lib/data/items/fullBottles.js";
+import { Item } from "$lib/classes/items/Item.js";
+import { fullBottles } from "$lib/data/items/fullBottles";
 
 export class FullBottle extends Item {
     _fullBottleObj;

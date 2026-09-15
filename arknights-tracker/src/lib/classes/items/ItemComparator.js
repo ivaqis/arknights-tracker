@@ -1,6 +1,6 @@
-import { FieldComparator } from "$lib/classes/comparators/FieldComparator.js";
-import { IComparator } from "$lib/classes/comparators/IComparator.js";
-import { LocaleComparator } from "$lib/classes/comparators/LocaleComparator.js";
+import { FieldComparator } from "$lib/classes/comparators/legacy/FieldComparator.js";
+import { IComparator } from "$lib/classes/comparators/legacy/IComparator.js";
+import { LocaleComparator } from "$lib/classes/comparators/legacy/LocaleComparator.js";
 import { FullBottle } from "$lib/classes/items/FullBottle.js";
 import { Item } from "$lib/classes/items/Item.js";
 

@@ -1,5 +1,5 @@
-import {buildings} from "$lib/data/buildings/buildings.js";
-import {itemId2BuildingId} from "$lib/data/buildings/itemId2BuildingId.js";
+import { buildings } from "$lib/data/buildings/buildings";
+import { itemId2BuildingId } from "$lib/data/buildings/itemId2BuildingId.js";
 
 export class Building {
     _buildingObj;

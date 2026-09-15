@@ -31,3 +31,9 @@ export function getDateFromISOString(iso: `${number}-${number}-${number}`): Date
         parseInt(day, 10)
     );
 }
+
+export function getDateTime(dateStr: `${number}-${number}-${number} ${number}:${number}:${number}` | string): Date {
+    const [date, time] = dateStr.split(" ");
+
+    return new Date(`${date}T${time}Z`);
+}

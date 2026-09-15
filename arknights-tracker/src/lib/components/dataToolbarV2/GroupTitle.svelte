@@ -1,7 +1,7 @@
-<script>
-    export let asButton = false;
+<script lang="ts">
+    export let asButton: boolean = false;
 
-    export let onClick;
+    export let onClick: () => void = () => {};
 </script>
 
 <svelte:element
