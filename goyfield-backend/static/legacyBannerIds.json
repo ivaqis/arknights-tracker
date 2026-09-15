@@ -1,6 +1,8 @@
 [
   "beginner",
   "joint_1_2_2",
+  "rerun_chr_yvonne",
+  "rerun_wpn_yvonne",
   "special_1_0_1",
   "special_1_0_2",
   "special_1_0_3",
@@ -11,6 +13,7 @@
   "special_1_3_2",
   "special_1_4_1",
   "special_1_4_2",
+  "special_1_5_1",
   "standard",
   "weaponbox_constant_1",
   "weaponbox_constant_2",
@@ -28,5 +31,6 @@
   "weponbox_1_3_1",
   "weponbox_1_3_2",
   "weponbox_1_4_1",
-  "weponbox_1_4_2"
+  "weponbox_1_4_2",
+  "weponbox_1_5_1"
 ]

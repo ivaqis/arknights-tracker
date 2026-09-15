@@ -376,6 +376,14 @@
     "name": "AIC Fieldwork Vest"
   },
   {
+    "id": "item_equip_t4_parts_wuling00_body_04",
+    "name": "AIC Fieldwork Assault Armor"
+  },
+  {
+    "id": "item_equip_t4_parts_wuling00_body_05",
+    "name": "AIC Fieldwork Medic Armor"
+  },
+  {
     "id": "item_equip_t4_parts_wuling00_edc_01",
     "name": "AIC Fieldwork Machete"
   },
@@ -388,6 +396,14 @@
     "name": "AIC Fieldwork Flashlight"
   },
   {
+    "id": "item_equip_t4_parts_wuling00_edc_04",
+    "name": "AIC Fieldwork Assault Push Knife"
+  },
+  {
+    "id": "item_equip_t4_parts_wuling00_edc_05",
+    "name": "AIC Fieldwork Power Bank"
+  },
+  {
     "id": "item_equip_t4_parts_wuling00_hand_01",
     "name": "AIC Fieldwork Gloves"
   },
@@ -398,6 +414,14 @@
   {
     "id": "item_equip_t4_parts_wuling00_hand_03",
     "name": "AIC Fieldwork Wraps"
+  },
+  {
+    "id": "item_equip_t4_parts_wuling00_hand_04",
+    "name": "AIC Fieldwork Assault Gloves"
+  },
+  {
+    "id": "item_equip_t4_parts_wuling00_hand_05",
+    "name": "AIC Fieldwork Medic Gloves"
   },
   {
     "id": "item_equip_t4_parts_wuling01_body_01",
@@ -612,6 +636,14 @@
     "name": "Tide Fall Light Armor"
   },
   {
+    "id": "item_equip_t4_suit_burst01_body_02",
+    "name": "Tide Fall Light Armor T1"
+  },
+  {
+    "id": "item_equip_t4_suit_burst01_body_03",
+    "name": "Wave Swell Heavy Armor"
+  },
+  {
     "id": "item_equip_t4_suit_burst01_edc_01",
     "name": "Hanging River O2 Tube"
   },
@@ -620,8 +652,16 @@
     "name": "Turbid Cutting Torch"
   },
   {
+    "id": "item_equip_t4_suit_burst01_edc_03",
+    "name": "Turbid Cutting Torch T1"
+  },
+  {
     "id": "item_equip_t4_suit_burst01_hand_01",
     "name": "Tide Surge Gauntlets"
+  },
+  {
+    "id": "item_equip_t4_suit_burst01_hand_02",
+    "name": "Deepsink Gloves"
   },
   {
     "id": "item_equip_t4_suit_combo_cd01_body_01",
@@ -928,6 +968,18 @@
     "name": "Pulser Labs Gloves"
   },
   {
+    "id": "item_equip_t4_suit_spellburst_body_01",
+    "name": "Deep Rampart Armor"
+  },
+  {
+    "id": "item_equip_t4_suit_spellburst_edc_01",
+    "name": "Deep Rampart Comms"
+  },
+  {
+    "id": "item_equip_t4_suit_spellburst_hand_01",
+    "name": "Deep Rampart Gauntlets"
+  },
+  {
     "id": "item_equip_t4_suit_usp02_body_01",
     "name": "Eternal Xiranite Armor"
   },
@@ -954,6 +1006,14 @@
   {
     "id": "item_equip_t4_suit_usp02_edc_04",
     "name": "Eternal Xiranite Bracing Slab"
+  },
+  {
+    "id": "item_equip_t4_suit_usp02_edc_05",
+    "name": "Eternal Xiranite Bracing Slab T1"
+  },
+  {
+    "id": "item_equip_t4_suit_usp02_edc_06",
+    "name": "Eternal Xiranite Heavy Slab"
   },
   {
     "id": "item_equip_t4_suit_usp02_hand_01",
