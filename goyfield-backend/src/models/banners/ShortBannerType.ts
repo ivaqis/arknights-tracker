@@ -3,7 +3,9 @@ export enum ShortBannerType {
     CHAR_STANDARD = "standard",
     CHAR_SPECIAL = "special",
     CHAR_JOINT = "joint",
-    WEAPON = "weapon"
+    CHAR_RERUN = "rerun",
+    WEAPON = "weapon",
+    WEAPON_RERUN = "weapon_rerun",
 }
 
 export namespace ShortBannerType {
@@ -12,6 +14,8 @@ export namespace ShortBannerType {
             || str === ShortBannerType.CHAR_STANDARD
             || str === ShortBannerType.CHAR_SPECIAL
             || str === ShortBannerType.CHAR_JOINT
-            || str === ShortBannerType.WEAPON;
+            || str === ShortBannerType.CHAR_RERUN
+            || str === ShortBannerType.WEAPON
+            || str === ShortBannerType.WEAPON_RERUN;
     }
 }

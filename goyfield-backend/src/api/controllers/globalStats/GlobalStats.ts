@@ -4,7 +4,7 @@ import { GlobalStatsResponse } from "@api/contracts/globalStats/GlobalStatsRespo
 import { ResponseBody } from "@api/contracts/ResponseBody.js";
 import { Controller } from "@api/controllers/Controller.js";
 import { Database } from "@database/Database.js";
-import GlobalBannerStatsAggregator from "@models/globalBannerStats/GlobalBannerStatsAggregator.js";
+import { GlobalBannerStatsAggregator } from "@models/globalBannerStats/GlobalBannerStatsAggregator.js";
 import e from "express";
 
 export class GlobalStats extends Controller<

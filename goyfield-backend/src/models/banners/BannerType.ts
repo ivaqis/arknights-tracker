@@ -6,15 +6,22 @@ export enum BannerType {
     CHAR_STANDARD = "E_CharacterGachaPoolType_Standard",
     CHAR_SPECIAL = "E_CharacterGachaPoolType_Special",
     CHAR_JOINT = "E_CharacterGachaPoolType_Joint",
-    WEAPON = "Weapon"
+    CHAR_RERUN = "E_CharacterGachaPoolType_Rerun",
+    WEAPON = "Weapon",
+    WEAPON_RERUN = "weapon_rerun", // todo поменять
 }
 
 export namespace BannerType {
-    export type CHAR =
+    export type Character =
         | BannerType.CHAR_BEGINNER
         | BannerType.CHAR_STANDARD
         | BannerType.CHAR_SPECIAL
-        | BannerType.CHAR_JOINT;
+        | BannerType.CHAR_JOINT
+        | BannerType.CHAR_RERUN;
+
+    export type Weapon =
+        | BannerType.WEAPON
+        | BannerType.WEAPON_RERUN;
 
     export function getShortBannerTypeName(bannerType: BannerType): ShortBannerType {
         switch (bannerType) {
@@ -22,7 +29,9 @@ export namespace BannerType {
             case BannerType.CHAR_STANDARD: return ShortBannerType.CHAR_STANDARD;
             case BannerType.CHAR_SPECIAL: return ShortBannerType.CHAR_SPECIAL;
             case BannerType.CHAR_JOINT: return ShortBannerType.CHAR_JOINT;
+            case BannerType.CHAR_RERUN: return ShortBannerType.CHAR_RERUN;
             case BannerType.WEAPON: return ShortBannerType.WEAPON;
+            case BannerType.WEAPON_RERUN: return ShortBannerType.WEAPON_RERUN;
         }
     }
 
@@ -32,7 +41,9 @@ export namespace BannerType {
             case "standard": return BannerType.CHAR_STANDARD;
             case "special": return BannerType.CHAR_SPECIAL;
             case "joint": return BannerType.CHAR_JOINT;
+            case "rerun": return BannerType.CHAR_RERUN;
             case "weapon": return BannerType.WEAPON;
+            case "weapon_rerun": return BannerType.WEAPON_RERUN;
         }
 
         return null;
@@ -44,8 +55,10 @@ export namespace BannerType {
             case DbBannerType.CHAR_STANDARD: return BannerType.CHAR_STANDARD;
             case DbBannerType.CHAR_SPECIAL: return BannerType.CHAR_SPECIAL;
             case DbBannerType.CHAR_JOINT: return BannerType.CHAR_JOINT;
+            case DbBannerType.CHAR_RERUN: return BannerType.CHAR_RERUN;
             case DbBannerType.WEAPON_SPECIAL: return BannerType.WEAPON;
             case DbBannerType.WEAPON_STANDARD: return BannerType.WEAPON;
+            case DbBannerType.WEAPON_RERUN: return BannerType.WEAPON_RERUN;
         }
     }
 
@@ -54,6 +67,8 @@ export namespace BannerType {
             || str === BannerType.CHAR_STANDARD
             || str === BannerType.CHAR_SPECIAL
             || str === BannerType.CHAR_JOINT
-            || str === BannerType.WEAPON;
+            || str === BannerType.CHAR_RERUN
+            || str === BannerType.WEAPON
+            || str === BannerType.WEAPON_RERUN;
     }
 }

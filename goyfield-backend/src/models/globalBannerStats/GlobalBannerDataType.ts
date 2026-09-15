@@ -5,6 +5,8 @@ export enum GlobalBannerDataType {
     SPECIAL_V2 = "special-v2",
     JOINT_V1 = "joint-v1",
     JOINT_V2 = "joint-v2",
+    RERUN = "rerun",
     WEAPON_V1 = "weapon-v1",
     WEAPON_V2 = "weapon-v2",
+    WEAPON_RERUN = "weapon-rerun",
 }

@@ -5,6 +5,7 @@ import { Banner } from "@models/banners/Banner.js";
 import { GlobalBannerDataBeginner } from "@models/globalBannerStats/entities/GlobalBannerDataBeginner.js";
 import { GlobalBannerDataJointV1 } from "@models/globalBannerStats/entities/GlobalBannerDataJointV1.js";
 import { GlobalBannerDataJointV2 } from "@models/globalBannerStats/entities/GlobalBannerDataJointV2.js";
+import { GlobalBannerDataRerun } from "@models/globalBannerStats/entities/GlobalBannerDataRerun.js";
 import { GlobalBannerDataSpecialV1 } from "@models/globalBannerStats/entities/GlobalBannerDataSpecialV1.js";
 import { GlobalBannerDataSpecialV2 } from "@models/globalBannerStats/entities/GlobalBannerDataSpecialV2.js";
 import { GlobalBannerDataStandard } from "@models/globalBannerStats/entities/GlobalBannerDataStandard.js";
@@ -18,9 +19,10 @@ import { GlobalTimelineData } from "@models/globalBannerStats/entities/timeline/
 import { GlobalTimelineFreeData } from "@models/globalBannerStats/entities/timeline/GlobalTimelineFreeData.js";
 import { GlobalBannerData } from "@models/globalBannerStats/GlobalBannerData.js";
 import { GlobalBannerDataType } from "@models/globalBannerStats/GlobalBannerDataType.js";
+import { GlobalBannerDataWeaponRerun } from "@models/globalBannerStats/GlobalBannerDataWeaponRerun.js";
 import { getMapList } from "@utils/collectionUtils.js";
 
-class GlobalBannerStatsAggregator {
+export class GlobalBannerStatsAggregator {
     public static readonly OROBERYL_COST_PER_PULL: number = 500;
     public static readonly ARSENAL_TICKETS_COST_PER_TENPULL: number = 1980;
 
@@ -99,6 +101,8 @@ class GlobalBannerStatsAggregator {
             case GlobalBannerDataType.JOINT_V2: return await this.getGlobalBannerDataJointV2(banner);
             case GlobalBannerDataType.WEAPON_V1: return await this.getGlobalBannerDataWeaponV1(banner);
             case GlobalBannerDataType.WEAPON_V2: return await this.getGlobalBannerDataWeaponV2(banner);
+            case GlobalBannerDataType.RERUN: return await this.getGlobalBannerDataRerun(banner);
+            case GlobalBannerDataType.WEAPON_RERUN: return await this.getGlobalBannerDataWeaponRerun(banner);
         }
     }
 
@@ -706,6 +710,176 @@ class GlobalBannerStatsAggregator {
         };
     }
 
+    private async getGlobalBannerDataRerun(banner: Banner): Promise<GlobalBannerDataRerun> {
+        const bannerId = banner.id;
+        const stats = await this._database.userBannerStats.getGlobalBannerStats(bannerId);
+
+        if (stats.totalUsers === 0) {
+            return {
+                type: GlobalBannerDataType.RERUN,
+                stats: {
+                    featured: {
+                        totalCount: 0,
+                        freeCount: 0,
+                        guaranteedCount: 0,
+                        ids: banner.getFeaturedList()
+                    },
+                    overview: {
+                        totalUsers: 0,
+                        freePulls: 0,
+                        oroberylSpent: 0,
+                        totalPulls: 0
+                    },
+                    stats6: {
+                        totalCount: 0,
+                        freeCount: 0,
+                        freeRate: 0,
+                        freeWinrate: 0,
+                        medianPity: 0,
+                        totalRate: 0,
+                        winrate: 0
+                    },
+                    stats5: {
+                        totalCount: 0,
+                        freeCount: 0,
+                        freeRate: 0,
+                        totalRate: 0,
+                        medianPity: 0
+                    }
+                },
+                timeline: [],
+                items5: [],
+                items6: [],
+                pityDistribution5: [],
+                pityDistribution6: []
+            }
+        }
+
+        const groupedPityDistribution = await this.getGroupedPityDistribution(bannerId, stats.total6, stats.total5);
+        const groupedItems = await this.getGroupedItems(bannerId, stats.total6, stats.total5);
+        const timeline = await this.getTimelineFreeData(bannerId, stats.totalPulls, stats.freePulls);
+
+        const pityDistribution6 = groupedPityDistribution.get(6) ?? [];
+        const pityDistribution5 = groupedPityDistribution.get(5) ?? [];
+
+        return {
+            type: GlobalBannerDataType.RERUN,
+            stats: {
+                featured: {
+                    totalCount: stats.featured,
+                    guaranteedCount: stats.guaranteed,
+                    freeCount: stats.freeWin5050,
+                    ids: banner.getFeaturedList()
+                },
+                overview: {
+                    totalUsers: stats.totalUsers,
+                    totalPulls: stats.totalPulls,
+                    freePulls: stats.freePulls,
+                    oroberylSpent: GlobalBannerStatsAggregator.getOroberylCost(stats.unfreePulls)
+                },
+                stats6: {
+                    totalCount: stats.total6,
+                    totalRate: stats.total6 / stats.totalPulls,
+                    medianPity: GlobalBannerStatsAggregator.getMedianPity(pityDistribution6, stats.unfree6),
+                    winrate: stats.winrate,
+                    freeCount: stats.free6,
+                    freeRate: stats.free6 / stats.freePulls,
+                    freeWinrate: stats.freeWinrate
+                },
+                stats5: {
+                    totalCount: stats.total5,
+                    totalRate: stats.total5 / stats.totalPulls,
+                    medianPity: GlobalBannerStatsAggregator.getMedianPity(pityDistribution5, stats.unfree5),
+                    freeCount: stats.free5,
+                    freeRate: stats.free5 / stats.freePulls
+                }
+            },
+            timeline,
+            pityDistribution6,
+            pityDistribution5,
+            items6: groupedItems.get(6) ?? [],
+            items5: groupedItems.get(5) ?? [],
+        };
+    }
+
+    private async getGlobalBannerDataWeaponRerun(banner: Banner): Promise<GlobalBannerDataWeaponRerun> {
+        const bannerId = banner.id;
+        const stats = await this._database.userBannerStats.getGlobalBannerStats(bannerId);
+
+        if (stats.totalUsers === 0) {
+            return {
+                type: GlobalBannerDataType.WEAPON_RERUN,
+                stats: {
+                    featured: {
+                        totalCount: 0,
+                        guaranteedCount: 0,
+                        ids: banner.getFeaturedList()
+                    },
+                    overview: {
+                        totalUsers: 0,
+                        arsenalTicketsSpent: 0,
+                        totalPulls: 0
+                    },
+                    stats6: {
+                        totalCount: 0,
+                        medianPity: 0,
+                        winrate: 0,
+                        totalRate: 0
+                    },
+                    stats5: {
+                        totalCount: 0,
+                        totalRate: 0,
+                        medianPity: 0
+                    }
+                },
+                timeline: [],
+                items5: [],
+                items6: [],
+                pityDistribution5: [],
+                pityDistribution6: []
+            };
+        }
+
+        const groupedPityDistribution = await this.getGroupedPityDistribution(bannerId, stats.total6, stats.total5);
+        const groupedItems = await this.getGroupedItems(bannerId, stats.total6, stats.total5);
+        const timeline = await this.getTimelineData(bannerId, stats.totalPulls);
+
+        const pityDistribution6 = groupedPityDistribution.get(6) ?? [];
+        const pityDistribution5 = groupedPityDistribution.get(5) ?? [];
+
+        return {
+            type: GlobalBannerDataType.WEAPON_RERUN,
+            stats: {
+                featured: {
+                    totalCount: stats.featured,
+                    guaranteedCount: stats.guaranteed,
+                    ids: banner.getFeaturedList()
+                },
+                overview: {
+                    totalUsers: stats.totalUsers,
+                    totalPulls: stats.totalPulls,
+                    arsenalTicketsSpent: GlobalBannerStatsAggregator.getArsenalTicketsCost(stats.unfreePulls)
+                },
+                stats6: {
+                    totalCount: stats.total6,
+                    totalRate: stats.total6 / stats.totalPulls,
+                    winrate: stats.winrate,
+                    medianPity: GlobalBannerStatsAggregator.getMedianPity(pityDistribution6, stats.unfree6)
+                },
+                stats5: {
+                    totalCount: stats.total5,
+                    totalRate: stats.total5 / stats.totalPulls,
+                    medianPity: GlobalBannerStatsAggregator.getMedianPity(pityDistribution5, stats.unfree5)
+                }
+            },
+            timeline,
+            pityDistribution6,
+            pityDistribution5,
+            items6: groupedItems.get(6) ?? [],
+            items5: groupedItems.get(5) ?? [],
+        };
+    }
+
     private async getGroupedPityDistribution(bannerId: string, total6: number, total5?: number): Promise<Map<number, GlobalPityDistributionData[]>> {
         const data = await this._database.globalBannerStats.getPityDistribution(bannerId);
 
@@ -772,5 +946,3 @@ class GlobalBannerStatsAggregator {
         }));
     }
 }
-
-export default GlobalBannerStatsAggregator;

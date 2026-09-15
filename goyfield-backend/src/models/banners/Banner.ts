@@ -58,6 +58,10 @@ export class Banner {
                 return isLegacy
                     ? GlobalBannerDataType.WEAPON_V1
                     : GlobalBannerDataType.WEAPON_V2;
+            case BannerType.CHAR_RERUN:
+                return GlobalBannerDataType.RERUN;
+            case BannerType.WEAPON_RERUN:
+                return GlobalBannerDataType.WEAPON_RERUN;
         }
     }
 
