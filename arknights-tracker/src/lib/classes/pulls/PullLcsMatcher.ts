@@ -1,5 +1,7 @@
 import type { LcsMatchRecord, PullRecord } from "$lib/classes/pulls/PullTypes";
 import { PullDateHelper } from "$lib/classes/pulls/PullDateHelper";
+import { get } from "svelte/store";
+import { currentUiLocale, normalizeLocale } from "$lib/stores/locale";
 
 export class AccountMismatchError extends Error {
     public readonly code: "ACCOUNT_MISMATCH" | "ACCOUNT_MISMATCH_RECOVERY";
@@ -126,8 +128,9 @@ export class PullLcsMatcher {
         const hasMatch = sortedNew.some(p => existingSignatures.has(`${p.time.getTime()}_${p.name}`));
 
         if (!hasMatch) {
-            const startDate = new Date(minNewTime).toLocaleDateString();
-            const endDate = new Date(maxNewTime).toLocaleDateString();
+            const loc = normalizeLocale(typeof window !== "undefined" ? get(currentUiLocale) : "en-US");
+            const startDate = new Date(minNewTime).toLocaleDateString(loc);
+            const endDate = new Date(maxNewTime).toLocaleDateString(loc);
             throw new AccountMismatchError("ACCOUNT_MISMATCH", { start: startDate, end: endDate });
         }
     }

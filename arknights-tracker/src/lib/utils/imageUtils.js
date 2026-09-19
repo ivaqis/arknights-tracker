@@ -13,6 +13,9 @@ const apiIdToCharId = Object.values(characters || {}).reduce((acc, char) => {
     if (char?.apiId) {
         acc[char.apiId] = char.id;
     }
+    if (char?.gameId) {
+        acc[char.gameId] = char.id;
+    }
     return acc;
 }, {});
 
@@ -115,6 +118,12 @@ export function getImagePath(idOrName, variant = 'operator-icon') {
 
         case 'event-icon':
             return `/images/events/icon/${withExt(name, 'webp')}`; 
+
+        case 'monument-icon':
+            return `/images/umbralMonument/icon/${withExt(name, 'png')}`; 
+
+        case 'monument-cover':
+            return `/images/umbralMonument/cover/${withExt(name, 'png')}`;
 
         case 'skill-icon':
             return `/images/operators/skills/${withExt(name)}`;

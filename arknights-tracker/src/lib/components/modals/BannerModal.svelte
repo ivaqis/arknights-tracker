@@ -8,7 +8,7 @@
     import { banners } from "$lib/data/banners.js";
     import { browser } from "$app/environment";
     import { t } from "$lib/i18n.js";
-    import { currentLocale, currentUiLocale } from "$lib/stores/locale.js";
+    import { currentLocale, currentUiLocale, normalizeLocale } from "$lib/stores/locale.js";
 
     import Icon from "$lib/components/Icon.svelte";
     import OperatorCard from "$lib/components/cards/OperatorCard.svelte";
@@ -84,8 +84,7 @@
     function formatTime(d, loc) {
         if (!d) return "";
 
-        let activeLocale = loc || "en";
-        if (activeLocale === "my") activeLocale = "ms-MY";
+        let activeLocale = normalizeLocale(loc);
 
         if (showServerTime) {
             const shiftedMs = d.getTime() + serverOffset * 3600000;

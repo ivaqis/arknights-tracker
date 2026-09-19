@@ -2,6 +2,7 @@
     import { t } from "$lib/i18n.js";
     import { characters } from "$lib/data/characters.js";
     import { weapons } from "$lib/data/weapons.js";
+    import { currentUiLocale, normalizeLocale } from "$lib/stores/locale.js";
     
     import Icon from "$lib/components/Icon.svelte";
     import Tooltip from "$lib/components/Tooltip.svelte";
@@ -39,7 +40,7 @@
     })();
 
     $: total = stats.total || 0;
-    $: spent = (billableCount * 500).toLocaleString("ru-RU");
+    $: spent = (billableCount * 500).toLocaleString(normalizeLocale($currentUiLocale));
     $: count6 = stats.count6 || 0;
     $: count5 = stats.count5 || 0;
     $: percent6 = stats.percent6 || "0.00";

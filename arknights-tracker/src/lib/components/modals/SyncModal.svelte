@@ -1,6 +1,6 @@
 <script>
     import { t } from "$lib/i18n.js";
-    import { currentUiLocale } from "$lib/stores/locale.js";
+    import { currentUiLocale, normalizeLocale } from "$lib/stores/locale.js";
     import { syncStatus, cloudDataBuffer, applyCloudData, uploadLocalData } from "$lib/stores/cloudStore.js";
     import { accountStore } from "$lib/stores/accounts.js";
     import { pullData } from "$lib/stores/pulls.js";
@@ -29,9 +29,8 @@
     }
 
     $: formatDate = (ts) => {
-        if (ts === 0) return $t("settings.cloud.never") || "Never";
-        let activeLocale = $currentUiLocale || "en";
-        if (activeLocale === "my") activeLocale = "ms-MY";
+        if (ts === 0) return $t("settings.cloud.never");
+        let activeLocale = normalizeLocale($currentUiLocale);
         return new Date(ts).toLocaleString(activeLocale);
     };
 

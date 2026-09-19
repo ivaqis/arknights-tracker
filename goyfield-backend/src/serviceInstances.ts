@@ -4,6 +4,9 @@ import { PrismaClient } from "@generated/prisma-v2/index.js";
 import { Authenticator } from "@services/auth/Authenticator.js";
 import { AvatarUploader } from "@services/avatarUploader/AvatarUploader.js";
 import { FirebaseAuthenticator } from "@services/firebaseAuth/FirebaseAuthenticator.js";
+import { HiveNsfwValidator } from "@services/hiveNsfwValidator/HiveNsfwValidator.js";
+import { ModerateContentNsfwValidator } from "@services/moderateContentNsfwValidator/ModerateContentNsfwValidator.js";
+import { CompositeNsfwValidator } from "@services/nsfwValidator/CompositeNsfwValidator.js";
 import { SightengineNsfwValidator } from "@services/sightengineNsfwValidator/SightengineNsfwValidator.js";
 
 const prisma = new PrismaClient();
@@ -16,3 +19,7 @@ export const authenticator = new Authenticator(database, firebase);
 export const avatarUploader = new AvatarUploader();
 
 export const sightengine = new SightengineNsfwValidator(config.sightengineUser ?? "", config.sightengineSecret ?? "");
+export const moderateContent = new ModerateContentNsfwValidator(config.moderateContentKey ?? "");
+export const hive = new HiveNsfwValidator(config.hiveApiKey ?? "");
+
+export const nsfwValidator = new CompositeNsfwValidator([sightengine, moderateContent, hive]);

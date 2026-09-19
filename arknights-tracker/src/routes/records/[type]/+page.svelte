@@ -12,7 +12,7 @@
     import { isDarkMode } from "$lib/stores/theme";
     import { onMount } from "svelte";
     import { getWeaponCategory } from "$lib/utils/importUtils";
-    import { currentUiLocale } from "$lib/stores/locale";
+    import { currentLocale, currentUiLocale, normalizeLocale } from "$lib/stores/locale";
 
     import Button from "$lib/components/Button.svelte";
     import Icon from "$lib/components/Icon.svelte";
@@ -207,7 +207,7 @@
     $: billableCount = tableData
         ? tableData.filter((p) => !p.isFree).length
         : 0;
-    $: spent = (billableCount * 500).toLocaleString("ru-RU");
+    $: spent = (billableCount * 500).toLocaleString(normalizeLocale($currentUiLocale));
     $: currentPity6 = stats.pity6 || 0;
     $: currentPity5 = stats.pity5 || 0;
     $: guarantee6 = stats.guarantee120 || 0;
@@ -595,8 +595,7 @@
         if (!dateStr) return "";
         const parsed = new Date(dateStr.replace(" ", "T"));
         if (isNaN(parsed.getTime())) return "";
-        let loc = locale || "en";
-        if (loc === "my") loc = "ms-MY";
+        let loc = normalizeLocale(locale);
         try {
             return new Intl.DateTimeFormat(loc, {
                 day: "2-digit",
@@ -633,7 +632,7 @@
             .map(b => {
                 const label = $t(`banners.${b.id}`) !== `banners.${b.id}` ? $t(`banners.${b.id}`) : b.name;
                 const startFormatted = formatBannerDate(b.startTime, $currentUiLocale);
-                const endFormatted = b.endTime ? formatBannerDate(b.endTime, $currentUiLocale) : ($t("permanent") || "Permanent");
+                const endFormatted = b.endTime ? formatBannerDate(b.endTime, $currentUiLocale) : $t("permanent");
                 const subLabel = startFormatted && endFormatted ? `${startFormatted} - ${endFormatted}` : "";
                 return {
                     value: b.id,
@@ -689,8 +688,7 @@
 
     function formatDateShort(time, locale) {
         if (!time) return "";
-        let loc = locale || "ru";
-        if (loc === "my") loc = "ms-MY";
+        let loc = normalizeLocale(locale);
         return new Date(time).toLocaleString(loc, {
             day: "2-digit",
             month: "2-digit",
@@ -702,8 +700,7 @@
 
     function formatDateFull(time, locale) {
         if (!time) return "";
-        let loc = locale || "ru";
-        if (loc === "my") loc = "ms-MY";
+        let loc = normalizeLocale(locale);
         return new Date(time).toLocaleString(loc, {
             day: "2-digit",
             month: "2-digit",

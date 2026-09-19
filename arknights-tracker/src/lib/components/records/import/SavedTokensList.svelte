@@ -1,6 +1,7 @@
 <script>
     import { createEventDispatcher } from "svelte";
     import { t } from "$lib/i18n";
+    import { currentUiLocale, normalizeLocale } from "$lib/stores/locale.js";
     import Icon from "$lib/components/Icon.svelte";
 
     export let savedTokens = [];
@@ -60,7 +61,7 @@
                         <div
                             class="text-[10px] text-gray-400 dark:text-[#B7B6B3] mt-2 font-medium"
                         >
-                            {new Date(token.date).toLocaleDateString()}
+                            {new Date(token.date).toLocaleDateString(normalizeLocale($currentUiLocale))}
                         </div>
                     </div>
                     <div class="flex items-center gap-4 z-20 relative pointer-events-none">

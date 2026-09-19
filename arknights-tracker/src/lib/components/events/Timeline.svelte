@@ -4,7 +4,7 @@
     import { browser } from "$app/environment";
     import { rawEvents } from "$lib/data/timeline";
     import { banners } from "$lib/data/banners.js";
-    import { currentLocale, currentUiLocale } from "$lib/stores/locale.js";
+    import { currentLocale, currentUiLocale, normalizeLocale } from "$lib/stores/locale.js";
 
     import Icon from "$lib/components/Icon.svelte";
     import BannerModal from "$lib/components/modals/BannerModal.svelte";
@@ -856,7 +856,7 @@
                                                     {event.realStartTime.getDate()}
                                                     {$t(`months_gen.${event.realStartTime.toLocaleString("en-US", { month: "long" }).toLowerCase()}`)} - ∞
                                                 {:else}
-                                                    {event.realStartTime.toLocaleDateString($currentUiLocale === 'my' ? 'ms-MY' : ($currentUiLocale || 'en-US'), { day: '2-digit', month: '2-digit' })} - ∞
+                                                    {event.realStartTime.toLocaleDateString(normalizeLocale($currentUiLocale), { day: '2-digit', month: '2-digit' })} - ∞
                                                 {/if}
                                             {:else}
                                                 {#if !isShortEvent(event)}
@@ -865,8 +865,8 @@
                                                     {event.realEndTime.getDate()}
                                                     {$t(`months_gen.${event.realEndTime.toLocaleString("en-US", { month: "long" }).toLowerCase()}`)}
                                                 {:else}
-                                                    {event.realStartTime.toLocaleDateString($currentUiLocale === 'my' ? 'ms-MY' : ($currentUiLocale || 'en-US'), { day: '2-digit', month: '2-digit' })} - 
-                                                    {event.realEndTime.toLocaleDateString($currentUiLocale === 'my' ? 'ms-MY' : ($currentUiLocale || 'en-US'), { day: '2-digit', month: '2-digit' })}
+                                                    {event.realStartTime.toLocaleDateString(normalizeLocale($currentUiLocale), { day: '2-digit', month: '2-digit' })} - 
+                                                    {event.realEndTime.toLocaleDateString(normalizeLocale($currentUiLocale), { day: '2-digit', month: '2-digit' })}
                                                 {/if}
                                             {/if}
                                         </span>

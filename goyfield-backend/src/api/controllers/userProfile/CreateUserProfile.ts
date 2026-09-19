@@ -1,4 +1,4 @@
-import { authenticator, avatarUploader, database, sightengine } from "@/serviceInstances.js";
+import { authenticator, avatarUploader, database, nsfwValidator } from "@/serviceInstances.js";
 import { ResponseBody } from "@api/contracts/ResponseBody.js";
 import { CreateUserProfileRequest } from "@api/contracts/userProfile/CreateUserProfileRequest.js";
 import { CreateUserProfileResponse } from "@api/contracts/userProfile/CreateUserProfileResponse.js";
@@ -8,7 +8,7 @@ import { Database } from "@database/Database.js";
 import { Authenticator } from "@services/auth/Authenticator.js";
 import { AvatarUploader } from "@services/avatarUploader/AvatarUploader.js";
 import { ImageValidator } from "@services/imageValidator/ImageValidator.js";
-import { SightengineNsfwValidator } from "@services/sightengineNsfwValidator/SightengineNsfwValidator.js";
+import { INsfwValidator } from "@services/nsfwValidator/INsfwValidator.js";
 import { bannedWords } from "@staticModels/instances.js";
 import e from "express";
 
@@ -23,7 +23,7 @@ export class CreateUserProfile extends Controller<
     private readonly _database: Database = database;
     private readonly _auth: Authenticator = authenticator;
     private readonly _uploader: AvatarUploader = avatarUploader;
-    private readonly _sightengine: SightengineNsfwValidator = sightengine;
+    private readonly _nsfwValidator: INsfwValidator = nsfwValidator;
 
     private readonly _uid: string;
     private readonly _isPrivate: boolean;
@@ -96,7 +96,7 @@ export class CreateUserProfile extends Controller<
                 return;
             }
 
-            const nsfwCheckResult = await this._sightengine.isNsfwImage(this._avatarImage, this._filename ?? undefined);
+            const nsfwCheckResult = await this._nsfwValidator.isNsfwImage(this._avatarImage, this._filename ?? undefined);
 
             if (!nsfwCheckResult.success) {
                 this.status = 503;

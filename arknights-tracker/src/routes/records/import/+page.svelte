@@ -381,6 +381,9 @@
                     const profile = syncData?.profile;
                     if (profile?.privateId && typeof window !== "undefined" && selectedId) {
                         localStorage.setItem(`ark_banner_private_id_${selectedId}`, profile.privateId);
+                        if (profile.publicId) {
+                            localStorage.setItem(`ark_banner_public_id_${selectedId}`, profile.publicId);
+                        }
                     }
                 } catch (e) {
                     console.error("Sync import failed:", e);

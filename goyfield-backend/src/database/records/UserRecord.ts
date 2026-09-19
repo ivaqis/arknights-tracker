@@ -92,6 +92,7 @@ export class UserRecord {
         const resetDate = this.lastUploadReset.initValue;
 
         return now.getFullYear() !== resetDate.getFullYear()
-            || now.getMonth() !== resetDate.getMonth();
+            || now.getMonth() !== resetDate.getMonth()
+            || now.getDate() !== resetDate.getDate();
     }
 }

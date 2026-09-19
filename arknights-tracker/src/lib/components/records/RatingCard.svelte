@@ -5,6 +5,7 @@
   import { fetchRankingRate } from "$lib/api.js";
   import { browser } from "$app/environment";
   import { accountStore } from "$lib/stores/accounts.js";
+  import { currentUiLocale, normalizeLocale } from "$lib/stores/locale.js";
 
   import Button from "../Button.svelte";
   import Icon from "../Icon.svelte";
@@ -269,7 +270,7 @@
                   {$t(getRankLabel(rankTotal))} {getRankValue(rankTotal)}%
               </div>
               <div class="text-sm text-gray-400 dark:text-[#B7B6B3] font-semibold">
-                {Number(displayTotal).toLocaleString("ru-RU")}
+                {Number(displayTotal).toLocaleString(normalizeLocale($currentUiLocale))}
               </div>
           {:else}
               <div class="flex items-center gap-2 opacity-50 justify-end">

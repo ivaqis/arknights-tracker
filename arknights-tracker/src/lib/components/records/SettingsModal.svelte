@@ -4,7 +4,7 @@
   import { banners } from "$lib/data/banners.js";
   import { addNotification } from "$lib/stores/index.js";
   import { onDestroy } from "svelte";
-  import { currentLocale, currentUiLocale } from "$lib/stores/locale.js";
+  import { currentLocale, currentUiLocale, normalizeLocale } from "$lib/stores/locale.js";
   import Image from "$lib/components/Image.svelte";
 
 
@@ -343,8 +343,7 @@
     if (!dateStr) return "";
     const parsed = new Date(dateStr.replace(" ", "T"));
     if (isNaN(parsed.getTime())) return "";
-    let loc = locale || "en";
-    if (loc === "my") loc = "ms-MY";
+    let loc = normalizeLocale(locale);
     try {
       return new Intl.DateTimeFormat(loc, {
         day: "2-digit",
@@ -368,7 +367,7 @@
       const b = banners.find(x => x.id === id);
       const label = b ? ($t(`banners.${b.id}`) !== `banners.${b.id}` ? $t(`banners.${b.id}`) : b.name) : id;
       const startFormatted = b ? formatBannerDate(b.startTime, $currentUiLocale) : "";
-      const endFormatted = b ? (b.endTime ? formatBannerDate(b.endTime, $currentUiLocale) : ($t("permanent") || "Permanent")) : "";
+      const endFormatted = b ? (b.endTime ? formatBannerDate(b.endTime, $currentUiLocale) : $t("permanent")) : "";
       const subLabel = startFormatted && endFormatted ? `${startFormatted} - ${endFormatted}` : "";
       return {
         value: id,
@@ -434,7 +433,7 @@
               on:click={triggerFileInput}
               class="flex flex-col dark:border-[#444444] dark:bg-[#383838] hover:dark:bg-[#373737] items-center justify-center p-4 border border-gray-200 rounded-xl hover:border-[#F9B90C] hover:bg-amber-50/50 transition group bg-white h-24 w-full"
             >
-              <div class="mb-2 text-gray-400 group-hover:text-[#F9B90C] dark:text-[#E0E0E0] transition-colors">
+              <div class="mb-2 text-gray-400 group-hover:text-[#1D6F42] dark:text-[#E0E0E0] transition-colors">
                 <Icon name="import" class="w-6 h-6" />
               </div>
               <div class="font-bold dark:text-[#E0E0E0] text-[#21272C] text-sm">

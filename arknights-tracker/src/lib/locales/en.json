@@ -486,7 +486,7 @@
     "monumentalEtchingCorruptingSurge": "Monumental Etching: Corrupting Surge",
     "partyTogetherPastryTower": "[Party Together] - [Pastry Tower]",
     "sanitySupply": "Sanity Supply",
-    "curiosAndMyths": "[Curios and Myths] Sign-In",
+    "curiosAndMyths": "Curios and Myths Sign-In",
     "oneWithHerFistsSignIn": "One with Her Fists Sign-In",
     "protocolPassViridianMont": "Protocol Pass: Viridian Mont",
     "carlyFairytaleOfTheWuling": "Carly's Fairytale of Wuling",
@@ -831,7 +831,6 @@
     "recommendedOperators": "Recommended Operators",
     "essenceLocations": "Essence Locations",
     "goToEssences": "Go to Essences",
-    "enemies": "Enemies",
     "voiceOver": "Voice-Over",
     "basicInfo": "BASIC INFO",
     "humanResourcesSummary": "HUMAN RESOURCES SUMMARY",
@@ -1331,7 +1330,8 @@
     "camille": "Camille",
     "arcane": "Arcane",
     "liino": "Liino",
-    "typhoeus": "Typhoeus"
+    "typhoeus": "Typhoeus",
+    "endministrator": "Endministrator"
   },
   "weaponsList": {
     "custom_weapon": "Custom Weapon",
@@ -2533,8 +2533,7 @@
     },
     "emptyState": {
       "title": "Nothing selected",
-      "subtitle": "Click on an item on the left to display its recipe.",
-      "noData": "No data"
+      "subtitle": "Click on an item on the left to display its recipe."
     }
   },
   "resourcePointNames": {
@@ -2573,6 +2572,7 @@
   "leaderboard": {
     "title": "Leaderboard",
     "event_type": "Event Type",
+    "stage": "Stage",
     "contract": "Contingency Contract",
     "monument": "Monument of Valley",
     "rank": "Rank",
@@ -2591,7 +2591,14 @@
     "unauthorized": "Please log in to participate",
     "last_update": "Last Update",
     "loading_details": "Loading details...",
-    "echoesOfWar": "Echoes of War"
+    "echoesOfWar": "Echoes of War",
+    "load_failed": "Failed to load leaderboard",
+    "agony": "Agony",
+    "monument_type": "Monument Type",
+    "monument_filter": "Monument",
+    "difficulty": "Difficulty",
+    "room": "Room",
+    "operators_in_team": "Operators in Squad"
   },
   "profile": {
     "title": "Player Profile",
@@ -2603,7 +2610,7 @@
     "sync_title": "Google Integration",
     "sync_subtitle": "Integrating with Google links your account to Firebase, enabling gacha synchronization and leaderboard participation",
     "sync_btn": "Sign In with Google",
-    "update_btn": "Sync Game",
+    "update_btn": "Sync",
     "update_hint": "Update your game roster and clear times from Endfield servers",
     "overview": "Overview",
     "operators_count": "Operators",
@@ -2661,6 +2668,7 @@
     "no_connected_accounts": "No connected game accounts. Sync your account using the Update button above",
     "edit_nickname": "Edit nickname",
     "copy_profile_link": "Copy profile link",
+    "share": "Share",
     "link_copied": "Link copied to clipboard",
     "uid_copied": "UID copied to clipboard",
     "copy_uid": "Copy UID",
@@ -2710,7 +2718,18 @@
     "image_processing_failed": "Image processing failed",
     "binding_query_failed": "Game binding query failed",
     "sync_cooldown": "Sync is on cooldown. Please wait {time} minutes before trying again",
-    "profile_created_avatar_failed": "Profile created, but failed to upload avatar: "
+    "sync_cooldown_simple": "Sync is on cooldown. Please wait a few minutes before trying again",
+    "profile_already_exists": "Profile already exists",
+    "profile_created_avatar_failed": "Profile created, but failed to upload avatar: ",
+    "unauthorized": "Unauthorized",
+    "no_access": "Access denied",
+    "user_not_found": "User not found",
+    "nsfw_image": "Image failed content moderation",
+    "nsfw_service_unavailable": "Image moderation service temporarily unavailable",
+    "token_already_used": "This token has already been used",
+    "token_expired_badge": "Expired",
+    "banner_profile_not_found": "Banner profile not found",
+    "private_id_not_found": "Pulls private key not found. Please import pulls for this account on this device first"
   },
   "contractTagNames": {
     "activity_contract_tag_201": "Ambient: Overclock",
@@ -2809,11 +2828,12 @@
     "activity_contract_tag_116": "Enemy HP +{@900101@hp_up-1:0%}/+{@900102@hp_up-1:0%}/<color=#cc9900>+{hp_up-1:0%}</color>."
   },
   "monument": {
-    "contentionOfDeathlySilences": "\"Contention of Deathly Silences\"",
-    "searingScars": "Searing Scars",
-    "inorganicConstruct": "\"Inorganic Construct\"",
-    "turbidityManifest": "\"Turbidity Manifest\"",
-    "thoseForsakenByTheLand": "\"Those Forsaken by the Land\""
+    "indie_group_h01": "Contention of Deathly Silences",
+    "indie_group_h02": "Searing Scars",
+    "indie_group_h03": "Inorganic Construct",
+    "indie_group_h04": "Turbidity Manifest",
+    "indie_group_h05": "Those Forsaken by the Land",
+    "indie_group_h06": "Howlers of the Crag"
   },
   "equipmentScriptNames": {
     "xiraniteTechnique": "Xiranite Technique",
@@ -2825,5 +2845,105 @@
     "playback_error": "Failed to load audio",
     "not_found": "Audio Not Found (404)",
     "open_raw": "Open raw"
+  },
+  "monumentStages": {
+    "indie_hard001": "Rampaging Shields",
+    "indie_hard002": "Bolts and Shadows",
+    "indie_hard003": "Rock Solid",
+    "indie_hard004": "Ballista and Axe",
+    "indie_hard005": "Unorthodox Tactics",
+    "indie_hard006": "Survive the Gas",
+    "indie_hard007": "Howling Flame",
+    "indie_hard008": "Sea of Loathing",
+    "indie_hard009": "Melting Point of Flesh",
+    "indie_hard010": "Tidal Grief",
+    "indie_hard011": "Cryostatic Connection",
+    "indie_hard012": "Blood Debased",
+    "indie_hard013": "Silent Horizon",
+    "indie_hard014": "Withered Sea",
+    "indie_hard015": "Underflow Chasm",
+    "indie_hard016": "Ritual Vortex",
+    "indie_hard017": "Harrowing Æthillu",
+    "indie_hard018": "Raging Drummer",
+    "indie_hard019": "Phalanx of Thorns",
+    "indie_hard020": "Eyes of Solvent-Kind",
+    "indie_hard021": "Wading in Raker Turf",
+    "indie_hard022": "Earthshaking Hazefyre",
+    "indie_hard023": "Mangler and Friends",
+    "indie_hard024": "King of the Crag",
+    "indie_hard025": "Visitors of Qingbo",
+    "indie_hard026": "Feral Carnage of Shadow",
+    "indie_hard027": "Arc of Shadow Flare",
+    "indie_hard028": "Sudden Roar of Oblivion",
+    "indie_hard029": "Tri-Aggelated Targeting"
+  },
+  "warEchoesSeasons": {
+    "1": "Season of Recalling",
+    "2": "Season of Delirating",
+    "3": "Season of Virtuality",
+    "4": "Season of Illusion"
+  },
+  "warEchoesCycles": {
+    "1_1": "Cycle of Recalling I",
+    "1_2": "Cycle of Recalling II",
+    "1_3": "Cycle of Recalling III",
+    "2_1": "Cycle of Delirating I",
+    "2_2": "Cycle of Delirating II",
+    "2_3": "Cycle of Delirating III",
+    "3_1": "Cycle of Virtuality Ⅰ",
+    "3_2": "Cycle of Virtuality Ⅱ",
+    "3_3": "Cycle of Virtuality Ⅲ",
+    "4_1": "Cycle of Illusion Ⅰ",
+    "4_2": "Cycle of Illusion Ⅱ",
+    "4_3": "Cycle of Illusion Ⅲ"
+  },
+  "warEchoesStages": {
+    "indie_battletower001_ex": "Silver Watercutter: Brutal",
+    "indie_battletower001_s": "Silver Watercutter: Hard",
+    "indie_battletower001": "Silver Watercutter: Normal",
+    "indie_battletower002_ex": "Old Tales of the Wild: Brutal",
+    "indie_battletower002_s": "Old Tales of the Wild: Hard",
+    "indie_battletower002": "Old Tales of the Wild: Normal",
+    "indie_battletower003_ex": "Skirmishers' Æthillu: Brutal",
+    "indie_battletower003_s": "Skirmishers' Æthillu: Hard",
+    "indie_battletower003": "Skirmishers' Æthillu: Normal",
+    "indie_battletower004_ex": "Age of Axes: Brutal",
+    "indie_battletower004_s": "Age of Axes: Hard",
+    "indie_battletower004": "Age of Axes: Normal",
+    "indie_battletower005_ex": "Pulverizing Ammunition: Brutal",
+    "indie_battletower005_s": "Pulverizing Ammunition: Hard",
+    "indie_battletower005": "Pulverizing Ammunition: Normal",
+    "indie_battletower006_ex": "Scars of Landbreaking: Brutal",
+    "indie_battletower006_s": "Scars of Landbreaking: Hard",
+    "indie_battletower006": "Scars of Landbreaking: Normal",
+    "indie_battletower007_ex": "Howling of Undying Beasts: Brutal",
+    "indie_battletower007_s": "Howling of Undying Beasts: Hard",
+    "indie_battletower007": "Howling of Undying Beasts: Normal",
+    "indie_battletower008_ex": "Brief History of War: Brutal",
+    "indie_battletower008_s": "Brief History of War: Hard",
+    "indie_battletower008": "Brief History of War: Normal",
+    "indie_battletower009_ex": "Buried Frontlines: Brutal",
+    "indie_battletower009_s": "Buried Frontlines: Hard",
+    "indie_battletower009": "Buried Frontlines: Normal",
+    "indie_battletower010_ex": "Wall of Shields: Brutal",
+    "indie_battletower010_s": "Wall of Shields: Hard",
+    "indie_battletower010": "Wall of Shields: Normal",
+    "indie_battletower011_ex": "Grievously Besieged: Brutal",
+    "indie_battletower011_s": "Grievously Besieged: Hard",
+    "indie_battletower011": "Grievously Besieged: Normal",
+    "indie_battletower012_ex": "Inorganic Fervor: Brutal",
+    "indie_battletower012_s": "Inorganic Fervor: Hard",
+    "indie_battletower012": "Inorganic Fervor: Normal",
+    "indie_battletower013_ex": "Powerful Decapitation: Brutal",
+    "indie_battletower013_s": "Powerful Decapitation: Hard",
+    "indie_battletower013": "Powerful Decapitation: Normal",
+    "indie_battletower014_ex": "Beastly Schemes: Brutal",
+    "indie_battletower014_s": "Beastly Schemes: Hard",
+    "indie_battletower014": "Beastly Schemes: Normal"
+  },
+  "warEchoesDiff": {
+    "normal": "Normal",
+    "hard": "Hard",
+    "brutal": "Brutal"
   }
 }

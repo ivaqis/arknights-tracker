@@ -1,0 +1,462 @@
+{
+  "indie_battletower001": {
+    "name": "Dao Cắt Nước Bạc: Thường",
+    "description": "Tôi đã thấy một vệt sáng mỏng manh, thấy ánh đao lóe lên xé qua những dòng chảy cuộn trôi, vậy mà vẫn không thể đoạn tuyệt ác ý lạnh lẽo vô tình ấy. Cái chạm của nó đã vấy bẩn thanh kiếm trong tay, còn dư âm vương lại thì che phủ lấy bóng hình.",
+    "featureDesc": " <@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n <@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi HP và vật phẩm tiêu hao.</>"
+  },
+  "indie_battletower001_ex": {
+    "name": "Dao Cắt Nước Bạc: Tàn Bạo",
+    "description": "Tôi đã thấy một vệt sáng mỏng manh, thấy ánh đao lóe lên xé qua những dòng chảy cuộn trôi, vậy mà vẫn không thể đoạn tuyệt ác ý lạnh lẽo vô tình ấy. Cái chạm của nó đã vấy bẩn thanh kiếm trong tay, còn dư âm vương lại thì che phủ lấy bóng hình.",
+    "featureDesc": " <@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n <@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi HP và vật phẩm tiêu hao.</>"
+  },
+  "indie_battletower001_s": {
+    "name": "Dao Cắt Nước Bạc: Khó",
+    "description": "Tôi đã thấy một vệt sáng mỏng manh, thấy ánh đao lóe lên xé qua những dòng chảy cuộn trôi, vậy mà vẫn không thể đoạn tuyệt ác ý lạnh lẽo vô tình ấy. Cái chạm của nó đã vấy bẩn thanh kiếm trong tay, còn dư âm vương lại thì che phủ lấy bóng hình.",
+    "featureDesc": " <@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n <@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi HP và vật phẩm tiêu hao.</>"
+  },
+  "indie_battletower002": {
+    "name": "Giai Thoại Chốn Hoang Dã: Thường",
+    "description": "Tại đây, ta chép lại câu chuyện về những mãnh thú lang thang giữa tàn tích chiến tranh, cào xé tên tuổi các quốc gia bằng nanh vuốt, để bọt mép điên cuồng của chúng biến trượng, khiên và đạn pháo thành sắt nóng chảy.",
+    "featureDesc": " - Đánh bại kẻ địch sẽ hồi lại 15 Điểm Kỹ Năng.\n - ST KN Chiến Đấu Gây Ra <@ba.vup>+60%</>.\n\n <@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n<@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
+  },
+  "indie_battletower002_ex": {
+    "name": "Giai Thoại Chốn Hoang Dã: Tàn Bạo",
+    "description": "Tại đây, ta chép lại câu chuyện về những mãnh thú lang thang giữa tàn tích chiến tranh, cào xé tên tuổi các quốc gia bằng nanh vuốt, để bọt mép điên cuồng của chúng biến trượng, khiên và đạn pháo thành sắt nóng chảy.",
+    "featureDesc": " - Đánh bại kẻ địch sẽ hồi lại 15 Điểm Kỹ Năng.\n - ST KN Chiến Đấu Gây Ra <@ba.vup>+60%</>.\n\n <@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n<@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
+  },
+  "indie_battletower002_s": {
+    "name": "Giai Thoại Chốn Hoang Dã: Khó",
+    "description": "Tại đây, ta chép lại câu chuyện về những mãnh thú lang thang giữa tàn tích chiến tranh, cào xé tên tuổi các quốc gia bằng nanh vuốt, để bọt mép điên cuồng của chúng biến trượng, khiên và đạn pháo thành sắt nóng chảy.",
+    "featureDesc": " - Đánh bại kẻ địch sẽ hồi lại 15 Điểm Kỹ Năng.\n - ST KN Chiến Đấu Gây Ra <@ba.vup>+60%</>.\n\n <@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n<@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
+  },
+  "indie_battletower003": {
+    "name": "Æthillu Du Kích: Thường",
+    "description": "Ta trông thấy một mũi tên nỏ rít lên xé ngang bầu trời. Những kẻ đánh lén lầm lũi bước dọc mép rìa của thực tại, đường nét trên gương mặt họ dần nhòe đi, hòa vào những hình thể lạnh băng của Æthillu.",
+    "featureDesc": " - Kẻ địch không thể di chuyển nhưng khó bị gián đoạn hơn.\n - Æthillu chỉ có thể bị gây sát thương bằng đòn kết liễu sẽ xuất hiện trên chiến trường.\n - Đánh bại Æthillu sẽ kéo tất cả kẻ địch lại gần, hồi lại 50 Điểm Kỹ Năng, đồng thời cho cán viên đang điều khiển <@ba.vup>+100%</> ST Gây Ra trong 10 giây.\n - Đánh bại tất cả Quái Phục Kích Bonekrusher để hoàn thành màn chơi; không bắt buộc phải đánh bại Æthillu.\n\n <@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n <@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật và vật phẩm tiêu hao dùng để Hồi Phục HP.</>"
+  },
+  "indie_battletower003_ex": {
+    "name": "Æthillu Du Kích: Tàn Bạo",
+    "description": "Ta trông thấy một mũi tên nỏ rít lên xé ngang bầu trời. Những kẻ đánh lén lầm lũi bước dọc mép rìa của thực tại, đường nét trên gương mặt họ dần nhòe đi, hòa vào những hình thể lạnh băng của Æthillu.",
+    "featureDesc": " - Kẻ địch không thể di chuyển nhưng khó bị gián đoạn hơn.\n - Æthillu chỉ có thể bị gây sát thương bằng đòn kết liễu sẽ xuất hiện trên chiến trường.\n - Đánh bại Æthillu sẽ kéo tất cả kẻ địch lại gần, hồi lại 50 Điểm Kỹ Năng, đồng thời cho cán viên đang điều khiển <@ba.vup>+100%</> ST Gây Ra trong 10 giây.\n - Đánh bại tất cả Quái Phục Kích Bonekrusher để hoàn thành màn chơi; không bắt buộc phải đánh bại Æthillu.\n\n <@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n <@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật và vật phẩm tiêu hao dùng để Hồi Phục HP.</>"
+  },
+  "indie_battletower003_s": {
+    "name": "Æthillu Du Kích: Khó",
+    "description": "Ta trông thấy một mũi tên nỏ rít lên xé ngang bầu trời. Những kẻ đánh lén lầm lũi bước dọc mép rìa của thực tại, đường nét trên gương mặt họ dần nhòe đi, hòa vào những hình thể lạnh băng của Æthillu.",
+    "featureDesc": " - Kẻ địch không thể di chuyển nhưng khó bị gián đoạn hơn.\n - Æthillu chỉ có thể bị gây sát thương bằng đòn kết liễu sẽ xuất hiện trên chiến trường.\n - Đánh bại Æthillu sẽ kéo tất cả kẻ địch lại gần, hồi lại 50 Điểm Kỹ Năng, đồng thời cho cán viên đang điều khiển <@ba.vup>+100%</> ST Gây Ra trong 10 giây.\n - Đánh bại tất cả Quái Phục Kích Bonekrusher để hoàn thành màn chơi; không bắt buộc phải đánh bại Æthillu.\n\n <@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n <@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật và vật phẩm tiêu hao dùng để Hồi Phục HP.</>"
+  },
+  "indie_battletower004": {
+    "name": "Kỷ Nguyên Phủ Việt: Thường",
+    "description": "Khi ta miết tay qua nửa chừng những nét khắc, lớp gỉ sắt nóng rực liền dội từng cơn đau nhói xuyên qua da thịt đao phủ. Những binh khí kia đã thấm đẫm máu thịt của họ. Vòng luân chuyển ấy bất tận, không ngừng xao động, năm này qua năm khác lại quay về.",
+    "featureDesc": " <@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n <@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi HP và vật phẩm tiêu hao.</>"
+  },
+  "indie_battletower004_ex": {
+    "name": "Kỷ Nguyên Phủ Việt: Tàn Bạo",
+    "description": "Khi ta miết tay qua nửa chừng những nét khắc, lớp gỉ sắt nóng rực liền dội từng cơn đau nhói xuyên qua da thịt đao phủ. Những binh khí kia đã thấm đẫm máu thịt của họ. Vòng luân chuyển ấy bất tận, không ngừng xao động, năm này qua năm khác lại quay về.",
+    "featureDesc": " <@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n <@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi HP và vật phẩm tiêu hao.</>"
+  },
+  "indie_battletower004_s": {
+    "name": "Kỷ Nguyên Phủ Việt: Khó",
+    "description": "Khi ta miết tay qua nửa chừng những nét khắc, lớp gỉ sắt nóng rực liền dội từng cơn đau nhói xuyên qua da thịt đao phủ. Những binh khí kia đã thấm đẫm máu thịt của họ. Vòng luân chuyển ấy bất tận, không ngừng xao động, năm này qua năm khác lại quay về.",
+    "featureDesc": " <@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n <@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi HP và vật phẩm tiêu hao.</>"
+  },
+  "indie_battletower005": {
+    "name": "Đạn Dược Nghiền Tan: Thường",
+    "description": "Ta nhặt lên những mảnh sắt vụn, những tàn tích của tư tưởng và ý niệm từng ẩn mình dưới tầng tầng nét khắc. Lời thệ nguyện kiên định nhất hóa thành viên đạn, để rồi vỡ tan thành muôn mảnh trước máu thịt và xương cốt.",
+    "featureDesc": " <@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n <@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi HP và vật phẩm tiêu hao.</>"
+  },
+  "indie_battletower005_ex": {
+    "name": "Đạn Dược Nghiền Tan: Tàn Bạo",
+    "description": "Ta nhặt lên những mảnh sắt vụn, những tàn tích của tư tưởng và ý niệm từng ẩn mình dưới tầng tầng nét khắc. Lời thệ nguyện kiên định nhất hóa thành viên đạn, để rồi vỡ tan thành muôn mảnh trước máu thịt và xương cốt.",
+    "featureDesc": " <@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n <@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi HP và vật phẩm tiêu hao.</>"
+  },
+  "indie_battletower005_s": {
+    "name": "Đạn Dược Nghiền Tan: Khó",
+    "description": "Ta nhặt lên những mảnh sắt vụn, những tàn tích của tư tưởng và ý niệm từng ẩn mình dưới tầng tầng nét khắc. Lời thệ nguyện kiên định nhất hóa thành viên đạn, để rồi vỡ tan thành muôn mảnh trước máu thịt và xương cốt.",
+    "featureDesc": " <@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n <@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi HP và vật phẩm tiêu hao.</>"
+  },
+  "indie_battletower006": {
+    "name": "Vết Sẹo Khai Địa: Thường",
+    "description": "Ta biết đến một câu chuyện bắt đầu từ tham vọng cuồng loạn của một quân phiệt. Chính tham vọng ấy đã khiến bầy sói cấu xé lẫn nhau, làm dậy sóng đại dương cát bụi, cho đến khi tiếng máu tuôn trào từ những vết rách vỡ nát còn dội mãi bên tai.",
+    "featureDesc": " - Đánh bại Quái Tiên Phong Bonekrusher sẽ nhận <@ba.vup>+50%</> Thưởng Hiệu Quả Suy Sụp.\n - Đánh bại Quái Phóng Hỏa Bonekrusher sẽ nhận <@ba.vup>+100</> Công Phép.\n - Đánh bại Đao Phủ Bonekrusher sẽ nhận ST Kỹ Năng Gây Ra <@ba.vup>+100%</>.\n - Đánh Bại Ram Hạng Nặng sẽ nhận <@ba.vup>+100%</> ST Đòn Đánh Thường Gây Ra.\n\n <@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n<@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi HP và vật phẩm tiêu hao.</>"
+  },
+  "indie_battletower006_ex": {
+    "name": "Vết Sẹo Khai Địa: Tàn Bạo",
+    "description": "Ta biết đến một câu chuyện bắt đầu từ tham vọng cuồng loạn của một quân phiệt. Chính tham vọng ấy đã khiến bầy sói cấu xé lẫn nhau, làm dậy sóng đại dương cát bụi, cho đến khi tiếng máu tuôn trào từ những vết rách vỡ nát còn dội mãi bên tai.",
+    "featureDesc": " - Đánh bại Quái Tiên Phong Bonekrusher sẽ nhận <@ba.vup>+50%</> Thưởng Hiệu Quả Suy Sụp.\n - Đánh bại Quái Phóng Hỏa Bonekrusher sẽ nhận <@ba.vup>+100</> Công Phép.\n - Đánh bại Đao Phủ Bonekrusher sẽ nhận ST Kỹ Năng Gây Ra <@ba.vup>+100%</>.\n - Đánh Bại Ram Hạng Nặng sẽ nhận <@ba.vup>+100%</> ST Đòn Đánh Thường Gây Ra.\n\n <@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n<@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi HP và vật phẩm tiêu hao.</>"
+  },
+  "indie_battletower006_s": {
+    "name": "Vết Sẹo Khai Địa: Khó",
+    "description": "Ta biết đến một câu chuyện bắt đầu từ tham vọng cuồng loạn của một quân phiệt. Chính tham vọng ấy đã khiến bầy sói cấu xé lẫn nhau, làm dậy sóng đại dương cát bụi, cho đến khi tiếng máu tuôn trào từ những vết rách vỡ nát còn dội mãi bên tai.",
+    "featureDesc": " - Đánh bại Quái Tiên Phong Bonekrusher sẽ nhận <@ba.vup>+50%</> Thưởng Hiệu Quả Suy Sụp.\n - Đánh bại Quái Phóng Hỏa Bonekrusher sẽ nhận <@ba.vup>+100</> Công Phép.\n - Đánh bại Đao Phủ Bonekrusher sẽ nhận ST Kỹ Năng Gây Ra <@ba.vup>+100%</>.\n - Đánh Bại Ram Hạng Nặng sẽ nhận <@ba.vup>+100%</> ST Đòn Đánh Thường Gây Ra.\n\n <@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n<@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi HP và vật phẩm tiêu hao.</>"
+  },
+  "indie_battletower007": {
+    "name": "Tiếng Tru Của Bầy Thú Bất Tử: Thường",
+    "description": "Ta nghe tiếng lưỡi đao của ngươi nghiến qua hài cốt trắng bệch của mãnh thú; khúc rít vang lên khi mài sắc ấy nghe tựa một tràng sấm rền.",
+    "featureDesc": " - Thiên Cổ Yêu Thú sẽ không tiến vào trạng thái Điên Cuồng.\n- Sau khi vào trận chiến, Thiên Cổ Yêu Thú nhận 50 chỉ số Kháng tất cả nguyên tố.\n\n<@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n<@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi HP và vật phẩm tiêu hao.</>"
+  },
+  "indie_battletower007_ex": {
+    "name": "Tiếng Tru Của Bầy Thú Bất Tử: Tàn Bạo",
+    "description": "Ta nghe tiếng lưỡi đao của ngươi nghiến qua hài cốt trắng bệch của mãnh thú; khúc rít vang lên khi mài sắc ấy nghe tựa một tràng sấm rền.",
+    "featureDesc": " - Thiên Cổ Yêu Thú sẽ không tiến vào trạng thái Điên Cuồng.\n- Sau khi vào trận chiến, Thiên Cổ Yêu Thú nhận 50 chỉ số Kháng tất cả nguyên tố.\n\n<@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n<@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi HP và vật phẩm tiêu hao.</>"
+  },
+  "indie_battletower007_s": {
+    "name": "Tiếng Tru Của Bầy Thú Bất Tử: Khó",
+    "description": "Ta nghe tiếng lưỡi đao của ngươi nghiến qua hài cốt trắng bệch của mãnh thú; khúc rít vang lên khi mài sắc ấy nghe tựa một tràng sấm rền.",
+    "featureDesc": " - Thiên Cổ Yêu Thú sẽ không tiến vào trạng thái Điên Cuồng.\n- Sau khi vào trận chiến, Thiên Cổ Yêu Thú nhận 50 chỉ số Kháng tất cả nguyên tố.\n\n<@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n<@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi HP và vật phẩm tiêu hao.</>"
+  },
+  "indie_battletower008": {
+    "name": "Lược Sử Chiến Tranh: Thường",
+    "description": "Tôi đã tìm thấy vài dòng sự thật. Mọi chuyện khởi đầu từ những con thú cuồng nộ, rồi kết thúc bằng cảnh con người tàn sát lẫn nhau. Những cuộc xung đột đẫm máu chưa bao giờ chấm dứt.",
+    "featureDesc": " - Đánh bại Nidwyrm Đào Hầm sẽ nhận <@ba.vup>+30%</> Tỷ Lệ Hồi Phục KN.\n - Đánh bại Sting Hạng Nặng sẽ nhận <@ba.vup>+50%</> Giảm Thời Gian Hồi KN Liên Hoàn.\n - Đánh bại Quái Bắn Đá Bonekrusher sẽ nhận <@ba.vup>+60%</> Hiệu Quả Nhận Tuyệt Kỹ.\n \n <@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n <@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
+  },
+  "indie_battletower008_ex": {
+    "name": "Lược Sử Chiến Tranh: Tàn Bạo",
+    "description": "Tôi đã tìm thấy vài dòng sự thật. Mọi chuyện khởi đầu từ những con thú cuồng nộ, rồi kết thúc bằng cảnh con người tàn sát lẫn nhau. Những cuộc xung đột đẫm máu chưa bao giờ chấm dứt.",
+    "featureDesc": " - Đánh bại Nidwyrm Đào Hầm sẽ nhận <@ba.vup>+30%</> Tỷ Lệ Hồi Phục KN.\n - Đánh bại Sting Hạng Nặng sẽ nhận <@ba.vup>+50%</> Giảm Thời Gian Hồi KN Liên Hoàn.\n - Đánh bại Quái Bắn Đá Bonekrusher sẽ nhận <@ba.vup>+60%</> Hiệu Quả Nhận Tuyệt Kỹ.\n \n <@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n <@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
+  },
+  "indie_battletower008_s": {
+    "name": "Lược Sử Chiến Tranh: Khó",
+    "description": "Tôi đã tìm thấy vài dòng sự thật. Mọi chuyện khởi đầu từ những con thú cuồng nộ, rồi kết thúc bằng cảnh con người tàn sát lẫn nhau. Những cuộc xung đột đẫm máu chưa bao giờ chấm dứt.",
+    "featureDesc": " - Đánh bại Nidwyrm Đào Hầm sẽ nhận <@ba.vup>+30%</> Tỷ Lệ Hồi Phục KN.\n - Đánh bại Sting Hạng Nặng sẽ nhận <@ba.vup>+50%</> Giảm Thời Gian Hồi KN Liên Hoàn.\n - Đánh bại Quái Bắn Đá Bonekrusher sẽ nhận <@ba.vup>+60%</> Hiệu Quả Nhận Tuyệt Kỹ.\n \n <@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n <@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
+  },
+  "indie_battletower009": {
+    "name": "Chiến Tuyến Vùi Lấp: Thường",
+    "description": "Tôi đã chứng kiến một lễ tang bị vùi xuống lớp đất tối đen đang âm ỉ sôi trào, nơi lũ thú bị những bóng hình vấn vương chi phối.",
+    "featureDesc": " <@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n <@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
+  },
+  "indie_battletower009_ex": {
+    "name": "Chiến Tuyến Vùi Lấp: Tàn Bạo",
+    "description": "Tôi đã chứng kiến một lễ tang bị vùi xuống lớp đất tối đen đang âm ỉ sôi trào, nơi lũ thú bị những bóng hình vấn vương chi phối.",
+    "featureDesc": " <@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n <@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
+  },
+  "indie_battletower009_s": {
+    "name": "Chiến Tuyến Vùi Lấp: Khó",
+    "description": "Tôi đã chứng kiến một lễ tang bị vùi xuống lớp đất tối đen đang âm ỉ sôi trào, nơi lũ thú bị những bóng hình vấn vương chi phối.",
+    "featureDesc": " <@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n <@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
+  },
+  "indie_battletower010": {
+    "name": "Bức Tường Khiên: Thường",
+    "description": "Tôi đã chứng kiến một chiến dịch cứu viện, nơi vô số \"lá chắn\" phủ kín tiền phương, che chở cho cả chiến tuyến.",
+    "featureDesc": " - Khi một Lăng Trụ bị đánh bại, một Lăng Trụ khác sẽ xuất hiện trên chiến trường sau một khoảng thời gian.\n - Lăng Trụ giờ đây khó bị làm gián đoạn hơn nhiều.\n - Đánh bại Bóng Nhiễm Khuẩn Quái Lông để vượt qua màn chơi. Đánh bại các Lăng Trụ không ảnh hưởng đến điều kiện hoàn thành màn chơi.\n\n <@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n <@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
+  },
+  "indie_battletower010_ex": {
+    "name": "Bức Tường Khiên: Tàn Bạo",
+    "description": "Tôi đã chứng kiến một chiến dịch cứu viện, nơi vô số \"lá chắn\" phủ kín tiền phương, che chở cho cả chiến tuyến.",
+    "featureDesc": " - Khi một Lăng Trụ bị đánh bại, một Lăng Trụ khác sẽ xuất hiện trên chiến trường sau một khoảng thời gian.\n - Lăng Trụ giờ đây khó bị làm gián đoạn hơn nhiều.\n - Đánh bại Bóng Nhiễm Khuẩn Quái Lông để vượt qua màn chơi. Đánh bại các Lăng Trụ không ảnh hưởng đến điều kiện hoàn thành màn chơi.\n\n <@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n <@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
+  },
+  "indie_battletower010_s": {
+    "name": "Bức Tường Khiên: Khó",
+    "description": "Tôi đã chứng kiến một chiến dịch cứu viện, nơi vô số \"lá chắn\" phủ kín tiền phương, che chở cho cả chiến tuyến.",
+    "featureDesc": " - Khi một Lăng Trụ bị đánh bại, một Lăng Trụ khác sẽ xuất hiện trên chiến trường sau một khoảng thời gian.\n - Lăng Trụ giờ đây khó bị làm gián đoạn hơn nhiều.\n - Đánh bại Bóng Nhiễm Khuẩn Quái Lông để vượt qua màn chơi. Đánh bại các Lăng Trụ không ảnh hưởng đến điều kiện hoàn thành màn chơi.\n\n <@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n <@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
+  },
+  "indie_battletower011": {
+    "name": "Trùng Vây Thảm Khốc: Thường",
+    "description": "Tôi đã bày ra một trận phục kích của bùn lầy và máu, của những vết thương bị xé toạc, của đớn đau chất chồng thành thống khổ.",
+    "featureDesc": " - Trên chiến trường có <@ba.key>Vùng Đau Đớn</>. Kẻ địch ở trong Vùng này sẽ chịu ST Gánh Chịu <@ba.vup>+10%</> mỗi giây, tối đa <@ba.vup>+150%</>. Sau khi kẻ địch rời khỏi <@ba.key>Vùng Đau Đớn</>, hiệu ứng bất lợi này sẽ dần biến mất.\n\n <@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n <@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
+  },
+  "indie_battletower011_ex": {
+    "name": "Trùng Vây Thảm Khốc: Tàn Bạo",
+    "description": "Tôi đã bày ra một trận phục kích của bùn lầy và máu, của những vết thương bị xé toạc, của đớn đau chất chồng thành thống khổ.",
+    "featureDesc": " - Trên chiến trường có <@ba.key>Vùng Đau Đớn</>. Kẻ địch ở trong Vùng này sẽ chịu ST Gánh Chịu <@ba.vup>+10%</> mỗi giây, tối đa <@ba.vup>+150%</>. Sau khi kẻ địch rời khỏi <@ba.key>Vùng Đau Đớn</>, hiệu ứng bất lợi này sẽ dần biến mất.\n\n <@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n <@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
+  },
+  "indie_battletower011_s": {
+    "name": "Trùng Vây Thảm Khốc: Khó",
+    "description": "Tôi đã bày ra một trận phục kích của bùn lầy và máu, của những vết thương bị xé toạc, của đớn đau chất chồng thành thống khổ.",
+    "featureDesc": " - Trên chiến trường có <@ba.key>Vùng Đau Đớn</>. Kẻ địch ở trong Vùng này sẽ chịu ST Gánh Chịu <@ba.vup>+10%</> mỗi giây, tối đa <@ba.vup>+150%</>. Sau khi kẻ địch rời khỏi <@ba.key>Vùng Đau Đớn</>, hiệu ứng bất lợi này sẽ dần biến mất.\n\n <@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n <@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
+  },
+  "indie_battletower012": {
+    "name": "Cuồng Nhiệt Vô Cơ: Thường",
+    "description": "Tôi đã mô phỏng một cuộc tấn công. Aggeloi không có cảm xúc, còn những mũi tiên phong của chúng ta thì không biết kiệt sức.",
+    "featureDesc": " - Các cán viên tham gia giao tranh có <@ba.key>Năng Lượng Tuyệt Kỹ</> tối đa;\n\n <@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n <@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
+  },
+  "indie_battletower012_ex": {
+    "name": "Cuồng Nhiệt Vô Cơ: Tàn Bạo",
+    "description": "Tôi đã mô phỏng một cuộc tấn công. Aggeloi không có cảm xúc, còn những mũi tiên phong của chúng ta thì không biết kiệt sức.",
+    "featureDesc": " - Các cán viên tham gia giao tranh có <@ba.key>Năng Lượng Tuyệt Kỹ</> tối đa;\n\n <@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n <@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
+  },
+  "indie_battletower012_s": {
+    "name": "Cuồng Nhiệt Vô Cơ: Khó",
+    "description": "Tôi đã mô phỏng một cuộc tấn công. Aggeloi không có cảm xúc, còn những mũi tiên phong của chúng ta thì không biết kiệt sức.",
+    "featureDesc": " - Các cán viên tham gia giao tranh có <@ba.key>Năng Lượng Tuyệt Kỹ</> tối đa;\n\n <@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n <@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
+  },
+  "indie_battletower013": {
+    "name": "Trảm Thủ Uy Lực: Thường",
+    "description": "Tôi đã sắp đặt một cuộc ám sát. Chỉ cần lưỡi rìu giương cao quá đầu, sức mạnh sẽ được tích tụ đến cực hạn.",
+    "featureDesc": " - Kẻ địch chỉ sử dụng <@ba.key>kỹ năng tụ lực</>, và miễn nhiễm ST từ <@ba.key>KN chiến đấu</> trong lúc <@ba.key>tụ lực</> cho kỹ năng. <@ba.key>Kỹ năng đã tụ lực</> của kẻ địch không thể bị làm gián đoạn bởi <@ba.key>KN chiến đấu</>.\n\n <@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n <@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
+  },
+  "indie_battletower013_ex": {
+    "name": "Trảm Thủ Uy Lực: Tàn Bạo",
+    "description": "Tôi đã sắp đặt một cuộc ám sát. Chỉ cần lưỡi rìu giương cao quá đầu, sức mạnh sẽ được tích tụ đến cực hạn.",
+    "featureDesc": " - Kẻ địch chỉ sử dụng <@ba.key>kỹ năng tụ lực</>, và miễn nhiễm ST từ <@ba.key>KN chiến đấu</> trong lúc <@ba.key>tụ lực</> cho kỹ năng. <@ba.key>Kỹ năng đã tụ lực</> của kẻ địch không thể bị làm gián đoạn bởi <@ba.key>KN chiến đấu</>.\n\n <@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n <@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
+  },
+  "indie_battletower013_s": {
+    "name": "Trảm Thủ Uy Lực: Khó",
+    "description": "Tôi đã sắp đặt một cuộc ám sát. Chỉ cần lưỡi rìu giương cao quá đầu, sức mạnh sẽ được tích tụ đến cực hạn.",
+    "featureDesc": " - Kẻ địch chỉ sử dụng <@ba.key>kỹ năng tụ lực</>, và miễn nhiễm ST từ <@ba.key>KN chiến đấu</> trong lúc <@ba.key>tụ lực</> cho kỹ năng. <@ba.key>Kỹ năng đã tụ lực</> của kẻ địch không thể bị làm gián đoạn bởi <@ba.key>KN chiến đấu</>.\n\n <@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n <@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
+  },
+  "indie_battletower014": {
+    "name": "Âm Mưu Hoang Dã: Thường",
+    "description": "Tôi đã bày ra một yến tiệc. Lũ thú vốn xảo quyệt, nhưng nếu phá được mưu đồ của chúng, phần thưởng sẽ không hề nhỏ.",
+    "featureDesc": " - Đánh bại một Rockhowler sẽ hồi <@ba.vup>10</> ĐKN và tăng Công Phép <@ba.vup>+15</> cho toàn bộ cán viên.\n\n <@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n <@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
+  },
+  "indie_battletower014_ex": {
+    "name": "Âm Mưu Hoang Dã: Tàn Bạo",
+    "description": "Tôi đã bày ra một yến tiệc. Lũ thú vốn xảo quyệt, nhưng nếu phá được mưu đồ của chúng, phần thưởng sẽ không hề nhỏ.",
+    "featureDesc": " - Đánh bại một Rockhowler sẽ hồi <@ba.vup>10</> ĐKN và tăng Công Phép <@ba.vup>+15</> cho toàn bộ cán viên.\n\n <@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n <@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
+  },
+  "indie_battletower014_s": {
+    "name": "Âm Mưu Hoang Dã: Khó",
+    "description": "Tôi đã bày ra một yến tiệc. Lũ thú vốn xảo quyệt, nhưng nếu phá được mưu đồ của chúng, phần thưởng sẽ không hề nhỏ.",
+    "featureDesc": " - Đánh bại một Rockhowler sẽ hồi <@ba.vup>10</> ĐKN và tăng Công Phép <@ba.vup>+15</> cho toàn bộ cán viên.\n\n <@ba.info>- Kẻ địch có chỉ số tốt hơn.</>\n <@ba.info>- Chỉ có thể sử dụng các vật phẩm chiến thuật Hồi Phục HP và vật phẩm tiêu hao.</>"
+  },
+  "indie_hard001": {
+    "name": "Khiên Cuồng Nộ",
+    "description": "Lớp sương tuyết dường như chẳng bao giờ tan đi trên hoang địa này. Giữa những tiếng gầm trầm đục, vang lên âm thanh rạn vỡ lanh lảnh. \nHãy lắng nghe thật kỹ. Ngươi có nghe thấy không… tiếng đá nghiến vào kim loại?",
+    "featureDesc": " - Kẻ địch trở nên mạnh hơn."
+  },
+  "indie_hard001_s": {
+    "name": "Khiên Cuồng Nộ: Đoạn Nộ",
+    "description": "Lớp sương tuyết dường như chẳng bao giờ tan đi trên hoang địa này. Giữa những tiếng gầm trầm đục, vang lên âm thanh rạn vỡ lanh lảnh. \nHãy lắng nghe thật kỹ. Ngươi có nghe thấy không… tiếng đá nghiến vào kim loại?",
+    "featureDesc": " - Kẻ địch trở nên mạnh hơn.\n - Kẻ địch di chuyển nhanh hơn và hồi phục sau khi bị Suy Sụp nhanh hơn.\n- Sau khi một kẻ địch bị tiêu diệt, số còn lại sẽ khó bị gián đoạn hơn, đồng thời, liên tục nhận thêm Tấn Công và hồi phục HP.\n\n  <@ba.info>- Không thể sử dụng vật phẩm chiến thuật và vật phẩm tiêu hao.</>"
+  },
+  "indie_hard002": {
+    "name": "Lôi Điện và Bóng Tối",
+    "description": "Vụ nổ đinh tai đã thổi bùng những tàn tro chiến tranh từ cả trăm năm trước. Thế nhưng, Vành Đai Văn Minh vẫn không bị hủy diệt bởi trận oanh tạc của Aggeloid. \n\"Không chỉ có Aggeloi đã đẩy nhân loại đến bờ vực diệt vong. Và đó mới là bi kịch.\"",
+    "featureDesc": " - Kẻ địch trở nên mạnh hơn."
+  },
+  "indie_hard002_s": {
+    "name": "Lôi Điện và Bóng Tối: Đoạn Nộ",
+    "description": "Vụ nổ đinh tai đã thổi bùng những tàn tro chiến tranh từ cả trăm năm trước. Thế nhưng, Vành Đai Văn Minh vẫn không bị hủy diệt bởi trận oanh tạc của Aggeloid. \n\"Không chỉ có Aggeloi đã đẩy nhân loại đến bờ vực diệt vong. Và đó mới là bi kịch.\"",
+    "featureDesc": " - Kẻ địch trở nên mạnh hơn.\n - Kẻ địch hồi phục sau khi bị Suy Sụp nhanh hơn, khó bị gián đoạn hơn và phạm vi Tấn Công tăng mạnh.\n - Sting Hạng Nặng α sẽ định kỳ có khả năng miễn nhiễm với tất cả ST trong thời gian ngắn; tiêu diệt toàn bộ Sting α để loại bỏ buff miễn nhiễm này.\n \n  <@ba.info>- Không thể sử dụng vật phẩm chiến thuật và vật phẩm tiêu hao.</>"
+  },
+  "indie_hard003": {
+    "name": "Vững Như Đá",
+    "description": "Tàn tích cỗ máy khổng lồ nơi xa xăm vẫn âm vang những sự kiện vĩ đại của quá khứ. Ngay gần đó, những thực thể bị tháo rời bắt đầu kết tụ lại, sinh ra những hình hài mới gầm thét xé toạc mặt đất. \nMặt đất rung chuyển khi Aggeloi giáng thân xuống và cất từng bước nặng nề, dồn dập.",
+    "featureDesc": " - Kẻ địch trở nên mạnh hơn."
+  },
+  "indie_hard003_s": {
+    "name": "Vững Như Đá: Đoạn Nộ",
+    "description": "Tàn tích cỗ máy khổng lồ nơi xa xăm vẫn âm vang những sự kiện vĩ đại của quá khứ. Ngay gần đó, những thực thể bị tháo rời bắt đầu kết tụ lại, sinh ra những hình hài mới gầm thét xé toạc mặt đất. \nMặt đất rung chuyển khi Aggeloi giáng thân xuống và cất từng bước nặng nề, dồn dập.",
+    "featureDesc": " - Tốc độ hồi Thể Lực của Cán Viên bị giảm mạnh.\n - Kẻ địch mạnh hơn và miễn nhiễm với hiệu ứng Suy Sụp.\n - Chrysopolis Biết Đi hồi phục sau khi lộ Điểm Yếu nhanh hơn. Nếu không phá hủy Điểm Yếu trước khi thời gian lộ kết thúc, Chrysopolis Biết Đi sẽ nhận được buff tăng một lượng lớn Tấn Công. Nếu phá hủy Điểm Yếu thành công, Chrysopolis Biết Đi sẽ bị Suy Sụp.\n\n  <@ba.info>- Không thể sử dụng vật phẩm chiến thuật và vật phẩm tiêu hao.</>"
+  },
+  "indie_hard004": {
+    "name": "Chiến Nỏ và Chiến Rìu",
+    "description": "Những chiến binh Bonekrusher đã xé nát kẻ yếu, đứng chễm chệ trên đài cao với rìu và nỏ giương lên. Hãy đánh bại chúng và chôn vùi cả nỗi thống khổ xưa cũ lẫn tham vọng mới nảy trong cát bụi. \n\"Anh hùng ư? Ngươi lấy tư cách gì để mang danh hiệu ấy?\"",
+    "featureDesc": " - 2 kẻ địch tinh anh sẽ chiến đấu theo đội."
+  },
+  "indie_hard004_s": {
+    "name": "Chiến Nỏ và Chiến Rìu: Đoạn Nộ",
+    "description": "Những chiến binh Bonekrusher đã xé nát kẻ yếu, đứng chễm chệ trên đài cao với rìu và nỏ giương lên. Hãy đánh bại chúng và chôn vùi cả nỗi thống khổ xưa cũ lẫn tham vọng mới nảy trong cát bụi. \n\"Anh hùng ư? Ngươi lấy tư cách gì để mang danh hiệu ấy?\"",
+    "featureDesc": " - 2 kẻ địch tinh anh sẽ chiến đấu theo đội.\n - Khi cả hai kẻ địch tinh anh đều ở trên chiến trận, chúng sẽ chia đều lượng ST phải nhận.\n \n  <@ba.info>- Không thể sử dụng vật phẩm chiến thuật và vật phẩm tiêu hao.</>"
+  },
+  "indie_hard005": {
+    "name": "Chiến Thuật Dị Thường",
+    "description": "Các thiết bị liên lạc phát ra tiếng rít chói tai khi những chiếc drone đâm xuống đất. Lũ Landbreaker quay lại, lẩm bẩm cầu xin \"ban phước\" và \"trả thù\". \nĐằng sau chúng, những bóng dáng cao lớn hiện lên giữa khu rừng lò đốt dày đặc.",
+    "featureDesc": " - Kẻ địch không thể di chuyển nhưng rất khó bị gián đoạn và liên tục được cộng lực Tấn Công."
+  },
+  "indie_hard005_s": {
+    "name": "Chiến Thuật Dị Thường: Đoạn Nộ",
+    "description": "Các thiết bị liên lạc phát ra tiếng rít chói tai khi những chiếc drone đâm xuống đất. Lũ Landbreaker quay lại, lẩm bẩm cầu xin \"ban phước\" và \"trả thù\". \nĐằng sau chúng, những bóng dáng cao lớn hiện lên giữa khu rừng lò đốt dày đặc.",
+    "featureDesc": " - Kẻ địch không thể di chuyển nhưng rất khó bị gián đoạn và liên tục được cộng lực Tấn Công.\n - Tấn Công của kẻ địch có tỉ lệ tăng nhanh hơn nhiều.\n\n  <@ba.info>- Không thể sử dụng vật phẩm chiến thuật và vật phẩm tiêu hao.</>"
+  },
+  "indie_hard006": {
+    "name": "Sống Sót Trước Khí Độc",
+    "description": "Nhà máy khổng lồ thải ra khói độc đặc quánh từ những ống khói. Ai đang cố giấu điều gì ở đây? \n\"Rút kiếm ra và giương khiên lên! Hãy để những thú ngà chiến tranh gầm thét! Và khuấy động làn sương khói kia!\"",
+    "featureDesc": " - Hãy cẩn thận. Sương Mù sẽ liên tục gây ST lên tất cả cán viên.\n - Khi cán viên đang điều khiển hồi HP, các cán viên khác trong đội cũng nhận 70% lượng hồi HP đó."
+  },
+  "indie_hard006_s": {
+    "name": "Sống Sót Trước Khí Độc: Đoạn Nộ",
+    "description": "Nhà máy khổng lồ thải ra khói độc đặc quánh từ những ống khói. Ai đang cố giấu điều gì ở đây? \n\"Rút kiếm ra và giương khiên lên! Hãy để những thú ngà chiến tranh gầm thét! Và khuấy động làn sương khói kia!\"",
+    "featureDesc": " - Hãy cẩn thận. Sương Mù sẽ liên tục gây ST lên tất cả cán viên.\n - Lớp Sương Mù gây thêm ST và kẻ địch mới sẽ xuất hiện.\n - Khi cán viên đang điều khiển hồi HP, các cán viên khác trong đội cũng nhận 50% lượng hồi HP đó.\n\n  <@ba.info>- Không thể sử dụng vật phẩm chiến thuật và vật phẩm tiêu hao.</>"
+  },
+  "indie_hard007": {
+    "name": "Ngọn Lửa Gào Thét",
+    "description": "Làm Nhiễm Khuẩn bầu trời! Làm Nhiễm Khuẩn những tia sét bất ngờ giáng xuống! Và Làm Nhiễm Khuẩn những ngọn lửa bùng lên không một lời cảnh báo!",
+    "featureDesc": " - Kẻ địch thường tiến vào trạng thái <@ba.key>Điên Cuồng</> và liên tục gây <@ba.fire>Nhiễm Nhiệt</> lên bản thân, nhận buff Tăng Tấn Công và Giảm ST tương ứng với số tầng Nhiễm Nhiệt.\n\n <@ba.info>- Kẻ địch có khả năng kháng như nhau đối với mọi nguyên tố.</>"
+  },
+  "indie_hard007_s": {
+    "name": "Ngọn Lửa Gào Thét: Đoạn Nộ",
+    "description": "Làm Nhiễm Khuẩn bầu trời! Làm Nhiễm Khuẩn những tia sét bất ngờ giáng xuống! Và Làm Nhiễm Khuẩn những ngọn lửa bùng lên không một lời cảnh báo!",
+    "featureDesc": " - Kẻ địch thường tiến vào trạng thái <@ba.key>Điên Cuồng</> và liên tục gây <@ba.fire>Nhiễm Nhiệt</> lên bản thân, nhận buff Tăng Tấn Công và Giảm ST tương ứng với số tầng Nhiễm Nhiệt.\n - Trong trạng thái <@ba.key>Điên Cuồng</>, <@ba.key>cán viên không còn tự hồi Điểm Kỹ Năng.</>.\n\n <@ba.info>- Không thể dùng vật phẩm chiến thuật và vật phẩm tiêu hao.</>\n <@ba.info>- Kẻ địch có khả năng kháng như nhau đối với mọi nguyên tố.</>"
+  },
+  "indie_hard008": {
+    "name": "Oán Ghét Đong Đầy",
+    "description": "Nỗi hận thù của chúng kéo dài dai dẳng, âm ỉ không dứt. Những kẻ bị bỏ rơi lang thang vô tận trên miền đất hoang tàn… Ngọn nguồn của cơn thịnh nộ ấy đã bị thời gian xóa nhòa, nhưng mỗi vật chứa của hận thù đều có thể rút lấy sức mạnh từ biển sương mù vô tận.",
+    "featureDesc": " - Kẻ địch trở nên mạnh hơn.\n - Kẻ địch tinh anh sẽ chiến đấu theo đội.\n\n <@ba.info>- Kẻ địch có khả năng kháng như nhau đối với mọi nguyên tố.</>"
+  },
+  "indie_hard008_s": {
+    "name": "Oán Ghét Đong Đầy: Đoạn Nộ",
+    "description": "Nỗi hận thù của chúng kéo dài dai dẳng, âm ỉ không dứt. Những kẻ bị bỏ rơi lang thang vô tận trên miền đất hoang tàn… Ngọn nguồn của cơn thịnh nộ ấy đã bị thời gian xóa nhòa, nhưng mỗi vật chứa của hận thù đều có thể rút lấy sức mạnh từ biển sương mù vô tận.",
+    "featureDesc": " - Kẻ địch trở nên mạnh hơn và <@ba.key>khó gây gián đoạn hơn</>.\n - Kẻ địch tinh anh sẽ chiến đấu theo đội và sẽ có thêm kẻ địch xuất hiện.\n\n <@ba.info>- Không thể sử dụng vật phẩm chiến thuật và vật phẩm tiêu hao.</>\n <@ba.info>- Kẻ địch có khả năng kháng như nhau đối với mọi nguyên tố.</>"
+  },
+  "indie_hard009": {
+    "name": "Nhiệt Độ Nhừ Thịt",
+    "description": "CHÁY LÊN! Hãy để tất cả cháy rụi! Lật đổ tòa tháp, nung chảy con tàu! Đổ máu của chúng ta vào sắt nóng sục sôi và dùng nó để thanh tẩy Talos-II!!",
+    "featureDesc": " - Kẻ địch trở nên mạnh hơn.\n - Sên Originium Sương Lửa phát nổ sẽ xuất hiện theo thời gian.\n\n <@ba.info>- Kẻ địch có khả năng kháng như nhau đối với mọi nguyên tố.</>"
+  },
+  "indie_hard009_s": {
+    "name": "Nhiệt Độ Nhừ Thịt: Đoạn Nộ",
+    "description": "CHÁY LÊN! Hãy để tất cả cháy rụi! Lật đổ tòa tháp, nung chảy con tàu! Đổ máu của chúng ta vào sắt nóng sục sôi và dùng nó để thanh tẩy Talos-II!!",
+    "featureDesc": " - Kẻ địch trở nên mạnh hơn và <@ba.key>sẽ có thêm kẻ địch xuất hiện</>.\n - Sên Originium Sương Lửa phát nổ sẽ xuất hiện theo thời gian.\n - <@ba.key>Cán Viên không thể thực hiện Né Chuẩn Xác</>.\n\n <@ba.info>- Không thể sử dụng vật phẩm chiến thuật và vật phẩm tiêu hao.</>\n <@ba.info>- Kẻ địch có khả năng kháng như nhau đối với mọi nguyên tố.</>"
+  },
+  "indie_hard010": {
+    "name": "Thống Khổ Dậy Sóng",
+    "description": "Nỗi thống khổ đã kết tụ tại nơi đây suốt bao năm tháng. Hãy nhìn cách ánh sáng bị bẻ cong giữa đợt triều cuồng nộ. Sát ý tỏa ra lấn át mọi cảm xúc.",
+    "featureDesc": " - Kẻ địch sẽ không chủ động tấn công mà di chuyển vào chính giữa chiến trường để <@ba.key>phát nổ</> và gây lượng ST lớn lên tất cả cán viên.\n - Một số kẻ địch khó bị gián đoạn hơn.\n\n <@ba.info>- Kẻ địch có cùng khả năng kháng nhiễm với mọi nguyên tố.</>"
+  },
+  "indie_hard010_s": {
+    "name": "Thống Khổ Dậy Sóng: Đoạn Nộ",
+    "description": "Nỗi thống khổ đã kết tụ tại nơi đây suốt bao năm tháng. Hãy nhìn cách ánh sáng bị bẻ cong giữa đợt triều cuồng nộ. Sát ý tỏa ra lấn át mọi cảm xúc.",
+    "featureDesc": " - Kẻ địch sẽ không chủ động tấn công mà tiến vào chính giữa chiến trường để <@ba.key>phát nổ</> và gây lượng ST lớn lên tất cả cán viên.\n - Một số kẻ địch khó bị gián đoạn hơn.\n\n <@ba.info>- Không thể sử dụng vật phẩm chiến thuật và vật phẩm tiêu hao.</>\n <@ba.info>- Kẻ địch có cùng khả năng kháng nhiễm với mọi nguyên tố.</>"
+  },
+  "indie_hard011": {
+    "name": "Liên Kết Hàn Băng",
+    "description": "Cái lạnh tột độ đã gắn kết chúng lại với nhau. Những con sóng cuộn trào và dòng chảy đục ngầu đã trao cho chúng một tên gọi chung cùng ý nghĩa ẩn sau sự ra đời của chúng.",
+    "featureDesc": " - Kẻ địch trở nên mạnh hơn.\n\n <@ba.info>- Kẻ địch có cùng khả năng kháng nhiễm với mọi nguyên tố.</>"
+  },
+  "indie_hard011_s": {
+    "name": "Liên Kết Hàn Băng: Đoạn Nộ",
+    "description": "Cái lạnh tột độ đã gắn kết chúng lại với nhau. Những con sóng cuộn trào và dòng chảy đục ngầu đã trao cho chúng một tên gọi chung cùng ý nghĩa ẩn sau sự ra đời của chúng.",
+    "featureDesc": " - Kẻ địch trở nên mạnh hơn.\n - Khi được cường hóa, tất cả ST mà kẻ địch gây ra sẽ ngay lập tức áp dụng <@ba.cryst>Đông Cứng</> lên cán viên.\n\n <@ba.info>- Không thể sử dụng vật phẩm chiến thuật và vật phẩm tiêu hao.</>\n <@ba.info>- Kẻ địch có cùng khả năng kháng nhiễm với mọi nguyên tố.</>"
+  },
+  "indie_hard012": {
+    "name": "Huyết Mạch Suy Đọa",
+    "description": "Chúng ngấu nghiến thứ ô uế trên mặt đất cho đến khi thân thể phình to rồi vỡ tung, tràn ra thứ máu đặc quánh, hôi thối, thứ dịch nguyền rủa có thể giam cầm bất cứ ai lỡ dõi mắt nhìn vào nó.",
+    "featureDesc": " - Kẻ địch trở nên mạnh hơn.\n - Quái Lông Nhọn Bị Lây Nhiễm sẽ thường xuyên triệu hồi Quái Lông Nhọn.\n\n <@ba.info>- Kẻ địch có cùng khả năng kháng với mọi nguyên tố.</>"
+  },
+  "indie_hard012_s": {
+    "name": "Huyết Mạch Suy Đọa: Đoạn Nộ",
+    "description": "Chúng ngấu nghiến thứ ô uế trên mặt đất cho đến khi thân thể phình to rồi vỡ tung, tràn ra thứ máu đặc quánh, hôi thối, thứ dịch nguyền rủa có thể giam cầm bất cứ ai lỡ dõi mắt nhìn vào nó.",
+    "featureDesc": " - Kẻ địch trở nên mạnh hơn.\n - Quái Lông Nhọn Bị Lây Nhiễm sẽ thường xuyên triệu hồi Quái Lông Nhọn; khi HP thấp, nó sẽ <@ba.key>triệu hồi thêm nhiều</> Quái Lông Nhọn hơn.\n\n <@ba.info>- Không thể sử dụng vật phẩm chiến thuật và vật phẩm tiêu hao.</>\n <@ba.info>- Kẻ địch có cùng khả năng kháng với mọi nguyên tố.</>"
+  },
+  "indie_hard013": {
+    "name": "Chân Trời Lặng Im",
+    "description": "Hy vọng sẽ chẳng bao giờ quay lại vùng đất này nữa. Dã thú lẫn con người đều đã mục rữa theo thời gian, chỉ còn lại những thực thể với ánh mắt vô hồn, lê bước qua màn hỏa sương đặc quánh và âm ỉ cháy.",
+    "featureDesc": " - Kẻ địch có chỉ số tốt hơn.\n - Kẻ địch liên tục được tăng Tấn Công.\n\n <@ba.info>- Kẻ địch có cùng khả năng kháng nhiễm với mọi nguyên tố.</>"
+  },
+  "indie_hard013_s": {
+    "name": "Chân Trời Lặng Im: Đoạn Nộ",
+    "description": "Hy vọng sẽ chẳng bao giờ quay lại vùng đất này nữa. Dã thú lẫn con người đều đã mục rữa theo thời gian, chỉ còn lại những thực thể với ánh mắt vô hồn, lê bước qua màn hỏa sương đặc quánh và âm ỉ cháy.",
+    "featureDesc": " - Kẻ địch có chỉ số tốt hơn.\n - Kẻ địch liên tục được tăng Tấn Công.\n\n <@ba.info>- Không thể sử dụng vật phẩm chiến thuật và vật phẩm tiêu hao.</>\n <@ba.info>- Kẻ địch có cùng khả năng kháng nhiễm với mọi nguyên tố.</>"
+  },
+  "indie_hard014": {
+    "name": "Biển Tàn Lụi",
+    "description": "Những dòng chảy đục ngầu rồi cũng sẽ lắng xuống. Bầy thú sẽ chờ đợi cho đến khi chiếc rìu lớn nặng nề giáng xuống, nghiền nát những tàn tích vỡ vụn của quá khứ và mở ra một lối đi hướng về những khả năng mới.",
+    "featureDesc": " - Kẻ địch có chỉ số tốt hơn.\n\n <@ba.info>- Kẻ địch có cùng khả năng kháng nhiễm với mọi nguyên tố.</>"
+  },
+  "indie_hard014_s": {
+    "name": "Biển Tàn Lụi: Đoạn Nộ",
+    "description": "Những dòng chảy đục ngầu rồi cũng sẽ lắng xuống. Bầy thú sẽ chờ đợi cho đến khi chiếc rìu lớn nặng nề giáng xuống, nghiền nát những tàn tích vỡ vụn của quá khứ và mở ra một lối đi hướng về những khả năng mới.",
+    "featureDesc": " - Kẻ địch có chỉ số tốt hơn.\n\n <@ba.info>- Không thể sử dụng vật phẩm chiến thuật và vật phẩm tiêu hao.</>\n <@ba.info>- Kẻ địch có cùng khả năng kháng nhiễm với mọi nguyên tố.</>"
+  },
+  "indie_hard015": {
+    "name": "Khe Sâu Dòng Ngầm",
+    "description": "Dưới mặt nước câm lặng, nơi những dòng hàn lưu tối tăm âm thầm chảy, tồn tại vực sâu nơi có các thực thể vô cơ ẩn mình trong bóng tối.",
+    "featureDesc": " - Kẻ địch trở nên mạnh hơn.\n - Quái Tượng sẽ triệu hồi thêm Aggeloi.\n\n <@ba.info>- Kẻ địch có cùng khả năng kháng với mọi nguyên tố.</>"
+  },
+  "indie_hard015_s": {
+    "name": "Khe Sâu Dòng Ngầm: Đoạn Nộ",
+    "description": "Dưới mặt nước câm lặng, nơi những dòng hàn lưu tối tăm âm thầm chảy, tồn tại vực sâu nơi có các thực thể vô cơ ẩn mình trong bóng tối.",
+    "featureDesc": " - Kẻ địch trở nên mạnh hơn.\n - Quái Tượng sẽ triệu hồi thêm Aggeloi.\n\n <@ba.info>- Không thể sử dụng vật phẩm chiến thuật và vật phẩm tiêu hao.</>\n <@ba.info>- Kẻ địch có cùng khả năng kháng với mọi nguyên tố.</>"
+  },
+  "indie_hard016": {
+    "name": "Vòng Xoáy Nghi Lễ",
+    "description": "Ánh sáng tràn ngập tầm mắt khi họ hướng nhìn về cơn lốc xoáy của tuyệt vọng và cuồng nộ. Tiếng kêu gào của họ hòa lẫn với tiếng sấm vang rền, còn người cầm đuốc vẫn lặng lẽ đợi chờ trên vùng đất đổ nát.",
+    "featureDesc": " - Theo chu kỳ, Hỏa Thuật Sư Bonekrusher triệu hồi các <@ba.key>phân thân</> và vận sức thi triển kỹ năng tuyệt kỹ trong một khoảng thời gian. Khi hoàn tất vận sức, tuyệt kỹ gây ST lớn lên toàn bộ cán viên. Đánh bại tất cả <@ba.key>phân thân</> để làm gián đoạn tuyệt kỹ của Hỏa Thuật Sư.\n - Kẻ địch nhận thêm sát thương từ <@ba.key>Đòn Kết Liễu</>; thời gian Suy Sụp của kẻ địch cũng được rút ngắn đáng kể.\n \n <@ba.info>- Kẻ địch có cùng khả năng kháng nhiễm với mọi nguyên tố.</>"
+  },
+  "indie_hard016_s": {
+    "name": "Vòng Xoáy Nghi Lễ: Đoạn Nộ",
+    "description": "Ánh sáng tràn ngập tầm mắt khi họ hướng nhìn về cơn lốc xoáy của tuyệt vọng và cuồng nộ. Tiếng kêu gào của họ hòa lẫn với tiếng sấm vang rền, còn người cầm đuốc vẫn lặng lẽ đợi chờ trên vùng đất đổ nát.",
+    "featureDesc": " - Theo chu kỳ, Hỏa Thuật Sư Bonekrusher triệu hồi các <@ba.key>phân thân</> và vận sức thi triển kỹ năng tuyệt kỹ trong một khoảng thời gian. Khi hoàn tất vận sức, tuyệt kỹ gây ST lớn lên toàn bộ cán viên. Đánh bại tất cả <@ba.key>phân thân</> để làm gián đoạn tuyệt kỹ của Hỏa Thuật Sư.\n - Kẻ địch nhận thêm sát thương từ <@ba.key>Đòn Kết Liễu</>; thời gian Suy Sụp của kẻ địch cũng được rút ngắn đáng kể.\n\n <@ba.info>- Không thể sử dụng vật phẩm chiến thuật và vật phẩm tiêu hao.</>\n <@ba.info>- Kẻ địch có cùng khả năng kháng nhiễm với mọi nguyên tố.</>"
+  },
+  "indie_hard017": {
+    "name": "Æthillu Kinh Hoàng",
+    "description": "Bụi lãng quên phủ mờ mọi tầm mắt, còn khúc bi ca dâng lên theo từng thanh âm. Máu thịt của Æthillu kinh hoàng đã đổ tràn, để cái chết bao trùm khắp thế gian.",
+    "featureDesc": " - Theo chu kỳ, cán viên đang điều khiển sẽ bị <@ba.key>phong ấn</>.\n \n <@ba.info>- Kẻ địch có cùng khả năng kháng nhiễm với mọi nguyên tố.</>"
+  },
+  "indie_hard017_s": {
+    "name": "Æthillu Kinh Hoàng: Đoạn Nộ",
+    "description": "Bụi lãng quên phủ mờ mọi tầm mắt, còn khúc bi ca dâng lên theo từng thanh âm. Máu thịt của Æthillu kinh hoàng đã đổ tràn, để cái chết bao trùm khắp thế gian.",
+    "featureDesc": " - Theo chu kỳ, cán viên đang điều khiển sẽ bị <@ba.key>phong ấn</>; <@ba.key>ấn</> này cũng sẽ có hiệu lực lâu hơn.\n\n <@ba.info>- Không thể sử dụng vật phẩm chiến thuật và vật phẩm tiêu hao.</>\n <@ba.info>- Kẻ địch có cùng khả năng kháng nhiễm với mọi nguyên tố.</>"
+  },
+  "indie_hard018": {
+    "name": "Tiếng Trống Cuồng Nộ",
+    "description": "Thực thể sấm rền bị dẫn dụ đến vùng đất này, giày xéo kẻ đã khuất cùng nỗi khổ đau chồng chất của chúng. Cuộc chiến giữa sinh và tử sẽ vĩnh viễn không hồi kết.",
+    "featureDesc": " - Khi điên cuồng, Thiên Cổ Yêu Thú tạo ra lá chắn bảo hộ. Mỗi <@ba.key>Phản Ứng Thuật Pháp</> hoặc <@ba.phy>Trạng Thái Vật Lý</> do cán viên gây ra sẽ xóa 1 cộng dồn khiên.\n \n <@ba.info>- Kẻ địch có cùng khả năng kháng nhiễm với mọi nguyên tố.</>"
+  },
+  "indie_hard018_s": {
+    "name": "Tiếng Trống Cuồng Nộ: Đoạn Nộ",
+    "description": "Thực thể sấm rền bị dẫn dụ đến vùng đất này, giày xéo kẻ đã khuất cùng nỗi khổ đau chồng chất của chúng. Cuộc chiến giữa sinh và tử sẽ vĩnh viễn không hồi kết.",
+    "featureDesc": " - Khi ở trạng thái bình ổn, mỗi lần Thiên Cổ Yêu Thú gây ST lên cán viên đang điều khiển, nó sẽ tạo ra một <@ba.key>Vòng Xoáy</>.\n - Khi điên cuồng, Thiên Cổ Yêu Thú hấp thụ toàn bộ <@ba.key>Vòng Xoáy</> trên chiến trường để tạo lá chắn bảo hộ. Mỗi <@ba.key>Vòng Xoáy</> được hấp thụ sẽ tăng số cộng dồn khiên. Mỗi <@ba.key>Phản Ứng Thuật Pháp</> hoặc <@ba.phy>Trạng Thái Vật Lý</> do cán viên gây ra sẽ xóa 1 cộng dồn khiên.\n\n <@ba.info>- Không thể sử dụng vật phẩm chiến thuật và vật phẩm tiêu hao.</>\n <@ba.info>- Kẻ địch có cùng khả năng kháng nhiễm với mọi nguyên tố.</>"
+  },
+  "indie_hard019": {
+    "name": "Trận Liệt Gai",
+    "description": "Mài sắc ngọn thương. Gia cố khiên chắn. Nhìn thẳng vào hận thù của chính mình, và lắng nghe tiếng vọng của sự yếu nhược. Rồi tiến bước, ghim vũ khí của các ngươi vào huyết nhục của tử vong.",
+    "featureDesc": " - Kẻ địch có chỉ số tốt hơn.\n - Lăng Trụ sẽ tăng Tấn Công của Khối Đa Diện.\n - Lăng Trụ giờ đây khó bị gián đoạn hơn nhiều.\n \n <@ba.info>- Kẻ địch có cùng khả năng kháng nhiễm với mọi nguyên tố.</>"
+  },
+  "indie_hard019_s": {
+    "name": "Trận Liệt Gai: Đoạn Nộ",
+    "description": "Mài sắc ngọn thương. Gia cố khiên chắn. Nhìn thẳng vào hận thù của chính mình, và lắng nghe tiếng vọng của sự yếu nhược. Rồi tiến bước, ghim vũ khí của các ngươi vào huyết nhục của tử vong.",
+    "featureDesc": " - Kẻ địch có chỉ số tốt hơn.\n - Lăng Trụ sẽ tăng Tấn Công của Khối Đa Diện.\n - Lăng Trụ giờ đây khó bị gián đoạn hơn nhiều.\n\n <@ba.info>- Không thể sử dụng vật phẩm chiến thuật và vật phẩm tiêu hao.</>\n <@ba.info>- Kẻ địch có cùng khả năng kháng nhiễm với mọi nguyên tố.</>"
+  },
+  "indie_hard020": {
+    "name": "Dõi Theo Biến Chuyển",
+    "description": "Muôn dòng sông hợp lại thành một dòng huyết lạnh. Từ vực sâu tựa vết rạch, dưới những dòng chảy âm phủ, loài dung hợp vẫn không ngừng dõi nhìn.",
+    "featureDesc": " - Kẻ địch có chỉ số tốt hơn.\n - Lực lượng kẻ địch bao gồm Kẻ Lướt Sóng δ.\n \n <@ba.info>- Kẻ địch có cùng khả năng kháng nhiễm với mọi nguyên tố.</>"
+  },
+  "indie_hard020_s": {
+    "name": "Dõi Theo Biến Chuyển: Đoạn Nộ",
+    "description": "Muôn dòng sông hợp lại thành một dòng huyết lạnh. Từ vực sâu tựa vết rạch, dưới những dòng chảy âm phủ, loài dung hợp vẫn không ngừng dõi nhìn.",
+    "featureDesc": " - Kẻ địch có chỉ số tốt hơn.\n - Lực lượng kẻ địch bao gồm Kẻ Lướt Sóng δ.\n\n <@ba.info>- Không thể sử dụng vật phẩm chiến thuật và vật phẩm tiêu hao.</>\n <@ba.info>- Kẻ địch có cùng khả năng kháng nhiễm với mọi nguyên tố.</>"
+  },
+  "indie_hard021": {
+    "name": "Băng Qua Lãnh Địa Quái Cào",
+    "description": "Những vuốt cào đã khuất khỏi tầm mắt, khi đàn thú dồn bước và sông ngòi vỡ dòng. Kẻ bại trận lưu tán rồi cất cánh ly tán, còn lớp trẻ lại quên mất cách đáp trả hận thù.",
+    "featureDesc": " - Kẻ địch có chỉ số tốt hơn.\n - Quái Cào Sáng Chói vĩnh viễn trở nên <@ba.key>Điên Cuồng</> và Tấn Công của chúng tăng lên khi HP của chúng giảm.\n \n <@ba.info>- Kẻ địch có cùng khả năng kháng nhiễm với mọi nguyên tố.</>"
+  },
+  "indie_hard021_s": {
+    "name": "Băng Qua Lãnh Địa Quái Cào: Đoạn Nộ",
+    "description": "Những vuốt cào đã khuất khỏi tầm mắt, khi đàn thú dồn bước và sông ngòi vỡ dòng. Kẻ bại trận lưu tán rồi cất cánh ly tán, còn lớp trẻ lại quên mất cách đáp trả hận thù.",
+    "featureDesc": " - Kẻ địch có chỉ số tốt hơn.\n - Quái Cào Sáng Chói vĩnh viễn trở nên <@ba.key>Điên Cuồng</> và Tấn Công của chúng tăng lên khi HP của chúng giảm.\n\n <@ba.info>- Không thể sử dụng vật phẩm chiến thuật và vật phẩm tiêu hao.</>\n <@ba.info>- Kẻ địch có cùng khả năng kháng nhiễm với mọi nguyên tố.</>"
+  },
+  "indie_hard022": {
+    "name": "Hỏa Sương Chấn Địa",
+    "description": "\"TA CẦM TRƯỢNG! Hỏa Sương chính là BÚA của ta! Những ngọn núi này là TRỐNG, còn TA! CHÍNH! LÀ! TAY! TRỐNGGG!\"",
+    "featureDesc": " - Hỏa Thuật Sư Bonekrusher liên tục thi triển hỏa sương và gây ST cho tất cả cán viên. Hắn cũng khó bị gián đoạn hơn và miễn nhiễm với ST Suy Sụp.\n - Khi Hỏa Thuật Sư Bonekrusher chịu ST <@ba.key>Bùng Nổ Thuật Pháp</>, hắn sẽ chịu thêm ST bằng một tỷ lệ phần trăm HP Tối Đa của bản thân và tạm thời bị <@ba.key>phong ấn</>.\n - Hỏa Thuật Sư Bonekrusher sẽ liên tục triệu hồi Đạo Tặc Tinh Anh và Quái Phục Kích Tinh Anh.\n - Đánh bại kẻ địch bằng <@ba.key>Nhiễm Thuật Pháp</> cũng áp dụng 1 cộng dồn của cùng <@ba.key>Nhiễm Thuật Pháp</> đó lên tất cả kẻ địch khác.\n\n <@ba.info>- Kẻ địch có khả năng kháng như nhau đối với mọi nguyên tố.</>"
+  },
+  "indie_hard022_s": {
+    "name": "Hỏa Sương Chấn Địa: Đoạn Nộ",
+    "description": "\"TA CẦM TRƯỢNG! Hỏa Sương chính là BÚA của ta! Những ngọn núi này là TRỐNG, còn TA! CHÍNH! LÀ! TAY! TRỐNGGG!\"",
+    "featureDesc": " - Hỏa Thuật Sư Bonekrusher liên tục thi triển hỏa sương và gây ST cho tất cả cán viên. Khi thấp máu, hỏa sương của hắn cũng sẽ áp dụng <@ba.fire>Nhiễm Nhiệt</>. Hắn cũng khó bị gián đoạn hơn và miễn nhiễm với ST Suy Sụp.\n - Khi Hỏa Thuật Sư Bonekrusher chịu ST <@ba.key>Bùng Nổ Thuật Pháp</>, hắn sẽ chịu thêm ST bằng một tỷ lệ phần trăm HP Tối Đa của bản thân và tạm thời bị <@ba.key>phong ấn</>.\n - Hỏa Thuật Sư Bonekrusher sẽ liên tục triệu hồi Đạo Tặc Tinh Anh và Quái Phục Kích Tinh Anh.\n - Đánh bại kẻ địch bằng <@ba.key>Nhiễm Thuật Pháp</> cũng áp dụng 1 cộng dồn của cùng <@ba.key>Nhiễm Thuật Pháp</> đó lên tất cả kẻ địch khác.\n\n <@ba.info>- Không thể dùng vật phẩm chiến thuật và vật phẩm tiêu hao.</>\n <@ba.info>- Kẻ địch có khả năng kháng như nhau đối với mọi nguyên tố.</>"
+  },
+  "indie_hard023": {
+    "name": "Quái Thú và Bè Lũ",
+    "description": "Người có tuyệt kỹ của người, thú có chiêu trò của thú. Muốn biết bên nào bản lĩnh hơn sao? Sân khấu này thuộc về bạn.",
+    "featureDesc": " - <@ba.key>Cán viên không thể tự hồi Điểm Kỹ Năng</>.\n - Cán viên đang điều khiển sẽ hồi một ít Điểm Kỹ Năng khi giẫm lên vỏ chuối do lũ rockhowler ném ra.\n - Gấu Nanh Dài Thiết Giáp sẽ định kỳ thi triển kỹ năng tuyệt kỹ. Tuyệt kỹ này xóa toàn bộ vỏ chuối khỏi chiến trường, đồng thời liên tục gây ST lên tất cả cán viên. Trong khi thi triển tuyệt kỹ, Gấu Nanh Dài Thiết Giáp nhận lượng lớn Giảm ST. Có thể dùng <@ba.key>Ngăn Chặn Tấn Công</> để ngăn việc thi triển tuyệt kỹ này.\n\n <@ba.info>- Kẻ địch có khả năng kháng như nhau đối với mọi nguyên tố.</>"
+  },
+  "indie_hard023_s": {
+    "name": "Quái Thú và Bè Lũ: Đoạn Nộ",
+    "description": "Người có tuyệt kỹ của người, thú có chiêu trò của thú. Muốn biết bên nào bản lĩnh hơn sao? Sân khấu này thuộc về bạn.",
+    "featureDesc": " - <@ba.key>Cán viên không thể tự hồi Điểm Kỹ Năng</>.\n - Cán viên đang điều khiển sẽ hồi một ít Điểm Kỹ Năng khi giẫm lên vỏ chuối do lũ rockhowler ném ra.\n - Gấu Nanh Dài Thiết Giáp sẽ định kỳ thi triển kỹ năng tuyệt kỹ. Tuyệt kỹ này xóa toàn bộ vỏ chuối khỏi chiến trường, đồng thời liên tục gây ST lên tất cả cán viên. Trong khi thi triển tuyệt kỹ, Gấu Nanh Dài Thiết Giáp nhận lượng lớn Giảm ST. <@ba.key>Gây gián đoạn nhiều lần</> có thể ngăn việc thi triển tuyệt kỹ này.\n\n <@ba.info>- Không thể sử dụng vật phẩm chiến thuật và vật phẩm tiêu hao.</>\n <@ba.info>- Kẻ địch có khả năng kháng như nhau đối với mọi nguyên tố.</>"
+  },
+  "indie_hard024": {
+    "name": "Chúa Tể Vách Đá",
+    "description": "Ít khi được chứng kiến rockhowler tranh giành ngôi vị tối cao. Kẻ thắng bước lên ngai, kẻ bại hóa thành xương trắng... Hãy lên đạn, tuốt gươm, vì Chúa Tể Vách Đá đã ra đời.",
+    "featureDesc": " - Thời gian duy trì của <@ba.fire>Thiêu Đốt</>, <@ba.pulse>Điện Hóa</>, <@ba.natur>Ăn Mòn</>, <@ba.cryst>Đông Cứng</> và <@ba.phy>Phá Giáp</> áp dụng lên craghowler sẽ trở thành vĩnh viễn. Hiệu ứng của <@ba.fire>Thiêu Đốt</>, <@ba.pulse>Điện Hóa</>, <@ba.natur>Ăn Mòn</>, <@ba.cryst>Tan Vỡ</> và <@ba.phy>Phá Giáp</> được áp dụng lên craghowler cũng sẽ trở nên mạnh hơn. Các Phản Ứng Thuật Pháp và Trạng Thái Vật Lý nói trên cũng sẽ tiếp tục tồn tại sau khi <@ba.key>tiêu hao</>.\n - Craghowler sẽ định kỳ tung ra tiếng gầm cuồng nộ. Tiếng gầm cuồng nộ áp dụng <@ba.key>Choáng</> lên tất cả cán viên.\n\n <@ba.info>- Kẻ địch có khả năng kháng như nhau đối với mọi nguyên tố.</>"
+  },
+  "indie_hard024_s": {
+    "name": "Chúa Tể Vách Đá: Đoạn Nộ",
+    "description": "Ít khi được chứng kiến rockhowler tranh giành ngôi vị tối cao. Kẻ thắng bước lên ngai, kẻ bại hóa thành xương trắng... Hãy lên đạn, tuốt gươm, vì Chúa Tể Vách Đá đã ra đời.",
+    "featureDesc": " - Thời gian duy trì của <@ba.fire>Thiêu Đốt</>, <@ba.pulse>Điện Hóa</>, <@ba.natur>Ăn Mòn</>, <@ba.cryst>Đông Cứng</> và <@ba.phy>Phá Giáp</> áp dụng lên craghowler sẽ trở thành vĩnh viễn. Hiệu ứng của <@ba.fire>Thiêu Đốt</>, <@ba.pulse>Điện Hóa</>, <@ba.natur>Ăn Mòn</>, <@ba.cryst>Tan Vỡ</> và <@ba.phy>Phá Giáp</> được áp dụng lên craghowler cũng sẽ trở nên mạnh hơn. Các Phản Ứng Thuật Pháp và Trạng Thái Vật Lý nói trên cũng sẽ tiếp tục tồn tại sau khi <@ba.key>tiêu hao</>.\n - Craghowler sẽ định kỳ tung ra tiếng gầm cuồng nộ. Tiếng gầm cuồng nộ áp dụng <@ba.key>Choáng</> lên tất cả cán viên. Khi trận chiến diễn ra, thời gian duy trì của <@ba.key>Choáng</> do tiếng gầm cuồng nộ áp dụng sẽ dần kéo dài.\n\n <@ba.info>- Không thể dùng vật phẩm chiến thuật và vật phẩm tiêu hao.</>\n <@ba.info>- Kẻ địch có khả năng kháng như nhau đối với mọi nguyên tố.</>"
+  },
+  "indie_hard025": {
+    "name": "Lữ Khách Thanh Ba",
+    "description": "Người Trại Thanh Ba cùng cất lên khúc hợp xướng của lưỡi đao. Không còn khắc khoải vì một mái nhà chưa dựng, họ để hào khí và dã tâm hoang dại dẫn lối, thẳng tiến lên đỉnh cao.",
+    "featureDesc": " - Đánh bại kẻ địch sẽ hồi một lượng HP cho tất cả kẻ địch khác, đồng thời tăng vĩnh viễn Tấn Công và HP Tối Đa của chúng.\n\n <@ba.info>- Kẻ địch có khả năng kháng như nhau đối với mọi nguyên tố.</>"
+  },
+  "indie_hard025_s": {
+    "name": "Lữ Khách Thanh Ba: Đoạn Nộ",
+    "description": "Người Trại Thanh Ba cùng cất lên khúc hợp xướng của lưỡi đao. Không còn khắc khoải vì một mái nhà chưa dựng, họ để hào khí và dã tâm hoang dại dẫn lối, thẳng tiến lên đỉnh cao.",
+    "featureDesc": " - Đánh bại kẻ địch sẽ hồi một lượng HP cho tất cả kẻ địch khác, đồng thời tăng vĩnh viễn Tấn Công và HP Tối Đa của chúng.\n\n <@ba.info>- Không thể dùng vật phẩm chiến thuật và vật phẩm tiêu hao.</>\n <@ba.info>- Kẻ địch có khả năng kháng như nhau đối với mọi nguyên tố.</>"
+  }
+}

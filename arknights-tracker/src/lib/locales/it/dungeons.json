@@ -1,0 +1,462 @@
+{
+  "indie_battletower001": {
+    "name": "Tagliacque d'argento: Normale",
+    "description": "Ho visto uno spiraglio di luce e la lama scintillante che solcava le correnti, eppure non è riuscita a recidere la sua spietata malvagità. La sua presa ha lasciato un segno sulla tua spada e l'eco persistente ha avvolto la tua figura.",
+    "featureDesc": " <@ba.info>- I nemici hanno statistiche migliori.</>\n<@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+  },
+  "indie_battletower001_ex": {
+    "name": "Tagliacque d'argento: Brutale",
+    "description": "Ho visto uno spiraglio di luce e la lama scintillante che solcava le correnti, eppure non è riuscita a recidere la sua spietata malvagità. La sua presa ha lasciato un segno sulla tua spada e l'eco persistente ha avvolto la tua figura.",
+    "featureDesc": " <@ba.info>- I nemici hanno statistiche migliori.</>\n<@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+  },
+  "indie_battletower001_s": {
+    "name": "Tagliacque d'argento: Difficile",
+    "description": "Ho visto uno spiraglio di luce e la lama scintillante che solcava le correnti, eppure non è riuscita a recidere la sua spietata malvagità. La sua presa ha lasciato un segno sulla tua spada e l'eco persistente ha avvolto la tua figura.",
+    "featureDesc": " <@ba.info>- I nemici hanno statistiche migliori.</>\n<@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+  },
+  "indie_battletower002": {
+    "name": "Antiche storie selvagge: Normale",
+    "description": "Qui mi rimetto alle parole delle bestie che vagano tra le rovine della guerra, artigliando e lacerando i nomi delle nazioni mentre la schiuma rabbiosa riduce bastoni, scudi e proiettili di cannone in ferrium fuso.",
+    "featureDesc": " - Sconfiggere i nemici fa recuperare 15 PA.\n- Danni da abilità di combattimento inflitti <@ba.vup>+60%</>.\n\n<@ba.info>- I nemici hanno statistiche migliori.</>\n<@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+  },
+  "indie_battletower002_ex": {
+    "name": "Antiche storie selvagge: Brutale",
+    "description": "Qui mi rimetto alle parole delle bestie che vagano tra le rovine della guerra, artigliando e lacerando i nomi delle nazioni mentre la schiuma rabbiosa riduce bastoni, scudi e proiettili di cannone in ferrium fuso.",
+    "featureDesc": " - Sconfiggere i nemici fa recuperare 15 PA.\n- Danni da abilità di combattimento inflitti <@ba.vup>+60%</>.\n\n<@ba.info>- I nemici hanno statistiche migliori.</>\n<@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+  },
+  "indie_battletower002_s": {
+    "name": "Antiche storie selvagge: Difficile",
+    "description": "Qui mi rimetto alle parole delle bestie che vagano tra le rovine della guerra, artigliando e lacerando i nomi delle nazioni mentre la schiuma rabbiosa riduce bastoni, scudi e proiettili di cannone in ferrium fuso.",
+    "featureDesc": " - Sconfiggere i nemici fa recuperare 15 PA.\n- Danni da abilità di combattimento inflitti <@ba.vup>+60%</>.\n\n<@ba.info>- I nemici hanno statistiche migliori.</>\n<@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+  },
+  "indie_battletower003": {
+    "name": "Æthillu dei guerriglieri: Normale",
+    "description": "Vedo un dardo di balestra fischiare attraverso i cieli. I guerriglieri camminavano proprio al limite della realtà; i loro tratti si fondevano nelle fredde forme degli Æthillu.",
+    "featureDesc": " - I nemici non possono muoversi, ma sono più difficili da ostacolare.\n- Sul campo di battaglia apparirà un Æthillu che può essere danneggiato solo con mosse letali.\n- Sconfiggere un Æthillu attirerà tutti i nemici, farà recuperare 50 PA e conferirà all'operatore controllato, per 10 secondi, <@ba.vup>+100%</> di danni inflitti.\n- Sconfiggi tutti i tendi-agguati Spacca-Ossa per completare il livello; non è necessario sconfiggere l'Æthillu.\n\n<@ba.info>- I nemici hanno statistiche migliori.</>\n<@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+  },
+  "indie_battletower003_ex": {
+    "name": "Æthillu dei guerriglieri: Brutale",
+    "description": "Vedo un dardo di balestra fischiare attraverso i cieli. I guerriglieri camminavano proprio al limite della realtà; i loro tratti si fondevano nelle fredde forme degli Æthillu.",
+    "featureDesc": " - I nemici non possono muoversi, ma sono più difficili da ostacolare.\n- Sul campo di battaglia apparirà un Æthillu che può essere danneggiato solo con mosse letali.\n- Sconfiggere un Æthillu attirerà tutti i nemici, farà recuperare 50 PA e conferirà all'operatore controllato, per 10 secondi, <@ba.vup>+100%</> di danni inflitti.\n- Sconfiggi tutti i tendi-agguati Spacca-Ossa per completare il livello; non è necessario sconfiggere l'Æthillu.\n\n<@ba.info>- I nemici hanno statistiche migliori.</>\n<@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+  },
+  "indie_battletower003_s": {
+    "name": "Æthillu dei guerriglieri: Difficile",
+    "description": "Vedo un dardo di balestra fischiare attraverso i cieli. I guerriglieri camminavano proprio al limite della realtà; i loro tratti si fondevano nelle fredde forme degli Æthillu.",
+    "featureDesc": " - I nemici non possono muoversi, ma sono più difficili da ostacolare.\n- Sul campo di battaglia apparirà un Æthillu che può essere danneggiato solo con mosse letali.\n- Sconfiggere un Æthillu attirerà tutti i nemici, farà recuperare 50 PA e conferirà all'operatore controllato, per 10 secondi, <@ba.vup>+100%</> di danni inflitti.\n- Sconfiggi tutti i tendi-agguati Spacca-Ossa per completare il livello; non è necessario sconfiggere l'Æthillu.\n\n<@ba.info>- I nemici hanno statistiche migliori.</>\n<@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+  },
+  "indie_battletower004": {
+    "name": "Era delle asce: Normale",
+    "description": "Mentre facevo scorrere le dita sulle incisioni, la ruggine rovente inviava scariche di dolore che attraversavano la pelle del boia. Le armi erano macchiate dalla sua carne e dal suo sangue. Il ciclo era infinito e incessante, e si ripeteva ogni anno.",
+    "featureDesc": " <@ba.info>- I nemici hanno statistiche migliori.</>\n<@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+  },
+  "indie_battletower004_ex": {
+    "name": "Era delle asce: Brutale",
+    "description": "Mentre facevo scorrere le dita sulle incisioni, la ruggine rovente inviava scariche di dolore che attraversavano la pelle del boia. Le armi erano macchiate dalla sua carne e dal suo sangue. Il ciclo era infinito e incessante, e si ripeteva ogni anno.",
+    "featureDesc": " <@ba.info>- I nemici hanno statistiche migliori.</>\n<@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+  },
+  "indie_battletower004_s": {
+    "name": "Era delle asce: Difficile",
+    "description": "Mentre facevo scorrere le dita sulle incisioni, la ruggine rovente inviava scariche di dolore che attraversavano la pelle del boia. Le armi erano macchiate dalla sua carne e dal suo sangue. Il ciclo era infinito e incessante, e si ripeteva ogni anno.",
+    "featureDesc": " <@ba.info>- I nemici hanno statistiche migliori.</>\n<@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+  },
+  "indie_battletower005": {
+    "name": "Munizioni polverizzanti: Normale",
+    "description": "Ho raccolto pezzi di ferrium, frammenti di pensieri e idee un tempo impressi nelle incisioni. L'impegno più incrollabile era il proiettile, frantumato contro carne e ossa.",
+    "featureDesc": " <@ba.info>- I nemici hanno statistiche migliori.</>\n<@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+  },
+  "indie_battletower005_ex": {
+    "name": "Munizioni polverizzanti: Brutale",
+    "description": "Ho raccolto pezzi di ferrium, frammenti di pensieri e idee un tempo impressi nelle incisioni. L'impegno più incrollabile era il proiettile, frantumato contro carne e ossa.",
+    "featureDesc": " <@ba.info>- I nemici hanno statistiche migliori.</>\n<@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+  },
+  "indie_battletower005_s": {
+    "name": "Munizioni polverizzanti: Difficile",
+    "description": "Ho raccolto pezzi di ferrium, frammenti di pensieri e idee un tempo impressi nelle incisioni. L'impegno più incrollabile era il proiettile, frantumato contro carne e ossa.",
+    "featureDesc": " <@ba.info>- I nemici hanno statistiche migliori.</>\n<@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+  },
+  "indie_battletower006": {
+    "name": "Cicatrici del Fenditerra: Normale",
+    "description": "Ho sentito parlare di una storia che iniziò con le sfrenate ambizioni di un signore della guerra. Ciò portò branchi di lupi a divorarsi a vicenda e agitò il grande mare di sabbia, finché il suono del sangue che sgorgava dalle ferite lacere non echeggiò nelle nostre orecchie.",
+    "featureDesc": " - Sconfiggere l'avanguardia Spacca-Ossa conferisce un bonus all'efficacia del Vacillamento di <@ba.vup>+50%</>.\n- Sconfiggere il piromane Spacca-Ossa conferisce <@ba.vup>+100</> di Intensità delle Arti.\n- Sconfiggere il boia Spacca-Ossa conferisce <@ba.vup>+100%</> di danni da abilità inflitti.\n- Sconfiggere l'ariete pesante conferisce <@ba.vup>+100%</> di danni da attacco base inflitti.\n\n <@ba.info>- I nemici hanno statistiche migliori.</>\n<@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+  },
+  "indie_battletower006_ex": {
+    "name": "Cicatrici del Fenditerra: Brutale",
+    "description": "Ho sentito parlare di una storia che iniziò con le sfrenate ambizioni di un signore della guerra. Ciò portò branchi di lupi a divorarsi a vicenda e agitò il grande mare di sabbia, finché il suono del sangue che sgorgava dalle ferite lacere non echeggiò nelle nostre orecchie.",
+    "featureDesc": " - Sconfiggere l'avanguardia Spacca-Ossa conferisce un bonus all'efficacia del Vacillamento di <@ba.vup>+50%</>.\n- Sconfiggere il piromane Spacca-Ossa conferisce <@ba.vup>+100</> di Intensità delle Arti.\n- Sconfiggere il boia Spacca-Ossa conferisce <@ba.vup>+100%</> di danni da abilità inflitti.\n- Sconfiggere l'ariete pesante conferisce <@ba.vup>+100%</> di danni da attacco base inflitti.\n\n <@ba.info>- I nemici hanno statistiche migliori.</>\n <@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+  },
+  "indie_battletower006_s": {
+    "name": "Cicatrici del Fenditerra: Difficile",
+    "description": "Ho sentito parlare di una storia che iniziò con le sfrenate ambizioni di un signore della guerra. Ciò portò branchi di lupi a divorarsi a vicenda e agitò il grande mare di sabbia, finché il suono del sangue che sgorgava dalle ferite lacere non echeggiò nelle nostre orecchie.",
+    "featureDesc": " - Sconfiggere l'avanguardia Spacca-Ossa conferisce un bonus all'efficacia del Vacillamento di <@ba.vup>+50%</>.\n- Sconfiggere il piromane Spacca-Ossa conferisce <@ba.vup>+100</> di Intensità delle Arti.\n- Sconfiggere il boia Spacca-Ossa conferisce <@ba.vup>+100%</> di danni da abilità inflitti.\n- Sconfiggere l'ariete pesante conferisce <@ba.vup>+100%</> di danni da attacco base inflitti.\n\n <@ba.info>- I nemici hanno statistiche migliori.</>\n <@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+  },
+  "indie_battletower007": {
+    "name": "Ululato delle creature immortali: Normale",
+    "description": "Ho sentito il suono della tua lama che raschiava le ossa sbiancate delle bestie, il sibilo dell'affilatura era quasi come il fragore del tuono.",
+    "featureDesc": " - Il batticielo non entrerà in stato di Furia.\n - Dopo essere entrato in battaglia, il batticielo ottiene 50 resistenza contro tutti gli elementi.\n\n <@ba.info>- I nemici hanno statistiche migliori.</>\n <@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+  },
+  "indie_battletower007_ex": {
+    "name": "Ululato delle creature immortali: Brutale",
+    "description": "Ho sentito il suono della tua lama che raschiava le ossa sbiancate delle bestie, il sibilo dell'affilatura era quasi come il fragore del tuono.",
+    "featureDesc": " - Il batticielo non entrerà in stato di Furia.\n - Dopo essere entrato in battaglia, il batticielo ottiene 50 resistenza contro tutti gli elementi.\n\n <@ba.info>- I nemici hanno statistiche migliori.</>\n <@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+  },
+  "indie_battletower007_s": {
+    "name": "Ululato delle creature immortali: Difficile",
+    "description": "Ho sentito il suono della tua lama che raschiava le ossa sbiancate delle bestie, il sibilo dell'affilatura era quasi come il fragore del tuono.",
+    "featureDesc": " - Il batticielo non entrerà in stato di Furia.\n - Dopo essere entrato in battaglia, il batticielo ottiene 50 resistenza contro tutti gli elementi.\n\n <@ba.info>- I nemici hanno statistiche migliori.</>\n <@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+  },
+  "indie_battletower008": {
+    "name": "Breve storia di guerra: normale",
+    "description": "Ho trovato qualche riga di verità. Tutto ebbe inizio con bestie furiose e si concluse con persone che si uccidevano tra loro. I conflitti sanguinosi non hanno mai avuto fine.",
+    "featureDesc": " - Sconfiggere il drago delle sabbie conferisce <@ba.vup>+30%</> di rigenerazione dei PA.\n - Sconfiggere il telson pesante conferisce <@ba.vup>+50%</> di riduzione del tempo di recupero delle abilità combo.\n - Sconfiggere il balestriere Spacca-Ossa conferisce <@ba.vup>+60%</> di velocità di incremento dell'energia suprema.\n \n <@ba.info>- I nemici hanno statistiche migliori.</>\n <@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+  },
+  "indie_battletower008_ex": {
+    "name": "Breve storia di guerra: brutale",
+    "description": "Ho trovato qualche riga di verità. Tutto ebbe inizio con bestie furiose e si concluse con persone che si uccidevano tra loro. I conflitti sanguinosi non hanno mai avuto fine.",
+    "featureDesc": " - Sconfiggere il drago delle sabbie conferisce <@ba.vup>+30%</> di rigenerazione dei PA.\n - Sconfiggere il telson pesante conferisce <@ba.vup>+50%</> di riduzione del tempo di recupero delle abilità combo.\n - Sconfiggere il balestriere Spacca-Ossa conferisce <@ba.vup>+60%</> di velocità di incremento dell'energia suprema.\n \n <@ba.info>- I nemici hanno statistiche migliori.</>\n <@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+  },
+  "indie_battletower008_s": {
+    "name": "Breve storia di guerra: difficile",
+    "description": "Ho trovato qualche riga di verità. Tutto ebbe inizio con bestie furiose e si concluse con persone che si uccidevano tra loro. I conflitti sanguinosi non hanno mai avuto fine.",
+    "featureDesc": " - Sconfiggere il drago delle sabbie conferisce <@ba.vup>+30%</> di rigenerazione dei PA.\n - Sconfiggere il telson pesante conferisce <@ba.vup>+50%</> di riduzione del tempo di recupero delle abilità combo.\n - Sconfiggere il balestriere Spacca-Ossa conferisce <@ba.vup>+60%</> di velocità di incremento dell'energia suprema.\n \n <@ba.info>- I nemici hanno statistiche migliori.</>\n <@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+  },
+  "indie_battletower009": {
+    "name": "Fronte sepolto: Normale",
+    "description": "Ho assistito a un funerale in un suolo oscuro e ribollente, dove le bestie sono spinte da ombre persistenti.",
+    "featureDesc": " <@ba.info>- I nemici hanno statistiche migliori.</>\n <@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+  },
+  "indie_battletower009_ex": {
+    "name": "Fronte sepolto: Brutale",
+    "description": "Ho assistito a un funerale in un suolo oscuro e ribollente, dove le bestie sono spinte da ombre persistenti.",
+    "featureDesc": " <@ba.info>- I nemici hanno statistiche migliori.</>\n <@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+  },
+  "indie_battletower009_s": {
+    "name": "Fronte sepolto: Difficile",
+    "description": "Ho assistito a un funerale in un suolo oscuro e ribollente, dove le bestie sono spinte da ombre persistenti.",
+    "featureDesc": " <@ba.info>- I nemici hanno statistiche migliori.</>\n <@ba.info>- È possibile usare solo gadget e consumabili di Cura PS.</>"
+  },
+  "indie_battletower010": {
+    "name": "Muro di scudi: Normale",
+    "description": "Ho osservato un'operazione di soccorso, dove una massa di \"scudi\" copriva il fronte della linea di battaglia.",
+    "featureDesc": " - Quando un prisma viene sconfitto, dopo un po' ne apparirà un altro sul campo di battaglia.\n - Ora è molto più difficile interrompere i prismi.\n - Sconfiggi l'ombra contaminante di bestiaspina per completare la fase. Sconfiggere i prismi non influisce sul completamento della fase.\n\n <@ba.info>- I nemici hanno statistiche migliori.</>\n <@ba.info>- È possibile utilizzare solo gadget e consumabili di Cura PS.</>"
+  },
+  "indie_battletower010_ex": {
+    "name": "Muro di scudi: Brutale",
+    "description": "Ho osservato un'operazione di soccorso, dove una massa di \"scudi\" copriva il fronte della linea di battaglia.",
+    "featureDesc": " - Quando un prisma viene sconfitto, dopo un po' ne apparirà un altro sul campo di battaglia.\n - Ora è molto più difficile interrompere i prismi.\n - Sconfiggi l'ombra contaminante di bestiaspina per completare la fase. Sconfiggere i prismi non influisce sul completamento della fase.\n\n <@ba.info>- I nemici hanno statistiche migliori.</>\n <@ba.info>- È possibile utilizzare solo gadget e consumabili di Cura PS.</>"
+  },
+  "indie_battletower010_s": {
+    "name": "Muro di scudi: Difficile",
+    "description": "Ho osservato un'operazione di soccorso, dove una massa di \"scudi\" copriva il fronte della linea di battaglia.",
+    "featureDesc": " - Quando un prisma viene sconfitto, dopo un po' ne apparirà un altro sul campo di battaglia.\n - Ora è molto più difficile interrompere i prismi.\n - Sconfiggi l'ombra contaminante di bestiaspina per completare la fase. Sconfiggere i prismi non influisce sul completamento della fase.\n\n <@ba.info>- I nemici hanno statistiche migliori.</>\n <@ba.info>- È possibile utilizzare solo gadget e consumabili di Cura PS.</>"
+  },
+  "indie_battletower011": {
+    "name": "Sotto pesante assedio: Normale",
+    "description": "Ho orchestrato un'imboscata, fatta di fango, sangue e ferite lacerate, dove il dolore alimenta una profonda angoscia.",
+    "featureDesc": " - Sul campo di battaglia è presente una <@ba.key>Zona di dolore</>. Un nemico riceve <@ba.vup>+10%</> di danni subiti per ogni secondo all'interno della zona, fino a un massimo di <@ba.vup>+150%</>. L'effetto negativo si riduce gradualmente quando il nemico lascia la <@ba.key>Zona di dolore</>.\n\n <@ba.info>- I nemici hanno statistiche migliori.</>\n <@ba.info>- È possibile utilizzare solo gadget e consumabili di Cura PS.</>"
+  },
+  "indie_battletower011_ex": {
+    "name": "Sotto pesante assedio: Brutale",
+    "description": "Ho orchestrato un'imboscata, fatta di fango, sangue e ferite lacerate, dove il dolore alimenta una profonda angoscia.",
+    "featureDesc": " - Sul campo di battaglia è presente una <@ba.key>Zona di dolore</>. Un nemico riceve <@ba.vup>+10%</> di danni subiti per ogni secondo all'interno della zona, fino a un massimo di <@ba.vup>+150%</>. L'effetto negativo si riduce gradualmente quando il nemico lascia la <@ba.key>Zona di dolore</>.\n\n <@ba.info>- I nemici hanno statistiche migliori.</>\n <@ba.info>- È possibile utilizzare solo gadget e consumabili di Cura PS.</>"
+  },
+  "indie_battletower011_s": {
+    "name": "Sotto pesante assedio: Difficile",
+    "description": "Ho orchestrato un'imboscata, fatta di fango, sangue e ferite lacerate, dove il dolore alimenta una profonda angoscia.",
+    "featureDesc": " - Sul campo di battaglia è presente una <@ba.key>Zona di dolore</>. Un nemico riceve <@ba.vup>+10%</> di danni subiti per ogni secondo all'interno della zona, fino a un massimo di <@ba.vup>+150%</>. L'effetto negativo si riduce gradualmente quando il nemico lascia la <@ba.key>Zona di dolore</>.\n\n <@ba.info>- I nemici hanno statistiche migliori.</>\n <@ba.info>- È possibile utilizzare solo gadget e consumabili di Cura PS.</>"
+  },
+  "indie_battletower012": {
+    "name": "Fervore inorganico: Normale",
+    "description": "Ho simulato un assalto. Gli Aggeloi non provano emozioni, ma le nostre avanguardie non conoscono la stanchezza.",
+    "featureDesc": " - Gli operatori entrano in battaglia con <@ba.key>energia suprema</> al massimo.\n\n <@ba.info>- I nemici hanno statistiche migliori.</>\n <@ba.info>- È possibile utilizzare solo gadget e consumabili di Cura PS.</>"
+  },
+  "indie_battletower012_ex": {
+    "name": "Fervore inorganico: Brutale",
+    "description": "Ho simulato un assalto. Gli Aggeloi non provano emozioni, ma le nostre avanguardie non conoscono la stanchezza.",
+    "featureDesc": " - Gli operatori entrano in battaglia con <@ba.key>energia suprema</> al massimo.\n\n <@ba.info>- I nemici hanno statistiche migliori.</>\n <@ba.info>- È possibile utilizzare solo gadget e consumabili di Cura PS.</>"
+  },
+  "indie_battletower012_s": {
+    "name": "Fervore inorganico: Difficile",
+    "description": "Ho simulato un assalto. Gli Aggeloi non provano emozioni, ma le nostre avanguardie non conoscono la stanchezza.",
+    "featureDesc": " - Gli operatori entrano in battaglia con <@ba.key>energia suprema</> al massimo.\n\n <@ba.info>- I nemici hanno statistiche migliori.</>\n <@ba.info>- È possibile utilizzare solo gadget e consumabili di Cura PS.</>"
+  },
+  "indie_battletower013": {
+    "name": "Decapitazione potente: Normale",
+    "description": "Ho preparato un assassinio: la forza viene caricata al massimo quando l'ascia viene sollevata sopra la testa.",
+    "featureDesc": " - I nemici utilizzano solo <@ba.key>abilità caricate</> e sono immuni ai danni da <@ba.key>abilità di combattimento</> mentre <@ba.key>stanno caricando</> le loro abilità. Le <@ba.key>abilità caricate</> dei nemici non possono essere interrotte dalle <@ba.key>abilità di combattimento</>.\n\n <@ba.info>- I nemici hanno statistiche migliori.</>\n <@ba.info>- È possibile utilizzare solo gadget e consumabili di Cura PS.</>"
+  },
+  "indie_battletower013_ex": {
+    "name": "Decapitazione potente: Brutale",
+    "description": "Ho preparato un assassinio: la forza viene caricata al massimo quando l'ascia viene sollevata sopra la testa.",
+    "featureDesc": " - I nemici utilizzano solo <@ba.key>abilità caricate</> e sono immuni ai danni da <@ba.key>abilità di combattimento</> mentre <@ba.key>stanno caricando</> le loro abilità. Le <@ba.key>abilità caricate</> dei nemici non possono essere interrotte dalle <@ba.key>abilità di combattimento</>.\n\n <@ba.info>- I nemici hanno statistiche migliori.</>\n <@ba.info>- È possibile utilizzare solo gadget e consumabili di Cura PS.</>"
+  },
+  "indie_battletower013_s": {
+    "name": "Decapitazione potente: Difficile",
+    "description": "Ho preparato un assassinio: la forza viene caricata al massimo quando l'ascia viene sollevata sopra la testa.",
+    "featureDesc": " - I nemici utilizzano solo <@ba.key>abilità caricate</> e sono immuni ai danni da <@ba.key>abilità di combattimento</> mentre <@ba.key>stanno caricando</> le loro abilità. Le <@ba.key>abilità caricate</> dei nemici non possono essere interrotte dalle <@ba.key>abilità di combattimento</>.\n\n <@ba.info>- I nemici hanno statistiche migliori.</>\n <@ba.info>- È possibile utilizzare solo gadget e consumabili di Cura PS.</>"
+  },
+  "indie_battletower014": {
+    "name": "Intrighi bestiali: Normale",
+    "description": "Ho organizzato un banchetto. Le bestie sono astute, ma sventare i loro complotti porterà ricompense certe.",
+    "featureDesc": " - La sconfitta di un ulularocce consente di recuperare <@ba.vup>10</> PA e conferisce a tutti gli operatori <@ba.vup>+15</> di intensità delle Arti.\n\n <@ba.info>- I nemici hanno statistiche migliori.</>\n <@ba.info>- È possibile utilizzare solo gadget e consumabili di Cura PS.</>"
+  },
+  "indie_battletower014_ex": {
+    "name": "Intrighi bestiali: Brutale",
+    "description": "Ho organizzato un banchetto. Le bestie sono astute, ma sventare i loro complotti porterà ricompense certe.",
+    "featureDesc": " - La sconfitta di un ulularocce consente di recuperare <@ba.vup>10</> PA e conferisce a tutti gli operatori <@ba.vup>+15</> di intensità delle Arti.\n\n <@ba.info>- I nemici hanno statistiche migliori.</>\n <@ba.info>- È possibile utilizzare solo gadget e consumabili di Cura PS.</>"
+  },
+  "indie_battletower014_s": {
+    "name": "Intrighi bestiali: Difficile",
+    "description": "Ho organizzato un banchetto. Le bestie sono astute, ma sventare i loro complotti porterà ricompense certe.",
+    "featureDesc": " - La sconfitta di un ulularocce consente di recuperare <@ba.vup>10</> PA e conferisce a tutti gli operatori <@ba.vup>+15</> di intensità delle Arti.\n\n <@ba.info>- I nemici hanno statistiche migliori.</>\n <@ba.info>- È possibile utilizzare solo gadget e consumabili di Cura PS.</>"
+  },
+  "indie_hard001": {
+    "name": "Protezioni furiose",
+    "description": "La foschia nevosa non sembra mai disperdersi in queste terre selvagge. Rumori nitidi e fragorosi si nascondono tra i gravi rombi. \nAscolta attentamente. Hai sentito... la pietra sfregare contro il metallo?",
+    "featureDesc": " - I nemici sono più forti."
+  },
+  "indie_hard001_s": {
+    "name": "Protezioni furiose: Agonia",
+    "description": "La foschia nevosa non sembra mai disperdersi in queste terre selvagge. Rumori nitidi e fragorosi si nascondono tra i gravi rombi. \nAscolta attentamente. Hai sentito... la pietra sfregare contro il metallo?",
+    "featureDesc": " - I nemici sono più forti.\n - I nemici sono più rapidi e si riprendono più velocemente dal Vacillamento.\n - Quando un nemico viene sconfitto, gli attacchi degli avversari rimanenti diventano più difficili da interrompere, la loro potenza d'attacco aumenta progressivamente e i loro PS vengono ripristinati continuamente.\n\n <@ba.info>- Gadget e consumabili non possono essere utilizzati.</>"
+  },
+  "indie_hard002": {
+    "name": "Lampi e ombre",
+    "description": "L'esplosione assordante aveva ravvivato tizzoni di guerra del secolo scorso. Ciò nonostante, la Cintura civilizzata era sopravvissuta al bombardamento aggeloide. \n\"L'umanità ha rischiato l'estinzione, e non solo per via degli Aggeloi. È questa la vera tragedia.\"",
+    "featureDesc": " - I nemici sono più forti."
+  },
+  "indie_hard002_s": {
+    "name": "Lampi e ombre: Agonia",
+    "description": "L'esplosione assordante aveva ravvivato tizzoni di guerra del secolo scorso. Ciò nonostante, la Cintura civilizzata era sopravvissuta al bombardamento aggeloide. \n\"L'umanità ha rischiato l'estinzione, e non solo per via degli Aggeloi. È questa la vera tragedia.\"",
+    "featureDesc": " - I nemici sono più forti.\n - I nemici si riprendono più velocemente dal Vacillamento, i loro attacchi sono più difficili da interrompere e hanno una portata notevolmente maggiore.\n - Telson pesante α ottiene a intervalli regolari un'immunità temporanea a tutti i tipi di danni. Sconfiggi tutti i telson α per rimuovere questo potenziamento.\n \n <@ba.info>- Gadget e consumabili non possono essere utilizzati.</>"
+  },
+  "indie_hard003": {
+    "name": "Indistruttibile",
+    "description": "L'enorme rottame all'orizzonte annunciò i grandi eventi del passato. Nelle vicinanze, entità disassemblate cominciarono a fondersi e ne nacquero di nuove, le quali proruppero in ruggiti strazianti. \nLa terra iniziò a tremare sotto i pesanti passi degli Aggeloi.",
+    "featureDesc": " - I nemici sono più forti."
+  },
+  "indie_hard003_s": {
+    "name": "Indistruttibile: Agonia",
+    "description": "L'enorme rottame all'orizzonte annunciò i grandi eventi del passato. Nelle vicinanze, entità disassemblate cominciarono a fondersi e ne nacquero di nuove, le quali proruppero in ruggiti strazianti. \nLa terra iniziò a tremare sotto i pesanti passi degli Aggeloi.",
+    "featureDesc": " - Il tasso di rigenerazione del Vigore è notevolmente ridotto.\n - I nemici sono più forti e immuni al Vacillamento.\n - Il chrysopolis ambulante si riprende più velocemente dopo aver esposto un punto debole. Se il punto debole esposto non viene distrutto in tempo, il chrysopolis ambulante ottiene un immenso potenziamento all'attacco. Distruggere il punto debole applica Vacillamento al chrysopolis ambulante.\n\n <@ba.info>- Gadget e consumabili non possono essere utilizzati.</>"
+  },
+  "indie_hard004": {
+    "name": "Ascia e balestra",
+    "description": "I guerrieri Spacca-Ossa hanno sventrato i deboli e sono saliti sulla piattaforma armati di ascia e balestra. Sconfiggili e seppellisci l'antica sofferenza e la nuova ambizione. \n\"Leggenda? Come hai ricevuto questo appellativo?\"",
+    "featureDesc": " - I 2 nemici d'élite combatteranno in squadra."
+  },
+  "indie_hard004_s": {
+    "name": "Ascia e balestra: Agonia",
+    "description": "I guerrieri Spacca-Ossa hanno sventrato i deboli e sono saliti sulla piattaforma armati di ascia e balestra. Sconfiggili e seppellisci l'antica sofferenza e la nuova ambizione. \n\"Leggenda? Come hai ricevuto questo appellativo?\"",
+    "featureDesc": " - I 2 nemici d'élite combatteranno in squadra.\n - Quando entrambi i nemici d'élite sono sul campo di battaglia, condividono i danni subiti.\n \n <@ba.info>- Gadget e consumabili non possono essere utilizzati.</>"
+  },
+  "indie_hard005": {
+    "name": "Strategie poco ortodosse",
+    "description": "I dispositivi di comunicazione stridevano con forza, mentre i droni si schiantavano a terra. I Fenditerra si girarono per guardare e mormorarono desideri di \"benedizioni\" e \"vendetta\". \nAlle loro spalle, figure scure troneggiavano nella foresta di cataste.",
+    "featureDesc": " - I nemici non possono muoversi, ma sono più difficili da interrompere e il loro attacco aumenta progressivamente."
+  },
+  "indie_hard005_s": {
+    "name": "Strategie poco ortodosse: Agonia",
+    "description": "I dispositivi di comunicazione stridevano con forza, mentre i droni si schiantavano a terra. I Fenditerra si girarono per guardare e mormorarono desideri di \"benedizioni\" e \"vendetta\". \nAlle loro spalle, figure scure troneggiavano nella foresta di cataste.",
+    "featureDesc": " - I nemici non possono muoversi, ma sono più difficili da interrompere e il loro attacco aumenta progressivamente.\n - L'attacco dei nemici viene potenziato molto più rapidamente.\n\n <@ba.info>- Gadget e consumabili non possono essere utilizzati.</>"
+  },
+  "indie_hard006": {
+    "name": "Sopravvivi al gas",
+    "description": "L'enorme fabbrica vomitava un denso gas nocivo dalle sue tubature. Chi sta cercando di nascondere i propri segreti qui? \n\"Sfoderate le vostre lame e sollevate quegli scudi! Fate ruggire le bestie feroci della guerra! E riscaldate quella foschia!\"",
+    "featureDesc": " - Attenzione: la nebbia infligge continuamente danni a tutti gli operatori.\n- Quando l'operatore controllato riceve Cura PS, il resto della squadra riceve il 70% di quella Cura PS."
+  },
+  "indie_hard006_s": {
+    "name": "Sopravvivi al gas: Agonia",
+    "description": "L'enorme fabbrica vomitava un denso gas nocivo dalle sue tubature. Chi sta cercando di nascondere i propri segreti qui? \n\"Sfoderate le vostre lame e sollevate quegli scudi! Fate ruggire le bestie feroci della guerra! E riscaldate quella foschia!\"",
+    "featureDesc": " - Attenzione: la nebbia infligge continuamente danni a tutti gli operatori.\n - La nebbia infligge più danni e appaiono nuovi nemici.\n - Quando l'operatore controllato riceve Cura PS, il resto della squadra riceve il 50% di quella Cura PS.\n\n <@ba.info>- Gadget e consumabili non possono essere utilizzati.</>"
+  },
+  "indie_hard007": {
+    "name": "Fiamma ululante",
+    "description": "Contamina i cieli! Contamina i fulmini che nessuno si aspettava! E CONTAMINA le fiamme che piovono all'improvviso!",
+    "featureDesc": " - I nemici entrano regolarmente in stato di <@ba.key>Furia</>, durante il quale continuano ad auto-applicarsi <@ba.fire>Afflizione da fuoco</> per aumentare il proprio attacco e ridurre i danni subiti in base al numero di accumuli di Afflizione da fuoco.\n\n <@ba.info>- I nemici hanno la stessa resistenza a tutti gli elementi.</>"
+  },
+  "indie_hard007_s": {
+    "name": "Fiamma ululante: Agonia",
+    "description": "Contamina i cieli! Contamina i fulmini che nessuno si aspettava! E CONTAMINA le fiamme che piovono all'improvviso!",
+    "featureDesc": " - I nemici entrano regolarmente in stato di <@ba.key>Furia</>, durante il quale continuano ad attivare <@ba.fire>Afflizione da fuoco</> per aumentare il proprio attacco e ridurre i danni subiti in base al numero di accumuli di Afflizione da fuoco.\n - Lo stato di <@ba.key>Furia</> <@ba.key>fa sì che i PA degli operatori non vengano più rigenerati</>.\n\n <@ba.info>- Gadget e consumabili non possono essere usati.</>\n <@ba.info>- I nemici hanno la stessa resistenza a tutti gli elementi.</>"
+  },
+  "indie_hard008": {
+    "name": "Mare di disgusto",
+    "description": "C'è un antico odio furente. Gli abbandonati vagano senza sosta per la terra desolata... La causa della loro furia è stata dimenticata con il tempo, ma ogni creatura consumata dall'odio è capace di trarre energia dall'infinito mare di caos.",
+    "featureDesc": " - I nemici sono più forti.\n - I nemici d'élite combatteranno in squadra.\n\n <@ba.info>- I nemici hanno la stessa resistenza a tutti gli elementi.</>"
+  },
+  "indie_hard008_s": {
+    "name": "Mare di disgusto: Agonia",
+    "description": "C'è un antico odio furente. Gli abbandonati vagano senza sosta per la terra desolata... La causa della loro furia è stata dimenticata con il tempo, ma ogni creatura consumata dall'odio è capace di trarre energia dall'infinito mare di caos.",
+    "featureDesc": " - I nemici sono più forti e <@ba.key>più difficili da interrompere</>.\n - I nemici d'élite combatteranno in squadra e compariranno nemici supplementari.\n\n <@ba.info>- Gadget e consumabili non possono essere utilizzati.</>\n <@ba.info>- I nemici hanno la stessa resistenza a tutti gli elementi.</>"
+  },
+  "indie_hard009": {
+    "name": "Punto di fusione della carne",
+    "description": "BRUCIA! Lascia che tutto bruci! Rovescia la torre e fondi la nave! Versa il nostro sangue nel bollente ferro fuso e usalo per purificare Talos-II!",
+    "featureDesc": " - I nemici sono più forti.\n - Di quando in quando compariranno origilumache ardifoschia esplosive.\n\n <@ba.info>- I nemici hanno la stessa resistenza a tutti gli elementi.</>"
+  },
+  "indie_hard009_s": {
+    "name": "Punto di fusione della carne: Agonia",
+    "description": "BRUCIA! Lascia che tutto bruci! Rovescia la torre e fondi la nave! Versa il nostro sangue nel bollente ferro fuso e usalo per purificare Talos-II!",
+    "featureDesc": " - I nemici sono più forti e <@ba.key>compariranno nemici supplementari</>.\n - Di quando in quando compariranno origilumache ardifoschia esplosive.\n - <@ba.key>Gli operatori non possono eseguire schivate perfette</>.\n\n <@ba.info>- Gadget e consumabili non possono essere utilizzati.</>\n <@ba.info>- I nemici hanno la stessa resistenza a tutti gli elementi.</>"
+  },
+  "indie_hard010": {
+    "name": "Ondata di dolore",
+    "description": "L'agonia è precipitata e si è accumulata in questo posto per anni. Guarda come le acque furiose diffrangono la luce. L'intento omicida sprigionato è privo di emozioni.",
+    "featureDesc": " - I nemici non attaccano attivamente, ma si spostano verso il centro del campo di battaglia ed <@ba.key>esplodono</> per infliggere danni ingenti a tutti gli operatori.\n - Alcuni nemici sono molto più difficili da interrompere.\n\n <@ba.info>- I nemici hanno la stessa resistenza a tutti gli elementi.</>"
+  },
+  "indie_hard010_s": {
+    "name": "Ondata di dolore: Agonia",
+    "description": "L'agonia è precipitata e si è accumulata in questo posto per anni. Guarda come le acque furiose diffrangono la luce. L'intento omicida sprigionato è privo di emozioni.",
+    "featureDesc": " - I nemici non attaccano attivamente, ma si spostano verso il centro del campo di battaglia ed <@ba.key>esplodono</> per infliggere danni ingenti a tutti gli operatori.\n - Alcuni nemici sono molto più difficili da interrompere.\n\n <@ba.info>- Gadget e consumabili non possono essere utilizzati.</>\n <@ba.info>- I nemici hanno la stessa resistenza a tutti gli elementi.</>"
+  },
+  "indie_hard011": {
+    "name": "Connessione criostatica",
+    "description": "La loro unione nasce dal gelo estremo. Le onde impetuose e le torbide correnti sottomarine offrono loro un nome e un significato comune dietro la loro creazione.",
+    "featureDesc": " - I nemici sono più forti.\n\n <@ba.info>- I nemici hanno la stessa resistenza a tutti gli elementi.</>"
+  },
+  "indie_hard011_s": {
+    "name": "Connessione criostatica: Agonia",
+    "description": "La loro unione nasce dal gelo estremo. Le onde impetuose e le torbide correnti sottomarine offrono loro un nome e un significato comune dietro la loro creazione.",
+    "featureDesc": " - I nemici sono più forti.\n - Quando potenziati, tutti i danni inflitti dai nemici applicano istantaneamente <@ba.cryst>Solidificazione</> agli operatori.\n\n <@ba.info>- Gadget e consumabili non possono essere utilizzati.</>\n <@ba.info>- I nemici hanno la stessa resistenza a tutti gli elementi.</>"
+  },
+  "indie_hard012": {
+    "name": "Sangue corrotto",
+    "description": "Si ingozzarono del sudiciume delle terre fino a scoppiare e sparsero il loro sangue denso e fetido, un icore maledetto che intrappola chiunque posi lo sguardo su di esso.",
+    "featureDesc": " - I nemici sono più forti.\n - La bestiaspina imbevuta evoca bestiespina regolarmente.\n\n <@ba.info>- I nemici hanno la stessa resistenza a tutti gli elementi.</>"
+  },
+  "indie_hard012_s": {
+    "name": "Sangue corrotto: Agonia",
+    "description": "Si ingozzarono del sudiciume delle terre fino a scoppiare e sparsero il loro sangue denso e fetido, un icore maledetto che intrappola chiunque posi lo sguardo su di esso.",
+    "featureDesc": " - I nemici sono più forti.\n - La bestiaspina imbevuta evoca bestiespina regolarmente; quando ha pochi PS, <@ba.key>evoca ancora più</> bestiespina.\n\n <@ba.info>- Gadget e consumabili non possono essere utilizzati.</>\n <@ba.info>- I nemici hanno la stessa resistenza a tutti gli elementi.</>"
+  },
+  "indie_hard013": {
+    "name": "Orizzonte silenzioso",
+    "description": "La speranza non tornerà più su questa terra. Sia le bestie che le persone sono marcite, lasciando solo esseri dallo sguardo assente che trascinano i loro piedi attraverso la densa brumafiamma che brucia lentamente.",
+    "featureDesc": " - I nemici hanno statistiche migliori.\n - I nemici ottengono costantemente ATT.\n\n <@ba.info>- I nemici hanno la stessa resistenza a tutti gli elementi.</>"
+  },
+  "indie_hard013_s": {
+    "name": "Orizzonte silenzioso: Agonia",
+    "description": "La speranza non tornerà più su questa terra. Sia le bestie che le persone sono marcite, lasciando solo esseri dallo sguardo assente che trascinano i loro piedi attraverso la densa brumafiamma che brucia lentamente.",
+    "featureDesc": " - I nemici hanno statistiche migliori.\n - I nemici ottengono costantemente ATT.\n\n <@ba.info>- Gadget e consumabili non possono essere utilizzati.</>\n <@ba.info>- I nemici hanno la stessa resistenza a tutti gli elementi.</>"
+  },
+  "indie_hard014": {
+    "name": "Mare inaridito",
+    "description": "Le torbide correnti prima o poi si placheranno. Le bestie dovranno aspettare finché la pesante grande ascia non frantumerà le antiche rovine decadenti e non aprirà una via verso nuove possibilità.",
+    "featureDesc": " - I nemici hanno statistiche migliori.\n\n <@ba.info>- I nemici hanno la stessa resistenza a tutti gli elementi.</>"
+  },
+  "indie_hard014_s": {
+    "name": "Mare inaridito: Agonia",
+    "description": "Le torbide correnti prima o poi si placheranno. Le bestie dovranno aspettare finché la pesante grande ascia non frantumerà le antiche rovine decadenti e non aprirà una via verso nuove possibilità.",
+    "featureDesc": " - I nemici hanno statistiche migliori.\n\n <@ba.info>- Gadget e consumabili non possono essere utilizzati.</>\n <@ba.info>- I nemici hanno la stessa resistenza a tutti gli elementi.</>"
+  },
+  "indie_hard015": {
+    "name": "Abisso subacqueo",
+    "description": "Sotto le acque mute, in cui correnti oscure e gelide scorrono in silenzio, esistono abissi dove si annidano costrutti inorganici.",
+    "featureDesc": " - I nemici sono più forti.\n - L'effige evoca più Aggeloi.\n\n <@ba.info>- I nemici hanno la stessa resistenza a tutti gli elementi.</>"
+  },
+  "indie_hard015_s": {
+    "name": "Abisso subacqueo: Agonia",
+    "description": "Sotto le acque mute, in cui correnti oscure e gelide scorrono in silenzio, esistono abissi dove si annidano costrutti inorganici.",
+    "featureDesc": " - I nemici sono più forti.\n - L'effige evoca più Aggeloi.\n\n <@ba.info>- Gadget e consumabili non possono essere utilizzati.</>\n <@ba.info>- I nemici hanno la stessa resistenza a tutti gli elementi.</>"
+  },
+  "indie_hard016": {
+    "name": "Vortice rituale",
+    "description": "Una luce illuminò la vista della gente mentre fissavano quel vortice di rabbia e disperazione. Le loro grida si mescolavano al fragore assordante mentre il custode del faro attendeva su quelle terre devastate.",
+    "featureDesc": " - A intervalli regolari, il piromante Spacca-Ossa evoca le sue <@ba.key>copie</> e canalizza la sua abilità suprema per un certo lasso di tempo. Una volta completata la canalizzazione, l'abilità suprema infligge danni ingenti a tutti gli operatori. Sconfiggi tutte le <@ba.key>copie</> per interrompere l'abilità suprema del piromante.\n - I nemici subiscono danni aggiuntivi dalle <@ba.key>mosse letali</>; inoltre, la durata del Vacillamento dei nemici è notevolmente ridotta.\n \n <@ba.info>- I nemici hanno la stessa resistenza a tutti gli elementi.</>"
+  },
+  "indie_hard016_s": {
+    "name": "Vortice rituale: Agonia",
+    "description": "Una luce illuminò la vista della gente mentre fissavano quel vortice di rabbia e disperazione. Le loro grida si mescolavano al fragore assordante mentre il custode del faro attendeva su quelle terre devastate.",
+    "featureDesc": " - A intervalli regolari, il piromante Spacca-Ossa evoca le sue <@ba.key>copie</> e canalizza la sua abilità suprema per un certo lasso di tempo. Una volta completata la canalizzazione, l'abilità suprema infligge danni ingenti a tutti gli operatori. Sconfiggi tutte le <@ba.key>copie</> per interrompere l'abilità suprema del piromante.\n - I nemici subiscono danni aggiuntivi dalle <@ba.key>mosse letali</>; inoltre, la durata del Vacillamento dei nemici è notevolmente ridotta.\n\n <@ba.info>- Gadget e consumabili non possono essere utilizzati.</> \n<@ba.info>- I nemici hanno la stessa resistenza a tutti gli elementi.</>"
+  },
+  "indie_hard017": {
+    "name": "Æthillu agghiacciante",
+    "description": "La polvere dell'oblio offusca ogni sguardo, mentre il canto funebre si fa più intenso a ogni nota. Il corpo dell'Æthillu agghiacciante è stato sacrificato, così che la morte possa avvolgere il mondo intero.",
+    "featureDesc": " - A intervalli regolari, l'operatore controllato verrà <@ba.key>sigillato</>.\n \n <@ba.info>- I nemici hanno la stessa resistenza a tutti gli elementi.</>"
+  },
+  "indie_hard017_s": {
+    "name": "Æthillu agghiacciante: Agonia",
+    "description": "La polvere dell'oblio offusca ogni sguardo, mentre il canto funebre si fa più intenso a ogni nota. Il corpo dell'Æthillu agghiacciante è stato sacrificato, così che la morte possa avvolgere il mondo intero.",
+    "featureDesc": " - A intervalli regolari, l'operatore controllato verrà <@ba.key>sigillato</>; questo <@ba.key>sigillo</> dura molto più a lungo.\n\n<@ba.info>- Gadget e consumabili non possono essere utilizzati.</>\n<@ba.info>- I nemici hanno la stessa resistenza a tutti gli elementi.</>"
+  },
+  "indie_hard018": {
+    "name": "Percussione scatenata",
+    "description": "In queste terre viene attirata un'entità roboante che calpesta i morti e il loro atroce tormento. La guerra tra la vita e la morte non avrà mai fine.",
+    "featureDesc": " - Quando è Infuriato, il batticielo crea degli scudi protettivi. Ogni <@ba.key>Reazione delle Arti</> o <@ba.phy>stato fisico</> inflitto dagli operatori rimuove 1 accumulo di scudo.\n\n<@ba.info>- I nemici hanno la stessa resistenza a tutti gli elementi.</>"
+  },
+  "indie_hard018_s": {
+    "name": "Percussione scatenata: Agonia",
+    "description": "In queste terre viene attirata un'entità roboante che calpesta i morti e il loro atroce tormento. La guerra tra la vita e la morte non avrà mai fine.",
+    "featureDesc": " - Quando è calmo, il batticielo crea un <@ba.key>vortice</> ogni volta che infligge danni all'operatore controllato.\nQuando è Infuriato, il batticielo assorbe tutti i <@ba.key>vortici</> sul campo di battaglia per creare scudi protettivi. Ogni <@ba.key>vortice</> assorbito aumenta il numero di accumuli di scudo. Ogni <@ba.key>Reazione delle Arti</> o <@ba.phy>stato fisico</> inflitto dagli operatori rimuove 1 accumulo di scudo.\n\n<@ba.info>- Gadget e consumabili non possono essere utilizzati.</>\n<@ba.info>- I nemici hanno la stessa resistenza a tutti gli elementi.</>"
+  },
+  "indie_hard019": {
+    "name": "Falange di spine",
+    "description": "Affilate le lance, rinforzate gli scudi. Osservate il vostro odio e ascoltate la vostra debolezza. Poi marciate e affondate le armi nelle viscere della morte.",
+    "featureDesc": " - I nemici hanno statistiche migliori.\n - I prismi aumenteranno l'attacco degli edri.\n - I prismi ora sono molto più difficili da interrompere.\n \n <@ba.info>- I nemici hanno la stessa resistenza a tutti gli elementi.</>"
+  },
+  "indie_hard019_s": {
+    "name": "Falange di spine: Agonia",
+    "description": "Affilate le lance, rinforzate gli scudi. Osservate il vostro odio e ascoltate la vostra debolezza. Poi marciate e affondate le armi nelle viscere della morte.",
+    "featureDesc": " - I nemici hanno statistiche migliori.\n- I prismi aumenteranno l'attacco degli edri.\n- I prismi ora sono molto più difficili da interrompere.\n\n<@ba.info>- Gadget e consumabili non possono essere utilizzati.</>\n<@ba.info>- I nemici hanno la stessa resistenza a tutti gli elementi.</>"
+  },
+  "indie_hard020": {
+    "name": "Occhi dal potere solvente",
+    "description": "I fiumi si fondono in un gelido torrente di sangue. Dalle profondità, incise come ferite, e sotto le correnti cupe e spettrali, occhi dal potere solvente continuano a scrutare.",
+    "featureDesc": " - I nemici hanno statistiche migliori.\n- Tra le forze nemiche è presente l'attraversamarea δ.\n\n<@ba.info>- I nemici hanno la stessa resistenza a tutti gli elementi.</>"
+  },
+  "indie_hard020_s": {
+    "name": "Occhi dal potere solvente: Agonia",
+    "description": "I fiumi si fondono in un gelido torrente di sangue. Dalle profondità, incise come ferite, e sotto le correnti cupe e spettrali, occhi dal potere solvente continuano a scrutare.",
+    "featureDesc": " - I nemici hanno statistiche migliori.\n- Tra le forze nemiche è presente l'attraversamarea δ.\n\n<@ba.info>- Gadget e consumabili non possono essere utilizzati.</>\n<@ba.info>- I nemici hanno la stessa resistenza a tutti gli elementi.</>"
+  },
+  "indie_hard021": {
+    "name": "Guado del manto rastrellato",
+    "description": "Gli artigli affilati sono stati nascosti alla vista, mentre la mandria in fuga avanza e i fiumi si infrangono. I vinti se ne vanno e prendono il volo, ma i giovani dimenticano di ricambiare l'odio.",
+    "featureDesc": " - I nemici hanno statistiche migliori.\n- La rastrobestia abbagliante è permanentemente <@ba.key>Infuriata</> e il suo attacco aumenta man mano che i suoi PS diminuiscono.\n\n<@ba.info>- I nemici hanno la stessa resistenza a tutti gli elementi.</>"
+  },
+  "indie_hard021_s": {
+    "name": "Guado del manto rastrellato: Agonia",
+    "description": "Gli artigli affilati sono stati nascosti alla vista, mentre la mandria in fuga avanza e i fiumi si infrangono. I vinti se ne vanno e prendono il volo, ma i giovani dimenticano di ricambiare l'odio.",
+    "featureDesc": " - I nemici hanno statistiche migliori.\n- La rastrobestia abbagliante è permanentemente <@ba.key>Infuriata</> e il suo attacco aumenta man mano che i suoi PS diminuiscono.\n\n<@ba.info>- Gadget e consumabili non possono essere utilizzati.</>\n<@ba.info>- I nemici hanno la stessa resistenza a tutti gli elementi.</>"
+  },
+  "indie_hard022": {
+    "name": "Brumafiamma scuotiterra",
+    "description": "\"Impugno il BASTONE! La brumafiamma è il mio MARTELLO! Queste montagne sono I TAMBURI e IO! SONO! IL! TAMBURELLOOO!\"",
+    "featureDesc": " - Il piromante Spacca-Ossa lancia costantemente brumafiamma e infligge danni a tutti gli operatori. È anche molto difficile da interrompere e immune ai danni da Vacillamento.\n - Quando il piromante Spacca-Ossa subisce danni da <@ba.key>Esplosione delle Arti</>, subisce danni aggiuntivi pari a una percentuale dei suoi PS massimi e viene temporaneamente <@ba.key>sigillato</>.\n - Il piromante Spacca-Ossa continuerà a evocare predoni d'élite e tendi-agguati d'élite.\n - Sconfiggere un nemico con un'<@ba.key>Afflizione da Arti</> applica anche 1 accumulo della stessa <@ba.key>Afflizione da Arti</> a tutti gli altri nemici.\n\n <@ba.info>- I nemici hanno la stessa resistenza contro ogni elemento.</>"
+  },
+  "indie_hard022_s": {
+    "name": "Brumafiamma scuotiterra: Agonia",
+    "description": "\"Impugno il BASTONE! La brumafiamma è il mio MARTELLO! Queste montagne sono I TAMBURI e IO! SONO! IL! TAMBURELLOOO!\"",
+    "featureDesc": " - Il piromante Spacca-Ossa lancia costantemente brumafiamma e infligge danni a tutti gli operatori. Quando i suoi PS sono bassi, il suo brumafiamma applica anche <@ba.fire>Afflizione da fuoco</>. È anche molto difficile da interrompere e immune ai danni da Vacillamento.\n - Quando il piromante Spacca-Ossa subisce danni da <@ba.key>Esplosione delle Arti</>, subisce danni aggiuntivi pari a una percentuale dei suoi PS massimi e viene temporaneamente <@ba.key>sigillato</>.\n - Il piromante Spacca-Ossa continuerà a radunare predoni d'élite e tendi-agguati d'élite.\n - Sconfiggere un nemico con un'<@ba.key>Afflizione da Arti</> applica anche 1 accumulo della stessa <@ba.key>Afflizione da Arti</> a tutti gli altri nemici.\n\n <@ba.info>- Gadget e consumabili non possono essere usati.</>\n <@ba.info>- I nemici hanno la stessa resistenza contro ogni elemento.</>"
+  },
+  "indie_hard023": {
+    "name": "Orso e amici",
+    "description": "Le persone hanno abilità di ogni tipo, ma le bestie hanno trucchi di ogni sorta. Se ti interessa scoprire chi è il migliore, il palco è tutto tuo.",
+    "featureDesc": " - <@ba.key>Gli operatori non possono più rigenerare PA</>.\n - L'operatore controllato recupererà parzialmente i PA calpestando le bucce di banana lanciate dagli ulularocce.\n - L'orso dai denti a sciabola corazzato userà periodicamente la sua abilità suprema. L'abilità suprema rimuove tutte le bucce di banana dal campo di battaglia e infligge danni continui a tutti gli operatori. Mentre usa la sua abilità suprema, l'orso dai denti a sciabola corazzato ottiene un'elevata riduzione dei danni. Le <@ba.key>Interruzioni degli attacchi</> possono fermare l'uso di questa abilità suprema.\n\n <@ba.info>- I nemici hanno la stessa resistenza a tutti gli elementi.</>"
+  },
+  "indie_hard023_s": {
+    "name": "Orso e amici: Agonia",
+    "description": "Le persone hanno abilità di ogni tipo, ma le bestie hanno trucchi di ogni sorta. Se ti interessa scoprire chi è il migliore, il palco è tutto tuo.",
+    "featureDesc": " - <@ba.key>Gli operatori non possono più rigenerare PA</>.\n - L'operatore controllato recupererà parzialmente i PA calpestando le bucce di banana lanciate dagli ulularocce.\n - L'orso dai denti a sciabola corazzato userà periodicamente la sua abilità suprema. L'abilità suprema rimuove tutte le bucce di banana dal campo di battaglia e infligge danni continui a tutti gli operatori. Mentre usa la sua abilità suprema, l'orso dai denti a sciabola corazzato ottiene un'elevata riduzione dei danni. <@ba.key>Più interruzioni</> possono fermare l'uso di questa abilità suprema.\n\n <@ba.info>- Gadget e consumabili non possono essere usati.</>\n <@ba.info>- I nemici hanno la stessa resistenza a tutti gli elementi.</>"
+  },
+  "indie_hard024": {
+    "name": "Re della rupe",
+    "description": "È raro vedere gli ulularocce contendersi la supremazia. Il vincitore sale al trono, gli sconfitti finiscono a brandelli... Prepara pistole e lame per il nuovo Re della rupe.",
+    "featureDesc": " - La durata di <@ba.fire>Combustione</>, <@ba.pulse>Elettrificazione</>, <@ba.natur>Corrosione</>, <@ba.cryst>Solidificazione</> e <@ba.phy>Sfondamento</> applicati all'ulularupi diventa permanente. Gli effetti di <@ba.fire>Combustione</>, <@ba.pulse>Elettrificazione</>, <@ba.natur>Corrosione</>, <@ba.cryst>Infrangimento</> e <@ba.phy>Sfondamento</> applicati all'ulularupi diventano più forti. Anche Reazione delle Arti e Stato fisico persistono una volta <@ba.key>consumati</>.\n - L'ulularupi emetterà periodicamente un ruggito furioso. Il ruggito furioso <@ba.key>stordisce</> tutti gli operatori.\n\n <@ba.info>- I nemici hanno la stessa resistenza contro ogni elemento.</>"
+  },
+  "indie_hard024_s": {
+    "name": "Re della rupe: Agonia",
+    "description": "È raro vedere gli ulularocce contendersi la supremazia. Il vincitore sale al trono, gli sconfitti finiscono a brandelli... Prepara pistole e lame per il nuovo Re della rupe.",
+    "featureDesc": " - La durata di <@ba.fire>Combustione</>, <@ba.pulse>Elettrificazione</>, <@ba.natur>Corrosione</>, <@ba.cryst>Solidificazione</> e <@ba.phy>Sfondamento</> applicati all'ulularupi diventa permanente. Gli effetti di <@ba.fire>Combustione</>, <@ba.pulse>Elettrificazione</>, <@ba.natur>Corrosione</>, <@ba.cryst>Infrangimento</> e <@ba.phy>Sfondamento</> applicati all'ulularupi diventano più forti. Anche Reazione delle Arti e Stato fisico persistono una volta <@ba.key>consumati</>.\n - L'ulularupi emetterà periodicamente un ruggito furioso. Il ruggito furioso <@ba.key>stordisce</> tutti gli operatori. Con il progredire della battaglia, la durata dello <@ba.key>Stordimento</> applicato dal ruggito furioso aumenta gradualmente.\n\n <@ba.info>- Gadget e consumabili non possono essere usati.</>\n <@ba.info>- I nemici hanno la stessa resistenza contro ogni elemento.</>"
+  },
+  "indie_hard025": {
+    "name": "Visitatori di Qingbo",
+    "description": "La banda della Palizzata di Qingbo intona il coro di lame. Non più in cerca di una casa perduta, con spirito eroico e ambizioni selvagge, avanzarono fino alla vetta.",
+    "featureDesc": " - Sconfiggere il nemico ripristina parzialmente i PS di tutti gli altri nemici e ne aumenta permanentemente ATT e PS massimi.\n\n <@ba.info>- I nemici hanno la stessa resistenza contro ogni elemento.</>"
+  },
+  "indie_hard025_s": {
+    "name": "Visitatori di Qingbo: Agonia",
+    "description": "La banda della Palizzata di Qingbo intona il coro di lame. Non più in cerca di una casa perduta, con spirito eroico e ambizioni selvagge, avanzarono fino alla vetta.",
+    "featureDesc": " - Sconfiggere il nemico ripristina parzialmente i PS di tutti gli altri nemici e ne aumenta permanentemente ATT e PS massimi.\n\n <@ba.info>- Gadget e consumabili non possono essere usati.</>\n <@ba.info>- I nemici hanno la stessa resistenza contro ogni elemento.</>"
+  }
+}

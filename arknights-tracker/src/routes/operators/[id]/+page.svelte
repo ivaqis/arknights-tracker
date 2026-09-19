@@ -83,7 +83,7 @@
 
         lang = lang || "en";
 
-        const safeLang = lang.toLowerCase().replace("-", "");
+        const safeLang = lang.toLowerCase().startsWith("en") ? "en" : lang.toLowerCase().replace("-", "");
 
         const dataPath = `/src/lib/data/charactersData/${targetId}.json`;
         if (dataModules[dataPath]) {

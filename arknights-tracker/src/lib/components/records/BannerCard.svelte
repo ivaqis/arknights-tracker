@@ -15,6 +15,13 @@
   import { pullData } from "$lib/stores/pulls";
   import { getWeaponCategory } from "$lib/utils/importUtils";
   import { slide } from "svelte/transition";
+  import { currentLocale, currentUiLocale, normalizeLocale } from "$lib/stores/locale";
+  import { recordsExcludedBanners } from "$lib/stores/filterStore";
+
+  import Button from "$lib/components/Button.svelte";
+  import Image from "$lib/components/Image.svelte";
+  import Icon from "$lib/components/Icon.svelte";
+  import Tooltip from "$lib/components/Tooltip.svelte";
 
   export let bannerId;
   export let titleKey;
@@ -199,7 +206,7 @@
     if (isWeaponCard || isNewPlayer) return 0;
     return pulls.filter(p => !p.isFree).length;
   })();
-  $: spent = (billableCount * 500).toLocaleString("ru-RU");
+  $: spent = (billableCount * 500).toLocaleString(normalizeLocale($currentUiLocale));
   $: count6 = stats.count6 || 0;
   $: count5 = stats.count5 || 0;
   $: percent6 = stats.percent6 || "0.00";
@@ -332,8 +339,7 @@
     if (!dateStr) return "";
     const parsed = new Date(dateStr.replace(" ", "T"));
     if (isNaN(parsed.getTime())) return "";
-    let loc = locale || "en";
-    if (loc === "my") loc = "ms-MY";
+    let loc = normalizeLocale(locale);
     try {
       return new Intl.DateTimeFormat(loc, {
         day: "2-digit",
@@ -360,7 +366,7 @@
     const b = banners.find((x) => x.id === bId);
     const label = b ? ($t(`banners.${b.id}`) !== `banners.${b.id}` ? $t(`banners.${b.id}`) : b.name) : bId;
     const startFormatted = b ? formatBannerDate(b.startTime, $currentUiLocale) : "";
-    const endFormatted = b ? (b.endTime ? formatBannerDate(b.endTime, $currentUiLocale) : ($t("permanent") || "Permanent")) : "";
+    const endFormatted = b ? (b.endTime ? formatBannerDate(b.endTime, $currentUiLocale) : $t("permanent")) : "";
     const subLabel = startFormatted && endFormatted ? `${startFormatted} - ${endFormatted}` : "";
     return {
       value: bId,
