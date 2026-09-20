@@ -1,5 +1,3 @@
-// src/lib/i18n.js
-
 import { derived, writable } from 'svelte/store';
 import { currentLocale, currentUiLocale } from '$lib/stores/locale';
 
@@ -25,6 +23,7 @@ const formatString = (str, vars) => {
 const getFileName = (code) => {
     if (code === 'zh-CN') return 'zhcn';
     if (code === 'zh-TW') return 'zhtw';
+    if (code === 'en-US' || code === 'en-GB') return 'en';
     return code;
 };
 
@@ -113,7 +112,7 @@ export const t = derived(
     ([$translations, $locale, $uiLocale]) => (key, vars = {}) => {
         const uiData = $translations[$uiLocale] || {};
         const mainData = $translations[$locale] || {};
-        const enData = $translations['en'] || {};
+        const enData = $translations['en'] || $translations['en-US'] || $translations['en-GB'] || {};
         
         let text = getNestedValue(uiData, key);
         
@@ -121,7 +120,7 @@ export const t = derived(
             text = getNestedValue(mainData, key);
         }
         
-        if (!text && $locale !== 'en' && $uiLocale !== 'en') {
+        if (!text && !['en', 'en-US', 'en-GB'].includes($locale) && !['en', 'en-US', 'en-GB'].includes($uiLocale)) {
             text = getNestedValue(enData, key);
         }
 

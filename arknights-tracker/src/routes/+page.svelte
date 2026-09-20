@@ -1,7 +1,7 @@
 <script>
   import { t } from "$lib/i18n";
   import { onMount, onDestroy, tick } from "svelte";
-  import { currentLocale, currentUiLocale } from "$lib/stores/locale";
+  import { currentLocale, currentUiLocale, normalizeLocale } from "$lib/stores/locale";
   import { goto } from "$app/navigation";
   import { banners } from "$lib/data/banners.js";
   import { promocodes } from "$lib/data/promocodes.js";
@@ -152,8 +152,7 @@
   function getFormattedDate(dateStr) {
     const end = parseWithServerOffset(dateStr);
     const dateOptions = { month: "short", day: "numeric" };
-    let loc = $currentUiLocale || "en";
-    if (loc === "my") loc = "ms-MY";
+    let loc = normalizeLocale($currentUiLocale);
     if (showServerTime) {
       const timeZone =
         currentServerId === "2" ? "Asia/Shanghai" : "America/New_York";
@@ -353,8 +352,7 @@
     if (!weekConfig) return "";
     const start = new Date(weekConfig.startDate);
     const end = new Date(weekConfig.endDate);
-    let loc = locale || "ru";
-    if (loc === "my") loc = "ms-MY";
+    let loc = normalizeLocale(locale);
     const options = { month: "2-digit", day: "2-digit" };
     return `${start.toLocaleDateString(loc, options)} - ${end.toLocaleDateString(loc, options)}`;
   }

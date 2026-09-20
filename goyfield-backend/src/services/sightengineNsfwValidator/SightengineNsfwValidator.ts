@@ -1,16 +1,16 @@
 import { logger } from "@/logger.js";
 import { ImageValidator } from "@services/imageValidator/ImageValidator.js";
-import { IService } from "@services/IService.js";
+import { INsfwValidator } from "@services/nsfwValidator/INsfwValidator.js";
 import { SightengineResponse } from "@services/sightengineNsfwValidator/contracts/SightengineResponse.js";
 import { NsfwCheckResult } from "@services/sightengineNsfwValidator/NsfwCheckResult.js";
 import axios, { AxiosRequestConfig, AxiosResponse } from "axios";
 import { Blob } from "node:buffer";
 
-export class SightengineNsfwValidator implements IService {
+export class SightengineNsfwValidator implements INsfwValidator {
     private static readonly SIGHTENGINE_URL = "https://api.sightengine.com/1.0/check.json";
-    private static readonly SEXUAL_ACTIVITY_LIMIT = 0.5;
-    private static readonly SEXUAL_DISPLAY_LIMIT = 0.5;
-    private static readonly EROTICA_LIMIT = 0.5;
+    private static readonly SEXUAL_ACTIVITY_LIMIT = 0.2;
+    private static readonly SEXUAL_DISPLAY_LIMIT = 0.2;
+    private static readonly EROTICA_LIMIT = 0.2;
 
     public readonly name = "SightengineNsfwValidator";
 

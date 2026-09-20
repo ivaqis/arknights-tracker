@@ -8,16 +8,39 @@
 
   const dispatch = createEventDispatcher();
 
+  let isMouseDownOnBackdrop = false;
+  let isMouseDownOnWrapper = false;
+
   function close() {
     dispatch("close");
   }
 
+  function handleBackdropMouseDown(e) {
+    isMouseDownOnBackdrop = e.target === e.currentTarget;
+  }
+
+  function handleBackdropClick(e) {
+    if (!closeOnOutsideClick) return;
+    if (isMouseDownOnBackdrop && e.target === e.currentTarget) {
+      close();
+    }
+    isMouseDownOnBackdrop = false;
+  }
+
+  function handleWrapperMouseDown(e) {
+    isMouseDownOnWrapper = e.target === e.currentTarget;
+  }
+
   function handleWrapperClick(e) {
-    if (e.target !== e.currentTarget) return;
-    const isScrollbarX = e.offsetX > e.currentTarget.clientWidth;
-    const isScrollbarY = e.offsetY > e.currentTarget.clientHeight;
-    if (isScrollbarX || isScrollbarY) return;
-    if (closeOnOutsideClick) close();
+    if (!closeOnOutsideClick) return;
+    if (isMouseDownOnWrapper && e.target === e.currentTarget) {
+      const isScrollbarX = e.offsetX > e.currentTarget.clientWidth;
+      const isScrollbarY = e.offsetY > e.currentTarget.clientHeight;
+      if (!isScrollbarX && !isScrollbarY) {
+        close();
+      }
+    }
+    isMouseDownOnWrapper = false;
   }
 
   $: if (typeof document !== "undefined") {
@@ -44,13 +67,15 @@
     <div
       class="absolute inset-0 bg-black/60 backdrop-blur-sm cursor-default outline-none"
       transition:fade={{ duration: 200 }}
-      on:click={closeOnOutsideClick ? close : null}
+      on:mousedown={handleBackdropMouseDown}
+      on:click={handleBackdropClick}
     ></div>
 
     <div class="relative z-10 w-full max-h-full flex items-center justify-center pointer-events-none">
       <!-- svelte-ignore a11y_click_events_have_key_events -->
       <!-- svelte-ignore a11y_no_static_element_interactions -->
       <div
+        on:mousedown={handleWrapperMouseDown}
         on:click={handleWrapperClick}
         class="pointer-events-auto w-full max-w-full max-h-[85vh] md:max-h-none overflow-y-auto rounded-2xl flex flex-col items-center justify-start md:justify-center"
       >

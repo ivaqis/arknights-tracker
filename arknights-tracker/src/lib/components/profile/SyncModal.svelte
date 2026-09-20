@@ -1,6 +1,7 @@
 <script>
     import { createEventDispatcher } from "svelte";
     import { t } from "$lib/i18n.js";
+    import { currentUiLocale, normalizeLocale } from "$lib/stores/locale.js";
     import { fade } from "svelte/transition";
     import Icon from "$lib/components/Icon.svelte";
     import Modal from "$lib/components/modals/Modal.svelte";
@@ -20,10 +21,43 @@
     let syncing = false;
     let savedSyncTokens = [];
 
+    function extractTokenContent(val) {
+        if (!val) return "";
+        const str = String(val).trim();
+        if (str.startsWith("{") && str.endsWith("}")) {
+            try {
+                const parsed = JSON.parse(str);
+                if (parsed.data && parsed.data.content) return String(parsed.data.content).trim();
+                if (parsed.content) return String(parsed.content).trim();
+            } catch {}
+        }
+        return str;
+    }
+
+    function isSameToken(a, b) {
+        if (!a || !b) return false;
+        if (a === b) return true;
+        const cleanA = extractTokenContent(a);
+        const cleanB = extractTokenContent(b);
+        if (cleanA && cleanB && cleanA === cleanB) return true;
+        if (typeof a === "string" && typeof b === "string") {
+            return (cleanB && a.includes(cleanB)) || (cleanA && b.includes(cleanA));
+        }
+        return false;
+    }
+
     function loadSavedSyncTokens() {
         try {
             const raw = localStorage.getItem("profile_saved_tokens");
-            if (raw) savedSyncTokens = JSON.parse(raw);
+            if (raw) {
+                const parsed = JSON.parse(raw);
+                if (Array.isArray(parsed)) {
+                    savedSyncTokens = parsed.map(item => ({
+                        ...item,
+                        token: extractTokenContent(item.token)
+                    }));
+                }
+            }
         } catch (e) {
             console.error(e);
         }
@@ -31,8 +65,9 @@
 
     function saveSyncToken(name, token, serverId) {
         try {
-            if (savedSyncTokens.some((t) => t.token === token && t.serverId === serverId)) return;
-            const newToken = { name, token, serverId, date: Date.now() };
+            const cleanToken = extractTokenContent(token);
+            if (savedSyncTokens.some((t) => isSameToken(t.token, cleanToken) && t.serverId === serverId)) return;
+            const newToken = { name, token: cleanToken, serverId, date: Date.now(), expired: false };
             const newList = [newToken, ...savedSyncTokens];
             localStorage.setItem("profile_saved_tokens", JSON.stringify(newList));
             savedSyncTokens = newList;
@@ -59,7 +94,10 @@
         tokenToDeleteIndex = null;
     }
 
+    let selectedSavedToken = null;
+
     function selectSyncToken(item) {
+        selectedSavedToken = item;
         gameTokenInput = item.token;
         selectedServer = item.serverId || "both";
         syncActiveTab = "new";
@@ -69,37 +107,22 @@
         syncing = false;
         syncActiveTab = "new";
         gameTokenInput = "";
+        selectedSavedToken = null;
     }
+
+    $: isCurrentTokenExpired = savedSyncTokens.some(t => t.expired && (isSameToken(t.token, gameTokenInput) || (selectedSavedToken && isSameToken(t.token, selectedSavedToken.token))));
 
     async function handleSync() {
         const rawInput = gameTokenInput.trim();
         if (!rawInput) {
-            dispatch("error", $t("profile.token_empty") || "Game Token cannot be empty");
+            dispatch("error", $t("profile.token_empty"));
             return;
         }
 
-        let tokenToUse = rawInput;
-        if (rawInput.startsWith('{') && rawInput.endsWith('}')) {
-            try {
-                const parsed = JSON.parse(rawInput);
-                if (parsed.data && parsed.data.content) {
-                    tokenToUse = parsed.data.content.trim();
-                } else if (parsed.content) {
-                    tokenToUse = parsed.content.trim();
-                } else {
-                    dispatch("error", $t("profile.token_invalid") || "Invalid token format. It must be a 24-character code or a valid JSON containing it");
-                    return;
-                }
-            } catch (err) {
-                dispatch("error", $t("profile.token_invalid") || "Invalid token format. It must be a 24-character code or a valid JSON containing it");
-                return;
-            }
-        }
-
-        // Validate final token characters and length
+        let tokenToUse = extractTokenContent(rawInput);
         const base64Regex = /^[A-Za-z0-9+/=_-]+$/;
         if (!base64Regex.test(tokenToUse) || tokenToUse.length < 10 || tokenToUse.length > 128) {
-            dispatch("error", $t("profile.token_invalid") || "Invalid token format. It must be a 24-character code or a valid JSON containing it");
+            dispatch("error", $t("profile.token_invalid"));
             return;
         }
 
@@ -110,9 +133,13 @@
             saveName: isSaveTokenEnabled && tokenName.trim() ? tokenName.trim() : null,
             onSuccess: (didSave) => {
                 if (didSave === false) {
-                    const existingIdx = savedSyncTokens.findIndex(t => t.token === tokenToUse);
+                    const existingIdx = savedSyncTokens.findIndex(t => isSameToken(t.token, tokenToUse) || (selectedSavedToken && isSameToken(t.token, selectedSavedToken.token)));
                     if (existingIdx !== -1) {
                         let updated = false;
+                        if (savedSyncTokens[existingIdx].expired) {
+                            savedSyncTokens[existingIdx].expired = false;
+                            updated = true;
+                        }
                         if (savedSyncTokens[existingIdx].serverId !== selectedServer) {
                             savedSyncTokens[existingIdx].serverId = selectedServer;
                             updated = true;
@@ -128,14 +155,29 @@
                     } else if (isSaveTokenEnabled && tokenName.trim()) {
                         saveSyncToken(tokenName.trim(), tokenToUse, selectedServer);
                     }
+                    selectedSavedToken = null;
                     tokenName = "";
                     isSaveTokenEnabled = false;
                     gameTokenInput = "";
                     syncing = false;
                 }
             },
-            onError: () => {
+            onError: (err) => {
                 syncing = false;
+                const msg = (err && typeof err === 'object' ? (err.message || "") : String(err || "")).toLowerCase();
+                const isExpired = msg.includes("expired") || 
+                                  msg.includes("auth failed") || 
+                                  msg.includes("token_invalid") || 
+                                  msg.includes("token not verified") ||
+                                  msg.includes("gryphline");
+                if (isExpired) {
+                    const idx = savedSyncTokens.findIndex(t => isSameToken(t.token, tokenToUse) || (selectedSavedToken && isSameToken(t.token, selectedSavedToken.token)));
+                    if (idx !== -1) {
+                        savedSyncTokens[idx].expired = true;
+                        localStorage.setItem("profile_saved_tokens", JSON.stringify(savedSyncTokens));
+                        savedSyncTokens = [...savedSyncTokens];
+                    }
+                }
             }
         });
     }
@@ -241,7 +283,7 @@
                                 type={showToken ? "text" : "password"}
                                 bind:value={gameTokenInput}
                                 placeholder={`{"code":0,"data":{"content":"QqW2fmIQq...ZctQjc"},"msg":""}`}
-                                class="w-full p-2.5 bg-gray-50 dark:bg-[#343434] dark:border-[#444444] dark:text-[#E0E0E0] border border-gray-200 focus:bg-white focus:border-[#FFE145] focus:dark:border-[#FFE145] rounded-md text-sm outline-none text-[#21272C] transition-all font-mono pl-4 pr-12"
+                                class="w-full p-2.5 bg-gray-50 dark:bg-[#343434] dark:border-[#444444] dark:text-[#E0E0E0] border {isCurrentTokenExpired ? 'border-red-500 focus:border-red-500 focus:dark:border-red-500' : 'border-gray-200 focus:border-[#FFE145] focus:dark:border-[#FFE145]'} focus:bg-white rounded-md text-sm outline-none text-[#21272C] transition-all font-mono pl-4 pr-12"
                                 disabled={syncing}
                             />
                             <button
@@ -253,6 +295,11 @@
                                 <Icon name={showToken ? "eyeOpen" : "eyeClosed"} class="w-5 h-5 fill-current" />
                             </button>
                         </div>
+                        {#if isCurrentTokenExpired}
+                            <p class="text-xs text-red-500 dark:text-red-400 font-sans mt-1.5" transition:fade>
+                                {$t("profile.token_invalid_or_expired")}
+                            </p>
+                        {/if}
                     </div>
                 </div>
             </div>
@@ -309,7 +356,7 @@
                 {:else}
                     <div class="grid gap-3 pb-3 max-h-[420px] overflow-y-auto pr-1">
                         {#each savedSyncTokens as item, i}
-                            <div class="group relative flex items-center justify-between p-4 bg-gray-50 dark:bg-white/5 border border-gray-200 dark:border-[#444444] hover:shadow-sm transition-all text-left rounded-md overflow-hidden">
+                            <div class="group relative flex items-center justify-between p-4 bg-gray-50 dark:bg-white/5 border {item.expired ? 'border-red-500/40 dark:border-red-500/30' : 'border-gray-200 dark:border-[#444444]'} hover:shadow-sm transition-all text-left rounded-md overflow-hidden">
                                 <button
                                     type="button"
                                     class="absolute inset-0 w-full h-full z-0 cursor-pointer focus:outline-none"
@@ -320,12 +367,17 @@
                                     <div class="font-bold text-gray-900 dark:text-white text-base font-sdk">
                                         {item.name}
                                     </div>
-                                    <div class="flex gap-2 items-center mt-2">
+                                    <div class="flex flex-wrap gap-2 items-center mt-2">
+                                        {#if item.expired}
+                                            <span class="text-[10px] bg-red-500/15 border border-red-500/30 text-red-600 dark:text-red-400 px-2 py-0.5 rounded-full font-medium">
+                                                {$t("profile.token_expired_badge")}
+                                            </span>
+                                        {/if}
                                         <span class="text-[10px] bg-gray-200 dark:bg-white/10 text-gray-600 dark:text-white px-2 py-0.5 rounded-full font-medium">
                                             {item.serverId === '3' ? 'Americas / Europe' : item.serverId === '2' ? 'Asia' : $t("profile.all")}
                                         </span>
                                         <span class="text-[10px] text-gray-500 dark:text-[#B7B6B3] font-medium">
-                                            {new Date(item.date).toLocaleDateString()}
+                                            {new Date(item.date).toLocaleDateString(normalizeLocale($currentUiLocale))}
                                         </span>
                                     </div>
                                 </div>
@@ -349,8 +401,8 @@
 
 <ConfirmationModal
     isOpen={showDeleteTokenModal}
-    title={$t("import.delete_confirm") || "Delete this saved token?"}
-    confirmText={$t("settings.account.deleteAccount") || "Delete"}
+    title={$t("import.delete_confirm")}
+    confirmText={$t("settings.account.deleteAccount")}
     isDestructive={true}
     on:confirm={confirmDeleteSyncToken}
     on:close={() => (showDeleteTokenModal = false)}

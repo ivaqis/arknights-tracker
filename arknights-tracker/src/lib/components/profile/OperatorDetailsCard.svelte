@@ -11,6 +11,7 @@
     import { getImagePath } from "$lib/utils/imageUtils.js";
     import { getRarityColor, getHexColorByElement } from "$lib/utils/colorUtils.js";
     import { parseRichText, hyperlinkAction } from "$lib/utils/richText.js";
+    import { addNotification } from "$lib/stores/notifications.js";
 
     const localeModules = {
         en: import.meta.glob("/src/lib/locales/en/equipment.json"),
@@ -29,14 +30,33 @@
         zhtw: import.meta.glob("/src/lib/locales/zhtw/equipment.json"),
     };
 
+    const weaponLocaleModules = {
+        en: import.meta.glob("/src/lib/locales/en/weapons.json"),
+        ru: import.meta.glob("/src/lib/locales/ru/weapons.json"),
+        de: import.meta.glob("/src/lib/locales/de/weapons.json"),
+        es: import.meta.glob("/src/lib/locales/es/weapons.json"),
+        fr: import.meta.glob("/src/lib/locales/fr/weapons.json"),
+        id: import.meta.glob("/src/lib/locales/id/weapons.json"),
+        it: import.meta.glob("/src/lib/locales/it/weapons.json"),
+        ja: import.meta.glob("/src/lib/locales/ja/weapons.json"),
+        ko: import.meta.glob("/src/lib/locales/ko/weapons.json"),
+        pt: import.meta.glob("/src/lib/locales/pt/weapons.json"),
+        th: import.meta.glob("/src/lib/locales/th/weapons.json"),
+        vi: import.meta.glob("/src/lib/locales/vi/weapons.json"),
+        zhcn: import.meta.glob("/src/lib/locales/zhcn/weapons.json"),
+        zhtw: import.meta.glob("/src/lib/locales/zhtw/weapons.json"),
+    };
+
     let equipLocaleData = {};
+    let weaponLocaleData = {};
 
     $: loadEquipLocale($currentLocale);
+    $: loadWeaponLocale($currentLocale);
     $: curLabel = $currentLocale === 'ru' ? 'текущ.' : 'current';
 
     async function loadEquipLocale(lang) {
         lang = lang || "en";
-        const safeLang = lang.toLowerCase().replace("-", "");
+        const safeLang = lang.toLowerCase().startsWith("en") ? "en" : lang.toLowerCase().replace("-", "");
         const localePath = `/src/lib/locales/${safeLang}/equipment.json`;
         const fallbackPath = `/src/lib/locales/en/equipment.json`;
 
@@ -50,6 +70,25 @@
             equipLocaleData = mod.default || mod;
         } else {
             equipLocaleData = {};
+        }
+    }
+
+    async function loadWeaponLocale(lang) {
+        lang = lang || "en";
+        const safeLang = lang.toLowerCase().startsWith("en") ? "en" : lang.toLowerCase().replace("-", "");
+        const localePath = `/src/lib/locales/${safeLang}/weapons.json`;
+        const fallbackPath = `/src/lib/locales/en/weapons.json`;
+
+        let localeLoader = weaponLocaleModules[safeLang]?.[localePath];
+        if (!localeLoader && safeLang !== "en") {
+            localeLoader = weaponLocaleModules["en"]?.[fallbackPath];
+        }
+
+        if (localeLoader) {
+            const mod = await localeLoader();
+            weaponLocaleData = mod.default || mod;
+        } else {
+            weaponLocaleData = {};
         }
     }
 
@@ -102,6 +141,7 @@
     export let talentsList;
     export let getWeaponData;
     export let getWeaponIcon;
+    export let getWeaponTerms = () => [];
     export let getStaticEquipId;
     export let getEquipRarity;
     export let getEquipTier;
@@ -109,6 +149,26 @@
     export let charDetails = null;
     export let charLocale = null;
     export let weaponDetails = null;
+
+    $: evolvePhase = (() => {
+        if (selectedChar?.evolvePhase !== undefined && selectedChar?.evolvePhase !== null) {
+            return Number(selectedChar.evolvePhase);
+        }
+        if (detailedChar?.evolvePhase !== undefined && detailedChar?.evolvePhase !== null) {
+            return Number(detailedChar.evolvePhase);
+        }
+        const breakNode = selectedChar?.talent?.latestBreakNode || detailedChar?.talent?.latestBreakNode || "";
+        if (breakNode.includes("70") || breakNode.includes("T5")) return 4;
+        if (breakNode.includes("60") || breakNode.includes("T4")) return 3;
+        if (breakNode.includes("40") || breakNode.includes("T3")) return 2;
+        if (breakNode.includes("20") || breakNode.includes("T2")) return 1;
+        const lvl = Number(selectedChar?.level || detailedChar?.level) || 1;
+        if (lvl > 80) return 4;
+        if (lvl > 60) return 3;
+        if (lvl > 40) return 2;
+        if (lvl > 20) return 1;
+        return 0;
+    })();
 
     function getEquipName(staticId, fallbackName) {
         if (!staticId) return fallbackName || "";
@@ -121,13 +181,19 @@
     function getSkillDescription(skillKey, skillLvl) {
         const skillData = charLocale?.skills?.[skillKey] || {};
         let text = skillData.description;
+        if (text && typeof text === "object") {
+            text = text.main || Object.values(text)[0] || "";
+        }
+        if (!text) {
+            text = skillData.desc || "";
+        }
         if (!text) {
             const skillMeta = Array.isArray(targetCharData?.skills) 
                 ? targetCharData.skills.find(s => s.key === skillKey || s.id?.includes(skillKey)) 
                 : targetCharData?.skills?.[skillKey];
             text = skillMeta?.desc || skillMeta?.description || "";
         }
-        if (!text) return "";
+        if (!text || typeof text !== "string") return "";
 
         const skillValues = charDetails?.skills?.[skillKey] || {};
         const blackboard = charDetails?.blackboard || {};
@@ -264,6 +330,57 @@
         });
     }
 
+    const characterDataModules = import.meta.glob("/src/lib/data/charactersData/*.json", { eager: true });
+
+    function getOperatorDataDetails() {
+        if (charDetails) return charDetails;
+        if (svelteId) {
+            const mod = characterDataModules[`/src/lib/data/charactersData/${svelteId}.json`];
+            return mod?.default || mod || null;
+        }
+        return null;
+    }
+
+    function getOperatorMainStatIcon(opClass) {
+        const details = getOperatorDataDetails();
+        if (details?.mainAttribute) {
+            const m = details.mainAttribute.toLowerCase();
+            return m === "wisd" ? "int" : m;
+        }
+        return getPrimaryAttrIcon(opClass || opData?.class);
+    }
+
+    function getOperatorSubStatIcon() {
+        const details = getOperatorDataDetails();
+        if (details?.secondaryAttribute) {
+            const s = details.secondaryAttribute.toLowerCase();
+            return s === "wisd" ? "int" : s;
+        }
+        return "circle";
+    }
+
+    function resolveAttributeIcon(attrKey, defaultIcon = "circle") {
+        if (!attrKey) return defaultIcon;
+        const lower = attrKey.toLowerCase();
+        if (lower === "main" || lower === "mainattr" || lower === "primary_attr_up" || lower === "primary_attr" || lower === "equip_attr_main" || lower === "equip_main") {
+            return getOperatorMainStatIcon();
+        }
+        if (lower === "sub" || lower === "subattr" || lower === "second_attr_up" || lower === "secondary_attr_up" || lower === "secondary_attr" || lower === "equip_attr_sub" || lower === "equip_sub") {
+            return getOperatorSubStatIcon();
+        }
+        if (getStatIcon) {
+            const found = getStatIcon(attrKey);
+            if (found) return found;
+        }
+        if (lower === "maxhp" || lower === "hp_up") return "hp";
+        if (lower.includes("physical") || lower.includes("phy")) return "physicaldamageincrease";
+        if (lower.includes("crit")) return "crirate";
+        if (lower.includes("usgs") || lower.includes("sp_gain")) return "usp";
+        if (lower.includes("def")) return "def";
+        if (lower.includes("atk")) return "atk";
+        return defaultIcon;
+    }
+
     function getPrimaryAttrIcon(charClass) {
         const cls = charClass?.toLowerCase() || "";
         if (cls.includes("caster") || cls.includes("supporter")) return "int";
@@ -272,11 +389,27 @@
         return "str";
     }
 
+    function getEquippedPackCount(targetPack) {
+        if (!targetPack || targetPack === "none") return 0;
+        let count = 0;
+        for (const key of ['bodyEquip', 'armEquip', 'firstAccessory', 'secondAccessory']) {
+            const item = detailedChar?.[key] || selectedChar?.[key];
+            if (item && (item.equipData || item.id)) {
+                const sId = (getStaticEquipId ? getStaticEquipId(item.equipData) : null) || (equipment[item.id] ? item.id : (item.id?.startsWith('item_') ? item.id : `item_${item.id}`));
+                const staticItem = sId ? equipment[sId] : null;
+                if (staticItem && staticItem.pack === targetPack) {
+                    count++;
+                }
+            }
+        }
+        return count;
+    }
+
     function getWeaponStatLabel(statKey) {
         if (!statKey) return "";
         const sKey = statKey.toLowerCase();
         if (sKey === "baseatk") {
-            return $t("stats.baseAtk") || "Base ATK";
+            return $t("stats.baseAtk");
         }
         const mappings = {
             "str": "equipSkills.Str",
@@ -450,25 +583,32 @@
         if (weaponDetails?.blackboard) {
             const refineLevel = wpn.refineLevel !== undefined ? wpn.refineLevel : 0;
             const potSkillIndex = weaponDetails.potSkill || 3;
+            const wpnTerms = (wpn.weaponTerms && wpn.weaponTerms.length > 0) ? wpn.weaponTerms : (getWeaponTerms ? getWeaponTerms(wpn) : []);
             
             for (let i = 1; i <= 3; i++) {
                 const skillKey = `skill${i}`;
                 const bb = weaponDetails.blackboard[skillKey];
                 const tiers = weaponDetails.skillLevels?.[skillKey];
                 
-                if (bb && tiers) {
-                    let activeTier = tiers[0];
-                    for (const t of tiers) {
-                        if (wpn.level >= t.level) activeTier = t;
+                if (bb) {
+                    let rank = 1;
+                    if (wpnTerms && typeof wpnTerms[i - 1] === 'number') {
+                        rank = wpnTerms[i - 1];
+                    } else if (tiers) {
+                        let activeTier = tiers[0];
+                        for (const t of tiers) {
+                            if (wpn.level >= t.level) activeTier = t;
+                        }
+                        rank = activeTier.lower;
+                        let upper = activeTier.upper;
+                        if (i === potSkillIndex) {
+                            rank += refineLevel;
+                            upper += refineLevel;
+                        }
+                        if (rank > upper) rank = upper;
                     }
-                    let rank = activeTier.lower;
-                    let upper = activeTier.upper;
-                    if (i === potSkillIndex) {
-                        rank += refineLevel;
-                        upper += refineLevel;
-                    }
-                    if (rank > upper) rank = upper;
                     if (rank > 9) rank = 9;
+                    if (rank < 1) rank = 1;
 
                     const bbKeys = Object.keys(bb);
                     const mainKey = bbKeys.find(k => k !== 'duration' && k !== 'duration2' && k !== 'duration3' && k !== 'duration4' && k !== 'max_stack' && k !== 'max_stacks' && k !== 'cd' && k !== 'cd ' && k !== 'lv');
@@ -477,30 +617,19 @@
                         const values = bb[mainKey];
                         const val = values ? (values[rank - 1] !== undefined ? values[rank - 1] : values[0]) : null;
                         if (val !== null && val !== undefined) {
-                            let iconName = getStatIcon(mainKey);
-                            if (!iconName) {
-                                const kLower = mainKey.toLowerCase();
-                                if (kLower.includes("physical") || kLower.includes("phy")) {
-                                    iconName = "physicaldamageincrease";
-                                } else if (kLower.includes("usgs") || kLower.includes("sp_gain")) {
-                                    iconName = "usp";
-                                } else if (kLower === "mainattr" || kLower === "primary_attr_up") {
-                                    iconName = getPrimaryAttrIcon(opClass);
-                                } else {
-                                    iconName = "circle";
-                                }
-                            }
+                            let iconName = resolveAttributeIcon(mainKey, "circle");
                             
                             let displayVal = "";
                             const num = Number(val);
                             if (!isNaN(num)) {
                                 if (Math.abs(num) > 0 && Math.abs(num) < 1) {
-                                    displayVal = `${Math.round(num * 1000) / 10}%`;
+                                    displayVal = `+${Math.round(num * 1000) / 10}%`;
                                 } else {
-                                    displayVal = `${Math.round(num)}`;
+                                    displayVal = `+${Math.round(num)}`;
                                 }
                             } else {
-                                displayVal = val;
+                                const sVal = String(val);
+                                displayVal = sVal.startsWith("+") || sVal.startsWith("-") ? sVal : `+${sVal}`;
                             }
 
                             list.push({
@@ -514,90 +643,107 @@
                 }
             }
         } else {
-            list.push({ key: "def", icon: "def", label: "DEF", value: `${Math.round(20 + wpn.level * 0.8)}` });
-            list.push({ key: "maxhp", icon: "hp", label: "HP", value: `${Math.round(150 + wpn.level * 4)}` });
+            list.push({ key: "def", icon: "def", label: "DEF", value: `+${Math.round(20 + wpn.level * 0.8)}` });
+            list.push({ key: "maxhp", icon: "hp", label: "HP", value: `+${Math.round(150 + wpn.level * 4)}` });
         }
 
         return list;
     }
 
-    function getWeaponStatsRanges(wpn, wpnStatic, weaponDetails, opClass) {
-        if (!wpn) return [];
-        let list = [];
+    function getWeaponSkillsToRender(wpn, wpnStatic, weaponDetails, opClass) {
+        if (!wpn || !wpnStatic) return [];
+        const wpnId = wpnStatic.id;
+        const wpnLocale = weaponLocaleData[wpnId] || {};
+        const skillsLocale = wpnLocale.skills || [];
+        const wpnTerms = (wpn.weaponTerms && wpn.weaponTerms.length > 0) ? wpn.weaponTerms : (getWeaponTerms ? getWeaponTerms(wpn) : []);
+        const refineLevel = wpn.refineLevel !== undefined ? wpn.refineLevel : 0;
+        const potSkillIndex = weaponDetails?.potSkill || 3;
 
-        // Base ATK
-        let baseAtkMin = 83;
-        let baseAtkMax = 305;
-        if (weaponDetails?.levels?.baseAtk && weaponDetails.levels.baseAtk.length > 0) {
-            baseAtkMin = weaponDetails.levels.baseAtk[0];
-            baseAtkMax = weaponDetails.levels.baseAtk[weaponDetails.levels.baseAtk.length - 1];
-        }
-        list.push({
-            key: "baseAtk",
-            icon: "atk",
-            label: getWeaponStatLabel("baseatk"),
-            range: `${baseAtkMin}-${baseAtkMax}`
-        });
+        const opDetails = getOperatorDataDetails();
+        const mainAttrKey = opDetails?.mainAttribute || (opClass?.toLowerCase().includes("caster") ? "wisd" : "str");
+        const mainAttrLabel = getWeaponStatLabel(mainAttrKey);
+        const subAttrKey = opDetails?.secondaryAttribute;
+        const subAttrLabel = subAttrKey ? getWeaponStatLabel(subAttrKey) : "";
 
-        if (weaponDetails?.blackboard) {
-            for (let i = 1; i <= 3; i++) {
-                const skillKey = `skill${i}`;
-                const bb = weaponDetails.blackboard[skillKey];
-                if (bb) {
-                    const bbKeys = Object.keys(bb);
-                    const mainKey = bbKeys.find(k => k !== 'duration' && k !== 'duration2' && k !== 'duration3' && k !== 'duration4' && k !== 'max_stack' && k !== 'max_stacks' && k !== 'cd' && k !== 'cd ' && k !== 'lv');
-                    if (mainKey) {
-                        const values = bb[mainKey];
-                        if (values && values.length > 0) {
-                            const minVal = values[0];
-                            const maxVal = values[values.length - 1];
-                            let iconName = getStatIcon(mainKey);
-                            if (!iconName) {
-                                const kLower = mainKey.toLowerCase();
-                                if (kLower.includes("physical") || kLower.includes("phy")) {
-                                    iconName = "physicaldamageincrease";
-                                } else if (kLower.includes("usgs") || kLower.includes("sp_gain")) {
-                                    iconName = "usp";
-                                } else if (kLower === "mainattr" || kLower === "primary_attr_up") {
-                                    iconName = getPrimaryAttrIcon(opClass);
-                                } else {
-                                    iconName = "circle";
-                                }
-                            }
-                            
-                            let rangeStr = "";
-                            const minNum = Number(minVal);
-                            const maxNum = Number(maxVal);
-                            if (!isNaN(minNum) && !isNaN(maxNum)) {
-                                if (Math.abs(minNum) > 0 && Math.abs(minNum) < 1) {
-                                    rangeStr = `${Math.round(minNum * 100)}%-${Math.round(maxNum * 100)}%`;
-                                } else {
-                                    rangeStr = `${Math.round(minNum)}-${Math.round(maxNum)}`;
-                                }
-                            } else {
-                                rangeStr = `${minVal}-${maxVal}`;
-                            }
+        const result = [];
+        for (let i = 1; i <= 3; i++) {
+            const skillKey = `skill${i}`;
+            const skillLocale = skillsLocale[i - 1];
 
-                            list.push({
-                                key: mainKey,
-                                icon: iconName,
-                                label: getWeaponStatLabel(mainKey),
-                                range: rangeStr
-                            });
+            let rank = 1;
+            if (wpnTerms && typeof wpnTerms[i - 1] === 'number') {
+                rank = wpnTerms[i - 1];
+            } else if (weaponDetails?.skillLevels?.[skillKey]) {
+                const tiers = weaponDetails.skillLevels[skillKey];
+                let activeTier = tiers[0];
+                for (const t of tiers) {
+                    if (wpn.level >= t.level) activeTier = t;
+                }
+                rank = activeTier.lower;
+                let upper = activeTier.upper;
+                if (i === potSkillIndex) {
+                    rank += refineLevel;
+                    upper += refineLevel;
+                }
+                if (rank > upper) rank = upper;
+            }
+            if (rank > 9) rank = 9;
+            if (rank < 1) rank = 1;
+
+            const bbRaw = weaponDetails?.blackboard?.[skillKey];
+            const bb = {};
+            if (bbRaw) {
+                for (const [k, v] of Object.entries(bbRaw)) {
+                    const idx = Math.min(Math.max(0, rank - 1), v.length - 1);
+                    bb[k] = v[idx];
+                }
+            }
+
+            if (skillLocale) {
+                let skillName = skillLocale.name || "";
+                let skillDesc = skillLocale.description || "";
+
+                const mainAttrPhrases = ["Основной показатель", "Main Attribute", "Main attribute", "主属性", "主能力值", "คุณสมบัติ​หลัก", "Thuộc tính chính", "Thuộc tính Chính", "Atribut Utama", "Atributo Principal", "Atributo principal", "Attribut principal", "Hauptattribut", "Attributo principale", "주 능력치", "주속성", "주속성치", "主能力値", "Hauptattribut", "Pääominaisuus", "Asosiy parametr", "Negizgi parametr"];
+                for (const phrase of mainAttrPhrases) {
+                    if (skillName.includes(phrase)) {
+                        skillName = skillName.replace(phrase, mainAttrLabel);
+                    }
+                    if (skillDesc.includes(phrase)) {
+                        skillDesc = skillDesc.replace(phrase, mainAttrLabel);
+                    }
+                }
+
+                if (subAttrLabel) {
+                    const subAttrPhrases = ["Побочный показатель", "Secondary Attribute", "Secondary attribute", "副属性", "副能力值", "คุณสมบัติ​รอง", "Thuộc tính phụ", "Atribut Sekunder", "Atributo Secundario", "Atributo secundario", "Attribut secondaire", "Nebenattribut", "Attributo secondario", "부 능력치", "부속성", "부속성치", "副能力値", "Nebenattribut", "Sivuominaisuus", "Ikkilamchi parametr", "Qosalqy parametr"];
+                    for (const phrase of subAttrPhrases) {
+                        if (skillName.includes(phrase)) {
+                            skillName = skillName.replace(phrase, subAttrLabel);
+                        }
+                        if (skillDesc.includes(phrase)) {
+                            skillDesc = skillDesc.replace(phrase, subAttrLabel);
                         }
                     }
                 }
-            }
-        } else {
-            list.push({ key: "def", icon: "def", label: "DEF", range: "21-92" });
-            list.push({ key: "maxhp", icon: "hp", label: "HP", range: "154-510" });
-        }
 
-        return list;
+                const interpolatedDesc = interpolateBlackboard(skillDesc, bb);
+                const parsedDesc = parseRichText(interpolatedDesc);
+
+                result.push({
+                    name: skillName,
+                    descriptionHtml: parsedDesc,
+                    rank
+                });
+            }
+        }
+        return result;
     }
 
-    function getSkillStatLabel(skillKey, key, charLocale, lang = "en") {
-        const localized = charLocale?.skills?.[skillKey]?.[skillKey]?.[key];
+    function getSkillStatLabel(skillKey, key, charLocale, lang = "en", conditionKey = null) {
+        const skillObj = charLocale?.skills?.[skillKey];
+        if (conditionKey && skillObj?.[conditionKey]?.[key]) {
+            return skillObj[conditionKey][key];
+        }
+        const localized = skillObj?.[key] || skillObj?.[skillKey]?.[key];
         if (localized) return localized;
 
         if (key === "costValue" && skillKey !== "ultimate") {
@@ -646,6 +792,38 @@
         for (const [key, valObj] of Object.entries(skillValues)) {
             if (key === "elementType") continue;
 
+            if (valObj && typeof valObj === "object" && !Array.isArray(valObj) && !Array.isArray(valObj.data)) {
+                for (const [subKey, subVal] of Object.entries(valObj)) {
+                    let subData = null;
+                    let subIsPercent = false;
+                    if (subVal && typeof subVal === "object" && Array.isArray(subVal.data)) {
+                        subData = subVal.data;
+                        subIsPercent = subVal.dataType === "percent";
+                    } else if (Array.isArray(subVal)) {
+                        subData = subVal;
+                    }
+                    if (!subData || subData.length === 0) continue;
+                    const currentIdx = Math.min(skillLvl - 1, subData.length - 1);
+                    const currentVal = parseFloat(subData[currentIdx]);
+                    if (isNaN(currentVal)) continue;
+                    let currentStr = "";
+                    const isTimeStat = subKey.toLowerCase().includes("cooldown") || subKey.toLowerCase() === "cool" || subKey.toLowerCase().includes("duration");
+                    const suffix = isTimeStat ? (safeLang === "ru" ? " сек." : "s") : "";
+                    if (subIsPercent) {
+                        currentStr = `${parseFloat((currentVal * 100).toFixed(4))}%`;
+                    } else {
+                        const curValFormatted = currentVal % 1 === 0 ? currentVal.toString() : currentVal.toFixed(1);
+                        currentStr = `${curValFormatted}${suffix}`;
+                    }
+                    list.push({
+                        key: `${key}_${subKey}`,
+                        label: getSkillStatLabel(skillKey, subKey, charLocale, lang, key),
+                        value: currentStr
+                    });
+                }
+                continue;
+            }
+
             let data = null;
             let isPercent = false;
 
@@ -684,10 +862,30 @@
 
         return list;
     }
+
+    let copied = false;
+    function handleShare() {
+        if (typeof window === "undefined") return;
+        const charId = opData?.id || svelteId || selectedChar?.id;
+        const url = new URL(window.location.href);
+        if (charId) {
+            url.searchParams.set("char", charId);
+        }
+        navigator.clipboard.writeText(url.toString()).then(() => {
+            copied = true;
+            addNotification("success", $t("profile.link_copied"));
+            setTimeout(() => {
+                copied = false;
+            }, 2000);
+        }).catch(err => {
+            console.error("Failed to copy link: ", err);
+            addNotification("error", $t("profile.copy_failed"));
+        });
+    }
 </script>
 
 <div class="w-full overflow-x-auto custom-scrollbar pb-1">
-    <div in:fade={{ duration: 200 }} class="w-[950px] h-[447px] mx-auto relative bg-black/30 dark:bg-black/40 backdrop-blur-md border border-white/10 rounded-2xl p-5 shadow-2xl transition-all duration-300 text-left mt-3 overflow-hidden">
+    <div in:fade={{ duration: 200 }} class="w-[950px] h-[447px] mx-auto relative bg-black/30 dark:bg-black/40 backdrop-blur-md border border-white/10 rounded-2xl p-5 transition-all duration-300 text-left mt-3 overflow-hidden">
         
         <div class="absolute inset-0 bg-gradient-to-br {elementColor} pointer-events-none z-0 rounded-2xl"></div>
         <div class="absolute left-[-25px] top-2 pointer-events-none z-0 select-none opacity-90" style="width: 50%; height: 100%; transform: scale(1.5); transform-origin: left center;">
@@ -717,7 +915,7 @@
                                             </Tooltip>
                                         {/if}
                                         <h3 class="pl-1 text-3xl font-sdk font-black text-white tracking-tight drop-shadow-xl leading-none" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.85);">
-                                            {$t(`characters.${opData.id}`) || opData.name}
+                                            {$t(`characters.${opData.id}`) !== `characters.${opData.id}` ? $t(`characters.${opData.id}`) : opData.name}
                                         </h3>
                                     </div>
 
@@ -728,7 +926,7 @@
 
                                 <div class="flex items-center gap-0 -space-x-1 ml-[-3px]">
                                     {#each Array(opData.rarity || 1) as _}
-                                        <Icon name="star" class="w-10 h-10 text-gray-600 dark:text-white" style="stroke-opacity: 20%" />
+                                        <Icon name="star" class="w-10 h-10 text-white" style="stroke-opacity: 20%" />
                                     {/each}
                                 </div>
                             </div>
@@ -740,65 +938,66 @@
                     <div class="flex flex-row items-end gap-3">
                         <div class="flex flex-col gap-1.5">
                             {#each ["basicAttack", "battleSkill", "comboSkill", "ultimate"] as skillKey, idx}
-                                {@const skillMeta = Array.isArray(targetCharData?.skills) ? targetCharData.skills[idx] : targetCharData?.skills?.[skillKey]}
-                                {#if skillMeta}
-                                    {@const skillLvl = detailedChar?.userSkills?.[skillMeta.id]?.level || 1}
-                                    {@const skillImageId = skillKey === "basicAttack" ? (opData?.weapon || "sword") : `${svelteId}_${skillKey}`}
-                                    {@const currentElement = skillMeta?.property?.key?.replace("skill_property_", "") || targetCharData?.property?.key?.replace("char_property_", "") || opData?.element || "physical"}
-                                    {@const currentColor = getHexColorByElement(currentElement) || "#5E5D5D"}
-                                    {@const isUltimate = skillKey === "ultimate"}
-                                    {@const skillStats = getSkillStatsList(skillKey, skillLvl, charDetails, charLocale, $currentLocale)}
-                                    
-                                    <Tooltip>
-                                        <div class="flex flex-col items-center group relative cursor-pointer">
-                                            <div class="w-14 h-14 shrink-0 flex items-center justify-center relative">
-                                                <div
-                                                    class="absolute inset-0 rounded-full border-[2.5px] border-transparent"
-                                                    style="background: conic-gradient(from 225deg, #d1d5db 270deg, transparent 0deg) border-box;
-                                                    mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-                                                    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-                                                    -webkit-mask-composite: destination-out;
-                                                    mask-composite: exclude;"
-                                                ></div>
-                                                
-                                                <div class="w-[82%] h-[82%] rounded-full bg-black/35 relative overflow-hidden flex items-center justify-center border border-white/5 shadow-md">
-                                                    {#if isUltimate}
-                                                        <div class="absolute inset-0" style="background-color: {currentColor}"></div>
-                                                    {:else}
-                                                        <div class="absolute inset-0" style="background-color: {currentColor}; clip-path: polygon(50% 50%, -100% 100%, 200% 100%);"></div>
-                                                    {/if}
-                                                    <div class="relative z-10 w-[85%] h-[85%] flex items-center justify-center">
-                                                        <Image id={skillImageId} variant="skill-icon" className="w-full h-full object-contain filter drop-shadow" />
-                                                    </div>
+                                {@const skillMeta = (Array.isArray(targetCharData?.skills) ? targetCharData.skills[idx] : targetCharData?.skills?.[skillKey]) || charDetails?.skills?.[skillKey] || charLocale?.skills?.[skillKey] || { name: skillKey }}
+                                {@const skillTypeMap = { basicAttack: "skill_type_normal_attack", battleSkill: "skill_type_normal_skill", comboSkill: "skill_type_combo_skill", ultimate: "skill_type_ultimate_skill" }}
+                                {@const skillTypeKey = skillTypeMap[skillKey]}
+                                {@const skillLvl = detailedChar?.userSkills?.[skillTypeKey]?.level || (Array.isArray(detailedChar?.skills) ? detailedChar.skills.find(s => s.type === skillTypeKey)?.level : null) || detailedChar?.userSkills?.[skillMeta?.id]?.level || detailedChar?.userSkills?.[skillKey]?.level || 1}
+                                {@const skillImageId = skillKey === "basicAttack" ? (opData?.weapon || "sword") : `${svelteId}_${skillKey}`}
+                                {@const currentElement = skillMeta?.elementType || skillMeta?.property?.key?.replace("skill_property_", "") || targetCharData?.property?.key?.replace("char_property_", "") || opData?.element || "physical"}
+                                {@const currentColor = getHexColorByElement(currentElement) || "#5E5D5D"}
+                                {@const isUltimate = skillKey === "ultimate"}
+                                {@const skillStats = getSkillStatsList(skillKey, skillLvl, charDetails, charLocale, $currentLocale)}
+                                
+                                <Tooltip>
+                                    <div class="flex flex-col items-center group relative">
+                                        <div class="w-14 h-14 shrink-0 flex items-center justify-center relative">
+                                            <div
+                                                class="absolute inset-0 rounded-full border-[2.5px] border-transparent"
+                                                style="background: conic-gradient(from 225deg, #d1d5db 270deg, transparent 0deg) border-box;
+                                                mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+                                                -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+                                                -webkit-mask-composite: destination-out;
+                                                mask-composite: exclude;"
+                                            ></div>
+                                            
+                                            <div class="w-[82%] h-[82%] rounded-full bg-black/35 relative overflow-hidden flex items-center justify-center border border-white/5 shadow-md">
+                                                {#if isUltimate}
+                                                    <div class="absolute inset-0" style="background-color: {currentColor}"></div>
+                                                {:else}
+                                                    <div class="absolute inset-0" style="background-color: {currentColor}; clip-path: polygon(50% 50%, -100% 100%, 200% 100%);"></div>
+                                                {/if}
+                                                <div class="relative z-10 w-[85%] h-[85%] flex items-center justify-center">
+                                                    <Image id={skillImageId} variant="skill-icon" className="w-full h-full object-contain filter drop-shadow" />
                                                 </div>
                                             </div>
+                                        </div>
 
-                                            <div class="flex items-center justify-center select-none mt-[-10px]">
-                                                {#if skillLvl >= 10}
-                                                    <div class="w-6 h-6 rounded-full bg-black/60 border border-white/10 flex flex-col items-center justify-center scale-95 shadow-md z-10 relative">
-                                                        <div class="flex flex-col items-center mt-[-1px]">
-                                                            <svg width="7" height="7" viewBox="0 0 24 24"><path d="M12 2L21 7V17L12 22L3 17V7L12 2Z" fill={(skillLvl - 9) > 0 ? "#FFFFFF" : "rgba(255,255,255,0.1)"} stroke={(skillLvl - 9) > 0 ? "#FFFFFF" : "rgba(255,255,255,0.25)"} stroke-width="2.5" /></svg>
-                                                            <div class="flex">
-                                                                <svg width="7" height="7" viewBox="0 0 24 24"><path d="M12 2L21 7V17L12 22L3 17V7L12 2Z" fill={(skillLvl - 9) > 1 ? "#FFFFFF" : "rgba(255,255,255,0.1)"} stroke={(skillLvl - 9) > 1 ? "#FFFFFF" : "rgba(255,255,255,0.25)"} stroke-width="2.5" /></svg>
-                                                                <svg width="7" height="7" viewBox="0 0 24 24"><path d="M12 2L21 7V17L12 22L3 17V7L12 2Z" fill={(skillLvl - 9) > 2 ? "#FFFFFF" : "rgba(255,255,255,0.1)"} stroke={(skillLvl - 9) > 2 ? "#FFFFFF" : "rgba(255,255,255,0.25)"} stroke-width="2.5" /></svg>
-                                                            </div>
+                                        <div class="flex items-center justify-center select-none mt-[-10px]">
+                                            {#if skillLvl >= 10}
+                                                <div class="w-6 h-6 rounded-full bg-black/60 border border-white/10 flex flex-col items-center justify-center scale-95 shadow-md z-10 relative">
+                                                    <div class="flex flex-col items-center mt-[-1px]">
+                                                        <svg width="7" height="7" viewBox="0 0 24 24"><path d="M12 2L21 7V17L12 22L3 17V7L12 2Z" fill={(skillLvl - 9) > 0 ? "#FFFFFF" : "rgba(255,255,255,0.1)"} stroke={(skillLvl - 9) > 0 ? "#FFFFFF" : "rgba(255,255,255,0.25)"} stroke-width="2.5" /></svg>
+                                                        <div class="flex">
+                                                            <svg width="7" height="7" viewBox="0 0 24 24"><path d="M12 2L21 7V17L12 22L3 17V7L12 2Z" fill={(skillLvl - 9) > 1 ? "#FFFFFF" : "rgba(255,255,255,0.1)"} stroke={(skillLvl - 9) > 1 ? "#FFFFFF" : "rgba(255,255,255,0.25)"} stroke-width="2.5" /></svg>
+                                                            <svg width="7" height="7" viewBox="0 0 24 24"><path d="M12 2L21 7V17L12 22L3 17V7L12 2Z" fill={(skillLvl - 9) > 2 ? "#FFFFFF" : "rgba(255,255,255,0.1)"} stroke={(skillLvl - 9) > 2 ? "#FFFFFF" : "rgba(255,255,255,0.25)"} stroke-width="2.5" /></svg>
                                                         </div>
                                                     </div>
-                                                {:else}
-                                                    <div class="w-6 h-6 rounded-full bg-black/60 border border-white/10 flex items-center justify-center shadow-md z-10 relative">
-                                                        <span class="text-xs font-black text-white/90 font-nums mt-[1px]">{skillLvl}</span>
-                                                    </div>
-                                                {/if}
-                                            </div>
+                                                </div>
+                                            {:else}
+                                                <div class="w-6 h-6 rounded-full bg-black/60 border border-white/10 flex items-center justify-center shadow-md z-10 relative">
+                                                    <span class="text-xs font-black text-white/90 font-nums mt-[1px]">{skillLvl}</span>
+                                                </div>
+                                            {/if}
                                         </div>
-                                        <div slot="content" class="flex flex-col gap-1 text-left max-w-[280px]" use:hyperlinkAction>
-                                            <div class="flex items-center gap-1.5 border-b border-white/10 pb-1 mb-1 font-sans">
-                                                <span class="px-1.5 py-0.5 bg-white/10 text-white rounded text-[10px] font-bold">
-                                                    {$t(`menu.${skillKey}`) || skillKey}
-                                                </span>
-                                                <span class="font-bold text-[#FFE145]">{charLocale?.skills?.[skillKey]?.name || skillMeta.name || "Skill"}</span>
-                                                <span class="text-xs text-gray-400 font-nums">(Lv. {skillLvl})</span>
-                                            </div>
+                                    </div>
+                                    <div slot="content" class="flex flex-col gap-1 text-left max-w-[280px]" use:hyperlinkAction>
+                                        <div class="flex items-center gap-1.5 border-b border-white/10 pb-1 mb-1 font-sans">
+                                            <span class="px-1.5 py-0.5 bg-white/10 text-white rounded text-[10px] font-bold">
+                                                {$t(`menu.${skillKey}`)}
+                                            </span>
+                                            <span class="font-bold text-[#FFE145]">{charLocale?.skills?.[skillKey]?.name || skillMeta?.name || "Skill"}</span>
+                                            <span class="text-xs text-gray-400 font-nums">(Lv. {skillLvl})</span>
+                                        </div>
                                             <span class="text-xs leading-relaxed text-gray-200">
                                                 {@html parseRichText(getSkillDescription(skillKey, skillLvl))}
                                             </span>
@@ -814,7 +1013,6 @@
                                             {/if}
                                         </div>
                                     </Tooltip>
-                                {/if}
                             {/each}
                         </div>
 
@@ -822,10 +1020,10 @@
                             <div class="flex flex-col items-start select-none justify-end pb-1">
                                 <div class="flex items-baseline gap-1.5">
                                     <span class="text-[11px] font-bold text-white/50 uppercase tracking-wider" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.8);">Lv.</span>
-                                    <span class="text-[42px] font-light text-white leading-none tracking-tighter font-nums" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.9);">{selectedChar.level}<span class="text-[22px] text-white/40 font-normal">/{({ 4: 90, 3: 80, 2: 60, 1: 40, 0: 20 }[Number(selectedChar.evolvePhase)] ?? 90)}</span></span>
+                                    <span class="text-[42px] font-light text-white leading-none tracking-tighter font-nums" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.9);">{selectedChar.level}<span class="text-[22px] text-white/40 font-normal">/{({ 4: 90, 3: 80, 2: 60, 1: 40, 0: 20 }[evolvePhase] ?? 90)}</span></span>
                                 </div>
                             </div>
-                            <AscensionIcon ascension={selectedChar.evolvePhase || 0} size={56} className="pb-1" />
+                            <AscensionIcon ascension={evolvePhase} size={56} className="pb-1 text-white" />
                         </div>
                     </div>
 
@@ -833,9 +1031,9 @@
                         {#if talentsList && talentsList.length > 0}
                             {#each talentsList as talent}
                                 <Tooltip>
-                                    <div class="group relative cursor-pointer transition-transform duration-200 hover:scale-105 select-none">
+                                    <div class="group relative select-none">
                                         {#if talent.type === "cultivation"}
-                                            <div class="w-[35px] h-[35px] flex items-center justify-center {talent.currentLevel === 0 ? 'opacity-40 grayscale' : ''}">
+                                            <div class="w-[35px] h-[35px] flex items-center justify-center {talent.currentLevel === 0 ? 'opacity-80 grayscale' : ''}">
                                                 <Image id={talent.localImageId || talent.iconUrl} interactive={true} variant="fac-skill" className="max-w-full max-h-full object-contain" />
                                             </div>
                                             {#if talent.name}
@@ -848,7 +1046,7 @@
                                                 {/if}
                                             {/if}
                                         {:else if talent.type === "ability"}
-                                            <div class="w-[35px] h-[35px] rounded-full bg-[#F3CE00] border-[3px] border-[#D5B500] overflow-hidden flex items-center justify-center shadow-sm p-[2px] {talent.activeCount === 0 ? 'opacity-40 grayscale' : ''}">
+                                            <div class="w-[35px] h-[35px] rounded-full bg-[#F3CE00] border-[3px] border-[#D5B500] overflow-hidden flex items-center justify-center shadow-sm p-[2px] {talent.activeCount === 0 ? 'opacity-80 grayscale' : ''}">
                                                 <Image id={talent.localImageId || talent.iconUrl} interactive={true} variant="attribute-icon" className="w-full h-full object-cover rounded-full" />
                                             </div>
                                             {#if talent.activeCount > 0}
@@ -857,7 +1055,7 @@
                                                 </div>
                                             {/if}
                                         {:else}
-                                            <div class="w-[35px] h-[35px] rounded-full bg-[#F3CE00] border-[3px] border-[#D5B500] overflow-hidden flex items-center justify-center shadow-sm p-[2px] {talent.currentLevel === 0 ? 'opacity-40 grayscale' : ''}">
+                                            <div class="w-[35px] h-[35px] rounded-full bg-[#F3CE00] border-[3px] border-[#D5B500] overflow-hidden flex items-center justify-center shadow-sm p-[2px] {talent.currentLevel === 0 ? 'opacity-80 grayscale' : ''}">
                                                 <Image id={talent.localImageId || talent.iconUrl} interactive={true} variant="skill-icon" className="w-full h-full object-cover rounded-full" />
                                             </div>
                                             {#if talent.currentLevel > 0}
@@ -887,54 +1085,58 @@
                     {@const wpnName = $t(`weaponsList.${wpnStatic?.id}`) !== `weaponsList.${wpnStatic?.id}` ? $t(`weaponsList.${wpnStatic?.id}`) : (wpnStatic?.name || wpn.id)}
                     {@const wpnStats = getWeaponStatsToRender(wpn, wpnStatic, weaponDetails, opData.class)}
                     {@const baseAtkStat = wpnStats.find(s => s.key === 'baseAtk')}
+                    {@const wpnTerms = (wpn.weaponTerms && wpn.weaponTerms.length > 0) ? wpn.weaponTerms : (getWeaponTerms ? getWeaponTerms(wpn) : [])}
                     
                     <Tooltip class="w-full">
-                        <a href="/weapons/{wpnStatic?.id}?level={wpn.level}&refine={wpn.refineLevel}" class="relative pl-8 pr-3 py-3 flex flex-row items-stretch justify-between gap-3 rounded-xl max-h-[140px] hover:bg-white/5 transition-all w-full select-none"
+                        <a href="/weapons/{wpnStatic?.id}?level={wpn.level}&refine={wpn.refineLevel}&skills={wpnTerms.join(',')}" class="relative pl-14 pr-3 py-2 flex flex-col justify-between gap-0.5 rounded-xl hover:bg-white/5 transition-all w-full select-none"
                            style="background: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(20,20,20,0.85) 100%) padding-box, linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0.15)) border-box;">
                             
-                            <div class="flex flex-col justify-end items-start shrink-0">
-                                <div class="flex flex-col items-start leading-none select-none">
-                                    <span class="text-[9px] font-black text-white/50 uppercase tracking-wider" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.8);">Lv.</span>
-                                    <span class="text-[36px] font-black text-white leading-none tracking-tighter" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.9);">{wpn.level}</span>
-                                    <div class="w-12 h-[4px] mt-1 rounded" style="background-color: {getRarityColor(wpnStatic?.rarity || wpn.rarity || 5)};"></div>
-                                </div>
-                            </div>
-
-                            <div class="flex flex-col flex-1 min-w-0 ml-1">
-                                <div class="flex flex-col items-end w-full min-w-0">
-                                    <div class="flex flex-row-reverse overflow-visible w-full mr-[-40px]">
-                                        <h4 class="text-md font-black text-white leading-tight text-nowrap shrink-0 mr-[-22px]" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.85);">
-                                            {wpnName}
-                                        </h4>
-                                    </div>
-                                    <div class="flex items-center mt-2 select-none -space-x-1 mr-[-67px] z-40">
-                                        {#each Array(wpnStatic?.rarity || wpn.rarity || 5) as _}
-                                            <Icon name="star" class="shrink-0 w-7 h-7 text-gray-600 dark:text-white" />
-                                        {/each}
+                            <div class="flex flex-row items-stretch justify-between gap-3 w-full">
+                                <div class="flex flex-col justify-end items-start shrink-0">
+                                    <div class="flex flex-col items-start leading-none select-none">
+                                        <span class="text-[9px] font-black text-white/50 uppercase tracking-wider" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.8);">Lv.</span>
+                                        <span class="text-[32px] font-black text-white leading-none tracking-tighter" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.9);">{wpn.level}</span>
+                                        <div class="w-12 h-[4px] mt-1 rounded" style="background-color: {getRarityColor(wpnStatic?.rarity || wpn.rarity || 5)};"></div>
                                     </div>
                                 </div>
 
-                                <div class="flex items-center gap-3 w-full mt-5 select-none ml-[-6px] justify-between z-30">
-                                    <div class="flex items-center justify-center">
-                                        {#if wpn.gem && wpn.gem.gemData}
-                                            {@const gemRarity = parseInt(wpn.gem.gemData.templateId?.replace("item_gem_rarity_", "")) || wpn.gem.gemData.rarity || 4}
+                                <div class="flex flex-col justify-between flex-1 min-w-0 ml-1">
+                                    <div class="flex flex-col items-end w-full min-w-0">
+                                        <div class="flex flex-row-reverse overflow-visible w-full mr-[-30px]">
+                                            <h4 class="text-md font-black text-white leading-tight text-nowrap shrink-0" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.85);">
+                                                {wpnName}
+                                            </h4>
+                                        </div>
+                                        <div class="flex items-center mt-2 select-none -space-x-1 mr-[-33px] z-40">
+                                            {#each Array(wpnStatic?.rarity || wpn.rarity || 5) as _}
+                                                <Icon name="star" class="shrink-0 w-7 h-7 text-white" />
+                                            {/each}
+                                        </div>
+                                    </div>
+
+                                    <div class="flex items-center justify-end gap-1.5">
+                                        {#if wpn.gem && (wpn.gem.gemData || wpn.gem.templateId)}
+                                            {@const gemTemplate = wpn.gem.gemData?.templateId || wpn.gem.templateId}
+                                            {@const gemRarity = parseInt(gemTemplate?.replace("item_gem_rarity_", "")) || wpn.gem.gemData?.rarity || wpn.gem.rarity || 4}
                                             {@const gemColor = getRarityColor(gemRarity)}
-                                            {@const localIcon = getGemIcon(wpn.gem.gemData)}
-                                            <div class="relative w-8 h-8 rounded-md border-b-2 flex items-center justify-center bg-black/40 shadow-inner overflow-hidden transition-transform" style="border-color: {gemColor}; box-shadow: 0 0 4px {gemColor}33;">
+                                            {@const localIcon = getGemIcon(wpn.gem.gemData || wpn.gem)}
+                                            <div class="flex items-left mt-6 uppercase select-none text-xs text-gray-400 space-x-1 z-40">{$t("stats.essence")}</div>
+                                            <div class="shrink-0 relative w-10 h-10 rounded border-b-2 mr-[-33px] flex items-center justify-center bg-black/40 shadow-inner overflow-hidden transition-transform" style="border-color: {gemColor}; box-shadow: 0 0 4px {gemColor}33;">
                                                 <img 
                                                     src={getImagePath('item_gem_rarity_' + gemRarity, 'essence-type-icon')} 
                                                     alt="" 
                                                     class="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none" 
                                                 />
-                                                {#if wpn.gem.gemData.icon}
+                                                {#if wpn.gem.gemData?.icon || wpn.gem.iconUrl}
                                                     <img 
-                                                        src={getImagePath(localIcon, 'essence-icon') || wpn.gem.gemData.icon} 
-                                                        alt={wpn.gem.gemData.name} 
+                                                        src={getImagePath(localIcon, 'essence-icon') || wpn.gem.gemData?.icon || wpn.gem.iconUrl} 
+                                                        alt={wpn.gem.gemData?.name || wpn.gem.name || ''} 
                                                         referrerpolicy="no-referrer" 
-                                                        class="relative z-10 w-7 h-7 object-contain left-0.5 bottom-0.5" 
+                                                        class="relative z-10 w-6 h-6 object-contain left-0.5 bottom-0.5" 
                                                         on:error={(e) => {
-                                                            if (e.target.src !== wpn.gem.gemData.icon) {
-                                                                e.target.src = wpn.gem.gemData.icon;
+                                                            const fallback = wpn.gem.gemData?.icon || wpn.gem.iconUrl;
+                                                            if (fallback && e.target.src !== fallback) {
+                                                                e.target.src = fallback;
                                                             }
                                                         }}
                                                     />
@@ -943,120 +1145,230 @@
                                                 {/if}
                                             </div>
                                         {:else}
-                                            <div class="relative w-8 h-8 rounded-md border border-dashed border-white/20 bg-black/20 flex items-center justify-center text-white/20 hover:border-white/40 hover:text-white/40 transition-colors cursor-pointer">
-                                                <Icon name="noData" class="shrink-0 w-3 h-3" />
+                                           <div class="flex items-left mt-6 uppercase select-none text-xs text-gray-400 space-x-1 z-40">{$t("stats.essence")}</div> 
+                                            <div class="mr-[-33px] relative w-10 h-10 rounded border border-dashed border-white/20 bg-black/20 flex items-center justify-center text-white/20 hover:border-white/40 hover:text-white/40 transition-colors cursor-pointer">
+                                                <Icon name="noData" class="shrink-0 w-4 h-4" />
                                             </div>
                                         {/if}
                                     </div>
-                                    
-                                    {#if baseAtkStat}
-                                        <div class="flex items-center">
-                                            <div class="flex items-center gap-1.5 text-[13px] font-black text-white font-nums bg-gray-200/50 px-1.5 py-1.5 rounded leading-none w-fit">
-                                                <Icon name="atk" class="w-3.5 h-3.5 text-white/90" />
-                                            </div>
-                                            <span class="text-white ml-1.5 items-center text-[18px] font-nums">{baseAtkStat.value}</span>
+                                </div>
+
+                                <div class="flex items-center gap-2 shrink-0 ml-2 pr-2">
+                                    <div class="relative w-[110px] h-[110px] flex items-center justify-center shrink-0">
+                                        <div class="absolute top-0 right-0 z-10 flex flex-col items-end gap-1">
+                                            <PotentialIcon pot={wpn.refineLevel !== undefined ? wpn.refineLevel : 0} size={30} />
+
+                                            {#if wpnTerms && wpnTerms.length > 0}
+                                                <div class="flex flex-col items-center gap-1.5 mt-0.5">
+                                                    {#each wpnTerms as term}
+                                                        <div class="flex items-center gap-1.5 px-1 py-0.5 rounded-[4px]" style="background: linear-gradient(to right, transparent, #2D2D2B 35%);">
+                                                            <div class="w-[7px] h-[15px] rounded-full transform rotate-[40deg] border-[1.5px] transition-all duration-200 outline-none shrink-0 flex items-center justify-center bg-[#FFE145] border-[#FFE145] dark:bg-[#FFE145] dark:border-[#FFE145] shadow-sm"></div>
+                                                            <span class="pl-0.5 text-[12px] font-black text-[#FFE145] font-nums leading-none">{term}</span>
+                                                        </div>
+                                                    {/each}
+                                                </div>
+                                            {/if}
                                         </div>
-                                    {/if}
+
+                                        <img 
+                                            src={getWeaponIcon(wpn) || wpn.weaponData?.iconUrl || ''} 
+                                            alt="Weapon" 
+                                            class="w-full h-full object-contain pointer-events-none ml-5 mr-2"
+                                            on:error={(e) => { if (wpn.weaponData?.iconUrl && e.target.src !== wpn.weaponData.iconUrl) e.target.src = wpn.weaponData.iconUrl; }} 
+                                        />
+                                    </div>
                                 </div>
                             </div>
 
-                            <div class="flex items-center gap-2 shrink-0 ml-2 pr-5">
-                                <div class="relative w-[120px] h-[120px] flex items-center justify-center shrink-0">
-                                    <div class="absolute top-0 right-0 z-10">
-                                        <PotentialIcon pot={wpn.refineLevel !== undefined ? wpn.refineLevel : 0} size={30} />
+                            <div class="flex items-center gap-3 w-full select-none justify-between z-30 pt-1.5">
+                                {#if baseAtkStat}
+                                    <div class="flex items-center shrink-0">
+                                        <div class="flex items-center gap-1.5 text-[13px] font-black text-white font-nums bg-gray-200/50 px-1.5 py-1.5 rounded leading-none w-fit">
+                                            <Icon name="atk" class="w-3.5 h-3.5 text-white/90" />
+                                        </div>
+                                        <span class="text-white ml-1.5 items-center text-[18px] font-nums">{baseAtkStat.value}</span>
                                     </div>
-                                    <img 
-                                        src={getWeaponIcon(wpn) || wpn.weaponData?.iconUrl || ''} 
-                                        alt="Weapon" 
-                                        class="w-full h-full object-contain pointer-events-none ml-5"
-                                        on:error={(e) => { if (wpn.weaponData?.iconUrl && e.target.src !== wpn.weaponData.iconUrl) e.target.src = wpn.weaponData.iconUrl; }} 
-                                    />
+                                {/if}
+
+                                <div class="flex items-center gap-1.5 flex-wrap pr-1.5">
+                                    {#each wpnStats.filter(s => s.key !== 'baseAtk') as stat}
+                                        <div class="flex items-center gap-1 px-1.5 py-0.5">
+                                            {#if stat.icon === 'circle' || stat.icon === 'alldamagetakenscalar' || !stat.icon}
+                                                <div class="w-1.5 h-1.5 rounded-full bg-white/80 shrink-0"></div>
+                                            {:else}
+                                                <Icon name={stat.icon} class="w-3.5 h-3.5 text-white/90 shrink-0" />
+                                            {/if}
+                                            <span class="text-white font-nums text-[12px] font-bold leading-none">{stat.value}</span>
+                                        </div>
+                                    {/each}
                                 </div>
                             </div>
                         </a>
-                        <div slot="content" class="flex flex-col gap-2 text-left max-w-[280px] p-1 font-sans select-none">
-                            <div class="flex flex-col border-b border-white/10 pb-1 mb-0.5">
-                                <span class="font-bold text-[#FFE145] text-sm">{wpnName}</span>
-                                <span class="text-[10px] text-gray-400 font-medium font-nums leading-none mt-1">
-                                    Lv. {wpn.level} • P{wpn.refineLevel !== undefined ? wpn.refineLevel : 0}
-                                </span>
+                        <div slot="content" class="flex flex-col gap-2.5 text-left max-w-[320px] sm:max-w-[360px] p-1.5 font-sans select-none" use:hyperlinkAction>
+                            <div class="flex flex-col border-b border-white/10 pb-1.5 mb-0.5">
+                                <span class="font-bold text-[#FFE145] text-sm leading-tight">{wpnName}</span>
+                                <div class="flex items-center gap-2 text-xs font-nums mt-1 text-gray-300">
+                                    <span class="text-white font-bold">Lv. {wpn.level}</span>
+                                    <span class="text-gray-500">•</span>
+                                    <span class="text-[#FFE145] font-bold">P{wpn.refineLevel !== undefined ? wpn.refineLevel : 0}</span>
+                                    {#if baseAtkStat}
+                                        <span class="text-gray-500">•</span>
+                                        <span class="text-gray-300">{$t("stats.baseAtk")} <span class="text-[#38BDF8] font-bold">{baseAtkStat.value}</span></span>
+                                    {/if}
+                                </div>
                             </div>
-                            <div class="flex flex-col gap-1.5">
-                                {#each getWeaponStatsRanges(wpn, wpnStatic, weaponDetails, opData.class) as stat}
-                                    {@const currentStat = wpnStats.find(s => s.key === stat.key)}
-                                    <div class="flex items-center justify-between text-xs">
-                                        <div class="flex items-center gap-1.5 text-white/90">
-                                            <Icon name={stat.icon} class="w-3 h-3 text-gray-200" />
-                                            <span class="max-w-[90px] truncate">{stat.label}</span>
+                            {@const weaponSkills = getWeaponSkillsToRender(wpn, wpnStatic, weaponDetails, opData.class)}
+                            {#if weaponSkills.length > 0}
+                                <div class="flex flex-col gap-2.5">
+                                    {#each weaponSkills as skill}
+                                        <div class="flex flex-col gap-0.5">
+                                            <div class="flex items-center justify-between gap-2">
+                                                <span class="font-bold text-white text-xs leading-snug">{skill.name}</span>
+                                                <span class="text-[10px] font-bold font-nums text-gray-400 shrink-0">{skill.rank}/9</span>
+                                            </div>
+                                            <div class="text-[11px] text-gray-300 leading-relaxed whitespace-pre-line">
+                                                {@html skill.descriptionHtml}
+                                            </div>
                                         </div>
-                                        <div class="font-nums flex items-center gap-1.5">
-                                            <span class="text-[#38BDF8] font-bold">+{stat.range}</span>
-
+                                    {/each}
+                                </div>
+                            {:else}
+                                <div class="flex flex-col gap-1.5">
+                                    {#each wpnStats as stat}
+                                        <div class="flex items-center justify-between text-xs">
+                                            <span class="text-white/90">{stat.label}</span>
+                                            <span class="text-[#38BDF8] font-bold font-nums">{stat.value}</span>
                                         </div>
-                                    </div>
-                                {/each}
-                            </div>
+                                    {/each}
+                                </div>
+                            {/if}
                         </div>
                     </Tooltip>
                 {:else}
                     <div class="flex flex-col gap-2 items-center justify-center bg-gradient-to-r from-transparent to-[#1a1a1a] border border-white/5 rounded-xl p-6 text-xs text-white/40 italic flex items-center justify-center min-h-[150px]">
                         <Icon name="noData" class="shrink-0 w-6 h-6" />
-                        {$t("profile.no_weapon") || "No weapon"}
+                        {$t("profile.no_weapon")}
                     </div>
                 {/if}
 
-                <div class="flex flex-col gap-1.5 flex-1">
+                <div class="grid grid-cols-2 gap-2 flex-1">
                     {#each ['bodyEquip', 'armEquip', 'firstAccessory', 'secondAccessory'] as eqKey}
-                        {@const equip = detailedChar?.[eqKey]}
-                        {#if equip && equip.equipData}
-                            {@const staticId = getStaticEquipId(equip.equipData)}
+                        {@const equip = detailedChar?.[eqKey] || selectedChar?.[eqKey]}
+                        {#if equip && (equip.equipData || equip.id)}
+                            {@const staticId = getStaticEquipId(equip.equipData) || (equipment[equip.id] ? equip.id : (equip.id?.startsWith('item_') ? equip.id : `item_${equip.id}`))}
                             {@const staticEquip = staticId ? equipment[staticId] : null}
                             {@const eqRarity = getEquipRarity(equip, staticEquip)}
-                            {@const tier = eqRarity < 5 ? 0 : (equip.enhanceStatus !== undefined ? Math.max(0, equip.enhanceStatus - 1) : getEquipTier(equip.equipData.level?.value || equip.equipData.level, eqRarity))}
+                            {@const tier = eqRarity < 5 ? 0 : getEquipTier(equip, staticEquip)}
                             {@const rarityColor = eqRarity === 6 ? "#F4700C" : (eqRarity === 5 ? "#F9B90C" : (eqRarity === 4 ? "#9253F1" : (eqRarity === 3 ? "#26BAFB" : (eqRarity === 2 ? "#AABD00" : "#8F8F8F"))))}
                             {@const statsToRender = (() => {
                                 let list = [];
-                                const staticDefAttr = staticEquip?.displayAttr?.find(a => a.attrType.toLowerCase() === "def");
-                                if (staticDefAttr) {
-                                    list.push({ propKey: "equip_attr_def", statIcon: "def", statVal: staticDefAttr.values[tier] || staticDefAttr.values[0] });
+                                if (staticEquip && staticEquip.displayAttr) {
+                                    for (const attr of staticEquip.displayAttr) {
+                                        const isDef = attr.attrType.toLowerCase() === "def";
+                                        const val = attr.values ? (isDef ? attr.values[0] : (attr.values[tier] !== undefined ? attr.values[tier] : attr.values[0])) : undefined;
+                                        if (val !== undefined && val !== null && val !== 0) {
+                                            const iconName = attr.attrType.toLowerCase() === "maxhp" ? "hp" : attr.attrType.toLowerCase();
+                                            const isAllDamage = attr.attrType.toLowerCase() === "alldamagetakenscalar";
+                                            const displayVal = isAllDamage ? 1 - val : val;
+                                            
+                                            let formattedVal = "";
+                                            const num = Number(displayVal);
+                                            if (!isNaN(num)) {
+                                                if (Math.abs(num) > 0 && Math.abs(num) < 1) {
+                                                    formattedVal = `+${Math.round(num * 1000) / 10}%`;
+                                                } else {
+                                                    formattedVal = `+${Math.round(num * 10) / 10}`;
+                                                }
+                                            } else {
+                                                formattedVal = `+${displayVal}`;
+                                            }
+                                            
+                                            const resolvedIcon = resolveAttributeIcon(attr.attrType, iconName);
+                                            list.push({
+                                                attrType: attr.attrType,
+                                                icon: resolvedIcon,
+                                                value: formattedVal
+                                            });
+                                        }
+                                    }
                                 } else {
-                                    list.push({ propKey: "equip_attr_def", statIcon: "def", statVal: 10 + tier * 5 });
-                                }
-                                const subProperties = (equip.equipData.properties || []).filter(p => !p.toLowerCase().includes("def"));
-                                for (const propKey of subProperties) {
-                                    const statIcon = getStatIcon(propKey);
-                                    const displayAttr = matchDisplayAttr(propKey, staticEquip?.displayAttr);
-                                    const statVal = displayAttr ? displayAttr.values[tier] || displayAttr.values[0] : null;
-                                    list.push({ propKey, statIcon, statVal });
+                                    const staticDefAttr = staticEquip?.displayAttr?.find(a => a.attrType.toLowerCase() === "def");
+                                    if (staticDefAttr) {
+                                        list.push({ attrType: "def", icon: "def", value: `+${staticDefAttr.values[tier] || staticDefAttr.values[0]}` });
+                                    } else {
+                                        list.push({ attrType: "def", icon: "def", value: `+${10 + tier * 5}` });
+                                    }
+                                    const subProperties = (equip.equipData?.properties || []).filter(p => !p.toLowerCase().includes("def"));
+                                    for (const propKey of subProperties) {
+                                        const statIcon = resolveAttributeIcon(propKey, "circle");
+                                        const displayAttr = matchDisplayAttr(propKey, staticEquip?.displayAttr);
+                                        const statVal = displayAttr ? displayAttr.values[tier] || displayAttr.values[0] : null;
+                                        if (statVal !== null && statVal !== undefined) {
+                                            list.push({ attrType: propKey, icon: statIcon || "circle", value: `+${statVal}` });
+                                        }
+                                    }
                                 }
                                 return list;
                             })()}
                             
-                            <Tooltip class="w-full">
-                                <a href="/equipment/{staticId || equip.equipId}" class="relative flex items-center justify-between p-1 rounded-xl pl-3 pr-4 hover:bg-white/5 transition-all cursor-pointer min-h-[42px] min-w-0 w-full"
+                            <Tooltip class="w-full h-full">
+                                <a href="/equipment/{staticId || equip.equipId}" class="relative flex items-center gap-3 p-2.5 rounded-xl hover:bg-white/5 transition-all cursor-pointer min-w-0 w-full h-full"
                                    style="background: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(20,20,20,0.85) 100%) padding-box, linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0.15)) border-box;">
-                                    <div class="flex items-center gap-3 min-w-0 flex-1">
-                                        <div class="flex flex-col items-center justify-center shrink-0">
-                                            <div class="relative w-12 h-12 flex items-center justify-center">
-                                                <img src={staticId ? getImagePath(staticId, 'equipment') : (equip.equipData?.iconUrl || '')} alt="Equip" class="w-full h-full object-contain pointer-events-none" on:error={(e) => { if (equip.equipData?.iconUrl) e.target.src = equip.equipData.iconUrl; }} />
+                                    <div class="flex flex-col items-start justify-center shrink-0">
+                                        {#if eqRarity >= 5}
+                                            <div class="w-[26px] h-[18px] flex shrink-0">
+                                                <svg class="w-full h-full" viewBox="0 0 54 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <rect x="33.3789" y="15" width="4.23793" height="14.7562" rx="2.11897" transform="rotate(30 33.3789 15)" fill={tier >= 1 ? "#26BAFB" : "#8F8F8F"} />
+                                                    <rect x="41.8555" y="15" width="4.23793" height="14.7562" rx="2.11897" transform="rotate(30 41.8555 15)" fill={tier >= 2 ? "#26BAFB" : "#8F8F8F"} />
+                                                    <rect x="50.3281" y="15" width="4.23793" height="14.7562" rx="2.11897" transform="rotate(30 50.3281 15)" fill={tier >= 3 ? "#26BAFB" : "#8F8F8F"} />
+                                                    <path d="M28 17L20 29H8L0 17L8 5H20L28 17ZM14 12C11.2386 12 9 14.2386 9 17C9 19.7614 11.2386 22 14 22C16.7614 22 19 19.7614 19 17C19 14.2386 16.7614 12 14 12Z" fill={tier >= 3 ? "#26BAFB" : "#8F8F8F"} />
+                                                    {#if tier >= 1}
+                                                        <path d="M28.0068 17L20.0068 29H8.00684L4.39844 23.5859L9.8877 19.834C10.7895 21.1422 12.2978 22 14.0068 22C16.7683 22 19.0068 19.7614 19.0068 17C19.0068 15.9584 18.6885 14.9912 18.6885 14.1904L23.625 10.4453L28.0068 17Z" fill="#26BAFB" />
+                                                    {/if}
+                                                    <path d="M31 0L36.1962 9H25.8038L31 0Z" fill={tier >= 3 ? "#26BAFB" : "#8F8F8F"} />
+                                                    {#if tier >= 1 && tier < 3}
+                                                        <path d="M33.5981 4.5L36.197 9H25.8047L33.5981 4.5Z" fill="#26BAFB" />
+                                                    {/if}
+                                                </svg>
                                             </div>
-                                            <div class="w-8 h-[3px] rounded mt-0.5" style="background-color: {rarityColor};"></div>
-                                        </div>
+                                        {:else}
+                                            <div class="h-[12px] mb-1"></div>
+                                        {/if}
                                         
-                                        <div class="flex flex-col items-start justify-start min-w-0 flex-1 select-none text-left">
-                                            <span class="text-sm font-bold text-white truncate font-sdk block w-full" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.8);">{getEquipName(staticId, equip.equipData?.name)}</span>
-                                            <span class="text-[10px] text-white/40 font-sans justify-start block w-full truncate">
-                                                {$t(`equipmentTypes.${eqKey === 'bodyEquip' ? 'body' : (eqKey === 'armEquip' ? 'hand' : 'edc')}`)}
-                                            </span>
+                                        <div class="relative w-16 h-16 flex items-center justify-center">
+                                            <img src={staticId ? getImagePath(staticId, 'equipment') : (equip.equipData?.iconUrl || '')} alt="Equip" class="w-full h-full object-contain pointer-events-none scale-125" on:error={(e) => { if (equip.equipData?.iconUrl) e.target.src = equip.equipData.iconUrl; }} />
+                                        </div>
+                                        <div class="w-10 h-[4px] rounded mt-1" style="background-color: {rarityColor};"></div>
+                                    </div>
+
+                                    <div class="flex flex-col justify-center flex-1 min-w-0 select-none">
+                                        <div class="flex flex-col gap-2">
+                                            {#each statsToRender as stat}
+                                                <div class="flex items-center gap-1.5 text-xs text-white/90">
+                                                    {#if stat.icon === 'circle' || stat.icon === 'alldamagetakenscalar' || !stat.icon}
+                                                        <div class="w-1.5 h-1.5 rounded-full bg-white/80 shrink-0"></div>
+                                                    {:else}
+                                                        <Icon name={stat.icon} class="w-3.5 h-3.5 text-white/80 shrink-0" />
+                                                    {/if}
+                                                    <span class="font-nums font-bold leading-none text-xs">{stat.value}</span>
+                                                </div>
+                                            {/each}
                                         </div>
                                     </div>
                                 </a>
                                 <div slot="content" class="flex flex-col gap-2 text-left max-w-[320px] p-1 font-sans select-none" use:hyperlinkAction>
                                     {#if staticEquip && staticEquip.pack && staticEquip.pack !== "none" && equipLocaleData[staticId]?.setBonus}
+                                        {@const packCount = getEquippedPackCount(staticEquip.pack)}
+                                        {@const isSetComplete = packCount >= 3}
                                         <div class="flex flex-col gap-0.5">
-                                            <span class="text-[13px] font-bold text-[#FFE145] leading-tight">
-                                                {tOrFallback(`packs.${staticEquip.pack}`, staticEquip.pack)}
-                                            </span>
+                                            <div class="flex items-center gap-1.5">
+                                                <span class="text-[13px] font-bold text-[#FFE145] leading-tight">
+                                                    {tOrFallback(`packs.${staticEquip.pack}`, staticEquip.pack)}
+                                                </span>
+                                                <span class="text-xs font-nums font-bold {isSetComplete ? 'text-[#38BDF8]' : 'text-gray-400'}">
+                                                    ({packCount}/3)
+                                                </span>
+                                            </div>
                                             <span class="text-xs leading-relaxed text-gray-200">
                                                 {@html parseRichText(interpolateBlackboard(equipLocaleData[staticId].setBonus, staticEquip.blackboard || {}))}
                                             </span>
@@ -1145,23 +1457,34 @@
                                                             <Icon name={iconName} class="w-3 h-3 text-gray-200" />
                                                             <span class="max-w-[100px] truncate">{tOrFallback(`equipSkills.${attr.attrType}`, attr.attrType)}</span>
                                                         </td>
-                                                        {#each itemTiers as valIndex}
-                                                            {@const val = attr.values[valIndex]}
-                                                            {@const isAllDamage = attr.attrType.toLowerCase() === "alldamagetakenscalar"}
-                                                            {@const displayVal = isAllDamage && val !== undefined ? 1 - val : val}
-                                                            {@const isCurrent = valIndex === tier}
-                                                            <td class="py-1 px-0.5 text-center font-nums {isCurrent ? 'text-[#38BDF8] font-bold bg-[#38BDF8]/10' : 'text-white/60'}">
-                                                                {#if isDef && valIndex > 0}
+                                                        {#if isDef}
+                                                            {@const defVal = attr.values[0]}
+                                                            <td colspan={itemTiers.length} class="py-1 px-0.5 text-center font-nums text-[#38BDF8] font-bold bg-[#38BDF8]/10">
+                                                                {#if defVal === 0 || defVal === undefined || defVal === null}
                                                                     -
-                                                                {:else if displayVal === 0 || !displayVal}
-                                                                    -
-                                                                {:else if Math.abs(displayVal) > 0 && Math.abs(displayVal) < 1}
-                                                                    {Math.round(displayVal * 1000) / 10}%
+                                                                {:else if Math.abs(defVal) > 0 && Math.abs(defVal) < 1}
+                                                                    {Math.round(defVal * 1000) / 10}%
                                                                 {:else}
-                                                                    {Math.round(displayVal * 10) / 10}
+                                                                    {Math.round(defVal * 10) / 10}
                                                                 {/if}
                                                             </td>
-                                                        {/each}
+                                                        {:else}
+                                                            {#each itemTiers as valIndex}
+                                                                {@const val = attr.values[valIndex]}
+                                                                {@const isAllDamage = attr.attrType.toLowerCase() === "alldamagetakenscalar"}
+                                                                {@const displayVal = isAllDamage && val !== undefined ? 1 - val : val}
+                                                                {@const isCurrent = valIndex === tier}
+                                                                <td class="py-1 px-0.5 text-center font-nums {isCurrent ? 'text-[#38BDF8] font-bold bg-[#38BDF8]/10' : 'text-white/60'}">
+                                                                    {#if displayVal === 0 || displayVal === undefined || displayVal === null}
+                                                                        -
+                                                                    {:else if Math.abs(displayVal) > 0 && Math.abs(displayVal) < 1}
+                                                                        {Math.round(displayVal * 1000) / 10}%
+                                                                    {:else}
+                                                                        {Math.round(displayVal * 10) / 10}
+                                                                    {/if}
+                                                                </td>
+                                                            {/each}
+                                                        {/if}
                                                     </tr>
                                                 {/each}
                                             {/if}
@@ -1170,14 +1493,14 @@
                                 </div>
                             </Tooltip>
                         {:else}
-                            <div class="flex items-center gap-2 bg-[#202020]/20 border border-dashed border-white/5 p-1 rounded-xl pl-3 pr-4 min-h-[42px] text-[11px] text-white/30 select-none h-full">
-                                <div class="w-10 h-10 flex items-center justify-center border border-dashed border-white/5 rounded bg-black/10 shrink-0">
+                            <div class="flex items-center gap-3 bg-[#202020]/20 border border-dashed border-white/5 p-2.5 rounded-xl text-xs text-white/30 select-none h-full min-h-[70px]">
+                                <div class="w-12 h-12 flex items-center justify-center border border-dashed border-white/5 rounded bg-black/10 shrink-0">
                                     <Icon name="noData" class="shrink-0 w-4 h-4 opacity-50" />
                                 </div>
                                 <div class="flex flex-col justify-center min-w-0">
-                                    <span class="font-sdk text-white/40">{$t("profile.empty_slot") || "Empty Slot"}</span>
-                                    <span class="text-[9px] uppercase tracking-wider text-white/20">
-                                        {$t(`equipmentTypes.${eqKey === 'bodyEquip' ? 'body' : (eqKey === 'armEquip' ? 'hand' : 'edc')}`) || ''}
+                                    <span class="font-sdk text-white/40 text-xs truncate">{$t("profile.empty_slot")}</span>
+                                    <span class="text-[10px] uppercase tracking-wider text-white/20 truncate">
+                                        {$t(`equipmentTypes.${eqKey === 'bodyEquip' ? 'body' : (eqKey === 'armEquip' ? 'hand' : 'edc')}`)}
                                     </span>
                                 </div>
                             </div>
@@ -1186,5 +1509,20 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="w-[950px] mx-auto flex justify-end mt-1.5">
+        <button
+            type="button"
+            on:click={handleShare}
+            class="flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold font-sdk transition-all duration-200 cursor-pointer bg-white/5 hover:bg-white/15 dark:bg-black/30 dark:hover:bg-black/50 text-gray-700 dark:text-gray-200 hover:text-black dark:hover:text-white border border-gray-200/40 dark:border-white/10 active:scale-95 shadow-sm"
+        >
+            {#if copied}
+                <Icon name="success" class="w-3.5 h-3.5 text-[#FFE145]" />
+            {:else}
+                <Icon name="share" class="w-3.5 h-3.5" />
+            {/if}
+            <span>{$t("profile.share")}</span>
+        </button>
     </div>
 </div>

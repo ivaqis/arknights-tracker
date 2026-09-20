@@ -95,7 +95,7 @@ export function parseRichText(text) {
         "ba.key": "text-[#00a8ff] font-bold",
         "ba.conduct": "text-[#ffcc00] font-bold",
         "ba.spelldmg": "text-[#E3BC55] font-bold",
-        "ba.info": "text-gray-500 dark:text-[#A0A0A0] italic font-normal text-[13px]",
+        "ba.info": "text-gray-500 dark:text-[#A0A0A0] italic font-normal text-[0.9em]",
         "ba.heal": "text-[#ade131] font-bold",
         "ba.consume": "text-[#E3BC55] font-bold",
         "ba.noguard": "text-[#e8ceb0] font-bold",

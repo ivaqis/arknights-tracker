@@ -73,16 +73,16 @@ export class UpdateUserProfile
         }
 
         if (this._newUid) {
-            const exists = await this._database.users.isUserExist(this._uid);
+            const exists = await this._database.users.isUserExist(this._newUid);
 
             if (exists) {
                 this.status = 400;
-                this.message = "User already exists";
+                this.message = "Username already exists";
 
                 return;
             }
 
-            const isValid = bannedWords.containsAnyBanned(this._newUid);
+            const isValid = !bannedWords.containsAnyBanned(this._newUid);
 
             if (!isValid) {
                 this.status = 400;

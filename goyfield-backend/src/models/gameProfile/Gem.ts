@@ -8,11 +8,19 @@ export class Gem implements IEntityClass<GemEntity> {
     private readonly _id: string;
     private readonly _presetId: string;
     private readonly _iconUrl: string;
+    private readonly _templateId?: string;
+    private readonly _termId?: string;
+    private readonly _name?: string;
+    private readonly _terms?: Array<{ id: string, cost: number, name: string }>;
 
     private constructor(entity: GemEntity) {
         this._id = entity.id;
         this._presetId = entity.presetId;
         this._iconUrl = entity.iconUrl;
+        this._templateId = entity.templateId ?? entity.gemData?.templateId;
+        this._termId = entity.termId ?? entity.gemData?.termId;
+        this._name = entity.name ?? entity.gemData?.name;
+        this._terms = entity.terms;
     }
 
     public static getFromData(data?: GemData): Gem | null {
@@ -25,13 +33,18 @@ export class Gem implements IEntityClass<GemEntity> {
         if (!presetId) {
             logger.warn(`gemPreset not found:\n${JSON.stringify(data, undefined, 2)}`);
 
-            return null;
+            presetId = data.gemData.termId || data.id;
         }
 
         return this.getFromEntity({
             id: data.id,
             presetId: presetId,
-            iconUrl: data.gemData.icon
+            iconUrl: data.gemData.icon,
+            templateId: data.gemData.templateId,
+            termId: data.gemData.termId,
+            name: data.gemData.name,
+            terms: data.terms,
+            gemData: data.gemData
         });
     }
 
@@ -55,11 +68,37 @@ export class Gem implements IEntityClass<GemEntity> {
         return this._iconUrl;
     }
 
+    public get templateId(): string | undefined {
+        return this._templateId;
+    }
+
+    public get termId(): string | undefined {
+        return this._termId;
+    }
+
+    public get name(): string | undefined {
+        return this._name;
+    }
+
+    public get terms(): Array<{ id: string, cost: number, name: string }> | undefined {
+        return this._terms;
+    }
+
     public getEntity(): GemEntity {
         return {
             id: this.id,
             presetId: this.presetId,
             iconUrl: this.iconUrl,
+            templateId: this._templateId,
+            termId: this._termId,
+            name: this._name,
+            terms: this._terms,
+            gemData: {
+                termId: this._termId ?? "",
+                name: this._name ?? "",
+                templateId: this._templateId ?? "",
+                icon: this.iconUrl
+            }
         };
     }
 }

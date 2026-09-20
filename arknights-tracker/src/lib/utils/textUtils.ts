@@ -1,11 +1,14 @@
-export function formatCount(n: number): string {
-    return n
-        .toLocaleString("ru-RU")
-        .replace(",", ".");
+import { get } from "svelte/store";
+import { currentUiLocale, normalizeLocale } from "$lib/stores/locale";
+
+export function formatCount(n: number, locale?: string): string {
+    const loc = normalizeLocale(locale || (typeof window !== "undefined" ? get(currentUiLocale) : "en-US"));
+    return n.toLocaleString(loc);
 }
 
-export function formatRate(rate: number, fractionDigits: number): string {
-    const formatter = new Intl.NumberFormat("en-US", {
+export function formatRate(rate: number, fractionDigits: number, locale?: string): string {
+    const loc = normalizeLocale(locale || (typeof window !== "undefined" ? get(currentUiLocale) : "en-US"));
+    const formatter = new Intl.NumberFormat(loc, {
         style: "percent",
         maximumFractionDigits: fractionDigits,
         minimumFractionDigits: fractionDigits

@@ -1,4 +1,5 @@
-import { authenticator, avatarUploader, database, sightengine } from "@/serviceInstances.js";
+import { config } from "@/config.js";
+import { authenticator, avatarUploader, database, nsfwValidator } from "@/serviceInstances.js";
 import { ResponseBody } from "@api/contracts/ResponseBody.js";
 import { UploadAvatarQuery } from "@api/contracts/uploadAvatar/UploadAvatarQuery.js";
 import { UploadAvatarRequest } from "@api/contracts/uploadAvatar/UploadAvatarRequest.js";
@@ -8,7 +9,7 @@ import { Database } from "@database/Database.js";
 import { Authenticator } from "@services/auth/Authenticator.js";
 import { AvatarUploader } from "@services/avatarUploader/AvatarUploader.js";
 import { ImageValidator } from "@services/imageValidator/ImageValidator.js";
-import { SightengineNsfwValidator } from "@services/sightengineNsfwValidator/SightengineNsfwValidator.js";
+import { INsfwValidator } from "@services/nsfwValidator/INsfwValidator.js";
 import e from "express";
 
 export class UploadAvatar extends Controller<
@@ -17,14 +18,13 @@ export class UploadAvatar extends Controller<
     UploadAvatarRequest,
     UploadAvatarQuery
 > {
-    public static readonly MONTHLY_UPLOADS_LIMIT = 30;
-
     public readonly name = "UploadAvatar";
 
     private readonly _database: Database = database;
     private readonly _auth: Authenticator = authenticator;
     private readonly _uploader: AvatarUploader = avatarUploader;
-    private readonly _sightengine: SightengineNsfwValidator = sightengine;
+    private readonly _nsfwValidator: INsfwValidator = nsfwValidator;
+    private readonly _dailyUploadLimit: number = config.dailyUploadLimit;
 
     private readonly _uid: string;
     private readonly _image: string;
@@ -84,14 +84,14 @@ export class UploadAvatar extends Controller<
 
         profile.resetUploadsIfMust();
 
-        if (profile.uploadCount.value >= UploadAvatar.MONTHLY_UPLOADS_LIMIT) {
+        if (profile.uploadCount.value >= this._dailyUploadLimit) {
             this.status = 429;
             this.message = "Reached upload limit";
 
             return;
         }
 
-        const nsfwCheckResult = await this._sightengine.isNsfwImage(this._image, this._filename ?? undefined);
+        const nsfwCheckResult = await this._nsfwValidator.isNsfwImage(this._image, this._filename ?? undefined);
 
         if (!nsfwCheckResult.success) {
             this.status = 503;

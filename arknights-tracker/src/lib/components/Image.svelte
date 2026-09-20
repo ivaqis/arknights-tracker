@@ -1,14 +1,15 @@
 <script context="module">
     const loadedCache = new Set();
+    const failedCache = new Set();
 </script>
 
 <script lang="ts">
     import { getImagePath } from "$lib/utils/imageUtils";
-
     import Icon from "$lib/components/Icon.svelte";
 
     export let item: {icon?: string; id?: string; name?: string} | null = null;
     export let id: string | null = null;
+    export let name: string | null = null;
     export let variant: string = "";
     export let alt: string = "";
     export let size: `${number}%` | number = "100%";
@@ -19,7 +20,7 @@
     export let loading: "lazy" | "eager" = "lazy";
     export let fetchpriority: "auto" | "high" | "low" = "low";
 
-    $: rawId = id || (item?.icon) || (item?.id) || (item?.name);
+    $: rawId = id || name || (item?.icon) || (item?.id) || (item?.name);
     $: initialSrc = getImagePath(rawId, variant);
 
     const FALLBACK_EXTS = ['.webp', '.png', '.jpg', '.jpeg', '.gif'];
@@ -49,58 +50,51 @@
     let hasError = false;
     let isVisible = false;
     let isInstant = false;
+    let prevInitialSrc = "";
 
-    $: {
-        candidates = getCandidates(initialSrc);
-        candidateIndex = 0;
-        currentSrc = candidates[0] || "";
-        hasError = false;
-        isInstant = loadedCache.has(currentSrc);
-        isVisible = isInstant;
+    $: if (initialSrc !== prevInitialSrc) {
+        prevInitialSrc = initialSrc;
+        if (!initialSrc || failedCache.has(initialSrc)) {
+            candidates = [];
+            candidateIndex = 0;
+            currentSrc = "";
+            hasError = true;
+            isVisible = true;
+            isInstant = false;
+        } else {
+            candidates = getCandidates(initialSrc);
+            candidateIndex = 0;
+            currentSrc = candidates[0] || "";
+            hasError = false;
+            isInstant = loadedCache.has(currentSrc);
+            isVisible = isInstant;
+        }
     }
 
-    function imageHandler(node: any, p0?: string) {
-        // я хз зачем тут p0 но без него ошибка
-        function handleLoad() {
-            if (currentSrc) loadedCache.add(currentSrc);
+    function handleLoad() {
+        if (currentSrc) loadedCache.add(currentSrc);
+        isVisible = true;
+        hasError = false;
+    }
+
+    function handleErr() {
+        if (candidateIndex < candidates.length - 1) {
+            candidateIndex += 1;
+            currentSrc = candidates[candidateIndex];
+        } else {
+            if (initialSrc) failedCache.add(initialSrc);
             isVisible = true;
-            hasError = false;
+            hasError = true;
         }
+    }
 
-        function handleErr() {
-            if (candidateIndex < candidates.length - 1) {
-                candidateIndex += 1;
-                currentSrc = candidates[candidateIndex];
-                node.src = currentSrc;
-            } else {
-                isVisible = true;
-                hasError = true;
-            }
+    function imageHandler(node: HTMLImageElement) {
+        if (node.complete && node.naturalWidth > 0) {
+            handleLoad();
         }
-
-        function checkComplete() {
-            if (node.complete) {
-                if (node.naturalWidth > 0) {
-                    handleLoad();
-                } else if (node.naturalWidth === 0 && node.src) {
-                    handleErr();
-                }
-            }
-        }
-
-        node.addEventListener('load', handleLoad);
-        node.addEventListener('error', handleErr);
-
-        checkComplete();
 
         return {
-            update() {
-                checkComplete();
-            },
-            destroy() {
-                node.removeEventListener('load', handleLoad);
-                node.removeEventListener('error', handleErr);
-            }
+            destroy() {}
         };
     }
 
@@ -118,7 +112,7 @@
         style="{sizeStyle} {style}"
     >
         {#if !variant.includes('banner') && !variant.includes('event')}
-             <Icon name="noData" className="w-1/2 h-1/2 opacity-50" />
+             <Icon name="noData" class="w-1/4 h-1/4 opacity-50" />
         {/if}
     </div>
 {:else}
@@ -132,7 +126,9 @@
     {/if}
     <img
         src={currentSrc}
-        use:imageHandler={currentSrc}
+        on:load={handleLoad}
+        on:error={handleErr}
+        use:imageHandler
         alt={alt || rawId}
         loading={priority ? "eager" : loading}
         fetchpriority={priority ? "high" : fetchpriority}

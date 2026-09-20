@@ -26,6 +26,9 @@ export const config = {
     skportMonumentUrl: getSkportMonumentUrl(),
     sightengineUser: process.env.SIGHTENGINE_USER || null,
     sightengineSecret: process.env.SIGHTENGINE_SECRET || null,
+    moderateContentKey: process.env.MODERATECONTENT_KEY || null,
+    hiveApiKey: process.env.HIVE_API_KEY || null,
+    dailyUploadLimit: Number(process.env.DAILY_UPLOAD_LIMIT) || 30,
     signSecret: process.env.SIGN_SECRET || "super_secret_key_123",
     signIssuer: process.env.SIGN_ISSUER || "admin",
 } as const;

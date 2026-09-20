@@ -5,8 +5,8 @@ export class BannedWords {
     private readonly _roots: string[];
 
     public constructor(wordsList: string[], rootsList: string[]) {
-        this._words = new Set(wordsList);
-        this._roots = rootsList;
+        this._words = new Set(wordsList.map(w => BannedWords.normalize(w)).filter(Boolean));
+        this._roots = [...new Set(rootsList.map(r => BannedWords.normalize(r)).filter(Boolean))];
 
         logger.info(`BannedWords: init completed: (words: ${this._words.size}, roots: ${this._roots.length})`);
     }

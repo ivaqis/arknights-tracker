@@ -1,5 +1,16 @@
 <script>
   import { goto } from "$app/navigation";
+  import { onMount } from "svelte";
+  import { pullData } from "$lib/stores/pulls";
+  import { bannerTypes } from "$lib/data/bannerTypes";
+  import { banners } from "$lib/data/banners";
+  import { currencies } from "$lib/data/items/currencies.js";
+  import { user, checkSync, syncStatus } from "$lib/stores/cloudStore";
+  import { currentLocale, currentUiLocale, normalizeLocale } from "$lib/stores/locale";
+  import { flip } from "svelte/animate";
+
+  import BannerCard from "$lib/components/records/BannerCard.svelte";
+  import SettingsModal from "$lib/components/records/SettingsModal.svelte";
   import Button from "$lib/components/Button.svelte";
   import Icon from "$lib/components/Icon.svelte";
   import Image from "$lib/components/Image.svelte";
@@ -601,7 +612,7 @@
                     class="text-3xl font-black text-[#21272C] dark:text-[#FDFDFD] flex items-center gap-2 font-nums"
                   >
                     <Image id="oroberyl" variant="currency" size={32} />
-                    {(billablePulls * 500).toLocaleString("ru-RU")}
+                    {(billablePulls * 500).toLocaleString(normalizeLocale($currentUiLocale))}
                   </div>
                   <div
                     class="text-xs text-gray-400 dark:text-[#B7B6B3] mt-2 font-medium flex items-center"

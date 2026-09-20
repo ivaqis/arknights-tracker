@@ -12,7 +12,7 @@
     import { browser } from "$app/environment";
     import { currentLocale } from "$lib/stores/locale";
     import { isI18nReady } from "$lib/i18n";
-    import { addNotification } from "$lib/stores";
+    import { addNotification, isPageLoading } from "$lib/stores";
 
     import CookieConsent from "$lib/components/layout/CookieConsent.svelte";
     import LanguageSelect from "$lib/components/layout/LanguageSelect.svelte";
@@ -180,7 +180,7 @@
     </script>
 </svelte:head>
 
-{#if $navigating}
+{#if $navigating || $isPageLoading}
     <div class="fixed top-0 left-0 right-0 h-[3px] z-[999999] pointer-events-none overflow-hidden bg-[#FFE145]/20">
         <div class="w-full h-full bg-[#FFE145] shadow-[0_0_8px_#FFE145] animate-nav-progress"></div>
     </div>
