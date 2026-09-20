@@ -57,14 +57,13 @@ export function resolveArtName(idOrName) {
     let potNum = "1";
     if (potPart.includes("potential6") || potPart.includes("potential5")) potNum = "5";
     else if (potPart.includes("potential3")) potNum = "3";
-    else if (potPart.includes("potential1")) potNum = "1";
 
     if (potPart.includes("ex01")) {
         potNum = "1_ex01";
     }
 
     const char = characters[charId] || Object.values(characters || {}).find(c => c.id === charId || c.gameId === charId);
-    if (char && char.gameId) {
+    if (char?.gameId) {
         return `pic_${potNum}_${char.gameId}`;
     }
     return clean;
@@ -120,10 +119,10 @@ export function getImagePath(idOrName, variant = 'operator-icon') {
             return `/images/events/icon/${withExt(name, 'webp')}`; 
 
         case 'monument-icon':
-            return `/images/umbralMonument/icon/${withExt(name, 'png')}`; 
+            return `/images/umbralMonument/icon/${withExt(name, 'webp')}`; 
 
         case 'monument-cover':
-            return `/images/umbralMonument/cover/${withExt(name, 'png')}`;
+            return `/images/umbralMonument/cover/${withExt(name, 'webp')}`;
 
         case 'skill-icon':
             return `/images/operators/skills/${withExt(name)}`;

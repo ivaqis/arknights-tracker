@@ -1120,7 +1120,7 @@
                                             {@const gemRarity = parseInt(gemTemplate?.replace("item_gem_rarity_", "")) || wpn.gem.gemData?.rarity || wpn.gem.rarity || 4}
                                             {@const gemColor = getRarityColor(gemRarity)}
                                             {@const localIcon = getGemIcon(wpn.gem.gemData || wpn.gem)}
-                                            <div class="flex items-left mt-6 uppercase select-none text-xs text-gray-400 space-x-1 z-40">{$t("stats.essence")}</div>
+                                            <div class="flex items-left mt-6 uppercase select-none text-xs text-gray-400 space-x-1 z-40" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.7);">{$t("stats.essence")}</div>
                                             <div class="shrink-0 relative w-10 h-10 rounded border-b-2 mr-[-33px] flex items-center justify-center bg-black/40 shadow-inner overflow-hidden transition-transform" style="border-color: {gemColor}; box-shadow: 0 0 4px {gemColor}33;">
                                                 <img 
                                                     src={getImagePath('item_gem_rarity_' + gemRarity, 'essence-type-icon')} 

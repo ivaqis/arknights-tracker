@@ -694,7 +694,7 @@
                     {#if currentCoverPath}
                         <div class="absolute right-0 top-0 bottom-0 w-full sm:w-3/4 md:w-3/5 lg:w-1/2 pointer-events-none overflow-hidden">
                             <img
-                                src={`/images/umbralMonument/cover/${currentCoverPath}.png`}
+                                src={`/images/umbralMonument/cover/${currentCoverPath}.webp`}
                                 alt={currentStage.name}
                                 class="w-full h-full object-cover scale-120 translate-x-8"
                                 on:error={(e) => {
@@ -856,19 +856,22 @@
                                     >
                                         <td class="py-2.5 px-5">
                                             {#if index === 0}
-                                                <span class="w-7 h-7 rounded-full bg-[#FFE145] text-gray-900 font-black flex items-center justify-center border-2 border-white/10 text-xs" title="1st Place">
-                                                    1
-                                                </span>
+                                                <div class="relative w-8 h-8 flex items-center justify-center text-[#FFE145] shrink-0" title="1st Place">
+                                                    <Icon name="laurelWreath" class="w-full h-full absolute inset-0" />
+                                                    <span class="relative font-black font-nums text-xs pb-0.5">1</span>
+                                                </div>
                                             {:else if index === 1}
-                                                <span class="w-7 h-7 rounded-full bg-[#C0C0C0] text-gray-900 font-black flex items-center justify-center border-2 border-white/10 text-xs" title="2nd Place">
-                                                    2
-                                                </span>
+                                                <div class="relative w-8 h-8 flex items-center justify-center text-[#C0C0C0] shrink-0" title="2nd Place">
+                                                    <Icon name="laurelWreath" class="w-full h-full absolute inset-0" />
+                                                    <span class="relative font-black font-nums text-xs pb-0.5">2</span>
+                                                </div>
                                             {:else if index === 2}
-                                                <span class="w-7 h-7 rounded-full bg-[#CD7F32] text-white font-black flex items-center justify-center border-2 border-white/10 text-xs" title="3rd Place">
-                                                    3
-                                                </span>
+                                                <div class="relative w-8 h-8 flex items-center justify-center text-[#CD7F32] shrink-0" title="3rd Place">
+                                                    <Icon name="laurelWreath" class="w-full h-full absolute inset-0" />
+                                                    <span class="relative font-black font-nums text-xs pb-0.5">3</span>
+                                                </div>
                                             {:else}
-                                                <span class="text-gray-600 dark:text-gray-400 font-bold pl-2">{index + 1}</span>
+                                                <span class="w-8 text-center text-gray-600 dark:text-gray-400 font-bold font-nums text-sm block">{index + 1}</span>
                                             {/if}
                                         </td>
 
@@ -924,27 +927,38 @@
                                         </td>
 
                                         <td class="py-2.5 px-3">
-                                            <div class="flex items-center gap-1.5">
+                                            <div class="flex items-center gap-1">
                                                 {#each (entry.chars || []).slice(0, 4) as char}
                                                     {@const opData = getOperatorData(char)}
                                                     {@const wpnData = getWeaponData(char.weapon)}
                                                     {@const wpnRarity = wpnData?.rarity || char.weapon?.rarity || 4}
-                                                    <Tooltip text={`${getOperatorName(opData)} (LV. ${char.level || 1})${char.weapon ? ` • ${getWeaponName(wpnData, char.weapon)}` : ''}`}>
-                                                        <div class="relative">
-                                                            <img
-                                                                src={opData.id.startsWith('http') ? opData.id : `/images/operators/icons/${opData.id}.png`}
-                                                                alt={opData.name}
-                                                                class="w-9 h-9 rounded bg-white/10 border border-gray-200 dark:border-white/10 object-cover shrink-0 cursor-pointer"
-                                                                on:error={(e) => e.target.src = '/images/operators/icons/endministrator1.png'}
-                                                            />
+                                                    {@const charPot = char.potential !== undefined ? char.potential : (char.potentialLevel !== undefined ? char.potentialLevel + 1 : null)}
+                                                    <Tooltip text={`${getOperatorName(opData)} (LV. ${char.level || 1}${charPot ? ` • P${charPot}` : ''})${char.weapon ? ` • ${getWeaponName(wpnData, char.weapon)}` : ''}`}>
+                                                        <div class="relative shrink-0">
+                                                            <div class="w-10 h-12 -skew-x-12 overflow-hidden rounded-[3px] border border-gray-200 dark:border-white/15 bg-gray-100 dark:bg-white/5 relative shrink-0">
+                                                                <div class="w-full h-full skew-x-12 scale-125">
+                                                                    <Image
+                                                                        id={opData.id}
+                                                                        variant="operator-preview"
+                                                                        className="w-full h-full object-cover object-top"
+                                                                        alt={opData.name}
+                                                                    />
+                                                                </div>
+                                                                <div class="absolute inset-x-0 bottom-0 h-5 bg-gradient-to-t from-black/80 via-black/30 to-transparent pointer-events-none"></div>
+                                                                <div class="absolute bottom-0 left-1 skew-x-12 pointer-events-none select-none">
+                                                                    <span class="text-[11px] font-black font-nums text-white leading-none tracking-tight" style="text-shadow: 0 1px 2px rgba(0,0,0,0.9);">{char.level || 1}</span>
+                                                                </div>
+                                                            </div>
                                                             {#if char.weapon}
-                                                                <img
-                                                                    src={`/images/weapons/${wpnData?.id || char.weapon.id}.png`}
-                                                                    alt={wpnData?.name || ''}
-                                                                    class="absolute -bottom-1 -right-1 w-4 h-4 rounded-full border bg-black object-contain pointer-events-none"
-                                                                    style="border-color: {getRarityColor(wpnRarity)}80;"
-                                                                    on:error={(e) => e.target.style.display = 'none'}
-                                                                />
+                                                                <div class="absolute -bottom-1 -right-1 z-10">
+                                                                    <img
+                                                                        src={`/images/weapons/${wpnData?.id || char.weapon.id}.png`}
+                                                                        alt={wpnData?.name || ''}
+                                                                        class="w-4 h-4 rounded-full border bg-black object-contain pointer-events-none"
+                                                                        style="border-color: {getRarityColor(wpnRarity)}80;"
+                                                                        on:error={(e) => e.target.style.display = 'none'}
+                                                                    />
+                                                                </div>
                                                             {/if}
                                                         </div>
                                                     </Tooltip>
@@ -969,19 +983,22 @@
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
                                         {#if index === 0}
-                                            <span class="w-6 h-6 rounded-full bg-[#FFE145] text-gray-900 font-black flex items-center justify-center text-xs" title="1st Place">
-                                                1
-                                            </span>
+                                            <div class="relative w-7 h-7 flex items-center justify-center text-[#FFE145] shrink-0" title="1st Place">
+                                                <Icon name="laurelWreath" class="w-full h-full absolute inset-0" />
+                                                <span class="relative font-black font-nums text-[11px] pb-0.5">1</span>
+                                            </div>
                                         {:else if index === 1}
-                                            <span class="w-6 h-6 rounded-full bg-[#C0C0C0] text-gray-900 font-black flex items-center justify-center text-xs" title="2nd Place">
-                                                2
-                                            </span>
+                                            <div class="relative w-7 h-7 flex items-center justify-center text-[#C0C0C0] shrink-0" title="2nd Place">
+                                                <Icon name="laurelWreath" class="w-full h-full absolute inset-0" />
+                                                <span class="relative font-black font-nums text-[11px] pb-0.5">2</span>
+                                            </div>
                                         {:else if index === 2}
-                                            <span class="w-6 h-6 rounded-full bg-[#CD7F32] text-white font-black flex items-center justify-center text-xs" title="3rd Place">
-                                                3
-                                            </span>
+                                            <div class="relative w-7 h-7 flex items-center justify-center text-[#CD7F32] shrink-0" title="3rd Place">
+                                                <Icon name="laurelWreath" class="w-full h-full absolute inset-0" />
+                                                <span class="relative font-black font-nums text-[11px] pb-0.5">3</span>
+                                            </div>
                                         {:else}
-                                            <span class="text-gray-500 dark:text-gray-400 font-bold text-sm w-6 text-center">{index + 1}</span>
+                                            <span class="w-7 text-center text-gray-500 dark:text-gray-400 font-bold font-nums text-xs shrink-0">{index + 1}</span>
                                         {/if}
 
                                         <div class="flex items-center gap-2">
@@ -1016,26 +1033,36 @@
                                 </div>
 
                                 <div class="flex items-center justify-between mt-1">
-                                    <div class="flex items-center gap-1.5">
+                                    <div class="flex items-center gap-2">
                                         {#each (entry.chars || []).slice(0, 4) as char}
                                             {@const opData = getOperatorData(char)}
-                                            <div class="relative">
-                                                <img
-                                                    src={opData.id.startsWith('http') ? opData.id : `/images/operators/icons/${opData.id}.png`}
-                                                    alt={opData.name}
-                                                    class="w-9 h-9 rounded bg-white/10 border border-gray-200 dark:border-white/10 object-cover"
-                                                    on:error={(e) => e.target.src = '/images/operators/icons/endministrator1.png'}
-                                                />
+                                            {@const wpnData = getWeaponData(char.weapon)}
+                                            {@const wpnRarity = wpnData?.rarity || char.weapon?.rarity || 4}
+                                            <div class="relative shrink-0">
+                                                <div class="w-9 h-11 -skew-x-12 overflow-hidden rounded-[3px] border border-gray-200 dark:border-white/15 bg-gray-100 dark:bg-white/5 relative shrink-0 shadow-sm">
+                                                    <div class="w-full h-full skew-x-12 scale-125">
+                                                        <Image
+                                                            id={opData.id}
+                                                            variant="operator-preview"
+                                                            className="w-full h-full object-cover object-top"
+                                                            alt={opData.name}
+                                                        />
+                                                    </div>
+                                                    <div class="absolute inset-x-0 bottom-0 h-5 bg-gradient-to-t from-black/80 via-black/40 to-transparent pointer-events-none"></div>
+                                                    <div class="absolute bottom-0.5 left-1 skew-x-12 pointer-events-none select-none">
+                                                        <span class="text-[10px] font-black font-nums text-white leading-none tracking-tight" style="text-shadow: 0 1px 2px rgba(0,0,0,0.9);">{char.level || 1}</span>
+                                                    </div>
+                                                </div>
                                                 {#if char.weapon}
-                                                    {@const wpnData = getWeaponData(char.weapon)}
-                                                    {@const wpnRarity = wpnData?.rarity || char.weapon.rarity || 4}
-                                                    <img
-                                                        src={`/images/weapons/${wpnData?.id || char.weapon.id}.png`}
-                                                        alt={wpnData?.name || ''}
-                                                        class="absolute -bottom-1 -right-1 w-4 h-4 rounded-full border bg-black object-contain pointer-events-none"
-                                                        style="border-color: {getRarityColor(wpnRarity)}80;"
-                                                        on:error={(e) => e.target.style.display = 'none'}
-                                                    />
+                                                    <div class="absolute -bottom-1 -right-1 z-10">
+                                                        <img
+                                                            src={`/images/weapons/${wpnData?.id || char.weapon.id}.png`}
+                                                            alt={wpnData?.name || ''}
+                                                            class="w-3.5 h-3.5 rounded-full border bg-black object-contain pointer-events-none shadow-sm"
+                                                            style="border-color: {getRarityColor(wpnRarity)}80;"
+                                                            on:error={(e) => e.target.style.display = 'none'}
+                                                        />
+                                                    </div>
                                                 {/if}
                                             </div>
                                         {/each}

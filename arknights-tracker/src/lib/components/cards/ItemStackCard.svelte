@@ -45,7 +45,6 @@
                 return "h-5 w-5";
         }
     }
-
 </script>
 
 <CardTemplate
@@ -56,21 +55,20 @@
     tooltipText={showTooltip ? tooltipText ?? $t(item.i18nKey) : undefined}
     url={url}
 >
+    {#if item}
+        {#key item}
+            {@const icon = item.icon}
+            {@const subIcon = item.subIcon}
 
-    {#key item}
-
-        {@const icon = item.icon}
-        {@const subIcon = item.subIcon}
-
-        <div class="absolute inset-0 flex items-center justify-center z-0 bottom-[6px]">
-            <Image
-                id={icon.iconId}
-                variant={icon.imageVariant}
-                alt={item.id}
-                interactive={interactiveImages}
-                className="w-full h-full object-contain blur-[0.3px] rotate-[0.01deg] backface-hidden transform-gpu transition-all duration-300"
-            />
-        </div>
+            <div class="absolute inset-0 flex items-center justify-center z-0 bottom-[6px]">
+                <Image
+                    id={icon.iconId}
+                    variant={icon.imageVariant}
+                    alt={item.id}
+                    interactive={interactiveImages}
+                    className="w-full h-full object-contain blur-[0.3px] rotate-[0.01deg] backface-hidden transform-gpu transition-all duration-300"
+                />
+            </div>
 
         {#if subIcon}
 
@@ -87,20 +85,34 @@
 
         {/if}
 
-    {/key}
+            {:else}
 
-    {#if amount !== null}
+                <div class="absolute inset-0 flex items-center justify-center z-0 bottom-[6px]">
+                    <Icon name="noData" class="w-1/2 h-1/2"/>
+                </div>
 
-        <div class="absolute bottom-[8px] left-0 right-0 z-30 flex justify-center px-0.5">
-            <span
-                class="text-white {textSize} mb-0.5 font-bold text-center leading-tight line-clamp-2 w-full block cursor-pointer"
-                style="text-shadow: 0 1px 3px rgba(0,0,0,0.95), 0 1px 1px rgba(0,0,0,0.95), 0 0 2px rgba(0,0,0,0.8);"
+            {/if}
+
+            <div
+                class="absolute bottom-0 left-0 w-full h-[6px] z-20"
+                style:background-color={rarityColor}
             >
-                {amount.toLocaleString()}
-            </span>
-        </div>
+                <div
+                    class="absolute bottom-full left-0 w-full h-[30px] pointer-events-none opacity-60"
+                    style="--dot-color: {rarityColor}; background-image: radial-gradient(var(--dot-color) 30%, transparent 35%); background-size: 4px 4px; mask-image: linear-gradient(to top, rgba(0,0,0,1) 0%, transparent 100%); -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,1) 0%, transparent 100%);"
+                ></div>
+            </div>
 
-    {/if}
+            {#if showAmount}
+                <div class="absolute bottom-[8px] left-0 right-0 z-30 flex justify-center px-0.5">
+                    <span
+                        class="text-white {textSize} mb-0.5 font-bold text-center leading-tight line-clamp-2 w-full block cursor-pointer"
+                        style="text-shadow: 0 1px 3px rgba(0,0,0,0.95), 0 1px 1px rgba(0,0,0,0.95), 0 0 2px rgba(0,0,0,0.8);"
+                    >
+                        {amount.toLocaleString()}
+                    </span>
+                </div>
+            {/if}
 
     <div
         class="absolute -top-2 -right-2 {eventStarSize} z-[50]"
@@ -112,5 +124,4 @@
             name="eventStar"
         />
     </div>
-
 </CardTemplate>

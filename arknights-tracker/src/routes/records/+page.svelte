@@ -3,14 +3,8 @@
   import Button from "$lib/components/Button.svelte";
   import Icon from "$lib/components/Icon.svelte";
   import Image from "$lib/components/Image.svelte";
-  import BannerCard from "$lib/components/records/BannerCard.svelte";
   import RatingCard from "$lib/components/records/RatingCard.svelte";
-  import SettingsModal from "$lib/components/records/SettingsModal.svelte";
-  import { banners } from "$lib/data/banners";
-  import { bannerTypes } from "$lib/data/bannerTypes";
-  import { currencies } from "$lib/data/items/currencies.js";
   import { t } from "$lib/i18n";
-  import { checkSync, syncStatus, user } from "$lib/stores/cloudStore";
   import {
     recordsCardsOrder,
     recordsEnableDragDrop,

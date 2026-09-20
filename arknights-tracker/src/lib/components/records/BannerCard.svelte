@@ -1,10 +1,6 @@
 <script>
   import { browser } from "$app/environment";
   import { goto } from "$app/navigation";
-  import Button from "$lib/components/Button.svelte";
-  import Icon from "$lib/components/Icon.svelte";
-  import Image from "$lib/components/Image.svelte";
-  import Tooltip from "$lib/components/Tooltip.svelte";
   import { banners } from "$lib/data/banners";
   import { characters } from "$lib/data/characters";
   import { currencies } from "$lib/data/items/currencies";
