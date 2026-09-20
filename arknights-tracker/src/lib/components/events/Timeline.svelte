@@ -1,14 +1,13 @@
 <script>
-    import { t } from "$lib/i18n.js";
-    import { onMount, onDestroy, tick } from "svelte";
     import { browser } from "$app/environment";
-    import { rawEvents } from "$lib/data/timeline";
-    import { banners } from "$lib/data/banners.js";
-    import { currentLocale, currentUiLocale, normalizeLocale } from "$lib/stores/locale.js";
-
     import Icon from "$lib/components/Icon.svelte";
-    import BannerModal from "$lib/components/modals/BannerModal.svelte";
     import Image from "$lib/components/Image.svelte";
+    import BannerModal from "$lib/components/modals/BannerModal.svelte";
+    import { banners } from "$lib/data/banners.js";
+    import { rawEvents } from "$lib/data/timeline";
+    import { t } from "$lib/i18n.js";
+    import { currentUiLocale, normalizeLocale } from "$lib/stores/locale.js";
+    import { onDestroy, onMount } from "svelte";
 
     export let lastVersion = null;
     export let currentVersion = null;
