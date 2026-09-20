@@ -318,7 +318,11 @@
     "toolsdev_step3": "While on the website, click that bookmark — the data will be copied to your clipboard. Paste it below.",
     "toolsdev_placeholder": "Paste JSON here...",
     "warning": "Warning",
-    "tracker_backup_warning": "Before importing data from tracker sites, it is highly recommended to make a backup of your current data (Go to Settings and click <strong>&ldquo;Export data&rdquo;</strong> in the <strong>&ldquo;Backup&rdquo;</strong> section)."
+    "tracker_backup_warning": "Before importing data from tracker sites, it is highly recommended to make a backup of your current data (Go to Settings and click <strong>&ldquo;Export data&rdquo;</strong> in the <strong>&ldquo;Backup&rdquo;</strong> section).",
+    "warning_sync_creation": "Upon saving, a new profile will be created",
+    "warning_sync_switch": "Upon saving, pulls will be recorded to another profile",
+    "warning_sync_switch_creation": "Pulls must be recorded to a profile that is not present in the current environment. Upon saving, a new profile will be created",
+    "warning_sync_write_on_local": "Upon saving, pulls will be recorded to current profile, as it does not have an online profile"
   },
   "emptyState": {
     "noData": "No entries",

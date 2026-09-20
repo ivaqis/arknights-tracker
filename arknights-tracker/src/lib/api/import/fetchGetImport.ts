@@ -5,8 +5,13 @@ import { config } from "$lib/config";
 export async function fetchGetImport(token: string, serverIds: string[], lastPullTs: bigint | number): Promise<AsyncGenerator<GetImportGenericResponse, void, unknown>> {
     const url = `${config.API_BASE}/api/v2/import?token=${token}&serverIds=${serverIds.join(",")}&lastPullTs=${lastPullTs}`;
 
+    console.log(url);
+
     const response = await fetch(url, {
-        method: "GET"
+        method: "GET",
+        headers: {
+            "Accept": "text/event-stream"
+        }
     });
 
     if (response.status === 429) {

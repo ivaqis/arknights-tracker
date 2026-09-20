@@ -8,7 +8,7 @@ export class GetImportQueryValidator extends Validator<GetImportQuery> {
     public static readonly SERVER_IDS_STR: string = GameServerId.getAll().join("|");
     public static readonly SERVER_IDS_REGEX: RegExp = new RegExp(`^${this.SERVER_IDS_STR}(?:,${this.SERVER_IDS_STR})?$`);
     public static readonly SERVER_IDS_INVALID_MSG: string = `serverIds must be ${this.SERVER_IDS_STR} separated by commas`;
-    public static readonly LAST_PULL_TS_REGEX: RegExp = /^\d$/;
+    public static readonly LAST_PULL_TS_REGEX: RegExp = /^\d+$/;
 
     public constructor(item: GetImportQuery) {
         super(item, GetImportQueryValidator.getRules());
