@@ -1,26 +1,24 @@
 <script>
-    import { page } from "$app/stores";
-    import { t } from "$lib/i18n";
-    import { pullData } from "$lib/stores/pulls";
-    import { bannerTypes } from "$lib/data/bannerTypes";
-    import { characters } from "$lib/data/characters";
-    import { accountStore } from "$lib/stores/accounts";
-    import { weapons } from "$lib/data/weapons";
-    import { banners } from "$lib/data/banners";
     import { goto } from "$app/navigation";
-    import { currencies } from "$lib/data/items/currencies";
-    import { isDarkMode } from "$lib/stores/theme";
-    import { onMount } from "svelte";
-    import { getWeaponCategory } from "$lib/utils/importUtils";
-    import { currentLocale, currentUiLocale, normalizeLocale } from "$lib/stores/locale";
-
+    import { page } from "$app/stores";
     import Button from "$lib/components/Button.svelte";
     import Icon from "$lib/components/Icon.svelte";
-    import Tooltip from "$lib/components/Tooltip.svelte";
-    import BannerModal from "$lib/components/modals/BannerModal.svelte";
-    import AnalyticsCharts from "$lib/components/records/AnalyticsCharts.svelte";
     import Image from "$lib/components/Image.svelte";
+    import BannerModal from "$lib/components/modals/BannerModal.svelte";
     import MultiSelect from "$lib/components/MultiSelect.svelte";
+    import AnalyticsCharts from "$lib/components/records/AnalyticsCharts.svelte";
+    import Tooltip from "$lib/components/Tooltip.svelte";
+    import { banners } from "$lib/data/banners";
+    import { bannerTypes } from "$lib/data/bannerTypes";
+    import { characters } from "$lib/data/characters";
+    import { weapons } from "$lib/data/weapons";
+    import { t } from "$lib/i18n";
+    import { accountStore } from "$lib/stores/accounts";
+    import { currentUiLocale, normalizeLocale } from "$lib/stores/locale";
+    import { pullData } from "$lib/stores/pulls";
+    import { isDarkMode } from "$lib/stores/theme";
+    import { getWeaponCategory } from "$lib/utils/importUtils";
+    import { onMount } from "svelte";
 
     $: bannerType = $page.params.type;
     let selectedBanner = null;

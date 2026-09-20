@@ -1,7 +1,6 @@
 import { browser } from "$app/environment";
 import { Account } from "$lib/classes/auth/accounts/Account";
 import type { AccountCreateParams } from "$lib/classes/auth/accounts/AccountCreateParams";
-import type { AccountData } from "$lib/classes/auth/accounts/AccountData";
 import { AccountExistError } from "$lib/classes/auth/accounts/AccountExistError";
 import type { AccountUniqueConstraint } from "$lib/classes/auth/accounts/AccountUniqueConstraint";
 import type { AccountUpdates } from "$lib/classes/auth/accounts/AccountUpdates";
@@ -12,12 +11,12 @@ export class AccountStore {
     public static readonly SELECTED_ID_KEY: string = "ark_tracker_selected_account_id";
     public static readonly DEFAULT_NAME_REGEX: RegExp = /^Account\s+(\d+)$/;
 
-    private readonly _updateCallback: () => void = () => this.forceUpdateAccounts();
-    private readonly _isExistCallback = (value: AccountUniqueConstraint) => this.isExist(value);
-
     private readonly _accounts: Writable<Account[]>;
     private readonly _selectedId: Writable<string>;
     private readonly _currentAccount: Writable<Account>;
+
+    private readonly _updateCallback: () => void = () => this.forceUpdateAccounts();
+    private readonly _isExistCallback = (value: AccountUniqueConstraint) => this.isExist(value);
 
     public constructor() {
         const initialAccounts: Account[] = this.getInitialAccounts();
@@ -33,7 +32,7 @@ export class AccountStore {
         };
         const normalizeAccounts = (items: any[]): Account[] => {
             if (!Array.isArray(items) || items.length === 0) {
-                return [ Account.createDefault(this._updateCallback, this._isExistCallback) ];
+                return [Account.createDefault(this._updateCallback, this._isExistCallback)];
             }
             return items.map(normalizeAccount);
         };
@@ -62,75 +61,6 @@ export class AccountStore {
         return Date.now().toString(36) + Math.random().toString(36).substr(2);
     }
 
-    private getInitialAccounts(): Account[] {
-        if (!browser) {
-            return [ Account.createDefault(this._updateCallback, this._isExistCallback) ];
-        }
-
-        let stored = localStorage.getItem(AccountStore.ACCOUNTS_KEY);
-
-        if (!stored) {
-            const legacy = localStorage.getItem("ark_tracker_accounts");
-            if (legacy) {
-                try {
-                    const parsed = JSON.parse(legacy);
-                    if (parsed && Array.isArray(parsed.accounts)) {
-                        stored = JSON.stringify(parsed.accounts);
-                    }
-                } catch (e) {}
-            }
-        }
-
-        if (!stored) {
-            return [ Account.createDefault(this._updateCallback, this._isExistCallback) ];
-        }
-
-        try {
-            const data = JSON.parse(stored) as any[];
-
-            const list = data.map(item => Account.createFromData(this._updateCallback, this._isExistCallback, item));
-            return list.length > 0 ? list : [ Account.createDefault(this._updateCallback, this._isExistCallback) ];
-        } catch (e) {
-            if (e instanceof Error) {
-                console.error(e.stack ?? e.name);
-            } else {
-                console.error(e);
-            }
-
-            return [ Account.createDefault(this._updateCallback, this._isExistCallback) ];
-        }
-    }
-
-    private getInitialSelectedAccountId(accounts: Account[]): string {
-        if (!browser) {
-            return Account.DEFAULT_ID;
-        }
-
-        let stored = localStorage.getItem(AccountStore.SELECTED_ID_KEY);
-
-        if (!stored) {
-            const legacy = localStorage.getItem("ark_tracker_accounts");
-            if (legacy) {
-                try {
-                    const parsed = JSON.parse(legacy);
-                    if (parsed && (parsed.selectedId || parsed._selectedId)) {
-                        stored = parsed.selectedId || parsed._selectedId;
-                    }
-                } catch (e) {}
-            }
-        }
-
-        if (!stored) {
-            return accounts[0]?.id || Account.DEFAULT_ID;
-        }
-
-        if (accounts.some(account => account.id === stored)) {
-            return stored;
-        }
-
-        return accounts[0]?.id || Account.DEFAULT_ID;
-    }
-
     public get accounts(): Writable<Account[]> {
         return this._accounts;
     }
@@ -153,6 +83,30 @@ export class AccountStore {
         const list = get(this._accounts);
 
         return list.find(account => account.serverUid === serverUid) ?? null;
+    }
+
+    public findAccountByStoredPublicServerUid(publicServerUid: string): Account | null {
+        const list = get(this._accounts);
+
+        return list.find(account => account.publicServerUid === publicServerUid) ?? null;
+    }
+
+    public async findAccountByPublicServerUid(publicServerUid: string): Promise<Account | null> {
+        const list = get(this._accounts);
+
+        let result: Account | null = null;
+
+        for (const account of list) {
+            const publicId = await account.getPublicServerUid();
+
+            if (publicId === publicServerUid) {
+                result = account;
+
+                break;
+            }
+        }
+
+        return result;
     }
 
     public selectAccount(id: string): Account | null {
@@ -183,6 +137,7 @@ export class AccountStore {
         const name = params.name ?? this.generateDefaultName();
         const serverUid = params.uid ?? null;
         const serverId = params.serverId ?? null;
+        const publicServerUid = params.publicServerUid ?? null;
 
         const account = new Account(
             this._updateCallback,
@@ -190,7 +145,8 @@ export class AccountStore {
             id,
             name,
             serverUid,
-            serverId
+            serverId,
+            publicServerUid
         );
 
         const list = get(this._accounts);
@@ -316,6 +272,78 @@ export class AccountStore {
         console.log("[Accounts] Account fully cleared.");
     }
 
+    private getInitialAccounts(): Account[] {
+        if (!browser) {
+            return [Account.createDefault(this._updateCallback, this._isExistCallback)];
+        }
+
+        let stored = localStorage.getItem(AccountStore.ACCOUNTS_KEY);
+
+        if (!stored) {
+            const legacy = localStorage.getItem("ark_tracker_accounts");
+            if (legacy) {
+                try {
+                    const parsed = JSON.parse(legacy);
+                    if (parsed && Array.isArray(parsed.accounts)) {
+                        stored = JSON.stringify(parsed.accounts);
+                    }
+                } catch (e) {
+                }
+            }
+        }
+
+        if (!stored) {
+            return [Account.createDefault(this._updateCallback, this._isExistCallback)];
+        }
+
+        try {
+            const data = JSON.parse(stored) as any[];
+
+            const list = data.map(item => Account.createFromData(this._updateCallback, this._isExistCallback, item));
+            return list.length > 0 ? list : [Account.createDefault(this._updateCallback, this._isExistCallback)];
+        } catch (e) {
+            if (e instanceof Error) {
+                console.error(e.stack ?? e.name);
+            }
+            else {
+                console.error(e);
+            }
+
+            return [Account.createDefault(this._updateCallback, this._isExistCallback)];
+        }
+    }
+
+    private getInitialSelectedAccountId(accounts: Account[]): string {
+        if (!browser) {
+            return Account.DEFAULT_ID;
+        }
+
+        let stored = localStorage.getItem(AccountStore.SELECTED_ID_KEY);
+
+        if (!stored) {
+            const legacy = localStorage.getItem("ark_tracker_accounts");
+            if (legacy) {
+                try {
+                    const parsed = JSON.parse(legacy);
+                    if (parsed && (parsed.selectedId || parsed._selectedId)) {
+                        stored = parsed.selectedId || parsed._selectedId;
+                    }
+                } catch (e) {
+                }
+            }
+        }
+
+        if (!stored) {
+            return accounts[0]?.id || Account.DEFAULT_ID;
+        }
+
+        if (accounts.some(account => account.id === stored)) {
+            return stored;
+        }
+
+        return accounts[0]?.id || Account.DEFAULT_ID;
+    }
+
     private forceUpdateAccounts() {
         this._accounts.update(list => list);
     }
@@ -358,6 +386,14 @@ export class AccountStore {
             }
         }
 
+        if (value.publicServerUid) {
+            const existing = this.findAccountByStoredPublicServerUid(value.publicServerUid);
+
+            if (existing) {
+                return true;
+            }
+        }
+
         return false;
     }
 
@@ -387,7 +423,10 @@ export class AccountStore {
 
             const json = Account.toJsonList(accounts);
             localStorage.setItem(AccountStore.ACCOUNTS_KEY, json);
-            localStorage.setItem("ark_tracker_accounts", JSON.stringify({ accounts: accounts.map(a => a.toData()), selectedId: get(this._selectedId) }));
+            localStorage.setItem("ark_tracker_accounts", JSON.stringify({
+                accounts: accounts.map(a => a.toData()),
+                selectedId: get(this._selectedId)
+            }));
         });
 
         this._selectedId.subscribe(accountId => {
@@ -395,7 +434,10 @@ export class AccountStore {
             updateSelectedAccount(accounts, accountId);
 
             localStorage.setItem(AccountStore.SELECTED_ID_KEY, accountId);
-            localStorage.setItem("ark_tracker_accounts", JSON.stringify({ accounts: accounts.map(a => a.toData()), selectedId: accountId }));
+            localStorage.setItem("ark_tracker_accounts", JSON.stringify({
+                accounts: accounts.map(a => a.toData()),
+                selectedId: accountId
+            }));
         });
     }
 }

@@ -1,28 +1,21 @@
 <script>
     import "../app.css";
-    import { onMount, onDestroy } from "svelte";
-    import { pullData } from "$lib/stores/pulls";
-    import { accountStore } from "$lib/stores/accounts";
-    import { syncStatus, user, initAuth, checkSync, justSynced } from "$lib/stores/cloudStore";
-    import { t } from "$lib/i18n";
-    import { fly } from "svelte/transition";
-    import { page, navigating } from "$app/stores";
-    import { fade } from "svelte/transition";
-    import { isDarkMode } from "$lib/stores/theme";
     import { browser } from "$app/environment";
-    import { currentLocale } from "$lib/stores/locale";
-    import { isI18nReady } from "$lib/i18n";
-    import { addNotification, isPageLoading } from "$lib/stores";
-
+    import { navigating, page } from "$app/stores";
+    import Icon from "$lib/components/Icon.svelte";
     import CookieConsent from "$lib/components/layout/CookieConsent.svelte";
     import LanguageSelect from "$lib/components/layout/LanguageSelect.svelte";
-    import Icon from "$lib/components/Icon.svelte";
-    import ThemeSwitch from "$lib/components/layout/ThemeSwitch.svelte";
-    import SyncModal from "$lib/components/modals/SyncModal.svelte";
-    import PrivacyModal from "$lib/components/layout/PrivacyModal.svelte";
-    import Button from "$lib/components/Button.svelte";
-    import SupportModal from "$lib/components/modals/SupportModal.svelte";
     import Notifications from "$lib/components/layout/Notifications.svelte";
+    import PrivacyModal from "$lib/components/layout/PrivacyModal.svelte";
+    import ThemeSwitch from "$lib/components/layout/ThemeSwitch.svelte";
+    import SupportModal from "$lib/components/modals/SupportModal.svelte";
+    import SyncModal from "$lib/components/modals/SyncModal.svelte";
+    import { isI18nReady, t } from "$lib/i18n";
+    import { addNotification, isPageLoading } from "$lib/stores";
+    import { initAuth, justSynced, user } from "$lib/stores/cloudStore";
+    import { currentLocale } from "$lib/stores/locale";
+    import { isDarkMode } from "$lib/stores/theme";
+    import { onMount } from "svelte";
 
     let isDonateModalOpen = false;
     let isMobileMenuOpen = false;

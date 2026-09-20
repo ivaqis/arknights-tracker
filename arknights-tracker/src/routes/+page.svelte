@@ -1,24 +1,23 @@
 <script>
-  import { t } from "$lib/i18n";
-  import { onMount, onDestroy, tick } from "svelte";
-  import { currentLocale, currentUiLocale, normalizeLocale } from "$lib/stores/locale";
   import { goto } from "$app/navigation";
+  import Button from "$lib/components/Button.svelte";
+  import WeaponCard from "$lib/components/cards/WeaponCard.svelte";
+  import Icon from "$lib/components/Icon.svelte";
+  import Image from "$lib/components/Image.svelte";
+  import ItemTags from "$lib/components/ItemTags.svelte";
+  import BannerModal from "$lib/components/modals/BannerModal.svelte";
+  import SupportModal from "$lib/components/modals/SupportModal.svelte";
+  import TableModal from "$lib/components/modals/TableModal.svelte";
+  import Tooltip from "$lib/components/Tooltip.svelte";
   import { banners } from "$lib/data/banners.js";
   import { promocodes } from "$lib/data/promocodes.js";
   import { rawEvents } from "$lib/data/timeline";
-  import { fade } from "svelte/transition";
   import { weaponRotations } from "$lib/data/weaponRotations.js";
   import { weapons } from "$lib/data/weapons.js";
-
-  import WeaponCard from "$lib/components/cards/WeaponCard.svelte";
-  import TableModal from "$lib/components/modals/TableModal.svelte";
-  import Icon from "$lib/components/Icon.svelte";
-  import Image from "$lib/components/Image.svelte";
-  import Button from "$lib/components/Button.svelte";
-  import BannerModal from "$lib/components/modals/BannerModal.svelte";
-  import SupportModal from "$lib/components/modals/SupportModal.svelte";
-  import Tooltip from "$lib/components/Tooltip.svelte";
-  import ItemTags from "$lib/components/ItemTags.svelte";
+  import { t } from "$lib/i18n";
+  import { currentUiLocale, normalizeLocale } from "$lib/stores/locale";
+  import { onDestroy, onMount, tick } from "svelte";
+  import { fade } from "svelte/transition";
 
   let now = new Date();
   let timer;

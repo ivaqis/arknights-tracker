@@ -1,6 +1,5 @@
 <script>
     import { t } from "$lib/i18n.js";
-    import { goto } from "$app/navigation";
     import { pullData } from "$lib/stores/pulls.js";
     import { manualPotentials } from "$lib/stores/potentials.js";
     import { weaponEssences } from "$lib/stores/weaponEssences.js";

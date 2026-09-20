@@ -1,16 +1,5 @@
 <script>
   import { goto } from "$app/navigation";
-  import { onMount } from "svelte";
-  import { pullData } from "$lib/stores/pulls";
-  import { bannerTypes } from "$lib/data/bannerTypes";
-  import { banners } from "$lib/data/banners";
-  import { currencies } from "$lib/data/items/currencies.js";
-  import { user, checkSync, syncStatus } from "$lib/stores/cloudStore";
-  import { currentLocale, currentUiLocale, normalizeLocale } from "$lib/stores/locale";
-  import { flip } from "svelte/animate";
-
-  import BannerCard from "$lib/components/records/BannerCard.svelte";
-  import SettingsModal from "$lib/components/records/SettingsModal.svelte";
   import Button from "$lib/components/Button.svelte";
   import Icon from "$lib/components/Icon.svelte";
   import Image from "$lib/components/Image.svelte";
@@ -31,7 +20,7 @@
     recordsShowRating,
     recordsShowTotalCost
   } from "$lib/stores/filterStore.js";
-  import { currentLocale } from "$lib/stores/locale";
+  import { currentLocale, currentUiLocale, normalizeLocale } from "$lib/stores/locale";
   import { pullData } from "$lib/stores/pulls";
   import { onMount } from "svelte";
   import { flip } from "svelte/animate";

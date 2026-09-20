@@ -1,4 +1,5 @@
 <script>
+    import { fetchGetImport } from "$lib/api/import/fetchGetImport.ts";
     import { t } from "$lib/i18n";
     import { goto } from "$app/navigation";
     import { pullData } from "$lib/stores/pulls";
@@ -28,6 +29,7 @@
     let pendingData = null;
     let signedSyncToken = null;
     let errorMsg = "";
+    let warningMsg = "";
     let isGlobalStatsEnabled = true;
     let isRecoveryEnabled = false;
     let activeTab = "new";
@@ -253,8 +255,32 @@
         return $t("import.error_unknown");
     }
 
+    function getLastPullTimeTs() {
+        const lastPullTimes = {};
+
+        const currentPullData = get(pullData);
+
+        if (currentPullData && !isRecoveryEnabled) {
+            Object.entries(currentPullData).forEach(([catId, cat]) => {
+                let maxTimeForCat = 0;
+                if (cat.pulls && Array.isArray(cat.pulls)) {
+                    cat.pulls.forEach((p) => {
+                        const t = new Date(p.time).getTime();
+                        if (t > maxTimeForCat) maxTimeForCat = t;
+                    });
+                }
+                lastPullTimes[catId] = maxTimeForCat;
+            });
+        }
+
+        const result = Object.values(lastPullTimes).reduce((max, cur) => cur > max ? cur : max, 0);
+
+        return result;
+    }
+
     async function handleUrlImport() {
         errorMsg = "";
+        warningMsg = "";
         isInputError = false;
         const urlToSend = realImportUrl || urlInput;
 
@@ -299,13 +325,24 @@
         const primaryServer = (serverId === "2" || serverId === "3") ? serverId : (selectedServer === "2" || selectedServer === "3" ? selectedServer : "3");
         const serverCandidates = primaryServer === "2" ? ["2", "3"] : ["3", "2"];
         const selectedAccId = get(accountStore.selectedId);
+
         let currentPrivateId = null;
+
         if (typeof window !== "undefined" && selectedAccId && !isRecoveryEnabled) {
             currentPrivateId = localStorage.getItem(`ark_banner_private_id_${selectedAccId}`) || null;
         }
 
+        const currentProfile = get(accountStore.currentAccount);
+
         try {
-            const stream = await fetchPostImport(token, serverCandidates, currentPrivateId);
+            let stream;
+
+            if (isGlobalStatsEnabled) {
+                stream = await fetchPostImport(token, serverCandidates, currentProfile.serverUid);
+            }
+            else {
+                stream = await fetchGetImport(token, serverCandidates, getLastPullTimeTs());
+            }
 
             for await (const msg of stream) {
                 if (msg.type === "progress") {
@@ -313,21 +350,27 @@
                     const bannerType = PullParser.normalizeBannerKey(progressData.type || "standard");
                     const count = Number(progressData.count || 0);
                     const newAddedCount = { ...previewReport.addedCount };
+
                     if (count > 0) {
                         newAddedCount[bannerType] = count;
                     }
+
                     const totalAdded = Object.values(newAddedCount).reduce((sum, c) => sum + c, 0);
+
                     previewReport = {
                         ...previewReport,
                         addedCount: newAddedCount,
                         totalAdded
                     };
-                } else if (msg.type === "complete") {
-                    await handleImportComplete(msg.data, urlToSend);
-                } else if (msg.type === "error") {
+                }
+                else if (msg.type === "complete") {
+                    await handleImportComplete(msg.data, urlToSend, await currentProfile.getPublicServerUid());
+                }
+                else if (msg.type === "error") {
                     errorMsg = mapBackendError(msg.message);
                     previewReport = null;
                     isLoading = false;
+
                     return;
                 }
             }
@@ -341,9 +384,13 @@
         }
     }
 
-    async function handleImportComplete(data, urlToSend) {
-        if (!data) return;
-        signedSyncToken = data.token || null;
+    async function handleImportComplete(data, urlToSend, currentPublicId) {
+        if (!data)
+            return;
+
+        signedSyncToken = data.token ?? null;
+
+        const currentProfile = get(accountStore.currentAccount);
         const backendServerId = data.serverId || selectedServer || "3";
 
         if (isSaveTokenEnabled && tokenName.trim()) {
@@ -360,31 +407,77 @@
             cleanPulls,
             backendServerId,
             false,
-            isRecoveryEnabled
+            isRecoveryEnabled || (isGlobalStatsEnabled && data.profileId !== undefined && data.profileId === null)
         );
+
+        if (isGlobalStatsEnabled && data.profileId !== undefined) {
+            if (data.profileId === null) {
+                warningMsg = currentProfile.serverUid !== null
+                    ? $t("import.warning_sync_creation")
+                    : $t("import.warning_sync_write_on_local");
+            } else if (data.profileId !== currentPublicId) {
+                const existingProfile = await accountStore.findAccountByPublicServerUid(data.profileId);
+
+                warningMsg = existingProfile
+                    ? $t("import.warning_sync_switch")
+                    : $t("import.warning_sync_switch_creation");
+            }
+        }
+
         pendingData = cleanPulls;
         previewReport = report;
     }
 
     async function confirmSave() {
-        if (!pendingData) return;
+        if (!pendingData)
+            return;
+
         isLoading = true;
+
         try {
-            const accounts = get(accountStore.accounts) || [];
-            const selectedId = get(accountStore.selectedId);
-            const currentAcc = accounts.find((a) => a.id === selectedId);
-            const sId = currentAcc?.serverId || selectedServer || "3";
+            let selectedId = get(accountStore.selectedId);
+            let currentAcc = get(accountStore.currentAccount);
+
+            const serverId = currentAcc?.serverId || selectedServer || "3";
 
             if (signedSyncToken) {
                 try {
                     const syncData = await fetchSyncPulls(signedSyncToken, true);
-                    const profile = syncData?.profile;
-                    if (profile?.privateId && typeof window !== "undefined" && selectedId) {
-                        localStorage.setItem(`ark_banner_private_id_${selectedId}`, profile.privateId);
+                    const profileData = syncData.profile;
+
+                    if (currentAcc.serverUid !== profileData.privateId) {
+                        let existingProfile = accountStore.findAccountByServerUid(profileData.privateId);
+
+                        if (!existingProfile && currentAcc.serverUid === null) {
+                            existingProfile = currentAcc;
+                            currentAcc.update({
+                                uid: profileData.privateId,
+                                publicServerUid: profileData.publicId
+                            });
+                        }
+
+                        if (!existingProfile) {
+                            existingProfile = accountStore.createAccount({
+                                serverId: serverId,
+                                uid: profileData.privateId,
+                                publicServerUid: profileData.publicId
+                            });
+                        }
+
+                        accountStore.selectAccount(existingProfile.id);
+
+                        console.log(`Switch profile to ${existingProfile.id}`);
+                    }
+
+                    if (profileData?.privateId && typeof window !== "undefined" && selectedId) {
+                        localStorage.setItem(`ark_banner_private_id_${selectedId}`, profileData.privateId);
+
                         if (profile.publicId) {
                             localStorage.setItem(`ark_banner_public_id_${selectedId}`, profile.publicId);
                         }
                     }
+
+
                 } catch (e) {
                     console.error("Sync import failed:", e);
                 }
@@ -392,7 +485,7 @@
 
             await pullData.smartImport(
                 pendingData,
-                sId,
+                serverId,
                 true,
                 isRecoveryEnabled
             );
@@ -454,6 +547,7 @@
         if (platform === "trackmypulls") return $t("import.trackmypulls_parse_error");
         if (platform === "endmin") return $t("import.endmin_unknown_error");
         if (msg) return msg;
+
         return $t("import.error_unknown");
     }
 
@@ -524,18 +618,29 @@
         const norm = PullParser.normalizeBannerKey(bannerId);
         const bannersKey = `banners.${norm}`;
         const bannersTrans = $t(bannersKey);
+
         if (bannersTrans !== bannersKey) {
             return bannersTrans;
         }
+
         const typesKey = `bannerTypes.${norm}`;
         const typesTrans = $t(typesKey);
+
         if (typesTrans !== typesKey) {
             return typesTrans;
         }
+
         return norm;
     }
 
-    $: if (lastParsedPulls && (platformTab === "endmin" || platformTab === "toolsdev" || platformTab === "protorig" || platformTab === "trackmypulls") && isRecoveryEnabled !== undefined) {
+    $: if (lastParsedPulls
+        && (platformTab === "endmin"
+            || platformTab === "toolsdev"
+            || platformTab === "protorig"
+            || platformTab === "trackmypulls"
+        )
+        && isRecoveryEnabled !== undefined
+    ) {
         runSmartImportPreview(lastParsedPulls);
     }
 </script>
@@ -952,6 +1057,24 @@
                 <Icon name="close" class="w-5 h-5" />
                 {errorMsg}
             </div>
+        {/if}
+
+        {#if warningMsg}
+            <!--todo поменять цвет-->
+
+            <div
+                class="mt-5 p-4 bg-red-50 dark:text-red-300 text-red-600 dark:bg-[#902E2E] dark:border-[#444444] rounded-lg border border-red-100 flex items-center gap-2 animate-in fade-in slide-in-from-top-2"
+            >
+
+                <Icon
+                    name="warning"
+                    class="w-5 h-5"
+                />
+
+                {warningMsg}
+
+            </div>
+
         {/if}
 
         <ImportPreviewReport

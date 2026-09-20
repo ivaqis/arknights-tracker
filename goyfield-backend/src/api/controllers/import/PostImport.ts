@@ -168,7 +168,7 @@ export class PostImport extends StreamController<
         logger.debug(`${limit} ${lastPullWithOffset}`);
 
         let writeOn: string | null = PostImport.writeOnProfile(
-            this._privateId,
+            requestedProfile?.publicId ?? null,
             tokenProfile?.profile.publicId ?? null,
             pullProfile?.profile.publicId ?? null,
             isLimitReached,
@@ -212,7 +212,7 @@ export class PostImport extends StreamController<
             const isLimitReached = limit > lastPullWithOffset;
 
             writeOn = PostImport.writeOnProfile(
-                this._privateId,
+                requestedProfile?.publicId ?? null,
                 tokenProfile?.profile.publicId ?? null,
                 pullProfile?.profile.publicId ?? null,
                 isLimitReached,

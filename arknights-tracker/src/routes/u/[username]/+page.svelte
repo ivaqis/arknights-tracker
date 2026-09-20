@@ -1,25 +1,22 @@
 <script>
-    import { onDestroy } from "svelte";
     import { page } from "$app/stores";
-    import { t } from "$lib/i18n.js";
-    import { getUserProfileByName, getAvatarUrl } from "$lib/api.js";
-    import { addNotification } from "$lib/stores/notifications.js";
-    import { isPageLoading } from "$lib/stores/pageLoading.js";
-    import { fade, fly } from "svelte/transition";
-    import { characters } from "$lib/data/characters.js";
-    import { getServerLabel } from "$lib/utils/profileUtils.js";
-
-    import Icon from "$lib/components/Icon.svelte";
+    import { getAvatarUrl, getUserProfileByName } from "$lib/api.js";
     import Button from "$lib/components/Button.svelte";
+    import Icon from "$lib/components/Icon.svelte";
+    import Image from "$lib/components/Image.svelte";
     import Modal from "$lib/components/modals/Modal.svelte";
-    import Tooltip from "$lib/components/Tooltip.svelte";
-    import ContractLevelTag from "$lib/components/profile/ContractLevelTag.svelte";
-    import RatingCard from "$lib/components/records/RatingCard.svelte";
     import AccountSummary from "$lib/components/profile/AccountSummary.svelte";
-    import CrisisContract from "$lib/components/profile/ContractContainer.svelte";
     import OperatorSection from "$lib/components/profile/OperatorSection.svelte";
     import ProfileSkeleton from "$lib/components/profile/ProfileSkeleton.svelte";
-    import Image from "$lib/components/Image.svelte";
+    import RatingCard from "$lib/components/records/RatingCard.svelte";
+    import Tooltip from "$lib/components/Tooltip.svelte";
+    import { characters } from "$lib/data/characters.js";
+    import { t } from "$lib/i18n.js";
+    import { addNotification } from "$lib/stores/notifications.js";
+    import { isPageLoading } from "$lib/stores/pageLoading.js";
+    import { getServerLabel } from "$lib/utils/profileUtils.js";
+    import { onDestroy } from "svelte";
+    import { fade } from "svelte/transition";
 
     $: username = $page.params.username;
     $: initialChar = $page.url.searchParams.get("char") || $page.url.searchParams.get("operator");
