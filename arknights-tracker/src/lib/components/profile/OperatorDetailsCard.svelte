@@ -6,6 +6,7 @@
     import Image from "$lib/components/Image.svelte";
     import PotentialIcon from "$lib/components/operators/PotentialIcon.svelte";
     import AscensionIcon from "$lib/components/operators/AscensionIcon.svelte";
+    import { createEventDispatcher } from "svelte";
     import Tooltip from "$lib/components/Tooltip.svelte";
     import { equipment } from "$lib/data/items/equipment.js";
     import { getImagePath } from "$lib/utils/imageUtils.js";
@@ -269,15 +270,10 @@
     function getGemIcon(gemData) {
         if (!gemData) return "";
         if (gemData.iconId) return gemData.iconId;
-        const id = gemData.id || "";
-        const match = id.match(/_(\d+)_/);
+        const id = gemData.templateId || gemData.termId || gemData.id || gemData.itemId || "";
+        const match = id.match(/_(\d+)/);
         if (match) {
             const num = parseInt(match[1], 10);
-            return `icon_wpngem_${String(num).padStart(2, '0')}`;
-        }
-        const fallbackMatch = id.match(/(\d+)/);
-        if (fallbackMatch) {
-            const num = parseInt(fallbackMatch[1], 10);
             return `icon_wpngem_${String(num).padStart(2, '0')}`;
         }
         return "";
@@ -882,10 +878,105 @@
             addNotification("error", $t("profile.copy_failed"));
         });
     }
+
+    const dispatch = createEventDispatcher();
+
+    let cardElement;
+
+    async function handleSavePhoto() {
+        if (!cardElement || typeof window === "undefined") return;
+
+        const charName = $t(`characters.${opData?.id}`) !== `characters.${opData?.id}` ? $t(`characters.${opData?.id}`) : (opData?.name || opData?.id || "operator");
+        const charId = opData?.id || svelteId || selectedChar?.id || "operator";
+        const dateStr = new Date().toISOString().slice(0, 10);
+        const fileName = `goyfield_${charId}_${dateStr}.png`;
+
+        dispatch("openPhotoModal", {
+            operatorName: charName,
+            fileName: fileName,
+            isGenerating: true,
+            imageUrl: null,
+            imageBlob: null
+        });
+
+        let tempSvg = null;
+        try {
+            const useElements = cardElement.querySelectorAll("use");
+            const neededIds = new Set();
+            useElements.forEach(u => {
+                const href = u.getAttribute("href") || u.getAttribute("xlink:href") || "";
+                if (href.startsWith("#")) {
+                    neededIds.add(href.slice(1));
+                }
+            });
+
+            const spriteSheet = document.getElementById("__svg-sprite-sheet__");
+            if (spriteSheet && neededIds.size > 0) {
+                tempSvg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+                tempSvg.style.position = "absolute";
+                tempSvg.style.width = "0";
+                tempSvg.style.height = "0";
+                tempSvg.style.overflow = "hidden";
+                tempSvg.setAttribute("aria-hidden", "true");
+
+                neededIds.forEach(id => {
+                    const sym = spriteSheet.querySelector(`symbol#${CSS.escape(id)}`) || document.getElementById(id);
+                    if (sym) {
+                        tempSvg.appendChild(sym.cloneNode(true));
+                    }
+                });
+
+                if (tempSvg.childNodes.length > 0) {
+                    cardElement.appendChild(tempSvg);
+                }
+            }
+
+            const { toBlob } = await import("html-to-image");
+            const blob = await toBlob(cardElement, {
+                pixelRatio: 2,
+                skipAutoScale: true,
+                imagePlaceholder: "data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E",
+                width: 950,
+                height: 447,
+                style: {
+                    margin: "0",
+                    transform: "none"
+                }
+            });
+
+            if (blob) {
+                const blobUrl = URL.createObjectURL(blob);
+                dispatch("openPhotoModal", {
+                    operatorName: charName,
+                    fileName: fileName,
+                    isGenerating: false,
+                    imageUrl: blobUrl,
+                    imageBlob: blob
+                });
+            } else {
+                throw new Error("Failed to create image blob");
+            }
+        } catch (err) {
+            console.error("Failed to generate character card image:", err);
+            addNotification("error", $t("profile.copy_failed"));
+            dispatch("openPhotoModal", {
+                operatorName: charName,
+                fileName: fileName,
+                isGenerating: false,
+                imageUrl: null,
+                imageBlob: null,
+                error: true
+            });
+        } finally {
+            if (tempSvg && tempSvg.parentNode) {
+                tempSvg.parentNode.removeChild(tempSvg);
+            }
+        }
+    }
 </script>
 
 <div class="w-full overflow-x-auto custom-scrollbar pb-1">
-    <div in:fade={{ duration: 200 }} class="w-[950px] h-[447px] mx-auto relative bg-black/30 dark:bg-black/40 backdrop-blur-md border border-white/10 rounded-2xl p-5 transition-all duration-300 text-left mt-3 overflow-hidden">
+    <div bind:this={cardElement} in:fade={{ duration: 200 }} class="w-[950px] h-[447px] mx-auto relative bg-black/30 dark:bg-black/40 backdrop-blur-md border border-white/10 rounded-2xl p-5 transition-all duration-300 text-left mt-3 overflow-hidden">
         
         <div class="absolute inset-0 bg-gradient-to-br {elementColor} pointer-events-none z-0 rounded-2xl"></div>
         <div class="absolute left-[-25px] top-2 pointer-events-none z-0 select-none opacity-90" style="width: 50%; height: 100%; transform: scale(1.5); transform-origin: left center;">
@@ -1511,7 +1602,15 @@
         </div>
     </div>
 
-    <div class="w-[950px] mx-auto flex justify-end mt-1.5">
+    <div class="w-[950px] mx-auto flex justify-end gap-2 mt-1.5">
+        <button
+            type="button"
+            on:click={handleSavePhoto}
+            class="flex items-center justify-center px-2.5 py-1.5 rounded-xl text-xs font-bold font-sdk transition-all duration-200 cursor-pointer bg-white/5 hover:bg-white/15 dark:bg-black/30 dark:hover:bg-black/50 text-gray-700 dark:text-gray-200 hover:text-black dark:hover:text-white border border-gray-200/40 dark:border-white/10 active:scale-95 shadow-sm"
+        >
+            <Icon name="camera" class="w-4 h-3.5" />
+        </button>
+
         <button
             type="button"
             on:click={handleShare}

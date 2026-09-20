@@ -7,7 +7,7 @@
     export let paramList: TParam[] = [];
     export let maxSelectedParams: number = -1;
 
-    export let getLocaleFunc: ((param: TParam) => string) = (param) => String(param);
+    export let getLocaleFunc: ((param: TParam) => string) | undefined = undefined;
     export let paramBox: Component<TextParamBoxProps<TParam>>;
 
     // bindable
@@ -119,12 +119,20 @@
             on:click={() => toggleParam(param)}
         >
 
-            <svelte:component
-                this={paramBox}
-                styleMode={getBoxStyleMode(param)}
-                paramId={param}
-                getLocaleFunc={getLocaleFunc}
-            />
+            {#if getLocaleFunc}
+                <svelte:component
+                    this={paramBox}
+                    styleMode={getBoxStyleMode(param)}
+                    paramId={param}
+                    {getLocaleFunc}
+                />
+            {:else}
+                <svelte:component
+                    this={paramBox}
+                    styleMode={getBoxStyleMode(param)}
+                    paramId={param}
+                />
+            {/if}
 
         </button>
 

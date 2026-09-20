@@ -1,9 +1,11 @@
 <script>
+    import { onDestroy } from "svelte";
     import { t } from "$lib/i18n.js";
     import { currentLocale } from "$lib/stores/locale.js";
     import Icon from "$lib/components/Icon.svelte";
     import Image from "$lib/components/Image.svelte";
     import OperatorDetailsCard from "$lib/components/profile/OperatorDetailsCard.svelte";
+    import CardImageModal from "$lib/components/profile/CardImageModal.svelte";
     import {
         charOrderMap,
         getOperatorData,
@@ -189,9 +191,49 @@
     function boundGetStaticEquipId(equipData) {
         return getStaticEquipId(equipData, equipmentNames);
     }
+
+    let isPhotoModalOpen = false;
+    let photoImageUrl = null;
+    let photoImageBlob = null;
+    let photoOperatorName = "operator";
+    let photoFileName = "";
+    let isGeneratingPhoto = false;
+
+    function handleOpenPhotoModal(event) {
+        const detail = event.detail;
+        if (detail.error) {
+            handleClosePhotoModal();
+            return;
+        }
+        isPhotoModalOpen = true;
+        isGeneratingPhoto = detail.isGenerating;
+        photoOperatorName = detail.operatorName;
+        photoFileName = detail.fileName;
+        if (detail.imageUrl) {
+            if (photoImageUrl) URL.revokeObjectURL(photoImageUrl);
+            photoImageUrl = detail.imageUrl;
+            photoImageBlob = detail.imageBlob;
+        }
+    }
+
+    function handleClosePhotoModal() {
+        isPhotoModalOpen = false;
+        if (photoImageUrl) {
+            URL.revokeObjectURL(photoImageUrl);
+            photoImageUrl = null;
+        }
+        photoImageBlob = null;
+        isGeneratingPhoto = false;
+    }
+
+    onDestroy(() => {
+        if (photoImageUrl) {
+            URL.revokeObjectURL(photoImageUrl);
+        }
+    });
 </script>
 
-<div class="w-full min-w-0 overflow-hidden">
+<div class="w-full min-w-0">
     <div class="{!hasBackground ? 'bg-white dark:bg-[#383838] border border-white/10' : 'bg-white/5 border dark:bg-[#383838]/5 dark:border-[#444444]/20 border-white/20'} rounded-xl p-5 flex flex-col w-full mx-auto backdrop-blur-sm shadow-sm min-w-0 overflow-hidden">
         <div class="flex items-center justify-between border-b {!hasBackground ? 'border-gray-100 dark:border-[#444444]' : 'border-gray-100/30 dark:border-[#444444]/30'} pb-3 mb-3">
             <div class="flex gap-2">
@@ -240,8 +282,19 @@
                     charDetails={selectedCharDetails}
                     charLocale={selectedCharLocale}
                     weaponDetails={selectedWeaponDetails}
+                    on:openPhotoModal={handleOpenPhotoModal}
                 />
             {/key}
         {/if}
     </div>
+
+    <CardImageModal
+        isOpen={isPhotoModalOpen}
+        imageUrl={photoImageUrl}
+        imageBlob={photoImageBlob}
+        operatorName={photoOperatorName}
+        fileName={photoFileName}
+        isGenerating={isGeneratingPhoto}
+        on:close={handleClosePhotoModal}
+    />
 </div>

@@ -117,12 +117,20 @@
                     on:click={() => toggleParam(param)}
                 >
 
-                    <svelte:component
-                        this={paramBox}
-                        styleMode={getBoxStyleMode(param)}
-                        paramId={param}
-                        getLocaleFunc={getLocaleFunc}
-                    />
+                    {#if getLocaleFunc}
+                        <svelte:component
+                            this={paramBox}
+                            styleMode={getBoxStyleMode(param)}
+                            paramId={param}
+                            {getLocaleFunc}
+                        />
+                    {:else}
+                        <svelte:component
+                            this={paramBox}
+                            styleMode={getBoxStyleMode(param)}
+                            paramId={param}
+                        />
+                    {/if}
 
                 </button>
 

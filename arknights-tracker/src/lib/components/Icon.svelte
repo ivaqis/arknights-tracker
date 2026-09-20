@@ -45,7 +45,6 @@
         "fireandnaturaldamageincrease": "alldamagetakenscalar",
         "healoutputincrease": "heal",
         "originiumarts": "magicdam",
-        "physical": "physicaldamageincrease",
         "physical_damage": "physicaldamageincrease",
         "phy_dmg_up": "physicaldamageincrease",
         "cryst_dmg_up": "cryo",
