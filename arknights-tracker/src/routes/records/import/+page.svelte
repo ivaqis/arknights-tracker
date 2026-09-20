@@ -273,11 +273,7 @@
             });
         }
 
-        console.log(lastPullTimes); // todo убрать
-
         const result = Object.values(lastPullTimes).reduce((max, cur) => cur > max ? cur : max, 0);
-
-        console.log(result);
 
         return result;
     }
@@ -421,9 +417,6 @@
                     : $t("import.warning_sync_write_on_local");
             } else if (data.profileId !== currentPublicId) {
                 const existingProfile = await accountStore.findAccountByPublicServerUid(data.profileId);
-
-                console.log(data);
-                console.log(existingProfile);
 
                 warningMsg = existingProfile
                     ? $t("import.warning_sync_switch")
