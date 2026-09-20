@@ -276,23 +276,11 @@
                         />
                     </div>
 
-                    <div class="min-w-0 flex flex-col 2xl:col-start-1 2xl:row-start-2">
-                        {#if activeAccount?.records_uid || activeAccount?.pulls}
+                    {#if activeAccount?.records_uid || activeAccount?.pulls}
+                        <div class="min-w-0 flex flex-col 2xl:col-start-1 2xl:row-start-2">
                             <RatingCard customGameUid={activeAccount.records_uid} profileStats={activeAccount?.pulls} isProfile={true} hideBorders={!!profile?.background} />
-                        {:else}
-                            <div class="{!profile?.background ? 'bg-white dark:bg-[#383838] border border-white/10' : 'bg-white/5 border dark:bg-[#383838]/5 dark:border-[#444444]/20 border-white/20'} rounded-xl p-5 min-w-0 flex flex-col backdrop-blur-sm shadow-sm">
-                                <h2 class="text-xl font-bold text-[#21272C] dark:text-[#FDFDFD] mb-4 font-sdk border-b {!profile?.background ? 'border-gray-100 dark:border-[#444444]' : 'border-gray-100/30 dark:border-[#444444]/30'} pb-3">
-                                    {$t("profile.stats")}
-                                </h2>
-                                <div class="flex flex-col items-center h-40 justify-center text-center border border-gray-100/50 dark:border-[#444444]/50 rounded-lg bg-gray-50/20 dark:bg-[#2e2e2e]/20 text-xs text-gray-500 dark:text-gray-400 backdrop-blur-sm px-4">
-                                    <Icon name="noData" class="w-8 h-8 mb-2 opacity-30" />
-                                    <p class="italic">
-                                        {$t("profile.bind_to_view_luck")}
-                                    </p>
-                                </div>
-                            </div>
-                        {/if}
-                    </div>
+                        </div>
+                    {/if}
 
                     <!--<CrisisContract
                         contract={activeAccount.info?.contract}
