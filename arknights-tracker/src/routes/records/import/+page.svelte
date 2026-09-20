@@ -1052,7 +1052,7 @@
 
         {#if errorMsg && !isInputError}
             <div
-                class="mt-5 p-4 bg-red-50 dark:text-red-300 text-red-600 dark:bg-[#902E2E] dark:border-[#444444] rounded-lg border border-red-100 flex items-center gap-2 animate-in fade-in slide-in-from-top-2"
+                class="mt-5 p-4 bg-red-200 dark:text-red-300 text-red-600 dark:bg-[#902E2E] dark:border-[#444444] rounded-lg border border-red-100 flex items-center gap-2 animate-in fade-in slide-in-from-top-2"
             >
                 <Icon name="close" class="w-5 h-5" />
                 {errorMsg}
@@ -1060,10 +1060,8 @@
         {/if}
 
         {#if warningMsg}
-            <!--todo поменять цвет-->
-
             <div
-                class="mt-5 p-4 bg-red-50 dark:text-red-300 text-red-600 dark:bg-[#902E2E] dark:border-[#444444] rounded-lg border border-red-100 flex items-center gap-2 animate-in fade-in slide-in-from-top-2"
+                class="mt-5 p-4 bg-amber-200 dark:bg-[#90742E] text-amber-500 border-amber-200/80 dark:border-amber-900/30 rounded-lg border flex items-center gap-2 animate-in fade-in slide-in-from-top-2"
             >
 
                 <Icon

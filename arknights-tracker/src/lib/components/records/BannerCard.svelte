@@ -12,6 +12,11 @@
   import { getWeaponCategory } from "$lib/utils/importUtils";
   import { slide } from "svelte/transition";
 
+  import Button from "$lib/components/Button.svelte";
+  import Image from "$lib/components/Image.svelte";
+  import Icon from "$lib/components/Icon.svelte";
+  import Tooltip from "$lib/components/Tooltip.svelte";
+
   export let bannerId;
   export let titleKey;
 

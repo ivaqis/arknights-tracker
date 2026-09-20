@@ -1,10 +1,13 @@
 <script>
   import { goto } from "$app/navigation";
-  import Button from "$lib/components/Button.svelte";
-  import Icon from "$lib/components/Icon.svelte";
-  import Image from "$lib/components/Image.svelte";
-  import RatingCard from "$lib/components/records/RatingCard.svelte";
-  import { t } from "$lib/i18n";
+  import { onMount } from "svelte";
+  import { flip } from "svelte/animate";
+  import { pullData } from "$lib/stores/pulls";
+  import { bannerTypes } from "$lib/data/bannerTypes";
+  import { banners } from "$lib/data/banners";
+  import { currencies } from "$lib/data/items/currencies.js";
+  import { user, checkSync, syncStatus } from "$lib/stores/cloudStore";
+  import { currentLocale, currentUiLocale, normalizeLocale } from "$lib/stores/locale";
   import {
     recordsCardsOrder,
     recordsEnableDragDrop,
@@ -14,10 +17,13 @@
     recordsShowRating,
     recordsShowTotalCost
   } from "$lib/stores/filterStore.js";
-  import { currentLocale, currentUiLocale, normalizeLocale } from "$lib/stores/locale";
-  import { pullData } from "$lib/stores/pulls";
-  import { onMount } from "svelte";
-  import { flip } from "svelte/animate";
+  import { t } from "$lib/i18n";
+  import Button from "$lib/components/Button.svelte";
+  import Icon from "$lib/components/Icon.svelte";
+  import Image from "$lib/components/Image.svelte";
+  import RatingCard from "$lib/components/records/RatingCard.svelte";
+  import BannerCard from "$lib/components/records/BannerCard.svelte";
+  import SettingsModal from "$lib/components/records/SettingsModal.svelte";
 
   $: pullsStats = (() => {
     let allPulls = [];

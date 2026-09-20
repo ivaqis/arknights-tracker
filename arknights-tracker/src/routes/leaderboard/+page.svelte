@@ -16,6 +16,7 @@
     import { warEchoesSeasons } from "$lib/data/warEchoes.js";
 
     import Icon from "$lib/components/Icon.svelte";
+    import Image from "$lib/components/Image.svelte";
     import Button from "$lib/components/Button.svelte";
     import ContractLevelTag from "$lib/components/profile/ContractLevelTag.svelte";
     import CrisisContract from "$lib/components/profile/ContractContainer.svelte";
