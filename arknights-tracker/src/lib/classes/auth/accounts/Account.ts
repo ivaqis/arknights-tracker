@@ -40,7 +40,7 @@ export class Account {
         return JSON.stringify(accounts.map(account => (typeof account?.toData === 'function' ? account.toData() : account)));
     }
 
-    public static createFromData(updateCallback: () => void, isExist: (value: AccountUniqueConstraint) => boolean, data: any): Account {
+    public static createFromData(updateCallback: () => void, isExist: (value: AccountUniqueConstraint) => boolean, data: AccountData | any): Account {
         if (data instanceof Account) {
             return data;
         }
@@ -198,7 +198,8 @@ export class Account {
             id: this.id,
             name: this.name,
             serverUid: this.serverUid,
-            serverId: this.serverId
+            serverId: this.serverId,
+            publicServerUid: this.publicServerUid
         };
     }
 

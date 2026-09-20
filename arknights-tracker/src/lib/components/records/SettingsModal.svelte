@@ -1,28 +1,25 @@
 <script>
-  import { t } from "$lib/i18n.js";
-  import { pullData } from "$lib/stores/pulls.js";
-  import { banners } from "$lib/data/banners.js";
-  import { addNotification } from "$lib/stores/index.js";
-  import { onDestroy } from "svelte";
-  import { currentLocale, currentUiLocale, normalizeLocale } from "$lib/stores/locale.js";
-  import Image from "$lib/components/Image.svelte";
-
-
-  import Icon from "$lib/components/Icon.svelte";
   import Button from "$lib/components/Button.svelte";
   import Checkbox from "$lib/components/Checkbox.svelte";
+  import Icon from "$lib/components/Icon.svelte";
   import MultiSelect from "$lib/components/MultiSelect.svelte";
-  import { getWeaponCategory } from "$lib/utils/importUtils";
+  import { banners } from "$lib/data/banners.js";
+  import { t } from "$lib/i18n.js";
   import {
-    recordsExcludedBannerTypes,
+    recordsCardsOrder,
+    recordsEnableDragDrop,
     recordsExcludedBanners,
+    recordsExcludedBannerTypes,
+    recordsMaxCols,
     recordsShowMonthlyChart,
     recordsShowRating,
-    recordsShowTotalCost,
-    recordsMaxCols,
-    recordsEnableDragDrop,
-    recordsCardsOrder
+    recordsShowTotalCost
   } from "$lib/stores/filterStore.js";
+  import { addNotification } from "$lib/stores/index.js";
+  import { currentUiLocale, normalizeLocale } from "$lib/stores/locale.js";
+  import { pullData } from "$lib/stores/pulls.js";
+  import { getWeaponCategory } from "$lib/utils/importUtils";
+  import { onDestroy } from "svelte";
 
   export let isOpen = false;
   export let onClose;

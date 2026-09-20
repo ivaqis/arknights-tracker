@@ -1,24 +1,21 @@
 <script>
-    import { createEventDispatcher, onMount } from "svelte";
-    import { replaceState } from "$app/navigation";
-    import { pullData } from "$lib/stores/pulls.js";
-    import { characters } from "$lib/data/characters.js";
-    import { accountStore } from "$lib/stores/accounts.js";
-    import { weapons } from "$lib/data/weapons.js";
-    import { banners } from "$lib/data/banners.js";
     import { browser } from "$app/environment";
-    import { t } from "$lib/i18n.js";
-    import { currentLocale, currentUiLocale, normalizeLocale } from "$lib/stores/locale.js";
-
-    import Icon from "$lib/components/Icon.svelte";
+    import { replaceState } from "$app/navigation";
     import OperatorCard from "$lib/components/cards/OperatorCard.svelte";
     import WeaponCard from "$lib/components/cards/WeaponCard.svelte";
-    import Image from "$lib/components/Image.svelte";
-    import BannerStats from "$lib/components/modals/BannerStats.svelte";
-    import Tooltip from "$lib/components/Tooltip.svelte";
-    import Modal from "$lib/components/modals/Modal.svelte";
-    import ItemTags from "$lib/components/ItemTags.svelte";
     import EventBadge from "$lib/components/events/EventBadge.svelte";
+    import Icon from "$lib/components/Icon.svelte";
+    import Image from "$lib/components/Image.svelte";
+    import ItemTags from "$lib/components/ItemTags.svelte";
+    import BannerStats from "$lib/components/modals/BannerStats.svelte";
+    import Modal from "$lib/components/modals/Modal.svelte";
+    import { characters } from "$lib/data/characters.js";
+    import { weapons } from "$lib/data/weapons.js";
+    import { t } from "$lib/i18n.js";
+    import { accountStore } from "$lib/stores/accounts.js";
+    import { currentUiLocale, normalizeLocale } from "$lib/stores/locale.js";
+    import { pullData } from "$lib/stores/pulls.js";
+    import { createEventDispatcher, onMount } from "svelte";
 
     export const bannerId = undefined;
     /**

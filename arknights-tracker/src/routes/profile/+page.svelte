@@ -1,31 +1,37 @@
 <script>
-    import { onMount, onDestroy } from "svelte";
-    import { t } from "$lib/i18n.js";
-    import { user, login, logout } from "$lib/stores/cloudStore.js";
-    import { isPageLoading } from "$lib/stores/pageLoading.js";
-    import { getUserProfile, registerProfile, syncGameAccount, uploadAvatar, deleteGameAccount, createUserProfile, updateUserProfile, getAvatarUrl, linkUserPulls, unlinkUserPulls } from "$lib/api.js";
-    import { addNotification } from "$lib/stores/notifications.js";
-    import { fade, fly } from "svelte/transition";
-    import { characters } from "$lib/data/characters.js";
-    import { accountStore } from "$lib/stores/accounts.js";
-    import { getServerLabel } from "$lib/utils/profileUtils.js";
-
-    import Icon from "$lib/components/Icon.svelte";
+    import {
+        createUserProfile,
+        deleteGameAccount,
+        getAvatarUrl,
+        getUserProfile,
+        linkUserPulls,
+        syncGameAccount,
+        unlinkUserPulls,
+        updateUserProfile,
+        uploadAvatar
+    } from "$lib/api.js";
     import Button from "$lib/components/Button.svelte";
-    import Modal from "$lib/components/modals/Modal.svelte";
-    import ConfirmationModal from "$lib/components/modals/ConfirmationModal.svelte";
+    import Icon from "$lib/components/Icon.svelte";
     import Image from "$lib/components/Image.svelte";
-    import Tooltip from "$lib/components/Tooltip.svelte";
-    import ContractLevelTag from "$lib/components/profile/ContractLevelTag.svelte";
+    import ConfirmationModal from "$lib/components/modals/ConfirmationModal.svelte";
+    import Modal from "$lib/components/modals/Modal.svelte";
+    import AccountSummary from "$lib/components/profile/AccountSummary.svelte";
     import CropModal from "$lib/components/profile/CropModal.svelte";
+    import OperatorSection from "$lib/components/profile/OperatorSection.svelte";
+    import ProfileSkeleton from "$lib/components/profile/ProfileSkeleton.svelte";
     import SettingsModal from "$lib/components/profile/SettingsModal.svelte";
     import SyncModal from "$lib/components/profile/SyncModal.svelte";
     import RatingCard from "$lib/components/records/RatingCard.svelte";
-    import Select from "$lib/components/Select.svelte";
-    import AccountSummary from "$lib/components/profile/AccountSummary.svelte";
-    import CrisisContract from "$lib/components/profile/ContractContainer.svelte";
-    import OperatorSection from "$lib/components/profile/OperatorSection.svelte";
-    import ProfileSkeleton from "$lib/components/profile/ProfileSkeleton.svelte";
+    import Tooltip from "$lib/components/Tooltip.svelte";
+    import { characters } from "$lib/data/characters.js";
+    import { t } from "$lib/i18n.js";
+    import { accountStore } from "$lib/stores/accounts.js";
+    import { login, logout, user } from "$lib/stores/cloudStore.js";
+    import { addNotification } from "$lib/stores/notifications.js";
+    import { isPageLoading } from "$lib/stores/pageLoading.js";
+    import { getServerLabel } from "$lib/utils/profileUtils.js";
+    import { onDestroy, onMount } from "svelte";
+    import { fade } from "svelte/transition";
 
     const { accounts } = accountStore;
 

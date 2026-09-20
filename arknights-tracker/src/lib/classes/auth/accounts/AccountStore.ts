@@ -1,7 +1,6 @@
 import { browser } from "$app/environment";
 import { Account } from "$lib/classes/auth/accounts/Account";
 import type { AccountCreateParams } from "$lib/classes/auth/accounts/AccountCreateParams";
-import type { AccountData } from "$lib/classes/auth/accounts/AccountData";
 import { AccountExistError } from "$lib/classes/auth/accounts/AccountExistError";
 import type { AccountUniqueConstraint } from "$lib/classes/auth/accounts/AccountUniqueConstraint";
 import type { AccountUpdates } from "$lib/classes/auth/accounts/AccountUpdates";

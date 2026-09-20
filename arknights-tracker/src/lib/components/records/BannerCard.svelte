@@ -10,18 +10,11 @@
   import { currencies } from "$lib/data/items/currencies";
   import { weapons } from "$lib/data/weapons";
   import { t } from "$lib/i18n";
-  import { recordsExcludedBanners } from "$lib/stores/filterStore.js";
-  import { currentUiLocale } from "$lib/stores/locale";
+  import { recordsExcludedBanners } from "$lib/stores/filterStore";
+  import { currentUiLocale, normalizeLocale } from "$lib/stores/locale";
   import { pullData } from "$lib/stores/pulls";
   import { getWeaponCategory } from "$lib/utils/importUtils";
   import { slide } from "svelte/transition";
-  import { currentLocale, currentUiLocale, normalizeLocale } from "$lib/stores/locale";
-  import { recordsExcludedBanners } from "$lib/stores/filterStore";
-
-  import Button from "$lib/components/Button.svelte";
-  import Image from "$lib/components/Image.svelte";
-  import Icon from "$lib/components/Icon.svelte";
-  import Tooltip from "$lib/components/Tooltip.svelte";
 
   export let bannerId;
   export let titleKey;
