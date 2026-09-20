@@ -6,7 +6,7 @@
     import Image from "$lib/components/Image.svelte";
     import PotentialIcon from "$lib/components/operators/PotentialIcon.svelte";
     import AscensionIcon from "$lib/components/operators/AscensionIcon.svelte";
-    import { createEventDispatcher } from "svelte";
+    import { createEventDispatcher, tick } from "svelte";
     import Tooltip from "$lib/components/Tooltip.svelte";
     import { equipment } from "$lib/data/items/equipment.js";
     import { getImagePath } from "$lib/utils/imageUtils.js";
@@ -150,6 +150,8 @@
     export let charDetails = null;
     export let charLocale = null;
     export let weaponDetails = null;
+
+    let isExporting = false;
 
     $: evolvePhase = (() => {
         if (selectedChar?.evolvePhase !== undefined && selectedChar?.evolvePhase !== null) {
@@ -886,6 +888,10 @@
     async function handleSavePhoto() {
         if (!cardElement || typeof window === "undefined") return;
 
+        isExporting = true;
+        await tick();
+        await new Promise(r => setTimeout(r, 200));
+
         const charName = $t(`characters.${opData?.id}`) !== `characters.${opData?.id}` ? $t(`characters.${opData?.id}`) : (opData?.name || opData?.id || "operator");
         const charId = opData?.id || svelteId || selectedChar?.id || "operator";
         const dateStr = new Date().toISOString().slice(0, 10);
@@ -940,6 +946,9 @@
                 height: 447,
                 style: {
                     margin: "0",
+                    border: "none",
+                    outline: "none",
+                    boxShadow: "none",
                     transform: "none"
                 }
             });
@@ -968,6 +977,7 @@
                 error: true
             });
         } finally {
+            isExporting = false;
             if (tempSvg && tempSvg.parentNode) {
                 tempSvg.parentNode.removeChild(tempSvg);
             }
@@ -976,9 +986,18 @@
 </script>
 
 <div class="w-full overflow-x-auto custom-scrollbar pb-1">
-    <div bind:this={cardElement} in:fade={{ duration: 200 }} class="w-[950px] h-[447px] mx-auto relative bg-black/30 dark:bg-black/40 backdrop-blur-md border border-white/10 rounded-2xl p-5 transition-all duration-300 text-left mt-3 overflow-hidden">
+    <div bind:this={cardElement} in:fade={{ duration: 200 }} class="w-[950px] h-[447px] mx-auto relative {isExporting ? 'bg-[#181818] border-none' : 'bg-black/30 dark:bg-black/40 border border-white/10'} backdrop-blur-md rounded-2xl p-5 transition-all duration-300 text-left mt-3 overflow-hidden">
         
-        <div class="absolute inset-0 bg-gradient-to-br {elementColor} pointer-events-none z-0 rounded-2xl"></div>
+        <div
+            class="absolute inset-0 pointer-events-none z-0 rounded-2xl"
+            style={isExporting
+                ? `background: linear-gradient(125deg, ${getHexColorByElement(opData?.element)}E6 0%, ${getHexColorByElement(opData?.element)}99 35%, ${getHexColorByElement(opData?.element)}33 70%, transparent 100%);`
+                : ''}
+        >
+            {#if !isExporting}
+                <div class="absolute inset-0 bg-gradient-to-br {elementColor} rounded-2xl"></div>
+            {/if}
+        </div>
         <div class="absolute left-[-25px] top-2 pointer-events-none z-0 select-none opacity-90" style="width: 50%; height: 100%; transform: scale(1.5); transform-origin: left center;">
             <Image id={opData.id} variant="operator-splash" className="w-full h-full object-contain object-center" />
         </div>

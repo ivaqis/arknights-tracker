@@ -57,7 +57,7 @@
                 <a
                     href={imageUrl}
                     download={fileName || `goyfield_${operatorName || "operator"}_${new Date().toISOString().slice(0, 10)}.png`}
-                    class="inline-block outline-none cursor-grab active:cursor-grabbing"
+                    class="inline-flex outline-none cursor-grab active:cursor-grabbing justify-center items-center"
                     on:click={(e) => {
                         if (e.target.tagName !== "BUTTON") {
                             e.preventDefault();
@@ -68,7 +68,7 @@
                         src={imageUrl}
                         alt={operatorName}
                         draggable="true"
-                        class="max-w-full max-h-[60vh] object-contain rounded-lg"
+                        class="block max-w-full max-h-[60vh] object-contain rounded-2xl select-none"
                     />
                 </a>
             {/if}
