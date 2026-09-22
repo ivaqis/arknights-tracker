@@ -1,3 +1,4 @@
+import { WeaponBannerType } from "@models/banners/WeaponBannerType.js";
 import { IEntityClass } from "@models/IEntityClass.js";
 import { WeaponPullEntity } from "@models/pulls/entities/WeaponPullEntity.js";
 import { Pull } from "@models/pulls/Pull.js";
@@ -9,8 +10,18 @@ export class WeaponPull extends Pull implements IEntityClass<WeaponPullEntity> {
     private readonly _weaponName: string;
     private readonly _weaponType: string;
 
-    private constructor(poolId: string, rarity: number, isNew: boolean, gachaTs: string, seqId: string, weaponId: string, weaponName: string, weaponType: string) {
-        super(poolId, rarity, isNew, gachaTs, seqId);
+    private constructor(poolId: string,
+                        rarity: number,
+                        isNew: boolean,
+                        gachaTs: string,
+                        seqId: string,
+                        poolVersion: null,
+                        weaponId: string,
+                        weaponName: string,
+                        weaponType: string,
+    ) {
+        super(poolId, rarity, isNew, gachaTs, seqId, poolVersion);
+
         this._weaponId = weaponId;
         this._weaponName = weaponName;
         this._weaponType = weaponType;
@@ -23,9 +34,10 @@ export class WeaponPull extends Pull implements IEntityClass<WeaponPullEntity> {
             data.isNew,
             data.gachaTs,
             data.seqId,
+            data.poolVersion,
             data.weaponId,
             data.weaponName,
-            data.weaponType
+            data.weaponType,
         );
     }
 
@@ -36,9 +48,10 @@ export class WeaponPull extends Pull implements IEntityClass<WeaponPullEntity> {
             entity.isNew,
             entity.gachaTs,
             entity.seqId,
+            entity.poolVersion,
             entity.weaponId,
             entity.weaponName,
-            entity.weaponType
+            entity.weaponType,
         );
     }
 
@@ -63,7 +76,8 @@ export class WeaponPull extends Pull implements IEntityClass<WeaponPullEntity> {
             isNew: this.isNew,
             bannerId: this.bannerId,
             gachaTs: this.gachaTs,
-            seqId: this.seqId
+            seqId: this.seqId,
+            poolVersion: this.poolVersion,
         };
     }
 

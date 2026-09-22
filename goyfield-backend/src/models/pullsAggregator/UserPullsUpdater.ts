@@ -46,16 +46,6 @@ export class UserPullsUpdater {
         return banner;
     }
 
-    // private static isFeatured(bannerId: string, itemId: string): boolean {
-    //     const banner = Banner.get(bannerId);
-    //
-    //     if (!banner) {
-    //         throw new Error(`Banner id not found: ${bannerId}`);
-    //     }
-    //
-    //     return banner.isFeatured(itemId);
-    // }
-
     public async execute(): Promise<void> {
         await this.updateCharPulls(DbBannerType.CHAR_SPECIAL, this._pulls.specialPulls);
         await this.updateCharPulls(DbBannerType.CHAR_JOINT, this._pulls.jointPulls);

@@ -9,8 +9,9 @@ export class CharPull extends Pull implements IEntityClass<CharPullEntity> {
     private readonly _charName: string;
     private readonly _isFree: boolean;
 
-    private constructor(poolId: string, rarity: number, isNew: boolean, gachaTs: string, seqId: string, charId: string, charName: string, isFree: boolean) {
-        super(poolId, rarity, isNew, gachaTs, seqId);
+    private constructor(poolId: string, rarity: number, isNew: boolean, gachaTs: string, seqId: string, poolVersion: null, charId: string, charName: string, isFree: boolean) {
+        super(poolId, rarity, isNew, gachaTs, seqId, poolVersion);
+
         this._charId = charId;
         this._charName = charName;
         this._isFree = isFree;
@@ -23,6 +24,7 @@ export class CharPull extends Pull implements IEntityClass<CharPullEntity> {
             data.isNew,
             data.gachaTs,
             data.seqId,
+            data.poolVersion,
             data.charId,
             data.charName,
             data.isFree
@@ -36,6 +38,7 @@ export class CharPull extends Pull implements IEntityClass<CharPullEntity> {
             entity.isNew,
             entity.gachaTs,
             entity.seqId,
+            entity.poolVersion,
             entity.charId,
             entity.charName,
             entity.isFree
@@ -63,7 +66,8 @@ export class CharPull extends Pull implements IEntityClass<CharPullEntity> {
             isNew: this.isNew,
             bannerId: this.bannerId,
             gachaTs: this.gachaTs,
-            seqId: this.seqId
+            seqId: this.seqId,
+            poolVersion: this.poolVersion
         };
     }
 

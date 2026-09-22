@@ -22,6 +22,7 @@ export class BannerDataFetcher {
     private readonly _beginnerFetcher: PullsFetcher<CharPullData, CharBannerRequestParams>;
     private readonly _specialFetcher: PullsFetcher<CharPullData, CharBannerRequestParams>;
     private readonly _jointFetcher: PullsFetcher<CharPullData, CharBannerRequestParams>;
+    private readonly _rerunFetcher: PullsFetcher<CharPullData, CharBannerRequestParams>;
     private readonly _weaponFetcher: PullsFetcher<WeaponPullData, WeaponBannerRequestParams>;
 
     public constructor(token: string, serverId: string, callbackFn?: (type: BannerType, count: number) => void) {
@@ -33,6 +34,7 @@ export class BannerDataFetcher {
         this._beginnerFetcher = new PullsFetcher(BannerDataFetcher.CHAR_API_URL, this.getCharRequestParams(BannerType.CHAR_BEGINNER), this.getCallbackFn(BannerType.CHAR_BEGINNER));
         this._specialFetcher = new PullsFetcher(BannerDataFetcher.CHAR_API_URL, this.getCharRequestParams(BannerType.CHAR_SPECIAL), this.getCallbackFn(BannerType.CHAR_SPECIAL));
         this._jointFetcher = new PullsFetcher(BannerDataFetcher.CHAR_API_URL, this.getCharRequestParams(BannerType.CHAR_JOINT), this.getCallbackFn(BannerType.CHAR_JOINT));
+        this._rerunFetcher = new PullsFetcher(BannerDataFetcher.CHAR_API_URL, this.getCharRequestParams(BannerType.CHAR_RERUN), this.getCallbackFn(BannerType.CHAR_RERUN));
         this._weaponFetcher = new PullsFetcher(BannerDataFetcher.WEAPON_API_URL, this.getWeaponRequestParams(), this.getCallbackFn(BannerType.WEAPON));
     }
 
@@ -52,6 +54,7 @@ export class BannerDataFetcher {
             this._beginnerFetcher.fetch(lastPullTimeMs),
             this._specialFetcher.fetch(lastPullTimeMs),
             this._jointFetcher.fetch(lastPullTimeMs),
+            this._rerunFetcher.fetch(lastPullTimeMs),
             this._weaponFetcher.fetch(lastPullTimeMs)
         ]);
 
@@ -60,6 +63,7 @@ export class BannerDataFetcher {
             [BannerType.CHAR_BEGINNER]: this._beginnerFetcher.pullsList.filter(p => p.charId),
             [BannerType.CHAR_SPECIAL]: this._specialFetcher.pullsList.filter(p => p.charId),
             [BannerType.CHAR_JOINT]: this._jointFetcher.pullsList.filter(p => p.charId),
+            [BannerType.CHAR_RERUN]: this._rerunFetcher.pullsList.filter(p => p.charId),
             [BannerType.WEAPON]: this._weaponFetcher.pullsList.filter(p => p.weaponId)
         });
     }

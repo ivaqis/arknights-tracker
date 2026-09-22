@@ -7,5 +7,6 @@ export interface GroupedPullsByDate {
     [BannerType.CHAR_BEGINNER]: Map<Date, CharPull[]>,
     [BannerType.CHAR_SPECIAL]: Map<Date, CharPull[]>,
     [BannerType.CHAR_JOINT]: Map<Date, CharPull[]>,
-    [BannerType.WEAPON]: Map<Date, WeaponPull[]>
+    [BannerType.WEAPON]: Map<Date, WeaponPull[]>,
+    [BannerType.CHAR_RERUN]: Map<Date, CharPull[]>,
 }
