@@ -4,4 +4,5 @@ export interface BannerTypeEntity {
     readonly hardGuarantee: number;
     readonly softGuarantee: number;
     readonly softGuarantee5: number;
+    readonly freeTenPullCountList: readonly number[];
 }

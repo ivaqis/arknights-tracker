@@ -20,7 +20,7 @@ export class Banner {
     private readonly _hardGuaranteedSet: Set<string>;
     private readonly _allowedMap: Map<string, BannerItemEntity>;
 
-    constructor(bannerEntity: BannerEntity) {
+    public constructor(bannerEntity: BannerEntity) {
         this._id = bannerEntity.id;
         this._name = bannerEntity.name;
         this._type = Banner.getBannerType(bannerEntity.type);

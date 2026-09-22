@@ -13,19 +13,22 @@ export class BannersPulls implements IEntityClass<BannersPullsEntity> {
     private readonly _standardPulls: CharPull[];
     private readonly _beginnerPulls: CharPull[];
     private readonly _weaponPulls: WeaponPull[];
+    private readonly _rerunPulls: CharPull[];
 
-    private constructor(specialPulls: CharPull[], jointPulls: CharPull[], standardPulls: CharPull[], beginnerPulls: CharPull[], weaponPulls: WeaponPull[]) {
+    private constructor(specialPulls: CharPull[], jointPulls: CharPull[], standardPulls: CharPull[], beginnerPulls: CharPull[], weaponPulls: WeaponPull[], rerunPulls: CharPull[]) {
         this._specialPulls = specialPulls;
         this._jointPulls = jointPulls;
         this._standardPulls = standardPulls;
         this._beginnerPulls = beginnerPulls;
         this._weaponPulls = weaponPulls;
+        this._rerunPulls = rerunPulls;
 
         BannersPulls.sort(this._specialPulls);
         BannersPulls.sort(this._jointPulls);
         BannersPulls.sort(this._standardPulls);
         BannersPulls.sort(this._beginnerPulls);
         BannersPulls.sort(this._weaponPulls);
+        BannersPulls.sort(this._rerunPulls);
     }
 
     public static createFromData(data: BannersPullsData): BannersPulls {
@@ -34,7 +37,8 @@ export class BannersPulls implements IEntityClass<BannersPullsEntity> {
             data[BannerType.CHAR_JOINT].map(CharPull.createFromData),
             data[BannerType.CHAR_STANDARD].map(CharPull.createFromData),
             data[BannerType.CHAR_BEGINNER].map(CharPull.createFromData),
-            data[BannerType.WEAPON].map(WeaponPull.createFromData)
+            data[BannerType.WEAPON].map(WeaponPull.createFromData),
+            data[BannerType.CHAR_RERUN].map(CharPull.createFromData),
         );
     }
 
@@ -44,7 +48,8 @@ export class BannersPulls implements IEntityClass<BannersPullsEntity> {
             entity[BannerType.CHAR_JOINT].map(CharPull.createFromEntity),
             entity[BannerType.CHAR_STANDARD].map(CharPull.createFromEntity),
             entity[BannerType.CHAR_BEGINNER].map(CharPull.createFromEntity),
-            entity[BannerType.WEAPON].map(WeaponPull.createFromEntity)
+            entity[BannerType.WEAPON].map(WeaponPull.createFromEntity),
+            entity[BannerType.CHAR_RERUN].map(CharPull.createFromEntity),
         );
     }
 
@@ -78,7 +83,8 @@ export class BannersPulls implements IEntityClass<BannersPullsEntity> {
             this._jointPulls,
             this._standardPulls,
             this._beginnerPulls,
-            this._weaponPulls
+            this._weaponPulls,
+            this._rerunPulls
         );
     }
 
@@ -88,6 +94,7 @@ export class BannersPulls implements IEntityClass<BannersPullsEntity> {
             [BannerType.CHAR_BEGINNER]: this._beginnerPulls.map(p => p.getEntity()),
             [BannerType.CHAR_SPECIAL]: this._specialPulls.map(p => p.getEntity()),
             [BannerType.CHAR_JOINT]: this._jointPulls.map(p => p.getEntity()),
+            [BannerType.CHAR_RERUN]: this._standardPulls.map(p => p.getEntity()),
             [BannerType.WEAPON]: this._weaponPulls.map(p => p.getEntity())
         };
     }

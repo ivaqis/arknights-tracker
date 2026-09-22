@@ -7,5 +7,6 @@ export interface BannersPullsData {
     [BannerType.CHAR_BEGINNER]: CharPullData[],
     [BannerType.CHAR_SPECIAL]: CharPullData[],
     [BannerType.CHAR_JOINT]: CharPullData[],
+    [BannerType.CHAR_RERUN]: CharPullData[],
     [BannerType.WEAPON]: WeaponPullData[]
 }

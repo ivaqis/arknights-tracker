@@ -6,13 +6,15 @@ export abstract class Pull {
     private readonly _isNew: boolean;
     private readonly _gachaTs: string;
     private readonly _seqId: string;
+    private readonly _poolVersion: null;
 
-    protected constructor(poolId: string, rarity: number, isNew: boolean, gachaTs: string, seqId: string) {
+    protected constructor(poolId: string, rarity: number, isNew: boolean, gachaTs: string, seqId: string, poolVersion: null) {
         this._bannerId = poolId;
         this._rarity = rarity;
         this._isNew = isNew;
         this._gachaTs = gachaTs;
         this._seqId = seqId;
+        this._poolVersion = poolVersion;
     }
 
     public get bannerId(): string {
@@ -29,6 +31,10 @@ export abstract class Pull {
 
     public get gachaTs(): string {
         return this._gachaTs;
+    }
+
+    public get poolVersion(): null {
+        return this._poolVersion;
     }
 
     public get gachaTsNumber(): number {

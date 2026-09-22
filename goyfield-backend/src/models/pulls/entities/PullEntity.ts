@@ -4,4 +4,5 @@ export interface PullEntity {
     isNew: boolean;
     gachaTs: string;
     seqId: string;
+    poolVersion: null;
 }

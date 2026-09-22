@@ -15,24 +15,34 @@ export class StablePullPeriod {
     private readonly _standardPulls: PeriodPulls<CharPull>;
     private readonly _beginnerPulls: PeriodPulls<CharPull>;
     private readonly _weaponPulls: PeriodPulls<WeaponPull>;
+    private readonly _rerunPulls: PeriodPulls<CharPull>;
 
-    private constructor(periodNumber: number, specialPulls: PeriodPulls<CharPull>, jointPulls: PeriodPulls<CharPull>, standardPulls: PeriodPulls<CharPull>, beginnerPulls: PeriodPulls<CharPull>, weaponPulls: PeriodPulls<WeaponPull>) {
+    private constructor(periodNumber: number,
+                        specialPulls: PeriodPulls<CharPull>,
+                        jointPulls: PeriodPulls<CharPull>,
+                        standardPulls: PeriodPulls<CharPull>,
+                        beginnerPulls: PeriodPulls<CharPull>,
+                        weaponPulls: PeriodPulls<WeaponPull>,
+                        rerunPulls: PeriodPulls<CharPull>,
+    ) {
         this._periodNumber = periodNumber;
         this._specialPulls = specialPulls;
         this._jointPulls = jointPulls;
         this._standardPulls = standardPulls;
         this._beginnerPulls = beginnerPulls;
         this._weaponPulls = weaponPulls;
+        this._rerunPulls = rerunPulls;
     }
 
     // todo тут где то должен быть баг что не обработан случай неполного периода когда он в конце
-    public static create(specialPulls: CharPull[], jointPulls: CharPull[], standardPulls: CharPull[], beginnerPulls: CharPull[], weaponPulls: WeaponPull[]): StablePullPeriod[] {
+    public static create(specialPulls: CharPull[], jointPulls: CharPull[], standardPulls: CharPull[], beginnerPulls: CharPull[], weaponPulls: WeaponPull[], rerunPulls: CharPull[]): StablePullPeriod[] {
         const groupedPulls: GroupedPullsByDate = {
-            E_CharacterGachaPoolType_Special: this.groupByDate(specialPulls),
-            E_CharacterGachaPoolType_Joint: this.groupByDate(jointPulls),
-            E_CharacterGachaPoolType_Standard: this.groupByDate(standardPulls),
-            E_CharacterGachaPoolType_Beginner: this.groupByDate(beginnerPulls),
-            Weapon: this.groupByDate(weaponPulls)
+            [BannerType.CHAR_SPECIAL]: this.groupByDate(specialPulls),
+            [BannerType.CHAR_JOINT]: this.groupByDate(jointPulls),
+            [BannerType.CHAR_STANDARD]: this.groupByDate(standardPulls),
+            [BannerType.CHAR_BEGINNER]: this.groupByDate(beginnerPulls),
+            [BannerType.WEAPON]: this.groupByDate(weaponPulls),
+            [BannerType.CHAR_RERUN]: this.groupByDate(rerunPulls)
         };
 
         const periods = this.groupByPeriod(groupedPulls);
@@ -50,7 +60,8 @@ export class StablePullPeriod {
                 pulls[BannerType.CHAR_JOINT],
                 pulls[BannerType.CHAR_STANDARD],
                 pulls[BannerType.CHAR_BEGINNER],
-                pulls[BannerType.WEAPON]
+                pulls[BannerType.WEAPON],
+                pulls[BannerType.CHAR_RERUN]
             );
 
             result.push(period);
@@ -147,7 +158,8 @@ export class StablePullPeriod {
             ?? StablePullPeriod.getFirstDayWithPulls(this._weaponPulls)
             ?? StablePullPeriod.getFirstDayWithPulls(this._jointPulls)
             ?? StablePullPeriod.getFirstDayWithPulls(this._standardPulls)
-            ?? StablePullPeriod.getFirstDayWithPulls(this._beginnerPulls);
+            ?? StablePullPeriod.getFirstDayWithPulls(this._beginnerPulls)
+            ?? StablePullPeriod.getFirstDayWithPulls(this._rerunPulls);
 
         if (!pulls) {
             return null;

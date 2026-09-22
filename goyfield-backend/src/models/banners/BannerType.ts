@@ -8,7 +8,7 @@ export enum BannerType {
     CHAR_JOINT = "E_CharacterGachaPoolType_Joint",
     CHAR_RERUN = "E_CharacterGachaPoolType_Rerun",
     WEAPON = "Weapon",
-    WEAPON_RERUN = "weapon_rerun", // todo поменять
+    WEAPON_RERUN = "weapon_rerun",
 }
 
 export namespace BannerType {
