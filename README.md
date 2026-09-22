@@ -1,6 +1,6 @@
 # Goyfield.moe — Arknights Endfield Tracker
 
-A functional pull tracker and global statistics database for Arknights: Endfield. 
+A pull tracker and database for Arknights: Endfield. 
 
 **Website:** [goyfield.moe](https://goyfield.moe)
 
