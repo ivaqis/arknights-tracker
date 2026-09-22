@@ -92,6 +92,16 @@
             ?? [];
     }
 
+    function get5050Mode(bannerType: GameBannerType): "25:75" | "50:50" {
+        switch (bannerType) {
+            case GameBannerType.WEAPON:
+            case GameBannerType.WEAPON_RERUN:
+                return "25:75";
+            default:
+                return "50:50";
+        }
+    }
+
     let selectedBannerId: string;
     let selectedBannerType: ApiBannerType;
 
@@ -250,7 +260,7 @@
 
                     <GlobalBannerStats
                         rarity={6}
-                        mode5050={currentBanner.gameType === GameBannerType.WEAPON ? "25:75" : "50:50"}
+                        mode5050={get5050Mode(currentBanner.gameType)}
                         totalRate={stats6.totalRate}
                         totalCount={stats6.totalCount}
                         medianPity={stats6.medianPity}
