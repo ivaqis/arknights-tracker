@@ -4,4 +4,5 @@ export interface PullData {
     isNew: boolean;
     gachaTs: string;
     seqId: string;
+    poolVersion: null;
 }

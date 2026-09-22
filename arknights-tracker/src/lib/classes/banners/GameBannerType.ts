@@ -3,7 +3,9 @@ export enum GameBannerType {
     CHAR_STANDARD = "E_CharacterGachaPoolType_Standard",
     CHAR_SPECIAL = "E_CharacterGachaPoolType_Special",
     CHAR_JOINT = "E_CharacterGachaPoolType_Joint",
-    WEAPON = "Weapon"
+    CHAR_RERUN = "E_CharacterGachaPoolType_Rerun",
+    WEAPON = "Weapon",
+    WEAPON_RERUN = "weapon_rerun",
 }
 
 export namespace GameBannerType {
