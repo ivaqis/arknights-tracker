@@ -6,7 +6,7 @@
     import GlobalBannerStatParam from "$lib/components/globalBannerStats/GlobalBannerStatParam.svelte";
     import Tooltip from "$lib/components/Tooltip.svelte";
     import { t } from "$lib/i18n";
-    import { formatCount } from "$lib/utils/textUtils";
+    import { formatGlobalStatsCount } from "$lib/utils/textUtils";
 
     export let featuredList: (Character | Weapon)[];
     export let totalCount: number;
@@ -61,7 +61,7 @@
                 </div>
 
                 <div class="font-nums font-bold text-xl text-[#21272C] dark:text-[#FDFDFD] leading-none mt-1">
-                    {formatCount(totalCount)}
+                    {formatGlobalStatsCount(totalCount)}
                 </div>
 
             </div>
@@ -120,7 +120,7 @@
             <GlobalBannerStatParam
                 title={$t("global.totalObtained")}
             >
-                {formatCount(totalCount)}
+                {formatGlobalStatsCount(totalCount)}
             </GlobalBannerStatParam>
 
         {/if}
@@ -130,7 +130,7 @@
             <GlobalBannerStatParam
                 title={$t("global.freeObtained")}
             >
-                {formatCount(freeCount)}
+                {formatGlobalStatsCount(freeCount)}
             </GlobalBannerStatParam>
 
         {/if}
@@ -140,7 +140,7 @@
             <GlobalBannerStatParam
                 title={$t("global.guaranteedCount")}
             >
-                {formatCount(guaranteedCount)}
+                {formatGlobalStatsCount(guaranteedCount)}
             </GlobalBannerStatParam>
 
         {/if}

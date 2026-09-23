@@ -2,7 +2,7 @@
     import GlobalBannerStatParam from "$lib/components/globalBannerStats/GlobalBannerStatParam.svelte";
     import Image from "$lib/components/Image.svelte";
     import { t } from "$lib/i18n";
-    import { formatCount } from "$lib/utils/textUtils";
+    import { formatGlobalStatsCount } from "$lib/utils/textUtils";
 
     export let totalUsers: number;
     export let totalPulls: number;
@@ -22,13 +22,13 @@
         <GlobalBannerStatParam
             title={$t("global.totalUsers")}
         >
-            {formatCount(totalUsers)}
+            {formatGlobalStatsCount(totalUsers)}
         </GlobalBannerStatParam>
 
         <GlobalBannerStatParam
             title={$t("global.totalPulls")}
         >
-            {formatCount(totalPulls)}
+            {formatGlobalStatsCount(totalPulls)}
         </GlobalBannerStatParam>
 
         {#if freePulls !== null}
@@ -36,7 +36,7 @@
             <GlobalBannerStatParam
                 title={$t("global.freePulls")}
             >
-                {formatCount(freePulls)}
+                {formatGlobalStatsCount(freePulls)}
             </GlobalBannerStatParam>
 
         {/if}
@@ -51,7 +51,7 @@
                     variant="currency"
                     size={20}
                 />
-                {formatCount(oroberylSpent)}
+                {formatGlobalStatsCount(oroberylSpent)}
             </GlobalBannerStatParam>
 
         {/if}
@@ -66,7 +66,7 @@
                     variant="currency"
                     size={20}
                 />
-                {formatCount(arsenalTicketsSpent)}
+                {formatGlobalStatsCount(arsenalTicketsSpent)}
             </GlobalBannerStatParam>
 
         {/if}
