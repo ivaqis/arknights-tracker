@@ -7,7 +7,7 @@
     import Icon from "$lib/components/Icon.svelte";
     import Image from "$lib/components/Image.svelte";
     import { t } from "$lib/i18n";
-    import { formatCount, formatRate } from "$lib/utils/textUtils";
+    import { formatGlobalStatsCount, formatRate } from "$lib/utils/textUtils";
 
     export let items: GlobalItemStatData[];
 
@@ -161,11 +161,11 @@
                         </td>
 
                         <td class="px-4 py-2 text-right font-nums font-bold text-gray-900 dark:text-[#FDFDFD]">
-                            {formatCount(data.count)}
+                            {formatGlobalStatsCount(data.count)}
                         </td>
 
                         <td class="px-4 py-2 text-right font-nums text-gray-500 dark:text-[#B7B6B3]">
-                            {formatRate(data.rate, 2)}
+                            {formatRate(data.rate, 2, "en-US")}
                         </td>
 
                     </tr>

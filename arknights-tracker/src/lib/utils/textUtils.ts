@@ -40,3 +40,8 @@ export function getDateTime(dateStr: `${number}-${number}-${number} ${number}:${
 
     return new Date(`${date}T${time}Z`);
 }
+
+export function formatGlobalStatsCount(count: number): string {
+    return  formatCount(count, "ru-RU")
+        .replace(",", ".");
+}

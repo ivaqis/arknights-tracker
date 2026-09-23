@@ -3,7 +3,7 @@
     import GlobalBannerStatParam from "$lib/components/globalBannerStats/GlobalBannerStatParam.svelte";
     import Icon from "$lib/components/Icon.svelte";
     import { t } from "$lib/i18n";
-    import { formatCount, formatRate } from "$lib/utils/textUtils";
+    import { formatGlobalStatsCount, formatRate } from "$lib/utils/textUtils";
 
     export let rarity: Rarity;
     export let mode5050: "50:50" | "25:75" = "50:50";
@@ -37,7 +37,7 @@
         <GlobalBannerStatParam
             title={$t("global.count")}
         >
-            {formatCount(totalCount)}
+            {formatGlobalStatsCount(totalCount)}
         </GlobalBannerStatParam>
 
         {#if freeCount !== null}
@@ -45,7 +45,7 @@
             <GlobalBannerStatParam
                 title={$t("global.freeCount")}
             >
-                {formatCount(freeCount)}
+                {formatGlobalStatsCount(freeCount)}
             </GlobalBannerStatParam>
 
         {/if}
@@ -53,7 +53,7 @@
         <GlobalBannerStatParam
             title={$t("global.rate")}
         >
-            {formatRate(totalRate, 3)}
+            {formatRate(totalRate, 3, "en-US")}
         </GlobalBannerStatParam>
 
         {#if medianPity !== null}
@@ -61,7 +61,7 @@
             <GlobalBannerStatParam
                 title={$t("global.median")}
             >
-                {formatCount(medianPity)}
+                {formatGlobalStatsCount(medianPity)}
             </GlobalBannerStatParam>
 
         {/if}
@@ -71,7 +71,7 @@
             <GlobalBannerStatParam
                 title={`${$t("global.won")} ${mode5050}`}
             >
-                {formatRate(winrate, 2)}
+                {formatRate(winrate, 2, "en-US")}
             </GlobalBannerStatParam>
 
         {/if}
@@ -81,7 +81,7 @@
             <GlobalBannerStatParam
                 title={$t("global.freeRate")}
             >
-                {formatRate(freeRate, 3)}
+                {formatRate(freeRate, 3, "en-US")}
             </GlobalBannerStatParam>
 
         {/if}
@@ -91,7 +91,7 @@
             <GlobalBannerStatParam
                 title={`${$t("global.won")} ${mode5050} (${$t("global.free")})`}
             >
-                {formatRate(freeWinrate, 2)}
+                {formatRate(freeWinrate, 2, "en-US")}
             </GlobalBannerStatParam>
 
         {/if}

@@ -137,7 +137,7 @@
                                     {$t("global.percent")}
 
                                     <span class="text-[#FACC15] font-bold">
-                                        {formatRate(data.rate, 2)}
+                                        {formatRate(data.rate, 2, "en-US")}
                                     </span>
 
                                 </div>
