@@ -5,14 +5,14 @@ import type { IVaporizerGroup } from "$lib/classes/gameData/buildings/vaporizers
 import { Vaporizer } from "$lib/classes/gameData/buildings/vaporizers/Vaporizer";
 import { VaporizerGroup } from "$lib/classes/gameData/buildings/vaporizers/VaporizerGroup";
 import type { IGasEnv } from "$lib/classes/gameData/gasEnv/IGasEnv";
+import { BuildingStorage } from "$lib/classes/storages/buildings/BuildingStorage";
 import type { IBuildingStorage } from "$lib/classes/storages/buildings/IBuildingStorage";
 import type { IVaporizerStorage } from "$lib/classes/storages/buildings/IVaporizerStorage";
-import { GameDataStorage } from "$lib/classes/storages/GameDataStorage";
 import type { IDataStorage } from "$lib/classes/storages/IDataStorage";
 import type { IItemStorage } from "$lib/classes/storages/items/IItemStorage";
 import type { VaporizerData } from "$lib/data/types/buildings/VaporizerData";
 
-export class VaporizerStorage extends GameDataStorage<IVaporizer> implements IVaporizerStorage {
+export class VaporizerStorage extends BuildingStorage<IVaporizer> implements IVaporizerStorage {
     private readonly _byConsumeItemId: IReadonlyDataMap<string, IVaporizer[]>;
     private readonly _byGasEnvId: IReadonlyDataMap<string, IVaporizer[]>;
 

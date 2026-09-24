@@ -12,10 +12,8 @@
     export let showTooltip: boolean = false;
     export let size: CardSize = CardSize.DEFAULT;
 
-    let bgColor: string;
     let color: string;
 
-    $: bgColor = `bg-[${gasEnv.icon.bgColor}]`;
     $: color = `text-[${gasEnv.icon.color}]`;
 </script>
 
@@ -26,7 +24,8 @@
 >
 
     <div
-        class="absolute inset-0 w-full h-full {bgColor}"
+        class="absolute inset-0 w-full h-full"
+        style:background-color={gasEnv.icon.bgColor}
     ></div>
 
     {#key gasEnv}

@@ -39,6 +39,7 @@ export enum ItemType {
     MINER = "miner",
     PUMP = "pump",
     GAS_MINER = "gas_miner",
+    VAPORIZER = "vaporizer",
     SANITY = "sanity",
     ARROW_CHIP = "arrow_chip",
     LUNG_BOX = "lung_box",

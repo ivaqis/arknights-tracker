@@ -11,6 +11,8 @@
     import type { IItemStack } from "$lib/classes/gameData/items/IItemStack";
     import { RecipeType } from "$lib/classes/gameData/recipes/RecipeType";
     import { RecipeSource } from "$lib/classes/gameData/recipes/sources/RecipeSource";
+    import { GasEnvRecipeSearcher } from "$lib/classes/searchers/recipes/GasEnvRecipeSearcher";
+    import type { IGasEnvRecipeSearcher } from "$lib/classes/searchers/recipes/IGasEnvRecipeSearcher";
     import type { IMachineCraftSearcher } from "$lib/classes/searchers/recipes/IMachineCraftSearcher";
     import type { IManualCraftSearcher } from "$lib/classes/searchers/recipes/IManualCraftSearcher";
     import type { IMinerRecipeSearcher } from "$lib/classes/searchers/recipes/IMinerRecipeSearcher";
@@ -25,6 +27,8 @@
     import { RecipeDataStorage } from "$lib/classes/storages/recipes/RecipeDataStorage";
     import BottomSheet from "$lib/components/BottomSheet.svelte";
     import Button from "$lib/components/Button.svelte";
+    import { CardSize } from "$lib/components/cards/CardSize";
+    import GasEnvCard from "$lib/components/cards/GasEnvCard.svelte";
     import BuildingRecipeGroup from "$lib/components/recipes/formulas/BuildingRecipeGroup.svelte";
     import RecipeFormula from "$lib/components/recipes/formulas/RecipeFormula.svelte";
     import RecipeItemChain from "$lib/components/recipes/formulas/RecipeItemChain.svelte";
@@ -38,9 +42,11 @@
     import { minerStorage } from "$lib/dataStorages/buildings/minerStorage";
     import { powerStationStorage } from "$lib/dataStorages/buildings/powerStationStorage";
     import { pumpStorage } from "$lib/dataStorages/buildings/pumpStorage";
+    import { vaporizerStorage } from "$lib/dataStorages/buildings/vaporizerStorage";
     import { hubCraftDataStorage } from "$lib/dataStorages/crafts/hubCraftDataStorage";
     import { machineCraftDataStorage } from "$lib/dataStorages/crafts/machineCraftDataStorage";
     import { manualCraftDataStorage } from "$lib/dataStorages/crafts/manualCraftDataStorage";
+    import { gasEnvStorage } from "$lib/dataStorages/gasEnv/gasEnvStorage";
     import { itemStorage } from "$lib/dataStorages/items/itemStorage";
     import { t } from "$lib/i18n.js";
     import { getRecipeTreeUrlBuilding, getRecipeTreeUrlCraft, getRecipeTreeUrlItem } from "$lib/utils/linkUtils";
@@ -51,7 +57,7 @@
     const manualCraftStorage = new RecipeDataStorage(manualCraftDataStorage.list);
     const hubCraftStorage = new RecipeDataStorage(hubCraftDataStorage.list);
 
-    const machineCraftFactory: IMachineCraftFactory = new MachineCraftFactory(itemStorage, crafterStorage);
+    const machineCraftFactory: IMachineCraftFactory = new MachineCraftFactory(itemStorage, crafterStorage, gasEnvStorage);
     const manualCraftFactory: IManualCraftFactory = new ManualCraftFactory(itemStorage);
 
     const machineCraftSearcher: IMachineCraftSearcher = new MachineCraftSearcher(machineCraftStorage, machineCraftFactory, machineCraftDataStorage);
@@ -61,6 +67,7 @@
     const gasMinerRecipeSearcher: IMinerRecipeSearcher = new MinerRecipeSearcher(gasMinerStorage);
     const pumpRecipeSearcher: IPumpRecipeSearcher = new PumpRecipeSearcher(pumpStorage);
     const powerRecipeSearcher: IPowerRecipeSearcher = new PowerRecipeSearcher(powerStationStorage);
+    const gasEnvRecipeSearcher: IGasEnvRecipeSearcher = new GasEnvRecipeSearcher(vaporizerStorage);
 
     let startItem: IItem;
     let startRecipe: NodeRecipeGeneric | null;
@@ -360,6 +367,7 @@
 
                                         <RecipeFormula
                                             processTimeMs={formula.recipe.processTimeMs}
+                                            gasEnv={formula.recipe.consumeGasEnv}
                                         >
 
                                             <RecipeItemChain
@@ -522,6 +530,7 @@
 
                                                     <RecipeFormula
                                                         processTimeMs={recipe.processTimeMs}
+                                                        gasEnv={recipe.consumeGasEnv}
                                                         showHoverEffect={true}
                                                     >
 
@@ -709,15 +718,16 @@
                             {@const hubAsIncome = hubCraftSearcher.searchByItemAsIncome(selectedItem.gameId)}
                             {@const minerAsIncome = minerRecipeSearcher.searchByItemAsIncome(selectedItem.gameId)}
                             {@const gasMinerAsIncome = gasMinerRecipeSearcher.searchByItemAsIncome(selectedItem.gameId)}
-                            {@const
-                                powerStationAsIncome = powerRecipeSearcher.searchByItemAsIncome(selectedItem.gameId)}
+                            {@const powerStationAsIncome = powerRecipeSearcher.searchByItemAsIncome(selectedItem.gameId)}
+                            {@const vaporizerAsIncome = gasEnvRecipeSearcher.searchByItemAsIncome(selectedItem.gameId)}
 
                             {@const hasUsing = !machineAsIncome.isEmpty
                                 || !manualAsIncome.isEmpty
                                 || !hubAsIncome.isEmpty
                                 || !minerAsIncome.isEmpty
                                 || !gasMinerAsIncome.isEmpty
-                                || !powerStationAsIncome.isEmpty}
+                                || !powerStationAsIncome.isEmpty
+                                || !vaporizerAsIncome.isEmpty}
 
                             {#if hasUsing}
 
@@ -803,6 +813,7 @@
 
                                                     <RecipeFormula
                                                         processTimeMs={recipe.processTimeMs}
+                                                        gasEnv={recipe.consumeGasEnv}
                                                     >
 
                                                         <RecipeItemChain
@@ -949,6 +960,46 @@
 
                                     {/if}
 
+                                    {#if !vaporizerAsIncome.isEmpty}
+
+                                        {@const grouped = vaporizerAsIncome.groupByBuilding()}
+
+                                        {#each grouped.values() as group}
+
+                                            <BuildingRecipeGroup
+                                                building={group.building}
+                                            >
+
+                                                {#each group.list as recipe}
+
+                                                    <RecipeFormula
+                                                        processTimeMs={recipe.processTimeMs}
+                                                    >
+
+                                                        <RecipeItemChain
+                                                            slot="left"
+                                                            items={recipe.ingredients}
+                                                            highlightItemFn={highlightItem}
+                                                            getItemUrlFn={getItemStackUrl}
+                                                        />
+
+                                                        <GasEnvCard
+                                                            slot="right"
+                                                            gasEnv={recipe.gasEnv}
+                                                            size={CardSize.MICRO}
+                                                            showTooltip={true}
+                                                        />
+
+                                                    </RecipeFormula>
+
+                                                {/each}
+
+                                            </BuildingRecipeGroup>
+
+                                        {/each}
+
+                                    {/if}
+
                                 </RecipeSidebarSector>
 
                             {/if}
@@ -994,6 +1045,7 @@
 
                                 <RecipeFormula
                                     processTimeMs={currentFormula.recipe.processTimeMs}
+                                    gasEnv={currentFormula.recipe.consumeGasEnv}
                                 >
 
                                     <RecipeItemChain
@@ -1038,6 +1090,58 @@
                             {/if}
 
                         </RecipeSidebarSector>
+
+                        {#if currentFormula.type === RecipeType.MACHINE && currentFormula.recipe.consumeGasEnv !== null}
+
+                            {@const searchResult = gasEnvRecipeSearcher.searchByGasEnv(currentFormula.recipe.consumeGasEnv.id)}
+
+                            {#if !searchResult.isEmpty}
+
+                                {@const grouped = searchResult.groupByBuilding()}
+
+                                <RecipeSidebarSector
+                                    title={$t("formulaSidebar.sector.environment")}
+                                >
+
+                                    {#each grouped.values() as group}
+
+                                        <BuildingRecipeGroup
+                                            building={group.building}
+                                        >
+
+                                            {#each group.list as recipe}
+
+                                                <RecipeFormula
+                                                    processTimeMs={recipe.processTimeMs}
+                                                >
+
+                                                    <RecipeItemChain
+                                                        slot="left"
+                                                        items={recipe.ingredients}
+                                                        highlightItemFn={highlightItem}
+                                                        getItemUrlFn={getItemStackUrl}
+                                                    />
+
+                                                    <GasEnvCard
+                                                        slot="right"
+                                                        gasEnv={recipe.gasEnv}
+                                                        showTooltip={true}
+                                                        size={CardSize.MICRO}
+                                                    />
+
+                                                </RecipeFormula>
+
+                                            {/each}
+
+                                        </BuildingRecipeGroup>
+
+                                    {/each}
+
+                                </RecipeSidebarSector>
+
+                            {/if}
+
+                        {/if}
 
                         {#if hubAsOutcome && !hubAsOutcome.isEmpty}
 
