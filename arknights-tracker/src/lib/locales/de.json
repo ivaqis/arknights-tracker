@@ -146,7 +146,11 @@
     "weap-standard": "Standard-Waffe",
     "weap-special": "Event-Waffe",
     "weapon-all": "Waffenbanner",
-    "joint": "Feier der Exzellenz"
+    "joint": "Feier der Exzellenz",
+    "rerun": "RE-Faktor-Rekrutierung",
+    "weapRerun": "RE-Faktor-Ausgabe",
+    "weap-rerun": "RE-Faktor-Ausgabe",
+    "weapon_rerun": "RE-Faktor-Ausgabe"
   },
   "import": {
     "title": "Rekrutierungsverlauf importieren",
@@ -386,7 +390,9 @@
     "special_1_5_1": "Winterjagd",
     "weponbox_1_5_1": "Eiskalt-Ausgabe",
     "weponbox_1_5_2": "Künstler-Schriftzug-Ausgabe",
-    "special_1_5_2": "Strahlendes Spektrum"
+    "special_1_5_2": "Strahlendes Spektrum",
+    "rerun_chr_yvonne": "Strahlendes Spektrum",
+    "rerun_wpn_yvonne": "Künstler-Schriftzug-Ausgabe"
   },
   "pages": {
     "home": "Home",

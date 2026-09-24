@@ -146,7 +146,11 @@
     "weap-standard": "통상 무기",
     "weap-special": "이벤트 무기",
     "weapon-all": "무기 배너",
-    "joint": "찬란한 빛의 축제"
+    "joint": "찬란한 빛의 축제",
+    "rerun": "재구축 헤드헌팅",
+    "weapRerun": "재구축 신청",
+    "weap-rerun": "재구축 신청",
+    "weapon_rerun": "재구축 신청"
   },
   "import": {
     "title": "헤드헌팅 기록 가져오기",
@@ -386,7 +390,9 @@
     "special_1_5_1": "겨울 사냥",
     "weponbox_1_5_1": "한기 신청",
     "weponbox_1_5_2": "점묘 신청",
-    "special_1_5_2": "찬란한 색채"
+    "special_1_5_2": "찬란한 색채",
+    "rerun_chr_yvonne": "찬란한 색채",
+    "rerun_wpn_yvonne": "점묘 신청"
   },
   "pages": {
     "home": "홈",

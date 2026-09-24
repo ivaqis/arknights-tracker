@@ -5,6 +5,7 @@
 	"type": "module",
 	"scripts": {
 		"dev": "vite dev",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"build": "svelte-kit sync && cross-env NODE_OPTIONS='--max-old-space-size=2548' vite build",
 		"preview": "vite preview",
 		"prepare": "svelte-kit sync || echo ''"
@@ -23,6 +24,7 @@
 		"autoprefixer": "^10.4.20",
 		"cross-env": "^10.1.0",
 		"svelte": "^5.56.0",
+		"svelte-check": "^4.7.6",
 		"tailwindcss": "^3.4.9",
 		"typescript": "^6.0.3",
 		"vite": "^8.0.16"

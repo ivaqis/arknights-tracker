@@ -165,10 +165,14 @@
     "standard": "Basic Headhunting",
     "special": "Special Headhunting",
     "new-player": "New Horizons Headhunting",
+    "rerun": "RE-Factor Headhunting",
     "weapStandard": "Standard Weapon",
     "weapSpecial": "Event Weapon",
+    "weapRerun": "RE-Factor Issue",
     "weap-standard": "Standard Weapon",
     "weap-special": "Event Weapon",
+    "weap-rerun": "RE-Factor Issue",
+    "weapon_rerun": "RE-Factor Issue",
     "weapon-all": "Weapon Banners",
     "joint": "Joint Banners"
   },
@@ -417,7 +421,9 @@
     "special_1_5_1": "Winter Hunt",
     "weponbox_1_5_1": "Deep Cold Issue",
     "weponbox_1_5_2": "Tag Artist Issue",
-    "special_1_5_2": "Resplendent Spectrum"
+    "special_1_5_2": "Resplendent Spectrum",
+    "rerun_chr_yvonne": "Resplendent Spectrum",
+    "rerun_wpn_yvonne": "Tag Artist Issue"
   },
   "pages": {
     "home": "Home",

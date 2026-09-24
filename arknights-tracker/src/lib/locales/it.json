@@ -146,7 +146,11 @@
     "weap-standard": "Arma Standard",
     "weap-special": "Arma Evento",
     "weapon-all": "Banner Armi",
-    "joint": "Festival della lucentezza"
+    "joint": "Festival della lucentezza",
+    "rerun": "Caccia ai talenti RE-Factor",
+    "weapRerun": "Distribuzione RE-Factor",
+    "weap-rerun": "Distribuzione RE-Factor",
+    "weapon_rerun": "Distribuzione RE-Factor"
   },
   "import": {
     "title": "Importa Registro Reclutamenti",
@@ -386,7 +390,9 @@
     "special_1_5_1": "Caccia invernale",
     "weponbox_1_5_1": "Distribuzione Freddo profondo",
     "weponbox_1_5_2": "Distribuzione Artista dei graffiti",
-    "special_1_5_2": "Spettro radioso"
+    "special_1_5_2": "Spettro radioso",
+    "rerun_chr_yvonne": "Spettro radioso",
+    "rerun_wpn_yvonne": "Distribuzione Artista dei graffiti"
   },
   "pages": {
     "home": "Home",

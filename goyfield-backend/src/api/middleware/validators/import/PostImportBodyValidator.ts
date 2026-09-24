@@ -11,7 +11,8 @@ export class PostImportBodyValidator extends Validator<PostImportRequest> {
 
     private static getRules(): ValidationRule<PostImportRequest>[] {
         return [
-            this.getProfileIdRule()
+            this.getProfileIdRule(),
+            this.getRecoveryRule()
         ];
     }
 
@@ -21,6 +22,13 @@ export class PostImportBodyValidator extends Validator<PostImportRequest> {
         return new ValidationRule(
             item => item.privateId === null || rule.isValid(item.privateId),
             "privateId must be a string or null"
+        );
+    }
+
+    private static getRecoveryRule(): ValidationRule<PostImportRequest> {
+        return new ValidationRule(
+            item => item.recovery === undefined || typeof item.recovery === "boolean",
+            "recovery must be a boolean or undefined"
         );
     }
 }

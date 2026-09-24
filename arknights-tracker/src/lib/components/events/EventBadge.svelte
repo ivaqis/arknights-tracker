@@ -30,9 +30,14 @@
             type === "weapon" ||
             type === "weap-special" ||
             type === "weap-standard" ||
+            type === "weapon_rerun" ||
+            type === "weap-rerun" ||
             origType === "weapon" ||
             origType === "weap-special" ||
             origType === "weap-standard" ||
+            origType === "weapon_rerun" ||
+            origType === "weap-rerun" ||
+            (event.id && (event.id.includes("weap") || event.id.includes("wpn"))) ||
             event.isWeapon === true
         ) {
             return {
@@ -48,11 +53,16 @@
             type === "special" ||
             type === "new-player" ||
             type === "headhunting" ||
+            type === "rerun" ||
+            type === "joint" ||
             origType === "standard" ||
             origType === "special" ||
             origType === "new-player" ||
             origType === "banner" ||
-            origType === "headhunting"
+            origType === "headhunting" ||
+            origType === "rerun" ||
+            origType === "joint" ||
+            event.featured6
         ) {
             return {
                 icon: "headhunting",

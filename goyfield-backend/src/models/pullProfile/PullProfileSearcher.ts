@@ -63,16 +63,20 @@ export class PullProfileSearcher {
         const standard = await this._database.userBannerStats.getBannerTypeStats(profileId, DbBannerType.CHAR_STANDARD);
         const special = await this._database.userBannerStats.getBannerTypeStats(profileId, DbBannerType.CHAR_SPECIAL);
         const joint = await this._database.userBannerStats.getBannerTypeStats(profileId, DbBannerType.CHAR_JOINT);
+        const rerun = await this._database.userBannerStats.getBannerTypeStats(profileId, DbBannerType.CHAR_RERUN);
         const weaponStandard = await this._database.userBannerStats.getBannerTypeStats(profileId, DbBannerType.WEAPON_STANDARD);
         const weaponSpecial = await this._database.userBannerStats.getBannerTypeStats(profileId, DbBannerType.WEAPON_SPECIAL);
+        const weaponRerun = await this._database.userBannerStats.getBannerTypeStats(profileId, DbBannerType.WEAPON_RERUN);
 
-        const all = PullProfileSearcher.sumBannerTypeStats(beginner, standard, special, joint, weaponStandard, weaponSpecial);
+        const all = PullProfileSearcher.sumBannerTypeStats(beginner, standard, special, joint, rerun, weaponStandard, weaponSpecial, weaponRerun);
 
         const allStats = await this.getEventBannerTypeStats(null, all.unfreePulls + all.freePulls, all.total5050, all.won5050, all.total6, all.total5);
         const specialStats = await this.getEventBannerTypeStats(DbBannerType.CHAR_SPECIAL, special.unfreePulls + special.freePulls, special.total5050, special.won5050, special.total6, special.total5);
         const jointStats = await this.getEventBannerTypeStats(DbBannerType.CHAR_JOINT, joint.unfreePulls + joint.freePulls, joint.total5050, joint.won5050, joint.total6, joint.total5);
+        const rerunStats = await this.getEventBannerTypeStats(DbBannerType.CHAR_RERUN, rerun.unfreePulls + rerun.freePulls, rerun.total5050, rerun.won5050, rerun.total6, rerun.total5);
         const weaponSpecialStats = await this.getEventBannerTypeStats(DbBannerType.WEAPON_SPECIAL, weaponSpecial.unfreePulls, weaponSpecial.total5050, weaponSpecial.won5050, weaponSpecial.total6, weaponSpecial.total5);
         const weaponStandardStats = await this.getEventBannerTypeStats(DbBannerType.WEAPON_STANDARD, weaponStandard.unfreePulls, weaponStandard.total5050, weaponStandard.won5050, weaponStandard.total6, weaponStandard.total5);
+        const weaponRerunStats = await this.getEventBannerTypeStats(DbBannerType.WEAPON_RERUN, weaponRerun.unfreePulls, weaponRerun.total5050, weaponRerun.won5050, weaponRerun.total6, weaponRerun.total5);
 
         const beginnerStats = await this.getBannerTypeStats(DbBannerType.CHAR_BEGINNER, beginner.unfreePulls, beginner.total6, beginner.total5);
         const standardStats = await this.getBannerTypeStats(DbBannerType.CHAR_STANDARD, standard.unfreePulls, standard.total6, standard.total5);
@@ -83,10 +87,12 @@ export class PullProfileSearcher {
                 all: allStats,
                 [DbBannerType.CHAR_SPECIAL]: specialStats,
                 [DbBannerType.CHAR_JOINT]: jointStats,
+                [DbBannerType.CHAR_RERUN]: rerunStats,
                 [DbBannerType.CHAR_STANDARD]: standardStats,
                 [DbBannerType.CHAR_BEGINNER]: beginnerStats,
                 [DbBannerType.WEAPON_SPECIAL]: weaponSpecialStats,
-                [DbBannerType.WEAPON_STANDARD]: weaponStandardStats
+                [DbBannerType.WEAPON_STANDARD]: weaponStandardStats,
+                [DbBannerType.WEAPON_RERUN]: weaponRerunStats
             }
         };
     }

@@ -146,7 +146,11 @@
     "weap-standard": "Vũ khí Tiêu chuẩn",
     "weap-special": "Vũ khí Sự kiện",
     "weapon-all": "Banner Vũ khí",
-    "joint": "Lễ Hội Rực Rỡ"
+    "joint": "Lễ Hội Rực Rỡ",
+    "rerun": "Chiêu Mộ Tái Cấu Trúc",
+    "weapRerun": "Gói Rút Tái Cấu Trúc",
+    "weap-rerun": "Gói Rút Tái Cấu Trúc",
+    "weapon_rerun": "Gói Rút Tái Cấu Trúc"
   },
   "import": {
     "title": "Nhập Hồ sơ Chiêu mộ",
@@ -389,7 +393,9 @@
     "special_1_5_1": "Cuộc Săn Mùa Đông",
     "weponbox_1_5_1": "Gói Rút Cực Hàn",
     "weponbox_1_5_2": "Gói Rút Thẻ Họa Sĩ",
-    "special_1_5_2": "Sắc Màu Rực Rỡ"
+    "special_1_5_2": "Sắc Màu Rực Rỡ",
+    "rerun_chr_yvonne": "Sắc Màu Rực Rỡ",
+    "rerun_wpn_yvonne": "Gói Rút Thẻ Họa Sĩ"
   },
   "pages": {
     "home": "Trang chủ",

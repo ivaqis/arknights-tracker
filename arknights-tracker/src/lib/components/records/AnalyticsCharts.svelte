@@ -11,14 +11,14 @@
   export let rawPulls = [];
   export let bannerType = "";
 
-  $: isWeapon = bannerType.toLowerCase().includes("weap") || bannerType.toLowerCase().includes("wepon");
-  $: isGroup = ["special", "standard", "weap-special", "weap-standard", "joint", "new-player"].includes(bannerType);
+  $: isWeapon = bannerType.toLowerCase().includes("weap") || bannerType.toLowerCase().includes("wepon") || bannerType === "weapon_rerun";
+  $: isGroup = ["special", "standard", "weap-special", "weap-standard", "weapon_rerun", "weap-rerun", "joint", "rerun", "new-player"].includes(bannerType);
   $: showHistoryGraph = 
       (bannerType !== "standard" && 
       bannerType !== "new-player" && 
       !bannerType.includes("new") && 
       !isWeapon) || 
-      (bannerType === "weap-special" || bannerType === "weap-standard");
+      (bannerType === "weap-special" || bannerType === "weap-standard" || bannerType === "weapon_rerun" || bannerType === "weap-rerun");
   $: totalCount = rawPulls.length;
   $: count4 = rawPulls.filter((p) => p.rarity === 4).length;
   $: count5 = rawPulls.filter((p) => p.rarity === 5).length;
@@ -31,7 +31,7 @@
     )`;
   $: timelineData = (() => {
     const relevantBanners = banners.filter((b) => {
-      if (bannerType === "weap-special" || bannerType === "weap-standard") {
+      if (bannerType === "weap-special" || bannerType === "weap-standard" || bannerType === "weapon_rerun" || bannerType === "weap-rerun") {
         return getWeaponCategory(b.id) === bannerType;
       }
       return b.type === bannerType;
@@ -54,7 +54,7 @@
 
       let bannerId = matchedBanner ? matchedBanner.id : (p.rawPoolId || p.bannerId || "Unknown");
       let displayName = matchedBanner ? matchedBanner.name : bannerId;
-      const genericIds = ['special', 'standard', 'weapon', 'new-player', 'unknown'];
+      const genericIds = ['special', 'standard', 'weapon', 'weap-special', 'weap-standard', 'weapon_rerun', 'weap-rerun', 'rerun', 'new-player', 'unknown'];
       if (genericIds.includes(bannerId.toLowerCase())) {
         const d = new Date(p.time);
         const month = String(d.getMonth() + 1).padStart(2, '0');

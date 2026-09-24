@@ -146,7 +146,11 @@
     "weap-standard": "Arma Padrão",
     "weapSpecial": "Arma de Evento",
     "weapon-all": "Banners de Armas",
-    "joint": "Festival do Brilhantismo"
+    "joint": "Festival do Brilhantismo",
+    "rerun": "Caça de Talentos RE-Fator",
+    "weapRerun": "Distribuição RE-Fator",
+    "weap-rerun": "Distribuição RE-Fator",
+    "weapon_rerun": "Distribuição RE-Fator"
   },
   "import": {
     "title": "Importar Histórico de Busca",
@@ -386,7 +390,9 @@
     "special_1_5_1": "Caçada de Inverno",
     "weponbox_1_5_1": "Distribuição Frio Intenso",
     "weponbox_1_5_2": "Distribuição Grafiteiro",
-    "special_1_5_2": "Espectro Resplandecente"
+    "special_1_5_2": "Espectro Resplandecente",
+    "rerun_chr_yvonne": "Espectro Resplandecente",
+    "rerun_wpn_yvonne": "Distribuição Grafiteiro"
   },
   "pages": {
     "home": "Início",

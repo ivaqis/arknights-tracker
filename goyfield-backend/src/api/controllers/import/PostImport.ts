@@ -45,6 +45,7 @@ export class PostImport extends StreamController<
     private readonly _token: string;
     private readonly _serverIds: string[];
     private readonly _privateId: string | null;
+    private readonly _isRecovery: boolean;
 
     private _currentServerId?: string;
 
@@ -59,6 +60,7 @@ export class PostImport extends StreamController<
         this._token = req.query.token;
         this._serverIds = getUniqueElements(req.query.serverIds, ",");
         this._privateId = req.body.privateId;
+        this._isRecovery = req.body.recovery === true;
     }
 
     private static writeOnProfile(requestedProfile: string | null,
@@ -120,7 +122,7 @@ export class PostImport extends StreamController<
 
         let lastPullTimeTs: number = 0;
 
-        if (requestedProfile && requestedProfile.version.initValue === UserBannerProfileVersion.V_2) {
+        if (!this._isRecovery && requestedProfile && requestedProfile.version.initValue === UserBannerProfileVersion.V_2) {
             const tempTime = await this._database.userBannerStats.getLastPullTimeTs(requestedProfile.profileId);
 
             if (tempTime !== null) {
@@ -128,7 +130,7 @@ export class PostImport extends StreamController<
             }
         }
 
-        const lastPullWithOffset = PostImport.getLastPullWithOffset(lastPullTimeTs);
+        const lastPullWithOffset = this._isRecovery ? 0 : PostImport.getLastPullWithOffset(lastPullTimeTs);
 
         let pulls: BannersPulls | null = null;
         let serverId: string | null = null;
@@ -182,7 +184,9 @@ export class PostImport extends StreamController<
 
             let lastPullTsWithOffset;
 
-            if (writeOn === null) {
+            if (this._isRecovery) {
+                lastPullTsWithOffset = 0;
+            } else if (writeOn === null) {
                 logger.debug("Set new lastPullTsWithOffset");
 
                 lastPullTsWithOffset = 0;

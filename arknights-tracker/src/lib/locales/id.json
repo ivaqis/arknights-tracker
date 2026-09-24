@@ -146,7 +146,11 @@
     "weap-standard": "Senjata Standar",
     "weap-special": "Senjata Event",
     "weapon-all": "Banner Senjata",
-    "joint": "Festival Kegemilangan"
+    "joint": "Festival Kegemilangan",
+    "rerun": "Headhunt RE-Faktor",
+    "weapRerun": "Edisi RE-Faktor",
+    "weap-rerun": "Edisi RE-Faktor",
+    "weapon_rerun": "Edisi RE-Faktor"
   },
   "import": {
     "title": "Impor Catatan Headhunting",
@@ -386,7 +390,9 @@
     "special_1_5_1": "Perburuan Musim Dingin",
     "weponbox_1_5_1": "Edisi Dingin Menusuk Tulang",
     "weponbox_1_5_2": "Edisi Gaya Seniman",
-    "special_1_5_2": "Spektrum Cerah"
+    "special_1_5_2": "Spektrum Cerah",
+    "rerun_chr_yvonne": "Spektrum Cerah",
+    "rerun_wpn_yvonne": "Edisi Gaya Seniman"
   },
   "pages": {
     "home": "Beranda",

@@ -81,6 +81,10 @@ export class BannersPulls implements IEntityClass<BannersPullsEntity> {
         return this._weaponPulls;
     }
 
+    public get rerunPulls(): CharPull[] {
+        return this._rerunPulls;
+    }
+
     public getStablePullPeriods(): StablePullPeriod[] {
         return StablePullPeriod.create(
             this._specialPulls,
@@ -98,7 +102,7 @@ export class BannersPulls implements IEntityClass<BannersPullsEntity> {
             [BannerType.CHAR_BEGINNER]: this._beginnerPulls.map(p => p.getEntity()),
             [BannerType.CHAR_SPECIAL]: this._specialPulls.map(p => p.getEntity()),
             [BannerType.CHAR_JOINT]: this._jointPulls.map(p => p.getEntity()),
-            [BannerType.CHAR_RERUN]: this._standardPulls.map(p => p.getEntity()),
+            [BannerType.CHAR_RERUN]: this._rerunPulls.map(p => p.getEntity()),
             [BannerType.WEAPON]: this._weaponPulls.map(p => p.getEntity())
         };
     }

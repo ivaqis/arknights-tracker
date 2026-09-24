@@ -25,8 +25,16 @@ export class PullPityCalculator {
                 isFreePull = pull.isFree;
             } else {
                 const countInThisBanner = bannerSpecificCounts[uniqueBannerKey];
-                isFreePull = (isSpecialCategory || isJointCategory)
-                    && 30 <= countInThisBanner && countInThisBanner < 40;
+                const isRerunCategory = bannerId === "rerun" || (bannerId?.includes("rerun") && !bannerId.includes("weap"));
+                if (isSpecialCategory || isJointCategory) {
+                    isFreePull = 30 <= countInThisBanner && countInThisBanner < 40;
+                } else if (isRerunCategory) {
+                    isFreePull = (30 <= countInThisBanner && countInThisBanner < 40)
+                        || (60 <= countInThisBanner && countInThisBanner < 70)
+                        || (90 <= countInThisBanner && countInThisBanner < 100);
+                } else {
+                    isFreePull = false;
+                }
             }
 
             bannerSpecificCounts[uniqueBannerKey]++;

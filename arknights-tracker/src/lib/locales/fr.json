@@ -146,7 +146,11 @@
     "weap-standard": "Arme Standard",
     "weap-special": "Arme Événement",
     "weapon-all": "Bannières d'armes",
-    "joint": "Festival de Radiance"
+    "joint": "Festival de Radiance",
+    "rerun": "Recrutement de réusinage",
+    "weapRerun": "Tirage de réusinage",
+    "weap-rerun": "Tirage de réusinage",
+    "weapon_rerun": "Tirage de réusinage"
   },
   "import": {
     "title": "Importer l'Historique de Recrutement",
@@ -386,7 +390,9 @@
     "special_1_5_1": "Chasse hivernale",
     "weponbox_1_5_1": "Tirage du froid mordant",
     "weponbox_1_5_2": "Tirage de graffeuse",
-    "special_1_5_2": "Spectre resplendissant"
+    "special_1_5_2": "Spectre resplendissant",
+    "rerun_chr_yvonne": "Spectre resplendissant",
+    "rerun_wpn_yvonne": "Tirage de graffeuse"
   },
   "pages": {
     "home": "Accueil",

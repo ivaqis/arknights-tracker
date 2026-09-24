@@ -8,9 +8,11 @@ export interface PullProfileEntity {
         all: EventBannerTypeStatEntity | null;
         [DbBannerType.CHAR_SPECIAL]: EventBannerTypeStatEntity | null;
         [DbBannerType.CHAR_JOINT]: EventBannerTypeStatEntity | null;
+        [DbBannerType.CHAR_RERUN]: EventBannerTypeStatEntity | null;
         [DbBannerType.CHAR_STANDARD]: BannerTypeStatEntity | null;
         [DbBannerType.CHAR_BEGINNER]: BannerTypeStatEntity | null;
         [DbBannerType.WEAPON_SPECIAL]: EventBannerTypeStatEntity | null;
         [DbBannerType.WEAPON_STANDARD]: EventBannerTypeStatEntity | null;
+        [DbBannerType.WEAPON_RERUN]: EventBannerTypeStatEntity | null;
     }
 }
