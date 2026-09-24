@@ -1,0 +1,581 @@
+{
+  "baseInfo": {
+    "tags": [
+      "Protect",
+      "Nature Inflict",
+      "HP Treatment"
+    ],
+    "behaviourHateTags": [],
+    "behaviourUnavailableTags": [
+      "Introvert (SISTEM SAJA, tidak terlihat dalam game)"
+    ],
+    "blocTag": "Talos-II General Chamber of Commerce (TGCC)",
+    "expertTags": [
+      "Bertahan Hidup di Alam",
+      "Kisah Alam"
+    ],
+    "giftPreferTags": [
+      "Pilihan Pelancong Wuling"
+    ],
+    "hobbyTags": [
+      "Seni Rupa",
+      "Amal"
+    ],
+    "raceTag": "Feline"
+  },
+  "skills": {
+    "basicAttack": {
+      "name": "DESSERT! HAVE SOME!",
+      "description": "SERANGAN DASAR: \nSerangan dengan maksimum 3 tahap yang akan menimbulkan <@ba.pd>Physical DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>{poise:0}</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.pd>Physical DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi penuntas yang akan menimbulkan <@ba.pd>Physical DMG</> sangat besar dan memulihkan sebagian SP.",
+      "batkSeq1Multiplier": "Pengganda BATK SEQ 1",
+      "batkSeq2Multiplier": "Pengganda BATK SEQ 2",
+      "batkSeq3Multiplier": "Pengganda BATK SEQ 3",
+      "finisherAtkMultiplier": "Pengganda ATK Penuntas",
+      "diveAtkMultiplier": "Pengganda ATK Menukik"
+    },
+    "battleSkill": {
+      "name": "I’M NOT SLEEPING!",
+      "description": "Purrchena akan mengangkat perisainya untuk memblokir serangan dan langsung <#ba.return>mengembalikan</> sejumlah SP. Saat perisai Purrchena terangkat, dia akan memberikan <#ba.guard>Protection</> kepada dirinya sendiri dan operator di sekitarnya. Selama skill tarung aktif, pemblokiran serangan pertama yang berhasil dilakukan akan memperpanjang durasi perisai aktif dan <#ba.return>mengembalikan</> SP lagi. Setelah dilancarkan, skill tarung Purrchena akan diubah menjadi <@ba.key>LEAVE MY FRIENDS ALONE!</> untuk sementara.\n<@ba.key>LEAVE MY FRIENDS ALONE!</>: Purrchena akan menyeruduk target di depannya untuk menimbulkan <@ba.natur>Nature DMG</> dan mengakibatkan <#ba.naturalinflict>Nature Infliction</>.\n<@ba.info>Protection yang diberikan selama mengangkat perisai akan berkurang setiap kali berhasil memblokir serangan.</>",
+      "protection": "Protection",
+      "shieldUpDurationS": "Durasi Perisai Aktif (dtk)",
+      "shieldUpDurationAfterSuccessfulBlockS": "Durasi Perisai Aktif Setelah Berhasil Memblokir (dtk)",
+      "headbuttDmgMultiplier": "Pengganda DMG Serudukan",
+      "headbuttStagger": "Stagger Serudukan",
+      "spReturn": "Pengembalian SP",
+      "additionalSpReturn": "Tambahan Pengembalian SP"
+    },
+    "comboSkill": {
+      "name": "CAKE OR “PREZZIE”",
+      "description": "PEMICU KOMBO: Saat operator terkontrol diserang.\nMelempar <@ba.key>Kotak Hadiah</> ke arah operator terkontrol. <@ba.key>Kotak Hadiah</> akan terbuka setelah beberapa saat, lalu memberikan <@ba.heal>HP Treatment</> kepada operator di sekitarnya, secara acak memberikan salah satu item berikut, dan mengaktifkan efek dari item yang diberikan itu:\n<@ba.key>Bom</>: Menimbulkan <@ba.pd>Physical DMG</> dan Stagger tambahan kepada musuh di dalam area efek (AOE).\n<@ba.key>Karya Tangan</>: Terus-menerus menarik musuh di sekitarnya dan menimbulkan <@ba.pd>Physical DMG</>.\n<@ba.key>Makanan Penutup Lezat</>: Memberikan <@ba.heal>HP treatment</> kepada operator terkontrol.\nAtribut Will akan meningkatkan jumlah HP treatment.",
+      "baseTreatment": "Treatment Dasar",
+      "treatmentIncreasePerWill": "Peningkatan Treatment per Will",
+      "bombDmgMultiplier": "Pengganda DMG Bom",
+      "bombStagger": "Stagger Bom",
+      "handicraftDmgMultiplier": "Karya Tangan: Pengganda DMG",
+      "yummyDessertBaseTreatment": "Makanan Penutup Lezat: Treatment Dasar",
+      "yummyDessertTreatmentIncreasePerWill": "Makanan Penutup Lezat: Peningkatan Treatment per Will",
+      "ultimateEnergyGain": "Perolehan Energi Ultimate"
+    },
+    "ultimate": {
+      "name": "NAUGHTY IS BANNED!",
+      "description": "Purrchena akan membuka 3 <@ba.key>Hadiah Feline Besar</>. Setiap <@ba.key>Hadiah Feline Besar</> akan secara acak memberikan <@ba.key>Bom</> atau sebuah <@ba.key>Karya Tangan</>.\nAda peluang bahwa Hadiah ini akan memberikan <@ba.key>Spesial sang Duta</> yang akan mengakibatkan <#ba.spellvul>Arts Susceptibility</> dan menimbulkan <@ba.pd>Physical DMG</> serta Stagger tambahan kepada musuh.",
+      "bombDmgMultiplier": "Pengganda DMG Bom",
+      "bombStagger": "Stagger Bom",
+      "handicraftDmgMultiplier": "Karya Tangan: Pengganda DMG",
+      "ambassadorsSpecialBaseChance": "Spesial sang Duta: Peluang Dasar",
+      "ambassadorsSpecialDmgMultiplier": "Spesial sang Duta: Pengganda DMG",
+      "ambassadorsSpecialStagger": "Stagger Spesial sang Duta",
+      "susceptibilityDurationS": "Durasi Susceptibility (dtk)",
+      "susceptibility": "Susceptibility"
+    },
+    "indicator": {
+      "levels": [
+        "Strength Operator +10.",
+        "Strength Operator +15.",
+        "Strength Operator +15.",
+        "Strength Operator +20."
+      ],
+      "name": "Forged"
+    },
+    "talent1": {
+      "levels": [
+        "Skill tarung <@ba.key>I’M NOT SLEEPING!</> meningkat: Setelah berhasil memblokir serangan musuh untuk pertama kalinya, skill ini akan memberikan tambahan <@ba.vup>{talent_1_usp:0}</> Energi Ultimate. Peluang bahwa <@ba.key>Spesial sang Duta</> dari ultimate berikutnya, <@ba.key>NAUGHTY IS BANNED!</>, meningkat sebesar <@ba.vup>{talent1_prob_up:0%}</>. Efek ini bisa mencapai <@ba.vup>{talent_1_stack:0}</> tumpuk.",
+        "Skill tarung <@ba.key>I’M NOT SLEEPING!</> meningkat: Setelah berhasil memblokir serangan musuh untuk pertama kalinya, skill ini akan memberikan tambahan <@ba.vup>{talent_1_usp:0}</> Energi Ultimate. Peluang bahwa <@ba.key>Spesial sang Duta</> dari ultimate berikutnya, <@ba.key>NAUGHTY IS BANNED!</>, meningkat sebesar <@ba.vup>{talent1_prob_up:0%}</>. Efek ini bisa mencapai <@ba.vup>{talent_1_stack:0}</> tumpuk."
+      ],
+      "name": "Your Sorry Came LATE!"
+    },
+    "talent2": {
+      "levels": [
+        "Saat dikerahkan ke dalam pertarungan, semua operator HP Maks dalam tim akan terkena DMG <@ba.vup>{dmg_down:0%}</> lebih sedikit dari hantaman berikutnya yang diterima.\nUntuk setiap operator, efek ini hanya bisa diaktifkan satu kali setiap <@ba.vup>{cd:0}</> dtk.",
+        "Saat dikerahkan ke dalam pertarungan, semua operator HP Maks dalam tim akan terkena DMG <@ba.vup>{dmg_down:0%}</> lebih sedikit dari hantaman berikutnya yang diterima.\nUntuk setiap operator, efek ini hanya bisa diaktifkan satu kali setiap <@ba.vup>{cd:0}</> dtk."
+      ],
+      "name": "Ambassador’s Duty"
+    },
+    "baseSkill1": {
+      "levels": [
+        "Saat ditugaskan ke Ruang Resepsionis, operator akan mendapatkan sedikit Peningkatan Peluang Petunjuk 2: TGCC (aktif saat ditugaskan; efek yang tipenya sama tidak bisa ditumpuk)",
+        "Saat ditugaskan ke Ruang Resepsionis, operator akan mendapatkan Peningkatan Peluang Petunjuk 2: TGCC (aktif saat ditugaskan; efek yang tipenya sama tidak bisa ditumpuk)"
+      ],
+      "name": "Brand Ambassador"
+    },
+    "baseSkill2": {
+      "levels": [
+        "Saat ditugaskan ke Kabin Manufaktur, efisiensi produksi material EXP operator akan meningkat sebesar +20%",
+        "Saat ditugaskan ke Kabin Manufaktur, efisiensi produksi material EXP operator akan meningkat sebesar +30%"
+      ],
+      "name": "Desserts for the Debrief"
+    },
+    "files": {
+      "main": "NAMA SANDI: Purrchena\nGENDER: Perempuan\nAUTENTIKASI: Talos-II General Chamber of Commerce (TGCC)\nTANGGAL LAHIR: 26 November\nRAS: Feline\n[STATUS INFEKSI ORIPATI]\nNegatif Oripati, berdasarkan laporan pemeriksaan medis.\n\n[PEMERIKSAAN FISIK TERPADU]\nKEKUATAN FISIOLOGIS: Normal\nKEMAMPUAN TEMPUR: Sangat Baik\nKECERDASAN TAKTIS: Standar\nASIMILASI ORIGINIUM ARTS: Standar",
+      "humanResources": "Purrchena, Brand Ambassador Yayasan Bantuan Sindrom Dampak Lingkungan Ætherside dari Talos-II General Chamber of Commerce (TGCC), yang saat ini bertugas di Endfield Industries sebagai naradamping antara Endfield dan TGCC dalam bidang bantuan Sindrom Ætherside.\n\nSaat aku pertama kali bertemu dengan Purrchena, sikapnya yang ceria dan ramah serta kepribadiannya yang sangat persis dengan persona dunia mayanya meninggalkan kesan yang mendalam bagiku. Selama percakapan kami, dia selalu membuat para operator lain di tempat itu tertawa terbahak-bahak.\nHal lain yang sangat berkesan bagiku adalah Sindrom Ætherside yang diidapnya. Walau kami sudah diberi tahu oleh yayasan tentang kondisinya, aku tetap merasa kagum ketika dia tiba-tiba tertidur di tengah percakapan. Walau sedang menderita penyakit juga, dia tetap mau membantu pasien lain. Semangat altruismenya itu sungguh berharga.\n— Martin Marvin Malen, Asisten, Divisi SDM, Endfield Industries",
+      "file1": "Kepada Pengawas Perlica dari Endfield Industries, Kantor Bisnis, dan Divisi Sumber Daya Manusia:\nSemoga kau dalam keadaan sehat.\nMelalui surat ini, aku merekomendasikan Nona Rosalind untuk posisi di Kantor Bisnis di bawah Endfield Industries demi meningkatkan komunikasi dan kerja sama antara kedua belah pihak dalam bidang bantuan Sindrom Dampak Lingkungan Ætherside.\nPertama, aku perlu menjelaskan kondisi Nona Rosalind. Dia mengidap Sindrom Ætherside yang tidak bisa disembuhkan. Sindrom ini menyerang dan merusak sistem saraf pusatnya, sehingga dia sering tertidur secara tiba-tiba. Tapi tak perlu khawatir, karena selama enam tahun terakhir, kami terus meng-upgrade perangkat pelindung pribadinya dan memberikan perawatan medis jangka panjang sehingga pekerjaan sehari-harinya dijamin tidak akan terpengaruh.\nAku yakin organisasi kalian pernah mendengar tentang operasi penyelamatan yang diikuti Nona Rosalind lima tahun lalu. Berdasarkan laporan ringkasan pascaoperasi, saat badai tiba-tiba kembali datang, tim SAR dan para pasien Sindrom Ætherside terpaksa berlindung di dalam sebuah gua. Karena rencana awalnya adalah relokasi pasien, suplai medis untuk operasi ini sangat terbatas. Untungnya, Nona Rosalind, yang sering bepergian bersama orang tuanya dan bisa merawat pasien Sindrom Ætherside walau tanpa obat-obatan, punya banyak pengalaman dalam situasi seperti itu. Berkat bantuannya, kondisi para pasien tidak makin memburuk. Menurut laporan evaluasi anggota tim lainnya, saat badai berada tepat di atas gua, sebuah mobil RV yang menghalangi pintu masuk merosot ke luar. Dia segera mengambil papan kayu dan menutup celah itu. Setelah badai berlalu dan setelah pemberitaan oleh media kami, nama Purrchena mulai dikenal di seluruh Sentrapolis. Harus kuakui, strategi yayasan bantuan yang mengirimkan seorang perwakilan pasien untuk menggerakkan upaya bantuan ini memang terbukti efektif. Kami mendapatkan banyak kasus khusus yang berharga, dan permintaan obat-obatan dan peralatan medis dari berbagai perusahaan farmasi juga meningkat secara signifikan.\nJika mengingat saat pertama kali aku bertemu dengannya, frekuensi kambuhnya penyakit tidurnya yang tak beraturan membuat tatapannya kosong dan wajahnya tirus. Mengingat kondisinya saat itu, andai saja ayah angkat Nona Rosalind tidak menghubungiku, tubuhnya pasti tak akan mampu bertahan sampai dia dewasa, walau Sindrom Ætherside-nya tidak memburuk. Didasari prinsip kemanusiaan, dan juga sebagai investasi untuk masa depan, kami memberinya perawatan medis dan dukungan pendidikan yang komprehensif. Hal itu membuat kami jadi benar-benar memahami kemampuan profesionalnya. Aku percaya bahwa kedua belah pihak bisa mencapai sinergi yang kuat dalam membantu pasien Sindrom Ætherside melalui jembatan yang dibangun oleh Nona Rosalind ini.\nJika organisasimu ingin mewujudkan kerja sama dalam bidang bantuan Sindrom Dampak Lingkungan Ætherside ini, kami siap memberikan dukungan komunikasi antara kedua belah pihak kapan saja. Terima kasih telah meluangkan waktu untuk membaca surat ini. Kami menantikan terwujudnya kerja sama yang lebih substantif pada masa mendatang.\nHormat kami,\n— H, Perwakilan Unit Bisnis Sindrom Ætherside Highburg Pharmaceuticals LLC, Presiden Yayasan Bantuan Sindrom Dampak Lingkungan Ætherside",
+      "file2": "“Anda sedang menyaksikan Frontline Face-to-Face. Reporter kami telah tiba di pusat medis Sindrom Ætherside di La Fantoma utara dan telah menghubungi Brand Ambassador Yayasan Bantuan Sindrom Dampak Lingkungan Ætherside. Mari menuju ke lokasi dan menyiarkannya secara langsung. Nona Purrchena, ini Dinah. Apa kau bisa mendengarku di sana?”\n“Ya, halo, Dinah! Halo semuanya! Namaku Purrchena, Brand Ambassador Yayasan Bantuan Sindrom Dampak Lingkungan Ætherside.”\n“Halo, Nona Purrchena. Kami semua sangat khawatir karena karantina darurat ini. Bisakah kau memberi tahu kami bagaimana situasinya di sana? Kudengar kau kebetulan sedang mengunjungi pasien Sindrom Ætherside di sana saat kejadian.”\n“Hah? Maksudku, iyaaa bisa ... tapi apa kau yakin ingin aku menceritakannya sekarang? Seingatku banyak anak-anak menonton acaramu.”\n“Haha, jangan khawatir! Kami ini profesional. Kalau yang kausampaikan tadi jadi makin intens, nanti kami peringatkan dulu.”\n“Oke, karena semua pasien yang tinggal di sini kondisinya sangat parah. Yang paling kuingat adalah pasien yang punggungnya dipenuhi luka yang tampaknya dari sayatan pisau. Aku melihat seorang dokter menyentuh salah satu lukanya dengan Originium, dan lukanya langsung terpelintir dan berkerut.”\n“Benar-benar aneh ... dan agak menakutkan. Bisakah kau menjelaskan lebih jauh tentang Sindrom Dampak Lingkungan Ætherside? Kami benar-benar belum tahu banyak tentangnya.”\n“Em ... Yah, kurang lebih seperti yang tertulis di buku. Kalau ingin tahu lebih detail, bahkan kami pun harus membaca banyak buku yang sangat tebal hanya untuk sekadar memahaminya. Tapi, seperti yang dikatakan salah satu peneliti di yayasan bantuan, ini bukanlah penyakit dalam artian tradisional, tapi lebih merupakan fenomena unik yang muncul ketika lingkungan Ætherside memengaruhi tubuh manusia.”\n“Oke. Lalu, apakah karantina darurat yang mendadak ini memang disebabkan oleh seorang pasien Sindrom Ætherside, seperti yang disebutkan dalam pengumuman resmi?”\n“Benar.”\n“Jadi, apa sebenarnya yang terjadi? Ada rumor bahwa telah terjadi sesuatu yang mirip dengan fenomena penguraian yang terlihat pada pasien positif Oripati.”\n“Sama sekali tidak! Penguraian terjadi setelah seorang pasien meninggal, tapi Sindrom Ætherside berbeda. Aku baru saja bicara dengannya, dan dalam sekejap dia langsung .... Untungnya hanya ada aku di bangsal isolasi saat itu. Hahh, walau sistem pemantauan kondisi di pusat medis ini sangat menyeluruh, sistem ini benar-benar tak berdaya menghadapi situasi seperti ini.”\n“Ahh .... Jadi, perkembangan gejala Sindrom Ætherside ini sangat sulit diprediksi?”\n“Itulah bagian tersulit dalam merawat pasien-pasien ini. Ketidakpastiannya juga bervariasi dari kasus ke kasus. Terkadang kondisinya tiba-tiba memburuk. Terkadang gejalanya tiba-tiba berubah.”\n“Gejalanya bisa berubah?”\n“Benar. Contohnya aku. Saat ini gejala yang dialami Purrchena adalah tertidur kapan saja. Tapi, kalau Purrchena memasuki lingkungan dengan kedalaman tinggi tanpa gear pelindung yang memadai, dia bisa berakhir berkedip-kedip seperti orang di layar handyterm yang rusak. Atau mungkin akan muncul Purrchena lain, bisa dilihat tapi tak bisa disentuh, melambai dan menyapa semua orang, sementara Purrchena yang asli terbaring seolah tertidur dan tak bisa dibangunkan sekeras apa pun kau memanggilnya. Tentu saja, risiko ini tak hanya berlaku untuk pasien, tapi juga untuk orang biasa yang memasuki lingkungan dengan kedalaman tinggi.”\n“Benar-benar penyakit yang tak bisa diprediksi. Karena itulah, semua orang harus memakai gear pelindung dengan benar sebelum memasuki lingkungan dengan kedalaman tinggi!”\n“Tepat sekali! Kalau karena alasan apa pun kau harus memasuki lingkungan dengan kedalaman tinggi, pastikan untuk memakai gear pelindung dengan benar. Dan tentu saja, hindari lingkungan berkedalaman tinggi kecuali benar-benar mendesak!”\n“Terima kasih atas pengingatnya, Nona Purrchena. Untuk mengakhiri wawancara ini, apakah ada hal lain yang ingin disampaikan kepada pemirsa kami?”\n“Oooooh ada. Walau kami belum bisa menyembuhkan Sindrom Ætherside, jangan panik. Selama kau tidak bersentuhan dengan lingkungan berkedalaman tinggi, tak akan ada risiko penularan. Dan tolong jangan perlakukan pasien di sekitarmu seperti monster. Sindrom Ætherside itu tidak ... tidak ... menular ....”\n“Nona Purrchena? Uh ... Nona Purrchena?”\n“... *BIP*”\n“Emm ... Sepertinya kita mengalami gangguan teknis. Berikutnya, mari kita bicara dengan ....”",
+      "file3": "......\nLa Fantoma. Kurasa tak perlu dibahas lagi betapa baiknya Siesta Group mengelola kota merdeka ini, aku juga tak perlu menguraikan seberapa besar gairah yang ditimbulkan oleh Talos-II General Chamber of Commerce ke kota ini. Tapi, sebelum membahas tentang kota merdeka La Fantoma, aku ingin menceritakan seorang teman yang kutemui dalam perjalanan ini, yang telah memberikan bantuan luar biasa saat aku menulis bab tentang La Fantoma ini.\nSama seperti yang biasa kulakukan saat tiba di kota mana pun, aku masuk ke mal untuk memikirkan tujuanku selanjutnya, sama seperti pusat komersial lainnya di La Fantoma. Bangunan itu dipenuhi berbagai bisnis dari seluruh Sentrapolis, dan di tengah-tengahnya terdapat pasar terbuka yang ramai dengan pelanggan dan pedagang keliling. Aku memilih kedai minuman dengan pemandangan yang bagus dan baru saja duduk ketika aku melihat “maskot Feline putih” yang sangat mencolok. Awalnya kukira itu adalah karakter berkostum dari sebuah toko, tapi setelah diamati lebih dekat, dia tidak sedang berusaha menarik pelanggan. Dia hanya berdiri di sana menatap etalase toko makanan penutup, sementara orang-orang yang lewat menyapanya dengan hangat, seolah-olah semua orang di kota mengenalnya.\nUntuk merasakan budaya kota ini, aku menghampiri dan menyapanya. Setelah berulang kali memastikan bahwa aku bukanlah reporter tabloid yang berusaha menggali informasi rahasia seperti apakah Yayasan Bantuan Sindrom Dampak Lingkungan Ætherside telah menandatangani kesepakatan rahasia dengan perusahaan farmasi, barulah dia memberitahuku identitasnya. Maafkan aku karena tidak familier dengan berbagai perwakilan dan nama sandi dari perusahaan, yayasan, dan departemen administratif TGCC. Setelah berpisah, aku baru menyadari karakter mana yang membentuk nama Purrchena. Saat mendengar bahwa aku datang untuk mendokumentasikan kehidupan sehari-hari di La Fantoma dan menulis panduan wisata, dia melompat dengan ceria dan menuntunku keluar dari mal, lalu menjadi pemanduku. Semua rekomendasi makanan di akhir bab ini disusun sesuai panduan Nona Purrchena. Mungkin berkat penjelasannya yang hidup dan penuh semangat, terutama ketika dia tiba-tiba tertidur di tengah kalimat lalu terbangun, menggaruk kepalanya, dan meminta maaf sebelum melanjutkan pembicaraan, tempat-tempat seperti markas besar TGCC pun jadi terasa menarik.\n......\nSaat aku menanyakan pandangannya tentang La Fantoma dan kota merdeka lainnya, dia hanya tersenyum dan berkata bahwa dia akan membawaku ke tempat yang menyenangkan, lalu menuntunku menjauh dari jalanan yang ramai dan pergi ke pantai. Kami terpisah di tengah kerumunan, tapi tak lama kemudian, aku menemukannya lagi dengan mengikuti orang-orang yang perlahan membentuk lingkaran di sekelilingnya. Dia sedang duduk di atas pasir, menganggukkan kepalanya mengikuti irama musik, dan sesekali mengubah ekspresi pada layar wajah elektroniknya untuk mengejutkan anak-anak yang memanjat di atasnya dan ikut bermain. Walau masih jauh, aku masih bisa mendengar tawa mereka di antara suara musik itu. Orang-orang di sekitarnya mengeluarkan kamera untuk memotret, atau ikut serta dalam kegembiraan anak-anak itu, menari mengikuti melodi. Dia dikelilingi oleh kegembiraan dan tawa. Setelah kerumunan bubar dan anak-anak dengan enggan mengucapkan selamat tinggal kepadanya di bawah pengawasan orang tua mereka, akhirnya aku bisa mendekatinya. Ternyata dia tertidur lagi, tapi masih menggoyangkan kepalanya dengan pelan. Aku duduk di sampingnya dan mendengarkan napasnya yang lembut. Dia pasti sedang bermimpi indah.\n— Sebuah kata pengantar untuk bab La Fantoma dari Talos-II yang Kita Pijak, disertai dengan foto Purrchena yang sedang bermain bersama anak-anak.",
+      "file4": "2 November, Tahun 145, cuaca cerah. Hari ini, ibu mengendarai RV ke tempat yang penuh dengan RV lain. Paman dan bibi di sana membantu ibu meng-upgrade RV kami, yang sekarang jadi sangat besar dan nyaman. Tidur di lantainya pun rasanya nyaman. Aku tak perlu khawatir terluka lagi kalau tiba-tiba pingsan. Para paman dan bibi juga memberiku camilan yang sangat, sangat enak. Kalau tak salah, namanya ikan kering eksotis. Hehe, kalau sudah besar nanti, aku akan beli banyak sekali ikan kering eksotis sampai RV kami penuh dengan camilan itu.\n......\n7 Mei, Tahun 146, cuaca bersalju lalu cerah. Ibu dan beberapa paman dan bibi bersama-sama mengendarai RV mereka ke sebuah kota di atas pegunungan salju. Untung saja RV ini hangat dan nyaman. Ibu dan aku sama sekali tak kedinginan. Hehe, biar ayah saja yang keluar dan berburu harta karun sendirian. Kali ini ayah menemukan tulang mesin. Dia bilang, setelah dia memperbaikinya, aku bisa keluar dan bermain dengan anak-anak lain!\n......\n23 Juni, Tahun 146, mendung lalu hujan. Tulang mesin itu sepertinya tak suka hujan. Mesin itu terdiam di tengah hujan dan tak bergerak lagi. Untung saja semua anak yang ikut serta membawa payung dan menemaniku di tengah hujan selama menunggu ibu dan ayah. Tapi aku tak begitu ingat apa yang terjadi setelah itu. Kukira hanya mimpi. Aku bermimpi sedang menunggangi burdenbeast terbang dan pergi ke banyak tempat. Saat aku bangun, entah kenapa ibu memelukku dan menangis. Ayah sepertinya menyalahkan tulang mesin itu. Aku mencoba menghibur ibu, tapi dia malah menangis lebih keras. Aku benci kalau sampai ketiduran ....\n......\n16 Juli, Tahun 146, cuaca cerah. Kami kembali ke tempat ini, tempat mereka membuat film. Di sini ada banyak sekali baju bagus. Ini tempat favoritku. Aku baru saja membantu para paman dan bibi membawa kotak-kotak keluar dari RV ketika ayah kembali bersama seorang paman berbaju rapi. Paman itu tak selincah aku. Walau RV kami cukup besar untuk menampung seluruh Talos-II, dia tetap harus melangkah dengan hati-hati di dalam RV. Ibu juga sangat senang hari ini. Dia mengeluarkan banyak makanan enak yang biasanya dikeluarkan saat ulang tahun kami saja.\n......\n20 Agustus, Tahun 146, mendung. RV ini tak seperti RV ibu. Dalamnya bersih sekali, banyak kotak logam, sempit dan dingin. Ada juga banyak paman dan bibi berjas putih. Mereka semua tersenyum padaku, tapi aku sama sekali tak merasa gembira. Paman kenalan ayah memberiku kotak kecil yang aneh. Aku bisa mendengar suara ibu dan ayah dari kotak itu, tapi saat kotaknya kubongkar, mereka tak ada di dalamnya ....\n......\n18 Desember, Tahun 146, cuaca cerah. Hari ini, aku mengikuti misi penyelamatan untuk pertama kalinya. Aku mengenal semua rekan timku. RV ini sempit, tapi semua orang mengobrol dan tertawa. Aku sangat menyukai suasananya! Tapi, beberapa direktur yayasan bantuan melarangku pergi ke tempat seperti itu karena terlalu berbahaya, dan bilang bahwa aku tak akan diizinkan ikut operasi penyelamatan seberbahaya itu lagi. Aku kesal sekali! Misinya berjalan lancar, dan bukan salahku badainya tiba-tiba kembali. Setelah operasi selesai, aku bisa bertemu ibu dan ayah lagi. Aku bahkan membantu ibu membawa pasien ke kota terdekat untuk dirawat. Eh, kapan terakhir kali aku bertemu mereka, ya?\n......\n7 November, Tahun 151, cuaca cerah. Kami akan tiba di tujuan besok. Waktu berlalu begitu cepat. Rasanya baru kemarin aku menerima surat balasan dari Endfield Industries. Endministrator itu seperti apa, ya? Apakah sama seperti yang digambarkan di buku? Haaahh, membosankan! RV ini benar-benar kosong, di dalamnya tak ada apa-apa. Oh, hari ini aku juga tak sengaja bertemu ibu dan ayah. Mereka sedang mengangkut pasokan dari La Fantoma ke Lembah IV. Kami berfoto bersama, jadi mereka bisa melihatku di foto dan tak terlalu merindukanku. Tapi, walau RV ibu terlihat sama persis seperti saat aku masih kecil, kenapa rasanya ada yang berubah?"
+    },
+    "tags": {
+      "expert1": {
+        "name": "Bertahan Hidup di Alam",
+        "description": "Bertahan Hidup di Alam: Setelan Boneka\nKamu tidak tahu apa-apa tentang perangkat yang tersembunyi di dalam kostum setelan bonekanya. Kamu juga pasti tidak akan tahu apakah dia sedang bersembunyi di suatu tempat sambil mengunyah camilan."
+      },
+      "expert2": {
+        "name": "Kisah Alam",
+        "description": "Kisah Alam: Teladan tapi Suka Ngantuk\nTeman-teman sekelasnya kebingungan. Dia sering tidur selama sesi perkuliahan dan kelas, tapi tidak ada yang bisa mengalahkannya dalam ujian."
+      },
+      "hobby1": {
+        "name": "Seni Rupa",
+        "description": "Seni Rupa: Atelier Makanan Penutup\nDialah yang paling tahu tentang makanan penutup. Pernyataan ini jelas tidak berlebihan."
+      },
+      "hobby2": {
+        "name": "Amal",
+        "description": "Amal: Duta Terbaik\n“Duta? Oh, maksudmu Purrchena. Dia benar-benar penolong bagi kami. Lihat. Kami menyiapkan semua camilan ini untuknya, sebagai tanda terima kasih kami!”"
+      }
+    },
+    "voiceLines": [
+      {
+        "voId": "chr_0038_purrche_chrbark_squad_01",
+        "title": "Persiapan Operasi 1",
+        "text": "Giliranku untuk .... “Meong-duh!” .... Ugh, kok aku ketiduran lagi?!"
+      },
+      {
+        "voId": "chr_0038_purrche_chrbark_squad_02",
+        "title": "Persiapan Operasi 2",
+        "text": "Nnn .... Gah! Sudah saatnya menjalankan misi?"
+      },
+      {
+        "voId": "chr_0038_purrche_chrbark_join_01",
+        "title": "Menambahkan ke Tim 1",
+        "text": "Siapa yang ngantuk? Bukan aku!"
+      },
+      {
+        "voId": "chr_0038_purrche_chrbark_join_02",
+        "title": "Menambahkan ke Tim 2",
+        "text": "Marshmallow dan ikan kering eksotis sudah siap .... Baiklah, aku siap berangkat!"
+      },
+      {
+        "voId": "chr_0038_purrche_chrbark_weap_01",
+        "title": "Berganti Senjata",
+        "text": "Oh, pegangan yang bagus! Kalau kugunakan ini sebagai tusuk sate camilan, baju berbuluku bakal tetap bersih bebas noda!"
+      },
+      {
+        "voId": "chr_0038_purrche_chrbark_gear_01",
+        "title": "Berganti Gear",
+        "text": "Wah, ternyata pas dengan bajuku .... “Ikan kering eksotis! NYAM-NYAM!” .... Tunggu, apa yang terjadi? Aku belum ketiduran!"
+      },
+      {
+        "voId": "chr_0038_purrche_chrup_skill_01",
+        "title": "Aktivasi Nodus Talent",
+        "text": "Mmm .... HAH! Aku tahu! Solusi untuk eksperimen patologi itu adalah—Tunggu, apa? Ke mana perginya ide itu?"
+      },
+      {
+        "voId": "chr_0038_purrche_chrup_level_01",
+        "title": "Menonton Rekaman Pertarungan",
+        "text": "TGCC tak pernah mengajariku hal seperti ini. Wow .... Tak kusangka kau bisa begitu!"
+      },
+      {
+        "voId": "chr_0038_purrche_chrup_promt01_01",
+        "title": "Promosi Operator 1",
+        "text": "Ooh, promosi! Saat masih di Yayasan Bantuan, perayaan semacam ini berarti satu hal: tumpukan kue .... Apa? Di sini pestanya tak pakai kue?"
+      },
+      {
+        "voId": "chr_0038_purrche_chrup_promt02_01",
+        "title": "Promosi Operator 2",
+        "text": "Beneran? Asyik! Aku tak sabar mau bilang kepada Ibu dan Ayah serta semua orang di kampung halaman. Mereka ... mereka pasti akan ... sangat bahagia juga .... “Sampai jumpa!”"
+      },
+      {
+        "voId": "chr_0038_purrche_chrup_promt03_01",
+        "title": "Promosi Operator 3",
+        "text": "Dipromosikan lagi?! Kalau ini mimpi, jangan bangunkan aku! Aku akan pastikan semua orang aman dan terlindungi. Serahkan saja kepadaku!"
+      },
+      {
+        "voId": "chr_0038_purrche_chrup_promt04_01",
+        "title": "Promosi Operator 4",
+        "text": "Terkadang, aku memikirkan bakal seperti apa hidupku andai aku tak pernah pergi ke La Fantoma bersama Yayasan Bantuan .... Hmph. Ke mana pun aku berlabuh, aku akan tetap jadi diriku, selalu siap sedia membantu!"
+      },
+      {
+        "voId": "chr_0038_purrche_introduce_01",
+        "title": "Operator Siap Bertugas",
+        "text": "Salam, Endmin! Aku Duta Merek untuk Yayasan Bantuan Sindrom Dampak Lingkungan Ætherside—Purrchena! Mimpiku adalah menjadi ... orang seperti .... “Duta Merek untuk Yayasan Bantuan Sindrom Dampak Lingkungan Ætherside—Purrchena!” ... *hah* tidak, tidak, tidak, aku ketiduran lagi!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_switch_01",
+        "title": "Siaga 1",
+        "text": "Hai, Endmin! Aku benar-benar melek!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_switch_02",
+        "title": "Siaga 2",
+        "text": "Lihat camilanku ini! Mau coba, Endmin?"
+      },
+      {
+        "voId": "chr_0038_purrche_sim_assign_work_01",
+        "title": "Menugaskan ke Fasilitas",
+        "text": "Jangan khawatir kalau aku tiba-tiba ngorok. Bajuku punya autopilot yang sangat cerdas!"
+      },
+      {
+        "voId": "chr_0038_purrche_sim_hello_lower_01",
+        "title": "Menyapa 1",
+        "text": "Halo, Endmin! Mau makan ikan kering eksotis?"
+      },
+      {
+        "voId": "chr_0038_purrche_sim_hello_max_01",
+        "title": "Menyapa 2",
+        "text": "“Sampai jumpa!” .... Hah? Oh, Endmin! Halo!"
+      },
+      {
+        "voId": "chr_0038_purrche_sim_talk_lv01_01",
+        "title": "Obrolan Santai di Dijiang 1",
+        "text": "Wah, Dijiang sangat berbeda dari rumah! Kau bisa melihat Talos-II dengan jelas dan ada perangkat mencolok yang tak kukenali! Aku cuma pernah baca soal hal semacam ini! Keren banget!"
+      },
+      {
+        "voId": "chr_0038_purrche_sim_talk_lv02_01",
+        "title": "Obrolan Santai di Dijiang 2",
+        "text": "Hai, Endmin! Apa? Operator kantin bilang aku bersikap terlalu malu-malu? Benarkah?! Aku cuma tak ingin terlihat terlalu serakah. TUNGGU?! Ini kedai camilan makan sepuasnya?! YIHUI! Kedai camilan! Aku datang!"
+      },
+      {
+        "voId": "chr_0038_purrche_sim_talk_lv02_02",
+        "title": "Obrolan Santai di Dijiang 3",
+        "text": "Endmin, aku kembali setelah membantu sesama pasien! Aku menceritakan kisah tentang Endfield Industries kepada anak-anak dan mereka SANGAT SUKA! Cerita seperti apa? Ya, ceritanya tentang ... tentang .... “Ikan kering eksotis! NYAM-NYAM!” “Aku SUKA ikan kering eksotis.”"
+      },
+      {
+        "voId": "chr_0038_purrche_sim_talk_max_01",
+        "title": "Obrolan Santai di Dijiang 4",
+        "text": "Endmin! Aku memanggang marshmallow ini sendiri! Kenapa setengah gosong? Oh, heheh, ya, sepertinya aku tak sengaja ketiduran di dekat api ...."
+      },
+      {
+        "voId": "chr_0038_purrche_sim_talk_max_02",
+        "title": "Obrolan Santai di Dijiang 5",
+        "text": "Nnn—ngantuknya .... Menghadapi burdenbeast keras kepala itu sungguh menguras tenaga. Oh? Kenapa aku maju sendirian? Yah, membantu sesama pasien Sindrom Ætherside adalah keahlianku! Heheh!"
+      },
+      {
+        "voId": "chr_0038_purrche_sim_talk_max_03",
+        "title": "Obrolan Santai di Dijiang 6",
+        "text": "Kenapa aku sangat menyukai camilan? Karena mengunyah camilan itu sangat menenangkan buatku ... rasanya seperti melayang di atas awan .... “Salam! Aku Purrchena!”"
+      },
+      {
+        "voId": "chr_0038_purrche_sim_gift_give_01",
+        "title": "Menawarkan Hadiah",
+        "text": "Tada! Aku yang memilihkan hadiah ini sendiri, jadi dijamin bakal enak! Percayalah kepadaku, Endmin! Kau takkan menemukan ahli camilan yang lebih hebat dariku! Aku tahu semua rahasia terbaik di dunia camilan!"
+      },
+      {
+        "voId": "chr_0038_purrche_sim_gift_recv_01",
+        "title": "Menerima Hadiah",
+        "text": "Ooh, terima kasih banyak, Endmin ... *hah*, nyaris saja aku ketiduran lagi! Fyuh ... syukurlah aku tak menjatuhkannya."
+      },
+      {
+        "voId": "chr_0038_purrche_mono_self_line01",
+        "title": "Dialog Kepercayaan 1",
+        "text": "Saat aku belajar di La Fantoma, buku pelajaranku menggambarkan banyak sekali pencapaian Endfield. Saat itulah aku mengetahui komitmen Endfield Industries dalam pencegahan penyakit Æther .... Lingkungan Æther di Talos-II bisa membuat manusia terjangkit berbagai kelainan langka. Aku sangat ingin memberikan bantuanku dan menolong sesama korban. Teman-temanku di Yayasan Bantuan menuliskan rekomendasi yang sangat bagus untukku, dan begitulah akhirnya aku sampai di sini!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_self_line02",
+        "title": "Dialog Kepercayaan 2",
+        "text": "Hiya! Ada artikel yang menyebutkan “Duta Merek untuk Yayasan Bantuan Sindrom Dampak Lingkungan Ætherside”? Oh, ya, itu aku, tapi tulisannya berlebihan banget .... Aku tak pernah melintasi pegunungan dengan menggendong korban di punggungku. Aku dan Ibu cuma memberinya tumpangan ke rumah sakit pakai RV kami. Kenapa orang tuaku bukan Feline? Pertanyaan bagus. Mungkin karena kakek-nenekku bukan Feline."
+      },
+      {
+        "voId": "chr_0038_purrche_mono_self_line03",
+        "title": "Dialog Kepercayaan 3",
+        "text": "Baju unikku ini? Ayah membuat yang pertama saat aku masih kecil. Dia memperbaiki eksoskeleton rongsokan dan membungkusnya dengan boneka agar aku tetap aman kalau-kalau ketiduran. Baju lama itu sering banget macet, tapi aku masih menyimpannya di apartemenku di La Fantoma! Yang kupakai sekarang? Ehem. Yang ini adalah yang paling mutakhir! Para teknisi Yayasan Bantuan selalu memberiku upgrade yang rapi. Aku punya banyak teknologi keren di dalam benda ini!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_self_line04",
+        "title": "Dialog Kepercayaan 4",
+        "text": "Aku pernah ketiduran saat ujian besar dan terbangun dengan keadaan sekitar yang sangat kacau. Pengawas dan peserta ujian lain berteriak minta tolong! Mereka hanya tahu aku mengidap sindrom langka dan mengira aku sedang koma. Lalu mereka panik saat tak bisa mencongkel bajuku. Pengawas yang malang itu bahkan sampai jatuh dan terluka .... Bagaimana hasil ujianku? Yah, aku menyerahkan kertasku yang baru setengah selesai karena harus buru-buru mengantar si pengawas ke ruang kesehatan sekolah. Padahal aku bisa saja jadi juara kelas."
+      },
+      {
+        "voId": "chr_0038_purrche_mono_self_line05",
+        "title": "Dialog Kepercayaan 5",
+        "text": "Ibu memungutku dari alam liar saat mengantarkan pasokan dengan RV-nya .... Mereka sering menghabiskan waktu bersamaku menghitung bintang dan bermain macam-macam permainan. Setelah Yayasan Bantuan mendiagnosis sindrom langkaku, Ibu dan Ayah membawaku ke La Fantoma supaya aku bisa mendapatkan penanganan sekaligus bertugas sebagai maskot Yayasan. Segera setelahnya, aku sadar bahwa bukan aku saja yang menderita Sindrom Ætherside. Heheh. Aku sangat senang bisa membantu banyak orang sepertiku!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_chat_line01",
+        "title": "Obrolan 1",
+        "text": "Tidak ada yang bisa mengalahkan ikan kering eksotis, tapi finyaki dari Neo Tsukushi juga luar biasa. Aku mengunjungi sesama pasien sindrom di kota saat perjalanan Yayasan Bantuan. Semuanya memberitahuku bahwa di Neo Tsukushi ada finyaki yang paling autentik. Mereka benar, tapi sekarang semua finyaki selain dari Tsukushi rasanya aneh. Aku benar-benar ingin ke sana lagi .... Mmm, ya sudahlah, kurasa aku akan tetap makan ikan kering eksotisku untuk saat ini!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_chat_line02",
+        "title": "Obrolan 2",
+        "text": "Robot boneka? ENGGAK! Robot sepertiku tidak ada di Talos-II! Kalaupun ada, mereka tak mungkin mirip denganku! Endmin, kau percaya rumor itu? Suara elektronikku! Dengar, suaranya BUKAN disintesis! Aku cuma merekamnya supaya orang tahu kapan aku tertidur. Sini! Aku akan putar beberapa untukmu .... “Salam!” “Sampai jumpa!” “Ikan kering eksotis! NYAM-NYAM!” “Apa Endmin menyembunyikan camilan di balik topeng itu?” Ah! Hentikan! Dialog itu tidak seharusnya direkam!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_chat_line03",
+        "title": "Obrolan 3",
+        "text": "Bagaimana caraku minum obat? Ayah melengkapi setelan ini dengan dispenser berwaktu, dan teman-teman dari TGCC menyempurnakan teknologinya. Bagaimana caraku makan dan membersihkan diri? Hmm ... teknisi Yayasan Bantuan memasang sistem pembersih yang menghilangkan remah-remah yang tak sengaja kujatuhkan! Untuk makan, aku cuma melakukan ini: Aaa—NYAM .... KYAAA!! PA-PA-PANAAAS ...! *Glek-glek* Fyuuuh. Aku masih hidup! Diselamatkan oleh air dingin .... Panasnya hampir membuatku mati .... Yah. Begitulah cara kerjanya, Endmin."
+      },
+      {
+        "voId": "chr_0038_purrche_mono_chat_line04",
+        "title": "Obrolan 4",
+        "text": "Penampilanku? Purrchena terlihat seperti Purrchena, berbulu nan lembut .... Penampilan asliku di balik setelan ini? Oho, sepertinya ada yang tertarik dengan rahasiaku! Hmph! Purrchena terbuat dari permen kapas! Hehe, cuma bercanda. Sebenarnya aku cuma ... aku ... merasa ... sedikit .... “Ikan kering eksotis! MAKANLAH!”"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_chat_line05",
+        "title": "Obrolan 5",
+        "text": "Tentu saja, tentu saja! Pakaianku ini sangat populer! Semuanya—dari staf Yayasan Bantuan, hingga teman-teman yang kubantu, serta sesama Endfielder yang membantuku—SANGAT SUKA berpelukan denganku. Terutama saat cuaca dingin. Mereka semua bilang hal yang sama kepadaku: “Kau sangat lembut dan hangat, Purrchena! Rasanya seperti memeluk serpihan kecil matahari!”"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_about_line01",
+        "title": "Topik: Sindrom Ætherside",
+        "text": "Dulu aku pergi ke berbagai tempat untuk mengunjungi sesama pasien yang membutuhkan. Ada yang kondisinya sama sepertiku, tapi ada beberapa ... yah, ahli bedah Yayasan Bantuan memberitahuku bahwa tidak ada yang bisa mereka lakukan dengan teknologi medis kita saat ini. Aku ingat mengunjungi pusat perawatan Sindrom Ætherside bersama tim dan aku cuma .... *Hah*. Hal itu membuatku sadar betapa beruntungnya aku punya setelan ini. Setelan ini membuatku bisa tetap bergerak aktif dan tak lagi harus berbaring di ranjang pesakitan .... Aku cuma berharap aku bisa membawa perubahan bagi mereka."
+      },
+      {
+        "voId": "chr_0038_purrche_mono_about_line02",
+        "title": "Topik: La Fantoma",
+        "text": "Orang-orang di La Fantoma sangat ramah! Tak seperti tempat lain. Tak ada gurun, tak ada blokade Landbreaker .... Hanya ada taman yang sangat besar, lautan, dan festival musik yang meriah! Tentu saja, camilan La Fantoma adalah favoritku. Aku juga hampir tak bisa membedakan mana yang positif Oripati dan yang bukan .... *Hah*. Seandainya saja kita bisa mengendalikan Sindrom Ætherside seperti yang kita lakukan pada Oripati."
+      },
+      {
+        "voId": "chr_0038_purrche_mono_about_line03",
+        "title": "Topik: RV",
+        "text": "Saat aku masih kecil, RV itu terasa luar biasa besar bagiku. Ibu mengemudikannya ke seluruh penjuru dunia bersamaku dan Ayah. Aku sudah melihat gunung bersalju, gurun, hutan, dan danau raksasa. Aku masih muda, tapi aku kuat dan membantu orang-orang memindahkan berton-ton kargo ke dalam dan ke luar RV kami. Mereka sangat menyukaiku dan memberiku banyak permen. Kukira semua camilan di Talos-II tak akan pernah bisa membuat RV Ibu penuh .... Tapi, RV-nya terasa lebih kecil sekarang."
+      },
+      {
+        "voId": "chr_0038_purrche_mono_about_line04",
+        "title": "Topik: Klan Bonekrusher",
+        "text": "Endmin, aku tak paham! Kenapa Landbreaker membiarkan diri mereka terpapar Æther ...? Gila sekali ... dan kegilaan mereka adalah gejala klasik dari Sindrom Ætherside .... Kenapa mereka melakukan itu pada diri mereka sendiri? Kenapa mereka sengaja membuat diri mereka sakit? Menggunakan hal yang sedang berusaha keras kita hentikan? Apa? Apa aku terlalu serius? Bukan begitu .... Ugh. Hal ini membuatku marah sekali! Sangat marah!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_about_line05",
+        "title": "Topik: Ikan Kering Eksotis!",
+        "text": "Ikan kering eksotis, nyam, nyam .... Manis ... pedas ... asam .... E-Endmin? Aku ... aku benar-benar sedang tidur sekarang, asal kau tahu. Zzz .... “Ikan kering eksotis! NYAM-NYAM!”"
+      },
+      {
+        "voId": "chr_0038_purrche_explore_point_common_01",
+        "title": "Sumber Daya/Barang Koleksi Terdeteksi 1",
+        "text": "Oh! Ada sesuatu yang berkilau di sana! Semoga itu camilan!"
+      },
+      {
+        "voId": "chr_0038_purrche_explore_point_valub_01",
+        "title": "Sumber Daya/Barang Koleksi Terdeteksi 2",
+        "text": "Ooh, lihat ini! Hehe, menurutmu apa yang akan kita temukan di dalam?"
+      },
+      {
+        "voId": "chr_0038_purrche_explore_find_locked_01",
+        "title": "Area yang Belum Dijelajahi Terdeteksi",
+        "text": "Hmm? Apa ada yang berkilau di sebelah sana?"
+      },
+      {
+        "voId": "chr_0038_purrche_explore_find_danger_01",
+        "title": "Musuh Kuat Ditemukan",
+        "text": "Hii, yang itu kelihatannya sangat jahat .... Tapi, aku akan menjaga semuanya agar tetap aman!"
+      },
+      {
+        "voId": "chr_0038_purrche_interact_mine_valub_01",
+        "title": "Penambangan 1",
+        "text": "Setelan bonekaku ini lebih tangguh dari kelihatannya!"
+      },
+      {
+        "voId": "chr_0038_purrche_interact_mine_valub_echo2_01",
+        "title": "Penambangan 2",
+        "text": "Biar kubantu! Setelanku punya da ... daya tak terbatas .... “Sampai jumpa!”"
+      },
+      {
+        "voId": "chr_0038_purrche_interact_treasure_valub_01",
+        "title": "Membuka Kerat",
+        "text": "Ooh, penemuan yang bagus ...! Mungkin ada camilan di dalamnya."
+      },
+      {
+        "voId": "chr_0038_purrche_interact_etherium_01",
+        "title": "Mendapatkan Aurylene",
+        "text": "Aku pernah membaca tentang Aurylene di buku “Ilmu Lingkungan Talos-II” .... Aww, lihat itu—sangat berkilau dan cantik! Persis seperti di gambar, hehe."
+      },
+      {
+        "voId": "chr_0038_purrche_interact_blight_break_01",
+        "title": "Menyingkirkan Hawar",
+        "text": "Nah .... Sekarang orang-orang dan burdenbeast sudah aman."
+      },
+      {
+        "voId": "chr_0038_purrche_interact_rest_01",
+        "title": "Istirahat",
+        "text": "Aku masih punya energi! Malah, aku sangat bersemangat ...."
+      },
+      {
+        "voId": "chr_0038_purrche_combat_suppuse_using_01",
+        "title": "Penggunaan Taktis 1",
+        "text": "Rasakan ini! Jangan sampai ketiduran!"
+      },
+      {
+        "voId": "chr_0038_purrche_combat_suppuse_getheal_01",
+        "title": "Penggunaan Taktis 2",
+        "text": "Hidup kembali!"
+      },
+      {
+        "voId": "chr_0038_purrche_combat_remind_danger_01",
+        "title": "Peringatan Bahaya",
+        "text": "Bahaya! Sembunyilah di belakangku sekarang!"
+      },
+      {
+        "voId": "chr_0038_purrche_combat_hurt_lowhp_01",
+        "title": "Cedera",
+        "text": "Huu .... Ini mulai terasa seperti mimpi ...."
+      },
+      {
+        "voId": "chr_0038_purrche_combat_dead_01",
+        "title": "0 HP",
+        "text": "Maaf ... aku ngantuk banget ...."
+      },
+      {
+        "voId": "chr_0038_purrche_combat_remind_praise_01",
+        "title": "Penyemangat Tim 1",
+        "text": "Luar biasa! Untung saja aku terbangun dan bisa melihatnya!"
+      },
+      {
+        "voId": "chr_0038_purrche_combat_remind_praise_02",
+        "title": "Penyemangat Tim 2",
+        "text": "Kita adalah tim impian!"
+      },
+      {
+        "voId": "chr_0038_purrche_combat_remind_praise_echo2_01",
+        "title": "Respons Penyemangat 1",
+        "text": "Hehe, aku jadi malu, nih."
+      },
+      {
+        "voId": "chr_0038_purrche_combat_remind_praise_echo2_02",
+        "title": "Respons Penyemangat 2",
+        "text": "Kutraktir ikan kering eksotis!"
+      },
+      {
+        "voId": "chr_0038_purrche_combat_intobattle_01",
+        "title": "Mulai Pertarungan 1",
+        "text": "Sembunyilah di belakangku, Kawan-kawan!"
+      },
+      {
+        "voId": "chr_0038_purrche_combat_intobattle_echo2_01",
+        "title": "Mulai Pertarungan 2",
+        "text": "Selama ada aku, tak seorang pun bakalan terluka!"
+      },
+      {
+        "voId": "chr_0038_purrche_combat_outbattle_nor_01",
+        "title": "Menang Pertarungan 1",
+        "text": "Apa semuanya selamat dan baik-baik saja?"
+      },
+      {
+        "voId": "chr_0038_purrche_combat_outbattle_nor_02",
+        "title": "Menang Pertarungan 2",
+        "text": "Jangan main-main dengan duta merek ini .... “NYAM-NYAM!”"
+      },
+      {
+        "voId": "chr_0038_purrche_combat_outbattle_nor_echo2_01",
+        "title": "Menang Pertarungan 3",
+        "text": "*Huu* ... kerja bagus, semuanya! Sekarang saatnya ngemil!"
+      },
+      {
+        "voId": "chr_0038_purrche_combat_outbattle_hard_01",
+        "title": "Menang Pertarungan 4",
+        "text": "Pertarungan tadi berat .... Apa semuanya tak apa-apa? Baguslah, aku akan .... “Ikan kering eksotis! MAKANLAH!”"
+      },
+      {
+        "voId": "chr_0038_purrche_combat_battle_defeat_01",
+        "title": "Kalah Bertarung",
+        "text": "Ini salahku .... Aku kurang berusaha keras untuk melindungi semuanya. Lain kali, aku .... Tidak, tak akan kubiarkan ini terulang."
+      },
+      {
+        "voId": "chr_0038_purrche_mono_attack_last_01",
+        "title": "Final Strike 1",
+        "text": "Mundur sekarang!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_attack_last_02",
+        "title": "Final Strike 2",
+        "text": "Kau tak akan lolos!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_skill_nor_01",
+        "title": "Skill Tarung 1",
+        "text": "Aku benar-benar bangun!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_skill_nor_02",
+        "title": "Skill Tarung 2",
+        "text": "YA-HAY! “Serangan datang”"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_skill_nor_03",
+        "title": "Skill Tarung 3",
+        "text": "Jangan berani-berani!"
+      },
+      {
+        "voId": "chr_0038_purrche_combat_skill_comb_ready_01",
+        "title": "Skill Kombo Siap 1",
+        "text": "Purrchena, siap beraksi!"
+      },
+      {
+        "voId": "chr_0038_purrche_combat_skill_comb_ready_02",
+        "title": "Skill Kombo Siap 2",
+        "text": "MAJU, ikan kering eksotis!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_skill_comb_release_01",
+        "title": "Penggunaan Kombo 1",
+        "text": "Ini dia!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_skill_comb_release_02",
+        "title": "Penggunaan Kombo 2",
+        "text": "Tak ada yang boleh merundung teman-temanku!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_attack_extra_01",
+        "title": "Penuntas 1",
+        "text": "Hasta la vista!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_attack_extra_02",
+        "title": "Penuntas 2",
+        "text": "Jangan ketiduran!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_skill_ultimate_01",
+        "title": "Ultimate 1",
+        "text": "Haha! Permintaan maafmu TERLAMBAT!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_skill_ultimate_02",
+        "title": "Ultimate 2",
+        "text": "Hmph! Dasar anak nakal! “Dadah!”"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_skill_ultimate_03",
+        "title": "Ultimate 3",
+        "text": "Kau pantas dapat camilan karena itu!"
+      }
+    ]
+  },
+  "potentials": {
+    "potential1": {
+      "description": "Ultimate <@ba.key>NAUGHTY IS BANNED!</> meningkat: Peluang dasar <@ba.key>Spesial sang Duta</> meningkat menjadi <@ba.vup>{prob:0.0}</> kali nilai aslinya.",
+      "name": "Warm Like the Sun"
+    },
+    "potential2": {
+      "description": "DEF <@ba.vup>+{Def:0}</>, Will <@ba.vup>+{Will:0}</>.",
+      "name": "“Super Energetic”"
+    },
+    "potential3": {
+      "description": "Skill kombo <@ba.key>CAKE OR “PREZZIE”</> meningkat: \n<@ba.key>Bom</>: Pengganda DMG meningkat menjadi <@ba.vup>{atk_scale_boom:0.0}</> kali nilai aslinya. \n<@ba.key>Karya Tangan</>: Radius efek <@ba.vup>+{radiusadd_display:0%}</>. \n<@ba.key>Makanan Penutup Lezat</>: HP treatment meningkat menjadi <@ba.vup>{heal_static_value_fish:0.0}</> kali nilai aslinya.",
+      "name": "Useful “Prezzies”"
+    },
+    "potential4": {
+      "description": "Ultimate <@ba.key>NAUGHTY IS BANNED!</> meningkat: Biaya energi ultimate <@ba.vup>-{1-costvalue:0%}</>.",
+      "name": "After the Feast"
+    },
+    "potential5": {
+      "description": "Ultimate <@ba.key>NAUGHTY IS BANNED!</> meningkat:\nPengganda DMG <@ba.key>Spesial sang Duta</> meningkat menjadi <@ba.vup>{atk_scale_ult:0.0}</> kali nilai aslinya.\n<@ba.key>Spesial sang Duta</>: <#ba.spellvul>Arts Susceptibility</> meningkat menjadi <@ba.vup>{rate_vul:0.0}</> kali nilai aslinya.",
+      "name": "Hot Like a BBQ Fire"
+    }
+  },
+  "arts": {
+    "potential1": {
+      "name": "RAWR!",
+      "author": "黑犬",
+      "description": "Ikan kering eksotis! NYAM! Finyaki! NYAM-NYAM JUGA! Makan yang mana dulu, ya? RAWR! Ngapain dipilih! Kumakan saja dua-duanya dalam sekali gigit!"
+    },
+    "potential3": {
+      "name": "Feline Besar Gemas",
+      "author": "怂松鼠",
+      "description": "“KYAA! Itu si Feline Besar Gemas!” Anak-anak di pusat medis akan mengerumuninya dengan gembira setiap kali dia berkunjung."
+    },
+    "potential5": {
+      "name": "Momen Mimpi Indah",
+      "author": "とびはち",
+      "description": "Purrchena pernah bermimpi tentang kue terbang, sebuah dunia tempat dia bisa meluncurkan dirinya perlahan ke arah awan yang lembut."
+    }
+  }
+}

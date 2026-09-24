@@ -1,6 +1,6 @@
 # Goyfield.moe — Arknights Endfield Tracker
 
-A functional pull tracker and global statistics database for Arknights: Endfield. 
+A pull tracker and database for Arknights: Endfield. 
 
 **Website:** [goyfield.moe](https://goyfield.moe)
 
@@ -29,8 +29,6 @@ The backend API endpoints, parameters, and responses are documented in [`goyfiel
 
 # Installing locally
 
-Since the game and the tracker receive regular updates, here is how you can get the code and keep it up to date.
-
 ### Downloading the project
 * Click the green `Code` button at the top of this page and select `Download ZIP`. Extract the downloaded archive to any convenient folder on your computer.
 
@@ -44,7 +42,7 @@ Make sure you have [Node.js](https://nodejs.org/) (version 20 or higher) and [Po
 
 ### Method 1: Using the launch script (Windows only)
 1. Open the downloaded project folder.
-2. Double-click the launch script (`start2.bat`).
+2. Double-click the launch script (`start.bat`).
 3. It will automatically install the necessary modules, generate the Prisma client, start both servers, and open the site in your browser at `http://localhost:5173`.
 *(Do not close the console window while using the site!)*
 

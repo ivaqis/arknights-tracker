@@ -458,5 +458,45 @@
     "name": "Visitors of Qingbo: Agony",
     "description": "The band of Qingbo Stockaders sing the chorus of blades. No longer yearning for a home unmade, heroic spirit and wild ambitions drove them on to ascend the peak.",
     "featureDesc": " - Defeating the enemy restores some HP to all other enemies and permanently raises their ATK and Max HP.\n\n <@ba.info>- Tacticals and consumables cannot be used.</>\n <@ba.info>- Enemies have the same resistance against every element.</>"
+  },
+  "indie_hard026": {
+    "name": "Feral Carnage of Shadow",
+    "description": "Twisting claws of feral beasts stretched first from the shadows. We later learned that the merciless light left its mark upon their ferocious nature.",
+    "featureDesc": " - An enemy in <@ba.key>Ethereal</> state is immune to DMG and cannot be targeted.\n - Once the battle begins, the Quillbeast Blightshade will enter its <@ba.key>Ethereal</> state and constantly perform ramming attacks. Meanwhile, the Rakerbeast Blightshade will regularly apply <@ba.key>Shield</> on itself. The Quillbeast Blightshade's ramming can shatter this <@ba.key>Shield</>.\n - When the Rakerbeast Blightshade is reduced to a lower HP, it will enter its <@ba.key>Ethereal</> state while the Quillbeast Blightshade's <@ba.key>Ethereal</> state will end. After that, the Rakerbeast Blightshade will regularly cast Thunder Strike on the controlled operator (up to <@ba.key>5</> strikes in total). Thunder Strike DMG cannot be dodged. Applying <@ba.key>Arts Burst</>, <@ba.phy>Breach</>, or <@ba.phy>Crush</> on the Quillbeast Blightshade will create <@ba.key>Lightning Orbs</>. The controlled operator can pick up a <@ba.key>Lightning Orb</> to acquire a shield that blocks the DMG of <@ba.key>1</> Thunder Strike.\n - After the Quillbeast Blightshade is reduced to low HP, its <@ba.key>Ethereal</> state will end. The enemies will then attack together.\n\n <@ba.info>- Enemies have the same resistance against every element.</>"
+  },
+  "indie_hard026_s": {
+    "name": "Feral Carnage of Shadow: Agony",
+    "description": "Twisting claws of feral beasts stretched first from the shadows. We later learned that the merciless light left its mark upon their ferocious nature.",
+    "featureDesc": " - An enemy in <@ba.key>Ethereal</> state is immune to DMG and cannot be targeted.\n - Once the battle begins, the Quillbeast Blightshade will enter its <@ba.key>Ethereal</> state and constantly perform ramming attacks. Meanwhile, the Rakerbeast Blightshade will regularly apply <@ba.key>Shield</> on itself. The Quillbeast Blightshade's ramming can shatter this <@ba.key>Shield</>.\n - When the Rakerbeast Blightshade is reduced to a lower HP, it will enter its <@ba.key>Ethereal</> state while the Quillbeast Blightshade's <@ba.key>Ethereal</> state will end. After that, the Rakerbeast Blightshade will regularly cast Thunder Strike on the controlled operator (up to <@ba.key>7</> strikes in total). Thunder Strike DMG cannot be dodged. Applying <@ba.key>Arts Burst</>, <@ba.phy>Breach</>, or <@ba.phy>Crush</> on the Quillbeast Blightshade will create <@ba.key>Lightning Orbs</>. The controlled operator can pick up a <@ba.key>Lightning Orb</> to acquire a shield that blocks the DMG of <@ba.key>1</> Thunder Strike.\n - After the Quillbeast Blightshade is reduced to low HP, its <@ba.key>Ethereal</> state will end. The enemies will then attack together.\n\n <@ba.info>- Tacticals and consumables cannot be used.</>\n <@ba.info>- Enemies have the same resistance against every element.</>"
+  },
+  "indie_hard027": {
+    "name": "Arc of Shadow Flare",
+    "description": "The broad blade calls down the sundering element to imbue itself. Thus the ghostly images of war and carnage shall continue to shine bright upon this land.",
+    "featureDesc": " - The cooldown of all operator battle skills has been extended by 60s.\n - At the start of battle, all operators will enter a <@ba.key>Conductant</> state, and continuously take <@ba.pulse>Electric DMG</> based on the number of <@ba.pulse>Electric Infliction</> stacks they have.\n - After an operator in the <@ba.key>Conductant</> state casts a battle skill, the YSTF Captain Blightshade applies 1 stack of <@ba.pulse>Electric Infliction</> on all operators. After the YSTF Captain Blightshade applies <@ba.pulse>Electric Infliction</> on operators for the <@ba.key>4th</> time, reset operator battle skill cooldowns, <@ba.key>dispel</> all stacks of <@ba.pulse>Electric Infliction</> from the operators, and apply a <@ba.pulse>Level 4 Electrification</> on the YSTF Captain Blightshade.\n\n <@ba.info>- Enemies have the same resistance against every element.</>"
+  },
+  "indie_hard027_s": {
+    "name": "Arc of Shadow Flare: Agony",
+    "description": "The broad blade calls down the sundering element to imbue itself. Thus the ghostly images of war and carnage shall continue to shine bright upon this land.",
+    "featureDesc": " - The cooldown of all operator battle skills has been extended by 60s.\n - The YSTF Captain Blightshade will regularly apply 1 stack of <@ba.pulse>Electric Infliction</> on all operators.\n - At the start of battle, all operators will enter a <@ba.key>Conductant</> state, and continuously take <@ba.pulse>Electric DMG</> based on the number of <@ba.pulse>Electric Infliction</> stacks they have.\n - After an operator in the <@ba.key>Conductant</> state casts a battle skill, the YSTF Captain Blightshade applies 1 stack of <@ba.pulse>Electric Infliction</> on all operators. After the YSTF Captain Blightshade applies <@ba.pulse>Electric Infliction</> on operators for the <@ba.key>4th</> time, reset operator battle skill cooldowns, <@ba.key>dispel</> all stacks of <@ba.pulse>Electric Infliction</> from the operators, and apply a <@ba.pulse>Level 4 Electrification</> on the YSTF Captain Blightshade.\n\n <@ba.info>- Tacticals and consumables cannot be used.</>\n <@ba.info>- Enemies have the same resistance against every element.</>"
+  },
+  "indie_hard028": {
+    "name": "Sudden Roar of Oblivion",
+    "description": "\"The time is up. Let the endless cycles of oblivion begin.\"",
+    "featureDesc": "- <@ba.key>Operators no longer have SP regeneration</>. \n- After the battle begins, operators' starting SP and Max SP are increased to 1000. \n- Tuskbeast Blightshades and YSTF Vanguard Blightshades will <@ba.key>self-detonate</> after a while, dealing DMG based on Max HP to all operators. \n- The YSTF Glaiver Blightshade must be <@ba.key>interrupted several times</> to stop the casting of his ultimate skill. DMG from this ultimate skill cannot be dodged. \n- When the battle takes too long, the YSTF Glaiver Blightshade will <@ba.key>self-detonate</> and defeat every operator. \n- When enemies become Staggered, their <@ba.key>self-detonation</> timer pauses. \n\n<@ba.info>- Enemies have the same resistance against every element.</>"
+  },
+  "indie_hard028_s": {
+    "name": "Sudden Roar of Oblivion: Agony",
+    "description": "\"The time is up. Let the endless cycles of oblivion begin.\"",
+    "featureDesc": "- <@ba.key>Operators no longer have SP regeneration. Final Strikes and Finisher attacks no longer recover SP</>. \n- After the battle begins, operators' starting SP and Max SP are increased to 1000. \n- Tuskbeast Blightshades and YSTF Vanguard Blightshades will <@ba.key>self-detonate</> after a while, dealing DMG based on Max HP to all operators. \n- The YSTF Glaiver Blightshade must be <@ba.key>interrupted several times</> to stop the casting of his ultimate skill. DMG from this ultimate skill cannot be dodged. \n- When the battle takes too long, the YSTF Glaiver Blightshade will <@ba.key>self-detonate</> and defeat every operator. \n- When enemies become Staggered, their <@ba.key>self-detonation</> timer pauses. \n\n<@ba.info>- Tacticals and consumables cannot be used.</> \n<@ba.info>- Enemies have the same resistance against every element.</>"
+  },
+  "indie_hard029": {
+    "name": "Tri-Aggelated Targeting",
+    "description": "The witnesses remain silent and in pain. When every keepsake becomes but mere illusions, oblivion becomes the only option left to us.",
+    "featureDesc": " - Enemies cannot move but have vastly extended attack ranges.\n\n <@ba.info>- Enemies have the same resistance against every element.</>"
+  },
+  "indie_hard029_s": {
+    "name": "Tri-Aggelated Targeting: Agony",
+    "description": "The witnesses remain silent and in pain. When every keepsake becomes but mere illusions, oblivion becomes the only option left to us.",
+    "featureDesc": " - Enemies cannot move but have vastly extended attack ranges.\n - When an enemy is defeated for the first time, the other enemies gain an ATK boost and faster ATK speeds.\n\n <@ba.info>- Tacticals and consumables cannot be used.</>\n <@ba.info>- Enemies have the same resistance against every element.</>"
   }
 }

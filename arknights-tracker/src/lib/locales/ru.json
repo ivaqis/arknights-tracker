@@ -1340,7 +1340,8 @@
     "arcane": "Премудрость",
     "liino": "Лиино",
     "typhoeus": "Тифея",
-    "endministrator": "Эндминистратор"
+    "endministrator": "Эндминистратор",
+    "purrchena": "Муррчена"
   },
   "weaponsList": {
     "custom_weapon": "Кастомное оружие",
@@ -1422,7 +1423,8 @@
     "farsight": "Дальновидность",
     "bedazzlingNightDebut": "Блестящий ночной дебют",
     "umbraOfFrigidEventide": "Тень закатной стужи",
-    "sufferingsEnd": "Конец страданий"
+    "sufferingsEnd": "Конец страданий",
+    "dessertMoment": "Время десерта"
   },
   "cookies": {
     "title": "Мы используем куки",

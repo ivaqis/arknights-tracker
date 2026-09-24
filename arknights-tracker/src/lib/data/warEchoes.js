@@ -43,28 +43,24 @@ export const warEchoesSeasons = [
                         ]
                     },
                     {
-                        "id": "indie_battletower011",
-                        "hardId": "indie_battletower011_s",
-                        "brutalId": "indie_battletower011_ex",
-                        "name": "Grievously Besieged",
+                        "id": "indie_battletower013",
+                        "hardId": "indie_battletower013_s",
+                        "brutalId": "indie_battletower013_ex",
+                        "name": "Powerful Decapitation",
                         "picPath": "",
                         "enemyIds": [
-                            "eny_0023_aghornb",
-                            "eny_0047_firebat",
-                            "eny_0093_hshog"
+                            "eny_0018_lbtough",
+                            "eny_0054_hsmino"
                         ],
                         "enemyLevels": [
-                            60,
                             60,
                             60
                         ],
                         "hardEnemyLevels": [
                             75,
-                            75,
                             75
                         ],
                         "brutalEnemyLevels": [
-                            90,
                             90,
                             90
                         ]
@@ -105,24 +101,28 @@ export const warEchoesSeasons = [
                 "endTime": "2026-10-08 04:00:00",
                 "stages": [
                     {
-                        "id": "indie_battletower013",
-                        "hardId": "indie_battletower013_s",
-                        "brutalId": "indie_battletower013_ex",
-                        "name": "Powerful Decapitation",
+                        "id": "indie_battletower011",
+                        "hardId": "indie_battletower011_s",
+                        "brutalId": "indie_battletower011_ex",
+                        "name": "Grievously Besieged",
                         "picPath": "",
                         "enemyIds": [
-                            "eny_0018_lbtough",
-                            "eny_0054_hsmino"
+                            "eny_0023_aghornb",
+                            "eny_0047_firebat",
+                            "eny_0093_hshog"
                         ],
                         "enemyLevels": [
+                            60,
                             60,
                             60
                         ],
                         "hardEnemyLevels": [
                             75,
+                            75,
                             75
                         ],
                         "brutalEnemyLevels": [
+                            90,
                             90,
                             90
                         ]
