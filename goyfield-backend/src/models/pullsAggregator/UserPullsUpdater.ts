@@ -51,6 +51,7 @@ export class UserPullsUpdater {
         await this.updateCharPulls(DbBannerType.CHAR_JOINT, this._pulls.jointPulls);
         await this.updateCharPulls(DbBannerType.CHAR_BEGINNER, this._pulls.beginnerPulls);
         await this.updateCharPulls(DbBannerType.CHAR_STANDARD, this._pulls.standardPulls);
+        await this.updateCharPulls(DbBannerType.CHAR_RERUN, this._pulls.rerunPulls);
         await this.updateWeaponPulls(this._pulls.weaponPulls);
 
         await this.writeData();
