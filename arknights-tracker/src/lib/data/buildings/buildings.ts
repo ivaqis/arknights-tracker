@@ -162,5 +162,11 @@ export const buildings: Readonly<Record<string, BuildingData>> = {
         "type": "gasMiner",
         "itemId": "item_port_gas_pump_1",
         "iconId": "icon_port_gas_pump_1"
+    },
+    "vaporizer_1": {
+        "id": "vaporizer_1",
+        "type": "vaporizer",
+        "itemId": "item_port_vaporizer_1",
+        "iconId": "icon_port_vaporizer_1"
     }
 };
