@@ -81,10 +81,6 @@ export class BannersPulls implements IEntityClass<BannersPullsEntity> {
         return this._weaponPulls;
     }
 
-    public get rerunPulls(): CharPull[] {
-        return this._rerunPulls;
-    }
-
     public getStablePullPeriods(): StablePullPeriod[] {
         return StablePullPeriod.create(
             this._specialPulls,
