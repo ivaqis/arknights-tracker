@@ -19,7 +19,7 @@ ENV HOST=0.0.0.0
 
 COPY --from=build /app/build ./build
 COPY --from=build /app/package*.json ./
-COPY entrypoint.sh /app/entrypoint.sh
+COPY --from=build /app/entrypoint.sh /app/entrypoint.sh
 
 RUN npm ci --omit=dev && chmod +x /app/entrypoint.sh && chown -R node:node /app
 
