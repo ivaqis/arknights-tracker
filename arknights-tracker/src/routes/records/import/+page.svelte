@@ -1054,25 +1054,21 @@
             <div
                 class="mt-5 p-4 bg-red-200 dark:text-red-300 text-red-600 dark:bg-[#902E2E] dark:border-[#444444] rounded-lg border border-red-100 flex items-center gap-2 animate-in fade-in slide-in-from-top-2"
             >
-                <Icon name="close" class="w-5 h-5" />
+                <Icon name="error" class="w-5 h-5" />
                 {errorMsg}
             </div>
         {/if}
 
         {#if warningMsg}
-            <div
-                class="mt-5 p-4 bg-amber-200 dark:bg-[#90742E] text-amber-500 border-amber-200/80 dark:border-amber-900/30 rounded-lg border flex items-center gap-2 animate-in fade-in slide-in-from-top-2"
+             <div
+                class="mt-5 p-4 bg-amber-50 dark:bg-amber-800 text-amber-800 dark:text-amber-200 border border-amber-200/80 dark:border-amber-800/40 rounded-lg flex items-center gap-2.5 animate-in fade-in slide-in-from-top-2 text-sm font-medium"
             >
-
                 <Icon
                     name="warning"
-                    class="w-5 h-5"
+                    class="w-5 h-5 text-amber-500 shrink-0"
                 />
-
                 {warningMsg}
-
             </div>
-
         {/if}
 
         <ImportPreviewReport

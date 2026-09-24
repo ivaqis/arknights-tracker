@@ -1335,7 +1335,8 @@
     "arcane": "Arcane",
     "liino": "Liino",
     "typhoeus": "Typhoeus",
-    "endministrator": "Endministrator"
+    "endministrator": "Endministrator",
+    "purrchena": "Purrchena"
   },
   "weaponsList": {
     "custom_weapon": "Custom Weapon",
@@ -1417,7 +1418,8 @@
     "farsight": "Farsight",
     "bedazzlingNightDebut": "Bedazzling Night Debut",
     "umbraOfFrigidEventide": "Umbra of Frigid Eventide",
-    "sufferingsEnd": "Suffering's End"
+    "sufferingsEnd": "Suffering's End",
+    "dessertMoment": "Dessert Moment"
   },
   "cookies": {
     "title": "We use cookies",

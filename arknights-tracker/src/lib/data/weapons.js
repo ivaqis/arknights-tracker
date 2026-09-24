@@ -932,6 +932,18 @@ export const weapons = {
       "crit"
     ]
   },
+  "dessertMoment": {
+    "id": "dessertMoment",
+    "gameId": "wpn_sword_0023",
+    "name": "Dessert Moment",
+    "rarity": 5,
+    "weapon": "sword",
+    "skills": [
+      "attr_str",
+      "attr_heal",
+      "heal"
+    ]
+  },
   "farsight": {
     "id": "farsight",
     "gameId": "wpn_sword_0026",

@@ -1,0 +1,581 @@
+{
+  "baseInfo": {
+    "tags": [
+      "Proteger",
+      "Imp. de nat.",
+      "Trat. de PV"
+    ],
+    "behaviourHateTags": [],
+    "behaviourUnavailableTags": [
+      "Introvertido (SOLO SISTEMA, no visible dentro del juego)"
+    ],
+    "blocTag": "Cámara General de Comercio de Talos-II (C.G.C.T.)",
+    "expertTags": [
+      "Supervivencia al aire libre",
+      "Conocimiento natural"
+    ],
+    "giftPreferTags": [
+      "Selección del viajero de Wuling"
+    ],
+    "hobbyTags": [
+      "Bellas artes",
+      "Caridad"
+    ],
+    "raceTag": "Felino"
+  },
+  "skills": {
+    "basicAttack": {
+      "name": "¡POSTRE! ¡COMAN UN POCO!",
+      "description": "ATAQUE BÁSICO: \nUn ataque con hasta 3 secuencias que inflige <@ba.pd>DAÑ físico</>. Como operador controlado, <#ba.lastcombo>Golpe final</> también inflige <@ba.poise>{poise:0}</> de Tambaleo. \n\nATAQUE DE INMERSIÓN: \nUn ataque básico ejecutado en el aire se convierte en un Ataque de inmersión que inflige <@ba.pd>DAÑ físico</> a los enemigos cercanos. \n\nREMATE: \nEl ataque básico realizado cerca de un enemigo Tambaleado se convierte en un remate que inflige mucho <@ba.pd>DAÑ físico</> y recupera algunos PH.",
+      "batkSeq1Multiplier": "Multiplicador ATQB SEC 1",
+      "batkSeq2Multiplier": "Multiplicador ATQB SEC 2",
+      "batkSeq3Multiplier": "Multiplicador ATQB SEC 3",
+      "finisherAtkMultiplier": "Multiplicador de ATQ de Remate",
+      "diveAtkMultiplier": "Multiplicador ATQ de Inmersión"
+    },
+    "battleSkill": {
+      "name": "¡NO ESTOY DURMIENDO!",
+      "description": "Purrchena levanta su escudo para bloquear un ataque y <#ba.return>devuelve</> PH de inmediato. Mientras el escudo de Purrchena está activo, se otorga <#ba.guard>Protección</> a sí misma y a los operadores cercanos. Durante la habilidad de batalla, el primer bloqueo exitoso prolonga la duración del escudo y <#ba.return>devuelve</> PH adicionales. Tras lanzarla, la habilidad de batalla de Purrchena cambia temporalmente a <@ba.key>¡DEJA EN PAZ A MIS AMIGOS!</>.\n<@ba.key>¡DEJA EN PAZ A MIS AMIGOS!</>: Purrchena le da un cabezazo a un objetivo frente a ella para infligir <@ba.natur>DAÑ por naturaleza</> y aplicar <#ba.naturalinflict>Imposición de naturaleza</>.\n<@ba.info>La Protección otorgada mientras el escudo está levantado se reduce después de cada ataque bloqueado.</>",
+      "protection": "Protección",
+      "shieldUpDurationS": "Duración con escudo levantado (s)",
+      "shieldUpDurationAfterSuccessfulBlockS": "Duración del escudo tras un bloqueo exitoso (s)",
+      "headbuttDmgMultiplier": "Multiplicador de DAÑ de Cabezazo",
+      "headbuttStagger": "Tambaleo por Cabezazo",
+      "spReturn": "Retorno de PH",
+      "additionalSpReturn": "Retorno de PH adicional"
+    },
+    "comboSkill": {
+      "name": "PASTEL O “REGALITO”",
+      "description": "ACTIVADOR DE COMBO: Cuando el operador controlado es atacado.\nLanza una <@ba.key>Caja de regalo</> al operador controlado. La <@ba.key>Caja de regalo</> se abre tras una breve demora, otorga <@ba.heal>Tratamiento de PV</> a los operadores cercanos, revela al azar uno de los siguientes objetos y activa sus efectos:\n<@ba.key>Bomba</>: Inflige <@ba.pd>DAÑ físico</> y causa Tambaleo adicional a los enemigos dentro del área de efecto (ADE).\n<@ba.key>Artesanía</>: Atrae continuamente a los enemigos cercanos e inflige <@ba.pd>DAÑ físico</>.\n<@ba.key>Postre delicioso</>: Otorga <@ba.heal>Tratamiento de PV</> al operador controlado.\nEl atributo de Voluntad aumenta la cantidad de tratamiento de PV.",
+      "baseTreatment": "Tratamiento base",
+      "treatmentIncreasePerWill": "Incremento de tratamiento por Voluntad",
+      "bombDmgMultiplier": "Bomba: Multiplicador de DAÑ",
+      "bombStagger": "Bomba: Tambaleo",
+      "handicraftDmgMultiplier": "Artesanía: Multiplicador de DAÑ",
+      "yummyDessertBaseTreatment": "Postre delicioso: Tratamiento base",
+      "yummyDessertTreatmentIncreasePerWill": "Postre delicioso: Aumento de Tratamiento por Voluntad",
+      "ultimateEnergyGain": "Ganancia de Energía máxima"
+    },
+    "ultimate": {
+      "name": "¡PROHIBIDO PORTARSE MAL!",
+      "description": "Purrchena abre 3 <@ba.key>Regalitos del Gran Felino</>. Cada <@ba.key>Regalito del Gran Felino</> revela al azar una <@ba.key>Bomba</> o una pieza de <@ba.key>Artesanía</>.\nExiste la posibilidad de que el Regalito revele un <@ba.key>Especial de la embajadora</> que aplica <#ba.spellvul>Susceptibilidad a Artes</>, inflige <@ba.pd>DAÑ físico</> y causa Tambaleo adicional a los enemigos.",
+      "bombDmgMultiplier": "Bomba: Multiplicador de DAÑ",
+      "bombStagger": "Bomba: Tambaleo",
+      "handicraftDmgMultiplier": "Artesanía: Multiplicador de DAÑ",
+      "ambassadorsSpecialBaseChance": "Especial de la embajadora: Probabilidad base",
+      "ambassadorsSpecialDmgMultiplier": "Especial de la embajadora: Multiplicador de DAÑ",
+      "ambassadorsSpecialStagger": "Especial de la embajadora: Tambaleo",
+      "susceptibilityDurationS": "Duración de Susceptibilidad (s)",
+      "susceptibility": "Susceptibilidad"
+    },
+    "indicator": {
+      "levels": [
+        "Fuerza del operador +10.",
+        "Fuerza del operador +15.",
+        "Fuerza del operador +15.",
+        "Fuerza del operador +20."
+      ],
+      "name": "Forjado"
+    },
+    "talent1": {
+      "levels": [
+        "Habilidad de batalla <@ba.key>¡NO ESTOY DURMIENDO!</> mejorada: Tras bloquear correctamente un ataque enemigo por primera vez, la habilidad otorga <@ba.vup>{talent_1_usp:0}</> de Energía máxima adicional. La probabilidad de obtener <@ba.key>Especial de la Embajadora</> con la siguiente máxima <@ba.key>¡PROHIBIDO PORTARSE MAL!</> aumenta en <@ba.vup>{talent1_prob_up:0%}</>. Este efecto puede alcanzar <@ba.vup>{talent_1_stack:0}</> acumulaciones.",
+        "Habilidad de batalla <@ba.key>¡NO ESTOY DURMIENDO!</> mejorada: Tras bloquear correctamente un ataque enemigo por primera vez, la habilidad otorga <@ba.vup>{talent_1_usp:0}</> de Energía máxima adicional. La probabilidad de obtener <@ba.key>Especial de la Embajadora</> con la siguiente máxima <@ba.key>¡PROHIBIDO PORTARSE MAL!</> aumenta en <@ba.vup>{talent1_prob_up:0%}</>. Este efecto puede alcanzar <@ba.vup>{talent_1_stack:0}</> acumulaciones."
+      ],
+      "name": "¡Tu disculpa llegó TARDE!"
+    },
+    "talent2": {
+      "levels": [
+        "Al desplegarse en batalla, todos los operadores con PV Máx. del equipo reciben <@ba.vup>{dmg_down:0%}</> menos DAÑ del siguiente golpe que reciban.\nEste efecto solo se puede activar una vez cada <@ba.vup>{cd:0}</> s por cada operador.",
+        "Al desplegarse en batalla, todos los operadores con PV Máx. del equipo reciben <@ba.vup>{dmg_down:0%}</> menos DAÑ del siguiente golpe que reciban.\nEste efecto solo se puede activar una vez cada <@ba.vup>{cd:0}</> s por cada operador."
+      ],
+      "name": "El deber de una embajadora"
+    },
+    "baseSkill1": {
+      "levels": [
+        "Asígnalo a la Sala de recepción para otorgar a los operadores un pequeño Aumento de probabilidad de Pista 2: C.G.C.T. (se activa al asignarlo; los efectos del mismo tipo no se pueden acumular)",
+        "Asígnalo a la Sala de recepción para otorgar a los operadores Aumento de probabilidad de Pista 2: C.G.C.T. (se activa al asignarlo; los efectos del mismo tipo no se pueden acumular)"
+      ],
+      "name": "Embajadora de marca"
+    },
+    "baseSkill2": {
+      "levels": [
+        "Asignar a la Cabina de manufactura para otorgar eficiencia de Producción de materiales de EXP de operador en un +20 %",
+        "Asignar a la Cabina de manufactura para otorgar eficiencia de Producción de materiales de EXP de operador en un +30 %"
+      ],
+      "name": "Postres para el reporte final"
+    },
+    "files": {
+      "main": "NOMBRE CLAVE: Purrchena\nGÉNERO: Femenino\nAUTENTICACIÓN: Cámara General de Comercio de Talos-II (C.G.C.T.)\nFecha de nacimiento: 26 de noviembre\nRAZA: Felino\n[ESTADO DE INFECCIÓN POR ORIPATÍA]\nNegativo a Oripatía, según los informes del examen médico.\n\n[EXAMEN FÍSICO INTEGRAL]\nFUERZA FISIOLÓGICA: Normal\nHABILIDAD DE COMBATE: Excelente\nPERICIA TÁCTICA: Estándar\nASIMILACIÓN DE ARTES DE ORIGINIO: Estándar",
+      "humanResources": "Purrchena, Embajadora de marca de la Fundación de Ayuda para el Síndrome por Impacto Ambiental del Plano del Éter de la Cámara General de Comercio de Talos-II (C.G.C.T.), se encuentra actualmente destinada en Endfield Industries como representante entre Endfield y la C.G.C.T. en el ámbito de la asistencia para el Síndrome del Plano del Éter.\n\nLa primera vez que conocí a Purrchena, su carácter radiante y alegre, así como el hecho en que su personalidad coincidía exactamente con su imagen en pantalla, me dejaron una profunda impresión. Durante nuestras conversaciones, siempre conseguía que los demás operadores de la sala estallaran en carcajadas.\nOtra cosa que me impresionó mucho fue su Síndrome del Plano del Éter. Aunque la fundación de ayuda ya nos había informado de su estado con antelación, cuando se quedó dormida de repente en medio de nuestra conversación, aun así sentí admiración A pesar de padecer su propia enfermedad, decidió seguir ayudando a otros pacientes. Ese espíritu altruista es verdaderamente valioso.\n— Martin Marvin Malen, asistente, División de RR. HH., Endfield Industries",
+      "file1": "Estimada Supervisora Perlica de Endfield Industries, Oficina Comercial y División de Recursos Humanos:\nEspero que se encuentren bien.\nCon el fin de seguir fomentando la comunicación y la cooperación entre nuestras partes en el ámbito de la asistencia para el Síndrome por Impacto Ambiental del Plano del éter, me dirijo a ustedes para recomendar a la Sra. Rosalind para un puesto en la Oficina Comercial de Endfield Industries.\nEn primer lugar, debo explicarles el estado de la Sra. Rosalind. Padece una forma incurable del Síndrome del Plano del éter. El síndrome ataca y daña su sistema nervioso central, lo que provoca que se quede dormida repentinamente y con frecuencia. Sin embargo, pueden tener la certeza de que las mejoras que hemos realizado en su dispositivo de protección personal durante los últimos seis años, junto con la atención médica prolongada que le hemos brindado, garantizan que su trabajo diario no se vea afectado.\nEstoy seguro de que su organización ha oído hablar de la operación de rescate en la que participó la Sra. Rosalind hace cinco años. Según el informe del resumen posterior a la operación, cuando una tormenta regresó repentinamente, el equipo de búsqueda y rescate y los pacientes con Síndrome del Plano del éter no tuvieron más remedio que refugiarse en una cueva. Dado que el plan original era reubicar a los pacientes, los suministros médicos de la operación eran extremadamente limitados. Por fortuna, la Sra. Rosalind había viajado extensamente con sus padres y tratado a pacientes con Síndrome del Plano del éter incluso sin medicamentos, por lo que tenía una experiencia considerable en ese tipo de situaciones. Con su ayuda, el estado de los pacientes no empeoró. Según los informes de los demás miembros del equipo, cuando la tormenta se encontraba directamente sobre la cueva, una CR que bloqueaba la entrada se deslizó hacia afuera. De inmediato tomó una tabla de madera y selló el hueco. Después de que pasó la tormenta, y tras la cobertura de nuestros medios, el nombre de Purrchena comenzó a circular por toda la Franja de la Civilización. Debo admitir que la estrategia de la fundación de ayuda de contar con una representante de los propios pacientes para impulsar las labores de asistencia ha demostrado ser efectiva. Nos ha proporcionado una gran cantidad de casos especiales de gran valor y, al mismo tiempo, ha incrementado considerablemente la demanda de productos farmacéuticos y equipamiento médico de varias compañías.\nCuando recuerdo la primera vez que la conocí, sus prolongados episodios de sueño irregular le habían dejado la mirada vacía y el rostro demacrado. De no haber sido porque el padre adoptivo de la Sra. Rosalind acudió a mí, dado su estado en aquel momento, aunque su Síndrome del Plano del éter no hubiera empeorado, su cuerpo difícilmente habría resistido hasta la edad adulta. Por principios humanitarios, y también como inversión a futuro, le proporcionamos atención médica integral y apoyo educativo. Como resultado, conocemos a fondo sus capacidades profesionales. Creo que, mediante este puente construido por la Sra. Rosalind, ambas partes lograremos una sólida sinergia en la asistencia a los pacientes con Síndrome del Plano del éter.\nSi su organización desea seguir promoviendo la cooperación en el ámbito de la asistencia para el Síndrome por Impacto Ambiental del Plano del éter, estamos preparados para facilitar la comunicación entre nuestras partes en cualquier momento. Gracias por dedicar tiempo a leer esta carta. Esperamos lograr una colaboración más sustancial en el futuro.\nAtentamente\n— H, representante de la Unidad de Negocios del Síndrome del Plano del éter de Highburg Pharmaceuticals LLC, presidente de la Fundación de Ayuda para el Síndrome por Impacto Ambiental del Plano del éter",
+      "file2": "“Estás viendo Frente a frente en primera línea. Nuestra reportera ha llegado al centro médico del Síndrome del Plano del Éter, en el norte de La Fantoma, y se ha puesto en contacto con la Embajadora de marca de la Fundación de Ayuda para el Síndrome por Impacto Ambiental del Plano del Éter. Vayamos ahora en directo al lugar de los hechos. Sra. Purrchena, habla Dinah. ¿Puede oírme desde allí?”\n“¡Sí, hola, Dinah! ¡Hola a todos! Soy Purrchena, la Embajadora de marca de la Fundación de Ayuda para el Síndrome por Impacto Ambiental del Plano del Éter.”\n“Hola, Sra. Purrchena. Todos estamos muy preocupados por este confinamiento de emergencia. ¿Podría decirnos cómo está la situación por allá? He oído que se encontraba allí visitando a pacientes con Síndrome del Plano del Éter cuando ocurrió”.\n“¿Eh? Quiero decir, sííí, podría... pero ¿estás segura de que quieres que hable de eso ahora? Recuerdo que muchos niños ven tu programa”.\n“Ja, ja, ¡no te preocupes! Aquí somos profesionales. Si lo que dices se vuelve demasiado intenso, te avisaremos”.\n“Está bien, porque todos los pacientes que viven aquí se encuentran en estado muy grave. Al que recuerdo con mayor claridad tenía la espalda cubierta de heridas que parecían cortes hechos por un cuchillo. Vi a un médico tocar una de ellas con un fragmento de Originio, y la herida comenzó a retorcerse y deformarse”.\n“Eso es bastante peculiar... y también aterrador. ¿Podría explicarnos con más detalle el Síndrome por Impacto Ambiental del Plano del Éter? En este momento realmente no sabemos mucho al respecto”.\n“Um... Bueno, es más o menos lo que dicen los libros de texto. Si entráramos en más detalles, hasta nosotros tendríamos que leer varios libros muy gruesos solo para entenderlo un poco. Pero, en palabras de uno de los investigadores de la fundación de ayuda, no es tanto una enfermedad en el sentido tradicional, sino un fenómeno singular que se manifiesta cuando los entornos del Plano del éter afectan al cuerpo humano”.\n“Ya veo. Entonces, ¿este confinamiento repentino se debe realmente a un paciente con Síndrome del Plano del Éter, tal como afirma el comunicado oficial?”\n“Correcto.”\n“Entonces, ¿qué ocurrió exactamente? Hay rumores de que ocurrió algo similar al fenómeno de desintegración observado en pacientes con Oripatía positiva”.\n“¡No del todo! La desintegración ocurre después de que un paciente muere, pero el Síndrome del Plano del Éter no funciona así. Estaba hablando con él hace apenas un momento y, en un instante, él estaba... Menos mal que yo era la única persona en la sala de aislamiento en ese momento. *Suspiro*... Aunque el sistema de monitoreo del estado de los pacientes del centro médico es muy completo, no puede hacer absolutamente nada ante este tipo de situaciones”.\n“Ahh... Entonces, ¿parece que la evolución del Síndrome del Plano del Éter es muy difícil de predecir?”\n“Esa es la parte más difícil de tratar a estos pacientes. Y el grado de imprevisibilidad varía según el caso. A veces, el estado empeora repentinamente. A veces, los síntomas cambian de forma abrupta”.\n“¿Los síntomas pueden cambiar?”\n“Sí. Tómame como ejemplo. Ahora mismo, el síntoma de Purrchena es quedarse dormida en cualquier momento. Pero, si Purrchena entrara en un entorno de gran profundidad sin el equipamiento de protección adecuado, podría acabar desvaneciéndose como una persona en la pantalla de un terminal portátil averiado. O podría aparecer otra Purrchena, visible pero intangible, que saludara y agitara la mano ante todos, mientras la verdadera Purrchena yace como dormida y no puede despertar por mucho que la llamen. Por supuesto, este riesgo no solo afecta a los pacientes, sino también a cualquier persona común que entre en un entorno de gran Profundidad”.\n“Realmente es una enfermedad impredecible. Por lo tanto, ¡todos deben asegurarse de llevar correctamente su equipamiento de protección antes de entrar en cualquier entorno de gran Profundidad!”\n“¡Exactamente! Si por algún motivo tienen que entrar en un entorno de gran Profundidad, asegúrense de llevar correctamente su equipamiento de protección. Y, por supuesto, ¡eviten los entornos de gran Profundidad salvo que sea absolutamente necesario!”\n“Gracias por el recordatorio, Sra. Purrchena. Para concluir la entrevista, ¿hay algo más que quiera decirle a nuestra audiencia?”\n“Oooooh, claro que sí. Aunque todavía no podemos curar el Síndrome del Plano del Éter, no entren en pánico. Mientras no entren en contacto con entornos de gran Profundidad, no corren el riesgo de contraerlo. Y, por favor, no traten como monstruos a los pacientes que los rodean. El Síndrome del Plano del Éter no es... no es... contagioso...”\n“¿Sra. Purrchena? Eh... ¿Sra. Purrchena?”\n“...*BIP*”\n“Eh... Parece que estamos experimentando algunas dificultades técnicas. A continuación, hablaremos con...”",
+      "file3": "\"……\nLa Fantoma. No creo que sea necesario repetir lo bien que el Grupo Siesta administra esta ciudad libre ni explicar cuánta vitalidad le ha infundido la Cámara General de Comercio de Talos-II. Pero antes de hablar de la ciudad libre de La Fantoma, quisiera mencionar a una amiga que conocí durante este viaje y que me ayudó enormemente a escribir este capítulo sobre La Fantoma.\nComo hacía al llegar a cualquier otra ciudad, entré en un centro comercial para decidir adónde ir después, uno como cualquier otro centro comercial de La Fantoma. El edificio estaba repleto de negocios de toda la Franja y, en medio de todo, había un mercado al aire libre lleno de clientes y vendedores ambulantes. Elegí un puesto de bebidas con una buena vista y apenas me había sentado cuando vi una “mascota Felina blanca” imposible de pasar por alto. Al principio pensé que era el personaje disfrazado de alguna tienda, pero, al observarla mejor, vi que no intentaba atraer clientes. Simplemente estaba allí, contemplando el escaparate de una tienda de postres, mientras los transeúntes la saludaban afectuosamente, como si todos en la ciudad la conocieran.\nPara conocer mejor la cultura de la ciudad, me acerqué y la saludé. Solo después de confirmar repetidas veces que yo no era un reportero sensacionalista que intentaba desenterrar secretos, como si la Fundación de Ayuda para el Síndrome por Impacto Ambiental del Plano del éter había firmado algún acuerdo clandestino con compañías farmacéuticas, me dijo quién era. Disculpen que no esté familiarizado con los diversos representantes y nombres clave de las empresas, fundaciones y departamentos administrativos de la C.G.C.T. No fue sino hasta que nos separamos que descubrí exactamente qué caracteres componían el nombre Purrchena. Cuando supo que estaba allí para documentar la vida cotidiana de La Fantoma y escribir una guía de viaje, dio saltitos de alegría, me condujo fuera del centro comercial y asumió el papel de guía. Todas las recomendaciones gastronómicas que aparecen más adelante en este capítulo fueron recopiladas bajo la orientación de la Sra. Purrchena. Quizá fueron sus explicaciones vívidas y animadas, especialmente cuando se quedaba dormida de repente a mitad de una frase y luego despertaba, se rascaba la cabeza, se disculpaba y continuaba, las que lograron que incluso lugares como la sede de la C.G.C.T. resultaran interesantes.\n...…\nCuando le pregunté qué opinaba de La Fantoma y las demás ciudades libres, se limitó a sonreír y dijo que me llevaría a un lugar divertido; después me alejó de las bulliciosas calles y me condujo hasta la playa. La multitud pronto nos separó, pero no tardé en encontrarla de nuevo siguiendo a las personas que formaban poco a poco un círculo a su alrededor. Estaba sentada sobre la arena, moviendo la cabeza al ritmo de la música y cambiando de vez en cuando las expresiones de la pantalla electrónica de su rostro para asustar a los niños que trepaban sobre ella y jugaban a su alrededor. Aunque todavía estaba a cierta distancia, sus risas llegaban hasta mis oídos a través de la música. Los demás sacaban sus cámaras para tomar fotos o se unían al alboroto de los niños y bailaban al ritmo de la melodía. Estaba rodeada de alegría y risas. Después de que la multitud se dispersara y los niños se despidieran de ella a regañadientes bajo la supervisión de sus padres, por fin pude acercarme. Noté que se había quedado dormida otra vez, pero aún balanceaba suavemente la cabeza. Me senté a su lado y escuché su respiración apacible. Debía de estar teniendo un hermoso sueño.\n— Prefacio del capítulo sobre La Fantoma de Talos-II bajo nuestros pies, acompañado de una fotografía de Purrchena jugando con unos niños.\"",
+      "file4": "2 de noviembre del año 145, cielo despejado. Hoy mamá condujo la CR hasta un lugar donde había muchas otras casas rodantes estacionadas. Los tíos y las tías de allí ayudaron a mamá a mejorar nuestra CR, y ahora es tan grande y cómoda que hasta dormir directamente en el suelo se siente genial. Ya no tengo que preocuparme por lastimarme si me desplomo de repente. Los tíos y las tías también me dieron un bocadillo muy, muy rico. Creo que se llamaba aleta exótica deshidratada. Je, cuando sea grande, compraré tanta aleta exótica deshidratada que podré llenar por completo nuestra CR.\n...…\n7 de mayo del año 146, de nieve a cielo despejado. Mamá y algunos tíos y tías condujeron una caravana de casas rodantes hasta una ciudad en las montañas nevadas. Menos mal que la CR era cálida y acogedora. Mamá y yo no sentimos nada de frío. Je, que papá salga solo a buscar tesoros. Esta vez, papá encontró un hueso de máquina. ¡Dijo que, cuando terminara de repararlo, podría salir a jugar con los demás niños!\n......\n23 de junio del año 146, de nublado a lluvioso. Al hueso de máquina no parecía gustarle la lluvia. Se quedó allí bajo la lluvia y dejó de moverse. Por suerte, los demás niños que vinieron llevaban paraguas y se quedaron conmigo bajo la lluvia mientras esperábamos a mamá y papá. Pero no recuerdo muy bien qué ocurrió después. Creo que tuve un sueño. Soñé que montaba una Bestia de carga voladora y visitaba muchísimos lugares. Cuando desperté, mamá me abrazaba y lloraba por algún motivo. Papá parecía culpar al hueso de máquina. Intenté consolar a mamá, pero ella lloró todavía más. Odio quedarme dormida...\n...…\n16 de julio del año 146, cielo despejado. Regresamos a este lugar donde hacen películas. Aquí hay muchísima ropa hermosa. Este es mi lugar favorito. Acababa de ayudar a los tíos y las tías a bajar las cajas de la CR cuando papá regresó con un tío vestido de forma muy elegante. El tío no era tan ágil como yo. Aunque nuestra CR era tan grande que cabría todo Talos-II dentro, él aun así tenía que avanzar con mucho cuidado por su interior. Mamá también estaba muy feliz hoy. Sacó mucha de la comida rica que normalmente reservamos para nuestros cumpleaños.\n......\n20 de agosto del año 146, nublado. Esta CR no era como la de mamá. Estaba muy limpio por dentro, con muchas cajas metálicas; era estrecho y frío. También había muchos tíos y tías con batas blancas. Todos me sonreían, pero yo no me sentía nada feliz. El tío que conocía papá me dio una cajita extraña. Podía oír las voces de mamá y papá dentro de ella, pero, cuando desarmé la caja, no los encontré por ningún lado...\n......\n18 de diciembre del año 146, cielo despejado. Hoy fue la primera vez que participé en una misión de rescate. Todos mis compañeros de equipo eran rostros conocidos. La CR era estrecha, pero todos conversaban y reían. ¡Me gustó mucho el ambiente! Pero algunos directores de la fundación de ayuda pensaron que era demasiado peligroso que fuera a un lugar así y dijeron que ya no me permitirían participar en operaciones de rescate de ese nivel. ¡Estoy furiosa! La misión salió a la perfección, y no fue culpa mía que la tormenta regresara de repente. Aun así, cuando terminó la operación, pude ver a mamá y papá. Incluso ayudé a mamá a llevar a los pacientes a la ciudad más cercana para recibir tratamiento. Oye, ¿cuándo fue la última vez que los vi?\n......\n7 de noviembre del año 151, cielo despejado. Llegaremos a nuestro destino mañana. El tiempo vuela. Siento como si apenas ayer hubiera recibido la carta de respuesta de Endfield Industries. ¿Cómo será realmente Endministrator? ¿De verdad es como dicen los libros de texto? Aaaay, ¡qué aburrido! Esta CR está completamente vacía, no hay absolutamente nada dentro. Ah, y hoy me encontré con mamá y papá. Transportaban suministros desde La Fantoma hasta el Valle IV. Nos tomamos una foto juntos, así podrán verme en ella y no extrañarme demasiado. Pero, aunque la CR de mamá está decorada exactamente igual que cuando yo era pequeña, ¿por qué siento que algo cambió?"
+    },
+    "tags": {
+      "expert1": {
+        "name": "Supervivencia al aire libre",
+        "description": "Supervivencia al aire libre: Traje de peluche\nNo sabes nada sobre los dispositivos ocultos en su traje de peluche. Y definitivamente tampoco sabrías si está acurrucada en algún lugar comiendo un bocadillo."
+      },
+      "expert2": {
+        "name": "Conocimiento natural",
+        "description": "Conocimiento de la naturaleza: Alumna ejemplar y dormilona\nSus compañeros de clase están desconcertados. A menudo se quedaba dormida durante las lecciones y las clases, pero nadie podía superarla en los exámenes."
+      },
+      "hobby1": {
+        "name": "Bellas artes",
+        "description": "Bellas artes: Taller de postres\nNadie sabe más de postres que ella. Evidentemente, esto no es una exageración."
+      },
+      "hobby2": {
+        "name": "Caridad",
+        "description": "Caridad: La mejor embajadora\n“¿Embajadora? Ah, hablas de Purrchena. Nos ayudó muchísimo. Mira. ¡Preparamos todos estos bocadillos para ella como muestra de nuestro agradecimiento!”."
+      }
+    },
+    "voiceLines": [
+      {
+        "voId": "chr_0038_purrche_chrbark_squad_01",
+        "title": "Preparación para la operación 1",
+        "text": "Es mi turno... “¡Miau-holi!”...Uf, ¡¿cómo que volví a quedarme dormida?!"
+      },
+      {
+        "voId": "chr_0038_purrche_chrbark_squad_02",
+        "title": "Preparación para la operación 2",
+        "text": "Nnn... ¡Ah! ¿Ya es hora de la misión?"
+      },
+      {
+        "voId": "chr_0038_purrche_chrbark_join_01",
+        "title": "Añadir al equipo 1",
+        "text": "¿Quién tiene sueño? ¡Yo no!"
+      },
+      {
+        "voId": "chr_0038_purrche_chrbark_join_02",
+        "title": "Añadir al equipo 2",
+        "text": "Ya tengo mis malvaviscos y mi aleta exótica deshidratada... ¡Bien, estoy lista!"
+      },
+      {
+        "voId": "chr_0038_purrche_chrbark_weap_01",
+        "title": "Cambiar de arma",
+        "text": "¡Oh, qué buen agarre! ¡Si la uso como brocheta para bocadillos, podré mantener mi traje esponjoso completamente limpio!"
+      },
+      {
+        "voId": "chr_0038_purrche_chrbark_gear_01",
+        "title": "Cambiar de equipamiento",
+        "text": "Vaya, en realidad combina con mi traje... “¡Aleta exótica deshidratada! ¡ÑAM, ÑAM!”...Espera, ¿qué está pasando? ¡Todavía no estoy dormida!"
+      },
+      {
+        "voId": "chr_0038_purrche_chrup_skill_01",
+        "title": "Activación de Nodo de talento",
+        "text": "Mmm... ¡AHH! ¡Ya lo tengo! La solución del experimento de patología es... Espera, ¿qué? ¡¿Adónde se fue esa idea?!"
+      },
+      {
+        "voId": "chr_0038_purrche_chrup_level_01",
+        "title": "Visualización de registros de combate",
+        "text": "La C.G.C.T. nunca me enseñó nada parecido. Vaya... ¡No sabía que se podía hacer eso!"
+      },
+      {
+        "voId": "chr_0038_purrche_chrup_promt01_01",
+        "title": "Ascenso de operador 1",
+        "text": "¡Oh, un ascenso! En la Fundación de Ayuda, estas celebraciones significaban una sola cosa: montones de pasteles... ¿Qué? ¿Aquí no preparan pasteles para celebrar?"
+      },
+      {
+        "voId": "chr_0038_purrche_chrup_promt02_01",
+        "title": "Ascenso de operador 2",
+        "text": "¿En serio? ¡Sí! No puedo esperar para contárselo a mamá, a papá y a todos en casa. Van a... van a estar... muy felices por mí... “¡Nos vemos!”"
+      },
+      {
+        "voId": "chr_0038_purrche_chrup_promt03_01",
+        "title": "Ascenso de operador 3",
+        "text": "¡¿Otro ascenso?! ¡Si estoy soñando, no me despierten! Me aseguraré de que todos estén sanos y salvos. ¡Déjenmelo a mí!"
+      },
+      {
+        "voId": "chr_0038_purrche_chrup_promt04_01",
+        "title": "Ascenso de operador 4",
+        "text": "A veces pienso en cómo sería mi vida si nunca hubiera partido a La Fantoma con la Fundación de Ayuda... Jum. ¡Sin importar dónde hubiera terminado, seguiría siendo yo y siempre ayudaría a los demás!"
+      },
+      {
+        "voId": "chr_0038_purrche_introduce_01",
+        "title": "Operadora reportándose al deber",
+        "text": "¡Saludos, Endmin! ¡Soy la Embajadora de marca de la Fundación de Ayuda para el Síndrome por Impacto Ambiental del Plano del éter: Purrchena! Mi sueño es ser... alguien como t... “¡Embajadora de marca de la Fundación de Ayuda para el Síndrome por Impacto Ambiental del Plano del éter: Purrchena!”... *jadeo* no, no, no, ¡volví a quedarme dormida!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_switch_01",
+        "title": "En espera 1",
+        "text": "¡Hola, Endmin! ¡Estoy bien despierta!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_switch_02",
+        "title": "En espera 2",
+        "text": "¡Mira mis bocadillos! ¿Quieres un poco, Endmin?"
+      },
+      {
+        "voId": "chr_0038_purrche_sim_assign_work_01",
+        "title": "Asignando a una instalación",
+        "text": "No te preocupes si de repente me quedo dormida. ¡Mi traje tiene un piloto automático muy inteligente!"
+      },
+      {
+        "voId": "chr_0038_purrche_sim_hello_lower_01",
+        "title": "Saludo 1",
+        "text": "¡Hola, Endmin! ¿Qué tal un poco de aleta exótica deshidratada?"
+      },
+      {
+        "voId": "chr_0038_purrche_sim_hello_max_01",
+        "title": "Saludo 2",
+        "text": "“¡Nos vemos!”... ¿Eh? ¡Oh, Endmin! ¡Hola!"
+      },
+      {
+        "voId": "chr_0038_purrche_sim_talk_lv01_01",
+        "title": "Charla casual en la Dijiang 1",
+        "text": "¡Vaya, la Dijiang es muy diferente de mi hogar! ¡Aquí se puede ver todo Talos-II y hay aparatos llamativos que no reconozco! ¡Solo había leído sobre cosas así! ¡Es increíble!"
+      },
+      {
+        "voId": "chr_0038_purrche_sim_talk_lv02_01",
+        "title": "Charla casual en la Dijiang 2",
+        "text": "¡Hola, Endmin! ¿Qué? ¿Los operadores del comedor dijeron que estaba siendo demasiado modesta? ¡¿En serio?! No quería parecer demasiado glotona. ¡ESPERA! ¡¿Es una barra libre de bocadillos?! ¡YUJUUU! ¡Barra de bocadillos! ¡Allá voy!"
+      },
+      {
+        "voId": "chr_0038_purrche_sim_talk_lv02_02",
+        "title": "Charla casual en la Dijiang 3",
+        "text": "¡Endmin, regresé de ayudar a otros pacientes! ¡Les conté historias sobre Endfield a los niños y les ENCANTARON! ¿Qué clase de historias? Sí, son sobre... sobre... “¡Aleta exótica deshidratada! ¡ÑAM, ÑAM!” “ME ENCANTA la aleta exótica deshidratada”."
+      },
+      {
+        "voId": "chr_0038_purrche_sim_talk_max_01",
+        "title": "Charla casual en la Dijiang 4",
+        "text": "¡Endmin! ¡Yo misma asé este malvavisco! ¿Por qué está quemada solo la mitad? Ah, je, je... Sí, creo que me quedé dormida accidentalmente junto al fuego..."
+      },
+      {
+        "voId": "chr_0038_purrche_sim_talk_max_02",
+        "title": "Charla casual en la Dijiang 5",
+        "text": "Nnn... Tengo tanto sueño... Ocuparme de esas tercas bestias de carga fue un verdadero entrenamiento. ¿Oh? ¿Por qué fui sola? Bueno, ¡ayudar a otros pacientes con Síndrome del Plano del Éter es lo que hago! ¡Je, je!"
+      },
+      {
+        "voId": "chr_0038_purrche_sim_talk_max_03",
+        "title": "Charla casual en la Dijiang 6",
+        "text": "¿Por qué me gustan tanto los bocadillos? Porque comer bocadillos me relaja mucho... es como flotar entre las nubes... “¡Saludos! ¡Soy Purrchena!”"
+      },
+      {
+        "voId": "chr_0038_purrche_sim_gift_give_01",
+        "title": "Ofrecer obsequios",
+        "text": "¡Tarán! Elegí personalmente este regalo, ¡así que te garantizo que estará delicioso! ¡Confía en mí, Endmin! ¡No encontrarás a una experta en bocadillos mejor que yo! ¡Conozco los mejores secretos del mundo de los bocadillos!"
+      },
+      {
+        "voId": "chr_0038_purrche_sim_gift_recv_01",
+        "title": "Aceptar obsequios",
+        "text": "Oh, muchas gracias, Endmin... *jadeo*, ¡Casi vuelvo a quedarme dormida! Uf... Menos mal que no se me cayó."
+      },
+      {
+        "voId": "chr_0038_purrche_mono_self_line01",
+        "title": "Diálogo de confianza 1",
+        "text": "Cuando estudiaba en La Fantoma, mis libros de texto describían muchos logros de Endfield. Así fue como conocí el compromiso de Endfield con la prevención de enfermedades causadas por el Éter... El Éter ambiental de Talos-II puede provocar trastornos poco comunes en las personas. De verdad quiero hacer mi parte y ayudar a otras personas afectadas. Mis amigos de la Fundación de Ayuda escribieron excelentes cartas de recomendación para mí, ¡y así fue como terminé aquí!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_self_line02",
+        "title": "Diálogo de confianza 2",
+        "text": "¡Hola! ¿Un artículo mencionó a la “embajadora de marca de la Fundación de Ayuda para el Síndrome por Impacto Ambiental del Plano del Éter”? Ah, sí, era yo, pero el artículo exagera muchísimo... No crucé montañas a pie con una persona afectada a cuestas. Mamá y yo simplemente lo llevamos al hospital en nuestra CR. ¿Por qué mis padres no son Felinos? Buena pregunta. Probablemente porque mis abuelos tampoco eran Felinos."
+      },
+      {
+        "voId": "chr_0038_purrche_mono_self_line03",
+        "title": "Diálogo de confianza 3",
+        "text": "¿Mi traje es divertido? Papá me construyó el primero cuando era pequeña. Reparó un exoesqueleto desechado y lo cubrió con tela de peluche para mantenerme a salvo si me quedaba dormida. Ese traje viejo fallaba muchísimo, pero todavía lo tengo guardado en mi departamento de La Fantoma. ¿Y el que llevo puesto? Ejem. ¡Este es de última generación! Los técnicos de la Fundación de Ayuda siempre le añaden mejoras geniales. ¡Esta cosa tiene montones de tecnología llamativa en su interior!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_self_line04",
+        "title": "Diálogo de confianza 4",
+        "text": "Una vez me quedé dormida durante un examen importante y desperté para encontrar el lugar sumido en el caos. ¡El supervisor y mis compañeros de examen gritaban pidiendo ayuda! Solo sabían que tenía un síndrome poco común y creyeron que estaba en coma. Después entraron en pánico porque no podían abrir mi traje a la fuerza. El pobre supervisor incluso se cayó y se lastimó... ¿Cómo me fue en el examen? Bueno, entregué mi examen a medio terminar para llevar rápidamente al supervisor a la enfermería de la escuela. Podría haber obtenido la mejor calificación de la clase."
+      },
+      {
+        "voId": "chr_0038_purrche_mono_self_line05",
+        "title": "Diálogo de confianza 5",
+        "text": "Mamá me recogió en las tierras salvajes mientras entregaba suministros en su CR... Solían pasar tiempo conmigo contando estrellas y jugando. Después de que la Fundación de Ayuda diagnosticara mi raro síndrome, mamá y papá me llevaron a La Fantoma para que pudiera recibir tratamiento mientras trabajaba como mascota de la Fundación. Pronto descubrí que no era la única que sufría el Síndrome del Plano del Éter. Jeje. ¡Me alegra mucho poder ayudar a tantas personas como yo!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_chat_line01",
+        "title": "Charla 1",
+        "text": "Nada supera a la aleta exótica deshidratada, pero el finyaki de Neo Tsukushi también es asombroso. Visité a otros pacientes con el síndrome en la ciudad durante un viaje de la Fundación de Ayuda. Todos me dijeron que Neo Tsukushi tiene el finyaki más auténtico. Tenían razón, pero ahora todos los finyaki que no son de Tsukushi me saben mal. Tengo muchas ganas de volver... Mmm, bueno, ¡supongo que por ahora me conformaré con mi aleta exótica deshidratada!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_chat_line02",
+        "title": "Charla 2",
+        "text": "¿Un robot de peluche? ¡NI HABLAR! ¡En Talos-II no existen robots como yo! Y aunque lo hicieran, ¡no se parecerían en nada a mí! Endmin, ¿te creíste esos rumores? ¡Mis sonidos electrónicos! ¡Escucha, NO están sintetizados! Solo los grabé con anticipación para que la gente sepa cuándo me estoy quedando dormida. ¡Mira! Te reproduciré algunos... “¡Saludos!”. “¡Nos vemos!”. “¡Aleta exótica deshidratada! ¡ÑAM, ÑAM!”. “¿Acaso Endmin esconde bocadillos detrás de esa máscara?”. ¡Agh! ¡Detente! ¡Esa línea no debía grabarse!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_chat_line03",
+        "title": "Charla 3",
+        "text": "¿Cómo tomo mis medicamentos? Papá equipó este traje con un dispensador programado y mis amigos de la C.G.C.T. perfeccionaron la tecnología. ¿Cómo ingiero alimentos y me limpio? Mmm... ¡Los técnicos de la Fundación de Ayuda instalaron un sistema de limpieza que elimina cualquier migaja que se me caiga por accidente! Para comer, solo hago esto: Aaaaah... ¡ÑAM!... ¡KYAAA! ¡JO-JO-JOOO...! *Gluglú* Fuuu. ¡Estoy viva! El agua fría me salvó... El calor casi me mata... Bueno. Así es como funciona todo, Endmin."
+      },
+      {
+        "voId": "chr_0038_purrche_mono_chat_line04",
+        "title": "Charla 4",
+        "text": "¿Mi apariencia? Purrchena se ve como Purrchena, suavecita y amorosita... ¿Mi verdadera apariencia bajo el traje? Oh, ¡parece que alguien siente curiosidad por mis secretos! ¡Jrrrrm! ¡Purrchena está hecha de algodón de azúcar! Je, je. Es broma. En realidad solo soy... Me... siento... un poquito... “¡Aleta exótica deshidratada! ¡PRUEBA UN POCO!”"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_chat_line05",
+        "title": "Charla 5",
+        "text": "¡Claro, claro! ¡Mi atuendo es todo un éxito! Todos, desde el personal de la Fundación de Ayuda hasta los amigos a quienes ayudé y los Endfielders que me ayudaron, simplemente ADOOOORAN abrazarme. Sobre todo en los días fríos. Todos me dicen lo mismo: “¡Eres tan suave y cálida, Purrchena! ¡Es como abrazar un pedacito del sol!”"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_about_line01",
+        "title": "Tema: Síndrome del Plano del éter",
+        "text": "Solía ir a todo tipo de lugares para visitar a otros pacientes necesitados. Algunos padecían lo mismo que yo, pero hubo otros... Bueno, los cirujanos de la Fundación de Ayuda me dijeron que no podían hacer nada con nuestra tecnología médica actual. Recuerdo que visité con el equipo un centro de atención para el Síndrome del Plano del éter y yo simplemente... *Suspiro*. Me hizo comprender lo afortunada que soy por tener este traje. Me mantiene de pie en lugar de postrada en una cama... Solo espero haber marcado una diferencia para ellos."
+      },
+      {
+        "voId": "chr_0038_purrche_mono_about_line02",
+        "title": "Tema: La Fantoma",
+        "text": "¡La gente de La Fantoma es muy cálida! No se parece en nada a otros lugares. No hay desiertos ni barricadas de los Rompesuelos... ¡Solo parques enormes, el océano y animados festivales de música! Por supuesto, los bocadillos de La Fantoma son mis favoritos. Tampoco podía distinguir a las personas con Oripatía de las demás... *Suspiro*. Ojalá pudiéramos controlar el Síndrome del Plano del éter como hicimos con la Oripatía."
+      },
+      {
+        "voId": "chr_0038_purrche_mono_about_line03",
+        "title": "Tema: Casa rodante",
+        "text": "Cuando era pequeña, la CR me parecía gigantísima. Mamá la condujo por todo el mundo con papá y conmigo. Vi montañas nevadas, desiertos, bosques y lagos gigantes. Era pequeña, pero fuerte, y ayudaba a la gente a cargar y descargar montones de mercancías de nuestra CR. Les caía muy bien y me regalaban muchos dulces. Creía que ni todos los bocadillos de Talos-II bastarían para llenar la CR de mamá... Pero ahora parece más pequeña."
+      },
+      {
+        "voId": "chr_0038_purrche_mono_about_line04",
+        "title": "Tema: El Clan de los Rompehuesos",
+        "text": "¡Endmin, no lo entiendo! ¿Por qué los Rompesuelos se expondrían al Éter...? Es una locura... y su desvarío es un síntoma clásico del Síndrome del Plano del éter... ¿Por qué se harían eso? ¿Por qué se enferman a propósito? ¿Con aquello mismo que luchamos tanto por detener? ¿Qué? ¿Me puse demasiado seria? No, es solo que... Uf. ¡Me hace enojar muchísimo! ¡Estoy superenojada!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_about_line05",
+        "title": "Tema: ¡Aleta exótica deshidratada!",
+        "text": "Aleta exótica deshidratada, ñam, ñam... Dulce... picante... ácida... ¿E-Endmin? Yo... Estoy completamente dormida ahora mismo, para que lo sepas. Zzz... “¡Aleta exótica deshidratada! ¡ÑAM-ÑAM!”"
+      },
+      {
+        "voId": "chr_0038_purrche_explore_point_common_01",
+        "title": "Recurso/Coleccionable detectado 1",
+        "text": "¡Oh! ¡Hay algo brillante por allá! ¡Por favor, dime que es un bocadillo!"
+      },
+      {
+        "voId": "chr_0038_purrche_explore_point_valub_01",
+        "title": "Recurso/Coleccionable detectado 2",
+        "text": "¡Oh, mira esto! Je, je, ¿qué crees que encontraremos dentro?"
+      },
+      {
+        "voId": "chr_0038_purrche_explore_find_locked_01",
+        "title": "Zona inexplorada detectada",
+        "text": "¿Mmm? ¿Hay algo brillando por allá?"
+      },
+      {
+        "voId": "chr_0038_purrche_explore_find_danger_01",
+        "title": "Enemigo poderoso descubierto",
+        "text": "Ay, ese se ve supermalvado... ¡Pero mantendré a todos a salvo!"
+      },
+      {
+        "voId": "chr_0038_purrche_interact_mine_valub_01",
+        "title": "Minería 1",
+        "text": "¡Mi traje de peluche es más resistente de lo que parece!"
+      },
+      {
+        "voId": "chr_0038_purrche_interact_mine_valub_echo2_01",
+        "title": "Minería 2",
+        "text": "¡Déjame ayudar! Mi traje tiene poder infini... infinito... “¡Nos vemos!”"
+      },
+      {
+        "voId": "chr_0038_purrche_interact_treasure_valub_01",
+        "title": "Abriendo una caja",
+        "text": "¡Oh, qué gran hallazgo...! Podría haber bocadillos aquí dentro."
+      },
+      {
+        "voId": "chr_0038_purrche_interact_etherium_01",
+        "title": "Adquiriendo Aurileno",
+        "text": "He leído sobre los Aurilenos en “Ciencias ambientales de Talos-II”... Ay, míralo: ¡es tan brillante y bonito! Es igualito al de las imágenes, jeje."
+      },
+      {
+        "voId": "chr_0038_purrche_interact_blight_break_01",
+        "title": "Eliminando la Plaga",
+        "text": "Listo... Ahora tanto las personas como las bestias de carga están a salvo."
+      },
+      {
+        "voId": "chr_0038_purrche_interact_rest_01",
+        "title": "Descanso",
+        "text": "¡Todavía tengo energía! De hecho, estoy superemocionada..."
+      },
+      {
+        "voId": "chr_0038_purrche_combat_suppuse_using_01",
+        "title": "Uso de item táctico 1",
+        "text": "¡Toma esto! ¡No te duermas!"
+      },
+      {
+        "voId": "chr_0038_purrche_combat_suppuse_getheal_01",
+        "title": "Uso de item táctico 2",
+        "text": "¡De vuelta a la vida!"
+      },
+      {
+        "voId": "chr_0038_purrche_combat_remind_danger_01",
+        "title": "Advertencia de peligro",
+        "text": "¡Peligro! ¡Pónganse detrás de mí ahora!"
+      },
+      {
+        "voId": "chr_0038_purrche_combat_hurt_lowhp_01",
+        "title": "Herido",
+        "text": "Uf... Esto empieza a sentirse como un sueño..."
+      },
+      {
+        "voId": "chr_0038_purrche_combat_dead_01",
+        "title": "0 PV",
+        "text": "Perdón... tengo tanto sueño..."
+      },
+      {
+        "voId": "chr_0038_purrche_combat_remind_praise_01",
+        "title": "Ánimo al equipo 1",
+        "text": "¡Increíble! ¡Me alegra haber estado despierta para ver eso!"
+      },
+      {
+        "voId": "chr_0038_purrche_combat_remind_praise_02",
+        "title": "Ánimo al equipo 2",
+        "text": "¡Somos el equipo de ensueño!"
+      },
+      {
+        "voId": "chr_0038_purrche_combat_remind_praise_echo2_01",
+        "title": "Respuesta al ánimo 1",
+        "text": "Je, je, me haces sonrojar."
+      },
+      {
+        "voId": "chr_0038_purrche_combat_remind_praise_echo2_02",
+        "title": "Respuesta al ánimo 2",
+        "text": "¡Yo invito la aleta exótica deshidratada!"
+      },
+      {
+        "voId": "chr_0038_purrche_combat_intobattle_01",
+        "title": "Comienza el combate 1",
+        "text": "¡Pónganse detrás de mí!"
+      },
+      {
+        "voId": "chr_0038_purrche_combat_intobattle_echo2_01",
+        "title": "Comienza el combate 2",
+        "text": "¡Nadie sufrirá ni un rasguño mientras yo esté aquí!"
+      },
+      {
+        "voId": "chr_0038_purrche_combat_outbattle_nor_01",
+        "title": "Victoria en combate 1",
+        "text": "¿Todos están sanos y salvos?"
+      },
+      {
+        "voId": "chr_0038_purrche_combat_outbattle_nor_02",
+        "title": "Victoria en combate 2",
+        "text": "No te metas con esta Embajadora de marca... “¡ÑAM, ÑAM!”"
+      },
+      {
+        "voId": "chr_0038_purrche_combat_outbattle_nor_echo2_01",
+        "title": "Victoria en combate 3",
+        "text": "*Juu*... ¡Buen trabajo, equipo! ¡Es hora de un bocadillo!"
+      },
+      {
+        "voId": "chr_0038_purrche_combat_outbattle_hard_01",
+        "title": "Victoria en combate 4",
+        "text": "Eso estuvo difícil... ¿Todos están bien? Bien, entonces solo... “¡Aleta exótica deshidratada! ¡PRUEBA UN POCO!”"
+      },
+      {
+        "voId": "chr_0038_purrche_combat_battle_defeat_01",
+        "title": "Derrota en combate",
+        "text": "Es mi culpa... No me esforcé lo suficiente para protegerlos a todos. La próxima vez, yo... No, jamás permitiré que esto vuelva a ocurrir."
+      },
+      {
+        "voId": "chr_0038_purrche_mono_attack_last_01",
+        "title": "Golpe final 1",
+        "text": "¡Retrocede ahora!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_attack_last_02",
+        "title": "Golpe final 2",
+        "text": "¡No pasarás!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_skill_nor_01",
+        "title": "Habilidad de batalla 1",
+        "text": "¡Estoy completamente despierta!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_skill_nor_02",
+        "title": "Habilidad de batalla 2",
+        "text": "¡YA-JÁ! “¡Ahí va!”"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_skill_nor_03",
+        "title": "Habilidad de batalla 3",
+        "text": "¡Ni se te ocurra!"
+      },
+      {
+        "voId": "chr_0038_purrche_combat_skill_comb_ready_01",
+        "title": "Habilidad de combo preparada 1",
+        "text": "¡Purrchena, lista para la acción!"
+      },
+      {
+        "voId": "chr_0038_purrche_combat_skill_comb_ready_02",
+        "title": "Habilidad de combo preparada 2",
+        "text": "¡VAMOS, aleta exótica deshidratada!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_skill_comb_release_01",
+        "title": "Lanzando combo 1",
+        "text": "¡Allá voy!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_skill_comb_release_02",
+        "title": "Lanzando combo 2",
+        "text": "¡Nadie se mete con mis amigos!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_attack_extra_01",
+        "title": "Remate 1",
+        "text": "¡Hasta la vista!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_attack_extra_02",
+        "title": "Remate 2",
+        "text": "¡Nada de dormirse!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_skill_ultimate_01",
+        "title": "Máxima 1",
+        "text": "¡Ja, ja! ¡Tu disculpa llegó TARDE!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_skill_ultimate_02",
+        "title": "Máxima 2",
+        "text": "¡Jum! ¡Bravucón! “¡Nos vemos!”"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_skill_ultimate_03",
+        "title": "Máxima 3",
+        "text": "¡Te mereces un bocadillo por eso!"
+      }
+    ]
+  },
+  "potentials": {
+    "potential1": {
+      "description": "Máxima <@ba.key>¡PROHIBIDO PORTARSE MAL!</> mejorada: La probabilidad base de obtener <@ba.key>Especial de la Embajadora</> aumenta a <@ba.vup>{prob:0.0}</> veces la original.",
+      "name": "Cálido como el sol"
+    },
+    "potential2": {
+      "description": "DEF <@ba.vup>+{Def:0}</>, Voluntad <@ba.vup>+{Will:0}</>.",
+      "name": "“Superenergético”"
+    },
+    "potential3": {
+      "description": "Habilidad de combo <@ba.key>PASTEL O “REGALITO”</> mejorada: \n<@ba.key>Bomba</>: El Multiplicador de DAÑ aumenta a <@ba.vup>{atk_scale_boom:0.0}</> veces el original. \n<@ba.key>Artesanía</>: Radio del efecto <@ba.vup>+{radiusadd_display:0%}</>. \n<@ba.key>Postre delicioso</>: El Tratamiento de PV aumenta a <@ba.vup>{heal_static_value_fish:0.0}</> veces el original.",
+      "name": "“Regalitos” útiles"
+    },
+    "potential4": {
+      "description": "Máxima <@ba.key>¡PROHIBIDO PORTARSE MAL!</> mejorada: Costo de Energía máxima <@ba.vup>-{1-costvalue:0%}</>.",
+      "name": "Después del festín"
+    },
+    "potential5": {
+      "description": "Máxima <@ba.key>¡PROHIBIDO PORTARSE MAL!</> mejorada:\nEl multiplicador de DAÑ de <@ba.key>Especial de la embajadora</> aumenta <@ba.vup>{atk_scale_ult:0.0}</> veces el original.\n<@ba.key>Especial de la embajadora</>: <#ba.spellvul>Susceptibilidad a Artes</> aumenta a <@ba.vup>{rate_vul:0.0}</> veces el original.",
+      "name": "Ardiente como el fuego de una barbacoa"
+    }
+  },
+  "arts": {
+    "potential1": {
+      "name": "¡GRRR!",
+      "author": "黑犬",
+      "description": "¡Aleta exótica deshidratada! ¡ÑAM! ¡Finyaki! ¡TAMBIÉN ÑAM-ÑAM! ¿Cuál debería comer primero? ¡GRRR! ¡No voy a elegir! ¡Me comeré los dos de un solo bocado!"
+    },
+    "potential3": {
+      "name": "Gran felino ronroneante",
+      "author": "怂松鼠",
+      "description": "“¡KYAA! ¡Es el Gran felino ronroneante!”. Los niños del centro médico se reúnen felices a su alrededor cada vez que los visita."
+    },
+    "potential5": {
+      "name": "Momento de un hermoso sueño",
+      "author": "とびはち",
+      "description": "Purrchena soñó con pasteles voladores, un mundo donde podía impulsarse suavemente hacia las nubes esponjosas."
+    }
+  }
+}

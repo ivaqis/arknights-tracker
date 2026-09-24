@@ -352,5 +352,16 @@ export const characters = {
     birthDate: "13-01",
     apiId: "",
     gameId: "chr_0034_typhoea"
+  },
+  purrchena: {
+    id: "purrchena",
+    name: "Purrchena",
+    rarity: 5,
+    element: "physical",
+    class: "defender",
+    weapon: "sword",
+    birthDate: "26-11",
+    apiId: "",
+    gameId: "chr_0038_purrche"
   }
 };

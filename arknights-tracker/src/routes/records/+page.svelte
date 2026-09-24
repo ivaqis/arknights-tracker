@@ -448,9 +448,9 @@
   {#if columnsData.every(col => col.length === 0)}
     <div class="flex flex-col items-center justify-center py-20 px-4 text-center w-full min-h-[350px]">
       <img src="/images/empty.png" alt="Empty" class="w-56 h-auto object-contain mb-5 select-none pointer-events-none" />
-      <div class="flex items-center gap-3 text-lg font-bold text-gray-500 dark:text-gray-400 select-none">
+      <div class="flex items-center gap-3 text-lg font-bold text-[#9ca3af] select-none">
         <Icon name="noData" class="w-6 h-6" />
-        <span class="text-[#A0A0A0]">{$t("systemNames.emptyPageMsg")}</span>
+        <span class="text-[#9ca3af]">{$t("systemNames.emptyPageMsg")}</span>
         <Icon name="noData" class="w-6 h-6" />
       </div>
     </div>

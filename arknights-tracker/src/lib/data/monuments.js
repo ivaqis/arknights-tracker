@@ -374,5 +374,66 @@ export const monumentGroups = [
                 ]
             }
         ]
+    },
+    {
+        "id": "indie_group_h07",
+        "stages": [
+            {
+                "id": "indie_hard029",
+                "hardId": "indie_hard029_s",
+                "name": "Tri-Aggelated Targeting",
+                "picPath": "dung_high_difficulty_s5_02",
+                "enemyIds": [
+                    "eny_0070_agscorp2"
+                ],
+                "enemyLevels": [
+                    60
+                ]
+            },
+            {
+                "id": "indie_hard026",
+                "hardId": "indie_hard026_s",
+                "name": "Feral Carnage of Shadow",
+                "picPath": "dung_high_difficulty_s5_03",
+                "enemyIds": [
+                    "eny_0118_klhog",
+                    "eny_0119_kltiger"
+                ],
+                "enemyLevels": [
+                    60,
+                    60
+                ]
+            },
+            {
+                "id": "indie_hard028",
+                "hardId": "indie_hard028_s",
+                "name": "Sudden Roar of Oblivion",
+                "picPath": "dung_high_difficulty_s7_02",
+                "enemyIds": [
+                    "eny_0117_klhound",
+                    "eny_0121_klbud",
+                    "eny_0122_kltdbud",
+                    "eny_0123_klcap"
+                ],
+                "enemyLevels": [
+                    60,
+                    60,
+                    60,
+                    60
+                ]
+            },
+            {
+                "id": "indie_hard027",
+                "hardId": "indie_hard027_s",
+                "name": "Arc of Shadow Flare",
+                "picPath": "dung_high_difficulty_s7_01",
+                "enemyIds": [
+                    "eny_0124_kltdcap"
+                ],
+                "enemyLevels": [
+                    60
+                ]
+            }
+        ]
     }
 ];

@@ -458,5 +458,45 @@
     "name": "Lữ Khách Thanh Ba: Đoạn Nộ",
     "description": "Người Trại Thanh Ba cùng cất lên khúc hợp xướng của lưỡi đao. Không còn khắc khoải vì một mái nhà chưa dựng, họ để hào khí và dã tâm hoang dại dẫn lối, thẳng tiến lên đỉnh cao.",
     "featureDesc": " - Đánh bại kẻ địch sẽ hồi một lượng HP cho tất cả kẻ địch khác, đồng thời tăng vĩnh viễn Tấn Công và HP Tối Đa của chúng.\n\n <@ba.info>- Không thể dùng vật phẩm chiến thuật và vật phẩm tiêu hao.</>\n <@ba.info>- Kẻ địch có khả năng kháng như nhau đối với mọi nguyên tố.</>"
+  },
+  "indie_hard026": {
+    "name": "Cuồng Sát Trong Bóng Tối",
+    "description": "Những vuốt thú vặn vẹo là thứ đầu tiên vươn ra từ bóng tối. Mãi về sau, chúng ta mới biết thứ ánh sáng tàn nhẫn ấy đã in dấu lên bản tính hung bạo của chúng.",
+    "featureDesc": " - Kẻ địch trong trạng thái <@ba.key>Hắc Ảnh</> miễn nhiễm ST và không thể bị chọn làm mục tiêu.\n - Khi trận chiến bắt đầu, Bóng Nhiễm Khuẩn Quái Lông sẽ tiến vào trạng thái <@ba.key>Hắc Ảnh</> và liên tục thực hiện đòn lao húc. Trong khi đó, Bóng Nhiễm Khuẩn Quái Cào sẽ định kỳ tạo <@ba.key>Khiên</> cho bản thân. Đòn lao húc của Bóng Nhiễm Khuẩn Quái Lông có thể phá vỡ lớp <@ba.key>Khiên</> này.\n - Khi HP của Bóng Nhiễm Khuẩn Quái Cào xuống thấp, nó sẽ tiến vào trạng thái <@ba.key>Hắc Ảnh</>, đồng thời trạng thái <@ba.key>Hắc Ảnh</> của Bóng Nhiễm Khuẩn Quái Lông sẽ kết thúc. Sau đó, Bóng Nhiễm Khuẩn Quái Cào sẽ định kỳ giáng Lôi Kích xuống cán viên đang điều khiển (tổng cộng tối đa <@ba.key>5</> lần giáng). Không thể né ST từ Lôi Kích. Áp dụng <@ba.key>Bùng Nổ Thuật Pháp</>, <@ba.phy>Phá Giáp</> hoặc <@ba.phy>Nghiền</> lên Bóng Nhiễm Khuẩn Quái Lông sẽ tạo ra <@ba.key>Cầu Sét</>. Cán viên đang điều khiển có thể nhặt <@ba.key>Cầu Sét</> để nhận một lớp khiên chặn ST từ <@ba.key>1</> Lôi Kích.\n - Sau khi HP của Bóng Nhiễm Khuẩn Quái Lông xuống thấp, trạng thái <@ba.key>Hắc Ảnh</> của nó sẽ kết thúc. Sau đó, các kẻ địch sẽ cùng nhau tấn công.\n\n <@ba.info>- Kẻ địch có khả năng kháng như nhau đối với mọi nguyên tố.</>"
+  },
+  "indie_hard026_s": {
+    "name": "Cuồng Sát Trong Bóng Tối: Đoạn Nộ",
+    "description": "Những vuốt thú vặn vẹo là thứ đầu tiên vươn ra từ bóng tối. Mãi về sau, chúng ta mới biết thứ ánh sáng tàn nhẫn ấy đã in dấu lên bản tính hung bạo của chúng.",
+    "featureDesc": " - Kẻ địch trong trạng thái <@ba.key>Hắc Ảnh</> miễn nhiễm ST và không thể bị chọn làm mục tiêu.\n - Khi trận chiến bắt đầu, Bóng Nhiễm Khuẩn Quái Lông sẽ tiến vào trạng thái <@ba.key>Hắc Ảnh</> và liên tục thực hiện đòn lao húc. Trong khi đó, Bóng Nhiễm Khuẩn Quái Cào sẽ định kỳ tạo <@ba.key>Khiên</> cho bản thân. Đòn lao húc của Bóng Nhiễm Khuẩn Quái Lông có thể phá vỡ lớp <@ba.key>Khiên</> này.\n - Khi HP của Bóng Nhiễm Khuẩn Quái Cào xuống thấp, nó sẽ tiến vào trạng thái <@ba.key>Hắc Ảnh</>, đồng thời trạng thái <@ba.key>Hắc Ảnh</> của Bóng Nhiễm Khuẩn Quái Lông sẽ kết thúc. Sau đó, Bóng Nhiễm Khuẩn Quái Cào sẽ định kỳ giáng Lôi Kích xuống cán viên đang điều khiển (tổng cộng tối đa <@ba.key>7</> lần giáng). Không thể né ST từ Lôi Kích. Áp dụng <@ba.key>Bùng Nổ Thuật Pháp</>, <@ba.phy>Phá Giáp</> hoặc <@ba.phy>Nghiền</> lên Bóng Nhiễm Khuẩn Quái Lông sẽ tạo ra <@ba.key>Cầu Sét</>. Cán viên đang điều khiển có thể nhặt <@ba.key>Cầu Sét</> để nhận một lớp khiên chặn ST từ <@ba.key>1</> Lôi Kích.\n - Sau khi HP của Bóng Nhiễm Khuẩn Quái Lông xuống thấp, trạng thái <@ba.key>Hắc Ảnh</> của nó sẽ kết thúc. Sau đó, các kẻ địch sẽ cùng nhau tấn công. \n\n <@ba.info>- Không thể dùng vật phẩm chiến thuật và vật phẩm tiêu hao.</>\n <@ba.info>- Kẻ địch có khả năng kháng như nhau đối với mọi nguyên tố.</>"
+  },
+  "indie_hard027": {
+    "name": "Cung Lửa Bóng Tối",
+    "description": "Đại đao triệu dẫn nguyên tố phân liệt, rót sức mạnh ấy vào chính lưỡi đao. Từ đó, những u ảnh của chiến tranh và thảm sát sẽ còn tiếp tục rực sáng trên mảnh đất này.",
+    "featureDesc": " - Thời gian hồi chiêu KN chiến đấu của tất cả cán viên tăng thêm 60 giây.\n - Khi bắt đầu chiến đấu, tất cả cán viên sẽ tiến vào trạng thái <@ba.key>Dẫn Điện</> và liên tục chịu <@ba.pulse>ST Điện</> dựa trên số tầng <@ba.pulse>Nhiễm Điện</> hiện có.\n - Sau khi cán viên trong trạng thái <@ba.key>Dẫn Điện</> thi triển KN chiến đấu, Bóng Nhiễm Khuẩn ĐĐNY Trưởng Nhóm sẽ áp dụng 1 tầng <@ba.pulse>Nhiễm Điện</> lên tất cả cán viên. Sau khi Bóng Nhiễm Khuẩn ĐĐNY Trưởng Nhóm áp dụng <@ba.pulse>Nhiễm Điện</> lên cán viên lần thứ <@ba.key>4</>, đặt lại thời gian hồi chiêu KN chiến đấu của cán viên, <@ba.key>xóa bỏ</> toàn bộ tầng <@ba.pulse>Nhiễm Điện</> trên các cán viên, đồng thời áp dụng <@ba.pulse>Điện Hóa Cấp 4</> lên Bóng Nhiễm Khuẩn ĐĐNY Trưởng Nhóm.\n\n <@ba.info>- Kẻ địch có khả năng kháng như nhau đối với mọi nguyên tố.</>"
+  },
+  "indie_hard027_s": {
+    "name": "Cung Lửa Bóng Tối: Đoạn Nộ",
+    "description": "Đại đao triệu dẫn nguyên tố phân liệt, rót sức mạnh ấy vào chính lưỡi đao. Từ đó, những u ảnh của chiến tranh và thảm sát sẽ còn tiếp tục rực sáng trên mảnh đất này.",
+    "featureDesc": " - Thời gian hồi chiêu KN chiến đấu của tất cả cán viên tăng thêm 60 giây.\n - Bóng Nhiễm Khuẩn ĐĐNY Trưởng Nhóm sẽ định kỳ áp dụng 1 tầng <@ba.pulse>Nhiễm Điện</> lên tất cả cán viên.\n - Khi bắt đầu chiến đấu, tất cả cán viên sẽ tiến vào trạng thái <@ba.key>Dẫn Điện</> và liên tục chịu <@ba.pulse>ST Điện</> dựa trên số tầng <@ba.pulse>Nhiễm Điện</> hiện có.\n - Sau khi cán viên trong trạng thái <@ba.key>Dẫn Điện</> thi triển KN chiến đấu, Bóng Nhiễm Khuẩn ĐĐNY Trưởng Nhóm sẽ áp dụng 1 tầng <@ba.pulse>Nhiễm Điện</> lên tất cả cán viên. Sau khi Bóng Nhiễm Khuẩn ĐĐNY Trưởng Nhóm áp dụng <@ba.pulse>Nhiễm Điện</> lên cán viên lần thứ <@ba.key>4</>, đặt lại thời gian hồi chiêu KN chiến đấu của cán viên, <@ba.key>xóa bỏ</> toàn bộ tầng <@ba.pulse>Nhiễm Điện</> trên các cán viên, đồng thời áp dụng <@ba.pulse>Điện Hóa Cấp 4</> lên Bóng Nhiễm Khuẩn ĐĐNY Trưởng Nhóm.\n\n <@ba.info>- Không thể dùng vật phẩm chiến thuật và vật phẩm tiêu hao.</>\n <@ba.info>- Kẻ địch có khả năng kháng như nhau đối với mọi nguyên tố.</>"
+  },
+  "indie_hard028": {
+    "name": "Tiếng Gầm Diệt Vong",
+    "description": "\"Thời khắc đã đến. Hãy để vòng luân hồi lãng quên vô tận bắt đầu.\"",
+    "featureDesc": "- <@ba.key>Cán viên không thể tự hồi Điểm Kỹ Năng</>. \n- Sau khi bắt đầu giao tranh, Điểm Kỹ Năng khởi đầu và Điểm Kỹ Năng Tối Đa của cán viên tăng lên 1.000. \n- Bóng Nhiễm Khuẩn Thú Ngà và Bóng Nhiễm Khuẩn ĐĐNY Tiên Phong sẽ <@ba.key>tự phát nổ</> sau một khoảng thời gian, gây ST dựa trên HP Tối Đa lên tất cả cán viên. \n- Cần <@ba.key>làm gián đoạn Bóng Nhiễm Khuẩn ĐĐNY Đao Thủ nhiều lần</> để ngăn hắn thi triển kỹ năng tuyệt kỹ. ST từ kỹ năng tuyệt kỹ này không thể né tránh. \n- Khi trận chiến kéo dài quá lâu, Bóng Nhiễm Khuẩn ĐĐNY Đao Thủ sẽ <@ba.key>tự phát nổ</> và hạ gục toàn bộ cán viên. \n- Khi kẻ địch trở nên Suy Sụp, bộ đếm thời gian <@ba.key>tự phát nổ</> của chúng sẽ dừng lại. \n\n<@ba.info>- Kẻ địch có khả năng kháng như nhau đối với mọi nguyên tố.</>"
+  },
+  "indie_hard028_s": {
+    "name": "Tiếng Gầm Diệt Vong: Đoạn Nộ",
+    "description": "\"Thời khắc đã đến. Hãy để vòng luân hồi lãng quên vô tận bắt đầu.\"",
+    "featureDesc": "- <@ba.key>Cán viên không thể tự hồi Điểm Kỹ Năng. Đòn Dứt Điểm và Đòn Kết Liễu không còn hồi Điểm Kỹ Năng</>. \n- Sau khi bắt đầu giao tranh, Điểm Kỹ Năng khởi đầu và Điểm Kỹ Năng Tối Đa của cán viên tăng lên 1.000. \n- Bóng Nhiễm Khuẩn Thú Ngà và Bóng Nhiễm Khuẩn ĐĐNY Tiên Phong sẽ <@ba.key>tự phát nổ</> sau một khoảng thời gian, gây ST dựa trên HP Tối Đa lên tất cả cán viên. \n- Cần <@ba.key>làm gián đoạn chiêu Bóng Nhiễm Khuẩn ĐĐNY Đao Thủ nhiều lần</> để ngăn hắn thi triển kỹ năng tuyệt kỹ. ST từ kỹ năng tuyệt kỹ này không thể né tránh. \n- Khi trận chiến kéo dài quá lâu, Bóng Nhiễm Khuẩn ĐĐNY Đao Thủ sẽ <@ba.key>tự phát nổ</> và hạ gục toàn bộ cán viên. \n- Khi các kẻ địch trở nên Suy Sụp, bộ đếm thời gian <@ba.key>tự phát nổ</> của chúng sẽ dừng lại. \n\n<@ba.info>- Không thể dùng vật phẩm chiến thuật và vật phẩm tiêu hao.</> \n<@ba.info>- Kẻ địch có khả năng kháng như nhau đối với mọi nguyên tố.</>"
+  },
+  "indie_hard029": {
+    "name": "Khóa Mục Tiêu Triaggelos",
+    "description": "Những người chứng kiến vẫn lặng im trong đau đớn. Khi mọi kỷ vật đều chỉ còn là ảo ảnh, lãng quên trở thành lựa chọn duy nhất còn lại với chúng ta.",
+    "featureDesc": " - Kẻ địch không thể di chuyển, nhưng phạm vi tấn công được tăng mạnh.\n\n <@ba.info>- Kẻ địch có khả năng kháng như nhau đối với mọi nguyên tố.</>"
+  },
+  "indie_hard029_s": {
+    "name": "Khóa Mục Tiêu Triaggelos: Đoạn Nộ",
+    "description": "Những người chứng kiến vẫn lặng im trong đau đớn. Khi mọi kỷ vật đều chỉ còn là ảo ảnh, lãng quên trở thành lựa chọn duy nhất còn lại với chúng ta.",
+    "featureDesc": " - Kẻ địch không thể di chuyển, nhưng phạm vi tấn công được tăng mạnh.\n - Khi một kẻ địch bị đánh bại lần đầu tiên, các kẻ địch còn lại sẽ được tăng Tấn Công và tăng tốc độ tấn công.\n\n <@ba.info>- Không thể dùng vật phẩm chiến thuật và vật phẩm tiêu hao.</>\n <@ba.info>- Kẻ địch có khả năng kháng như nhau đối với mọi nguyên tố.</>"
   }
 }
