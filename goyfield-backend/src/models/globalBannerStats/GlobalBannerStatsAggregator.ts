@@ -273,7 +273,7 @@ export class GlobalBannerStatsAggregator {
             type: GlobalBannerDataType.SPECIAL_V1,
             stats: {
                 featured: {
-                    totalCount: stats.featured,
+                    totalCount: GlobalBannerStatsAggregator.getFeaturedCount(banner, groupedItems.get(6) ?? []),
                     guaranteedCount: stats.guaranteed,
                     ids: banner.getFeaturedList()
                 },
@@ -438,11 +438,13 @@ export class GlobalBannerStatsAggregator {
         const items6 = groupedItems.get(6) ?? [];
         const items5 = groupedItems.get(5) ?? [];
 
+        const featuredCount = GlobalBannerStatsAggregator.getFeaturedCount(banner, items6);
+
         return {
             type: GlobalBannerDataType.JOINT_V1,
             stats: {
                 featured: {
-                    totalCount: GlobalBannerStatsAggregator.getFeaturedCount(banner, items6),
+                    totalCount: featuredCount,
                     ids: banner.getFeaturedList()
                 },
                 overview: {
@@ -455,7 +457,7 @@ export class GlobalBannerStatsAggregator {
                     totalCount: stats.total6,
                     totalRate: stats.total6 / stats.totalPulls,
                     medianPity: GlobalBannerStatsAggregator.getMedianPity(pityDistribution6, stats.total6),
-                    winrate: stats.winrate
+                    winrate: featuredCount / stats.total6
                 },
                 stats5: {
                     totalCount: stats.total5,
@@ -605,7 +607,7 @@ export class GlobalBannerStatsAggregator {
             type: GlobalBannerDataType.WEAPON_V1,
             stats: {
                 featured: {
-                    totalCount: stats.featured,
+                    totalCount: GlobalBannerStatsAggregator.getFeaturedCount(banner, groupedItems.get(6) ?? []),
                     guaranteedCount: stats.guaranteed,
                     ids: banner.getFeaturedList()
                 },
