@@ -25,3 +25,4 @@ RUN chmod +x entrypoint.sh && chown -R node:node /app
 USER node
 
 ENTRYPOINT ["/app/entrypoint.sh"]
+CMD ["node", "dist/src/main.js"]
