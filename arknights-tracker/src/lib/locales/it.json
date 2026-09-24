@@ -2348,7 +2348,8 @@
         "gas_reactor_1": "Globo di reazione gas",
         "transmuter_1": "Unità di trasmutazione liquido-gas",
         "transmuter_2": "Unità di trasmutazione solido-gas",
-        "gas_pump_1": "Estrattore di gas"
+        "gas_pump_1": "Estrattore di gas",
+        "vaporizer_1": "Unità di dispersione gas"
     },
     "buildingModes": {
         "normal": "Modalità standard",
@@ -2790,5 +2791,11 @@
         "normal": "Normale",
         "hard": "Difficile",
         "brutal": "Brutale"
+    },
+    "gasEnvName": {
+        "gas_env_stable": "AMB stabile",
+        "gas_env_wet": "AMB umido",
+        "gas_env_acidic": "AMB acre",
+        "gas_env_xiranite": "AMB xiranite"
     }
 }

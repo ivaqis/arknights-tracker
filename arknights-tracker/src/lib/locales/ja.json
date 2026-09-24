@@ -2348,7 +2348,8 @@
         "gas_reactor_1": "ガス反応装置",
         "transmuter_1": "ガス液体転換機",
         "transmuter_2": "ガス固体転換機",
-        "gas_pump_1": "ガス収集ポンプ"
+        "gas_pump_1": "ガス収集ポンプ",
+        "vaporizer_1": "ガス散布機"
     },
     "buildingModes": {
         "normal": "基礎モード",
@@ -2790,5 +2791,11 @@
         "normal": "通常",
         "hard": "苦難",
         "brutal": "苛烈"
+    },
+    "gasEnvName": {
+        "gas_env_stable": "安定環境",
+        "gas_env_wet": "多湿環境",
+        "gas_env_acidic": "酸性環境",
+        "gas_env_xiranite": "息壌環境"
     }
 }

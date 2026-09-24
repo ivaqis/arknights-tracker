@@ -720,7 +720,8 @@
       "sanity": "Рассудок",
       "arrow_chip": "Чип",
       "lung_box": "Панцирь пухлика-луна",
-      "lung": "Пухлик-лун"
+      "lung": "Пухлик-лун",
+      "vaporizer": "Рассеиватель газа"
     },
     "itemMaterials": {
       "water": "Вода",
@@ -2508,7 +2509,8 @@
     "gas_reactor_1": "Газовый реактор",
     "transmuter_1": "Модуль жидкостно-газового видоизменения",
     "transmuter_2": "Модуль твердотельно-газового видоизменения",
-    "gas_pump_1": "Газовый экстрактор"
+    "gas_pump_1": "Газовый экстрактор",
+    "vaporizer_1": "Модуль рассеивания газа"
   },
   "buildingModes": {
     "normal": "Стандартный режим",
@@ -2526,7 +2528,8 @@
       "availableFormulas": "Доступные формулы",
       "availableFunctions": "Доступные функции",
       "resourceCollection": "Сбор ресурсов",
-      "currentFormulas": "Текущие формулы"
+      "currentFormulas": "Текущие формулы",
+      "environment": "Среда"
     },
     "craftSource": {
       "hub": "Блок автоматизации",
@@ -2956,5 +2959,11 @@
     "normal": "Обычная",
     "hard": "Сложная",
     "brutal": "Жестокая"
+  },
+  "gasEnvName": {
+    "gas_env_stable": "Стабильная среда",
+    "gas_env_wet": "Влажная среда",
+    "gas_env_acidic": "Едкая среда",
+    "gas_env_xiranite": "Ксиранитовая среда"
   }
 }

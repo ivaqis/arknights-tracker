@@ -2387,7 +2387,8 @@
         "gas_reactor_1": "氣體反應爐",
         "transmuter_1": "液氣轉化機",
         "transmuter_2": "固氣轉化機",
-        "gas_pump_1": "氣體收集泵"
+        "gas_pump_1": "氣體收集泵",
+        "vaporizer_1": "氣體散布機"
     },
     "buildingModes": {
         "normal": "基礎模式",
@@ -2829,5 +2830,11 @@
         "normal": "普通",
         "hard": "困難",
         "brutal": "殘酷"
+    },
+    "gasEnvName": {
+        "gas_env_stable": "穩定環境",
+        "gas_env_wet": "濕潤環境",
+        "gas_env_acidic": "酸性環境",
+        "gas_env_xiranite": "息壤環境"
     }
 }

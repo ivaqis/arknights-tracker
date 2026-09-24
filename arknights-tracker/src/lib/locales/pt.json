@@ -2348,7 +2348,8 @@
         "gas_reactor_1": "Globo Reator de Gás",
         "transmuter_1": "Unidade de Transmutação Fluido-Gás",
         "transmuter_2": "Unidade de Transmutação Sólido-Gás",
-        "gas_pump_1": "Extrator de Gás"
+        "gas_pump_1": "Extrator de Gás",
+        "vaporizer_1": "Unidade de Dispersão de Gás"
     },
     "buildingModes": {
         "normal": "Modo PDR",
@@ -2790,5 +2791,11 @@
         "normal": "Normal",
         "hard": "Difícil",
         "brutal": "Brutal"
+    },
+    "gasEnvName": {
+        "gas_env_stable": "AMB Estável",
+        "gas_env_wet": "AMB Úmido",
+        "gas_env_acidic": "AMB Acre",
+        "gas_env_xiranite": "AMB Xiranita"
     }
 }

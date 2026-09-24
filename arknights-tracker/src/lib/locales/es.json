@@ -2349,7 +2349,8 @@
         "gas_reactor_1": "Globo del reactor de gas",
         "transmuter_1": "Unidad de transmutación fluido-gas",
         "transmuter_2": "Unidad de transmutación sólido-gas",
-        "gas_pump_1": "Extractor de gas"
+        "gas_pump_1": "Extractor de gas",
+        "vaporizer_1": "Unidad de dispersión de gas"
     },
     "buildingModes": {
         "normal": "Modo estándar",
@@ -2791,5 +2792,11 @@
         "normal": "Normal",
         "hard": "Difícil",
         "brutal": "Brutal"
+    },
+    "gasEnvName": {
+        "gas_env_stable": "ENT estable",
+        "gas_env_wet": "ENT húmedo",
+        "gas_env_acidic": "ENT acre",
+        "gas_env_xiranite": "ENT de Xiranita"
     }
 }

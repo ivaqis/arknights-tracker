@@ -2348,7 +2348,8 @@
         "gas_reactor_1": "기체 반응로",
         "transmuter_1": "액체 · 기체 전환기",
         "transmuter_2": "고체 · 기체 전환기",
-        "gas_pump_1": "기체 수집기"
+        "gas_pump_1": "기체 수집기",
+        "vaporizer_1": "기체 분산기"
     },
     "buildingModes": {
         "normal": "기본 모드",
@@ -2790,5 +2791,11 @@
         "normal": "일반",
         "hard": "고난",
         "brutal": "잔혹"
+    },
+    "gasEnvName": {
+        "gas_env_stable": "안정 환경",
+        "gas_env_wet": "습윤 환경",
+        "gas_env_acidic": "산성 환경",
+        "gas_env_xiranite": "식양 환경"
     }
 }

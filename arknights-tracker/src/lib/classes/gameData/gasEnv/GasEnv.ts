@@ -33,6 +33,6 @@ export class GasEnv implements IGasEnv {
     }
 
     public get i18nKey(): string {
-        return `gasEnv.${this._id}`;
+        return `gasEnvName.${this._id}`;
     }
 }

@@ -2348,7 +2348,8 @@
         "gas_reactor_1": "Gasreaktor-Kugel",
         "transmuter_1": "Flüssigkeit-Gas-Transmutationseinheit",
         "transmuter_2": "Feststoff-Gas-Transmutationseinheit",
-        "gas_pump_1": "Gasextraktor"
+        "gas_pump_1": "Gasextraktor",
+        "vaporizer_1": "Gasverteilungseinheit"
     },
     "buildingModes": {
         "normal": "STD-Modus",
@@ -2790,5 +2791,11 @@
         "normal": "Normal",
         "hard": "Schwer",
         "brutal": "Brutal"
+    },
+    "gasEnvName": {
+        "gas_env_stable": "Stabile UMW",
+        "gas_env_wet": "Feuchte UMW",
+        "gas_env_acidic": "Acrid-UMW",
+        "gas_env_xiranite": "Xiranit-UMW"
     }
 }

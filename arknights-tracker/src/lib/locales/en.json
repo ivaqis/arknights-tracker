@@ -720,7 +720,8 @@
       "sanity": "Sanity",
       "arrow_chip": "Chip",
       "lung_box": "Chubby Lung Shell",
-      "lung": "Chubby Lung"
+      "lung": "Chubby Lung",
+      "vaporizer": "Gas Disperser"
     },
     "itemMaterials": {
       "water": "Water",
@@ -2504,7 +2505,8 @@
     "gas_reactor_1": "Gas Reactor Globe",
     "transmuter_1": "Fluid-Gas Transmuting Unit",
     "transmuter_2": "Solid-Gas Transmuting Unit",
-    "gas_pump_1": "Gas Extractor"
+    "gas_pump_1": "Gas Extractor",
+    "vaporizer_1": "Gas Dispersing Unit"
   },
   "buildingModes": {
     "normal": "STD Mode",
@@ -2522,7 +2524,8 @@
       "availableFormulas": "Available Formulas",
       "availableFunctions": "Available Functions",
       "resourceCollection": "Gatherable Resources",
-      "currentFormulas": "Current Formulas"
+      "currentFormulas": "Current Formulas",
+      "environment": "Environment"
     },
     "craftSource": {
       "hub": "Automation-Core",
@@ -2951,5 +2954,11 @@
     "normal": "Normal",
     "hard": "Hard",
     "brutal": "Brutal"
+  },
+  "gasEnvName": {
+    "gas_env_stable": "Stable ENV",
+    "gas_env_wet": "Humid ENV",
+    "gas_env_acidic": "Acrid ENV",
+    "gas_env_xiranite": "Xiranite ENV"
   }
 }

@@ -2387,7 +2387,8 @@
         "gas_reactor_1": "Quả Cầu Phản Ứng Khí",
         "transmuter_1": "Máy Chuyển Hóa Khí Lỏng",
         "transmuter_2": "Máy Chuyển Hóa Khí Rắn",
-        "gas_pump_1": "Máy Tách Khí"
+        "gas_pump_1": "Máy Tách Khí",
+        "vaporizer_1": "Máy Khuếch Tán Khí"
     },
     "buildingModes": {
         "normal": "Chế Độ STD",
@@ -2829,5 +2830,11 @@
         "normal": "Thường",
         "hard": "Khó",
         "brutal": "Tàn Bạo"
+    },
+    "gasEnvName": {
+        "gas_env_stable": "MÔI TRƯỜNG Ổn Định",
+        "gas_env_wet": "MÔI TRƯỜNG Ẩm Ướt",
+        "gas_env_acidic": "MÔI TRƯỜNG Axit",
+        "gas_env_xiranite": "MÔI TRƯỜNG Xiranite"
     }
 }

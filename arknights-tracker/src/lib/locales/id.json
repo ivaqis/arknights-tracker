@@ -2348,7 +2348,8 @@
         "gas_reactor_1": "Bola Reaktor Gas",
         "transmuter_1": "Unit Transmutasi Cair-Gas",
         "transmuter_2": "Unit Transmutasi Padat-Gas",
-        "gas_pump_1": "Ekstraktor Gas"
+        "gas_pump_1": "Ekstraktor Gas",
+        "vaporizer_1": "Unit Penyebar Gas"
     },
     "buildingModes": {
         "normal": "Mode STD",
@@ -2790,5 +2791,11 @@
         "normal": "Normal",
         "hard": "Sulit",
         "brutal": "Brutal"
+    },
+    "gasEnvName": {
+        "gas_env_stable": "LINGK Stabil",
+        "gas_env_wet": "LINGK Lembap",
+        "gas_env_acidic": "LINGK Menyengat",
+        "gas_env_xiranite": "LINGK Xiranite"
     }
 }
