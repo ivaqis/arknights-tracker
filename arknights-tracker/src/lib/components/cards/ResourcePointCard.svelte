@@ -22,7 +22,7 @@
 >
 
     <div
-        class="w-full h-full bg-[#777676]"
+        class="absolute inset-0 w-full h-full bg-[#777676]"
     ></div>
 
     {#key resourcePoint}

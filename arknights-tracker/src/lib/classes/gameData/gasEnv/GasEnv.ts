@@ -31,4 +31,8 @@ export class GasEnv implements IGasEnv {
     public get icon(): IBgColoredSvgIcon {
         return this._icon;
     }
+
+    public get i18nKey(): string {
+        return `gasEnv.${this._id}`;
+    }
 }
