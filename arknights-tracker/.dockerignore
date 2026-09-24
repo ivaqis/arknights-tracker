@@ -9,3 +9,5 @@ Dockerfile
 build
 dist
 coverage
+static/audio
+scratch
