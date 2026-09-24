@@ -30,13 +30,14 @@
         <div
             class="flex flex-row items-center justify-center gap-2 w-full h-8 rounded-md"
             style:background-color={icon.bgColor}
+            style:color={icon.color}
         >
 
             {#if icon.iconId}
 
                 <Icon
                     name={icon.iconId}
-                    class="{`text-[${icon.color}]`}"
+                    class="h-6 w-6"
                 />
 
             {/if}

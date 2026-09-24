@@ -5,7 +5,7 @@ export const gasEnv: Readonly<Record<string, GasEnvData>> = {
         "id": "gas_env_stable",
         "gameId": 1,
         "icon": {
-            "id": "",
+            "id": "gasEnvStable",
             "color": "#444444",
             "bgColor": "#32c0ff"
         }
@@ -14,7 +14,7 @@ export const gasEnv: Readonly<Record<string, GasEnvData>> = {
         "id": "gas_env_wet",
         "gameId": 2,
         "icon": {
-            "id": "",
+            "id": "gasEnvWet",
             "color": "#eeeeee",
             "bgColor": "#414141"
         }
@@ -23,7 +23,7 @@ export const gasEnv: Readonly<Record<string, GasEnvData>> = {
         "id": "gas_env_acidic",
         "gameId": 3,
         "icon": {
-            "id": "",
+            "id": "gasEnvAcidic",
             "color": "#444444",
             "bgColor": "#ffba00"
         }
@@ -32,7 +32,7 @@ export const gasEnv: Readonly<Record<string, GasEnvData>> = {
         "id": "gas_env_xiranite",
         "gameId": 4,
         "icon": {
-            "id": "",
+            "id": "gasEnvXiranite",
             "color": "#444444",
             "bgColor": "#24d4ab"
         }

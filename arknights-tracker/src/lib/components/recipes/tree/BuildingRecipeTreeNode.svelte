@@ -97,6 +97,7 @@
 
                 <Icon
                     name={icon.iconId}
+                    class="h-6 w-6"
                 />
 
             {/if}

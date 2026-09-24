@@ -32,13 +32,16 @@
 
         {@const icon = gasEnv.icon}
 
-        <div class="absolute inset-0 flex items-center justify-center z-0 bottom-[6px]">
+        <div
+            class="absolute inset-0 flex items-center justify-center z-0"
+            style:color={gasEnv.icon.color}
+        >
 
             {#if icon.iconId}
 
                 <Icon
                     name={icon.iconId}
-                    class="{color}"
+                    class="w-[80%] h-[80%]"
                 />
 
             {/if}
