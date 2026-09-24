@@ -17,7 +17,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_activity_xiranite_cmpt"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "component_activity_xiranite_enr_cmpt_1": {
         "id": "component_activity_xiranite_enr_cmpt_1",
@@ -35,7 +36,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_activity_xiranite_enr_cmpt"
             }
         ],
-        "craftTimeMs": 20000
+        "craftTimeMs": 20000,
+        "gasEnv": null
     },
     "component_copper_cmpt_1": {
         "id": "component_copper_cmpt_1",
@@ -53,7 +55,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_copper_cmpt"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_glass_grass_1_1": {
         "id": "dismantler_glass_grass_1_1",
@@ -75,7 +78,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_plant_grass_1"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "component_copper_enr_cmpt_1": {
         "id": "component_copper_enr_cmpt_1",
@@ -93,7 +97,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_copper_enr_cmpt"
             }
         ],
-        "craftTimeMs": 10000
+        "craftTimeMs": 10000,
+        "gasEnv": null
     },
     "component_glass_cmpt_1": {
         "id": "component_glass_cmpt_1",
@@ -111,7 +116,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_glass_cmpt"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "furnance_carbon_material_2": {
         "id": "furnance_carbon_material_2",
@@ -129,7 +135,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_carbon_mtl"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "component_glass_enr_cmpt_1": {
         "id": "component_glass_enr_cmpt_1",
@@ -147,7 +154,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_glass_enr_cmpt"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "component_iron_cmpt_1": {
         "id": "component_iron_cmpt_1",
@@ -165,7 +173,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_iron_cmpt"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_ironenr_grass_1_1": {
         "id": "dismantler_ironenr_grass_1_1",
@@ -187,7 +196,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_plant_grass_1"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_ironenr_xiranite_1": {
         "id": "dismantler_ironenr_xiranite_1",
@@ -209,7 +219,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_xiranite"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_bottled_copperenr_xiranite_lowpoly": {
         "id": "filling_bottled_copperenr_xiranite_lowpoly",
@@ -231,7 +242,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_copperenr_xiranite_lowpoly"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "component_iron_enr_cmpt_1": {
         "id": "component_iron_enr_cmpt_1",
@@ -249,7 +261,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_iron_enr_cmpt"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_copper_acid_1": {
         "id": "dismantler_copper_acid_1",
@@ -271,7 +284,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_acid"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "seedcollector_plant_grass_2_1": {
         "id": "seedcollector_plant_grass_2_1",
@@ -289,7 +303,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_plant_grass_seed_2"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_copper_copper_1": {
         "id": "dismantler_copper_copper_1",
@@ -311,7 +326,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_copper"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "pool_liquid_liquid_xiranite_2": {
         "id": "pool_liquid_liquid_xiranite_2",
@@ -333,7 +349,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_xiranite"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_copper_copper_enr_1": {
         "id": "dismantler_copper_copper_enr_1",
@@ -355,7 +372,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_copper_enr"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_copper_grass_1_1": {
         "id": "dismantler_copper_grass_1_1",
@@ -377,7 +395,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_plant_grass_1"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_bottled_glass_acid": {
         "id": "filling_bottled_glass_acid",
@@ -399,7 +418,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_glass_acid"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_copper_grass_2_1": {
         "id": "dismantler_copper_grass_2_1",
@@ -421,7 +441,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_plant_grass_2"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_bottled_copper_grass_2": {
         "id": "filling_bottled_copper_grass_2",
@@ -443,7 +464,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_copper_grass_2"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_copper_sewage_1": {
         "id": "dismantler_copper_sewage_1",
@@ -465,7 +487,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_sewage"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_copper_water_1": {
         "id": "dismantler_copper_water_1",
@@ -487,7 +510,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_water"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_bottled_copper_sewage": {
         "id": "filling_bottled_copper_sewage",
@@ -509,7 +533,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_copper_sewage"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_copper_xiranite_1": {
         "id": "dismantler_copper_xiranite_1",
@@ -531,7 +556,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_xiranite"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_copper_xiranite_enr_1": {
         "id": "dismantler_copper_xiranite_enr_1",
@@ -553,7 +579,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_xiranite_enr"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_bottled_glass_xiranite_enr": {
         "id": "filling_bottled_glass_xiranite_enr",
@@ -575,7 +602,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_glass_xiranite_enr"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "shaper_glass_bottle_1": {
         "id": "shaper_glass_bottle_1",
@@ -593,7 +621,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_glass_bottle"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_copper_xiranite_lowpoly_1": {
         "id": "dismantler_copper_xiranite_lowpoly_1",
@@ -615,7 +644,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_xiranite_lowpoly"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "winder_equip_script_2": {
         "id": "winder_equip_script_2",
@@ -637,7 +667,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_equip_script_2"
             }
         ],
-        "craftTimeMs": 10000
+        "craftTimeMs": 10000,
+        "gasEnv": null
     },
     "dismantler_copper_xiranite_poly_1": {
         "id": "dismantler_copper_xiranite_poly_1",
@@ -659,7 +690,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_xiranite_poly"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "liquid_purifier_xiranite_poly_1": {
         "id": "liquid_purifier_xiranite_poly_1",
@@ -681,7 +713,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_water"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_copperenr_acid_1": {
         "id": "dismantler_copperenr_acid_1",
@@ -703,7 +736,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_acid"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_copperenr_copper_1": {
         "id": "dismantler_copperenr_copper_1",
@@ -725,7 +759,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_copper"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "seedcollector_plant_grass_1_1": {
         "id": "seedcollector_plant_grass_1_1",
@@ -743,7 +778,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_plant_grass_seed_1"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_copperenr_copper_enr_1": {
         "id": "dismantler_copperenr_copper_enr_1",
@@ -765,7 +801,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_copper_enr"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_bottled_iron_copper_enr": {
         "id": "filling_bottled_iron_copper_enr",
@@ -787,7 +824,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_iron_copper_enr"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_copperenr_grass_1_1": {
         "id": "dismantler_copperenr_grass_1_1",
@@ -809,7 +847,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_plant_grass_1"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_bottled_ironenr_copper_enr": {
         "id": "filling_bottled_ironenr_copper_enr",
@@ -831,7 +870,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_ironenr_copper_enr"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_copperenr_grass_2_1": {
         "id": "dismantler_copperenr_grass_2_1",
@@ -853,7 +893,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_plant_grass_2"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_copperenr_sewage_1": {
         "id": "dismantler_copperenr_sewage_1",
@@ -875,7 +916,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_sewage"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "seedcollector_plant_bbflower_1": {
         "id": "seedcollector_plant_bbflower_1",
@@ -893,7 +935,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_plant_bbflower_seed_1"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_copperenr_water_1": {
         "id": "dismantler_copperenr_water_1",
@@ -915,7 +958,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_water"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_iron_water_1": {
         "id": "dismantler_iron_water_1",
@@ -937,7 +981,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_water"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_copperenr_xiranite_1": {
         "id": "dismantler_copperenr_xiranite_1",
@@ -959,7 +1004,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_xiranite"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_copperenr_xiranite_enr_1": {
         "id": "dismantler_copperenr_xiranite_enr_1",
@@ -981,7 +1027,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_xiranite_enr"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_copperenr_xiranite_lowpoly_1": {
         "id": "dismantler_copperenr_xiranite_lowpoly_1",
@@ -1003,7 +1050,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_xiranite_lowpoly"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_copperenr_xiranite_poly_1": {
         "id": "dismantler_copperenr_xiranite_poly_1",
@@ -1025,7 +1073,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_xiranite_poly"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_bottled_copper_water": {
         "id": "filling_bottled_copper_water",
@@ -1047,7 +1096,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_copper_water"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_glass_acid_1": {
         "id": "dismantler_glass_acid_1",
@@ -1069,7 +1119,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_acid"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_glass_copper_1": {
         "id": "dismantler_glass_copper_1",
@@ -1091,7 +1142,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_copper"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_iron_xiranite_lowpoly_1": {
         "id": "dismantler_iron_xiranite_lowpoly_1",
@@ -1113,7 +1165,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_xiranite_lowpoly"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "planter_plant_grass_2_1": {
         "id": "planter_plant_grass_2_1",
@@ -1135,7 +1188,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_plant_grass_2"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_glass_copper_enr_1": {
         "id": "dismantler_glass_copper_enr_1",
@@ -1157,7 +1211,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_copper_enr"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "furnance_crystal_shell_2": {
         "id": "furnance_crystal_shell_2",
@@ -1175,7 +1230,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_crystal_shell"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_glass_grass_2_1": {
         "id": "dismantler_glass_grass_2_1",
@@ -1197,7 +1253,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_plant_grass_2"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_glassenr_water_1": {
         "id": "dismantler_glassenr_water_1",
@@ -1219,7 +1276,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_water"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "pool_liquid_copper_1": {
         "id": "pool_liquid_copper_1",
@@ -1241,7 +1299,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_copper"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_glass_sewage_1": {
         "id": "dismantler_glass_sewage_1",
@@ -1263,7 +1322,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_sewage"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_glass_water_1": {
         "id": "dismantler_glass_water_1",
@@ -1285,7 +1345,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_water"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_bottled_copper_xiranite": {
         "id": "filling_bottled_copper_xiranite",
@@ -1307,7 +1368,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_copper_xiranite"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "furnance_quartz_enr_1": {
         "id": "furnance_quartz_enr_1",
@@ -1325,7 +1387,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_quartz_enr"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_glass_xiranite_1": {
         "id": "dismantler_glass_xiranite_1",
@@ -1347,7 +1410,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_xiranite"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "furnance_carbon_material_5": {
         "id": "furnance_carbon_material_5",
@@ -1365,7 +1429,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_carbon_mtl"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_glass_xiranite_enr_1": {
         "id": "dismantler_glass_xiranite_enr_1",
@@ -1387,7 +1452,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_xiranite_enr"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_bottled_food_3_1": {
         "id": "filling_bottled_food_3_1",
@@ -1409,7 +1475,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_bottled_food_3"
             }
         ],
-        "craftTimeMs": 10000
+        "craftTimeMs": 10000,
+        "gasEnv": null
     },
     "filling_bottled_iron_copper": {
         "id": "filling_bottled_iron_copper",
@@ -1431,7 +1498,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_iron_copper"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "planter_plant_moss_2_1": {
         "id": "planter_plant_moss_2_1",
@@ -1449,7 +1517,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_plant_moss_2"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_glass_xiranite_lowpoly_1": {
         "id": "dismantler_glass_xiranite_lowpoly_1",
@@ -1471,7 +1540,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_xiranite_lowpoly"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_glass_xiranite_poly_1": {
         "id": "dismantler_glass_xiranite_poly_1",
@@ -1493,7 +1563,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_xiranite_poly"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_glassenr_acid_1": {
         "id": "dismantler_glassenr_acid_1",
@@ -1515,7 +1586,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_acid"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_glassenr_copper_1": {
         "id": "dismantler_glassenr_copper_1",
@@ -1537,7 +1609,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_copper"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "seedcollector_plant_sp_3": {
         "id": "seedcollector_plant_sp_3",
@@ -1555,7 +1628,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_plant_sp_seed_3"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_glassenr_copper_enr_1": {
         "id": "dismantler_glassenr_copper_enr_1",
@@ -1577,7 +1651,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_copper_enr"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_glassenr_grass_1_1": {
         "id": "dismantler_glassenr_grass_1_1",
@@ -1599,7 +1674,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_plant_grass_1"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_ironenr_grass_2_1": {
         "id": "dismantler_ironenr_grass_2_1",
@@ -1621,7 +1697,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_plant_grass_2"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "tools_proc_activity_xiranite_hulu_1": {
         "id": "tools_proc_activity_xiranite_hulu_1",
@@ -1643,7 +1720,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_activity_xiranite_hulu"
             }
         ],
-        "craftTimeMs": 10000
+        "craftTimeMs": 10000,
+        "gasEnv": null
     },
     "dismantler_glassenr_grass_2_1": {
         "id": "dismantler_glassenr_grass_2_1",
@@ -1665,7 +1743,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_plant_grass_2"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "tools_proc_rec_hp_4_1": {
         "id": "tools_proc_rec_hp_4_1",
@@ -1687,7 +1766,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_bottled_rec_hp_4"
             }
         ],
-        "craftTimeMs": 10000
+        "craftTimeMs": 10000,
+        "gasEnv": null
     },
     "dismantler_glassenr_sewage_1": {
         "id": "dismantler_glassenr_sewage_1",
@@ -1709,7 +1789,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_sewage"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_glassenr_xiranite_1": {
         "id": "dismantler_glassenr_xiranite_1",
@@ -1731,7 +1812,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_xiranite"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_bottled_ironenr_xiranite_lowpoly": {
         "id": "filling_bottled_ironenr_xiranite_lowpoly",
@@ -1753,7 +1835,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_ironenr_xiranite_lowpoly"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "pool_xiranite_poly_2": {
         "id": "pool_xiranite_poly_2",
@@ -1779,7 +1862,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_sewage"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_glassenr_xiranite_enr_1": {
         "id": "dismantler_glassenr_xiranite_enr_1",
@@ -1801,7 +1885,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_xiranite_enr"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_glassenr_xiranite_lowpoly_1": {
         "id": "dismantler_glassenr_xiranite_lowpoly_1",
@@ -1823,7 +1908,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_xiranite_lowpoly"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_xiranenr_grass_2_1": {
         "id": "dismantler_xiranenr_grass_2_1",
@@ -1845,7 +1931,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_plant_grass_2"
             }
         ],
-        "craftTimeMs": 10000
+        "craftTimeMs": 10000,
+        "gasEnv": null
     },
     "dismantler_glassenr_xiranite_poly_1": {
         "id": "dismantler_glassenr_xiranite_poly_1",
@@ -1867,7 +1954,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_xiranite_poly"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "tools_proc_battery_1_1": {
         "id": "tools_proc_battery_1_1",
@@ -1889,7 +1977,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_proc_battery_1"
             }
         ],
-        "craftTimeMs": 10000
+        "craftTimeMs": 10000,
+        "gasEnv": null
     },
     "dismantler_iron_acid_1": {
         "id": "dismantler_iron_acid_1",
@@ -1911,7 +2000,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_acid"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "furnance_iron_nugget_1": {
         "id": "furnance_iron_nugget_1",
@@ -1929,7 +2019,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_iron_nugget"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_iron_copper_1": {
         "id": "dismantler_iron_copper_1",
@@ -1951,7 +2042,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_copper"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "furnance_carbon_material_6": {
         "id": "furnance_carbon_material_6",
@@ -1969,7 +2061,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_carbon_mtl"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_iron_copper_enr_1": {
         "id": "dismantler_iron_copper_enr_1",
@@ -1991,7 +2084,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_copper_enr"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "xiranite_oven_xiranite_powder_1": {
         "id": "xiranite_oven_xiranite_powder_1",
@@ -2013,7 +2107,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_xiranite_powder"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_iron_grass_1_1": {
         "id": "dismantler_iron_grass_1_1",
@@ -2035,7 +2130,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_plant_grass_1"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "furnance_carbon_powder_2": {
         "id": "furnance_carbon_powder_2",
@@ -2053,7 +2149,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_carbon_powder"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_iron_grass_2_1": {
         "id": "dismantler_iron_grass_2_1",
@@ -2075,7 +2172,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_plant_grass_2"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_iron_sewage_1": {
         "id": "dismantler_iron_sewage_1",
@@ -2097,7 +2195,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_sewage"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "pool_liquid_xiranite_poly_2": {
         "id": "pool_liquid_xiranite_poly_2",
@@ -2123,7 +2222,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_xiranite_lowpoly"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "thickener_iron_enr_powder_1": {
         "id": "thickener_iron_enr_powder_1",
@@ -2145,7 +2245,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_iron_enr_powder"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "tools_proc_rec_hp_5_1": {
         "id": "tools_proc_rec_hp_5_1",
@@ -2167,7 +2268,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_bottled_rec_hp_5"
             }
         ],
-        "craftTimeMs": 10000
+        "craftTimeMs": 10000,
+        "gasEnv": null
     },
     "dismantler_iron_xiranite_1": {
         "id": "dismantler_iron_xiranite_1",
@@ -2189,7 +2291,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_xiranite"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_bottled_glass_xiranite": {
         "id": "filling_bottled_glass_xiranite",
@@ -2211,7 +2314,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_glass_xiranite"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_iron_xiranite_enr_1": {
         "id": "dismantler_iron_xiranite_enr_1",
@@ -2233,7 +2337,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_xiranite_enr"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_bottled_copperenr_acid": {
         "id": "filling_bottled_copperenr_acid",
@@ -2255,7 +2360,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_copperenr_acid"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_bottled_ironenr_sewage": {
         "id": "filling_bottled_ironenr_sewage",
@@ -2277,7 +2383,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_ironenr_sewage"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_iron_xiranite_poly_1": {
         "id": "dismantler_iron_xiranite_poly_1",
@@ -2299,7 +2406,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_xiranite_poly"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_ironenr_acid_1": {
         "id": "dismantler_ironenr_acid_1",
@@ -2321,7 +2429,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_acid"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_ironenr_copper_1": {
         "id": "dismantler_ironenr_copper_1",
@@ -2343,7 +2452,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_copper"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_ironenr_xiranite_enr_1": {
         "id": "dismantler_ironenr_xiranite_enr_1",
@@ -2365,7 +2475,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_xiranite_enr"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "planter_plant_bbflower_1": {
         "id": "planter_plant_bbflower_1",
@@ -2383,7 +2494,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_plant_bbflower_1"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "winder_equip_script_4_2": {
         "id": "winder_equip_script_4_2",
@@ -2405,7 +2517,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_equip_script_4_2"
             }
         ],
-        "craftTimeMs": 10000
+        "craftTimeMs": 10000,
+        "gasEnv": null
     },
     "dismantler_ironenr_copper_enr_1": {
         "id": "dismantler_ironenr_copper_enr_1",
@@ -2427,7 +2540,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_copper_enr"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_bottled_glass_grass_1": {
         "id": "filling_bottled_glass_grass_1",
@@ -2449,7 +2563,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_glass_grass_1"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "pool_liquid_copper_2": {
         "id": "pool_liquid_copper_2",
@@ -2471,7 +2586,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_copper"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_ironenr_sewage_1": {
         "id": "dismantler_ironenr_sewage_1",
@@ -2493,7 +2609,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_sewage"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_ironenr_water_1": {
         "id": "dismantler_ironenr_water_1",
@@ -2515,7 +2632,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_water"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "pool_liquid_xiranite_poly_1": {
         "id": "pool_liquid_xiranite_poly_1",
@@ -2541,7 +2659,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_xiranite_lowpoly"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_ironenr_xiranite_lowpoly_1": {
         "id": "dismantler_ironenr_xiranite_lowpoly_1",
@@ -2563,7 +2682,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_xiranite_lowpoly"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_ironenr_xiranite_poly_1": {
         "id": "dismantler_ironenr_xiranite_poly_1",
@@ -2585,7 +2705,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_xiranite_poly"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "grinder_crystal_powder_1": {
         "id": "grinder_crystal_powder_1",
@@ -2603,7 +2724,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_crystal_powder"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_bottled_copper_acid": {
         "id": "filling_bottled_copper_acid",
@@ -2625,7 +2747,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_copper_acid"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_bottled_copper_copper": {
         "id": "filling_bottled_copper_copper",
@@ -2647,7 +2770,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_copper_copper"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_bottled_glassenr_copper": {
         "id": "filling_bottled_glassenr_copper",
@@ -2669,7 +2793,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_glassenr_copper"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_bottled_copper_copper_enr": {
         "id": "filling_bottled_copper_copper_enr",
@@ -2691,7 +2816,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_copper_copper_enr"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_bottled_copper_grass_1": {
         "id": "filling_bottled_copper_grass_1",
@@ -2713,7 +2839,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_copper_grass_1"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_bottled_copper_xiranite_enr": {
         "id": "filling_bottled_copper_xiranite_enr",
@@ -2735,7 +2862,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_copper_xiranite_enr"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_bottled_copper_xiranite_lowpoly": {
         "id": "filling_bottled_copper_xiranite_lowpoly",
@@ -2757,7 +2885,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_copper_xiranite_lowpoly"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_bottled_ironenr_grass_1": {
         "id": "filling_bottled_ironenr_grass_1",
@@ -2779,7 +2908,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_ironenr_grass_1"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_bottled_copper_xiranite_poly": {
         "id": "filling_bottled_copper_xiranite_poly",
@@ -2801,7 +2931,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_copper_xiranite_poly"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_bottled_copperenr_copper": {
         "id": "filling_bottled_copperenr_copper",
@@ -2823,7 +2954,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_copperenr_copper"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "tools_proc_activity_xiranite_enr_tool_1": {
         "id": "tools_proc_activity_xiranite_enr_tool_1",
@@ -2845,7 +2977,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_activity_xiranite_enr_tool"
             }
         ],
-        "craftTimeMs": 10000
+        "craftTimeMs": 10000,
+        "gasEnv": null
     },
     "filling_bottled_copperenr_copper_enr": {
         "id": "filling_bottled_copperenr_copper_enr",
@@ -2867,7 +3000,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_copperenr_copper_enr"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_bottled_copperenr_grass_1": {
         "id": "filling_bottled_copperenr_grass_1",
@@ -2889,7 +3023,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_copperenr_grass_1"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "tools_proc_activity_xiranite_enr_hulu_1": {
         "id": "tools_proc_activity_xiranite_enr_hulu_1",
@@ -2911,7 +3046,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_activity_xiranite_enr_hulu"
             }
         ],
-        "craftTimeMs": 10000
+        "craftTimeMs": 10000,
+        "gasEnv": null
     },
     "tools_proc_battery_3_1": {
         "id": "tools_proc_battery_3_1",
@@ -2933,7 +3069,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_proc_battery_3"
             }
         ],
-        "craftTimeMs": 10000
+        "craftTimeMs": 10000,
+        "gasEnv": null
     },
     "filling_bottled_copperenr_grass_2": {
         "id": "filling_bottled_copperenr_grass_2",
@@ -2955,7 +3092,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_copperenr_grass_2"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_bottled_copperenr_sewage": {
         "id": "filling_bottled_copperenr_sewage",
@@ -2977,7 +3115,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_copperenr_sewage"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "grinder_iron_powder_1": {
         "id": "grinder_iron_powder_1",
@@ -2995,7 +3134,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_iron_powder"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "thickener_originium_enr_powder_1": {
         "id": "thickener_originium_enr_powder_1",
@@ -3017,7 +3157,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_originium_enr_powder"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_bottled_copperenr_water": {
         "id": "filling_bottled_copperenr_water",
@@ -3039,7 +3180,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_copperenr_water"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "shaper_glass_enr_bottle_1": {
         "id": "shaper_glass_enr_bottle_1",
@@ -3057,7 +3199,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_glass_enr_bottle"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "tools_proc_battery_2_1": {
         "id": "tools_proc_battery_2_1",
@@ -3079,7 +3222,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_proc_battery_2"
             }
         ],
-        "craftTimeMs": 10000
+        "craftTimeMs": 10000,
+        "gasEnv": null
     },
     "filling_bottled_copperenr_xiranite": {
         "id": "filling_bottled_copperenr_xiranite",
@@ -3101,7 +3245,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_copperenr_xiranite"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_bottled_copperenr_xiranite_enr": {
         "id": "filling_bottled_copperenr_xiranite_enr",
@@ -3123,7 +3268,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_copperenr_xiranite_enr"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_bottled_copperenr_xiranite_poly": {
         "id": "filling_bottled_copperenr_xiranite_poly",
@@ -3145,7 +3291,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_copperenr_xiranite_poly"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "grinder_copper_powder_1": {
         "id": "grinder_copper_powder_1",
@@ -3163,7 +3310,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_copper_powder"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_bottled_food_1_1": {
         "id": "filling_bottled_food_1_1",
@@ -3185,7 +3333,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_bottled_food_1"
             }
         ],
-        "craftTimeMs": 10000
+        "craftTimeMs": 10000,
+        "gasEnv": null
     },
     "furnance_crystal_enr_1": {
         "id": "furnance_crystal_enr_1",
@@ -3203,7 +3352,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_crystal_enr"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_bottled_food_2_1": {
         "id": "filling_bottled_food_2_1",
@@ -3225,7 +3375,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_bottled_food_2"
             }
         ],
-        "craftTimeMs": 10000
+        "craftTimeMs": 10000,
+        "gasEnv": null
     },
     "furnance_iron_enr_1": {
         "id": "furnance_iron_enr_1",
@@ -3243,7 +3394,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_iron_enr"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_bottled_glass_copper": {
         "id": "filling_bottled_glass_copper",
@@ -3265,7 +3417,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_glass_copper"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_bottled_glass_xiranite_poly": {
         "id": "filling_bottled_glass_xiranite_poly",
@@ -3287,7 +3440,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_glass_xiranite_poly"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_bottled_glass_copper_enr": {
         "id": "filling_bottled_glass_copper_enr",
@@ -3309,7 +3463,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_glass_copper_enr"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_bottled_glass_grass_2": {
         "id": "filling_bottled_glass_grass_2",
@@ -3331,7 +3486,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_glass_grass_2"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "grinder_plant_moss_powder_3_1": {
         "id": "grinder_plant_moss_powder_3_1",
@@ -3349,7 +3505,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_plant_moss_powder_3"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_bottled_glass_sewage": {
         "id": "filling_bottled_glass_sewage",
@@ -3371,7 +3528,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_glass_sewage"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "furnance_carbon_powder_3": {
         "id": "furnance_carbon_powder_3",
@@ -3389,7 +3547,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_carbon_powder"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "shaper_copper_bottle_1": {
         "id": "shaper_copper_bottle_1",
@@ -3407,7 +3566,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_copper_bottle"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_bottled_glass_water": {
         "id": "filling_bottled_glass_water",
@@ -3429,7 +3589,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_glass_water"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_bottled_glass_xiranite_lowpoly": {
         "id": "filling_bottled_glass_xiranite_lowpoly",
@@ -3451,7 +3612,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_glass_xiranite_lowpoly"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_bottled_glassenr_acid": {
         "id": "filling_bottled_glassenr_acid",
@@ -3473,7 +3635,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_glassenr_acid"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "winder_equip_script_4_1": {
         "id": "winder_equip_script_4_1",
@@ -3495,7 +3658,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_equip_script_4_1"
             }
         ],
-        "craftTimeMs": 10000
+        "craftTimeMs": 10000,
+        "gasEnv": null
     },
     "filling_bottled_glassenr_copper_enr": {
         "id": "filling_bottled_glassenr_copper_enr",
@@ -3517,7 +3681,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_glassenr_copper_enr"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "pool_liquid_plant_grass_1_2": {
         "id": "pool_liquid_plant_grass_1_2",
@@ -3539,7 +3704,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_plant_grass_1"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_bottled_glassenr_grass_1": {
         "id": "filling_bottled_glassenr_grass_1",
@@ -3561,7 +3727,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_glassenr_grass_1"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_bottled_glassenr_grass_2": {
         "id": "filling_bottled_glassenr_grass_2",
@@ -3583,7 +3750,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_glassenr_grass_2"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_bottled_glassenr_sewage": {
         "id": "filling_bottled_glassenr_sewage",
@@ -3605,7 +3773,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_glassenr_sewage"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_bottled_iron_sewage": {
         "id": "filling_bottled_iron_sewage",
@@ -3627,7 +3796,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_iron_sewage"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_bottled_glassenr_water": {
         "id": "filling_bottled_glassenr_water",
@@ -3649,7 +3819,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_glassenr_water"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_bottled_glassenr_xiranite": {
         "id": "filling_bottled_glassenr_xiranite",
@@ -3671,7 +3842,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_glassenr_xiranite"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_bottled_glassenr_xiranite_enr": {
         "id": "filling_bottled_glassenr_xiranite_enr",
@@ -3693,7 +3865,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_glassenr_xiranite_enr"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_bottled_glassenr_xiranite_lowpoly": {
         "id": "filling_bottled_glassenr_xiranite_lowpoly",
@@ -3715,7 +3888,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_glassenr_xiranite_lowpoly"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_bottled_glassenr_xiranite_poly": {
         "id": "filling_bottled_glassenr_xiranite_poly",
@@ -3737,7 +3911,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_glassenr_xiranite_poly"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "thickener_quartz_enr_powder_1": {
         "id": "thickener_quartz_enr_powder_1",
@@ -3759,7 +3934,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_quartz_enr_powder"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_bottled_iron_acid": {
         "id": "filling_bottled_iron_acid",
@@ -3781,7 +3957,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_iron_acid"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "tools_proc_battery_5_1": {
         "id": "tools_proc_battery_5_1",
@@ -3803,7 +3980,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_proc_battery_5"
             }
         ],
-        "craftTimeMs": 10000
+        "craftTimeMs": 10000,
+        "gasEnv": null
     },
     "filling_bottled_iron_grass_1": {
         "id": "filling_bottled_iron_grass_1",
@@ -3825,7 +4003,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_iron_grass_1"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_bottled_iron_grass_2": {
         "id": "filling_bottled_iron_grass_2",
@@ -3847,7 +4026,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_iron_grass_2"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_bottled_iron_water": {
         "id": "filling_bottled_iron_water",
@@ -3869,7 +4049,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_iron_water"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_bottled_iron_xiranite": {
         "id": "filling_bottled_iron_xiranite",
@@ -3891,7 +4072,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_iron_xiranite"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_bottled_iron_xiranite_enr": {
         "id": "filling_bottled_iron_xiranite_enr",
@@ -3913,7 +4095,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_iron_xiranite_enr"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "shaper_copper_enr_bottle_1": {
         "id": "shaper_copper_enr_bottle_1",
@@ -3931,7 +4114,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_copper_enr_bottle"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_bottled_iron_xiranite_lowpoly": {
         "id": "filling_bottled_iron_xiranite_lowpoly",
@@ -3953,7 +4137,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_iron_xiranite_lowpoly"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_bottled_iron_xiranite_poly": {
         "id": "filling_bottled_iron_xiranite_poly",
@@ -3975,7 +4160,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_iron_xiranite_poly"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_bottled_ironenr_acid": {
         "id": "filling_bottled_ironenr_acid",
@@ -3997,7 +4183,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_ironenr_acid"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_bottled_ironenr_copper": {
         "id": "filling_bottled_ironenr_copper",
@@ -4019,7 +4206,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_ironenr_copper"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "seedcollector_plant_moss_1_1": {
         "id": "seedcollector_plant_moss_1_1",
@@ -4037,7 +4225,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_plant_moss_seed_1"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_bottled_ironenr_grass_2": {
         "id": "filling_bottled_ironenr_grass_2",
@@ -4059,7 +4248,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_ironenr_grass_2"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "furnance_carbon_powder_4": {
         "id": "furnance_carbon_powder_4",
@@ -4077,7 +4267,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_carbon_powder"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_bottled_ironenr_water": {
         "id": "filling_bottled_ironenr_water",
@@ -4099,7 +4290,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_ironenr_water"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_bottled_ironenr_xiranite": {
         "id": "filling_bottled_ironenr_xiranite",
@@ -4121,7 +4313,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_ironenr_xiranite"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_bottled_ironenr_xiranite_enr": {
         "id": "filling_bottled_ironenr_xiranite_enr",
@@ -4143,7 +4336,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_ironenr_xiranite_enr"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_bottled_ironenr_xiranite_poly": {
         "id": "filling_bottled_ironenr_xiranite_poly",
@@ -4165,7 +4359,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_ironenr_xiranite_poly"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_bottled_rec_hp_1_1": {
         "id": "filling_bottled_rec_hp_1_1",
@@ -4187,7 +4382,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_bottled_rec_hp_1"
             }
         ],
-        "craftTimeMs": 10000
+        "craftTimeMs": 10000,
+        "gasEnv": null
     },
     "xiranite_oven_xiranite_enr_powder_1": {
         "id": "xiranite_oven_xiranite_enr_powder_1",
@@ -4209,7 +4405,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_xiranite_enr_powder"
             }
         ],
-        "craftTimeMs": 10000
+        "craftTimeMs": 10000,
+        "gasEnv": null
     },
     "filling_bottled_rec_hp_2_1": {
         "id": "filling_bottled_rec_hp_2_1",
@@ -4231,7 +4428,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_bottled_rec_hp_2"
             }
         ],
-        "craftTimeMs": 10000
+        "craftTimeMs": 10000,
+        "gasEnv": null
     },
     "winder_equip_script_4": {
         "id": "winder_equip_script_4",
@@ -4253,7 +4451,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_equip_script_4"
             }
         ],
-        "craftTimeMs": 10000
+        "craftTimeMs": 10000,
+        "gasEnv": null
     },
     "filling_bottled_rec_hp_3_1": {
         "id": "filling_bottled_rec_hp_3_1",
@@ -4275,7 +4474,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_bottled_rec_hp_3"
             }
         ],
-        "craftTimeMs": 10000
+        "craftTimeMs": 10000,
+        "gasEnv": null
     },
     "filling_bottled_xiranenr_grass_2": {
         "id": "filling_bottled_xiranenr_grass_2",
@@ -4297,7 +4497,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_fbottle_xiranenr_grass_2"
             }
         ],
-        "craftTimeMs": 10000
+        "craftTimeMs": 10000,
+        "gasEnv": null
     },
     "furnance_carbon_enr_1": {
         "id": "furnance_carbon_enr_1",
@@ -4315,7 +4516,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_carbon_enr"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "pool_liquid_liquid_xiranite_1": {
         "id": "pool_liquid_liquid_xiranite_1",
@@ -4337,7 +4539,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_xiranite"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "furnance_carbon_enr_powder_1": {
         "id": "furnance_carbon_enr_powder_1",
@@ -4355,7 +4558,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_carbon_enr_powder"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "furnance_carbon_powder_5": {
         "id": "furnance_carbon_powder_5",
@@ -4373,7 +4577,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_carbon_powder"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "furnance_carbon_enr_powder_2": {
         "id": "furnance_carbon_enr_powder_2",
@@ -4391,7 +4596,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_carbon_enr_powder"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "pool_liquid_xiranite_enr_1": {
         "id": "pool_liquid_xiranite_enr_1",
@@ -4413,7 +4619,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_xiranite_enr"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "furnance_carbon_material_1": {
         "id": "furnance_carbon_material_1",
@@ -4431,7 +4638,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_carbon_mtl"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "furnance_carbon_material_3": {
         "id": "furnance_carbon_material_3",
@@ -4449,7 +4657,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_carbon_mtl"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "furnance_iron_nugget_2": {
         "id": "furnance_iron_nugget_2",
@@ -4467,7 +4676,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_iron_nugget"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "furnance_carbon_material_4": {
         "id": "furnance_carbon_material_4",
@@ -4485,7 +4695,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_carbon_mtl"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "furnance_carbon_powder_1": {
         "id": "furnance_carbon_powder_1",
@@ -4503,7 +4714,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_carbon_powder"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "furnance_copper_nugget_1": {
         "id": "furnance_copper_nugget_1",
@@ -4529,7 +4741,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_sewage"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "furnance_crystal_enr_powder_1": {
         "id": "furnance_crystal_enr_powder_1",
@@ -4547,7 +4760,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_crystal_enr_powder"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "furnance_crystal_powder_1": {
         "id": "furnance_crystal_powder_1",
@@ -4565,7 +4779,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_crystal_powder"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "furnance_crystal_shell_1": {
         "id": "furnance_crystal_shell_1",
@@ -4583,7 +4798,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_crystal_shell"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "furnance_quartz_glass_1": {
         "id": "furnance_quartz_glass_1",
@@ -4601,7 +4817,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_quartz_glass"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "furnance_quartz_glass_2": {
         "id": "furnance_quartz_glass_2",
@@ -4619,7 +4836,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_quartz_glass"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "grinder_carbon_powder_1": {
         "id": "grinder_carbon_powder_1",
@@ -4637,7 +4855,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_carbon_powder"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "grinder_originium_powder_1": {
         "id": "grinder_originium_powder_1",
@@ -4655,7 +4874,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_originium_powder"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "grinder_plant_bbflower_powder_1_1": {
         "id": "grinder_plant_bbflower_powder_1_1",
@@ -4673,7 +4893,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_plant_bbflower_powder_1"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "grinder_plant_grass_powder_1_1": {
         "id": "grinder_plant_grass_powder_1_1",
@@ -4691,7 +4912,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_plant_grass_powder_1"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "grinder_plant_grass_powder_2_1": {
         "id": "grinder_plant_grass_powder_2_1",
@@ -4709,7 +4931,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_plant_grass_powder_2"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "grinder_plant_moss_powder_1_1": {
         "id": "grinder_plant_moss_powder_1_1",
@@ -4727,7 +4950,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_plant_moss_powder_1"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "planter_plant_grass_1_1": {
         "id": "planter_plant_grass_1_1",
@@ -4749,7 +4973,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_plant_grass_1"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "grinder_plant_moss_powder_2_1": {
         "id": "grinder_plant_moss_powder_2_1",
@@ -4767,7 +4992,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_plant_moss_powder_2"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "grinder_quartz_powder_1": {
         "id": "grinder_quartz_powder_1",
@@ -4785,7 +5011,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_quartz_powder"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "liquid_purifier_copper_enr_1": {
         "id": "liquid_purifier_copper_enr_1",
@@ -4807,7 +5034,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_acid"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "planter_plant_moss_1_1": {
         "id": "planter_plant_moss_1_1",
@@ -4825,7 +5053,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_plant_moss_1"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "planter_plant_moss_3_1": {
         "id": "planter_plant_moss_3_1",
@@ -4843,7 +5072,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_plant_moss_3"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "pool_copper_enr_1": {
         "id": "pool_copper_enr_1",
@@ -4869,7 +5099,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_sewage"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "pool_copper_enr_2": {
         "id": "pool_copper_enr_2",
@@ -4895,7 +5126,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_sewage"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "pool_liquid_plant_grass_1_1": {
         "id": "pool_liquid_plant_grass_1_1",
@@ -4917,7 +5149,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_plant_grass_1"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "pool_liquid_plant_grass_2_1": {
         "id": "pool_liquid_plant_grass_2_1",
@@ -4939,7 +5172,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_plant_grass_2"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "shaper_iron_bottle_1": {
         "id": "shaper_iron_bottle_1",
@@ -4957,7 +5191,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_iron_bottle"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "pool_liquid_plant_grass_2_2": {
         "id": "pool_liquid_plant_grass_2_2",
@@ -4979,7 +5214,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_plant_grass_2"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "pool_liquid_xiranite_enr_2": {
         "id": "pool_liquid_xiranite_enr_2",
@@ -5001,7 +5237,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_xiranite_enr"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "pool_xiranite_poly_1": {
         "id": "pool_xiranite_poly_1",
@@ -5027,7 +5264,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_sewage"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "seedcollector_plant_moss_2_1": {
         "id": "seedcollector_plant_moss_2_1",
@@ -5045,7 +5283,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_plant_moss_seed_2"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "seedcollector_plant_moss_3_1": {
         "id": "seedcollector_plant_moss_3_1",
@@ -5063,7 +5302,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_plant_moss_seed_3"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "seedcollector_plant_sp_1": {
         "id": "seedcollector_plant_sp_1",
@@ -5081,7 +5321,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_plant_sp_seed_1"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "seedcollector_plant_sp_2": {
         "id": "seedcollector_plant_sp_2",
@@ -5099,7 +5340,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_plant_sp_seed_2"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "seedcollector_plant_sp_4": {
         "id": "seedcollector_plant_sp_4",
@@ -5117,7 +5359,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_plant_sp_seed_4"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "shaper_activity_xiranite_bottle_1": {
         "id": "shaper_activity_xiranite_bottle_1",
@@ -5135,7 +5378,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_activity_xiranite_bottle"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "shaper_activity_xiranite_enr_bottle_1": {
         "id": "shaper_activity_xiranite_enr_bottle_1",
@@ -5153,7 +5397,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_activity_xiranite_enr_bottle"
             }
         ],
-        "craftTimeMs": 20000
+        "craftTimeMs": 20000,
+        "gasEnv": null
     },
     "shaper_iron_enr_bottle_1": {
         "id": "shaper_iron_enr_bottle_1",
@@ -5171,7 +5416,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_iron_enr_bottle"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "thickener_carbon_enr_powder_1": {
         "id": "thickener_carbon_enr_powder_1",
@@ -5193,7 +5439,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_carbon_enr_powder"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "thickener_crystal_enr_powder_1": {
         "id": "thickener_crystal_enr_powder_1",
@@ -5215,7 +5462,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_crystal_enr_powder"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "thickener_plant_moss_enr_powder_1_1": {
         "id": "thickener_plant_moss_enr_powder_1_1",
@@ -5237,7 +5485,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_plant_moss_enr_powder_1"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "thickener_plant_moss_enr_powder_2_1": {
         "id": "thickener_plant_moss_enr_powder_2_1",
@@ -5259,7 +5508,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_plant_moss_enr_powder_2"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "tools_proc_battery_4_1": {
         "id": "tools_proc_battery_4_1",
@@ -5281,7 +5531,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_proc_battery_4"
             }
         ],
-        "craftTimeMs": 10000
+        "craftTimeMs": 10000,
+        "gasEnv": null
     },
     "tools_proc_bomb_1_1": {
         "id": "tools_proc_bomb_1_1",
@@ -5303,7 +5554,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_proc_bomb_1"
             }
         ],
-        "craftTimeMs": 10000
+        "craftTimeMs": 10000,
+        "gasEnv": null
     },
     "tools_proc_food_4_1": {
         "id": "tools_proc_food_4_1",
@@ -5325,7 +5577,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_bottled_food_4"
             }
         ],
-        "craftTimeMs": 10000
+        "craftTimeMs": 10000,
+        "gasEnv": null
     },
     "tools_proc_food_5_1": {
         "id": "tools_proc_food_5_1",
@@ -5347,7 +5600,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_bottled_food_5"
             }
         ],
-        "craftTimeMs": 10000
+        "craftTimeMs": 10000,
+        "gasEnv": null
     },
     "winder_equip_script_1": {
         "id": "winder_equip_script_1",
@@ -5369,7 +5623,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_equip_script_1"
             }
         ],
-        "craftTimeMs": 10000
+        "craftTimeMs": 10000,
+        "gasEnv": null
     },
     "winder_equip_script_3": {
         "id": "winder_equip_script_3",
@@ -5391,7 +5646,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_equip_script_3"
             }
         ],
-        "craftTimeMs": 10000
+        "craftTimeMs": 10000,
+        "gasEnv": null
     },
     "xiranite_oven_muck_xiranite_1": {
         "id": "xiranite_oven_muck_xiranite_1",
@@ -5413,7 +5669,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_muck_xiranite_1"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "component_copper_enr2_cmpt_1": {
         "id": "component_copper_enr2_cmpt_1",
@@ -5431,7 +5688,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_copper_enr2_cmpt"
             }
         ],
-        "craftTimeMs": 10000
+        "craftTimeMs": 10000,
+        "gasEnv": null
     },
     "dismantler_copperjar_gas_acid_1": {
         "id": "dismantler_copperjar_gas_acid_1",
@@ -5453,7 +5711,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_gas_acid"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_copperjar_gas_copper_1": {
         "id": "dismantler_copperjar_gas_copper_1",
@@ -5475,7 +5734,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_gas_copper"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_copperjar_gas_copper_enr2_1": {
         "id": "dismantler_copperjar_gas_copper_enr2_1",
@@ -5497,7 +5757,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_gas_copper_enr2"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_copperjar_gas_copper_enr_1": {
         "id": "dismantler_copperjar_gas_copper_enr_1",
@@ -5519,7 +5780,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_gas_copper_enr"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_copperjar_gas_inert_1": {
         "id": "dismantler_copperjar_gas_inert_1",
@@ -5541,7 +5803,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_gas_inert"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_copperjar_gas_water_1": {
         "id": "dismantler_copperjar_gas_water_1",
@@ -5563,7 +5826,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_gas_water"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_copperjar_gas_xiranite_1": {
         "id": "dismantler_copperjar_gas_xiranite_1",
@@ -5585,7 +5849,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_gas_xiranite"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "dismantler_copperjar_gas_xiranite_enr_1": {
         "id": "dismantler_copperjar_gas_xiranite_enr_1",
@@ -5607,7 +5872,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_gas_xiranite_enr"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_copperjar_copper_enr2_1": {
         "id": "filling_copperjar_copper_enr2_1",
@@ -5629,7 +5895,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_gasjar_copper_gas_copper_enr2"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_copperjar_gas_acid_1": {
         "id": "filling_copperjar_gas_acid_1",
@@ -5651,7 +5918,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_gasjar_copper_gas_acid"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_copperjar_gas_copper_1": {
         "id": "filling_copperjar_gas_copper_1",
@@ -5673,7 +5941,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_gasjar_copper_gas_copper"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_copperjar_gas_copper_enr_1": {
         "id": "filling_copperjar_gas_copper_enr_1",
@@ -5695,7 +5964,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_gasjar_copper_gas_copper_enr"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_copperjar_gas_inert_1": {
         "id": "filling_copperjar_gas_inert_1",
@@ -5717,7 +5987,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_gasjar_copper_gas_inert"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_copperjar_gas_water_1": {
         "id": "filling_copperjar_gas_water_1",
@@ -5739,7 +6010,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_gasjar_copper_gas_water"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_copperjar_gas_xiranite_1": {
         "id": "filling_copperjar_gas_xiranite_1",
@@ -5761,7 +6033,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_gasjar_copper_gas_xiranite"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "filling_copperjar_gas_xiranite_enr_1": {
         "id": "filling_copperjar_gas_xiranite_enr_1",
@@ -5783,7 +6056,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_gasjar_copper_gas_xiranite_enr"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "gas_reactor_gas_copper_enr2_1": {
         "id": "gas_reactor_gas_copper_enr2_1",
@@ -5805,7 +6079,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_gas_copper_enr2"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": "gas_env_acidic"
     },
     "liquid_purifier_gas_copper_enr_1": {
         "id": "liquid_purifier_gas_copper_enr_1",
@@ -5827,7 +6102,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_gas_copper_enr"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "liquid_purifier_gas_copper_enr_2": {
         "id": "liquid_purifier_gas_copper_enr_2",
@@ -5849,7 +6125,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_gas_copper_enr"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": "gas_env_stable"
     },
     "liquid_purifier_gas_xiranite_enr_1": {
         "id": "liquid_purifier_gas_xiranite_enr_1",
@@ -5871,7 +6148,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_gas_xiranite_enr"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "liquid_purifier_gas_xiranite_enr_2": {
         "id": "liquid_purifier_gas_xiranite_enr_2",
@@ -5893,7 +6171,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_gas_xiranite_enr"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": "gas_env_stable"
     },
     "liquid_transmuter_1_gas_gas_acid_1": {
         "id": "liquid_transmuter_1_gas_gas_acid_1",
@@ -5911,7 +6190,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_gas_acid"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "liquid_transmuter_1_gas_gas_copper_1": {
         "id": "liquid_transmuter_1_gas_gas_copper_1",
@@ -5929,7 +6209,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_gas_copper"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "liquid_transmuter_1_gas_gas_copper_enr_1": {
         "id": "liquid_transmuter_1_gas_gas_copper_enr_1",
@@ -5947,7 +6228,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_gas_copper_enr"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "liquid_transmuter_1_gas_gas_water_1": {
         "id": "liquid_transmuter_1_gas_gas_water_1",
@@ -5965,7 +6247,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_gas_water"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "liquid_transmuter_1_gas_gas_xiranite_1": {
         "id": "liquid_transmuter_1_gas_gas_xiranite_1",
@@ -5983,7 +6266,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_gas_xiranite"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "liquid_transmuter_1_gas_gas_xiranite_enr_1": {
         "id": "liquid_transmuter_1_gas_gas_xiranite_enr_1",
@@ -6001,7 +6285,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_gas_xiranite_enr"
             }
         ],
-        "craftTimeMs": 10000
+        "craftTimeMs": 10000,
+        "gasEnv": null
     },
     "liquid_transmuter_1_liquid_liquid_acid_1": {
         "id": "liquid_transmuter_1_liquid_liquid_acid_1",
@@ -6019,7 +6304,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_acid"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "liquid_transmuter_1_liquid_liquid_copper_1": {
         "id": "liquid_transmuter_1_liquid_liquid_copper_1",
@@ -6037,7 +6323,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_copper"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "liquid_transmuter_1_liquid_liquid_copper_enr_1": {
         "id": "liquid_transmuter_1_liquid_liquid_copper_enr_1",
@@ -6055,7 +6342,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_copper_enr"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "liquid_transmuter_1_liquid_liquid_water_1": {
         "id": "liquid_transmuter_1_liquid_liquid_water_1",
@@ -6073,7 +6361,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_water"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "liquid_transmuter_1_liquid_liquid_xiranite_1": {
         "id": "liquid_transmuter_1_liquid_liquid_xiranite_1",
@@ -6091,7 +6380,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_xiranite"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "liquid_transmuter_1_liquid_liquid_xiranite_enr_1": {
         "id": "liquid_transmuter_1_liquid_liquid_xiranite_enr_1",
@@ -6109,7 +6399,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_liquid_xiranite_enr"
             }
         ],
-        "craftTimeMs": 10000
+        "craftTimeMs": 10000,
+        "gasEnv": null
     },
     "liquid_transmuter_2_gas_gas_copper_1": {
         "id": "liquid_transmuter_2_gas_gas_copper_1",
@@ -6127,7 +6418,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_gas_copper"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "liquid_transmuter_2_gas_gas_copper_enr2_1": {
         "id": "liquid_transmuter_2_gas_gas_copper_enr2_1",
@@ -6145,7 +6437,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_gas_copper_enr2"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "liquid_transmuter_2_gas_gas_copper_enr_1": {
         "id": "liquid_transmuter_2_gas_gas_copper_enr_1",
@@ -6163,7 +6456,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_gas_copper_enr"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "liquid_transmuter_2_gas_gas_xiranite_1": {
         "id": "liquid_transmuter_2_gas_gas_xiranite_1",
@@ -6181,7 +6475,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_gas_xiranite"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "liquid_transmuter_2_gas_gas_xiranite_enr_1": {
         "id": "liquid_transmuter_2_gas_gas_xiranite_enr_1",
@@ -6199,7 +6494,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_gas_xiranite_enr"
             }
         ],
-        "craftTimeMs": 10000
+        "craftTimeMs": 10000,
+        "gasEnv": null
     },
     "liquid_transmuter_2_solid_copper_enr2_1": {
         "id": "liquid_transmuter_2_solid_copper_enr2_1",
@@ -6217,7 +6513,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_copper_enr2"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "liquid_transmuter_2_solid_copper_enr_1": {
         "id": "liquid_transmuter_2_solid_copper_enr_1",
@@ -6235,7 +6532,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_copper_enr"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "liquid_transmuter_2_solid_copper_nugget_1": {
         "id": "liquid_transmuter_2_solid_copper_nugget_1",
@@ -6253,7 +6551,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_copper_nugget"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "liquid_transmuter_2_solid_xiranite_enr_powder_1": {
         "id": "liquid_transmuter_2_solid_xiranite_enr_powder_1",
@@ -6271,7 +6570,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_xiranite_enr_powder"
             }
         ],
-        "craftTimeMs": 10000
+        "craftTimeMs": 10000,
+        "gasEnv": null
     },
     "liquid_transmuter_2_solid_xiranite_powder_1": {
         "id": "liquid_transmuter_2_solid_xiranite_powder_1",
@@ -6289,7 +6589,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_xiranite_powder"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "shaper_gas_copper_jar_1": {
         "id": "shaper_gas_copper_jar_1",
@@ -6311,7 +6612,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_copper_jar"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "tools_proc_filter_core_2": {
         "id": "tools_proc_filter_core_2",
@@ -6333,7 +6635,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_filter_core"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "winder_equip_script_4_3": {
         "id": "winder_equip_script_4_3",
@@ -6355,7 +6658,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_equip_script_4_3"
             }
         ],
-        "craftTimeMs": 10000
+        "craftTimeMs": 10000,
+        "gasEnv": null
     },
     "xiranite_oven_xiranite_powder_2": {
         "id": "xiranite_oven_xiranite_powder_2",
@@ -6377,7 +6681,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_xiranite_powder"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": "gas_env_stable"
     },
     "component_activity_copper_poly_cmpt": {
         "id": "component_activity_copper_poly_cmpt",
@@ -6395,7 +6700,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_activity_copper_poly_cmpt"
             }
         ],
-        "craftTimeMs": 10000
+        "craftTimeMs": 10000,
+        "gasEnv": null
     },
     "furnance_activity_xiranite_enr_nugget_1": {
         "id": "furnance_activity_xiranite_enr_nugget_1",
@@ -6413,7 +6719,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_activity_xiranite_enr_nugget"
             }
         ],
-        "craftTimeMs": 10000
+        "craftTimeMs": 10000,
+        "gasEnv": null
     },
     "furnance_activity_xiranite_nugget_1": {
         "id": "furnance_activity_xiranite_nugget_1",
@@ -6431,7 +6738,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_activity_xiranite_nugget"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "gas_reactor_activity_copper_poly_gas_1": {
         "id": "gas_reactor_activity_copper_poly_gas_1",
@@ -6453,7 +6761,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_activity_copper_poly_gas"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": "gas_env_stable"
     },
     "liquid_transmuter_2_activity_copper_poly_1": {
         "id": "liquid_transmuter_2_activity_copper_poly_1",
@@ -6471,7 +6780,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_activity_copper_poly"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "liquid_transmuter_2_activity_copper_poly_gas_1": {
         "id": "liquid_transmuter_2_activity_copper_poly_gas_1",
@@ -6489,7 +6799,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_activity_copper_poly_gas"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "shaper_activity_xiranite_box_1": {
         "id": "shaper_activity_xiranite_box_1",
@@ -6507,7 +6818,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_activity_xiranite_box"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "shaper_gas_activity_xiranite_enr_box_1": {
         "id": "shaper_gas_activity_xiranite_enr_box_1",
@@ -6529,7 +6841,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_activity_xiranite_enr_box"
             }
         ],
-        "craftTimeMs": 10000
+        "craftTimeMs": 10000,
+        "gasEnv": null
     },
     "tools_proc_activity_copper_poly_tool_1": {
         "id": "tools_proc_activity_copper_poly_tool_1",
@@ -6551,7 +6864,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_activity_copper_poly_tool"
             }
         ],
-        "craftTimeMs": 10000
+        "craftTimeMs": 10000,
+        "gasEnv": null
     },
     "tools_proc_activity_xiranite_copper_tool_1": {
         "id": "tools_proc_activity_xiranite_copper_tool_1",
@@ -6573,7 +6887,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_activity_copper_xiranite_tool"
             }
         ],
-        "craftTimeMs": 2000
+        "craftTimeMs": 2000,
+        "gasEnv": null
     },
     "tools_proc_activity_xiranite_enr_lung": {
         "id": "tools_proc_activity_xiranite_enr_lung",
@@ -6595,7 +6910,8 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_activity_xiranite_enr_lung"
             }
         ],
-        "craftTimeMs": 10000
+        "craftTimeMs": 10000,
+        "gasEnv": null
     },
     "tools_proc_activity_xiranite_lung": {
         "id": "tools_proc_activity_xiranite_lung",
@@ -6617,6 +6933,7 @@ export const machineCrafts: Readonly<Record<string, MachineCraftData>> = {
                 "itemId": "item_activity_xiranite_lung"
             }
         ],
-        "craftTimeMs": 10000
+        "craftTimeMs": 10000,
+        "gasEnv": null
     }
 };

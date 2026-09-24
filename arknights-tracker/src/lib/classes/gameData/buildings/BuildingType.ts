@@ -4,4 +4,5 @@ export enum BuildingType {
     MINER = "miner",
     PUMP = "pump",
     GAS_MINER = "gasMiner",
+    VAPORIZER = "vaporizer",
 }

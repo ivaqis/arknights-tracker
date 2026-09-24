@@ -26,9 +26,17 @@ export class MinerStorage extends BuildingStorage<IMiner> implements IMinerStora
         );
         this._byConsumeItemId = DataMap.createListed(
             list,
-            miner => miner.mineableList
-                .map(item => item.consumeItem?.item.gameId)
-                .filter(item => item !== undefined)
+            miner => {
+                const set = new Set<string>();
+
+                for (const item of miner.mineableList) {
+                    if (item.consumeItem) {
+                        set.add(item.consumeItem.item.gameId);
+                    }
+                }
+
+                return set.values().toArray();
+            }
         );
     }
 

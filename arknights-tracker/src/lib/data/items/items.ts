@@ -2854,7 +2854,7 @@ export const items: Readonly<Record<string, ItemData>> = {
         "iconId": "item_port_vaporizer_1",
         "rarity": 4,
         "groupId": "facility",
-        "type": "other",
+        "type": "vaporizer",
         "material": null
     },
     "item_drop_klbuds_1": {
@@ -3297,4 +3297,4 @@ export const items: Readonly<Record<string, ItemData>> = {
         "type": "other",
         "material": null
     }
-};
+}

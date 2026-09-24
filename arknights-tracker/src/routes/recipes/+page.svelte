@@ -14,6 +14,7 @@
     import type { IMiner } from "$lib/classes/gameData/buildings/miners/IMiner";
     import type { IPowerStation } from "$lib/classes/gameData/buildings/powerStations/IPowerStation";
     import type { IPump } from "$lib/classes/gameData/buildings/pumps/IPump";
+    import type { IVaporizer } from "$lib/classes/gameData/buildings/vaporizers/IVaporizer";
     import type { IItem } from "$lib/classes/gameData/items/IItem";
     import type { IItemStack } from "$lib/classes/gameData/items/IItemStack";
     import type { ItemGroup } from "$lib/classes/gameData/items/ItemGroup";
@@ -21,6 +22,8 @@
     import type { ItemType } from "$lib/classes/gameData/items/ItemType";
     import { RecipeType } from "$lib/classes/gameData/recipes/RecipeType";
     import { RecipeSource } from "$lib/classes/gameData/recipes/sources/RecipeSource";
+    import { GasEnvRecipeSearcher } from "$lib/classes/searchers/recipes/GasEnvRecipeSearcher";
+    import type { IGasEnvRecipeSearcher } from "$lib/classes/searchers/recipes/IGasEnvRecipeSearcher";
     import type { IMachineCraftSearcher } from "$lib/classes/searchers/recipes/IMachineCraftSearcher";
     import type { IManualCraftSearcher } from "$lib/classes/searchers/recipes/IManualCraftSearcher";
     import type { IMinerRecipeSearcher } from "$lib/classes/searchers/recipes/IMinerRecipeSearcher";
@@ -35,6 +38,8 @@
     import { BuildingRecipeDataStorage } from "$lib/classes/storages/recipes/BuildingRecipeDataStorage";
     import { RecipeDataStorage } from "$lib/classes/storages/recipes/RecipeDataStorage";
     import BottomSheet from "$lib/components/BottomSheet.svelte";
+    import { CardSize } from "$lib/components/cards/CardSize";
+    import GasEnvCard from "$lib/components/cards/GasEnvCard.svelte";
     import ItemStackCard from "$lib/components/cards/ItemStackCard.svelte";
     import DataToolbar from "$lib/components/dataToolbarV2/DataToolbar.svelte";
     import RecipesFilterDropdown from "$lib/components/dataToolbarV2/filterDropdowns/RecipesFilterDropdown.svelte";
@@ -54,10 +59,12 @@
     import { minerStorage } from "$lib/dataStorages/buildings/minerStorage";
     import { powerStationStorage } from "$lib/dataStorages/buildings/powerStationStorage";
     import { pumpStorage } from "$lib/dataStorages/buildings/pumpStorage";
+    import { vaporizerStorage } from "$lib/dataStorages/buildings/vaporizerStorage";
     import { hubCraftDataStorage } from "$lib/dataStorages/crafts/hubCraftDataStorage";
     import { machineCraftDataStorage } from "$lib/dataStorages/crafts/machineCraftDataStorage";
     import { manualCraftDataStorage } from "$lib/dataStorages/crafts/manualCraftDataStorage";
     import { factoryEventStorage } from "$lib/dataStorages/events/factoryEventStorage";
+    import { gasEnvStorage } from "$lib/dataStorages/gasEnv/gasEnvStorage";
     import { fullBottleStorage } from "$lib/dataStorages/items/fullBottleStorage";
     import { fullJarStorage } from "$lib/dataStorages/items/fullJarStorage";
     import { itemStorage } from "$lib/dataStorages/items/itemStorage";
@@ -269,7 +276,6 @@
     }
 
     function getDisplayedItemGroups(groupField: RecipeFilterGroup, items: Iterable<IItem>): DisplayedItemGroup[] {
-        const displayedItemGroups: DisplayedItemGroup[] = [];
         const getValueFn = (item: IItem) => getGroupValue(groupField, item);
 
         const groupedItems = groupItems(items, getValueFn);
@@ -364,7 +370,7 @@
     const manualCraftStorage = new RecipeDataStorage(manualCraftDataStorage.list);
     const hubCraftStorage = new RecipeDataStorage(hubCraftDataStorage.list);
 
-    const machineCraftFactory: IMachineCraftFactory = new MachineCraftFactory(itemStorage, crafterStorage);
+    const machineCraftFactory: IMachineCraftFactory = new MachineCraftFactory(itemStorage, crafterStorage, gasEnvStorage);
     const manualCraftFactory: IManualCraftFactory = new ManualCraftFactory(itemStorage);
 
     const machineCraftSearcher: IMachineCraftSearcher = new MachineCraftSearcher(machineCraftStorage, machineCraftFactory, machineCraftDataStorage);
@@ -374,12 +380,14 @@
     const gasMinerRecipeSearcher: IMinerRecipeSearcher = new MinerRecipeSearcher(gasMinerStorage);
     const pumpRecipeSearcher: IPumpRecipeSearcher = new PumpRecipeSearcher(pumpStorage);
     const powerRecipeSearcher: IPowerRecipeSearcher = new PowerRecipeSearcher(powerStationStorage);
+    const gasEnvRecipeSearcher: IGasEnvRecipeSearcher = new GasEnvRecipeSearcher(vaporizerStorage);
 
     let crafter: ICrafter | null = null;
     let miner: IMiner | null = null;
     let gasMiner: IMiner | null = null;
     let pump: IPump | null = null;
     let powerStation: IPowerStation | null = null;
+    let vaporizer: IVaporizer | null = null;
 
     $: if (selectedItem) {
         crafter = crafterStorage.byItemId.get(selectedItem.gameId) ?? null;
@@ -387,6 +395,7 @@
         gasMiner = gasMinerStorage.byItemId.get(selectedItem.gameId) ?? null;
         pump = pumpStorage.byItemId.get(selectedItem.gameId) ?? null;
         powerStation = powerStationStorage.byItemId.get(selectedItem.gameId) ?? null;
+        vaporizer = vaporizerStorage.byItemId.get(selectedItem.gameId) ?? null;
     }
 
     function highlightItem(stack: IItemStack): boolean {
@@ -600,6 +609,7 @@
                     {@const minerAsIncome = minerRecipeSearcher.searchByItemAsIncome(selectedItem.gameId)}
                     {@const gasMinerAsIncome = gasMinerRecipeSearcher.searchByItemAsIncome(selectedItem.gameId)}
                     {@const powerStationAsIncome = powerRecipeSearcher.searchByItemAsIncome(selectedItem.gameId)}
+                    {@const vaporizerAsIncome = gasEnvRecipeSearcher.searchByItemAsIncome(selectedItem.gameId)}
 
                     {@const machineAsOutcome = machineCraftSearcher.searchByItemAsOutcome(selectedItem.gameId)}
                     {@const manualAsOutcome = manualCraftSearcher.searchByItemAsOutcome(selectedItem.gameId)}
@@ -619,7 +629,8 @@
                         || !hubAsIncome.isEmpty
                         || !minerAsIncome.isEmpty
                         || !gasMinerAsIncome.isEmpty
-                        || !powerStationAsIncome.isEmpty}
+                        || !powerStationAsIncome.isEmpty
+                        || !vaporizerAsIncome.isEmpty}
 
                     <div class="flex flex-col justify-start gap-10">
 
@@ -628,110 +639,6 @@
                             <RecipeSidebarSector
                                 title={$t("formulaSidebar.sector.source")}
                             >
-
-                                {#if !hubAsOutcome.isEmpty}
-
-                                    <SourceRecipeGroup
-                                        recipeSource={RecipeSource.HUB}
-                                    >
-
-                                        {#each hubAsOutcome.list as recipe}
-
-                                            <RecipeFormula>
-
-                                                <RecipeItemChain
-                                                    slot="left"
-                                                    items={recipe.ingredients}
-                                                    highlightItemFn={highlightItem}
-                                                    getItemUrlFn={getItemStackUrl}
-                                                />
-
-                                                <RecipeItemChain
-                                                    slot="right"
-                                                    items={recipe.outcomes}
-                                                    highlightItemFn={highlightItem}
-                                                    getItemUrlFn={(stack) => getRecipeTreeUrlCraft(RecipeType.HUB, stack.item.gameId, recipe.gameId)}
-                                                />
-
-                                            </RecipeFormula>
-
-                                        {/each}
-
-                                    </SourceRecipeGroup>
-
-                                {/if}
-
-                                {#if !manualAsOutcome.isEmpty}
-
-                                    <SourceRecipeGroup
-                                        recipeSource={RecipeSource.MANUAL}
-                                    >
-
-                                        {#each manualAsOutcome.list as recipe}
-
-                                            <RecipeFormula>
-
-                                                <RecipeItemChain
-                                                    slot="left"
-                                                    items={recipe.ingredients}
-                                                    highlightItemFn={highlightItem}
-                                                    getItemUrlFn={getItemStackUrl}
-                                                />
-
-                                                <RecipeItemChain
-                                                    slot="right"
-                                                    items={recipe.outcomes}
-                                                    highlightItemFn={highlightItem}
-                                                    getItemUrlFn={(stack) => getRecipeTreeUrlCraft(RecipeType.MANUAL, stack.item.gameId, recipe.gameId)}
-                                                />
-
-                                            </RecipeFormula>
-
-                                        {/each}
-
-                                    </SourceRecipeGroup>
-
-                                {/if}
-
-                                {#if !machineAsOutcome.isEmpty}
-
-                                    {@const grouped = machineAsOutcome.groupByBuilding()}
-
-                                    {#each grouped.values() as group}
-
-                                        <BuildingRecipeGroup
-                                            building={group.building}
-                                        >
-
-                                            {#each group.list as recipe}
-
-                                                <RecipeFormula
-                                                    processTimeMs={recipe.processTimeMs}
-                                                >
-
-                                                    <RecipeItemChain
-                                                        slot="left"
-                                                        items={recipe.ingredients}
-                                                        highlightItemFn={highlightItem}
-                                                        getItemUrlFn={getItemStackUrl}
-                                                    />
-
-                                                    <RecipeItemChain
-                                                        slot="right"
-                                                        items={recipe.outcomes}
-                                                        highlightItemFn={highlightItem}
-                                                        getItemUrlFn={(stack) => getRecipeTreeUrlCraft(RecipeType.MACHINE, stack.item.gameId, recipe.gameId)}
-                                                    />
-
-                                                </RecipeFormula>
-
-                                            {/each}
-
-                                        </BuildingRecipeGroup>
-
-                                    {/each}
-
-                                {/if}
 
                                 {#if !minerAsOutcome.isEmpty}
 
@@ -856,6 +763,111 @@
 
                                 {/if}
 
+                                {#if !hubAsOutcome.isEmpty}
+
+                                    <SourceRecipeGroup
+                                        recipeSource={RecipeSource.HUB}
+                                    >
+
+                                        {#each hubAsOutcome.list as recipe}
+
+                                            <RecipeFormula>
+
+                                                <RecipeItemChain
+                                                    slot="left"
+                                                    items={recipe.ingredients}
+                                                    highlightItemFn={highlightItem}
+                                                    getItemUrlFn={getItemStackUrl}
+                                                />
+
+                                                <RecipeItemChain
+                                                    slot="right"
+                                                    items={recipe.outcomes}
+                                                    highlightItemFn={highlightItem}
+                                                    getItemUrlFn={(stack) => getRecipeTreeUrlCraft(RecipeType.HUB, stack.item.gameId, recipe.gameId)}
+                                                />
+
+                                            </RecipeFormula>
+
+                                        {/each}
+
+                                    </SourceRecipeGroup>
+
+                                {/if}
+
+                                {#if !manualAsOutcome.isEmpty}
+
+                                    <SourceRecipeGroup
+                                        recipeSource={RecipeSource.MANUAL}
+                                    >
+
+                                        {#each manualAsOutcome.list as recipe}
+
+                                            <RecipeFormula>
+
+                                                <RecipeItemChain
+                                                    slot="left"
+                                                    items={recipe.ingredients}
+                                                    highlightItemFn={highlightItem}
+                                                    getItemUrlFn={getItemStackUrl}
+                                                />
+
+                                                <RecipeItemChain
+                                                    slot="right"
+                                                    items={recipe.outcomes}
+                                                    highlightItemFn={highlightItem}
+                                                    getItemUrlFn={(stack) => getRecipeTreeUrlCraft(RecipeType.MANUAL, stack.item.gameId, recipe.gameId)}
+                                                />
+
+                                            </RecipeFormula>
+
+                                        {/each}
+
+                                    </SourceRecipeGroup>
+
+                                {/if}
+
+                                {#if !machineAsOutcome.isEmpty}
+
+                                    {@const grouped = machineAsOutcome.groupByBuilding()}
+
+                                    {#each grouped.values() as group}
+
+                                        <BuildingRecipeGroup
+                                            building={group.building}
+                                        >
+
+                                            {#each group.list as recipe}
+
+                                                <RecipeFormula
+                                                    processTimeMs={recipe.processTimeMs}
+                                                    gasEnv={recipe.consumeGasEnv}
+                                                >
+
+                                                    <RecipeItemChain
+                                                        slot="left"
+                                                        items={recipe.ingredients}
+                                                        highlightItemFn={highlightItem}
+                                                        getItemUrlFn={getItemStackUrl}
+                                                    />
+
+                                                    <RecipeItemChain
+                                                        slot="right"
+                                                        items={recipe.outcomes}
+                                                        highlightItemFn={highlightItem}
+                                                        getItemUrlFn={(stack) => getRecipeTreeUrlCraft(RecipeType.MACHINE, stack.item.gameId, recipe.gameId)}
+                                                    />
+
+                                                </RecipeFormula>
+
+                                            {/each}
+
+                                        </BuildingRecipeGroup>
+
+                                    {/each}
+
+                                {/if}
+
                             </RecipeSidebarSector>
 
                         {/if}
@@ -944,6 +956,7 @@
 
                                                 <RecipeFormula
                                                     processTimeMs={recipe.processTimeMs}
+                                                    gasEnv={recipe.consumeGasEnv}
                                                 >
 
                                                     <RecipeItemChain
@@ -1078,6 +1091,46 @@
                                                     <FuelEnergyCard
                                                         slot="right"
                                                         powerProvide={recipe.powerProvide}
+                                                    />
+
+                                                </RecipeFormula>
+
+                                            {/each}
+
+                                        </BuildingRecipeGroup>
+
+                                    {/each}
+
+                                {/if}
+
+                                {#if !vaporizerAsIncome.isEmpty}
+
+                                    {@const grouped = vaporizerAsIncome.groupByBuilding()}
+
+                                    {#each grouped.values() as group}
+
+                                        <BuildingRecipeGroup
+                                            building={group.building}
+                                        >
+
+                                            {#each group.list as recipe}
+
+                                                <RecipeFormula
+                                                    processTimeMs={recipe.processTimeMs}
+                                                >
+
+                                                    <RecipeItemChain
+                                                        slot="left"
+                                                        items={recipe.ingredients}
+                                                        highlightItemFn={highlightItem}
+                                                        getItemUrlFn={getItemStackUrl}
+                                                    />
+
+                                                    <GasEnvCard
+                                                        slot="right"
+                                                        gasEnv={recipe.gasEnv}
+                                                        showTooltip={true}
+                                                        size={CardSize.MICRO}
                                                     />
 
                                                 </RecipeFormula>
@@ -1302,6 +1355,46 @@
                                             <FuelEnergyCard
                                                 slot="right"
                                                 powerProvide={recipe.powerProvide}
+                                            />
+
+                                        </RecipeFormula>
+
+                                    {/each}
+
+                                </RecipeSidebarSector>
+
+                            {/if}
+
+                        {/if}
+
+                        {#if vaporizer}
+
+                            {@const searchResult = gasEnvRecipeSearcher.searchByBuilding(vaporizer.gameId)}
+
+                            {#if !searchResult.isEmpty}
+
+                                <RecipeSidebarSector
+                                    title={$t("formulaSidebar.sector.availableFunctions")}
+                                >
+
+                                    {#each searchResult.list as recipe}
+
+                                        <RecipeFormula
+                                            processTimeMs={recipe.processTimeMs}
+                                        >
+
+                                            <RecipeItemChain
+                                                slot="left"
+                                                items={recipe.ingredients}
+                                                highlightItemFn={highlightItem}
+                                                getItemUrlFn={getItemStackUrl}
+                                            />
+
+                                            <GasEnvCard
+                                                slot="right"
+                                                gasEnv={recipe.gasEnv}
+                                                showTooltip={true}
+                                                size={CardSize.MICRO}
                                             />
 
                                         </RecipeFormula>
