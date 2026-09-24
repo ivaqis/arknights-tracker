@@ -19,10 +19,9 @@ export class MinerRecipeSearcher implements IMinerRecipeSearcher {
             return new BuildingRecipeSearchResult([]);
         }
 
-        const recipes = miner.mineableList.values()
+        const recipes = miner.mineableList
             .map(m => miner.getRecipe(m.miningItem.gameId))
-            .filter(r => r !== null)
-            .toArray();
+            .filter((r): r is IMinerRecipe => r !== null);
 
         return new BuildingRecipeSearchResult(recipes);
     }
@@ -50,18 +49,17 @@ export class MinerRecipeSearcher implements IMinerRecipeSearcher {
             return new BuildingRecipeSearchResult([]);
         }
 
-        const recipes: IMinerRecipe[] = miners.values()
+        const recipes: IMinerRecipe[] = miners
             .map(miner => miner.getRecipe(itemId))
-            .filter(r => r !== null)
-            .toArray();
+            .filter((r): r is IMinerRecipe => r !== null);
 
         return new BuildingRecipeSearchResult(recipes);
     }
 
-    private getRecipesByConsumeItem(miner: IMiner, consumeItemId: string): IteratorObject<IMinerRecipe, undefined, unknown> {
-        return miner.mineableList.values()
+    private getRecipesByConsumeItem(miner: IMiner, consumeItemId: string): IMinerRecipe[] {
+        return miner.mineableList
             .filter(m => m.consumeItem?.item.gameId === consumeItemId)
             .map(m => miner.getRecipe(m.miningItem.gameId))
-            .filter(r => r !== null);
+            .filter((r): r is IMinerRecipe => r !== null);
     }
 }
