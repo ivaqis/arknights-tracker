@@ -146,7 +146,11 @@
     "weap-standard": "Arma Estándar",
     "weap-special": "Arma de Evento",
     "weapon-all": "Banners de armas",
-    "joint": "Festival del resplandor"
+    "joint": "Festival del resplandor",
+    "rerun": "Caza de reclutas de Re-factor",
+    "weapRerun": "Solicitud de Re-factor",
+    "weap-rerun": "Solicitud de Re-factor",
+    "weapon_rerun": "Solicitud de Re-factor"
   },
   "import": {
     "title": "Importar Historial de Reclutamiento",
@@ -387,7 +391,9 @@
     "special_1_5_1": "Cacería invernal",
     "weponbox_1_5_1": "Solicitud de Frío intenso",
     "weponbox_1_5_2": "Solicitud de Artista del grafiti",
-    "special_1_5_2": "Espectro resplandeciente"
+    "special_1_5_2": "Espectro resplandeciente",
+    "rerun_chr_yvonne": "Espectro resplandeciente",
+    "rerun_wpn_yvonne": "Solicitud de Artista del grafiti"
   },
   "pages": {
     "home": "Inicio",

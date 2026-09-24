@@ -146,7 +146,11 @@
     "weap-standard": "通常武器",
     "weap-special": "イベント武器",
     "weapon-all": "武器バナー",
-    "joint": "輝きの祝典"
+    "joint": "輝きの祝典",
+    "rerun": "再現スカウト",
+    "weapRerun": "再現申請",
+    "weap-rerun": "再現申請",
+    "weapon_rerun": "再現申請"
   },
   "import": {
     "title": "発掘履歴のインポート",
@@ -386,7 +390,9 @@
     "special_1_5_1": "冬狩",
     "weponbox_1_5_1": "極寒・申請",
     "weponbox_1_5_2": "点描・申請",
-    "special_1_5_2": "超爆盛れカラフル"
+    "special_1_5_2": "超爆盛れカラフル",
+    "rerun_chr_yvonne": "超爆盛れカラフル",
+    "rerun_wpn_yvonne": "点描・申請"
   },
   "pages": {
     "home": "ホーム",

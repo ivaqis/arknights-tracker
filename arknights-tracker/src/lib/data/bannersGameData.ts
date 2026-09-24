@@ -282,7 +282,7 @@ export const bannersGameData: readonly BannerGameData[] = [
         "id": "rerun_wpn_yvonne",
         "name": "Tag Artist Issue",
         "type": "weapon_rerun",
-        "dbType": "weap-special",
+        "dbType": "weapon_rerun",
         "startTime": "2026-09-30 12:00:00",
         "endTime": "2026-10-15 06:00:00",
         "startTimeAsia": "2026-09-30 12:00:00",

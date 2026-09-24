@@ -17,7 +17,8 @@ const defaultData = {
     "standard": { pulls: [], stats: {} },
     "special": { pulls: [], stats: {} },
     "new-player": { pulls: [], stats: {} },
-    "joint": { pulls: [], stats: {} }
+    "joint": { pulls: [], stats: {} },
+    "rerun": { pulls: [], stats: {} }
 };
 
 function createPullStore() {
@@ -191,7 +192,8 @@ function createPullStore() {
                                 || bannerId === "standard"
                                 || bannerId === "special"
                                 || bannerId === "new-player"
-                                || bannerId === "joint";
+                                || bannerId === "joint"
+                                || bannerId === "rerun";
                             const isWeaponKey = isWeaponBanner(bannerId);
 
                             if (!isKnownKey && !isWeaponKey) {

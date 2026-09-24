@@ -6,6 +6,7 @@
     import { accountStore } from "$lib/stores/accounts.js";
     import { currentUiLocale, normalizeLocale } from "$lib/stores/locale.js";
     import { pullData } from "$lib/stores/pulls.js";
+    import { getWeaponCategory } from "$lib/utils/importUtils";
     import Button from "../Button.svelte";
     import Icon from "../Icon.svelte";
 
@@ -81,6 +82,46 @@
             };
         }
 
+        if (activeTab.includes("weap")) {
+            let total = 0;
+            let count5 = 0;
+            let count6 = 0;
+            let sumPity6 = 0;
+            let sumPity5 = 0;
+            let total5050 = 0;
+            let won5050 = 0;
+
+            for (const key of Object.keys($pullData || {})) {
+                if (getWeaponCategory(key) !== activeTab) continue;
+                const store = $pullData[key];
+                if (!store) continue;
+                const count = store.pulls?.length || 0;
+                const st = store.stats || {};
+                total += count;
+                count5 += (st.count5 || 0);
+                count6 += (st.count6 || 0);
+                if (st.avg6 && st.count6) {
+                    sumPity6 += parseFloat(st.avg6) * st.count6;
+                }
+                if (st.avg5 && st.count5) {
+                    sumPity5 += parseFloat(st.avg5) * st.count5;
+                }
+                total5050 += (st.winRate?.total || 0);
+                won5050 += (st.winRate?.won || 0);
+            }
+
+            return {
+                total,
+                count5,
+                count6,
+                avg6: count6 > 0 ? (sumPity6 / count6).toFixed(1) : "0.0",
+                avg5: count5 > 0 ? (sumPity5 / count5).toFixed(1) : "0.0",
+                total5050,
+                won5050,
+                winRate: total5050 > 0 ? ((won5050 / total5050) * 100).toFixed(1) : "0.0"
+            };
+        }
+
         const store = $pullData?.[activeTab] || { pulls: [], stats: {} };
         const st = store.stats || {};
         const pulls = store.pulls || [];
@@ -116,7 +157,7 @@
             return;
         }
         try {
-            const isEvent = bannerType === "all" || ["special", "joint", "weap-special", "weap-standard"].includes(bannerType);
+            const isEvent = bannerType === "all" || ["special", "joint", "rerun", "weap-special", "weap-standard", "weapon_rerun", "weap-rerun"].includes(bannerType);
             const params = {
                 bannerType,
                 totalPulls: stats.total,
@@ -125,8 +166,8 @@
                 countMe: true
             };
             if (isEvent) {
-                params.total5050 = stats.total5050;
-                params.won5050 = Math.min(stats.won5050, stats.total5050);
+                params.total5050 = stats.total5050 ?? 0;
+                params.won5050 = Math.min(stats.won5050 ?? 0, params.total5050);
             }
             const res = await fetchRankingRate(params);
             serverData = res;

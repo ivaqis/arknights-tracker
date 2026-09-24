@@ -338,7 +338,7 @@
             let stream;
 
             if (isGlobalStatsEnabled) {
-                stream = await fetchPostImport(token, serverCandidates, currentProfile.serverUid);
+                stream = await fetchPostImport(token, serverCandidates, currentProfile.serverUid, isRecoveryEnabled);
             }
             else {
                 stream = await fetchGetImport(token, serverCandidates, getLastPullTimeTs());
@@ -400,7 +400,16 @@
         const pullsObj = data.pulls || {};
         const rawList = Array.isArray(data.list)
             ? data.list
-            : Object.values(pullsObj).flat();
+            : Object.entries(pullsObj).flatMap(([bannerKey, items]) => {
+                if (!Array.isArray(items)) return [];
+                return items.map((item) => ({
+                    ...item,
+                    poolId: item.poolId || bannerKey,
+                    bannerId: (bannerKey === "Weapon" || bannerKey === "weapon" || bannerKey === "weap-rerun" || bannerKey === "weap-special" || bannerKey === "weap-standard")
+                        ? (item.bannerId || item.poolId)
+                        : (bannerKey || item.bannerId || item.poolId)
+                }));
+            });
 
         const cleanPulls = PullParser.parseGachaLog(rawList);
         const report = await pullData.smartImport(

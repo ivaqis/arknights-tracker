@@ -34,7 +34,7 @@ export const bannerTypes = [
     {
         id: "weap-special",
         gameType: "weapon",
-        i18nKey: "bannerTypes.weapSpecial",
+        i18nKey: "bannerTypes.weap-special",
         order: 4,
         showOnHome: true,
         showInRating: true
@@ -42,7 +42,7 @@ export const bannerTypes = [
     {
         id: "weap-standard",
         gameType: "weapon",
-        i18nKey: "bannerTypes.weapStandard",
+        i18nKey: "bannerTypes.weap-standard",
         order: 5,
         showOnHome: true,
         showInRating: true
@@ -53,6 +53,23 @@ export const bannerTypes = [
         i18nKey: "bannerTypes.joint",
         name: "Joint Operation",
         order: 6,
+        showOnHome: true,
+        showInRating: true
+    },
+    {
+        id: "rerun",
+        gameType: "rerun",
+        i18nKey: "bannerTypes.rerun",
+        order: 7,
+        showOnHome: true,
+        showInRating: true,
+        color: "pink"
+    },
+    {
+        id: "weapon_rerun",
+        gameType: "weapon",
+        i18nKey: "bannerTypes.weapon_rerun",
+        order: 8,
         showOnHome: true,
         showInRating: true
     }

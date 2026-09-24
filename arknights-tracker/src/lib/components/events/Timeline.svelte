@@ -91,8 +91,12 @@
 
             const isWeap =
                 item.originalType === "weapon" ||
+                item.originalType === "weapon_rerun" ||
+                item.originalType === "weap-rerun" ||
                 item.type === "weapon" ||
-                (item.id && item.id.includes("weap"));
+                item.type === "weapon_rerun" ||
+                item.type === "weap-rerun" ||
+                (item.id && (item.id.includes("weap") || item.id.includes("wpn")));
             const allowedVersions = isWeap
                 ? extendedVersionsForWeapons
                 : activeVersions;
@@ -600,9 +604,12 @@
             type === "weapon" ||
             type === "weap-special" ||
             type === "weap-standard" ||
+            type === "weap-rerun" ||
             origType === "weapon" ||
             origType === "weap-special" ||
             origType === "weap-standard" ||
+            origType === "weap-rerun" ||
+            (event.id && (event.id.includes("weap") || event.id.includes("wpn"))) ||
             event.isWeapon === true
         ) {
             return {
@@ -618,11 +625,16 @@
             type === "special" ||
             type === "new-player" ||
             type === "headhunting" ||
+            type === "rerun" ||
+            type === "joint" ||
             origType === "standard" ||
             origType === "special" ||
             origType === "new-player" ||
             origType === "banner" ||
-            origType === "headhunting"
+            origType === "headhunting" ||
+            origType === "rerun" ||
+            origType === "joint" ||
+            event.featured6
         ) {
             return {
                 icon: "headhunting",

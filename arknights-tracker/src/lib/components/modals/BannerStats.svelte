@@ -12,31 +12,22 @@
     export let banner = null;
     export let stats = {};
 
-    $: isSpecial = banner?.type === "special";
+    $: isSpecial = banner?.type === "special" || banner?.type === "rerun";
     $: isNewPlayer =
         banner?.type === "new-player" || banner?.type === "new_player";
     $: isWeaponBanner =
         banner?.type === "weapon" ||
+        banner?.type === "weap-rerun" ||
+        banner?.type === "weapon_rerun" ||
+        banner?.type === "weap-special" ||
+        banner?.type === "weap-standard" ||
         banner?.id?.includes("weap") ||
-        banner?.id?.includes("wepon");
+        banner?.id?.includes("wepon") ||
+        banner?.id?.includes("wpn");
     $: hasRateUp = isSpecial || isWeaponBanner;
     $: billableCount = (() => {
         if (isWeaponBanner || isNewPlayer) return 0;
-        const sorted = [...pulls].sort((a, b) => new Date(a.time) - new Date(b.time));
-        let count = 0;
-        sorted.forEach((p, index) => {
-            const pullNumber = index + 1;
-            
-            let isFree = false;
-            if (isSpecial && pullNumber > 30 && pullNumber <= 40) {
-                isFree = true;
-            }
-            
-            if (!isFree) {
-                count++;
-            }
-        });
-        return count;
+        return pulls.filter((p) => !p.isFree).length;
     })();
 
     $: total = stats.total || 0;
@@ -135,7 +126,7 @@
         <span
             class="text-gray-400 text-[10px] font-bold uppercase tracking-widest"
         >
-            {$t("page.banner.stats") || "Statistics"}
+            {$t("page.banner.stats")}
         </span>
         <div class="h-px flex-1 bg-gray-100 dark:bg-[#444444]"></div>
     </div>
@@ -263,7 +254,9 @@
                                 icon.isWeapon
                                     ? `weaponsList.${icon.id}`
                                     : `characters.${icon.id}`,
-                            ) || icon.name}
+                            ) !== (icon.isWeapon ? `weaponsList.${icon.id}` : `characters.${icon.id}`)
+                                ? $t(icon.isWeapon ? `weaponsList.${icon.id}` : `characters.${icon.id}`)
+                                : icon.name}
                         >
                             <div
                                 class="relative w-12 h-12 rounded-full cursor-pointer shadow-sm hover:scale-110 transition-transform"

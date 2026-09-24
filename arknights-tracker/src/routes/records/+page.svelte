@@ -17,6 +17,7 @@
     recordsShowRating,
     recordsShowTotalCost
   } from "$lib/stores/filterStore.js";
+  import { getWeaponCategory } from "$lib/utils/importUtils";
   import { t } from "$lib/i18n";
   import Button from "$lib/components/Button.svelte";
   import Icon from "$lib/components/Icon.svelte";
@@ -53,7 +54,8 @@
         const bType = (b.type || "").toLowerCase();
         const pBox = p.boxId.toLowerCase();
         if (pBox.includes("special") && bType === "special") return true;
-        if (pBox.includes("weap") && bType === "weapon") return true;
+        if (pBox.includes("rerun") && !pBox.includes("weap") && bType === "rerun") return true;
+        if (pBox.includes("weap") && (bType === "weapon" || bType === "weap-rerun")) return true;
         if (pBox.includes("new") && bType === "new-player") return true;
         if (
           pBox.includes("standard") &&
@@ -69,13 +71,17 @@
         ? specificBanner.type
         : p.boxId.includes("weap")
           ? "weapon"
-          : "special";
+          : p.boxId.includes("rerun")
+            ? "rerun"
+            : "special";
       const isWeapon =
         bType === "weapon" ||
+        bType === "weap-rerun" ||
         p.boxId.includes("weap") ||
         p.boxId.includes("wepon");
       const isNewPlayer = bType === "new-player" || p.boxId.includes("new");
       const isSpecial = bType === "special" && !isWeapon && !isNewPlayer;
+      const isRerun = bType === "rerun" && !isWeapon && !isNewPlayer;
       if (!bannerCounts[bid]) bannerCounts[bid] = 0;
       let isFree = false;
       if (isSpecial && bannerCounts[bid] >= 30 && bannerCounts[bid] < 40) {
@@ -115,14 +121,16 @@
     goto("/records/global");
   }
 
-  function getBanner(partialId) {
-    return homeBanners.find((b) => b.id.includes(partialId));
+  function getBanner(id) {
+    return homeBanners.find((b) => b.id === id);
   }
 
   $: bSpecialChar = getBanner("special");
+  $: bRerunChar = getBanner("rerun");
   $: bStandardChar = getBanner("standard");
   $: bNewPlayer = getBanner("new-player");
   $: bSpecialWeap = getBanner("weap-special");
+  $: bRerunWeap = getBanner("weapon_rerun");
   $: bStandardWeap = getBanner("weap-standard");
   $: bJoint = getBanner("joint");
 
@@ -257,32 +265,64 @@
   $: columnsData = (() => {
     const cols = Array.from({ length: activeCols }, () => []);
     
+    function hasBannerPulls(bannerId) {
+      if (!bannerId) return false;
+      if (bannerId.includes("weap") || bannerId === "weapon_rerun") {
+        return Object.entries($pullData).some(([key, val]) => {
+          if (
+            key === bannerId ||
+            key === "weapon_rerun" ||
+            key === "weap-rerun" ||
+            key === "weap-special" ||
+            key === "weap-standard" ||
+            key === "weapon" ||
+            key === "weapon-all" ||
+            key === "rerun" ||
+            key === "special" ||
+            key === "standard" ||
+            key === "new-player" ||
+            key === "joint"
+          ) {
+            return false;
+          }
+          return getWeaponCategory(key) === bannerId && val && Array.isArray(val.pulls) && val.pulls.length > 0;
+        });
+      }
+      return Boolean($pullData[bannerId]?.pulls?.length > 0);
+    }
+
     const cards = [];
-    if (bSpecialChar && !$recordsExcludedBannerTypes.includes("special")) {
+    if (bSpecialChar && !$recordsExcludedBannerTypes.includes("special") && hasBannerPulls("special")) {
       cards.push({ id: 'specialChar', type: "banner", bannerId: bSpecialChar.id, titleKey: bSpecialChar.i18nKey });
     }
-    if (bSpecialWeap && !$recordsExcludedBannerTypes.includes("weap-special")) {
+    if (bRerunChar && !$recordsExcludedBannerTypes.includes("rerun") && hasBannerPulls("rerun")) {
+      cards.push({ id: 'rerunChar', type: "banner", bannerId: bRerunChar.id, titleKey: bRerunChar.i18nKey });
+    }
+    if (bSpecialWeap && !$recordsExcludedBannerTypes.includes("weap-special") && hasBannerPulls("weap-special")) {
       cards.push({ id: 'specialWeap', type: "banner", bannerId: bSpecialWeap.id, titleKey: bSpecialWeap.i18nKey });
     }
-    if (bJoint && !$recordsExcludedBannerTypes.includes("joint")) {
+    if (bRerunWeap && !$recordsExcludedBannerTypes.includes("weapon_rerun") && !$recordsExcludedBannerTypes.includes("weap-rerun") && hasBannerPulls("weapon_rerun")) {
+      cards.push({ id: 'rerunWeap', type: "banner", bannerId: bRerunWeap.id, titleKey: bRerunWeap.i18nKey });
+    }
+    if (bJoint && !$recordsExcludedBannerTypes.includes("joint") && hasBannerPulls("joint")) {
       cards.push({ id: 'joint', type: "banner", bannerId: bJoint.id, titleKey: bJoint.i18nKey });
     }
-    if (bStandardChar && !$recordsExcludedBannerTypes.includes("standard")) {
+    if (bStandardChar && !$recordsExcludedBannerTypes.includes("standard") && hasBannerPulls("standard")) {
       cards.push({ id: 'standardChar', type: "banner", bannerId: bStandardChar.id, titleKey: bStandardChar.i18nKey });
     }
-    if (bStandardWeap && !$recordsExcludedBannerTypes.includes("weap-standard")) {
+    if (bStandardWeap && !$recordsExcludedBannerTypes.includes("weap-standard") && hasBannerPulls("weap-standard")) {
       cards.push({ id: 'standardWeap', type: "banner", bannerId: bStandardWeap.id, titleKey: bStandardWeap.i18nKey });
     }
-    if (monthlyData.length > 0 && $recordsShowMonthlyChart) {
+    if (monthlyData.length > 0 && $recordsShowMonthlyChart && totalPulls > 0) {
       cards.push({ id: 'monthlyChart', type: "chart" });
     }
-    if (bNewPlayer && !$recordsExcludedBannerTypes.includes("new-player")) {
+    if (bNewPlayer && !$recordsExcludedBannerTypes.includes("new-player") && hasBannerPulls("new-player")) {
       cards.push({ id: 'newPlayer', type: "banner", bannerId: bNewPlayer.id, titleKey: bNewPlayer.i18nKey });
     }
-    if ($recordsShowRating) {
+    if ($recordsShowRating && totalPulls > 0) {
       cards.push({ id: 'rating', type: "rating" });
     }
-    if ($recordsShowTotalCost) {
+    if ($recordsShowTotalCost && totalPulls > 0) {
       cards.push({ id: 'totalCost', type: "cost" });
     }
 
@@ -323,7 +363,7 @@
     if (!draggedCardId || draggedCardId === targetCardId) return;
 
     const defaultOrder = [
-      'specialChar', 'specialWeap', 'joint', 'standardChar', 
+      'specialChar', 'rerunChar', 'specialWeap', 'rerunWeap', 'joint', 'standardChar', 
       'standardWeap', 'monthlyChart', 'newPlayer', 'rating', 'totalCost'
     ];
 
@@ -489,7 +529,7 @@
                   
                   <div class="flex justify-between items-start mb-4">
                     <h3 class="text-xl font-bold font-sdk text-[#21272C] dark:text-[#FDFDFD]">
-                      {$t("page.activityChart") || "Активность"}
+                      {$t("page.activityChart")}
                     </h3>
                   </div>
 

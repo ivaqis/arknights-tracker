@@ -144,11 +144,16 @@
             type === "weapon" ||
             type === "weap-special" ||
             type === "weap-standard" ||
+            type === "weap-rerun" ||
+            type === "weapon_rerun" ||
             origType === "weapon" ||
             origType === "weap-special" ||
             origType === "weap-standard" ||
+            origType === "weap-rerun" ||
+            origType === "weapon_rerun" ||
             id.includes("weap") ||
             id.includes("wepon") ||
+            id.includes("wpn") ||
             ctx.includes("weap") ||
             ctx.includes("wepon") ||
             banner.isWeapon === true ||
@@ -166,28 +171,35 @@
         const type = (banner.type || "").toLowerCase();
 
         if (isWeaponBanner) {
+            if (banner.id) keysToCheck.push(banner.id);
             if (
                 id.includes("constant") ||
                 id.includes("standard") ||
                 type === "weap-standard"
             ) {
-                keysToCheck = [
+                keysToCheck.push(
                     "weap-standard",
                     "weapon-standard",
                     "wepon-standard",
-                    "standard-weapon",
-                ];
+                    "standard-weapon"
+                );
+            } else if (type === "weap-rerun" || type === "weapon_rerun" || id.includes("rerun")) {
+                keysToCheck.push(
+                    "weap-rerun",
+                    "weapon_rerun",
+                    "weapon-rerun",
+                    "rerun-weapon"
+                );
             } else {
-                keysToCheck = [
+                keysToCheck.push(
                     "weap-special",
                     "weapon-special",
                     "wepon-special",
                     "special-weapon",
                     "weapon",
-                    "wepon",
-                ];
+                    "wepon"
+                );
             }
-            if (banner.id) keysToCheck.push(banner.id);
         } else {
             if (
                 id === "standard" ||
@@ -199,9 +211,12 @@
                 keysToCheck = ["new-player", "new"];
             } else if (id.includes("joint") || type === "joint") {
                 keysToCheck = ["joint"];
+            } else if (id.includes("rerun") || type === "rerun") {
+                keysToCheck = ["rerun"];
             } else {
                 keysToCheck = ["special"];
             }
+            if (banner.id) keysToCheck.push(banner.id);
         }
 
         for (const key of keysToCheck) {
@@ -319,6 +334,9 @@
                 "weapon",
                 "weap-special",
                 "weap-standard",
+                "weap-rerun",
+                "weapon_rerun",
+                "rerun",
                 "new-player",
                 "joint",
             ].some((t) => pull.bannerId?.includes(t));
@@ -579,11 +597,7 @@
                                   ? 'bg-gray-400'
                                   : 'bg-blue-400'}"
                         ></span>
-                        {#if isActive}{$t("status.active") ||
-                                "Active"}{:else if isEnded}{$t(
-                                "status.ended",
-                            ) || "Ended"}{:else}{$t("status.upcoming") ||
-                                "Upcoming"}{/if}
+                        {#if isActive}{$t("status.active")}{:else if isEnded}{$t("status.ended")}{:else}{$t("status.upcoming")}{/if}
                     </div>
                 </div>
             </div>
@@ -646,18 +660,16 @@
                                     {$t("timer.starts_in_d_h", {
                                         d: timeData.days,
                                         h: timeData.hours,
-                                    }) ||
-                                        `${timeData.days}d ${timeData.hours}h`}
+                                    })}
                                 {:else if timeData.hours > 0}
                                     {$t("timer.starts_in_h_m", {
                                         h: timeData.hours,
                                         m: timeData.minutes,
-                                    }) ||
-                                        `${timeData.hours}h ${timeData.minutes}m`}
+                                    })}
                                 {:else}
                                     {$t("timer.starts_in_m", {
                                         m: timeData.minutes,
-                                    }) || `${timeData.minutes}m`}
+                                    })}
                                 {/if}
                             </div>
                         {:else if banner.isPermanent}
@@ -669,7 +681,7 @@
                             <div
                                 class="text-gray-500 dark:text-gray-400 font-bold font-nums text-lg leading-none uppercase tracking-wide"
                             >
-                                {$t("timer.permanent") || "Permanent"}
+                                {$t("timer.permanent")}
                             </div>
                         {:else if isActive}
                             <div
@@ -689,19 +701,18 @@
                                     {$t("timer.left_h_m", {
                                         h: timeData.hours,
                                         m: timeData.minutes,
-                                    }) ||
-                                        `${timeData.hours}h ${timeData.minutes}m`}
+                                    })}
                                 {:else}
                                     {$t("timer.left_m", {
                                         m: timeData.minutes,
-                                    }) || `${timeData.minutes}m`}
+                                    })}
                                 {/if}
                             </div>
                         {:else if isEnded}
                             <div
                                 class="text-gray-500 dark:text-[#B7B6B3] text-xs mb-0.5"
                             >
-                                {$t("status.ended") || "Ended"}
+                                {$t("status.ended")}
                             </div>
                             <div
                                 class="text-gray-400 font-bold font-nums text-base leading-none"

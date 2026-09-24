@@ -58,11 +58,15 @@ export class PullStatsCalculator {
 
     private resolveViewBanner(): BannerData | undefined {
         let viewBanner = banners.find(b => b.id === this._bannerId);
-        if (viewBanner || (!this._bannerId.includes("special") && !this._isWeaponType && !this._isJointType)) {
+        if (viewBanner || (!this._bannerId.includes("special") && !this._isWeaponType && !this._isJointType && !this._bannerId.includes("rerun"))) {
             return viewBanner;
         }
 
         const candidates = banners.filter(b => {
+            if (this._bannerId.includes("rerun")) {
+                if (this._isWeaponType) return b.type === "weapon_rerun" || b.type === "weap-rerun" || (b.id && b.id.includes("rerun_wpn"));
+                return b.type === "rerun" || (b.id && b.id.includes("rerun_chr"));
+            }
             if (this._isWeaponType) return b.type === "weapon" || PullParser.isWeaponBanner(b.id);
             if (this._isJointType) return b.type === "joint" || b.id?.includes("joint");
             return b.type === "special";
@@ -124,8 +128,13 @@ export class PullStatsCalculator {
             return pull.isFree;
         }
         const count = this._bannerSpecificCounts[uniqueKey];
-        const isEligibleBanner = (this._bannerId.includes("special") && !this._isWeaponType) || this._isJointType;
-        return isEligibleBanner && count >= 30 && count < 40;
+        if ((this._bannerId.includes("special") && !this._isWeaponType) || this._isJointType) {
+            return count >= 30 && count < 40;
+        }
+        if (this._bannerId.includes("rerun") && !this._isWeaponType) {
+            return (count >= 30 && count < 40) || (count >= 60 && count < 70) || (count >= 90 && count < 100);
+        }
+        return false;
     }
 
     private updateMileageProgress(pullTime: number): void {
@@ -214,7 +223,7 @@ export class PullStatsCalculator {
         if (this._isJointType) {
             return { show: true, current: this._currentBannerMileage, max: 120, label: "selector_6" };
         }
-        if (this._bannerId.includes("special")) {
+        if (this._bannerId.includes("special") || (this._bannerId.includes("rerun") && !this._isWeaponType)) {
             const isBonusCopy = this._hasReceivedRateUp || this._currentBannerMileage >= 120;
             return {
                 show: true,

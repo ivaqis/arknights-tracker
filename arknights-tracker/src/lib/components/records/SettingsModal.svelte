@@ -61,6 +61,7 @@
 
     const categories = {
         "special": [],
+        "rerun": [],
         "standard": [],
         "weapon": [],
         "new_player": [],
@@ -75,6 +76,8 @@
         const keyLower = storeKey.toLowerCase();
         
         if (keyLower.includes('new') || keyLower.includes('beginner')) cat = 'new_player';
+        else if (keyLower.includes('rerun') && (keyLower.includes('weap') || keyLower.includes('wpn'))) cat = 'weapon';
+        else if (keyLower.includes('rerun')) cat = 'rerun';
         else if (keyLower.includes('weap') || keyLower.includes('wepon') || keyLower.includes('constant')) cat = 'weapon';
         else if (keyLower.includes('joint')) cat = 'joint';
         else if (keyLower === 'standard' || keyLower.includes('standard')) cat = 'standard';
@@ -88,6 +91,7 @@
             if (!foundBanner) {
                 let searchType = null;
                 if (cat === 'special') searchType = 'special';
+                if (cat === 'rerun') searchType = 'rerun';
                 if (cat === 'weapon') searchType = 'weapon';
                 if (cat === 'new_player') searchType = 'new-player';
                 if (cat === 'standard') searchType = 'standard';
@@ -95,7 +99,7 @@
                     foundBanner = banners.find(b => {
                         const bType = (b.type || "").toLowerCase();
                         const isMatch = (searchType === 'weapon') 
-                            ? (bType === 'weapon' || (b.id && (b.id.includes('weap') || b.id.includes('constant'))))
+                            ? (bType === 'weapon' || bType === 'weapon_rerun' || (b.id && (b.id.includes('weap') || b.id.includes('constant'))))
                             : (bType === searchType || (searchType === 'standard' && (bType === 'constant' || bType === 'standard')));
                         
                         if (!isMatch) return false;
@@ -252,6 +256,7 @@
 
       const sheetMapping = {
         "Special": "special",
+        "Rerun": "rerun",
         "Standard": "standard",
         "Weapon": "constant", 
         "New Player": "new-player",
@@ -323,18 +328,16 @@
     fileInputExcel.click();
   }
 
-  // ponytail: removed custom clickOutside and dropdown state variables since we are using MultiSelect
-
-  const bannerTypeOptions = [
-    { value: "special", label: $t("bannerTypes.special") || "Специальный наем" },
-    { value: "standard", label: $t("bannerTypes.standard") || "Стандартный наем" },
-    { value: "new-player", label: $t("bannerTypes.new-player") || "Наем «Новые горизонты»" },
-    { value: "weap-special", label: $t("bannerTypes.weapSpecial") || "Оружейные баннеры" },
-    { value: "weap-standard", label: $t("bannerTypes.weapStandard") || "Стандартные оружейные баннеры" },
-    { value: "joint", label: $t("bannerTypes.joint") || "Сияние славы" }
+  $: bannerTypeOptions = [
+    { value: "special", label: $t("bannerTypes.special") },
+    { value: "rerun", label: $t("bannerTypes.rerun") },
+    { value: "standard", label: $t("bannerTypes.standard") },
+    { value: "new-player", label: $t("bannerTypes.new-player") },
+    { value: "weap-special", label: $t("bannerTypes.weapSpecial") },
+    { value: "weap-rerun", label: $t("bannerTypes.weapRerun") },
+    { value: "weap-standard", label: $t("bannerTypes.weapStandard") },
+    { value: "joint", label: $t("bannerTypes.joint") }
   ];
-
-
 
   function formatBannerDate(dateStr, locale) {
     if (!dateStr) return "";
@@ -358,7 +361,7 @@
   $: weaponBannerOptions = (() => {
     const ids = Object.keys($pullData).filter(key => {
       const cat = getWeaponCategory(key);
-      return cat === 'weap-special' || cat === 'weap-standard';
+      return cat === 'weap-special' || cat === 'weap-standard' || cat === 'weapon_rerun' || cat === 'weap-rerun';
     });
     return ids.map(id => {
       const b = banners.find(x => x.id === id);

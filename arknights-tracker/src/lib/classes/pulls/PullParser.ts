@@ -9,7 +9,7 @@ export class PullParser {
     public static isWeaponBanner(rawId: string | number | null | undefined): boolean {
         if (!rawId) return false;
         const id = String(rawId).toLowerCase().trim();
-        return id.includes("weap") || id.includes("wepon") || id.includes("constant") || id.includes("scathe");
+        return id.includes("weap") || id.includes("wepon") || id.includes("constant") || id.includes("scathe") || id.includes("wpn");
     }
 
     public static getInternalBannerType(rawId: string | number | null | undefined): string {
@@ -21,6 +21,10 @@ export class PullParser {
 
         if (id.includes("joint")) {
             return "joint";
+        }
+
+        if (id.includes("rerun") && !this.isWeaponBanner(rawId)) {
+            return "rerun";
         }
 
         if (this.isWeaponBanner(rawId)) {
@@ -39,21 +43,21 @@ export class PullParser {
     }
 
     public static getWeaponCategory(bannerId: string | null | undefined): string {
-        if (!bannerId) {
+        if (!bannerId || !this.isWeaponBanner(bannerId)) {
             return "other";
         }
 
         const id = String(bannerId).toLowerCase();
 
-        if (id.includes("constant") || (id.includes("standard") && id.includes("weapon"))) {
+        if (id.includes("constant") || (id.includes("standard") && (id.includes("weapon") || id.includes("weap") || id.includes("wpn")))) {
             return "weap-standard";
         }
 
-        if (this.isWeaponBanner(bannerId)) {
-            return "weap-special";
+        if (id.includes("rerun")) {
+            return "weapon_rerun";
         }
 
-        return "other";
+        return "weap-special";
     }
 
     public static normalizeBannerKey(key: string | null | undefined): string {
@@ -61,11 +65,13 @@ export class PullParser {
         const k = String(key).trim();
         if (k === "E_CharacterGachaPoolType_Special" || k === "special") return "special";
         if (k === "E_CharacterGachaPoolType_Joint" || k === "joint") return "joint";
+        if (k === "E_CharacterGachaPoolType_Rerun" || k === "rerun") return "rerun";
         if (k === "E_CharacterGachaPoolType_Standard" || k === "standard") return "standard";
         if (k === "E_CharacterGachaPoolType_Beginner" || k === "beginner" || k === "new-player") return "new-player";
         if (k === "Weapon" || k === "weapon" || k === "weapon-all") return "weapon-all";
-        if (k === "weapStandard" || k === "weap-standard") return "weapStandard";
-        if (k === "weapSpecial" || k === "weap-special") return "weapSpecial";
+        if (k === "weapStandard" || k === "weap-standard") return "weap-standard";
+        if (k === "weapSpecial" || k === "weap-special") return "weap-special";
+        if (k === "weapRerun" || k === "weap-rerun" || k === "weapon_rerun") return "weapon_rerun";
         return k;
     }
 

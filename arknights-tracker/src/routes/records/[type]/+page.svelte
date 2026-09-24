@@ -22,7 +22,7 @@
 
     $: bannerType = $page.params.type;
     let selectedBanner = null;
-    $: isAllWeaponCategory = bannerType === "weap-special" || bannerType === "weap-standard";
+    $: isAllWeaponCategory = bannerType === "weap-special" || bannerType === "weap-standard" || bannerType === "weapon_rerun" || bannerType === "weap-rerun";
     $: bannerData = (() => {
         if (isAllWeaponCategory) {
             const subBannerIds = Object.keys($pullData).filter(
@@ -170,21 +170,17 @@
 
     onMount(() => {});
     function getMileageLabel(label) {
-        if (label === "selector_6") return $t("stats.selector") || "Selector";
-        if (label === "guaranteed_6")
-            return $t("stats.guaranteed") || "Guaranteed";
-        if (label === "bonus_copy_6")
-            return $t("stats.bonus_copy") || "Bonus Copy";
-        if (label === "arms_offering")
-            return $t("stats.arms_offering") || "Arms Offering";
-        if (label === "featured_guarantee")
-            return $t("stats.featured_guarantee") || "Featured Wep.";
+        if (label === "selector_6") return $t("stats.selector");
+        if (label === "guaranteed_6") return $t("stats.guaranteed");
+        if (label === "bonus_copy_6") return $t("stats.bonus_copy");
+        if (label === "arms_offering") return $t("stats.arms_offering");
+        if (label === "featured_guarantee") return $t("stats.featured_guarantee");
         return label;
     }
 
     $: isWeaponType =
         bannerType.includes("weap") || bannerType.includes("wepon");
-    $: hasRateUp = bannerType === "special" || isWeaponType;
+    $: hasRateUp = bannerType === "special" || bannerType === "rerun" || isWeaponType;
     $: maxPity6 = isNewPlayer ? 40 : 80;
     $: statsBannerStub = {
         id: "summary",
@@ -241,7 +237,7 @@
 
         const rawId = pull.rawPoolId || pull.bannerId;
         if (rawId) {
-            const genericIds = ["special", "standard", "weapon", "weap-special", "weap-standard", "new-player", "joint", "other", "unknown"];
+            const genericIds = ["special", "standard", "weapon", "weap-special", "weap-standard", "weap-rerun", "rerun", "new-player", "joint", "other", "unknown"];
             if (!genericIds.includes(rawId.toLowerCase())) {
                 const exactMatch = banners.find((b) => b.id === rawId);
                 if (exactMatch) return exactMatch;
@@ -259,21 +255,29 @@
         const isStandardPage =
             (pType.includes("standard") || pType.includes("constant")) &&
             !isNewPlayerPage;
+        const isRerunPage = pType.includes("rerun");
+        const isJointPage = pType.includes("joint");
 
         const candidates = banners.filter((b) => {
             const bId = (b.id || "").toLowerCase();
             const bType = (b.type || "").toLowerCase();
             const isBannerWeapon =
                 bType === "weapon" ||
+                bType === "weap-rerun" ||
                 bId.includes("weap") ||
-                bId.includes("wepon");
+                bId.includes("wepon") ||
+                bId.includes("wpn");
 
             if (isWeaponPage !== isBannerWeapon) return false;
 
-            const isBannerNewPlayer =
-                bType === "new-player" || bId.includes("new_player");
-            if (isNewPlayerPage) return isBannerNewPlayer;
-            if (isBannerNewPlayer) return false;
+            if (isNewPlayerPage) return bType === "new-player" || bId.includes("new_player");
+            if (bType === "new-player" || bId.includes("new_player")) return false;
+
+            if (isJointPage) return bType === "joint" || bId.includes("joint");
+            if (bType === "joint" || bId.includes("joint")) return false;
+
+            if (isRerunPage) return bType === "rerun" || bType === "weap-rerun" || bId.includes("rerun");
+            if (bType === "rerun" || bType === "weap-rerun" || bId.includes("rerun")) return false;
 
             const isBannerStandard =
                 bType === "standard" ||
@@ -643,7 +647,7 @@
         if (hasOther) {
             opts.push({
                 value: "other",
-                label: $t("systemNames.other") || "Other",
+                label: $t("systemNames.other"),
                 subLabel: "",
                 iconId: null
             });

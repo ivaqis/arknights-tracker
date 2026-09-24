@@ -146,7 +146,11 @@
     "weap-standard": "標準武器",
     "weap-special": "活動武器",
     "weapon-all": "武器卡池",
-    "joint": "輝光慶典"
+    "joint": "輝光慶典",
+    "rerun": "重構尋訪",
+    "weapRerun": "重構申領",
+    "weap-rerun": "重構申領",
+    "weapon_rerun": "重構申領"
   },
   "import": {
     "title": "匯入尋訪記錄",
@@ -389,7 +393,9 @@
     "special_1_5_1": "冬獵",
     "weponbox_1_5_1": "幽寒申領",
     "weponbox_1_5_2": "點繪申領",
-    "special_1_5_2": "絢麗異彩"
+    "special_1_5_2": "絢麗異彩",
+    "rerun_chr_yvonne": "絢麗異彩",
+    "rerun_wpn_yvonne": "點繪申領"
   },
   "pages": {
     "home": "首頁",
