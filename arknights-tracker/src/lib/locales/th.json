@@ -2698,6 +2698,7 @@
     "audio_player": {
         "playback_error": "ไม่สามารถโหลดเสียงได้",
         "not_found": "ไม่พบไฟล์เสียง (404)",
+        "download_error": "ข้อผิดพลาดในการดาวน์โหลด",
         "open_raw": "Open raw"
     },
     "monumentStages": {

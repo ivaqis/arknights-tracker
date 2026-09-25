@@ -2698,6 +2698,7 @@
     "audio_player": {
         "playback_error": "Gagal memuat audio",
         "not_found": "Audio tidak ditemukan (404)",
+        "download_error": "Kesalahan pengunduhan",
         "open_raw": "Open raw"
     },
     "monumentStages": {
