@@ -1,6 +1,6 @@
 <script>
     import { t } from "$lib/i18n";
-    import { currentLocale } from "$lib/stores/locale";
+    import { currentLocale, currentUiLocale, normalizeLocale } from "$lib/stores/locale";
     import { enemies } from "$lib/data/enemies.js";
     import { getRarityColor } from "$lib/utils/colorUtils.js";
 
@@ -22,7 +22,7 @@
 
     function formatNumberForSelection(num) {
         if (num === undefined || num === null) return '0';
-        const formatted = num.toLocaleString("ru-RU");
+        const formatted = num.toLocaleString(normalizeLocale($currentUiLocale));
         return formatted.replace(/[\s\u00A0\u202F]/g, '<span class="select-none"> </span>');
     }
 
@@ -68,7 +68,7 @@
     async function loadEnemyData(targetId, lang) {
         if (!targetId) return;
         lang = lang || "en";
-        const safeLang = lang.toLowerCase().replace("-", "");
+        const safeLang = lang.toLowerCase().startsWith("en") ? "en" : lang.toLowerCase().replace("-", "");
 
         const localePath = `/src/lib/locales/${safeLang}/enemies.json`;
         const fallbackPath = `/src/lib/locales/en/enemies.json`;

@@ -3,7 +3,7 @@ import { MachineCraft } from "$lib/classes/crafts/MachineCraft.js";
 import { CraftSearcher } from "$lib/classes/crafts/searchers/CraftSearcher.js";
 import { MachineCraftSearchResult } from "$lib/classes/crafts/searchers/MachineCraftSearchResult.js";
 import { machineCraftItemAsIncome, machineCraftItemAsOutcome } from "$lib/data/crafts/craftMaps.js";
-import { machineCraftGroups } from "$lib/data/crafts/machineCraftGroups.js";
+import { machineCraftGroups } from "$lib/data/crafts/machineCraftGroups";
 
 export class MachineCraftSearcher extends CraftSearcher {
 

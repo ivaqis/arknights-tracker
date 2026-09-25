@@ -11,6 +11,7 @@
     export let profile = null;
     export let activeAccount = null;
     export let primaryAccountOptions = [];
+    export let selectedRecordsAccountId = "";
     export let filteredBackgrounds = [];
     export let bgSearchQuery = "";
 
@@ -56,7 +57,7 @@
                 <div class="shadow-sm">
                     <Select
                         options={primaryAccountOptions}
-                        value={activeAccount.records_uid || ""}
+                        value={selectedRecordsAccountId || ""}
                         on:change={(e) => dispatch("selectRecordsUid", e.detail)}
                         placeholder={$t("profile.settings_primary_account_none")}
                         variant="black"
@@ -86,7 +87,7 @@
                     class="flex flex-col items-center justify-center p-2 rounded-lg border-2 text-[10px] font-bold text-gray-500 dark:text-gray-400 bg-white/5 dark:bg-white/3 transition-all select-none outline-none
                     {!profile?.background ? 'border-[#FFE145] bg-[#FFE145]/15' : 'border-transparent hover:border-gray-300 dark:hover:border-white/20'}"
                 >
-                    <Icon name="noData" class="mb-1" />
+                    <Icon name="noData" class="mb-1 w-5 h-5" />
                     <span class="text-center leading-tight">{$t("profile.settings_bg_none")}</span>
                 </button>
 
@@ -97,13 +98,13 @@
                         {profile?.background === bg.id ? 'border-[#FFE145] bg-[#FFE145]/5' : 'border-transparent hover:border-gray-400 dark:hover:border-white/80'}"
                     >
                         <div class="w-full bg-neutral-800 relative overflow-hidden">
-                            <Image id="{bg.id}.webp" variant="operator-art-lq" className="w-full h-full object-cover transition-transform duration-300" />
+                            <Image id={bg.id} variant="operator-art-lq" className="w-full h-full object-cover transition-transform duration-300" />
                             <div class="absolute top-0.5 left-0.5 bg-black/80 text-white text-[10px] font-bold px-1 py-0.5 rounded-md leading-none">
                                 P{bg.pot}
                             </div>
                         </div>
                         <div class="p-1 text-[10px] font-bold text-gray-700 dark:text-gray-200 text-center truncate w-full">
-                            {$t(`characters.${bg.id.split('_')[0]}`) || bg.name}
+                            {$t(`characters.${bg.id.split('_')[0]}`)}
                         </div>
                     </button>
                 {/each}

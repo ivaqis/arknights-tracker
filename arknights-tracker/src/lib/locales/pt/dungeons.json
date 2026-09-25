@@ -1,0 +1,502 @@
+{
+  "indie_battletower001": {
+    "name": "Cortador de Água de Prata: Normal",
+    "description": "Vi um filete de luz e a lâmina reluzente cortando as correntes, mas ela não conseguiu extinguir sua malícia fria e impiedosa. Seu domínio deixou sua marca em sua espada, e o eco persistente envolveu sua forma.",
+    "featureDesc": " <@ba.info>- Os inimigos têm atributos melhores.</>\n <@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+  },
+  "indie_battletower001_ex": {
+    "name": "Cortador de Água de Prata: Brutal",
+    "description": "Vi um filete de luz e a lâmina reluzente cortando as correntes, mas ela não conseguiu extinguir sua malícia fria e impiedosa. Seu domínio deixou sua marca em sua espada, e o eco persistente envolveu sua forma.",
+    "featureDesc": " <@ba.info>- Os inimigos têm atributos melhores.</>\n <@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+  },
+  "indie_battletower001_s": {
+    "name": "Cortador de Água de Prata: Difícil",
+    "description": "Vi um filete de luz e a lâmina reluzente cortando as correntes, mas ela não conseguiu extinguir sua malícia fria e impiedosa. Seu domínio deixou sua marca em sua espada, e o eco persistente envolveu sua forma.",
+    "featureDesc": " <@ba.info>- Os inimigos têm atributos melhores.</>\n <@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+  },
+  "indie_battletower002": {
+    "name": "Antigos Contos da Natureza Selvagem: Normal",
+    "description": "Compartilho aqui as palavras de bestas que vagam pelas ruínas da guerra, dilacerando e rasgando os nomes das nações enquanto sua fúria raivosa reduz bastões, escudos e projéteis de canhão a ferrium fundido.",
+    "featureDesc": " - Derrotar inimigos recupera 15 de PH.\n - DNO Habilidade de Batalha Causado <@ba.vup>+ 60%</>.\n\n <@ba.info>- Os inimigos têm atributos melhores.</>\n <@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+  },
+  "indie_battletower002_ex": {
+    "name": "Antigos Contos da Natureza Selvagem: Brutal",
+    "description": "Compartilho aqui as palavras de bestas que vagam pelas ruínas da guerra, dilacerando e rasgando os nomes das nações enquanto sua fúria raivosa reduz bastões, escudos e projéteis de canhão a ferrium fundido.",
+    "featureDesc": " - Derrotar inimigos recupera 15 de PH.\n - DNO Habilidade de Batalha Causado <@ba.vup>+ 60%</>.\n\n <@ba.info>- Os inimigos têm atributos melhores.</>\n <@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+  },
+  "indie_battletower002_s": {
+    "name": "Antigos Contos da Natureza Selvagem: Difícil",
+    "description": "Compartilho aqui as palavras de bestas que vagam pelas ruínas da guerra, dilacerando e rasgando os nomes das nações enquanto sua fúria raivosa reduz bastões, escudos e projéteis de canhão a ferrium fundido.",
+    "featureDesc": " - Derrotar inimigos recupera 15 de PH.\n - DNO Habilidade de Batalha Causado <@ba.vup>+ 60%</>.\n\n <@ba.info>- Os inimigos têm atributos melhores.</>\n <@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+  },
+  "indie_battletower003": {
+    "name": "Æthillu dos Escaramuçadores: Normal",
+    "description": "Vejo uma flecha de balestra rasgar o céu. Os escaramuçadores caminhavam na própria fronteira da realidade, seus traços se fundindo com as formas frias dos Æthillu.",
+    "featureDesc": " - Os inimigos não podem se mover, mas são mais difíceis de interromper.\n - Æthillu que só podem ser danificados por Finalizadores surgirão no campo de batalha.\n - Derrotar um Æthillu atrairá todos os inimigos, recuperará 50 PH e concederá ao operador controlado DNO Causado <@ba.vup>+ 100%</> por 10 segundos.\n - Derrote todos os Emboscadores Quebra-Ossos para concluir o estágio. Não é necessário derrotar os Æthillu.\n\n <@ba.info>- Os inimigos têm atributos melhores.</>\n <@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+  },
+  "indie_battletower003_ex": {
+    "name": "Æthillu dos Escaramuçadores: Brutal",
+    "description": "Vejo uma flecha de balestra rasgar o céu. Os escaramuçadores caminhavam na própria fronteira da realidade, seus traços se fundindo com as formas frias dos Æthillu.",
+    "featureDesc": " - Os inimigos não podem se mover, mas são mais difíceis de interromper.\n - Æthillu que só podem ser danificados por Finalizadores surgirão no campo de batalha.\n - Derrotar um Æthillu atrairá todos os inimigos, recuperará 50 PH e concederá ao operador controlado DNO Causado <@ba.vup>+ 100%</> por 10 segundos.\n - Derrote todos os Emboscadores Quebra-Ossos para concluir o estágio. Não é necessário derrotar os Æthillu.\n\n <@ba.info>- Os inimigos têm atributos melhores.</>\n <@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+  },
+  "indie_battletower003_s": {
+    "name": "Æthillu dos Escaramuçadores: Difícil",
+    "description": "Vejo uma flecha de balestra rasgar o céu. Os escaramuçadores caminhavam na própria fronteira da realidade, seus traços se fundindo com as formas frias dos Æthillu.",
+    "featureDesc": " - Os inimigos não podem se mover, mas são mais difíceis de interromper.\n - Æthillu que só podem ser danificados por Finalizadores surgirão no campo de batalha.\n - Derrotar um Æthillu atrairá todos os inimigos, recuperará 50 PH e concederá ao operador controlado DNO Causado <@ba.vup>+ 100%</> por 10 segundos.\n - Derrote todos os Emboscadores Quebra-Ossos para concluir o estágio. Não é necessário derrotar os Æthillu.\n\n <@ba.info>- Os inimigos têm atributos melhores.</>\n <@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+  },
+  "indie_battletower004": {
+    "name": "Era dos Machados: Normal",
+    "description": "Ao passar os dedos até a metade das gravuras, a ferrugem escaldante provocou ondas de dor que percorreram a pele do carrasco. As armas ficaram manchadas com a carne e o sangue deles. O ciclo era interminável e incessante, e se repetia todos os anos.",
+    "featureDesc": " <@ba.info>- Os inimigos têm atributos melhores.</>\n <@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+  },
+  "indie_battletower004_ex": {
+    "name": "Era dos Machados: Brutal",
+    "description": "Ao passar os dedos até a metade das gravuras, a ferrugem escaldante provocou ondas de dor que percorreram a pele do carrasco. As armas ficaram manchadas com a carne e o sangue deles. O ciclo era interminável e incessante, e se repetia todos os anos.",
+    "featureDesc": " <@ba.info>- Os inimigos têm atributos melhores.</>\n <@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+  },
+  "indie_battletower004_s": {
+    "name": "Era dos Machados: Difícil",
+    "description": "Ao passar os dedos até a metade das gravuras, a ferrugem escaldante provocou ondas de dor que percorreram a pele do carrasco. As armas ficaram manchadas com a carne e o sangue deles. O ciclo era interminável e incessante, e se repetia todos os anos.",
+    "featureDesc": " <@ba.info>- Os inimigos têm atributos melhores.</>\n <@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+  },
+  "indie_battletower005": {
+    "name": "Munição Pulverizante: Normal",
+    "description": "Recolhi pedaços de ferrium, fragmentos de pensamentos e ideias outrora registrados em entalhes. O compromisso mais firme foi o da bala, totalmente estilhaçada contra carne e osso.",
+    "featureDesc": " <@ba.info>- Os inimigos têm atributos melhores.</>\n <@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+  },
+  "indie_battletower005_ex": {
+    "name": "Munição Pulverizante: Brutal",
+    "description": "Recolhi pedaços de ferrium, fragmentos de pensamentos e ideias outrora registrados em entalhes. O compromisso mais firme foi o da bala, totalmente estilhaçada contra carne e osso.",
+    "featureDesc": " <@ba.info>- Os inimigos têm atributos melhores.</>\n <@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+  },
+  "indie_battletower005_s": {
+    "name": "Munição Pulverizante: Difícil",
+    "description": "Recolhi pedaços de ferrium, fragmentos de pensamentos e ideias outrora registrados em entalhes. O compromisso mais firme foi o da bala, totalmente estilhaçada contra carne e osso.",
+    "featureDesc": " <@ba.info>- Os inimigos têm atributos melhores.</>\n <@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+  },
+  "indie_battletower006": {
+    "name": "Cicatrizes da Invasão de Terras: Normal",
+    "description": "Fiquei sabendo de uma história que começou com as ambições desmedidas de um senhor da guerra. Isso levou a matilhas de lobos devorando umas às outras e revoltou o grande mar de areia, até que o som do sangue jorrando das feridas abertas ecoou em nossos ouvidos.",
+    "featureDesc": " - Derrotar o Vanguarda Quebra-Ossos concede um Bônus de Eficiência de Desorientação <@ba.vup>+ 50%</>.\n- Derrotar o Incendiário Quebra-Ossos concede Intensidade das Artes <@ba.vup>+ 100</>.\n - Derrotar o Carrasco Quebra-Ossos concede DNO Habilidade Causado <@ba.vup>+ 100%</>.\n - Derrotar o Ram Pesado concede DNO Ataque Básico Causado <@ba.vup>+ 100%</>.\n\n <@ba.info>- Os inimigos têm atributos melhores.</>\n <@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+  },
+  "indie_battletower006_ex": {
+    "name": "Cicatrizes da Invasão de Terras: Brutal",
+    "description": "Fiquei sabendo de uma história que começou com as ambições desmedidas de um senhor da guerra. Isso levou a matilhas de lobos devorando umas às outras e revoltou o grande mar de areia, até que o som do sangue jorrando das feridas abertas ecoou em nossos ouvidos.",
+    "featureDesc": " - Derrotar o Vanguarda Quebra-Ossos concede um Bônus de Eficiência de Desorientação <@ba.vup>+ 50%</>.\n- Derrotar o Incendiário Quebra-Ossos concede Intensidade das Artes <@ba.vup>+ 100</>.\n - Derrotar o Carrasco Quebra-Ossos concede DNO Habilidade Causado <@ba.vup>+ 100%</>.\n - Derrotar o Ram Pesado concede DNO Ataque Básico Causado <@ba.vup>+ 100%</>.\n\n <@ba.info>- Os inimigos têm atributos melhores.</>\n <@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+  },
+  "indie_battletower006_s": {
+    "name": "Cicatrizes da Invasão de Terras: Difícil",
+    "description": "Fiquei sabendo de uma história que começou com as ambições desmedidas de um senhor da guerra. Isso levou a matilhas de lobos devorando umas às outras e revoltou o grande mar de areia, até que o som do sangue jorrando das feridas abertas ecoou em nossos ouvidos.",
+    "featureDesc": " - Derrotar o Vanguarda Quebra-Ossos concede um Bônus de Eficiência de Desorientação <@ba.vup>+ 50%</>.\n- Derrotar o Incendiário Quebra-Ossos concede Intensidade das Artes <@ba.vup>+ 100</>.\n - Derrotar o Carrasco Quebra-Ossos concede DNO Habilidade Causado <@ba.vup>+ 100%</>.\n - Derrotar o Ram Pesado concede DNO Ataque Básico Causado <@ba.vup>+ 100%</>.\n\n <@ba.info>- Os inimigos têm atributos melhores.</>\n <@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+  },
+  "indie_battletower007": {
+    "name": "Uivo das Feras Imortais: Normal",
+    "description": "Ouvi o som da sua lâmina raspando os ossos branqueados das bestas, o chiado da afiação era quase como um toque trovejante.",
+    "featureDesc": " - O Retumbador Celeste não entrará em seu estado Enfurecido.\n - Após entrar na batalha, o Retumbador Celeste ganha 50 de Resistência contra todos os elementos.\n\n <@ba.info>- Os inimigos têm atributos melhores.</>\n <@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+  },
+  "indie_battletower007_ex": {
+    "name": "Uivo das Feras Imortais: Brutal",
+    "description": "Ouvi o som da sua lâmina raspando os ossos branqueados das bestas, o chiado da afiação era quase como um toque trovejante.",
+    "featureDesc": " - O Retumbador Celeste não entrará em seu estado Enfurecido.\n - Após entrar na batalha, o Retumbador Celeste ganha 50 de Resistência contra todos os elementos.\n\n <@ba.info>- Os inimigos têm atributos melhores.</>\n <@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+  },
+  "indie_battletower007_s": {
+    "name": "Uivo das Feras Imortais: Difícil",
+    "description": "Ouvi o som da sua lâmina raspando os ossos branqueados das bestas, o chiado da afiação era quase como um toque trovejante.",
+    "featureDesc": " - O Retumbador Celeste não entrará em seu estado Enfurecido.\n - Após entrar na batalha, o Retumbador Celeste ganha 50 de Resistência contra todos os elementos.\n\n <@ba.info>- Os inimigos têm atributos melhores.</>\n <@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+  },
+  "indie_battletower008": {
+    "name": "Uma Breve História da Guerra: Normal",
+    "description": "Encontrei algumas linhas de verdade. Tudo começou com feras enfurecidas e terminou com pessoas se matando. Os conflitos sangrentos nunca terminaram.",
+    "featureDesc": " - Derrotar o Verminídeo Escavador de Túneis concede Taxa de Regeneração de PH <@ba.vup>+ 30%</>.\n - Derrotar o Ferrão Pesado concede Redução do Tempo de Recarga do Combo de Habilidades de <@ba.vup>50%</>.\n - Derrotar o Artilheiro Quebra-Ossos concede Eficiência de Ganho Supremo <@ba.vup>+ 60%</>.\n \n <@ba.info>- Os inimigos têm atributos melhores.</>\n <@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+  },
+  "indie_battletower008_ex": {
+    "name": "Uma Breve História da Guerra: Brutal",
+    "description": "Encontrei algumas linhas de verdade. Tudo começou com feras enfurecidas e terminou com pessoas se matando. Os conflitos sangrentos nunca terminaram.",
+    "featureDesc": " - Derrotar o Verminídeo Escavador de Túneis concede Taxa de Regeneração de PH <@ba.vup>+ 30%</>.\n - Derrotar o Ferrão Pesado concede Redução do Tempo de Recarga do Combo de Habilidades de <@ba.vup>50%</>.\n - Derrotar o Artilheiro Quebra-Ossos concede Eficiência de Ganho Supremo <@ba.vup>+ 60%</>.\n \n <@ba.info>- Os inimigos têm atributos melhores.</>\n <@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+  },
+  "indie_battletower008_s": {
+    "name": "Uma Breve História da Guerra: Difícil",
+    "description": "Encontrei algumas linhas de verdade. Tudo começou com feras enfurecidas e terminou com pessoas se matando. Os conflitos sangrentos nunca terminaram.",
+    "featureDesc": " - Derrotar o Verminídeo Escavador de Túneis concede Taxa de Regeneração de PH <@ba.vup>+ 30%</>.\n - Derrotar o Ferrão Pesado concede Redução do Tempo de Recarga do Combo de Habilidades de <@ba.vup>50%</>.\n - Derrotar o Artilheiro Quebra-Ossos concede Eficiência de Ganho Supremo <@ba.vup>+ 60%</>.\n \n <@ba.info>- Os inimigos têm atributos melhores.</>\n <@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+  },
+  "indie_battletower009": {
+    "name": "Linhas de Frente Enterradas: Normal",
+    "description": "Testemunhei um funeral, caído em solo escuro e fervente, onde feras são impelidas por sombras persistentes.",
+    "featureDesc": " <@ba.info>- Os inimigos têm atributos melhores.</>\n <@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+  },
+  "indie_battletower009_ex": {
+    "name": "Linhas de Frente Enterradas: Brutal",
+    "description": "Testemunhei um funeral, caído em solo escuro e fervente, onde feras são impelidas por sombras persistentes.",
+    "featureDesc": " <@ba.info>- Os inimigos têm atributos melhores.</>\n <@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+  },
+  "indie_battletower009_s": {
+    "name": "Linhas de Frente Enterradas: Difícil",
+    "description": "Testemunhei um funeral, caído em solo escuro e fervente, onde feras são impelidas por sombras persistentes.",
+    "featureDesc": " <@ba.info>- Os inimigos têm atributos melhores.</>\n <@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+  },
+  "indie_battletower010": {
+    "name": "Muralha de Escudos: Normal",
+    "description": "Observei uma operação de socorro em que uma massa de \"escudos\" cobria a frente de uma linha de batalha.",
+    "featureDesc": " - Quando um Prisma é derrotado, outro Prisma surge no campo de batalha após algum tempo.\n - Agora é muito mais difícil interromper os prismas.\n - Derrote o Sombra da Praga de Penoso para vencer o estágio. Derrotar os Prismas não afeta a conclusão do estágio.\n\n <@ba.info>- Os inimigos têm atributos melhores.</>\n <@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+  },
+  "indie_battletower010_ex": {
+    "name": "Muralha de Escudos: Brutal",
+    "description": "Observei uma operação de socorro em que uma massa de \"escudos\" cobria a frente de uma linha de batalha.",
+    "featureDesc": " - Quando um Prisma é derrotado, outro Prisma surge no campo de batalha após algum tempo.\n - Agora é muito mais difícil interromper os prismas.\n - Derrote o Sombra da Praga de Penoso para vencer o estágio. Derrotar os Prismas não afeta a conclusão do estágio.\n\n <@ba.info>- Os inimigos têm atributos melhores.</>\n <@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+  },
+  "indie_battletower010_s": {
+    "name": "Muralha de Escudos: Difícil",
+    "description": "Observei uma operação de socorro em que uma massa de \"escudos\" cobria a frente de uma linha de batalha.",
+    "featureDesc": " - Quando um Prisma é derrotado, outro Prisma surge no campo de batalha após algum tempo.\n - Agora é muito mais difícil interromper os prismas.\n - Derrote o Sombra da Praga de Penoso para vencer o estágio. Derrotar os Prismas não afeta a conclusão do estágio.\n\n <@ba.info>- Os inimigos têm atributos melhores.</>\n <@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+  },
+  "indie_battletower011": {
+    "name": "Cerco Cruel: Normal",
+    "description": "Planejei uma emboscada feita de lama e sangue, de feridas abertas, de dor alimentando uma grande angústia.",
+    "featureDesc": " - O campo de batalha tem uma <@ba.key>Zona de Dor</>. Um inimigo sofre DNO Recebido <@ba.vup>+ 10%</> para cada segundo dentro da Zona, até o máximo de <@ba.vup>+ 150%</>. A penalização é atenuada gradualmente uma vez que o inimigo sai da <@ba.key>Zona de Dor</>.\n\n <@ba.info>- Os inimigos têm atributos melhores.</>\n <@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+  },
+  "indie_battletower011_ex": {
+    "name": "Cerco Cruel: Brutal",
+    "description": "Planejei uma emboscada feita de lama e sangue, de feridas abertas, de dor alimentando uma grande angústia.",
+    "featureDesc": " - O campo de batalha tem uma <@ba.key>Zona de Dor</>. Um inimigo sofre DNO Recebido <@ba.vup>+ 10%</> para cada segundo dentro da Zona, até o máximo de <@ba.vup>+ 150%</>. A penalização é atenuada gradualmente uma vez que o inimigo sai da <@ba.key>Zona de Dor</>.\n\n <@ba.info>- Os inimigos têm atributos melhores.</>\n <@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+  },
+  "indie_battletower011_s": {
+    "name": "Cerco Cruel: Difícil",
+    "description": "Planejei uma emboscada feita de lama e sangue, de feridas abertas, de dor alimentando uma grande angústia.",
+    "featureDesc": " - O campo de batalha tem uma <@ba.key>Zona de Dor</>. Um inimigo sofre DNO Recebido <@ba.vup>+ 10%</> para cada segundo dentro da Zona, até o máximo de <@ba.vup>+ 150%</>. A penalização é atenuada gradualmente uma vez que o inimigo sai da <@ba.key>Zona de Dor</>.\n\n <@ba.info>- Os inimigos têm atributos melhores.</>\n <@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+  },
+  "indie_battletower012": {
+    "name": "Fervor Inorgânico: Normal",
+    "description": "Eu simulei um ataque. Embora os Aggeloi não sintam, nossas vanguardas desconhecem a exaustão.",
+    "featureDesc": " - Os operadores entram na batalha com <@ba.key>Energia Suprema</> máxima.\n\n <@ba.info>- Os inimigos têm atributos melhores.</>\n <@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+  },
+  "indie_battletower012_ex": {
+    "name": "Fervor Inorgânico: Brutal",
+    "description": "Eu simulei um ataque. Embora os Aggeloi não sintam, nossas vanguardas desconhecem a exaustão.",
+    "featureDesc": " - Os operadores entram na batalha com <@ba.key>Energia Suprema</> máxima.\n\n <@ba.info>- Os inimigos têm atributos melhores.</>\n <@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+  },
+  "indie_battletower012_s": {
+    "name": "Fervor Inorgânico: Difícil",
+    "description": "Eu simulei um ataque. Embora os Aggeloi não sintam, nossas vanguardas desconhecem a exaustão.",
+    "featureDesc": " - Os operadores entram na batalha com <@ba.key>Energia Suprema</> máxima.\n\n <@ba.info>- Os inimigos têm atributos melhores.</>\n <@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+  },
+  "indie_battletower013": {
+    "name": "Decapitação Poderosa: Normal",
+    "description": "Preparei um assassinato, onde a força é totalmente carregada assim que o machado é erguido acima da cabeça.",
+    "featureDesc": " - Os inimigos usam somente <@ba.key>habilidades carregadas</> e são imunes a DNO de <@ba.key>habilidade de batalha</> enquanto <@ba.key>carregam</> suas habilidades. As <@ba.key>habilidades carregadas</> do inimigo não podem ser interrompidas por <@ba.key>habilidades de batalha</>.\n\n <@ba.info>- Os inimigos têm atributos melhores.</>\n <@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+  },
+  "indie_battletower013_ex": {
+    "name": "Decapitação Poderosa: Brutal",
+    "description": "Preparei um assassinato, onde a força é totalmente carregada assim que o machado é erguido acima da cabeça.",
+    "featureDesc": " - Os inimigos usam somente <@ba.key>habilidades carregadas</> e são imunes a DNO de <@ba.key>habilidade de batalha</> enquanto <@ba.key>carregam</> suas habilidades. As <@ba.key>habilidades carregadas</> do inimigo não podem ser interrompidas por <@ba.key>habilidades de batalha</>.\n\n <@ba.info>- Os inimigos têm atributos melhores.</>\n <@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+  },
+  "indie_battletower013_s": {
+    "name": "Decapitação Poderosa: Difícil",
+    "description": "Preparei um assassinato, onde a força é totalmente carregada assim que o machado é erguido acima da cabeça.",
+    "featureDesc": " - Os inimigos usam somente <@ba.key>habilidades carregadas</> e são imunes a DNO de <@ba.key>habilidade de batalha</> enquanto <@ba.key>carregam</> suas habilidades. As <@ba.key>habilidades carregadas</> do inimigo não podem ser interrompidas por <@ba.key>habilidades de batalha</>.\n\n <@ba.info>- Os inimigos têm atributos melhores.</>\n <@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+  },
+  "indie_battletower014": {
+    "name": "Planos Bestiais: Normal",
+    "description": "Eu organizei um banquete. As feras são astutas, mas frustrar seus planos trará certas recompensas.",
+    "featureDesc": " - Derrotar um Uivante Montanhês recupera <@ba.vup>10</> PH e concede a todos os operadores Intensidade das Artes <@ba.vup>+ 15</>.\n\n <@ba.info>- Os inimigos têm atributos melhores.</>\n <@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+  },
+  "indie_battletower014_ex": {
+    "name": "Planos Bestiais: Brutal",
+    "description": "Eu organizei um banquete. As feras são astutas, mas frustrar seus planos trará certas recompensas.",
+    "featureDesc": " - Derrotar um Uivante Montanhês recupera <@ba.vup>10</> PH e concede a todos os operadores Intensidade das Artes <@ba.vup>+ 15</>.\n\n <@ba.info>- Os inimigos têm atributos melhores.</>\n <@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+  },
+  "indie_battletower014_s": {
+    "name": "Planos Bestiais: Difícil",
+    "description": "Eu organizei um banquete. As feras são astutas, mas frustrar seus planos trará certas recompensas.",
+    "featureDesc": " - Derrotar um Uivante Montanhês recupera <@ba.vup>10</> PH e concede a todos os operadores Intensidade das Artes <@ba.vup>+ 15</>.\n\n <@ba.info>- Os inimigos têm atributos melhores.</>\n <@ba.info>- Somente itens táticos e consumíveis de Tratamento de PV podem ser usados.</>"
+  },
+  "indie_hard001": {
+    "name": "Escudos Furiosos",
+    "description": "A neblina nevada parece nunca se dissipar destas terras selvagens. Sons nítidos de estilhaços podiam ser ouvidos ocultos entre os estrondos baixos. \nEscute com atenção. Você ouviu... pedra rangendo contra metal?",
+    "featureDesc": " - Os inimigos são mais fortes."
+  },
+  "indie_hard001_s": {
+    "name": "Escudos Furiosos: Agonia",
+    "description": "A neblina nevada parece nunca se dissipar destas terras selvagens. Sons nítidos de estilhaços podiam ser ouvidos ocultos entre os estrondos baixos. \nEscute com atenção. Você ouviu... pedra rangendo contra metal?",
+    "featureDesc": " - Os inimigos são mais fortes.\n - Os inimigos se movem mais rápido e se recuperam da Desorientação mais rapidamente.\n - Quando um inimigo é derrotado, os inimigos restantes se tornam mais difíceis de interromper e ganham restauração de ATQ e PV continuamente.\n\n  <@ba.info>- Não é possível usar itens táticos nem consumíveis.</>"
+  },
+  "indie_hard002": {
+    "name": "Raios e Sombras",
+    "description": "A explosão ensurdecedora trouxe brasas da guerra de um século atrás. No entanto, o Cinturão da Civilização não foi destruído pelo bombardeio Aggeloide. \n\"Não foram apenas os Aggeloi que levaram a humanidade à beira da extinção. E essa é a tragédia.\"",
+    "featureDesc": " - Os inimigos são mais fortes."
+  },
+  "indie_hard002_s": {
+    "name": "Raios e Sombras: Agonia",
+    "description": "A explosão ensurdecedora trouxe brasas da guerra de um século atrás. No entanto, o Cinturão da Civilização não foi destruído pelo bombardeio Aggeloide. \n\"Não foram apenas os Aggeloi que levaram a humanidade à beira da extinção. E essa é a tragédia.\"",
+    "featureDesc": " - Os inimigos são mais fortes.\n- Os inimigos se recuperam mais rapidamente do estado de Desorientado, são mais difíceis de interromper e têm um alcance de ATQ muito maior.\n - O Ferrão Pesado α ganha imunidade temporária contra todos os tipos de DNO regularmente; derrote todos os Ferrão α para remover esse benefício de imunidade.\n \n  <@ba.info>- Não é possível usar itens táticos nem consumíveis.</>"
+  },
+  "indie_hard003": {
+    "name": "Sólido como uma Rocha",
+    "description": "Os destroços da máquina gigante ao longe anunciavam os grandes eventos do passado. Perto dali, entidades desmembradas começaram a se unir, criando entidades recém-nascidas que soltavam uivos de cortar a terra. \nA terra começou a tremer enquanto os Aggeloi se chocavam contra o chão e avançavam com passos pesados.",
+    "featureDesc": " - Os inimigos são mais fortes."
+  },
+  "indie_hard003_s": {
+    "name": "Sólido como uma Rocha: Agonia",
+    "description": "Os destroços da máquina gigante ao longe anunciavam os grandes eventos do passado. Perto dali, entidades desmembradas começaram a se unir, criando entidades recém-nascidas que soltavam uivos de cortar a terra. \nA terra começou a tremer enquanto os Aggeloi se chocavam contra o chão e avançavam com passos pesados.",
+    "featureDesc": " - A regeneração de Vitalidade do operador é bastante reduzida.\n - Os inimigos são mais fortes e imunes a Desorientar.\n - O Crisópolis Caminhante se recupera mais rapidamente da exposição a pontos fracos. Falhar em destruir um ponto fraco antes do fim da exposição concede ao Crisópolis Caminhante um grande benefício de ATQ. Destruir o ponto fraco com sucesso aplica o efeito Desorientado ao Crisópolis Caminhante.\n\n  <@ba.info>- Não é possível usar itens táticos nem consumíveis.</>"
+  },
+  "indie_hard004": {
+    "name": "Balista e Machado",
+    "description": "Os guerreiros Quebra-Ossos estriparam os fracos e subiram na plataforma com o machado e a balista erguidos. Derrote-os e deixe para trás tanto o sofrimento antigo quanto a ambição recém-descoberta. \n\"Herói? Como você conquistou esse título?\"",
+    "featureDesc": " - Os 2 inimigos de elite lutarão como uma equipe."
+  },
+  "indie_hard004_s": {
+    "name": "Balista e Machado: Agonia",
+    "description": "Os guerreiros Quebra-Ossos estriparam os fracos e subiram na plataforma com o machado e a balista erguidos. Derrote-os e deixe para trás tanto o sofrimento antigo quanto a ambição recém-descoberta. \n\"Herói? Como você conquistou esse título?\"",
+    "featureDesc": " - Os 2 inimigos de elite lutarão como uma equipe.\n - Quando ambos os inimigos de elite estiverem em campo, eles compartilharão o DNO recebido.\n \n  <@ba.info>- Não é possível usar itens táticos nem consumíveis.</>"
+  },
+  "indie_hard005": {
+    "name": "Táticas Não Ortodoxas",
+    "description": "Os dispositivos de comunicação emitiam guinchos estridentes enquanto os drones caíam no chão. Os Invasores de Terras se viraram para olhar enquanto murmuravam desejos de \"bênçãos\" e \"vingança\". \nAtrás deles, figuras altas e sombrias se erguiam em meio à floresta de fornalhas.",
+    "featureDesc": " - Os inimigos não podem se mover, mas são mais difíceis de interromper e ganham ATQ continuamente."
+  },
+  "indie_hard005_s": {
+    "name": "Táticas Não Ortodoxas: Agonia",
+    "description": "Os dispositivos de comunicação emitiam guinchos estridentes enquanto os drones caíam no chão. Os Invasores de Terras se viraram para olhar enquanto murmuravam desejos de \"bênçãos\" e \"vingança\". \nAtrás deles, figuras altas e sombrias se erguiam em meio à floresta de fornalhas.",
+    "featureDesc": " - Os inimigos não podem se mover, mas são mais difíceis de interromper e ganham ATQ continuamente.\n - O ATQ do inimigo aumenta a uma taxa muito mais rápida.\n\n  <@ba.info>- Não é possível usar itens táticos nem consumíveis.</>"
+  },
+  "indie_hard006": {
+    "name": "Sobreviver ao Gás",
+    "description": "A enorme fábrica expelia gases espessos e nocivos de seus tubos. Quem está tentando esconder seus segredos aqui? \n\"Saquem suas armas e levantem seus escudos! Que as bestas carnívoras uivem! E aqueçam essa névoa!\"",
+    "featureDesc": " - Cuidado. A Névoa causa DNO contínuo a todos os operadores.\n - Quando o operador controlado recebe Tratamento PV, os outros operadores na equipe também recebem 70% desse Tratamento PV."
+  },
+  "indie_hard006_s": {
+    "name": "Sobreviver ao Gás: Agonia",
+    "description": "A enorme fábrica expelia gases espessos e nocivos de seus tubos. Quem está tentando esconder seus segredos aqui? \n\"Saquem suas armas e levantem seus escudos! Que as bestas carnívoras uivem! E aqueçam essa névoa!\"",
+    "featureDesc": " - Cuidado. A Névoa causa DNO contínuo a todos os operadores.\n - A Névoa causa mais DNO e novos inimigos surgirão.\n - Quando o operador controlado recebe tratamento de PV, os outros operadores da equipe também recebem 50% desse tratamento de PV.\n\n  <@ba.info>- Não é possível usar itens táticos nem consumíveis.</>"
+  },
+  "indie_hard007": {
+    "name": "Chama Uivante",
+    "description": "Malditos sejam os céus! Malditos sejam os raios que ninguém viu chegar! E MALDITOS sejam os incêndios que caem sem aviso!",
+    "featureDesc": " Inimigos costumam ficar no estado <@ba.key>Enfurecido</>, que inflige continuamente <@ba.fire>Inflição Térmica</> neles mesmos. Isso concede bônus de ATQ e reduções de DNO de acordo com o número de pilhas de inflição térmica.\n\n <@ba.info>- Os inimigos têm a mesma resistência contra qualquer elemento.</>"
+  },
+  "indie_hard007_s": {
+    "name": "Chama Uivante: Agonia",
+    "description": "Malditos sejam os céus! Malditos sejam os raios que ninguém viu chegar! E MALDITOS sejam os incêndios que caem sem aviso!",
+    "featureDesc": " Inimigos costumam ficar no estado <@ba.key>Enfurecido</>, que aplica continuamente <@ba.fire>Inflição Térmica</> neles mesmos. Isso concede bônus de ATQ e benefícios de Redução DNO de acordo com o número de pilhas de inflição térmica.\n - Durante <@ba.key>Enfurecido</>, os <@ba.key>operadores não têm mais regeneração de PH</>.\n\n <@ba.info>- Não é possível usar itens táticos nem consumíveis.</>\n <@ba.info>- Os inimigos têm a mesma resistência contra todos os elementos.</>"
+  },
+  "indie_hard008": {
+    "name": "Mar de Repulsa",
+    "description": "O ódio deles é antigo e intenso. Os abandonados vagavam sem rumo pela terra desolada... A causa de sua fúria foi esquecida com o tempo, mas todo receptáculo de ódio é capaz de extrair poder do mar infinito de névoa.",
+    "featureDesc": " - Os inimigos são mais fortes.\n - Os inimigos de elite lutarão como uma equipe.\n\n <@ba.info>- Os inimigos têm a mesma resistência contra qualquer elemento.</>"
+  },
+  "indie_hard008_s": {
+    "name": "Mar de Repulsa: Agonia",
+    "description": "O ódio deles é antigo e intenso. Os abandonados vagavam sem rumo pela terra desolada... A causa de sua fúria foi esquecida com o tempo, mas todo receptáculo de ódio é capaz de extrair poder do mar infinito de névoa.",
+    "featureDesc": " - Os inimigos são mais fortes e <@ba.key>mais difíceis de interromper</>.\n - Os inimigos de elite lutarão em equipe, e inimigos adicionais aparecerão.\n\n <@ba.info>- Não é possível usar itens táticos nem consumíveis.</>\n <@ba.info>- Os inimigos têm a mesma resistência contra qualquer elemento.</>"
+  },
+  "indie_hard009": {
+    "name": "Ponto de Fusão da Carne",
+    "description": "QUEIMEM! Deixem tudo queimar! Derrubem a torre e derretam a nave! Derramem nosso sangue no ferro fundido fervente e usem-no para purificar Talos-II!",
+    "featureDesc": " - Os inimigos são mais fortes.\n - Lesmas do Originium Névoa de Fogo que explodem surgem periodicamente.\n\n <@ba.info>- Os inimigos têm a mesma resistência contra qualquer elemento.</>"
+  },
+  "indie_hard009_s": {
+    "name": "Ponto de Fusão da Carne: Agonia",
+    "description": "QUEIMEM! Deixem tudo queimar! Derrubem a torre e derretam a nave! Derramem nosso sangue no ferro fundido fervente e usem-no para purificar Talos-II!",
+    "featureDesc": " - Os inimigos são mais fortes e <@ba.key>inimigos adicionais surgirão</>.\n - Lesmas do Originium Névoa de Fogo que explodem surgem periodicamente.\n - <@ba.key>Os operadores não podem realizar Desvios Perfeitos</>.\n\n <@ba.info>- Não é possível usar itens táticos nem consumíveis.</>\n <@ba.info>- Os inimigos têm a mesma resistência contra qualquer elemento.</>"
+  },
+  "indie_hard010": {
+    "name": "Maré de Tristeza",
+    "description": "A agonia se precipitou e acumulou neste lugar por anos. Observe como a luz se difrata nas águas furiosas da maré. A intenção assassina emanada é desprovida de qualquer emoção.",
+    "featureDesc": " - Os inimigos não atacam ativamente; em vez disso, eles avançam rumo ao centro do campo de batalha onde <@ba.key>explodem</> e causam DNO significativo a todos os operadores.\n - Alguns inimigos são muito mais difíceis de interromper.\n\n <@ba.info>- Os inimigos têm a mesma resistência contra qualquer elemento.</>"
+  },
+  "indie_hard010_s": {
+    "name": "Maré de Tristeza: Agonia",
+    "description": "A agonia se precipitou e acumulou neste lugar por anos. Observe como a luz se difrata nas águas furiosas da maré. A intenção assassina emanada é desprovida de qualquer emoção.",
+    "featureDesc": " - Os inimigos não atacam ativamente; em vez disso, eles avançam rumo ao centro do campo de batalha onde <@ba.key>explodem</> e causam DNO significativo a todos os operadores.\n - Alguns inimigos são muito mais difíceis de interromper.\n\n <@ba.info>- Não é possível usar itens táticos nem consumíveis.</>\n <@ba.info>- Os inimigos têm a mesma resistência contra qualquer elemento.</>"
+  },
+  "indie_hard011": {
+    "name": "Conexão Criostática",
+    "description": "A frigidez extrema os conecta. As ondas impetuosas e as correntes subterrâneas turvas conferem a eles um nome comum e um significado por trás de sua criação.",
+    "featureDesc": " - Os inimigos são mais fortes.\n\n <@ba.info>- Os inimigos têm a mesma resistência contra qualquer elemento.</>"
+  },
+  "indie_hard011_s": {
+    "name": "Conexão Criostática: Agonia",
+    "description": "A frigidez extrema os conecta. As ondas impetuosas e as correntes subterrâneas turvas conferem a eles um nome comum e um significado por trás de sua criação.",
+    "featureDesc": " - Os inimigos são mais fortes.\n - Quando melhorado, todo o DNO causado pelo inimigo aplicará <@ba.cryst>Solidificação</> instantaneamente a todos os operadores.\n\n <@ba.info>- Não é possível usar itens táticos nem consumíveis.</>\n <@ba.info>- Os inimigos têm a mesma resistência contra qualquer elemento.</>"
+  },
+  "indie_hard012": {
+    "name": "Sangue Profanado",
+    "description": "Eles se fartaram com a imundície das terras até explodirem e derramarem seu sangue espesso e fétido, um líquido amaldiçoado que aprisiona qualquer um que o contemple.",
+    "featureDesc": " - Os inimigos são mais fortes.\n - O Penoso Imbuído invocará outros Penosos regularmente.\n\n <@ba.info>- Os inimigos têm a mesma resistência contra qualquer elemento.</>"
+  },
+  "indie_hard012_s": {
+    "name": "Sangue Profanado: Agonia",
+    "description": "Eles se fartaram com a imundície das terras até explodirem e derramarem seu sangue espesso e fétido, um líquido amaldiçoado que aprisiona qualquer um que o contemple.",
+    "featureDesc": " - Os inimigos são mais fortes.\n- O Penoso Imbuído invocará outros Penosos regularmente. Com PV reduzido, ele <@ba.key>invocará ainda mais</> Penosos.\n\n <@ba.info>- Não é possível usar itens táticos nem consumíveis.</>\n <@ba.info>- Os inimigos têm a mesma resistência contra qualquer elemento.</>"
+  },
+  "indie_hard013": {
+    "name": "Horizonte Silencioso",
+    "description": "A esperança jamais retornará a esta terra. Bestas e pessoas apodreceram, restando apenas seres com olhares sem vida, vagando cambaleantes pela névoa ardente densa e fumegante.",
+    "featureDesc": " - Os inimigos têm atributos melhores.\n - Os inimigos ganham ATQ de forma constante.\n\n <@ba.info>- Os inimigos têm a mesma resistência contra qualquer elemento.</>"
+  },
+  "indie_hard013_s": {
+    "name": "Horizonte Silencioso: Agonia",
+    "description": "A esperança jamais retornará a esta terra. Bestas e pessoas apodreceram, restando apenas seres com olhares sem vida, vagando cambaleantes pela névoa ardente densa e fumegante.",
+    "featureDesc": " - Os inimigos têm atributos melhores.\n - Os inimigos ganham ATQ de forma constante.\n\n <@ba.info>- Não é possível usar itens táticos nem consumíveis.</>\n <@ba.info>- Os inimigos têm a mesma resistência contra qualquer elemento.</>"
+  },
+  "indie_hard014": {
+    "name": "Mar Definhante",
+    "description": "As correntes turvas em algum momento se acalmariam. As feras esperariam até que o imponente machado rompesse as ruínas do passado e abrisse caminho rumo a novas possibilidades.",
+    "featureDesc": " - Os inimigos têm atributos melhores.\n\n <@ba.info>- Os inimigos têm a mesma resistência contra qualquer elemento.</>"
+  },
+  "indie_hard014_s": {
+    "name": "Mar Definhante: Agonia",
+    "description": "As correntes turvas em algum momento se acalmariam. As feras esperariam até que o imponente machado rompesse as ruínas do passado e abrisse caminho rumo a novas possibilidades.",
+    "featureDesc": " - Os inimigos têm atributos melhores.\n\n <@ba.info>- Não é possível usar itens táticos nem consumíveis.</>\n <@ba.info>- Os inimigos têm a mesma resistência contra qualquer elemento.</>"
+  },
+  "indie_hard015": {
+    "name": "Fenda do Riacho Profundo",
+    "description": "Sob as águas silenciosas onde correntes gélidas e escuras fluem em silêncio, existem fendas onde construções inorgânicas se escondem.",
+    "featureDesc": " - Os inimigos são mais fortes.\n - A Efígie invocará mais Aggeloi.\n\n <@ba.info>- Os inimigos têm a mesma resistência contra qualquer elemento.</>"
+  },
+  "indie_hard015_s": {
+    "name": "Fenda do Riacho Profundo: Agonia",
+    "description": "Sob as águas silenciosas onde correntes gélidas e escuras fluem em silêncio, existem fendas onde construções inorgânicas se escondem.",
+    "featureDesc": " - Os inimigos são mais fortes.\n - A Efígie invocará mais Aggeloi.\n\n <@ba.info>- Não é possível usar itens táticos nem consumíveis.</>\n <@ba.info>- Os inimigos têm a mesma resistência contra qualquer elemento.</>"
+  },
+  "indie_hard016": {
+    "name": "Vórtice do Ritual",
+    "description": "Uma luz inundou a visão das pessoas quando elas fixaram seus olhares no turbilhão de desespero e fúria. Seus gritos se misturavam ao trovão ensurdecedor enquanto o portador do sinalizador aguardava nas terras despedaçadas.",
+    "featureDesc": " - Em intervalos regulares, o Piromante Quebra-Ossos invoca seus <@ba.key>duplicados</> e canaliza sua habilidade suprema por uma determinada duração. A habilidade suprema causa DNO significativo a todos os operadores assim que a canalização é concluída. Derrote todos os <@ba.key>duplicados</> para interromper a habilidade suprema do Piromante.\n - Os inimigos recebem DNO adicional dos <@ba.key>Finalizadores</>; a duração de Desorientado do inimigo também é consideravelmente reduzida.\n \n <@ba.info>- Os inimigos têm a mesma resistência contra qualquer elemento.</>"
+  },
+  "indie_hard016_s": {
+    "name": "Vórtice do Ritual: Agonia",
+    "description": "Uma luz inundou a visão das pessoas quando elas fixaram seus olhares no turbilhão de desespero e fúria. Seus gritos se misturavam ao trovão ensurdecedor enquanto o portador do sinalizador aguardava nas terras despedaçadas.",
+    "featureDesc": " - Em intervalos regulares, o Piromante Quebra-Ossos invoca seus <@ba.key>duplicados</> e canaliza sua habilidade suprema por uma determinada duração. A habilidade suprema causa DNO significativo a todos os operadores assim que a canalização é concluída. Derrote todos os <@ba.key>duplicados</> para interromper a habilidade suprema do Piromante.\n - Os inimigos recebem DNO adicional dos <@ba.key>Finalizadores</>; a duração de Desorientado do inimigo também é consideravelmente reduzida.\n\n <@ba.info>- Não é possível usar itens táticos nem consumíveis.</>\n <@ba.info>- Os inimigos têm a mesma resistência contra qualquer elemento.</>"
+  },
+  "indie_hard017": {
+    "name": "Æthillu Atormentador",
+    "description": "A poeira do esquecimento obscurece qualquer perspectiva, enquanto o lamento se eleva a cada nota. A carne do Æthillu Atormentador foi derramada para que a morte sufoque o mundo inteiro.",
+    "featureDesc": " - Em intervalos regulares, o operador controlado será <@ba.key>vedado</>.\n \n <@ba.info>- Os inimigos têm a mesma resistência contra qualquer elemento.</>"
+  },
+  "indie_hard017_s": {
+    "name": "Æthillu Atormentador: Agonia",
+    "description": "A poeira do esquecimento obscurece qualquer perspectiva, enquanto o lamento se eleva a cada nota. A carne do Æthillu Atormentador foi derramada para que a morte sufoque o mundo inteiro.",
+    "featureDesc": " - Em intervalos regulares, o operador controlado será <@ba.key>vedado</>. Essa <@ba.key>vedação</> também dura muito mais.\n\n <@ba.info>- Não é possível usar itens táticos nem consumíveis.</>\n <@ba.info>- Os inimigos têm a mesma resistência contra qualquer elemento.</>"
+  },
+  "indie_hard018": {
+    "name": "Retumbador Furioso",
+    "description": "A entidade estrondosa é atraída para estas terras, pisoteando os mortos e seu terrível tormento. A guerra entre a vida e a morte nunca terá fim.",
+    "featureDesc": " - Quando enfurecido, o Retumbador Celeste criará escudos protetores. Cada <@ba.key>Reação de Artes</> ou <@ba.phy>Status Físico</> causado pelos operadores remove 1 acúmulo de escudo.\n \n <@ba.info>- Os inimigos têm a mesma resistência contra qualquer elemento.</>"
+  },
+  "indie_hard018_s": {
+    "name": "Retumbador Furioso: Agonia",
+    "description": "A entidade estrondosa é atraída para estas terras, pisoteando os mortos e seu terrível tormento. A guerra entre a vida e a morte nunca terá fim.",
+    "featureDesc": " - Quando estiver calmo, o retumbador celeste criará um <@ba.key>Vórtice</> sempre que causar DNO ao operador controlado.\n - Quando enfurecido, o Retumbador Celeste absorverá todos os <@ba.key>Vórtices</> no campo de batalha para criar escudos protetores. Cada <@ba.key>Vórtice</> absorvido aumenta o número de acúmulos de escudo. Cada <@ba.key>Reação de Artes</> ou <@ba.phy>Status Físico</> causado pelos operadores remove 1 acúmulo de escudo.\n\n <@ba.info>- Não é possível usar itens táticos nem consumíveis.</>\n <@ba.info>- Os inimigos têm a mesma resistência contra qualquer elemento.</>"
+  },
+  "indie_hard019": {
+    "name": "Falange de Espinhos",
+    "description": "Afiem suas lanças. Fortaleçam seus escudos. Testemunhem seu ódio e ouçam sua fraqueza. Então marchem à frente e cravem suas armas na carne da morte.",
+    "featureDesc": " - Os inimigos têm atributos melhores. \n - Os prismas aumentarão o ATQ dos Hedrons;\n - Agora é muito mais difícil interromper os prismas.\n \n <@ba.info>- Os inimigos têm a mesma resistência contra qualquer elemento.</>"
+  },
+  "indie_hard019_s": {
+    "name": "Falange de Espinhos: Agonia",
+    "description": "Afiem suas lanças. Fortaleçam seus escudos. Testemunhem seu ódio e ouçam sua fraqueza. Então marchem à frente e cravem suas armas na carne da morte.",
+    "featureDesc": " - Os inimigos têm atributos melhores.\n - Os prismas aumentarão o ATQ dos Hedrons.\n - Agora é muito mais difícil interromper os prismas.\n\n <@ba.info>- Não é possível usar itens táticos nem consumíveis.</>\n <@ba.info>- Os inimigos têm a mesma resistência contra qualquer elemento.</>"
+  },
+  "indie_hard020": {
+    "name": "Olhos Dissolventes",
+    "description": "Os rios convergem em uma corrente fria de sangue. Das profundezas semelhantes a fendas e sob as correntes Estígias, o Dissolvente continua a espreitar.",
+    "featureDesc": " - Os inimigos têm atributos melhores.\n - As forças inimigas incluem Andarilho da Maré δ.\n \n <@ba.info>- Os inimigos têm a mesma resistência contra qualquer elemento.</>"
+  },
+  "indie_hard020_s": {
+    "name": "Olhos Dissolventes: Agonia",
+    "description": "Os rios convergem em uma corrente fria de sangue. Das profundezas semelhantes a fendas e sob as correntes Estígias, o Dissolvente continua a espreitar.",
+    "featureDesc": " - Os inimigos têm atributos melhores.\n - As forças inimigas incluem Andarilho da Maré δ.\n\n <@ba.info>- Não é possível usar itens táticos nem consumíveis.</>\n <@ba.info>- Os inimigos têm a mesma resistência contra qualquer elemento.</>"
+  },
+  "indie_hard021": {
+    "name": "Caminhando no Território dos Rastejantes",
+    "description": "Garras afiadas permaneceram ocultas enquanto a manada avançava sem controle e os rios transbordavam. Os derrotados migram e fogem, mas os jovens se esquecem de retribuir o ódio.",
+    "featureDesc": " - Os inimigos têm atributos melhores.\n - O Rastejante Brilhante é permanentemente <@ba.key>Enfurecido</> e seu ATQ aumenta à medida que seu PV diminui.\n \n <@ba.info>- Os inimigos têm a mesma resistência contra qualquer elemento.</>"
+  },
+  "indie_hard021_s": {
+    "name": "Caminhando no Território dos Rastejantes: Agonia",
+    "description": "Garras afiadas permaneceram ocultas enquanto a manada avançava sem controle e os rios transbordavam. Os derrotados migram e fogem, mas os jovens se esquecem de retribuir o ódio.",
+    "featureDesc": " - Os inimigos têm atributos melhores.\n - O Rastejante Brilhante é permanentemente <@ba.key>Enfurecido</> e seu ATQ aumenta à medida que seu PV diminui.\n\n <@ba.info>- Não é possível usar itens táticos nem consumíveis.</>\n <@ba.info>- Os inimigos têm a mesma resistência contra qualquer elemento.</>"
+  },
+  "indie_hard022": {
+    "name": "Névoa Ardente Sísmica",
+    "description": "\"Eu empunho o CAJADO! A névoa ardente é meu MARTELO! Essas montanhas são TAMBORES! E eu sou! Quem dita! O RITMO!\"",
+    "featureDesc": " - O Piromante Quebra-Ossos conjura névoa ardente incessantemente, causando DNO a todos os operadores. Ele também é mais difícil de interromper e é imune a DNO Desorientação.\n - Quando o Piromante Quebra-Ossos sofre DNO <@ba.key>Explosão de Artes</>, ele recebe DNO adicional igual a uma porcentagem de seu PV máximo e se torna temporariamente <@ba.key>selado</>.\n - O Piromante Quebra-Ossos continuará invocando Invasores de Elite e Emboscadores de Elite.\n - Derrotar um inimigo com uma <@ba.key>Inflição de Artes</> também aplica 1 acúmulo da mesma <@ba.key>Inflição de Artes</> a todos os outros inimigos.\n\n <@ba.info>- Os inimigos têm a mesma resistência contra cada elemento.</>"
+  },
+  "indie_hard022_s": {
+    "name": "Névoa Ardente Sísmica: Agonia",
+    "description": "\"Eu empunho o CAJADO! A névoa ardente é meu MARTELO! Essas montanhas são TAMBORES! E eu sou! Quem dita! O RITMO!\"",
+    "featureDesc": " - O Piromante Quebra-Ossos conjura névoa ardente incessantemente, causando DNO a todos os operadores. Quando seu PV está baixo, sua névoa ardente também aplica <@ba.fire>Inflição Térmica</>. Ele também é mais difícil de interromper e é imune a DNO Desorientação.\n - Quando o Piromante Quebra-Ossos sofre DNO <@ba.key>Explosão de Artes</>, ele recebe DNO adicional igual a uma porcentagem de seu PV máximo e se torna temporariamente <@ba.key>selado</>.\n - O Piromante Quebra-Ossos continuará invocando Invasores de Elite e Emboscadores de Elite.\n - Derrotar um inimigo com uma <@ba.key>Inflição de Artes</> também aplica 1 acúmulo da mesma <@ba.key>Inflição de Artes</> a todos os outros inimigos.\n\n <@ba.info>- Não é possível usar itens táticos nem consumíveis.</>\n <@ba.info>- Os inimigos têm a mesma resistência contra cada elemento.</>"
+  },
+  "indie_hard023": {
+    "name": "Mutiladora e Amigos",
+    "description": "As pessoas possuem todo tipo de habilidades, mas as bestas têm todo tipo de truques. Se você tem interesse em ver quem é o melhor, o palco está à sua disposição.",
+    "featureDesc": " - <@ba.key>Os operadores não têm mais regeneração de PH</>.\n - O operador controlado recuperará parte do PH pisando em cascas de banana jogadas pelos uivantes montanheses.\n - A Besta Mutiladora Encouraçada irá conjurar sua habilidade suprema regularmente. A habilidade suprema remove todas as cascas de banana do campo de batalha e causa DNO continuamente a todos os operadores. Ao conjurar sua habilidade suprema, a Besta Mutiladora Encouraçada ganha Redução DNO elevada. As <@ba.key>Interrupções de Ataque</> podem parar a conjuração desta habilidade suprema.\n\n <@ba.info>- Os inimigos têm a mesma resistência contra todos os elementos.</>"
+  },
+  "indie_hard023_s": {
+    "name": "Mutiladora e Amigos: Agonia",
+    "description": "As pessoas possuem todo tipo de habilidades, mas as bestas têm todo tipo de truques. Se você tem interesse em ver quem é o melhor, o palco está à sua disposição.",
+    "featureDesc": " - <@ba.key>Os operadores não têm mais regeneração de PH</>.\n - O operador controlado recuperará parte do PH pisando em cascas de banana jogadas pelos uivantes montanheses.\n - A Besta Mutiladora Encouraçada irá conjurar sua habilidade suprema regularmente. A habilidade suprema remove todas as cascas de banana do campo de batalha e causa DNO continuamente a todos os operadores. Ao conjurar sua habilidade suprema, a Besta Mutiladora Encouraçada ganha Redução DNO elevada. <@ba.key>Interrupções múltiplas</> podem interromper a conjuração desta habilidade suprema.\n\n <@ba.info>- Não é possível usar itens táticos nem consumíveis.</>\n <@ba.info>- Os inimigos têm a mesma resistência contra todos os elementos.</>"
+  },
+  "indie_hard024": {
+    "name": "Rei do Penhasco",
+    "description": "É raro ver bugios lutando pela supremacia. O vencedor assume o trono, enquanto os perdedores acabam como ossos... Preparem suas armas e lâminas, o novo Rei do Penhasco acaba de ser escolhido.",
+    "featureDesc": " - A duração de <@ba.fire>Combustão</>, <@ba.pulse>Eletrificação</>, <@ba.natur>Corrosão</>, <@ba.cryst>Solidificação</> e <@ba.phy>Romper</> aplicados ao Uivante dos Penhascos se torna permanente. Os efeitos de <@ba.fire>Combustão</>, <@ba.pulse>Eletrificação</>, <@ba.natur>Corrosão</>, <@ba.cryst>Fragmentar</> e <@ba.phy>Romper</> aplicados ao Uivante dos Penhascos também se tornam mais fortes. As Reações de Artes e Status Físicos mencionados também persistem após o <@ba.key>consumo</>.\n - O Uivante dos Penhascos soltará um rugido furioso regularmente. O rugido furioso aplica <@ba.key>Atordoar</> a todos os operadores.\n\n <@ba.info>- Os inimigos têm a mesma resistência contra cada elemento.</>"
+  },
+  "indie_hard024_s": {
+    "name": "Rei do Penhasco: Agonia",
+    "description": "É raro ver bugios lutando pela supremacia. O vencedor assume o trono, enquanto os perdedores acabam como ossos... Preparem suas armas e lâminas, o novo Rei do Penhasco acaba de ser escolhido.",
+    "featureDesc": " - A duração de <@ba.fire>Combustão</>, <@ba.pulse>Eletrificação</>, <@ba.natur>Corrosão</>, <@ba.cryst>Solidificação</> e <@ba.phy>Romper</> aplicados ao Uivante dos Penhascos se torna permanente. - Os efeitos de <@ba.fire>Combustão</>, <@ba.pulse>Eletrificação</>, <@ba.natur>Corrosão</>, <@ba.cryst>Fragmentar</> e <@ba.phy>Romper</> aplicados ao Uivante dos Penhascos também se tornam mais fortes. As Reações de Artes e Status Físicos mencionados também persistem após o <@ba.key>consumo</>.\n - O Uivante dos Penhascos soltará um rugido furioso regularmente. O rugido furioso aplica <@ba.key>Atordoar</> a todos os operadores. À medida que a batalha avança, a duração de <@ba.key>Atordoar</> aplicado pelo rugido furioso se torna cada vez maior.\n\n <@ba.info>- Não é possível usar itens táticos nem consumíveis.</>\n <@ba.info>- Os inimigos têm a mesma resistência contra cada elemento.</>"
+  },
+  "indie_hard025": {
+    "name": "Visitantes de Qingbo",
+    "description": "A banda dos Paliçados de Qingbo canta o coro das lâminas. Já não mais ansiando por um lar por construir, o espírito heroico e as ambições desmedidas os impulsionaram a escalar o cume.",
+    "featureDesc": " - Derrotar o inimigo restaura PV para todos os outros inimigos e aumenta permanentemente seu ATQ e PV máximo.\n\n <@ba.info>- Os inimigos têm a mesma resistência contra cada elemento.</>"
+  },
+  "indie_hard025_s": {
+    "name": "Visitantes de Qingbo: Agonia",
+    "description": "A banda dos Paliçados de Qingbo canta o coro das lâminas. Já não mais ansiando por um lar por construir, o espírito heroico e as ambições desmedidas os impulsionaram a escalar o cume.",
+    "featureDesc": " - Derrotar o inimigo restaura PV para todos os outros inimigos e aumenta permanentemente seu ATQ e PV máximo.\n\n <@ba.info>- Não é possível usar itens táticos nem consumíveis.</>\n <@ba.info>- Os inimigos têm a mesma resistência contra cada elemento.</>"
+  },
+  "indie_hard026": {
+    "name": "Carnificina Selvagem das Sombras",
+    "description": "Garras retorcidas de feras selvagens surgiram primeiro das sombras. Mais tarde, descobrimos que a luz impiedosa deixou sua marca em sua natureza feroz.",
+    "featureDesc": " - Um inimigo no estado <@ba.key>Etéreo</> é imune a DNO e não pode ser marcado como alvo.\n - Assim que a batalha começar, o Sombra da Praga de Penoso entrará em seu estado <@ba.key>Etéreo</> e desferirá ataques de investida constantes. Enquanto isso, o Sombra da Praga de Rastejante aplicará <@ba.key>Escudo</> regularmente a si mesmo. O ataque de investida do Sombra da Praga de Penoso pode destruir esse <@ba.key>Escudo</>.\n - Quando o Sombra da Praga de Rastejante ficar com PV mais baixo, ele entrará em seu estado <@ba.key>Etéreo</>. Ao mesmo tempo, o estado <@ba.key>Etéreo</> do Sombra da Praga de Penoso terminará. Depois disso, o Sombra da Praga de Rastejante conjurará regularmente Golpes do Trovão no operador controlado (até <@ba.key>5</> golpes no total). Não é possível desviar do DNO do Golpe do Trovão. Aplicar <@ba.key>Explosão de Artes</>, <@ba.phy>Romper</> ou <@ba.phy>Esmagar</> no Sombra da Praga de Penoso criará <@ba.key>Orbes Relampejantes</>. O operador controlado pode pegar um <@ba.key>Orbe Relampejante</> para adquirir um escudo que bloqueia o DNO de <@ba.key>1</> Golpe do Trovão.\n - Quando o Sombra da Praga de Penoso ficar com pouco PV, seu estado <@ba.key>Etéreo</> terminará. Os inimigos então atacarão juntos.\n\n <@ba.info>- Os inimigos têm a mesma resistência contra todos os elementos.</>"
+  },
+  "indie_hard026_s": {
+    "name": "Carnificina Selvagem das Sombras: Agonia",
+    "description": "Garras retorcidas de feras selvagens surgiram primeiro das sombras. Mais tarde, descobrimos que a luz impiedosa deixou sua marca em sua natureza feroz.",
+    "featureDesc": " - Um inimigo no estado <@ba.key>Etéreo</> é imune a DNO e não pode ser marcado como alvo.\n - Assim que a batalha começar, o Sombra da Praga de Penoso entrará em seu estado <@ba.key>Etéreo</> e desferirá ataques de investida constantes. Enquanto isso, o Sombra da Praga de Rastejante aplicará <@ba.key>Escudo</> regularmente a si mesmo. O ataque de investida do Sombra da Praga de Penoso pode destruir esse <@ba.key>Escudo</>.\n - Quando o Sombra da Praga de Rastejante ficar com PV mais baixo, ele entrará em seu estado <@ba.key>Etéreo</>. Ao mesmo tempo, o estado <@ba.key>Etéreo</> do Sombra da Praga de Penoso terminará. Depois disso, o Sombra da Praga de Rastejante conjurará regularmente Golpes do Trovão no operador controlado (até <@ba.key>7</> golpes no total). Não é possível desviar do DNO do Golpe do Trovão. Aplicar <@ba.key>Explosão de Artes</>, <@ba.phy>Romper</> ou <@ba.phy>Esmagar</> no Sombra da Praga de Penoso criará <@ba.key>Orbes Relampejantes</>. O operador controlado pode pegar um <@ba.key>Orbe Relampejante</> para adquirir um escudo que bloqueia o DNO de <@ba.key>1</> Golpe do Trovão.\n - Quando o Sombra da Praga de Penoso ficar com pouco PV, seu estado <@ba.key>Etéreo</> terminará. Os inimigos então atacarão juntos.\n\n <@ba.info>- Não é possível usar itens táticos nem consumíveis.</>\n <@ba.info>- Os inimigos têm a mesma resistência contra todos os elementos.</>"
+  },
+  "indie_hard027": {
+    "name": "Arco da Sombra Flamejante",
+    "description": "A enorme lâmina invoca o elemento dilacerante para se imbuir. Assim, as imagens fantasmagóricas da guerra e da carnificina continuarão a brilhar intensamente sobre esta terra.",
+    "featureDesc": " - O tempo de recarga de todas as habilidades de batalha dos operadores foi aumentado em 60 segundos.\n - No início da batalha, todos os operadores entrarão em um estado <@ba.key>Condutor</> e sofrerão <@ba.pulse>DNO Elétrico</> continuamente com base no número de acúmulos de <@ba.pulse>Inflição Elétrica</> que possuem.\n - Após um operador no estado <@ba.key>Condutor</> conjurar uma habilidade de batalha, o Sombra da Praga de Capitão da FTEY aplicará 1 acúmulo de <@ba.pulse>Inflição Elétrica</> a todos os operadores. Após o Sombra da Praga de Capitão da FTEY aplicar <@ba.pulse>Inflição Elétrica</> aos operadores pela <@ba.key>4ª</> vez, reinicia os tempos de recarga de habilidades de batalha dos operadores, <@ba.key>dissipa</> todos os acúmulos de <@ba.pulse>Inflição Elétrica</> dos operadores e aplica uma <@ba.pulse>Eletrificação Nível 4</> no Sombra da Praga de Capitão da FTEY.\n\n <@ba.info>- Os inimigos têm a mesma resistência contra todos os elementos.</>"
+  },
+  "indie_hard027_s": {
+    "name": "Arco da Sombra Flamejante: Agonia",
+    "description": "A enorme lâmina invoca o elemento dilacerante para se imbuir. Assim, as imagens fantasmagóricas da guerra e da carnificina continuarão a brilhar intensamente sobre esta terra.",
+    "featureDesc": " - O tempo de recarga de todas as habilidades de batalha dos operadores foi aumentado em 60 segundos.\n - O Sombra da Praga de Capitão da FTEY aplicará regularmente 1 acúmulo de <@ba.pulse>Inflição Elétrica</> a todos os operadores.\n - No início da batalha, todos os operadores entrarão em um estado <@ba.key>Condutor</> e sofrerão <@ba.pulse>DNO Elétrico</> continuamente com base no número de acúmulos de <@ba.pulse>Inflição Elétrica</> que possuem.\n - Após um operador no estado <@ba.key>Condutor</> conjurar uma habilidade de batalha, o Sombra da Praga de Capitão da FTEY aplicará 1 acúmulo de <@ba.pulse>Inflição Elétrica</> a todos os operadores. Após o Sombra da Praga de Capitão da FTEY aplicar <@ba.pulse>Inflição Elétrica</> aos operadores pela <@ba.key>4ª</> vez, reinicia os tempos de recarga de habilidades de batalha dos operadores, <@ba.key>dissipa</> todos os acúmulos de <@ba.pulse>Inflição Elétrica</> dos operadores e aplica uma <@ba.pulse>Eletrificação Nível 4</> no Sombra da Praga de Capitão da FTEY.\n\n <@ba.info>- Não é possível usar itens táticos nem consumíveis.</>\n <@ba.info>- Os inimigos têm a mesma resistência contra todos os elementos.</>"
+  },
+  "indie_hard028": {
+    "name": "Rugido Súbito do Esquecimento",
+    "description": "\"O tempo acabou. Que comecem os ciclos intermináveis do esquecimento.\"",
+    "featureDesc": "- <@ba.key>Os operadores não têm mais regeneração de PH</>. \n- Após o início da batalha, o PH inicial e o PH máximo dos operadores aumentam para 1.000. \n- Os Sombras da Praga de Besta Carnívora e Sombras da Praga de Vanguarda da FTEY se <@ba.key>autodetonarão</> após algum tempo, causando DNO com base em PV Máximo para todos os operadores. \n- O Sombra da Praga de Guja da FTEY deverá ser <@ba.key>interrompido várias vezes</> para parar a conjuração da sua habilidade suprema. Não é possível desviar do DNO desta habilidade suprema. \n- Se a batalha demorar muito, o Sombra da Praga de Guja da FTEY se <@ba.key>autodetonará</> e derrotará todos os operadores. \n- Quando os inimigos se tornam Desorientados, seus temporizadores de <@ba.key>autodetonação</> são pausados. \n\n<@ba.info>- Os inimigos têm a mesma resistência contra todos os elementos.</>"
+  },
+  "indie_hard028_s": {
+    "name": "Rugido Súbito do Esquecimento: Agonia",
+    "description": "\"O tempo acabou. Que comecem os ciclos intermináveis do esquecimento.\"",
+    "featureDesc": "- <@ba.key>Os operadores não têm mais regeneração de PH. Golpes Finais e ataques Finalizadores não recuperam mais PH</>. \n- Após o início da batalha, o PH inicial e o PH máximo dos operadores aumentam para 1.000. \n- Os Sombras da Praga de Besta Carnívora e Sombras da Praga de Vanguarda da FTEY se <@ba.key>autodetonarão</> após algum tempo, causando DNO com base em PV Máximo para todos os operadores. \n- O Sombra da Praga de Guja da FTEY deverá ser <@ba.key>interrompido várias vezes</> para parar a conjuração da sua habilidade suprema. Não é possível desviar do DNO desta habilidade suprema. \n- Se a batalha demorar muito, o Sombra da Praga de Guja da FTEY se <@ba.key>autodetonará</> e derrotará todos os operadores. \n- Quando os inimigos se tornam Desorientados, seus temporizadores de <@ba.key>autodetonação</> são pausados. \n\n<@ba.info>- Não é possível usar itens táticos nem consumíveis.</> \n<@ba.info>- Os inimigos têm a mesma resistência contra todos os elementos.</>"
+  },
+  "indie_hard029": {
+    "name": "Seleção de Alvo Tri-Aggelada",
+    "description": "As testemunhas permanecem em silêncio e sofrendo. Quando todas as lembranças se tornam meras ilusões, o esquecimento se torna a única opção que nos resta.",
+    "featureDesc": " - Os inimigos não podem se mover, mas têm alcances de ataque muito maiores.\n\n <@ba.info>- Os inimigos têm a mesma resistência contra todos os elementos.</>"
+  },
+  "indie_hard029_s": {
+    "name": "Seleção de Alvo Tri-Aggelada: Agonia",
+    "description": "As testemunhas permanecem em silêncio e sofrendo. Quando todas as lembranças se tornam meras ilusões, o esquecimento se torna a única opção que nos resta.",
+    "featureDesc": " - Os inimigos não podem se mover, mas têm alcances de ataque muito maiores.\n - Quando um inimigo é derrotado pela primeira vez, os outros inimigos ganham potencialização de ATQ e velocidades de ATQ maiores.\n\n <@ba.info>- Não é possível usar itens táticos nem consumíveis.</>\n <@ba.info>- Os inimigos têm a mesma resistência contra todos os elementos.</>"
+  }
+}

@@ -1,0 +1,502 @@
+{
+  "indie_battletower001": {
+    "name": "Penebas Air Perak: Normal",
+    "description": "Seberkas cahaya dan kilatan pedang tampak melesat menembus arus yang mengalir, tapi tetap gagal memutus niat jahatnya yang dingin dan tanpa belas kasihan. Cengkeramannya menodai pedangmu dan gema yang tersisa pun menyelimuti wujudmu.",
+    "featureDesc": " <@ba.info>- Musuh punya stat yang lebih tinggi.</>\n <@ba.info>- Hanya item taktis dan item habis pakai HP Treatment yang bisa digunakan.</>"
+  },
+  "indie_battletower001_ex": {
+    "name": "Penebas Air Perak: Brutal",
+    "description": "Seberkas cahaya dan kilatan pedang tampak melesat menembus arus yang mengalir, tapi tetap gagal memutus niat jahatnya yang dingin dan tanpa belas kasihan. Cengkeramannya menodai pedangmu dan gema yang tersisa pun menyelimuti wujudmu.",
+    "featureDesc": " <@ba.info>- Musuh punya stat yang lebih tinggi.</>\n <@ba.info>- Hanya item taktis dan item habis pakai HP Treatment yang bisa digunakan.</>"
+  },
+  "indie_battletower001_s": {
+    "name": "Penebas Air Perak: Sulit",
+    "description": "Seberkas cahaya dan kilatan pedang tampak melesat menembus arus yang mengalir, tapi tetap gagal memutus niat jahatnya yang dingin dan tanpa belas kasihan. Cengkeramannya menodai pedangmu dan gema yang tersisa pun menyelimuti wujudmu.",
+    "featureDesc": " <@ba.info>- Musuh punya stat yang lebih tinggi.</>\n <@ba.info>- Hanya item taktis dan item habis pakai HP Treatment yang bisa digunakan.</>"
+  },
+  "indie_battletower002": {
+    "name": "Kisah-Kisah Lama dari Alam Liar: Normal",
+    "description": "Di sini, kutuangkan kata-kata tentang binatang yang berkeliaran di reruntuhan perang, mencakar dan mengoyak nama-nama bangsa saat buih amukan mereka meleburkan tongkat, perisai, dan peluru meriam menjadi ferrium cair.",
+    "featureDesc": " - Jika berhasil mengalahkan musuh, 15 SP akan dipulihkan.\n - DMG Dealt dari Skill Tarung <@ba.vup>+60%</>.\n\n <@ba.info>- Musuh punya stat yang lebih tinggi.</>\n <@ba.info>- Hanya item taktis dan item habis pakai HP Treatment yang bisa digunakan.</>"
+  },
+  "indie_battletower002_ex": {
+    "name": "Kisah-Kisah Lama dari Alam Liar: Brutal",
+    "description": "Di sini, kutuangkan kata-kata tentang binatang yang berkeliaran di reruntuhan perang, mencakar dan mengoyak nama-nama bangsa saat buih amukan mereka meleburkan tongkat, perisai, dan peluru meriam menjadi ferrium cair.",
+    "featureDesc": " - Jika berhasil mengalahkan musuh, 15 SP akan dipulihkan.\n - DMG Dealt dari Skill Tarung <@ba.vup>+60%</>.\n\n <@ba.info>- Musuh punya stat yang lebih tinggi.</>\n <@ba.info>- Hanya item taktis dan item habis pakai HP Treatment yang bisa digunakan.</>"
+  },
+  "indie_battletower002_s": {
+    "name": "Kisah-Kisah Lama dari Alam Liar: Sulit",
+    "description": "Di sini, kutuangkan kata-kata tentang binatang yang berkeliaran di reruntuhan perang, mencakar dan mengoyak nama-nama bangsa saat buih amukan mereka meleburkan tongkat, perisai, dan peluru meriam menjadi ferrium cair.",
+    "featureDesc": " - Jika berhasil mengalahkan musuh, 15 SP akan dipulihkan.\n - DMG Dealt dari Skill Tarung <@ba.vup>+60%</>.\n\n <@ba.info>- Musuh punya stat yang lebih tinggi.</>\n <@ba.info>- Hanya item taktis dan item habis pakai HP Treatment yang bisa digunakan.</>"
+  },
+  "indie_battletower003": {
+    "name": "Skirmishers’ Æthillu: Normal",
+    "description": "Aku melihat anak panah busur silang melesat nyaring melintasi langit. Para penyerang berjalan di sepanjang tepi realitas, mereka menyatu ke dalam wujud dingin Æthillu.",
+    "featureDesc": " - Musuh tidak bisa bergerak, tapi lebih sulit disela.\n - Æthillu yang hanya bisa terkena damage dari penuntas akan muncul di medan pertarungan.\n - Jika berhasil mengalahkan Æthillu, semua musuh akan ditarik, 50 SP akan dipulihkan, dan operator terkontrol akan mendapatkan DMG Dealt <@ba.vup>+100%</> selama 10 dtk.\n - Kalahkan semua Bonekrusher Ambusher untuk menyelesaikan stage, tanpa harus mengalahkan Æthillu.\n\n <@ba.info>- Musuh punya stat yang lebih tinggi.</>\n <@ba.info>- Hanya item taktis dan item habis pakai HP Treatment yang bisa digunakan.</>"
+  },
+  "indie_battletower003_ex": {
+    "name": "Skirmishers’ Æthillu: Brutal",
+    "description": "Aku melihat anak panah busur silang melesat nyaring melintasi langit. Para penyerang berjalan di sepanjang tepi realitas, mereka menyatu ke dalam wujud dingin Æthillu.",
+    "featureDesc": " - Musuh tidak bisa bergerak, tapi lebih sulit disela.\n - Æthillu yang hanya bisa terkena damage dari penuntas akan muncul di medan pertarungan.\n - Jika berhasil mengalahkan Æthillu, semua musuh akan ditarik, 50 SP akan dipulihkan, dan operator terkontrol akan mendapatkan DMG Dealt <@ba.vup>+100%</> selama 10 dtk.\n - Kalahkan semua Bonekrusher Ambusher untuk menyelesaikan stage, tanpa harus mengalahkan Æthillu.\n\n <@ba.info>- Musuh punya stat yang lebih tinggi.</>\n <@ba.info>- Hanya item taktis dan item habis pakai HP Treatment yang bisa digunakan.</>"
+  },
+  "indie_battletower003_s": {
+    "name": "Skirmishers’ Æthillu: Sulit",
+    "description": "Aku melihat anak panah busur silang melesat nyaring melintasi langit. Para penyerang berjalan di sepanjang tepi realitas, mereka menyatu ke dalam wujud dingin Æthillu.",
+    "featureDesc": " - Musuh tidak bisa bergerak, tapi lebih sulit disela.\n - Æthillu yang hanya bisa terkena damage dari penuntas akan muncul di medan pertarungan.\n - Jika berhasil mengalahkan Æthillu, semua musuh akan ditarik, 50 SP akan dipulihkan, dan operator terkontrol akan mendapatkan DMG Dealt <@ba.vup>+100%</> selama 10 dtk.\n - Kalahkan semua Bonekrusher Ambusher untuk menyelesaikan stage, tanpa harus mengalahkan Æthillu.\n\n <@ba.info>- Musuh punya stat yang lebih tinggi.</>\n <@ba.info>- Hanya item taktis dan item habis pakai HP Treatment yang bisa digunakan.</>"
+  },
+  "indie_battletower004": {
+    "name": "Zaman Kapak: Normal",
+    "description": "Saat aku tengah mengusap ukiran tersebut dengan jari, karat yang membakar itu mengirimkan sentakan rasa sakit yang menusuk kulit sang algojo. Senjata-senjata itu ternodai daging dan darah mereka. Siklus itu terus berulang dan terus datang setiap tahunnya.",
+    "featureDesc": " <@ba.info>- Musuh punya stat yang lebih tinggi.</>\n <@ba.info>- Hanya item taktis dan item habis pakai HP Treatment yang bisa digunakan.</>"
+  },
+  "indie_battletower004_ex": {
+    "name": "Zaman Kapak: Brutal",
+    "description": "Saat aku tengah mengusap ukiran tersebut dengan jari, karat yang membakar itu mengirimkan sentakan rasa sakit yang menusuk kulit sang algojo. Senjata-senjata itu ternodai daging dan darah mereka. Siklus itu terus berulang dan terus datang setiap tahunnya.",
+    "featureDesc": " <@ba.info>- Musuh punya stat yang lebih tinggi.</>\n <@ba.info>- Hanya item taktis dan item habis pakai HP Treatment yang bisa digunakan.</>"
+  },
+  "indie_battletower004_s": {
+    "name": "Zaman Kapak: Sulit",
+    "description": "Saat aku tengah mengusap ukiran tersebut dengan jari, karat yang membakar itu mengirimkan sentakan rasa sakit yang menusuk kulit sang algojo. Senjata-senjata itu ternodai daging dan darah mereka. Siklus itu terus berulang dan terus datang setiap tahunnya.",
+    "featureDesc": " <@ba.info>- Musuh punya stat yang lebih tinggi.</>\n <@ba.info>- Hanya item taktis dan item habis pakai HP Treatment yang bisa digunakan.</>"
+  },
+  "indie_battletower005": {
+    "name": "Amunisi Peremuk: Normal",
+    "description": "Aku memungut kepingan ferrium, serpihan pemikiran dan gagasan yang pernah dipenuhi ukiran. Peluru itu adalah komitmen yang paling teguh, yang hancur berkeping-keping saat menghantam daging dan tulang.",
+    "featureDesc": " <@ba.info>- Musuh punya stat yang lebih tinggi.</>\n <@ba.info>- Hanya item taktis dan item habis pakai HP Treatment yang bisa digunakan.</>"
+  },
+  "indie_battletower005_ex": {
+    "name": "Amunisi Peremuk: Brutal",
+    "description": "Aku memungut kepingan ferrium, serpihan pemikiran dan gagasan yang pernah dipenuhi ukiran. Peluru itu adalah komitmen yang paling teguh, yang hancur berkeping-keping saat menghantam daging dan tulang.",
+    "featureDesc": " <@ba.info>- Musuh punya stat yang lebih tinggi.</>\n <@ba.info>- Hanya item taktis dan item habis pakai HP Treatment yang bisa digunakan.</>"
+  },
+  "indie_battletower005_s": {
+    "name": "Amunisi Peremuk: Sulit",
+    "description": "Aku memungut kepingan ferrium, serpihan pemikiran dan gagasan yang pernah dipenuhi ukiran. Peluru itu adalah komitmen yang paling teguh, yang hancur berkeping-keping saat menghantam daging dan tulang.",
+    "featureDesc": " <@ba.info>- Musuh punya stat yang lebih tinggi.</>\n <@ba.info>- Hanya item taktis dan item habis pakai HP Treatment yang bisa digunakan.</>"
+  },
+  "indie_battletower006": {
+    "name": "Luka Penjarahan: Normal",
+    "description": "Aku mendengar cerita yang bermula dari ambisi gila seorang panglima perang. Ambisi itu membuat kawanan serigala saling memangsa dan membuat lautan pasir yang luas bergolak, hingga suara darah yang menyembur dari luka menganga bergema di telinga kami.",
+    "featureDesc": " - Jika berhasil mengalahkan Bonekrusher Vanguard, Bonus Efisiensi Stagger <@ba.vup>+50%</> akan diberikan.\n- Jika berhasil mengalahkan Bonekrusher Arsonist, Intensitas Arts <@ba.vup>+100</> akan diberikan.\n- Jika berhasil mengalahkan Bonekrusher Executioner, Skill DMG Dealt <@ba.vup>+100%</> akan diberikan.\n- Jika berhasil mengalahkan Heavy Ram, DMG Dealt dari Serangan Dasar <@ba.vup>+100%</> akan diberikan.\n\n<@ba.info>- Musuh punya stat yang lebih tinggi.</>\n <@ba.info>- Hanya item taktis dan item habis pakai HP Treatment yang bisa digunakan.</>"
+  },
+  "indie_battletower006_ex": {
+    "name": "Luka Penjarahan: Brutal",
+    "description": "Aku mendengar cerita yang bermula dari ambisi gila seorang panglima perang. Ambisi itu membuat kawanan serigala saling memangsa dan membuat lautan pasir yang luas bergolak, hingga suara darah yang menyembur dari luka menganga bergema di telinga kami.",
+    "featureDesc": " - Jika berhasil mengalahkan Bonekrusher Vanguard, Bonus Efisiensi Stagger <@ba.vup>+50%</> akan diberikan.\n- Jika berhasil mengalahkan Bonekrusher Arsonist, Intensitas Arts <@ba.vup>+100</> akan diberikan.\n- Jika berhasil mengalahkan Bonekrusher Executioner, Skill DMG Dealt <@ba.vup>+100%</> akan diberikan.\n- Jika berhasil mengalahkan Heavy Ram, DMG Dealt dari Serangan Dasar <@ba.vup>+100%</> akan diberikan.\n\n<@ba.info>- Musuh punya stat yang lebih tinggi.</>\n <@ba.info>- Hanya item taktis dan item habis pakai HP Treatment yang bisa digunakan.</>"
+  },
+  "indie_battletower006_s": {
+    "name": "Luka Penjarahan: Sulit",
+    "description": "Aku mendengar cerita yang bermula dari ambisi gila seorang panglima perang. Ambisi itu membuat kawanan serigala saling memangsa dan membuat lautan pasir yang luas bergolak, hingga suara darah yang menyembur dari luka menganga bergema di telinga kami.",
+    "featureDesc": " - Jika berhasil mengalahkan Bonekrusher Vanguard, Bonus Efisiensi Stagger <@ba.vup>+50%</> akan diberikan.\n- Jika berhasil mengalahkan Bonekrusher Arsonist, Intensitas Arts <@ba.vup>+100</> akan diberikan.\n- Jika berhasil mengalahkan Bonekrusher Executioner, Skill DMG Dealt <@ba.vup>+100%</> akan diberikan.\n- Jika berhasil mengalahkan Heavy Ram, DMG Dealt dari Serangan Dasar <@ba.vup>+100%</> akan diberikan.\n\n<@ba.info>- Musuh punya stat yang lebih tinggi.</>\n <@ba.info>- Hanya item taktis dan item habis pakai HP Treatment yang bisa digunakan.</>"
+  },
+  "indie_battletower007": {
+    "name": "Lolongan Monster Abadi: Normal",
+    "description": "Aku mendengar suara bilah pedangmu mengikis tulang binatang yang memutih, desis suara asahannya hampir seperti gemuruh guntur.",
+    "featureDesc": " - Skydrummer tidak akan memasuki kondisi Mengamuk.\n - Setelah memasuki pertarungan, Skydrummer akan mendapatkan 50 Resistansi terhadap semua elemen.\n\n <@ba.info>- Musuh punya stat yang lebih tinggi.</>\n <@ba.info>- Hanya item taktis dan item habis pakai HP Treatment yang bisa digunakan.</>"
+  },
+  "indie_battletower007_ex": {
+    "name": "Lolongan Monster Abadi: Brutal",
+    "description": "Aku mendengar suara bilah pedangmu mengikis tulang binatang yang memutih, desis suara asahannya hampir seperti gemuruh guntur.",
+    "featureDesc": " - Skydrummer tidak akan memasuki kondisi Mengamuk.\n - Setelah memasuki pertarungan, Skydrummer akan mendapatkan 50 Resistansi terhadap semua elemen.\n\n <@ba.info>- Musuh punya stat yang lebih tinggi.</>\n <@ba.info>- Hanya item taktis dan item habis pakai HP Treatment yang bisa digunakan.</>"
+  },
+  "indie_battletower007_s": {
+    "name": "Lolongan Monster Abadi: Sulit",
+    "description": "Aku mendengar suara bilah pedangmu mengikis tulang binatang yang memutih, desis suara asahannya hampir seperti gemuruh guntur.",
+    "featureDesc": " - Skydrummer tidak akan memasuki kondisi Mengamuk.\n - Setelah memasuki pertarungan, Skydrummer akan mendapatkan 50 Resistansi terhadap semua elemen.\n\n <@ba.info>- Musuh punya stat yang lebih tinggi.</>\n <@ba.info>- Hanya item taktis dan item habis pakai HP Treatment yang bisa digunakan.</>"
+  },
+  "indie_battletower008": {
+    "name": "Sejarah Singkat Perang: Normal",
+    "description": "Ada beberapa kebenaran di dalamnya. Dimulai dari hewan buas yang mengamuk dan diakhiri dengan manusia yang saling membunuh. Konflik berdarah itu tak pernah berakhir.",
+    "featureDesc": " - Jika berhasil mengalahkan Nidwyrm Penggali, Laju Regen SP <@ba.vup>+30%</> akan diberikan.\n - Jika berhasil mengalahkan Heavy Sting, Pengurangan Cooldown Skill Kombo <@ba.vup>+50%</> akan diberikan.\n - Jika berhasil mengalahkan Bonekrusher Ballista, Efisiensi Perolehan Ultimate <@ba.vup>+60%</> akan diberikan.\n \n <@ba.info>- Musuh punya stat yang lebih tinggi.</>\n <@ba.info>- Hanya item taktis dan item habis pakai HP Treatment yang bisa digunakan.</>"
+  },
+  "indie_battletower008_ex": {
+    "name": "Sejarah Singkat Perang: Brutal",
+    "description": "Ada beberapa kebenaran di dalamnya. Dimulai dari hewan buas yang mengamuk dan diakhiri dengan manusia yang saling membunuh. Konflik berdarah itu tak pernah berakhir.",
+    "featureDesc": " - Jika berhasil mengalahkan Nidwyrm Penggali, Laju Regen SP <@ba.vup>+30%</> akan diberikan.\n - Jika berhasil mengalahkan Heavy Sting, Pengurangan Cooldown Skill Kombo <@ba.vup>+50%</> akan diberikan.\n - Jika berhasil mengalahkan Bonekrusher Ballista, Efisiensi Perolehan Ultimate <@ba.vup>+60%</> akan diberikan.\n \n <@ba.info>- Musuh punya stat yang lebih tinggi.</>\n <@ba.info>- Hanya item taktis dan item habis pakai HP Treatment yang bisa digunakan.</>"
+  },
+  "indie_battletower008_s": {
+    "name": "Sejarah Singkat Perang: Sulit",
+    "description": "Ada beberapa kebenaran di dalamnya. Dimulai dari hewan buas yang mengamuk dan diakhiri dengan manusia yang saling membunuh. Konflik berdarah itu tak pernah berakhir.",
+    "featureDesc": " - Jika berhasil mengalahkan Nidwyrm Penggali, Laju Regen SP <@ba.vup>+30%</> akan diberikan.\n - Jika berhasil mengalahkan Heavy Sting, Pengurangan Cooldown Skill Kombo <@ba.vup>+50%</> akan diberikan.\n - Jika berhasil mengalahkan Bonekrusher Ballista, Efisiensi Perolehan Ultimate <@ba.vup>+60%</> akan diberikan.\n \n <@ba.info>- Musuh punya stat yang lebih tinggi.</>\n <@ba.info>- Hanya item taktis dan item habis pakai HP Treatment yang bisa digunakan.</>"
+  },
+  "indie_battletower009": {
+    "name": "Baris Depan yang Terkubur: Normal",
+    "description": "Aku menyaksikan sebuah pemakaman, terjatuh ke dalam tanah gelap yang bergejolak, tempat hewan-hewan digerakkan oleh bayangan yang tersisa.",
+    "featureDesc": " <@ba.info>- Musuh punya stat yang lebih tinggi.</>\n <@ba.info>- Hanya item taktis dan item habis pakai HP Treatment yang bisa digunakan.</>"
+  },
+  "indie_battletower009_ex": {
+    "name": "Baris Depan yang Terkubur: Brutal",
+    "description": "Aku menyaksikan sebuah pemakaman, terjatuh ke dalam tanah gelap yang bergejolak, tempat hewan-hewan digerakkan oleh bayangan yang tersisa.",
+    "featureDesc": " <@ba.info>- Musuh punya stat yang lebih tinggi.</>\n <@ba.info>- Hanya item taktis dan item habis pakai HP Treatment yang bisa digunakan.</>"
+  },
+  "indie_battletower009_s": {
+    "name": "Baris Depan yang Terkubur: Sulit",
+    "description": "Aku menyaksikan sebuah pemakaman, terjatuh ke dalam tanah gelap yang bergejolak, tempat hewan-hewan digerakkan oleh bayangan yang tersisa.",
+    "featureDesc": " <@ba.info>- Musuh punya stat yang lebih tinggi.</>\n <@ba.info>- Hanya item taktis dan item habis pakai HP Treatment yang bisa digunakan.</>"
+  },
+  "indie_battletower010": {
+    "name": "Tembok Perisai: Normal",
+    "description": "Aku mengamati upaya bantuan, dengan garis depan pertarungan yang terlindungi sekumpulan “perisai”.",
+    "featureDesc": " - Saat Prisma kalah, Prisma lain akan muncul di medan pertarungan setelah beberapa saat.\n - Prisma menjadi lebih sulit disela.\n - Kalahkan Bayang-bayang Hawar Quillbeast untuk mengalahkan stage. Walau Prisma berhasil dikalahkan, penyelesaian stage tidak akan terpengaruh.\n\n <@ba.info>- Musuh punya stat yang lebih tinggi.</>\n <@ba.info>- Yang bisa digunakan hanyalah item taktis dan item habis pakai untuk HP Treatment.</>"
+  },
+  "indie_battletower010_ex": {
+    "name": "Tembok Perisai: Brutal",
+    "description": "Aku mengamati upaya bantuan, dengan garis depan pertarungan yang terlindungi sekumpulan “perisai”.",
+    "featureDesc": " - Saat Prisma kalah, Prisma lain akan muncul di medan pertarungan setelah beberapa saat.\n - Prisma menjadi lebih sulit disela.\n - Kalahkan Bayang-bayang Hawar Quillbeast untuk mengalahkan stage. Walau Prisma berhasil dikalahkan, penyelesaian stage tidak akan terpengaruh.\n\n <@ba.info>- Musuh punya stat yang lebih tinggi.</>\n <@ba.info>- Yang bisa digunakan hanyalah item taktis dan item habis pakai untuk HP Treatment.</>"
+  },
+  "indie_battletower010_s": {
+    "name": "Tembok Perisai: Sulit",
+    "description": "Aku mengamati upaya bantuan, dengan garis depan pertarungan yang terlindungi sekumpulan “perisai”.",
+    "featureDesc": " - Saat Prisma kalah, Prisma lain akan muncul di medan pertarungan setelah beberapa saat.\n - Prisma menjadi lebih sulit disela.\n - Kalahkan Bayang-bayang Hawar Quillbeast untuk mengalahkan stage. Walau Prisma berhasil dikalahkan, penyelesaian stage tidak akan terpengaruh.\n\n <@ba.info>- Musuh punya stat yang lebih tinggi.</>\n <@ba.info>- Yang bisa digunakan hanyalah item taktis dan item habis pakai untuk HP Treatment.</>"
+  },
+  "indie_battletower011": {
+    "name": "Terkepung Rapat: Normal",
+    "description": "Aku merencanakan sergapan yang dipenuhi lumpur dan darah, luka-luka yang terkoyak, serta rasa sakit yang memupuk kepedihan mendalam.",
+    "featureDesc": " - Medan pertarungan punya <@ba.key>Zona Cedera</>. Saat berada di dalam Zona ini, musuh akan terkena DMG Taken sebesar <@ba.vup>+10%</> setiap detiknya, maksimum <@ba.vup>+150%</>. Debuff ini akan secara bertahap menghilang begitu musuh keluar dari <@ba.key>Zona Cedera</>.\n\n <@ba.info>- Musuh punya stat yang lebih tinggi.</>\n <@ba.info>- Yang bisa digunakan hanyalah item taktis dan item habis pakai untuk HP Treatment</>."
+  },
+  "indie_battletower011_ex": {
+    "name": "Terkepung Rapat: Brutal",
+    "description": "Aku merencanakan sergapan yang dipenuhi lumpur dan darah, luka-luka yang terkoyak, serta rasa sakit yang memupuk kepedihan mendalam.",
+    "featureDesc": " - Medan pertarungan punya <@ba.key>Zona Cedera</>. Saat berada di dalam Zona ini, musuh akan terkena DMG Taken sebesar <@ba.vup>+10%</> setiap detiknya, maksimum <@ba.vup>+150%</>. Debuff ini akan secara bertahap menghilang begitu musuh keluar dari <@ba.key>Zona Cedera</>.\n\n <@ba.info>- Musuh punya stat yang lebih tinggi.</>\n <@ba.info>- Yang bisa digunakan hanyalah item taktis dan item habis pakai untuk HP Treatment</>."
+  },
+  "indie_battletower011_s": {
+    "name": "Terkepung Rapat: Sulit",
+    "description": "Aku merencanakan sergapan yang dipenuhi lumpur dan darah, luka-luka yang terkoyak, serta rasa sakit yang memupuk kepedihan mendalam.",
+    "featureDesc": " - Medan pertarungan punya <@ba.key>Zona Cedera</>. Saat berada di dalam Zona ini, musuh akan terkena DMG Taken sebesar <@ba.vup>+10%</> setiap detiknya, maksimum <@ba.vup>+150%</>. Debuff ini akan secara bertahap menghilang begitu musuh keluar dari <@ba.key>Zona Cedera</>.\n\n <@ba.info>- Musuh punya stat yang lebih tinggi.</>\n <@ba.info>- Yang bisa digunakan hanyalah item taktis dan item habis pakai untuk HP Treatment</>."
+  },
+  "indie_battletower012": {
+    "name": "Gelora Anorganik: Normal",
+    "description": "Aku melakukan simulasi serbuan. Walau kawanan Aggelos tidak merasakan apa pun, pasukan garda depan kita tidak pernah merasa lelah.",
+    "featureDesc": " - Operator memasuki pertarungan dengan <@ba.key>Energi Ultimate</> maks.\n\n <@ba.info>- Musuh punya stat yang lebih tinggi.</>\n <@ba.info>- Yang bisa digunakan hanyalah item taktis dan item habis pakai untuk HP Treatment.</>"
+  },
+  "indie_battletower012_ex": {
+    "name": "Gelora Anorganik: Brutal",
+    "description": "Aku melakukan simulasi serbuan. Walau kawanan Aggelos tidak merasakan apa pun, pasukan garda depan kita tidak pernah merasa lelah.",
+    "featureDesc": " - Operator memasuki pertarungan dengan <@ba.key>Energi Ultimate</> maks.\n\n <@ba.info>- Musuh punya stat yang lebih tinggi.</>\n <@ba.info>- Yang bisa digunakan hanyalah item taktis dan item habis pakai untuk HP Treatment.</>"
+  },
+  "indie_battletower012_s": {
+    "name": "Gelora Anorganik: Sulit",
+    "description": "Aku melakukan simulasi serbuan. Walau kawanan Aggelos tidak merasakan apa pun, pasukan garda depan kita tidak pernah merasa lelah.",
+    "featureDesc": " - Operator memasuki pertarungan dengan <@ba.key>Energi Ultimate</> maks.\n\n <@ba.info>- Musuh punya stat yang lebih tinggi.</>\n <@ba.info>- Yang bisa digunakan hanyalah item taktis dan item habis pakai untuk HP Treatment.</>"
+  },
+  "indie_battletower013": {
+    "name": "Kapak Pembawa Maut: Normal",
+    "description": "Aku mempersiapkan pembunuhan, dengan kekuatan yang terisi penuh saat kapak diangkat tinggi di atas kepala.",
+    "featureDesc": " - Musuh hanya menggunakan <@ba.key>skill diperkuat</> dan kebal terhadap DMG dari <@ba.key>skill tarung</> saat <@ba.key>mengisi kekuatan</> skill mereka. <@ba.key>Skill diperkuat</> pada musuh tidak bisa disela oleh <@ba.key>skill tarung</>.\n\n <@ba.info>- Musuh punya stat yang lebih tinggi.</>\n <@ba.info>- Yang bisa digunakan hanyalah item taktis dan item habis pakai untuk HP Treatment.</>"
+  },
+  "indie_battletower013_ex": {
+    "name": "Kapak Pembawa Maut: Brutal",
+    "description": "Aku mempersiapkan pembunuhan, dengan kekuatan yang terisi penuh saat kapak diangkat tinggi di atas kepala.",
+    "featureDesc": " - Musuh hanya menggunakan <@ba.key>skill diperkuat</> dan kebal terhadap DMG dari <@ba.key>skill tarung</> saat <@ba.key>mengisi kekuatan</> skill mereka. <@ba.key>Skill diperkuat</> pada musuh tidak bisa disela oleh <@ba.key>skill tarung</>.\n\n <@ba.info>- Musuh punya stat yang lebih tinggi.</>\n <@ba.info>- Yang bisa digunakan hanyalah item taktis dan item habis pakai untuk HP Treatment.</>"
+  },
+  "indie_battletower013_s": {
+    "name": "Kapak Pembawa Maut: Sulit",
+    "description": "Aku mempersiapkan pembunuhan, dengan kekuatan yang terisi penuh saat kapak diangkat tinggi di atas kepala.",
+    "featureDesc": " - Musuh hanya menggunakan <@ba.key>skill diperkuat</> dan kebal terhadap DMG dari <@ba.key>skill tarung</> saat <@ba.key>mengisi kekuatan</> skill mereka. <@ba.key>Skill diperkuat</> pada musuh tidak bisa disela oleh <@ba.key>skill tarung</>.\n\n <@ba.info>- Musuh punya stat yang lebih tinggi.</>\n <@ba.info>- Yang bisa digunakan hanyalah item taktis dan item habis pakai untuk HP Treatment.</>"
+  },
+  "indie_battletower014": {
+    "name": "Siasat Ganas: Normal",
+    "description": "Aku mengadakan perjamuan. Hewan-hewan itu memang licik, tapi jika berhasil menggagalkan rencana mereka, kita pasti akan dapat imbalan.",
+    "featureDesc": " - Dengan mengalahkan Rockhowler, SP akan dipulihkan sebesar <@ba.vup>10</> dan Intensitas Arts akan diberikan sebesar <@ba.vup>+15</> kepada semua operator.\n\n <@ba.info>- Musuh punya stat yang lebih tinggi.</>\n <@ba.info>- Yang bisa digunakan hanyalah item taktis dan item habis pakai untuk HP Treatment.</>"
+  },
+  "indie_battletower014_ex": {
+    "name": "Siasat Ganas: Brutal",
+    "description": "Aku mengadakan perjamuan. Hewan-hewan itu memang licik, tapi jika berhasil menggagalkan rencana mereka, kita pasti akan dapat imbalan.",
+    "featureDesc": " - Dengan mengalahkan Rockhowler, SP akan dipulihkan sebesar <@ba.vup>10</> dan Intensitas Arts akan diberikan sebesar <@ba.vup>+15</> kepada semua operator.\n\n <@ba.info>- Musuh punya stat yang lebih tinggi.</>\n <@ba.info>- Yang bisa digunakan hanyalah item taktis dan item habis pakai untuk HP Treatment.</>"
+  },
+  "indie_battletower014_s": {
+    "name": "Siasat Ganas: Sulit",
+    "description": "Aku mengadakan perjamuan. Hewan-hewan itu memang licik, tapi jika berhasil menggagalkan rencana mereka, kita pasti akan dapat imbalan.",
+    "featureDesc": " - Dengan mengalahkan Rockhowler, SP akan dipulihkan sebesar <@ba.vup>10</> dan Intensitas Arts akan diberikan sebesar <@ba.vup>+15</> kepada semua operator.\n\n <@ba.info>- Musuh punya stat yang lebih tinggi.</>\n <@ba.info>- Yang bisa digunakan hanyalah item taktis dan item habis pakai untuk HP Treatment.</>"
+  },
+  "indie_hard001": {
+    "name": "Perisai Mengamuk",
+    "description": "Kabut bersalju di alam liar ini tak pernah benar-benar menghilang. Di balik gemuruh rendah, terdengar suara retakan yang tajam. \nDengarkan baik-baik. Apa kau bisa dengar ... suara batu yang bergesek dengan logam?",
+    "featureDesc": " - Musuh lebih kuat."
+  },
+  "indie_hard001_s": {
+    "name": "Perisai Mengamuk: Agoni",
+    "description": "Kabut bersalju di alam liar ini tak pernah benar-benar menghilang. Di balik gemuruh rendah, terdengar suara retakan yang tajam. \nDengarkan baik-baik. Apa kau bisa dengar ... suara batu yang bergesek dengan logam?",
+    "featureDesc": " - Musuh lebih kuat.\n - Musuh bisa bergerak lebih cepat dan bisa lebih cepat pulih dari status Staggered.\n - Saat ada musuh yang kalah, musuh yang tersisa akan lebih sulit disela, serta terus-menerus mendapatkan ATK dan pemulihan HP.\n\n  <@ba.info>- Item taktis dan item habis pakai tidak bisa digunakan.</>"
+  },
+  "indie_hard002": {
+    "name": "Kilat dan Bayangan",
+    "description": "Ledakan yang memekakkan telinga membawa bara api perang dari seabad yang lalu. Tapi, Sentrapolis tetap bertahan meski dibombardir Aggelos. \n“Bukan hanya Aggelos yang membuat manusia nyaris punah. Dan justru itulah tragedinya.”",
+    "featureDesc": " - Musuh lebih kuat."
+  },
+  "indie_hard002_s": {
+    "name": "Kilat dan Bayangan: Agoni",
+    "description": "Ledakan yang memekakkan telinga membawa bara api perang dari seabad yang lalu. Tapi, Sentrapolis tetap bertahan meski dibombardir Aggelos. \n“Bukan hanya Aggelos yang membuat manusia nyaris punah. Dan justru itulah tragedinya.”",
+    "featureDesc": " - Musuh lebih kuat.\n - Musuh bisa lebih cepat pulih dari Staggered, lebih sulit disela, dan jangkauan ATK-nya jauh lebih besar.\n - Heavy Sting α secara berkala akan mendapatkan kekebalan sementara terhadap semua DMG; kalahkan semua Sting α untuk menghapus buff kekebalan ini.\n \n  <@ba.info>- Item taktis dan item habis pakai tidak bisa digunakan.</>"
+  },
+  "indie_hard003": {
+    "name": "Sekeras Batu",
+    "description": "Reruntuhan mesin raksasa di kejauhan menjadi saksi bisu peristiwa besar masa lalu. Di sekitarnya, entitas yang terurai mulai menyatu kembali, menciptakan wujud baru yang melolong membelah tanah. \nNegeri ini bergetar saat Aggelos menghantam tanah dan mengayunkan langkah berat mereka.",
+    "featureDesc": " - Musuh lebih kuat."
+  },
+  "indie_hard003_s": {
+    "name": "Sekeras Batu: Agoni",
+    "description": "Reruntuhan mesin raksasa di kejauhan menjadi saksi bisu peristiwa besar masa lalu. Di sekitarnya, entitas yang terurai mulai menyatu kembali, menciptakan wujud baru yang melolong membelah tanah. \nNegeri ini bergetar saat Aggelos menghantam tanah dan mengayunkan langkah berat mereka.",
+    "featureDesc": " - Laju pemulihan Stamina operator berkurang drastis.\n - Musuh lebih kuat dan kebal terhadap Stagger.\n - Chrysopolis Berjalan bisa lebih cepat pulih dari kondisi saat titik lemahnya terbuka. Jika tidak bisa menghancurkan titik lemahnya sebelum durasi terbukanya berakhir, Chrysopolis Berjalan akan mendapatkan buff ATK sangat besar. Jika berhasil menghancurkan titik lemahnya, Chrysopolis Berjalan akan terkena Staggered.\n\n  <@ba.info>- Item taktis dan item habis pakai tidak bisa digunakan.</>"
+  },
+  "indie_hard004": {
+    "name": "Ballista dan Kapak",
+    "description": "Prajurit Bonekrusher membantai yang lemah, lalu berdiri di atas panggung dengan kapak dan ballista terangkat. Kalahkan mereka, akhiri derita lama dan ambisi baru di tanah ini. \n“Pahlawan? Bagaimana kau bisa mendapat gelar itu?”",
+    "featureDesc": " - Dua musuh elite akan bertarung sebagai tim."
+  },
+  "indie_hard004_s": {
+    "name": "Ballista dan Kapak: Agoni",
+    "description": "Prajurit Bonekrusher membantai yang lemah, lalu berdiri di atas panggung dengan kapak dan ballista terangkat. Kalahkan mereka, akhiri derita lama dan ambisi baru di tanah ini. \n“Pahlawan? Bagaimana kau bisa mendapat gelar itu?”",
+    "featureDesc": " - Dua musuh elite akan bertarung sebagai tim.\n - Jika kedua musuh elite berada di medan perang, DMG yang mereka terima akan dibagi dua.\n \n  <@ba.info>- Item taktis dan item habis pakai tidak bisa digunakan.</>"
+  },
+  "indie_hard005": {
+    "name": "Taktik Tak Lazim",
+    "description": "Perangkat komunikasi berdecit tajam saat drone jatuh ke tanah. Kawanan Landbreaker menoleh sambil menggumamkan harapan akan “berkat” dan “balas dendam”. \nDi belakang mereka, berdiri sosok-sosok bayangan tinggi di antara rimba denstack.",
+    "featureDesc": " - Musuh tidak bisa bergerak, tapi lebih sulit disela dan akan terus-menerus mendapatkan ATK."
+  },
+  "indie_hard005_s": {
+    "name": "Taktik Tak Lazim: Agoni",
+    "description": "Perangkat komunikasi berdecit tajam saat drone jatuh ke tanah. Kawanan Landbreaker menoleh sambil menggumamkan harapan akan “berkat” dan “balas dendam”. \nDi belakang mereka, berdiri sosok-sosok bayangan tinggi di antara rimba denstack.",
+    "featureDesc": " - Musuh tidak bisa bergerak, tapi lebih sulit disela dan akan terus-menerus mendapatkan ATK.\n - ATK musuh meningkat jauh lebih cepat.\n\n  <@ba.info>- Item taktis dan item habis pakai tidak bisa digunakan.</>"
+  },
+  "indie_hard006": {
+    "name": "Bertahan dari Gas",
+    "description": "Pabrik besar itu memuntahkan asap tebal beracun dari pipa-pipanya. Siapa yang berusaha menyembunyikan rahasianya di sini? \n“Angkat senjata dan pasang perisai! Biarkan tuskbeast perang meraung! Panaskan juga kabutnya!”",
+    "featureDesc": " - Hati-hati. Kabut akan terus-menerus menimbulkan DMG kepada semua operator.\n - Saat operator terkontrol menerima HP treatment, operator lain dalam tim juga akan mendapatkan 70% dari HP treatment itu."
+  },
+  "indie_hard006_s": {
+    "name": "Bertahan dari Gas: Agoni",
+    "description": "Pabrik besar itu memuntahkan asap tebal beracun dari pipa-pipanya. Siapa yang berusaha menyembunyikan rahasianya di sini? \n“Angkat senjata dan pasang perisai! Biarkan tuskbeast perang meraung! Panaskan juga kabutnya!”",
+    "featureDesc": " - Hati-hati. Kabut akan terus-menerus menimbulkan DMG kepada semua operator.\n - Kabut akan menimbulkan DMG lebih besar dan memunculkan musuh baru.\n - Saat operator terkontrol menerima HP treatment, operator lain dalam tim juga akan mendapatkan 50% dari HP treatment itu.\n\n  <@ba.info>- Item taktis dan item habis pakai tidak bisa digunakan.</>"
+  },
+  "indie_hard007": {
+    "name": "Api Menderu",
+    "description": "Cemari langit dengan Hawar! Cemari petir yang tak bisa diperkirakan seorang pun! Cemari juga hujan api yang turun tanpa peringatan dengan HAWAR!",
+    "featureDesc": " - Musuh secara berkala akan memasuki kondisi <@ba.key>Mengamuk</> yang akan mengakibatkan <@ba.fire>Heat Infliction</> terus-menerus kepada diri mereka sendiri sehingga akan mendapatkan Bonus ATK dan buff Pengurangan DMG berdasarkan jumlah tumpukan Heat Infliction.\n\n <@ba.info>- Musuh punya resistansi yang sama terhadap setiap elemen.</>"
+  },
+  "indie_hard007_s": {
+    "name": "Api Menderu: Agoni",
+    "description": "Cemari langit dengan Hawar! Cemari petir yang tak bisa diperkirakan seorang pun! Cemari juga hujan api yang turun tanpa peringatan dengan HAWAR!",
+    "featureDesc": " - Musuh secara berkala akan memasuki kondisi <@ba.key>Mengamuk</> yang akan mengakibatkan <@ba.fire>Heat Infliction</> terus-menerus kepada diri mereka sendiri sehingga akan mendapatkan Bonus ATK dan buff Pengurangan DMG berdasarkan jumlah tumpukan Heat Infliction.\n - Selama kondisi <@ba.key>Mengamuk</>, <@ba.key>Operator tidak lagi punya regenerasi SP</>.\n\n <@ba.info>- Item taktis dan item habis pakai tidak bisa digunakan.</>\n <@ba.info>- Musuh punya resistansi yang sama terhadap setiap elemen.</>"
+  },
+  "indie_hard008": {
+    "name": "Lautan Kebencian",
+    "description": "Mereka menyimpan kebencian yang telah lama membara. Yang ditinggalkan berkelana tanpa henti di tanah tandus .... Penyebab amarah mereka terlupakan seiring waktu, tapi setiap wadah kebencian mampu menarik kekuatan dari lautan kabut yang tak berujung.",
+    "featureDesc": " - Musuh jadi lebih kuat.\n - Musuh elite akan bertarung sebagai tim.\n\n <@ba.info>- Musuh punya resistansi yang sama terhadap setiap elemen.</>"
+  },
+  "indie_hard008_s": {
+    "name": "Lautan Kebencian: Agoni",
+    "description": "Mereka menyimpan kebencian yang telah lama membara. Yang ditinggalkan berkelana tanpa henti di tanah tandus .... Penyebab amarah mereka terlupakan seiring waktu, tapi setiap wadah kebencian mampu menarik kekuatan dari lautan kabut yang tak berujung.",
+    "featureDesc": " - Musuh jadi lebih kuat dan <@ba.key>lebih sulit disela</>.\n - Musuh elite akan bertarung sebagai tim, dan musuh lain akan muncul.\n\n <@ba.info>- Item taktis dan item habis pakai tidak bisa digunakan.</>\n <@ba.info>- Musuh punya resistansi yang sama terhadap setiap elemen.</>"
+  },
+  "indie_hard009": {
+    "name": "Titik Leleh Daging",
+    "description": "BAKAR! Biarkan semua terbakar! Robohkan menara dan lelehkan pesawatnya! Tuang darah kita ke dalam besi cair yang mendidih untuk membersihkan Talos-II!",
+    "featureDesc": " - Musuh jadi lebih kuat.\n - Siput Originium Firemist yang meledak akan muncul secara berkala.\n\n <@ba.info>- Musuh punya resistansi yang sama terhadap setiap elemen.</>"
+  },
+  "indie_hard009_s": {
+    "name": "Titik Leleh Daging: Agoni",
+    "description": "BAKAR! Biarkan semua terbakar! Robohkan menara dan lelehkan pesawatnya! Tuang darah kita ke dalam besi cair yang mendidih untuk membersihkan Talos-II!",
+    "featureDesc": " - Musuh jadi lebih kuat dan <@ba.key>musuh lain akan muncul</>.\n - Siput Originium Firemist yang meledak akan muncul secara berkala.\n - <@ba.key>Operator tidak bisa melakukan Hindaran Sempurna</>.\n\n <@ba.info>- Item taktis dan item habis pakai tidak bisa digunakan.</>\n <@ba.info>- Musuh punya resistansi yang sama terhadap setiap elemen.</>"
+  },
+  "indie_hard010": {
+    "name": "Duka Mendalam",
+    "description": "Penderitaan telah mengendap dan menumpuk di tempat ini selama bertahun-tahun. Lihatlah difraksi cahaya dalam amukan air pasang itu. Niat membunuh yang terpancar itu hampa dari segala emosi.",
+    "featureDesc": " - Musuh tidak menyerang terus, tapi akan bergerak menuju pusat medan pertarungan. Di sana, mereka akan <@ba.key>meledak</> dan menimbulkan DMG sangat besar kepada semua operator.\n - Sebagian musuh jauh lebih sulit disela.\n\n <@ba.info>- Musuh punya resistansi yang sama terhadap setiap elemen.</>"
+  },
+  "indie_hard010_s": {
+    "name": "Duka Mendalam: Agoni",
+    "description": "Penderitaan telah mengendap dan menumpuk di tempat ini selama bertahun-tahun. Lihatlah difraksi cahaya dalam amukan air pasang itu. Niat membunuh yang terpancar itu hampa dari segala emosi.",
+    "featureDesc": " - Musuh tidak menyerang terus, tapi akan bergerak menuju pusat medan pertarungan. Di sana, mereka akan <@ba.key>meledak</> dan menimbulkan DMG sangat besar kepada semua operator.\n - Sebagian musuh jauh lebih sulit disela.\n\n <@ba.info>- Item taktis dan item habis pakai tidak bisa digunakan.</>\n <@ba.info>- Musuh punya resistansi yang sama terhadap setiap elemen.</>"
+  },
+  "indie_hard011": {
+    "name": "Koneksi Cryostatis",
+    "description": "Kedinginan ekstrem membuat mereka terhubung. Terjangan gelombang dan arus bawah yang keruh memberikan nama dan makna yang sama di balik penciptaan mereka.",
+    "featureDesc": " - Musuh jadi lebih kuat.\n\n <@ba.info>- Musuh punya resistansi yang sama terhadap setiap elemen.</>"
+  },
+  "indie_hard011_s": {
+    "name": "Koneksi Cryostatis: Agoni",
+    "description": "Kedinginan ekstrem membuat mereka terhubung. Terjangan gelombang dan arus bawah yang keruh memberikan nama dan makna yang sama di balik penciptaan mereka.",
+    "featureDesc": " - Musuh jadi lebih kuat.\n - Saat diperkuat, semua DMG yang ditimbulkan oleh musuh akan langsung mengakibatkan efek <@ba.cryst>Solidification</> kepada operator.\n\n <@ba.info>- Item taktis dan item habis pakai tidak bisa digunakan.</>\n <@ba.info>- Musuh punya resistansi yang sama terhadap setiap elemen.</>"
+  },
+  "indie_hard012": {
+    "name": "Darah Ternoda",
+    "description": "Mereka melahap kotoran negeri ini hingga mereka meledak dan menumpahkan darah kental yang busuk, cairan terkutuk yang akan menjebak siapa pun yang menatapnya.",
+    "featureDesc": " - Musuh jadi lebih kuat.\n - Quillbeast Duri Energi akan memanggil Quillbeast secara berkala.\n\n <@ba.info>- Musuh punya resistansi yang sama terhadap setiap elemen.</>"
+  },
+  "indie_hard012_s": {
+    "name": "Darah Ternoda: Agoni",
+    "description": "Mereka melahap kotoran negeri ini hingga mereka meledak dan menumpahkan darah kental yang busuk, cairan terkutuk yang akan menjebak siapa pun yang menatapnya.",
+    "featureDesc": " - Musuh jadi lebih kuat.\n - Quillbeast Duri Energi akan memanggil Quillbeast secara berkala; saat HP rendah, dia akan <@ba.key>memanggil lebih banyak</> Quillbeast.\n\n <@ba.info>- Item taktis dan item habis pakai tidak bisa digunakan.</>\n <@ba.info>- Musuh punya resistansi yang sama terhadap setiap elemen.</>"
+  },
+  "indie_hard013": {
+    "name": "Cakrawala Sunyi",
+    "description": "Harapan tak akan pernah kembali ke negeri ini. Satwa dan manusia sama-sama membusuk, menyisakan makhluk yang tatapannya hampa, yang berjalan tertatih-tatih melewati hazefyre yang tebal dan membara.",
+    "featureDesc": " - Musuh punya stat yang lebih tinggi.\n - Musuh akan terus-menerus mendapatkan ATK.\n\n <@ba.info>- Musuh punya resistansi yang sama terhadap setiap elemen.</>"
+  },
+  "indie_hard013_s": {
+    "name": "Cakrawala Sunyi: Agoni",
+    "description": "Harapan tak akan pernah kembali ke negeri ini. Satwa dan manusia sama-sama membusuk, menyisakan makhluk yang tatapannya hampa, yang berjalan tertatih-tatih melewati hazefyre yang tebal dan membara.",
+    "featureDesc": " - Musuh punya stat yang lebih tinggi.\n - Musuh akan terus-menerus mendapatkan ATK.\n\n <@ba.info>- Item taktis dan item habis pakai tidak bisa digunakan.</>\n <@ba.info>- Musuh punya resistansi yang sama terhadap setiap elemen.</>"
+  },
+  "indie_hard014": {
+    "name": "Laut Mengering",
+    "description": "Arus keruh itu pasti akan surut. Hewan-hewan buas akan menunggu hingga kapak besar yang berat itu menghancurkan reruntuhan kuno yang rusak dan membelah jalan menuju kemungkinan baru.",
+    "featureDesc": " - Musuh punya stat yang lebih tinggi.\n\n <@ba.info>- Musuh punya resistansi yang sama terhadap setiap elemen.</>"
+  },
+  "indie_hard014_s": {
+    "name": "Laut Mengering: Agoni",
+    "description": "Arus keruh itu pasti akan surut. Hewan-hewan buas akan menunggu hingga kapak besar yang berat itu menghancurkan reruntuhan kuno yang rusak dan membelah jalan menuju kemungkinan baru.",
+    "featureDesc": " - Musuh punya stat yang lebih tinggi.\n\n <@ba.info>- Item taktis dan item habis pakai tidak bisa digunakan.</>\n <@ba.info>- Musuh punya resistansi yang sama terhadap setiap elemen.</>"
+  },
+  "indie_hard015": {
+    "name": "Ngarai Arus Bawah",
+    "description": "Di bawah perairan yang sunyi, tempat arus yang gelap dan dingin mengalir dalam keheningan, terdapat ngarai yang menyembunyikan konstruksi anorganik.",
+    "featureDesc": " - Musuh jadi lebih kuat.\n - Effigy akan memanggil lebih banyak Aggelos.\n\n <@ba.info>- Musuh punya resistansi yang sama terhadap setiap elemen.</>"
+  },
+  "indie_hard015_s": {
+    "name": "Ngarai Arus Bawah: Agoni",
+    "description": "Di bawah perairan yang sunyi, tempat arus yang gelap dan dingin mengalir dalam keheningan, terdapat ngarai yang menyembunyikan konstruksi anorganik.",
+    "featureDesc": " - Musuh jadi lebih kuat.\n - Effigy akan memanggil lebih banyak Aggelos.\n\n <@ba.info>- Item taktis dan item habis pakai tidak bisa digunakan.</>\n <@ba.info>- Musuh punya resistansi yang sama terhadap setiap elemen.</>"
+  },
+  "indie_hard016": {
+    "name": "Pusaran Ritual",
+    "description": "Cahaya menyinari pandangan orang-orang sementara mereka menatap pusaran api keputusasaan dan amarah. Tangisan mereka bercampur dengan guntur yang memekakkan telinga, sementara pemegang suar menunggu di tanah yang hancur.",
+    "featureDesc": " - Secara berkala, Bonekrusher Pyromancer akan memanggil <@ba.key>duplikat</> dirinya dan menyalurkan ultimate skill-nya selama durasi tertentu. Ultimate ini akan menimbulkan DMG sangat besar kepada semua operator setelah penyaluran selesai. Kalahkan semua <@ba.key>duplikat</> itu untuk menyela ultimate Pyromancer.\n - Musuh akan terkena DMG tambahan dari <@ba.key>Penuntas</>; durasi Staggered pada musuh juga akan berkurang drastis.\n \n <@ba.info>- Musuh punya resistansi yang sama terhadap setiap elemen.</>"
+  },
+  "indie_hard016_s": {
+    "name": "Pusaran Ritual: Agoni",
+    "description": "Cahaya menyinari pandangan orang-orang sementara mereka menatap pusaran api keputusasaan dan amarah. Tangisan mereka bercampur dengan guntur yang memekakkan telinga, sementara pemegang suar menunggu di tanah yang hancur.",
+    "featureDesc": " - Secara berkala, Bonekrusher Pyromancer akan memanggil <@ba.key>duplikat</> dirinya dan menyalurkan ultimate skill-nya selama durasi tertentu. Ultimate ini akan menimbulkan DMG sangat besar kepada semua operator setelah penyaluran selesai. Kalahkan semua <@ba.key>duplikat</> itu untuk menyela ultimate Pyromancer.\n - Musuh akan terkena DMG tambahan dari <@ba.key>Penuntas</>; durasi Staggered pada musuh juga akan berkurang drastis.\n\n <@ba.info>- Item taktis dan item habis pakai tidak bisa digunakan.</>\n <@ba.info>- Musuh punya resistansi yang sama terhadap setiap elemen.</>"
+  },
+  "indie_hard017": {
+    "name": "Æthillu Mengerikan",
+    "description": "Debu kebinasaan membutakan setiap pandangan, sementara ratapan mengiringi setiap nada. Daging dari Æthillu yang mengerikan telah tertumpah, sehingga kematian menyelimuti seluruh dunia.",
+    "featureDesc": " - Secara berkala, operator terkontrol akan terkena <@ba.key>seal</>.\n \n <@ba.info>- Musuh punya resistansi yang sama terhadap setiap elemen.</>"
+  },
+  "indie_hard017_s": {
+    "name": "Æthillu Mengerikan: Agoni",
+    "description": "Debu kebinasaan membutakan setiap pandangan, sementara ratapan mengiringi setiap nada. Daging dari Æthillu yang mengerikan telah tertumpah, sehingga kematian menyelimuti seluruh dunia.",
+    "featureDesc": " - Secara berkala, operator terkontrol akan terkena <@ba.key>seal</>; <@ba.key>seal</> ini juga bertahan jauh lebih lama.\n\n <@ba.info>- Item taktis dan item habis pakai tidak bisa digunakan.</>\n <@ba.info>- Musuh punya resistansi yang sama terhadap setiap elemen.</>"
+  },
+  "indie_hard018": {
+    "name": "Amukan Penabuh Drum",
+    "description": "Entitas yang menggelegar itu terpikat ke tanah ini, menginjak-injak orang mati dan siksaan pedih mereka. Perang antara kehidupan dan kematian tak akan pernah berakhir.",
+    "featureDesc": " - Saat mengamuk, Skydrummer akan memunculkan perisai lindung. Setiap <@ba.key>Arts Reaction</> atau <@ba.phy>Status Fisik</> yang ditimbulkan oleh operator akan menghapus 1 tumpuk perisai.\n \n <@ba.info>- Musuh punya resistansi yang sama terhadap setiap elemen.</>"
+  },
+  "indie_hard018_s": {
+    "name": "Amukan Penabuh Drum: Agoni",
+    "description": "Entitas yang menggelegar itu terpikat ke tanah ini, menginjak-injak orang mati dan siksaan pedih mereka. Perang antara kehidupan dan kematian tak akan pernah berakhir.",
+    "featureDesc": " - Saat tenang, Skydrummer akan memunculkan satu <@ba.key>Vorteks</> setiap kali menimbulkan DMG kepada operator terkontrol.\n - Saat mengamuk, Skydrummer akan menyerap semua <@ba.key>Vorteks</> di medan pertarungan untuk memunculkan perisai lindung. Setiap <@ba.key>Vorteks</> yang diserap akan meningkatkan jumlah tumpukan perisai. Setiap <@ba.key>Arts Reaction</> atau <@ba.phy>Status Fisik</> yang ditimbulkan oleh operator akan menghapus 1 tumpuk perisai.\n\n <@ba.info>- Item taktis dan item habis pakai tidak bisa digunakan.</>\n <@ba.info>- Musuh punya resistansi yang sama terhadap setiap elemen.</>"
+  },
+  "indie_hard019": {
+    "name": "Barisan Duri",
+    "description": "Asah tombakmu. Perkuat perisaimu. Saksikan kebencianmu dan dengarkan kelemahanmu. Lalu majulah dan tancapkan senjatamu ke dalam daging kematian.",
+    "featureDesc": " - Musuh punya stat yang lebih tinggi.\n - Prisma akan meningkatkan ATK dari Hedron.\n - Prisma kini jauh lebih sulit disela.\n \n <@ba.info>- Musuh punya resistansi yang sama terhadap setiap elemen.</>"
+  },
+  "indie_hard019_s": {
+    "name": "Barisan Duri: Agoni",
+    "description": "Asah tombakmu. Perkuat perisaimu. Saksikan kebencianmu dan dengarkan kelemahanmu. Lalu majulah dan tancapkan senjatamu ke dalam daging kematian.",
+    "featureDesc": " - Musuh punya stat yang lebih tinggi.\n - Prisma akan meningkatkan ATK dari Hedron.\n - Prisma kini jauh lebih sulit disela.\n\n <@ba.info>- Item taktis dan item habis pakai tidak bisa digunakan.</>\n <@ba.info>- Musuh punya resistansi yang sama terhadap setiap elemen.</>"
+  },
+  "indie_hard020": {
+    "name": "Mata Makhluk Pelarut",
+    "description": "Sungai-sungai menyatu menjadi aliran darah yang dingin. Dari kedalaman yang seperti luka sayatan dan di bawah arus gelap, makhluk pelarut terus mengintai.",
+    "featureDesc": " - Musuh punya stat yang lebih tinggi.\n - Pasukan musuh mencakup Tidewalker δ.\n \n <@ba.info>- Musuh punya resistansi yang sama terhadap setiap elemen.</>"
+  },
+  "indie_hard020_s": {
+    "name": "Mata Makhluk Pelarut: Agoni",
+    "description": "Sungai-sungai menyatu menjadi aliran darah yang dingin. Dari kedalaman yang seperti luka sayatan dan di bawah arus gelap, makhluk pelarut terus mengintai.",
+    "featureDesc": " - Musuh punya stat yang lebih tinggi.\n - Pasukan musuh mencakup Tidewalker δ.\n\n <@ba.info>- Item taktis dan item habis pakai tidak bisa digunakan.</>\n <@ba.info>- Musuh punya resistansi yang sama terhadap setiap elemen.</>"
+  },
+  "indie_hard021": {
+    "name": "Mengarungi Wilayah Raker",
+    "description": "Cakar pengais tersembunyi dari pandangan, saat kawanan berlari dan sungai-sungai meluap. Yang kalah bermigrasi dan melarikan diri, tapi yang muda lupa untuk membalas kebencian itu.",
+    "featureDesc": " - Musuh punya stat yang lebih tinggi.\n - Rakerbeast Mencolok akan <@ba.key>Mengamuk</> secara permanen dan ATK-nya akan meningkat saat HP-nya turun.\n \n <@ba.info>- Musuh punya resistansi yang sama terhadap setiap elemen.</>"
+  },
+  "indie_hard021_s": {
+    "name": "Mengarungi Wilayah Raker: Agoni",
+    "description": "Cakar pengais tersembunyi dari pandangan, saat kawanan berlari dan sungai-sungai meluap. Yang kalah bermigrasi dan melarikan diri, tapi yang muda lupa untuk membalas kebencian itu.",
+    "featureDesc": " - Musuh punya stat yang lebih tinggi.\n - Rakerbeast Mencolok akan <@ba.key>Mengamuk</> secara permanen dan ATK-nya akan meningkat saat HP-nya turun.\n\n <@ba.info>- Item taktis dan item habis pakai tidak bisa digunakan.</>\n <@ba.info>- Musuh punya resistansi yang sama terhadap setiap elemen.</>"
+  },
+  "indie_hard022": {
+    "name": "Hazefyre Pengguncang Bumi",
+    "description": "“Aku mengayunkan TONGKAT! Hazefyre adalah PALUKU! Gunung-gunung ini DRUMNYA dan AKU! INI! PENABUHNYA!”",
+    "featureDesc": " - Bonekrusher Pyromancer terus-menerus menggunakan hazefyre dan menimbulkan DMG pada semua operator. Dia juga lebih sulit untuk disela dan kebal terhadap Stagger DMG.\n - Saat Bonekrusher Pyromancer terkena <@ba.key>Arts Burst</> DMG, dia akan terkena DMG tambahan setara dengan persentase dari HP Maks-nya dan <@ba.key>terkurung</> untuk sementara.\n - Bonekrusher Pyromancer akan terus memanggil Elite Raider dan Elite Ambusher.\n - Jika berhasil mengalahkan musuh yang terkena <@ba.key>Arts Infliction</>, 1 tumpuk <@ba.key>Arts Infliction</> yang sama juga akan diakibatkan kepada semua musuh lainnya.\n\n <@ba.info>- Musuh punya resistansi yang sama terhadap setiap elemen.</>"
+  },
+  "indie_hard022_s": {
+    "name": "Hazefyre Pengguncang Bumi: Agoni",
+    "description": "“Aku mengayunkan TONGKAT! Hazefyre adalah PALUKU! Gunung-gunung ini DRUMNYA dan AKU! INI! PENABUHNYA!”",
+    "featureDesc": " - Bonekrusher Pyromancer terus-menerus menggunakan hazefyre dan menimbulkan DMG pada semua operator. Saat HP-nya rendah, hazefyre-nya juga akan mengakibatkan <@ba.fire>Heat Infliction</>. Dia juga lebih sulit untuk disela dan kebal terhadap Stagger DMG.\n - Saat Bonekrusher Pyromancer terkena <@ba.key>Arts Burst</> DMG, dia akan terkena DMG tambahan setara dengan persentase dari HP Maks-nya dan <@ba.key>terkurung</> untuk sementara.\n - Bonekrusher Pyromancer akan terus memanggil Elite Raider dan Elite Ambusher.\n - Jika berhasil mengalahkan musuh yang terkena <@ba.key>Arts Infliction</>, 1 tumpuk <@ba.key>Arts Infliction</> yang sama juga akan diakibatkan kepada semua musuh lainnya.\n\n <@ba.info>- Item taktis dan item habis pakai tidak bisa digunakan.</>\n <@ba.info>- Musuh punya resistansi yang sama terhadap setiap elemen.</>"
+  },
+  "indie_hard023": {
+    "name": "Mangler dan Teman-temannya",
+    "description": "Manusia punya segala macam skill, tapi binatang punya segala macam trik. Jika ingin tahu siapa yang lebih hebat, kau bisa naik ke panggung ini.",
+    "featureDesc": " - <@ba.key>Operator tidak lagi memiliki regenerasi SP</>.\n - Operator terkontrol akan memulihkan sejumlah SP dengan menginjak kulit pisang yang dilemparkan oleh rockhowler.\n - Manglerbeast Berarmor akan menggunakan ultimate-nya secara berkala. Ultimate ini akan menyingkirkan semua kulit pisang dari medan pertarungan dan terus-menerus menimbulkan DMG pada semua operator. Saat menggunakan ultimate-nya, Manglerbeast Berarmor akan mendapatkan Pengurangan DMG yang tinggi. <@ba.key>Penyelaan Serangan</> bisa menghentikan penggunaan ultimate ini.\n\n <@ba.info>- Musuh punya resistansi yang sama terhadap setiap elemen.</>"
+  },
+  "indie_hard023_s": {
+    "name": "Mangler dan Teman-temannya: Agoni",
+    "description": "Manusia punya segala macam skill, tapi binatang punya segala macam trik. Jika ingin tahu siapa yang lebih hebat, kau bisa naik ke panggung ini.",
+    "featureDesc": " - <@ba.key>Operator tidak lagi memiliki regenerasi SP</>.\n - Operator terkontrol akan memulihkan sejumlah SP dengan menginjak kulit pisang yang dilemparkan oleh rockhowler.\n - Manglerbeast Berarmor akan menggunakan ultimate-nya secara berkala. Ultimate ini akan menyingkirkan semua kulit pisang dari medan pertarungan dan terus-menerus menimbulkan DMG pada semua operator. Saat menggunakan ultimate-nya, Manglerbeast Berarmor akan mendapatkan Pengurangan DMG yang tinggi. <@ba.key>Beberapa Penyelaan</> bisa menghentikan penggunaan ultimate ini.\n\n <@ba.info>- Item taktis dan item habis pakai tidak bisa digunakan.</>\n <@ba.info>- Musuh punya resistansi yang sama terhadap setiap elemen.</>"
+  },
+  "indie_hard024": {
+    "name": "Raja Tebing",
+    "description": "Pertarungan para howler yang berebut kekuasaan sungguh pemandangan langka. Pemenangnya akan naik takhta, sementara yang kalah hanya tinggal tulangnya .... Jadi, siapkan senapan dan pedangmu, Raja Tebing yang baru telah dinobatkan.",
+    "featureDesc": " - Durasi <@ba.fire>Combustion</>, <@ba.pulse>Electrification</>, <@ba.natur>Corrosion</>, <@ba.cryst>Solidification</>, dan <@ba.phy>Breach</> yang diakibatkan kepada Craghowler akan menjadi permanen. Efek <@ba.fire>Combustion</>, <@ba.pulse>Electrification</>, <@ba.natur>Corrosion</>, <@ba.cryst>Shatter</>, dan <@ba.phy>Breach</> yang diakibatkan kepada Craghowler juga akan menjadi lebih kuat. Arts Reaction dan Status Fisik yang disebutkan sebelumnya juga akan tetap bertahan setelah <@ba.key>pemakaian</>.\n - Craghowler akan melepaskan raungan amukan secara berkala. Raungan amukan tersebut akan mengakibatkan <@ba.key>Stun</> kepada semua operator.\n\n <@ba.info>- Musuh punya resistansi yang sama terhadap setiap elemen.</>"
+  },
+  "indie_hard024_s": {
+    "name": "Raja Tebing: Agoni",
+    "description": "Pertarungan para howler yang berebut kekuasaan sungguh pemandangan langka. Pemenangnya akan naik takhta, sementara yang kalah hanya tinggal tulangnya .... Jadi, siapkan senapan dan pedangmu, Raja Tebing yang baru telah dinobatkan.",
+    "featureDesc": " - Durasi <@ba.fire>Combustion</>, <@ba.pulse>Electrification</>, <@ba.natur>Corrosion</>, <@ba.cryst>Solidification</>, dan <@ba.phy>Breach</> yang diakibatkan kepada Craghowler akan menjadi permanen. Efek <@ba.fire>Combustion</>, <@ba.pulse>Electrification</>, <@ba.natur>Corrosion</>, <@ba.cryst>Shatter</>, dan <@ba.phy>Breach</> yang diakibatkan kepada Craghowler juga akan menjadi lebih kuat. Arts Reaction dan Status Fisik yang disebutkan sebelumnya juga akan tetap bertahan setelah <@ba.key>pemakaian</>.\n - Craghowler akan melepaskan raungan amukan secara berkala. Raungan amukan tersebut akan mengakibatkan <@ba.key>Stun</> kepada semua operator. Seiring berjalannya pertarungan, durasi <@ba.key>Stun</> yang diakibatkan oleh raungan amukan tersebut akan makin lama secara bertahap.\n\n <@ba.info>- Item taktis dan item habis pakai tidak bisa digunakan.</>\n <@ba.info>- Musuh punya resistansi yang sama terhadap setiap elemen.</>"
+  },
+  "indie_hard025": {
+    "name": "Pengunjung Qingbo",
+    "description": "Sekelompok orang Kampung Benteng Qingbo menyanyikan paduan suara pedang. Tak lagi mendambakan rumah yang hancur, semangat kepahlawanan dan ambisi liar mendorong mereka untuk mendaki puncak.",
+    "featureDesc": " - Jika berhasil mengalahkan musuh, sejumlah HP untuk semua musuh lainnya akan dipulihkan dan ATK serta HP maks mereka akan meningkat secara permanen.\n\n <@ba.info>- Musuh punya resistansi yang sama terhadap setiap elemen.</>"
+  },
+  "indie_hard025_s": {
+    "name": "Pengunjung Qingbo: Agoni",
+    "description": "Sekelompok orang Kampung Benteng Qingbo menyanyikan paduan suara pedang. Tak lagi mendambakan rumah yang hancur, semangat kepahlawanan dan ambisi liar mendorong mereka untuk mendaki puncak.",
+    "featureDesc": " - Jika berhasil mengalahkan musuh, sejumlah HP untuk semua musuh lainnya akan dipulihkan dan ATK serta HP maks mereka akan meningkat secara permanen.\n\n <@ba.info>- Item taktis dan item habis pakai tidak bisa digunakan.</>\n <@ba.info>- Musuh punya resistansi yang sama terhadap setiap elemen.</>"
+  },
+  "indie_hard026": {
+    "name": "Pembantaian Bayangan Buas",
+    "description": "Cakar bengkok binatang-binatang buas mula-mula meregang dari balik bayangan. Kemudian, barulah kami sadar bahwa cahaya yang tak berbelas kasihan itu telah meninggalkan jejak pada sifat ganas mereka.",
+    "featureDesc": " - Musuh dengan kondisi <@ba.key>Ethereal</> akan kebal terhadap DMG dan tidak bisa diincar.\n - Setelah pertarungan dimulai, Bayang-bayang Hawar Quillbeast akan memasuki kondisi <@ba.key>Ethereal</> dan terus-menerus melakukan serangan seruduk. Sementara itu, Bayang-bayang Hawar Rakerbeast akan secara berkala memberikan <@ba.key>Perisai</> kepada dirinya sendiri. Serudukan Bayang-bayang Hawar Quillbeast bisa menghancurkan <@ba.key>Perisai</> ini.\n - Saat HP Bayang-bayang Hawar Rakerbeast sudah menipis, ia akan memasuki kondisi <@ba.key>Ethereal</>, sementara kondisi <@ba.key>Ethereal</> Bayang-bayang Hawar Quillbeast akan berakhir. Setelah itu, Bayang-bayang Hawar Rakerbeast akan melancarkan Sambaran Guntur kepada operator terkontrol (maks total <@ba.key>5</> serangan). DMG Sambaran Guntur tidak bisa dihindari. Dengan mengakibatkan <@ba.key>Arts Burst</>, <@ba.phy>Breach</>, atau <@ba.phy>Crush</> kepada Bayang-bayang Hawar Quillbeast, <@ba.key>Bola Petir</> akan muncul. Operator terkontrol bisa mengambil <@ba.key>Bola Petir</> untuk mendapatkan perisai yang akan menahan DMG dari <@ba.key>1</> Sambaran Guntur.\n - Setelah HP Bayang-bayang Hawar Quillbeast sudah menipis, kondisi <@ba.key>Ethereal</>-nya akan berakhir. Musuh kemudian akan menyerang bersama-sama.\n\n <@ba.info>- Musuh punya resistansi yang sama terhadap setiap elemen.</>"
+  },
+  "indie_hard026_s": {
+    "name": "Pembantaian Bayangan Buas: Agoni",
+    "description": "Cakar bengkok binatang-binatang buas mula-mula meregang dari balik bayangan. Kemudian, barulah kami sadar bahwa cahaya yang tak berbelas kasihan itu telah meninggalkan jejak pada sifat ganas mereka.",
+    "featureDesc": " - Musuh dengan kondisi <@ba.key>Ethereal</> akan kebal terhadap DMG dan tidak bisa diincar.\n - Setelah pertarungan dimulai, Bayang-bayang Hawar Quillbeast akan memasuki kondisi <@ba.key>Ethereal</> dan terus-menerus melakukan serangan seruduk. Sementara itu, Bayang-bayang Hawar Rakerbeast akan secara berkala memberikan <@ba.key>Perisai</> kepada dirinya sendiri. Serudukan Bayang-bayang Hawar Quillbeast bisa menghancurkan <@ba.key>Perisai</> ini.\n - Saat HP Bayang-bayang Hawar Rakerbeast sudah menipis, ia akan memasuki kondisi <@ba.key>Ethereal</>, sementara kondisi <@ba.key>Ethereal</> Bayang-bayang Hawar Quillbeast akan berakhir. Setelah itu, Bayang-bayang Hawar Rakerbeast akan melancarkan Sambaran Guntur kepada operator terkontrol (maks total <@ba.key>7</> serangan). DMG Sambaran Guntur tidak bisa dihindari. Dengan mengakibatkan <@ba.key>Arts Burst</>, <@ba.phy>Breach</>, atau <@ba.phy>Crush</> kepada Bayang-bayang Hawar Quillbeast, <@ba.key>Bola Petir</> akan muncul. Operator terkontrol bisa mengambil <@ba.key>Bola Petir</> untuk mendapatkan perisai yang akan menahan DMG dari <@ba.key>1</> Sambaran Guntur.\n - Setelah HP Bayang-bayang Hawar Quillbeast sudah menipis, kondisi <@ba.key>Ethereal</>-nya akan berakhir. Musuh kemudian akan menyerang bersama-sama.\n\n <@ba.info>- Item taktis dan item habis pakai tidak bisa digunakan.</>\n <@ba.info>- Musuh punya resistansi yang sama terhadap setiap elemen.</>"
+  },
+  "indie_hard027": {
+    "name": "Sambaran Suar Bayangan",
+    "description": "Pedang lebar itu memanggil elemen penghancur untuk meresap ke dalam dirinya. Dengan demikian, bayang-bayang peperangan dan pembantaian yang mengerikan akan terus bersinar terang di negeri ini.",
+    "featureDesc": " - Cooldown dari semua skill tarung operator akan diperpanjang sebanyak 60 dtk.\n - Di awal pertarungan, semua operator akan masuk ke kondisi <@ba.key>Konduktif</>, dan terus-menerus menerima <@ba.pulse>Electric DMG</> berdasarkan jumlah tumpukan <@ba.pulse>Electric Infliction</> yang mereka miliki.\n - Setelah operator menggunakan skill tarung saat berada dalam kondisi <@ba.key>Konduktif</>, Bayang-bayang Hawar Kapten Satgassus Yinglung akan mengakibatkan 1 tumpuk <@ba.pulse>Electric Infliction</> kepada semua operator. Setelah Bayang-bayang Hawar Kapten Satgassus Yinglung mengakibatkan <@ba.pulse>Electric Infliction</> untuk <@ba.key>keempat</> kalinya, semua cooldown skill tarung operator akan direset, semua tumpukan <@ba.pulse>Electric Infliction</> akan <@ba.key>dihapus</> dari para operator, dan <@ba.pulse>Electrification Level 4</> akan diakibatkan kepada Bayang-bayang Hawar Kapten Satgassus Yinglung.\n\n <@ba.info>- Musuh punya resistansi yang sama terhadap setiap elemen.</>"
+  },
+  "indie_hard027_s": {
+    "name": "Sambaran Suar Bayangan: Agoni",
+    "description": "Pedang lebar itu memanggil elemen penghancur untuk meresap ke dalam dirinya. Dengan demikian, bayang-bayang peperangan dan pembantaian yang mengerikan akan terus bersinar terang di negeri ini.",
+    "featureDesc": " - Cooldown dari semua skill tarung operator akan diperpanjang sebanyak 60 dtk.\n - Bayang-bayang Hawar Kapten Satgassus Yinglung akan secara berkala mengakibatkan 1 tumpukan <@ba.pulse>Electric Infliction</> kepada semua operator.\n - Di awal pertarungan, semua operator akan masuk ke kondisi <@ba.key>Konduktif</>, dan terus-menerus menerima <@ba.pulse>Electric DMG</> berdasarkan jumlah tumpukan <@ba.pulse>Electric Infliction</> yang mereka miliki.\n - Setelah operator menggunakan skill tarung saat berada dalam kondisi <@ba.key>Konduktif</>, Bayang-bayang Hawar Kapten Satgassus Yinglung akan mengakibatkan 1 tumpukan <@ba.pulse>Electric Infliction</> kepada semua operator. Setelah Bayang-bayang Hawar Kapten Satgassus Yinglung mengakibatkan <@ba.pulse>Electric Infliction</> kepada operator untuk <@ba.key>keempat</> kalinya, cooldown skill tarung operator akan direset, semua tumpukan <@ba.pulse>Electric Infliction</> akan <@ba.key>dihapus</> dari para operator, dan <@ba.pulse>Electrification Level 4</> akan diakibatkan kepada Bayang-bayang Hawar Kapten Satgassus Yinglung.\n\n <@ba.info>- Item taktis dan item habis pakai tidak bisa digunakan.</>\n <@ba.info>- Musuh punya resistansi yang sama terhadap setiap elemen.</>"
+  },
+  "indie_hard028": {
+    "name": "Raungan Kebinasaan Tak Terduga",
+    "description": "“Waktu sudah habis. Biarkan siklus kebinasaan yang tak berujung dimulai.”",
+    "featureDesc": "- <@ba.key>Operator tidak lagi punya regenerasi SP</>. \n- Setelah pertarungan dimulai, SP dan SP Maks awal operator akan meningkat menjadi 1000. \n- Bayang-bayang Hawar Tuskbeast dan Bayang-bayang Hawar Garda Depan Satgassus Yinglung akan <@ba.key>meledakkan diri</> setelah beberapa saat dan menimbulkan DMG berdasarkan HP Maks kepada semua operator. \n- Bayang-bayang Hawar Glaiver Satgassus Yinglung harus <@ba.key>disela berulang kali</> untuk menghentikan penggunaan ultimate skill-nya. DMG dari ultimate skill ini tidak bisa dihindari. \n- Jika pertarungan berlangsung terlalu lama, Bayang-bayang Hawar Glaiver Satgassus Yinglung akan <@ba.key>meledakkan diri</> dan mengalahkan semua operator. \n- Saat musuh terkena Staggered, timer <@ba.key>ledakan diri</> mereka akan terjeda. \n\n<@ba.info>- Musuh memiliki resistansi yang sama terhadap semua elemen.</>"
+  },
+  "indie_hard028_s": {
+    "name": "Raungan Kebinasaan Tak Terduga: Agoni",
+    "description": "“Waktu sudah habis. Biarkan siklus kebinasaan yang tak berujung dimulai.”",
+    "featureDesc": "- <@ba.key>Operator tidak lagi punya regenerasi SP. Final Strike dan serangan Penuntas tidak lagi memulihkan SP</>. \n- Setelah pertarungan dimulai, SP dan SP Maks awal operator akan meningkat menjadi 1000. \n- Bayang-bayang Hawar Tuskbeast dan Bayang-bayang Hawar Garda Depan Satgassus Yinglung akan <@ba.key>meledakkan diri</> setelah beberapa saat dan menimbulkan DMG berdasarkan HP Maks kepada semua operator. \n- Bayang-bayang Hawar Glaiver Satgassus Yinglung harus <@ba.key>disela berulang kali</> untuk menghentikan penggunaan ultimate skill-nya. DMG dari ultimate skill ini tidak bisa dihindari. \n- Jika pertarungan berlangsung terlalu lama, Bayang-bayang Hawar Glaiver Satgassus Yinglung akan <@ba.key>meledakkan diri</> dan mengalahkan semua operator. \n- Saat musuh terkena Staggered, timer <@ba.key>ledakan diri</> mereka akan terjeda. \n\n<@ba.info>- Item taktis dan item habis pakai tidak bisa digunakan.</> \n<@ba.info>- Musuh punya resistansi yang sama terhadap setiap elemen.</>"
+  },
+  "indie_hard029": {
+    "name": "Mengincar Tiga Aggelos",
+    "description": "Para saksi tetap membisu dan menderita. Ketika setiap kenangan hanya menjadi sekadar ilusi, yang tersisa bagi kita hanyalah kebinasaan.",
+    "featureDesc": " - Musuh tidak bisa bergerak tapi punya jangkauan serangan yang jauh lebih luas.\n\n <@ba.info>- Musuh punya resistansi yang sama terhadap setiap elemen.</>"
+  },
+  "indie_hard029_s": {
+    "name": "Mengincar Tiga Aggelos: Agoni",
+    "description": "Para saksi tetap membisu dan menderita. Ketika setiap kenangan hanya menjadi sekadar ilusi, yang tersisa bagi kita hanyalah kebinasaan.",
+    "featureDesc": " - Musuh tidak bisa bergerak, tapi punya jangkauan serangan yang jauh lebih luas.\n - Saat musuh dikalahkan untuk pertama kalinya, musuh lainnya akan mendapatkan ATK boost dan kecepatan ATK yang lebih tinggi.\n\n <@ba.info>- Item Taktis dan item habis pakai tidak bisa digunakan.</>\n <@ba.info>- Musuh punya resistansi yang sama terhadap setiap elemen.</>"
+  }
+}

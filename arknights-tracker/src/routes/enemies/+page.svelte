@@ -17,11 +17,11 @@
     import SortSelectorDropdown from "$lib/components/dataToolbarV2/sortDropdowns/SortSelectorDropdown.svelte";
     import { t } from "$lib/i18n";
     import { enemies } from "$lib/data/enemies.js";
-    import { enemyFilters, enemySearch, enemyGroupMode, getEnemyFilters } from "$lib/stores/filterStore";
+    import { enemyFilters, enemySearch, enemyGroupMode, getEnemyFilters } from "$lib/stores/filterStore.js";
 
     import WeaponCard from "$lib/components/cards/WeaponCard.svelte";
     import Icon from "$lib/components/Icon.svelte";
-    import { filterCheck } from "$lib/utils/filterUtils.js";
+    import { filterCheck } from "$lib/utils/filterUtils";
 
     $: searchQuery = $enemySearch || "";
     $: isGrouped = $enemyGroupMode || false;

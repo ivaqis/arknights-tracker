@@ -1,0 +1,502 @@
+{
+  "indie_battletower001": {
+    "name": "Une lame qui fend l'eau : Normal",
+    "description": "J'ai vu un éclat de lumière et une lame passer à travers les courants, sans réussir à trancher sa froide et cruelle malice. Ses doigts ont laissé leur empreinte sur votre épée et un écho persistant a enveloppé votre silhouette.",
+    "featureDesc": " <@ba.info>- Améliorations des stats ennemies.</>\n <@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+  },
+  "indie_battletower001_ex": {
+    "name": "Une lame qui fend l'eau : Brutal",
+    "description": "J'ai vu un éclat de lumière et une lame passer à travers les courants, sans réussir à trancher sa froide et cruelle malice. Ses doigts ont laissé leur empreinte sur votre épée et un écho persistant a enveloppé votre silhouette.",
+    "featureDesc": " <@ba.info>- Améliorations des stats ennemies.</>\n <@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+  },
+  "indie_battletower001_s": {
+    "name": "Une lame qui fend l'eau : Difficile",
+    "description": "J'ai vu un éclat de lumière et une lame passer à travers les courants, sans réussir à trancher sa froide et cruelle malice. Ses doigts ont laissé leur empreinte sur votre épée et un écho persistant a enveloppé votre silhouette.",
+    "featureDesc": " <@ba.info>- Améliorations des stats ennemies.</>\n <@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+  },
+  "indie_battletower002": {
+    "name": "Récits anciens des terres sauvages : Normal",
+    "description": "J'ai vu ces bêtes qui piétinent les ruines de la guerre, griffant et déchirant le nom des nations alors que l'écume de rage sur leurs lèvres réduit les bâtons, les boucliers et les boulets de canon en ferrium fondu.",
+    "featureDesc": " - Chaque élimination permet de récupérer 15 PC.\n- DÉG de compétence de combat <@ba.vup>+60%</>.\n\n<@ba.info>- Amélioration des stats ennemies.</>\n<@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+  },
+  "indie_battletower002_ex": {
+    "name": "Récits anciens des terres sauvages : Brutal",
+    "description": "J'ai vu ces bêtes qui piétinent les ruines de la guerre, griffant et déchirant le nom des nations alors que l'écume de rage sur leurs lèvres réduit les bâtons, les boucliers et les boulets de canon en ferrium fondu.",
+    "featureDesc": " - Chaque élimination permet de récupérer 15 PC.\n- DÉG de compétence de combat <@ba.vup>+60%</>.\n\n<@ba.info>- Amélioration des stats ennemies.</>\n<@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+  },
+  "indie_battletower002_s": {
+    "name": "Récits anciens des terres sauvages : Difficile",
+    "description": "J'ai vu ces bêtes qui piétinent les ruines de la guerre, griffant et déchirant le nom des nations alors que l'écume de rage sur leurs lèvres réduit les bâtons, les boucliers et les boulets de canon en ferrium fondu.",
+    "featureDesc": " - Chaque élimination permet de récupérer 15 PC.\n- DÉG de compétence de combat <@ba.vup>+60%</>.\n\n<@ba.info>- Amélioration des stats ennemies.</>\n<@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+  },
+  "indie_battletower003": {
+    "name": "L'Æthillu des escarmoucheurs : Normal",
+    "description": "J'ai vu un carreau d'arbalète transpercer le ciel en un long cri. Les escarmoucheurs ont franchi les limites de la réalité, leurs silhouettes se sont confondues avec les froids contours de l'æthillu.",
+    "featureDesc": " - Les ennemis sont immobilisés, mais sont plus difficiles à interrompre.\n- Des æthillus uniquement sensibles aux coups fatals apparaissent sur le champ de bataille.\n- Chaque élimination d'æthillu attire tous les ennemis, permet de récupérer 50 PC et octroie à l'opérateur contrôlé <@ba.vup>+100%</> de DÉG infligés pendant 10 s.\n- Éliminez tous les embusqueurs Broyeurs d'os pour terminer le niveau. Il n'est pas nécessaire de vaincre tous les æthillus.\n\n<@ba.info>- Amélioration des stats ennemies.</>\n<@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+  },
+  "indie_battletower003_ex": {
+    "name": "L'Æthillu des escarmoucheurs : Brutal",
+    "description": "J'ai vu un carreau d'arbalète transpercer le ciel en un long cri. Les escarmoucheurs ont franchi les limites de la réalité, leurs silhouettes se sont confondues avec les froids contours de l'æthillu.",
+    "featureDesc": " - Les ennemis sont immobilisés, mais sont plus difficiles à interrompre.\n- Des æthillus uniquement sensibles aux coups fatals apparaissent sur le champ de bataille.\n- Chaque élimination d'æthillu attire tous les ennemis, permet de récupérer 50 PC et octroie à l'opérateur contrôlé <@ba.vup>+100%</> de DÉG infligés pendant 10 s.\n- Éliminez tous les embusqueurs Broyeurs d'os pour terminer le niveau. Il n'est pas nécessaire de vaincre tous les æthillus.\n\n<@ba.info>- Amélioration des stats ennemies.</>\n<@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+  },
+  "indie_battletower003_s": {
+    "name": "L'Æthillu des escarmoucheurs : Difficile",
+    "description": "J'ai vu un carreau d'arbalète transpercer le ciel en un long cri. Les escarmoucheurs ont franchi les limites de la réalité, leurs silhouettes se sont confondues avec les froids contours de l'æthillu.",
+    "featureDesc": " - Les ennemis sont immobilisés, mais sont plus difficiles à interrompre.\n- Des æthillus uniquement sensibles aux coups fatals apparaissent sur le champ de bataille.\n- Chaque élimination d'æthillu attire tous les ennemis, permet de récupérer 50 PC et octroie à l'opérateur contrôlé <@ba.vup>+100%</> de DÉG infligés pendant 10 s.\n- Éliminez tous les embusqueurs Broyeurs d'os pour terminer le niveau. Il n'est pas nécessaire de vaincre tous les æthillus.\n\n<@ba.info>- Amélioration des stats ennemies.</>\n<@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+  },
+  "indie_battletower004": {
+    "name": "L'ère des haches : Normal",
+    "description": "Alors que je laissais filer mon doigt le long des gravures, la rouille brûlante envoyait un éclair de douleur à travers cette peau d'exécuteur. Les armes étaient tachées de leur sang et de leur chair. Ce cycle de violence sans fin revenait chaque année.",
+    "featureDesc": " <@ba.info>- Améliorations des stats ennemies.</>\n <@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+  },
+  "indie_battletower004_ex": {
+    "name": "L'ère des haches : Brutal",
+    "description": "Alors que je laissais filer mon doigt le long des gravures, la rouille brûlante envoyait un éclair de douleur à travers cette peau d'exécuteur. Les armes étaient tachées de leur sang et de leur chair. Ce cycle de violence sans fin revenait chaque année.",
+    "featureDesc": " <@ba.info>- Améliorations des stats ennemies.</>\n <@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+  },
+  "indie_battletower004_s": {
+    "name": "L'ère des haches : Difficile",
+    "description": "Alors que je laissais filer mon doigt le long des gravures, la rouille brûlante envoyait un éclair de douleur à travers cette peau d'exécuteur. Les armes étaient tachées de leur sang et de leur chair. Ce cycle de violence sans fin revenait chaque année.",
+    "featureDesc": " <@ba.info>- Améliorations des stats ennemies.</>\n <@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+  },
+  "indie_battletower005": {
+    "name": "Munitions pulvérisatrices : Normal",
+    "description": "J'ai ramassé des morceaux de ferrium, des fragments de pensées et d'idées autrefois couverts de marques. L'engagement le plus sincère était celui de la balle, qui a volé en éclats en heurtant la chair et l'os.",
+    "featureDesc": " <@ba.info>- Améliorations des stats ennemies.</>\n <@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+  },
+  "indie_battletower005_ex": {
+    "name": "Munitions pulvérisatrices : Brutal",
+    "description": "J'ai ramassé des morceaux de ferrium, des fragments de pensées et d'idées autrefois couverts de marques. L'engagement le plus sincère était celui de la balle, qui a volé en éclats en heurtant la chair et l'os.",
+    "featureDesc": " <@ba.info>- Améliorations des stats ennemies.</>\n <@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+  },
+  "indie_battletower005_s": {
+    "name": "Munitions pulvérisatrices : Difficile",
+    "description": "J'ai ramassé des morceaux de ferrium, des fragments de pensées et d'idées autrefois couverts de marques. L'engagement le plus sincère était celui de la balle, qui a volé en éclats en heurtant la chair et l'os.",
+    "featureDesc": " <@ba.info>- Améliorations des stats ennemies.</>\n <@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+  },
+  "indie_battletower006": {
+    "name": "Les cicatrices des Brise-Terres : Normal",
+    "description": "On m'a raconté l'histoire d'un seigneur de guerre et de ses ambitions folles. Elle finissait par des meutes de loups s'entredévorant dans la grande mer de sable, jusqu'à ce que les gargouillis du sang qui jaillissaient des entrailles nous parviennent aux oreilles.",
+    "featureDesc": " - Éliminer un avant-garde Broyeur d'os confère un bonus d'efficacité de Déséquilibre de <@ba.vup>+50%</>.\n - Éliminer l'incendiaire Broyeur d'os augmente l'intensité des Arts de <@ba.vup>+100 points</>.\n - Éliminer l'exécuteur Broyeur d'os augmente les DÉG de compétence infligés de <@ba.vup>+100%</>.\n - Éliminer le bélier lourd augmente les DÉG d'attaque de base de <@ba.vup>+100%</>.\n\n <@ba.info>- Amélioration des stats ennemies.</>\n <@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+  },
+  "indie_battletower006_ex": {
+    "name": "Les cicatrices des Brise-Terres : Brutal",
+    "description": "On m'a raconté l'histoire d'un seigneur de guerre et de ses ambitions folles. Elle finissait par des meutes de loups s'entredévorant dans la grande mer de sable, jusqu'à ce que les gargouillis du sang qui jaillissaient des entrailles nous parviennent aux oreilles.",
+    "featureDesc": " - Éliminer un avant-garde Broyeur d'os confère un bonus d'efficacité de Déséquilibre de <@ba.vup>+50%</>.\n - Éliminer l'incendiaire Broyeur d'os augmente l'intensité des Arts de <@ba.vup>+100 points</>.\n - Éliminer l'exécuteur Broyeur d'os augmente les DÉG de compétence infligés de <@ba.vup>+100%</>.\n - Éliminer le bélier lourd augmente les DÉG d'attaque de base de <@ba.vup>+100%</>.\n\n <@ba.info>- Amélioration des stats ennemies.</>\n <@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+  },
+  "indie_battletower006_s": {
+    "name": "Les cicatrices des Brise-Terres : Difficile",
+    "description": "On m'a raconté l'histoire d'un seigneur de guerre et de ses ambitions folles. Elle finissait par des meutes de loups s'entredévorant dans la grande mer de sable, jusqu'à ce que les gargouillis du sang qui jaillissaient des entrailles nous parviennent aux oreilles.",
+    "featureDesc": " - Éliminer un avant-garde Broyeur d'os confère un bonus d'efficacité de Déséquilibre de <@ba.vup>+50%</>.\n - Éliminer l'incendiaire Broyeur d'os augmente l'intensité des Arts de <@ba.vup>+100 points</>.\n - Éliminer l'exécuteur Broyeur d'os augmente les DÉG de compétence infligés de <@ba.vup>+100%</>.\n - Éliminer le bélier lourd augmente les DÉG d'attaque de base de <@ba.vup>+100%</>.\n\n <@ba.info>- Amélioration des stats ennemies.</>\n <@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+  },
+  "indie_battletower007": {
+    "name": "Le hurlement des bêtes immortelles : Normal",
+    "description": "J'entends le bruit de votre lame contre les os blanchis des bêtes, le sifflement de son tranchant évoquant le fracas du tonnerre.",
+    "featureDesc": " - Le frappeciel n'entre pas en état enragé.\n - Une fois le combat commencé, le frappeciel gagne 50 de résistance contre tous les éléments.\n\n <@ba.info>- Améliorations des stats ennemies.</>\n <@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+  },
+  "indie_battletower007_ex": {
+    "name": "Le hurlement des bêtes immortelles : Brutal",
+    "description": "J'entends le bruit de votre lame contre les os blanchis des bêtes, le sifflement de son tranchant évoquant le fracas du tonnerre.",
+    "featureDesc": " - Le frappeciel n'entre pas en état enragé.\n - Une fois le combat commencé, le frappeciel gagne 50 de résistance contre tous les éléments.\n\n <@ba.info>- Améliorations des stats ennemies.</>\n <@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+  },
+  "indie_battletower007_s": {
+    "name": "Le hurlement des bêtes immortelles : Difficile",
+    "description": "J'entends le bruit de votre lame contre les os blanchis des bêtes, le sifflement de son tranchant évoquant le fracas du tonnerre.",
+    "featureDesc": " - Le frappeciel n'entre pas en état enragé.\n - Une fois le combat commencé, le frappeciel gagne 50 de résistance contre tous les éléments.\n\n <@ba.info>- Améliorations des stats ennemies.</>\n <@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+  },
+  "indie_battletower008": {
+    "name": "Une brève histoire de la guerre : Normal",
+    "description": "J'ai trouvé quelques bribes de vérité. Tout a commencé par des bêtes devenues folles furieuses, pour finir par un massacre général. Les conflits sanglants n'ont jamais cessé.",
+    "featureDesc": " - Éliminer un nidwyrm tunnelier augmente de <@ba.vup>+30%</> la vitesse de régénération de PC.\n - Éliminer un dard lourd augmente de <@ba.vup>+50%</> la réduction du temps de recharge de compétence de combo.\n - Éliminer le baliste Broyeur d'os augmente de <@ba.vup>+60%</> la vitesse de gain d'ultime.\n \n <@ba.info>- Améliorations des stats ennemies.</>\n <@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+  },
+  "indie_battletower008_ex": {
+    "name": "Une brève histoire de la guerre : Brutal",
+    "description": "J'ai trouvé quelques bribes de vérité. Tout a commencé par des bêtes devenues folles furieuses, pour finir par un massacre général. Les conflits sanglants n'ont jamais cessé.",
+    "featureDesc": " - Éliminer un nidwyrm tunnelier augmente de <@ba.vup>+30%</> la vitesse de régénération de PC.\n - Éliminer un dard lourd augmente de <@ba.vup>+50%</> la réduction du temps de recharge de compétence de combo.\n - Éliminer le baliste Broyeur d'os augmente de <@ba.vup>+60%</> la vitesse de gain d'ultime.\n \n <@ba.info>- Améliorations des stats ennemies.</>\n <@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+  },
+  "indie_battletower008_s": {
+    "name": "Une brève histoire de la guerre : Difficile",
+    "description": "J'ai trouvé quelques bribes de vérité. Tout a commencé par des bêtes devenues folles furieuses, pour finir par un massacre général. Les conflits sanglants n'ont jamais cessé.",
+    "featureDesc": " - Éliminer un nidwyrm tunnelier augmente de <@ba.vup>+30%</> la vitesse de régénération de PC.\n - Éliminer un dard lourd augmente de <@ba.vup>+50%</> la réduction du temps de recharge de compétence de combo.\n - Éliminer le baliste Broyeur d'os augmente de <@ba.vup>+60%</> la vitesse de gain d'ultime.\n \n <@ba.info>- Améliorations des stats ennemies.</>\n <@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+  },
+  "indie_battletower009": {
+    "name": "Lignes de front enfouies : Normal",
+    "description": "J'ai assisté à des funérailles sur une terre sombre et bouillonnante, où les bêtes sont menées par des ombres persistantes.",
+    "featureDesc": " <@ba.info>- Améliorations des stats ennemies.</>\n <@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+  },
+  "indie_battletower009_ex": {
+    "name": "Lignes de front enfouies : Brutal",
+    "description": "J'ai assisté à des funérailles sur une terre sombre et bouillonnante, où les bêtes sont menées par des ombres persistantes.",
+    "featureDesc": " <@ba.info>- Améliorations des stats ennemies.</>\n <@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+  },
+  "indie_battletower009_s": {
+    "name": "Lignes de front enfouies : Difficile",
+    "description": "J'ai assisté à des funérailles sur une terre sombre et bouillonnante, où les bêtes sont menées par des ombres persistantes.",
+    "featureDesc": " <@ba.info>- Améliorations des stats ennemies.</>\n <@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+  },
+  "indie_battletower010": {
+    "name": "Mur de boucliers : Normal",
+    "description": "J'ai observé une opération de secours où une masse de « boucliers » protégeait le front d'une ligne de bataille.",
+    "featureDesc": " - Lorsqu'un prisme est éliminé, un autre apparaît sur le champ de bataille après un moment.\n - Les prismes sont désormais bien plus difficiles à interrompre.\n - Éliminez la Gangrénombre bêtaplume pour terminer le niveau. Éliminer les prismes n'a pas d'impact sur l'achèvement du niveau.\n\n <@ba.info>- Améliorations des stats ennemies.</>\n <@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+  },
+  "indie_battletower010_ex": {
+    "name": "Mur de boucliers : Brutal",
+    "description": "J'ai observé une opération de secours où une masse de « boucliers » protégeait le front d'une ligne de bataille.",
+    "featureDesc": " - Lorsqu'un prisme est éliminé, un autre apparaît sur le champ de bataille après un moment.\n - Les prismes sont désormais bien plus difficiles à interrompre.\n - Éliminez la Gangrénombre bêtaplume pour terminer le niveau. Éliminer les prismes n'a pas d'impact sur l'achèvement du niveau.\n\n <@ba.info>- Améliorations des stats ennemies.</>\n <@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+  },
+  "indie_battletower010_s": {
+    "name": "Mur de boucliers : Difficile",
+    "description": "J'ai observé une opération de secours où une masse de « boucliers » protégeait le front d'une ligne de bataille.",
+    "featureDesc": " - Lorsqu'un prisme est éliminé, un autre apparaît sur le champ de bataille après un moment.\n - Les prismes sont désormais bien plus difficiles à interrompre.\n - Éliminez la Gangrénombre bêtaplume pour terminer le niveau. Éliminer les prismes n'a pas d'impact sur l'achèvement du niveau.\n\n <@ba.info>- Améliorations des stats ennemies.</>\n <@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+  },
+  "indie_battletower011": {
+    "name": "Siège fatal : Normal",
+    "description": "J'ai planifié une embuscade faite de boue, de sang et de plaies béantes, où la douleur nourrit une profonde angoisse.",
+    "featureDesc": " - Le champ de bataille comporte une <@ba.key>zone de douleur</>. Un ennemi subit <@ba.vup>+10%</> de DÉG pour chaque seconde passée dans la zone, dans la limite maximale de <@ba.vup>+150%</>. Le malus disparaît progressivement quand l'ennemi quitte la <@ba.key>zone de douleur</>.\n\n <@ba.info>- Améliorations des stats ennemies.</>\n <@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+  },
+  "indie_battletower011_ex": {
+    "name": "Siège fatal : Brutal",
+    "description": "J'ai planifié une embuscade faite de boue, de sang et de plaies béantes, où la douleur nourrit une profonde angoisse.",
+    "featureDesc": " - Le champ de bataille comporte une <@ba.key>zone de douleur</>. Un ennemi subit <@ba.vup>+10%</> de DÉG pour chaque seconde passée dans la zone, dans la limite maximale de <@ba.vup>+150%</>. Le malus disparaît progressivement quand l'ennemi quitte la <@ba.key>zone de douleur</>.\n\n <@ba.info>- Améliorations des stats ennemies.</>\n <@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+  },
+  "indie_battletower011_s": {
+    "name": "Siège fatal : Difficile",
+    "description": "J'ai planifié une embuscade faite de boue, de sang et de plaies béantes, où la douleur nourrit une profonde angoisse.",
+    "featureDesc": " - Le champ de bataille comporte une <@ba.key>zone de douleur</>. Un ennemi subit <@ba.vup>+10%</> de DÉG pour chaque seconde passée dans la zone, dans la limite maximale de <@ba.vup>+150%</>. Le malus disparaît progressivement quand l'ennemi quitte la <@ba.key>zone de douleur</>.\n\n <@ba.info>- Améliorations des stats ennemies.</>\n <@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+  },
+  "indie_battletower012": {
+    "name": "Ferveur inorganique : Normal",
+    "description": "J'ai simulé un assaut. Même si les Aggeloi ne ressentent rien, notre avant-garde ignore la fatigue.",
+    "featureDesc": " - Les opérateurs commencent le combat avec leur <@ba.key>énergie d'ultime</> au maximum.\n\n <@ba.info>- Améliorations des stats ennemies.</>\n <@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+  },
+  "indie_battletower012_ex": {
+    "name": "Ferveur inorganique : Brutal",
+    "description": "J'ai simulé un assaut. Même si les Aggeloi ne ressentent rien, notre avant-garde ignore la fatigue.",
+    "featureDesc": " - Les opérateurs commencent le combat avec leur <@ba.key>énergie d'ultime</> au maximum.\n\n <@ba.info>- Améliorations des stats ennemies.</>\n <@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+  },
+  "indie_battletower012_s": {
+    "name": "Ferveur inorganique : Difficile",
+    "description": "J'ai simulé un assaut. Même si les Aggeloi ne ressentent rien, notre avant-garde ignore la fatigue.",
+    "featureDesc": " - Les opérateurs commencent le combat avec leur <@ba.key>énergie d'ultime</> au maximum.\n\n <@ba.info>- Améliorations des stats ennemies.</>\n <@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+  },
+  "indie_battletower013": {
+    "name": "Décapitation puissante : Normal",
+    "description": "J'ai préparé une exécution : la force est à son apogée lorsque la hache s'élève au-dessus de la tête.",
+    "featureDesc": " - Les ennemis n'utilisent que des <@ba.key>compétences chargées</> et sont immunisés contre les dégâts des <@ba.key>compétences de combat</> lorsqu'ils <@ba.key>chargent</> leurs compétences. Les <@ba.key>compétences chargées</> de l'ennemi ne peuvent pas être interrompues par des <@ba.key>compétences de combat</>.\n\n <@ba.info>- Améliorations des stats ennemies.</>\n <@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+  },
+  "indie_battletower013_ex": {
+    "name": "Décapitation puissante : Brutal",
+    "description": "J'ai préparé une exécution : la force est à son apogée lorsque la hache s'élève au-dessus de la tête.",
+    "featureDesc": " - Les ennemis n'utilisent que des <@ba.key>compétences chargées</> et sont immunisés contre les dégâts des <@ba.key>compétences de combat</> lorsqu'ils <@ba.key>chargent</> leurs compétences. Les <@ba.key>compétences chargées</> de l'ennemi ne peuvent pas être interrompues par des <@ba.key>compétences de combat</>.\n\n <@ba.info>- Améliorations des stats ennemies.</>\n <@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+  },
+  "indie_battletower013_s": {
+    "name": "Décapitation puissante : Difficile",
+    "description": "J'ai préparé une exécution : la force est à son apogée lorsque la hache s'élève au-dessus de la tête.",
+    "featureDesc": " - Les ennemis n'utilisent que des <@ba.key>compétences chargées</> et sont immunisés contre les dégâts des <@ba.key>compétences de combat</> lorsqu'ils <@ba.key>chargent</> leurs compétences. Les <@ba.key>compétences chargées</> de l'ennemi ne peuvent pas être interrompues par des <@ba.key>compétences de combat</>.\n\n <@ba.info>- Améliorations des stats ennemies.</>\n <@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+  },
+  "indie_battletower014": {
+    "name": "Machinations bestiales : Normal",
+    "description": "J'ai organisé un banquet. Les bêtes sont rusées, mais une belle récompense vous attend si vous parvenez à déjouer leurs intrigues.",
+    "featureDesc": " - Éliminer un hurleroc restaure <@ba.vup>10</> PC et confère à tous les opérateurs <@ba.vup>+15</> d'intensité des Arts.\n\n <@ba.info>- Améliorations des stats ennemies.</>\n <@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+  },
+  "indie_battletower014_ex": {
+    "name": "Machinations bestiales : Brutal",
+    "description": "J'ai organisé un banquet. Les bêtes sont rusées, mais une belle récompense vous attend si vous parvenez à déjouer leurs intrigues.",
+    "featureDesc": " - Éliminer un hurleroc restaure <@ba.vup>10</> PC et confère à tous les opérateurs <@ba.vup>+15</> d'intensité des Arts.\n\n <@ba.info>- Améliorations des stats ennemies.</>\n <@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+  },
+  "indie_battletower014_s": {
+    "name": "Machinations bestiales : Difficile",
+    "description": "J'ai organisé un banquet. Les bêtes sont rusées, mais une belle récompense vous attend si vous parvenez à déjouer leurs intrigues.",
+    "featureDesc": " - Éliminer un hurleroc restaure <@ba.vup>10</> PC et confère à tous les opérateurs <@ba.vup>+15</> d'intensité des Arts.\n\n <@ba.info>- Améliorations des stats ennemies.</>\n <@ba.info>- Seuls les objets tactiques et les consommables de soins de PV peuvent être utilisés.</>"
+  },
+  "indie_hard001": {
+    "name": "Boucliers ravageurs",
+    "description": "Les brumes enneigées n'ont jamais l'air de se dissiper sur ces terres sauvages. Des bruits clairs de fracas sont perceptibles au beau milieu des grondements. \nTendez l'oreille. Vous avez entendu... du métal frotté contre la pierre ?",
+    "featureDesc": " - Les ennemis sont plus puissants."
+  },
+  "indie_hard001_s": {
+    "name": "Boucliers ravageurs : Agonie",
+    "description": "Les brumes enneigées n'ont jamais l'air de se dissiper sur ces terres sauvages. Des bruits clairs de fracas sont perceptibles au beau milieu des grondements. \nTendez l'oreille. Vous avez entendu... du métal frotté contre la pierre ?",
+    "featureDesc": " - Les ennemis sont plus puissants.\n - Ils se déplacent plus vite et récupèrent plus rapidement d'un Déséquilibre.\n - Lorsqu'un ennemi est éliminé, les ennemis restants sont plus difficiles à interrompre et obtiennent une régénération de PV et d'ATQ en continu.\n\n  <@ba.info>- Impossible d'utiliser les objets tactiques et les consommables.</>"
+  },
+  "indie_hard002": {
+    "name": "Ombres et carreaux",
+    "description": "La déflagration assourdissante a ravivé les braises de la guerre du siècle dernier. Néanmoins, la Ceinture civilisée n'a pas été détruite par le bombardement aggeloïde. \n« Les Aggeloi ne sont pas les seuls à avoir précipité l'humanité au bord de l'extinction. Et c'est là tout le drame. »",
+    "featureDesc": " - Les ennemis sont plus puissants."
+  },
+  "indie_hard002_s": {
+    "name": "Ombres et carreaux : Agonie",
+    "description": "La déflagration assourdissante a ravivé les braises de la guerre du siècle dernier. Néanmoins, la Ceinture civilisée n'a pas été détruite par le bombardement aggeloïde. \n« Les Aggeloi ne sont pas les seuls à avoir précipité l'humanité au bord de l'extinction. Et c'est là tout le drame. »",
+    "featureDesc": " - Les ennemis sont plus puissants.\n - Ils récupèrent plus rapidement d'un Déséquilibre, sont plus difficiles à interrompre et bénéficient d'une forte augmentation de la portée d'ATQ.\n - Les dards lourds α bénéficient régulièrement d'une immunité temporaire contre tous les types de DÉG. Éliminez tous les dards α pour faire disparaître ce bonus d'immunité.\n \n  <@ba.info>- Impossible d'utiliser les objets tactiques et les consommables.</>"
+  },
+  "indie_hard003": {
+    "name": "Dur comme la pierre",
+    "description": "L'épave de la machine géante au loin évoque les grands événements du passé. Non loin, des créatures démantelées commencent à fusionner pour créer de nouvelles entités qui éructent des hurlements sismiques. \nLa terre se met à trembler alors que les Aggeloi s'écrasent au sol et chancellent d'un pas lourd.",
+    "featureDesc": " - Les ennemis sont plus puissants."
+  },
+  "indie_hard003_s": {
+    "name": "Dur comme la pierre : Agonie",
+    "description": "L'épave de la machine géante au loin évoque les grands événements du passé. Non loin, des créatures démantelées commencent à fusionner pour créer de nouvelles entités qui éructent des hurlements sismiques. \nLa terre se met à trembler alors que les Aggeloi s'écrasent au sol et chancellent d'un pas lourd.",
+    "featureDesc": " - La vitesse de régénération d'endurance de l'opérateur est fortement réduite.\n- Les ennemis sont plus puissants et immunisés contre le Déséquilibre.\n- Le chrysopolis ambulant récupère plus rapidement des expositions de ses points faibles. Il bénéficie d'un gros bonus d'ATQ si son point faible n'est pas détruit avant la fin de son exposition. Lorsque son point faible est détruit, il est déséquilibré.\n\n  <@ba.info>- Impossible d'utiliser les objets tactiques et les consommables.</>"
+  },
+  "indie_hard004": {
+    "name": "Baliste et hache",
+    "description": "Les Broyeurs d'os ont éviscéré les plus faibles et se tiennent au sommet de la plateforme en brandissant leurs haches et leurs balistes. Éliminez-les et réduisez en poussière la souffrance ancestrale et les ambitions nouvelles. \n« Héroïque ? Comment avez-vous remporté un tel titre ? »",
+    "featureDesc": " - Les 2 ennemis d'élite se battront en équipe."
+  },
+  "indie_hard004_s": {
+    "name": "Baliste et hache : Agonie",
+    "description": "Les Broyeurs d'os ont éviscéré les plus faibles et se tiennent au sommet de la plateforme en brandissant leurs haches et leurs balistes. Éliminez-les et réduisez en poussière la souffrance ancestrale et les ambitions nouvelles. \n« Héroïque ? Comment avez-vous remporté un tel titre ? »",
+    "featureDesc": " - Les 2 ennemis d'élite se battront en équipe.\n- Quand les deux ennemis d'élite sont au combat, ils partagent les DÉG de façon équitable.\n \n  <@ba.info>- Impossible d'utiliser les objets tactiques et les consommables.</>"
+  },
+  "indie_hard005": {
+    "name": "Tactiques peu orthodoxes",
+    "description": "Les communicateurs émettent des cris stridents tandis que les drones s'écrasent au sol. Les Brise-Terres se retournent pour voir, tout en marmonnant leur désir de « bénédictions » et de « vengeance ». \nDerrière eux se tiennent des silhouettes ténébreuses au cœur de la forêt des flambes.",
+    "featureDesc": " - Les ennemis ne peuvent plus bouger, mais sont plus difficiles à interrompre et gagnent de l'ATQ en continu."
+  },
+  "indie_hard005_s": {
+    "name": "Tactiques peu orthodoxes : Agonie",
+    "description": "Les communicateurs émettent des cris stridents tandis que les drones s'écrasent au sol. Les Brise-Terres se retournent pour voir, tout en marmonnant leur désir de « bénédictions » et de « vengeance ». \nDerrière eux se tiennent des silhouettes ténébreuses au cœur de la forêt des flambes.",
+    "featureDesc": " - Les ennemis ne peuvent plus bouger, mais sont plus difficiles à interrompre et gagnent de l'ATQ en continu. \n- L'ATQ de l'ennemi augmente beaucoup plus rapidement. \n\n  <@ba.info>- Impossible d'utiliser les objets tactiques et les consommables.</>"
+  },
+  "indie_hard006": {
+    "name": "Survivre au gaz",
+    "description": "L'immense usine exhale d'épaisses fumées nocives depuis ses conduites. Qui tente de dissimuler ses secrets ici ? \n« Dégainez vos épées et levez ces boucliers ! Hurlons comme des hyenards de guerre ! Et faites-moi chauffer cette brume ! »",
+    "featureDesc": " - Attention, la brume inflige des DÉG continus à tous les opérateurs.\n- Lorsque l'opérateur contrôlé reçoit des soins, les autres opérateurs de l'équipe reçoivent également 70 % de ces soins."
+  },
+  "indie_hard006_s": {
+    "name": "Survivre au gaz : Agonie",
+    "description": "L'immense usine exhale d'épaisses fumées nocives depuis ses conduites. Qui tente de dissimuler ses secrets ici ? \n« Dégainez vos épées et levez ces boucliers ! Hurlons comme des hyenards de guerre ! Et faites-moi chauffer cette brume ! »",
+    "featureDesc": " - Attention, la brume inflige des DÉG continus à tous les opérateurs.\n- La brume inflige plus de DÉG et de nouveaux ennemis vont apparaître.\n- Lorsque l'opérateur contrôlé reçoit des soins, les autres opérateurs de l'équipe reçoivent également 50 % de ces soins.\n\n  <@ba.info>- Impossible d'utiliser les objets tactiques et les consommables.</>"
+  },
+  "indie_hard007": {
+    "name": "Flamme hurlante",
+    "description": "Que la Gangrène maudisse les cieux ! Et les éclairs imprévisibles ! Et que la Gangrène MAUDISSE les flammes qui pleuvent sans prévenir !",
+    "featureDesc": " - Les ennemis entrent régulièrement dans un état <@ba.key>enragé</> qui leur applique une <@ba.fire>altération thermique</> en continu, leur octroyant un bonus d'ATQ et une réduction des DÉG en fonction du nombre de cumuls d'altération thermique.\n\n <@ba.info>- Les ennemis présentent la même résistance contre tous les éléments.</>"
+  },
+  "indie_hard007_s": {
+    "name": "Flamme hurlante : agonie",
+    "description": "Que la Gangrène maudisse les cieux ! Et les éclairs imprévisibles ! Et que la Gangrène MAUDISSE les flammes qui pleuvent sans prévenir !",
+    "featureDesc": " - Les ennemis entrent régulièrement dans un état <@ba.key>enragé</> qui leur applique une <@ba.fire>altération thermique</> en continu, leur octroyant un bonus d'ATQ et une réduction des DÉG en fonction du nombre de cumuls d'altération thermique.\n - Tant qu'ils sont <@ba.key>enragés</>, <@ba.key>les opérateurs ne peuvent pas récupérer de PC</>.\n\n <@ba.info>- Impossible d'utiliser les objets tactiques et les consommables.</>\n <@ba.info>- Les ennemis présentent la même résistance contre tous les éléments.</>"
+  },
+  "indie_hard008": {
+    "name": "Mer du dégoût",
+    "description": "Une haine profonde et viscérale les anime. Ces êtres abandonnés errent sans fin à travers les terres désolées... Avec le temps, ils ont oublié ce qui avait déclenché leur rage, mais chaque incarnation de haine puise sa force dans cet océan de brume infini.",
+    "featureDesc": " - Les ennemis sont plus puissants.\n- Les ennemis d'élite se battront en équipe.\n\n <@ba.info>- Les ennemis présentent la même résistance contre tous les éléments.</>"
+  },
+  "indie_hard008_s": {
+    "name": "Mer du dégoût : agonie",
+    "description": "Une haine profonde et viscérale les anime. Ces êtres abandonnés errent sans fin à travers les terres désolées... Avec le temps, ils ont oublié ce qui avait déclenché leur rage, mais chaque incarnation de haine puise sa force dans cet océan de brume infini.",
+    "featureDesc": " - Les ennemis sont plus puissants et <@ba.key>plus difficiles à interrompre</>.\n- Les ennemis d'élite se battront en équipe et d'autres ennemis apparaîtront.\n\n <@ba.info>- Impossible d'utiliser les objets tactiques et les consommables.</>\n <@ba.info>- Les ennemis présentent la même résistance contre tous les éléments.</>"
+  },
+  "indie_hard009": {
+    "name": "Point de fusion de la chair",
+    "description": "BRÛLEZ TOUT ! Faites tout brûler ! Renversez la tour et faites fondre le vaisseau ! Déversez notre sang dans le fer en fusion et utilisez-le pour purifier Talos-II !",
+    "featureDesc": " - Les ennemis sont plus puissants.\n- Des limaces d'originium de brumefeu explosives apparaissent régulièrement.\n\n <@ba.info>- Les ennemis présentent la même résistance contre tous les éléments.</>"
+  },
+  "indie_hard009_s": {
+    "name": "Point de fusion de la chair : agonie",
+    "description": "BRÛLEZ TOUT ! Faites tout brûler ! Renversez la tour et faites fondre le vaisseau ! Déversez notre sang dans le fer en fusion et utilisez-le pour purifier Talos-II !",
+    "featureDesc": " - Les ennemis sont plus puissants et <@ba.key>d'autres ennemis apparaîtront</>.\n- Des limaces d'originium de brumefeu explosives apparaissent régulièrement.\n- <@ba.key>Les opérateurs ne peuvent pas effectuer d'esquive parfaite</>.\n\n <@ba.info>- Impossible d'utiliser les objets tactiques et les consommables.</>\n <@ba.info>- Les ennemis présentent la même résistance contre tous les éléments.</>"
+  },
+  "indie_hard010": {
+    "name": "Souffrance des marées",
+    "description": "L'agonie s'est intensifiée et accumulée ici depuis des années. Regardez comment la lumière se réfracte dans les eaux tumultueuses. Les intentions meurtrières qui s'en dégagent sont dépourvues de toute émotion.",
+    "featureDesc": " - Les ennemis n'attaquent pas activement, mais se déplacent plutôt vers le milieu du champ de bataille où ils <@ba.key>explosent</> en infligeant de lourds DÉG à tous les opérateurs.\n- Certains ennemis sont bien plus difficiles à interrompre.\n\n <@ba.info>- Les ennemis présentent la même résistance contre tous les éléments.</>"
+  },
+  "indie_hard010_s": {
+    "name": "Souffrance des marées : Agonie",
+    "description": "L'agonie s'est intensifiée et accumulée ici depuis des années. Regardez comment la lumière se réfracte dans les eaux tumultueuses. Les intentions meurtrières qui s'en dégagent sont dépourvues de toute émotion.",
+    "featureDesc": " - Les ennemis n'attaquent pas activement, mais se déplacent plutôt vers le milieu du champ de bataille où ils <@ba.key>explosent</> en infligeant de lourds DÉG à tous les opérateurs.\n- Certains ennemis sont bien plus difficiles à interrompre.\n\n <@ba.info>- Impossible d'utiliser les objets tactiques et les consommables.</>\n <@ba.info>- Les ennemis présentent la même résistance contre tous les éléments.</>"
+  },
+  "indie_hard011": {
+    "name": "Connexion cryostatique",
+    "description": "La frigidité extrême les relie. Les vagues déferlantes et les sous-courants troubles leur confèrent un nom commun et donne un sens à leur création.",
+    "featureDesc": " - Les ennemis sont plus puissants. \n\n <@ba.info>- Les ennemis présentent la même résistance contre tous les éléments.</>"
+  },
+  "indie_hard011_s": {
+    "name": "Connexion cryostatique : Agonie",
+    "description": "La frigidité extrême les relie. Les vagues déferlantes et les sous-courants troubles leur confèrent un nom commun et donne un sens à leur création.",
+    "featureDesc": " - Les ennemis sont plus puissants.\n- Une fois l'effet amélioré, les DÉG globaux infligés par l'ennemi appliquent immédiatement <@ba.cryst>Solidification</> aux opérateurs.\n\n <@ba.info>- Impossible d'utiliser les objets tactiques et les consommables. </>\n <@ba.info>- Les ennemis présentent la même résistance contre tous les éléments.</>"
+  },
+  "indie_hard012": {
+    "name": "Sang corrompu",
+    "description": "Ils ont englouti les déchets de ces terres jusqu'à ce que leurs corps explosent, laissant s'échapper un sang épais et fétide, cet ichor maudit qui retient quiconque ose le regarder.",
+    "featureDesc": " - Les ennemis sont plus puissants.\n - La bêtaplume imprégnée invoquera régulièrement des bêtaplumes.\n\n <@ba.info>- Les ennemis présentent la même résistance contre tous les éléments.</>"
+  },
+  "indie_hard012_s": {
+    "name": "Sang corrompu : Agonie",
+    "description": "Ils ont englouti les déchets de ces terres jusqu'à ce que leurs corps explosent, laissant s'échapper un sang épais et fétide, cet ichor maudit qui retient quiconque ose le regarder.",
+    "featureDesc": " - Les ennemis sont plus puissants.\n - La bêtaplume imprégnée invoquera régulièrement des bêtaplumes. Elle <@ba.key>invoquera davantage</> de bêtaplumes lorsque ses PV sont faibles.\n\n <@ba.info>- Impossible d'utiliser les objets tactiques et les consommables.</>\n <@ba.info>- Les ennemis présentent la même résistance contre tous les éléments.</>"
+  },
+  "indie_hard013": {
+    "name": "Horizon silencieux",
+    "description": "Cette terre ne retrouvera jamais l'espoir. Les créatures, comme les humains, ont dépéri, ne laissant derrière eux que des êtres au regard vide, qui errent péniblement dans l'ignibrume épaisse et frémissante.",
+    "featureDesc": " - Les ennemis ont de meilleures stats. \n- L'ATQ des ennemis se renforce constamment. \n\n <@ba.info>- Les ennemis présentent la même résistance contre tous les éléments.</>"
+  },
+  "indie_hard013_s": {
+    "name": "Horizon silencieux : Agonie",
+    "description": "Cette terre ne retrouvera jamais l'espoir. Les créatures, comme les humains, ont dépéri, ne laissant derrière eux que des êtres au regard vide, qui errent péniblement dans l'ignibrume épaisse et frémissante.",
+    "featureDesc": " - Les ennemis ont de meilleures stats.\n- L'ATQ des ennemis se renforce constamment.\n\n <@ba.info>- Impossible d'utiliser les objets tactiques et les consommables.</>\n <@ba.info>- Les ennemis présentent la même résistance contre tous les éléments.</>"
+  },
+  "indie_hard014": {
+    "name": "Mer asséchée",
+    "description": "Les courants troubles finiront par se calmer. Les bêtes attendront que la grande hache pesante fende les ruines délabrées du passé pour ouvrir la voie vers de nouvelles possibilités.",
+    "featureDesc": " - Les ennemis ont de meilleures stats. \n\n <@ba.info>- Les ennemis présentent la même résistance contre tous les éléments.</>"
+  },
+  "indie_hard014_s": {
+    "name": "Mer asséchée : Agonie",
+    "description": "Les courants troubles finiront par se calmer. Les bêtes attendront que la grande hache pesante fende les ruines délabrées du passé pour ouvrir la voie vers de nouvelles possibilités.",
+    "featureDesc": " - Les ennemis ont de meilleures stats.\n\n <@ba.info>- Impossible d'utiliser les objets tactiques et les consommables.</>\n <@ba.info>- Les ennemis présentent la même résistance contre tous les éléments.</>"
+  },
+  "indie_hard015": {
+    "name": "Gouffre sous-marin",
+    "description": "Dans ces eaux silencieuses, où des courants sombres et glacés affluent, s'étendent des gouffres abritant des constructions non organiques.",
+    "featureDesc": " - Les ennemis sont plus puissants.\n - L'effigie invoquera plus d'Aggeloi.\n\n <@ba.info>- Les ennemis présentent la même résistance contre tous les éléments.</>"
+  },
+  "indie_hard015_s": {
+    "name": "Gouffre sous-marin : Agonie",
+    "description": "Dans ces eaux silencieuses, où des courants sombres et glacés affluent, s'étendent des gouffres abritant des constructions non organiques.",
+    "featureDesc": " - Les ennemis sont plus puissants.\n - L'effigie invoquera plus d'Aggeloi.\n\n <@ba.info>- Impossible d'utiliser les objets tactiques et les consommables.</>\n <@ba.info>- Les ennemis présentent la même résistance contre tous les éléments.</>"
+  },
+  "indie_hard016": {
+    "name": "Vortex rituel",
+    "description": "La lumière aveugle les témoins qui observent ce déluge de désespoir et de rage. Leurs hurlements se mêlent à un tonnerre assourdissant, alors que le porteur de la balise attend sur les Terres dévastées.",
+    "featureDesc": " - À intervalles réguliers, le pyromancien Broyeur d'os invoque ses <@ba.key>doubles</> et canalise sa compétence ultime pour une durée précise. L'ultime inflige de lourds DÉG à tous les opérateurs une fois la canalisation achevée. Éliminez tous les <@ba.key>doubles</> pour interrompre l'ultime du pyromancien.\n - Les <@ba.key>coups fatals</> infligent des DÉG supplémentaires aux ennemis. La durée du déséquilibre ennemi est également fortement réduite.\n \n <@ba.info>- Les ennemis présentent la même résistance contre tous les éléments.</>"
+  },
+  "indie_hard016_s": {
+    "name": "Vortex rituel : Agonie",
+    "description": "La lumière aveugle les témoins qui observent ce déluge de désespoir et de rage. Leurs hurlements se mêlent à un tonnerre assourdissant, alors que le porteur de la balise attend sur les Terres dévastées.",
+    "featureDesc": " - À intervalles réguliers, le pyromancien Broyeur d'os invoque ses <@ba.key>doubles</> et canalise sa compétence ultime pour une durée précise. L'ultime inflige de lourds DÉG à tous les opérateurs une fois la canalisation achevée. Éliminez tous les <@ba.key>doubles</> pour interrompre l'ultime du pyromancien.\n - Les <@ba.key>coups fatals</> infligent des DÉG supplémentaires aux ennemis. La durée du déséquilibre ennemi est également fortement réduite.\n\n <@ba.info>- Les objets tactiques et les consommables sont inutilisables.</>\n <@ba.info>- Les ennemis présentent la même résistance contre tous les éléments.</>"
+  },
+  "indie_hard017": {
+    "name": "Æthillu atroce",
+    "description": "La poussière de l'oubli aveugle les regards alors qu'une oraison funèbre s'élève dans les airs. La chair de l'Æthillu atroce a été déchirée et la mort se répand dans le monde entier.",
+    "featureDesc": " - À intervalles réguliers, l'opérateur contrôlé se retrouve <@ba.key>scellé</>.\n \n <@ba.info>- Les ennemis présentent la même résistance contre tous les éléments.</>"
+  },
+  "indie_hard017_s": {
+    "name": "Æthillu atroce : Agonie",
+    "description": "La poussière de l'oubli aveugle les regards alors qu'une oraison funèbre s'élève dans les airs. La chair de l'Æthillu atroce a été déchirée et la mort se répand dans le monde entier.",
+    "featureDesc": " - À intervalle régulier, l'opérateur contrôlé se retrouve <@ba.key>scellé</> et ce <@ba.key>sceau</> dure plus longtemps.\n\n <@ba.info>- Les objets tactiques et les consommables sont inutilisables.</>\n <@ba.info>- Les ennemis présentent la même résistance contre tous les éléments.</>"
+  },
+  "indie_hard018": {
+    "name": "Batteur enragé",
+    "description": "Cette entité tonitruante a été attirée vers ces terres, où elle piétine les morts et leurs tourments douloureux. La guerre entre la vie et la mort ne cessera jamais.",
+    "featureDesc": " - Une fois enragé, le frappeciel crée des boucliers protecteurs. Chaque <@ba.key>réaction aux Arts</> ou <@ba.phy>statut physique</> infligé par les opérateurs retire 1 cumul de bouclier.\n \n <@ba.info>- Les ennemis présentent la même résistance contre tous les éléments.</>"
+  },
+  "indie_hard018_s": {
+    "name": "Batteur enragé : Agonie",
+    "description": "Cette entité tonitruante a été attirée vers ces terres, où elle piétine les morts et leurs tourments douloureux. La guerre entre la vie et la mort ne cessera jamais.",
+    "featureDesc": " - Lorsqu'il est calme, le frappeciel crée un <@ba.key>Vortex</> dès qu'il inflige des DÉG à l'opérateur contrôlé.\n - Lorsqu'il est enragé, le frappeciel absorbe tous les <@ba.key>Vortex</> sur le champ de bataille pour créer des boucliers protecteurs. Chaque <@ba.key>Vortex</> absorbé augmente le cumul de boucliers. Chaque <@ba.key>réaction aux Arts</> ou <@ba.phy>statut physique</> infligé par les opérateurs retire 1 cumul de bouclier.\n\n <@ba.info>- Les objets tactiques et les consommables sont inutilisables.</>\n <@ba.info>- Les ennemis présentent la même résistance contre tous les éléments.</>"
+  },
+  "indie_hard019": {
+    "name": "Phalange d'épines",
+    "description": "Affûtez vos lances. Renforcez vos boucliers. Laissez parler votre haine et écoutez vos faiblesses. Puis marchez droit devant et enfoncez vos lames dans la chair de la mort.",
+    "featureDesc": " - Les ennemis ont de meilleures stats.\n- Les prismes augmentent l'ATQ des hédrons.\n- Les prismes sont plus difficiles à interrompre.\n \n <@ba.info>- Les ennemis présentent la même résistance contre tous les éléments.</>"
+  },
+  "indie_hard019_s": {
+    "name": "Phalange d'épines : Agonie",
+    "description": "Affûtez vos lances. Renforcez vos boucliers. Laissez parler votre haine et écoutez vos faiblesses. Puis marchez droit devant et enfoncez vos lames dans la chair de la mort.",
+    "featureDesc": " - Les ennemis ont de meilleures stats.\n- Les prismes augmentent l'ATQ des hédrons.\n- Les prismes sont plus difficiles à interrompre.\n\n <@ba.info>- Les objets tactiques et les consommables sont inutilisables.</>\n <@ba.info>- Les ennemis présentent la même résistance contre tous les éléments.</>"
+  },
+  "indie_hard020": {
+    "name": "Regard dissolvant",
+    "description": "La rivière finit par former un flot de sang glacé. Des profondeurs spectrales, sous les courants stygiens, le Dissolvant veille toujours.",
+    "featureDesc": " - Les ennemis ont de meilleures stats. \n- Les forces ennemies comprennent un brise-marée δ. \n \n <@ba.info>- Les ennemis présentent la même résistance contre tous les éléments.</>"
+  },
+  "indie_hard020_s": {
+    "name": "Regard dissolvant : Agonie",
+    "description": "La rivière finit par former un flot de sang glacé. Des profondeurs spectrales, sous les courants stygiens, le Dissolvant veille toujours.",
+    "featureDesc": " - Les ennemis ont de meilleures stats. \n- Les forces ennemies comprennent un brise-marée δ.\n\n <@ba.info>- Les objets tactiques et consommables sont inutilisables.</>\n <@ba.info>- Les ennemis présentent la même résistance contre tous les éléments.</>"
+  },
+  "indie_hard021": {
+    "name": "Traversée du territoire des ratisseurs",
+    "description": "Les griffes des ratisseurs échappent à la vue tandis que la harde avance et que les rivières débordent. Les vaincus s'éloignent et prennent leur envol, mais les plus jeunes oublient de raviver la haine.",
+    "featureDesc": " - Les ennemis ont de meilleures stats. \n- Le ratisseur éblouissant est <@ba.key>enragé</> en permanence et son ATQ augmente à mesure que ses PV chutent.\n \n <@ba.info>- Les ennemis présentent la même résistance contre tous les éléments.</>"
+  },
+  "indie_hard021_s": {
+    "name": "Traversée du territoire des ratisseurs : Agonie",
+    "description": "Les griffes des ratisseurs échappent à la vue tandis que la harde avance et que les rivières débordent. Les vaincus s'éloignent et prennent leur envol, mais les plus jeunes oublient de raviver la haine.",
+    "featureDesc": " - Les ennemis ont de meilleures stats. \n- Le ratisseur éblouissant est <@ba.key>enragé</> en permanence et son ATQ augmente à mesure que ses PV chutent.\n \n <@ba.info>- Les objets tactiques et les consommables sont inutilisables.</>\n <@ba.info>- Les ennemis présentent la même résistance contre tous les éléments.</>"
+  },
+  "indie_hard022": {
+    "name": "Ignibrume sismique",
+    "description": "« Je porte le BÂTON ! L'ignibrume est mon MARTO ! Ces montagnes sont MON TAMBOOUR et je suis le BATTEUR ! »",
+    "featureDesc": " - Le pyromancien Broyeur d'os lance constamment de l'ignibrume et inflige des DÉG à tous les opérateurs. Il est plus difficile à interrompre et est également immunisé contre les DÉG de déséquilibre.\n - Lorsque le pyromancien Broyeur d'os subit des DÉG d'<@ba.key>explosion des Arts</>, il reçoit des dégâts supplémentaires équivalents à un pourcentage de ses PV max et est temporairement <@ba.key>scellé</>.\n - Le pyromancien Broyeur d'os invoquera constamment des pillards d'élite et des embusqueurs d'élite.\n - Éliminer un ennemi victime d'une <@ba.key>altération des Arts</> applique également 1 cumul de la même <@ba.key>altération des Arts</> à tous les autres ennemis.\n\n <@ba.info>- Les ennemis présentent la même résistance contre tous les éléments.</>"
+  },
+  "indie_hard022_s": {
+    "name": "Ignibrume sismique : Agonie",
+    "description": "« Je porte le BÂTON ! L'ignibrume est mon MARTO ! Ces montagnes sont MON TAMBOOUR et je suis le BATTEUR ! »",
+    "featureDesc": " - Le pyromancien Broyeur d'os lance constamment de l'ignibrume et inflige des DÉG à tous les opérateurs. Si ses PV sont bas, son ignibrume applique également une <@ba.fire>altération thermique</>. Il est plus difficile à interrompre et est également immunisé contre les DÉG de déséquilibre.\n - Lorsque le pyromancien Broyeur d'os subit des DÉG d'<@ba.key>explosion des Arts</>, il reçoit des dégâts supplémentaires équivalents à un pourcentage de ses PV max et est temporairement <@ba.key>scellé</>.\n - Le pyromancien Broyeur d'os invoquera constamment des pillards d'élite et des embusqueurs d'élite.\n - Éliminer un ennemi victime d'une <@ba.key>altération des Arts</> applique également 1 cumul de la même <@ba.key>altération des Arts</> à tous les autres ennemis.\n\n <@ba.info>- Les objets tactiques et consommables sont inutilisables.</>\n <@ba.info>- Les ennemis présentent la même résistance contre tous les éléments.</>"
+  },
+  "indie_hard023": {
+    "name": "Ours à dents de sabre et compagnie",
+    "description": "Les gens détiennent toutes sortes de talent, mais les créatures possèdent toutes sortes de ruses. Si vous voulez savoir qui vaincra, prenez place sur cette scène.",
+    "featureDesc": " - <@ba.key>Les opérateurs ne régénèrent plus de PC.</>.\n - L'opérateur contrôlé récupère des PC en marchant sur les peaux de banane lancées par les hurlerocs.\n - L'ours à dents de sabre cuirassé lance son ultime à intervalle régulier. Ce dernier retire toutes les peaux de banane du champ de bataille et inflige des DÉG continus à tous les opérateurs. Son ultime lui octroie également une réduction des DÉG élevée. Vous pouvez stopper le lancement de cet ultime avec des <@ba.key>interruptions d'attaque</>.\n\n <@ba.info>- Les ennemis présentent la même résistance contre tous les éléments.</>"
+  },
+  "indie_hard023_s": {
+    "name": "Ours à dents de sabre et compagnie : Agonie",
+    "description": "Les gens détiennent toutes sortes de talent, mais les créatures possèdent toutes sortes de ruses. Si vous voulez savoir qui vaincra, prenez place sur cette scène.",
+    "featureDesc": "- <@ba.key>Les opérateurs ne régénèrent plus de PC.</>\n- L'opérateur contrôlé récupérera des PC en marchant sur les peaux de banane lancées par les hurlerocs.\n- L'ours à dents de sabre cuirassé lance sa compétence ultime régulièrement. Son ultime retire toutes les peaux de banane du champ de bataille et inflige des DÉG continus à tous les opérateurs. Son ultime octroie également une réduction des DÉG élevée à l'ours à dents de sabre cuirassé. Vous pouvez stopper le lancement de son ultime avec <@ba.key>plusieurs interruptions</>.\n\n<@ba.info>- Les objets tactiques et consommables sont inutilisables.</>\n<@ba.info>- Les ennemis présentent la même résistance contre tous les éléments.</>"
+  },
+  "indie_hard024": {
+    "name": "Roi du rocher",
+    "description": "Il est rare de voir des hurleurs se battre pour la suprématie. Le vainqueur monte sur le trône, les perdants ne sont plus qu'un tas d'os... Armez vos fusils, affûtez vos lames, et gloire au nouveau Roi du rocher.",
+    "featureDesc": " - La durée de <@ba.fire>Combustion</>, <@ba.pulse>Électrification</>, <@ba.natur>Corrosion</>, <@ba.cryst>Solidification</> et <@ba.phy>Brèche</> appliquée au hurlepic devient permanente. Les effets de <@ba.fire>Combustion</>, <@ba.pulse>Électrification</>, <@ba.natur>Corrosion</>, <@ba.cryst>Éclatement</> et <@ba.phy>Brèche</> appliqués au hurlepic sont également renforcés. Ces réactions aux Arts et statuts physiques persistent également après leur <@ba.key>consommation</>.\n - Le hurlepic émettra régulièrement un rugissement furieux. Ce rugissement applique <@ba.key>Étourdissement</> à tous les opérateurs.\n\n <@ba.info>- Les ennemis présentent la même résistance contre tous les éléments.</>"
+  },
+  "indie_hard024_s": {
+    "name": "Roi du rocher : Agonie",
+    "description": "Il est rare de voir des hurleurs se battre pour la suprématie. Le vainqueur monte sur le trône, les perdants ne sont plus qu'un tas d'os... Armez vos fusils, affûtez vos lames, et gloire au nouveau Roi du rocher.",
+    "featureDesc": " - La durée de <@ba.fire>Combustion</>, <@ba.pulse>Électrification</>, <@ba.natur>Corrosion</>, <@ba.cryst>Solidification</> et <@ba.phy>Brèche</> appliquée au hurlepic devient permanente. Les effets de <@ba.fire>Combustion</>, <@ba.pulse>Électrification</>, <@ba.natur>Corrosion</>, <@ba.cryst>Éclatement</> et <@ba.phy>Brèche</> appliqués au hurlepic sont également renforcés. Ces réactions aux Arts et statuts physiques persistent également après la <@ba.key>consommation</>.\n - Le hurlepic émettra régulièrement un rugissement furieux. Ce rugissement applique <@ba.key>Étourdissement</> sur tous les opérateurs. La durée de l'<@ba.key>Étourdissement</> appliqué par le rugissement furieux augmente progressivement au fil du combat.\n\n <@ba.info>- Les objets tactiques et consommables sont inutilisables.</>\n <@ba.info>- Les ennemis présentent la même résistance contre tous les éléments.</>"
+  },
+  "indie_hard025": {
+    "name": "Visiteurs de Qingbo",
+    "description": "La bande venue de la palanque de Qingbo entonne un chant d'épées. Sans aucun espoir de retrouver leur patrie, un esprit guerrier et une ambition folle les ont poussés à gravir ce sommet.",
+    "featureDesc": " - Éliminer l'ennemi restaure des PV à tous les autres ennemis et augmente leur ATQ ainsi que leurs PV max. de façon permanente.\n\n <@ba.info>- Les ennemis présentent la même résistance contre tous les éléments.</>"
+  },
+  "indie_hard025_s": {
+    "name": "Visiteurs de Qingbo : Agonie",
+    "description": "La bande venue de la palanque de Qingbo entonne un chant d'épées. Sans aucun espoir de retrouver leur patrie, un esprit guerrier et une ambition folle les ont poussés à gravir ce sommet.",
+    "featureDesc": " - Éliminer l'ennemi restaure des PV à tous les autres ennemis et augmente leur ATQ ainsi que leurs PV max. de façon permanente.\n\n <@ba.info>- Les objets tactiques et consommables sont inutilisables.</>\n <@ba.info>- Les ennemis présentent la même résistance contre tous les éléments.</>"
+  },
+  "indie_hard026": {
+    "name": "Carnage sauvage de l'ombre",
+    "description": "Les griffes tordues des bêtes sauvages ont d'abord surgi des ténèbres. Nous avons ensuite découvert que la lumière impitoyable avait marqué leur nature féroce.",
+    "featureDesc": " - Un ennemi en état <@ba.key>Éthéré</> est immunisé contre les DÉG et ne peut pas être ciblé.\n - Au début du combat, la Gangrénombre bêtaplume entre en état <@ba.key>Éthéré</> et effectue sans cesse des attaques chargées. Pendant ce temps, la Gangrénombre ratisseur applique régulièrement un <@ba.key>bouclier</> sur elle-même. La charge de la Gangrénombre bêtaplume peut faire voler ce <@ba.key>bouclier</> en éclats.\n - Lorsque les PV de la Gangrénombre ratisseur diminuent, elle entre en état <@ba.key>Éthéré</>, ce qui met fin à l'état <@ba.key>Éthéré</> de la Gangrénombre bêtaplume. La Gangrénombre ratisseur lance ensuite régulièrement des attaques foudroyantes sur l'opérateur contrôlé (<@ba.key>5</> attaques au maximum). Les DÉG d'attaque foudroyante ne peuvent pas être esquivés. Appliquer une <@ba.key>explosion des Arts</>, une <@ba.phy>Brèche</> ou un <@ba.phy>Broyage</> à la Gangrénombre bêtaplume crée des <@ba.key>orbes de foudre</>. L'opérateur contrôlé peut ramasser un <@ba.key>orbe de foudre</> pour obtenir un bouclier qui bloque les DÉG de <@ba.key>1</> attaque foudroyante.\n - Lorsque les PV de la Gangrénombre bêtaplume sont bas, son état <@ba.key>Éthéré</> prend fin. Les ennemis attaquent alors ensemble.\n\n <@ba.info>- Les ennemis présentent la même résistance contre tous les éléments.</>"
+  },
+  "indie_hard026_s": {
+    "name": "Carnage sauvage de l'ombre : Agonie",
+    "description": "Les griffes tordues des bêtes sauvages ont d'abord surgi des ténèbres. Nous avons ensuite découvert que la lumière impitoyable avait marqué leur nature féroce.",
+    "featureDesc": " - Un ennemi en état <@ba.key>Éthéré</> est immunisé contre les DÉG et ne peut pas être ciblé.\n - Au début du combat, la Gangrénombre bêtaplume entre en état <@ba.key>Éthéré</> et effectue sans cesse des attaques chargées. Pendant ce temps, la Gangrénombre ratisseur applique régulièrement un <@ba.key>bouclier</> sur elle-même. La charge de la Gangrénombre bêtaplume peut faire voler ce <@ba.key>bouclier</> en éclats.\n - Lorsque les PV de la Gangrénombre ratisseur diminuent, elle entre en état <@ba.key>Éthéré</>, ce qui met fin à l'état <@ba.key>Éthéré</> de la Gangrénombre bêtaplume. La Gangrénombre ratisseur lance ensuite régulièrement des attaques foudroyantes sur l'opérateur contrôlé (<@ba.key>7</> attaques au maximum). Les DÉG d'attaque foudroyante ne peuvent pas être esquivés. Appliquer une <@ba.key>explosion des Arts</>, une <@ba.phy>Brèche</> ou un <@ba.phy>Broyage</> à la Gangrénombre bêtaplume crée des <@ba.key>orbes de foudre</>. L'opérateur contrôlé peut ramasser un <@ba.key>orbe de foudre</> pour obtenir un bouclier qui bloque les DÉG de <@ba.key>1</> attaque foudroyante.\n - Lorsque les PV de la Gangrénombre bêtaplume sont bas, son état <@ba.key>Éthéré</> prend fin. Les ennemis attaquent alors ensemble.\n\n <@ba.info>- Impossible d'utiliser les objets tactiques et les consommables.</>\n <@ba.info>- Les ennemis présentent la même résistance contre tous les éléments.</>"
+  },
+  "indie_hard027": {
+    "name": "Arc de l'éclat d'ombre",
+    "description": "La large lame invoque l'élément de rupture pour s'en imprégner. Ainsi, les images fantomatiques de guerre et de carnage continueront de briller sur cette terre.",
+    "featureDesc": " - Le temps de recharge de toutes les compétences de combat des opérateurs est augmenté de 60 s.\n - Au début du combat, tous les opérateurs entrent en état de <@ba.key>Conductivité</> et subissent des <@ba.pulse>DÉG électriques</> continus qui dépendent du nombre de cumuls d'<@ba.pulse>altération électrique</> dont ils sont victimes.\n - Lorsqu'un opérateur en état de <@ba.key>Conductivité</> utilise une compétence de combat, la Gangrénombre capitaine des FSY applique 1 cumul d'<@ba.pulse>altération électrique</> à tous les opérateurs. Lorsque la Gangrénombre capitaine des FSY applique une <@ba.pulse>altération électrique</> aux opérateurs pour la <@ba.key>4e</> fois, le temps de recharge des compétences de combat des opérateurs est réinitialisé, tous les cumuls d'<@ba.pulse>altération électrique</> <@ba.key>sont dissipés</> et une <@ba.pulse>Électrification de niveau 4</> est appliquée à la Gangrénombre capitaine des FSY.\n\n <@ba.info>- Les ennemis présentent la même résistance contre tous les éléments.</>"
+  },
+  "indie_hard027_s": {
+    "name": "Arc de l'éclat d'ombre : Agonie",
+    "description": "La large lame invoque l'élément de rupture pour s'en imprégner. Ainsi, les images fantomatiques de guerre et de carnage continueront de briller sur cette terre.",
+    "featureDesc": " - Le temps de recharge de toutes les compétences de combat des opérateurs est augmenté de 60 s.\n - La Gangrénombre capitaine des FSY applique régulièrement 1 cumul d'<@ba.pulse>altération électrique</> à tous les opérateurs.\n - Au début du combat, tous les opérateurs entrent en état de <@ba.key>Conductivité</> et subissent des <@ba.pulse>DÉG électriques</> continus qui dépendent du nombre de cumuls d'<@ba.pulse>altération électrique</> dont ils sont victimes.\n - Lorsqu'un opérateur en état de <@ba.key>Conductivité</> utilise une compétence de combat, la Gangrénombre capitaine des FSY applique 1 cumul d'<@ba.pulse>altération électrique</> à tous les opérateurs. Lorsque la Gangrénombre capitaine des FSY applique une <@ba.pulse>altération électrique</> aux opérateurs pour la <@ba.key>4e</> fois, le temps de recharge des compétences de combat des opérateurs est réinitialisé, tous les cumuls d'<@ba.pulse>altération électrique</> <@ba.key>se dissipent</> et une <@ba.pulse>Électrification de niveau 4</> est appliquée à la Gangrénombre capitaine des FSY.\n\n <@ba.info>- Impossible d'utiliser les objets tactiques et les consommables.</>\n <@ba.info>- Les ennemis présentent la même résistance contre tous les éléments.</>"
+  },
+  "indie_hard028": {
+    "name": "Rugissement soudain de l'oubli",
+    "description": "« Le temps est écoulé. Que commencent les cycles sans fin de l'oubli. »",
+    "featureDesc": "- <@ba.key>Les opérateurs ne régénèrent plus de PC</>.\n- Au début du combat, les PC et les PC max initiaux des opérateurs passent à 1 000.\n- Les Gangrénombres hyenards et les Gangrénombres avant-gardes des FSY <@ba.key>s'autodétruisent</> après un certain temps, infligeant des DÉG basés sur les PV max à tous les opérateurs.\n- La Gangrénombre lancier des FSY doit être <@ba.key>interrompue plusieurs fois</> pour empêcher le lancement de sa compétence ultime. Les DÉG de cette compétence ultime sont impossibles à esquiver.\n- Si le combat dure trop longtemps, la Gangrénombre lancier des FSY <@ba.key>s'autodétruit</> et élimine tous les opérateurs. \n- Quand les ennemis sont déséquilibrés, leur compte à rebours d'<@ba.key>autodestruction</> se met en pause. \n\n<@ba.info>- Les ennemis présentent la même résistance contre tous les éléments.</>"
+  },
+  "indie_hard028_s": {
+    "name": "Rugissement soudain de l'oubli : Agonie",
+    "description": "« Le temps est écoulé. Que commencent les cycles sans fin de l'oubli. »",
+    "featureDesc": "- <@ba.key>Les opérateurs ne régénèrent plus de PC. Les Coups finaux et les coups fatals ne restaurent plus de PC</>.\n- Au début du combat, les PC et les PC max initiaux des opérateurs passent à 1 000.\n- Les Gangrénombres hyenards et les Gangrénombres avant-gardes des FSY <@ba.key>s'autodétruisent</> après un certain temps, infligeant des DÉG basés sur les PV max à tous les opérateurs.\n- La Gangrénombre lancier des FSY doit être <@ba.key>interrompue plusieurs fois</> pour empêcher le lancement de sa compétence ultime. Les DÉG de cette compétence ultime sont impossibles à esquiver.\n- Si le combat dure trop longtemps, la Gangrénombre lancier des FSY <@ba.key>s'autodétruit</> et élimine tous les opérateurs. \n- Quand les ennemis sont déséquilibrés, leur compte à rebours d'<@ba.key>autodestruction</> se met en pause. \n\n<@ba.info>- Impossible d'utiliser les objets tactiques et les consommables.</>\n<@ba.info>- Les ennemis présentent la même résistance contre tous les éléments.</>"
+  },
+  "indie_hard029": {
+    "name": "Ciblage tri-aggelé",
+    "description": "Les témoins restent silencieux et souffrent. Quand chaque souvenir devient une simple illusion, l'oubli est la seule issue qu'il nous reste.",
+    "featureDesc": " - Les ennemis ne peuvent pas se déplacer, mais disposent d'une portée d'attaque considérablement accrue.\n\n <@ba.info>- Les ennemis présentent la même résistance contre tous les éléments.</>"
+  },
+  "indie_hard029_s": {
+    "name": "Ciblage tri-aggelé : Agonie",
+    "description": "Les témoins restent silencieux et souffrent. Quand chaque souvenir devient une simple illusion, l'oubli est la seule issue qu'il nous reste.",
+    "featureDesc": " - Les ennemis ne peuvent pas se déplacer, mais disposent d'une portée d'attaque considérablement accrue.\n - Lorsqu'un ennemi est vaincu pour la première fois, les autres ennemis bénéficient d'un bonus d'ATQ et d'une vitesse d'ATQ accrue.\n\n <@ba.info>- Impossible d'utiliser les objets tactiques et les consommables.</>\n <@ba.info>- Les ennemis présentent la même résistance contre tous les éléments.</>"
+  }
+}

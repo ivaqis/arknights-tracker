@@ -9,7 +9,13 @@
   export let value = "";
   export let placeholder = "Select option";
   export let variant = "black"; // 'black' | 'white' | 'yellow' | 'gray'
+  export let iconVariant = "banner-mini";
+  export let iconFit = "";
+  export let iconBorder = null;
   export let className = "";
+
+  $: isContain = iconFit ? iconFit === 'contain' : iconVariant === 'monument-icon';
+  $: hasBorder = iconBorder !== null ? iconBorder : iconVariant !== 'monument-icon';
 
   const dispatch = createEventDispatcher();
   let isOpen = false;
@@ -111,12 +117,12 @@
 
     <span class="relative z-10 text-lg truncate pr-4 flex items-center gap-3">
       {#if selectedOption?.iconId}
-         <div class="w-12 h-8 rounded-sm overflow-hidden flex-shrink-0 shadow-sm border border-white/10">
+         <div class="flex-shrink-0 flex items-center justify-center {isContain ? 'w-8 h-10' : 'w-12 h-8 rounded-sm overflow-hidden'} {hasBorder ? 'border border-white/10 shadow-sm' : ''}">
              <Image
-                id="{selectedOption.iconId}.webp"
-                variant="banner-mini" 
+                id={selectedOption.iconId}
+                variant={iconVariant} 
                 size="100%" 
-                className="w-full h-full object-cover"
+                className="w-full h-full {isContain ? 'object-contain' : 'object-cover'}"
                 alt={selectedLabel}
              />
          </div>
@@ -129,7 +135,7 @@
           </span>
         </div>
       {:else}
-        {selectedLabel}
+        <span class="truncate">{selectedLabel}</span>
       {/if}
     </span>
 
@@ -159,12 +165,12 @@
               "
             >
               {#if option.iconId}
-                 <div class="w-10 h-6 rounded-sm overflow-hidden flex-shrink-0 shadow-sm border border-white/10">
+                 <div class="flex-shrink-0 flex items-center justify-center {isContain ? 'w-6 h-7' : 'w-10 h-6 rounded-sm overflow-hidden'} {hasBorder ? 'border border-white/10 shadow-sm' : ''}">
                      <Image
-                        id="{option.iconId}.webp"
-                        variant="banner-mini" 
+                        id={option.iconId}
+                        variant={iconVariant} 
                         size="100%" 
-                        className="w-full h-full object-cover"
+                        className="w-full h-full {isContain ? 'object-contain' : 'object-cover'}"
                         alt={option.label}
                      />
                  </div>
@@ -177,7 +183,7 @@
                   </span>
                 </div>
               {:else}
-                <span>{option.label}</span>
+                <span class="truncate">{option.label}</span>
               {/if}
             </button>
           </li>

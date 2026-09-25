@@ -1,30 +1,28 @@
 <script>
-    import { page } from "$app/stores";
-    import { t } from "$lib/i18n";
-    import { pullData } from "$lib/stores/pulls";
-    import { bannerTypes } from "$lib/data/bannerTypes";
-    import { characters } from "$lib/data/characters";
-    import { accountStore } from "$lib/stores/accounts";
-    import { weapons } from "$lib/data/weapons";
-    import { banners } from "$lib/data/banners";
     import { goto } from "$app/navigation";
-    import { currencies } from "$lib/data/items/currencies";
-    import { isDarkMode } from "$lib/stores/theme";
-    import { onMount } from "svelte";
-    import { getWeaponCategory } from "$lib/utils/importUtils";
-    import { currentUiLocale } from "$lib/stores/locale";
-
+    import { page } from "$app/stores";
     import Button from "$lib/components/Button.svelte";
     import Icon from "$lib/components/Icon.svelte";
-    import Tooltip from "$lib/components/Tooltip.svelte";
-    import BannerModal from "$lib/components/modals/BannerModal.svelte";
-    import AnalyticsCharts from "$lib/components/records/AnalyticsCharts.svelte";
     import Image from "$lib/components/Image.svelte";
+    import BannerModal from "$lib/components/modals/BannerModal.svelte";
     import MultiSelect from "$lib/components/MultiSelect.svelte";
+    import AnalyticsCharts from "$lib/components/records/AnalyticsCharts.svelte";
+    import Tooltip from "$lib/components/Tooltip.svelte";
+    import { banners } from "$lib/data/banners";
+    import { bannerTypes } from "$lib/data/bannerTypes";
+    import { characters } from "$lib/data/characters";
+    import { weapons } from "$lib/data/weapons";
+    import { t } from "$lib/i18n";
+    import { accountStore } from "$lib/stores/accounts";
+    import { currentUiLocale, normalizeLocale } from "$lib/stores/locale";
+    import { pullData } from "$lib/stores/pulls";
+    import { isDarkMode } from "$lib/stores/theme";
+    import { getWeaponCategory } from "$lib/utils/importUtils";
+    import { onMount } from "svelte";
 
     $: bannerType = $page.params.type;
     let selectedBanner = null;
-    $: isAllWeaponCategory = bannerType === "weap-special" || bannerType === "weap-standard";
+    $: isAllWeaponCategory = bannerType === "weap-special" || bannerType === "weap-standard" || bannerType === "weapon_rerun" || bannerType === "weap-rerun";
     $: bannerData = (() => {
         if (isAllWeaponCategory) {
             const subBannerIds = Object.keys($pullData).filter(
@@ -172,21 +170,17 @@
 
     onMount(() => {});
     function getMileageLabel(label) {
-        if (label === "selector_6") return $t("stats.selector") || "Selector";
-        if (label === "guaranteed_6")
-            return $t("stats.guaranteed") || "Guaranteed";
-        if (label === "bonus_copy_6")
-            return $t("stats.bonus_copy") || "Bonus Copy";
-        if (label === "arms_offering")
-            return $t("stats.arms_offering") || "Arms Offering";
-        if (label === "featured_guarantee")
-            return $t("stats.featured_guarantee") || "Featured Wep.";
+        if (label === "selector_6") return $t("stats.selector");
+        if (label === "guaranteed_6") return $t("stats.guaranteed");
+        if (label === "bonus_copy_6") return $t("stats.bonus_copy");
+        if (label === "arms_offering") return $t("stats.arms_offering");
+        if (label === "featured_guarantee") return $t("stats.featured_guarantee");
         return label;
     }
 
     $: isWeaponType =
         bannerType.includes("weap") || bannerType.includes("wepon");
-    $: hasRateUp = bannerType === "special" || isWeaponType;
+    $: hasRateUp = bannerType === "special" || bannerType === "rerun" || isWeaponType;
     $: maxPity6 = isNewPlayer ? 40 : 80;
     $: statsBannerStub = {
         id: "summary",
@@ -207,7 +201,7 @@
     $: billableCount = tableData
         ? tableData.filter((p) => !p.isFree).length
         : 0;
-    $: spent = (billableCount * 500).toLocaleString("ru-RU");
+    $: spent = (billableCount * 500).toLocaleString(normalizeLocale($currentUiLocale));
     $: currentPity6 = stats.pity6 || 0;
     $: currentPity5 = stats.pity5 || 0;
     $: guarantee6 = stats.guarantee120 || 0;
@@ -243,7 +237,11 @@
 
         const rawId = pull.rawPoolId || pull.bannerId;
         if (rawId) {
-            const genericIds = ["special", "standard", "weapon", "weap-special", "weap-standard", "new-player", "joint", "other", "unknown"];
+            const genericIds = [
+                "special", "standard", "weapon", "weap-special", "weap-standard", "weap-rerun", "weapon_rerun", "rerun", "new-player", "joint", "other", "unknown",
+                "e_charactergachapooltype_rerun", "e_charactergachapooltype_special", "e_charactergachapooltype_standard", "e_charactergachapooltype_joint", "e_charactergachapooltype_beginner",
+                "e_weapongachapooltype_rerun", "e_weapongachapooltype_special", "e_weapongachapooltype_standard"
+            ];
             if (!genericIds.includes(rawId.toLowerCase())) {
                 const exactMatch = banners.find((b) => b.id === rawId);
                 if (exactMatch) return exactMatch;
@@ -261,21 +259,30 @@
         const isStandardPage =
             (pType.includes("standard") || pType.includes("constant")) &&
             !isNewPlayerPage;
+        const isRerunPage = pType.includes("rerun");
+        const isJointPage = pType.includes("joint");
 
         const candidates = banners.filter((b) => {
             const bId = (b.id || "").toLowerCase();
             const bType = (b.type || "").toLowerCase();
             const isBannerWeapon =
                 bType === "weapon" ||
+                bType === "weapon_rerun" ||
+                bType === "weap-rerun" ||
                 bId.includes("weap") ||
-                bId.includes("wepon");
+                bId.includes("wepon") ||
+                bId.includes("wpn");
 
             if (isWeaponPage !== isBannerWeapon) return false;
 
-            const isBannerNewPlayer =
-                bType === "new-player" || bId.includes("new_player");
-            if (isNewPlayerPage) return isBannerNewPlayer;
-            if (isBannerNewPlayer) return false;
+            if (isNewPlayerPage) return bType === "new-player" || bId.includes("new_player");
+            if (bType === "new-player" || bId.includes("new_player")) return false;
+
+            if (isJointPage) return bType === "joint" || bId.includes("joint");
+            if (bType === "joint" || bId.includes("joint")) return false;
+
+            if (isRerunPage) return bType === "rerun" || bType === "weapon_rerun" || bType === "weap-rerun" || bId.includes("rerun");
+            if (bType === "rerun" || bType === "weapon_rerun" || bType === "weap-rerun" || bId.includes("rerun")) return false;
 
             const isBannerStandard =
                 bType === "standard" ||
@@ -340,6 +347,10 @@
                     parseServerDate(datesA.startStr)
                 );
             });
+            return matches[0];
+        }
+
+        if (matches.length === 1) {
             return matches[0];
         }
 
@@ -500,35 +511,31 @@
             }
 
             if (p.rarity >= 5) {
-                if (bannerType === "standard" || bannerType === "new-player") {
-                    p.status = "normal";
-                } else if (!banner) {
-                    p.status = "won";
-                } else {
-                    const hasFeatured5 =
-                        banner.featured5 && banner.featured5.length > 0;
-
-                    if (p.rarity === 5 && !hasFeatured5) {
-                        p.status = "normal";
+                if (bannerType !== "standard" && bannerType !== "new-player") {
+                    if (!banner) {
+                        p.status = "won";
                     } else {
-                        const featured = isFeatured(p.name, banner, p.rarity);
+                        const hasFeatured5 =
+                            banner.featured5 && banner.featured5.length > 0;
 
-                        if (featured) {
-                            if (isHardPityTriggered && p.rarity === 6) {
-                                p.status = "guaranteed";
+                        if (p.rarity !== 5 || hasFeatured5) {
+                            const featured = isFeatured(p.name, banner, p.rarity);
+
+                            if (featured) {
+                                if (isHardPityTriggered && p.rarity === 6) {
+                                    p.status = "guaranteed";
+                                } else {
+                                    p.status = "won";
+                                }
+                                if (p.rarity === 6) {
+                                    rateUpCounters[bid] = 0;
+                                }
                             } else {
-                                p.status = "won";
+                                p.status = "lost";
                             }
-                            if (p.rarity === 6) {
-                                rateUpCounters[bid] = 0;
-                            }
-                        } else {
-                            p.status = "lost";
                         }
                     }
                 }
-            } else {
-                p.status = "normal";
             }
 
             return p;
@@ -599,8 +606,7 @@
         if (!dateStr) return "";
         const parsed = new Date(dateStr.replace(" ", "T"));
         if (isNaN(parsed.getTime())) return "";
-        let loc = locale || "en";
-        if (loc === "my") loc = "ms-MY";
+        let loc = normalizeLocale(locale);
         try {
             return new Intl.DateTimeFormat(loc, {
                 day: "2-digit",
@@ -637,7 +643,7 @@
             .map(b => {
                 const label = $t(`banners.${b.id}`) !== `banners.${b.id}` ? $t(`banners.${b.id}`) : b.name;
                 const startFormatted = formatBannerDate(b.startTime, $currentUiLocale);
-                const endFormatted = b.endTime ? formatBannerDate(b.endTime, $currentUiLocale) : ($t("permanent") || "Permanent");
+                const endFormatted = b.endTime ? formatBannerDate(b.endTime, $currentUiLocale) : $t("permanent");
                 const subLabel = startFormatted && endFormatted ? `${startFormatted} - ${endFormatted}` : "";
                 return {
                     value: b.id,
@@ -650,7 +656,7 @@
         if (hasOther) {
             opts.push({
                 value: "other",
-                label: $t("systemNames.other") || "Other",
+                label: $t("systemNames.other"),
                 subLabel: "",
                 iconId: null
             });
@@ -693,8 +699,7 @@
 
     function formatDateShort(time, locale) {
         if (!time) return "";
-        let loc = locale || "ru";
-        if (loc === "my") loc = "ms-MY";
+        let loc = normalizeLocale(locale);
         return new Date(time).toLocaleString(loc, {
             day: "2-digit",
             month: "2-digit",
@@ -706,8 +711,7 @@
 
     function formatDateFull(time, locale) {
         if (!time) return "";
-        let loc = locale || "ru";
-        if (loc === "my") loc = "ms-MY";
+        let loc = normalizeLocale(locale);
         return new Date(time).toLocaleString(loc, {
             day: "2-digit",
             month: "2-digit",
@@ -1195,7 +1199,7 @@
                                             >
                                                 <span>{row.pity}</span>
 
-                                                {#if row.rarity >= 5 && row.status && row.status !== "normal" && !row.isFree}
+                                                {#if row.rarity >= 5 && row.status && !row.isFree}
                                                     {#if row.rarity === 6 || !isWeapon}
                                                         {#if row.status === "won"}
                                                             {#if isWeaponType || (!bannerType.includes("standard") && !bannerType.includes("new"))}

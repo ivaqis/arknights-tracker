@@ -1,0 +1,443 @@
+import { browser } from "$app/environment";
+import { Account } from "$lib/classes/auth/accounts/Account";
+import type { AccountCreateParams } from "$lib/classes/auth/accounts/AccountCreateParams";
+import { AccountExistError } from "$lib/classes/auth/accounts/AccountExistError";
+import type { AccountUniqueConstraint } from "$lib/classes/auth/accounts/AccountUniqueConstraint";
+import type { AccountUpdates } from "$lib/classes/auth/accounts/AccountUpdates";
+import { get, type Readable, writable, type Writable } from "svelte/store";
+
+export class AccountStore {
+    public static readonly ACCOUNTS_KEY: string = "ark_tracker_accounts_meta";
+    public static readonly SELECTED_ID_KEY: string = "ark_tracker_selected_account_id";
+    public static readonly DEFAULT_NAME_REGEX: RegExp = /^Account\s+(\d+)$/;
+
+    private readonly _accounts: Writable<Account[]>;
+    private readonly _selectedId: Writable<string>;
+    private readonly _currentAccount: Writable<Account>;
+
+    private readonly _updateCallback: () => void = () => this.forceUpdateAccounts();
+    private readonly _isExistCallback = (value: AccountUniqueConstraint) => this.isExist(value);
+
+    public constructor() {
+        const initialAccounts: Account[] = this.getInitialAccounts();
+        const initialSelectedId: string = this.getInitialSelectedAccountId(initialAccounts);
+        const initialCurrentAccount: Account = initialAccounts.find(account => account.id === initialSelectedId) || initialAccounts[0];
+
+        const rawAccountsStore = writable<Account[]>(initialAccounts);
+        const normalizeAccount = (item: any): Account => {
+            if (item instanceof Account) {
+                return item;
+            }
+            return Account.createFromData(this._updateCallback, this._isExistCallback, item);
+        };
+        const normalizeAccounts = (items: any[]): Account[] => {
+            if (!Array.isArray(items) || items.length === 0) {
+                return [Account.createDefault(this._updateCallback, this._isExistCallback)];
+            }
+            return items.map(normalizeAccount);
+        };
+
+        this._accounts = {
+            subscribe: rawAccountsStore.subscribe,
+            set: (value: any[]) => {
+                rawAccountsStore.set(normalizeAccounts(value));
+            },
+            update: (updater: (value: Account[]) => any[]) => {
+                rawAccountsStore.update(current => normalizeAccounts(updater(current)));
+            }
+        };
+
+        this._selectedId = writable(initialSelectedId);
+        this._currentAccount = writable(initialCurrentAccount);
+
+        this.initializeStores();
+    }
+
+    private static generateId(): string {
+        if (browser && self.crypto && self.crypto.randomUUID) {
+            return self.crypto.randomUUID();
+        }
+
+        return Date.now().toString(36) + Math.random().toString(36).substr(2);
+    }
+
+    public get accounts(): Writable<Account[]> {
+        return this._accounts;
+    }
+
+    public get selectedId(): Readable<string> {
+        return this._selectedId;
+    }
+
+    public get currentAccount(): Readable<Account> {
+        return this._currentAccount;
+    }
+
+    public findAccount(id: string): Account | null {
+        const list = get(this._accounts);
+
+        return list.find(account => account.id === id) ?? null;
+    }
+
+    public findAccountByServerUid(serverUid: string): Account | null {
+        const list = get(this._accounts);
+
+        return list.find(account => account.serverUid === serverUid) ?? null;
+    }
+
+    public findAccountByStoredPublicServerUid(publicServerUid: string): Account | null {
+        const list = get(this._accounts);
+
+        return list.find(account => account.publicServerUid === publicServerUid) ?? null;
+    }
+
+    public async findAccountByPublicServerUid(publicServerUid: string): Promise<Account | null> {
+        const list = get(this._accounts);
+
+        let result: Account | null = null;
+
+        for (const account of list) {
+            const publicId = await account.getPublicServerUid();
+
+            if (publicId === publicServerUid) {
+                result = account;
+
+                break;
+            }
+        }
+
+        return result;
+    }
+
+    public selectAccount(id: string): Account | null {
+        const account = this.findAccount(id);
+
+        if (!account) {
+            return null;
+        }
+
+        this._selectedId.set(id);
+
+        return account;
+    }
+
+    /**
+     * @param params
+     * @returns Returns new account
+     * @throws {AccountExistError} if serverUid already exist
+     */
+    public createAccount(params: AccountCreateParams): Account {
+        const exited = params.uid ? this.findAccountByServerUid(params.uid) : null;
+
+        if (exited) {
+            throw new AccountExistError(`serverUid '${exited.serverUid}' already exists`);
+        }
+
+        const id = AccountStore.generateId();
+        const name = params.name ?? this.generateDefaultName();
+        const serverUid = params.uid ?? null;
+        const serverId = params.serverId ?? null;
+        const publicServerUid = params.publicServerUid ?? null;
+
+        const account = new Account(
+            this._updateCallback,
+            this._isExistCallback,
+            id,
+            name,
+            serverUid,
+            serverId,
+            publicServerUid
+        );
+
+        const list = get(this._accounts);
+        list.push(account);
+
+        this.forceUpdateAccounts();
+
+        return account;
+    }
+
+    public createEmptyAccount(): Account {
+        const account = this.createAccount({
+            serverId: "3"
+        });
+
+        this.selectAccount(account.id);
+
+        return account;
+    }
+
+    public updateAccount(id: string, updates: AccountUpdates): Account | null {
+        let account = this.findAccount(id);
+
+        if (account) {
+            account.update(updates);
+        }
+
+        return account;
+    }
+
+    /**
+     * @param id
+     * @returns {true} if account was deleted
+     * @returns {false} if account does not exist, or it's the only existing account
+     */
+    public deleteAccount(id: string): boolean {
+        const list = get(this._accounts);
+
+        if (list.length < 2) {
+            return false;
+        }
+
+        const account = this.findAccount(id);
+
+        if (!account) {
+            return false;
+        }
+
+        const currentId = get(this._selectedId);
+
+        if (currentId === account.id) {
+            const newAccount = list.find(account => account.id !== currentId)!;
+
+            this.selectAccount(newAccount.id);
+        }
+
+        const index = list.findIndex(account => account.id === id);
+
+        list.splice(index, 1);
+
+        this.forceUpdateAccounts();
+
+        return true;
+    }
+
+    public addAccount(serverUid: string, name: string | null, serverId: string | null): Account {
+        serverId ??= "3";
+
+        const existing = this.findAccountByServerUid(serverUid);
+
+        if (existing) {
+            existing.serverId = serverId;
+            this.selectAccount(existing.id);
+
+            return existing;
+        }
+
+        const current = get(this._currentAccount);
+
+        if (!current.serverUid) {
+            current.update({
+                uid: serverUid,
+                serverId: serverId,
+            });
+
+            return current;
+        }
+
+        return this.createAccount({
+            uid: serverUid,
+            serverId: serverId,
+            name: name ?? undefined
+        });
+    }
+
+    public renameAccount(id: string, name: string): Account | null {
+        const account = this.findAccount(id);
+
+        if (!account) {
+            return null;
+        }
+
+        account.name = name;
+
+        return account;
+    }
+
+    public clearCurrentData() {
+        if (!browser) {
+            return;
+        }
+
+        const current = get(this._currentAccount);
+
+        localStorage.removeItem(`ark_tracker_data_${current.id}`);
+
+        current.update({
+            serverId: "3",
+            uid: null
+        });
+
+        window.dispatchEvent(new CustomEvent("ark_tracker_clear_data", { detail: { id: current.id } }));
+        console.log("[Accounts] Account fully cleared.");
+    }
+
+    private getInitialAccounts(): Account[] {
+        if (!browser) {
+            return [Account.createDefault(this._updateCallback, this._isExistCallback)];
+        }
+
+        let stored = localStorage.getItem(AccountStore.ACCOUNTS_KEY);
+
+        if (!stored) {
+            const legacy = localStorage.getItem("ark_tracker_accounts");
+            if (legacy) {
+                try {
+                    const parsed = JSON.parse(legacy);
+                    if (parsed && Array.isArray(parsed.accounts)) {
+                        stored = JSON.stringify(parsed.accounts);
+                    }
+                } catch (e) {
+                }
+            }
+        }
+
+        if (!stored) {
+            return [Account.createDefault(this._updateCallback, this._isExistCallback)];
+        }
+
+        try {
+            const data = JSON.parse(stored) as any[];
+
+            const list = data.map(item => Account.createFromData(this._updateCallback, this._isExistCallback, item));
+            return list.length > 0 ? list : [Account.createDefault(this._updateCallback, this._isExistCallback)];
+        } catch (e) {
+            if (e instanceof Error) {
+                console.error(e.stack ?? e.name);
+            }
+            else {
+                console.error(e);
+            }
+
+            return [Account.createDefault(this._updateCallback, this._isExistCallback)];
+        }
+    }
+
+    private getInitialSelectedAccountId(accounts: Account[]): string {
+        if (!browser) {
+            return Account.DEFAULT_ID;
+        }
+
+        let stored = localStorage.getItem(AccountStore.SELECTED_ID_KEY);
+
+        if (!stored) {
+            const legacy = localStorage.getItem("ark_tracker_accounts");
+            if (legacy) {
+                try {
+                    const parsed = JSON.parse(legacy);
+                    if (parsed && (parsed.selectedId || parsed._selectedId)) {
+                        stored = parsed.selectedId || parsed._selectedId;
+                    }
+                } catch (e) {
+                }
+            }
+        }
+
+        if (!stored) {
+            return accounts[0]?.id || Account.DEFAULT_ID;
+        }
+
+        if (accounts.some(account => account.id === stored)) {
+            return stored;
+        }
+
+        return accounts[0]?.id || Account.DEFAULT_ID;
+    }
+
+    private forceUpdateAccounts() {
+        this._accounts.update(list => list);
+    }
+
+    private generateDefaultName(): string {
+        const list = get(this._accounts);
+
+        const max = list.reduce(
+            (max, account) => {
+                const match = account.name.match(AccountStore.DEFAULT_NAME_REGEX);
+
+                if (!match) {
+                    return max;
+                }
+
+                const num = parseInt(match[1], 10);
+
+                return Math.max(num, max);
+            },
+            1
+        );
+
+        return `Account ${max + 1}`;
+    }
+
+    private isExist(value: AccountUniqueConstraint): boolean {
+        if (value.id) {
+            const existing = this.findAccount(value.id);
+
+            if (existing) {
+                return true;
+            }
+        }
+
+        if (value.serverUid) {
+            const existing = this.findAccountByServerUid(value.serverUid);
+
+            if (existing) {
+                return true;
+            }
+        }
+
+        if (value.publicServerUid) {
+            const existing = this.findAccountByStoredPublicServerUid(value.publicServerUid);
+
+            if (existing) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    private initializeStores() {
+        if (!browser) {
+            return;
+        }
+
+        const updateSelectedAccount = (accounts: Account[], selectedId: string) => {
+            this._currentAccount.update(current => {
+                if (current && current.id === selectedId) {
+                    return current;
+                }
+
+                const selected = accounts.find(account => account.id === selectedId) || accounts[0];
+
+                if (!selected) {
+                    return Account.createDefault(this._updateCallback, this._isExistCallback);
+                }
+
+                return selected;
+            });
+        };
+
+        this._accounts.subscribe(accounts => {
+            updateSelectedAccount(accounts, get(this._selectedId));
+
+            const json = Account.toJsonList(accounts);
+            localStorage.setItem(AccountStore.ACCOUNTS_KEY, json);
+            localStorage.setItem("ark_tracker_accounts", JSON.stringify({
+                accounts: accounts.map(a => a.toData()),
+                selectedId: get(this._selectedId)
+            }));
+        });
+
+        this._selectedId.subscribe(accountId => {
+            const accounts = get(this._accounts);
+            updateSelectedAccount(accounts, accountId);
+
+            localStorage.setItem(AccountStore.SELECTED_ID_KEY, accountId);
+            localStorage.setItem("ark_tracker_accounts", JSON.stringify({
+                accounts: accounts.map(a => a.toData()),
+                selectedId: accountId
+            }));
+        });
+    }
+}

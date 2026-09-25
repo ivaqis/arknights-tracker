@@ -1,0 +1,87 @@
+import { authenticator, avatarUploader, database } from "@/serviceInstances.js";
+import { ResponseBody } from "@api/contracts/ResponseBody.js";
+import { DeleteUserProfileQuery } from "@api/contracts/userProfile/DeleteUserProfileQuery.js";
+import { DeleteUserProfileResponse } from "@api/contracts/userProfile/DeleteUserProfileResponse.js";
+import { Controller } from "@api/controllers/Controller.js";
+import { Database } from "@database/Database.js";
+import { Authenticator } from "@services/auth/Authenticator.js";
+import { AvatarUploader } from "@services/avatarUploader/AvatarUploader.js";
+import e from "express";
+
+export class DeleteUserProfile extends Controller<
+    {},
+    DeleteUserProfileResponse,
+    {},
+    DeleteUserProfileQuery
+> {
+    public readonly name = "DeleteUserProfile";
+
+    private readonly _database: Database = database;
+    private readonly _auth: Authenticator = authenticator;
+    private readonly _uploader: AvatarUploader = avatarUploader;
+
+    private readonly _publicUid: string;
+
+    private constructor(req: e.Request<{}, ResponseBody<DeleteUserProfileResponse>, {}, DeleteUserProfileQuery>, res: e.Response<ResponseBody<DeleteUserProfileResponse>>) {
+        super(req, res);
+
+        this._publicUid = req.query.uid;
+    }
+
+    public static async delete(req: e.Request<{}, ResponseBody<DeleteUserProfileResponse>, {}, DeleteUserProfileQuery>, res: e.Response<ResponseBody<DeleteUserProfileResponse>>) {
+        const controller = new DeleteUserProfile(req, res);
+
+        await controller.safeExecute();
+    }
+
+    private get code(): number | undefined {
+        return this.data?.code;
+    }
+
+    private set code(code: number) {
+        this.data = {
+            code
+        }
+    }
+
+    protected async execute(): Promise<void> {
+        const cred = Authenticator.getAuthCredentials(this.req)!;
+        const authData = await this._auth.authByFirebase(cred.cred);
+
+        if (!authData) {
+            this.status = 401;
+            this.message = "Unauthorized";
+
+            return;
+        }
+
+        const firebaseUid = authData.firebaseUid;
+
+        const profile = await this._database.users.findUserByPublicUid(this._publicUid);
+
+        if (!profile) {
+            this.status = 404;
+            this.message = "Profile not found";
+            this.code = 2;
+
+            return;
+        }
+
+        if (profile.firebaseUid.initValue !== firebaseUid) {
+            this.status = 403;
+            this.message = "No access";
+            this.code = 3;
+
+            return;
+        }
+
+        if (profile.avatarId.initValue) {
+            await this._uploader.deleteAvatar(profile.avatarId.initValue);
+        }
+
+        await this._database.deleteUser(profile.uid);
+
+        this.status = 200;
+        this.code = 0;
+    }
+}

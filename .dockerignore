@@ -1,2 +1,16 @@
-*.db
-*.db-journal
+node_modules
+.git
+.github
+.env
+.env.*
+*.log
+.vscode
+.idea
+
+# cache SvelteKit / Vite
+build
+.svelte-kit
+dist
+.DS_Store
+*.tsbuildinfo
+.npm

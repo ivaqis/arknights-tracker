@@ -239,6 +239,7 @@ export function getDefaultItemSortParams() {
                 "pump",
                 "crafter",
                 "power",
+                "vaporizer",
                 "soil",
                 "battle",
                 "sanity",

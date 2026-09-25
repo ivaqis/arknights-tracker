@@ -1,6 +1,6 @@
-import {Building} from "$lib/classes/buildings/Building.js";
-import {powerStations} from "$lib/data/buildings/powerStations.js";
-import {fuel} from "$lib/data/items/fuel.js";
+import { Building } from "$lib/classes/buildings/Building.js";
+import { powerStations } from "$lib/data/buildings/powerStations";
+import { fuel } from "$lib/data/items/fuel";
 
 export class PowerStation extends Building {
     _powerStationObj;

@@ -2,6 +2,7 @@
     import { t } from "$lib/i18n.js";
     import { equipment } from "$lib/data/items/equipment.js";
     import { getRarityColor } from "$lib/utils/colorUtils.js";
+    import { getEquipTier } from "$lib/utils/profileUtils.js";
 
     import Image from "$lib/components/Image.svelte";
     import PotentialIcon from "$lib/components/operators/PotentialIcon.svelte";
@@ -15,6 +16,7 @@
     export let getEquipIcon;
     export let getStaticEquipId = null;
     export let equipmentNames;
+    export let charHref = null;
 
     $: isEmpty = !char || Object.keys(char).length === 0;
     $: opData = !isEmpty ? getOperatorData(char) : null;
@@ -23,11 +25,11 @@
 {#if isEmpty}
     <div class="flex flex-col gap-2 border border-dashed border-gray-200/35 bg-gray-200/35 dark:bg-black/20 rounded-[4px] min-w-0 w-[84px] max-w-[84px] h-[307px] shrink-0 justify-center items-center text-white/20 select-none hover:border-white/30 hover:text-white/40 transition-all duration-300">
         <Icon name="noData" class="shrink-0 w-4 h-4" />
-        <span class="text-[10px] font-sans text-gray-400">{$t("profile.empty_slot") || "Empty"}</span>
+        <span class="text-[10px] font-sans text-gray-400">{$t("profile.empty_slot")}</span>
     </div>
 {:else}
     <div class="flex flex-col border border-white/10 rounded-[4px] min-w-0 w-[84px] max-w-[84px] shrink-0 shadow-md relative">
-        <a href="/operators/{opData.id}" class="relative w-full h-[190px] bg-white/3 overflow-hidden shrink-0 block group cursor-pointer">
+        <a href={charHref || `/operators/${opData.id}`} class="relative w-full h-[190px] bg-white/3 overflow-hidden shrink-0 block group cursor-pointer">
             <div class="w-full h-full transition-transform duration-300 group-hover:scale-105">
                 <Image id={opData.id} variant="operator-preview" className="w-full h-full object-cover" />
             </div>
@@ -89,7 +91,7 @@
                 {@const equip = char.equips?.[eqKey]}
                 {#if equip}
                     {@const staticId = (equip.equipData && getStaticEquipId) ? getStaticEquipId(equip.equipData) : (equip.id || "")}
-                    {@const tier = Math.max(0, (equip.enhanceStatus || 1) - 1)}
+                    {@const tier = getEquipTier(equip, equipment[staticId])}
                     <Tooltip text={equipmentNames[staticId]?.name || equip.equipData?.name || staticId}>
                         <a href="/equipment/{staticId}" class="relative flex items-center justify-end w-[38px] h-[28px] py-0.5 pl-0.5 min-w-0 transition-transform duration-200 hover:scale-110 hover:z-20 cursor-pointer block"
                            style="border: 1px solid transparent; background: linear-gradient(to right, #101010, #1A4558) padding-box, linear-gradient(to right, #3D3F3A, #194457) border-box;">

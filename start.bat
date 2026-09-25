@@ -19,8 +19,10 @@ if %errorlevel% neq 0 (
 )
 
 echo [1/3] Installing/Checking modules...
-cd arknights-backend
+cd goyfield-backend
 call npm install --quiet
+call npm run prisma:v2:generate
+call npm run prisma:v2:migrate >nul 2>&1 || echo [INFO] Database not configured or unreachable, skipped migration.
 cd ../arknights-tracker
 call npm install --quiet
 cd ..
@@ -28,7 +30,7 @@ cd ..
 echo.
 echo [2/3] Starting servers...
 
-start /b cmd /c "cd arknights-backend && node server.js"
+start /b cmd /c "cd goyfield-backend && npm run start:local"
 
 cd arknights-tracker
 echo.

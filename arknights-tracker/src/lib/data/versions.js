@@ -36,8 +36,8 @@ export const changelogData = [
     },
     {
         version: "1.5",
-        characters: ["typhoeus"],
-        weapons: ["umbraOfFrigidEventide", "sufferingsEnd"],
+        characters: ["typhoeus", "purrchena"],
+        weapons: ["umbraOfFrigidEventide", "sufferingsEnd", "dessertMoment"],
         equipment: ["item_equip_t4_suit_burst01_body_02", "item_equip_t4_suit_burst01_body_03", "item_equip_t4_suit_burst01_hand_02", "item_equip_t4_suit_burst01_edc_03", "item_equip_t4_parts_wuling00_body_04", "item_equip_t4_parts_wuling00_body_05", "item_equip_t4_parts_wuling00_hand_04", "item_equip_t4_parts_wuling00_hand_05", "item_equip_t4_parts_wuling00_edc_04", "item_equip_t4_parts_wuling00_edc_05", "item_equip_t4_suit_usp02_edc_05", "item_equip_t4_suit_usp02_edc_06", "item_equip_t4_suit_spellburst_body_01", "item_equip_t4_suit_spellburst_hand_01", "item_equip_t4_suit_spellburst_edc_01"],
         enemies: ["eny_0127_bigents", "eny_0128_babyents", "eny_0129_slwood"],
         startTime: "2026-09-01 22:00:00",

@@ -1,6 +1,6 @@
-import {Building} from "$lib/classes/buildings/Building.js";
-import {miners} from "$lib/data/buildings/miners.js";
-import {MiningFormula} from "$lib/classes/crafts/MiningFormula.js";
+import { Building } from "$lib/classes/buildings/Building.js";
+import { MiningFormula } from "$lib/classes/crafts/MiningFormula.js";
+import { miners } from "$lib/data/buildings/miners";
 
 export class Miner extends Building {
     _minerObj;

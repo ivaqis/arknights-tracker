@@ -1,14 +1,13 @@
 <script>
-    import { t } from "$lib/i18n.js";
-    import { onMount, onDestroy, tick } from "svelte";
     import { browser } from "$app/environment";
-    import { rawEvents } from "$lib/data/timeline.js";
-    import { banners } from "$lib/data/banners.js";
-    import { currentLocale, currentUiLocale } from "$lib/stores/locale.js";
-
     import Icon from "$lib/components/Icon.svelte";
-    import BannerModal from "$lib/components/modals/BannerModal.svelte";
     import Image from "$lib/components/Image.svelte";
+    import BannerModal from "$lib/components/modals/BannerModal.svelte";
+    import { banners } from "$lib/data/banners.js";
+    import { rawEvents } from "$lib/data/timeline";
+    import { t } from "$lib/i18n.js";
+    import { currentUiLocale, normalizeLocale } from "$lib/stores/locale.js";
+    import { onDestroy, onMount } from "svelte";
 
     export let lastVersion = null;
     export let currentVersion = null;
@@ -92,8 +91,12 @@
 
             const isWeap =
                 item.originalType === "weapon" ||
+                item.originalType === "weapon_rerun" ||
+                item.originalType === "weap-rerun" ||
                 item.type === "weapon" ||
-                (item.id && item.id.includes("weap"));
+                item.type === "weapon_rerun" ||
+                item.type === "weap-rerun" ||
+                (item.id && (item.id.includes("weap") || item.id.includes("wpn")));
             const allowedVersions = isWeap
                 ? extendedVersionsForWeapons
                 : activeVersions;
@@ -601,9 +604,12 @@
             type === "weapon" ||
             type === "weap-special" ||
             type === "weap-standard" ||
+            type === "weap-rerun" ||
             origType === "weapon" ||
             origType === "weap-special" ||
             origType === "weap-standard" ||
+            origType === "weap-rerun" ||
+            (event.id && (event.id.includes("weap") || event.id.includes("wpn"))) ||
             event.isWeapon === true
         ) {
             return {
@@ -619,11 +625,16 @@
             type === "special" ||
             type === "new-player" ||
             type === "headhunting" ||
+            type === "rerun" ||
+            type === "joint" ||
             origType === "standard" ||
             origType === "special" ||
             origType === "new-player" ||
             origType === "banner" ||
-            origType === "headhunting"
+            origType === "headhunting" ||
+            origType === "rerun" ||
+            origType === "joint" ||
+            event.featured6
         ) {
             return {
                 icon: "headhunting",
@@ -856,7 +867,7 @@
                                                     {event.realStartTime.getDate()}
                                                     {$t(`months_gen.${event.realStartTime.toLocaleString("en-US", { month: "long" }).toLowerCase()}`)} - ∞
                                                 {:else}
-                                                    {event.realStartTime.toLocaleDateString($currentUiLocale === 'my' ? 'ms-MY' : ($currentUiLocale || 'en-US'), { day: '2-digit', month: '2-digit' })} - ∞
+                                                    {event.realStartTime.toLocaleDateString(normalizeLocale($currentUiLocale), { day: '2-digit', month: '2-digit' })} - ∞
                                                 {/if}
                                             {:else}
                                                 {#if !isShortEvent(event)}
@@ -865,8 +876,8 @@
                                                     {event.realEndTime.getDate()}
                                                     {$t(`months_gen.${event.realEndTime.toLocaleString("en-US", { month: "long" }).toLowerCase()}`)}
                                                 {:else}
-                                                    {event.realStartTime.toLocaleDateString($currentUiLocale === 'my' ? 'ms-MY' : ($currentUiLocale || 'en-US'), { day: '2-digit', month: '2-digit' })} - 
-                                                    {event.realEndTime.toLocaleDateString($currentUiLocale === 'my' ? 'ms-MY' : ($currentUiLocale || 'en-US'), { day: '2-digit', month: '2-digit' })}
+                                                    {event.realStartTime.toLocaleDateString(normalizeLocale($currentUiLocale), { day: '2-digit', month: '2-digit' })} - 
+                                                    {event.realEndTime.toLocaleDateString(normalizeLocale($currentUiLocale), { day: '2-digit', month: '2-digit' })}
                                                 {/if}
                                             {/if}
                                         </span>

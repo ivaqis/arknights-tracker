@@ -1,0 +1,502 @@
+{
+  "indie_battletower001": {
+    "name": "Silber-Wasserschneider: Normal",
+    "description": "Ich sah einen schmalen Lichtstreif und die aufblitzende Klinge, die durch die strömenden Fluten fuhr, doch sie vermochte es nicht, ihre kalte, herzlose Bosheit zu durchtrennen. Ihr Griff befleckte dein Schwert, und das nachhallende Echo hüllte deine Gestalt ein.",
+    "featureDesc": " <@ba.info>– Gegner haben bessere Werte.</>\n <@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+  },
+  "indie_battletower001_ex": {
+    "name": "Silber-Wasserschneider: Brutal",
+    "description": "Ich sah einen schmalen Lichtstreif und die aufblitzende Klinge, die durch die strömenden Fluten fuhr, doch sie vermochte es nicht, ihre kalte, herzlose Bosheit zu durchtrennen. Ihr Griff befleckte dein Schwert, und das nachhallende Echo hüllte deine Gestalt ein.",
+    "featureDesc": " <@ba.info>– Gegner haben bessere Werte.</>\n <@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+  },
+  "indie_battletower001_s": {
+    "name": "Silber-Wasserschneider: Schwer",
+    "description": "Ich sah einen schmalen Lichtstreif und die aufblitzende Klinge, die durch die strömenden Fluten fuhr, doch sie vermochte es nicht, ihre kalte, herzlose Bosheit zu durchtrennen. Ihr Griff befleckte dein Schwert, und das nachhallende Echo hüllte deine Gestalt ein.",
+    "featureDesc": " <@ba.info>– Gegner haben bessere Werte.</>\n <@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+  },
+  "indie_battletower002": {
+    "name": "Alte Geschichten aus der Wildnis: Normal",
+    "description": "Hier bekenne ich mich zu den Worten der Bestien, die durch die Ruinen des Krieges streifen und an den Namen der Nationen kratzen, während der Schaum vor ihrem Mund Stäbe, Schilde und Kanonenkugeln in geschmolzenes Ferrium verwandelt.",
+    "featureDesc": " – Das Besiegen von Gegnern stellt 15 FP wieder her.\n– Verursachter Kampffertigkeits-SDN <@ba.vup>+60%</>.\n\n <@ba.info>– Gegner haben bessere Werte.</>\n<@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+  },
+  "indie_battletower002_ex": {
+    "name": "Alte Geschichten aus der Wildnis: Brutal",
+    "description": "Hier bekenne ich mich zu den Worten der Bestien, die durch die Ruinen des Krieges streifen und an den Namen der Nationen kratzen, während der Schaum vor ihrem Mund Stäbe, Schilde und Kanonenkugeln in geschmolzenes Ferrium verwandelt.",
+    "featureDesc": " – Das Besiegen von Gegnern stellt 15 FP wieder her.\n– Verursachter Kampffertigkeits-SDN <@ba.vup>+60%</>.\n\n <@ba.info>– Gegner haben bessere Werte.</>\n<@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+  },
+  "indie_battletower002_s": {
+    "name": "Alte Geschichten aus der Wildnis: Schwer",
+    "description": "Hier bekenne ich mich zu den Worten der Bestien, die durch die Ruinen des Krieges streifen und an den Namen der Nationen kratzen, während der Schaum vor ihrem Mund Stäbe, Schilde und Kanonenkugeln in geschmolzenes Ferrium verwandelt.",
+    "featureDesc": " – Das Besiegen von Gegnern stellt 15 FP wieder her.\n– Verursachter Kampffertigkeits-SDN <@ba.vup>+60%</>.\n\n <@ba.info>– Gegner haben bessere Werte.</>\n<@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+  },
+  "indie_battletower003": {
+    "name": "Scharmützler-Æthillu: Normal",
+    "description": "Ich sehe einen Armbrustbolzen kreischend durch den Himmel schießen. Die Scharmützler bewegten sich entlang des äußersten Randes der Wirklichkeit, ihre Gesichtszüge verschmolzen mit den kalten Gestalten der Æthillu.",
+    "featureDesc": "– Gegner können sich nicht bewegen, sind aber schwieriger zu unterbrechen.\n– Auf dem Schlachtfeld erscheinen Æthillu, die nur durch Wuchtschläge verletzt werden können.\n– Wird ein Æthillu besiegt, werden alle Gegner herangezogen sowie 50 FP wiederhergestellt, und der gesteuerte Operator erhält für 10 Sek. <@ba.vup>+100%</> Verursachter SDN.\n– Besiege alle Knochenbrecher-Wegelagerer, um die Phase abzuschließen; der Æthillu muss nicht besiegt werden.\n\n<@ba.info>– Gegner haben bessere Werte.</>\n<@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+  },
+  "indie_battletower003_ex": {
+    "name": "Scharmützler-Æthillu: Brutal",
+    "description": "Ich sehe einen Armbrustbolzen kreischend durch den Himmel schießen. Die Scharmützler bewegten sich entlang des äußersten Randes der Wirklichkeit, ihre Gesichtszüge verschmolzen mit den kalten Gestalten der Æthillu.",
+    "featureDesc": "– Gegner können sich nicht bewegen, sind aber schwieriger zu unterbrechen.\n– Auf dem Schlachtfeld erscheinen Æthillu, die nur durch Wuchtschläge verletzt werden können.\n– Wird ein Æthillu besiegt, werden alle Gegner herangezogen sowie 50 FP wiederhergestellt, und der gesteuerte Operator erhält für 10 Sek. <@ba.vup>+100%</> Verursachter SDN.\n– Besiege alle Knochenbrecher-Wegelagerer, um die Phase abzuschließen; der Æthillu muss nicht besiegt werden.\n\n<@ba.info>– Gegner haben bessere Werte.</>\n<@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+  },
+  "indie_battletower003_s": {
+    "name": "Scharmützler-Æthillu: Schwer",
+    "description": "Ich sehe einen Armbrustbolzen kreischend durch den Himmel schießen. Die Scharmützler bewegten sich entlang des äußersten Randes der Wirklichkeit, ihre Gesichtszüge verschmolzen mit den kalten Gestalten der Æthillu.",
+    "featureDesc": "– Gegner können sich nicht bewegen, sind aber schwieriger zu unterbrechen.\n– Auf dem Schlachtfeld erscheinen Æthillu, die nur durch Wuchtschläge verletzt werden können.\n– Wird ein Æthillu besiegt, werden alle Gegner herangezogen sowie 50 FP wiederhergestellt, und der gesteuerte Operator erhält für 10 Sek. <@ba.vup>+100%</> Verursachter SDN.\n– Besiege alle Knochenbrecher-Wegelagerer, um die Phase abzuschließen; der Æthillu muss nicht besiegt werden.\n\n<@ba.info>– Gegner haben bessere Werte.</>\n<@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+  },
+  "indie_battletower004": {
+    "name": "Zeitalter der Äxte: Normal",
+    "description": "Als ich meine Finger halb über die Schnitzereien gleiten ließ, schoss der sengende Rost stechende Schmerzen durch die Haut des Henkers. Die Waffen waren mit seinem Fleisch und Blut befleckt. Es war ein endloser, rastloser Kreislauf, der sich jedes Jahr wiederholte.",
+    "featureDesc": " <@ba.info>– Gegner haben bessere Werte.</>\n <@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+  },
+  "indie_battletower004_ex": {
+    "name": "Zeitalter der Äxte: Brutal",
+    "description": "Als ich meine Finger halb über die Schnitzereien gleiten ließ, schoss der sengende Rost stechende Schmerzen durch die Haut des Henkers. Die Waffen waren mit seinem Fleisch und Blut befleckt. Es war ein endloser, rastloser Kreislauf, der sich jedes Jahr wiederholte.",
+    "featureDesc": " <@ba.info>– Gegner haben bessere Werte.</>\n <@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+  },
+  "indie_battletower004_s": {
+    "name": "Zeitalter der Äxte: Schwer",
+    "description": "Als ich meine Finger halb über die Schnitzereien gleiten ließ, schoss der sengende Rost stechende Schmerzen durch die Haut des Henkers. Die Waffen waren mit seinem Fleisch und Blut befleckt. Es war ein endloser, rastloser Kreislauf, der sich jedes Jahr wiederholte.",
+    "featureDesc": " <@ba.info>– Gegner haben bessere Werte.</>\n <@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+  },
+  "indie_battletower005": {
+    "name": "Pulverisierungsmunition: Normal",
+    "description": "Ich hob Ferrium-Stücke auf, bruchstückhafte Gedanken und Ideen, die einst von Gravuren überzogen waren. Das unerschütterlichste Bekenntnis war die Kugel, die an Fleisch und Knochen in Stücke zersprang.",
+    "featureDesc": " <@ba.info>– Gegner haben bessere Werte.</>\n <@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+  },
+  "indie_battletower005_ex": {
+    "name": "Pulverisierungsmunition: Brutal",
+    "description": "Ich hob Ferrium-Stücke auf, bruchstückhafte Gedanken und Ideen, die einst von Gravuren überzogen waren. Das unerschütterlichste Bekenntnis war die Kugel, die an Fleisch und Knochen in Stücke zersprang.",
+    "featureDesc": " <@ba.info>– Gegner haben bessere Werte.</>\n <@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+  },
+  "indie_battletower005_s": {
+    "name": "Pulverisierungsmunition: Schwer",
+    "description": "Ich hob Ferrium-Stücke auf, bruchstückhafte Gedanken und Ideen, die einst von Gravuren überzogen waren. Das unerschütterlichste Bekenntnis war die Kugel, die an Fleisch und Knochen in Stücke zersprang.",
+    "featureDesc": " <@ba.info>– Gegner haben bessere Werte.</>\n <@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+  },
+  "indie_battletower006": {
+    "name": "Narben des Landbruchs: Normal",
+    "description": "Ich habe von einer Geschichte gehört, die mit den ehrgeizigen Ambitionen eines Kriegsherren beginnt. Dieser Ehrgeiz hatte zur Folge, dass sich Wölfe in Rudeln gegenseitig auffraßen und das große Sandmeer aufwühlten, bis das Geräusch von Blut, das aus den aufgerissenen Wunden spritzte, in unseren Ohren widerhallte.",
+    "featureDesc": " – Die Knochenbrecher-Vorhut zu besiegen, gewährt Taumeln-Effizienzbonus <@ba.vup>+50%</>.\n – Den Knochenbrecher-Brandstifter zu besiegen, gewährt Technik-Intensität <@ba.vup>+100</>.\n – Den Knochenbrecher-Henker zu besiegen, erhöht den verursachten Fertigkeits-SDN um <@ba.vup>+100%</>.\n – Die Schwere Ramme zu besiegen, erhöht den verursachten Standardangriff-SDN um <@ba.vup>+100%</>.\n\n <@ba.info>– Gegner haben bessere Werte.</>\n <@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+  },
+  "indie_battletower006_ex": {
+    "name": "Narben des Landbruchs: Brutal",
+    "description": "Ich habe von einer Geschichte gehört, die mit den ehrgeizigen Ambitionen eines Kriegsherren beginnt. Dieser Ehrgeiz hatte zur Folge, dass sich Wölfe in Rudeln gegenseitig auffraßen und das große Sandmeer aufwühlten, bis das Geräusch von Blut, das aus den aufgerissenen Wunden spritzte, in unseren Ohren widerhallte.",
+    "featureDesc": " – Die Knochenbrecher-Vorhut zu besiegen, gewährt Taumeln-Effizienzbonus <@ba.vup>+50%</>.\n – Den Knochenbrecher-Brandstifter zu besiegen, gewährt Technik-Intensität <@ba.vup>+100</>.\n – Den Knochenbrecher-Henker zu besiegen, erhöht den verursachten Fertigkeits-SDN um <@ba.vup>+100%</>.\n – Die Schwere Ramme zu besiegen, erhöht den verursachten Standardangriff-SDN um <@ba.vup>+100%</>.\n\n <@ba.info>– Gegner haben bessere Werte.</>\n <@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+  },
+  "indie_battletower006_s": {
+    "name": "Narben des Landbruchs: Schwer",
+    "description": "Ich habe von einer Geschichte gehört, die mit den ehrgeizigen Ambitionen eines Kriegsherren beginnt. Dieser Ehrgeiz hatte zur Folge, dass sich Wölfe in Rudeln gegenseitig auffraßen und das große Sandmeer aufwühlten, bis das Geräusch von Blut, das aus den aufgerissenen Wunden spritzte, in unseren Ohren widerhallte.",
+    "featureDesc": " – Die Knochenbrecher-Vorhut zu besiegen, gewährt Taumeln-Effizienzbonus <@ba.vup>+50%</>.\n – Den Knochenbrecher-Brandstifter zu besiegen, gewährt Technik-Intensität <@ba.vup>+100</>.\n – Den Knochenbrecher-Henker zu besiegen, erhöht den verursachten Fertigkeits-SDN um <@ba.vup>+100%</>.\n – Die Schwere Ramme zu besiegen, erhöht den verursachten Standardangriff-SDN um <@ba.vup>+100%</>.\n\n <@ba.info>– Gegner haben bessere Werte.</>\n <@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+  },
+  "indie_battletower007": {
+    "name": "Heulen unsterblicher Bestien: Normal",
+    "description": "Ich hörte das Geräusch deiner Klinge, die über die gebleichten Knochen der Bestien schabte – das zischende Lied des Schärfens glich fast einem Donnergrollen.",
+    "featureDesc": "– Der Himmelstrommler aktiviert seine Raserei nicht.\n– Der Himmelstrommler hat höhere Resistenz gegen alle Elemente.\n\n<@ba.info>– Gegner haben bessere Werte.</>\n<@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+  },
+  "indie_battletower007_ex": {
+    "name": "Heulen unsterblicher Bestien: Brutal",
+    "description": "Ich hörte das Geräusch deiner Klinge, die über die gebleichten Knochen der Bestien schabte – das zischende Lied des Schärfens glich fast einem Donnergrollen.",
+    "featureDesc": "– Der Himmelstrommler aktiviert seine Raserei nicht.\n– Nachdem der Himmelstrommler in den Kampf zieht, erhält er 50 Resistenz gegen alle Elemente.\n\n <@ba.info>– Gegner haben bessere Werte.</>\n <@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+  },
+  "indie_battletower007_s": {
+    "name": "Heulen unsterblicher Bestien: Schwer",
+    "description": "Ich hörte das Geräusch deiner Klinge, die über die gebleichten Knochen der Bestien schabte – das zischende Lied des Schärfens glich fast einem Donnergrollen.",
+    "featureDesc": "– Der Himmelstrommler aktiviert seine Raserei nicht.\n– Der Himmelstrommler hat höhere Resistenz gegen alle Elemente.\n\n<@ba.info>– Gegner haben bessere Werte.</>\n<@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+  },
+  "indie_battletower008": {
+    "name": "Eine Chronik des Krieges: Normal",
+    "description": "Ich habe ein paar Zeilen der Wahrheit gefunden. Es fing an mit wilden Bestien und hörte auf damit, dass Menschen einander töteten. Die blutigen Konflikte fanden kein Ende.",
+    "featureDesc": " – Den Tunnel-Nidwurm zu besiegen, gewährt FP-Wiederherstellung <@ba.vup>+30%</>.\n– Den Schweren Skorpio zu besiegen, gewährt Abklingzeitverringerung der Kombofertigkeit <@ba.vup>+50%</>.\n– Die Knochenbrecher-Balliste zu besiegen, gewährt Ultimative Effizienzsteigerung <@ba.vup>+60%</>.\n \n <@ba.info>– Gegner haben bessere Werte.</>\n <@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+  },
+  "indie_battletower008_ex": {
+    "name": "Eine Chronik des Krieges: Brutal",
+    "description": "Ich habe ein paar Zeilen der Wahrheit gefunden. Es fing an mit wilden Bestien und hörte auf damit, dass Menschen einander töteten. Die blutigen Konflikte fanden kein Ende.",
+    "featureDesc": " – Den Tunnel-Nidwurm zu besiegen, gewährt FP-Wiederherstellung <@ba.vup>+30%</>.\n– Den Schweren Skorpio zu besiegen, gewährt Abklingzeitverringerung der Kombofertigkeit <@ba.vup>+50%</>.\n– Die Knochenbrecher-Balliste zu besiegen, gewährt Ultimative Effizienzsteigerung <@ba.vup>+60%</>.\n \n <@ba.info>– Gegner haben bessere Werte.</>\n <@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+  },
+  "indie_battletower008_s": {
+    "name": "Eine Chronik des Krieges: Schwer",
+    "description": "Ich habe ein paar Zeilen der Wahrheit gefunden. Es fing an mit wilden Bestien und hörte auf damit, dass Menschen einander töteten. Die blutigen Konflikte fanden kein Ende.",
+    "featureDesc": " – Den Tunnel-Nidwurm zu besiegen, gewährt FP-Wiederherstellung <@ba.vup>+30%</>.\n– Den Schweren Skorpio zu besiegen, gewährt Abklingzeitverringerung der Kombofertigkeit <@ba.vup>+50%</>.\n– Die Knochenbrecher-Balliste zu besiegen, gewährt Ultimative Effizienzsteigerung <@ba.vup>+60%</>.\n \n <@ba.info>– Gegner haben bessere Werte.</>\n <@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+  },
+  "indie_battletower009": {
+    "name": "Verschüttete Fronten: Normal",
+    "description": "Ich wurde Zeuge eines Begräbnisses. Versunken in Dunkelheit und brodelnder Erde, wo Bestien von harrenden Schatten geleitet werden.",
+    "featureDesc": " <@ba.info>– Gegner haben bessere Werte.</>\n <@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+  },
+  "indie_battletower009_ex": {
+    "name": "Verschüttete Fronten: Brutal",
+    "description": "Ich wurde Zeuge eines Begräbnisses. Versunken in Dunkelheit und brodelnder Erde, wo Bestien von harrenden Schatten geleitet werden.",
+    "featureDesc": " <@ba.info>– Gegner haben bessere Werte.</>\n <@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+  },
+  "indie_battletower009_s": {
+    "name": "Verschüttete Fronten: Schwer",
+    "description": "Ich wurde Zeuge eines Begräbnisses. Versunken in Dunkelheit und brodelnder Erde, wo Bestien von harrenden Schatten geleitet werden.",
+    "featureDesc": " <@ba.info>– Gegner haben bessere Werte.</>\n <@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+  },
+  "indie_battletower010": {
+    "name": "Schildwall: Normal",
+    "description": "Ich wurde Zeuge einer Rettungsaktion, bei der eine Wand aus „Schilden“ die vorderste Kampflinie schützte.",
+    "featureDesc": " – Wenn ein Prisma besiegt wird, erscheint nach einer Weile ein weiteres Prisma auf dem Schlachtfeld.\n – Prismen lassen sich sehr viel schwerer unterbrechen.\n – Besiege den Federbiest-Verderbnisschatten, um die Phase abzuschließen. Das Besiegen der Prismen wird für den Abschluss der Phase nicht gewertet.\n\n <@ba.info>– Gegner haben bessere Werte.</>\n <@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+  },
+  "indie_battletower010_ex": {
+    "name": "Schildwall: Brutal",
+    "description": "Ich wurde Zeuge einer Rettungsaktion, bei der eine Wand aus „Schilden“ die vorderste Kampflinie schützte.",
+    "featureDesc": " – Wenn ein Prisma besiegt wird, erscheint nach einer Weile ein weiteres Prisma auf dem Schlachtfeld.\n – Prismen lassen sich sehr viel schwerer unterbrechen.\n – Besiege den Federbiest-Verderbnisschatten, um die Phase abzuschließen. Das Besiegen der Prismen wird für den Abschluss der Phase nicht gewertet.\n\n <@ba.info>– Gegner haben bessere Werte.</>\n <@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+  },
+  "indie_battletower010_s": {
+    "name": "Schildwall: Schwer",
+    "description": "Ich wurde Zeuge einer Rettungsaktion, bei der eine Wand aus „Schilden“ die vorderste Kampflinie schützte.",
+    "featureDesc": " – Wenn ein Prisma besiegt wird, erscheint nach einer Weile ein weiteres Prisma auf dem Schlachtfeld.\n – Prismen lassen sich sehr viel schwerer unterbrechen.\n – Besiege den Federbiest-Verderbnisschatten, um die Phase abzuschließen. Das Besiegen der Prismen wird für den Abschluss der Phase nicht gewertet.\n\n <@ba.info>– Gegner haben bessere Werte.</>\n <@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+  },
+  "indie_battletower011": {
+    "name": "Schwer belagert: Normal",
+    "description": "Ich habe einen Hinterhalt gelegt, einen Hinterhalt von Schlamm und Blut. Wunden wurden aufgerissen, Schmerz und Leid steigerten einander noch.",
+    "featureDesc": " – Auf dem Schlachtfeld gibt es eine <@ba.key>Schmerzzone</>. Gegner erleiden für jede Sekunde, die sie in der Zone verbringen, erlittener SDN <@ba.vup>+10%</> (max. <@ba.vup>+150%</>). Der Debuff verschwindet mit der Zeit, nachdem ein Gegner die <@ba.key>Schmerzzone</> verlässt.\n\n <@ba.info>– Gegner haben bessere Werte.</>\n <@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+  },
+  "indie_battletower011_ex": {
+    "name": "Schwer belagert: Brutal",
+    "description": "Ich habe einen Hinterhalt gelegt, einen Hinterhalt von Schlamm und Blut. Wunden wurden aufgerissen, Schmerz und Leid steigerten einander noch.",
+    "featureDesc": " – Auf dem Schlachtfeld gibt es eine <@ba.key>Schmerzzone</>. Gegner erleiden für jede Sekunde, die sie in der Zone verbringen, erlittener SDN <@ba.vup>+10%</> (max. <@ba.vup>+150%</>). Der Debuff verschwindet mit der Zeit, nachdem ein Gegner die <@ba.key>Schmerzzone</> verlässt.\n\n <@ba.info>– Gegner haben bessere Werte.</>\n <@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+  },
+  "indie_battletower011_s": {
+    "name": "Schwer belagert: Schwer",
+    "description": "Ich habe einen Hinterhalt gelegt, einen Hinterhalt von Schlamm und Blut. Wunden wurden aufgerissen, Schmerz und Leid steigerten einander noch.",
+    "featureDesc": " – Auf dem Schlachtfeld gibt es eine <@ba.key>Schmerzzone</>. Gegner erleiden für jede Sekunde, die sie in der Zone verbringen, erlittener SDN <@ba.vup>+10%</> (max. <@ba.vup>+150%</>). Der Debuff verschwindet mit der Zeit, nachdem ein Gegner die <@ba.key>Schmerzzone</> verlässt.\n\n <@ba.info>– Gegner haben bessere Werte.</>\n <@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+  },
+  "indie_battletower012": {
+    "name": "Anorganischer Eifer: Normal",
+    "description": "Ich habe einen Angriff simuliert. Aggeloi mögen nichts spüren, doch unsere Vorhut kennt keine Erschöpfung.",
+    "featureDesc": " – Operatoren beginnen den Kampf mit max. <@ba.key>Ultimativer Energie</>.\n\n <@ba.info>– Gegner haben bessere Werte.</>\n <@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+  },
+  "indie_battletower012_ex": {
+    "name": "Anorganischer Eifer: Brutal",
+    "description": "Ich habe einen Angriff simuliert. Aggeloi mögen nichts spüren, doch unsere Vorhut kennt keine Erschöpfung.",
+    "featureDesc": " – Operatoren beginnen den Kampf mit max. <@ba.key>Ultimativer Energie</>.\n\n <@ba.info>– Gegner haben bessere Werte.</>\n <@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+  },
+  "indie_battletower012_s": {
+    "name": "Anorganischer Eifer: Schwer",
+    "description": "Ich habe einen Angriff simuliert. Aggeloi mögen nichts spüren, doch unsere Vorhut kennt keine Erschöpfung.",
+    "featureDesc": " – Operatoren beginnen den Kampf mit max. <@ba.key>Ultimativer Energie</>.\n\n <@ba.info>– Gegner haben bessere Werte.</>\n <@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+  },
+  "indie_battletower013": {
+    "name": "Mächtige Enthauptung: Normal",
+    "description": "Ich habe einen Mordanschlag vorbereitet. Die Stärke ist voll aufgeladen, wenn man die Axt hoch über den Kopf hebt.",
+    "featureDesc": " – Gegner setzen ausschließlich <@ba.key>aufgeladene Fertigkeiten</> ein und sind immun gegen <@ba.key>Kampffertigkeits</>-SDN, während sie ihre Fertigkeiten <@ba.key>aufladen</>. Die <@ba.key>aufgeladenen Fertigkeiten</> des Gegners lassen sich nicht durch <@ba.key>Kampffertigkeiten</> unterbrechen.\n\n <@ba.info>– Gegner haben bessere Werte.</>\n <@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+  },
+  "indie_battletower013_ex": {
+    "name": "Mächtige Enthauptung: Brutal",
+    "description": "Ich habe einen Mordanschlag vorbereitet. Die Stärke ist voll aufgeladen, wenn man die Axt hoch über den Kopf hebt.",
+    "featureDesc": " – Gegner setzen ausschließlich <@ba.key>aufgeladene Fertigkeiten</> ein und sind immun gegen <@ba.key>Kampffertigkeits</>-SDN, während sie ihre Fertigkeiten <@ba.key>aufladen</>. Die <@ba.key>aufgeladenen Fertigkeiten</> des Gegners lassen sich nicht durch <@ba.key>Kampffertigkeiten</> unterbrechen.\n\n <@ba.info>– Gegner haben bessere Werte.</>\n <@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+  },
+  "indie_battletower013_s": {
+    "name": "Mächtige Enthauptung: Schwer",
+    "description": "Ich habe einen Mordanschlag vorbereitet. Die Stärke ist voll aufgeladen, wenn man die Axt hoch über den Kopf hebt.",
+    "featureDesc": " – Gegner setzen ausschließlich <@ba.key>aufgeladene Fertigkeiten</> ein und sind immun gegen <@ba.key>Kampffertigkeits</>-SDN, während sie ihre Fertigkeiten <@ba.key>aufladen</>. Die <@ba.key>aufgeladenen Fertigkeiten</> des Gegners lassen sich nicht durch <@ba.key>Kampffertigkeiten</> unterbrechen.\n\n <@ba.info>– Gegner haben bessere Werte.</>\n <@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+  },
+  "indie_battletower014": {
+    "name": "Monströse Machenschaften: Normal",
+    "description": "Ich habe ein Festmahl vorbereitet. Die Bestien sind gerissen, vereitelt man ihre Pläne jedoch, wird man dafür belohnt.",
+    "featureDesc": " – Beim Besiegen eines Felsenheulers werden <@ba.vup>10</> FP wiederhergestellt und alle Operatoren erhalten Technik-Intensität <@ba.vup>+15</>.\n\n <@ba.info>– Gegner haben bessere Werte.</>\n <@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+  },
+  "indie_battletower014_ex": {
+    "name": "Monströse Machenschaften: Brutal",
+    "description": "Ich habe ein Festmahl vorbereitet. Die Bestien sind gerissen, vereitelt man ihre Pläne jedoch, wird man dafür belohnt.",
+    "featureDesc": " – Beim Besiegen eines Felsenheulers werden <@ba.vup>10</> FP wiederhergestellt und alle Operatoren erhalten Technik-Intensität <@ba.vup>+15</>.\n\n <@ba.info>– Gegner haben bessere Werte.</>\n <@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+  },
+  "indie_battletower014_s": {
+    "name": "Monströse Machenschaften: Schwer",
+    "description": "Ich habe ein Festmahl vorbereitet. Die Bestien sind gerissen, vereitelt man ihre Pläne jedoch, wird man dafür belohnt.",
+    "featureDesc": " – Beim Besiegen eines Felsenheulers werden <@ba.vup>10</> FP wiederhergestellt und alle Operatoren erhalten Technik-Intensität <@ba.vup>+15</>.\n\n <@ba.info>– Gegner haben bessere Werte.</>\n <@ba.info>– Nur taktische Mittel zur LP-Behandlung und Verbrauchsgegenstände können eingesetzt werden.</>"
+  },
+  "indie_hard001": {
+    "name": "Wütende Schilde",
+    "description": "Der winterliche Nebel in der Wildnis scheint sich nie aufzulösen. Ein tiefes Brummen wird ab und an von einem schrillen Klirren durchbrochen. Es klingt, als ob etwas zersplittert. \nHör genau hin. Hörst du auch … wie Stein gegen Metall schleift?",
+    "featureDesc": " – Gegner sind stärker."
+  },
+  "indie_hard001_s": {
+    "name": "Wütende Schilde: Tortur",
+    "description": "Der winterliche Nebel in der Wildnis scheint sich nie aufzulösen. Ein tiefes Brummen wird ab und an von einem schrillen Klirren durchbrochen. Es klingt, als ob etwas zersplittert. \nHör genau hin. Hörst du auch … wie Stein gegen Metall schleift?",
+    "featureDesc": " – Gegner sind stärker.\n – Gegner bewegen sich schneller und erholen sich schneller von „Taumelnd“.\n – Wird ein Gegner besiegt, sind die verbleibenden Gegner schwerer zu unterbrechen und erhalten kontinuierlich ANG und LP-Wiederherstellung.\n\n  <@ba.info>– Taktische Mittel und Verbrauchsgegenstände können nicht verwendet werden.</>"
+  },
+  "indie_hard002": {
+    "name": "Blitze und Schatten",
+    "description": "Die ohrenbetäubende Explosion erweckte die Glut eines Krieges, der vor einhundert Jahren wütete, und doch überlebte der Zivilisationsgürtel die Aggeloi-Bombardierung. \n„Die Aggeloi waren nicht allein daran schuld, dass die Menschheit kurz vor der Ausrottung stand. Und genau darin liegt die Tragödie.“",
+    "featureDesc": " – Gegner sind stärker."
+  },
+  "indie_hard002_s": {
+    "name": "Blitze und Schatten: Tortur",
+    "description": "Die ohrenbetäubende Explosion erweckte die Glut eines Krieges, der vor einhundert Jahren wütete, und doch überlebte der Zivilisationsgürtel die Aggeloi-Bombardierung. \n„Die Aggeloi waren nicht allein daran schuld, dass die Menschheit kurz vor der Ausrottung stand. Und genau darin liegt die Tragödie.“",
+    "featureDesc": " – Gegner sind stärker.\n – Gegner erholen sich schneller von „Taumelnd“, sind schwerer zu unterbrechen und haben eine deutlich erhöhte ANG-Reichweite.\n – Schwerer Skorpio α erhält regelmäßig vorübergehende Immunität gegen alle Arten von SDN; besiege alle Skorpio α, um diesen Immunitätsbuff zu entfernen.\n \n  <@ba.info>– Taktische Mittel und Verbrauchsgegenstände können nicht verwendet werden.</>"
+  },
+  "indie_hard003": {
+    "name": "Steinhart",
+    "description": "Das riesige Maschinenwrack in der Ferne ist ein Mahnmal bedeutender Ereignisse der Vergangenheit. In der Nähe verschmolzen die Überreste von Entitäten miteinander zu neuen Wesen, deren Gebrüll durch Mark und Bein geht. \nMit ihren wütenden Schlägen und schweren Schritten bringen die Aggeloi die Erde zum Beben.",
+    "featureDesc": " – Gegner sind stärker."
+  },
+  "indie_hard003_s": {
+    "name": "Steinhart: Tortur",
+    "description": "Das riesige Maschinenwrack in der Ferne ist ein Mahnmal bedeutender Ereignisse der Vergangenheit. In der Nähe verschmolzen die Überreste von Entitäten miteinander zu neuen Wesen, deren Gebrüll durch Mark und Bein geht. \nMit ihren wütenden Schlägen und schweren Schritten bringen die Aggeloi die Erde zum Beben.",
+    "featureDesc": " – Die Ausdauerregeneration des Operators ist stark reduziert.\n – Gegner sind stärker und immun gegen „Taumelnd“.\n – Der Laufende Chrysopolis erholt sich schneller von Schwachpunkt-Aussetzungen. Wird ein Schwachpunkt nicht vor Ende der Schwachpunkt-Aussetzungszeit zerstört, erhält der Laufende Chrysopolis einen massiven ANG-Buff. Die erfolgreiche Zerstörung des Schwachpunkts belegt den Laufenden Chrysopolis mit dem Zustand „Taumelnd“.\n\n  <@ba.info>– Taktische Mittel und Verbrauchsgegenstände können nicht verwendet werden.</>"
+  },
+  "indie_hard004": {
+    "name": "Balliste und Axt",
+    "description": "Die Krieger der Knochenbrecher haben die Schwachen ausgeweidet und stehen nun mit Balliste und Axt in der Hand auf der Plattform. Besiege sie, beende uraltes Leid und ersticke neuen Ehrgeiz im Keim. \n„Held? Womit hast du dir diesen Ehrentitel verdient?“",
+    "featureDesc": " – Die beiden Elite-Gegner kämpfen als Team."
+  },
+  "indie_hard004_s": {
+    "name": "Balliste und Axt: Tortur",
+    "description": "Die Krieger der Knochenbrecher haben die Schwachen ausgeweidet und stehen nun mit Balliste und Axt in der Hand auf der Plattform. Besiege sie, beende uraltes Leid und ersticke neuen Ehrgeiz im Keim. \n„Held? Womit hast du dir diesen Ehrentitel verdient?“",
+    "featureDesc": " – Die beiden Elite-Gegner kämpfen als Team.\n – Wenn sich beide Elite-Gegner auf dem Feld befinden, teilen sie sich den erlittenen SDN.\n \n  <@ba.info>– Taktische Mittel und Verbrauchsgegenstände können nicht verwendet werden.</>"
+  },
+  "indie_hard005": {
+    "name": "Unkonventionelle Taktik",
+    "description": "Aus den Kommunikationsgeräten erklang ein gellendes Kreischen, als die Drohnen zu Boden stürzten. Die Landbrecher ließen ihren Blick zu ihnen schweifen und sprachen leise von „Segnung“ und „Rache“. \nHinter ihnen standen groß gewachsene, schemenhafte Figuren in einem Wald aus Denstacks.",
+    "featureDesc": "– Gegner können sich nicht bewegen, sind aber schwieriger zu unterbrechen und erhalten fortlaufend ANG."
+  },
+  "indie_hard005_s": {
+    "name": "Unkonventionelle Taktik: Tortur",
+    "description": "Aus den Kommunikationsgeräten erklang ein gellendes Kreischen, als die Drohnen zu Boden stürzten. Die Landbrecher ließen ihren Blick zu ihnen schweifen und sprachen leise von „Segnung“ und „Rache“. \nHinter ihnen standen groß gewachsene, schemenhafte Figuren in einem Wald aus Denstacks.",
+    "featureDesc": "– Gegner können sich nicht bewegen, sind aber schwieriger zu unterbrechen und erhalten fortlaufend ANG.\n – Der ANG des Gegners wird viel schneller erhöht.\n\n <@ba.info>– Taktische Mittel und Verbrauchsgegenstände können nicht verwendet werden.</>"
+  },
+  "indie_hard006": {
+    "name": "Tödliches Gas",
+    "description": "Aus den Schloten der riesigen Fabrik wabert dicker, giftiger Rauch. Wer versucht, an diesem Ort seine Geheimnisse zu verbergen? \n„Zieht eure Waffen, hebt die Schilde! Lasst die Reißbiester des Krieges aufheulen! Und heizt diesem Nebel ein!“",
+    "featureDesc": " – Vorsicht! Der Nebel fügt allen Operatoren fortlaufend SDN zu.\n – Wenn der gesteuerte Operator eine LP-Behandlung erhält, erhalten die anderen Operatoren im Team ebenfalls 70 % dieser LP-Behandlung."
+  },
+  "indie_hard006_s": {
+    "name": "Tödliches Gas: Tortur",
+    "description": "Aus den Schloten der riesigen Fabrik wabert dicker, giftiger Rauch. Wer versucht, an diesem Ort seine Geheimnisse zu verbergen? \n„Zieht eure Waffen, hebt die Schilde! Lasst die Reißbiester des Krieges aufheulen! Und heizt diesem Nebel ein!“",
+    "featureDesc": " – Vorsicht! Der Nebel fügt allen Operatoren fortlaufend SDN zu.\n – Der Nebel fügt mehr SDN zu, und neue Gegner erscheinen.\n – Wenn der gesteuerte Operator eine LP-Behandlung erhält, erhalten die anderen Operatoren im Team ebenfalls 50 % dieser LP-Behandlung.\n\n  <@ba.info>– Taktische Mittel und Verbrauchsgegenstände können nicht verwendet werden.</>"
+  },
+  "indie_hard007": {
+    "name": "Heulende Flamme",
+    "description": "Verderbt sei das Firmament! Verderbt seien die unerwarteten Blitze! Und VERDERBT seien die Feuer, die unangekündigt herabregnen!",
+    "featureDesc": " – Gegner verfallen regelmäßig in <@ba.key>Raserei</>, was sie fortwährend mit <@ba.fire>Hitze</> belegt und ihnen je nach Anzahl der Hitze-Kumulierungen einen ANG-Bonus und SDN-Reduzierung gewährt.\n\n <@ba.info>– Gegner haben dieselbe Resistenz gegen jedes Element.</>"
+  },
+  "indie_hard007_s": {
+    "name": "Heulende Flamme: Tortur",
+    "description": "Verderbt sei das Firmament! Verderbt seien die unerwarteten Blitze! Und VERDERBT seien die Feuer, die unangekündigt herabregnen!",
+    "featureDesc": " – Gegner verfallen regelmäßig in <@ba.key>Raserei</>, was sie fortwährend mit <@ba.fire>Hitze</> belegt und ihnen je nach Anzahl der Hitze-Kumulierungen einen ANG-Bonus und SDN-Reduzierung gewährt.\n – Während <@ba.key>Raserei</> haben <@ba.key>Operatoren keine FP-Wiederherstellung mehr</>.\n\n <@ba.info>– Taktische Mittel und Verbrauchsgegenstände können nicht verwendet werden.</>\n <@ba.info>– Gegner haben dieselbe Resistenz gegen jedes Element.</>"
+  },
+  "indie_hard008": {
+    "name": "Meer der Abscheu",
+    "description": "In ihnen kocht ein anhaltender, brodelnder Hass. Unaufhörlich wanderten die Aufgegebenen durch das trostlose Land … Im Laufe der Zeit geriet der Grund für ihren Zorn in Vergessenheit, aber jedes Gefäß des Hasses vermag Kraft aus dem endlosen Meer des Nebels ziehen.",
+    "featureDesc": " – Gegner sind stärker.\n – Die Elite-Gegner kämpfen als Team.\n\n <@ba.info>– Gegner haben dieselbe Resistenz gegen jedes Element.</>"
+  },
+  "indie_hard008_s": {
+    "name": "Meer der Abscheu: Tortur",
+    "description": "In ihnen kocht ein anhaltender, brodelnder Hass. Unaufhörlich wanderten die Aufgegebenen durch das trostlose Land … Im Laufe der Zeit geriet der Grund für ihren Zorn in Vergessenheit, aber jedes Gefäß des Hasses vermag Kraft aus dem endlosen Meer des Nebels ziehen.",
+    "featureDesc": " – Gegner sind stärker und <@ba.key>schwieriger zu unterbrechen</>.\n– Die Elite-Gegner kämpfen als Team, und weitere Gegner werden auftauchen.\n\n <@ba.info>– Taktische Mittel und Verbrauchsgegenstände können nicht verwendet werden.</>\n <@ba.info>– Gegner haben dieselbe Resistenz gegen jedes Element.</>"
+  },
+  "indie_hard009": {
+    "name": "Schmelzpunkt von Fleisch",
+    "description": "BRENNEN! Alles soll brennen! Stoßt den Turm um und schmelzt das Schiff! Gießt unser Blut in das kochende flüssige Eisen und reinigt damit Talos-II!",
+    "featureDesc": " – Gegner sind stärker.\n – Explosive Feuernebel-Originium-Schnecken tauchen in regelmäßigen Abständen auf.\n\n <@ba.info>– Gegner haben dieselbe Resistenz gegen jedes Element.</>"
+  },
+  "indie_hard009_s": {
+    "name": "Schmelzpunkt von Fleisch: Tortur",
+    "description": "BRENNEN! Alles soll brennen! Stoßt den Turm um und schmelzt das Schiff! Gießt unser Blut in das kochende flüssige Eisen und reinigt damit Talos-II!",
+    "featureDesc": " – Gegner sind stärker, und <@ba.key>weitere Gegner werden auftauchen</>.\n – Explosive Feuernebel-Originium-Schnecken tauchen in regelmäßigen Abständen auf.\n – <@ba.key>Operatoren bringen kein Perfektes Ausweichen zustande</>.\n\n <@ba.info>– Taktische Mittel und Verbrauchsgegenstände können nicht verwendet werden.</>\n <@ba.info>– Gegner haben dieselbe Resistenz gegen jedes Element.</>"
+  },
+  "indie_hard010": {
+    "name": "Gezeitentrauer",
+    "description": "An diesem Ort hat sich über Jahre hinweg Leid aufgestaut. Sieh nur, wie sich das Licht in den tosenden Gezeiten bricht. Die ausgestoßenen mörderischen Absichten sind von jedweder Emotion entbehrt.",
+    "featureDesc": " – Gegner greifen nicht aktiv an. Stattdessen versuchen sie, die Mitte des Schlachtfelds zu erreichen, wo sie <@ba.key>explodieren</> und allen Operatoren massiven SDN zufügen.\n – Einige Gegner sind viel schwerer zu unterbrechen.\n\n <@ba.info>– Gegner haben dieselbe Resistenz gegen jedes Element.</>"
+  },
+  "indie_hard010_s": {
+    "name": "Gezeitentrauer: Tortur",
+    "description": "An diesem Ort hat sich über Jahre hinweg Leid aufgestaut. Sieh nur, wie sich das Licht in den tosenden Gezeiten bricht. Die ausgestoßenen mörderischen Absichten sind von jedweder Emotion entbehrt.",
+    "featureDesc": " – Gegner greifen nicht aktiv an. Stattdessen versuchen sie, die Mitte des Schlachtfelds zu erreichen, wo sie <@ba.key>explodieren</> und allen Operatoren massiven SDN zufügen.\n – Einige Gegner sind viel schwerer zu unterbrechen.\n\n <@ba.info>– Taktische Mittel und Verbrauchsgegenstände können nicht verwendet werden.</>\n <@ba.info>– Gegner haben dieselbe Resistenz gegen jedes Element.</>"
+  },
+  "indie_hard011": {
+    "name": "Kryostatische Verbindung",
+    "description": "Extreme Kälte verbindet sie. Die tosenden Wellen und trüben Unterströmungen geben ihnen einen gemeinsamen Namen und erklären ihre Entstehung.",
+    "featureDesc": " – Gegner sind stärker.\n\n <@ba.info>– Gegner haben dieselbe Resistenz gegen jedes Element.</>"
+  },
+  "indie_hard011_s": {
+    "name": "Kryostatische Verbindung: Tortur",
+    "description": "Extreme Kälte verbindet sie. Die tosenden Wellen und trüben Unterströmungen geben ihnen einen gemeinsamen Namen und erklären ihre Entstehung.",
+    "featureDesc": " – Gegner sind stärker.\n – Wenn verbessert, wenden alle Arten von durch den Gegner verursachten SDN sofort <@ba.cryst>Erstarrung</> auf Operatoren an.\n\n <@ba.info>– Taktische Mittel und Verbrauchsgegenstände können nicht verwendet werden.</>\n <@ba.info>– Gegner haben dieselbe Resistenz gegen jedes Element.</>"
+  },
+  "indie_hard012": {
+    "name": "Blut-Erniedrigung",
+    "description": "Sie labten sich am Dreck des Landes, bis sie platzten und ihr dickes, fauliges Blut vergossen, einen verfluchten Saft, der jeden gefangen hält, der ihn erblickt.",
+    "featureDesc": " – Gegner sind stärker.\n– Das Aufgeladene Federbiest ruft regelmäßig Federbiester herbei.\n\n <@ba.info>– Gegner haben dieselbe Resistenz gegen jedes Element.</>"
+  },
+  "indie_hard012_s": {
+    "name": "Blut-Erniedrigung: Tortur",
+    "description": "Sie labten sich am Dreck des Landes, bis sie platzten und ihr dickes, fauliges Blut vergossen, einen verfluchten Saft, der jeden gefangen hält, der ihn erblickt.",
+    "featureDesc": " – Gegner sind stärker.\n – Das Aufgeladene Federbiest ruft regelmäßig Federbiester herbei. Bei niedrigen LP <@ba.key>ruft es noch mehr</> Federbiester herbei.\n\n <@ba.info>– Taktische Mittel und Verbrauchsgegenstände können nicht verwendet werden.</>\n <@ba.info>– Gegner haben dieselbe Resistenz gegen jedes Element.</>"
+  },
+  "indie_hard013": {
+    "name": "Stiller Horizont",
+    "description": "Die Hoffnung wird nie in dieses Land zurückkehren. Tiere wie Menschen sind gleichermaßen verwest und haben nur Wesen mit leblosen Blicken zurückgelassen, die sich durch das dichte, brodelnde Nebelfeuer schleppen.",
+    "featureDesc": " – Gegner haben bessere Werte.\n– Gegner erhalten fortlaufend ANG.\n\n <@ba.info>– Gegner haben dieselbe Resistenz gegen jedes Element.</>"
+  },
+  "indie_hard013_s": {
+    "name": "Stiller Horizont: Tortur",
+    "description": "Die Hoffnung wird nie in dieses Land zurückkehren. Tiere wie Menschen sind gleichermaßen verwest und haben nur Wesen mit leblosen Blicken zurückgelassen, die sich durch das dichte, brodelnde Nebelfeuer schleppen.",
+    "featureDesc": " – Gegner haben bessere Werte.\n– Gegner erhalten fortlaufend ANG.\n\n <@ba.info>– Taktische Mittel und Verbrauchsgegenstände können nicht verwendet werden.</>\n <@ba.info>– Gegner haben dieselbe Resistenz gegen jedes Element.</>"
+  },
+  "indie_hard014": {
+    "name": "Versiegte See",
+    "description": "Die trüben Strömungen werden sich schließlich legen. Die Bestien werden warten, bis die gewaltige Streitaxt die zerbrochenen Ruinen der alten Zeit durchbricht und einen Weg zu neuen Möglichkeiten bahnt.",
+    "featureDesc": " – Gegner haben bessere Werte.\n\n <@ba.info>– Gegner haben dieselbe Resistenz gegen jedes Element.</>"
+  },
+  "indie_hard014_s": {
+    "name": "Versiegte See: Tortur",
+    "description": "Die trüben Strömungen werden sich schließlich legen. Die Bestien werden warten, bis die gewaltige Streitaxt die zerbrochenen Ruinen der alten Zeit durchbricht und einen Weg zu neuen Möglichkeiten bahnt.",
+    "featureDesc": " – Gegner haben bessere Werte.\n\n <@ba.info>– Taktische Mittel und Verbrauchsgegenstände können nicht verwendet werden.</>\n <@ba.info>– Gegner haben dieselbe Resistenz gegen jedes Element.</>"
+  },
+  "indie_hard015": {
+    "name": "Unterstrom-Kluft",
+    "description": "Unter den lautlosen Wassern, in denen eisige, dunkle Strömungen still fließen, existieren Abgründe, in denen anorganische Konstrukte lauern.",
+    "featureDesc": " – Gegner sind stärker.\n– Der Steingolem beschwört mehr Aggeloi.\n\n <@ba.info>– Gegner haben dieselbe Resistenz gegen jedes Element.</>"
+  },
+  "indie_hard015_s": {
+    "name": "Unterstrom-Kluft: Tortur",
+    "description": "Unter den lautlosen Wassern, in denen eisige, dunkle Strömungen still fließen, existieren Abgründe, in denen anorganische Konstrukte lauern.",
+    "featureDesc": " – Gegner sind stärker.\n– Der Steingolem beschwört mehr Aggeloi.\n\n <@ba.info>– Taktische Mittel und Verbrauchsgegenstände können nicht verwendet werden.</>\n <@ba.info>– Gegner haben dieselbe Resistenz gegen jedes Element.</>"
+  },
+  "indie_hard016": {
+    "name": "Ritueller Wirbel",
+    "description": "Ein Licht blendete die Sicht der Leute, als sie aus Verzweiflung und Zorn ihren Blick auf den Mahlstrom richteten. Ihre Schreie vermischten sich mit dem ohrenbetäubenden Donner, während der Träger des Leuchtfeuers in den Zerklüfteten Ländern wartete.",
+    "featureDesc": " – Der Knochenbrecher-Pyromant beschwört in regelmäßigen Abständen seine <@ba.key>Doppelgänger</> und kanalisiert für eine bestimmte Dauer seine ultimative Fertigkeit. Die ultimative Fertigkeit fügt allen Operatoren massiven SDN zu, sobald die Kanalisierung abgeschlossen ist. Besiege alle <@ba.key>Doppelgänger</>, um die ultimative Fertigkeit des Pyromanten zu unterbrechen.\n – Gegner erleiden zusätzlichen SDN durch <@ba.key>Wuchtschläge</>. Außerdem wird die gegnerische Dauer von Taumelnd stark verringert.\n \n <@ba.info>– Gegner haben dieselbe Resistenz gegen jedes Element.</>"
+  },
+  "indie_hard016_s": {
+    "name": "Ritueller Wirbel: Tortur",
+    "description": "Ein Licht blendete die Sicht der Leute, als sie aus Verzweiflung und Zorn ihren Blick auf den Mahlstrom richteten. Ihre Schreie vermischten sich mit dem ohrenbetäubenden Donner, während der Träger des Leuchtfeuers in den Zerklüfteten Ländern wartete.",
+    "featureDesc": " – Der Knochenbrecher-Pyromant beschwört in regelmäßigen Abständen seine <@ba.key>Doppelgänger</> und kanalisiert für eine bestimmte Dauer seine ultimative Fertigkeit. Die ultimative Fertigkeit fügt allen Operatoren massiven SDN zu, sobald die Kanalisierung abgeschlossen ist. Besiege alle <@ba.key>Doppelgänger</>, um die ultimative Fertigkeit des Pyromanten zu unterbrechen.\n – Gegner erleiden zusätzlichen SDN durch <@ba.key>Wuchtschläge</>. Außerdem wird die gegnerische Dauer von Taumelnd stark verringert.\n\n <@ba.info>– Taktische Mittel und Verbrauchsgegenstände können nicht verwendet werden.</>\n <@ba.info>– Gegner haben dieselbe Resistenz gegen jedes Element.</>"
+  },
+  "indie_hard017": {
+    "name": "Æthillu-Krise",
+    "description": "Der Staub der Vergessenheit blendet jede Sicht, während das Klagelied mit jeder Note lauter ansteigt. Das Fleisch der Æthillu-Krise ist verschüttet worden, sodass der Tod die ganze Welt erstickt.",
+    "featureDesc": " – Der gesteuerte Operator wird in regelmäßigen Abständen <@ba.key>versiegelt</>.\n \n <@ba.info>– Gegner haben dieselbe Resistenz gegen jedes Element.</>"
+  },
+  "indie_hard017_s": {
+    "name": "Æthillu-Krise: Tortur",
+    "description": "Der Staub der Vergessenheit blendet jede Sicht, während das Klagelied mit jeder Note lauter ansteigt. Das Fleisch der Æthillu-Krise ist verschüttet worden, sodass der Tod die ganze Welt erstickt.",
+    "featureDesc": " – Der gesteuerte Operator wird in regelmäßigen Abständen <@ba.key>versiegelt</>. Dieses <@ba.key>Siegel</> hält auch viel länger an.\n\n <@ba.info>– Taktische Mittel und Verbrauchsgegenstände können nicht verwendet werden.</>\n <@ba.info>– Gegner haben dieselbe Resistenz gegen jedes Element.</>"
+  },
+  "indie_hard018": {
+    "name": "Furioses Trommeln",
+    "description": "Das donnernde Wesen wird in diese Lande gelockt und zertritt die Toten und ihre qualvolle Pein. Der Krieg zwischen Leben und Tod wird niemals enden.",
+    "featureDesc": " – Befindet sich der Himmelstrommler im Zustand „Raserei“, erzeugt er Schutzschilde. <@ba.key>Technikreaktionen</> oder <@ba.phy>Physische Zustände</>, die von Operatoren verursacht werden, entfernen 1 Schildkumulierung.\n \n <@ba.info>– Gegner haben dieselbe Resistenz gegen jedes Element.</>"
+  },
+  "indie_hard018_s": {
+    "name": "Furioses Trommeln: Tortur",
+    "description": "Das donnernde Wesen wird in diese Lande gelockt und zertritt die Toten und ihre qualvolle Pein. Der Krieg zwischen Leben und Tod wird niemals enden.",
+    "featureDesc": " – Ist der Himmelstrommler ruhig, erzeugt er jedes Mal einen <@ba.key>Wirbel</>, wenn er dem gesteuerten Operator SDN zufügt.\n– Befindet sich der Himmelstrommler im Zustand „Raserei“, absorbiert er alle <@ba.key>Wirbel</> auf dem Schlachtfeld, um Schutzschilde zu erzeugen. Jeder <@ba.key>absorbierte</> Wirbel erhöht die Anzahl der Schildkumulierungen. <@ba.key>Technikreaktionen</> oder <@ba.phy>Physische Zustände</>, die von Operatoren verursacht werden, entfernen 1 Schildkumulierung.\n\n <@ba.info>– Taktische Mittel und Verbrauchsgegenstände können nicht verwendet werden.</>\n <@ba.info>– Gegner haben dieselbe Resistenz gegen jedes Element.</>"
+  },
+  "indie_hard019": {
+    "name": "Dornige Schlachtreihe",
+    "description": "Schärft eure Speere. Verstärkt eure Schilde. Werdet Zeuge eures Hasses und hört auf eure Schwäche. Dann marschiert voran und versenkt eure Waffen im Fleisch des Todes.",
+    "featureDesc": " – Gegner haben bessere Werte.\n – Prismen erhöhen den ANG der Hedra.\n – Prismen lassen sich sehr viel schwerer unterbrechen.\n \n <@ba.info>– Gegner haben dieselbe Resistenz gegen jedes Element.</>"
+  },
+  "indie_hard019_s": {
+    "name": "Dornige Schlachtreihe: Tortur",
+    "description": "Schärft eure Speere. Verstärkt eure Schilde. Werdet Zeuge eures Hasses und hört auf eure Schwäche. Dann marschiert voran und versenkt eure Waffen im Fleisch des Todes.",
+    "featureDesc": " – Gegner haben bessere Werte.\n– Prismen erhöhen den ANG der Hedra.\n– Prismen lassen sich sehr viel schwerer unterbrechen.\n\n <@ba.info>– Taktische Mittel und Verbrauchsgegenstände können nicht verwendet werden.</>\n <@ba.info>– Gegner haben dieselbe Resistenz gegen jedes Element.</>"
+  },
+  "indie_hard020": {
+    "name": "Lösliche Augen",
+    "description": "Die Flüsse vereinen sich zu einem kalten Strom aus Blut. Aus den klaffenden Tiefen und unter den stygischen Strömungen blicken die Löslichen weiter.",
+    "featureDesc": " – Gegner haben bessere Werte.\n– Zu den gegnerischen Kräften gehören Gezeitenwanderer δ.\n \n <@ba.info>– Gegner haben dieselbe Resistenz gegen jedes Element.</>"
+  },
+  "indie_hard020_s": {
+    "name": "Lösliche Augen: Tortur",
+    "description": "Die Flüsse vereinen sich zu einem kalten Strom aus Blut. Aus den klaffenden Tiefen und unter den stygischen Strömungen blicken die Löslichen weiter.",
+    "featureDesc": " – Gegner haben bessere Werte.\n– Zu den gegnerischen Kräften gehören Gezeitenwanderer δ.\n\n <@ba.info>– Taktische Mittel und Verbrauchsgegenstände können nicht verwendet werden.</>\n <@ba.info>– Gegner haben dieselbe Resistenz gegen jedes Element.</>"
+  },
+  "indie_hard021": {
+    "name": "Wanderung durchs Wüstlingsgebiet",
+    "description": "Krallen kratzen im Verborgenen, während der Massenansturm marschiert und Flüsse sich spalten. Die Besiegten ziehen weiter und fliehen, doch die Jungen vergessen, den Hass zu erwidern.",
+    "featureDesc": " – Gegner haben bessere Werte.\n– Die Funkelnde Wüstlingsbestie befindet sich dauerhaft im Zustand <@ba.key>Raserei</> und ihr ANG steigt mit sinkenden LP.\n \n <@ba.info>– Gegner haben dieselbe Resistenz gegen jedes Element.</>"
+  },
+  "indie_hard021_s": {
+    "name": "Wanderung durchs Wüstlingsgebiet: Tortur",
+    "description": "Krallen kratzen im Verborgenen, während der Massenansturm marschiert und Flüsse sich spalten. Die Besiegten ziehen weiter und fliehen, doch die Jungen vergessen, den Hass zu erwidern.",
+    "featureDesc": " – Gegner haben bessere Werte.\n– Die Funkelnde Wüstlingsbestie befindet sich dauerhaft im Zustand <@ba.key>Raserei</> und ihr ANG steigt mit sinkenden LP.\n\n <@ba.info>– Taktische Mittel und Verbrauchsgegenstände können nicht verwendet werden.</>\n <@ba.info>– Gegner haben dieselbe Resistenz gegen jedes Element.</>"
+  },
+  "indie_hard022": {
+    "name": "Welterschütterndes Nebelfeuer",
+    "description": "„Ich halte den STAB! Das Nebelfeuer ist mein HAMMA! Diese Berge sind die TROMMELN und ich …! BIN! DER! TROMMLAAA!“",
+    "featureDesc": " – Der Knochenbrecher-Pyromant wirkt pausenlos Nebelfeuer und fügt allen Operatoren SDN zu. Er ist außerdem schwieriger zu unterbrechen und immun gegen Taumel-SDN.\n– Wenn der Knochenbrecher-Pyromant <@ba.key>Technikexplosion</>-SDN erleidet, erleidet er zusätzlichen SDN in Höhe eines Prozentsatzes seiner max. LP, und er wird vorübergehend <@ba.key>versiegelt</>.\n– Der Knochenbrecher-Pyromant ruft weiter Elite-Plünderer und Elite-Wegelagerer.\n– Wenn du einen Gegner mit einer <@ba.key>Technikkumulierung</> besiegst, erleiden alle anderen Gegner 1 Kumulierung derselben <@ba.key>Technikkumulierung</>.\n\n <@ba.info>– Gegner haben dieselbe Resistenz gegen jedes Element.</>"
+  },
+  "indie_hard022_s": {
+    "name": "Welterschütterndes Nebelfeuer: Tortur",
+    "description": "„Ich halte den STAB! Das Nebelfeuer ist mein HAMMA! Diese Berge sind die TROMMELN und ich …! BIN! DER! TROMMLAAA!“",
+    "featureDesc": " – Der Knochenbrecher-Pyromant wirkt pausenlos Nebelfeuer und fügt allen Operatoren SDN zu. Wenn seine LP niedrig sind, verursacht sein Nebelfeuer außerdem <@ba.fire>Hitzekumulierung</>. Er ist außerdem schwieriger zu unterbrechen und immun gegen Taumel-SDN.\n– Wenn der Knochenbrecher-Pyromant <@ba.key>Technikexplosion</>-SDN erleidet, erleidet er zusätzlichen SDN in Höhe eines Prozentsatzes seiner max. LP, und er wird vorübergehend <@ba.key>versiegelt</>.\n– Der Knochenbrecher-Pyromant ruft weiter Elite-Plünderer und Elite-Wegelagerer.\n– Wenn du einen Gegner mit einer <@ba.key>Technikkumulierung</> besiegst, erleiden alle anderen Gegner 1 Kumulierung derselben <@ba.key>Technikkumulierung</>.\n\n <@ba.info>– Taktische Mittel und Verbrauchsgegenstände können nicht verwendet werden.</>\n <@ba.info>– Gegner haben dieselbe Resistenz gegen jedes Element.</>"
+  },
+  "indie_hard023": {
+    "name": "Fetzbestie und Freunde",
+    "description": "Menschen mögen vielleicht geschickt sein, aber Bestien sind gewitzt. Du willst wissen, wer der Beste ist? Das ist deine Gelegenheit, es herauszufinden.",
+    "featureDesc": " – <@ba.key>Operatoren haben keine FP-Wiederherstellung mehr</>.\n – Der gesteuerte Operator erhält einige FP zurück, wenn er auf Bananenschalen tritt, die die Felsenheuler werfen.\n – Die Gepanzerte Fetzbestie wirkt in regelmäßigen Abständen ihre Ultimative Fertigkeit. Die Ultimative Fertigkeit entfernt alle Bananenschalen vom Schlachtfeld und fügt allen Operatoren kontinuierlich SDN zu. Solange die Gepanzerte Fetzbestie ihre Ultimative Fertigkeit wirkt, erhält sie hohe SDN-Reduzierung. <@ba.key>Angriffsunterbrechungen</> können den Einsatz dieser Ultimativen Fertigkeit verhindern.\n\n <@ba.info>– Gegner haben dieselbe Resistenz gegen jedes Element.</>"
+  },
+  "indie_hard023_s": {
+    "name": "Fetzbestie und Freunde: Tortur",
+    "description": "Menschen mögen vielleicht geschickt sein, aber Bestien sind gewitzt. Du willst wissen, wer der Beste ist? Das ist deine Gelegenheit, es herauszufinden.",
+    "featureDesc": " – <@ba.key>Operatoren haben keine FP-Wiederherstellung mehr</>.\n – Der gesteuerte Operator erhält einige FP zurück, wenn er auf Bananenschalen tritt, die die Felsenheuler werfen.\n – Die Gepanzerte Fetzbestie wirkt in regelmäßigen Abständen ihre Ultimative Fertigkeit. Die Ultimative Fertigkeit entfernt alle Bananenschalen vom Schlachtfeld und fügt allen Operatoren kontinuierlich SDN zu. Solange die Gepanzerte Fetzbestie ihre Ultimative Fertigkeit wirkt, erhält sie hohe SDN-Reduzierung. <@ba.key>Mehrfache Angriffsunterbrechungen</> können den Einsatz dieser Ultimativen Fertigkeit verhindern.\n\n <@ba.info>– Taktische Mittel und Verbrauchsgegenstände können nicht verwendet werden.</>\n <@ba.info>– Gegner haben dieselbe Resistenz gegen jedes Element.</>"
+  },
+  "indie_hard024": {
+    "name": "König der Klippe",
+    "description": "Kommt nicht oft vor, dass Heuler um die Vorherrschaft kämpfen. Der Sieger besteigt den Thron. Von den Verlierern bleiben nur Knochen übrig … Also zieht eure Klingen und Knarren. Der neue König der Klippe wurde gekrönt.",
+    "featureDesc": "– Die Dauer von <@ba.fire>Verbrannt</>, <@ba.pulse>Elektrifiziert</>, <@ba.natur>Korrosion</>, <@ba.cryst>Erstarrt</> und <@ba.phy>Brechen</> auf dem Klippenheuler wird permanent. \n– Die Effekte von <@ba.fire>Verbrannt</>, <@ba.pulse>Elektrifiziert</>, <@ba.natur>Korrosion</>, <@ba.cryst>Zersplittern</> und <@ba.phy>Brechen</> auf dem Klippenheuler werden ebenfalls stärker. Die zuvor erwähnten Technikreaktionen und physischen Zustände bleiben ebenfalls nach dem <@ba.key>Verbrauch</> bestehen.\n– Der Klippenheuler entfesselt regelmäßig ein wildes Brüllen. Das wilde Brüllen fügt allen Operatoren <@ba.key>Betäubung</> zu.\n\n <@ba.info>– Gegner haben dieselbe Resistenz gegen jedes Element.</>"
+  },
+  "indie_hard024_s": {
+    "name": "König der Klippe: Tortur",
+    "description": "Kommt nicht oft vor, dass Heuler um die Vorherrschaft kämpfen. Der Sieger besteigt den Thron. Von den Verlierern bleiben nur Knochen übrig … Also zieht eure Klingen und Knarren. Der neue König der Klippe wurde gekrönt.",
+    "featureDesc": "– Die Dauer von <@ba.fire>Verbrannt</>, <@ba.pulse>Elektrifiziert</>, <@ba.natur>Korrosion</>, <@ba.cryst>Erstarrt</> und <@ba.phy>Brechen</> auf dem Klippenheuler wird permanent. \n– Die Effekte von <@ba.fire>Verbrannt</>, <@ba.pulse>Elektrifiziert</>, <@ba.natur>Korrosion</>, <@ba.cryst>Zersplittern</> und <@ba.phy>Brechen</> auf dem Klippenheuler werden ebenfalls stärker. Die zuvor erwähnten Technikreaktionen und physischen Zustände bleiben ebenfalls nach dem <@ba.key>Verbrauch</> bestehen.\n– Der Klippenheuler entfesselt regelmäßig ein wildes Brüllen. Das wilde Brüllen fügt allen Operatoren <@ba.key>Betäubung</> zu. Im Laufe des Kampfes wird die Dauer der durch das wilde Brüllen des Klippenheulers ausgelösten <@ba.key>Betäubung</> immer mehr verlängert.\n\n<@ba.info>– Taktische Mittel und Verbrauchsgegenstände können nicht verwendet werden.</>\n<@ba.info>– Gegner haben dieselbe Resistenz gegen jedes Element.</>"
+  },
+  "indie_hard025": {
+    "name": "Besucher von Qingbo",
+    "description": "Die Gruppe Qingbo-Palisadeure singt das Lied der Klingen. Da sie sich nicht länger nach einer Heimat sehnten, die noch nicht existierte, trieben ihr Heldenmut und ihre ungezähmten Ambitionen sie weiter hinauf zum Gipfel.",
+    "featureDesc": " – Wenn der Gegner besiegt wird, erhalten alle anderen Gegner ein paar LP zurück, und ihr ANG sowie ihre max. LP steigen permanent.\n\n <@ba.info>– Gegner haben dieselbe Resistenz gegen jedes Element.</>"
+  },
+  "indie_hard025_s": {
+    "name": "Besucher von Qingbo: Tortur",
+    "description": "Die Gruppe Qingbo-Palisadeure singt das Lied der Klingen. Da sie sich nicht länger nach einer Heimat sehnten, die noch nicht existierte, trieben ihr Heldenmut und ihre ungezähmten Ambitionen sie weiter hinauf zum Gipfel.",
+    "featureDesc": " – Wenn der Gegner besiegt wird, erhalten alle anderen Gegner ein paar LP zurück, und ihr ANG sowie ihre max. LP steigen permanent.\n\n <@ba.info>– Taktische Mittel und Verbrauchsgegenstände können nicht verwendet werden.</>\n <@ba.info>– Gegner haben dieselbe Resistenz gegen jedes Element.</>"
+  },
+  "indie_hard026": {
+    "name": "Wildes Gemetzel der Schatten",
+    "description": "Sich windende Klauen wilder Bestien reckten sich zuerst aus den Schatten hervor. Später erfuhren wir, dass das gnadenlose Licht seine Spuren in ihrem wilden Wesen hinterlassen hatte.",
+    "featureDesc": " – Ein Gegner in <@ba.key>ätherischem</> Zustand ist immun gegen SDN und kann nicht anvisiert werden.\n – Sobald der Kampf beginnt, aktiviert der Federbiest-Verderbnisschatten einen <@ba.key>ätherischen</> Zustand und führt unablässig Rammangriffe aus. Der Wüstlingsbestie-Verderbnisschatten hingegen gewährt sich selbst immer wieder einen <@ba.key>Schild</>. Das Rammen des Federbiest-Verderbnisschattens kann diesen <@ba.key>Schild</> zersplittern lassen.\n – Gehen dem Wüstlingsbestie-Verderbnisschatten die LP aus, wird sein <@ba.key>ätherischer</> Zustand aktiviert und der <@ba.key>ätherische</> Zustand des Federbiest-Verderbnisschattens endet. Anschließend wirkt der Wüstlingsbestie-Verderbnisschatten regelmäßig Donnerwetter auf den gesteuerten Operator (bis zu insgesamt <@ba.key>5</> Donnerwetter). Donnerwetter-SDN kann man nicht ausweichen. Das Anwenden von <@ba.key>Technikexplosion</>, <@ba.phy>Brechen</> oder <@ba.phy>Zertrümmern</> auf den Federbiest-Verderbnisschatten erzeugt <@ba.key>Blitzkugeln</>. Der gesteuerte Operator kann eine <@ba.key>Blitzkugel</> aufheben, um einen Schild zum Blocken des SDN von <@ba.key>1</> Donnerwetter zu erhalten.\n – Gehen dem Federbiest-Verderbnisschatten die LP aus, endet sein <@ba.key>ätherischer</> Zustand. Die Gegner greifen dann gemeinsam an.\n\n <@ba.info>– Gegner haben dieselbe Resistenz gegen jedes Element.</>"
+  },
+  "indie_hard026_s": {
+    "name": "Wildes Gemetzel der Schatten: Tortur",
+    "description": "Sich windende Klauen wilder Bestien reckten sich zuerst aus den Schatten hervor. Später erfuhren wir, dass das gnadenlose Licht seine Spuren in ihrem wilden Wesen hinterlassen hatte.",
+    "featureDesc": " – Ein Gegner in <@ba.key>ätherischem</> Zustand ist immun gegen SDN und kann nicht anvisiert werden.\n – Sobald der Kampf beginnt, aktiviert der Federbiest-Verderbnisschatten einen <@ba.key>ätherischen</> Zustand und führt unablässig Rammangriffe aus. Der Wüstlingsbestie-Verderbnisschatten hingegen gewährt sich selbst immer wieder einen <@ba.key>Schild</>. Das Rammen des Federbiest-Verderbnisschattens kann diesen <@ba.key>Schild</> zersplittern lassen.\n – Gehen dem Wüstlingsbestie-Verderbnisschatten die LP aus, wird sein <@ba.key>ätherischer</> Zustand aktiviert und der <@ba.key>ätherische</> Zustand des Federbiest-Verderbnisschattens endet. Anschließend wirkt der Wüstlingsbestie-Verderbnisschatten regelmäßig Donnerwetter auf den gesteuerten Operator (bis zu insgesamt <@ba.key>7</> Donnerwetter). Donnerwetter-SDN kann man nicht ausweichen. Das Anwenden von <@ba.key>Technikexplosion</>, <@ba.phy>Brechen</> oder <@ba.phy>Zertrümmern</> auf den Federbiest-Verderbnisschatten erzeugt <@ba.key>Blitzkugeln</>. Der gesteuerte Operator kann eine <@ba.key>Blitzkugel</> aufheben, um einen Schild zum Blocken des SDN von <@ba.key>1</> Donnerwetter zu erhalten.\n – Gehen dem Federbiest-Verderbnisschatten die LP aus, endet sein <@ba.key>ätherischer</> Zustand. Die Gegner greifen dann gemeinsam an.\n\n <@ba.info>– Taktische Mittel und Verbrauchsgegenstände können nicht verwendet werden.</>\n <@ba.info>– Gegner haben dieselbe Resistenz gegen jedes Element.</>"
+  },
+  "indie_hard027": {
+    "name": "Lichtbogen der Schattenflamme",
+    "description": "Die breite Klinge ruft das spaltende Element herab, um sich selbst aufzuladen. So werden die gespenstischen Bilder von Krieg und Gemetzel weiterhin hell über diesem Land leuchten.",
+    "featureDesc": " – Die Abklingzeit aller Kampffertigkeiten der Operatoren wurde um 60 Sek. verlängert.\n – Zu Beginn des Kampfes werden alle Operatoren in den Zustand <@ba.key>Leitfähig</> versetzt und erleiden abhängig von der Anzahl der <@ba.pulse>Elektrik</>-Kumulierungen, mit denen sie belegt sind, kontinuierlichen <@ba.pulse>Elektrischen SDN</>.\n – Wenn ein Operator im Zustand <@ba.key>Leitfähig</> eine Kampffertigkeit wirkt, wendet der YSE-Hauptmann-Verderbnisschatten 1 Kumulierung <@ba.pulse>Elektrik</> auf alle Operatoren an. Immer wenn der YSE-Hauptmann-Verderbnisschatten Operatoren zum <@ba.key>4.</> Mal mit <@ba.pulse>Elektrik</> belegt hat, wird die Abklingzeit der Kampffertigkeiten aller Operatoren zurückgesetzt, alle Kumulierungen von <@ba.pulse>Elektrik</> werden von den Operatoren <@ba.key>geläutert</> und der YSE-Hauptmann-Verderbnisschatten wird mit <@ba.pulse>Level-4-Elektrifizierung</> belegt.\n\n <@ba.info>– Gegner haben dieselbe Resistenz gegen jedes Element.</>"
+  },
+  "indie_hard027_s": {
+    "name": "Lichtbogen der Schattenflamme: Tortur",
+    "description": "Die breite Klinge ruft das spaltende Element herab, um sich selbst aufzuladen. So werden die gespenstischen Bilder von Krieg und Gemetzel weiterhin hell über diesem Land leuchten.",
+    "featureDesc": " – Die Abklingzeit aller Kampffertigkeiten der Operatoren wurde um 60 Sek. verlängert.\n – Der YSE-Hauptmann-Verderbnisschatten wendet regelmäßig 1 Kumulierung von <@ba.pulse>Elektrik</> auf alle Operatoren an.\n – Zu Beginn des Kampfes werden alle Operatoren in den Zustand <@ba.key>Leitfähig</> versetzt und erleiden abhängig von der Anzahl der <@ba.pulse>Elektrik</>-Kumulierungen, mit denen sie belegt sind, kontinuierlichen <@ba.pulse>Elektrischen SDN</>.\n – Wenn ein Operator im Zustand <@ba.key>Leitfähig</> eine Kampffertigkeit wirkt, wendet der YSE-Hauptmann-Verderbnisschatten 1 Kumulierung <@ba.pulse>Elektrik</> auf alle Operatoren an. Immer wenn der YSE-Hauptmann-Verderbnisschatten Operatoren zum <@ba.key>4.</> Mal mit <@ba.pulse>Elektrik</> belegt hat, wird die Abklingzeit der Kampffertigkeiten aller Operatoren zurückgesetzt, alle Kumulierungen von <@ba.pulse>Elektrik</> werden von den Operatoren <@ba.key>geläutert</> und der YSE-Hauptmann-Verderbnisschatten wird mit <@ba.pulse>Level-4-Elektrifizierung</> belegt.\n\n <@ba.info>– Taktische Mittel und Verbrauchsgegenstände können nicht verwendet werden.</>\n <@ba.info>– Gegner haben dieselbe Resistenz gegen jedes Element.</>"
+  },
+  "indie_hard028": {
+    "name": "Plötzliches Gebrüll der Vergessenheit",
+    "description": "„Die Zeit ist abgelaufen. Möge der endlose Kreislauf der Vergessenheit beginnen.“",
+    "featureDesc": "– <@ba.key>Operatoren haben keine FP-Wiederherstellung mehr</>. \n– Nach Kampfbeginn werden die anfänglichen FP und max. FP der Operatoren auf 1.000 erhöht. \n– Reißbiest-Verderbnisschatten und YSE-Vorhut-Verderbnisschatten <@ba.key>explodieren</> nach einer Weile und fügen basierend auf den max. LP allen Operatoren SDN zu. \n– Der YSE-Glefenträger-Verderbnisschatten muss <@ba.key>mehrfach unterbrochen werden</>, um ihn am Einsatz seiner Ultimativen Fertigkeit zu hindern. SDN von dieser Ultimativen Fertigkeit kann man nicht ausweichen. \n– Dauert der Kampf zu lange, <@ba.key>explodiert</> der YSE-Glefenträger-Verderbnisschatten und besiegt dabei alle Operatoren. \n– Wenn Gegner Taumeln, wird ihr <@ba.key>Selbstzündungs</>-Timer pausiert. \n\n<@ba.info>– Gegner haben dieselbe Resistenz gegen jedes Element.</>"
+  },
+  "indie_hard028_s": {
+    "name": "Plötzliches Gebrüll der Vergessenheit: Tortur",
+    "description": "„Die Zeit ist abgelaufen. Möge der endlose Kreislauf der Vergessenheit beginnen.“",
+    "featureDesc": "– <@ba.key>Operatoren haben keine FP-Wiederherstellung mehr. Abschlussangriffe und Wuchtschläge stellen keine FP mehr her</>. \n– Nach Kampfbeginn werden die anfänglichen FP und max. FP der Operatoren auf 1.000 erhöht. \n– Reißbiest-Verderbnisschatten und YSE-Vorhut-Verderbnisschatten <@ba.key>explodieren</> nach einer Weile und fügen basierend auf den max. LP allen Operatoren SDN zu. \n– Der YSE-Glefenträger-Verderbnisschatten muss <@ba.key>mehrfach unterbrochen werden</>, um ihn am Einsatz seiner Ultimativen Fertigkeit zu hindern. SDN von dieser Ultimativen Fertigkeit kann man nicht ausweichen. \n– Dauert der Kampf zu lange, <@ba.key>explodiert</> der YSE-Glefenträger-Verderbnisschatten und besiegt dabei alle Operatoren. \n– Wenn Gegner Taumeln, wird ihr <@ba.key>Selbstzündungs</>-Timer pausiert. \n\n<@ba.info>– Taktische Mittel und Verbrauchsgegenstände können nicht verwendet werden.</> \n<@ba.info>– Gegner haben dieselbe Resistenz gegen jedes Element.</>"
+  },
+  "indie_hard029": {
+    "name": "Triaggeläre Zielerfassung",
+    "description": "Die Zeugen schweigen und leiden. Wenn jedes Erinnerungsstück zur bloßen Illusion wird, bleibt uns nur noch das Vergessen als einzige Option.",
+    "featureDesc": " – Gegner können sich nicht bewegen, verfügen aber über eine enorm vergrößerte Angriffsreichweite.\n\n <@ba.info>– Gegner haben dieselbe Resistenz gegen jedes Element.</>"
+  },
+  "indie_hard029_s": {
+    "name": "Triaggeläre Zielerfassung: Tortur",
+    "description": "Die Zeugen schweigen und leiden. Wenn jedes Erinnerungsstück zur bloßen Illusion wird, bleibt uns nur noch das Vergessen als einzige Option.",
+    "featureDesc": " – Gegner können sich nicht bewegen, verfügen aber über eine enorm vergrößerte Angriffsreichweite.\n – Wenn der erste Gegner besiegt wird, erhalten die anderen Gegner einen ANG-Boost und ihr ANG-Tempo wird erhöht.\n\n <@ba.info>– Taktische Mittel und Verbrauchsgegenstände können nicht verwendet werden.</>\n <@ba.info>– Gegner haben dieselbe Resistenz gegen jedes Element.</>"
+  }
+}

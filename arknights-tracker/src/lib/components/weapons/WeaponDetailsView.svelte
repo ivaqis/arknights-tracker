@@ -5,7 +5,7 @@
     import { onMount } from "svelte";
     import { browser } from "$app/environment";
     import { pullData } from "$lib/stores/pulls";
-    import { currentLocale } from "$lib/stores/locale";
+    import { currentLocale, currentUiLocale, normalizeLocale } from "$lib/stores/locale";
     import { progression } from "$lib/data/items/progression.js";
     import { currencies } from "$lib/data/items/currencies.js";
     import { characters } from "$lib/data/characters.js";
@@ -48,7 +48,7 @@
 
     function formatNumberForSelection(num) {
         if (num === undefined || num === null) return "0";
-        const formatted = num.toLocaleString("ru-RU");
+        const formatted = num.toLocaleString(normalizeLocale($currentUiLocale));
         return formatted.replace(
             /[\s\u00A0\u202F]/g,
             '<span class="select-none"> </span>',
@@ -153,7 +153,7 @@
 
         lang = lang || "en";
 
-        const safeLang = lang.toLowerCase().replace("-", "");
+        const safeLang = lang.toLowerCase().startsWith("en") ? "en" : lang.toLowerCase().replace("-", "");
 
         const dataPath = `/src/lib/data/weaponsData/${targetId}.json`;
         if (dataModules[dataPath]) {

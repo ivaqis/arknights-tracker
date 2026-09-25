@@ -1,46 +1,37 @@
 <script>
-    import { onMount } from "svelte";
-    import { t } from "$lib/i18n.js";
-    import { user, login, logout } from "$lib/stores/cloudStore.js";
-    import { getUserProfile, registerProfile, syncGameAccount, uploadAvatar, deleteGameAccount } from "$lib/api.js";
-    import { addNotification } from "$lib/stores/notifications.js";
-    import { fade, fly } from "svelte/transition";
-    import { characters } from "$lib/data/characters.js";
-
-    const charOrderMap = Object.keys(characters || {}).reduce((acc, key, idx) => {
-        acc[key] = idx;
-        return acc;
-    }, {});
-    import { weapons } from "$lib/data/weapons.js";
-    import { equipment } from "$lib/data/items/equipment.js";
-    import { getImagePath } from "$lib/utils/imageUtils.js";
-    import { getRarityColor, getGradientColorByElement } from "$lib/utils/colorUtils.js";
-    import ruEquip from "$lib/locales/ru/equipment.json";
-    import enEquip from "$lib/locales/en/equipment.json";
-    import { currentLocale } from "$lib/stores/locale.js";
-    import { formatContractDescription } from "$lib/utils/richText.js";
-    import { accountStore } from "$lib/stores/accounts.js";
-
-    import Icon from "$lib/components/Icon.svelte";
+    import {
+        createUserProfile,
+        deleteGameAccount,
+        getAvatarUrl,
+        getUserProfile,
+        linkUserPulls,
+        syncGameAccount,
+        unlinkUserPulls,
+        updateUserProfile,
+        uploadAvatar
+    } from "$lib/api.js";
     import Button from "$lib/components/Button.svelte";
-    import Modal from "$lib/components/modals/Modal.svelte";
-    import ConfirmationModal from "$lib/components/modals/ConfirmationModal.svelte";
-    import Checkbox from "$lib/components/Checkbox.svelte";
-    import OperatorCard from "$lib/components/cards/OperatorCard.svelte";
+    import Icon from "$lib/components/Icon.svelte";
     import Image from "$lib/components/Image.svelte";
-    import PotentialIcon from "$lib/components/operators/PotentialIcon.svelte";
-    import AsscentionIcon from "$lib/components/operators/AscensionIcon.svelte";
-    import Tooltip from "$lib/components/Tooltip.svelte";
-    import ContractLevelTag from "$lib/components/profile/ContractLevelTag.svelte";
+    import ConfirmationModal from "$lib/components/modals/ConfirmationModal.svelte";
+    import Modal from "$lib/components/modals/Modal.svelte";
+    import AccountSummary from "$lib/components/profile/AccountSummary.svelte";
     import CropModal from "$lib/components/profile/CropModal.svelte";
+    import OperatorSection from "$lib/components/profile/OperatorSection.svelte";
+    import ProfileSkeleton from "$lib/components/profile/ProfileSkeleton.svelte";
     import SettingsModal from "$lib/components/profile/SettingsModal.svelte";
     import SyncModal from "$lib/components/profile/SyncModal.svelte";
     import RatingCard from "$lib/components/records/RatingCard.svelte";
-    import Select from "$lib/components/Select.svelte";
-    import ContractCard from "$lib/components/profile/ContractCard.svelte";
-    import OperatorDetailsCard from "$lib/components/profile/OperatorDetailsCard.svelte";
-    import AccountSummary from "$lib/components/profile/AccountSummary.svelte";
-    import CrisisContract from "$lib/components/profile/ContractContainer.svelte";
+    import Tooltip from "$lib/components/Tooltip.svelte";
+    import { characters } from "$lib/data/characters.js";
+    import { t } from "$lib/i18n.js";
+    import { accountStore } from "$lib/stores/accounts.js";
+    import { login, logout, user } from "$lib/stores/cloudStore.js";
+    import { addNotification } from "$lib/stores/notifications.js";
+    import { isPageLoading } from "$lib/stores/pageLoading.js";
+    import { getServerLabel } from "$lib/utils/profileUtils.js";
+    import { onDestroy, onMount } from "svelte";
+    import { fade } from "svelte/transition";
 
     const { accounts } = accountStore;
 
@@ -87,12 +78,54 @@
 
     $: primaryAccountOptions = [
         { value: "", label: $t("profile.settings_primary_account_none") },
-        ...($accounts || []).filter(a => a.serverUid).map(a => ({
-            value: a.serverUid,
-            label: a.name,
+        ...($accounts || []).map(a => ({
+            value: a.id,
+            label: a.name || $t("settings.defaultAccountName"),
             subLabel: getServerLabel(a.serverId || "3")
         }))
     ];
+
+    $: activeAccountPullsAccountId = (() => {
+        if (!activeAccount) return "";
+        const allAccs = $accounts || [];
+        if (allAccs.length === 0) return "";
+
+        if (typeof window !== "undefined") {
+            const explicit = localStorage.getItem(`ark_banner_linked_acc_${activeAccount.game_uid}`);
+            if (explicit && allAccs.some(a => a.id === explicit)) {
+                return explicit;
+            }
+        }
+
+        if (activeAccount.records_uid) {
+            const byId = allAccs.find(a => a.id === activeAccount.records_uid);
+            if (byId) return byId.id;
+            const byServerUid = allAccs.find(a => a.serverUid && a.serverUid === activeAccount.records_uid);
+            if (byServerUid) return byServerUid.id;
+        }
+
+        if (typeof window !== "undefined" && activeAccount.pulls?.profileId) {
+            const targetPub = activeAccount.pulls.profileId;
+            const byPub = allAccs.find(a => {
+                const pId = localStorage.getItem(`ark_banner_public_id_${a.id}`) ||
+                            (a.serverUid ? localStorage.getItem(`ark_banner_public_id_${a.serverUid}`) : null);
+                return pId === targetPub;
+            });
+            if (byPub) return byPub.id;
+        }
+
+        if (activeAccount.pulls || activeAccount.records_uid) {
+            const byGameUid = allAccs.find(a => a.serverUid && a.serverUid === activeAccount.game_uid);
+            if (byGameUid) return byGameUid.id;
+
+            if (typeof window !== "undefined") {
+                const accsWithPulls = allAccs.filter(a => localStorage.getItem(`ark_banner_private_id_${a.id}`));
+                if (accsWithPulls.length === 1) return accsWithPulls[0].id;
+            }
+        }
+
+        return "";
+    })();
 
     function translateBackendError(message) {
         if (!message) return "";
@@ -134,31 +167,50 @@
             "Image exceeds the 1MB limit.": "profile.image_size_limit_error",
             "Image is too small. Minimum resolution is 128x128 pixels.": "profile.image_size_error",
             "Monthly upload limit reached (max 30 uploads per month).": "profile.upload_limit_reached",
-            "Converted WebP exceeds 1MB limit.": "profile.image_size_limit_error"
+            "Converted WebP exceeds 1MB limit.": "profile.image_size_limit_error",
+            "Unauthorized": "profile.unauthorized",
+            "No access": "profile.no_access",
+            "User not found": "profile.user_not_found",
+            "User already exists": "profile.username_taken",
+            "Username already exists": "profile.username_taken",
+            "Profile already exists": "profile.profile_already_exists",
+            "Username contains banned words": "profile.name_profanity_error",
+            "User profile not found": "profile.profile_not_found",
+            "User profile is private": "profile.profile_private_error",
+            "Reached upload limit": "profile.upload_limit_reached",
+            "NSFW service unavailable": "profile.nsfw_service_unavailable",
+            "NSFW image": "profile.nsfw_image",
+            "Sync on cooldown": "profile.sync_cooldown_simple",
+            "Gryphline auth failed": "profile.token_invalid_or_expired",
+            "Token not verified or expired": "profile.token_invalid_or_expired",
+            "Token already used": "profile.token_already_used",
+            "Invalid image format.": "profile.image_format_error",
+            "Banner profile not found": "profile.banner_profile_not_found",
+            "Banner profile not found.": "profile.banner_profile_not_found"
         };
 
         if (exactMappings[msg]) {
-            return $t(exactMappings[msg]) || msg;
+            return $t(exactMappings[msg]);
         }
 
         if (msg.startsWith("Sync is on cooldown. Please wait")) {
             const match = msg.match(/wait (\d+) minutes/);
             const mins = match ? match[1] : "";
-            return $t("profile.sync_cooldown", { time: mins }) || msg;
+            return $t("profile.sync_cooldown", { time: mins });
         }
         if (msg.startsWith("Game UID") && msg.includes("is already linked to another user account.")) {
             const match = msg.match(/Game UID (\d+) is already linked/);
             const gameUid = match ? match[1] : "";
-            return $t("profile.uid_already_linked", { uid: gameUid }) || msg;
+            return $t("profile.uid_already_linked", { uid: gameUid });
         }
         if (msg.startsWith("Forbidden file format detected:")) {
-            return $t("profile.image_format_error") || msg;
+            return $t("profile.image_format_error");
         }
         if (msg.startsWith("Image processing failed:")) {
-            return $t("profile.image_processing_failed") || msg;
+            return $t("profile.image_processing_failed");
         }
         if (msg.startsWith("Game binding query failed:")) {
-            return $t("profile.binding_query_failed") || msg;
+            return $t("profile.binding_query_failed");
         }
 
         return msg;
@@ -167,16 +219,19 @@
     $: filteredBackgrounds = availableBackgrounds.filter(bg => {
         if (!bgSearchQuery) return true;
         const query = bgSearchQuery.toLowerCase();
-        const localizedName = ($t(`characters.${bg.id.split('_')[0]}`) || bg.name).toLowerCase();
+        const charKey = `characters.${bg.id.split('_')[0]}`;
+        const trans = $t(charKey);
+        const localizedName = (trans !== charKey ? trans : bg.name).toLowerCase();
         return bg.name.toLowerCase().includes(query) || localizedName.includes(query);
     });
 
     async function handleSelectBackground(bgId) {
         try {
             const token = await $user.getIdToken();
-            const data = await registerProfile(token, profile.name, profile.picture, profile.is_private, bgId || null, profile.records_uid);
-            profile.background = data.background;
-            addNotification("success", $t("profile.background_updated") || "Profile background updated!");
+            await updateUserProfile(token, profile.name, { backgroundId: bgId || null });
+            profile.background = bgId || null;
+            profile.backgroundId = bgId || null;
+            addNotification("success", $t("profile.background_updated"));
         } catch (e) {
             addNotification("error", translateBackendError(e.message));
         }
@@ -186,203 +241,48 @@
         if (!activeAccount) return;
         try {
             const token = await $user.getIdToken();
-            const data = await registerProfile(
-                token,
-                profile.name,
-                profile.picture,
-                profile.is_private,
-                profile.background,
-                recordsUid || null,
-                activeAccount.game_uid
-            );
-            const details = (data.details || []).map(d => {
-                try {
-                    return { ...d, info: typeof d.account_info === 'string' ? JSON.parse(d.account_info) : d.account_info };
-                } catch (e) {
-                    return { ...d, info: {} };
+            if (recordsUid) {
+                const targetAccount = ($accounts || []).find(a => a.id === recordsUid || (a.serverUid && a.serverUid === recordsUid));
+                const targetAccId = targetAccount ? targetAccount.id : recordsUid;
+                let privateId = null;
+                if (typeof window !== "undefined") {
+                    privateId = localStorage.getItem(`ark_banner_private_id_${targetAccId}`) ||
+                        (targetAccount?.serverUid ? localStorage.getItem(`ark_banner_private_id_${targetAccount.serverUid}`) : null) ||
+                        localStorage.getItem(`ark_banner_private_id_${recordsUid}`) ||
+                        localStorage.getItem("ark_banner_private_id_main") ||
+                        null;
                 }
-            });
-            profile = { ...profile, details };
-            addNotification("success", $t("profile.primary_account_updated") || "Primary game account updated!");
+                if (!privateId) {
+                    addNotification("error", $t("profile.private_id_not_found"));
+                    return;
+                }
+                await linkUserPulls(token, activeAccount.game_uid, privateId);
+                activeAccount.records_uid = recordsUid;
+                if (typeof window !== "undefined") {
+                    localStorage.setItem(`ark_banner_linked_acc_${activeAccount.game_uid}`, targetAccId);
+                }
+            } else {
+                await unlinkUserPulls(token, activeAccount.game_uid);
+                activeAccount.records_uid = null;
+                activeAccount.pulls = null;
+                if (typeof window !== "undefined") {
+                    localStorage.removeItem(`ark_banner_linked_acc_${activeAccount.game_uid}`);
+                }
+            }
+            const refreshed = await getUserProfile(profile.name, token);
+            if (refreshed) {
+                profile = refreshed;
+                if (recordsUid && refreshed.details) {
+                    const refreshedAcc = refreshed.details.find(d => d.game_uid === activeAccount.game_uid);
+                    if (refreshedAcc?.pulls?.profileId && typeof window !== "undefined") {
+                        localStorage.setItem(`ark_banner_public_id_${recordsUid}`, refreshedAcc.pulls.profileId);
+                    }
+                }
+            }
+            addNotification("success", $t("profile.primary_account_updated"));
         } catch (e) {
             console.error("[handleSelectRecordsUid] Error:", e);
             addNotification("error", translateBackendError(e.message));
-        }
-    }
-
-    const charactersById = Object.values(characters || {}).reduce((acc, char) => {
-        if (char && char.id) acc[char.id] = char;
-        return acc;
-    }, {});
-
-    function getSvelteCharId(char) {
-        if (!char) return "";
-        return char.id || char.charId || char.charData?.id || "";
-    }
-
-    function mapProfessionToClass(key) {
-        if (!key) return "guard";
-        return key.replace("profession_", "");
-    }
-
-    function mapPropertyToElement(key) {
-        if (!key) return null;
-        return key.replace("char_property_", "");
-    }
-
-    function getOperatorData(char) {
-        const svelteId = getSvelteCharId(char);
-        const staticData = charactersById[svelteId];
-        if (staticData) {
-            return staticData;
-        }
-
-        return {
-            id: char.charData?.avatarSqUrl || svelteId || char.id,
-            name: char.charData?.name || char.name || "Operator",
-            rarity: Number(char.charData?.rarity?.value || char.rarity || 4),
-            class: mapProfessionToClass(char.charData?.profession?.key) || "guard",
-            element: mapPropertyToElement(char.charData?.property?.key) || null
-        };
-    }
-
-    function getWeaponData(weapon) {
-        if (!weapon) return null;
-        const skillKey = weapon.weaponData?.skills?.find(s => s.key?.startsWith("sk_wpn_"))?.key;
-        const gameId = skillKey ? skillKey.replace("sk_", "") : (weapon.id || weapon.weaponData?.id);
-        const staticData = Object.values(weapons || {}).find(w => w.id === gameId || w.gameId === gameId);
-        if (staticData) {
-            return staticData;
-        }
-        return {
-            id: gameId,
-            name: weapon.weaponData?.name || weapon.name || gameId,
-            rarity: Number(weapon.weaponData?.rarity?.value || weapon.rarity?.value || weapon.rarity || 4),
-            type: weapon.weaponData?.type?.value || weapon.type || "sword"
-        };
-    }
-
-    function getWeaponIcon(weapon) {
-        if (!weapon) return "";
-        const mapped = getWeaponData(weapon);
-        const wpnId = mapped?.id || weapon.id;
-        if (wpnId) {
-            return getImagePath(wpnId, "weapon-icon");
-        }
-        return weapon.icon || "";
-    }
-
-    function getWeaponTerms(wpn) {
-        if (!wpn) return [];
-        if (wpn.weaponTerms && wpn.weaponTerms.length > 0) {
-            return wpn.weaponTerms;
-        }
-        const refine = wpn.refineLevel || 0;
-        const wpnStatic = getWeaponData(wpn);
-        const rarity = wpnStatic?.rarity || wpn.rarity || 4;
-        const gameId = wpnStatic?.id || wpn.id || "";
-        const level = wpn.level || 1;
-
-        // Переделать (говно)
-        const baseTermsMap = {
-            "wpn_sword_0006": [6, 3, 1],
-            "wpn_sword_0012": [5, 5, 1],
-            "wpn_funnel_0005": [3, 2, 1],
-            "wpn_claym_0012": [2, 1, 2]
-        };
-
-        let base = baseTermsMap[gameId];
-        if (!base) {
-            if (rarity === 6) base = [5, 3, 1];
-            else if (rarity === 5) base = [2, 2, 1];
-            else if (rarity === 4) base = [1, 1, 1];
-            else base = [1, 1];
-        }
-
-        let lower_current_1 = 1;
-        let lower_current_2 = 1;
-        let lower_max_1 = 3;
-        let lower_max_2 = 3;
-
-        if (rarity === 3) {
-            lower_max_1 = 5;
-            if (level < 20) lower_current_1 = 1;
-            else if (level < 40) lower_current_1 = 2;
-            else if (level < 60) lower_current_1 = 3;
-            else if (level < 80) lower_current_1 = 4;
-            else lower_current_1 = 5;
-        } else {
-            if (level < 20) {
-                lower_current_1 = 1;
-                lower_current_2 = 1;
-            } else if (level < 40) {
-                lower_current_1 = 2;
-                lower_current_2 = 1;
-            } else if (level < 60) {
-                lower_current_1 = 2;
-                lower_current_2 = 2;
-            } else if (level < 80) {
-                lower_current_1 = 3;
-                lower_current_2 = 2;
-            } else {
-                lower_current_1 = 3;
-                lower_current_2 = 3;
-            }
-        }
-
-        let term1 = Math.ceil(base[0] * (lower_current_1 / lower_max_1));
-        let term2 = base[1] ? Math.ceil(base[1] * (lower_current_2 / lower_max_2)) : 0;
-        let term3 = base[2] || 1;
-
-        if (base.length >= 3) {
-            term3 += refine;
-        }
-
-        if (wpn.gem && wpn.gem.gemData) {
-            const gemRarity = wpn.gem.gemData.templateId === "item_gem_rarity_5" ? 5 : 4;
-            const hasMatchingTerm = !!wpn.gem.gemData.termId;
-
-            if (gemRarity === 5) {
-                term1 += 4;
-                if (base[1]) term2 += 4;
-                if (hasMatchingTerm && base.length >= 3) {
-                    term3 += 2;
-                }
-            } else if (gemRarity === 4) {
-                term1 += 2;
-                if (base[1]) term2 += 2;
-                if (hasMatchingTerm && base.length >= 3) {
-                    term3 += 1;
-                }
-            }
-        }
-
-        return base.length >= 3 ? [term1, term2, term3] : (base.length === 2 ? [term1, term2] : [term1]);
-    }
-
-    function getEquipIcon(equip) {
-        if (!equip) return "";
-        const staticId = getStaticEquipId(equip.equipData) || equip.id;
-        if (staticId) {
-            return getImagePath(staticId, "equipment");
-        }
-        return equip.icon || (equip.equipData?.iconUrl || "");
-    }
-
-    let equipmentNames = {};
-    $: if (typeof window !== 'undefined' && $currentLocale) {
-        loadEquipmentNames($currentLocale);
-    }
-    async function loadEquipmentNames(lang) {
-        try {
-            const safeLang = (lang || "en").toLowerCase().replace("-", "");
-            const mod = await import(`../../lib/locales/${safeLang}/equipment.json`);
-            equipmentNames = mod.default || mod;
-        } catch (e) {
-            try {
-                const mod = await import(`../../lib/locales/en/equipment.json`);
-                equipmentNames = mod.default || mod;
-            } catch (err) {}
         }
     }
 
@@ -393,53 +293,49 @@
     async function handleTogglePrivate() {
         try {
             const token = await $user.getIdToken();
-            const nextPrivateVal = isPrivate ? 0 : 1;
-            const data = await registerProfile(token, profile.name, profile.picture, nextPrivateVal, profile.background, profile.records_uid);
-            profile.is_private = data.is_private;
-            isPrivate = data.is_private === 1;
-            addNotification("success", $t("profile.privacy_settings_updated") || "Privacy settings updated!");
+            const nextPrivateVal = !isPrivate;
+            await updateUserProfile(token, profile.name, { isPrivate: nextPrivateVal });
+            isPrivate = nextPrivateVal;
+            profile.is_private = nextPrivateVal ? 1 : 0;
+            profile.isPrivate = nextPrivateVal;
+            addNotification("success", $t("profile.privacy_settings_updated"));
         } catch (e) {
             addNotification("error", translateBackendError(e.message));
         }
     }
+
     let testEmptySlot = false;
     let selectedGameUid = null;
     let favoriteGameUid = "";
 
-    async function toggleFavorite(uid) {
+    function toggleFavorite(uid) {
         const nextFavoriteUid = favoriteGameUid === uid ? "" : uid;
-        try {
-            const token = await $user.getIdToken();
-            const data = await registerProfile(
-                token,
-                profile.name,
-                profile.picture,
-                profile.is_private,
-                profile.background,
-                profile.records_uid,
-                undefined,
-                nextFavoriteUid
-            );
-            profile.favorite_game_uid = data.favorite_game_uid;
-            favoriteGameUid = data.favorite_game_uid || "";
+        favoriteGameUid = nextFavoriteUid;
+        if (typeof window !== 'undefined') {
             if (nextFavoriteUid) {
-                addNotification("success", $t("profile.favorite_set") || "Set as favorite");
-                selectedGameUid = nextFavoriteUid;
+                localStorage.setItem("goyfield_favorite_game_uid", nextFavoriteUid);
             } else {
-                addNotification("success", $t("profile.favorite_removed") || "Removed from favorites");
+                localStorage.removeItem("goyfield_favorite_game_uid");
             }
-        } catch (e) {
-            addNotification("error", translateBackendError(e.message));
+        }
+        if (nextFavoriteUid) {
+            addNotification("success", $t("profile.favorite_set"));
+            selectedGameUid = nextFavoriteUid;
+        } else {
+            addNotification("success", $t("profile.favorite_removed"));
         }
     }
 
     $: sortedDetails = (() => {
         const details = profile?.details || [];
-        if (!favoriteGameUid) return details;
         return [...details].sort((a, b) => {
-            if (a.game_uid === favoriteGameUid) return -1;
-            if (b.game_uid === favoriteGameUid) return 1;
-            return 0;
+            if (favoriteGameUid) {
+                if (a.game_uid === favoriteGameUid) return -1;
+                if (b.game_uid === favoriteGameUid) return 1;
+            }
+            const levelA = a.info?.base?.level ?? a.level ?? 1;
+            const levelB = b.info?.base?.level ?? b.level ?? 1;
+            return levelB - levelA;
         });
     })();
 
@@ -455,525 +351,31 @@
         }
         return list;
     })();
-    $: sortedChars = (() => {
-        const chars = activeAccount?.info?.chars || [];
-        return [...chars].sort((a, b) => {
-            const aData = getOperatorData(a);
-            const bData = getOperatorData(b);
-            const aRarity = aData?.rarity || 0;
-            const bRarity = bData?.rarity || 0;
-            if (bRarity !== aRarity) {
-                return bRarity - aRarity;
-            }
-            const aLevel = a?.level || 0;
-            const bLevel = b?.level || 0;
-            if (bLevel !== aLevel) {
-                return bLevel - aLevel;
-            }
-            const indexA = charOrderMap[aData?.id] ?? 0;
-            const indexB = charOrderMap[bData?.id] ?? 0;
-            if (indexA !== indexB) return indexB - indexA;
-            return (aData?.id || "").localeCompare(bData?.id || "");
-        });
-    })();
-
-    let selectedOperatorId = null;
-    let prevGameUid = null;
-
-    $: if (selectedGameUid !== prevGameUid) {
-        prevGameUid = selectedGameUid;
-        if (sortedChars && sortedChars.length > 0) {
-            selectedOperatorId = sortedChars[0].id;
-        }
-    }
-    $: selectedChar = sortedChars.find(c => c.id === selectedOperatorId) || sortedChars[0];
-    $: selectedDetailedChar = selectedChar ? getDetailedChar(selectedChar.id) : null;
-    let selectedCharDetails = null;
-    let currentFetchId = null;
-    $: if (selectedChar) {
-        const svelteId = getSvelteCharId(selectedChar);
-        currentFetchId = svelteId;
-        selectedCharDetails = null;
-        if (svelteId) {
-            import(`../../lib/data/charactersData/${svelteId}.json`)
-                .then(mod => {
-                    if (currentFetchId === svelteId) {
-                        selectedCharDetails = mod.default || mod;
-                    }
-                })
-                .catch(err => {
-                    console.warn("Failed to load details for", svelteId, err);
-                    selectedCharDetails = null;
-                });
-        } else {
-            selectedCharDetails = null;
-        }
-    }
-    let selectedCharLocale = null;
-    let currentLocaleFetchId = null;
-    let currentLocaleFetchLang = null;
-    $: if (selectedChar && $currentLocale) {
-        const svelteId = getSvelteCharId(selectedChar);
-        const lang = ($currentLocale || "en").toLowerCase().replace("-", "");
-        currentLocaleFetchId = svelteId;
-        currentLocaleFetchLang = lang;
-        selectedCharLocale = null;
-        if (svelteId) {
-            import(`../../lib/locales/${lang}/characters/${svelteId}.json`)
-                .then(mod => {
-                    if (currentLocaleFetchId === svelteId && currentLocaleFetchLang === lang) {
-                        selectedCharLocale = mod.default || mod;
-                    }
-                })
-                .catch(err => {
-                    if (lang !== "en") {
-                        import(`../../lib/locales/en/characters/${svelteId}.json`)
-                            .then(mod => {
-                                if (currentLocaleFetchId === svelteId && currentLocaleFetchLang === lang) {
-                                    selectedCharLocale = mod.default || mod;
-                                }
-                            })
-                            .catch(err2 => {
-                                console.warn("Failed to load fallback en locale for", svelteId, err2);
-                                if (currentLocaleFetchId === svelteId && currentLocaleFetchLang === lang) {
-                                    selectedCharLocale = null;
-                                }
-                            });
-                    } else {
-                        console.warn("Failed to load locale for", svelteId, err);
-                        if (currentLocaleFetchId === svelteId && currentLocaleFetchLang === lang) {
-                            selectedCharLocale = null;
-                        }
-                    }
-                });
-        } else {
-            selectedCharLocale = null;
-        }
-    }
-
-    let selectedWeaponDetails = null;
-    let currentWeaponFetchId = null;
-    $: if (selectedDetailedChar?.weapon) {
-        const wpnStatic = getWeaponData(selectedDetailedChar.weapon);
-        const wpnId = wpnStatic?.id;
-        if (wpnId) {
-            currentWeaponFetchId = wpnId;
-            import(`../../lib/data/weaponsData/${wpnId}.json`)
-                .then(mod => {
-                    if (currentWeaponFetchId === wpnId) {
-                        selectedWeaponDetails = mod.default || mod;
-                    }
-                })
-                .catch(err => {
-                    console.warn("Failed to load weapon details for", wpnId, err);
-                    selectedWeaponDetails = null;
-                });
-        } else {
-            selectedWeaponDetails = null;
-        }
-    } else {
-        selectedWeaponDetails = null;
-    }
-    $: talentsList = selectedChar ? getTalents(selectedChar, selectedDetailedChar, selectedCharDetails, selectedCharLocale) : [];
-    $: opData = selectedChar ? getOperatorData(selectedChar) : null;
-    $: detailedChar = selectedDetailedChar;
-    $: svelteId = selectedChar ? getSvelteCharId(selectedChar) : "";
-    $: targetCharData = detailedChar?.charData || selectedChar?.charData;
-    $: elementColor = opData ? (getGradientColorByElement(opData.element) || "from-white/5 to-transparent") : "from-white/5 to-transparent";
-
-    function getDetailedChar(charId) {
-        if (!activeAccount?.info?.chars) return null;
-        return activeAccount.info.chars.find(c => c.charData?.id === charId || c.id === charId);
-    }
-
-    function getEquipTier(levelStr, rarity) {
-        const val = parseInt(levelStr?.replace("equip_level_", "") || levelStr) || 0;
-        const r = Number(rarity) || 4;
-        if (r < 5) return 0;
-        if (val >= 70) return 3;
-        if (val >= 50) return 2;
-        if (val >= 36) return 1;
-        return 0;
-    }
-
-    function getEquipRarity(equip, staticEquip) {
-        if (staticEquip?.rarity) return Number(staticEquip.rarity);
-        const key = equip?.equipData?.rarity?.key || "";
-        const match = key.match(/equip_rarity_(\d+)/);
-        if (match) return parseInt(match[1]);
-        const val = Number(equip?.equipData?.rarity?.value || equip?.rarity);
-        return isNaN(val) ? 4 : val;
-    }
-
-    function getPropertyLabel(propKey) {
-        if (!propKey) return "Stat";
-        const rawKey = propKey.replace("equip_attr_", "").replace("equip_", "");
-        const lowerKey = rawKey.toLowerCase();
-        
-        const transKey = `stats.${rawKey}`;
-        const trans = $t(transKey);
-        if (trans && trans !== transKey) return trans;
-
-        const mappings = {
-            "wisd": "Wisdom",
-            "str": "Strength",
-            "agi": "Agility",
-            "will": "Willpower",
-            "def": "Defense",
-            "maxhp": "HP",
-            "hp": "HP",
-            "ultimate_sp_gain_scalar": "SP Gain",
-            "atk": "Attack",
-            "ultimate_sp_gain": "SP Gain",
-            "heal_scalar": "Healing",
-            "spell_vulnerable": "Vulnerability",
-            "physical_damage_increase": "Physical DMG Dealt",
-            "cryst_and_pulse_damage_increase": "Crystal/Pulse DMG Increase",
-            "normal_attack_damage_increase": "Normal Attack DMG Increase",
-            "sub": "Sub Attribute"
-        };
-
-        for (const [k, v] of Object.entries(mappings)) {
-            if (lowerKey === k || lowerKey.includes(k)) return v;
-        }
-
-        return rawKey
-            .split("_")
-            .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
-            .join(" ");
-    }
-
-    function getStaticEquipId(equipData) {
-        if (!equipData) return null;
-        const nameToMatch = equipData.name;
-        if (!nameToMatch) return null;
-
-        let matched = Object.keys(equipmentNames).find(key => equipmentNames[key]?.name === nameToMatch);
-        if (matched) return matched;
-
-        matched = Object.keys(ruEquip).find(key => ruEquip[key]?.name === nameToMatch);
-        if (matched) return matched;
-
-        matched = Object.keys(enEquip).find(key => enEquip[key]?.name === nameToMatch);
-        if (matched) return matched;
-
-        if (equipment[equipData.id]) return equipData.id;
-        return null;
-    }
-
-    function getStatIcon(propKey) {
-        if (!propKey) return null;
-        const key = propKey.toLowerCase();
-        if (key.includes("wisd") || key.includes("int")) return "int";
-        if (key.includes("str")) return "str";
-        if (key.includes("agi")) return "agi";
-        if (key.includes("will")) return "will";
-        if (key.includes("def")) return "def";
-        if (key.includes("maxhp") || key.includes("hp")) return "hp";
-        if (key.includes("atk")) return "atk";
-        if (key.includes("sp_gain") || key.includes("usp")) return "usp";
-        if (key.includes("heal")) return "heal";
-        if (key.includes("vulnerable") || key.includes("magicdam")) return "magicdam";
-        if (key.includes("normal_skill_damage")) return "normalskillefficiency";
-        if (key.includes("combo_skill_damage")) return "comboskillefficiency";
-        if (key.includes("normal_attack_damage")) return "normalattackdamageincrease";
-        if (key.includes("physical_damage")) return "physicaldamageincrease";
-        if (key.includes("physical_and_spellinfliction") || key.includes("spellinfliction")) return "magicdam";
-        if (key.includes("cryst_and_pulse_damage")) return "alldamagetakenscalar";
-        if (key.includes("all_skill_damage")) return "alldamagetakenscalar";
-        if (key.includes("spell_damage")) return "alldamagetakenscalar";
-        if (key.includes("sub")) return "alldamagetakenscalar";
-        return null;
-    }
-
-    function getCultivationLabel(node, lvl) {
-        if (!node) return lvl.toString();
-        const match = node.name.match(/[αβγ]\s*$/);
-        return match ? match[0] : lvl.toString();
-    }
-
-    function interpolateBlackboard(text, bb) {
-        if (!text) return "";
-        if (!bb || Object.keys(bb).length === 0) return text;
-
-        return text.replace(/\{([^}]+)\}/g, (match, content) => {
-            let [expr, format] = content.split(":");
-            let mathStr = expr.replace(/\b(\d+),(\d+)\b/g, (m, f) => Object.keys(bb)[f] || m);
-
-            for (const key in bb) {
-                const regex = new RegExp(`\\b${key}\\b`, "g");
-                mathStr = mathStr.replace(regex, `(${bb[key]})`);
-            }
-
-            if (/[a-zA-Z_]/.test(mathStr)) return match;
-
-            let result = 0;
-            try {
-                result = new Function("return " + mathStr)();
-            } catch (e) {
-                return match;
-            }
-            if (format) {
-                if (format.includes("%")) {
-                    result = parseFloat((result * 100).toFixed(4)) + "%";
-                } else if (format === "0") {
-                    result = Math.round(result);
-                } else {
-                    result = parseFloat(Number(result).toFixed(4));
-                }
-            }
-            return `<span class="text-[#38BDF8] font-bold drop-shadow-sm">${result}</span>`;
-        });
-    }
-
-    function getTalents(char, detailedChar, staticDetails = null, charLocale = null) {
-        if (!char?.charData) return [];
-        const svelteId = getSvelteCharId(char);
-        const combatNodes = char.charData.combatTalents || [];
-        const groupedCombat = {};
-        combatNodes.forEach(node => {
-            if (!groupedCombat[node.name]) {
-                groupedCombat[node.name] = [];
-            }
-            groupedCombat[node.name].push(node);
-        });
-        
-        const talents = [];
-        const combatList = [];
-        Object.entries(groupedCombat).forEach(([name, nodes]) => {
-            nodes.sort((a, b) => a.id.localeCompare(b.id));
-            const levelsCount = nodes.length;
-            
-            let talentIdx = 0;
-            const match = nodes[0]?.id?.match(/passive_skill_(\d+)_/);
-            if (match) {
-                talentIdx = parseInt(match[1], 10);
-            }
-            const currentIdx = talentIdx + 1;
-            
-            const talentKey = `talent${currentIdx}`;
-            const currentLevel = detailedChar?.talentLevels?.[talentKey] || 0;
-            
-            const nodeData = nodes[currentLevel > 0 ? currentLevel - 1 : 0] || {};
-            
-            const talentKeyName = `talent${currentIdx}`;
-            const localeData = charLocale?.skills?.[talentKeyName];
-            const localizedName = localeData?.name || nodeData.name;
-            let desc = nodeData.desc;
-            if (localeData?.levels) {
-                const descIndex = Math.max(0, currentLevel - 1);
-                desc = localeData.levels[descIndex] || localeData.levels[0] || desc;
-            }
-            const bbKey = `${talentKeyName}_${Math.max(1, currentLevel)}`;
-            const blackboard = staticDetails?.blackboard || {};
-            const currentBlackboard = blackboard[bbKey] || blackboard[talentKeyName] || {};
-            desc = interpolateBlackboard(desc, currentBlackboard);
-
-            combatList.push({
-                idx: currentIdx,
-                data: {
-                    name: localizedName,
-                    iconUrl: nodeData.iconUrl,
-                    localImageId: `${svelteId}_talent${currentIdx}`,
-                    desc: desc,
-                    descParams: nodeData.descParams,
-                    type: 'combat',
-                    currentLevel,
-                    levelsCount
-                }
-            });
-        });
-        combatList.sort((a, b) => a.idx - b.idx);
-        combatList.forEach(item => talents.push(item.data));
-
-        const cultNodes = char.charData.cultivationTalents || [];
-        const groupedCult = {};
-        cultNodes.forEach(node => {
-            const baseName = node.name.replace(/\s*[αβγ]\s*$/, "").trim();
-            if (!groupedCult[baseName]) {
-                groupedCult[baseName] = [];
-            }
-            groupedCult[baseName].push(node);
-        });
-
-        const cultList = [];
-        Object.entries(groupedCult).forEach(([baseName, nodes]) => {
-            nodes.sort((a, b) => a.id.localeCompare(b.id));
-            const levelsCount = nodes.length;
-
-            let skillIdx = 1;
-            const fallbackNode = nodes[0] || {};
-            if (fallbackNode.id) {
-                const parts = fallbackNode.id.split('_');
-                if (parts.length >= 2) {
-                    const parsedIdx = parseInt(parts[parts.length - 2], 10);
-                    if (!isNaN(parsedIdx)) {
-                        skillIdx = parsedIdx;
-                    }
-                }
-            }
-
-            const baseKey = `baseSkill${skillIdx}`;
-            const currentLevel = detailedChar?.talentLevels?.[baseKey] || 0;
-
-            const nodeData = nodes[currentLevel > 0 ? currentLevel - 1 : 0] || {};
-            let localImageId = "";
-            if (nodeData.id) {
-                const parts = nodeData.id.split('_');
-                if (parts.length >= 2) {
-                    const levelIdx = parts[parts.length - 1];
-                    const facSkillKey = `facSkill${skillIdx}_${levelIdx}`;
-                    localImageId = staticDetails?.facSkills?.[facSkillKey]?.name || "";
-                }
-            }
-
-            const baseKeyPrefix = `baseSkill${skillIdx}`;
-            const localeData = charLocale?.skills?.[baseKeyPrefix];
-            const localizedName = localeData?.name || nodeData.name;
-            
-            const greekMatch = nodeData.name.match(/[αβγ]\s*$/);
-            let finalName = localizedName;
-            if (greekMatch && !finalName.match(/[αβγ]\s*$/)) {
-                finalName = `${finalName} ${greekMatch[0]}`;
-            }
-
-            let desc = nodeData.desc;
-            if (localeData?.levels) {
-                const descIndex = Math.max(0, currentLevel - 1);
-                desc = localeData.levels[descIndex] || localeData.levels[0] || desc;
-            }
-            const bbKey = `${baseKeyPrefix}_${Math.max(1, currentLevel)}`;
-            const blackboard = staticDetails?.blackboard || {};
-            const currentBlackboard = blackboard[bbKey] || blackboard[baseKeyPrefix] || {};
-            desc = interpolateBlackboard(desc, currentBlackboard);
-
-            cultList.push({
-                idx: skillIdx,
-                data: {
-                    name: finalName,
-                    iconUrl: nodeData.iconUrl,
-                    localImageId: localImageId,
-                    desc: desc,
-                    descParams: nodeData.descParams,
-                    type: 'cultivation',
-                    currentLevel,
-                    levelsCount,
-                    nodes
-                }
-            });
-        });
-        cultList.sort((a, b) => a.idx - b.idx);
-        cultList.forEach(item => talents.push(item.data));
-
-
-        const abilityNodes = char.charData.abilityTalents || [];
-        if (abilityNodes.length > 0) {
-            const attrNodes = new Set(detailedChar?.talent?.attrNodes || char.talent?.attrNodes || []);
-            const hasNode = (nodeId) => {
-                if (attrNodes.has(nodeId)) return true;
-                if (nodeId.includes('endmin')) {
-                    const suffix = nodeId.split('_').pop();
-                    return Array.from(attrNodes).some(attrId => attrId.includes('endmin') && attrId.endsWith('_' + suffix));
-                }
-                return false;
-            };
-            let totalValue = 0;
-            let activeNodesCount = 0;
-            
-            abilityNodes.forEach(node => {
-                if (hasNode(node.id)) {
-                    activeNodesCount++;
-                    const valMatch = node.desc?.match(/\+(\d+)/);
-                    if (valMatch) {
-                        totalValue += parseInt(valMatch[1], 10);
-                    }
-                }
-            });
-
-            const firstNode = abilityNodes[0] || {};
-            let description = firstNode.desc || "";
-            if (activeNodesCount > 0) {
-                const activeNodeList = abilityNodes.filter(n => hasNode(n.id));
-                activeNodeList.sort((a, b) => a.id.localeCompare(b.id));
-                const highestActive = activeNodeList[activeNodeList.length - 1];
-                if (highestActive) {
-                    description = highestActive.desc || "";
-                }
-            }
-
-            const localeData = charLocale?.skills?.indicator;
-            const localizedName = localeData?.name || firstNode.name || "Ability";
-            if (localeData?.levels) {
-                const activeLevel = activeNodesCount > 0 ? activeNodesCount : 1;
-                description = localeData.levels[activeLevel - 1] || localeData.levels[0] || description;
-            }
-
-            const activeLevel = activeNodesCount > 0 ? activeNodesCount : 1;
-            const bbKey = `indicator_${activeLevel}`;
-            const blackboard = staticDetails?.blackboard || {};
-            const currentBlackboard = blackboard[bbKey] || blackboard?.indicator || {};
-            description = interpolateBlackboard(description, currentBlackboard);
-
-            description = description.replace(/([-+]\s*)\d+(?:\.\d+)?/, `$1${totalValue}`);
-
-            const getAttributeType = (desc) => {
-                if (!desc) return "str";
-                const d = desc.toLowerCase();
-                if (d.includes("ловкост") || d.includes("agility") || d.includes("agi")) return "agi";
-                if (d.includes("интеллект") || d.includes("wisdom") || d.includes("intellect") || d.includes("wisd") || d.includes("int")) return "wisd";
-                if (d.includes("сила") || d.includes("strength") || d.includes("str")) return "str";
-                if (d.includes("воля") || d.includes("willpower") || d.includes("will")) return "will";
-                if (d.includes("hp") || d.includes("здоровье") || d.includes("хп")) return "maxHp";
-                if (d.includes("def") || d.includes("защит")) return "def";
-                return "str";
-            };
-
-            const attrType = getAttributeType(firstNode.desc || firstNode.name || "");
-            const localImageId = `icon_attribute_${attrType}`;
-
-            talents.push({
-                name: localizedName,
-                iconUrl: firstNode.iconUrl,
-                localImageId: localImageId,
-                desc: description,
-                type: 'ability',
-                totalValue: totalValue,
-                activeCount: activeNodesCount,
-                levelsCount: abilityNodes.length
-            });
-        }
-
-        return talents;
-    }
 
     let localAvatar = "";
 
     onMount(async () => {
         if (typeof window !== 'undefined') {
             localAvatar = localStorage.getItem("goyfield_local_avatar") || "";
+            favoriteGameUid = localStorage.getItem("goyfield_favorite_game_uid") || "";
         }
         
         const unsubscribe = user.subscribe(async (u) => {
             if (u) {
                 loading = true;
                 const token = await u.getIdToken();
-                const data = await getUserProfile(u.uid, token);
+                const data = await getUserProfile(null, token);
                 if (data) {
                     profile = data;
-                    favoriteGameUid = profile.favorite_game_uid || "";
-                    if (profile.details) {
-                        profile.details = profile.details.map(d => {
-                            try {
-                                return { ...d, info: typeof d.account_info === 'string' ? JSON.parse(d.account_info) : d.account_info };
-                            } catch (e) {
-                                return { ...d, info: {} };
-                            }
-                        });
-                        if (profile.details.length > 0) {
-                            const fav = favoriteGameUid;
-                            const hasFav = profile.details.some(d => d.game_uid === fav);
-                            selectedGameUid = hasFav ? fav : profile.details[0].game_uid;
-                        }
+                    if (profile.details && profile.details.length > 0) {
+                        const fav = favoriteGameUid;
+                        const hasFav = profile.details.some(d => d.game_uid === fav);
+                        const highestLevelAcc = [...profile.details].sort((a, b) => {
+                            const levelA = a.info?.base?.level ?? a.level ?? 1;
+                            const levelB = b.info?.base?.level ?? b.level ?? 1;
+                            return levelB - levelA;
+                        })[0];
+                        selectedGameUid = hasFav ? fav : (highestLevelAcc?.game_uid || profile.details[0].game_uid);
                     }
                     newProfileName = profile.name || "";
                     needsRegistration = false;
@@ -993,39 +395,44 @@
         };
     });
 
+    $: isPageLoading.set(loading);
+    onDestroy(() => {
+        isPageLoading.set(false);
+    });
+
     async function handleGoogleLogin() {
         try {
             await login();
         } catch (e) {
-            addNotification("error", $t("profile.login_failed") || "Login failed");
+            addNotification("error", $t("profile.login_failed"));
         }
     }
 
     async function handleRegister() {
         const trimmed = newProfileName.trim();
         if (!trimmed) {
-            addNotification("error", $t("profile.name_empty_error") || "Username cannot be empty");
+            addNotification("error", $t("profile.name_empty_error"));
             return;
         }
         if (trimmed.length < 3 || trimmed.length > 20) {
-            addNotification("error", $t("profile.name_length_error") || "Username must be between 3 and 20 characters long."); 
+            addNotification("error", $t("profile.name_length_error")); 
             return;
         }
         if (!/^[a-zA-Z0-9_]+$/.test(trimmed)) {
-            addNotification("error", $t("profile.name_invalid_error") || "Invalid character! Only English letters, numbers, and _ are allowed.");
+            addNotification("error", $t("profile.name_invalid_error"));
             return;
         }
         try {
             loading = true;
             const token = await $user.getIdToken();
             
-            const data = await registerProfile(token, trimmed, null);
+            const data = await createUserProfile(token, trimmed, false);
             profile = { ...data, details: [] };
             needsRegistration = false;
             
             if (localAvatar) {
                 try {
-                    const uploadResult = await uploadAvatar(token, localAvatar, "avatar.webp");
+                    const uploadResult = await uploadAvatar(token, localAvatar, "avatar.webp", trimmed);
                     if (uploadResult.nsfw) {
                         profile = {
                             ...profile,
@@ -1037,7 +444,6 @@
                     } else {
                         localAvatar = "";
                         localStorage.removeItem("goyfield_local_avatar");
-                        await registerProfile(token, trimmed, uploadResult.picture);
                         profile = {
                             ...profile,
                             picture: uploadResult.picture,
@@ -1046,11 +452,11 @@
                     }
                 } catch (uploadErr) {
                     console.error("Failed to upload avatar after registration:", uploadErr);
-                    addNotification("error", ($t("profile.profile_created_avatar_failed") || "Profile created, but failed to upload avatar: ") + translateBackendError(uploadErr.message));
+                    addNotification("error", $t("profile.profile_created_avatar_failed") + translateBackendError(uploadErr.message));
                 }
             }
             
-            addNotification("success", $t("profile.profile_created") || "Profile created successfully");
+            addNotification("success", $t("profile.profile_created"));
         } catch (e) {
             addNotification("error", translateBackendError(e.message));
         } finally {
@@ -1066,19 +472,20 @@
             return;
         }
         if (trimmed.length < 3 || trimmed.length > 20) {
-            addNotification("error", $t("profile.name_length_error") || "Username must be between 3 and 20 characters long");
+            addNotification("error", $t("profile.name_length_error"));
             return;
         }
         if (!/^[a-zA-Z0-9_]+$/.test(trimmed)) {
-            addNotification("error", $t("profile.name_validation_error") || "Invalid character! Only English letters, numbers, and _ are allowed");
+            addNotification("error", $t("profile.name_validation_error"));
             return;
         }
         try {
             const token = await $user.getIdToken();
-            const data = await registerProfile(token, trimmed, profile.picture, profile.is_private, profile.background, profile.records_uid);
+            const data = await updateUserProfile(token, profile.name, { newUid: trimmed });
             profile.name = data.name;
+            profile.publicUid = data.name;
             isEditingName = false;
-            addNotification("success", $t("profile.username_updated") || "Username updated");
+            addNotification("success", $t("profile.username_updated"));
         } catch (e) {
             addNotification("error", translateBackendError(e.message));
         }
@@ -1100,7 +507,7 @@
             }, 2000);
         }).catch(err => {
             console.error("Failed to copy link: ", err);
-            addNotification("error", $t("profile.copy_failed") || "Failed to copy");
+            addNotification("error", $t("profile.copy_failed"));
         });
     }
 
@@ -1112,7 +519,7 @@
             }, 2000);
         }).catch(err => {
             console.error("Failed to copy UID: ", err);
-            addNotification("error", $t("profile.copy_failed") || "Failed to copy");
+            addNotification("error", $t("profile.copy_failed"));
         });
     }
 
@@ -1166,7 +573,7 @@
         try {
             loading = true;
             const token = await $user.getIdToken();
-            const uploadResult = await uploadAvatar(token, webpBase64, "avatar.webp");
+            const uploadResult = await uploadAvatar(token, webpBase64, "avatar.webp", profile.name);
 
             if (uploadResult.nsfw) {
                 localAvatar = webpBase64;
@@ -1189,7 +596,7 @@
                         avatar_strike: 0
                     };
                 }
-                addNotification("success", $t("profile.avatar_success") || "Image set successfully");
+                addNotification("success", $t("profile.avatar_success"));
             }
         } catch (err) {
             addNotification("error", translateBackendError(err.message));
@@ -1211,25 +618,27 @@
         const { token: gameToken, server, onSuccess, onError } = e.detail;
         try {
             const authToken = await $user.getIdToken();
-            const accounts = await syncGameAccount(authToken, gameToken, null, server);
-            profile = {
-                ...profile,
-                details: accounts.map(d => ({
-                    ...d,
-                    info: d.account_info
-                }))
-            };
-            if (profile.details.length > 0) {
-                const fav = typeof window !== 'undefined' ? localStorage.getItem("goyfield_favorite_game_uid") : "";
-                const hasFav = profile.details.some(d => d.game_uid === fav);
-                selectedGameUid = hasFav ? fav : profile.details[0].game_uid;
+            await syncGameAccount(authToken, gameToken, null, server, profile.name);
+            const refreshed = await getUserProfile(profile.name, authToken);
+            if (refreshed) {
+                profile = refreshed;
+                if (profile.details && profile.details.length > 0) {
+                    const fav = favoriteGameUid;
+                    const hasFav = profile.details.some(d => d.game_uid === fav);
+                    const highestLevelAcc = [...profile.details].sort((a, b) => {
+                        const levelA = a.info?.base?.level ?? a.level ?? 1;
+                        const levelB = b.info?.base?.level ?? b.level ?? 1;
+                        return levelB - levelA;
+                    })[0];
+                    selectedGameUid = hasFav ? fav : (highestLevelAcc?.game_uid || profile.details[0].game_uid);
+                }
             }
             syncModalOpen = false;
-            addNotification("success", $t("profile.sync_success") || "Game account synced successfully");
+            addNotification("success", $t("profile.sync_success"));
             onSuccess?.(false);
         } catch (err) {
             addNotification("error", translateBackendError(err.message));
-            onError?.();
+            onError?.(err);
         }
     }
 
@@ -1246,28 +655,27 @@
         if (!accountToDeleteUid) return;
         try {
             const token = await $user.getIdToken();
-            await deleteGameAccount(token, accountToDeleteUid);
+            await deleteGameAccount(token, accountToDeleteUid, profile.name);
             profile = {
                 ...profile,
                 details: profile.details.filter(d => d.game_uid !== accountToDeleteUid)
             };
             if (accountToDeleteUid === favoriteGameUid) {
                 favoriteGameUid = "";
-                await registerProfile(
-                    token,
-                    profile.name,
-                    profile.picture,
-                    profile.is_private,
-                    profile.background,
-                    profile.records_uid,
-                    undefined,
-                    ""
-                );
+                if (typeof window !== 'undefined') {
+                    localStorage.removeItem("goyfield_favorite_game_uid");
+                }
             }
             if (selectedGameUid === accountToDeleteUid) {
                 const fav = favoriteGameUid;
-                const hasFav = profile.details.some(d => d.game_uid === fav);
-                selectedGameUid = hasFav ? fav : (profile.details.length > 0 ? profile.details[0].game_uid : null);
+                const remaining = profile.details;
+                const hasFav = remaining.some(d => d.game_uid === fav);
+                const highestLevelAcc = [...remaining].sort((a, b) => {
+                    const levelA = a.info?.base?.level ?? a.level ?? 1;
+                    const levelB = b.info?.base?.level ?? b.level ?? 1;
+                    return levelB - levelA;
+                })[0];
+                selectedGameUid = hasFav ? fav : (highestLevelAcc?.game_uid || null);
             }
             addNotification("success", $t("profile.unlink_success"));
         } catch (e) {
@@ -1275,16 +683,6 @@
         } finally {
             accountToDeleteUid = null;
         }
-    }
-
-    function getServerLabel(serverId) {
-        return serverId === "2" ? "Asia" : "Americas / Europe";
-    }
-
-    // Убрать хардкод и выделть в утилити
-    function getAvatarUrl(pictureId) {
-        if (pictureId) return `https://goyfield.moe/uploads/${pictureId}.webp`;
-        return "";
     }
 </script>
 
@@ -1295,7 +693,7 @@
     <meta property="og:description" content={$t("seo.descriptions.profile")} />
 </svelte:head>
 
-<div class="max-w-[1800px] w-full mx-auto pb-20">
+<div class="max-w-[1550px] w-full mx-auto pb-20">
     {#if profile && profile.background}
         <div class="fixed inset-0 w-[100vw] h-[100vh] pointer-events-none z-0 flex items-center justify-center overflow-hidden">
             <div class="w-full h-full object-cover opacity-65 dark:opacity-55 transform scale-105">
@@ -1306,12 +704,10 @@
         </div>
     {/if}
     {#if loading}
-        <div class="flex items-center justify-center min-h-[60vh]">
-            <Icon name="loading" class="w-12 h-12 text-[#FFE145] animate-spin" />
-        </div>
+        <ProfileSkeleton />
     {:else if !$user}
         <div class="flex items-center justify-center min-h-[70vh] relative z-10" in:fade>
-            <div class="bg-white/5 border border-white/10 p-8 rounded-2xl max-w-lg text-center backdrop-blur-md shadow-2xl flex flex-col items-center">
+            <div class="bg-white/5 border border-white/10 p-8 rounded-2xl max-w-lg text-center flex flex-col items-center">
                 <h2 class="text-2xl font-bold dark:text-white text-gray-900 mb-4 font-sdk">
                     {$t("profile.sync_title")}
                 </h2>
@@ -1329,7 +725,7 @@
         </div>
     {:else if needsRegistration}
         <div class="flex items-center justify-center min-h-[70vh] relative z-10" in:fade>
-            <div class="bg-white/5 border border-white/10 p-8 rounded-2xl w-full max-w-md backdrop-blur-md shadow-2xl flex flex-col items-center">
+            <div class="bg-white/5 border border-white/10 p-8 rounded-2xl w-full max-w-md flex flex-col items-center">
                 <h2 class="text-2xl font-bold dark:text-white text-gray-900 mb-6 font-sdk">
                     {$t("profile.register_title")}
                 </h2>
@@ -1378,11 +774,11 @@
                     />
                     {#if showNameWarning}
                         <p class="absolute text-xs text-orange-400 font-sans w-full mt-2" transition:fade>
-                            {$t("profile.name_validation_error") || "Invalid character! Only English letters, numbers, and _ are allowed."}
+                            {$t("profile.name_validation_error")}
                         </p>
                     {:else}
                         <p class="absolute text-xs text-gray-400 font-sans w-full mt-2">
-                            {$t("profile.name_validation_hint") || "Only English letters, numbers, and underscores (_) are allowed."}
+                            {$t("profile.name_validation_hint")}
                         </p>
                     {/if}
                 </div>
@@ -1407,9 +803,9 @@
                     <div class="relative group shrink-0 w-28 h-28">
                         <button
                             type="button"
-                            class="w-full h-full rounded-md border border-white/20 focus:outline-none focus:ring-2 focus:ring-[#FFE145] transition-all overflow-hidden {getAvatarUrl(profile.picture) || localAvatar ? 'cursor-zoom-in' : 'cursor-pointer'}"
+                            class="w-full h-full rounded-md border border-white/20 focus:outline-none focus:ring-2 focus:ring-[#FFE145] transition-all overflow-hidden {localAvatar || getAvatarUrl(profile.picture) ? 'cursor-zoom-in' : 'cursor-pointer'}"
                             on:click={() => {
-                                if (getAvatarUrl(profile.picture) || localAvatar) {
+                                if (localAvatar || getAvatarUrl(profile.picture)) {
                                     showFullAvatarModal = true;
                                 } else {
                                     avatarInput.click();
@@ -1417,9 +813,9 @@
                             }}
                             aria-label="View avatar"
                         >
-                            {#if getAvatarUrl(profile.picture) || localAvatar}
+                            {#if localAvatar || getAvatarUrl(profile.picture)}
                                 <img
-                                    src={getAvatarUrl(profile.picture)}
+                                    src={localAvatar || getAvatarUrl(profile.picture)}
                                     alt="User Avatar"
                                     class="w-full h-full object-cover"
                                 />
@@ -1429,7 +825,7 @@
                                 </div>
                             {/if}
                         </button>
-                        {#if getAvatarUrl(profile.picture) || localAvatar}
+                        {#if localAvatar || getAvatarUrl(profile.picture)}
                             <button
                                 type="button"
                                 class="absolute bottom-1.5 right-1.5 w-7 h-7 bg-[#FFE145] hover:bg-[#ebd03e] text-gray-900 rounded-full flex items-center justify-center shadow-md transition-all scale-0 group-hover:scale-100 opacity-0 group-hover:opacity-100 z-10 cursor-pointer focus:scale-100 focus:opacity-100 outline-none"
@@ -1452,7 +848,7 @@
                                     class="bg-white/10 border border-white/20 text-white rounded px-2 py-1 outline-none font-mono text-xl w-full min-w-0 max-w-[150px] sm:max-w-xs"
                                     on:keydown={(e) => { if (e.key === "Enter") handleUpdateName(); else if (e.key === "Escape") handleCancelEditName(); }}
                                 />
-                                <Tooltip text={$t("settings.account.cancel") || "Cancel"}>
+                                <Tooltip text={$t("settings.account.cancel")}>
                                     <button
                                         on:click={handleCancelEditName}
                                         class="w-8 h-8 rounded text-gray-500 bg-[#323232] hover:bg-[#343434] flex items-center justify-center transition-colors"
@@ -1460,7 +856,7 @@
                                         <Icon name="close" class="w-4 h-4" />
                                     </button>
                                 </Tooltip>
-                                <Tooltip text={$t("settings.account.save") || "Save"}>
+                                <Tooltip text={$t("settings.account.save")}>
                                     <button
                                         on:click={handleUpdateName}
                                         class="w-8 h-8 ml-1 rounded bg-[#FFE145] hover:bg-[#ebd03e] text-gray-900 flex items-center justify-center transition-colors"
@@ -1471,7 +867,7 @@
                             </div>
                             {#if showNameWarning}
                                 <p class="absolute top-full left-0 text-[10px] text-orange-400 mt-0.5 font-sans whitespace-nowrap z-10" transition:fade>
-                                    {$t("profile.name_validation_error") || "Invalid character! Only English letters, numbers, and _ are allowed."}
+                                    {$t("profile.name_validation_error")}
                                 </p>
                             {/if}
                         {:else}
@@ -1479,12 +875,12 @@
                                 <h1 class="text-3xl font-bold dark:text-white text-gray-900 font-sdk">
                                     {profile.name}
                                 </h1>
-                                <Tooltip text={$t("profile.edit_nickname") || "Edit nickname"}>
+                                <Tooltip text={$t("profile.edit_nickname")}>
                                     <button on:click={() => { newProfileName = profile.name || ""; isEditingName = true; }} class="text-gray-400 hover:text-white transition-colors flex items-center justify-center w-6 h-6">
                                         <Icon name="pen" class="w-4 h-4" />
                                     </button>
                                 </Tooltip>
-                                <Tooltip text={$t("profile.copy_profile_link") || "Copy profile link"}>
+                                <Tooltip text={$t("profile.copy_profile_link")}>
                                     <button on:click={handleCopyProfileLink} class="text-gray-400 hover:text-white transition-colors flex items-center justify-center w-6 h-6">
                                         {#if linkCopied}
                                             <Icon name="success" class="w-3.5 h-3.5 text-yellow-400" />
@@ -1512,11 +908,11 @@
                                 on:keydown={(e) => { if (e.key === 'Enter' || e.key === ' ') selectedGameUid = d.game_uid; }}
                                 role="button"
                                 tabindex="0"
-                                class="{!profile?.background ? 'bg-gray-100/80' : 'bg-gray-100/25'}  dark:bg-black/20 backdrop-blur-md border text-left p-3 rounded-xl flex items-center gap-4 w-[285px] hover:bg-gray-400/15 dark:hover:bg-black/35 transition-all relative group cursor-pointer select-none outline-none focus-visible:ring-1 focus-visible:ring-[#FFE145]
+                                class="{!profile?.background ? 'bg-gray-100/80' : 'bg-gray-100/25'}  dark:bg-black/20 backdrop-blur-md border text-left p-3 rounded-xl flex items-center gap-4 w-[255px] hover:bg-gray-400/15 dark:hover:bg-black/35 transition-all relative group cursor-pointer select-none outline-none focus-visible:ring-1 focus-visible:ring-[#FFE145]
                                 {selectedGameUid === d.game_uid ? 'border-2 border-[#FFE145]' : 'border-2 border-white/10 dark:border-gray-400/20'}"
                             >
                                 <Tooltip
-                                    text={favoriteGameUid === d.game_uid ? ($t("profile.remove_favorite") || "Remove from favorites") : ($t("profile.set_favorite") || "Set as favorite")}
+                                    text={favoriteGameUid === d.game_uid ? $t("profile.remove_favorite") : $t("profile.set_favorite")}
                                     class="absolute -top-1.5 -left-1.5 z-20 {favoriteGameUid === d.game_uid ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'} transition-all"
                                 >
                                     <button
@@ -1529,7 +925,7 @@
                                 </Tooltip>
 
                                 <Tooltip
-                                    text={$t("profile.unlink_account") || "Unlink account"}
+                                    text={$t("profile.unlink_account")}
                                     class="absolute -top-1.5 -right-1.5 z-20 opacity-0 group-hover:opacity-100 transition-all"
                                 >
                                     <button
@@ -1550,11 +946,11 @@
                                 <div class="flex-1 min-w-0 flex flex-col gap-0.5">
                                     <div class="flex items-center gap-1.5">
                                         <span class="text-md font-bold dark:text-white text-gray-900 font-sdk truncate">{d.info?.base?.name || "Profile"}</span>
-                                        <ContractLevelTag level={d.info?.contract?.level || 0} />
+                                        <!--<ContractLevelTag level={d.info?.contract?.level || 0} />-->
                                     </div>
                                     <div class="text-[10px] text-gray-500 dark:text-gray-400 font-mono truncate flex items-center gap-1">
                                         <span>UID: {d.game_uid}</span>
-                                        <Tooltip text={$t("profile.copy_uid") || "Copy UID"}>
+                                        <Tooltip text={$t("profile.copy_uid")}>
                                             <button 
                                                 on:click|stopPropagation={() => handleCopyUid(d.game_uid)} 
                                                 class="text-gray-500 hover:text-gray-600 hover:dark:text-white transition-colors cursor-pointer flex items-center justify-center p-0.5"
@@ -1608,93 +1004,44 @@
             </div>
 
             {#if activeAccount}
-                <div class="grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-[320px_435px_1fr] gap-6" in:fade>
+                <div class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-[360px_1fr] gap-6 items-start min-w-0" in:fade>
                     
-                    <div class="space-y-6">
+                    <div class="min-w-0 2xl:col-start-1 2xl:row-start-1">
                         <AccountSummary 
                             stats={activeAccount.info?.stats || {}} 
-                            totalCharsCount={Object.keys(charactersById).length} 
+                            totalCharsCount={Object.keys(characters).length - 1} 
                             profileBackground={!profile?.background}
                         />
-
-                        <div class="min-w-0 flex flex-col">
-                            {#if activeAccount?.records_uid}
-                                <RatingCard customGameUid={activeAccount.records_uid} isProfile={true} hideBorders={!!profile?.background} />
-                            {:else}
-                                <div class="{!profile?.background ? 'bg-white dark:bg-[#383838] border border-white/10' : 'bg-white/5 border dark:bg-[#383838]/5 dark:border-[#444444]/20 border-white/20'} rounded-xl p-5 min-w-0 flex flex-col backdrop-blur-sm shadow-sm">
-                                    <h2 class="text-xl font-bold text-[#21272C] dark:text-[#FDFDFD] mb-4 font-sdk border-b {!profile?.background ? 'border-gray-100 dark:border-[#444444]' : 'border-gray-100/30 dark:border-[#444444]/30'} pb-3">
-                                        {$t("profile.stats")}
-                                    </h2>
-                                    <div class="flex flex-col items-center h-40 justify-center text-center border border-gray-100/50 dark:border-[#444444]/50 rounded-lg bg-gray-50/20 dark:bg-[#2e2e2e]/20 font-mono text-xs text-gray-500 dark:text-gray-400 backdrop-blur-sm px-4">
-                                        <Icon name="noData" class="w-8 h-8 mb-2 opacity-30" />
-                                        <div class="">
-                                            {$t("profile.bind_to_view_luck")}
-                                        </div>
-                                    </div>
-                                </div>
-                            {/if}
-                        </div>
                     </div>
 
-                    <CrisisContract
-                        contract={activeAccount.info?.contract}
-                        hasBackground={!!profile?.background}
-                    />
-
-                    <div class="col-span-1 xl:col-span-2 2xl:col-span-1 w-full min-w-0 overflow-hidden">
-                        <div class="{!profile?.background ? 'bg-white dark:bg-[#383838] border border-white/10' : 'bg-white/5 border dark:bg-[#383838]/5 dark:border-[#444444]/20 border-white/20'} rounded-xl p-5 flex flex-col w-full mx-auto backdrop-blur-sm shadow-sm min-w-0 overflow-hidden">
-                            <div class="flex items-center justify-between border-b {!profile?.background ? 'border-gray-100 dark:border-[#444444]' : 'border-gray-100/30 dark:border-[#444444]/30'} pb-3 mb-3">
-                                <div class="flex gap-2">
-                                    <Icon name="operators" class="w-6 h-6 text-[#21272C] dark:text-[#FDFDFD]" />
-                                    <h2 class="text-xl font-bold text-[#21272C] dark:text-[#FDFDFD] font-sdk">
-                                        {$t("profile.operators_title")}
-                                    </h2>
+                    <div class="min-w-0 flex flex-col 2xl:col-start-1 2xl:row-start-2">
+                        {#if activeAccount?.records_uid || activeAccount?.pulls}
+                            <RatingCard customGameUid={activeAccount.records_uid} profileStats={activeAccount?.pulls} isProfile={true} hideBorders={!!profile?.background} />
+                        {:else}
+                            <div class="{!profile?.background ? 'bg-white dark:bg-[#383838] border border-white/10' : 'bg-white/5 border dark:bg-[#383838]/5 dark:border-[#444444]/20 border-white/20'} rounded-xl p-5 min-w-0 flex flex-col backdrop-blur-sm shadow-sm">
+                                <h2 class="text-xl font-bold text-[#21272C] dark:text-[#FDFDFD] mb-4 font-sdk border-b {!profile?.background ? 'border-gray-100 dark:border-[#444444]' : 'border-gray-100/30 dark:border-[#444444]/30'} pb-3">
+                                    {$t("profile.stats")}
+                                </h2>
+                                <div class="flex flex-col items-center h-40 justify-center text-center border border-gray-100/50 dark:border-[#444444]/50 rounded-lg bg-gray-50/20 dark:bg-[#2e2e2e]/20 text-xs text-gray-500 dark:text-gray-400 backdrop-blur-sm px-4">
+                                    <Icon name="noData" class="w-8 h-8 mb-2 opacity-30" />
+                                    <p class="italic">
+                                        {$t("profile.bind_to_view_luck")}
+                                    </p>
                                 </div>
                             </div>
-                            <div class="flex gap-3.5 overflow-x-auto pb-2.5 whitespace-nowrap max-w-full justify-start items-center">
-                                {#each sortedChars as char}
-                                    {@const opData = getOperatorData(char)}
-                                    {@const isSelected = char.id === selectedOperatorId}
-                                    <div class="relative w-12 h-12 shrink-0 flex items-center justify-center">
-                                        <button
-                                            on:click={() => selectedOperatorId = char.id}
-                                            class="w-11 h-11 rounded-full border-2 transition-all duration-300 outline-none cursor-pointer
-                                            {isSelected ? 'ring-2 ring-gray-400 dark:ring-white shadow-md dark:border-gray-500'  : 'border-[#FF6600]/80 hover:opacity-85'}"
-                                        >
-                                            <Image id={opData.id} variant="operator-icon" className="w-full h-full object-cover rounded-full" />
-                                        </button>
-                                        <div class="absolute -bottom-1 -right-1 z-10 px-1 py-0.5 text-[12px] text-white bg-black/40 rounded-md leading-none font-nums select-none shadow-xl">
-                                            {char.level}
-                                        </div>
-                                    </div>
-                                {/each}
-                            </div>
+                        {/if}
+                    </div>
 
-                            {#if selectedChar}
-                                
-                                {#key selectedOperatorId}
-                                    <OperatorDetailsCard
-                                        {selectedChar}
-                                        {detailedChar}
-                                        {opData}
-                                        {targetCharData}
-                                        {elementColor}
-                                        {svelteId}
-                                        {talentsList}
-                                        {getWeaponData}
-                                        {getWeaponIcon}
-                                        {getWeaponTerms}
-                                        {getStaticEquipId}
-                                        {getEquipRarity}
-                                        {getEquipTier}
-                                        {getStatIcon}
-                                        charDetails={selectedCharDetails}
-                                        charLocale={selectedCharLocale}
-                                        weaponDetails={selectedWeaponDetails}
-                                    />
-                                {/key}
-                            {/if}
-                        </div>
+                    <!--<CrisisContract
+                        contract={activeAccount.info?.contract}
+                        hasBackground={!!profile?.background}
+                    />-->
+
+                    <div class="min-w-0 md:col-span-2 2xl:col-span-1 2xl:col-start-2 2xl:row-start-1 2xl:row-span-2">
+                        <OperatorSection
+                            {activeAccount}
+                            hasBackground={!!profile?.background}
+                        />
                     </div>
 
                 </div>
@@ -1714,6 +1061,7 @@
         {profile}
         {activeAccount}
         {primaryAccountOptions}
+        selectedRecordsAccountId={activeAccountPullsAccountId}
         {filteredBackgrounds}
         bind:bgSearchQuery
         on:close={() => settingsModalOpen = false}
@@ -1745,8 +1093,8 @@
 
     <ConfirmationModal
         isOpen={showDeleteAccountModal}
-        title={$t("profile.confirm_unlink") || "Unlink Account?"}
-        confirmText={$t("settings.account.deleteAccount") || "Unlink"}
+        title={$t("profile.confirm_unlink")}
+        confirmText={$t("settings.account.deleteAccount")}
         isDestructive={true}
         on:confirm={confirmDeleteAccount}
         on:close={() => (showDeleteAccountModal = false)}

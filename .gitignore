@@ -8,3 +8,7 @@ dist/
 *.db
 *.db-journal
 accountData.json
+generated/
+scripts/
+goyfield-backend/static/banwords/banned_words.txt
+goyfield-backend/static/banroots/banned_roots.txt

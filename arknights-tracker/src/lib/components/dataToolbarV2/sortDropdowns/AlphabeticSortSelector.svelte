@@ -1,11 +1,12 @@
-<script>
+<script lang="ts">
+    import { LocaleOrder } from "$lib/classes/comparators/LocaleOrder";
     import Icon from "$lib/components/Icon.svelte";
     import { t } from "$lib/i18n.js";
 
-    export let selectedSort;
+    export let selectedSort: LocaleOrder;
 
     function switchLocaleSort() {
-        selectedSort = selectedSort === "a-z" ? "z-a" : "a-z";
+        selectedSort = LocaleOrder.flip(selectedSort);
     }
 </script>
 
@@ -15,7 +16,7 @@
 >
 
     <span class="font-bold text-xs text-gray-800 dark:text-gray-300 pl-2 pt-1.5 pointer-events-none">
-        {$t(`sort.localeName.${selectedSort}`)}
+        {$t(LocaleOrder.getI18nKey(selectedSort))}
     </span>
 
     <div class="relative flex flex-col h-full w-4 items-center justify-center">

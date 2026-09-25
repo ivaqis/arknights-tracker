@@ -1,17 +1,21 @@
-<script>
-    import { DraggableList } from "$lib/classes/dragndrop/DraggableList.js";
+<script lang="ts" generics="TParam extends DraggableItem">
+    import type { DraggableItem } from "$lib/classes/dragndrop/DraggableItem";
+    import { DraggableList } from "$lib/classes/dragndrop/DraggableList";
+    import type { IDraggableList } from "$lib/classes/dragndrop/IDraggableList";
+    import type { TextParamBoxProps } from "$lib/components/dataToolbarV2/paramBoxes/TextParamBoxProps";
+    import type { Component } from "svelte";
     import { flip } from "svelte/animate";
 
-    export let paramBox;
+    export let paramBox: Component<TextParamBoxProps<TParam>>;
 
-    export let getLocaleFunc;
+    export let getLocaleFunc: (param: TParam) => string;
 
     // bindable
-    export let paramList = []; // if bound, it will be updated on change order of elements
-    export let draggedParam = null;
+    export let paramList: TParam[] = []; // if bound, it will be updated on change order of elements
+    export let draggedParam: TParam | null = null;
 
 
-    let dragList = new DraggableList(paramList);
+    let dragList: IDraggableList<TParam> = new DraggableList(paramList);
 
     $: draggedParam = dragList.draggedItemId;
 
@@ -19,7 +23,7 @@
         updateItemList(paramList);
     }
 
-    function updateItemList(itemList) {
+    function updateItemList(itemList: TParam[]) {
         dragList.itemList = itemList;
     }
 
@@ -34,9 +38,9 @@
     let currentCursorPosX = 0;
     let currentCursorPosY = 0;
 
-    $: isParamDragged = (param) => param === dragList.draggedItemId;
+    $: isParamDragged = (param: TParam) => param === dragList.draggedItemId;
 
-    function startDrag(event, param) {
+    function startDrag(event: PointerEvent & { currentTarget: EventTarget & HTMLDivElement }, param: TParam) {
         currentCursorPosX = event.clientX;
         currentCursorPosY = event.clientY;
 
@@ -51,7 +55,7 @@
         forceDragListUpdate();
     }
 
-    function onParamEnter(param) {
+    function onParamEnter(param: TParam) {
         if (!dragList.draggedItemId) return;
 
         let wasModified = dragList.onEnter(param);
@@ -63,7 +67,7 @@
         }
     }
 
-    function onParamLeave(param) {
+    function onParamLeave(param: TParam) {
         if (!dragList.draggedItemId) return;
 
         dragList.onLeave(param);
@@ -72,7 +76,7 @@
     }
 
 
-    let paramHovered = null;
+    let paramHovered: TParam | null = null;
 
     function handleWindowPointerUp() {
         if (!dragList.draggedItemId) return;
@@ -87,17 +91,23 @@
         document.body.classList.remove("cursor-grabbing");
     }
 
-    function handleWindowPointerMove(event) {
-        if (!dragList.draggedItemId) return;
+    function handleWindowPointerMove(event: PointerEvent & { currentTarget: EventTarget & Window }) {
+        if (!dragList.draggedItemId)
+            return;
 
         currentCursorPosX = event.clientX;
         currentCursorPosY = event.clientY;
 
         const elementUnderPointer = document.elementFromPoint(event.clientX, event.clientY);
-        const paramItem = elementUnderPointer.closest("[data-param-id]");
-        const newParam = paramItem?.dataset.paramId ?? null;
 
-        if (newParam === paramHovered) return;
+        if (!elementUnderPointer)
+            return;
+
+        const paramItem = elementUnderPointer.closest<HTMLElement>("[data-param-id]");
+        const newParam = (paramItem?.dataset.paramId ?? null) as TParam | null;
+
+        if (newParam === paramHovered)
+            return;
 
         if (paramHovered) {
             onParamLeave(paramHovered);

@@ -1,4 +1,4 @@
-import {hubCrafts} from "$lib/data/crafts/hubCrafts.js";
+import { hubCrafts } from "$lib/data/crafts/hubCrafts";
 
 export class HubCraft {
     _craftObj;

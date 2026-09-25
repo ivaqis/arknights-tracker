@@ -1,4 +1,4 @@
-FROM node:20-slim AS build
+FROM node:22-slim AS build
 
 WORKDIR /app
 
@@ -9,7 +9,7 @@ COPY . .
 
 RUN npm run build
 
-FROM node:20-slim
+FROM node:22-slim
 
 WORKDIR /app
 
@@ -19,10 +19,11 @@ ENV HOST=0.0.0.0
 
 COPY --from=build /app/build ./build
 COPY --from=build /app/package*.json ./
-COPY entrypoint.sh /app/entrypoint.sh
+COPY --from=build /app/entrypoint.sh /app/entrypoint.sh
 
-RUN npm ci --omit=dev
-RUN chmod +x /app/entrypoint.sh
+RUN npm ci --omit=dev && chmod +x /app/entrypoint.sh && chown -R node:node /app
+
+USER node
 
 EXPOSE 3000
 

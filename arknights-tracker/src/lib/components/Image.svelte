@@ -1,30 +1,31 @@
 <script context="module">
     const loadedCache = new Set();
+    const failedCache = new Set();
 </script>
 
-<script>
+<script lang="ts">
     import { getImagePath } from "$lib/utils/imageUtils";
-
     import Icon from "$lib/components/Icon.svelte";
 
-    export let item = null; 
-    export let id = null;
-    export let variant = ""; 
-    export let alt = "";
-    export let size = "100%";
-    export let className = ""; 
-    export let style = "";
-    export let interactive = false;
-    export let priority = false;
-    export let loading = "lazy";
-    export let fetchpriority = "low";
+    export let item: {icon?: string; id?: string; name?: string} | null = null;
+    export let id: string | null = null;
+    export let name: string | null = null;
+    export let variant: string = "";
+    export let alt: string = "";
+    export let size: `${number}%` | number = "100%";
+    export let className: string = "";
+    export let style: string = "";
+    export let interactive: boolean = false;
+    export let priority: boolean = false;
+    export let loading: "lazy" | "eager" = "lazy";
+    export let fetchpriority: "auto" | "high" | "low" = "low";
 
-    $: rawId = id || (item?.icon) || (item?.id) || (item?.name);
+    $: rawId = id || name || (item?.icon) || (item?.id) || (item?.name);
     $: initialSrc = getImagePath(rawId, variant);
 
     const FALLBACK_EXTS = ['.webp', '.png', '.jpg', '.jpeg', '.gif'];
 
-    function getCandidates(url) {
+    function getCandidates(url: string): string[] {
         if (!url || url.startsWith("data:") || url.startsWith("http://") || url.startsWith("https://")) {
             return [url];
         }
@@ -43,63 +44,57 @@
         return list;
     }
 
-    let candidates = [];
+    let candidates: string[] = [];
     let candidateIndex = 0;
     let currentSrc = "";
     let hasError = false;
     let isVisible = false;
     let isInstant = false;
+    let prevInitialSrc = "";
 
-    $: {
-        candidates = getCandidates(initialSrc);
-        candidateIndex = 0;
-        currentSrc = candidates[0] || "";
-        hasError = false;
-        isInstant = loadedCache.has(currentSrc);
-        isVisible = isInstant;
+    $: if (initialSrc !== prevInitialSrc) {
+        prevInitialSrc = initialSrc;
+        if (!initialSrc || failedCache.has(initialSrc)) {
+            candidates = [];
+            candidateIndex = 0;
+            currentSrc = "";
+            hasError = true;
+            isVisible = true;
+            isInstant = false;
+        } else {
+            candidates = getCandidates(initialSrc);
+            candidateIndex = 0;
+            currentSrc = candidates[0] || "";
+            hasError = false;
+            isInstant = loadedCache.has(currentSrc);
+            isVisible = isInstant;
+        }
     }
 
-    function imageHandler(node) {
-        function handleLoad() {
-            if (currentSrc) loadedCache.add(currentSrc);
+    function handleLoad() {
+        if (currentSrc) loadedCache.add(currentSrc);
+        isVisible = true;
+        hasError = false;
+    }
+
+    function handleErr() {
+        if (candidateIndex < candidates.length - 1) {
+            candidateIndex += 1;
+            currentSrc = candidates[candidateIndex];
+        } else {
+            if (initialSrc) failedCache.add(initialSrc);
             isVisible = true;
-            hasError = false;
+            hasError = true;
         }
+    }
 
-        function handleErr() {
-            if (candidateIndex < candidates.length - 1) {
-                candidateIndex += 1;
-                currentSrc = candidates[candidateIndex];
-                node.src = currentSrc;
-            } else {
-                isVisible = true;
-                hasError = true;
-            }
+    function imageHandler(node: HTMLImageElement) {
+        if (node.complete && node.naturalWidth > 0) {
+            handleLoad();
         }
-
-        function checkComplete() {
-            if (node.complete) {
-                if (node.naturalWidth > 0) {
-                    handleLoad();
-                } else if (node.naturalWidth === 0 && node.src) {
-                    handleErr();
-                }
-            }
-        }
-
-        node.addEventListener('load', handleLoad);
-        node.addEventListener('error', handleErr);
-
-        checkComplete();
 
         return {
-            update() {
-                checkComplete();
-            },
-            destroy() {
-                node.removeEventListener('load', handleLoad);
-                node.removeEventListener('error', handleErr);
-            }
+            destroy() {}
         };
     }
 
@@ -117,7 +112,7 @@
         style="{sizeStyle} {style}"
     >
         {#if !variant.includes('banner') && !variant.includes('event')}
-             <Icon name="noData" className="w-1/2 h-1/2 opacity-50" />
+             <Icon name="noData" class="w-1/4 h-1/4 opacity-50" />
         {/if}
     </div>
 {:else}
@@ -131,7 +126,9 @@
     {/if}
     <img
         src={currentSrc}
-        use:imageHandler={currentSrc}
+        on:load={handleLoad}
+        on:error={handleErr}
+        use:imageHandler
         alt={alt || rawId}
         loading={priority ? "eager" : loading}
         fetchpriority={priority ? "high" : fetchpriority}

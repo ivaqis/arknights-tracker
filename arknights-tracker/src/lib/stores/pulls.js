@@ -1,16 +1,24 @@
-// src/lib/stores/pulls.js
-
-import { writable, get } from 'svelte/store';
-import { browser } from '$app/environment';
-import { mergePulls, calculatePity, calculateBannerStats, validateAccountConsistency, findLCSMatches, canonicalizeName } from '$lib/utils/importUtils';
-import { accountStore } from './accounts';
+import { writable, get } from "svelte/store";
+import { browser } from "$app/environment";
+import {
+    mergePulls,
+    mergePullsWithReport,
+    isWeaponBanner,
+    calculatePity,
+    calculateBannerStats,
+    validateAccountConsistency,
+    findLCSMatches,
+    canonicalizeName
+} from "$lib/utils/importUtils";
+import { accountStore } from "./accounts";
 import { uploadLocalData, user } from "$lib/stores/cloudStore";
 
 const defaultData = {
     "standard": { pulls: [], stats: {} },
     "special": { pulls: [], stats: {} },
     "new-player": { pulls: [], stats: {} },
-    "joint": { pulls: [], stats: {} }
+    "joint": { pulls: [], stats: {} },
+    "rerun": { pulls: [], stats: {} }
 };
 
 function createPullStore() {
@@ -22,16 +30,145 @@ function createPullStore() {
         set(JSON.parse(JSON.stringify(defaultData)));
     };
 
+    const migrateLegacyRerunPulls = (data) => {
+        if (!data || typeof data !== "object")
+            return false;
+
+        let modified = false;
+
+        if (data.special && Array.isArray(data.special.pulls)) {
+            const charRerunPullsToMove = [];
+            const weaponRerunPullsToMove = [];
+            const remainingSpecialPulls = [];
+
+            for (const p of data.special.pulls) {
+                const rawPool = String(p.rawPoolId || "").toLowerCase();
+                const bannerId = String(p.bannerId || "").toLowerCase();
+                const isWeapon = p.type === "weapon" || isWeaponBanner(p.rawPoolId) || isWeaponBanner(p.bannerId);
+
+                const isRerunPull =
+                    rawPool === "special_1_5_2" ||
+                    rawPool === "rerun_chr_yvonne" ||
+                    rawPool === "rerun_wpn_yvonne" ||
+                    rawPool === "weponbox_1_5_2" ||
+                    rawPool.includes("rerun") ||
+                    bannerId === "special_1_5_2" ||
+                    bannerId === "rerun_chr_yvonne" ||
+                    bannerId === "rerun_wpn_yvonne" ||
+                    bannerId === "weponbox_1_5_2" ||
+                    bannerId.includes("rerun");
+
+                if (isRerunPull) {
+                    if (isWeapon) {
+                        p.bannerId = "rerun_wpn_yvonne";
+                        weaponRerunPullsToMove.push(p);
+                    } else {
+                        p.bannerId = "rerun";
+                        charRerunPullsToMove.push(p);
+                    }
+                    modified = true;
+                } else {
+                    remainingSpecialPulls.push(p);
+                }
+            }
+
+            if (charRerunPullsToMove.length > 0 || weaponRerunPullsToMove.length > 0) {
+                data.special.pulls = remainingSpecialPulls;
+            }
+
+            if (charRerunPullsToMove.length > 0) {
+                if (!data.rerun) {
+                    data.rerun = { pulls: [], stats: {} };
+                }
+                data.rerun.pulls = mergePulls(data.rerun.pulls || [], charRerunPullsToMove);
+            }
+
+            if (weaponRerunPullsToMove.length > 0) {
+                if (!data["rerun_wpn_yvonne"]) {
+                    data["rerun_wpn_yvonne"] = { pulls: [], stats: {} };
+                }
+                data["rerun_wpn_yvonne"].pulls = mergePulls(data["rerun_wpn_yvonne"].pulls || [], weaponRerunPullsToMove);
+            }
+        }
+
+        if (data.rerun && Array.isArray(data.rerun.pulls)) {
+            const weaponsInRerun = [];
+            const charsInRerun = [];
+
+            for (const p of data.rerun.pulls) {
+                const rawPool = String(p.rawPoolId || "").toLowerCase();
+                const bannerId = String(p.bannerId || "").toLowerCase();
+                const isWeapon = p.type === "weapon" || isWeaponBanner(rawPool) || isWeaponBanner(bannerId);
+
+                if (isWeapon) {
+                    p.bannerId = "rerun_wpn_yvonne";
+                    weaponsInRerun.push(p);
+                    modified = true;
+                } else {
+                    charsInRerun.push(p);
+                }
+            }
+
+            if (weaponsInRerun.length > 0) {
+                data.rerun.pulls = charsInRerun;
+                if (!data["rerun_wpn_yvonne"]) {
+                    data["rerun_wpn_yvonne"] = { pulls: [], stats: {} };
+                }
+                data["rerun_wpn_yvonne"].pulls = mergePulls(data["rerun_wpn_yvonne"].pulls || [], weaponsInRerun);
+            }
+        }
+
+        if (data["special_1_5_2"] && Array.isArray(data["special_1_5_2"].pulls)) {
+            const charPullsToMove = data["special_1_5_2"].pulls.map(p => ({
+                ...p,
+                bannerId: "rerun"
+            }));
+            if (!data.rerun) {
+                data.rerun = { pulls: [], stats: {} };
+            }
+            data.rerun.pulls = mergePulls(data.rerun.pulls || [], charPullsToMove);
+            delete data["special_1_5_2"];
+            modified = true;
+        }
+
+        if (data["weponbox_1_5_2"] && Array.isArray(data["weponbox_1_5_2"].pulls)) {
+            const weaponPullsToMove = data["weponbox_1_5_2"].pulls.map(p => ({
+                ...p,
+                bannerId: "rerun_wpn_yvonne",
+                rawPoolId: p.rawPoolId === "weponbox_1_5_2" ? "rerun_wpn_yvonne" : p.rawPoolId
+            }));
+
+            if (!data["rerun_wpn_yvonne"]) {
+                data["rerun_wpn_yvonne"] = { pulls: [], stats: {} };
+            }
+            data["rerun_wpn_yvonne"].pulls = mergePulls(data["rerun_wpn_yvonne"].pulls || [], weaponPullsToMove);
+            delete data["weponbox_1_5_2"];
+            modified = true;
+        }
+
+        return modified;
+    };
+
     const restoreDatesAndStats = (data, serverId) => {
-        if (!data || typeof data !== 'object') return;
+        if (!data || typeof data !== "object")
+            return;
+
+        migrateLegacyRerunPulls(data);
 
         Object.keys(data).forEach(key => {
             if (data[key] && Array.isArray(data[key].pulls)) {
                 data[key].pulls = data[key].pulls.filter(p => {
-                    if (!p || !p.name || p.name === 'undefined' || p.name === 'null') return false;
-                    if (!p.time) return false;
+                    if (!p || !p.name || p.name === "undefined" || p.name === "null")
+                        return false;
+
+                    if (!p.time)
+                        return false;
+
                     const d = new Date(p.time);
-                    if (Number.isNaN(d.getTime()) || d.getFullYear() < 2000) return false;
+
+                    if (Number.isNaN(d.getTime()) || d.getFullYear() < 2000)
+                        return false;
+
                     return true;
                 });
 
@@ -62,10 +199,12 @@ function createPullStore() {
     };
 
 
-    const loadDataForAccount = (id, serverId = '3') => {
-        if (!browser) return;
+    const loadDataForAccount = (id, serverId = "3") => {
+        if (!browser)
+            return;
 
         currentAccountId = id;
+
         const storageKey = `ark_tracker_data_${id}`;
 
         try {
@@ -73,24 +212,32 @@ function createPullStore() {
 
             if (stored) {
                 const parsed = JSON.parse(stored);
+                const wasMigrated = migrateLegacyRerunPulls(parsed);
+
                 restoreDatesAndStats(parsed, serverId);
                 set(parsed);
-            } else {
-                const legacyData = localStorage.getItem('ark_tracker_pulls');
 
-                if (legacyData && id === 'main') {
+                if (wasMigrated) {
+                    saveDataToStorage(id, parsed);
+                }
+            } else {
+                const legacyData = localStorage.getItem("ark_tracker_pulls");
+
+                if (legacyData && id === "main") {
                     const parsedLegacy = JSON.parse(legacyData);
+
                     restoreDatesAndStats(parsedLegacy, serverId);
                     set(parsedLegacy);
 
                     saveDataToStorage(id, parsedLegacy);
-                    localStorage.removeItem('ark_tracker_pulls');
+                    localStorage.removeItem("ark_tracker_pulls");
                 } else {
                     resetStore();
                 }
             }
         } catch (e) {
             console.error("Critical error loading account data:", e);
+
             resetStore();
         }
     };
@@ -100,13 +247,13 @@ function createPullStore() {
             if (id) {
                 const allAccounts = get(accountStore.accounts);
                 const currentAcc = allAccounts.find(a => a.id === id);
-                const sId = currentAcc?.serverId || '3';
+                const sId = currentAcc?.serverId || "3";
 
                 loadDataForAccount(id, sId);
             }
         });
 
-        window.addEventListener('ark_tracker_clear_data', (e) => {
+        window.addEventListener("ark_tracker_clear_data", (e) => {
             if (e.detail && e.detail.id === currentAccountId) {
                 resetStore();
             }
@@ -116,24 +263,30 @@ function createPullStore() {
         subscribe,
         set,
         update,
-        smartImport: async (newPulls, serverId = '3', commit = true, isRecoveryEnabled = false) => {
-            if (!browser) return;
+        smartImport: async (newPulls, serverId = "3", commit = true, isRecoveryEnabled = false) => {
+            if (!browser)
+                return;
 
-            newPulls.forEach(p => {
-                p.name = canonicalizeName(p.name);
-            });
-
-            await new Promise(r => setTimeout(r, 100));
+            const cleanIncoming = (newPulls || []).map(p => ({
+                ...p,
+                name: canonicalizeName(p.name)
+            }));
 
             return new Promise((resolve, reject) => {
                 update(currentData => {
                     try {
                         const newData = JSON.parse(JSON.stringify(currentData));
+
                         restoreDatesAndStats(newData, serverId);
 
-                        const report = { status: 'up_to_date', addedCount: {}, totalAdded: 0 };
+                        const report = {
+                            status: "up_to_date",
+                            addedCount: {},
+                            totalAdded: 0
+                        };
 
                         const allCurrentPulls = [];
+
                         Object.entries(newData).forEach(([key, val]) => {
                             if (val && Array.isArray(val.pulls)) {
                                 allCurrentPulls.push(...val.pulls);
@@ -141,25 +294,36 @@ function createPullStore() {
                         });
 
                         if (allCurrentPulls.length > 0) {
-                            validateAccountConsistency(allCurrentPulls, newPulls, isRecoveryEnabled);
+                            validateAccountConsistency(allCurrentPulls, cleanIncoming, isRecoveryEnabled);
                         }
 
                         const incomingByBanner = {};
-                        newPulls.forEach(p => {
-                            const bid = p.bannerId || 'standard';
-                            if (!incomingByBanner[bid]) incomingByBanner[bid] = [];
+
+                        cleanIncoming.forEach(p => {
+                            const bid = p.bannerId || "standard";
+
+                            if (!incomingByBanner[bid]) {
+                                incomingByBanner[bid] = [];
+                            }
+
                             incomingByBanner[bid].push(p);
                         });
 
                         let hasUpdates = false;
 
-                        Object.keys(incomingByBanner).forEach(bid => {
-                            let targetKey = bid;
-                            const isKnownKey = newData[bid] || bid === 'standard' || bid === 'special' || bid === 'new-player' || bid === 'joint';
-                            const isWeaponKey = bid.includes('weapon') || bid.includes('wepon') || bid.includes('constant');
+                        Object.keys(incomingByBanner).forEach(bannerId => {
+                            let targetKey = bannerId;
+
+                            const isKnownKey = newData[bannerId]
+                                || bannerId === "standard"
+                                || bannerId === "special"
+                                || bannerId === "new-player"
+                                || bannerId === "joint"
+                                || bannerId === "rerun";
+                            const isWeaponKey = isWeaponBanner(bannerId);
 
                             if (!isKnownKey && !isWeaponKey) {
-                                targetKey = 'standard';
+                                targetKey = "standard";
                             }
 
                             if (!newData[targetKey]) {
@@ -167,14 +331,15 @@ function createPullStore() {
                             }
 
                             const oldList = newData[targetKey].pulls;
-                            const incomeList = incomingByBanner[bid];
+                            const incomeList = incomingByBanner[bannerId];
 
-                            let hasEnriched = isRecoveryEnabled;
                             if (isRecoveryEnabled) {
                                 const matches = findLCSMatches(oldList, incomeList);
+
                                 matches.forEach(m => {
                                     const oldP = m.oldPull;
                                     const newP = m.newPull;
+
                                     oldP.id = newP.id;
                                     oldP.time = newP.time;
                                     oldP.seqId = newP.seqId;
@@ -185,68 +350,56 @@ function createPullStore() {
                                 });
                             }
 
-                            oldList.forEach(oldP => {
-                                const freshP = incomeList.find(p => p.id === oldP.id || (p.seqId > 0 && p.seqId === oldP.seqId && p.time.getTime() === oldP.time.getTime()));
-                                if (freshP) {
-                                    if (!oldP.rawPoolId && freshP.rawPoolId) { oldP.rawPoolId = freshP.rawPoolId; hasEnriched = true; }
-                                    if (!oldP.type && freshP.type) { oldP.type = freshP.type; hasEnriched = true; }
-                                    if (oldP.isNew === undefined && freshP.isNew !== undefined) { oldP.isNew = freshP.isNew; hasEnriched = true; }
-                                }
-                            });
+                            const {
+                                merged: mergedList,
+                                addedCount,
+                                hasEnriched
+                            } = mergePullsWithReport(oldList, incomeList);
 
-                            const oldCounts = {};
-                            oldList.forEach(p => {
-                                const timeVal = (p && p.time && typeof p.time.getTime === 'function') ? p.time.getTime() : (p && p.time ? new Date(p.time).getTime() : 0);
-                                const sig = (p.seqId > 0) ? `${timeVal}_${p.seqId}` : `${timeVal}_${String(p.name || '').toLowerCase()}`;
-                                oldCounts[sig] = (oldCounts[sig] || 0) + 1;
-                            });
-                            const reallyNew = [];
-                            const newCounts = {};
-                            incomeList.forEach(p => {
-                                const timeVal = (p && p.time && typeof p.time.getTime === 'function') ? p.time.getTime() : (p && p.time ? new Date(p.time).getTime() : 0);
-                                const sig = (p.seqId > 0) ? `${timeVal}_${p.seqId}` : `${timeVal}_${String(p.name || '').toLowerCase()}`;
-                                newCounts[sig] = (newCounts[sig] || 0) + 1;
-                                if (newCounts[sig] > (oldCounts[sig] || 0)) {
-                                    reallyNew.push(p);
-                                }
-                            });
-
-                            if (reallyNew.length > 0 || hasEnriched) {
-                                const mergedList = mergePulls(oldList, reallyNew);
-
+                            if (addedCount > 0 || hasEnriched || isRecoveryEnabled) {
                                 const pullsWithPity = calculatePity(mergedList, targetKey, serverId);
+
                                 newData[targetKey].pulls = pullsWithPity;
                                 newData[targetKey].stats = calculateBannerStats(pullsWithPity, targetKey, serverId);
 
-                                report.addedCount[targetKey] = (report.addedCount[targetKey] || 0) + reallyNew.length;
-                                report.totalAdded += reallyNew.length;
+                                report.addedCount[targetKey] = (report.addedCount[targetKey] || 0) + addedCount;
+                                report.totalAdded += addedCount;
                                 hasUpdates = true;
                             }
                         });
 
                         if (hasUpdates) {
-                            report.status = 'updated';
+                            report.status = "updated";
 
                             if (commit) {
                                 saveDataToStorage(currentAccountId, newData);
-                                if (browser) localStorage.setItem("ark_last_sync", Date.now().toString());
+                                if (browser) {
+                                    localStorage.setItem("ark_last_sync", Date.now().toString());
+                                }
+
                                 if (get(user)) {
                                     uploadLocalData();
                                 }
+
                                 resolve(report);
+
                                 return newData;
                             } else {
                                 resolve(report);
+
                                 return currentData;
                             }
                         } else {
                             resolve(report);
+
                             return currentData;
                         }
 
                     } catch (error) {
                         console.error("Smart Import Error:", error);
+
                         reject(error);
+
                         return currentData;
                     }
                 });

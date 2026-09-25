@@ -1,0 +1,581 @@
+{
+  "baseInfo": {
+    "tags": [
+      "Bảo Hộ",
+      "Nhiễm Tự Nhiên",
+      "Hồi Phục HP"
+    ],
+    "behaviourHateTags": [],
+    "behaviourUnavailableTags": [
+      "Hướng Nội (CHỈ HIỂN THỊ TRONG HỆ THỐNG, không hiển thị trong game)"
+    ],
+    "blocTag": "Phòng Thương Mại Tổng Hợp Talos-II (TGCC)",
+    "expertTags": [
+      "Sinh Tồn Ngoài Trời",
+      "Tri Thức Thiên Nhiên"
+    ],
+    "giftPreferTags": [
+      "Lựa Chọn Của Lữ Khách Võ Lăng"
+    ],
+    "hobbyTags": [
+      "Mỹ Thuật",
+      "Lòng Nhân Ái"
+    ],
+    "raceTag": "Feline"
+  },
+  "skills": {
+    "basicAttack": {
+      "name": "TRÁNG MIỆNG! LÀM MIẾNG!",
+      "description": "ĐÒN ĐÁNH THƯỜNG: \nMột đòn tấn công gồm tối đa 3 chuỗi gây <@ba.pd>ST Vật Lý</>. Với cán viên đang điều khiển, <#ba.lastcombo>Đòn Dứt Điểm</> cũng gây <@ba.poise>{poise:0}</> Suy Sụp. \n\nĐÒN BỔ NHÀO: \nTấn Công Cơ Bản thi triển trên không trở thành đòn bổ nhào gây <@ba.pd>ST Vật Lý</> cho kẻ địch gần đó. \n\nKẾT LIỄU: \nTấn Công Cơ Bản thi triển lên kẻ địch bị Suy Sụp trở thành đòn kết liễu gây lượng lớn <@ba.pd>ST Vật Lý</> và hồi một phần Điểm Kỹ Năng.",
+      "batkSeq1Multiplier": "Hệ Số Trình Tự Đòn Đánh Thường 1",
+      "batkSeq2Multiplier": "Hệ Số Trình Tự Đòn Đánh Thường 2",
+      "batkSeq3Multiplier": "Hệ Số Trình Tự Đòn Đánh Thường 3",
+      "finisherAtkMultiplier": "Hệ Số Đòn Kết Liễu",
+      "diveAtkMultiplier": "Hệ Số Đòn Bổ Nhào"
+    },
+    "battleSkill": {
+      "name": "KHÔNG NGỦ ĐÂU MÀ!",
+      "description": "Purrchena giơ khiên để chặn một đòn tấn công và lập tức <#ba.return>hoàn trả</> một lượng Điểm Kỹ Năng. Trong thời gian giơ khiên, cô nhận <#ba.guard>Bảo Hộ</> và ban Bảo Hộ cho các cán viên ở gần. Trong thời gian KN chiến đấu, lần chặn thành công đầu tiên sẽ kéo dài thời gian giơ khiên và <#ba.return>hoàn trả</> thêm Điểm Kỹ Năng. Sau khi thi triển, KN chiến đấu của Purrchena tạm thời chuyển thành <@ba.key>CẤM BẮT NẠT BẠN TÔI!</>.\n<@ba.key>CẤM BẮT NẠT BẠN TÔI!</>: Purrchena húc đầu vào một mục tiêu phía trước, gây <@ba.natur>ST Tự Nhiên</> và áp dụng <#ba.naturalinflict>Nhiễm Tự Nhiên</>.\n<@ba.info>Hiệu quả Bảo Hộ được ban trong thời gian giơ khiên sẽ giảm sau mỗi đòn tấn công được chặn.</>",
+      "protection": "Bảo Hộ",
+      "shieldUpDurationS": "Thời Gian Hiệu Lực Của Khiên (giây)",
+      "shieldUpDurationAfterSuccessfulBlockS": "Thời Gian Hiệu Lực Của Khiên Sau Khi Chặn Thành Công (giây)",
+      "headbuttDmgMultiplier": "Hệ Số ST Húc Đầu",
+      "headbuttStagger": "Suy Sụp Húc Đầu",
+      "spReturn": "Điểm KN Hoàn Trả",
+      "additionalSpReturn": "Điểm KN Hoàn Trả Bổ Sung"
+    },
+    "comboSkill": {
+      "name": "BÁNH HAY \"QUÀ\"",
+      "description": "KÍCH HOẠT LIÊN HOÀN: Khi cán viên đang điều khiển bị tấn công.\nNém một <@ba.key>Hộp Quà</> về phía cán viên đang điều khiển. <@ba.key>Hộp Quà</> sẽ mở sau một khoảng thời gian ngắn, giúp <@ba.heal>Hồi Phục HP</> cho các cán viên gần đó, đồng thời mở ngẫu nhiên 1 trong các vật phẩm sau và kích hoạt hiệu ứng của vật phẩm được hé lộ:\n<@ba.key>Bom</>: Gây <@ba.pd>ST Vật Lý</> và thêm Suy Sụp cho kẻ địch trong phạm vi hiệu ứng.\n<@ba.key>Đồ Thủ Công</>: Liên tục kéo các kẻ địch gần lại và gây <@ba.pd>ST Vật Lý</>.\n<@ba.key>Tráng Miệng Ngon Lành</>: Giúp <@ba.heal>Hồi Phục HP</> cho cán viên đang điều khiển.\nThuộc tính Ý Chí sẽ tăng lượng Hồi Phục HP.",
+      "baseTreatment": "Hồi Phục Căn Cứ",
+      "treatmentIncreasePerWill": "Tăng Hồi Phục Theo Ý Chí",
+      "bombDmgMultiplier": "Bom: Hệ Số ST",
+      "bombStagger": "Bom: Suy Sụp",
+      "handicraftDmgMultiplier": "Đồ Thủ Công: Hệ Số ST",
+      "yummyDessertBaseTreatment": "Tráng Miệng Ngon Lành: Hồi Phục Căn Cứ",
+      "yummyDessertTreatmentIncreasePerWill": "Tráng Miệng Ngon Lành: Tăng Hồi Phục Theo Ý Chí",
+      "ultimateEnergyGain": "Tăng Năng Lượng Tuyệt Kỹ"
+    },
+    "ultimate": {
+      "name": "NGƯNG NGHỊCH NGỢM!",
+      "description": "Purrchena mở 3 <@ba.key>Quà Từ Feline</>. Mỗi <@ba.key>Quà Từ Feline</> sẽ ngẫu nhiên mở ra một quả <@ba.key>Bom</> hoặc một món <@ba.key>Đồ Thủ Công</>.\nQuà có xác suất mở ra <@ba.key>Đặc Sản Đại Sứ</>, áp dụng <#ba.spellvul>Yếu Hóa Thuật Pháp</>, đồng thời gây <@ba.pd>ST Vật Lý</> và thêm Suy Sụp lên kẻ địch.",
+      "bombDmgMultiplier": "Bom: Hệ Số ST",
+      "bombStagger": "Bom: Suy Sụp",
+      "handicraftDmgMultiplier": "Đồ Thủ Công: Hệ Số ST",
+      "ambassadorsSpecialBaseChance": "Đặc Sản Đại Sứ: Tỷ Lệ Cơ Bản",
+      "ambassadorsSpecialDmgMultiplier": "Đặc Sản Đại Sứ: Hệ Số ST",
+      "ambassadorsSpecialStagger": "Đặc Sản Đại Sứ: Suy Sụp",
+      "susceptibilityDurationS": "Thời Gian Yếu Hóa (giây)",
+      "susceptibility": "Yếu Hóa"
+    },
+    "indicator": {
+      "levels": [
+        "Sức Mạnh Cán Viên +10.",
+        "Sức Mạnh Cán Viên +15.",
+        "Sức Mạnh Cán Viên +15.",
+        "Sức Mạnh Cán Viên +20."
+      ],
+      "name": "Rèn"
+    },
+    "talent1": {
+      "levels": [
+        "KN chiến đấu <@ba.key>KHÔNG NGỦ ĐÂU MÀ!</> được cường hóa: Sau khi chặn thành công đòn tấn công của kẻ địch lần đầu tiên, nhận thêm <@ba.vup>{talent_1_usp:0}</> Năng Lượng Tuyệt Kỹ. Tỷ lệ xuất hiện <@ba.key>Đặc Sản Đại Sứ</> trong lần thi triển Tuyệt Kỹ <@ba.key>NGƯNG NGHỊCH NGỢM!</> tiếp theo tăng thêm <@ba.vup>{talent1_prob_up:0%}</>. Hiệu ứng này có thể cộng dồn tối đa <@ba.vup>{talent_1_stack:0}</> tầng.",
+        "KN chiến đấu <@ba.key>KHÔNG NGỦ ĐÂU MÀ!</> được cường hóa: Sau khi chặn thành công đòn tấn công của kẻ địch lần đầu tiên, nhận thêm <@ba.vup>{talent_1_usp:0}</> Năng Lượng Tuyệt Kỹ. Tỷ lệ xuất hiện <@ba.key>Đặc Sản Đại Sứ</> trong lần thi triển Tuyệt Kỹ <@ba.key>NGƯNG NGHỊCH NGỢM!</> tiếp theo tăng thêm <@ba.vup>{talent1_prob_up:0%}</>. Hiệu ứng này có thể cộng dồn tối đa <@ba.vup>{talent_1_stack:0}</> tầng."
+      ],
+      "name": "Giờ mới xin lỗi thì đã MUỘN rồi!"
+    },
+    "talent2": {
+      "levels": [
+        "Khi được triển khai trong trận, tất cả cán viên trong đội đang có HP Tối Đa được giảm <@ba.vup>{dmg_down:0%}</> ST phải nhận từ đòn đánh tiếp theo.\nVới mỗi cán viên, hiệu ứng này chỉ có thể kích hoạt một lần mỗi <@ba.vup>{cd:0}</> giây.",
+        "Khi được triển khai trong trận, tất cả cán viên trong đội đang có HP Tối Đa được giảm <@ba.vup>{dmg_down:0%}</> ST phải nhận từ đòn đánh tiếp theo.\nVới mỗi cán viên, hiệu ứng này chỉ có thể kích hoạt một lần mỗi <@ba.vup>{cd:0}</> giây."
+      ],
+      "name": "Trọng Trách Đại Sứ"
+    },
+    "baseSkill1": {
+      "levels": [
+        "Khi phân công vào Phòng Tiếp Khách, cấp cho các cán viên một lượng nhỏ Tăng Tỷ Lệ Manh Mối 2: Phòng Thương Mại Tổng Hợp Talos-II (kích hoạt khi được phân công; không thể cộng dồn các hiệu ứng cùng loại)",
+        "Khi phân công vào Phòng Tiếp Khách, cấp cho các cán viên Tăng Tỷ Lệ Manh Mối 2: Phòng Thương Mại Tổng Hợp Talos-II (kích hoạt khi được phân công; không thể cộng dồn các hiệu ứng cùng loại)"
+      ],
+      "name": "Đại Sứ Thương Hiệu"
+    },
+    "baseSkill2": {
+      "levels": [
+        "Khi phân công vào Khoang Sản Xuất, hiệu suất sản xuất nguyên liệu tăng EXP cán viên +20%",
+        "Khi phân công vào Khoang Sản Xuất, hiệu suất sản xuất nguyên liệu tăng EXP cán viên +30%"
+      ],
+      "name": "Món Tráng Miệng Sau Buổi Tổng Kết"
+    },
+    "files": {
+      "main": "MẬT DANH: Purrchena\nGIỚI TÍNH: Nữ\nNHẬN DẠNG: Phòng Thương Mại Tổng Hợp Talos-II\nNGÀY SINH: 26 Tháng 11\nCHỦNG TỘC: Feline\n[TÌNH TRẠNG NHIỄM ORIPATHY]\nÂm tính với Oripathy, theo báo cáo kiểm tra y tế.\n\n[KHÁM SỨC KHỎE TỔNG HỢP]\nTHỂ CHẤT: Bình Thường\nKN CHIẾN ĐẤU: Xuất Sắc\nTƯ DUY CHIẾN THUẬT: Cơ Bản\nĐỒNG HÓA THUẬT PHÁP ORIGINIUM: Cơ Bản",
+      "humanResources": "Purrchena, Đại Sứ Thương Hiệu của Quỹ Cứu Trợ Hội Chứng Ảnh Hưởng Môi Trường Ætherside trực thuộc Phòng Thương Mại Tổng Hợp Talos-II, hiện được phái đến Tập Đoàn Endfield, đảm nhiệm vai trò người liên lạc giữa Endfield và Phòng Thương Mại Tổng Hợp trong công tác cứu trợ bệnh nhân Hội Chứng Ætherside.\n\nLần đầu gặp Purrchena, tôi đã vô cùng ấn tượng trước tính cách vui vẻ, rạng rỡ của cô, cũng như việc con người ngoài đời của cô hoàn toàn giống với hình tượng trên màn ảnh. Trong suốt cuộc trò chuyện, cô luôn khiến các cán viên có mặt trong phòng bật cười không ngớt.\nMột điều khác cũng để lại ấn tượng sâu sắc trong tôi chính là Hội Chứng Ætherside mà cô mắc phải. Dù Quỹ Cứu Trợ đã thông báo trước về tình trạng của cô, khi Purrchena đột nhiên ngủ thiếp đi ngay giữa cuộc trò chuyện, tôi vẫn không khỏi cảm phục. Dẫu bản thân đang phải chống chọi với bệnh tật, cô vẫn lựa chọn giúp đỡ những bệnh nhân khác. Tinh thần vị tha ấy thực sự vô cùng đáng quý.\n— Martin Marvin Malen, Trợ Lý, Bộ Phận HR, Tập Đoàn Endfield",
+      "file1": "Kính gửi Giám Sát Viên Perlica, Phòng Kinh Doanh và Bộ Phận Nhân Sự của Tập Đoàn Endfield:\nKính chúc quý vị luôn mạnh khỏe.\nNhằm thúc đẩy hơn nữa hoạt động trao đổi và hợp tác giữa hai bên trong lĩnh vực cứu trợ Hội Chứng Ảnh Hưởng Môi Trường Ætherside, tôi viết thư này để tiến cử cô Rosalind vào một vị trí thuộc Phòng Kinh Doanh của Tập Đoàn Endfield.\nTrước hết, tôi xin trình bày rõ về tình trạng sức khỏe của cô Rosalind. Cô mắc một dạng Hội Chứng Ætherside hiện chưa thể chữa khỏi. Hội chứng này tấn công và gây tổn thương hệ thần kinh trung ương, khiến cô thường xuyên rơi vào giấc ngủ một cách đột ngột. Tuy nhiên, xin quý vị yên tâm. Trong sáu năm qua, nhờ quá trình liên tục nâng cấp thiết bị bảo hộ cá nhân cùng chế độ chăm sóc y tế lâu dài do chúng tôi cung cấp, tình trạng trên không gây ảnh hưởng đến công việc thường ngày của cô.\nTôi tin rằng quý tổ chức hẳn đã nghe nói đến chiến dịch cứu hộ mà cô Rosalind tham gia cách đây năm năm. Theo báo cáo tổng kết sau chiến dịch, khi cơn bão bất ngờ đổi hướng quay trở lại, đội tìm kiếm cứu nạn cùng các bệnh nhân Hội Chứng Ætherside buộc phải trú ẩn trong một hang động. Do kế hoạch ban đầu chỉ nhằm di dời bệnh nhân, lượng vật tư y tế mang theo vô cùng hạn chế. May thay, cô Rosalind đã có nhiều kinh nghiệm ứng phó với những tình huống tương tự. Trước đó, cô từng cùng cha mẹ đi qua nhiều vùng đất và hỗ trợ điều trị cho bệnh nhân Hội Chứng Ætherside ngay cả khi không có thuốc men. Nhờ sự trợ giúp của cô, tình trạng của các bệnh nhân đã không tiếp tục chuyển biến xấu. Theo lời khai sau chiến dịch của các thành viên khác, khi tâm bão đi qua ngay phía trên hang động, chiếc RV vốn chắn trước cửa hang bất ngờ trượt khỏi vị trí. Cô Rosalind lập tức dùng một tấm ván gỗ bịt kín khoảng trống. Sau khi cơn bão qua đi và sự việc được các kênh truyền thông của chúng tôi đưa tin, cái tên Purrchena bắt đầu được biết đến rộng rãi trên Vành Đai Văn Minh. Tôi phải thừa nhận rằng chiến lược để chính một người đại diện cho cộng đồng bệnh nhân đứng ra thúc đẩy công tác cứu trợ của Quỹ đã chứng minh được hiệu quả rõ rệt. Cách làm này không chỉ mang lại cho chúng tôi một lượng lớn ca bệnh đặc thù có giá trị nghiên cứu, mà còn làm gia tăng đáng kể nhu cầu đối với dược phẩm và thiết bị y tế từ nhiều công ty dược.\nKhi nhớ lại lần đầu gặp cô, tôi vẫn còn ấn tượng sâu sắc. Những cơn ngủ kéo dài và thất thường khi ấy đã khiến ánh mắt cô trống rỗng, gương mặt gầy gò hốc hác. Nếu cha nuôi của cô Rosalind không chủ động liên hệ với tôi, thì với tình trạng lúc đó, ngay cả khi Hội Chứng Ætherside không tiếp tục diễn biến xấu, cơ thể cô cũng khó có thể cầm cự đến tuổi trưởng thành. Xuất phát từ nguyên tắc nhân đạo, đồng thời cũng là một khoản đầu tư cho tương lai, chúng tôi đã cung cấp cho cô chế độ chăm sóc y tế toàn diện cùng sự hỗ trợ đầy đủ về giáo dục. Nhờ vậy, chúng tôi có hiểu biết rất rõ về năng lực chuyên môn của cô. Tôi tin rằng thông qua cầu nối mang tên Rosalind, hai bên sẽ tạo nên sự phối hợp hiệu quả và bổ trợ lẫn nhau trong công tác cứu trợ bệnh nhân Hội Chứng Ætherside.\nTrong trường hợp quý tổ chức mong muốn tiếp tục mở rộng hợp tác trong lĩnh vực cứu trợ Hội Chứng Ảnh Hưởng Môi Trường Ætherside, chúng tôi luôn sẵn sàng hỗ trợ hoạt động trao đổi giữa hai bên. Xin chân thành cảm ơn quý vị đã dành thời gian đọc thư. Chúng tôi mong rằng trong tương lai, hai bên sẽ đạt được nhiều thành quả hợp tác thực chất hơn nữa.\nTrân trọng\n— H, Đại Diện Khối Kinh Doanh Hội Chứng Ætherside, Công ty TNHH Dược phẩm Highburg, Chủ Tịch Quỹ Cứu Trợ Hội Chứng Ảnh Hưởng Môi Trường Ætherside",
+      "file2": "\"Quý vị đang theo dõi chương trình Đối Diện Tiền Tuyến. Phóng viên của chúng tôi hiện đã có mặt tại trung tâm y tế điều trị Hội Chứng Ætherside ở phía bắc La Fantoma và đã liên lạc được với Đại Sứ Thương Hiệu của Quỹ Cứu Trợ Hội Chứng Ảnh Hưởng Môi Trường Ætherside. Ngay bây giờ, xin kết nối trực tiếp với hiện trường. Cô Purrchena, tôi là Dinah. Cô có nghe rõ không?\"\n\"Có! Xin chào Dinah! Xin chào mọi người! Tôi là Purrchena, Đại Sứ Thương Hiệu của Quỹ Cứu Trợ Hội Chứng Ảnh Hưởng Môi Trường Ætherside.\"\n\"Xin chào cô Purrchena. Tất cả chúng tôi đều vô cùng quan tâm đến lệnh phong tỏa khẩn cấp lần này. Cô có thể cho biết tình hình tại đó hiện ra sao không? Tôi nghe nói lúc sự việc xảy ra, cô đang có mặt tại trung tâm để thăm các bệnh nhân Hội Chứng Ætherside.\"\n\"Hửm? Ý tôi là... ừừừm, tôi kể thì cũng được... nhưng cô chắc là muốn tôi nói ngay bây giờ chứ? Tôi nhớ chương trình của cô có nhiều trẻ em theo dõi lắm.\"\n\"Haha, đừng lo! Chúng tôi là những người làm truyền thông chuyên nghiệp mà. Nếu nội dung cô kể có phần quá nặng nề, chúng tôi sẽ kịp thời nhắc nhở khán giả.\"\n\"Được thôi. Vì các bệnh nhân sống ở đây đều trong tình trạng rất nghiêm trọng. Tôi nhớ còn có cả người trên lưng chi chít những vết thương trông như bị dao rạch. Tôi thấy một bác sĩ dùng một mảnh Originium chạm vào một vết thương, rồi nó lập tức vặn xoắn và biến dạng.\"\n\"Quả là một hiện tượng kỳ lạ... và cũng khá đáng sợ. Cô có thể giải thích rõ hơn về Hội Chứng Ảnh Hưởng Môi Trường Ætherside không? Hiện tại, công chúng vẫn chưa biết nhiều về căn bệnh này.\"\n\"Um... Nói chung cũng giống những gì được viết trong giáo trình thôi. Nếu đi sâu hơn, ngay cả chúng tôi cũng phải đọc mấy cuốn sách dày cộp mới hiểu được đôi chút. Nhưng theo cách giải thích của một nghiên cứu viên tại Quỹ Cứu Trợ, đây không hẳn là một căn bệnh theo nghĩa thông thường, mà giống một hiện tượng đặc thù xuất hiện khi môi trường Ætherside tác động lên cơ thể con người hơn.\"\n\"Tôi hiểu rồi. Vậy lệnh phong tỏa đột ngột lần này thật sự có liên quan đến một bệnh nhân Hội Chứng Ætherside, đúng như thông báo chính thức sao?\"\n\"Đúng vậy.\"\n\"Vậy chính xác đã xảy ra chuyện gì? Có tin đồn rằng đã xuất hiện một hiện tượng tương tự quá trình phân rã ở người dương tính với Oripathy.\"\n\"Hoàn toàn không phải! Hiện tượng phân rã chỉ xảy ra sau khi bệnh nhân qua đời, còn Hội Chứng Ætherside thì không như vậy. Chỉ một khắc trước tôi vẫn còn đang nói chuyện với anh ấy, vậy mà ngay sau đó, anh ấy đã... May mà lúc ấy trong phòng cách ly chỉ có mình tôi. Thở dài, dù hệ thống giám sát tình trạng của trung tâm y tế rất toàn diện, trước những tình huống thế này nó cũng hoàn toàn bất lực.\"\n\"Ah... Nghe vậy thì diễn biến của Hội Chứng Ætherside có vẻ rất khó dự đoán?\"\n\"Đó chính là điều khó khăn nhất trong quá trình điều trị. Mà mức độ bất thường lại khác nhau ở từng trường hợp. Có khi bệnh tình đột ngột trở nặng. Có khi các triệu chứng bất ngờ thay đổi.\"\n\"Triệu chứng cũng có thể thay đổi sao?\"\n\"Đúng vậy. Lấy tôi làm ví dụ nhé. Hiện tại, triệu chứng của Purrchena là có thể ngủ gật bất cứ lúc nào. Nhưng nếu Purrchena bước vào một môi trường có độ sâu cao mà không trang bị bảo hộ đúng cách, tôi có thể chập chờn như hình ảnh của một người trên màn hình thiết bị cầm tay bị hỏng. Hoặc cũng có thể xuất hiện một Purrchena khác, mọi người nhìn thấy được nhưng không thể chạm vào, đang vẫy tay chào hỏi tất cả. Trong khi đó, Purrchena thật lại nằm bất động như đang ngủ, gọi thế nào cũng không tỉnh. Tất nhiên, nguy cơ này không chỉ áp dụng với bệnh nhân. Bất kỳ người bình thường nào bước vào môi trường có độ sâu cao cũng có thể gặp phải.\"\n\"Đây quả thật là một căn bệnh khó lường. Vì vậy, mọi người nhất định phải trang bị đầy đủ đồ bảo hộ trước khi tiến vào bất kỳ môi trường có độ sâu cao nào!\"\n\"Hoàn toàn chính xác! Nếu vì bất kỳ lý do nào mà buộc phải bước vào môi trường có độ sâu cao, mọi người nhất định phải mặc đồ bảo hộ đúng cách. Và tất nhiên, với những môi trường như vậy, nếu không thật sự cần thiết thì tốt nhất đừng đến gần!\"\n\"Cảm ơn lời nhắc nhở của cô, cô Purrchena. Trước khi kết thúc cuộc phỏng vấn, cô còn điều gì muốn nhắn gửi đến khán giả không?\"\n\"Oooooh, tất nhiên là có! Dù hiện tại chúng ta vẫn chưa thể chữa khỏi Hội Chứng Ætherside, mọi người cũng đừng hoảng sợ. Chỉ cần không tiếp xúc với môi trường có độ sâu cao thì sẽ không có nguy cơ mắc bệnh. Và xin đừng đối xử với những bệnh nhân xung quanh như quái vật. Hội Chứng Ætherside không... không... lây nhiễm...\"\n\"Cô Purrchena? Ơ... Cô Purrchena?\"\n\"...*BÍP*\"\n\"Ừm... Có vẻ đường truyền đang gặp một chút sự cố kỹ thuật. Tiếp theo, chúng ta sẽ trò chuyện với...\"",
+      "file3": "......\nLa Fantoma. Có lẽ tôi không cần phải lặp lại việc Tập Đoàn Siesta đã quản lý thành phố tự do này xuất sắc đến mức nào, cũng không cần phải nói thêm rằng Phòng Thương Mại Tổng Hợp Talos-II đã thổi vào nơi đây sức sống dồi dào ra sao. Nhưng trước khi thật sự bắt đầu nói về thành phố tự do La Fantoma, tôi muốn nhắc đến một người bạn đã gặp trên hành trình này - người đã giúp tôi rất nhiều trong quá trình viết nên chương sách về La Fantoma.\nCũng như khi vừa đặt chân đến bất kỳ thành phố nào khác, việc đầu tiên tôi làm là đi loanh quanh trong một trung tâm thương mại để xác định điểm đến tiếp theo. Nơi đó cũng giống như bao khu thương mại khác ở La Fantoma: tòa nhà chật kín những cửa hiệu đến từ khắp Vành Đai Văn Minh, còn ở trung tâm là một khu chợ ngoài trời nhộn nhịp, đông nghịt khách mua sắm lẫn người bán rong qua lại. Tôi chọn một quầy đồ uống có tầm nhìn đẹp, vừa ngồi xuống chưa được bao lâu thì đã nhìn thấy một \"linh vật Feline màu trắng\" vô cùng nổi bật. Thoạt đầu, tôi tưởng đó là người mặc đồ hóa trang của một cửa hàng nào đó. Nhưng nhìn kỹ hơn mới thấy, cô ấy không hề có ý thu hút khách. Cô chỉ đứng đó, chăm chú ngắm tủ kính trưng bày của một tiệm đồ ngọt, trong khi người qua đường ai nấy đều niềm nở chào hỏi, như thể cả thành phố này đều quen biết cô.\nMuốn cảm nhận rõ hơn bầu không khí văn hóa nơi đây, tôi chủ động bước đến chào. Phải đến khi cô ấy xác nhận đi xác nhận lại rằng tôi không phải loại phóng viên lá cải đang cố moi móc mấy chuyện bí mật kiểu như Quỹ Cứu Trợ Hội Chứng Ảnh Hưởng Môi Trường Ætherside có từng ký thỏa thuận mờ ám nào với các công ty dược hay không, cô mới chịu nói cho tôi biết mình là ai. Xin hãy thứ lỗi vì tôi không am hiểu hết các đại diện, mật danh và tên gọi thuộc đủ loại doanh nghiệp, quỹ hay cơ quan hành chính dưới quyền Phòng Thương Mại Tổng Hợp. Mãi đến sau khi chia tay, tôi mới biết chính xác cái tên Purrchena được cấu thành từ những ký tự nào. Khi biết tôi đến đây để ghi chép lại đời sống thường nhật ở La Fantoma và viết một cẩm nang du lịch, cô ấy vui vẻ nhún nhảy, rồi kéo tôi ra khỏi trung tâm thương mại, chủ động đảm nhận vai trò hướng dẫn viên. Những gợi ý ẩm thực được nhắc đến trong phần sau của chương này đều do cô Purrchena trực tiếp dẫn dắt và tổng hợp. Có lẽ chính cách kể chuyện sinh động, hoạt bát ấy - nhất là những lúc cô đang nói dở dang thì bất ngờ ngủ gật, rồi lại tỉnh dậy, vừa gãi đầu vừa lí nhí xin lỗi trước khi tiếp tục - đã khiến ngay cả những nơi như trụ sở Phòng Thương Mại Tổng Hợp cũng trở nên thú vị.\n......\nKhi tôi hỏi cô nghĩ gì về La Fantoma và các thành phố tự do khác, cô chỉ mỉm cười, nói rằng sẽ dẫn tôi đến một nơi rất vui, rồi đưa tôi rời khỏi những con phố đông đúc để ra bãi biển. Chẳng bao lâu sau, dòng người đã khiến chúng tôi lạc mất nhau. Nhưng rồi, theo vòng người đang dần tụ lại thành một vòng tròn, tôi nhanh chóng tìm thấy cô lần nữa. Cô đang ngồi trên cát, khẽ lắc lư theo nhịp nhạc, thỉnh thoảng lại đổi biểu cảm trên màn hình điện tử trước mặt để chọc cho đám trẻ đang leo trèo quanh mình cười ầm lên và nhập cuộc chơi cùng chúng. Dù vẫn còn đứng cách đó một đoạn, tiếng cười của lũ trẻ vẫn theo giai điệu vọng đến tai tôi. Những người xung quanh hoặc rút máy ảnh ra chụp hình, hoặc hòa vào niềm vui của bọn trẻ, nhún nhảy theo tiếng nhạc. Cô ở giữa vòng vây của tiếng cười và niềm vui. Phải đến khi đám đông dần tan đi, và lũ trẻ cũng bị cha mẹ giục giã, bịn rịn chào tạm biệt cô, tôi mới có dịp tiến lại gần. Khi ấy, tôi nhận ra cô lại ngủ thiếp đi mất rồi, nhưng đầu vẫn khẽ đung đưa theo quán tính. Tôi ngồi xuống bên cạnh, lắng nghe nhịp thở khe khẽ của cô. Hẳn là cô đang có một giấc mơ rất đẹp.\n— Lời tựa cho chương La Fantoma trong Talos-II Dưới Bước Chân Ta, kèm theo một bức ảnh chụp Purrchena đang vui đùa cùng trẻ nhỏ.",
+      "file4": "Ngày 02 tháng 11, năm 145, trời quang. Hôm nay mẹ lái RV đến một nơi có rất nhiều RV khác đỗ ở đó. Các cô chú ở đây đã giúp mẹ nâng cấp chiếc RV của nhà mình. Giờ nó vừa rộng vừa thoải mái, đến mức nằm ngủ ngay trên sàn cũng thấy thích. Vậy là không cần lo mình sẽ bị thương nếu đột nhiên ngã xuống nữa. Các cô chú còn cho mình một món ăn vặt ngon ơi là ngon. Hình như nó tên là vi cá khô ngoại nhập. Hehe, sau này lớn lên, mình nhất định sẽ mua thật nhiều vi cá khô ngoại nhập, nhiều đến mức chất đầy cả chiếc RV luôn!\n......\nNgày 07 tháng 05, năm 146, tuyết rồi trời quang. Mẹ cùng mấy cô chú lái cả một đoàn RV đến một thành phố nằm trên núi tuyết. May mà trong RV ấm lắm, mẹ và mình không thấy lạnh chút nào. Hehe, cứ để bố tự ra ngoài săn kho báu đi. Lần này bố tìm được một bộ xương máy. Bố bảo chỉ cần sửa xong nó thì mình sẽ có thể ra ngoài chơi cùng những đứa trẻ khác!\n......\nNgày 23 tháng 06, năm 146, trời âm u rồi chuyển mưa. Bộ xương máy hình như không thích trời mưa. Nó cứ đứng im giữa mưa rồi không chịu cử động nữa. May mà đám trẻ con đi cùng đều có ô. Các bạn đã ở lại dưới mưa với mình, cùng chờ bố mẹ quay về. Nhưng sau đó xảy ra chuyện gì thì mình không nhớ rõ lắm. Hình như mình đã nằm mơ. Mình mơ thấy mình cưỡi một con quái thú chở hàng biết bay, đi đến rất nhiều nơi. Khi tỉnh dậy, chẳng hiểu sao mẹ lại ôm mình khóc. Bố thì có vẻ đang trách bộ xương máy. Mình muốn dỗ mẹ, nhưng mẹ lại càng khóc nhiều hơn. Mình ghét ngủ thiếp đi...\n......\nNgày 16 tháng 07, năm 146, trời quang. Chúng mình lại quay về nơi người ta làm phim. Ở đây có rất nhiều quần áo đẹp. Đây là nơi mình thích nhất! Mình vừa giúp các cô chú chuyển hết những thùng hàng khỏi RV thì bố quay về cùng một chú ăn mặc rất chỉnh tề. Chú ấy chẳng nhanh nhẹn bằng mình chút nào. RV nhà mình rõ ràng rộng đến mức nhét được cả Talos-II vào trong, vậy mà chú vẫn phải bước thật cẩn thận để không va vào đồ đạc. Hôm nay mẹ cũng vui lắm. Mẹ còn mang ra rất nhiều món ngon mà bình thường chỉ đến sinh nhật nhà mình mới được ăn.\n......\nNgày 20 tháng 08, năm 146, trời âm u. Chiếc RV này không giống RV của mẹ. Bên trong rất sạch sẽ, có nhiều hộp kim loại, vừa chật vừa lạnh. Ở đây còn có rất nhiều cô chú mặc áo khoác trắng. Ai cũng mỉm cười với mình, nhưng mình chẳng thấy vui chút nào. Người chú quen biết với bố đưa cho mình một chiếc hộp nhỏ kỳ lạ. Mình có thể nghe thấy giọng của bố mẹ phát ra từ bên trong, nhưng khi tháo chiếc hộp ra, mình lại không tìm thấy bố mẹ ở đâu cả...\n......\nNgày 18 tháng 12, năm 146, trời quang. Hôm nay là lần đầu tiên mình tham gia một nhiệm vụ cứu hộ. Các thành viên trong đội đều là những gương mặt quen thuộc. Trong RV hơi chật, nhưng mọi người vừa nói chuyện vừa cười đùa suốt đường đi. Mình thích bầu không khí ấy lắm! Thế nhưng, mấy cô chú quản lý của Quỹ Cứu Trợ lại bảo nơi đó quá nguy hiểm với mình, còn nói sau này sẽ không cho mình tham gia những nhiệm vụ cứu hộ cấp độ như thế nữa. Tức quá đi mất! Nhiệm vụ rõ ràng diễn ra rất suôn sẻ, mà cơn bão đột nhiên quay lại cũng đâu phải lỗi của mình. Dù vậy, sau khi nhiệm vụ kết thúc, mình đã được gặp bố mẹ. Mình còn giúp mẹ đưa các bệnh nhân đến thành phố gần nhất để điều trị. Mà khoan... lần trước mình gặp bố mẹ là khi nào nhỉ?\n......\nNgày 07 tháng 11, năm 151, trời quang. Ngày mai là chúng mình đến nơi rồi. Thời gian trôi nhanh thật. Cứ như mới hôm qua mình còn nhận được thư hồi âm của Tập Đoàn Endfield vậy. Không biết Endministrator ngoài đời trông như thế nào nhỉ? Có thật sự giống những gì được viết trong giáo trình không? Thở dàààài... Chán quá đi! Chiếc RV này trống trơn, chẳng có gì cả. Oh, hôm nay mình còn tình cờ gặp bố mẹ nữa. Họ đang vận chuyển vật tư từ La Fantoma đến Thung Lũng IV. Cả nhà đã chụp một tấm ảnh cùng nhau. Như vậy, khi nhớ mình, bố mẹ chỉ cần nhìn vào ảnh là được. Nhưng lạ thật... RV của mẹ vẫn được trang trí y hệt hồi mình còn nhỏ, vậy mà tại sao mình lại có cảm giác có thứ gì đó đã thay đổi rồi?"
+    },
+    "tags": {
+      "expert1": {
+        "name": "Sinh Tồn Ngoài Trời",
+        "description": "Sinh Tồn Ngoài Trời: Bộ Đồ Thú Bông\nBạn chẳng biết gì về những thiết bị được giấu bên trong bộ đồ thú bông của cô ấy đâu. Và chắc chắn cũng không thể biết cô đang rúc ở xó nào đó, nhâm nhi quà vặt."
+      },
+      "expert2": {
+        "name": "Tri Thức Thiên Nhiên",
+        "description": "Tri Thức Thiên Nhiên: Thủ Khoa Dozy\nCác bạn cùng lớp đều thấy khó hiểu. Cô thường ngủ gật suốt các buổi học, vậy mà đến kỳ thi lại chẳng ai thắng nổi cô."
+      },
+      "hobby1": {
+        "name": "Mỹ Thuật",
+        "description": "Mỹ Thuật: Xưởng Tráng Miệng\nKhông ai am hiểu món tráng miệng hơn cô. Điều này hiển nhiên chẳng hề cường điệu."
+      },
+      "hobby2": {
+        "name": "Lòng Nhân Ái",
+        "description": "Lòng Nhân Ái: Đại Sứ Xuất Sắc Nhất\n\"Đại sứ à? Ồ, bạn đang hỏi về Purrchena phải không? Cô ấy đã giúp chúng tôi rất nhiều. Nhìn này, chúng tôi chuẩn bị cả đống đồ ăn vặt để cảm ơn cô ấy đấy!\""
+      }
+    },
+    "voiceLines": [
+      {
+        "voId": "chr_0038_purrche_chrbark_squad_01",
+        "title": "Chuẩn Bị Tác Chiến 1",
+        "text": "Đến lượt tôi... \"Meo-chào!\" ...Ugh, sao tôi lại ngủ quên nữa rồi?!"
+      },
+      {
+        "voId": "chr_0038_purrche_chrbark_squad_02",
+        "title": "Chuẩn Bị Tác Chiến 2",
+        "text": "Nnn... Gah! Đến giờ làm nhiệm vụ rồi sao?"
+      },
+      {
+        "voId": "chr_0038_purrche_chrbark_join_01",
+        "title": "Đang thêm vào Đội 1",
+        "text": "Ai buồn ngủ cơ? Không phải tôi nhé!"
+      },
+      {
+        "voId": "chr_0038_purrche_chrbark_join_02",
+        "title": "Đang thêm vào Đội 2",
+        "text": "Kẹo marshmallow và vi cá khô ngoại nhập đều có đủ rồi... Ổn, sẵn sàng lên đường!"
+      },
+      {
+        "voId": "chr_0038_purrche_chrbark_weap_01",
+        "title": "Đang Đổi Vũ Khí",
+        "text": "Ô, tay cầm chắc chắn thật! Dùng nó làm xiên đồ ăn vặt thì bộ đồ bông xù của tôi sẽ chẳng bị dính bẩn chút nào!"
+      },
+      {
+        "voId": "chr_0038_purrche_chrbark_gear_01",
+        "title": "Đang Đổi Trang Bị",
+        "text": "Whoa, nó thật sự hợp rơ với bộ đồ của tôi này... \"Vi cá khô ngoại nhập! MĂM MĂM!\" ...Khoan đã, chuyện gì vậy? Tôi còn chưa ngủ mà!"
+      },
+      {
+        "voId": "chr_0038_purrche_chrup_skill_01",
+        "title": "Kích hoạt Mốc Thiên Phú",
+        "text": "Mmm... Hít mạnh! Tôi nghĩ ra rồi! Đáp án cho thí nghiệm bệnh lý là — Khoan, ý tưởng đó đâu mất rồi?!"
+      },
+      {
+        "voId": "chr_0038_purrche_chrup_level_01",
+        "title": "Xem Hồ Sơ Chiến Đấu",
+        "text": "Phòng Thương Mại Tổng Hợp chưa bao giờ dạy tôi thứ gì như thế này. Wow... Tôi không biết còn có thể làm vậy đấy!"
+      },
+      {
+        "voId": "chr_0038_purrche_chrup_promt01_01",
+        "title": "Thăng Bậc Cán Viên 1",
+        "text": "Ooh, được thăng cấp rồi! Hồi còn ở Quỹ Cứu Trợ, mỗi lần ăn mừng thế này là bánh ngọt chất thành đống... Gì cơ? Ở đây không có bánh kem ăn mừng sao?"
+      },
+      {
+        "voId": "chr_0038_purrche_chrup_promt02_01",
+        "title": "Thăng Bậc Cán Viên 2",
+        "text": "Thật ư? Tuyệt quá! Tôi nóng lòng muốn kể cho bố mẹ và mọi người ở quê nhà biết. Họ sẽ... chắc chắn sẽ... vui cho tôi lắm... \"Tạm biệt nhé!\""
+      },
+      {
+        "voId": "chr_0038_purrche_chrup_promt03_01",
+        "title": "Thăng Bậc Cán Viên 3",
+        "text": "Lại được thăng cấp nữa sao?! Nếu đây là mơ thì đừng đánh thức tôi! Tôi nhất định sẽ bảo vệ mọi người bình an vô sự. Cứ giao cho tôi!"
+      },
+      {
+        "voId": "chr_0038_purrche_chrup_promt04_01",
+        "title": "Thăng Bậc Cán Viên 4",
+        "text": "Đôi khi tôi tự hỏi cuộc sống sẽ ra sao nếu ngày ấy mình không cùng Quỹ Cứu Trợ rời đi đến La Fantoma... Hmph. Nhưng dù có ở đâu, tôi vẫn sẽ là chính mình, lúc nào cũng sẵn sàng giúp đỡ mọi người!"
+      },
+      {
+        "voId": "chr_0038_purrche_introduce_01",
+        "title": "Cán Viên Đang Báo Cáo Nhiệm Vụ",
+        "text": "Xin chào, Endmin! Tôi là Đại Sứ Thương Hiệu của Quỹ Cứu Trợ Hội Chứng Ảnh Hưởng Môi Trường Ætherside, Purrchena! Ước mơ của tôi là trở thành... một người giống như ng... \"Đại Sứ Thương Hiệu của Quỹ Cứu Trợ Hội Chứng Ảnh Hưởng Môi Trường Ætherside, Purrchena!\"... *ngáp* Không, không, không! Tôi lại ngủ gật nữa rồi!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_switch_01",
+        "title": "Chờ Lệnh 1",
+        "text": "Chào, Endmin! Tôi tỉnh như sáo luôn!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_switch_02",
+        "title": "Chờ Lệnh 2",
+        "text": "Xem đồ ăn vặt của tôi này! Ngài muốn ăn thử không, Endmin?"
+      },
+      {
+        "voId": "chr_0038_purrche_sim_assign_work_01",
+        "title": "Phân Công Vào Công Trình",
+        "text": "Nếu tôi có đột nhiên ngủ lăn ra thì cũng đừng lo nhé. Bộ đồ của tôi có chế độ tự lái siêu thông minh!"
+      },
+      {
+        "voId": "chr_0038_purrche_sim_hello_lower_01",
+        "title": "Lời Chào 1",
+        "text": "Chào ngài, Endmin! Ăn chút vi cá khô ngoại nhập không?"
+      },
+      {
+        "voId": "chr_0038_purrche_sim_hello_max_01",
+        "title": "Lời Chào 2",
+        "text": "\"Tạm biệt nhé!\" ... Hửm? Oh, Endmin! Xin chào!"
+      },
+      {
+        "voId": "chr_0038_purrche_sim_talk_lv01_01",
+        "title": "Tán Gẫu Ở Dijiang 1",
+        "text": "Whoa, Dijiang khác quê nhà quá! Ở đây có thể ngắm toàn cảnh Talos-II, lại còn đầy những thiết bị lấp lánh mà tôi chẳng nhận ra! Trước giờ tôi chỉ từng đọc về mấy thứ thế này thôi! Tuyệt quá!"
+      },
+      {
+        "voId": "chr_0038_purrche_sim_talk_lv02_01",
+        "title": "Tán Gẫu Ở Dijiang 2",
+        "text": "Chào ngài, Endmin! Gì cơ? Các nhân viên nhà ăn bảo tôi khách sáo quá sao? Thật ư?! Tôi chỉ không muốn trông tham ăn quá thôi. KHOAN! Quầy đồ ăn vặt muốn lấy bao nhiêu cũng được sao?! WOOHOO! Quầy đồ ăn vặt! Tôi đến đây!"
+      },
+      {
+        "voId": "chr_0038_purrche_sim_talk_lv02_02",
+        "title": "Tán Gẫu Ở Dijiang 3",
+        "text": "Endmin, tôi vừa đi giúp những bệnh nhân khác về! Tôi kể cho lũ trẻ nghe chuyện về Endfield, đứa nào cũng THÍCH MÊ! Chuyện gì sao? Ừm, là chuyện về... về... \"Vi cá khô ngoại nhập! MĂM MĂM!\" \"TÔI YÊU vi cá khô ngoại nhập.\""
+      },
+      {
+        "voId": "chr_0038_purrche_sim_talk_max_01",
+        "title": "Tán Gẫu Ở Dijiang 4",
+        "text": "Endmin! Tôi tự nướng viên marshmallow này đấy! Sao nó lại cháy xém mất một nửa à? Oh, heheh, đúng rồi... hình như tôi lỡ ngủ gật bên đống lửa..."
+      },
+      {
+        "voId": "chr_0038_purrche_sim_talk_max_02",
+        "title": "Tán Gẫu Ở Dijiang 5",
+        "text": "Nnn - buồn ngủ quá... Xử lý mấy con quái thú chở hàng cứng đầu đó đúng là mệt bở hơi tai. Hửm? Sao tôi lại đi một mình à? Vì giúp đỡ những bệnh nhân Hội Chứng Ætherside khác chính là việc tôi nên làm mà! Heheh!"
+      },
+      {
+        "voId": "chr_0038_purrche_sim_talk_max_03",
+        "title": "Tán Gẫu Ở Dijiang 6",
+        "text": "Sao tôi lại thích đồ ăn vặt đến thế à? Vì nhấm nháp đồ ăn khiến tôi thấy thư giãn lắm... cứ như đang bồng bềnh trên mây vậy... \"Xin chào! Tôi là Purrchena!\""
+      },
+      {
+        "voId": "chr_0038_purrche_sim_gift_give_01",
+        "title": "Tặng Quà",
+        "text": "Tada! Tôi tự tay chọn món quà này đấy, nên đảm bảo là ngon tuyệt! Tin tôi đi, Endmin! Ngài sẽ không tìm được chuyên gia đồ ăn vặt nào giỏi hơn tôi đâu! Tôi biết hết mọi bí mật hay ho nhất trong thế giới đồ ăn vặt!"
+      },
+      {
+        "voId": "chr_0038_purrche_sim_gift_recv_01",
+        "title": "Nhận Quà",
+        "text": "Ooh, cảm ơn ngài nhiều lắm, Endmin... *Hít mạnh* Suýt nữa tôi lại ngủ gật rồi! Phù... may mà không làm rơi mất."
+      },
+      {
+        "voId": "chr_0038_purrche_mono_self_line01",
+        "title": "Đối Thoại Tín Nhiệm 1",
+        "text": "Hồi học ở La Fantoma, trong giáo trình của tôi có nhắc đến rất nhiều thành tựu của Endfield. Cũng nhờ vậy mà tôi biết Endfield luôn nỗ lực phòng ngừa các bệnh liên quan đến Æther... Æther tồn tại trong môi trường Talos-II có thể gây ra những chứng bệnh hiếm gặp. Tôi thật sự muốn góp sức giúp đỡ những người có hoàn cảnh giống mình. Các bạn ở Quỹ Cứu Trợ đã viết cho tôi những lá thư giới thiệu rất tuyệt, và thế là tôi được đến đây!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_self_line02",
+        "title": "Đối Thoại Tín Nhiệm 2",
+        "text": "Hiya! Ngài đọc được bài báo nào đó nhắc đến \"Đại Sứ Thương Hiệu của Quỹ Cứu Trợ Hội Chứng Ảnh Hưởng Môi Trường Ætherside\" sao? Oh, đúng là tôi đấy, nhưng bài viết đó phóng đại quá rồi... Tôi đâu có cõng bệnh nhân vượt núi. Mẹ và tôi chỉ tiện đường đưa người ấy đến bệnh viện bằng RV thôi. Sao bố mẹ tôi không phải Feline à? Câu hỏi hay đấy. Chắc là vì ông bà tôi cũng không phải Feline."
+      },
+      {
+        "voId": "chr_0038_purrche_mono_self_line03",
+        "title": "Đối Thoại Tín Nhiệm 3",
+        "text": "Bộ đồ ngộ nghĩnh này sao? Bố đã chế tạo bộ đầu tiên cho tôi từ khi tôi còn nhỏ. Bố sửa lại một bộ khung xương ngoài phế thải, rồi bọc bên ngoài bằng một lớp thú bông để bảo vệ tôi mỗi khi ngủ gật. Bộ đồ cũ đó đầy lỗi, nhưng tôi vẫn cất nó trong căn hộ ở La Fantoma đấy! Còn bộ tôi đang mặc sao? Khụ. Đây là mẫu tối tân nhất nhé! Các kỹ thuật viên của Quỹ Cứu Trợ vẫn thường xuyên nâng cấp cho tôi. Bên trong bộ đồ này có cả đống công nghệ cực kỳ xịn sò!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_self_line04",
+        "title": "Đối Thoại Tín Nhiệm 4",
+        "text": "Có lần tôi ngủ gật giữa một kỳ thi quan trọng, đến lúc tỉnh dậy thì cả phòng thi đã loạn hết cả lên. Giám thị và các thí sinh khác đều đang kêu cứu! Họ chỉ biết tôi mắc một hội chứng hiếm gặp nên tưởng tôi đã hôn mê. Đến khi không mở được bộ đồ của tôi, mọi người lại càng hoảng hơn. Vị giám thị tội nghiệp còn bị ngã và bị thương nữa... Kết quả thi của tôi sao? Tôi nộp luôn bài còn làm dở để đưa giám thị đến phòng y tế của trường. Chứ không thì tôi đã có thể đứng đầu lớp rồi đấy."
+      },
+      {
+        "voId": "chr_0038_purrche_mono_self_line05",
+        "title": "Đối Thoại Tín Nhiệm 5",
+        "text": "Mẹ tìm thấy tôi giữa vùng hoang dã khi đang lái RV đi giao vật tư... Họ thường dành thời gian cùng tôi đếm sao và chơi trò chơi. Sau khi Quỹ Cứu Trợ chẩn đoán tôi mắc hội chứng hiếm gặp, bố mẹ đưa tôi đến La Fantoma để vừa điều trị, vừa làm linh vật cho Quỹ. Chẳng bao lâu sau, tôi nhận ra mình không phải người duy nhất mắc Hội Chứng Ætherside. Heheh. Tôi thật sự rất vui vì giờ mình có thể giúp đỡ nhiều người giống như mình!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_chat_line01",
+        "title": "Trò Chuyện 1",
+        "text": "Không gì ngon bằng vi cá khô ngoại nhập, nhưng finyaki ở Neo Tsukushi cũng tuyệt lắm. Trong một chuyến đi cùng Quỹ Cứu Trợ, tôi từng đến thành phố thăm những bệnh nhân mắc cùng hội chứng. Ai cũng bảo Neo Tsukushi có món finyaki chuẩn vị nhất. Họ nói đúng thật, nhưng khổ nỗi từ đó, ăn finyaki ở nơi khác cứ thấy sai sai thế nào ấy. Tôi muốn quay lại đó quá... Mmm, thôi vậy, trước mắt cứ ăn vi cá khô ngoại nhập đã!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_chat_line02",
+        "title": "Trò Chuyện 2",
+        "text": "Robot thú bông sao? KHÔNG CÓ ĐÂU! Trên Talos-II làm gì có robot nào giống tôi! Mà dù có thật thì chúng cũng chẳng giống tôi chút nào! Endmin, ngài tin mấy lời đồn đó thật à? Còn những âm thanh điện tử của tôi sao? Nghe này, chúng KHÔNG phải giọng tổng hợp nhé! Tôi chỉ thu âm sẵn để mọi người biết lúc nào mình ngủ gật thôi. Đây! Tôi bật vài câu cho ngài nghe... \"Xin chào!\" \"Tạm biệt nhé!\" \"Vi cá khô ngoại nhập! MĂM MĂM!\" \"Endmin có đang giấu đồ ăn vặt sau chiếc mặt nạ đó không?\" Ack! Dừng lại! Câu đó đâu có định thu vào!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_chat_line03",
+        "title": "Trò Chuyện 3",
+        "text": "Tôi uống thuốc thế nào sao? Bố đã lắp cho bộ đồ này một máy cấp thuốc theo giờ, còn các bạn ở Phòng Thương Mại Tổng Hợp thì giúp hoàn thiện công nghệ. Thế tôi ăn uống và vệ sinh kiểu gì à? Hmm... Các kỹ thuật viên của Quỹ Cứu Trợ đã lắp cả hệ thống làm sạch, tự động dọn hết những mẩu vụn tôi vô tình làm rơi! Còn ăn thì tôi chỉ cần làm thế này: Aaaa - NGAM... KYAAA!! HO-HO-HÚUU...! Ực ực Phùùù. Tôi sống lại rồi! Nước mát cứu mạng... Nóng suýt chết luôn... Đấy. Mọi thứ hoạt động như thế đó, Endmin."
+      },
+      {
+        "voId": "chr_0038_purrche_mono_chat_line04",
+        "title": "Trò Chuyện 4",
+        "text": "Ngoại hình của tôi sao? Purrchena thì trông giống Purrchena chứ, bông xù đáng iu... Còn dáng vẻ thật bên dưới bộ đồ à? Oho, xem ra có người tò mò về bí mật của tôi rồi! Hừmmm! Purrchena được làm từ kẹo bông đấy! Hehe, đùa thôi. Thật ra tôi chỉ là... tôi... đang thấy... hơi buồn... \"Vi cá khô ngoại nhập! ĂN ĐI NÀO!\""
+      },
+      {
+        "voId": "chr_0038_purrche_mono_chat_line05",
+        "title": "Trò Chuyện 5",
+        "text": "Tất nhiên rồi, tất nhiên rồi! Bộ đồ của tôi được yêu thích lắm! Từ nhân viên Quỹ Cứu Trợ, những người tôi từng giúp đỡ, cho đến các thành viên Endfield đã giúp tôi - ai cũng THÍÍÍÍCH ôm tôi hết! Nhất là vào những ngày trời lạnh. Ai cũng nói y như nhau: \"Purrchena, cô mềm mại và ấm áp quá! Cứ như đang ôm một mảnh mặt trời bé xíu vậy!\""
+      },
+      {
+        "voId": "chr_0038_purrche_mono_about_line01",
+        "title": "Chủ Đề: Hội Chứng Ætherside",
+        "text": "Trước đây, tôi từng đi khắp nơi để thăm hỏi và giúp đỡ những bệnh nhân có hoàn cảnh giống mình. Một số người mắc cùng chứng bệnh với tôi, nhưng cũng có vài người... Ừm, các bác sĩ phẫu thuật của Quỹ Cứu Trợ nói rằng với trình độ y học hiện tại, họ không thể làm gì được nữa. Tôi vẫn nhớ lần cùng mọi người đến thăm một trung tâm chăm sóc bệnh nhân Hội Chứng Ætherside. Khi ấy, tôi chỉ... *Thở dài*. Chuyến đi đó khiến tôi nhận ra mình may mắn biết bao khi có bộ đồ này. Nhờ nó, tôi vẫn có thể đứng vững trên đôi chân mình, thay vì phải nằm liệt trên giường bệnh... Tôi chỉ mong sự xuất hiện của mình đã giúp họ cảm thấy tốt hơn, dù chỉ một chút."
+      },
+      {
+        "voId": "chr_0038_purrche_mono_about_line02",
+        "title": "Chủ Đề: La Fantoma",
+        "text": "Người dân La Fantoma nồng hậu lắm! Nơi đó hoàn toàn khác với những vùng đất khác. Không có sa mạc, cũng chẳng có trạm chặn đường của Landbreaker... Chỉ có những công viên rộng lớn, biển xanh và các lễ hội âm nhạc sôi động! Tất nhiên, đồ ăn vặt ở La Fantoma vẫn là món tôi thích nhất. Ở đó, tôi cũng gần như không thể phân biệt người dương tính với Oripathy với những người khác... *Thở dài*. Giá mà chúng ta cũng có thể kiểm soát Hội Chứng Ætherside tốt như đã làm với Oripathy."
+      },
+      {
+        "voId": "chr_0038_purrche_mono_about_line03",
+        "title": "Chủ Đề: RV",
+        "text": "Hồi còn nhỏ, tôi thấy chiếc RV to khổng lồ luôn! Mẹ lái nó đưa bố và tôi đi khắp thế giới. Tôi từng nhìn thấy núi tuyết, sa mạc, rừng rậm và những hồ nước mênh mông. Khi ấy tôi còn nhỏ, nhưng khỏe lắm nhé. Tôi đã giúp mọi người khuân cả đống hàng hóa lên xuống chiếc RV. Ai cũng quý tôi và cho tôi rất nhiều bánh kẹo. Hồi đó, tôi từng nghĩ dù gom hết đồ ăn vặt trên Talos-II lại cũng chẳng thể lấp đầy chiếc RV của mẹ... Nhưng giờ nhìn lại, chiếc RV ấy dường như đã nhỏ đi rồi."
+      },
+      {
+        "voId": "chr_0038_purrche_mono_about_line04",
+        "title": "Chủ Đề: Tộc Bonekrusher",
+        "text": "Endmin, tôi thật sự không hiểu nổi! Tại sao những Landbreaker đó lại cố tình phơi nhiễm Æther chứ...? Chuyện đó quá điên rồ... mà tình trạng rối loạn của họ còn là triệu chứng điển hình của Hội Chứng Ætherside nữa... Tại sao họ lại tự làm mình mắc bệnh? Tại sao lại cố tình nhiễm chính thứ mà chúng ta đang vất vả tìm mọi cách ngăn chặn? Gì cơ? Tôi nghiêm túc quá sao? Không phải, chỉ là... Ugh. Nghĩ đến thôi đã tức rồi! Tức kinh khủng luôn!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_about_line05",
+        "title": "Chủ Đề: Vi Cá Khô Ngoại Nhập!",
+        "text": "Vi cá khô ngoại nhập, ngon ơi là ngon... Vị ngọt... vị cay... vị chua... E-Endmin? Tôi... tôi đang ngủ say lắm đấy nhé. Zzz... \"Vi cá khô ngoại nhập! MĂM MĂM!\""
+      },
+      {
+        "voId": "chr_0038_purrche_explore_point_common_01",
+        "title": "Phát hiện Tài Nguyên/Đồ Sưu Tập 1",
+        "text": "Oh! Đằng kia có thứ gì sáng lấp lánh kìa! Mong là đồ ăn ngon!"
+      },
+      {
+        "voId": "chr_0038_purrche_explore_point_valub_01",
+        "title": "Phát hiện Tài Nguyên/Đồ Sưu Tập 2",
+        "text": "Ooh, nhìn này! Heheh, ngài nghĩ bên trong sẽ có gì?"
+      },
+      {
+        "voId": "chr_0038_purrche_explore_find_locked_01",
+        "title": "Phát Hiện Khu Vực Chưa Khám Phá",
+        "text": "Hmm? Đằng kia có thứ gì đang lấp lánh thì phải?"
+      },
+      {
+        "voId": "chr_0038_purrche_explore_find_danger_01",
+        "title": "Phát hiện Kẻ Địch Mạnh",
+        "text": "Eek, tên đó trông dữ quá... Nhưng tôi sẽ bảo vệ mọi người!"
+      },
+      {
+        "voId": "chr_0038_purrche_interact_mine_valub_01",
+        "title": "Khai thác 1",
+        "text": "Bộ đồ thú bông của tôi bền hơn vẻ ngoài nhiều đấy!"
+      },
+      {
+        "voId": "chr_0038_purrche_interact_mine_valub_echo2_01",
+        "title": "Khai thác 2",
+        "text": "Để tôi giúp! Bộ đồ này có sức mạnh vô... vô tận... \"Tạm biệt nhé!\""
+      },
+      {
+        "voId": "chr_0038_purrche_interact_treasure_valub_01",
+        "title": "Mở Thùng",
+        "text": "Ooh, tìm được thứ hay ho rồi...! Biết đâu bên trong có đồ ăn vặt."
+      },
+      {
+        "voId": "chr_0038_purrche_interact_etherium_01",
+        "title": "Nhận Aurylene",
+        "text": "Tôi từng đọc về Aurylene trong cuốn \"Khoa Học Môi Trường Talos-II\"... Aww, nhìn nó kìa - lấp lánh đẹp quá! Giống hệt trong hình luôn, heheh."
+      },
+      {
+        "voId": "chr_0038_purrche_interact_blight_break_01",
+        "title": "Loại Bỏ Nhiễm Khuẩn",
+        "text": "Xong rồi... Giờ cả mọi người lẫn quái thú chở hàng đều an toàn."
+      },
+      {
+        "voId": "chr_0038_purrche_interact_rest_01",
+        "title": "Nghỉ ngơi",
+        "text": "Tôi vẫn còn sức! Thật ra còn đang sung lắm đây..."
+      },
+      {
+        "voId": "chr_0038_purrche_combat_suppuse_using_01",
+        "title": "Sử Dụng Vật Phẩm Chiến Thuật 1",
+        "text": "Nhận lấy này! Đừng có ngủ gật!"
+      },
+      {
+        "voId": "chr_0038_purrche_combat_suppuse_getheal_01",
+        "title": "Sử Dụng Vật Phẩm Chiến Thuật 2",
+        "text": "Sống lại rồi đây!"
+      },
+      {
+        "voId": "chr_0038_purrche_combat_remind_danger_01",
+        "title": "Cảnh Báo Nguy Hiểm",
+        "text": "Nguy hiểm! Mau núp sau tôi!"
+      },
+      {
+        "voId": "chr_0038_purrche_combat_hurt_lowhp_01",
+        "title": "Bị Thương",
+        "text": "Hoo... Mọi thứ bắt đầu giống một giấc mơ rồi..."
+      },
+      {
+        "voId": "chr_0038_purrche_combat_dead_01",
+        "title": "0 HP",
+        "text": "Xin lỗi... tôi buồn ngủ quá đi thôi..."
+      },
+      {
+        "voId": "chr_0038_purrche_combat_remind_praise_01",
+        "title": "Cổ Vũ Đội 1",
+        "text": "Tuyệt quá! May mà tôi còn thức để được chứng kiến!"
+      },
+      {
+        "voId": "chr_0038_purrche_combat_remind_praise_02",
+        "title": "Cổ Vũ Đội 2",
+        "text": "Chúng ta đúng là một đội trong mơ!"
+      },
+      {
+        "voId": "chr_0038_purrche_combat_remind_praise_echo2_01",
+        "title": "Đáp Lại Lời Cổ Vũ 1",
+        "text": "Heheh, ngài làm tôi ngượng quá."
+      },
+      {
+        "voId": "chr_0038_purrche_combat_remind_praise_echo2_02",
+        "title": "Đáp Lại Lời Cổ Vũ 2",
+        "text": "Vi cá khô ngoại nhập để tôi bao!"
+      },
+      {
+        "voId": "chr_0038_purrche_combat_intobattle_01",
+        "title": "Bắt Đầu Chiến Đấu 1",
+        "text": "Mọi người, mau núp sau tôi!"
+      },
+      {
+        "voId": "chr_0038_purrche_combat_intobattle_echo2_01",
+        "title": "Bắt Đầu Chiến Đấu 2",
+        "text": "Có tôi ở đây thì không ai được phép trầy xước dù chỉ một chút!"
+      },
+      {
+        "voId": "chr_0038_purrche_combat_outbattle_nor_01",
+        "title": "Thắng Trận 1",
+        "text": "Mọi người đều bình an vô sự chứ?"
+      },
+      {
+        "voId": "chr_0038_purrche_combat_outbattle_nor_02",
+        "title": "Thắng Trận 2",
+        "text": "Đừng có giỡn mặt với đại sứ thương hiệu này... \"MĂM MĂM!\""
+      },
+      {
+        "voId": "chr_0038_purrche_combat_outbattle_nor_echo2_01",
+        "title": "Thắng Trận 3",
+        "text": "*Hoo*... Mọi người làm tốt lắm! Giờ thì đến giờ ăn vặt rồi!"
+      },
+      {
+        "voId": "chr_0038_purrche_combat_outbattle_hard_01",
+        "title": "Thắng Trận 4",
+        "text": "Trận này khó nhằn thật... Mọi người vẫn ổn chứ? Tốt, vậy tôi xin phép... \"Vi cá khô ngoại nhập! ĂN ĐI NÀO!\""
+      },
+      {
+        "voId": "chr_0038_purrche_combat_battle_defeat_01",
+        "title": "Bại Trận",
+        "text": "Là lỗi của tôi... Tôi đã không cố gắng hết sức để bảo vệ mọi người. Lần sau, tôi sẽ... Không. Tôi sẽ không bao giờ để chuyện này xảy ra thêm lần nào nữa."
+      },
+      {
+        "voId": "chr_0038_purrche_mono_attack_last_01",
+        "title": "Đòn Dứt Điểm 1",
+        "text": "Lùi lại ngay!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_attack_last_02",
+        "title": "Đòn Dứt Điểm 2",
+        "text": "Đừng hòng vượt qua!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_skill_nor_01",
+        "title": "KN Chiến Đấu 1",
+        "text": "Tôi tỉnh táo hoàn toàn nhé!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_skill_nor_02",
+        "title": "KN Chiến Đấu 2",
+        "text": "YA-HAY! \"Tới đây!\""
+      },
+      {
+        "voId": "chr_0038_purrche_mono_skill_nor_03",
+        "title": "KN Chiến Đấu 3",
+        "text": "Đừng có hòng!"
+      },
+      {
+        "voId": "chr_0038_purrche_combat_skill_comb_ready_01",
+        "title": "Chuẩn Bị KN Liên Hoàn 1",
+        "text": "Purrchena sẵn sàng hành động!"
+      },
+      {
+        "voId": "chr_0038_purrche_combat_skill_comb_ready_02",
+        "title": "Chuẩn Bị KN Liên Hoàn 2",
+        "text": "TIẾN LÊN, vi cá khô ngoại nhập!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_skill_comb_release_01",
+        "title": "Thi Triển Liên Hoàn 1",
+        "text": "Tôi tới đây!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_skill_comb_release_02",
+        "title": "Thi Triển Liên Hoàn 2",
+        "text": "Không ai được bắt nạt bạn của tôi!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_attack_extra_01",
+        "title": "Kết Liễu 1",
+        "text": "Hasta la vista!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_attack_extra_02",
+        "title": "Kết Liễu 2",
+        "text": "Không được ngủ gật đâu nhé!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_skill_ultimate_01",
+        "title": "Tuyệt Kỹ 1",
+        "text": "Haha! Giờ mới xin lỗi thì đã MUỘN rồi!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_skill_ultimate_02",
+        "title": "Tuyệt Kỹ 2",
+        "text": "Hừ! Đồ bắt nạt! \"Bái bai!\""
+      },
+      {
+        "voId": "chr_0038_purrche_mono_skill_ultimate_03",
+        "title": "Tuyệt Kỹ 3",
+        "text": "Làm tốt lắm! Thưởng ngài một món ăn vặt!"
+      }
+    ]
+  },
+  "potentials": {
+    "potential1": {
+      "description": "Tuyệt Kỹ <@ba.key>NGƯNG NGHỊCH NGỢM!</> được cường hóa: Tỷ lệ cơ bản của <@ba.key>Đặc Sản Đại Sứ</> tăng lên bằng <@ba.vup>{prob:0.0}</> lần so với ban đầu.",
+      "name": "Ấm Áp Tựa Ánh Dương"
+    },
+    "potential2": {
+      "description": "Phòng Thủ <@ba.vup>+{Def:0}</>, Ý Chí <@ba.vup>+{Will:0}</>.",
+      "name": "\"Tràn Đầy Năng Lượng\""
+    },
+    "potential3": {
+      "description": "KN liên hoàn <@ba.key>BÁNH HAY \"QUÀ\"</> có thể xuất hiện các vật phẩm mạnh hơn: \n<@ba.key>Bom</>: Hệ Số ST tăng lên <@ba.vup>{atk_scale_boom:0.0}</> lần so với ban đầu. \n<@ba.key>Đồ Thủ Công</>: Bán kính ảnh hưởng <@ba.vup>+{radiusadd_display:0%}</>. \n<@ba.key>Tráng Miệng Ngon Lành</>: Hồi Phục HP tăng lên <@ba.vup>{heal_static_value_fish:0.0}</> lần so với ban đầu.",
+      "name": "Những \"Món Quà\" Hữu Ích"
+    },
+    "potential4": {
+      "description": "Tuyệt Kỹ <@ba.key>NGƯNG NGHỊCH NGỢM!</> được cải thiện: Tiêu hao Năng Lượng Tuyệt Kỹ <@ba.vup>-{1-costvalue:0%}</>.",
+      "name": "Sau Bữa Đại Tiệc"
+    },
+    "potential5": {
+      "description": "Tuyệt Kỹ <@ba.key>NGƯNG NGHỊCH NGỢM!</> được cường hóa:\nHệ Số ST <@ba.key>Đặc Sản Đại Sứ</> tăng lên bằng <@ba.vup>{atk_scale_ult:0.0}</> lần ban đầu.\n<@ba.key>Đặc Sản Đại Sứ</>: <#ba.spellvul>Yếu Hóa Thuật Pháp</> tăng lên bằng <@ba.vup>{rate_vul:0.0}</> lần so với ban đầu.",
+      "name": "Nóng Rực Tựa Lửa Nướng"
+    }
+  },
+  "arts": {
+    "potential1": {
+      "name": "RAWR!",
+      "author": "黑犬",
+      "description": "Vi cá khô ngoại nhập! MĂM! Finyaki! CŨNG MĂM MĂM! Nên ăn món nào trước đây? GỪ! Khỏi chọn! Tôi sẽ ngoạm cả hai trong một miếng!"
+    },
+    "potential3": {
+      "name": "Feline Rù Rì",
+      "author": "怂松鼠",
+      "description": "\"KYAA! Feline Rù Rì đến rồi!\" Mỗi lần cô ghé thăm, lũ trẻ tại trung tâm y tế đều tíu tít xúm lại quanh cô."
+    },
+    "potential5": {
+      "name": "Khoảnh Khắc Mộng Đẹp",
+      "author": "とびはち",
+      "description": "Purrchena mơ thấy những chiếc bánh biết bay, trong một thế giới nơi cô có thể nhẹ nhàng phóng mình về phía những đám mây bồng bềnh."
+    }
+  }
+}

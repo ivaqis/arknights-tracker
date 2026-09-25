@@ -1,6 +1,5 @@
 <script>
     import { t } from "$lib/i18n.js";
-    import { goto } from "$app/navigation";
     import { pullData } from "$lib/stores/pulls.js";
     import { manualPotentials } from "$lib/stores/potentials.js";
     import { weaponEssences } from "$lib/stores/weaponEssences.js";
@@ -270,6 +269,17 @@
                     {/if}
                 </div>
             {/if}
+
+            {#if isEnemy && weapon.level !== undefined}
+                <div class="absolute -top-0.5 left-1.5 z-20 pointer-events-none">
+                    <span
+                        class="text-[10px] font-black text-white leading-none tracking-tight font-nums"
+                        style="text-shadow: 1px 1px 0 #111, -1px -1px 0 #111, 1px -1px 0 #111, -1px 1px 0 #111, 0 2px 2px rgba(0,0,0,0.8);"
+                    >
+                        Lv.{weapon.level}
+                    </span>
+                </div>
+            {/if}   
 
             {#if isEquipment && extraAttrs.length > 0 && variant !== "small"}
                 <div

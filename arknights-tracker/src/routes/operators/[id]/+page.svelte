@@ -1,36 +1,35 @@
 <script>
     import { browser } from "$app/environment";
     import { page } from "$app/stores";
-    import { t } from "$lib/i18n";
-    import { fade, fly } from "svelte/transition";
-    import { onDestroy } from "svelte";
-    import { currentLocale } from "$lib/stores/locale";
-    import { progression } from "$lib/data/items/progression.js";
-    import { currencies } from "$lib/data/items/currencies.js";
+    import { AUDIO_BASE } from "$lib/api.js";
+    import Button from "$lib/components/Button.svelte";
+    import ItemCard from "$lib/components/cards/ItemCard.svelte";
+    import WeaponCard from "$lib/components/cards/WeaponCard.svelte";
+    import Icon from "$lib/components/Icon.svelte";
+    import Image from "$lib/components/Image.svelte";
+    import TableModal from "$lib/components/modals/TableModal.svelte";
+    import NotFound from "$lib/components/NotFound.svelte";
+    import AscensionIcon from "$lib/components/operators/AscensionIcon.svelte";
+    import PotentialIcon from "$lib/components/operators/PotentialIcon.svelte";
+    import SkillCard from "$lib/components/operators/SkillCard.svelte";
+    import TalentCard from "$lib/components/operators/TalentCard.svelte";
+    import Tooltip from "$lib/components/Tooltip.svelte";
     import { characters } from "$lib/data/characters.js";
+    import { currencies } from "$lib/data/items/currencies.js";
+    import { progression } from "$lib/data/items/progression.js";
+    import { levels as levelUpTable } from "$lib/data/levelUpTable.js";
     import { weapons } from "$lib/data/weapons.js";
+    import { t } from "$lib/i18n";
+    import { accountStore } from "$lib/stores/accounts";
+    import { currentLocale } from "$lib/stores/locale";
+    import { addNotification } from "$lib/stores/notifications.js";
     import { manualPotentials } from "$lib/stores/potentials";
     import { pullData } from "$lib/stores/pulls";
-    import { accountStore } from "$lib/stores/accounts";
-    import { levels as levelUpTable } from "$lib/data/levelUpTable.js";
-    import { parseRichText, hyperlinkAction } from "$lib/utils/richText.js";
     import { getRarityColor } from "$lib/utils/colorUtils.js";
     import { getImagePath } from "$lib/utils/imageUtils.js";
-    import { addNotification } from "$lib/stores/notifications.js";
-    import { AUDIO_BASE } from "$lib/api.js";
-
-    import Icon from "$lib/components/Icon.svelte";
-    import Tooltip from "$lib/components/Tooltip.svelte";
-    import ItemCard from "$lib/components/cards/ItemCard.svelte";
-    import Button from "$lib/components/Button.svelte";
-    import SkillCard from "$lib/components/operators/SkillCard.svelte";
-    import Image from "$lib/components/Image.svelte";
-    import TalentCard from "$lib/components/operators/TalentCard.svelte";
-    import PotentialIcon from "$lib/components/operators/PotentialIcon.svelte";
-    import NotFound from "$lib/components/NotFound.svelte";
-    import TableModal from "$lib/components/modals/TableModal.svelte";
-    import WeaponCard from "$lib/components/cards/WeaponCard.svelte";
-    import AscensionIcon from "$lib/components/operators/AscensionIcon.svelte";
+    import { hyperlinkAction, parseRichText } from "$lib/utils/richText.js";
+    import { onDestroy } from "svelte";
+    import { fly } from "svelte/transition";
 
     function formatBirthDate(raw, lang) {
         if (typeof raw !== "string" || !/^\d{1,2}-\d{1,2}$/.test(raw))
@@ -83,7 +82,7 @@
 
         lang = lang || "en";
 
-        const safeLang = lang.toLowerCase().replace("-", "");
+        const safeLang = lang.toLowerCase().startsWith("en") ? "en" : lang.toLowerCase().replace("-", "");
 
         const dataPath = `/src/lib/data/charactersData/${targetId}.json`;
         if (dataModules[dataPath]) {
@@ -836,9 +835,17 @@
     $: pageTitle = operatorName
         ? `${operatorName} - ${$t("pages.operators")} - Goyfield`
         : `${$t("pages.operators")} - Goyfield`;
-    $: pageDescription = $t("seo.descriptions.operatorDetail", {
+    $: baseDesc = $t("seo.descriptions.operatorDetail", {
         name: operatorName || id,
     });
+    $: metaDetails = [
+        char?.rarity ? `${char.rarity}★` : "",
+        char?.element,
+        char?.class,
+        char?.weapon ? `(${char.weapon})` : ""
+    ].filter(Boolean).join(" ");
+    $: pageDescription = metaDetails ? `${metaDetails}. ${baseDesc}` : baseDesc;
+    $: imageUrl = `${$page.url.origin}${getImagePath(char.id || id, "operator-icon")}`;
 </script>
 
 <svelte:head>
@@ -846,6 +853,11 @@
     <meta name="description" content={pageDescription} />
     <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={pageDescription} />
+    <meta property="og:image" content={imageUrl} />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={pageDescription} />
+    <meta name="twitter:image" content={imageUrl} />
 </svelte:head>
 
 <svelte:window on:keydown={handleKeydown} on:keyup={handleKeyup} />
@@ -2466,7 +2478,7 @@
                                 >
                                     <div
                                         class="px-2 py-1 rounded transition-colors text-xs font-bold tracking-wider {isMain
-                                            ? 'bg-[#FFEE00] text-[#21272C]  shadow-sm'
+                                            ? 'bg-[#FFEE00] text-[#21272C] shadow-sm'
                                             : ''} {isSec
                                             ? 'bg-[#3B3B3B] dark:bg-[#323232] text-white shadow-sm'
                                             : ''} {!isMain && !isSec

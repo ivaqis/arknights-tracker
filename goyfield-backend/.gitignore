@@ -1,0 +1,12 @@
+.idea
+generated
+uploads
+node_modules
+dist
+
+.env
+.env.*
+!.env.example
+tsconfig.tsbuildinfo
+static/banwords/banned_words.txt
+static/banroots/banned_roots.txt

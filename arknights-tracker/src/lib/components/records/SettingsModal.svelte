@@ -1,28 +1,25 @@
 <script>
-  import { t } from "$lib/i18n.js";
-  import { pullData } from "$lib/stores/pulls.js";
-  import { banners } from "$lib/data/banners.js";
-  import { addNotification } from "$lib/stores/index.js";
-  import { onDestroy } from "svelte";
-  import { currentLocale, currentUiLocale } from "$lib/stores/locale.js";
-  import Image from "$lib/components/Image.svelte";
-
-
-  import Icon from "$lib/components/Icon.svelte";
   import Button from "$lib/components/Button.svelte";
   import Checkbox from "$lib/components/Checkbox.svelte";
+  import Icon from "$lib/components/Icon.svelte";
   import MultiSelect from "$lib/components/MultiSelect.svelte";
-  import { getWeaponCategory } from "$lib/utils/importUtils.js";
+  import { banners } from "$lib/data/banners.js";
+  import { t } from "$lib/i18n.js";
   import {
-    recordsExcludedBannerTypes,
+    recordsCardsOrder,
+    recordsEnableDragDrop,
     recordsExcludedBanners,
+    recordsExcludedBannerTypes,
+    recordsMaxCols,
     recordsShowMonthlyChart,
     recordsShowRating,
-    recordsShowTotalCost,
-    recordsMaxCols,
-    recordsEnableDragDrop,
-    recordsCardsOrder
+    recordsShowTotalCost
   } from "$lib/stores/filterStore.js";
+  import { addNotification } from "$lib/stores/index.js";
+  import { currentUiLocale, normalizeLocale } from "$lib/stores/locale.js";
+  import { pullData } from "$lib/stores/pulls.js";
+  import { getWeaponCategory } from "$lib/utils/importUtils";
+  import { onDestroy } from "svelte";
 
   export let isOpen = false;
   export let onClose;
@@ -64,6 +61,7 @@
 
     const categories = {
         "special": [],
+        "rerun": [],
         "standard": [],
         "weapon": [],
         "new_player": [],
@@ -78,6 +76,8 @@
         const keyLower = storeKey.toLowerCase();
         
         if (keyLower.includes('new') || keyLower.includes('beginner')) cat = 'new_player';
+        else if (keyLower.includes('rerun') && (keyLower.includes('weap') || keyLower.includes('wpn'))) cat = 'weapon';
+        else if (keyLower.includes('rerun')) cat = 'rerun';
         else if (keyLower.includes('weap') || keyLower.includes('wepon') || keyLower.includes('constant')) cat = 'weapon';
         else if (keyLower.includes('joint')) cat = 'joint';
         else if (keyLower === 'standard' || keyLower.includes('standard')) cat = 'standard';
@@ -91,6 +91,7 @@
             if (!foundBanner) {
                 let searchType = null;
                 if (cat === 'special') searchType = 'special';
+                if (cat === 'rerun') searchType = 'rerun';
                 if (cat === 'weapon') searchType = 'weapon';
                 if (cat === 'new_player') searchType = 'new-player';
                 if (cat === 'standard') searchType = 'standard';
@@ -98,7 +99,7 @@
                     foundBanner = banners.find(b => {
                         const bType = (b.type || "").toLowerCase();
                         const isMatch = (searchType === 'weapon') 
-                            ? (bType === 'weapon' || (b.id && (b.id.includes('weap') || b.id.includes('constant'))))
+                            ? (bType === 'weapon' || bType === 'weapon_rerun' || (b.id && (b.id.includes('weap') || b.id.includes('constant'))))
                             : (bType === searchType || (searchType === 'standard' && (bType === 'constant' || bType === 'standard')));
                         
                         if (!isMatch) return false;
@@ -255,6 +256,7 @@
 
       const sheetMapping = {
         "Special": "special",
+        "Rerun": "rerun",
         "Standard": "standard",
         "Weapon": "constant", 
         "New Player": "new-player",
@@ -326,25 +328,22 @@
     fileInputExcel.click();
   }
 
-  // ponytail: removed custom clickOutside and dropdown state variables since we are using MultiSelect
-
-  const bannerTypeOptions = [
-    { value: "special", label: $t("bannerTypes.special") || "Специальный наем" },
-    { value: "standard", label: $t("bannerTypes.standard") || "Стандартный наем" },
-    { value: "new-player", label: $t("bannerTypes.new-player") || "Наем «Новые горизонты»" },
-    { value: "weap-special", label: $t("bannerTypes.weapSpecial") || "Оружейные баннеры" },
-    { value: "weap-standard", label: $t("bannerTypes.weapStandard") || "Стандартные оружейные баннеры" },
-    { value: "joint", label: $t("bannerTypes.joint") || "Сияние славы" }
+  $: bannerTypeOptions = [
+    { value: "special", label: $t("bannerTypes.special") },
+    { value: "rerun", label: $t("bannerTypes.rerun") },
+    { value: "standard", label: $t("bannerTypes.standard") },
+    { value: "new-player", label: $t("bannerTypes.new-player") },
+    { value: "weap-special", label: $t("bannerTypes.weapSpecial") },
+    { value: "weap-rerun", label: $t("bannerTypes.weapRerun") },
+    { value: "weap-standard", label: $t("bannerTypes.weapStandard") },
+    { value: "joint", label: $t("bannerTypes.joint") }
   ];
-
-
 
   function formatBannerDate(dateStr, locale) {
     if (!dateStr) return "";
     const parsed = new Date(dateStr.replace(" ", "T"));
     if (isNaN(parsed.getTime())) return "";
-    let loc = locale || "en";
-    if (loc === "my") loc = "ms-MY";
+    let loc = normalizeLocale(locale);
     try {
       return new Intl.DateTimeFormat(loc, {
         day: "2-digit",
@@ -362,13 +361,13 @@
   $: weaponBannerOptions = (() => {
     const ids = Object.keys($pullData).filter(key => {
       const cat = getWeaponCategory(key);
-      return cat === 'weap-special' || cat === 'weap-standard';
+      return cat === 'weap-special' || cat === 'weap-standard' || cat === 'weapon_rerun' || cat === 'weap-rerun';
     });
     return ids.map(id => {
       const b = banners.find(x => x.id === id);
       const label = b ? ($t(`banners.${b.id}`) !== `banners.${b.id}` ? $t(`banners.${b.id}`) : b.name) : id;
       const startFormatted = b ? formatBannerDate(b.startTime, $currentUiLocale) : "";
-      const endFormatted = b ? (b.endTime ? formatBannerDate(b.endTime, $currentUiLocale) : ($t("permanent") || "Permanent")) : "";
+      const endFormatted = b ? (b.endTime ? formatBannerDate(b.endTime, $currentUiLocale) : $t("permanent")) : "";
       const subLabel = startFormatted && endFormatted ? `${startFormatted} - ${endFormatted}` : "";
       return {
         value: id,
@@ -434,7 +433,7 @@
               on:click={triggerFileInput}
               class="flex flex-col dark:border-[#444444] dark:bg-[#383838] hover:dark:bg-[#373737] items-center justify-center p-4 border border-gray-200 rounded-xl hover:border-[#F9B90C] hover:bg-amber-50/50 transition group bg-white h-24 w-full"
             >
-              <div class="mb-2 text-gray-400 group-hover:text-[#F9B90C] dark:text-[#E0E0E0] transition-colors">
+              <div class="mb-2 text-gray-400 group-hover:text-[#1D6F42] dark:text-[#E0E0E0] transition-colors">
                 <Icon name="import" class="w-6 h-6" />
               </div>
               <div class="font-bold dark:text-[#E0E0E0] text-[#21272C] text-sm">
@@ -558,7 +557,7 @@
                 bind:checked={$recordsEnableDragDrop}
               >
                 <span class="text-sm font-medium dark:text-[#E0E0E0]">
-                  {$t("page.recordsSettings.dragMode")} (Beta)
+                  {$t("page.recordsSettings.dragMode")}
                 </span>
               </Checkbox>
 

@@ -1,4 +1,4 @@
-import {rawEvents} from "$lib/data/timeline.js";
+import { rawEvents } from "$lib/data/timeline";
 
 export const eventId2EventObj = getEventId2EventObj(rawEvents);
 

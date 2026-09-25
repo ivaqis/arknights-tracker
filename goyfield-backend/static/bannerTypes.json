@@ -1,0 +1,66 @@
+[
+    {
+        "type": "special",
+        "pullsLimit": 0,
+        "hardGuarantee": 120,
+        "softGuarantee": 80,
+        "softGuarantee5": 10,
+        "freeTenPullCountList": [
+            30
+        ]
+    },
+    {
+        "type": "new-player",
+        "pullsLimit": 40,
+        "hardGuarantee": 0,
+        "softGuarantee": 40,
+        "softGuarantee5": 10,
+        "freeTenPullCountList": []
+    },
+    {
+        "type": "standard",
+        "pullsLimit": 0,
+        "hardGuarantee": 0,
+        "softGuarantee": 80,
+        "softGuarantee5": 10,
+        "freeTenPullCountList": []
+    },
+    {
+        "type": "joint",
+        "pullsLimit": 0,
+        "hardGuarantee": 0,
+        "softGuarantee": 80,
+        "softGuarantee5": 10,
+        "freeTenPullCountList": [
+            30
+        ]
+    },
+    {
+        "type": "rerun",
+        "pullsLimit": 0,
+        "hardGuarantee": 120,
+        "softGuarantee": 80,
+        "softGuarantee5": 10,
+        "freeTenPullCountList": [
+            30,
+            60,
+            90
+        ]
+    },
+    {
+        "type": "weapon",
+        "pullsLimit": 0,
+        "hardGuarantee": 80,
+        "softGuarantee": 40,
+        "softGuarantee5": 10,
+        "freeTenPullCountList": []
+    },
+    {
+        "type": "weapon_rerun",
+        "pullsLimit": 0,
+        "hardGuarantee": 80,
+        "softGuarantee": 40,
+        "softGuarantee5": 10,
+        "freeTenPullCountList": []
+    }
+]

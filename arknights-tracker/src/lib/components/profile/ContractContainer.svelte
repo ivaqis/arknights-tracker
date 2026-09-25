@@ -19,15 +19,13 @@
     export let hasBackground = false;
     export let hideHeader = false;
     export let transparent = false;
-
-    const charactersById = Object.values(characters || {}).reduce((acc, char) => {
-        if (char && char.id) acc[char.id] = char;
-        return acc;
-    }, {});
+    export let charHrefGenerator = null;
 
     function getSvelteCharId(char) {
         if (!char) return "";
-        return char.id || char.charId || char.charData?.id || "";
+        const raw = typeof char === "string" ? char : (char.id || char.charId || char.charData?.id || "");
+        const found = characters[raw] || Object.values(characters).find(c => c.gameId === raw || c.apiId === raw || c.id === raw);
+        return found ? found.id : raw;
     }
 
     function mapProfessionToClass(key) {
@@ -42,7 +40,7 @@
 
     function getOperatorData(char) {
         const svelteId = getSvelteCharId(char);
-        const staticData = charactersById[svelteId];
+        const staticData = characters[svelteId] || Object.values(characters).find(c => c.gameId === svelteId || c.apiId === svelteId || c.id === svelteId);
         if (staticData) {
             return staticData;
         }
@@ -120,7 +118,8 @@
     }
     async function loadEquipmentNames(lang) {
         try {
-            const safeLang = (lang || "en").toLowerCase().replace("-", "");
+            const rawLang = (lang || "en").toLowerCase();
+            const safeLang = rawLang.startsWith("en") ? "en" : rawLang.replace("-", "");
             const mod = await import(`../../locales/${safeLang}/equipment.json`);
             equipmentNames = mod.default || mod;
         } catch (e) {
@@ -178,6 +177,7 @@
                         {getEquipIcon}
                         {getStaticEquipId}
                         {equipmentNames}
+                        charHref={charHrefGenerator && char ? charHrefGenerator(char) : null}
                     />
                 {/each}
             </div>

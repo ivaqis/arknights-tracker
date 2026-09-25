@@ -1,7 +1,9 @@
-<script>
-    export let styleMode = "default"; // "default" | "active" | "inactive" | "dragged"
+<script lang="ts">
+    import type { ParamBoxStyle } from "$lib/components/dataToolbarV2/paramBoxes/ParamBoxStyle";
 
-    function getClasses(styleMode) {
+    export let styleMode: ParamBoxStyle = "default";
+
+    function getClasses(styleMode: ParamBoxStyle) {
         switch (styleMode) {
             case "active":
                 return "bg-[#F9B90C]/20 border-[#F9B90C] text-gray-900 dark:text-[#E0E0E0] dark:bg-[#FFB200]/50 dark:border-[#FFB200]";

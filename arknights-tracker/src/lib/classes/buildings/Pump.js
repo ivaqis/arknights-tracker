@@ -1,7 +1,7 @@
-import {Building} from "$lib/classes/buildings/Building.js";
-import {pumps} from "$lib/data/buildings/pumps.js";
-import {PumpingFormula} from "$lib/classes/crafts/PumpingFormula.js";
-import {ResourcePoint} from "$lib/classes/items/ResourcePoint.js";
+import { Building } from "$lib/classes/buildings/Building.js";
+import { PumpingFormula } from "$lib/classes/crafts/PumpingFormula.js";
+import { ResourcePoint } from "$lib/classes/items/ResourcePoint.js";
+import { pumps } from "$lib/data/buildings/pumps";
 
 export class Pump extends Building {
     _pumpObj;

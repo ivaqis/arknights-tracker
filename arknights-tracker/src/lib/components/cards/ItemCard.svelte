@@ -1,6 +1,7 @@
 <script>
     import { t } from "$lib/i18n.js";
-    import { craftableItemsList } from "$lib/data/crafts/craftableItemsList.js";
+    import { currentUiLocale, normalizeLocale } from "$lib/stores/locale.js";
+    import { craftableItemsList } from "$lib/data/crafts/craftableItemsList";
     import { goto } from "$app/navigation";
 
     import Image from "$lib/components/Image.svelte";
@@ -79,7 +80,7 @@
             style="-webkit-text-stroke: 3px black; paint-order: stroke fill;"
         >
             {#if hideAmount === false}
-                <span class="relative z-10">{amount.toLocaleString()}</span>
+                <span class="relative z-10">{amount.toLocaleString(normalizeLocale($currentUiLocale))}</span>
             {/if}
         </div>
     </div>

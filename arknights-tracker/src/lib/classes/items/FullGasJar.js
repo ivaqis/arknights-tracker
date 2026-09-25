@@ -1,5 +1,5 @@
 import { Item } from "$lib/classes/items/Item.js";
-import { fullJars } from "$lib/data/items/fullJars.js";
+import { fullJars } from "$lib/data/items/fullJars";
 
 export class FullGasJar extends Item {
     _fullGasJarObj;

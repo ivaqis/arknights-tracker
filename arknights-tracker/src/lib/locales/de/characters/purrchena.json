@@ -1,0 +1,581 @@
+{
+  "baseInfo": {
+    "tags": [
+      "Schützen",
+      "Natur",
+      "LP-Behandlung"
+    ],
+    "behaviourHateTags": [],
+    "behaviourUnavailableTags": [
+      "Introvertiert (NUR SYSTEM, im Spiel nicht sichtbar)"
+    ],
+    "blocTag": "Talos-II Allgemeine Handelskammer (TAHK)",
+    "expertTags": [
+      "Überleben im Freien",
+      "Natürliche Hintergrundgeschichte"
+    ],
+    "giftPreferTags": [
+      "Von Reisenden in Wuling empfohlen"
+    ],
+    "hobbyTags": [
+      "Schöne Künste",
+      "Wohltätigkeit"
+    ],
+    "raceTag": "Felin"
+  },
+  "skills": {
+    "basicAttack": {
+      "name": "NACHTISCH! GREIF ZU!",
+      "description": "STANDARDANGRIFF: \nEin Angriff mit bis zu 3 Sequenzen, der <@ba.pd>Physischen SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>{poise:0}</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.pd>Physischen SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlägen, die massiven <@ba.pd>Physischen SDN</> zufügen und ein wenig FP wiederherstellen.",
+      "batkSeq1Multiplier": "STD-ANG-SEQ-1-Multiplikator",
+      "batkSeq2Multiplier": "STD-ANG-SEQ-2-Multiplikator",
+      "batkSeq3Multiplier": "STD-ANG-SEQ-3-Multiplikator",
+      "finisherAtkMultiplier": "Wuchtschlag-ANG-Multiplikator",
+      "diveAtkMultiplier": "Sturz-ANG-Multiplikator"
+    },
+    "battleSkill": {
+      "name": "ICH SCHLAFE NICHT!",
+      "description": "Purrchena hebt ihren Schild, um einen Angriff zu blockieren, und stellt sofort einige FP <#ba.return>wieder her</>. Während Purrchenas Schild erhoben ist, gewährt sie sich selbst und Operatoren in ihrer Nähe <#ba.guard>Schutz</>. Während die Kampffertigkeit aktiv ist, verlängert die erste erfolgreiche Blockierung die Wirkdauer des erhobenen Schilds und stellt zusätzliche FP <#ba.return>wieder her</>. Nach dem Wirken wird Purrchenas Kampffertigkeit vorübergehend zu <@ba.key>LASS MEINE FREUNDE IN RUHE!</> geändert.\n<@ba.key>LASS MEINE FREUNDE IN RUHE!</>: Purrchena gibt einem Ziel vor ihr eine Kopfnuss, fügt ihm <@ba.natur>Natur-SDN</> zu und belegt es mit <#ba.naturalinflict>Natur</>.\n<@ba.info>Nach jedem blockierten Angriff wird der während des erhobenen Schilds gewährte Schutz verringert.</>",
+      "protection": "Schutz",
+      "shieldUpDurationS": "Schildaktivierungsdauer (Sek.)",
+      "shieldUpDurationAfterSuccessfulBlockS": "Schildaktivierungsdauer nach erfolgreichem Blockieren (Sek.)",
+      "headbuttDmgMultiplier": "Kopfstoß-SDN-Multiplikator",
+      "headbuttStagger": "Kopfstoß-Taumeln",
+      "spReturn": "FP-Rückerstattung",
+      "additionalSpReturn": "Zusätzliche FP-Rückerstattung"
+    },
+    "comboSkill": {
+      "name": "KUCHEN ODER „GESCHENK“",
+      "description": "KOMBOAUSLÖSER: Der gesteuerte Operator wird angegriffen.\nWirft ein <@ba.key>Geschenkpaket</> auf den gesteuerten Operator. Das <@ba.key>Geschenkpaket</> öffnet sich nach einer kurzen Verzögerung, gewährt Operatoren in der Nähe <@ba.heal>LP-Behandlung</>, deckt zufällig einen der folgenden Gegenstände auf und löst den entsprechenden Effekt aus:\n<@ba.key>Bombe</>: Fügt Gegnern innerhalb des Wirkungsbereichs <@ba.pd>Physischen SDN</> und zusätzliches Taumeln zu.\n<@ba.key>Werkstück</>: Zieht kontinuierlich Gegner in der Nähe an und fügt ihnen <@ba.pd>Physischen SDN</> zu.\n<@ba.key>Leckeres Dessert</>: Gewährt dem gesteuerten Operator <@ba.heal>LP-Behandlung</>.\nDie Wirksamkeit der LP-Behandlung erhöht sich durch das Wille-Attribut.",
+      "baseTreatment": "Grundbehandlung",
+      "treatmentIncreasePerWill": "Behandlungssteigerung pro Wille",
+      "bombDmgMultiplier": "Bombe: SDN-Multiplikator",
+      "bombStagger": "Bombe: Taumeln",
+      "handicraftDmgMultiplier": "Werkstück: SDN-Multiplikator",
+      "yummyDessertBaseTreatment": "Leckeres Dessert: Grundbehandlung",
+      "yummyDessertTreatmentIncreasePerWill": "Leckeres Dessert: Behandlungssteigerung pro Wille",
+      "ultimateEnergyGain": "Ultimative-Energie-Erhalt"
+    },
+    "ultimate": {
+      "name": "FRECH WIRD GESPERRT!",
+      "description": "Purrchena öffnet 3 <@ba.key>Geschenke der Großen Felin</>. Jedes <@ba.key>Geschenk der Großen Felin</> deckt zufällig eine <@ba.key>Bombe</> oder ein <@ba.key>Werkstück</> auf.\nEs besteht außerdem die Chance, dass es sich bei dem Geschenk um einen <@ba.key>Spezialgegenstand des Botschafters</> handelt, der Gegner mit <#ba.spellvul>Technik-Empfänglichkeit</> belegt und ihnen <@ba.pd>Physischen SDN</> sowie zusätzliches Taumeln zufügt.",
+      "bombDmgMultiplier": "Bombe: SDN-Multiplikator",
+      "bombStagger": "Bombe: Taumeln",
+      "handicraftDmgMultiplier": "Werkstück: SDN-Multiplikator",
+      "ambassadorsSpecialBaseChance": "Spezialgegenstand des Botschafters: Basisrate",
+      "ambassadorsSpecialDmgMultiplier": "Spezialgegenstand des Botschafters: SDN-Multiplikator",
+      "ambassadorsSpecialStagger": "Spezialgegenstand des Botschafters: Taumeln",
+      "susceptibilityDurationS": "Dauer der Empfänglichkeit (Sek.)",
+      "susceptibility": "Empfänglichkeit"
+    },
+    "indicator": {
+      "levels": [
+        "Operator-Stärke +10.",
+        "Operator-Stärke +15.",
+        "Operator-Stärke +15.",
+        "Operator-Stärke +20."
+      ],
+      "name": "Geschmiedet"
+    },
+    "talent1": {
+      "levels": [
+        "Kampffertigkeit <@ba.key>ICH SCHLAFE NICHT!</> verbessert: Nach dem erstmaligen erfolgreichen Blocken eines gegnerischen Angriffs gewährt die Fertigkeit zusätzlich <@ba.vup>{talent_1_usp:0}</> Ultimative Energie. Die Chance, beim nächsten Einsatz der Ultimativen Fertigkeit <@ba.key>FRECH WIRD GESPERRT!</> einen <@ba.key>Spezialgegenstand des Botschafters</> zu enthüllen, steigt um <@ba.vup>{talent1_prob_up:0%}</>. Dieser Effekt kann bis zu <@ba.vup>{talent_1_stack:0}</>-mal kumuliert werden.",
+        "Kampffertigkeit <@ba.key>ICH SCHLAFE NICHT!</> verbessert: Nach dem erstmaligen erfolgreichen Blocken eines gegnerischen Angriffs gewährt die Fertigkeit zusätzlich <@ba.vup>{talent_1_usp:0}</> Ultimative Energie. Die Chance, beim nächsten Einsatz der Ultimativen Fertigkeit <@ba.key>FRECH WIRD GESPERRT!</> einen <@ba.key>Spezialgegenstand des Botschafters</> zu enthüllen, steigt um <@ba.vup>{talent1_prob_up:0%}</>. Dieser Effekt kann bis zu <@ba.vup>{talent_1_stack:0}</>-mal kumuliert werden."
+      ],
+      "name": "Die Entschuldigung kommt ZU SPÄT!"
+    },
+    "talent2": {
+      "levels": [
+        "Beim Einsatz im Kampf erleiden alle Operatoren mit max. LP im Team durch den nächsten erlittenen Treffer <@ba.vup>{dmg_down:0%}</> weniger SDN.\nDieser Effekt kann für jeden Operator nur einmal alle <@ba.vup>{cd:0}</> Sek. ausgelöst werden.",
+        "Beim Einsatz im Kampf erleiden alle Operatoren mit max. LP im Team durch den nächsten erlittenen Treffer <@ba.vup>{dmg_down:0%}</> weniger SDN.\nDieser Effekt kann für jeden Operator nur einmal alle <@ba.vup>{cd:0}</> Sek. ausgelöst werden."
+      ],
+      "name": "Pflicht des Botschafters"
+    },
+    "baseSkill1": {
+      "levels": [
+        "Dem Empfang zuweisen, um die Wahrscheinlichkeit geringfügig zu erhöhen, dass der Operator Hinweis 2: Talos-II Allgemeine Handelskammer (TAHK) sammelt (wird bei Zuweisung aktiviert; Effekte derselben Art sind nicht kumulierbar).",
+        "Dem Empfang zuweisen, um die Wahrscheinlichkeit zu erhöhen, dass der Operator Hinweis 2: Talos-II Allgemeine Handelskammer (TAHK) sammelt (wird bei Zuweisung aktiviert; Effekte derselben Art sind nicht kumulierbar)."
+      ],
+      "name": "Markenbotschafter"
+    },
+    "baseSkill2": {
+      "levels": [
+        "Herstellungskabine zuweisen, um Operator-EP-Materialproduktionseffizienz um +20 % zu erhöhen.",
+        "Herstellungskabine zuweisen, um Operator-EP-Materialproduktionseffizienz um +30 % zu erhöhen."
+      ],
+      "name": "Naschereien für die Nachbesprechung"
+    },
+    "files": {
+      "main": "DECKNAME: Purrchena\nGESCHLECHT: Weiblich\nAUTHENTIFIZIERUNG: Talos-II Allgemeine Handelskammer (TAHK)\nGEB.: 26. November\nSPEZIES: Felin\n[ORIPATHIE-INFEKTIONSSTATUS]\nOripathie-negativ, basierend auf ärztlichen Befunden.\n\n[INTEGRIERTE PHYSISCHE UNTERSUCHUNG]\nPHYSIOLOGISCHE STÄRKE: Normal\nKAMPFFERTIGKEIT: Ausgezeichnet\nTAKTISCHER SCHARFSINN: Standard\nORIGINIUM-TECHNIKEN-ASSIMILIERUNG: Standard",
+      "humanResources": "Purrchena, die Markenbotschafterin für die Katastrophenhilfe für Ætherside-Umweltauswirkungssyndrome der Talos-II Allgemeinen Handelskammer (TAHK) und derzeit bei Endfield Industries als Verbindungsfrau zwischen Endfield und der TAHK im Bereich der Linderung des Ætherside-Syndroms tätig.\n\nAls ich Purrchena das erste Mal sah, hinterließen ihr sonniges, freudiges Gemüt sowie die Tatsache, dass ihre Persönlichkeit exakt der entsprach, die ich vom Bildschirm kannte, einen tiefen Eindruck bei mir. Bei unseren Unterhaltungen konnte sie die anderen Operatoren im Raum immer zum Lachen bringen.\nEbenfalls beeindruckte mich ihr Ætherside-Syndrom. Obwohl die Katastrophenhilfe uns bereits im Voraus über ihren Zustand informiert hatte, verspürte ich doch ein Gefühl von Bewunderung, als sie mitten in unserer Unterhaltung einschlief. So sehr sie auch unter ihrer eigenen Krankheit litt, entschied sie sich doch, anderen Patienten zu helfen. Dieser altruistische Geist ist wahrlich wertvoll.\n– Martin Marvin Malen, Assistent, Personalabteilung, Endfield Industries",
+      "file1": "An Aufseherin Perlica von Endfield Industries, die Geschäfts- und Personalabteilung:\nIch hoffe, es geht Ihnen gut.\nUm die Kommunikation und die Kooperation zwischen unseren beiden Parteien auf dem Gebiet der Hilfe für Ætherside-Umweltauswirkungssyndrome weiter zu vertiefen, möchte ich Fräulein Rosalind für einen Posten in der Geschäftsabteilung unter Endfield Industries empfehlen.\nLassen Sie mich vorab die Erkrankung von Fräulein Rosalind beschreiben. Sie leidet unter einer unheilbaren Form des Ætherside-Syndroms. Das Syndrom greift ihr zentrales Nervensystem an und beschädigt es, was zu häufigen und schlagartigen narkoleptischen Anfällen führt. Ich möchte Ihnen jedoch versichern, dass die Upgrades, die wir in den letzten sechs Jahren an ihrem persönlichen Schutzgerät vorgenommen haben, in Kombination mit unserer langfristigen medizinischen Hilfe gewährleisten, dass ihre tägliche Arbeit nicht betroffen wird.\nIhre Organisation hat sicher von der Rettungsaktion gehört, an der Fräulein Rosalind vor fünf Jahren teilgenommen hat. Laut dem Abschlussbericht der Operation ließ ein plötzlich aufziehender Sturm dem Such- und Rettungsteam und den Ætherside-Syndrom-Patienten keine andere Wahl, als Unterschlupf in einer Höhle zu suchen. Da der ursprüngliche Plan gewesen war, die Patienten zu verlegen, war die Mission nur sehr spärlich mit medizinischen Vorräten ausgestattet. Zum Glück hatte Fräulein Rosalind, die mit ihren Eltern viel gereist war und Ætherside-Syndrom-Patienten selbst ohne Medikamente behandeln konnte, umfangreiche Erfahrungen mit solchen Situationen. Dank ihrer Hilfe verschlechterte sich der Zustand der Patienten nicht weiter. Laut den Nachbesprechungen der anderen Teammitglieder begab es sich, als der Sturm sich direkt über der Höhle befand, dass ein Wohnmobil, das den Eingang versperrte, nach draußen gerissen wurde. Sie schnappte sich umgehend eine Holzplanke und schottete die Lücke ab. Nachdem der Sturm weitergezogen war, machte der Name Purrchena die Runde im Zivilisationsgürtel, nachdem unsere Medien über den Vorfall berichtet hatten. Ich muss zugeben, dass die Strategie der Katastrophenhilfe, immer einen Vertreter der Patienten mit der Leitung der Hilfsarbeiten zu betrauen, sich tatsächlich als effektiv erweist. So kamen wir an viele wertvolle besondere Fälle, und die Nachfrage nach Medikamenten und medizinischer Ausrüstung durch mehrere Pharmaunternehmen stieg ebenfalls deutlich.\nAls ich sie das erste Mal traf, war ihr Blick leer von ihren langen unregelmäßigen Schlafattacken, und ihr Gesicht war eingefallen. Hätte sich der Adoptivvater von Fräulein Rosalind nicht an mich gewandt, hätte ihr Körper es angesichts ihres Zustands wohl kaum bis ins Erwachsenalter geschafft, selbst wenn das Ætherside-Syndrom sich nicht verschlimmert hätte. Aus humanitären Gründen und auch als Investition in die Zukunft boten wir ihr umfassende medizinische Versorgung sowie Bildungsförderung. So konnten wir uns ein tiefgehendes Bild ihrer professionellen Fähigkeiten machen. Meiner Meinung nach können unsere beiden Parteien durch diese von Fräulein Rosalind geschlagene Brücke eine starke Synergie im Bereich der Hilfe für Ætherside-Syndrom-Patienten erreichen.\nSollte Ihre Organisation Interesse am weiteren Ausbau der Zusammenarbeit im Bereich der Hilfe für Ætherside-Umweltauswirkungssyndrome haben, unterstützen wir gerne jederzeit die Kommunikation unserer zwei Parteien. Danke, dass Sie sich die Zeit genommen haben, diesen Brief zu lesen. Wir freuen uns auf eine in Zukunft noch engere Zusammenarbeit.\nMit freundlichen Grüßen\n– H, Vertretung der Geschäftseinheit für Ætherside-Syndrome bei Highburg Pharmaceuticals LLC, Präsident der Katastrophenhilfe für Ætherside-Umweltauswirkungssyndrome",
+      "file2": "„Sie sehen „Vor Ort unter vier Augen“. Unser Reporter ist im Ætherside-Syndrom-Behandlungszentrum im nördlichen La Fantoma angekommen und hat Kontakt mit der Markenbotschafterin der Katastrophenhilfe für Ætherside-Umweltauswirkungssyndrome aufgenommen. Gehen wir nun zur Liveschaltung. Fräulein Purrchena, hier spricht Dinah. Kannst du mich hören?“\n„Ja, hallo Dinah! Hallo alle zusammen! Ich bin Purrchena, die Markenbotschafterin der Katastrophenhilfe für Ætherside-Umweltauswirkungssyndrome.“\n„Hallo, Fräulein Purrchena. Wir machen uns alle große Sorgen wegen dieser Notfallabriegelung. Könntest du uns beschreiben, wie die Lage vor Ort aussieht? Angeblich hast du gerade Ætherside-Syndrom-Patienten besucht, als es passierte.“\n„Hm? Ich meine, jaaaaa, ich könnte … Aber bist du dir sicher, dass ich darüber sprechen soll? Schließlich sehen auch viele Kinder deine Sendung.“\n„Haha, keine Sorge! Wir sind Profis. Wenn du zu krass wirst, geben wir dir Bescheid.“\n„Gut, denn der Zustand der Patienten hier ist wirklich ernst. Einer von ihnen hat zum Beispiel unzählige Wunden am Rücken, die aussehen, als stammten sie von einem Messer. Ein Arzt berührte eine von ihnen mit einem Stück Originium, und die Wunde fing an, sich zu winden und zu verzerren.“\n„Das ist wirklich merkwürdig … und echt furchterregend. Könntest du uns mehr über das Ætherside-Umweltauswirkungssyndrom erzählen? Derzeit wissen wir kaum etwas darüber.“\n„Äh … Nun, es ist mehr oder weniger wie in den Büchern. Wenn wir tiefer in die Materie eindringen wollten, müssten selbst wir mehrere echt dicke Bücher lesen, um auch nur an der Oberfläche zu kratzen. Aber um es mit den Worten eines Forschers der Katastrophenhilfe zu sagen: Es ist weniger eine Krankheit im traditionellen Sinne, vielmehr ein einzigartiges Phänomen, das sich manifestiert, wenn der menschliche Körper Ætherside-Umgebungen ausgesetzt ist.“\n„Verstehe. Dann ist ein Ætherside-Syndrom-Patient der Grund für diese plötzliche Abriegelung, ganz wie es die öffentliche Bekanntmachung besagt?“\n„So ist es.“\n„Was genau ist vorgefallen? Angeblich ist etwas, das dem Zerfallphänomen ähnelt, bei Oripathie-positiven Patienten aufgetreten.“\n„Nein, ganz und gar nicht! Der Zerfall tritt erst nach dem Tod eines Patienten ein, das Ætherside-Syndrom jedoch nicht. Ich hatte gerade noch mit ihm gesprochen, und plötzlich war er … Zum Glück war ich gerade die einzige Person in der Isolierungsstation außer ihm. Seufz. So präzise das Überwachungssystem des Behandlungszentrums auch ist, mit dieser Situation ist es völlig überfordert.“\n„Aah … Dann ist der Verlauf des Ætherside-Syndroms also sehr schwierig vorherzusehen?“\n„Das ist das wirklich Schwierige beim Behandeln dieser Patienten. Und die Unvorhersehbarkeit variiert von Fall zu Fall. Manchmal wird der Zustand schlagartig schlechter. Manchmal verändern sich die Symptome abrupt.“\n„Die Symptome können sich verändern?“\n„Ja. Nimm mich als Beispiel. Purrchenas derzeitiges Symptom ist, dass sie jederzeit einschlafen kann. Aber wenn Purrchena ohne angemessene Schutzkleidung in enorme Tiefen vorstoßen würde, könnte es passieren, dass sie flackert wie jemand auf einem kaputten Mobilterminal-Bildschirm. Oder es könnte eine weitere Purrchena geben, sichtbar, aber immateriell, während die echte Purrchena wie schlafend daliegt und auf keine Weise geweckt werden kann. Natürlich gilt dieses Risiko nicht nur für Patienten, sondern für jede gewöhnliche Person, die in enorme Tiefen vorstößt.“\n„Eine wahrlich unvorhersehbare Krankheit. Daher muss jeder unbedingt seine Schutzkleidung anlegen, bevor er eine Umgebung enormer Tiefe betritt!“\n„Da hast du völlig recht! Wenn man, aus welchen Gründen auch immer, eine Umgebung enormer Tiefe betreten muss, dann nie ohne Schutzkleidung. Und selbstverständlich sollte man Umgebungen enormer Tiefe ohnehin meiden!“\n„Danke, dass du uns daran erinnerst, Fräulein Purrchena. Wir kommen zum Ende des Interviews. Möchtest du unserem Publikum noch etwas sagen?“\n„Ooooh, ja unbedingt. Auch wenn wir das Ætherside-Syndrom noch immer nicht heilen können: Bitte verfallt nicht in Panik. Solange ihr nicht in Kontakt mit Umgebungen enormer Tiefe kommt, besteht keinerlei Risiko zu erkranken. Und bitte behandelt die Patienten um euch herum nicht wie Monster. Das Ætherside-Syndrom ist nicht … ist nicht … ansteckend …“\n„Fräulein Purrchena? Äh … Fräulein Purrchena?“\n„… *PIEEEP*“\n„Äh … Wir haben offenbar gerade technische Schwierigkeiten. Sprechen wir also nun mit …“",
+      "file3": "…\nLa Fantoma. Ich muss wohl nicht erneut erwähnen, wie gut die Siesta Group diese freie Stadt verwaltet, und ich muss auch nicht erklären, wie viel Leben die Talos-II Allgemeine Handelskammer ihr eingehaucht hat. Aber bevor ich über die Freie Stadt La Fantoma spreche, möchte ich eine Freundin erwähnen, die ich auf dieser Reise kennenlernte und die mir eine enorme Hilfe war bei diesem Kapitel über La Fantoma.\nWie beim Besuch jeder anderen Stadt ging ich zuerst in ein Einkaufszentrum, um dort herauszufinden, wie es weitergeht in La Fantoma. Der Komplex war randvoll mit Unternehmen aus allen Ecken des Zivilisationsgürtels, und im Zentrum lag ein Freiluftmarkt mit Unmengen von Kunden und fahrenden Händlern. Ich suchte mir einen Getränkestand aus, von dem aus man die Umgebung überblicken konnte, und kaum hatte ich mich gesetzt, sah ich auch schon ein, nennen wir es „weißes Felin-Maskottchen“, das unmöglich zu übersehen war. Zuerst dachte ich, es handle sich um den kostümierten Charakter eines Ladens, aber bei genauerem Hinsehen war sie nicht daran interessiert, Kunden anzulocken. Sie stand einfach nur da und schaute in die Auslagen einer Konditorei, während die Passanten sie herzlich grüßten, als würde jeder in der Stadt sie kennen.\nUm ein Gespür für die Kultur der Stadt zu bekommen, ging ich zu ihr und grüßte sie. Erst als ich ihr wiederholt versicherte, dass ich nicht für ein Schmierblatt arbeite und versuche, Geheimnisse ans Tageslicht zu bringen, beispielsweise ob die Katastrophenhilfe für Ætherside-Umweltauswirkungssyndrome hinter den Kulissen Verträge mit Pharmaunternehmen aushandelt, verriet sie mir, wer sie war. Verzeihen Sie mir, dass ich mit den verschiedenen Vertretern und Decknamen der Unternehmen, Stiftungen und Verwaltungsapparate der TAHK nicht vertraut bin. Erst als wir uns bereits voneinander verabschiedet hatten, erfuhr ich, was genau hinter dem Namen Purrchena steckt. Als sie hörte, dass ich vor Ort war, um den Alltag in La Fantoma zu skizzieren und einen Reiseführer zu schreiben, hüpfte sie freudig auf und ab, und übernahm kurzerhand die Rolle meiner Fremdenführerin. Die Essenstipps später in diesem Kapitel wurden allesamt unter Anleitung von Fräulein Purrchena erstellt. Vielleicht waren es ihre lebhaften und hochmotivierten Erklärungen, insbesondere wenn sie urplötzlich mitten im Satz einschlief und wieder aufwachte, sich am Kopf kratzte und sich entschuldigte, bevor sie weitersprach, die selbst Orte wie das TAHK-Hauptquartier interessant erscheinen ließen.\n…\nAls ich sie fragte, was sie von La Fantoma und den anderen Freistädten hält, lächelte sie nur, und sie sagte, sie würde mich an einen tollen Ort bringen. Dann führte sie mich weg von den geschäftigen Straßen, hinaus an den Strand. Bald schon wurden wir von den Menschenmassen getrennt, aber es dauerte nicht lange, bis ich sie wiederfand, indem ich den Leuten folgte, die sich langsam um sie scharten. Sie saß im Sand und wippte im Takt der Musik; hin und wieder änderte sich der Ausdruck auf ihrem elektronischen Gesichtsbildschirm, was die Kinder erschreckte, die an ihr herumkletterten und mit ihr spielten. Obwohl ich noch ein Stück entfernt war, hörte ich das Lachen durch die Musik dringen. Die anderen um sie herum zogen entweder ihre Kameras hervor, um Fotos zu machen, oder tanzten gemeinsam mit den Kindern zur Musik. Sie war von Freude und Gelächter umgeben. Nachdem die Menge sich aufgelöst hatte und die Kinder sich auf Drängen ihrer Eltern widerwillig von ihr verabschiedeten, konnte ich mich ihr endlich nähern. Ich sah, dass sie wieder eingeschlafen war, aber sie bewegte noch immer sanft ihren Kopf im Takt. Ich setzte mich neben sie und lauschte ihren leisen Atemzügen. Sie hatte vermutlich einen wunderschönen Traum.\n– Vorwort des Kapitels „La Fantoma“ des Buches „Talos-II: Unter unseren Füßen“, begleitet von einem Foto, auf dem Purrchena mit Kindern spielt.",
+      "file4": "2. November, Jahr 145, wolkenloser Himmel. Heute fuhr Mama das Wohnmobil an einen Ort, an dem viele andere Wohnmobile standen. Die Onkel und Tanten dort halfen Mama dabei, unser Wohnmobil aufzurüsten, und jetzt ist es so groß und gemütlich, dass es sich sogar toll anfühlt, auf dem Boden zu schlafen. Ich muss jetzt nicht mehr befürchten, mich zu verletzen, wenn ich plötzlich umfalle. Die Onkel und Tanten gaben mir auch einen echt superleckeren Snack. Ich glaube er heißt „exotischer Trockenflössler“. Ha, wenn ich mal groß bin, dann kaufe ich so viel exotischen Trockenflössler, dass gar nicht alles in unser Wohnmobil passt.\n…\n7. Mai, Jahr 146, Schneefall endet, Himmel klart auf. Mama und ein paar Onkel und Tanten fuhren in einer Karawane aus Wohnmobilen zu einer Stadt hoch in den verschneiten Bergen. Nur gut, dass es im Wohnmobil so schön warm war. Mama und mir war überhaupt nicht kalt. Ha, soll Papa doch alleine dort draußen nach Schätzen suchen. Dieses Mal fand er einen Maschinenknochen. Er sagte, dass ich mit den anderen Kindern spielen gehen kann, sobald er ihn repariert hat!\n…\n23. Juni, Jahr 146, erst bewölkt, dann Regen. Der Maschinenknochen mag den Regen wohl nicht. Er stand einfach nur da im Regen und bewegte sich nicht mehr. Zum Glück hatten die anderen Kinder Regenschirme dabei, und sie warteten mit mir im Regen, bis Mama und Papa kamen. Aber ich kann mich nicht erinnern, was dann passierte. Ich glaube, ich hatte einen Traum. Ich träumte, auf einer fliegenden Monsterbestie zu reiten; wir besuchten so viele Orte. Als ich aufwachte, hielt meine Mama mich, und aus irgendeinem Grund weinte sie. Papa gab offenbar dem Maschinenknochen die Schuld. Ich versuchte Mama zu trösten, aber sie weinte nur noch mehr. Ich hasse es, wenn ich einschlafe …\n…\n16. Juli, Jahr 146, wolkenloser Himmel Wir sind wieder an dem Ort, an dem sie Filme machen. Hier gibt es so viele wunderschöne Klamotten. Das ist mein Lieblingsort. Ich hatte gerade den Onkeln und Tanten geholfen, die Kisten aus dem Wohnmobil zu tragen, als Papa mit einem sehr schick gekleideten Onkel kam. Onkel war nicht so geschickt wie ich. Obwohl unser Wohnmobil so groß ist, dass man ganz Talos-II einpacken könnte, musste er sich darin dennoch vorsichtig und langsam bewegen. Mama war heute ebenfalls sehr glücklich. Sie servierte eine Menge von dem guten Essen, das wir normalerweise für Geburtstage aufsparen.\n…\n20. August, Jahr 146, bewölkt. Das Wohnmobil war nicht wie das von Mama. Es war sehr sauber in ihm, und es war sehr eng und kalt wegen all der Metallkisten. Außerdem waren da viele Onkel und Tanten in weißen Mänteln. Sie alle lächelten mich an, aber ich fühlte mich ganz und gar nicht glücklich. Der Onkel gab mir ein merkwürdiges kleines Kästchen. Ich hörte Mamas und Papas Stimme aus ihm kommen, aber als ich das Kästchen zerlegt hatte, waren sie nirgendwo zu finden.\n…\n18. Dezember, Jahr 146, wolkenloser Himmel Heute habe ich zum ersten Mal an einer Rettungsmission teilgenommen. Ich kannte alle meine Teamkameraden bereits. Es war wirklich eng im Wohnmobil, aber alle plauderten und lachten. Eine echt tolle Atmosphäre! Aber ein paar der Direktoren der Katastrophenhilfe hielten es zu gefährlich für mich, an einen solchen Ort zu gehen. Sie sagten, dass ich nicht mehr auf derart heikle Rettungsmissionen mitdarf. Ich bin so wütend! Die Mission lief perfekt, und es war nicht meine Schuld, dass der Sturm plötzlich zurückgekommen ist. Immerhin durfte ich nach dem Einsatz Mama und Papa sehen. Ich half Mama sogar dabei, die Patienten zur Behandlung in die nächstgelegene Stadt zu bringen. Wann habe ich die beiden denn eigentlich das letzte Mal gesehen?\n…\n7. November, Jahr 151, wolkenloser Himmel. Morgen erreichen wir unser Ziel. Die Zeit vergeht wie im Flug. Es kommt mir vor wie gestern, dass ich das Antwortschreiben von Endfield Industries erhalten habe. Wie der Endministrator wohl aussieht? Wirklich so wie es in den Büchern steht? Seuuuuufz, langweilig! Das Wohnmobil ist völlig leer. Nichts mehr drin. Oh, und heute bin ich Mama und Papa begegnet. Sie haben Vorräte von La Fantoma nach Tal IV gefahren. Wir haben ein gemeinsames Foto gemacht, damit sie mich immer sehen können und ich ihnen nicht zu sehr fehle. Aber obwohl Mamas Wohnwagen noch genauso aussieht wie in meiner Kindheit, kommt es mir doch vor, als hätte sich etwas verändert."
+    },
+    "tags": {
+      "expert1": {
+        "name": "Überleben im Freien",
+        "description": "Überleben im Freien: Plüschanzug\nDu hast keine Ahnung, welche Geräte sie in ihrem Plüschanzug versteckt hat. Und du würdest es nicht erfahren, wenn sie sich irgendwo eingeigelt hat und an einem Leckerbissen knabbert."
+      },
+      "expert2": {
+        "name": "Natürliche Hintergrundgeschichte",
+        "description": "Natürliche Hintergrundgeschichte: Verschlafene Jahrgangsbeste\nIhre Klassenkameraden sind verwirrt. Sie ist während der Vorträge und Kurse ständig eingenickt und trotzdem kann niemand sie in den Prüfungen schlagen."
+      },
+      "hobby1": {
+        "name": "Schöne Künste",
+        "description": "Schöne Künste: Dessert-Atelier\nNiemand kennt Desserts besser als sie. Eindeutig handelt es sich hierbei nicht um eine Übertreibung."
+      },
+      "hobby2": {
+        "name": "Wohltätigkeit",
+        "description": "Wohltätigkeit: Beste Botschafterin\n„Botschafterin? Oh, es geht um Purrchena. Sie hat uns wirklich geholfen. Sieh mal. Wir haben all diese Knabbereien vorbereitet, um uns bei ihr zu bedanken!“"
+      }
+    },
+    "voiceLines": [
+      {
+        "voId": "chr_0038_purrche_chrbark_squad_01",
+        "title": "Einsatzvorbereitung 1",
+        "text": "Jetzt bin ich dran mit … „Miau-si!“ …Argh, warum schlafe ich denn schon wieder?!"
+      },
+      {
+        "voId": "chr_0038_purrche_chrbark_squad_02",
+        "title": "Einsatzvorbereitung 2",
+        "text": "Nnn … Gah! Geht die Mission schon los?"
+      },
+      {
+        "voId": "chr_0038_purrche_chrbark_join_01",
+        "title": "Wird zum Team hinzugefügt 1",
+        "text": "Wer ist hier müde? Ich nicht!"
+      },
+      {
+        "voId": "chr_0038_purrche_chrbark_join_02",
+        "title": "Wird zum Team hinzugefügt 2",
+        "text": "Ich hab meine Marshmallows und meinen exotischen Trockenflössler … Gut, kann losgehen!"
+      },
+      {
+        "voId": "chr_0038_purrche_chrbark_weap_01",
+        "title": "Waffe wird gewechselt",
+        "text": "Oh, guter Griff! Wenn ich das Ding als Snack-Spieß verwende, bleibt mein flauschiger Anzug wunderschön sauber!"
+      },
+      {
+        "voId": "chr_0038_purrche_chrbark_gear_01",
+        "title": "Ausrüstung wird gewechselt",
+        "text": "Woah, das passt tatsächlich zu meinem Anzug … „Exotische Trockenflössler! LECKERSCHMECKER!“ …Moment, was ist hier los? Ich schlafe noch gar nicht!"
+      },
+      {
+        "voId": "chr_0038_purrche_chrup_skill_01",
+        "title": "Talentknoten-Aktivierung",
+        "text": "Mhm … KEUCH! Ich hab’s! Die Lösung für das Pathologie-Experiment lautet … Moment, was? Wohin ist die Idee entschwunden?!"
+      },
+      {
+        "voId": "chr_0038_purrche_chrup_level_01",
+        "title": "Kampfaufzeichnungen ansehen",
+        "text": "Bei der TAHK habe ich so etwas nicht gelernt. Wow … Ich wusste gar nicht, dass du so etwas kannst!"
+      },
+      {
+        "voId": "chr_0038_purrche_chrup_promt01_01",
+        "title": "Operator-Beförderung 1",
+        "text": "Ohhh, eine Beförderung! In der Katastrophenhilfe hat so etwas immer eins bedeutet: tonnenweise Gebäck … Was? Wir feiern hier nicht mit Kuchen?"
+      },
+      {
+        "voId": "chr_0038_purrche_chrup_promt02_01",
+        "title": "Operator-Beförderung 2",
+        "text": "Ernsthaft? Ja! Ich kann kaum erwarten, Mama und Papa und den anderen zu Hause davon zu erzählen. Sie werden sich so … so … so sehr für mich freuen … „Und tschüss!“"
+      },
+      {
+        "voId": "chr_0038_purrche_chrup_promt03_01",
+        "title": "Operator-Beförderung 3",
+        "text": "Schon wieder befördert?! Wenn ich träume, dann weckt mich bitte nicht auf! Ich werde dafür sorgen, dass niemandem etwas zustößt. Überlass das ruhig mir!"
+      },
+      {
+        "voId": "chr_0038_purrche_chrup_promt04_01",
+        "title": "Operator-Beförderung 4",
+        "text": "Manchmal überlege ich, wie mein Leben wohl aussehen würde, wenn ich nie mit der Katastrophenhilfe nach La Fantoma aufgebrochen wäre … Hmpf. Egal wo ich gelandet wäre, ich wäre immer noch ich, und ich würde immer noch helfen!"
+      },
+      {
+        "voId": "chr_0038_purrche_introduce_01",
+        "title": "Operator meldet sich zum Dienst",
+        "text": "Hallo Endmin! Ich bin die Markenbotschafterin der Katastrophenhilfe für Ætherside-Umweltauswirkungssyndrome, Purrchena! Mein Traum ist es … zu sein wie d… „Markenbotschafterin der Katastrophenhilfe für Ætherside-Umweltauswirkungssyndrome, Purrchena!“ … *Huch* Nein, nein, nein, ich bin wieder weggedöst!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_switch_01",
+        "title": "Warten 1",
+        "text": "Hi Endmin! Ich bin hellwach!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_switch_02",
+        "title": "Warten 2",
+        "text": "Schau dir meine Snacks an! Willst du welche, Endmin?"
+      },
+      {
+        "voId": "chr_0038_purrche_sim_assign_work_01",
+        "title": "Zuweisung zur Anlage",
+        "text": "Keine Sorge, wenn ich plötzlich wegnicke. Mein Anzug hat einen echt smarten Autopiloten!"
+      },
+      {
+        "voId": "chr_0038_purrche_sim_hello_lower_01",
+        "title": "Gruß 1",
+        "text": "Huhu, Endmin! Wie wär’s mit einem Happen exotischer Trockenflössler?"
+      },
+      {
+        "voId": "chr_0038_purrche_sim_hello_max_01",
+        "title": "Gruß 2",
+        "text": "„Und tschüss!“ … Hm? Oh, Endmin! Hallöchen!"
+      },
+      {
+        "voId": "chr_0038_purrche_sim_talk_lv01_01",
+        "title": "Dijiang-Geplauder 1",
+        "text": "Woah, auf der Dijiang ist es ganz anders als daheim! Man sieht ganz Talos-II und hat tolle Geräte, die ich noch gar nicht kenne! Von so etwas hatte ich bisher nur gelesen! Das ist so cool!"
+      },
+      {
+        "voId": "chr_0038_purrche_sim_talk_lv02_01",
+        "title": "Dijiang-Geplauder 2",
+        "text": "Hi Endmin! Was? Das Kantinenpersonal meinte, ich sei zu bescheiden? Wirklich?! Ich wollte nicht zu gierig aussehen. MOMENT! Das ist eine All-you-can-eat-Snackbar?! JUUHUU! Snackbar! Ich komme!"
+      },
+      {
+        "voId": "chr_0038_purrche_sim_talk_lv02_02",
+        "title": "Dijiang-Geplauder 3",
+        "text": "Endmin, ich bin wieder zurück von meinen Krankenbesuchen! Ich habe den Kindern Geschichten über Endfield vorgelesen, und sie waren BEGEISTERT! Was für Geschichten? Also, sie handeln von … von … „Exotische Trockenflössler! LECKERSCHMECKER!“ „Ich LIEBE exotische Trockenflössler.“"
+      },
+      {
+        "voId": "chr_0038_purrche_sim_talk_max_01",
+        "title": "Dijiang-Geplauder 4",
+        "text": "Endmin! Diesen Marshmallow habe ich selbst gebraten! Warum er angekokelt ist? Oh, haha, ja, ich glaube ich bin versehentlich am Feuer eingedöst …"
+      },
+      {
+        "voId": "chr_0038_purrche_sim_talk_max_02",
+        "title": "Dijiang-Geplauder 5",
+        "text": "Nnn … So müde … Mich mit diesen sturen Monsterbestien herumzuschlagen, war ein echtes Training. Oh? Warum ich da alleine hineingegangen bin? Nun, Patienten mit dem Ætherside-Syndrom zu helfen ist nun mal mein Ding! Hehe!"
+      },
+      {
+        "voId": "chr_0038_purrche_sim_talk_max_03",
+        "title": "Dijiang-Geplauder 6",
+        "text": "Warum ich Snacks so sehr liebe? Weil snacken so entspannend für mich ist … Als würde ich auf den Wolken schweben … „Grüße! Ich bin Purrchena!“"
+      },
+      {
+        "voId": "chr_0038_purrche_sim_gift_give_01",
+        "title": "Geschenke anbieten",
+        "text": "Ta-da! Dieses Geschenk habe ich persönlich ausgesucht, also ist es garantiert lecker! Vertrau mir, Endmin! Einen besseren Snack-Experten als mich findest du nirgendwo! Ich kenne alle Geheimnisse der Snack-Welt!"
+      },
+      {
+        "voId": "chr_0038_purrche_sim_gift_recv_01",
+        "title": "Geschenke annehmen",
+        "text": "Oh, vielen, vielen Dank, Endmin … *huch*, fast wäre ich wieder eingeschlafen! Puh … Zum Glück ist es mir nicht runtergefallen."
+      },
+      {
+        "voId": "chr_0038_purrche_mono_self_line01",
+        "title": "Vertrauensgespräch 1",
+        "text": "Bei meinem Studium in La Fantoma haben meine Bücher viele Errungenschaften von Endfield beschrieben. So habe ich auch erfahren, dass Endfield sich für die Bekämpfung von Æther-Krankheiten einsetzt. Der Æther um Talos-II kann zu seltenen Erkrankungen führen. Ich möchte wirklich meinen Teil dazu beitragen, anderen Opfern zu helfen. Meine Freunde bei der Katastrophenhilfe haben mir ein blendendes Empfehlungsschreiben geschrieben, und so bin ich hierher gekommen!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_self_line02",
+        "title": "Vertrauensgespräch 2",
+        "text": "Hallo! Ein Artikel hat die „Markenbotschafterin der Katastrophenhilfe für Ætherside-Umweltauswirkungssyndrome“ erwähnt? Oh, ja, das war ich, aber der Text übertreibt maßlos … Ich bin nicht mit einem Opfer auf dem Rücken über Berge gewandert. Mama und ich haben ihn einfach in unserem Wohnmobil ins Krankenhaus mitgenommen. Warum meine Eltern keine Feline sind? Gute Frage. Vermutlich weil meine Großeltern keine Feline waren."
+      },
+      {
+        "voId": "chr_0038_purrche_mono_self_line03",
+        "title": "Vertrauensgespräch 3",
+        "text": "Mein lustiger Anzug? Mein Papa hat mir den ersten gemacht, als ich noch klein war. Er hat ein weggeworfenes Exoskelett repariert und es mit Plüsch umhüllt, damit mir nichts passiert, wenn ich versehentlich wegdöse. Der alte Anzug war ziemlich schrottig, aber ich habe ihn noch immer in meiner Wohnung in La Fantoma! Der, den ich gerade trage? Ähem. Der ist das allerneuste Modell! Die Ingenieure der Katastrophenhilfe spendieren mir immer tolle Upgrades. Ich habe tonnenweise schicke Technologie in diesem Ding!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_self_line04",
+        "title": "Vertrauensgespräch 4",
+        "text": "Einmal bin ich in einer wichtigen Prüfung weggedöst. Als ich aufgewacht bin, herrschte heilloses Chaos. Der Proktor und die anderen Prüflinge riefen um Hilfe! Sie wussten nur, dass ich unter einem seltenen Syndrom litt, und dachten, ich sei im Koma. Dann sind sie in Panik geraten, als sie meinen Anzug nicht aufbekamen. Der arme Proktor ist sogar hingefallen und hat sich verletzt … Wie ich mich in der Prüfung geschlagen habe? Nun, ich hab meine halbfertige Arbeit abgegeben, damit ich den Proktor ins Krankenzimmer der Schule bringen konnte. Ich hätte als Klassenbeste bestehen können."
+      },
+      {
+        "voId": "chr_0038_purrche_mono_self_line05",
+        "title": "Vertrauensgespräch 5",
+        "text": "Mama hat mich aus der Wildnis geholt, als sie Vorräte in ihrem Wohnmobil ausgeliefert hat … Wir haben oft Zeit damit verbracht, Sterne zu zählen und Spiele zu spielen. Nachdem die Katastrophenhilfe mein seltenes Syndrom diagnostiziert hatte, brachten Mama und Papa mich nach La Fantoma, damit ich dort behandelt werde, während ich der Stiftung als Maskottchen gedient habe. Schon bald hab ich dann erfahren, dass ich nicht die einzige bin, die am Ætherside-Syndrom leidet. Hehe. Ich bin so froh, anderen wie mir helfen zu können!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_chat_line01",
+        "title": "Geplauder 1",
+        "text": "Nichts geht über exotischen Trockenflössler, aber das Finyaki in Neo Tsukushi ist auch der Hammer. Bei einer Reise der Katastrophenhilfe habe ich ein paar Syndrom-Patienten in der Stadt besucht. Alle haben mir gesagt, dass man in Neo Tsukushi das authentischste Finyaki findet. Sie hatten recht, aber jetzt schmeckt jedes Finyaki, das nicht aus Tsukushi stammt, irgendwie falsch. Ich möchte unbedingt wieder dorthin … Mmm, nun gut, dann bleibe ich wohl fürs Erste bei meinem exotischen Trockenflössler!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_chat_line02",
+        "title": "Geplauder 2",
+        "text": "Ein Plüsch-Bot? NÄÄÄH! Bots wie mich gibt es auf Talos-II nicht! Und selbst wenn, würden sie nicht aussehen wie ich! Endmin, bist du auf diese Gerüchte reingefallen? Meine elektronischen Geräusche! Die sind definitiv NICHT synthetisiert! Ich hab sie nur im Voraus aufgezeichnet, damit die Leute es mitbekommen, wenn ich wegdöse. Hier! Ich spiel dir ein paar vor … „Hallo!“ „Und tschüss!“ „Exotische Trockenflössler! LECKERSCHMECKER!“ „Sind da Snacks hinter der Endmin-Maske versteckt?“ Argh! Halt! Diese Zeile wollte ich gar nicht aufnehmen!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_chat_line03",
+        "title": "Geplauder 3",
+        "text": "Wie ich meine Medikamente einnehme? Papa hat diesen Anzug mit einer zeitgesteuerten Ausgabe versehen, und die TAHK hat die Technologie verfeinert. Wie ich esse und mich putze? Hmm … Techniker der Katastrophenhilfe haben ein Säuberungssystem installiert, das alle Krümel beseitigt, die ich versehentlich fallen lasse! Wenn ich essen will, mache ich einfach das: Aaaaah … MJAM … KYAAAH!! HU-HU-HUUUU …! *gluck* *gluck* Puuuuh. Ich lebe noch! Gerettet von kühlem Wasser … Das war so scharf, dass ich fast gestorben wäre … Puh. So läuft das also, Endmin."
+      },
+      {
+        "voId": "chr_0038_purrche_mono_chat_line04",
+        "title": "Geplauder 4",
+        "text": "Wie ich aussehe? Purrchena sieht aus wie Purrchena, fluffig-wuschelig … Wie ich unter dem Anzug aussehe? Oho, da interessiert sich wohl jemand für meine Geheimnisse! *räusper*! Purrchena besteht aus Zuckerwatte! Nein, war nur Spaß. Ich bin eigentlich nur … Ich fühle mich … ein wenig … „Exotische Trockenflössler! GREIF ZU!“"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_chat_line05",
+        "title": "Geplauder 5",
+        "text": "Natürlich, aber klar! Mein Outfit ist voll der Hit! Alle, von den Mitarbeitern der Katastrophenhilfe über die Freunde, denen ich geholfen habe, bis zu den Endfieldern, die mir geholfen haben, LIEEEBEN es, mich zu umarmen. Besonders an kalten Tagen. Alle erzählen mir dasselbe: „Du bist so weich und warm, Purrchena! Als würde man ein kleines Stückchen der Sonne knuddeln!“"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_about_line01",
+        "title": "Thema: Ætherside-Syndrom",
+        "text": "Früher habe ich alle möglichen Orte besucht, um meine bedürftigen Mitpatienten zu besuchen. Einige haben unter derselben Krankheit wie ich gelitten, aber es gab auch welche … Nun, die Chirurgen der Katastrophenhilfe sagten mir, dass sie ihnen mit unserer derzeitigen medizinischen Technologie nicht helfen können. Ich weiß noch, wie ich mit dem Team eine Pflegestelle für das Ætherside-Syndrom besucht habe und … *seufz* Mir wurde klar, welches Glück ich habe, diesen Anzug zu besitzen. Dank ihm stehe ich auf meinen Beinen und liege nicht in einem Krankenbett. Ich hoffe nur, dass ich für die anderen Patienten etwas bewegen konnte."
+      },
+      {
+        "voId": "chr_0038_purrche_mono_about_line02",
+        "title": "Thema: La Fantoma",
+        "text": "Die Bewohner von La Fantoma sind richtig herzlich! Wie dort ist es nirgendwo sonst. Da sind keine Wüsten, keine Landbrecher-Straßenblockaden … Einfach nur gewaltige Parks, das Meer und lebhafte Musikfeste! Natürlich mag ich die Snacks von La Fantoma am liebsten. Außerdem konnte ich die Oripathie-Positiven kaum von den anderen unterscheiden … *seufz*. Wenn wir das Ætherside-Syndrom doch nur so unter Kontrolle bringen könnten wie Oripathie."
+      },
+      {
+        "voId": "chr_0038_purrche_mono_about_line03",
+        "title": "Thema: Wohnmobil",
+        "text": "Als ich noch klein war, kam mir das Wohnmobil einfach gigantisch vor. Mama ist damit mit Papa und mir um die Welt gefahren. Ich habe schneebedeckte Berge, Wüsten, Wälder und riesige Seen gesehen. Ich war jung, aber ich war stark und habe den Leuten geholfen, tonnenweise Ladung von unserem Wohnmobil zu heben und hinaufzuhieven. Sie mochten mich sehr und gaben mir jede Menge Süßigkeiten. Ich dachte, selbst alle Snacks der Welt könnten das Wohnmobil meiner Mama nie ganz füllen … Aber heute kommt es mir kleiner vor."
+      },
+      {
+        "voId": "chr_0038_purrche_mono_about_line04",
+        "title": "Thema: Der Knochenbrecher-Klan",
+        "text": "Endmin, ich verstehe das einfach nicht! Warum setzen die Landbrecher sich freiwillig dem Æther aus …? Das ist verrückt … Und ihre Verwirrung ist ein klassisches Symptom des Ætherside-Syndroms. Warum tun sie sich das an? Warum werden sie absichtlich krank? Krank mit genau dem, was wir mit allen Mitteln bekämpfen? Was? War ich zu ernst? Nein, es ist nur … Uff. Es macht mich so wütend! Superwütend!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_about_line05",
+        "title": "Thema: Exotischer Trockenflössler!",
+        "text": "Exotischer Trockenflössler, mjam, mjam … Süß … würzig … sauer … E-Endmin? Ich … Ich schlafe im Moment tief und fest, nur damit du’s weißt. Zzz … „Exotische Trockenflössler! LECKERSCHMECKER!“"
+      },
+      {
+        "voId": "chr_0038_purrche_explore_point_common_01",
+        "title": "Ressource/Sammelobjekt entdeckt 1",
+        "text": "Oh! Dort drüben funkelt etwas! Bitte sag, dass das was Leckeres ist!"
+      },
+      {
+        "voId": "chr_0038_purrche_explore_point_valub_01",
+        "title": "Ressource/Sammelobjekt entdeckt 2",
+        "text": "Ooh, schau mal! Hehe, was da wohl drin ist? Was meinst du?"
+      },
+      {
+        "voId": "chr_0038_purrche_explore_find_locked_01",
+        "title": "Unerforschter Bereich entdeckt",
+        "text": "Hm? Funkelt da drüben etwas?"
+      },
+      {
+        "voId": "chr_0038_purrche_explore_find_danger_01",
+        "title": "Starker Gegner entdeckt",
+        "text": "Ieks, das sieht ja echt fies aus … Aber ich werde alle beschützen!"
+      },
+      {
+        "voId": "chr_0038_purrche_interact_mine_valub_01",
+        "title": "Abbau 1",
+        "text": "Mein Plüschtieranzug ist tougher als er aussieht!"
+      },
+      {
+        "voId": "chr_0038_purrche_interact_mine_valub_echo2_01",
+        "title": "Abbau 2",
+        "text": "Lass mich helfen! Mein Anzug hat unendliche Ma… Macht … „Und tschüss!“"
+      },
+      {
+        "voId": "chr_0038_purrche_interact_treasure_valub_01",
+        "title": "Kiste öffnen",
+        "text": "Ooh, welch ein Fund …! Da könnten Snacks drin sein."
+      },
+      {
+        "voId": "chr_0038_purrche_interact_etherium_01",
+        "title": "Aurylen erhalten",
+        "text": "Ich habe in „Umweltwissenschaft von Talos-II“ über Aurylene gelesen … Aah, sieh es dir an, so funkelnd und hübsch! Genau wie auf den Bildern, hehe."
+      },
+      {
+        "voId": "chr_0038_purrche_interact_blight_break_01",
+        "title": "Eliminierung der Verderbnis",
+        "text": "So … Die Leute und Monsterbestien sind jetzt sicher."
+      },
+      {
+        "voId": "chr_0038_purrche_interact_rest_01",
+        "title": "Ausruhen",
+        "text": "Ich hab noch Energie! Genau gesagt bin ich hochmotiviert …"
+      },
+      {
+        "voId": "chr_0038_purrche_combat_suppuse_using_01",
+        "title": "Taktische Nutzung 1",
+        "text": "Nimm das! Bleib bei mir!"
+      },
+      {
+        "voId": "chr_0038_purrche_combat_suppuse_getheal_01",
+        "title": "Taktische Nutzung 2",
+        "text": "Zurück ins Leben!"
+      },
+      {
+        "voId": "chr_0038_purrche_combat_remind_danger_01",
+        "title": "Gefahrenwarnung",
+        "text": "Gefahr! Hinter mich, los!"
+      },
+      {
+        "voId": "chr_0038_purrche_combat_hurt_lowhp_01",
+        "title": "Verletzt",
+        "text": "Uff … Das kommt mir langsam vor wie ein Traum …"
+      },
+      {
+        "voId": "chr_0038_purrche_combat_dead_01",
+        "title": "0 LP",
+        "text": "Tut mir leid … Bin so müde …"
+      },
+      {
+        "voId": "chr_0038_purrche_combat_remind_praise_01",
+        "title": "Teammotivation 1",
+        "text": "Super! Gut dass ich das nicht verschlafen habe!"
+      },
+      {
+        "voId": "chr_0038_purrche_combat_remind_praise_02",
+        "title": "Teammotivation 2",
+        "text": "Wir sind das Dream Team!"
+      },
+      {
+        "voId": "chr_0038_purrche_combat_remind_praise_echo2_01",
+        "title": "Motivationsreaktion 1",
+        "text": "Hehe, du bringst mich in Verlegenheit."
+      },
+      {
+        "voId": "chr_0038_purrche_combat_remind_praise_echo2_02",
+        "title": "Motivationsreaktion 2",
+        "text": "Der exotische Trockenflössler geht auf mich!"
+      },
+      {
+        "voId": "chr_0038_purrche_combat_intobattle_01",
+        "title": "Kampf beginnt 1",
+        "text": "Hinter mich, Leute!"
+      },
+      {
+        "voId": "chr_0038_purrche_combat_intobattle_echo2_01",
+        "title": "Kampf beginnt 2",
+        "text": "Solange ich noch stehe, geschieht niemandem ein Unheil!"
+      },
+      {
+        "voId": "chr_0038_purrche_combat_outbattle_nor_01",
+        "title": "Kampfsieg 1",
+        "text": "Geht es allen gut?"
+      },
+      {
+        "voId": "chr_0038_purrche_combat_outbattle_nor_02",
+        "title": "Kampfsieg 2",
+        "text": "Legt euch nicht mit dieser Markenbotschafterin an … „LECKERSCHMECKER!“"
+      },
+      {
+        "voId": "chr_0038_purrche_combat_outbattle_nor_echo2_01",
+        "title": "Kampfsieg 3",
+        "text": "*wuhu* … Reife Leistung, Leute! Zeit für einen Snack!"
+      },
+      {
+        "voId": "chr_0038_purrche_combat_outbattle_hard_01",
+        "title": "Kampfsieg 4",
+        "text": "Das war heftig … Geht’s allen gut? Gut, dann werd ich einfach … „Exotische Trockenflössler! GREIF ZU!“"
+      },
+      {
+        "voId": "chr_0038_purrche_combat_battle_defeat_01",
+        "title": "Niederlage im Kampf",
+        "text": "Es liegt an mir … Ich habe nicht alles gegeben und konnte nicht alle beschützen. Nächstes Mal werde ich … Nein. So weit lasse ich es nie mehr kommen."
+      },
+      {
+        "voId": "chr_0038_purrche_mono_attack_last_01",
+        "title": "Abschlussangriff 1",
+        "text": "Verzieh dich endlich!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_attack_last_02",
+        "title": "Abschlussangriff 2",
+        "text": "Du kommst nicht vorbei!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_skill_nor_01",
+        "title": "Kampffertigkeit 1",
+        "text": "Ich bin total wach!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_skill_nor_02",
+        "title": "Kampffertigkeit 2",
+        "text": "YA-HAY! „Feindkontakt“"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_skill_nor_03",
+        "title": "Kampffertigkeit 3",
+        "text": "Wage es nicht!"
+      },
+      {
+        "voId": "chr_0038_purrche_combat_skill_comb_ready_01",
+        "title": "Kombofertigkeit bereit 1",
+        "text": "Purrchena ist einsatzbereit!"
+      },
+      {
+        "voId": "chr_0038_purrche_combat_skill_comb_ready_02",
+        "title": "Kombofertigkeit bereit 2",
+        "text": "LOS JETZT, exotischer Trockenflössler!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_skill_comb_release_01",
+        "title": "Kombo wirken 1",
+        "text": "Ich bin dabei!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_skill_comb_release_02",
+        "title": "Kombo wirken 2",
+        "text": "Niemand schikaniert meine Freunde!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_attack_extra_01",
+        "title": "Wuchtschlag 1",
+        "text": "Hasta la vista!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_attack_extra_02",
+        "title": "Wuchtschlag 2",
+        "text": "Hier wird nicht gedöst!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_skill_ultimate_01",
+        "title": "Ultimative Fertigkeit 1",
+        "text": "Haha! Die Entschuldigung kommt ZU SPÄT!"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_skill_ultimate_02",
+        "title": "Ultimative Fertigkeit 2",
+        "text": "Hmpf! Brutalo! „Und tschüss!“"
+      },
+      {
+        "voId": "chr_0038_purrche_mono_skill_ultimate_03",
+        "title": "Ultimative Fertigkeit 3",
+        "text": "Dafür hast du einen Snack verdient!"
+      }
+    ]
+  },
+  "potentials": {
+    "potential1": {
+      "description": "Ultimative Fertigkeit <@ba.key>FRECH WIRD GESPERRT!</> verbessert: Die allgemeine Chance auf einen <@ba.key>Spezialgegenstand des Botschafters</> erhöht sich auf das <@ba.vup>{prob:0.0}</>-Fache des Ursprungswertes.",
+      "name": "Warm wie die Sonne"
+    },
+    "potential2": {
+      "description": "VERT <@ba.vup>+{Def:0}</>, Wille <@ba.vup>+{Will:0}</>.",
+      "name": "„Super energiegeladen“"
+    },
+    "potential3": {
+      "description": "Kombofertigkeit <@ba.key>KUCHEN ODER „GESCHENK“</> verbessert: \n<@ba.key>Bombe</>: SDN-Multiplikator erhöht sich auf das <@ba.vup>{atk_scale_boom:0.0}</>-Fache des Ursprungswertes. \n<@ba.key>Werkstück</>: Radius des Wirkungsbereichs <@ba.vup>+{radiusadd_display:0%}</>. \n<@ba.key>Leckeres Dessert</>: LP-Behandlung erhöht sich auf das <@ba.vup>{heal_static_value_fish:0.0}</>-Fache des Ursprungswertes.",
+      "name": "Nützliche „Geschenke“"
+    },
+    "potential4": {
+      "description": "Ultimative Fertigkeit <@ba.key>FRECH WIRD GESPERRT!</> verbessert: Ultimative Energiekosten <@ba.vup>-{1-costvalue:0%}</>.",
+      "name": "Nach dem Festmahl"
+    },
+    "potential5": {
+      "description": "Ultimative Fertigkeit <@ba.key>FRECH WIRD GESPERRT!</> verbessert:\n<@ba.key>Spezialgegenstand des Botschafters</>: Der SDN-Multiplikator wurde auf das <@ba.vup>{atk_scale_ult:0.0}</>-Fache des Ursprungswertes erhöht.\n<@ba.key>Spezialgegenstand des Botschafters</>: Die <#ba.spellvul>Technik-Empfänglichkeit</> wurde auf das <@ba.vup>{rate_vul:0.0}</>-Fache des Ursprungswertes erhöht.",
+      "name": "Heiß wie ein Grillfeuer"
+    }
+  },
+  "arts": {
+    "potential1": {
+      "name": "GRRR!",
+      "author": "黑犬",
+      "description": "Exotischer Trockenflössler! LECKER! Finyaki! AUCH LECKERSCHMECKER! Welches soll ich zuerst essen? GRRR! Ich kann mich nicht entscheiden! Ich ess sie beide auf einmal!"
+    },
+    "potential3": {
+      "name": "Schnurrende Große Felin",
+      "author": "怂松鼠",
+      "description": "„AAAH! Das ist ein Schnurrende Große Felin!“ Die Kinder der Behandlungseinrichtung würden sich bei jedem Besuch hocherfreut um sie drängen."
+    },
+    "potential5": {
+      "name": "Augenblick eines wunderschönen Traums",
+      "author": "とびはち",
+      "description": "Purrchena träumte von einer Welt mit fliegenden Kuchen, von denen sie sich sanft in die flauschigen Wolken katapultieren kann."
+    }
+  }
+}

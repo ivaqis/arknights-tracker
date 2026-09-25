@@ -1,16 +1,16 @@
 <script>
-  import { t } from "$lib/i18n";
   import { browser } from "$app/environment";
-  import { pullData } from "$lib/stores/pulls";
   import { goto } from "$app/navigation";
-  import { characters } from "$lib/data/characters";
-  import { weapons } from "$lib/data/weapons";
   import { banners } from "$lib/data/banners";
+  import { characters } from "$lib/data/characters";
   import { currencies } from "$lib/data/items/currencies";
+  import { weapons } from "$lib/data/weapons";
+  import { t } from "$lib/i18n";
+  import { recordsExcludedBanners } from "$lib/stores/filterStore";
+  import { currentUiLocale, normalizeLocale } from "$lib/stores/locale";
+  import { pullData } from "$lib/stores/pulls";
   import { getWeaponCategory } from "$lib/utils/importUtils";
   import { slide } from "svelte/transition";
-  import { currentLocale, currentUiLocale } from "$lib/stores/locale";
-  import { recordsExcludedBanners } from "$lib/stores/filterStore";
 
   import Button from "$lib/components/Button.svelte";
   import Image from "$lib/components/Image.svelte";
@@ -24,12 +24,32 @@
 
   let selectedSubBannerId = "";
 
-  $: isWeaponCard = bannerId.includes("weap");
+  $: isWeaponCard = bannerId.includes("weap") || bannerId === "weapon_rerun";
   $: availableSubBanners = (() => {
     const list = Object.keys($pullData)
       .filter((key) => {
         if (!isWeaponCard) return key === bannerId;
-        return getWeaponCategory(key) === bannerId && !$recordsExcludedBanners.includes(key);
+        if (
+          key === bannerId ||
+          key === "weapon_rerun" ||
+          key === "weap-rerun" ||
+          key === "weap-special" ||
+          key === "weap-standard" ||
+          key === "weapon" ||
+          key === "weapon-all" ||
+          key === "rerun" ||
+          key === "special" ||
+          key === "standard" ||
+          key === "new-player" ||
+          key === "joint"
+        ) {
+          return false;
+        }
+        return (
+          getWeaponCategory(key) === bannerId &&
+          !$recordsExcludedBanners.includes(key) &&
+          ($pullData[key]?.pulls?.length || 0) > 0
+        );
       })
       .sort((a, b) => {
         const banA = banners.find((x) => x.id === a);
@@ -100,7 +120,27 @@
 
   $: subBannerIds = Object.keys($pullData).filter((key) => {
     if (!isWeaponCard) return key === bannerId;
-    return getWeaponCategory(key) === bannerId && !$recordsExcludedBanners.includes(key);
+    if (
+      key === bannerId ||
+      key === "weapon_rerun" ||
+      key === "weap-rerun" ||
+      key === "weap-special" ||
+      key === "weap-standard" ||
+      key === "weapon" ||
+      key === "weapon-all" ||
+      key === "rerun" ||
+      key === "special" ||
+      key === "standard" ||
+      key === "new-player" ||
+      key === "joint"
+    ) {
+      return false;
+    }
+    return (
+      getWeaponCategory(key) === bannerId &&
+      !$recordsExcludedBanners.includes(key) &&
+      ($pullData[key]?.pulls?.length || 0) > 0
+    );
   });
 
   $: aggregatedData = (() => {
@@ -200,7 +240,7 @@
     if (isWeaponCard || isNewPlayer) return 0;
     return pulls.filter(p => !p.isFree).length;
   })();
-  $: spent = (billableCount * 500).toLocaleString("ru-RU");
+  $: spent = (billableCount * 500).toLocaleString(normalizeLocale($currentUiLocale));
   $: count6 = stats.count6 || 0;
   $: count5 = stats.count5 || 0;
   $: percent6 = stats.percent6 || "0.00";
@@ -297,14 +337,17 @@
   $: mileage = stats.mileage || { show: false, current: 0, max: 0, label: "" };
 
   function getMileageLabel(label) {
-    if (label === "selector_6") return $t("stats.selector") || "Selector";
-    if (label === "guaranteed_6") return $t("stats.guaranteed") || "Guaranteed";
-    if (label === "bonus_copy_6") return $t("stats.bonus_copy") || "Bonus Copy";
-    if (label === "arms_offering")
-      return $t("stats.arms_offering") || "Arms Offering";
-    if (label === "featured_guarantee")
-      return $t("stats.featured_guarantee") || "Featured Wep.";
+    if (label === "selector_6") return $t("stats.selector");
+    if (label === "guaranteed_6") return $t("stats.guaranteed");
+    if (label === "bonus_copy_6") return $t("stats.bonus_copy");
+    if (label === "arms_offering") return $t("stats.arms_offering");
+    if (label === "featured_guarantee") return $t("stats.featured_guarantee");
     return label;
+  }
+
+  function getBannerMiniIcon(id) {
+    const b = banners.find((x) => x.id === id);
+    return b?.miniIcon || `${id}.webp`;
   }
 
   let isDropdownOpen = false;
@@ -333,8 +376,7 @@
     if (!dateStr) return "";
     const parsed = new Date(dateStr.replace(" ", "T"));
     if (isNaN(parsed.getTime())) return "";
-    let loc = locale || "en";
-    if (loc === "my") loc = "ms-MY";
+    let loc = normalizeLocale(locale);
     try {
       return new Intl.DateTimeFormat(loc, {
         day: "2-digit",
@@ -361,7 +403,7 @@
     const b = banners.find((x) => x.id === bId);
     const label = b ? ($t(`banners.${b.id}`) !== `banners.${b.id}` ? $t(`banners.${b.id}`) : b.name) : bId;
     const startFormatted = b ? formatBannerDate(b.startTime, $currentUiLocale) : "";
-    const endFormatted = b ? (b.endTime ? formatBannerDate(b.endTime, $currentUiLocale) : ($t("permanent") || "Permanent")) : "";
+    const endFormatted = b ? (b.endTime ? formatBannerDate(b.endTime, $currentUiLocale) : $t("permanent")) : "";
     const subLabel = startFormatted && endFormatted ? `${startFormatted} - ${endFormatted}` : "";
     return {
       value: bId,
@@ -381,7 +423,7 @@
     >
       {#each availableSubBanners as bId}
         <div class="shrink-0">
-          <Tooltip text={bId === "all" ? $t("systemNames.allBanners") : ($t(`banners.${bId}`) || bId)}>
+          <Tooltip text={bId === "all" ? $t("systemNames.allBanners") : ($t(`banners.${bId}`) !== `banners.${bId}` ? $t(`banners.${bId}`) : bId)}>
             <button
               class="group relative {bId === 'all' ? 'px-2' : ''} h-12 w-18 flex-shrink-0 rounded shadow-sm border overflow-hidden transition-all focus:outline-none flex items-center justify-center
                     {selectedSubBannerId === bId
@@ -396,7 +438,7 @@
                 </div>
               {:else}
                 <Image
-                  id="{bId}.webp"
+                  id={getBannerMiniIcon(bId)}
                   variant="banner-mini"
                   alt={bId}
                   className="h-full w-full object-cover transition-transform group-hover:scale-110"

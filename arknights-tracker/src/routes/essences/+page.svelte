@@ -1,4 +1,5 @@
 <script>
+    import { browser } from "$app/environment";
     import { page } from "$app/stores";
     import BottomSheet from "$lib/components/BottomSheet.svelte";
     import Button from "$lib/components/Button.svelte";
@@ -11,8 +12,8 @@
     import SortSelectorDropdown from "$lib/components/dataToolbarV2/sortDropdowns/SortSelectorDropdown.svelte";
     import Icon from "$lib/components/Icon.svelte";
     import Image from "$lib/components/Image.svelte";
-    import Tooltip from "$lib/components/Tooltip.svelte";
     import Modal from "$lib/components/modals/Modal.svelte";
+    import Tooltip from "$lib/components/Tooltip.svelte";
     import { essences } from "$lib/data/items/essences.js";
     import { locations } from "$lib/data/locations.js";
     import { weapons } from "$lib/data/weapons.js";
@@ -22,15 +23,15 @@
         essenceWeaponFilters,
         essenceWeaponOwnedOnly,
         essenceWeaponSearch,
-        getWeaponFilters, getWeaponSortOptions
-    } from "$lib/stores/filterStore";
+        getWeaponFilters,
+        getWeaponSortOptions
+    } from "$lib/stores/filterStore.js";
     import { manualPotentials } from "$lib/stores/potentials";
     import { pullData } from "$lib/stores/pulls";
-    import { filterCheck, filterCheckLowerCase } from "$lib/utils/filterUtils.js";
-    import { getRarityColor } from "$lib/utils/colorUtils.js";
-    import { browser } from "$app/environment";
-    import { fade, scale } from "svelte/transition";
     import { weaponEssences } from "$lib/stores/weaponEssences.js";
+    import { getRarityColor } from "$lib/utils/colorUtils.js";
+    import { filterCheck, filterCheckLowerCase } from "$lib/utils/filterUtils";
+    import { scale } from "svelte/transition";
 
     $: selectedFilters = $essenceWeaponFilters;
     $: searchQuery = $essenceWeaponSearch;

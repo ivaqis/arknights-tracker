@@ -1,24 +1,23 @@
 <script>
-  import { t } from "$lib/i18n";
-  import { onMount, onDestroy, tick } from "svelte";
-  import { currentLocale, currentUiLocale } from "$lib/stores/locale";
   import { goto } from "$app/navigation";
-  import { banners } from "$lib/data/banners.js";
-  import { promocodes } from "$lib/data/promocodes.js";
-  import { rawEvents } from "$lib/data/timeline.js";
-  import { fade } from "svelte/transition";
-  import { weaponRotations } from "$lib/data/weaponRotations.js";
-  import { weapons } from "$lib/data/weapons.js";
-
+  import Button from "$lib/components/Button.svelte";
   import WeaponCard from "$lib/components/cards/WeaponCard.svelte";
-  import TableModal from "$lib/components/modals/TableModal.svelte";
   import Icon from "$lib/components/Icon.svelte";
   import Image from "$lib/components/Image.svelte";
-  import Button from "$lib/components/Button.svelte";
+  import ItemTags from "$lib/components/ItemTags.svelte";
   import BannerModal from "$lib/components/modals/BannerModal.svelte";
   import SupportModal from "$lib/components/modals/SupportModal.svelte";
+  import TableModal from "$lib/components/modals/TableModal.svelte";
   import Tooltip from "$lib/components/Tooltip.svelte";
-  import ItemTags from "$lib/components/ItemTags.svelte";
+  import { banners } from "$lib/data/banners.js";
+  import { promocodes } from "$lib/data/promocodes.js";
+  import { rawEvents } from "$lib/data/timeline";
+  import { weaponRotations } from "$lib/data/weaponRotations.js";
+  import { weapons } from "$lib/data/weapons.js";
+  import { t } from "$lib/i18n";
+  import { currentUiLocale, normalizeLocale } from "$lib/stores/locale";
+  import { onDestroy, onMount, tick } from "svelte";
+  import { fade } from "svelte/transition";
 
   let now = new Date();
   let timer;
@@ -152,8 +151,7 @@
   function getFormattedDate(dateStr) {
     const end = parseWithServerOffset(dateStr);
     const dateOptions = { month: "short", day: "numeric" };
-    let loc = $currentUiLocale || "en";
-    if (loc === "my") loc = "ms-MY";
+    let loc = normalizeLocale($currentUiLocale);
     if (showServerTime) {
       const timeZone =
         currentServerId === "2" ? "Asia/Shanghai" : "America/New_York";
@@ -220,9 +218,12 @@
       type === "weapon" ||
       type === "weap-special" ||
       type === "weap-standard" ||
+      type === "weap-rerun" ||
       origType === "weapon" ||
       origType === "weap-special" ||
       origType === "weap-standard" ||
+      origType === "weap-rerun" ||
+      (event.id && (event.id.includes("weap") || event.id.includes("wpn"))) ||
       event.isWeapon === true
     ) {
       return { icon: "atkEvent", label: "Arsenal Issue", bg: glassStyle };
@@ -234,11 +235,16 @@
       type === "special" ||
       type === "new-player" ||
       type === "headhunting" ||
+      type === "rerun" ||
+      type === "joint" ||
       origType === "standard" ||
       origType === "special" ||
       origType === "new-player" ||
       origType === "banner" ||
-      origType === "headhunting"
+      origType === "headhunting" ||
+      origType === "rerun" ||
+      origType === "joint" ||
+      event.featured6
     ) {
       return { icon: "headhunting", label: "Headhunting", bg: glassStyle };
     }
@@ -353,8 +359,7 @@
     if (!weekConfig) return "";
     const start = new Date(weekConfig.startDate);
     const end = new Date(weekConfig.endDate);
-    let loc = locale || "ru";
-    if (loc === "my") loc = "ms-MY";
+    let loc = normalizeLocale(locale);
     const options = { month: "2-digit", day: "2-digit" };
     return `${start.toLocaleDateString(loc, options)} - ${end.toLocaleDateString(loc, options)}`;
   }

@@ -31,15 +31,27 @@
     const aliases = {
         "wisd": "int",
         "criticalrate": "crirate",
+        "crit": "crirate",
+        "crit_up": "crirate",
         "ultimatespgainscalar": "usp",
+        "usgs": "usp",
+        "sp_gain": "usp",
         "crystandpulsedamageincrease": "alldamagetakenscalar",
         "spelldamageincrease": "alldamagetakenscalar",
         "allskilldamageincrease": "alldamagetakenscalar",
         "sub": "alldamagetakenscalar",
         "main": "alldamagetakenscalar",
+        "circle": "alldamagetakenscalar",
         "fireandnaturaldamageincrease": "alldamagetakenscalar",
         "healoutputincrease": "heal",
-        "originiumarts": "magicdam"
+        "originiumarts": "magicdam",
+        "physical_damage": "physicaldamageincrease",
+        "phy_dmg_up": "physicaldamageincrease",
+        "cryst_dmg_up": "cryo",
+        "fire_dmg_up": "heat",
+        "pulse_dmg_up": "electric",
+        "ice_dmg_up": "cryo",
+        "spell_dmg_up": "magicdam"
     };
 
     $: resolvedName = aliases[name] || name;

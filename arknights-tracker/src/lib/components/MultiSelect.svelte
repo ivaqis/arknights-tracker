@@ -122,7 +122,7 @@
     <div
       transition:slide={{ duration: 200 }}
       class="
-        absolute left-0 right-0 mt-1.5 z-50 border shadow-xl rounded-xl max-h-60 overflow-y-auto p-2 space-y-1 custom-scrollbar w-full
+        absolute left-0 right-0 mt-1.5 z-50 border shadow-xl rounded-xl max-h-80 overflow-y-auto p-2 space-y-1 custom-scrollbar w-full
         {variant === 'black'
           ? 'bg-[#363636] border-[#454545] text-white'
           : 'bg-white dark:bg-[#383838] border-gray-100 dark:border-[#444] text-[#21272C] dark:text-[#E0E0E0]'}
@@ -156,7 +156,7 @@
               checked={value.includes(opt.value)}
               on:change={() => toggleOption(opt.value)}
             >
-              <div class="flex items-center gap-3 ml-2 text-left">
+              <div class="flex items-center gap-3 ml-2 text-left min-w-0 flex-1">
                 {#if opt.iconId}
                   <div class="w-10 h-6 rounded-sm overflow-hidden flex-shrink-0 shadow-sm border border-black/10 dark:border-white/10">
                     <Image
@@ -168,10 +168,10 @@
                     />
                   </div>
                 {/if}
-                <div class="flex flex-col leading-none">
-                  <span class="text-sm dark:text-[#E0E0E0] truncate max-w-[280px]">{opt.label}</span>
+                <div class="flex flex-col leading-none min-w-0 flex-1">
+                  <span class="text-sm dark:text-[#E0E0E0] truncate" title={opt.label}>{opt.label}</span>
                   {#if opt.subLabel}
-                    <span class="text-[10px] font-mono tracking-tight mt-0.5 opacity-60 text-gray-500 dark:text-gray-300">
+                    <span class="text-[10px] font-mono tracking-tight mt-0.5 opacity-60 text-gray-500 dark:text-gray-300 truncate" title={opt.subLabel}>
                       {opt.subLabel}
                     </span>
                   {/if}
