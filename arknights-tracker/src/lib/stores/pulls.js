@@ -30,9 +30,81 @@ function createPullStore() {
         set(JSON.parse(JSON.stringify(defaultData)));
     };
 
+    const migrateLegacyRerunPulls = (data) => {
+        if (!data || typeof data !== "object")
+            return false;
+
+        let modified = false;
+
+        if (data.special && Array.isArray(data.special.pulls)) {
+            const rerunPullsToMove = [];
+            const remainingSpecialPulls = [];
+
+            for (const p of data.special.pulls) {
+                const rawPool = String(p.rawPoolId || "").toLowerCase();
+                const bannerId = String(p.bannerId || "").toLowerCase();
+                const isRerunPull =
+                    rawPool === "special_1_5_2" ||
+                    rawPool === "rerun_chr_yvonne" ||
+                    rawPool.includes("rerun") ||
+                    bannerId === "special_1_5_2" ||
+                    bannerId === "rerun_chr_yvonne" ||
+                    (bannerId.includes("rerun") && !bannerId.includes("weap"));
+
+                if (isRerunPull) {
+                    p.bannerId = "rerun";
+                    rerunPullsToMove.push(p);
+                    modified = true;
+                } else {
+                    remainingSpecialPulls.push(p);
+                }
+            }
+
+            if (rerunPullsToMove.length > 0) {
+                data.special.pulls = remainingSpecialPulls;
+                if (!data.rerun) {
+                    data.rerun = { pulls: [], stats: {} };
+                }
+                data.rerun.pulls = mergePulls(data.rerun.pulls || [], rerunPullsToMove);
+            }
+        }
+
+        if (data["special_1_5_2"] && Array.isArray(data["special_1_5_2"].pulls)) {
+            const charPullsToMove = data["special_1_5_2"].pulls.map(p => ({
+                ...p,
+                bannerId: "rerun"
+            }));
+            if (!data.rerun) {
+                data.rerun = { pulls: [], stats: {} };
+            }
+            data.rerun.pulls = mergePulls(data.rerun.pulls || [], charPullsToMove);
+            delete data["special_1_5_2"];
+            modified = true;
+        }
+
+        if (data["weponbox_1_5_2"] && Array.isArray(data["weponbox_1_5_2"].pulls)) {
+            const weaponPullsToMove = data["weponbox_1_5_2"].pulls.map(p => ({
+                ...p,
+                bannerId: "rerun_wpn_yvonne",
+                rawPoolId: p.rawPoolId === "weponbox_1_5_2" ? "rerun_wpn_yvonne" : p.rawPoolId
+            }));
+
+            if (!data["rerun_wpn_yvonne"]) {
+                data["rerun_wpn_yvonne"] = { pulls: [], stats: {} };
+            }
+            data["rerun_wpn_yvonne"].pulls = mergePulls(data["rerun_wpn_yvonne"].pulls || [], weaponPullsToMove);
+            delete data["weponbox_1_5_2"];
+            modified = true;
+        }
+
+        return modified;
+    };
+
     const restoreDatesAndStats = (data, serverId) => {
         if (!data || typeof data !== "object")
             return;
+
+        migrateLegacyRerunPulls(data);
 
         Object.keys(data).forEach(key => {
             if (data[key] && Array.isArray(data[key].pulls)) {
@@ -91,9 +163,14 @@ function createPullStore() {
 
             if (stored) {
                 const parsed = JSON.parse(stored);
+                const wasMigrated = migrateLegacyRerunPulls(parsed);
 
                 restoreDatesAndStats(parsed, serverId);
                 set(parsed);
+
+                if (wasMigrated) {
+                    saveDataToStorage(id, parsed);
+                }
             } else {
                 const legacyData = localStorage.getItem("ark_tracker_pulls");
 

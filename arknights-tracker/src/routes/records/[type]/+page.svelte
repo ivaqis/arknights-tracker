@@ -237,7 +237,7 @@
 
         const rawId = pull.rawPoolId || pull.bannerId;
         if (rawId) {
-            const genericIds = ["special", "standard", "weapon", "weap-special", "weap-standard", "weap-rerun", "rerun", "new-player", "joint", "other", "unknown"];
+            const genericIds = ["special", "standard", "weapon", "weap-special", "weap-standard", "weap-rerun", "weapon_rerun", "rerun", "new-player", "joint", "other", "unknown"];
             if (!genericIds.includes(rawId.toLowerCase())) {
                 const exactMatch = banners.find((b) => b.id === rawId);
                 if (exactMatch) return exactMatch;
@@ -263,6 +263,7 @@
             const bType = (b.type || "").toLowerCase();
             const isBannerWeapon =
                 bType === "weapon" ||
+                bType === "weapon_rerun" ||
                 bType === "weap-rerun" ||
                 bId.includes("weap") ||
                 bId.includes("wepon") ||
@@ -276,8 +277,8 @@
             if (isJointPage) return bType === "joint" || bId.includes("joint");
             if (bType === "joint" || bId.includes("joint")) return false;
 
-            if (isRerunPage) return bType === "rerun" || bType === "weap-rerun" || bId.includes("rerun");
-            if (bType === "rerun" || bType === "weap-rerun" || bId.includes("rerun")) return false;
+            if (isRerunPage) return bType === "rerun" || bType === "weapon_rerun" || bType === "weap-rerun" || bId.includes("rerun");
+            if (bType === "rerun" || bType === "weapon_rerun" || bType === "weap-rerun" || bId.includes("rerun")) return false;
 
             const isBannerStandard =
                 bType === "standard" ||

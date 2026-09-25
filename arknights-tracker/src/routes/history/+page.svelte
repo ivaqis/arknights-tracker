@@ -71,6 +71,8 @@
             "joint",
             "new-player",
             "weapon",
+            "rerun",
+            "weapon_rerun",
         ];
 
         return sourceItems

@@ -13,13 +13,8 @@ export function filterCheckLowerCase<T extends string>(filterParamSet: ReadonlyS
 
     const valueLowerCase = value.toLowerCase();
 
-    for (const filter of filterParamSet) {
-        if (filter.toLowerCase() === valueLowerCase) {
-            return true;
-        }
-    }
-
-    return false;
+    return filterParamSet.values()
+        .some(filter => filter.toLowerCase() === valueLowerCase);
 }
 
 export function getBaseSkillMappedFilter(opId: string, skillName: string): string | null {

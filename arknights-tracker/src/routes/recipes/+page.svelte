@@ -89,9 +89,10 @@
 
     $: selectedItem = data.itemId ? itemStorage.byGameId.getOrThrow(data.itemId) : null;
 
-    const craftableItems: readonly IItem[] = craftableItemsList
+    const craftableItems: readonly IItem[] = craftableItemsList.values()
         .map(itemId => itemStorage.byGameId.get(itemId))
-        .filter((item): item is IItem => item !== undefined);
+        .filter(item => item !== undefined)
+        .toArray();
 
     const itemEventMap = getEventByItemIdMap(factoryEventStorage.list);
 

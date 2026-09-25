@@ -18,7 +18,7 @@ export class MachineCraftSearchResult
 
     public groupByBuilding(): ReadonlyMap<string, IResultBuildingGroup<ICrafter, IMachineCraft>> {
         const recipeMap = getMappedList(this.list, r => r.building.gameId);
-        const groupList = Array.from(recipeMap.values())
+        const groupList = recipeMap.values()
             .map(list => new ResultBuildingGroup(list[0].building, list));
 
         return getMap(groupList, item => item.building.gameId);
@@ -26,7 +26,7 @@ export class MachineCraftSearchResult
 
     public groupByFormulaGroup(): ReadonlyMap<string, IResultCrafterModeGroup> {
         const recipeMap = getMappedList(this.list, r => r.formulaGroup.formulaGroupId);
-        const groupList = Array.from(recipeMap.values())
+        const groupList = recipeMap.values()
             .map(list => new ResultCrafterModeGroup(list[0].building, list, list[0].formulaGroup));
 
         return getMap(groupList, item => item.mode.formulaGroupId);

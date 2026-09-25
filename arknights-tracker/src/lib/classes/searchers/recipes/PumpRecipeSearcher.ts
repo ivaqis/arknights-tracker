@@ -19,9 +19,10 @@ export class PumpRecipeSearcher implements IPumpRecipeSearcher {
             return new BuildingRecipeSearchResult([]);
         }
 
-        const recipes = pump.enableLiquids
+        const recipes = pump.enableLiquids.values()
             .map(liquid => pump.getRecipe(liquid.item.gameId))
-            .filter((r): r is IPumpRecipe => r !== null);
+            .filter(r => r !== null)
+            .toArray();
 
         return new BuildingRecipeSearchResult(recipes);
     }
@@ -37,9 +38,10 @@ export class PumpRecipeSearcher implements IPumpRecipeSearcher {
             return new BuildingRecipeSearchResult([]);
         }
 
-        const recipes = pumps
+        const recipes = pumps.values()
             .map(pump => pump.getRecipe(itemId))
-            .filter((r): r is IPumpRecipe => r !== null);
+            .filter(r => r !== null)
+            .toArray();
 
         return new BuildingRecipeSearchResult(recipes);
     }

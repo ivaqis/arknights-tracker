@@ -19,9 +19,10 @@ export class PowerRecipeSearcher implements IPowerRecipeSearcher {
             return new BuildingRecipeSearchResult([]);
         }
 
-        const recipes = powerStation.enableFuelList
+        const recipes = powerStation.enableFuelList.values()
             .map(fuel => powerStation.getRecipe(fuel.gameId))
-            .filter((r): r is IPowerRecipe => r !== null);
+            .filter(r => r !== null)
+            .toArray();
 
         return new BuildingRecipeSearchResult(recipes);
     }
@@ -33,9 +34,10 @@ export class PowerRecipeSearcher implements IPowerRecipeSearcher {
             return new BuildingRecipeSearchResult([]);
         }
 
-        const recipes = stations
+        const recipes = stations.values()
             .map(station => station.getRecipe(itemId))
-            .filter((r): r is IPowerRecipe => r !== null);
+            .filter(r => r !== null)
+            .toArray();
 
         return new BuildingRecipeSearchResult(recipes);
     }

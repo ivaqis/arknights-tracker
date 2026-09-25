@@ -20,7 +20,7 @@ export class BuildingRecipeSearchResult<
 
     public groupByBuilding(): ReadonlyMap<string, IResultBuildingGroup<TBuilding, TRecipe>> {
         const recipeMap = getMappedList(this.list, r => r.building.gameId);
-        const groupList = Array.from(recipeMap.values())
+        const groupList = recipeMap.values()
             .map(list => new ResultBuildingGroup(list[0].building, list));
 
         return getMap(groupList, item => item.building.gameId);

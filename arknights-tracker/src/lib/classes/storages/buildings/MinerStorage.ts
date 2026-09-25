@@ -35,7 +35,7 @@ export class MinerStorage extends BuildingStorage<IMiner> implements IMinerStora
                     }
                 }
 
-                return Array.from(set);
+                return set.values().toArray();
             }
         );
     }
