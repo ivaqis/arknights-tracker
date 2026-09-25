@@ -18,6 +18,7 @@ services:
       retries: 10
 
   backend:
+    image: ghcr.io/ivaqis/goyfield-backend:latest
     build:
       context: ./goyfield-backend
     container_name: goyfield-backend
@@ -54,6 +55,7 @@ services:
         condition: service_healthy
 
   frontend:
+    image: ghcr.io/ivaqis/goyfield-frontend:latest
     build:
       context: ./arknights-tracker
     container_name: goyfield-frontend

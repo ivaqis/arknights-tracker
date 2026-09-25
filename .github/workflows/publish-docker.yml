@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - docker
     tags:
       - v*.*.*
   workflow_dispatch:
@@ -20,17 +19,14 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - image: arknights-backend
-            context: ./arknights-backend
-          - image: arknights-tracker
+          - image: goyfield-backend
+            context: ./goyfield-backend
+          - image: goyfield-frontend
             context: ./arknights-tracker
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Set up QEMU
-        uses: docker/setup-qemu-action@v3
 
       - name: Set up Buildx
         uses: docker/setup-buildx-action@v3
@@ -56,13 +52,14 @@ jobs:
             type=ref,event=branch
             type=ref,event=tag
             type=sha
+            type=raw,value=latest,enable={{is_default_branch}}
 
       - name: Build and push
         uses: docker/build-push-action@v5
         with:
           context: ${{ matrix.context }}
           push: true
-          platforms: linux/amd64,linux/arm64
+          platforms: linux/amd64
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
           cache-from: type=gha
