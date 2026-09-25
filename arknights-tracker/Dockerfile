@@ -7,7 +7,7 @@ RUN npm ci
 
 COPY . .
 
-RUN npm run build && find build -name "*.map" -delete
+RUN npm run build
 
 FROM node:22-slim
 
@@ -17,11 +17,11 @@ ENV NODE_ENV=production
 ENV PORT=3000
 ENV HOST=0.0.0.0
 
-COPY --chown=node:node --from=build /app/build ./build
-COPY --chown=node:node --from=build /app/package*.json ./
-COPY --chown=node:node --from=build /app/entrypoint.sh /app/entrypoint.sh
+COPY --from=build /app/build ./build
+COPY --from=build /app/package*.json ./
+COPY --from=build /app/entrypoint.sh /app/entrypoint.sh
 
-RUN npm ci --omit=dev --ignore-scripts && chmod +x /app/entrypoint.sh
+RUN npm ci --omit=dev && chmod +x /app/entrypoint.sh && chown -R node:node /app
 
 USER node
 
