@@ -22,6 +22,7 @@ echo [1/3] Installing/Checking modules...
 cd goyfield-backend
 call npm install --quiet
 call npm run prisma:v2:generate
+call npm run prisma:v2:migrate >nul 2>&1 || echo [INFO] Database not configured or unreachable, skipped migration.
 cd ../arknights-tracker
 call npm install --quiet
 cd ..

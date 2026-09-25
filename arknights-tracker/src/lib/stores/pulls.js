@@ -37,35 +37,84 @@ function createPullStore() {
         let modified = false;
 
         if (data.special && Array.isArray(data.special.pulls)) {
-            const rerunPullsToMove = [];
+            const charRerunPullsToMove = [];
+            const weaponRerunPullsToMove = [];
             const remainingSpecialPulls = [];
 
             for (const p of data.special.pulls) {
                 const rawPool = String(p.rawPoolId || "").toLowerCase();
                 const bannerId = String(p.bannerId || "").toLowerCase();
+                const isWeapon = p.type === "weapon" || isWeaponBanner(p.rawPoolId) || isWeaponBanner(p.bannerId);
+
                 const isRerunPull =
                     rawPool === "special_1_5_2" ||
                     rawPool === "rerun_chr_yvonne" ||
+                    rawPool === "rerun_wpn_yvonne" ||
+                    rawPool === "weponbox_1_5_2" ||
                     rawPool.includes("rerun") ||
                     bannerId === "special_1_5_2" ||
                     bannerId === "rerun_chr_yvonne" ||
-                    (bannerId.includes("rerun") && !bannerId.includes("weap"));
+                    bannerId === "rerun_wpn_yvonne" ||
+                    bannerId === "weponbox_1_5_2" ||
+                    bannerId.includes("rerun");
 
                 if (isRerunPull) {
-                    p.bannerId = "rerun";
-                    rerunPullsToMove.push(p);
+                    if (isWeapon) {
+                        p.bannerId = "rerun_wpn_yvonne";
+                        weaponRerunPullsToMove.push(p);
+                    } else {
+                        p.bannerId = "rerun";
+                        charRerunPullsToMove.push(p);
+                    }
                     modified = true;
                 } else {
                     remainingSpecialPulls.push(p);
                 }
             }
 
-            if (rerunPullsToMove.length > 0) {
+            if (charRerunPullsToMove.length > 0 || weaponRerunPullsToMove.length > 0) {
                 data.special.pulls = remainingSpecialPulls;
+            }
+
+            if (charRerunPullsToMove.length > 0) {
                 if (!data.rerun) {
                     data.rerun = { pulls: [], stats: {} };
                 }
-                data.rerun.pulls = mergePulls(data.rerun.pulls || [], rerunPullsToMove);
+                data.rerun.pulls = mergePulls(data.rerun.pulls || [], charRerunPullsToMove);
+            }
+
+            if (weaponRerunPullsToMove.length > 0) {
+                if (!data["rerun_wpn_yvonne"]) {
+                    data["rerun_wpn_yvonne"] = { pulls: [], stats: {} };
+                }
+                data["rerun_wpn_yvonne"].pulls = mergePulls(data["rerun_wpn_yvonne"].pulls || [], weaponRerunPullsToMove);
+            }
+        }
+
+        if (data.rerun && Array.isArray(data.rerun.pulls)) {
+            const weaponsInRerun = [];
+            const charsInRerun = [];
+
+            for (const p of data.rerun.pulls) {
+                const rawPool = String(p.rawPoolId || "").toLowerCase();
+                const bannerId = String(p.bannerId || "").toLowerCase();
+                const isWeapon = p.type === "weapon" || isWeaponBanner(rawPool) || isWeaponBanner(bannerId);
+
+                if (isWeapon) {
+                    p.bannerId = "rerun_wpn_yvonne";
+                    weaponsInRerun.push(p);
+                    modified = true;
+                } else {
+                    charsInRerun.push(p);
+                }
+            }
+
+            if (weaponsInRerun.length > 0) {
+                data.rerun.pulls = charsInRerun;
+                if (!data["rerun_wpn_yvonne"]) {
+                    data["rerun_wpn_yvonne"] = { pulls: [], stats: {} };
+                }
+                data["rerun_wpn_yvonne"].pulls = mergePulls(data["rerun_wpn_yvonne"].pulls || [], weaponsInRerun);
             }
         }
 

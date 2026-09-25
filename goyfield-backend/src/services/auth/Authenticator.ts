@@ -99,8 +99,8 @@ export class Authenticator implements IService {
         };
     }
 
-    public authByAdminSecretCred(credentials: Credentials): boolean {
-        if (credentials.type !== AuthType.ADMIN_SECRET) {
+    public authByAdminSecretCred(credentials: Credentials | null): boolean {
+        if (!credentials || credentials.type !== AuthType.ADMIN_SECRET) {
             return false;
         }
 
@@ -108,7 +108,7 @@ export class Authenticator implements IService {
     }
 
     public authByAdminSecret(adminSecret: string | null): boolean {
-        if (!adminSecret) {
+        if (!adminSecret || !config.adminSecret) {
             return false;
         }
 

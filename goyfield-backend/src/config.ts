@@ -10,7 +10,7 @@ export const config = {
     envName: process.env.NODE_ENV || null,
     port: Number(process.env.PORT) || 3001,
     databaseUrl: process.env.DATABASE_URL || null,
-    adminSecret: process.env.ADMIN_SECRET || "super_secret_fallback_key_123",
+    adminSecret: process.env.ADMIN_SECRET || null,
     loggingLevel: getLoggingLevel(),
     gryphlineAuthUrl: process.env.GRYPHLINE_AUTH_URL || null,
     skportBindingPath: process.env.SKPORT_BIND_PATH || null,

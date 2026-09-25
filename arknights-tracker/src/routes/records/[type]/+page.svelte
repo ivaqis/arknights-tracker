@@ -237,7 +237,11 @@
 
         const rawId = pull.rawPoolId || pull.bannerId;
         if (rawId) {
-            const genericIds = ["special", "standard", "weapon", "weap-special", "weap-standard", "weap-rerun", "weapon_rerun", "rerun", "new-player", "joint", "other", "unknown"];
+            const genericIds = [
+                "special", "standard", "weapon", "weap-special", "weap-standard", "weap-rerun", "weapon_rerun", "rerun", "new-player", "joint", "other", "unknown",
+                "e_charactergachapooltype_rerun", "e_charactergachapooltype_special", "e_charactergachapooltype_standard", "e_charactergachapooltype_joint", "e_charactergachapooltype_beginner",
+                "e_weapongachapooltype_rerun", "e_weapongachapooltype_special", "e_weapongachapooltype_standard"
+            ];
             if (!genericIds.includes(rawId.toLowerCase())) {
                 const exactMatch = banners.find((b) => b.id === rawId);
                 if (exactMatch) return exactMatch;
@@ -343,6 +347,10 @@
                     parseServerDate(datesA.startStr)
                 );
             });
+            return matches[0];
+        }
+
+        if (matches.length === 1) {
             return matches[0];
         }
 
