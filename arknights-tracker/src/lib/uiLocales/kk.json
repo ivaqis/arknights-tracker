@@ -816,7 +816,8 @@
         "load_failed": "Үздіктер тақтасын жүктеу сәтсіз аяқталды",
         "operators_in_team": "Жасақтағы операторлар",
         "room": "Бөлме",
-        "stage": "Кезең"
+        "stage": "Кезең",
+        "agony": "Азап"
     },
     "profile": {
         "title": "Ойыншы профилі",
@@ -886,6 +887,9 @@
         "no_connected_accounts": "Қосылған аккаунттар жоқ.",
         "edit_nickname": "Никнеймді өзгерту",
         "copy_profile_link": "Сілтемені көшіру",
+        "share": "Бөлісу",
+        "download_png": "PNG жүктеп алу",
+        "generating_image": "Сурет жасалуда...",
         "link_copied": "Көшірілді!",
         "uid_copied": "UID көшірілді!",
         "copy_uid": "UID көшіру",

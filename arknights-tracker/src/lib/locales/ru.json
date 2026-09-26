@@ -2614,8 +2614,8 @@
     "echoesOfWar": "Эхо войны",
     "load_failed": "Не удалось загрузить таблицу лидеров",
     "agony": "Агония",
-    "monument_type": "Тип монумента",
-    "monument_filter": "Монумент",
+    "monument_type": "Тип",
+    "monument_filter": "Сумрачный монумент",
     "difficulty": "Сложность",
     "room": "Комната",
     "operators_in_team": "Оперативников в команде"

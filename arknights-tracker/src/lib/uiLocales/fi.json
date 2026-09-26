@@ -816,7 +816,8 @@
         "load_failed": "Tulostaulukon lataaminen epäonnistui",
         "operators_in_team": "Operaattorit joukkueessa",
         "room": "Huone",
-        "stage": "Vaihe"
+        "stage": "Vaihe",
+        "agony": "Tuska"
     },
     "profile": {
         "title": "Pelaajaprofiili",
@@ -886,6 +887,9 @@
         "no_connected_accounts": "Ei yhdistettyjä tilejä.",
         "edit_nickname": "Muokkaa nimeä",
         "copy_profile_link": "Kopioi linkki",
+        "share": "Jaa",
+        "download_png": "Lataa PNG",
+        "generating_image": "Luodaan kuvaa...",
         "link_copied": "Linkki kopioitu!",
         "uid_copied": "UID kopioitu!",
         "copy_uid": "Kopioi UID",

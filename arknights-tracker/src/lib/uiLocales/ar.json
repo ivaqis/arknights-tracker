@@ -816,7 +816,8 @@
         "load_failed": "فشل تحميل لوحة المتصدرين",
         "operators_in_team": "العملاء في الفرقة",
         "room": "غرفة",
-        "stage": "المرحلة"
+        "stage": "المرحلة",
+        "agony": "عذاب"
     },
     "profile": {
         "title": "ملف اللاعب",
@@ -886,6 +887,9 @@
         "no_connected_accounts": "لا توجد حسابات متصلة.",
         "edit_nickname": "تعديل الاسم",
         "copy_profile_link": "نسخ الرابط",
+        "share": "مشاركة",
+        "download_png": "تنزيل PNG",
+        "generating_image": "جارٍ إنشاء الصورة...",
         "link_copied": "تم النسخ!",
         "uid_copied": "تم النسخ!",
         "copy_uid": "نسخ UID",

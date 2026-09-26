@@ -816,7 +816,8 @@
         "load_failed": "Gagal memuatkan papan pendahulu",
         "operators_in_team": "Operator dalam Skuad",
         "room": "Bilik",
-        "stage": "Peringkat"
+        "stage": "Peringkat",
+        "agony": "Agoni"
     },
     "profile": {
         "title": "Profil Pemain",
@@ -886,6 +887,9 @@
         "no_connected_accounts": "Tiada akaun permainan yang disambungkan. Segerakkan akaun anda menggunakan butang Kemas Kini di atas.",
         "edit_nickname": "Edit nama samaran",
         "copy_profile_link": "Salin pautan profil",
+        "share": "Kongsi",
+        "download_png": "Muat turun PNG",
+        "generating_image": "Menjana imej...",
         "link_copied": "Pautan disalin ke papan keratan!",
         "uid_copied": "UID disalin ke papan keratan!",
         "copy_uid": "Salin UID",

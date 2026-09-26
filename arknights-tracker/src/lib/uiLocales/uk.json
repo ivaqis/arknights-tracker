@@ -816,7 +816,8 @@
         "load_failed": "Не вдалося завантажити таблицю лідерів",
         "operators_in_team": "Операторів у загоні",
         "room": "Кімната",
-        "stage": "Етап"
+        "stage": "Етап",
+        "agony": "Агонія"
     },
     "profile": {
         "title": "Профіль гравця",
@@ -886,6 +887,9 @@
         "no_connected_accounts": "Немає підключених акаунтів.",
         "edit_nickname": "Редагувати нікнейм",
         "copy_profile_link": "Копіювати посилання",
+        "share": "Поділитися",
+        "download_png": "Завантажити PNG",
+        "generating_image": "Генерація зображення...",
         "link_copied": "Посилання скопійовано!",
         "uid_copied": "UID скопійовано!",
         "copy_uid": "Копіювати UID",

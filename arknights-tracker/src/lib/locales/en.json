@@ -2609,8 +2609,8 @@
     "echoesOfWar": "Echoes of War",
     "load_failed": "Failed to load leaderboard",
     "agony": "Agony",
-    "monument_type": "Monument Type",
-    "monument_filter": "Monument",
+    "monument_type": "Type",
+    "monument_filter": "Umbral Monument",
     "difficulty": "Difficulty",
     "room": "Room",
     "operators_in_team": "Operators in Squad"

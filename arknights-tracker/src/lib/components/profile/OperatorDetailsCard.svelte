@@ -150,6 +150,8 @@
     export let charDetails = null;
     export let charLocale = null;
     export let weaponDetails = null;
+    export let profileName = "";
+    export let activeAccount = null;
 
     let isExporting = false;
 
@@ -865,9 +867,16 @@
     function handleShare() {
         if (typeof window === "undefined") return;
         const charId = opData?.id || svelteId || selectedChar?.id;
-        const url = new URL(window.location.href);
+        const origin = window.location.origin;
+        const url = profileName
+            ? new URL(`${origin}/u/${encodeURIComponent(profileName)}`)
+            : new URL(window.location.href);
+
         if (charId) {
             url.searchParams.set("char", charId);
+        }
+        if (activeAccount?.game_uid) {
+            url.searchParams.set("uid", activeAccount.game_uid);
         }
         navigator.clipboard.writeText(url.toString()).then(() => {
             copied = true;

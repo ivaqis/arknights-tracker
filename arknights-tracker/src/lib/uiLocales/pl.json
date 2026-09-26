@@ -816,7 +816,8 @@
         "load_failed": "Nie udało się załadować tabeli wyników",
         "operators_in_team": "Operatorzy w drużynie",
         "room": "Pokój",
-        "stage": "Etap"
+        "stage": "Etap",
+        "agony": "Agonia"
     },
     "profile": {
         "title": "Profil Gracza",
@@ -886,6 +887,9 @@
         "no_connected_accounts": "Brak połączonych kont.",
         "edit_nickname": "Edytuj pseudonim",
         "copy_profile_link": "Skopiuj link",
+        "share": "Udostępnij",
+        "download_png": "Pobierz PNG",
+        "generating_image": "Generowanie obrazu...",
         "link_copied": "Skopiowano!",
         "uid_copied": "UID skopiowane!",
         "copy_uid": "Kopiuj UID",

@@ -280,10 +280,14 @@
   }
 
   function getWeekForDate(date) {
+    if (!date) return null;
+    const y = date.getFullYear();
+    const m = String(date.getMonth() + 1).padStart(2, "0");
+    const d = String(date.getDate()).padStart(2, "0");
+    const dateStr = `${y}/${m}/${d}`;
+
     return weaponRotations.weeklyRotations.find((w) => {
-      const start = new Date(w.startDate);
-      const end = new Date(w.endDate);
-      return date >= start && date < end;
+      return dateStr >= w.startDate && dateStr < w.endDate;
     });
   }
 
@@ -385,6 +389,12 @@
 
   $: nextWeekly6 = nextWeekConfig && weapons[nextWeekConfig.weekly6] ? { id: nextWeekConfig.weekly6, ...weapons[nextWeekConfig.weekly6] } : null;
   $: nextWeekly5 = nextWeekConfig && weapons[nextWeekConfig.weekly5] ? { id: nextWeekConfig.weekly5, ...weapons[nextWeekConfig.weekly5] } : null;
+
+  $: visibleWeeklyRotations = (() => {
+    const cutoff = new Date(gameServerNow);
+    cutoff.setMonth(cutoff.getMonth() - 2);
+    return weaponRotations.weeklyRotations.filter((w) => new Date(w.endDate) >= cutoff);
+  })();
 
   $: if (showCalendarModal) {
     tick().then(() => {
@@ -1094,11 +1104,11 @@
                 </tr>
             </thead>
             <tbody class="text-[11px] font-nums text-gray-800 dark:text-gray-300">
-                {#each weaponRotations.weeklyRotations as w (w.week)}
+                {#each visibleWeeklyRotations as w (w.week)}
                     {@const isCurrentWeek = currentWeekConfig && currentWeekConfig.week === w.week}
-                    <tr class="transition-colors border-b border-gray-100 dark:border-[#333] even:bg-gray-50/50 dark:even:bg-[#383838]/50 {isCurrentWeek ? 'active-week-row bg-yellow-500/10 dark:bg-yellow-500/10 font-bold' : ''}">
-                        <td class="py-4 px-2 border-r dark:border-[#444]">{w.week}</td>
-                        <td class="py-4 px-2 border-r dark:border-[#444] text-[10px] whitespace-nowrap">
+                    <tr class="transition-colors {isCurrentWeek ? 'active-week-row bg-yellow-500/20 dark:bg-yellow-500/15 border-y-2 border-yellow-500/80 dark:border-yellow-400/80 font-bold' : 'border-b border-gray-100 dark:border-[#333] even:bg-gray-50/50 dark:even:bg-[#383838]/50'}">
+                        <td class="py-4 px-2 border-r dark:border-[#444] {isCurrentWeek ? 'text-yellow-600 dark:text-yellow-400 font-black' : ''}">{w.week}</td>
+                        <td class="py-4 px-2 border-r dark:border-[#444] text-[10px] whitespace-nowrap {isCurrentWeek ? 'text-yellow-700 dark:text-yellow-300 font-bold' : ''}">
                             {formatWeekLabel(w, $currentUiLocale)}
                         </td>
                         <td class="py-4 px-2 border-r dark:border-[#444]">
@@ -1122,7 +1132,7 @@
                         {#each ["mon", "tue", "wed", "thu", "fri", "sat", "sun"] as day}
                             {@const dayWeaponIds = weaponRotations.dailyTemplates[w.dailyTemplate][day] || []}
                             {@const isCurrentDay = isCurrentWeek && day === currentDayKey}
-                            <td class="py-4 px-2 border-r dark:border-[#444] last:border-r-0 {isCurrentDay ? 'bg-yellow-500/25 dark:bg-yellow-500/25 font-bold' : ''}">
+                            <td class="py-4 px-2 border-r dark:border-[#444] last:border-r-0 {isCurrentDay ? 'bg-yellow-500/40 dark:bg-yellow-400/30 ring-1 ring-inset ring-yellow-500/60 font-black' : ''}">
                                 <div class="flex flex-col gap-1.5 items-center justify-center">
                                     {#each dayWeaponIds as id}
                                         {#if weapons[id]}

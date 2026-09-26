@@ -24,6 +24,7 @@
     export let activeAccount = null;
     export let hasBackground = false;
     export let initialCharId = null;
+    export let profileName = "";
 
     let selectedOperatorId = null;
 
@@ -282,6 +283,8 @@
                     charDetails={selectedCharDetails}
                     charLocale={selectedCharLocale}
                     weaponDetails={selectedWeaponDetails}
+                    {activeAccount}
+                    {profileName}
                     on:openPhotoModal={handleOpenPhotoModal}
                 />
             {/key}

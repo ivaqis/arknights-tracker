@@ -280,7 +280,7 @@
     const audioLanguages = [
         { id: "zh", label: "CN" },
         { id: "en", label: "EN" },
-        { id: "ja", label: "JP" },
+        { id: "jp", label: "JP" },
         { id: "ko", label: "KO" },
     ];
     let selectedAudioLang = (browser && localStorage.getItem("operator_audio_lang")) || "en";

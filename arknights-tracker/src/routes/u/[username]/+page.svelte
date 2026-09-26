@@ -50,8 +50,8 @@
                 if (profile.details && profile.details.length > 0) {
                     if (urlUid && profile.details.some(d => d.game_uid === urlUid)) {
                         selectedGameUid = urlUid;
-                    } else if (urlServer && profile.details.some(d => String(d.info?.base?.serverId) === urlServer)) {
-                        const matched = profile.details.find(d => String(d.info?.base?.serverId) === urlServer);
+                    } else if (urlServer && profile.details.some(d => String(d.info?.base?.serverId ?? d.serverId) === urlServer)) {
+                        const matched = profile.details.find(d => String(d.info?.base?.serverId ?? d.serverId) === urlServer);
                         selectedGameUid = matched ? matched.game_uid : profile.details[0].game_uid;
                     } else {
                         const fav = favoriteGameUid;
@@ -290,6 +290,7 @@
                     <div class="min-w-0 md:col-span-2 2xl:col-span-1 2xl:col-start-2 2xl:row-start-1 2xl:row-span-2">
                         <OperatorSection
                             {activeAccount}
+                            profileName={profile?.name || username}
                             hasBackground={!!profile?.background}
                             initialCharId={initialChar}
                         />

@@ -816,7 +816,8 @@
         "load_failed": "ლიდერბორდის ჩატვირთვა ვერ მოხერხდა",
         "operators_in_team": "ოპერატორები რაზმში",
         "room": "ოთახი",
-        "stage": "ეტაპი"
+        "stage": "ეტაპი",
+        "agony": "აგონია"
     },
     "profile": {
         "title": "მოთამაშის პროფილი",
@@ -886,6 +887,9 @@
         "no_connected_accounts": "არ არის დაკავშირებული ანგარიში.",
         "edit_nickname": "სახელის შეცვლა",
         "copy_profile_link": "ბმულის კოპირება",
+        "share": "გაზიარება",
+        "download_png": "PNG-ის ჩამოტვირთვა",
+        "generating_image": "სურათი გენერირდება...",
         "link_copied": "დაკოპირდა!",
         "uid_copied": "UID დაკოპირდა!",
         "copy_uid": "UID კოპირება",

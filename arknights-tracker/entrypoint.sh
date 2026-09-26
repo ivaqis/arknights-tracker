@@ -25,4 +25,6 @@ cat > "$CONFIG_PATH" <<EOF
 window.__CONFIG__ = {$JSON_PARTS};
 EOF
 
+rm -f /app/build/client/config.js.gz /app/build/client/config.js.br
+
 exec "$@"

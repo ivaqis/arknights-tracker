@@ -880,7 +880,7 @@
                                             <div class="flex items-center gap-2.5 whitespace-nowrap shrink-0 w-fit">
                                                 <div class="flex items-center gap-2.5 group/user shrink-0">
                                                     {#if entry.user.picture && entry.user.avatar_strike === 0}
-                                                        <a href="/u/{entry.user.name}" class="shrink-0" on:click|stopPropagation>
+                                                        <a href="/u/{entry.user.name}{entry.serverId ? `?server=${entry.serverId}` : ''}" class="shrink-0" on:click|stopPropagation>
                                                             <img
                                                                 src={getAvatarUrl(entry.user.picture)}
                                                                 alt={entry.user.name}
@@ -888,14 +888,14 @@
                                                             />
                                                         </a>
                                                     {:else}
-                                                        <a href="/u/{entry.user.name}" class="shrink-0" on:click|stopPropagation>
+                                                        <a href="/u/{entry.user.name}{entry.serverId ? `?server=${entry.serverId}` : ''}" class="shrink-0" on:click|stopPropagation>
                                                             <div class="w-9 h-9 rounded-md bg-gray-200 border-gray-300 dark:bg-white/10 border dark:border-white/20 flex items-center justify-center text-gray-500 dark:text-white/70 font-bold text-xs shrink-0 select-none group-hover/user:bg-white/20 transition-colors">
                                                                 {entry.user.name ? entry.user.name[0].toUpperCase() : "?"}
                                                             </div>
                                                         </a>
                                                     {/if}
                                                     <div class="flex items-center gap-1 shrink-0">
-                                                        <a href="/u/{entry.user.name}" class="group font-bold text-gray-600 dark:text-white group-hover/user:text-[#FFE145] group-hover/user:dark:text-[#FFE145] transition-colors inline-flex items-center gap-1 shrink-0" on:click|stopPropagation>
+                                                        <a href="/u/{entry.user.name}{entry.serverId ? `?server=${entry.serverId}` : ''}" class="group font-bold text-gray-600 dark:text-white group-hover/user:text-[#FFE145] group-hover/user:dark:text-[#FFE145] transition-colors inline-flex items-center gap-1 shrink-0" on:click|stopPropagation>
                                                             <span>{entry.user.name}</span>
                                                             <Icon name="sendToLink" class="w-3 h-3 text-gray-600 dark:text-white group-hover/user:text-[#FFE145] group-hover/user:dark:text-[#FFE145] group-hover:text-[#FFE145] group-hover:dark:text-[#FFE145] transition-transform duration-200 shrink-0" />
                                                         </a>
@@ -1092,7 +1092,7 @@
                 </button>
 
                 <div class="border-b border-gray-200 dark:border-white/10 pb-3 mb-3">
-                    <a href="/u/{selectedEntry.user.name}" class="inline-flex items-center gap-4 group">
+                    <a href="/u/{selectedEntry.user.name}{selectedEntry.serverId ? `?server=${selectedEntry.serverId}` : ''}" class="inline-flex items-center gap-4 group">
                         {#if selectedEntry.user.picture && selectedEntry.user.avatar_strike === 0}
                             <img
                                 src={getAvatarUrl(selectedEntry.user.picture)}
