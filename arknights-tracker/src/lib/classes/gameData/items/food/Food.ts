@@ -2,9 +2,9 @@ import type { IFood } from "$lib/classes/gameData/items/food/IFood";
 import type { IFoodBuff } from "$lib/classes/gameData/items/food/IFoodBuff";
 import type { IItem } from "$lib/classes/gameData/items/IItem";
 import { Item } from "$lib/classes/gameData/items/Item";
-import type { ItemGroup } from "$lib/classes/gameData/items/ItemGroup";
-import type { ItemMaterial } from "$lib/classes/gameData/items/ItemMaterial";
-import type { ItemType } from "$lib/classes/gameData/items/ItemType";
+import  { type ItemGroup } from "$lib/classes/gameData/items/ItemGroup";
+import  { type ItemMaterial } from "$lib/classes/gameData/items/ItemMaterial";
+import  { type ItemType } from "$lib/classes/gameData/items/ItemType";
 import type { IImageIcon } from "$lib/classes/icons/IImageIcon";
 import type { Rarity } from "$lib/classes/Rarity";
 
@@ -40,5 +40,13 @@ export class Food extends Item implements IFood {
 
     public get buffs(): readonly IFoodBuff[] {
         return this._buffs;
+    }
+
+    public getBuff(buffId: string): IFoodBuff | null {
+        return this._buffs.find(buff => buff.buffId === buffId) ?? null;
+    }
+
+    public hasBuff(buffId: string): boolean {
+        return this._buffs.some(buff => buff.buffId === buffId);
     }
 }

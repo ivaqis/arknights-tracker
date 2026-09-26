@@ -55,3 +55,21 @@ export function getMappedList<K, V>(list: Iterable<V>, getKeyFn: (item: V) => K 
 
     return map;
 }
+
+export function isListItemsEqual<T>(listA: readonly T[], listB: readonly T[]): boolean {
+    if (!listA) {
+        return false;
+    }
+
+    const set = new Set(listB);
+
+    for (const item of listA) {
+        const wasDeleted = set.delete(item);
+
+        if (!wasDeleted) {
+            return false;
+        }
+    }
+
+    return set.size === 0;
+}

@@ -39,4 +39,12 @@ export class FoodBuff implements IFoodBuff {
     public get i18nKey(): string {
         return `buffNames.${this._buffId}`;
     }
+
+    public getBBEntry(key: string): ITextableBlackboardEntry | null {
+        return this._blackboard.find(entry => entry.key === key) ?? null;
+    }
+
+    public hasBBEntry(key: string): boolean {
+        return this._blackboard.some(entry => entry.key === key);
+    }
 }

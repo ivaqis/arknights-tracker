@@ -287,6 +287,51 @@ export function getDefaultItemSortParams() {
     };
 }
 
+export function getDefaultFoodSortParams() {
+    return {
+        sortFieldOrder: [
+            "buff",
+            "equipCond",
+            "rarity",
+            "locale",
+        ],
+        sortFieldParams: {
+            buff: [
+                "buff_common_heal_potion_1",
+                "buff_common_heal_potion_2",
+                "buff_common_heal_moss_1",
+                "buff_common_heal_moss_2",
+                "buff_common_ultsp_potion_1",
+                "buff_common_def_buff_potion_1",
+                "buff_common_def_buff_potion_2",
+                "buff_common_def_buff_potion_3",
+                "buff_common_resis_up_potion_1",
+                "buff_common_dmg_up_potion_1",
+                "buff_common_phydmg_up_potion_1",
+                "buff_common_mainattri_up_potion_1",
+                "buff_common_atk_buff_potion_1",
+                "buff_common_atk_buff_potion_2",
+                "buff_common_ctr_buff_potion_1",
+                "buff_common_usprt_buff_potion_1",
+                "buff_common_healrt_buff_potion_1",
+                "buff_common_healrt_buff_potion_2",
+                "buff_common_cdr_buff_potion_1",
+                "buff_common_dispel_potion",
+            ],
+            equipCond: [
+                "char_hp",
+                "char_down",
+                "arts_reaction",
+                "ult_energy",
+                "damage",
+                "null"
+            ],
+            rarity: [1, 2, 3, 4, 5],
+            locale: "a-z"
+        }
+    }
+}
+
 export const equipmentFilters = writable({});
 export const equipmentSearch = writable("");
 export const equipmentGroupMode = createPersistentStore('equipmentGroupMode', true);
@@ -311,6 +356,10 @@ export const itemFilters = writable({});
 export const itemSearch = writable("");
 export const itemSortParams = createPersistentStore("itemSortParams", getDefaultItemSortParams());
 export const itemGroupMode = createPersistentStore('itemGroupMode', true);
+
+export const foodFilters = writable({});
+export const foodSearch = writable("");
+export const foodSortParams = createPersistentStore("foodSortParams", getDefaultFoodSortParams());
 
 export const recordsExcludedBannerTypes = createPersistentStore('recordsExcludedBannerTypes', []);
 export const recordsExcludedBanners = createPersistentStore('recordsExcludedBanners', []);
