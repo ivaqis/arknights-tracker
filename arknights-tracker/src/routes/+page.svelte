@@ -949,7 +949,7 @@
           href="https://discord.gg/nqfuaRbWWn"
           target="_blank"
           rel="noreferrer"
-          class="w-full min-h-[60px] flex items-center justify-between p-4 bg-[#5865F2] hover:bg-[#4752C4] hover:border-white hover:border text-white rounded-xl shadow-sm transition-colors group"
+          class="w-full min-h-[60px] flex items-center justify-between p-4 bg-[#5865F2] hover:bg-[#4752C4] border border-transparent hover:border-white dark:hover:border-white text-white rounded-xl shadow-sm transition-colors group"
         >
           <div class="flex items-center gap-3">
             <Icon name="discord" class="w-6 h-6" />
@@ -965,7 +965,7 @@
           href="https://github.com/ivaqis/arknights-tracker"
           target="_blank"
           rel="noopener noreferrer"
-          class="w-full min-h-[60px] flex items-center justify-between p-4 bg-[#24292F] border border-gray-100 dark:border-[#333333] hover:bg-[#1C2128] hover:border-white hover:border text-white rounded-xl shadow-sm transition-colors group"
+          class="w-full min-h-[60px] flex items-center justify-between p-4 bg-[#24292F] border border-gray-100 dark:border-[#333333] hover:bg-[#1C2128] hover:border-white dark:hover:border-white text-white rounded-xl shadow-sm transition-colors group"
         >
           <div class="flex items-center">
             <Icon name="gitHubBig" class="h-[22px] w-auto text-white" />
