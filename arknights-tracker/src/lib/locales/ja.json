@@ -344,7 +344,8 @@
     "gearTemplate": "装備設計図",
     "blueprintLocation": "装備設計図の場所",
     "rewards": "報酬",
-    "dayN": "{n}日目"
+    "dayN": "{n}日目",
+    "addedInVersion": "バージョン{version}で追加"
   },
   "status": {
     "won": "勝利 50:50",
@@ -410,7 +411,8 @@
     "recipeTree": "レシピツリー",
     "openRecipe": "レシピを開く",
     "leaderboard": "ランキング",
-    "profile": "プロファイル"
+    "profile": "プロファイル",
+    "icons": "アイコン"
   },
   "events": {
     "type": {
@@ -2455,7 +2457,11 @@
     "stage": "ステージ",
     "monument_filter": "映像の記念碑",
     "monument_type": "分類",
-    "agony": "ハード"
+    "agony": "ハード",
+    "per_page": "表示件数",
+    "prev_page": "前のページ",
+    "next_page": "次のページ",
+    "page_info": "{total} ページ中 {current} ページ"
   },
   "profile": {
     "title": "プレイヤープロファイル",

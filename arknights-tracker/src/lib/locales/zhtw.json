@@ -347,7 +347,8 @@
     "gearTemplate": "裝備製造模板",
     "blueprintLocation": "裝備圖紙位置",
     "rewards": "獎勵",
-    "dayN": "第 {n} 天"
+    "dayN": "第 {n} 天",
+    "addedInVersion": "在 {version} 版本中新增"
   },
   "status": {
     "won": "勝出 50:50",
@@ -413,7 +414,8 @@
     "recipeTree": "配方鏈",
     "openRecipe": "打開配方",
     "leaderboard": "排行榜",
-    "profile": "個人資料"
+    "profile": "個人資料",
+    "icons": "圖標"
   },
   "events": {
     "type": {
@@ -2494,7 +2496,11 @@
     "stage": "關卡",
     "monument_filter": "影拓豐碑",
     "monument_type": "類別",
-    "agony": "苦難"
+    "agony": "苦難",
+    "per_page": "每頁顯示",
+    "prev_page": "上一頁",
+    "next_page": "下一頁",
+    "page_info": "第 {current} 頁，共 {total} 頁"
   },
   "profile": {
     "title": "玩家主頁",

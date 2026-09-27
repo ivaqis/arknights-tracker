@@ -347,7 +347,8 @@
     "gearTemplate": "Mẫu Trang Bị",
     "blueprintLocation": "Vị trí bản thiết kế trang bị",
     "rewards": "Phần thưởng",
-    "dayN": "Ngày {n}"
+    "dayN": "Ngày {n}",
+    "addedInVersion": "Đã thêm trong phiên bản {version}"
   },
   "status": {
     "won": "Thắng 50:50",
@@ -413,7 +414,8 @@
     "recipeTree": "Chuỗi công thức",
     "openRecipe": "Mở công thức",
     "leaderboard": "Bảng Xếp Hạng",
-    "profile": "Hồ Sơ"
+    "profile": "Hồ Sơ",
+    "icons": "Biểu tượng"
   },
   "events": {
     "type": {
@@ -2494,7 +2496,11 @@
     "stage": "Màn chơi",
     "monument_filter": "Đài Bóng Tối",
     "monument_type": "Loại",
-    "agony": "Đoạn Nộ"
+    "agony": "Đoạn Nộ",
+    "per_page": "Mỗi trang",
+    "prev_page": "Trang trước",
+    "next_page": "Trang sau",
+    "page_info": "Trang {current} / {total}"
   },
   "profile": {
     "title": "Hồ Sơ Người Chơi",

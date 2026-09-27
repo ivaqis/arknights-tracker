@@ -10,6 +10,7 @@
     import { currencies } from "$lib/data/items/currencies.js";
     import { characters } from "$lib/data/characters.js";
     import { weapons } from "$lib/data/weapons.js";
+    import { changelogData } from "$lib/data/versions.js";
     import { manualPotentials } from "$lib/stores/potentials";
     import { weaponEssences } from "$lib/stores/weaponEssences.js";
     import { accountStore } from "$lib/stores/accounts";
@@ -630,6 +631,7 @@
     })();
 
     $: rarityColor = getRarityColor(weaponBase.rarity);
+    $: addedVersion = changelogData.find((v) => v.weapons?.includes(id))?.version || (weapons[id] ? "1.0" : null);
 
     function interpolateBlackboard(text, bb) {
         if (!text || !bb) return text;
@@ -1296,13 +1298,26 @@
                 </div>
 
                 <div
-                    class="px-6 py-5 border-t border-gray-200 dark:border-[#444] bg-white dark:bg-[#383838] transition-colors"
+                    class="px-6 py-5 border-t border-gray-200 dark:border-[#444] bg-white dark:bg-[#383838] transition-colors flex flex-col gap-2"
                 >
-                    <p
-                        class="text-[13px] text-gray-500 dark:text-[#888] leading-relaxed text-justify"
-                    >
-                        {weaponLocale.decoDesc}
-                    </p>
+                    {#if weaponLocale.decoDesc}
+                        <p
+                            class="text-[13px] text-gray-500 dark:text-[#888] leading-relaxed text-justify"
+                        >
+                            {weaponLocale.decoDesc}
+                        </p>
+                    {/if}
+
+                    {#if addedVersion}
+                        <div class="flex justify-end pt-1">
+                            <a
+                                href="/changelog?version={addedVersion}"
+                                class="text-xs text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
+                            >
+                                {$t("systemNames.addedInVersion", { version: addedVersion })}
+                            </a>
+                        </div>
+                    {/if}
                 </div>
             </div>
         {/snippet}

@@ -344,7 +344,8 @@
     "gearTemplate": "장비 제작 템플릿",
     "blueprintLocation": "장비 도안 위치",
     "rewards": "보상",
-    "dayN": "{n}일차"
+    "dayN": "{n}일차",
+    "addedInVersion": "버전 {version}에 추가됨"
   },
   "status": {
     "won": "승리 50:50",
@@ -410,7 +411,8 @@
     "recipeTree": "레시피 트리",
     "openRecipe": "레시피 열기",
     "leaderboard": "리더보드",
-    "profile": "프로필"
+    "profile": "프로필",
+    "icons": "아이콘"
   },
   "events": {
     "type": {
@@ -2455,7 +2457,11 @@
     "stage": "스테이지",
     "monument_filter": "그림자 이정표",
     "monument_type": "분류",
-    "agony": "고난"
+    "agony": "고난",
+    "per_page": "페이지당",
+    "prev_page": "이전 페이지",
+    "next_page": "다음 페이지",
+    "page_info": "{total}페이지 중 {current}페이지"
   },
   "profile": {
     "title": "플레이어 프로필",

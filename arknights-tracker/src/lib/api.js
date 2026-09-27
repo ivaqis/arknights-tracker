@@ -498,7 +498,7 @@ export async function fetchLeaderboard(params = 'contract') {
             let sortOrder = options.sortOrder || (sortField === 'time' ? 'asc' : 'desc');
             const serverId = options.serverId || 'all';
             const page = String(options.page || '1');
-            const recordsOnPage = String(options.recordsOnPage || '100');
+            const recordsOnPage = String(options.recordsOnPage || '20');
             const charsFilter = options.charsFilter || '';
             const charCountFilter = options.charCountFilter || '';
 
@@ -517,28 +517,32 @@ export async function fetchLeaderboard(params = 'contract') {
             if (!res.ok) throw new Error('Failed to fetch monument leaderboard');
             const json = await res.json();
             const list = json.data?.list || [];
+            const totalCount = typeof json.data?.totalCount === 'number' ? json.data.totalCount : list.length;
 
-            return list.map(r => ({
-                id: r.recordId,
-                recordId: r.recordId,
-                user: {
-                    name: r.uid,
-                    picture: r.avatarId,
-                    avatar_strike: 0
-                },
-                level: r.level,
-                contractLevel: 0,
-                clear_time: r.passTs,
-                updatedAt: r.ts,
-                serverId: r.serverId,
-                chars: (r.chars || []).map(c => ({
-                    id: normalizeCharId(c.id),
-                    gameId: c.id,
-                    level: c.level,
-                    potential: c.potentialLevel,
-                    weapon: normalizeWeapon(c.weapon)
-                }))
-            }));
+            return {
+                list: list.map(r => ({
+                    id: r.recordId,
+                    recordId: r.recordId,
+                    user: {
+                        name: r.uid,
+                        picture: r.avatarId,
+                        avatar_strike: 0
+                    },
+                    level: r.level,
+                    contractLevel: 0,
+                    clear_time: r.passTs,
+                    updatedAt: r.ts,
+                    serverId: r.serverId,
+                    chars: (r.chars || []).map(c => ({
+                        id: normalizeCharId(c.id),
+                        gameId: c.id,
+                        level: c.level,
+                        potential: c.potentialLevel,
+                        weapon: normalizeWeapon(c.weapon)
+                    }))
+                })),
+                totalCount
+            };
         }
 
         let contractId = options.contractId || "indie_contract001";
@@ -546,7 +550,7 @@ export async function fetchLeaderboard(params = 'contract') {
         let sortOrder = "desc";
         let serverId = options.serverId || "all";
         let page = String(options.page || "1");
-        let recordsOnPage = String(options.recordsOnPage || "100");
+        let recordsOnPage = String(options.recordsOnPage || "20");
 
         if (options.sortField && options.sortField !== 'default') {
             sortField = options.sortField === 'contractLevel' ? 'indicatorCount' : options.sortField;
@@ -570,31 +574,38 @@ export async function fetchLeaderboard(params = 'contract') {
         if (!res.ok) throw new Error('Failed to fetch contract leaderboard');
         const json = await res.json();
         const list = json.data?.list || [];
+        const totalCount = typeof json.data?.totalCount === 'number' ? json.data.totalCount : list.length;
 
-        return list.map(r => ({
-            id: r.recordId,
-            recordId: r.recordId,
-            user: {
-                name: r.uid,
-                picture: r.avatarId,
-                avatar_strike: 0
-            },
-            level: r.level,
-            contractLevel: r.indicatorCount,
-            clear_time: r.passTs,
-            updatedAt: r.ts,
-            serverId: r.serverId,
-            chars: (r.chars || []).map(c => ({
-                id: normalizeCharId(c.id),
-                gameId: c.id,
-                level: c.level,
-                potential: c.potentialLevel,
-                weapon: normalizeWeapon(c.weapon)
-            }))
-        }));
+        return {
+            list: list.map(r => ({
+                id: r.recordId,
+                recordId: r.recordId,
+                user: {
+                    name: r.uid,
+                    picture: r.avatarId,
+                    avatar_strike: 0
+                },
+                level: r.level,
+                contractLevel: r.indicatorCount,
+                clear_time: r.passTs,
+                updatedAt: r.ts,
+                serverId: r.serverId,
+                chars: (r.chars || []).map(c => ({
+                    id: normalizeCharId(c.id),
+                    gameId: c.id,
+                    level: c.level,
+                    potential: c.potentialLevel,
+                    weapon: normalizeWeapon(c.weapon)
+                }))
+            })),
+            totalCount
+        };
     } catch (e) {
         console.error("fetchLeaderboard Error:", e);
-        return [];
+        return {
+            list: [],
+            totalCount: 0
+        };
     }
 }
 

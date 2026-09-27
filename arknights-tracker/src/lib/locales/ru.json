@@ -373,7 +373,8 @@
     "emptyPageMsg": "Как же тут пусто",
     "equipmentType": "Тип снаряжения",
     "gearTemplate": "Шаблон снаряжения",
-    "blueprintLocation": "Локация шаблона снаряжения"
+    "blueprintLocation": "Локация шаблона снаряжения",
+    "addedInVersion": "Добавлено в версии {version}"
   },
   "status": {
     "won": "Выигрыш 50:50",
@@ -441,7 +442,8 @@
     "recipeTree": "Цепочка рецептов",
     "openRecipe": "Открыть рецепты",
     "leaderboard": "Лидерборд",
-    "profile": "Профиль"
+    "profile": "Профиль",
+    "icons": "Иконки"
   },
   "events": {
     "type": {
@@ -2618,7 +2620,11 @@
     "monument_filter": "Сумрачный монумент",
     "difficulty": "Сложность",
     "room": "Комната",
-    "operators_in_team": "Оперативников в команде"
+    "operators_in_team": "Оперативников в команде",
+    "per_page": "На странице",
+    "prev_page": "Предыдущая страница",
+    "next_page": "Следующая страница",
+    "page_info": "Страница {current} из {total}"
   },
   "profile": {
     "title": "Профиль игрока",

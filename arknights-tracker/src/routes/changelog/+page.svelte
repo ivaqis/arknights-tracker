@@ -19,6 +19,7 @@
     import OperatorCard from "$lib/components/cards/OperatorCard.svelte";
     import Icon from "$lib/components/Icon.svelte";
     import Image from "$lib/components/Image.svelte";
+    import { page } from "$app/stores";
     import BannerModal from "$lib/components/modals/BannerModal.svelte";
 
     $: versionOptions = changelogData
@@ -32,7 +33,10 @@
 
     let bannerForModal = null;
 
-    $: if (!$selectedVersionStore && versionOptions.length > 0) {
+    $: urlVersion = $page.url.searchParams.get("version");
+    $: if (urlVersion && changelogData.some((v) => v.version === urlVersion)) {
+        $selectedVersionStore = urlVersion;
+    } else if (!$selectedVersionStore && versionOptions.length > 0) {
         $selectedVersionStore = versionOptions[0].value;
     }
 

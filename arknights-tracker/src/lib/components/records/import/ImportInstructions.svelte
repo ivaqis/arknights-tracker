@@ -8,7 +8,8 @@
         powerShellScript2,
         powerShellScript3,
         browserBookmarklet,
-        toolsdevBookmarklet
+        toolsdevBookmarklet,
+        endfieldtrackerBookmarklet
     } from "$lib/config/importScripts";
 
     export let platformTab = "pc-web";
@@ -186,7 +187,7 @@
                 {$t("import.step3")}
             </p>
         </div>
-    {:else if platformTab === "endmin" || platformTab === "toolsdev" || platformTab === "protorig" || platformTab === "trackmypulls"}
+    {:else if platformTab === "endmin" || platformTab === "toolsdev" || platformTab === "endfieldtracker" || platformTab === "protorig" || platformTab === "trackmypulls"}
         <div
             class="mb-6 p-3 bg-orange-50/70 dark:bg-orange-600/10 border-l-2 border-orange-500 rounded-r-lg max-w-4xl text-sm text-gray-600 dark:text-[#B7B6B3]"
         >
@@ -196,7 +197,27 @@
             {@html $t("import.tracker_backup_warning")}
         </div>
 
-        {#each [{ text: $t(`import.${platformTab}_step1`) }, { text: $t(`import.${platformTab}_step2`), code: platformTab === "toolsdev" ? toolsdevBookmarklet : null }, { text: $t(`import.${platformTab}_step3`) }] as step, i}
+        {#each [
+            { text: platformTab === "endfieldtracker"
+                ? (typeof $t("import.toolsdev_step1") === "string"
+                    ? $t("import.toolsdev_step1").replace(/https:\/\/endfieldtools\.dev/g, "https://endfieldtracker.com").replace(/endfieldtools\.dev/g, "endfieldtracker.com")
+                    : "Go to https://endfieldtracker.com")
+                : $t(`import.${platformTab}_step1`)
+            },
+            {
+                text: platformTab === "endfieldtracker"
+                    ? $t("import.toolsdev_step2")
+                    : $t(`import.${platformTab}_step2`),
+                code: platformTab === "toolsdev"
+                    ? toolsdevBookmarklet
+                    : (platformTab === "endfieldtracker" ? endfieldtrackerBookmarklet : null)
+            },
+            {
+                text: platformTab === "endfieldtracker"
+                    ? $t("import.toolsdev_step3")
+                    : $t(`import.${platformTab}_step3`)
+            }
+        ] as step, i}
             <div
                 class="relative border-l-2 pl-10 {i === 2 ? 'border-transparent pb-4' : 'border-gray-200 dark:border-[#FDFD1F]/50 pb-6'}"
             >

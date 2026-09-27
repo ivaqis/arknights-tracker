@@ -344,7 +344,8 @@
     "gearTemplate": "Gabarito de Equipamento",
     "blueprintLocation": "Localização do modelo de equipamento",
     "rewards": "Recompensas",
-    "dayN": "Dia {n}"
+    "dayN": "Dia {n}",
+    "addedInVersion": "Adicionado na versão {version}"
   },
   "status": {
     "won": "Ganho 50:50",
@@ -410,7 +411,8 @@
     "recipeTree": "Cadeia de receitas",
     "openRecipe": "Abrir receitas",
     "leaderboard": "Tabela de Classificação",
-    "profile": "Perfil"
+    "profile": "Perfil",
+    "icons": "Ícones"
   },
   "events": {
     "type": {
@@ -2455,7 +2457,11 @@
     "stage": "Fase",
     "monument_filter": "Monumento Umbral",
     "monument_type": "Tipo",
-    "agony": "Agonia"
+    "agony": "Agonia",
+    "per_page": "Por página",
+    "prev_page": "Página anterior",
+    "next_page": "Página seguinte",
+    "page_info": "Página {current} de {total}"
   },
   "profile": {
     "title": "Perfil do Jogador",

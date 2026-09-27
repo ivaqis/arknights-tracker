@@ -10,7 +10,7 @@ export interface GetMonumentGroupListQuery {
     sortOrder: SortOrder;
     serverId: GameServerId | "all";
     page: string;
-    recordsOnPage: "40" | "60" | "80" | "100";
+    recordsOnPage: "10" | "20" | "40" | "50" | "60" | "80" | "100";
     charsFilter: string;
     charCountFilter: string;
 }

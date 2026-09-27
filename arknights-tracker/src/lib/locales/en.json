@@ -375,7 +375,8 @@
     "emptyPageMsg": "It's so empty here",
     "equipmentType": "Equipment Type",
     "gearTemplate": "Gear Template",
-    "blueprintLocation": "Gear template location"
+    "blueprintLocation": "Gear template location",
+    "addedInVersion": "Added in version {version}"
   },
   "status": {
     "won": "Won 50:50",
@@ -441,7 +442,8 @@
     "recipeTree": "Recipe Chain",
     "openRecipe": "Open recipes",
     "leaderboard": "Leaderboard",
-    "profile": "Profile"
+    "profile": "Profile",
+    "icons": "Icons"
   },
   "events": {
     "type": {
@@ -2613,7 +2615,11 @@
     "monument_filter": "Umbral Monument",
     "difficulty": "Difficulty",
     "room": "Room",
-    "operators_in_team": "Operators in Squad"
+    "operators_in_team": "Operators in Squad",
+    "per_page": "Per page",
+    "prev_page": "Previous page",
+    "next_page": "Next page",
+    "page_info": "Page {current} of {total}"
   },
   "profile": {
     "title": "Player Profile",

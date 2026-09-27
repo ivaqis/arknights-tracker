@@ -8,7 +8,7 @@ import { Validator } from "@models/validation/Validator.js";
 import { crisisContractRecords } from "@staticModels/instances.js";
 
 export class GetContractListQueryValidator extends Validator<GetContractListQuery> {
-    public static readonly recordsOnPage = ["40", "60", "80", "100"] as const;
+    public static readonly recordsOnPage = ["10", "20", "40", "50", "60", "80", "100"] as const;
     private static readonly recordsOnPageSet = new Set(this.recordsOnPage);
 
     public constructor(item: GetContractListQuery) {
@@ -74,7 +74,7 @@ export class GetContractListQueryValidator extends Validator<GetContractListQuer
 
         return new ValidationRule(
             item => rule.isValid(item.recordsOnPage) && this.recordsOnPageSet.has(item.recordsOnPage),
-            "recordsOnPage must be 40 or 60 or 80 or 100"
+            "recordsOnPage must be one of: 10, 20, 40, 50, 60, 80, 100"
         );
     }
 }

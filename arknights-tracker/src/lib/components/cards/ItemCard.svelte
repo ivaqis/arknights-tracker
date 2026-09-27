@@ -98,7 +98,7 @@
     </div>
 
     <div class="bg-[#333] w-full min-h-[24px] flex items-center justify-center py-1 px-1 mt-[2px]">
-        <span class="text-white text-[10px] font-bold text-center leading-tight break-words">
+        <span class="text-white text-[10px] font-bold text-center leading-tight break-words select-text">
             {$t(`${translationPrefix}.${itemIdKey}`) || item.name}
         </span>
     </div>

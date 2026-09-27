@@ -344,7 +344,8 @@
     "gearTemplate": "Templat Gear",
     "blueprintLocation": "Lokasi Templat Perlengkapan",
     "rewards": "Hadiah",
-    "dayN": "Hari {n}"
+    "dayN": "Hari {n}",
+    "addedInVersion": "Ditambahkan di versi {version}"
   },
   "status": {
     "won": "Menang 50:50",
@@ -410,7 +411,8 @@
     "recipeTree": "Rantai Resep",
     "openRecipe": "Buka resep",
     "leaderboard": "Papan Peringkat",
-    "profile": "Profil"
+    "profile": "Profil",
+    "icons": "Ikon"
   },
   "events": {
     "type": {
@@ -2455,7 +2457,11 @@
     "stage": "Tahap",
     "monument_filter": "Monumen Umbra",
     "monument_type": "Tipe",
-    "agony": "Agoni"
+    "agony": "Agoni",
+    "per_page": "Per halaman",
+    "prev_page": "Halaman sebelumnya",
+    "next_page": "Halaman berikutnya",
+    "page_info": "Halaman {current} dari {total}"
   },
   "profile": {
     "title": "Profil Pemain",

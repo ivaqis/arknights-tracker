@@ -416,10 +416,10 @@
 <div
   class="min-h-screen w-full relative flex flex-col items-center py-10 px-4 sm:px-8 font-sans text-[#21272C] dark:text-[#FDFDFD]"
 >
-  <div
-    class="mb-6 transition-opacity hover:opacity-80 flex justify-center w-full"
-  >
-    <Icon name="siteLogo2" className="h-16 w-auto" />
+  <div class="mb-6 flex justify-center w-full">
+    <div class="transition-opacity hover:opacity-80 inline-flex">
+      <Icon name="siteLogo2" class="h-10 w-auto" />
+    </div>
   </div>
 
   <div
@@ -696,7 +696,7 @@
           {:else}
             {#each activePromocodes as promo}
               <div
-                class="flex flex-col md:flex-row md:items-center gap-3 md:gap-4 py-3 px-3 border-b border-gray-50 dark:border-[#444444]/30 last:border-0 hover:bg-gray-50 hover:dark:bg-[#343434] transition-colors rounded-lg group"
+                class="flex flex-col md:flex-row md:items-center gap-1 md:gap-4 py-2 md:py-3 px-2 md:px-3 border-b border-gray-50 dark:border-[#444444]/30 last:border-0 hover:bg-gray-50 hover:dark:bg-[#343434] transition-colors rounded-lg group"
               >
                 <div class="w-full md:w-auto md:max-w-[50%] shrink-0">
                   <div class="flex items-center gap-1.5">

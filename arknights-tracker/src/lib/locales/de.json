@@ -344,7 +344,8 @@
     "gearTemplate": "Ausrüstungsvorlage",
     "blueprintLocation": "Ausrüstungsvorlagen-Standort",
     "rewards": "Belohnungen",
-    "dayN": "Tag {n}"
+    "dayN": "Tag {n}",
+    "addedInVersion": "Hinzugefügt in Version {version}"
   },
   "status": {
     "won": "Gewonnen 50:50",
@@ -410,7 +411,8 @@
     "recipeTree": "Rezeptkette",
     "openRecipe": "Rezepte öffnen",
     "leaderboard": "Bestenliste",
-    "profile": "Profil"
+    "profile": "Profil",
+    "icons": "Icons"
   },
   "events": {
     "type": {
@@ -2455,7 +2457,11 @@
     "stage": "Stufe",
     "monument_filter": "Schattenmonument",
     "monument_type": "Typ",
-    "agony": "Tortur"
+    "agony": "Tortur",
+    "per_page": "Pro Seite",
+    "prev_page": "Vorherige Seite",
+    "next_page": "Nächste Seite",
+    "page_info": "Seite {current} von {total}"
   },
   "profile": {
     "title": "Spielerprofil",

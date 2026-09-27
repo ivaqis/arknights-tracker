@@ -344,7 +344,8 @@
     "gearTemplate": "Schema per l'equipaggiamento",
     "blueprintLocation": "Posizione modello equipaggiamento",
     "rewards": "Ricompense",
-    "dayN": "Giorno {n}"
+    "dayN": "Giorno {n}",
+    "addedInVersion": "Aggiunto nella versione {version}"
   },
   "status": {
     "won": "Vinto 50:50",
@@ -410,7 +411,8 @@
     "recipeTree": "Catena di ricette",
     "openRecipe": "Apri ricette",
     "leaderboard": "Classifica",
-    "profile": "Profilo"
+    "profile": "Profilo",
+    "icons": "Icone"
   },
   "events": {
     "type": {
@@ -2455,7 +2457,11 @@
     "stage": "Fase",
     "monument_filter": "Monumento d'ombra",
     "monument_type": "Tipologia",
-    "agony": "Agonia"
+    "agony": "Agonia",
+    "per_page": "Per pagina",
+    "prev_page": "Pagina precedente",
+    "next_page": "Pagina successiva",
+    "page_info": "Pagina {current} di {total}"
   },
   "profile": {
     "title": "Profilo Giocatore",

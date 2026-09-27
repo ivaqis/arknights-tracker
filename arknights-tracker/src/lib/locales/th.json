@@ -344,7 +344,8 @@
     "gearTemplate": "เทม​เพล​ต​อุปกรณ์",
     "blueprintLocation": "ตำแหน่งพิมพ์เขียวอุปกรณ์",
     "rewards": "รางวัล",
-    "dayN": "วันที่ {n}"
+    "dayN": "วันที่ {n}",
+    "addedInVersion": "เพิ่มในเวอร์ชัน {version}"
   },
   "status": {
     "won": "ชนะ 50:50",
@@ -410,7 +411,8 @@
     "recipeTree": "สายการผลิต",
     "openRecipe": "เปิดสูตรผลิต",
     "leaderboard": "กระดานผู้นำ",
-    "profile": "โปรไฟล์"
+    "profile": "โปรไฟล์",
+    "icons": "ไอคอน"
   },
   "events": {
     "type": {
@@ -2455,7 +2457,11 @@
     "stage": "ด่าน",
     "monument_filter": "อนุสาวรีย์​แห่ง​เงามืด",
     "monument_type": "ประเภท",
-    "agony": "ทรมาน"
+    "agony": "ทรมาน",
+    "per_page": "ต่อหน้า",
+    "prev_page": "หน้าก่อนหน้า",
+    "next_page": "หน้าถัดไป",
+    "page_info": "หน้า {current} จาก {total}"
   },
   "profile": {
     "title": "โปรไฟล์ผู้เล่น",

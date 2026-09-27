@@ -1885,6 +1885,12 @@
         <path d="M15 35H6V31L9 28H15V35Z" fill="currentColor"/>
     </symbol>
 
+    <symbol id="witchcraft" viewBox="0 0 41 39">
+        <path d="M0 8V0L16 17H8L0 8Z" fill="currentColor"/>
+        <path d="M5 25V17L17 29V12L10 4.5L14 1L20.5 7L26.5 1L30 5L24 12V18.5L41 0V8L24 27.5V34L29 39H12L15 35.5L5 25Z" fill="currentColor"/>
+        <path d="M31 31V23L36 18V26L31 31Z" fill="currentColor"/>
+    </symbol>
+
     <symbol id="heatRez" viewBox="0 0 23 32">
         <path d="M0 0H23V22L11.5 31.5L0 22V0Z" fill="#FE633D"/>
         <path
