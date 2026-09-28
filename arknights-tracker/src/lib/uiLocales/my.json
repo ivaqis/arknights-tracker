@@ -550,7 +550,18 @@
     "freePulls": "Tarikan percuma",
     "freeRate": "Kadar (Tarikan percuma)",
     "guaranteedCount": "Dijamin Keras",
-    "spentArsenal": "Tiket Arsenal Dibelanjakan"
+    "spentArsenal": "Tiket Arsenal Dibelanjakan",
+    "preset_48h": "48j",
+    "preset_1w": "1m",
+    "preset_1m": "1bln",
+    "preset_3m": "3bln",
+    "preset_6m": "6bln",
+    "preset_1y": "1thn",
+    "preset_3y": "3thn",
+    "preset_6y": "6thn",
+    "preset_9y": "9thn",
+    "preset_12y": "12thn",
+    "preset_max": "maks"
   },
   "settings": {
     "title": "Tetapan",

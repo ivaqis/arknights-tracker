@@ -1004,7 +1004,7 @@
                                 <div
                                     class="w-full text-gray-500 dark:text-[#B7B6B3] text-sm py-4 italic"
                                 >
-                                    {$t("systemNames.noMaterialsNeeded" || "No materials needed")}
+                                    {$t("systemNames.noMaterialsNeeded")}
                                 </div>
                             {/if}
                         </div>
@@ -1038,7 +1038,7 @@
                             {$t(`packs.${pack}`)}
                         </h2>
                     </div>
-                    <div class="flex flex-wrap gap-3">
+                    <div class="flex flex-wrap justify-center gap-3">
                         {#each setEquipment as eq (eq.id)}
                             <div class="relative w-[110px] h-[110px]">
                                 <WeaponCard

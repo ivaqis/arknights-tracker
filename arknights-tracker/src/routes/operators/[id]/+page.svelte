@@ -2265,7 +2265,7 @@
                                 </h2>
 
                                 <div
-                                    class="sticky top-16 md:top-4 z-20 self-start 2xl:self-end flex items-center gap-1.5 flex-wrap bg-white/90 dark:bg-[#2b2b2b]/95 backdrop-blur-md p-1.5 rounded-2xl border border-gray-200/80 dark:border-[#444] shadow-lg transition-all max-w-full"
+                                    class="sticky top-4 z-20 self-start 2xl:self-end flex items-center gap-1.5 flex-wrap bg-white/90 dark:bg-[#2b2b2b]/95 backdrop-blur-md p-1.5 rounded-2xl border border-gray-200/80 dark:border-[#444] shadow-lg transition-all max-w-full"
                                 >
                                     {#each audioLanguages as langOption}
                                         <button

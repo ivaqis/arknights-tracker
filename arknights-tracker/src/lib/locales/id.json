@@ -985,7 +985,18 @@
     "freeRate": "Rate (Tarikan gratis)",
     "guaranteedCount": "Hard Garansi",
     "pull_one": "Tarikan",
-    "spentArsenal": "Tiket Arsenal Terpakai"
+    "spentArsenal": "Tiket Arsenal Terpakai",
+    "preset_48h": "48j",
+    "preset_1w": "1m",
+    "preset_1m": "1bln",
+    "preset_3m": "3bln",
+    "preset_6m": "6bln",
+    "preset_1y": "1th",
+    "preset_3y": "3th",
+    "preset_6y": "6th",
+    "preset_9y": "9th",
+    "preset_12y": "12th",
+    "preset_max": "maks"
   },
   "settings": {
     "title": "Pengaturan",

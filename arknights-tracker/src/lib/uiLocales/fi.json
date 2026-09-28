@@ -550,7 +550,18 @@
     "freePulls": "Ilmaiset vedot",
     "freeRate": "Todennäköisyys (Ilmaiset vedot)",
     "guaranteedCount": "Taattu",
-    "spentArsenal": "Käytetyt arsenaaliliput"
+    "spentArsenal": "Käytetyt arsenaaliliput",
+    "preset_48h": "48 t",
+    "preset_1w": "1 vko",
+    "preset_1m": "1 kk",
+    "preset_3m": "3 kk",
+    "preset_6m": "6 kk",
+    "preset_1y": "1 v",
+    "preset_3y": "3 v",
+    "preset_6y": "6 v",
+    "preset_9y": "9 v",
+    "preset_12y": "12 v",
+    "preset_max": "maks"
   },
   "settings": {
     "title": "Asetukset",

@@ -985,7 +985,18 @@
     "freeRate": "Percentuale (Tiri gratuiti)",
     "guaranteedCount": "Garantito",
     "pull_one": "Tiro",
-    "spentArsenal": "Biglietti arsenale spesi"
+    "spentArsenal": "Biglietti arsenale spesi",
+    "preset_48h": "48h",
+    "preset_1w": "1sett",
+    "preset_1m": "1m",
+    "preset_3m": "3m",
+    "preset_6m": "6m",
+    "preset_1y": "1a",
+    "preset_3y": "3a",
+    "preset_6y": "6a",
+    "preset_9y": "9a",
+    "preset_12y": "12a",
+    "preset_max": "max"
   },
   "settings": {
     "title": "Impostazioni",

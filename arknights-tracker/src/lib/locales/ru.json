@@ -1146,7 +1146,18 @@
     "freeObtained": "Получено бесплатно",
     "freeRate": "Шанс (беспл.)",
     "freePulls": "Беспл. круток",
-    "guaranteedCount": "По гаранту"
+    "guaranteedCount": "По гаранту",
+    "preset_48h": "48ч",
+    "preset_1w": "1н",
+    "preset_1m": "1м",
+    "preset_3m": "3м",
+    "preset_6m": "6м",
+    "preset_1y": "1г",
+    "preset_3y": "3г",
+    "preset_6y": "6л",
+    "preset_9y": "9л",
+    "preset_12y": "12л",
+    "preset_max": "макс"
   },
   "settings": {
     "title": "Настройки",

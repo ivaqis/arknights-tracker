@@ -1024,7 +1024,18 @@
     "freePulls": "免费寻访",
     "freeRate": "概率（免费寻访）",
     "guaranteedCount": "大保底",
-    "spentArsenal": "已消耗军械抽卡券"
+    "spentArsenal": "已消耗军械抽卡券",
+    "preset_48h": "48小时",
+    "preset_1w": "1周",
+    "preset_1m": "1个月",
+    "preset_3m": "3个月",
+    "preset_6m": "6个月",
+    "preset_1y": "1年",
+    "preset_3y": "3年",
+    "preset_6y": "6年",
+    "preset_9y": "9年",
+    "preset_12y": "12年",
+    "preset_max": "全部"
   },
   "settings": {
     "title": "设置",

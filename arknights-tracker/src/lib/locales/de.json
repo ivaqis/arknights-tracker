@@ -985,7 +985,18 @@
     "freeRate": "Rate (Kostenlose Ziehungen)",
     "guaranteedCount": "Garantiert",
     "pull_one": "Ziehung",
-    "spentArsenal": "Arsenal-Tickets ausgegeben"
+    "spentArsenal": "Arsenal-Tickets ausgegeben",
+    "preset_48h": "48h",
+    "preset_1w": "1W",
+    "preset_1m": "1M",
+    "preset_3m": "3M",
+    "preset_6m": "6M",
+    "preset_1y": "1J",
+    "preset_3y": "3J",
+    "preset_6y": "6J",
+    "preset_9y": "9J",
+    "preset_12y": "12J",
+    "preset_max": "max"
   },
   "settings": {
     "title": "Einstellungen",

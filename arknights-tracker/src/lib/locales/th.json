@@ -985,7 +985,18 @@
     "freeRate": "อัตรา (สุ่มฟรี)",
     "guaranteedCount": "การันตี",
     "pull_one": "การสุ่ม",
-    "spentArsenal": "ตั๋วคลังอาวุธที่ใช้ไป"
+    "spentArsenal": "ตั๋วคลังอาวุธที่ใช้ไป",
+    "preset_48h": "48 ชม.",
+    "preset_1w": "1 ส.",
+    "preset_1m": "1 ด.",
+    "preset_3m": "3 ด.",
+    "preset_6m": "6 ด.",
+    "preset_1y": "1 ปี",
+    "preset_3y": "3 ปี",
+    "preset_6y": "6 ปี",
+    "preset_9y": "9 ปี",
+    "preset_12y": "12 ปี",
+    "preset_max": "สูงสุด"
   },
   "settings": {
     "title": "การตั้งค่า",

@@ -985,7 +985,18 @@
     "freeRate": "확률 (무료 헤드헌팅)",
     "guaranteedCount": "확정",
     "pull_one": "뽑기",
-    "spentArsenal": "사용된 무기고 티켓"
+    "spentArsenal": "사용된 무기고 티켓",
+    "preset_48h": "48시간",
+    "preset_1w": "1주",
+    "preset_1m": "1개월",
+    "preset_3m": "3개월",
+    "preset_6m": "6개월",
+    "preset_1y": "1년",
+    "preset_3y": "3년",
+    "preset_6y": "6년",
+    "preset_9y": "9년",
+    "preset_12y": "12년",
+    "preset_max": "최대"
   },
   "settings": {
     "title": "설정",

@@ -705,7 +705,7 @@
     </div>
 
     <div
-        class="bg-white p-8 md:p-12 rounded-xl dark:bg-[#383838] dark:border-[#444444] shadow-sm border border-gray-100 relative min-h-[400px]"
+        class="bg-white p-5 md:p-12 rounded-xl dark:bg-[#383838] dark:border-[#444444] shadow-sm border border-gray-100 relative min-h-[400px]"
     >
         <div
             class="bg-white dark:bg-[#343434] border border-gray-200 dark:border-[#444444] rounded-xl p-4 mb-3 shadow-sm"

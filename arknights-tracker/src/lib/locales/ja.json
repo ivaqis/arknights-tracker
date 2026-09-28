@@ -985,7 +985,18 @@
     "freeRate": "確率（無料スカウト）",
     "guaranteedCount": "確定",
     "pull_one": "スカウト",
-    "spentArsenal": "消費した兵械引換券"
+    "spentArsenal": "消費した兵械引換券",
+    "preset_48h": "48時間",
+    "preset_1w": "1週間",
+    "preset_1m": "1ヶ月",
+    "preset_3m": "3ヶ月",
+    "preset_6m": "6ヶ月",
+    "preset_1y": "1年",
+    "preset_3y": "3年",
+    "preset_6y": "6年",
+    "preset_9y": "9年",
+    "preset_12y": "12年",
+    "preset_max": "最大"
   },
   "settings": {
     "title": "設定",

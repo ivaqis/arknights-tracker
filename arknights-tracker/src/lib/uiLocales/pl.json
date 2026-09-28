@@ -550,7 +550,18 @@
     "freePulls": "Darmowe losowania",
     "freeRate": "Szansa (Darmowe losowania)",
     "guaranteedCount": "Twardy gwarant",
-    "spentArsenal": "Zużyte bilety arsenału"
+    "spentArsenal": "Zużyte bilety arsenału",
+    "preset_48h": "48g",
+    "preset_1w": "1t",
+    "preset_1m": "1m",
+    "preset_3m": "3m",
+    "preset_6m": "6m",
+    "preset_1y": "1r",
+    "preset_3y": "3l",
+    "preset_6y": "6l",
+    "preset_9y": "9l",
+    "preset_12y": "12l",
+    "preset_max": "maks"
   },
   "settings": {
     "title": "Ustawienia",

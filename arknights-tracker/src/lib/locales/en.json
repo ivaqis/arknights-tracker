@@ -1134,7 +1134,7 @@
     "noData": "No Data",
     "won": "Won",
     "pulls": "pulls",
-    "roll": "Roll",
+    "roll": "Pull",
     "percent": "Percent",
     "pull_one": "Pull",
     "free": "Free",
@@ -1142,7 +1142,18 @@
     "freeRate": "Rate (Free pulls)",
     "freeCount": "Free Count",
     "freePulls": "Free pulls",
-    "guaranteedCount": "Hard Guaranteed"
+    "guaranteedCount": "Hard Guaranteed",
+    "preset_48h": "48h",
+    "preset_1w": "1w",
+    "preset_1m": "1m",
+    "preset_3m": "3m",
+    "preset_6m": "6m",
+    "preset_1y": "1y",
+    "preset_3y": "3y",
+    "preset_6y": "6y",
+    "preset_9y": "9y",
+    "preset_12y": "12y",
+    "preset_max": "max"
   },
   "settings": {
     "title": "Settings",

@@ -550,7 +550,18 @@
     "freePulls": "უფასო გათამაშებები",
     "freeRate": "შანსი (უფასო გათამაშებები)",
     "guaranteedCount": "გარანტირებული",
-    "spentArsenal": "დახარჯული არსენალის ბილეთები"
+    "spentArsenal": "დახარჯული არსენალის ბილეთები",
+    "preset_48h": "48 სთ",
+    "preset_1w": "1 კვ",
+    "preset_1m": "1 თვე",
+    "preset_3m": "3 თვე",
+    "preset_6m": "6 თვე",
+    "preset_1y": "1 წ",
+    "preset_3y": "3 წ",
+    "preset_6y": "6 წ",
+    "preset_9y": "9 წ",
+    "preset_12y": "12 წ",
+    "preset_max": "მაქს"
   },
   "settings": {
     "title": "პარამეტრები",

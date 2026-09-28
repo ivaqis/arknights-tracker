@@ -550,7 +550,18 @@
     "freePulls": "Тегін айналдырулар",
     "freeRate": "Мөлшерлеме (Тегін айналдырулар)",
     "guaranteedCount": "Кепілдендірілген",
-    "spentArsenal": "Жұмсалған арсенал билеттері"
+    "spentArsenal": "Жұмсалған арсенал билеттері",
+    "preset_48h": "48 сағ",
+    "preset_1w": "1 апта",
+    "preset_1m": "1 ай",
+    "preset_3m": "3 ай",
+    "preset_6m": "6 ай",
+    "preset_1y": "1 жыл",
+    "preset_3y": "3 жыл",
+    "preset_6y": "6 жыл",
+    "preset_9y": "9 жыл",
+    "preset_12y": "12 жыл",
+    "preset_max": "макс"
   },
   "settings": {
     "title": "Баптаулар",

@@ -985,7 +985,18 @@
     "freeRate": "Taux (Tirages gratuits)",
     "guaranteedCount": "Garanti",
     "pull_one": "Tirage",
-    "spentArsenal": "Tickets d'arsenal dépensés"
+    "spentArsenal": "Tickets d'arsenal dépensés",
+    "preset_48h": "48h",
+    "preset_1w": "1sem",
+    "preset_1m": "1m",
+    "preset_3m": "3m",
+    "preset_6m": "6m",
+    "preset_1y": "1an",
+    "preset_3y": "3ans",
+    "preset_6y": "6ans",
+    "preset_9y": "9ans",
+    "preset_12y": "12ans",
+    "preset_max": "max"
   },
   "settings": {
     "title": "Paramètres",

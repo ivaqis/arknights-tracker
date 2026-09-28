@@ -1024,7 +1024,18 @@
     "freePulls": "Lượt quay miễn phí",
     "freeRate": "Tỷ lệ (Lượt quay miễn phí)",
     "guaranteedCount": "Bảo hiểm",
-    "spentArsenal": "Vé kho vũ khí đã dùng"
+    "spentArsenal": "Vé kho vũ khí đã dùng",
+    "preset_48h": "48g",
+    "preset_1w": "1t",
+    "preset_1m": "1th",
+    "preset_3m": "3th",
+    "preset_6m": "6th",
+    "preset_1y": "1n",
+    "preset_3y": "3n",
+    "preset_6y": "6n",
+    "preset_9y": "9n",
+    "preset_12y": "12n",
+    "preset_max": "tối đa"
   },
   "settings": {
     "title": "Cài đặt",

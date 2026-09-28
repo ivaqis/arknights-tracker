@@ -550,7 +550,18 @@
     "freePulls": "Безкоштовні крутки",
     "freeRate": "Шанс (Безкоштовні крутки)",
     "guaranteedCount": "За гарантом",
-    "spentArsenal": "Витрачено квитків арсеналу"
+    "spentArsenal": "Витрачено квитків арсеналу",
+    "preset_48h": "48г",
+    "preset_1w": "1т",
+    "preset_1m": "1м",
+    "preset_3m": "3м",
+    "preset_6m": "6м",
+    "preset_1y": "1р",
+    "preset_3y": "3р",
+    "preset_6y": "6р",
+    "preset_9y": "9р",
+    "preset_12y": "12р",
+    "preset_max": "макс"
   },
   "settings": {
     "title": "Налаштування",

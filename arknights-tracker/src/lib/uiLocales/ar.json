@@ -550,7 +550,18 @@
     "freePulls": "سحبات مجانية",
     "freeRate": "النسبة (سحبات مجانية)",
     "guaranteedCount": "مضمون مؤكد",
-    "spentArsenal": "تذاكر الترسانة المستهلكة"
+    "spentArsenal": "تذاكر الترسانة المستهلكة",
+    "preset_48h": "48 س",
+    "preset_1w": "1 أس",
+    "preset_1m": "1 ش",
+    "preset_3m": "3 ش",
+    "preset_6m": "6 ش",
+    "preset_1y": "1 س",
+    "preset_3y": "3 س",
+    "preset_6y": "6 س",
+    "preset_9y": "9 س",
+    "preset_12y": "12 س",
+    "preset_max": "الكل"
   },
   "settings": {
     "title": "الإعدادات",
