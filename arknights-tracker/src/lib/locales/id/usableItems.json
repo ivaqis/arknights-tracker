@@ -1,0 +1,257 @@
+{
+    "item_agfly_1_agmelee_1_moss_2_1": {
+        "desc": "Gunakan item ini untuk memulihkan <@ba.vup>{triggerheal2:0%}</> HP Maks per detik plus <@ba.vup>{triggerheal:0}</> HP. Durasi: <@ba.vup>{duration:0}</> dtk."
+    },
+    "item_agmelee_1_moss_1_lbmob_1_1": {
+        "desc": "Gunakan item ini untuk langsung memulihkan <@ba.vup>{value2:0%}</> HP Maks plus <@ba.vup>{value:0}</> HP."
+    },
+    "item_agmelee_1_sp_2_slimeml_1_1": {
+        "desc": "Gunakan item ini untuk mendapatkan DEF +<@ba.vup>{value:0%}</>. Durasi: <@ba.vup>{duration:0}</> dtk."
+    },
+    "item_agrange_1_erhound_1_sp_1_1": {
+        "desc": "Gunakan item ini untuk mendapatkan ATK +<@ba.vup>{value:0%}</>. Durasi: <@ba.vup>{duration:0}</> dtk."
+    },
+    "item_agrange_1_lbshamman_bottled_1": {
+        "desc": "Gunakan item ini untuk mendapatkan Pengurangan DMG +<@ba.vup>{1-value:0%}</> terhadap semua bentuk DMG. Durasi: <@ba.vup>{duration:0}</> dtk."
+    },
+    "item_agrange_1_moss_2_lbmob_1_1": {
+        "desc": "Gunakan item ini untuk mendapatkan DEF +<@ba.vup>{buff_common_def_buff_potion_1\\value:0%}</>. Durasi: <@ba.vup>{buff_common_def_buff_potion_1\\duration:0}</> dtk."
+    },
+    "item_bottled_flower1spc_1": {
+        "desc": "Gunakan item ini untuk langsung memulihkan <@ba.vup>{value2:0%}</> HP Maks plus <@ba.vup>{value:0}</> HP."
+    },
+    "item_bottled_flower1spc_2": {
+        "desc": "Gunakan item ini untuk langsung memulihkan <@ba.vup>{value2:0%}</> HP Maks plus <@ba.vup>{value:0}</> HP."
+    },
+    "item_bottled_flower1spc_3": {
+        "desc": "Gunakan item ini untuk langsung memulihkan <@ba.vup>{value2:0%}</> HP Maks plus <@ba.vup>{value:0}</> HP."
+    },
+    "item_bottled_flower2spc_1": {
+        "desc": "Gunakan item ini untuk memulihkan <@ba.vup>{triggerheal2:0%}</> HP Maks per detik plus <@ba.vup>{triggerheal:0}</> HP. Durasi: <@ba.vup>{duration:0}</> dtk."
+    },
+    "item_bottled_flower2spc_2": {
+        "desc": "Gunakan item ini untuk memulihkan <@ba.vup>{triggerheal2:0%}</> HP Maks per detik plus <@ba.vup>{triggerheal:0}</> HP. Durasi: <@ba.vup>{duration:0}</> dtk."
+    },
+    "item_bottled_flower2spc_3": {
+        "desc": "Gunakan item ini untuk memulihkan <@ba.vup>{triggerheal2:0%}</> HP Maks per detik plus <@ba.vup>{triggerheal:0}</> HP. Durasi: <@ba.vup>{duration:0}</> dtk."
+    },
+    "item_bottled_food_1": {
+        "desc": "Gunakan item ini untuk memulihkan <@ba.vup>{triggerheal:0}</> HP per detik selama <@ba.vup>{duration:0}</> dtk."
+    },
+    "item_bottled_food_2": {
+        "desc": "Gunakan item ini untuk memulihkan <@ba.vup>{triggerheal:0}</> HP per detik selama <@ba.vup>{duration:0}</> dtk."
+    },
+    "item_bottled_food_3": {
+        "desc": "Gunakan item ini untuk memulihkan <@ba.vup>{triggerheal:0}</> HP per detik selama <@ba.vup>{duration:0}</> dtk."
+    },
+    "item_bottled_food_4": {
+        "desc": "Gunakan item ini untuk langsung memulihkan <@ba.vup>{value:0}</> HP."
+    },
+    "item_bottled_food_5": {
+        "desc": "Gunakan item ini untuk langsung memulihkan <@ba.vup>{value:0}</> HP."
+    },
+    "item_bottled_grass1spc_1": {
+        "desc": "Gunakan item ini untuk langsung memulihkan <@ba.vup>{value2:0%}</> HP Maks plus <@ba.vup>{value:0}</> HP."
+    },
+    "item_bottled_grass1spc_2": {
+        "desc": "Gunakan item ini untuk langsung memulihkan <@ba.vup>{value2:0%}</> HP Maks plus <@ba.vup>{value:0}</> HP."
+    },
+    "item_bottled_grass2spc_1": {
+        "desc": "Gunakan item ini untuk memulihkan <@ba.vup>{triggerheal2:0%}</> HP Maks per detik plus <@ba.vup>{triggerheal:0}</> HP. Durasi: <@ba.vup>{duration:0}</> dtk."
+    },
+    "item_bottled_grass2spc_2": {
+        "desc": "Gunakan item ini untuk memulihkan <@ba.vup>{triggerheal2:0%}</> HP Maks per detik plus <@ba.vup>{triggerheal:0}</> HP. Durasi: <@ba.vup>{duration:0}</> dtk."
+    },
+    "item_bottled_insec1_1": {
+        "desc": "Gunakan item ini untuk langsung membangkitkan rekan tim yang tak sadarkan diri dan memberinya <@ba.vup>10%</> HP Maks."
+    },
+    "item_bottled_insec1_2": {
+        "desc": "Gunakan item ini untuk langsung membangkitkan rekan tim yang tak sadarkan diri dan memberinya <@ba.vup>30%</> HP Maks."
+    },
+    "item_bottled_insec2_1": {
+        "desc": "Gunakan item ini untuk mendapatkan DMG Dealt +<@ba.vup>{buff_common_dmg_up_potion_1\\value:0%}</> untuk semua bentuk DMG. Durasi: <@ba.vup>{buff_common_dmg_up_potion_1\\duration:0}</> dtk."
+    },
+    "item_bottled_insec2_2": {
+        "desc": "Gunakan item ini untuk mendapatkan DMG Dealt +<@ba.vup>{buff_common_dmg_up_potion_1\\value:0%}</> untuk semua bentuk DMG. Durasi: <@ba.vup>{buff_common_dmg_up_potion_1\\duration:0}</> dtk."
+    },
+    "item_bottled_moss_1_2_1": {
+        "desc": "Gunakan item ini untuk mendapatkan Efisiensi Perolehan Ultimate +<@ba.vup>{value:0%}</>. Durasi: <@ba.vup>{duration:0}</> dtk."
+    },
+    "item_bottled_moss_2_animal_1": {
+        "desc": "Gunakan item ini untuk langsung memulihkan <@ba.vup>{value2:0%}</> HP Maks plus <@ba.vup>{value:0}</> HP."
+    },
+    "item_bottled_rec_hp_1": {
+        "desc": "Gunakan item ini untuk langsung memulihkan <@ba.vup>{value:0}</> HP."
+    },
+    "item_bottled_rec_hp_2": {
+        "desc": "Gunakan item ini untuk langsung memulihkan <@ba.vup>{value:0}</> HP."
+    },
+    "item_bottled_rec_hp_3": {
+        "desc": "Gunakan item ini untuk langsung memulihkan <@ba.vup>{value:0}</> HP."
+    },
+    "item_bottled_rec_hp_4": {
+        "desc": "Gunakan item ini untuk memulihkan <@ba.vup>{triggerheal:0}</> HP per detik selama <@ba.vup>{duration:0}</> dtk."
+    },
+    "item_bottled_rec_hp_5": {
+        "desc": "Gunakan item ini untuk memulihkan <@ba.vup>{triggerheal:0}</> HP per detik selama <@ba.vup>{duration:0}</> dtk."
+    },
+    "item_cbp_voucher_originium": {
+        "desc": "Item habis pakai. Saat digunakan, item ini akan menunjukkan lokasi Talosite baru di area yang sedang dikunjungi. Bisa digunakan hanya setelah semua tempat yang tertutup kabut di peta sudah dikunjungi. Item ini hanya bisa digunakan di Wuling."
+    },
+    "item_cbp_voucher_pay": {
+        "desc": "Item habis pakai. Saat digunakan, item ini akan menunjukkan lokasi Talosite baru di area yang sedang dikunjungi. Bisa digunakan hanya setelah semua tempat yang tertutup kabut di peta sudah dikunjungi. Item ini hanya bisa digunakan di Wuling."
+    },
+    "item_corp1_animal_1": {
+        "desc": "Gunakan item ini untuk langsung memulihkan <@ba.vup>{value2:0%}</> HP Maks plus <@ba.vup>{value:0}</> HP."
+    },
+    "item_corp2_animal_1": {
+        "desc": "Gunakan item ini untuk <#ba.dispel>menghalau</> <#ba.spellinflictonchar>Arts Infliction</> dan <#ba.spellinflictonchar>Arts Reaction</>, lalu langsung memulihkan <@ba.vup>{value2:0%}</> HP Maks plus <@ba.vup>{value:0}</> HP."
+    },
+    "item_corp3_animal_1": {
+        "desc": "Gunakan item ini untuk mendapatkan ATK +<@ba.vup>{buff_common_atk_buff_potion_2\\value:0}</> dan Critical Rate +<@ba.vup>{buff_common_ctr_buff_potion_1\\value:0%}</>. Durasi: <@ba.vup>{buff_common_atk_buff_potion_2\\duration:0}</> dtk."
+    },
+    "item_corp3_grass1_1": {
+        "desc": "Gunakan item ini untuk mendapatkan Critical Rate +<@ba.vup>{buff_common_ctr_buff_potion_1\\value:0%}</> dan Semua Damage +<@ba.vup>{buff_common_dmg_up_potion_1\\value:0%}</>. Durasi: <@ba.vup>{buff_common_ctr_buff_potion_1\\duration:0}</> dtk."
+    },
+    "item_corp4_animal_1": {
+        "desc": "Gunakan item ini untuk mendapatkan DEF +<@ba.vup>{value:0%}</>. Durasi: <@ba.vup>{duration:0}</> dtk."
+    },
+    "item_corp4_grass2_1": {
+        "desc": "Gunakan item ini untuk langsung memulihkan <@ba.vup>{value2:0%}</> HP Maks plus <@ba.vup>{value:0}</> HP."
+    },
+    "item_corp4_spc": {
+        "desc": "Gunakan item ini untuk langsung mendapatkan <@ba.vup>{value:0%}</> Energi Ultimate."
+    },
+    "item_dog_1_slimeml_1_1": {
+        "desc": "Gunakan item ini untuk langsung mendapatkan <@ba.vup>{value:0%}</> Energi Ultimate."
+    },
+    "item_dog_hsmob_corp_1": {
+        "desc": "Gunakan item ini untuk seluruh tim untuk langsung memulihkan <@ba.vup>{value2:0%}</> HP Maks plus <@ba.vup>{value:0}</> HP."
+    },
+    "item_erhound_1_agmelee_1_moss_1_1": {
+        "desc": "Gunakan item ini untuk mendapatkan Pengurangan DMG +<@ba.vup>{1-value:0%}</> terhadap semua bentuk DMG. Durasi: <@ba.vup>{duration:0}</> dtk."
+    },
+    "item_ethillu_1_wgslime_1_wgthorns_1_1": {
+        "desc": "Gunakan item ini untuk mempersingkat CD Skill Kombo sebesar <@ba.vup>{1-value:0%}</>. Durasi: <@ba.vup>{duration:0}</> dtk."
+    },
+    "item_firebat_1_agrange_1_1": {
+        "desc": "Gunakan item ini untuk mendapatkan ATK +<@ba.vup>{buff_common_atk_buff_potion_1\\value:0%}</>, Critical Rate +<@ba.vup>{buff_common_ctr_buff_potion_1\\value:0%}</>, dan Semua Damage +<@ba.vup>{buff_common_dmg_up_potion_1\\value:0%}</>. Durasi: <@ba.vup>{buff_common_atk_buff_potion_1\\duration:0}</> dtk."
+    },
+    "item_hscrane_1_hsmob_1_grass_1_1": {
+        "desc": "Gunakan item ini untuk langsung memulihkan <@ba.vup>{value2:0%}</> HP Maks plus <@ba.vup>{value:0}</> HP."
+    },
+    "item_hsfly_1_slimeml_1_hsmob_1_1": {
+        "desc": "Gunakan item ini untuk mendapatkan Critical Rate +<@ba.vup>{value:0%}</>. Durasi: <@ba.vup>{duration:0}</> dtk."
+    },
+    "item_hshog_1_hsmob_1_slimeml_1_1": {
+        "desc": "Gunakan item ini untuk mendapatkan DEF +<@ba.vup>{buff_common_def_buff_potion_2\\value:0}</> dan Pengurangan DMG +<@ba.vup>{1-buff_common_resis_up_potion_1\\value:0%}</> terhadap semua bentuk DMG. Durasi: <@ba.vup>{buff_common_resis_up_potion_1\\duration:0}</> dtk."
+    },
+    "item_hsmob_1_dog_1_1": {
+        "desc": "Gunakan item ini untuk mendapatkan Efisiensi Perolehan Ultimate +<@ba.vup>{buff_common_usprt_buff_potion_1\\value:0%}</> dan Bonus Treatment yang Diterima +<@ba.vup>{buff_common_healrt_buff_potion_2\\value:0%}</>. Durasi: <@ba.vup>{buff_common_usprt_buff_potion_1\\duration:0}</> dtk."
+    },
+    "item_hsmob_1_grass_2_1": {
+        "desc": "Gunakan item ini untuk memulihkan <@ba.vup>{triggerheal2:0%}</> HP Maks per detik plus <@ba.vup>{triggerheal:0}</> HP. Durasi: <@ba.vup>{duration:0}</> dtk."
+    },
+    "item_jzmonk_1_hsmob_1_1": {
+        "desc": "Gunakan ini untuk mendapatkan Critical Rate +<@ba.vup>{buff_common_ctr_buff_potion_1\\value:0%}</>, tapi dengan mengorbankan DEF sebesar <@ba.vup>{-buff_common_def_buff_potion_3\\value:0%}</>. Durasi: <@ba.vup>{buff_common_ctr_buff_potion_1\\duration:0}</> dtk."
+    },
+    "item_klbuds_1_hsfly_1_1": {
+        "desc": "Gunakan item ini untuk mendapatkan <@ba.vup>{buff_common_def_buff_potion_1\\value:0%}</> DEF dan Pengurangan DMG <@ba.vup>{1-buff_common_resis_up_potion_1\\value:0%}</> terhadap semua bentuk DMG. Durasi: <@ba.vup>{buff_common_def_buff_potion_1\\duration:0}</> dtk."
+    },
+    "item_klcreatures_1_wgthorns_1_1": {
+        "desc": "Gunakan item ini untuk mendapatkan Efisiensi Perolehan Ultimate +<@ba.vup>{value:0%}</>. Durasi: <@ba.vup>{duration:0}</> dtk."
+    },
+    "item_lbmob_1_dog_1_moss_1_1": {
+        "desc": "Gunakan item ini untuk mendapatkan Semua Atribut +<@ba.vup>{value:0}</>. Durasi: <@ba.vup>{duration:0}</> dtk."
+    },
+    "item_lbmob_1_lbshamman_1_sp_1_1": {
+        "desc": "Gunakan item ini untuk seluruh tim untuk memulihkan <@ba.vup>{triggerheal2:0%}</> HP Maks per detik plus <@ba.vup>{triggerheal:0}</> HP. Durasi: <@ba.vup>{duration:0}</> dtk."
+    },
+    "item_lbmob_1_moss_2_bottled_1": {
+        "desc": "Gunakan item ini untuk <#ba.dispel>menghalau</> <#ba.spellinflictonchar>Arts Infliction</> dan <#ba.spellinflictonchar>Arts Reaction</>, lalu langsung memulihkan <@ba.vup>{value2:0%}</> HP Maks plus <@ba.vup>{value:0}</> HP."
+    },
+    "item_lbshamman_1_agmelee_1_1": {
+        "desc": "Gunakan item ini untuk seluruh tim untuk langsung memulihkan <@ba.vup>{value2:0%}</> HP Maks plus <@ba.vup>{value:0}</> HP."
+    },
+    "item_lbshield_1_slimeml_1_dog_1_1": {
+        "desc": "Gunakan item ini untuk mendapatkan Physical DMG Dealt +<@ba.vup>{value:0%}</>. Durasi: <@ba.vup>{duration:0}</> dtk."
+    },
+    "item_mimicw_1_moss_1_moss_2_1": {
+        "desc": "Gunakan item ini untuk mendapatkan ATK +<@ba.vup>{buff_common_atk_buff_potion_1\\value:0%}</>. Durasi: <@ba.vup>{buff_common_atk_buff_potion_1\\duration:0}</> dtk."
+    },
+    "item_monthlycard_1": {
+        "desc": "Item habis pakai. Saat digunakan, item ini akan menunjukkan lokasi Talosite baru di area yang sedang dikunjungi. Bisa digunakan hanya setelah semua tempat yang tertutup kabut di peta sudah dikunjungi. Item ini hanya bisa digunakan di Wuling."
+    },
+    "item_plant_grass_powder_1": {
+        "desc": "Gunakan item ini untuk langsung memulihkan <@ba.vup>{value:0}</> HP."
+    },
+    "item_plant_grass_powder_2": {
+        "desc": "Gunakan item ini untuk memulihkan <@ba.vup>{triggerheal:0}</> HP per detik selama <@ba.vup>{duration:0}</> dtk."
+    },
+    "item_plant_grass_spc_powder_1": {
+        "desc": "Gunakan item ini untuk langsung memulihkan <@ba.vup>{value2:0%}</> HP Maks plus <@ba.vup>{value:0}</> HP."
+    },
+    "item_plant_grass_spc_powder_2": {
+        "desc": "Gunakan item ini untuk memulihkan <@ba.vup>{triggerheal2:0%}</> HP Maks per detik plus <@ba.vup>{triggerheal:0}</> HP. Durasi: <@ba.vup>{duration:0}</> dtk."
+    },
+    "item_plant_moss_powder_1": {
+        "desc": "Gunakan item ini untuk langsung memulihkan <@ba.vup>{value:0}</> HP."
+    },
+    "item_plant_moss_powder_2": {
+        "desc": "Gunakan item ini untuk memulihkan <@ba.vup>{triggerheal:0}</> HP per detik selama <@ba.vup>{duration:0}</> dtk."
+    },
+    "item_plant_moss_spc_powder_1": {
+        "desc": "Gunakan item ini untuk langsung memulihkan <@ba.vup>{value2:0%}</> HP Maks plus <@ba.vup>{value:0}</> HP."
+    },
+    "item_plant_moss_spc_powder_2": {
+        "desc": "Gunakan item ini untuk memulihkan <@ba.vup>{triggerheal2:0%}</> HP Maks per detik plus <@ba.vup>{triggerheal:0}</> HP. Durasi: <@ba.vup>{duration:0}</> dtk."
+    },
+    "item_proc_bomb_1": {
+        "desc": "Bahan peledak dalam kemasan. \nBisa dipakai untuk langsung menyerang target. Ledakannya akan menimbulkan DMG kepada semua musuh di sekitar."
+    },
+    "item_resetid_1": {
+        "desc": "Item habis pakai. Saat digunakan, item ini akan menunjukkan lokasi Talosite baru di area yang sedang dikunjungi. Bisa digunakan hanya setelah semua tempat yang tertutup kabut di peta sudah dikunjungi. Item ini hanya bisa digunakan di Wuling."
+    },
+    "item_slimeml_1_agrange_1_moss_2_1": {
+        "desc": "Gunakan item ini untuk seluruh tim untuk langsung mendapatkan <@ba.vup>{value:0%}</> Energi Ultimate."
+    },
+    "item_slimeml_1_erhound_1_agfly_1_1": {
+        "desc": "Gunakan item ini untuk <#ba.dispel>menghalau</> <#ba.spellinflictonchar>Arts Infliction</> dan <#ba.spellinflictonchar>Arts Reaction</>, lalu memulihkan <@ba.vup>{triggerheal:0}</> HP per detik selama <@ba.vup>{duration:0}</> dtk."
+    },
+    "item_slwood_1_hshog_1_1": {
+        "desc": "Gunakan item ini untuk <#ba.dispel>menghalau</> <#ba.spellinflictonchar>Arts Infliction</> dan <#ba.spellinflictonchar>Arts Reaction</>, lalu langsung memulihkan <@ba.vup>{value2:0%}</> HP Maks plus <@ba.vup>{value:0}</> HP."
+    },
+    "item_sp_1_moss_1_agmelee_1_1": {
+        "desc": "Gunakan item ini untuk seluruh tim untuk langsung memulihkan <@ba.vup>{value2:0%}</> HP Maks plus <@ba.vup>{value:0}</> HP."
+    },
+    "item_sp_2_moss_2_agrange_1_1": {
+        "desc": "Gunakan item ini untuk seluruh tim untuk memulihkan <@ba.vup>{triggerheal2:0%}</> HP Maks per detik plus <@ba.vup>{triggerheal:0}</> HP. Durasi: <@ba.vup>{duration:0}</> dtk."
+    },
+    "item_tundra_detector_coin_3": {
+        "desc": "Item habis pakai. Saat digunakan, item ini akan menunjukkan lokasi Aurylene baru di area yang sedang dikunjungi. Bisa digunakan hanya setelah semua tempat yang tertutup kabut di peta sudah dikunjungi. Item ini hanya bisa digunakan di Lembah IV."
+    },
+    "item_tundra_detector_trchest_3": {
+        "desc": "Item habis pakai. Saat digunakan, item ini akan menunjukkan lokasi kerat penyimpanan baru di area yang sedang dikunjungi. Bisa digunakan hanya setelah semua tempat yang tertutup kabut di peta sudah dikunjungi. Item ini hanya bisa digunakan di Lembah IV."
+    },
+    "item_wgshoal_1_grass_1_grass_2_1": {
+        "desc": "Gunakan item ini untuk mendapatkan ATK +<@ba.vup>{buff_common_atk_buff_potion_1\\value:0%}</> dan Critical Rate +<@ba.vup>{buff_common_ctr_buff_potion_1\\value:0%}</>. Durasi: <@ba.vup>{buff_common_ctr_buff_potion_1\\duration:0}</> dtk."
+    },
+    "item_wgslime_1_hsmob_1_grass_2_1": {
+        "desc": "Gunakan item ini untuk memulihkan <@ba.vup>{triggerheal2:0%}</> HP Maks per detik plus <@ba.vup>{triggerheal:0}</> HP. Durasi: <@ba.vup>{duration:0}</> dtk."
+    },
+    "item_wgslime_1_wgthorns_1_1": {
+        "desc": "Gunakan item ini untuk mendapatkan DEF +<@ba.vup>{buff_common_def_buff_potion_1\\value:0%}</>, Pengurangan DMG +<@ba.vup>{1-buff_common_resis_up_potion_1\\value:0%}</> terhadap semua bentuk DMG, dan Bonus Treatment +<@ba.vup>{buff_common_healrt_buff_potion_1\\value:0%}</>. Durasi: <@ba.vup>{buff_common_def_buff_potion_1\\duration:0}</> dtk."
+    },
+    "item_wgthorns_1_hshog_1_hsmob_1_1": {
+        "desc": "Gunakan item ini untuk mendapatkan Pengurangan DMG +<@ba.vup>{1-value:0%}</> terhadap semua bentuk DMG. Durasi: <@ba.vup>{duration:0}</> dtk."
+    },
+    "item_wuling_detector_coin_3": {
+        "desc": "Item habis pakai. Saat digunakan, item ini akan menunjukkan lokasi Aurylene baru di area yang sedang dikunjungi. Bisa digunakan hanya setelah semua tempat yang tertutup kabut di peta sudah dikunjungi. Item ini hanya bisa digunakan di Wuling."
+    },
+    "item_wuling_detector_star": {
+        "desc": "Item habis pakai. Saat digunakan, item ini akan menunjukkan lokasi Talosite baru di area yang sedang dikunjungi. Bisa digunakan hanya setelah semua tempat yang tertutup kabut di peta sudah dikunjungi. Item ini hanya bisa digunakan di Wuling."
+    },
+    "item_wuling_detector_trchest_3": {
+        "desc": "Item habis pakai. Saat digunakan, item ini akan menunjukkan lokasi kerat penyimpanan baru di area yang sedang dikunjungi. Bisa digunakan hanya setelah semua tempat yang tertutup kabut di peta sudah dikunjungi. Item ini hanya bisa digunakan di Wuling."
+    }
+}

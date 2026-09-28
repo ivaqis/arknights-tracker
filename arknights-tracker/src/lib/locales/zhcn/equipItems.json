@@ -1,0 +1,202 @@
+{
+    "item_agfly_1_agmelee_1_moss_2_1": {
+        "desc": "装备后，当队伍中任意干员生命值低于<@ba.vup>{param1:0%}</>时自动对其使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>无限制支援主控干员</>\n - <@tips.orange>用尽后恢复次数</>",
+        "extraDesc": "装备后，当队伍中任意干员生命值低于<@ba.vup>{param1:0%}</>时自动对其使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>无限制支援主控干员</>：战斗中支援主控干员无次数限制。\n<@tips.orange>用尽后恢复次数</>：战斗中的可用次数用尽时，一段时间后会恢复<@ba.vup>1</>次可用次数。"
+    },
+    "item_agmelee_1_moss_1_lbmob_1_1": {
+        "desc": "装备后，当队伍中任意干员生命值低于<@ba.vup>{param1:0%}</>时自动对其使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>无限制支援主控干员</>\n - <@tips.orange>用尽后恢复次数</>",
+        "extraDesc": "装备后，当队伍中任意干员生命值低于<@ba.vup>{param1:0%}</>时自动对其使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>无限制支援主控干员</>：战斗中支援主控干员无次数限制。\n<@tips.orange>用尽后恢复次数</>：战斗中的可用次数用尽时，一段时间后会恢复<@ba.vup>1</>次可用次数。"
+    },
+    "item_bottled_flower1spc_1": {
+        "desc": "装备后，当持有干员生命值低于<@ba.vup>{param1:0%}</>时自动使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>仅一次支援主控干员</>\n - <@tips.orange>用尽后恢复次数</>",
+        "extraDesc": "装备后，当持有干员生命值低于<@ba.vup>{param1:0%}</>时自动使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>仅一次支援主控干员</>：每场战斗仅<@ba.vup>1</>次，当主控干员生命值低于<@ba.vup>{param1:0%}</>时自动对其使用。\n<@tips.orange>用尽后恢复次数</>：战斗中的可用次数用尽时，一段时间后会恢复<@ba.vup>1</>次可用次数。"
+    },
+    "item_bottled_flower1spc_2": {
+        "desc": "装备后，当持有干员生命值低于<@ba.vup>{param1:0%}</>时自动使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>仅一次支援主控干员</>\n - <@tips.orange>用尽后恢复次数</>",
+        "extraDesc": "装备后，当持有干员生命值低于<@ba.vup>{param1:0%}</>时自动使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>仅一次支援主控干员</>：每场战斗仅<@ba.vup>1</>次，当主控干员生命值低于<@ba.vup>{param1:0%}</>时自动对其使用。\n<@tips.orange>用尽后恢复次数</>：战斗中的可用次数用尽时，一段时间后会恢复<@ba.vup>1</>次可用次数。"
+    },
+    "item_bottled_flower1spc_3": {
+        "desc": "装备后，当持有干员生命值低于<@ba.vup>{param1:0%}</>时自动使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>仅一次支援主控干员</>\n - <@tips.orange>用尽后恢复次数</>",
+        "extraDesc": "装备后，当持有干员生命值低于<@ba.vup>{param1:0%}</>时自动使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>仅一次支援主控干员</>：每场战斗仅<@ba.vup>1</>次，当主控干员生命值低于<@ba.vup>{param1:0%}</>时自动对其使用。\n<@tips.orange>用尽后恢复次数</>：战斗中的可用次数用尽时，一段时间后会恢复<@ba.vup>1</>次可用次数。"
+    },
+    "item_bottled_flower2spc_1": {
+        "desc": "装备后，当队伍中任意干员生命值低于<@ba.vup>{param1:0%}</>时自动对其使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>无限制支援主控干员</>\n - <@tips.orange>用尽后恢复次数</>",
+        "extraDesc": "装备后，当队伍中任意干员生命值低于<@ba.vup>{param1:0%}</>时自动对其使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>无限制支援主控干员</>：战斗中支援主控干员无次数限制。\n<@tips.orange>用尽后恢复次数</>：战斗中的可用次数用尽时，一段时间后会恢复<@ba.vup>1</>次可用次数。"
+    },
+    "item_bottled_flower2spc_2": {
+        "desc": "装备后，当队伍中任意干员生命值低于<@ba.vup>{param1:0%}</>时自动对其使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>无限制支援主控干员</>\n - <@tips.orange>用尽后恢复次数</>",
+        "extraDesc": "装备后，当队伍中任意干员生命值低于<@ba.vup>{param1:0%}</>时自动对其使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>无限制支援主控干员</>：战斗中支援主控干员无次数限制。\n<@tips.orange>用尽后恢复次数</>：战斗中的可用次数用尽时，一段时间后会恢复<@ba.vup>1</>次可用次数。"
+    },
+    "item_bottled_flower2spc_3": {
+        "desc": "装备后，当队伍中任意干员生命值低于<@ba.vup>{param1:0%}</>时自动对其使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>无限制支援主控干员</>\n - <@tips.orange>用尽后恢复次数</>",
+        "extraDesc": "装备后，当队伍中任意干员生命值低于<@ba.vup>{param1:0%}</>时自动对其使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>无限制支援主控干员</>：战斗中支援主控干员无次数限制。\n<@tips.orange>用尽后恢复次数</>：战斗中的可用次数用尽时，一段时间后会恢复<@ba.vup>1</>次可用次数。"
+    },
+    "item_bottled_food_1": {
+        "desc": "装备后，当队伍中任意干员生命值低于<@ba.vup>{param1:0%}</>时自动对其使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>无限制支援主控干员</>\n - <@tips.orange>用尽后恢复次数</>",
+        "extraDesc": "装备后，当队伍中任意干员生命值低于<@ba.vup>{param1:0%}</>时自动对其使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>无限制支援主控干员</>：战斗中支援主控干员无次数限制。\n<@tips.orange>用尽后恢复次数</>：战斗中的可用次数用尽时，一段时间后会恢复<@ba.vup>1</>次可用次数。"
+    },
+    "item_bottled_food_2": {
+        "desc": "装备后，当队伍中任意干员生命值低于<@ba.vup>{param1:0%}</>时自动对其使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>无限制支援主控干员</>\n - <@tips.orange>用尽后恢复次数</>",
+        "extraDesc": "装备后，当队伍中任意干员生命值低于<@ba.vup>{param1:0%}</>时自动对其使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>无限制支援主控干员</>：战斗中支援主控干员无次数限制。\n<@tips.orange>用尽后恢复次数</>：战斗中的可用次数用尽时，一段时间后会恢复<@ba.vup>1</>次可用次数。"
+    },
+    "item_bottled_food_3": {
+        "desc": "装备后，当队伍中任意干员生命值低于<@ba.vup>{param1:0%}</>时自动对其使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>无限制支援主控干员</>\n - <@tips.orange>用尽后恢复次数</>",
+        "extraDesc": "装备后，当队伍中任意干员生命值低于<@ba.vup>{param1:0%}</>时自动对其使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>无限制支援主控干员</>：战斗中支援主控干员无次数限制。\n<@tips.orange>用尽后恢复次数</>：战斗中的可用次数用尽时，一段时间后会恢复<@ba.vup>1</>次可用次数。"
+    },
+    "item_bottled_food_4": {
+        "desc": "装备后，当持有干员生命值低于<@ba.vup>{param1:0%}</>时自动使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>仅一次支援主控干员</>\n - <@tips.orange>用尽后恢复次数</>",
+        "extraDesc": "装备后，当持有干员生命值低于<@ba.vup>{param1:0%}</>时自动使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>仅一次支援主控干员</>：每场战斗仅<@ba.vup>1</>次，当主控干员生命值低于<@ba.vup>{param1:0%}</>时自动对其使用。\n<@tips.orange>用尽后恢复次数</>：战斗中的可用次数用尽时，一段时间后会恢复<@ba.vup>1</>次可用次数。"
+    },
+    "item_bottled_food_5": {
+        "desc": "装备后，当持有干员生命值低于<@ba.vup>{param1:0%}</>时自动使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>仅一次支援主控干员</>\n - <@tips.orange>用尽后恢复次数</>",
+        "extraDesc": "装备后，当持有干员生命值低于<@ba.vup>{param1:0%}</>时自动使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>仅一次支援主控干员</>：每场战斗仅<@ba.vup>1</>次，当主控干员生命值低于<@ba.vup>{param1:0%}</>时自动对其使用。\n<@tips.orange>用尽后恢复次数</>：战斗中的可用次数用尽时，一段时间后会恢复<@ba.vup>1</>次可用次数。"
+    },
+    "item_bottled_grass1spc_1": {
+        "desc": "装备后，当持有干员生命值低于<@ba.vup>{param1:0%}</>时自动使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>仅一次支援主控干员</>\n - <@tips.orange>用尽后恢复次数</>",
+        "extraDesc": "装备后，当持有干员生命值低于<@ba.vup>{param1:0%}</>时自动使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>仅一次支援主控干员</>：每场战斗仅<@ba.vup>1</>次，当主控干员生命值低于<@ba.vup>{param1:0%}</>时自动对其使用。\n<@tips.orange>用尽后恢复次数</>：战斗中的可用次数用尽时，一段时间后会恢复<@ba.vup>1</>次可用次数。"
+    },
+    "item_bottled_grass1spc_2": {
+        "desc": "装备后，当持有干员生命值低于<@ba.vup>{param1:0%}</>时自动使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>仅一次支援主控干员</>\n - <@tips.orange>用尽后恢复次数</>",
+        "extraDesc": "装备后，当持有干员生命值低于<@ba.vup>{param1:0%}</>时自动使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>仅一次支援主控干员</>：每场战斗仅<@ba.vup>1</>次，当主控干员生命值低于<@ba.vup>{param1:0%}</>时自动对其使用。\n<@tips.orange>用尽后恢复次数</>：战斗中的可用次数用尽时，一段时间后会恢复<@ba.vup>1</>次可用次数。"
+    },
+    "item_bottled_grass2spc_1": {
+        "desc": "装备后，当队伍中任意干员生命值低于<@ba.vup>{param1:0%}</>时自动对其使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>无限制支援主控干员</>\n - <@tips.orange>用尽后恢复次数</>",
+        "extraDesc": "装备后，当队伍中任意干员生命值低于<@ba.vup>{param1:0%}</>时自动对其使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>无限制支援主控干员</>：战斗中支援主控干员无次数限制。\n<@tips.orange>用尽后恢复次数</>：战斗中的可用次数用尽时，一段时间后会恢复<@ba.vup>1</>次可用次数。"
+    },
+    "item_bottled_grass2spc_2": {
+        "desc": "装备后，当队伍中任意干员生命值低于<@ba.vup>{param1:0%}</>时自动对其使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>无限制支援主控干员</>\n - <@tips.orange>用尽后恢复次数</>",
+        "extraDesc": "装备后，当队伍中任意干员生命值低于<@ba.vup>{param1:0%}</>时自动对其使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>无限制支援主控干员</>：战斗中支援主控干员无次数限制。\n<@tips.orange>用尽后恢复次数</>：战斗中的可用次数用尽时，一段时间后会恢复<@ba.vup>1</>次可用次数。"
+    },
+    "item_bottled_insec1_1": {
+        "desc": "装备后，当队伍中有其他干员陷入无法战斗状态时自动对其使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。",
+        "extraDesc": "装备后，当队伍中有其他干员陷入无法战斗状态时自动对其使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。"
+    },
+    "item_bottled_insec1_2": {
+        "desc": "装备后，当队伍中有其他干员陷入无法战斗状态时自动对其使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。",
+        "extraDesc": "装备后，当队伍中有其他干员陷入无法战斗状态时自动对其使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。"
+    },
+    "item_bottled_moss_2_animal_1": {
+        "desc": "装备后，当持有干员生命值低于<@ba.vup>{param1:0%}</>时自动使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>仅一次支援主控干员</>\n - <@tips.orange>用尽后恢复次数</>",
+        "extraDesc": "装备后，当持有干员生命值低于<@ba.vup>{param1:0%}</>时自动使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>仅一次支援主控干员</>：每场战斗仅<@ba.vup>1</>次，当主控干员生命值低于<@ba.vup>{param1:0%}</>时自动对其使用。\n<@tips.orange>用尽后恢复次数</>：战斗中的可用次数用尽时，一段时间后会恢复<@ba.vup>1</>次可用次数。"
+    },
+    "item_bottled_rec_hp_1": {
+        "desc": "装备后，当持有干员生命值低于<@ba.vup>{param1:0%}</>时自动使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>仅一次支援主控干员</>\n - <@tips.orange>用尽后恢复次数</>",
+        "extraDesc": "装备后，当持有干员生命值低于<@ba.vup>{param1:0%}</>时自动使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>仅一次支援主控干员</>：每场战斗仅<@ba.vup>1</>次，当主控干员生命值低于<@ba.vup>{param1:0%}</>时自动对其使用。\n<@tips.orange>用尽后恢复次数</>：战斗中的可用次数用尽时，一段时间后会恢复<@ba.vup>1</>次可用次数。"
+    },
+    "item_bottled_rec_hp_2": {
+        "desc": "装备后，当持有干员生命值低于<@ba.vup>{param1:0%}</>时自动使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>仅一次支援主控干员</>\n - <@tips.orange>用尽后恢复次数</>",
+        "extraDesc": "装备后，当持有干员生命值低于<@ba.vup>{param1:0%}</>时自动使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>仅一次支援主控干员</>：每场战斗仅<@ba.vup>1</>次，当主控干员生命值低于<@ba.vup>{param1:0%}</>时自动对其使用。\n<@tips.orange>用尽后恢复次数</>：战斗中的可用次数用尽时，一段时间后会恢复<@ba.vup>1</>次可用次数。"
+    },
+    "item_bottled_rec_hp_3": {
+        "desc": "装备后，当持有干员生命值低于<@ba.vup>{param1:0%}</>时自动使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>仅一次支援主控干员</>\n - <@tips.orange>用尽后恢复次数</>",
+        "extraDesc": "装备后，当持有干员生命值低于<@ba.vup>{param1:0%}</>时自动使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>仅一次支援主控干员</>：每场战斗仅<@ba.vup>1</>次，当主控干员生命值低于<@ba.vup>{param1:0%}</>时自动对其使用。\n<@tips.orange>用尽后恢复次数</>：战斗中的可用次数用尽时，一段时间后会恢复<@ba.vup>1</>次可用次数。"
+    },
+    "item_bottled_rec_hp_4": {
+        "desc": "装备后，当队伍中任意干员生命值低于<@ba.vup>{param1:0%}</>时自动对其使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>无限制支援主控干员</>\n - <@tips.orange>用尽后恢复次数</>",
+        "extraDesc": "装备后，当队伍中任意干员生命值低于<@ba.vup>{param1:0%}</>时自动对其使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>无限制支援主控干员</>：战斗中支援主控干员无次数限制。\n<@tips.orange>用尽后恢复次数</>：战斗中的可用次数用尽时，一段时间后会恢复<@ba.vup>1</>次可用次数。"
+    },
+    "item_bottled_rec_hp_5": {
+        "desc": "装备后，当队伍中任意干员生命值低于<@ba.vup>{param1:0%}</>时自动对其使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>无限制支援主控干员</>\n - <@tips.orange>用尽后恢复次数</>",
+        "extraDesc": "装备后，当队伍中任意干员生命值低于<@ba.vup>{param1:0%}</>时自动对其使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>无限制支援主控干员</>：战斗中支援主控干员无次数限制。\n<@tips.orange>用尽后恢复次数</>：战斗中的可用次数用尽时，一段时间后会恢复<@ba.vup>1</>次可用次数。"
+    },
+    "item_corp1_animal_1": {
+        "desc": "装备后，当队伍中任意干员生命值低于<@ba.vup>{param1:0%}</>时自动对其使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>无限制支援主控干员</>\n - <@tips.orange>用尽后恢复次数</>",
+        "extraDesc": "装备后，当队伍中任意干员生命值低于<@ba.vup>{param1:0%}</>时自动对其使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>无限制支援主控干员</>：战斗中支援主控干员无次数限制。\n<@tips.orange>用尽后恢复次数</>：战斗中的可用次数用尽时，一段时间后会恢复<@ba.vup>1</>次可用次数。"
+    },
+    "item_corp2_animal_1": {
+        "desc": "装备后，当队伍中有干员受到<#ba.spellinflictonchar>法术异常</>时自动对其使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>无限制支援主控干员</>\n - <@tips.orange>用尽后恢复次数</>",
+        "extraDesc": "装备后，当队伍中有干员受到<#ba.spellinflictonchar>法术异常</>时自动对其使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>无限制支援主控干员</>：战斗中支援主控干员无次数限制。\n<@tips.orange>用尽后恢复次数</>：战斗中的可用次数用尽时，一段时间后会恢复<@ba.vup>1</>次可用次数。"
+    },
+    "item_corp4_grass2_1": {
+        "desc": "装备后，当队伍中任意干员生命值低于<@ba.vup>{param1:0%}</>时自动对其使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>无限制支援主控干员</>\n - <@tips.orange>用尽后恢复次数</>",
+        "extraDesc": "装备后，当队伍中任意干员生命值低于<@ba.vup>{param1:0%}</>时自动对其使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>无限制支援主控干员</>：战斗中支援主控干员无次数限制。\n<@tips.orange>用尽后恢复次数</>：战斗中的可用次数用尽时，一段时间后会恢复<@ba.vup>1</>次可用次数。"
+    },
+    "item_corp4_spc": {
+        "desc": "装备后，当持有干员的终结技能量低于<@ba.vup>{param1:0%}</>时自动使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.orange>用尽后恢复次数</>",
+        "extraDesc": "装备后，当持有干员的终结技能量低于<@ba.vup>{param1:0%}</>时自动使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n<@tips.orange>用尽后恢复次数</>：战斗中的可用次数用尽时，一段时间后会恢复<@ba.vup>1</>次可用次数。"
+    },
+    "item_dog_1_slimeml_1_1": {
+        "desc": "装备后，当持有干员的终结技能量低于<@ba.vup>{param1:0%}</>时自动使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.orange>用尽后恢复次数</>",
+        "extraDesc": "装备后，当持有干员的终结技能量低于<@ba.vup>{param1:0%}</>时自动使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n<@tips.orange>用尽后恢复次数</>：战斗中的可用次数用尽时，一段时间后会恢复<@ba.vup>1</>次可用次数。"
+    },
+    "item_dog_hsmob_corp_1": {
+        "desc": "装备后，当队伍中任意干员生命值低于<@ba.vup>{param1:0%}</>时自动使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>无限制支援主控干员</>\n - <@tips.orange>用尽后恢复次数</>",
+        "extraDesc": "装备后，当队伍中任意干员生命值低于<@ba.vup>{param1:0%}</>时自动使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>无限制支援主控干员</>：战斗中支援主控干员无次数限制。\n<@tips.orange>用尽后恢复次数</>：战斗中的可用次数用尽时，一段时间后会恢复<@ba.vup>1</>次可用次数。"
+    },
+    "item_hscrane_1_hsmob_1_grass_1_1": {
+        "desc": "装备后，当队伍中任意干员生命值低于<@ba.vup>{param1:0%}</>时自动对其使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>无限制支援主控干员</>\n - <@tips.orange>用尽后恢复次数</>",
+        "extraDesc": "装备后，当队伍中任意干员生命值低于<@ba.vup>{param1:0%}</>时自动对其使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>无限制支援主控干员</>：战斗中支援主控干员无次数限制。\n<@tips.orange>用尽后恢复次数</>：战斗中的可用次数用尽时，一段时间后会恢复<@ba.vup>1</>次可用次数。"
+    },
+    "item_hsmob_1_grass_2_1": {
+        "desc": "装备后，当队伍中任意干员生命值低于<@ba.vup>{param1:0%}</>时自动对其使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>无限制支援主控干员</>\n - <@tips.orange>用尽后恢复次数</>",
+        "extraDesc": "装备后，当队伍中任意干员生命值低于<@ba.vup>{param1:0%}</>时自动对其使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>无限制支援主控干员</>：战斗中支援主控干员无次数限制。\n<@tips.orange>用尽后恢复次数</>：战斗中的可用次数用尽时，一段时间后会恢复<@ba.vup>1</>次可用次数。"
+    },
+    "item_lbmob_1_lbshamman_1_sp_1_1": {
+        "desc": "装备后，当队伍中任意干员受到超过<@ba.vup>{param2:0%}</>最大生命值的伤害时自动对其使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>无限制支援主控干员</>\n - <@tips.orange>用尽后恢复次数</>",
+        "extraDesc": "装备后，当队伍中任意干员受到超过<@ba.vup>{param2:0%}</>最大生命值的伤害时自动对其使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>无限制支援主控干员</>：战斗中支援主控干员无次数限制。\n<@tips.orange>用尽后恢复次数</>：战斗中的可用次数用尽时，一段时间后会恢复<@ba.vup>1</>次可用次数。"
+    },
+    "item_lbmob_1_moss_2_bottled_1": {
+        "desc": "装备后，当队伍中有干员受到<#ba.spellinflictonchar>法术异常</>时自动对其使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>无限制支援主控干员</>\n - <@tips.orange>用尽后恢复次数</>",
+        "extraDesc": "装备后，当队伍中有干员受到<#ba.spellinflictonchar>法术异常</>时自动对其使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>无限制支援主控干员</>：战斗中支援主控干员无次数限制。\n<@tips.orange>用尽后恢复次数</>：战斗中的可用次数用尽时，一段时间后会恢复<@ba.vup>1</>次可用次数。"
+    },
+    "item_lbshamman_1_agmelee_1_1": {
+        "desc": "装备后，当队伍中任意干员受到超过<@ba.vup>{param2:0%}</>最大生命值的伤害时自动对其使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>无限制支援主控干员</>\n - <@tips.orange>用尽后恢复次数</>",
+        "extraDesc": "装备后，当队伍中任意干员受到超过<@ba.vup>{param2:0%}</>最大生命值的伤害时自动对其使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>无限制支援主控干员</>：战斗中支援主控干员无次数限制。\n<@tips.orange>用尽后恢复次数</>：战斗中的可用次数用尽时，一段时间后会恢复<@ba.vup>1</>次可用次数。"
+    },
+    "item_plant_grass_powder_1": {
+        "desc": "装备后，当持有干员生命值低于<@ba.vup>{param1:0%}</>时自动使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>仅一次支援主控干员</>\n - <@tips.orange>用尽后恢复次数</>",
+        "extraDesc": "装备后，当持有干员生命值低于<@ba.vup>{param1:0%}</>时自动使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>仅一次支援主控干员</>：每场战斗仅<@ba.vup>1</>次，当主控干员生命值低于<@ba.vup>{param1:0%}</>时自动对其使用。\n<@tips.orange>用尽后恢复次数</>：战斗中的可用次数用尽时，一段时间后会恢复<@ba.vup>1</>次可用次数。"
+    },
+    "item_plant_grass_powder_2": {
+        "desc": "装备后，当队伍中任意干员生命值低于<@ba.vup>{param1:0%}</>时自动对其使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>无限制支援主控干员</>\n - <@tips.orange>用尽后恢复次数</>",
+        "extraDesc": "装备后，当队伍中任意干员生命值低于<@ba.vup>{param1:0%}</>时自动对其使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>无限制支援主控干员</>：战斗中支援主控干员无次数限制。\n<@tips.orange>用尽后恢复次数</>：战斗中的可用次数用尽时，一段时间后会恢复<@ba.vup>1</>次可用次数。"
+    },
+    "item_plant_grass_spc_powder_1": {
+        "desc": "装备后，当持有干员生命值低于<@ba.vup>{param1:0%}</>时自动使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>仅一次支援主控干员</>\n - <@tips.orange>用尽后恢复次数</>",
+        "extraDesc": "装备后，当持有干员生命值低于<@ba.vup>{param1:0%}</>时自动使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>仅一次支援主控干员</>：每场战斗仅<@ba.vup>1</>次，当主控干员生命值低于<@ba.vup>{param1:0%}</>时自动对其使用。\n<@tips.orange>用尽后恢复次数</>：战斗中的可用次数用尽时，一段时间后会恢复<@ba.vup>1</>次可用次数。"
+    },
+    "item_plant_grass_spc_powder_2": {
+        "desc": "装备后，当队伍中任意干员生命值低于<@ba.vup>{param1:0%}</>时自动对其使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>无限制支援主控干员</>\n - <@tips.orange>用尽后恢复次数</>",
+        "extraDesc": "装备后，当队伍中任意干员生命值低于<@ba.vup>{param1:0%}</>时自动对其使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>无限制支援主控干员</>：战斗中支援主控干员无次数限制。\n<@tips.orange>用尽后恢复次数</>：战斗中的可用次数用尽时，一段时间后会恢复<@ba.vup>1</>次可用次数。"
+    },
+    "item_plant_moss_powder_1": {
+        "desc": "装备后，当持有干员生命值低于<@ba.vup>{param1:0%}</>时自动使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>仅一次支援主控干员</>\n - <@tips.orange>用尽后恢复次数</>",
+        "extraDesc": "装备后，当持有干员生命值低于<@ba.vup>{param1:0%}</>时自动使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>仅一次支援主控干员</>：每场战斗仅<@ba.vup>1</>次，当主控干员生命值低于<@ba.vup>{param1:0%}</>时自动对其使用。\n<@tips.orange>用尽后恢复次数</>：战斗中的可用次数用尽时，一段时间后会恢复<@ba.vup>1</>次可用次数。"
+    },
+    "item_plant_moss_powder_2": {
+        "desc": "装备后，当队伍中任意干员生命值低于<@ba.vup>{param1:0%}</>时自动对其使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>无限制支援主控干员</>\n - <@tips.orange>用尽后恢复次数</>",
+        "extraDesc": "装备后，当队伍中任意干员生命值低于<@ba.vup>{param1:0%}</>时自动对其使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>无限制支援主控干员</>：战斗中支援主控干员无次数限制。\n<@tips.orange>用尽后恢复次数</>：战斗中的可用次数用尽时，一段时间后会恢复<@ba.vup>1</>次可用次数。"
+    },
+    "item_plant_moss_spc_powder_1": {
+        "desc": "装备后，当持有干员生命值低于<@ba.vup>{param1:0%}</>时自动使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>仅一次支援主控干员</>\n - <@tips.orange>用尽后恢复次数</>",
+        "extraDesc": "装备后，当持有干员生命值低于<@ba.vup>{param1:0%}</>时自动使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>仅一次支援主控干员</>：每场战斗仅<@ba.vup>1</>次，当主控干员生命值低于<@ba.vup>{param1:0%}</>时自动对其使用。\n<@tips.orange>用尽后恢复次数</>：战斗中的可用次数用尽时，一段时间后会恢复<@ba.vup>1</>次可用次数。"
+    },
+    "item_plant_moss_spc_powder_2": {
+        "desc": "装备后，当队伍中任意干员生命值低于<@ba.vup>{param1:0%}</>时自动对其使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>无限制支援主控干员</>\n - <@tips.orange>用尽后恢复次数</>",
+        "extraDesc": "装备后，当队伍中任意干员生命值低于<@ba.vup>{param1:0%}</>时自动对其使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>无限制支援主控干员</>：战斗中支援主控干员无次数限制。\n<@tips.orange>用尽后恢复次数</>：战斗中的可用次数用尽时，一段时间后会恢复<@ba.vup>1</>次可用次数。"
+    },
+    "item_slimeml_1_agrange_1_moss_2_1": {
+        "desc": "装备后，当持有干员的终结技能量低于<@ba.vup>{param1:0%}</>时自动使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.orange>用尽后恢复次数</>",
+        "extraDesc": "装备后，当持有干员的终结技能量低于<@ba.vup>{param1:0%}</>时自动使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n<@tips.orange>用尽后恢复次数</>：战斗中的可用次数用尽时，一段时间后会恢复<@ba.vup>1</>次可用次数。"
+    },
+    "item_slimeml_1_erhound_1_agfly_1_1": {
+        "desc": "装备后，当队伍中有干员受到<#ba.spellinflictonchar>法术异常</>时自动对其使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>无限制支援主控干员</>\n - <@tips.orange>用尽后恢复次数</>",
+        "extraDesc": "装备后，当队伍中有干员受到<#ba.spellinflictonchar>法术异常</>时自动对其使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>无限制支援主控干员</>：战斗中支援主控干员无次数限制。\n<@tips.orange>用尽后恢复次数</>：战斗中的可用次数用尽时，一段时间后会恢复<@ba.vup>1</>次可用次数。"
+    },
+    "item_slwood_1_hshog_1_1": {
+        "desc": "装备后，当队伍中有干员受到<#ba.spellinflictonchar>法术异常</>时自动对其使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>无限制支援主控干员</>\n - <@tips.orange>用尽后恢复次数</>",
+        "extraDesc": "装备后，当队伍中有干员受到<#ba.spellinflictonchar>法术异常</>时自动对其使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>无限制支援主控干员</>：战斗中支援主控干员无次数限制。\n<@tips.orange>用尽后恢复次数</>：战斗中的可用次数用尽时，一段时间后会恢复<@ba.vup>1</>次可用次数。"
+    },
+    "item_sp_1_moss_1_agmelee_1_1": {
+        "desc": "装备后，当队伍中任意干员生命值低于<@ba.vup>{param1:0%}</>时自动使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>无限制支援主控干员</>\n - <@tips.orange>用尽后恢复次数</>",
+        "extraDesc": "装备后，当队伍中任意干员生命值低于<@ba.vup>{param1:0%}</>时自动使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>无限制支援主控干员</>：战斗中支援主控干员无次数限制。\n<@tips.orange>用尽后恢复次数</>：战斗中的可用次数用尽时，一段时间后会恢复<@ba.vup>1</>次可用次数。"
+    },
+    "item_sp_2_moss_2_agrange_1_1": {
+        "desc": "装备后，当队伍中任意干员生命值低于<@ba.vup>{param1:0%}</>时自动使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>无限制支援主控干员</>\n - <@tips.orange>用尽后恢复次数</>",
+        "extraDesc": "装备后，当队伍中任意干员生命值低于<@ba.vup>{param1:0%}</>时自动使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>无限制支援主控干员</>：战斗中支援主控干员无次数限制。\n<@tips.orange>用尽后恢复次数</>：战斗中的可用次数用尽时，一段时间后会恢复<@ba.vup>1</>次可用次数。"
+    },
+    "item_wgslime_1_hsmob_1_grass_2_1": {
+        "desc": "装备后，当持有干员生命值低于<@ba.vup>{param1:0%}</>时自动使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>仅一次支援主控干员</>\n - <@tips.orange>用尽后恢复次数</>",
+        "extraDesc": "装备后，当持有干员生命值低于<@ba.vup>{param1:0%}</>时自动使用，单场战斗中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>仅一次支援主控干员</>：每场战斗仅<@ba.vup>1</>次，当主控干员生命值低于<@ba.vup>{param1:0%}</>时自动对其使用。\n<@tips.orange>用尽后恢复次数</>：战斗中的可用次数用尽时，一段时间后会恢复<@ba.vup>1</>次可用次数。"
+    }
+}

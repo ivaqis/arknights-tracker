@@ -1,0 +1,257 @@
+{
+    "item_agfly_1_agmelee_1_moss_2_1": {
+        "desc": "Verwenden, um <@ba.vup>{triggerheal2:0%}</> deiner max. LP pro Sekunde und <@ba.vup>{triggerheal:0}</> LP wiederherzustellen. Dauer: <@ba.vup>{duration:0}</> Sek."
+    },
+    "item_agmelee_1_moss_1_lbmob_1_1": {
+        "desc": "Verwenden, um sofort <@ba.vup>{value2:0%}</> deiner max. LP und <@ba.vup>{value:0}</> zusätzliche LP wiederherzustellen."
+    },
+    "item_agmelee_1_sp_2_slimeml_1_1": {
+        "desc": "Verwenden, um +<@ba.vup>{value:0%}</> auf deine VERT-Kraft zu gewähren. Dauer: <@ba.vup>{duration:0}</> Sek."
+    },
+    "item_agrange_1_erhound_1_sp_1_1": {
+        "desc": "Verwenden, um +<@ba.vup>{value:0%}</> auf deine ANG-Kraft zu gewähren. Dauer: <@ba.vup>{duration:0}</> Sek."
+    },
+    "item_agrange_1_lbshamman_bottled_1": {
+        "desc": "Verwenden, um für <@ba.vup>{duration:0}</> Sek. +<@ba.vup>{1-value:0%}</> SDN-Reduzierung für alle Arten von SDN zu gewähren."
+    },
+    "item_agrange_1_moss_2_lbmob_1_1": {
+        "desc": "Verwenden, um +<@ba.vup>{buff_common_def_buff_potion_1\\value:0%}</> auf deine VERT-Kraft zu gewähren. Dauer: <@ba.vup>{buff_common_def_buff_potion_1\\duration:0}</> Sek."
+    },
+    "item_bottled_flower1spc_1": {
+        "desc": "Verwenden, um sofort <@ba.vup>{value2:0%}</> deiner max. LP und <@ba.vup>{value:0}</> zusätzliche LP wiederherzustellen."
+    },
+    "item_bottled_flower1spc_2": {
+        "desc": "Verwenden, um sofort <@ba.vup>{value2:0%}</> deiner max. LP und <@ba.vup>{value:0}</> zusätzliche LP wiederherzustellen."
+    },
+    "item_bottled_flower1spc_3": {
+        "desc": "Verwenden, um sofort <@ba.vup>{value2:0%}</> deiner max. LP und <@ba.vup>{value:0}</> zusätzliche LP wiederherzustellen."
+    },
+    "item_bottled_flower2spc_1": {
+        "desc": "Verwenden, um <@ba.vup>{triggerheal2:0%}</> deiner max. LP pro Sekunde und <@ba.vup>{triggerheal:0}</> LP wiederherzustellen. Dauer: <@ba.vup>{duration:0}</> Sek."
+    },
+    "item_bottled_flower2spc_2": {
+        "desc": "Verwenden, um <@ba.vup>{triggerheal2:0%}</> deiner max. LP pro Sekunde und <@ba.vup>{triggerheal:0}</> LP wiederherzustellen. Dauer: <@ba.vup>{duration:0}</> Sek."
+    },
+    "item_bottled_flower2spc_3": {
+        "desc": "Verwenden, um <@ba.vup>{triggerheal2:0%}</> deiner max. LP pro Sekunde und <@ba.vup>{triggerheal:0}</> LP wiederherzustellen. Dauer: <@ba.vup>{duration:0}</> Sek."
+    },
+    "item_bottled_food_1": {
+        "desc": "Verwenden, um für <@ba.vup>{duration:0}</> Sek. <@ba.vup>{triggerheal:0}</> LP pro Sekunde wiederherzustellen."
+    },
+    "item_bottled_food_2": {
+        "desc": "Verwenden, um für <@ba.vup>{duration:0}</> Sek. <@ba.vup>{triggerheal:0}</> LP pro Sekunde wiederherzustellen."
+    },
+    "item_bottled_food_3": {
+        "desc": "Verwenden, um für <@ba.vup>{duration:0}</> Sek. <@ba.vup>{triggerheal:0}</> LP pro Sekunde wiederherzustellen."
+    },
+    "item_bottled_food_4": {
+        "desc": "Verwenden, um sofort <@ba.vup>{value:0}</> LP wiederherzustellen."
+    },
+    "item_bottled_food_5": {
+        "desc": "Verwenden, um sofort <@ba.vup>{value:0}</> LP wiederherzustellen."
+    },
+    "item_bottled_grass1spc_1": {
+        "desc": "Verwenden, um sofort <@ba.vup>{value2:0%}</> deiner max. LP und <@ba.vup>{value:0}</> zusätzliche LP wiederherzustellen."
+    },
+    "item_bottled_grass1spc_2": {
+        "desc": "Verwenden, um sofort <@ba.vup>{value2:0%}</> deiner max. LP und <@ba.vup>{value:0}</> zusätzliche LP wiederherzustellen."
+    },
+    "item_bottled_grass2spc_1": {
+        "desc": "Verwenden, um <@ba.vup>{triggerheal2:0%}</> deiner max. LP pro Sekunde und <@ba.vup>{triggerheal:0}</> LP wiederherzustellen. Dauer: <@ba.vup>{duration:0}</> Sek."
+    },
+    "item_bottled_grass2spc_2": {
+        "desc": "Verwenden, um <@ba.vup>{triggerheal2:0%}</> deiner max. LP pro Sekunde und <@ba.vup>{triggerheal:0}</> LP wiederherzustellen. Dauer: <@ba.vup>{duration:0}</> Sek."
+    },
+    "item_bottled_insec1_1": {
+        "desc": "Verwenden, um ein bewusstloses Teammitglied sofort mit <@ba.vup>10 %</> seiner max. LP wiederzubeleben."
+    },
+    "item_bottled_insec1_2": {
+        "desc": "Verwenden, um ein bewusstloses Teammitglied sofort mit <@ba.vup>30 %</> seiner max. LP wiederzubeleben."
+    },
+    "item_bottled_insec2_1": {
+        "desc": "Verwenden, um +<@ba.vup>{buff_common_dmg_up_potion_1\\value:0%}</> für alle Arten von verursachtem SDN zu gewähren. Dauer: <@ba.vup>{buff_common_dmg_up_potion_1\\duration:0}</> Sek."
+    },
+    "item_bottled_insec2_2": {
+        "desc": "Verwenden, um +<@ba.vup>{buff_common_dmg_up_potion_1\\value:0%}</> für alle Arten von verursachtem SDN zu gewähren. Dauer: <@ba.vup>{buff_common_dmg_up_potion_1\\duration:0}</> Sek."
+    },
+    "item_bottled_moss_1_2_1": {
+        "desc": "Verwenden, um Ultimative Effizienzsteigerung +<@ba.vup>{value:0%}</> zu gewähren. Dauer: <@ba.vup>{duration:0}</> Sek."
+    },
+    "item_bottled_moss_2_animal_1": {
+        "desc": "Verwenden, um sofort <@ba.vup>{value2:0%}</> deiner max. LP und <@ba.vup>{value:0}</> zusätzliche LP wiederherzustellen."
+    },
+    "item_bottled_rec_hp_1": {
+        "desc": "Verwenden, um sofort <@ba.vup>{value:0}</> LP wiederherzustellen."
+    },
+    "item_bottled_rec_hp_2": {
+        "desc": "Verwenden, um sofort <@ba.vup>{value:0}</> LP wiederherzustellen."
+    },
+    "item_bottled_rec_hp_3": {
+        "desc": "Verwenden, um sofort <@ba.vup>{value:0}</> LP wiederherzustellen."
+    },
+    "item_bottled_rec_hp_4": {
+        "desc": "Verwenden, um für <@ba.vup>{duration:0}</> Sek. <@ba.vup>{triggerheal:0}</> LP pro Sekunde wiederherzustellen."
+    },
+    "item_bottled_rec_hp_5": {
+        "desc": "Verwenden, um für <@ba.vup>{duration:0}</> Sek. <@ba.vup>{triggerheal:0}</> LP pro Sekunde wiederherzustellen."
+    },
+    "item_cbp_voucher_originium": {
+        "desc": "Verbrauchsgegenstand. Zeigt bei Verwendung unentdecktes Talosit innerhalb des aktuellen Bereichs an. Kann nur verwendet werden, nachdem alle verschleierten Orte auf der Karte entdeckt wurden. Dieser Gegenstand funktioniert nur in Wuling."
+    },
+    "item_cbp_voucher_pay": {
+        "desc": "Verbrauchsgegenstand. Zeigt bei Verwendung unentdecktes Talosit innerhalb des aktuellen Bereichs an. Kann nur verwendet werden, nachdem alle verschleierten Orte auf der Karte entdeckt wurden. Dieser Gegenstand funktioniert nur in Wuling."
+    },
+    "item_corp1_animal_1": {
+        "desc": "Verwenden, um sofort <@ba.vup>{value2:0%}</> deiner max. LP und <@ba.vup>{value:0}</> zusätzliche LP wiederherzustellen."
+    },
+    "item_corp2_animal_1": {
+        "desc": "Verwenden, um sämtliche <#ba.spellinflictonchar>Technikkumulierungen</> und <#ba.spellinflictonchar>Technikreaktionen</> <#ba.dispel>aufzuheben</> und dann sofort <@ba.vup>{value2:0%}</> deiner max. LP und <@ba.vup>{value:0}</> zusätzliche LP wiederherzustellen."
+    },
+    "item_corp3_animal_1": {
+        "desc": "Verwenden, um ANG-Kraft +<@ba.vup>{buff_common_atk_buff_potion_2\\value:0}</>, Kritische Rate +<@ba.vup>{buff_common_ctr_buff_potion_1\\value:0%}</> zu gewähren. Dauer: <@ba.vup>{buff_common_atk_buff_potion_2\\duration:0}</> Sek."
+    },
+    "item_corp3_grass1_1": {
+        "desc": "Verwenden, um Kritische Rate +<@ba.vup>{buff_common_ctr_buff_potion_1\\value:0%}</> und alle Arten von Schaden +<@ba.vup>{buff_common_dmg_up_potion_1\\value:0%}</> zu gewähren. Dauer: <@ba.vup>{buff_common_ctr_buff_potion_1\\duration:0}</> Sek."
+    },
+    "item_corp4_animal_1": {
+        "desc": "Verwenden, um +<@ba.vup>{value:0%}</> auf deine VERT-Kraft zu gewähren. Dauer: <@ba.vup>{duration:0}</> Sek."
+    },
+    "item_corp4_grass2_1": {
+        "desc": "Verwenden, um sofort <@ba.vup>{value2:0%}</> deiner max. LP und <@ba.vup>{value:0}</> zusätzliche LP wiederherzustellen."
+    },
+    "item_corp4_spc": {
+        "desc": "Verwenden, um sofort <@ba.vup>{value:0%}</> deiner Ultimativen Energie zu erhalten."
+    },
+    "item_dog_1_slimeml_1_1": {
+        "desc": "Verwenden, um sofort <@ba.vup>{value:0%}</> deiner Ultimativen Energie zu erhalten."
+    },
+    "item_dog_hsmob_corp_1": {
+        "desc": "Verwenden, um sofort <@ba.vup>{value2:0%}</> der max. LP des Teams und <@ba.vup>{value:0}</> zusätzliche LP wiederherzustellen."
+    },
+    "item_erhound_1_agmelee_1_moss_1_1": {
+        "desc": "Verwenden, um für <@ba.vup>{duration:0}</> Sek. +<@ba.vup>{1-value:0%}</> SDN-Reduzierung für alle Arten von SDN zu gewähren."
+    },
+    "item_ethillu_1_wgslime_1_wgthorns_1_1": {
+        "desc": "Verwenden, um die Kombofertigkeit-AZ um <@ba.vup>{1-value:0%}</> zu verringern. Dauer: <@ba.vup>{duration:0}</> Sek."
+    },
+    "item_firebat_1_agrange_1_1": {
+        "desc": "Verwenden, um ANG-Kraft +<@ba.vup>{buff_common_atk_buff_potion_1\\value:0%}</>, Kritische Rate +<@ba.vup>{buff_common_ctr_buff_potion_1\\value:0%}</> und alle Arten von Schaden +<@ba.vup>{buff_common_dmg_up_potion_1\\value:0%}</> zu gewähren. Dauer: <@ba.vup>{buff_common_atk_buff_potion_1\\duration:0}</> Sek."
+    },
+    "item_hscrane_1_hsmob_1_grass_1_1": {
+        "desc": "Verwenden, um sofort <@ba.vup>{value2:0%}</> deiner max. LP und <@ba.vup>{value:0}</> zusätzliche LP wiederherzustellen."
+    },
+    "item_hsfly_1_slimeml_1_hsmob_1_1": {
+        "desc": "Verwenden, um +<@ba.vup>{value:0%}</> auf deine Kritische Rate-Kraft zu gewähren. Dauer: <@ba.vup>{duration:0}</> Sek."
+    },
+    "item_hshog_1_hsmob_1_slimeml_1_1": {
+        "desc": "Verwenden, um VERT +<@ba.vup>{buff_common_def_buff_potion_2\\value:0}</> und SDN-Reduzierung +<@ba.vup>{1-buff_common_resis_up_potion_1\\value:0%}</> für alle Arten von SDN zu gewähren. Dauer: <@ba.vup>{buff_common_resis_up_potion_1\\duration:0}</> Sek."
+    },
+    "item_hsmob_1_dog_1_1": {
+        "desc": "Verwenden, um Ultimative Effizienzsteigerung +<@ba.vup>{buff_common_usprt_buff_potion_1\\value:0%}</> und Bonus für Erhaltene Behandlung +<@ba.vup>{buff_common_healrt_buff_potion_2\\value:0%}</> zu gewähren. Dauer: <@ba.vup>{buff_common_usprt_buff_potion_1\\duration:0}</> Sek."
+    },
+    "item_hsmob_1_grass_2_1": {
+        "desc": "Verwenden, um <@ba.vup>{triggerheal2:0%}</> deiner max. LP pro Sekunde und <@ba.vup>{triggerheal:0}</> LP wiederherzustellen. Dauer: <@ba.vup>{duration:0}</> Sek."
+    },
+    "item_jzmonk_1_hsmob_1_1": {
+        "desc": "Verwenden, um die Kritische Rate um +<@ba.vup>{buff_common_ctr_buff_potion_1\\value:0%}</> zu erhöhen, allerdings auf Kosten der VERT <@ba.vup>{-buff_common_def_buff_potion_3\\value:0%}</>. Dauer: <@ba.vup>{buff_common_ctr_buff_potion_1\\duration:0}</> Sek."
+    },
+    "item_klbuds_1_hsfly_1_1": {
+        "desc": "Verwenden, um <@ba.vup>{buff_common_def_buff_potion_1\\value:0%}</> VERT und <@ba.vup>{1-buff_common_resis_up_potion_1\\value:0%}</> SDN-Reduzierung für alle Arten von SDN zu gewähren. Dauer: <@ba.vup>{buff_common_def_buff_potion_1\\duration:0}</> Sek."
+    },
+    "item_klcreatures_1_wgthorns_1_1": {
+        "desc": "Verwenden, um Ultimative Effizienzsteigerung +<@ba.vup>{value:0%}</> zu gewähren. Dauer: <@ba.vup>{duration:0}</> Sek."
+    },
+    "item_lbmob_1_dog_1_moss_1_1": {
+        "desc": "Verwenden, um +<@ba.vup>{value:0}</> auf alle Attribute zu gewähren. Dauer: <@ba.vup>{duration:0}</> Sek."
+    },
+    "item_lbmob_1_lbshamman_1_sp_1_1": {
+        "desc": "Verwenden, um beim gesamten Team <@ba.vup>{triggerheal2:0%}</> der max. LP pro Sekunde und <@ba.vup>{triggerheal:0}</> LP wiederherzustellen. Dauer: <@ba.vup>{duration:0}</> Sek."
+    },
+    "item_lbmob_1_moss_2_bottled_1": {
+        "desc": "Verwenden, um sämtliche <#ba.spellinflictonchar>Technikkumulierungen</> und <#ba.spellinflictonchar>Technikreaktionen</> <#ba.dispel>aufzuheben</> und dann sofort <@ba.vup>{value2:0%}</> deiner max. LP und <@ba.vup>{value:0}</> zusätzliche LP wiederherzustellen."
+    },
+    "item_lbshamman_1_agmelee_1_1": {
+        "desc": "Verwenden, um sofort <@ba.vup>{value2:0%}</> der max. LP des Teams und <@ba.vup>{value:0}</> zusätzliche LP wiederherzustellen."
+    },
+    "item_lbshield_1_slimeml_1_dog_1_1": {
+        "desc": "Verwenden, um +<@ba.vup>{value:0%}</> auf verursachten Physischen SDN zu gewähren. Dauer: <@ba.vup>{duration:0}</> Sek."
+    },
+    "item_mimicw_1_moss_1_moss_2_1": {
+        "desc": "Verwenden, um +<@ba.vup>{buff_common_atk_buff_potion_1\\value:0%}</> auf deine ANG-Kraft zu gewähren. Dauer: <@ba.vup>{buff_common_atk_buff_potion_1\\duration:0}</> Sek."
+    },
+    "item_monthlycard_1": {
+        "desc": "Verbrauchsgegenstand. Zeigt bei Verwendung unentdecktes Talosit innerhalb des aktuellen Bereichs an. Kann nur verwendet werden, nachdem alle verschleierten Orte auf der Karte entdeckt wurden. Dieser Gegenstand funktioniert nur in Wuling."
+    },
+    "item_plant_grass_powder_1": {
+        "desc": "Verwenden, um sofort <@ba.vup>{value:0}</> LP wiederherzustellen."
+    },
+    "item_plant_grass_powder_2": {
+        "desc": "Verwenden, um für <@ba.vup>{duration:0}</> Sek. <@ba.vup>{triggerheal:0}</> LP pro Sekunde wiederherzustellen."
+    },
+    "item_plant_grass_spc_powder_1": {
+        "desc": "Verwenden, um sofort <@ba.vup>{value2:0%}</> deiner max. LP und <@ba.vup>{value:0}</> zusätzliche LP wiederherzustellen."
+    },
+    "item_plant_grass_spc_powder_2": {
+        "desc": "Verwenden, um <@ba.vup>{triggerheal2:0%}</> deiner max. LP pro Sekunde und <@ba.vup>{triggerheal:0}</> LP wiederherzustellen. Dauer: <@ba.vup>{duration:0}</> Sek."
+    },
+    "item_plant_moss_powder_1": {
+        "desc": "Verwenden, um sofort <@ba.vup>{value:0}</> LP wiederherzustellen."
+    },
+    "item_plant_moss_powder_2": {
+        "desc": "Verwenden, um für <@ba.vup>{duration:0}</> Sek. <@ba.vup>{triggerheal:0}</> LP pro Sekunde wiederherzustellen."
+    },
+    "item_plant_moss_spc_powder_1": {
+        "desc": "Verwenden, um sofort <@ba.vup>{value2:0%}</> deiner max. LP und <@ba.vup>{value:0}</> zusätzliche LP wiederherzustellen."
+    },
+    "item_plant_moss_spc_powder_2": {
+        "desc": "Verwenden, um <@ba.vup>{triggerheal2:0%}</> deiner max. LP pro Sekunde und <@ba.vup>{triggerheal:0}</> LP wiederherzustellen. Dauer: <@ba.vup>{duration:0}</> Sek."
+    },
+    "item_proc_bomb_1": {
+        "desc": "Ein Sprengstoffpaket. \nKann verwendet werden, um Ziele direkt anzugreifen. Die ausgelöste Explosion fügt allen Gegnern in der Nähe SDN zu."
+    },
+    "item_resetid_1": {
+        "desc": "Verbrauchsgegenstand. Zeigt bei Verwendung ein unentdecktes Talosit innerhalb des aktuellen Bereichs an. Kann nur verwendet werden, nachdem alle verschleierten Orte auf der Karte entdeckt wurden. Dieser Gegenstand funktioniert nur in Wuling."
+    },
+    "item_slimeml_1_agrange_1_moss_2_1": {
+        "desc": "Verwenden, um sofort <@ba.vup>{value:0%}</> Ultimative Energie zu erhalten."
+    },
+    "item_slimeml_1_erhound_1_agfly_1_1": {
+        "desc": "Verwenden, um <#ba.spellinflictonchar>Technikkumulierungen</> und <#ba.spellinflictonchar>Technikreaktionen</> <#ba.dispel>aufzuheben</> und dann <@ba.vup>{triggerheal:0}</> Sek. lang <@ba.vup>{duration:0}</> LP pro Sekunde wiederherzustellen."
+    },
+    "item_slwood_1_hshog_1_1": {
+        "desc": "Verwenden, um sämtliche <#ba.spellinflictonchar>Technikkumulierungen</> und <#ba.spellinflictonchar>Technikreaktionen</> <#ba.dispel>aufzuheben</> und dann sofort <@ba.vup>{value2:0%}</> deiner max. LP und <@ba.vup>{value:0}</> zusätzliche LP wiederherzustellen."
+    },
+    "item_sp_1_moss_1_agmelee_1_1": {
+        "desc": "Verwenden, um sofort <@ba.vup>{value2:0%}</> der max. LP des Teams und <@ba.vup>{value:0}</> zusätzliche LP wiederherzustellen."
+    },
+    "item_sp_2_moss_2_agrange_1_1": {
+        "desc": "Verwenden, um beim gesamten Team <@ba.vup>{triggerheal2:0%}</> der max. LP pro Sekunde und <@ba.vup>{triggerheal:0}</> LP wiederherzustellen. Dauer: <@ba.vup>{duration:0}</> Sek."
+    },
+    "item_tundra_detector_coin_3": {
+        "desc": "Verbrauchsgegenstand. Zeigt bei Verwendung unentdecktes Aurylen innerhalb des aktuellen Bereichs an. Kann nur verwendet werden, nachdem alle verschleierten Orte auf der Karte entdeckt wurden. Dieser Gegenstand funktioniert nur in Tal IV."
+    },
+    "item_tundra_detector_trchest_3": {
+        "desc": "Verbrauchsgegenstand. Zeigt bei Verwendung eine unentdeckte Vorratskiste innerhalb des aktuellen Bereichs an. Kann nur verwendet werden, nachdem alle verschleierten Orte auf der Karte entdeckt wurden. Dieser Gegenstand funktioniert nur in Tal IV."
+    },
+    "item_wgshoal_1_grass_1_grass_2_1": {
+        "desc": "Verwenden, um ANG-Kraft +<@ba.vup>{buff_common_atk_buff_potion_1\\value:0%}</>, Kritische Rate +<@ba.vup>{buff_common_ctr_buff_potion_1\\value:0%}</> zu gewähren. Dauer: <@ba.vup>{buff_common_ctr_buff_potion_1\\duration:0}</> Sek."
+    },
+    "item_wgslime_1_hsmob_1_grass_2_1": {
+        "desc": "Verwenden, um <@ba.vup>{triggerheal2:0%}</> deiner max. LP pro Sekunde und <@ba.vup>{triggerheal:0}</> LP wiederherzustellen. Dauer: <@ba.vup>{duration:0}</> Sek."
+    },
+    "item_wgslime_1_wgthorns_1_1": {
+        "desc": "Verwenden, um VERT +<@ba.vup>{buff_common_def_buff_potion_1\\value:0%}</>, SDN-Reduzierung für alle Arten von SDN +<@ba.vup>{1-buff_common_resis_up_potion_1\\value:0%}</> und Behandlungsbonus +<@ba.vup>{buff_common_healrt_buff_potion_1\\value:0%}</> zu gewähren. Dauer: <@ba.vup>{buff_common_def_buff_potion_1\\duration:0}</> Sek."
+    },
+    "item_wgthorns_1_hshog_1_hsmob_1_1": {
+        "desc": "Verwenden, um für <@ba.vup>{duration:0}</> Sek. +<@ba.vup>{1-value:0%}</> SDN-Reduzierung für alle Arten von SDN zu gewähren."
+    },
+    "item_wuling_detector_coin_3": {
+        "desc": "Verbrauchsgegenstand. Zeigt bei Verwendung unentdecktes Aurylen innerhalb des aktuellen Bereichs an. Kann nur verwendet werden, nachdem alle verschleierten Orte auf der Karte entdeckt wurden. Dieser Gegenstand funktioniert nur in Wuling."
+    },
+    "item_wuling_detector_star": {
+        "desc": "Verbrauchsgegenstand. Zeigt bei Verwendung ein unentdecktes Talosit innerhalb des aktuellen Bereichs an. Kann nur verwendet werden, nachdem alle verschleierten Orte auf der Karte entdeckt wurden. Dieser Gegenstand funktioniert nur in Wuling."
+    },
+    "item_wuling_detector_trchest_3": {
+        "desc": "Verbrauchsgegenstand. Zeigt bei Verwendung eine unentdeckte Vorratskiste innerhalb des aktuellen Bereichs an. Kann nur verwendet werden, nachdem alle verschleierten Orte auf der Karte entdeckt wurden. Dieser Gegenstand funktioniert nur in Wuling."
+    }
+}

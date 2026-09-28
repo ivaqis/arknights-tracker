@@ -1,7 +1,7 @@
+import type { IBoardable } from "$lib/classes/gameData/IBoardable";
 import type { EquipableItemConditionType } from "$lib/classes/gameData/items/equipable/EquipableItemConditionType";
-import type { IFood } from "$lib/classes/gameData/items/food/IFood";
 
-export interface IEquipableFood extends IFood {
+export interface ITactical extends IBoardable {
     get condType(): EquipableItemConditionType;
     get condParams(): readonly string[];
     get castTime(): number;

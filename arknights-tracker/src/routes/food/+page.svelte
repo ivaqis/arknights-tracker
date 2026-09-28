@@ -3,7 +3,7 @@
     import { FoodComparator } from "$lib/classes/comparators/items/FoodComparator";
     import type { IFoodComparator } from "$lib/classes/comparators/items/IFoodComparator";
     import { LocaleOrder } from "$lib/classes/comparators/LocaleOrder";
-    import type { GenericFood } from "$lib/classes/gameData/items/food/GenericFood";
+    import type { IFood } from "$lib/classes/gameData/items/food/IFood";
     import type { IItem } from "$lib/classes/gameData/items/IItem";
     import type { SortDirection } from "$lib/classes/SortDirection";
     import { FoodTabType } from "$lib/classes/tabs/food/FoodTabType";
@@ -13,7 +13,6 @@
     import FoodSortDropdown from "$lib/components/dataToolbarV2/sortDropdowns/FoodSortDropdown.svelte";
     import type { ITabSelectEvent } from "$lib/components/tabSelector/ITabSelectEvent";
     import TabSelector from "$lib/components/tabSelector/TabSelector.svelte";
-    import { equipableFoodStorage } from "$lib/dataStorages/items/equipableFoodStorage";
     import { foodStorage } from "$lib/dataStorages/items/foodStorage";
     import { t } from "$lib/i18n";
     import type { FoodFilterGroup, FoodFilterValue } from "$lib/stores/filters/food/FoodFilterValueMap";
@@ -45,22 +44,10 @@
         }
     }
 
-    const allItems: readonly GenericFood[] = getAllItems();
+    const allItems: readonly IFood[] = getAllItems();
 
-    function getAllItems(): GenericFood[] {
-        const result: GenericFood[] = [];
-
-        for (const food of foodStorage.list) {
-            const equipable = equipableFoodStorage.byGameId.get(food.gameId);
-
-            if (equipable) {
-                result.push(equipable);
-            } else {
-                result.push(food);
-            }
-        }
-
-        return result;
+    function getAllItems(): readonly IFood[] {
+        return foodStorage.list;
     }
 
     function selectItem(item: IItem) {
@@ -86,20 +73,20 @@
 
     let sortDirection: SortDirection = "asc";
 
-    let filteredItems: GenericFood[];
+    let filteredItems: IFood[];
 
     $: filteredItems = getFilteredItems(allItems, $foodSortParams, sortDirection, $foodFilters, $foodSearch);
 
-    function getFilteredItems(items: readonly GenericFood[], sortParams: FoodSortParams, sortDirection: SortDirection, filters: FoodSelectedFilterMap, searchQuery: string) {
+    function getFilteredItems(items: readonly IFood[], sortParams: FoodSortParams, sortDirection: SortDirection, filters: FoodSelectedFilterMap, searchQuery: string) {
         comparator.setComparatorsOrder(sortParams.sortFieldOrder);
         comparator.rarityComparator.setValueOrder(sortParams.sortFieldParams.rarity);
         comparator.buffComparator.setValueOrder(sortParams.sortFieldParams.buff);
         comparator.equipCondComparator.setValueOrder(sortParams.sortFieldParams.equipCond);
         comparator.localeComparator.isReversed = sortParams.sortFieldParams.locale === LocaleOrder.Z_A;
 
-        const result: GenericFood[] = items.filter(item => {
+        const result: IFood[] = items.filter(item => {
             return filterCheck(filters.rarity, item.rarity)
-                && filterCheck(filters.equipCond, "condType" in item ? item.condType : "null")
+                && filterCheck(filters.equipCond, item.tactical?.condType ?? "null")
                 && filterCheckMany(filters.buff, item.buffs.map(buff => buff.buffId))
                 && (!searchQuery
                     || item.gameId.includes(searchQuery)

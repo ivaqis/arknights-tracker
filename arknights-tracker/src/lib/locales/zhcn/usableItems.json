@@ -1,0 +1,257 @@
+{
+    "item_agfly_1_agmelee_1_moss_2_1": {
+        "desc": "使用后，每秒回复<@ba.vup>{triggerheal2:0%}</>最大生命值和<@ba.vup>{triggerheal:0}</>点生命值，持续<@ba.vup>{duration:0}</>秒。"
+    },
+    "item_agmelee_1_moss_1_lbmob_1_1": {
+        "desc": "使用后，立刻回复<@ba.vup>{value2:0%}</>最大生命值，再回复<@ba.vup>{value:0}</>点生命值。"
+    },
+    "item_agmelee_1_sp_2_slimeml_1_1": {
+        "desc": "使用后，增加<@ba.vup>{value:0%}</>防御力，持续<@ba.vup>{duration:0}</>秒。"
+    },
+    "item_agrange_1_erhound_1_sp_1_1": {
+        "desc": "使用后，增加<@ba.vup>{value:0%}</>攻击力，持续<@ba.vup>{duration:0}</>秒。"
+    },
+    "item_agrange_1_lbshamman_bottled_1": {
+        "desc": "使用后，受到所有类型的伤害降低<@ba.vup>{1-value:0%}</>，持续<@ba.vup>{duration:0}</>秒。"
+    },
+    "item_agrange_1_moss_2_lbmob_1_1": {
+        "desc": "使用后，增加<@ba.vup>{buff_common_def_buff_potion_1\\value:0%}</>防御力，持续<@ba.vup>{buff_common_def_buff_potion_1\\duration:0}</>秒。"
+    },
+    "item_bottled_flower1spc_1": {
+        "desc": "使用后，立刻回复<@ba.vup>{value2:0%}</>最大生命值，再回复<@ba.vup>{value:0}</>点生命值。"
+    },
+    "item_bottled_flower1spc_2": {
+        "desc": "使用后，立刻回复<@ba.vup>{value2:0%}</>最大生命值，再回复<@ba.vup>{value:0}</>点生命值。"
+    },
+    "item_bottled_flower1spc_3": {
+        "desc": "使用后，立刻回复<@ba.vup>{value2:0%}</>最大生命值，再回复<@ba.vup>{value:0}</>点生命值。"
+    },
+    "item_bottled_flower2spc_1": {
+        "desc": "使用后，每秒都会回复<@ba.vup>{triggerheal2:0%}</>最大生命值和<@ba.vup>{triggerheal:0}</>点生命值，持续<@ba.vup>{duration:0}</>秒。"
+    },
+    "item_bottled_flower2spc_2": {
+        "desc": "使用后，每秒都会回复<@ba.vup>{triggerheal2:0%}</>最大生命值和<@ba.vup>{triggerheal:0}</>点生命值，持续<@ba.vup>{duration:0}</>秒。"
+    },
+    "item_bottled_flower2spc_3": {
+        "desc": "使用后，每秒都会回复<@ba.vup>{triggerheal2:0%}</>最大生命值和<@ba.vup>{triggerheal:0}</>点生命值，持续<@ba.vup>{duration:0}</>秒。"
+    },
+    "item_bottled_food_1": {
+        "desc": "使用后，每秒回复<@ba.vup>{triggerheal:0}</>点生命值，持续<@ba.vup>{duration:0}</>秒。"
+    },
+    "item_bottled_food_2": {
+        "desc": "使用后，每秒回复<@ba.vup>{triggerheal:0}</>点生命值，持续<@ba.vup>{duration:0}</>秒。"
+    },
+    "item_bottled_food_3": {
+        "desc": "使用后，每秒回复<@ba.vup>{triggerheal:0}</>点生命值，持续<@ba.vup>{duration:0}</>秒。"
+    },
+    "item_bottled_food_4": {
+        "desc": "使用后，立刻回复<@ba.vup>{value:0}</>点生命值。"
+    },
+    "item_bottled_food_5": {
+        "desc": "使用后，立刻回复<@ba.vup>{value:0}</>点生命值。"
+    },
+    "item_bottled_grass1spc_1": {
+        "desc": "使用后，立刻回复<@ba.vup>{value2:0%}</>最大生命值，再回复<@ba.vup>{value:0}</>点生命值。"
+    },
+    "item_bottled_grass1spc_2": {
+        "desc": "使用后，立刻回复<@ba.vup>{value2:0%}</>最大生命值，再回复<@ba.vup>{value:0}</>点生命值。"
+    },
+    "item_bottled_grass2spc_1": {
+        "desc": "使用后，每秒回复<@ba.vup>{triggerheal2:0%}</>最大生命值和<@ba.vup>{triggerheal:0}</>点生命值，持续<@ba.vup>{duration:0}</>秒。"
+    },
+    "item_bottled_grass2spc_2": {
+        "desc": "使用后，每秒回复<@ba.vup>{triggerheal2:0%}</>最大生命值和<@ba.vup>{triggerheal:0}</>点生命值，持续<@ba.vup>{duration:0}</>秒。"
+    },
+    "item_bottled_insec1_1": {
+        "desc": "使用后，立刻使处于无法战斗状态的指定单体复苏，并回复<@ba.vup>10%</>最大生命值。"
+    },
+    "item_bottled_insec1_2": {
+        "desc": "使用后，立刻使处于无法战斗状态的指定单体复苏，并回复<@ba.vup>30%</>最大生命值。"
+    },
+    "item_bottled_insec2_1": {
+        "desc": "使用后，造成的所有伤害增加<@ba.vup>{buff_common_dmg_up_potion_1\\value:0%}</>，持续<@ba.vup>{buff_common_dmg_up_potion_1\\duration:0}</>秒。"
+    },
+    "item_bottled_insec2_2": {
+        "desc": "使用后，造成的所有伤害增加<@ba.vup>{buff_common_dmg_up_potion_1\\value:0%}</>，持续<@ba.vup>{buff_common_dmg_up_potion_1\\duration:0}</>秒。"
+    },
+    "item_bottled_moss_1_2_1": {
+        "desc": "使用后，终结技充能效率增加<@ba.vup>{value:0%}</>，持续<@ba.vup>{duration:0}</>秒。"
+    },
+    "item_bottled_moss_2_animal_1": {
+        "desc": "使用后，立刻回复<@ba.vup>{value2:0%}</>最大生命值，再回复<@ba.vup>{value:0}</>点生命值。"
+    },
+    "item_bottled_rec_hp_1": {
+        "desc": "使用后，立刻回复<@ba.vup>{value:0}</>点生命值。"
+    },
+    "item_bottled_rec_hp_2": {
+        "desc": "使用后，立刻回复<@ba.vup>{value:0}</>点生命值。"
+    },
+    "item_bottled_rec_hp_3": {
+        "desc": "使用后，立刻回复<@ba.vup>{value:0}</>点生命值。"
+    },
+    "item_bottled_rec_hp_4": {
+        "desc": "使用后，每秒回复<@ba.vup>{triggerheal:0}</>点生命值，持续<@ba.vup>{duration:0}</>秒。"
+    },
+    "item_bottled_rec_hp_5": {
+        "desc": "使用后，每秒回复<@ba.vup>{triggerheal:0}</>点生命值，持续<@ba.vup>{duration:0}</>秒。"
+    },
+    "item_cbp_voucher_originium": {
+        "desc": "消耗品，使用后可探测出当前区域内的一个未发现的塔晶。解锁当前区域所有地图迷雾后才可使用。（仅限武陵地区生效）"
+    },
+    "item_cbp_voucher_pay": {
+        "desc": "消耗品，使用后可探测出当前区域内的一个未发现的塔晶。解锁当前区域所有地图迷雾后才可使用。（仅限武陵地区生效）"
+    },
+    "item_corp1_animal_1": {
+        "desc": "使用后，立刻回复<@ba.vup>{value2:0%}</>最大生命值，再回复<@ba.vup>{value:0}</>点生命值。"
+    },
+    "item_corp2_animal_1": {
+        "desc": "使用后，<#ba.dispel>净化</><#ba.spellinflictonchar>法术附着</>与<#ba.spellinflictonchar>法术异常</>，然后立刻回复<@ba.vup>{value2:0%}</>最大生命值，再回复<@ba.vup>{value:0}</>点生命值。"
+    },
+    "item_corp3_animal_1": {
+        "desc": "使用后，增加<@ba.vup>{buff_common_atk_buff_potion_2\\value:0}</>点攻击力，增加<@ba.vup>{buff_common_ctr_buff_potion_1\\value:0%}</>暴击率，持续<@ba.vup>{buff_common_atk_buff_potion_2\\duration:0}</>秒。"
+    },
+    "item_corp3_grass1_1": {
+        "desc": "使用后，增加<@ba.vup>{buff_common_ctr_buff_potion_1\\value:0%}</>暴击率，造成的所有伤害增加<@ba.vup>{buff_common_dmg_up_potion_1\\value:0%}</>，持续<@ba.vup>{buff_common_ctr_buff_potion_1\\duration:0}</>秒。"
+    },
+    "item_corp4_animal_1": {
+        "desc": "使用后，增加<@ba.vup>{value:0%}</>防御力，持续<@ba.vup>{duration:0}</>秒。"
+    },
+    "item_corp4_grass2_1": {
+        "desc": "使用后，立刻回复<@ba.vup>{value2:0%}</>最大生命值，再回复<@ba.vup>{value:0}</>点生命值。"
+    },
+    "item_corp4_spc": {
+        "desc": "使用后，立刻恢复<@ba.vup>{value:0%}</>终结技能量。"
+    },
+    "item_dog_1_slimeml_1_1": {
+        "desc": "使用后，立刻恢复<@ba.vup>{value:0%}</>终结技能量。"
+    },
+    "item_dog_hsmob_corp_1": {
+        "desc": "使用后，全队干员立刻回复<@ba.vup>{value2:0%}</>最大生命值，再回复<@ba.vup>{value:0}</>点生命值。"
+    },
+    "item_erhound_1_agmelee_1_moss_1_1": {
+        "desc": "使用后，受到所有类型的伤害降低<@ba.vup>{1-value:0%}</>，持续<@ba.vup>{duration:0}</>秒。"
+    },
+    "item_ethillu_1_wgslime_1_wgthorns_1_1": {
+        "desc": "使用后，连携技冷却时间缩减<@ba.vup>{1-value:0%}</>，持续<@ba.vup>{duration:0}</>秒。"
+    },
+    "item_firebat_1_agrange_1_1": {
+        "desc": "使用后，增加<@ba.vup>{buff_common_atk_buff_potion_1\\value:0%}</>攻击力，增加<@ba.vup>{buff_common_ctr_buff_potion_1\\value:0%}</>暴击率，造成的所有伤害增加<@ba.vup>{buff_common_dmg_up_potion_1\\value:0%}</>，持续<@ba.vup>{buff_common_atk_buff_potion_1\\duration:0}</>秒。"
+    },
+    "item_hscrane_1_hsmob_1_grass_1_1": {
+        "desc": "使用后，立刻回复<@ba.vup>{value2:0%}</>最大生命值，再回复<@ba.vup>{value:0}</>点生命值。"
+    },
+    "item_hsfly_1_slimeml_1_hsmob_1_1": {
+        "desc": "使用后，增加<@ba.vup>{value:0%}</>暴击率，持续<@ba.vup>{duration:0}</>秒。"
+    },
+    "item_hshog_1_hsmob_1_slimeml_1_1": {
+        "desc": "使用后，增加<@ba.vup>{buff_common_def_buff_potion_2\\value:0}</>点防御力，受到所有类型的伤害降低<@ba.vup>{1-buff_common_resis_up_potion_1\\value:0%}</>，持续<@ba.vup>{buff_common_resis_up_potion_1\\duration:0}</>秒。"
+    },
+    "item_hsmob_1_dog_1_1": {
+        "desc": "使用后，终结技充能效率增加<@ba.vup>{buff_common_usprt_buff_potion_1\\value:0%}</>，受治疗效率加成提高<@ba.vup>{buff_common_healrt_buff_potion_2\\value:0%}</>，持续<@ba.vup>{buff_common_usprt_buff_potion_1\\duration:0}</>秒。"
+    },
+    "item_hsmob_1_grass_2_1": {
+        "desc": "使用后，每秒回复<@ba.vup>{triggerheal2:0%}</>最大生命值和<@ba.vup>{triggerheal:0}</>点生命值，持续<@ba.vup>{duration:0}</>秒。"
+    },
+    "item_jzmonk_1_hsmob_1_1": {
+        "desc": "使用后，增加<@ba.vup>{buff_common_ctr_buff_potion_1\\value:0%}</>暴击率，降低<@ba.vup>{-buff_common_def_buff_potion_3\\value:0%}</>防御力，持续<@ba.vup>{buff_common_ctr_buff_potion_1\\duration:0}</>秒。"
+    },
+    "item_klbuds_1_hsfly_1_1": {
+        "desc": "使用后，增加<@ba.vup>{buff_common_def_buff_potion_1\\value:0%}</>防御力，受到所有类型的伤害降低<@ba.vup>{1-buff_common_resis_up_potion_1\\value:0%}</>，持续<@ba.vup>{buff_common_def_buff_potion_1\\duration:0}</>秒。"
+    },
+    "item_klcreatures_1_wgthorns_1_1": {
+        "desc": "使用后，终结技充能效率增加<@ba.vup>{value:0%}</>，持续<@ba.vup>{duration:0}</>秒。"
+    },
+    "item_lbmob_1_dog_1_moss_1_1": {
+        "desc": "使用后，增加<@ba.vup>{value:0}</>点全能力，持续<@ba.vup>{duration:0}</>秒。"
+    },
+    "item_lbmob_1_lbshamman_1_sp_1_1": {
+        "desc": "使用后，全队干员每秒回复<@ba.vup>{triggerheal2:0%}</>最大生命值和<@ba.vup>{triggerheal:0}</>点生命值，持续<@ba.vup>{duration:0}</>秒。"
+    },
+    "item_lbmob_1_moss_2_bottled_1": {
+        "desc": "使用后，<#ba.dispel>净化</><#ba.spellinflictonchar>法术附着</>与<#ba.spellinflictonchar>法术异常</>，然后立刻回复<@ba.vup>{value2:0%}</>最大生命值，再回复<@ba.vup>{value:0}</>点生命值。"
+    },
+    "item_lbshamman_1_agmelee_1_1": {
+        "desc": "使用后，全队干员立刻回复<@ba.vup>{value2:0%}</>最大生命值，再回复<@ba.vup>{value:0}</>点生命值。"
+    },
+    "item_lbshield_1_slimeml_1_dog_1_1": {
+        "desc": "使用后，造成的物理伤害增加<@ba.vup>{value:0%}</>，持续<@ba.vup>{duration:0}</>秒。"
+    },
+    "item_mimicw_1_moss_1_moss_2_1": {
+        "desc": "使用后，增加<@ba.vup>{buff_common_atk_buff_potion_1\\value:0%}</>攻击力，持续<@ba.vup>{buff_common_atk_buff_potion_1\\duration:0}</>秒。"
+    },
+    "item_monthlycard_1": {
+        "desc": "消耗品，使用后可探测出当前区域内的一个未发现的塔晶。解锁当前区域所有地图迷雾后才可使用。（仅限武陵地区生效）"
+    },
+    "item_plant_grass_powder_1": {
+        "desc": "使用后，立刻回复<@ba.vup>{value:0}</>点生命值。"
+    },
+    "item_plant_grass_powder_2": {
+        "desc": "使用后，每秒回复<@ba.vup>{triggerheal:0}</>点生命值，持续<@ba.vup>{duration:0}</>秒。"
+    },
+    "item_plant_grass_spc_powder_1": {
+        "desc": "使用后，立刻回复<@ba.vup>{value2:0%}</>最大生命值，再回复<@ba.vup>{value:0}</>点生命值。"
+    },
+    "item_plant_grass_spc_powder_2": {
+        "desc": "使用后，每秒回复<@ba.vup>{triggerheal2:0%}</>最大生命值和<@ba.vup>{triggerheal:0}</>点生命值，持续<@ba.vup>{duration:0}</>秒。"
+    },
+    "item_plant_moss_powder_1": {
+        "desc": "使用后，立刻回复<@ba.vup>{value:0}</>点生命值。"
+    },
+    "item_plant_moss_powder_2": {
+        "desc": "使用后，每秒回复<@ba.vup>{triggerheal:0}</>点生命值，持续<@ba.vup>{duration:0}</>秒。"
+    },
+    "item_plant_moss_spc_powder_1": {
+        "desc": "使用后，立刻回复<@ba.vup>{value2:0%}</>最大生命值，再回复<@ba.vup>{value:0}</>点生命值。"
+    },
+    "item_plant_moss_spc_powder_2": {
+        "desc": "使用后，每秒都会回复<@ba.vup>{triggerheal2:0%}</>最大生命值和<@ba.vup>{triggerheal:0}</>点生命值，持续<@ba.vup>{duration:0}</>秒。"
+    },
+    "item_proc_bomb_1": {
+        "desc": "组装出的爆炸物。\n可直接使用进行攻击，爆炸时对周围所有敌人造成伤害。"
+    },
+    "item_resetid_1": {
+        "desc": "消耗品，使用后可探测出当前区域内的一个未发现的塔晶。解锁当前区域所有地图迷雾后才可使用。（仅限武陵地区生效）"
+    },
+    "item_slimeml_1_agrange_1_moss_2_1": {
+        "desc": "使用后，全队干员立刻恢复<@ba.vup>{value:0%}</>终结技能量。"
+    },
+    "item_slimeml_1_erhound_1_agfly_1_1": {
+        "desc": "使用后，<#ba.dispel>净化</><#ba.spellinflictonchar>法术附着</>与<#ba.spellinflictonchar>法术异常</>，然后每秒回复<@ba.vup>{triggerheal:0}</>点生命值，持续<@ba.vup>{duration:0}</>秒。"
+    },
+    "item_slwood_1_hshog_1_1": {
+        "desc": "使用后，<#ba.dispel>净化</><#ba.spellinflictonchar>法术附着</>与<#ba.spellinflictonchar>法术异常</>，然后立刻回复<@ba.vup>{value2:0%}</>最大生命值，再回复<@ba.vup>{value:0}</>点生命值。"
+    },
+    "item_sp_1_moss_1_agmelee_1_1": {
+        "desc": "使用后，全队干员立刻回复<@ba.vup>{value2:0%}</>最大生命值，再回复<@ba.vup>{value:0}</>点生命值。"
+    },
+    "item_sp_2_moss_2_agrange_1_1": {
+        "desc": "使用后，全队干员每秒回复<@ba.vup>{triggerheal2:0%}</>最大生命值和<@ba.vup>{triggerheal:0}</>点生命值，持续<@ba.vup>{duration:0}</>秒。"
+    },
+    "item_tundra_detector_coin_3": {
+        "desc": "消耗品，使用后可探测出当前区域内的一个未发现的醚质。解锁当前区域所有地图迷雾后才可使用。（仅限四号谷地地区生效）"
+    },
+    "item_tundra_detector_trchest_3": {
+        "desc": "消耗品，使用后可探测出当前区域内的一个未发现的储藏箱。解锁当前区域所有地图迷雾后才可使用。（仅限四号谷地地区生效）"
+    },
+    "item_wgshoal_1_grass_1_grass_2_1": {
+        "desc": "使用后，增加<@ba.vup>{buff_common_atk_buff_potion_1\\value:0%}</>攻击力，增加<@ba.vup>{buff_common_ctr_buff_potion_1\\value:0%}</>暴击率，持续<@ba.vup>{buff_common_ctr_buff_potion_1\\duration:0}</>秒。"
+    },
+    "item_wgslime_1_hsmob_1_grass_2_1": {
+        "desc": "使用后，每秒回复<@ba.vup>{triggerheal2:0%}</>最大生命值和<@ba.vup>{triggerheal:0}</>点生命值，持续<@ba.vup>{duration:0}</>秒。"
+    },
+    "item_wgslime_1_wgthorns_1_1": {
+        "desc": "使用后，增加<@ba.vup>{buff_common_def_buff_potion_1\\value:0%}</>防御力，受到所有类型的伤害降低<@ba.vup>{1-buff_common_resis_up_potion_1\\value:0%}</>，治疗效率加成提高<@ba.vup>{buff_common_healrt_buff_potion_1\\value:0%}</>，持续<@ba.vup>{buff_common_def_buff_potion_1\\duration:0}</>秒。"
+    },
+    "item_wgthorns_1_hshog_1_hsmob_1_1": {
+        "desc": "使用后，受到所有类型的伤害降低<@ba.vup>{1-value:0%}</>，持续<@ba.vup>{duration:0}</>秒。"
+    },
+    "item_wuling_detector_coin_3": {
+        "desc": "消耗品，使用后可探测出当前区域内的一个未发现的醚质。解锁当前区域所有地图迷雾后才可使用。（仅限武陵地区生效）"
+    },
+    "item_wuling_detector_star": {
+        "desc": "消耗品，使用后可探测出当前区域内的一个未发现的塔晶。解锁当前区域所有地图迷雾后才可使用。（仅限武陵地区生效）"
+    },
+    "item_wuling_detector_trchest_3": {
+        "desc": "消耗品，使用后可探测出当前区域内的一个未发现的储藏箱。解锁当前区域所有地图迷雾后才可使用。（仅限武陵地区生效）"
+    }
+}

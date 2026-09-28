@@ -1,0 +1,202 @@
+{
+    "item_agfly_1_agmelee_1_moss_2_1": {
+        "desc": "裝備後，當隊伍中任意幹員生命值低於<@ba.vup>{param1:0%}</>時自動對其使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>無限制支援主控幹員</>\n - <@tips.orange>用盡後恢復次數</>",
+        "extraDesc": "裝備後，當隊伍中任意幹員生命值低於<@ba.vup>{param1:0%}</>時自動對其使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>無限制支援主控幹員</>：戰鬥中支援主控幹員無次數限制。\n<@tips.orange>用盡後恢復次數</>：戰鬥中的可用次數用盡時，一段時間後會恢復<@ba.vup>1</>次可用次數。"
+    },
+    "item_agmelee_1_moss_1_lbmob_1_1": {
+        "desc": "裝備後，當隊伍中任意幹員生命值低於<@ba.vup>{param1:0%}</>時自動對其使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>無限制支援主控幹員</>\n - <@tips.orange>用盡後恢復次數</>",
+        "extraDesc": "裝備後，當隊伍中任意幹員生命值低於<@ba.vup>{param1:0%}</>時自動對其使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>無限制支援主控幹員</>：戰鬥中支援主控幹員無次數限制。\n<@tips.orange>用盡後恢復次數</>：戰鬥中的可用次數用盡時，一段時間後會恢復<@ba.vup>1</>次可用次數。"
+    },
+    "item_bottled_flower1spc_1": {
+        "desc": "裝備後，當持有幹員生命值低於<@ba.vup>{param1:0%}</>時自動使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>僅一次支援主控幹員</>\n - <@tips.orange>用盡後恢復次數</>",
+        "extraDesc": "裝備後，當持有幹員生命值低於<@ba.vup>{param1:0%}</>時自動使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>僅一次支援主控幹員</>：每場戰鬥僅<@ba.vup>1</>次，當主控幹員生命值低於<@ba.vup>{param1:0%}</>時自動對其使用。\n<@tips.orange>用盡後恢復次數</>：戰鬥中的可用次數用盡時，一段時間後會恢復<@ba.vup>1</>次可用次數。"
+    },
+    "item_bottled_flower1spc_2": {
+        "desc": "裝備後，當持有幹員生命值低於<@ba.vup>{param1:0%}</>時自動使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>僅一次支援主控幹員</>\n - <@tips.orange>用盡後恢復次數</>",
+        "extraDesc": "裝備後，當持有幹員生命值低於<@ba.vup>{param1:0%}</>時自動使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>僅一次支援主控幹員</>：每場戰鬥僅<@ba.vup>1</>次，當主控幹員生命值低於<@ba.vup>{param1:0%}</>時自動對其使用。\n<@tips.orange>用盡後恢復次數</>：戰鬥中的可用次數用盡時，一段時間後會恢復<@ba.vup>1</>次可用次數。"
+    },
+    "item_bottled_flower1spc_3": {
+        "desc": "裝備後，當持有幹員生命值低於<@ba.vup>{param1:0%}</>時自動使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>僅一次支援主控幹員</>\n - <@tips.orange>用盡後恢復次數</>",
+        "extraDesc": "裝備後，當持有幹員生命值低於<@ba.vup>{param1:0%}</>時自動使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>僅一次支援主控幹員</>：每場戰鬥僅<@ba.vup>1</>次，當主控幹員生命值低於<@ba.vup>{param1:0%}</>時自動對其使用。\n<@tips.orange>用盡後恢復次數</>：戰鬥中的可用次數用盡時，一段時間後會恢復<@ba.vup>1</>次可用次數。"
+    },
+    "item_bottled_flower2spc_1": {
+        "desc": "裝備後，當隊伍中任意幹員生命值低於<@ba.vup>{param1:0%}</>時自動對其使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>無限制支援主控幹員</>\n - <@tips.orange>用盡後恢復次數</>",
+        "extraDesc": "裝備後，當隊伍中任意幹員生命值低於<@ba.vup>{param1:0%}</>時自動對其使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>無限制支援主控幹員</>：戰鬥中支援主控幹員無次數限制。\n<@tips.orange>用盡後恢復次數</>：戰鬥中的可用次數用盡時，一段時間後會恢復<@ba.vup>1</>次可用次數。"
+    },
+    "item_bottled_flower2spc_2": {
+        "desc": "裝備後，當隊伍中任意幹員生命值低於<@ba.vup>{param1:0%}</>時自動對其使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>無限制支援主控幹員</>\n - <@tips.orange>用盡後恢復次數</>",
+        "extraDesc": "裝備後，當隊伍中任意幹員生命值低於<@ba.vup>{param1:0%}</>時自動對其使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>無限制支援主控幹員</>：戰鬥中支援主控幹員無次數限制。\n<@tips.orange>用盡後恢復次數</>：戰鬥中的可用次數用盡時，一段時間後會恢復<@ba.vup>1</>次可用次數。"
+    },
+    "item_bottled_flower2spc_3": {
+        "desc": "裝備後，當隊伍中任意幹員生命值低於<@ba.vup>{param1:0%}</>時自動對其使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>無限制支援主控幹員</>\n - <@tips.orange>用盡後恢復次數</>",
+        "extraDesc": "裝備後，當隊伍中任意幹員生命值低於<@ba.vup>{param1:0%}</>時自動對其使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>無限制支援主控幹員</>：戰鬥中支援主控幹員無次數限制。\n<@tips.orange>用盡後恢復次數</>：戰鬥中的可用次數用盡時，一段時間後會恢復<@ba.vup>1</>次可用次數。"
+    },
+    "item_bottled_food_1": {
+        "desc": "裝備後，當隊伍中任意幹員生命值低於<@ba.vup>{param1:0%}</>時自動對其使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>無限制支援主控幹員</>\n - <@tips.orange>用盡後恢復次數</>",
+        "extraDesc": "裝備後，當隊伍中任意幹員生命值低於<@ba.vup>{param1:0%}</>時自動對其使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>無限制支援主控幹員</>：戰鬥中支援主控幹員無次數限制。\n<@tips.orange>用盡後恢復次數</>：戰鬥中的可用次數用盡時，一段時間後會恢復<@ba.vup>1</>次可用次數。"
+    },
+    "item_bottled_food_2": {
+        "desc": "裝備後，當隊伍中任意幹員生命值低於<@ba.vup>{param1:0%}</>時自動對其使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>無限制支援主控幹員</>\n - <@tips.orange>用盡後恢復次數</>",
+        "extraDesc": "裝備後，當隊伍中任意幹員生命值低於<@ba.vup>{param1:0%}</>時自動對其使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>無限制支援主控幹員</>：戰鬥中支援主控幹員無次數限制。\n<@tips.orange>用盡後恢復次數</>：戰鬥中的可用次數用盡時，一段時間後會恢復<@ba.vup>1</>次可用次數。"
+    },
+    "item_bottled_food_3": {
+        "desc": "裝備後，當隊伍中任意幹員生命值低於<@ba.vup>{param1:0%}</>時自動對其使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>無限制支援主控幹員</>\n - <@tips.orange>用盡後恢復次數</>",
+        "extraDesc": "裝備後，當隊伍中任意幹員生命值低於<@ba.vup>{param1:0%}</>時自動對其使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>無限制支援主控幹員</>：戰鬥中支援主控幹員無次數限制。\n<@tips.orange>用盡後恢復次數</>：戰鬥中的可用次數用盡時，一段時間後會恢復<@ba.vup>1</>次可用次數。"
+    },
+    "item_bottled_food_4": {
+        "desc": "裝備後，當持有幹員生命值低於<@ba.vup>{param1:0%}</>時自動使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>僅一次支援主控幹員</>\n - <@tips.orange>用盡後恢復次數</>",
+        "extraDesc": "裝備後，當持有幹員生命值低於<@ba.vup>{param1:0%}</>時自動使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>僅一次支援主控幹員</>：每場戰鬥僅<@ba.vup>1</>次，當主控幹員生命值低於<@ba.vup>{param1:0%}</>時自動對其使用。\n<@tips.orange>用盡後恢復次數</>：戰鬥中的可用次數用盡時，一段時間後會恢復<@ba.vup>1</>次可用次數。"
+    },
+    "item_bottled_food_5": {
+        "desc": "裝備後，當持有幹員生命值低於<@ba.vup>{param1:0%}</>時自動使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>僅一次支援主控幹員</>\n - <@tips.orange>用盡後恢復次數</>",
+        "extraDesc": "裝備後，當持有幹員生命值低於<@ba.vup>{param1:0%}</>時自動使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>僅一次支援主控幹員</>：每場戰鬥僅<@ba.vup>1</>次，當主控幹員生命值低於<@ba.vup>{param1:0%}</>時自動對其使用。\n<@tips.orange>用盡後恢復次數</>：戰鬥中的可用次數用盡時，一段時間後會恢復<@ba.vup>1</>次可用次數。"
+    },
+    "item_bottled_grass1spc_1": {
+        "desc": "裝備後，當持有幹員生命值低於<@ba.vup>{param1:0%}</>時自動使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>僅一次支援主控幹員</>\n - <@tips.orange>用盡後恢復次數</>",
+        "extraDesc": "裝備後，當持有幹員生命值低於<@ba.vup>{param1:0%}</>時自動使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>僅一次支援主控幹員</>：每場戰鬥僅<@ba.vup>1</>次，當主控幹員生命值低於<@ba.vup>{param1:0%}</>時自動對其使用。\n<@tips.orange>用盡後恢復次數</>：戰鬥中的可用次數用盡時，一段時間後會恢復<@ba.vup>1</>次可用次數。"
+    },
+    "item_bottled_grass1spc_2": {
+        "desc": "裝備後，當持有幹員生命值低於<@ba.vup>{param1:0%}</>時自動使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>僅一次支援主控幹員</>\n - <@tips.orange>用盡後恢復次數</>",
+        "extraDesc": "裝備後，當持有幹員生命值低於<@ba.vup>{param1:0%}</>時自動使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>僅一次支援主控幹員</>：每場戰鬥僅<@ba.vup>1</>次，當主控幹員生命值低於<@ba.vup>{param1:0%}</>時自動對其使用。\n<@tips.orange>用盡後恢復次數</>：戰鬥中的可用次數用盡時，一段時間後會恢復<@ba.vup>1</>次可用次數。"
+    },
+    "item_bottled_grass2spc_1": {
+        "desc": "裝備後，當隊伍中任意幹員生命值低於<@ba.vup>{param1:0%}</>時自動對其使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>無限制支援主控幹員</>\n - <@tips.orange>用盡後恢復次數</>",
+        "extraDesc": "裝備後，當隊伍中任意幹員生命值低於<@ba.vup>{param1:0%}</>時自動對其使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>無限制支援主控幹員</>：戰鬥中支援主控幹員無次數限制。\n<@tips.orange>用盡後恢復次數</>：戰鬥中的可用次數用盡時，一段時間後會恢復<@ba.vup>1</>次可用次數。"
+    },
+    "item_bottled_grass2spc_2": {
+        "desc": "裝備後，當隊伍中任意幹員生命值低於<@ba.vup>{param1:0%}</>時自動對其使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>無限制支援主控幹員</>\n - <@tips.orange>用盡後恢復次數</>",
+        "extraDesc": "裝備後，當隊伍中任意幹員生命值低於<@ba.vup>{param1:0%}</>時自動對其使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>無限制支援主控幹員</>：戰鬥中支援主控幹員無次數限制。\n<@tips.orange>用盡後恢復次數</>：戰鬥中的可用次數用盡時，一段時間後會恢復<@ba.vup>1</>次可用次數。"
+    },
+    "item_bottled_insec1_1": {
+        "desc": "裝備後，當隊伍中有其他幹員陷入無法戰鬥狀態時自動對其使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。",
+        "extraDesc": "裝備後，當隊伍中有其他幹員陷入無法戰鬥狀態時自動對其使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。"
+    },
+    "item_bottled_insec1_2": {
+        "desc": "裝備後，當隊伍中有其他幹員陷入無法戰鬥狀態時自動對其使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。",
+        "extraDesc": "裝備後，當隊伍中有其他幹員陷入無法戰鬥狀態時自動對其使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。"
+    },
+    "item_bottled_moss_2_animal_1": {
+        "desc": "裝備後，當持有幹員生命值低於<@ba.vup>{param1:0%}</>時自動使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>僅一次支援主控幹員</>\n - <@tips.orange>用盡後恢復次數</>",
+        "extraDesc": "裝備後，當持有幹員生命值低於<@ba.vup>{param1:0%}</>時自動使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>僅一次支援主控幹員</>：每場戰鬥僅<@ba.vup>1</>次，當主控幹員生命值低於<@ba.vup>{param1:0%}</>時自動對其使用。\n<@tips.orange>用盡後恢復次數</>：戰鬥中的可用次數用盡時，一段時間後會恢復<@ba.vup>1</>次可用次數。"
+    },
+    "item_bottled_rec_hp_1": {
+        "desc": "裝備後，當持有幹員生命值低於<@ba.vup>{param1:0%}</>時自動使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>僅一次支援主控幹員</>\n - <@tips.orange>用盡後恢復次數</>",
+        "extraDesc": "裝備後，當持有幹員生命值低於<@ba.vup>{param1:0%}</>時自動使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>僅一次支援主控幹員</>：每場戰鬥僅<@ba.vup>1</>次，當主控幹員生命值低於<@ba.vup>{param1:0%}</>時自動對其使用。\n<@tips.orange>用盡後恢復次數</>：戰鬥中的可用次數用盡時，一段時間後會恢復<@ba.vup>1</>次可用次數。"
+    },
+    "item_bottled_rec_hp_2": {
+        "desc": "裝備後，當持有幹員生命值低於<@ba.vup>{param1:0%}</>時自動使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>僅一次支援主控幹員</>\n - <@tips.orange>用盡後恢復次數</>",
+        "extraDesc": "裝備後，當持有幹員生命值低於<@ba.vup>{param1:0%}</>時自動使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>僅一次支援主控幹員</>：每場戰鬥僅<@ba.vup>1</>次，當主控幹員生命值低於<@ba.vup>{param1:0%}</>時自動對其使用。\n<@tips.orange>用盡後恢復次數</>：戰鬥中的可用次數用盡時，一段時間後會恢復<@ba.vup>1</>次可用次數。"
+    },
+    "item_bottled_rec_hp_3": {
+        "desc": "裝備後，當持有幹員生命值低於<@ba.vup>{param1:0%}</>時自動使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>僅一次支援主控幹員</>\n - <@tips.orange>用盡後恢復次數</>",
+        "extraDesc": "裝備後，當持有幹員生命值低於<@ba.vup>{param1:0%}</>時自動使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>僅一次支援主控幹員</>：每場戰鬥僅<@ba.vup>1</>次，當主控幹員生命值低於<@ba.vup>{param1:0%}</>時自動對其使用。\n<@tips.orange>用盡後恢復次數</>：戰鬥中的可用次數用盡時，一段時間後會恢復<@ba.vup>1</>次可用次數。"
+    },
+    "item_bottled_rec_hp_4": {
+        "desc": "裝備後，當隊伍中任意幹員生命值低於<@ba.vup>{param1:0%}</>時自動對其使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>無限制支援主控幹員</>\n - <@tips.orange>用盡後恢復次數</>",
+        "extraDesc": "裝備後，當隊伍中任意幹員生命值低於<@ba.vup>{param1:0%}</>時自動對其使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>無限制支援主控幹員</>：戰鬥中支援主控幹員無次數限制。\n<@tips.orange>用盡後恢復次數</>：戰鬥中的可用次數用盡時，一段時間後會恢復<@ba.vup>1</>次可用次數。"
+    },
+    "item_bottled_rec_hp_5": {
+        "desc": "裝備後，當隊伍中任意幹員生命值低於<@ba.vup>{param1:0%}</>時自動對其使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>無限制支援主控幹員</>\n - <@tips.orange>用盡後恢復次數</>",
+        "extraDesc": "裝備後，當隊伍中任意幹員生命值低於<@ba.vup>{param1:0%}</>時自動對其使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>無限制支援主控幹員</>：戰鬥中支援主控幹員無次數限制。\n<@tips.orange>用盡後恢復次數</>：戰鬥中的可用次數用盡時，一段時間後會恢復<@ba.vup>1</>次可用次數。"
+    },
+    "item_corp1_animal_1": {
+        "desc": "裝備後，當隊伍中任意幹員生命值低於<@ba.vup>{param1:0%}</>時自動對其使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>無限制支援主控幹員</>\n - <@tips.orange>用盡後恢復次數</>",
+        "extraDesc": "裝備後，當隊伍中任意幹員生命值低於<@ba.vup>{param1:0%}</>時自動對其使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>無限制支援主控幹員</>：戰鬥中支援主控幹員無次數限制。\n<@tips.orange>用盡後恢復次數</>：戰鬥中的可用次數用盡時，一段時間後會恢復<@ba.vup>1</>次可用次數。"
+    },
+    "item_corp2_animal_1": {
+        "desc": "裝備後，當隊伍中有幹員受到<#ba.spellinflictonchar>法術異常</>時自動對其使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>無限制支援主控幹員</>\n - <@tips.orange>用盡後恢復次數</>",
+        "extraDesc": "裝備後，當隊伍中有幹員受到<#ba.spellinflictonchar>法術異常</>時自動對其使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>無限制支援主控幹員</>：戰鬥中支援主控幹員無次數限制。\n<@tips.orange>用盡後恢復次數</>：戰鬥中的可用次數用盡時，一段時間後會恢復<@ba.vup>1</>次可用次數。"
+    },
+    "item_corp4_grass2_1": {
+        "desc": "裝備後，當隊伍中任意幹員生命值低於<@ba.vup>{param1:0%}</>時自動對其使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>無限制支援主控幹員</>\n - <@tips.orange>用盡後恢復次數</>",
+        "extraDesc": "裝備後，當隊伍中任意幹員生命值低於<@ba.vup>{param1:0%}</>時自動對其使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>無限制支援主控幹員</>：戰鬥中支援主控幹員無次數限制。\n<@tips.orange>用盡後恢復次數</>：戰鬥中的可用次數用盡時，一段時間後會恢復<@ba.vup>1</>次可用次數。"
+    },
+    "item_corp4_spc": {
+        "desc": "裝備後，當持有幹員的終結技能量低於<@ba.vup>{param1:0%}</>時自動使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.orange>用盡後恢復次數</>",
+        "extraDesc": "裝備後，當持有幹員的終結技能量低於<@ba.vup>{param1:0%}</>時自動使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n<@tips.orange>用盡後恢復次數</>：戰鬥中的可用次數用盡時，一段時間後會恢復<@ba.vup>1</>次可用次數。"
+    },
+    "item_dog_1_slimeml_1_1": {
+        "desc": "裝備後，當持有幹員的終結技能量低於<@ba.vup>{param1:0%}</>時自動使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.orange>用盡後恢復次數</>",
+        "extraDesc": "裝備後，當持有幹員的終結技能量低於<@ba.vup>{param1:0%}</>時自動使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n<@tips.orange>用盡後恢復次數</>：戰鬥中的可用次數用盡時，一段時間後會恢復<@ba.vup>1</>次可用次數。"
+    },
+    "item_dog_hsmob_corp_1": {
+        "desc": "裝備後，當隊伍中任意幹員生命值低於<@ba.vup>{param1:0%}</>時自動使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>無限制支援主控幹員</>\n - <@tips.orange>用盡後恢復次數</>",
+        "extraDesc": "裝備後，當隊伍中任意幹員生命值低於<@ba.vup>{param1:0%}</>時自動使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>無限制支援主控幹員</>：戰鬥中支援主控幹員無次數限制。\n<@tips.orange>用盡後恢復次數</>：戰鬥中的可用次數用盡時，一段時間後會恢復<@ba.vup>1</>次可用次數。"
+    },
+    "item_hscrane_1_hsmob_1_grass_1_1": {
+        "desc": "裝備後，當隊伍中任意幹員生命值低於<@ba.vup>{param1:0%}</>時自動對其使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>無限制支援主控幹員</>\n - <@tips.orange>用盡後恢復次數</>",
+        "extraDesc": "裝備後，當隊伍中任意幹員生命值低於<@ba.vup>{param1:0%}</>時自動對其使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>無限制支援主控幹員</>：戰鬥中支援主控幹員無次數限制。\n<@tips.orange>用盡後恢復次數</>：戰鬥中的可用次數用盡時，一段時間後會恢復<@ba.vup>1</>次可用次數。"
+    },
+    "item_hsmob_1_grass_2_1": {
+        "desc": "裝備後，當隊伍中任意幹員生命值低於<@ba.vup>{param1:0%}</>時自動對其使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>無限制支援主控幹員</>\n - <@tips.orange>用盡後恢復次數</>",
+        "extraDesc": "裝備後，當隊伍中任意幹員生命值低於<@ba.vup>{param1:0%}</>時自動對其使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>無限制支援主控幹員</>：戰鬥中支援主控幹員無次數限制。\n<@tips.orange>用盡後恢復次數</>：戰鬥中的可用次數用盡時，一段時間後會恢復<@ba.vup>1</>次可用次數。"
+    },
+    "item_lbmob_1_lbshamman_1_sp_1_1": {
+        "desc": "裝備後，當隊伍中任意幹員受到超過<@ba.vup>{param2:0%}</>最大生命值的傷害時自動對其使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>無限制支援主控幹員</>\n - <@tips.orange>用盡後恢復次數</>",
+        "extraDesc": "裝備後，當隊伍中任意幹員受到超過<@ba.vup>{param2:0%}</>最大生命值的傷害時自動對其使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>無限制支援主控幹員</>：戰鬥中支援主控幹員無次數限制。\n<@tips.orange>用盡後恢復次數</>：戰鬥中的可用次數用盡時，一段時間後會恢復<@ba.vup>1</>次可用次數。"
+    },
+    "item_lbmob_1_moss_2_bottled_1": {
+        "desc": "裝備後，當隊伍中有幹員受到<#ba.spellinflictonchar>法術異常</>時自動對其使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>無限制支援主控幹員</>\n - <@tips.orange>用盡後恢復次數</>",
+        "extraDesc": "裝備後，當隊伍中有幹員受到<#ba.spellinflictonchar>法術異常</>時自動對其使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>無限制支援主控幹員</>：戰鬥中支援主控幹員無次數限制。\n<@tips.orange>用盡後恢復次數</>：戰鬥中的可用次數用盡時，一段時間後會恢復<@ba.vup>1</>次可用次數。"
+    },
+    "item_lbshamman_1_agmelee_1_1": {
+        "desc": "裝備後，當隊伍中任意幹員受到超過<@ba.vup>{param2:0%}</>最大生命值的傷害時自動對其使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>無限制支援主控幹員</>\n - <@tips.orange>用盡後恢復次數</>",
+        "extraDesc": "裝備後，當隊伍中任意幹員受到超過<@ba.vup>{param2:0%}</>最大生命值的傷害時自動對其使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>無限制支援主控幹員</>：戰鬥中支援主控幹員無次數限制。\n<@tips.orange>用盡後恢復次數</>：戰鬥中的可用次數用盡時，一段時間後會恢復<@ba.vup>1</>次可用次數。"
+    },
+    "item_plant_grass_powder_1": {
+        "desc": "裝備後，當持有幹員生命值低於<@ba.vup>{param1:0%}</>時自動使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>僅一次支援主控幹員</>\n - <@tips.orange>用盡後恢復次數</>",
+        "extraDesc": "裝備後，當持有幹員生命值低於<@ba.vup>{param1:0%}</>時自動使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>僅一次支援主控幹員</>：每場戰鬥僅<@ba.vup>1</>次，當主控幹員生命值低於<@ba.vup>{param1:0%}</>時自動對其使用。\n<@tips.orange>用盡後恢復次數</>：戰鬥中的可用次數用盡時，一段時間後會恢復<@ba.vup>1</>次可用次數。"
+    },
+    "item_plant_grass_powder_2": {
+        "desc": "裝備後，當隊伍中任意幹員生命值低於<@ba.vup>{param1:0%}</>時自動對其使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>無限制支援主控幹員</>\n - <@tips.orange>用盡後恢復次數</>",
+        "extraDesc": "裝備後，當隊伍中任意幹員生命值低於<@ba.vup>{param1:0%}</>時自動對其使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>無限制支援主控幹員</>：戰鬥中支援主控幹員無次數限制。\n<@tips.orange>用盡後恢復次數</>：戰鬥中的可用次數用盡時，一段時間後會恢復<@ba.vup>1</>次可用次數。"
+    },
+    "item_plant_grass_spc_powder_1": {
+        "desc": "裝備後，當持有幹員生命值低於<@ba.vup>{param1:0%}</>時自動使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>僅一次支援主控幹員</>\n - <@tips.orange>用盡後恢復次數</>",
+        "extraDesc": "裝備後，當持有幹員生命值低於<@ba.vup>{param1:0%}</>時自動使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>僅一次支援主控幹員</>：每場戰鬥僅<@ba.vup>1</>次，當主控幹員生命值低於<@ba.vup>{param1:0%}</>時自動對其使用。\n<@tips.orange>用盡後恢復次數</>：戰鬥中的可用次數用盡時，一段時間後會恢復<@ba.vup>1</>次可用次數。"
+    },
+    "item_plant_grass_spc_powder_2": {
+        "desc": "裝備後，當隊伍中任意幹員生命值低於<@ba.vup>{param1:0%}</>時自動對其使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>無限制支援主控幹員</>\n - <@tips.orange>用盡後恢復次數</>",
+        "extraDesc": "裝備後，當隊伍中任意幹員生命值低於<@ba.vup>{param1:0%}</>時自動對其使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>無限制支援主控幹員</>：戰鬥中支援主控幹員無次數限制。\n<@tips.orange>用盡後恢復次數</>：戰鬥中的可用次數用盡時，一段時間後會恢復<@ba.vup>1</>次可用次數。"
+    },
+    "item_plant_moss_powder_1": {
+        "desc": "裝備後，當持有幹員生命值低於<@ba.vup>{param1:0%}</>時自動使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>僅一次支援主控幹員</>\n - <@tips.orange>用盡後恢復次數</>",
+        "extraDesc": "裝備後，當持有幹員生命值低於<@ba.vup>{param1:0%}</>時自動使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>僅一次支援主控幹員</>：每場戰鬥僅<@ba.vup>1</>次，當主控幹員生命值低於<@ba.vup>{param1:0%}</>時自動對其使用。\n<@tips.orange>用盡後恢復次數</>：戰鬥中的可用次數用盡時，一段時間後會恢復<@ba.vup>1</>次可用次數。"
+    },
+    "item_plant_moss_powder_2": {
+        "desc": "裝備後，當隊伍中任意幹員生命值低於<@ba.vup>{param1:0%}</>時自動對其使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>無限制支援主控幹員</>\n - <@tips.orange>用盡後恢復次數</>",
+        "extraDesc": "裝備後，當隊伍中任意幹員生命值低於<@ba.vup>{param1:0%}</>時自動對其使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>無限制支援主控幹員</>：戰鬥中支援主控幹員無次數限制。\n<@tips.orange>用盡後恢復次數</>：戰鬥中的可用次數用盡時，一段時間後會恢復<@ba.vup>1</>次可用次數。"
+    },
+    "item_plant_moss_spc_powder_1": {
+        "desc": "裝備後，當持有幹員生命值低於<@ba.vup>{param1:0%}</>時自動使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>僅一次支援主控幹員</>\n - <@tips.orange>用盡後恢復次數</>",
+        "extraDesc": "裝備後，當持有幹員生命值低於<@ba.vup>{param1:0%}</>時自動使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>僅一次支援主控幹員</>：每場戰鬥僅<@ba.vup>1</>次，當主控幹員生命值低於<@ba.vup>{param1:0%}</>時自動對其使用。\n<@tips.orange>用盡後恢復次數</>：戰鬥中的可用次數用盡時，一段時間後會恢復<@ba.vup>1</>次可用次數。"
+    },
+    "item_plant_moss_spc_powder_2": {
+        "desc": "裝備後，當隊伍中任意幹員生命值低於<@ba.vup>{param1:0%}</>時自動對其使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>無限制支援主控幹員</>\n - <@tips.orange>用盡後恢復次數</>",
+        "extraDesc": "裝備後，當隊伍中任意幹員生命值低於<@ba.vup>{param1:0%}</>時自動對其使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>無限制支援主控幹員</>：戰鬥中支援主控幹員無次數限制。\n<@tips.orange>用盡後恢復次數</>：戰鬥中的可用次數用盡時，一段時間後會恢復<@ba.vup>1</>次可用次數。"
+    },
+    "item_slimeml_1_agrange_1_moss_2_1": {
+        "desc": "裝備後，當持有幹員的終結技能量低於<@ba.vup>{param1:0%}</>時自動使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.orange>用盡後恢復次數</>",
+        "extraDesc": "裝備後，當持有幹員的終結技能量低於<@ba.vup>{param1:0%}</>時自動使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n<@tips.orange>用盡後恢復次數</>：戰鬥中的可用次數用盡時，一段時間後會恢復<@ba.vup>1</>次可用次數。"
+    },
+    "item_slimeml_1_erhound_1_agfly_1_1": {
+        "desc": "裝備後，當隊伍中有幹員受到<#ba.spellinflictonchar>法術異常</>時自動對其使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>無限制支援主控幹員</>\n - <@tips.orange>用盡後恢復次數</>",
+        "extraDesc": "裝備後，當隊伍中有幹員受到<#ba.spellinflictonchar>法術異常</>時自動對其使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>無限制支援主控幹員</>：戰鬥中支援主控幹員無次數限制。\n<@tips.orange>用盡後恢復次數</>：戰鬥中的可用次數用盡時，一段時間後會恢復<@ba.vup>1</>次可用次數。"
+    },
+    "item_slwood_1_hshog_1_1": {
+        "desc": "裝備後，當隊伍中有幹員受到<#ba.spellinflictonchar>法術異常</>時自動對其使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>無限制支援主控幹員</>\n - <@tips.orange>用盡後恢復次數</>",
+        "extraDesc": "裝備後，當隊伍中有幹員受到<#ba.spellinflictonchar>法術異常</>時自動對其使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>無限制支援主控幹員</>：戰鬥中支援主控幹員無次數限制。\n<@tips.orange>用盡後恢復次數</>：戰鬥中的可用次數用盡時，一段時間後會恢復<@ba.vup>1</>次可用次數。"
+    },
+    "item_sp_1_moss_1_agmelee_1_1": {
+        "desc": "裝備後，當隊伍中任意幹員生命值低於<@ba.vup>{param1:0%}</>時自動使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>無限制支援主控幹員</>\n - <@tips.orange>用盡後恢復次數</>",
+        "extraDesc": "裝備後，當隊伍中任意幹員生命值低於<@ba.vup>{param1:0%}</>時自動使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>無限制支援主控幹員</>：戰鬥中支援主控幹員無次數限制。\n<@tips.orange>用盡後恢復次數</>：戰鬥中的可用次數用盡時，一段時間後會恢復<@ba.vup>1</>次可用次數。"
+    },
+    "item_sp_2_moss_2_agrange_1_1": {
+        "desc": "裝備後，當隊伍中任意幹員生命值低於<@ba.vup>{param1:0%}</>時自動使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>無限制支援主控幹員</>\n - <@tips.orange>用盡後恢復次數</>",
+        "extraDesc": "裝備後，當隊伍中任意幹員生命值低於<@ba.vup>{param1:0%}</>時自動使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>無限制支援主控幹員</>：戰鬥中支援主控幹員無次數限制。\n<@tips.orange>用盡後恢復次數</>：戰鬥中的可用次數用盡時，一段時間後會恢復<@ba.vup>1</>次可用次數。"
+    },
+    "item_wgslime_1_hsmob_1_grass_2_1": {
+        "desc": "裝備後，當持有幹員生命值低於<@ba.vup>{param1:0%}</>時自動使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n - <@tips.purple>僅一次支援主控幹員</>\n - <@tips.orange>用盡後恢復次數</>",
+        "extraDesc": "裝備後，當持有幹員生命值低於<@ba.vup>{param1:0%}</>時自動使用，單場戰鬥中最多可用<@ba.vup>{count:0}</>次。\n<@tips.purple>僅一次支援主控幹員</>：每場戰鬥僅<@ba.vup>1</>次，當主控幹員生命值低於<@ba.vup>{param1:0%}</>時自動對其使用。\n<@tips.orange>用盡後恢復次數</>：戰鬥中的可用次數用盡時，一段時間後會恢復<@ba.vup>1</>次可用次數。"
+    }
+}
