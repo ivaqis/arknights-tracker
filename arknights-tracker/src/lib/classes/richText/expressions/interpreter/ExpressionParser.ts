@@ -25,7 +25,9 @@ export class ExpressionParser {
     }
 
     private getVariable(key: string): number {
-        return this._getValueFn(key);
+        const a = this._getValueFn(key);
+
+        return a;
     }
 
     private peek(): ExpressionToken {
@@ -50,7 +52,7 @@ export class ExpressionParser {
             if (token.value === "+") {
                 left += right;
             } else if (token.value === "-") {
-                left -= left;
+                left -= right;
             }
 
             token = this.peek();

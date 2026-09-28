@@ -35,8 +35,10 @@ export class RichTextExpressionInterpreter {
     private tokenize(input: string): ExpressionToken[] {
         const result: ExpressionToken[] = [];
 
-        for (let i = 0; i < input.length; i++) {
+        for (let i = 0; i < input.length; ) {
             const c = input[i];
+
+            console.log(c);
 
             if (/\s/.test(c)) {
                 continue;
@@ -45,18 +47,21 @@ export class RichTextExpressionInterpreter {
             if (c === "(") {
                 result.push({ type: "lparen" });
 
+                i++;
                 continue;
             }
 
             if (c === ")") {
                 result.push({ type: "rparen" });
 
+                i++;
                 continue;
             }
 
             if (isOperator(c)) {
                 result.push({ type: "operator", value: c });
 
+                i++;
                 continue;
             }
 

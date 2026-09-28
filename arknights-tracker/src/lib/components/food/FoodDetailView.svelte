@@ -235,10 +235,10 @@
 
                                         {#each buff.blackboard as entry}
 
-                                            {#if entry.key !== "maxcount"}
+                                            {#if entry.displayable}
 
                                                 <span class="text-[14px] text-gray-700 dark:text-[#A0A0A0]">
-                                                    {$t(entry.i18nKey)}: {entry.value}
+                                                    {$t(entry.i18nKey)}: {entry.getFormattedValue()}
                                                 </span>
 
                                             {/if}

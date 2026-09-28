@@ -2,6 +2,7 @@ import type { IBlackboardEntry } from "$lib/classes/blackboard/IBlackboardEntry"
 import type { ITextableBlackboardEntry } from "$lib/classes/blackboard/ITextableBlackboardEntry";
 import { TextableBlackboardEntry } from "$lib/classes/blackboard/TextableBlackboardEntry";
 import type { IFoodBuff } from "$lib/classes/gameData/items/food/IFoodBuff";
+import type { ReadonlyBbValueFormatMap } from "$lib/data/types/BbValueFormat";
 import type { FoodBuffData } from "$lib/data/types/items/FoodData";
 
 export class FoodBuff implements IFoodBuff {
@@ -13,18 +14,19 @@ export class FoodBuff implements IFoodBuff {
         this._blackboard = blackboard;
     }
 
-    public static createFromData(data: FoodBuffData): FoodBuff {
+    public static createFromData(data: FoodBuffData, formats?: ReadonlyBbValueFormatMap): FoodBuff {
         return new FoodBuff(
             data.buffId,
-            FoodBuff.getBlackboard(data.blackboard, data.buffId)
+            FoodBuff.getBlackboard(data.blackboard, data.buffId, formats),
         );
     }
 
-    private static getBlackboard(dataList: readonly IBlackboardEntry[], buffId: string): ITextableBlackboardEntry[] {
+    private static getBlackboard(dataList: readonly IBlackboardEntry[], buffId: string, formats?: ReadonlyBbValueFormatMap): ITextableBlackboardEntry[] {
         return dataList.map(entry => new TextableBlackboardEntry(
             entry.key,
             entry.value,
             `buffs.${buffId}.${entry.key}`,
+            formats?.[entry.key]
         ));
     }
 

@@ -1,6 +1,6 @@
-import type { FoodBbFormat } from "$lib/data/types/items/FoodBbFormat";
+import type { BbValueFormat } from "$lib/data/types/BbValueFormat";
 
-export const foodBBFormat: Readonly<Record<string, Readonly<Record<string, FoodBbFormat>>>> = {
+export const foodBBFormat: Readonly<Record<string, Readonly<Record<string, BbValueFormat>>>> = {
     buff_common_heal_potion_1: {
         value: {
             intl: {
@@ -19,7 +19,7 @@ export const foodBBFormat: Readonly<Record<string, Readonly<Record<string, FoodB
         value2: {
             intl: {
                 style: "percent",
-                maximumFractionDigits: 0
+                maximumFractionDigits: 2
             }
         }
     },
@@ -50,7 +50,7 @@ export const foodBBFormat: Readonly<Record<string, Readonly<Record<string, FoodB
         triggerheal2: {
             intl: {
                 style: "percent",
-                maximumFractionDigits: 0
+                maximumFractionDigits: 2
             }
         },
         duration: {
@@ -67,7 +67,7 @@ export const foodBBFormat: Readonly<Record<string, Readonly<Record<string, FoodB
         value: {
             intl: {
                 style: "percent",
-                maximumFractionDigits: 0
+                maximumFractionDigits: 2
             }
         }
     },
@@ -75,7 +75,7 @@ export const foodBBFormat: Readonly<Record<string, Readonly<Record<string, FoodB
         value: {
             intl: {
                 style: "percent",
-                maximumFractionDigits: 0
+                maximumFractionDigits: 2
             }
         }
     },
@@ -83,7 +83,7 @@ export const foodBBFormat: Readonly<Record<string, Readonly<Record<string, FoodB
         value: {
             intl: {
                 style: "percent",
-                maximumFractionDigits: 0
+                maximumFractionDigits: 2
             },
             prefix: "+"
         },
@@ -98,7 +98,7 @@ export const foodBBFormat: Readonly<Record<string, Readonly<Record<string, FoodB
         value: {
             intl: {
                 style: "percent",
-                maximumFractionDigits: 0
+                maximumFractionDigits: 2
             },
             prefix: "+"
         },
@@ -113,7 +113,7 @@ export const foodBBFormat: Readonly<Record<string, Readonly<Record<string, FoodB
         value: {
             intl: {
                 style: "percent",
-                maximumFractionDigits: 0
+                maximumFractionDigits: 2
             }
         },
         duration: {
@@ -126,10 +126,10 @@ export const foodBBFormat: Readonly<Record<string, Readonly<Record<string, FoodB
     buff_common_resis_up_potion_1: {
         value: {
             intl: {
-                style: "percent",
-                maximumFractionDigits: 0
+                style: "decimal",
+                maximumFractionDigits: 3
             },
-            prefix: "+"
+            prefix: "x"
         },
         duration: {
             intl: {
@@ -142,7 +142,7 @@ export const foodBBFormat: Readonly<Record<string, Readonly<Record<string, FoodB
         value: {
             intl: {
                 style: "percent",
-                maximumFractionDigits: 0
+                maximumFractionDigits: 2
             },
             prefix: "+"
         },
@@ -157,7 +157,7 @@ export const foodBBFormat: Readonly<Record<string, Readonly<Record<string, FoodB
         value: {
             intl: {
                 style: "percent",
-                maximumFractionDigits: 0
+                maximumFractionDigits: 2
             },
             prefix: "+"
         },
@@ -172,7 +172,7 @@ export const foodBBFormat: Readonly<Record<string, Readonly<Record<string, FoodB
         value: {
             intl: {
                 style: "percent",
-                maximumFractionDigits: 0
+                maximumFractionDigits: 2
             },
             prefix: "+"
         },
@@ -187,7 +187,7 @@ export const foodBBFormat: Readonly<Record<string, Readonly<Record<string, FoodB
         value: {
             intl: {
                 style: "percent",
-                maximumFractionDigits: 0
+                maximumFractionDigits: 2
             },
             prefix: "+"
         },
@@ -217,7 +217,7 @@ export const foodBBFormat: Readonly<Record<string, Readonly<Record<string, FoodB
         value: {
             intl: {
                 style: "percent",
-                maximumFractionDigits: 0
+                maximumFractionDigits: 2
             },
             prefix: "+"
         },
@@ -228,9 +228,65 @@ export const foodBBFormat: Readonly<Record<string, Readonly<Record<string, FoodB
             }
         }
     },
-    buff_common_cdr_buff_potion_1: {},
-    buff_common_usprt_buff_potion_1: {},
-    buff_common_healrt_buff_potion_1: {},
-    buff_common_healrt_buff_potion_2: {},
+    buff_common_cdr_buff_potion_1: {
+        value: {
+            intl: {
+                style: "decimal",
+                maximumFractionDigits: 3
+            },
+            prefix: "x"
+        },
+        duration: {
+            intl: {
+                style: "decimal",
+                maximumFractionDigits: 0
+            }
+        }
+    },
+    buff_common_usprt_buff_potion_1: {
+        value: {
+            intl: {
+                style: "percent",
+                maximumFractionDigits: 2
+            },
+            prefix: "+"
+        },
+        duration: {
+            intl: {
+                style: "decimal",
+                maximumFractionDigits: 0
+            }
+        }
+    },
+    buff_common_healrt_buff_potion_1: {
+        value: {
+            intl: {
+                style: "percent",
+                maximumFractionDigits: 2
+            },
+            prefix: "+"
+        },
+        duration: {
+            intl: {
+                style: "decimal",
+                maximumFractionDigits: 0
+            }
+        }
+    },
+    buff_common_healrt_buff_potion_2: {
+        value: {
+            intl: {
+                style: "percent",
+                maximumFractionDigits: 2
+            },
+            prefix: "+"
+        },
+        duration: {
+            intl: {
+                style: "decimal",
+                maximumFractionDigits: 0
+            }
+        }
+    },
     buff_common_dispel_potion: {},
 };
