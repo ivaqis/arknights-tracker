@@ -161,7 +161,9 @@
       "pieGraph": "Распределение"
     },
     "food": {
-      "tactical": "Провиант"
+      "tactical": "Провиант",
+      "recipe": "Рецепт",
+      "openRecipe": "Открыть рецепт"
     }
   },
   "bannerTypes": {

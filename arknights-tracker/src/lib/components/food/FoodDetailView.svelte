@@ -5,6 +5,7 @@
     import { RichTextParamParser } from "$lib/classes/richText/expressions/RichTextParamParser";
     import Icon from "$lib/components/Icon.svelte";
     import Image from "$lib/components/Image.svelte";
+    import { craftableItemsList } from "$lib/data/crafts/craftableItemsList";
     import { t } from "$lib/i18n";
     import { currentLocale } from "$lib/stores/locale";
     import { getRarityColor } from "$lib/utils/colorUtils";
@@ -106,8 +107,10 @@
     }
 
     let rarityColor: string;
+    let hasRecipe: boolean;
 
     $: rarityColor = getRarityColor(item.rarity);
+    $: hasRecipe = craftableItemsList.includes(item.gameId);
 </script>
 
 <div class="md:px-1 md:py-1 pb-10 font-sans transition-colors">
@@ -286,6 +289,48 @@
                             {/each}
 
                         </div>
+
+                    </div>
+
+                </div>
+
+            {/if}
+
+        </div>
+
+        <div
+            class="col-span-1 flex flex-col gap-6 {
+                inColumn
+                    ? 'w-full'
+                    : 'xl:col-span-5'
+            }"
+        >
+
+            {#if hasRecipe}
+
+                <div class="bg-white dark:bg-[#2b2b2b] rounded-3xl flex flex-col overflow-hidden border border-gray-200 dark:border-[#444] transition-colors shadow-sm">
+
+                    <div class="px-6 pb-5 flex flex-col gap-1 mt-4">
+
+                        <h2 class="text-2xl font-bold text-[#21272C] dark:text-[#FDFDFD] font-sdk border-b border-gray-100 dark:border-[#444] pb-3 mb-4">
+                            {$t("page.food.recipe")}
+                        </h2>
+
+                        <a
+                            class="flex flex-row items-center gap-2 py-2 px-6 rounded-full w-fit font-sdk text-xl text-[#21272c] bg-[#f9b90c] hover:bg-[#ffc01e]"
+                            href="/recipes?id={item.gameId}"
+                        >
+
+                            <span>
+                                {$t("page.food.openRecipe")}
+                            </span>
+
+                            <Icon
+                                name="sendToLink"
+                                class="w-5 h-5"
+                            />
+
+                        </a>
 
                     </div>
 
