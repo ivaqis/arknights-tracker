@@ -3007,26 +3007,26 @@
   },
   "buffs": {
     "buff_common_heal_potion_1": {
-      "value": "Мгновенное восст. ОЗ"
+      "value": "Мгновенное восстановление ОЗ"
     },
     "buff_common_heal_potion_2": {
-      "value": "Мгновенное восст. ОЗ",
-      "value2": "Мгновенное восст. ОЗ%"
+      "value": "Мгновенное восстановление ОЗ",
+      "value2": "Мгновенное восстановление ОЗ%"
     },
     "buff_common_heal_moss_1": {
-      "triggerheal": "Восст. ОЗ/с",
+      "triggerheal": "Восстановление ОЗ/с",
       "duration": "Длительность (с)"
     },
     "buff_common_heal_moss_2": {
-      "triggerheal": "Восст. ОЗ/с",
-      "triggerheal2": "Восст. ОЗ%/с",
+      "triggerheal": "Восстановление ОЗ/с",
+      "triggerheal2": "Восстановление ОЗ%/с",
       "duration": "Длительность (с)"
     },
     "buff_custom_revive_1": {
-      "value": "Мгновенное восст. ОЗ%"
+      "value": "Мгновенное восстановление ОЗ%"
     },
     "buff_common_ultsp_potion_1": {
-      "value": "Мгновенное восст. суперэнергии"
+      "value": "Мгновенное восстановление суперэнергии"
     },
     "buff_common_def_buff_potion_1": {
       "value": "ЗЩТ%",
@@ -3090,14 +3090,14 @@
     "condType": "Тип условия",
     "castTime": "Время использования (с)",
     "castCount": "Кол-во использований",
-    "castToMainCount": "Кол-во исп. на управляемом оперативнике",
+    "castToMainCount": "Кол-во использований на управляемом оперативнике",
     "cooldown": "Перезарядка (с)",
     "recoverTime": "Время восстановления (с)",
     "recoverUpperCount": "Кол-во восстановленных предметов"
   },
   "tacticalZero": {
-    "castCount": "Неогр.",
-    "castToMainCount": "Неогр",
+    "castCount": "Неограниченно",
+    "castToMainCount": "Неограниченно",
     "castCooldown": "Нет",
     "recoverTime": "Нет",
     "recoverUpperCount": "0"

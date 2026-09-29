@@ -8,7 +8,7 @@
     import { t } from "$lib/i18n";
     import { currentLocale } from "$lib/stores/locale";
     import { getRarityColor } from "$lib/utils/colorUtils";
-    import { parseRichText } from "$lib/utils/richText";
+    import { hyperlinkAction, parseRichText } from "$lib/utils/richText";
 
     export let item: IFood;
 
@@ -105,18 +105,6 @@
         return raw;
     }
 
-    function getFoodBBValue(food: IFood, key: string, ns: string | null): number {
-        let buff: IFoodBuff;
-
-        if (ns) {
-            buff = food.getBuff(ns)!;
-        } else {
-            buff = food.buffs[0];
-        }
-
-        return buff.getBBEntry(key)!.value;
-    }
-
     let rarityColor: string;
 
     $: rarityColor = getRarityColor(item.rarity);
@@ -187,7 +175,10 @@
 
                     {#if foodDetailLocale}
 
-                        <div class="pl-1 text-gray-700 dark:text-[#E0E0E0] whitespace-pre-wrap text-[14px] leading-relaxed">
+                        <div
+                            class="pl-1 text-gray-700 dark:text-[#E0E0E0] whitespace-pre-wrap text-[14px] leading-relaxed"
+                            use:hyperlinkAction
+                        >
 
                             {@html parseRichText(parseFoodDesc(item, foodDetailLocale.desc))}
 
@@ -201,7 +192,7 @@
                             {$t("stats.effects")}
                         </h2>
 
-                        <div class="flex flex-col gap-3 pl-6">
+                        <div class="flex flex-col gap-3 pl-2">
 
                             {#each item.buffs as buff}
 
@@ -227,7 +218,10 @@
                                             {#if entry.displayable}
 
                                                 <span class="text-[14px] text-gray-700 dark:text-[#A0A0A0]">
-                                                    {$t(entry.i18nKey)}: {entry.getFormattedValue()}
+                                                    - {$t(entry.i18nKey)}:
+                                                    <span class="text-[#22bbff] font-bold">
+                                                        {entry.getFormattedValue()}
+                                                    </span>
                                                 </span>
 
                                             {/if}
@@ -262,7 +256,10 @@
 
                         {#if equipDetailLocale}
 
-                            <div class="pl-1 text-gray-700 dark:text-[#E0E0E0] whitespace-pre-wrap text-[14px] leading-relaxed mb-4">
+                            <div
+                                class="pl-1 text-gray-700 dark:text-[#E0E0E0] whitespace-pre-wrap text-[14px] leading-relaxed mb-4"
+                                use:hyperlinkAction
+                            >
 
                                 {@html parseRichText(parseFoodDesc(tactical, equipDetailLocale.extraDesc))}
 
