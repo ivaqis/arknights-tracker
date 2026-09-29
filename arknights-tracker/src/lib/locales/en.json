@@ -159,6 +159,9 @@
     "bannerTypes": {
       "bannerHistoryGraph": "Banners history",
       "pieGraph": "Distribution"
+    },
+    "food": {
+      "tactical": "Tactical"
     }
   },
   "bannerTypes": {
@@ -441,7 +444,8 @@
     "recipeTree": "Recipe Chain",
     "openRecipe": "Open recipes",
     "leaderboard": "Leaderboard",
-    "profile": "Profile"
+    "profile": "Profile",
+    "food": "Food"
   },
   "events": {
     "type": {
@@ -606,6 +610,8 @@
     "striker": "Striker"
   },
   "sort": {
+    "equipCondTitle": "Condition Type",
+    "buffTitle": "Effect",
     "rarity": "Rarity",
     "class": "Class",
     "element": "Element",
@@ -851,7 +857,8 @@
     "file4": "FILE 4",
     "profile": "Profile",
     "hobbies": "Hobbies",
-    "costValue2": "SP Cost"
+    "costValue2": "SP Cost",
+    "effects": "Effects"
   },
   "bioValues": {
     "Unknown": "Unknown"
@@ -2969,5 +2976,168 @@
     "gas_env_wet": "Humid ENV",
     "gas_env_acidic": "Acrid ENV",
     "gas_env_xiranite": "Xiranite ENV"
+  },
+  "buffNames": {
+    "buff_common_heal_potion_1": "HP Recovery",
+    "buff_common_heal_potion_2": "HP% + HP Recovery",
+    "buff_common_heal_moss_1": "HP/s Recovery",
+    "buff_common_heal_moss_2": "(HP% + HP)/s Recovery",
+    "buff_custom_revive_1": "Revive",
+    "buff_common_ultsp_potion_1": "Ultimate Energy Rec.",
+    "buff_common_def_buff_potion_1": "DEF% Increase",
+    "buff_common_def_buff_potion_2": "DEF Increase",
+    "buff_common_def_buff_potion_3": "DEF% Decrease",
+    "buff_common_resis_up_potion_1": "DMG Resist",
+    "buff_common_dmg_up_potion_1": "DMG Increase",
+    "buff_common_phydmg_up_potion_1": "Phys DMG Increase",
+    "buff_common_mainattri_up_potion_1": "All Attributes Increase",
+    "buff_common_atk_buff_potion_1": "ATK% Increase",
+    "buff_common_atk_buff_potion_2": "ATK Increase",
+    "buff_common_ctr_buff_potion_1": "Crit. Rate Increase",
+    "buff_common_cdr_buff_potion_1": "Combo Skill CD Decrease",
+    "buff_common_usprt_buff_potion_1": "ULT Gain Efficiency Increase",
+    "buff_common_healrt_buff_potion_1": "Treatment Increase",
+    "buff_common_healrt_buff_potion_2": "Treatment Received Increase",
+    "buff_common_dispel_potion": "Dispel Arts Inflictions & Reactions"
+  },
+  "buffs": {
+    "buff_common_heal_potion_1": {
+      "value": "Instant Restoring HP"
+    },
+    "buff_common_heal_potion_2": {
+      "value": "Instant Restoring HP",
+      "value2": "Instant Restoring HP%"
+    },
+    "buff_common_heal_moss_1": {
+      "triggerheal": "Restoring HP/s",
+      "duration": "Duration (s)"
+    },
+    "buff_common_heal_moss_2": {
+      "triggerheal": "Restoring HP/s",
+      "triggerheal2": "Restoring HP%/s",
+      "duration": "Duration (s)"
+    },
+    "buff_custom_revive_1": {
+      "value": "Instant Restoring HP%"
+    },
+    "buff_common_ultsp_potion_1": {
+      "value": "Instant Restoring ULT SP"
+    },
+    "buff_common_def_buff_potion_1": {
+      "value": "DEF%",
+      "duration": "Duration (s)"
+    },
+    "buff_common_def_buff_potion_2": {
+      "value": "DEF",
+      "duration": "Duration (s)"
+    },
+    "buff_common_def_buff_potion_3": {
+      "value": "DEF%",
+      "duration": "Duration (s)"
+    },
+    "buff_common_resis_up_potion_1": {
+      "value": "Incoming DMG multiplier",
+      "duration": "Duration (s)"
+    },
+    "buff_common_dmg_up_potion_1": {
+      "value": "All DMG Dealt",
+      "duration": "Duration (s)"
+    },
+    "buff_common_phydmg_up_potion_1": {
+      "value": "Physical DMG Dealt",
+      "duration": "Duration (s)"
+    },
+    "buff_common_mainattri_up_potion_1": {
+      "value": "All Attributes",
+      "duration": "Duration (s)"
+    },
+    "buff_common_atk_buff_potion_1": {
+      "value": "ATK%",
+      "duration": "Duration (s)"
+    },
+    "buff_common_atk_buff_potion_2": {
+      "value": "ATK",
+      "duration": "Duration (s)"
+    },
+    "buff_common_ctr_buff_potion_1": {
+      "value": "Critical Rate",
+      "duration": "Duration (s)"
+    },
+    "buff_common_cdr_buff_potion_1": {
+      "value": "Combo Skill CD multiplier",
+      "duration": "Duration (s)"
+    },
+    "buff_common_usprt_buff_potion_1": {
+      "value": "Ultimate Gain Efficiency",
+      "duration": "Duration (s)"
+    },
+    "buff_common_healrt_buff_potion_1": {
+      "value": "Treatment",
+      "duration": "Duration (s)"
+    },
+    "buff_common_healrt_buff_potion_2": {
+      "value": "Treatment Received",
+      "duration": "Duration (s)"
+    },
+    "buff_common_dispel_potion": {}
+  },
+  "tacticalTitle": {
+    "condType": "Condition Type",
+    "castTime": "Cast Time (s)",
+    "castCount": "Cast Count",
+    "castToMainCount": "Cast To Main Count",
+    "cooldown": "Cooldown (s)",
+    "recoverTime": "Recover Time (s)",
+    "recoverUpperCount": "Recover Upper Count"
+  },
+  "tacticalZero": {
+    "castCount": "Unlimited",
+    "castToMainCount": "Unlimited",
+    "castCooldown": "None",
+    "recoverTime": "None",
+    "recoverUpperCount": "0"
+  },
+  "tacticalCondType": {
+    "null": "None",
+    "char_hp": "Percent of Max HP",
+    "char_down": "Operator Death",
+    "arts_reaction": "Arts Reaction on Operator",
+    "ult_energy": "Percent of Max ULT Energy",
+    "damage": "DMG Taken to Max HP"
+  },
+  "tacticalCondParam": {
+    "char_hp": {
+      "param2": {
+        "lt": "Less than"
+      }
+    },
+    "char_down": {},
+    "arts_reaction": {},
+    "ult_energy": {
+      "param2": {
+        "lt": "Less than"
+      }
+    },
+    "damage": {
+      "param1": {
+        "any": "Any"
+      }
+    }
+  },
+  "tacticalCondParamTitle": {
+    "char_hp": {
+      "param1": "% of Max HP",
+      "param2": "Condition Param"
+    },
+    "char_down": {},
+    "arts_reaction": {},
+    "ult_energy": {
+      "param1": "% of Max ULT Energy",
+      "param2": "Condition Param"
+    },
+    "damage": {
+      "param1": "Damage Type",
+      "param2": "% of Max HP"
+    }
   }
 }

@@ -131,13 +131,14 @@ export class Tactical implements ITactical {
         if (this._condType === EquipableItemConditionType.CHAR_HP || this._condType === EquipableItemConditionType.ULT_ENERGY) {
             return [
                 {
+                    key: textFn(`tacticalCondParamTitle.${this._condType}.param2`),
+                    value: textFn(`tacticalCondParam.${this._condType}.param2.${this._condParams[1]}`),
+                },
+                {
                     key: textFn(`tacticalCondParamTitle.${this._condType}.param1`),
                     value: formatter.format(Number(this._condParams[0]))
                 },
-                {
-                    key: textFn(`tacticalCondParamTitle.${this._condType}.param2`),
-                    value: textFn(`tacticalCondParam.${this._condType}.param2.${this._condParams[1]}`),
-                }
+
             ];
         }
 

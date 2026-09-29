@@ -171,8 +171,8 @@ export const foodBBFormat: Readonly<Record<string, Readonly<Record<string, BbVal
     buff_common_mainattri_up_potion_1: {
         value: {
             intl: {
-                style: "percent",
-                maximumFractionDigits: 2
+                style: "decimal",
+                maximumFractionDigits: 0
             },
             prefix: "+"
         },
