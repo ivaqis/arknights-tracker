@@ -19,6 +19,7 @@
     import type { FoodSelectedFilterMap } from "$lib/stores/filters/food/FoodSelectedFilterMap";
     import type { FoodSortParams } from "$lib/stores/filters/food/FoodSortParams";
     import { foodFilters, foodSearch, foodSortParams, getDefaultFoodSortParams } from "$lib/stores/filterStore";
+    import { splitEquipmentView } from "$lib/stores/settings";
     import { isListItemsEqual } from "$lib/utils/collectionUtils";
     import { filterCheck, filterCheckMany } from "$lib/utils/filterUtils";
 
@@ -51,6 +52,14 @@
     }
 
     function selectItem(item: IItem) {
+        const url = getRedirectUrl(item);
+
+        goto(url, {
+            replaceState: true
+        });
+    }
+
+    function getRedirectUrl(item: IItem): string {
         const search = new URLSearchParams();
 
         search.set("tab", data.tab);
@@ -59,11 +68,7 @@
             search.set("itemId", item.gameId);
         }
 
-        const url = `/food?${search}`;
-
-        goto(url, {
-            replaceState: true
-        });
+        return `/food?${search}`;
     }
 
 
@@ -176,7 +181,7 @@
             </h2>
 
             <span class="text-gray-400 text-xl md:text-3xl font-normal">
-                / s
+                / {filteredItems.length}
             </span>
 
         </div>
@@ -225,19 +230,32 @@
 
                     {#each filteredItems as item}
 
-                        <button
-                            tabindex="0"
-                            class="relative w-[110px] h-[110px] rounded-[6px] cursor-pointer text-left aspect-square transition-all duration-300"
-                            on:click|preventDefault|stopPropagation={() => selectItem(item)}
-                        >
+                        {#if $splitEquipmentView}
+
+                            <button
+                                tabindex="0"
+                                class="relative w-[110px] h-[110px] rounded-[6px] cursor-pointer text-left aspect-square transition-all duration-300"
+                                on:click|preventDefault|stopPropagation={() => selectItem(item)}
+                            >
+
+                                <ItemStackCard
+                                    item={item}
+                                    highlight={item.gameId === data.itemId}
+                                    showHoverEffect={true}
+                                />
+
+                            </button>
+
+                        {:else}
 
                             <ItemStackCard
                                 item={item}
                                 highlight={item.gameId === data.itemId}
+                                url="/food/{item.gameId}"
                                 showHoverEffect={true}
                             />
 
-                        </button>
+                        {/if}
 
                     {/each}
 

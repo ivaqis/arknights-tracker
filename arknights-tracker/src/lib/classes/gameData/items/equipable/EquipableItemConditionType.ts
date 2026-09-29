@@ -8,6 +8,6 @@ export enum EquipableItemConditionType {
 
 export namespace EquipableItemConditionType {
     export function getI18nKey(cond: EquipableItemConditionType | "null"): string {
-        return `equipableItemConditionType.${cond}`;
+        return `tacticalCondType.${cond}`;
     }
 }

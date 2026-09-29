@@ -1,9 +1,14 @@
+import { goto } from "$app/navigation";
 import { FoodTabType } from "$lib/classes/tabs/food/FoodTabType";
 import { foodStorage } from "$lib/dataStorages/items/foodStorage";
+import { splitEquipmentView } from "$lib/stores/settings";
 import { redirect } from "@sveltejs/kit";
+import { get } from "svelte/store";
 import type { PageLoad } from "./$types";
 
 export const load: PageLoad = ({ url }) => {
+    const isSplitView = get(splitEquipmentView);
+
     const itemId = url.searchParams.get("itemId");
     const tab = url.searchParams.get("tab");
 
@@ -12,6 +17,12 @@ export const load: PageLoad = ({ url }) => {
 
         if (!food) {
             redirect(307, "/food");
+        }
+
+        if (!isSplitView) {
+            goto(`/food/${itemId}`, {
+                replaceState: false
+            });
         }
     }
 

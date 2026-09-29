@@ -1,3 +1,4 @@
+import type { IBlackboardEntry } from "$lib/classes/blackboard/IBlackboardEntry";
 import type { IBoardable } from "$lib/classes/gameData/IBoardable";
 import type { EquipableItemConditionType } from "$lib/classes/gameData/items/equipable/EquipableItemConditionType";
 
@@ -12,4 +13,6 @@ export interface ITactical extends IBoardable {
     get recoverUpperCount(): number;
     get levelUpCastCount(): number;
     get levelUpRecoverUpperCount(): number;
+
+    getDetailList(textFn: (key: string) => string): IBlackboardEntry<string>[];
 }

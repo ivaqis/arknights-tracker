@@ -1,4 +1,5 @@
 <script lang="ts">
+    import type { IBoardable } from "$lib/classes/gameData/IBoardable";
     import type { IFood } from "$lib/classes/gameData/items/food/IFood";
     import type { IFoodBuff } from "$lib/classes/gameData/items/food/IFoodBuff";
     import { RichTextParamParser } from "$lib/classes/richText/expressions/RichTextParamParser";
@@ -48,7 +49,7 @@
     } as const;
 
     let foodDetailLocale: { desc: string } | null = null;
-    let equipDetailLocale: { desc: string } | null = null;
+    let equipDetailLocale: { desc: string; extraDesc: string } | null = null;
 
     $: loadLocales(item.gameId, $currentLocale);
 
@@ -92,20 +93,8 @@
         equipDetailLocale = locales[itemId];
     }
 
-    function parseFoodDesc(food: IFood, desc: string) {
+    function parseFoodDesc(food: IBoardable, desc: string): string {
         let raw = desc;
-
-        // const matches = raw.match(RichTextParamParser.REGEX);
-        //
-        // if (matches) {
-        //     const parser = new RichTextParamParser(key => food.getValue(key));
-        //
-        //     for (const match of matches) {
-        //         const value = parser.parseSafe(match);
-        //
-        //         raw = raw.replace(match, value);
-        //     }
-        // }
 
         const parser = new RichTextParamParser(key => food.getValue(key));
 
@@ -258,6 +247,54 @@
                 </div>
 
             </div>
+
+            {#if item.tactical}
+
+                {@const tactical = item.tactical}
+
+                <div class="bg-white dark:bg-[#2b2b2b] rounded-3xl flex flex-col overflow-hidden border border-gray-200 dark:border-[#444] transition-colors shadow-sm">
+
+                    <div class="px-6 pb-5 flex flex-col gap-1 mt-4">
+
+                        <h2 class="text-2xl font-bold text-[#21272C] dark:text-[#FDFDFD] font-sdk border-b border-gray-100 dark:border-[#444] pb-3 mb-4">
+                            {$t("page.food.tactical")}
+                        </h2>
+
+                        {#if equipDetailLocale}
+
+                            <div class="pl-1 text-gray-700 dark:text-[#E0E0E0] whitespace-pre-wrap text-[14px] leading-relaxed mb-4">
+
+                                {@html parseRichText(parseFoodDesc(tactical, equipDetailLocale.extraDesc))}
+
+                            </div>
+
+                        {/if}
+
+                        <div class="grid grid-cols-2 md:grid-cols-3 gap-y-4 gap-x-6">
+
+                            {#each tactical.getDetailList($t) as node}
+
+                                <div class="flex flex-col">
+
+                                    <span class="text-xs text-gray-500 dark:text-[#A0A0A0] font-bold uppercase">
+                                        {node.key}
+                                    </span>
+
+                                    <span class="text-lg font-bold text-[#21272C] dark:text-[#FDFDFD] truncate">
+                                        {node.value}
+                                    </span>
+
+                                </div>
+
+                            {/each}
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            {/if}
 
         </div>
 
