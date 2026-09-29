@@ -1,7 +1,6 @@
 <script lang="ts">
     import type { IBoardable } from "$lib/classes/gameData/IBoardable";
     import type { IFood } from "$lib/classes/gameData/items/food/IFood";
-    import type { IFoodBuff } from "$lib/classes/gameData/items/food/IFoodBuff";
     import { RichTextParamParser } from "$lib/classes/richText/expressions/RichTextParamParser";
     import Icon from "$lib/components/Icon.svelte";
     import Image from "$lib/components/Image.svelte";

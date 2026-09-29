@@ -38,8 +38,6 @@ export class RichTextExpressionInterpreter {
         for (let i = 0; i < input.length; ) {
             const c = input[i];
 
-            console.log(c);
-
             if (/\s/.test(c)) {
                 continue;
             }

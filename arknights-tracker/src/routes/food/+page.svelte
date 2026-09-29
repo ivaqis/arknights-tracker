@@ -7,10 +7,13 @@
     import type { IItem } from "$lib/classes/gameData/items/IItem";
     import type { SortDirection } from "$lib/classes/SortDirection";
     import { FoodTabType } from "$lib/classes/tabs/food/FoodTabType";
+    import BottomSheet from "$lib/components/BottomSheet.svelte";
     import ItemStackCard from "$lib/components/cards/ItemStackCard.svelte";
     import DataToolbar from "$lib/components/dataToolbarV2/DataToolbar.svelte";
     import FoodFilterDropdown from "$lib/components/dataToolbarV2/filterDropdowns/FoodFilterDropdown.svelte";
     import FoodSortDropdown from "$lib/components/dataToolbarV2/sortDropdowns/FoodSortDropdown.svelte";
+    import FoodDetailView from "$lib/components/food/FoodDetailView.svelte";
+    import Icon from "$lib/components/Icon.svelte";
     import type { ITabSelectEvent } from "$lib/components/tabSelector/ITabSelectEvent";
     import TabSelector from "$lib/components/tabSelector/TabSelector.svelte";
     import { foodStorage } from "$lib/dataStorages/items/foodStorage";
@@ -22,8 +25,19 @@
     import { splitEquipmentView } from "$lib/stores/settings";
     import { isListItemsEqual } from "$lib/utils/collectionUtils";
     import { filterCheck, filterCheckMany } from "$lib/utils/filterUtils";
+    import { onMount } from "svelte";
 
     export let data;
+
+    onMount(() => {
+        return splitEquipmentView.subscribe((isSplitView) => {
+            if (data.itemId && !isSplitView) {
+                goto(`/food/${data.itemId}`, {
+                    replaceState: true,
+                });
+            }
+        });
+    });
 
     const tabList: readonly FoodTabType[] = [FoodTabType.OVERVIEW, FoodTabType.COMPARISON];
 
@@ -45,6 +59,10 @@
         }
     }
 
+    let selectedItem: IFood | null = null;
+
+    $: selectedItem = data.itemId ? foodStorage.byGameId.get(data.itemId) ?? null : null;
+
     const allItems: readonly IFood[] = getAllItems();
 
     function getAllItems(): readonly IFood[] {
@@ -52,7 +70,19 @@
     }
 
     function selectItem(item: IItem) {
-        const url = getRedirectUrl(item);
+        const search = new URLSearchParams();
+
+        search.set("tab", data.tab);
+
+        if (data.itemId !== item.gameId) {
+            search.set("itemId", item.gameId);
+
+            isBottomSheetOpen = true;
+        } else {
+            isBottomSheetOpen = false;
+        }
+
+        const url = `/food?${search}`;
 
         goto(url, {
             replaceState: true
@@ -70,6 +100,8 @@
 
         return `/food?${search}`;
     }
+
+    let isBottomSheetOpen: boolean = false;
 
 
     /// OVERVIEW TAB
@@ -172,7 +204,7 @@
 
 <div class="max-w-[100%] max-h-[100%] min-h-screen h-full flex flex-col xl:flex-row">
 
-    <div class="w-full xl:w-[calc(100%-max(470px,30%))] mr-6">
+    <div class="w-full xl:w-[calc(100%-max(470px,40%))] mr-6">
 
         <div class="flex items-baseline flex-wrap gap-2 md:gap-3 mb-8 font-sdk">
 
@@ -269,6 +301,47 @@
 
     </div>
 
+    {#if data.tab === FoodTabType.COMPARISON || $splitEquipmentView}
 
+        <BottomSheet
+            bind:isOpen={isBottomSheetOpen}
+        >
+
+            <div class="w-full min-h-[50vh] h-full xl:h-[calc(100vh-64px)] sticky top-8 overflow-y-auto">
+
+                {#if data.tab === FoodTabType.OVERVIEW && $splitEquipmentView && selectedItem}
+
+                    <FoodDetailView
+                        item={selectedItem}
+                        inColumn={true}
+                    />
+
+                {:else if data.tab === FoodTabType.COMPARISON}
+
+                {/if}
+
+            </div>
+
+        </BottomSheet>
+
+    {/if}
 
 </div>
+
+{#if !isBottomSheetOpen && data.itemId}
+
+    <button
+        type="button"
+        class="xl:hidden fixed bottom-6 right-6 z-40 w-14 h-14 bg-[#F9B90C] hover:bg-[#FFC01E] text-black rounded-full shadow-lg flex items-center justify-center transition-all active:scale-95 border border-white dark:border-[#1A1A1A] cursor-pointer"
+        on:click={() => (isBottomSheetOpen = true)}
+        title="Results"
+    >
+
+        <Icon
+            name="inbox"
+            class="w-6 h-6 text-black"
+        />
+
+    </button>
+
+{/if}
