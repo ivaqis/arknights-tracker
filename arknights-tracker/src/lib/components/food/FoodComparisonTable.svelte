@@ -1,5 +1,4 @@
 <script lang="ts">
-    import { goto } from "$app/navigation";
     import { FieldValueComparator } from "$lib/classes/comparators/FieldValueComparator";
     import { EquipableItemConditionType } from "$lib/classes/gameData/items/equipable/EquipableItemConditionType";
     import type { IFood } from "$lib/classes/gameData/items/food/IFood";
@@ -29,7 +28,7 @@
     export let buffList: readonly string[];
     export let condTypeOrderList: readonly CondType[];
     export let selectItemFn: (item: IItem) => void;
-    export let selectedItemId: string | null = null;
+    export let selectedItem: IFood | null = null;
 
     const sortTacticalFieldOrder: { key: SortTacticalField; i18nKey: string }[] = [
         {
@@ -325,7 +324,7 @@
                                 item={food}
                                 size={CardSize.MICRO}
                                 showHoverEffect={true}
-                                highlight={selectedItemId === food.gameId}
+                                highlight={selectedItem?.gameId === food.gameId}
                             />
 
                         </button>
@@ -336,7 +335,7 @@
                             item={food}
                             size={CardSize.MICRO}
                             showHoverEffect={true}
-                            highlight={selectedItemId === food.gameId}
+                            highlight={selectedItem?.gameId === food.gameId}
                             url="/food/{food.gameId}"
                         />
 

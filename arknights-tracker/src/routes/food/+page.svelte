@@ -94,18 +94,6 @@
         });
     }
 
-    function getRedirectUrl(item: IItem): string {
-        const search = new URLSearchParams();
-
-        search.set("tab", data.tab);
-
-        if (data.itemId !== item.gameId) {
-            search.set("itemId", item.gameId);
-        }
-
-        return `/food?${search}`;
-    }
-
     let isBottomSheetOpen: boolean = false;
 
 
@@ -329,7 +317,7 @@
                     condTypeOrderList={$foodSortParams.sortFieldParams.equipCond}
                     buffList={selectedBuffList}
                     selectItemFn={selectItem}
-                    selectedItemId={data.itemId}
+                    selectedItem={selectedItem}
                 />
 
             </div>
