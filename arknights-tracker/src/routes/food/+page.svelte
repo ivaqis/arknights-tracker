@@ -216,7 +216,10 @@
 
 <div class="max-w-[100%] max-h-[100%] min-h-screen h-full flex flex-col xl:flex-row">
 
-    <div class="w-full xl:w-[calc(100%-max(470px,40%))] h-[calc(100vh-48px)] mr-6 flex flex-col">
+    <div
+        class="w-full xl:w-[calc(100%-max(470px,40%))] mr-6 flex flex-col"
+        class:h-[calc(100vh-48px)]={data.tab === FoodTabType.COMPARISON}
+    >
 
         <div class="flex items-baseline flex-wrap gap-2 md:gap-3 mb-8 font-sdk">
 
