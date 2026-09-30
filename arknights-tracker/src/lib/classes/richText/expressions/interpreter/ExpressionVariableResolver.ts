@@ -1,0 +1,1 @@
+export type ExpressionVariableResolver = (key: string) => number;

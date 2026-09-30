@@ -1,0 +1,257 @@
+{
+    "item_agfly_1_agmelee_1_moss_2_1": {
+        "desc": "사용 시 초당 최대 생명력의 <@ba.vup>{triggerheal2:0%}</>와 생명력 <@ba.vup>{triggerheal:0}</> 포인트를 회복하며, <@ba.vup>{duration:0}</>초 동안 지속됩니다."
+    },
+    "item_agmelee_1_moss_1_lbmob_1_1": {
+        "desc": "사용 시 즉시 최대 생명력의 <@ba.vup>{value2:0%}</>를 회복하고, 추가로 생명력을 <@ba.vup>{value:0}</> 회복합니다."
+    },
+    "item_agmelee_1_sp_2_slimeml_1_1": {
+        "desc": "사용 시 방어력이 <@ba.vup>{value:0%}</> 증가하며, <@ba.vup>{duration:0}</>초 동안 지속됩니다."
+    },
+    "item_agrange_1_erhound_1_sp_1_1": {
+        "desc": "사용 시 공격력이 <@ba.vup>{value:0%}</> 증가하며, <@ba.vup>{duration:0}</>초 동안 지속됩니다."
+    },
+    "item_agrange_1_lbshamman_bottled_1": {
+        "desc": "사용 시 받는 모든 유형의 피해가 <@ba.vup>{1-value:0%}</> 감소하며, <@ba.vup>{duration:0}</>초 동안 지속됩니다."
+    },
+    "item_agrange_1_moss_2_lbmob_1_1": {
+        "desc": "사용 시 방어력이 <@ba.vup>{buff_common_def_buff_potion_1\\value:0%}</> 증가하며, <@ba.vup>{buff_common_def_buff_potion_1\\duration:0}</>초 동안 지속됩니다."
+    },
+    "item_bottled_flower1spc_1": {
+        "desc": "사용 시 즉시 최대 생명력의 <@ba.vup>{value2:0%}</>를 회복하고, 추가로 생명력을 <@ba.vup>{value:0}</> 회복합니다."
+    },
+    "item_bottled_flower1spc_2": {
+        "desc": "사용 시 즉시 최대 생명력의 <@ba.vup>{value2:0%}</>를 회복하고, 추가로 생명력을 <@ba.vup>{value:0}</> 회복합니다."
+    },
+    "item_bottled_flower1spc_3": {
+        "desc": "사용 시 즉시 최대 생명력의 <@ba.vup>{value2:0%}</>를 회복하고, 추가로 생명력을 <@ba.vup>{value:0}</> 회복합니다."
+    },
+    "item_bottled_flower2spc_1": {
+        "desc": "사용 시 초당 최대 생명력의 <@ba.vup>{triggerheal2:0%}</>와 생명력 <@ba.vup>{triggerheal:0}</> 포인트를 회복하며, <@ba.vup>{duration:0}</>초 동안 지속됩니다."
+    },
+    "item_bottled_flower2spc_2": {
+        "desc": "사용 시 초당 최대 생명력의 <@ba.vup>{triggerheal2:0%}</>와 생명력 <@ba.vup>{triggerheal:0}</> 포인트를 회복하며, <@ba.vup>{duration:0}</>초 동안 지속됩니다."
+    },
+    "item_bottled_flower2spc_3": {
+        "desc": "사용 시 초당 최대 생명력의 <@ba.vup>{triggerheal2:0%}</>와 생명력 <@ba.vup>{triggerheal:0}</> 포인트를 회복하며, <@ba.vup>{duration:0}</>초 동안 지속됩니다."
+    },
+    "item_bottled_food_1": {
+        "desc": "사용 시 초당 생명력을 <@ba.vup>{triggerheal:0}</> 회복하며, <@ba.vup>{duration:0}</>초 동안 지속됩니다."
+    },
+    "item_bottled_food_2": {
+        "desc": "사용 시 초당 생명력을 <@ba.vup>{triggerheal:0}</> 회복하며, <@ba.vup>{duration:0}</>초 동안 지속됩니다."
+    },
+    "item_bottled_food_3": {
+        "desc": "사용 시 초당 생명력을 <@ba.vup>{triggerheal:0}</> 회복하며, <@ba.vup>{duration:0}</>초 동안 지속됩니다."
+    },
+    "item_bottled_food_4": {
+        "desc": "사용 시 즉시 생명력을 <@ba.vup>{value:0}</> 회복합니다."
+    },
+    "item_bottled_food_5": {
+        "desc": "사용 시 즉시 생명력을 <@ba.vup>{value:0}</> 회복합니다."
+    },
+    "item_bottled_grass1spc_1": {
+        "desc": "사용 시 즉시 최대 생명력의 <@ba.vup>{value2:0%}</>를 회복하고, 추가로 생명력을 <@ba.vup>{value:0}</> 회복합니다."
+    },
+    "item_bottled_grass1spc_2": {
+        "desc": "사용 시 즉시 최대 생명력의 <@ba.vup>{value2:0%}</>를 회복하고, 추가로 생명력을 <@ba.vup>{value:0}</> 회복합니다."
+    },
+    "item_bottled_grass2spc_1": {
+        "desc": "사용 시 초당 최대 생명력의 <@ba.vup>{triggerheal2:0%}</>와 생명력 <@ba.vup>{triggerheal:0}</> 포인트를 회복하며, <@ba.vup>{duration:0}</>초 동안 지속됩니다."
+    },
+    "item_bottled_grass2spc_2": {
+        "desc": "사용 시 초당 최대 생명력의 <@ba.vup>{triggerheal2:0%}</>와 생명력 <@ba.vup>{triggerheal:0}</> 포인트를 회복하며, <@ba.vup>{duration:0}</>초 동안 지속됩니다."
+    },
+    "item_bottled_insec1_1": {
+        "desc": "사용 시 지정한 전투 불능 상태의 아군 1명을 즉시 부활시키고 최대 생명력의 <@ba.vup>10%</>를 회복합니다."
+    },
+    "item_bottled_insec1_2": {
+        "desc": "사용 시 지정한 전투 불능 상태의 아군 1명을 즉시 부활시키고 최대 생명력의 <@ba.vup>30%</>를 회복합니다."
+    },
+    "item_bottled_insec2_1": {
+        "desc": "사용 시 주는 모든 피해가 <@ba.vup>{buff_common_dmg_up_potion_1\\value:0%}</> 증가하며, <@ba.vup>{buff_common_dmg_up_potion_1\\duration:0}</>초 동안 지속됩니다."
+    },
+    "item_bottled_insec2_2": {
+        "desc": "사용 시 주는 모든 피해가 <@ba.vup>{buff_common_dmg_up_potion_1\\value:0%}</> 증가하며, <@ba.vup>{buff_common_dmg_up_potion_1\\duration:0}</>초 동안 지속됩니다."
+    },
+    "item_bottled_moss_1_2_1": {
+        "desc": "사용 시 궁극기 충전 효율이 <@ba.vup>{value:0%}</> 증가하며, <@ba.vup>{duration:0}</>초 동안 지속됩니다."
+    },
+    "item_bottled_moss_2_animal_1": {
+        "desc": "사용 시 즉시 최대 생명력의 <@ba.vup>{value2:0%}</>를 회복하고, 추가로 생명력을 <@ba.vup>{value:0}</> 회복합니다."
+    },
+    "item_bottled_rec_hp_1": {
+        "desc": "사용 시 즉시 생명력을 <@ba.vup>{value:0}</> 회복합니다."
+    },
+    "item_bottled_rec_hp_2": {
+        "desc": "사용 시 즉시 생명력을 <@ba.vup>{value:0}</> 회복합니다."
+    },
+    "item_bottled_rec_hp_3": {
+        "desc": "사용 시 즉시 생명력을 <@ba.vup>{value:0}</> 회복합니다."
+    },
+    "item_bottled_rec_hp_4": {
+        "desc": "사용 시 초당 생명력을 <@ba.vup>{triggerheal:0}</> 회복하며, <@ba.vup>{duration:0}</>초 동안 지속됩니다."
+    },
+    "item_bottled_rec_hp_5": {
+        "desc": "사용 시 초당 생명력을 <@ba.vup>{triggerheal:0}</> 회복하며, <@ba.vup>{duration:0}</>초 동안 지속됩니다."
+    },
+    "item_cbp_voucher_originium": {
+        "desc": "소모품, 사용 후 현재 구역 내에 아직 발견하지 못한 탈로사이트 하나를 탐지할 수 있습니다. 현재 구역의 모든 안개 영역을 해제해야 사용할 수 있습니다. (무릉 지역에서만 사용 가능.)"
+    },
+    "item_cbp_voucher_pay": {
+        "desc": "소모품, 사용 후 현재 구역 내에 아직 발견하지 못한 탈로사이트 하나를 탐지할 수 있습니다. 현재 구역의 모든 안개 영역을 해제해야 사용할 수 있습니다. (무릉 지역에서만 사용 가능.)"
+    },
+    "item_corp1_animal_1": {
+        "desc": "사용 시 즉시 최대 생명력의 <@ba.vup>{value2:0%}</>를 회복하고, 추가로 생명력을 <@ba.vup>{value:0}</> 회복합니다."
+    },
+    "item_corp2_animal_1": {
+        "desc": "사용 시 <#ba.spellinflictonchar>아츠 부착</>과 <#ba.spellinflictonchar>아츠 이상</> 효과를 <#ba.dispel>정화</>하고, 즉시 최대 생명력의 <@ba.vup>{value2:0%}</>와 생명력 <@ba.vup>{value:0}</> 포인트를 회복합니다."
+    },
+    "item_corp3_animal_1": {
+        "desc": "사용 시 공격력이 <@ba.vup>{buff_common_atk_buff_potion_2\\value:0}</>, 치명타 확률이 <@ba.vup>{buff_common_ctr_buff_potion_1\\value:0%}</> 증가하며, <@ba.vup>{buff_common_atk_buff_potion_2\\duration:0}</>초 동안 지속됩니다."
+    },
+    "item_corp3_grass1_1": {
+        "desc": "사용 시 치명타 확률이 <@ba.vup>{buff_common_ctr_buff_potion_1\\value:0%}</>, 주는 모든 피해가 <@ba.vup>{buff_common_dmg_up_potion_1\\value:0%}</> 증가하며, <@ba.vup>{buff_common_ctr_buff_potion_1\\duration:0}</>초 동안 지속됩니다."
+    },
+    "item_corp4_animal_1": {
+        "desc": "사용 시 방어력이 <@ba.vup>{value:0%}</> 증가하며, <@ba.vup>{duration:0}</>초 동안 지속됩니다."
+    },
+    "item_corp4_grass2_1": {
+        "desc": "사용 시 즉시 최대 생명력의 <@ba.vup>{value2:0%}</>를 회복하고, 추가로 생명력을 <@ba.vup>{value:0}</> 회복합니다."
+    },
+    "item_corp4_spc": {
+        "desc": "사용 시 궁극기 에너지를 <@ba.vup>{value:0%}</> 회복합니다."
+    },
+    "item_dog_1_slimeml_1_1": {
+        "desc": "사용 시 궁극기 에너지를 <@ba.vup>{value:0%}</> 회복합니다."
+    },
+    "item_dog_hsmob_corp_1": {
+        "desc": "사용 시 즉시 전체 오퍼레이터의 최대 생명력을 <@ba.vup>{value2:0%}</> 회복하고, 추가로 생명력을 <@ba.vup>{value:0}</> 회복합니다."
+    },
+    "item_erhound_1_agmelee_1_moss_1_1": {
+        "desc": "사용 시 받는 모든 유형의 피해가 <@ba.vup>{1-value:0%}</> 감소하며, <@ba.vup>{duration:0}</>초 동안 지속됩니다."
+    },
+    "item_ethillu_1_wgslime_1_wgthorns_1_1": {
+        "desc": "사용 시 연계 스킬 쿨타임 <@ba.vup>{1-value:0%}</> 감소, <@ba.vup>{duration:0}</>초 동안 지속."
+    },
+    "item_firebat_1_agrange_1_1": {
+        "desc": "사용 시 공격력이 <@ba.vup>{buff_common_atk_buff_potion_1\\value:0%}</>, 치명타 확률이 <@ba.vup>{buff_common_ctr_buff_potion_1\\value:0%}</>, 주는 모든 피해가 <@ba.vup>{buff_common_dmg_up_potion_1\\value:0%}</> 증가하며, <@ba.vup>{buff_common_atk_buff_potion_1\\duration:0}</>초 동안 지속됩니다."
+    },
+    "item_hscrane_1_hsmob_1_grass_1_1": {
+        "desc": "사용 시 즉시 최대 생명력의 <@ba.vup>{value2:0%}</>를 회복하고, 추가로 생명력을 <@ba.vup>{value:0}</> 회복합니다."
+    },
+    "item_hsfly_1_slimeml_1_hsmob_1_1": {
+        "desc": "사용 시 치명타 확률이 <@ba.vup>{value:0%}</> 증가하며, <@ba.vup>{duration:0}</>초 동안 지속됩니다."
+    },
+    "item_hshog_1_hsmob_1_slimeml_1_1": {
+        "desc": "사용 시 방어력이 <@ba.vup>{buff_common_def_buff_potion_2\\value:0}</> 증가, 받는 모든 유형의 피해가 <@ba.vup>{1-buff_common_resis_up_potion_1\\value:0%}</> 감소하며, <@ba.vup>{buff_common_resis_up_potion_1\\duration:0}</>초 동안 지속됩니다."
+    },
+    "item_hsmob_1_dog_1_1": {
+        "desc": "사용 시 궁극기 충전 효율이 <@ba.vup>{buff_common_usprt_buff_potion_1\\value:0%}</>, 받는 치유 효율 보너스가 <@ba.vup>{buff_common_healrt_buff_potion_2\\value:0%}</> 증가하며, <@ba.vup>{buff_common_usprt_buff_potion_1\\duration:0}</>초 동안 지속됩니다."
+    },
+    "item_hsmob_1_grass_2_1": {
+        "desc": "사용 시 초당 최대 생명력의 <@ba.vup>{triggerheal2:0%}</>와 생명력 <@ba.vup>{triggerheal:0}</> 포인트를 회복하며, <@ba.vup>{duration:0}</>초 동안 지속됩니다."
+    },
+    "item_jzmonk_1_hsmob_1_1": {
+        "desc": "사용 시, 치명타 확률 <@ba.vup>{buff_common_ctr_buff_potion_1\\value:0%}</> 증가, 방어력 <@ba.vup>{-buff_common_def_buff_potion_3\\value:0%}</> 감소, <@ba.vup>{buff_common_ctr_buff_potion_1\\duration:0}</>초 동안 지속됩니다."
+    },
+    "item_klbuds_1_hsfly_1_1": {
+        "desc": "사용 시 방어력이 <@ba.vup>{buff_common_def_buff_potion_1\\value:0%}</> 증가, 받는 모든 유형의 피해가 <@ba.vup>{1-buff_common_resis_up_potion_1\\value:0%}</> 감소하며, <@ba.vup>{buff_common_def_buff_potion_1\\duration:0}</>초 동안 지속됩니다."
+    },
+    "item_klcreatures_1_wgthorns_1_1": {
+        "desc": "사용 시 궁극기 충전 효율이 <@ba.vup>{value:0%}</> 증가하며, <@ba.vup>{duration:0}</>초 동안 지속됩니다."
+    },
+    "item_lbmob_1_dog_1_moss_1_1": {
+        "desc": "사용 시 모든 능력치가 <@ba.vup>{value:0}</> 증가하며, <@ba.vup>{duration:0}</>초 동안 지속됩니다."
+    },
+    "item_lbmob_1_lbshamman_1_sp_1_1": {
+        "desc": "사용 시 전체 오퍼레이터가 초당 최대 생명력의 <@ba.vup>{triggerheal2:0%}</>와 생명력 <@ba.vup>{triggerheal:0}</> 포인트를 회복하며, <@ba.vup>{duration:0}</>초 동안 지속됩니다."
+    },
+    "item_lbmob_1_moss_2_bottled_1": {
+        "desc": "사용 시 <#ba.spellinflictonchar>아츠 부착</>과 <#ba.spellinflictonchar>아츠 이상</> 효과를 <#ba.dispel>정화</>하고, 즉시 최대 생명력의 <@ba.vup>{value2:0%}</>와 생명력 <@ba.vup>{value:0}</> 포인트를 회복합니다."
+    },
+    "item_lbshamman_1_agmelee_1_1": {
+        "desc": "사용 시 즉시 전체 오퍼레이터의 최대 생명력을 <@ba.vup>{value2:0%}</> 회복하고, 추가로 생명력을 <@ba.vup>{value:0}</> 회복합니다."
+    },
+    "item_lbshield_1_slimeml_1_dog_1_1": {
+        "desc": "사용 시 주는 물리 피해가 <@ba.vup>{value:0%}</> 증가하며, <@ba.vup>{duration:0}</>초 동안 지속됩니다."
+    },
+    "item_mimicw_1_moss_1_moss_2_1": {
+        "desc": "사용 시 공격력이 <@ba.vup>{buff_common_atk_buff_potion_1\\value:0%}</> 증가하며, <@ba.vup>{buff_common_atk_buff_potion_1\\duration:0}</>초 동안 지속됩니다."
+    },
+    "item_monthlycard_1": {
+        "desc": "소모품, 사용 후 현재 구역 내에 아직 발견하지 못한 탈로사이트 하나를 탐지할 수 있습니다. 현재 구역의 모든 안개 영역을 해제해야 사용할 수 있습니다. (무릉 지역에서만 사용 가능.)"
+    },
+    "item_plant_grass_powder_1": {
+        "desc": "사용 시 즉시 생명력을 <@ba.vup>{value:0}</> 회복합니다."
+    },
+    "item_plant_grass_powder_2": {
+        "desc": "사용 시 초당 생명력을 <@ba.vup>{triggerheal:0}</> 회복하며, <@ba.vup>{duration:0}</>초 동안 지속됩니다."
+    },
+    "item_plant_grass_spc_powder_1": {
+        "desc": "사용 시 즉시 최대 생명력의 <@ba.vup>{value2:0%}</>를 회복하고, 추가로 생명력을 <@ba.vup>{value:0}</> 회복합니다."
+    },
+    "item_plant_grass_spc_powder_2": {
+        "desc": "사용 시 초당 최대 생명력의 <@ba.vup>{triggerheal2:0%}</>와 생명력 <@ba.vup>{triggerheal:0}</> 포인트를 회복하며, <@ba.vup>{duration:0}</>초 동안 지속됩니다."
+    },
+    "item_plant_moss_powder_1": {
+        "desc": "사용 시 즉시 생명력을 <@ba.vup>{value:0}</> 회복합니다."
+    },
+    "item_plant_moss_powder_2": {
+        "desc": "사용 시 초당 생명력을 <@ba.vup>{triggerheal:0}</> 회복하며, <@ba.vup>{duration:0}</>초 동안 지속됩니다."
+    },
+    "item_plant_moss_spc_powder_1": {
+        "desc": "사용 시 즉시 최대 생명력의 <@ba.vup>{value2:0%}</>를 회복하고, 추가로 생명력을 <@ba.vup>{value:0}</> 회복합니다."
+    },
+    "item_plant_moss_spc_powder_2": {
+        "desc": "사용 시 초당 최대 생명력의 <@ba.vup>{triggerheal2:0%}</>와 생명력 <@ba.vup>{triggerheal:0}</> 포인트를 회복하며, <@ba.vup>{duration:0}</>초 동안 지속됩니다."
+    },
+    "item_proc_bomb_1": {
+        "desc": "조립해서 만든 폭발물.\n바로 사용하여 공격할 수 있으며, 폭발 시 주변의 모든 적에게 피해를 줍니다."
+    },
+    "item_resetid_1": {
+        "desc": "소모품, 사용 후 현재 구역 내에 아직 발견하지 못한 탈로사이트 하나를 탐지할 수 있습니다. 현재 구역의 모든 안개 영역을 해제해야 사용할 수 있습니다. (무릉 지역에서만 사용 가능.)"
+    },
+    "item_slimeml_1_agrange_1_moss_2_1": {
+        "desc": "사용 시 전체 오퍼레이터의 궁극기 에너지를 <@ba.vup>{value:0%}</> 회복합니다."
+    },
+    "item_slimeml_1_erhound_1_agfly_1_1": {
+        "desc": "사용 시 <#ba.spellinflictonchar>아츠 부착</>과 <#ba.spellinflictonchar>아츠 이상</> 효과를 <#ba.dispel>정화</>하고, 초당 생명력 <@ba.vup>{triggerheal:0}</> 포인트를 회복하며, <@ba.vup>{duration:0}</>초 동안 지속됩니다."
+    },
+    "item_slwood_1_hshog_1_1": {
+        "desc": "사용 시 <#ba.spellinflictonchar>아츠 부착</>과 <#ba.spellinflictonchar>아츠 이상</> 효과를 <#ba.dispel>정화</>하고, 즉시 최대 생명력의 <@ba.vup>{value2:0%}</>와 생명력 <@ba.vup>{value:0}</> 포인트를 회복합니다."
+    },
+    "item_sp_1_moss_1_agmelee_1_1": {
+        "desc": "사용 시 즉시 전체 오퍼레이터의 최대 생명력을 <@ba.vup>{value2:0%}</> 회복하고, 추가로 생명력을 <@ba.vup>{value:0}</> 회복합니다."
+    },
+    "item_sp_2_moss_2_agrange_1_1": {
+        "desc": "사용 시 전체 오퍼레이터가 초당 최대 생명력의 <@ba.vup>{triggerheal2:0%}</>와 생명력 <@ba.vup>{triggerheal:0}</> 포인트를 회복하며, <@ba.vup>{duration:0}</>초 동안 지속됩니다."
+    },
+    "item_tundra_detector_coin_3": {
+        "desc": "소모품, 사용 후 현재 구역 내에 아직 발견하지 못한 오리렌 하나를 탐지할 수 있습니다. 현재 구역의 모든 안개 영역을 해제해야 사용할 수 있습니다. (4번 협곡 지역에서만 사용 가능.)"
+    },
+    "item_tundra_detector_trchest_3": {
+        "desc": "소모품, 사용 후 현재 구역 내에 아직 발견하지 못한 보물 상자 하나를 탐지할 수 있습니다. 현재 구역의 모든 안개 영역을 해제해야 사용할 수 있습니다. (4번 협곡 지역에서만 사용 가능.)"
+    },
+    "item_wgshoal_1_grass_1_grass_2_1": {
+        "desc": "사용 시 공격력이 <@ba.vup>{buff_common_atk_buff_potion_1\\value:0%}</>, 치명타 확률이 <@ba.vup>{buff_common_ctr_buff_potion_1\\value:0%}</> 증가하며, <@ba.vup>{buff_common_ctr_buff_potion_1\\duration:0}</>초 동안 지속됩니다."
+    },
+    "item_wgslime_1_hsmob_1_grass_2_1": {
+        "desc": "사용 시 초당 최대 생명력의 <@ba.vup>{triggerheal2:0%}</>와 생명력 <@ba.vup>{triggerheal:0}</> 포인트를 회복하며, <@ba.vup>{duration:0}</>초 동안 지속됩니다."
+    },
+    "item_wgslime_1_wgthorns_1_1": {
+        "desc": "사용 시 방어력이 <@ba.vup>{buff_common_def_buff_potion_1\\value:0%}</> 증가, 받는 모든 유형의 피해가 <@ba.vup>{1-buff_common_resis_up_potion_1\\value:0%}</> 감소, 치유 효율 보너스가 <@ba.vup>{buff_common_healrt_buff_potion_1\\value:0%}</> 증가하며, <@ba.vup>{buff_common_def_buff_potion_1\\duration:0}</>초 동안 지속됩니다."
+    },
+    "item_wgthorns_1_hshog_1_hsmob_1_1": {
+        "desc": "사용 시 받는 모든 유형의 피해가 <@ba.vup>{1-value:0%}</> 감소하며, <@ba.vup>{duration:0}</>초 동안 지속됩니다."
+    },
+    "item_wuling_detector_coin_3": {
+        "desc": "소모품, 사용 후 현재 구역 내에 아직 발견하지 못한 오리렌 하나를 탐지할 수 있습니다. 현재 구역의 모든 안개 영역을 해제해야 사용할 수 있습니다. (무릉 지역에서만 사용 가능.)"
+    },
+    "item_wuling_detector_star": {
+        "desc": "소모품, 사용 후 현재 구역 내에 아직 발견하지 못한 탈로사이트 하나를 탐지할 수 있습니다. 현재 구역의 모든 안개 영역을 해제해야 사용할 수 있습니다. (무릉 지역에서만 사용 가능.)"
+    },
+    "item_wuling_detector_trchest_3": {
+        "desc": "소모품, 사용 후 현재 구역 내에 아직 발견하지 못한 보물 상자 하나를 탐지할 수 있습니다. 현재 구역의 모든 안개 영역을 해제해야 사용할 수 있습니다. (무릉 지역에서만 사용 가능.)"
+    }
+}

@@ -1,0 +1,257 @@
+{
+    "item_agfly_1_agmelee_1_moss_2_1": {
+        "desc": "Use para restaurar <@ba.vup>{triggerheal2:0%}</> de PV Máximo por segundo e <@ba.vup>{triggerheal:0}</> de PV. Duração: <@ba.vup>{duration:0}</> s."
+    },
+    "item_agmelee_1_moss_1_lbmob_1_1": {
+        "desc": "Use para restaurar instantaneamente <@ba.vup>{value2:0%}</> de PV Máximo e <@ba.vup>{value:0}</> de PV."
+    },
+    "item_agmelee_1_sp_2_slimeml_1_1": {
+        "desc": "Use para conceder DEF + <@ba.vup>{value:0%}</>. Duração: <@ba.vup>{duration:0}</> s."
+    },
+    "item_agrange_1_erhound_1_sp_1_1": {
+        "desc": "Use para conceder ATQ + <@ba.vup>{value:0%}</>. Duração: <@ba.vup>{duration:0}</> s."
+    },
+    "item_agrange_1_lbshamman_bottled_1": {
+        "desc": "Use para conceder Redução DNO + <@ba.vup>{1-value:0%}</> para todas as formas de DNO. Duração: <@ba.vup>{duration:0}</> s."
+    },
+    "item_agrange_1_moss_2_lbmob_1_1": {
+        "desc": "Use para conceder DEF + <@ba.vup>{buff_common_def_buff_potion_1\\value:0%}</>. Duração: <@ba.vup>{buff_common_def_buff_potion_1\\duration:0}</> s."
+    },
+    "item_bottled_flower1spc_1": {
+        "desc": "Use para restaurar instantaneamente <@ba.vup>{value2:0%}</> de PV Máximo e <@ba.vup>{value:0}</> de PV."
+    },
+    "item_bottled_flower1spc_2": {
+        "desc": "Use para restaurar instantaneamente <@ba.vup>{value2:0%}</> de PV Máximo e <@ba.vup>{value:0}</> de PV."
+    },
+    "item_bottled_flower1spc_3": {
+        "desc": "Use para restaurar instantaneamente <@ba.vup>{value2:0%}</> de PV Máximo e <@ba.vup>{value:0}</> de PV."
+    },
+    "item_bottled_flower2spc_1": {
+        "desc": "Use para restaurar <@ba.vup>{triggerheal2:0%}</> de PV Máximo por segundo e <@ba.vup>{triggerheal:0}</> de PV. Duração: <@ba.vup>{duration:0}</> s."
+    },
+    "item_bottled_flower2spc_2": {
+        "desc": "Use para restaurar <@ba.vup>{triggerheal2:0%}</> de PV Máximo por segundo e <@ba.vup>{triggerheal:0}</> de PV. Duração: <@ba.vup>{duration:0}</> s."
+    },
+    "item_bottled_flower2spc_3": {
+        "desc": "Use para restaurar <@ba.vup>{triggerheal2:0%}</> de PV Máximo por segundo e <@ba.vup>{triggerheal:0}</> de PV. Duração: <@ba.vup>{duration:0}</> s."
+    },
+    "item_bottled_food_1": {
+        "desc": "Use para restaurar <@ba.vup>{triggerheal:0}</> de PV por segundo por <@ba.vup>{duration:0}</> s."
+    },
+    "item_bottled_food_2": {
+        "desc": "Use para restaurar <@ba.vup>{triggerheal:0}</> de PV por segundo por <@ba.vup>{duration:0}</> s."
+    },
+    "item_bottled_food_3": {
+        "desc": "Use para restaurar <@ba.vup>{triggerheal:0}</> de PV por segundo por <@ba.vup>{duration:0}</> s."
+    },
+    "item_bottled_food_4": {
+        "desc": "Use para restaurar <@ba.vup>{value:0}</> de PV."
+    },
+    "item_bottled_food_5": {
+        "desc": "Use para restaurar instantaneamente <@ba.vup>{value:0}</> de PV."
+    },
+    "item_bottled_grass1spc_1": {
+        "desc": "Use para restaurar instantaneamente <@ba.vup>{value2:0%}</> de PV Máximo e <@ba.vup>{value:0}</> de PV."
+    },
+    "item_bottled_grass1spc_2": {
+        "desc": "Use para restaurar instantaneamente <@ba.vup>{value2:0%}</> de PV Máximo e <@ba.vup>{value:0}</> de PV."
+    },
+    "item_bottled_grass2spc_1": {
+        "desc": "Use para restaurar <@ba.vup>{triggerheal2:0%}</> de PV Máximo por segundo e <@ba.vup>{triggerheal:0}</> de PV. Duração: <@ba.vup>{duration:0}</> s."
+    },
+    "item_bottled_grass2spc_2": {
+        "desc": "Use para restaurar <@ba.vup>{triggerheal2:0%}</> de PV Máximo por segundo e <@ba.vup>{triggerheal:0}</> de PV. Duração: <@ba.vup>{duration:0}</> s."
+    },
+    "item_bottled_insec1_1": {
+        "desc": "Use para reviver instantaneamente um membro da equipe inconsciente para <@ba.vup>10%</> de PV Máximo."
+    },
+    "item_bottled_insec1_2": {
+        "desc": "Use para reviver instantaneamente um membro da equipe inconsciente para <@ba.vup>30%</> de PV Máximo."
+    },
+    "item_bottled_insec2_1": {
+        "desc": "Use para conceder DNO Causado + <@ba.vup>{buff_common_dmg_up_potion_1\\value:0%}</> para todas as formas de DNO. Duração: <@ba.vup>{buff_common_dmg_up_potion_1\\duration:0}</> s."
+    },
+    "item_bottled_insec2_2": {
+        "desc": "Use para conceder DNO Causado + <@ba.vup>{buff_common_dmg_up_potion_1\\value:0%}</> para todas as formas de DNO. Duração: <@ba.vup>{buff_common_dmg_up_potion_1\\duration:0}</> s."
+    },
+    "item_bottled_moss_1_2_1": {
+        "desc": "Use para conceder Eficiência de Ganho Supremo + <@ba.vup>{value:0%}</>. Duração: <@ba.vup>{duration:0}</> s."
+    },
+    "item_bottled_moss_2_animal_1": {
+        "desc": "Use para restaurar instantaneamente <@ba.vup>{value2:0%}</> de PV Máximo e <@ba.vup>{value:0}</> de PV."
+    },
+    "item_bottled_rec_hp_1": {
+        "desc": "Use para restaurar <@ba.vup>{value:0}</> de PV."
+    },
+    "item_bottled_rec_hp_2": {
+        "desc": "Use para restaurar <@ba.vup>{value:0}</> de PV."
+    },
+    "item_bottled_rec_hp_3": {
+        "desc": "Use para restaurar <@ba.vup>{value:0}</> de PV."
+    },
+    "item_bottled_rec_hp_4": {
+        "desc": "Use para restaurar <@ba.vup>{triggerheal:0}</> de PV por segundo por <@ba.vup>{duration:0}</> s."
+    },
+    "item_bottled_rec_hp_5": {
+        "desc": "Use para restaurar <@ba.vup>{triggerheal:0}</> de PV por segundo por <@ba.vup>{duration:0}</> s."
+    },
+    "item_cbp_voucher_originium": {
+        "desc": "Consumível. Seu uso revela a presença de Talosita ainda não descoberta na área em questão. Só pode ser usado após todas as áreas enevoadas do mapa terem sido mapeadas. Este item funciona apenas em Wuling."
+    },
+    "item_cbp_voucher_pay": {
+        "desc": "Consumível. Seu uso revela a presença de Talosita ainda não descoberta na área em questão. Só pode ser usado após todas as áreas enevoadas do mapa terem sido mapeadas. Este item funciona apenas em Wuling."
+    },
+    "item_corp1_animal_1": {
+        "desc": "Use para restaurar instantaneamente <@ba.vup>{value2:0%}</> de PV Máximo e <@ba.vup>{value:0}</> de PV."
+    },
+    "item_corp2_animal_1": {
+        "desc": "Use para <#ba.dispel>dissipar</> <#ba.spellinflictonchar>Inflições de Artes</> e <#ba.spellinflictonchar>Reações de Artes</> e, em seguida, restaurar <@ba.vup>{value2:0%}</> de PV Máximo + <@ba.vup>{value:0}</> de PV."
+    },
+    "item_corp3_animal_1": {
+        "desc": "Use para conceder ATQ + <@ba.vup>{buff_common_atk_buff_potion_2\\value:0}</> e Taxa de Críticos + <@ba.vup>{buff_common_ctr_buff_potion_1\\value:0%}</>. Duração: <@ba.vup>{buff_common_atk_buff_potion_2\\duration:0}</> s."
+    },
+    "item_corp3_grass1_1": {
+        "desc": "Use para conceder Taxa de Críticos + <@ba.vup>{buff_common_ctr_buff_potion_1\\value:0%}</> e Todos os Tipos de Dano + <@ba.vup>{buff_common_dmg_up_potion_1\\value:0%}</>. Duração: <@ba.vup>{buff_common_ctr_buff_potion_1\\duration:0}</> s."
+    },
+    "item_corp4_animal_1": {
+        "desc": "Use para conceder DEF + <@ba.vup>{value:0%}</>. Duração: <@ba.vup>{duration:0}</> s."
+    },
+    "item_corp4_grass2_1": {
+        "desc": "Use para restaurar instantaneamente <@ba.vup>{value2:0%}</> de PV Máximo e <@ba.vup>{value:0}</> de PV."
+    },
+    "item_corp4_spc": {
+        "desc": "Use para ganhar instantaneamente <@ba.vup>{value:0%}</> de Energia Suprema."
+    },
+    "item_dog_1_slimeml_1_1": {
+        "desc": "Use para ganhar instantaneamente <@ba.vup>{value:0%}</> de Energia Suprema."
+    },
+    "item_dog_hsmob_corp_1": {
+        "desc": "Use para a equipe inteira para restaurar instantaneamente <@ba.vup>{value2:0%}</> de PV Máximo e <@ba.vup>{value:0}</> de PV."
+    },
+    "item_erhound_1_agmelee_1_moss_1_1": {
+        "desc": "Use para conceder Redução DNO + <@ba.vup>{1-value:0%}</> para todas as formas de DNO. Duração: <@ba.vup>{duration:0}</> s."
+    },
+    "item_ethillu_1_wgslime_1_wgthorns_1_1": {
+        "desc": "Use para reduzir o RG do Combo de Habilidades em <@ba.vup>{1-value:0%}</>. Duração: <@ba.vup>{duration:0}</> s."
+    },
+    "item_firebat_1_agrange_1_1": {
+        "desc": "Use para conceder ATQ + <@ba.vup>{buff_common_atk_buff_potion_1\\value:0%}</>, Taxa de Críticos +<@ba.vup>{buff_common_ctr_buff_potion_1\\value:0%}</> e Todos os Tipos de Dano + <@ba.vup>{buff_common_dmg_up_potion_1\\value:0%}</>. Duração: <@ba.vup>{buff_common_atk_buff_potion_1\\duration:0}</> s."
+    },
+    "item_hscrane_1_hsmob_1_grass_1_1": {
+        "desc": "Use para restaurar instantaneamente <@ba.vup>{value2:0%}</> de PV Máximo e <@ba.vup>{value:0}</> de PV."
+    },
+    "item_hsfly_1_slimeml_1_hsmob_1_1": {
+        "desc": "Use para conceder Taxa de Críticos +<@ba.vup>{value:0%}</>. Duração: <@ba.vup>{duration:0}</> s."
+    },
+    "item_hshog_1_hsmob_1_slimeml_1_1": {
+        "desc": "Use para conceder DEF + <@ba.vup>{buff_common_def_buff_potion_2\\value:0}</> e Redução DNO + <@ba.vup>{1-buff_common_resis_up_potion_1\\value:0%}</> para todas as formas de DNO. Duração: <@ba.vup>{buff_common_resis_up_potion_1\\duration:0}</> s."
+    },
+    "item_hsmob_1_dog_1_1": {
+        "desc": "Use para conceder Eficiência de Ganho Suprema + <@ba.vup>{buff_common_usprt_buff_potion_1\\value:0%}</> e Bônus de Tratamento Recebido + <@ba.vup>{buff_common_healrt_buff_potion_2\\value:0%}</>. Duração: <@ba.vup>{buff_common_usprt_buff_potion_1\\duration:0}</> s."
+    },
+    "item_hsmob_1_grass_2_1": {
+        "desc": "Use para restaurar <@ba.vup>{triggerheal2:0%}</> de PV Máximo por segundo e <@ba.vup>{triggerheal:0}</> de PV. Duração: <@ba.vup>{duration:0}</> s."
+    },
+    "item_jzmonk_1_hsmob_1_1": {
+        "desc": "Use para conceder Taxa de Críticos + <@ba.vup>{buff_common_ctr_buff_potion_1\\value:0%}</>, mas ao custo de DEF <@ba.vup>{-buff_common_def_buff_potion_3\\value:0%}</>. Duração: <@ba.vup>{buff_common_ctr_buff_potion_1\\duration:0}</> s."
+    },
+    "item_klbuds_1_hsfly_1_1": {
+        "desc": "Use para conceder <@ba.vup>{buff_common_def_buff_potion_1\\value:0%}</> de DEF e <@ba.vup>{1-buff_common_resis_up_potion_1\\value:0%}</> de Redução DNO contra todas as formas de DNO. Duração: <@ba.vup>{buff_common_def_buff_potion_1\\duration:0}</> s."
+    },
+    "item_klcreatures_1_wgthorns_1_1": {
+        "desc": "Use para conceder Eficiência de Ganho Supremo + <@ba.vup>{value:0%}</>. Duração: <@ba.vup>{duration:0}</> s."
+    },
+    "item_lbmob_1_dog_1_moss_1_1": {
+        "desc": "Use para conceder Todos os Atributos + <@ba.vup>{value:0}</>. Duração: <@ba.vup>{duration:0}</> s."
+    },
+    "item_lbmob_1_lbshamman_1_sp_1_1": {
+        "desc": "Use para a equipe inteira para restaurar <@ba.vup>{triggerheal2:0%}</> de PV Máximo por segundo e <@ba.vup>{triggerheal:0}</> de PV. Duração: <@ba.vup>{duration:0}</> s."
+    },
+    "item_lbmob_1_moss_2_bottled_1": {
+        "desc": "Use para <#ba.dispel>dissipar</> <#ba.spellinflictonchar>Inflições de Artes</> e <#ba.spellinflictonchar>Reações de Artes</> e, em seguida, restaurar <@ba.vup>{value2:0%}</> de PV Máximo + <@ba.vup>{value:0}</> de PV."
+    },
+    "item_lbshamman_1_agmelee_1_1": {
+        "desc": "Use para a equipe inteira para restaurar instantaneamente <@ba.vup>{value2:0%}</> de PV Máximo e <@ba.vup>{value:0}</> de PV."
+    },
+    "item_lbshield_1_slimeml_1_dog_1_1": {
+        "desc": "Use para conceder DNO Físico Causado + <@ba.vup>{value:0%}</>. Duração: <@ba.vup>{duration:0}</> s."
+    },
+    "item_mimicw_1_moss_1_moss_2_1": {
+        "desc": "Use para conceder ATQ + <@ba.vup>{buff_common_atk_buff_potion_1\\value:0%}</>. Duração: <@ba.vup>{buff_common_atk_buff_potion_1\\duration:0}</> s."
+    },
+    "item_monthlycard_1": {
+        "desc": "Consumível. Seu uso revela a presença de Talosita ainda não descoberta na área em questão. Só pode ser usado após todas as áreas enevoadas do mapa terem sido mapeadas. Este item funciona apenas em Wuling."
+    },
+    "item_plant_grass_powder_1": {
+        "desc": "Use para restaurar <@ba.vup>{value:0}</> de PV."
+    },
+    "item_plant_grass_powder_2": {
+        "desc": "Use para restaurar <@ba.vup>{triggerheal:0}</> de PV por segundo por <@ba.vup>{duration:0}</> s."
+    },
+    "item_plant_grass_spc_powder_1": {
+        "desc": "Use para restaurar instantaneamente <@ba.vup>{value2:0%}</> de PV Máximo e <@ba.vup>{value:0}</> de PV."
+    },
+    "item_plant_grass_spc_powder_2": {
+        "desc": "Use para restaurar <@ba.vup>{triggerheal2:0%}</> de PV Máximo por segundo e <@ba.vup>{triggerheal:0}</> de PV. Duração: <@ba.vup>{duration:0}</> s."
+    },
+    "item_plant_moss_powder_1": {
+        "desc": "Use para restaurar <@ba.vup>{value:0}</> de PV."
+    },
+    "item_plant_moss_powder_2": {
+        "desc": "Use para restaurar <@ba.vup>{triggerheal:0}</> de PV por segundo por <@ba.vup>{duration:0}</> s."
+    },
+    "item_plant_moss_spc_powder_1": {
+        "desc": "Use para restaurar instantaneamente <@ba.vup>{value2:0%}</> de PV Máximo e <@ba.vup>{value:0}</> de PV."
+    },
+    "item_plant_moss_spc_powder_2": {
+        "desc": "Use para restaurar <@ba.vup>{triggerheal2:0%}</> de PV Máximo por segundo e <@ba.vup>{triggerheal:0}</> de PV. Duração: <@ba.vup>{duration:0}</> s."
+    },
+    "item_proc_bomb_1": {
+        "desc": "Um explosivo embalado. \nPode ser usado para atacar alvos diretamente. A explosão causa DNO a todos os inimigos próximos."
+    },
+    "item_resetid_1": {
+        "desc": "Consumível. O uso revela Talosita ainda não descoberta na área atual. Só pode ser usado após todas as áreas enevoadas do mapa terem sido mapeadas. Este item funciona apenas em Wuling."
+    },
+    "item_slimeml_1_agrange_1_moss_2_1": {
+        "desc": "Use para a equipe inteira para ganhar instantaneamente <@ba.vup>{value:0%}</> de Energia Suprema."
+    },
+    "item_slimeml_1_erhound_1_agfly_1_1": {
+        "desc": "Use para <#ba.dispel>dissipar</> todas as <#ba.spellinflictonchar>Inflições de Artes</> e <#ba.spellinflictonchar>Reações de Artes</> e, em seguida, restaurar <@ba.vup>{triggerheal:0}</> de PV por segundo por <@ba.vup>{duration:0}</> s."
+    },
+    "item_slwood_1_hshog_1_1": {
+        "desc": "Use para <#ba.dispel>dissipar</> <#ba.spellinflictonchar>Inflições de Artes</> e <#ba.spellinflictonchar>Reações de Artes</> e, em seguida, restaurar <@ba.vup>{value2:0%}</> de PV Máximo + <@ba.vup>{value:0}</> de PV."
+    },
+    "item_sp_1_moss_1_agmelee_1_1": {
+        "desc": "Use para a equipe inteira para restaurar instantaneamente <@ba.vup>{value2:0%}</> de PV Máximo e <@ba.vup>{value:0}</> de PV."
+    },
+    "item_sp_2_moss_2_agrange_1_1": {
+        "desc": "Use para a equipe inteira para restaurar <@ba.vup>{triggerheal2:0%}</> de PV Máximo por segundo e <@ba.vup>{triggerheal:0}</> de PV. Duração: <@ba.vup>{duration:0}</> s."
+    },
+    "item_tundra_detector_coin_3": {
+        "desc": "Consumível. O uso revela um Aurileno ainda não descoberto na área atual. Só pode ser usado após todas as áreas enevoadas do mapa terem sido mapeadas. Este item funciona apenas em Vale IV."
+    },
+    "item_tundra_detector_trchest_3": {
+        "desc": "Consumível. O uso revela um caixote de armazenamento ainda não descoberto na área atual. Só pode ser usado após todas as áreas enevoadas do mapa terem sido mapeadas. Este item funciona apenas em Vale IV."
+    },
+    "item_wgshoal_1_grass_1_grass_2_1": {
+        "desc": "Use para conceder ATQ + <@ba.vup>{buff_common_atk_buff_potion_1\\value:0%}</> e Taxa de Críticos + <@ba.vup>{buff_common_ctr_buff_potion_1\\value:0%}</>. Duração: <@ba.vup>{buff_common_ctr_buff_potion_1\\duration:0}</> s."
+    },
+    "item_wgslime_1_hsmob_1_grass_2_1": {
+        "desc": "Use para restaurar <@ba.vup>{triggerheal2:0%}</> de PV Máximo por segundo e <@ba.vup>{triggerheal:0}</> de PV. Duração: <@ba.vup>{duration:0}</> s."
+    },
+    "item_wgslime_1_wgthorns_1_1": {
+        "desc": "Use para conceder DEF + <@ba.vup>{buff_common_def_buff_potion_1\\value:0%}</>, Redução DNO + <@ba.vup>{1-buff_common_resis_up_potion_1\\value:0%}</> para todas as formas de DNO e Bônus de Tratamento + <@ba.vup>{buff_common_healrt_buff_potion_1\\value:0%}</>. Duração: <@ba.vup>{buff_common_def_buff_potion_1\\duration:0}</> s."
+    },
+    "item_wgthorns_1_hshog_1_hsmob_1_1": {
+        "desc": "Use para conceder Redução DNO + <@ba.vup>{1-value:0%}</> para todas as formas de DNO. Duração: <@ba.vup>{duration:0}</> s."
+    },
+    "item_wuling_detector_coin_3": {
+        "desc": "Consumível. O uso revela um Aurileno ainda não descoberto na área atual. Só pode ser usado após todas as áreas enevoadas do mapa terem sido mapeadas. Este item funciona apenas em Wuling."
+    },
+    "item_wuling_detector_star": {
+        "desc": "Consumível. O uso revela Talosita ainda não descoberta na área atual. Só pode ser usado após todas as áreas enevoadas do mapa terem sido mapeadas. Este item funciona apenas em Wuling."
+    },
+    "item_wuling_detector_trchest_3": {
+        "desc": "Consumível. O uso revela um caixote de armazenamento ainda não descoberto na área atual. Só pode ser usado após todas as áreas enevoadas do mapa terem sido mapeadas. Este item funciona apenas em Wuling."
+    }
+}

@@ -159,6 +159,21 @@
     "bannerTypes": {
       "bannerHistoryGraph": "История по баннерам",
       "pieGraph": "Распределение"
+    },
+    "food": {
+      "tabs": {
+        "overview": "Обзор",
+        "comparison": "Сравнение"
+      },
+      "tactical": "Провиант",
+      "recipe": "Рецепт",
+      "openRecipe": "Открыть рецепт",
+      "table": {
+        "name": "Название",
+        "hasBuff": "Имеет эффект",
+        "y": "Да",
+        "n": "Нет"
+      }
     }
   },
   "bannerTypes": {
@@ -443,7 +458,8 @@
     "openRecipe": "Открыть рецепты",
     "leaderboard": "Лидерборд",
     "profile": "Профиль",
-    "icons": "Иконки"
+    "icons": "Иконки",
+    "food": "Провиант"
   },
   "events": {
     "type": {
@@ -608,6 +624,8 @@
     "striker": "Штурмовик"
   },
   "sort": {
+    "equipCondTitle": "Тип условия",
+    "buffTitle": "Эффект",
     "rarity": "Редкость",
     "class": "Класс",
     "element": "Элемент",
@@ -854,7 +872,8 @@
     "file4": "ФАЙЛ 4",
     "profile": "Профиль",
     "hobbies": "Хобби",
-    "costValue2": "Расход ОН"
+    "costValue2": "Расход ОН",
+    "effects": "Эффекты"
   },
   "bioValues": {
     "Unknown": "Неизвестно"
@@ -2991,5 +3010,250 @@
     "gas_env_wet": "Влажная среда",
     "gas_env_acidic": "Едкая среда",
     "gas_env_xiranite": "Ксиранитовая среда"
+  },
+  "buffNames": {
+    "buff_common_heal_potion_1": "Восст. ОЗ",
+    "buff_common_heal_potion_2": "Восст. ОЗ% + ОЗ",
+    "buff_common_heal_moss_1": "Восст. ОЗ/с",
+    "buff_common_heal_moss_2": "Восст. (ОЗ% + ОЗ)/с",
+    "buff_custom_revive_1": "Возрождение",
+    "buff_common_ultsp_potion_1": "Восст. суперэнергии",
+    "buff_common_def_buff_potion_1": "Увеличение ЗЩТ%",
+    "buff_common_def_buff_potion_2": "Увеличение ЗЩТ",
+    "buff_common_def_buff_potion_3": "Уменьшение ЗЩТ%",
+    "buff_common_resis_up_potion_1": "Снижение входящего УРН",
+    "buff_common_dmg_up_potion_1": "Увеличение УРН",
+    "buff_common_phydmg_up_potion_1": "Увеличение физ. УРН",
+    "buff_common_mainattri_up_potion_1": "Увеличение всех показателей",
+    "buff_common_atk_buff_potion_1": "Увеличение АТК%",
+    "buff_common_atk_buff_potion_2": "Увеличение АТК",
+    "buff_common_ctr_buff_potion_1": "Увеличение крит. шанса",
+    "buff_common_cdr_buff_potion_1": "Уменьшение перезарядки комбонавыков",
+    "buff_common_usprt_buff_potion_1": "Увеличение восст. суперэнергии",
+    "buff_common_healrt_buff_potion_1": "Увеличение лечения",
+    "buff_common_healrt_buff_potion_2": "Увеличение получаемого лечения",
+    "buff_common_dispel_potion": "Снятие поражений и реакций искусств"
+  },
+  "buffs": {
+    "buff_common_heal_potion_1": {
+      "value": "Мгновенное восстановление ОЗ"
+    },
+    "buff_common_heal_potion_2": {
+      "value": "Мгновенное восстановление ОЗ",
+      "value2": "Мгновенное восстановление ОЗ%"
+    },
+    "buff_common_heal_moss_1": {
+      "triggerheal": "Восстановление ОЗ/с",
+      "duration": "Длительность (с)"
+    },
+    "buff_common_heal_moss_2": {
+      "triggerheal": "Восстановление ОЗ/с",
+      "triggerheal2": "Восстановление ОЗ%/с",
+      "duration": "Длительность (с)"
+    },
+    "buff_custom_revive_1": {
+      "value": "Мгновенное восстановление ОЗ%"
+    },
+    "buff_common_ultsp_potion_1": {
+      "value": "Мгновенное восстановление суперэнергии"
+    },
+    "buff_common_def_buff_potion_1": {
+      "value": "ЗЩТ%",
+      "duration": "Длительность (с)"
+    },
+    "buff_common_def_buff_potion_2": {
+      "value": "ЗЩТ",
+      "duration": "Длительность (с)"
+    },
+    "buff_common_def_buff_potion_3": {
+      "value": "ЗЩТ%",
+      "duration": "Длительность (с)"
+    },
+    "buff_common_resis_up_potion_1": {
+      "value": "Множитель входящего УРН",
+      "duration": "Длительность (с)"
+    },
+    "buff_common_dmg_up_potion_1": {
+      "value": "Наносимый УРН",
+      "duration": "Длительность (с)"
+    },
+    "buff_common_phydmg_up_potion_1": {
+      "value": "Наносимый физический УРН",
+      "duration": "Длительность (с)"
+    },
+    "buff_common_mainattri_up_potion_1": {
+      "value": "Все показатели",
+      "duration": "Длительность (с)"
+    },
+    "buff_common_atk_buff_potion_1": {
+      "value": "АТК%",
+      "duration": "Длительность (с)"
+    },
+    "buff_common_atk_buff_potion_2": {
+      "value": "АТК",
+      "duration": "Длительность (с)"
+    },
+    "buff_common_ctr_buff_potion_1": {
+      "value": "Шанс крит. удара",
+      "duration": "Длительность (с)"
+    },
+    "buff_common_cdr_buff_potion_1": {
+      "value": "Множитель перезарядки комбонавыка",
+      "duration": "Длительность (с)"
+    },
+    "buff_common_usprt_buff_potion_1": {
+      "value": "Восстановление суперэнергии",
+      "duration": "Длительность (с)"
+    },
+    "buff_common_healrt_buff_potion_1": {
+      "value": "Лечение",
+      "duration": "Длительность (с)"
+    },
+    "buff_common_healrt_buff_potion_2": {
+      "value": "Получаемое лечение",
+      "duration": "Длительность (с)"
+    },
+    "buff_common_dispel_potion": {}
+  },
+  "buffsShort": {
+    "buff_common_heal_potion_1": {
+      "value": "Мгнов. восст. ОЗ"
+    },
+    "buff_common_heal_potion_2": {
+      "value": "Мгнов. восст. ОЗ",
+      "value2": "Мгнов. восст. ОЗ%"
+    },
+    "buff_common_heal_moss_1": {
+      "triggerheal": "Восст. ОЗ/с",
+      "duration": "Длительность (с)"
+    },
+    "buff_common_heal_moss_2": {
+      "triggerheal": "Восст. ОЗ/с",
+      "triggerheal2": "Восст. ОЗ%/с",
+      "duration": "Длительность (с)"
+    },
+    "buff_custom_revive_1": {
+      "value": "Мгнов. восст. ОЗ%"
+    },
+    "buff_common_ultsp_potion_1": {
+      "value": "Мгнов. восст. суперэнергии"
+    },
+    "buff_common_def_buff_potion_1": {
+      "value": "ЗЩТ%",
+      "duration": "Длительность (с)"
+    },
+    "buff_common_def_buff_potion_2": {
+      "value": "ЗЩТ",
+      "duration": "Длительность (с)"
+    },
+    "buff_common_def_buff_potion_3": {
+      "value": "ЗЩТ%",
+      "duration": "Длительность (с)"
+    },
+    "buff_common_resis_up_potion_1": {
+      "value": "Множ. входящего УРН",
+      "duration": "Длительность (с)"
+    },
+    "buff_common_dmg_up_potion_1": {
+      "value": "Наносимый УРН",
+      "duration": "Длительность (с)"
+    },
+    "buff_common_phydmg_up_potion_1": {
+      "value": "Наносимый физ. УРН",
+      "duration": "Длительность (с)"
+    },
+    "buff_common_mainattri_up_potion_1": {
+      "value": "Все показатели",
+      "duration": "Длительность (с)"
+    },
+    "buff_common_atk_buff_potion_1": {
+      "value": "АТК%",
+      "duration": "Длительность (с)"
+    },
+    "buff_common_atk_buff_potion_2": {
+      "value": "АТК",
+      "duration": "Длительность (с)"
+    },
+    "buff_common_ctr_buff_potion_1": {
+      "value": "Шанс крит. удара",
+      "duration": "Длительность (с)"
+    },
+    "buff_common_cdr_buff_potion_1": {
+      "value": "Множ. перезарядки комбонавыка",
+      "duration": "Длительность (с)"
+    },
+    "buff_common_usprt_buff_potion_1": {
+      "value": "Восст. суперэнергии",
+      "duration": "Длительность (с)"
+    },
+    "buff_common_healrt_buff_potion_1": {
+      "value": "Лечение",
+      "duration": "Длительность (с)"
+    },
+    "buff_common_healrt_buff_potion_2": {
+      "value": "Получаемое лечение",
+      "duration": "Длительность (с)"
+    },
+    "buff_common_dispel_potion": {}
+  },
+  "tacticalTitle": {
+    "condType": "Тип условия",
+    "castTime": "Время использования (с)",
+    "castCount": "Кол-во использований",
+    "castToMainCount": "Кол-во использований на управляемом оперативнике",
+    "castToMainCountShort": "Кол-во исп. на упр-м оперативнике",
+    "cooldown": "Перезарядка (с)",
+    "recoverTime": "Время восстановления (с)",
+    "recoverUpperCount": "Кол-во восстановленных предметов"
+  },
+  "tacticalZero": {
+    "castCount": "Неограниченно",
+    "castToMainCount": "Неограниченно",
+    "castCooldown": "Нет",
+    "recoverTime": "Нет",
+    "recoverUpperCount": "0"
+  },
+  "tacticalCondType": {
+    "null": "Нет",
+    "char_hp": "Процент от макс. ОЗ",
+    "char_down": "Смерть оперативника",
+    "arts_reaction": "Наложение реакции искусств",
+    "ult_energy": "Процент от макс. суперэнергии",
+    "damage": "Полученный урон от макс. ОЗ"
+  },
+  "tacticalCondParam": {
+    "char_hp": {
+      "param2": {
+        "lt": "Меньше чем"
+      }
+    },
+    "char_down": {},
+    "arts_reaction": {},
+    "ult_energy": {
+      "param2": {
+        "lt": "Меньше чем"
+      }
+    },
+    "damage": {
+      "param1": {
+        "any": "Любой"
+      }
+    }
+  },
+  "tacticalCondParamTitle": {
+    "char_hp": {
+      "param1": "% от макс. ОЗ",
+      "param2": "Параметр условия"
+    },
+    "char_down": {},
+    "arts_reaction": {},
+    "ult_energy": {
+      "param1": "% от макс. суперэнергии",
+      "param2": "Параметр условия"
+    },
+    "damage": {
+      "param1": "Тип урона",
+      "param2": "% от макс. ОЗ"
+    }
   }
 }

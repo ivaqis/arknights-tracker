@@ -1,0 +1,257 @@
+{
+    "item_agfly_1_agmelee_1_moss_2_1": {
+        "desc": "Usa questo oggetto per ripristinare un <@ba.vup>{triggerheal2:0%}</> dei PS massimi al secondo più <@ba.vup>{triggerheal:0}</> PS. Durata: <@ba.vup>{duration:0}</> s."
+    },
+    "item_agmelee_1_moss_1_lbmob_1_1": {
+        "desc": "Usa questo oggetto per ripristinare istantaneamente un <@ba.vup>{value2:0%}</> dei PS massimi più <@ba.vup>{value:0}</> PS."
+    },
+    "item_agmelee_1_sp_2_slimeml_1_1": {
+        "desc": "Usa questo oggetto per conferire +<@ba.vup>{value:0%}</> di DIF. Durata: <@ba.vup>{duration:0}</> s."
+    },
+    "item_agrange_1_erhound_1_sp_1_1": {
+        "desc": "Usa questo oggetto per conferire +<@ba.vup>{value:0%}</> di ATT. Durata: <@ba.vup>{duration:0}</> s."
+    },
+    "item_agrange_1_lbshamman_bottled_1": {
+        "desc": "Usa questo oggetto per conferire +<@ba.vup>{1-value:0%}</> di riduzione di tutti i danni subiti. Durata: <@ba.vup>{duration:0}</> s."
+    },
+    "item_agrange_1_moss_2_lbmob_1_1": {
+        "desc": "Usa questo oggetto per conferire +<@ba.vup>{buff_common_def_buff_potion_1\\value:0%}</> di DIF. Durata: <@ba.vup>{buff_common_def_buff_potion_1\\duration:0}</> s."
+    },
+    "item_bottled_flower1spc_1": {
+        "desc": "Usa questo oggetto per ripristinare istantaneamente un <@ba.vup>{value2:0%}</> dei PS massimi più <@ba.vup>{value:0}</> PS."
+    },
+    "item_bottled_flower1spc_2": {
+        "desc": "Usa questo oggetto per ripristinare istantaneamente un <@ba.vup>{value2:0%}</> dei PS massimi più <@ba.vup>{value:0}</> PS."
+    },
+    "item_bottled_flower1spc_3": {
+        "desc": "Usa questo oggetto per ripristinare istantaneamente un <@ba.vup>{value2:0%}</> dei PS massimi più <@ba.vup>{value:0}</> PS."
+    },
+    "item_bottled_flower2spc_1": {
+        "desc": "Usa questo oggetto per ripristinare un <@ba.vup>{triggerheal2:0%}</> dei PS massimi al secondo più <@ba.vup>{triggerheal:0}</> PS. Durata: <@ba.vup>{duration:0}</> s."
+    },
+    "item_bottled_flower2spc_2": {
+        "desc": "Usa questo oggetto per ripristinare un <@ba.vup>{triggerheal2:0%}</> dei PS massimi al secondo più <@ba.vup>{triggerheal:0}</> PS. Durata: <@ba.vup>{duration:0}</> s."
+    },
+    "item_bottled_flower2spc_3": {
+        "desc": "Usa questo oggetto per ripristinare un <@ba.vup>{triggerheal2:0%}</> dei PS massimi al secondo più <@ba.vup>{triggerheal:0}</> PS. Durata: <@ba.vup>{duration:0}</> s."
+    },
+    "item_bottled_food_1": {
+        "desc": "Usa questo oggetto per ripristinare <@ba.vup>{triggerheal:0}</> PS al secondo per <@ba.vup>{duration:0}</> s."
+    },
+    "item_bottled_food_2": {
+        "desc": "Usa questo oggetto per ripristinare <@ba.vup>{triggerheal:0}</> PS al secondo per <@ba.vup>{duration:0}</> s."
+    },
+    "item_bottled_food_3": {
+        "desc": "Usa questo oggetto per ripristinare <@ba.vup>{triggerheal:0}</> PS al secondo per <@ba.vup>{duration:0}</> s."
+    },
+    "item_bottled_food_4": {
+        "desc": "Usa questo oggetto per ripristinare istantaneamente <@ba.vup>{value:0}</> PS."
+    },
+    "item_bottled_food_5": {
+        "desc": "Usa questo oggetto per ripristinare istantaneamente <@ba.vup>{value:0}</> PS."
+    },
+    "item_bottled_grass1spc_1": {
+        "desc": "Usa questo oggetto per ripristinare istantaneamente un <@ba.vup>{value2:0%}</> dei PS massimi più <@ba.vup>{value:0}</> PS."
+    },
+    "item_bottled_grass1spc_2": {
+        "desc": "Usa questo oggetto per ripristinare istantaneamente un <@ba.vup>{value2:0%}</> dei PS massimi più <@ba.vup>{value:0}</> PS."
+    },
+    "item_bottled_grass2spc_1": {
+        "desc": "Usa questo oggetto per ripristinare un <@ba.vup>{triggerheal2:0%}</> dei PS massimi al secondo più <@ba.vup>{triggerheal:0}</> PS. Durata: <@ba.vup>{duration:0}</> s."
+    },
+    "item_bottled_grass2spc_2": {
+        "desc": "Usa questo oggetto per ripristinare un <@ba.vup>{triggerheal2:0%}</> dei PS massimi al secondo più <@ba.vup>{triggerheal:0}</> PS. Durata: <@ba.vup>{duration:0}</> s."
+    },
+    "item_bottled_insec1_1": {
+        "desc": "Usa questo oggetto per resuscitare istantaneamente un membro della squadra privo di sensi con un <@ba.vup>10%</> dei PS massimi."
+    },
+    "item_bottled_insec1_2": {
+        "desc": "Usa questo oggetto per resuscitare istantaneamente un membro della squadra privo di sensi con un <@ba.vup>30%</> dei PS massimi."
+    },
+    "item_bottled_insec2_1": {
+        "desc": "Usa questo oggetto per conferire +<@ba.vup>{buff_common_dmg_up_potion_1\\value:0%}</> di danni inflitti di qualsiasi tipo. Durata: <@ba.vup>{buff_common_dmg_up_potion_1\\duration:0}</> s."
+    },
+    "item_bottled_insec2_2": {
+        "desc": "Usa questo oggetto per conferire +<@ba.vup>{buff_common_dmg_up_potion_1\\value:0%}</> di danni inflitti di qualsiasi tipo. Durata: <@ba.vup>{buff_common_dmg_up_potion_1\\duration:0}</> s."
+    },
+    "item_bottled_moss_1_2_1": {
+        "desc": "Usa questo oggetto per conferire +<@ba.vup>{value:0%}</> di incremento dell'energia suprema. Durata: <@ba.vup>{duration:0}</> s."
+    },
+    "item_bottled_moss_2_animal_1": {
+        "desc": "Usa questo oggetto per ripristinare istantaneamente un <@ba.vup>{value2:0%}</> dei PS massimi più <@ba.vup>{value:0}</> PS."
+    },
+    "item_bottled_rec_hp_1": {
+        "desc": "Usa questo oggetto per ripristinare istantaneamente <@ba.vup>{value:0}</> PS."
+    },
+    "item_bottled_rec_hp_2": {
+        "desc": "Usa questo oggetto per ripristinare istantaneamente <@ba.vup>{value:0}</> PS."
+    },
+    "item_bottled_rec_hp_3": {
+        "desc": "Usa questo oggetto per ripristinare istantaneamente <@ba.vup>{value:0}</> PS."
+    },
+    "item_bottled_rec_hp_4": {
+        "desc": "Usa questo oggetto per ripristinare <@ba.vup>{triggerheal:0}</> PS al secondo per <@ba.vup>{duration:0}</> s."
+    },
+    "item_bottled_rec_hp_5": {
+        "desc": "Usa questo oggetto per ripristinare <@ba.vup>{triggerheal:0}</> PS al secondo per <@ba.vup>{duration:0}</> s."
+    },
+    "item_cbp_voucher_originium": {
+        "desc": "Questo oggetto consumabile rivela la presenza di talosite nell'area attuale. È utilizzabile solo dopo aver sbloccato tutte le aree della mappa coperte dalla nebbia ed è efficace solo a Wuling."
+    },
+    "item_cbp_voucher_pay": {
+        "desc": "Questo oggetto consumabile rivela la presenza di talosite nell'area attuale. È utilizzabile solo dopo aver sbloccato tutte le aree della mappa coperte dalla nebbia ed è efficace solo a Wuling."
+    },
+    "item_corp1_animal_1": {
+        "desc": "Usa questo oggetto per ripristinare istantaneamente un <@ba.vup>{value2:0%}</> dei PS massimi più <@ba.vup>{value:0}</> PS."
+    },
+    "item_corp2_animal_1": {
+        "desc": "Usa questo oggetto per <#ba.dispel>dissolvere</> le <#ba.spellinflictonchar>Afflizioni da Arti</> e le <#ba.spellinflictonchar>Reazioni delle Arti</>, ripristinando istantaneamente un <@ba.vup>{value2:0%}</> dei PS massimi più <@ba.vup>{value:0}</> PS."
+    },
+    "item_corp3_animal_1": {
+        "desc": "Usa questo oggetto per conferire +<@ba.vup>{buff_common_atk_buff_potion_2\\value:0}</> di ATT e +<@ba.vup>{buff_common_ctr_buff_potion_1\\value:0%}</> di probabilità di critico. Durata: <@ba.vup>{buff_common_atk_buff_potion_2\\duration:0}</> s."
+    },
+    "item_corp3_grass1_1": {
+        "desc": "Usa questo oggetto per conferire +<@ba.vup>{buff_common_ctr_buff_potion_1\\value:0%}</> di probabilità di critico e +<@ba.vup>{buff_common_dmg_up_potion_1\\value:0%}</> a tutti i danni. Durata: <@ba.vup>{buff_common_ctr_buff_potion_1\\duration:0}</> s."
+    },
+    "item_corp4_animal_1": {
+        "desc": "Usa questo oggetto per conferire +<@ba.vup>{value:0%}</> di DIF. Durata: <@ba.vup>{duration:0}</> s."
+    },
+    "item_corp4_grass2_1": {
+        "desc": "Usa questo oggetto per ripristinare istantaneamente un <@ba.vup>{value2:0%}</> dei PS massimi più <@ba.vup>{value:0}</> PS."
+    },
+    "item_corp4_spc": {
+        "desc": "Usa questo oggetto per ricevere istantaneamente un <@ba.vup>{value:0%}</> di energia suprema."
+    },
+    "item_dog_1_slimeml_1_1": {
+        "desc": "Usa questo oggetto per ricevere istantaneamente un <@ba.vup>{value:0%}</> di energia suprema."
+    },
+    "item_dog_hsmob_corp_1": {
+        "desc": "Usa questo oggetto per tutta la squadra per ripristinare istantaneamente un <@ba.vup>{value2:0%}</> dei PS massimi più <@ba.vup>{value:0}</> PS."
+    },
+    "item_erhound_1_agmelee_1_moss_1_1": {
+        "desc": "Usa questo oggetto per conferire +<@ba.vup>{1-value:0%}</> di riduzione di tutti i danni subiti. Durata: <@ba.vup>{duration:0}</> s."
+    },
+    "item_ethillu_1_wgslime_1_wgthorns_1_1": {
+        "desc": "Usa questo oggetto per ridurre il tempo di recupero delle abilità combo di un <@ba.vup>{1-value:0%}</>. Durata: <@ba.vup>{duration:0}</> s."
+    },
+    "item_firebat_1_agrange_1_1": {
+        "desc": "Usa questo oggetto per conferire +<@ba.vup>{buff_common_atk_buff_potion_1\\value:0%}</> di ATT, +<@ba.vup>{buff_common_ctr_buff_potion_1\\value:0%}</> di probabilità di critico e +<@ba.vup>{buff_common_dmg_up_potion_1\\value:0%}</> a tutti i danni. Durata: <@ba.vup>{buff_common_atk_buff_potion_1\\duration:0}</> s."
+    },
+    "item_hscrane_1_hsmob_1_grass_1_1": {
+        "desc": "Usa questo oggetto per ripristinare istantaneamente un <@ba.vup>{value2:0%}</> dei PS massimi più <@ba.vup>{value:0}</> PS."
+    },
+    "item_hsfly_1_slimeml_1_hsmob_1_1": {
+        "desc": "Usa questo oggetto per conferire +<@ba.vup>{value:0%}</> di probabilità di critico. Durata: <@ba.vup>{duration:0}</> s."
+    },
+    "item_hshog_1_hsmob_1_slimeml_1_1": {
+        "desc": "Usa questo oggetto per conferire +<@ba.vup>{buff_common_def_buff_potion_2\\value:0}</> DIF e +<@ba.vup>{1-buff_common_resis_up_potion_1\\value:0%}</> di riduzione di tutti i danni subiti. Durata: <@ba.vup>{buff_common_resis_up_potion_1\\duration:0}</> s."
+    },
+    "item_hsmob_1_dog_1_1": {
+        "desc": "Usa questo oggetto per conferire +<@ba.vup>{buff_common_usprt_buff_potion_1\\value:0%}</> di velocità di incremento dell'energia suprema e +<@ba.vup>{buff_common_healrt_buff_potion_2\\value:0%}</> di bonus Cura ricevuta. Durata: <@ba.vup>{buff_common_usprt_buff_potion_1\\duration:0}</> s."
+    },
+    "item_hsmob_1_grass_2_1": {
+        "desc": "Usa questo oggetto per ripristinare un <@ba.vup>{triggerheal2:0%}</> dei PS massimi al secondo più <@ba.vup>{triggerheal:0}</> PS. Durata: <@ba.vup>{duration:0}</> s."
+    },
+    "item_jzmonk_1_hsmob_1_1": {
+        "desc": "Usa questo oggetto per conferire +<@ba.vup>{buff_common_ctr_buff_potion_1\\value:0%}</> di probabilità di critico. Tuttavia, la difesa diminuisce di un <@ba.vup>{-buff_common_def_buff_potion_3\\value:0%}</>. Durata: <@ba.vup>{buff_common_ctr_buff_potion_1\\duration:0}</> s."
+    },
+    "item_klbuds_1_hsfly_1_1": {
+        "desc": "Usa questo oggetto per conferire <@ba.vup>{buff_common_def_buff_potion_1\\value:0%}</> DIF e <@ba.vup>{1-buff_common_resis_up_potion_1\\value:0%}</> di riduzione di tutti i danni subiti. Durata: <@ba.vup>{buff_common_def_buff_potion_1\\duration:0}</> s."
+    },
+    "item_klcreatures_1_wgthorns_1_1": {
+        "desc": "Usa questo oggetto per conferire +<@ba.vup>{value:0%}</> di velocità di incremento dell'energia suprema. Durata: <@ba.vup>{duration:0}</> s."
+    },
+    "item_lbmob_1_dog_1_moss_1_1": {
+        "desc": "Usa questo oggetto per conferire +<@ba.vup>{value:0}</> a tutti gli attributi. Durata: <@ba.vup>{duration:0}</> s."
+    },
+    "item_lbmob_1_lbshamman_1_sp_1_1": {
+        "desc": "Usa questo oggetto per tutta la squadra per ripristinare un <@ba.vup>{triggerheal2:0%}</> dei PS massimi al secondo più <@ba.vup>{triggerheal:0}</> PS. Durata: <@ba.vup>{duration:0}</> s."
+    },
+    "item_lbmob_1_moss_2_bottled_1": {
+        "desc": "Usa questo oggetto per <#ba.dispel>dissolvere</> le <#ba.spellinflictonchar>Afflizioni da Arti</> e le <#ba.spellinflictonchar>Reazioni delle Arti</>, ripristinando istantaneamente un <@ba.vup>{value2:0%}</> dei PS massimi più <@ba.vup>{value:0}</> PS."
+    },
+    "item_lbshamman_1_agmelee_1_1": {
+        "desc": "Usa questo oggetto per tutta la squadra per ripristinare istantaneamente un <@ba.vup>{value2:0%}</> dei PS massimi più <@ba.vup>{value:0}</> PS."
+    },
+    "item_lbshield_1_slimeml_1_dog_1_1": {
+        "desc": "Usa questo oggetto per conferire +<@ba.vup>{value:0%}</> di danni fisici inflitti. Durata: <@ba.vup>{duration:0}</> s."
+    },
+    "item_mimicw_1_moss_1_moss_2_1": {
+        "desc": "Usa questo oggetto per conferire +<@ba.vup>{buff_common_atk_buff_potion_1\\value:0%}</> di ATT. Durata: <@ba.vup>{buff_common_atk_buff_potion_1\\duration:0}</> s."
+    },
+    "item_monthlycard_1": {
+        "desc": "Questo oggetto consumabile rivela la presenza di talosite nell'area attuale. È utilizzabile solo dopo aver sbloccato tutte le aree della mappa coperte dalla nebbia ed è efficace solo a Wuling."
+    },
+    "item_plant_grass_powder_1": {
+        "desc": "Usa questo oggetto per ripristinare istantaneamente <@ba.vup>{value:0}</> PS."
+    },
+    "item_plant_grass_powder_2": {
+        "desc": "Usa questo oggetto per ripristinare <@ba.vup>{triggerheal:0}</> PS al secondo per <@ba.vup>{duration:0}</> s."
+    },
+    "item_plant_grass_spc_powder_1": {
+        "desc": "Usa questo oggetto per ripristinare istantaneamente un <@ba.vup>{value2:0%}</> dei PS massimi più <@ba.vup>{value:0}</> PS."
+    },
+    "item_plant_grass_spc_powder_2": {
+        "desc": "Usa questo oggetto per ripristinare un <@ba.vup>{triggerheal2:0%}</> dei PS massimi al secondo più <@ba.vup>{triggerheal:0}</> PS. Durata: <@ba.vup>{duration:0}</> s."
+    },
+    "item_plant_moss_powder_1": {
+        "desc": "Usa questo oggetto per ripristinare istantaneamente <@ba.vup>{value:0}</> PS."
+    },
+    "item_plant_moss_powder_2": {
+        "desc": "Usa questo oggetto per ripristinare <@ba.vup>{triggerheal:0}</> PS al secondo per <@ba.vup>{duration:0}</> s."
+    },
+    "item_plant_moss_spc_powder_1": {
+        "desc": "Usa questo oggetto per ripristinare istantaneamente un <@ba.vup>{value2:0%}</> dei PS massimi più <@ba.vup>{value:0}</> PS."
+    },
+    "item_plant_moss_spc_powder_2": {
+        "desc": "Usa questo oggetto per ripristinare un <@ba.vup>{triggerheal2:0%}</> dei PS massimi al secondo più <@ba.vup>{triggerheal:0}</> PS. Durata: <@ba.vup>{duration:0}</> s."
+    },
+    "item_proc_bomb_1": {
+        "desc": "Un esplosivo confezionato. \nUsalo per attaccare direttamente un bersaglio. L'esplosione che ne consegue infligge danni a tutti i nemici nelle vicinanze."
+    },
+    "item_resetid_1": {
+        "desc": "Questo oggetto consumabile rivela la presenza di talosite nell'area attuale. È utilizzabile solo dopo aver sbloccato tutte le aree della mappa coperte dalla nebbia ed è efficace solo a Wuling."
+    },
+    "item_slimeml_1_agrange_1_moss_2_1": {
+        "desc": "Usa questo oggetto per tutta la squadra per ricevere istantaneamente un <@ba.vup>{value:0%}</> di energia suprema."
+    },
+    "item_slimeml_1_erhound_1_agfly_1_1": {
+        "desc": "Usa questo oggetto per <#ba.dispel>dissolvere</> le <#ba.spellinflictonchar>Afflizioni da Arti</> e le <#ba.spellinflictonchar>Reazioni delle Arti</>, ripristinando <@ba.vup>{triggerheal:0}</> PS al secondo per <@ba.vup>{duration:0}</> s."
+    },
+    "item_slwood_1_hshog_1_1": {
+        "desc": "Usa questo oggetto per <#ba.dispel>dissolvere</> le <#ba.spellinflictonchar>Afflizioni da Arti</> e le <#ba.spellinflictonchar>Reazioni delle Arti</>, ripristinando istantaneamente un <@ba.vup>{value2:0%}</> dei PS massimi più <@ba.vup>{value:0}</> PS."
+    },
+    "item_sp_1_moss_1_agmelee_1_1": {
+        "desc": "Usa questo oggetto per tutta la squadra per ripristinare istantaneamente un <@ba.vup>{value2:0%}</> dei PS massimi più <@ba.vup>{value:0}</> PS."
+    },
+    "item_sp_2_moss_2_agrange_1_1": {
+        "desc": "Usa questo oggetto per tutta la squadra per ripristinare un <@ba.vup>{triggerheal2:0%}</> dei PS massimi al secondo più <@ba.vup>{triggerheal:0}</> PS. Durata: <@ba.vup>{duration:0}</> s."
+    },
+    "item_tundra_detector_coin_3": {
+        "desc": "Questo oggetto consumabile rivela la presenza di Aurylene nell'area attuale. È utilizzabile solo dopo aver sbloccato tutte le aree della mappa coperte dalla nebbia ed è efficace solo a Valle IV."
+    },
+    "item_tundra_detector_trchest_3": {
+        "desc": "Questo oggetto consumabile rivela la presenza di una cassa di contenimento nell'area attuale. È utilizzabile solo dopo aver sbloccato tutte le aree della mappa coperte dalla nebbia ed è efficace solo a Valle IV."
+    },
+    "item_wgshoal_1_grass_1_grass_2_1": {
+        "desc": "Usa questo oggetto per conferire +<@ba.vup>{buff_common_atk_buff_potion_1\\value:0%}</> di ATT e +<@ba.vup>{buff_common_ctr_buff_potion_1\\value:0%}</> di probabilità di critico. Durata: <@ba.vup>{buff_common_ctr_buff_potion_1\\duration:0}</> s."
+    },
+    "item_wgslime_1_hsmob_1_grass_2_1": {
+        "desc": "Usa questo oggetto per ripristinare un <@ba.vup>{triggerheal2:0%}</> dei PS massimi al secondo più <@ba.vup>{triggerheal:0}</> PS. Durata: <@ba.vup>{duration:0}</> s."
+    },
+    "item_wgslime_1_wgthorns_1_1": {
+        "desc": "Usa questo oggetto per conferire +<@ba.vup>{buff_common_def_buff_potion_1\\value:0%}</> di DIF, +<@ba.vup>{1-buff_common_resis_up_potion_1\\value:0%}</> di riduzione di tutti i danni subiti e +<@ba.vup>{buff_common_healrt_buff_potion_1\\value:0%}</> di bonus Cura. Durata: <@ba.vup>{buff_common_def_buff_potion_1\\duration:0}</> s."
+    },
+    "item_wgthorns_1_hshog_1_hsmob_1_1": {
+        "desc": "Usa questo oggetto per conferire +<@ba.vup>{1-value:0%}</> di riduzione di tutti i danni subiti. Durata: <@ba.vup>{duration:0}</> s."
+    },
+    "item_wuling_detector_coin_3": {
+        "desc": "Questo oggetto consumabile rivela la presenza di Aurylene nell'area attuale. È utilizzabile solo dopo aver sbloccato tutte le aree della mappa coperte dalla nebbia ed è efficace solo a Wuling."
+    },
+    "item_wuling_detector_star": {
+        "desc": "Questo oggetto consumabile rivela la presenza di talosite nell'area attuale. È utilizzabile solo dopo aver sbloccato tutte le aree della mappa coperte dalla nebbia ed è efficace solo a Wuling."
+    },
+    "item_wuling_detector_trchest_3": {
+        "desc": "Questo oggetto consumabile rivela la presenza di una cassa di contenimento nell'area attuale. È utilizzabile solo dopo aver sbloccato tutte le aree della mappa coperte dalla nebbia ed è efficace solo a Wuling."
+    }
+}

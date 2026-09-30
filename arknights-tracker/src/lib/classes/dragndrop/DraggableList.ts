@@ -82,6 +82,6 @@ export class DraggableList<TItem extends DraggableItem = DraggableItem> implemen
             return -1;
         }
 
-        return this._itemList.indexOf(item);
+        return this._itemList.findIndex(i => String(i) === String(item));
     }
 }

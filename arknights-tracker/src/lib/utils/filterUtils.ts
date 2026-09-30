@@ -6,6 +6,14 @@ export function filterCheck<T>(filterParamSet: ReadonlySet<T> | null | undefined
     return filterParamSet.has(value);
 }
 
+export function filterCheckMany<T>(filterParamSet: ReadonlySet<T> | null | undefined, values: readonly T[]): boolean {
+    if (!filterParamSet || filterParamSet.size === 0) {
+        return true;
+    }
+
+    return values.some(value => filterParamSet.has(value));
+}
+
 export function filterCheckLowerCase<T extends string>(filterParamSet: ReadonlySet<T> | null | undefined, value: T): boolean {
     if (!filterParamSet || filterParamSet.size === 0) {
         return true;

@@ -1,0 +1,202 @@
+{
+    "item_agfly_1_agmelee_1_moss_2_1": {
+        "desc": "Once equipped, item is automatically used on any operator in the team who falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n - <@tips.purple>Can support the controlled operator (no limit)</>\n - <@tips.orange>Uses are restored after depletion</>",
+        "extraDesc": "Once equipped, item is automatically used on any operator in the team who falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n<@tips.purple>Can support the controlled operator (no limit)</>: There is no limit to the number of times this item can be used to support the controlled operator.\n<@tips.orange>Uses are restored after depletion</>: When uses are depleted in battle, <@ba.vup>1</> more use becomes available after a while."
+    },
+    "item_agmelee_1_moss_1_lbmob_1_1": {
+        "desc": "Once equipped, item is automatically used on any operator in the team who falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n - <@tips.purple>Can support the controlled operator (no limit)</>\n - <@tips.orange>Uses are restored after depletion</>",
+        "extraDesc": "Once equipped, item is automatically used on any operator in the team who falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n<@tips.purple>Can support the controlled operator (no limit)</>: There is no limit to the number of times this item can be used to support the controlled operator.\n<@tips.orange>Uses are restored after depletion</>: When uses are depleted in battle, <@ba.vup>1</> more use becomes available after a while."
+    },
+    "item_bottled_flower1spc_1": {
+        "desc": "Once equipped, item is automatically used when the holder falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n - <@tips.purple>Can support the controlled operator (only once)</>\n - <@tips.orange>Uses are restored after depletion</>",
+        "extraDesc": "Once equipped, item is automatically used when the holder falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n<@tips.purple>Can support the controlled operator (only once)</>: For only <@ba.vup>1</> time per battle, the item is automatically used on the controlled operator when they fall below <@ba.vup>{param1:0%}</> HP.\n<@tips.orange>Uses are restored after depletion</>: When uses are depleted in battle, <@ba.vup>1</> more use becomes available after a while."
+    },
+    "item_bottled_flower1spc_2": {
+        "desc": "Once equipped, item is automatically used when the holder falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n - <@tips.purple>Can support the controlled operator (only once)</>\n - <@tips.orange>Uses are restored after depletion</>",
+        "extraDesc": "Once equipped, item is automatically used when the holder falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n<@tips.purple>Can support the controlled operator (only once)</>: For only <@ba.vup>1</> time per battle, the item is automatically used on the controlled operator when they fall below <@ba.vup>{param1:0%}</> HP.\n<@tips.orange>Uses are restored after depletion</>: When uses are depleted in battle, <@ba.vup>1</> more use becomes available after a while."
+    },
+    "item_bottled_flower1spc_3": {
+        "desc": "Once equipped, item is automatically used when the holder falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n - <@tips.purple>Can support the controlled operator (only once)</>\n - <@tips.orange>Uses are restored after depletion</>",
+        "extraDesc": "Once equipped, item is automatically used when the holder falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n<@tips.purple>Can support the controlled operator (only once)</>: For only <@ba.vup>1</> time per battle, the item is automatically used on the controlled operator when they fall below <@ba.vup>{param1:0%}</> HP.\n<@tips.orange>Uses are restored after depletion</>: When uses are depleted in battle, <@ba.vup>1</> more use becomes available after a while."
+    },
+    "item_bottled_flower2spc_1": {
+        "desc": "Once equipped, item is automatically used on any operator in the team who falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n - <@tips.purple>Can support the controlled operator (no limit)</>\n - <@tips.orange>Uses are restored after depletion</>",
+        "extraDesc": "Once equipped, item is automatically used on any operator in the team who falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n<@tips.purple>Can support the controlled operator (no limit)</>: There is no limit to the number of times this item can be used to support the controlled operator.\n<@tips.orange>Uses are restored after depletion</>: When uses are depleted in battle, <@ba.vup>1</> more use becomes available after a while."
+    },
+    "item_bottled_flower2spc_2": {
+        "desc": "Once equipped, item is automatically used on any operator in the team who falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n - <@tips.purple>Can support the controlled operator (no limit)</>\n - <@tips.orange>Uses are restored after depletion</>",
+        "extraDesc": "Once equipped, item is automatically used on any operator in the team who falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n<@tips.purple>Can support the controlled operator (no limit)</>: There is no limit to the number of times this item can be used to support the controlled operator.\n<@tips.orange>Uses are restored after depletion</>: When uses are depleted in battle, <@ba.vup>1</> more use becomes available after a while."
+    },
+    "item_bottled_flower2spc_3": {
+        "desc": "Once equipped, item is automatically used on any operator in the team who falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n - <@tips.purple>Can support the controlled operator (no limit)</>\n - <@tips.orange>Uses are restored after depletion</>",
+        "extraDesc": "Once equipped, item is automatically used on any operator in the team who falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n<@tips.purple>Can support the controlled operator (no limit)</>: There is no limit to the number of times this item can be used to support the controlled operator.\n<@tips.orange>Uses are restored after depletion</>: When uses are depleted in battle, <@ba.vup>1</> more use becomes available after a while."
+    },
+    "item_bottled_food_1": {
+        "desc": "Once equipped, item is automatically used on any operator in the team who falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n - <@tips.purple>Can support the controlled operator (no limit)</>\n - <@tips.orange>Uses are restored after depletion</>",
+        "extraDesc": "Once equipped, item is automatically used on any operator in the team who falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n<@tips.purple>Can support the controlled operator (no limit)</>: There is no limit to the number of times this item can be used to support the controlled operator.\n<@tips.orange>Uses are restored after depletion</>: When uses are depleted in battle, <@ba.vup>1</> more use becomes available after a while."
+    },
+    "item_bottled_food_2": {
+        "desc": "Once equipped, item is automatically used on any operator in the team who falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n - <@tips.purple>Can support the controlled operator (no limit)</>\n - <@tips.orange>Uses are restored after depletion</>",
+        "extraDesc": "Once equipped, item is automatically used on any operator in the team who falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n<@tips.purple>Can support the controlled operator (no limit)</>: There is no limit to the number of times this item can be used to support the controlled operator.\n<@tips.orange>Uses are restored after depletion</>: When uses are depleted in battle, <@ba.vup>1</> more use becomes available after a while."
+    },
+    "item_bottled_food_3": {
+        "desc": "Once equipped, item is automatically used on any operator in the team who falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n - <@tips.purple>Can support the controlled operator (no limit)</>\n - <@tips.orange>Uses are restored after depletion</>",
+        "extraDesc": "Once equipped, item is automatically used on any operator in the team who falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n<@tips.purple>Can support the controlled operator (no limit)</>: There is no limit to the number of times this item can be used to support the controlled operator.\n<@tips.orange>Uses are restored after depletion</>: When uses are depleted in battle, <@ba.vup>1</> more use becomes available after a while."
+    },
+    "item_bottled_food_4": {
+        "desc": "Once equipped, item is automatically used when the holder falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n - <@tips.purple>Can support the controlled operator (only once)</>\n - <@tips.orange>Uses are restored after depletion</>",
+        "extraDesc": "Once equipped, item is automatically used when the holder falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n<@tips.purple>Can support the controlled operator (only once)</>: For only <@ba.vup>1</> time per battle, the item is automatically used on the controlled operator when they fall below <@ba.vup>{param1:0%}</> HP.\n<@tips.orange>Uses are restored after depletion</>: When uses are depleted in battle, <@ba.vup>1</> more use becomes available after a while."
+    },
+    "item_bottled_food_5": {
+        "desc": "Once equipped, item is automatically used when the holder falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n - <@tips.purple>Can support the controlled operator (only once)</>\n - <@tips.orange>Uses are restored after depletion</>",
+        "extraDesc": "Once equipped, item is automatically used when the holder falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n<@tips.purple>Can support the controlled operator (only once)</>: For only <@ba.vup>1</> time per battle, the item is automatically used on the controlled operator when they fall below <@ba.vup>{param1:0%}</> HP.\n<@tips.orange>Uses are restored after depletion</>: When uses are depleted in battle, <@ba.vup>1</> more use becomes available after a while."
+    },
+    "item_bottled_grass1spc_1": {
+        "desc": "Once equipped, item is automatically used when the holder falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n - <@tips.purple>Can support the controlled operator (only once)</>\n - <@tips.orange>Uses are restored after depletion</>",
+        "extraDesc": "Once equipped, item is automatically used when the holder falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n<@tips.purple>Can support the controlled operator (only once)</>: For only <@ba.vup>1</> time per battle, the item is automatically used on the controlled operator when they fall below <@ba.vup>{param1:0%}</> HP.\n<@tips.orange>Uses are restored after depletion</>: When uses are depleted in battle, <@ba.vup>1</> more use becomes available after a while."
+    },
+    "item_bottled_grass1spc_2": {
+        "desc": "Once equipped, item is automatically used when the holder falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n - <@tips.purple>Can support the controlled operator (only once)</>\n - <@tips.orange>Uses are restored after depletion</>",
+        "extraDesc": "Once equipped, item is automatically used when the holder falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n<@tips.purple>Can support the controlled operator (only once)</>: For only <@ba.vup>1</> time per battle, the item is automatically used on the controlled operator when they fall below <@ba.vup>{param1:0%}</> HP.\n<@tips.orange>Uses are restored after depletion</>: When uses are depleted in battle, <@ba.vup>1</> more use becomes available after a while."
+    },
+    "item_bottled_grass2spc_1": {
+        "desc": "Once equipped, item is automatically used on any operator in the team who falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n - <@tips.purple>Can support the controlled operator (no limit)</>\n - <@tips.orange>Uses are restored after depletion</>",
+        "extraDesc": "Once equipped, item is automatically used on any operator in the team who falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n<@tips.purple>Can support the controlled operator (no limit)</>: There is no limit to the number of times this item can be used to support the controlled operator.\n<@tips.orange>Uses are restored after depletion</>: When uses are depleted in battle, <@ba.vup>1</> more use becomes available after a while."
+    },
+    "item_bottled_grass2spc_2": {
+        "desc": "Once equipped, item is automatically used on any operator in the team who falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n - <@tips.purple>Can support the controlled operator (no limit)</>\n - <@tips.orange>Uses are restored after depletion</>",
+        "extraDesc": "Once equipped, item is automatically used on any operator in the team who falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n<@tips.purple>Can support the controlled operator (no limit)</>: There is no limit to the number of times this item can be used to support the controlled operator.\n<@tips.orange>Uses are restored after depletion</>: When uses are depleted in battle, <@ba.vup>1</> more use becomes available after a while."
+    },
+    "item_bottled_insec1_1": {
+        "desc": "Once equipped, item is automatically used on any operator when the said operator can no longer fight. Max uses per battle: <@ba.vup>{count:0}</>.",
+        "extraDesc": "Once equipped, item is automatically used on any operator when the said operator can no longer fight. Max uses per battle: <@ba.vup>{count:0}</>."
+    },
+    "item_bottled_insec1_2": {
+        "desc": "Once equipped, item is automatically used on any operator when the said operator can no longer fight. Max uses per battle: <@ba.vup>{count:0}</>.",
+        "extraDesc": "Once equipped, item is automatically used on any operator when the said operator can no longer fight. Max uses per battle: <@ba.vup>{count:0}</>."
+    },
+    "item_bottled_moss_2_animal_1": {
+        "desc": "Once equipped, item is automatically used when the holder falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n - <@tips.purple>Can support the controlled operator (only once)</>\n - <@tips.orange>Uses are restored after depletion</>",
+        "extraDesc": "Once equipped, item is automatically used when the holder falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n<@tips.purple>Can support the controlled operator (only once)</>: For only <@ba.vup>1</> time per battle, the item is automatically used on the controlled operator when they fall below <@ba.vup>{param1:0%}</> HP.\n<@tips.orange>Uses are restored after depletion</>: When uses are depleted in battle, <@ba.vup>1</> more use becomes available after a while."
+    },
+    "item_bottled_rec_hp_1": {
+        "desc": "Once equipped, item is automatically used when the holder falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n - <@tips.purple>Can support the controlled operator (only once)</>\n - <@tips.orange>Uses are restored after depletion</>",
+        "extraDesc": "Once equipped, item is automatically used when the holder falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n<@tips.purple>Can support the controlled operator (only once)</>: For only <@ba.vup>1</> time per battle, the item is automatically used on the controlled operator when they fall below <@ba.vup>{param1:0%}</> HP.\n<@tips.orange>Uses are restored after depletion</>: When uses are depleted in battle, <@ba.vup>1</> more use becomes available after a while."
+    },
+    "item_bottled_rec_hp_2": {
+        "desc": "Once equipped, item is automatically used when the holder falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n - <@tips.purple>Can support the controlled operator (only once)</>\n - <@tips.orange>Uses are restored after depletion</>",
+        "extraDesc": "Once equipped, item is automatically used when the holder falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n<@tips.purple>Can support the controlled operator (only once)</>: For only <@ba.vup>1</> time per battle, the item is automatically used on the controlled operator when they fall below <@ba.vup>{param1:0%}</> HP.\n<@tips.orange>Uses are restored after depletion</>: When uses are depleted in battle, <@ba.vup>1</> more use becomes available after a while."
+    },
+    "item_bottled_rec_hp_3": {
+        "desc": "Once equipped, item is automatically used when the holder falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n - <@tips.purple>Can support the controlled operator (only once)</>\n - <@tips.orange>Uses are restored after depletion</>",
+        "extraDesc": "Once equipped, item is automatically used when the holder falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n<@tips.purple>Can support the controlled operator (only once)</>: For only <@ba.vup>1</> time per battle, the item is automatically used on the controlled operator when they fall below <@ba.vup>{param1:0%}</> HP.\n<@tips.orange>Uses are restored after depletion</>: When uses are depleted in battle, <@ba.vup>1</> more use becomes available after a while."
+    },
+    "item_bottled_rec_hp_4": {
+        "desc": "Once equipped, item is automatically used on any operator in the team who falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n - <@tips.purple>Can support the controlled operator (no limit)</>\n - <@tips.orange>Uses are restored after depletion</>",
+        "extraDesc": "Once equipped, item is automatically used on any operator in the team who falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n<@tips.purple>Can support the controlled operator (no limit)</>: There is no limit to the number of times this item can be used to support the controlled operator.\n<@tips.orange>Uses are restored after depletion</>: When uses are depleted in battle, <@ba.vup>1</> more use becomes available after a while."
+    },
+    "item_bottled_rec_hp_5": {
+        "desc": "Once equipped, item is automatically used on any operator in the team who falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n - <@tips.purple>Can support the controlled operator (no limit)</>\n - <@tips.orange>Uses are restored after depletion</>",
+        "extraDesc": "Once equipped, item is automatically used on any operator in the team who falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n<@tips.purple>Can support the controlled operator (no limit)</>: There is no limit to the number of times this item can be used to support the controlled operator.\n<@tips.orange>Uses are restored after depletion</>: When uses are depleted in battle, <@ba.vup>1</> more use becomes available after a while."
+    },
+    "item_corp1_animal_1": {
+        "desc": "Once equipped, item is automatically used on any operator in the team who falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n - <@tips.purple>Can support the controlled operator (no limit)</>\n - <@tips.orange>Uses are restored after depletion</>",
+        "extraDesc": "Once equipped, item is automatically used on any operator in the team who falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n<@tips.purple>Can support the controlled operator (no limit)</>: There is no limit to the number of times this item can be used to support the controlled operator.\n<@tips.orange>Uses are restored after depletion</>: When uses are depleted in battle, <@ba.vup>1</> more use becomes available after a while."
+    },
+    "item_corp2_animal_1": {
+        "desc": "Once equipped, item is automatically used on any operator in the team who suffers an <#ba.spellinflictonchar>Arts Reaction</>. Max uses per battle: <@ba.vup>{count:0}</>.\n - <@tips.purple>Can support the controlled operator (no limit)</>\n - <@tips.orange>Uses are restored after depletion</>",
+        "extraDesc": "Once equipped, item is automatically used on any operator in the team who suffers an <#ba.spellinflictonchar>Arts Reaction</>. Max uses per battle: <@ba.vup>{count:0}</>.\n<@tips.purple>Can support the controlled operator (no limit)</>: There is no limit to the number of times this item can be used to support the controlled operator.\n<@tips.orange>Uses are restored after depletion</>: When uses are depleted in battle, <@ba.vup>1</> more use becomes available after a while."
+    },
+    "item_corp4_grass2_1": {
+        "desc": "Once equipped, item is automatically used on any operator in the team who falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n - <@tips.purple>Can support the controlled operator (no limit)</>\n - <@tips.orange>Uses are restored after depletion</>",
+        "extraDesc": "Once equipped, item is automatically used on any operator in the team who falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n<@tips.purple>Can support the controlled operator (no limit)</>: There is no limit to the number of times this item can be used to support the controlled operator.\n<@tips.orange>Uses are restored after depletion</>: When uses are depleted in battle, <@ba.vup>1</> more use becomes available after a while."
+    },
+    "item_corp4_spc": {
+        "desc": "Once equipped, item is automatically used when the holder's Ultimate Energy drops below <@ba.vup>{param1:0%}</>. Max uses per battle: <@ba.vup>{count:0}</>.\n - <@tips.orange>Uses are restored after depletion</>",
+        "extraDesc": "Once equipped, item is automatically used when the holder's Ultimate Energy drops below <@ba.vup>{param1:0%}</>. Max uses per battle: <@ba.vup>{count:0}</>.\n<@tips.orange>Uses are restored after depletion</>: When uses are depleted in battle, <@ba.vup>1</> more use becomes available after a while."
+    },
+    "item_dog_1_slimeml_1_1": {
+        "desc": "Once equipped, item is automatically used when the holder's Ultimate Energy drops below <@ba.vup>{param1:0%}</>. Max uses per battle: <@ba.vup>{count:0}</>.\n - <@tips.orange>Uses are restored after depletion</>",
+        "extraDesc": "Once equipped, item is automatically used when the holder's Ultimate Energy drops below <@ba.vup>{param1:0%}</>. Max uses per battle: <@ba.vup>{count:0}</>.\n<@tips.orange>Uses are restored after depletion</>: When uses are depleted in battle, <@ba.vup>1</> more use becomes available after a while."
+    },
+    "item_dog_hsmob_corp_1": {
+        "desc": "Once equipped, item is automatically used on any operator in the team who falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n - <@tips.purple>Can support the controlled operator (no limit)</>\n - <@tips.orange>Uses are restored after depletion</>",
+        "extraDesc": "Once equipped, item is automatically used on any operator in the team who falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n<@tips.purple>Can support the controlled operator (no limit)</>: There is no limit to the number of times this item can be used to support the controlled operator.\n<@tips.orange>Uses are restored after depletion</>: When uses are depleted in battle, <@ba.vup>1</> more use becomes available after a while."
+    },
+    "item_hscrane_1_hsmob_1_grass_1_1": {
+        "desc": "Once equipped, item is automatically used on any operator in the team who falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n - <@tips.purple>Can support the controlled operator (no limit)</>\n - <@tips.orange>Uses are restored after depletion</>",
+        "extraDesc": "Once equipped, item is automatically used on any operator in the team who falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n<@tips.purple>Can support the controlled operator (no limit)</>: There is no limit to the number of times this item can be used to support the controlled operator.\n<@tips.orange>Uses are restored after depletion</>: When uses are depleted in battle, <@ba.vup>1</> more use becomes available after a while."
+    },
+    "item_hsmob_1_grass_2_1": {
+        "desc": "Once equipped, item is automatically used on any operator in the team who falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n - <@tips.purple>Can support the controlled operator (no limit)</>\n - <@tips.orange>Uses are restored after depletion</>",
+        "extraDesc": "Once equipped, item is automatically used on any operator in the team who falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n<@tips.purple>Can support the controlled operator (no limit)</>: There is no limit to the number of times this item can be used to support the controlled operator.\n<@tips.orange>Uses are restored after depletion</>: When uses are depleted in battle, <@ba.vup>1</> more use becomes available after a while."
+    },
+    "item_lbmob_1_lbshamman_1_sp_1_1": {
+        "desc": "Once equipped, item is automatically used by any operator in the team who takes DMG that exceeds <@ba.vup>{param2:0%}</> Max HP. Max uses per battle: <@ba.vup>{count:0}</>.\n - <@tips.purple>Can support the controlled operator (no limit)</>\n - <@tips.orange>Uses are restored after depletion</>",
+        "extraDesc": "Once equipped, item is automatically used by any operator in the team who takes DMG that exceeds <@ba.vup>{param2:0%}</> Max HP. Max uses per battle: <@ba.vup>{count:0}</>.\n<@tips.purple>Can support the controlled operator (no limit)</>: There is no limit to the number of times this item can be used to support the controlled operator.\n<@tips.orange>Uses are restored after depletion</>: When uses are depleted in battle, <@ba.vup>1</> more use becomes available after a while."
+    },
+    "item_lbmob_1_moss_2_bottled_1": {
+        "desc": "Once equipped, item is automatically used on any operator in the team who suffers an <#ba.spellinflictonchar>Arts Reaction</>. Max uses per battle: <@ba.vup>{count:0}</>.\n - <@tips.purple>Can support the controlled operator (no limit)</>\n - <@tips.orange>Uses are restored after depletion</>",
+        "extraDesc": "Once equipped, item is automatically used on any operator in the team who suffers an <#ba.spellinflictonchar>Arts Reaction</>. Max uses per battle: <@ba.vup>{count:0}</>.\n<@tips.purple>Can support the controlled operator (no limit)</>: There is no limit to the number of times this item can be used to support the controlled operator.\n<@tips.orange>Uses are restored after depletion</>: When uses are depleted in battle, <@ba.vup>1</> more use becomes available after a while."
+    },
+    "item_lbshamman_1_agmelee_1_1": {
+        "desc": "Once equipped, item is automatically used by any operator in the team who takes DMG that exceeds <@ba.vup>{param2:0%}</> Max HP. Max uses per battle: <@ba.vup>{count:0}</>.\n - <@tips.purple>Can support the controlled operator (no limit)</>\n - <@tips.orange>Uses are restored after depletion</>",
+        "extraDesc": "Once equipped, item is automatically used by any operator in the team who takes DMG that exceeds <@ba.vup>{param2:0%}</> Max HP. Max uses per battle: <@ba.vup>{count:0}</>.\n<@tips.purple>Can support the controlled operator (no limit)</>: There is no limit to the number of times this item can be used to support the controlled operator.\n<@tips.orange>Uses are restored after depletion</>: When uses are depleted in battle, <@ba.vup>1</> more use becomes available after a while."
+    },
+    "item_plant_grass_powder_1": {
+        "desc": "Once equipped, item is automatically used when the holder falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n - <@tips.purple>Can support the controlled operator (only once)</>\n - <@tips.orange>Uses are restored after depletion</>",
+        "extraDesc": "Once equipped, item is automatically used when the holder falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n<@tips.purple>Can support the controlled operator (only once)</>: For only <@ba.vup>1</> time per battle, the item is automatically used on the controlled operator when they fall below <@ba.vup>{param1:0%}</> HP.\n<@tips.orange>Uses are restored after depletion</>: When uses are depleted in battle, <@ba.vup>1</> more use becomes available after a while."
+    },
+    "item_plant_grass_powder_2": {
+        "desc": "Once equipped, item is automatically used on any operator in the team who falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n - <@tips.purple>Can support the controlled operator (no limit)</>\n - <@tips.orange>Uses are restored after depletion</>",
+        "extraDesc": "Once equipped, item is automatically used on any operator in the team who falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n<@tips.purple>Can support the controlled operator (no limit)</>: There is no limit to the number of times this item can be used to support the controlled operator.\n<@tips.orange>Uses are restored after depletion</>: When uses are depleted in battle, <@ba.vup>1</> more use becomes available after a while."
+    },
+    "item_plant_grass_spc_powder_1": {
+        "desc": "Once equipped, item is automatically used when the holder falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n - <@tips.purple>Can support the controlled operator (only once)</>\n - <@tips.orange>Uses are restored after depletion</>",
+        "extraDesc": "Once equipped, item is automatically used when the holder falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n<@tips.purple>Can support the controlled operator (only once)</>: For only <@ba.vup>1</> time per battle, the item is automatically used on the controlled operator when they fall below <@ba.vup>{param1:0%}</> HP.\n<@tips.orange>Uses are restored after depletion</>: When uses are depleted in battle, <@ba.vup>1</> more use becomes available after a while."
+    },
+    "item_plant_grass_spc_powder_2": {
+        "desc": "Once equipped, item is automatically used on any operator in the team who falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n - <@tips.purple>Can support the controlled operator (no limit)</>\n - <@tips.orange>Uses are restored after depletion</>",
+        "extraDesc": "Once equipped, item is automatically used on any operator in the team who falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n<@tips.purple>Can support the controlled operator (no limit)</>: There is no limit to the number of times this item can be used to support the controlled operator.\n<@tips.orange>Uses are restored after depletion</>: When uses are depleted in battle, <@ba.vup>1</> more use becomes available after a while."
+    },
+    "item_plant_moss_powder_1": {
+        "desc": "Once equipped, item is automatically used when the holder falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n - <@tips.purple>Can support the controlled operator (only once)</>\n - <@tips.orange>Uses are restored after depletion</>",
+        "extraDesc": "Once equipped, item is automatically used when the holder falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n<@tips.purple>Can support the controlled operator (only once)</>: For only <@ba.vup>1</> time per battle, the item is automatically used on the controlled operator when they fall below <@ba.vup>{param1:0%}</> HP.\n<@tips.orange>Uses are restored after depletion</>: When uses are depleted in battle, <@ba.vup>1</> more use becomes available after a while."
+    },
+    "item_plant_moss_powder_2": {
+        "desc": "Once equipped, item is automatically used on any operator in the team who falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n - <@tips.purple>Can support the controlled operator (no limit)</>\n - <@tips.orange>Uses are restored after depletion</>",
+        "extraDesc": "Once equipped, item is automatically used on any operator in the team who falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n<@tips.purple>Can support the controlled operator (no limit)</>: There is no limit to the number of times this item can be used to support the controlled operator.\n<@tips.orange>Uses are restored after depletion</>: When uses are depleted in battle, <@ba.vup>1</> more use becomes available after a while."
+    },
+    "item_plant_moss_spc_powder_1": {
+        "desc": "Once equipped, item is automatically used when the holder falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n - <@tips.purple>Can support the controlled operator (only once)</>\n - <@tips.orange>Uses are restored after depletion</>",
+        "extraDesc": "Once equipped, item is automatically used when the holder falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n<@tips.purple>Can support the controlled operator (only once)</>: For only <@ba.vup>1</> time per battle, the item is automatically used on the controlled operator when they fall below <@ba.vup>{param1:0%}</> HP.\n<@tips.orange>Uses are restored after depletion</>: When uses are depleted in battle, <@ba.vup>1</> more use becomes available after a while."
+    },
+    "item_plant_moss_spc_powder_2": {
+        "desc": "Once equipped, item is automatically used on any operator in the team who falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n - <@tips.purple>Can support the controlled operator (no limit)</>\n - <@tips.orange>Uses are restored after depletion</>",
+        "extraDesc": "Once equipped, item is automatically used on any operator in the team who falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n<@tips.purple>Can support the controlled operator (no limit)</>: There is no limit to the number of times this item can be used to support the controlled operator.\n<@tips.orange>Uses are restored after depletion</>: When uses are depleted in battle, <@ba.vup>1</> more use becomes available after a while."
+    },
+    "item_slimeml_1_agrange_1_moss_2_1": {
+        "desc": "Once equipped, item is automatically used when the holder's Ultimate Energy drops below <@ba.vup>{param1:0%}</>. Max uses per battle: <@ba.vup>{count:0}</>.\n - <@tips.orange>Uses are restored after depletion</>",
+        "extraDesc": "Once equipped, item is automatically used when the holder's Ultimate Energy drops below <@ba.vup>{param1:0%}</>. Max uses per battle: <@ba.vup>{count:0}</>.\n<@tips.orange>Uses are restored after depletion</>: When uses are depleted in battle, <@ba.vup>1</> more use becomes available after a while."
+    },
+    "item_slimeml_1_erhound_1_agfly_1_1": {
+        "desc": "Once equipped, item is automatically used on any operator in the team who suffers an <#ba.spellinflictonchar>Arts Reaction</>. Max uses per battle: <@ba.vup>{count:0}</>.\n - <@tips.purple>Can support the controlled operator (no limit)</>\n - <@tips.orange>Uses are restored after depletion</>",
+        "extraDesc": "Once equipped, item is automatically used on any operator in the team who suffers an <#ba.spellinflictonchar>Arts Reaction</>. Max uses per battle: <@ba.vup>{count:0}</>.\n<@tips.purple>Can support the controlled operator (no limit)</>: There is no limit to the number of times this item can be used to support the controlled operator.\n<@tips.orange>Uses are restored after depletion</>: When uses are depleted in battle, <@ba.vup>1</> more use becomes available after a while."
+    },
+    "item_slwood_1_hshog_1_1": {
+        "desc": "Once equipped, item is automatically used on any operator in the team who suffers an <#ba.spellinflictonchar>Arts Reaction</>. Max uses per battle: <@ba.vup>{count:0}</>\n - <@tips.purple>Can support the controlled operator (no limit)</>\n - <@tips.orange>Uses are restored after depletion</>",
+        "extraDesc": "Once equipped, item is automatically used on any operator in the team who suffers an <#ba.spellinflictonchar>Arts Reaction</>. Max uses per battle: <@ba.vup>{count:0}</>\n<@tips.purple>Can support the controlled operator (no limit)</>: There is no limit to the number of times this item can be used to support the controlled operator.\n<@tips.orange>Uses are restored after depletion</>: When uses are depleted in battle, <@ba.vup>1</> more use becomes available after a while."
+    },
+    "item_sp_1_moss_1_agmelee_1_1": {
+        "desc": "Once equipped, item is automatically used on any operator in the team who falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n - <@tips.purple>Can support the controlled operator (no limit)</>\n - <@tips.orange>Uses are restored after depletion</>",
+        "extraDesc": "Once equipped, item is automatically used on any operator in the team who falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n<@tips.purple>Can support the controlled operator (no limit)</>: There is no limit to the number of times this item can be used to support the controlled operator.\n<@tips.orange>Uses are restored after depletion</>: When uses are depleted in battle, <@ba.vup>1</> more use becomes available after a while."
+    },
+    "item_sp_2_moss_2_agrange_1_1": {
+        "desc": "Once equipped, item is automatically used on any operator in the team who falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n - <@tips.purple>Can support the controlled operator (no limit)</>\n - <@tips.orange>Uses are restored after depletion</>",
+        "extraDesc": "Once equipped, item is automatically used on any operator in the team who falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n<@tips.purple>Can support the controlled operator (no limit)</>: There is no limit to the number of times this item can be used to support the controlled operator.\n<@tips.orange>Uses are restored after depletion</>: When uses are depleted in battle, <@ba.vup>1</> more use becomes available after a while."
+    },
+    "item_wgslime_1_hsmob_1_grass_2_1": {
+        "desc": "Once equipped, item is automatically used when the holder falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n - <@tips.purple>Can support the controlled operator (only once)</>\n - <@tips.orange>Uses are restored after depletion</>",
+        "extraDesc": "Once equipped, item is automatically used when the holder falls below <@ba.vup>{param1:0%}</> HP. Max uses per battle: <@ba.vup>{count:0}</>.\n<@tips.purple>Can support the controlled operator (only once)</>: For only <@ba.vup>1</> time per battle, the item is automatically used on the controlled operator when they fall below <@ba.vup>{param1:0%}</> HP.\n<@tips.orange>Uses are restored after depletion</>: When uses are depleted in battle, <@ba.vup>1</> more use becomes available after a while."
+    }
+}
