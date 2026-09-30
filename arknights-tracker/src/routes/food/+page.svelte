@@ -339,6 +339,7 @@
                     <FoodDetailView
                         item={selectedItem}
                         inColumn={true}
+                        showSelfLink={true}
                     />
 
                 {:else if data.tab === FoodTabType.COMPARISON}
@@ -357,6 +358,7 @@
                             <FoodDetailView
                                 item={selectedItem}
                                 inColumn={true}
+                                showSelfLink={true}
                             />
 
                         {/if}

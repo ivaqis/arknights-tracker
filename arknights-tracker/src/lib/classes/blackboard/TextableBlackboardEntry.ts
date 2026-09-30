@@ -32,7 +32,7 @@ export class TextableBlackboardEntry extends BlackboardEntry implements ITextabl
 
         const formatter = new Intl.NumberFormat("en-US", this._format.intl);
 
-        const formatted = formatter.format(this.value);
+        const formatted = formatter.format(this.value).replace(",", " ");
         const prefix = this._format.prefix ?? "";
         const postfix = this._format.postfix ?? "";
 

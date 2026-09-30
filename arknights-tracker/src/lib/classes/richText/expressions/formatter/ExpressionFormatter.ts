@@ -59,6 +59,7 @@ export class ExpressionFormatter {
     }
 
     public format(value: number): string {
-        return this._formatter.format(value);
+        return this._formatter.format(value)
+            .replace(",", " ");
     }
 }

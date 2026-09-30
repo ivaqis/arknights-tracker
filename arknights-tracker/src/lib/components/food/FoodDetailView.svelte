@@ -13,6 +13,7 @@
     export let item: IFood;
 
     export let inColumn: boolean = false;
+    export let showSelfLink: boolean = false;
     
     const foodLocaleModules: Record<string, Record<string, () => Promise<unknown>>> = {
         en: import.meta.glob("/src/lib/locales/en/usableItems.json"),
@@ -149,9 +150,14 @@
 
                     <div class="relative z-20 gap-1 flex flex-col h-full w-[65%]">
 
-                        <h1 class="font-sdk text-3xl md:text-4xl font-bold text-[#21272C] dark:text-[#FDFDFD] leading-tight drop-shadow-sm mb-3">
+                        <svelte:element
+                            this={showSelfLink ? "a" : "h2"}
+                            href={showSelfLink ? `/food/${item.gameId}` : undefined}
+                            class="font-sdk text-3xl md:text-4xl font-bold text-[#21272C] dark:text-[#FDFDFD] leading-tight drop-shadow-sm mb-3"
+                            class:hover:underline={showSelfLink}
+                        >
                             {$t(item.i18nKey)}
-                        </h1>
+                        </svelte:element>
 
                         <div class="flex items-center gap-3 mb-6">
 
