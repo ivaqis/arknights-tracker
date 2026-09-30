@@ -220,7 +220,7 @@
 
 <table class="rounded-xl min-w-full">
 
-    <thead class="bg-white dark:bg-[#424242] font-sdk font-bold text-sm text-gray-700 dark:text-[#FDFDFD] sticky top-0 z-50">
+    <thead class="bg-gray-200 dark:bg-[#424242] font-sdk font-bold text-sm text-gray-700 dark:text-[#FDFDFD] sticky top-0 z-50">
 
     <tr>
         <th
