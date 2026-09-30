@@ -310,7 +310,7 @@
 
         {:else if data.tab === FoodTabType.COMPARISON}
 
-            <div class="mt-4 w-full flex-1 rounded-xl overflow-scroll">
+            <div class="mt-4 w-full min-h-96 flex-1 rounded-xl overflow-scroll">
 
                 <FoodComparisonTable
                     foodList={filteredTableItems}
