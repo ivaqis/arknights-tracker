@@ -3,6 +3,7 @@
     import { FoodComparator } from "$lib/classes/comparators/items/FoodComparator";
     import type { IFoodComparator } from "$lib/classes/comparators/items/IFoodComparator";
     import { LocaleOrder } from "$lib/classes/comparators/LocaleOrder";
+    import { EquipableItemConditionType } from "$lib/classes/gameData/items/equipable/EquipableItemConditionType";
     import type { IFood } from "$lib/classes/gameData/items/food/IFood";
     import type { IItem } from "$lib/classes/gameData/items/IItem";
     import type { SortDirection } from "$lib/classes/SortDirection";
@@ -12,6 +13,8 @@
     import DataToolbar from "$lib/components/dataToolbarV2/DataToolbar.svelte";
     import FoodFilterDropdown from "$lib/components/dataToolbarV2/filterDropdowns/FoodFilterDropdown.svelte";
     import FoodSortDropdown from "$lib/components/dataToolbarV2/sortDropdowns/FoodSortDropdown.svelte";
+    import FoodComparisonTable from "$lib/components/food/FoodComparisonTable.svelte";
+    import FoodComparisonTableSelector from "$lib/components/food/FoodComparisonTableSelector.svelte";
     import FoodDetailView from "$lib/components/food/FoodDetailView.svelte";
     import Icon from "$lib/components/Icon.svelte";
     import type { ITabSelectEvent } from "$lib/components/tabSelector/ITabSelectEvent";
@@ -26,6 +29,8 @@
     import { isListItemsEqual } from "$lib/utils/collectionUtils";
     import { filterCheck, filterCheckMany } from "$lib/utils/filterUtils";
     import { onMount } from "svelte";
+
+    type CondType = EquipableItemConditionType | "null";
 
     export let data;
 
@@ -187,6 +192,25 @@
 
     /// COMPARISON TAB
 
+    let selectedCondTypeSet: Set<CondType> = new Set();
+    let selectedBuffSet: Set<string> = new Set();
+
+    let selectedBuffList: string[];
+
+    $: selectedBuffList = $foodSortParams.sortFieldParams.buff.filter(buff => selectedBuffSet.has(buff));
+
+    let filteredTableItems: IFood[];
+
+    $: filteredTableItems = getFilteredTableItems(allItems, selectedCondTypeSet, selectedBuffSet);
+
+    function getFilteredTableItems(allItems: readonly IFood[], selectedCondTypeSet: Set<CondType>, selectedBuffSet: Set<string>) {
+        return allItems.filter(item => {
+            return filterCheck(selectedCondTypeSet, item.tactical?.condType ?? "null")
+                && filterCheckMany(selectedBuffSet, item.buffs.map(buff => buff.buffId));
+        });
+    }
+
+
 </script>
 
 <svelte:head>
@@ -204,7 +228,7 @@
 
 <div class="max-w-[100%] max-h-[100%] min-h-screen h-full flex flex-col xl:flex-row">
 
-    <div class="w-full xl:w-[calc(100%-max(470px,40%))] mr-6">
+    <div class="w-full xl:w-[calc(100%-max(470px,40%))] h-[calc(100vh-48px)] mr-6 flex flex-col">
 
         <div class="flex items-baseline flex-wrap gap-2 md:gap-3 mb-8 font-sdk">
 
@@ -213,7 +237,7 @@
             </h2>
 
             <span class="text-gray-400 text-xl md:text-3xl font-normal">
-                / {filteredItems.length}
+                / {data.tab === "overview" ? filteredItems.length : filteredTableItems.length}
             </span>
 
         </div>
@@ -222,6 +246,7 @@
             tabList={tabList}
             activeTab={data.tab}
             onTabSelect={onTabSelect}
+            getLocaleFn={(tab) => $t(`page.food.tabs.${tab}`)}
         />
 
         {#if data.tab === FoodTabType.OVERVIEW}
@@ -297,6 +322,18 @@
 
         {:else if data.tab === FoodTabType.COMPARISON}
 
+            <div class="mt-4 w-full flex-1 rounded-xl overflow-scroll">
+
+                <FoodComparisonTable
+                    foodList={filteredTableItems}
+                    condTypeOrderList={$foodSortParams.sortFieldParams.equipCond}
+                    buffList={selectedBuffList}
+                    selectItemFn={selectItem}
+                    selectedItemId={data.itemId}
+                />
+
+            </div>
+
         {/if}
 
     </div>
@@ -318,6 +355,26 @@
 
                 {:else if data.tab === FoodTabType.COMPARISON}
 
+                    <div class="flex flex-col gap-8">
+
+                        <FoodComparisonTableSelector
+                            condTypeList={$foodSortParams.sortFieldParams.equipCond}
+                            buffList={$foodSortParams.sortFieldParams.buff}
+                            bind:selectedCondTypeSet={selectedCondTypeSet}
+                            bind:selectedBuffSet={selectedBuffSet}
+                        />
+
+                        {#if selectedItem}
+
+                            <FoodDetailView
+                                item={selectedItem}
+                                inColumn={true}
+                            />
+
+                        {/if}
+
+                    </div>
+
                 {/if}
 
             </div>
@@ -328,7 +385,7 @@
 
 </div>
 
-{#if !isBottomSheetOpen && data.itemId}
+{#if !isBottomSheetOpen && (data.itemId || data.tab === FoodTabType.COMPARISON)}
 
     <button
         type="button"

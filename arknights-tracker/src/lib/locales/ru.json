@@ -161,9 +161,19 @@
       "pieGraph": "Распределение"
     },
     "food": {
+      "tabs": {
+        "overview": "Обзор",
+        "comparison": "Сравнение"
+      },
       "tactical": "Провиант",
       "recipe": "Рецепт",
-      "openRecipe": "Открыть рецепт"
+      "openRecipe": "Открыть рецепт",
+      "table": {
+        "name": "Название",
+        "hasBuff": "Имеет эффект",
+        "y": "Да",
+        "n": "Нет"
+      }
     }
   },
   "bannerTypes": {
@@ -2986,7 +2996,7 @@
   },
   "buffNames": {
     "buff_common_heal_potion_1": "Восст. ОЗ",
-    "buff_common_heal_potion_2": "Восст ОЗ% + ОЗ",
+    "buff_common_heal_potion_2": "Восст. ОЗ% + ОЗ",
     "buff_common_heal_moss_1": "Восст. ОЗ/с",
     "buff_common_heal_moss_2": "Восст. (ОЗ% + ОЗ)/с",
     "buff_custom_revive_1": "Возрождение",
@@ -3088,11 +3098,93 @@
     },
     "buff_common_dispel_potion": {}
   },
+  "buffsShort": {
+    "buff_common_heal_potion_1": {
+      "value": "Мгнов. восст. ОЗ"
+    },
+    "buff_common_heal_potion_2": {
+      "value": "Мгнов. восст. ОЗ",
+      "value2": "Мгнов. восст. ОЗ%"
+    },
+    "buff_common_heal_moss_1": {
+      "triggerheal": "Восст. ОЗ/с",
+      "duration": "Длительность (с)"
+    },
+    "buff_common_heal_moss_2": {
+      "triggerheal": "Восст. ОЗ/с",
+      "triggerheal2": "Восст. ОЗ%/с",
+      "duration": "Длительность (с)"
+    },
+    "buff_custom_revive_1": {
+      "value": "Мгнов. восст. ОЗ%"
+    },
+    "buff_common_ultsp_potion_1": {
+      "value": "Мгнов. восст. суперэнергии"
+    },
+    "buff_common_def_buff_potion_1": {
+      "value": "ЗЩТ%",
+      "duration": "Длительность (с)"
+    },
+    "buff_common_def_buff_potion_2": {
+      "value": "ЗЩТ",
+      "duration": "Длительность (с)"
+    },
+    "buff_common_def_buff_potion_3": {
+      "value": "ЗЩТ%",
+      "duration": "Длительность (с)"
+    },
+    "buff_common_resis_up_potion_1": {
+      "value": "Множ. входящего УРН",
+      "duration": "Длительность (с)"
+    },
+    "buff_common_dmg_up_potion_1": {
+      "value": "Наносимый УРН",
+      "duration": "Длительность (с)"
+    },
+    "buff_common_phydmg_up_potion_1": {
+      "value": "Наносимый физ. УРН",
+      "duration": "Длительность (с)"
+    },
+    "buff_common_mainattri_up_potion_1": {
+      "value": "Все показатели",
+      "duration": "Длительность (с)"
+    },
+    "buff_common_atk_buff_potion_1": {
+      "value": "АТК%",
+      "duration": "Длительность (с)"
+    },
+    "buff_common_atk_buff_potion_2": {
+      "value": "АТК",
+      "duration": "Длительность (с)"
+    },
+    "buff_common_ctr_buff_potion_1": {
+      "value": "Шанс крит. удара",
+      "duration": "Длительность (с)"
+    },
+    "buff_common_cdr_buff_potion_1": {
+      "value": "Множ. перезарядки комбонавыка",
+      "duration": "Длительность (с)"
+    },
+    "buff_common_usprt_buff_potion_1": {
+      "value": "Восст. суперэнергии",
+      "duration": "Длительность (с)"
+    },
+    "buff_common_healrt_buff_potion_1": {
+      "value": "Лечение",
+      "duration": "Длительность (с)"
+    },
+    "buff_common_healrt_buff_potion_2": {
+      "value": "Получаемое лечение",
+      "duration": "Длительность (с)"
+    },
+    "buff_common_dispel_potion": {}
+  },
   "tacticalTitle": {
     "condType": "Тип условия",
     "castTime": "Время использования (с)",
     "castCount": "Кол-во использований",
     "castToMainCount": "Кол-во использований на управляемом оперативнике",
+    "castToMainCountShort": "Кол-во исп. на упр-м оперативнике",
     "cooldown": "Перезарядка (с)",
     "recoverTime": "Время восстановления (с)",
     "recoverUpperCount": "Кол-во восстановленных предметов"
@@ -3106,11 +3198,11 @@
   },
   "tacticalCondType": {
     "null": "Нет",
-    "char_hp": "Процент от макс. ОЗ",
+    "char_hp": "Процент от макс. ОЗ",
     "char_down": "Смерть оперативника",
     "arts_reaction": "Наложение реакции искусств",
     "ult_energy": "Процент от макс. суперэнергии",
-    "damage": "Полученный урон от макс. ОЗ"
+    "damage": "Полученный урон от макс. ОЗ"
   },
   "tacticalCondParam": {
     "char_hp": {
@@ -3133,7 +3225,7 @@
   },
   "tacticalCondParamTitle": {
     "char_hp": {
-      "param1": "% от макс. ОЗ",
+      "param1": "% от макс. ОЗ",
       "param2": "Параметр условия"
     },
     "char_down": {},
@@ -3144,7 +3236,7 @@
     },
     "damage": {
       "param1": "Тип урона",
-      "param2": "% от макс. ОЗ"
+      "param2": "% от макс. ОЗ"
     }
   }
 }

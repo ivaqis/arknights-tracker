@@ -115,9 +115,57 @@ export class Tactical implements ITactical {
         ];
     }
 
+    public formatCastCount(textFn: (key: string) => string): string {
+        if (this._castCount === 0) {
+            return textFn("tacticalZero.castCount");
+        }
+
+        return String(this._castCount);
+    }
+
+    public formatCastTime(textFn: (key: string) => string): string {
+        return String(this._castTime);
+    }
+
+    public formatCastToMainCount(textFn: (key: string) => string): string {
+        if (this._castToMainCount === 0) {
+            return textFn("tacticalZero.castToMainCount");
+        }
+
+        return String(this._castToMainCount);
+    }
+
+    public formatCondType(textFn: (key: string) => string): string {
+        return textFn(`tacticalCondType.${this._condType}`);
+    }
+
+    public formatCooldown(textFn: (key: string) => string): string {
+        if (this._cooldown === 0) {
+            return textFn("tacticalZero.castCooldown");
+        }
+
+        return String(this._cooldown);
+    }
+
+    public formatRecoverTime(textFn: (key: string) => string): string {
+        if (this._recoverTime === 0) {
+            return textFn("tacticalZero.recoverTime");
+        }
+
+        return String(this._recoverTime);
+    }
+
+    public formatRecoverUpperCount(textFn: (key: string) => string): string {
+        if (this._recoverUpperCount === 0) {
+            return textFn("tacticalZero.recoverUpperCount");
+        }
+
+        return String(this._recoverUpperCount);
+    }
+
     private getCondTypeFormatted(textFn: (key: string) => string): IBlackboardEntry<string> {
         const title = textFn("tacticalTitle.condType");
-        const value = textFn(`tacticalCondType.${this._condType}`);
+        const value = this.formatCondType(textFn);
 
         return {
             key: title,
@@ -161,18 +209,12 @@ export class Tactical implements ITactical {
     private getCastTimeFormatted(textFn: (key: string) => string): IBlackboardEntry<string> {
         return {
             key: textFn("tacticalTitle.castTime"),
-            value: String(this.castTime)
+            value: this.formatCastTime(textFn)
         };
     }
 
     private getCastCountFormatted(textFn: (key: string) => string): IBlackboardEntry<string> {
-        let value: string;
-
-        if (this._castCount === 0) {
-            value = textFn("tacticalZero.castCount");
-        } else {
-            value = String(this._castCount)
-        }
+        let value = this.formatCastCount(textFn);
 
         return {
             key: textFn("tacticalTitle.castCount"),
@@ -181,13 +223,7 @@ export class Tactical implements ITactical {
     }
 
     private getCastToMainCountFormatted(textFn: (key: string) => string): IBlackboardEntry<string> {
-        let value: string;
-
-        if (this._castToMainCount === 0) {
-            value = textFn("tacticalZero.castToMainCount");
-        } else {
-            value = String(this._castToMainCount)
-        }
+        let value = this.formatCastToMainCount(textFn);
 
         return {
             key: textFn("tacticalTitle.castToMainCount"),
@@ -196,13 +232,7 @@ export class Tactical implements ITactical {
     }
 
     private getCooldownFormatted(textFn: (key: string) => string): IBlackboardEntry<string> {
-        let value: string;
-
-        if (this._cooldown === 0) {
-            value = textFn("tacticalZero.castCooldown");
-        } else {
-            value = String(this._cooldown)
-        }
+        let value = this.formatCooldown(textFn);
 
         return {
             key: textFn("tacticalTitle.cooldown"),
@@ -211,13 +241,7 @@ export class Tactical implements ITactical {
     }
 
     private getRecoverTimeFormatted(textFn: (key: string) => string): IBlackboardEntry<string> {
-        let value: string;
-
-        if (this._recoverTime === 0) {
-            value = textFn("tacticalZero.recoverTime");
-        } else {
-            value = String(this._recoverTime)
-        }
+        let value = this.formatRecoverTime(textFn);
 
         return {
             key: textFn("tacticalTitle.recoverTime"),
@@ -226,13 +250,7 @@ export class Tactical implements ITactical {
     }
 
     private getRecoverUpperCountFormatted(textFn: (key: string) => string): IBlackboardEntry<string> {
-        let value: string;
-
-        if (this._recoverUpperCount === 0) {
-            value = textFn("tacticalZero.recoverUpperCount");
-        } else {
-            value = String(this._recoverUpperCount)
-        }
+        let value = this.formatRecoverUpperCount(textFn);
 
         return {
             key: textFn("tacticalTitle.recoverUpperCount"),

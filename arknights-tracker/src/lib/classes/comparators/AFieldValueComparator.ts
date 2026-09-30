@@ -13,7 +13,7 @@ export abstract class AFieldValueComparator<T, TValue> implements IFieldValueCom
         return orderA - orderB;
     }
 
-    public setValueOrder(orderList: TValue[]) {
+    public setValueOrder(orderList: readonly TValue[]) {
         this._valueOrders.clear();
 
         orderList.forEach((value, index) => {

@@ -14,5 +14,13 @@ export interface ITactical extends IBoardable {
     get levelUpCastCount(): number;
     get levelUpRecoverUpperCount(): number;
 
+    formatCondType(textFn: (key: string) => string): string;
+    formatCastTime(textFn: (key: string) => string): string;
+    formatCastCount(textFn: (key: string) => string): string;
+    formatCastToMainCount(textFn: (key: string) => string): string;
+    formatCooldown(textFn: (key: string) => string): string;
+    formatRecoverTime(textFn: (key: string) => string): string;
+    formatRecoverUpperCount(textFn: (key: string) => string): string;
+
     getDetailList(textFn: (key: string) => string): IBlackboardEntry<string>[];
 }

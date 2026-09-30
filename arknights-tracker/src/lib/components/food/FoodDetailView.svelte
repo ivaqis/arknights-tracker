@@ -112,7 +112,7 @@
     $: hasRecipe = craftableItemsList.includes(item.gameId);
 </script>
 
-<div class="md:px-1 md:py-1 pb-10 font-sans transition-colors">
+<div class="md:py-1 pb-10 font-sans transition-colors">
 
     <div
         class="w-full max-w-[1500px] mx-auto grid grid-cols-1 gap-8 items-start"

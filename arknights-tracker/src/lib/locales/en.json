@@ -161,9 +161,19 @@
       "pieGraph": "Distribution"
     },
     "food": {
+      "tabs": {
+        "overview": "Overview",
+        "comparison": "Comparison"
+      },
       "tactical": "Tactical",
       "recipe": "Recipe",
-      "openRecipe": "Open Recipe"
+      "openRecipe": "Open Recipe",
+      "table": {
+        "name": "Name",
+        "hasBuff": "Has Effect",
+        "y": "Yes",
+        "n": "No"
+      }
     }
   },
   "bannerTypes": {
@@ -3083,11 +3093,93 @@
     },
     "buff_common_dispel_potion": {}
   },
+  "buffsShort": {
+    "buff_common_heal_potion_1": {
+      "value": "Inst. Rest. HP"
+    },
+    "buff_common_heal_potion_2": {
+      "value": "Inst. Rest. HP",
+      "value2": "Inst. Rest. HP%"
+    },
+    "buff_common_heal_moss_1": {
+      "triggerheal": "Rest. HP/s",
+      "duration": "Duration (s)"
+    },
+    "buff_common_heal_moss_2": {
+      "triggerheal": "Rest. HP/s",
+      "triggerheal2": "Rest. HP%/s",
+      "duration": "Duration (s)"
+    },
+    "buff_custom_revive_1": {
+      "value": "Inst. Rest. HP%"
+    },
+    "buff_common_ultsp_potion_1": {
+      "value": "Inst. Rest. ULT SP"
+    },
+    "buff_common_def_buff_potion_1": {
+      "value": "DEF%",
+      "duration": "Duration (s)"
+    },
+    "buff_common_def_buff_potion_2": {
+      "value": "DEF",
+      "duration": "Duration (s)"
+    },
+    "buff_common_def_buff_potion_3": {
+      "value": "DEF%",
+      "duration": "Duration (s)"
+    },
+    "buff_common_resis_up_potion_1": {
+      "value": "Incoming DMG mult.",
+      "duration": "Duration (s)"
+    },
+    "buff_common_dmg_up_potion_1": {
+      "value": "All DMG Dealt",
+      "duration": "Duration (s)"
+    },
+    "buff_common_phydmg_up_potion_1": {
+      "value": "Physical DMG Dealt",
+      "duration": "Duration (s)"
+    },
+    "buff_common_mainattri_up_potion_1": {
+      "value": "All Attributes",
+      "duration": "Duration (s)"
+    },
+    "buff_common_atk_buff_potion_1": {
+      "value": "ATK%",
+      "duration": "Duration (s)"
+    },
+    "buff_common_atk_buff_potion_2": {
+      "value": "ATK",
+      "duration": "Duration (s)"
+    },
+    "buff_common_ctr_buff_potion_1": {
+      "value": "Critical Rate",
+      "duration": "Duration (s)"
+    },
+    "buff_common_cdr_buff_potion_1": {
+      "value": "Combo Skill CD mult.",
+      "duration": "Duration (s)"
+    },
+    "buff_common_usprt_buff_potion_1": {
+      "value": "Ultimate Gain Eff.",
+      "duration": "Duration (s)"
+    },
+    "buff_common_healrt_buff_potion_1": {
+      "value": "Treatment",
+      "duration": "Duration (s)"
+    },
+    "buff_common_healrt_buff_potion_2": {
+      "value": "Treatment Received",
+      "duration": "Duration (s)"
+    },
+    "buff_common_dispel_potion": {}
+  },
   "tacticalTitle": {
     "condType": "Condition Type",
     "castTime": "Cast Time (s)",
     "castCount": "Cast Count",
     "castToMainCount": "Cast To Main Count",
+    "castToMainCountShort": "Cast To Main Count",
     "cooldown": "Cooldown (s)",
     "recoverTime": "Recover Time (s)",
     "recoverUpperCount": "Recover Upper Count"
