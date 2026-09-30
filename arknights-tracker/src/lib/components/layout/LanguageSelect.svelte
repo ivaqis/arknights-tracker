@@ -128,7 +128,7 @@ bind:this={selectContainer}>
 
     <button
         on:click={toggle}
-        class="relative w-full h-14 bg-[#3A3A3A] hover:bg-[#444] transition-colors flex items-center overflow-hidden group"
+        class="relative w-full h-14 bg-[#3A3A3A] hover:bg-[#444] transition-colors flex items-center overflow-hidden group rounded-r-lg"
     >
         <div
             class="absolute right-0 top-0 h-full pointer-events-none mix-blend-overlay opacity-30"

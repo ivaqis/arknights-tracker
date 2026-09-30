@@ -390,7 +390,8 @@
     "emptyPageMsg": "It's so empty here",
     "equipmentType": "Equipment Type",
     "gearTemplate": "Gear Template",
-    "blueprintLocation": "Gear template location"
+    "blueprintLocation": "Gear template location",
+    "addedInVersion": "Added in version {version}"
   },
   "status": {
     "won": "Won 50:50",
@@ -457,6 +458,7 @@
     "openRecipe": "Open recipes",
     "leaderboard": "Leaderboard",
     "profile": "Profile",
+    "icons": "Icons",
     "food": "Food"
   },
   "events": {
@@ -1151,7 +1153,7 @@
     "noData": "No Data",
     "won": "Won",
     "pulls": "pulls",
-    "roll": "Roll",
+    "roll": "Pull",
     "percent": "Percent",
     "pull_one": "Pull",
     "free": "Free",
@@ -1159,7 +1161,18 @@
     "freeRate": "Rate (Free pulls)",
     "freeCount": "Free Count",
     "freePulls": "Free pulls",
-    "guaranteedCount": "Hard Guaranteed"
+    "guaranteedCount": "Hard Guaranteed",
+    "preset_48h": "48h",
+    "preset_1w": "1w",
+    "preset_1m": "1m",
+    "preset_3m": "3m",
+    "preset_6m": "6m",
+    "preset_1y": "1y",
+    "preset_3y": "3y",
+    "preset_6y": "6y",
+    "preset_9y": "9y",
+    "preset_12y": "12y",
+    "preset_max": "max"
   },
   "settings": {
     "title": "Settings",
@@ -2628,11 +2641,15 @@
     "echoesOfWar": "Echoes of War",
     "load_failed": "Failed to load leaderboard",
     "agony": "Agony",
-    "monument_type": "Monument Type",
-    "monument_filter": "Monument",
+    "monument_type": "Type",
+    "monument_filter": "Umbral Monument",
     "difficulty": "Difficulty",
     "room": "Room",
-    "operators_in_team": "Operators in Squad"
+    "operators_in_team": "Operators in Squad",
+    "per_page": "Per page",
+    "prev_page": "Previous page",
+    "next_page": "Next page",
+    "page_info": "Page {current} of {total}"
   },
   "profile": {
     "title": "Player Profile",

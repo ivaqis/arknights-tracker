@@ -1040,6 +1040,7 @@
                     <div class="min-w-0 md:col-span-2 2xl:col-span-1 2xl:col-start-2 2xl:row-start-1 2xl:row-span-2">
                         <OperatorSection
                             {activeAccount}
+                            profileName={profile?.name}
                             hasBackground={!!profile?.background}
                         />
                     </div>

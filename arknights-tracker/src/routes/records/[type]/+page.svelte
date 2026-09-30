@@ -988,7 +988,7 @@
                 </div>
 
                 {#if bannerOptions.length > 1}
-                    <div class="w-full sm:w-72">
+                    <div class="w-full sm:w-80">
                         <MultiSelect
                             options={bannerOptions}
                             bind:value={selectedBanners}

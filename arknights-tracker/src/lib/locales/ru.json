@@ -388,7 +388,8 @@
     "emptyPageMsg": "Как же тут пусто",
     "equipmentType": "Тип снаряжения",
     "gearTemplate": "Шаблон снаряжения",
-    "blueprintLocation": "Локация шаблона снаряжения"
+    "blueprintLocation": "Локация шаблона снаряжения",
+    "addedInVersion": "Добавлено в версии {version}"
   },
   "status": {
     "won": "Выигрыш 50:50",
@@ -457,6 +458,7 @@
     "openRecipe": "Открыть рецепты",
     "leaderboard": "Лидерборд",
     "profile": "Профиль",
+    "icons": "Иконки",
     "food": "Провиант"
   },
   "events": {
@@ -1163,7 +1165,18 @@
     "freeObtained": "Получено бесплатно",
     "freeRate": "Шанс (беспл.)",
     "freePulls": "Беспл. круток",
-    "guaranteedCount": "По гаранту"
+    "guaranteedCount": "По гаранту",
+    "preset_48h": "48ч",
+    "preset_1w": "1н",
+    "preset_1m": "1м",
+    "preset_3m": "3м",
+    "preset_6m": "6м",
+    "preset_1y": "1г",
+    "preset_3y": "3г",
+    "preset_6y": "6л",
+    "preset_9y": "9л",
+    "preset_12y": "12л",
+    "preset_max": "макс"
   },
   "settings": {
     "title": "Настройки",
@@ -2633,11 +2646,15 @@
     "echoesOfWar": "Эхо войны",
     "load_failed": "Не удалось загрузить таблицу лидеров",
     "agony": "Агония",
-    "monument_type": "Тип монумента",
-    "monument_filter": "Монумент",
+    "monument_type": "Тип",
+    "monument_filter": "Сумрачный монумент",
     "difficulty": "Сложность",
     "room": "Комната",
-    "operators_in_team": "Оперативников в команде"
+    "operators_in_team": "Оперативников в команде",
+    "per_page": "На странице",
+    "prev_page": "Предыдущая страница",
+    "next_page": "Следующая страница",
+    "page_info": "Страница {current} из {total}"
   },
   "profile": {
     "title": "Профиль игрока",

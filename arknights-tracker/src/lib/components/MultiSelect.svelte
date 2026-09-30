@@ -60,7 +60,7 @@
     role="button"
     tabindex="0"
     class="
-      w-full min-h-11 py-1.5 px-3 flex items-center justify-between border rounded-xl transition text-left text-sm focus:outline-none gap-2 flex-wrap cursor-pointer select-none
+      w-full min-h-11 py-1.5 px-3 flex items-center justify-between border rounded-md transition text-left text-sm focus:outline-none gap-2 flex-wrap cursor-pointer select-none
       {variant === 'black'
         ? 'bg-[#363636] border-[#454545] text-white hover:bg-[#404040]'
         : 'bg-white dark:bg-[#383838] border-gray-200 dark:border-[#444] text-[#21272C] dark:text-[#E0E0E0] hover:border-gray-300 dark:hover:border-[#555]'}
@@ -122,7 +122,7 @@
     <div
       transition:slide={{ duration: 200 }}
       class="
-        absolute left-0 right-0 mt-1.5 z-50 border shadow-xl rounded-xl max-h-80 overflow-y-auto p-2 space-y-1 custom-scrollbar w-full
+        absolute left-0 right-0 mt-1.5 z-50 border shadow-md rounded-md max-h-80 overflow-y-auto p-2 space-y-1 custom-scrollbar w-full
         {variant === 'black'
           ? 'bg-[#363636] border-[#454545] text-white'
           : 'bg-white dark:bg-[#383838] border-gray-100 dark:border-[#444] text-[#21272C] dark:text-[#E0E0E0]'}

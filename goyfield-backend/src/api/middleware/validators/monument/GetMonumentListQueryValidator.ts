@@ -7,7 +7,7 @@ import { ValidationRule } from "@models/validation/ValidationRule.js";
 import { Validator } from "@models/validation/Validator.js";
 
 export class GetMonumentListQueryValidator extends Validator<GetMonumentListQuery> {
-    public static readonly recordsOnPage = ["40", "60", "80", "100"] as const;
+    public static readonly recordsOnPage = ["10", "20", "40", "50", "60", "80", "100"] as const;
     public static readonly FILTER_LIST_REGEX = /^[a-zA-Z0-9_,]+$/;
     public static readonly COUNT_FILTER_LIST_REGEX = /^[0-9,]+$/;
 
@@ -84,7 +84,7 @@ export class GetMonumentListQueryValidator extends Validator<GetMonumentListQuer
     private static getRecordsOnPageRule(): ValidationRule<GetMonumentListQuery> {
         return new ValidationRule(
             item => typeof item.recordsOnPage === "string" && this.recordsOnPageSet.has(item.recordsOnPage),
-            "recordsOnPage must be 40 or 60 or 80 or 100"
+            "recordsOnPage must be one of: 10, 20, 40, 50, 60, 80, 100"
         );
     }
 }

@@ -214,6 +214,34 @@ export class PullParser {
         return this.normalizeThirdPartyPulls(records);
     }
 
+    public static parseEndfieldTrackerJson(jsonStr: string): PullRecord[] {
+        let parsedData: any;
+        try {
+            parsedData = JSON.parse(jsonStr.trim());
+        } catch {
+            throw new Error("TOOLSDEV_PARSE_ERROR");
+        }
+
+        let records: any[] = [];
+        if (Array.isArray(parsedData)) {
+            records = parsedData;
+        } else if (Array.isArray(parsedData?.data?.list)) {
+            records = parsedData.data.list;
+        } else if (Array.isArray(parsedData?.list)) {
+            records = parsedData.list;
+        } else if (Array.isArray(parsedData?.data?.records)) {
+            records = parsedData.data.records;
+        } else if (Array.isArray(parsedData?.records)) {
+            records = parsedData.records;
+        }
+
+        if (records.length === 0) {
+            throw new Error("TOOLSDEV_EMPTY_ERROR");
+        }
+
+        return this.normalizeThirdPartyPulls(records);
+    }
+
     public static parseTrackMyPullsBackup(fileContent: string): PullRecord[] {
         let parsedData: any;
         try {

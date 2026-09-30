@@ -280,10 +280,14 @@
   }
 
   function getWeekForDate(date) {
+    if (!date) return null;
+    const y = date.getFullYear();
+    const m = String(date.getMonth() + 1).padStart(2, "0");
+    const d = String(date.getDate()).padStart(2, "0");
+    const dateStr = `${y}/${m}/${d}`;
+
     return weaponRotations.weeklyRotations.find((w) => {
-      const start = new Date(w.startDate);
-      const end = new Date(w.endDate);
-      return date >= start && date < end;
+      return dateStr >= w.startDate && dateStr < w.endDate;
     });
   }
 
@@ -386,6 +390,12 @@
   $: nextWeekly6 = nextWeekConfig && weapons[nextWeekConfig.weekly6] ? { id: nextWeekConfig.weekly6, ...weapons[nextWeekConfig.weekly6] } : null;
   $: nextWeekly5 = nextWeekConfig && weapons[nextWeekConfig.weekly5] ? { id: nextWeekConfig.weekly5, ...weapons[nextWeekConfig.weekly5] } : null;
 
+  $: visibleWeeklyRotations = (() => {
+    const cutoff = new Date(gameServerNow);
+    cutoff.setMonth(cutoff.getMonth() - 2);
+    return weaponRotations.weeklyRotations.filter((w) => new Date(w.endDate) >= cutoff);
+  })();
+
   $: if (showCalendarModal) {
     tick().then(() => {
       const activeRow = document.querySelector(".active-week-row");
@@ -406,10 +416,10 @@
 <div
   class="min-h-screen w-full relative flex flex-col items-center py-10 px-4 sm:px-8 font-sans text-[#21272C] dark:text-[#FDFDFD]"
 >
-  <div
-    class="mb-6 transition-opacity hover:opacity-80 flex justify-center w-full"
-  >
-    <Icon name="siteLogo2" className="h-16 w-auto" />
+  <div class="mb-6 flex justify-center w-full">
+    <div class="transition-opacity hover:opacity-80 inline-flex">
+      <Icon name="siteLogo2" class="h-10 w-auto" />
+    </div>
   </div>
 
   <div
@@ -686,7 +696,7 @@
           {:else}
             {#each activePromocodes as promo}
               <div
-                class="flex flex-col md:flex-row md:items-center gap-3 md:gap-4 py-3 px-3 border-b border-gray-50 dark:border-[#444444]/30 last:border-0 hover:bg-gray-50 hover:dark:bg-[#343434] transition-colors rounded-lg group"
+                class="flex flex-col md:flex-row md:items-center gap-1 md:gap-4 py-2 md:py-3 px-2 md:px-3 border-b border-gray-50 dark:border-[#444444]/30 last:border-0 hover:bg-gray-50 hover:dark:bg-[#343434] transition-colors rounded-lg group"
               >
                 <div class="w-full md:w-auto md:max-w-[50%] shrink-0">
                   <div class="flex items-center gap-1.5">
@@ -939,7 +949,7 @@
           href="https://discord.gg/nqfuaRbWWn"
           target="_blank"
           rel="noreferrer"
-          class="w-full min-h-[60px] flex items-center justify-between p-4 bg-[#5865F2] hover:bg-[#4752C4] hover:border-white hover:border text-white rounded-xl shadow-sm transition-colors group"
+          class="w-full min-h-[60px] flex items-center justify-between p-4 bg-[#5865F2] hover:bg-[#4752C4] border border-transparent hover:border-white dark:hover:border-white text-white rounded-xl shadow-sm transition-colors group"
         >
           <div class="flex items-center gap-3">
             <Icon name="discord" class="w-6 h-6" />
@@ -955,7 +965,7 @@
           href="https://github.com/ivaqis/arknights-tracker"
           target="_blank"
           rel="noopener noreferrer"
-          class="w-full min-h-[60px] flex items-center justify-between p-4 bg-[#24292F] border border-gray-100 dark:border-[#333333] hover:bg-[#1C2128] hover:border-white hover:border text-white rounded-xl shadow-sm transition-colors group"
+          class="w-full min-h-[60px] flex items-center justify-between p-4 bg-[#24292F] border border-gray-100 dark:border-[#333333] hover:bg-[#1C2128] hover:border-white dark:hover:border-white text-white rounded-xl shadow-sm transition-colors group"
         >
           <div class="flex items-center">
             <Icon name="gitHubBig" class="h-[22px] w-auto text-white" />
@@ -1094,11 +1104,11 @@
                 </tr>
             </thead>
             <tbody class="text-[11px] font-nums text-gray-800 dark:text-gray-300">
-                {#each weaponRotations.weeklyRotations as w (w.week)}
+                {#each visibleWeeklyRotations as w (w.week)}
                     {@const isCurrentWeek = currentWeekConfig && currentWeekConfig.week === w.week}
-                    <tr class="transition-colors border-b border-gray-100 dark:border-[#333] even:bg-gray-50/50 dark:even:bg-[#383838]/50 {isCurrentWeek ? 'active-week-row bg-yellow-500/10 dark:bg-yellow-500/10 font-bold' : ''}">
-                        <td class="py-4 px-2 border-r dark:border-[#444]">{w.week}</td>
-                        <td class="py-4 px-2 border-r dark:border-[#444] text-[10px] whitespace-nowrap">
+                    <tr class="transition-colors {isCurrentWeek ? 'active-week-row bg-yellow-500/20 dark:bg-yellow-500/15 border-y-2 border-yellow-500/80 dark:border-yellow-400/80 font-bold' : 'border-b border-gray-100 dark:border-[#333] even:bg-gray-50/50 dark:even:bg-[#383838]/50'}">
+                        <td class="py-4 px-2 border-r dark:border-[#444] {isCurrentWeek ? 'text-yellow-600 dark:text-yellow-400 font-black' : ''}">{w.week}</td>
+                        <td class="py-4 px-2 border-r dark:border-[#444] text-[10px] whitespace-nowrap {isCurrentWeek ? 'text-yellow-700 dark:text-yellow-300 font-bold' : ''}">
                             {formatWeekLabel(w, $currentUiLocale)}
                         </td>
                         <td class="py-4 px-2 border-r dark:border-[#444]">
@@ -1122,7 +1132,7 @@
                         {#each ["mon", "tue", "wed", "thu", "fri", "sat", "sun"] as day}
                             {@const dayWeaponIds = weaponRotations.dailyTemplates[w.dailyTemplate][day] || []}
                             {@const isCurrentDay = isCurrentWeek && day === currentDayKey}
-                            <td class="py-4 px-2 border-r dark:border-[#444] last:border-r-0 {isCurrentDay ? 'bg-yellow-500/25 dark:bg-yellow-500/25 font-bold' : ''}">
+                            <td class="py-4 px-2 border-r dark:border-[#444] last:border-r-0 {isCurrentDay ? 'bg-yellow-500/40 dark:bg-yellow-400/30 ring-1 ring-inset ring-yellow-500/60 font-black' : ''}">
                                 <div class="flex flex-col gap-1.5 items-center justify-center">
                                     {#each dayWeaponIds as id}
                                         {#if weapons[id]}

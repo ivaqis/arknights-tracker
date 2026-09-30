@@ -7,3 +7,5 @@ export const powerShellScript3 = `Set-ExecutionPolicy Bypass -Scope Process -For
 export const browserBookmarklet = `javascript:(async()=>{try{let e=null;for(let[t,n]of Object.entries(sessionStorage))if(t.startsWith("APP_ROLE_U8_TOKEN:")){e=n.toString().split(":")[0];break}if(!e)throw new Error("Token not found. Please log in and refresh the page.");await navigator.clipboard.writeText(e),alert("Success! Token copied to clipboard.")}catch(e){alert("Error: "+e.message)}})();`;
 
 export const toolsdevBookmarklet = `javascript:(async()=>{try{let e=localStorage.getItem("headhunt_user_data_v2");if(!e)throw new Error("Data not found.");await navigator.clipboard.writeText(e),alert("Success! Data copied to clipboard.")}catch(e){alert("Error: "+e.message)}})();`;
+
+export const endfieldtrackerBookmarklet = `javascript:(async()=>{try{let e=localStorage.getItem("trackerImport:v1");if(!e)throw new Error("Data not found.");await navigator.clipboard.writeText(e),alert("Success! Data copied to clipboard.")}catch(e){alert("Error: "+e.message)}})();`;

@@ -70,7 +70,11 @@
     }));
 
     let entries = [];
+    let totalEntries = 0;
     let loading = true;
+    let currentPage = 1;
+    let pageSize = (browser && typeof localStorage !== "undefined" && Number(localStorage.getItem("leaderboard_page_size"))) || 20;
+    if (![10, 20, 50].includes(pageSize)) pageSize = 20;
     let selectedEvent = (browser && typeof localStorage !== "undefined" && localStorage.getItem("leaderboard_event"))
         || "monument";
     let selectedMonumentGroup = (browser && typeof localStorage !== "undefined" && localStorage.getItem("leaderboard_monument_group"))
@@ -95,6 +99,8 @@
     let teamSizeFilter = (browser && typeof localStorage !== "undefined" && localStorage.getItem("leaderboard_team_size"))
         ? Number(localStorage.getItem("leaderboard_team_size"))
         : null;
+
+    $: totalPages = Math.max(1, Math.ceil(totalEntries / pageSize));
 
     $: if (browser && typeof localStorage !== "undefined") {
         localStorage.setItem("leaderboard_event", selectedEvent);
@@ -288,25 +294,61 @@
                 sortAsc = true;
             }
         }
+        currentPage = 1;
         loadLeaderboard();
     }
 
+    function setPage(newPage) {
+        if (newPage < 1 || newPage > totalPages || newPage === currentPage) return;
+        currentPage = newPage;
+        loadLeaderboard();
+    }
+
+    function setPageSize(newSize) {
+        if (pageSize === newSize) return;
+        pageSize = newSize;
+        currentPage = 1;
+        if (browser && typeof localStorage !== "undefined") {
+            localStorage.setItem("leaderboard_page_size", String(newSize));
+        }
+        loadLeaderboard();
+    }
+
+    function getPageNumbers(current, total) {
+        if (total <= 7) {
+            return Array.from({ length: total }, (_, i) => i + 1);
+        }
+        if (current <= 4) {
+            return [1, 2, 3, 4, 5, '...', total];
+        }
+        if (current >= total - 3) {
+            return [1, '...', total - 4, total - 3, total - 2, total - 1, total];
+        }
+        return [1, '...', current - 1, current, current + 1, '...', total];
+    }
+
     async function loadLeaderboard() {
+        if (!browser) return;
         if (selectedEvent === 'echoesOfWar') {
             entries = [];
+            totalEntries = 0;
             loading = false;
             return;
         }
         loading = true;
         try {
-            entries = await fetchLeaderboard({
+            const data = await fetchLeaderboard({
                 event: selectedEvent,
                 dungeonId: selectedEvent === 'monument' ? currentDungeonId : undefined,
                 serverId: serverFilter,
                 charCountFilter: teamSizeFilter ? String(teamSizeFilter) : '',
                 sortField: sortField === "default" ? undefined : sortField,
-                sortOrder: sortAsc ? "asc" : "desc"
+                sortOrder: sortAsc ? "asc" : "desc",
+                page: currentPage,
+                recordsOnPage: pageSize
             });
+            entries = data.list || [];
+            totalEntries = data.totalCount || 0;
         } catch (e) {
             addNotification("error", $t("leaderboard.load_failed"));
         } finally {
@@ -317,21 +359,25 @@
     $: if (selectedEvent !== prevEvent) {
         prevEvent = selectedEvent;
         sortField = "default";
+        currentPage = 1;
         loadLeaderboard();
     }
 
     $: if (currentDungeonId !== prevDungeon) {
         prevDungeon = currentDungeonId;
+        currentPage = 1;
         loadLeaderboard();
     }
 
     $: if (serverFilter !== prevServer) {
         prevServer = serverFilter;
+        currentPage = 1;
         loadLeaderboard();
     }
 
     $: if (teamSizeFilter !== prevTeamSize) {
         prevTeamSize = teamSizeFilter;
+        currentPage = 1;
         loadLeaderboard();
     }
 
@@ -339,59 +385,7 @@
         loadLeaderboard();
     });
 
-    $: filteredEntries = (() => {
-        let list = entries.filter(e => {
-            if (serverFilter === "all") return true;
-            return String(e.serverId) === serverFilter;
-        });
-
-        if (teamSizeFilter !== null) {
-            list = list.filter(e => (e.chars?.length || 0) === teamSizeFilter);
-        }
-
-        list = [...list];
-
-        if (sortField === "level") {
-            list.sort((a, b) => {
-                const diff = (a.level || 0) - (b.level || 0);
-                return sortAsc ? diff : -diff;
-            });
-        } else if (sortField === "contractLevel") {
-            list.sort((a, b) => {
-                const diff = (a.contractLevel || 0) - (b.contractLevel || 0);
-                return sortAsc ? diff : -diff;
-            });
-        } else if (sortField === "time") {
-            list.sort((a, b) => {
-                const diff = (a.clear_time || 0) - (b.clear_time || 0);
-                return sortAsc ? diff : -diff;
-            });
-        } else {
-            if (selectedEvent === "contract") {
-                list.sort((a, b) => {
-                    if (b.contractLevel !== a.contractLevel) {
-                        return b.contractLevel - a.contractLevel;
-                    }
-                    if (a.clear_time !== b.clear_time) {
-                        return a.clear_time - b.clear_time;
-                    }
-                    return String(a.id || "").localeCompare(String(b.id || ""));
-                });
-            } else {
-                list.sort((a, b) => {
-                    if (a.clear_time !== b.clear_time) {
-                        return a.clear_time - b.clear_time;
-                    }
-                    if (b.level !== a.level) {
-                        return b.level - a.level;
-                    }
-                    return String(a.id || "").localeCompare(String(b.id || ""));
-                });
-            }
-        }
-
-        return list;
-    })();
+    $: filteredEntries = entries;
 
     function formatTime(seconds) {
         if (!seconds || isNaN(seconds)) return "0s";
@@ -851,28 +845,29 @@
                             </thead>
                             <tbody class="divide-y divide-white/5">
                                 {#each filteredEntries as entry, index}
+                                    {@const rank = (currentPage - 1) * pageSize + index + 1}
                                     <tr
                                         on:click={() => selectEntry(entry)}
                                         class="hover:bg-white/5 transition-colors cursor-pointer"
                                     >
                                         <td class="py-2.5 px-5">
-                                            {#if index === 0}
+                                            {#if rank === 1}
                                                 <div class="relative w-8 h-8 flex items-center justify-center text-[#FFE145] shrink-0" title="1st Place">
                                                     <Icon name="laurelWreath" class="w-full h-full absolute inset-0" />
                                                     <span class="relative font-black font-nums text-xs pb-0.5">1</span>
                                                 </div>
-                                            {:else if index === 1}
+                                            {:else if rank === 2}
                                                 <div class="relative w-8 h-8 flex items-center justify-center text-[#C0C0C0] shrink-0" title="2nd Place">
                                                     <Icon name="laurelWreath" class="w-full h-full absolute inset-0" />
                                                     <span class="relative font-black font-nums text-xs pb-0.5">2</span>
                                                 </div>
-                                            {:else if index === 2}
+                                            {:else if rank === 3}
                                                 <div class="relative w-8 h-8 flex items-center justify-center text-[#CD7F32] shrink-0" title="3rd Place">
                                                     <Icon name="laurelWreath" class="w-full h-full absolute inset-0" />
                                                     <span class="relative font-black font-nums text-xs pb-0.5">3</span>
                                                 </div>
                                             {:else}
-                                                <span class="w-8 text-center text-gray-600 dark:text-gray-400 font-bold font-nums text-sm block">{index + 1}</span>
+                                                <span class="w-8 text-center text-gray-600 dark:text-gray-400 font-bold font-nums text-sm block">{rank}</span>
                                             {/if}
                                         </td>
 
@@ -880,7 +875,7 @@
                                             <div class="flex items-center gap-2.5 whitespace-nowrap shrink-0 w-fit">
                                                 <div class="flex items-center gap-2.5 group/user shrink-0">
                                                     {#if entry.user.picture && entry.user.avatar_strike === 0}
-                                                        <a href="/u/{entry.user.name}" class="shrink-0" on:click|stopPropagation>
+                                                        <a href="/u/{entry.user.name}{entry.serverId ? `?server=${entry.serverId}` : ''}" class="shrink-0" on:click|stopPropagation>
                                                             <img
                                                                 src={getAvatarUrl(entry.user.picture)}
                                                                 alt={entry.user.name}
@@ -888,14 +883,14 @@
                                                             />
                                                         </a>
                                                     {:else}
-                                                        <a href="/u/{entry.user.name}" class="shrink-0" on:click|stopPropagation>
+                                                        <a href="/u/{entry.user.name}{entry.serverId ? `?server=${entry.serverId}` : ''}" class="shrink-0" on:click|stopPropagation>
                                                             <div class="w-9 h-9 rounded-md bg-gray-200 border-gray-300 dark:bg-white/10 border dark:border-white/20 flex items-center justify-center text-gray-500 dark:text-white/70 font-bold text-xs shrink-0 select-none group-hover/user:bg-white/20 transition-colors">
                                                                 {entry.user.name ? entry.user.name[0].toUpperCase() : "?"}
                                                             </div>
                                                         </a>
                                                     {/if}
                                                     <div class="flex items-center gap-1 shrink-0">
-                                                        <a href="/u/{entry.user.name}" class="group font-bold text-gray-600 dark:text-white group-hover/user:text-[#FFE145] group-hover/user:dark:text-[#FFE145] transition-colors inline-flex items-center gap-1 shrink-0" on:click|stopPropagation>
+                                                        <a href="/u/{entry.user.name}{entry.serverId ? `?server=${entry.serverId}` : ''}" class="group font-bold text-gray-600 dark:text-white group-hover/user:text-[#FFE145] group-hover/user:dark:text-[#FFE145] transition-colors inline-flex items-center gap-1 shrink-0" on:click|stopPropagation>
                                                             <span>{entry.user.name}</span>
                                                             <Icon name="sendToLink" class="w-3 h-3 text-gray-600 dark:text-white group-hover/user:text-[#FFE145] group-hover/user:dark:text-[#FFE145] group-hover:text-[#FFE145] group-hover:dark:text-[#FFE145] transition-transform duration-200 shrink-0" />
                                                         </a>
@@ -974,6 +969,7 @@
 
                     <div class="block md:hidden divide-y divide-gray-200 dark:divide-white/10">
                         {#each filteredEntries as entry, index}
+                            {@const rank = (currentPage - 1) * pageSize + index + 1}
                             <div 
                                 on:click={() => selectEntry(entry)}
                                 on:keydown={(e) => e.key === 'Enter' && selectEntry(entry)}
@@ -983,23 +979,23 @@
                             >
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-3">
-                                        {#if index === 0}
+                                        {#if rank === 1}
                                             <div class="relative w-7 h-7 flex items-center justify-center text-[#FFE145] shrink-0" title="1st Place">
                                                 <Icon name="laurelWreath" class="w-full h-full absolute inset-0" />
                                                 <span class="relative font-black font-nums text-[11px] pb-0.5">1</span>
                                             </div>
-                                        {:else if index === 1}
+                                        {:else if rank === 2}
                                             <div class="relative w-7 h-7 flex items-center justify-center text-[#C0C0C0] shrink-0" title="2nd Place">
                                                 <Icon name="laurelWreath" class="w-full h-full absolute inset-0" />
                                                 <span class="relative font-black font-nums text-[11px] pb-0.5">2</span>
                                             </div>
-                                        {:else if index === 2}
+                                        {:else if rank === 3}
                                             <div class="relative w-7 h-7 flex items-center justify-center text-[#CD7F32] shrink-0" title="3rd Place">
                                                 <Icon name="laurelWreath" class="w-full h-full absolute inset-0" />
                                                 <span class="relative font-black font-nums text-[11px] pb-0.5">3</span>
                                             </div>
                                         {:else}
-                                            <span class="w-7 text-center text-gray-500 dark:text-gray-400 font-bold font-nums text-xs shrink-0">{index + 1}</span>
+                                            <span class="w-7 text-center text-gray-500 dark:text-gray-400 font-bold font-nums text-xs shrink-0">{rank}</span>
                                         {/if}
 
                                         <div class="flex items-center gap-2">
@@ -1076,6 +1072,61 @@
                             </div>
                         {/each}
                     </div>
+
+                    {#if totalEntries > pageSize}
+                        <div class="flex flex-col sm:flex-row items-center justify-between gap-3 px-5 py-3.5 border-t border-gray-200 dark:border-white/10 bg-gray-50 dark:bg-white/[0.02]">
+                            <div class="flex items-center gap-2 text-xs text-gray-500 dark:text-gray-400 font-medium select-none">
+                                <span>{$t("leaderboard.per_page")}:</span>
+                                <div class="flex items-center bg-gray-200/70 dark:bg-black/30 p-0.5 rounded-lg">
+                                    {#each [10, 20, 50] as size}
+                                        <button
+                                            type="button"
+                                            on:click={() => setPageSize(size)}
+                                            class="px-2.5 py-1 rounded-md text-xs font-bold font-nums transition-colors {pageSize === size ? 'bg-[#FFE145] text-gray-900 shadow-xs' : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white'}"
+                                        >
+                                            {size}
+                                        </button>
+                                    {/each}
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-1.5 select-none">
+                                <button
+                                    type="button"
+                                    on:click={() => setPage(currentPage - 1)}
+                                    disabled={currentPage <= 1}
+                                    class="w-8 h-8 rounded-lg text-xs font-bold font-sdk transition-colors flex items-center justify-center bg-gray-100 dark:bg-white/5 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-white/10 disabled:opacity-30 disabled:pointer-events-none cursor-pointer"
+                                    aria-label={$t("leaderboard.prev_page")}
+                                >
+                                    <Icon name="chevronLeft" class="w-3.5 h-3.5" />
+                                </button>
+
+                                {#each getPageNumbers(currentPage, totalPages) as p}
+                                    {#if p === '...'}
+                                        <span class="w-8 h-8 flex items-center justify-center text-xs text-gray-400 dark:text-gray-500 font-bold">...</span>
+                                    {:else}
+                                        <button
+                                            type="button"
+                                            on:click={() => setPage(p)}
+                                            class="w-8 h-8 rounded-lg text-xs font-bold font-nums transition-colors flex items-center justify-center cursor-pointer {currentPage === p ? 'bg-[#FFE145] text-gray-900 shadow-xs font-black' : 'bg-gray-100 dark:bg-white/5 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-white/10'}"
+                                        >
+                                            {p}
+                                        </button>
+                                    {/if}
+                                {/each}
+
+                                <button
+                                    type="button"
+                                    on:click={() => setPage(currentPage + 1)}
+                                    disabled={currentPage >= totalPages}
+                                    class="w-8 h-8 rounded-lg text-xs font-bold font-sdk transition-colors flex items-center justify-center bg-gray-100 dark:bg-white/5 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-white/10 disabled:opacity-30 disabled:pointer-events-none cursor-pointer"
+                                    aria-label={$t("leaderboard.next_page")}
+                                >
+                                    <Icon name="chevronRight" class="w-3.5 h-3.5" />
+                                </button>
+                            </div>
+                        </div>
+                    {/if}
                 </div>
             {/if}
         </div>
@@ -1092,7 +1143,7 @@
                 </button>
 
                 <div class="border-b border-gray-200 dark:border-white/10 pb-3 mb-3">
-                    <a href="/u/{selectedEntry.user.name}" class="inline-flex items-center gap-4 group">
+                    <a href="/u/{selectedEntry.user.name}{selectedEntry.serverId ? `?server=${selectedEntry.serverId}` : ''}" class="inline-flex items-center gap-4 group">
                         {#if selectedEntry.user.picture && selectedEntry.user.avatar_strike === 0}
                             <img
                                 src={getAvatarUrl(selectedEntry.user.picture)}

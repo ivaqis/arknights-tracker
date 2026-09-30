@@ -2,6 +2,7 @@
     import { t } from "$lib/i18n";
     import { currentLocale, currentUiLocale, normalizeLocale } from "$lib/stores/locale";
     import { enemies } from "$lib/data/enemies.js";
+    import { changelogData } from "$lib/data/versions.js";
     import { getRarityColor } from "$lib/utils/colorUtils.js";
 
     import Icon from "$lib/components/Icon.svelte";
@@ -88,6 +89,7 @@
     $: enemyAbilities = enemyLocale.abilities || [];
     $: enemyDescription = enemyLocale.description || "";
     $: rarityColor = getRarityColor(enemyData.rarity || 4);
+    $: addedVersion = changelogData.find((v) => v.enemies?.includes(id))?.version || (enemies[id] ? "1.0" : null);
 
     function getResColorClass(val) {
         const percent = Math.round(val * 100);
@@ -424,6 +426,17 @@
                         </div>
                     </div>
                 {/if}
+
+                    {#if addedVersion}
+                        <div class="flex justify-end pt-1">
+                            <a
+                                href="/changelog?version={addedVersion}"
+                                class="text-xs text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
+                            >
+                                {$t("systemNames.addedInVersion", { version: addedVersion })}
+                            </a>
+                        </div>
+                    {/if}
                 </div>
             </div>
 
@@ -456,7 +469,7 @@
                 <div class="flex flex-wrap gap-2 pt-1">
                     {#if enemyData.drop && enemyData.drop.length > 0}
                         {#each enemyData.drop as dropId}
-                            <ItemCard item={{id: dropId}} hideAmount=true customPath="itemNames" />
+                            <ItemCard item={{id: dropId}} hideAmount=true customPath="itemNames" linkToRecipe={true} />
                         {/each}
                     {:else}
                         <div class="w-full text-center text-gray-500 dark:text-[#B7B6B3] text-sm py-4 italic">

@@ -2,6 +2,7 @@
     import { t } from "$lib/i18n";
     import { currentLocale } from "$lib/stores/locale";
     import { equipment } from "$lib/data/items/equipment.js";
+    import { changelogData } from "$lib/data/versions.js";
     import { browser } from "$app/environment";
     import { getRarityColor } from "$lib/utils/colorUtils.js";
 
@@ -86,6 +87,15 @@
     $: partTypeLabel = $t(`equipmentTypes.${partTypeStr}` || partTypeStr);
     $: rarityColor = getRarityColor(rarity);
     $: currentBlackboard = equipData.blackboard || {};
+    $: addedVersion = changelogData.find((v) => v.equipment?.includes(id))?.version || (equipment[id] ? "1.0" : null);
+
+    $: setEquipment = (() => {
+        if (!pack || pack === "none" || pack === "") return [];
+        return Object.entries(equipment)
+            .filter(([_, data]) => data.pack === pack)
+            .map(([eId, data]) => ({ id: eId, ...data }))
+            .sort((a, b) => (a.partType ?? 0) - (b.partType ?? 0) || (a.rarity ?? 0) - (b.rarity ?? 0) || a.id.localeCompare(b.id));
+    })();
 
     function getScriptName(recipe, index) {
         if (!recipe) return "";
@@ -764,6 +774,17 @@
                             {equipLocale.decoDesc}
                         </div>
                     {/if}
+
+                    {#if addedVersion}
+                        <div class="flex justify-end pt-1">
+                            <a
+                                href="/changelog?version={addedVersion}"
+                                class="text-xs text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
+                            >
+                                {$t("systemNames.addedInVersion", { version: addedVersion })}
+                            </a>
+                        </div>
+                    {/if}
                 </div>
             </div>
             {#if artificingMatches.length > 0 && artificingMatches.some((group) => group.matches.length > 0)}
@@ -781,26 +802,29 @@
                     >
                         {#each artificingMatches as attrGroup}
                             <div class="flex flex-col gap-3">
-                                <div
-                                    class="flex items-center gap-3 px-3 py-2.5 bg-gray-200 dark:bg-[#383838]/50 rounded-xl min-h-[48px] mb-1"
-                                >
+                                <div class="sticky top-0 z-30 pt-2 pb-1 bg-white dark:bg-[#2b2b2b]">
                                     <div
-                                        class="w-8 h-8 bg-[#21272C] dark:bg-white/10 rounded-lg flex items-center justify-center shrink-0"
+                                        class="flex items-center gap-3 px-3 py-2.5 bg-gray-200/95 dark:bg-[#383838] backdrop-blur-sm rounded-xl min-h-[48px] shadow-xs"
                                     >
-                                        <Icon
-                                            name={attrGroup.attrType.toLowerCase() ===
-                                            "maxhp"
-                                                ? "hp"
-                                                : attrGroup.attrType.toLowerCase()}
-                                            class="w-5 h-5 text-white"
-                                        />
-                                    </div>
+                                        <div
+                                            class="w-8 h-8 bg-[#21272C] dark:bg-white/10 rounded-lg flex items-center justify-center shrink-0"
+                                        >
+                                            <Icon
+                                                name={attrGroup.attrType.toLowerCase() ===
+                                                "maxhp"
+                                                    ? "hp"
+                                                    : attrGroup.attrType.toLowerCase()}
+                                                class="w-5 h-5 text-white"
+                                            />
+                                        </div>
 
-                                    <span
-                                        class="font-medium text-[15px] text-[#21272C] dark:text-white tracking-wide leading-tight"
-                                    >
-                                        {$t(`equipSkills.${attrGroup.attrType}` || attrGroup.attrType)}
-                                    </span>
+                                        <span
+                                            class="font-medium text-[15px] text-[#21272C] dark:text-white tracking-wide leading-tight"
+                                        >
+                                            {$t(`equipSkills.${attrGroup.attrType}` || attrGroup.attrType)}
+                                        </span>
+                                    </div>
+                                    <div class="h-3.5 bg-gradient-to-b from-white dark:from-[#2b2b2b] to-transparent pointer-events-none -mb-3.5"></div>
                                 </div>
 
                                 <div class="flex flex-col gap-2">
@@ -827,7 +851,7 @@
                                                 />
                                                 {#if match.id === id}
                                                     <span
-                                                        class="absolute bottom-0 left-0 right-0 py-[1.5px] bg-[#26BAFB]/60 dark:bg-[#26BAFB]/45 text-white text-[8px] font-bold uppercase leading-none text-center pointer-events-none rounded-b-[6px] shadow-sm z-30"
+                                                        class="absolute bottom-0 left-0 right-0 py-[1.5px] bg-[#26BAFB]/60 dark:bg-[#26BAFB]/45 text-white text-[8px] font-bold uppercase leading-none text-center pointer-events-none rounded-b-[6px] shadow-sm z-10"
                                                     >
                                                         Same
                                                     </span>
@@ -980,7 +1004,7 @@
                                 <div
                                     class="w-full text-gray-500 dark:text-[#B7B6B3] text-sm py-4 italic"
                                 >
-                                    {$t("systemNames.noMaterialsNeeded" || "No materials needed")}
+                                    {$t("systemNames.noMaterialsNeeded")}
                                 </div>
                             {/if}
                         </div>
@@ -1002,6 +1026,36 @@
                         title={$t("systemNames.gearTemplate")}
                         onZoom={onZoomImage}
                     />
+                </div>
+            {/if}
+
+            {#if setEquipment.length > 0}
+                <div
+                    class="bg-white dark:bg-[#2b2b2b] p-6 rounded-3xl border border-gray-200 dark:border-[#444] flex flex-col gap-4 transition-colors shadow-sm"
+                >
+                    <div class="flex items-center justify-between border-b border-gray-100 dark:border-[#444] pb-3">
+                        <h2 class="text-2xl font-bold text-[#21272C] dark:text-[#FDFDFD] font-sdk">
+                            {$t(`packs.${pack}`)}
+                        </h2>
+                    </div>
+                    <div class="flex flex-wrap justify-center gap-3">
+                        {#each setEquipment as eq (eq.id)}
+                            <div class="relative w-[110px] h-[110px]">
+                                <WeaponCard
+                                    weapon={eq}
+                                    isEquipment={true}
+                                    asLink={!onSelectEquipment}
+                                    onClick={onSelectEquipment ? () => onSelectEquipment(eq.id) : undefined}
+                                    className="w-full h-full"
+                                />
+                                {#if eq.id === id}
+                                    <div
+                                        class="absolute inset-[-3px] border-[3px] border-[#F9B90C] rounded-[9px] z-30 pointer-events-none"
+                                    ></div>
+                                {/if}
+                            </div>
+                        {/each}
+                    </div>
                 </div>
             {/if}
         </div>

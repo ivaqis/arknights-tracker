@@ -171,7 +171,7 @@
 
 {/if}
 
-<div class="w-full max-w-[1800px] px-6 pb-20">
+<div class="w-full max-w-[1800px] px-2 pb-20">
 
     <div class="flex items-center gap-4 mb-8">
 

@@ -92,7 +92,7 @@ export class GetMonumentGroupListQueryValidator extends Validator<GetMonumentGro
     private static getRecordsOnPageRule(): ValidationRule<GetMonumentGroupListQuery> {
         return new ValidationRule(
             item => typeof item.recordsOnPage === "string" && this.recordsOnPageSet.has(item.recordsOnPage),
-            "recordsOnPage must be 40 or 60 or 80 or 100"
+            "recordsOnPage must be one of: 10, 20, 40, 50, 60, 80, 100"
         );
     }
 }

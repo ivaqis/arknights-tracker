@@ -41,6 +41,7 @@
     let selectedFileName = "";
     let lastParsedPulls = null;
     let toolsDevJsonInput = "";
+    let endfieldTrackerJsonInput = "";
     let isDeleteModalOpen = false;
     let tokenToDeleteIndex = null;
 
@@ -514,6 +515,7 @@
         previewReport = null;
         errorMsg = "";
         toolsDevJsonInput = "";
+        endfieldTrackerJsonInput = "";
     }
 
     async function runSmartImportPreview(pullsMapped) {
@@ -552,6 +554,7 @@
         if (msg === "ENDMIN_NO_PULLS_ERROR") return $t("import.endmin_no_pulls_error");
         if (msg === "TOOLSDEV_EMPTY_ERROR") return $t("import.endmin_no_pulls_error");
         if (msg === "TOOLSDEV_PARSE_ERROR") return $t("import.error_format");
+        if (platform === "endfieldtracker") return $t("import.error_format");
         if (platform === "protorig") return $t("import.protorig_parse_error");
         if (platform === "trackmypulls") return $t("import.trackmypulls_parse_error");
         if (platform === "endmin") return $t("import.endmin_unknown_error");
@@ -623,6 +626,29 @@
         }
     }
 
+    async function handleEndfieldTrackerImport() {
+        errorMsg = "";
+        isInputError = false;
+        if (!endfieldTrackerJsonInput.trim()) {
+            errorMsg = $t("import.error_empty");
+            isInputError = true;
+            return;
+        }
+
+        isLoading = true;
+        previewReport = null;
+        pendingData = null;
+
+        try {
+            lastParsedPulls = PullParser.parseEndfieldTrackerJson(endfieldTrackerJsonInput);
+        } catch (err) {
+            console.error("Error processing endfieldtracker.com data:", err);
+            errorMsg = mapFileImportError(err, "endfieldtracker");
+        } finally {
+            isLoading = false;
+        }
+    }
+
     function getBannerName(bannerId) {
         const norm = PullParser.normalizeBannerKey(bannerId);
         const bannersKey = `banners.${norm}`;
@@ -645,6 +671,7 @@
     $: if (lastParsedPulls
         && (platformTab === "endmin"
             || platformTab === "toolsdev"
+            || platformTab === "endfieldtracker"
             || platformTab === "protorig"
             || platformTab === "trackmypulls"
         )
@@ -678,7 +705,7 @@
     </div>
 
     <div
-        class="bg-white p-8 md:p-12 rounded-xl dark:bg-[#383838] dark:border-[#444444] shadow-sm border border-gray-100 relative min-h-[400px]"
+        class="bg-white p-5 md:p-12 rounded-xl dark:bg-[#383838] dark:border-[#444444] shadow-sm border border-gray-100 relative min-h-[400px]"
     >
         <div
             class="bg-white dark:bg-[#343434] border border-gray-200 dark:border-[#444444] rounded-xl p-4 mb-3 shadow-sm"
@@ -736,7 +763,7 @@
             <div
                 class="flex w-full overflow-x-auto no-scrollbar max-[719px]:bg-gray-100 max-[719px]:dark:bg-[#2b2b2b] max-[719px]:p-1 max-[719px]:rounded-xl max-[719px]:border max-[719px]:border-gray-200/50 max-[719px]:dark:border-gray-800/50 max-[719px]:gap-1 max-[719px]:items-center min-[720px]:border-b min-[720px]:border-gray-200 min-[720px]:dark:border-[#444444] min-[720px]:gap-0 min-[720px]:items-end min-[720px]:pb-1"
             >
-                {#each [{ id: "pc-web", label: $t("import.tab_pc") }, { id: "pc1", label: $t("import.tab_pc1") }, { id: "pc2", label: $t("import.tab_pc2") }, { id: "pc3", label: $t("import.tab_pc3") }, { id: "pc-manual", label: $t("import.tab_pc_manual") }, { id: "android", label: $t("import.tab_android") }, { id: "ios", label: $t("import.tab_ios") }, { id: "endmin", label: "endmin.moe" }, { id: "toolsdev", label: "endfieldtools.dev" }, { id: "protorig", label: "PROTORIG.app" }, { id: "trackmypulls", label: "trackmypulls.com" }] as tab}
+                {#each [{ id: "pc-web", label: $t("import.tab_pc") }, { id: "pc1", label: $t("import.tab_pc1") }, { id: "pc2", label: $t("import.tab_pc2") }, { id: "pc3", label: $t("import.tab_pc3") }, { id: "pc-manual", label: $t("import.tab_pc_manual") }, { id: "android", label: $t("import.tab_android") }, { id: "ios", label: $t("import.tab_ios") }, { id: "endmin", label: "endmin.moe" }, { id: "toolsdev", label: "endfieldtools.dev" }, { id: "endfieldtracker", label: "endfieldtracker.com" }, { id: "protorig", label: "PROTORIG.app" }, { id: "trackmypulls", label: "trackmypulls.com" }] as tab}
                     <button
                         class="font-bold transition-all whitespace-nowrap select-none
                             {platformTab === tab.id
@@ -761,13 +788,21 @@
                     inputId="endmin-file-input"
                     on:select={(e) => processFile(e.detail)}
                 />
-            {:else if platformTab === 'toolsdev'}
+            {:else if platformTab === 'toolsdev' || platformTab === 'endfieldtracker'}
                 <div class="max-w-4xl mb-6 relative flex flex-col gap-3">
-                    <textarea
-                        bind:value={toolsDevJsonInput}
-                        placeholder={$t("import.toolsdev_placeholder")}
-                        class="w-full min-h-[160px] p-3 mb-3 bg-gray-50 dark:bg-[#343434] dark:border-[#444444] dark:text-[#E0E0E0] border border-gray-200 focus:bg-white focus:border-[#FFE145] focus:dark:border-[#FFE145] rounded-lg text-sm outline-none text-[#21272C] transition-colors font-mono resize-y"
-                    ></textarea>
+                    {#if platformTab === 'toolsdev'}
+                        <textarea
+                            bind:value={toolsDevJsonInput}
+                            placeholder={$t("import.toolsdev_placeholder")}
+                            class="w-full min-h-[160px] p-3 mb-3 bg-gray-50 dark:bg-[#343434] dark:border-[#444444] dark:text-[#E0E0E0] border border-gray-200 focus:bg-white focus:border-[#FFE145] focus:dark:border-[#FFE145] rounded-lg text-sm outline-none text-[#21272C] transition-colors font-mono resize-y"
+                        ></textarea>
+                    {:else}
+                        <textarea
+                            bind:value={endfieldTrackerJsonInput}
+                            placeholder={$t("import.toolsdev_placeholder")}
+                            class="w-full min-h-[160px] p-3 mb-3 bg-gray-50 dark:bg-[#343434] dark:border-[#444444] dark:text-[#E0E0E0] border border-gray-200 focus:bg-white focus:border-[#FFE145] focus:dark:border-[#FFE145] rounded-lg text-sm outline-none text-[#21272C] transition-colors font-mono resize-y"
+                        ></textarea>
+                    {/if}
                     <div
                         class="w-fit {isLoading
                             ? 'opacity-60 pointer-events-none cursor-not-allowed'
@@ -776,7 +811,10 @@
                         <Button
                             variant="yellow"
                             onClick={() => {
-                                if (!isLoading) handleToolsDevImport();
+                                if (!isLoading) {
+                                    if (platformTab === 'toolsdev') handleToolsDevImport();
+                                    else handleEndfieldTrackerImport();
+                                }
                             }}
                             disabled={isLoading}
                         >
@@ -935,7 +973,7 @@
             {/if}
 
             <div class="flex flex-col gap-4 mt-2 max-w-4xl items-start">
-                {#if activeTab === "new" && platformTab !== 'endmin' && platformTab !== 'toolsdev' && platformTab !== 'protorig' && platformTab !== 'trackmypulls'}
+                {#if activeTab === "new" && platformTab !== 'endmin' && platformTab !== 'toolsdev' && platformTab !== 'endfieldtracker' && platformTab !== 'protorig' && platformTab !== 'trackmypulls'}
                     <div
                         class="flex flex-col gap-2 transition-all w-full"
                     >
@@ -994,7 +1032,7 @@
                     </div>
                 {/if}
 
-                {#if platformTab !== 'endmin' && platformTab !== 'toolsdev' && platformTab !== 'protorig' && platformTab !== 'trackmypulls'}
+                {#if platformTab !== 'endmin' && platformTab !== 'toolsdev' && platformTab !== 'endfieldtracker' && platformTab !== 'protorig' && platformTab !== 'trackmypulls'}
                     <Checkbox bind:checked={isGlobalStatsEnabled} variant="yellow" align="center">
                         <span
                             class="text-gray-600 dark:text-[#E0E0E0] group-hover:text-black group-hover:dark:text-[#FDFDFD] transition-colors cursor-pointer font-medium text-sm"
@@ -1019,7 +1057,7 @@
                     </span>
                 </Checkbox>
 
-                {#if platformTab !== 'endmin' && platformTab !== 'toolsdev' && platformTab !== 'protorig' && platformTab !== 'trackmypulls'}
+                {#if platformTab !== 'endmin' && platformTab !== 'toolsdev' && platformTab !== 'endfieldtracker' && platformTab !== 'protorig' && platformTab !== 'trackmypulls'}
                     <div
                         class="w-fit mt-4 {isLoading
                             ? 'opacity-60 pointer-events-none cursor-not-allowed'
