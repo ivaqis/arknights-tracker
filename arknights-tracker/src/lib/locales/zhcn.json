@@ -415,7 +415,8 @@
     "openRecipe": "打开配方",
     "leaderboard": "排行榜",
     "profile": "个人资料",
-    "icons": "图标"
+    "icons": "图标",
+    "achievements": "成就"
   },
   "events": {
     "type": {
@@ -2867,5 +2868,42 @@
     "gas_env_wet": "湿润环境",
     "gas_env_acidic": "酸性环境",
     "gas_env_xiranite": "息壤环境"
+  },
+  "achCategories": {
+    "achv_type_adventure": "地区奖章",
+    "achv_type_battle": "技艺奖章",
+    "achv_type_event": "活动奖章",
+    "achv_type_factory": "建设奖章",
+    "achv_type_growth": "锤炼奖章",
+    "achv_type_hide": "奇想奖章",
+    "achv_type_quest": "章节奖章",
+    "achv_type_social": "社交奖章"
+  },
+  "achGroups": {
+    "achv_group_adv_tundra": "谷地地区奖章",
+    "achv_group_adv_wuling": "武陵地区奖章",
+    "achv_group_bat_skill": "战斗技巧奖章",
+    "achv_group_bat_dung": "协议空间奖章",
+    "achv_group_fac_factory": "集成工业奖章",
+    "achv_group_fac_spaceship": "帝江号奖章",
+    "achv_group_quest_main": "主线任务奖章",
+    "achv_group_quest_side": "探索任务奖章",
+    "achv_group_event_default": "活动奖章",
+    "achv_group_growth_default": "锤炼奖章",
+    "achv_group_hide_default": "奇想奖章",
+    "achv_group_social_default": "社交奖章"
+  },
+  "achievements": {
+    "of": "/",
+    "onlyIncomplete": "仅未完成",
+    "allVersions": "全部版本",
+    "searchPlaceholder": "搜索...",
+    "empty": "未找到成就"
+  },
+  "achLevels": {
+    "source": "获取方式",
+    "reforging2": "重锻方式Ⅱ",
+    "reforging3": "重锻方式Ⅲ",
+    "trimming": "镀层方式"
   }
 }

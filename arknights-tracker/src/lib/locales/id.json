@@ -412,7 +412,8 @@
     "openRecipe": "Buka resep",
     "leaderboard": "Papan Peringkat",
     "profile": "Profil",
-    "icons": "Ikon"
+    "icons": "Ikon",
+    "achievements": "Pencapaian"
   },
   "events": {
     "type": {
@@ -2828,5 +2829,42 @@
     "gas_env_wet": "LINGK Lembap",
     "gas_env_acidic": "LINGK Menyengat",
     "gas_env_xiranite": "LINGK Xiranite"
+  },
+  "achCategories": {
+    "achv_type_adventure": "Regional",
+    "achv_type_battle": "Teknis",
+    "achv_type_event": "Event",
+    "achv_type_factory": "Konstruksi",
+    "achv_type_growth": "Progresi",
+    "achv_type_hide": "Keajaiban",
+    "achv_type_quest": "Bab",
+    "achv_type_social": "Sosial"
+  },
+  "achGroups": {
+    "achv_group_adv_tundra": "Lembah",
+    "achv_group_adv_wuling": "Wuling",
+    "achv_group_bat_skill": "Teknik Tempur",
+    "achv_group_bat_dung": "Dimensi Protokol",
+    "achv_group_fac_factory": "Pabrik AIC",
+    "achv_group_fac_spaceship": "Dijiang",
+    "achv_group_quest_main": "Misi Utama",
+    "achv_group_quest_side": "Misi Eksplorasi",
+    "achv_group_event_default": "Event",
+    "achv_group_growth_default": "Progresi",
+    "achv_group_hide_default": "Keajaiban",
+    "achv_group_social_default": "Sosial"
+  },
+  "achievements": {
+    "of": "dari",
+    "onlyIncomplete": "Hanya yang belum selesai",
+    "allVersions": "Semua versi",
+    "searchPlaceholder": "Cari...",
+    "empty": "Pencapaian tidak ditemukan"
+  },
+  "achLevels": {
+    "source": "Sumber",
+    "reforging2": "Penempaan Ulang Ⅱ",
+    "reforging3": "Penempaan Ulang Ⅲ",
+    "trimming": "Perataan"
   }
 }

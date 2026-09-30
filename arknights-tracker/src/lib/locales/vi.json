@@ -415,7 +415,8 @@
     "openRecipe": "Mở công thức",
     "leaderboard": "Bảng Xếp Hạng",
     "profile": "Hồ Sơ",
-    "icons": "Biểu tượng"
+    "icons": "Biểu tượng",
+    "achievements": "Thành tựu"
   },
   "events": {
     "type": {
@@ -2867,5 +2868,42 @@
     "gas_env_wet": "MÔI TRƯỜNG Ẩm Ướt",
     "gas_env_acidic": "MÔI TRƯỜNG Axit",
     "gas_env_xiranite": "MÔI TRƯỜNG Xiranite"
+  },
+  "achCategories": {
+    "achv_type_adventure": "Khu Vực",
+    "achv_type_battle": "Kỹ Thuật",
+    "achv_type_event": "Sự Kiện",
+    "achv_type_factory": "Xây Dựng",
+    "achv_type_growth": "Cấp Tiến",
+    "achv_type_hide": "Phi Thường",
+    "achv_type_quest": "Chương",
+    "achv_type_social": "Xã Hội"
+  },
+  "achGroups": {
+    "achv_group_adv_tundra": "Thung Lũng",
+    "achv_group_adv_wuling": "Võ Lăng",
+    "achv_group_bat_skill": "Kỹ Thuật Chiến Đấu",
+    "achv_group_bat_dung": "Không Gian Giao Thức",
+    "achv_group_fac_factory": "Nhà Máy Khu Phức Hợp",
+    "achv_group_fac_spaceship": "Dijiang",
+    "achv_group_quest_main": "Nhiệm Vụ Chính",
+    "achv_group_quest_side": "Nhiệm Vụ Khám Phá",
+    "achv_group_event_default": "Sự Kiện",
+    "achv_group_growth_default": "Cấp Tiến",
+    "achv_group_hide_default": "Phi Thường",
+    "achv_group_social_default": "Xã Hội"
+  },
+  "achievements": {
+    "of": "trên",
+    "onlyIncomplete": "Chỉ chưa hoàn thành",
+    "allVersions": "Tất cả phiên bản",
+    "searchPlaceholder": "Tìm kiếm...",
+    "empty": "Không tìm thấy thành tựu"
+  },
+  "achLevels": {
+    "source": "Nguồn",
+    "reforging2": "Rèn Lại II",
+    "reforging3": "Rèn Lại III",
+    "trimming": "Mạ viền"
   }
 }

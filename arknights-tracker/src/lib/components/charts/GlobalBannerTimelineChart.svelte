@@ -345,8 +345,8 @@
     role="figure"
     class="bg-white dark:bg-[#383838] dark:border-[#444444] rounded-xl p-5 shadow-sm border border-gray-100 flex flex-col gap-4 relative group overflow-visible"
 >
-    <div class="flex items-center justify-between gap-3 shrink-0 relative z-40">
-        <div class="text-md font-bold text-gray-800 dark:text-[#FDFDFD]">
+    <div class="flex items-center justify-between gap-3 shrink-0 relative z-5">
+        <div class="text-md font-bold text-gray-800 dark:text-[#FDFDFD] z-0">
             {$t("global.pullsPerDay")}
         </div>
 

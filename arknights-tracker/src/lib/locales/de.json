@@ -412,7 +412,8 @@
     "openRecipe": "Rezepte öffnen",
     "leaderboard": "Bestenliste",
     "profile": "Profil",
-    "icons": "Icons"
+    "icons": "Icons",
+    "achievements": "Erfolge"
   },
   "events": {
     "type": {
@@ -2828,5 +2829,42 @@
     "gas_env_wet": "Feuchte UMW",
     "gas_env_acidic": "Acrid-UMW",
     "gas_env_xiranite": "Xiranit-UMW"
+  },
+  "achCategories": {
+    "achv_type_adventure": "Regional",
+    "achv_type_battle": "Technisch",
+    "achv_type_event": "Event",
+    "achv_type_factory": "Bauen",
+    "achv_type_growth": "Fortschritt",
+    "achv_type_hide": "Wundersam",
+    "achv_type_quest": "Kapitel",
+    "achv_type_social": "Sozial"
+  },
+  "achGroups": {
+    "achv_group_adv_tundra": "Tal",
+    "achv_group_adv_wuling": "Wuling",
+    "achv_group_bat_skill": "Kampftechnik",
+    "achv_group_bat_dung": "Protokoll-Dimension",
+    "achv_group_fac_factory": "AIK-Fabrik",
+    "achv_group_fac_spaceship": "Dijiang",
+    "achv_group_quest_main": "Hauptmission",
+    "achv_group_quest_side": "Erkundungsmission",
+    "achv_group_event_default": "Event",
+    "achv_group_growth_default": "Fortschritt",
+    "achv_group_hide_default": "Wundersam",
+    "achv_group_social_default": "Sozial"
+  },
+  "achievements": {
+    "of": "von",
+    "onlyIncomplete": "Nur unvollständig",
+    "allVersions": "Alle Versionen",
+    "searchPlaceholder": "Suchen...",
+    "empty": "Keine Erfolge gefunden"
+  },
+  "achLevels": {
+    "source": "Quelle",
+    "reforging2": "Umschmieden II",
+    "reforging3": "Umschmieden III",
+    "trimming": "Umgestaltung"
   }
 }

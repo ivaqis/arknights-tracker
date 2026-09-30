@@ -42,7 +42,7 @@
 
     onMount(() => {
         if (browser) {
-            fetch('/images/icons.svg?v=9')
+            fetch('/images/icons.svg?v=10')
                 .then(res => {
                     if (res.ok) return res.text();
                     throw new Error('Failed to load icons.svg');
@@ -272,6 +272,7 @@
                         { path: "/equipment", label: "pages.equipment", icon: "edc" },
                         { path: "/food", label: "pages.food", icon: "tacticals" },
                         { path: "/recipes", label: "pages.recipes", icon: "recepies" },
+                        { path: "/achievements", label: "pages.achievements", icon: "achievement" },
                         { type: "divider" },
                         { path: "/settings", label: "sidebar.settings", icon: "settings" }
                     ] as item}

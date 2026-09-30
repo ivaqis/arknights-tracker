@@ -459,7 +459,15 @@
     "leaderboard": "Лидерборд",
     "profile": "Профиль",
     "icons": "Иконки",
-    "food": "Провиант"
+    "food": "Провиант",
+    "achievements": "Достижения"
+  },
+  "achievements": {
+    "of": "из",
+    "onlyIncomplete": "Только незавершенные",
+    "allVersions": "Все версии",
+    "searchPlaceholder": "Поиск...",
+    "empty": "Достижения не найдены"
   },
   "events": {
     "type": {
@@ -3255,5 +3263,35 @@
       "param1": "Тип урона",
       "param2": "% от макс. ОЗ"
     }
+  },
+  "achCategories": {
+    "achv_type_adventure": "Регион",
+    "achv_type_battle": "Техника",
+    "achv_type_event": "Событие",
+    "achv_type_factory": "Строительство",
+    "achv_type_growth": "Развитие",
+    "achv_type_hide": "Диковины",
+    "achv_type_quest": "Глава",
+    "achv_type_social": "Общение"
+  },
+  "achGroups": {
+    "achv_group_adv_tundra": "Долина",
+    "achv_group_adv_wuling": "Улин",
+    "achv_group_bat_skill": "Боевая техника",
+    "achv_group_bat_dung": "Протокольный разлом",
+    "achv_group_fac_factory": "АПК",
+    "achv_group_fac_spaceship": "Дицзян",
+    "achv_group_quest_main": "Основная миссия",
+    "achv_group_quest_side": "Экспедиция",
+    "achv_group_event_default": "Событие",
+    "achv_group_growth_default": "Развитие",
+    "achv_group_hide_default": "Диковины",
+    "achv_group_social_default": "Общение"
+  },
+  "achLevels": {
+    "source": "Источник",
+    "reforging2": "Перековка II",
+    "reforging3": "Перековка III",
+    "trimming": "Отделка"
   }
 }

@@ -1,0 +1,2086 @@
+{
+  "achv_adv_tundra_box": {
+    "name": "谷地储藏家奖章",
+    "category": "地区奖章",
+    "group": "谷地地区奖章",
+    "levels": {
+      "1": {
+        "desc": "于四号谷地开启120个储藏箱",
+        "completeDesc": "您已开启了四号谷地的部分储藏箱。"
+      },
+      "2": {
+        "desc": "于四号谷地开启180个储藏箱",
+        "completeDesc": "您已开启了四号谷地的大部分储藏箱。"
+      },
+      "3": {
+        "desc": "于四号谷地开启288个储藏箱",
+        "completeDesc": "四号谷地的所有储藏箱在您眼中无所遁形！\n噢，锁闭构造开启的声音多么悦耳。"
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_tundra_campfire": {
+    "name": "锚定谷地奖章",
+    "category": "地区奖章",
+    "group": "谷地地区奖章",
+    "levels": {
+      "1": {
+        "desc": "于四号谷地解锁14个协议传送点",
+        "completeDesc": "您已初步唤醒了四号谷地的协议网络。"
+      },
+      "2": {
+        "desc": "于四号谷地解锁28个协议传送点",
+        "completeDesc": "您已完全构建了四号谷地的协议网络。"
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_tundra_documents": {
+    "name": "谷地调查者奖章",
+    "category": "地区奖章",
+    "group": "谷地地区奖章",
+    "levels": {
+      "2": {
+        "desc": "于四号谷地收集4份调查报告",
+        "completeDesc": "事无巨细，您留意到了散落于四号谷地角落的情报。"
+      },
+      "3": {
+        "desc": "于四号谷地收集6份调查报告",
+        "completeDesc": "事无巨细，您细心留意到了散落于四号谷地角落的情报。\n一张纸片，一页杂志……大事往往隐于微末。"
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_tundra_ether": {
+    "name": "“碎片的再会”",
+    "category": "地区奖章",
+    "group": "谷地地区奖章",
+    "levels": {
+      "1": {
+        "desc": "于四号谷地收集80个醚质",
+        "completeDesc": "初始之物的遗失片段正于您手中再会。"
+      },
+      "2": {
+        "desc": "于四号谷地收集120个醚质",
+        "completeDesc": "初始之物的遗失片段正于您手中再会。\n它曾是旧日荣光的一角。"
+      },
+      "3": {
+        "desc": "于四号谷地收集166个醚质",
+        "completeDesc": "初始之物的遗失片段正于您手中再会。\n它代表着我们终将抵达的终点、希望和梦。"
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_tundra_fixablerobot": {
+    "name": "“Delta救星”",
+    "category": "地区奖章",
+    "group": "谷地地区奖章",
+    "levels": {
+      "1": {
+        "desc": "于四号谷地修复25个Delta机器人",
+        "completeDesc": "我们收到了大量二进制数据，经转译，发送者似乎在向您表达感谢。"
+      },
+      "2": {
+        "desc": "于四号谷地修复35个Delta机器人",
+        "completeDesc": "我们收到了大量二进制数据，经转译，发送者似乎在表示愿为您赴汤蹈火。"
+      },
+      "3": {
+        "desc": "于四号谷地修复43个Delta机器人",
+        "completeDesc": "我们收到了大量二进制数据，经转译，发送者似乎迫切想要尊您为“Delta救星，众机器人的拯救者，四号谷地机械之王”。"
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_tundra_running": {
+    "name": "“比肩传送”",
+    "category": "地区奖章",
+    "group": "谷地地区奖章",
+    "levels": {
+      "1": {
+        "desc": "于四号谷地赢下4场赛跑挑战",
+        "completeDesc": "部分对手怀疑您在隐蔽角落偷偷使用了协议传送技术直达终点。"
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_arrow": {
+    "name": "“安玛的指引”",
+    "category": "地区奖章",
+    "group": "武陵地区奖章",
+    "levels": {
+      "2": {
+        "desc": "使用提弗洛斯的弓箭，击破雪松林所有的符文",
+        "completeDesc": "白矢破空，得益于安玛的馈赠，您已击碎所有迷雾。"
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_balloon": {
+    "name": "浮空回收奖章",
+    "category": "地区奖章",
+    "group": "武陵地区奖章",
+    "levels": {
+      "1": {
+        "desc": "于应龙关和北部禁区完成26次浮空回收",
+        "completeDesc": "天空为您备好了航道，您已掌握高效低成本的运输手段。"
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_blackhole_clean": {
+    "name": "裂隙缝合奖章",
+    "category": "地区奖章",
+    "group": "武陵地区奖章",
+    "levels": {
+      "3": {
+        "desc": "于北部禁区消灭5个裂隙",
+        "completeDesc": "现实的裂痕被您缝合，人心中的创伤被您治愈。"
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_box_1": {
+    "name": "武陵储藏家奖章·Ⅰ",
+    "category": "地区奖章",
+    "group": "武陵地区奖章",
+    "levels": {
+      "3": {
+        "desc": "于景玉谷和武陵城开启227个储藏箱",
+        "completeDesc": "您已开启了武陵的部分储藏箱。"
+      }
+    },
+    "plating": {
+      "desc": "于景玉谷和武陵城开启242个储藏箱"
+    }
+  },
+  "achv_adv_wuling_box_2": {
+    "name": "武陵储藏家奖章·Ⅱ\n",
+    "category": "地区奖章",
+    "group": "武陵地区奖章",
+    "levels": {
+      "2": {
+        "desc": "于清波寨、首墩、首墩内部和试验园区开启121个储藏箱",
+        "completeDesc": "您已开启了武陵的大部分储藏箱。"
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_box_3": {
+    "name": "武陵储藏家奖章·Ⅲ",
+    "category": "地区奖章",
+    "group": "武陵地区奖章",
+    "levels": {
+      "2": {
+        "desc": "于藏剑谷、应龙关和北部禁区开启151个储藏箱",
+        "completeDesc": "您已开启了武陵的大部分储藏箱。您总能发现被置于各处的物资。"
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_bugball": {
+    "name": "“虫球满贯”",
+    "category": "地区奖章",
+    "group": "武陵地区奖章",
+    "levels": {
+      "2": {
+        "desc": "将18只源石虫踢入遂明大坑内",
+        "completeDesc": "您的技巧远胜于记忆中的幻影，每一次踢击都精准、稳定、恰到好处。"
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_campfire_1": {
+    "name": "锚定武陵奖章·Ⅰ",
+    "category": "地区奖章",
+    "group": "武陵地区奖章",
+    "levels": {
+      "1": {
+        "desc": "于景玉谷和武陵城解锁19个协议传送点",
+        "completeDesc": "您已初步唤醒了武陵的协议网络。"
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_campfire_2": {
+    "name": "锚定武陵奖章·Ⅱ",
+    "category": "地区奖章",
+    "group": "武陵地区奖章",
+    "levels": {
+      "1": {
+        "desc": "于清波寨、首墩、首墩内部和试验园区解锁19个协议传送点",
+        "completeDesc": "您已进一步唤醒了武陵的协议网络。"
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_campfire_3": {
+    "name": "锚定武陵奖章·Ⅲ",
+    "category": "地区奖章",
+    "group": "武陵地区奖章",
+    "levels": {
+      "1": {
+        "desc": "于藏剑谷、应龙关和北部禁区解锁22个协议传送点",
+        "completeDesc": "您已更深度地唤醒了武陵的协议网络。"
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_clean": {
+    "name": "“涤荡浊流”",
+    "category": "地区奖章",
+    "group": "武陵地区奖章",
+    "levels": {
+      "1": {
+        "desc": "消除清波寨的所有侵蚀",
+        "completeDesc": "您已消除了清波寨内阻碍行进的侵蚀。"
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_documents_1": {
+    "name": "武陵调查者奖章·Ⅰ",
+    "category": "地区奖章",
+    "group": "武陵地区奖章",
+    "levels": {
+      "2": {
+        "desc": "于景玉谷和武陵城收集2份调查报告",
+        "completeDesc": "事无巨细，您留意到了散落于武陵角落的情报。"
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_ether_1": {
+    "name": "“碎片的重聚”·Ⅰ",
+    "category": "地区奖章",
+    "group": "武陵地区奖章",
+    "levels": {
+      "3": {
+        "desc": "于景玉谷和武陵城收集74个醚质",
+        "completeDesc": "初始之物的遗失片段正于您手中重聚。"
+      }
+    },
+    "plating": {
+      "desc": "于景玉谷和武陵城收集81个醚质"
+    }
+  },
+  "achv_adv_wuling_ether_2": {
+    "name": "“碎片的重聚”·Ⅱ",
+    "category": "地区奖章",
+    "group": "武陵地区奖章",
+    "levels": {
+      "2": {
+        "desc": "于清波寨、首墩、首墩内部和试验园区收集59个醚质",
+        "completeDesc": "初始之物的更多遗失片段正于您手中重聚。"
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_ether_3": {
+    "name": "“碎片的重聚”·Ⅲ",
+    "category": "地区奖章",
+    "group": "武陵地区奖章",
+    "levels": {
+      "2": {
+        "desc": "于藏剑谷、应龙关和北部禁区收集59个醚质",
+        "completeDesc": "初始之物的大量遗失片段正于您手中重聚。失落的碎片已感受到了您的呼唤。"
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_find_difference": {
+    "name": "印记辨识奖章",
+    "category": "地区奖章",
+    "group": "武陵地区奖章",
+    "levels": {
+      "2": {
+        "desc": "于应龙关和北部禁区解开8个百相仪",
+        "completeDesc": "您能清晰地辨别诸多线条与符号，信息在您的目光中收敛。"
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_floor_1": {
+    "name": "“羽兽三抄水”",
+    "category": "地区奖章",
+    "group": "武陵地区奖章",
+    "levels": {
+      "1": {
+        "desc": "激活景玉谷和武陵城的8组压力板",
+        "completeDesc": "您以精妙的身法在压力板间跃动，成功使其恢复了完美的平衡。\n“好一手羽兽三抄水！”"
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_floor_2": {
+    "name": "“羽兽三抄水·其之二”",
+    "category": "地区奖章",
+    "group": "武陵地区奖章",
+    "levels": {
+      "1": {
+        "desc": "激活清波寨、首墩、首墩内部和试验园区的6组压力板",
+        "completeDesc": "您再一次以精妙的身法在压力板间跃动，成功使其恢复了完美的平衡。\n“好一手羽兽三点头！”"
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_frog_1": {
+    "name": "“击股传虫”",
+    "category": "地区奖章",
+    "group": "武陵地区奖章",
+    "levels": {
+      "1": {
+        "desc": "完成景玉谷和武陵城的6次萤火虫传递",
+        "completeDesc": "真是一个好玩伴。经分析，这似乎是长股兽们向您道谢，邀您再来的鸣声。\n“呱呱呱，呱呱呱呱呱”"
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_frog_2": {
+    "name": "“击股传虫·其之二”",
+    "category": "地区奖章",
+    "group": "武陵地区奖章",
+    "levels": {
+      "1": {
+        "desc": "完成清波寨、首墩、首墩内部和试验园区的3次萤火虫传递",
+        "completeDesc": "您又陪同长股兽玩耍了一番。经分析，这似乎是长股兽们向您道谢，邀您再来的鸣声。\n“呱呱呱呱呱呱，呱呱呱呱呱。”"
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_hyper_clean": {
+    "name": "过活跃消除奖章",
+    "category": "地区奖章",
+    "group": "武陵地区奖章",
+    "levels": {
+      "1": {
+        "desc": "消除藏剑谷所有的过活跃侵蚀",
+        "completeDesc": "您已成功消除了许多过活跃侵蚀。"
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_minimap_1": {
+    "name": "遂明储藏家奖章",
+    "category": "地区奖章",
+    "group": "武陵地区奖章",
+    "levels": {
+      "2": {
+        "desc": "于遂明开启28个储藏箱",
+        "completeDesc": "您已开启了遂明的所有储藏箱。哪怕它们只存在于往昔的故事之中。"
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_watergun_1": {
+    "name": "“轨道激流”\n",
+    "category": "地区奖章",
+    "group": "武陵地区奖章",
+    "levels": {
+      "1": {
+        "desc": "复位武陵城的8组息壤导流轨道系统",
+        "completeDesc": "您已调试好了多个息壤导流轨道系统。"
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_charged": {
+    "name": "熟练截击奖章",
+    "category": "技艺奖章",
+    "group": "战斗技巧奖章",
+    "levels": {
+      "1": {
+        "desc": "于战斗中累计打断30次敌人的蓄力状态",
+        "completeDesc": "您已能熟练截断敌人攻势。"
+      },
+      "2": {
+        "desc": "于战斗中累计打断50次敌人的蓄力状态",
+        "completeDesc": "您已经能够在敌人攻击行动展开的一瞬就将之截断。"
+      },
+      "3": {
+        "desc": "于战斗中累计打断100次敌人的蓄力状态",
+        "completeDesc": "即便是再微小的敌意也能被您察觉，即便是再隐蔽的动作也能被您遏止。"
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_charged_hsbear": {
+    "name": "“截雷”",
+    "category": "技艺奖章",
+    "group": "战斗技巧奖章",
+    "levels": {
+      "2": {
+        "desc": "于战斗中打断天鼓的咆哮声波",
+        "completeDesc": "您成功扼住了雷鸣的咽喉。"
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_comboskill": {
+    "name": "携手对敌奖章",
+    "category": "技艺奖章",
+    "group": "战斗技巧奖章",
+    "levels": {
+      "1": {
+        "desc": "于战斗中累计施放500次连携技",
+        "completeDesc": "您的干员们已经历磨合，能够展开合作，携手对敌。"
+      },
+      "2": {
+        "desc": "于战斗中累计施放1000次连携技",
+        "completeDesc": "您的干员们已经历磨合，能够敏锐捕捉战机，协同作战。"
+      },
+      "3": {
+        "desc": "于战斗中累计施放2000次连携技",
+        "completeDesc": "您的干员们已经历磨合，协同互助已是他们作战的主要方式。\n彼此之间的信任，这正是我们行向尽头的依仗。"
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_defeat_agtrinit": {
+    "name": "“星体的残肢”",
+    "category": "技艺奖章",
+    "group": "战斗技巧奖章",
+    "levels": {
+      "3": {
+        "desc": "通关“危境祸影·三位一体”",
+        "completeDesc": "在协议空间的幻影中，您阻止了象征着毁灭的星体重归大地。"
+      }
+    },
+    "plating": {
+      "desc": "在240秒内通关“危境祸影·三位一体”"
+    }
+  },
+  "achv_bat_defeat_bigtree": {
+    "name": "“幽林于此沉寂”",
+    "category": "技艺奖章",
+    "group": "战斗技巧奖章",
+    "levels": {
+      "2": {
+        "desc": "击败幽林之怒",
+        "completeDesc": "您熄灭了幽林的怒火，忠心耿耿的造物不再怨恨与愤怒，这片天地归于寂静平和。"
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_defeat_dodge_jzogre": {
+    "name": "“穿风以行”",
+    "category": "技艺奖章",
+    "group": "战斗技巧奖章",
+    "levels": {
+      "2": {
+        "desc": "在披甲裂兽的九连旋转攻击中，主控干员极限闪避5次以上攻击，且在此攻击全程中未受到伤害",
+        "completeDesc": "您于沉重的风暴中灵巧移动，与每一道足以撕裂血肉的嘶吼擦身而过。"
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_defeat_ethillu": {
+    "name": "“不稳定表象”",
+    "category": "技艺奖章",
+    "group": "战斗技巧奖章",
+    "levels": {
+      "2": {
+        "desc": "于战斗中，在“表象”重生后的2秒内将其击败",
+        "completeDesc": "您看破了表象，驱散了不稳定之物。"
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_defeat_fdcentur": {
+    "name": "“熄灭火炬”",
+    "category": "技艺奖章",
+    "group": "战斗技巧奖章",
+    "levels": {
+      "3": {
+        "desc": "通关“危境祸影·阿莱克琉斯，千夫长”",
+        "completeDesc": "在协议空间的幻影中，归来者举起的愿景、邀约，连同其所播散的火光被轻轻熄灭。"
+      }
+    },
+    "plating": {
+      "desc": "在200秒内通关“危境祸影·阿莱克琉斯，千夫长”"
+    }
+  },
+  "achv_bat_defeat_hsbear": {
+    "name": "“偃旗息鼓”",
+    "category": "技艺奖章",
+    "group": "战斗技巧奖章",
+    "levels": {
+      "2": {
+        "desc": "击败天鼓",
+        "completeDesc": "您已使野性的大旗折断，已使轰鸣的大鼓息声。"
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_defeat_jzmking": {
+    "name": "“兽王降伏”",
+    "category": "技艺奖章",
+    "group": "战斗技巧奖章",
+    "levels": {
+      "2": {
+        "desc": "击败巨山犼兽",
+        "completeDesc": "您降服了兽群的首领，或许您可以成为它们的新王？"
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_defeat_klbear": {
+    "name": "“雷噪止息”",
+    "category": "技艺奖章",
+    "group": "战斗技巧奖章",
+    "levels": {
+      "2": {
+        "desc": "击败蚀影噪雷",
+        "completeDesc": "它的咆哮声趋于平静，就像它幼小时那样。"
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_defeat_nefarp": {
+    "name": "“征服者的遗恨”",
+    "category": "技艺奖章",
+    "group": "战斗技巧奖章",
+    "levels": {
+      "3": {
+        "desc": "通关“危境祸影·聂菲斯”",
+        "completeDesc": "在协议空间的幻影中，她癫狂的野心与轻蔑的笑声就此消散。"
+      }
+    },
+    "plating": {
+      "desc": "在200秒内通关“危境祸影·聂菲斯”"
+    }
+  },
+  "achv_bat_defeat_palesent": {
+    "name": "“苍白的溃灭”",
+    "category": "技艺奖章",
+    "group": "战斗技巧奖章",
+    "levels": {
+      "3": {
+        "desc": "通关“危境祸影·白垩界卫”",
+        "completeDesc": "在协议空间的幻影中，您再一次击溃了苍白的巨像。"
+      }
+    },
+    "plating": {
+      "desc": "在240秒内通关“危境祸影·白垩界卫”"
+    }
+  },
+  "achv_bat_defeat_rodin": {
+    "name": "“碾碎拳骨”",
+    "category": "技艺奖章",
+    "group": "战斗技巧奖章",
+    "levels": {
+      "3": {
+        "desc": "通关“危境狂影·罗丹”",
+        "completeDesc": "在协议空间的幻影中，他暴力、狂热、愤怒的前路亦会被您截断。"
+      }
+    },
+    "plating": {
+      "desc": "在120秒内通关“危境狂影·罗丹”"
+    }
+  },
+  "achv_bat_defeat_ruanyi": {
+    "name": "“枯枝忿怒，复归凋零”",
+    "category": "技艺奖章",
+    "group": "战斗技巧奖章",
+    "levels": {
+      "3": {
+        "desc": "通关“危境祸影·阮一”",
+        "completeDesc": "在协议空间的幻影中，他自那个雨夜燃起的仇怨之火复归凋零。"
+      }
+    },
+    "plating": {
+      "desc": "在200秒内通关“危境祸影·阮一”"
+    }
+  },
+  "achv_bat_dung_char": {
+    "name": "干员教学奖章",
+    "category": "技艺奖章",
+    "group": "协议空间奖章",
+    "levels": {
+      "1": {
+        "desc": "通关任意5个干员教学",
+        "completeDesc": "干员们的作战风格，您熟记于心。"
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_dung_resource": {
+    "name": "材料收集奖章",
+    "category": "技艺奖章",
+    "group": "协议空间奖章",
+    "levels": {
+      "2": {
+        "desc": "通关以下协议空间\n“协议空间·干员经验”的“噩梦昭显之地”\n“协议空间·钱币收集”的“金币之祝”\n“协议空间·干员进阶”的“心照乱海”\n“协议空间·技能提升”的“高塔幻景”\n“协议空间·武器经验”的“铳匠们的埋骨冢”\n“协议空间·武器进阶”的“锤锻检定Lv5”",
+        "completeDesc": "即便是最危险的协议空间，亦无法阻止您寻得培养干员的资源。"
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_dung_ss": {
+    "name": "高阶培养奖章",
+    "category": "技艺奖章",
+    "group": "协议空间奖章",
+    "levels": {
+      "2": {
+        "desc": "通关所有“协议空间·高阶培养”",
+        "completeDesc": "即便是最危险的协议空间，亦无法阻止您为干员们找到最顶尖的材料。"
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_enemyspawner": {
+    "name": "淤积清理奖章",
+    "category": "技艺奖章",
+    "group": "协议空间奖章",
+    "levels": {
+      "2": {
+        "desc": "探索等级达到7级后，通关5个不同的重度能量淤积点",
+        "completeDesc": "淤积于大地上的超域能量消散了，但它仍会重聚。"
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_eny_ace": {
+    "name": "全面抹消奖章",
+    "category": "技艺奖章",
+    "group": "战斗技巧奖章",
+    "levels": {
+      "2": {
+        "desc": "单次伤害同时击败至少5个敌人",
+        "completeDesc": "我们或许可以相信，在某一天，您甚至能够拥有仅以眼神抹消敌人的能力。"
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_eny_building_kill": {
+    "name": "智能歼灭奖章",
+    "category": "技艺奖章",
+    "group": "战斗技巧奖章",
+    "levels": {
+      "1": {
+        "desc": "使用作战设备累计击败10个敌人",
+        "completeDesc": "您的作战设备初显威力。"
+      },
+      "2": {
+        "desc": "使用作战设备累计击败100个敌人",
+        "completeDesc": "您的作战设备正在沉稳对敌。"
+      },
+      "3": {
+        "desc": "使用作战设备累计击败500个敌人",
+        "completeDesc": "拥有这样高效的杀戮机器，您似乎已不必亲至险地。"
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_eny_cannot_move": {
+    "name": "多维禁锢奖章",
+    "category": "技艺奖章",
+    "group": "战斗技巧奖章",
+    "levels": {
+      "2": {
+        "desc": "于战斗中让同一个敌人连续20秒无法行动",
+        "completeDesc": "多方位全面压制，您的战斗技巧令人叹服。"
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_frozen": {
+    "name": "“熵减”",
+    "category": "技艺奖章",
+    "group": "战斗技巧奖章",
+    "levels": {
+      "1": {
+        "desc": "于战斗中任意干员被冻结10次",
+        "completeDesc": "寒气束缚了您的脚步，这是它的挽留。"
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_hard_1": {
+    "name": "“无机造物”",
+    "category": "技艺奖章",
+    "group": "协议空间奖章",
+    "levels": {
+      "2": {
+        "desc": "在「影拓丰碑」中，通关普通模式“无机造物”的所有关卡",
+        "completeDesc": "您体验了人类与天使间生死之争的缩影，您再一次于丰碑上刻下了自己的名字。"
+      }
+    },
+    "plating": {
+      "desc": "在「影拓丰碑」中，通关苦难模式“无机造物”的所有关卡"
+    }
+  },
+  "achv_bat_hard_2": {
+    "name": "“大地的弃子”",
+    "category": "技艺奖章",
+    "group": "协议空间奖章",
+    "levels": {
+      "2": {
+        "desc": "在「影拓丰碑」中，通关普通模式“大地的弃子”的所有关卡",
+        "completeDesc": "您直面了那些残酷撕扯文明血肉之人，您再一次于丰碑上刻下了自己的名字。"
+      }
+    },
+    "plating": {
+      "desc": "在「影拓丰碑」中，通关苦难模式“大地的弃子”的所有关卡"
+    }
+  },
+  "achv_bat_hard_3": {
+    "name": "“灼痛疤痕”",
+    "category": "技艺奖章",
+    "group": "协议空间奖章",
+    "levels": {
+      "2": {
+        "desc": "在「影拓丰碑」中，通关普通模式“灼痛疤痕”的所有关卡",
+        "completeDesc": "您剖开了灼痛着的瘢痕，让其中的暴虐逸散干净，您再一次于丰碑上刻下了自己的名字。"
+      }
+    },
+    "plating": {
+      "desc": "在「影拓丰碑」中，通关苦难模式“灼痛疤痕”的所有关卡"
+    }
+  },
+  "achv_bat_hard_4": {
+    "name": "“浊流具现”",
+    "category": "技艺奖章",
+    "group": "协议空间奖章",
+    "levels": {
+      "2": {
+        "desc": "在「影拓丰碑」中，通关普通模式“浊流具现”的所有关卡",
+        "completeDesc": "您在淹没一切的恐怖浊流中屹立不倒，您再一次于丰碑上刻下了自己的名字。"
+      }
+    },
+    "plating": {
+      "desc": "在「影拓丰碑」中，通关苦难模式“浊流具现”的所有关卡"
+    }
+  },
+  "achv_bat_hard_5": {
+    "name": "“死寂争鸣”",
+    "category": "技艺奖章",
+    "group": "协议空间奖章",
+    "levels": {
+      "2": {
+        "desc": "在「影拓丰碑」中，通关普通模式“死寂争鸣”的所有关卡",
+        "completeDesc": "您于雷鸣之声、死寂之相中见证了纷争，您再一次于丰碑上刻下了自己的名字。"
+      }
+    },
+    "plating": {
+      "desc": "在「影拓丰碑」中，通关苦难模式“死寂争鸣”的所有关卡"
+    }
+  },
+  "achv_bat_hard_6": {
+    "name": "“山中见犼”",
+    "category": "技艺奖章",
+    "group": "协议空间奖章",
+    "levels": {
+      "2": {
+        "desc": "在「影拓丰碑」中，通关普通模式“山中见犼”的所有关卡",
+        "completeDesc": "您在群山与万兽之间傲然而立，您再一次于丰碑上刻下了自己的名字。"
+      }
+    },
+    "plating": {
+      "desc": "在「影拓丰碑」中，通关苦难模式“山中见犼”的所有关卡"
+    }
+  },
+  "achv_bat_hard_7": {
+    "name": "“幽影刻形”",
+    "category": "技艺奖章",
+    "group": "协议空间奖章",
+    "levels": {
+      "2": {
+        "desc": "在「影拓丰碑」中，通关普通模式“幽影刻形”的所有关卡",
+        "completeDesc": "您驱散了灾厄涂抹出的倒影，您再一次于丰碑上刻下了自己的名字。"
+      }
+    },
+    "plating": {
+      "desc": "在「影拓丰碑」中，通关苦难模式“幽影刻形”的所有关卡"
+    }
+  },
+  "achv_bat_magical_AS": {
+    "name": "劲力展露奖章",
+    "category": "技艺奖章",
+    "group": "战斗技巧奖章",
+    "levels": {
+      "1": {
+        "desc": "于战斗中累计施加50次物理异常",
+        "completeDesc": "格斗技巧于此展露。"
+      },
+      "2": {
+        "desc": "于战斗中累计施加300次物理异常",
+        "completeDesc": "您的敌人深深畏惧您的斩击与重拳。"
+      },
+      "3": {
+        "desc": "于战斗中累计施加500次物理异常",
+        "completeDesc": "您是当之无愧的格斗宗师。"
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_physical_AS": {
+    "name": "技艺流转奖章",
+    "category": "技艺奖章",
+    "group": "战斗技巧奖章",
+    "levels": {
+      "1": {
+        "desc": "于战斗中累计施加50次法术异常",
+        "completeDesc": "源石技艺于此流转。"
+      },
+      "2": {
+        "desc": "于战斗中累计施加300次法术异常",
+        "completeDesc": "您的敌人深深畏惧您直接高效地应用能量的方式。"
+      },
+      "3": {
+        "desc": "于战斗中累计施加500次法术异常",
+        "completeDesc": "您是当之无愧的源石技艺大师。"
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_rescue_from_geyunweng": {
+    "name": "“禁止绑票！”",
+    "category": "技艺奖章",
+    "group": "战斗技巧奖章",
+    "levels": {
+      "2": {
+        "desc": "于战斗中解救1次被割云翁禁锢的队友",
+        "completeDesc": "很早便听说过部分沧贼有绑票的恶行，但显然，您没有让他们得逞。"
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_smalltree": {
+    "name": "“根茎刨除”",
+    "category": "技艺奖章",
+    "group": "战斗技巧奖章",
+    "levels": {
+      "2": {
+        "desc": "逼出潜入地下的徘徊树傀",
+        "completeDesc": "您早早出手，精准地揪出了潜入地下的树傀。……过于狂野蔓生的植物根茎总会给人造成麻烦。"
+      }
+    },
+    "plating": null
+  },
+  "achv_event_clean": {
+    "name": "“诸尘皆净”",
+    "category": "活动奖章",
+    "group": "活动奖章",
+    "levels": {
+      "2": {
+        "desc": "完成所有净流涤尘任务",
+        "completeDesc": "您已替环卫职工们消除了面对污渍的烦恼。"
+      }
+    },
+    "plating": {
+      "desc": "在120秒内完成“弹性清洁演练”"
+    }
+  },
+  "achv_event_contingency_contract_0": {
+    "name": "“再度燃烧”",
+    "category": "活动奖章",
+    "group": "活动奖章",
+    "levels": {
+      "3": {
+        "desc": "在危机合约重燃测试作战中，成功达成指标总计20<image=\"Common/icon_contingency_contract_entry_black\" width=30 height=30>及以上的挑战",
+        "completeDesc": "过去的合作正在恢复，您已让古老的合约重新燃起。"
+      }
+    },
+    "plating": null
+  },
+  "achv_event_dungfight": {
+    "name": "“生存专家”",
+    "category": "活动奖章",
+    "group": "活动奖章",
+    "levels": {
+      "2": {
+        "desc": "通关所有生存特训关卡",
+        "completeDesc": "您成功完成了克拉拉的生存特训，已有了专家等级的求生水平。"
+      }
+    },
+    "plating": {
+      "desc": "在120秒内通关“最终考核”"
+    }
+  },
+  "achv_event_formula": {
+    "name": "“掌中大救星”",
+    "category": "活动奖章",
+    "group": "活动奖章",
+    "levels": {
+      "2": {
+        "desc": "于「集成援助·掌中救星」期间累计获得800,000张援助成果券",
+        "completeDesc": "您在集成援助环节提供的小葫芦广受欢迎。"
+      }
+    },
+    "plating": {
+      "desc": "于「集成援助·掌中救星」期间累计获得800,000张援助成果券，且累计提交20,000个息壤玉葫芦"
+    }
+  },
+  "achv_event_formula2": {
+    "name": "“龙泡泡大爆发”",
+    "category": "活动奖章",
+    "group": "活动奖章",
+    "levels": {
+      "2": {
+        "desc": "于「集成援助·泡泡出击」期间累计获得800000张援助成果券",
+        "completeDesc": "得益于您苦耕不辍的生产，全自动龙泡泡开始在这片土地上蔓延。无数人认同这个可爱的结果。"
+      }
+    },
+    "plating": {
+      "desc": "于「集成援助·泡泡出击」期间累计获得800000张援助成果券，且累计提交20000个重息壤龙泡泡"
+    }
+  },
+  "achv_event_racingdungeon_1": {
+    "name": "“奇境探索者”",
+    "category": "活动奖章",
+    "group": "活动奖章",
+    "levels": {
+      "2": {
+        "desc": "在「根脉奇境」活动阶段2中，成功挑战1次房间「金币浪潮」",
+        "completeDesc": "您已探明童话般的奇境空间，快去把所见所闻讲给阿尔吉听吧。"
+      }
+    },
+    "plating": {
+      "desc": "在「根脉奇境」中，完成全部阶段的奇境任务"
+    }
+  },
+  "achv_event_takestwo_1": {
+    "name": "“暗夜战术”",
+    "category": "活动奖章",
+    "group": "活动奖章",
+    "levels": {
+      "2": {
+        "desc": "通关「炽燃！竞技大会！」所有关卡的普通模式",
+        "completeDesc": "点燃吧，点燃吧！您沸腾的战斗之魂！"
+      }
+    },
+    "plating": {
+      "desc": "通关「炽燃！竞技大会！」所有关卡的全功率模式，并在180秒内通关以下任意一关：\n· 「联合！人与岩石！全功率！」\n· 「战术！驱兽妙计！全功率！」\n· 「混乱！终极厮杀！全功率！」"
+    }
+  },
+  "achv_event_tundra_challenge_dung": {
+    "name": "“于谷地的密境中”",
+    "category": "活动奖章",
+    "group": "活动奖章",
+    "levels": {
+      "2": {
+        "desc": "在「密境行者」中，通关所有“密境初显”协议空间",
+        "completeDesc": "无论四号谷地在怎样变化多端的协议空间中，变成了怎样怪异的样子，它都无法阻拦您的脚步。"
+      }
+    },
+    "plating": {
+      "desc": "在「密境行者」中，完美通关所有“密境初显”协议空间"
+    }
+  },
+  "achv_event_wuling_challenge_dung": {
+    "name": "“平步险窟”",
+    "category": "活动奖章",
+    "group": "活动奖章",
+    "levels": {
+      "2": {
+        "desc": "在「密境行者」中，通关所有“行探险窟”协议空间",
+        "completeDesc": "无论武陵在怎样变化多端的协议空间中，凝聚出了何等令人绝望的险窟，它都无法阻拦您的脚步。"
+      }
+    },
+    "plating": {
+      "desc": "在「密境行者」中，完美通关所有“行探险窟”协议空间"
+    }
+  },
+  "achv_event_wuling_challenge_dung_02": {
+    "name": "“六方巧境”",
+    "category": "活动奖章",
+    "group": "活动奖章",
+    "levels": {
+      "2": {
+        "desc": "在「密境行者」中，通关所有“六方巧境”协议空间",
+        "completeDesc": "碎片化的协议空间被您逐一探明，六处巧妙异境中的情报尽在您掌握之中。"
+      }
+    },
+    "plating": {
+      "desc": "在「密境行者」中，完美通关所有“六方巧境”协议空间"
+    }
+  },
+  "achv_event_wuling_racing_1": {
+    "name": "“顶尖跑者”",
+    "category": "活动奖章",
+    "group": "活动奖章",
+    "levels": {
+      "2": {
+        "desc": "在「跑者运动会」中，完成所有赛事",
+        "completeDesc": "脚踏流云，身驾清风……代表着武陵山水盛势的赛道被您轻松征服。"
+      }
+    },
+    "plating": {
+      "desc": "在「跑者运动会」中，以三星完赛成绩完成全部赛道"
+    }
+  },
+  "achv_fac_blackbox_1": {
+    "name": "模拟空间奖章",
+    "category": "建设奖章",
+    "group": "集成工业奖章",
+    "levels": {
+      "1": {
+        "desc": "累计手动完成5个模拟空间",
+        "completeDesc": "您完成了部分模拟空间。"
+      },
+      "2": {
+        "desc": "累计手动完成10个模拟空间",
+        "completeDesc": "您完成了许多模拟空间。"
+      },
+      "3": {
+        "desc": "累计手动完成20个模拟空间",
+        "completeDesc": "您完成了大量模拟空间，感谢您对工业知识的热情。"
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_blackbox_2": {
+    "name": "模拟空间奖章·Ⅱ",
+    "category": "建设奖章",
+    "group": "集成工业奖章",
+    "levels": {
+      "3": {
+        "desc": "累计手动完成30个模拟空间",
+        "completeDesc": "您完成了大量模拟空间，掌握了诸多有关武陵的工业知识，再次感谢您的热情。"
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_coupon_tundra": {
+    "name": "谷地调度专家奖章",
+    "category": "建设奖章",
+    "group": "集成工业奖章",
+    "levels": {
+      "1": {
+        "desc": "累计获得20,000,000张谷地调度券",
+        "completeDesc": "您已获得了少量谷地调度券。"
+      },
+      "2": {
+        "desc": "累计获得40,000,000张谷地调度券",
+        "completeDesc": "您已获得了许多谷地调度券。"
+      },
+      "3": {
+        "desc": "累计获得80,000,000张谷地调度券",
+        "completeDesc": "您已获得了大量谷地调度券。\n越多的票券出现在您手中，就代表着越多的人获得了急需的物资，您厥功至伟。"
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_coupon_wuling_1": {
+    "name": "武陵调度专家奖章",
+    "category": "建设奖章",
+    "group": "集成工业奖章",
+    "levels": {
+      "1": {
+        "desc": "累计获得2,000,000张武陵调度券",
+        "completeDesc": "您已获得了少量武陵调度券。"
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_coupon_wuling_2": {
+    "name": "武陵调度专家奖章·Ⅱ",
+    "category": "建设奖章",
+    "group": "集成工业奖章",
+    "levels": {
+      "2": {
+        "desc": "累计获得10,000,000张武陵调度券",
+        "completeDesc": "您已获得了许多武陵调度券。\n越多的票券出现在您手中，就代表着越多的人获得了急需的物资，您厥功至伟。"
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_coupon_wuling_3": {
+    "name": "武陵调度专家奖章·Ⅲ",
+    "category": "建设奖章",
+    "group": "集成工业奖章",
+    "levels": {
+      "3": {
+        "desc": "累计获得25,000,000张武陵调度券",
+        "completeDesc": "您已获得了大量武陵调度券。\n越多的票券出现在您手中，就代表着越多的人获得了急需的物资，您厥功至伟。"
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_coupon_wuling_4": {
+    "name": "武陵调度专家奖章·Ⅳ",
+    "category": "建设奖章",
+    "group": "集成工业奖章",
+    "levels": {
+      "3": {
+        "desc": "累计获得80,000,000张武陵调度券",
+        "completeDesc": "您已获得了许多武陵调度券。\n更多的调度券，更清晰的了解，武陵山水间的物资流转逃不过您的双眼。"
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_coupon_wuling_5": {
+    "name": "武陵调度专家奖章·Ⅴ",
+    "category": "建设奖章",
+    "group": "集成工业奖章",
+    "levels": {
+      "3": {
+        "desc": "累计获得100,000,000张武陵调度券",
+        "completeDesc": "您已获得了更多武陵调度券。\n所有人的需求都得到了满足，您在苦难面前保全了武陵的经济秩序。"
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_domain_depot": {
+    "name": "货物运送奖章",
+    "category": "建设奖章",
+    "group": "集成工业奖章",
+    "levels": {
+      "2": {
+        "desc": "累计完成20次货物运送",
+        "completeDesc": "您已完成了多次货物运送。\n即便拥有协议技术，但在运输货物上，您仍坚持亲力亲为，这令您的“客户们”无比感动。"
+      }
+    },
+    "plating": {
+      "desc": "在不损失货物完整度的情况下，累计完成20次精密制品货箱（极易损）的运送"
+    }
+  },
+  "achv_fac_domain_shop": {
+    "name": "稳定出售奖章",
+    "category": "建设奖章",
+    "group": "集成工业奖章",
+    "levels": {
+      "2": {
+        "desc": "在物资调度累计进行15次物资出售",
+        "completeDesc": "您已成功出售了多次物资。\n仰赖于您的直觉与敏锐观察能力，在您的及时调度下，各地都没有出现物资持续严重匮乏的情况。"
+      }
+    },
+    "plating": {
+      "desc": "在1次物资出售中，对应货物的卖出收益率大于等于500%"
+    }
+  },
+  "achv_fac_kite_station": {
+    "name": "环境监测奖章",
+    "category": "建设奖章",
+    "group": "集成工业奖章",
+    "levels": {
+      "2": {
+        "desc": "累计完成5次环境监测委托",
+        "completeDesc": "您已进行了多次环境监测。\n武陵方面代受保护的动物向您表示感谢。"
+      }
+    },
+    "plating": {
+      "desc": "完成武陵城郊监测终端的生态总录进度"
+    }
+  },
+  "achv_fac_recycle_station": {
+    "name": "资源回收奖章",
+    "category": "建设奖章",
+    "group": "集成工业奖章",
+    "levels": {
+      "1": {
+        "desc": "在资源回收站累计回收50次资源",
+        "completeDesc": "您已在资源回收站收取了多次物资。\n“感谢您准时到来！”那只羽兽似乎在说这样的话。"
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_settlement_tundra": {
+    "name": "谷地据点开拓奖章",
+    "category": "建设奖章",
+    "group": "集成工业奖章",
+    "levels": {
+      "2": {
+        "desc": "将四号谷地的所有据点纳入支援计划",
+        "completeDesc": "四号谷地的所有据点都已在您的支援计划之中。\n授人以钓鳞竿，您的支援方针无比正确。"
+      }
+    },
+    "plating": {
+      "desc": "将四号谷地的所有据点等级提升到最高级"
+    }
+  },
+  "achv_fac_settlement_wuling_1": {
+    "name": "武陵据点开拓奖章·Ⅰ",
+    "category": "建设奖章",
+    "group": "集成工业奖章",
+    "levels": {
+      "2": {
+        "desc": "将天王坪援建点和心脏修缮站纳入支援计划",
+        "completeDesc": "武陵的部分据点已在您的支援计划之中。\n授人以钓鳞竿，您的支援方针无比正确。"
+      }
+    },
+    "plating": {
+      "desc": "将天王坪援建点和心脏修缮站的等级提升到最高级"
+    }
+  },
+  "achv_fac_settlement_wuling_2": {
+    "name": "武陵据点开拓奖章·Ⅱ",
+    "category": "建设奖章",
+    "group": "集成工业奖章",
+    "levels": {
+      "2": {
+        "desc": "将武陵的所有据点纳入支援计划",
+        "completeDesc": "武陵的所有据点都已在您的支援计划之中。\n山水与人的关系被您协调得十分完美。"
+      }
+    },
+    "plating": {
+      "desc": "将武陵的所有据点等级提升到最高级"
+    }
+  },
+  "achv_fac_simulation_training": {
+    "name": "“演武巅峰”",
+    "category": "建设奖章",
+    "group": "集成工业奖章",
+    "levels": {
+      "2": {
+        "desc": "完成1次战力点之和为10的演算",
+        "completeDesc": "您以极巧妙的策略，登临了选剑演武的顶峰。"
+      }
+    },
+    "plating": {
+      "desc": "在数据溢出1次时完成战力点之和为10的演算"
+    }
+  },
+  "achv_fac_spaceship_fever_point": {
+    "name": "深情厚谊奖章",
+    "category": "建设奖章",
+    "group": "帝江号奖章",
+    "levels": {
+      "1": {
+        "desc": "累计将5名干员信赖度提升至100%",
+        "completeDesc": "您结识了数位性命相托的伙伴。"
+      },
+      "2": {
+        "desc": "累计将10名干员信赖度提升至100%",
+        "completeDesc": "您结识了多位性命相托的伙伴。\n您拥有吸引同行者的能力。"
+      },
+      "3": {
+        "desc": "累计将20名干员信赖度提升至100%",
+        "completeDesc": "您结识了许多性命相托的伙伴。\n终有一日，这颗星球都将信任您。"
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_spaceship_gift": {
+    "name": "亲切赠礼奖章",
+    "category": "建设奖章",
+    "group": "帝江号奖章",
+    "levels": {
+      "1": {
+        "desc": "累计赠送300个干员偏好的礼物",
+        "completeDesc": "您已赠予了干员们一定数量的礼物。"
+      },
+      "2": {
+        "desc": "累计赠送500个干员偏好的礼物",
+        "completeDesc": "您已赠予了干员们一定数量的礼物。\n干员宿舍真的能放下这么多礼物吗？"
+      },
+      "3": {
+        "desc": "累计赠送1000个干员偏好的礼物",
+        "completeDesc": "您已赠予了干员们一定数量的礼物。\n礼物仅是一个契机，真诚才是干员们亲近您的真正理由。"
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_spaceship_level_1": {
+    "name": "总控升级奖章",
+    "category": "建设奖章",
+    "group": "帝江号奖章",
+    "levels": {
+      "3": {
+        "desc": "将帝江号总控中枢提升至5级",
+        "completeDesc": "您已将总控中枢性能提高至一定水平。\n您是否感受到了帝江号的欢欣愉悦？"
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_techtree_jinlong_1": {
+    "name": "武陵工业先驱奖章·Ⅰ",
+    "category": "建设奖章",
+    "group": "集成工业奖章",
+    "levels": {
+      "1": {
+        "desc": "完成武陵工业一期的所有技术研究",
+        "completeDesc": "您已实现了武陵工业计划的第一期内容。"
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_techtree_jinlong_2": {
+    "name": "武陵工业先驱奖章·Ⅱ",
+    "category": "建设奖章",
+    "group": "集成工业奖章",
+    "levels": {
+      "1": {
+        "desc": "完成武陵工业计划的25个技术研究",
+        "completeDesc": "您已实现了武陵工业计划的更多内容。"
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_techtree_jinlong_3": {
+    "name": "武陵工业先驱奖章·Ⅲ",
+    "category": "建设奖章",
+    "group": "集成工业奖章",
+    "levels": {
+      "1": {
+        "desc": "完成武陵工业计划的34个技术研究",
+        "completeDesc": "您已实现了武陵工业计划的更多内容。\n您正走向塔卫二技术最前列。"
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_techtree_jinlong_4": {
+    "name": "武陵工业先驱奖章·Ⅳ",
+    "category": "建设奖章",
+    "group": "集成工业奖章",
+    "levels": {
+      "1": {
+        "desc": "完成武陵工业计划的47个技术研究",
+        "completeDesc": "您已实现了武陵工业计划的更多内容。\n您的所思所想正时时刻刻回馈着脚下的土地。"
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_techtree_tundra": {
+    "name": "谷地工业先驱奖章",
+    "category": "建设奖章",
+    "group": "集成工业奖章",
+    "levels": {
+      "3": {
+        "desc": "完成基础工业计划的所有技术研究",
+        "completeDesc": "您已实现了基础工业计划中的所有研究内容。\n在您的努力下，集成工业系统已完全与四号谷地适配。"
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_typhoea_archery": {
+    "name": "“心生弓矢”",
+    "category": "建设奖章",
+    "group": "集成工业奖章",
+    "levels": {
+      "2": {
+        "desc": "在「提弗洛斯的靶场」中，通关所有基础教学，且通关1次日常训练04",
+        "completeDesc": "无需刻意地瞄准，箭矢已在您的心中，一切都是如此得心应手。"
+      }
+    },
+    "plating": {
+      "desc": "在「提弗洛斯的靶场」中，通关所有进阶训练，且三星通关日常训练04"
+    }
+  },
+  "achv_growth_adventure_level": {
+    "name": "千锤百炼奖章",
+    "category": "锤炼奖章",
+    "group": "锤炼奖章",
+    "levels": {
+      "1": {
+        "desc": "管理员权限等阶达到20级",
+        "completeDesc": "权限的进阶令您小有成就。"
+      },
+      "2": {
+        "desc": "管理员权限等阶达到40级",
+        "completeDesc": "权限的进阶令您渐入佳境。"
+      },
+      "3": {
+        "desc": "管理员权限等阶达到60级",
+        "completeDesc": "权限的进阶令您独当一面。"
+      }
+    },
+    "plating": null
+  },
+  "achv_growth_char_count_1": {
+    "name": "干员联络奖章",
+    "category": "锤炼奖章",
+    "group": "锤炼奖章",
+    "levels": {
+      "1": {
+        "desc": "累计获得5名干员",
+        "completeDesc": "您与一些干员第一次会面。"
+      },
+      "2": {
+        "desc": "累计获得10名干员",
+        "completeDesc": "您与一些干员第一次会面。您的作战小队已能够初步形成。"
+      },
+      "3": {
+        "desc": "累计获得20名干员",
+        "completeDesc": "您与一些干员第一次会面。您的干员规模已能支持您进行较为复杂的战术规划。"
+      }
+    },
+    "plating": null
+  },
+  "achv_growth_char_potential_1": {
+    "name": "潜能解放奖章",
+    "category": "锤炼奖章",
+    "group": "锤炼奖章",
+    "levels": {
+      "1": {
+        "desc": "累计为1名干员解锁全部潜能",
+        "completeDesc": "您的一位干员已解放了自身潜能。"
+      },
+      "2": {
+        "desc": "累计为10名干员解锁全部潜能",
+        "completeDesc": "您的部分干员已解放了自身潜能。\n正视自我是提高实力的第一步。"
+      },
+      "3": {
+        "desc": "累计为15名干员解锁全部潜能",
+        "completeDesc": "您的部分干员已解放了自身潜能。\n他们超越了瓶颈，但他们相信这仅仅是一个开始。"
+      }
+    },
+    "plating": null
+  },
+  "achv_growth_char_skill_level_1": {
+    "name": "技能提升奖章",
+    "category": "锤炼奖章",
+    "group": "锤炼奖章",
+    "levels": {
+      "1": {
+        "desc": "累计提升5个干员技能至专精等级3级",
+        "completeDesc": "您的部分干员已将作战技能磨练的炉火纯青。"
+      },
+      "2": {
+        "desc": "累计提升10个干员技能至专精等级3级",
+        "completeDesc": "您的部分干员已将作战技能磨练的炉火纯青。您与干员之间的信任促成了这一现状。"
+      },
+      "3": {
+        "desc": "累计提升20个干员技能至专精等级3级",
+        "completeDesc": "您的部分干员已将作战技能磨练的炉火纯青。不同领域，不同专精，但您正带领着干员们向共同的未来前进。"
+      }
+    },
+    "plating": null
+  },
+  "achv_growth_equip_enhance": {
+    "name": "完美装备奖章",
+    "category": "锤炼奖章",
+    "group": "锤炼奖章",
+    "levels": {
+      "3": {
+        "desc": "将1件装备的所有属性升级到满精锻状态",
+        "completeDesc": "它承载着您的伤痕、您的荣耀、您的生命，从始至终。"
+      }
+    },
+    "plating": null
+  },
+  "achv_growth_world_level": {
+    "name": "深度探索奖章",
+    "category": "锤炼奖章",
+    "group": "锤炼奖章",
+    "levels": {
+      "1": {
+        "desc": "探索等级达到2级",
+        "completeDesc": "证明您抵达更高探索等级的奖章。"
+      },
+      "2": {
+        "desc": "探索等级达到4级",
+        "completeDesc": "证明您抵达更高探索等级的奖章。\n更艰难的环境，更多的机会"
+      },
+      "3": {
+        "desc": "探索等级达到7级",
+        "completeDesc": "证明您抵达更高探索等级的奖章。\n您已抵达最高峰。"
+      }
+    },
+    "plating": null
+  },
+  "achv_growth_wpn_count_1": {
+    "name": "武库完备奖章",
+    "category": "锤炼奖章",
+    "group": "锤炼奖章",
+    "levels": {
+      "1": {
+        "desc": "累计获得10件不同的武器",
+        "completeDesc": "您的武器库略显充实。"
+      },
+      "2": {
+        "desc": "累计获得20件不同的武器",
+        "completeDesc": "您的武器库略显充实。\n无论是梅什科工业还是熔炉要塞，各公司的精品就在其中。"
+      },
+      "3": {
+        "desc": "累计获得40件不同的武器",
+        "completeDesc": "您的武器库略显充实。\n如此全面的收集，您是否在替武库工程师进行同类产品调研？"
+      }
+    },
+    "plating": null
+  },
+  "achv_growth_wpn_skill_level": {
+    "name": "终极武器奖章",
+    "category": "锤炼奖章",
+    "group": "锤炼奖章",
+    "levels": {
+      "3": {
+        "desc": "将1件武器的技能RANK等级之和升级到18",
+        "completeDesc": "在无数次精致保养后，您的武器已与各种伟大传说中的珍宝并无差别。"
+      }
+    },
+    "plating": {
+      "desc": "将1件武器的技能RANK等级之和升级到25"
+    }
+  },
+  "achv_hide_aether_lock_clean": {
+    "name": "“悬顶之剑”",
+    "category": "奇想奖章",
+    "group": "奇想奖章",
+    "levels": {
+      "2": {
+        "desc": "清理北部禁区中的5个淤积能量体",
+        "completeDesc": "身在险地，所行需谨慎，您解开了束缚悬顶之剑的锁扣。"
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_banana": {
+    "name": "“道具赛？”",
+    "category": "奇想奖章",
+    "group": "奇想奖章",
+    "levels": {
+      "1": {
+        "desc": "主控干员被香蕉皮绊倒1次",
+        "completeDesc": "显然，抛下香蕉皮的野生动物无法明确“禁止使用道具”的规则。"
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_cave": {
+    "name": "“正在抓捕验收人员”",
+    "category": "奇想奖章",
+    "group": "奇想奖章",
+    "levels": {
+      "2": {
+        "desc": "踩碎矿脉源区所有的脆弱地面",
+        "completeDesc": "这并非刻意为之的陷阱，联盟工团正在调查抓捕相关责任人，请您放心。"
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_cave_v1d5": {
+    "name": "“巨型冰锤”",
+    "category": "奇想奖章",
+    "group": "奇想奖章",
+    "levels": {
+      "1": {
+        "desc": "抵达雪松林小岩穴的地下山洞",
+        "completeDesc": "您足够敏锐地注意到了自然环境中的破冰锤。"
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_fly": {
+    "name": "“非正常移动”",
+    "category": "奇想奖章",
+    "group": "奇想奖章",
+    "levels": {
+      "3": {
+        "desc": "使用滑索架、弹射器和绳索累计移动10000米",
+        "completeDesc": "帝江号正计划为您研发贴地飞行设备。"
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_jump_hit": {
+    "name": "“协议ε·20.00m”",
+    "category": "奇想奖章",
+    "group": "奇想奖章",
+    "levels": {
+      "2": {
+        "desc": "从20米及以上高空下落并命中敌人",
+        "completeDesc": "显然，本次出现在空中的并非轨道漂浮物，而是您和您的干员。"
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_no_parry": {
+    "name": "“造主的盛势”",
+    "category": "奇想奖章",
+    "group": "奇想奖章",
+    "levels": {
+      "3": {
+        "desc": "在不使用造裔武器的情况下，通关“危境祸影·阿莱克琉斯，千夫长”",
+        "completeDesc": "造主以最强硬的方式，击溃了昔日的斗士。"
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_open_treasure": {
+    "name": "“小兽的赠礼”",
+    "category": "奇想奖章",
+    "group": "奇想奖章",
+    "levels": {
+      "2": {
+        "desc": "找到小机灵的“赠礼”",
+        "completeDesc": "友情？信任？在这位可爱的小动物眼中，您已经是它的朋友了。"
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_paralyze": {
+    "name": "“全位显现”",
+    "category": "奇想奖章",
+    "group": "奇想奖章",
+    "levels": {
+      "2": {
+        "desc": "在「聂菲斯，“征服者”」静止住周遭时，主控干员被定在半空",
+        "completeDesc": "她的野心与狂妄令人恐惧，但您仍不惮于在绝望的封锁中全方位展示自己的勇气。"
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_rebellious": {
+    "name": "“人造南墙”",
+    "category": "奇想奖章",
+    "group": "奇想奖章",
+    "levels": {
+      "2": {
+        "desc": "使用防御反击技能终止斧甲兽的连续冲撞",
+        "completeDesc": "但这仍然无法令斧甲兽回头，真是可惜。"
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_root": {
+    "name": "“寓于枯荣”",
+    "category": "奇想奖章",
+    "group": "奇想奖章",
+    "levels": {
+      "1": {
+        "desc": "探寻丙型天师桩的根部",
+        "completeDesc": "您在试验园区的天师桩息壤结构上捡到了那朵尚未盛放的“花苞”，这份跨越枯寂，走向新生的景色由您见证。"
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_ruanyi": {
+    "name": "“死域游身”",
+    "category": "奇想奖章",
+    "group": "奇想奖章",
+    "levels": {
+      "2": {
+        "desc": "在阮一进入激怒状态后，使其“枯朽之触”存在至少60秒",
+        "completeDesc": "他以枯枝朽木围成一片死域，而您仍能在其中自在穿行。"
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_slime": {
+    "name": "“四皇会战”",
+    "category": "奇想奖章",
+    "group": "奇想奖章",
+    "levels": {
+      "2": {
+        "desc": "踢落4个源石虫",
+        "completeDesc": "您协助四位源石虫完成了搬家工作。"
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_waterwheel_top": {
+    "name": "“水自天流”",
+    "category": "奇想奖章",
+    "group": "奇想奖章",
+    "levels": {
+      "2": {
+        "desc": "抵达清波寨大水车顶端",
+        "completeDesc": "您登上了清波寨水车的顶端，见证了“水从天上来”的奇景。"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_aglina": {
+    "name": "“信使的信”",
+    "category": "章节奖章",
+    "group": "探索任务奖章",
+    "levels": {
+      "2": {
+        "desc": "完成支线任务「信使的信」",
+        "completeDesc": "几件小事，几个包裹。\n您与她相会于黄昏下的天空，空白信件之上终将写满美好记忆的馈赠。"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_camille": {
+    "name": "“亡者之舞”",
+    "category": "章节奖章",
+    "group": "探索任务奖章",
+    "levels": {
+      "2": {
+        "desc": "完成支线任务「亡者之舞」",
+        "completeDesc": "追逐，鲜血，仍会阵痛的旧伤痕……卡缪许下承诺，他的血必与管理员同在。"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e0m2": {
+    "name": "“苏醒”",
+    "category": "章节奖章",
+    "group": "主线任务奖章",
+    "levels": {
+      "3": {
+        "desc": "完成主线任务「序章 - 进程·复苏」",
+        "completeDesc": "您已重归塔卫二。"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e10m3": {
+    "name": "“轻舟已过”",
+    "category": "章节奖章",
+    "group": "主线任务奖章",
+    "levels": {
+      "3": {
+        "desc": "完成主线任务「第二章 - 进程Ⅵ - 终则有始」",
+        "completeDesc": "庄方宜等到了您。"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e11m1": {
+    "name": "“启封”",
+    "category": "章节奖章",
+    "group": "主线任务奖章",
+    "levels": {
+      "3": {
+        "desc": "完成主线任务「第二章 - 进程Ⅶ - 长风破浪」",
+        "completeDesc": "您已做好了直面毁灭的准备，它已尘封多年，它仍是绝望的具现。"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e11m3": {
+    "name": "“谈剑”",
+    "category": "章节奖章",
+    "group": "主线任务奖章",
+    "levels": {
+      "3": {
+        "desc": "在谈剑堂，与某位师长分别",
+        "completeDesc": "生者将心意寄于锋刃之间，他已知晓。"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e11m4": {
+    "name": "“连接过去”",
+    "category": "章节奖章",
+    "group": "主线任务奖章",
+    "levels": {
+      "3": {
+        "desc": "以息壤桥梁跨越天堑",
+        "completeDesc": "息壤成桥，跨接今时与往日，道路为您开启了。"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e11m5": {
+    "name": "“希望的孩子”",
+    "category": "章节奖章",
+    "group": "主线任务奖章",
+    "levels": {
+      "3": {
+        "desc": "完成主线任务「第二章 - 进程Ⅶ - 异乡归人」",
+        "completeDesc": "她的心被轻轻托举着，走过重重叠叠的死亡……希望在这里根植。"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e11m7": {
+    "name": "“裂伤于此终结”",
+    "category": "章节奖章",
+    "group": "主线任务奖章",
+    "levels": {
+      "3": {
+        "desc": "完成主线任务「第二章 - 进程Ⅶ - “归途”」",
+        "completeDesc": "终于，这道伤口不再痛了。"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e1m2": {
+    "name": "“核心降落”",
+    "category": "章节奖章",
+    "group": "主线任务奖章",
+    "levels": {
+      "3": {
+        "desc": "降下一座科技的结晶",
+        "completeDesc": "开拓的未来已降下至四号谷地。"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e1m8": {
+    "name": "“重拳落空”",
+    "category": "章节奖章",
+    "group": "主线任务奖章",
+    "levels": {
+      "3": {
+        "desc": "完成主线任务「第一章 - 进程Ⅰ - 要塞决战」",
+        "completeDesc": "您击败了“碾骨之拳”。\n拥抱超域？迎来新生？您如何看待聂菲斯的宣言？"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e2m1": {
+    "name": "“易守‘难’攻？”",
+    "category": "章节奖章",
+    "group": "主线任务奖章",
+    "levels": {
+      "3": {
+        "desc": "见证一场袭击的发生",
+        "completeDesc": "您目击了一场突如其来的“爆炸”。\n显然，发电站并非易守难攻。"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e2m8": {
+    "name": "“碾碎星辰的残片”",
+    "category": "章节奖章",
+    "group": "主线任务奖章",
+    "levels": {
+      "3": {
+        "desc": "完成主线任务「第一章 - 进程Ⅲ - 世代摇篮」",
+        "completeDesc": "您击碎了局部“复生”的巨大天使。"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e3m5": {
+    "name": "“关闭裂隙”",
+    "category": "章节奖章",
+    "group": "主线任务奖章",
+    "levels": {
+      "3": {
+        "desc": "完成主线任务「第一章 - 进程Ⅳ -未熄火种」",
+        "completeDesc": "即将吞噬四号谷地的裂隙已在您与同伴们的努力下关闭。"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e4m1": {
+    "name": "“回归的噩兆”",
+    "category": "章节奖章",
+    "group": "主线任务奖章",
+    "levels": {
+      "3": {
+        "desc": "完成主线任务「间章 - 四方会议」",
+        "completeDesc": "不祥的征兆显现于塔卫二各处，您的旅途尚未结束。"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e6m1": {
+    "name": "“初至武陵城”",
+    "category": "章节奖章",
+    "group": "主线任务奖章",
+    "levels": {
+      "3": {
+        "desc": "到达一座全新的城市",
+        "completeDesc": "您已抵达了武陵城。"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e7m4": {
+    "name": "“溺水”",
+    "category": "章节奖章",
+    "group": "主线任务奖章",
+    "levels": {
+      "3": {
+        "desc": "完成主线任务「第二章 - 进程Ⅲ - 旧泉涸处新潮生」",
+        "completeDesc": "一个承诺，一个选择。\n旧日之路已沉入清波，新的道路又在何方？"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e8m4": {
+    "name": "“我最后侍奉的王”",
+    "category": "章节奖章",
+    "group": "主线任务奖章",
+    "levels": {
+      "3": {
+        "desc": "在某处要地，与阿达希尔分道扬镳",
+        "completeDesc": "阿达希尔看向您，所见的是您不可见的，遗忘了的光景。"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e9m3": {
+    "name": "“征服者之死”",
+    "category": "章节奖章",
+    "group": "主线任务奖章",
+    "levels": {
+      "3": {
+        "desc": "完成主线任务「第二章 - 进程Ⅴ - 决战总桩」",
+        "completeDesc": "被野心之火点燃，欲以万千生命为代价窥伺绝境的征服者，聂菲斯的恶意被您粉碎。"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_gm02m22": {
+    "name": "“雪下的命运”",
+    "category": "章节奖章",
+    "group": "探索任务奖章",
+    "levels": {
+      "1": {
+        "desc": "完成支线任务「命运的明示」「终其一生」",
+        "completeDesc": "雪祀留下了她的文字与执着……命运由大雪覆盖着，却被柔韧坚强的心轻轻揭开。"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_gm02m27": {
+    "name": "“愿遂心明”",
+    "category": "章节奖章",
+    "group": "探索任务奖章",
+    "levels": {
+      "2": {
+        "desc": "完成支线任务「钟鸣人归」",
+        "completeDesc": "钟鸣又起，我心遂明。"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_laevat": {
+    "name": "“燃尽记忆之灰”",
+    "category": "章节奖章",
+    "group": "探索任务奖章",
+    "levels": {
+      "2": {
+        "desc": "完成支线任务「燃尽记忆之灰」",
+        "completeDesc": "记忆之痕于大火中变幻。\n即便名为过去的碎片层峦叠嶂，但您依旧与莱万汀携手走出了无尽回廊。"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_liino": {
+    "name": "“如同流星飞越边界”",
+    "category": "章节奖章",
+    "group": "探索任务奖章",
+    "levels": {
+      "2": {
+        "desc": "完成支线任务「如同流星飞越边界」",
+        "completeDesc": "终末地工业拥有了自己的“偶像品牌”……排练、演出，哎呀……事情还多着呢。"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_mifu": {
+    "name": "“以拳问心”",
+    "category": "章节奖章",
+    "group": "探索任务奖章",
+    "levels": {
+      "2": {
+        "desc": "完成支线任务「以拳问心」",
+        "completeDesc": "再以双拳问我心，一气贯山水，执武向雷霆。"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_typhoea": {
+    "name": "“雾隐冬梦深林中”",
+    "category": "章节奖章",
+    "group": "探索任务奖章",
+    "levels": {
+      "2": {
+        "desc": "完成支线任务「雾隐冬梦深林中」",
+        "completeDesc": "追随着寻觅的目光，紧跟着箭矢的指引，冷风掠过雾与梦……祂的声音回响于雪林。"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_wolfgd": {
+    "name": "“离群之狼”",
+    "category": "章节奖章",
+    "group": "探索任务奖章",
+    "levels": {
+      "2": {
+        "desc": "完成支线任务「离群之狼」",
+        "completeDesc": "狼卫查明了真相，处决了背叛者。\n那柄短刀插在坟前……狼群不同以往，他已清楚自己应该做些什么。"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_wulfa": {
+    "name": "“红骑士”",
+    "category": "章节奖章",
+    "group": "探索任务奖章",
+    "levels": {
+      "2": {
+        "desc": "完成支线任务「红骑士」",
+        "completeDesc": "人们穿越了孩子们的王国，放下行囊，停下脚步。\n有谁想起了膝盖上的擦伤，还有那被遗忘的童年？"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_yvonne": {
+    "name": "“爱，呐喊和原型机”",
+    "category": "章节奖章",
+    "group": "探索任务奖章",
+    "levels": {
+      "2": {
+        "desc": "完成支线任务「爱，呐喊和原型机」",
+        "completeDesc": "一箱迟到的颜料。\n沿着塔塔的行迹，绘下一幅幅涂鸦，伊冯在色彩中看到了重逢。"
+      }
+    },
+    "plating": null
+  },
+  "achv_side_mission_count": {
+    "name": "助人为乐奖章",
+    "category": "章节奖章",
+    "group": "探索任务奖章",
+    "levels": {
+      "1": {
+        "desc": "完成共计30项探索任务",
+        "completeDesc": "您帮助许许多多人解决了问题。"
+      },
+      "2": {
+        "desc": "完成共计40项探索任务",
+        "completeDesc": "您帮助许许多多人解决了问题。\n并非作战任务，亦不谋求回报。"
+      },
+      "3": {
+        "desc": "完成共计50项探索任务",
+        "completeDesc": "您帮助许许多多人解决了问题。\n受助者在今后的生活中也将帮助他人，在塔卫二，人类必须相互搀扶。"
+      }
+    },
+    "plating": null
+  },
+  "achv_social_building": {
+    "name": "依依难舍奖章",
+    "category": "社交奖章",
+    "group": "社交奖章",
+    "levels": {
+      "1": {
+        "desc": "共享设备累计受维护50次",
+        "completeDesc": "您的设备已受到了一定次数的维护。"
+      },
+      "2": {
+        "desc": "共享设备累计受维护200次",
+        "completeDesc": "您的设备已受到了多次维护。"
+      },
+      "3": {
+        "desc": "共享设备累计受维护500次",
+        "completeDesc": "您的设备已受到了大量维护。\n显然，您帮助到了许多人，受助者无不对您的设备依依难舍，他们对您的设备竭力挽留。"
+      }
+    },
+    "plating": null
+  },
+  "achv_social_spaceship_be_helped": {
+    "name": "收获助力奖章",
+    "category": "社交奖章",
+    "group": "社交奖章",
+    "levels": {
+      "2": {
+        "desc": "累计获得好友提供的生产助力100次",
+        "completeDesc": "您设置于帝江号的生产设施高效运转中，这离不开好友的慷慨助力。"
+      }
+    },
+    "plating": null
+  },
+  "achv_social_spaceship_help": {
+    "name": "慷慨助力奖章",
+    "category": "社交奖章",
+    "group": "社交奖章",
+    "levels": {
+      "1": {
+        "desc": "累计为好友提供生产助力50次",
+        "completeDesc": "您慷慨地向好友提供了生产助力。\n塔卫二因您这样的助人精神而欣欣向荣。"
+      }
+    },
+    "plating": null
+  },
+  "achv_social_spaceship_info_exchange": {
+    "name": "情报交流奖章",
+    "category": "社交奖章",
+    "group": "社交奖章",
+    "levels": {
+      "1": {
+        "desc": "累计参与50次情报交流",
+        "completeDesc": "您已进行了一定次数的情报交流。\n世界随您的目光，因您的情报而扩大。"
+      }
+    },
+    "plating": null
+  }
+}

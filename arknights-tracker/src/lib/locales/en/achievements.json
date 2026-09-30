@@ -1,0 +1,2086 @@
+{
+  "achv_adv_tundra_box": {
+    "name": "Valley Crate Master",
+    "category": "Regional",
+    "group": "Valley",
+    "levels": {
+      "1": {
+        "desc": "In Valley IV, open 120 crates",
+        "completeDesc": "You have opened a number of storage crates in Valley IV."
+      },
+      "2": {
+        "desc": "In Valley IV, open 180 crates",
+        "completeDesc": "You have opened most storage crates in Valley IV."
+      },
+      "3": {
+        "desc": "In Valley IV, open 288 crates",
+        "completeDesc": "No storage crates in Valley IV can escape you! \nThe sound of disengaging locks is just so delightful."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_tundra_campfire": {
+    "name": "Valley Anchorer",
+    "category": "Regional",
+    "group": "Valley",
+    "levels": {
+      "1": {
+        "desc": "In Valley IV, unlock 14 TP Points",
+        "completeDesc": "You have taken the first steps to awaken the Protocol Network of Valley IV."
+      },
+      "2": {
+        "desc": "In Valley IV, unlock 28 TP Points",
+        "completeDesc": "You have completely established the Protocol Network of Valley IV."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_tundra_documents": {
+    "name": "Valley Investigator",
+    "category": "Regional",
+    "group": "Valley",
+    "levels": {
+      "2": {
+        "desc": "In Valley IV, gather 4 Investigation Reports (IR)",
+        "completeDesc": "Every discovery matters. You have noticed pieces of intel scattered throughout Valley IV."
+      },
+      "3": {
+        "desc": "In Valley IV, gather 6 Investigation Reports (IR)",
+        "completeDesc": "Every discovery matters. Your observant eyes have noticed pieces of intel scattered throughout Valley IV. \nA newspaper cutting, a page of a magazine... Major events are usually hidden in unassuming places and details."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_tundra_ether": {
+    "name": "\"Reunited Fragments\"",
+    "category": "Regional",
+    "group": "Valley",
+    "levels": {
+      "1": {
+        "desc": "In Valley IV, gather 80 Aurylenes",
+        "completeDesc": "Lost fragments of the primal artifact have reconvened in your hands."
+      },
+      "2": {
+        "desc": "In Valley IV, gather 120 Aurylenes",
+        "completeDesc": "Lost fragments of the primal artifact have reconvened in your hands. \nIt was once a shard of glory now faded."
+      },
+      "3": {
+        "desc": "In Valley IV, gather 166 Aurylenes",
+        "completeDesc": "Lost fragments of the primal artifact have reconvened in your hands. \nIt is the symbol of our final destination as well as our hopes and dreams."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_tundra_fixablerobot": {
+    "name": "\"DELTA Savior\"",
+    "category": "Regional",
+    "group": "Valley",
+    "levels": {
+      "1": {
+        "desc": "In Valley IV, repair 25 Delta Robots",
+        "completeDesc": "We have collected and translated vast amounts of binary data. The senders seem to be describing their gratefulness."
+      },
+      "2": {
+        "desc": "In Valley IV, repair 35 Delta Robots",
+        "completeDesc": "We have collected and translated vast amounts of binary data. The senders seem to be willing to risk their safety for you."
+      },
+      "3": {
+        "desc": "In Valley IV, repair 43 Delta robots",
+        "completeDesc": "We have collected and translated vast amounts of binary data. The senders seem desperate to honor you with this title: \"DELTA Savior, Champion of Robotkind, and Machine God of Valley IV.\""
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_tundra_running": {
+    "name": "\"Shoulder to Shoulder Delivery\"",
+    "category": "Regional",
+    "group": "Valley",
+    "levels": {
+      "1": {
+        "desc": "In Valley IV, win Athletic Race 4 times",
+        "completeDesc": "Several competitors suspect you secretly used Tele-Protocol tech to help you get to the finish line."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_arrow": {
+    "name": "\"Guidance From Amma\"",
+    "category": "Regional",
+    "group": "Wuling",
+    "levels": {
+      "2": {
+        "desc": "Use Typhoeus's arrows and shatter all runes in the Snowy Forest",
+        "completeDesc": "Arrows white that pierces the skies. Armed with Amma's gifts, you have dispelled every patch of mist."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_balloon": {
+    "name": "Aero-Salvager",
+    "category": "Regional",
+    "group": "Wuling",
+    "levels": {
+      "1": {
+        "desc": "In Yinglung Pass and North Wuling Exclusion Zone, complete aero-salvaging 26 times.",
+        "completeDesc": "The open skies offer a salvaging route. You have now mastered a cheap and effective way of transportation."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_blackhole_clean": {
+    "name": "Rift Neutralizer",
+    "category": "Regional",
+    "group": "Wuling",
+    "levels": {
+      "3": {
+        "desc": "In North Wuling Exclusion Zone, completely neutralize 5 rifts",
+        "completeDesc": "You have sealed rifts tearing into realspace as well as wounds that tear at their souls and spirits."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_box_1": {
+    "name": "Wuling Crate Master Ⅰ",
+    "category": "Regional",
+    "group": "Wuling",
+    "levels": {
+      "3": {
+        "desc": "Open 227 storage crates in Jingyu Valley and Wuling City",
+        "completeDesc": "You have opened a number of storage crates in Wuling."
+      }
+    },
+    "plating": {
+      "desc": "Open 242 storage crates in Jingyu Valley and Wuling City"
+    }
+  },
+  "achv_adv_wuling_box_2": {
+    "name": "Wuling Crate Master Ⅱ",
+    "category": "Regional",
+    "group": "Wuling",
+    "levels": {
+      "2": {
+        "desc": "In Qingbo Stockade, Marker Stone, Marker Stone Interiors, and Test Area, open 121 storage crates",
+        "completeDesc": "You have opened most storage crates in Wuling."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_box_3": {
+    "name": "Wuling Crate Master Ⅲ",
+    "category": "Regional",
+    "group": "Wuling",
+    "levels": {
+      "2": {
+        "desc": "In Sword Vault Dale, Yinglung Pass, and North Wuling Exclusion Zone, open 151 crates",
+        "completeDesc": "You have opened most storage crates in Wuling and proven your ability in discovering these stashes."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_bugball": {
+    "name": "\"A Goal Truly Slugged\"",
+    "category": "Regional",
+    "group": "Wuling",
+    "levels": {
+      "2": {
+        "desc": "Kick 18 Originium Slugs into the Suiming Pit",
+        "completeDesc": "Your techniques far exceed those of past illusions. Every kick was straight, unerring, and just right."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_campfire_1": {
+    "name": "Anchored to Wuling Ⅰ",
+    "category": "Regional",
+    "group": "Wuling",
+    "levels": {
+      "1": {
+        "desc": "Unlock 19 TP Points in Jingyu Valley and Wuling City",
+        "completeDesc": "You have taken the first steps to awaken the Protocol Network of Wuling."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_campfire_2": {
+    "name": "Anchored to Wuling Ⅱ",
+    "category": "Regional",
+    "group": "Wuling",
+    "levels": {
+      "1": {
+        "desc": "In Qingbo Stockade, Marker Stone, Marker Stone Interiors, and Test Area, unlock 19 TP Points",
+        "completeDesc": "You have further awakened the Protocol Network of Wuling."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_campfire_3": {
+    "name": "Anchored to Wuling Ⅲ",
+    "category": "Regional",
+    "group": "Wuling",
+    "levels": {
+      "1": {
+        "desc": "In Sword Vault Dale, Yinglung Pass, and North Wuling Exclusion Zone, unlock 22 TP Points",
+        "completeDesc": "You have extended the Protocol Network into the deeper reaches of Wuling."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_clean": {
+    "name": "\"Purger of the Turbid\"",
+    "category": "Regional",
+    "group": "Wuling",
+    "levels": {
+      "1": {
+        "desc": "Eliminate every Blight mass in Qingbo Stockade",
+        "completeDesc": "You have eliminated every obstructing Blight mass in Qingbo Stockade."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_documents_1": {
+    "name": "Wuling Investigator Ⅰ",
+    "category": "Regional",
+    "group": "Wuling",
+    "levels": {
+      "2": {
+        "desc": "Gather 2 investigation reports in Jingyu Valley and Wuling City",
+        "completeDesc": "Every discovery matters. You have noticed pieces of intel scattered throughout Wuling."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_ether_1": {
+    "name": "\"Re-Congregated Fragments\" Ⅰ",
+    "category": "Regional",
+    "group": "Wuling",
+    "levels": {
+      "3": {
+        "desc": "Gather 74 Aurylenes in Jingyu Valley and Wuling City",
+        "completeDesc": "Lost fragments of the primal artifact have once again gathered in your hands."
+      }
+    },
+    "plating": {
+      "desc": "Gather 81 Aurylenes in Jingyu Valley and Wuling City"
+    }
+  },
+  "achv_adv_wuling_ether_2": {
+    "name": "\"Re-Congregated Fragments\" Ⅱ",
+    "category": "Regional",
+    "group": "Wuling",
+    "levels": {
+      "2": {
+        "desc": "In Qingbo Stockade, Marker Stone, Marker Stone Interiors, and Test Area, gather 59 Aurylenes",
+        "completeDesc": "More fragments of the primal artifact have once again gathered in your hands."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_ether_3": {
+    "name": "Re-Congregated Fragments Ⅲ",
+    "category": "Regional",
+    "group": "Wuling",
+    "levels": {
+      "2": {
+        "desc": "In Sword Vault Dale, Yinglung Pass, and North Wuling Exclusion Zone, gather 59 Aurylenes",
+        "completeDesc": "Numerous lost fragments of the primal artifact have once again gathered in your hands. These fragments have felt your call."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_find_difference": {
+    "name": "Kaleidographer",
+    "category": "Regional",
+    "group": "Wuling",
+    "levels": {
+      "2": {
+        "desc": "In Yinglung Pass and North Wuling Exclusion Zone, solve 8 Kaleidograph puzzles",
+        "completeDesc": "You can clearly identify different lines and symbols. Every piece of data converges in your gaze."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_floor_1": {
+    "name": "\"Fowlbeast Water Prancer\"",
+    "category": "Regional",
+    "group": "Wuling",
+    "levels": {
+      "1": {
+        "desc": "Complete 8 pressure plate challenges in Jingyu Valley and Wuling City",
+        "completeDesc": "You elegantly leaped from one plate to another and restored the perfect balance. \n\"A wondrous display of the Fowlbeast Water Prancer stance!\""
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_floor_2": {
+    "name": "\"Fowlbeast Water Prancer Ⅱ\"",
+    "category": "Regional",
+    "group": "Wuling",
+    "levels": {
+      "1": {
+        "desc": "In Qingbo Stockade, Marker Stone, Marker Stone Interiors, and Test Area, activate 6 sets of pressure plates",
+        "completeDesc": "Once again you elegantly leaped from one pressure plate to another and restored the perfect balance.\n\"A wondrous display of the Fowlbeast Triple-Nod stance!\""
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_frog_1": {
+    "name": "\"Swat the Lanky and Pass the Bug\"",
+    "category": "Regional",
+    "group": "Wuling",
+    "levels": {
+      "1": {
+        "desc": "Complete 6 glowbug passing challenges in Jingyu Valley and Wuling City",
+        "completeDesc": "What an incredible game. We analyzed the lankybeast croaks and they seem interested to see you again. \n\"Ribbit, ribbit. Rrrrribbit-ribbit-ribbit.\""
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_frog_2": {
+    "name": "\"Swat the Lanky and Pass the Bug Ⅱ\"",
+    "category": "Regional",
+    "group": "Wuling",
+    "levels": {
+      "1": {
+        "desc": "In Qingbo Stockade, Marker Stone, Marker Stone Interiors, and Test Area, complete 3 glowbug passing puzzles",
+        "completeDesc": "Once again you had some fun with the lankybeasts. We analyzed their grateful croaks and they seem interested in seeing you again. \n\"Ribbit, ribbit. Rrrrribbit-ribbit-ribbit.\""
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_hyper_clean": {
+    "name": "Superactive Blight Eliminator",
+    "category": "Regional",
+    "group": "Wuling",
+    "levels": {
+      "1": {
+        "desc": "Eliminate every Superactive Blight mass in Sword Vault Dale",
+        "completeDesc": "You have successfully eliminated numerous masses of Superactive Blight."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_minimap_1": {
+    "name": "Suiming Crate Master",
+    "category": "Regional",
+    "group": "Wuling",
+    "levels": {
+      "2": {
+        "desc": "In Suiming, open 28 crates",
+        "completeDesc": "You have opened every storage crate in Suiming, even though the crates only exist in stories of the past."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_watergun_1": {
+    "name": "\"Track Sprayer\"",
+    "category": "Regional",
+    "group": "Wuling",
+    "levels": {
+      "1": {
+        "desc": "Restore 8 Xiranflow Track Systems in Wuling City",
+        "completeDesc": "You have adjusted and restored multiple Xiranflow Track Systems."
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_charged": {
+    "name": "Master Interceptor",
+    "category": "Technical",
+    "group": "Combat Technique",
+    "levels": {
+      "1": {
+        "desc": "Interrupt the enemies' charging states 30 times during combat",
+        "completeDesc": "You are an expert in intercepting enemy attacks."
+      },
+      "2": {
+        "desc": "Interrupt the enemies' charging states 50 times during combat",
+        "completeDesc": "You now interrupt enemies just when they're about to do something more aggressive."
+      },
+      "3": {
+        "desc": "Interrupt the enemies' charging states 100 times during combat",
+        "completeDesc": "You can now detect even the most minute hint of aggression, and interrupt any acts of belligerence, no matter how subtle."
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_charged_hsbear": {
+    "name": "\"Interceptor of Thunder\"",
+    "category": "Technical",
+    "group": "Combat Technique",
+    "levels": {
+      "2": {
+        "desc": "Interrupt the Skydrummer's roaring shockwave during combat",
+        "completeDesc": "You successfully grabbed the thunderous peal by its throat."
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_comboskill": {
+    "name": "Combined Arms",
+    "category": "Technical",
+    "group": "Combat Technique",
+    "levels": {
+      "1": {
+        "desc": "Perform 500 combos during combat",
+        "completeDesc": "Your operators are fully trained to unleash combos on the enemy."
+      },
+      "2": {
+        "desc": "Perform 1000 combos during combat",
+        "completeDesc": "Your operators are fully trained. They will exploit opportunities and unleash combos during combat."
+      },
+      "3": {
+        "desc": "Perform 2000 combos during combat",
+        "completeDesc": "Your operators are fully trained, and they fight primarily as a concerted team with combos. \nMutual trust is what we depend on to reach our destination."
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_defeat_agtrinit": {
+    "name": "\"Broken Remains of Astarron\"",
+    "category": "Technical",
+    "group": "Combat Technique",
+    "levels": {
+      "3": {
+        "desc": "Complete \"Crisis Calamity: Triaggelos\"",
+        "completeDesc": "In the illusions of the Protocol Space, you stopped the Astarron of destruction from ever returning to the land."
+      }
+    },
+    "plating": {
+      "desc": "Complete \"Crisis Calamity: Triaggelos\" in 240s"
+    }
+  },
+  "achv_bat_defeat_bigtree": {
+    "name": "\"Gloomwald's Silence\"",
+    "category": "Technical",
+    "group": "Combat Technique",
+    "levels": {
+      "2": {
+        "desc": "Defeat Gloomwald's Rage",
+        "completeDesc": "You extinguished the rage of Gloomwald. The loyal creations neither hate nor seethe, allowing peace to return to this land."
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_defeat_dodge_jzogre": {
+    "name": "\"Gale Weaver\"",
+    "category": "Technical",
+    "group": "Combat Technique",
+    "levels": {
+      "2": {
+        "desc": "The controlled operator suffers zero DMG and performs at least 5 perfect dodges against the spinning attack of the Armored Manglerbeast",
+        "completeDesc": "You faced a storm of heavy blows, each capable of rending mortal flesh to pieces, and you came out unscathed with great agility."
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_defeat_ethillu": {
+    "name": "\"Unstable Æthillu\"",
+    "category": "Technical",
+    "group": "Combat Technique",
+    "levels": {
+      "2": {
+        "desc": "During battle, defeat an \"Æthillu\" within 2s of its revival",
+        "completeDesc": "You saw through the Æthillu and dispelled the unstable material."
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_defeat_fdcentur": {
+    "name": "\"A Torch Extinguished\"",
+    "category": "Technical",
+    "group": "Combat Technique",
+    "levels": {
+      "3": {
+        "desc": "Complete \"Crisis Calamity: Alleikhreos, Chiliarch\"",
+        "completeDesc": "In the phantasm of the Protocol Space, the returned cited a vision and tried to extend an invitation. In the end, the fiery light he gave off was also snuffed out softly."
+      }
+    },
+    "plating": {
+      "desc": "Complete \"Crisis Calamity: Alleikhreos, Chiliarch\" in 200s"
+    }
+  },
+  "achv_bat_defeat_hsbear": {
+    "name": "\"Silencing the Drum\"",
+    "category": "Technical",
+    "group": "Combat Technique",
+    "levels": {
+      "2": {
+        "desc": "Defeat the Skydrummer",
+        "completeDesc": "You broke the feral banner and silenced the deafening drum."
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_defeat_jzmking": {
+    "name": "\"Mega-Beast Subdued\"",
+    "category": "Technical",
+    "group": "Combat Technique",
+    "levels": {
+      "2": {
+        "desc": "Defeat the Craghowler",
+        "completeDesc": "You subdued the lord of the beasts. Perhaps you can be their new lord?"
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_defeat_klbear": {
+    "name": "\"Blitzcrash's Silent Passing\"",
+    "category": "Technical",
+    "group": "Combat Technique",
+    "levels": {
+      "2": {
+        "desc": "Defeat the Blitzcrash Blightshade",
+        "completeDesc": "Its roaring grows increasingly soft and silent, like when it was but a little cub."
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_defeat_nefarp": {
+    "name": "\"Conqueror's Grief\"",
+    "category": "Technical",
+    "group": "Combat Technique",
+    "levels": {
+      "3": {
+        "desc": "Complete \"Crisis Calamity: Nefarith\"",
+        "completeDesc": "Her insane ambition and disdainful laughter finally dissipated in the phantoms of the Protocol Space."
+      }
+    },
+    "plating": {
+      "desc": "Complete \"Crisis Calamity: Nefarith\" in 200s"
+    }
+  },
+  "achv_bat_defeat_palesent": {
+    "name": "\"Collapse of Her Pale Image\"",
+    "category": "Technical",
+    "group": "Combat Technique",
+    "levels": {
+      "3": {
+        "desc": "Complete \"Crisis Calamity: Marble Aggelomoirai\"",
+        "completeDesc": "In the illusions of the Protocol Space, once again you defeated the great effigy of pale marble."
+      }
+    },
+    "plating": {
+      "desc": "Complete \"Crisis Calamity: Marble Aggelomoirai\" in 240s"
+    }
+  },
+  "achv_bat_defeat_rodin": {
+    "name": "\"Crushed the Bony Fist\"",
+    "category": "Technical",
+    "group": "Combat Technique",
+    "levels": {
+      "3": {
+        "desc": "Complete Crisis Pandemonium: Rhodagn",
+        "completeDesc": "In the illusions of the Protocol Space, you ended his path of violence, fanaticism, and fury."
+      }
+    },
+    "plating": {
+      "desc": "Complete \"Crisis Pandemonium: Rhodagn\" in 120s"
+    }
+  },
+  "achv_bat_defeat_ruanyi": {
+    "name": "\"Thus Withers the Branch of Fury\"",
+    "category": "Technical",
+    "group": "Combat Technique",
+    "levels": {
+      "3": {
+        "desc": "Complete \"Crisis Calamity: Ruan Yi\"",
+        "completeDesc": "The rainy night ignited his fire of fury, and it finally withered away amidst the phantoms of the Protocol Space."
+      }
+    },
+    "plating": {
+      "desc": "Complete \"Crisis Calamity: Ruan Yi\" in 200s"
+    }
+  },
+  "achv_bat_dung_char": {
+    "name": "Operator Guide",
+    "category": "Technical",
+    "group": "Protocol Space",
+    "levels": {
+      "1": {
+        "desc": "Complete any 5 Operator Guide stages",
+        "completeDesc": "You are familiar with your operators' way of fighting."
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_dung_resource": {
+    "name": "Material Gathering",
+    "category": "Technical",
+    "group": "Protocol Space",
+    "levels": {
+      "2": {
+        "desc": "Complete these Protocol Spaces:\nOperator EXP - Manifested Nightmares;\nT-Creds - Blessing of Oros;\nPromotions - Tacit Maelstrom;\nSkill Up - Mirage of the Tower;\nWeapon EXP - Gunsmith's Mound;\nWeapon Tune - Forge Trials Lv.5.",
+        "completeDesc": "Even the most dangerous Protocol Spaces cannot stop you from getting operator progression resources."
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_dung_ss": {
+    "name": "Advanced Progression",
+    "category": "Technical",
+    "group": "Protocol Space",
+    "levels": {
+      "2": {
+        "desc": "Complete all Protocol Space: Advanced Progression",
+        "completeDesc": "Even the most dangerous Protocol Spaces cannot stop you from getting the best materials for your operators."
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_enemyspawner": {
+    "name": "Alluvium Dredger",
+    "category": "Technical",
+    "group": "Protocol Space",
+    "levels": {
+      "2": {
+        "desc": "Reach Exploration Level 7, then complete 5 different Severe Energy Alluvium sites",
+        "completeDesc": "Æther energy buildups upon this land are dissipating, but they will eventually return."
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_eny_ace": {
+    "name": "Total Obliterator",
+    "category": "Technical",
+    "group": "Combat Technique",
+    "levels": {
+      "2": {
+        "desc": "Defeat at least 5 enemies with a single damaging hit",
+        "completeDesc": "We have cause to believe that one day will come when you can eliminate enemies with your gaze."
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_eny_building_kill": {
+    "name": "Smart Annihilation",
+    "category": "Technical",
+    "group": "Combat Technique",
+    "levels": {
+      "1": {
+        "desc": "Defeat 10 enemies with combat facilities",
+        "completeDesc": "Your combat facilities have demonstrated their capabilities."
+      },
+      "2": {
+        "desc": "Defeat 100 enemies with combat facilities",
+        "completeDesc": "Your combat facilities are steadily beating back the enemy."
+      },
+      "3": {
+        "desc": "Defeat 500 enemies with combat facilities",
+        "completeDesc": "With such efficient engines of war, there is almost no need for you to expose yourself to danger."
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_eny_cannot_move": {
+    "name": "Ultimate Immobilizer",
+    "category": "Technical",
+    "group": "Combat Technique",
+    "levels": {
+      "2": {
+        "desc": "Immobilize the same enemy continuously for 20s during combat",
+        "completeDesc": "Your combat techniques are breathtaking. You can unleash total and complete domination of the enemy."
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_frozen": {
+    "name": "\"Entropic Reduction\"",
+    "category": "Technical",
+    "group": "Combat Technique",
+    "levels": {
+      "1": {
+        "desc": "Have any operators becoming Solidified during battle 10 times",
+        "completeDesc": "The frigid cold slowed you down to keep you close."
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_hard_1": {
+    "name": "\"Inorganic Construct\"",
+    "category": "Technical",
+    "group": "Protocol Space",
+    "levels": {
+      "2": {
+        "desc": "In [Umbral Monument], complete all \"Inorganic Construct\" stages on Normal mode",
+        "completeDesc": "You experienced a moment that conveyed humanity's desperate struggle for survival in the Aggeloi War. Once again you etched your name upon the great monument."
+      }
+    },
+    "plating": {
+      "desc": "In [Umbral Monument], complete all \"Inorganic Construct\" stages on Agony mode"
+    }
+  },
+  "achv_bat_hard_2": {
+    "name": "\"Those Forsaken by the Land\"",
+    "category": "Technical",
+    "group": "Protocol Space",
+    "levels": {
+      "2": {
+        "desc": "In [Umbral Monument], complete all \"Those Forsaken by the Land\" stages on Normal mode",
+        "completeDesc": "You faced those who brutally tore at the flesh and blood of Civilization, and once again you etched your name upon the great monument."
+      }
+    },
+    "plating": {
+      "desc": "In [Umbral Monument], complete all \"Those Forsaken by the Land\" stages on Agony mode"
+    }
+  },
+  "achv_bat_hard_3": {
+    "name": "\"Searing Scars\"",
+    "category": "Technical",
+    "group": "Protocol Space",
+    "levels": {
+      "2": {
+        "desc": "In [Umbral Monument], complete all \"Searing Scars\" stages on Normal mode",
+        "completeDesc": "You tore apart the searing scars and debrided the malicious cruelty harbored within. Once again you etched your name upon the great monument."
+      }
+    },
+    "plating": {
+      "desc": "In [Umbral Monument], complete all \"Searing Scars\" stages on Agony mode"
+    }
+  },
+  "achv_bat_hard_4": {
+    "name": "\"Turbidity Manifest\"",
+    "category": "Technical",
+    "group": "Protocol Space",
+    "levels": {
+      "2": {
+        "desc": "In [Umbral Monument], complete all \"Turbidity Manifest\" stages on Normal mode",
+        "completeDesc": "You survived the terrifying and turbid tide that threatened to drown everything, and once again you etched your name upon the great monument."
+      }
+    },
+    "plating": {
+      "desc": "In [Umbral Monument], complete all \"Turbidity Manifest\" stages on Agony mode"
+    }
+  },
+  "achv_bat_hard_5": {
+    "name": "\"Contention of Deathly Silences\"",
+    "category": "Technical",
+    "group": "Protocol Space",
+    "levels": {
+      "2": {
+        "desc": "In [Umbral Monument], complete all \"Contention of Deathly Silences\" stages on Normal mode",
+        "completeDesc": "You witnessed strife within the thunderous peal and the manifestations of deathly silence, and once again you etched your name upon the great monument."
+      }
+    },
+    "plating": {
+      "desc": "In [Umbral Monument], complete all \"Contention of Deathly Silences\" stages on Agony mode"
+    }
+  },
+  "achv_bat_hard_6": {
+    "name": "\"Howlers of the Crag\"",
+    "category": "Technical",
+    "group": "Protocol Space",
+    "levels": {
+      "2": {
+        "desc": "In [Umbral Monument], complete all \"Howlers of the Crag\" stages in Normal Mode",
+        "completeDesc": "Victorious, you stood tall and proud amongst every beast of the mountains, and once again you etched your name upon the great monument."
+      }
+    },
+    "plating": {
+      "desc": "In [Umbral Monument], complete all \"Howlers of the Crag\" stages on Agony Mode"
+    }
+  },
+  "achv_bat_hard_7": {
+    "name": "\"Marked by Dark Shadows\"",
+    "category": "Technical",
+    "group": "Protocol Space",
+    "levels": {
+      "2": {
+        "desc": "In [Umbral Monument], complete all \"Marked by Dark Shadows\" stages on Normal mode",
+        "completeDesc": "Victorious, you dispelled the disastrous imprint of calamity, and once again you etched your name upon the great monument."
+      }
+    },
+    "plating": {
+      "desc": "In [Umbral Monument], complete all \"Marked by Dark Shadows\" stages on Agony mode"
+    }
+  },
+  "achv_bat_magical_AS": {
+    "name": "Superb Physicals",
+    "category": "Technical",
+    "group": "Combat Technique",
+    "levels": {
+      "1": {
+        "desc": "Apply 50 Physical Statuses during combat",
+        "completeDesc": "You have demonstrated your combat techniques."
+      },
+      "2": {
+        "desc": "Apply 300 Physical Statuses during combat",
+        "completeDesc": "Your enemies now fear your powerful slashes and fists."
+      },
+      "3": {
+        "desc": "Apply 500 Physical Statuses during combat",
+        "completeDesc": "You are the undisputed master of combat."
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_physical_AS": {
+    "name": "Arts and Flow",
+    "category": "Technical",
+    "group": "Combat Technique",
+    "levels": {
+      "1": {
+        "desc": "Apply 50 Arts Reactions during combat",
+        "completeDesc": "Thus flow the Originium Arts."
+      },
+      "2": {
+        "desc": "Apply 300 Arts Reactions during combat",
+        "completeDesc": "Your enemies now fear your proficiency in energy manipulation."
+      },
+      "3": {
+        "desc": "Apply 500 Arts Reactions during combat",
+        "completeDesc": "You are the undisputed maestro of the Originium Arts."
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_rescue_from_geyunweng": {
+    "name": "\"NO MORE KIDNAPPING!\"",
+    "category": "Technical",
+    "group": "Combat Technique",
+    "levels": {
+      "2": {
+        "desc": "Rescue a teammate trapped by Nimbus Razor 1 time",
+        "completeDesc": "Cangzei pirates and river brigands are known for holding people hostage for ransom. Obviously, you did not let them get their way."
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_smalltree": {
+    "name": "\"Completely Uprooted\"",
+    "category": "Technical",
+    "group": "Combat Technique",
+    "levels": {
+      "2": {
+        "desc": "Force burrowing Woodcraft Wanderers to resurface",
+        "completeDesc": "You struck early and uprooted the woodcraft from the earth... The wild and rampant roots and tubers have a habit of causing trouble."
+      }
+    },
+    "plating": null
+  },
+  "achv_event_clean": {
+    "name": "\"Totally Cleansed and Rinsed\"",
+    "category": "Event",
+    "group": "Event",
+    "levels": {
+      "2": {
+        "desc": "Complete all Cleanse and Rinse missions",
+        "completeDesc": "You have eliminated the stains that troubled the sanitation workers."
+      }
+    },
+    "plating": {
+      "desc": "Complete \"Bouncy Cleaning Drill\" in 120s"
+    }
+  },
+  "achv_event_contingency_contract_0": {
+    "name": "\"Re-Ignition\"",
+    "category": "Event",
+    "group": "Event",
+    "levels": {
+      "3": {
+        "desc": "In [Contingency Contract: Re-Ignition Experimental Operation], successfully complete a challenge with at least 20 <image=\"Common/icon_contingency_contract_entry_black\" width=30 height=30> Test Criteria",
+        "completeDesc": "A pact from the past is being restored. You have re-ignited an ancient contract."
+      }
+    },
+    "plating": null
+  },
+  "achv_event_dungfight": {
+    "name": "\"Expert Survivor\"",
+    "category": "Event",
+    "group": "Event",
+    "levels": {
+      "2": {
+        "desc": "In [Survival Training], complete all stages",
+        "completeDesc": "You have successfully completed Klara's survival training and became an expert of survival skills."
+      }
+    },
+    "plating": {
+      "desc": "Complete \"Final Assessment\" in 120s"
+    }
+  },
+  "achv_event_formula": {
+    "name": "\"Palm Top Deliverer\"",
+    "category": "Event",
+    "group": "Event",
+    "levels": {
+      "2": {
+        "desc": "During [AIC Support: Palm-Top Savior], acquire 800,000 Fruits of Altruism Certs",
+        "completeDesc": "The little gourds you supplied during AIC Support are very popular."
+      }
+    },
+    "plating": {
+      "desc": "During [AIC Support: Palm-Top Savior], earn 800,000 Fruits of Altruism Certs and submit 20,000 Xiranite Jade Gourds"
+    }
+  },
+  "achv_event_formula2": {
+    "name": "\"Chubby Lung Explosion\"",
+    "category": "Event",
+    "group": "Event",
+    "levels": {
+      "2": {
+        "desc": "During [AIC Support: Chubby Lung Attacks], earn 800,000 Fruits of Altruism Certs",
+        "completeDesc": "Your tireless production has made it possible for fully-automatic Chubby Lungs to scamper across the land. Truly, fruits of altruism that everyone loves to see."
+      }
+    },
+    "plating": {
+      "desc": "During [AIC Support: Chubby Lung Attacks], earn 800,000 Fruits of Altruism Certs and submit 20,000 Heavy Xiranite Chubby Lungs"
+    }
+  },
+  "achv_event_racingdungeon_1": {
+    "name": "\"Explorer of the Realm\"",
+    "category": "Event",
+    "group": "Event",
+    "levels": {
+      "2": {
+        "desc": "In [The Rooted Realm] Phase 2, complete the chamber [Shower of Coins] 1 time",
+        "completeDesc": "You have explored the fairytale realm. Go and tell Algy what you saw."
+      }
+    },
+    "plating": {
+      "desc": "In [The Rooted Realm], complete Realm Quests of all phases"
+    }
+  },
+  "achv_event_takestwo_1": {
+    "name": "\"Nocturnal Tactics\"",
+    "category": "Event",
+    "group": "Event",
+    "levels": {
+      "2": {
+        "desc": "Complete all [HEAT RAGE! MEGA ARENA!] stages on Normal Mode",
+        "completeDesc": "SET IT ON FIRE! LET YOUR BATTLE SOUL BOIL!"
+      }
+    },
+    "plating": {
+      "desc": "Complete all [HEAT RAGE! MEGA ARENA!] stages in MAXED Mode, and complete any of the following stages in 180s:\n· [Unholy! Breakers and Buggers! MAXED!]\n· [Tactics! Beat Their Beastmasters! MAXED!]\n· [Chaos! Total Carnage! MAXED!]"
+    }
+  },
+  "achv_event_tundra_challenge_dung": {
+    "name": "\"In the Cryptics of the Valley\"",
+    "category": "Event",
+    "group": "Event",
+    "levels": {
+      "2": {
+        "desc": "In [Delver of the Cryptic], complete all \"Cryptic First Revealed\" Protocol Spaces",
+        "completeDesc": "The ever-changing Protocol Space may have transformed images of Valley IV into strange anomalies, but they will never stop your determined advance."
+      }
+    },
+    "plating": {
+      "desc": "In [Delver of the Cryptic], perfectly complete all \"Cryptic First Revealed\" Protocol Spaces"
+    }
+  },
+  "achv_event_wuling_challenge_dung": {
+    "name": "\"Delver of the Grottoes\"",
+    "category": "Event",
+    "group": "Event",
+    "levels": {
+      "2": {
+        "desc": "In [Delver of the Cryptic], complete all \"Grotto Survey\" Protocol Spaces",
+        "completeDesc": "The ever-changing Protocol Space may have transformed images of Wuling into grottoes of despair, but they will never stop your determined advance."
+      }
+    },
+    "plating": {
+      "desc": "In [Delver of the Cryptic], perfectly complete all \"Grotto Survey\" Protocol Spaces"
+    }
+  },
+  "achv_event_wuling_challenge_dung_02": {
+    "name": "\"Artful Realm of Six Cardinals\"",
+    "category": "Event",
+    "group": "Event",
+    "levels": {
+      "2": {
+        "desc": "In [Delver of the Cryptic], complete all \"Artful Realm of Six Cardinals\" Protocol Spaces",
+        "completeDesc": "One by one you illuminated the fragmented Protocol Space and fully grasped the knowledge of the six artful dimensions."
+      }
+    },
+    "plating": {
+      "desc": "In [Delver of the Cryptic], perfectly complete all \"Artful Realm of Six Cardinals\" Protocol Spaces"
+    }
+  },
+  "achv_event_wuling_racing_1": {
+    "name": "\"Supreme Runner\"",
+    "category": "Event",
+    "group": "Event",
+    "levels": {
+      "2": {
+        "desc": "In [Runners' Steeplechase], complete all races",
+        "completeDesc": "By stepping on nimbus and riding the wind ... you have easily conquered the tracks that symbolize the breathtaking landscapes of Wuling."
+      }
+    },
+    "plating": {
+      "desc": "In [Runners' Steeplechase], complete all tracks with 3★"
+    }
+  },
+  "achv_fac_blackbox_1": {
+    "name": "Factory Simulation",
+    "category": "Construction",
+    "group": "AIC Factory",
+    "levels": {
+      "1": {
+        "desc": "Manually start and complete 5 simulations",
+        "completeDesc": "You have completed a few simulations."
+      },
+      "2": {
+        "desc": "Manually start and complete 10 simulations",
+        "completeDesc": "You have completed many simulations."
+      },
+      "3": {
+        "desc": "Manually start and complete 20 simulations",
+        "completeDesc": "You have completed numerous simulations. Your eagerness for mastering factory know-hows is much appreciated."
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_blackbox_2": {
+    "name": "Factory Simulation Ⅱ",
+    "category": "Construction",
+    "group": "AIC Factory",
+    "levels": {
+      "3": {
+        "desc": "Manually start and complete 30 simulations",
+        "completeDesc": "You have completed numerous simulations. Once again we greatly appreciate your eagerness for mastering factory know-hows specific to the region of Wuling."
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_coupon_tundra": {
+    "name": "Valley Stock Redistributor",
+    "category": "Construction",
+    "group": "AIC Factory",
+    "levels": {
+      "1": {
+        "desc": "Earn 20,000,000 Valley Stock Bills",
+        "completeDesc": "You have acquired some Valley Stock Bills."
+      },
+      "2": {
+        "desc": "Earn 40,000,000 Valley Stock Bills",
+        "completeDesc": "You have acquired quite a bit of Valley Stock Bills."
+      },
+      "3": {
+        "desc": "Earn 80,000,000 Valley Stock Bills",
+        "completeDesc": "You have acquired quite a lot of Valley Stock Bills. \nEarning more stock bills means that you have delivered desperately needed supplies to more people. You have done monumental work."
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_coupon_wuling_1": {
+    "name": "Wuling Stock Redistributor",
+    "category": "Construction",
+    "group": "AIC Factory",
+    "levels": {
+      "1": {
+        "desc": "Earn 2,000,000 Wuling Stock Bills",
+        "completeDesc": "You have acquired some Wuling Stock Bills."
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_coupon_wuling_2": {
+    "name": "Wuling Stock Redistributor Ⅱ",
+    "category": "Construction",
+    "group": "AIC Factory",
+    "levels": {
+      "2": {
+        "desc": "Earn 10,000,000 Wuling Stock Bills",
+        "completeDesc": "You have acquired quite a lot of Wuling Stock Bills. \nEarning more stock bills means that you have delivered desperately needed supplies to more people. You have done monumental work."
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_coupon_wuling_3": {
+    "name": "Wuling Stock Redistributor Ⅲ",
+    "category": "Construction",
+    "group": "AIC Factory",
+    "levels": {
+      "3": {
+        "desc": "Earn 25,000,000 Wuling Stock Bills",
+        "completeDesc": "You have acquired quite a lot of Wuling Stock Bills. \nEarning more stock bills means that you have delivered desperately needed supplies to more people. You have done monumental work."
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_coupon_wuling_4": {
+    "name": "Wuling Stock Redistributor Ⅳ",
+    "category": "Construction",
+    "group": "AIC Factory",
+    "levels": {
+      "3": {
+        "desc": "Earn 80,000,000 Wuling Stock Bills",
+        "completeDesc": "You have acquired many Wuling Stock Bills. \nMore stock bills mean greater understanding. The flow of goods in Wuling does not escape your eyes."
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_coupon_wuling_5": {
+    "name": "Wuling Stock Redistributor Ⅴ",
+    "category": "Construction",
+    "group": "AIC Factory",
+    "levels": {
+      "3": {
+        "desc": "Earn 100,000,000 Wuling Stock Bills",
+        "completeDesc": "You have earned more Wuling Stock Bills.\nEveryone's needs have been met. You stared down a disaster and kept the Wuling economy afloat and healthy."
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_domain_depot": {
+    "name": "Goods Delivery",
+    "category": "Construction",
+    "group": "AIC Factory",
+    "levels": {
+      "2": {
+        "desc": "Complete Goods Delivery 20 times",
+        "completeDesc": "You have successfully completed multiple goods deliveries. \nDespite having Techno-Protocol, you insist on delivering the goods in person. Your \"clients\" are extremely moved by such dedication."
+      }
+    },
+    "plating": {
+      "desc": "Pack and deliver 20 Factory Goods (Super Fragile) packages without reducing Goods Integrity."
+    }
+  },
+  "achv_fac_domain_shop": {
+    "name": "Steady Sales",
+    "category": "Construction",
+    "group": "AIC Factory",
+    "levels": {
+      "2": {
+        "desc": "Sell supplies at Stock Redistribution 15 times",
+        "completeDesc": "You have successfully sold plenty of supplies. \nThanks to your intuition, keen observations, and timely allocations, you kept every region free of protracted supplies shortage."
+      }
+    },
+    "plating": {
+      "desc": "In 1 selling action of Elastic Goods, achieve a selling price that is at least 500% better than the average holding price."
+    }
+  },
+  "achv_fac_kite_station": {
+    "name": "Environment Monitor",
+    "category": "Construction",
+    "group": "AIC Factory",
+    "levels": {
+      "2": {
+        "desc": "Complete environment monitoring 5 times",
+        "completeDesc": "You have performed multiple rounds of environment monitoring. \nWuling hereby thanks you on behalf of all the critters you protected."
+      }
+    },
+    "plating": {
+      "desc": "Complete Ecology Overview Progress of the Wuling Outskirts Monitoring Terminal"
+    }
+  },
+  "achv_fac_recycle_station": {
+    "name": "Resource Recycler",
+    "category": "Construction",
+    "group": "AIC Factory",
+    "levels": {
+      "1": {
+        "desc": "Gather resources from Recycling Stations 50 times",
+        "completeDesc": "You have gathered plenty of materials from Recycling Stations. \nIn fact, you could almost hear the fowlbeast hoot: \"Thank you for another punctual visit.\""
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_settlement_tundra": {
+    "name": "Valley Outpost Builder",
+    "category": "Construction",
+    "group": "AIC Factory",
+    "levels": {
+      "2": {
+        "desc": "Add all Valley IV outposts into the Endfield support program",
+        "completeDesc": "Every Valley IV outpost is now a part of your support program. \nGive them angling rods and teach them to fin. Your support program is proving to be absolutely on track."
+      }
+    },
+    "plating": {
+      "desc": "Raise all Valley IV outposts to the highest level"
+    }
+  },
+  "achv_fac_settlement_wuling_1": {
+    "name": "Wuling Outpost Builder Ⅰ",
+    "category": "Construction",
+    "group": "AIC Factory",
+    "levels": {
+      "2": {
+        "desc": "Add Sky King Flats Construction Site and Cardiac Remediation Station into the Endfield support program",
+        "completeDesc": "A number of Wuling outposts are now part of your support program. \nGive them angling rods and teach them to fin. Your support program is proving to be absolutely on track."
+      }
+    },
+    "plating": {
+      "desc": "Raise Sky King Flats Construction Site and Cardiac Remediation Station to the highest level"
+    }
+  },
+  "achv_fac_settlement_wuling_2": {
+    "name": "Wuling Outpost Builder Ⅱ",
+    "category": "Construction",
+    "group": "AIC Factory",
+    "levels": {
+      "2": {
+        "desc": "Add all Wuling outposts into the support program",
+        "completeDesc": "Every Wuling outpost is now a part of your support program. \nPerfectly you mediated the relationship between people and their picturesque environment of imposing peaks and flowing rivers."
+      }
+    },
+    "plating": {
+      "desc": "Raise all Wuling outposts to the highest level"
+    }
+  },
+  "achv_fac_simulation_training": {
+    "name": "\"Zenith of the Trials\"",
+    "category": "Construction",
+    "group": "AIC Factory",
+    "levels": {
+      "2": {
+        "desc": "Complete 1 Trial with a total of 10 Battle Points",
+        "completeDesc": "With impeccable tact, you ascended the zenith in the Trial of Swordmancy."
+      }
+    },
+    "plating": {
+      "desc": "Complete 1 Trial with 1 instance of Data Overflow and 10 Battle Points"
+    }
+  },
+  "achv_fac_spaceship_fever_point": {
+    "name": "Immense Trust",
+    "category": "Construction",
+    "group": "Dijiang",
+    "levels": {
+      "1": {
+        "desc": "Raise the trust of 5 operators to 100%",
+        "completeDesc": "You have met companions who will defend you with their lives."
+      },
+      "2": {
+        "desc": "Raise the trust of 10 operators to 100%",
+        "completeDesc": "You have met multiple companions who will defend you with their lives. \nIt seems you have the ability to attract those who share your vision."
+      },
+      "3": {
+        "desc": "Raise the trust of 20 operators to 100%",
+        "completeDesc": "You have met many companions who will defend you with their lives. \nOne day will come when the world has complete faith in you."
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_spaceship_gift": {
+    "name": "Friendly Giveaway",
+    "category": "Construction",
+    "group": "Dijiang",
+    "levels": {
+      "1": {
+        "desc": "Offer 300 gifts that your operators prefer",
+        "completeDesc": "Your operators have received a substantial number of gifts from you."
+      },
+      "2": {
+        "desc": "Offer 500 gifts that your operators prefer",
+        "completeDesc": "Your operators have received a substantial number of gifts from you. \nAre you sure all these presents would fit in their dorm rooms?"
+      },
+      "3": {
+        "desc": "Offer 1000 gifts that your operators prefer",
+        "completeDesc": "Your operators have received a substantial number of gifts from you. \nPresents offer merely an opportunity. Trust and sincerity are the true reasons why the operators hold you so closely to their hearts."
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_spaceship_level_1": {
+    "name": "Nexus Upgrader",
+    "category": "Construction",
+    "group": "Dijiang",
+    "levels": {
+      "3": {
+        "desc": "Upgrade the Control Nexus of Dijiang to Level 5",
+        "completeDesc": "You have significantly boosted the performance of the Control Nexus. \nCan you feel the happiness and joy of Dijiang?"
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_techtree_jinlong_1": {
+    "name": "Wuling Factory Pioneer Ⅰ",
+    "category": "Construction",
+    "group": "AIC Factory",
+    "levels": {
+      "1": {
+        "desc": "Research every technology in Wuling AIC I",
+        "completeDesc": "You have successfully realized Phase 1 of the Wuling AIC Plan."
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_techtree_jinlong_2": {
+    "name": "Wuling Factory Pioneer Ⅱ",
+    "category": "Construction",
+    "group": "AIC Factory",
+    "levels": {
+      "1": {
+        "desc": "Research 25 technologies in the Wuling AIC Plan",
+        "completeDesc": "You have successfully researched more technologies in the Wuling AIC Plan."
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_techtree_jinlong_3": {
+    "name": "Wuling Factory Pioneer Ⅲ",
+    "category": "Construction",
+    "group": "AIC Factory",
+    "levels": {
+      "1": {
+        "desc": "Research 34 technologies in the Wuling AIC Plan",
+        "completeDesc": "You have successfully researched more technologies in the Wuling AIC Plan.\nYou are now at the very forefront of technology in Talos-II."
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_techtree_jinlong_4": {
+    "name": "Wuling Factory Pioneer Ⅳ",
+    "category": "Construction",
+    "group": "AIC Factory",
+    "levels": {
+      "1": {
+        "desc": "Research 47 technologies in the Wuling AIC Plan",
+        "completeDesc": "You have successfully researched additional technologies in the Wuling AIC Plan.\nAt every moment, the land beneath your feet responds to your every idea."
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_techtree_tundra": {
+    "name": "Valley Factory Pioneer",
+    "category": "Construction",
+    "group": "AIC Factory",
+    "levels": {
+      "3": {
+        "desc": "Research every technology in the Basic AIC Plan",
+        "completeDesc": "You have researched every technology in the Basic AIC Plan. \nYour hard work has completely adapted the AIC Factory to the rigors of Valley IV."
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_typhoea_archery": {
+    "name": "\"Archer's Epiphany\"",
+    "category": "Construction",
+    "group": "AIC Factory",
+    "levels": {
+      "2": {
+        "desc": "In [Typhoeus's Archery Range], complete all basic training stages, and complete \"Daily Exercise 04\" once",
+        "completeDesc": "You have achieved the archer's epiphany and can now aim with your mind's eye. The art of the bow has never been this easy."
+      }
+    },
+    "plating": {
+      "desc": "In [Typhoeus's Archery Range], complete all \"Advanced Training\" and complete \"Daily Exercise 04\" with 3★"
+    }
+  },
+  "achv_growth_adventure_level": {
+    "name": "Hardened Veteran",
+    "category": "Progression",
+    "group": "Progression",
+    "levels": {
+      "1": {
+        "desc": "Reach Authority Level 20",
+        "completeDesc": "Ascending the Authority Levels has given you a minor achievement."
+      },
+      "2": {
+        "desc": "Reach Authority Level 40",
+        "completeDesc": "Ascending the Authority Levels is getting you back to your form."
+      },
+      "3": {
+        "desc": "Reach Authority Level 60",
+        "completeDesc": "Ascending the Authority Levels is giving you the ability to exert full command."
+      }
+    },
+    "plating": null
+  },
+  "achv_growth_char_count_1": {
+    "name": "Operator Contact",
+    "category": "Progression",
+    "group": "Progression",
+    "levels": {
+      "1": {
+        "desc": "Acquire 5 operators",
+        "completeDesc": "You have met several operators for the first time."
+      },
+      "2": {
+        "desc": "Acquire 10 operators",
+        "completeDesc": "You have met several operators for the first time. Your combat operations team is taking form."
+      },
+      "3": {
+        "desc": "Acquire 20 operators",
+        "completeDesc": "You have met several operators for the first time. You now have enough operators to support more complicated tactical plans."
+      }
+    },
+    "plating": null
+  },
+  "achv_growth_char_potential_1": {
+    "name": "Potential Unleashed",
+    "category": "Progression",
+    "group": "Progression",
+    "levels": {
+      "1": {
+        "desc": "Raise 1 operator to full potential",
+        "completeDesc": "Full potential has been unlocked for one of your operators."
+      },
+      "2": {
+        "desc": "Raise 10 operators to full potential",
+        "completeDesc": "Full potential has been unlocked for some of your operators. \nProper self-reflection is the first step towards growth."
+      },
+      "3": {
+        "desc": "Raise 15 operators to full potential",
+        "completeDesc": "Full potential has been unlocked for some of your operators. \nDespite overcoming their bottlenecks, these operators believe this is just the beginning."
+      }
+    },
+    "plating": null
+  },
+  "achv_growth_char_skill_level_1": {
+    "name": "Skill Master",
+    "category": "Progression",
+    "group": "Progression",
+    "levels": {
+      "1": {
+        "desc": "Upgrade 5 operator skills to Mastery 3",
+        "completeDesc": "Some of your operators have honed their battle skills to incredible levels."
+      },
+      "2": {
+        "desc": "Upgrade 10 operator skills to Mastery 3",
+        "completeDesc": "Some of your operators have honed their battle skills to incredible levels. The trust you have built with your operators helped to make this happen."
+      },
+      "3": {
+        "desc": "Upgrade 20 operator skills to Mastery 3",
+        "completeDesc": "Some of your operators have honed their battle skills to incredible levels. Despite the great diversity in their fields of expertise and skill sets, different operators work together as you lead them towards a shared vision of the future."
+      }
+    },
+    "plating": null
+  },
+  "achv_growth_equip_enhance": {
+    "name": "Perfect Gearing",
+    "category": "Progression",
+    "group": "Progression",
+    "levels": {
+      "3": {
+        "desc": "Upgrade all stats of 1 piece of gear to Fully Artificed",
+        "completeDesc": "It carried your scars, your glories, and your life from the beginning, and will keep doing so till the very end."
+      }
+    },
+    "plating": null
+  },
+  "achv_growth_world_level": {
+    "name": "Deep Explorer",
+    "category": "Progression",
+    "group": "Progression",
+    "levels": {
+      "1": {
+        "desc": "Reach Exploration Level 2",
+        "completeDesc": "A medal proving that you have achieved a higher Exploration Level."
+      },
+      "2": {
+        "desc": "Reach Exploration Level 4",
+        "completeDesc": "A medal proving that you have achieved a higher Exploration Level. \nTougher environments offer greater opportunities."
+      },
+      "3": {
+        "desc": "Reach Exploration Level 7",
+        "completeDesc": "A medal proving that you have achieved a higher Exploration Level. \nYou have reached the zenith."
+      }
+    },
+    "plating": null
+  },
+  "achv_growth_wpn_count_1": {
+    "name": "Arsenal Collection",
+    "category": "Progression",
+    "group": "Progression",
+    "levels": {
+      "1": {
+        "desc": "Acquire 10 different weapons",
+        "completeDesc": "Your weapon arsenal seems well stocked."
+      },
+      "2": {
+        "desc": "Acquire 20 different weapons",
+        "completeDesc": "Your weapon arsenal seems well stocked. \nIt now includes some of the finest pieces manufactured by Mieszko Industries or even Fort Forgefane."
+      },
+      "3": {
+        "desc": "Acquire 40 different weapons",
+        "completeDesc": "Your weapon arsenal seems well stocked. \nWhy acquire such an extensive collection? Are you helping our Arsenal Engineer compare weapons from various manufacturers?"
+      }
+    },
+    "plating": null
+  },
+  "achv_growth_wpn_skill_level": {
+    "name": "Ultimate Weapon",
+    "category": "Progression",
+    "group": "Progression",
+    "levels": {
+      "3": {
+        "desc": "Upgrade 1 weapon to a total skill rank of 18",
+        "completeDesc": "After countless rounds of meticulous upgrades and rework, your weapon is now considered the equal of treasured relics wielded by great legends."
+      }
+    },
+    "plating": {
+      "desc": "Upgrade 1 weapon to a total skill rank of 25"
+    }
+  },
+  "achv_hide_aether_lock_clean": {
+    "name": "\"Blade Hanging by a Thread\"",
+    "category": "Wondrous",
+    "group": "Wondrous",
+    "levels": {
+      "2": {
+        "desc": "In North Wuling Exclusion Zone, clear 5 energy alluvium build-ups",
+        "completeDesc": "One must be extremely cautious when treading upon dangerous grounds. Nevertheless, you have taken down the looming blade hanging by a thread."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_banana": {
+    "name": "\"Arms Race?\"",
+    "category": "Wondrous",
+    "group": "Wondrous",
+    "levels": {
+      "1": {
+        "desc": "Let the controlled operator slip on banana peels 1 time",
+        "completeDesc": "The rule says \"tacticals and items cannot be used\". But the wildlife ignored it and tossed the banana peels anyway."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_cave": {
+    "name": "\"Auditors Trapped\"",
+    "category": "Wondrous",
+    "group": "Wondrous",
+    "levels": {
+      "2": {
+        "desc": "Break all weak surfaces of the Origin Lodespring",
+        "completeDesc": "Be rest assured. These pitfalls are not deliberate traps. The UWST is also conducting an investigation with the aim of apprehending those responsible."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_cave_v1d5": {
+    "name": "\"Giant Ice Hammer\"",
+    "category": "Wondrous",
+    "group": "Wondrous",
+    "levels": {
+      "1": {
+        "desc": "Reach the underground cave of Little Grotto, Snowy Forest",
+        "completeDesc": "Your keen senses have noticed an ice-breaking tool in the natural environment."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_fly": {
+    "name": "\"Unconventional Movement\"",
+    "category": "Wondrous",
+    "group": "Wondrous",
+    "levels": {
+      "3": {
+        "desc": "Travel 10000 meters using ziplines, bounce pads, and ropes",
+        "completeDesc": "Dijiang has made plans to research and develop a device capable of low altitude flight for you."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_jump_hit": {
+    "name": "\"Protocol ε 20.00m\"",
+    "category": "Wondrous",
+    "group": "Wondrous",
+    "levels": {
+      "2": {
+        "desc": "Fall from a height of at least 20 meters and hit an enemy",
+        "completeDesc": "Are they pieces of orbital debris? No! They're you and your operators."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_no_parry": {
+    "name": "\"Maker's Domination\"",
+    "category": "Wondrous",
+    "group": "Wondrous",
+    "levels": {
+      "3": {
+        "desc": "Complete \"Crisis Calamity: Alleikhreos, Chiliarch\" without using Foundite Weapons",
+        "completeDesc": "In a manner most stern and harsh, the Maker crushed the fighter from the past."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_open_treasure": {
+    "name": "\"Beastie's Tribute\"",
+    "category": "Wondrous",
+    "group": "Wondrous",
+    "levels": {
+      "2": {
+        "desc": "Find Smartie's \"tribute\"",
+        "completeDesc": "Camaraderie? Trust? This cute little thing is treating you as a friend."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_paralyze": {
+    "name": "\"Fully Revealed\"",
+    "category": "Wondrous",
+    "group": "Wondrous",
+    "levels": {
+      "2": {
+        "desc": "Let [Nefarith, \"Conqueror\"] hold the place in stasis and lock your controlled operator in mid-air",
+        "completeDesc": "Her wild ambitions are terrifying, but fearlessly you displayed your courage in her lockdown of despair."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_rebellious": {
+    "name": "\"We Built the Southern Bastion\"",
+    "category": "Wondrous",
+    "group": "Wondrous",
+    "levels": {
+      "2": {
+        "desc": "Use the defensive parry to intercept the Axe Armorbeast's ramming assault",
+        "completeDesc": "But the Axe Armorbeast still refused to turn around. Shame."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_root": {
+    "name": "\"Dwelling Upon Wilted Glory\"",
+    "category": "Wondrous",
+    "group": "Wondrous",
+    "levels": {
+      "1": {
+        "desc": "Explore the base of Type-C Tianshi Pillar",
+        "completeDesc": "From the Xiranite structure of the Test Area Tianshi Pillar, you picked up the \"flower bud\" that has yet to bloom. A vision of new birth beyond senescence is yours to witness."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_ruanyi": {
+    "name": "\"Traveler of the Deathly Realms\"",
+    "category": "Wondrous",
+    "group": "Wondrous",
+    "levels": {
+      "2": {
+        "desc": "While Ruan Yi is Infuriated, keep his Withering Touch active for at least 60s",
+        "completeDesc": "With dessicated branches he made a deathly realm, yet you traversed freely within it."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_slime": {
+    "name": "\"Battle of the Four Emperors\"",
+    "category": "Wondrous",
+    "group": "Wondrous",
+    "levels": {
+      "2": {
+        "desc": "Kick 4 Originium Slugs till they fall",
+        "completeDesc": "You helped four Originium Slugs move house."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_waterwheel_top": {
+    "name": "\"Water Flows from the Sky\"",
+    "category": "Wondrous",
+    "group": "Wondrous",
+    "levels": {
+      "2": {
+        "desc": "Reach the top of the Qingbo Stockade waterwheel",
+        "completeDesc": "You reached the very top of the Qingbo Stockade waterwheel and witnessed the wonder of \"water cascading from the heavens above\"."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_aglina": {
+    "name": "\"Letter From a Messenger\"",
+    "category": "Chapter",
+    "group": "Exploration Mission",
+    "levels": {
+      "2": {
+        "desc": "Complete side mission [Letter From a Messenger]",
+        "completeDesc": "A few tiny errands, a few packages to deliver. \nYou met her under the sunset skies. Beautiful memories and moments shall be the gifts that fill her empty letter."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_camille": {
+    "name": "\"Danse Macabre\"",
+    "category": "Chapter",
+    "group": "Exploration Mission",
+    "levels": {
+      "2": {
+        "desc": "Complete side mission [Danse Macabre]",
+        "completeDesc": "The chase, the fresh scent of blood, and an old wound that still throbs with pain... Camille has sworn that his blood will forever be with the Endministrator."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e0m2": {
+    "name": "\"Awaken\"",
+    "category": "Chapter",
+    "group": "Main Mission",
+    "levels": {
+      "3": {
+        "desc": "Complete main mission [Prologue - Process: Awakening]",
+        "completeDesc": "You have returned to Talos-II."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e10m3": {
+    "name": "\"Gently Down the Stream\"",
+    "category": "Chapter",
+    "group": "Main Mission",
+    "levels": {
+      "3": {
+        "desc": "Complete main mission [Chapter Ⅱ Process Ⅵ: Forged at the Very Beginning]",
+        "completeDesc": "Zhuang Fangyi waited, and you finally arrived."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e11m1": {
+    "name": "\"A Seal Lifted\"",
+    "category": "Chapter",
+    "group": "Main Mission",
+    "levels": {
+      "3": {
+        "desc": "Complete main mission [Chapter Ⅱ Process Ⅶ: Bravely Breach the Hostile Winds]",
+        "completeDesc": "You are prepared to stare down oblivion in its face. Though sealed away for many years, it is still the very manifestation of despair."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e11m3": {
+    "name": "\"A Dialog of Swords\"",
+    "category": "Chapter",
+    "group": "Main Mission",
+    "levels": {
+      "3": {
+        "desc": "Bid farewell to an instructor of Tanjian Hall",
+        "completeDesc": "He has understood. The living devote their commitment to their blades."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e11m4": {
+    "name": "\"Connection to the Past\"",
+    "category": "Chapter",
+    "group": "Main Mission",
+    "levels": {
+      "3": {
+        "desc": "Span the chasm with a Xiranite bridge",
+        "completeDesc": "A Xiranite bridge now links the present to the past. The road is now open to you."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e11m5": {
+    "name": "\"Child of Hope\"",
+    "category": "Chapter",
+    "group": "Main Mission",
+    "levels": {
+      "3": {
+        "desc": "Complete main mission [Chapter Ⅱ Process Ⅶ: Warily Returns the Wandering Vigile]",
+        "completeDesc": "Gently her heart was kept afloat through the overlapping mire of death ... to the place where hope will sprout and grow."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e11m7": {
+    "name": "\"Thus Ends the Weeping Gash\"",
+    "category": "Chapter",
+    "group": "Main Mission",
+    "levels": {
+      "3": {
+        "desc": "Complete main mission [Chapter Ⅱ Process Ⅶ: Homecoming]",
+        "completeDesc": "The weeping gash will no longer bring pain."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e1m2": {
+    "name": "\"Core ex Machina\"",
+    "category": "Chapter",
+    "group": "Main Mission",
+    "levels": {
+      "3": {
+        "desc": "Summon the fruit of a great technological endeavor",
+        "completeDesc": "The future of frontier development has descended upon Valley IV."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e1m8": {
+    "name": "\"The Fist Misses\"",
+    "category": "Chapter",
+    "group": "Main Mission",
+    "levels": {
+      "3": {
+        "desc": "Complete main mission [Chapter Ⅰ Process Ⅰ: Fort Showdown]",
+        "completeDesc": "You have defeated the \"Bonekrushing Fist\". \nEmbrace the Æther and usher in a new future? What is your opinion about Nefarith's speech?"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e2m1": {
+    "name": "\"The Refugees Strike Back?!\"",
+    "category": "Chapter",
+    "group": "Main Mission",
+    "levels": {
+      "3": {
+        "desc": "Witness an attack in progress",
+        "completeDesc": "You witnessed an unexpected \"explosion\". \nThe Power Plant is apparently not as defensible as it seems."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e2m8": {
+    "name": "\"Shards of the Crushed Star\"",
+    "category": "Chapter",
+    "group": "Main Mission",
+    "levels": {
+      "3": {
+        "desc": "Complete main mission [Chapter Ⅰ Process Ⅲ: Cradle of the Ages]",
+        "completeDesc": "You have defeated a partially revived Aggelos of massive proportions."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e3m5": {
+    "name": "\"Rift Sealing\"",
+    "category": "Chapter",
+    "group": "Main Mission",
+    "levels": {
+      "3": {
+        "desc": "Complete main mission [Chapter Ⅰ Process Ⅳ: Undying Cinders]",
+        "completeDesc": "You and your team fought hard and sealed the rift that was about to devour the entirety of Valley IV."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e4m1": {
+    "name": "\"Returning Signs of Ill Omen\"",
+    "category": "Chapter",
+    "group": "Main Mission",
+    "levels": {
+      "3": {
+        "desc": "Complete main mission [Intermission: Conference of the Four]",
+        "completeDesc": "Foreboding signs have appeared throughout Talos-II. Your journey is not yet complete."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e6m1": {
+    "name": "\"First Visit to Wuling\"",
+    "category": "Chapter",
+    "group": "Main Mission",
+    "levels": {
+      "3": {
+        "desc": "Reach an all-new city",
+        "completeDesc": "You have reached Wuling City."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e7m4": {
+    "name": "\"Drowning in Water\"",
+    "category": "Chapter",
+    "group": "Main Mission",
+    "levels": {
+      "3": {
+        "desc": "Complete main mission [Chapter Ⅱ Process Ⅲ: Surging From a Withered Spring]",
+        "completeDesc": "A promise and a choice.\nThe old way sank beneath pristine ripples, but where is the new path for these people?"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e8m4": {
+    "name": "\"The Final Lord I Served\"",
+    "category": "Chapter",
+    "group": "Main Mission",
+    "levels": {
+      "3": {
+        "desc": "Part ways with Ardashir at a certain key location",
+        "completeDesc": "Ardashir looks at you. He sees what you cannot, visions that you have forgotten."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e9m3": {
+    "name": "\"Conqueror's Fall\"",
+    "category": "Chapter",
+    "group": "Main Mission",
+    "levels": {
+      "3": {
+        "desc": "Complete main mission [Chapter Ⅱ Process Ⅴ: Battle of the Main Pillar]",
+        "completeDesc": "She is a conqueror whose heart was ignited by ambition, who seeks to sacrifice tens of thousands for a glimpse into the forbidden realm. You have crushed the malice of Nefarith."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_gm02m22": {
+    "name": "\"Fate Beneath the Snow\"",
+    "category": "Chapter",
+    "group": "Exploration Mission",
+    "levels": {
+      "1": {
+        "desc": "Complete side missions [Illumination of Fate] and [Endeavor of a Lifetime]",
+        "completeDesc": "A Snowpriestess left her writings and resolution ... and let the snow bury her destiny. Yet a soft, determined girl brushed it aside, and revealed her final fate."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_gm02m27": {
+    "name": "\"Let Suiming Light the Way\"",
+    "category": "Chapter",
+    "group": "Exploration Mission",
+    "levels": {
+      "2": {
+        "desc": "Complete side mission [Bell of Recollection]",
+        "completeDesc": "The bell strikes again, my heart pursues illumination once more."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_laevat": {
+    "name": "\"Let Fire Consume the Ashen Past\"",
+    "category": "Chapter",
+    "group": "Exploration Mission",
+    "levels": {
+      "2": {
+        "desc": "Complete side mission [Let Fire Consume the Ashen Past]",
+        "completeDesc": "The scars of memories may change in the fire. \nThough fragments of the past have built up like imposing mountains, you took Laevatain's hand and left the unending corridor."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_liino": {
+    "name": "\"Like a Star Streaking Through the Boundaries\"",
+    "category": "Chapter",
+    "group": "Exploration Mission",
+    "levels": {
+      "2": {
+        "desc": "Complete side mission [Like a Star Streaking Through the Boundaries]",
+        "completeDesc": "Endfield Industries is finally getting its very own celebrity brand idol... We gotta start the rehearsals, performances, and... Oh dear. There are just so many things to do."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_mifu": {
+    "name": "\"A Fistful of Reflections\"",
+    "category": "Chapter",
+    "group": "Exploration Mission",
+    "levels": {
+      "2": {
+        "desc": "Complete side mission [A Fistful of Reflections]",
+        "completeDesc": "Their fists question my resolve, but my Qi punches through the lands and challenges the very thunder itself."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_typhoea": {
+    "name": "\"A Winter Dream Fogged Deep in the Woods\"",
+    "category": "Chapter",
+    "group": "Exploration Mission",
+    "levels": {
+      "2": {
+        "desc": "Complete side mission [A Winter Dream Fogged Deep in the Woods]",
+        "completeDesc": "You followed the seeking gaze, tracked down the guiding arrow, weathered the frigid winds through mist and dreams ... and heard Her echoes in the Snowy Forest."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_wolfgd": {
+    "name": "\"Lone Wolf\"",
+    "category": "Chapter",
+    "group": "Exploration Mission",
+    "levels": {
+      "2": {
+        "desc": "Complete side mission [Lone Wolf]",
+        "completeDesc": "Wulfgard found the truth and executed the traitor. \nHe plunged that dagger in the earth before the grave... The Pack had changed. He knew what he had to do."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_wulfa": {
+    "name": "\"The Red Knight\"",
+    "category": "Chapter",
+    "group": "Exploration Mission",
+    "levels": {
+      "2": {
+        "desc": "Complete side mission [The Red Knight]",
+        "completeDesc": "When they arrived at the children's realm, the travelers stopped to rest their feet.\nWho can remember the scraping of knees from forgotten seasons of childhood?"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_yvonne": {
+    "name": "\"Love, Scream & The Prototype\"",
+    "category": "Chapter",
+    "group": "Exploration Mission",
+    "levels": {
+      "2": {
+        "desc": "Complete side mission [Love, Scream & The Prototype]",
+        "completeDesc": "A crate of pigments had arrived late. \nYou followed Tata's trail and created various graffiti. In these colors, Yvonne saw the potential of reunion."
+      }
+    },
+    "plating": null
+  },
+  "achv_side_mission_count": {
+    "name": "True Altruist",
+    "category": "Chapter",
+    "group": "Exploration Mission",
+    "levels": {
+      "1": {
+        "desc": "Complete 30 exploration missions",
+        "completeDesc": "You helped plenty of people with their problems."
+      },
+      "2": {
+        "desc": "Complete 40 exploration missions",
+        "completeDesc": "You helped plenty of people with their problems. \nNot all of them involved combat, and your goal transcends monetary pay."
+      },
+      "3": {
+        "desc": "Complete 50 exploration missions",
+        "completeDesc": "You helped plenty of people with their problems. \nThose who benefited from your assistance will help others in return. The people of Talos-II must learn to support one another."
+      }
+    },
+    "plating": null
+  },
+  "achv_social_building": {
+    "name": "Can't Do Without It",
+    "category": "Social",
+    "group": "Social",
+    "levels": {
+      "1": {
+        "desc": "Shared facility receives 50 repairs",
+        "completeDesc": "Your facility has received some repairs."
+      },
+      "2": {
+        "desc": "Shared facility receives 200 repairs",
+        "completeDesc": "Your facility has received plenty of repairs."
+      },
+      "3": {
+        "desc": "Shared facility receives 500 repairs",
+        "completeDesc": "Your facility has received a massive amount of repairs. \nEvidently, you have helped many and the beneficiaries became rather attached to your facilities. They have done all that they could to keep the factory machines around."
+      }
+    },
+    "plating": null
+  },
+  "achv_social_spaceship_be_helped": {
+    "name": "Assist Recipient",
+    "category": "Social",
+    "group": "Social",
+    "levels": {
+      "2": {
+        "desc": "Receive 100 production assists from your friends",
+        "completeDesc": "Production facilities you furnished aboard Dijiang are working efficiently, thanks to the generous help from your friends."
+      }
+    },
+    "plating": null
+  },
+  "achv_social_spaceship_help": {
+    "name": "Generous Helper",
+    "category": "Social",
+    "group": "Social",
+    "levels": {
+      "1": {
+        "desc": "Give 50 production assists to your friends",
+        "completeDesc": "You generously offered production assist to your friends. \nYour altruism is the reason why Talos-II can prosper."
+      }
+    },
+    "plating": null
+  },
+  "achv_social_spaceship_info_exchange": {
+    "name": "Clue Exchanger",
+    "category": "Social",
+    "group": "Social",
+    "levels": {
+      "1": {
+        "desc": "Take part in a total of 50 clue exchanges.",
+        "completeDesc": "You performed a certain number of clue exchanges. \nThe world grows with your vision and the intel you have collected."
+      }
+    },
+    "plating": null
+  }
+}

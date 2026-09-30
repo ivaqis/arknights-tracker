@@ -459,7 +459,15 @@
     "leaderboard": "Leaderboard",
     "profile": "Profile",
     "icons": "Icons",
-    "food": "Food"
+    "food": "Food",
+    "achievements": "Achievements"
+  },
+  "achievements": {
+    "of": "of",
+    "onlyIncomplete": "Only incomplete",
+    "allVersions": "All versions",
+    "searchPlaceholder": "Search...",
+    "empty": "No achievements found"
   },
   "events": {
     "type": {
@@ -3250,5 +3258,35 @@
       "param1": "Damage Type",
       "param2": "% of Max HP"
     }
+  },
+  "achCategories": {
+    "achv_type_adventure": "Regional",
+    "achv_type_battle": "Technical",
+    "achv_type_event": "Event",
+    "achv_type_factory": "Construction",
+    "achv_type_growth": "Progression",
+    "achv_type_hide": "Wondrous",
+    "achv_type_quest": "Chapter",
+    "achv_type_social": "Social"
+  },
+  "achGroups": {
+    "achv_group_adv_tundra": "Valley",
+    "achv_group_adv_wuling": "Wuling",
+    "achv_group_bat_skill": "Combat Technique",
+    "achv_group_bat_dung": "Protocol Space",
+    "achv_group_fac_factory": "AIC Factory",
+    "achv_group_fac_spaceship": "Dijiang",
+    "achv_group_quest_main": "Main Mission",
+    "achv_group_quest_side": "Exploration Mission",
+    "achv_group_event_default": "Event",
+    "achv_group_growth_default": "Progression",
+    "achv_group_hide_default": "Wondrous",
+    "achv_group_social_default": "Social"
+  },
+  "achLevels": {
+    "source": "Source",
+    "reforging2": "Reforging Ⅱ",
+    "reforging3": "Reforging Ⅲ",
+    "trimming": "Trimming"
   }
 }

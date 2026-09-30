@@ -412,7 +412,8 @@
     "openRecipe": "Ouvrir les recettes",
     "leaderboard": "Classement",
     "profile": "Profil",
-    "icons": "Icônes"
+    "icons": "Icônes",
+    "achievements": "Succès"
   },
   "events": {
     "type": {
@@ -2828,5 +2829,42 @@
     "gas_env_wet": "ENV. humide",
     "gas_env_acidic": "ENV. acide",
     "gas_env_xiranite": "ENV. riche en xiranite"
+  },
+  "achCategories": {
+    "achv_type_adventure": "Régionales",
+    "achv_type_battle": "Techniques",
+    "achv_type_event": "Événements",
+    "achv_type_factory": "Construction",
+    "achv_type_growth": "Progression",
+    "achv_type_hide": "Merveilleuses",
+    "achv_type_quest": "Chapitres",
+    "achv_type_social": "Sociales"
+  },
+  "achGroups": {
+    "achv_group_adv_tundra": "Vallée",
+    "achv_group_adv_wuling": "Wuling",
+    "achv_group_bat_skill": "Techniques de combat",
+    "achv_group_bat_dung": "Espace de Protocole",
+    "achv_group_fac_factory": "Usine du GIA",
+    "achv_group_fac_spaceship": "Dijiang",
+    "achv_group_quest_main": "Mission principale",
+    "achv_group_quest_side": "Mission d'exploration",
+    "achv_group_event_default": "Événements",
+    "achv_group_growth_default": "Progression",
+    "achv_group_hide_default": "Merveilleuses",
+    "achv_group_social_default": "Sociales"
+  },
+  "achievements": {
+    "of": "sur",
+    "onlyIncomplete": "Incomplets uniquement",
+    "allVersions": "Toutes les versions",
+    "searchPlaceholder": "Rechercher...",
+    "empty": "Aucun succès trouvé"
+  },
+  "achLevels": {
+    "source": "Source",
+    "reforging2": "Remodelage II",
+    "reforging3": "Remodelage III",
+    "trimming": "Façonnage"
   }
 }

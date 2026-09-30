@@ -412,7 +412,8 @@
     "openRecipe": "레시피 열기",
     "leaderboard": "리더보드",
     "profile": "프로필",
-    "icons": "아이콘"
+    "icons": "아이콘",
+    "achievements": "업적"
   },
   "events": {
     "type": {
@@ -2828,5 +2829,42 @@
     "gas_env_wet": "습윤 환경",
     "gas_env_acidic": "산성 환경",
     "gas_env_xiranite": "식양 환경"
+  },
+  "achCategories": {
+    "achv_type_adventure": "지역 훈장",
+    "achv_type_battle": "아츠 훈장",
+    "achv_type_event": "이벤트 훈장",
+    "achv_type_factory": "건설 훈장",
+    "achv_type_growth": "단련 훈장",
+    "achv_type_hide": "스페셜 훈장",
+    "achv_type_quest": "이야기 훈장",
+    "achv_type_social": "소셜 훈장"
+  },
+  "achGroups": {
+    "achv_group_adv_tundra": "협곡 지역 훈장",
+    "achv_group_adv_wuling": "무릉 지역 훈장",
+    "achv_group_bat_skill": "전투 기술 훈장",
+    "achv_group_bat_dung": "프로토콜 공간 훈장",
+    "achv_group_fac_factory": "통합 공업 훈장",
+    "achv_group_fac_spaceship": "제강호 훈장",
+    "achv_group_quest_main": "메인 임무 훈장",
+    "achv_group_quest_side": "탐색 임무 훈장",
+    "achv_group_event_default": "이벤트 훈장",
+    "achv_group_growth_default": "단련 훈장",
+    "achv_group_hide_default": "스페셜 훈장",
+    "achv_group_social_default": "소셜 훈장"
+  },
+  "achievements": {
+    "of": "/",
+    "onlyIncomplete": "미완료만",
+    "allVersions": "모든 버전",
+    "searchPlaceholder": "검색...",
+    "empty": "업적을 찾을 수 없습니다"
+  },
+  "achLevels": {
+    "source": "획득 방법",
+    "reforging2": "재단련 방법 II",
+    "reforging3": "재단련 방법 III",
+    "trimming": "코팅 방법"
   }
 }

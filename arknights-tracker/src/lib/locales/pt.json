@@ -412,7 +412,8 @@
     "openRecipe": "Abrir receitas",
     "leaderboard": "Tabela de Classificação",
     "profile": "Perfil",
-    "icons": "Ícones"
+    "icons": "Ícones",
+    "achievements": "Conquistas"
   },
   "events": {
     "type": {
@@ -2828,5 +2829,42 @@
     "gas_env_wet": "AMB Úmido",
     "gas_env_acidic": "AMB Acre",
     "gas_env_xiranite": "AMB Xiranita"
+  },
+  "achCategories": {
+    "achv_type_adventure": "Regional",
+    "achv_type_battle": "Técnico",
+    "achv_type_event": "Evento",
+    "achv_type_factory": "Construção",
+    "achv_type_growth": "Progressão",
+    "achv_type_hide": "Maravilhoso",
+    "achv_type_quest": "Capítulo",
+    "achv_type_social": "Social"
+  },
+  "achGroups": {
+    "achv_group_adv_tundra": "Vale",
+    "achv_group_adv_wuling": "Wuling",
+    "achv_group_bat_skill": "Técnica de Combate",
+    "achv_group_bat_dung": "Espaço do Protocolo",
+    "achv_group_fac_factory": "Fábrica do CAI",
+    "achv_group_fac_spaceship": "Dijiang",
+    "achv_group_quest_main": "Missão Principal",
+    "achv_group_quest_side": "Missão de Exploração",
+    "achv_group_event_default": "Evento",
+    "achv_group_growth_default": "Progressão",
+    "achv_group_hide_default": "Maravilhoso",
+    "achv_group_social_default": "Social"
+  },
+  "achievements": {
+    "of": "de",
+    "onlyIncomplete": "Apenas incompletos",
+    "allVersions": "Todas as versões",
+    "searchPlaceholder": "Pesquisar...",
+    "empty": "Nenhuma conquista encontrada"
+  },
+  "achLevels": {
+    "source": "Origem",
+    "reforging2": "Reforja II",
+    "reforging3": "Reforja III",
+    "trimming": "Decoração"
   }
 }

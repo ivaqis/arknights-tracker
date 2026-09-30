@@ -413,7 +413,8 @@
     "openRecipe": "Abrir recetas",
     "leaderboard": "Tabla de clasificación",
     "profile": "Perfil",
-    "icons": "Iconos"
+    "icons": "Iconos",
+    "achievements": "Logros"
   },
   "events": {
     "type": {
@@ -2829,5 +2830,42 @@
     "gas_env_wet": "ENT húmedo",
     "gas_env_acidic": "ENT acre",
     "gas_env_xiranite": "ENT de Xiranita"
+  },
+  "achCategories": {
+    "achv_type_adventure": "Regional",
+    "achv_type_battle": "Técnico",
+    "achv_type_event": "Evento",
+    "achv_type_factory": "Construcción",
+    "achv_type_growth": "Progresión",
+    "achv_type_hide": "Asombroso",
+    "achv_type_quest": "Capítulo",
+    "achv_type_social": "Social"
+  },
+  "achGroups": {
+    "achv_group_adv_tundra": "Valle",
+    "achv_group_adv_wuling": "Wuling",
+    "achv_group_bat_skill": "Técnica de combate",
+    "achv_group_bat_dung": "Espacio de protocolo",
+    "achv_group_fac_factory": "Fábrica del CAI",
+    "achv_group_fac_spaceship": "Dijiang",
+    "achv_group_quest_main": "Misión principal",
+    "achv_group_quest_side": "Misión de exploración",
+    "achv_group_event_default": "Evento",
+    "achv_group_growth_default": "Progresión",
+    "achv_group_hide_default": "Asombroso",
+    "achv_group_social_default": "Social"
+  },
+  "achievements": {
+    "of": "de",
+    "onlyIncomplete": "Solo incompletos",
+    "allVersions": "Todas las versiones",
+    "searchPlaceholder": "Buscar...",
+    "empty": "No se encontraron logros"
+  },
+  "achLevels": {
+    "source": "Fuente",
+    "reforging2": "Reforjado II",
+    "reforging3": "Reforjado III",
+    "trimming": "Adorno"
   }
 }

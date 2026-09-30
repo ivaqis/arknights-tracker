@@ -412,7 +412,8 @@
     "openRecipe": "Apri ricette",
     "leaderboard": "Classifica",
     "profile": "Profilo",
-    "icons": "Icone"
+    "icons": "Icone",
+    "achievements": "Obiettivi"
   },
   "events": {
     "type": {
@@ -2828,5 +2829,42 @@
     "gas_env_wet": "AMB umido",
     "gas_env_acidic": "AMB acre",
     "gas_env_xiranite": "AMB xiranite"
+  },
+  "achCategories": {
+    "achv_type_adventure": "Regionale",
+    "achv_type_battle": "Tecnica",
+    "achv_type_event": "Evento",
+    "achv_type_factory": "Costruzione",
+    "achv_type_growth": "Sviluppo",
+    "achv_type_hide": "Sorpresa",
+    "achv_type_quest": "Capitolo",
+    "achv_type_social": "Sociale"
+  },
+  "achGroups": {
+    "achv_group_adv_tundra": "Valle",
+    "achv_group_adv_wuling": "Wuling",
+    "achv_group_bat_skill": "Tecnica di combattimento",
+    "achv_group_bat_dung": "Spazio protocollare",
+    "achv_group_fac_factory": "Fabbrica del SIA",
+    "achv_group_fac_spaceship": "Dijiang",
+    "achv_group_quest_main": "Missione principale",
+    "achv_group_quest_side": "Missioni esplorazione",
+    "achv_group_event_default": "Evento",
+    "achv_group_growth_default": "Sviluppo",
+    "achv_group_hide_default": "Sorpresa",
+    "achv_group_social_default": "Sociale"
+  },
+  "achievements": {
+    "of": "di",
+    "onlyIncomplete": "Solo incompleti",
+    "allVersions": "Tutte le versioni",
+    "searchPlaceholder": "Cerca...",
+    "empty": "Nessun obiettivo trovato"
+  },
+  "achLevels": {
+    "source": "Fonte",
+    "reforging2": "Riforgiatura Ⅱ",
+    "reforging3": "Riforgiatura Ⅲ",
+    "trimming": "Rifinitura"
   }
 }

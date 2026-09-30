@@ -415,7 +415,8 @@
     "openRecipe": "打開配方",
     "leaderboard": "排行榜",
     "profile": "個人資料",
-    "icons": "圖標"
+    "icons": "圖標",
+    "achievements": "成就"
   },
   "events": {
     "type": {
@@ -2867,5 +2868,42 @@
     "gas_env_wet": "濕潤環境",
     "gas_env_acidic": "酸性環境",
     "gas_env_xiranite": "息壤環境"
+  },
+  "achCategories": {
+    "achv_type_adventure": "地區獎章",
+    "achv_type_battle": "技藝獎章",
+    "achv_type_event": "活動獎章",
+    "achv_type_factory": "建設獎章",
+    "achv_type_growth": "錘鍊獎章",
+    "achv_type_hide": "奇想獎章",
+    "achv_type_quest": "章節獎章",
+    "achv_type_social": "社交獎章"
+  },
+  "achGroups": {
+    "achv_group_adv_tundra": "谷地地區獎章",
+    "achv_group_adv_wuling": "武陵地區獎章",
+    "achv_group_bat_skill": "戰鬥技巧獎章",
+    "achv_group_bat_dung": "協議空間獎章",
+    "achv_group_fac_factory": "集成工業獎章",
+    "achv_group_fac_spaceship": "帝江號獎章",
+    "achv_group_quest_main": "主線任務獎章",
+    "achv_group_quest_side": "探索任務獎章",
+    "achv_group_event_default": "活動獎章",
+    "achv_group_growth_default": "錘鍊獎章",
+    "achv_group_hide_default": "奇想獎章",
+    "achv_group_social_default": "社交獎章"
+  },
+  "achievements": {
+    "of": "/",
+    "onlyIncomplete": "僅未完成",
+    "allVersions": "全部版本",
+    "searchPlaceholder": "搜尋...",
+    "empty": "未找到成就"
+  },
+  "achLevels": {
+    "source": "獲得方式",
+    "reforging2": "重鍛方式II",
+    "reforging3": "重鍛方式III",
+    "trimming": "鍍層方式"
   }
 }

@@ -412,7 +412,8 @@
     "openRecipe": "เปิดสูตรผลิต",
     "leaderboard": "กระดานผู้นำ",
     "profile": "โปรไฟล์",
-    "icons": "ไอคอน"
+    "icons": "ไอคอน",
+    "achievements": "ความสำเร็จ"
   },
   "events": {
     "type": {
@@ -2828,5 +2829,42 @@
     "gas_env_wet": "สภาพแวดล้อม​ชื้น",
     "gas_env_acidic": "สภาพแวดล้อม​แอค​ริด",
     "gas_env_xiranite": "สภาพแวดล้อม​ซี​เรน​ไนต์"
+  },
+  "achCategories": {
+    "achv_type_adventure": "ระดับ​ภูมิภาค",
+    "achv_type_battle": "เทคนิค",
+    "achv_type_event": "กิจกรรม",
+    "achv_type_factory": "การ​ก่อสร้าง",
+    "achv_type_growth": "ความก้าวหน้า",
+    "achv_type_hide": "อัศจรรย์",
+    "achv_type_quest": "บท",
+    "achv_type_social": "โซเชียล"
+  },
+  "achGroups": {
+    "achv_group_adv_tundra": "หุบเขา",
+    "achv_group_adv_wuling": "อู่​หลิง",
+    "achv_group_bat_skill": "เทคนิค​การต่อสู้",
+    "achv_group_bat_dung": "พื้นที่​โปร​โต​คอล",
+    "achv_group_fac_factory": "โรงงาน​ AIC",
+    "achv_group_fac_spaceship": "ตี้​เจียง",
+    "achv_group_quest_main": "ภารกิจ​หลัก",
+    "achv_group_quest_side": "ภารกิจ​สำรวจ",
+    "achv_group_event_default": "กิจกรรม",
+    "achv_group_growth_default": "ความก้าวหน้า",
+    "achv_group_hide_default": "อัศจรรย์",
+    "achv_group_social_default": "โซเชียล"
+  },
+  "achievements": {
+    "of": "จาก",
+    "onlyIncomplete": "เฉพาะที่ยังไม่เสร็จ",
+    "allVersions": "ทุกเวอร์ชัน",
+    "searchPlaceholder": "ค้นหา...",
+    "empty": "ไม่พบความสำเร็จ"
+  },
+  "achLevels": {
+    "source": "ที่มา",
+    "reforging2": "การหลอม​ II",
+    "reforging3": "การหลอม​ III",
+    "trimming": "การ​ตกแต่ง"
   }
 }
