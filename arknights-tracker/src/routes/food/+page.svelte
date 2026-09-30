@@ -346,12 +346,16 @@
 
                     <div class="flex flex-col gap-8">
 
-                        <FoodComparisonTableSelector
-                            condTypeList={$foodSortParams.sortFieldParams.equipCond}
-                            buffList={$foodSortParams.sortFieldParams.buff}
-                            bind:selectedCondTypeSet={selectedCondTypeSet}
-                            bind:selectedBuffSet={selectedBuffSet}
-                        />
+                        <div class="md:mt-[135px]">
+
+                            <FoodComparisonTableSelector
+                                condTypeList={$foodSortParams.sortFieldParams.equipCond}
+                                buffList={$foodSortParams.sortFieldParams.buff}
+                                bind:selectedCondTypeSet={selectedCondTypeSet}
+                                bind:selectedBuffSet={selectedBuffSet}
+                            />
+
+                        </div>
 
                         {#if selectedItem}
 
