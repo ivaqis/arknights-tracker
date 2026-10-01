@@ -345,7 +345,8 @@
     "blueprintLocation": "장비 도안 위치",
     "rewards": "보상",
     "dayN": "{n}일차",
-    "addedInVersion": "버전 {version}에 추가됨"
+    "addedInVersion": "버전 {version}에 추가됨",
+    "currentlyUnavailable": "현재 없음"
   },
   "status": {
     "won": "승리 50:50",

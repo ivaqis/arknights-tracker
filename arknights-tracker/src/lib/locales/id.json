@@ -345,7 +345,8 @@
     "blueprintLocation": "Lokasi Templat Perlengkapan",
     "rewards": "Hadiah",
     "dayN": "Hari {n}",
-    "addedInVersion": "Ditambahkan di versi {version}"
+    "addedInVersion": "Ditambahkan di versi {version}",
+    "currentlyUnavailable": "Saat Ini Tidak Tersedia"
   },
   "status": {
     "won": "Menang 50:50",

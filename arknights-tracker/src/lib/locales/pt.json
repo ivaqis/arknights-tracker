@@ -345,7 +345,8 @@
     "blueprintLocation": "Localização do modelo de equipamento",
     "rewards": "Recompensas",
     "dayN": "Dia {n}",
-    "addedInVersion": "Adicionado na versão {version}"
+    "addedInVersion": "Adicionado na versão {version}",
+    "currentlyUnavailable": "Indisponível no Momento"
   },
   "status": {
     "won": "Ganho 50:50",

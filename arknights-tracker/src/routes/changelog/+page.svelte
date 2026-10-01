@@ -27,7 +27,7 @@
     $: versionOptions = changelogData
         .map((v) => ({
             value: v.version,
-            label: `${$t("systemNames.version") || "Version"} ${v.version}`,
+            label: `${$t("systemNames.version")} ${v.version}`,
         }))
         .sort((a, b) =>
             b.value.localeCompare(a.value, undefined, { numeric: true }),
@@ -256,18 +256,18 @@
                 <h3
                     class="text-2xl font-bold text-[#21272C] dark:text-[#E4E4E4] font-sdk flex items-center gap-2"
                 >
-                    {$t("systemNames.banners") || "Banners"}
+                    {$t("systemNames.banners")}
                 </h3>
 
                 <div
-                    class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-4 gap-5 justify-start"
+                    class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-5 gap-3.5 justify-start"
                 >
                     {#each displayBanners as banner (banner.id)}
-                        <div class="flex flex-col gap-2">
+                        <div class="flex flex-col gap-1.5">
                             <div
                                 role="button"
                                 tabindex="0"
-                                class="relative w-full aspect-[16/9] hover:outline-white hover:dark:outline-white transition-all duration-200 hover:outline-2 bg-gray-200 dark:bg-[#1E1E1E] rounded-xl overflow-hidden shadow-sm group cursor-pointer outline-none focus:ring-4 focus:ring-[#FACC15] select-none hover:shadow-lg"
+                                class="relative w-full aspect-[16/9] hover:outline-white hover:dark:outline-white transition-all duration-200 hover:outline-2 bg-gray-200 dark:bg-[#1E1E1E] rounded-lg overflow-hidden shadow-sm group cursor-pointer outline-none focus:ring-2 focus:ring-[#FACC15] select-none hover:shadow-md"
                                 on:click={() => (bannerForModal = banner)}
                                 on:keydown={(e) =>
                                     (e.key === "Enter" || e.key === " ") &&
@@ -288,7 +288,7 @@
                                 ></div>
 
                                 <div
-                                    class="absolute top-2 right-2 px-1.5 py-0.5 bg-black/60 backdrop-blur-md rounded text-[9px] font-bold text-white uppercase tracking-wider border border-white/10 pointer-events-none"
+                                    class="absolute top-1.5 right-1.5 px-1.5 py-0.5 bg-black/60 backdrop-blur-md rounded text-[8px] xl:text-[8px] 2xl:text-[9px] font-bold text-white border border-white/10 pointer-events-none"
                                 >
                                     {$t(
                                         `bannerTypes.${banner.type === "weapon" ? "weapon-all" : banner.type}`,
@@ -296,9 +296,9 @@
                                 </div>
                             </div>
 
-                            <div class="px-1 flex flex-col">
+                            <div class="px-0.5 flex flex-col">
                                 <h4
-                                    class="font-bold font-sdk text-[#21272C] dark:text-[#FDFDFD] text-sm leading-tight truncate"
+                                    class="font-bold font-sdk text-[#21272C] dark:text-[#FDFDFD] text-xs leading-tight line-clamp-2"
                                 >
                                     {$t(`banners.${banner.id}`) !==
                                     `banners.${banner.id}`
@@ -307,7 +307,7 @@
                                 </h4>
                                 {#if banner.startTime}
                                     <div
-                                        class="text-[10px] font-nums font-medium text-gray-500 dark:text-[#B7B6B3] truncate mt-0.5"
+                                        class="text-[9px] font-nums font-medium text-gray-500 dark:text-[#B7B6B3] truncate mt-0.5"
                                     >
                                         {formatBannerDate(
                                             banner.startTime,
@@ -332,7 +332,7 @@
                 <h3
                     class="text-2xl font-bold text-[#21272C] dark:text-[#E4E4E4] font-sdk flex items-center gap-2"
                 >
-                    {$t("pages.operators") || "Operators"}
+                    {$t("pages.operators")}
                 </h3>
 
                 <div
@@ -352,7 +352,7 @@
                 <h3
                     class="text-2xl font-bold text-[#21272C] dark:text-[#E4E4E4] font-sdk flex items-center gap-2 mt-4"
                 >
-                    {$t("pages.weapons") || "Weapons"}
+                    {$t("pages.weapons")}
                 </h3>
 
                 <div
@@ -372,7 +372,7 @@
                 <h3
                     class="text-2xl font-bold text-[#21272C] dark:text-[#E4E4E4] font-sdk flex items-center gap-2 mt-4"
                 >
-                    {$t("pages.equipment") || "Equipment"}
+                    {$t("pages.equipment")}
                 </h3>
 
                 <div class="flex flex-col gap-3">
@@ -410,7 +410,7 @@
                 <h3
                     class="text-2xl font-bold text-[#21272C] dark:text-[#E4E4E4] font-sdk flex items-center gap-2 mt-4"
                 >
-                    {$t("pages.enemies") || "Enemies"}
+                    {$t("pages.enemies")}
                 </h3>
 
                 <div
@@ -430,7 +430,7 @@
                 <h3
                     class="text-2xl font-bold text-[#21272C] dark:text-[#E4E4E4] font-sdk flex items-center gap-2"
                 >
-                    {$t("sidebar.events") || "События"}
+                    {$t("sidebar.events")}
                 </h3>
 
                 <div class="flex flex-col gap-6">
@@ -446,7 +446,7 @@
                             </h4>
 
                             <div
-                                class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-4 gap-5 justify-start"
+                                class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-5 gap-3.5 justify-start"
                             >
                                 {#each eventsByType[type] as ev (ev.id)}
                                     <div class="flex flex-col gap-1.5">
@@ -475,7 +475,7 @@
                                             ></div>
                                         </div>
 
-                                        <div class="px-1 flex flex-col">
+                                        <div class="px-0.5 flex flex-col">
                                             <h5
                                                 class="font-bold font-sdk text-[#21272C] dark:text-[#FDFDFD] text-xs leading-tight line-clamp-2"
                                             >
@@ -540,7 +540,7 @@
             >
                 <Icon name="noData" class="w-10 h-10 mb-3 opacity-30" />
                 <p class="text-sm font-medium">
-                    {$t("emptyState.noChanges") || "No added content"}
+                    {$t("emptyState.noChanges")}
                 </p>
             </div>
         {/if}

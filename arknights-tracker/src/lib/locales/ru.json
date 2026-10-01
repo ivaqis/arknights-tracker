@@ -389,6 +389,7 @@
     "equipmentType": "Тип снаряжения",
     "gearTemplate": "Шаблон снаряжения",
     "blueprintLocation": "Локация шаблона снаряжения",
+    "currentlyUnavailable": "Сейчас недоступно",
     "addedInVersion": "Добавлено в версии {version}"
   },
   "status": {

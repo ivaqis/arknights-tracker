@@ -348,7 +348,8 @@
     "blueprintLocation": "Vị trí bản thiết kế trang bị",
     "rewards": "Phần thưởng",
     "dayN": "Ngày {n}",
-    "addedInVersion": "Đã thêm trong phiên bản {version}"
+    "addedInVersion": "Đã thêm trong phiên bản {version}",
+    "currentlyUnavailable": "Hiện Không Khả Dụng"
   },
   "status": {
     "won": "Thắng 50:50",

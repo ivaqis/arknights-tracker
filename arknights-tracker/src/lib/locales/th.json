@@ -345,7 +345,8 @@
     "blueprintLocation": "ตำแหน่งพิมพ์เขียวอุปกรณ์",
     "rewards": "รางวัล",
     "dayN": "วันที่ {n}",
-    "addedInVersion": "เพิ่มในเวอร์ชัน {version}"
+    "addedInVersion": "เพิ่มในเวอร์ชัน {version}",
+    "currentlyUnavailable": "ไม่สามารถใช้ได้ตอนนี้"
   },
   "status": {
     "won": "ชนะ 50:50",

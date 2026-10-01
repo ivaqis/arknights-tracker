@@ -345,7 +345,8 @@
     "blueprintLocation": "Emplacement du schéma d'équipement",
     "rewards": "Récompenses",
     "dayN": "Jour {n}",
-    "addedInVersion": "Ajouté dans la version {version}"
+    "addedInVersion": "Ajouté dans la version {version}",
+    "currentlyUnavailable": "Actuellement indisponible"
   },
   "status": {
     "won": "Gagné 50:50",

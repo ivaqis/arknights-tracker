@@ -25,6 +25,10 @@
             "width": "80",
             "height": "20",
             "fill": "currentColor"
+        },
+        "achPattern": {
+            "viewBox": "0 0 302 360",
+            "fill": "none"
         }
     };
 

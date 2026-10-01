@@ -345,7 +345,8 @@
     "blueprintLocation": "Posizione modello equipaggiamento",
     "rewards": "Ricompense",
     "dayN": "Giorno {n}",
-    "addedInVersion": "Aggiunto nella versione {version}"
+    "addedInVersion": "Aggiunto nella versione {version}",
+    "currentlyUnavailable": "Attualmente non disponibile"
   },
   "status": {
     "won": "Vinto 50:50",

@@ -1,6 +1,6 @@
 <script lang="ts">
     import { t } from '$lib/i18n';
-    import type { AchievementData } from '$lib/data/achievements';
+    import type { AchievementData, AchievementCondition } from '$lib/data/achievements';
     import {
         achievementStore,
         toggleAchievementLevel,
@@ -129,10 +129,23 @@
         }
         return { label: `Reforging ${level}`, icon: 'achUpgrade' };
     }
+
+    function formatAchievementDesc(desc: string, conditions?: AchievementCondition[]): string {
+        if (!desc) return '';
+        let formatted = desc.replace(
+            /<image=["']?Common\/icon_contingency_contract_entry_black["']?[^>]*>/gi,
+            '<svg class="w-4 h-4 inline-block align-[-2px] fill-current shrink-0 mx-0.5"><use href="#contract2" /></svg>'
+        );
+        formatted = formatted.replace(/<image=["']?([^"'\s>]+)["']?[^>]*>/gi, '');
+        if (conditions && conditions.length > 1 && !/\(\d+\)/.test(formatted)) {
+            formatted += ` (${conditions.length})`;
+        }
+        return formatted;
+    }
 </script>
 
 <div
-    class="relative border border-[#444444] rounded-xl p-4 md:p-5 flex flex-col justify-between overflow-hidden transition-colors duration-200 bg-transparent"
+    class="relative border border-[#444444] rounded-xl px-3 md:px-3.5 py-3.5 flex flex-col justify-between overflow-hidden transition-colors duration-200 bg-transparent"
 >
     {#if isCompleted}
         <div
@@ -220,7 +233,7 @@
 
             {#if currentCompleteDesc}
                 <p class="text-gray-400 text-xs md:text-sm mt-1.5 mb-3 leading-relaxed">
-                    {currentCompleteDesc}
+                    {@html formatAchievementDesc(currentCompleteDesc)}
                 </p>
             {/if}
 
@@ -239,8 +252,12 @@
                                 <span>{tag.label}</span>
                             </div>
 
-                            <span class="text-xs md:text-sm text-gray-200 leading-snug break-words flex-1">
-                                {localeData?.levels?.[lvl]?.desc || ''}
+                            <span
+                                class="text-xs md:text-sm leading-snug break-words flex-1 transition-colors {isLevelDone
+                                    ? 'text-gray-200'
+                                    : 'text-gray-400'}"
+                            >
+                                {@html formatAchievementDesc(localeData?.levels?.[lvl]?.desc || '', achievement.levelInfos?.[lvl]?.conditions)}
                             </span>
                         </div>
 
@@ -265,8 +282,12 @@
                                 <span>{$t('achLevels.trimming')}</span>
                             </div>
 
-                            <span class="text-xs md:text-sm text-gray-200 leading-snug break-words flex-1">
-                                {localeData?.plating?.desc || ''}
+                            <span
+                                class="text-xs md:text-sm leading-snug break-words flex-1 transition-colors {isPlateDone
+                                    ? 'text-gray-200'
+                                    : 'text-gray-400'}"
+                            >
+                                {@html formatAchievementDesc(localeData?.plating?.desc || '', achievement.plateConditions)}
                             </span>
                         </div>
 
@@ -282,7 +303,7 @@
     </div>
 
     {#if !hideAddedVersion}
-        <div class="relative z-10 flex justify-end mt-3 pt-2">
+        <div class="relative z-10 flex justify-end mt-1 pt-2">
             <a
                 href="/changelog?version={addedVersion}"
                 class="text-[11px] md:text-xs text-gray-500 hover:text-gray-300 transition-colors no-underline"

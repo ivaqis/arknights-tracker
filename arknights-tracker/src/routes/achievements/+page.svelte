@@ -42,6 +42,7 @@
     );
 
     let selectedCategoryId: string = sortedCategories[0]?.id || 'achv_type_quest';
+    let selectedGroupId: string = sortedCategories[0]?.groupIds[0] || '';
     let searchQuery: string = '';
     let onlyIncomplete: boolean = false;
     let selectedVersion: string = 'all';
@@ -88,12 +89,13 @@
         loadAchievementsLocale($currentLocale);
     }
 
-    function scrollToCategory(catId: string) {
-        selectedCategoryId = catId;
-        const el = document.getElementById(catId);
-        if (!el) return;
+    let isManualScrolling = false;
+    let manualScrollTimeout: ReturnType<typeof setTimeout> | null = null;
 
-        const targetY = el.getBoundingClientRect().top + window.pageYOffset - 16;
+    function animateScrollTo(targetY: number) {
+        isManualScrolling = true;
+        if (manualScrollTimeout) clearTimeout(manualScrollTimeout);
+
         const startY = window.pageYOffset;
         const diff = targetY - startY;
         const duration = 200;
@@ -107,9 +109,40 @@
             window.scrollTo(0, startY + diff * ease);
             if (progress < 1) {
                 requestAnimationFrame(step);
+            } else {
+                manualScrollTimeout = setTimeout(() => {
+                    isManualScrolling = false;
+                }, 100);
             }
         }
         requestAnimationFrame(step);
+    }
+
+    function scrollToCategory(catId: string) {
+        selectedCategoryId = catId;
+        const foundSection = filteredCategoriesWithGroups.find(c => c.category.id === catId);
+        if (foundSection && foundSection.groups.length > 0) {
+            selectedGroupId = foundSection.groups[0].groupId;
+        } else {
+            const foundCat = sortedCategories.find(c => c.id === catId);
+            selectedGroupId = foundCat && foundCat.groupIds.length > 0 ? foundCat.groupIds[0] : '';
+        }
+        const el = document.getElementById(catId);
+        if (!el) return;
+        const targetY = el.getBoundingClientRect().top + window.pageYOffset - 16;
+        animateScrollTo(targetY);
+    }
+
+    function scrollToGroup(groupId: string, catId: string) {
+        selectedCategoryId = catId;
+        selectedGroupId = groupId;
+        const el = document.getElementById(groupId);
+        if (!el) {
+            scrollToCategory(catId);
+            return;
+        }
+        const targetY = el.getBoundingClientRect().top + window.pageYOffset - 16;
+        animateScrollTo(targetY);
     }
 
     onMount(() => {
@@ -117,9 +150,21 @@
 
         const observer = new IntersectionObserver(
             (entries) => {
+                if (isManualScrolling) return;
                 for (const entry of entries) {
                     if (entry.isIntersecting) {
-                        selectedCategoryId = entry.target.id;
+                        const id = entry.target.id;
+                        if (id.startsWith('achv_type_')) {
+                            selectedCategoryId = id;
+                            const foundCat = sortedCategories.find(c => c.id === id);
+                            if (foundCat && (!selectedGroupId || !foundCat.groupIds.includes(selectedGroupId))) {
+                                selectedGroupId = foundCat.groupIds[0] || '';
+                            }
+                        } else if (id.startsWith('achv_group_')) {
+                            selectedGroupId = id;
+                            const foundCat = sortedCategories.find(c => c.groupIds.includes(id));
+                            if (foundCat) selectedCategoryId = foundCat.id;
+                        }
                     }
                 }
             },
@@ -130,6 +175,10 @@
             for (const cat of sortedCategories) {
                 const el = document.getElementById(cat.id);
                 if (el) observer.observe(el);
+                for (const gid of cat.groupIds) {
+                    const grpEl = document.getElementById(gid);
+                    if (grpEl) observer.observe(grpEl);
+                }
             }
         };
 
@@ -141,10 +190,17 @@
     });
 
     $: totalStats = getTotalProgress(achievements, $achievementStore);
-    $: categoriesWithProgress = sortedCategories.map((cat) => ({
-        ...cat,
-        stats: getCategoryProgress(cat.groupIds, achievements, $achievementStore)
-    }));
+    $: categoriesWithProgress = sortedCategories.map((cat) => {
+        const groups = cat.groupIds.map((gid) => ({
+            id: gid,
+            stats: getCategoryProgress([gid], achievements, $achievementStore)
+        }));
+        return {
+            ...cat,
+            stats: getCategoryProgress(cat.groupIds, achievements, $achievementStore),
+            groups
+        };
+    });
 
     $: filteredCategoriesWithGroups = (() => {
         const q = searchQuery.trim().toLowerCase();
@@ -269,45 +325,66 @@
                 {@const isSelected = selectedCategoryId === cat.id}
                 {@const iconName = categoryIcons[cat.id] || 'achievement'}
 
-                <button
-                    on:click={() => scrollToCategory(cat.id)}
-                    class="relative w-full text-left p-3 rounded-xl border transition-all flex items-center justify-between gap-3 select-none overflow-hidden {isSelected
-                        ? 'bg-[#2D2D2D] border-[#FFE145]/40 text-white shadow-lg'
-                        : 'bg-[#222222]/60 hover:bg-[#2D2D2D] border-transparent text-gray-400'}"
-                >
-                    {#if isSelected}
+                <div class="flex flex-col gap-1">
+                    <button
+                        on:click={() => scrollToCategory(cat.id)}
+                        class="relative w-full text-left p-3 rounded-xl border transition-all flex items-center justify-between gap-3 select-none overflow-hidden {isSelected
+                            ? 'bg-[#2D2D2D] border-[#FFE145]/40 text-white'
+                            : 'bg-[#222222]/60 hover:bg-[#2D2D2D] border-transparent text-gray-400'}"
+                    >
                         <div
-                            class="absolute inset-0 pointer-events-none rounded-xl opacity-10 bg-[radial-gradient(#FFE145_1px,transparent_1px)] [background-size:8px_8px]"
-                        ></div>
-                    {/if}
-
-                    <div class="flex items-center gap-3 min-w-0 relative z-10">
-                        <div
-                            class="w-7 h-7 flex items-center justify-center shrink-0 transition-colors {isSelected
-                                ? 'text-[#FFE145]'
-                                : 'text-gray-500'}"
+                            class="absolute -right-4 top-1/2 -translate-y-1/2 pointer-events-none select-none z-0 transition-all duration-200 {isSelected
+                                ? 'text-[#FFE145] opacity-20'
+                                : 'text-gray-400 opacity-[0.06]'}"
                         >
-                            <Icon name={iconName} class="w-6 h-6" />
+                            <Icon name="achPattern" class="w-36 h-auto" />
                         </div>
 
-                        <div class="flex flex-col min-w-0">
-                            <span class="text-sm font-bold truncate {isSelected ? 'text-white' : 'text-gray-300'}">
-                                {$t(`achCategories.${cat.id}`)}
-                            </span>
-                            <span class="text-xs text-gray-400 font-nums">
-                                {cat.stats.completed}/{cat.stats.total} ({cat.stats.percent}%)
-                            </span>
-                        </div>
-                    </div>
-
-                    <div class="relative z-10 shrink-0 flex items-center">
-                        {#if cat.stats.percent === 100 && cat.stats.total > 0}
-                            <div class="w-5 h-5 rounded-full bg-[#FFE145]/20 flex items-center justify-center text-[#FFE145]">
-                                <Icon name="success" class="w-3.5 h-3.5" />
+                        <div class="flex items-center gap-3 min-w-0 relative z-10">
+                            <div
+                                class="w-7 h-7 flex items-center justify-center shrink-0 transition-colors {isSelected
+                                    ? 'text-[#FFE145]'
+                                    : 'text-gray-500'}"
+                            >
+                                <Icon name={iconName} class="w-6 h-6" />
                             </div>
-                        {/if}
+
+                            <div class="flex flex-col min-w-0">
+                                <span class="text-sm font-bold truncate {isSelected ? 'text-white' : 'text-gray-300'}">
+                                    {$t(`achCategories.${cat.id}`)}
+                                </span>
+                                <span class="text-xs text-gray-400 font-nums">
+                                    {cat.stats.completed}/{cat.stats.total} ({cat.stats.percent}%)
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="relative z-10 shrink-0 flex items-center">
+                            {#if cat.stats.percent === 100 && cat.stats.total > 0}
+                                <div class="w-5 h-5 rounded-full bg-[#FFE145]/20 flex items-center justify-center text-[#FFE145]">
+                                    <Icon name="success" class="w-3.5 h-3.5" />
+                                </div>
+                            {/if}
+                        </div>
+                    </button>
+
+                    <div class="ml-4 pl-3 border-l border-[#3E3E3E] flex flex-col gap-1 py-1">
+                        {#each cat.groups as grp (grp.id)}
+                            {@const isGrpSelected = selectedGroupId === grp.id}
+                            <button
+                                on:click={() => scrollToGroup(grp.id, cat.id)}
+                                class="w-full text-left py-1.5 px-2.5 rounded-lg text-xs font-medium transition-all flex items-center justify-between gap-2 select-none {isGrpSelected
+                                    ? 'bg-[#2E2E2E] text-[#FFE145] font-bold shadow-sm'
+                                    : 'text-gray-400 hover:text-gray-200 hover:bg-[#262626]'}"
+                            >
+                                <span class="truncate">{$t(`achGroups.${grp.id}`)}</span>
+                                <span class="text-[11px] font-nums opacity-70 shrink-0">
+                                    {grp.stats.completed}/{grp.stats.total}
+                                </span>
+                            </button>
+                        {/each}
                     </div>
-                </button>
+                </div>
             {/each}
         </div>
 
@@ -325,7 +402,7 @@
                 {#each filteredCategoriesWithGroups as catSection (catSection.category.id)}
                     <section id={catSection.category.id} class="scroll-mt-6 flex flex-col gap-6">
                         <div class="flex items-center gap-3 border-b border-[#3E3E3E] pb-3">
-                            <div class="w-8 h-8 flex items-center justify-center text-[#FFE145] shrink-0">
+                            <div class="w-8 h-8 flex items-center justify-center text-white shrink-0">
                                 <Icon name={categoryIcons[catSection.category.id] || 'achievement'} class="w-7 h-7" />
                             </div>
                             <h3 class="text-xl md:text-2xl font-black text-white font-sdk tracking-wide">
@@ -335,7 +412,7 @@
 
                         <div class="flex flex-col gap-8">
                             {#each catSection.groups as group (group.groupId)}
-                                <div class="flex flex-col gap-3.5">
+                                <div id={group.groupId} class="scroll-mt-6 flex flex-col gap-3.5">
                                     <h4 class="text-base md:text-lg font-bold text-gray-300 tracking-wide">
                                         {group.groupName}
                                     </h4>

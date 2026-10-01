@@ -345,7 +345,8 @@
     "blueprintLocation": "Ausrüstungsvorlagen-Standort",
     "rewards": "Belohnungen",
     "dayN": "Tag {n}",
-    "addedInVersion": "Hinzugefügt in Version {version}"
+    "addedInVersion": "Hinzugefügt in Version {version}",
+    "currentlyUnavailable": "Derzeit nicht verfügbar."
   },
   "status": {
     "won": "Gewonnen 50:50",

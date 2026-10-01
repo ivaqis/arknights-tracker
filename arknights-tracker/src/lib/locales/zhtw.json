@@ -348,7 +348,8 @@
     "blueprintLocation": "裝備圖紙位置",
     "rewards": "獎勵",
     "dayN": "第 {n} 天",
-    "addedInVersion": "在 {version} 版本中新增"
+    "addedInVersion": "在 {version} 版本中新增",
+    "currentlyUnavailable": "目前尚無"
   },
   "status": {
     "won": "勝出 50:50",

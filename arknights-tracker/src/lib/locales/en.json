@@ -391,6 +391,7 @@
     "equipmentType": "Equipment Type",
     "gearTemplate": "Gear Template",
     "blueprintLocation": "Gear template location",
+    "currentlyUnavailable": "Currently Unavailable",
     "addedInVersion": "Added in version {version}"
   },
   "status": {

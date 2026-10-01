@@ -346,7 +346,8 @@
     "blueprintLocation": "Ubicación de plantilla de equipamiento",
     "rewards": "Recompensas",
     "dayN": "Día {n}",
-    "addedInVersion": "Añadido en la versión {version}"
+    "addedInVersion": "Añadido en la versión {version}",
+    "currentlyUnavailable": "No disponible actualmente"
   },
   "status": {
     "won": "Ganado 50:50",

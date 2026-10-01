@@ -345,7 +345,8 @@
     "blueprintLocation": "装備設計図の場所",
     "rewards": "報酬",
     "dayN": "{n}日目",
-    "addedInVersion": "バージョン{version}で追加"
+    "addedInVersion": "バージョン{version}で追加",
+    "currentlyUnavailable": "未開放"
   },
   "status": {
     "won": "勝利 50:50",
