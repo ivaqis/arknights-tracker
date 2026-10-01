@@ -1,4 +1,5 @@
 import { RichTextParamParser } from "$lib/classes/richText/expressions/RichTextParamParser";
+import { logout } from "$lib/stores/cloudStore";
 import { currentLocale, currentUiLocale } from "$lib/stores/locale";
 import { derived, type Readable, type Writable, writable } from "svelte/store";
 
@@ -98,12 +99,13 @@ async function loadLocale(code: string) {
 
     if (!isAlreadyLoaded) {
         let loader = isUiOnly(code)
-            ? uiLocaleModules[`./uiLocales/${fileName}.json`] as (() => Promise<LocaleStructure>) | undefined
-            : localeModules[`./locales/${fileName}.json`] as (() => Promise<LocaleStructure>) | undefined;
+            ? uiLocaleModules[`./uiLocales/${fileName}.json`] as (() => Promise<LocaleStructure | { default: LocaleStructure }>) | undefined
+            : localeModules[`./locales/${fileName}.json`] as (() => Promise<LocaleStructure | { default: LocaleStructure }>) | undefined;
 
         if (loader) {
             try {
-                const data = await loader();
+                const mod = await loader();
+                const data = (mod.default ?? mod) as LocaleStructure;
 
                 let hyperlinkData: HyperlinkDataMap = await getHyperlinkData(fileName);
 
@@ -124,11 +126,12 @@ async function loadLocale(code: string) {
 async function getHyperlinkData(fileName: string): Promise<HyperlinkDataMap> {
     const result: HyperlinkDataMap = {};
 
-    const hyperLinkLoader = hyperlinkModules[`./locales/${fileName}/hyperlink.json`] as (() => Promise<Record<string, HyperlinkData>>) | undefined;
+    const hyperLinkLoader = hyperlinkModules[`./locales/${fileName}/hyperlink.json`] as (() => Promise<Record<string, HyperlinkData> | { default: Record<string, HyperlinkData> }>) | undefined;
 
     if (hyperLinkLoader) {
         try {
-            const rawHlData = await hyperLinkLoader();
+            const hlMod = await hyperLinkLoader();
+            const rawHlData = (hlMod.default ?? hlMod) as Record<string, HyperlinkData>;
 
             for (const [key, value] of Object.entries(rawHlData)) {
                 const parts = key.split(".");
