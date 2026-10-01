@@ -5,7 +5,7 @@
     import BannerModal from "$lib/components/modals/BannerModal.svelte";
     import { banners } from "$lib/data/banners.js";
     import { rawEvents } from "$lib/data/timeline";
-    import { t } from "$lib/i18n.js";
+    import { t } from "$lib/i18n";
     import { currentUiLocale, normalizeLocale } from "$lib/stores/locale.js";
     import { onDestroy, onMount } from "svelte";
 

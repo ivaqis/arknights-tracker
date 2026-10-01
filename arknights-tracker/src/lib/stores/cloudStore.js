@@ -6,7 +6,7 @@ import { signInWithPopup, signOut, onAuthStateChanged } from "firebase/auth";
 import { doc, getDoc, setDoc, serverTimestamp } from "firebase/firestore";
 import { logEvent } from "firebase/analytics";
 import { accountStore } from "$lib/stores/accounts";
-import { t } from "$lib/i18n.js";
+import { t } from "$lib/i18n";
 import { addNotification } from "$lib/stores/notifications";
 import { manualPotentials } from "$lib/stores/potentials";
 import { weaponEssences } from "$lib/stores/weaponEssences";

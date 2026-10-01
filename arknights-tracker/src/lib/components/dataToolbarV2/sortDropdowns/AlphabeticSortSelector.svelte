@@ -1,7 +1,7 @@
 <script lang="ts">
     import { LocaleOrder } from "$lib/classes/comparators/LocaleOrder";
     import Icon from "$lib/components/Icon.svelte";
-    import { t } from "$lib/i18n.js";
+    import { t } from "$lib/i18n";
 
     export let selectedSort: LocaleOrder;
 

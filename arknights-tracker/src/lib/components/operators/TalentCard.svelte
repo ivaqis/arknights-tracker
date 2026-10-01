@@ -1,5 +1,5 @@
 <script>
-    import { t } from "$lib/i18n.js";
+    import { t } from "$lib/i18n";
     import { parseRichText, hyperlinkAction } from "$lib/utils/richText.js";
     
     import ItemCard from "$lib/components/cards/ItemCard.svelte";

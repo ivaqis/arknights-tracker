@@ -1,7 +1,7 @@
 <script>
   import { createEventDispatcher } from "svelte";
   import { scale } from "svelte/transition";
-  import { t } from "$lib/i18n.js";
+  import { t } from "$lib/i18n";
   import { browser } from "$app/environment";
   import { addNotification } from "$lib/stores/notifications";
 

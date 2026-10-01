@@ -1,7 +1,7 @@
 <script>
   import { onMount } from "svelte";
   import { fade, fly } from "svelte/transition";
-  import { t } from "$lib/i18n.js";
+  import { t } from "$lib/i18n";
 
   import Button from "$lib/components/Button.svelte";
 

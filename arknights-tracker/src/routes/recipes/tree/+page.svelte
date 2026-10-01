@@ -48,7 +48,7 @@
     import { manualCraftDataStorage } from "$lib/dataStorages/crafts/manualCraftDataStorage";
     import { gasEnvStorage } from "$lib/dataStorages/gasEnv/gasEnvStorage";
     import { itemStorage } from "$lib/dataStorages/items/itemStorage";
-    import { t } from "$lib/i18n.js";
+    import { t } from "$lib/i18n";
     import { getRecipeTreeUrlBuilding, getRecipeTreeUrlCraft, getRecipeTreeUrlItem } from "$lib/utils/linkUtils";
 
     export let data;
