@@ -1,15 +1,12 @@
 import type { ExpressionToken } from "$lib/classes/richText/expressions/interpreter/ExpressionToken";
-import type {
-    ExpressionVariableResolver
-} from "$lib/classes/richText/expressions/interpreter/ExpressionVariableResolver";
 
 export class ExpressionParser {
-    private readonly _getValueFn: ExpressionVariableResolver;
+    private readonly _getValueFn: (key: string) => number;
     private readonly _tokens: readonly ExpressionToken[];
 
     private _index: number = 0;
 
-    public constructor(getValueFn: ExpressionVariableResolver, tokens: readonly ExpressionToken[]) {
+    public constructor(getValueFn: (key: string) => number, tokens: readonly ExpressionToken[]) {
         this._getValueFn = getValueFn;
         this._tokens = tokens;
     }

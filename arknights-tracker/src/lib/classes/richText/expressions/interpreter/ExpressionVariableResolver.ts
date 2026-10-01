@@ -1,1 +1,1 @@
-export type ExpressionVariableResolver = (key: string) => number;
+export type ExpressionVariableResolver = (key: string) => number | string;
