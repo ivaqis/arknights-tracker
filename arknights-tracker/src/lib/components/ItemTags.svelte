@@ -1,5 +1,5 @@
 <script>
-    import { t } from "$lib/i18n.js";
+    import { t } from "$lib/i18n";
     import { currencies } from "$lib/data/items/currencies.js";
     import { progression } from "$lib/data/items/progression.js";
     import { items } from "$lib/data/items/items";

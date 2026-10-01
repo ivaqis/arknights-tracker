@@ -3039,12 +3039,12 @@
     },
     "buff_common_heal_moss_1": {
       "triggerheal": "Restoring HP/s",
-      "duration": "Duration (s)"
+      "duration": "Duration"
     },
     "buff_common_heal_moss_2": {
       "triggerheal": "Restoring HP/s",
       "triggerheal2": "Restoring HP%/s",
-      "duration": "Duration (s)"
+      "duration": "Duration"
     },
     "buff_custom_revive_1": {
       "value": "Instant Restoring HP%"
@@ -3054,59 +3054,59 @@
     },
     "buff_common_def_buff_potion_1": {
       "value": "DEF%",
-      "duration": "Duration (s)"
+      "duration": "Duration"
     },
     "buff_common_def_buff_potion_2": {
       "value": "DEF",
-      "duration": "Duration (s)"
+      "duration": "Duration"
     },
     "buff_common_def_buff_potion_3": {
       "value": "DEF%",
-      "duration": "Duration (s)"
+      "duration": "Duration"
     },
     "buff_common_resis_up_potion_1": {
       "value": "Incoming DMG multiplier",
-      "duration": "Duration (s)"
+      "duration": "Duration"
     },
     "buff_common_dmg_up_potion_1": {
       "value": "All DMG Dealt",
-      "duration": "Duration (s)"
+      "duration": "Duration"
     },
     "buff_common_phydmg_up_potion_1": {
       "value": "Physical DMG Dealt",
-      "duration": "Duration (s)"
+      "duration": "Duration"
     },
     "buff_common_mainattri_up_potion_1": {
       "value": "All Attributes",
-      "duration": "Duration (s)"
+      "duration": "Duration"
     },
     "buff_common_atk_buff_potion_1": {
       "value": "ATK%",
-      "duration": "Duration (s)"
+      "duration": "Duration"
     },
     "buff_common_atk_buff_potion_2": {
       "value": "ATK",
-      "duration": "Duration (s)"
+      "duration": "Duration"
     },
     "buff_common_ctr_buff_potion_1": {
       "value": "Critical Rate",
-      "duration": "Duration (s)"
+      "duration": "Duration"
     },
     "buff_common_cdr_buff_potion_1": {
       "value": "Combo Skill CD multiplier",
-      "duration": "Duration (s)"
+      "duration": "Duration"
     },
     "buff_common_usprt_buff_potion_1": {
       "value": "Ultimate Gain Efficiency",
-      "duration": "Duration (s)"
+      "duration": "Duration"
     },
     "buff_common_healrt_buff_potion_1": {
       "value": "Treatment",
-      "duration": "Duration (s)"
+      "duration": "Duration"
     },
     "buff_common_healrt_buff_potion_2": {
       "value": "Treatment Received",
-      "duration": "Duration (s)"
+      "duration": "Duration"
     },
     "buff_common_dispel_potion": {}
   },
@@ -3120,12 +3120,12 @@
     },
     "buff_common_heal_moss_1": {
       "triggerheal": "Rest. HP/s",
-      "duration": "Duration (s)"
+      "duration": "Duration"
     },
     "buff_common_heal_moss_2": {
       "triggerheal": "Rest. HP/s",
       "triggerheal2": "Rest. HP%/s",
-      "duration": "Duration (s)"
+      "duration": "Duration"
     },
     "buff_custom_revive_1": {
       "value": "Inst. Rest. HP%"
@@ -3135,76 +3135,165 @@
     },
     "buff_common_def_buff_potion_1": {
       "value": "DEF%",
-      "duration": "Duration (s)"
+      "duration": "Duration"
     },
     "buff_common_def_buff_potion_2": {
       "value": "DEF",
-      "duration": "Duration (s)"
+      "duration": "Duration"
     },
     "buff_common_def_buff_potion_3": {
       "value": "DEF%",
-      "duration": "Duration (s)"
+      "duration": "Duration"
     },
     "buff_common_resis_up_potion_1": {
       "value": "Incoming DMG mult.",
-      "duration": "Duration (s)"
+      "duration": "Duration"
     },
     "buff_common_dmg_up_potion_1": {
       "value": "All DMG Dealt",
-      "duration": "Duration (s)"
+      "duration": "Duration"
     },
     "buff_common_phydmg_up_potion_1": {
       "value": "Physical DMG Dealt",
-      "duration": "Duration (s)"
+      "duration": "Duration"
     },
     "buff_common_mainattri_up_potion_1": {
       "value": "All Attributes",
-      "duration": "Duration (s)"
+      "duration": "Duration"
     },
     "buff_common_atk_buff_potion_1": {
       "value": "ATK%",
-      "duration": "Duration (s)"
+      "duration": "Duration"
     },
     "buff_common_atk_buff_potion_2": {
       "value": "ATK",
-      "duration": "Duration (s)"
+      "duration": "Duration"
     },
     "buff_common_ctr_buff_potion_1": {
       "value": "Critical Rate",
-      "duration": "Duration (s)"
+      "duration": "Duration"
     },
     "buff_common_cdr_buff_potion_1": {
       "value": "Combo Skill CD mult.",
-      "duration": "Duration (s)"
+      "duration": "Duration"
     },
     "buff_common_usprt_buff_potion_1": {
       "value": "Ultimate Gain Eff.",
-      "duration": "Duration (s)"
+      "duration": "Duration"
     },
     "buff_common_healrt_buff_potion_1": {
       "value": "Treatment",
-      "duration": "Duration (s)"
+      "duration": "Duration"
     },
     "buff_common_healrt_buff_potion_2": {
       "value": "Treatment Received",
-      "duration": "Duration (s)"
+      "duration": "Duration"
+    },
+    "buff_common_dispel_potion": {}
+  },
+  "buffValues": {
+    "buff_common_heal_potion_1": {
+      "value": "{value:0}"
+    },
+    "buff_common_heal_potion_2": {
+      "value": "{value:0}",
+      "value2": "{value2:0.##%}"
+    },
+    "buff_common_heal_moss_1": {
+      "triggerheal": "{triggerheal:0}",
+      "duration": "{duration:0} s"
+    },
+    "buff_common_heal_moss_2": {
+      "triggerheal": "{triggerheal:0}",
+      "triggerheal2": "{triggerheal2:0.##%}",
+      "duration": "{duration:0} s"
+    },
+    "buff_custom_revive_1": {
+      "value": "{value:0.##%}"
+    },
+    "buff_common_ultsp_potion_1": {
+      "value": "{value:0.##%}"
+    },
+    "buff_common_def_buff_potion_1": {
+      "value": "+{value:0.##%}",
+      "duration": "{duration:0} s"
+    },
+    "buff_common_def_buff_potion_2": {
+      "value": "+{value:0}",
+      "duration": "{duration:0} s"
+    },
+    "buff_common_def_buff_potion_3": {
+      "value": "{value:0.##%}",
+      "duration": "{duration:0} s"
+    },
+    "buff_common_resis_up_potion_1": {
+      "value": "x{value:0.###}",
+      "duration": "{duration:0} s"
+    },
+    "buff_common_dmg_up_potion_1": {
+      "value": "+{value:0.##%}",
+      "duration": "{duration:0} s"
+    },
+    "buff_common_phydmg_up_potion_1": {
+      "value": "+{value:0.##%}",
+      "duration": "{duration:0} s"
+    },
+    "buff_common_mainattri_up_potion_1": {
+      "value": "+{value:0}",
+      "duration": "{duration:0} s"
+    },
+    "buff_common_atk_buff_potion_1": {
+      "value": "+{value:0.##%}",
+      "duration": "{duration:0} s"
+    },
+    "buff_common_atk_buff_potion_2": {
+      "value": "+{value:0}",
+      "duration": "{duration:0} s"
+    },
+    "buff_common_ctr_buff_potion_1": {
+      "value": "+{value:0.##%}",
+      "duration": "{duration:0} s"
+    },
+    "buff_common_cdr_buff_potion_1": {
+      "value": "x{value:0.###}",
+      "duration": "{duration:0} s"
+    },
+    "buff_common_usprt_buff_potion_1": {
+      "value": "+{value:0.##%}",
+      "duration": "{duration:0} s"
+    },
+    "buff_common_healrt_buff_potion_1": {
+      "value": "+{value:0.##%}",
+      "duration": "{duration:0} s"
+    },
+    "buff_common_healrt_buff_potion_2": {
+      "value": "+{value:0.##%}",
+      "duration": "{duration:0} s"
     },
     "buff_common_dispel_potion": {}
   },
   "tacticalTitle": {
     "condType": "Condition Type",
-    "castTime": "Cast Time (s)",
+    "castTime": "Cast Time",
     "castCount": "Cast Count",
     "castToMainCount": "Cast To Main Count",
     "castToMainCountShort": "Cast To Main Count",
-    "cooldown": "Cooldown (s)",
-    "recoverTime": "Recover Time (s)",
+    "cooldown": "Cooldown",
+    "recoverTime": "Recover Time",
     "recoverUpperCount": "Recover Upper Count"
+  },
+  "tacticalValues": {
+    "castTime": "{value:0.##} s",
+    "castCount": "{value:0}",
+    "castToMainCount": "{value:0}",
+    "cooldown": "{value:0.##} s",
+    "recoverTime": "{value:0.##} s",
+    "recoverUpperCount": "{value:0}"
   },
   "tacticalZero": {
     "castCount": "Unlimited",
     "castToMainCount": "Unlimited",
-    "castCooldown": "None",
+    "cooldown": "None",
     "recoverTime": "None",
     "recoverUpperCount": "0"
   },

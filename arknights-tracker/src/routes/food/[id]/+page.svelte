@@ -5,7 +5,7 @@
     import Icon from "$lib/components/Icon.svelte";
     import NotFound from "$lib/components/NotFound.svelte";
     import { foodStorage } from "$lib/dataStorages/items/foodStorage";
-    import { t } from "$lib/i18n.js";
+    import { t } from "$lib/i18n";
 
     export let data;
 

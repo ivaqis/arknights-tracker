@@ -1,6 +1,6 @@
 <script>
     import { createEventDispatcher } from "svelte";
-    import { t } from "$lib/i18n.js";
+    import { t } from "$lib/i18n";
     import Icon from "$lib/components/Icon.svelte";
     import Modal from "$lib/components/modals/Modal.svelte";
 

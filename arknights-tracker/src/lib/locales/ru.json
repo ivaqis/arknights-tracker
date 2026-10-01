@@ -3044,12 +3044,12 @@
     },
     "buff_common_heal_moss_1": {
       "triggerheal": "Восстановление ОЗ/с",
-      "duration": "Длительность (с)"
+      "duration": "Длительность"
     },
     "buff_common_heal_moss_2": {
       "triggerheal": "Восстановление ОЗ/с",
       "triggerheal2": "Восстановление ОЗ%/с",
-      "duration": "Длительность (с)"
+      "duration": "Длительность"
     },
     "buff_custom_revive_1": {
       "value": "Мгновенное восстановление ОЗ%"
@@ -3059,59 +3059,59 @@
     },
     "buff_common_def_buff_potion_1": {
       "value": "ЗЩТ%",
-      "duration": "Длительность (с)"
+      "duration": "Длительность"
     },
     "buff_common_def_buff_potion_2": {
       "value": "ЗЩТ",
-      "duration": "Длительность (с)"
+      "duration": "Длительность"
     },
     "buff_common_def_buff_potion_3": {
       "value": "ЗЩТ%",
-      "duration": "Длительность (с)"
+      "duration": "Длительность"
     },
     "buff_common_resis_up_potion_1": {
       "value": "Множитель входящего УРН",
-      "duration": "Длительность (с)"
+      "duration": "Длительность"
     },
     "buff_common_dmg_up_potion_1": {
       "value": "Наносимый УРН",
-      "duration": "Длительность (с)"
+      "duration": "Длительность"
     },
     "buff_common_phydmg_up_potion_1": {
       "value": "Наносимый физический УРН",
-      "duration": "Длительность (с)"
+      "duration": "Длительность"
     },
     "buff_common_mainattri_up_potion_1": {
       "value": "Все показатели",
-      "duration": "Длительность (с)"
+      "duration": "Длительность"
     },
     "buff_common_atk_buff_potion_1": {
       "value": "АТК%",
-      "duration": "Длительность (с)"
+      "duration": "Длительность"
     },
     "buff_common_atk_buff_potion_2": {
       "value": "АТК",
-      "duration": "Длительность (с)"
+      "duration": "Длительность"
     },
     "buff_common_ctr_buff_potion_1": {
       "value": "Шанс крит. удара",
-      "duration": "Длительность (с)"
+      "duration": "Длительность"
     },
     "buff_common_cdr_buff_potion_1": {
       "value": "Множитель перезарядки комбонавыка",
-      "duration": "Длительность (с)"
+      "duration": "Длительность"
     },
     "buff_common_usprt_buff_potion_1": {
       "value": "Восстановление суперэнергии",
-      "duration": "Длительность (с)"
+      "duration": "Длительность"
     },
     "buff_common_healrt_buff_potion_1": {
       "value": "Лечение",
-      "duration": "Длительность (с)"
+      "duration": "Длительность"
     },
     "buff_common_healrt_buff_potion_2": {
       "value": "Получаемое лечение",
-      "duration": "Длительность (с)"
+      "duration": "Длительность"
     },
     "buff_common_dispel_potion": {}
   },
@@ -3125,12 +3125,12 @@
     },
     "buff_common_heal_moss_1": {
       "triggerheal": "Восст. ОЗ/с",
-      "duration": "Длительность (с)"
+      "duration": "Длительность"
     },
     "buff_common_heal_moss_2": {
       "triggerheal": "Восст. ОЗ/с",
       "triggerheal2": "Восст. ОЗ%/с",
-      "duration": "Длительность (с)"
+      "duration": "Длительность"
     },
     "buff_custom_revive_1": {
       "value": "Мгнов. восст. ОЗ%"
@@ -3140,71 +3140,131 @@
     },
     "buff_common_def_buff_potion_1": {
       "value": "ЗЩТ%",
-      "duration": "Длительность (с)"
+      "duration": "Длительность"
     },
     "buff_common_def_buff_potion_2": {
       "value": "ЗЩТ",
-      "duration": "Длительность (с)"
+      "duration": "Длительность"
     },
     "buff_common_def_buff_potion_3": {
       "value": "ЗЩТ%",
-      "duration": "Длительность (с)"
+      "duration": "Длительность"
     },
     "buff_common_resis_up_potion_1": {
       "value": "Множ. входящего УРН",
-      "duration": "Длительность (с)"
+      "duration": "Длительность"
     },
     "buff_common_dmg_up_potion_1": {
       "value": "Наносимый УРН",
-      "duration": "Длительность (с)"
+      "duration": "Длительность"
     },
     "buff_common_phydmg_up_potion_1": {
       "value": "Наносимый физ. УРН",
-      "duration": "Длительность (с)"
+      "duration": "Длительность"
     },
     "buff_common_mainattri_up_potion_1": {
       "value": "Все показатели",
-      "duration": "Длительность (с)"
+      "duration": "Длительность"
     },
     "buff_common_atk_buff_potion_1": {
       "value": "АТК%",
-      "duration": "Длительность (с)"
+      "duration": "Длительность"
     },
     "buff_common_atk_buff_potion_2": {
       "value": "АТК",
-      "duration": "Длительность (с)"
+      "duration": "Длительность"
     },
     "buff_common_ctr_buff_potion_1": {
       "value": "Шанс крит. удара",
-      "duration": "Длительность (с)"
+      "duration": "Длительность"
     },
     "buff_common_cdr_buff_potion_1": {
       "value": "Множ. перезарядки комбонавыка",
-      "duration": "Длительность (с)"
+      "duration": "Длительность"
     },
     "buff_common_usprt_buff_potion_1": {
       "value": "Восст. суперэнергии",
-      "duration": "Длительность (с)"
+      "duration": "Длительность"
     },
     "buff_common_healrt_buff_potion_1": {
       "value": "Лечение",
-      "duration": "Длительность (с)"
+      "duration": "Длительность"
     },
     "buff_common_healrt_buff_potion_2": {
       "value": "Получаемое лечение",
-      "duration": "Длительность (с)"
+      "duration": "Длительность"
+    },
+    "buff_common_dispel_potion": {}
+  },
+  "buffValues": {
+    "buff_common_heal_potion_1": {},
+    "buff_common_heal_potion_2": {},
+    "buff_common_heal_moss_1": {
+      "duration": "{duration:0} с"
+    },
+    "buff_common_heal_moss_2": {
+      "duration": "{duration:0} с"
+    },
+    "buff_custom_revive_1": {},
+    "buff_common_ultsp_potion_1": {},
+    "buff_common_def_buff_potion_1": {
+      "duration": "{duration:0} с"
+    },
+    "buff_common_def_buff_potion_2": {
+      "duration": "{duration:0} с"
+    },
+    "buff_common_def_buff_potion_3": {
+      "duration": "{duration:0} с"
+    },
+    "buff_common_resis_up_potion_1": {
+      "duration": "{duration:0} с"
+    },
+    "buff_common_dmg_up_potion_1": {
+      "duration": "{duration:0} с"
+    },
+    "buff_common_phydmg_up_potion_1": {
+      "duration": "{duration:0} с"
+    },
+    "buff_common_mainattri_up_potion_1": {
+      "duration": "{duration:0} с"
+    },
+    "buff_common_atk_buff_potion_1": {
+      "duration": "{duration:0} с"
+    },
+    "buff_common_atk_buff_potion_2": {
+      "duration": "{duration:0} с"
+    },
+    "buff_common_ctr_buff_potion_1": {
+      "duration": "{duration:0} с"
+    },
+    "buff_common_cdr_buff_potion_1": {
+      "duration": "{duration:0} с"
+    },
+    "buff_common_usprt_buff_potion_1": {
+      "duration": "{duration:0} с"
+    },
+    "buff_common_healrt_buff_potion_1": {
+      "duration": "{duration:0} с"
+    },
+    "buff_common_healrt_buff_potion_2": {
+      "duration": "{duration:0} с"
     },
     "buff_common_dispel_potion": {}
   },
   "tacticalTitle": {
     "condType": "Тип условия",
-    "castTime": "Время использования (с)",
+    "castTime": "Время использования",
     "castCount": "Кол-во использований",
     "castToMainCount": "Кол-во использований на управляемом оперативнике",
     "castToMainCountShort": "Кол-во исп. на упр-м оперативнике",
-    "cooldown": "Перезарядка (с)",
-    "recoverTime": "Время восстановления (с)",
+    "cooldown": "Перезарядка",
+    "recoverTime": "Время восстановления",
     "recoverUpperCount": "Кол-во восстановленных предметов"
+  },
+  "tacticalValues": {
+    "castTime": "{value:0.##} с",
+    "cooldown": "{value:0.##} с",
+    "recoverTime": "{value:0.##} с"
   },
   "tacticalZero": {
     "castCount": "Неограниченно",

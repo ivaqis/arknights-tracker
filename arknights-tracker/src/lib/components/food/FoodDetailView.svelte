@@ -94,7 +94,11 @@
         equipDetailLocale = locales[itemId];
     }
 
-    function parseFoodDesc(food: IBoardable, desc: string): string {
+    function parseFoodDesc(desc: string): string {
+        return parseBoardableDesc(item, desc);
+    }
+
+    function parseBoardableDesc(food: IBoardable, desc: string): string {
         let raw = desc;
 
         const parser = new RichTextParamParser(key => food.getValue(key));
@@ -188,7 +192,7 @@
                             use:hyperlinkAction
                         >
 
-                            {@html parseRichText(parseFoodDesc(item, foodDetailLocale.desc))}
+                            {@html parseRichText(parseFoodDesc(foodDetailLocale.desc))}
 
                         </div>
 
@@ -228,7 +232,7 @@
                                                 <span class="text-[14px] text-gray-700 dark:text-[#A0A0A0]">
                                                     - {$t(entry.i18nKey)}:
                                                     <span class="text-[#22bbff] font-bold">
-                                                        {entry.getFormattedValue()}
+                                                        {entry.getFormattedValue($t)}
                                                     </span>
                                                 </span>
 
@@ -269,7 +273,7 @@
                                 use:hyperlinkAction
                             >
 
-                                {@html parseRichText(parseFoodDesc(tactical, equipDetailLocale.extraDesc))}
+                                {@html parseRichText(parseBoardableDesc(tactical, equipDetailLocale.extraDesc))}
 
                             </div>
 

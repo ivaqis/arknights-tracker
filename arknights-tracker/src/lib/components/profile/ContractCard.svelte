@@ -1,5 +1,5 @@
 <script>
-    import { t } from "$lib/i18n.js";
+    import { t } from "$lib/i18n";
     import { equipment } from "$lib/data/items/equipment.js";
     import { getRarityColor } from "$lib/utils/colorUtils.js";
     import { getEquipTier } from "$lib/utils/profileUtils.js";

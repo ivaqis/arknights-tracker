@@ -9,7 +9,7 @@
     import EquipTypeParamBox from "$lib/components/dataToolbarV2/paramBoxes/EquipTypeParamBox.svelte";
     import RarityParamBox from "$lib/components/dataToolbarV2/paramBoxes/RarityParamBox.svelte";
     import TextParamBox from "$lib/components/dataToolbarV2/paramBoxes/TextParamBox.svelte";
-    import { t } from "$lib/i18n.js";
+    import { t } from "$lib/i18n";
 
     export let filters = {};
 
