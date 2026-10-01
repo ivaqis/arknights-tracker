@@ -13,6 +13,8 @@
     import { enemies } from "$lib/data/enemies";
     import { banners } from "$lib/data/banners";
     import { rawEvents } from "$lib/data/timeline";
+    import { achievements } from "$lib/data/achievements";
+    import AchievementCard from "$lib/components/achievements/AchievementCard.svelte";
 
     import Select from "$lib/components/Select.svelte";
     import WeaponCard from "$lib/components/cards/WeaponCard.svelte";
@@ -40,6 +42,38 @@
         $selectedVersionStore = versionOptions[0].value;
     }
 
+    const latestVersion = [...changelogData].sort((a, b) =>
+        b.version.localeCompare(a.version, undefined, { numeric: true }),
+    )[0]?.version || '1.0';
+
+    const achievementLocaleModules = import.meta.glob(
+        '/src/lib/locales/*/achievements.json'
+    );
+    let achievementsLocaleData = {};
+
+    async function loadAchievementsLocale(localeCode) {
+        let safeLang = (localeCode || 'ru').toLowerCase().replace('-', '');
+        if (safeLang.startsWith('en')) safeLang = 'en';
+        else if (safeLang.startsWith('ru')) safeLang = 'ru';
+
+        const path = `/src/lib/locales/${safeLang}/achievements.json`;
+        const fallbackPath = '/src/lib/locales/en/achievements.json';
+
+        const loader = achievementLocaleModules[path] || achievementLocaleModules[fallbackPath];
+        if (loader) {
+            try {
+                const mod = await loader();
+                achievementsLocaleData = mod.default || mod;
+            } catch (e) {
+                console.error('Failed to load achievements locale', e);
+            }
+        }
+    }
+
+    $: if ($currentLocale) {
+        loadAchievementsLocale($currentLocale);
+    }
+
     $: currentVersionData = changelogData.find(
         (v) => v.version === $selectedVersionStore,
     ) || {
@@ -47,6 +81,7 @@
         weapons: [],
         equipment: [],
         enemies: [],
+        achievements: [],
     };
 
     $: displayCharacters = (currentVersionData.characters || []).map((id) => ({
@@ -68,6 +103,10 @@
         id,
         ...enemies[id],
     }));
+
+    $: displayAchievements = (currentVersionData.achievements || [])
+        .map((id) => achievements[id])
+        .filter(Boolean);
 
     $: displayBanners = banners
         .filter(
@@ -469,7 +508,33 @@
             </div>
         {/if}
 
-        {#if displayBanners.length === 0 && displayCharacters.length === 0 && displayWeapons.length === 0 && displayEquipment.length === 0 && displayEvents.length === 0}
+        {#if displayAchievements.length > 0}
+            <div class="flex flex-col gap-4 animate-fadeIn mt-4">
+                <h3
+                    class="text-2xl font-bold text-[#21272C] dark:text-[#E4E4E4] font-sdk flex items-center gap-2"
+                >
+                    {$t("pages.achievements")}
+                </h3>
+
+                <div
+                    class="grid gap-4"
+                    style="grid-template-columns: repeat(auto-fill, minmax(min(100%, 445px), 1fr));"
+                >
+                    {#each displayAchievements as ach (ach.id)}
+                        <AchievementCard
+                            achievement={ach}
+                            localeData={achievementsLocaleData[ach.id]}
+                            isNew={false}
+                            {latestVersion}
+                            addedVersion={$selectedVersionStore}
+                            hideAddedVersion={true}
+                        />
+                    {/each}
+                </div>
+            </div>
+        {/if}
+
+        {#if displayBanners.length === 0 && displayCharacters.length === 0 && displayWeapons.length === 0 && displayEquipment.length === 0 && displayEnemies.length === 0 && displayEvents.length === 0 && displayAchievements.length === 0}
             <div
                 class="text-center py-20 text-gray-400 italic flex flex-col items-center justify-center bg-gray-50 dark:bg-[#2C2C2C] rounded-2xl border border-dashed border-gray-200 dark:border-[#444] animate-fadeIn"
             >
@@ -481,3 +546,4 @@
         {/if}
     </div>
 </div>
+

@@ -13,8 +13,10 @@
 
     export let achievement: AchievementData;
     export let localeData: any = null;
+    export let isNew: boolean | undefined = undefined;
     export let latestVersion: string = '';
     export let addedVersion: string = '1.0';
+    export let hideAddedVersion: boolean = false;
 
     interface SwitcherItem {
         id: string;
@@ -25,7 +27,7 @@
 
     $: tracked = $achievementStore[achievement.id] || { level: 0, plated: false };
     $: isCompleted = isAchievementFullyCompleted(achievement, tracked);
-    $: isNew = latestVersion ? addedVersion === latestVersion : false;
+    $: computedIsNew = isNew !== undefined ? isNew : (latestVersion ? addedVersion === latestVersion : false);
 
     $: sortedLevels = Object.keys(achievement.levelInfos || {})
         .map(Number)
@@ -140,7 +142,7 @@
         </div>
     {/if}
 
-    {#if isNew}
+    {#if computedIsNew}
         <div
             class="absolute right-0 mr-[-3px] top-4 md:top-5 h-[16px] flex items-stretch z-30 pointer-events-none drop-shadow-sm select-none"
         >
@@ -200,7 +202,7 @@
         </div>
 
         <div class="flex-1 min-w-0 w-full">
-            <div class="flex flex-wrap items-center gap-2 {isNew ? 'pr-12' : ''}">
+            <div class="flex flex-wrap items-center gap-2 {computedIsNew ? 'pr-12' : ''}">
                 <h4 class="text-white text-base md:text-lg font-bold leading-tight">
                     {localeData?.name || achievement.id}
                 </h4>
@@ -279,14 +281,16 @@
         </div>
     </div>
 
-    <div class="relative z-10 flex justify-end mt-3 pt-2">
-        <a
-            href="/changelog?version={addedVersion}"
-            class="text-[11px] md:text-xs text-gray-500 hover:text-gray-300 transition-colors no-underline"
-        >
-            {$t('systemNames.addedInVersion', { version: addedVersion })}
-        </a>
-    </div>
+    {#if !hideAddedVersion}
+        <div class="relative z-10 flex justify-end mt-3 pt-2">
+            <a
+                href="/changelog?version={addedVersion}"
+                class="text-[11px] md:text-xs text-gray-500 hover:text-gray-300 transition-colors no-underline"
+            >
+                {$t('systemNames.addedInVersion', { version: addedVersion })}
+            </a>
+        </div>
+    {/if}
 </div>
 
 <style>
