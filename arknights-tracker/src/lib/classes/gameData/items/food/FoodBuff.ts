@@ -26,7 +26,8 @@ export class FoodBuff implements IFoodBuff {
             entry.key,
             entry.value,
             `buffs.${buffId}.${entry.key}`,
-            formats?.[entry.key]
+            `buffValues.${buffId}.${entry.key}`,
+            formats?.[entry.key].display ?? true
         ));
     }
 

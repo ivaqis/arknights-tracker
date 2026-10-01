@@ -1,16 +1,18 @@
 import { BlackboardEntry } from "$lib/classes/blackboard/BlackboardEntry";
 import type { ITextableBlackboardEntry } from "$lib/classes/blackboard/ITextableBlackboardEntry";
-import type { BbValueFormat } from "$lib/data/types/BbValueFormat";
+import type { LocalizationFn } from "$lib/i18n";
 
 export class TextableBlackboardEntry extends BlackboardEntry implements ITextableBlackboardEntry {
     private readonly _i18nKey: string;
-    private readonly _format: BbValueFormat | null;
+    private readonly _formatKey: string | null;
+    private readonly _displayable: boolean;
 
-    public constructor(key: string, value: number, i18nKey: string, format?: BbValueFormat | null) {
+    public constructor(key: string, value: number, i18nKey: string, formatKey?: string | null, display: boolean = true) {
         super(key, value);
         
         this._i18nKey = i18nKey;
-        this._format = format ?? null;
+        this._formatKey = formatKey ?? null;
+        this._displayable = display;
     }
 
     public get i18nKey(): string {
@@ -18,24 +20,14 @@ export class TextableBlackboardEntry extends BlackboardEntry implements ITextabl
     }
 
     public get displayable(): boolean {
-        if (this._format === null || this._format.display === undefined) {
-            return true;
-        }
-
-        return this._format.display;
+        return this._displayable;
     }
 
-    public getFormattedValue(): string {
-        if (!this._format) {
+    public getFormattedValue(localeFn: LocalizationFn): string {
+        if (!this._formatKey) {
             return String(this.value);
         }
 
-        const formatter = new Intl.NumberFormat("en-US", this._format.intl);
-
-        const formatted = formatter.format(this.value).replace(",", " ");
-        const prefix = this._format.prefix ?? "";
-        const postfix = this._format.postfix ?? "";
-
-        return `${prefix}${formatted}${postfix}`;
+        return localeFn(this._formatKey, { [this.key]: this.value });
     }
 }

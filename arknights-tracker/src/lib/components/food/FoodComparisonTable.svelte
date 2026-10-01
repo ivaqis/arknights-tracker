@@ -162,8 +162,17 @@
                     return -1 * reverseMultiplier;
                 }
 
-                const valueA = tacticalA[sortTacticalField];
-                const valueB = tacticalB[sortTacticalField];
+                let valueA = tacticalA[sortTacticalField];
+                let valueB = tacticalB[sortTacticalField];
+
+                if (sortTacticalField === "castToMainCount" || sortTacticalField === "castCount") {
+                    if (valueA === 0) {
+                        valueA = +Infinity;
+                    }
+                    if (valueB === 0) {
+                        valueB = +Infinity;
+                    }
+                }
 
                 return (valueB - valueA) * reverseMultiplier;
             }
@@ -363,7 +372,7 @@
                             {#if entry}
 
                                 <div class="p-2 text-right">
-                                    {entry.getFormattedValue()}
+                                    {entry.getFormattedValue($t)}
                                 </div>
 
                             {:else}

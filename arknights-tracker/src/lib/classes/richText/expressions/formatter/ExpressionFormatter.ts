@@ -18,6 +18,7 @@ export class ExpressionFormatter {
         let isPercent = false;
         let integerCount = 0;
         let decimalCount = 0;
+        let decimalOptionalCount = 0;
 
         let isDecimalPart = false;
 
@@ -41,6 +42,14 @@ export class ExpressionFormatter {
                 continue;
             }
 
+            if (c === "#") {
+                if (isDecimalPart) {
+                    decimalOptionalCount++;
+                }
+
+                continue;
+            }
+
             if (c === "%") {
                 isPercent = true;
 
@@ -54,7 +63,7 @@ export class ExpressionFormatter {
             style: isPercent ? "percent" : "decimal",
             minimumIntegerDigits: integerCount,
             minimumFractionDigits: decimalCount,
-            maximumFractionDigits: decimalCount,
+            maximumFractionDigits: decimalCount + decimalOptionalCount,
         };
     }
 

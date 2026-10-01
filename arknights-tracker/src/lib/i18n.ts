@@ -1,5 +1,4 @@
 import { RichTextParamParser } from "$lib/classes/richText/expressions/RichTextParamParser";
-import { logout } from "$lib/stores/cloudStore";
 import { currentLocale, currentUiLocale } from "$lib/stores/locale";
 import { derived, type Readable, type Writable, writable } from "svelte/store";
 
