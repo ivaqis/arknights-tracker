@@ -165,7 +165,7 @@ export function getImagePath(idOrName, variant = 'operator-icon') {
 
         case 'achievement':
         case 'achievement-icon':
-            return `/images/achievments/${withExt(name, 'png')}`;
+            return `/images/achievments/${withExt(name, 'webp')}`;
 
         case 'operator-icon':
         default:

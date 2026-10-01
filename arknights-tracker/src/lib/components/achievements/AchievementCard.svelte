@@ -140,6 +140,31 @@
         </div>
     {/if}
 
+    {#if isNew}
+        <div
+            class="absolute right-0 mr-[-3px] top-4 md:top-5 h-[16px] flex items-stretch z-30 pointer-events-none drop-shadow-sm select-none"
+        >
+            <div
+                class="w-[3px] mr-[1.5px] bg-[#FFC107]/85 -skew-x-[24deg]"
+            ></div>
+            <div
+                class="w-[3px] mr-[1.5px] bg-[#FFC107]/85 -skew-x-[24deg]"
+            ></div>
+            <div
+                class="relative bg-[#FFC107]/85 pl-0.5 pr-1 -skew-x-[24deg] flex items-center justify-center"
+            >
+                <div
+                    class="absolute left-[-4px] w-[8px] top-0 bottom-0"
+                ></div>
+                <span
+                    class="relative z-10 text-[#111111] font-black text-[9px] -skew-x-[-24deg] tracking-widest leading-none uppercase"
+                >
+                    NEW
+                </span>
+            </div>
+        </div>
+    {/if}
+
     <div class="relative z-10 flex flex-col md:flex-row gap-4 md:gap-5 items-start">
         <div class="flex flex-col items-center shrink-0 w-24 md:w-28">
             <div class="w-24 h-24 md:w-28 md:h-28 flex items-center justify-center relative">
@@ -175,37 +200,19 @@
         </div>
 
         <div class="flex-1 min-w-0 w-full">
-            <div class="flex items-start justify-between gap-2">
-                <div class="flex flex-wrap items-center gap-2">
-                    <h4 class="text-white text-base md:text-lg font-bold leading-tight">
-                        {localeData?.name || achievement.id}
-                    </h4>
+            <div class="flex flex-wrap items-center gap-2 {isNew ? 'pr-12' : ''}">
+                <h4 class="text-white text-base md:text-lg font-bold leading-tight">
+                    {localeData?.name || achievement.id}
+                </h4>
 
-                    {#if achievement.upgradable}
-                        <span class="badge-reforgable text-[11px] font-bold px-2 py-0.5 rounded tracking-wide">
-                            Reforgable
-                        </span>
-                    {:else if achievement.plateable}
-                        <span class="badge-trimmable text-[11px] font-bold px-2 py-0.5 rounded tracking-wide">
-                            Trimmable
-                        </span>
-                    {/if}
-                </div>
-
-                {#if isNew}
-                    <div class="flex items-stretch h-[16px] pointer-events-none shrink-0">
-                        <div class="w-[3px] mr-[1.5px] bg-[#FFC107]/85 -skew-x-[24deg]"></div>
-                        <div class="w-[3px] mr-[1.5px] bg-[#FFC107]/85 -skew-x-[24deg]"></div>
-                        <div
-                            class="relative bg-[#FFC107]/85 pl-1 pr-1.5 -skew-x-[24deg] flex items-center justify-center"
-                        >
-                            <span
-                                class="relative z-10 text-[#111111] font-black text-[9px] -skew-x-[-24deg] tracking-widest leading-none uppercase"
-                            >
-                                NEW
-                            </span>
-                        </div>
-                    </div>
+                {#if achievement.upgradable}
+                    <span class="badge-reforgable text-[11px] font-bold px-2 py-0.5 rounded tracking-wide">
+                        Reforgable
+                    </span>
+                {:else if achievement.plateable}
+                    <span class="badge-trimmable text-[11px] font-bold px-2 py-0.5 rounded tracking-wide">
+                        Trimmable
+                    </span>
                 {/if}
             </div>
 
@@ -277,7 +284,7 @@
             href="/changelog?version={addedVersion}"
             class="text-[11px] md:text-xs text-gray-500 hover:text-gray-300 transition-colors no-underline"
         >
-            Added in version {addedVersion}
+            {$t('systemNames.addedInVersion', { version: addedVersion })}
         </a>
     </div>
 </div>

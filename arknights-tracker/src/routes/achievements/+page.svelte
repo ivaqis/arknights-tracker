@@ -141,6 +141,10 @@
     });
 
     $: totalStats = getTotalProgress(achievements, $achievementStore);
+    $: categoriesWithProgress = sortedCategories.map((cat) => ({
+        ...cat,
+        stats: getCategoryProgress(cat.groupIds, achievements, $achievementStore)
+    }));
 
     $: filteredCategoriesWithGroups = (() => {
         const q = searchQuery.trim().toLowerCase();
@@ -261,16 +265,15 @@
 
     <div class="flex flex-col lg:flex-row items-start gap-6 w-full flex-1">
         <div class="w-full lg:w-[260px] xl:w-[280px] shrink-0 flex flex-col gap-2 lg:sticky lg:top-4 z-20">
-            {#each sortedCategories as cat (cat.id)}
-                {@const stats = getCategoryProgress(cat.groupIds, achievements, $achievementStore)}
+            {#each categoriesWithProgress as cat (cat.id)}
                 {@const isSelected = selectedCategoryId === cat.id}
                 {@const iconName = categoryIcons[cat.id] || 'achievement'}
 
                 <button
                     on:click={() => scrollToCategory(cat.id)}
-                    class="relative w-full text-left p-3 rounded-xl border transition-all flex items-center justify-between gap-3 select-none {isSelected
+                    class="relative w-full text-left p-3 rounded-xl border transition-all flex items-center justify-between gap-3 select-none overflow-hidden {isSelected
                         ? 'bg-[#2D2D2D] border-[#FFE145]/40 text-white shadow-lg'
-                        : 'bg-[#222222]/60 hover:bg-[#2A2A2A] border-transparent text-gray-400'}"
+                        : 'bg-[#222222]/60 hover:bg-[#2D2D2D] border-transparent text-gray-400'}"
                 >
                     {#if isSelected}
                         <div
@@ -292,13 +295,13 @@
                                 {$t(`achCategories.${cat.id}`)}
                             </span>
                             <span class="text-xs text-gray-400 font-nums">
-                                {stats.completed}/{stats.total} ({stats.percent}%)
+                                {cat.stats.completed}/{cat.stats.total} ({cat.stats.percent}%)
                             </span>
                         </div>
                     </div>
 
                     <div class="relative z-10 shrink-0 flex items-center">
-                        {#if stats.percent === 100 && stats.total > 0}
+                        {#if cat.stats.percent === 100 && cat.stats.total > 0}
                             <div class="w-5 h-5 rounded-full bg-[#FFE145]/20 flex items-center justify-center text-[#FFE145]">
                                 <Icon name="success" class="w-3.5 h-3.5" />
                             </div>
@@ -359,3 +362,4 @@
         </div>
     </div>
 </div>
+
