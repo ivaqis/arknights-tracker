@@ -91,6 +91,51 @@
 
     let isManualScrolling = false;
     let manualScrollTimeout: ReturnType<typeof setTimeout> | null = null;
+    let scrollRaf: number | null = null;
+
+    function handleScroll() {
+        if (isManualScrolling) return;
+        if (scrollRaf) return;
+
+        scrollRaf = requestAnimationFrame(() => {
+            scrollRaf = null;
+            if (isManualScrolling) return;
+
+            const allGroupIds: string[] = [];
+            for (const cat of filteredCategoriesWithGroups) {
+                for (const grp of cat.groups) {
+                    allGroupIds.push(grp.groupId);
+                }
+            }
+
+            if (allGroupIds.length === 0) return;
+
+            let currentGroupId = allGroupIds[0];
+
+            for (const gid of allGroupIds) {
+                const el = document.getElementById(gid);
+                if (!el) continue;
+                const rect = el.getBoundingClientRect();
+                if (rect.top <= 140) {
+                    currentGroupId = gid;
+                } else {
+                    break;
+                }
+            }
+
+            if (window.innerHeight + window.pageYOffset >= document.documentElement.scrollHeight - 50) {
+                currentGroupId = allGroupIds[allGroupIds.length - 1];
+            }
+
+            if (currentGroupId && currentGroupId !== selectedGroupId) {
+                selectedGroupId = currentGroupId;
+                const foundCat = sortedCategories.find(c => c.groupIds.includes(currentGroupId));
+                if (foundCat && foundCat.id !== selectedCategoryId) {
+                    selectedCategoryId = foundCat.id;
+                }
+            }
+        });
+    }
 
     function animateScrollTo(targetY: number) {
         isManualScrolling = true;
@@ -148,44 +193,14 @@
     onMount(() => {
         loadAchievementsLocale($currentLocale || 'ru');
 
-        const observer = new IntersectionObserver(
-            (entries) => {
-                if (isManualScrolling) return;
-                for (const entry of entries) {
-                    if (entry.isIntersecting) {
-                        const id = entry.target.id;
-                        if (id.startsWith('achv_type_')) {
-                            selectedCategoryId = id;
-                            const foundCat = sortedCategories.find(c => c.id === id);
-                            if (foundCat && (!selectedGroupId || !foundCat.groupIds.includes(selectedGroupId))) {
-                                selectedGroupId = foundCat.groupIds[0] || '';
-                            }
-                        } else if (id.startsWith('achv_group_')) {
-                            selectedGroupId = id;
-                            const foundCat = sortedCategories.find(c => c.groupIds.includes(id));
-                            if (foundCat) selectedCategoryId = foundCat.id;
-                        }
-                    }
-                }
-            },
-            { rootMargin: '-5% 0px -75% 0px' }
-        );
-
-        const updateObserver = () => {
-            for (const cat of sortedCategories) {
-                const el = document.getElementById(cat.id);
-                if (el) observer.observe(el);
-                for (const gid of cat.groupIds) {
-                    const grpEl = document.getElementById(gid);
-                    if (grpEl) observer.observe(grpEl);
-                }
-            }
-        };
-
-        setTimeout(updateObserver, 150);
+        window.addEventListener('scroll', handleScroll, { passive: true });
+        window.addEventListener('resize', handleScroll, { passive: true });
 
         return () => {
-            observer.disconnect();
+            window.removeEventListener('scroll', handleScroll);
+            window.removeEventListener('resize', handleScroll);
+            if (scrollRaf) cancelAnimationFrame(scrollRaf);
+            if (manualScrollTimeout) clearTimeout(manualScrollTimeout);
         };
     });
 
@@ -257,6 +272,17 @@
 
         return results;
     })();
+
+    $: {
+        const allFilteredGroupIds = filteredCategoriesWithGroups.flatMap(c => c.groups.map(g => g.groupId));
+        if (allFilteredGroupIds.length > 0 && !allFilteredGroupIds.includes(selectedGroupId)) {
+            selectedGroupId = allFilteredGroupIds[0];
+            const foundCat = sortedCategories.find(c => c.groupIds.includes(selectedGroupId));
+            if (foundCat) {
+                selectedCategoryId = foundCat.id;
+            }
+        }
+    }
 </script>
 
 <svelte:head>
