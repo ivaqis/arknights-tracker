@@ -30,6 +30,10 @@ export class RichTextParamParser {
 
         const value = interpreter.evaluate(expr);
 
+        if (!format) {
+            return String(value);
+        }
+
         return ExpressionFormatter.format(value, format);
     }
 
