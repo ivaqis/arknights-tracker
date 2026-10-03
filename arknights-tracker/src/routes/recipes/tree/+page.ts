@@ -30,7 +30,8 @@ export const load: PageLoad = ({ url }) => {
         itemId: itemId as string,
         recipeType: recipeType as RecipeType | null,
         buildingId,
-        recipeId
+        recipeId,
+        isBottomSheetOpen: false,
     };
 };
 

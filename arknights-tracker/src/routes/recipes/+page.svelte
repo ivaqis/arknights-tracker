@@ -350,6 +350,8 @@
 
     function selectItem(item: IItem) {
         if (data.itemId === item.gameId) {
+            isBottomSheetOpen = false;
+
             goto("/recipes", {
                 replaceState: true,
                 noScroll: true
@@ -357,6 +359,8 @@
 
             return;
         }
+
+        isBottomSheetOpen = true;
 
         goto(`/recipes?id=${item.gameId}`, {
             replaceState: true,
