@@ -121,6 +121,7 @@
                 && (!searchQuery
                     || item.gameId.includes(searchQuery)
                     || $t(item.i18nKey).includes(searchQuery)
+                    || item.buffs.some(buff => buff.buffId.includes(searchQuery) || $t(buff.i18nKey).includes(searchQuery))
                 );
         });
 
