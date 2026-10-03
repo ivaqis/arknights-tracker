@@ -3030,7 +3030,7 @@
     "buff_common_ctr_buff_potion_1": "Увеличение крит. шанса",
     "buff_common_cdr_buff_potion_1": "Уменьшение перезарядки комбонавыков",
     "buff_common_usprt_buff_potion_1": "Увеличение восст. суперэнергии",
-    "buff_common_healrt_buff_potion_1": "Увеличение лечения",
+    "buff_common_healrt_buff_potion_1": "Увеличение исходящего лечения",
     "buff_common_healrt_buff_potion_2": "Увеличение получаемого лечения",
     "buff_common_dispel_potion": "Снятие поражений и реакций искусств"
   },
@@ -3106,7 +3106,7 @@
       "duration": "Длительность"
     },
     "buff_common_healrt_buff_potion_1": {
-      "value": "Лечение",
+      "value": "Исходящее лечение",
       "duration": "Длительность"
     },
     "buff_common_healrt_buff_potion_2": {
@@ -3187,7 +3187,7 @@
       "duration": "Длительность"
     },
     "buff_common_healrt_buff_potion_1": {
-      "value": "Лечение",
+      "value": "Исходящее лечение",
       "duration": "Длительность"
     },
     "buff_common_healrt_buff_potion_2": {

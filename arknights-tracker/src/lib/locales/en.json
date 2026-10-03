@@ -3025,7 +3025,7 @@
     "buff_common_ctr_buff_potion_1": "Crit. Rate Increase",
     "buff_common_cdr_buff_potion_1": "Combo Skill CD Decrease",
     "buff_common_usprt_buff_potion_1": "ULT Gain Efficiency Increase",
-    "buff_common_healrt_buff_potion_1": "Treatment Increase",
+    "buff_common_healrt_buff_potion_1": "Treatment Output Increase",
     "buff_common_healrt_buff_potion_2": "Treatment Received Increase",
     "buff_common_dispel_potion": "Dispel Arts Inflictions & Reactions"
   },
@@ -3101,7 +3101,7 @@
       "duration": "Duration"
     },
     "buff_common_healrt_buff_potion_1": {
-      "value": "Treatment",
+      "value": "Treatment Output",
       "duration": "Duration"
     },
     "buff_common_healrt_buff_potion_2": {
@@ -3182,7 +3182,7 @@
       "duration": "Duration"
     },
     "buff_common_healrt_buff_potion_1": {
-      "value": "Treatment",
+      "value": "Treatment Output",
       "duration": "Duration"
     },
     "buff_common_healrt_buff_potion_2": {
