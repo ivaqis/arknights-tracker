@@ -16,6 +16,8 @@ export interface ITactical extends IBoardable {
     get levelUpRecoverUpperCount(): number;
 
     formatCondType(textFn: LocalizationFn): string;
+    formatCondParam(key: string, textFn: LocalizationFn): string;
+    formatCondParams(textFn: LocalizationFn): string[];
     formatCastTime(textFn: LocalizationFn): string;
     formatCastCount(textFn: LocalizationFn): string;
     formatCastToMainCount(textFn: LocalizationFn): string;

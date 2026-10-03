@@ -5,8 +5,6 @@ import type { EquipableItemData } from "$lib/data/types/items/EquipableItemData"
 import type { LocalizationFn } from "$lib/i18n";
 
 export class Tactical implements ITactical {
-    private static readonly PERCENT_FORMATTER = this.getPercentFormatter();
-
     private readonly _condType: EquipableItemConditionType;
     private readonly _condParams: readonly string[];
     private readonly _castTime: number;
@@ -44,13 +42,6 @@ export class Tactical implements ITactical {
             data.levelUpCastCount,
             data.levelUpRecoverUpperCount,
         );
-    }
-
-    private static getPercentFormatter() {
-        return new Intl.NumberFormat("en-US", {
-            style: "percent",
-            maximumFractionDigits: 0,
-        });
     }
 
     public get condType(): EquipableItemConditionType {
@@ -140,6 +131,44 @@ export class Tactical implements ITactical {
         return textFn(`tacticalCondType.${this._condType}`);
     }
 
+    public formatCondParam(key: string, textFn: LocalizationFn): string {
+        let value: string;
+
+        if (key === "param1") {
+            value = this._condParams[0];
+        } else if (key === "param2") {
+            value = this._condParams[1];
+        } else {
+            throw new Error(`Unexpected key ${key}`);
+        }
+
+        const n = Number(value);
+
+        if (!isNaN(n)) {
+            return textFn(`tacticalCondParam.${this._condType}.${key}`, { [key]: n });
+        }
+
+        return textFn(`tacticalCondParam.${this._condType}.${key}.${value}`);
+    }
+
+    public formatCondParams(textFn: LocalizationFn): string[] {
+        const result: string[] = [];
+
+        for (let i = 0; i < this._condParams.length; i++) {
+            const value = this._condParams[i];
+            const key = `param${i + 1}`;
+            const n = Number(value);
+
+            if (!isNaN(n)) {
+                result.push(textFn(`tacticalCondParam.${this._condType}.${key}`, { [key]: n }));
+            } else {
+                result.push(textFn(`tacticalCondParam.${this._condType}.${key}.${value}`));
+            }
+        }
+
+        return result;
+    }
+
     public formatCooldown(textFn: LocalizationFn): string {
         if (this._cooldown === 0) {
             return textFn("tacticalZero.cooldown");
@@ -175,8 +204,6 @@ export class Tactical implements ITactical {
     }
 
     private getCondParamsFormatted(textFn: LocalizationFn): IBlackboardEntry<string>[] {
-        const formatter = Tactical.PERCENT_FORMATTER;
-
         if (this._condType === EquipableItemConditionType.CHAR_HP || this._condType === EquipableItemConditionType.ULT_ENERGY) {
             return [
                 {
@@ -185,7 +212,7 @@ export class Tactical implements ITactical {
                 },
                 {
                     key: textFn(`tacticalCondParamTitle.${this._condType}.param1`),
-                    value: formatter.format(Number(this._condParams[0]))
+                    value: textFn(`tacticalCondParam.${this._condType}.param1`, { param1: Number(this._condParams[0]) })
                 },
 
             ];
@@ -199,7 +226,7 @@ export class Tactical implements ITactical {
                 },
                 {
                     key: textFn(`tacticalCondParamTitle.${this._condType}.param2`),
-                    value: formatter.format(Number(this._condParams[1]))
+                    value: textFn(`tacticalCondParam.${this._condType}.param2`, { param2: Number(this._condParams[1]) })
                 }
             ];
         }

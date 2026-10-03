@@ -3307,6 +3307,7 @@
   },
   "tacticalCondParam": {
     "char_hp": {
+      "param1": "{param1:0.##%}",
       "param2": {
         "lt": "Less than"
       }
@@ -3314,6 +3315,7 @@
     "char_down": {},
     "arts_reaction": {},
     "ult_energy": {
+      "param1": "{param1:0.##%}",
       "param2": {
         "lt": "Less than"
       }
@@ -3321,7 +3323,8 @@
     "damage": {
       "param1": {
         "any": "Any"
-      }
+      },
+      "param2": "{param2:0.##%}"
     }
   },
   "tacticalCondParamTitle": {

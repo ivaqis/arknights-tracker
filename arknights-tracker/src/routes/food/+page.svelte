@@ -340,6 +340,7 @@
                 <FoodComparisonTable
                     foodList={filteredTableItems}
                     condTypeOrderList={$foodSortParams.sortFieldParams.equipCond}
+                    selectedCondTypeSet={selectedCondTypeSet}
                     buffList={selectedBuffList}
                     selectItemFn={selectItem}
                     selectedItem={selectedItem}
