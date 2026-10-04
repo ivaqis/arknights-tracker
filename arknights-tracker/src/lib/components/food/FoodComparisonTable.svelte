@@ -345,20 +345,18 @@
 
     <thead class="bg-gray-200 dark:bg-[#424242] font-sdk font-bold text-sm text-gray-700 dark:text-[#FDFDFD] sticky top-0 z-50">
 
-    <tr>
+    <tr class="bg-inherit">
         <th
-            class="relative p-0"
+            class="p-0 xl:sticky left-0 z-10 bg-inherit"
             rowspan="2"
             style="min-width: 250px; min-height: 500px;"
         >
-            <div class="absolute inset-0">
                 <FoodComparisonTableSortButton
                     onClick={(cur) => toggleNameSort(cur)}
                     sortDirection={sortFieldType === "name" ? sortDirection : null}
                 >
                     {$t("page.food.table.name")}
                 </FoodComparisonTableSortButton>
-            </div>
         </th>
 
         {#each displayedBuffTitles as buffTitle}
@@ -475,7 +473,7 @@
 
         <tr class="odd:bg-white dark:odd:bg-[#363636] even:bg-gray-100 dark:even:bg-[#393939]">
 
-            <td>
+            <td class="xl:sticky left-0 z-10 bg-inherit">
                 <div class="flex flex-row items-center gap-2 p-2">
 
                     {#if $splitEquipmentView}

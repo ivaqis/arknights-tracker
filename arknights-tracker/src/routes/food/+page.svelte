@@ -45,6 +45,18 @@
         });
     });
 
+    const defaultSortParams: FoodSortParams = getDefaultFoodSortParams();
+
+    $: {
+        let isSortParamsCorrect = $foodSortParams ? checkSortParams($foodSortParams, defaultSortParams) : true;
+
+        if (!isSortParamsCorrect) {
+            console.log("Incorrect food sort params");
+
+            resetSort();
+        }
+    }
+
     const tabList: readonly FoodTabType[] = [FoodTabType.OVERVIEW, FoodTabType.COMPARISON];
 
     function onTabSelect(event: ITabSelectEvent<FoodTabType>) {
@@ -156,6 +168,10 @@
         const keys = Object.keys(rest) as FoodFilterGroup[];
 
         for (const key of keys) {
+            if (!(key in current.sortFieldParams)) {
+                return false;
+            }
+
             const check = isListItemsEqual(current.sortFieldParams[key] as FoodFilterValue<typeof key>[], defaultParams.sortFieldParams[key] as FoodFilterValue<typeof key>[]);
 
             if (!check) {
@@ -166,17 +182,7 @@
         return true;
     }
 
-    const defaultSortParams: FoodSortParams = getDefaultFoodSortParams();
 
-    $: {
-        let isSortParamsCorrect = $foodSortParams ? checkSortParams($foodSortParams, defaultSortParams) : true;
-
-        if (!isSortParamsCorrect) {
-            console.log("Incorrect food sort params");
-
-            resetSort();
-        }
-    }
 
     let isFilterActive = false;
 
