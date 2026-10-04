@@ -625,6 +625,7 @@
   },
   "sort": {
     "equipCondTitle": "Тип условия",
+    "targetType": "Тип цели",
     "buffTitle": "Эффект",
     "rarity": "Редкость",
     "class": "Класс",
@@ -3315,5 +3316,12 @@
       "param1": "Тип урона",
       "param2": "% от макс. ОЗ"
     }
+  },
+  "usableTitle": {
+    "targetType": "Тип цели"
+  },
+  "usableTargetTypes": {
+    "user": "Пользователь",
+    "team": "Команда"
   }
 }

@@ -4,6 +4,7 @@
     import type { IFood } from "$lib/classes/gameData/items/food/IFood";
     import type { IFoodBuff } from "$lib/classes/gameData/items/food/IFoodBuff";
     import type { IItem } from "$lib/classes/gameData/items/IItem";
+    import { UsableTargetType } from "$lib/classes/gameData/items/usable/UsableTargetType";
     import type { SortDirection } from "$lib/classes/SortDirection";
     import { CardSize } from "$lib/components/cards/CardSize";
     import ItemStackCard from "$lib/components/cards/ItemStackCard.svelte";
@@ -12,7 +13,7 @@
     import { splitEquipmentView } from "$lib/stores/settings";
 
     type CondType = EquipableItemConditionType | "null";
-    type SortFieldType = "name" | "buff" | "tactical" | "condParam";
+    type SortFieldType = "name" | "buff" | "tactical" | "condParam" | "food";
     type SortTacticalField =
         | "condType"
         | "castTime"
@@ -21,6 +22,8 @@
         | "cooldown"
         | "recoverTime"
         | "recoverUpperCount";
+    type SortFoodField =
+        | "targetType";
     type DisplayedBuffValueTitle = { key: string; i18nKey: string };
     type DisplayedBuffTitle = { buffId: string; i18nKey: string; values: DisplayedBuffValueTitle[] };
     type DisplayedCondParamTitle = { key: string; i18nKey: string; index: number };
@@ -33,6 +36,7 @@
     export let foodList: readonly IFood[];
     export let buffList: readonly string[];
     export let condTypeOrderList: readonly CondType[];
+    export let targetTypeOrderList: readonly UsableTargetType[];
     export let selectedCondTypeSet: Set<CondType>;
     export let selectItemFn: (item: IItem) => void;
     export let selectedItem: IFood | null = null;
@@ -122,11 +126,16 @@
     let sortTacticalField: SortTacticalField | null = null;
     let sortCondType: EquipableItemConditionType | null = null;
     let sortCondParam: string | null = null;
+    let sortFoodField: SortFoodField | null = null;
 
     let condTypeComparator = new FieldValueComparator<IFood, CondType>(item => item.tactical?.condType ?? "null");
+    let targetTypeComparator = new FieldValueComparator<IFood, UsableTargetType>(item => item.targetType);
 
     $: if (condTypeOrderList) {
         condTypeComparator.setValueOrder(condTypeOrderList);
+    }
+    $: if (targetTypeOrderList) {
+        targetTypeComparator.setValueOrder(targetTypeOrderList);
     }
 
     let sortedItems: IFood[];
@@ -158,6 +167,13 @@
         sortFieldType = "condParam";
         sortCondType = condType;
         sortCondParam = param;
+
+        toggleSortDirection(currentDirection);
+    }
+
+    function toggleFoodSort(field: SortFoodField, currentDirection: SortDirection | null) {
+        sortFieldType = "food";
+        sortFoodField = field;
 
         toggleSortDirection(currentDirection);
     }
@@ -261,6 +277,12 @@
                 return (valueB - valueA) * reverseMultiplier;
             }
 
+            if (sortFieldType === "food" && sortFoodField) {
+                if (sortFoodField === "targetType") {
+                    return targetTypeComparator.compare(a, b) * reverseMultiplier;
+                }
+            }
+
             return 0;
         });
     }
@@ -319,7 +341,7 @@
 </script>
 
 
-<table class="rounded-xl min-w-full">
+<table class="min-w-full">
 
     <thead class="bg-gray-200 dark:bg-[#424242] font-sdk font-bold text-sm text-gray-700 dark:text-[#FDFDFD] sticky top-0 z-50">
 
@@ -348,6 +370,15 @@
             </th>
 
         {/each}
+
+        <th rowspan="2">
+            <FoodComparisonTableSortButton
+                onClick={cur => toggleFoodSort("targetType", cur)}
+                sortDirection={(sortFieldType === "food" && sortFoodField === "targetType") ? sortDirection : null}
+            >
+                {$t("usableTitle.targetType")}
+            </FoodComparisonTableSortButton>
+        </th>
 
         <th rowspan="2">
             <FoodComparisonTableSortButton
@@ -525,6 +556,10 @@
                 {/if}
 
             {/each}
+
+            <td>
+                {$t(UsableTargetType.getI18nKey(food.targetType))}
+            </td>
 
             {#if tactical === null}
 

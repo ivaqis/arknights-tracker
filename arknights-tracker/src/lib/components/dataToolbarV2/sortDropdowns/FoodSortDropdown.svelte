@@ -1,6 +1,7 @@
 <script lang="ts">
     import { FoodFieldComparatorName } from "$lib/classes/comparators/items/FoodFieldComparatorName";
     import { EquipableItemConditionType } from "$lib/classes/gameData/items/equipable/EquipableItemConditionType";
+    import { UsableTargetType } from "$lib/classes/gameData/items/usable/UsableTargetType";
     import DropdownTemplate from "$lib/components/dataToolbarV2/DropdownTemplate.svelte";
     import RarityParamBox from "$lib/components/dataToolbarV2/paramBoxes/RarityParamBox.svelte";
     import TextParamBox from "$lib/components/dataToolbarV2/paramBoxes/TextParamBox.svelte";
@@ -29,6 +30,8 @@
                 return $t("sort.buffTitle");
             case FoodFieldComparatorName.EQUIP_COND:
                 return $t("sort.equipCondTitle");
+            case FoodFieldComparatorName.TARGET_TYPE:
+                return $t("sort.targetType");
         }
     }
 
@@ -84,6 +87,14 @@
                 paramBox={TextParamBox}
                 getLocaleFunc={cond => getEquipCondLocale(cond as EquipableItemConditionType | "null")}
                 bind:paramList={sortParams.sortFieldParams.equipCond}
+            />
+
+        {:else if openedSortField === FoodFieldComparatorName.TARGET_TYPE}
+
+            <DraggableParamList
+                paramBox={TextParamBox}
+                getLocaleFunc={cond => $t(UsableTargetType.getI18nKey(cond as UsableTargetType))}
+                bind:paramList={sortParams.sortFieldParams.targetType}
             />
 
         {/if}

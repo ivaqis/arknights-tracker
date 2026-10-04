@@ -3,6 +3,7 @@ import { FoodBuff } from "$lib/classes/gameData/items/food/FoodBuff";
 import type { IFood } from "$lib/classes/gameData/items/food/IFood";
 import type { IItem } from "$lib/classes/gameData/items/IItem";
 import { Tactical } from "$lib/classes/gameData/items/tactical/Tactical";
+import type { UsableTargetType } from "$lib/classes/gameData/items/usable/UsableTargetType";
 import { GameDataStorage } from "$lib/classes/storages/GameDataStorage";
 import type { IDataStorage } from "$lib/classes/storages/IDataStorage";
 import type { IGameDataStorage } from "$lib/classes/storages/IGameDataStorage";
@@ -28,6 +29,7 @@ export class FoodStorage extends GameDataStorage<IFood> {
             list.push(Food.createFoodFromItem(
                 item,
                 tactical,
+                data.targetType as UsableTargetType,
                 data.duration,
                 buffs
             ));

@@ -10,12 +10,14 @@ import { type EquipableItemConditionType } from "$lib/classes/gameData/items/equ
 import type { IFood } from "$lib/classes/gameData/items/food/IFood";
 import type { IItem } from "$lib/classes/gameData/items/IItem";
 import type { IUsableItem } from "$lib/classes/gameData/items/usable/IUsableItem";
+import { type UsableTargetType } from "$lib/classes/gameData/items/usable/UsableTargetType";
 import type { Rarity } from "$lib/classes/Rarity";
 
 export class FoodComparator implements IFoodComparator {
     private readonly _rarityComparator: IFieldValueComparator<IItem, Rarity>;
     private readonly _buffComparator: IFieldValueComparator<IFood>;
     private readonly _equipCondComparator: IFieldValueComparator<IUsableItem, EquipableItemConditionType | "null">;
+    private readonly _targetTypeComparator: IFieldValueComparator<IUsableItem, UsableTargetType>;
     private readonly _localeComparator: ILocaleComparator<IItem>;
 
     private _comparatorOrder: IComparator<IFood>[] = [];
@@ -24,6 +26,7 @@ export class FoodComparator implements IFoodComparator {
         this._rarityComparator = new FieldValueComparator(item => item.rarity);
         this._buffComparator = new FieldManyValuesComparator(food => food.buffs.map(buff => buff.buffId));
         this._equipCondComparator = new FieldValueComparator(food => food.tactical?.condType ?? "null");
+        this._targetTypeComparator = new FieldValueComparator(food => food.targetType);
         this._localeComparator = new LocaleComparator(item => getItemNameFn(item));
     }
 
@@ -41,6 +44,10 @@ export class FoodComparator implements IFoodComparator {
 
     public get localeComparator(): ILocaleComparator<IItem> {
         return this._localeComparator;
+    }
+
+    public get targetTypeComparator(): IFieldValueComparator<IUsableItem, UsableTargetType> {
+        return this._targetTypeComparator;
     }
 
     public compare(a: IFood, b: IFood): number {
@@ -72,6 +79,7 @@ export class FoodComparator implements IFoodComparator {
             case FoodFieldComparatorName.RARITY: return this._rarityComparator;
             case FoodFieldComparatorName.BUFF: return this._buffComparator;
             case FoodFieldComparatorName.EQUIP_COND: return this._equipCondComparator;
+            case FoodFieldComparatorName.TARGET_TYPE: return this._targetTypeComparator;
             case FoodFieldComparatorName.LOCALE: return this._localeComparator;
         }
     }

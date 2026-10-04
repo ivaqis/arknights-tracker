@@ -6,12 +6,14 @@ import type { EquipableItemConditionType } from "$lib/classes/gameData/items/equ
 import type { IFood } from "$lib/classes/gameData/items/food/IFood";
 import type { IItem } from "$lib/classes/gameData/items/IItem";
 import type { IUsableItem } from "$lib/classes/gameData/items/usable/IUsableItem";
+import type { UsableTargetType } from "$lib/classes/gameData/items/usable/UsableTargetType";
 import type { Rarity } from "$lib/classes/Rarity";
 
 export interface IFoodComparator extends IComparator<IFood> {
     get rarityComparator(): IFieldValueComparator<IItem, Rarity>;
     get buffComparator(): IFieldValueComparator<IFood>;
-    get equipCondComparator(): IFieldValueComparator<IUsableItem, EquipableItemConditionType | "null">
+    get equipCondComparator(): IFieldValueComparator<IUsableItem, EquipableItemConditionType | "null">;
+    get targetTypeComparator(): IFieldValueComparator<IUsableItem, UsableTargetType>;
     get localeComparator(): ILocaleComparator<IItem>;
 
     setComparatorsOrder(order: readonly FoodFieldComparatorName[]): void;
