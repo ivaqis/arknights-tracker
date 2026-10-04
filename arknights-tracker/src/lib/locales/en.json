@@ -625,6 +625,7 @@
   },
   "sort": {
     "equipCondTitle": "Condition Type",
+    "targetType": "Target Type",
     "buffTitle": "Effect",
     "rarity": "Rarity",
     "class": "Class",
@@ -3342,5 +3343,12 @@
       "param1": "Damage Type",
       "param2": "% of Max HP"
     }
+  },
+  "usableTitle": {
+    "targetType": "Target Type"
+  },
+  "usableTargetTypes": {
+    "user": "User",
+    "team": "Team"
   }
 }

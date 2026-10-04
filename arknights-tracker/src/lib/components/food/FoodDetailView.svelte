@@ -14,7 +14,7 @@
 
     export let inColumn: boolean = false;
     export let showSelfLink: boolean = false;
-    
+
     const foodLocaleModules: Record<string, Record<string, () => Promise<unknown>>> = {
         en: import.meta.glob("/src/lib/locales/en/usableItems.json"),
         ru: import.meta.glob("/src/lib/locales/ru/usableItems.json"),
@@ -31,7 +31,7 @@
         zhcn: import.meta.glob("/src/lib/locales/zhcn/usableItems.json"),
         zhtw: import.meta.glob("/src/lib/locales/zhtw/usableItems.json"),
     } as const;
-    
+
     const equipLocaleModules: Record<string, Record<string, () => Promise<unknown>>> = {
         en: import.meta.glob("/src/lib/locales/en/equipItems.json"),
         ru: import.meta.glob("/src/lib/locales/ru/equipItems.json"),
@@ -145,20 +145,20 @@
                         class="absolute right-[-25px] md:right-[0px] top-1/2 -translate-y-1/2 w-[240px] h-[240px] md:w-[280px] md:h-[280px] z-10 pointer-events-none"
                     >
                         <Image
-                            id={item.icon.iconId}
-                            variant={item.icon.imageVariant}
-                            interactive={true}
                             className="w-full h-full object-contain drop-shadow-[0_10px_15px_rgba(0,0,0,0.5)] transform-gpu scale-100"
+                            id={item.icon.iconId}
+                            interactive={true}
+                            variant={item.icon.imageVariant}
                         />
                     </div>
 
                     <div class="relative z-20 gap-1 flex flex-col h-full w-[65%]">
 
                         <svelte:element
-                            this={showSelfLink ? "a" : "h2"}
-                            href={showSelfLink ? `/food/${item.gameId}` : undefined}
                             class="font-sdk text-3xl md:text-4xl font-bold text-[#21272C] dark:text-[#FDFDFD] leading-tight drop-shadow-sm mb-3"
                             class:hover:underline={showSelfLink}
+                            href={showSelfLink ? `/food/${item.gameId}` : undefined}
+                            this={showSelfLink ? "a" : "h2"}
                         >
                             {$t(item.i18nKey)}
                         </svelte:element>
@@ -183,7 +183,7 @@
 
                 </div>
 
-                <div class="px-6 pb-5 flex flex-col gap-1 mt-4">
+                <div class="px-6 pb-5 flex flex-col gap-4 mt-4">
 
                     {#if foodDetailLocale}
 
@@ -198,36 +198,58 @@
 
                     {/if}
 
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-y-4 gap-x-6">
+
+                        {#each item.getDetailList($t) as node}
+
+                            <div class="flex flex-col">
+
+                                    <span class="text-xs text-gray-500 dark:text-[#A0A0A0] font-bold uppercase">
+                                        {node.key}
+                                    </span>
+
+                                <span class="text-lg font-bold text-[#21272C] dark:text-[#FDFDFD] truncate">
+                                        {node.value}
+                                    </span>
+
+                            </div>
+
+                        {/each}
+
+                    </div>
+
                     {#if item.buffs.length > 0}
 
-                        <h2 class="text-xl font-bold text-[#21272C] dark:text-[#FDFDFD] font-sdk pb-2 mt-4 mb-2">
-                            {$t("stats.effects")}
-                        </h2>
+                        <div>
 
-                        <div class="flex flex-col gap-3 pl-2">
+                            <h2 class="text-xl font-bold text-[#21272C] dark:text-[#FDFDFD] font-sdk pb-2">
+                                {$t("stats.effects")}
+                            </h2>
 
-                            {#each item.buffs as buff}
+                            <div class="flex flex-col gap-3 pl-2">
 
-                                <div class="flex flex-col gap-1">
+                                {#each item.buffs as buff}
 
-                                    <div class="flex flex-row items-center gap-2">
+                                    <div class="flex flex-col gap-1">
 
-                                        <Icon
-                                            name="circle"
-                                            class="w-3 h-3 text-[#888888]"
-                                        />
+                                        <div class="flex flex-row items-center gap-2">
 
-                                        <h3 class="font-medium text-[#21272C] dark:text-[#E4E4E4] text-[15px] leading-tight">
-                                            {$t(buff.i18nKey)}
-                                        </h3>
+                                            <Icon
+                                                name="circle"
+                                                class="w-3 h-3 text-[#888888]"
+                                            />
 
-                                    </div>
+                                            <h3 class="font-medium text-[#21272C] dark:text-[#E4E4E4] text-[15px] leading-tight">
+                                                {$t(buff.i18nKey)}
+                                            </h3>
 
-                                    <div class="flex flex-col gap-1 pl-5">
+                                        </div>
 
-                                        {#each buff.blackboard as entry}
+                                        <div class="flex flex-col gap-1 pl-5">
 
-                                            {#if entry.displayable}
+                                            {#each buff.blackboard as entry}
+
+                                                {#if entry.displayable}
 
                                                 <span class="text-[14px] text-gray-700 dark:text-[#A0A0A0]">
                                                     - {$t(entry.i18nKey)}:
@@ -236,15 +258,17 @@
                                                     </span>
                                                 </span>
 
-                                            {/if}
+                                                {/if}
 
-                                        {/each}
+                                            {/each}
+
+                                        </div>
 
                                     </div>
 
-                                </div>
+                                {/each}
 
-                            {/each}
+                            </div>
 
                         </div>
 
@@ -362,6 +386,7 @@
         );
         opacity: 0.9;
     }
+
     :global(.dark) .card-gradient {
         background: linear-gradient(
                 to right,

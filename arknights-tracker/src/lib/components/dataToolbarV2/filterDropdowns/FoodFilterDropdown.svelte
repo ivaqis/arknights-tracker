@@ -1,6 +1,7 @@
 <script lang="ts">
     import { FoodFieldComparatorName } from "$lib/classes/comparators/items/FoodFieldComparatorName";
     import { EquipableItemConditionType } from "$lib/classes/gameData/items/equipable/EquipableItemConditionType";
+    import { UsableTargetType } from "$lib/classes/gameData/items/usable/UsableTargetType";
     import DropdownTemplate from "$lib/components/dataToolbarV2/DropdownTemplate.svelte";
     import SelectableParamList from "$lib/components/dataToolbarV2/filterDropdowns/SelectableParamList.svelte";
     import GroupTitle from "$lib/components/dataToolbarV2/GroupTitle.svelte";
@@ -68,6 +69,24 @@
             paramList={filters.rarity}
             paramBox={RarityParamBox}
             bind:selectedParamSet={selectedFilters.rarity}
+        />
+
+    </div>
+
+    <div class="flex flex-col items-start gap-2">
+
+        <GroupTitle
+            asButton={true}
+            onClick={() => toggleFilterGroup(FoodFieldComparatorName.TARGET_TYPE)}
+        >
+            {$t("sort.targetType")}
+        </GroupTitle>
+
+        <SelectableParamList
+            paramList={filters.targetType}
+            paramBox={TextParamBox}
+            getLocaleFunc={param => $t(UsableTargetType.getI18nKey(param as UsableTargetType))}
+            bind:selectedParamSet={selectedFilters.targetType}
         />
 
     </div>

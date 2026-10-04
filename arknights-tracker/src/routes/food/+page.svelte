@@ -6,6 +6,7 @@
     import { EquipableItemConditionType } from "$lib/classes/gameData/items/equipable/EquipableItemConditionType";
     import type { IFood } from "$lib/classes/gameData/items/food/IFood";
     import type { IItem } from "$lib/classes/gameData/items/IItem";
+    import type { UsableTargetType } from "$lib/classes/gameData/items/usable/UsableTargetType";
     import type { SortDirection } from "$lib/classes/SortDirection";
     import { FoodTabType } from "$lib/classes/tabs/food/FoodTabType";
     import BottomSheet from "$lib/components/BottomSheet.svelte";
@@ -43,6 +44,18 @@
             }
         });
     });
+
+    const defaultSortParams: FoodSortParams = getDefaultFoodSortParams();
+
+    $: {
+        let isSortParamsCorrect = $foodSortParams ? checkSortParams($foodSortParams, defaultSortParams) : true;
+
+        if (!isSortParamsCorrect) {
+            console.log("Incorrect food sort params");
+
+            resetSort();
+        }
+    }
 
     const tabList: readonly FoodTabType[] = [FoodTabType.OVERVIEW, FoodTabType.COMPARISON];
 
@@ -112,16 +125,20 @@
         comparator.rarityComparator.setValueOrder(sortParams.sortFieldParams.rarity);
         comparator.buffComparator.setValueOrder(sortParams.sortFieldParams.buff);
         comparator.equipCondComparator.setValueOrder(sortParams.sortFieldParams.equipCond);
+        comparator.targetTypeComparator.setValueOrder(sortParams.sortFieldParams.targetType);
         comparator.localeComparator.isReversed = sortParams.sortFieldParams.locale === LocaleOrder.Z_A;
+
+        const searchLower = searchQuery.trim().toLowerCase();
 
         const result: IFood[] = items.filter(item => {
             return filterCheck(filters.rarity, item.rarity)
                 && filterCheck(filters.equipCond, item.tactical?.condType ?? "null")
+                && filterCheck(filters.targetType, item.targetType)
                 && filterCheckMany(filters.buff, item.buffs.map(buff => buff.buffId))
-                && (!searchQuery
-                    || item.gameId.includes(searchQuery)
-                    || $t(item.i18nKey).includes(searchQuery)
-                    || item.buffs.some(buff => buff.buffId.includes(searchQuery) || $t(buff.i18nKey).includes(searchQuery))
+                && (!searchLower
+                    || item.gameId.toLowerCase().includes(searchLower)
+                    || $t(item.i18nKey).toLowerCase().includes(searchLower)
+                    || item.buffs.some(buff => buff.buffId.toLowerCase().includes(searchLower) || $t(buff.i18nKey).toLowerCase().includes(searchLower))
                 );
         });
 
@@ -151,6 +168,10 @@
         const keys = Object.keys(rest) as FoodFilterGroup[];
 
         for (const key of keys) {
+            if (!(key in current.sortFieldParams)) {
+                return false;
+            }
+
             const check = isListItemsEqual(current.sortFieldParams[key] as FoodFilterValue<typeof key>[], defaultParams.sortFieldParams[key] as FoodFilterValue<typeof key>[]);
 
             if (!check) {
@@ -161,17 +182,7 @@
         return true;
     }
 
-    const defaultSortParams: FoodSortParams = getDefaultFoodSortParams();
 
-    $: {
-        let isSortParamsCorrect = $foodSortParams ? checkSortParams($foodSortParams, defaultSortParams) : true;
-
-        if (!isSortParamsCorrect) {
-            console.log("Incorrect food sort params");
-
-            resetSort();
-        }
-    }
 
     let isFilterActive = false;
 
@@ -183,6 +194,7 @@
 
     let selectedCondTypeSet: Set<CondType> = new Set();
     let selectedBuffSet: Set<string> = new Set();
+    let selectedTargetTypeSet: Set<UsableTargetType> = new Set();
 
     let selectedBuffList: string[];
 
@@ -190,34 +202,54 @@
 
     let filteredTableItems: IFood[];
 
-    $: filteredTableItems = getFilteredTableItems(allItems, selectedCondTypeSet, selectedBuffSet);
+    $: filteredTableItems = getFilteredTableItems(allItems, selectedCondTypeSet, selectedBuffSet, selectedTargetTypeSet);
 
     let availableCondTypeFilters: CondType[];
     let availableBuffFilters: string[];
+    let availableTargetTypeFilters: UsableTargetType[];
 
-    $: availableCondTypeFilters = getAvailableCondTypeFilters(allItems, $foodSortParams.sortFieldParams.equipCond, selectedBuffSet);
-    $: availableBuffFilters = getAvailableBuffFilters(allItems, $foodSortParams.sortFieldParams.buff, selectedCondTypeSet);
+    $: availableCondTypeFilters = getAvailableCondTypeFilters(allItems, $foodSortParams.sortFieldParams.equipCond, selectedBuffSet, selectedTargetTypeSet);
+    $: availableBuffFilters = getAvailableBuffFilters(allItems, $foodSortParams.sortFieldParams.buff, selectedCondTypeSet, selectedTargetTypeSet);
+    $: availableTargetTypeFilters = getAvailableTargetTypeFilters(allItems, $foodSortParams.sortFieldParams.targetType, selectedCondTypeSet, selectedBuffSet);
 
-    function getFilteredTableItems(allItems: readonly IFood[], selectedCondTypeSet: Set<CondType>, selectedBuffSet: Set<string>) {
+    function getFilteredTableItems(allItems: readonly IFood[], selectedCondTypeSet: Set<CondType>, selectedBuffSet: Set<string>, selectedTargetTypeSet: Set<UsableTargetType>): IFood[] {
         return allItems.filter(item => {
             return filterCheck(selectedCondTypeSet, item.tactical?.condType ?? "null")
+                && filterCheck(selectedTargetTypeSet, item.targetType)
                 && filterCheckMany(selectedBuffSet, item.buffs.map(buff => buff.buffId));
         });
     }
 
-    function getAvailableCondTypeFilters(allItems: readonly IFood[], allFilters: readonly CondType[], selectedBuffSet: Set<string>): CondType[] {
-        const filteredItems = allItems.filter(item => filterCheckMany(selectedBuffSet, item.buffs.map(buff => buff.buffId)));
+    function getAvailableCondTypeFilters(allItems: readonly IFood[], allFilters: readonly CondType[], selectedBuffSet: Set<string>, selectedTargetTypeSet: Set<UsableTargetType>): CondType[] {
+        const filteredItems = allItems.filter(item =>
+            filterCheck(selectedTargetTypeSet, item.targetType)
+            && filterCheckMany(selectedBuffSet, item.buffs.map(buff => buff.buffId))
+        );
 
         return allFilters.filter(
             filter => filteredItems.some(item => (item.tactical?.condType ?? "null") === filter)
         );
     }
 
-    function getAvailableBuffFilters(allItems: readonly IFood[], allFilters: readonly string[], selectedCondTypeSet: Set<CondType>): string[] {
-        const filteredItems = allItems.filter(item => filterCheck(selectedCondTypeSet, item.tactical?.condType ?? "null"));
+    function getAvailableBuffFilters(allItems: readonly IFood[], allFilters: readonly string[], selectedCondTypeSet: Set<CondType>, selectedTargetTypeSet: Set<UsableTargetType>): string[] {
+        const filteredItems = allItems.filter(item =>
+            filterCheck(selectedCondTypeSet, item.tactical?.condType ?? "null")
+            && filterCheck(selectedTargetTypeSet, item.targetType)
+        );
 
         return allFilters.filter(
             filter => filteredItems.some(item => item.hasBuff(filter))
+        );
+    }
+
+    function getAvailableTargetTypeFilters(allItems: readonly IFood[], allFilters: readonly UsableTargetType[], selectedCondTypeSet: Set<CondType>, selectedBuffSet: Set<string>): UsableTargetType[] {
+        const filteredItems = allItems.filter(item =>
+            filterCheck(selectedCondTypeSet, item.tactical?.condType ?? "null")
+            && filterCheckMany(selectedBuffSet, item.buffs.map(buff => buff.buffId))
+        );
+
+        return allFilters.filter(
+            filter => filteredItems.some(item => item.targetType === filter)
         );
     }
 
@@ -341,6 +373,7 @@
                 <FoodComparisonTable
                     foodList={filteredTableItems}
                     condTypeOrderList={$foodSortParams.sortFieldParams.equipCond}
+                    targetTypeOrderList={$foodSortParams.sortFieldParams.targetType}
                     selectedCondTypeSet={selectedCondTypeSet}
                     buffList={selectedBuffList}
                     selectItemFn={selectItem}
@@ -378,8 +411,10 @@
                             <FoodComparisonTableSelector
                                 condTypeList={availableCondTypeFilters}
                                 buffList={availableBuffFilters}
+                                targetTypeList={availableTargetTypeFilters}
                                 bind:selectedCondTypeSet={selectedCondTypeSet}
                                 bind:selectedBuffSet={selectedBuffSet}
+                                bind:selectedTargetTypeSet={selectedTargetTypeSet}
                             />
 
                         </div>
