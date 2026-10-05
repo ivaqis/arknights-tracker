@@ -5,8 +5,8 @@ export class FilterSelectorMany<TEntity, TParam extends string | number = string
 
     private readonly _getParamsFn: (entity: TEntity) => Iterable<TParam>;
 
-    public constructor(paramList: TParam[], getParamsFn: (entity: TEntity) => Iterable<TParam>) {
-        super(paramList);
+    public constructor(paramList: TParam[], getParamsFn: (entity: TEntity) => Iterable<TParam>, limit: number = 0) {
+        super(paramList, limit);
 
         this._getParamsFn = getParamsFn;
     }

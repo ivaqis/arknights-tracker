@@ -5,8 +5,8 @@ export class FilterSelector<TEntity, TParam extends string | number = string>
 
     private readonly _getParamFn: (entity: TEntity) => TParam;
 
-    public constructor(paramList: TParam[], getValueFn: (entity: TEntity) => TParam) {
-        super(paramList);
+    public constructor(paramList: TParam[], getValueFn: (entity: TEntity) => TParam, limit: number = 0) {
+        super(paramList, limit);
 
         this._getParamFn = getValueFn;
     }

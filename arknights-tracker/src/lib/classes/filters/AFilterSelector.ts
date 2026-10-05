@@ -7,12 +7,16 @@ export abstract class AFilterSelector<TEntity, TParam extends string | number> i
 
     private _paramList: readonly TParam[];
     private _paramSet: Set<TParam>;
+    private _limit: number = 0;
+    private _selectedParamQueue: TParam[] = [];
+
     private _batchDepth: number = 0;
     private _batchChanged: boolean = false;
 
-    protected constructor(paramList: readonly TParam[]) {
+    protected constructor(paramList: readonly TParam[], limit: number = 0) {
         this._paramList = paramList;
         this._paramSet = new Set(paramList);
+        this.limit = limit;
     }
 
     public get paramList(): readonly TParam[] {
@@ -30,11 +34,34 @@ export abstract class AFilterSelector<TEntity, TParam extends string | number> i
     }
 
     public get selectedCount(): number {
-        return this._selectedParamSet.size;
+        return this._selectedParamQueue.length;
     }
 
     public get isEmpty(): boolean {
         return this.selectedCount === 0;
+    }
+
+    public get limit(): number {
+        return this._limit;
+    }
+
+    public set limit(value: number) {
+        if (isNaN(value) || value < 1 || value === +Infinity) {
+            value = 0;
+        }
+
+        value = Math.floor(value);
+
+        const isChanged = this._limit !== value;
+
+        if (!isChanged) {
+            return;
+        }
+
+        this._limit = value;
+
+        this.applyLimit();
+        this.touch();
     }
 
     public add(param: TParam): boolean {
@@ -42,24 +69,54 @@ export abstract class AFilterSelector<TEntity, TParam extends string | number> i
             throw new Error(`Invalid param: ${param}`);
         }
 
-        if (this._selectedParamSet.has(param)) {
+        if (this.isSelected(param)) {
             return false;
         }
 
-        this._selectedParamSet.add(param);
-        this.touch();
+        this.batch(() => {
+            this.addParam(param);
+
+            this.touch();
+        });
+
+        return true;
+    }
+
+    public push(param: TParam): boolean {
+        if (!this.isValidParam(param)) {
+            throw new Error(`Invalid param: ${param}`);
+        }
+
+        if (this.isSelected(param)) {
+            const index = this._selectedParamQueue.indexOf(param);
+
+            this._selectedParamQueue.splice(index, 1);
+            this._selectedParamQueue.push(param);
+
+            return false;
+        }
+
+        this.batch(() => {
+            this.addParam(param);
+
+            this.touch();
+        });
 
         return true;
     }
 
     public remove(param: TParam): boolean {
-        const wasDeleted = this._selectedParamSet.delete(param);
-
-        if (wasDeleted) {
-            this.touch();
+        if (!this.isSelected(param)) {
+            return false;
         }
 
-        return wasDeleted;
+        const index = this._selectedParamQueue.indexOf(param);
+
+        this._selectedParamQueue.splice(index, 1);
+        this._selectedParamSet.delete(param);
+        this.touch();
+
+        return true;
     }
 
     public select(...params: TParam[]): void {
@@ -68,7 +125,7 @@ export abstract class AFilterSelector<TEntity, TParam extends string | number> i
                 if (this.isSelected(param)) {
                     this.remove(param);
                 } else {
-                    this.add(param);
+                    this.push(param);
                 }
             }
         });
@@ -87,10 +144,11 @@ export abstract class AFilterSelector<TEntity, TParam extends string | number> i
     }
 
     public clear(): void {
-        if (this._selectedParamSet.size === 0) {
+        if (this._selectedParamQueue.length === 0) {
             return;
         }
 
+        this._selectedParamQueue = [];
         this._selectedParamSet.clear();
         this.touch();
     }
@@ -144,12 +202,46 @@ export abstract class AFilterSelector<TEntity, TParam extends string | number> i
 
     private validateSelected(): void {
         this.batch(() => {
-            for (const param of this._selectedParamSet.values()) {
+            let isChanged = false;
+
+            for (let i = this._selectedParamQueue.length - 1; i >= 0; i--) {
+                const param = this._selectedParamQueue[i];
+
                 if (!this.isValidParam(param)) {
-                    this.remove(param);
+                    this._selectedParamQueue.splice(i, 1);
+                    this._selectedParamSet.delete(param);
+
+                    isChanged = true;
                 }
             }
+
+            if (isChanged) {
+                this.touch();
+            }
         });
+    }
+
+    private addParam(param: TParam) {
+        this._selectedParamQueue.push(param);
+        this._selectedParamSet.add(param);
+
+        this.applyLimit();
+    }
+
+    private applyLimit() {
+        if (this._limit < 1) {
+            return;
+        }
+
+        let difference = this._selectedParamQueue.length - this._limit;
+
+        if (difference <= 0) {
+            return;
+        }
+
+        const deleted = this._selectedParamQueue.splice(0, difference);
+
+        deleted.forEach(param => this._selectedParamSet.delete(param));
     }
 
     private notify() {
