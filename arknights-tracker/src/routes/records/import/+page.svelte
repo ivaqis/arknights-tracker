@@ -426,11 +426,15 @@
                     ? $t("import.warning_sync_creation")
                     : $t("import.warning_sync_write_on_local");
             } else if (data.profileId !== currentPublicId) {
-                const existingProfile = await accountStore.findAccountByPublicServerUid(data.profileId);
+                if (currentPublicId === null && currentProfile.serverUid === null) {
+                    warningMsg = $t("import.warning_sync_write_on_local");
+                } else {
+                    const existingProfile = await accountStore.findAccountByPublicServerUid(data.profileId);
 
-                warningMsg = existingProfile
-                    ? $t("import.warning_sync_switch")
-                    : $t("import.warning_sync_switch_creation");
+                    warningMsg = existingProfile
+                        ? $t("import.warning_sync_switch")
+                        : $t("import.warning_sync_switch_creation");
+                }
             }
         }
 
