@@ -2,10 +2,9 @@ import type { IBlackboardEntry } from "$lib/classes/blackboard/IBlackboardEntry"
 import { EquipableItemConditionType } from "$lib/classes/gameData/items/equipable/EquipableItemConditionType";
 import type { ITactical } from "$lib/classes/gameData/items/tactical/ITactical";
 import type { EquipableItemData } from "$lib/data/types/items/EquipableItemData";
+import type { LocalizationFn } from "$lib/i18n";
 
 export class Tactical implements ITactical {
-    private static readonly PERCENT_FORMATTER = this.getPercentFormatter();
-
     private readonly _condType: EquipableItemConditionType;
     private readonly _condParams: readonly string[];
     private readonly _castTime: number;
@@ -43,13 +42,6 @@ export class Tactical implements ITactical {
             data.levelUpCastCount,
             data.levelUpRecoverUpperCount,
         );
-    }
-
-    private static getPercentFormatter() {
-        return new Intl.NumberFormat("en-US", {
-            style: "percent",
-            maximumFractionDigits: 0,
-        });
     }
 
     public get condType(): EquipableItemConditionType {
@@ -102,7 +94,7 @@ export class Tactical implements ITactical {
         throw new Error(`Unexpected key ${key}`);
     }
 
-    public getDetailList(textFn: (key: string) => string): IBlackboardEntry<string>[] {
+    public getDetailList(textFn: LocalizationFn): IBlackboardEntry<string>[] {
         return [
             this.getCondTypeFormatted(textFn),
             ...this.getCondParamsFormatted(textFn),
@@ -115,55 +107,93 @@ export class Tactical implements ITactical {
         ];
     }
 
-    public formatCastCount(textFn: (key: string) => string): string {
+    public formatCastCount(textFn: LocalizationFn): string {
         if (this._castCount === 0) {
             return textFn("tacticalZero.castCount");
         }
 
-        return String(this._castCount);
+        return textFn("tacticalValues.castCount", { value: this._castCount });
     }
 
-    public formatCastTime(textFn: (key: string) => string): string {
-        return String(this._castTime);
+    public formatCastTime(textFn: LocalizationFn): string {
+        return textFn("tacticalValues.castTime", { value: this._castTime });
     }
 
-    public formatCastToMainCount(textFn: (key: string) => string): string {
+    public formatCastToMainCount(textFn: LocalizationFn): string {
         if (this._castToMainCount === 0) {
             return textFn("tacticalZero.castToMainCount");
         }
 
-        return String(this._castToMainCount);
+        return textFn("tacticalValues.castToMainCount", { value: this._castToMainCount });
     }
 
-    public formatCondType(textFn: (key: string) => string): string {
+    public formatCondType(textFn: LocalizationFn): string {
         return textFn(`tacticalCondType.${this._condType}`);
     }
 
-    public formatCooldown(textFn: (key: string) => string): string {
-        if (this._cooldown === 0) {
-            return textFn("tacticalZero.castCooldown");
+    public formatCondParam(key: string, textFn: LocalizationFn): string {
+        let value: string;
+
+        if (key === "param1") {
+            value = this._condParams[0];
+        } else if (key === "param2") {
+            value = this._condParams[1];
+        } else {
+            throw new Error(`Unexpected key ${key}`);
         }
 
-        return String(this._cooldown);
+        const n = Number(value);
+
+        if (!isNaN(n)) {
+            return textFn(`tacticalCondParam.${this._condType}.${key}`, { [key]: n });
+        }
+
+        return textFn(`tacticalCondParam.${this._condType}.${key}.${value}`);
     }
 
-    public formatRecoverTime(textFn: (key: string) => string): string {
+    public formatCondParams(textFn: LocalizationFn): string[] {
+        const result: string[] = [];
+
+        for (let i = 0; i < this._condParams.length; i++) {
+            const value = this._condParams[i];
+            const key = `param${i + 1}`;
+            const n = Number(value);
+
+            if (!isNaN(n)) {
+                result.push(textFn(`tacticalCondParam.${this._condType}.${key}`, { [key]: n }));
+            } else {
+                result.push(textFn(`tacticalCondParam.${this._condType}.${key}.${value}`));
+            }
+        }
+
+        return result;
+    }
+
+    public formatCooldown(textFn: LocalizationFn): string {
+        if (this._cooldown === 0) {
+            return textFn("tacticalZero.cooldown");
+        }
+
+        return textFn("tacticalValues.cooldown", { value: this._cooldown });
+    }
+
+    public formatRecoverTime(textFn: LocalizationFn): string {
         if (this._recoverTime === 0) {
             return textFn("tacticalZero.recoverTime");
         }
 
-        return String(this._recoverTime);
+        return textFn("tacticalValues.recoverTime", { value: this._recoverTime });
     }
 
-    public formatRecoverUpperCount(textFn: (key: string) => string): string {
+    public formatRecoverUpperCount(textFn: LocalizationFn): string {
         if (this._recoverUpperCount === 0) {
             return textFn("tacticalZero.recoverUpperCount");
         }
 
-        return String(this._recoverUpperCount);
+        return textFn("tacticalValues.recoverUpperCount", { value: this._recoverUpperCount });
     }
 
-    private getCondTypeFormatted(textFn: (key: string) => string): IBlackboardEntry<string> {
+    private getCondTypeFormatted(textFn: LocalizationFn): IBlackboardEntry<string> {
         const title = textFn("tacticalTitle.condType");
         const value = this.formatCondType(textFn);
 
@@ -173,9 +203,7 @@ export class Tactical implements ITactical {
         };
     }
 
-    private getCondParamsFormatted(textFn: (key: string) => string): IBlackboardEntry<string>[] {
-        const formatter = Tactical.PERCENT_FORMATTER;
-
+    private getCondParamsFormatted(textFn: LocalizationFn): IBlackboardEntry<string>[] {
         if (this._condType === EquipableItemConditionType.CHAR_HP || this._condType === EquipableItemConditionType.ULT_ENERGY) {
             return [
                 {
@@ -184,7 +212,7 @@ export class Tactical implements ITactical {
                 },
                 {
                     key: textFn(`tacticalCondParamTitle.${this._condType}.param1`),
-                    value: formatter.format(Number(this._condParams[0]))
+                    value: textFn(`tacticalCondParam.${this._condType}.param1`, { param1: Number(this._condParams[0]) })
                 },
 
             ];
@@ -198,7 +226,7 @@ export class Tactical implements ITactical {
                 },
                 {
                     key: textFn(`tacticalCondParamTitle.${this._condType}.param2`),
-                    value: formatter.format(Number(this._condParams[1]))
+                    value: textFn(`tacticalCondParam.${this._condType}.param2`, { param2: Number(this._condParams[1]) })
                 }
             ];
         }
@@ -206,14 +234,14 @@ export class Tactical implements ITactical {
         return [];
     }
 
-    private getCastTimeFormatted(textFn: (key: string) => string): IBlackboardEntry<string> {
+    private getCastTimeFormatted(textFn: LocalizationFn): IBlackboardEntry<string> {
         return {
             key: textFn("tacticalTitle.castTime"),
             value: this.formatCastTime(textFn)
         };
     }
 
-    private getCastCountFormatted(textFn: (key: string) => string): IBlackboardEntry<string> {
+    private getCastCountFormatted(textFn: LocalizationFn): IBlackboardEntry<string> {
         let value = this.formatCastCount(textFn);
 
         return {
@@ -222,7 +250,7 @@ export class Tactical implements ITactical {
         };
     }
 
-    private getCastToMainCountFormatted(textFn: (key: string) => string): IBlackboardEntry<string> {
+    private getCastToMainCountFormatted(textFn: LocalizationFn): IBlackboardEntry<string> {
         let value = this.formatCastToMainCount(textFn);
 
         return {
@@ -231,7 +259,7 @@ export class Tactical implements ITactical {
         };
     }
 
-    private getCooldownFormatted(textFn: (key: string) => string): IBlackboardEntry<string> {
+    private getCooldownFormatted(textFn: LocalizationFn): IBlackboardEntry<string> {
         let value = this.formatCooldown(textFn);
 
         return {
@@ -240,7 +268,7 @@ export class Tactical implements ITactical {
         };
     }
 
-    private getRecoverTimeFormatted(textFn: (key: string) => string): IBlackboardEntry<string> {
+    private getRecoverTimeFormatted(textFn: LocalizationFn): IBlackboardEntry<string> {
         let value = this.formatRecoverTime(textFn);
 
         return {
@@ -249,7 +277,7 @@ export class Tactical implements ITactical {
         };
     }
 
-    private getRecoverUpperCountFormatted(textFn: (key: string) => string): IBlackboardEntry<string> {
+    private getRecoverUpperCountFormatted(textFn: LocalizationFn): IBlackboardEntry<string> {
         let value = this.formatRecoverUpperCount(textFn);
 
         return {

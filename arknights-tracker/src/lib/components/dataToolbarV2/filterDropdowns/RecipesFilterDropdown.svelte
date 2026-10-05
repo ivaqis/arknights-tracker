@@ -1,11 +1,11 @@
 <script lang="ts">
     import { ItemFieldComparatorName } from "$lib/classes/comparators/items/ItemFieldComparatorName";
-    import { FactoryEvent } from "$lib/classes/events/legacy/FactoryEvent.js";
     import DropdownTemplate from "$lib/components/dataToolbarV2/DropdownTemplate.svelte";
     import SelectableParamList from "$lib/components/dataToolbarV2/filterDropdowns/SelectableParamList.svelte";
     import GroupTitle from "$lib/components/dataToolbarV2/GroupTitle.svelte";
     import RarityParamBox from "$lib/components/dataToolbarV2/paramBoxes/RarityParamBox.svelte";
     import TextParamBox from "$lib/components/dataToolbarV2/paramBoxes/TextParamBox.svelte";
+    import { factoryEventStorage } from "$lib/dataStorages/events/factoryEventStorage";
     import { t } from "$lib/i18n";
     import type { RecipeFilterGroup, RecipeFilterValue } from "$lib/stores/filters/recipes/RecipeFilterValueMap";
     import type { RecipeSelectedFilterMap } from "$lib/stores/filters/recipes/RecipeSelectedFilterMap";
@@ -76,7 +76,7 @@
         <SelectableParamList
             paramList={filters.events}
             paramBox={TextParamBox}
-            getLocaleFunc={(param) => $t(FactoryEvent.getEvent(param)?.title ?? "sort.events.nonEvent")}
+            getLocaleFunc={(param) => $t(factoryEventStorage.byId.get(String(param))?.title ?? "sort.events.nonEvent")}
             bind:selectedParamSet={selectedFilters.events}
         />
 

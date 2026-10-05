@@ -1,5 +1,5 @@
 <script>
-    import { t } from "$lib/i18n.js";
+    import { t } from "$lib/i18n";
     import { characters } from "$lib/data/characters.js";
     import Image from "$lib/components/Image.svelte";
     import PotentialIcon from "$lib/components/operators/PotentialIcon.svelte";

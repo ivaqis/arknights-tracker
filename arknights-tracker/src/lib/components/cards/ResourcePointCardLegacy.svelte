@@ -1,5 +1,5 @@
 <script>
-    import { t } from "$lib/i18n.js";
+    import { t } from "$lib/i18n";
     import { ResourcePoint } from "$lib/classes/items/ResourcePoint.js";
     
     import Tooltip from "$lib/components/Tooltip.svelte";

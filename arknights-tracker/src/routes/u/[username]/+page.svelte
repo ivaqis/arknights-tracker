@@ -11,7 +11,7 @@
     import RatingCard from "$lib/components/records/RatingCard.svelte";
     import Tooltip from "$lib/components/Tooltip.svelte";
     import { characters } from "$lib/data/characters.js";
-    import { t } from "$lib/i18n.js";
+    import { t } from "$lib/i18n";
     import { addNotification } from "$lib/stores/notifications.js";
     import { isPageLoading } from "$lib/stores/pageLoading.js";
     import { getServerLabel } from "$lib/utils/profileUtils.js";

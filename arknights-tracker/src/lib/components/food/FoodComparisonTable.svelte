@@ -4,6 +4,7 @@
     import type { IFood } from "$lib/classes/gameData/items/food/IFood";
     import type { IFoodBuff } from "$lib/classes/gameData/items/food/IFoodBuff";
     import type { IItem } from "$lib/classes/gameData/items/IItem";
+    import { UsableTargetType } from "$lib/classes/gameData/items/usable/UsableTargetType";
     import type { SortDirection } from "$lib/classes/SortDirection";
     import { CardSize } from "$lib/components/cards/CardSize";
     import ItemStackCard from "$lib/components/cards/ItemStackCard.svelte";
@@ -12,7 +13,7 @@
     import { splitEquipmentView } from "$lib/stores/settings";
 
     type CondType = EquipableItemConditionType | "null";
-    type SortFieldType = "name" | "buff" | "tactical";
+    type SortFieldType = "name" | "buff" | "tactical" | "condParam" | "food";
     type SortTacticalField =
         | "condType"
         | "castTime"
@@ -21,20 +22,26 @@
         | "cooldown"
         | "recoverTime"
         | "recoverUpperCount";
+    type SortFoodField =
+        | "targetType";
     type DisplayedBuffValueTitle = { key: string; i18nKey: string };
     type DisplayedBuffTitle = { buffId: string; i18nKey: string; values: DisplayedBuffValueTitle[] };
+    type DisplayedCondParamTitle = { key: string; i18nKey: string; index: number };
+    type DisplayedCondTypeTitle = {
+        condType: EquipableItemConditionType;
+        i18nKey: string;
+        params: DisplayedCondParamTitle[]
+    };
 
     export let foodList: readonly IFood[];
     export let buffList: readonly string[];
     export let condTypeOrderList: readonly CondType[];
+    export let targetTypeOrderList: readonly UsableTargetType[];
+    export let selectedCondTypeSet: Set<CondType>;
     export let selectItemFn: (item: IItem) => void;
     export let selectedItem: IFood | null = null;
 
     const sortTacticalFieldOrder: { key: SortTacticalField; i18nKey: string }[] = [
-        {
-            key: "condType",
-            i18nKey: "tacticalTitle.condType"
-        },
         {
             key: "castTime",
             i18nKey: "tacticalTitle.castTime"
@@ -61,30 +68,84 @@
         }
     ];
 
+    const condParamFieldOrder: Record<string, DisplayedCondTypeTitle> = {
+        char_hp: {
+            condType: EquipableItemConditionType.CHAR_HP,
+            i18nKey: EquipableItemConditionType.getI18nKey(EquipableItemConditionType.CHAR_HP),
+            params: [
+                {
+                    key: "param2",
+                    i18nKey: "tacticalCondParamTitle.char_hp.param2",
+                    index: 1
+                },
+                {
+                    key: "param1",
+                    i18nKey: "tacticalCondParamTitle.char_hp.param1",
+                    index: 0
+                }
+            ]
+        },
+        ult_energy: {
+            condType: EquipableItemConditionType.ULT_ENERGY,
+            i18nKey: EquipableItemConditionType.getI18nKey(EquipableItemConditionType.ULT_ENERGY),
+            params: [
+                {
+                    key: "param2",
+                    i18nKey: "tacticalCondParamTitle.ult_energy.param2",
+                    index: 1
+                },
+                {
+                    key: "param1",
+                    i18nKey: "tacticalCondParamTitle.ult_energy.param1",
+                    index: 0
+                }
+            ]
+        },
+        damage: {
+            condType: EquipableItemConditionType.DAMAGE_TAKEN,
+            i18nKey: EquipableItemConditionType.getI18nKey(EquipableItemConditionType.DAMAGE_TAKEN),
+            params: [
+                {
+                    key: "param1",
+                    i18nKey: "tacticalCondParamTitle.damage.param1",
+                    index: 0
+                },
+                {
+                    key: "param2",
+                    i18nKey: "tacticalCondParamTitle.damage.param2",
+                    index: 1
+                }
+            ]
+        }
+    };
+
     let sortDirection: SortDirection = "desc";
     let sortFieldType: SortFieldType = "name";
     let sortBuffId: string | null = null;
     let sortBuffValue: "null" | string | null = null;
     let sortTacticalField: SortTacticalField | null = null;
+    let sortCondType: EquipableItemConditionType | null = null;
+    let sortCondParam: string | null = null;
+    let sortFoodField: SortFoodField | null = null;
 
     let condTypeComparator = new FieldValueComparator<IFood, CondType>(item => item.tactical?.condType ?? "null");
+    let targetTypeComparator = new FieldValueComparator<IFood, UsableTargetType>(item => item.targetType);
 
     $: if (condTypeOrderList) {
         condTypeComparator.setValueOrder(condTypeOrderList);
     }
+    $: if (targetTypeOrderList) {
+        targetTypeComparator.setValueOrder(targetTypeOrderList);
+    }
 
     let sortedItems: IFood[];
 
-    $: sortedItems = getSortedItems(foodList, condTypeOrderList, sortFieldType, sortBuffId, sortBuffValue, sortTacticalField, sortDirection);
+    $: sortedItems = getSortedItems(foodList, condTypeOrderList, sortFieldType, sortBuffId, sortBuffValue, sortTacticalField, sortCondType, sortCondParam, sortDirection);
 
     function toggleNameSort(currentDirection: SortDirection | null) {
         sortFieldType = "name";
 
-        if (currentDirection === null || currentDirection === "asc") {
-            sortDirection = "desc";
-        } else {
-            sortDirection = "asc";
-        }
+        toggleSortDirection(currentDirection);
     }
 
     function toggleBuffSort(buffId: string, buffValue: string, currentDirection: SortDirection | null) {
@@ -92,21 +153,36 @@
         sortBuffId = buffId;
         sortBuffValue = buffValue;
 
-        if (currentDirection === null || currentDirection === "asc") {
-            sortDirection = "desc";
-        } else {
-            sortDirection = "asc";
-        }
+        toggleSortDirection(currentDirection);
     }
 
     function toggleTacticalSort(field: SortTacticalField, currentDirection: SortDirection | null) {
         sortFieldType = "tactical";
         sortTacticalField = field;
 
-        if (currentDirection === null || currentDirection === "asc") {
-            sortDirection = "desc";
+        toggleSortDirection(currentDirection);
+    }
+
+    function toggleCondParam(condType: EquipableItemConditionType, param: string, currentDirection: SortDirection | null) {
+        sortFieldType = "condParam";
+        sortCondType = condType;
+        sortCondParam = param;
+
+        toggleSortDirection(currentDirection);
+    }
+
+    function toggleFoodSort(field: SortFoodField, currentDirection: SortDirection | null) {
+        sortFieldType = "food";
+        sortFoodField = field;
+
+        toggleSortDirection(currentDirection);
+    }
+
+    function toggleSortDirection(currentDirection: SortDirection | null, defaultSortDirection: SortDirection = "desc") {
+        if (currentDirection === null || currentDirection !== defaultSortDirection) {
+            sortDirection = defaultSortDirection;
         } else {
-            sortDirection = "asc";
+            sortDirection = defaultSortDirection === "desc" ? "asc" : "desc";
         }
     }
 
@@ -116,6 +192,8 @@
                             sortBuffId: string | null,
                             sortBuffValue: "null" | string | null,
                             sortTacticalField: SortTacticalField | null,
+                            sortCondType: EquipableItemConditionType | null,
+                            sortCondParam: string | null,
                             sortDirection: SortDirection
     ): IFood[] {
         const reverseMultiplier = sortDirection === "asc" ? -1 : 1;
@@ -162,10 +240,47 @@
                     return -1 * reverseMultiplier;
                 }
 
-                const valueA = tacticalA[sortTacticalField];
-                const valueB = tacticalB[sortTacticalField];
+                let valueA = tacticalA[sortTacticalField];
+                let valueB = tacticalB[sortTacticalField];
+
+                if (sortTacticalField === "castToMainCount" || sortTacticalField === "castCount") {
+                    if (valueA === 0) {
+                        valueA = +Infinity;
+                    }
+                    if (valueB === 0) {
+                        valueB = +Infinity;
+                    }
+                }
 
                 return (valueB - valueA) * reverseMultiplier;
+            }
+
+            if (sortFieldType === "condParam" && sortCondType && sortCondParam) {
+                const tacticalA = a.tactical;
+                const tacticalB = b.tactical;
+
+                if (tacticalA === null || tacticalA.condType !== sortCondType) {
+                    return 1 * reverseMultiplier;
+                }
+
+                if (tacticalB === null || tacticalB.condType !== sortCondType) {
+                    return -1 * reverseMultiplier;
+                }
+
+                let valueA = tacticalA.getValue(sortCondParam);
+                let valueB = tacticalB.getValue(sortCondParam);
+
+                if (isNaN(valueA) || isNaN(valueB)) {
+                    return tacticalB.formatCondParam(sortCondParam, $t).localeCompare(tacticalA.formatCondParam(sortCondParam, $t));
+                }
+
+                return (valueB - valueA) * reverseMultiplier;
+            }
+
+            if (sortFieldType === "food" && sortFoodField) {
+                if (sortFoodField === "targetType") {
+                    return targetTypeComparator.compare(a, b) * reverseMultiplier;
+                }
             }
 
             return 0;
@@ -173,8 +288,10 @@
     }
 
     let displayedBuffTitles: DisplayedBuffTitle[] = [];
+    let displayedCondTypeTitles: DisplayedCondTypeTitle[] = [];
 
     $: displayedBuffTitles = getDisplayedBuffTitles(foodList, buffList);
+    $: displayedCondTypeTitles = getDisplayedCondTypeTitles(condTypeOrderList, selectedCondTypeSet);
 
     function getDisplayedBuffTitles(foodList: readonly IFood[], buffList: readonly string[]): DisplayedBuffTitle[] {
         const result: DisplayedBuffTitle[] = [];
@@ -215,27 +332,31 @@
         };
     }
 
+    function getDisplayedCondTypeTitles(condTypeOrderList: readonly CondType[], selectedCondTypeSet: Set<CondType>): DisplayedCondTypeTitle[] {
+        return condTypeOrderList
+            .map(condType => condParamFieldOrder[condType])
+            .filter(entry => entry !== undefined && selectedCondTypeSet.has(entry.condType));
+    }
+
 </script>
 
 
-<table class="rounded-xl min-w-full">
+<table class="min-w-full">
 
     <thead class="bg-gray-200 dark:bg-[#424242] font-sdk font-bold text-sm text-gray-700 dark:text-[#FDFDFD] sticky top-0 z-50">
 
-    <tr>
+    <tr class="bg-inherit">
         <th
-            class="relative p-0"
+            class="p-0 xl:sticky left-0 z-10 bg-inherit"
             rowspan="2"
             style="min-width: 250px; min-height: 500px;"
         >
-            <div class="absolute inset-0">
                 <FoodComparisonTableSortButton
                     onClick={(cur) => toggleNameSort(cur)}
                     sortDirection={sortFieldType === "name" ? sortDirection : null}
                 >
                     {$t("page.food.table.name")}
                 </FoodComparisonTableSortButton>
-            </div>
         </th>
 
         {#each displayedBuffTitles as buffTitle}
@@ -243,6 +364,34 @@
             <th colspan="{buffTitle.values.length}">
                 <div class="px-4 py-2">
                     {$t(buffTitle.i18nKey)}
+                </div>
+            </th>
+
+        {/each}
+
+        <th rowspan="2">
+            <FoodComparisonTableSortButton
+                onClick={cur => toggleFoodSort("targetType", cur)}
+                sortDirection={(sortFieldType === "food" && sortFoodField === "targetType") ? sortDirection : null}
+            >
+                {$t("usableTitle.targetType")}
+            </FoodComparisonTableSortButton>
+        </th>
+
+        <th rowspan="2">
+            <FoodComparisonTableSortButton
+                onClick={cur => toggleTacticalSort("condType", cur)}
+                sortDirection={(sortFieldType === "tactical" && sortTacticalField === "condType") ? sortDirection : null}
+            >
+                {$t("tacticalTitle.condType")}
+            </FoodComparisonTableSortButton>
+        </th>
+
+        {#each displayedCondTypeTitles as condTypeTitle}
+
+            <th colspan="{condTypeTitle.params.length}">
+                <div class="px-4 py-2">
+                    {$t(condTypeTitle.i18nKey)}
                 </div>
             </th>
 
@@ -297,6 +446,20 @@
 
         {/each}
 
+        {#each displayedCondTypeTitles as condTypeTitle}
+            {#each condTypeTitle.params as condParamTitle}
+
+                <th>
+                    <FoodComparisonTableSortButton
+                        sortDirection={(sortFieldType === "condParam" && sortCondType === condTypeTitle.condType && sortCondParam === condParamTitle.key) ? sortDirection : null}
+                        onClick={(cur) => toggleCondParam(condTypeTitle.condType, condParamTitle.key, cur)}
+                    >
+                        {$t(condParamTitle.i18nKey)}
+                    </FoodComparisonTableSortButton>
+                </th>
+
+            {/each}
+        {/each}
 
     </tr>
 
@@ -310,7 +473,7 @@
 
         <tr class="odd:bg-white dark:odd:bg-[#363636] even:bg-gray-100 dark:even:bg-[#393939]">
 
-            <td>
+            <td class="xl:sticky left-0 z-10 bg-inherit">
                 <div class="flex flex-row items-center gap-2 p-2">
 
                     {#if $splitEquipmentView}
@@ -363,7 +526,7 @@
                             {#if entry}
 
                                 <div class="p-2 text-right">
-                                    {entry.getFormattedValue()}
+                                    {entry.getFormattedValue($t)}
                                 </div>
 
                             {:else}
@@ -392,9 +555,16 @@
 
             {/each}
 
+            <td>
+                {$t(UsableTargetType.getI18nKey(food.targetType))}
+            </td>
+
             {#if tactical === null}
 
-                {#each new Array(7) as _}
+                {@const
+                    condParamColumnCount = displayedCondTypeTitles.reduce((sum, entry) => sum + entry.params.length, 0)}
+
+                {#each new Array(7 + condParamColumnCount) as _}
 
                     <td>
                         {""}
@@ -407,6 +577,34 @@
                 <td>
                     {tactical.formatCondType($t)}
                 </td>
+
+                {#each displayedCondTypeTitles as condTypeTitle}
+
+                    {#if tactical.condType === condTypeTitle.condType}
+
+                        {#each condTypeTitle.params as condParamTitle}
+
+                            <td>
+                                <div class="p-2 text-right">
+                                    {tactical.formatCondParam(condParamTitle.key, $t)}
+                                </div>
+                            </td>
+
+                        {/each}
+
+                    {:else}
+
+                        {#each new Array(condTypeTitle.params.length) as _}
+
+                            <td>
+                                {""}
+                            </td>
+
+                        {/each}
+
+                    {/if}
+
+                {/each}
 
                 <td>
                     <div class="p-2 text-right">

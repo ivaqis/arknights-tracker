@@ -27,9 +27,32 @@ export class RichTextExpressionInterpreter {
 
     public evaluate(expression: string): number {
         const tokens = this.tokenize(expression);
-        const parser = new ExpressionParser(this._getValueFn, tokens);
+
+        const map = this.getValuesMap(tokens);
+
+        const parser = new ExpressionParser((key: string) => map[key], tokens);
 
         return parser.parse();
+    }
+
+    private getValuesMap(tokens: readonly ExpressionToken[]): Record<string, number> {
+        const result: Record<string, number> = {};
+
+        for (const token of tokens) {
+            if (token.type !== "variable") {
+                continue;
+            }
+
+            const value = this._getValueFn(token.value);
+
+            if (typeof value !== "number") {
+                throw new Error(`Variable '${token.value}' must be a number`);
+            }
+
+            result[token.value] = value;
+        }
+
+        return result;
     }
 
     private tokenize(input: string): ExpressionToken[] {

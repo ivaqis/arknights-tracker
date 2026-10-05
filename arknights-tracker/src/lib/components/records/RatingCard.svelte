@@ -2,7 +2,7 @@
     import { browser } from "$app/environment";
     import { fetchRankingRate } from "$lib/api.js";
     import { bannerTypes } from "$lib/data/bannerTypes.js";
-    import { t } from "$lib/i18n.js";
+    import { t } from "$lib/i18n";
     import { accountStore } from "$lib/stores/accounts.js";
     import { currentUiLocale, normalizeLocale } from "$lib/stores/locale.js";
     import { pullData } from "$lib/stores/pulls.js";

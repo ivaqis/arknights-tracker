@@ -6,6 +6,7 @@ import { type ItemMaterial } from "$lib/classes/gameData/items/ItemMaterial";
 import { type ItemType } from "$lib/classes/gameData/items/ItemType";
 import type { ITactical } from "$lib/classes/gameData/items/tactical/ITactical";
 import { UsableItem } from "$lib/classes/gameData/items/usable/UsableItem";
+import type { UsableTargetType } from "$lib/classes/gameData/items/usable/UsableTargetType";
 import type { IImageIcon } from "$lib/classes/icons/IImageIcon";
 import type { Rarity } from "$lib/classes/Rarity";
 
@@ -13,14 +14,14 @@ export class Food extends UsableItem implements IFood {
     private readonly _duration: number;
     private readonly _buffs: readonly IFoodBuff[];
 
-    public constructor(id: string, gameId: string, rarity: Rarity, groupId: ItemGroup, type: ItemType, itemMaterial: ItemMaterial | null, icon: IImageIcon, subIcon: IImageIcon | null, tactical: ITactical | null, duration: number, buffs: readonly IFoodBuff[]) {
-        super(id, gameId, rarity, groupId, type, itemMaterial, icon, subIcon, tactical);
+    public constructor(id: string, gameId: string, rarity: Rarity, groupId: ItemGroup, type: ItemType, itemMaterial: ItemMaterial | null, icon: IImageIcon, subIcon: IImageIcon | null, tactical: ITactical | null, targetType: UsableTargetType, duration: number, buffs: readonly IFoodBuff[]) {
+        super(id, gameId, rarity, groupId, type, itemMaterial, icon, subIcon, tactical, targetType);
 
         this._duration = duration;
         this._buffs = buffs;
     }
 
-    public static createFoodFromItem(item: IItem, tactical: ITactical | null, duration: number, buffs: IFoodBuff[]): Food {
+    public static createFoodFromItem(item: IItem, tactical: ITactical | null, targetType: UsableTargetType, duration: number, buffs: IFoodBuff[]): Food {
         return new Food(
             item.id,
             item.gameId,
@@ -31,6 +32,7 @@ export class Food extends UsableItem implements IFood {
             item.icon,
             item.subIcon,
             tactical,
+            targetType,
             duration,
             buffs,
         );

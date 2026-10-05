@@ -1,5 +1,5 @@
 <script>
-    import { t } from "$lib/i18n.js";
+    import { t } from "$lib/i18n";
     import { pullData } from "$lib/stores/pulls.js";
     import { manualPotentials } from "$lib/stores/potentials.js";
     import { accountStore } from "$lib/stores/accounts.js";

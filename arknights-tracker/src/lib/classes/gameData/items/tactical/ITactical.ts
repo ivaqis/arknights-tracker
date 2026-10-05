@@ -1,6 +1,7 @@
 import type { IBlackboardEntry } from "$lib/classes/blackboard/IBlackboardEntry";
 import type { IBoardable } from "$lib/classes/gameData/IBoardable";
 import type { EquipableItemConditionType } from "$lib/classes/gameData/items/equipable/EquipableItemConditionType";
+import type { LocalizationFn } from "$lib/i18n";
 
 export interface ITactical extends IBoardable {
     get condType(): EquipableItemConditionType;
@@ -14,13 +15,15 @@ export interface ITactical extends IBoardable {
     get levelUpCastCount(): number;
     get levelUpRecoverUpperCount(): number;
 
-    formatCondType(textFn: (key: string) => string): string;
-    formatCastTime(textFn: (key: string) => string): string;
-    formatCastCount(textFn: (key: string) => string): string;
-    formatCastToMainCount(textFn: (key: string) => string): string;
-    formatCooldown(textFn: (key: string) => string): string;
-    formatRecoverTime(textFn: (key: string) => string): string;
-    formatRecoverUpperCount(textFn: (key: string) => string): string;
+    formatCondType(textFn: LocalizationFn): string;
+    formatCondParam(key: string, textFn: LocalizationFn): string;
+    formatCondParams(textFn: LocalizationFn): string[];
+    formatCastTime(textFn: LocalizationFn): string;
+    formatCastCount(textFn: LocalizationFn): string;
+    formatCastToMainCount(textFn: LocalizationFn): string;
+    formatCooldown(textFn: LocalizationFn): string;
+    formatRecoverTime(textFn: LocalizationFn): string;
+    formatRecoverUpperCount(textFn: LocalizationFn): string;
 
-    getDetailList(textFn: (key: string) => string): IBlackboardEntry<string>[];
+    getDetailList(textFn: LocalizationFn): IBlackboardEntry<string>[];
 }

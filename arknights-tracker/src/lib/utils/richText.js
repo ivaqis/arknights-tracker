@@ -1,5 +1,5 @@
 import { get } from "svelte/store";
-import { t, isI18nReady } from "$lib/i18n.js";
+import { t, isI18nReady } from "$lib/i18n";
 import { tags } from "$lib/data/contractTags.js";
 
 const tagIdToKey = {};

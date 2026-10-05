@@ -5,6 +5,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_agfly_1_agmelee_1_moss_2_1",
         "duration": 0.0,
         "stackingKey": null,
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_heal_moss_2",
@@ -33,6 +34,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_agmelee_1_moss_1_lbmob_1_1",
         "duration": 0.0,
         "stackingKey": null,
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_heal_potion_2",
@@ -53,6 +55,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_agmelee_1_sp_2_slimeml_1_1",
         "duration": 300.0,
         "stackingKey": "buff",
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_def_buff_potion_1",
@@ -73,6 +76,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_agrange_1_erhound_1_sp_1_1",
         "duration": 300.0,
         "stackingKey": "buff",
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_atk_buff_potion_1",
@@ -93,6 +97,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_agrange_1_lbshamman_bottled_1",
         "duration": 300.0,
         "stackingKey": "buff",
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_resis_up_potion_1",
@@ -113,6 +118,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_agrange_1_moss_2_lbmob_1_1",
         "duration": 300.0,
         "stackingKey": "buff",
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_def_buff_potion_1",
@@ -133,6 +139,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_bottled_flower1spc_1",
         "duration": 0.0,
         "stackingKey": null,
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_heal_potion_2",
@@ -153,6 +160,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_bottled_flower1spc_2",
         "duration": 0.0,
         "stackingKey": null,
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_heal_potion_2",
@@ -173,6 +181,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_bottled_flower1spc_3",
         "duration": 0.0,
         "stackingKey": null,
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_heal_potion_2",
@@ -193,6 +202,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_bottled_flower2spc_1",
         "duration": 0.0,
         "stackingKey": null,
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_heal_moss_2",
@@ -221,6 +231,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_bottled_flower2spc_2",
         "duration": 0.0,
         "stackingKey": null,
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_heal_moss_2",
@@ -249,6 +260,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_bottled_flower2spc_3",
         "duration": 0.0,
         "stackingKey": null,
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_heal_moss_2",
@@ -277,6 +289,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_bottled_food_1",
         "duration": 0.0,
         "stackingKey": null,
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_heal_moss_1",
@@ -301,6 +314,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_bottled_food_2",
         "duration": 0.0,
         "stackingKey": null,
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_heal_moss_1",
@@ -325,6 +339,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_bottled_food_3",
         "duration": 0.0,
         "stackingKey": null,
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_heal_moss_1",
@@ -349,6 +364,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_bottled_food_4",
         "duration": 0.0,
         "stackingKey": null,
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_heal_potion_1",
@@ -365,6 +381,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_bottled_food_5",
         "duration": 0.0,
         "stackingKey": null,
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_heal_potion_1",
@@ -381,6 +398,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_bottled_grass1spc_1",
         "duration": 0.0,
         "stackingKey": null,
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_heal_potion_2",
@@ -401,6 +419,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_bottled_grass1spc_2",
         "duration": 0.0,
         "stackingKey": null,
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_heal_potion_2",
@@ -421,6 +440,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_bottled_grass2spc_1",
         "duration": 0.0,
         "stackingKey": null,
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_heal_moss_2",
@@ -449,6 +469,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_bottled_grass2spc_2",
         "duration": 0.0,
         "stackingKey": null,
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_heal_moss_2",
@@ -477,6 +498,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_bottled_insec1_1",
         "duration": 0.0,
         "stackingKey": null,
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_custom_revive_1",
@@ -493,6 +515,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_bottled_insec1_2",
         "duration": 0.0,
         "stackingKey": null,
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_custom_revive_1",
@@ -509,6 +532,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_bottled_insec2_1",
         "duration": 300.0,
         "stackingKey": "buff",
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_dmg_up_potion_1",
@@ -529,6 +553,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_bottled_insec2_2",
         "duration": 300.0,
         "stackingKey": "buff",
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_dmg_up_potion_1",
@@ -549,6 +574,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_bottled_moss_1_2_1",
         "duration": 300.0,
         "stackingKey": "buff",
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_usprt_buff_potion_1",
@@ -569,6 +595,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_bottled_moss_2_animal_1",
         "duration": 0.0,
         "stackingKey": null,
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_heal_potion_2",
@@ -589,6 +616,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_bottled_rec_hp_1",
         "duration": 0.0,
         "stackingKey": null,
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_heal_potion_1",
@@ -605,6 +633,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_bottled_rec_hp_2",
         "duration": 0.0,
         "stackingKey": null,
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_heal_potion_1",
@@ -621,6 +650,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_bottled_rec_hp_3",
         "duration": 0.0,
         "stackingKey": null,
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_heal_potion_1",
@@ -637,6 +667,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_bottled_rec_hp_4",
         "duration": 0.0,
         "stackingKey": null,
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_heal_moss_1",
@@ -661,6 +692,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_bottled_rec_hp_5",
         "duration": 0.0,
         "stackingKey": null,
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_heal_moss_1",
@@ -685,6 +717,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_corp1_animal_1",
         "duration": 0.0,
         "stackingKey": null,
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_heal_potion_2",
@@ -705,6 +738,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_corp2_animal_1",
         "duration": 0.0,
         "stackingKey": null,
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_heal_potion_2",
@@ -729,6 +763,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_corp3_animal_1",
         "duration": 300.0,
         "stackingKey": "buff",
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_atk_buff_potion_2",
@@ -762,6 +797,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_corp3_grass1_1",
         "duration": 300.0,
         "stackingKey": "buff",
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_ctr_buff_potion_1",
@@ -795,6 +831,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_corp4_animal_1",
         "duration": 300.0,
         "stackingKey": "buff",
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_def_buff_potion_1",
@@ -815,6 +852,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_corp4_grass2_1",
         "duration": 0.0,
         "stackingKey": null,
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_heal_potion_2",
@@ -835,6 +873,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_corp4_spc",
         "duration": 0.0,
         "stackingKey": null,
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_ultsp_potion_1",
@@ -851,6 +890,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_dog_1_slimeml_1_1",
         "duration": 0.0,
         "stackingKey": null,
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_ultsp_potion_1",
@@ -867,6 +907,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_dog_hsmob_corp_1",
         "duration": 0.0,
         "stackingKey": null,
+        "targetType": "team",
         "buffs": [
             {
                 "buffId": "buff_common_heal_potion_2",
@@ -887,6 +928,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_erhound_1_agmelee_1_moss_1_1",
         "duration": 300.0,
         "stackingKey": "buff",
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_resis_up_potion_1",
@@ -907,6 +949,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_ethillu_1_wgslime_1_wgthorns_1_1",
         "duration": 300.0,
         "stackingKey": "buff",
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_cdr_buff_potion_1",
@@ -927,6 +970,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_firebat_1_agrange_1_1",
         "duration": 300.0,
         "stackingKey": "buff",
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_atk_buff_potion_1",
@@ -973,6 +1017,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_hscrane_1_hsmob_1_grass_1_1",
         "duration": 0.0,
         "stackingKey": null,
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_heal_potion_2",
@@ -993,6 +1038,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_hsfly_1_slimeml_1_hsmob_1_1",
         "duration": 300.0,
         "stackingKey": "buff",
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_ctr_buff_potion_1",
@@ -1013,6 +1059,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_hshog_1_hsmob_1_slimeml_1_1",
         "duration": 300.0,
         "stackingKey": "buff",
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_def_buff_potion_2",
@@ -1046,6 +1093,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_hsmob_1_dog_1_1",
         "duration": 300.0,
         "stackingKey": "buff",
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_usprt_buff_potion_1",
@@ -1079,6 +1127,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_hsmob_1_grass_2_1",
         "duration": 0.0,
         "stackingKey": null,
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_heal_moss_2",
@@ -1107,6 +1156,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_jzmonk_1_hsmob_1_1",
         "duration": 300.0,
         "stackingKey": "buff",
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_ctr_buff_potion_1",
@@ -1140,6 +1190,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_klbuds_1_hsfly_1_1",
         "duration": 300.0,
         "stackingKey": "buff",
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_def_buff_potion_1",
@@ -1173,6 +1224,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_klcreatures_1_wgthorns_1_1",
         "duration": 300.0,
         "stackingKey": "buff",
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_usprt_buff_potion_1",
@@ -1193,6 +1245,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_lbmob_1_dog_1_moss_1_1",
         "duration": 300.0,
         "stackingKey": "buff",
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_mainattri_up_potion_1",
@@ -1213,6 +1266,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_lbmob_1_lbshamman_1_sp_1_1",
         "duration": 0.0,
         "stackingKey": null,
+        "targetType": "team",
         "buffs": [
             {
                 "buffId": "buff_common_heal_moss_2",
@@ -1241,6 +1295,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_lbmob_1_moss_2_bottled_1",
         "duration": 0.0,
         "stackingKey": null,
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_heal_potion_2",
@@ -1265,6 +1320,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_lbshamman_1_agmelee_1_1",
         "duration": 0.0,
         "stackingKey": null,
+        "targetType": "team",
         "buffs": [
             {
                 "buffId": "buff_common_heal_potion_2",
@@ -1285,6 +1341,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_lbshield_1_slimeml_1_dog_1_1",
         "duration": 300.0,
         "stackingKey": "buff",
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_phydmg_up_potion_1",
@@ -1305,6 +1362,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_mimicw_1_moss_1_moss_2_1",
         "duration": 300.0,
         "stackingKey": "buff",
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_atk_buff_potion_1",
@@ -1325,6 +1383,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_plant_grass_powder_1",
         "duration": 0.0,
         "stackingKey": null,
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_heal_potion_1",
@@ -1341,6 +1400,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_plant_grass_powder_2",
         "duration": 0.0,
         "stackingKey": null,
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_heal_moss_1",
@@ -1365,6 +1425,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_plant_grass_spc_powder_1",
         "duration": 0.0,
         "stackingKey": null,
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_heal_potion_2",
@@ -1385,6 +1446,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_plant_grass_spc_powder_2",
         "duration": 0.0,
         "stackingKey": null,
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_heal_moss_2",
@@ -1413,6 +1475,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_plant_moss_powder_1",
         "duration": 0.0,
         "stackingKey": null,
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_heal_potion_1",
@@ -1429,6 +1492,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_plant_moss_powder_2",
         "duration": 0.0,
         "stackingKey": null,
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_heal_moss_1",
@@ -1453,6 +1517,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_plant_moss_spc_powder_1",
         "duration": 0.0,
         "stackingKey": null,
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_heal_potion_2",
@@ -1473,6 +1538,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_plant_moss_spc_powder_2",
         "duration": 0.0,
         "stackingKey": null,
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_heal_moss_2",
@@ -1501,6 +1567,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_slimeml_1_agrange_1_moss_2_1",
         "duration": 0.0,
         "stackingKey": null,
+        "targetType": "team",
         "buffs": [
             {
                 "buffId": "buff_common_ultsp_potion_1",
@@ -1517,6 +1584,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_slimeml_1_erhound_1_agfly_1_1",
         "duration": 0.0,
         "stackingKey": null,
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_heal_moss_1",
@@ -1545,6 +1613,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_slwood_1_hshog_1_1",
         "duration": 0.0,
         "stackingKey": null,
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_heal_potion_2",
@@ -1569,6 +1638,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_sp_1_moss_1_agmelee_1_1",
         "duration": 0.0,
         "stackingKey": null,
+        "targetType": "team",
         "buffs": [
             {
                 "buffId": "buff_common_heal_potion_2",
@@ -1589,6 +1659,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_sp_2_moss_2_agrange_1_1",
         "duration": 0.0,
         "stackingKey": null,
+        "targetType": "team",
         "buffs": [
             {
                 "buffId": "buff_common_heal_moss_2",
@@ -1617,6 +1688,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_wgshoal_1_grass_1_grass_2_1",
         "duration": 300.0,
         "stackingKey": "buff",
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_atk_buff_potion_1",
@@ -1650,6 +1722,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_wgslime_1_hsmob_1_grass_2_1",
         "duration": 0.0,
         "stackingKey": null,
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_heal_moss_2",
@@ -1678,6 +1751,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_wgslime_1_wgthorns_1_1",
         "duration": 300.0,
         "stackingKey": "buff",
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_def_buff_potion_1",
@@ -1724,6 +1798,7 @@ export const food: Readonly<Record<string, FoodData>> = {
         "id": "item_wgthorns_1_hshog_1_hsmob_1_1",
         "duration": 300.0,
         "stackingKey": "buff",
+        "targetType": "user",
         "buffs": [
             {
                 "buffId": "buff_common_resis_up_potion_1",

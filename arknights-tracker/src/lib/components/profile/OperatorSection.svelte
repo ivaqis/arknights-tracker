@@ -1,6 +1,6 @@
 <script>
     import { onDestroy } from "svelte";
-    import { t } from "$lib/i18n.js";
+    import { t } from "$lib/i18n";
     import { currentLocale } from "$lib/stores/locale.js";
     import Icon from "$lib/components/Icon.svelte";
     import Image from "$lib/components/Image.svelte";

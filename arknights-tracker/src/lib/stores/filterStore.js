@@ -291,6 +291,7 @@ export function getDefaultFoodSortParams() {
     return {
         sortFieldOrder: [
             "buff",
+            "targetType",
             "equipCond",
             "rarity",
             "locale",
@@ -326,6 +327,10 @@ export function getDefaultFoodSortParams() {
                 "ult_energy",
                 "damage",
                 "null"
+            ],
+            targetType: [
+                "user",
+                "team",
             ],
             rarity: [1, 2, 3, 4, 5],
             locale: "a-z"

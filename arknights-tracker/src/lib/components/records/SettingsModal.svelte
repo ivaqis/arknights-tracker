@@ -4,7 +4,7 @@
   import Icon from "$lib/components/Icon.svelte";
   import MultiSelect from "$lib/components/MultiSelect.svelte";
   import { banners } from "$lib/data/banners.js";
-  import { t } from "$lib/i18n.js";
+  import { t } from "$lib/i18n";
   import {
     recordsCardsOrder,
     recordsEnableDragDrop,

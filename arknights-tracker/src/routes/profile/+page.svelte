@@ -24,7 +24,7 @@
     import RatingCard from "$lib/components/records/RatingCard.svelte";
     import Tooltip from "$lib/components/Tooltip.svelte";
     import { characters } from "$lib/data/characters.js";
-    import { t } from "$lib/i18n.js";
+    import { t } from "$lib/i18n";
     import { accountStore } from "$lib/stores/accounts.js";
     import { login, logout, user } from "$lib/stores/cloudStore.js";
     import { addNotification } from "$lib/stores/notifications.js";

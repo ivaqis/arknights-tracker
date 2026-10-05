@@ -18,9 +18,21 @@ export class RichTextParamParser {
     public parse(param: string): string {
         const [expr, format] = param.split(":");
 
+        if (/^\w+$/.test(expr)) {
+            const value = this._getValueFn(expr);
+
+            if (typeof value === "string") {
+                return value;
+            }
+        }
+
         const interpreter = new RichTextExpressionInterpreter(this._getValueFn);
 
         const value = interpreter.evaluate(expr);
+
+        if (!format) {
+            return String(value);
+        }
 
         return ExpressionFormatter.format(value, format);
     }

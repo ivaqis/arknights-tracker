@@ -1,5 +1,6 @@
 <script lang="ts">
     import { EquipableItemConditionType } from "$lib/classes/gameData/items/equipable/EquipableItemConditionType";
+    import { UsableTargetType } from "$lib/classes/gameData/items/usable/UsableTargetType";
     import SelectableParamList from "$lib/components/dataToolbarV2/filterDropdowns/SelectableParamList.svelte";
     import GroupTitle from "$lib/components/dataToolbarV2/GroupTitle.svelte";
     import TextParamBox from "$lib/components/dataToolbarV2/paramBoxes/TextParamBox.svelte";
@@ -7,9 +8,11 @@
 
     export let condTypeList: CondType[];
     export let buffList: string[];
+    export let targetTypeList: UsableTargetType[];
 
     export let selectedCondTypeSet: Set<CondType>;
     export let selectedBuffSet: Set<string>;
+    export let selectedTargetTypeSet: Set<UsableTargetType>;
 
     type CondType = EquipableItemConditionType | "null";
 
@@ -33,6 +36,16 @@
         selectedBuffSet = selectedBuffSet;
     }
 
+    function toggleTargetTypeList() {
+        if (selectedTargetTypeSet.size === 0) {
+            targetTypeList.forEach(item => selectedTargetTypeSet.add(item));
+        } else {
+            selectedTargetTypeSet.clear();
+        }
+
+        selectedTargetTypeSet = selectedTargetTypeSet;
+    }
+
     function getBuffLocale(buffId: string): string {
         return $t(`buffNames.${buffId}`);
     }
@@ -43,7 +56,25 @@
 
 </script>
 
-<div class="flex flex-col gap-3 p-5 dark:bg-[#383838] dark:border-[#444444] bg-[#F2F2F2] rounded-2xl shadow-2xl border border-gray-200">
+<div class="flex flex-col gap-3 p-5 dark:bg-[#383838] dark:border-[#444444] bg-[#F2F2F2] rounded-3xl shadow-2xl border border-gray-200">
+
+    <div class="flex flex-col items-start gap-2">
+
+        <GroupTitle
+            asButton={true}
+            onClick={() => toggleTargetTypeList()}
+        >
+            {$t("sort.targetType")}
+        </GroupTitle>
+
+        <SelectableParamList
+            paramList={targetTypeList}
+            paramBox={TextParamBox}
+            getLocaleFunc={param => $t(UsableTargetType.getI18nKey(param as UsableTargetType))}
+            bind:selectedParamSet={selectedTargetTypeSet}
+        />
+
+    </div>
 
     <div class="flex flex-col items-start gap-2">
 

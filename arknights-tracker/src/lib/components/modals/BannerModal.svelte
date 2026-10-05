@@ -11,7 +11,7 @@
     import Modal from "$lib/components/modals/Modal.svelte";
     import { characters } from "$lib/data/characters.js";
     import { weapons } from "$lib/data/weapons.js";
-    import { t } from "$lib/i18n.js";
+    import { t } from "$lib/i18n";
     import { accountStore } from "$lib/stores/accounts.js";
     import { currentUiLocale, normalizeLocale } from "$lib/stores/locale.js";
     import { pullData } from "$lib/stores/pulls.js";

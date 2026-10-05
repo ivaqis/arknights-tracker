@@ -29,6 +29,7 @@
     import Button from "$lib/components/Button.svelte";
     import { CardSize } from "$lib/components/cards/CardSize";
     import GasEnvCard from "$lib/components/cards/GasEnvCard.svelte";
+    import Icon from "$lib/components/Icon.svelte";
     import BuildingRecipeGroup from "$lib/components/recipes/formulas/BuildingRecipeGroup.svelte";
     import RecipeFormula from "$lib/components/recipes/formulas/RecipeFormula.svelte";
     import RecipeItemChain from "$lib/components/recipes/formulas/RecipeItemChain.svelte";
@@ -48,7 +49,7 @@
     import { manualCraftDataStorage } from "$lib/dataStorages/crafts/manualCraftDataStorage";
     import { gasEnvStorage } from "$lib/dataStorages/gasEnv/gasEnvStorage";
     import { itemStorage } from "$lib/dataStorages/items/itemStorage";
-    import { t } from "$lib/i18n.js";
+    import { t } from "$lib/i18n";
     import { getRecipeTreeUrlBuilding, getRecipeTreeUrlCraft, getRecipeTreeUrlItem } from "$lib/utils/linkUtils";
 
     export let data;
@@ -216,6 +217,8 @@
     }
 
     let isBottomSheetOpen: boolean = false;
+
+    $: isBottomSheetOpen = data.isBottomSheetOpen;
 
 </script>
 
@@ -1192,3 +1195,21 @@
     </BottomSheet>
 
 </div>
+
+{#if !isBottomSheetOpen && (selectedItemNode || selectedBuildingNode)}
+
+    <button
+        type="button"
+        class="xl:hidden fixed bottom-6 right-6 z-40 w-14 h-14 bg-[#F9B90C] hover:bg-[#FFC01E] text-black rounded-full shadow-lg flex items-center justify-center transition-all active:scale-95 border border-white dark:border-[#1A1A1A] cursor-pointer"
+        on:click={() => (isBottomSheetOpen = true)}
+        title="Results"
+    >
+
+        <Icon
+            name="inbox"
+            class="w-6 h-6 text-black"
+        />
+
+    </button>
+
+{/if}

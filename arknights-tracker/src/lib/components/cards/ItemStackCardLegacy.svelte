@@ -5,7 +5,7 @@
     import Icon from "$lib/components/Icon.svelte";
     import Image from "$lib/components/Image.svelte";
     import Tooltip from "$lib/components/Tooltip.svelte";
-    import { t } from "$lib/i18n.js";
+    import { t } from "$lib/i18n";
     import { getRarityColor } from "$lib/utils/colorUtils.js";
 
     export let itemId = "";
