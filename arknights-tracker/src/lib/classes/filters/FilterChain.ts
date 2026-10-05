@@ -2,28 +2,25 @@ import type { IFilter } from "$lib/classes/filters/IFilter";
 import type { IFilterChain } from "$lib/classes/filters/IFilterChain";
 import type { Readable } from "svelte/store";
 
-export class FilterChain<TEntity> implements IFilterChain<TEntity> {
-    private readonly _chain: IFilter<TEntity>[][] = [[]];
+export class FilterChain<TEntity, TFilter extends IFilter<TEntity> = IFilter<TEntity>> implements IFilterChain<TEntity, TFilter> {
+    private readonly _chain: TFilter[][] = [[]];
 
-    private constructor() {}
+    public constructor() {}
 
-    public static create<T>(start: IFilter<T>): FilterChain<T> {
-        const chain = new FilterChain<T>();
-
-        chain.and(start);
-        let  a: Readable<T>
-
-        return chain;
-    }
-
-    public and(filter: IFilter<TEntity>): this {
+    public and(filter: TFilter): this {
         this._chain.at(-1)!.push(filter);
 
         return this;
     }
 
-    public or(filter: IFilter<TEntity>): this {
-        this._chain.push([filter]);
+    public or(filter: TFilter): this {
+        const last = this._chain.at(-1)!;
+
+        if (last.length === 0) {
+            last.push(filter);
+        } else {
+            this._chain.push([filter]);
+        }
 
         return this;
     }

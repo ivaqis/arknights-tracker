@@ -1,5 +1,5 @@
 import type { IFilterSelector } from "$lib/classes/filters/IFilterSelector";
-import type { Subscriber } from "svelte/store";
+import type { Subscriber, Unsubscriber } from "svelte/store";
 
 export abstract class AFilterSelector<TEntity, TParam extends string | number> implements IFilterSelector<TEntity, TParam> {
     private readonly _selectedParamSet: Set<TParam> = new Set();
@@ -7,6 +7,8 @@ export abstract class AFilterSelector<TEntity, TParam extends string | number> i
 
     private _paramList: readonly TParam[];
     private _paramSet: Set<TParam>;
+    private _batchDepth: number = 0;
+    private _batchChanged: boolean = false;
 
     protected constructor(paramList: readonly TParam[]) {
         this._paramList = paramList;
@@ -18,10 +20,13 @@ export abstract class AFilterSelector<TEntity, TParam extends string | number> i
     }
 
     public set paramList(value: readonly TParam[]) {
-        this._paramList = value;
-        this._paramSet = new Set(value);
+        this.batch(() => {
+            this._paramList = value;
+            this._paramSet = new Set(value);
 
-        this.validateSelected();
+            this.touch();
+            this.validateSelected();
+        });
     }
 
     public get selectedCount(): number {
@@ -32,28 +37,41 @@ export abstract class AFilterSelector<TEntity, TParam extends string | number> i
         return this.selectedCount === 0;
     }
 
-    public add(param: TParam): this {
+    public add(param: TParam): boolean {
         if (!this.isValidParam(param)) {
             throw new Error(`Invalid param: ${param}`);
         }
 
-        this._selectedParamSet.add(param);
+        if (this._selectedParamSet.has(param)) {
+            return false;
+        }
 
-        return this;
+        this._selectedParamSet.add(param);
+        this.touch();
+
+        return true;
     }
 
     public remove(param: TParam): boolean {
-        return this._selectedParamSet.delete(param);
+        const wasDeleted = this._selectedParamSet.delete(param);
+
+        if (wasDeleted) {
+            this.touch();
+        }
+
+        return wasDeleted;
     }
 
     public select(...params: TParam[]): void {
-        for (const param of params) {
-            if (this.isSelected(param)) {
-                this.remove(param);
-            } else {
-                this.add(param);
+        this.batch(() => {
+            for (const param of params) {
+                if (this.isSelected(param)) {
+                    this.remove(param);
+                } else {
+                    this.add(param);
+                }
             }
-        }
+        });
     }
 
     public isSelected(param: TParam): boolean {
@@ -61,13 +79,20 @@ export abstract class AFilterSelector<TEntity, TParam extends string | number> i
     }
 
     public addAll(): void {
-        for (const param of this._paramList) {
-            this.add(param);
-        }
+        this.batch(() => {
+            for (const param of this._paramList) {
+                this.add(param);
+            }
+        });
     }
 
     public clear(): void {
+        if (this._selectedParamSet.size === 0) {
+            return;
+        }
+
         this._selectedParamSet.clear();
+        this.touch();
     }
 
     public toggleAll(): void {
@@ -78,17 +103,58 @@ export abstract class AFilterSelector<TEntity, TParam extends string | number> i
         }
     }
 
+    public subscribe(run: Subscriber<this>): Unsubscriber {
+        run(this);
+
+        this._subscribers.add(run);
+
+        return () => {
+            this._subscribers.delete(run);
+        };
+    }
+
     public abstract satisfies(entity: TEntity): boolean;
+
+    protected touch(): void {
+        if (this._batchDepth > 0) {
+            this._batchChanged = true;
+        } else {
+            this.notify();
+        }
+    }
+
+    protected batch(action: () => void): void {
+        this._batchDepth++;
+
+        try {
+            action();
+        } finally {
+            this._batchDepth--;
+
+            if (this._batchDepth === 0 && this._batchChanged) {
+                this._batchChanged = false;
+                this.notify();
+            }
+        }
+    }
 
     private isValidParam(param: TParam): boolean {
         return this._paramSet.has(param);
     }
 
     private validateSelected(): void {
-        for (const param of this._selectedParamSet.values()) {
-            if (!this.isValidParam(param)) {
-                this.remove(param);
+        this.batch(() => {
+            for (const param of this._selectedParamSet.values()) {
+                if (!this.isValidParam(param)) {
+                    this.remove(param);
+                }
             }
+        });
+    }
+
+    private notify() {
+        for (const run of [...this._subscribers]) {
+            run(this);
         }
     }
 }
