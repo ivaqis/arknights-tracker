@@ -107,12 +107,12 @@
             params: [
                 {
                     key: "param1",
-                    i18nKey: "tacticalCondParamTitle.ult_energy.param1",
+                    i18nKey: "tacticalCondParamTitle.damage.param1",
                     index: 0
                 },
                 {
                     key: "param2",
-                    i18nKey: "tacticalCondParamTitle.ult_energy.param2",
+                    i18nKey: "tacticalCondParamTitle.damage.param2",
                     index: 1
                 }
             ]
