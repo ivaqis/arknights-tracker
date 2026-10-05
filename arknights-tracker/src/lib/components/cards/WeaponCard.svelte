@@ -207,7 +207,7 @@
         >
             <div
                 class="
-                absolute inset-0 bg-gradient-to-br from-[#4F4F4F] to-[#323232] dark:from-[#3a3a3a] dark:to-[#1a1a1a] transition-all duration-200
+                absolute inset-0 bg-gradient-to-br from-[#4a4a4a] to-[#2d2d2d] dark:from-[#3a3a3a] dark:to-[#1a1a1a] transition-all duration-200
                 group-hover:from-[#5E5E5E] group-hover:to-[#3E3E3E]
                 dark:group-hover:from-[#404040] dark:group-hover:to-[#2C2C2C]
                 "

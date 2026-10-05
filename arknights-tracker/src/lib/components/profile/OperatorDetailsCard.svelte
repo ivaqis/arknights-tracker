@@ -13,6 +13,7 @@
     import { getRarityColor, getHexColorByElement } from "$lib/utils/colorUtils.js";
     import { parseRichText, hyperlinkAction } from "$lib/utils/richText.js";
     import { addNotification } from "$lib/stores/notifications.js";
+    import { getWeaponTerms as defaultGetWeaponTerms } from "$lib/utils/profileUtils.js";
 
     const localeModules = {
         en: import.meta.glob("/src/lib/locales/en/equipment.json"),
@@ -142,7 +143,7 @@
     export let talentsList;
     export let getWeaponData;
     export let getWeaponIcon;
-    export let getWeaponTerms = () => [];
+    export let getWeaponTerms = defaultGetWeaponTerms;
     export let getStaticEquipId;
     export let getEquipRarity;
     export let getEquipTier;

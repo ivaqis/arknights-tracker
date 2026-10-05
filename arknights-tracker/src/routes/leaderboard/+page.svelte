@@ -742,7 +742,7 @@
 
                         <div class="flex flex-col justify-between items-start md:items-end gap-4 min-w-0 md:max-w-md">
                             {#if currentDungeonLocale.description}
-                                <p class="text-xs sm:text-sm text-gray-500 dark:text-gray-300 italic text-left md:text-right font-sans leading-snug">
+                                <p class="text-xs sm:text-sm text-gray-500 dark:text-gray-300 italic text-left md:text-right font-sans leading-snug drop-shadow-[0_1px_2px_rgba(0,0,0,0.7)] dark:drop-shadow-[0_1px_3px_rgba(0,0,0,0.7)]">
                                     {currentDungeonLocale.description}
                                 </p>
                             {/if}
