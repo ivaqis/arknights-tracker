@@ -154,6 +154,7 @@
     export let profileName = "";
     export let activeAccount = null;
     export let hideUid = false;
+    export let accountSlot = 1;
 
     let isExporting = false;
 
@@ -879,6 +880,13 @@
         }
         if (activeAccount?.game_uid && !hideUid) {
             url.searchParams.set("uid", activeAccount.game_uid);
+            url.searchParams.delete("acc");
+        } else if (accountSlot && accountSlot > 1) {
+            url.searchParams.set("acc", accountSlot.toString());
+            url.searchParams.delete("uid");
+        } else {
+            url.searchParams.delete("uid");
+            url.searchParams.delete("acc");
         }
         navigator.clipboard.writeText(url.toString()).then(() => {
             copied = true;

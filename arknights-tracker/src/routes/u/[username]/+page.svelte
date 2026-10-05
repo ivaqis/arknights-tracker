@@ -22,6 +22,7 @@
     $: initialChar = $page.url.searchParams.get("char") || $page.url.searchParams.get("operator");
     $: urlServer = $page.url.searchParams.get("server");
     $: urlUid = $page.url.searchParams.get("uid");
+    $: urlAcc = $page.url.searchParams.get("acc") || $page.url.searchParams.get("account");
 
     let profile = null;
     let loading = true;
@@ -48,20 +49,31 @@
                 profile = data;
                 favoriteGameUid = profile.favorite_game_uid || "";
                 if (profile.details && profile.details.length > 0) {
+                    const sortedList = [...profile.details].sort((a, b) => {
+                        if (favoriteGameUid) {
+                            if (a.game_uid === favoriteGameUid) return -1;
+                            if (b.game_uid === favoriteGameUid) return 1;
+                        }
+                        const levelA = a.info?.base?.level ?? a.level ?? 1;
+                        const levelB = b.info?.base?.level ?? b.level ?? 1;
+                        return levelB - levelA;
+                    });
+
+                    const accIdx = parseInt(urlAcc || "", 10);
                     if (urlUid && profile.details.some(d => d.game_uid === urlUid)) {
                         selectedGameUid = urlUid;
+                    } else if (!isNaN(accIdx) && accIdx >= 1 && accIdx <= sortedList.length) {
+                        selectedGameUid = sortedList[accIdx - 1].game_uid;
                     } else if (urlServer && profile.details.some(d => String(d.info?.base?.serverId ?? d.serverId) === urlServer)) {
                         const matched = profile.details.find(d => String(d.info?.base?.serverId ?? d.serverId) === urlServer);
-                        selectedGameUid = matched ? matched.game_uid : profile.details[0].game_uid;
+                        selectedGameUid = matched ? matched.game_uid : sortedList[0].game_uid;
+                    } else if (initialChar && sortedList.some(d => (d.info?.chars || []).some(c => c.id === initialChar || c.charData?.id === initialChar))) {
+                        const matchedCharAcc = sortedList.find(d => (d.info?.chars || []).some(c => c.id === initialChar || c.charData?.id === initialChar));
+                        selectedGameUid = matchedCharAcc ? matchedCharAcc.game_uid : sortedList[0].game_uid;
                     } else {
                         const fav = favoriteGameUid;
-                        const hasFav = profile.details.some(d => d.game_uid === fav);
-                        const highestLevelAcc = [...profile.details].sort((a, b) => {
-                            const levelA = a.info?.base?.level ?? a.level ?? 1;
-                            const levelB = b.info?.base?.level ?? b.level ?? 1;
-                            return levelB - levelA;
-                        })[0];
-                        selectedGameUid = hasFav ? fav : (highestLevelAcc?.game_uid || profile.details[0].game_uid);
+                        const hasFav = sortedList.some(d => d.game_uid === fav);
+                        selectedGameUid = hasFav ? fav : sortedList[0].game_uid;
                     }
                 }
             }
@@ -297,6 +309,7 @@
                             hasBackground={!!profile?.background}
                             initialCharId={initialChar}
                             hideUid={isUidHidden}
+                            accountSlot={sortedDetails.findIndex(d => d.game_uid === activeAccount?.game_uid) + 1}
                         />
                     </div>
 

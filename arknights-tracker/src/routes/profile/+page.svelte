@@ -1079,6 +1079,7 @@
                             profileName={profile?.name}
                             hasBackground={!!profile?.background}
                             {hideUid}
+                            accountSlot={sortedDetails.findIndex(d => d.game_uid === activeAccount?.game_uid) + 1}
                         />
                     </div>
 
