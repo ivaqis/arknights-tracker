@@ -25,6 +25,12 @@
       hoverBorder: "hover:border-green-500/70 dark:hover:border-green-500/70",
       hoverText: "hover:text-green-900 dark:hover:text-green-300"
     },
+    yellow: {
+      border: "border-[#FFE145] dark:border-[#FFE145]/70",
+      text: "text-yellow-700 dark:text-[#FFE145]",
+      hoverBorder: "hover:border-[#FFE145] dark:hover:border-[#FFE145]",
+      hoverText: "hover:text-yellow-900 dark:hover:text-yellow-300"
+    },
   };
 
   $: c = colors[color] || colors.gray;

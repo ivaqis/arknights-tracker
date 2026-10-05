@@ -996,7 +996,7 @@
         <div class="w-auto inline-block">
             <Button
                 variant="round"
-                color="yellow"
+                color="gray"
                 onClick={() => (showCacheModal = true)}
             >
                 {$t("settings.cache.openModal")}

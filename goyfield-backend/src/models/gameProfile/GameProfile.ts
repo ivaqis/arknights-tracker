@@ -1,4 +1,5 @@
 import { logger } from "@/logger.js";
+import { Achieve } from "@models/gameProfile/Achieve.js";
 import { Base } from "@models/gameProfile/Base.js";
 import { BpSystem } from "@models/gameProfile/BpSystem.js";
 import { Character } from "@models/gameProfile/Character.js";
@@ -20,6 +21,7 @@ export class GameProfile implements IEntityClass<GameProfileEntity> {
     private readonly _weeklyMission: WeeklyMission;
     private readonly _seekSuspicion: SeekSuspicion;
     private readonly _chars: Character[];
+    private readonly _achieve: Achieve | null;
 
     private constructor(base: Base,
                         dungeon: Dungeon,
@@ -27,7 +29,8 @@ export class GameProfile implements IEntityClass<GameProfileEntity> {
                         dailyMission: DailyMission,
                         weeklyMission: WeeklyMission,
                         seekSuspicion: SeekSuspicion,
-                        chars: Character[]
+                        chars: Character[],
+                        achieve: Achieve | null = null
     ) {
         this._base = base;
         this._dungeon = dungeon;
@@ -36,6 +39,7 @@ export class GameProfile implements IEntityClass<GameProfileEntity> {
         this._weeklyMission = weeklyMission;
         this._seekSuspicion = seekSuspicion;
         this._chars = chars;
+        this._achieve = achieve;
     }
 
     public static getFromData(data: DetailData, serverId: string) {
@@ -46,7 +50,8 @@ export class GameProfile implements IEntityClass<GameProfileEntity> {
             DailyMission.getFromData(data.dailyMission),
             WeeklyMission.getFromData(data.weeklyMission),
             SeekSuspicion.getFromData(data.seekSuspicion),
-            this.getChars(data.chars, data.base.gender)
+            this.getChars(data.chars, data.base.gender),
+            Achieve.getFromData(data.achieve)
         );
     }
 
@@ -58,7 +63,8 @@ export class GameProfile implements IEntityClass<GameProfileEntity> {
             DailyMission.getFromEntity(entity.dailyMission),
             WeeklyMission.getFromEntity(entity.weeklyMission),
             SeekSuspicion.getFromEntity(entity.seekSuspicion),
-            this.getCharsFromEntity(entity.chars)
+            this.getCharsFromEntity(entity.chars),
+            Achieve.getFromEntity(entity.achieve)
         );
     }
 
@@ -113,6 +119,10 @@ export class GameProfile implements IEntityClass<GameProfileEntity> {
         return this._chars;
     }
 
+    public get achieve(): Achieve | null {
+        return this._achieve;
+    }
+
     public getEntity(): GameProfileEntity {
         return {
             base: this._base.getEntity(),
@@ -121,7 +131,8 @@ export class GameProfile implements IEntityClass<GameProfileEntity> {
             dungeon: this._dungeon.getEntity(),
             seekSuspicion: this._seekSuspicion.getEntity(),
             weeklyMission: this._weeklyMission.getEntity(),
-            chars: this._chars.map(char => char.getEntity())
+            chars: this._chars.map(char => char.getEntity()),
+            achieve: this._achieve ? this._achieve.getEntity() : null
         };
     }
 }

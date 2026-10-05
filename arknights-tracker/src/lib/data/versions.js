@@ -76,6 +76,10 @@ export const changelogData = [
             "achv_quest_yvonne",
             "achv_social_spaceship_be_helped"
         ],
+        startTime: "2025-12-09 08:00:00",
+        startTimeAsia: "2025-12-09 08:00:00",
+        endTime: "2026-03-11 17:00:00",
+        endTimeAsia: "2026-03-12 04:00:00"
     },
     {
         version: "1.1",
@@ -100,6 +104,10 @@ export const changelogData = [
             "achv_fac_techtree_jinlong_2",
             "achv_quest_e7m4"
         ],
+        startTime: "2026-03-11 22:00:00",
+        startTimeAsia: "2026-03-12 11:00:00",
+        endTime: "2026-04-16 17:00:00",
+        endTimeAsia: "2026-04-17 04:00:00"
     },
     {
         version: "1.2",
@@ -129,6 +137,10 @@ export const changelogData = [
             "achv_hide_root",
             "achv_quest_e9m3"
         ],
+        startTime: "2026-04-16 22:00:00",
+        startTimeAsia: "2026-04-17 11:00:00",
+        endTime: "2026-06-04 17:00:00",
+        endTimeAsia: "2026-06-05 04:00:00"
     },
     {
         version: "1.3",
@@ -149,6 +161,10 @@ export const changelogData = [
             "achv_quest_camille",
             "achv_quest_mifu"
         ],
+        startTime: "2026-06-04 22:00:00",
+        startTimeAsia: "2026-06-05 11:00:00",
+        endTime: "2026-07-15 17:00:00",
+        endTimeAsia: "2026-07-16 04:00:00"
     },
     {
         version: "1.4",
@@ -182,6 +198,10 @@ export const changelogData = [
             "achv_quest_e11m1",
             "achv_quest_e11m3"
         ],
+        startTime: "2026-07-15 22:00:00",
+        startTimeAsia: "2026-07-16 11:00:00",
+        endTime: "2026-09-01 17:00:00",
+        endTimeAsia: "2026-09-02 04:00:00"
     },
     {
         version: "1.5",

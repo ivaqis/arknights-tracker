@@ -15,10 +15,14 @@
         isAchievementFullyCompleted
     } from '$lib/stores/achievementStore';
     import { changelogData } from '$lib/data/versions';
+    import Button from '$lib/components/Button.svelte';
     import Icon from '$lib/components/Icon.svelte';
     import Select from '$lib/components/Select.svelte';
     import SwitchButton from '$lib/components/SwitchButton.svelte';
     import AchievementCard from '$lib/components/achievements/AchievementCard.svelte';
+    import AchievementSyncModal from '$lib/components/achievements/AchievementSyncModal.svelte';
+
+    let syncModalOpen = false;
 
     const categoryIcons: Record<string, string> = {
         achv_type_quest: 'achQuest',
@@ -292,20 +296,32 @@
 <div class="w-full min-h-screen text-gray-100 flex flex-col">
     <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6 md:mb-8">
         <div class="flex items-center gap-3">
-            <h2 class="text-3xl md:text-5xl font-black tracking-wide text-white font-sdk">
+            <h2 class="text-3xl md:text-5xl font-bold tracking-wide text-[#21272C] dark:text-[#FDFDFD]">
                 {$t('pages.achievements')}
             </h2>
 
             <span
-                class="bg-[#2E2E2E] px-3.5 py-1 mt-1.5 text-xs md:text-sm font-bold text-gray-200 rounded-full border border-[#444444] shrink-0"
+                class="bg-[#2E2E2E] px-3.5 py-1 mt-1.5 text-xs md:text-sm font-bold text-gray-200 rounded-full border border-[#444444] shrink-0 font-nums"
             >
                 {totalStats.completed} {$t('achievements.of')} {totalStats.total}
             </span>
         </div>
 
         <div class="flex flex-wrap items-center gap-3.5 justify-start md:justify-end">
+            <Button
+                variant="roundSmall"
+                color="gray"
+                onClick={() => (syncModalOpen = true)}
+                className="h-[38px] px-4"
+            >
+                <div class="flex items-center gap-2 text-xs md:text-sm font-bold">
+                    <Icon name="refresh" class="w-4 h-4" />
+                    <span>{$t('achievements.sync')}</span>
+                </div>
+            </Button>
+
             <div class="flex items-center gap-2.5 shrink-0 select-none">
-                <span class="text-xs md:text-sm text-gray-300 font-medium">
+                <span class="text-xs md:text-sm text-gray-700 dark:text-gray-300 font-medium">
                     {$t('achievements.onlyIncomplete')}
                 </span>
                 <SwitchButton bind:isActive={onlyIncomplete} />
@@ -329,14 +345,14 @@
                     type="text"
                     bind:value={searchQuery}
                     placeholder={$t('achievements.searchPlaceholder')}
-                    class="w-full h-[38px] pl-9 pr-8 bg-[#343434] border border-[#444444] hover:bg-[#383838] focus:border-[#FFE145] rounded-full text-xs md:text-sm text-gray-100 placeholder-gray-400 outline-none transition-all"
+                    class="w-full h-[38px] pl-9 pr-8 bg-white dark:bg-[#343434] border border-gray-300 dark:border-[#444444] hover:bg-gray-50 dark:hover:bg-[#383838] focus:border-yellow-400 dark:focus:border-[#FFE145] rounded-full text-xs md:text-sm text-gray-900 dark:text-gray-100 placeholder-gray-400 outline-none transition-all"
                 />
 
                 {#if searchQuery}
                     <button
                         on:click={() => (searchQuery = '')}
                         aria-label="Clear search"
-                        class="absolute right-2.5 top-1/2 -translate-y-1/2 text-gray-400 hover:text-white"
+                        class="absolute right-2.5 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600 dark:hover:text-white"
                     >
                         <Icon name="close" class="w-3.5 h-3.5" />
                     </button>
@@ -355,12 +371,12 @@
                     <button
                         on:click={() => scrollToCategory(cat.id)}
                         class="relative w-full text-left p-3 rounded-xl border transition-all flex items-center justify-between gap-3 select-none overflow-hidden {isSelected
-                            ? 'bg-[#2D2D2D] border-[#FFE145]/40 text-white'
-                            : 'bg-[#222222]/60 hover:bg-[#2D2D2D] border-transparent text-gray-400'}"
+                            ? 'bg-yellow-50/80 dark:bg-[#2D2D2D] border-yellow-400/80 dark:border-[#FFE145]/40 text-[#21272C] dark:text-white shadow-sm'
+                            : 'bg-white/80 dark:bg-[#222222]/60 hover:bg-gray-100/80 dark:hover:bg-[#2D2D2D] border-gray-200 dark:border-transparent text-gray-600 dark:text-gray-400'}"
                     >
                         <div
                             class="absolute -right-4 top-1/2 -translate-y-1/2 pointer-events-none select-none z-0 transition-all duration-200 {isSelected
-                                ? 'text-[#FFE145] opacity-20'
+                                ? 'text-[#d4b931] dark:text-[#FFE145] opacity-20'
                                 : 'text-gray-400 opacity-[0.06]'}"
                         >
                             <Icon name="achPattern" class="w-36 h-auto" />
@@ -369,17 +385,17 @@
                         <div class="flex items-center gap-3 min-w-0 relative z-10">
                             <div
                                 class="w-7 h-7 flex items-center justify-center shrink-0 transition-colors {isSelected
-                                    ? 'text-[#FFE145]'
-                                    : 'text-gray-500'}"
+                                    ? 'text-[#d4b931] dark:text-[#FFE145]'
+                                    : 'text-gray-400 dark:text-gray-500'}"
                             >
                                 <Icon name={iconName} class="w-6 h-6" />
                             </div>
 
                             <div class="flex flex-col min-w-0">
-                                <span class="text-sm font-bold truncate {isSelected ? 'text-white' : 'text-gray-300'}">
+                                <span class="text-sm font-bold truncate {isSelected ? 'text-[#21272C] dark:text-white' : 'text-gray-700 dark:text-gray-300'}">
                                     {$t(`achCategories.${cat.id}`)}
                                 </span>
-                                <span class="text-xs text-gray-400 font-nums">
+                                <span class="text-xs text-gray-500 dark:text-gray-400 font-nums">
                                     {cat.stats.completed}/{cat.stats.total} ({cat.stats.percent}%)
                                 </span>
                             </div>
@@ -387,34 +403,36 @@
 
                         <div class="relative z-10 shrink-0 flex items-center">
                             {#if cat.stats.percent === 100 && cat.stats.total > 0}
-                                <div class="w-5 h-5 rounded-full bg-[#FFE145]/20 flex items-center justify-center text-[#FFE145]">
+                                <div class="w-5 h-5 rounded-full bg-yellow-400/20 dark:bg-[#FFE145]/20 flex items-center justify-center text-[#d4b931] dark:text-[#FFE145]">
                                     <Icon name="success" class="w-3.5 h-3.5" />
                                 </div>
                             {/if}
                         </div>
                     </button>
 
-                    <div class="ml-4 pl-3 border-l border-[#3E3E3E] flex flex-col gap-1 py-1">
-                        {#each cat.groups as grp (grp.id)}
-                            {@const isGrpSelected = selectedGroupId === grp.id}
-                            <button
-                                on:click={() => scrollToGroup(grp.id, cat.id)}
-                                class="w-full text-left py-1.5 px-2.5 rounded-lg text-xs font-medium transition-all flex items-center justify-between gap-2 select-none {isGrpSelected
-                                    ? 'bg-[#2E2E2E] text-[#FFE145] font-bold shadow-sm'
-                                    : 'text-gray-400 hover:text-gray-200 hover:bg-[#262626]'}"
-                            >
-                                <span class="truncate">{$t(`achGroups.${grp.id}`)}</span>
-                                <span class="text-[11px] font-nums opacity-70 shrink-0">
-                                    {grp.stats.completed}/{grp.stats.total}
-                                </span>
-                            </button>
-                        {/each}
-                    </div>
+                    {#if cat.groups.length > 1}
+                        <div class="ml-4 pl-3 border-l border-gray-300 dark:border-[#444444] flex flex-col gap-1 py-1">
+                            {#each cat.groups as grp (grp.id)}
+                                {@const isGrpSelected = selectedGroupId === grp.id}
+                                <button
+                                    on:click={() => scrollToGroup(grp.id, cat.id)}
+                                    class="w-full text-left py-1.5 px-2.5 rounded-lg text-xs font-medium transition-all flex items-center justify-between gap-2 select-none {isGrpSelected
+                                        ? 'bg-yellow-100/80 text-[#92780c] dark:bg-[#2E2E2E] dark:text-[#FFE145] font-bold shadow-sm'
+                                        : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-gray-200 dark:hover:bg-[#262626]'}"
+                                >
+                                    <span class="truncate">{$t(`achGroups.${grp.id}`)}</span>
+                                    <span class="text-[11px] font-nums opacity-70 shrink-0">
+                                        {grp.stats.completed}/{grp.stats.total}
+                                    </span>
+                                </button>
+                            {/each}
+                        </div>
+                    {/if}
                 </div>
             {/each}
         </div>
 
-        <div class="hidden lg:block w-[1px] bg-[#3E3E3E] self-stretch shrink-0"></div>
+        <div class="hidden lg:block w-[1px] bg-gray-300 dark:bg-[#444444] self-stretch shrink-0"></div>
 
         <div class="flex-1 w-full min-w-0 flex flex-col gap-10">
             {#if filteredCategoriesWithGroups.length === 0}
@@ -427,11 +445,11 @@
             {:else}
                 {#each filteredCategoriesWithGroups as catSection (catSection.category.id)}
                     <section id={catSection.category.id} class="scroll-mt-6 flex flex-col gap-6">
-                        <div class="flex items-center gap-3 border-b border-[#3E3E3E] pb-3">
-                            <div class="w-8 h-8 flex items-center justify-center text-white shrink-0">
+                        <div class="flex items-center gap-3 border-b border-gray-300 dark:border-[#444444] pb-3">
+                            <div class="w-8 h-8 flex items-center justify-center text-gray-800 dark:text-white shrink-0">
                                 <Icon name={categoryIcons[catSection.category.id] || 'achievement'} class="w-7 h-7" />
                             </div>
-                            <h3 class="text-xl md:text-2xl font-black text-white font-sdk tracking-wide">
+                            <h3 class="text-xl md:text-2xl font-black text-gray-800 dark:text-white tracking-wide">
                                 {$t(`achCategories.${catSection.category.id}`)}
                             </h3>
                         </div>
@@ -439,9 +457,11 @@
                         <div class="flex flex-col gap-8">
                             {#each catSection.groups as group (group.groupId)}
                                 <div id={group.groupId} class="scroll-mt-6 flex flex-col gap-3.5">
-                                    <h4 class="text-base md:text-lg font-bold text-gray-300 tracking-wide">
-                                        {group.groupName}
-                                    </h4>
+                                    {#if catSection.groups.length > 1}
+                                        <h4 class="text-base md:text-lg font-bold text-gray-600 dark:text-gray-300 tracking-wide">
+                                            {group.groupName}
+                                        </h4>
+                                    {/if}
 
                                     <div
                                         class="grid gap-4"
@@ -465,4 +485,9 @@
         </div>
     </div>
 </div>
+
+<AchievementSyncModal
+    isOpen={syncModalOpen}
+    on:close={() => (syncModalOpen = false)}
+/>
 

@@ -346,7 +346,8 @@
     "recipeTree": "Rantaian Resipi",
     "leaderboard": "Papan Pendahulu",
     "profile": "Profil",
-    "icons": "အိုင်ကွန်များ"
+    "icons": "အိုင်ကွန်များ",
+    "achievements": "Pencapaian"
   },
   "mouths": {
     "january": "Januari",
@@ -724,7 +725,13 @@
     "fullCalendar": "Kalendar penuh",
     "arsenalExchangeWarning": "Data ini berdasarkan fail putaran senjata pelayan China dan mungkin tidak tepat",
     "uiLanguagesDesc": "Bahasa yang menyokong terjemahan antara muka tapak web. Untuk istilah permainan, bahasa terjemahan permainan dengan sokongan penuh yang dipilih akan digunakan. Anda boleh membantu dengan terjemahan di <a href=\"{discordLink}\" target=\"_blank\" class=\"text-yellow-400 hover:underline\">pelayan Discord Goyfield</a>",
-    "fullSupportLanguages": "Bahasa yang Disokong Penuh"
+    "fullSupportLanguages": "Bahasa yang Disokong Penuh",
+    "gameUpdate": "ဂိမ်း အပ်ဒိတ်",
+    "maintenanceInProgress": "ဆာဗာ ပြုပြင်ထိန်းသိမ်းနေသည်",
+    "updateExpected": "မျှော်လင့်ထားသည်",
+    "versionLabel": "ဗားရှင်း {version}",
+    "goToChangelog": "ပြောင်းလဲမှုမှတ်တမ်း",
+    "currentGameVersion": "လက်ရှိ ဂိမ်းဗားရှင်း: {version}"
   },
   "cookies": {
     "title": "Kami menggunakan kuki",
@@ -882,6 +889,7 @@
     "delete_confirm": "Padam token yang disimpan ini?",
     "settings_title": "Tetapan Profil",
     "settings_hide_data": "Sembunyikan butiran akaun di papan pendahulu",
+    "settings_hide_uid": "Sembunyikan UID akaun",
     "settings_primary_account": "Pautkan Akaun Gacha",
     "settings_primary_account_none": "Tiada",
     "bind_to_view_luck": "Pautkan akaun permainan dalam tetapan untuk melihat statistik nasib anda.",
@@ -897,7 +905,7 @@
     "image_size_error": "Imej terlalu kecil. Resolusi minimum ialah 128x128 piksel.",
     "crop_avatar_title": "Potong Avatar",
     "avatar_success": "Avatar berjaya dikemas kini!",
-    "no_connected_accounts": "Tiada akaun permainan yang disambungkan. Segerakkan akaun anda menggunakan butang Kemas Kini di atas.",
+    "no_connected_accounts": "Tiada akaun permainan yang disambungkan. Segerakkan akaun anda menggunakan butang di atas.",
     "edit_nickname": "Edit nama samaran",
     "copy_profile_link": "Salin pautan profil",
     "share": "Kongsi",
@@ -961,9 +969,28 @@
     "token_already_used": "Token ini telah digunakan",
     "token_expired_badge": "Tamat tempoh",
     "unauthorized": "Tidak dibenarkan",
-    "user_not_found": "Pengguna tidak dijumpai"
+    "user_not_found": "Pengguna tidak dijumpai",
+    "syncing": "Menyegerakkan...",
+    "max_profiles_reached": "ချိတ်ဆက်ထားသော ပရိုဖိုင်အရေအတွက် အများဆုံး ၃ ခုသာ ခွင့်ပြုပါသည်"
   },
   "equipSkills": {
     "NoAttr": "Tiada atribut"
+  },
+  "achievements": {
+    "of": "daripada",
+    "onlyIncomplete": "Hanya yang belum selesai",
+    "allVersions": "Semua versi",
+    "searchPlaceholder": "Cari...",
+    "empty": "Tiada pencapaian ditemui",
+    "sync": "Penyegerakan",
+    "syncModalTitle": "Segerakkan Pencapaian",
+    "selectAccount": "Pilih Akaun:",
+    "syncAction": "Segerakkan",
+    "syncSuccess": "Pencapaian disegerakkan: {count}",
+    "syncNothingToUpdate": "Semua pencapaian sudah dikemas kini",
+    "notLoggedInDesc": "Untuk menyegerakkan pencapaian, anda mesti log masuk dan memautkan profil permainan anda.",
+    "noAccountsDesc": "Tiada akaun permainan dipautkan ke profil anda. Pautkan akaun di halaman Profil.",
+    "noMedalsInProfile": "Tiada data pencapaian ditemui dalam akaun permainan yang dipilih",
+    "syncWarningProgress": "Menyegerakkan pencapaian dengan profil dalam permainan akan menetapkan semula kemajuan pencapaian semasa."
   }
 }

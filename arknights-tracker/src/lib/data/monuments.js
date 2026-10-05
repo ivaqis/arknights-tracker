@@ -1,6 +1,10 @@
 export const monumentGroups = [
     {
         "id": "indie_group_h06",
+        "startTime": "2026-08-06 12:00:00",
+        "startTimeAsia": "2026-08-06 12:00:00",
+        "endTime": "2026-08-20 04:00:00",
+        "endTimeAsia": "2026-08-20 04:00:00",
         "stages": [
             {
                 "id": "indie_hard025",
@@ -68,6 +72,10 @@ export const monumentGroups = [
     },
     {
         "id": "indie_group_h01",
+        "startTime": "2026-02-22 12:00:00",
+        "startTimeAsia": "2026-02-22 12:00:00",
+        "endTime": "2026-03-11 17:00:00",
+        "endTimeAsia": "2026-03-12 06:00:00",
         "stages": [
             {
                 "id": "indie_hard019",
@@ -147,6 +155,10 @@ export const monumentGroups = [
     },
     {
         "id": "indie_group_h04",
+        "startTime": "2026-05-08 12:00:00",
+        "startTimeAsia": "2026-05-08 12:00:00",
+        "endTime": "2026-05-22 04:00:00",
+        "endTimeAsia": "2026-05-22 04:00:00",
         "stages": [
             {
                 "id": "indie_hard013",
@@ -236,6 +248,10 @@ export const monumentGroups = [
     },
     {
         "id": "indie_group_h02",
+        "startTime": "2026-02-12 12:00:00",
+        "startTimeAsia": "2026-02-12 12:00:00",
+        "endTime": "2026-03-11 17:00:00",
+        "endTimeAsia": "2026-03-12 06:00:00",
         "stages": [
             {
                 "id": "indie_hard008",
@@ -279,6 +295,10 @@ export const monumentGroups = [
     },
     {
         "id": "indie_group_h03",
+        "startTime": "2026-03-26 12:00:00",
+        "startTimeAsia": "2026-03-26 12:00:00",
+        "endTime": "2026-04-09 04:00:00",
+        "endTimeAsia": "2026-04-09 04:00:00",
         "stages": [
             {
                 "id": "indie_hard002",
@@ -322,6 +342,10 @@ export const monumentGroups = [
     },
     {
         "id": "indie_group_h05",
+        "startTime": "2026-07-02 12:00:00",
+        "startTimeAsia": "2026-07-02 12:00:00",
+        "endTime": "2026-07-15 17:00:00",
+        "endTimeAsia": "2026-07-16 06:00:00",
         "stages": [
             {
                 "id": "indie_hard006",
@@ -377,6 +401,10 @@ export const monumentGroups = [
     },
     {
         "id": "indie_group_h07",
+        "startTime": "2026-10-05 12:00:00",
+        "startTimeAsia": "2026-10-05 12:00:00",
+        "endTime": "2026-10-19 04:00:00",
+        "endTimeAsia": "2026-10-19 04:00:00",
         "stages": [
             {
                 "id": "indie_hard029",

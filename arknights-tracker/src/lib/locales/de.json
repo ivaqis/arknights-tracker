@@ -1163,7 +1163,13 @@
     "currentWeek": "Diese Woche",
     "nextWeek": "Nächste Woche",
     "fullCalendar": "Vollständiger Kalender",
-    "arsenalExchangeWarning": "Die Daten basieren auf der chinesischen Waffenrotationsdatei und sind möglicherweise nicht genau"
+    "arsenalExchangeWarning": "Die Daten basieren auf der chinesischen Waffenrotationsdatei und sind möglicherweise nicht genau",
+    "gameUpdate": "Spiel-Update",
+    "maintenanceInProgress": "Wartungsarbeiten laufen",
+    "updateExpected": "Erwartet",
+    "versionLabel": "Version {version}",
+    "goToChangelog": "Changelog",
+    "currentGameVersion": "Aktuelle Spielversion: {version}"
   },
   "characters": {
     "catcher": "Catcher",
@@ -2526,6 +2532,7 @@
     "delete_confirm": "Dieses gespeicherte Token löschen?",
     "settings_title": "Profileinstellungen",
     "settings_hide_data": "Kontodetails auf der Bestenliste verbergen",
+    "settings_hide_uid": "Konto-UIDs verbergen",
     "settings_primary_account": "Ziehungen-Konto verknüpfen",
     "settings_primary_account_none": "Keines",
     "bind_to_view_luck": "Verknüpfe ein Spielkonto in den Einstellungen, um deine Glücksstatistiken zu sehen.",
@@ -2541,7 +2548,7 @@
     "image_size_error": "Bild ist zu klein. Mindestauflösung ist 128x128 Pixel.",
     "crop_avatar_title": "Avatar zuschneiden",
     "avatar_success": "Avatar erfolgreich aktualisiert!",
-    "no_connected_accounts": "Keine verbundenen Spielkonten. Synchronisiere dein Konto mit der Aktualisieren-Schaltfläche oben.",
+    "no_connected_accounts": "Keine verbundenen Spielkonten. Synchronisiere dein Konto mit der Schaltfläche oben.",
     "edit_nickname": "Spitznamen bearbeiten",
     "copy_profile_link": "Profillink kopieren",
     "link_copied": "Link in die Zwischenablage kopiert!",
@@ -2607,7 +2614,9 @@
     "token_already_used": "Dieser Token wurde bereits verwendet",
     "token_expired_badge": "Abgelaufen",
     "unauthorized": "Nicht autorisiert",
-    "user_not_found": "Benutzer nicht gefunden"
+    "user_not_found": "Benutzer nicht gefunden",
+    "syncing": "Synchronisieren...",
+    "max_profiles_reached": "Die maximale Anzahl verknüpfter Profile beträgt 3"
   },
   "contractTagNames": {
     "activity_contract_tag_201": "Umgebung: Übertakten",
@@ -2711,7 +2720,8 @@
     "indie_group_h03": "Anorganisches Konstrukt",
     "indie_group_h04": "Trübungsverzeichnis",
     "indie_group_h05": "Die vom Land Verstoßenen",
-    "indie_group_h06": "Heuler der Klippe"
+    "indie_group_h06": "Heuler der Klippe",
+    "indie_group_h07": "Durch Dunkle Schatten markiert"
   },
   "equipmentScriptNames": {
     "xiraniteTechnique": "Xiranit-Technik",
@@ -2860,7 +2870,17 @@
     "onlyIncomplete": "Nur unvollständig",
     "allVersions": "Alle Versionen",
     "searchPlaceholder": "Suchen...",
-    "empty": "Keine Erfolge gefunden"
+    "empty": "Keine Erfolge gefunden",
+    "sync": "Synchronisieren",
+    "syncModalTitle": "Erfolge synchronisieren",
+    "selectAccount": "Konto auswählen:",
+    "syncAction": "Synchronisieren",
+    "syncSuccess": "Erfolge synchronisiert: {count}",
+    "syncNothingToUpdate": "Alle Erfolge sind bereits auf dem neuesten Stand",
+    "notLoggedInDesc": "Um Erfolge zu synchronisieren, musst du dich anmelden und dein Spielprofil verknüpfen.",
+    "noAccountsDesc": "Keine Spielkonten mit deinem Profil verknüpft. Verknüpfe ein Konto auf der Profilseite.",
+    "noMedalsInProfile": "Keine Erfolge im ausgewählten Spielkonto gefunden",
+    "syncWarningProgress": "Das Synchronisieren der Erfolge mit dem Spielprofil setzt den aktuellen Fortschritt zurück."
   },
   "achLevels": {
     "source": "Quelle",

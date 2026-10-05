@@ -346,7 +346,8 @@
     "recipeTree": "سلسلة الوصفات",
     "leaderboard": "لوحة الصدارة",
     "profile": "الملف الشخصي",
-    "icons": "الأيقونات"
+    "icons": "الأيقونات",
+    "achievements": "الإنجازات"
   },
   "mouths": {
     "january": "يناير",
@@ -724,7 +725,13 @@
     "currentWeek": "الأسبوع الحالي",
     "nextWeek": "الأسبوع القادم",
     "fullCalendar": "التقويم الكامل",
-    "arsenalExchangeWarning": "تستند البيانات إلى ملف التدوير الصيني للأسلحة وقد لا تكون دقيقة"
+    "arsenalExchangeWarning": "تستند البيانات إلى ملف التدوير الصيني للأسلحة وقد لا تكون دقيقة",
+    "gameUpdate": "تحديث اللعبة",
+    "maintenanceInProgress": "أعمال الصيانة قيد التنفيذ",
+    "updateExpected": "متوقع",
+    "versionLabel": "الإصدار {version}",
+    "goToChangelog": "سجل التغييرات",
+    "currentGameVersion": "إصدار اللعبة الحالي: {version}"
   },
   "cookies": {
     "title": "نحن نستخدم ملفات تعريف الارتباط",
@@ -882,6 +889,7 @@
     "delete_confirm": "حذف هذا الرمز؟",
     "settings_title": "إعدادات الملف",
     "settings_hide_data": "إخفاء التفاصيل",
+    "settings_hide_uid": "إخفاء معرّفات الحسابات (UID)",
     "settings_primary_account": "ربط حساب السحوبات",
     "settings_primary_account_none": "لا شيء",
     "bind_to_view_luck": "اربط حساب لرؤية الحظ.",
@@ -897,7 +905,7 @@
     "image_size_error": "صورة صغيرة جداً.",
     "crop_avatar_title": "قص الصورة",
     "avatar_success": "تم التحديث!",
-    "no_connected_accounts": "لا توجد حسابات متصلة.",
+    "no_connected_accounts": "لا توجد حسابات ألعاب متصلة. قم بمزامنة حسابك باستخدام الزر أعلاه.",
     "edit_nickname": "تعديل الاسم",
     "copy_profile_link": "نسخ الرابط",
     "share": "مشاركة",
@@ -908,7 +916,7 @@
     "copy_uid": "نسخ UID",
     "unlink_account": "إلغاء الربط",
     "all": "الكل",
-    "sync_with_game": "المزامنة",
+    "sync_with_game": "مزامنة مع اللعبة",
     "no_essence": "لا يوجد جوهر",
     "copy_failed": "فشل النسخ",
     "no_weapon": "لم يتم تجهيز أي سلاح",
@@ -961,9 +969,28 @@
     "token_already_used": "تم استخدام هذا الرمز بالفعل",
     "token_expired_badge": "منتهي الصلاحية",
     "unauthorized": "غير مصرح به",
-    "user_not_found": "المستخدم غير موجود"
+    "user_not_found": "المستخدم غير موجود",
+    "syncing": "جارٍ المزامنة...",
+    "max_profiles_reached": "الحد الأقصى للملفات الشخصية المرتبطة هو 3"
   },
   "equipSkills": {
     "NoAttr": "بدون سمة"
+  },
+  "achievements": {
+    "of": "من",
+    "onlyIncomplete": "غير المكتملة فقط",
+    "allVersions": "جميع الإصدارات",
+    "searchPlaceholder": "بحث...",
+    "empty": "لم يتم العثور على إنجازات",
+    "sync": "مزامنة",
+    "syncModalTitle": "مزامنة الإنجازات",
+    "selectAccount": "اختر الحساب:",
+    "syncAction": "مزامنة",
+    "syncSuccess": "تمت مزامنة الإنجازات: {count}",
+    "syncNothingToUpdate": "جميع الإنجازات محدثة بالفعل",
+    "notLoggedInDesc": "لمزامنة الإنجازات، يجب تسجيل الدخول وربط ملفك الشخصي في اللعبة.",
+    "noAccountsDesc": "لا توجد حسابات ألعاب مرتبطة بملفك الشخصي. اربط حساباً من صفحة الملف الشخصي.",
+    "noMedalsInProfile": "لم يتم العثور على إنجازات في حساب اللعبة المحدد",
+    "syncWarningProgress": "مزامنة الإنجازات مع ملف تعريف اللعبة ستؤدي إلى إعادة تعيين تقدم الإنجازات الحالي."
   }
 }

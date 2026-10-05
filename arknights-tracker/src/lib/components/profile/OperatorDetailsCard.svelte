@@ -152,6 +152,7 @@
     export let weaponDetails = null;
     export let profileName = "";
     export let activeAccount = null;
+    export let hideUid = false;
 
     let isExporting = false;
 
@@ -875,7 +876,7 @@
         if (charId) {
             url.searchParams.set("char", charId);
         }
-        if (activeAccount?.game_uid) {
+        if (activeAccount?.game_uid && !hideUid) {
             url.searchParams.set("uid", activeAccount.game_uid);
         }
         navigator.clipboard.writeText(url.toString()).then(() => {

@@ -1163,7 +1163,13 @@
     "currentWeek": "สัปดาห์นี้",
     "nextWeek": "สัปดาห์หน้า",
     "fullCalendar": "ปฏิทินแบบเต็ม",
-    "arsenalExchangeWarning": "ข้อมูลอ้างอิงจากไฟล์โรเทชันอาวุธของจีนและอาจไม่ถูกต้องทั้งหมด"
+    "arsenalExchangeWarning": "ข้อมูลอ้างอิงจากไฟล์โรเทชันอาวุธของจีนและอาจไม่ถูกต้องทั้งหมด",
+    "gameUpdate": "อัปเดตเกม",
+    "maintenanceInProgress": "กำลังปิดปรับปรุง",
+    "updateExpected": "คาดว่าจะมา",
+    "versionLabel": "เวอร์ชัน {version}",
+    "goToChangelog": "บันทึกการเปลี่ยนแปลง",
+    "currentGameVersion": "เวอร์ชันเกมปัจจุบัน: {version}"
   },
   "characters": {
     "catcher": "แคท​เชอร์",
@@ -2526,6 +2532,7 @@
     "delete_confirm": "ลบโทเค็นนี้?",
     "settings_title": "การตั้งค่าโปรไฟล์",
     "settings_hide_data": "ซ่อนข้อมูลในกระดานผู้นำ",
+    "settings_hide_uid": "ซ่อน UID บัญชี",
     "settings_primary_account": "เชื่อมโยงบัญชีกาชา",
     "settings_primary_account_none": "ไม่มี",
     "bind_to_view_luck": "เชื่อมโยงบัญชีเกมเพื่อดูสถิติความโชคดี",
@@ -2541,7 +2548,7 @@
     "image_size_error": "รูปภาพเล็กเกินไป (ขั้นต่ำ 128x128)",
     "crop_avatar_title": "ตัดครอบอวตาร",
     "avatar_success": "อัปเดตอวตารแล้ว!",
-    "no_connected_accounts": "ไม่มีบัญชีเชื่อมต่อ",
+    "no_connected_accounts": "ไม่มีบัญชีเกมที่เชื่อมต่อ ซิงค์บัญชีของคุณโดยใช้ปุ่มด้านบน",
     "edit_nickname": "แก้ไขชื่อเล่น",
     "copy_profile_link": "คัดลอกลิงก์โปรไฟล์",
     "link_copied": "คัดลอกลิงก์แล้ว!",
@@ -2607,7 +2614,9 @@
     "token_already_used": "โทเค็นนี้ถูกใช้ไปแล้ว",
     "token_expired_badge": "หมดอายุแล้ว",
     "unauthorized": "ไม่ได้รับอนุญาต",
-    "user_not_found": "ไม่พบผู้ใช้"
+    "user_not_found": "ไม่พบผู้ใช้",
+    "syncing": "กำลังซิงค์...",
+    "max_profiles_reached": "สามารถเชื่อมโยงโปรไฟล์ได้สูงสุด 3 บัญชี"
   },
   "contractTagNames": {
     "activity_contract_tag_201": "สภาพแวดล้อม​: โอเวอร์​ค​ล็อก",
@@ -2711,7 +2720,8 @@
     "indie_group_h03": "โครงสร้าง​อนินทรีย์​",
     "indie_group_h04": "ภูต​สำแดง​สับสน​",
     "indie_group_h05": "ผู้​ถูก​ทอดทิ้ง​โดย​แผ่นดิน​",
-    "indie_group_h06": "ผู้​โหยหวน​แห่ง​ผา​หิน"
+    "indie_group_h06": "ผู้​โหยหวน​แห่ง​ผา​หิน",
+    "indie_group_h07": "ถูก​ตีตรา​ด้วย​เงามืด"
   },
   "equipmentScriptNames": {
     "xiraniteTechnique": "เทคนิค​ซี​เรน​ไนต์",
@@ -2860,7 +2870,17 @@
     "onlyIncomplete": "เฉพาะที่ยังไม่เสร็จ",
     "allVersions": "ทุกเวอร์ชัน",
     "searchPlaceholder": "ค้นหา...",
-    "empty": "ไม่พบความสำเร็จ"
+    "empty": "ไม่พบความสำเร็จ",
+    "sync": "ซิงค์",
+    "syncModalTitle": "ซิงค์ความสำเร็จ",
+    "selectAccount": "เลือกบัญชี:",
+    "syncAction": "ซิงค์",
+    "syncSuccess": "ซิงค์ความสำเร็จแล้ว: {count}",
+    "syncNothingToUpdate": "ความสำเร็จทั้งหมดเป็นปัจจุบันแล้ว",
+    "notLoggedInDesc": "หากต้องการซิงค์ความสำเร็จ คุณต้องเข้าสู่ระบบและเชื่อมโยงโปรไฟล์ในเกมของคุณ",
+    "noAccountsDesc": "ไม่มีบัญชีในเกมที่เชื่อมโยงกับโปรไฟล์ของคุณ เชื่อมโยงบัญชีในหน้าโปรไฟล์",
+    "noMedalsInProfile": "ไม่พบข้อมูลความสำเร็จในบัญชีเกมที่เลือก",
+    "syncWarningProgress": "การซิงค์ความสำเร็จกับโปรไฟล์ในเกมจะรีเซ็ตความคืบหน้าของความสำเร็จในปัจจุบัน"
   },
   "achLevels": {
     "source": "ที่มา",

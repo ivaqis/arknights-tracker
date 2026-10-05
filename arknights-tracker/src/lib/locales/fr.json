@@ -1163,7 +1163,13 @@
     "currentWeek": "Semaine en cours",
     "nextWeek": "Semaine prochaine",
     "fullCalendar": "Calendrier complet",
-    "arsenalExchangeWarning": "Les données sont basées sur le fichier de rotation des armes chinois et peuvent ne pas être exactes"
+    "arsenalExchangeWarning": "Les données sont basées sur le fichier de rotation des armes chinois et peuvent ne pas être exactes",
+    "gameUpdate": "Mise à jour du Jeu",
+    "maintenanceInProgress": "Maintenance en cours",
+    "updateExpected": "Prévu",
+    "versionLabel": "Version {version}",
+    "goToChangelog": "Journal des modifications",
+    "currentGameVersion": "Version actuelle du jeu : {version}"
   },
   "characters": {
     "catcher": "Catcher",
@@ -2526,6 +2532,7 @@
     "delete_confirm": "Supprimer ce token ?",
     "settings_title": "Paramètres du Profil",
     "settings_hide_data": "Masquer les détails sur le classement",
+    "settings_hide_uid": "Masquer les UID des comptes",
     "settings_primary_account": "Lier le Compte de Tirages",
     "settings_primary_account_none": "Aucun",
     "bind_to_view_luck": "Liez un compte pour voir vos statistiques de chance.",
@@ -2541,7 +2548,7 @@
     "image_size_error": "L'image est trop petite (min 128x128).",
     "crop_avatar_title": "Recadrer l'Avatar",
     "avatar_success": "Avatar mis à jour !",
-    "no_connected_accounts": "Aucun compte connecté. Synchronisez via le bouton ci-dessus.",
+    "no_connected_accounts": "Aucun compte de jeu connecté. Synchronisez votre compte via le bouton ci-dessus.",
     "edit_nickname": "Modifier le pseudo",
     "copy_profile_link": "Copier le lien du profil",
     "link_copied": "Lien copié !",
@@ -2549,7 +2556,7 @@
     "copy_uid": "Copier l'UID",
     "unlink_account": "Dissocier le compte",
     "all": "Tous",
-    "sync_with_game": "Synchroniser",
+    "sync_with_game": "Synchroniser avec le jeu",
     "no_essence": "Pas d'essence",
     "copy_failed": "Échec de la copie",
     "no_weapon": "Aucune arme équipée",
@@ -2607,7 +2614,9 @@
     "token_already_used": "Ce jeton a déjà été utilisé",
     "token_expired_badge": "Expiré",
     "unauthorized": "Non autorisé",
-    "user_not_found": "Utilisateur non trouvé"
+    "user_not_found": "Utilisateur non trouvé",
+    "syncing": "Synchronisation...",
+    "max_profiles_reached": "Le nombre maximum de profils associés est de 3"
   },
   "contractTagNames": {
     "activity_contract_tag_201": "Environnement : Surcharge",
@@ -2711,7 +2720,8 @@
     "indie_group_h03": "Construction non organique",
     "indie_group_h04": "Manifeste de la Turbidité",
     "indie_group_h05": "Les oubliés des Terres",
-    "indie_group_h06": "Hurleurs du pic"
+    "indie_group_h06": "Hurleurs du pic",
+    "indie_group_h07": "Marque des ténèbres"
   },
   "equipmentScriptNames": {
     "xiraniteTechnique": "Technique de xiranite",
@@ -2860,7 +2870,17 @@
     "onlyIncomplete": "Incomplets uniquement",
     "allVersions": "Toutes les versions",
     "searchPlaceholder": "Rechercher...",
-    "empty": "Aucun succès trouvé"
+    "empty": "Aucun succès trouvé",
+    "sync": "Synchronisation",
+    "syncModalTitle": "Synchroniser les Succès",
+    "selectAccount": "Sélectionner un Compte :",
+    "syncAction": "Synchroniser",
+    "syncSuccess": "Succès synchronisés : {count}",
+    "syncNothingToUpdate": "Tous les succès sont déjà à jour",
+    "notLoggedInDesc": "Pour synchroniser les succès, vous devez vous connecter et lier votre profil de jeu.",
+    "noAccountsDesc": "Aucun compte de jeu lié à votre profil. Liez un compte sur la page Profil.",
+    "noMedalsInProfile": "Aucun succès trouvé dans le compte de jeu sélectionné",
+    "syncWarningProgress": "La synchronisation des succès avec votre profil de jeu réinitialisera votre progression actuelle."
   },
   "achLevels": {
     "source": "Source",

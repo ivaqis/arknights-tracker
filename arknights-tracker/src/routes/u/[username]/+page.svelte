@@ -91,6 +91,7 @@
     })();
 
     $: activeAccount = profile?.details?.find(d => d.game_uid === selectedGameUid) || sortedDetails?.[0];
+    $: isUidHidden = profile ? (profile.hideUid !== false && profile.hide_uid !== 0) : true;
 
     function handleCopyProfileLink() {
         if (!profile || !profile.name) return;
@@ -236,21 +237,23 @@
                                         <span class="text-md font-bold dark:text-white text-gray-900 font-sdk truncate">{d.info?.base?.name || "Profile"}</span>
                                         <!--<ContractLevelTag level={d.info?.contract?.level || 0} />-->
                                     </div>
-                                    <div class="text-[10px] text-gray-500 dark:text-gray-400 font-mono truncate flex items-center gap-1">
-                                        <span>UID: {d.game_uid}</span>
-                                        <Tooltip text={$t("profile.copy_uid")}>
-                                            <button 
-                                                on:click|stopPropagation={() => handleCopyUid(d.game_uid)} 
-                                                class="text-gray-500 hover:text-gray-600 hover:dark:text-white transition-colors cursor-pointer flex items-center justify-center p-0.5"
-                                            >
-                                                {#if copiedUid === d.game_uid}
-                                                    <Icon name="success" class="w-3.5 h-3.5 text-yellow-400" />
-                                                {:else}
-                                                    <Icon name="copy" class="w-3.5 h-3.5 opacity-60 hover:opacity-100" />
-                                                {/if}
-                                            </button>
-                                        </Tooltip>
-                                    </div>
+                                    {#if !isUidHidden}
+                                        <div class="text-[10px] text-gray-500 dark:text-gray-400 font-mono truncate flex items-center gap-1">
+                                            <span>UID: {d.game_uid}</span>
+                                            <Tooltip text={$t("profile.copy_uid")}>
+                                                <button 
+                                                    on:click|stopPropagation={() => handleCopyUid(d.game_uid)} 
+                                                    class="text-gray-500 hover:text-gray-600 hover:dark:text-white transition-colors cursor-pointer flex items-center justify-center p-0.5"
+                                                >
+                                                    {#if copiedUid === d.game_uid}
+                                                        <Icon name="success" class="w-3.5 h-3.5 text-yellow-400" />
+                                                    {:else}
+                                                        <Icon name="copy" class="w-3.5 h-3.5 opacity-60 hover:opacity-100" />
+                                                    {/if}
+                                                </button>
+                                            </Tooltip>
+                                        </div>
+                                    {/if}
                                     <div class="bg-gray-200 text-gray-600 dark:bg-[#383838] dark:text-[#B0B0B0] px-1.5 py-0.5 rounded text-[9px] font-medium font-sans w-fit truncate">
                                         {getServerLabel(d.info?.base?.serverId)}
                                     </div>
@@ -293,6 +296,7 @@
                             profileName={profile?.name || username}
                             hasBackground={!!profile?.background}
                             initialCharId={initialChar}
+                            hideUid={isUidHidden}
                         />
                     </div>
 

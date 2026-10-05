@@ -9,4 +9,6 @@ dist
 !.env.example
 tsconfig.tsbuildinfo
 static/banwords/banned_words.txt
-static/banroots/banned_roots.txt
+static/banroots/banned_roots.txt
+scratch/
+**/scratch/

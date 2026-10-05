@@ -346,7 +346,8 @@
     "recipeTree": "Рецепттер тізбегі",
     "leaderboard": "Көшбасшылар тақтасы",
     "profile": "Профиль",
-    "icons": "Белгішелер"
+    "icons": "Белгішелер",
+    "achievements": "Жетістіктер"
   },
   "mouths": {
     "january": "Қаңтар",
@@ -724,7 +725,13 @@
     "nextWeek": "Келесі апта",
     "fullCalendar": "Толық күнтізбе",
     "arsenalExchangeWarning": "Деректер қару-жарақ ротациясының қытайлық файлына негізделген және дәл болмауы мүмкін",
-    "uiLanguagesDesc": "Сайт интерфейсінің аудармасын қолдайтын тілдер. Ойын атаулары үшін ойын аудармасын толық қолдайтын таңдалған тіл қолданылады. Аудармаға <a href=\"{discordLink}\" target=\"_blank\" class=\"text-yellow-400 hover:underline\">Goyfield Discord серверінде</a> көмектесе аласыз"
+    "uiLanguagesDesc": "Сайт интерфейсінің аудармасын қолдайтын тілдер. Ойын атаулары үшін ойын аудармасын толық қолдайтын таңдалған тіл қолданылады. Аудармаға <a href=\"{discordLink}\" target=\"_blank\" class=\"text-yellow-400 hover:underline\">Goyfield Discord серверінде</a> көмектесе аласыз",
+    "gameUpdate": "Ойын жаңартуы",
+    "maintenanceInProgress": "Техникалық жұмыстар жүргізілуде",
+    "updateExpected": "Күтілуде",
+    "versionLabel": "Нұсқа {version}",
+    "goToChangelog": "Өзгерістер тізімі",
+    "currentGameVersion": "Ағымдағы ойын нұсқасы: {version}"
   },
   "cookies": {
     "title": "Біз cookie файлдарын қолданамыз",
@@ -882,6 +889,7 @@
     "delete_confirm": "Жою керек пе?",
     "settings_title": "Профиль параметрлері",
     "settings_hide_data": "Деректерді тақтада жасыру",
+    "settings_hide_uid": "Тіркелгі UID-ін жасыру",
     "settings_primary_account": "Аккаунтты байланыстыру",
     "settings_primary_account_none": "Жоқ",
     "bind_to_view_luck": "Сәттілікті көру үшін аккаунтты байланыстырыңыз.",
@@ -897,7 +905,7 @@
     "image_size_error": "Сурет тым кішкентай (Мин 128x128).",
     "crop_avatar_title": "Аватарды қию",
     "avatar_success": "Аватар жаңартылды!",
-    "no_connected_accounts": "Қосылған аккаунттар жоқ.",
+    "no_connected_accounts": "Қосылған ойын аккаунттары жоқ. Аккаунтыңызды жоғарыдағы батырмамен синхрондаңыз.",
     "edit_nickname": "Никнеймді өзгерту",
     "copy_profile_link": "Сілтемені көшіру",
     "share": "Бөлісу",
@@ -961,9 +969,28 @@
     "token_already_used": "Бұл токен бұрыннан пайдаланылған",
     "token_expired_badge": "Мерзімі біткен",
     "unauthorized": "Авторизацияланбаған",
-    "user_not_found": "Пайдаланушы табылмады"
+    "user_not_found": "Пайдаланушы табылмады",
+    "syncing": "Синхрондалуда...",
+    "max_profiles_reached": "Қосылатын профильдердің максималды саны — 3"
   },
   "equipSkills": {
     "NoAttr": "Атрибутсыз"
+  },
+  "achievements": {
+    "of": "ішінен",
+    "onlyIncomplete": "Тек аяқталмағандар",
+    "allVersions": "Барлық нұсқалар",
+    "searchPlaceholder": "Іздеу...",
+    "empty": "Жетістіктер табылмады",
+    "sync": "Синхрондау",
+    "syncModalTitle": "Жетістіктерді синхрондау",
+    "selectAccount": "Аккаунтты таңдаңыз:",
+    "syncAction": "Синхрондау",
+    "syncSuccess": "Синхрондалған жетістіктер: {count}",
+    "syncNothingToUpdate": "Барлық жетістіктер қазірдің өзінде өзекті",
+    "notLoggedInDesc": "Жетістіктерді синхрондау үшін жүйеге кіріп, ойын профилін байланыстыру керек.",
+    "noAccountsDesc": "Профиліңізге ойын аккаунттары байланыстырылмаған. Профиль бетінде аккаунтты байланыстырыңыз.",
+    "noMedalsInProfile": "Таңдалған ойын аккаунтында жетістіктер табылмады",
+    "syncWarningProgress": "Жетістіктерді ойын профилімен синхрондау ағымдағы жетістіктер барысын қалпына келтіреді."
   }
 }

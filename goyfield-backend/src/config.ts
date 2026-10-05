@@ -18,15 +18,16 @@ export const config = {
     skportContractPath: process.env.SKPORT_CC_PATH || null,
     skportContractRecordsPath: process.env.SKPORT_CC_REC_PATH || null,
     skportMonumentPath: process.env.SKPORT_MONUMENT_PATH || null,
+    skportEchoPath: process.env.SKPORT_ECHO_PATH || null,
     skportCredUrl: getSkportCredUrl(),
     skportBindingUrl: getSkportBindingUrl(),
     skportDetailUrl: getSkportDetailUrl(),
     skportContractUrl: getSkportContractUrl(),
     skportContractRecordsUrl: getSkportContractRecordsUrl(),
     skportMonumentUrl: getSkportMonumentUrl(),
+    skportEchoUrl: getSkportEchoUrl(),
     sightengineUser: process.env.SIGHTENGINE_USER || null,
     sightengineSecret: process.env.SIGHTENGINE_SECRET || null,
-    moderateContentKey: process.env.MODERATECONTENT_KEY || null,
     hiveApiKey: process.env.HIVE_API_KEY || null,
     dailyUploadLimit: Number(process.env.DAILY_UPLOAD_LIMIT) || 30,
     signSecret: process.env.SIGN_SECRET || "super_secret_key_123",
@@ -78,6 +79,12 @@ function getSkportContractRecordsUrl() {
 function getSkportMonumentUrl() {
     return skportBaseDomain && process.env.SKPORT_MONUMENT_PATH
         ? `${skportBaseDomain}${process.env.SKPORT_MONUMENT_PATH}`
+        : null;
+}
+
+function getSkportEchoUrl() {
+    return skportBaseDomain && process.env.SKPORT_ECHO_PATH
+        ? `${skportBaseDomain}${process.env.SKPORT_ECHO_PATH}`
         : null;
 }
 

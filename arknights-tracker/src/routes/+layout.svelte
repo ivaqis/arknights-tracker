@@ -257,7 +257,7 @@
                 </button>
             </div>
             <div class="flex-1 overflow-y-auto overflow-x-hidden">
-                <nav class="flex flex-col gap-2 {visuallyCollapsed ? 'pl-4 pr-2' : 'px-3'}">
+                <nav class="flex flex-col gap-1.5 {visuallyCollapsed ? 'pl-4 pr-2' : 'px-3'}">
                     {#each [
                         { path: "/", label: "sidebar.home", icon: "mainPage" },
                         { path: "/records", label: "sidebar.records", icon: "records" },
@@ -273,6 +273,9 @@
                         { path: "/food", label: "pages.food", icon: "tacticals" },
                         { path: "/recipes", label: "pages.recipes", icon: "recepies" },
                         { path: "/achievements", label: "pages.achievements", icon: "achievement" },
+                        { type: "divider" },
+                        { path: "/leaderboard", label: "pages.leaderboard", icon: "leaderboard" },
+                        { path: "/profile", label: "pages.profile", icon: "profile" },
                         { type: "divider" },
                         { path: "/settings", label: "sidebar.settings", icon: "settings" }
                     ] as item}

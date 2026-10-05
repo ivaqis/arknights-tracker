@@ -7,6 +7,9 @@ import equipNames from "@static/equipNames.json" with { type: "json" };
 import gemPresetNames from "@static/gemPresetNames.json" with { type: "json" };
 import monumentGroups from "@static/monumentGroups.json" with { type: "json" };
 import monumentNames from "@static/monumentNames.json" with { type: "json" };
+import warEchoesGroups from "@static/warEchoesGroups.json" with { type: "json" };
+import warEchoesNames from "@static/warEchoesNames.json" with { type: "json" };
+import achievementNames from "@static/achievementNames.json" with { type: "json" };
 import tacticalItemNames from "@static/tacticalItemNames.json" with { type: "json" };
 import weaponNames from "@static/weaponNames.json" with { type: "json" };
 import legacyBannerIds from "@static/legacyBannerIds.json" with { type: "json" };
@@ -16,6 +19,7 @@ import { BannedWords } from "@staticModels/banwords/BannedWords.js";
 import { CrisisContractRecords } from "@staticModels/crisisContracts/CrisisContractRecords.js";
 import { ItemNameRecords } from "@staticModels/itemNames/ItemNameRecords.js";
 import { MonumentGroupRecords } from "@staticModels/monument/MonumentGroupRecords.js";
+import { WarEchoesGroupRecords } from "@staticModels/warEchoes/WarEchoesGroupRecords.js";
 import { TextList } from "@staticModels/TextList.js";
 
 export const bannerRecords = new BannerRecords(banners);
@@ -29,10 +33,13 @@ export const gemPresetNameRecords = new ItemNameRecords(gemPresetNames, "GemPres
 export const tacticalItemNameRecords = new ItemNameRecords(tacticalItemNames, "TacticalItemNameRecords");
 export const contractNameRecords = new ItemNameRecords(contractNames, "ContractNameRecords");
 export const monumentNameRecords = new ItemNameRecords(monumentNames, "MonumentNameRecords");
+export const warEchoesNameRecords = new ItemNameRecords(warEchoesNames, "WarEchoesNameRecords");
+export const achievementNameRecords = new ItemNameRecords(achievementNames, "AchievementNameRecords");
 
 export const crisisContractRecords = new CrisisContractRecords(crisisContracts);
 
 export const monumentGroupRecords = new MonumentGroupRecords(monumentGroups);
+export const warEchoesGroupRecords = new WarEchoesGroupRecords(warEchoesGroups);
 
 const banWordList = new TextList();
 const banRootList = new TextList();

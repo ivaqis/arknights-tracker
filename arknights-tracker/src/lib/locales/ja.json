@@ -1163,7 +1163,13 @@
     "currentWeek": "今週",
     "nextWeek": "来週",
     "fullCalendar": "フルカレンダー",
-    "arsenalExchangeWarning": "データは中国サーバーの武器ローテーションファイルに基づいており、正確ではない場合があります"
+    "arsenalExchangeWarning": "データは中国サーバーの武器ローテーションファイルに基づいており、正確ではない場合があります",
+    "gameUpdate": "ゲームアップデート",
+    "maintenanceInProgress": "メンテナンス中",
+    "updateExpected": "予定",
+    "versionLabel": "バージョン {version}",
+    "goToChangelog": "更新履歴",
+    "currentGameVersion": "現在のゲームバージョン: {version}"
   },
   "characters": {
     "catcher": "キャッチャー",
@@ -2526,6 +2532,7 @@
     "delete_confirm": "この保存済みトークンを削除しますか？",
     "settings_title": "プロファイル設定",
     "settings_hide_data": "ランキングでアカウント情報を隠す",
+    "settings_hide_uid": "アカウントUIDを非表示にする",
     "settings_primary_account": "ガチャアカウントを連携",
     "settings_primary_account_none": "なし",
     "bind_to_view_luck": "幸運統計を見るには、設定でゲームアカウントを連携してください。",
@@ -2541,7 +2548,7 @@
     "image_size_error": "画像が小さすぎます（最小128x128）。",
     "crop_avatar_title": "アバターのトリミング",
     "avatar_success": "アバターが更新されました！",
-    "no_connected_accounts": "連携されたゲームアカウントがありません。",
+    "no_connected_accounts": "連携されたゲームアカウントがありません。上のボタンからアカウントを同期してください。",
     "edit_nickname": "ニックネーム編集",
     "copy_profile_link": "プロファイルリンクをコピー",
     "link_copied": "リンクをコピーしました！",
@@ -2607,7 +2614,9 @@
     "token_already_used": "このトークンは既に使用されています",
     "token_expired_badge": "期限切れ",
     "unauthorized": "未認証",
-    "user_not_found": "ユーザーが見つかりません"
+    "user_not_found": "ユーザーが見つかりません",
+    "syncing": "同期中...",
+    "max_profiles_reached": "連携可能なプロフィールの最大数は3つです"
   },
   "contractTagNames": {
     "activity_contract_tag_201": "環境：過速",
@@ -2711,7 +2720,8 @@
     "indie_group_h03": "無機的造物",
     "indie_group_h04": "濁流具現",
     "indie_group_h05": "大地に見捨てられし者",
-    "indie_group_h06": "山の獣吼"
+    "indie_group_h06": "山の獣吼",
+    "indie_group_h07": "刻まれた影"
   },
   "equipmentScriptNames": {
     "xiraniteTechnique": "息壌工程",
@@ -2860,7 +2870,17 @@
     "onlyIncomplete": "未完了のみ",
     "allVersions": "すべてのバージョン",
     "searchPlaceholder": "検索...",
-    "empty": "実績が見つかりません"
+    "empty": "実績が見つかりません",
+    "sync": "同期",
+    "syncModalTitle": "実績の同期",
+    "selectAccount": "アカウントを選択:",
+    "syncAction": "同期する",
+    "syncSuccess": "実績を同期しました: {count}",
+    "syncNothingToUpdate": "すべての実績はすでに最新です",
+    "notLoggedInDesc": "実績を同期するには、ログインしてゲームプロファイルを連携する必要があります。",
+    "noAccountsDesc": "プロファイルに連携されたゲームアカウントがありません。プロファイルページで連携してください。",
+    "noMedalsInProfile": "選択したゲームアカウントに実績データがありません",
+    "syncWarningProgress": "ゲームプロファイルと実績を同期すると、現在の実績の進捗状況がリセットされます。"
   },
   "achLevels": {
     "source": "入手方法",

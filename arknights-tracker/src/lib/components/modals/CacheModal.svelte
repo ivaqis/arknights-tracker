@@ -403,7 +403,7 @@
 
     <div class="flex justify-end pt-2 border-t border-gray-100 dark:border-[#444]">
       <div class="w-auto">
-        <Button variant="round" color="yellow" onClick={onClose}>
+        <Button variant="round" color="gray" onClick={onClose}>
           {$t("privacy.close")}
         </Button>
       </div>

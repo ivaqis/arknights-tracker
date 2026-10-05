@@ -1202,7 +1202,13 @@
     "currentWeek": "本周",
     "nextWeek": "下周",
     "fullCalendar": "完整日历",
-    "arsenalExchangeWarning": "数据基于国服武器轮换文件，可能不完全准确"
+    "arsenalExchangeWarning": "数据基于国服武器轮换文件，可能不完全准确",
+    "gameUpdate": "游戏更新",
+    "maintenanceInProgress": "停服维护中",
+    "updateExpected": "预计",
+    "versionLabel": "版本 {version}",
+    "goToChangelog": "更新日志",
+    "currentGameVersion": "当前游戏版本：{version}"
   },
   "characters": {
     "catcher": "卡契尔",
@@ -2565,6 +2571,7 @@
     "delete_confirm": "删除此保存的 token？",
     "settings_title": "资料设置",
     "settings_hide_data": "在排行榜上隐藏账户详情",
+    "settings_hide_uid": "隐藏账户 UID",
     "settings_primary_account": "绑定抽卡账户",
     "settings_primary_account_none": "无",
     "bind_to_view_luck": "在设置中绑定游戏账户以查看您的欧气统计。",
@@ -2580,7 +2587,7 @@
     "image_size_error": "图片太小。最小分辨率为 128x128 像素。",
     "crop_avatar_title": "裁剪头像",
     "avatar_success": "头像更新成功！",
-    "no_connected_accounts": "没有连接的游戏账户。请使用上方的更新按钮同步账户。",
+    "no_connected_accounts": "没有连接的游戏账户。请使用上方的同步按钮同步账户。",
     "edit_nickname": "编辑昵称",
     "copy_profile_link": "复制主页链接",
     "link_copied": "链接已复制到剪贴板！",
@@ -2646,7 +2653,9 @@
     "token_already_used": "此Token已被使用",
     "token_expired_badge": "已过期",
     "unauthorized": "未授权",
-    "user_not_found": "未找到用户"
+    "user_not_found": "未找到用户",
+    "syncing": "正在同步...",
+    "max_profiles_reached": "最多只能绑定 3 个游戏档案"
   },
   "contractTagNames": {
     "activity_contract_tag_201": "环境：过速",
@@ -2750,7 +2759,8 @@
     "indie_group_h03": "无机造物",
     "indie_group_h04": "浊流具现",
     "indie_group_h05": "大地的弃子",
-    "indie_group_h06": "山中见犼"
+    "indie_group_h06": "山中见犼",
+    "indie_group_h07": "幽影刻形"
   },
   "equipmentScriptNames": {
     "xiraniteTechnique": "息壤工艺",
@@ -2899,7 +2909,17 @@
     "onlyIncomplete": "仅未完成",
     "allVersions": "全部版本",
     "searchPlaceholder": "搜索...",
-    "empty": "未找到成就"
+    "empty": "未找到成就",
+    "sync": "同步",
+    "syncModalTitle": "同步成就",
+    "selectAccount": "选择账户：",
+    "syncAction": "同步",
+    "syncSuccess": "已同步成就：{count}",
+    "syncNothingToUpdate": "所有成就已是最新状态",
+    "notLoggedInDesc": "如需同步成就，请先登录并绑定您的游戏个人资料。",
+    "noAccountsDesc": "您的个人资料中没有绑定的游戏账户。请前往个人资料页面绑定账户。",
+    "noMedalsInProfile": "所选游戏账户中未找到成就数据",
+    "syncWarningProgress": "与游戏个人资料同步成就将重置当前的成就进度。"
   },
   "achLevels": {
     "source": "获取方式",

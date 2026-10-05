@@ -1,14 +1,35 @@
 import { browser } from '$app/environment';
 import { writable } from 'svelte/store';
-import type { AchievementData } from '$lib/data/achievements';
+import { achievements, type AchievementData } from '$lib/data/achievements';
 
 export interface TrackedAchievement {
     level: number;
     plated: boolean;
     completedAt?: string;
+    synced?: boolean;
 }
 
 const STORAGE_KEY = 'tracked_achievements';
+
+const achievementLocaleModules = import.meta.glob('/src/lib/locales/*/achievements.json', {
+    eager: true
+});
+
+const nameToAchievementIdMap: Record<string, string> = (() => {
+    const map: Record<string, string> = {};
+    for (const mod of Object.values(achievementLocaleModules as Record<string, any>)) {
+        const data = mod?.default || mod || {};
+        for (const [id, item] of Object.entries(data as Record<string, any>)) {
+            if (item && typeof item === 'object' && item.name) {
+                const raw = String(item.name).trim();
+                const clean = raw.replace(/^["'“”«»`]+|["'“”«»`]+$/g, '').trim();
+                map[raw.toLowerCase()] = id;
+                map[clean.toLowerCase()] = id;
+            }
+        }
+    }
+    return map;
+})();
 
 function loadInitialData(): Record<string, TrackedAchievement> {
     if (!browser) return {};
@@ -29,6 +50,123 @@ if (browser) {
             localStorage.setItem(STORAGE_KEY, JSON.stringify(value));
         } catch (e) {}
     });
+}
+
+export function extractMedalsFromProfile(source: any): any[] {
+    if (!source) return [];
+    if (Array.isArray(source)) {
+        if (source.length > 0 && (source[0]?.achievementData || source[0]?.obtainTs !== undefined || source[0]?.cate || source[0]?.name || source[0]?.id)) {
+            return source;
+        }
+        const medals: any[] = [];
+        for (const item of source) {
+            medals.push(...extractMedalsFromProfile(item));
+        }
+        return medals;
+    }
+    if (typeof source === 'string') {
+        try {
+            const parsed = JSON.parse(source);
+            return extractMedalsFromProfile(parsed);
+        } catch {
+            return [];
+        }
+    }
+    if (typeof source === 'object') {
+        if (source.achieveMedals && Array.isArray(source.achieveMedals)) {
+            return source.achieveMedals;
+        }
+        if (source.medals && Array.isArray(source.medals)) {
+            return source.medals;
+        }
+        if (source.achievements && Array.isArray(source.achievements)) {
+            return source.achievements;
+        }
+        if (source.achieve) {
+            const found = extractMedalsFromProfile(source.achieve);
+            if (found.length > 0) return found;
+        }
+        if (source.detail) {
+            const found = extractMedalsFromProfile(source.detail);
+            if (found.length > 0) return found;
+        }
+        if (source.info) {
+            const found = extractMedalsFromProfile(source.info);
+            if (found.length > 0) return found;
+        }
+        if (source.account_info) {
+            const found = extractMedalsFromProfile(source.account_info);
+            if (found.length > 0) return found;
+        }
+        if (source.gameProfile) {
+            const found = extractMedalsFromProfile(source.gameProfile);
+            if (found.length > 0) return found;
+        }
+        if (Array.isArray(source.details)) {
+            return extractMedalsFromProfile(source.details);
+        }
+        if (Array.isArray(source.gameProfiles)) {
+            return extractMedalsFromProfile(source.gameProfiles);
+        }
+    }
+    return [];
+}
+
+export function syncAchievementsFromProfile(source: any): { syncedCount: number; updatedCount: number; totalFound: number } {
+    const medals = extractMedalsFromProfile(source);
+    if (!medals || medals.length === 0) {
+        return { syncedCount: 0, updatedCount: 0, totalFound: 0 };
+    }
+
+    const nextState: Record<string, TrackedAchievement> = {};
+    let syncedCount = 0;
+
+    for (const m of medals) {
+        const achData = m?.achievementData || m;
+        if (!achData) continue;
+        const rawName = String(achData.name || m.name || '').trim();
+        const cleanName = rawName.replace(/^["'“”«»`]+|["'“”«»`]+$/g, '').trim();
+        const rawId = String(achData.id || m.id || '').trim();
+        const achId =
+            (rawId && achievements[rawId] ? rawId : null) ||
+            (rawName && (nameToAchievementIdMap[rawName.toLowerCase()] || nameToAchievementIdMap[cleanName.toLowerCase()])) ||
+            (rawId && (nameToAchievementIdMap[rawId.toLowerCase()] || rawId)) ||
+            null;
+
+        if (!achId) continue;
+
+        syncedCount += 1;
+        const rawLevel = Number(m.level ?? achData.level ?? 1) || 1;
+        const meta = achievements[achId];
+        const sortedLevels = meta ? Object.keys(meta.levelInfos || {}).map(Number).sort((a, b) => a - b) : [1];
+        const levelsList = sortedLevels.length > 0 ? sortedLevels : [meta?.initLevel || 1];
+        let targetLevel = levelsList[0];
+        if (levelsList.length > 1) {
+            const idx = Math.min(Math.max(rawLevel - 1, 0), levelsList.length - 1);
+            targetLevel = levelsList[idx];
+        } else {
+            targetLevel = levelsList[0];
+        }
+
+        const gamePlated = Boolean(m.isPlated ?? achData.isPlated);
+        const rawTs = m.obtainTs ?? achData.obtainTs;
+        const obtainTs = rawTs ? Number(rawTs) : null;
+        let completedAt: string | undefined;
+        if (obtainTs && !isNaN(obtainTs) && obtainTs > 0) {
+            const ms = obtainTs > 1e11 ? obtainTs : obtainTs * 1000;
+            completedAt = new Date(ms).toISOString();
+        }
+
+        nextState[achId] = {
+            level: targetLevel,
+            plated: gamePlated,
+            completedAt,
+            synced: true
+        };
+    }
+
+    achievementStore.set(nextState);
+    return { syncedCount, updatedCount: syncedCount, totalFound: medals.length };
 }
 
 export function toggleAchievementLevel(
@@ -60,7 +198,8 @@ export function toggleAchievementLevel(
             [id]: {
                 level: nextLevel,
                 plated: nextPlated,
-                completedAt
+                completedAt,
+                synced: false
             }
         };
     });
@@ -88,7 +227,8 @@ export function toggleAchievementPlate(
             [id]: {
                 level: nextLevel,
                 plated: nextPlated,
-                completedAt
+                completedAt,
+                synced: false
             }
         };
     });

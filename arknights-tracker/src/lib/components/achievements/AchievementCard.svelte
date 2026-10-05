@@ -1,5 +1,6 @@
 <script lang="ts">
     import { t } from '$lib/i18n';
+    import { currentUiLocale, normalizeLocale } from '$lib/stores/locale';
     import type { AchievementData, AchievementCondition } from '$lib/data/achievements';
     import {
         achievementStore,
@@ -28,6 +29,17 @@
     $: tracked = $achievementStore[achievement.id] || { level: 0, plated: false };
     $: isCompleted = isAchievementFullyCompleted(achievement, tracked);
     $: computedIsNew = isNew !== undefined ? isNew : (latestVersion ? addedVersion === latestVersion : false);
+    $: completedDateFormatted = (() => {
+        if (!tracked.completedAt) return '';
+        try {
+            const d = new Date(tracked.completedAt);
+            if (isNaN(d.getTime())) return '';
+            const loc = normalizeLocale($currentUiLocale || 'ru');
+            return d.toLocaleDateString(loc, { year: 'numeric', month: '2-digit', day: '2-digit' });
+        } catch {
+            return '';
+        }
+    })();
 
     $: sortedLevels = Object.keys(achievement.levelInfos || {})
         .map(Number)
@@ -102,7 +114,6 @@
         return '';
     })();
 
-
     function selectItem(item: SwitcherItem) {
         manualSelection = item;
     }
@@ -145,11 +156,11 @@
 </script>
 
 <div
-    class="relative border border-[#444444] rounded-xl px-3 md:px-3.5 py-3.5 flex flex-col justify-between overflow-hidden transition-colors duration-200 bg-transparent"
+    class="relative border border-gray-300 dark:border-[#444444] rounded-xl px-3 md:px-3.5 py-3.5 flex flex-col justify-between overflow-hidden transition-colors duration-200 bg-transparent"
 >
     {#if isCompleted}
         <div
-            class="absolute right-0 bottom-0 pointer-events-none text-[#373729] dark:text-[#373729] z-0 select-none overflow-hidden"
+            class="absolute right-0 bottom-0 pointer-events-none text-[#f5f5c1] dark:text-[#373729] z-0 select-none overflow-hidden"
         >
             <Icon name="achRightlist" class="w-36 h-32 md:w-48 md:h-40 opacity-70 translate-x-3 translate-y-3" />
         </div>
@@ -212,11 +223,17 @@
                 </div>
             {/if}
 
+            {#if tracked.synced && completedDateFormatted}
+                <div class="flex items-center gap-1.5 mt-2 text-[11px] md:text-xs text-gray-400 font-nums">
+                    <Icon name="achRightlist" class="w-4 h-3.5 dark:text-[#FFE145] text-[#d4b931] shrink-0" />
+                    <span>{completedDateFormatted}</span>
+                </div>
+            {/if}
         </div>
 
         <div class="flex-1 min-w-0 w-full">
             <div class="flex flex-wrap items-center gap-2 {computedIsNew ? 'pr-12' : ''}">
-                <h4 class="text-white text-base md:text-lg font-bold leading-tight">
+                <h4 class="text-[#21272C] dark:text-white md:text-lg font-bold leading-tight">
                     {localeData?.name || achievement.id}
                 </h4>
 
@@ -254,8 +271,8 @@
 
                             <span
                                 class="text-xs md:text-sm leading-snug break-words flex-1 transition-colors {isLevelDone
-                                    ? 'text-gray-200'
-                                    : 'text-gray-400'}"
+                                    ? 'text-gray-400 dark:text-gray-200'
+                                    : 'text-gray-500 dark:text-gray-400'}"
                             >
                                 {@html formatAchievementDesc(localeData?.levels?.[lvl]?.desc || '', achievement.levelInfos?.[lvl]?.conditions)}
                             </span>
@@ -284,8 +301,8 @@
 
                             <span
                                 class="text-xs md:text-sm leading-snug break-words flex-1 transition-colors {isPlateDone
-                                    ? 'text-gray-200'
-                                    : 'text-gray-400'}"
+                                    ? 'text-gray-400 dark:text-gray-200'
+                                    : 'text-gray-500 dark:text-gray-400'}"
                             >
                                 {@html formatAchievementDesc(localeData?.plating?.desc || '', achievement.plateConditions)}
                             </span>
@@ -303,10 +320,10 @@
     </div>
 
     {#if !hideAddedVersion}
-        <div class="relative z-10 flex justify-end mt-1 pt-2">
+        <div class="relative z-10 flex items-center justify-end mt-1 pt-2">
             <a
                 href="/changelog?version={addedVersion}"
-                class="text-[11px] md:text-xs text-gray-500 hover:text-gray-300 transition-colors no-underline"
+                class="text-[11px] md:text-xs text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300 transition-colors no-underline ml-auto"
             >
                 {$t('systemNames.addedInVersion', { version: addedVersion })}
             </a>

@@ -1163,7 +1163,13 @@
     "currentWeek": "이번 주",
     "nextWeek": "다음 주",
     "fullCalendar": "전체 캘린더",
-    "arsenalExchangeWarning": "데이터는 중국 서버의 무기 로테이션 파일을 기반으로 하며 정확하지 않을 수 있습니다"
+    "arsenalExchangeWarning": "데이터는 중국 서버의 무기 로테이션 파일을 기반으로 하며 정확하지 않을 수 있습니다",
+    "gameUpdate": "게임 업데이트",
+    "maintenanceInProgress": "점검 진행 중",
+    "updateExpected": "예정",
+    "versionLabel": "버전 {version}",
+    "goToChangelog": "업데이트 내역",
+    "currentGameVersion": "현재 게임 버전: {version}"
   },
   "characters": {
     "catcher": "카치르",
@@ -2526,6 +2532,7 @@
     "delete_confirm": "이 저장된 토큰을 삭제하시겠습니까?",
     "settings_title": "프로필 설정",
     "settings_hide_data": "리더보드에서 계정 세부정보 숨기기",
+    "settings_hide_uid": "계정 UID 숨기기",
     "settings_primary_account": "뽑기 계정 연동",
     "settings_primary_account_none": "없음",
     "bind_to_view_luck": "행운 통계를 보려면 설정에서 게임 계정을 연동하세요.",
@@ -2541,7 +2548,7 @@
     "image_size_error": "이미지가 너무 작습니다. 최소 128x128.",
     "crop_avatar_title": "아바타 자르기",
     "avatar_success": "아바타가 성공적으로 업데이트되었습니다!",
-    "no_connected_accounts": "연결된 게임 계정이 없습니다. 위 버튼을 사용하여 동기화하세요.",
+    "no_connected_accounts": "연결된 게임 계정이 없습니다. 위 동기화 버튼을 사용하여 계정을 동기화하세요.",
     "edit_nickname": "닉네임 편집",
     "copy_profile_link": "프로필 링크 복사",
     "link_copied": "링크가 클립보드에 복사되었습니다!",
@@ -2607,7 +2614,9 @@
     "token_already_used": "이 토큰은 이미 사용되었습니다",
     "token_expired_badge": "만료됨",
     "unauthorized": "인증되지 않음",
-    "user_not_found": "사용자를 찾을 수 없습니다"
+    "user_not_found": "사용자를 찾을 수 없습니다",
+    "syncing": "동기화 중...",
+    "max_profiles_reached": "연동 가능한 프로필의 최대 개수는 3개입니다"
   },
   "contractTagNames": {
     "activity_contract_tag_201": "환경: 과속",
@@ -2711,7 +2720,8 @@
     "indie_group_h03": "무기물",
     "indie_group_h04": "탁류 구현",
     "indie_group_h05": "대지에게 버림받은 존재",
-    "indie_group_h06": "산을 울리는 외침"
+    "indie_group_h06": "산을 울리는 외침",
+    "indie_group_h07": "그림자 형상 각인"
   },
   "equipmentScriptNames": {
     "xiraniteTechnique": "식양 기술",
@@ -2860,7 +2870,17 @@
     "onlyIncomplete": "미완료만",
     "allVersions": "모든 버전",
     "searchPlaceholder": "검색...",
-    "empty": "업적을 찾을 수 없습니다"
+    "empty": "업적을 찾을 수 없습니다",
+    "sync": "동기화",
+    "syncModalTitle": "업적 동기화",
+    "selectAccount": "계정 선택:",
+    "syncAction": "동기화",
+    "syncSuccess": "업적 동기화 완료: {count}",
+    "syncNothingToUpdate": "모든 업적이 이미 최신 상태입니다",
+    "notLoggedInDesc": "업적을 동기화하려면 로그인하고 게임 프로필을 연동해야 합니다.",
+    "noAccountsDesc": "프로필에 연동된 게임 계정이 없습니다. 프로필 페이지에서 계정을 연동하세요.",
+    "noMedalsInProfile": "선택한 게임 계정에 업적 데이터가 없습니다",
+    "syncWarningProgress": "게임 프로필과 업적을 동기화하면 현재 업적 진행 상황이 초기화됩니다."
   },
   "achLevels": {
     "source": "획득 방법",
