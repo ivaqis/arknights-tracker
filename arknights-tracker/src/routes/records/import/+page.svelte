@@ -1,25 +1,25 @@
 <script>
-    import { fetchGetImport } from "$lib/api/import/fetchGetImport.ts";
-    import { t } from "$lib/i18n";
     import { goto } from "$app/navigation";
-    import { pullData } from "$lib/stores/pulls";
-    import { PullParser } from "$lib/classes/pulls/PullParser";
+    import { fetchGetImport } from "$lib/api/import/fetchGetImport.ts";
     import { fetchPostImport } from "$lib/api/import/fetchPostImport";
     import { fetchSyncPulls } from "$lib/api/syncPulls/fetchSyncPulls";
-    import { accountStore } from "$lib/stores/accounts";
-    import { onMount } from "svelte";
-    import { get } from "svelte/store";
+    import { PullParser } from "$lib/classes/pulls/PullParser";
 
     import Button from "$lib/components/Button.svelte";
     import Checkbox from "$lib/components/Checkbox.svelte";
     import Icon from "$lib/components/Icon.svelte";
     import ConfirmationModal from "$lib/components/modals/ConfirmationModal.svelte";
-    import Tooltip from "$lib/components/Tooltip.svelte";
 
     import FileDropzone from "$lib/components/records/import/FileDropzone.svelte";
-    import SavedTokensList from "$lib/components/records/import/SavedTokensList.svelte";
-    import ImportPreviewReport from "$lib/components/records/import/ImportPreviewReport.svelte";
     import ImportInstructions from "$lib/components/records/import/ImportInstructions.svelte";
+    import ImportPreviewReport from "$lib/components/records/import/ImportPreviewReport.svelte";
+    import SavedTokensList from "$lib/components/records/import/SavedTokensList.svelte";
+    import Tooltip from "$lib/components/Tooltip.svelte";
+    import { t } from "$lib/i18n";
+    import { accountStore } from "$lib/stores/accounts";
+    import { pullData } from "$lib/stores/pulls";
+    import { onMount } from "svelte";
+    import { get } from "svelte/store";
 
     let platformTab = "pc-web";
     let urlInput = "";
@@ -426,14 +426,14 @@
                     ? $t("import.warning_sync_creation")
                     : $t("import.warning_sync_write_on_local");
             } else if (data.profileId !== currentPublicId) {
-                if (currentPublicId === null && currentProfile.serverUid === null) {
+                const existingProfile = await accountStore.findAccountByPublicServerUid(data.profileId);
+
+                if (existingProfile) {
+                    warningMsg = $t("import.warning_sync_switch");
+                } else if (currentPublicId === null && currentProfile.serverUid === null) {
                     warningMsg = $t("import.warning_sync_write_on_local");
                 } else {
-                    const existingProfile = await accountStore.findAccountByPublicServerUid(data.profileId);
-
-                    warningMsg = existingProfile
-                        ? $t("import.warning_sync_switch")
-                        : $t("import.warning_sync_switch_creation");
+                    warningMsg = $t("import.warning_sync_switch_creation");
                 }
             }
         }
