@@ -20,6 +20,7 @@ model User {
     publicUid       String   @unique
     firebaseUid     String?  @unique
     isPrivate       Boolean  @default(false)
+    hideUid         Boolean  @default(true)
     avatarId        String?
     backgroundId    String?
     displayAvatar   Boolean  @default(true)
@@ -47,9 +48,11 @@ model UserGameProfile {
     user              User               @relation(fields: [uid], references: [uid], onDelete: Cascade)
     userBannerProfile UserBannerProfile? @relation(fields: [bannerProfileId], references: [profileId])
 
-    userContractLeaderboards UserContractLeaderboard[]
-    userMonumentLeaderboards UserMonumentLeaderboard[]
-    userMonumentGroups       UserMonumentGroup[]
+    userContractLeaderboards   UserContractLeaderboard[]
+    userMonumentLeaderboards   UserMonumentLeaderboard[]
+    userMonumentGroups         UserMonumentGroup[]
+    userWarEchoesLeaderboards  UserWarEchoesLeaderboard[]
+    userWarEchoesGroups        UserWarEchoesGroup[]
 
     @@index([uid, serverId])
     @@index([bannerProfileId])
@@ -128,6 +131,56 @@ model UserMonumentCharacter {
 
     userMonumentLeaderboard UserMonumentLeaderboard @relation(fields: [recordId], references: [id], onDelete: Cascade)
     userMonumentGroup       UserMonumentGroup       @relation(fields: [userGroupId], references: [id], onDelete: Cascade)
+
+    @@id([recordId, charId])
+    @@index([userGroupId, charId])
+}
+
+model UserWarEchoesLeaderboard {
+    id           String   @id @default(uuid())
+    userGroupId  String
+    gameUid      String
+    dungeonId    String
+    groupId      String
+    difficulty   String
+    clearTimeSec Int
+    data         String // json
+    updatedAt    DateTime @updatedAt
+
+    userGameProfile    UserGameProfile    @relation(fields: [gameUid], references: [gameUid], onDelete: Cascade)
+    userWarEchoesGroup UserWarEchoesGroup @relation(fields: [userGroupId], references: [id])
+
+    userWarEchoesCharacters UserWarEchoesCharacter[]
+
+    @@unique([gameUid, dungeonId])
+    @@index([gameUid, dungeonId])
+    @@index([dungeonId])
+    @@index([groupId, difficulty])
+    @@index([userGroupId])
+}
+
+model UserWarEchoesGroup {
+    id         String @id @default(uuid())
+    gameUid    String
+    groupId    String
+    difficulty String
+
+    userGameProfile UserGameProfile @relation(fields: [gameUid], references: [gameUid], onDelete: Cascade)
+
+    userWarEchoesLeaderboards UserWarEchoesLeaderboard[]
+    userWarEchoesCharacters   UserWarEchoesCharacter[]
+
+    @@unique([gameUid, groupId, difficulty])
+    @@index([groupId, difficulty, gameUid])
+}
+
+model UserWarEchoesCharacter {
+    recordId    String
+    userGroupId String
+    charId      String
+
+    userWarEchoesLeaderboard UserWarEchoesLeaderboard @relation(fields: [recordId], references: [id], onDelete: Cascade)
+    userWarEchoesGroup       UserWarEchoesGroup       @relation(fields: [userGroupId], references: [id], onDelete: Cascade)
 
     @@id([recordId, charId])
     @@index([userGroupId, charId])

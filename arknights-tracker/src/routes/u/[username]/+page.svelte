@@ -22,6 +22,7 @@
     $: initialChar = $page.url.searchParams.get("char") || $page.url.searchParams.get("operator");
     $: urlServer = $page.url.searchParams.get("server");
     $: urlUid = $page.url.searchParams.get("uid");
+    $: urlAcc = $page.url.searchParams.get("acc") || $page.url.searchParams.get("account");
 
     let profile = null;
     let loading = true;
@@ -48,20 +49,31 @@
                 profile = data;
                 favoriteGameUid = profile.favorite_game_uid || "";
                 if (profile.details && profile.details.length > 0) {
+                    const sortedList = [...profile.details].sort((a, b) => {
+                        if (favoriteGameUid) {
+                            if (a.game_uid === favoriteGameUid) return -1;
+                            if (b.game_uid === favoriteGameUid) return 1;
+                        }
+                        const levelA = a.info?.base?.level ?? a.level ?? 1;
+                        const levelB = b.info?.base?.level ?? b.level ?? 1;
+                        return levelB - levelA;
+                    });
+
+                    const accIdx = parseInt(urlAcc || "", 10);
                     if (urlUid && profile.details.some(d => d.game_uid === urlUid)) {
                         selectedGameUid = urlUid;
+                    } else if (!isNaN(accIdx) && accIdx >= 1 && accIdx <= sortedList.length) {
+                        selectedGameUid = sortedList[accIdx - 1].game_uid;
                     } else if (urlServer && profile.details.some(d => String(d.info?.base?.serverId ?? d.serverId) === urlServer)) {
                         const matched = profile.details.find(d => String(d.info?.base?.serverId ?? d.serverId) === urlServer);
-                        selectedGameUid = matched ? matched.game_uid : profile.details[0].game_uid;
+                        selectedGameUid = matched ? matched.game_uid : sortedList[0].game_uid;
+                    } else if (initialChar && sortedList.some(d => (d.info?.chars || []).some(c => c.id === initialChar || c.charData?.id === initialChar))) {
+                        const matchedCharAcc = sortedList.find(d => (d.info?.chars || []).some(c => c.id === initialChar || c.charData?.id === initialChar));
+                        selectedGameUid = matchedCharAcc ? matchedCharAcc.game_uid : sortedList[0].game_uid;
                     } else {
                         const fav = favoriteGameUid;
-                        const hasFav = profile.details.some(d => d.game_uid === fav);
-                        const highestLevelAcc = [...profile.details].sort((a, b) => {
-                            const levelA = a.info?.base?.level ?? a.level ?? 1;
-                            const levelB = b.info?.base?.level ?? b.level ?? 1;
-                            return levelB - levelA;
-                        })[0];
-                        selectedGameUid = hasFav ? fav : (highestLevelAcc?.game_uid || profile.details[0].game_uid);
+                        const hasFav = sortedList.some(d => d.game_uid === fav);
+                        selectedGameUid = hasFav ? fav : sortedList[0].game_uid;
                     }
                 }
             }
@@ -91,6 +103,7 @@
     })();
 
     $: activeAccount = profile?.details?.find(d => d.game_uid === selectedGameUid) || sortedDetails?.[0];
+    $: isUidHidden = profile ? (profile.hideUid !== false && profile.hide_uid !== 0) : true;
 
     function handleCopyProfileLink() {
         if (!profile || !profile.name) return;
@@ -236,21 +249,23 @@
                                         <span class="text-md font-bold dark:text-white text-gray-900 font-sdk truncate">{d.info?.base?.name || "Profile"}</span>
                                         <!--<ContractLevelTag level={d.info?.contract?.level || 0} />-->
                                     </div>
-                                    <div class="text-[10px] text-gray-500 dark:text-gray-400 font-mono truncate flex items-center gap-1">
-                                        <span>UID: {d.game_uid}</span>
-                                        <Tooltip text={$t("profile.copy_uid")}>
-                                            <button 
-                                                on:click|stopPropagation={() => handleCopyUid(d.game_uid)} 
-                                                class="text-gray-500 hover:text-gray-600 hover:dark:text-white transition-colors cursor-pointer flex items-center justify-center p-0.5"
-                                            >
-                                                {#if copiedUid === d.game_uid}
-                                                    <Icon name="success" class="w-3.5 h-3.5 text-yellow-400" />
-                                                {:else}
-                                                    <Icon name="copy" class="w-3.5 h-3.5 opacity-60 hover:opacity-100" />
-                                                {/if}
-                                            </button>
-                                        </Tooltip>
-                                    </div>
+                                    {#if !isUidHidden}
+                                        <div class="text-[10px] text-gray-500 dark:text-gray-400 font-mono truncate flex items-center gap-1">
+                                            <span>UID: {d.game_uid}</span>
+                                            <Tooltip text={$t("profile.copy_uid")}>
+                                                <button 
+                                                    on:click|stopPropagation={() => handleCopyUid(d.game_uid)} 
+                                                    class="text-gray-500 hover:text-gray-600 hover:dark:text-white transition-colors cursor-pointer flex items-center justify-center p-0.5"
+                                                >
+                                                    {#if copiedUid === d.game_uid}
+                                                        <Icon name="success" class="w-3.5 h-3.5 text-yellow-400" />
+                                                    {:else}
+                                                        <Icon name="copy" class="w-3.5 h-3.5 opacity-60 hover:opacity-100" />
+                                                    {/if}
+                                                </button>
+                                            </Tooltip>
+                                        </div>
+                                    {/if}
                                     <div class="bg-gray-200 text-gray-600 dark:bg-[#383838] dark:text-[#B0B0B0] px-1.5 py-0.5 rounded text-[9px] font-medium font-sans w-fit truncate">
                                         {getServerLabel(d.info?.base?.serverId)}
                                     </div>
@@ -293,6 +308,8 @@
                             profileName={profile?.name || username}
                             hasBackground={!!profile?.background}
                             initialCharId={initialChar}
+                            hideUid={isUidHidden}
+                            accountSlot={sortedDetails.findIndex(d => d.game_uid === activeAccount?.game_uid) + 1}
                         />
                     </div>
 

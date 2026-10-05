@@ -348,7 +348,8 @@
     "blueprintLocation": "Vị trí bản thiết kế trang bị",
     "rewards": "Phần thưởng",
     "dayN": "Ngày {n}",
-    "addedInVersion": "Đã thêm trong phiên bản {version}"
+    "addedInVersion": "Đã thêm trong phiên bản {version}",
+    "currentlyUnavailable": "Hiện Không Khả Dụng"
   },
   "status": {
     "won": "Thắng 50:50",
@@ -415,7 +416,8 @@
     "openRecipe": "Mở công thức",
     "leaderboard": "Bảng Xếp Hạng",
     "profile": "Hồ Sơ",
-    "icons": "Biểu tượng"
+    "icons": "Biểu tượng",
+    "achievements": "Thành tựu"
   },
   "events": {
     "type": {
@@ -1200,7 +1202,13 @@
     "currentWeek": "Tuần này",
     "nextWeek": "Tuần tới",
     "fullCalendar": "Lịch đầy đủ",
-    "arsenalExchangeWarning": "Dữ liệu dựa trên tệp xoay tua vũ khí của Trung Quốc và có thể không chính xác"
+    "arsenalExchangeWarning": "Dữ liệu dựa trên tệp xoay tua vũ khí của Trung Quốc và có thể không chính xác",
+    "gameUpdate": "Cập Nhật Trò Chơi",
+    "maintenanceInProgress": "Đang bảo trì",
+    "updateExpected": "Dự kiến",
+    "versionLabel": "Phiên bản {version}",
+    "goToChangelog": "Nhật ký thay đổi",
+    "currentGameVersion": "Phiên bản trò chơi hiện tại: {version}"
   },
   "characters": {
     "catcher": "Catcher",
@@ -2563,6 +2571,7 @@
     "delete_confirm": "Xóa token này?",
     "settings_title": "Cài Đặt Hồ Sơ",
     "settings_hide_data": "Ẩn dữ liệu trên bảng xếp hạng",
+    "settings_hide_uid": "Ẩn UID tài khoản",
     "settings_primary_account": "Liên Kết Tài Khoản Gacha",
     "settings_primary_account_none": "Không có",
     "bind_to_view_luck": "Liên kết tài khoản game để xem thống kê may mắn.",
@@ -2578,7 +2587,7 @@
     "image_size_error": "Ảnh quá nhỏ (Tối thiểu 128x128).",
     "crop_avatar_title": "Cắt Ảnh Đại Diện",
     "avatar_success": "Cập nhật thành công!",
-    "no_connected_accounts": "Không có tài khoản nào được kết nối.",
+    "no_connected_accounts": "Không có tài khoản game nào được kết nối. Đồng bộ tài khoản của bạn bằng nút phía trên.",
     "edit_nickname": "Chỉnh sửa biệt danh",
     "copy_profile_link": "Sao chép liên kết hồ sơ",
     "link_copied": "Đã sao chép liên kết!",
@@ -2644,7 +2653,9 @@
     "token_already_used": "Token này đã được sử dụng",
     "token_expired_badge": "Đã hết hạn",
     "unauthorized": "Chưa xác thực",
-    "user_not_found": "Không tìm thấy người dùng"
+    "user_not_found": "Không tìm thấy người dùng",
+    "syncing": "Đang đồng bộ...",
+    "max_profiles_reached": "Số lượng hồ sơ liên kết tối đa là 3"
   },
   "contractTagNames": {
     "activity_contract_tag_201": "Môi Trường: Quá Tải",
@@ -2748,7 +2759,8 @@
     "indie_group_h03": "Thực Thể Vô Cơ",
     "indie_group_h04": "Sương Đục Hiện Thể",
     "indie_group_h05": "Kẻ Bị Vùng Đất Ruồng Bỏ",
-    "indie_group_h06": "Thú Gầm Vách Đá"
+    "indie_group_h06": "Thú Gầm Vách Đá",
+    "indie_group_h07": "Hằn Dấu Bóng Tối"
   },
   "equipmentScriptNames": {
     "xiraniteTechnique": "Kỹ Thuật Xiranite",
@@ -2867,5 +2879,52 @@
     "gas_env_wet": "MÔI TRƯỜNG Ẩm Ướt",
     "gas_env_acidic": "MÔI TRƯỜNG Axit",
     "gas_env_xiranite": "MÔI TRƯỜNG Xiranite"
+  },
+  "achCategories": {
+    "achv_type_adventure": "Khu Vực",
+    "achv_type_battle": "Kỹ Thuật",
+    "achv_type_event": "Sự Kiện",
+    "achv_type_factory": "Xây Dựng",
+    "achv_type_growth": "Cấp Tiến",
+    "achv_type_hide": "Phi Thường",
+    "achv_type_quest": "Chương",
+    "achv_type_social": "Xã Hội"
+  },
+  "achGroups": {
+    "achv_group_adv_tundra": "Thung Lũng",
+    "achv_group_adv_wuling": "Võ Lăng",
+    "achv_group_bat_skill": "Kỹ Thuật Chiến Đấu",
+    "achv_group_bat_dung": "Không Gian Giao Thức",
+    "achv_group_fac_factory": "Nhà Máy Khu Phức Hợp",
+    "achv_group_fac_spaceship": "Dijiang",
+    "achv_group_quest_main": "Nhiệm Vụ Chính",
+    "achv_group_quest_side": "Nhiệm Vụ Khám Phá",
+    "achv_group_event_default": "Sự Kiện",
+    "achv_group_growth_default": "Cấp Tiến",
+    "achv_group_hide_default": "Phi Thường",
+    "achv_group_social_default": "Xã Hội"
+  },
+  "achievements": {
+    "of": "trên",
+    "onlyIncomplete": "Chỉ chưa hoàn thành",
+    "allVersions": "Tất cả phiên bản",
+    "searchPlaceholder": "Tìm kiếm...",
+    "empty": "Không tìm thấy thành tựu",
+    "sync": "Đồng Bộ",
+    "syncModalTitle": "Đồng Bộ Thành Tựu",
+    "selectAccount": "Chọn Tài Khoản:",
+    "syncAction": "Đồng Bộ",
+    "syncSuccess": "Đã đồng bộ thành tựu: {count}",
+    "syncNothingToUpdate": "Tất cả thành tựu đã được cập nhật",
+    "notLoggedInDesc": "Để đồng bộ thành tựu, bạn phải đăng nhập và liên kết hồ sơ trong game.",
+    "noAccountsDesc": "Không có tài khoản game nào được liên kết với hồ sơ của bạn. Hãy liên kết tài khoản tại trang Hồ sơ.",
+    "noMedalsInProfile": "Không tìm thấy thành tựu trong tài khoản game đã chọn",
+    "syncWarningProgress": "Đồng bộ thành tựu với hồ sơ trong game sẽ đặt lại tiến trình thành tựu hiện tại."
+  },
+  "achLevels": {
+    "source": "Nguồn",
+    "reforging2": "Rèn Lại II",
+    "reforging3": "Rèn Lại III",
+    "trimming": "Mạ viền"
   }
 }

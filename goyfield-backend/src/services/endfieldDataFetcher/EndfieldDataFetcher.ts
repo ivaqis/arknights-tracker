@@ -12,6 +12,9 @@ import { SkportBindingFetcher } from "@services/skportBindingFetcher/SkportBindi
 import { DetailData } from "@services/skportDetailFetcher/contracts/DetailData.js";
 import { SkportDetailFetcher } from "@services/skportDetailFetcher/SkportDetailFetcher.js";
 
+import { WarEchoesSeasonData } from "@services/warEchoesFetcher/contracts/WarEchoesSeasonData.js";
+import { WarEchoesFetcher } from "@services/warEchoesFetcher/WarEchoesFetcher.js";
+
 export class EndfieldDataFetcher {
     private readonly _authToken: string;
     private readonly _credData: CredData;
@@ -97,6 +100,14 @@ export class EndfieldDataFetcher {
         if (!role) return null;
 
         return await MonumentFetcher.getMonumentGroupDataList(role, this._credData);
+    }
+
+    public async getWarEchoesData(serverId: string): Promise<WarEchoesSeasonData[] | null> {
+        const role = this.getRole(serverId);
+
+        if (!role) return null;
+
+        return await WarEchoesFetcher.getWarEchoesDataList(role, this._credData);
     }
 
     public getRole(serverId: string): RoleData | null {

@@ -348,7 +348,8 @@
     "blueprintLocation": "裝備圖紙位置",
     "rewards": "獎勵",
     "dayN": "第 {n} 天",
-    "addedInVersion": "在 {version} 版本中新增"
+    "addedInVersion": "在 {version} 版本中新增",
+    "currentlyUnavailable": "目前尚無"
   },
   "status": {
     "won": "勝出 50:50",
@@ -415,7 +416,8 @@
     "openRecipe": "打開配方",
     "leaderboard": "排行榜",
     "profile": "個人資料",
-    "icons": "圖標"
+    "icons": "圖標",
+    "achievements": "成就"
   },
   "events": {
     "type": {
@@ -1200,7 +1202,13 @@
     "currentWeek": "本週",
     "nextWeek": "下週",
     "fullCalendar": "完整日曆",
-    "arsenalExchangeWarning": "數據基於陸服武器輪換文件，可能不完全準確"
+    "arsenalExchangeWarning": "數據基於陸服武器輪換文件，可能不完全準確",
+    "gameUpdate": "遊戲更新",
+    "maintenanceInProgress": "停服維護中",
+    "updateExpected": "預計",
+    "versionLabel": "版本 {version}",
+    "goToChangelog": "更新日誌",
+    "currentGameVersion": "當前遊戲版本：{version}"
   },
   "characters": {
     "catcher": "卡契爾",
@@ -2563,6 +2571,7 @@
     "delete_confirm": "刪除此儲存的 token？",
     "settings_title": "資料設定",
     "settings_hide_data": "在排行榜上隱藏帳戶詳情",
+    "settings_hide_uid": "隱藏帳戶 UID",
     "settings_primary_account": "綁定抽卡帳戶",
     "settings_primary_account_none": "無",
     "bind_to_view_luck": "在設定中綁定遊戲帳戶以查看您的運氣統計。",
@@ -2578,7 +2587,7 @@
     "image_size_error": "圖片太小。最小解析度為 128x128 像素。",
     "crop_avatar_title": "裁剪頭像",
     "avatar_success": "頭像更新成功！",
-    "no_connected_accounts": "沒有連接的遊戲帳戶。請使用上方的更新按鈕同步帳戶。",
+    "no_connected_accounts": "沒有連接的遊戲帳戶。請使用上方的同步按鈕同步帳戶。",
     "edit_nickname": "編輯暱稱",
     "copy_profile_link": "複製主頁連結",
     "link_copied": "連結已複製到剪貼簿！",
@@ -2644,7 +2653,9 @@
     "token_already_used": "此Token已被使用",
     "token_expired_badge": "已過期",
     "unauthorized": "未授權",
-    "user_not_found": "找不到使用者"
+    "user_not_found": "找不到使用者",
+    "syncing": "正在同步...",
+    "max_profiles_reached": "最多只能綁定 3 個遊戲檔案"
   },
   "contractTagNames": {
     "activity_contract_tag_201": "環境：過速",
@@ -2748,7 +2759,8 @@
     "indie_group_h03": "無機造物",
     "indie_group_h04": "濁流具現",
     "indie_group_h05": "大地的棄子",
-    "indie_group_h06": "山中見犼"
+    "indie_group_h06": "山中見犼",
+    "indie_group_h07": "幽影刻形"
   },
   "equipmentScriptNames": {
     "xiraniteTechnique": "息壤工藝",
@@ -2867,5 +2879,52 @@
     "gas_env_wet": "濕潤環境",
     "gas_env_acidic": "酸性環境",
     "gas_env_xiranite": "息壤環境"
+  },
+  "achCategories": {
+    "achv_type_adventure": "地區獎章",
+    "achv_type_battle": "技藝獎章",
+    "achv_type_event": "活動獎章",
+    "achv_type_factory": "建設獎章",
+    "achv_type_growth": "錘鍊獎章",
+    "achv_type_hide": "奇想獎章",
+    "achv_type_quest": "章節獎章",
+    "achv_type_social": "社交獎章"
+  },
+  "achGroups": {
+    "achv_group_adv_tundra": "谷地地區獎章",
+    "achv_group_adv_wuling": "武陵地區獎章",
+    "achv_group_bat_skill": "戰鬥技巧獎章",
+    "achv_group_bat_dung": "協議空間獎章",
+    "achv_group_fac_factory": "集成工業獎章",
+    "achv_group_fac_spaceship": "帝江號獎章",
+    "achv_group_quest_main": "主線任務獎章",
+    "achv_group_quest_side": "探索任務獎章",
+    "achv_group_event_default": "活動獎章",
+    "achv_group_growth_default": "錘鍊獎章",
+    "achv_group_hide_default": "奇想獎章",
+    "achv_group_social_default": "社交獎章"
+  },
+  "achievements": {
+    "of": "/",
+    "onlyIncomplete": "僅未完成",
+    "allVersions": "全部版本",
+    "searchPlaceholder": "搜尋...",
+    "empty": "未找到成就",
+    "sync": "同步",
+    "syncModalTitle": "同步成就",
+    "selectAccount": "選擇帳戶：",
+    "syncAction": "同步",
+    "syncSuccess": "已同步成就：{count}",
+    "syncNothingToUpdate": "所有成就已是最新狀態",
+    "notLoggedInDesc": "如需同步成就，請先登入並綁定您的遊戲個人資料。",
+    "noAccountsDesc": "您的個人資料中沒有綁定的遊戲帳戶。請前往個人資料頁面綁定帳戶。",
+    "noMedalsInProfile": "所選遊戲帳戶中未找到成就數據",
+    "syncWarningProgress": "與遊戲個人資料同步成就將重設當前的成就進度。"
+  },
+  "achLevels": {
+    "source": "獲得方式",
+    "reforging2": "重鍛方式II",
+    "reforging3": "重鍛方式III",
+    "trimming": "鍍層方式"
   }
 }

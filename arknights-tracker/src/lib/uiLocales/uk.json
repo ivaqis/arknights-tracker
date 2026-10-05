@@ -346,7 +346,8 @@
     "recipeTree": "Ланцюжок рецептів",
     "leaderboard": "Таблиця лідерів",
     "profile": "Профіль",
-    "icons": "Іконки"
+    "icons": "Іконки",
+    "achievements": "Досягнення"
   },
   "mouths": {
     "january": "Січень",
@@ -724,7 +725,13 @@
     "nextWeek": "Наступний тиждень",
     "fullCalendar": "Повний календар",
     "arsenalExchangeWarning": "Дані базуються на китайському файлі ротації зброї і можуть бути неточними",
-    "uiLanguagesDesc": "Мови, які підтримують переклад інтерфейсу сайту. Для перекладу ігрових позначень буде використано вибрану мову, яка повністю підтримує переклад гри. Допомогти з перекладом ви можете в <a href=\"{discordLink}\" target=\"_blank\" class=\"text-yellow-400 hover:underline\">Discord сервері Goyfield</a>"
+    "uiLanguagesDesc": "Мови, які підтримують переклад інтерфейсу сайту. Для перекладу ігрових позначень буде використано вибрану мову, яка повністю підтримує переклад гри. Допомогти з перекладом ви можете в <a href=\"{discordLink}\" target=\"_blank\" class=\"text-yellow-400 hover:underline\">Discord сервері Goyfield</a>",
+    "gameUpdate": "Оновлення гри",
+    "maintenanceInProgress": "Тривають технічні роботи",
+    "updateExpected": "Очікується",
+    "versionLabel": "Версія {version}",
+    "goToChangelog": "Список змін",
+    "currentGameVersion": "Поточна версія гри: {version}"
   },
   "cookies": {
     "title": "Ми використовуємо файли cookie",
@@ -882,6 +889,7 @@
     "delete_confirm": "Видалити цей токен?",
     "settings_title": "Налаштування профілю",
     "settings_hide_data": "Приховати дані в таблиці лідерів",
+    "settings_hide_uid": "Приховати UID акаунтів",
     "settings_primary_account": "Прив'язати акаунт круток",
     "settings_primary_account_none": "Немає",
     "bind_to_view_luck": "Прив'яжіть акаунт для перегляду удачі.",
@@ -897,7 +905,7 @@
     "image_size_error": "Зображення занадто мале (Мін. 128x128).",
     "crop_avatar_title": "Обрізати аватар",
     "avatar_success": "Аватар успішно оновлено!",
-    "no_connected_accounts": "Немає підключених акаунтів.",
+    "no_connected_accounts": "Немає підключених ігрових акаунтів. Синхронізуйте свій акаунт за допомогою кнопки вище.",
     "edit_nickname": "Редагувати нікнейм",
     "copy_profile_link": "Копіювати посилання",
     "share": "Поділитися",
@@ -908,7 +916,7 @@
     "copy_uid": "Копіювати UID",
     "unlink_account": "Відв'язати акаунт",
     "all": "Всі",
-    "sync_with_game": "Синхронізація",
+    "sync_with_game": "Синхронізація з грою",
     "no_essence": "Немає есенції",
     "copy_failed": "Помилка копіювання",
     "no_weapon": "Зброю не екіпіровано",
@@ -961,9 +969,28 @@
     "token_already_used": "Цей токен вже був використаний",
     "token_expired_badge": "Минув",
     "unauthorized": "Не авторизовано",
-    "user_not_found": "Користувача не знайдено"
+    "user_not_found": "Користувача не знайдено",
+    "syncing": "Синхронізація...",
+    "max_profiles_reached": "Максимальна кількість підключених профілів — 3"
   },
   "equipSkills": {
     "NoAttr": "Без атрибута"
+  },
+  "achievements": {
+    "of": "з",
+    "onlyIncomplete": "Тільки незавершені",
+    "allVersions": "Усі версії",
+    "searchPlaceholder": "Пошук...",
+    "empty": "Досягнення не знайдено",
+    "sync": "Синхронізація",
+    "syncModalTitle": "Синхронізація досягнень",
+    "selectAccount": "Виберіть акаунт:",
+    "syncAction": "Синхронізувати",
+    "syncSuccess": "Синхронізовано досягнень: {count}",
+    "syncNothingToUpdate": "Усі досягнення вже актуальні",
+    "notLoggedInDesc": "Для синхронізації досягнень необхідно увійти в акаунт і прив'язати ігровий профіль.",
+    "noAccountsDesc": "У вашому профілі немає прив'язаних ігрових акаунтів. Прив'яжіть акаунт на сторінці профілю.",
+    "noMedalsInProfile": "У вибраному ігровому акаунті немає даних про досягнення",
+    "syncWarningProgress": "Синхронізація досягнень з ігровим профілем скине поточний прогрес досягнень."
   }
 }

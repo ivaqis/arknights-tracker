@@ -26,6 +26,7 @@ export class UpdateUserProfile
     private readonly _uid: string;
     private readonly _newUid?: string;
     private readonly _isPrivate?: boolean;
+    private readonly _hideUid?: boolean;
     private readonly _backgroundId?: string;
 
     private constructor(req: e.Request<{}, ResponseBody<UpdateUserProfileResponse>, UpdateUserProfileRequest, UpdateUserProfileQuery>, res: e.Response<ResponseBody<UpdateUserProfileResponse>>) {
@@ -34,6 +35,7 @@ export class UpdateUserProfile
         this._uid = req.query.uid;
         this._newUid = req.body.newUid;
         this._isPrivate = req.body.isPrivate;
+        this._hideUid = req.body.hideUid;
         this._backgroundId = req.body.backgroundId;
     }
 
@@ -96,6 +98,10 @@ export class UpdateUserProfile
 
         if (this._isPrivate !== undefined) {
             profile.isPrivate.value = this._isPrivate;
+        }
+
+        if (this._hideUid !== undefined) {
+            profile.hideUid.value = this._hideUid;
         }
 
         if (this._backgroundId !== undefined) {

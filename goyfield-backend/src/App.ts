@@ -10,6 +10,7 @@ export class App {
         this._app = e();
         this._port = port;
 
+        this._app.set("trust proxy", 1);
         this._app.use(cors());
         this._app.use("/", root);
 

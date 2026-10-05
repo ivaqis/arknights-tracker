@@ -346,7 +346,8 @@
     "recipeTree": "Łańcuch przepisów",
     "leaderboard": "Tabela Liderów",
     "profile": "Profil",
-    "icons": "Ikony"
+    "icons": "Ikony",
+    "achievements": "Osiągnięcia"
   },
   "mouths": {
     "january": "Styczeń",
@@ -724,7 +725,13 @@
     "nextWeek": "Następny tydzień",
     "fullCalendar": "Pełny kalendarz",
     "arsenalExchangeWarning": "Dane opierają się na chińskim pliku rotacji broni i mogą nie być dokładne",
-    "uiLanguagesDesc": "Języki wspierające tłumaczenie interfejsu strony. Do oznaczeń w grze używany będzie wybrany język w pełni wspierający tłumaczenie gry. Możesz pomóc w tłumaczeniu na <a href=\"{discordLink}\" target=\"_blank\" class=\"text-yellow-400 hover:underline\">serwerze Discord Goyfield</a>"
+    "uiLanguagesDesc": "Języki wspierające tłumaczenie interfejsu strony. Do oznaczeń w grze używany będzie wybrany język w pełni wspierający tłumaczenie gry. Możesz pomóc w tłumaczeniu na <a href=\"{discordLink}\" target=\"_blank\" class=\"text-yellow-400 hover:underline\">serwerze Discord Goyfield</a>",
+    "gameUpdate": "Aktualizacja gry",
+    "maintenanceInProgress": "Prace konserwacyjne w toku",
+    "updateExpected": "Oczekiwana",
+    "versionLabel": "Wersja {version}",
+    "goToChangelog": "Dziennik zmian",
+    "currentGameVersion": "Aktualna wersja gry: {version}"
   },
   "cookies": {
     "title": "Używamy plików cookie",
@@ -882,6 +889,7 @@
     "delete_confirm": "Usunąć ten token?",
     "settings_title": "Ustawienia Profilu",
     "settings_hide_data": "Ukryj dane w tabeli",
+    "settings_hide_uid": "Ukryj UID kont",
     "settings_primary_account": "Połącz Konto Losowań",
     "settings_primary_account_none": "Brak",
     "bind_to_view_luck": "Połącz konto, aby widzieć szczęście.",
@@ -897,7 +905,7 @@
     "image_size_error": "Zbyt małe (Min 128x128).",
     "crop_avatar_title": "Przytnij Awatar",
     "avatar_success": "Awatar zaktualizowany!",
-    "no_connected_accounts": "Brak połączonych kont.",
+    "no_connected_accounts": "Brak połączonych kont gry. Zsynchronizuj swoje konto za pomocą powyższego przycisku.",
     "edit_nickname": "Edytuj pseudonim",
     "copy_profile_link": "Skopiuj link",
     "share": "Udostępnij",
@@ -961,9 +969,28 @@
     "token_already_used": "Ten token został już użyty",
     "token_expired_badge": "Wygasł",
     "unauthorized": "Nieautoryzowany",
-    "user_not_found": "Nie znaleziono użytkownika"
+    "user_not_found": "Nie znaleziono użytkownika",
+    "syncing": "Synchronizowanie...",
+    "max_profiles_reached": "Maksymalna liczba połączonych profili to 3"
   },
   "equipSkills": {
     "NoAttr": "Bez atrybutu"
+  },
+  "achievements": {
+    "of": "z",
+    "onlyIncomplete": "Tylko nieukończone",
+    "allVersions": "Wszystkie wersje",
+    "searchPlaceholder": "Szukaj...",
+    "empty": "Nie znaleziono osiągnięć",
+    "sync": "Synchronizacja",
+    "syncModalTitle": "Synchronizuj Osiągnięcia",
+    "selectAccount": "Wybierz Konto:",
+    "syncAction": "Synchronizuj",
+    "syncSuccess": "Zsynchronizowano osiągnięcia: {count}",
+    "syncNothingToUpdate": "Wszystkie osiągnięcia są już aktualne",
+    "notLoggedInDesc": "Aby zsynchronizować osiągnięcia, musisz się zalogować i połączyć profil gry.",
+    "noAccountsDesc": "Brak kont gry połączonych z Twoim profilem. Połącz konto na stronie Profilu.",
+    "noMedalsInProfile": "Nie znaleziono osiągnięć na wybranym koncie gry",
+    "syncWarningProgress": "Synchronizacja osiągnięć z profilem gry zresetuje aktualny postęp osiągnięć."
   }
 }

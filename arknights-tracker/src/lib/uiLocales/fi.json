@@ -346,7 +346,8 @@
     "recipeTree": "Reseptiketju",
     "leaderboard": "Tulostaulu",
     "profile": "Profiili",
-    "icons": "Kuvakkeet"
+    "icons": "Kuvakkeet",
+    "achievements": "Saavutukset"
   },
   "mouths": {
     "january": "Tammikuu",
@@ -724,7 +725,13 @@
     "currentWeek": "Tällä viikolla",
     "nextWeek": "Ensi viikolla",
     "fullCalendar": "Koko kalenteri",
-    "arsenalExchangeWarning": "Tiedot perustuvat kiinalaiseen asekiertotiedostoon eivätkä välttämättä ole tarkkoja"
+    "arsenalExchangeWarning": "Tiedot perustuvat kiinalaiseen asekiertotiedostoon eivätkä välttämättä ole tarkkoja",
+    "gameUpdate": "Päivitys",
+    "maintenanceInProgress": "Huoltotyöt käynnissä",
+    "updateExpected": "Odotettu",
+    "versionLabel": "Versio {version}",
+    "goToChangelog": "Muutosloki",
+    "currentGameVersion": "Pelin nykyinen versio: {version}"
   },
   "cookies": {
     "title": "Käytämme evästeitä",
@@ -882,6 +889,7 @@
     "delete_confirm": "Poistetaanko tämä?",
     "settings_title": "Asetukset",
     "settings_hide_data": "Piilota tiedot tulostaululla",
+    "settings_hide_uid": "Piilota tilien UID:t",
     "settings_primary_account": "Yhdistä vetotili",
     "settings_primary_account_none": "Ei mitään",
     "bind_to_view_luck": "Yhdistä tili nähdäksesi onnitilastot.",
@@ -897,7 +905,7 @@
     "image_size_error": "Kuva on liian pieni.",
     "crop_avatar_title": "Rajaa",
     "avatar_success": "Avatar päivitetty!",
-    "no_connected_accounts": "Ei yhdistettyjä tilejä.",
+    "no_connected_accounts": "Ei yhdistettyjä pelitilejä. Synkronoi tilisi yllä olevalla painikkeella.",
     "edit_nickname": "Muokkaa nimeä",
     "copy_profile_link": "Kopioi linkki",
     "share": "Jaa",
@@ -908,7 +916,7 @@
     "copy_uid": "Kopioi UID",
     "unlink_account": "Poista yhteys",
     "all": "Kaikki",
-    "sync_with_game": "Synkronoi",
+    "sync_with_game": "Synkronoi pelin kanssa",
     "no_essence": "Ei esanssia",
     "copy_failed": "Kopiointi epäonnistui",
     "no_weapon": "Ei varustettua asetta",
@@ -961,9 +969,28 @@
     "token_already_used": "Tämä tunnus on jo käytetty",
     "token_expired_badge": "Vanhentunut",
     "unauthorized": "Ei valtuutettu",
-    "user_not_found": "Käyttäjää ei löydy"
+    "user_not_found": "Käyttäjää ei löydy",
+    "syncing": "Synkronoidaan...",
+    "max_profiles_reached": "Yhdistettyjen profiilien enimmäismäärä on 3"
   },
   "equipSkills": {
     "NoAttr": "Ei ominaisuutta"
+  },
+  "achievements": {
+    "of": "/",
+    "onlyIncomplete": "Vain keskeneräiset",
+    "allVersions": "Kaikki versiot",
+    "searchPlaceholder": "Hae...",
+    "empty": "Saavutuksia ei löytynyt",
+    "sync": "Synkronointi",
+    "syncModalTitle": "Synkronoi saavutukset",
+    "selectAccount": "Valitse tili:",
+    "syncAction": "Synkronoi",
+    "syncSuccess": "Saavutukset synkronoitu: {count}",
+    "syncNothingToUpdate": "Kaikki saavutukset ovat jo ajan tasalla",
+    "notLoggedInDesc": "Synkronoidaksesi saavutukset sinun on kirjauduttava sisään ja yhdistettävä peliprofiilisi.",
+    "noAccountsDesc": "Profiiliisi ei ole yhdistetty pelitilejä. Yhdistä tili Profiili-sivulla.",
+    "noMedalsInProfile": "Valitulta pelitililtä ei löytynyt saavutuksia",
+    "syncWarningProgress": "Saavutusten synkronointi peliprofiilin kanssa nollaa nykyisen saavutusten edistymisen."
   }
 }

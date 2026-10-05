@@ -13,6 +13,8 @@ import { Character } from "@models/gameProfile/Character.js";
 import { GameProfile } from "@models/gameProfile/GameProfile.js";
 import { MonumentGroup } from "@models/monument/MonumentGroup.js";
 import { MonumentRecord } from "@models/monument/MonumentRecord.js";
+import { WarEchoesGroup } from "@models/warEchoes/WarEchoesGroup.js";
+import { WarEchoesRecord } from "@models/warEchoes/WarEchoesRecord.js";
 import { Authenticator } from "@services/auth/Authenticator.js";
 import { EndfieldDataFetcher } from "@services/endfieldDataFetcher/EndfieldDataFetcher.js";
 import e from "express";
@@ -100,36 +102,43 @@ export class SyncProfile extends Controller<
         }
 
         const result: Record<string, boolean> = {};
+        const existingProfiles = await this._database.gameProfiles.findByUid(profile.uid);
+        const existingUids = new Set(existingProfiles.map(p => p.gameUid));
 
         for (const serverId of this._serverIds) {
-            const updated = await this.updateData(endfieldDataFetcher, serverId, profile.uid);
+            const profileData = await endfieldDataFetcher.getDetailData(serverId);
 
-            result[serverId] = updated;
+            if (!profileData) {
+                result[serverId] = false;
+                continue;
+            }
+
+            const gameProfile = GameProfile.getFromData(profileData, serverId);
+            const roleId = gameProfile.base.roleId;
+
+            if (!existingUids.has(roleId) && existingUids.size >= 3) {
+                this.status = 400;
+                this.message = "Max profiles reached";
+
+                return;
+            }
+
+            const gameProfileRecord = UserGameProfileRecord.createFromData(roleId, serverId, profile.uid, gameProfile);
+
+            await this._database.gameProfiles.upsert(gameProfileRecord);
+
+            const contractStatuses = ContractStatus.getList(profileData.crisisContract);
+
+            await this.updateContractDataList(endfieldDataFetcher, serverId, roleId, contractStatuses, gameProfile.chars);
+            await this.updateMonumentData(endfieldDataFetcher, serverId, roleId, gameProfile.chars);
+            await this.updateWarEchoesData(endfieldDataFetcher, serverId, roleId, gameProfile.chars);
+
+            existingUids.add(roleId);
+            result[serverId] = true;
         }
 
         this.data = result;
         this._cache.set(firebaseUid, new Date());
-    }
-
-    private async updateData(fetcher: EndfieldDataFetcher, serverId: string, uid: bigint): Promise<boolean> {
-        const profileData = await fetcher.getDetailData(serverId);
-
-        if (!profileData) {
-            return false;
-        }
-
-        const gameProfile = GameProfile.getFromData(profileData, serverId);
-
-        const gameProfileRecord = UserGameProfileRecord.createFromData(gameProfile.base.roleId, serverId, uid, gameProfile);
-
-        await this._database.gameProfiles.upsert(gameProfileRecord);
-
-        const contractStatuses = ContractStatus.getList(profileData.crisisContract);
-
-        await this.updateContractDataList(fetcher, serverId, gameProfile.base.roleId, contractStatuses, gameProfile.chars);
-        await this.updateMonumentData(fetcher, serverId, gameProfile.base.roleId, gameProfile.chars);
-
-        return true;
     }
 
     private async updateMonumentData(fetcher: EndfieldDataFetcher, serverId: string, gameUid: string, profileChars: Character[]): Promise<void> {
@@ -160,6 +169,36 @@ export class SyncProfile extends Controller<
         }
 
         await this._database.monumentLeaderboard.create(gameUid, record);
+    }
+
+    private async updateWarEchoesData(fetcher: EndfieldDataFetcher, serverId: string, gameUid: string, profileChars: Character[]): Promise<void> {
+        const warEchoesData = await fetcher.getWarEchoesData(serverId);
+
+        if (!warEchoesData || !warEchoesData.length) {
+            return;
+        }
+
+        const warEchoesGroups = WarEchoesGroup.getFromSeasonDataList(warEchoesData, profileChars);
+        const records = WarEchoesGroup.getRecordsFromList(warEchoesGroups);
+
+        for (const record of records) {
+            await this.updateWarEchoesRecord(record, gameUid);
+        }
+    }
+
+    private async updateWarEchoesRecord(record: WarEchoesRecord, gameUid: string): Promise<void> {
+        const existedRecord = (await this._database.warEchoesLeaderboard.findByGameUid(gameUid, record.dungeonId))[0] ?? null;
+        const existedRecordData = existedRecord ? existedRecord.data : null;
+
+        if (existedRecordData && existedRecordData.ts === record.ts) {
+            return;
+        }
+
+        if (existedRecord) {
+            await this._database.warEchoesLeaderboard.delete(existedRecord.id);
+        }
+
+        await this._database.warEchoesLeaderboard.create(gameUid, record);
     }
 
     private async updateContractDataList(fetcher: EndfieldDataFetcher, serverId: string, gameUid: string, contractStatuses: ContractStatus[], profileChars: Character[]): Promise<void> {

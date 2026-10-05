@@ -10,6 +10,7 @@ export class UserRecord {
     private readonly _publicUid: StringRecordField;
     private readonly _firebaseUid: NullableStringRecordField;
     private readonly _isPrivate: BooleanRecordField;
+    private readonly _hideUid: BooleanRecordField;
     private readonly _avatarId: NullableStringRecordField;
     private readonly _backgroundId: NullableStringRecordField;
     private readonly _displayAvatar: BooleanRecordField;
@@ -23,6 +24,7 @@ export class UserRecord {
         this._publicUid = new StringRecordField(entity.publicUid);
         this._firebaseUid = new NullableStringRecordField(entity.firebaseUid);
         this._isPrivate = new BooleanRecordField(entity.isPrivate);
+        this._hideUid = new BooleanRecordField(entity.hideUid ?? true);
         this._avatarId = new NullableStringRecordField(entity.avatarId);
         this._backgroundId = new NullableStringRecordField(entity.backgroundId);
         this._displayAvatar = new BooleanRecordField(entity.displayAvatar);
@@ -46,6 +48,10 @@ export class UserRecord {
 
     public get isPrivate(): BooleanRecordField {
         return this._isPrivate;
+    }
+
+    public get hideUid(): BooleanRecordField {
+        return this._hideUid;
     }
 
     public get avatarId(): NullableStringRecordField {

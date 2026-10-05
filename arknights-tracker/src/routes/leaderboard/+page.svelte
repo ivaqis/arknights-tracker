@@ -44,7 +44,29 @@
         { value: '2', label: 'Asia' }
     ];
 
-    $: monumentGroupOptions = monumentGroups.map(g => ({
+    let now = new Date();
+
+    function parseWithServerOffset(dateStr, serverId = "3") {
+        if (!dateStr) return new Date(0);
+        if (dateStr.includes("Z") || (dateStr.includes("T") && dateStr.includes("+"))) {
+            return new Date(dateStr);
+        }
+        const offset = serverId === "2" ? 8 : -5;
+        const sign = offset >= 0 ? "+" : "-";
+        const pad = (n) => String(Math.abs(n)).padStart(2, "0");
+        const iso = dateStr.replace(" ", "T") + `${sign}${pad(offset)}:00`;
+        return new Date(iso);
+    }
+
+    $: visibleMonumentGroups = monumentGroups.filter(g => {
+        const isAsia = serverFilter === '2';
+        const startStr = isAsia && g.startTimeAsia ? g.startTimeAsia : g.startTime;
+        if (!startStr) return true;
+        const startDate = parseWithServerOffset(startStr, isAsia ? '2' : '3');
+        return now >= startDate;
+    });
+
+    $: monumentGroupOptions = visibleMonumentGroups.map(g => ({
         value: g.id,
         label: $t(`monument.${g.id}`),
         iconId: g.id
@@ -134,7 +156,11 @@
         }
     }
 
-    $: currentGroup = monumentGroups.find(g => g.id === selectedMonumentGroup) || monumentGroups[0];
+    $: if (visibleMonumentGroups.length > 0 && !visibleMonumentGroups.some(g => g.id === selectedMonumentGroup)) {
+        selectedMonumentGroup = visibleMonumentGroups[0].id;
+    }
+
+    $: currentGroup = visibleMonumentGroups.find(g => g.id === selectedMonumentGroup) || visibleMonumentGroups[0] || monumentGroups[0];
 
     $: currentCoverPath = currentStage?.picPath || "dung_high_difficulty_s6_01";
 
@@ -218,7 +244,11 @@
     function getDungeonName(id) {
         if (!id) return "";
         if (selectedEvent === 'echoesOfWar') {
-            return $t(`warEchoesStages.${id}`) || id;
+            const key = `warEchoesStages.${id}`;
+            const trans = $t(key);
+            if (trans !== key) return trans;
+            if (dungeonLocales[id]?.name) return dungeonLocales[id].name;
+            return id;
         }
         const baseId = id.replace(/_s$/, "");
         for (const group of monumentGroups) {
@@ -329,17 +359,11 @@
 
     async function loadLeaderboard() {
         if (!browser) return;
-        if (selectedEvent === 'echoesOfWar') {
-            entries = [];
-            totalEntries = 0;
-            loading = false;
-            return;
-        }
         loading = true;
         try {
             const data = await fetchLeaderboard({
                 event: selectedEvent,
-                dungeonId: selectedEvent === 'monument' ? currentDungeonId : undefined,
+                dungeonId: (selectedEvent === 'monument' || selectedEvent === 'echoesOfWar') ? currentDungeonId : undefined,
                 serverId: serverFilter,
                 charCountFilter: teamSizeFilter ? String(teamSizeFilter) : '',
                 sortField: sortField === "default" ? undefined : sortField,
@@ -474,11 +498,11 @@
 <div class="max-w-[1600px] mx-auto w-full pb-10">
     <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-6 font-sdk">
         <div class="flex flex-wrap items-center gap-4">
-            <h2 class="text-3xl md:text-5xl tracking-wide text-[#21272C] dark:text-[#FDFDFD]">
+            <h2 class="text-3xl md:text-5xl font-bold tracking-wide text-[#21272C] dark:text-[#FDFDFD]">
                 {$t("leaderboard.title")}
             </h2>
 
-            <div class="flex bg-gray-100 dark:bg-black/30 p-1 rounded-xl max-w-full overflow-x-auto no-scrollbar [scrollbar-width:none] [&::-webkit-scrollbar]:hidden shrink-0">
+            <div class="flex bg-gray-200 dark:bg-black/30 p-1 rounded-xl max-w-full overflow-x-auto no-scrollbar [scrollbar-width:none] [&::-webkit-scrollbar]:hidden shrink-0">
                 <button
                     type="button"
                     on:click={() => selectedEvent = "monument"}
@@ -503,7 +527,7 @@
                 <Icon name="info" class="w-5 h-5 text-[#FFE145] shrink-0" />
                 <div class="text-xs text-gray-300 leading-normal">
                     {$t("leaderboard.not_synced_desc")}
-                    <a href="/profile" class="text-[#FFE145] hover:underline block font-bold mt-1">
+                    <a href="/profile" class="text-[#FFE145] hover:underline block font-bold mt-0.5">
                         {$t("leaderboard.not_synced_btn")} &rarr;
                     </a>
                 </div>
@@ -685,7 +709,7 @@
 
         <div class="flex-1 min-w-0 w-full flex flex-col gap-4">
             {#if selectedEvent === 'monument' && currentStage}
-                <div class="relative bg-[#262626] border border-gray-200 dark:border-white/10 rounded-2xl overflow-hidden shadow-sm min-h-[220px]">
+                <div class="relative bg-white dark:bg-[#262626] border border-gray-200 dark:border-white/10 rounded-2xl overflow-hidden shadow-sm min-h-[220px]">
                     {#if currentCoverPath}
                         <div class="absolute right-0 top-0 bottom-0 w-full sm:w-3/4 md:w-3/5 lg:w-1/2 pointer-events-none overflow-hidden">
                             <img
@@ -698,19 +722,19 @@
                                     }
                                 }}
                             />
-                            <div class="absolute inset-0 bg-gradient-to-r from-[#262626] via-[#262626]/20 to-transparent"></div>
-                            <div class="absolute inset-0 bg-gradient-to-t from-[#262626]/30 via-transparent to-transparent"></div>
+                            <div class="absolute inset-0 bg-gradient-to-r from-white via-white/20 to-transparent dark:from-[#262626] dark:via-[#262626]/20"></div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-white/30 via-transparent to-transparent dark:from-[#262626]/30"></div>
                         </div>
                     {/if}
 
                     <div class="relative z-10 p-5 sm:p-6 flex flex-col md:flex-row justify-between gap-6">
                         <div class="max-w-xl flex flex-col gap-2">
-                            <h3 class="text-lg sm:text-xl font-bold text-white font-sdk tracking-wide">
+                            <h3 class="text-lg sm:text-xl font-bold text-gray-900 dark:text-white font-sdk tracking-wide">
                                 {currentDungeonLocale.name || $t(`monumentStages.${selectedStageId}`)}
                             </h3>
 
                             {#if currentDungeonLocale.featureDesc}
-                                <div class="text-xs sm:text-sm text-gray-300 whitespace-pre-line leading-relaxed font-sans">
+                                <div class="text-xs sm:text-sm text-gray-600 dark:text-gray-300 whitespace-pre-line leading-relaxed font-sans">
                                     {@html parseRichText(currentDungeonLocale.featureDesc)}
                                 </div>
                             {/if}
@@ -718,13 +742,13 @@
 
                         <div class="flex flex-col justify-between items-start md:items-end gap-4 min-w-0 md:max-w-md">
                             {#if currentDungeonLocale.description}
-                                <p class="text-xs sm:text-sm text-gray-300 italic text-left md:text-right font-sans leading-snug">
+                                <p class="text-xs sm:text-sm text-gray-500 dark:text-gray-300 italic text-left md:text-right font-sans leading-snug drop-shadow-[0_1px_2px_rgba(0,0,0,0.7)] dark:drop-shadow-[0_1px_3px_rgba(0,0,0,0.7)]">
                                     {currentDungeonLocale.description}
                                 </p>
                             {/if}
 
                             {#if currentEnemies.length > 0}
-                                <div class="flex flex-wrap items-center gap-2.5 mt-auto pt-2">
+                                <div class="flex flex-wrap items-center justify-end gap-2.5 mt-auto pt-2">
                                     {#each currentEnemies as enemy}
                                         <WeaponCard
                                             weapon={enemy}
@@ -733,7 +757,7 @@
                                             isStatic={true}
                                             hidePot={true}
                                             hideDarkness={true}
-                                            className="w-[72px] h-[72px] sm:w-[80px] sm:h-[80px]"
+                                            className="w-[78px] h-[78px] sm:w-[92px] sm:h-[92px]"
                                         />
                                     {/each}
                                 </div>
@@ -742,15 +766,15 @@
                     </div>
                 </div>
             {:else if selectedEvent === 'echoesOfWar' && currentWarEchoesStage}
-                <div class="relative bg-[#262626] border border-gray-200 dark:border-white/10 rounded-2xl overflow-hidden shadow-sm min-h-[220px]">
+                <div class="relative bg-white dark:bg-[#262626] border border-gray-200 dark:border-white/10 rounded-2xl overflow-hidden shadow-sm min-h-[220px]">
                     <div class="relative z-10 p-5 sm:p-6 flex flex-col md:flex-row justify-between gap-6">
                         <div class="max-w-xl flex flex-col gap-2">
-                            <h3 class="text-lg sm:text-xl font-bold text-white font-sdk tracking-wide">
+                            <h3 class="text-lg sm:text-xl font-bold text-gray-900 dark:text-white font-sdk tracking-wide">
                                 {currentDungeonLocale.name || currentWarEchoesStage.name}
                             </h3>
 
                             {#if currentDungeonLocale.featureDesc}
-                                <div class="text-xs sm:text-sm text-gray-300 whitespace-pre-line leading-relaxed font-sans">
+                                <div class="text-xs sm:text-sm text-gray-600 dark:text-gray-300 whitespace-pre-line leading-relaxed font-sans">
                                     {@html parseRichText(currentDungeonLocale.featureDesc)}
                                 </div>
                             {/if}
@@ -758,13 +782,13 @@
 
                         <div class="flex flex-col justify-between items-start md:items-end gap-4 min-w-0 md:max-w-md">
                             {#if currentDungeonLocale.description}
-                                <p class="text-xs sm:text-sm text-gray-300 italic text-left md:text-right font-sans leading-snug">
+                                <p class="text-xs sm:text-sm text-gray-500 dark:text-gray-300 italic text-left md:text-right font-sans leading-snug">
                                     {currentDungeonLocale.description}
                                 </p>
                             {/if}
 
                             {#if currentEnemies.length > 0}
-                                <div class="flex flex-wrap items-center gap-2.5 mt-auto pt-2">
+                                <div class="flex flex-wrap items-center justify-end gap-2.5 mt-auto pt-2">
                                     {#each currentEnemies as enemy}
                                         <WeaponCard
                                             weapon={enemy}
@@ -773,7 +797,7 @@
                                             isStatic={true}
                                             hidePot={true}
                                             hideDarkness={true}
-                                            className="w-[72px] h-[72px] sm:w-[80px] sm:h-[80px]"
+                                            className="w-[78px] h-[78px] sm:w-[92px] sm:h-[92px]"
                                         />
                                     {/each}
                                 </div>
@@ -850,7 +874,7 @@
                                         on:click={() => selectEntry(entry)}
                                         class="hover:bg-white/5 transition-colors cursor-pointer"
                                     >
-                                        <td class="py-2.5 px-5">
+                                        <td class="py-1 px-5">
                                             {#if rank === 1}
                                                 <div class="relative w-8 h-8 flex items-center justify-center text-[#FFE145] shrink-0" title="1st Place">
                                                     <Icon name="laurelWreath" class="w-full h-full absolute inset-0" />
@@ -871,7 +895,7 @@
                                             {/if}
                                         </td>
 
-                                        <td class="py-2.5 px-3">
+                                        <td class="py-1 px-3">
                                             <div class="flex items-center gap-2.5 whitespace-nowrap shrink-0 w-fit">
                                                 <div class="flex items-center gap-2.5 group/user shrink-0">
                                                     {#if entry.user.picture && entry.user.avatar_strike === 0}
@@ -904,25 +928,25 @@
                                             </div>
                                         </td>
 
-                                        <td class="py-2.5 px-3 text-gray-600 dark:text-gray-300">
+                                        <td class="py-1 px-3 text-gray-600 dark:text-gray-300">
                                             {entry.level}
                                         </td>
 
                                         {#if selectedEvent === 'contract'}
-                                            <td class="py-2.5 px-3">
+                                            <td class="py-1 px-3">
                                                 <ContractLevelTag className="max-w-[80px]" level={entry.contractLevel || 0} />
                                             </td>
                                         {/if}
 
-                                        <td class="py-2.5 px-3 font-bold text-[#e8cc3c] dark:text-[#FFE145]">
+                                        <td class="py-1 px-3 font-bold text-[#e8cc3c] dark:text-[#FFE145]">
                                             {formatTime(entry.clear_time)}
                                         </td>
 
-                                        <td class="py-2.5 px-3 text-gray-600 dark:text-gray-300">
+                                        <td class="py-1 px-3 text-gray-600 dark:text-gray-300">
                                             {formatRelativeTime(entry.updatedAt)}
                                         </td>
 
-                                        <td class="py-2.5 px-3">
+                                        <td class="py-1 px-3">
                                             <div class="flex items-center gap-1">
                                                 {#each (entry.chars || []).slice(0, 4) as char}
                                                     {@const opData = getOperatorData(char)}
@@ -1190,7 +1214,7 @@
                             <div class="text-sm font-medium dark:text-gray-400 text-gray-600">
                                 {$t("leaderboard.stage")}:
                                 <span class="text-gray-900 dark:text-white font-bold font-sdk ml-1">
-                                    {selectedEvent === 'monument' ? getDungeonName(selectedRunDetails?.dungeonId || currentDungeonId) : $t(`leaderboard.${selectedEvent}`)}
+                                    {selectedEvent === 'monument' || selectedEvent === 'echoesOfWar' ? getDungeonName(selectedRunDetails?.dungeonId || currentDungeonId) : $t(`leaderboard.${selectedEvent}`)}
                                 </span>
                             </div>
                             <div class="text-sm font-medium dark:text-gray-400 text-gray-600">

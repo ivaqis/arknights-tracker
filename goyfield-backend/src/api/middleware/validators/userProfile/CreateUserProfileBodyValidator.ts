@@ -14,6 +14,7 @@ export class CreateUserProfileBodyValidator extends Validator<CreateUserProfileR
         return [
             this.getPublicUidRule(),
             this.getIsPrivateRule(),
+            this.getHideUidRule(),
             this.getBackgroundIdRule(),
             this.getAvatarImageRule(),
             this.getFilenameRule()
@@ -33,6 +34,13 @@ export class CreateUserProfileBodyValidator extends Validator<CreateUserProfileR
         return new ValidationRule(
             item => typeof item.isPrivate === "boolean",
             "isPrivate must be a boolean"
+        );
+    }
+
+    private static getHideUidRule(): ValidationRule<CreateUserProfileRequest> {
+        return new ValidationRule(
+            item => typeof item.hideUid === "boolean" || typeof item.hideUid === "undefined",
+            "hideUid must be a boolean"
         );
     }
 

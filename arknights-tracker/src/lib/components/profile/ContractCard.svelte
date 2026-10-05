@@ -2,7 +2,7 @@
     import { t } from "$lib/i18n";
     import { equipment } from "$lib/data/items/equipment.js";
     import { getRarityColor } from "$lib/utils/colorUtils.js";
-    import { getEquipTier } from "$lib/utils/profileUtils.js";
+    import { getEquipTier, getWeaponTerms } from "$lib/utils/profileUtils.js";
 
     import Image from "$lib/components/Image.svelte";
     import PotentialIcon from "$lib/components/operators/PotentialIcon.svelte";
@@ -52,8 +52,9 @@
         {#if char.weapon}
             {@const weaponData = getWeaponData(char.weapon)}
             {@const weaponName = $t(`weaponsList.${weaponData?.id}`) !== `weaponsList.${weaponData?.id}` ? $t(`weaponsList.${weaponData?.id}`) : (weaponData?.name || char.weapon.id)}
+            {@const wpnTerms = (char.weapon.weaponTerms && char.weapon.weaponTerms.length > 0) ? char.weapon.weaponTerms : getWeaponTerms(char.weapon)}
             <Tooltip text={`${weaponName} P${char.weapon.refineLevel !== undefined ? char.weapon.refineLevel : 1}`}>
-                <a href="/weapons/{weaponData.id}?level={char.weapon.level}&refine={char.weapon.refineLevel !== undefined ? char.weapon.refineLevel : 0}&skills={char.weapon.weaponTerms ? char.weapon.weaponTerms.join(',') : ''}" class="relative w-[96px] h-[55px] flex items-center justify-between p-1 overflow-hidden shrink-0 z-20 ml-[-12px] transition-transform duration-200 hover:scale-105 cursor-pointer block"
+                <a href="/weapons/{weaponData.id}?level={char.weapon.level}&refine={char.weapon.refineLevel !== undefined ? char.weapon.refineLevel : 0}&skills={wpnTerms.join(',')}" class="relative w-[96px] h-[55px] flex items-center justify-between p-1 overflow-hidden shrink-0 z-20 ml-[-12px] transition-transform duration-200 hover:scale-105 cursor-pointer block"
                    style="border: 1px solid transparent; background: linear-gradient(to right, #363634, #111111) padding-box, linear-gradient(to right, #464644, #1b1b1a) border-box;">
                     
                     <img 
@@ -75,7 +76,7 @@
                     </div>
 
                     <div class="flex flex-col gap-0.5 z-10 items-end justify-center h-full pr-0.5">
-                        {#each char.weapon.weaponTerms || [] as term}
+                        {#each wpnTerms as term}
                             <div class="flex items-center gap-0.5 px-1 py-0.5 rounded-[2px]" style="background: linear-gradient(to right, #1C1C1C, #2D2D2B);">
                                 <div class="w-[4px] h-[10px] rounded-full transform rotate-[40deg] border-[1.5px] transition-all duration-200 outline-none shrink-0 flex items-center justify-center bg-[#FFE145] border-[#FFE145] dark:bg-[#FFE145] dark:border-[#FFE145] shadow-sm"></div>
                                 <span class="pl-0.5 text-[9px] font-black text-[#FFE145] font-nums leading-none">{term}</span>

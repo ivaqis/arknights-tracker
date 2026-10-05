@@ -1,0 +1,2086 @@
+{
+  "achv_adv_tundra_box": {
+    "name": "Rompicasse della Valle",
+    "category": "Regionale",
+    "group": "Valle",
+    "levels": {
+      "1": {
+        "desc": "Apri 120 casse di contenimento a Valle IV.",
+        "completeDesc": "Hai aperto alcune casse di contenimento a Valle IV."
+      },
+      "2": {
+        "desc": "Apri 180 casse di contenimento a Valle IV.",
+        "completeDesc": "Hai aperto molte casse di contenimento a Valle IV."
+      },
+      "3": {
+        "desc": "Apri 288 casse di contenimento a Valle IV.",
+        "completeDesc": "A Valle IV, non c'è cassa che possa sfuggirti! \nIl suono delle serrature che si aprono è oltremodo soddisfacente."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_tundra_campfire": {
+    "name": "Collante della Valle",
+    "category": "Regionale",
+    "group": "Valle",
+    "levels": {
+      "1": {
+        "desc": "Sblocca 14 punti TP a Valle IV.",
+        "completeDesc": "Hai compiuto i primi passi per risvegliare la rete protocollare di Valle IV."
+      },
+      "2": {
+        "desc": "Sblocca 28 punti TP a Valle IV.",
+        "completeDesc": "Hai consolidato al massimo la rete protocollare di Valle IV."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_tundra_documents": {
+    "name": "Detective della Valle",
+    "category": "Regionale",
+    "group": "Valle",
+    "levels": {
+      "2": {
+        "desc": "Raccogli 4 rapporti d'indagine (RI) a Valle IV.",
+        "completeDesc": "Ogni scoperta è importante. Hai visto e raccolto dei documenti sparsi in giro per Valle IV."
+      },
+      "3": {
+        "desc": "Raccogli 6 rapporti d'indagine (RI) a Valle IV.",
+        "completeDesc": "Ogni scoperta è importante. Grazie al tuo occhio attento, hai visto e raccolto dei documenti sparsi in giro per Valle IV. \nUn ritaglio di giornale, la pagina di una rivista... Le informazioni su eventi particolarmente significativi sono nascoste nei posti più insospettabili."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_tundra_ether": {
+    "name": "\"Frammenti ricomposti\"",
+    "category": "Regionale",
+    "group": "Valle",
+    "levels": {
+      "1": {
+        "desc": "Raccogli 80 Aurylene a Valle IV.",
+        "completeDesc": "I frammenti perduti del primo manufatto sono infine giunti nelle tue mani."
+      },
+      "2": {
+        "desc": "Raccogli 120 Aurylene a Valle IV.",
+        "completeDesc": "I frammenti perduti del primo manufatto sono infine giunti nelle tue mani. \nUn tempo era il simbolo di una gloria ormai dimenticata."
+      },
+      "3": {
+        "desc": "Raccogli 166 Aurylene a Valle IV.",
+        "completeDesc": "I frammenti perduti del primo manufatto sono infine giunti nelle tue mani. \nRappresenta non solo la nostra meta finale, ma anche sogni e speranze di tutti noi."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_tundra_fixablerobot": {
+    "name": "\"Salvezza dei DELTA\"",
+    "category": "Regionale",
+    "group": "Valle",
+    "levels": {
+      "1": {
+        "desc": "Ripara 25 robot Delta a Valle IV.",
+        "completeDesc": "Abbiamo raccolto e tradotto moltissimi dati binari. Sembra che i mittenti vogliano esprimere la loro gratitudine."
+      },
+      "2": {
+        "desc": "Ripara 35 robot Delta a Valle IV.",
+        "completeDesc": "Abbiamo raccolto e tradotto moltissimi dati binari. Sembra che i mittenti siano disposti a mettere a rischio la propria incolumità per te."
+      },
+      "3": {
+        "desc": "Ripara 43 robot Delta a Valle IV.",
+        "completeDesc": "Abbiamo raccolto e tradotto moltissimi dati binari. Sembra che i mittenti abbiano un disperato bisogno di conferirti il titolo di \"Salvezza dei DELTA, Baluardo della stirpe robotica e Divinità delle macchine di Valle IV\"."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_tundra_running": {
+    "name": "\"Atletica nel sangue\"",
+    "category": "Regionale",
+    "group": "Valle",
+    "levels": {
+      "1": {
+        "desc": "Vinci 4 gare di atletica a Valle IV.",
+        "completeDesc": "Molti concorrenti sospettano che tu abbia utilizzato di nascosto la tecnologia del tele-protocollo per tagliare il traguardo prima di tutti gli altri."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_arrow": {
+    "name": "\"Indicazioni di Amma\"",
+    "category": "Regionale",
+    "group": "Wuling",
+    "levels": {
+      "2": {
+        "desc": "Usa le frecce di Typhoeus e distruggi tutte le rune nella Foresta innevata",
+        "completeDesc": "Frecce bianche che trafiggono il cielo. Grazie ai doni di Amma, hai dissolto ogni banco di nebbia."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_balloon": {
+    "name": "Aerorecuperatore",
+    "category": "Regionale",
+    "group": "Wuling",
+    "levels": {
+      "1": {
+        "desc": "Completa l'aerorecupero 26 volte al Valico di Yinglung e nell'Area interdetta di Wuling Nord.",
+        "completeDesc": "Il cielo aperto offre un percorso di recupero. Ora hai imparato a usare un mezzo di trasporto economico ed efficace."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_blackhole_clean": {
+    "name": "Neutralizzatore di spaccature",
+    "category": "Regionale",
+    "group": "Wuling",
+    "levels": {
+      "3": {
+        "desc": "Neutralizza completamente 5 spaccature nell'Area interdetta di Wuling Nord",
+        "completeDesc": "Ci sono spaccature sigillate che squarciano lo spazio reale e ferite che lacerano le l'anima e lo spirito."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_box_1": {
+    "name": "Rompicasse di Wuling I",
+    "category": "Regionale",
+    "group": "Wuling",
+    "levels": {
+      "3": {
+        "desc": "Apri 227 casse di contenimento a Valle Jingyu e Wuling City.",
+        "completeDesc": "Hai aperto alcune casse di contenimento a Wuling."
+      }
+    },
+    "plating": {
+      "desc": "Apri 242 casse di contenimento a Valle Jingyu e Wuling City."
+    }
+  },
+  "achv_adv_wuling_box_2": {
+    "name": "Rompicasse di Wuling Ⅱ",
+    "category": "Regionale",
+    "group": "Wuling",
+    "levels": {
+      "2": {
+        "desc": "Apri 121 casse di contenimento nella Palizzata di Qingbo, alla pietra di demarcazione, all'interno della pietra di demarcazione e nell'Area dei test.",
+        "completeDesc": "Hai aperto molte casse di contenimento a Wuling."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_box_3": {
+    "name": "Rompicasse di Wuling Ⅲ",
+    "category": "Regionale",
+    "group": "Wuling",
+    "levels": {
+      "2": {
+        "desc": "Apri 151 casse di contenimento nella Valletta di Voltaspada, al Valico di Yinglung e nell'Area interdetta di Wuling Nord.",
+        "completeDesc": "Hai aperto molte casse di contenimento a Wuling e dimostrato la tua capacità di scoprire queste scorte."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_bugball": {
+    "name": "\"Un vero gol da lumaca\"",
+    "category": "Regionale",
+    "group": "Wuling",
+    "levels": {
+      "2": {
+        "desc": "Calcia 18 origilumache nella Fossa di Suiming",
+        "completeDesc": "Le tue tecniche superano di gran lunga quelle delle illusioni passate. Ogni calcio era diretto, preciso e perfetto."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_campfire_1": {
+    "name": "Radici a Wuling I",
+    "category": "Regionale",
+    "group": "Wuling",
+    "levels": {
+      "1": {
+        "desc": "Sblocca 19 punti TP a Valle Jingyu e Wuling City.",
+        "completeDesc": "Hai compiuto i primi passi per risvegliare la rete protocollare di Wuling."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_campfire_2": {
+    "name": "Radici a Wuling Ⅱ",
+    "category": "Regionale",
+    "group": "Wuling",
+    "levels": {
+      "1": {
+        "desc": "Sblocca 19 punti TP nella Palizzata di Qingbo, alla pietra di demarcazione, all'interno della pietra di demarcazione e nell'Area dei test.",
+        "completeDesc": "Hai risvegliato ulteriormente la rete protocollare di Wuling."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_campfire_3": {
+    "name": "Radici a Wuling Ⅲ",
+    "category": "Regionale",
+    "group": "Wuling",
+    "levels": {
+      "1": {
+        "desc": "Sblocca 22 punti TP nella Valletta di Voltaspada, al Valico di Yinglung e nell'Area interdetta di Wuling Nord.",
+        "completeDesc": "Hai esteso la rete protocollare fino alle zone più remote di Wuling."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_clean": {
+    "name": "\"Lo sporco non ha scampo\"",
+    "category": "Regionale",
+    "group": "Wuling",
+    "levels": {
+      "1": {
+        "desc": "Elimina ogni massa di Contaminazione alla Palizzata di Qingbo.",
+        "completeDesc": "Hai eliminato ogni massa di Contaminazione bloccante alla Palizzata di Qingbo."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_documents_1": {
+    "name": "Detective di Wuling I",
+    "category": "Regionale",
+    "group": "Wuling",
+    "levels": {
+      "2": {
+        "desc": "Raccogli 2 rapporti d'indagine a Valle Jingyu e Wuling City.",
+        "completeDesc": "Ogni scoperta è importante. Hai visto e raccolto dei documenti sparsi in giro per Wuling."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_ether_1": {
+    "name": "\"Frammenti riassemblati\" I",
+    "category": "Regionale",
+    "group": "Wuling",
+    "levels": {
+      "3": {
+        "desc": "Raccogli 74 Aurylene a Valle Jingyu e Wuling City.",
+        "completeDesc": "I frammenti perduti del primo manufatto sono nuovamente nelle tue mani."
+      }
+    },
+    "plating": {
+      "desc": "Raccogli 81 Aurylene a Valle Jingyu e Wuling City."
+    }
+  },
+  "achv_adv_wuling_ether_2": {
+    "name": "\"Frammenti riassemblati\" Ⅱ",
+    "category": "Regionale",
+    "group": "Wuling",
+    "levels": {
+      "2": {
+        "desc": "Raccogli 59 Aurylene nella Palizzata di Qingbo, alla pietra di demarcazione, all'interno della pietra di demarcazione e nell'Area dei test.",
+        "completeDesc": "Altri frammenti del primo manufatto sono nuovamente nelle tue mani."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_ether_3": {
+    "name": "Frammenti riassemblati Ⅲ",
+    "category": "Regionale",
+    "group": "Wuling",
+    "levels": {
+      "2": {
+        "desc": "Raccogli 59 Aurylene nella Valletta di Voltaspada, al Valico di Yinglung e nell'Area interdetta di Wuling Nord.",
+        "completeDesc": "Molti frammenti perduti del primo manufatto sono nuovamente nelle tue mani. Hanno sentito il tuo richiamo."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_find_difference": {
+    "name": "Caleidogrammatore",
+    "category": "Regionale",
+    "group": "Wuling",
+    "levels": {
+      "2": {
+        "desc": "Risolvi 8 rompicapi del caleidogramma al Valico di Yinglung e nell'Area interdetta di Wuling Nord.",
+        "completeDesc": "Puoi identificare chiaramente diversi simboli e linee. Ogni dato converge nel tuo sguardo."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_floor_1": {
+    "name": "\"Danza del crestalone acquatico\"",
+    "category": "Regionale",
+    "group": "Wuling",
+    "levels": {
+      "1": {
+        "desc": "Completa 8 sfide delle piastre a pressione a Valle Jingyu e Wuling City.",
+        "completeDesc": "Hai saltato con grazia da una piastra all'altra, ripristinando un perfetto equilibrio. \n\"Un meraviglioso esempio della danza del crestalone acquatico!\""
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_floor_2": {
+    "name": "\"Danza del crestalone acquatico Ⅱ\"",
+    "category": "Regionale",
+    "group": "Wuling",
+    "levels": {
+      "1": {
+        "desc": "Attiva 6 set di piastre a pressione nella Palizzata di Qingbo, alla pietra di demarcazione, all'interno della pietra di demarcazione e nell'Area dei test.",
+        "completeDesc": "Hai nuovamente saltato con grazia da una piastra a pressione all'altra, ripristinando un perfetto equilibrio.\n\"Un meraviglioso esempio del triplo inchino del crestalone!\""
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_frog_1": {
+    "name": "\"Tocca la bestia, passa l'insetto\"",
+    "category": "Regionale",
+    "group": "Wuling",
+    "levels": {
+      "1": {
+        "desc": "Completa 6 sfide delle staffette dei luminsetti a Valle Jingyu e Wuling City.",
+        "completeDesc": "Che gioco incredibile. Abbiamo analizzato il verso delle gracchiabestie; sembra che vogliano rivederti. \n\"Cra-cra. Cra. Cra-cra.\""
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_frog_2": {
+    "name": "\"Tocca la bestia, passa l'insetto Ⅱ\"",
+    "category": "Regionale",
+    "group": "Wuling",
+    "levels": {
+      "1": {
+        "desc": "Completa 3 rompicapi dei luminsetti nella Palizzata di Qingbo, alla pietra di demarcazione, all'interno della pietra di demarcazione e nell'Area dei test.",
+        "completeDesc": "Hai giocato di nuovo con le gracchiabestie. Abbiamo analizzato il loro verso di gratitudine; sembra che vogliano rivederti. \n\"Cra-cra. Cra. Cra-cra.\""
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_hyper_clean": {
+    "name": "Flagello della Contaminazione superattiva",
+    "category": "Regionale",
+    "group": "Wuling",
+    "levels": {
+      "1": {
+        "desc": "Elimina ogni massa di Contaminazione superattiva nella Valletta di Voltaspada.",
+        "completeDesc": "Hai eliminato numerose masse di Contaminazione superattiva."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_minimap_1": {
+    "name": "Rompicasse di Suiming",
+    "category": "Regionale",
+    "group": "Wuling",
+    "levels": {
+      "2": {
+        "desc": "A Suiming, apri 28 casse di contenimento",
+        "completeDesc": "Hai aperto tutte le casse di contenimento a Suiming, anche se le casse esistono solo nei racconti del passato."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_watergun_1": {
+    "name": "\"Spruzzabinari\"",
+    "category": "Regionale",
+    "group": "Wuling",
+    "levels": {
+      "1": {
+        "desc": "Ripristina 8 sistemi di binari Xiranflow a Wuling City.",
+        "completeDesc": "Hai modificato e ripristinato diversi sistemi di binari Xiranflow."
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_charged": {
+    "name": "Intercettazione suprema",
+    "category": "Tecnica",
+    "group": "Tecnica di combattimento",
+    "levels": {
+      "1": {
+        "desc": "Interrompi lo stato di carica dei nemici 30 volte in combattimento.",
+        "completeDesc": "Sei molto abile nell'intercettare gli attacchi nemici."
+      },
+      "2": {
+        "desc": "Interrompi lo stato di carica dei nemici 50 volte in combattimento.",
+        "completeDesc": "Interrompi i nemici nell'esatto momento in cui stanno per sferrare un attacco più aggressivo."
+      },
+      "3": {
+        "desc": "Interrompi lo stato di carica dei nemici 100 volte in combattimento.",
+        "completeDesc": "Ora riesci a rilevare persino il più insignificante segno di aggressione, interrompendo qualsiasi atto di belligeranza a prescindere dalla sua gravità."
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_charged_hsbear": {
+    "name": "\"Intercettazione del tuono\"",
+    "category": "Tecnica",
+    "group": "Tecnica di combattimento",
+    "levels": {
+      "2": {
+        "desc": "Interrompi la ruggente onda d'urto del batticielo durante il combattimento.",
+        "completeDesc": "Hai strozzato il fragore del tuono."
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_comboskill": {
+    "name": "Armi combinate",
+    "category": "Tecnica",
+    "group": "Tecnica di combattimento",
+    "levels": {
+      "1": {
+        "desc": "Esegui 500 combo in combattimento.",
+        "completeDesc": "I tuoi operatori sono perfettamente addestrati a scatenare combo contro i nemici."
+      },
+      "2": {
+        "desc": "Esegui 1000 combo in combattimento.",
+        "completeDesc": "I tuoi operatori sono perfettamente addestrati. Sfrutteranno ogni opportunità per scatenare combo in combattimento."
+      },
+      "3": {
+        "desc": "Esegui 2000 combo in combattimento.",
+        "completeDesc": "I tuoi operatori sono perfettamente addestrati e combattono sfruttando le combo in armonia. \nLa fiducia reciproca è fondamentale per raggiungere i nostri obiettivi."
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_defeat_agtrinit": {
+    "name": "\"Resti spezzati di Astarron\"",
+    "category": "Tecnica",
+    "group": "Tecnica di combattimento",
+    "levels": {
+      "3": {
+        "desc": "Completa \"Crisi funesta: Triaggelos\".",
+        "completeDesc": "Nelle illusioni dello spazio protocollare, hai impedito all'Astarron della distruzione di fare ritorno nel mondo terreno."
+      }
+    },
+    "plating": {
+      "desc": "Completa \"Crisi funesta: Triaggelos\" entro 240 s."
+    }
+  },
+  "achv_bat_defeat_bigtree": {
+    "name": "\"Silenzio di Gloomwald\"",
+    "category": "Tecnica",
+    "group": "Tecnica di combattimento",
+    "levels": {
+      "2": {
+        "desc": "Sconfiggi la furia di Gloomwald",
+        "completeDesc": "Hai spento la furia di Gloomwald. Le creature leali non provano odio né ribollono di rabbia, consentendo alla pace di tornare in questa terra."
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_defeat_dodge_jzogre": {
+    "name": "\"Burrasca domata\"",
+    "category": "Tecnica",
+    "group": "Tecnica di combattimento",
+    "levels": {
+      "2": {
+        "desc": "L'operatore controllato non subisce danni ed esegue almeno 5 schivate perfette contro l'attacco rotante dell'orso dai denti a sciabola corazzato.",
+        "completeDesc": "Hai fronteggiato una tempesta di colpi violenti, capaci di dilaniare la carne di un mortale, ma la tua straordinaria agilità ti ha permesso di uscirne indenne."
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_defeat_ethillu": {
+    "name": "\"Æthillu instabile\"",
+    "category": "Tecnica",
+    "group": "Tecnica di combattimento",
+    "levels": {
+      "2": {
+        "desc": "Sconfiggi un \"Æthillu\" in battaglia entro 2 s dalla sua rianimazione.",
+        "completeDesc": "Hai svelato i segreti dell'Æthillu e dissolto il materiale instabile."
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_defeat_fdcentur": {
+    "name": "\"Una fiamma estinta\"",
+    "category": "Tecnica",
+    "group": "Tecnica di combattimento",
+    "levels": {
+      "3": {
+        "desc": "Completa \"Crisi funesta: Alleikhreos, Chiliarch\".",
+        "completeDesc": "Nel simulacro dello spazio protocollare, il reduce evocò una visione e cercò di porgere un invito. Alla fine, anche la luce ardente che emanava si spense dolcemente."
+      }
+    },
+    "plating": {
+      "desc": "Completa \"Crisi funesta: Alleikhreos, Chiliarch\" entro 200 secondi"
+    }
+  },
+  "achv_bat_defeat_hsbear": {
+    "name": "\"Fermare il battito\"",
+    "category": "Tecnica",
+    "group": "Tecnica di combattimento",
+    "levels": {
+      "2": {
+        "desc": "Sconfiggi il batticielo.",
+        "completeDesc": "Hai distrutto il reggimento selvaggio e fermato il battito assordante."
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_defeat_jzmking": {
+    "name": "\"Mega bestia sconfitta\"",
+    "category": "Tecnica",
+    "group": "Tecnica di combattimento",
+    "levels": {
+      "2": {
+        "desc": "Sconfiggi l'ulularupi.",
+        "completeDesc": "Hai sconfitto il signore delle bestie. Vuoi prendere il suo posto?"
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_defeat_klbear": {
+    "name": "\"Il silenzio del Bottoblitz\"",
+    "category": "Tecnica",
+    "group": "Tecnica di combattimento",
+    "levels": {
+      "2": {
+        "desc": "Sconfiggi l'ombra contaminante di Bottoblitz",
+        "completeDesc": "Il suo ruggito si affievolisce sempre più, fino a farsi silenzioso, come quando era un piccolo cucciolo."
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_defeat_nefarp": {
+    "name": "\"Il dolore della conquistatrice\"",
+    "category": "Tecnica",
+    "group": "Tecnica di combattimento",
+    "levels": {
+      "3": {
+        "desc": "Completa \"Crisi funesta: Nefarith\".",
+        "completeDesc": "La sua folle ambizione e la sua risata sprezzante si sono finalmente dissolte tra i fantasmi dello spazio protocollare."
+      }
+    },
+    "plating": {
+      "desc": "Completa \"Crisi funesta: Nefarith\" entro 200 s."
+    }
+  },
+  "achv_bat_defeat_palesent": {
+    "name": "\"Il collasso del suo compagno marmoreo\"",
+    "category": "Tecnica",
+    "group": "Tecnica di combattimento",
+    "levels": {
+      "3": {
+        "desc": "Completa \"Crisi funesta: Aggelomoira marmorea\".",
+        "completeDesc": "Nelle illusioni dello spazio protocollare, hai nuovamente sconfitto la grande effige marmorea."
+      }
+    },
+    "plating": {
+      "desc": "Completa \"Crisi funesta: Aggelomoira marmorea\" entro 240 s."
+    }
+  },
+  "achv_bat_defeat_rodin": {
+    "name": "\"La fine del Pugno spaccaossa\"",
+    "category": "Tecnica",
+    "group": "Tecnica di combattimento",
+    "levels": {
+      "3": {
+        "desc": "Completa Crisi convulsa: Rhodagn.",
+        "completeDesc": "Nelle illusioni dello spazio protocollare, hai posto fine al suo percorso fatto di violenza, fanatismo e furia."
+      }
+    },
+    "plating": {
+      "desc": "Completa \"Crisi convulsa: Rhodagn\" entro 120 s."
+    }
+  },
+  "achv_bat_defeat_ruanyi": {
+    "name": "\"Furia avvizzita\"",
+    "category": "Tecnica",
+    "group": "Tecnica di combattimento",
+    "levels": {
+      "3": {
+        "desc": "Completa \"Crisi funesta: Ruan Yi\".",
+        "completeDesc": "La notte piovosa ha innescato la sua furia cocente, per poi sgretolarsi tra i fantasmi dello spazio protocollare."
+      }
+    },
+    "plating": {
+      "desc": "Completa \"Crisi funesta: Ruan Yi\" entro 200 s."
+    }
+  },
+  "achv_bat_dung_char": {
+    "name": "Guida operatore",
+    "category": "Tecnica",
+    "group": "Spazio protocollare",
+    "levels": {
+      "1": {
+        "desc": "Completa 5 livelli Guida operatore qualsiasi.",
+        "completeDesc": "Conosci bene il modo in cui combattono i tuoi operatori."
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_dung_resource": {
+    "name": "Raccolta di materiali",
+    "category": "Tecnica",
+    "group": "Spazio protocollare",
+    "levels": {
+      "2": {
+        "desc": "Completa i seguenti spazi protocollari:\nESP operatore - Incubi manifesti;\nCrediti-T - Benedizione di aureum;\nPromozioni - Vortice silenzioso;\nPotenziamento abilità - Miraggio della torre;\nESP armi - Tumulo dell'armaiolo;\nOttimizzazione armi - Forgia della tempra liv. 5.",
+        "completeDesc": "Neanche gli spazi protocollari più pericolosi possono impedirti di ottenere risorse per l'avanzamento degli operatori."
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_dung_ss": {
+    "name": "Sviluppo avanzato",
+    "category": "Tecnica",
+    "group": "Spazio protocollare",
+    "levels": {
+      "2": {
+        "desc": "Completa ogni Spazio protocollare: sviluppo avanzato.",
+        "completeDesc": "Neanche gli spazi protocollari più pericolosi possono impedirti di ottenere i migliori materiali possibili per i tuoi operatori."
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_enemyspawner": {
+    "name": "Draga dei sedimenti",
+    "category": "Tecnica",
+    "group": "Spazio protocollare",
+    "levels": {
+      "2": {
+        "desc": "Raggiungi il livello di esplorazione 7, quindi completa 5 diversi sedimenti energetici ostici.",
+        "completeDesc": "Gli accumuli di energia dell'Æther in questa terra si stanno disgregando, ma prima o poi faranno ritorno."
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_eny_ace": {
+    "name": "Obliterazione totale",
+    "category": "Tecnica",
+    "group": "Tecnica di combattimento",
+    "levels": {
+      "2": {
+        "desc": "Sconfiggi almeno 5 nemici con un solo colpo.",
+        "completeDesc": "Abbiamo motivo di credere che un giorno riuscirai a eliminare i nemici solo con lo sguardo."
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_eny_building_kill": {
+    "name": "Annientamento intelligente",
+    "category": "Tecnica",
+    "group": "Tecnica di combattimento",
+    "levels": {
+      "1": {
+        "desc": "Sconfiggi 10 nemici con strutture da combattimento.",
+        "completeDesc": "Le tue strutture da combattimento hanno dato prova delle loro capacità."
+      },
+      "2": {
+        "desc": "Sconfiggi 100 nemici con strutture da combattimento.",
+        "completeDesc": "Le tue strutture da combattimento respingono con costanza i nemici."
+      },
+      "3": {
+        "desc": "Sconfiggi 500 nemici con strutture da combattimento.",
+        "completeDesc": "Con macchine da guerra così efficienti, è quasi superfluo che tu ti esponga in prima persona al pericolo."
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_eny_cannot_move": {
+    "name": "Immobilizzazione duratura",
+    "category": "Tecnica",
+    "group": "Tecnica di combattimento",
+    "levels": {
+      "2": {
+        "desc": "Mantieni immobilizzato lo stesso nemico per 20 s durante un combattimento.",
+        "completeDesc": "Le tue tecniche di combattimento lasciano senza fiato. Riesci a esercitare un controllo totale sull'avversario."
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_frozen": {
+    "name": "\"Riduzione entropica\"",
+    "category": "Tecnica",
+    "group": "Tecnica di combattimento",
+    "levels": {
+      "1": {
+        "desc": "Fai in modo che un operatore qualsiasi subisca Solidificazione in battaglia 10 volte.",
+        "completeDesc": "Il freddo pungente ti ha rallentato per non farti allontanare."
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_hard_1": {
+    "name": "\"Costrutto inorganico\"",
+    "category": "Tecnica",
+    "group": "Spazio protocollare",
+    "levels": {
+      "2": {
+        "desc": "In [Monumento d'ombra], completa tutti i livelli di \"Costrutto inorganico\" in modalità Normale.",
+        "completeDesc": "Hai vissuto un momento che mostrava la disperata lotta per la sopravvivenza dell'umanità durante la Guerra degli Aggeloi. Ancora una volta, hai inciso il tuo nome sul grande monumento."
+      }
+    },
+    "plating": {
+      "desc": "In [Monumento d'ombra], completa tutti i livelli di \"Costrutto inorganico\" in modalità Agonia."
+    }
+  },
+  "achv_bat_hard_2": {
+    "name": "\"Rinnegati da Terra\"",
+    "category": "Tecnica",
+    "group": "Spazio protocollare",
+    "levels": {
+      "2": {
+        "desc": "In [Monumento d'ombra], completa tutti i livelli di \"Rinnegati da Terra\" in modalità Normale.",
+        "completeDesc": "Hai affrontato coloro che hanno squarciato e dilaniato la civiltà, incidendo ancora una volta il tuo nome sul grande monumento."
+      }
+    },
+    "plating": {
+      "desc": "In [Monumento d'ombra], completa tutti i livelli di \"Rinnegati da Terra\" in modalità Agonia."
+    }
+  },
+  "achv_bat_hard_3": {
+    "name": "\"Cicatrici roventi\"",
+    "category": "Tecnica",
+    "group": "Spazio protocollare",
+    "levels": {
+      "2": {
+        "desc": "In [Monumento d'ombra], completa tutti i livelli di \"Cicatrici roventi\" in modalità Normale.",
+        "completeDesc": "Hai spazzato via le cicatrici roventi e rimosso la crudeltà celata al loro interno. Ancora una volta, hai inciso il tuo nome sul grande monumento."
+      }
+    },
+    "plating": {
+      "desc": "In [Monumento d'ombra], completa tutti i livelli di \"Cicatrici roventi\" in modalità Agonia."
+    }
+  },
+  "achv_bat_hard_4": {
+    "name": "\"Manifesto di torbidità\"",
+    "category": "Tecnica",
+    "group": "Spazio protocollare",
+    "levels": {
+      "2": {
+        "desc": "In [Monumento d'ombra], completa tutti i livelli di \"Manifesto di torbidità\" in modalità Normale.",
+        "completeDesc": "Hai resistito alla marea terrificante e torbida che minacciava di sommergere ogni cosa, incidendo ancora una volta il tuo nome sul grande monumento."
+      }
+    },
+    "plating": {
+      "desc": "In [Monumento d'ombra], completa tutti i livelli di \"Manifesto di torbidità\" in modalità Agonia."
+    }
+  },
+  "achv_bat_hard_5": {
+    "name": "\"Contesa dei silenzi tombali\"",
+    "category": "Tecnica",
+    "group": "Spazio protocollare",
+    "levels": {
+      "2": {
+        "desc": "In [Monumento d'ombra], completa tutti i livelli di \"Contesa dei silenzi tombali\" in modalità Normale.",
+        "completeDesc": "Hai assistito al conflitto tra il fragore del tuono e le manifestazioni del silenzio tombale, incidendo ancora una volta il tuo nome sul grande monumento."
+      }
+    },
+    "plating": {
+      "desc": "In [Monumento d'ombra], completa tutti i livelli di \"Contesa dei silenzi tombali\" in modalità Agonia."
+    }
+  },
+  "achv_bat_hard_6": {
+    "name": "\"Ulularocce della rupe\"",
+    "category": "Tecnica",
+    "group": "Spazio protocollare",
+    "levels": {
+      "2": {
+        "desc": "Completa tutti i livelli di Monumento d'ombra - \"Ulularocce della rupe\" in modalità Normale.",
+        "completeDesc": "Trionfante, hai prevalso su tutte le bestie della montagna, incidendo ancora una volta il tuo nome sul grande monumento."
+      }
+    },
+    "plating": {
+      "desc": "In [Monumento d'ombra], completa tutti i livelli di \"Ulularocce della rupe\" in modalità Agonia."
+    }
+  },
+  "achv_bat_hard_7": {
+    "name": "\"Il segno delle Ombre oscure\"",
+    "category": "Tecnica",
+    "group": "Spazio protocollare",
+    "levels": {
+      "2": {
+        "desc": "In [Monumento d'ombra], completa tutti i livelli di \"Il segno delle Ombre oscure\" in modalità Normale.",
+        "completeDesc": "Trionfante, hai dissolto la disastrosa impronta della calamità, incidendo ancora una volta il tuo nome sul grande monumento."
+      }
+    },
+    "plating": {
+      "desc": "In [Monumento d'ombra], completa tutti i livelli di \"Il segno delle Ombre oscure\" in modalità Agonia."
+    }
+  },
+  "achv_bat_magical_AS": {
+    "name": "Maestria degli stati fisici",
+    "category": "Tecnica",
+    "group": "Tecnica di combattimento",
+    "levels": {
+      "1": {
+        "desc": "Applica 50 stati fisici in combattimento.",
+        "completeDesc": "Hai dimostrato l'efficacia delle tue tecniche di combattimento."
+      },
+      "2": {
+        "desc": "Applica 300 stati fisici in combattimento.",
+        "completeDesc": "I nemici ora temono la potenza dei tuoi pugni e fendenti."
+      },
+      "3": {
+        "desc": "Applica 500 stati fisici in combattimento.",
+        "completeDesc": "Non hai eguali nel combattimento fisico."
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_physical_AS": {
+    "name": "Arti e flusso",
+    "category": "Tecnica",
+    "group": "Tecnica di combattimento",
+    "levels": {
+      "1": {
+        "desc": "Applica 50 Reazioni delle Arti in combattimento.",
+        "completeDesc": "Tale è il flusso delle Arti di Originium."
+      },
+      "2": {
+        "desc": "Applica 300 Reazioni delle Arti in combattimento.",
+        "completeDesc": "I nemici temono la tua capacità di manipolare l'energia."
+      },
+      "3": {
+        "desc": "Applica 500 Reazioni delle Arti in combattimento.",
+        "completeDesc": "Non hai eguali nell'utilizzo delle Arti di Originium."
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_rescue_from_geyunweng": {
+    "name": "\"BASTA RAPIMENTI!\"",
+    "category": "Tecnica",
+    "group": "Tecnica di combattimento",
+    "levels": {
+      "2": {
+        "desc": "Salva un membro dell'USLT intrappolato dallo squarcia-nembi 1 volta.",
+        "completeDesc": "I pirati di Cangzei e i briganti del fiumi sono famosi per prendere ostaggi e chiedere riscatti. Ovviamente, non gliel'hai fatta passare liscia."
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_smalltree": {
+    "name": "\"Completamente sradicato\"",
+    "category": "Tecnica",
+    "group": "Tecnica di combattimento",
+    "levels": {
+      "2": {
+        "desc": "Costringi i girovaghi del bosco scavatori a tornare in superficie",
+        "completeDesc": "Hai agito tempestivamente e sradicato la creazione di legno dalla terra... Le radici e i tuberi selvatici e dilaganti hanno l'abitudine di causare problemi."
+      }
+    },
+    "plating": null
+  },
+  "achv_event_clean": {
+    "name": "\"Pulito pulitissimo\"",
+    "category": "Evento",
+    "group": "Evento",
+    "levels": {
+      "2": {
+        "desc": "Completa tutte le missioni di Pulizia profonda.",
+        "completeDesc": "Hai eliminato tutte le macchie che affliggevano gli operatori ecologici."
+      }
+    },
+    "plating": {
+      "desc": "Completa \"Pulizia a salti\" entro 120 s."
+    }
+  },
+  "achv_event_contingency_contract_0": {
+    "name": "\"Riaccensione\"",
+    "category": "Evento",
+    "group": "Evento",
+    "levels": {
+      "3": {
+        "desc": "Completa una sfida con almeno 20 <image=\"Common/icon_contingency_contract_entry_black\" width=30 height=30> Criteri di test in \"Contratto di emergenza: Operazione sperimentale di Riaccensione\".",
+        "completeDesc": "Un patto del passato sta per essere rinnovato. Hai riattivato un antico contratto."
+      }
+    },
+    "plating": null
+  },
+  "achv_event_dungfight": {
+    "name": "\"Specialista della sopravvivenza\"",
+    "category": "Evento",
+    "group": "Evento",
+    "levels": {
+      "2": {
+        "desc": "In [Corso di sopravvivenza], completa tutti i livelli.",
+        "completeDesc": "Hai completato il corso di sopravvivenza di Klara e ora padroneggi le tecniche di sopravvivenza."
+      }
+    },
+    "plating": {
+      "desc": "Completa \"Valutazione finale\" entro 120 s."
+    }
+  },
+  "achv_event_formula": {
+    "name": "\"Corriere portatile\"",
+    "category": "Evento",
+    "group": "Evento",
+    "levels": {
+      "2": {
+        "desc": "Durante \"Supporto SIA: Salvavita portatile\", ottieni 800.000 certificati di frutti dell'altruismo.",
+        "completeDesc": "I piccoli fiaschi che hai consegnato durante Supporto SIA hanno riscosso un grande successo."
+      }
+    },
+    "plating": {
+      "desc": "Durante \"Supporto SIA: Salvavita portatile\", ottieni 800.000 certificati di frutti dell'altruismo e consegna 20.000 fiaschi di giada e xiranite."
+    }
+  },
+  "achv_event_formula2": {
+    "name": "\"Esplosione del cicciodrago\"",
+    "category": "Evento",
+    "group": "Evento",
+    "levels": {
+      "2": {
+        "desc": "Durante [Supporto SIA: Attacco del cicciodrago], ottieni 800.000 certificati di frutti dell'altruismo",
+        "completeDesc": "La tua produzione instancabile ha permesso ai cicciodraghi totalmente automatizzati di scorrazzare per la terra. Sono davvero frutti dell'altruismo che tutti amano vedere."
+      }
+    },
+    "plating": {
+      "desc": "Durante [Supporto SIA: Attacco del cicciodrago], ottieni 800.000 certificati di frutti dell'altruismo e consegna 20.000 cicciodraghi di xiranite pesante"
+    }
+  },
+  "achv_event_racingdungeon_1": {
+    "name": "\"Esploratore del regno\"",
+    "category": "Evento",
+    "group": "Evento",
+    "levels": {
+      "2": {
+        "desc": "Completa la camera Doccia di monete 1 volta in Il Regno radicato fase 2",
+        "completeDesc": "Hai esplorato il regno delle fiabe. Riferisci ad Algy cosa hai visto."
+      }
+    },
+    "plating": {
+      "desc": "Completa tutte le fasi delle missioni del Regno in Il Regno radicato"
+    }
+  },
+  "achv_event_takestwo_1": {
+    "name": "\"Strategie notturne\"",
+    "category": "Evento",
+    "group": "Evento",
+    "levels": {
+      "2": {
+        "desc": "Completa tutti i livelli di [FURIA INCANDESCENTE! MEGA ARENA!] in modalità Normale.",
+        "completeDesc": "DAGLI FUOCO! FAI RIBOLLIRE IL TUO SPIRITO COMBATTIVO!"
+      }
+    },
+    "plating": {
+      "desc": "Completa tutti i livelli di \"FURIA INCANDESCENTE! MEGA ARENA!\" in modalità AL MASSIMO e completa uno dei seguenti livelli entro 180 secondi:\n· \"Empietà! Fenditerra e canaglie! AL MASSIMO!\"\n· \"Tattica! Sconfiggi i loro domatori! AL MASSIMO!\"\n· \"Caos! Carneficina totale! AL MASSIMO!\""
+    }
+  },
+  "achv_event_tundra_challenge_dung": {
+    "name": "\"Fra gli enigmi della Valle\"",
+    "category": "Evento",
+    "group": "Evento",
+    "levels": {
+      "2": {
+        "desc": "Completa tutti gli spazi protocollari di \"Prima soluzione\" in [Esplorazione del mistero]",
+        "completeDesc": "Lo spazio protocollare in continua mutazione ha trasformato le immagini di Valle IV in bizzarre anomalie, ma non basterà a fermare la tua avanzata."
+      }
+    },
+    "plating": {
+      "desc": "Completa perfettamente tutti gli spazi protocollari di \"Prima soluzione\" in [Esplorazione del mistero]"
+    }
+  },
+  "achv_event_wuling_challenge_dung": {
+    "name": "\"Speleologia\"",
+    "category": "Evento",
+    "group": "Evento",
+    "levels": {
+      "2": {
+        "desc": "Completa tutti gli spazi protocollari di \"Indagine speleologica\" in [Esplorazione del mistero]",
+        "completeDesc": "Lo spazio protocollare in continua mutazione ha trasformato le immagini di Wuling in grotte angoscianti, ma non basterà a fermare la tua avanzata."
+      }
+    },
+    "plating": {
+      "desc": "Completa perfettamente tutti gli spazi protocollari di \"Indagine speleologica\" in [Esplorazione del mistero]"
+    }
+  },
+  "achv_event_wuling_challenge_dung_02": {
+    "name": "\"Regno artistico dei sei cardinali\"",
+    "category": "Evento",
+    "group": "Evento",
+    "levels": {
+      "2": {
+        "desc": "Completa tutti gli spazi protocollari di \"Regno artistico dei sei cardinali\" in [Esplorazione del mistero]",
+        "completeDesc": "Un pezzo per volta, hai rischiarato lo spazio protocollare frammentato e compreso appieno le sei dimensioni artistiche."
+      }
+    },
+    "plating": {
+      "desc": "Completa perfettamente tutti gli spazi protocollari di \"Regno artistico dei sei cardinali\" in [Esplorazione del mistero]"
+    }
+  },
+  "achv_event_wuling_racing_1": {
+    "name": "\"Corridore supremo\"",
+    "category": "Evento",
+    "group": "Evento",
+    "levels": {
+      "2": {
+        "desc": "Nella [Corsa a ostacoli dei corridori], completa tutte le gare",
+        "completeDesc": "Salendo sui nembi e cavalcando il vento... hai conquistato con facilità i percorsi che simboleggiano i paesaggi mozzafiato di Wuling."
+      }
+    },
+    "plating": {
+      "desc": "Nella [Corsa a ostacoli dei corridori], completa tutti i percorsi con 3★"
+    }
+  },
+  "achv_fac_blackbox_1": {
+    "name": "Simulazione fabbrica",
+    "category": "Costruzione",
+    "group": "Fabbrica del SIA",
+    "levels": {
+      "1": {
+        "desc": "Avvia manualmente e completa 5 simulazioni.",
+        "completeDesc": "Hai completato alcune simulazioni."
+      },
+      "2": {
+        "desc": "Avvia manualmente e completa 10 simulazioni.",
+        "completeDesc": "Hai completato diverse simulazioni."
+      },
+      "3": {
+        "desc": "Avvia manualmente e completa 20 simulazioni.",
+        "completeDesc": "Hai completato molte simulazioni. Il tuo impegno nell'imparare le nozioni sulla fabbrica è molto apprezzato."
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_blackbox_2": {
+    "name": "Simulazione fabbrica Ⅱ",
+    "category": "Costruzione",
+    "group": "Fabbrica del SIA",
+    "levels": {
+      "3": {
+        "desc": "Avvia manualmente e completa 30 simulazioni.",
+        "completeDesc": "Hai completato molte simulazioni. Apprezziamo ancora una volta il tuo impegno nell'imparare le nozioni sulla fabbrica specifiche della regione di Wuling."
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_coupon_tundra": {
+    "name": "Ridistribuzione scorte della Valle",
+    "category": "Costruzione",
+    "group": "Fabbrica del SIA",
+    "levels": {
+      "1": {
+        "desc": "Ottieni 20.000.000 di buoni acquisto della Valle.",
+        "completeDesc": "Hai ottenuto alcuni buoni acquisto della Valle."
+      },
+      "2": {
+        "desc": "Ottieni 40.000.000 di buoni acquisto della Valle.",
+        "completeDesc": "Hai ottenuto parecchi buoni acquisto della Valle."
+      },
+      "3": {
+        "desc": "Ottieni 80.000.000 di buoni acquisto della Valle.",
+        "completeDesc": "Hai ottenuto molti buoni acquisto della Valle. \nIl fatto che tu abbia ottenuto più buoni acquisto significa che hai consegnato scorte di cui la gente aveva un disperato bisogno. Hai fatto un ottimo lavoro."
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_coupon_wuling_1": {
+    "name": "Ridistribuzione scorte di Wuling",
+    "category": "Costruzione",
+    "group": "Fabbrica del SIA",
+    "levels": {
+      "1": {
+        "desc": "Ottieni 2.000.000 di buoni acquisto di Wuling.",
+        "completeDesc": "Hai ottenuto alcuni buoni acquisto di Wuling."
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_coupon_wuling_2": {
+    "name": "Ridistribuzione scorte di Wuling II",
+    "category": "Costruzione",
+    "group": "Fabbrica del SIA",
+    "levels": {
+      "2": {
+        "desc": "Ottieni 10.000.000 buoni acquisto di Wuling.",
+        "completeDesc": "Hai ottenuto molti buoni acquisto di Wuling. \nIl fatto che tu abbia ottenuto più buoni acquisto significa che hai consegnato scorte di cui la gente aveva un disperato bisogno. Hai fatto un ottimo lavoro."
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_coupon_wuling_3": {
+    "name": "Ridistribuzione scorte di Wuling Ⅲ",
+    "category": "Costruzione",
+    "group": "Fabbrica del SIA",
+    "levels": {
+      "3": {
+        "desc": "Ottieni 25.000.000 buoni acquisto di Wuling.",
+        "completeDesc": "Hai ottenuto molti buoni acquisto di Wuling. \nIl fatto che tu abbia ottenuto più buoni acquisto significa che hai consegnato scorte di cui la gente aveva un disperato bisogno. Hai fatto un ottimo lavoro."
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_coupon_wuling_4": {
+    "name": "Ridistribuzione scorte di Wuling IV",
+    "category": "Costruzione",
+    "group": "Fabbrica del SIA",
+    "levels": {
+      "3": {
+        "desc": "Ottieni 80.000.000 buoni acquisto di Wuling.",
+        "completeDesc": "Hai ottenuto numerosi buoni acquisto di Wuling.\nPiù buoni acquisto equivalgono a una maggiore comprensione. Il flusso di merci a Wuling non sfugge al tuo occhio attento."
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_coupon_wuling_5": {
+    "name": "Ridistribuzione scorte di Wuling V",
+    "category": "Costruzione",
+    "group": "Fabbrica del SIA",
+    "levels": {
+      "3": {
+        "desc": "Ottieni 100.000.000 buoni acquisto di Wuling.",
+        "completeDesc": "Hai ottenuto altri buoni acquisto di Wuling.\nLe necessità di tutti sono state soddisfatte. Hai scongiurato un disastro e mantenuto l'economia di Wuling stabile e fiorente."
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_domain_depot": {
+    "name": "Consegna articoli",
+    "category": "Costruzione",
+    "group": "Fabbrica del SIA",
+    "levels": {
+      "2": {
+        "desc": "Completa la Consegna articoli 20 volte.",
+        "completeDesc": "Hai completato varie consegne di articoli. \nNonostante tu disponga del tecno-protocollo, vuoi comunque consegnare la merce di persona. I tuoi \"clienti\" sono commossi da una simile dedizione."
+      }
+    },
+    "plating": {
+      "desc": "Confeziona e consegna 20 pacchi di merci della fabbrica molto fragili senza ridurre l'integrità degli articoli."
+    }
+  },
+  "achv_fac_domain_shop": {
+    "name": "Vendite costanti",
+    "category": "Costruzione",
+    "group": "Fabbrica del SIA",
+    "levels": {
+      "2": {
+        "desc": "Vendi rifornimenti alla ridistribuzione scorte 15 volte.",
+        "completeDesc": "Hai venduto molti rifornimenti. \nGrazie al tuo intuito, alle tue capacità di osservazione e al tuo tempestivo intervento, hai impedito che le regioni soffrissero una carenza di materiali."
+      }
+    },
+    "plating": {
+      "desc": "In una singola vendita di beni elastici, ottieni un prezzo di vendita che sia almeno il 500% più alto rispetto alla media."
+    }
+  },
+  "achv_fac_kite_station": {
+    "name": "Monitoraggio ambientale",
+    "category": "Costruzione",
+    "group": "Fabbrica del SIA",
+    "levels": {
+      "2": {
+        "desc": "Completa il monitoraggio ambientale 5 volte.",
+        "completeDesc": "Hai eseguito vari interventi di monitoraggio ambientale. \nWuling ci tiene a ringraziarti a nome di tutte le creature che hai protetto."
+      }
+    },
+    "plating": {
+      "desc": "Completa i progressi della panoramica ecologia presso il terminale di monitoraggio periferico dei Dintorni di Wuling."
+    }
+  },
+  "achv_fac_recycle_station": {
+    "name": "Riciclo delle risorse",
+    "category": "Costruzione",
+    "group": "Fabbrica del SIA",
+    "levels": {
+      "1": {
+        "desc": "Raccogli risorse dalle stazioni di riciclo 50 volte.",
+        "completeDesc": "Hai raccolto svariati materiali dalle stazioni di riciclo. \nSe ti concentri, ti sembra quasi di sentire il crestalone che dice: \"È sempre un piacere ricevere una tua visita.\""
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_settlement_tundra": {
+    "name": "Avamposti della Valle",
+    "category": "Costruzione",
+    "group": "Fabbrica del SIA",
+    "levels": {
+      "2": {
+        "desc": "Aggiungi tutti gli avamposti di Valle IV al programma di supporto della Endfield.",
+        "completeDesc": "Ora ogni avamposto di Valle IV fa parte del tuo programma di supporto. \nDagli una pinna e li sfamerai per un giorno, insegnagli a pescare... Il tuo programma di supporto è un vero successo."
+      }
+    },
+    "plating": {
+      "desc": "Fai salire tutti gli avamposti di Valle IV al livello massimo."
+    }
+  },
+  "achv_fac_settlement_wuling_1": {
+    "name": "Avamposti di Wuling Ⅰ",
+    "category": "Costruzione",
+    "group": "Fabbrica del SIA",
+    "levels": {
+      "2": {
+        "desc": "Aggiungi il Cantiere delle Pianure del Re celeste e la Stazione di risanamento cardiaco al programma di supporto della Endfield.",
+        "completeDesc": "Diversi avamposti di Wuling fanno parte del tuo programma di supporto. \nDagli una pinna e li sfamerai per un giorno, insegnagli a pescare... Il tuo programma di supporto è un vero successo."
+      }
+    },
+    "plating": {
+      "desc": "Porta il Cantiere delle Pianure del Re celeste e la Stazione di risanamento cardiaco al livello massimo."
+    }
+  },
+  "achv_fac_settlement_wuling_2": {
+    "name": "Avamposti di Wuling Ⅱ",
+    "category": "Costruzione",
+    "group": "Fabbrica del SIA",
+    "levels": {
+      "2": {
+        "desc": "Aggiungi tutti gli avamposti di Wuling al programma di supporto.",
+        "completeDesc": "Tutti gli avamposti di Wuling ora fanno parte del tuo programma di supporto. \nHai saputo mediare alla perfezione il rapporto tra le persone e il loro pittoresco ambiente di cime imponenti e fiumi sinuosi."
+      }
+    },
+    "plating": {
+      "desc": "Fai salire tutti gli avamposti di Wuling al livello massimo."
+    }
+  },
+  "achv_fac_simulation_training": {
+    "name": "\"Apice delle prove\"",
+    "category": "Costruzione",
+    "group": "Fabbrica del SIA",
+    "levels": {
+      "2": {
+        "desc": "Completa una prova con un totale di 10 punti battaglia.",
+        "completeDesc": "Dimostrando un impeccabile tatto, hai raggiunto l'apice nella Prova di Spadamanzia."
+      }
+    },
+    "plating": {
+      "desc": "Completa 1 prova con 1 eccesso di dati e 10 punti battaglia"
+    }
+  },
+  "achv_fac_spaceship_fever_point": {
+    "name": "Immensa fiducia",
+    "category": "Costruzione",
+    "group": "Dijiang",
+    "levels": {
+      "1": {
+        "desc": "Aumenta la fiducia di 5 operatori al 100%.",
+        "completeDesc": "Hai trovato dei compagni pronti a dare la vita pur di proteggerti."
+      },
+      "2": {
+        "desc": "Aumenta la fiducia di 10 operatori al 100%.",
+        "completeDesc": "Hai trovato vari compagni pronti a dare la vita pur di proteggerti. \nSembra che tu abbia la capacità di circondarti di persone con idee affini alle tue."
+      },
+      "3": {
+        "desc": "Aumenta la fiducia di 20 operatori al 100%.",
+        "completeDesc": "Hai trovato molti compagni pronti a dare la vita pur di proteggerti. \nArriverà il giorno in cui il mondo intero riporrà la sua fiducia in te."
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_spaceship_gift": {
+    "name": "Donazione amichevole",
+    "category": "Costruzione",
+    "group": "Dijiang",
+    "levels": {
+      "1": {
+        "desc": "Offri 300 doni apprezzati dai tuoi operatori.",
+        "completeDesc": "I tuoi operatori hanno ricevuto parecchi regali da te."
+      },
+      "2": {
+        "desc": "Offri 500 doni apprezzati dai tuoi operatori.",
+        "completeDesc": "I tuoi operatori hanno ricevuto parecchi regali da te. \nCredi davvero che nelle loro stanze ci sia abbastanza spazio?"
+      },
+      "3": {
+        "desc": "Offri 1000 doni apprezzati dai tuoi operatori.",
+        "completeDesc": "I tuoi operatori hanno ricevuto parecchi regali da te. \nI regali non sono che un'opportunità. Fiducia e sincerità sono i veri motivi per cui gli operatori sono così affezionati a te."
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_spaceship_level_1": {
+    "name": "Nexus potenziato",
+    "category": "Costruzione",
+    "group": "Dijiang",
+    "levels": {
+      "3": {
+        "desc": "Porta il Nexus di controllo della Dijiang al livello 5.",
+        "completeDesc": "Hai migliorato notevolmente le prestazioni del Nexus di controllo. \nRiesci a sentirlo? Sulla Dijiang sono tutti al settimo cielo."
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_techtree_jinlong_1": {
+    "name": "Pionierismo industriale di Wuling I",
+    "category": "Costruzione",
+    "group": "Fabbrica del SIA",
+    "levels": {
+      "1": {
+        "desc": "Svolgi ricerche su ogni tecnologia del SIA I di Wuling.",
+        "completeDesc": "Hai completato la fase 1 del progetto del SIA di Wuling."
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_techtree_jinlong_2": {
+    "name": "Pionierismo industriale di Wuling II",
+    "category": "Costruzione",
+    "group": "Fabbrica del SIA",
+    "levels": {
+      "1": {
+        "desc": "Svolgi ricerche su 25 tecnologie del progetto del SIA di Wuling.",
+        "completeDesc": "Hai portato a termine ulteriori ricerche su varie tecnologie nel progetto del SIA di Wuling."
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_techtree_jinlong_3": {
+    "name": "Pionierismo industriale di Wuling Ⅲ",
+    "category": "Costruzione",
+    "group": "Fabbrica del SIA",
+    "levels": {
+      "1": {
+        "desc": "Svolgi ricerche su 34 tecnologie del progetto del SIA di Wuling.",
+        "completeDesc": "Hai portato a termine ulteriori ricerche su varie tecnologie nel progetto del SIA di Wuling.\nSei in prima linea nello sviluppo tecnologico di Talos-II."
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_techtree_jinlong_4": {
+    "name": "Pionierismo industriale di Wuling Ⅳ",
+    "category": "Costruzione",
+    "group": "Fabbrica del SIA",
+    "levels": {
+      "1": {
+        "desc": "Svolgi ricerche su 47 tecnologie del progetto del SIA di Wuling.",
+        "completeDesc": "Hai portato a termine ulteriori ricerche su varie tecnologie nel progetto del SIA di Wuling.\nIn ogni istante, la terra sotto i tuoi piedi risponde ai tuoi pensieri."
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_techtree_tundra": {
+    "name": "Pionierismo industriale della Valle",
+    "category": "Costruzione",
+    "group": "Fabbrica del SIA",
+    "levels": {
+      "3": {
+        "desc": "Svolgi ricerche su ogni tecnologia nel progetto del SIA base.",
+        "completeDesc": "Hai svolto ricerche su ogni tecnologia del progetto del SIA base. \nGrazie al tuo duro lavoro, la fabbrica del SIA può soddisfare appieno i bisogni di Valle IV."
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_typhoea_archery": {
+    "name": "\"Illuminazione dell'arciere\"",
+    "category": "Costruzione",
+    "group": "Fabbrica del SIA",
+    "levels": {
+      "2": {
+        "desc": "Nel [Poligono di tiro con l'arco di Typhoeus], completa ogni addestramento base ed \"Esercitazione quotidiana 04\" una volta",
+        "completeDesc": "Hai raggiunto l'illuminazione dell'arciere e ora puoi mirare con l'occhio della mente. L'arte dell'arco non è mai stata così semplice."
+      }
+    },
+    "plating": {
+      "desc": "Nel [Poligono di tiro con l'arco di Typhoeus], completa ogni \"Addestramento avanzato\" ed \"Esercitazione quotidiana 04\" con 3★"
+    }
+  },
+  "achv_growth_adventure_level": {
+    "name": "Figura autoritaria",
+    "category": "Sviluppo",
+    "group": "Sviluppo",
+    "levels": {
+      "1": {
+        "desc": "Raggiungi il livello di autorità 20.",
+        "completeDesc": "Scalando i livelli di autorità, hai raggiunto un piccolo traguardo."
+      },
+      "2": {
+        "desc": "Raggiungi il livello di autorità 40.",
+        "completeDesc": "Scalando i livelli di autorità, stai lentamente tornando in forma."
+      },
+      "3": {
+        "desc": "Raggiungi il livello di autorità 60.",
+        "completeDesc": "Avendo scalato i livelli di autorità, ora puoi esercitare appieno il tuo comando."
+      }
+    },
+    "plating": null
+  },
+  "achv_growth_char_count_1": {
+    "name": "Contatto operatore",
+    "category": "Sviluppo",
+    "group": "Sviluppo",
+    "levels": {
+      "1": {
+        "desc": "Ottieni 5 operatori.",
+        "completeDesc": "Hai incontrato vari operatori per la prima volta."
+      },
+      "2": {
+        "desc": "Ottieni 10 operatori.",
+        "completeDesc": "Hai incontrato vari operatori per la prima volta. La tua squadra operativa di combattimento sta prendendo forma."
+      },
+      "3": {
+        "desc": "Ottieni 20 operatori.",
+        "completeDesc": "Hai incontrato vari operatori per la prima volta. Ora disponi di abbastanza personale per condurre strategie più elaborate."
+      }
+    },
+    "plating": null
+  },
+  "achv_growth_char_potential_1": {
+    "name": "Massimo potenziale",
+    "category": "Sviluppo",
+    "group": "Sviluppo",
+    "levels": {
+      "1": {
+        "desc": "Fai arrivare 1 operatore al suo potenziale massimo.",
+        "completeDesc": "Uno dei tuoi operatori ha raggiunto il suo potenziale massimo."
+      },
+      "2": {
+        "desc": "Fai arrivare 10 operatori al loro potenziale massimo.",
+        "completeDesc": "Alcuni dei tuoi operatori hanno raggiunto il loro potenziale massimo. \nRiflettere a fondo su sé stessi è il primo passo per crescere."
+      },
+      "3": {
+        "desc": "Fai arrivare 15 operatori al loro potenziale massimo.",
+        "completeDesc": "Alcuni dei tuoi operatori hanno raggiunto il loro potenziale massimo. \nNonostante abbiano superato i propri limiti, questi operatori sono pronti ad andare persino oltre."
+      }
+    },
+    "plating": null
+  },
+  "achv_growth_char_skill_level_1": {
+    "name": "Maestria abilità",
+    "category": "Sviluppo",
+    "group": "Sviluppo",
+    "levels": {
+      "1": {
+        "desc": "Porta 5 abilità degli operatori al livello di maestria 3.",
+        "completeDesc": "Alcuni dei tuoi operatori hanno affinato le proprie abilità di combattimento, giungendo a livelli incredibili."
+      },
+      "2": {
+        "desc": "Porta 10 abilità degli operatori al livello di maestria 3.",
+        "completeDesc": "Alcuni dei tuoi operatori hanno affinato le proprie abilità di combattimento, giungendo a livelli incredibili. Se ci sono riusciti, è anche grazie al rapporto di fiducia che avete instaurato."
+      },
+      "3": {
+        "desc": "Porta 20 abilità degli operatori al livello di maestria 3.",
+        "completeDesc": "Alcuni dei tuoi operatori hanno affinato le proprie abilità di combattimento, giungendo a livelli incredibili. Nonostante differiscano molto per abilità e specialità, i tuoi operatori collaborano per realizzare una visione condivisa sotto la tua guida."
+      }
+    },
+    "plating": null
+  },
+  "achv_growth_equip_enhance": {
+    "name": "Equipaggiamento perfetto",
+    "category": "Sviluppo",
+    "group": "Sviluppo",
+    "levels": {
+      "3": {
+        "desc": "Potenzia tutte le statistiche di un equipaggiamento fino a Artificio completo.",
+        "completeDesc": "Tra vittorie, sconfitte e cicatrici, ti ha sempre sostenuto sin dall'inizio e continuerà a farlo fino alla fine."
+      }
+    },
+    "plating": null
+  },
+  "achv_growth_world_level": {
+    "name": "Esplorazione approfondita",
+    "category": "Sviluppo",
+    "group": "Sviluppo",
+    "levels": {
+      "1": {
+        "desc": "Raggiungi il livello di esplorazione 2.",
+        "completeDesc": "Una medaglia che testimonia il raggiungimento di un livello di esplorazione superiore."
+      },
+      "2": {
+        "desc": "Raggiungi il livello di esplorazione 4.",
+        "completeDesc": "Una medaglia che testimonia il raggiungimento di un livello di esplorazione superiore. \nGli ambienti più inospitali offrono maggiori opportunità."
+      },
+      "3": {
+        "desc": "Raggiungi il livello di esplorazione 7.",
+        "completeDesc": "Una medaglia che testimonia il raggiungimento di un livello di esplorazione superiore. \nHai raggiunto lo zenit."
+      }
+    },
+    "plating": null
+  },
+  "achv_growth_wpn_count_1": {
+    "name": "Arsenale ben fornito",
+    "category": "Sviluppo",
+    "group": "Sviluppo",
+    "levels": {
+      "1": {
+        "desc": "Ottieni 10 armi diverse.",
+        "completeDesc": "Hai un arsenale di armi ben fornito."
+      },
+      "2": {
+        "desc": "Ottieni 20 armi diverse.",
+        "completeDesc": "Hai un arsenale di armi ben fornito. \nOra possiedi alcuni dei prodotti più raffinati della Mieszko Industries o persino della Fort Forgefane."
+      },
+      "3": {
+        "desc": "Ottieni 40 armi diverse.",
+        "completeDesc": "Hai un arsenale di armi ben fornito. \nPerché hai voluto arricchire a tal punto la tua collezione? Vuoi aiutare l'ingegnere dell'arsenale a paragonare fra loro armi di produttori diversi?"
+      }
+    },
+    "plating": null
+  },
+  "achv_growth_wpn_skill_level": {
+    "name": "Armamenti supremi",
+    "category": "Sviluppo",
+    "group": "Sviluppo",
+    "levels": {
+      "3": {
+        "desc": "Porta 1 arma al rango abilità complessivo di 18.",
+        "completeDesc": "Dopo innumerevoli potenziamenti e modifiche meticolose, ora la tua arma è al pari delle antiche reliquie impugnate dagli eroi delle leggende."
+      }
+    },
+    "plating": {
+      "desc": "Porta 1 arma al rango abilità complessivo di 25."
+    }
+  },
+  "achv_hide_aether_lock_clean": {
+    "name": "\"La lama della ghigliottina\"",
+    "category": "Sorpresa",
+    "group": "Sorpresa",
+    "levels": {
+      "2": {
+        "desc": "Rimuovi 5 sedimenti energetici nell'Area interdetta di Wuling Nord.",
+        "completeDesc": "Bisogna essere estremamente cauti quando ci si muove su terreni pericolosi. Eppure, hai abbattuto la lama della ghigliottina."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_banana": {
+    "name": "\"Corsa agli armamenti?\"",
+    "category": "Sorpresa",
+    "group": "Sorpresa",
+    "levels": {
+      "1": {
+        "desc": "Fai in modo che l'operatore controllato scivoli su bucce di banana una volta.",
+        "completeDesc": "La regola recita: \"Non è consentito l'uso di gadget e oggetti\". Ma la fauna selvatica non se n'è curata e ha gettato a terra delle bucce di banana."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_cave": {
+    "name": "\"Ispezione trappola\"",
+    "category": "Sorpresa",
+    "group": "Sorpresa",
+    "levels": {
+      "2": {
+        "desc": "Rompi tutte le superfici fragili del Giacimento originario.",
+        "completeDesc": "Non preoccuparti: le fosse non sono trappole messe lì deliberatamente. L'USLT sta conducendo un'indagine per trovare i responsabili."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_cave_v1d5": {
+    "name": "\"Martello di ghiaccio gigante\"",
+    "category": "Sorpresa",
+    "group": "Sorpresa",
+    "levels": {
+      "1": {
+        "desc": "Raggiungi la grotta sotterranea chiamata Piccola grotta, nella Foresta innevata.",
+        "completeDesc": "I tuoi sensi affinati hanno individuato uno strumento rompighiaccio nell'ambiente naturale."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_fly": {
+    "name": "\"Trasporto non convenzionale\"",
+    "category": "Sorpresa",
+    "group": "Sorpresa",
+    "levels": {
+      "3": {
+        "desc": "Percorri 10.000 metri usando teleferiche, pedane di rimbalzo e corde.",
+        "completeDesc": "La Dijiang ha intenzione di progettare un dispositivo con cui potrai volare a bassa quota."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_jump_hit": {
+    "name": "\"Protocollo ε: 20,00 m\"",
+    "category": "Sorpresa",
+    "group": "Sorpresa",
+    "levels": {
+      "2": {
+        "desc": "Cadi da un'altezza di almeno 20 metri e colpisci un nemico.",
+        "completeDesc": "Detriti spaziali in caduta libera? No! Siete tu e la tua squadra di operatori e operatrici."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_no_parry": {
+    "name": "\"Il dominio del creatore\"",
+    "category": "Sorpresa",
+    "group": "Sorpresa",
+    "levels": {
+      "3": {
+        "desc": "Completa \"Crisi funesta: Alleikhreos, Chiliarch\" senza usare le Armi di Foundite",
+        "completeDesc": "Nel modo più severo e crudele, il creatore annientò il guerriero del passato."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_open_treasure": {
+    "name": "\"Tributo dell'animaletto\"",
+    "category": "Sorpresa",
+    "group": "Sorpresa",
+    "levels": {
+      "2": {
+        "desc": "Trova il \"tributo\" di Smartie.",
+        "completeDesc": "Che si tratti di spirito di squadra? Di fiducia? Questa piccola creatura ti sta trattando con un occhio di riguardo."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_paralyze": {
+    "name": "\"Senza più segreti\"",
+    "category": "Sorpresa",
+    "group": "Sorpresa",
+    "levels": {
+      "2": {
+        "desc": "Lascia che Nefarith, \"Conquistatrice\" mantenga l'area in stasi e blocchi l'operatore controllato a mezz'aria.",
+        "completeDesc": "Le sue folli ambizioni sono terrificanti, ma hai dato prova del tuo coraggio nella sua morsa di disperazione."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_rebellious": {
+    "name": "\"Abbiamo costruito il bastione meridionale\"",
+    "category": "Sorpresa",
+    "group": "Sorpresa",
+    "levels": {
+      "2": {
+        "desc": "Usa la parata difensiva per intercettare l'attacco in carica della bestia-scure corazzata.",
+        "completeDesc": "Nonostante tutto, la bestia-scure corazzata non ha voluto voltarsi. Peccato."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_root": {
+    "name": "\"Indugiare sulla gloria sfiorita\"",
+    "category": "Sorpresa",
+    "group": "Sorpresa",
+    "levels": {
+      "1": {
+        "desc": "Esplora la base della colonna Tianshi di tipo C.",
+        "completeDesc": "Hai raccolto il \"bocciolo\" non ancora sbocciato dalla struttura di xiranite della colonna Tianshi dell'area dei test. Sei testimone di una visione di rinascita oltre la senescenza."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_ruanyi": {
+    "name": "\"Viandante dei reami della morte\"",
+    "category": "Sorpresa",
+    "group": "Sorpresa",
+    "levels": {
+      "2": {
+        "desc": "Mentre Ruan Yi è Furente, mantieni il suo Tocco indebolente attivo per almeno 60 s.",
+        "completeDesc": "Con rami avvizziti ha intrecciato un regno di morte, eppure tu l'hai attraversato indenne."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_slime": {
+    "name": "\"Battaglia dei quattro imperatori\"",
+    "category": "Sorpresa",
+    "group": "Sorpresa",
+    "levels": {
+      "2": {
+        "desc": "Calcia 4 origilumache finché non cadono.",
+        "completeDesc": "Hai aiutato quattro origilumache a trasferirsi."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_waterwheel_top": {
+    "name": "\"L'acqua scorre dal cielo\"",
+    "category": "Sorpresa",
+    "group": "Sorpresa",
+    "levels": {
+      "2": {
+        "desc": "Raggiungi la cima della ruota idraulica della Palizzata di Qingbo.",
+        "completeDesc": "Hai raggiunto la cima della ruota idraulica della Palizzata di Qingbo e assistito allo spettacolo dell'acqua che \"si riversa a cascata dai cieli\"."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_aglina": {
+    "name": "\"Lettera da una messaggera\"",
+    "category": "Capitolo",
+    "group": "Missioni esplorazione",
+    "levels": {
+      "2": {
+        "desc": "Completa la missione secondaria [Lettera da una messaggera].",
+        "completeDesc": "Qualche commissione da sbrigare e alcuni pacchetti da consegnare. \nL'hai incontrata al tramonto. I dolci ricordi e i momenti passati insieme saranno doni con cui riempirà la sua lettera vuota."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_camille": {
+    "name": "\"Ballata macabra\"",
+    "category": "Capitolo",
+    "group": "Missioni esplorazione",
+    "levels": {
+      "2": {
+        "desc": "Completa la missione secondaria [Ballata macabra].",
+        "completeDesc": "L'inseguimento, l'odore del sangue fresco e una vecchia ferita ancora dolorante... Camille ha giurato che il suo sangue sarà per sempre legato all'Endministrator."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e0m2": {
+    "name": "\"Risveglio\"",
+    "category": "Capitolo",
+    "group": "Missione principale",
+    "levels": {
+      "3": {
+        "desc": "Completa la missione principale [Prologo: Operazione risveglio].",
+        "completeDesc": "Hai fatto ritorno su Talos-II."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e10m3": {
+    "name": "\"Seguendo la corrente\"",
+    "category": "Capitolo",
+    "group": "Missione principale",
+    "levels": {
+      "3": {
+        "desc": "Completa la missione principale [Capitolo Ⅱ - Elaborazione Ⅵ: Fondamenta già gettate].",
+        "completeDesc": "Zhuang Fangyi ha atteso, e finalmente l'hai raggiunta."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e11m1": {
+    "name": "\"Un sigillo sospeso\"",
+    "category": "Capitolo",
+    "group": "Missione principale",
+    "levels": {
+      "3": {
+        "desc": "Completa la missione principale [Capitolo Ⅱ - Elaborazione Ⅶ: Valorosa avanzata tra venti avversi].",
+        "completeDesc": "Ora puoi guardare in faccia l'oblio. Sebbene sia stato sigillato per molti anni, è ancora l'autentica manifestazione della disperazione."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e11m3": {
+    "name": "\"Dialogo di spade\"",
+    "category": "Capitolo",
+    "group": "Missione principale",
+    "levels": {
+      "3": {
+        "desc": "Dì addio a un istruttore dell'Accademia Tanjian",
+        "completeDesc": "Ha compreso. I vivi dedicano il loro impegno alle lame."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e11m4": {
+    "name": "\"Legame col passato\"",
+    "category": "Capitolo",
+    "group": "Missione principale",
+    "levels": {
+      "3": {
+        "desc": "Oltrepassa il baratro con un ponte di xiranite",
+        "completeDesc": "Un ponte di xiranite collega il presente e il passato. La strada ora è aperta per te."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e11m5": {
+    "name": "\"Figlio della speranza\"",
+    "category": "Capitolo",
+    "group": "Missione principale",
+    "levels": {
+      "3": {
+        "desc": "Completa la missione principale [Capitolo Ⅱ - Elaborazione Ⅶ: Il cauto ritorno della guardiana vagabonda].",
+        "completeDesc": "Dolcemente, il suo cuore è rimasto a galla nelle paludi della morte... fino al luogo in cui la speranza germoglierà e crescerà."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e11m7": {
+    "name": "\"La chiusura della ferita sanguinante\"",
+    "category": "Capitolo",
+    "group": "Missione principale",
+    "levels": {
+      "3": {
+        "desc": "Completa la missione principale [Capitolo II - Elaborazione VII: Ritorno a casa].",
+        "completeDesc": "La ferita sanguinante smetterà di far male."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e1m2": {
+    "name": "\"Nucleus ex machina\"",
+    "category": "Capitolo",
+    "group": "Missione principale",
+    "levels": {
+      "3": {
+        "desc": "Evoca il frutto di una grande scoperta tecnologica.",
+        "completeDesc": "Il futuro dello sviluppo della frontiera è giunto a Valle IV."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e1m8": {
+    "name": "\"Il Pugno manca il bersaglio\"",
+    "category": "Capitolo",
+    "group": "Missione principale",
+    "levels": {
+      "3": {
+        "desc": "Completa la missione principale [Capitolo I - Elaborazione I: Resa dei conti al Forte].",
+        "completeDesc": "Hai sconfitto il \"Pugno spaccaossa\". \nAccogliere l'Æther e inaugurare un nuovo futuro? Che ne pensi delle parole di Nefarith?"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e2m1": {
+    "name": "\"I rifugiati si ribellano?!\"",
+    "category": "Capitolo",
+    "group": "Missione principale",
+    "levels": {
+      "3": {
+        "desc": "Assisti a un attacco.",
+        "completeDesc": "Hai assistito a un'esplosione inaspettata. \nA quanto pare, la Centrale elettrica non è poi così ben difesa."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e2m8": {
+    "name": "\"Frammenti della stella distrutta\"",
+    "category": "Capitolo",
+    "group": "Missione principale",
+    "levels": {
+      "3": {
+        "desc": "Completa la missione principale [Capitolo I - Elaborazione III: Culla dei secoli].",
+        "completeDesc": "Hai sconfitto un Aggelos parzialmente rianimato di dimensioni mastodontiche."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e3m5": {
+    "name": "\"Spaccature sigillate\"",
+    "category": "Capitolo",
+    "group": "Missione principale",
+    "levels": {
+      "3": {
+        "desc": "Completa la missione principale [Capitolo I - Elaborazione IV: Ceneri senza tempo].",
+        "completeDesc": "Tu e la tua squadra avete combattuto duramente per sigillare la spaccatura che stava per divorare tutta Valle IV."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e4m1": {
+    "name": "\"Segni ricorrenti di un cattivo presagio\"",
+    "category": "Capitolo",
+    "group": "Missione principale",
+    "levels": {
+      "3": {
+        "desc": "Completa la missione principale [Intervallo: L'assemblea dei quattro].",
+        "completeDesc": "Sta accadendo qualcosa di strano su Talos-II. Il tuo viaggio non è ancora giunto alla sua conclusione."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e6m1": {
+    "name": "\"Prima visita a Wuling\"",
+    "category": "Capitolo",
+    "group": "Missione principale",
+    "levels": {
+      "3": {
+        "desc": "Raggiungi una nuova città.",
+        "completeDesc": "Hai raggiunto Wuling City."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e7m4": {
+    "name": "\"Affogamento\"",
+    "category": "Capitolo",
+    "group": "Missione principale",
+    "levels": {
+      "3": {
+        "desc": "Completa la missione principale [Capitolo II - Elaborazione III: Sgorgare da una fonte avvizzita].",
+        "completeDesc": "Una promessa e una scelta.\nLe vecchie usanze sono sprofondate sotto increspature cristalline, ma dov'è il nuovo sentiero che dovranno seguire queste persone?"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e8m4": {
+    "name": "\"L'ultimo signore che ho servito\"",
+    "category": "Capitolo",
+    "group": "Missione principale",
+    "levels": {
+      "3": {
+        "desc": "Separati da Ardashir in un determinato punto chiave.",
+        "completeDesc": "Ardashir ti guarda. Vede ciò che tu non puoi vedere, visioni che hai dimenticato."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e9m3": {
+    "name": "\"La caduta della conquistatrice\"",
+    "category": "Capitolo",
+    "group": "Missione principale",
+    "levels": {
+      "3": {
+        "desc": "Completa la missione principale [Capitolo Ⅱ - Elaborazione Ⅴ: La battaglia della colonna principale].",
+        "completeDesc": "È una conquistatrice il cui cuore ardeva d'ambizione, disposta a sacrificare decine di migliaia di vite pur di riuscire a scorgere il regno proibito. Hai distrutto la malvagità di Nefarith."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_gm02m22": {
+    "name": "\"Il destino sotto la neve\"",
+    "category": "Capitolo",
+    "group": "Missioni esplorazione",
+    "levels": {
+      "1": {
+        "desc": "Completa le missioni secondarie [Illuminazione del destino] e [L'impresa di una vita].",
+        "completeDesc": "Una sacerdotessa delle nevi ha lasciato i suoi scritti e la sua risoluzione... e ha permesso che la neve seppellisse il suo destino. Ma una ragazza gentile e determinata l'ha spazzata via e ha svelato la sua sorte finale."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_gm02m27": {
+    "name": "\"Lascia che Suiming illumini la strada\"",
+    "category": "Capitolo",
+    "group": "Missioni esplorazione",
+    "levels": {
+      "2": {
+        "desc": "Completa la missione secondaria [Campana del ricordo].",
+        "completeDesc": "La campana suona di nuovo, il mio cuore insegue ancora una volta l'illuminazione."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_laevat": {
+    "name": "\"Che il fuoco consumi il passato cinereo\"",
+    "category": "Capitolo",
+    "group": "Missioni esplorazione",
+    "levels": {
+      "2": {
+        "desc": "Completa la missione secondaria [Che il fuoco consumi il passato cinereo].",
+        "completeDesc": "Le cicatrici dei ricordi possono mutare nel fuoco. \nAnche se i frammenti del passato formano cumuli alti come imponenti montagne, hai preso per mano Laevatain e hai abbandonato il corridoio senza fine."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_liino": {
+    "name": "\"Come una stella senza confini\"",
+    "category": "Capitolo",
+    "group": "Missioni esplorazione",
+    "levels": {
+      "2": {
+        "desc": "Completa la missione secondaria [Come una stella senza confini].",
+        "completeDesc": "Endfield Industries avrà finalmente l'idol ufficiale... Dobbiamo dare il via alle prove, le esibizioni e... Oh cielo, ci sono davvero troppe cose da fare."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_mifu": {
+    "name": "\"Una serie di riflessioni\"",
+    "category": "Capitolo",
+    "group": "Missioni esplorazione",
+    "levels": {
+      "2": {
+        "desc": "Completa la missione secondaria [Una serie di riflessioni].",
+        "completeDesc": "I loro pugni mettono alla prova la mia determinazione, ma il mio Qi squarcia la terra e sfida il potere stesso del tuono."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_typhoea": {
+    "name": "\"Un sogno d'inverno tra le nebbie del bosco\"",
+    "category": "Capitolo",
+    "group": "Missioni esplorazione",
+    "levels": {
+      "2": {
+        "desc": "Completa la missione secondaria [Un sogno d'inverno tra le nebbie del bosco].",
+        "completeDesc": "Hai seguito lo sguardo indagatore, rintracciato la freccia guida, resistito ai venti gelidi tra nebbia e sogni... e udito i Suoi echi nella Foresta innevata."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_wolfgd": {
+    "name": "\"Lupo solitario\"",
+    "category": "Capitolo",
+    "group": "Missioni esplorazione",
+    "levels": {
+      "2": {
+        "desc": "Completa la missione secondaria [Lupo solitario].",
+        "completeDesc": "Wulfgard ha scoperto la verità e giustiziato il traditore. \nHa conficcato il pugnale a terra, davanti alla tomba... Il Branco è cambiato. Ora sa cosa deve fare."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_wulfa": {
+    "name": "\"La cavaliera rossa\"",
+    "category": "Capitolo",
+    "group": "Missioni esplorazione",
+    "levels": {
+      "2": {
+        "desc": "Completa la missione secondaria [La cavaliera rossa].",
+        "completeDesc": "Quando giunsero nel regno dei bambini, i viandanti si fermarono per riposarsi.\nChi è che ricorda le ginocchia sbucciate negli anni ormai dimenticati dell'infanzia?"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_yvonne": {
+    "name": "\"Amore, urla e il prototipo\"",
+    "category": "Capitolo",
+    "group": "Missioni esplorazione",
+    "levels": {
+      "2": {
+        "desc": "Completa la missione secondaria [Amore, urla e il prototipo].",
+        "completeDesc": "Una cassa di vernice è arrivata in ritardo. \nHai seguito il percorso lasciato da Tata e realizzato svariati graffiti. In questi colori, Yvonne ha visto il potenziale della riconciliazione."
+      }
+    },
+    "plating": null
+  },
+  "achv_side_mission_count": {
+    "name": "Altruismo vero",
+    "category": "Capitolo",
+    "group": "Missioni esplorazione",
+    "levels": {
+      "1": {
+        "desc": "Completa 30 missioni di esplorazione.",
+        "completeDesc": "Hai aiutato svariate persone a risolvere i loro problemi."
+      },
+      "2": {
+        "desc": "Completa 40 missioni di esplorazione.",
+        "completeDesc": "Hai aiutato svariate persone a risolvere i loro problemi. \nNon hai sempre dovuto ricorrere alla violenza per farlo e i tuoi obiettivi sono ben più nobili di un semplice compenso monetario."
+      },
+      "3": {
+        "desc": "Completa 50 missioni di esplorazione.",
+        "completeDesc": "Hai aiutato svariate persone a risolvere i loro problemi. \nColoro che hanno beneficiato del tuo supporto aiuteranno altri a loro volta. La gente di Talos-II deve imparare a sostenersi a vicenda."
+      }
+    },
+    "plating": null
+  },
+  "achv_social_building": {
+    "name": "Indispensabile",
+    "category": "Sociale",
+    "group": "Sociale",
+    "levels": {
+      "1": {
+        "desc": "Sono state eseguite 50 riparazioni sulla struttura condivisa.",
+        "completeDesc": "La tua struttura è stata riparata qualche volta."
+      },
+      "2": {
+        "desc": "Sono state eseguite 200 riparazioni sulla struttura condivisa.",
+        "completeDesc": "La tua struttura è stata riparata molte volte."
+      },
+      "3": {
+        "desc": "Sono state eseguite 500 riparazioni sulla struttura condivisa.",
+        "completeDesc": "La tua struttura è stata riparata moltissime volte. \nOrmai è chiaro: hai aiutato molte persone e queste si sono affezionate alle tue strutture. Hanno fatto tutto ciò che era in loro potere per mantenere in funzione quei macchinari."
+      }
+    },
+    "plating": null
+  },
+  "achv_social_spaceship_be_helped": {
+    "name": "Ausili graditi",
+    "category": "Sociale",
+    "group": "Sociale",
+    "levels": {
+      "2": {
+        "desc": "Ricevi 100 ausili alla produzione dai tuoi amici.",
+        "completeDesc": "Le strutture di produzione che hai posizionato a bordo della Dijiang stanno lavorando a pieno regime grazie al prezioso aiuto dei tuoi amici."
+      }
+    },
+    "plating": null
+  },
+  "achv_social_spaceship_help": {
+    "name": "Aiutante altruista",
+    "category": "Sociale",
+    "group": "Sociale",
+    "levels": {
+      "1": {
+        "desc": "Fornisci 50 ausili alla produzione ai tuoi amici.",
+        "completeDesc": "Hai generosamente fornito degli ausili alla produzione ai tuoi amici. \nÈ grazie al tuo altruismo se Talos-II può prosperare."
+      }
+    },
+    "plating": null
+  },
+  "achv_social_spaceship_info_exchange": {
+    "name": "Fonte di indizi",
+    "category": "Sociale",
+    "group": "Sociale",
+    "levels": {
+      "1": {
+        "desc": "Partecipa a un totale di 50 scambi di indizi.",
+        "completeDesc": "Hai effettuato un certo numero di scambi di indizi. \nIl mondo cresce grazie alla tua visione e alle informazioni che hai raccolto."
+      }
+    },
+    "plating": null
+  }
+}

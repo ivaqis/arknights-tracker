@@ -54,6 +54,7 @@ export class GetUserProfile extends Controller<
         return {
             publicUid: record.publicUid.initValue,
             isPrivate: record.isPrivate.initValue,
+            hideUid: record.hideUid.initValue,
             avatarId: record.avatarId.initValue,
             backgroundId: record.backgroundId.initValue,
             gameProfiles: this.getGameProfiles(gameProfiles, contractRecords, pullsStats)

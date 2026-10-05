@@ -391,6 +391,7 @@
     "equipmentType": "Equipment Type",
     "gearTemplate": "Gear Template",
     "blueprintLocation": "Gear template location",
+    "currentlyUnavailable": "Currently Unavailable",
     "addedInVersion": "Added in version {version}"
   },
   "status": {
@@ -459,7 +460,25 @@
     "leaderboard": "Leaderboard",
     "profile": "Profile",
     "icons": "Icons",
-    "food": "Food"
+    "food": "Food",
+    "achievements": "Achievements"
+  },
+  "achievements": {
+    "of": "of",
+    "onlyIncomplete": "Only incomplete",
+    "allVersions": "All versions",
+    "searchPlaceholder": "Search...",
+    "empty": "No achievements found",
+    "sync": "Sync",
+    "syncModalTitle": "Sync Achievements",
+    "selectAccount": "Select Account:",
+    "syncAction": "Sync",
+    "syncSuccess": "Achievements synced: {count}",
+    "syncNothingToUpdate": "All achievements are already up to date",
+    "notLoggedInDesc": "To sync achievements, you must log in and link your in-game profile.",
+    "noAccountsDesc": "No in-game accounts linked to your profile. Link an account on the Profile page.",
+    "noMedalsInProfile": "No achievements found in the selected game account",
+    "syncWarningProgress": "Syncing achievements with your in-game profile will reset your current achievement progress."
   },
   "events": {
     "type": {
@@ -1338,7 +1357,13 @@
     "nextWeek": "Next Week",
     "fullCalendar": "Full Calendar",
     "arsenalExchange": "Arsenal Exchange",
-    "arsenalExchangeWarning": "Data is based on the Chinese weapon rotation file and may be inaccurate"
+    "arsenalExchangeWarning": "Data is based on the Chinese weapon rotation file and may be inaccurate",
+    "gameUpdate": "Game Update",
+    "maintenanceInProgress": "Maintenance in progress",
+    "updateExpected": "Expected",
+    "versionLabel": "Version {version}",
+    "goToChangelog": "Changelog",
+    "currentGameVersion": "Current game version: {version}"
   },
   "characters": {
     "catcher": "Catcher",
@@ -2663,6 +2688,7 @@
     "sync_subtitle": "Integrating with Google links your account to Firebase, enabling gacha synchronization and leaderboard participation",
     "sync_btn": "Sign In with Google",
     "update_btn": "Sync",
+    "syncing": "Syncing...",
     "update_hint": "Update your game roster and clear times from Endfield servers",
     "overview": "Overview",
     "operators_count": "Operators",
@@ -2702,6 +2728,7 @@
     "delete_confirm": "Delete this saved token?",
     "settings_title": "Profile Settings",
     "settings_hide_data": "Hide account details on leaderboard",
+    "settings_hide_uid": "Hide account UIDs",
     "settings_primary_account": "Link Pulls Account",
     "settings_primary_account_none": "None",
     "bind_to_view_luck": "Bind a game account in settings to view your luck statistics",
@@ -2717,7 +2744,7 @@
     "image_size_error": "Image is too small. Minimum resolution is 128x128 pixels",
     "crop_avatar_title": "Crop Avatar",
     "avatar_success": "Avatar updated successfully",
-    "no_connected_accounts": "No connected game accounts. Sync your account using the Update button above",
+    "no_connected_accounts": "No connected game accounts. Sync your account using the Sync button above.",
     "edit_nickname": "Edit nickname",
     "copy_profile_link": "Copy profile link",
     "share": "Share",
@@ -2783,7 +2810,8 @@
     "token_already_used": "This token has already been used",
     "token_expired_badge": "Expired",
     "banner_profile_not_found": "Banner profile not found",
-    "private_id_not_found": "Pulls private key not found. Please import pulls for this account on this device first"
+    "private_id_not_found": "Pulls private key not found. Please import pulls for this account on this device first",
+    "max_profiles_reached": "Maximum number of linked profiles is 3"
   },
   "contractTagNames": {
     "activity_contract_tag_201": "Ambient: Overclock",
@@ -2887,7 +2915,8 @@
     "indie_group_h03": "Inorganic Construct",
     "indie_group_h04": "Turbidity Manifest",
     "indie_group_h05": "Those Forsaken by the Land",
-    "indie_group_h06": "Howlers of the Crag"
+    "indie_group_h06": "Howlers of the Crag",
+    "indie_group_h07": "Marked by Dark Shadows"
   },
   "equipmentScriptNames": {
     "xiraniteTechnique": "Xiranite Technique",
@@ -3343,6 +3372,36 @@
       "param1": "Damage Type",
       "param2": "% of Max HP"
     }
+  },
+  "achCategories": {
+    "achv_type_adventure": "Regional",
+    "achv_type_battle": "Technical",
+    "achv_type_event": "Event",
+    "achv_type_factory": "Construction",
+    "achv_type_growth": "Progression",
+    "achv_type_hide": "Wondrous",
+    "achv_type_quest": "Chapter",
+    "achv_type_social": "Social"
+  },
+  "achGroups": {
+    "achv_group_adv_tundra": "Valley",
+    "achv_group_adv_wuling": "Wuling",
+    "achv_group_bat_skill": "Combat Technique",
+    "achv_group_bat_dung": "Protocol Space",
+    "achv_group_fac_factory": "AIC Factory",
+    "achv_group_fac_spaceship": "Dijiang",
+    "achv_group_quest_main": "Main Mission",
+    "achv_group_quest_side": "Exploration Mission",
+    "achv_group_event_default": "Event",
+    "achv_group_growth_default": "Progression",
+    "achv_group_hide_default": "Wondrous",
+    "achv_group_social_default": "Social"
+  },
+  "achLevels": {
+    "source": "Source",
+    "reforging2": "Reforging Ⅱ",
+    "reforging3": "Reforging Ⅲ",
+    "trimming": "Trimming"
   },
   "usableTitle": {
     "targetType": "Target Type"

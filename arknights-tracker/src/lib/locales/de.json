@@ -345,7 +345,8 @@
     "blueprintLocation": "Ausrüstungsvorlagen-Standort",
     "rewards": "Belohnungen",
     "dayN": "Tag {n}",
-    "addedInVersion": "Hinzugefügt in Version {version}"
+    "addedInVersion": "Hinzugefügt in Version {version}",
+    "currentlyUnavailable": "Derzeit nicht verfügbar."
   },
   "status": {
     "won": "Gewonnen 50:50",
@@ -412,7 +413,8 @@
     "openRecipe": "Rezepte öffnen",
     "leaderboard": "Bestenliste",
     "profile": "Profil",
-    "icons": "Icons"
+    "icons": "Icons",
+    "achievements": "Erfolge"
   },
   "events": {
     "type": {
@@ -1161,7 +1163,13 @@
     "currentWeek": "Diese Woche",
     "nextWeek": "Nächste Woche",
     "fullCalendar": "Vollständiger Kalender",
-    "arsenalExchangeWarning": "Die Daten basieren auf der chinesischen Waffenrotationsdatei und sind möglicherweise nicht genau"
+    "arsenalExchangeWarning": "Die Daten basieren auf der chinesischen Waffenrotationsdatei und sind möglicherweise nicht genau",
+    "gameUpdate": "Spiel-Update",
+    "maintenanceInProgress": "Wartungsarbeiten laufen",
+    "updateExpected": "Erwartet",
+    "versionLabel": "Version {version}",
+    "goToChangelog": "Changelog",
+    "currentGameVersion": "Aktuelle Spielversion: {version}"
   },
   "characters": {
     "catcher": "Catcher",
@@ -2524,6 +2532,7 @@
     "delete_confirm": "Dieses gespeicherte Token löschen?",
     "settings_title": "Profileinstellungen",
     "settings_hide_data": "Kontodetails auf der Bestenliste verbergen",
+    "settings_hide_uid": "Konto-UIDs verbergen",
     "settings_primary_account": "Ziehungen-Konto verknüpfen",
     "settings_primary_account_none": "Keines",
     "bind_to_view_luck": "Verknüpfe ein Spielkonto in den Einstellungen, um deine Glücksstatistiken zu sehen.",
@@ -2539,7 +2548,7 @@
     "image_size_error": "Bild ist zu klein. Mindestauflösung ist 128x128 Pixel.",
     "crop_avatar_title": "Avatar zuschneiden",
     "avatar_success": "Avatar erfolgreich aktualisiert!",
-    "no_connected_accounts": "Keine verbundenen Spielkonten. Synchronisiere dein Konto mit der Aktualisieren-Schaltfläche oben.",
+    "no_connected_accounts": "Keine verbundenen Spielkonten. Synchronisiere dein Konto mit der Schaltfläche oben.",
     "edit_nickname": "Spitznamen bearbeiten",
     "copy_profile_link": "Profillink kopieren",
     "link_copied": "Link in die Zwischenablage kopiert!",
@@ -2605,7 +2614,9 @@
     "token_already_used": "Dieser Token wurde bereits verwendet",
     "token_expired_badge": "Abgelaufen",
     "unauthorized": "Nicht autorisiert",
-    "user_not_found": "Benutzer nicht gefunden"
+    "user_not_found": "Benutzer nicht gefunden",
+    "syncing": "Synchronisieren...",
+    "max_profiles_reached": "Die maximale Anzahl verknüpfter Profile beträgt 3"
   },
   "contractTagNames": {
     "activity_contract_tag_201": "Umgebung: Übertakten",
@@ -2709,7 +2720,8 @@
     "indie_group_h03": "Anorganisches Konstrukt",
     "indie_group_h04": "Trübungsverzeichnis",
     "indie_group_h05": "Die vom Land Verstoßenen",
-    "indie_group_h06": "Heuler der Klippe"
+    "indie_group_h06": "Heuler der Klippe",
+    "indie_group_h07": "Durch Dunkle Schatten markiert"
   },
   "equipmentScriptNames": {
     "xiraniteTechnique": "Xiranit-Technik",
@@ -2828,5 +2840,52 @@
     "gas_env_wet": "Feuchte UMW",
     "gas_env_acidic": "Acrid-UMW",
     "gas_env_xiranite": "Xiranit-UMW"
+  },
+  "achCategories": {
+    "achv_type_adventure": "Regional",
+    "achv_type_battle": "Technisch",
+    "achv_type_event": "Event",
+    "achv_type_factory": "Bauen",
+    "achv_type_growth": "Fortschritt",
+    "achv_type_hide": "Wundersam",
+    "achv_type_quest": "Kapitel",
+    "achv_type_social": "Sozial"
+  },
+  "achGroups": {
+    "achv_group_adv_tundra": "Tal",
+    "achv_group_adv_wuling": "Wuling",
+    "achv_group_bat_skill": "Kampftechnik",
+    "achv_group_bat_dung": "Protokoll-Dimension",
+    "achv_group_fac_factory": "AIK-Fabrik",
+    "achv_group_fac_spaceship": "Dijiang",
+    "achv_group_quest_main": "Hauptmission",
+    "achv_group_quest_side": "Erkundungsmission",
+    "achv_group_event_default": "Event",
+    "achv_group_growth_default": "Fortschritt",
+    "achv_group_hide_default": "Wundersam",
+    "achv_group_social_default": "Sozial"
+  },
+  "achievements": {
+    "of": "von",
+    "onlyIncomplete": "Nur unvollständig",
+    "allVersions": "Alle Versionen",
+    "searchPlaceholder": "Suchen...",
+    "empty": "Keine Erfolge gefunden",
+    "sync": "Synchronisieren",
+    "syncModalTitle": "Erfolge synchronisieren",
+    "selectAccount": "Konto auswählen:",
+    "syncAction": "Synchronisieren",
+    "syncSuccess": "Erfolge synchronisiert: {count}",
+    "syncNothingToUpdate": "Alle Erfolge sind bereits auf dem neuesten Stand",
+    "notLoggedInDesc": "Um Erfolge zu synchronisieren, musst du dich anmelden und dein Spielprofil verknüpfen.",
+    "noAccountsDesc": "Keine Spielkonten mit deinem Profil verknüpft. Verknüpfe ein Konto auf der Profilseite.",
+    "noMedalsInProfile": "Keine Erfolge im ausgewählten Spielkonto gefunden",
+    "syncWarningProgress": "Das Synchronisieren der Erfolge mit dem Spielprofil setzt den aktuellen Fortschritt zurück."
+  },
+  "achLevels": {
+    "source": "Quelle",
+    "reforging2": "Umschmieden II",
+    "reforging3": "Umschmieden III",
+    "trimming": "Umgestaltung"
   }
 }

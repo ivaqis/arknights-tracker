@@ -3,6 +3,7 @@ export interface UserEntity {
     publicUid: string,
     firebaseUid: string | null,
     isPrivate: boolean,
+    hideUid: boolean,
     avatarId: string | null,
     backgroundId: string | null,
     displayAvatar: boolean,

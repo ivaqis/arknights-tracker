@@ -27,6 +27,7 @@ export class CreateUserProfile extends Controller<
 
     private readonly _uid: string;
     private readonly _isPrivate: boolean;
+    private readonly _hideUid?: boolean;
     private readonly _avatarImage: string | null;
     private readonly _filename: string | null;
     private readonly _backgroundId: string | null;
@@ -36,6 +37,7 @@ export class CreateUserProfile extends Controller<
 
         this._uid = req.body.publicUid;
         this._isPrivate = req.body.isPrivate;
+        this._hideUid = req.body.hideUid;
         this._avatarImage = req.body.avatarImage;
         this._filename = req.body.filename;
         this._backgroundId = req.body.backgroundId;
@@ -113,6 +115,7 @@ export class CreateUserProfile extends Controller<
         const profile = await this._database.users.createUser(this._uid, firebaseUid);
 
         profile.isPrivate.value = this._isPrivate;
+        profile.hideUid.value = this._hideUid !== undefined ? this._hideUid : true;
         profile.avatarId.value = avatarId;
         profile.backgroundId.value = this._backgroundId;
 
