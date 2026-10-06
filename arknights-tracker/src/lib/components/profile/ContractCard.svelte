@@ -38,8 +38,8 @@
             <!-- svelte-ignore a11y-click-events-have-key-events -->
             <!-- svelte-ignore a11y-no-static-element-interactions -->
             <div class="absolute top-1 right-1 z-30" on:click|stopPropagation|preventDefault>
-                <Tooltip text="P{Math.max(1, (char.potential || 1)) - 1}">
-                    <PotentialIcon pot={Math.max(0, (char.potential || 1) - 1)} size={32} />
+                <Tooltip text="P{char.potential ?? char.potentialLevel ?? 0}">
+                    <PotentialIcon pot={char.potential ?? char.potentialLevel ?? 0} size={32} />
                 </Tooltip>
             </div>
 

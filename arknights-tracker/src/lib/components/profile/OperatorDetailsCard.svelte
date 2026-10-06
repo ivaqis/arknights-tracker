@@ -1048,8 +1048,10 @@
                                         </h3>
                                     </div>
 
-                                    <Tooltip text="P{Math.max(1, (selectedChar.potential || 1)) - 1}">
-                                        <PotentialIcon pot={Math.max(0, (selectedChar.potential || 1) - 1)} size={50} className="ml-1 pt-2" />
+                                    <Tooltip text="P{selectedChar?.potential ?? selectedChar?.potentialLevel ?? 0}">
+                                        <div class="h-10 flex items-center justify-center shrink-0 pt-6">
+                                            <PotentialIcon pot={selectedChar?.potential ?? selectedChar?.potentialLevel ?? 0} size={64} />
+                                        </div>
                                     </Tooltip>
                                 </div>
 

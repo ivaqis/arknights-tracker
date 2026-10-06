@@ -952,8 +952,8 @@
                                                     {@const opData = getOperatorData(char)}
                                                     {@const wpnData = getWeaponData(char.weapon)}
                                                     {@const wpnRarity = wpnData?.rarity || char.weapon?.rarity || 4}
-                                                    {@const charPot = char.potential !== undefined ? char.potential : (char.potentialLevel !== undefined ? char.potentialLevel + 1 : null)}
-                                                    <Tooltip text={`${getOperatorName(opData)} (LV. ${char.level || 1}${charPot ? ` • P${charPot}` : ''})${char.weapon ? ` • ${getWeaponName(wpnData, char.weapon)}` : ''}`}>
+                                                    {@const charPot = char.potential ?? char.potentialLevel ?? 0}
+                                                    <Tooltip text={`${getOperatorName(opData)} (LV. ${char.level || 1} • P${charPot})${char.weapon ? ` • ${getWeaponName(wpnData, char.weapon)}` : ''}`}>
                                                         <div class="relative shrink-0">
                                                             <div class="w-10 h-12 -skew-x-12 overflow-hidden rounded-[3px] border border-gray-200 dark:border-white/15 bg-gray-100 dark:bg-white/5 relative shrink-0">
                                                                 <div class="w-full h-full skew-x-12 scale-125">
