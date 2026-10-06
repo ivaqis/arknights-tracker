@@ -1,0 +1,2086 @@
+{
+  "achv_adv_tundra_box": {
+    "name": "Pembuka Kerat Lembah",
+    "category": "Regional",
+    "group": "Lembah",
+    "levels": {
+      "1": {
+        "desc": "Di Lembah IV, buka 120 kerat",
+        "completeDesc": "Kamu berhasil membuka sejumlah kerat penyimpanan di Lembah IV."
+      },
+      "2": {
+        "desc": "Di Lembah IV, buka 180 kerat",
+        "completeDesc": "Kamu berhasil membuka sebagian besar kerat penyimpanan di Lembah IV."
+      },
+      "3": {
+        "desc": "Di Lembah IV, buka 288 kerat",
+        "completeDesc": "Tak ada kerat penyimpanan di Lembah IV yang bisa lolos darimu! \nSuara kunci yang terbuka sungguh memuaskan."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_tundra_campfire": {
+    "name": "Penambat Lembah",
+    "category": "Regional",
+    "group": "Lembah",
+    "levels": {
+      "1": {
+        "desc": "Di Lembah IV, buka 14 Titik TP",
+        "completeDesc": "Kamu telah mengambil langkah awal untuk membangkitkan Jaringan Protokol di Lembah IV."
+      },
+      "2": {
+        "desc": "Di Lembah IV, buka 28 Titik TP",
+        "completeDesc": "Kamu berhasil sepenuhnya membangun Jaringan Protokol di Lembah IV."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_tundra_documents": {
+    "name": "Penyelidik Lembah",
+    "category": "Regional",
+    "group": "Lembah",
+    "levels": {
+      "2": {
+        "desc": "Di Lembah IV, kumpulkan 4 Laporan Penyelidikan (LP)",
+        "completeDesc": "Setiap penemuan sangatlah penting. Kamu menemukan berbagai intel yang tersebar di seluruh Lembah IV."
+      },
+      "3": {
+        "desc": "Di Lembah IV, kumpulkan 6 Laporan Penyelidikan (LP)",
+        "completeDesc": "Setiap penemuan sangatlah penting. Matamu yang tajam telah menemukan berbagai intel yang tersebar di seluruh Lembah IV. \nPotongan surat kabar, halaman majalah .... Hal penting sering tersembunyi di tempat dan detail tak terduga."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_tundra_ether": {
+    "name": "“Fragmen Terkumpul Kembali”",
+    "category": "Regional",
+    "group": "Lembah",
+    "levels": {
+      "1": {
+        "desc": "Di Lembah IV, kumpulkan 80 Aurylene",
+        "completeDesc": "Fragmen artefak purba yang hilang telah terkumpul kembali di tanganmu."
+      },
+      "2": {
+        "desc": "Di Lembah IV, kumpulkan 120 Aurylene",
+        "completeDesc": "Fragmen artefak purba yang hilang telah terkumpul kembali di tanganmu. \nSerpihan kejayaan yang kini telah memudar."
+      },
+      "3": {
+        "desc": "Di Lembah IV, kumpulkan 166 Aurylene",
+        "completeDesc": "Fragmen artefak purba yang hilang telah terkumpul kembali di tanganmu. \nIni adalah simbol tujuan akhir dan sekaligus harapan serta impian kita."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_tundra_fixablerobot": {
+    "name": "“Penyelamat DELTA”",
+    "category": "Regional",
+    "group": "Lembah",
+    "levels": {
+      "1": {
+        "desc": "Di Lembah IV, perbaiki 25 Robot Delta",
+        "completeDesc": "Kami telah mengumpulkan dan menerjemahkan sejumlah besar data biner. Pengirimnya tampaknya mengungkapkan rasa terima kasih mereka."
+      },
+      "2": {
+        "desc": "Di Lembah IV, perbaiki 35 Robot Delta",
+        "completeDesc": "Kami telah mengumpulkan dan menerjemahkan sejumlah besar data biner. Pengirimnya tampaknya bersedia mengambil risiko demi kamu."
+      },
+      "3": {
+        "desc": "Di Lembah IV, perbaiki 43 robot Delta",
+        "completeDesc": "Kami telah mengumpulkan dan menerjemahkan sejumlah besar data biner. Pengirimnya tampaknya sangat ingin memberimu gelar ini: “Penyelamat DELTA, Juara Para Robot, dan Dewa Mesin Lembah IV.”"
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_tundra_running": {
+    "name": "“Bahu-membahu Mengantar”",
+    "category": "Regional",
+    "group": "Lembah",
+    "levels": {
+      "1": {
+        "desc": "Di Lembah IV, menangi Lomba Atletik sebanyak 4 kali",
+        "completeDesc": "Beberapa pesaing menduga kamu diam-diam menggunakan teknologi Teleprotokol untuk mencapai garis finis."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_arrow": {
+    "name": "“Tuntunan dari Amma”",
+    "category": "Regional",
+    "group": "Wuling",
+    "levels": {
+      "2": {
+        "desc": "Gunakan panah Typhoeus dan hancurkan semua aksara di Hutan Salju",
+        "completeDesc": "Panah putih yang menembus langit. Berbekal hadiah dari Amma, kamu sudah menghalau semua kepulan kabut."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_balloon": {
+    "name": "Pengangkut Layang",
+    "category": "Regional",
+    "group": "Wuling",
+    "levels": {
+      "1": {
+        "desc": "Di Terusan Yinglung dan Zona Eksklusi Wuling Utara, selesaikan pengangkutan layang sebanyak 26 kali.",
+        "completeDesc": "Langit terbuka menawarkan jalur pengangkutan. Kamu kini telah menguasai cara transportasi yang murah dan efektif."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_blackhole_clean": {
+    "name": "Penetral Retakan",
+    "category": "Regional",
+    "group": "Wuling",
+    "levels": {
+      "3": {
+        "desc": "Di Zona Eksklusi Wuling Utara, netralkan 5 celah sepenuhnya",
+        "completeDesc": "Kamu berhasil menutup celah yang merobek dunia nyata serta luka yang mengoyak jiwa dan roh mereka."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_box_1": {
+    "name": "Pembuka Kerat Wuling Ⅰ",
+    "category": "Regional",
+    "group": "Wuling",
+    "levels": {
+      "3": {
+        "desc": "Buka 227 kerat penyimpanan di Lembah Jingyu dan Kota Wuling",
+        "completeDesc": "Kamu berhasil membuka sejumlah kerat penyimpanan di Wuling."
+      }
+    },
+    "plating": {
+      "desc": "Buka 242 kerat penyimpanan di Lembah Jingyu dan Kota Wuling"
+    }
+  },
+  "achv_adv_wuling_box_2": {
+    "name": "Pembuka Kerat Wuling ⅠI",
+    "category": "Regional",
+    "group": "Wuling",
+    "levels": {
+      "2": {
+        "desc": "Di Kampung Benteng Qingbo, Batu Penanda, Bagian Dalam Batu Penanda, dan Area Uji Coba, buka 121 kerat penyimpanan",
+        "completeDesc": "Kamu berhasil membuka sebagian besar kerat penyimpanan di Wuling."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_box_3": {
+    "name": "Pembuka Kerat Wuling III",
+    "category": "Regional",
+    "group": "Wuling",
+    "levels": {
+      "2": {
+        "desc": "Di Lembah Benteng Pedang, Terusan Yinglung, dan Zona Eksklusi Wuling Utara, buka 151 kerat",
+        "completeDesc": "Kamu berhasil membuka sebagian besar kerat penyimpanan di Wuling dan membuktikan kemampuanmu menemukan simpanan ini."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_bugball": {
+    "name": "“Gol Pakai Siput”",
+    "category": "Regional",
+    "group": "Wuling",
+    "levels": {
+      "2": {
+        "desc": "Tendang 18 Siput Originium ke dalam Lubang Suiming",
+        "completeDesc": "Teknikmu jauh melampaui ilusi-ilusi masa lalu itu. Setiap tendanganmu melesat lurus, tak pernah meleset, dan sangat presisi."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_campfire_1": {
+    "name": "Berpegang pada Wuling Ⅰ",
+    "category": "Regional",
+    "group": "Wuling",
+    "levels": {
+      "1": {
+        "desc": "Buka 19 Titik TP di Lembah Jingyu dan Kota Wuling",
+        "completeDesc": "Kamu telah mengambil langkah awal untuk membangkitkan Jaringan Protokol di Wuling."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_campfire_2": {
+    "name": "Berpegang pada Wuling ⅠI",
+    "category": "Regional",
+    "group": "Wuling",
+    "levels": {
+      "1": {
+        "desc": "Di Kampung Benteng Qingbo, Batu Penanda, Bagian Dalam Batu Penanda, dan Area Uji Coba, buka 19 Titik TP",
+        "completeDesc": "Kamu berhasil membangkitkan kembali Jaringan Protokol di Wuling."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_campfire_3": {
+    "name": "Berpegang pada Wuling III",
+    "category": "Regional",
+    "group": "Wuling",
+    "levels": {
+      "1": {
+        "desc": "Di Lembah Benteng Pedang, Terusan Yinglung, dan Zona Eksklusi Wuling Utara, buka 22 Titik TP",
+        "completeDesc": "Kamu berhasil memperluas Jaringan Protokol hingga ke wilayah Wuling yang lebih dalam."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_clean": {
+    "name": "“Pemurni Kekeruhan”",
+    "category": "Regional",
+    "group": "Wuling",
+    "levels": {
+      "1": {
+        "desc": "Singkirkan semua massa Hawar di Kampung Benteng Qingbo",
+        "completeDesc": "Kamu sudah menyingkirkan semua massa Hawar yang menghalangi di Kampung Benteng Qingbo."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_documents_1": {
+    "name": "Penyelidik Wuling Ⅰ",
+    "category": "Regional",
+    "group": "Wuling",
+    "levels": {
+      "2": {
+        "desc": "Kumpulkan 2 laporan penyelidikan di Lembah Jingyu dan Kota Wuling",
+        "completeDesc": "Setiap penemuan sangatlah penting. Kamu menemukan berbagai intel yang tersebar di seluruh Wuling."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_ether_1": {
+    "name": "“Fragmen Bersatu Kembali” Ⅰ",
+    "category": "Regional",
+    "group": "Wuling",
+    "levels": {
+      "3": {
+        "desc": "Kumpulkan 74 Aurylene di Lembah Jingyu dan Kota Wuling",
+        "completeDesc": "Fragmen artefak purba yang hilang telah kembali terkumpul di tanganmu."
+      }
+    },
+    "plating": {
+      "desc": "Kumpulkan 81 Aurylene di Lembah Jingyu dan Kota Wuling"
+    }
+  },
+  "achv_adv_wuling_ether_2": {
+    "name": "“Fragmen Bersatu Kembali” ⅠI",
+    "category": "Regional",
+    "group": "Wuling",
+    "levels": {
+      "2": {
+        "desc": "Di Kampung Benteng Qingbo, Batu Penanda, Bagian Dalam Batu Penanda, dan Area Uji Coba, kumpulkan 59 Aurylene",
+        "completeDesc": "Makin banyak fragmen artefak purba kembali terkumpul di tanganmu."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_ether_3": {
+    "name": "Fragmen Bersatu Kembali III",
+    "category": "Regional",
+    "group": "Wuling",
+    "levels": {
+      "2": {
+        "desc": "Di Lembah Benteng Pedang, Terusan Yinglung, dan Zona Eksklusi Wuling Utara, kumpulkan 59 Aurylene",
+        "completeDesc": "Banyak fragmen artefak purba yang hilang telah kembali terkumpul di tanganmu. Fragmen-fragmen ini merasakan panggilanmu."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_find_difference": {
+    "name": "Kaleidografer",
+    "category": "Regional",
+    "group": "Wuling",
+    "levels": {
+      "2": {
+        "desc": "Di Terusan Yinglung dan Zona Eksklusi Wuling Utara, selesaikan 8 puzzle Kaleidograf",
+        "completeDesc": "Kamu bisa mengidentifikasi berbagai garis dan simbol dengan jelas. Setiap bagian data menyatu dalam pandanganmu."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_floor_1": {
+    "name": "“Fowlbeast Penari Air”",
+    "category": "Regional",
+    "group": "Wuling",
+    "levels": {
+      "1": {
+        "desc": "Selesaikan 8 tantangan pelat tekanan di Lembah Jingyu dan Kota Wuling",
+        "completeDesc": "Dengan lincah kamu melompat dari satu pelat ke pelat lain dan memulihkan keseimbangan sempurna. \n“Penampilan gaya Fowlbeast Penari Air yang luar biasa!”"
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_floor_2": {
+    "name": "“Fowlbeast Penari Air II”",
+    "category": "Regional",
+    "group": "Wuling",
+    "levels": {
+      "1": {
+        "desc": "Di Kampung Benteng Qingbo, Batu Penanda, Bagian Dalam Batu Penanda, dan Area Uji Coba, aktifkan 6 set pelat tekanan",
+        "completeDesc": "Sekali lagi, kamu melompat lincah dari satu pelat tekanan ke pelat lain dan memulihkan keseimbangan sempurna.\n“Penampilan gaya Fowlbeast Angguk Tiga Kali yang luar biasa!”"
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_frog_1": {
+    "name": "“Tepuk Lanky, Oper Serangganya”",
+    "category": "Regional",
+    "group": "Wuling",
+    "levels": {
+      "1": {
+        "desc": "Selesaikan 6 tantangan mengoper glowbug di Lembah Jingyu dan Kota Wuling",
+        "completeDesc": "Permainan yang luar biasa. Kami menganalisis suara lankybeast itu dan sepertinya mereka ingin bertemu denganmu lagi. \n“Kwak, kwak. Kwwakkk-kwak-kwak.”"
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_frog_2": {
+    "name": "“Tepuk Lanky, Oper Serangganya II”",
+    "category": "Regional",
+    "group": "Wuling",
+    "levels": {
+      "1": {
+        "desc": "Di Kampung Benteng Qingbo, Batu Penanda, Bagian Dalam Batu Penanda, dan Area Uji Coba, selesaikan 3 puzzle mengoper glowbug",
+        "completeDesc": "Sekali lagi kamu bersenang-senang dengan lankybeast. Kami menganalisis suara lankybeast itu dan sepertinya mereka ingin bertemu denganmu lagi. \n“Kwak, kwak. Kwwakkk-kwak-kwak.”"
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_hyper_clean": {
+    "name": "Penyingkir Hawar Superaktif",
+    "category": "Regional",
+    "group": "Wuling",
+    "levels": {
+      "1": {
+        "desc": "Singkirkan massa Hawar Superaktif di Lembah Benteng Pedang",
+        "completeDesc": "Kamu berhasil menyingkirkan banyak massa Hawar Superaktif."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_minimap_1": {
+    "name": "Pembuka Kerat Suiming",
+    "category": "Regional",
+    "group": "Wuling",
+    "levels": {
+      "2": {
+        "desc": "Di Suiming, buka 28 kerat",
+        "completeDesc": "Kamu sudah membuka semua kerat penyimpanan di Suiming walau semua kerat itu hanya ada dalam kisah masa lalu."
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_watergun_1": {
+    "name": "“Penyemprot Jalur”",
+    "category": "Regional",
+    "group": "Wuling",
+    "levels": {
+      "1": {
+        "desc": "Pulihkan 8 Sistem Jalur Xiranflow di Kota Wuling",
+        "completeDesc": "Kamu berhasil menyesuaikan dan memulihkan beberapa Sistem Jalur Xiranflow."
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_charged": {
+    "name": "Ahli Menyela",
+    "category": "Teknis",
+    "group": "Teknik Tempur",
+    "levels": {
+      "1": {
+        "desc": "Sela kondisi pengisian kekuatan musuh sebanyak 30 kali selama pertarungan",
+        "completeDesc": "Kamu ahli dalam mengganggu serangan musuh."
+      },
+      "2": {
+        "desc": "Sela kondisi pengisian kekuatan musuh sebanyak 50 kali selama pertarungan",
+        "completeDesc": "Sekarang, kamu bisa menyela musuh tepat saat mereka akan melakukan sesuatu yang lebih agresif."
+      },
+      "3": {
+        "desc": "Sela kondisi pengisian kekuatan musuh sebanyak 100 kali selama pertarungan",
+        "completeDesc": "Kamu kini mampu mendeteksi tanda-tanda agresi sekecil apa pun dan menggagalkan segala bentuk aksi permusuhan, sekecil apa pun."
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_charged_hsbear": {
+    "name": "“Penangkap Petir”",
+    "category": "Teknis",
+    "group": "Teknik Tempur",
+    "levels": {
+      "2": {
+        "desc": "Hentikan gelombang kejut yang menggelegar dari Skydrummer saat bertarung.",
+        "completeDesc": "Kamu berhasil mencengkeram gemuruh guntur dengan erat."
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_comboskill": {
+    "name": "Aksi Kombo",
+    "category": "Teknis",
+    "group": "Teknik Tempur",
+    "levels": {
+      "1": {
+        "desc": "Lancarkan 500 kombo selama pertarungan",
+        "completeDesc": "Operatormu sudah terlatih untuk melancarkan kombo kepada musuh."
+      },
+      "2": {
+        "desc": "Lancarkan 1.000 kombo selama pertarungan",
+        "completeDesc": "Operatormu sudah terlatih. Mereka akan memanfaatkan peluang dan melancarkan kombo saat bertarung."
+      },
+      "3": {
+        "desc": "Lancarkan 2.000 kombo selama pertarungan",
+        "completeDesc": "Operatormu sudah terlatih dan akan bertarung dengan kombo sebagai tim. \nKepercayaan bersama adalah kunci untuk sampai ke tujuan."
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_defeat_agtrinit": {
+    "name": "“Serpihan-serpihan Astarron”",
+    "category": "Teknis",
+    "group": "Teknik Tempur",
+    "levels": {
+      "3": {
+        "desc": "Selesaikan “Bencana Krisis: Triaggelos”",
+        "completeDesc": "Dalam ilusi Dimensi Protokol, kamu menghentikan Astarron sang penghancur agar tak pernah kembali lagi ke negeri ini."
+      }
+    },
+    "plating": {
+      "desc": "Selesaikan “Bencana Krisis: Triaggelos” dalam 240 dtk"
+    }
+  },
+  "achv_bat_defeat_bigtree": {
+    "name": "“Keheningan Gloomwald”",
+    "category": "Teknis",
+    "group": "Teknik Tempur",
+    "levels": {
+      "2": {
+        "desc": "Kalahkan Amarah Gloomwald",
+        "completeDesc": "Kamu memadamkan amarah Gloomwald. Makhluk ciptaan yang setia itu tidak lagi membenci maupun menyimpan dendam, sehingga kedamaian pun kembali ke negeri ini."
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_defeat_dodge_jzogre": {
+    "name": "“Perajut Angin”",
+    "category": "Teknis",
+    "group": "Teknik Tempur",
+    "levels": {
+      "2": {
+        "desc": "Operator terkontrol tidak akan terkena DMG, dan melancarkan sedikitnya 5 hindaran sempurna melawan serangan berputar dari Manglerbeast Berarmor",
+        "completeDesc": "Kamu menghadapi rentetan hantaman berat, yang masing-masing mampu menghancurkan tubuh makhluk hidup, tapi kamu berhasil menang tanpa luka sedikit pun berkat kegesitanmu."
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_defeat_ethillu": {
+    "name": "“Æthillu Tidak Stabil”",
+    "category": "Teknis",
+    "group": "Teknik Tempur",
+    "levels": {
+      "2": {
+        "desc": "Saat bertarung, kalahkan “Æthillu” dalam waktu 2 dtk setelah entitas itu bangkit kembali",
+        "completeDesc": "Kamu bisa melihat menembus Æthillu dan menghalau material tidak stabil itu."
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_defeat_fdcentur": {
+    "name": "“Obor Padam”",
+    "category": "Teknis",
+    "group": "Teknik Tempur",
+    "levels": {
+      "3": {
+        "desc": "Selesaikan “Bencana Krisis: Alleikhreos, Chiliarch”",
+        "completeDesc": "Dalam khayalan Dimensi Protokol, orang yang kembali itu menceritakan apa yang dilihatnya dan mencoba menyampaikan undangan. Pada akhirnya, cahaya yang dipancarkannya pun padam perlahan."
+      }
+    },
+    "plating": {
+      "desc": "Selesaikan “Bencana Krisis: Alleikhreos, Chiliarch” dalam 200 dtk"
+    }
+  },
+  "achv_bat_defeat_hsbear": {
+    "name": "“Meredam Genderang”",
+    "category": "Teknis",
+    "group": "Teknik Tempur",
+    "levels": {
+      "2": {
+        "desc": "Kalahkan Skydrummer",
+        "completeDesc": "Kamu menghancurkan panji liar dan meredam dentuman gendang yang memekakkan telinga."
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_defeat_jzmking": {
+    "name": "“Megamonster Ditaklukkan”",
+    "category": "Teknis",
+    "group": "Teknik Tempur",
+    "levels": {
+      "2": {
+        "desc": "Kalahkan Craghowler",
+        "completeDesc": "Kamu berhasil menundukkan penguasa hewan buas itu. Mungkin kamu bisa jadi penguasa baru mereka?"
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_defeat_klbear": {
+    "name": "“Blitzcrash Pergi dalam Sunyi”",
+    "category": "Teknis",
+    "group": "Teknik Tempur",
+    "levels": {
+      "2": {
+        "desc": "Kalahkan Bayang-bayang Hawar Blitzcrash",
+        "completeDesc": "Raungannya kian lembut dan pelan, seperti saat ia masih kecil."
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_defeat_nefarp": {
+    "name": "“Kesedihan Penakluk”",
+    "category": "Teknis",
+    "group": "Teknik Tempur",
+    "levels": {
+      "3": {
+        "desc": "Selesaikan “Bencana Krisis: Nefarith”",
+        "completeDesc": "Ambisinya yang gila dan tawanya yang menghina akhirnya lenyap dalam bayangan Dimensi Protokol."
+      }
+    },
+    "plating": {
+      "desc": "Selesaikan “Bencana Krisis: Nefarith” dalam 200 dtk"
+    }
+  },
+  "achv_bat_defeat_palesent": {
+    "name": "“Runtuhnya Citra Pucat”",
+    "category": "Teknis",
+    "group": "Teknik Tempur",
+    "levels": {
+      "3": {
+        "desc": "Selesaikan “Bencana Krisis: Marble Aggelomoirai”",
+        "completeDesc": "Dalam ilusi Dimensi Protokol, kamu sekali lagi mengalahkan patung marmer pucat besar itu."
+      }
+    },
+    "plating": {
+      "desc": "Selesaikan “Bencana Krisis: Marble Aggelomoirai” dalam 240 dtk"
+    }
+  },
+  "achv_bat_defeat_rodin": {
+    "name": "“Menghancurkan Tinju Bonekrusher”",
+    "category": "Teknis",
+    "group": "Teknik Tempur",
+    "levels": {
+      "3": {
+        "desc": "Selesaikan Pandemonium Krisis: Rhodagn",
+        "completeDesc": "Dalam ilusi Dimensi Protokol, kamu mengakhiri jalan penuh kekerasan, fanatisme, dan amarahnya."
+      }
+    },
+    "plating": {
+      "desc": "Selesaikan “Pandemonium Krisis: Rhodagn” dalam 120 dtk"
+    }
+  },
+  "achv_bat_defeat_ruanyi": {
+    "name": "“Layulah Cabang Amarah”",
+    "category": "Teknis",
+    "group": "Teknik Tempur",
+    "levels": {
+      "3": {
+        "desc": "Selesaikan “Bencana Krisis: Ruan Yi”",
+        "completeDesc": "Malam berhujan mengobarkan bara amarahnya hingga akhirnya padam di tengah ilusi Dimensi Protokol."
+      }
+    },
+    "plating": {
+      "desc": "Selesaikan “Bencana Krisis: Ruan Yi” dalam 200 dtk"
+    }
+  },
+  "achv_bat_dung_char": {
+    "name": "Panduan Operator",
+    "category": "Teknis",
+    "group": "Dimensi Protokol",
+    "levels": {
+      "1": {
+        "desc": "Selesaikan 5 stage Panduan Operator mana saja",
+        "completeDesc": "Kamu sudah memahami cara bertarung operatormu."
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_dung_resource": {
+    "name": "Pengumpulan Material",
+    "category": "Teknis",
+    "group": "Dimensi Protokol",
+    "levels": {
+      "2": {
+        "desc": "Selesaikan Dimensi Protokol berikut:\nEXP Operator - Mimpi Buruk Mewujud\nT-Cred - Berkah Oros\nPromosi - Pusaran Api Terselubung\nKenaikan Skill - Fatamorgana Menara\nEXP Senjata - Gundukan Pandai Senjata\nPenyetelan Senjata - Ujian Tempa Lv.5.",
+        "completeDesc": "Bahkan Dimensi Protokol paling berbahaya pun tak bisa menghentikanmu mendapatkan sumber daya progresi operator."
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_dung_ss": {
+    "name": "Progresi Tingkat Lanjut",
+    "category": "Teknis",
+    "group": "Dimensi Protokol",
+    "levels": {
+      "2": {
+        "desc": "Selesaikan semua Dimensi Protokol: Progresi Tingkat Lanjut",
+        "completeDesc": "Bahkan Dimensi Protokol paling berbahaya pun tak bisa menghentikanmu mendapatkan material terbaik untuk operatormu."
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_enemyspawner": {
+    "name": "Pembersih Aluvium",
+    "category": "Teknis",
+    "group": "Dimensi Protokol",
+    "levels": {
+      "2": {
+        "desc": "Capai Eksplorasi Level 7, lalu selesaikan 5 lokasi Aluvium Energi Parah yang berbeda",
+        "completeDesc": "Endapan energi Æther di negeri ini mulai berkurang, tapi suatu saat nanti akan kembali."
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_eny_ace": {
+    "name": "Pembinasa Sempurna",
+    "category": "Teknis",
+    "group": "Teknik Tempur",
+    "levels": {
+      "2": {
+        "desc": "Kalahkan setidaknya 5 musuh dengan satu hantaman yang menimbulkan damage",
+        "completeDesc": "Kami percaya suatu hari nanti kamu pasti bisa mengalahkan musuh hanya dengan tatapanmu."
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_eny_building_kill": {
+    "name": "Pemusnahan Cerdas",
+    "category": "Teknis",
+    "group": "Teknik Tempur",
+    "levels": {
+      "1": {
+        "desc": "Kalahkan 10 musuh dengan fasilitas tempur",
+        "completeDesc": "Fasilitas tempurmu sudah membuktikan kemampuan mereka."
+      },
+      "2": {
+        "desc": "Kalahkan 100 musuh dengan fasilitas tempur",
+        "completeDesc": "Fasilitas tempurmu terus memukul mundur musuh."
+      },
+      "3": {
+        "desc": "Kalahkan 500 musuh dengan fasilitas tempur",
+        "completeDesc": "Dengan mesin perang seefisien ini, kamu hampir tak perlu turun langsung ke medan berbahaya."
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_eny_cannot_move": {
+    "name": "Pelumpuh Pemungkas",
+    "category": "Teknis",
+    "group": "Teknik Tempur",
+    "levels": {
+      "2": {
+        "desc": "Lumpuhkan musuh yang sama terus-menerus selama 20 dtk saat bertarung",
+        "completeDesc": "Teknik tempurmu sungguh luar biasa. Kamu mampu menunjukkan dominasi total terhadap musuh."
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_frozen": {
+    "name": "“Pengurangan Entropi”",
+    "category": "Teknis",
+    "group": "Teknik Tempur",
+    "levels": {
+      "1": {
+        "desc": "Biarkan operator terkena Solidified sebanyak 10 kali saat bertarung",
+        "completeDesc": "Dingin yang menggigit memperlambat langkahmu agar kamu tak pergi jauh-jauh."
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_hard_1": {
+    "name": "“Konstruksi Anorganik”",
+    "category": "Teknis",
+    "group": "Dimensi Protokol",
+    "levels": {
+      "2": {
+        "desc": "Di [Monumen Umbra], selesaikan semua stage “Konstruksi Anorganik” dalam mode Normal",
+        "completeDesc": "Kamu menyaksikan momen yang menggambarkan perjuangan bertahan hidup umat manusia dalam Perang Aggelos. Namamu pun kembali terukir pada monumen agung itu."
+      }
+    },
+    "plating": {
+      "desc": "Di [Monumen Umbra], selesaikan semua stage “Konstruksi Anorganik” dalam mode Agoni"
+    }
+  },
+  "achv_bat_hard_2": {
+    "name": "“Yang Ditelantarkan Negeri”",
+    "category": "Teknis",
+    "group": "Dimensi Protokol",
+    "levels": {
+      "2": {
+        "desc": "Di [Monumen Umbra], selesaikan semua stage “Yang Ditelantarkan Negeri” dalam mode Normal",
+        "completeDesc": "Kamu menghadapi mereka yang dengan brutal mencabik-cabik daging dan darah Peradaban. Namamu pun kembali terukir di monumen agung itu."
+      }
+    },
+    "plating": {
+      "desc": "Di [Monumen Umbra], selesaikan semua stage “Yang Ditelantarkan Negeri” dalam mode Agoni"
+    }
+  },
+  "achv_bat_hard_3": {
+    "name": "“Luka Panas”",
+    "category": "Teknis",
+    "group": "Dimensi Protokol",
+    "levels": {
+      "2": {
+        "desc": "Di [Monumen Umbra], selesaikan semua stage “Luka Panas” dalam mode Normal",
+        "completeDesc": "Kamu membelah luka panas itu dan menyingkirkan kejahatan yang tersembunyi di dalamnya. Sekali lagi, namamu terukir di monumen agung."
+      }
+    },
+    "plating": {
+      "desc": "Di [Monumen Umbra], selesaikan semua stage “Luka Panas” dalam mode Agoni"
+    }
+  },
+  "achv_bat_hard_4": {
+    "name": "“Manifestasi Kekeruhan”",
+    "category": "Teknis",
+    "group": "Dimensi Protokol",
+    "levels": {
+      "2": {
+        "desc": "Di [Monumen Umbra], selesaikan semua stage “Manifestasi Kekeruhan” dalam mode Normal",
+        "completeDesc": "Kamu berhasil selamat dari gelombang mengerikan dan keruh yang mengancam akan menenggelamkan segalanya. Namamu pun kembali terukir di monumen agung itu."
+      }
+    },
+    "plating": {
+      "desc": "Di [Monumen Umbra], selesaikan semua stage “Manifestasi Kekeruhan” dalam mode Agoni"
+    }
+  },
+  "achv_bat_hard_5": {
+    "name": "“Pertikaian Hening Mematikan”",
+    "category": "Teknis",
+    "group": "Dimensi Protokol",
+    "levels": {
+      "2": {
+        "desc": "Di [Monumen Umbra], selesaikan semua stage “Pertikaian Hening Mematikan” dalam mode Normal",
+        "completeDesc": "Kamu menyaksikan pertikaian di tengah gemuruh petir dan perwujudan keheningan yang mematikan, dan sekali lagi kamu mengukirkan namamu pada monumen agung itu."
+      }
+    },
+    "plating": {
+      "desc": "Di [Monumen Umbra], selesaikan semua stage “Pertikaian Hening Mematikan” dalam mode Agoni"
+    }
+  },
+  "achv_bat_hard_6": {
+    "name": "“Peraung Tebing”",
+    "category": "Teknis",
+    "group": "Dimensi Protokol",
+    "levels": {
+      "2": {
+        "desc": "Di [Monumen Umbra], selesaikan semua stage “Peraung Tebing” dalam Mode Normal",
+        "completeDesc": "Dengan penuh kemenangan, kamu berdiri dengan tegak dan bangga di antara semua hewan buas di gunung, dan sekali lagi kamu mengukir namamu di monumen agung itu."
+      }
+    },
+    "plating": {
+      "desc": "Di [Monumen Umbra], selesaikan semua stage “Peraung Tebing” dalam Mode Agoni"
+    }
+  },
+  "achv_bat_hard_7": {
+    "name": "“Diincar Bayangan Gelap”",
+    "category": "Teknis",
+    "group": "Dimensi Protokol",
+    "levels": {
+      "2": {
+        "desc": "Di [Monumen Umbra], selesaikan semua stage “Diincar Bayangan Gelap” dalam mode Normal",
+        "completeDesc": "Dengan penuh kemenangan, kamu menghapus jejak malapetaka yang mengerikan, dan sekali lagi kamu mengukir namamu di monumen agung itu."
+      }
+    },
+    "plating": {
+      "desc": "Di [Monumen Umbra], selesaikan semua stage “Diincar Bayangan Gelap” dalam mode Agoni"
+    }
+  },
+  "achv_bat_magical_AS": {
+    "name": "Status Cemerlang",
+    "category": "Teknis",
+    "group": "Teknik Tempur",
+    "levels": {
+      "1": {
+        "desc": "Akibatkan 50 Status Fisik selama pertarungan",
+        "completeDesc": "Kamu sudah menunjukkan teknik tempurmu."
+      },
+      "2": {
+        "desc": "Akibatkan 300 Status Fisik selama pertarungan",
+        "completeDesc": "Musuhmu kini gentar akan tebasan dan pukulan kuat darimu."
+      },
+      "3": {
+        "desc": "Akibatkan 500 Status Fisik selama pertarungan",
+        "completeDesc": "Kamu adalah master pertarungan sejati."
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_physical_AS": {
+    "name": "Arts dan Aliran",
+    "category": "Teknis",
+    "group": "Teknik Tempur",
+    "levels": {
+      "1": {
+        "desc": "Akibatkan 50 Arts Reaction selama pertarungan",
+        "completeDesc": "Dengan begitu, Originium Arts akan mengalir."
+      },
+      "2": {
+        "desc": "Akibatkan 300 Arts Reaction selama pertarungan",
+        "completeDesc": "Musuh kini takut akan kemahiranmu memanipulasi energi."
+      },
+      "3": {
+        "desc": "Akibatkan 500 Arts Reaction selama pertarungan",
+        "completeDesc": "Kamu adalah maestro Originium Arts yang sejati."
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_rescue_from_geyunweng": {
+    "name": "“JANGAN ADA LAGI PENCULIKAN!”",
+    "category": "Teknis",
+    "group": "Teknik Tempur",
+    "levels": {
+      "2": {
+        "desc": "Selamatkan rekan tim yang terperangkap oleh Nimbus Razor sebanyak 1 kali",
+        "completeDesc": "Perompak Cangzei dan bandit sungai terkenal sering menyandera orang demi tebusan. Sudah jelas, kamu tak membiarkan mereka berbuat sesukanya."
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_smalltree": {
+    "name": "“Tercabut Tuntas”",
+    "category": "Teknis",
+    "group": "Teknik Tempur",
+    "levels": {
+      "2": {
+        "desc": "Paksa agar Pengembara Kayu yang bersembunyi keluar ke permukaan",
+        "completeDesc": "Kamu bertindak cepat dan mencabut makhluk kayu itu dari tanah .... Akar dan umbi-umbian yang liar serta merajalela memang cenderung membuat masalah."
+      }
+    },
+    "plating": null
+  },
+  "achv_event_clean": {
+    "name": "“Dibasuh dan Dibilas Bersih”",
+    "category": "Event",
+    "group": "Event",
+    "levels": {
+      "2": {
+        "desc": "Selesaikan semua misi Bersihkan dan Bilas",
+        "completeDesc": "Kamu berhasil menghilangkan noda yang merepotkan petugas sanitasi."
+      }
+    },
+    "plating": {
+      "desc": "Selesaikan “Latihan Bersih-Bersih sambil Lompat” dalam 120 dtk"
+    }
+  },
+  "achv_event_contingency_contract_0": {
+    "name": "“Pengapian Ulang”",
+    "category": "Event",
+    "group": "Event",
+    "levels": {
+      "3": {
+        "desc": "Di [Kontrak Kontingensi: Operasi Eksperimen Pengapian Ulang], selesaikan tantangan hingga tuntas dengan sedikitnya 20 <image=\"Common/icon_contingency_contract_entry_black\" width=30 height=30> Kriteria Tes",
+        "completeDesc": "Perjanjian dari masa lalu sedang dipulihkan. Kamu telah menyalakan kembali suatu kontrak kuno."
+      }
+    },
+    "plating": null
+  },
+  "achv_event_dungfight": {
+    "name": "“Penyintas Ahli”",
+    "category": "Event",
+    "group": "Event",
+    "levels": {
+      "2": {
+        "desc": "Di [Latihan Bertahan Hidup], selesaikan semua stage",
+        "completeDesc": "Kamu berhasil menyelesaikan latihan bertahan hidup yang disiapkan Klara dan menjadi ahli bertahan hidup."
+      }
+    },
+    "plating": {
+      "desc": "Selesaikan “Penilaian Akhir” dalam 120 dtk"
+    }
+  },
+  "achv_event_formula": {
+    "name": "“Pembuat Perangkat Mini”",
+    "category": "Event",
+    "group": "Event",
+    "levels": {
+      "2": {
+        "desc": "Dalam [Dukungan AIC: Perangkat Penyelamat Mini], dapatkan 800,000 Sertif Buah Altruisme",
+        "completeDesc": "Botol-botol cembung kecil yang kamu berikan dalam Dukungan AIC sangat populer."
+      }
+    },
+    "plating": {
+      "desc": "Dalam [Dukungan AIC: Perangkat Penyelamat Mini], dapatkan 800,000 Sertif Buah Altruisme dan kirimkan 20.000 Botol Cembung Giok Xiranite"
+    }
+  },
+  "achv_event_formula2": {
+    "name": "“Ledakan Lung Gembul”",
+    "category": "Event",
+    "group": "Event",
+    "levels": {
+      "2": {
+        "desc": "Dalam [Dukungan AIC: Serangan Lung Gembul], dapatkan 800.000 Sertif Buah Altruisme",
+        "completeDesc": "Produksimu yang tak kenal lelah berhasil membuat Lung Gembul yang seluruhnya otomatis ini berlari-lari kecil di seluruh negeri. Sungguh, ini adalah buah altruisme yang ingin dilihat semua orang."
+      }
+    },
+    "plating": {
+      "desc": "Dalam [Dukungan AIC: Serangan Lung Gembul], dapatkan 800.000 Sertif Buah Altruisme dan kirimkan 20.000 Lung Gembul Xiranite Berat"
+    }
+  },
+  "achv_event_racingdungeon_1": {
+    "name": "“Penjelajah Buana”",
+    "category": "Event",
+    "group": "Event",
+    "levels": {
+      "2": {
+        "desc": "Di [Buana Akar] Fase 2, selesaikan ruang [Hujan Koin] sebanyak 1 kali",
+        "completeDesc": "Kamu sudah menjelajahi kerajaan dongeng. Beri tahu Algy tentang apa yang kamu lihat."
+      }
+    },
+    "plating": {
+      "desc": "Di [Buana Akar], selesaikan Quest Buana dari semua fase"
+    }
+  },
+  "achv_event_takestwo_1": {
+    "name": "“Taktik Nokturnal”",
+    "category": "Event",
+    "group": "Event",
+    "levels": {
+      "2": {
+        "desc": "Selesaikan semua stage [AMARAH MEMBARA! MEGAARENA!] dalam Mode Normal",
+        "completeDesc": "BAKAR! BIARKAN SEMANGAT PERTARUNGANMU MEMBARA!"
+      }
+    },
+    "plating": {
+      "desc": "Selesaikan semua stage [AMARAH MEMBARA! MEGAARENA!] dalam Mode MAKS, dan selesaikan stage mana pun berikut ini dalam 180 dtk:\n· [Terkutuk! Breaker dan Monster Batu! Sudah MAKS!]\n· [Taktik! Kalahkan Pemimpin Kawanannya! Sudah MAKS!]\n· [Kacau! Pembantaian Habis-habisan! Sudah MAKS!]"
+    }
+  },
+  "achv_event_tundra_challenge_dung": {
+    "name": "“Di Dalam Teka-Teki Lembah”",
+    "category": "Event",
+    "group": "Event",
+    "levels": {
+      "2": {
+        "desc": "Di [Penggali Teka-Teki], selesaikan semua Dimensi Protokol “Pengungkapan Pertama Teka-Teki”",
+        "completeDesc": "Dimensi Protokol yang selalu berubah mungkin saja mengubah citra Lembah IV menjadi anomali aneh, tapi itu semua tak akan bisa menghentikan langkahmu yang penuh tekad."
+      }
+    },
+    "plating": {
+      "desc": "Di [Penggali Teka-Teki], selesaikan dengan sempurna semua Dimensi Protokol “Pengungkapan Pertama Teka-Teki”"
+    }
+  },
+  "achv_event_wuling_challenge_dung": {
+    "name": "“Penggali Groto”",
+    "category": "Event",
+    "group": "Event",
+    "levels": {
+      "2": {
+        "desc": "Di [Penggali Teka-Teki], selesaikan semua Dimensi Protokol “Survei Groto”",
+        "completeDesc": "Dimensi Protokol yang selalu berubah mungkin saja mengubah citra Wuling menjadi gua keputusasaan, tapi itu semua tak akan bisa menghentikan langkahmu yang penuh tekad."
+      }
+    },
+    "plating": {
+      "desc": "Di [Penggali Teka-Teki], selesaikan dengan sempurna semua Dimensi Protokol “Survei Groto”"
+    }
+  },
+  "achv_event_wuling_challenge_dung_02": {
+    "name": "“Dunia Seni Enam Kardinal”",
+    "category": "Event",
+    "group": "Event",
+    "levels": {
+      "2": {
+        "desc": "Di [Penggali Teka-Teki], selesaikan semua Dimensi Protokol “Dunia Seni Enam Kardinal”",
+        "completeDesc": "Satu per satu, kamu menerangi Dimensi Protokol yang tercerai-berai dan benar-benar memahami pengetahuan mengenai enam dimensi yang penuh tipu daya."
+      }
+    },
+    "plating": {
+      "desc": "Di [Penggali Teka-Teki], selesaikan dengan sempurna semua Dimensi Protokol “Dunia Seni Enam Kardinal”"
+    }
+  },
+  "achv_event_wuling_racing_1": {
+    "name": "“Pelari Ulung”",
+    "category": "Event",
+    "group": "Event",
+    "levels": {
+      "2": {
+        "desc": "Di [Halang Rintang Pelari], selesaikan semua balapan",
+        "completeDesc": "Dengan melangkah di atas awan dan menunggangi angin ... kamu telah dengan mudah menaklukkan lintasan yang melambangkan pemandangan Wuling yang menakjubkan."
+      }
+    },
+    "plating": {
+      "desc": "Dalam [Halang Rintang Pelari], selesaikan semua lintasan dengan 3★"
+    }
+  },
+  "achv_fac_blackbox_1": {
+    "name": "Simulasi Pabrik",
+    "category": "Konstruksi",
+    "group": "Pabrik AIC",
+    "levels": {
+      "1": {
+        "desc": "Mulai dan selesaikan 5 simulasi secara manual",
+        "completeDesc": "Kamu berhasil menyelesaikan beberapa simulasi."
+      },
+      "2": {
+        "desc": "Mulai dan selesaikan 10 simulasi secara manual",
+        "completeDesc": "Kamu berhasil menyelesaikan banyak simulasi."
+      },
+      "3": {
+        "desc": "Mulai dan selesaikan 20 simulasi secara manual",
+        "completeDesc": "Kamu berhasil menyelesaikan banyak sekali simulasi. Semangatmu untuk menguasai seluk-beluk teknis pabrik memang luar biasa."
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_blackbox_2": {
+    "name": "Simulasi Pabrik II",
+    "category": "Konstruksi",
+    "group": "Pabrik AIC",
+    "levels": {
+      "3": {
+        "desc": "Mulai dan selesaikan 30 simulasi secara manual",
+        "completeDesc": "Kamu berhasil menyelesaikan banyak sekali simulasi. Sekali lagi, kami sangat menghargai semangatmu untuk menguasai seluk-beluk teknis pabrik yang hanya ada di Wuling."
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_coupon_tundra": {
+    "name": "Redistributor Stok Lembah",
+    "category": "Konstruksi",
+    "group": "Pabrik AIC",
+    "levels": {
+      "1": {
+        "desc": "Dapatkan 20.000.000 Surat Saham Lembah",
+        "completeDesc": "Kamu mendapatkan beberapa Surat Saham Lembah."
+      },
+      "2": {
+        "desc": "Dapatkan 40.000.000 Surat Saham Lembah",
+        "completeDesc": "Kamu mendapatkan cukup banyak Surat Saham Lembah."
+      },
+      "3": {
+        "desc": "Dapatkan 80.000.000 Surat Saham Lembah",
+        "completeDesc": "Kamu mendapatkan cukup banyak Surat Saham Lembah. \nMakin banyak surat saham yang didapatkan, makin banyak pasokan penting yang berhasil kamu antarkan kepada orang-orang yang sangat membutuhkannya. Kerjamu sungguh luar biasa."
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_coupon_wuling_1": {
+    "name": "Redistributor Stok Wuling",
+    "category": "Konstruksi",
+    "group": "Pabrik AIC",
+    "levels": {
+      "1": {
+        "desc": "Dapatkan 2.000.000 Surat Saham Wuling",
+        "completeDesc": "Kamu mendapatkan beberapa Surat Saham Wuling."
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_coupon_wuling_2": {
+    "name": "Redistributor Stok Wuling Ⅱ",
+    "category": "Konstruksi",
+    "group": "Pabrik AIC",
+    "levels": {
+      "2": {
+        "desc": "Dapatkan 10.000.000 Surat Saham Wuling",
+        "completeDesc": "Kamu mendapatkan cukup banyak Surat Saham Wuling. \nMakin banyak surat saham yang didapatkan, makin banyak pasokan penting yang berhasil kamu antarkan kepada orang-orang yang sangat membutuhkannya. Kerjamu sungguh luar biasa."
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_coupon_wuling_3": {
+    "name": "Redistributor Stok Wuling Ⅲ",
+    "category": "Konstruksi",
+    "group": "Pabrik AIC",
+    "levels": {
+      "3": {
+        "desc": "Dapatkan 25.000.000 Surat Saham Wuling",
+        "completeDesc": "Kamu mendapatkan cukup banyak Surat Saham Wuling. \nMakin banyak surat saham yang didapatkan, makin banyak pasokan penting yang berhasil kamu antarkan kepada orang-orang yang sangat membutuhkannya. Kerjamu sungguh luar biasa."
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_coupon_wuling_4": {
+    "name": "Redistributor Stok Wuling IV",
+    "category": "Konstruksi",
+    "group": "Pabrik AIC",
+    "levels": {
+      "3": {
+        "desc": "Dapatkan 80.000.000 Surat Saham Wuling",
+        "completeDesc": "Kamu sudah mendapatkan banyak Surat Saham Wuling. \nMakin banyak surat saham, makin besar pula kesepahaman. Aliran barang di Wuling tak akan lolos dari matamu."
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_coupon_wuling_5": {
+    "name": "Redistributor Stok Wuling V",
+    "category": "Konstruksi",
+    "group": "Pabrik AIC",
+    "levels": {
+      "3": {
+        "desc": "Dapatkan 100.000.000 Surat Saham Wuling",
+        "completeDesc": "Kamu telah mendapatkan lebih banyak Surat Saham Wuling.\nKebutuhan semua orang telah terpenuhi. Kamu berhasil mengatasi bencana dan menjaga perekonomian Wuling tetap berjalan dan stabil."
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_domain_depot": {
+    "name": "Pengantaran Barang",
+    "category": "Konstruksi",
+    "group": "Pabrik AIC",
+    "levels": {
+      "2": {
+        "desc": "Selesaikan Pengantaran Barang 20 kali",
+        "completeDesc": "Kamu berhasil menyelesaikan berbagai pengantaran barang. \nWalau ada Tekno-protokol, kamu tetap memilih untuk mengantarkan barang secara langsung. “Klien”mu sangat terkesan dengan dedikasimu."
+      }
+    },
+    "plating": {
+      "desc": "Kemas dan antarkan 20 paket Barang Pabrik (Sangat Ringkih) tanpa mengalami pengurangan Keutuhan Barang."
+    }
+  },
+  "achv_fac_domain_shop": {
+    "name": "Penjualan Stabil",
+    "category": "Konstruksi",
+    "group": "Pabrik AIC",
+    "levels": {
+      "2": {
+        "desc": "Jual pasokan di Redistribusi Stok 15 kali",
+        "completeDesc": "Kamu berhasil menjual banyak suplai. \nBerkat naluri dan pengamatan jelimu, serta alokasi yang tepat waktu, setiap wilayah tetap aman dari kekurangan pasokan."
+      }
+    },
+    "plating": {
+      "desc": "Dalam 1 tindakan penjualan Barang Fluktuatif, capai harga jual setidaknya 500% lebih tinggi dari harga pokok rata-rata."
+    }
+  },
+  "achv_fac_kite_station": {
+    "name": "Pemantau Lingkungan",
+    "category": "Konstruksi",
+    "group": "Pabrik AIC",
+    "levels": {
+      "2": {
+        "desc": "Selesaikan pemantauan lingkungan 5 kali",
+        "completeDesc": "Kamu sudah beberapa kali melakukan pemantauan lingkungan. \nMewakili seluruh binatang kecil yang kamu lindungi, Wuling mengucapkan terima kasih."
+      }
+    },
+    "plating": {
+      "desc": "Selesaikan Progres Gambaran Umum Ekologi di Terminal Pantau Pinggiran Wuling"
+    }
+  },
+  "achv_fac_recycle_station": {
+    "name": "Daur Ulang Sumber Daya",
+    "category": "Konstruksi",
+    "group": "Pabrik AIC",
+    "levels": {
+      "1": {
+        "desc": "Kumpulkan sumber daya dari Stasiun Daur Ulang 50 kali",
+        "completeDesc": "Kamu mengumpulkan banyak material dari Stasiun Daur Ulang. \nBahkan, kamu hampir bisa mendengar suara fowlbeast: “Terima kasih sudah datang tepat waktu lagi.”"
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_settlement_tundra": {
+    "name": "Pembangun Pos Depan Lembah",
+    "category": "Konstruksi",
+    "group": "Pabrik AIC",
+    "levels": {
+      "2": {
+        "desc": "Tambahkan semua pos depan Lembah IV ke program dukungan Endfield",
+        "completeDesc": "Setiap pos depan Lembah IV kini masuk dalam program dukunganmu. \nBerikan joran pancing dan ajari mereka memancing. Program dukunganmu ternyata berjalan lancar."
+      }
+    },
+    "plating": {
+      "desc": "Naikkan semua pos depan Lembah IV ke level tertinggi"
+    }
+  },
+  "achv_fac_settlement_wuling_1": {
+    "name": "Pembangun Pos Depan Wuling I",
+    "category": "Konstruksi",
+    "group": "Pabrik AIC",
+    "levels": {
+      "2": {
+        "desc": "Tambahkan Lokasi Konstruksi Dataran Raja Langit dan Stasiun Remediasi Jantung ke dalam program dukungan Endfield",
+        "completeDesc": "Sejumlah pos depan Wuling kini masuk dalam program dukunganmu. \nBerikan joran pancing dan ajari mereka memancing. Program dukunganmu ternyata berjalan lancar."
+      }
+    },
+    "plating": {
+      "desc": "Naikkan Lokasi Konstruksi Dataran Raja Langit dan Stasiun Remediasi Jantung ke level tertinggi"
+    }
+  },
+  "achv_fac_settlement_wuling_2": {
+    "name": "Pembangun Pos Depan Wuling II",
+    "category": "Konstruksi",
+    "group": "Pabrik AIC",
+    "levels": {
+      "2": {
+        "desc": "Tambahkan semua pos depan Wuling ke program dukungan",
+        "completeDesc": "Setiap pos depan Wuling kini menjadi bagian dari program dukunganmu. \nKamu berhasil menjaga hubungan yang harmonis antara manusia dan lingkungan alamnya yang indah, dengan puncak gunung yang menjulang tinggi dan sungai yang mengalir."
+      }
+    },
+    "plating": {
+      "desc": "Naikkan semua pos depan Wuling ke level tertinggi"
+    }
+  },
+  "achv_fac_simulation_training": {
+    "name": "“Puncak Ujian”",
+    "category": "Konstruksi",
+    "group": "Pabrik AIC",
+    "levels": {
+      "2": {
+        "desc": "Selesaikan 1 Uji Coba dengan total 10 Poin Tarung",
+        "completeDesc": "Dengan taktik sempurna, kamu mencapai puncak Ujian Ilmu Pedang."
+      }
+    },
+    "plating": {
+      "desc": "Selesaikan 1 Uji Coba dengan 1 Luapan Data dan 10 Poin Tarung"
+    }
+  },
+  "achv_fac_spaceship_fever_point": {
+    "name": "Kepercayaan Tinggi",
+    "category": "Konstruksi",
+    "group": "Dijiang",
+    "levels": {
+      "1": {
+        "desc": "Naikkan kepercayaan 5 operator hingga 100%",
+        "completeDesc": "Kamu sudah bertemu rekan-rekan yang rela berkorban nyawa demi melindungimu."
+      },
+      "2": {
+        "desc": "Naikkan kepercayaan 10 operator hingga 100%",
+        "completeDesc": "Kamu sudah bertemu banyak rekan yang rela berkorban nyawa demi melindungimu. \nSepertinya kamu memang menarik orang-orang yang satu visi denganmu."
+      },
+      "3": {
+        "desc": "Naikkan kepercayaan 20 operator hingga 100%",
+        "completeDesc": "Kamu sudah bertemu banyak rekan yang rela berkorban nyawa demi melindungimu. \nSuatu hari nanti, dunia pasti akan sepenuhnya percaya kepadamu."
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_spaceship_gift": {
+    "name": "Bingkisan Teman",
+    "category": "Konstruksi",
+    "group": "Dijiang",
+    "levels": {
+      "1": {
+        "desc": "Tawarkan 300 hadiah yang disukai operatormu",
+        "completeDesc": "Operatormu telah menerima sejumlah besar hadiah darimu."
+      },
+      "2": {
+        "desc": "Tawarkan 500 hadiah yang disukai operatormu",
+        "completeDesc": "Operatormu telah menerima sejumlah besar hadiah darimu. \nYakin semua hadiah ini muat di kamar asrama mereka?"
+      },
+      "3": {
+        "desc": "Tawarkan 1000 hadiah yang disukai operatormu",
+        "completeDesc": "Operatormu telah menerima sejumlah besar hadiah darimu. \nHadiah hanyalah kesempatan. Sesungguhnya, kepercayaan dan ketulusanlah yang membuat para operator sangat mempercayaimu."
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_spaceship_level_1": {
+    "name": "Pakar Upgrade Nexus",
+    "category": "Konstruksi",
+    "group": "Dijiang",
+    "levels": {
+      "3": {
+        "desc": "Upgrade Nexus Kontrol Dijiang ke Level 5",
+        "completeDesc": "Performa Nexus Kontrol meningkat pesat berkat usahamu. \nBisa merasakan kegembiraan dan sukacita Dijiang?"
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_techtree_jinlong_1": {
+    "name": "Perintis Pabrik Wuling Ⅰ",
+    "category": "Konstruksi",
+    "group": "Pabrik AIC",
+    "levels": {
+      "1": {
+        "desc": "Teliti semua teknologi di AIC Wuling I",
+        "completeDesc": "Kamu berhasil mewujudkan Fase 1 dari Bagan AIC Wuling."
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_techtree_jinlong_2": {
+    "name": "Perintis Pabrik Wuling Ⅱ",
+    "category": "Konstruksi",
+    "group": "Pabrik AIC",
+    "levels": {
+      "1": {
+        "desc": "Teliti 25 teknologi di Bagan AIC Wuling",
+        "completeDesc": "Kamu berhasil meneliti lebih banyak teknologi di Bagan AIC Wuling."
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_techtree_jinlong_3": {
+    "name": "Perintis Pabrik Wuling Ⅲ",
+    "category": "Konstruksi",
+    "group": "Pabrik AIC",
+    "levels": {
+      "1": {
+        "desc": "Teliti 34 teknologi di Bagan AIC Wuling",
+        "completeDesc": "Kamu berhasil meneliti lebih banyak teknologi di Bagan AIC Wuling.\nKini kamu berada di garis depan teknologi di Talos-II."
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_techtree_jinlong_4": {
+    "name": "Perintis Pabrik Wuling IV",
+    "category": "Konstruksi",
+    "group": "Pabrik AIC",
+    "levels": {
+      "1": {
+        "desc": "Teliti 47 teknologi di Bagan AIC Wuling",
+        "completeDesc": "Kamu berhasil meneliti teknologi tambahan di Bagan AIC Wuling.\nSetiap saat, tanah di bawah kakimu menyambut setiap idemu."
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_techtree_tundra": {
+    "name": "Perintis Pabrik Lembah",
+    "category": "Konstruksi",
+    "group": "Pabrik AIC",
+    "levels": {
+      "3": {
+        "desc": "Teliti semua teknologi di Bagan AIC Dasar",
+        "completeDesc": "Semua teknologi di Bagan AIC Dasar telah kamu teliti. \nKerja kerasmu membuat Pabrik AIC siap menghadapi tantangan di Lembah IV."
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_typhoea_archery": {
+    "name": "“Daya Paham Pemanah”",
+    "category": "Konstruksi",
+    "group": "Pabrik AIC",
+    "levels": {
+      "2": {
+        "desc": "Di [Lapangan Panahan Typhoeus], selesaikan semua stage latihan dasar dan selesaikan “Latihan Harian 04” satu kali",
+        "completeDesc": "Kamu telah mencapai daya paham pemanah dan kini bisa membidik dengan mata batinmu. Seni memanah ternyata bisa semudah ini."
+      }
+    },
+    "plating": {
+      "desc": "Di [Lapangan Panahan Typhoeus], selesaikan semua “Latihan Tingkat Lanjut” dan selesaikan “Latihan Harian 04” dengan 3★"
+    }
+  },
+  "achv_growth_adventure_level": {
+    "name": "Veteran Ulung",
+    "category": "Progresi",
+    "group": "Progresi",
+    "levels": {
+      "1": {
+        "desc": "Capai Otoritas Level 20",
+        "completeDesc": "Dengan menaikkan Level Otoritas, kamu akan mendapatkan pencapaian kecil."
+      },
+      "2": {
+        "desc": "Capai Otoritas Level 40",
+        "completeDesc": "Dengan menaikkan Level Otoritas, kamu akan kembali ke performa terbaikmu."
+      },
+      "3": {
+        "desc": "Capai Otoritas Level 60",
+        "completeDesc": "Dengan menaikkan Level Otoritas, kamu akan mendapatkan komando penuh."
+      }
+    },
+    "plating": null
+  },
+  "achv_growth_char_count_1": {
+    "name": "Kontak Operator",
+    "category": "Progresi",
+    "group": "Progresi",
+    "levels": {
+      "1": {
+        "desc": "Dapatkan 5 operator",
+        "completeDesc": "Kamu sudah bertemu beberapa operator untuk pertama kalinya."
+      },
+      "2": {
+        "desc": "Dapatkan 10 operator",
+        "completeDesc": "Kamu sudah bertemu beberapa operator untuk pertama kalinya. Tim operasi pertarunganmu kini mulai terbentuk."
+      },
+      "3": {
+        "desc": "Dapatkan 20 operator",
+        "completeDesc": "Kamu sudah bertemu beberapa operator untuk pertama kalinya. Sekarang, kamu punya cukup banyak operator untuk menjalankan rencana taktis yang lebih rumit."
+      }
+    },
+    "plating": null
+  },
+  "achv_growth_char_potential_1": {
+    "name": "Pemenuhan Potensi",
+    "category": "Progresi",
+    "group": "Progresi",
+    "levels": {
+      "1": {
+        "desc": "Naikkan 1 operator hingga potensinya penuh",
+        "completeDesc": "Potensi penuh telah terbuka untuk salah satu operatormu."
+      },
+      "2": {
+        "desc": "Naikkan 10 operator hingga potensinya penuh",
+        "completeDesc": "Potensi penuh telah terbuka untuk beberapa operatormu. \nRefleksi diri yang tepat adalah langkah awal menuju perkembangan."
+      },
+      "3": {
+        "desc": "Naikkan 15 operator hingga potensinya penuh",
+        "completeDesc": "Potensi penuh telah terbuka untuk beberapa operatormu. \nMeski sudah melampaui hambatan mereka, para operator ini yakin perjalanan mereka baru saja dimulai."
+      }
+    },
+    "plating": null
+  },
+  "achv_growth_char_skill_level_1": {
+    "name": "Penguasaan Skill",
+    "category": "Progresi",
+    "group": "Progresi",
+    "levels": {
+      "1": {
+        "desc": "Upgrade 5 skill operator ke Penguasaan 3",
+        "completeDesc": "Beberapa operatormu telah mengasah skill tarung mereka hingga ke tingkat yang luar biasa."
+      },
+      "2": {
+        "desc": "Upgrade 10 skill operator ke Penguasaan 3",
+        "completeDesc": "Beberapa operatormu telah mengasah skill tarung mereka hingga ke tingkat yang luar biasa. Kepercayaan yang kamu bangun dengan operatormu telah membantu mewujudkan hal ini."
+      },
+      "3": {
+        "desc": "Upgrade 20 skill operator ke Penguasaan 3",
+        "completeDesc": "Beberapa operatormu telah mengasah skill tarung mereka hingga ke tingkat yang luar biasa. Meski keahlian dan skill mereka sangat beragam, para operator ini tetap bekerja sama di bawah kepemimpinanmu untuk mencapai visi masa depan bersama."
+      }
+    },
+    "plating": null
+  },
+  "achv_growth_equip_enhance": {
+    "name": "Perakit Sempurna",
+    "category": "Progresi",
+    "group": "Progresi",
+    "levels": {
+      "3": {
+        "desc": "Upgrade semua stat pada 1 kepingan gear hingga Sempurna Penuh",
+        "completeDesc": "Luka, kejayaan, dan hidupmu sejak awal terus dibawanya, dan akan terus begitu hingga akhir."
+      }
+    },
+    "plating": null
+  },
+  "achv_growth_world_level": {
+    "name": "Penjelajah Kedalaman",
+    "category": "Progresi",
+    "group": "Progresi",
+    "levels": {
+      "1": {
+        "desc": "Capai Eksplorasi Level 2",
+        "completeDesc": "Medali yang membuktikan kamu telah mencapai Level Eksplorasi yang lebih tinggi."
+      },
+      "2": {
+        "desc": "Capai Eksplorasi Level 4",
+        "completeDesc": "Medali yang membuktikan kamu telah mencapai Level Eksplorasi yang lebih tinggi. \nLingkungan yang lebih berat akan menawarkan peluang yang lebih besar."
+      },
+      "3": {
+        "desc": "Capai Eksplorasi Level 7",
+        "completeDesc": "Medali yang membuktikan kamu telah mencapai Level Eksplorasi yang lebih tinggi. \nKamu telah mencapai puncak."
+      }
+    },
+    "plating": null
+  },
+  "achv_growth_wpn_count_1": {
+    "name": "Koleksi Senjata",
+    "category": "Progresi",
+    "group": "Progresi",
+    "levels": {
+      "1": {
+        "desc": "Dapatkan 10 senjata berbeda",
+        "completeDesc": "Jajaran senjatamu tampak lengkap."
+      },
+      "2": {
+        "desc": "Dapatkan 20 senjata berbeda",
+        "completeDesc": "Jajaran senjatamu tampak lengkap. \nKoleksimu kini mencakup beberapa karya terbaik yang diproduksi oleh Mieszko Industries maupun Fort Forgefane."
+      },
+      "3": {
+        "desc": "Dapatkan 40 senjata berbeda",
+        "completeDesc": "Jajaran senjatamu tampak lengkap. \nUntuk apa koleksi sebanyak ini? Apa kamu ingin membantu Ahli Mesin Senjata kita membandingkan senjata dari berbagai pabrikan?"
+      }
+    },
+    "plating": null
+  },
+  "achv_growth_wpn_skill_level": {
+    "name": "Persenjataan Pemungkas",
+    "category": "Progresi",
+    "group": "Progresi",
+    "levels": {
+      "3": {
+        "desc": "Upgrade 1 senjata ke total peringkat skill 18",
+        "completeDesc": "Setelah melalui berbagai upgrade dan penyempurnaan, senjatamu kini sebanding dengan relikui berharga yang digunakan oleh para pahlawan legendaris."
+      }
+    },
+    "plating": {
+      "desc": "Upgrade 1 senjata ke total peringkat skill 25"
+    }
+  },
+  "achv_hide_aether_lock_clean": {
+    "name": "“Pedang di Ujung Benang”",
+    "category": "Keajaiban",
+    "group": "Keajaiban",
+    "levels": {
+      "2": {
+        "desc": "Di Zona Eksklusi Wuling Utara, bersihkan 5 tumpukan aluvium energi",
+        "completeDesc": "Seseorang harus sangat berhati-hati saat melangkah di medan berbahaya. Meski demikian, kamu telah berhasil menjatuhkan pedang yang mengancam itu, yang hanya bergantung pada sehelai benang."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_banana": {
+    "name": "“Lomba Senjata?”",
+    "category": "Keajaiban",
+    "group": "Keajaiban",
+    "levels": {
+      "1": {
+        "desc": "Biarkan operator terkontrol terpeleset kulit pisang sebanyak 1 kali",
+        "completeDesc": "Menurut aturan, “barang dan item taktis tidak bisa digunakan”. Tapi, alam liar mengabaikan aturan ini dan tetap saja melemparkan kulit pisang ini."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_cave": {
+    "name": "“Auditor Terjebak”",
+    "category": "Keajaiban",
+    "group": "Keajaiban",
+    "levels": {
+      "2": {
+        "desc": "Hancurkan semua permukaan lemah di Lodespring Asal",
+        "completeDesc": "Tenang saja. Lubang-lubang ini bukan jebakan yang disengaja. UWST juga sedang melakukan penyelidikan untuk menangkap para pelakunya."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_cave_v1d5": {
+    "name": "“Palu Es Raksasa”",
+    "category": "Keajaiban",
+    "group": "Keajaiban",
+    "levels": {
+      "1": {
+        "desc": "Capai gua bawah tanah di Groto Kecil, Hutan Salju",
+        "completeDesc": "Indramu yang tajam menemukan alat pemecah es di lingkungan sekitar."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_fly": {
+    "name": "“Pindah Tak Nyaman”",
+    "category": "Keajaiban",
+    "group": "Keajaiban",
+    "levels": {
+      "3": {
+        "desc": "Tempuh jarak 10.000 meter menggunakan luncur gantung, landasan pantul, dan tali",
+        "completeDesc": "Dijiang telah menyusun rencana untuk mengembangkan perangkat yang mampu terbang rendah, khusus untukmu."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_jump_hit": {
+    "name": "“Protocol ε 20.00m”",
+    "category": "Keajaiban",
+    "group": "Keajaiban",
+    "levels": {
+      "2": {
+        "desc": "Jatuh dari ketinggian minimum 20 meter, lalu hantam satu musuh",
+        "completeDesc": "Itu serpihan puing orbit? Bukan! Itu adalah kamu dan operatormu."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_no_parry": {
+    "name": "“Dominasi Pencipta”",
+    "category": "Keajaiban",
+    "group": "Keajaiban",
+    "levels": {
+      "3": {
+        "desc": "Selesaikan “Bencana Krisis: Alleikhreos, Chiliarch” tanpa menggunakan Senjata Foundite",
+        "completeDesc": "Dengan cara yang sangat keras dan kejam, sang Pencipta menghancurkan petarung dari masa lalu."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_open_treasure": {
+    "name": "“Persembahan si Buas”",
+    "category": "Keajaiban",
+    "group": "Keajaiban",
+    "levels": {
+      "2": {
+        "desc": "Cari “persembahan” si Pintar",
+        "completeDesc": "Kesetiakawanan? Keper? Benda kecil imut ini menganggapmu temannya."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_paralyze": {
+    "name": "“Terungkap Sepenuhnya”",
+    "category": "Keajaiban",
+    "group": "Keajaiban",
+    "levels": {
+      "2": {
+        "desc": "Biarkan [Nefarith, “sang Penakluk”] mempertahankan tempat dalam keadaan stasis dan mengunci operator terkontrolmu di udara",
+        "completeDesc": "Ambisi liarnya memang menakutkan, tapi kamu menunjukkan keberanianmu tanpa gentar walau dia berusaha membuatmu putus asa."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_rebellious": {
+    "name": "“Kami Membangun Baluarti Selatan”",
+    "category": "Keajaiban",
+    "group": "Keajaiban",
+    "levels": {
+      "2": {
+        "desc": "Gunakan tangkisan pertahanan untuk menyela serangan serudukan Armorbeast Kapak",
+        "completeDesc": "Tapi, Armorbeast Kapak masih enggan berbalik arah. Sayang sekali."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_root": {
+    "name": "“Meratapi Kemegahan yang Memudar”",
+    "category": "Keajaiban",
+    "group": "Keajaiban",
+    "levels": {
+      "1": {
+        "desc": "Jelajahi dasar Pilar Tianshi Tipe C",
+        "completeDesc": "Dari struktur Xiranite di Area Uji Coba Pilar Tianshi, kamu memungut “kuncup bunga” yang belum mekar. Kamu menyaksikan kelahiran baru setelah proses penuaan."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_ruanyi": {
+    "name": "“Pengelana Alam Mematikan”",
+    "category": "Keajaiban",
+    "group": "Keajaiban",
+    "levels": {
+      "2": {
+        "desc": "Saat Ruan Yi Murka, pertahankan efek Withering Touch-nya selama setidaknya 60 dtk",
+        "completeDesc": "Dengan ranting-ranting yang mengering, ia menciptakan dunia kematian, tapi kau bisa bebas mengarunginya."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_slime": {
+    "name": "“Pertempuran Empat Kaisar”",
+    "category": "Keajaiban",
+    "group": "Keajaiban",
+    "levels": {
+      "2": {
+        "desc": "Tendang 4 Siput Originium sampai jatuh",
+        "completeDesc": "Kamu membantu empat Siput Originium pindah rumah."
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_waterwheel_top": {
+    "name": "“Air Mengalir dari Langit”",
+    "category": "Keajaiban",
+    "group": "Keajaiban",
+    "levels": {
+      "2": {
+        "desc": "Capai puncak kincir air Kampung Benteng Qingbo",
+        "completeDesc": "Kamu berhasil mencapai puncak tertinggi kincir air Kampung Benteng Qingbo dan menyaksikan keajaiban “air mengalir turun dari langit”."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_aglina": {
+    "name": "“Surat dari Seorang Kurir”",
+    "category": "Bab",
+    "group": "Misi Eksplorasi",
+    "levels": {
+      "2": {
+        "desc": "Selesaikan misi sampingan [Surat dari Seorang Kurir]",
+        "completeDesc": "Beberapa tugas kecil, beberapa paket yang harus diantar. \nKamu menemuinya di bawah langit senja. Kenangan dan momen indah akan menjadi hadiah yang mengisi surat kosongnya."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_camille": {
+    "name": "“Danse Macabre”",
+    "category": "Bab",
+    "group": "Misi Eksplorasi",
+    "levels": {
+      "2": {
+        "desc": "Selesaikan misi sampingan [Danse Macabre]",
+        "completeDesc": "Pengejaran ini, bau darah segar, dan luka lama yang sakitnya masih terasa menyayat .... Camille telah bersumpah bahwa darahnya akan selalu bersama Endministrator."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e0m2": {
+    "name": "“Bangkit”",
+    "category": "Bab",
+    "group": "Misi Utama",
+    "levels": {
+      "3": {
+        "desc": "Selesaikan misi utama [Prolog - Proses: Kebangkitan]",
+        "completeDesc": "Kamu telah kembali ke Talos-II."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e10m3": {
+    "name": "“Perlahan Mengikuti Arus”",
+    "category": "Bab",
+    "group": "Misi Utama",
+    "levels": {
+      "3": {
+        "desc": "Selesaikan misi utama [Bab Ⅱ Proses Ⅵ: Ditempa sejak Awal]",
+        "completeDesc": "Zhuang Fangyi sudah menunggu, dan akhirnya kamu sampai."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e11m1": {
+    "name": "“Segel yang Terbuka”",
+    "category": "Bab",
+    "group": "Misi Utama",
+    "levels": {
+      "3": {
+        "desc": "Selesaikan misi utama [Bab Ⅱ Proses Ⅶ: Tak Gentar Terjang Angin Kejam]",
+        "completeDesc": "Kamu siap menghadapi kebinasaan, yang masih menjadi manifestasi keputusasaan meski telah tersegel selama bertahun-tahun."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e11m3": {
+    "name": "“Dialog Pedang”",
+    "category": "Bab",
+    "group": "Misi Utama",
+    "levels": {
+      "3": {
+        "desc": "Ucapkan selamat tinggal kepada instruktur dari Balai Tanjian",
+        "completeDesc": "Dia sudah paham. Orang hidup mengabdikan diri sepenuhnya pada pedang mereka."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e11m4": {
+    "name": "“Hubungan dengan Masa Lalu”",
+    "category": "Bab",
+    "group": "Misi Utama",
+    "levels": {
+      "3": {
+        "desc": "Bentangkan jembatan Xiranite melintasi ngarai",
+        "completeDesc": "Sekarang Jembatan Xiranite menghubungkan masa kini dengan masa lalu. Jalan ini terbuka untukmu."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e11m5": {
+    "name": "“Anak Harapan”",
+    "category": "Bab",
+    "group": "Misi Utama",
+    "levels": {
+      "3": {
+        "desc": "Selesaikan misi utama [Bab Ⅱ Proses Ⅶ: Kembalinya sang Penjaga yang Mengembara]",
+        "completeDesc": "Secara perlahan hatinya tetap tertahan di tengah lumpur kematian yang berlapis-lapis ... menuju tempat yang akan menumbuhkan dan memupuk harapan."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e11m7": {
+    "name": "“Berakhirnya Luka yang Meratap”",
+    "category": "Bab",
+    "group": "Misi Utama",
+    "levels": {
+      "3": {
+        "desc": "Selesaikan misi utama [Bab Ⅱ Proses Ⅶ: Kepulangan]",
+        "completeDesc": "Luka yang berdarah itu tak akan lagi menimbulkan rasa sakit."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e1m2": {
+    "name": "“Core ex Machina”",
+    "category": "Bab",
+    "group": "Misi Utama",
+    "levels": {
+      "3": {
+        "desc": "Panggil hasil dari pencapaian teknologi besar",
+        "completeDesc": "Masa depan pengembangan perbatasan kini hadir di Lembah IV."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e1m8": {
+    "name": "“Tinju Meleset”",
+    "category": "Bab",
+    "group": "Misi Utama",
+    "levels": {
+      "3": {
+        "desc": "Selesaikan misi utama [Bab Ⅰ Proses Ⅰ: Aksi di Benteng]",
+        "completeDesc": "Kamu telah mengalahkan “Tinju Bonekrusher”. \nMerengkuh Æther dan menyambut masa depan baru? Apa pendapatmu tentang pidato Nefarith?"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e2m1": {
+    "name": "“Pengungsi Melawan?!”",
+    "category": "Bab",
+    "group": "Misi Utama",
+    "levels": {
+      "3": {
+        "desc": "Saksikan serangan yang sedang berlangsung",
+        "completeDesc": "Kamu menyaksikan “ledakan” yang tak terduga. \nTernyata Pembangkit Listrik itu tak setangguh penampilannya."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e2m8": {
+    "name": "“Serpihan Bintang yang Hancur”",
+    "category": "Bab",
+    "group": "Misi Utama",
+    "levels": {
+      "3": {
+        "desc": "Selesaikan misi utama [Bab Ⅰ Proses Ⅲ: Buaian Zaman]",
+        "completeDesc": "Kamu menaklukkan Aggelos yang setengah bangkit dan berukuran raksasa."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e3m5": {
+    "name": "“Menutup Celah”",
+    "category": "Bab",
+    "group": "Misi Utama",
+    "levels": {
+      "3": {
+        "desc": "Selesaikan misi utama [Bab Ⅰ Proses Ⅳ: Bara Abadi]",
+        "completeDesc": "Kamu dan tim telah bertarung habis-habisan dan menutup celah yang hampir menelan seluruh Lembah IV."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e4m1": {
+    "name": "“Kembalinya Pertanda Petaka”",
+    "category": "Bab",
+    "group": "Misi Utama",
+    "levels": {
+      "3": {
+        "desc": "Selesaikan misi utama [Antarmisi: Konferensi Empat Pihak]",
+        "completeDesc": "Pertanda mencemaskan muncul di seluruh Talos-II. Perjalananmu masih panjang."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e6m1": {
+    "name": "“Kunjungan Pertama ke Wuling”",
+    "category": "Bab",
+    "group": "Misi Utama",
+    "levels": {
+      "3": {
+        "desc": "Capai kota baru",
+        "completeDesc": "Kamu sampai di Kota Wuling."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e7m4": {
+    "name": "“Tenggelam di Air”",
+    "category": "Bab",
+    "group": "Misi Utama",
+    "levels": {
+      "3": {
+        "desc": "Selesaikan misi utama [Bab Ⅱ Proses Ⅲ: Mengalir dari Mata Air yang Mengering]",
+        "completeDesc": "Sebuah janji dan sebuah pilihan.\nJalan lama tenggelam dalam riak bening, tapi di manakah jalan baru yang harus ditempuh orang-orang ini?"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e8m4": {
+    "name": "“Dewa Terakhir yang Kusembah”",
+    "category": "Bab",
+    "group": "Misi Utama",
+    "levels": {
+      "3": {
+        "desc": "Berpisah dengan Ardashir di suatu lokasi strategis",
+        "completeDesc": "Ardashir memandangmu. Dia melihat apa yang tak bisa kamu lihat, hal-hal yang telah kamu lupakan."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e9m3": {
+    "name": "“Tumbangnya sang Penakluk”",
+    "category": "Bab",
+    "group": "Misi Utama",
+    "levels": {
+      "3": {
+        "desc": "Selesaikan misi utama [Bab Ⅱ Proses Ⅴ: Pertempuran Pilar Utama]",
+        "completeDesc": "Dia adalah penakluk yang hatinya terbakar oleh ambisi, yang tak ragu mengorbankan puluhan ribu jiwa demi bisa melihat sekilas dunia terlarang. Kamu berhasil mengalahkan kejahatan Nefarith."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_gm02m22": {
+    "name": "“Takdir di Bawah Salju”",
+    "category": "Bab",
+    "group": "Misi Eksplorasi",
+    "levels": {
+      "1": {
+        "desc": "Selesaikan misi sampingan [Terangnya Takdir] dan [Perjalanan Seumur Hidup]",
+        "completeDesc": "Seorang Snowpriest meninggalkan tulisan dan tekadnya ... serta membiarkan salju mengubur takdirnya. Tapi, seorang gadis lembut yang teguh menyingkirkan salju itu dan berhasil mengungkap akhir takdirnya."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_gm02m27": {
+    "name": "“Biarkan Suiming Menerangi Jalan”",
+    "category": "Bab",
+    "group": "Misi Eksplorasi",
+    "levels": {
+      "2": {
+        "desc": "Selesaikan misi sampingan [Lonceng Kembalinya Ingatan]",
+        "completeDesc": "Lonceng berdentang lagi, hatiku kembali mengejar terang."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_laevat": {
+    "name": "“Biarkan Api Membakar Abu Masa Lalu”",
+    "category": "Bab",
+    "group": "Misi Eksplorasi",
+    "levels": {
+      "2": {
+        "desc": "Selesaikan misi sampingan [Biarkan Api Membakar Abu Masa Lalu]",
+        "completeDesc": "Luka-luka ingatan bisa saja berubah dalam api. \nWalau kepingan-kepingan masa lalu tertimbun menjadi gunungan tinggi, kamu tetap menggenggam tangan Laevatain dan keluar dari koridor tanpa ujung itu."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_liino": {
+    "name": "“Bagaikan Bintang Melesat Menembus Batas”",
+    "category": "Bab",
+    "group": "Misi Eksplorasi",
+    "levels": {
+      "2": {
+        "desc": "Selesaikan misi sampingan [Bagaikan Bintang Melesat Menembus Batas]",
+        "completeDesc": "Endfield Industries akhirnya punya idola duta merek sendiri .... Kita harus mulai gladi bersih, pertunjukan, dan .... Astaga. Banyak sekali yang harus dilakukan."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_mifu": {
+    "name": "“Segenggam Refleksi”",
+    "category": "Bab",
+    "group": "Misi Eksplorasi",
+    "levels": {
+      "2": {
+        "desc": "Selesaikan misi sampingan [Segenggam Refleksi]",
+        "completeDesc": "Tinju mereka meragukan tekadku, tapi Qi-ku menghantam tanah dan menantang guntur itu sendiri."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_typhoea": {
+    "name": "“Mimpi Musim Dingin di Kedalaman Hutan Berkabut”",
+    "category": "Bab",
+    "group": "Misi Eksplorasi",
+    "levels": {
+      "2": {
+        "desc": "Selesaikan misi sampingan [Mimpi Musim Dingin di Kedalaman Hutan Berkabut]",
+        "completeDesc": "Kau mengikuti pandangannya yang mencari, melacak panah penunjuk arah, menerjang angin dingin menembus kabut dan mimpi ... serta mendengar gemanya di Hutan Salju."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_wolfgd": {
+    "name": "“Serigala Penyendiri”",
+    "category": "Bab",
+    "group": "Misi Eksplorasi",
+    "levels": {
+      "2": {
+        "desc": "Selesaikan misi sampingan [Serigala Penyendiri]",
+        "completeDesc": "Wulfgard menemukan kebenarannya dan menghukum si pengkhianat. \nDia menancapkan belatinya di tanah di depan makam .... Kawanan telah berubah. Dia tahu apa yang harus dilakukan."
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_wulfa": {
+    "name": "“Kesatria Merah”",
+    "category": "Bab",
+    "group": "Misi Eksplorasi",
+    "levels": {
+      "2": {
+        "desc": "Selesaikan misi sampingan [Kesatria Merah]",
+        "completeDesc": "Saat para pengelana tiba di dunia anak-anak, mereka berhenti sejenak untuk melepas lelah.\nSiapa yang masih ingat parut di lutut dari masa kanak-kanak yang terlupakan?"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_yvonne": {
+    "name": "“Cinta, Jeritan & Prototipe”",
+    "category": "Bab",
+    "group": "Misi Eksplorasi",
+    "levels": {
+      "2": {
+        "desc": "Selesaikan misi sampingan [Cinta, Jeritan & Prototipe]",
+        "completeDesc": "Satu kerat pigmen terlambat tiba. \nKamu mengikuti jejak Tata dan membuat berbagai grafiti. Lewat warna-warna ini, Yvonne melihat potensi pertemuan kembali."
+      }
+    },
+    "plating": null
+  },
+  "achv_side_mission_count": {
+    "name": "Altruis Sejati",
+    "category": "Bab",
+    "group": "Misi Eksplorasi",
+    "levels": {
+      "1": {
+        "desc": "Selesaikan 30 misi eksplorasi",
+        "completeDesc": "Kamu membantu banyak orang mengatasi masalah mereka."
+      },
+      "2": {
+        "desc": "Selesaikan 40 misi eksplorasi",
+        "completeDesc": "Kamu membantu banyak orang mengatasi masalah mereka. \nTak semuanya melibatkan pertarungan, dan targetmu jauh melampaui upah."
+      },
+      "3": {
+        "desc": "Selesaikan 50 misi eksplorasi",
+        "completeDesc": "Kamu membantu banyak orang mengatasi masalah mereka. \nMereka yang merasa terbantu pasti akan menolong yang lain juga. Penduduk Talos-II harus mulai saling mendukung."
+      }
+    },
+    "plating": null
+  },
+  "achv_social_building": {
+    "name": "Harus Ada",
+    "category": "Sosial",
+    "group": "Sosial",
+    "levels": {
+      "1": {
+        "desc": "Fasilitas kolektif mendapatkan 50 perbaikan",
+        "completeDesc": "Fasilitasmu telah menerima beberapa perbaikan."
+      },
+      "2": {
+        "desc": "Fasilitas kolektif mendapatkan 200 perbaikan",
+        "completeDesc": "Fasilitasmu telah menerima banyak perbaikan."
+      },
+      "3": {
+        "desc": "Fasilitas kolektif mendapatkan 500 perbaikan",
+        "completeDesc": "Fasilitasmu telah menerima banyak sekali perbaikan. \nBantuanmu terbukti berdampak luas, dan mereka yang merasa terbantu pun merasa terikat dengan fasilitasmu. Mereka melakukan segala cara untuk membuat mesin pabrik tetap beroperasi."
+      }
+    },
+    "plating": null
+  },
+  "achv_social_spaceship_be_helped": {
+    "name": "Penerima Bantuan",
+    "category": "Sosial",
+    "group": "Sosial",
+    "levels": {
+      "2": {
+        "desc": "Dapatkan 100 bantuan produksi dari temanmu",
+        "completeDesc": "Fasilitas produksi yang kamu bangun di Dijiang bekerja dengan efisien berkat bantuan dari teman-temanmu."
+      }
+    },
+    "plating": null
+  },
+  "achv_social_spaceship_help": {
+    "name": "Penolong Murah Hati",
+    "category": "Sosial",
+    "group": "Sosial",
+    "levels": {
+      "1": {
+        "desc": "Berikan 50 bantuan produksi kepada temanmu",
+        "completeDesc": "Kamu sudah menawarkan banyak bantuan produksi kepada teman-temanmu. \nTalos-II bisa maju berkat kepedulianmu."
+      }
+    },
+    "plating": null
+  },
+  "achv_social_spaceship_info_exchange": {
+    "name": "Penukar Petunjuk",
+    "category": "Sosial",
+    "group": "Sosial",
+    "levels": {
+      "1": {
+        "desc": "Ikut serta dalam total 50 pertukaran petunjuk.",
+        "completeDesc": "Kamu sudah melakukan sejumlah pertukaran petunjuk. \nDunia berkembang seiring dengan visimu dan intel yang kamu kumpulkan."
+      }
+    },
+    "plating": null
+  }
+}

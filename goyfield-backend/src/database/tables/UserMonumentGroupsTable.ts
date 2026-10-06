@@ -36,7 +36,8 @@ export class UserMonumentGroupsTable extends Table<Prisma.UserMonumentGroupDeleg
             }
         });
 
-        return entities.map(entity => new UserMonumentGroupRecord(entity));
+        const entityMap = new Map(entities.map(e => [e.id, e]));
+        return ids.map(id => entityMap.get(id)).filter((e): e is NonNullable<typeof e> => Boolean(e)).map(entity => new UserMonumentGroupRecord(entity));
     }
 
     public async findManyIncludeGameProfileAndUser(ids: string[]): Promise<{
@@ -59,13 +60,17 @@ export class UserMonumentGroupsTable extends Table<Prisma.UserMonumentGroupDeleg
             }
         });
 
-        return entities.map(e => {
+        const entityMap = new Map(entities.map(e => [e.id, e]));
+
+        return ids.map(id => {
+            const e = entityMap.get(id);
+            if (!e) return null;
             return {
                 group: new UserMonumentGroupRecord(e),
                 gameProfile: UserGameProfileRecord.createFromEntity(e.userGameProfile),
                 user: new UserRecord(e.userGameProfile.user)
             };
-        });
+        }).filter((item): item is NonNullable<typeof item> => Boolean(item));
     }
 
     public async findManyByGroupId(groupId: string, isHard?: boolean, gameUid?: string): Promise<UserMonumentGroupRecord[]> {

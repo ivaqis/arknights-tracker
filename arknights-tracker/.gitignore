@@ -28,3 +28,6 @@ src/lib/locales/*.json.bak
 # Large media assets
 static/audio
 
+# Scratch
+scratch/
+**/scratch/

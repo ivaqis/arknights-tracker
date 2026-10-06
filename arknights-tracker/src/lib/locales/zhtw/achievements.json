@@ -1,0 +1,2086 @@
+{
+  "achv_adv_tundra_box": {
+    "name": "谷地儲藏家獎章",
+    "category": "地區獎章",
+    "group": "谷地地區獎章",
+    "levels": {
+      "1": {
+        "desc": "於四號谷地開啟120個儲藏箱",
+        "completeDesc": "您已開啟了四號谷地的部分儲藏箱。"
+      },
+      "2": {
+        "desc": "於四號谷地開啟180個儲藏箱",
+        "completeDesc": "您已開啟了四號谷地的大部分儲藏箱。"
+      },
+      "3": {
+        "desc": "於四號谷地開啟288個儲藏箱",
+        "completeDesc": "四號谷地的所有儲藏箱在您眼中無所遁形！\n噢，鎖閉構造開啟的聲音多麼悅耳。"
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_tundra_campfire": {
+    "name": "錨定谷地獎章",
+    "category": "地區獎章",
+    "group": "谷地地區獎章",
+    "levels": {
+      "1": {
+        "desc": "於四號谷地解鎖14個協議傳送點",
+        "completeDesc": "您已初步喚醒了四號谷地的協議網路。"
+      },
+      "2": {
+        "desc": "於四號谷地解鎖28個協議傳送點",
+        "completeDesc": "您已完全建構了四號谷地的協議網路。"
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_tundra_documents": {
+    "name": "谷地調查者獎章",
+    "category": "地區獎章",
+    "group": "谷地地區獎章",
+    "levels": {
+      "2": {
+        "desc": "於四號谷地收集4份調查報告",
+        "completeDesc": "事無鉅細，您留意到了散落於四號谷地角落的情報。"
+      },
+      "3": {
+        "desc": "於四號谷地收集6份調查報告",
+        "completeDesc": "事無鉅細，您細心留意到了散落於四號谷地角落的情報。\n一張紙片，一頁雜誌……大事往往隱於微末。"
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_tundra_ether": {
+    "name": "「碎片的再會」",
+    "category": "地區獎章",
+    "group": "谷地地區獎章",
+    "levels": {
+      "1": {
+        "desc": "於四號谷地收集80個醚質",
+        "completeDesc": "初始之物的遺失片段正於您手中再會。"
+      },
+      "2": {
+        "desc": "於四號谷地收集120個醚質",
+        "completeDesc": "初始之物的遺失片段正於您手中再會。\n它曾是舊日榮光的一角。"
+      },
+      "3": {
+        "desc": "於四號谷地收集166個醚質",
+        "completeDesc": "初始之物的遺失片段正於您手中再會。\n它代表著我們終將抵達的終點、希望和夢。"
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_tundra_fixablerobot": {
+    "name": "「Delta救星」",
+    "category": "地區獎章",
+    "group": "谷地地區獎章",
+    "levels": {
+      "1": {
+        "desc": "於四號谷地修復25個Delta機器人",
+        "completeDesc": "我們收到了大量二進位資料，經轉換，傳送者似乎在向您表達感謝。"
+      },
+      "2": {
+        "desc": "於四號谷地修復35個Delta機器人",
+        "completeDesc": "我們收到了大量二進位資料，經轉換，傳送者似乎在表示願為您赴湯蹈火。"
+      },
+      "3": {
+        "desc": "於四號谷地修復43個Delta機器人",
+        "completeDesc": "我們收到了大量二進位數據，經轉譯，傳送者似乎迫切想要尊您為「Delta救星，眾機器人的拯救者，四號谷地機械之王」。"
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_tundra_running": {
+    "name": "「比肩傳送」",
+    "category": "地區獎章",
+    "group": "谷地地區獎章",
+    "levels": {
+      "1": {
+        "desc": "於四號谷地贏下4場賽跑挑戰",
+        "completeDesc": "部分對手懷疑您在隱蔽角落偷偷使用了協議傳送技術直達終點。"
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_arrow": {
+    "name": "「安瑪的指引」",
+    "category": "地區獎章",
+    "group": "武陵地區獎章",
+    "levels": {
+      "2": {
+        "desc": "使用提弗洛斯的弓箭，擊破雪松林所有的符文",
+        "completeDesc": "白矢破空，得益於安瑪的饋贈，您已擊碎所有迷霧。"
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_balloon": {
+    "name": "浮空回收獎章",
+    "category": "地區獎章",
+    "group": "武陵地區獎章",
+    "levels": {
+      "1": {
+        "desc": "於應龍關和北部禁區完成26次浮空回收",
+        "completeDesc": "天空為您備好了航道，您已掌握高效低成本的運輸手段。"
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_blackhole_clean": {
+    "name": "裂隙縫合獎章",
+    "category": "地區獎章",
+    "group": "武陵地區獎章",
+    "levels": {
+      "3": {
+        "desc": "於北部禁區消滅5個裂隙",
+        "completeDesc": "現實的裂痕被您縫合，人心中的創傷被您治癒。"
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_box_1": {
+    "name": "武陵儲藏家獎章·I",
+    "category": "地區獎章",
+    "group": "武陵地區獎章",
+    "levels": {
+      "3": {
+        "desc": "於景玉谷和武陵城開啟227個儲藏箱",
+        "completeDesc": "您已開啟了武陵的部分儲藏箱。"
+      }
+    },
+    "plating": {
+      "desc": "於景玉谷和武陵城開啟242個儲藏箱"
+    }
+  },
+  "achv_adv_wuling_box_2": {
+    "name": "武陵儲藏家獎章·II",
+    "category": "地區獎章",
+    "group": "武陵地區獎章",
+    "levels": {
+      "2": {
+        "desc": "於清波寨、首墩、首墩內部和實驗園區開啟121個儲藏箱",
+        "completeDesc": "您已開啟了武陵的大部分儲藏箱。"
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_box_3": {
+    "name": "武陵儲藏家獎章·III",
+    "category": "地區獎章",
+    "group": "武陵地區獎章",
+    "levels": {
+      "2": {
+        "desc": "於藏劍谷、應龍關和北部禁區開啟151個儲藏箱",
+        "completeDesc": "您已開啟了武陵的大部分儲藏箱。您總能發現被放置於各處的物資。"
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_bugball": {
+    "name": "「蟲球滿貫」",
+    "category": "地區獎章",
+    "group": "武陵地區獎章",
+    "levels": {
+      "2": {
+        "desc": "將18隻源石蟲踢入遂明大坑內",
+        "completeDesc": "您的技巧遠勝於記憶中的幻影，每一次踢擊都精準、穩定、恰到好處。"
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_campfire_1": {
+    "name": "錨定武陵獎章·I",
+    "category": "地區獎章",
+    "group": "武陵地區獎章",
+    "levels": {
+      "1": {
+        "desc": "於景玉谷和武陵城解鎖19個協議傳送點",
+        "completeDesc": "您已初步喚醒了武陵的協議網路。"
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_campfire_2": {
+    "name": "錨定武陵獎章·II",
+    "category": "地區獎章",
+    "group": "武陵地區獎章",
+    "levels": {
+      "1": {
+        "desc": "於清波寨、首墩、首墩內部和實驗園區解鎖19個協議傳送點",
+        "completeDesc": "您已進一步喚醒了武陵的協議網路。"
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_campfire_3": {
+    "name": "錨定武陵獎章·III",
+    "category": "地區獎章",
+    "group": "武陵地區獎章",
+    "levels": {
+      "1": {
+        "desc": "於藏劍谷、應龍關和北部禁區解鎖22個協議傳送點",
+        "completeDesc": "您已更深度地喚醒了武陵的協議網路。"
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_clean": {
+    "name": "「滌蕩濁流」",
+    "category": "地區獎章",
+    "group": "武陵地區獎章",
+    "levels": {
+      "1": {
+        "desc": "消除清波寨的所有侵蝕",
+        "completeDesc": "您已消除了清波寨內阻礙前行的侵蝕。"
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_documents_1": {
+    "name": "武陵調查者獎章·I",
+    "category": "地區獎章",
+    "group": "武陵地區獎章",
+    "levels": {
+      "2": {
+        "desc": "於景玉谷和武陵城收集2份調查報告",
+        "completeDesc": "事無鉅細，您留意到了散落於武陵角落的情報。"
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_ether_1": {
+    "name": "「碎片的重聚」·I",
+    "category": "地區獎章",
+    "group": "武陵地區獎章",
+    "levels": {
+      "3": {
+        "desc": "於景玉谷和武陵城收集74個醚質",
+        "completeDesc": "初始之物的遺失片段正於您手中重聚。"
+      }
+    },
+    "plating": {
+      "desc": "於景玉谷和武陵城收集81個醚質"
+    }
+  },
+  "achv_adv_wuling_ether_2": {
+    "name": "「碎片的重聚」·II",
+    "category": "地區獎章",
+    "group": "武陵地區獎章",
+    "levels": {
+      "2": {
+        "desc": "於清波寨、首墩、首墩內部和實驗園區收集59個醚質",
+        "completeDesc": "初始之物的更多遺失片段正於您手中重聚。"
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_ether_3": {
+    "name": "「碎片的重聚」·III",
+    "category": "地區獎章",
+    "group": "武陵地區獎章",
+    "levels": {
+      "2": {
+        "desc": "於藏劍谷、應龍關和北部禁區收集59個醚質",
+        "completeDesc": "初始之物的大量遺失片段正於您手中重聚。失落的碎片已感受到了您的呼喚。"
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_find_difference": {
+    "name": "印記辨識獎章",
+    "category": "地區獎章",
+    "group": "武陵地區獎章",
+    "levels": {
+      "2": {
+        "desc": "於應龍關和北部禁區解開8個百相儀",
+        "completeDesc": "您能清晰地辨別諸多線條與符號，資訊在您的目光中收斂。"
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_floor_1": {
+    "name": "「羽獸三抄水」",
+    "category": "地區獎章",
+    "group": "武陵地區獎章",
+    "levels": {
+      "1": {
+        "desc": "啟動景玉谷和武陵城的8組壓力板",
+        "completeDesc": "您以精妙的身法在壓力板間躍動，成功使其恢復了完美的平衡。\n「好一手羽獸三抄水！」"
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_floor_2": {
+    "name": "「羽獸三抄水·其之二」",
+    "category": "地區獎章",
+    "group": "武陵地區獎章",
+    "levels": {
+      "1": {
+        "desc": "啟動清波寨、首墩、首墩內部和實驗園區的6組壓力板",
+        "completeDesc": "您再一次以精妙的身法在壓力板間躍動，成功使其恢復了完美的平衡。\n「好一手羽獸三點頭！」"
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_frog_1": {
+    "name": "「擊股傳蟲」",
+    "category": "地區獎章",
+    "group": "武陵地區獎章",
+    "levels": {
+      "1": {
+        "desc": "完成景玉谷和武陵城的6次螢火蟲傳遞",
+        "completeDesc": "真是一個好玩伴。經分析，這似乎是長股獸們向您道謝，邀您再來的鳴聲。\n「呱呱呱，呱呱呱呱呱」"
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_frog_2": {
+    "name": "「擊股傳蟲·其之二」",
+    "category": "地區獎章",
+    "group": "武陵地區獎章",
+    "levels": {
+      "1": {
+        "desc": "完成清波寨、首墩、首墩內部和實驗園區的3次螢火蟲傳遞",
+        "completeDesc": "您又陪同長股獸玩耍了一番。經分析，這似乎是長股獸們向您道謝，邀您再來的鳴聲。\n「呱呱呱呱呱呱，呱呱呱呱呱。」"
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_hyper_clean": {
+    "name": "超活躍消除獎章",
+    "category": "地區獎章",
+    "group": "武陵地區獎章",
+    "levels": {
+      "1": {
+        "desc": "消除藏劍谷所有的超活躍侵蝕",
+        "completeDesc": "您已成功消除了許多超活躍侵蝕。"
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_minimap_1": {
+    "name": "遂明儲藏家獎章",
+    "category": "地區獎章",
+    "group": "武陵地區獎章",
+    "levels": {
+      "2": {
+        "desc": "於遂明開啟28個儲藏箱",
+        "completeDesc": "您已開啟了遂明的所有儲藏箱。哪怕它們只存在於往昔的故事之中。"
+      }
+    },
+    "plating": null
+  },
+  "achv_adv_wuling_watergun_1": {
+    "name": "「軌道激流」",
+    "category": "地區獎章",
+    "group": "武陵地區獎章",
+    "levels": {
+      "1": {
+        "desc": "復位武陵城的8組息壤導流軌道系統",
+        "completeDesc": "您已調整好了多個息壤導流軌道系統。"
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_charged": {
+    "name": "熟練截擊獎章",
+    "category": "技藝獎章",
+    "group": "戰鬥技巧獎章",
+    "levels": {
+      "1": {
+        "desc": "於戰鬥中累計打斷30次敵人的蓄力狀態",
+        "completeDesc": "您已能熟練截斷敵人攻勢。"
+      },
+      "2": {
+        "desc": "於戰鬥中累計打斷50次敵人的蓄力狀態",
+        "completeDesc": "您已經能夠在敵人攻擊行動展開的瞬間就將之截斷。"
+      },
+      "3": {
+        "desc": "於戰鬥中累計打斷100次敵人的蓄力狀態",
+        "completeDesc": "即便是再微小的敵意也能被您察覺，即便是再隱蔽的動作也能被您遏止。"
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_charged_hsbear": {
+    "name": "「截雷」",
+    "category": "技藝獎章",
+    "group": "戰鬥技巧獎章",
+    "levels": {
+      "2": {
+        "desc": "於戰鬥中打斷天鼓的咆哮聲波",
+        "completeDesc": "您成功扼住了雷鳴的咽喉。"
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_comboskill": {
+    "name": "攜手對敵獎章",
+    "category": "技藝獎章",
+    "group": "戰鬥技巧獎章",
+    "levels": {
+      "1": {
+        "desc": "於戰鬥中累計施放500次連攜技",
+        "completeDesc": "您的幹員們已經歷磨合，能夠展開合作，攜手對敵。"
+      },
+      "2": {
+        "desc": "於戰鬥中累計施放1000次連攜技",
+        "completeDesc": "您的幹員們已經歷磨合，能夠敏銳捕捉時機，協同作戰。"
+      },
+      "3": {
+        "desc": "於戰鬥中累計施放2000次連攜技",
+        "completeDesc": "您的幹員們已經歷磨合，協同互助已是他們作戰的主要方式。\n彼此之間的信任，這正是我們行向盡頭的倚仗。"
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_defeat_agtrinit": {
+    "name": "「星體的殘肢」",
+    "category": "技藝獎章",
+    "group": "戰鬥技巧獎章",
+    "levels": {
+      "3": {
+        "desc": "通關「危境禍影·三位一體」",
+        "completeDesc": "在協議空間的幻影中，您阻止了象徵著毀滅的星體重歸大地。"
+      }
+    },
+    "plating": {
+      "desc": "在240秒內通關「危境禍影·三位一體」"
+    }
+  },
+  "achv_bat_defeat_bigtree": {
+    "name": "「幽林於此沉寂」",
+    "category": "技藝獎章",
+    "group": "戰鬥技巧獎章",
+    "levels": {
+      "2": {
+        "desc": "擊敗幽林之怒",
+        "completeDesc": "您熄滅了幽林的怒火，忠心耿耿的造物不再怨恨與憤怒，這片天地歸於寂靜平和。"
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_defeat_dodge_jzogre": {
+    "name": "「穿風以行」",
+    "category": "技藝獎章",
+    "group": "戰鬥技巧獎章",
+    "levels": {
+      "2": {
+        "desc": "在披甲裂獸的九連旋轉攻擊中，主控幹員極限閃避5次以上攻擊，且在此攻擊全程中未受到傷害",
+        "completeDesc": "您於沉重的風暴中靈巧移動，與每一道足以撕裂血肉的嘶吼擦身而過。"
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_defeat_ethillu": {
+    "name": "「不穩定表象」",
+    "category": "技藝獎章",
+    "group": "戰鬥技巧獎章",
+    "levels": {
+      "2": {
+        "desc": "於戰鬥中，在「表象」重生後的2秒內將其擊敗",
+        "completeDesc": "您看破了表象，驅散了不穩定之物。"
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_defeat_fdcentur": {
+    "name": "「熄滅火炬」",
+    "category": "技藝獎章",
+    "group": "戰鬥技巧獎章",
+    "levels": {
+      "3": {
+        "desc": "通關「危境禍影·阿萊克琉斯，千夫長」",
+        "completeDesc": "在協議空間的幻影中，歸來者舉起的願景、邀約，連同其所播散的火光被輕輕熄滅。"
+      }
+    },
+    "plating": {
+      "desc": "在200秒內通關「危境禍影·阿萊克琉斯，千夫長」"
+    }
+  },
+  "achv_bat_defeat_hsbear": {
+    "name": "「偃旗息鼓」",
+    "category": "技藝獎章",
+    "group": "戰鬥技巧獎章",
+    "levels": {
+      "2": {
+        "desc": "擊敗天鼓",
+        "completeDesc": "您已使野性的大旗折斷，已使轟鳴的大鼓息聲。"
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_defeat_jzmking": {
+    "name": "「獸王降伏」",
+    "category": "技藝獎章",
+    "group": "戰鬥技巧獎章",
+    "levels": {
+      "2": {
+        "desc": "擊敗巨山犼獸",
+        "completeDesc": "您降服了獸群的首領，或許您可以成為牠們的新王？"
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_defeat_klbear": {
+    "name": "「雷噪止息」",
+    "category": "技藝獎章",
+    "group": "戰鬥技巧獎章",
+    "levels": {
+      "2": {
+        "desc": "擊敗蝕影噪雷",
+        "completeDesc": "牠的咆哮聲趨於平靜，就像牠幼小時那樣。"
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_defeat_nefarp": {
+    "name": "「征服者的遺恨」",
+    "category": "技藝獎章",
+    "group": "戰鬥技巧獎章",
+    "levels": {
+      "3": {
+        "desc": "通關「危境禍影·聶菲斯」",
+        "completeDesc": "在協議空間的幻影中，她癲狂的野心與輕蔑的笑聲就此消散。"
+      }
+    },
+    "plating": {
+      "desc": "在200秒內通關「危境禍影·聶菲斯」"
+    }
+  },
+  "achv_bat_defeat_palesent": {
+    "name": "「蒼白的潰滅」",
+    "category": "技藝獎章",
+    "group": "戰鬥技巧獎章",
+    "levels": {
+      "3": {
+        "desc": "通關「危境禍影·白堊界衛」",
+        "completeDesc": "在協議空間的幻影中，您再一次擊潰了蒼白的巨像。"
+      }
+    },
+    "plating": {
+      "desc": "在240秒內通關「危境禍影·白堊界衛」"
+    }
+  },
+  "achv_bat_defeat_rodin": {
+    "name": "「碾碎拳骨」",
+    "category": "技藝獎章",
+    "group": "戰鬥技巧獎章",
+    "levels": {
+      "3": {
+        "desc": "通關「危境狂影·羅丹」",
+        "completeDesc": "在協議空間的幻影中，他暴力、狂熱、憤怒的前路亦會被您截斷。"
+      }
+    },
+    "plating": {
+      "desc": "在120秒內通關「危境狂影·羅丹」"
+    }
+  },
+  "achv_bat_defeat_ruanyi": {
+    "name": "「枯枝忿怒，復歸凋零」",
+    "category": "技藝獎章",
+    "group": "戰鬥技巧獎章",
+    "levels": {
+      "3": {
+        "desc": "通關「危境禍影·阮一」",
+        "completeDesc": "在協議空間的幻影中，他自那個雨夜燃起的仇怨之火復歸凋零。"
+      }
+    },
+    "plating": {
+      "desc": "在200秒內通關「危境禍影·阮一」"
+    }
+  },
+  "achv_bat_dung_char": {
+    "name": "幹員教學獎章",
+    "category": "技藝獎章",
+    "group": "協議空間獎章",
+    "levels": {
+      "1": {
+        "desc": "通關任意5個幹員教學",
+        "completeDesc": "幹員們的作戰風格，您熟記於心。"
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_dung_resource": {
+    "name": "材料收集獎章",
+    "category": "技藝獎章",
+    "group": "協議空間獎章",
+    "levels": {
+      "2": {
+        "desc": "通關以下協議空間\n「協議空間·幹員經驗」的「噩夢昭顯之地」\n「協議空間·錢幣收集」的「金幣之祝」\n「協議空間·幹員進階」的「心照亂海」\n「協議空間·技能提升」的「高塔幻景」\n「協議空間·武器經驗」的「銃匠們的埋骨塚」\n「協議空間·武器進階」的「錘鍛檢定Lv.5」",
+        "completeDesc": "即便是最危險的協議空間，亦無法阻止您尋得培養幹員的資源。"
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_dung_ss": {
+    "name": "高階培養獎章",
+    "category": "技藝獎章",
+    "group": "協議空間獎章",
+    "levels": {
+      "2": {
+        "desc": "通關所有「協議空間·高階培養」",
+        "completeDesc": "即便是最危險的協議空間，亦無法阻止您為幹員們找到最頂尖的材料。"
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_enemyspawner": {
+    "name": "淤積清理獎章",
+    "category": "技藝獎章",
+    "group": "協議空間獎章",
+    "levels": {
+      "2": {
+        "desc": "探索等級達到7級後，通關5個不同的重度能量淤積點",
+        "completeDesc": "淤積於大地上的超域能量消散了，但它仍會重聚。"
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_eny_ace": {
+    "name": "全面抹除獎章",
+    "category": "技藝獎章",
+    "group": "戰鬥技巧獎章",
+    "levels": {
+      "2": {
+        "desc": "單次傷害同時擊敗至少5個敵人",
+        "completeDesc": "我們或許可以相信，在某一天，您甚至能夠擁有僅靠眼神抹消敵人的能力。"
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_eny_building_kill": {
+    "name": "智慧化殲滅獎章",
+    "category": "技藝獎章",
+    "group": "戰鬥技巧獎章",
+    "levels": {
+      "1": {
+        "desc": "使用作戰設備累計擊敗10個敵人",
+        "completeDesc": "您的作戰設備初顯威力。"
+      },
+      "2": {
+        "desc": "使用作戰設備累計擊敗100個敵人",
+        "completeDesc": "您的作戰設備正在沉穩對敵。"
+      },
+      "3": {
+        "desc": "使用作戰設備累計擊敗500個敵人",
+        "completeDesc": "擁有這樣高效的殺戮機器，您似乎已不必親至險地。"
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_eny_cannot_move": {
+    "name": "多維禁錮獎章",
+    "category": "技藝獎章",
+    "group": "戰鬥技巧獎章",
+    "levels": {
+      "2": {
+        "desc": "於戰鬥中讓同一個敵人連續20秒無法行動",
+        "completeDesc": "多方位全面壓制，您的戰鬥技巧令人讚嘆。"
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_frozen": {
+    "name": "「熵減」",
+    "category": "技藝獎章",
+    "group": "戰鬥技巧獎章",
+    "levels": {
+      "1": {
+        "desc": "戰鬥中任意幹員被凍結10次",
+        "completeDesc": "寒氣束縛了您的腳步，這是它的挽留。"
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_hard_1": {
+    "name": "「無機造物」",
+    "category": "技藝獎章",
+    "group": "協議空間獎章",
+    "levels": {
+      "2": {
+        "desc": "在「影拓豐碑」中，通關普通模式「無機造物」的所有關卡",
+        "completeDesc": "您體驗了人類與天使間生死之爭的縮影，您再一次於豐碑上刻下了自己的名字。"
+      }
+    },
+    "plating": {
+      "desc": "在「影拓豐碑」中，通關苦難模式「無機造物」的所有關卡"
+    }
+  },
+  "achv_bat_hard_2": {
+    "name": "「大地的棄子」",
+    "category": "技藝獎章",
+    "group": "協議空間獎章",
+    "levels": {
+      "2": {
+        "desc": "在「影拓豐碑」中，通關普通模式「大地的棄子」的所有關卡",
+        "completeDesc": "您面對了那些殘酷撕扯文明血肉之人，您再一次於豐碑上刻下了自己的名字。"
+      }
+    },
+    "plating": {
+      "desc": "在「影拓豐碑」中，通關苦難模式「大地的棄子」的所有關卡"
+    }
+  },
+  "achv_bat_hard_3": {
+    "name": "「灼痛疤痕」",
+    "category": "技藝獎章",
+    "group": "協議空間獎章",
+    "levels": {
+      "2": {
+        "desc": "在「影拓豐碑」中，通關普通模式「灼痛疤痕」的所有關卡",
+        "completeDesc": "您剖開了灼痛著的疤痕，讓其中的暴虐逸散乾淨，您再一次於豐碑上刻下了自己的名字。"
+      }
+    },
+    "plating": {
+      "desc": "在「影拓豐碑」中，通關苦難模式「灼痛疤痕」的所有關卡"
+    }
+  },
+  "achv_bat_hard_4": {
+    "name": "「濁流具現」",
+    "category": "技藝獎章",
+    "group": "協議空間獎章",
+    "levels": {
+      "2": {
+        "desc": "在「影拓豐碑」中，通關普通模式「濁流具現」的所有關卡",
+        "completeDesc": "您在淹沒一切的恐怖濁流中屹立不倒，您再一次於豐碑上刻下了自己的名字。"
+      }
+    },
+    "plating": {
+      "desc": "在「影拓豐碑」中，通關苦難模式「濁流具現」的所有關卡"
+    }
+  },
+  "achv_bat_hard_5": {
+    "name": "「死寂爭鳴」",
+    "category": "技藝獎章",
+    "group": "協議空間獎章",
+    "levels": {
+      "2": {
+        "desc": "在「影拓豐碑」中，通關普通模式「死寂爭鳴」的所有關卡",
+        "completeDesc": "您於雷鳴之聲、死寂之相中見證了紛爭，您再一次於豐碑上刻下了自己的名字。"
+      }
+    },
+    "plating": {
+      "desc": "在「影拓豐碑」中，通關苦難模式「死寂爭鳴」的所有關卡"
+    }
+  },
+  "achv_bat_hard_6": {
+    "name": "「山中見犼」",
+    "category": "技藝獎章",
+    "group": "協議空間獎章",
+    "levels": {
+      "2": {
+        "desc": "在「影拓豐碑」中，通關普通模式「山中見犼」的所有關卡",
+        "completeDesc": "您在群山與萬獸之間傲然而立，您再一次於豐碑上刻下了自己的名字。"
+      }
+    },
+    "plating": {
+      "desc": "在「影拓豐碑」中，通關苦難模式「山中見犼」的所有關卡"
+    }
+  },
+  "achv_bat_hard_7": {
+    "name": "「幽影刻形」",
+    "category": "技藝獎章",
+    "group": "協議空間獎章",
+    "levels": {
+      "2": {
+        "desc": "在「影拓豐碑」中，通關普通模式「幽影刻形」的所有關卡",
+        "completeDesc": "您驅散了災厄塗抹出的倒影，您再一次於豐碑上刻下了自己的名字。"
+      }
+    },
+    "plating": {
+      "desc": "在「影拓豐碑」中，通關苦難模式「幽影刻形」的所有關卡"
+    }
+  },
+  "achv_bat_magical_AS": {
+    "name": "勁力展露獎章",
+    "category": "技藝獎章",
+    "group": "戰鬥技巧獎章",
+    "levels": {
+      "1": {
+        "desc": "於戰鬥中累計施加50次物理異常",
+        "completeDesc": "格鬥技巧於此展露。"
+      },
+      "2": {
+        "desc": "於戰鬥中累計施加300次物理異常",
+        "completeDesc": "您的敵人深深畏懼您的斬擊與重拳。"
+      },
+      "3": {
+        "desc": "於戰鬥中累計施加500次物理異常",
+        "completeDesc": "您是當之無愧的格鬥宗師。"
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_physical_AS": {
+    "name": "技藝流轉獎章",
+    "category": "技藝獎章",
+    "group": "戰鬥技巧獎章",
+    "levels": {
+      "1": {
+        "desc": "於戰鬥中累計施加50次法術異常",
+        "completeDesc": "源石技藝於此流轉。"
+      },
+      "2": {
+        "desc": "於戰鬥中累計施加300次法術異常",
+        "completeDesc": "您的敵人深深畏懼您直接高效地應用能量的方式。"
+      },
+      "3": {
+        "desc": "於戰鬥中累計施加500次法術異常",
+        "completeDesc": "您是當之無愧的源石技藝大師。"
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_rescue_from_geyunweng": {
+    "name": "「禁止綁票！」",
+    "category": "技藝獎章",
+    "group": "戰鬥技巧獎章",
+    "levels": {
+      "2": {
+        "desc": "於戰鬥中解救1次被割雲翁禁錮的隊友",
+        "completeDesc": "很早便聽說過部分滄賊有綁票的惡行，但顯然，您沒有讓他們得逞。"
+      }
+    },
+    "plating": null
+  },
+  "achv_bat_smalltree": {
+    "name": "「根莖刨除」",
+    "category": "技藝獎章",
+    "group": "戰鬥技巧獎章",
+    "levels": {
+      "2": {
+        "desc": "逼出潛入地下的徘徊樹傀",
+        "completeDesc": "您早早出手，精準地揪出了潛入地下的樹傀。……過於狂野蔓生的植物根莖總會給人造成麻煩。"
+      }
+    },
+    "plating": null
+  },
+  "achv_event_clean": {
+    "name": "「諸塵皆淨」",
+    "category": "活動獎章",
+    "group": "活動獎章",
+    "levels": {
+      "2": {
+        "desc": "完成所有淨流滌塵任務",
+        "completeDesc": "您已替環衛職工們消除了面對汙漬的煩惱。"
+      }
+    },
+    "plating": {
+      "desc": "在120秒內完成「彈性清潔演練」"
+    }
+  },
+  "achv_event_contingency_contract_0": {
+    "name": "「再度燃燒」",
+    "category": "活動獎章",
+    "group": "活動獎章",
+    "levels": {
+      "3": {
+        "desc": "在危機合約重燃測試作戰中，成功達成指標總計20<image=\"Common/icon_contingency_contract_entry_black\" width=30 height=30>及以上的挑戰",
+        "completeDesc": "過去的合作正在恢復，您已讓古老的合約重新燃起。"
+      }
+    },
+    "plating": null
+  },
+  "achv_event_dungfight": {
+    "name": "「生存專家」",
+    "category": "活動獎章",
+    "group": "活動獎章",
+    "levels": {
+      "2": {
+        "desc": "通關所有生存特訓關卡",
+        "completeDesc": "您成功完成了克拉拉的生存特訓，已有了專家等級的求生能力。"
+      }
+    },
+    "plating": {
+      "desc": "在120秒內通關「最終考核」"
+    }
+  },
+  "achv_event_formula": {
+    "name": "「掌中大救星」",
+    "category": "活動獎章",
+    "group": "活動獎章",
+    "levels": {
+      "2": {
+        "desc": "於「集成援助·掌中救星」期間累計獲得800,000張援助成果券",
+        "completeDesc": "您在集成援助環節提供的小葫蘆廣受歡迎。"
+      }
+    },
+    "plating": {
+      "desc": "於「集成援助·掌中救星」期間累計獲得800,000張援助成果券，且累計提交20,000個息壤玉葫蘆"
+    }
+  },
+  "achv_event_formula2": {
+    "name": "「龍泡泡大爆發」",
+    "category": "活動獎章",
+    "group": "活動獎章",
+    "levels": {
+      "2": {
+        "desc": "於「集成援助·泡泡出擊」期間累計獲得800,000張援助成果券",
+        "completeDesc": "得益於您苦耕不輟的生產，全自動龍泡泡開始在這片土地上蔓延。無數人認同這個可愛的結果。"
+      }
+    },
+    "plating": {
+      "desc": "於「集成援助·泡泡出擊」期間累計獲得800,000張援助成果券，且累計提交20,000個重息壤龍泡泡"
+    }
+  },
+  "achv_event_racingdungeon_1": {
+    "name": "「奇境探索者」",
+    "category": "活動獎章",
+    "group": "活動獎章",
+    "levels": {
+      "2": {
+        "desc": "在「根脈奇境」活動階段2中，成功挑戰1次房間「金幣浪潮」",
+        "completeDesc": "您已探明童話般的奇境空間，快去把所見所聞講給阿爾吉聽吧。"
+      }
+    },
+    "plating": {
+      "desc": "在「根脈奇境」中，完成全部階段的奇境任務"
+    }
+  },
+  "achv_event_takestwo_1": {
+    "name": "「暗夜戰術」",
+    "category": "活動獎章",
+    "group": "活動獎章",
+    "levels": {
+      "2": {
+        "desc": "通關「熾燃！競技大會！」所有關卡的普通模式",
+        "completeDesc": "點燃吧，點燃吧！您沸騰的戰鬥之魂！"
+      }
+    },
+    "plating": {
+      "desc": "通關「熾燃！競技大會！」所有關卡的全功率模式，並在180秒內通關以下任意一關：\n· 「聯合！人與岩石！全功率！」\n· 「戰術！驅獸妙計！全功率！」\n· 「混亂！終極廝殺！全功率！」"
+    }
+  },
+  "achv_event_tundra_challenge_dung": {
+    "name": "「於谷地的密境中」",
+    "category": "活動獎章",
+    "group": "活動獎章",
+    "levels": {
+      "2": {
+        "desc": "在「密境行者」中，通關所有「密境初顯」協議空間",
+        "completeDesc": "無論四號谷地在怎樣變化多端的協議空間中，變成了怎樣怪異的樣子，它都無法阻攔您的腳步。"
+      }
+    },
+    "plating": {
+      "desc": "在「密境行者」中，完美通關所有「密境初顯」協議空間"
+    }
+  },
+  "achv_event_wuling_challenge_dung": {
+    "name": "「平步險窟」",
+    "category": "活動獎章",
+    "group": "活動獎章",
+    "levels": {
+      "2": {
+        "desc": "在「密境行者」中，通關所有「行探險窟」協議空間",
+        "completeDesc": "無論武陵在怎樣變化多端的協議空間中，凝聚出了何等令人絕望的險窟，它都無法阻攔您的腳步。"
+      }
+    },
+    "plating": {
+      "desc": "在「密境行者」中，完美通關所有「行探險窟」協議空間"
+    }
+  },
+  "achv_event_wuling_challenge_dung_02": {
+    "name": "「六方巧境」",
+    "category": "活動獎章",
+    "group": "活動獎章",
+    "levels": {
+      "2": {
+        "desc": "在「密境行者」中，通關所有「六方巧境」協議空間",
+        "completeDesc": "碎片化的協議空間被您逐一探明，六處巧妙異境中的情報盡在您掌握之中。"
+      }
+    },
+    "plating": {
+      "desc": "在「密境行者」中，完美通關所有「六方巧境」協議空間"
+    }
+  },
+  "achv_event_wuling_racing_1": {
+    "name": "「頂尖跑者」",
+    "category": "活動獎章",
+    "group": "活動獎章",
+    "levels": {
+      "2": {
+        "desc": "在「跑者運動會」中，完成所有賽事",
+        "completeDesc": "腳踏流雲，身駕清風……代表著武陵山水盛勢的賽道被您輕鬆征服。"
+      }
+    },
+    "plating": {
+      "desc": "在「跑者運動會」中，以三星完賽成績完成全部賽道"
+    }
+  },
+  "achv_fac_blackbox_1": {
+    "name": "模擬空間獎章",
+    "category": "建設獎章",
+    "group": "集成工業獎章",
+    "levels": {
+      "1": {
+        "desc": "累計手動完成5個模擬空間",
+        "completeDesc": "您完成了部分模擬空間。"
+      },
+      "2": {
+        "desc": "累計手動完成10個模擬空間",
+        "completeDesc": "您完成了許多模擬空間。"
+      },
+      "3": {
+        "desc": "累計手動完成20個模擬空間",
+        "completeDesc": "您完成了大量模擬空間，感謝您對工業知識的熱情。"
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_blackbox_2": {
+    "name": "模擬空間獎章·II",
+    "category": "建設獎章",
+    "group": "集成工業獎章",
+    "levels": {
+      "3": {
+        "desc": "累計手動完成30個模擬空間",
+        "completeDesc": "您完成了大量模擬空間，掌握了諸多有關武陵的工業知識，再次感謝您的熱情。"
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_coupon_tundra": {
+    "name": "谷地調度專家獎章",
+    "category": "建設獎章",
+    "group": "集成工業獎章",
+    "levels": {
+      "1": {
+        "desc": "累計獲得20,000,000張谷地調度券",
+        "completeDesc": "您已獲得了少量谷地調度券。"
+      },
+      "2": {
+        "desc": "累計獲得40,000,000張谷地調度券",
+        "completeDesc": "您已獲得了許多谷地調度券。"
+      },
+      "3": {
+        "desc": "累計獲得80,000,000張谷地調度券",
+        "completeDesc": "您已獲得了大量谷地調度券。\n越多的票券出現在您手中，就代表著越多的人獲得了急需的物資，您厥功至偉。"
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_coupon_wuling_1": {
+    "name": "武陵調度專家獎章",
+    "category": "建設獎章",
+    "group": "集成工業獎章",
+    "levels": {
+      "1": {
+        "desc": "累計獲得2,000,000張武陵調度券",
+        "completeDesc": "您已獲得了少量武陵調度券。"
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_coupon_wuling_2": {
+    "name": "武陵調度專家獎章·II",
+    "category": "建設獎章",
+    "group": "集成工業獎章",
+    "levels": {
+      "2": {
+        "desc": "累計獲得10,000,000張武陵調度券",
+        "completeDesc": "您已獲得了許多武陵調度券。\n越多的票券出現在您手中，就代表著越多的人獲得了急需的物資，您厥功至偉。"
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_coupon_wuling_3": {
+    "name": "武陵調度專家獎章·III",
+    "category": "建設獎章",
+    "group": "集成工業獎章",
+    "levels": {
+      "3": {
+        "desc": "累計獲得25,000,000張武陵調度券",
+        "completeDesc": "您已獲得了大量武陵調度券。\n越多的票券出現在您手中，就代表著越多的人獲得了急需的物資，您厥功至偉。"
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_coupon_wuling_4": {
+    "name": "武陵調度專家獎章·IV",
+    "category": "建設獎章",
+    "group": "集成工業獎章",
+    "levels": {
+      "3": {
+        "desc": "累計獲得80,000,000張武陵調度券",
+        "completeDesc": "您已獲得了許多武陵調度券。\n更多的調度券，更清晰的瞭解，武陵山水間的物資流轉逃不過您的雙眼。"
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_coupon_wuling_5": {
+    "name": "武陵調度專家獎章·V",
+    "category": "建設獎章",
+    "group": "集成工業獎章",
+    "levels": {
+      "3": {
+        "desc": "累計獲得100,000,000張武陵調度券",
+        "completeDesc": "您已獲得了更多武陵調度券。\n所有人的需求都得到了滿足，您在苦難面前保全了武陵的經濟秩序。"
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_domain_depot": {
+    "name": "貨物運送獎章",
+    "category": "建設獎章",
+    "group": "集成工業獎章",
+    "levels": {
+      "2": {
+        "desc": "累計完成20次貨物運送",
+        "completeDesc": "您已完成了多次貨物運送。\n即便擁有協議技術，但在運輸貨物上，您仍堅持親力親為，這令您的「客戶們」無比感動。"
+      }
+    },
+    "plating": {
+      "desc": "在不損失貨物完整度的情況下，累計完成20次精密製品貨箱（極易損）的運送"
+    }
+  },
+  "achv_fac_domain_shop": {
+    "name": "穩定出售獎章",
+    "category": "建設獎章",
+    "group": "集成工業獎章",
+    "levels": {
+      "2": {
+        "desc": "在物資調度累計進行15次物資出售",
+        "completeDesc": "您已成功出售了多次物資。\n仰賴於您的直覺與敏銳觀察能力，在您的及時調度下，各地都沒有出現物資持續嚴重匱乏的情況。"
+      }
+    },
+    "plating": {
+      "desc": "在1次物資出售中，對應貨物的賣出收益率大於等於500%"
+    }
+  },
+  "achv_fac_kite_station": {
+    "name": "環境監測獎章",
+    "category": "建設獎章",
+    "group": "集成工業獎章",
+    "levels": {
+      "2": {
+        "desc": "累計完成5次環境監測委託",
+        "completeDesc": "您已進行了多次環境監測。\n武陵方面代受保護的動物向您表示感謝。"
+      }
+    },
+    "plating": {
+      "desc": "完成武陵城郊監測終端的生態總錄進度"
+    }
+  },
+  "achv_fac_recycle_station": {
+    "name": "資源回收獎章",
+    "category": "建設獎章",
+    "group": "集成工業獎章",
+    "levels": {
+      "1": {
+        "desc": "在資源回收站累計回收50次資源",
+        "completeDesc": "您已在資源回收站收取了多次物資。\n「感謝您準時到來！」那隻羽獸似乎在說這樣的話。"
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_settlement_tundra": {
+    "name": "谷地據點開拓獎章",
+    "category": "建設獎章",
+    "group": "集成工業獎章",
+    "levels": {
+      "2": {
+        "desc": "將四號谷地的所有據點納入支援計劃",
+        "completeDesc": "四號谷地的所有據點都已在您的支援計劃之中。\n授人以釣鱗竿，您的支援方針無比正確。"
+      }
+    },
+    "plating": {
+      "desc": "將四號谷地的所有據點等級提升到最高級"
+    }
+  },
+  "achv_fac_settlement_wuling_1": {
+    "name": "武陵據點開拓獎章·I",
+    "category": "建設獎章",
+    "group": "集成工業獎章",
+    "levels": {
+      "2": {
+        "desc": "將天王坪援助點和心臟修繕站納入支援計劃",
+        "completeDesc": "武陵的部分據點已在您的支援計劃之中。\n授人以釣鱗竿，您的支援方針無比正確。"
+      }
+    },
+    "plating": {
+      "desc": "將天王坪援助點和心臟修繕站的等級提升到最高級"
+    }
+  },
+  "achv_fac_settlement_wuling_2": {
+    "name": "武陵據點開拓獎章·II",
+    "category": "建設獎章",
+    "group": "集成工業獎章",
+    "levels": {
+      "2": {
+        "desc": "將武陵的所有據點納入支援計劃",
+        "completeDesc": "武陵的所有據點都已在您的支援計劃之中。\n山水與人的關係被您協調得非常完美。"
+      }
+    },
+    "plating": {
+      "desc": "將武陵的所有據點等級提升到最高級"
+    }
+  },
+  "achv_fac_simulation_training": {
+    "name": "「演武巔峰」",
+    "category": "建設獎章",
+    "group": "集成工業獎章",
+    "levels": {
+      "2": {
+        "desc": "完成1次戰力點之和為10的演算",
+        "completeDesc": "您以極巧妙的策略，登臨了選劍演武的頂峰。"
+      }
+    },
+    "plating": {
+      "desc": "在資料過載1次時完成戰力點之和為10的演算"
+    }
+  },
+  "achv_fac_spaceship_fever_point": {
+    "name": "深厚情誼獎章",
+    "category": "建設獎章",
+    "group": "帝江號獎章",
+    "levels": {
+      "1": {
+        "desc": "累計將5名幹員信賴值提升至100%",
+        "completeDesc": "您結識了數位性命相託的夥伴。"
+      },
+      "2": {
+        "desc": "累計將10名幹員信賴值提升至100%",
+        "completeDesc": "您結識了多位性命相託的夥伴。\n您擁有吸引同行者的能力。"
+      },
+      "3": {
+        "desc": "累計將20名幹員信賴值提升至100%",
+        "completeDesc": "您結識了許多性命相託的夥伴。\n終有一日，這顆星球都將信任您。"
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_spaceship_gift": {
+    "name": "親切贈禮獎章",
+    "category": "建設獎章",
+    "group": "帝江號獎章",
+    "levels": {
+      "1": {
+        "desc": "累計贈送300個幹員偏好的禮物",
+        "completeDesc": "您已贈予了幹員們一定數量的禮物。"
+      },
+      "2": {
+        "desc": "累計贈送500個幹員偏好的禮物",
+        "completeDesc": "您已贈予了幹員們一定數量的禮物。\n幹員宿舍真的能放下這麼多禮物嗎？"
+      },
+      "3": {
+        "desc": "累計贈送1000個幹員偏好的禮物",
+        "completeDesc": "您已贈予了幹員們一定數量的禮物。\n禮物僅是一個契機，真誠才是幹員們親近您的真正理由。"
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_spaceship_level_1": {
+    "name": "總控升級獎章",
+    "category": "建設獎章",
+    "group": "帝江號獎章",
+    "levels": {
+      "3": {
+        "desc": "將帝江號總控中樞提升至5級",
+        "completeDesc": "您已將總控中樞效能提高至一定水準。\n您是否感受到了帝江號的歡欣愉悅？"
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_techtree_jinlong_1": {
+    "name": "武陵工業先驅獎章·I",
+    "category": "建設獎章",
+    "group": "集成工業獎章",
+    "levels": {
+      "1": {
+        "desc": "完成武陵工業一期的所有技術研究",
+        "completeDesc": "您已完成了武陵工業計劃的第一期內容。"
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_techtree_jinlong_2": {
+    "name": "武陵工業先驅獎章·II",
+    "category": "建設獎章",
+    "group": "集成工業獎章",
+    "levels": {
+      "1": {
+        "desc": "完成武陵工業計劃的25個技術研究",
+        "completeDesc": "您已完成了武陵工業計劃的更多內容。"
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_techtree_jinlong_3": {
+    "name": "武陵工業先驅獎章·III",
+    "category": "建設獎章",
+    "group": "集成工業獎章",
+    "levels": {
+      "1": {
+        "desc": "完成武陵工業計劃的34個技術研究",
+        "completeDesc": "您已實現了武陵工業計劃的更多內容。\n您正走向塔衛二技術最前列。"
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_techtree_jinlong_4": {
+    "name": "武陵工業先驅獎章·IV",
+    "category": "建設獎章",
+    "group": "集成工業獎章",
+    "levels": {
+      "1": {
+        "desc": "完成武陵工業計劃的47個技術研究",
+        "completeDesc": "您已實現了武陵工業計劃的更多內容。\n您的所思所想正時時刻刻回饋著腳下的土地。"
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_techtree_tundra": {
+    "name": "谷地工業先驅獎章",
+    "category": "建設獎章",
+    "group": "集成工業獎章",
+    "levels": {
+      "3": {
+        "desc": "完成基礎工業計劃的所有技術研究",
+        "completeDesc": "您已完成了基礎工業計劃中的所有研究內容。\n在您的努力下，集成工業系統已完全與四號谷地相容。"
+      }
+    },
+    "plating": null
+  },
+  "achv_fac_typhoea_archery": {
+    "name": "「心生弓矢」",
+    "category": "建設獎章",
+    "group": "集成工業獎章",
+    "levels": {
+      "2": {
+        "desc": "在「提弗洛斯的靶場」中，通關所有基礎教學，且通關1次日常訓練04",
+        "completeDesc": "無需刻意地瞄準，箭矢已在您的心中，一切都是如此得心應手。"
+      }
+    },
+    "plating": {
+      "desc": "在「提弗洛斯的靶場」中，通關所有進階訓練，且三星通關日常訓練04"
+    }
+  },
+  "achv_growth_adventure_level": {
+    "name": "千錘百鍊獎章",
+    "category": "錘鍊獎章",
+    "group": "錘鍊獎章",
+    "levels": {
+      "1": {
+        "desc": "管理員權限等階達到20級",
+        "completeDesc": "權限的進階令您小有成就。"
+      },
+      "2": {
+        "desc": "管理員權限等階達到40級",
+        "completeDesc": "權限的進階令您漸入佳境。"
+      },
+      "3": {
+        "desc": "管理員權限等階達到60級",
+        "completeDesc": "權限的進階令您獨當一面。"
+      }
+    },
+    "plating": null
+  },
+  "achv_growth_char_count_1": {
+    "name": "幹員聯絡獎章",
+    "category": "錘鍊獎章",
+    "group": "錘鍊獎章",
+    "levels": {
+      "1": {
+        "desc": "累計獲得5名幹員",
+        "completeDesc": "您與一些幹員第一次會面。"
+      },
+      "2": {
+        "desc": "累計獲得10名幹員",
+        "completeDesc": "您與一些幹員第一次會面。您的作戰小隊已能夠初步形成。"
+      },
+      "3": {
+        "desc": "累計獲得20名幹員",
+        "completeDesc": "您與一些幹員第一次會面。您的幹員規模已能支援您進行較為複雜的戰術規劃。"
+      }
+    },
+    "plating": null
+  },
+  "achv_growth_char_potential_1": {
+    "name": "潛能解放獎章",
+    "category": "錘鍊獎章",
+    "group": "錘鍊獎章",
+    "levels": {
+      "1": {
+        "desc": "累計為1名幹員解鎖全部潛能",
+        "completeDesc": "您的一位幹員已解放了自身潛能。"
+      },
+      "2": {
+        "desc": "累計為10名幹員解鎖全部潛能",
+        "completeDesc": "您的部分幹員已解放了自身潛能。\n正視自我是提高實力的第一步。"
+      },
+      "3": {
+        "desc": "累計為15名幹員解鎖全部潛能",
+        "completeDesc": "您的部分幹員已解放了自身潛能。\n他們超越了瓶頸，但他們相信這僅僅是一個開始。"
+      }
+    },
+    "plating": null
+  },
+  "achv_growth_char_skill_level_1": {
+    "name": "技能提升獎章",
+    "category": "錘鍊獎章",
+    "group": "錘鍊獎章",
+    "levels": {
+      "1": {
+        "desc": "累計提升5個幹員技能至專精等級3級",
+        "completeDesc": "您的部分幹員已將作戰技能磨練得爐火純青。"
+      },
+      "2": {
+        "desc": "累計提升10個幹員技能至專精等級3級",
+        "completeDesc": "您的部分幹員已將作戰技能磨練得爐火純青。您與幹員之間的信任促成了這一現狀。"
+      },
+      "3": {
+        "desc": "累計提升20個幹員技能至專精等級3級",
+        "completeDesc": "您的部分幹員已將作戰技能磨練得爐火純青。不同領域，不同專精，但您正帶領著幹員們向共同的未來前進。"
+      }
+    },
+    "plating": null
+  },
+  "achv_growth_equip_enhance": {
+    "name": "完美裝備獎章",
+    "category": "錘鍊獎章",
+    "group": "錘鍊獎章",
+    "levels": {
+      "3": {
+        "desc": "將1件裝備的所有屬性升級到滿精鍛狀態",
+        "completeDesc": "它承載著您的傷痕、您的榮耀、您的生命，從始至終。"
+      }
+    },
+    "plating": null
+  },
+  "achv_growth_world_level": {
+    "name": "深度探索獎章",
+    "category": "錘鍊獎章",
+    "group": "錘鍊獎章",
+    "levels": {
+      "1": {
+        "desc": "探索等級達到2級",
+        "completeDesc": "證明您抵達更高探索等級的獎章。"
+      },
+      "2": {
+        "desc": "探索等級達到4級",
+        "completeDesc": "證明您抵達更高探索等級的獎章。\n更艱難的環境，更多的機會。"
+      },
+      "3": {
+        "desc": "探索等級達到7級",
+        "completeDesc": "證明您抵達更高探索等級的獎章。\n您已抵達最高峰。"
+      }
+    },
+    "plating": null
+  },
+  "achv_growth_wpn_count_1": {
+    "name": "武庫完備獎章",
+    "category": "錘鍊獎章",
+    "group": "錘鍊獎章",
+    "levels": {
+      "1": {
+        "desc": "累計獲得10件不同的武器",
+        "completeDesc": "您的武器庫略顯充實。"
+      },
+      "2": {
+        "desc": "累計獲得20件不同的武器",
+        "completeDesc": "您的武器庫略顯充實。\n無論是梅什科工業還是熔爐要塞，各公司的精品就在其中。"
+      },
+      "3": {
+        "desc": "累計獲得40件不同的武器",
+        "completeDesc": "您的武器庫略顯充實。\n如此全面的收集，您是否在替武庫工程師調查同類產品？"
+      }
+    },
+    "plating": null
+  },
+  "achv_growth_wpn_skill_level": {
+    "name": "終極武器獎章",
+    "category": "錘鍊獎章",
+    "group": "錘鍊獎章",
+    "levels": {
+      "3": {
+        "desc": "將1件武器的技能RANK等級之和升級到18",
+        "completeDesc": "在無數次精緻保養後，您的武器已與各種偉大傳說中的珍寶並無差別。"
+      }
+    },
+    "plating": {
+      "desc": "將1件武器的技能RANK等級之和升級到25"
+    }
+  },
+  "achv_hide_aether_lock_clean": {
+    "name": "「懸頂之劍」",
+    "category": "奇想獎章",
+    "group": "奇想獎章",
+    "levels": {
+      "2": {
+        "desc": "清理北部禁區中的5個淤積能量體",
+        "completeDesc": "身在險地，所行需謹慎，您解開了束縛懸頂之劍的鎖扣。"
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_banana": {
+    "name": "「道具賽？」",
+    "category": "奇想獎章",
+    "group": "奇想獎章",
+    "levels": {
+      "1": {
+        "desc": "主控幹員被香蕉皮絆倒1次",
+        "completeDesc": "顯然，拋下香蕉皮的野生動物無法理解「禁止使用道具」的規則。"
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_cave": {
+    "name": "「正在抓捕驗收人員」",
+    "category": "奇想獎章",
+    "group": "奇想獎章",
+    "levels": {
+      "2": {
+        "desc": "踩碎礦脈源區所有的脆弱地面。",
+        "completeDesc": "這並非刻意為之的陷阱，聯盟工團正在調查並抓捕相關責任人，請您放心。"
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_cave_v1d5": {
+    "name": "「巨型冰錘」",
+    "category": "奇想獎章",
+    "group": "奇想獎章",
+    "levels": {
+      "1": {
+        "desc": "抵達雪松林小岩穴的地下山洞",
+        "completeDesc": "您足夠敏銳地注意到了自然環境中的破冰錘。"
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_fly": {
+    "name": "「非正常移動」",
+    "category": "奇想獎章",
+    "group": "奇想獎章",
+    "levels": {
+      "3": {
+        "desc": "使用滑索架、彈射器和繩索累計移動10000m。",
+        "completeDesc": "帝江號正計劃為您研發地面飛行設備。"
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_jump_hit": {
+    "name": "「協議ε·20.00m」",
+    "category": "奇想獎章",
+    "group": "奇想獎章",
+    "levels": {
+      "2": {
+        "desc": "從20m及以上高空下落並命中敵人。",
+        "completeDesc": "很明顯，本次出現在空中的並非軌道漂浮物，而是您和您的幹員。"
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_no_parry": {
+    "name": "「造主的盛勢」",
+    "category": "奇想獎章",
+    "group": "奇想獎章",
+    "levels": {
+      "3": {
+        "desc": "在不使用造裔武器的情況下，通關「危境禍影·阿萊克琉斯，千夫長」",
+        "completeDesc": "造主以最強硬的方式，擊潰了昔日的鬥士。"
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_open_treasure": {
+    "name": "「小獸的贈禮」",
+    "category": "奇想獎章",
+    "group": "奇想獎章",
+    "levels": {
+      "2": {
+        "desc": "找到小機靈的「贈禮」",
+        "completeDesc": "友情？信任？在這位可愛的小動物眼中，您已經是牠的朋友了。"
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_paralyze": {
+    "name": "「全位顯現」",
+    "category": "奇想獎章",
+    "group": "奇想獎章",
+    "levels": {
+      "2": {
+        "desc": "在聶菲斯，「征服者」靜止住周遭時，主控幹員被定在半空",
+        "completeDesc": "她的野心與狂妄令人恐懼，但您仍不憚於在絕望的封鎖中全方位展示自己的勇氣。"
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_rebellious": {
+    "name": "「人造南牆」",
+    "category": "奇想獎章",
+    "group": "奇想獎章",
+    "levels": {
+      "2": {
+        "desc": "使用防禦反擊技能終止斧甲獸的連續衝撞。",
+        "completeDesc": "但這仍然無法令斧甲獸回頭，真是可惜。"
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_root": {
+    "name": "「寓於枯榮」",
+    "category": "奇想獎章",
+    "group": "奇想獎章",
+    "levels": {
+      "1": {
+        "desc": "探尋丙型天師樁的根部",
+        "completeDesc": "您在實驗園區的天師樁息壤結構上撿到了那朵尚未盛放的「花苞」，這份跨越枯寂，走向新生的景色由您見證。"
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_ruanyi": {
+    "name": "「死域遊身」",
+    "category": "奇想獎章",
+    "group": "奇想獎章",
+    "levels": {
+      "2": {
+        "desc": "在阮一進入激怒狀態後，使其「枯朽之觸」存在至少60秒。",
+        "completeDesc": "他以枯枝朽木圍成一片死域，而您仍能在其中自在穿行。"
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_slime": {
+    "name": "「四皇會戰」",
+    "category": "奇想獎章",
+    "group": "奇想獎章",
+    "levels": {
+      "2": {
+        "desc": "踢落4個源石蟲。",
+        "completeDesc": "您協助四位源石蟲完成了搬家工作。"
+      }
+    },
+    "plating": null
+  },
+  "achv_hide_waterwheel_top": {
+    "name": "「水自天流」",
+    "category": "奇想獎章",
+    "group": "奇想獎章",
+    "levels": {
+      "2": {
+        "desc": "抵達清波寨大水車頂端。",
+        "completeDesc": "您登上了清波寨水車的頂端，見證了「水從天上來」的奇景。"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_aglina": {
+    "name": "「信使的信」",
+    "category": "章節獎章",
+    "group": "探索任務獎章",
+    "levels": {
+      "2": {
+        "desc": "完成支線任務「信使的信」",
+        "completeDesc": "幾件小事，幾個包裹。\n您與她相會於黃昏下的天空，空白信件上終將寫滿美好記憶的饋贈。"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_camille": {
+    "name": "「亡者之舞」",
+    "category": "章節獎章",
+    "group": "探索任務獎章",
+    "levels": {
+      "2": {
+        "desc": "完成支線任務「亡者之舞」",
+        "completeDesc": "追逐，鮮血，仍會陣痛的舊傷痕……卡繆許下承諾，他的血必與管理員同在。"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e0m2": {
+    "name": "「甦醒」",
+    "category": "章節獎章",
+    "group": "主線任務獎章",
+    "levels": {
+      "3": {
+        "desc": "完成主線任務「序章 - 進度·復甦」",
+        "completeDesc": "您已重歸塔衛二。"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e10m3": {
+    "name": "「輕舟已過」",
+    "category": "章節獎章",
+    "group": "主線任務獎章",
+    "levels": {
+      "3": {
+        "desc": "完成主線任務「第二章 - 進度VI - 終則有始」",
+        "completeDesc": "莊方宜等到了您。"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e11m1": {
+    "name": "「啟封」",
+    "category": "章節獎章",
+    "group": "主線任務獎章",
+    "levels": {
+      "3": {
+        "desc": "完成主線任務「第二章 - 進度VII - 長風破浪」",
+        "completeDesc": "您已做好了面對毀滅的準備，它已塵封多年，它仍是絕望的具現。"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e11m3": {
+    "name": "「談劍」",
+    "category": "章節獎章",
+    "group": "主線任務獎章",
+    "levels": {
+      "3": {
+        "desc": "在談劍堂，與某位師長分別",
+        "completeDesc": "生者將心意寄於鋒刃之間，他已知曉。"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e11m4": {
+    "name": "「連接過去」",
+    "category": "章節獎章",
+    "group": "主線任務獎章",
+    "levels": {
+      "3": {
+        "desc": "以息壤橋梁跨越天塹",
+        "completeDesc": "息壤成橋，跨接今時與往日，道路為您開啟了。"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e11m5": {
+    "name": "「希望的孩子」",
+    "category": "章節獎章",
+    "group": "主線任務獎章",
+    "levels": {
+      "3": {
+        "desc": "完成主線任務「第二章 - 進度VII - 異鄉歸人」",
+        "completeDesc": "她的心被輕輕托舉著，走過重重疊疊的死亡……希望在這裡根植。"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e11m7": {
+    "name": "「裂傷於此終結」",
+    "category": "章節獎章",
+    "group": "主線任務獎章",
+    "levels": {
+      "3": {
+        "desc": "完成主線任務「第二章 - 進度VII - 『歸途』」",
+        "completeDesc": "終於，這道傷口不再痛了。"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e1m2": {
+    "name": "「核心降落」",
+    "category": "章節獎章",
+    "group": "主線任務獎章",
+    "levels": {
+      "3": {
+        "desc": "降下一座科技的結晶",
+        "completeDesc": "開拓的未來已降下至四號谷地。"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e1m8": {
+    "name": "「重拳落空」",
+    "category": "章節獎章",
+    "group": "主線任務獎章",
+    "levels": {
+      "3": {
+        "desc": "完成主線任務「第一章 - 進度I - 要塞決戰」",
+        "completeDesc": "您擊敗了「碾骨之拳」。\n擁抱超域？迎來新生？您如何看待聶菲斯的宣言？"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e2m1": {
+    "name": "「易守『難』攻？」",
+    "category": "章節獎章",
+    "group": "主線任務獎章",
+    "levels": {
+      "3": {
+        "desc": "見證一場襲擊的發生",
+        "completeDesc": "您目擊了一場突如其來的「爆炸」。\n顯然，發電站並非易守難攻。"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e2m8": {
+    "name": "「碾碎星辰的殘片」",
+    "category": "章節獎章",
+    "group": "主線任務獎章",
+    "levels": {
+      "3": {
+        "desc": "完成主線任務「第一章 - 進度III - 世代搖籃」",
+        "completeDesc": "您擊碎了局部「復生」的巨大天使。"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e3m5": {
+    "name": "「關閉裂隙」",
+    "category": "章節獎章",
+    "group": "主線任務獎章",
+    "levels": {
+      "3": {
+        "desc": "完成主線任務「第一章 - 進度IV - 未熄火種」",
+        "completeDesc": "即將吞噬四號谷地的裂隙已在您與同伴們的努力下關閉。"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e4m1": {
+    "name": "「回歸的噩兆」",
+    "category": "章節獎章",
+    "group": "主線任務獎章",
+    "levels": {
+      "3": {
+        "desc": "完成主線任務「間章 - 四方會議」",
+        "completeDesc": "不祥的徵兆顯現於塔衛二各處，您的旅途尚未結束。"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e6m1": {
+    "name": "「初至武陵城」",
+    "category": "章節獎章",
+    "group": "主線任務獎章",
+    "levels": {
+      "3": {
+        "desc": "到達一座全新的城市",
+        "completeDesc": "您已抵達了武陵城。"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e7m4": {
+    "name": "「溺水」",
+    "category": "章節獎章",
+    "group": "主線任務獎章",
+    "levels": {
+      "3": {
+        "desc": "完成主線任務「第二章 - 進度III - 舊泉涸處新潮生」",
+        "completeDesc": "一個承諾，一個選擇。\n舊日之路已沉入清波，新的道路又在何方？"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e8m4": {
+    "name": "「我最後侍奉的王」",
+    "category": "章節獎章",
+    "group": "主線任務獎章",
+    "levels": {
+      "3": {
+        "desc": "在某處要地，與阿達希爾分道揚鑣",
+        "completeDesc": "阿達希爾看向您，所見的是您不可見的，遺忘了的光景。"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_e9m3": {
+    "name": "「征服者之死」",
+    "category": "章節獎章",
+    "group": "主線任務獎章",
+    "levels": {
+      "3": {
+        "desc": "完成主線任務「第二章 - 進度V - 決戰總樁」",
+        "completeDesc": "被野心之火點燃，欲以萬千生命為代價窺伺絕境的征服者，聶菲斯的惡意被您粉碎。"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_gm02m22": {
+    "name": "「雪下的命運」",
+    "category": "章節獎章",
+    "group": "探索任務獎章",
+    "levels": {
+      "1": {
+        "desc": "完成支線任務「命運的明示」、「終其一生」",
+        "completeDesc": "雪祀留下了她的文字與執著……命運由大雪覆蓋著，卻被柔韌堅強的心輕輕揭開。"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_gm02m27": {
+    "name": "「願遂心明」",
+    "category": "章節獎章",
+    "group": "探索任務獎章",
+    "levels": {
+      "2": {
+        "desc": "完成支線任務「鐘鳴人歸」",
+        "completeDesc": "鐘鳴又起，我心遂明。"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_laevat": {
+    "name": "「燃盡記憶之灰」",
+    "category": "章節獎章",
+    "group": "探索任務獎章",
+    "levels": {
+      "2": {
+        "desc": "完成支線任務「燃盡記憶之灰」",
+        "completeDesc": "記憶之痕於大火中變幻。\n即便名為過去的碎片層巒疊嶂，但您依舊與萊萬汀攜手走出了無盡迴廊。"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_liino": {
+    "name": "「如同流星飛越邊界」",
+    "category": "章節獎章",
+    "group": "探索任務獎章",
+    "levels": {
+      "2": {
+        "desc": "完成支線任務「如同流星飛越邊界」",
+        "completeDesc": "終末地工業擁有了自己的「偶像品牌」……排練、演出，哎呀……事情還多著呢。"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_mifu": {
+    "name": "「以拳問心」",
+    "category": "章節獎章",
+    "group": "探索任務獎章",
+    "levels": {
+      "2": {
+        "desc": "完成支線任務「以拳問心」",
+        "completeDesc": "再以雙拳問我心，一氣貫山水，執武向雷霆。"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_typhoea": {
+    "name": "「霧隱冬夢深林中」",
+    "category": "章節獎章",
+    "group": "探索任務獎章",
+    "levels": {
+      "2": {
+        "desc": "完成支線任務「霧隱冬夢深林中」",
+        "completeDesc": "追隨著尋覓的目光，緊跟著箭矢的指引，冷風掠過霧與夢……祂的聲音迴響於雪林。"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_wolfgd": {
+    "name": "「離群之狼」",
+    "category": "章節獎章",
+    "group": "探索任務獎章",
+    "levels": {
+      "2": {
+        "desc": "完成支線任務「離群之狼」",
+        "completeDesc": "狼衛查明了真相，處決了背叛者。\n那把短刀插在墳前……狼群不同以往，他已清楚自己應該做些什麼。"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_wulfa": {
+    "name": "「紅騎士」",
+    "category": "章節獎章",
+    "group": "探索任務獎章",
+    "levels": {
+      "2": {
+        "desc": "完成支線任務「紅騎士」",
+        "completeDesc": "人們穿越了孩子們的王國，放下行囊，停下腳步。\n有誰想起了膝蓋上的擦傷，還有那被遺忘的童年？"
+      }
+    },
+    "plating": null
+  },
+  "achv_quest_yvonne": {
+    "name": "「愛，吶喊和原型機」",
+    "category": "章節獎章",
+    "group": "探索任務獎章",
+    "levels": {
+      "2": {
+        "desc": "完成支線任務「愛，吶喊和原型機」",
+        "completeDesc": "一箱遲到的顏料。\n沿著塔塔的行跡，繪下一幅幅塗鴉，伊馮在色彩中看到了重逢。"
+      }
+    },
+    "plating": null
+  },
+  "achv_side_mission_count": {
+    "name": "助人為樂獎章",
+    "category": "章節獎章",
+    "group": "探索任務獎章",
+    "levels": {
+      "1": {
+        "desc": "完成共計30項探索任務",
+        "completeDesc": "您幫助許許多多人解決了問題。"
+      },
+      "2": {
+        "desc": "完成共計40項探索任務",
+        "completeDesc": "您幫助許許多多人解決了問題。\n並非作戰任務，亦不謀求回報。"
+      },
+      "3": {
+        "desc": "完成共計50項探索任務",
+        "completeDesc": "您幫助許許多多人解決了問題。\n受助者在今後的生活中也將幫助他人，在塔衛二，人類必須相互扶持。"
+      }
+    },
+    "plating": null
+  },
+  "achv_social_building": {
+    "name": "依依不捨獎章",
+    "category": "社交獎章",
+    "group": "社交獎章",
+    "levels": {
+      "1": {
+        "desc": "共享設備累計受維護50次",
+        "completeDesc": "您的設備已受到了一定次數的維護。"
+      },
+      "2": {
+        "desc": "共享設備累計受維護200次",
+        "completeDesc": "您的設備已受到了多次的維護。"
+      },
+      "3": {
+        "desc": "共享設備累計受維護500次",
+        "completeDesc": "您的設備已受到了大量的維護。\n顯然，您幫助到了許多人，受助者無不對您的設備依依不捨，他們對您的設備竭力挽留。"
+      }
+    },
+    "plating": null
+  },
+  "achv_social_spaceship_be_helped": {
+    "name": "收穫助力獎章",
+    "category": "社交獎章",
+    "group": "社交獎章",
+    "levels": {
+      "2": {
+        "desc": "累計獲得好友提供的生產助力100次",
+        "completeDesc": "您設置於帝江號的生產設施高效運轉中，這離不開好友的慷慨助力。"
+      }
+    },
+    "plating": null
+  },
+  "achv_social_spaceship_help": {
+    "name": "慷慨助力獎章",
+    "category": "社交獎章",
+    "group": "社交獎章",
+    "levels": {
+      "1": {
+        "desc": "累計為好友提供生產助力50次",
+        "completeDesc": "您慷慨地向好友提供了生產助力。\n塔衛二因您這樣的助人精神而欣欣向榮。"
+      }
+    },
+    "plating": null
+  },
+  "achv_social_spaceship_info_exchange": {
+    "name": "情報交流獎章",
+    "category": "社交獎章",
+    "group": "社交獎章",
+    "levels": {
+      "1": {
+        "desc": "累計參與50次情報交流",
+        "completeDesc": "您已進行了一定次數的情報交流。\n世界隨您的目光，因您的情報而擴大。"
+      }
+    },
+    "plating": null
+  }
+}

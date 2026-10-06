@@ -1,6 +1,75 @@
 export const monumentGroups = [
     {
+        "id": "indie_group_h07",
+        "startTime": "2026-10-05 12:00:00",
+        "startTimeAsia": "2026-10-05 12:00:00",
+        "endTime": "2026-10-19 04:00:00",
+        "endTimeAsia": "2026-10-19 04:00:00",
+        "stages": [
+            {
+                "id": "indie_hard029",
+                "hardId": "indie_hard029_s",
+                "name": "Tri-Aggelated Targeting",
+                "picPath": "dung_high_difficulty_s5_02",
+                "enemyIds": [
+                    "eny_0070_agscorp2"
+                ],
+                "enemyLevels": [
+                    60
+                ]
+            },
+            {
+                "id": "indie_hard026",
+                "hardId": "indie_hard026_s",
+                "name": "Feral Carnage of Shadow",
+                "picPath": "dung_high_difficulty_s5_03",
+                "enemyIds": [
+                    "eny_0118_klhog",
+                    "eny_0119_kltiger"
+                ],
+                "enemyLevels": [
+                    60,
+                    60
+                ]
+            },
+            {
+                "id": "indie_hard028",
+                "hardId": "indie_hard028_s",
+                "name": "Sudden Roar of Oblivion",
+                "picPath": "dung_high_difficulty_s7_02",
+                "enemyIds": [
+                    "eny_0117_klhound",
+                    "eny_0121_klbud",
+                    "eny_0122_kltdbud",
+                    "eny_0123_klcap"
+                ],
+                "enemyLevels": [
+                    60,
+                    60,
+                    60,
+                    60
+                ]
+            },
+            {
+                "id": "indie_hard027",
+                "hardId": "indie_hard027_s",
+                "name": "Arc of Shadow Flare",
+                "picPath": "dung_high_difficulty_s7_01",
+                "enemyIds": [
+                    "eny_0124_kltdcap"
+                ],
+                "enemyLevels": [
+                    60
+                ]
+            }
+        ]
+    },
+    {
         "id": "indie_group_h06",
+        "startTime": "2026-08-06 12:00:00",
+        "startTimeAsia": "2026-08-06 12:00:00",
+        "endTime": "2026-08-20 04:00:00",
+        "endTimeAsia": "2026-08-20 04:00:00",
         "stages": [
             {
                 "id": "indie_hard025",
@@ -68,6 +137,10 @@ export const monumentGroups = [
     },
     {
         "id": "indie_group_h01",
+        "startTime": "2026-02-22 12:00:00",
+        "startTimeAsia": "2026-02-22 12:00:00",
+        "endTime": "2026-03-11 17:00:00",
+        "endTimeAsia": "2026-03-12 06:00:00",
         "stages": [
             {
                 "id": "indie_hard019",
@@ -147,6 +220,10 @@ export const monumentGroups = [
     },
     {
         "id": "indie_group_h04",
+        "startTime": "2026-05-08 12:00:00",
+        "startTimeAsia": "2026-05-08 12:00:00",
+        "endTime": "2026-05-22 04:00:00",
+        "endTimeAsia": "2026-05-22 04:00:00",
         "stages": [
             {
                 "id": "indie_hard013",
@@ -236,6 +313,10 @@ export const monumentGroups = [
     },
     {
         "id": "indie_group_h02",
+        "startTime": "2026-02-12 12:00:00",
+        "startTimeAsia": "2026-02-12 12:00:00",
+        "endTime": "2026-03-11 17:00:00",
+        "endTimeAsia": "2026-03-12 06:00:00",
         "stages": [
             {
                 "id": "indie_hard008",
@@ -279,6 +360,10 @@ export const monumentGroups = [
     },
     {
         "id": "indie_group_h03",
+        "startTime": "2026-03-26 12:00:00",
+        "startTimeAsia": "2026-03-26 12:00:00",
+        "endTime": "2026-04-09 04:00:00",
+        "endTimeAsia": "2026-04-09 04:00:00",
         "stages": [
             {
                 "id": "indie_hard002",
@@ -322,6 +407,10 @@ export const monumentGroups = [
     },
     {
         "id": "indie_group_h05",
+        "startTime": "2026-07-02 12:00:00",
+        "startTimeAsia": "2026-07-02 12:00:00",
+        "endTime": "2026-07-15 17:00:00",
+        "endTimeAsia": "2026-07-16 06:00:00",
         "stages": [
             {
                 "id": "indie_hard006",
@@ -370,67 +459,6 @@ export const monumentGroups = [
                 ],
                 "enemyLevels": [
                     60,
-                    60
-                ]
-            }
-        ]
-    },
-    {
-        "id": "indie_group_h07",
-        "stages": [
-            {
-                "id": "indie_hard029",
-                "hardId": "indie_hard029_s",
-                "name": "Tri-Aggelated Targeting",
-                "picPath": "dung_high_difficulty_s5_02",
-                "enemyIds": [
-                    "eny_0070_agscorp2"
-                ],
-                "enemyLevels": [
-                    60
-                ]
-            },
-            {
-                "id": "indie_hard026",
-                "hardId": "indie_hard026_s",
-                "name": "Feral Carnage of Shadow",
-                "picPath": "dung_high_difficulty_s5_03",
-                "enemyIds": [
-                    "eny_0118_klhog",
-                    "eny_0119_kltiger"
-                ],
-                "enemyLevels": [
-                    60,
-                    60
-                ]
-            },
-            {
-                "id": "indie_hard028",
-                "hardId": "indie_hard028_s",
-                "name": "Sudden Roar of Oblivion",
-                "picPath": "dung_high_difficulty_s7_02",
-                "enemyIds": [
-                    "eny_0117_klhound",
-                    "eny_0121_klbud",
-                    "eny_0122_kltdbud",
-                    "eny_0123_klcap"
-                ],
-                "enemyLevels": [
-                    60,
-                    60,
-                    60,
-                    60
-                ]
-            },
-            {
-                "id": "indie_hard027",
-                "hardId": "indie_hard027_s",
-                "name": "Arc of Shadow Flare",
-                "picPath": "dung_high_difficulty_s7_01",
-                "enemyIds": [
-                    "eny_0124_kltdcap"
-                ],
-                "enemyLevels": [
                     60
                 ]
             }

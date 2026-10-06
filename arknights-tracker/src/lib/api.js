@@ -133,13 +133,14 @@ function normalizeEquip(eq) {
 function normalizeGameProfiles(data) {
     if (Array.isArray(data.gameProfiles)) {
         return data.gameProfiles.map(gp => {
-            const base = gp.gameProfile?.base || {};
-            const dungeon = gp.gameProfile?.dungeon || {};
-            const bpSystem = gp.gameProfile?.bpSystem || {};
-            const daily = gp.gameProfile?.dailyMission || {};
-            const weekly = gp.gameProfile?.weeklyMission || {};
-            const roleId = base.roleId || "";
-            const serverId = base.serverId || "3";
+            const profile = gp.gameProfile || gp.detail || gp;
+            const base = profile.base || {};
+            const dungeon = profile.dungeon || {};
+            const bpSystem = profile.bpSystem || {};
+            const daily = profile.dailyMission || {};
+            const weekly = profile.weeklyMission || {};
+            const roleId = base.roleId || gp.roleId || "";
+            const serverId = base.serverId || gp.serverId || "3";
             const stats = {
                 charCount: base.charNum || 0,
                 explorationLevel: base.worldLevel || 0,
@@ -181,7 +182,7 @@ function normalizeGameProfiles(data) {
                         ...c,
                         id: normId,
                         gameId: c.id,
-                        potential: c.potentialLevel || c.potential || 1,
+                        potential: c.potentialLevel ?? c.potential ?? 0,
                         evolvePhase: Number(evolvePhase),
                         weapon: normalizeWeapon(c.weapon),
                         bodyEquip,
@@ -192,7 +193,8 @@ function normalizeGameProfiles(data) {
                     };
                 })
             } : null;
-            const chars = (gp.gameProfile?.chars || []).map(c => {
+            const rawChars = profile.chars || [];
+            const chars = rawChars.map(c => {
                 const userSkills = {};
                 (c.skills || []).forEach(s => {
                     if (s.type) userSkills[s.type] = { level: s.level, maxLevel: s.maxLevel };
@@ -217,7 +219,7 @@ function normalizeGameProfiles(data) {
                     ...c,
                     id: normId,
                     gameId: c.id,
-                    potential: c.potentialLevel || 1,
+                    potential: c.potentialLevel ?? c.potential ?? 0,
                     evolvePhase: Number(evolvePhase),
                     userSkills,
                     weapon: normalizeWeapon(c.weapon),
@@ -228,16 +230,20 @@ function normalizeGameProfiles(data) {
                     equips: [c.bodyEquip, c.armEquip, c.firstAccessory, c.secondAccessory].map(normalizeEquip).filter(Boolean)
                 };
             });
+            const achieve = profile.achieve || null;
             return {
+                ...gp,
                 game_uid: roleId,
                 records_uid: gp.pulls ? (gp.pulls.profileId || roleId) : null,
-                serverId: serverId,
+                serverId,
                 pulls: gp.pulls,
+                detail: profile,
                 info: {
                     base,
                     chars,
                     contract,
-                    stats
+                    stats,
+                    achieve
                 }
             };
         });
@@ -245,9 +251,18 @@ function normalizeGameProfiles(data) {
     if (Array.isArray(data.details)) {
         return data.details.map(d => {
             try {
+                let parsedInfo = typeof d.account_info === 'string' ? JSON.parse(d.account_info) : (d.info || d.account_info || {});
+                if (parsedInfo && typeof parsedInfo === 'object') {
+                    if (parsedInfo.detail && !parsedInfo.achieve && parsedInfo.detail.achieve) {
+                        parsedInfo.achieve = parsedInfo.detail.achieve;
+                    }
+                    if (parsedInfo.gameProfile && !parsedInfo.achieve && parsedInfo.gameProfile.achieve) {
+                        parsedInfo.achieve = parsedInfo.gameProfile.achieve;
+                    }
+                }
                 return {
                     ...d,
-                    info: typeof d.account_info === 'string' ? JSON.parse(d.account_info) : (d.info || d.account_info || {})
+                    info: parsedInfo
                 };
             } catch {
                 return { ...d, info: d.info || {} };
@@ -263,6 +278,7 @@ export function normalizeProfile(data) {
     const picture = data.avatarId ?? data.picture ?? null;
     const background = data.backgroundId ?? data.background ?? null;
     const is_private = data.isPrivate !== undefined ? (data.isPrivate ? 1 : 0) : (data.is_private ?? 0);
+    const hide_uid = data.hideUid !== undefined ? (data.hideUid ? 1 : 0) : (data.hide_uid !== undefined ? (data.hide_uid ? 1 : 0) : 1);
     const details = normalizeGameProfiles(data);
     return {
         ...data,
@@ -274,6 +290,8 @@ export function normalizeProfile(data) {
         backgroundId: background,
         is_private,
         isPrivate: is_private === 1,
+        hide_uid,
+        hideUid: hide_uid === 1,
         details
     };
 }
@@ -323,7 +341,7 @@ export async function getUserProfileByName(name, token = null) {
     return getUserProfile(name, token);
 }
 
-export async function createUserProfile(idToken, name, isPrivate = false, avatarImage = null, filename = null, backgroundId = null) {
+export async function createUserProfile(idToken, name, isPrivate = false, avatarImage = null, filename = null, backgroundId = null, hideUid = true) {
     const res = await fetch(`${API_BASE}/user/profile/create`, {
         method: 'POST',
         headers: {
@@ -333,6 +351,7 @@ export async function createUserProfile(idToken, name, isPrivate = false, avatar
         body: JSON.stringify({
             publicUid: name,
             isPrivate: !!isPrivate,
+            hideUid: hideUid !== undefined ? !!hideUid : true,
             avatarImage,
             filename,
             backgroundId
@@ -351,6 +370,7 @@ export async function updateUserProfile(idToken, currentUid, updates = {}) {
     const body = {};
     if (updates.newUid !== undefined) body.newUid = updates.newUid;
     if (updates.isPrivate !== undefined) body.isPrivate = !!updates.isPrivate;
+    if (updates.hideUid !== undefined) body.hideUid = !!updates.hideUid;
     if (updates.backgroundId !== undefined) body.backgroundId = updates.backgroundId;
 
     const res = await fetch(`${API_BASE}/user/profile/update?uid=${encodeURIComponent(uid)}`, {
@@ -366,23 +386,24 @@ export async function updateUserProfile(idToken, currentUid, updates = {}) {
     return normalizeProfile(json.data);
 }
 
-export async function registerProfile(idToken, name, picture = null, is_private = undefined, background = undefined, records_uid = undefined, game_uid = undefined, favorite_game_uid = undefined, currentUid = undefined) {
+export async function registerProfile(idToken, name, picture = null, is_private = undefined, background = undefined, records_uid = undefined, game_uid = undefined, favorite_game_uid = undefined, currentUid = undefined, hideUid = undefined) {
     const targetUid = currentUid || name;
-    if (currentUid || (is_private !== undefined || background !== undefined)) {
+    if (currentUid || (is_private !== undefined || background !== undefined || hideUid !== undefined)) {
         try {
             return await updateUserProfile(idToken, targetUid, {
                 newUid: name !== targetUid ? name : undefined,
                 isPrivate: is_private !== undefined ? (is_private === 1 || is_private === true) : undefined,
+                hideUid: hideUid !== undefined ? (hideUid === 1 || hideUid === true) : undefined,
                 backgroundId: background !== undefined ? background : undefined
             });
         } catch (e) {
             if (e.message && e.message.includes("User not found")) {
-                return await createUserProfile(idToken, name, is_private === 1 || is_private === true, null, null, background || null);
+                return await createUserProfile(idToken, name, is_private === 1 || is_private === true, null, null, background || null, hideUid !== undefined ? (hideUid === 1 || hideUid === true) : true);
             }
             throw e;
         }
     }
-    return await createUserProfile(idToken, name, is_private === 1 || is_private === true, null, null, background || null);
+    return await createUserProfile(idToken, name, is_private === 1 || is_private === true, null, null, background || null, hideUid !== undefined ? (hideUid === 1 || hideUid === true) : true);
 }
 
 export async function syncGameAccount(idToken, gameToken, testRecords = null, serverId = null, currentUid = null) {
@@ -492,8 +513,10 @@ export async function fetchLeaderboard(params = 'contract') {
         const options = typeof params === 'string' ? { event: params } : (params || {});
         const eventType = options.event || (options.dungeonId ? 'monument' : 'contract');
 
-        if (eventType === 'monument') {
-            const dungeonId = options.dungeonId || 'indie_hard001';
+        if (eventType === 'monument' || eventType === 'echoesOfWar') {
+            const isEchoes = eventType === 'echoesOfWar';
+            const endpoint = isEchoes ? `${API_BASE}/leaderboard/war-echoes/list` : `${API_BASE}/leaderboard/monument/list`;
+            const dungeonId = options.dungeonId || (isEchoes ? 'indie_battletower012' : 'indie_hard001');
             let sortField = options.sortField === 'level' ? 'level' : 'time';
             let sortOrder = options.sortOrder || (sortField === 'time' ? 'asc' : 'desc');
             const serverId = options.serverId || 'all';
@@ -513,8 +536,8 @@ export async function fetchLeaderboard(params = 'contract') {
                 charCountFilter
             });
 
-            const res = await fetch(`${API_BASE}/leaderboard/monument/list?${query.toString()}`);
-            if (!res.ok) throw new Error('Failed to fetch monument leaderboard');
+            const res = await fetch(`${endpoint}?${query.toString()}`);
+            if (!res.ok) throw new Error(`Failed to fetch ${eventType} leaderboard`);
             const json = await res.json();
             const list = json.data?.list || [];
             const totalCount = typeof json.data?.totalCount === 'number' ? json.data.totalCount : list.length;
@@ -611,9 +634,12 @@ export async function fetchLeaderboard(params = 'contract') {
 
 export async function fetchLeaderboardRun(id, eventType = 'contract') {
     try {
-        const endpoint = eventType === 'monument'
-            ? `${API_BASE}/leaderboard/monument/run?recordId=${encodeURIComponent(id)}`
-            : `${API_BASE}/leaderboard/contract/run?recordId=${encodeURIComponent(id)}`;
+        let endpoint = `${API_BASE}/leaderboard/contract/run?recordId=${encodeURIComponent(id)}`;
+        if (eventType === 'monument') {
+            endpoint = `${API_BASE}/leaderboard/monument/run?recordId=${encodeURIComponent(id)}`;
+        } else if (eventType === 'echoesOfWar') {
+            endpoint = `${API_BASE}/leaderboard/war-echoes/run?recordId=${encodeURIComponent(id)}`;
+        }
         const res = await fetch(endpoint);
         if (!res.ok) throw new Error('Failed to fetch leaderboard run details');
         const json = await res.json();
@@ -640,7 +666,7 @@ export async function fetchLeaderboardRun(id, eventType = 'contract') {
                     ...c,
                     id: normId,
                     gameId: c.id,
-                    potential: c.potentialLevel ?? c.potential ?? 1,
+                    potential: c.potentialLevel ?? c.potential ?? 0,
                     weapon: normalizeWeapon(c.weapon),
                     bodyEquip,
                     armEquip,

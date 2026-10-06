@@ -346,7 +346,8 @@
     "blueprintLocation": "Ubicación de plantilla de equipamiento",
     "rewards": "Recompensas",
     "dayN": "Día {n}",
-    "addedInVersion": "Añadido en la versión {version}"
+    "addedInVersion": "Añadido en la versión {version}",
+    "currentlyUnavailable": "No disponible actualmente"
   },
   "status": {
     "won": "Ganado 50:50",
@@ -413,7 +414,8 @@
     "openRecipe": "Abrir recetas",
     "leaderboard": "Tabla de clasificación",
     "profile": "Perfil",
-    "icons": "Iconos"
+    "icons": "Iconos",
+    "achievements": "Logros"
   },
   "events": {
     "type": {
@@ -1162,7 +1164,13 @@
     "currentWeek": "Semana actual",
     "nextWeek": "Próxima semana",
     "fullCalendar": "Calendario completo",
-    "arsenalExchangeWarning": "Los datos se basan en el archivo de rotación de armas chino y pueden no ser precisos"
+    "arsenalExchangeWarning": "Los datos se basan en el archivo de rotación de armas chino y pueden no ser precisos",
+    "gameUpdate": "Actualización del Juego",
+    "maintenanceInProgress": "Mantenimiento en curso",
+    "updateExpected": "Previsto",
+    "versionLabel": "Versión {version}",
+    "goToChangelog": "Registro de cambios",
+    "currentGameVersion": "Versión actual del juego: {version}"
   },
   "characters": {
     "catcher": "Catcher",
@@ -2525,6 +2533,7 @@
     "delete_confirm": "¿Eliminar este token guardado?",
     "settings_title": "Ajustes del Perfil",
     "settings_hide_data": "Ocultar detalles en la tabla de clasificación",
+    "settings_hide_uid": "Ocultar UID de cuentas",
     "settings_primary_account": "Vincular Cuenta de Tiradas",
     "settings_primary_account_none": "Ninguna",
     "bind_to_view_luck": "Vincula una cuenta de juego en los ajustes para ver tu suerte.",
@@ -2540,7 +2549,7 @@
     "image_size_error": "Imagen muy pequeña. Resolución mínima de 128x128.",
     "crop_avatar_title": "Recortar Avatar",
     "avatar_success": "¡Avatar actualizado!",
-    "no_connected_accounts": "No hay cuentas vinculadas. Sincroniza usando el botón de arriba.",
+    "no_connected_accounts": "No hay cuentas de juego vinculadas. Sincroniza tu cuenta usando el botón de arriba.",
     "edit_nickname": "Editar apodo",
     "copy_profile_link": "Copiar enlace del perfil",
     "link_copied": "¡Enlace copiado!",
@@ -2606,7 +2615,9 @@
     "token_already_used": "Este token ya ha sido utilizado",
     "token_expired_badge": "Expirado",
     "unauthorized": "No autorizado",
-    "user_not_found": "Usuario no encontrado"
+    "user_not_found": "Usuario no encontrado",
+    "syncing": "Sincronizando...",
+    "max_profiles_reached": "El número máximo de perfiles vinculados es 3"
   },
   "contractTagNames": {
     "activity_contract_tag_201": "Ambiente: Sobreaceleración",
@@ -2710,7 +2721,8 @@
     "indie_group_h03": "Constructo inorgánico",
     "indie_group_h04": "Manifestación de turbiedad",
     "indie_group_h05": "Los abandonados por la tierra",
-    "indie_group_h06": "Aulladores del peñasco"
+    "indie_group_h06": "Aulladores del peñasco",
+    "indie_group_h07": "Marcado por sombras oscuras"
   },
   "equipmentScriptNames": {
     "xiraniteTechnique": "Técnica de Xiranita",
@@ -2829,5 +2841,52 @@
     "gas_env_wet": "ENT húmedo",
     "gas_env_acidic": "ENT acre",
     "gas_env_xiranite": "ENT de Xiranita"
+  },
+  "achCategories": {
+    "achv_type_adventure": "Regional",
+    "achv_type_battle": "Técnico",
+    "achv_type_event": "Evento",
+    "achv_type_factory": "Construcción",
+    "achv_type_growth": "Progresión",
+    "achv_type_hide": "Asombroso",
+    "achv_type_quest": "Capítulo",
+    "achv_type_social": "Social"
+  },
+  "achGroups": {
+    "achv_group_adv_tundra": "Valle",
+    "achv_group_adv_wuling": "Wuling",
+    "achv_group_bat_skill": "Técnica de combate",
+    "achv_group_bat_dung": "Espacio de protocolo",
+    "achv_group_fac_factory": "Fábrica del CAI",
+    "achv_group_fac_spaceship": "Dijiang",
+    "achv_group_quest_main": "Misión principal",
+    "achv_group_quest_side": "Misión de exploración",
+    "achv_group_event_default": "Evento",
+    "achv_group_growth_default": "Progresión",
+    "achv_group_hide_default": "Asombroso",
+    "achv_group_social_default": "Social"
+  },
+  "achievements": {
+    "of": "de",
+    "onlyIncomplete": "Solo incompletos",
+    "allVersions": "Todas las versiones",
+    "searchPlaceholder": "Buscar...",
+    "empty": "No se encontraron logros",
+    "sync": "Sincronización",
+    "syncModalTitle": "Sincronizar Logros",
+    "selectAccount": "Seleccionar Cuenta:",
+    "syncAction": "Sincronizar",
+    "syncSuccess": "Logros sincronizados: {count}",
+    "syncNothingToUpdate": "Todos los logros ya están actualizados",
+    "notLoggedInDesc": "Para sincronizar logros, debes iniciar sesión y vincular tu perfil de juego.",
+    "noAccountsDesc": "No hay cuentas de juego vinculadas a tu perfil. Vincula una cuenta en la página de Perfil.",
+    "noMedalsInProfile": "No se encontraron logros en la cuenta de juego seleccionada",
+    "syncWarningProgress": "Sincronizar los logros con el perfil del juego restablecerá el progreso actual de los logros."
+  },
+  "achLevels": {
+    "source": "Fuente",
+    "reforging2": "Reforjado II",
+    "reforging3": "Reforjado III",
+    "trimming": "Adorno"
   }
 }

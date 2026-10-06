@@ -66,6 +66,8 @@
     }
     let avatarInput;
     let isPrivate = false;
+    let hideUid = true;
+    let regHideUid = true;
 
     let bgSearchQuery = "";
     $: availableBackgrounds = Object.values(characters || {})
@@ -186,7 +188,8 @@
             "Token already used": "profile.token_already_used",
             "Invalid image format.": "profile.image_format_error",
             "Banner profile not found": "profile.banner_profile_not_found",
-            "Banner profile not found.": "profile.banner_profile_not_found"
+            "Banner profile not found.": "profile.banner_profile_not_found",
+            "Max profiles reached": "profile.max_profiles_reached"
         };
 
         if (exactMappings[msg]) {
@@ -288,6 +291,7 @@
 
     $: if (profile) {
         isPrivate = profile.is_private === 1;
+        hideUid = profile.hideUid !== undefined ? profile.hideUid : (profile.hide_uid !== undefined ? profile.hide_uid === 1 : true);
     }
 
     async function handleTogglePrivate() {
@@ -298,6 +302,20 @@
             isPrivate = nextPrivateVal;
             profile.is_private = nextPrivateVal ? 1 : 0;
             profile.isPrivate = nextPrivateVal;
+            addNotification("success", $t("profile.privacy_settings_updated"));
+        } catch (e) {
+            addNotification("error", translateBackendError(e.message));
+        }
+    }
+
+    async function handleToggleHideUid() {
+        try {
+            const token = await $user.getIdToken();
+            const nextHideUidVal = !hideUid;
+            await updateUserProfile(token, profile.name, { hideUid: nextHideUidVal });
+            hideUid = nextHideUidVal;
+            profile.hide_uid = nextHideUidVal ? 1 : 0;
+            profile.hideUid = nextHideUidVal;
             addNotification("success", $t("profile.privacy_settings_updated"));
         } catch (e) {
             addNotification("error", translateBackendError(e.message));
@@ -426,7 +444,7 @@
             loading = true;
             const token = await $user.getIdToken();
             
-            const data = await createUserProfile(token, trimmed, false);
+            const data = await createUserProfile(token, trimmed, false, null, null, null, regHideUid);
             profile = { ...data, details: [] };
             needsRegistration = false;
             
@@ -707,7 +725,7 @@
         <ProfileSkeleton />
     {:else if !$user}
         <div class="flex items-center justify-center min-h-[70vh] relative z-10" in:fade>
-            <div class="bg-white/5 border border-white/10 p-8 rounded-2xl max-w-lg text-center flex flex-col items-center">
+            <div class="bg-white dark:bg-white/5 border border-white/10 p-8 rounded-2xl max-w-lg text-center flex flex-col items-center">
                 <h2 class="text-2xl font-bold dark:text-white text-gray-900 mb-4 font-sdk">
                     {$t("profile.sync_title")}
                 </h2>
@@ -725,7 +743,7 @@
         </div>
     {:else if needsRegistration}
         <div class="flex items-center justify-center min-h-[70vh] relative z-10" in:fade>
-            <div class="bg-white/5 border border-white/10 p-8 rounded-2xl w-full max-w-md flex flex-col items-center">
+            <div class="bg-white dark:bg-white/5 border border-white/10 p-8 rounded-2xl w-full max-w-md flex flex-col items-center">
                 <h2 class="text-2xl font-bold dark:text-white text-gray-900 mb-6 font-sdk">
                     {$t("profile.register_title")}
                 </h2>
@@ -750,7 +768,7 @@
                     {:else}
                         <button
                             type="button"
-                            class="w-full h-full rounded-xl bg-white/10 border-2 border-white/20 hover:border-[#FFE145] transition-colors flex items-center justify-center text-white/50 cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#FFE145]"
+                            class="w-full h-full rounded-xl bg-gray-100 dark:bg-white/10 border-2 border-gray-200 dark:border-white/20 hover:border-[#FFE145] transition-colors flex items-center justify-center text-gray-700 dark:text-white/50 cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#FFE145]"
                             on:click={() => avatarInput.click()}
                             aria-label="Upload avatar"
                         >
@@ -770,7 +788,7 @@
                         value={newProfileName}
                         on:input={handleNameInput}
                         placeholder="e.g. user69"
-                        class="w-full bg-white/5 border border-white/10 text-white rounded-lg px-4 py-3 outline-none focus:border-[#FFE145] transition-colors font-mono"
+                        class="w-full bg-gray-100 dark:bg-white/5 border border-white/10 text-gray-700 dark:text-white rounded-lg px-4 py-3 outline-none focus:border-[#FFE145] transition-colors font-mono"
                     />
                     {#if showNameWarning}
                         <p class="absolute text-xs text-orange-400 font-sans w-full mt-2" transition:fade>
@@ -781,6 +799,24 @@
                             {$t("profile.name_validation_hint")}
                         </p>
                     {/if}
+                </div>
+
+                <div class="w-full flex items-center justify-between mb-6 select-none">
+                    <span class="text-sm dark:text-gray-400 text-gray-400 font-bold font-sdk pr-4 select-text">
+                        {$t("profile.settings_hide_uid")}
+                    </span>
+                    <!-- svelte-ignore a11y_click_events_have_key_events -->
+                    <!-- svelte-ignore a11y_no_static_element_interactions -->
+                    <div
+                        on:click={() => regHideUid = !regHideUid}
+                        class="w-12 h-6 flex items-center rounded-full p-1 cursor-pointer transition-colors duration-300 shrink-0
+                        {regHideUid ? 'bg-[#FFE145]' : 'bg-gray-600'}"
+                    >
+                        <div
+                            class="bg-[#1a1a1a] w-4 h-4 rounded-full shadow-md transform transition-transform duration-300
+                            {regHideUid ? 'translate-x-6' : 'translate-x-0'}"
+                        ></div>
+                    </div>
                 </div>
 
                 <Button
@@ -1042,6 +1078,8 @@
                             {activeAccount}
                             profileName={profile?.name}
                             hasBackground={!!profile?.background}
+                            {hideUid}
+                            accountSlot={sortedDetails.findIndex(d => d.game_uid === activeAccount?.game_uid) + 1}
                         />
                     </div>
 
@@ -1054,11 +1092,12 @@
         </div>
     {/if}
 
-    <SyncModal bind:this={syncModal} isOpen={syncModalOpen} on:close={() => syncModalOpen = false} on:sync={handleSync} on:error={(e) => addNotification("error", e.detail)} />
+    <SyncModal bind:this={syncModal} isOpen={syncModalOpen} linkedAccounts={profile?.details || []} on:close={() => syncModalOpen = false} on:sync={handleSync} on:error={(e) => addNotification("error", e.detail)} />
 
     <SettingsModal
         isOpen={settingsModalOpen}
         {isPrivate}
+        {hideUid}
         {profile}
         {activeAccount}
         {primaryAccountOptions}
@@ -1067,6 +1106,7 @@
         bind:bgSearchQuery
         on:close={() => settingsModalOpen = false}
         on:togglePrivate={handleTogglePrivate}
+        on:toggleHideUid={handleToggleHideUid}
         on:selectRecordsUid={(e) => handleSelectRecordsUid(e.detail)}
         on:selectBackground={(e) => handleSelectBackground(e.detail)}
         on:logout={async () => { await logout(); settingsModalOpen = false; addNotification("success", "Logged out successfully!"); }}

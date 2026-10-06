@@ -345,7 +345,8 @@
     "blueprintLocation": "Localização do modelo de equipamento",
     "rewards": "Recompensas",
     "dayN": "Dia {n}",
-    "addedInVersion": "Adicionado na versão {version}"
+    "addedInVersion": "Adicionado na versão {version}",
+    "currentlyUnavailable": "Indisponível no Momento"
   },
   "status": {
     "won": "Ganho 50:50",
@@ -412,7 +413,8 @@
     "openRecipe": "Abrir receitas",
     "leaderboard": "Tabela de Classificação",
     "profile": "Perfil",
-    "icons": "Ícones"
+    "icons": "Ícones",
+    "achievements": "Conquistas"
   },
   "events": {
     "type": {
@@ -1161,7 +1163,13 @@
     "currentWeek": "Semana atual",
     "nextWeek": "Próxima semana",
     "fullCalendar": "Calendário completo",
-    "arsenalExchangeWarning": "Os dados são baseados no arquivo de rotação de armas chinês e podem não ser precisos"
+    "arsenalExchangeWarning": "Os dados são baseados no arquivo de rotação de armas chinês e podem não ser precisos",
+    "gameUpdate": "Atualização do Jogo",
+    "maintenanceInProgress": "Manutenção em andamento",
+    "updateExpected": "Previsto",
+    "versionLabel": "Versão {version}",
+    "goToChangelog": "Notas de Atualização",
+    "currentGameVersion": "Versão atual do jogo: {version}"
   },
   "characters": {
     "catcher": "Catcher",
@@ -2524,6 +2532,7 @@
     "delete_confirm": "Excluir este token salvo?",
     "settings_title": "Configurações do Perfil",
     "settings_hide_data": "Ocultar detalhes na tabela de classificação",
+    "settings_hide_uid": "Ocultar UIDs de contas",
     "settings_primary_account": "Vincular Conta de Tiros",
     "settings_primary_account_none": "Nenhuma",
     "bind_to_view_luck": "Vincule uma conta de jogo para ver estatísticas de sorte.",
@@ -2539,7 +2548,7 @@
     "image_size_error": "Imagem muito pequena (mínimo 128x128).",
     "crop_avatar_title": "Cortar Avatar",
     "avatar_success": "Avatar atualizado com sucesso!",
-    "no_connected_accounts": "Nenhuma conta vinculada.",
+    "no_connected_accounts": "Nenhuma conta de jogo vinculada. Sincronize sua conta usando o botão acima.",
     "edit_nickname": "Editar apelido",
     "copy_profile_link": "Copiar link do perfil",
     "link_copied": "Link copiado!",
@@ -2547,7 +2556,7 @@
     "copy_uid": "Copiar UID",
     "unlink_account": "Desvincular conta",
     "all": "Todos",
-    "sync_with_game": "Sincronizar",
+    "sync_with_game": "Sincronizar com o jogo",
     "no_essence": "Sem essência",
     "copy_failed": "Falha ao copiar",
     "no_weapon": "Nenhuma arma equipada",
@@ -2605,7 +2614,9 @@
     "token_already_used": "Este token já foi utilizado",
     "token_expired_badge": "Expirado",
     "unauthorized": "Não autorizado",
-    "user_not_found": "Usuário não encontrado"
+    "user_not_found": "Usuário não encontrado",
+    "syncing": "Sincronizando...",
+    "max_profiles_reached": "O número máximo de perfis vinculados é 3"
   },
   "contractTagNames": {
     "activity_contract_tag_201": "Ambiente: Overclock",
@@ -2709,7 +2720,8 @@
     "indie_group_h03": "Construção Inorgânica",
     "indie_group_h04": "Manifesto de Turbidez",
     "indie_group_h05": "Os Abandonados pela Terra",
-    "indie_group_h06": "Uivantes do Penhasco"
+    "indie_group_h06": "Uivantes do Penhasco",
+    "indie_group_h07": "Marcado por Sombras Escuras"
   },
   "equipmentScriptNames": {
     "xiraniteTechnique": "Técnica de Xiranita",
@@ -2828,5 +2840,52 @@
     "gas_env_wet": "AMB Úmido",
     "gas_env_acidic": "AMB Acre",
     "gas_env_xiranite": "AMB Xiranita"
+  },
+  "achCategories": {
+    "achv_type_adventure": "Regional",
+    "achv_type_battle": "Técnico",
+    "achv_type_event": "Evento",
+    "achv_type_factory": "Construção",
+    "achv_type_growth": "Progressão",
+    "achv_type_hide": "Maravilhoso",
+    "achv_type_quest": "Capítulo",
+    "achv_type_social": "Social"
+  },
+  "achGroups": {
+    "achv_group_adv_tundra": "Vale",
+    "achv_group_adv_wuling": "Wuling",
+    "achv_group_bat_skill": "Técnica de Combate",
+    "achv_group_bat_dung": "Espaço do Protocolo",
+    "achv_group_fac_factory": "Fábrica do CAI",
+    "achv_group_fac_spaceship": "Dijiang",
+    "achv_group_quest_main": "Missão Principal",
+    "achv_group_quest_side": "Missão de Exploração",
+    "achv_group_event_default": "Evento",
+    "achv_group_growth_default": "Progressão",
+    "achv_group_hide_default": "Maravilhoso",
+    "achv_group_social_default": "Social"
+  },
+  "achievements": {
+    "of": "de",
+    "onlyIncomplete": "Apenas incompletos",
+    "allVersions": "Todas as versões",
+    "searchPlaceholder": "Pesquisar...",
+    "empty": "Nenhuma conquista encontrada",
+    "sync": "Sincronizar",
+    "syncModalTitle": "Sincronizar Conquistas",
+    "selectAccount": "Selecionar Conta:",
+    "syncAction": "Sincronizar",
+    "syncSuccess": "Conquistas sincronizadas: {count}",
+    "syncNothingToUpdate": "Todas as conquistas já estão atualizadas",
+    "notLoggedInDesc": "Para sincronizar conquistas, você deve fazer login e vincular seu perfil de jogo.",
+    "noAccountsDesc": "Nenhuma conta de jogo vinculada ao seu perfil. Vincule uma conta na página de Perfil.",
+    "noMedalsInProfile": "Nenhuma conquista encontrada na conta de jogo selecionada",
+    "syncWarningProgress": "Sincronizar as conquistas com o perfil do jogo redefinirá o progresso atual das conquistas."
+  },
+  "achLevels": {
+    "source": "Origem",
+    "reforging2": "Reforja II",
+    "reforging3": "Reforja III",
+    "trimming": "Decoração"
   }
 }

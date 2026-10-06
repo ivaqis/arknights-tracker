@@ -71,61 +71,86 @@ export function getWeaponIcon(weapon) {
 
 export function getWeaponTerms(wpn) {
     if (!wpn) return [];
-    if (wpn.weaponTerms && wpn.weaponTerms.length > 0) {
+    if (Array.isArray(wpn.weaponTerms) && wpn.weaponTerms.length > 0) {
         return wpn.weaponTerms;
     }
-    if (Array.isArray(wpn.skills) && wpn.skills.length > 0 && wpn.skills.every(s => typeof s.level === 'number')) {
-        return wpn.skills.map(s => s.level);
+    if (Array.isArray(wpn.skills) && wpn.skills.length > 0 && wpn.skills.every(s => typeof s === 'number' || typeof s?.level === 'number')) {
+        return wpn.skills.map(s => typeof s === 'number' ? s : s.level);
     }
-    const refine = wpn.refineLevel || 0;
+
+    const refine = Number(wpn.refineLevel) || 0;
     const wpnStatic = getWeaponData(wpn);
-    const rarity = wpnStatic?.rarity || wpn.rarity || 4;
-    const gameId = wpnStatic?.id || wpn.id || "";
-    const level = wpn.level || 1;
+    const rarity = Number(wpnStatic?.rarity || wpn.rarity || 4);
+    const level = Number(wpn.level) || 1;
+    const skillKeys = wpnStatic?.skills || [];
 
-    const baseTermsMap = {
-        "wpn_sword_0006": [6, 3, 1],
-        "wpn_sword_0012": [5, 5, 1],
-        "wpn_funnel_0005": [3, 2, 1],
-        "wpn_claym_0012": [2, 1, 2]
-    };
-
-    const defaultRarityBase = {
-        6: [5, 3, 1],
-        5: [2, 2, 1],
-        4: [1, 1, 1]
-    };
-
-    const base = baseTermsMap[gameId] || defaultRarityBase[rarity] || [1, 1];
-    const tier = Math.min(4, Math.floor(level / 20));
-    const lowerMax1 = rarity === 3 ? 5 : 3;
-    const lowerMax2 = 3;
-
-    const progression = rarity === 3
-        ? [tier + 1, 1]
-        : [[1, 1], [2, 1], [2, 2], [3, 2], [3, 3]][tier];
-
-    const lowerCurrent1 = progression[0];
-    const lowerCurrent2 = progression[1];
-
-    let term1 = Math.ceil(base[0] * (lowerCurrent1 / lowerMax1));
-    let term2 = base[1] ? Math.ceil(base[1] * (lowerCurrent2 / lowerMax2)) : 0;
-    let term3 = (base[2] || 1) + (base.length >= 3 ? refine : 0);
-
-    const gemData = wpn.gem?.gemData;
-    if (gemData) {
-        const isRarity5 = gemData.templateId === "item_gem_rarity_5";
-        const bonus = isRarity5 ? 4 : 2;
-        term1 += bonus;
-        if (base[1]) term2 += bonus;
-        if (gemData.termId && base.length >= 3) {
-            term3 += isRarity5 ? 2 : 1;
-        }
+    let bt = wpn.breakthroughLevel;
+    if (bt === undefined || bt === null) {
+        if (level >= 80) bt = 4;
+        else if (level >= 60) bt = level > 60 ? 3 : 2;
+        else if (level >= 40) bt = level > 40 ? 2 : 1;
+        else if (level >= 20) bt = level > 20 ? 1 : 0;
+        else bt = 0;
     }
 
-    if (base.length >= 3) return [term1, term2, term3];
-    if (base.length === 2) return [term1, term2];
-    return [term1];
+    let baseTerms;
+    let upperBounds;
+    if (rarity === 3) {
+        const s1 = bt === 4 ? 5 : bt === 3 ? 4 : bt === 2 ? 3 : bt === 1 ? 2 : 1;
+        const u1 = bt === 4 ? 9 : bt === 3 ? 8 : bt === 2 ? 6 : bt === 1 ? 5 : 3;
+        const s2 = 1 + refine;
+        const u2 = Math.min(9, 4 + refine);
+        baseTerms = [s1, s2];
+        upperBounds = [u1, u2];
+    } else {
+        const s1 = bt >= 3 ? 3 : bt >= 1 ? 2 : 1;
+        const u1 = bt === 4 ? 9 : bt === 3 ? 8 : bt === 2 ? 6 : bt === 1 ? 5 : 3;
+        const s2 = bt >= 4 ? 3 : bt >= 2 ? 2 : 1;
+        const u2 = bt === 4 ? 9 : bt === 3 ? 7 : bt === 2 ? 6 : bt === 1 ? 4 : 3;
+        const s3 = 1 + refine;
+        const u3 = Math.min(9, 4 + refine);
+        baseTerms = [s1, s2, s3];
+        upperBounds = [u1, u2, u3];
+    }
+
+    const gem = wpn.gem;
+    if (gem) {
+        const gemTerms = gem.terms || gem.skills || gem.gemData?.terms || wpn.terms;
+        if (Array.isArray(gemTerms) && gemTerms.length > 0) {
+            return baseTerms.map((baseVal, idx) => {
+                const isPassive = rarity === 3 ? idx === 1 : idx === 2;
+                if (isPassive) {
+                    const upper = upperBounds[idx] || 9;
+                    return Math.min(upper, Math.max(1, baseVal));
+                }
+                const skillId = skillKeys[idx];
+                let bonus = 0;
+                const found = skillId
+                    ? gemTerms.find(t => t && (t.id === skillId || (t.id && (skillId.includes(t.id) || t.id.includes(skillId) || t.id.replace(/^term_|^attr_/, '') === skillId.replace(/^term_|^attr_/, '')))))
+                    : null;
+                if (found) {
+                    bonus = Number(found.cost ?? found.level ?? found.value ?? 0) || 0;
+                } else if (gemTerms[idx]) {
+                    bonus = Number(gemTerms[idx].cost ?? gemTerms[idx].level ?? gemTerms[idx].value ?? 0) || 0;
+                }
+                const upper = upperBounds[idx] || 9;
+                return Math.min(upper, Math.max(1, baseVal + bonus));
+            });
+        }
+
+        const gemTemplate = gem.gemData?.templateId || gem.templateId || gem.presetId || gem.gemData?.name || "";
+        const parsedRarity = parseInt(gemTemplate.replace(/[^0-9]/g, "").slice(-1)) || Number(gem.gemData?.rarity || gem.rarity) || 5;
+        const s1Bonus = parsedRarity >= 5 ? 3 : parsedRarity === 4 ? 2 : 1;
+
+        return baseTerms.map((baseVal, idx) => {
+            const isPassive = rarity === 3 ? idx === 1 : idx === 2;
+            const bonus = (idx === 0 && !isPassive) ? s1Bonus : 0;
+            const upper = upperBounds[idx] || 9;
+            return Math.min(upper, Math.max(1, baseVal + bonus));
+        });
+    }
+
+    return baseTerms.map((v, idx) => Math.min(upperBounds[idx] || 9, Math.max(1, v)));
 }
 
 export function getStaticEquipId(equipData, equipmentNames = {}) {

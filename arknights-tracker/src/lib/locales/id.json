@@ -345,7 +345,8 @@
     "blueprintLocation": "Lokasi Templat Perlengkapan",
     "rewards": "Hadiah",
     "dayN": "Hari {n}",
-    "addedInVersion": "Ditambahkan di versi {version}"
+    "addedInVersion": "Ditambahkan di versi {version}",
+    "currentlyUnavailable": "Saat Ini Tidak Tersedia"
   },
   "status": {
     "won": "Menang 50:50",
@@ -412,7 +413,8 @@
     "openRecipe": "Buka resep",
     "leaderboard": "Papan Peringkat",
     "profile": "Profil",
-    "icons": "Ikon"
+    "icons": "Ikon",
+    "achievements": "Pencapaian"
   },
   "events": {
     "type": {
@@ -1161,7 +1163,13 @@
     "currentWeek": "Minggu ini",
     "nextWeek": "Minggu depan",
     "fullCalendar": "Kalender lengkap",
-    "arsenalExchangeWarning": "Data didasarkan pada file rotasi senjata server Tiongkok dan mungkin tidak akurat"
+    "arsenalExchangeWarning": "Data didasarkan pada file rotasi senjata server Tiongkok dan mungkin tidak akurat",
+    "gameUpdate": "Pembaruan Game",
+    "maintenanceInProgress": "Pemeliharaan sedang berlangsung",
+    "updateExpected": "Diharapkan",
+    "versionLabel": "Versi {version}",
+    "goToChangelog": "Catatan Perubahan",
+    "currentGameVersion": "Versi game saat ini: {version}"
   },
   "characters": {
     "catcher": "Catcher",
@@ -2524,6 +2532,7 @@
     "delete_confirm": "Hapus token ini?",
     "settings_title": "Pengaturan Profil",
     "settings_hide_data": "Sembunyikan detail akun di papan peringkat",
+    "settings_hide_uid": "Sembunyikan UID akun",
     "settings_primary_account": "Tautkan Akun Tarikan",
     "settings_primary_account_none": "Tidak ada",
     "bind_to_view_luck": "Tautkan akun untuk melihat statistik keberuntungan.",
@@ -2539,7 +2548,7 @@
     "image_size_error": "Gambar terlalu kecil (Min 128x128).",
     "crop_avatar_title": "Potong Avatar",
     "avatar_success": "Avatar berhasil diperbarui!",
-    "no_connected_accounts": "Tidak ada akun terhubung.",
+    "no_connected_accounts": "Tidak ada akun game yang terhubung. Sinkronkan akun Anda menggunakan tombol di atas.",
     "edit_nickname": "Edit nama panggilan",
     "copy_profile_link": "Salin tautan profil",
     "link_copied": "Tautan disalin!",
@@ -2605,7 +2614,9 @@
     "token_already_used": "Token ini sudah digunakan",
     "token_expired_badge": "Kedaluwarsa",
     "unauthorized": "Tidak terotorisasi",
-    "user_not_found": "Pengguna tidak ditemukan"
+    "user_not_found": "Pengguna tidak ditemukan",
+    "syncing": "Menyinkronkan...",
+    "max_profiles_reached": "Jumlah maksimum profil yang ditautkan adalah 3"
   },
   "contractTagNames": {
     "activity_contract_tag_201": "Ambiens: Overclock",
@@ -2709,7 +2720,8 @@
     "indie_group_h03": "Konstruksi Anorganik",
     "indie_group_h04": "Manifestasi Kekeruhan",
     "indie_group_h05": "Yang Ditelantarkan Negeri",
-    "indie_group_h06": "Peraung Tebing"
+    "indie_group_h06": "Peraung Tebing",
+    "indie_group_h07": "Diincar Bayangan Gelap"
   },
   "equipmentScriptNames": {
     "xiraniteTechnique": "Teknik Xiranite",
@@ -2828,5 +2840,52 @@
     "gas_env_wet": "LINGK Lembap",
     "gas_env_acidic": "LINGK Menyengat",
     "gas_env_xiranite": "LINGK Xiranite"
+  },
+  "achCategories": {
+    "achv_type_adventure": "Regional",
+    "achv_type_battle": "Teknis",
+    "achv_type_event": "Event",
+    "achv_type_factory": "Konstruksi",
+    "achv_type_growth": "Progresi",
+    "achv_type_hide": "Keajaiban",
+    "achv_type_quest": "Bab",
+    "achv_type_social": "Sosial"
+  },
+  "achGroups": {
+    "achv_group_adv_tundra": "Lembah",
+    "achv_group_adv_wuling": "Wuling",
+    "achv_group_bat_skill": "Teknik Tempur",
+    "achv_group_bat_dung": "Dimensi Protokol",
+    "achv_group_fac_factory": "Pabrik AIC",
+    "achv_group_fac_spaceship": "Dijiang",
+    "achv_group_quest_main": "Misi Utama",
+    "achv_group_quest_side": "Misi Eksplorasi",
+    "achv_group_event_default": "Event",
+    "achv_group_growth_default": "Progresi",
+    "achv_group_hide_default": "Keajaiban",
+    "achv_group_social_default": "Sosial"
+  },
+  "achievements": {
+    "of": "dari",
+    "onlyIncomplete": "Hanya yang belum selesai",
+    "allVersions": "Semua versi",
+    "searchPlaceholder": "Cari...",
+    "empty": "Pencapaian tidak ditemukan",
+    "sync": "Sinkronisasi",
+    "syncModalTitle": "Sinkronkan Pencapaian",
+    "selectAccount": "Pilih Akun:",
+    "syncAction": "Sinkronkan",
+    "syncSuccess": "Pencapaian disinkronkan: {count}",
+    "syncNothingToUpdate": "Semua pencapaian sudah mutakhir",
+    "notLoggedInDesc": "Untuk menyinkronkan pencapaian, Anda harus masuk dan menautkan profil game Anda.",
+    "noAccountsDesc": "Tidak ada akun game yang ditautkan ke profil Anda. Tautkan akun di halaman Profil.",
+    "noMedalsInProfile": "Tidak ada pencapaian yang ditemukan di akun game yang dipilih",
+    "syncWarningProgress": "Menyinkronkan pencapaian dengan profil dalam game akan mengatur ulang progres pencapaian saat ini."
+  },
+  "achLevels": {
+    "source": "Sumber",
+    "reforging2": "Penempaan Ulang Ⅱ",
+    "reforging3": "Penempaan Ulang Ⅲ",
+    "trimming": "Perataan"
   }
 }

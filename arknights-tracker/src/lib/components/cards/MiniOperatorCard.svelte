@@ -34,8 +34,8 @@
 
     $: isEmpty = !char || Object.keys(char).length === 0;
     $: opData = !isEmpty ? resolveOperator(char) : null;
-    $: rawPot = char?.potential ?? (char?.potentialLevel !== undefined ? char.potentialLevel + 1 : 1);
-    $: potIndex = Math.max(0, Math.min(5, (rawPot || 1) - 1));
+    $: rawPot = char?.potential ?? char?.potentialLevel ?? 0;
+    $: potIndex = Math.max(0, Math.min(5, rawPot));
     $: cardHref = href || (opData ? `/operators/${opData.id}` : '#');
 </script>
 

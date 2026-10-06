@@ -304,7 +304,7 @@
     <div class="bg-gray-50 dark:bg-[#2C2C2C] p-4 rounded-xl mb-4 border border-gray-100 dark:border-[#444]">
       <div class="flex items-center justify-between text-sm mb-2.5">
         <span class="font-bold text-gray-700 dark:text-[#E0E0E0]">{$t("settings.cache.totalUsage")}</span>
-        <span class="font-mono font-bold text-base text-[#21272C] dark:text-[#FDFDFD]">
+        <span class="font-mono font-bold text-[#21272C] dark:text-[#FDFDFD]">
           {$t("settings.cache.used")}: {formatBytes(totalCalculated)}
         </span>
       </div>
@@ -403,7 +403,7 @@
 
     <div class="flex justify-end pt-2 border-t border-gray-100 dark:border-[#444]">
       <div class="w-auto">
-        <Button variant="round" color="yellow" onClick={onClose}>
+        <Button variant="round" color="gray" onClick={onClose}>
           {$t("privacy.close")}
         </Button>
       </div>

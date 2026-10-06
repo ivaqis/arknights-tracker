@@ -1986,7 +1986,7 @@
 
       <div class="mt-6 pt-4 flex justify-end shrink-0 border-t border-gray-100 dark:border-[#444444]">
         <div class="w-auto min-w-[120px]">
-          <Button variant="round" color="yellow" onClick={closeEssencesModal}>
+          <Button variant="round" color="gray" onClick={closeEssencesModal}>
             {$t("privacy.close")}
           </Button>
         </div>

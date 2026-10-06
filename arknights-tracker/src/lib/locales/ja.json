@@ -345,7 +345,8 @@
     "blueprintLocation": "装備設計図の場所",
     "rewards": "報酬",
     "dayN": "{n}日目",
-    "addedInVersion": "バージョン{version}で追加"
+    "addedInVersion": "バージョン{version}で追加",
+    "currentlyUnavailable": "未開放"
   },
   "status": {
     "won": "勝利 50:50",
@@ -412,7 +413,8 @@
     "openRecipe": "レシピを開く",
     "leaderboard": "ランキング",
     "profile": "プロファイル",
-    "icons": "アイコン"
+    "icons": "アイコン",
+    "achievements": "実績"
   },
   "events": {
     "type": {
@@ -1161,7 +1163,13 @@
     "currentWeek": "今週",
     "nextWeek": "来週",
     "fullCalendar": "フルカレンダー",
-    "arsenalExchangeWarning": "データは中国サーバーの武器ローテーションファイルに基づいており、正確ではない場合があります"
+    "arsenalExchangeWarning": "データは中国サーバーの武器ローテーションファイルに基づいており、正確ではない場合があります",
+    "gameUpdate": "ゲームアップデート",
+    "maintenanceInProgress": "メンテナンス中",
+    "updateExpected": "予定",
+    "versionLabel": "バージョン {version}",
+    "goToChangelog": "更新履歴",
+    "currentGameVersion": "現在のゲームバージョン: {version}"
   },
   "characters": {
     "catcher": "キャッチャー",
@@ -2524,6 +2532,7 @@
     "delete_confirm": "この保存済みトークンを削除しますか？",
     "settings_title": "プロファイル設定",
     "settings_hide_data": "ランキングでアカウント情報を隠す",
+    "settings_hide_uid": "アカウントUIDを非表示にする",
     "settings_primary_account": "ガチャアカウントを連携",
     "settings_primary_account_none": "なし",
     "bind_to_view_luck": "幸運統計を見るには、設定でゲームアカウントを連携してください。",
@@ -2539,7 +2548,7 @@
     "image_size_error": "画像が小さすぎます（最小128x128）。",
     "crop_avatar_title": "アバターのトリミング",
     "avatar_success": "アバターが更新されました！",
-    "no_connected_accounts": "連携されたゲームアカウントがありません。",
+    "no_connected_accounts": "連携されたゲームアカウントがありません。上のボタンからアカウントを同期してください。",
     "edit_nickname": "ニックネーム編集",
     "copy_profile_link": "プロファイルリンクをコピー",
     "link_copied": "リンクをコピーしました！",
@@ -2605,7 +2614,9 @@
     "token_already_used": "このトークンは既に使用されています",
     "token_expired_badge": "期限切れ",
     "unauthorized": "未認証",
-    "user_not_found": "ユーザーが見つかりません"
+    "user_not_found": "ユーザーが見つかりません",
+    "syncing": "同期中...",
+    "max_profiles_reached": "連携可能なプロフィールの最大数は3つです"
   },
   "contractTagNames": {
     "activity_contract_tag_201": "環境：過速",
@@ -2709,7 +2720,8 @@
     "indie_group_h03": "無機的造物",
     "indie_group_h04": "濁流具現",
     "indie_group_h05": "大地に見捨てられし者",
-    "indie_group_h06": "山の獣吼"
+    "indie_group_h06": "山の獣吼",
+    "indie_group_h07": "刻まれた影"
   },
   "equipmentScriptNames": {
     "xiraniteTechnique": "息壌工程",
@@ -2828,5 +2840,52 @@
     "gas_env_wet": "多湿環境",
     "gas_env_acidic": "酸性環境",
     "gas_env_xiranite": "息壌環境"
+  },
+  "achCategories": {
+    "achv_type_adventure": "探索褒章",
+    "achv_type_battle": "戦闘褒章",
+    "achv_type_event": "特殊褒章",
+    "achv_type_factory": "建設褒章",
+    "achv_type_growth": "成長褒章",
+    "achv_type_hide": "極秘褒章",
+    "achv_type_quest": "物語褒章",
+    "achv_type_social": "絆の褒章"
+  },
+  "achGroups": {
+    "achv_group_adv_tundra": "谷地褒章",
+    "achv_group_adv_wuling": "武陵褒章",
+    "achv_group_bat_skill": "戦闘技術褒章",
+    "achv_group_bat_dung": "協約空間褒章",
+    "achv_group_fac_factory": "集成工業褒章",
+    "achv_group_fac_spaceship": "帝江号褒章",
+    "achv_group_quest_main": "メイン任務褒章",
+    "achv_group_quest_side": "探索任務褒章",
+    "achv_group_event_default": "特殊褒章",
+    "achv_group_growth_default": "成長褒章",
+    "achv_group_hide_default": "極秘褒章",
+    "achv_group_social_default": "絆の褒章"
+  },
+  "achievements": {
+    "of": "/",
+    "onlyIncomplete": "未完了のみ",
+    "allVersions": "すべてのバージョン",
+    "searchPlaceholder": "検索...",
+    "empty": "実績が見つかりません",
+    "sync": "同期",
+    "syncModalTitle": "実績の同期",
+    "selectAccount": "アカウントを選択:",
+    "syncAction": "同期する",
+    "syncSuccess": "実績を同期しました: {count}",
+    "syncNothingToUpdate": "すべての実績はすでに最新です",
+    "notLoggedInDesc": "実績を同期するには、ログインしてゲームプロファイルを連携する必要があります。",
+    "noAccountsDesc": "プロファイルに連携されたゲームアカウントがありません。プロファイルページで連携してください。",
+    "noMedalsInProfile": "選択したゲームアカウントに実績データがありません",
+    "syncWarningProgress": "ゲームプロファイルと実績を同期すると、現在の実績の進捗状況がリセットされます。"
+  },
+  "achLevels": {
+    "source": "入手方法",
+    "reforging2": "改鋳条件Ⅱ",
+    "reforging3": "改鋳条件Ⅲ",
+    "trimming": "加工条件"
   }
 }

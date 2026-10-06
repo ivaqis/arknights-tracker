@@ -345,7 +345,8 @@
     "blueprintLocation": "ตำแหน่งพิมพ์เขียวอุปกรณ์",
     "rewards": "รางวัล",
     "dayN": "วันที่ {n}",
-    "addedInVersion": "เพิ่มในเวอร์ชัน {version}"
+    "addedInVersion": "เพิ่มในเวอร์ชัน {version}",
+    "currentlyUnavailable": "ไม่สามารถใช้ได้ตอนนี้"
   },
   "status": {
     "won": "ชนะ 50:50",
@@ -412,7 +413,8 @@
     "openRecipe": "เปิดสูตรผลิต",
     "leaderboard": "กระดานผู้นำ",
     "profile": "โปรไฟล์",
-    "icons": "ไอคอน"
+    "icons": "ไอคอน",
+    "achievements": "ความสำเร็จ"
   },
   "events": {
     "type": {
@@ -1161,7 +1163,13 @@
     "currentWeek": "สัปดาห์นี้",
     "nextWeek": "สัปดาห์หน้า",
     "fullCalendar": "ปฏิทินแบบเต็ม",
-    "arsenalExchangeWarning": "ข้อมูลอ้างอิงจากไฟล์โรเทชันอาวุธของจีนและอาจไม่ถูกต้องทั้งหมด"
+    "arsenalExchangeWarning": "ข้อมูลอ้างอิงจากไฟล์โรเทชันอาวุธของจีนและอาจไม่ถูกต้องทั้งหมด",
+    "gameUpdate": "อัปเดตเกม",
+    "maintenanceInProgress": "กำลังปิดปรับปรุง",
+    "updateExpected": "คาดว่าจะมา",
+    "versionLabel": "เวอร์ชัน {version}",
+    "goToChangelog": "บันทึกการเปลี่ยนแปลง",
+    "currentGameVersion": "เวอร์ชันเกมปัจจุบัน: {version}"
   },
   "characters": {
     "catcher": "แคท​เชอร์",
@@ -2524,6 +2532,7 @@
     "delete_confirm": "ลบโทเค็นนี้?",
     "settings_title": "การตั้งค่าโปรไฟล์",
     "settings_hide_data": "ซ่อนข้อมูลในกระดานผู้นำ",
+    "settings_hide_uid": "ซ่อน UID บัญชี",
     "settings_primary_account": "เชื่อมโยงบัญชีกาชา",
     "settings_primary_account_none": "ไม่มี",
     "bind_to_view_luck": "เชื่อมโยงบัญชีเกมเพื่อดูสถิติความโชคดี",
@@ -2539,7 +2548,7 @@
     "image_size_error": "รูปภาพเล็กเกินไป (ขั้นต่ำ 128x128)",
     "crop_avatar_title": "ตัดครอบอวตาร",
     "avatar_success": "อัปเดตอวตารแล้ว!",
-    "no_connected_accounts": "ไม่มีบัญชีเชื่อมต่อ",
+    "no_connected_accounts": "ไม่มีบัญชีเกมที่เชื่อมต่อ ซิงค์บัญชีของคุณโดยใช้ปุ่มด้านบน",
     "edit_nickname": "แก้ไขชื่อเล่น",
     "copy_profile_link": "คัดลอกลิงก์โปรไฟล์",
     "link_copied": "คัดลอกลิงก์แล้ว!",
@@ -2605,7 +2614,9 @@
     "token_already_used": "โทเค็นนี้ถูกใช้ไปแล้ว",
     "token_expired_badge": "หมดอายุแล้ว",
     "unauthorized": "ไม่ได้รับอนุญาต",
-    "user_not_found": "ไม่พบผู้ใช้"
+    "user_not_found": "ไม่พบผู้ใช้",
+    "syncing": "กำลังซิงค์...",
+    "max_profiles_reached": "สามารถเชื่อมโยงโปรไฟล์ได้สูงสุด 3 บัญชี"
   },
   "contractTagNames": {
     "activity_contract_tag_201": "สภาพแวดล้อม​: โอเวอร์​ค​ล็อก",
@@ -2709,7 +2720,8 @@
     "indie_group_h03": "โครงสร้าง​อนินทรีย์​",
     "indie_group_h04": "ภูต​สำแดง​สับสน​",
     "indie_group_h05": "ผู้​ถูก​ทอดทิ้ง​โดย​แผ่นดิน​",
-    "indie_group_h06": "ผู้​โหยหวน​แห่ง​ผา​หิน"
+    "indie_group_h06": "ผู้​โหยหวน​แห่ง​ผา​หิน",
+    "indie_group_h07": "ถูก​ตีตรา​ด้วย​เงามืด"
   },
   "equipmentScriptNames": {
     "xiraniteTechnique": "เทคนิค​ซี​เรน​ไนต์",
@@ -2828,5 +2840,52 @@
     "gas_env_wet": "สภาพแวดล้อม​ชื้น",
     "gas_env_acidic": "สภาพแวดล้อม​แอค​ริด",
     "gas_env_xiranite": "สภาพแวดล้อม​ซี​เรน​ไนต์"
+  },
+  "achCategories": {
+    "achv_type_adventure": "ระดับ​ภูมิภาค",
+    "achv_type_battle": "เทคนิค",
+    "achv_type_event": "กิจกรรม",
+    "achv_type_factory": "การ​ก่อสร้าง",
+    "achv_type_growth": "ความก้าวหน้า",
+    "achv_type_hide": "อัศจรรย์",
+    "achv_type_quest": "บท",
+    "achv_type_social": "โซเชียล"
+  },
+  "achGroups": {
+    "achv_group_adv_tundra": "หุบเขา",
+    "achv_group_adv_wuling": "อู่​หลิง",
+    "achv_group_bat_skill": "เทคนิค​การต่อสู้",
+    "achv_group_bat_dung": "พื้นที่​โปร​โต​คอล",
+    "achv_group_fac_factory": "โรงงาน​ AIC",
+    "achv_group_fac_spaceship": "ตี้​เจียง",
+    "achv_group_quest_main": "ภารกิจ​หลัก",
+    "achv_group_quest_side": "ภารกิจ​สำรวจ",
+    "achv_group_event_default": "กิจกรรม",
+    "achv_group_growth_default": "ความก้าวหน้า",
+    "achv_group_hide_default": "อัศจรรย์",
+    "achv_group_social_default": "โซเชียล"
+  },
+  "achievements": {
+    "of": "จาก",
+    "onlyIncomplete": "เฉพาะที่ยังไม่เสร็จ",
+    "allVersions": "ทุกเวอร์ชัน",
+    "searchPlaceholder": "ค้นหา...",
+    "empty": "ไม่พบความสำเร็จ",
+    "sync": "ซิงค์",
+    "syncModalTitle": "ซิงค์ความสำเร็จ",
+    "selectAccount": "เลือกบัญชี:",
+    "syncAction": "ซิงค์",
+    "syncSuccess": "ซิงค์ความสำเร็จแล้ว: {count}",
+    "syncNothingToUpdate": "ความสำเร็จทั้งหมดเป็นปัจจุบันแล้ว",
+    "notLoggedInDesc": "หากต้องการซิงค์ความสำเร็จ คุณต้องเข้าสู่ระบบและเชื่อมโยงโปรไฟล์ในเกมของคุณ",
+    "noAccountsDesc": "ไม่มีบัญชีในเกมที่เชื่อมโยงกับโปรไฟล์ของคุณ เชื่อมโยงบัญชีในหน้าโปรไฟล์",
+    "noMedalsInProfile": "ไม่พบข้อมูลความสำเร็จในบัญชีเกมที่เลือก",
+    "syncWarningProgress": "การซิงค์ความสำเร็จกับโปรไฟล์ในเกมจะรีเซ็ตความคืบหน้าของความสำเร็จในปัจจุบัน"
+  },
+  "achLevels": {
+    "source": "ที่มา",
+    "reforging2": "การหลอม​ II",
+    "reforging3": "การหลอม​ III",
+    "trimming": "การ​ตกแต่ง"
   }
 }

@@ -4,11 +4,13 @@
     import { currentUiLocale, normalizeLocale } from "$lib/stores/locale.js";
     import { fade } from "svelte/transition";
     import Icon from "$lib/components/Icon.svelte";
+    import Button from "$lib/components/Button.svelte";
     import Modal from "$lib/components/modals/Modal.svelte";
     import ConfirmationModal from "$lib/components/modals/ConfirmationModal.svelte";
     import Checkbox from "$lib/components/Checkbox.svelte";
 
     export let isOpen = false;
+    export let linkedAccounts = [];
 
     const dispatch = createEventDispatcher();
 
@@ -198,6 +200,13 @@
             {$t("profile.sync_with_game")}
         </h3>
 
+        {#if (linkedAccounts || []).length >= 3}
+            <div class="mb-5 bg-amber-500/10 border border-amber-500/20 px-4 py-3 rounded-xl flex items-center gap-3 text-xs text-amber-800 dark:text-amber-200/90">
+                <Icon name="info" class="w-5 h-5 text-amber-500 shrink-0" />
+                <span>{$t("profile.max_profiles_reached")}</span>
+            </div>
+        {/if}
+
         <div class="flex border-b border-gray-200 dark:border-[#444444] mb-6 relative">
             <button
                 class="px-6 py-3 text-sm font-bold transition-all relative border-b-2
@@ -332,19 +341,14 @@
             </div>
 
             <div class="flex flex-col gap-3">
-                <button
-                    on:click={handleSync}
-                    class="w-full py-3 bg-[#FFE145] hover:bg-[#ebd03e] text-gray-900 font-bold rounded-lg transition-colors font-sdk flex items-center justify-center gap-2 disabled:opacity-50"
+                <Button
+                    variant="yellow"
+                    onClick={handleSync}
                     disabled={syncing}
                 >
-                    {#if syncing}
-                        <Icon name="loading" class="w-5 h-5 animate-spin" />
-                        <span>Updating...</span>
-                    {:else}
-                        <Icon name="refresh" class="w-4 h-4" />
-                        <span>{$t("profile.update_btn")}</span>
-                    {/if}
-                </button>
+                    <Icon slot="icon" name={syncing ? "loading" : "refresh"} class="w-5 h-5 {syncing ? 'animate-spin' : ''}" />
+                    <span>{syncing ? $t("profile.syncing") : $t("profile.update_btn")}</span>
+                </Button>
             </div>
         {:else}
             <div class="max-w-4xl mb-2 text-left">

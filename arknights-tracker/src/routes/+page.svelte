@@ -12,6 +12,7 @@
   import { banners } from "$lib/data/banners.js";
   import { promocodes } from "$lib/data/promocodes.js";
   import { rawEvents } from "$lib/data/timeline";
+  import { changelogData } from "$lib/data/versions.js";
   import { weaponRotations } from "$lib/data/weaponRotations.js";
   import { weapons } from "$lib/data/weapons.js";
   import { t } from "$lib/i18n";
@@ -159,6 +160,94 @@
     }
     return end.toLocaleString(loc, dateOptions);
   }
+
+  function formatUpdateDate(dateStr) {
+    if (!dateStr) return "";
+    const dt = parseWithServerOffset(dateStr);
+    const dateOptions = { month: "short", day: "numeric", hour: "2-digit", minute: "2-digit" };
+    let loc = normalizeLocale($currentUiLocale);
+    if (showServerTime) {
+      const timeZone =
+        currentServerId === "2" ? "Asia/Shanghai" : "America/New_York";
+      return dt.toLocaleString(loc, { ...dateOptions, timeZone });
+    }
+    return dt.toLocaleString(loc, dateOptions);
+  }
+
+  $: updateStatus = (() => {
+    const isAsia = currentServerId === "2";
+    let target = null;
+
+    for (let i = 0; i < changelogData.length; i++) {
+      const v = changelogData[i];
+      const endStr = isAsia && v.endTimeAsia ? v.endTimeAsia : v.endTime;
+      const startStr = isAsia && v.startTimeAsia ? v.startTimeAsia : v.startTime;
+      if (!endStr) continue;
+      const end = parseWithServerOffset(endStr);
+      const maintenanceEndMs = end.getTime() + 6 * 60 * 60 * 1000;
+      if (now.getTime() < maintenanceEndMs) {
+        target = {
+          version: v.version,
+          startStr,
+          endStr,
+          endDate: end
+        };
+        break;
+      }
+    }
+
+    if (!target) {
+      for (let i = changelogData.length - 1; i >= 0; i--) {
+        const v = changelogData[i];
+        const endStr = isAsia && v.endTimeAsia ? v.endTimeAsia : v.endTime;
+        const startStr = isAsia && v.startTimeAsia ? v.startTimeAsia : v.startTime;
+        if (endStr) {
+          target = {
+            version: v.version,
+            startStr,
+            endStr,
+            endDate: parseWithServerOffset(endStr)
+          };
+          break;
+        }
+      }
+    }
+
+    if (!target || !target.endStr || !target.endDate) return null;
+
+    const diff = target.endDate.getTime() - now.getTime();
+    const maintenanceEndMs = target.endDate.getTime() + 6 * 60 * 60 * 1000;
+
+    if (diff <= 0 && now.getTime() < maintenanceEndMs) {
+      return {
+        state: "maintenance",
+        version: target.version,
+        formattedStartDate: formatUpdateDate(target.startStr),
+        formattedEndDate: formatUpdateDate(target.endStr),
+        timeLeft: null,
+        urgency: "warning"
+      };
+    }
+
+    if (diff > 0) {
+      const timeLeft = formatTimeLeft(target.endStr);
+      const hoursLeft = diff / (1000 * 60 * 60);
+      let urgency = "normal";
+      if (hoursLeft <= 24) urgency = "critical";
+      else if (hoursLeft <= 72) urgency = "warning";
+
+      return {
+        state: "upcoming",
+        version: target.version,
+        formattedStartDate: formatUpdateDate(target.startStr),
+        formattedEndDate: formatUpdateDate(target.endStr),
+        timeLeft,
+        urgency
+      };
+    }
+
+    return null;
+  })();
 
   function getPromoTimeLabel(dateStr) {
     const text = formatTimeLeft(dateStr);
@@ -414,18 +503,18 @@
 </svelte:head>
 
 <div
-  class="min-h-screen w-full relative flex flex-col items-center py-10 px-4 sm:px-8 font-sans text-[#21272C] dark:text-[#FDFDFD]"
+  class="min-h-screen w-full relative flex flex-col items-start justify-start py-6 font-sans text-[#21272C] dark:text-[#FDFDFD]"
 >
-  <div class="mb-6 flex justify-center w-full">
+  <div class="mb-9 flex justify-center w-full">
     <div class="transition-opacity hover:opacity-80 inline-flex">
       <Icon name="siteLogo2" class="h-10 w-auto" />
     </div>
   </div>
 
   <div
-    class="w-full max-w-7xl grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6 mb-4 items-start"
+    class="w-full max-w-[1700px] grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-4 mb-4 items-start"
   >
-    <div class="flex flex-col gap-6 lg:col-span-2 w-full">
+    <div class="flex flex-col gap-4 lg:col-span-2 xl:col-span-1 2xl:col-span-2 w-full">
       <div class="flex flex-col gap-3">
         <div class="flex items-center justify-between px-1">
           <h2
@@ -555,7 +644,7 @@
           </h3>
           <button
             on:click={() => goto("/events")}
-            class="text-[11px] font-bold text-gray-500 hover:text-[#FACC15] dark:text-gray-400 dark:hover:text-[#FACC15] transition-colors flex items-center gap-1 group mr-2"
+            class="text-[11px] select-none text-end font-bold text-gray-500 hover:text-[#FACC15] dark:text-gray-400 dark:hover:text-[#FACC15] transition-colors flex items-center gap-1 group"
           >
             {$t("home.goToTimeline")}
             →
@@ -665,7 +754,7 @@
       </div>
     </div>
 
-    <div class="flex flex-col gap-6 lg:col-span-1 w-full">
+    <div class="flex flex-col gap-4 lg:col-span-1 xl:col-span-1 2xl:col-span-1 w-full">
       <div
         class="bg-white/80 dark:bg-[#383838]/80 backdrop-blur-md rounded-xl shadow-sm border border-gray-100 dark:border-[#444444] overflow-hidden flex flex-col h-[400px] w-full"
       >
@@ -794,26 +883,26 @@
           </h3>
           <button
             on:click={() => (showCalendarModal = true)}
-            class="text-[11px] font-bold text-gray-500 hover:text-[#FACC15] dark:text-gray-400 dark:hover:text-[#FACC15] transition-colors flex items-center gap-1 group mr-2 cursor-pointer select-none"
+            class="text-[11px] text-end font-bold text-gray-500 hover:text-[#FACC15] dark:text-gray-400 dark:hover:text-[#FACC15] transition-colors flex items-center gap-1 group cursor-pointer select-none"
           >
             {$t("home.fullCalendar")}
             →
           </button>
         </div>
 
-        <div class="grid grid-cols-2 gap-4">
+        <div class="grid grid-cols-2 gap-2 2xl:gap-4">
           <div class="flex flex-col gap-1 items-center md:items-left justify-between">
             <div class="flex flex-col gap-1 items-center">
               <div class="flex items-center justify-center gap-1.5 flex-wrap">
-                <span class="text-xs font-bold text-gray-800 dark:text-gray-100 select-none leading-none">
+                <span class="text-xs font-bold text-gray-800 dark:text-gray-100 leading-none">
                   {$t("home.currentWeek")}
                 </span>
-                <span class="px-1.5 py-0.5 rounded text-[9px] font-bold font-nums bg-[#05D774]/15 text-[#05D774] border border-[#05D774]/10 select-none inline-block leading-none">
+                <span class="px-1.5 py-0.5 rounded text-[9px] font-bold font-nums bg-[#05D774]/15 text-[#05D774] border border-[#05D774]/10 inline-block leading-none">
                   {getWeeklyResetCountdown(now)}
                 </span>
               </div>
               {#if currentWeekConfig}
-                <span class="text-[9px] text-gray-400 dark:text-[#9CA3AF] font-medium font-nums leading-none select-none mt-1">
+                <span class="text-[9px] text-gray-400 dark:text-[#9CA3AF] font-medium font-nums leading-none mt-1">
                   ({formatWeekLabel(currentWeekConfig, $currentUiLocale)})
                 </span>
               {/if}
@@ -822,7 +911,7 @@
               <div class="flex gap-2.5 justify-center md:justify-left flex-wrap mt-2">
                 {#if currentWeekly6}
                   <div class="flex flex-col items-center gap-1.5 shrink-0">
-                    <WeaponCard weapon={currentWeekly6} variant="small" isEquipment={false} />
+                    <WeaponCard weapon={currentWeekly6} variant="small" isEquipment={false} className="w-[60px] h-[60px] 2xl:w-[75px] 2xl:h-[75px]" />
                     <div class="flex items-center gap-0.5 text-[10px] font-black text-gray-800 dark:text-white leading-none font-nums">
                       <Icon name="arsenalTicket" class="w-3.5 h-3.5 text-white" style="filter: drop-shadow(0 0 2px #3b82f6) drop-shadow(0 0 4px #3b82f6);" />
                       <span>2480</span>
@@ -831,7 +920,7 @@
                 {/if}
                 {#if currentWeekly5}
                   <div class="flex flex-col items-center gap-1.5 shrink-0">
-                    <WeaponCard weapon={currentWeekly5} variant="small" isEquipment={false} />
+                    <WeaponCard weapon={currentWeekly5} variant="small" isEquipment={false} className="w-[60px] h-[60px] 2xl:w-[75px] 2xl:h-[75px]" />
                     <div class="flex items-center gap-0.5 text-[10px] font-black text-gray-800 dark:text-white leading-none font-nums">
                       <Icon name="arsenalTicket" class="w-3.5 h-3.5 text-white" style="filter: drop-shadow(0 0 2px #3b82f6) drop-shadow(0 0 4px #3b82f6);" />
                       <span>400</span>
@@ -849,11 +938,11 @@
 
           <div class="flex flex-col gap-1 items-center md:items-left justify-between">
             <div class="flex flex-col gap-1 items-center">
-              <span class="text-xs font-bold text-gray-800 dark:text-gray-100 select-none leading-none">
+              <span class="text-xs font-bold text-gray-800 dark:text-gray-100 leading-none">
                 {$t("home.nextWeek")}
               </span>
               {#if nextWeekConfig}
-                <span class="text-[9px] text-gray-400 dark:text-[#9CA3AF] font-medium font-nums leading-none select-none mt-1">
+                <span class="text-[9px] text-gray-400 dark:text-[#9CA3AF] font-medium font-nums leading-none mt-1">
                   ({formatWeekLabel(nextWeekConfig, $currentUiLocale)})
                 </span>
               {/if}
@@ -862,7 +951,7 @@
               <div class="flex gap-2.5 flex-wrap justify-center md:justify-left mt-2">
                 {#if nextWeekly6}
                   <div class="flex flex-col items-center gap-1.5 shrink-0">
-                    <WeaponCard weapon={nextWeekly6} variant="small" isEquipment={false} />
+                    <WeaponCard weapon={nextWeekly6} variant="small" isEquipment={false} className="w-[60px] h-[60px] 2xl:w-[75px] 2xl:h-[75px]" />
                     <div class="flex items-center gap-0.5 text-[10px] font-black text-gray-800 dark:text-white leading-none font-nums">
                       <Icon name="arsenalTicket" class="w-3.5 h-3.5 text-white" style="filter: drop-shadow(0 0 2px #3b82f6) drop-shadow(0 0 4px #3b82f6);" />
                       <span>2480</span>
@@ -871,7 +960,7 @@
                 {/if}
                 {#if nextWeekly5}
                   <div class="flex flex-col items-center gap-1.5 shrink-0">
-                    <WeaponCard weapon={nextWeekly5} variant="small" isEquipment={false} />
+                    <WeaponCard weapon={nextWeekly5} variant="small" isEquipment={false} className="w-[60px] h-[60px] 2xl:w-[75px] 2xl:h-[75px]" />
                     <div class="flex items-center gap-0.5 text-[10px] font-black text-gray-800 dark:text-white leading-none font-nums">
                       <Icon name="arsenalTicket" class="w-3.5 h-3.5 text-white" style="filter: drop-shadow(0 0 2px #3b82f6) drop-shadow(0 0 4px #3b82f6);" />
                       <span>400</span>
@@ -888,13 +977,13 @@
           </div>
         </div>
 
-        <div class="grid grid-cols-2 gap-4 pt-3 border-t border-gray-100 dark:border-[#444444]/40">
+        <div class="grid grid-cols-2 gap-2 2xl:gap-4 pt-3 border-t border-gray-100 dark:border-[#444444]/40">
           <div class="flex flex-col gap-1 items-center md:items-left justify-between">
             <div class="flex items-center justify-center gap-1.5 flex-wrap">
-              <span class="text-xs font-bold text-gray-800 dark:text-gray-100 select-none leading-none">
+              <span class="text-xs font-bold text-gray-800 dark:text-gray-100 leading-none">
                 {$t("home.today")}
               </span>
-              <span class="px-1.5 py-0.5 rounded text-[9px] font-bold font-nums bg-[#05D774]/15 text-[#05D774] border border-[#05D774]/10 select-none inline-block leading-none">
+              <span class="px-1.5 py-0.5 rounded text-[9px] font-bold font-nums bg-[#05D774]/15 text-[#05D774] border border-[#05D774]/10 inline-block leading-none">
                 {getDailyResetCountdown(now)}
               </span>
             </div>
@@ -902,7 +991,7 @@
               <div class="flex gap-2.5 flex-wrap justify-center md:justify-left mt-2">
                 {#each todayWeapons as wpn}
                   <div class="flex flex-col items-center gap-1.5 shrink-0">
-                    <WeaponCard weapon={wpn} variant="small" isEquipment={false} />
+                    <WeaponCard weapon={wpn} variant="small" isEquipment={false} className="w-[60px] h-[60px] 2xl:w-[75px] 2xl:h-[75px]" />
                     <div class="flex items-center gap-0.5 text-[10px] font-black text-gray-800 dark:text-white leading-none font-nums">
                       <Icon name="arsenalTicket" class="w-3.5 h-3.5 text-white" style="filter: drop-shadow(0 0 2px #3b82f6) drop-shadow(0 0 4px #3b82f6);" />
                       <span>{wpn.rarity === 6 ? 2480 : 400}</span>
@@ -919,14 +1008,14 @@
           </div>
 
           <div class="flex flex-col gap-1 items-center md:items-left justify-between">
-            <span class="text-xs font-bold text-gray-800 dark:text-gray-100 select-none leading-none">
+            <span class="text-xs font-bold text-gray-800 dark:text-gray-100 leading-none">
               {$t("home.tomorrow")}
             </span>
             {#if tomorrowWeapons && tomorrowWeapons.length > 0}
               <div class="flex gap-2.5 flex-wrap justify-center md:justify-left mt-2">
                 {#each tomorrowWeapons as wpn}
                   <div class="flex flex-col items-center gap-1.5 shrink-0">
-                    <WeaponCard weapon={wpn} variant="small" isEquipment={false} />
+                    <WeaponCard weapon={wpn} variant="small" isEquipment={false} className="w-[60px] h-[60px] 2xl:w-[75px] 2xl:h-[75px]" />
                     <div class="flex items-center gap-0.5 text-[10px] font-black text-gray-800 dark:text-white leading-none font-nums">
                       <Icon name="arsenalTicket" class="w-3.5 h-3.5 text-white" style="filter: drop-shadow(0 0 2px #3b82f6) drop-shadow(0 0 4px #3b82f6);" />
                       <span>{wpn.rarity === 6 ? 2480 : 400}</span>
@@ -943,115 +1032,167 @@
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="grid gap-3">
-        <a
-          href="https://discord.gg/nqfuaRbWWn"
-          target="_blank"
-          rel="noreferrer"
-          class="w-full min-h-[60px] flex items-center justify-between p-4 bg-[#5865F2] hover:bg-[#4752C4] border border-transparent hover:border-white dark:hover:border-white text-white rounded-xl shadow-sm transition-colors group"
+    <div class="flex flex-col gap-3 lg:col-span-1 xl:col-span-1 2xl:col-span-1 w-full">
+      {#if updateStatus}
+        <div
+          class="bg-white/80 dark:bg-[#383838]/80 backdrop-blur-md rounded-xl p-4 shadow-sm border border-gray-100 dark:border-[#444444] flex flex-col gap-3 w-full relative overflow-hidden group"
         >
-          <div class="flex items-center gap-3">
-            <Icon name="discord" class="w-6 h-6" />
-            <span class="font-bold text-sm">{$t("home.discordJoin")}</span>
-          </div>
-          <Icon
-            name="sendToLink"
-            class="w-4 h-4 opacity-50 group-hover:opacity-100 transition-opacity"
-          />
-        </a>
-
-        <a
-          href="https://github.com/ivaqis/arknights-tracker"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="w-full min-h-[60px] flex items-center justify-between p-4 bg-[#24292F] border border-gray-100 dark:border-[#333333] hover:bg-[#1C2128] hover:border-white dark:hover:border-white text-white rounded-xl shadow-sm transition-colors group"
-        >
-          <div class="flex items-center">
-            <Icon name="gitHubBig" class="h-[22px] w-auto text-white" />
-          </div>
-          <Icon
-            name="sendToLink"
-            class="w-4 h-4 opacity-50 group-hover:opacity-100 transition-opacity"
-          />
-        </a>
-
-        <a
-          href="https://goyfield-developers.github.io/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="flex items-center justify-between p-3 bg-white dark:bg-[#383838] rounded-xl border border-gray-100 dark:border-[#444444] shadow-sm hover:border-[#FACC15] dark:hover:border-[#FACC15] transition-all group"
-        >
-          <div class="flex items-center gap-3">
-            <div
-              class="rounded-lg overflow-hidden shrink-0 flex items-center justify-center"
-            >
-              <img
-                src="/logo-goyfield-dev.png"
-                class="w-10 h-10 object-contain"
-                alt="Dev Docs"
-              />
-            </div>
-            <div class="flex flex-col min-w-0">
-              <span
-                class="font-bold text-sm text-[#21272C] dark:text-[#FDFDFD] group-hover:text-[#FACC15] transition-colors truncate"
-              >
-                {$t("home.docsTitle")}
-              </span>
-              <span class="text-xs text-gray-400 truncate">
-                {$t("home.docsAuthor")}
-              </span>
-            </div>
-          </div>
-          <Icon
-            name="sendToLink"
-            class="w-4 h-4 text-gray-400 group-hover:text-[#FACC15] transition-colors shrink-0"
-          />
-        </a>
-
-        <button
-          on:click={() => (isSupportOpen = true)}
-          class="w-full flex items-center justify-between p-3 bg-white dark:bg-[#383838] border border-gray-100 dark:border-[#444444] hover:border-amber-400 dark:hover:border-amber-500 rounded-xl shadow-sm transition-colors group"
-        >
-          <div class="flex items-center gap-2">
-            <Image
-              id="origeometry"
-              variant="item"
-              size={32}
-              className="object-contain"
-            />
-            <span
-              class="font-bold text-sm text-[#21272C] dark:text-[#FDFDFD] group-hover:text-[#FACC15]"
-              >{$t("footer.supportProject")}</span
-            >
-          </div>
-        </button>
-
-        <div class="flex mt-2">
           <div
-            class="w-[2px] shrink-0 bg-gray-200 dark:bg-[#B7B6B3] rounded-full"
+            class="absolute -right-6 -bottom-6 w-24 h-24 bg-[#FFE145]/10 rounded-full blur-xl pointer-events-none"
           ></div>
-          <div
-            class="text-[11px] text-gray-400 dark:text-[#B7B6B3] text-justify leading-relaxed pl-3"
-          >
-            {$t("home.disclaimer")}
+
+          <div class="flex items-center justify-between gap-2">
+            <span class="text-xs font-bold text-[#21272C] dark:text-[#FDFDFD] truncate leading-tight">
+              {$t("home.currentGameVersion", { version: updateStatus.version })}
+            </span>
+
+            {#if updateStatus.state === "maintenance"}
+              <div class="inline-flex items-center gap-1.5 px-2.5 py-1 bg-amber-500/15 border border-amber-500/30 rounded-full shrink-0">
+                <span class="w-1.5 h-1.5 rounded-full bg-amber-500 animate-pulse"></span>
+                <span class="text-[10px] font-bold text-amber-600 dark:text-amber-400 leading-none">
+                  {$t("home.maintenanceInProgress")}
+                </span>
+              </div>
+            {:else if updateStatus.timeLeft}
+              <div
+                class="inline-flex items-center gap-1.5 px-2.5 py-1 bg-black/40 backdrop-blur-md border {updateStatus.urgency === 'critical'
+                  ? 'border-red-500/50 text-red-300'
+                  : updateStatus.urgency === 'warning'
+                    ? 'border-orange-500/50 text-orange-300'
+                    : 'border-white/20 text-white'} rounded-full shadow-sm shrink-0"
+              >
+                <span
+                  class="w-1.5 h-1.5 rounded-full {updateStatus.urgency === 'critical'
+                    ? 'bg-red-500 shadow-[0_0_6px_#ef4444]'
+                    : updateStatus.urgency === 'warning'
+                      ? 'bg-orange-500 shadow-[0_0_4px_#fb923c]'
+                      : 'bg-green-400 shadow-[0_0_4px_#4ade80]'} animate-pulse"
+                ></span>
+                <span class="text-[10px] font-bold font-nums leading-none">
+                  {updateStatus.timeLeft}
+                </span>
+              </div>
+            {/if}
           </div>
+
+          <div class="flex items-center justify-between pt-2 border-t border-gray-100 dark:border-[#444444]/40">
+            <div class="flex items-center gap-1.5 text-[11px] font-nums font-bold text-gray-600 dark:text-gray-300 min-w-0">
+              {#if updateStatus.formattedStartDate && updateStatus.formattedEndDate}
+                <span>{updateStatus.formattedStartDate}</span>
+                <span class="text-gray-400 font-normal">—</span>
+                <span>{updateStatus.formattedEndDate}</span>
+              {:else if updateStatus.formattedEndDate}
+                <span>{updateStatus.formattedEndDate}</span>
+              {/if}
+            </div>
+
+            <button
+              type="button"
+              on:click={() => goto("/changelog")}
+              class="text-[11px] select-none font-bold text-gray-500 hover:text-[#FACC15] dark:text-gray-400 dark:hover:text-[#FACC15] transition-colors flex items-center gap-1 group cursor-pointer shrink-0 ml-2"
+            >
+              <span>{$t("home.goToChangelog")}</span>
+              <span>→</span>
+            </button>
+          </div>
+        </div>
+      {/if}
+
+      <a
+        href="https://discord.gg/nqfuaRbWWn"
+        target="_blank"
+        rel="noreferrer"
+        class="w-full min-h-[60px] flex items-center justify-between p-4 bg-[#5865F2] hover:bg-[#4752C4] border border-transparent hover:border-white dark:hover:border-white text-white rounded-xl shadow-sm transition-colors group"
+      >
+        <div class="flex items-center gap-3">
+          <Icon name="discord" class="w-6 h-6" />
+          <span class="font-bold text-sm">{$t("home.discordJoin")}</span>
+        </div>
+        <Icon
+          name="sendToLink"
+          class="w-4 h-4 opacity-50 group-hover:opacity-100 transition-opacity"
+        />
+      </a>
+
+      <a
+        href="https://github.com/ivaqis/arknights-tracker"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="w-full min-h-[60px] flex items-center justify-between p-4 bg-[#24292F] border border-gray-100 dark:border-[#333333] hover:bg-[#1C2128] hover:border-white dark:hover:border-white text-white rounded-xl shadow-sm transition-colors group"
+      >
+        <div class="flex items-center">
+          <Icon name="gitHubBig" class="h-[22px] w-auto text-white" />
+        </div>
+        <Icon
+          name="sendToLink"
+          class="w-4 h-4 opacity-50 group-hover:opacity-100 transition-opacity"
+        />
+      </a>
+
+      <a
+        href="https://goyfield-developers.github.io/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="flex items-center justify-between p-3 bg-white dark:bg-[#383838] rounded-xl border border-gray-100 dark:border-[#444444] shadow-sm hover:border-[#FACC15] dark:hover:border-[#FACC15] transition-all group"
+      >
+        <div class="flex items-center gap-3">
+          <div
+            class="rounded-lg overflow-hidden shrink-0 flex items-center justify-center"
+          >
+            <img
+              src="/logo-goyfield-dev.png"
+              class="w-10 h-10 object-contain"
+              alt="Dev Docs"
+            />
+          </div>
+          <div class="flex flex-col min-w-0">
+            <span
+              class="font-bold text-sm text-[#21272C] dark:text-[#FDFDFD] group-hover:text-[#FACC15] transition-colors truncate"
+            >
+              {$t("home.docsTitle")}
+            </span>
+            <span class="text-xs text-gray-400 truncate">
+              {$t("home.docsAuthor")}
+            </span>
+          </div>
+        </div>
+        <Icon
+          name="sendToLink"
+          class="w-4 h-4 text-gray-400 group-hover:text-[#FACC15] transition-colors shrink-0"
+        />
+      </a>
+
+      <button
+        on:click={() => (isSupportOpen = true)}
+        class="w-full flex items-center justify-between p-3 bg-white dark:bg-[#383838] border border-gray-100 dark:border-[#444444] hover:border-amber-400 dark:hover:border-amber-500 rounded-xl shadow-sm transition-colors group"
+      >
+        <div class="flex items-center gap-2">
+          <Image
+            id="origeometry"
+            variant="item"
+            size={32}
+            className="object-contain"
+          />
+          <span
+            class="font-bold text-sm text-[#21272C] dark:text-[#FDFDFD] group-hover:text-[#FACC15]"
+            >{$t("footer.supportProject")}</span
+          >
+        </div>
+      </button>
+
+      <div class="flex mt-2">
+        <div
+          class="w-[2px] shrink-0 bg-gray-200 dark:bg-[#B7B6B3] rounded-full"
+        ></div>
+        <div
+          class="text-[11px] text-gray-400 dark:text-[#B7B6B3] text-justify leading-relaxed pl-3"
+        >
+          {$t("home.disclaimer")}
         </div>
       </div>
     </div>
-  </div>
-
-  <div class="w-full flex justify-center mb-8 mt-4">
-    <Button
-      onClick={() => goto("/records")}
-      variant="yellow"
-      className="px-10 py-3 text-sm shadow-xl font-nums w-auto min-w-[200px] max-w-[400px] whitespace-nowrap justify-center"
-    >
-      <div slot="icon">
-        <Icon name="arrowRight" style="width: 24px; height: 24px;" />
-      </div>
-      {$t("home.go_to_tracker")}
-    </Button>
   </div>
 </div>
 

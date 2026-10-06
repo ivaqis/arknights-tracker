@@ -4,6 +4,7 @@ import { ErrorsRepository } from "@database/repositories/ErrorsRepository.js";
 import { GlobalBannerStatsRepository } from "@database/repositories/GlobalBannerStatsRepository.js";
 import { GameProfilesRepository } from "@database/repositories/GameProfilesRepository.js";
 import { MonumentLeaderboardRepository } from "@database/repositories/MonumentLeaderboardRepository.js";
+import { WarEchoesLeaderboardRepository } from "@database/repositories/WarEchoesLeaderboardRepository.js";
 import { UserBannerProfilesRepository } from "@database/repositories/UserBannerProfilesRepository.js";
 import { UserBannerStatsRepository } from "@database/repositories/UserBannerStatsRepository.js";
 import { UsersRepository } from "@database/repositories/UsersRepository.js";
@@ -19,6 +20,7 @@ export class Database implements IService {
     private readonly _usersRepository: UsersRepository;
     private readonly _userGameProfilesRepository: GameProfilesRepository;
     private readonly _monumentLeaderboardRepository: MonumentLeaderboardRepository;
+    private readonly _warEchoesLeaderboardRepository: WarEchoesLeaderboardRepository;
     private readonly _contractLeaderboardRepository: ContractLeaderboardRepository;
     private readonly _userBannerProfilesRepository: UserBannerProfilesRepository;
     private readonly _userBannerStatsRepository: UserBannerStatsRepository;
@@ -31,6 +33,7 @@ export class Database implements IService {
         this._usersRepository = new UsersRepository(prisma);
         this._userGameProfilesRepository = new GameProfilesRepository(prisma);
         this._monumentLeaderboardRepository = new MonumentLeaderboardRepository(prisma);
+        this._warEchoesLeaderboardRepository = new WarEchoesLeaderboardRepository(prisma);
         this._contractLeaderboardRepository = new ContractLeaderboardRepository(prisma);
         this._userBannerProfilesRepository = new UserBannerProfilesRepository(prisma);
         this._userBannerStatsRepository = new UserBannerStatsRepository(prisma);
@@ -63,6 +66,10 @@ export class Database implements IService {
 
     public get monumentLeaderboard(): MonumentLeaderboardRepository {
         return this._monumentLeaderboardRepository;
+    }
+
+    public get warEchoesLeaderboard(): WarEchoesLeaderboardRepository {
+        return this._warEchoesLeaderboardRepository;
     }
 
     public get contractLeaderboard(): ContractLeaderboardRepository {

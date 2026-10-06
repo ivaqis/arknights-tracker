@@ -389,6 +389,7 @@
     "equipmentType": "Тип снаряжения",
     "gearTemplate": "Шаблон снаряжения",
     "blueprintLocation": "Локация шаблона снаряжения",
+    "currentlyUnavailable": "Сейчас недоступно",
     "addedInVersion": "Добавлено в версии {version}"
   },
   "status": {
@@ -459,7 +460,25 @@
     "leaderboard": "Лидерборд",
     "profile": "Профиль",
     "icons": "Иконки",
-    "food": "Провиант"
+    "food": "Провиант",
+    "achievements": "Достижения"
+  },
+  "achievements": {
+    "of": "из",
+    "onlyIncomplete": "Только незавершенные",
+    "allVersions": "Все версии",
+    "searchPlaceholder": "Поиск...",
+    "empty": "Достижения не найдены",
+    "sync": "Синхронизация",
+    "syncModalTitle": "Синхронизация достижений",
+    "selectAccount": "Выберите аккаунт:",
+    "syncAction": "Синхронизировать",
+    "syncSuccess": "Синхронизировано достижений: {count}",
+    "syncNothingToUpdate": "Все достижения уже актуальны",
+    "notLoggedInDesc": "Для синхронизации достижений необходимо войти в аккаунт и привязать игровой профиль.",
+    "noAccountsDesc": "В вашем профиле нет привязанных игровых аккаунтов. Привяжите аккаунт на странице профиля.",
+    "noMedalsInProfile": "В выбранном игровом аккаунте нет данных о достижениях",
+    "syncWarningProgress": "Синхронизация достижений с профилем в игре сбросит текущий прогресс достижений."
   },
   "events": {
     "type": {
@@ -1342,7 +1361,13 @@
     "nextWeek": "Следующая неделя",
     "fullCalendar": "Полный календарь",
     "arsenalExchange": "Обменник арсенала",
-    "arsenalExchangeWarning": "Данные основаны на китайском файле ротации оружия и могут быть не точными"
+    "arsenalExchangeWarning": "Данные основаны на китайском файле ротации оружия и могут быть не точными",
+    "gameUpdate": "Обновление игры",
+    "maintenanceInProgress": "Идут технические работы",
+    "updateExpected": "Ожидается",
+    "versionLabel": "Версия {version}",
+    "goToChangelog": "Список изменений",
+    "currentGameVersion": "Текущая версия игры: {version}"
   },
   "characters": {
     "catcher": "Кэтчер",
@@ -2667,7 +2692,8 @@
     "sync_title": "Интеграция с Google",
     "sync_subtitle": "Интеграция связывает ваш профиль с Firebase, что необходимо для сохранения круток и участия в лидербордах. Goyfield может работать только со своими файлами.",
     "sync_btn": "Войти через Google",
-    "update_btn": "Обновить",
+    "update_btn": "Синхронизировать",
+    "syncing": "Синхронизация...",
     "update_hint": "Загрузить свежие данные ростера и рекордов из игры.",
     "overview": "Обзор",
     "operators_count": "Оперативников",
@@ -2707,6 +2733,7 @@
     "delete_confirm": "Удалить этот сохраненный токен?",
     "settings_title": "Настройки профиля",
     "settings_hide_data": "Скрыть данные аккаунта в лидерборде",
+    "settings_hide_uid": "Скрывать UID аккаунтов",
     "settings_primary_account": "Привязать аккаунт с крутками",
     "settings_primary_account_none": "Нет",
     "bind_to_view_luck": "Привяжите аккаунт с крутками в настройках, чтобы отобразить статистику удачи. Статистика будет отображаться всем пользователям сайта",
@@ -2722,7 +2749,7 @@
     "image_size_error": "Изображение слишком маленькое. Минимальное разрешение — 128x128 пикселей.",
     "crop_avatar_title": "Обрезка аватарки",
     "avatar_success": "Изображение установлено успешно",
-    "no_connected_accounts": "Нет подключенных игровых аккаунтов. Синхронизируйте свой аккаунт с помощью кнопки «Обновить» выше.",
+    "no_connected_accounts": "Нет подключенных игровых аккаунтов. Синхронизируйте свой аккаунт с помощью кнопки «Синхронизировать» выше.",
     "edit_nickname": "Изменить ник",
     "copy_profile_link": "Скопировать ссылку на аккаунт",
     "share": "Поделиться",
@@ -2788,7 +2815,8 @@
     "token_already_used": "Этот токен уже был использован",
     "token_expired_badge": "Истёк",
     "banner_profile_not_found": "Профиль круток не найден",
-    "private_id_not_found": "Приватный ключ круток не найден. Сначала импортируйте крутки для этого аккаунта на этом устройстве"
+    "private_id_not_found": "Приватный ключ круток не найден. Сначала импортируйте крутки для этого аккаунта на этом устройстве",
+    "max_profiles_reached": "Максимальное количество подключаемых профилей — 3"
   },
   "contractTagNames": {
     "activity_contract_tag_201": "Среда: разгон",
@@ -2892,7 +2920,8 @@
     "indie_group_h03": "Неорганическая постройка",
     "indie_group_h04": "Образ помутнения",
     "indie_group_h05": "Отвергнутые землей",
-    "indie_group_h06": "Ревуны скал"
+    "indie_group_h06": "Ревуны скал",
+    "indie_group_h07": "Клеймо мрачных теней"
   },
   "equipmentScriptNames": {
     "xiraniteTechnique": "Технология: ксиранит",
@@ -3316,6 +3345,36 @@
       "param1": "Тип урона",
       "param2": "% от макс. ОЗ"
     }
+  },
+  "achCategories": {
+    "achv_type_adventure": "Регион",
+    "achv_type_battle": "Техника",
+    "achv_type_event": "Событие",
+    "achv_type_factory": "Строительство",
+    "achv_type_growth": "Развитие",
+    "achv_type_hide": "Диковины",
+    "achv_type_quest": "Глава",
+    "achv_type_social": "Общение"
+  },
+  "achGroups": {
+    "achv_group_adv_tundra": "Долина",
+    "achv_group_adv_wuling": "Улин",
+    "achv_group_bat_skill": "Боевая техника",
+    "achv_group_bat_dung": "Протокольный разлом",
+    "achv_group_fac_factory": "АПК",
+    "achv_group_fac_spaceship": "Дицзян",
+    "achv_group_quest_main": "Основная миссия",
+    "achv_group_quest_side": "Экспедиция",
+    "achv_group_event_default": "Событие",
+    "achv_group_growth_default": "Развитие",
+    "achv_group_hide_default": "Диковины",
+    "achv_group_social_default": "Общение"
+  },
+  "achLevels": {
+    "source": "Источник",
+    "reforging2": "Перековка II",
+    "reforging3": "Перековка III",
+    "trimming": "Отделка"
   },
   "usableTitle": {
     "targetType": "Тип цели"

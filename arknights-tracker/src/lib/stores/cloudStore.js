@@ -1,6 +1,5 @@
-// src/lib/stores/cloudStore.js
-
 import { writable, get } from "svelte/store";
+import LZString from "lz-string";
 import { auth, db, provider, analytics } from "$lib/firebase";
 import { signInWithPopup, signOut, onAuthStateChanged } from "firebase/auth";
 import { doc, getDoc, setDoc, serverTimestamp } from "firebase/firestore";
@@ -17,6 +16,74 @@ export const cloudDataBuffer = writable(null);
 export const justSynced = writable(false);
 
 let hasShownFirebaseError = false;
+
+function uint8ArrayToBase64(bytes) {
+    let binary = '';
+    const len = bytes.byteLength;
+    const chunkSize = 8192;
+    for (let i = 0; i < len; i += chunkSize) {
+        const chunk = bytes.subarray(i, Math.min(i + chunkSize, len));
+        binary += String.fromCharCode.apply(null, chunk);
+    }
+    return btoa(binary);
+}
+
+function base64ToUint8Array(base64) {
+    const binary = atob(base64);
+    const len = binary.length;
+    const bytes = new Uint8Array(len);
+    for (let i = 0; i < len; i++) {
+        bytes[i] = binary.charCodeAt(i);
+    }
+    return bytes;
+}
+
+export async function compressCloudPayload(jsonStr) {
+    if (typeof CompressionStream !== 'undefined') {
+        try {
+            const stream = new Blob([jsonStr]).stream().pipeThrough(new CompressionStream('gzip'));
+            const response = new Response(stream);
+            const buffer = await response.arrayBuffer();
+            return 'gz:' + uint8ArrayToBase64(new Uint8Array(buffer));
+        } catch (err) {
+            console.warn('[Firebase] CompressionStream failed, falling back to LZString', err);
+        }
+    }
+    return 'lz:' + LZString.compressToBase64(jsonStr);
+}
+
+export async function decompressCloudPayload(data) {
+    if (!data || typeof data !== 'string') return null;
+    const trimmed = data.trim();
+    if (trimmed.startsWith('{') || trimmed.startsWith('[')) {
+        return data;
+    }
+    if (trimmed.startsWith('gz:')) {
+        try {
+            const base64 = trimmed.slice(3);
+            const bytes = base64ToUint8Array(base64);
+            const stream = new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'));
+            const response = new Response(stream);
+            return await response.text();
+        } catch (err) {
+            console.error('[Firebase] DecompressionStream failed', err);
+        }
+    }
+    if (trimmed.startsWith('lz:')) {
+        try {
+            return LZString.decompressFromBase64(trimmed.slice(3));
+        } catch (err) {
+            console.error('[Firebase] LZString decompression failed', err);
+        }
+    }
+    try {
+        const lz = LZString.decompressFromBase64(trimmed);
+        if (lz && (lz.trim().startsWith('{') || lz.trim().startsWith('['))) {
+            return lz;
+        }
+    } catch (e) {}
+    return data;
+}
 
 
 function compressDataForCloud(fullBackup) {
@@ -139,7 +206,12 @@ export async function checkSync(currentUser, freshSnapshot = null) {
             const cloudLastUpdated = cloudData.lastUpdated?.toMillis() || 0;
             const cloudTotal = cloudData.stats?.totalPulls || 0;
             let cloudFullBackup = null;
-            try { cloudFullBackup = JSON.parse(cloudData.jsonData); } catch (e) { console.error(e); }
+            try {
+                const rawJson = await decompressCloudPayload(cloudData.jsonData);
+                if (rawJson) {
+                    cloudFullBackup = JSON.parse(rawJson);
+                }
+            } catch (e) { console.error(e); }
 
             console.log(`[Firebase] Check: Local(${localTotal}) vs Cloud(${cloudTotal}).`);
 
@@ -308,13 +380,14 @@ export async function uploadLocalData(freshSnapshot = null) {
 
         const compressedBackup = compressDataForCloud(fullBackup);
         const jsonString = JSON.stringify(compressedBackup);
+        const compressedPayload = await compressCloudPayload(jsonString);
 
         let sizeInBytes = 0;
         if (typeof window !== 'undefined') {
-            sizeInBytes = new Blob([jsonString]).size;
-            console.log(`[Firebase] Compressed size: ${(sizeInBytes / 1024).toFixed(2)} KB`);
+            sizeInBytes = new Blob([compressedPayload]).size;
+            console.log(`[Firebase] Compressed size: ${(sizeInBytes / 1024).toFixed(2)} KB (raw JSON: ${(new Blob([jsonString]).size / 1024).toFixed(2)} KB)`);
         } else {
-            sizeInBytes = Buffer.byteLength(jsonString, 'utf8');
+            sizeInBytes = Buffer.byteLength(compressedPayload, 'utf8');
         }
 
         if (sizeInBytes > 1048487) {
@@ -326,7 +399,7 @@ export async function uploadLocalData(freshSnapshot = null) {
         await setDoc(userRef, {
             displayName: currentUser.displayName,
             photoURL: currentUser.photoURL,
-            jsonData: jsonString,
+            jsonData: compressedPayload,
             lastUpdated: serverTimestamp(),
             stats: { totalPulls, sixStars, accountCount: accounts.length, lastPullDate: new Date().toISOString() }
         });

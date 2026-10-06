@@ -13,6 +13,7 @@
     import { getRarityColor, getHexColorByElement } from "$lib/utils/colorUtils.js";
     import { parseRichText, hyperlinkAction } from "$lib/utils/richText.js";
     import { addNotification } from "$lib/stores/notifications.js";
+    import { getWeaponTerms as defaultGetWeaponTerms } from "$lib/utils/profileUtils.js";
 
     const localeModules = {
         en: import.meta.glob("/src/lib/locales/en/equipment.json"),
@@ -142,7 +143,7 @@
     export let talentsList;
     export let getWeaponData;
     export let getWeaponIcon;
-    export let getWeaponTerms = () => [];
+    export let getWeaponTerms = defaultGetWeaponTerms;
     export let getStaticEquipId;
     export let getEquipRarity;
     export let getEquipTier;
@@ -152,6 +153,8 @@
     export let weaponDetails = null;
     export let profileName = "";
     export let activeAccount = null;
+    export let hideUid = false;
+    export let accountSlot = 1;
 
     let isExporting = false;
 
@@ -875,8 +878,15 @@
         if (charId) {
             url.searchParams.set("char", charId);
         }
-        if (activeAccount?.game_uid) {
+        if (activeAccount?.game_uid && !hideUid) {
             url.searchParams.set("uid", activeAccount.game_uid);
+            url.searchParams.delete("acc");
+        } else if (accountSlot && accountSlot > 1) {
+            url.searchParams.set("acc", accountSlot.toString());
+            url.searchParams.delete("uid");
+        } else {
+            url.searchParams.delete("uid");
+            url.searchParams.delete("acc");
         }
         navigator.clipboard.writeText(url.toString()).then(() => {
             copied = true;
@@ -1038,8 +1048,10 @@
                                         </h3>
                                     </div>
 
-                                    <Tooltip text="P{Math.max(1, (selectedChar.potential || 1)) - 1}">
-                                        <PotentialIcon pot={Math.max(0, (selectedChar.potential || 1) - 1)} size={50} className="ml-1 pt-2" />
+                                    <Tooltip text="P{selectedChar?.potential ?? selectedChar?.potentialLevel ?? 0}">
+                                        <div class="h-10 flex items-center justify-center shrink-0 pt-6">
+                                            <PotentialIcon pot={selectedChar?.potential ?? selectedChar?.potentialLevel ?? 0} size={64} />
+                                        </div>
                                     </Tooltip>
                                 </div>
 

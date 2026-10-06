@@ -1,3 +1,4 @@
+import { AchieveEntity } from "@models/gameProfile/entities/AchieveEntity.js";
 import { BaseEntity } from "@models/gameProfile/entities/BaseEntity.js";
 import { BpSystemEntity } from "@models/gameProfile/entities/BpSystemEntity.js";
 import { CharacterEntity } from "@models/gameProfile/entities/CharacterEntity.js";
@@ -14,4 +15,5 @@ export interface GameProfileEntity {
     weeklyMission: WeeklyMissionEntity;
     seekSuspicion: SeekSuspicionEntity;
     chars: CharacterEntity[];
+    achieve?: AchieveEntity | null;
 }

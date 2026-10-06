@@ -346,7 +346,8 @@
     "recipeTree": "რეცეპტების ჯაჭვი",
     "leaderboard": "ლიდერთა დაფა",
     "profile": "პროფილი",
-    "icons": "ხატულები"
+    "icons": "ხატულები",
+    "achievements": "მიღწევები"
   },
   "mouths": {
     "january": "იანვარი",
@@ -724,7 +725,13 @@
     "nextWeek": "შემდეგი კვირა",
     "fullCalendar": "სრული კალენდარი",
     "arsenalExchangeWarning": "მონაცემები ეფუძნება იარაღის როტაციის ჩინურ ფაილს და შეიძლება არ იყოს ზუსტი",
-    "uiLanguagesDesc": "ენები, რომლებიც მხარს უჭერენ ვებსაიტის ინტერფეისის თარგმნას. თამაშის აღნიშვნებისთვის გამოყენებული იქნება თამაშის სრულად მხარდაჭერილი თარგმანი. თარგმნაში დასახმარებლად შეგიძლიათ ეწვიოთ <a href=\"{discordLink}\" target=\"_blank\" class=\"text-yellow-400 hover:underline\">Goyfield-ის Discord სერვერს</a>"
+    "uiLanguagesDesc": "ენები, რომლებიც მხარს უჭერენ ვებსაიტის ინტერფეისის თარგმნას. თამაშის აღნიშვნებისთვის გამოყენებული იქნება თამაშის სრულად მხარდაჭერილი თარგმანი. თარგმნაში დასახმარებლად შეგიძლიათ ეწვიოთ <a href=\"{discordLink}\" target=\"_blank\" class=\"text-yellow-400 hover:underline\">Goyfield-ის Discord სერვერს</a>",
+    "gameUpdate": "თამაშის განახლება",
+    "maintenanceInProgress": "მიმდინარეობს ტექნიკური სამუშაოები",
+    "updateExpected": "მოსალოდნელია",
+    "versionLabel": "ვერსია {version}",
+    "goToChangelog": "ცვლილებების სია",
+    "currentGameVersion": "თამაშის მიმდინარე ვერსია: {version}"
   },
   "cookies": {
     "title": "ჩვენ ვიყენებთ cookie ფაილებს",
@@ -882,6 +889,7 @@
     "delete_confirm": "წავშალოთ?",
     "settings_title": "პარამეტრები",
     "settings_hide_data": "დამალეთ მონაცემები",
+    "settings_hide_uid": "ანგარიშის UID-ის დამალვა",
     "settings_primary_account": "დააკავშირეთ ანგარიში",
     "settings_primary_account_none": "არცერთი",
     "bind_to_view_luck": "სტატისტიკის სანახავად დააკავშირეთ თამაში.",
@@ -897,7 +905,7 @@
     "image_size_error": "სურათი ძალიან პატარაა.",
     "crop_avatar_title": "ავატარის მოჭრა",
     "avatar_success": "წარმატებით განახლდა!",
-    "no_connected_accounts": "არ არის დაკავშირებული ანგარიში.",
+    "no_connected_accounts": "არ არის დაკავშირებული თამაშის ანგარიში. დაასინქრონეთ ზემოთ მოცემული ღილაკით.",
     "edit_nickname": "სახელის შეცვლა",
     "copy_profile_link": "ბმულის კოპირება",
     "share": "გაზიარება",
@@ -908,7 +916,7 @@
     "copy_uid": "UID კოპირება",
     "unlink_account": "ანგარიშის გათიშვა",
     "all": "ყველა",
-    "sync_with_game": "სინქრონიზაცია",
+    "sync_with_game": "თამაშთან სინქრონიზაცია",
     "no_essence": "არ არის ესენცია",
     "copy_failed": "შეცდომა კოპირებისას",
     "no_weapon": "იარაღი არ არის აღჭურვილი",
@@ -961,9 +969,28 @@
     "token_already_used": "ეს ტოკენი უკვე გამოყენებულია",
     "token_expired_badge": "ვადაგასული",
     "unauthorized": "არაავტორიზებული",
-    "user_not_found": "მომხმარებელი ვერ მოიძებნა"
+    "user_not_found": "მომხმარებელი ვერ მოიძებნა",
+    "syncing": "მიმდინარეობს სინქრონიზაცია...",
+    "max_profiles_reached": "დაკავშირებული პროფილების მაქსიმალური რაოდენობაა 3"
   },
   "equipSkills": {
     "NoAttr": "ატრიბუტის გარეშე"
+  },
+  "achievements": {
+    "of": "-დან",
+    "onlyIncomplete": "მხოლოდ დაუსრულებელი",
+    "allVersions": "ყველა ვერსია",
+    "searchPlaceholder": "ძიება...",
+    "empty": "მიღწევები ვერ მოიძებნა",
+    "sync": "სინქრონიზაცია",
+    "syncModalTitle": "მიღწევების სინქრონიზაცია",
+    "selectAccount": "აირჩიეთ ანგარიში:",
+    "syncAction": "სინქრონიზაცია",
+    "syncSuccess": "სინქრონიზებული მიღწევები: {count}",
+    "syncNothingToUpdate": "ყველა მიღწევა უკვე განახლებულია",
+    "notLoggedInDesc": "მიღწევების სინქრონიზაციისთვის უნდა შეხვიდეთ სისტემაში და დააკავშიროთ თქვენი თამაშის პროფილი.",
+    "noAccountsDesc": "თქვენს პროფილზე არ არის დაკავშირებული თამაშის ანგარიში. დააკავშირეთ ანგარიში პროფილის გვერდზე.",
+    "noMedalsInProfile": "არჩეულ თამაშის ანგარიშში მიღწევები არ მოიძებნა",
+    "syncWarningProgress": "მიღწევების თამაშის პროფილთან სინქრონიზაცია გააუქმებს მიღწევების მიმდინარე პროგრესს."
   }
 }

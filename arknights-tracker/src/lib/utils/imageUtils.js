@@ -163,6 +163,10 @@ export function getImagePath(idOrName, variant = 'operator-icon') {
         case 'essence-type-icon':
             return `/images/essencesTypes/${withExt(name, 'webp')}`;
 
+        case 'achievement':
+        case 'achievement-icon':
+            return `/images/achievments/${withExt(name, 'webp')}`;
+
         case 'operator-icon':
         default:
             return `/images/operators/icons/${withExt(name)}`;

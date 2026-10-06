@@ -13,6 +13,7 @@ export class UpdateUserProfileBodyValidator extends Validator<UpdateUserProfileR
     private static getRules(): ValidationRule<UpdateUserProfileRequest>[] {
         return [
             this.getIsPrivateRule(),
+            this.getHideUidRule(),
             this.getBackgroundIdRule(),
             this.getNewUidRule()
         ];
@@ -22,6 +23,13 @@ export class UpdateUserProfileBodyValidator extends Validator<UpdateUserProfileR
         return new ValidationRule(
             item => typeof item.isPrivate === "boolean" || typeof item.isPrivate === "undefined",
             "isPrivate must be true or false",
+        );
+    }
+
+    private static getHideUidRule(): ValidationRule<UpdateUserProfileRequest> {
+        return new ValidationRule(
+            item => typeof item.hideUid === "boolean" || typeof item.hideUid === "undefined",
+            "hideUid must be true or false",
         );
     }
 
