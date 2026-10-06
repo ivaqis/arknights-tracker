@@ -90,5 +90,20 @@
       "indie_hard024",
       "indie_hard025"
     ]
+  },
+  {
+    "id": "indie_group_h07",
+    "hardDungeons": [
+      "indie_hard029_s",
+      "indie_hard026_s",
+      "indie_hard028_s",
+      "indie_hard027_s"
+    ],
+    "normalDungeons": [
+      "indie_hard029",
+      "indie_hard026",
+      "indie_hard028",
+      "indie_hard027"
+    ]
   }
 ]
