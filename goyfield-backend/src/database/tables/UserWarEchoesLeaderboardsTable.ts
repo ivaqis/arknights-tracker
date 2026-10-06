@@ -95,7 +95,8 @@ export class UserWarEchoesLeaderboardsTable extends Table<Prisma.UserWarEchoesLe
             }
         });
 
-        return entities.map(UserWarEchoesLeaderboardRecord.createFromEntity);
+        const entityMap = new Map(entities.map(e => [e.id, e]));
+        return ids.map(id => entityMap.get(id)).filter((e): e is NonNullable<typeof e> => Boolean(e)).map(UserWarEchoesLeaderboardRecord.createFromEntity);
     }
 
     public async findManyIncludeGameProfileAndUser(ids: string[]): Promise<{
@@ -118,13 +119,17 @@ export class UserWarEchoesLeaderboardsTable extends Table<Prisma.UserWarEchoesLe
             }
         });
 
-        return entities.map(e => {
+        const entityMap = new Map(entities.map(e => [e.id, e]));
+
+        return ids.map(id => {
+            const e = entityMap.get(id);
+            if (!e) return null;
             return {
                 record: UserWarEchoesLeaderboardRecord.createFromEntity(e),
                 gameProfile: UserGameProfileRecord.createFromEntity(e.userGameProfile),
                 user: new UserRecord(e.userGameProfile.user)
             };
-        });
+        }).filter((item): item is NonNullable<typeof item> => Boolean(item));
     }
 
     public async findIncludeGameProfileAndUser(id: string): Promise<{
