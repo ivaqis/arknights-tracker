@@ -1,7 +1,9 @@
-import { AFilterSelector } from "$lib/classes/filters/AFilterSelector";
+import type { IFilterSelector } from "$lib/classes/filters/IFilterSelector";
+import { Selector } from "$lib/classes/selectors/Selector";
 
 export class FilterSelector<TEntity, TParam extends string | number = string>
-    extends AFilterSelector<TEntity, TParam> {
+    extends Selector<TParam>
+    implements IFilterSelector<TEntity, TParam> {
 
     private readonly _getParamFn: (entity: TEntity) => TParam;
 

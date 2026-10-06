@@ -1,6 +1,9 @@
-import { AGroupedFilterSelector } from "$lib/classes/filters/AGroupedFilterSelector";
+import type { IGroupedFilterSelector } from "$lib/classes/filters/IGroupedFilterSelector";
+import { GroupedSelector } from "$lib/classes/selectors/GroupedSelector";
 
-export class GroupedFilterSelectorMany<TEntity, TParam extends string | number = string> extends AGroupedFilterSelector<TEntity, TParam> {
+export class GroupedFilterSelectorMany<TEntity, TParam extends string | number = string>
+    extends GroupedSelector<TParam>
+    implements IGroupedFilterSelector<TEntity, TParam> {
 
     private readonly _getParamsFn: (entity: TEntity) => Iterable<TParam>;
 

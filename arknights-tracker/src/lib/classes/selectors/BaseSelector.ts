@@ -1,7 +1,7 @@
-import type { IBaseFilterSelector } from "$lib/classes/filters/IBaseFilterSelector";
+import type { IBaseSelector } from "$lib/classes/selectors/IBaseSelector";
 import type { Subscriber, Unsubscriber } from "svelte/store";
 
-export abstract class ABaseFilterSelector<TEntity, TParam extends string | number> implements IBaseFilterSelector<TEntity, TParam> {
+export class BaseSelector<TParam extends string | number = string> implements IBaseSelector<TParam> {
     private readonly _selectedParamSet: Set<TParam> = new Set();
     private readonly _subscribers: Set<Subscriber<this>> = new Set();
 
@@ -164,8 +164,6 @@ export abstract class ABaseFilterSelector<TEntity, TParam extends string | numbe
     public isValidParam(param: TParam): boolean {
         return this._paramSet.has(param);
     }
-
-    public abstract satisfies(entity: TEntity): boolean;
 
     protected touch(): void {
         if (this._batchDepth > 0) {

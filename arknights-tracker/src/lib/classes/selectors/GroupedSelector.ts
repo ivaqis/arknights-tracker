@@ -1,14 +1,14 @@
-import { ABaseFilterSelector } from "$lib/classes/filters/ABaseFilterSelector";
-import type { IGroupedFilterSelector } from "$lib/classes/filters/IGroupedFilterSelector";
+import { BaseSelector } from "$lib/classes/selectors/BaseSelector";
+import type { IGroupedSelector } from "$lib/classes/selectors/IGroupedSelector";
 
-export abstract class AGroupedFilterSelector<TEntity, TParam extends string | number>
-    extends ABaseFilterSelector<TEntity, TParam>
-    implements IGroupedFilterSelector<TEntity, TParam> {
+export class GroupedSelector<TParam extends string | number = string>
+    extends BaseSelector<TParam>
+    implements IGroupedSelector<TParam> {
 
     private _groups: readonly ReadonlyArray<TParam>[];
 
     protected constructor(groups: readonly ReadonlyArray<TParam>[], limit: number = 0) {
-        const params = AGroupedFilterSelector.getParams(groups);
+        const params = GroupedSelector.getParams(groups);
 
         super(params, limit);
 
@@ -31,7 +31,7 @@ export abstract class AGroupedFilterSelector<TEntity, TParam extends string | nu
 
     public set groups(value: readonly ReadonlyArray<TParam>[]) {
         this.batch(() => {
-            const params = AGroupedFilterSelector.getParams(value);
+            const params = GroupedSelector.getParams(value);
 
             this._groups = value;
             this.applyParamList(params);
