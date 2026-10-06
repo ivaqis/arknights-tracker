@@ -165,6 +165,10 @@ export class BaseSelector<TParam extends string | number = string> implements IB
         return this._paramSet.has(param);
     }
 
+    public getSelectedList(): TParam[] {
+        return this._paramSet.values().toArray();
+    }
+
     protected touch(): void {
         if (this._batchDepth > 0) {
             this._batchChanged = true;

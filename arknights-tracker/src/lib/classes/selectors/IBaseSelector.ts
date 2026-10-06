@@ -15,6 +15,7 @@ export interface IBaseSelector<TParam extends string | number = string> {
     addAll(): void;
     clear(): void;
     isSelected(param: TParam): boolean;
+    getSelectedList(): TParam[];
     isValidParam(param: TParam): boolean;
     subscribe(run: Subscriber<this>): Unsubscriber;
 }
