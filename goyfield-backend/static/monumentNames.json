@@ -198,5 +198,37 @@
     {
         "id": "indie_hard025_s",
         "name": "Visitors of Qingbo: Agony"
+    },
+    {
+        "id": "indie_hard026",
+        "name": "Feral Carnage of Shadow"
+    },
+    {
+        "id": "indie_hard026_s",
+        "name": "Feral Carnage of Shadow: Agony"
+    },
+    {
+        "id": "indie_hard027",
+        "name": "Arc of Shadow Flare"
+    },
+    {
+        "id": "indie_hard027_s",
+        "name": "Arc of Shadow Flare: Agony"
+    },
+    {
+        "id": "indie_hard028",
+        "name": "Sudden Roar of Oblivion"
+    },
+    {
+        "id": "indie_hard028_s",
+        "name": "Sudden Roar of Oblivion: Agony"
+    },
+    {
+        "id": "indie_hard029",
+        "name": "Tri-Aggelated Targeting"
+    },
+    {
+        "id": "indie_hard029_s",
+        "name": "Tri-Aggelated Targeting: Agony"
     }
 ]

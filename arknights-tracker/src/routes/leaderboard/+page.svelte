@@ -100,9 +100,11 @@
     let selectedEvent = (browser && typeof localStorage !== "undefined" && localStorage.getItem("leaderboard_event"))
         || "monument";
     let selectedMonumentGroup = (browser && typeof localStorage !== "undefined" && localStorage.getItem("leaderboard_monument_group"))
-        || "indie_group_h06";
+        || (monumentGroups[0]?.id)
+        || "indie_group_h07";
     let selectedStageId = (browser && typeof localStorage !== "undefined" && localStorage.getItem("leaderboard_stage_id"))
-        || "indie_hard025";
+        || (monumentGroups[0]?.stages[0]?.id)
+        || "indie_hard029";
     let isAgony = (browser && typeof localStorage !== "undefined" && localStorage.getItem("leaderboard_is_agony") !== null)
         ? localStorage.getItem("leaderboard_is_agony") === "true"
         : true;

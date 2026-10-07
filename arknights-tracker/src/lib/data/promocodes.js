@@ -78,5 +78,18 @@ export const promocodes = [
         condition: null,
         endTime: "2026-08-24 17:00:00",
         url: null
+    },
+    {
+        code: "ENDFIELDSTEAM",
+        rewards: [
+            { id: "tCreds", count: 8000 },
+            { id: "elementaryCognitiveCarrier", count: 2 },
+            { id: "armsInspSet", count: 2 },
+            { id: "specialCommemorativePortraitFrame", count: 1 }
+        ],
+        startTime: "2026-10-06 06:30:00",
+        condition: null,
+        endTime: "2026-11-25 10:59:00",
+        url: null
     }
 ];
