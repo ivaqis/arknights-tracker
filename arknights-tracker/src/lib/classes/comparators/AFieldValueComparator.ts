@@ -1,7 +1,10 @@
 import type { IFieldValueComparator } from "$lib/classes/comparators/IFieldValueComparator";
+import type { Subscriber, Unsubscriber } from "svelte/store";
 
 export abstract class AFieldValueComparator<T, TValue> implements IFieldValueComparator<T, TValue> {
     protected readonly _valueOrders: Map<TValue, number> = new Map();
+
+    private readonly _subscribers: Set<Subscriber<this>> = new Set();
 
     protected constructor() {
     }
@@ -10,7 +13,9 @@ export abstract class AFieldValueComparator<T, TValue> implements IFieldValueCom
         const orderA = this.getObjectOrder(a);
         const orderB = this.getObjectOrder(b);
 
-        return orderA - orderB;
+        const diff = orderA - orderB;
+
+        return isNaN(diff) ? 0 : diff;
     }
 
     public setValueOrder(orderList: readonly TValue[]) {
@@ -19,6 +24,24 @@ export abstract class AFieldValueComparator<T, TValue> implements IFieldValueCom
         orderList.forEach((value, index) => {
             this._valueOrders.set(value, index);
         });
+
+        this.notify();
+    }
+
+    public subscribe(run: Subscriber<this>): Unsubscriber {
+        run(this);
+
+        this._subscribers.add(run);
+
+        return () => {
+            this._subscribers.delete(run);
+        }
+    }
+
+    public notify(): void {
+        for (const run of [...this._subscribers]) {
+            run(this);
+        }
     }
 
     protected getValueOrder(value: TValue): number {
